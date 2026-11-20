@@ -364,11 +364,7 @@ public class SlaverAlleyDialogue {
 		return "<tr>"
 				+ "<td style='min-width:200px;'>"
 					+ baseName
-				+ "</td>"
-				+ "<td>"
-					+ "<div class='saveLoadButton' id='IMPORT_SLAVE_" + identifier + "' style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>Import</div>"
-				+ "</td>"
-				+ "</tr>";
+				+ "</td><td><div class='saveLoadButton' id='IMPORT_SLAVE_" + identifier + "' style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>Импорт</div></td></tr>";
 	}
 	
 	public static List<GameCharacter> generateRandomStocksPartners(GameCharacter target, boolean forceTwoPartners) {
@@ -650,7 +646,7 @@ public class SlaverAlleyDialogue {
 				!Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.slaverAlleyTwoPartners));
 	}
 	
-	public static final DialogueNode OUTSIDE = new DialogueNode("Slaver Alley", "-", false) {
+	public static final DialogueNode OUTSIDE = new DialogueNode("Переулок работорговцев", "-", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -665,7 +661,7 @@ public class SlaverAlleyDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Slaver Alley", "Step through the gate and enter Slaver Alley.", PlaceType.SLAVER_ALLEY_ENTRANCE.getDialogue(false)){
+				return new Response("Переулок работорговцев", "Пройти через ворота и войти в Переулок работорговцев.", PlaceType.SLAVER_ALLEY_ENTRANCE.getDialogue(false)){
 					@Override
 					public void effects() {
 						// If Sean is not introduced and the stocks slaves are not present, then this must be the first time the player has entered slaver alley, in which case the slaves need to be initialised:
@@ -681,7 +677,7 @@ public class SlaverAlleyDialogue {
 		}
 	};
 	
-	public static final DialogueNode GATEWAY = new DialogueNode("Gateway", "", false) {
+	public static final DialogueNode GATEWAY = new DialogueNode("Ворота", "", false) {
 		@Override
 		public int getSecondsPassed() {
 			return 2*60;
@@ -700,7 +696,7 @@ public class SlaverAlleyDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Leave", "Step back out into Dominion's alleyways.", PlaceType.DOMINION_SLAVER_ALLEY.getDialogue(false)) {
+				return new Response("Уйти", "Вернуться назад в переулки Dominion.", PlaceType.DOMINION_SLAVER_ALLEY.getDialogue(false)) {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setLocation(WorldType.DOMINION, PlaceType.DOMINION_SLAVER_ALLEY, false);
@@ -708,14 +704,14 @@ public class SlaverAlleyDialogue {
 				};
 				
 			} else if(index==2 && Main.game.getPlayer().getQuest(QuestLine.ROMANCE_HELENA)==Quest.ROMANCE_HELENA_6_ADVERTISING) {
-				return new Response("Posters", "Ask the guards for permission to put up the posters which Helena gave to you.", GATEWAY_POSTER_PERMISSION);
+				return new Response("Плакаты", "Попросить у стражников разрешения расклеить плакаты, которые дала тебе Helena.", GATEWAY_POSTER_PERMISSION);
 			}
 			
 			return null;
 		}
 	};
 	
-	public static final DialogueNode GATEWAY_POSTER_PERMISSION = new DialogueNode("Gateway", "", true) {
+	public static final DialogueNode GATEWAY_POSTER_PERMISSION = new DialogueNode("Ворота", "", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 2*60;
@@ -728,7 +724,7 @@ public class SlaverAlleyDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 //				if(Main.game.getPlayer().getMoney()>=100) {
-					return new Response("Pay ("+UtilText.formatAsMoney(100, "span")+")", "Pay the guards the hundred flames they're asking for.", GATEWAY_POSTER_PERMISSION_END) {
+					return new Response("Заплатить ("+UtilText.formatAsMoney(100, "охват")+")", "Заплатить стражникам сто огней, которые они требуют.", GATEWAY_POSTER_PERMISSION_END) {
 						@Override
 						public void effects() {
 							Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/slaverAlley/genericDialogue", "GATEWAY_POSTER_PERMISSION_PAID"));
@@ -747,8 +743,8 @@ public class SlaverAlleyDialogue {
 				if(Main.game.getPlayer().hasBreasts()) {
 					if(Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.NIPPLES, true)) {
 						if(Main.game.getPlayer().isCoverableAreaExposed(CoverableArea.NIPPLES)) {
-							return new Response("Groped",
-									"Let the guards grope your exposed breasts in exchange for them letting you put up the posters.",
+							return new Response("Ощупывание",
+									"Позволить стражникам лапать твою обнаженную грудь в обмен на разрешение расклеить плакаты.",
 									GATEWAY_POSTER_PERMISSION_GROPED,
 									Util.newArrayListOfValues(Fetish.FETISH_BREASTS_SELF, Fetish.FETISH_EXHIBITIONIST),
 									CorruptionLevel.THREE_DIRTY,
@@ -763,8 +759,8 @@ public class SlaverAlleyDialogue {
 							};
 							
 						} else {
-							return new Response("Flash breasts",
-									"Fully expose your breasts to the guards in exchange for them letting you put up the posters.",
+							return new Response("Показать грудь",
+									"Полностью обнажить грудь перед стражниками в обмен на разрешение расклеить плакаты.",
 									GATEWAY_POSTER_PERMISSION_GROPED,
 									Util.newArrayListOfValues(Fetish.FETISH_BREASTS_SELF, Fetish.FETISH_EXHIBITIONIST),
 									CorruptionLevel.THREE_DIRTY,
@@ -780,7 +776,7 @@ public class SlaverAlleyDialogue {
 						}
 						
 					} else {
-						return new Response("Flash breasts", "You are unable to fully expose your breasts, so can't flash them at the guards in exchange for them letting you put up the posters...", null);
+						return new Response("Показать грудь", "Вы не можете полностью обнажить грудь, поэтому не получается эффектно показать её стражникам в обмен на разрешение развесить плакаты...", null);
 					}
 				}
 				
@@ -809,7 +805,7 @@ public class SlaverAlleyDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Posters", "Now that you've got permission from the guards, you can put up the posters.", GATEWAY_POSTER_PERMISSION_END) {
+				return new Response("Плакаты", "Теперь, когда стражники дали добро, вы можете развесить плакаты.", GATEWAY_POSTER_PERMISSION_END) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/slaverAlley/genericDialogue", "GATEWAY_POSTER_PERMISSION_END"));
@@ -834,7 +830,7 @@ public class SlaverAlleyDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Scarlett", "Find out what it is Scarlett wants.", GATEWAY_POSTER_PERMISSION_END_RETURN);
+				return new Response("Scarlett", "Выяснить, чего хочет Scarlett.", GATEWAY_POSTER_PERMISSION_END_RETURN);
 			}
 			return null;
 		}
@@ -852,7 +848,7 @@ public class SlaverAlleyDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Return", "Follow Scarlett and return to Helena's Boutique.", ScarlettsShop.ROMANCE_RETURN_AFTER_POSTERS) {
+				return new Response("Назад", "Последовать за Scarlett и вернуться в бутик Helena.", ScarlettsShop.ROMANCE_RETURN_AFTER_POSTERS) {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setLocation(WorldType.SLAVER_ALLEY, PlaceType.SLAVER_ALLEY_SCARLETTS_SHOP);
@@ -865,7 +861,7 @@ public class SlaverAlleyDialogue {
 		}
 	};
 	
-	public static final DialogueNode ALLEYWAY = new DialogueNode("Alleyway", "", false) {
+	public static final DialogueNode ALLEYWAY = new DialogueNode("Переулок", "", false) {
 		@Override
 		public int getSecondsPassed() {
 			return 2*60;
@@ -880,7 +876,7 @@ public class SlaverAlleyDialogue {
 		}
 	};
 	
-	public static final DialogueNode DESERTED_ALLEYWAY = new DialogueNode("Deserted alleyway", "", false) {
+	public static final DialogueNode DESERTED_ALLEYWAY = new DialogueNode("Пустынный переулок", "", false) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -898,7 +894,7 @@ public class SlaverAlleyDialogue {
 		}
 	};
 	
-	public static final DialogueNode MARKET_STALL_FEMALE = new DialogueNode("A Woman's Touch", "", false) {
+	public static final DialogueNode MARKET_STALL_FEMALE = new DialogueNode("Женское прикосновение", "", false) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -914,9 +910,9 @@ public class SlaverAlleyDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				if(!Main.game.getPlayer().isHasSlaverLicense()) {
-					return new Response("Slave Manager", "You don't have a slaver license, so can't buy or sell any slaves...", null);
+					return new Response("Управляющая рабами", "У вас нет лицензии работорговца, поэтому вы не можете покупать или продавать рабов...", null);
 				}
-				return new Response("Slave Manager", "Enter the slave management screen.", MARKET_STALL_FEMALE) {
+				return new Response("Управляющая рабами", "Войти в меню управления рабами.", MARKET_STALL_FEMALE) {
 					@Override
 					public boolean isTradeHighlight() {
 						return true;
@@ -932,7 +928,7 @@ public class SlaverAlleyDialogue {
 		}
 	};
 	
-	public static final DialogueNode MARKET_STALL_MALE = new DialogueNode("Iron & Steel", "", false) {
+	public static final DialogueNode MARKET_STALL_MALE = new DialogueNode("Железо и сталь", "", false) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -948,9 +944,9 @@ public class SlaverAlleyDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				if(!Main.game.getPlayer().isHasSlaverLicense()) {
-					return new Response("Slave Manager", "You don't have a slaver license, so can't buy or sell any slaves...", null);
+					return new Response("Управляющая рабами", "У вас нет лицензии работорговца, поэтому вы не можете покупать или продавать рабов...", null);
 				}
-				return new Response("Slave Manager", "Enter the slave management screen.", MARKET_STALL_FEMALE) {
+				return new Response("Управляющая рабами", "Войти в меню управления рабами.", MARKET_STALL_FEMALE) {
 					@Override
 					public boolean isTradeHighlight() {
 						return true;
@@ -966,7 +962,7 @@ public class SlaverAlleyDialogue {
 		}
 	};
 	
-	public static final DialogueNode MARKET_STALL_ANAL = new DialogueNode("The Rear Entrance", "", false) {
+	public static final DialogueNode MARKET_STALL_ANAL = new DialogueNode("Задний вход", "", false) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -982,9 +978,9 @@ public class SlaverAlleyDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				if(!Main.game.getPlayer().isHasSlaverLicense()) {
-					return new Response("Slave Manager", "You don't have a slaver license, so can't buy or sell any slaves...", null);
+					return new Response("Управляющая рабами", "У вас нет лицензии работорговца, поэтому вы не можете покупать или продавать рабов...", null);
 				}
-				return new Response("Slave Manager", "Enter the slave management screen.", MARKET_STALL_FEMALE) {
+				return new Response("Управляющая рабами", "Войти в меню управления рабами.", MARKET_STALL_FEMALE) {
 					@Override
 					public boolean isTradeHighlight() {
 						return true;
@@ -1000,7 +996,7 @@ public class SlaverAlleyDialogue {
 		}
 	};
 	
-	public static final DialogueNode MARKET_STALL_VAGINAL = new DialogueNode("White Lilies", "", false) {
+	public static final DialogueNode MARKET_STALL_VAGINAL = new DialogueNode("Белые лилии", "", false) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -1016,9 +1012,9 @@ public class SlaverAlleyDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				if(!Main.game.getPlayer().isHasSlaverLicense()) {
-					return new Response("Slave Manager", "You don't have a slaver license, so can't buy or sell any slaves...", null);
+					return new Response("Управляющая рабами", "У вас нет лицензии работорговца, поэтому вы не можете покупать или продавать рабов...", null);
 				}
-				return new Response("Slave Manager", "Enter the slave management screen.", MARKET_STALL_FEMALE) {
+				return new Response("Управляющая рабами", "Войти в меню управления рабами.", MARKET_STALL_FEMALE) {
 					@Override
 					public boolean isTradeHighlight() {
 						return true;
@@ -1050,9 +1046,9 @@ public class SlaverAlleyDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				if(!Main.game.getPlayer().isHasSlaverLicense()) {
-					return new Response("Slave Manager", "You don't have a slaver license, so can't buy or sell any slaves...", null);
+					return new Response("Управляющая рабами", "У вас нет лицензии работорговца, поэтому вы не можете покупать или продавать рабов...", null);
 				}
-				return new Response("Slave Manager", "Enter the slave management screen.", MARKET_STALL_FEMALE) {
+				return new Response("Управляющая рабами", "Войти в меню управления рабами.", MARKET_STALL_FEMALE) {
 					@Override
 					public boolean isTradeHighlight() {
 						return true;
@@ -1068,7 +1064,7 @@ public class SlaverAlleyDialogue {
 		}
 	};
 	
-	public static final DialogueNode MARKET_STALL_STATUE = new DialogueNode("Statue of the Fallen Angel", "", false) {
+	public static final DialogueNode MARKET_STALL_STATUE = new DialogueNode("Статуя Падшего Ангела", "", false) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -1096,7 +1092,7 @@ public class SlaverAlleyDialogue {
 		}
 	};
 	
-	public static final DialogueNode MARKET_STALL_EXCLUSIVE = new DialogueNode("Slave Rental Store", "", false) {
+	public static final DialogueNode MARKET_STALL_EXCLUSIVE = new DialogueNode("Прокат рабов", "", false) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -1114,7 +1110,7 @@ public class SlaverAlleyDialogue {
 		}
 	};
 	
-	public static final DialogueNode MARKET_STALL_BULK = new DialogueNode("Zaibatsu Exchange", "", false) {
+	public static final DialogueNode MARKET_STALL_BULK = new DialogueNode("Биржа Зайбацу", "", false) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -1144,7 +1140,7 @@ public class SlaverAlleyDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Enter", "Enter the cafe and sit down at one of the tables.", MARKET_STALL_CAFE_INTERIOR);
+				return new Response("Войти", "Войти в кафе и сесть за один из столиков.", MARKET_STALL_CAFE_INTERIOR);
 			}
 			return null;
 		}
@@ -1296,7 +1292,7 @@ public class SlaverAlleyDialogue {
 		public String getResponseTabTitle(int index) {
 			if(Main.game.getPlayer().hasCompanions()) {
 				if(index==0) {
-					return "Self";
+					return "Я";
 				} else if(index==1) {
 					return "[com.Name]";
 				}
@@ -1306,7 +1302,7 @@ public class SlaverAlleyDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==0) {
-				return new Response("Leave", "Exit the cafe and head back out into Slaver Alley.", MARKET_STALL_CAFE);
+				return new Response("Уйти", "Выйти из кафе и вернуться в Переулок работорговцев.", MARKET_STALL_CAFE);
 			}
 			
 			if(getCafeItems().containsKey(index)) {
@@ -1314,15 +1310,15 @@ public class SlaverAlleyDialogue {
 				int itemValue = (int) (itemType.getValue()*1.8f);
 				if(responseTab==0) {
 					if(Main.game.getPlayer().getMoney()<itemValue) {
-						return new Response(itemType.getName(false)+" ("+UtilText.formatAsMoneyUncoloured(itemValue, "span")+")",
-								"You don't have enough money to order "+itemType.getDeterminer()+" "+itemType.getName(false)+"...",
+						return new Response(itemType.getName(false)+" ("+UtilText.formatAsMoneyUncoloured(itemValue, "охват")+")",
+								"У вас недостаточно денег, чтобы заказать "+itemType.getDeterminer()+" "+itemType.getName(false)+"...",
 								null);
 						
 					} else {
-						return new Response(itemType.getName(false)+" ("+UtilText.formatAsMoney(itemValue, "span")+")",
+						return new Response(itemType.getName(false)+" ("+UtilText.formatAsMoney(itemValue, "охват")+")",
 										Main.game.getPlayer().hasCompanions()
-											?"Order "+itemType.getDeterminer()+" "+itemType.getName(false)+" for yourself."
-											:"Order "+itemType.getDeterminer()+" "+itemType.getName(false)+".",
+											?"Заказать "+itemType.getDeterminer()+" "+itemType.getName(false)+" себе еду."
+											:"Заказать "+itemType.getDeterminer()+" "+itemType.getName(false)+".",
 											MARKET_STALL_CAFE_INTERIOR_NO_CONTENT) {
 									@Override
 									public void effects() {
@@ -1339,11 +1335,11 @@ public class SlaverAlleyDialogue {
 					
 				} else if(responseTab==1) {
 					if(Main.game.getPlayer().getMoney()<itemValue) {
-						return new Response(itemType.getName(false), "You don't have enough money to order "+itemType.getDeterminer()+" "+itemType.getName(false)+"...", null);
+						return new Response(itemType.getName(false), "У вас недостаточно денег, чтобы заказать еду "+itemType.getDeterminer()+" "+itemType.getName(false)+"...", null);
 						
 					} else {
 						return new Response(itemType.getName(false),
-										"Order "+itemType.getDeterminer()+" "+itemType.getName(false)+" for [com.name].",
+										"Заказать "+itemType.getDeterminer()+" "+itemType.getName(false)+" для [com.name].",
 										MARKET_STALL_CAFE_INTERIOR_NO_CONTENT) {
 									@Override
 									public void effects() {
@@ -1391,7 +1387,7 @@ public class SlaverAlleyDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Enter", "Enter the establishment and take a look around inside...", BountyHunterLodge.ENTRANCE_INITITAL) {
+				return new Response("Войти", "Войти в заведение и осмотреться внутри...", BountyHunterLodge.ENTRANCE_INITITAL) {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setLocation(WorldType.BOUNTY_HUNTER_LODGE, PlaceType.BOUNTY_HUNTER_LODGE_ENTRANCE, false);
@@ -1402,7 +1398,7 @@ public class SlaverAlleyDialogue {
 		}
 	};
 	
-	public static final DialogueNode AUCTION_BLOCK = new DialogueNode("Auctioning block", "", false) {
+	public static final DialogueNode AUCTION_BLOCK = new DialogueNode("Аукционный помост", "", false) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -1418,9 +1414,9 @@ public class SlaverAlleyDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				if(Main.game.getPlayer().isHasSlaverLicense()) {
-					return new Response("Approach", "Approach the auction block.", AUCTION_BLOCK_LIST);
+					return new Response("Подойти", "Подойти к аукционному помосту.", AUCTION_BLOCK_LIST);
 				} else {
-					return new Response("Approach", "You don't have a slaver license, so you're unable to participate in any slave auctions.", null);
+					return new Response("Подойти", "У вас нет лицензии работорговца, поэтому вы не можете участвовать в аукционах рабов.", null);
 				}
 			}
 			return null;
@@ -1428,7 +1424,7 @@ public class SlaverAlleyDialogue {
 	};
 	
 	
-	public static final DialogueNode AUCTION_BLOCK_LIST = new DialogueNode("Auctioning block", "", true) {
+	public static final DialogueNode AUCTION_BLOCK_LIST = new DialogueNode("Аукционный помост", "", true) {
 
 		@Override
 		public String getContent() {
@@ -1443,18 +1439,7 @@ public class SlaverAlleyDialogue {
 								+ "Slave"
 							+ "</div>"
 							+ "<div style='float:left; width:17%; font-weight:bold; margin:0; padding:0; text-align:center;'>"
-								+ "<b style='color:"+PresetColour.OBEDIENCE.toWebHexString()+";'>Obedience</b>"
-							+"</div>"
-							+ "<div style='float:left; width:17%; font-weight:bold; margin:0; padding:0; text-align:center;'>"
-								+ "<b style='color:"+PresetColour.CURRENCY_GOLD.toWebHexString()+";'>Value</b>"
-							+"</div>"
-							+ "<div style='float:left; width:17%; font-weight:bold; margin:0; padding:0; text-align:center;'>"
-								+ "<b style='color:"+PresetColour.CURRENCY_GOLD.toWebHexString()+";'>Starting Bid</b>"
-							+"</div>"
-							+ "<div style='float:left; width:9%; font-weight:bold; margin:0; padding:0; text-align:center;'>"
-								+ "Bid"
-							+ "</div>"
-						+ "</div>");
+								+ "<b style='color:"+PresetColour.OBEDIENCE.toWebHexString()+";'>Покорность</b></div><div style='float:left; width:17%; font-weight:bold; margin:0; padding:0; text-align:center;'><b style='color:"+PresetColour.CURRENCY_GOLD.toWebHexString()+";'>Цена</b></div><div style='float:left; width:17%; font-weight:bold; margin:0; padding:0; text-align:center;'><b style='color:"+PresetColour.CURRENCY_GOLD.toWebHexString()+";'>Начальная ставка</b></div><div style='float:left; width:9%; font-weight:bold; margin:0; padding:0; text-align:center;'>Ставка</div></div>");
 			
 			List<NPC> charactersPresent = new ArrayList<>(Main.game.getCharactersPresent());
 			charactersPresent.removeIf((npc) -> Main.game.getPlayer().getCompanions().contains(npc));
@@ -1463,9 +1448,7 @@ public class SlaverAlleyDialogue {
 			
 			if(charactersPresent.isEmpty()) {
 				UtilText.nodeContentSB.append(
-						"<div class='container-full-width' style='margin-bottom:0; text-align:center;'>"
-								+ "<b>There are no upcoming auctions...</b>"
-						+ "</div>");
+						"<div class='container-full-width' style='margin-bottom:0; text-align:center;'><b>Предстоящих аукционов нет...</b></div>");
 				
 			} else {
 				int i=0;
@@ -1473,9 +1456,7 @@ public class SlaverAlleyDialogue {
 					boolean alternateBackground = i%2==0;
 					
 					UtilText.nodeContentSB.append(UtilText.parse(slave,
-							"<div class='container-full-width inner' style='margin-bottom:0;"+(alternateBackground?"background:"+PresetColour.BACKGROUND_ALT.toWebHexString()+";'":"'")+"'>"
-								+ "<div style='width:40%; float:left; margin:0; padding:0; text-align:center;'>"
-									+ "<b style='color:"+slave.getFemininity().getColour().toWebHexString()+";'>"+slave.getName(true)+"</b> - "
+							"<div class='container-full-width inner' style='margin-bottom:0;"+(alternateBackground?"фон:"+PresetColour.BACKGROUND_ALT.toWebHexString()+";'":"'")+"'><div style='width:40%; float:left; margin:0; padding:0; text-align:center;'><b style='color:"+slave.getFemininity().getColour().toWebHexString()+";'>"+slave.getName(true)+"</b> - "
 									+ "<span style='color:"+slave.getFemininity().getColour().toWebHexString()+";'>"+Util.capitaliseSentence(slave.getGender().getName())+"</span> "
 									+ "<span style='color:"+slave.getRace().getColour().toWebHexString()+";'>"
 										+Util.capitaliseSentence((slave.isFeminine()?slave.getSubspecies().getSingularFemaleName(slave.getBody()):slave.getSubspecies().getSingularMaleName(slave.getBody())))
@@ -1485,13 +1466,13 @@ public class SlaverAlleyDialogue {
 									+ "<b style='color:"+slave.getObedience().getColour().toWebHexString()+";'>"+slave.getObedienceValue()+ "</b>"
 								+"</div>"
 								+ "<div style='float:left; width:17%; margin:0; padding:0; text-align:center;'>"
-									+ UtilText.formatAsMoney(slave.getValueAsSlave(true), "span")
+									+ UtilText.formatAsMoney(slave.getValueAsSlave(true), "охват")
 								+"</div>"
 								+ "<div style='float:left; width:17%; margin:0; padding:0; text-align:center;'>"
-									+ UtilText.formatAsMoney((int)(slave.getValueAsSlave(true)*0.5f), "span")
+									+ UtilText.formatAsMoney((int)(slave.getValueAsSlave(true)*0.5f), "охват")
 								+"</div>"
 								+ "<div style='float:left; width:9%; font-weight:bold; margin:0; padding:0;'>"
-									+ "<div id='"+slave.getId()+"_BID' class='square-button solo'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getTransactionBid()+"</div></div>"
+									+ "<div id='"+slave.getId()+"_СТАВКА<div class='square-button-content'> class='square-button solo'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getTransactionBid()+"</div></div>"
 								+ "</div>"
 							+ "</div>"
 							));
@@ -1507,10 +1488,10 @@ public class SlaverAlleyDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Import", "View the character import screen.", AUCTION_IMPORT);
+				return new Response("Импорт", "Открыть экран импорта персонажа.", AUCTION_IMPORT);
 				
 			} else if(index==0) {
-				return new Response("Back", "Walk away from the auction block.", AUCTION_BLOCK);
+				return new Response("Назад", "Уйти от аукциона.", AUCTION_BLOCK);
 				
 			} else {
 				return null;
@@ -1518,7 +1499,7 @@ public class SlaverAlleyDialogue {
 		}
 	};
 	
-	public static final DialogueNode AUCTION_IMPORT = new DialogueNode("Auctioning block", "", true) {
+	public static final DialogueNode AUCTION_IMPORT = new DialogueNode("Аукционный помост", "", true) {
 
 		@Override
 		public String getContent() {
@@ -1551,7 +1532,7 @@ public class SlaverAlleyDialogue {
 		public Response getResponse(int responseTab, int index) {
 			
 			if(index==0) {
-				return new Response("Back", "Return to the previous screen.", AUCTION_BLOCK_LIST);
+				return new Response("Назад", "Вернуться к предыдущему экрану.", AUCTION_BLOCK_LIST);
 				
 			} else {
 				return null;
@@ -1559,7 +1540,7 @@ public class SlaverAlleyDialogue {
 		}
 	};
 	
-	public static final DialogueNode AUCTION_BIDDING = new DialogueNode("Auctioning block", "", true) {
+	public static final DialogueNode AUCTION_BIDDING = new DialogueNode("Аукционный помост", "", true) {
 		
 		@Override
 		public boolean isContinuesDialogue() {
@@ -1605,13 +1586,13 @@ public class SlaverAlleyDialogue {
 			if(biddingRounds==biddingRoundsTotal) {
 				if(index==1) {
 					if(playerBidLeader) {
-						return new Response("Continue", UtilText.parse(biddingNPC, "You won the bidding! [npc.Name] is now ready for collection from Slavery Administration."), AUCTION_BLOCK) {
+						return new Response("Продолжить", UtilText.parse(biddingNPC, "Вы выиграли торги! [npc.Name] теперь можно забрать в Администрации рабства."), AUCTION_BLOCK) {
 							@Override
 							public void effects() {
 							}
 						};
 					} else {
-						return new Response(UtilText.parse(biddingNPC, "[npc.Name] sold"), "You didn't win the auction, but there's always next time, right?", AUCTION_BLOCK) {
+						return new Response(UtilText.parse(biddingNPC, "[npc.Name] продана"), "Вы не выиграли аукцион, но в следующий раз обязательно повезет, верно?", AUCTION_BLOCK) {
 							@Override
 							public void effects() {
 								Main.game.getNpc(Finch.class).removeSlave(biddingNPC);
@@ -1627,7 +1608,7 @@ public class SlaverAlleyDialogue {
 			} else {
 				if(index==1) {
 					if(Main.game.getPlayer().getMoney()>=biddingPrice+100) {
-						return new Response("Bid "+UtilText.formatAsMoney(biddingPrice+100, "span"), UtilText.parse(biddingNPC, "Place a bid of "+(biddingPrice+100)+" flames for [npc.name]."), AUCTION_BIDDING) {
+						return new Response("Ставка "+UtilText.formatAsMoney(biddingPrice+100, "охват"), UtilText.parse(biddingNPC, "Сделать ставку в "+(biddingPrice+100)+" Огни для [npc.name]."), AUCTION_BIDDING) {
 							@Override
 							public void effects() {
 								biddingPrice += 100;
@@ -1641,11 +1622,11 @@ public class SlaverAlleyDialogue {
 							}
 						};
 					} else {
-						return new Response("Bid "+UtilText.formatAsMoneyUncoloured(biddingPrice+100, "span"), "You can't afford a bid of "+(biddingPrice+100)+" flames, so you'll have to let this slave go to someone else.", null);
+						return new Response("Ставка "+UtilText.formatAsMoneyUncoloured(biddingPrice+100, "охват"), "You can't afford a bid of "+(biddingPrice+100)+" огней, так что тебе придется уступить эту рабыню кому-то другому.", null);
 					}
 					
 				} else if(index==2) {
-					return new Response("Stop bidding", UtilText.parse(biddingNPC, "Stop bidding, which will allow someone else to buy [npc.name]."), AUCTION_BIDDING) {
+					return new Response("Прекратить торги", UtilText.parse(biddingNPC, "Прекратить торги, что позволит кому-то другому купить [npc.name]."), AUCTION_BIDDING) {
 						@Override
 						public void effects() {
 							playerBidLeader = false;
@@ -1660,7 +1641,7 @@ public class SlaverAlleyDialogue {
 		}
 	};
 	
-	public static final DialogueNode PUBLIC_STOCKS = new DialogueNode("Public Stocks", "", false) {
+	public static final DialogueNode PUBLIC_STOCKS = new DialogueNode("Общественные колодки", "", false) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -1684,28 +1665,27 @@ public class SlaverAlleyDialogue {
 				for(NPC npc : charactersPresent) {
 					UtilText.nodeContentSB.append(UtilText.parse(npc, 
 							"<p>"
-								+ "[npc.Name]," + (npc.getOwner().isPlayer()?" [style.boldArcane(who is your slave)], and is":"")
-								+ " <span style='color:"+npc.getGender().getColour().toWebHexString()+";'>[npc.a_gender]</span>"
-										+ " <span style='color:"+npc.getRace().getColour().toWebHexString()+";'>[npc.race]</span>, has been marked as available for"));
+								+ "[npc.Name]," + (npc.getOwner().isPlayer()?" [style.boldArcane(кто твой раб)], и это":"")
+								+ " <span style='color:"+npc.getGender().getColour().toWebHexString()+";'>[npc.a_gender]</span> <span style='color:"+npc.getRace().getColour().toWebHexString()+";'>[npc.race]</span> теперь доступен(на) для"));
 					
 					sexAvailability.clear();
 					if(npc.hasSlaveJobSetting(SlaveJob.PUBLIC_STOCKS, SlaveJobSetting.SEX_ORAL)) {
-						sexAvailability.add(" <b style='color:"+PresetColour.BASE_PINK_LIGHT.toWebHexString()+";'>oral</b>");
+						sexAvailability.add(" <b style='color:"+PresetColour.BASE_PINK_LIGHT.toWebHexString()+";'>орального</b>");
 					}
 					if(npc.hasSlaveJobSetting(SlaveJob.PUBLIC_STOCKS, SlaveJobSetting.SEX_VAGINAL)) {
-						sexAvailability.add(" <b style='color:"+PresetColour.BASE_PINK.toWebHexString()+";'>vaginal</b>");
+						sexAvailability.add(" <b style='color:"+PresetColour.BASE_PINK.toWebHexString()+";'>вагинального</b>");
 					}
 					if(npc.hasSlaveJobSetting(SlaveJob.PUBLIC_STOCKS, SlaveJobSetting.SEX_ANAL)) {
-						sexAvailability.add(" <b style='color:"+PresetColour.BASE_PINK_DEEP.toWebHexString()+";'>anal</b>");
+						sexAvailability.add(" <b style='color:"+PresetColour.BASE_PINK_DEEP.toWebHexString()+";'>анального</b>");
 					}
 					
 					if(!sexAvailability.isEmpty()) {
 						UtilText.nodeContentSB.append(
 								Util.stringsToStringList(sexAvailability, false)
-								+" use.</p>");
+								+" использования.</p>");
 					} else {
 						UtilText.nodeContentSB.append(
-								" [style.boldBad(no penetration at all)].</p>");
+								" [style.boldBad(совсем без проникновения)].</p>");
 					}
 				}
 			}
@@ -1721,10 +1701,10 @@ public class SlaverAlleyDialogue {
 		@Override
 		public String getResponseTabTitle(int index) {
 			if(index==0) {
-				return "Solo";
+				return "Соло";
 				
 			} else if(index==1) {
-				return "Threesome";
+				return "Трио";
 			}
 			return null;
 		}
@@ -1738,8 +1718,8 @@ public class SlaverAlleyDialogue {
 			if((responseTab==0 || isCompanionDialogue()) && index==1) {
 				return new Response("[sean.Name]",
 						Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.slaverAlleyComplained)
-							?"You see [sean.name] watching over the area, so perhaps you could go and talk to [sean.herHim] again..."
-							:"There appears to be an Enforcer watching over the area. Perhaps you could go and talk to him...",
+							?"Вы видите, что [sean.name] присматривает за этой местностью, так что, возможно, вам стоит подойти и снова поговорить с [sean.herHim]..."
+							:"Похоже, за территорией следит Enforcer. Возможно, вам стоит подойти и поговорить с ним...",
 							PUBLIC_STOCKS_SEAN);
 			}
 			
@@ -1749,8 +1729,8 @@ public class SlaverAlleyDialogue {
 						GameCharacter slave = charactersPresent.get(index-2);
 						boolean ownedByPlayer = slave.isSlave() && slave.getOwner().isPlayer();
 						return new ResponseSex(
-								UtilText.parse(slave,"Use [npc.name]"),
-								UtilText.parse(slave, "Walk up to [npc.name] and start fucking [npc.herHim] right here in public..."),
+								UtilText.parse(slave,"Использовать [npc.name]"),
+								UtilText.parse(slave, "Подойди к [npc.name] и начни трахать [npc.herHim] прямо здесь, на виду у всех..."),
 								false,
 								false,
 								new SMStocks(
@@ -1786,25 +1766,24 @@ public class SlaverAlleyDialogue {
 						
 						if(companion.isAbleToRefuseSexAsCompanion()) {
 							if(!companion.isAttractedTo(Main.game.getPlayer())) {
-								return new Response(UtilText.parse(slave, "Use [npc.name]"),
-										UtilText.parse(companion, "You can tell that [npc.name] isn't at all interested in having sex with you, and as [npc.she] isn't your slave, you can't make [npc.herHim]..."),
+								return new Response(UtilText.parse(slave, "Использовать [npc.name]"),
+										UtilText.parse(companion, "Ты видишь, что [npc.name] совсем не заинтересована в сексе с тобой, а так как [npc.she] не твоя рабыня, ты не можешь заставить [npc.herHim]..."),
 										null);
 							}
 							if(!companion.isAttractedTo(slave)) {
-								return new Response(UtilText.parse(slave, "Use [npc.name]"),
-										UtilText.parse(slave, companion, "You can tell that [npc2.name] isn't at all interested in having sex with [npc.name], and as [npc2.she] isn't your slave, you can't make [npc.herHim]..."),
+								return new Response(UtilText.parse(slave, "Использовать [npc.name]"),
+										UtilText.parse(slave, companion, "Ты видишь, что [npc2.name] совсем не заинтересован в сексе с [npc.name], а так как [npc2.she] не твой раб, ты не можешь заставить [npc.herHim]..."),
 										null);
 							}
 							if(companion.getFetishDesire(Fetish.FETISH_EXHIBITIONIST).isNegative()) {
-								return new Response(UtilText.parse(slave, "Use [npc.name]"),
-										UtilText.parse(companion, "[npc.Name] has a negative attitude towards the '"+Fetish.FETISH_EXHIBITIONIST.getName(companion)+"' fetish, and as such, is unwilling to have sex in public."
-												+ " As [npc.she] isn't your slave, you can't make [npc.herHim] do it, either..."),
+								return new Response(UtilText.parse(slave, "Использовать [npc.name]"),
+										UtilText.parse(companion, "[npc.Name] относится к фетишу «"+Fetish.FETISH_EXHIBITIONIST.getName(companion)+"» с негативом, и поэтому не желает заниматься сексом на публике. А так как [npc.she] не твоя рабыня, ты не можешь заставить [npc.herHim] сделать это..."),
 										null);
 							}
 						}
 						return new ResponseSex(
-								UtilText.parse(slave, "Use [npc.name]"),
-								UtilText.parse(slave, companion, "Walk up to [npc.name] and have [npc2.name] join you in fucking [npc.herHim] right here in public..."),
+								UtilText.parse(slave, "Использовать [npc.name]"),
+								UtilText.parse(slave, companion, "Подойди к [npc.name] и сделай так, чтобы [npc2.name] присоединилась к тебе, чтобы трахать [npc.herHim] прямо здесь, на виду у всех..."),
 								false,
 								false,
 								new SMStocks(
@@ -1840,10 +1819,10 @@ public class SlaverAlleyDialogue {
 		}
 	};
 	
-	public static final DialogueNode AFTER_STOCKS_SEX = new DialogueNode("Public Stocks", "", true) {
+	public static final DialogueNode AFTER_STOCKS_SEX = new DialogueNode("Общественные колодки", "", true) {
 		@Override
 		public String getDescription() {
-			return UtilText.parse(stocksSlaveTargeted, "Having finished with [npc.name], you step away from [npc.herHim] and prepare to continue on your way.");
+			return UtilText.parse(stocksSlaveTargeted, "Закончив с [npc.name], ты отходишь от [npc.herHim] и готовишься продолжить свой путь.");
 		}
 		@Override
 		public String getContent() {
@@ -1852,7 +1831,7 @@ public class SlaverAlleyDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue", "Continue on your way.", PUBLIC_STOCKS) {
+				return new Response("Продолжить", "Продолжить свой путь.", PUBLIC_STOCKS) {
 					@Override
 					public void effects() {
 						stocksSlaveTargeted = null;
@@ -1866,7 +1845,7 @@ public class SlaverAlleyDialogue {
 	public static final DialogueNode PUBLIC_STOCKS_SEAN = new DialogueNode("", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
-			Main.game.getNpc(Sean.class).setGenericName(UtilText.parse("Constable [sean.surname]"));
+			Main.game.getNpc(Sean.class).setGenericName(UtilText.parse("Констебль [sean.surname]"));
 			Main.game.getPlayer().addCharacterEncountered(Main.game.getNpc(Sean.class));
 			
 		}
@@ -1882,10 +1861,10 @@ public class SlaverAlleyDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				if(Main.game.getCurrentDialogueNode()==PUBLIC_STOCKS_TALK) {
-					return new Response("Talk", "You are already talking to [sean.name].", null);
+					return new Response("Поговорить", "Ты уже разговариваешь с [sean.name].", null);
 				}
-				return new Response("Talk",
-						"Ask [sean.name] why he's guarding this area, and whether anything interesting has happened recently.",
+				return new Response("Поговорить",
+						"Спросить у [sean.name], почему он охраняет этот район и случалось ли здесь в последнее время что-нибудь интересное.",
 						PUBLIC_STOCKS_TALK) {
 					@Override
 					public void effects() {
@@ -1903,11 +1882,11 @@ public class SlaverAlleyDialogue {
 				
 			} if(index==2) {
 				if(Main.game.getCurrentDialogueNode()==PUBLIC_STOCKS_TALK_FREED_SLAVES) {
-					return new Response("Freed slaves", "You are already asking [sean.name] about the situation regarding the freed slaves.", null);
+					return new Response("Освобожденные рабы", "Вы уже расспрашиваете [sean.name] о ситуации с освобожденными рабами.", null);
 				}
 				if(!slavesInStocksPresent()) {
-					return new Response("Freed slaves",
-							"Ask [sean.name] if he's going to get in trouble for letting you free the slaves in the stocks.",
+					return new Response("Освобожденные рабы",
+							"Спросить [sean.name], не обернется ли ему неприятностями то, что он позволил вам освободить рабов в колодках.",
 							PUBLIC_STOCKS_TALK_FREED_SLAVES) {
 						@Override
 						public void effects() {
@@ -1921,8 +1900,8 @@ public class SlaverAlleyDialogue {
 						}
 					};
 				}
-				return new Response("Complain",
-						"You don't like the idea of slaves being publicly used. Complain to [sean.name] about it...",
+				return new Response("Пожаловаться",
+						"Вам не нравится идея того, что рабов используют на публике. Пожаловаться на это [sean.name]...",
 						PUBLIC_STOCKS_COMPLAIN) {
 					@Override
 					public void effects() {
@@ -1936,10 +1915,10 @@ public class SlaverAlleyDialogue {
 				
 			} else if(index==3 && Main.game.getNpc(Sean.class).getTotalTimesHadSex(Main.game.getPlayer())>0) {
 				if(!Main.game.getNpc(Sean.class).isAttractedTo(Main.game.getPlayer())) {
-					return new Response("Seduce", "[sean.Name] is not attracted to you, and so attempting to seduce him would be pointless.", null);
+					return new Response("Соблазнить", "[sean.Name] не испытывает к вам влечения, так что попытки соблазнить его будут бессмысленны.", null);
 				}
-				return new Response("Seduce",
-						"Playfully tease [sean.name] and ask him if he wants to have some fun with you again...",
+				return new Response("Соблазнить",
+						"Игриво подразнить [sean.name] и спросить, не хочет ли он снова немного развлечься с вами...",
 						PUBLIC_STOCKS_SEAN_SEDUCE) {
 					@Override
 					public boolean isSexHighlight() {
@@ -1953,7 +1932,7 @@ public class SlaverAlleyDialogue {
 				
 				
 			} else if(index==0) {
-				return new Response("Step back", "Decide against asking anything of [sean.name] and instead step back.", PUBLIC_STOCKS) {
+				return new Response("Отступить", "Решить ничего не спрашивать у [sean.name] и просто отступить.", PUBLIC_STOCKS) {
 					@Override
 					public void effects() {
 						Main.game.getDialogueFlags().setFlag(DialogueFlagValue.seanIntroduced, true);
@@ -2021,9 +2000,9 @@ public class SlaverAlleyDialogue {
 //				}
 				return new ResponseSex(
 						isCompanionDialogue()
-							?"Alleyway (solo)"
-							:"Alleyway",
-						"Tell [sean.name] that you want to go to the hidden alleyway and have sex with him there...",
+							?"Переулок (в одиночку)"
+							:"Переулок",
+						"Скажи [sean.name], что хочешь отправиться в потайной переулок и заняться с ним там сексом...",
 						Util.newArrayListOfValues(Fetish.FETISH_SUBMISSIVE),
 						null,
 						CorruptionLevel.TWO_HORNY,
@@ -2054,19 +2033,19 @@ public class SlaverAlleyDialogue {
 				
 			} else if(index==2) {
 				if(!Main.game.getPlayer().hasVagina()) {
-					return new Response("Stocks breeding", "You do not have a vagina, so cannot be bred by [sean.name] in the stocks.", null);
+					return new Response("Разведение в колодах", "У тебя нет влагалища, поэтому [sean.name] не может оплодотворить тебя в колодах.", null);
 				}
 				if(!Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.VAGINA, true)) {
-					return new Response("Stocks breeding", "[sean.Name] cannot gain access to your vagina, so you cannot be bred by him in the stocks.", null);
+					return new Response("Разведение в колодах", "[sean.Name] не может добраться до твоего влагалища, поэтому он не может оплодотворить тебя в колодах.", null);
 				}
 				if(Main.game.getPlayer().isPregnant()) {
-					return new Response("Stocks breeding", "You are already pregnant, so cannot be bred by [sean.name] in the stocks.", null);
+					return new Response("Разведение в колодах", "Ты уже беременна, поэтому [sean.name] не может оплодотворить тебя в колодах.", null);
 				}
 				if(Main.game.getPlayer().hasIncubationLitter(SexAreaOrifice.VAGINA)) {
-					return new Response("Stocks breeding", "Your womb is full of eggs, so you cannot be bred by [sean.name] in the stocks.", null);
+					return new Response("Разведение в колодах", "Твоя матка полна яиц, поэтому [sean.name] не может оплодотворить тебя в колодах.", null);
 				}
-				return new ResponseSex("Stocks breeding",
-						"Ask [sean.name] if he'd like to lock you in the stocks and breed you in front of members of the public.",
+				return new ResponseSex("Разведение в колодах",
+						"Спросить [sean.name], не хочет ли он запереть тебя в колодках и трахать на глазах у прохожих.",
 						Util.newArrayListOfValues(Fetish.FETISH_EXHIBITIONIST, Fetish.FETISH_PREGNANCY, Fetish.FETISH_SUBMISSIVE),
 						null,
 						CorruptionLevel.FOUR_LUSTFUL,
@@ -2155,19 +2134,19 @@ public class SlaverAlleyDialogue {
 //							null);
 //				}
 				if(!Main.game.getNpc(Sean.class).isAttractedTo(getMainCompanion())) {
-					return new Response("Alleyway (threesome)", "[sean.Name] is not attracted to [com.name], so is unwilling to have a threesome with [com.herHim].", null);
+					return new Response("Переулок (тройничок)", "[sean.Name] не испытывает влечения к [com.name], поэтому не хочет заниматься тройничком с [com.herHim].", null);
 				}
 //				if(getMainCompanion().isAbleToRefuseSexAsCompanion()) {
 					if(!getMainCompanion().isAttractedTo(Main.game.getPlayer())) {
-						return new Response("Alleyway (threesome)", "[com.Name] is not attracted to you, so is unwilling to have a threesome with you and [sean.name].", null);
+						return new Response("Переулок (тройничок)", "[com.Name] не испытывает к тебе влечения, поэтому не хочет заниматься тройничком с тобой и [sean.name].", null);
 					}
 					if(!getMainCompanion().isAttractedTo(Main.game.getNpc(Sean.class))) {
-						return new Response("Alleyway (threesome)", "[com.Name] is not attracted to [sean.name], so is unwilling to have a threesome with you and him.", null);
+						return new Response("Переулок (тройничок)", "[com.Name] не испытывает влечения к [sean.name], поэтому не хочет заниматься тройничком с тобой и им.", null);
 					}
 //				}
 				return new ResponseSex(
-						"Alleyway (threesome)",
-						"Tell [sean.name] that you and [com.name] want to go to the hidden alleyway and have sex with him there...",
+						"Переулок (тройничок)",
+						"Сказать [sean.name], что ты и [com.name] хотите увести его в укромный переулок и перетрахать там...",
 						Util.newArrayListOfValues(Fetish.FETISH_SUBMISSIVE),
 						null,
 						CorruptionLevel.TWO_HORNY,
@@ -2198,54 +2177,52 @@ public class SlaverAlleyDialogue {
 				
 			} else if(index==7 && isCompanionDialogue()) {
 				if(!Main.game.getPlayer().hasVagina()) {
-					return new Response("Double breeding", "You do not have a vagina, so cannot be bred by [sean.name] in the stocks.", null);
+					return new Response("Двойное осеменение", "У тебя нет влагалища, поэтому [sean.name] не может оплодотворить тебя в колодах.", null);
 				}
 				if(!Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.VAGINA, true)) {
-					return new Response("Double breeding", "[sean.Name] cannot gain access to your vagina, so you cannot be bred by him in the stocks.", null);
+					return new Response("Двойное осеменение", "[sean.Name] не может добраться до твоего влагалища, поэтому он не может оплодотворить тебя в колодах.", null);
 				}
 				if(Main.game.getPlayer().isPregnant()) {
-					return new Response("Double breeding", "You are already pregnant, so cannot be bred by [sean.name] in the stocks.", null);
+					return new Response("Двойное осеменение", "Ты уже беременна, поэтому [sean.name] не может оплодотворить тебя в колодах.", null);
 				}
 				if(Main.game.getPlayer().hasIncubationLitter(SexAreaOrifice.VAGINA)) {
-					return new Response("Double breeding", "Your womb is full of eggs, so you cannot be bred by [sean.name] in the stocks.", null);
+					return new Response("Двойное осеменение", "Твоя матка полна яиц, поэтому [sean.name] не может оплодотворить тебя в колодах.", null);
 				}
 				if(!getMainCompanion().hasVagina()) {
-					return new Response("Double breeding", "[com.Name] does not have a vagina, so cannot be bred by [sean.name] in the stocks.", null);
+					return new Response("Двойное осеменение", "У [com.Name] нет влагалища, поэтому [sean.name] не может осеменить её в колодках.", null);
 				}
 				if(!getMainCompanion().isAbleToAccessCoverableArea(CoverableArea.VAGINA, true)) {
-					return new Response("Double breeding", "[sean.Name] cannot gain access to [com.namePos] vagina, so [com.she] cannot be bred by him in the stocks.", null);
+					return new Response("Двойное осеменение", "[sean.Name] не может добраться до влагалища [com.namePos], поэтому [com.she] не может быть им осеменена в колодках.", null);
 				}
 				if(getMainCompanion().isPregnant()) {
-					return new Response("Double breeding", "[com.Name] is already pregnant, so cannot be bred by [sean.name] in the stocks.", null);
+					return new Response("Двойное осеменение", "[com.Name] уже беременна, поэтому [sean.name] не может осеменить её в колодках.", null);
 				}
 				if(getMainCompanion().hasIncubationLitter(SexAreaOrifice.VAGINA)) {
-					return new Response("Double breeding", "[com.NamePos] womb is full of eggs, so [com.she] cannot be bred by [sean.name] in the stocks.", null);
+					return new Response("Двойное осеменение", "Утроба [com.NamePos] полна яиц, поэтому [com.she] не может быть осеменена [sean.name] в колодках.", null);
 				}
 				if(!Main.game.getNpc(Sean.class).isAttractedTo(getMainCompanion())) {
-					return new Response("Double breeding", "[sean.Name] is not attracted to [com.name], so is unwilling to breed [com.herHim].", null);
+					return new Response("Двойное осеменение", "[sean.Name] не испытывает влечения к [com.name], поэтому неохотно идет на спаривание с [com.herHim].", null);
 				}
 //				if(getMainCompanion().isAbleToRefuseSexAsCompanion()) {
 					if(!getMainCompanion().isAttractedTo(Main.game.getPlayer())) {
-						return new Response("Double breeding", "[com.Name] is not attracted to you, and so is unwilling to participate in the breeding.", null);
+						return new Response("Двойное осеменение", "[com.Name] не испытывает к тебе влечения, поэтому неохотно участвует в размножении.", null);
 					}
 					if(!getMainCompanion().isAttractedTo(Main.game.getNpc(Sean.class))) {
-						return new Response("Double breeding", "[com.Name] is not attracted to [sean.name], and so is unwilling to participate in the breeding.", null);
+						return new Response("Двойное осеменение", "[com.Name] не испытывает влечения к [sean.name], поэтому неохотно участвует в размножении.", null);
 					}
 					if(!getMainCompanion().getFetishDesire(Fetish.FETISH_EXHIBITIONIST).isPositive()) {
-						return new Response("Double breeding",
-								"As [com.name] does not have a positive view of the '"+Fetish.FETISH_EXHIBITIONIST.getName(getMainCompanion())+"' fetish, [com.she] will not agree to do this."
-										+ " [sean.Name] will also not want to force [com.herHim] into anything [com.she] doesn't want to do.",
+						return new Response("Двойное осеменение",
+								"Так как [com.name] не относится положительно к фетишу '"+Fetish.FETISH_EXHIBITIONIST.getName(getMainCompanion())+"', [com.she] не согласится на это. [sean.Name] также не захочет принуждать [com.herHim] к тому, чего [com.she] не хочет.",
 								null);
 					}
 					if(!getMainCompanion().getFetishDesire(Fetish.FETISH_PREGNANCY).isPositive()) {
-						return new Response("Double breeding",
-								"As [com.name] does not have a positive view of the '"+Fetish.FETISH_PREGNANCY.getName(getMainCompanion())+"' fetish, [com.she] will not agree to do this."
-										+ " [sean.Name] will also not want to force [com.herHim] into anything [com.she] doesn't want to do.",
+						return new Response("Двойное осеменение",
+								"Так как [com.name] не относится положительно к фетишу '"+Fetish.FETISH_PREGNANCY.getName(getMainCompanion())+"', [com.she] не согласится на это. [sean.Name] также не захочет принуждать [com.herHim] к тому, чего [com.she] не хочет.",
 								null);
 					}
 //				}
-				return new ResponseSex("Double breeding",
-						"Ask [sean.name] if he'd like to lock you and [com.name] in the stocks and breed the two of you in front of members of the public.",
+				return new ResponseSex("Двойное осеменение",
+						"Спросить [sean.name], не хочет ли он запереть тебя и [com.name] в колодках и разводить вас обоих на глазах у публики.",
 						Util.newArrayListOfValues(Fetish.FETISH_EXHIBITIONIST, Fetish.FETISH_PREGNANCY, Fetish.FETISH_SUBMISSIVE),
 						null,
 						CorruptionLevel.FOUR_LUSTFUL,
@@ -2329,7 +2306,7 @@ public class SlaverAlleyDialogue {
 				};
 				
 			} else if(index==0) {
-				return new Response("Back out", "Decide against having sex with [sean.name]...", PUBLIC_STOCKS_SEAN_SEDUCE_BACK_OUT) {
+				return new Response("Назад", "Решить не заниматься сексом с [sean.name]...", PUBLIC_STOCKS_SEAN_SEDUCE_BACK_OUT) {
 					@Override
 					public void effects() {
 						if(Main.game.getNpc(Sean.class).getAffection(Main.game.getPlayer())>AffectionLevel.NEGATIVE_ONE_ANNOYED.getMedianValue()) {
@@ -2357,7 +2334,7 @@ public class SlaverAlleyDialogue {
 		}
 	};
 	
-	public static final DialogueNode AFTER_SEAN_SEDUCE_ALLEYWAY_SEX = new DialogueNode("Finished", "", true) {
+	public static final DialogueNode AFTER_SEAN_SEDUCE_ALLEYWAY_SEX = new DialogueNode("Завершено", "", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 2*60;
@@ -2365,9 +2342,9 @@ public class SlaverAlleyDialogue {
 		@Override
 		public String getDescription() {
 			if(isCompanionDialogue() && Main.sex.getAllParticipants(false).contains(getMainCompanion())) {
-				return "You, [com.name], and [sean.name] have finished having sex with one another...";
+				return "Вы, [com.name] и [sean.name] закончили заниматься сексом друг с другом...";
 			}
-			return "You and [sean.name] have finished having sex with one another...";
+			return "Вы и [sean.name] закончили заниматься сексом друг с другом...";
 		}
 		@Override
 		public String getContent() {
@@ -2379,8 +2356,8 @@ public class SlaverAlleyDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue",
-						"Head back out into Slaver Alley.",
+				return new Response("Продолжить",
+						"Вернуться обратно в Переулок работорговцев.",
 						PlaceType.SLAVER_ALLEY_PATH.getDialogue(false)) {
 					@Override
 					public void effects() {
@@ -2424,7 +2401,7 @@ public class SlaverAlleyDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.slaverAlleyCompanionAcceptedDeal)) {
-					return new Response("Wait", "[sean.Name] leaves you and [com.name] locked up in the stocks for a while longer.", AFTER_SEAN_SEDUCE_STOCKS_BREEDING_FINISHED) {
+					return new Response("Ждать", "[sean.Name] оставляет тебя и [com.name] в колодках еще на некоторое время.", AFTER_SEAN_SEDUCE_STOCKS_BREEDING_FINISHED) {
 						@Override
 						public void effects() {
 							Main.game.getPlayer().performImpregnationCheck(true);
@@ -2436,7 +2413,7 @@ public class SlaverAlleyDialogue {
 					};
 					
 				} else {
-					return new Response("Wait", "[sean.Name] leaves you locked up in the stocks a while longer.", AFTER_SEAN_SEDUCE_STOCKS_BREEDING_FINISHED) {
+					return new Response("Ждать", "[sean.Name] оставляет тебя в колодках еще на некоторое время.", AFTER_SEAN_SEDUCE_STOCKS_BREEDING_FINISHED) {
 						@Override
 						public void effects() {
 							Main.game.getPlayer().performImpregnationCheck(true);
@@ -2466,7 +2443,7 @@ public class SlaverAlleyDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.slaverAlleyCompanionAcceptedDeal)) {
-					return new Response("Released", "[sean.Name] moves to release you and [com.name] from the stocks.", PUBLIC_STOCKS) {
+					return new Response("Освобождение", "[sean.Name] подходит, чтобы освободить тебя и [com.name] из колодок.", PUBLIC_STOCKS) {
 						@Override
 						public void effects() {
 							Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/slaverAlley/genericDialogue", "AFTER_SEAN_SEDUCE_STOCKS_BREEDING_THREESOME_FINISHED_END"));
@@ -2476,7 +2453,7 @@ public class SlaverAlleyDialogue {
 						}
 					};
 				} else {
-					return new Response("Released", "[sean.Name] moves to release you from the stocks.", PUBLIC_STOCKS) {
+					return new Response("Освобождение", "[sean.Name] подходит, чтобы освободить тебя из колодок.", PUBLIC_STOCKS) {
 						@Override
 						public void effects() {
 							Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/slaverAlley/genericDialogue", "AFTER_SEAN_SEDUCE_STOCKS_BREEDING_FINISHED_END"));
@@ -2508,7 +2485,7 @@ public class SlaverAlleyDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Step back", "Do as [sean.name] says and step back.", PUBLIC_STOCKS) {
+				return new Response("Отступить", "Сделать так, как говорит [sean.name], и отступить назад.", PUBLIC_STOCKS) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/slaverAlley/genericDialogue", "PUBLIC_STOCKS_COMPLAIN_STEP_BACK"));
@@ -2517,7 +2494,7 @@ public class SlaverAlleyDialogue {
 				};
 				
 			} else if(index==2) {
-				return new Response("Persist", "Ignore [sean.namePos] command and demand that the slaves be released.", PUBLIC_STOCKS_COMPLAIN_PERSIST);
+				return new Response("Настаивать", "Игнорировать приказ [sean.namePos] и требовать освобождения рабов.", PUBLIC_STOCKS_COMPLAIN_PERSIST);
 			}
 			return null;
 		}
@@ -2538,7 +2515,7 @@ public class SlaverAlleyDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Decline", "Decide not to take up [sean.namePos] challenge and step back.", PUBLIC_STOCKS) {
+				return new Response("Отклонить", "Решить не принимать вызов [sean.namePos] и отступить.", PUBLIC_STOCKS) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/slaverAlley/genericDialogue", "PUBLIC_STOCKS_COMPLAIN_PERSIST_STEP_BACK"));
@@ -2547,7 +2524,7 @@ public class SlaverAlleyDialogue {
 				};
 				
 			} else if(index==2) {
-				return new Response("Challenge", "Accept [sean.namePos] challenge.", PUBLIC_STOCKS_COMPLAIN_CHALLENGE) {
+				return new Response("Бросить вызов", "Принять вызов [sean.namePos].", PUBLIC_STOCKS_COMPLAIN_CHALLENGE) {
 					@Override
 					public boolean isCombatHighlight() {
 						return true;
@@ -2582,12 +2559,12 @@ public class SlaverAlleyDialogue {
 				
 			} else if(index==3) {
 				if(Main.game.getPlayer().getMoney()<5000) {
-					return new Response("Bribe ("+UtilText.formatAsMoneyUncoloured(5000, "span")+")",
-							"You don't have enough money to bribe [sean.name]...<br/>[style.italicsBad(Requires 5000 flames!)]",
+					return new Response("Дать взятку ("+UtilText.formatAsMoneyUncoloured(5000, "охват")+")",
+							"У вас недостаточно денег, чтобы подкупить [sean.name]...<br/>[style.italicsBad(Требуется 5000 огней!)]",
 							null);
 				}
-				return new Response("Bribe ("+UtilText.formatAsMoney(5000, "span")+")",
-						"Offer [sean.name] a bribe to look the other way while you release the slaves.",
+				return new Response("Дать взятку ("+UtilText.formatAsMoney(5000, "охват")+")",
+						"Предложить [sean.name] взятку, чтобы он не обращал внимания, пока вы освобождаете рабов.",
 						PUBLIC_STOCKS_COMPLAIN_BRIBE) {
 					@Override
 					public void effects() {
@@ -2607,11 +2584,11 @@ public class SlaverAlleyDialogue {
 			} else if(index==4) {
 				return new Response(
 						isCompanionDialogue()
-							?"Take place (solo)"
-							:"Take place",
+							?"Занять место (в одиночку)"
+							:"Происходит",
 						isCompanionDialogue()
-							?"Do as [sean.name] suggests and take the place of one of the slaves, leaving [com.name] to wait and watch nearby..."
-							:"Do as [sean.name] suggests and take the place of one of the slaves.",
+							?"Сделать так, как предлагает [sean.name], и занять место одного из рабов, оставив [com.name] ждать и наблюдать неподалеку..."
+							:"Сделать так, как предлагает [sean.name], и занять место одного из рабов.",
 						PUBLIC_STOCKS_LOCKED_UP) {
 					@Override
 					public boolean isSexHighlight() {
@@ -2635,20 +2612,18 @@ public class SlaverAlleyDialogue {
 			} else if(index==5 && isCompanionDialogue()) {
 //				if(getMainCompanion().isAbleToRefuseSexAsCompanion()) {
 					if(!getMainCompanion().getFetishDesire(Fetish.FETISH_EXHIBITIONIST).isPositive()) {
-						return new Response("Take place (both)",
-								"As [com.name] does not have a positive view of the '"+Fetish.FETISH_EXHIBITIONIST.getName(getMainCompanion())+"' fetish, [com.she] will not agree to do this."
-										+ " [sean.Name] will also not want to force [com.herHim] into anything [com.she] doesn't want to do.",
+						return new Response("Происходит (оба)",
+								"Так как [com.name] не относится положительно к фетишу '"+Fetish.FETISH_EXHIBITIONIST.getName(getMainCompanion())+"', [com.she] не согласится на это. [sean.Name] также не захочет принуждать [com.herHim] к тому, чего [com.she] не хочет.",
 								null);
 					}
 					if(!getMainCompanion().getFetishDesire(Fetish.FETISH_NON_CON_SUB).isPositive()) {
-						return new Response("Take place (both)",
-								"As [com.name] does not have a positive view of the '"+Fetish.FETISH_NON_CON_SUB.getName(getMainCompanion())+"' fetish, [com.she] will not agree to do this."
-										+ " [sean.Name] will also not want to force [com.herHim] into anything [com.she] doesn't want to do.",
+						return new Response("Происходит (оба)",
+								"Так как [com.name] не относится положительно к фетишу '"+Fetish.FETISH_NON_CON_SUB.getName(getMainCompanion())+"', [com.she] не согласится на это. [sean.Name] также не захочет принуждать [com.herHim] к тому, чего [com.she] не хочет.",
 								null);
 					}
 //				}
-				return new Response("Take place (both)",
-						"Do as [sean.name] suggests and get [com.name] to join you in taking the place of two of the slaves.",
+				return new Response("Происходит (оба)",
+						"Сделать так, как предлагает [sean.name], и уговорить [com.name] присоединиться к вам, чтобы занять место двух рабов.",
 						PUBLIC_STOCKS_LOCKED_UP) {
 					@Override
 					public boolean isSexHighlight() {
@@ -2688,10 +2663,10 @@ public class SlaverAlleyDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new ResponseCombat("Fight", "Start your fight with [sean.name]!", Main.game.getNpc(Sean.class));
+				return new ResponseCombat("Сразиться", "Начать бой с [sean.name]!", Main.game.getNpc(Sean.class));
 				
 			} else if(index==0) {
-				return new Response("Back out", "Decide against fighting [sean.name] after all...", 
+				return new Response("Назад", "В итоге всё же решить не сражаться с [sean.name]...", 
 						PlaceType.SLAVER_ALLEY_PATH.getDialogue(false)) {
 					@Override
 					public void effects() {
@@ -2721,7 +2696,7 @@ public class SlaverAlleyDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Free slaves", "Head back into the square and unlock all of the stocks.", PUBLIC_STOCKS_COMPLAIN_FREE_SLAVES) {
+				return new Response("Освободить рабов", "Вернуться на площадь и разблокировать все колодки.", PUBLIC_STOCKS_COMPLAIN_FREE_SLAVES) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/slaverAlley/genericDialogue", "PUBLIC_STOCKS_COMPLAIN_CHALLENGE_VICTORY_FREE_SLAVES"));
@@ -2732,14 +2707,13 @@ public class SlaverAlleyDialogue {
 				
 			} else if(index==2) {
 				if(!Main.game.getPlayer().isFeminine()) {
-					return new Response("Seduce",
-							"[sean.Name] isn't attracted to you, so you can't seduce him. It would also be an extremely bad idea to force yourself upon him, as that would no doubt quickly lead to you being declared a wanted criminal.",
+					return new Response("Соблазнить",
+							"[sean.Name] не испытывает к вам влечения, так что соблазнить его не получится. Также будет крайне плохой идеей навязываться ему силой, ведь это, без сомнения, быстро превратит вас в разыскиваемого преступника.",
 							null);
 				}
 				return new ResponseSex(
-						"Seduce",
-						"Tell [sean.name] that you were only really interested in getting some alone time with him..."
-								+ "<br/>[style.italicsMinorBad(Having sex with [sean.name] will not leave you with enough time in which to also free the slaves.)]",
+						"Соблазнить",
+						"Сказать [sean.name], что на самом деле вы просто хотели побыть с ним наедине...<br/>[style.italicsMinorBad(Секс с [sean.name] не оставит вам достаточно времени, чтобы еще и освободить рабов.)]",
 						true,
 						true,
 						new SMGeneric(
@@ -2752,32 +2726,30 @@ public class SlaverAlleyDialogue {
 				
 			} else if(index==3 && isCompanionDialogue()) {
 				if(!Main.game.getPlayer().isFeminine()) {
-					return new Response("Seduce (threesome)",
-							"[sean.Name] isn't attracted to you, so you can't seduce him. It would also be an extremely bad idea to force yourself on him, as that would no doubt quickly lead to you being declared a wanted criminal.",
+					return new Response("Соблазнить (тройничок)",
+							"[sean.Name] не испытывает к тебе влечения, так что соблазнить его не получится. К тому же, навязываться ему будет крайне плохой идеей — это наверняка быстро превратит тебя в разыскиваемого преступника.",
 							null);
 				}
 				if(!getMainCompanion().isFeminine()) {
-					return new Response("Seduce (threesome)",
-							"[sean.Name] isn't attracted to [com.name], so you can't seduce him into having a threesome."
-									+ " It would also be an extremely bad idea to force yourselves on him, as that would no doubt quickly lead to both you and [com.name] being declared wanted criminals.",
+					return new Response("Соблазнить (тройничок)",
+							"[sean.Name] не испытывает влечения к [com.name], так что соблазнить его на тройничок не выйдет. К тому же, навязываться ему будет крайне плохой идеей — это наверняка быстро превратит и тебя, и [com.name] в разыскиваемых преступников.",
 							null);
 				}
 //				if(getMainCompanion().isAbleToRefuseSexAsCompanion()) {
 					if(!getMainCompanion().isAttractedTo(Main.game.getPlayer())) {
-						return new Response("Seduce (threesome)",
-								"You can tell that [com.name] isn't at all interested in having sex with you...",
+						return new Response("Соблазнить (тройничок)",
+								"Ты понимаешь, что [com.name] совсем не заинтересован в сексе с тобой...",
 								null);
 					}
 					if(!getMainCompanion().isAttractedTo(Main.game.getNpc(Sean.class))) {
-						return new Response("Seduce (threesome)",
-								"You can tell that [com.name] isn't at all interested in having sex with [sean.name]...",
+						return new Response("Соблазнить (тройничок)",
+								"Ты понимаешь, что [com.name] совсем не заинтересован в сексе с [sean.name]...",
 								null);
 					}
 //				}
 				return new ResponseSex(
-						"Seduce (threesome)",
-						"Tell [sean.name] that you and [com.name] were only really interested in getting some alone time with him..."
-								+ "<br/>[style.italicsMinorBad(Having a threesome with [sean.name] and [com.name] will not leave you with enough time in which to also free the slaves.)]",
+						"Соблазнить (тройничок)",
+						"Сказать [sean.name], что вы с [com.name] на самом деле хотели лишь остаться с ним наедине...<br/>[style.italicsMinorBad(Тройничок с [sean.name] и [com.name] не оставит вам достаточно времени, чтобы еще и освободить рабов.)]",
 						true,
 						true,
 						new SMGeneric(
@@ -2795,7 +2767,7 @@ public class SlaverAlleyDialogue {
 		}
 	};
 	
-	public static final DialogueNode AFTER_SEAN_ALLEYWAY_SEX = new DialogueNode("Finished", "", true) {
+	public static final DialogueNode AFTER_SEAN_ALLEYWAY_SEX = new DialogueNode("Завершено", "", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 2*60;
@@ -2803,9 +2775,9 @@ public class SlaverAlleyDialogue {
 		@Override
 		public String getDescription() {
 			if(isCompanionDialogue() && Main.sex.getAllParticipants(false).contains(getMainCompanion())) {
-				return "You, [com.name], and [sean.name] have finished having sex with one another...";
+				return "Вы, [com.name] и [sean.name] закончили заниматься сексом друг с другом...";
 			}
-			return "You and [sean.name] have finished having sex with one another...";
+			return "Вы и [sean.name] закончили заниматься сексом друг с другом...";
 		}
 		@Override
 		public String getContent() {
@@ -2817,8 +2789,8 @@ public class SlaverAlleyDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue",
-						"Head back out into Slaver Alley",
+				return new Response("Продолжить",
+						"Вернуться в Переулок работорговцев",
 						PlaceType.SLAVER_ALLEY_PATH.getDialogue(false)) {
 					@Override
 					public void effects() {
@@ -2851,10 +2823,10 @@ public class SlaverAlleyDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Locked up",
+				return new Response("Заперта",
 						isCompanionDialogue()
-							?"You and [com.name] are locked up in the stocks..."
-							:"You are locked up in the stocks...",
+							?"Вы и [com.name] заперты в колодах..."
+							:"Вы заперты в колодах...",
 						PUBLIC_STOCKS_LOCKED_UP) {
 					@Override
 					public void effects() {
@@ -2878,7 +2850,7 @@ public class SlaverAlleyDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Free slaves", "Head back into the square and unlock all of the stocks.", PUBLIC_STOCKS_COMPLAIN_FREE_SLAVES) {
+				return new Response("Освободить рабов", "Вернуться на площадь и разблокировать все колодки.", PUBLIC_STOCKS_COMPLAIN_FREE_SLAVES) {
 					@Override
 					public void effects() {
 						Main.game.getNpc(Sean.class).setNearestLocation(WorldType.SLAVER_ALLEY, PlaceType.SLAVER_ALLEY_CAFE, false);
@@ -2906,8 +2878,8 @@ public class SlaverAlleyDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Step back",
-						"Do as the guards say and step back while they try to figure out what happened.",
+				return new Response("Отступить",
+						"Делайте, что говорят стражники, и отступите, пока они пытаются разобраться в случившемся.",
 						PUBLIC_STOCKS_COMPLAIN_FREE_SLAVES_END) {
 					@Override
 					public void effects() {
@@ -2964,8 +2936,8 @@ public class SlaverAlleyDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(isSeanOfferingDeal(Main.game.getPlayer())) {
 				if(index==1) {
-					return new Response("Accept",
-							"Swallow the "+ItemType.getItemTypeFromId("innoxia_pills_fertility").getName(false)+" that [sean.name] is offering you, thereby accepting his deal of protection in exchange for letting him try to impregnate you...",
+					return new Response("Принять",
+							"Проглотить "+ItemType.getItemTypeFromId("innoxia_pills_fertility").getName(false)+" что предлагает вам [sean.name], тем самым принимая его сделку: защиту в обмен на попытку оплодотворить вас...",
 							PUBLIC_STOCKS_LOCKED_UP_FIRST_SEX) {
 						@Override
 						public void effects() {
@@ -2978,8 +2950,8 @@ public class SlaverAlleyDialogue {
 					};
 					
 				} else if(index==2) {
-					return new Response("Refuse",
-							"Refuse to swallow the "+ItemType.getItemTypeFromId("innoxia_pills_fertility").getName(false)+" and instead accept the fact that you're going to be used by members of the public.",
+					return new Response("Отказаться",
+							"Отказаться проглотить "+ItemType.getItemTypeFromId("innoxia_pills_fertility").getName(false)+" и вместо этого смириться с тем, что вас будут использовать прохожие.",
 							PUBLIC_STOCKS_LOCKED_UP_FIRST_SEX) {
 						@Override
 						public int getSecondsPassed() {
@@ -3000,8 +2972,8 @@ public class SlaverAlleyDialogue {
 				
 			} else {
 				if(index==1) {
-					return new Response("Continue",
-							"All you can do is wait and see if you're going to be used by members of the public...",
+					return new Response("Продолжить",
+							"Вам остается только ждать и смотреть, станут ли вас использовать прохожие...",
 							PUBLIC_STOCKS_LOCKED_UP_FIRST_SEX) {
 						@Override
 						public int getSecondsPassed() {
@@ -3035,8 +3007,8 @@ public class SlaverAlleyDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.slaverAlleyAcceptedDeal)) {
 				if(index==1) {
-					return new ResponseSex("Get bred",
-							"[sean.Name] steps up behind you and prepares to start breeding you.",
+					return new ResponseSex("Даться",
+							"[sean.Name] подходит к вам сзади и готовится начать осеменение.",
 							true,
 							false,
 							new SexManagerDefault(
@@ -3105,10 +3077,10 @@ public class SlaverAlleyDialogue {
 				
 			} else {
 				if(index==1) {
-					return new ResponseSex("Used",
+					return new ResponseSex("Использовано",
 							Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.slaverAlleyTwoPartners)
-								?"The two strangers prepare to start using you..."
-								:"The stranger prepares to start using you...",
+								?"Двое незнакомцев готовятся начать использовать тебя..."
+								:"Незнакомец готовится начать использовать тебя...",
 							false,
 							false,
 							getRandomPartnerSexManager(),
@@ -3123,7 +3095,7 @@ public class SlaverAlleyDialogue {
 		}
 	};
 	
-	public static final DialogueNode PUBLIC_STOCKS_LOCKED_UP_AFTER_FIRST_SEX = new DialogueNode("Finished", "", true) {
+	public static final DialogueNode PUBLIC_STOCKS_LOCKED_UP_AFTER_FIRST_SEX = new DialogueNode("Завершено", "", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 2*60;
@@ -3131,13 +3103,13 @@ public class SlaverAlleyDialogue {
 		@Override
 		public String getDescription() {
 			if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.slaverAlleyAcceptedDeal)) {
-				return "Having filled your [pc.pussy+] with his cum, [sean.name] is finished with you and steps back.";
+				return "Наполнив твой [pc.pussy+] своей спермой, [sean.name] заканчивает с тобой и отступает.";
 				
 			} else if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.slaverAlleyTwoPartners)) {
-				return "Having had their fun, the strangers step back...";
+				return "Насладившись, незнакомцы отступают...";
 				
 			} else {
-				return UtilText.parse(randomSexPartners.get(0), "Having had [npc.her] fun, the stranger steps back...");
+				return UtilText.parse(randomSexPartners.get(0), "Насладившись [npc.her], незнакомец отступает...");
 			}
 		}
 		@Override
@@ -3153,8 +3125,8 @@ public class SlaverAlleyDialogue {
 			if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.slaverAlleyCompanionInStocks)) {
 				if(index==1) {
 					if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.slaverAlleyCompanionAcceptedDeal)) {
-						return new Response("[com.NamePos] turn",
-								"[sean.Name] prepares to start fucking [com.name]...",
+						return new Response("Очередь [com.NamePos]",
+								"[sean.Name] готовится начать трахать [com.name]...",
 								PUBLIC_STOCKS_LOCKED_UP_COMPANION_FIRST_SEX) {
 							@Override
 							public void effects() {
@@ -3167,8 +3139,8 @@ public class SlaverAlleyDialogue {
 						};
 						
 					} else {
-						return new Response("[com.NamePos] turn",
-								"A stranger moves up to [com.name] and prepares to start fucking [com.herHim]...",
+						return new Response("Очередь [com.NamePos]",
+								"Незнакомец подходит к [com.name] и готовится начать трахать [com.herHim]...",
 								PUBLIC_STOCKS_LOCKED_UP_COMPANION_FIRST_SEX) {
 							@Override
 							public void effects() {
@@ -3184,8 +3156,8 @@ public class SlaverAlleyDialogue {
 			} else {
 				if(index==1) {
 					if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.slaverAlleyAcceptedDeal)) {
-						return new Response("Wait",
-								"You can't do anything but wait until [sean.name] is ready to fuck you again...",
+						return new Response("Ждать",
+								"Тебе остается только ждать, пока [sean.name] не будет готов трахнуть тебя снова...",
 								PUBLIC_STOCKS_LOCKED_UP_SECOND_SEX) {
 							@Override
 							public void effects() {
@@ -3194,8 +3166,8 @@ public class SlaverAlleyDialogue {
 						};
 						
 					} else {
-						return new Response("Wait",
-								"You can't do anything but wait and see if you're going to get used again...",
+						return new Response("Ждать",
+								"Вам остается только ждать и гадать, не используют ли вас снова...",
 								PUBLIC_STOCKS_LOCKED_UP_SECOND_SEX) {
 							@Override
 							public void effects() {
@@ -3224,8 +3196,8 @@ public class SlaverAlleyDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.slaverAlleyAcceptedDeal)) {
-					return new Response("Wait",
-							"You can't do anything but wait until [sean.name] is ready to fuck you again...",
+					return new Response("Ждать",
+							"Тебе остается только ждать, пока [sean.name] не будет готов трахнуть тебя снова...",
 							PUBLIC_STOCKS_LOCKED_UP_SECOND_SEX) {
 						@Override
 						public void effects() {
@@ -3234,8 +3206,8 @@ public class SlaverAlleyDialogue {
 					};
 					
 				} else {
-					return new Response("Wait",
-							"You can't do anything but wait and see if you're going to get used again...",
+					return new Response("Ждать",
+							"Вам остается только ждать и гадать, не используют ли вас снова...",
 							PUBLIC_STOCKS_LOCKED_UP_SECOND_SEX) {
 						@Override
 						public void effects() {
@@ -3263,8 +3235,8 @@ public class SlaverAlleyDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.slaverAlleyAcceptedDeal)) {
 				if(index==1) {
-					return new ResponseSex("Bred again",
-							"[sean.Name] steps up behind you and prepares to start breeding you.",
+					return new ResponseSex("Снова осеменена",
+							"[sean.Name] подходит к вам сзади и готовится начать осеменение.",
 							true,
 							false,
 							new SexManagerDefault(
@@ -3333,10 +3305,10 @@ public class SlaverAlleyDialogue {
 				
 			} else {
 				if(index==1) {
-					return new ResponseSex("Used again",
+					return new ResponseSex("Использована снова",
 							Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.slaverAlleyTwoPartners)
-								?"The two strangers prepare to start using you..."
-								:"The stranger prepares to start using you...",
+								?"Двое незнакомцев готовятся начать использовать тебя..."
+								:"Незнакомец готовится начать использовать тебя...",
 							false,
 							false,
 							getRandomPartnerSexManager(),
@@ -3351,7 +3323,7 @@ public class SlaverAlleyDialogue {
 		}
 	};
 
-	public static final DialogueNode PUBLIC_STOCKS_LOCKED_UP_AFTER_SECOND_SEX = new DialogueNode("Finished", "", true) {
+	public static final DialogueNode PUBLIC_STOCKS_LOCKED_UP_AFTER_SECOND_SEX = new DialogueNode("Завершено", "", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 2*60;
@@ -3359,13 +3331,13 @@ public class SlaverAlleyDialogue {
 		@Override
 		public String getDescription() {
 			if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.slaverAlleyAcceptedDeal)) {
-				return "Having filled your [pc.pussy+] with his cum, [sean.name] is finished with you and steps back.";
+				return "Наполнив твой [pc.pussy+] своей спермой, [sean.name] заканчивает с тобой и отступает.";
 				
 			} else if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.slaverAlleyTwoPartners)) {
-				return "Having had their fun, the strangers step back...";
+				return "Насладившись, незнакомцы отступают...";
 				
 			} else {
-				return UtilText.parse(randomSexPartners.get(0), "Having had [npc.her] fun, the stranger steps back...");
+				return UtilText.parse(randomSexPartners.get(0), "Насладившись [npc.her], незнакомец отступает...");
 			}
 		}
 		@Override
@@ -3381,8 +3353,8 @@ public class SlaverAlleyDialogue {
 			if(isCompanionDialogue() && Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.slaverAlleyCompanionInStocks)) {
 				if(index==1) {
 					if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.slaverAlleyCompanionAcceptedDeal)) {
-						return new Response("[com.NamePos] turn",
-								"[sean.Name] moves over to [com.name] and prepares to start fucking [com.herHim]...",
+						return new Response("Очередь [com.NamePos]",
+								"[sean.Name] подходит к [com.name] и готовится начать трахать [com.herHim]...",
 								PUBLIC_STOCKS_LOCKED_UP_COMPANION_SECOND_SEX) {
 							@Override
 							public void effects() {
@@ -3393,8 +3365,8 @@ public class SlaverAlleyDialogue {
 						};
 						
 					} else {
-						return new Response("[com.NamePos] turn",
-								"A pair of strangers move up to [com.name] and prepare to start fucking [com.herHim]...",
+						return new Response("Очередь [com.NamePos]",
+								"Пара незнакомцев подходит к [com.name] и готовится начать трахать [com.herHim]...",
 								PUBLIC_STOCKS_LOCKED_UP_COMPANION_SECOND_SEX) {
 							@Override
 							public void effects() {
@@ -3410,8 +3382,8 @@ public class SlaverAlleyDialogue {
 			} else {
 				if(index==1) {
 					if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.slaverAlleyAcceptedDeal)) {
-						return new Response("Wait",
-								"There's nothing for you to do but wait until [sean.name] returns and releases you from the stocks...",
+						return new Response("Ждать",
+								"Вам остается только ждать, пока [sean.name] не вернется и не освободит вас из колодок...",
 								PUBLIC_STOCKS_LOCKED_UP_FINISHED) {
 							@Override
 							public void effects() {
@@ -3423,8 +3395,8 @@ public class SlaverAlleyDialogue {
 						};
 						
 					} else {
-						return new Response("Wait",
-								"There's nothing for you to do but wait until [sean.name] returns and releases you from the stocks...",
+						return new Response("Ждать",
+								"Вам остается только ждать, пока [sean.name] не вернется и не освободит вас из колодок...",
 								PUBLIC_STOCKS_LOCKED_UP_FINISHED) {
 							@Override
 							public void effects() {
@@ -3451,8 +3423,8 @@ public class SlaverAlleyDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.slaverAlleyAcceptedDeal)) {
-					return new Response("Wait",
-							"There's nothing for you to do but wait until [sean.name] returns and releases you from the stocks...",
+					return new Response("Ждать",
+							"Вам остается только ждать, пока [sean.name] не вернется и не освободит вас из колодок...",
 							PUBLIC_STOCKS_LOCKED_UP_FINISHED) {
 						@Override
 						public void effects() {
@@ -3470,8 +3442,8 @@ public class SlaverAlleyDialogue {
 					};
 					
 				} else {
-					return new Response("Wait",
-							"There's nothing for you to do but wait until [sean.name] returns and releases you from the stocks...",
+					return new Response("Ждать",
+							"Вам остается только ждать, пока [sean.name] не вернется и не освободит вас из колодок...",
 							PUBLIC_STOCKS_LOCKED_UP_FINISHED) {
 						@Override
 						public void effects() {
@@ -3502,8 +3474,8 @@ public class SlaverAlleyDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue",
-						"Now that you're free, you can continue on your way once again...",
+				return new Response("Продолжить",
+						"Теперь, когда вы свободны, вы можете снова продолжить свой путь...",
 						PUBLIC_STOCKS) {
 					@Override
 					public void effects() {
@@ -3521,8 +3493,8 @@ public class SlaverAlleyDialogue {
 			}
 			if(!Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.slaverAlleyAcceptedDeal)) {
 				if(index==2) {
-					return new Response("More",
-							"Tell [sean.name] that you want to stay in the stocks for a little longer...",
+					return new Response("Еще",
+							"Скажи [sean.name], что хочешь постоять в колодках еще немного...",
 							PUBLIC_STOCKS_LOCKED_UP_FINISHED_REPEAT,
 							Util.newArrayListOfValues(
 									Fetish.FETISH_EXHIBITIONIST,
@@ -3560,10 +3532,10 @@ public class SlaverAlleyDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new ResponseSex("Used",
+				return new ResponseSex("Использовано",
 						Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.slaverAlleyTwoPartners)
-							?"The two strangers prepare to start using you..."
-							:"The stranger prepares to start using you...",
+							?"Двое незнакомцев готовятся начать использовать тебя..."
+							:"Незнакомец готовится начать использовать тебя...",
 						false,
 						false,
 						getRandomPartnerSexManager(),
@@ -3576,7 +3548,7 @@ public class SlaverAlleyDialogue {
 		}
 	};
 	
-	public static final DialogueNode PUBLIC_STOCKS_LOCKED_UP_FINISHED_REPEAT_AFTER_SEX = new DialogueNode("Finished", "", true) {
+	public static final DialogueNode PUBLIC_STOCKS_LOCKED_UP_FINISHED_REPEAT_AFTER_SEX = new DialogueNode("Завершено", "", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 2*60;
@@ -3584,13 +3556,13 @@ public class SlaverAlleyDialogue {
 		@Override
 		public String getDescription() {
 			if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.slaverAlleyAcceptedDeal)) {
-				return "Having filled your [pc.pussy+] with his cum, [sean.name] is finished with you and steps back.";
+				return "Наполнив твой [pc.pussy+] своей спермой, [sean.name] заканчивает с тобой и отступает.";
 				
 			} else if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.slaverAlleyTwoPartners)) {
-				return "Having had their fun, the strangers step back...";
+				return "Насладившись, незнакомцы отступают...";
 				
 			} else {
-				return UtilText.parse(randomSexPartners.get(0), "Having had [npc.her] fun, the stranger steps back...");
+				return UtilText.parse(randomSexPartners.get(0), "Насладившись [npc.her], незнакомец отступает...");
 			}
 		}
 		@Override
@@ -3602,8 +3574,8 @@ public class SlaverAlleyDialogue {
 			if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.slaverAlleyCompanionInStocks)
 					&& !Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.slaverAlleyCompanionAcceptedDeal)) {
 				if(index==1) {
-					return new Response("[com.NamePos] turn",
-							"A stranger moves up to [com.name] and prepares to start fucking [com.herHim]...",
+					return new Response("Очередь [com.NamePos]",
+							"Незнакомец подходит к [com.name] и готовится начать трахать [com.herHim]...",
 							PUBLIC_STOCKS_LOCKED_UP_FINISHED_REPEAT_COMPANION_SEX) {
 						@Override
 						public void effects() {
@@ -3617,8 +3589,8 @@ public class SlaverAlleyDialogue {
 				
 			} else {
 				if(index==1) {
-					return new Response("Wait",
-							"There's nothing for you to do but wait until [sean.name] returns and releases you from the stocks...",
+					return new Response("Ждать",
+							"Вам остается только ждать, пока [sean.name] не вернется и не освободит вас из колодок...",
 							PUBLIC_STOCKS_LOCKED_UP_FINISHED) {
 						@Override
 						public void effects() {
@@ -3643,8 +3615,8 @@ public class SlaverAlleyDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Wait",
-						"There's nothing for you to do but wait until [sean.name] returns and releases you from the stocks...",
+				return new Response("Ждать",
+						"Вам остается только ждать, пока [sean.name] не вернется и не освободит вас из колодок...",
 						PUBLIC_STOCKS_LOCKED_UP_FINISHED) {
 					@Override
 					public void effects() {

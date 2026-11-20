@@ -55,7 +55,7 @@ public class LilayasRoom {
 	
 	public static AbstractClothing lilayasPanties;
 	
-	public static final DialogueNode ROOM_LILAYA = new DialogueNode("Lilaya's Room", ".", false) {
+	public static final DialogueNode ROOM_LILAYA = new DialogueNode("Комната Lilaya", ".", false) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -79,9 +79,9 @@ public class LilayasRoom {
 			}
 			if (index == 1) {
 				if(!Main.game.isExtendedWorkTime()) {
-					return new Response("Lilaya's Room", "The door is firmly shut and locked at the moment...", null);
+					return new Response("Комната Lilaya", "Дверь плотно закрыта и на данный момент заперта...", null);
 				}
-				return new Response("Lilaya's Room", "Have a look around Lilaya's room.", ROOM_LILAYA_INSIDE);
+				return new Response("Комната Lilaya", "Осмотреться в комнате Lilaya.", ROOM_LILAYA_INSIDE);
 
 			}  else {
 				return null;
@@ -89,7 +89,7 @@ public class LilayasRoom {
 		}
 	};
 	
-	public static final DialogueNode ROOM_LILAYA_INSIDE = new DialogueNode("Lilaya's Room", ".", true) {
+	public static final DialogueNode ROOM_LILAYA_INSIDE = new DialogueNode("Комната Lilaya", ".", true) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -104,10 +104,10 @@ public class LilayasRoom {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 0) {
-				return new Response("Leave", "Step back out into the corridor.", ROOM_LILAYA);
+				return new Response("Уйти", "Выйти обратно в коридор.", ROOM_LILAYA);
 
 			} else if (index == 1) {
-				return new Response("Panties", "Look through Lilaya's pile of panties.", PANTIES,
+				return new Response("Трусики", "Порыться в куче трусиков Lilaya.", PANTIES,
 						Util.newArrayListOfValues(Fetish.FETISH_INCEST), CorruptionLevel.TWO_HORNY,
 						null, null, null) {
 					@Override
@@ -128,7 +128,7 @@ public class LilayasRoom {
 		}
 	};
 	
-	public static final DialogueNode PANTIES = new DialogueNode("Lilaya's Room", ".", true) {
+	public static final DialogueNode PANTIES = new DialogueNode("Комната Lilaya", ".", true) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -143,7 +143,7 @@ public class LilayasRoom {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			 if (index == 0) {
-				return new Response("Leave", "Step back out into the corridor.", ROOM_LILAYA) {
+				return new Response("Уйти", "Выйти обратно в коридор.", ROOM_LILAYA) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/lilayasHome/lilayasRoom", "PANTIES_EXIT"));
@@ -151,7 +151,7 @@ public class LilayasRoom {
 				};
 
 			} else if (index == 1) {
-				return new ResponseSex("Panty Masturbation", "Use Lilaya's panties to help you masturbate.",
+				return new ResponseSex("Мастурбация трусиками", "Использовать трусики Lilaya, чтобы помочь себе в мастурбации.",
 						true, true,
 						new SMMasturbation(
 								Util.newHashMapOfValues(new Value<>(Main.game.getPlayer(), SexSlotMasturbation.KNEELING_PANTIES))) {
@@ -169,7 +169,7 @@ public class LilayasRoom {
 		}
 	};
 	
-	public static final DialogueNode PANTIES_POST_MASTURBATION = new DialogueNode("Finished", "As you stop masturbating, you wonder what you should do with Lilaya's panties next...", true) {
+	public static final DialogueNode PANTIES_POST_MASTURBATION = new DialogueNode("Завершено", "Закончив мастурбацию, вы задумываетесь, что же вам делать с трусиками Lilaya дальше...", true) {
 
 		@Override
 		public String getContent() {
@@ -179,13 +179,13 @@ public class LilayasRoom {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Hide", "Quickly hide underneath Lilaya's bed, taking the panties along with you.", HIDE);
+				return new Response("Спрятаться", "Быстро спрятаться под кроватью Lilaya, прихватив трусики с собой.", HIDE);
 
 			} else if (index == 2) {
-				return new Response("Flee", "Quickly make your exit, taking the panties along with you.", FLEE);
+				return new Response("Сбежать", "Быстро выскользнуть наружу, прихватив трусики с собой.", FLEE);
 
 			} else if (index == 3) {
-				return new Response("Enjoy Panties", "Surely Rose isn't going to come in here... You think it'd be safe to just continue enjoying Lilaya's panties.", CAUGHT) {
+				return new Response("Насладиться трусиками", "Навряд ли Роуз сейчас войдет... Наверное, можно спокойно продолжить наслаждаться трусиками Lilaya.", CAUGHT) {
 					@Override
 					public void effects() {
 						Main.game.getNpc(Rose.class).setLocation(WorldType.LILAYAS_HOUSE_FIRST_FLOOR, PlaceType.LILAYA_HOME_ROOM_LILAYA);
@@ -199,7 +199,7 @@ public class LilayasRoom {
 		}
 	};
 	
-	public static final DialogueNode HIDE = new DialogueNode("Lilaya's Room", ".", true) {
+	public static final DialogueNode HIDE = new DialogueNode("Комната Lilaya", ".", true) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -214,7 +214,7 @@ public class LilayasRoom {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Leave", "Now that Rose has left, you can safely step back out into the corridor.", ROOM_LILAYA);
+				return new Response("Уйти", "Теперь, когда Роуз ушла, можно безопасно выйти обратно в коридор.", ROOM_LILAYA);
 
 			} else {
 				return null;
@@ -222,7 +222,7 @@ public class LilayasRoom {
 		}
 	};
 	
-	public static final DialogueNode FLEE = new DialogueNode("Lilaya's Room", ".", true) {
+	public static final DialogueNode FLEE = new DialogueNode("Комната Lilaya", ".", true) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -237,7 +237,7 @@ public class LilayasRoom {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new ResponseEffectsOnly("Your room", "Continue on down the corridor to your room.") {
+				return new ResponseEffectsOnly("Твоя комната", "Продолжить путь по коридору к своей комнате.") {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setLocation(WorldType.LILAYAS_HOUSE_FIRST_FLOOR, PlaceType.LILAYA_HOME_ROOM_PLAYER);
@@ -251,7 +251,7 @@ public class LilayasRoom {
 		}
 	};
 	
-	public static final DialogueNode CAUGHT = new DialogueNode("Lilaya's Room", ".", true) {
+	public static final DialogueNode CAUGHT = new DialogueNode("Комната Lilaya", ".", true) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -266,7 +266,7 @@ public class LilayasRoom {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Apologise", "Say sorry to Rose.", APOLOGY) {
+				return new Response("Извиниться", "Извиниться перед Роуз.", APOLOGY) {
 					@Override
 					public void effects() {
 						Main.game.getTextEndStringBuilder().append(Main.game.getNpc(Rose.class).incrementAffection(Main.game.getPlayer(), 10));
@@ -274,7 +274,7 @@ public class LilayasRoom {
 				};
 					
 			} else if(index==2) {
-				return new Response("Threaten", "Threaten Rose and tell her that she'll be sorry if she tells Lilaya about this.", THREATEN) {
+				return new Response("Угрожать", "Пригрозить Роуз, сказав, что она пожалеет, если расскажет об этом Lilaya.", THREATEN) {
 					@Override
 					public void effects() {
 						Main.game.getTextEndStringBuilder().append(Main.game.getNpc(Rose.class).incrementAffection(Main.game.getPlayer(), -25));
@@ -282,7 +282,7 @@ public class LilayasRoom {
 				};
 
 			} else if (index == 3) {
-				return new ResponseEffectsOnly("Leave", "Make some quick excuses and rush past Rose back to your room.") {
+				return new ResponseEffectsOnly("Уйти", "Наспех придумать оправдания и проскочить мимо Роуз обратно в свою комнату.") {
 					@Override
 					public void effects() {
 						Main.game.getDialogueFlags().setFlag(DialogueFlagValue.roseToldOnYou, true);
@@ -299,7 +299,7 @@ public class LilayasRoom {
 		}
 	};
 	
-	public static final DialogueNode APOLOGY = new DialogueNode("Lilaya's Room", ".", true, true) {
+	public static final DialogueNode APOLOGY = new DialogueNode("Комната Lilaya", ".", true, true) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -314,7 +314,7 @@ public class LilayasRoom {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Beg", "Beg Rose not to tell Lilaya.", BEG) {
+				return new Response("Умолять", "Умолять Роуз не рассказывать Lilaya.", BEG) {
 					@Override
 					public void effects() {
 						Main.game.getTextEndStringBuilder().append(Main.game.getNpc(Rose.class).incrementAffection(Main.game.getPlayer(), 15));
@@ -322,7 +322,7 @@ public class LilayasRoom {
 				};
 					
 			} else if (index == 2) {
-				return new ResponseEffectsOnly("Leave", "Tell Rose not to let Lilaya know, and rush off back to your room.") {
+				return new ResponseEffectsOnly("Уйти", "Сказать Роуз, чтобы она не выдавала Lilaya, и поспешить обратно в свою комнату.") {
 					@Override
 					public void effects() {
 						Main.game.getDialogueFlags().setFlag(DialogueFlagValue.roseToldOnYou, true);
@@ -339,7 +339,7 @@ public class LilayasRoom {
 		}
 	};
 	
-	public static final DialogueNode BEG = new DialogueNode("Lilaya's Room", ".", true, true) {
+	public static final DialogueNode BEG = new DialogueNode("Комната Lilaya", ".", true, true) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -354,7 +354,7 @@ public class LilayasRoom {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new ResponseSex("Submit", "Let Rose push you back on to the bed and fuck you.",
+				return new ResponseSex("Подчиниться", "Позволить Роуз толкнуть тебя на кровать и трахнуть.",
 						Util.newArrayListOfValues(Fetish.FETISH_SUBMISSIVE),
 						null, CorruptionLevel.THREE_DIRTY, null, null, null,
 						true, false,
@@ -400,7 +400,7 @@ public class LilayasRoom {
 				};
 					
 			} else if (index == 2) {
-				return new ResponseEffectsOnly("Refuse", "Refuse Rose's offer and rush off back to your room.") {
+				return new ResponseEffectsOnly("Отказаться", "Отклонить предложение Роуз и поспешить обратно в свою комнату.") {
 					@Override
 					public void effects() {
 						Main.game.getDialogueFlags().setFlag(DialogueFlagValue.roseToldOnYou, true);
@@ -417,7 +417,7 @@ public class LilayasRoom {
 		}
 	};
 	
-	public static final DialogueNode AFTER_ROSE_AS_DOM = new DialogueNode("Finished", "Feeling as though she's 'punished' you enough, Rose brings an end to the sex.", true) {
+	public static final DialogueNode AFTER_ROSE_AS_DOM = new DialogueNode("Завершено", "Чувствуя, что она «наказала» тебя сполна, Роуз заканчивает секс.", true) {
 
 		@Override
 		public String getContent() {
@@ -427,7 +427,7 @@ public class LilayasRoom {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new ResponseEffectsOnly("Leave", "Hurry back to your room.") {
+				return new ResponseEffectsOnly("Уйти", "Поспешить обратно в свою комнату.") {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setLocation(WorldType.LILAYAS_HOUSE_FIRST_FLOOR, PlaceType.LILAYA_HOME_ROOM_PLAYER);
@@ -455,7 +455,7 @@ public class LilayasRoom {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Wait", "Do as Rose says and wait while Lilaya comes up to her room to confront you.", THREATEN_WAIT) {
+				return new Response("Ждать", "Сделать так, как говорит Роуз, и ждать, пока Lilaya придет к ней в комнату, чтобы устроить тебе разнос.", THREATEN_WAIT) {
 					@Override
 					public void effects() {
 						Main.game.getDialogueFlags().setFlag(DialogueFlagValue.roseToldOnYou, false);
@@ -465,7 +465,7 @@ public class LilayasRoom {
 				};
 				
 			} else if (index == 2) {
-				return new ResponseEffectsOnly("Flee", "Not wanting to be confronted by Lilaya, you rush off back to your room.") {
+				return new ResponseEffectsOnly("Сбежать", "Не желая столкнуться с Lilaya лицом к лицу, ты спешишь обратно в свою комнату.") {
 					@Override
 					public void effects() {
 						Main.game.getDialogueFlags().setFlag(DialogueFlagValue.roseToldOnYou, true);
@@ -494,7 +494,7 @@ public class LilayasRoom {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Submit", "Doing as Lilaya says, you decide to submit and apologise to Rose, letting her decide how best to punish you...", THREATEN_SUBMIT) {
+				return new Response("Подчиниться", "Послушавшись Lilaya, ты решаешь смириться и извиниться перед Роуз, позволяя ей самой решить, как лучше тебя наказать...", THREATEN_SUBMIT) {
 					@Override
 					public Colour getHighlightColour() {
 						return PresetColour.GENERIC_SEX;
@@ -523,7 +523,7 @@ public class LilayasRoom {
 //				
 //			}
 			else if (index == 2) {
-				return new ResponseEffectsOnly("Apologise", "Not wanting to risk Lilaya's wrath, you quickly apologise and hurry back to your room.") {
+				return new ResponseEffectsOnly("Извиниться", "Не желая рисковать гневом Lilaya, ты быстро извиняешься и спешишь обратно в свою комнату.") {
 					@Override
 					public void effects() {
 						Main.game.getDialogueFlags().setFlag(DialogueFlagValue.roseToldOnYou, false);
@@ -554,7 +554,7 @@ public class LilayasRoom {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new ResponseSex("Lilaya's pussy", "Tell Rose that you like the taste of Lilaya's pussy.",
+				return new ResponseSex("Киска Lilaya", "Сказать Роуз, что тебе нравится вкус киски Lilaya.",
 						true, false,
 						new SMAllFours(
 								Util.newHashMapOfValues(
@@ -658,7 +658,7 @@ public class LilayasRoom {
 				};
 					
 			} else if(index==2) {
-				return new ResponseSex("Lilaya's cock", "Tell Rose that you want Lilaya to grow a cock for you to suck.",
+				return new ResponseSex("Кок Lilaya", "Сказать Роуз, что ты хочешь, чтобы у Lilaya вырос кок, который ты сможешь сосать.",
 						true, false,
 						new SMAllFours(
 								Util.newHashMapOfValues(
@@ -768,7 +768,7 @@ public class LilayasRoom {
 		}
 	};
 	
-	public static final DialogueNode AFTER_LILAYA_AND_ROSE_AS_DOMS = new DialogueNode("Finished", "Feeling as though she's 'punished' you enough, Rose brings an end to the sex.", true) {
+	public static final DialogueNode AFTER_LILAYA_AND_ROSE_AS_DOMS = new DialogueNode("Завершено", "Чувствуя, что она «наказала» тебя сполна, Роуз заканчивает секс.", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 5*60;
@@ -780,7 +780,7 @@ public class LilayasRoom {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new ResponseEffectsOnly("Leave", "Hurry back to your room.") {
+				return new ResponseEffectsOnly("Уйти", "Поспешить обратно в свою комнату.") {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/lilayasHome/lilayasRoom", "AFTER_LILAYA_AND_ROSE_AS_DOMS_LEAVE"));
@@ -809,7 +809,7 @@ public class LilayasRoom {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new ResponseSex("Fuck Lilaya", "Have dominant sex with Rose and Lilaya.",
+				return new ResponseSex("Трахать Lilaya", "Заняться доминантным сексом с Роуз и Lilaya.",
 						true, false,
 						new SMAllFours(
 								Util.newHashMapOfValues(new Value<>(Main.game.getPlayer(), SexSlotAllFours.BEHIND)),
@@ -825,7 +825,7 @@ public class LilayasRoom {
 						UtilText.parseFromXMLFile("places/dominion/lilayasHome/lilayasRoom", "LILAYA_AS_SUB_START"));
 					
 			} else if (index == 2) {
-				return new ResponseEffectsOnly("Leave", "Turn down Rose's offer and head back to your room.") {
+				return new ResponseEffectsOnly("Уйти", "Отклонить предложение Роуз и вернуться в свою комнату.") {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/lilayasHome/lilayasRoom", "DOMINATE_LEAVE"));
@@ -842,7 +842,7 @@ public class LilayasRoom {
 		}
 	};
 	
-	public static final DialogueNode AFTER_LILAYA_AS_SUB = new DialogueNode("Finished", "Having had your fun with Lilaya, you bring an end to the sex.", true) {
+	public static final DialogueNode AFTER_LILAYA_AS_SUB = new DialogueNode("Завершено", "Насладившись Lilaya, ты заканчиваешь секс.", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 5*60;
@@ -855,7 +855,7 @@ public class LilayasRoom {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new ResponseEffectsOnly("Leave", "Head back to your room.") {
+				return new ResponseEffectsOnly("Уйти", "Вернуться в свою комнату.") {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/lilayasHome/lilayasRoom", "AFTER_ROSE_AND_LILAYA_AS_SUBS_LEAVE"));

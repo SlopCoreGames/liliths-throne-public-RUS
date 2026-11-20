@@ -79,7 +79,7 @@ public class ZaranixHomeGroundFloor {
 		
 		@Override
 		public String getLabel() {
-			return "Zaranix's Home";
+			return "Дом Зараникса";
 		}
 
 		@Override
@@ -106,12 +106,12 @@ public class ZaranixHomeGroundFloor {
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
 				if(!Main.game.isExtendedWorkTime()) {
-					return new Response("Knock door", "Nobody will come to answer the door at such an unsociable time. You'll have to come back during the day, or find another way to get inside.", null);
+					return new Response("Постучать в дверь", "В такое неурочное время никто не придет открывать дверь. Придется вернуться днем или найти другой способ попасть внутрь.", null);
 				}
 				if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.zaranixMaidsHostile)) {
-					return new Response("Knock door", "Zaranix's maids will recognise you on sight, and won't let you in. You'll have to find another way to get inside.", null);
+					return new Response("Постучать в дверь", "Горничные Зараникса узнают тебя с первого взгляда и не пустят. Тебе придется найти другой способ попасть внутрь.", null);
 				}
-				return new Response("Knock door", "Knock on the door and wait for someone to answer.", OUTSIDE_KNOCK_ON_DOOR) {
+				return new Response("Постучать в дверь", "Постучать в дверь и ждать, пока кто-нибудь ответит.", OUTSIDE_KNOCK_ON_DOOR) {
 					@Override
 					public void effects() {
 						Main.game.getNpc(Amber.class).setLocation(WorldType.DOMINION, PlaceType.DOMINION_DEMON_HOME_ZARANIX, false);
@@ -122,42 +122,39 @@ public class ZaranixHomeGroundFloor {
 			} else if (index == 2) {
 				if(Main.game.getPlayer().isAbleToFly()) {
 					if(!Main.game.isExtendedWorkTime()) {
-						return new Response("Fly over fence", "The house is sure to be securely locked up at such an unsociable time. You'll have to come back during the day, or find another way to get inside.", null);
+						return new Response("Перелететь через забор", "В такое неурочное время дом наверняка надежно заперт. Придется вернуться днем или найти другой способ попасть внутрь.", null);
 					}
-					return new Response("Fly over fence", "Fly over the garden's fence and see if there's a way in through there.", GARDEN_ENTRY) {
+					return new Response("Перелететь через забор", "Перелететь через садовый забор и посмотреть, нет ли там какого-нибудь входа.", GARDEN_ENTRY) {
 						@Override
 						public void effects() {
 							Main.game.getPlayer().setLocation(WorldType.ZARANIX_HOUSE_GROUND_FLOOR, PlaceType.ZARANIX_GF_GARDEN_ENTRY, false);
 							Main.game.getDialogueFlags().setFlag(DialogueFlagValue.zaranixDiscoveredHome, true);
 							Main.game.getTextStartStringBuilder()
-								.append("<p>A small fence like the one before you is no obstacle for someone who can fly.")
-								.append(!Main.game.getPlayer().isAbleToFlyFromExtraParts() ? " Spreading your wings, you" : "You")
-								.append(" take a little run up before launching yourself into the air. Quickly gaining altitude, you wheel around and swoop down into the garden adjoining Zaranix's home.</p>");
+								.append("<p>Маленький забор, подобный тому, что перед вами, не станет преградой для того, кто умеет летать.")
+								.append(!Main.game.getPlayer().isAbleToFlyFromExtraParts() ? " Расправив крылья, вы" : "Вы")
+								.append(" немного разбегаетесь, прежде чем взмыть в воздух. Быстро набирая высоту, вы разворачиваетесь в воздухе и пикируете в сад, прилегающий к дому Зараникса.</p>");
 						}
 					};
 				}
 				if(!Main.game.isExtendedWorkTime()) {
-					return new Response("Climb fence", "The house is sure to be securely locked up at such an unsociable time. You'll have to come back during the day, or find another way to get inside.", null);
+					return new Response("Перелезть через забор", "В такое неурочное время дом наверняка надежно заперт. Придется вернуться днем или найти другой способ попасть внутрь.", null);
 				}
-				return new Response("Climb fence", "Climb over the garden's fence and see if there's a way in through there.", GARDEN_ENTRY) {
+				return new Response("Перелезть через забор", "Перелезть через садовый забор и поискать способ проникнуть внутрь через него.", GARDEN_ENTRY) {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setLocation(WorldType.ZARANIX_HOUSE_GROUND_FLOOR, PlaceType.ZARANIX_GF_GARDEN_ENTRY, false);
 						Main.game.getDialogueFlags().setFlag(DialogueFlagValue.zaranixDiscoveredHome, true);
 						Main.game.getTextStartStringBuilder().append(
-							"<p>"
-								+ "Deciding to try and sneak your way into Zaranix's home, you loiter about the fence separating his garden from the public street, waiting for an opportunity to scale the obstacle."
-								+ " Once you're sure that nobody is looking your way, you quickly climb up the iron bars of the fence, and, swinging your [pc.legs] over the top, you jump down into the private garden."
-							+ "</p>");
+							"<p>Решив попытаться пробраться в дом Зараникса незаметно, вы кружите возле забора, отделяющего его сад от общественной улицы, выжидая момент, чтобы преодолеть препятствие. Убедившись, что никто не смотрит в вашу сторону, вы быстро взбираетесь по железным прутьям забора и, перекинув через него свои [pc.legs], спрыгиваете в частный сад.</p>");
 					}
 				};
 
 			} else if (index == 3) {
 				if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.zaranixKickedDownDoor)) {
-					return new Response("Kick down door", "After your last entrance, the front door has been reinforced. You're unable to enter like this again.", null);
+					return new Response("Выбить дверь ногой", "После вашего прошлого визита входную дверь укрепили. Теперь так просто войти не получится.", null);
 					
 				} else if(Main.game.getPlayer().getAttributeValue(Attribute.MAJOR_PHYSIQUE) >= 35) {
-					return new Response("Kick down door", "Kick down the front door.", ENTRANCE_KICK_DOWN_DOOR) {
+					return new Response("Выбить дверь ногой", "Выбить входную дверь.", ENTRANCE_KICK_DOWN_DOOR) {
 						@Override
 						public boolean isCombatHighlight() {
 							return true;
@@ -173,11 +170,11 @@ public class ZaranixHomeGroundFloor {
 						}
 					};
 				} else {
-					return new Response("Kick down door", "You don't think you're strong enough to kick down such a sturdy-looking door. (Requires 35 physique.)", null);
+					return new Response("Выбить дверь ногой", "Тебе кажется, что ты недостаточно силен, чтобы выбить такую добротную дверь. (Требуется 35 телосложения.)", null);
 				}
 				
 			} else if (index == 0) {
-				return new Response("Leave", "Turn around and walk away.", Main.game.getDefaultDialogue(false)) {
+				return new Response("Уйти", "Развернуться и уйти.", Main.game.getDefaultDialogue(false)) {
 					@Override
 					public void effects() {
 						Main.game.getDialogueFlags().setFlag(DialogueFlagValue.zaranixDiscoveredHome, true);
@@ -197,7 +194,7 @@ public class ZaranixHomeGroundFloor {
 		}
 		@Override
 		public String getLabel() {
-			return "Zaranix's Home";
+			return "Дом Зараникса";
 		}
 		@Override
 		public String getContent() {
@@ -213,7 +210,7 @@ public class ZaranixHomeGroundFloor {
 			if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.zaranixKnockedOnDoor)) {
 				
 				if (index == 1) {
-					return new Response("Step back", "Step back from the door and think about finding another way in.", OUTSIDE) {
+					return new Response("Отступить", "Отойти от двери и подумать о том, чтобы найти другой путь внутрь.", OUTSIDE) {
 						@Override
 						public void effects() {
 							Main.game.getNpc(Amber.class).returnToHome();
@@ -222,11 +219,11 @@ public class ZaranixHomeGroundFloor {
 					};
 
 				} else if (index == 2) {
-					return new Response("Beg", "Beg the maid to let you in.", OUTSIDE_KNOCK_ON_DOOR_ASK_FOR_ARTHUR_BEG,
+					return new Response("Умолять", "Умолять горничную впустить тебя.", OUTSIDE_KNOCK_ON_DOOR_ASK_FOR_ARTHUR_BEG,
 							Util.newArrayListOfValues(Fetish.FETISH_SUBMISSIVE), CorruptionLevel.THREE_DIRTY, null, null, null);
 
 				} else if(index == 3 && Main.game.getDialogueFlags().getSavedLong("amber_door_knock_repeat_count")>=4) {
-					return new Response("Enter", "It looks like your persistence has paid off!", MEETING_ZARANIX) {
+					return new Response("Войти", "Похоже, твое упорство окупилось!", MEETING_ZARANIX) {
 						@Override
 						public void effects() {
 							Main.game.getNpc(Amber.class).setPlayerKnowsName(true);
@@ -239,7 +236,7 @@ public class ZaranixHomeGroundFloor {
 				
 			} else {
 				if (index == 1) {
-					return new Response("Arthur", "Ask to see Arthur.", OUTSIDE_KNOCK_ON_DOOR_ASK_FOR_ARTHUR) {
+					return new Response("Arthur", "Попросить увидеть Arthur.", OUTSIDE_KNOCK_ON_DOOR_ASK_FOR_ARTHUR) {
 						@Override
 						public void effects() {
 							Main.game.getDialogueFlags().setFlag(DialogueFlagValue.zaranixKnockedOnDoor, true);
@@ -247,7 +244,7 @@ public class ZaranixHomeGroundFloor {
 					};
 					
 				} else if (index == 0) {
-					return new Response("Leave", "Say that you've got the wrong house and take your leave.", Main.game.getDefaultDialogue(false)) {
+					return new Response("Уйти", "Сказать, что ты ошибся домом, и удалиться.", Main.game.getDefaultDialogue(false)) {
 						@Override
 						public void effects() {
 							Main.game.getNpc(Amber.class).returnToHome();
@@ -267,7 +264,7 @@ public class ZaranixHomeGroundFloor {
 
 		@Override
 		public String getLabel() {
-			return "Zaranix's Home";
+			return "Дом Зараникса";
 		}
 
 		@Override
@@ -278,7 +275,7 @@ public class ZaranixHomeGroundFloor {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Step back", "Step back from the door and think about finding another way in.", OUTSIDE) {
+				return new Response("Отступить", "Отойти от двери и подумать о том, чтобы найти другой путь внутрь.", OUTSIDE) {
 					@Override
 					public void effects() {
 						Main.game.getNpc(Amber.class).returnToHome();
@@ -287,7 +284,7 @@ public class ZaranixHomeGroundFloor {
 				};
 
 			} else if (index == 2) {
-				return new Response("Beg", "Beg the maid to let you in.", OUTSIDE_KNOCK_ON_DOOR_ASK_FOR_ARTHUR_BEG,
+				return new Response("Умолять", "Умолять горничную впустить тебя.", OUTSIDE_KNOCK_ON_DOOR_ASK_FOR_ARTHUR_BEG,
 						Util.newArrayListOfValues(Fetish.FETISH_SUBMISSIVE), CorruptionLevel.THREE_DIRTY, null, null, null);
 			}
 			return null;
@@ -298,7 +295,7 @@ public class ZaranixHomeGroundFloor {
 
 		@Override
 		public String getLabel() {
-			return "Zaranix's Home";
+			return "Дом Зараникса";
 		}
 
 		@Override
@@ -309,7 +306,7 @@ public class ZaranixHomeGroundFloor {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 0) {
-				return new Response("Back out", "Stand up and step back. You're definitely not willing to do anything like <i>that</i>.", OUTSIDE) {
+				return new Response("Назад", "Встань и сделай шаг назад. Ты определенно не готов на такое, как <i>это</i>.", OUTSIDE) {
 					@Override
 					public void effects() {
 						Main.game.getNpc(Amber.class).returnToHome();
@@ -320,7 +317,7 @@ public class ZaranixHomeGroundFloor {
 			}
 			if(!Main.game.isFootContentEnabled()) {
 				if(index == 1) {
-					return new Response("Good doggy", "Do as this dominant succubus says and drop down onto all fours, before telling her that you're a good doggy.",
+					return new Response("Хороший песик", "Сделай так, как велит эта доминантная суккуб: встань на четвереньки и скажи ей, что ты хороший песик.",
 							OUTSIDE_KNOCK_ON_DOOR_ASK_FOR_ARTHUR_GOOD_DOGGY,
 							Util.newArrayListOfValues(Fetish.FETISH_MASOCHIST), CorruptionLevel.TWO_HORNY, null, null, null) {
 						@Override
@@ -332,7 +329,7 @@ public class ZaranixHomeGroundFloor {
 				
 			} else {
 				if(index == 1) {
-					return new Response("Reluctant lick", "If this is what it's going to take to finally meet Arthur, you suppose that you'll do it, even though you're quite reluctant about the whole thing.",
+					return new Response("Неохотный лизь", "Если это цена за встречу с Arthur, ты полагаешь, что справишься, хотя всё это тебе и в тягость.",
 							OUTSIDE_KNOCK_ON_DOOR_ASK_FOR_ARTHUR_SUBMISSIVE_RELUCTANT_LICK,
 							Util.newArrayListOfValues(Fetish.FETISH_MASOCHIST, Fetish.FETISH_FOOT_RECEIVING), CorruptionLevel.TWO_HORNY, null, null, null) {
 						@Override
@@ -342,7 +339,7 @@ public class ZaranixHomeGroundFloor {
 					};
 	
 				} else if(index == 2) {
-					return new Response("Eager lick", "Immediately drop down onto all fours and enthusiastically lick the maid's shoes.",
+					return new Response("Жадный лизь", "Тут же упасть на четвереньки и с энтузиазмом вылизать туфли горничной.",
 							OUTSIDE_KNOCK_ON_DOOR_ASK_FOR_ARTHUR_SUBMISSIVE_EAGER_LICK,
 							Util.newArrayListOfValues(Fetish.FETISH_MASOCHIST, Fetish.FETISH_FOOT_RECEIVING), CorruptionLevel.FOUR_LUSTFUL, null, null, null) {
 						@Override
@@ -360,7 +357,7 @@ public class ZaranixHomeGroundFloor {
 	public static final DialogueNode OUTSIDE_KNOCK_ON_DOOR_ASK_FOR_ARTHUR_GOOD_DOGGY = new DialogueNode("", "", true, true) {
 		@Override
 		public String getLabel() {
-			return "Zaranix's Home";
+			return "Дом Зараникса";
 		}
 		@Override
 		public String getContent() {
@@ -369,7 +366,7 @@ public class ZaranixHomeGroundFloor {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Inside", "Crawl alongside Amber as she leads you into the house.", MEETING_ZARANIX) {
+				return new Response("Внутри", "Ползти следом за Amber, пока она ведет тебя в дом.", MEETING_ZARANIX) {
 					@Override
 					public void effects() {
 						travelFromEntranceToLounge();
@@ -384,7 +381,7 @@ public class ZaranixHomeGroundFloor {
 
 		@Override
 		public String getLabel() {
-			return "Zaranix's Home";
+			return "Дом Зараникса";
 		}
 
 		@Override
@@ -395,7 +392,7 @@ public class ZaranixHomeGroundFloor {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Inside", "Crawl alongside Amber as she leads you into the house.", MEETING_ZARANIX) {
+				return new Response("Внутри", "Ползти следом за Amber, пока она ведет тебя в дом.", MEETING_ZARANIX) {
 					@Override
 					public void effects() {
 						travelFromEntranceToLounge();
@@ -410,7 +407,7 @@ public class ZaranixHomeGroundFloor {
 
 		@Override
 		public String getLabel() {
-			return "Zaranix's Home";
+			return "Дом Зараникса";
 		}
 
 		@Override
@@ -421,7 +418,7 @@ public class ZaranixHomeGroundFloor {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Wait", "Do as Amber says and wait for her return.", MEETING_ZARANIX) {
+				return new Response("Ждать", "Сделать, как говорит Amber, и ждать её возвращения.", MEETING_ZARANIX) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/zaranixHome/groundFloor", "KNOCK_ON_DOOR_ASK_FOR_ARTHUR_BEG_WAITING"));
@@ -430,7 +427,7 @@ public class ZaranixHomeGroundFloor {
 				};
 
 			} else if (index == 2) {
-				return new Response("Lick soles", "Don't let Amber get away just yet! You still haven't cleaned the soles of her shoes!",
+				return new Response("Лизать подошвы", "Не давай Эмбер уйти так просто! Ты ведь еще не вылизал подошвы её туфель!",
 						OUTSIDE_KNOCK_ON_DOOR_ASK_FOR_ARTHUR_SUBMISSIVE_EAGER_LICK_SOLES,
 						Util.newArrayListOfValues(Fetish.FETISH_MASOCHIST, Fetish.FETISH_FOOT_RECEIVING), CorruptionLevel.FIVE_CORRUPT, null, null, null);
 
@@ -444,7 +441,7 @@ public class ZaranixHomeGroundFloor {
 
 		@Override
 		public String getLabel() {
-			return "Zaranix's Home";
+			return "Дом Зараникса";
 		}
 
 		@Override
@@ -455,7 +452,7 @@ public class ZaranixHomeGroundFloor {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Inside", "Crawl alongside Amber as she leads you into the house.", MEETING_ZARANIX) {
+				return new Response("Внутри", "Ползти следом за Amber, пока она ведет тебя в дом.", MEETING_ZARANIX) {
 					@Override
 					public void effects() {
 						travelFromEntranceToLounge();
@@ -476,7 +473,7 @@ public class ZaranixHomeGroundFloor {
 		}
 		@Override
 		public String getLabel() {
-			return "Lounge";
+			return "Гостиная";
 		}
 
 		@Override
@@ -487,7 +484,7 @@ public class ZaranixHomeGroundFloor {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Sit on floor", "Do as Amber commands and sit on the floor.", MEETING_ZARANIX_SIT_FLOOR) {
+				return new Response("Сесть на пол", "Исполнить приказ Эмбер и сесть на пол.", MEETING_ZARANIX_SIT_FLOOR) {
 					@Override
 					public void effects() {
 						Main.game.getNpc(Zaranix.class).setLocation(WorldType.ZARANIX_HOUSE_GROUND_FLOOR, PlaceType.ZARANIX_GF_LOUNGE, false);
@@ -496,7 +493,7 @@ public class ZaranixHomeGroundFloor {
 				};
 				
 			} else if (index == 2) {
-				return new Response("Sit on sofa", "Disobey Amber and sit on one of the sofas.", MEETING_ZARANIX_SIT_SOFA) {
+				return new Response("Сесть на диван", "Проявить непокорность Эмбер и сесть на один из диванов.", MEETING_ZARANIX_SIT_SOFA) {
 					@Override
 					public void effects() {
 						Main.game.getNpc(Zaranix.class).setLocation(WorldType.ZARANIX_HOUSE_GROUND_FLOOR, PlaceType.ZARANIX_GF_LOUNGE, false);
@@ -513,7 +510,7 @@ public class ZaranixHomeGroundFloor {
 
 		@Override
 		public String getLabel() {
-			return "Lounge";
+			return "Гостиная";
 		}
 
 		@Override
@@ -524,10 +521,10 @@ public class ZaranixHomeGroundFloor {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Hold back", "Simply say that Lilaya wants Arthur back, and avoid telling Zaranix anything about why.", MEETING_ZARANIX_HOLD_BACK);
+				return new Response("Сдерживаться", "Просто сказать, что Lilaya хочет вернуть Arthur, не вдаваясь в подробности, почему.", MEETING_ZARANIX_HOLD_BACK);
 				
 			} else if (index == 2) {
-				return new Response("Explain everything", "Tell Zaranix all about your appearance in this world, and how Lilaya needs Arthur's help in order to find out what's going on.", MEETING_ZARANIX_EXPLAIN_EVERYTHING);
+				return new Response("Объяснить всё", "Рассказать Zaranix всё о своём появлении в этом мире и о том, что Lilaya нужна помощь Arthur, чтобы разобраться в происходящем.", MEETING_ZARANIX_EXPLAIN_EVERYTHING);
 				
 			} else {
 				return null;
@@ -539,7 +536,7 @@ public class ZaranixHomeGroundFloor {
 
 		@Override
 		public String getLabel() {
-			return "Lounge";
+			return "Гостиная";
 		}
 
 		@Override
@@ -550,10 +547,10 @@ public class ZaranixHomeGroundFloor {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Hold back", "Simply say that Lilaya wants Arthur back, and avoid telling Zaranix anything about why.", MEETING_ZARANIX_HOLD_BACK);
+				return new Response("Сдерживаться", "Просто сказать, что Lilaya хочет вернуть Arthur, не вдаваясь в подробности, почему.", MEETING_ZARANIX_HOLD_BACK);
 				
 			} else if (index == 2) {
-				return new Response("Explain everything", "Tell Zaranix all about your appearance in this world, and how Lilaya needs Arthur's help in order to find out what's going on.", MEETING_ZARANIX_EXPLAIN_EVERYTHING);
+				return new Response("Объяснить всё", "Рассказать Zaranix всё о своём появлении в этом мире и о том, что Lilaya нужна помощь Arthur, чтобы разобраться в происходящем.", MEETING_ZARANIX_EXPLAIN_EVERYTHING);
 				
 			} else {
 				return null;
@@ -565,7 +562,7 @@ public class ZaranixHomeGroundFloor {
 
 		@Override
 		public String getLabel() {
-			return "Lounge";
+			return "Гостиная";
 		}
 
 		@Override
@@ -576,7 +573,7 @@ public class ZaranixHomeGroundFloor {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Arthur", "You finally come face-to-face with your elusive quarry.", MEETING_ZARANIX_ARTHUR) {
+				return new Response("Arthur", "Наконец-то вы лицом к лицу встретились со своей неуловимой добычей.", MEETING_ZARANIX_ARTHUR) {
 					@Override
 					public void effects() {
 						Main.game.getTextEndStringBuilder().append(Main.game.getPlayer().setQuestProgress(QuestLine.MAIN, Quest.MAIN_1_I_ARTHURS_TALE));
@@ -594,7 +591,7 @@ public class ZaranixHomeGroundFloor {
 
 		@Override
 		public String getLabel() {
-			return "Lounge";
+			return "Гостиная";
 		}
 
 		@Override
@@ -605,7 +602,7 @@ public class ZaranixHomeGroundFloor {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Arthur", "You finally come face-to-face with your elusive quarry.", MEETING_ZARANIX_ARTHUR) {
+				return new Response("Arthur", "Наконец-то вы лицом к лицу встретились со своей неуловимой добычей.", MEETING_ZARANIX_ARTHUR) {
 					@Override
 					public void effects() {
 						Main.game.getTextEndStringBuilder().append(Main.game.getPlayer().setQuestProgress(QuestLine.MAIN, Quest.MAIN_1_I_ARTHURS_TALE));
@@ -623,7 +620,7 @@ public class ZaranixHomeGroundFloor {
 
 		@Override
 		public String getLabel() {
-			return "Lounge";
+			return "Гостиная";
 		}
 
 		@Override
@@ -634,7 +631,7 @@ public class ZaranixHomeGroundFloor {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Leave", "Refuse to perform any sexual favours for Zaranix or Amber and take your leave.",  REFUSE_SEX) {
+				return new Response("Уйти", "Отказаться оказывать любые сексуальные услуги Зараникс или Эмбер и уйти.",  REFUSE_SEX) {
 					@Override
 					public void effects() {
 						Main.game.getNpc(Arthur.class).setLocation(WorldType.LILAYAS_HOUSE_GROUND_FLOOR, PlaceType.LILAYA_HOME_LAB, true);
@@ -643,10 +640,10 @@ public class ZaranixHomeGroundFloor {
 				
 			} else if (index == 2) {
 				if(!Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.MOUTH, true)) {
-					return new Response("'Thank' Zaranix", "You're unable to suck Zaranix's cock, as you can't get access to your mouth!", null);
+					return new Response("'Поблагодарить' Зараникса", "Вы не можете отсосать член Зараникс, так как у вас нет доступа к собственному рту!", null);
 					
 				} else {
-					return new Response("'Thank' Zaranix", "Show Zaranix how grateful you are.<br/>[style.italicsSex(This will result in you giving Zaranix a blowjob!)]", MEETING_ZARANIX_ARTHUR_THANK_ZARANIX) {
+					return new Response("'Поблагодарить' Зараникса", "Показать Зараникс, как вы ей благодарны.<br/>[style.italicsSex(Это приведет к тому, что вы отсосете Зараникс!)]", MEETING_ZARANIX_ARTHUR_THANK_ZARANIX) {
 						@Override
 						public boolean isSexHighlight() {
 							return true;
@@ -664,10 +661,10 @@ public class ZaranixHomeGroundFloor {
 						&& (Main.game.getPlayer().hasVagina()
 								?!Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.VAGINA, true)
 								:true)) {
-					return new Response("'Thank' Amber", "You're unable to get fucked by Amber, as you can't get access to your asshole"+(Main.game.getPlayer().hasVagina()?" or vagina":"")+"!", null);
+					return new Response("'Поблагодарить' Эмбер", "Вы не можете позволить Эмбер трахнуть вас, так как у вас нет доступа к вашему анусу"+(Main.game.getPlayer().hasVagina()?" или влагалищу":"")+"!", null);
 					
 				} else {
-					return new Response("'Thank' Amber", "Show Amber how grateful you are.<br/>[style.italicsSex(This will result in you getting fucked by Amber!)]", MEETING_ZARANIX_ARTHUR_THANK_AMBER) {
+					return new Response("'Поблагодарить' Эмбер", "Покажи Эмбер, как ты ей благодарен.<br/>[style.italicsSex(В результате тебя оттрахает Эмбер!)]", MEETING_ZARANIX_ARTHUR_THANK_AMBER) {
 						@Override
 						public boolean isSexHighlight() {
 							return true;
@@ -690,7 +687,7 @@ public class ZaranixHomeGroundFloor {
 
 		@Override
 		public String getLabel() {
-			return "Lounge";
+			return "Гостиная";
 		}
 
 		@Override
@@ -701,8 +698,8 @@ public class ZaranixHomeGroundFloor {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new ResponseSex("Suck cock",
-						"Show Zaranix how good you are at sucking cock.",
+				return new ResponseSex("Сосать член",
+						"Показать Зараниксу, как хорошо вы умеете сосать член.",
 						true,
 						true,
 						new SMZaranixCockSucking(
@@ -730,7 +727,7 @@ public class ZaranixHomeGroundFloor {
 
 		@Override
 		public String getLabel() {
-			return "Lounge";
+			return "Гостиная";
 		}
 
 		@Override
@@ -741,7 +738,7 @@ public class ZaranixHomeGroundFloor {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new ResponseSex("Lift ass", "Do as Amber commands and lift your ass towards her.",
+				return new ResponseSex("Поднять зад", "Исполнить приказ Эмбер и подставить ей свой зад.",
 						true, true,
 						new SMAmberDoggyFucked(
 								Util.newHashMapOfValues(new Value<>(Main.game.getNpc(Amber.class), SexSlotAllFours.BEHIND)),
@@ -749,10 +746,7 @@ public class ZaranixHomeGroundFloor {
 						null,
 						null,
 						AFTER_SEX_THANKING_AMBER,
-						"<p>"
-							+ "You obediently lift your ass towards Amber, letting out a little cry as you suddenly feel the sharp slap of her hand across your right cheek, before she growls out,"
-							+ " [amber.speech(Squeal all you want, bitch, <i>you're mine now!</i>)]"
-						+ "</p>");
+						"<p>Ты послушно поднимаешь зад навстречу Эмбер, издавая короткий вскрик, когда внезапно чувствуешь резкий шлепок её ладони по своей правой щеке, после чего она рычит: [amber.speech(Визжи сколько влезет, сучка, <i>теперь ты моя!</i>)]</p>");
 			} else {
 				return null;
 			}
@@ -771,7 +765,7 @@ public class ZaranixHomeGroundFloor {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Continue", "Continue on your journey.",  PlaceType.DOMINION_DEMON_HOME_ZARANIX.getDialogue(false));
+				return new Response("Продолжить", "Продолжить свое путешествие.",  PlaceType.DOMINION_DEMON_HOME_ZARANIX.getDialogue(false));
 			}
 			return null;
 		}
@@ -784,7 +778,7 @@ public class ZaranixHomeGroundFloor {
 		}
 		@Override
 		public String getLabel() {
-			return "Zaranix is finished";
+			return "Зараникс закончил";
 		}
 		@Override
 		public String getContent() {
@@ -793,7 +787,7 @@ public class ZaranixHomeGroundFloor {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Continue", "Continue on your journey.",  PlaceType.DOMINION_DEMON_HOME_ZARANIX.getDialogue(false));
+				return new Response("Продолжить", "Продолжить свое путешествие.",  PlaceType.DOMINION_DEMON_HOME_ZARANIX.getDialogue(false));
 			}
 			return null;
 		}
@@ -806,7 +800,7 @@ public class ZaranixHomeGroundFloor {
 		}
 		@Override
 		public String getLabel() {
-			return "Amber is finished";
+			return "Эмбер закончила";
 		}
 		@Override
 		public String getContent() {
@@ -815,7 +809,7 @@ public class ZaranixHomeGroundFloor {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Continue", "Continue on your journey.",  PlaceType.DOMINION_DEMON_HOME_ZARANIX.getDialogue(false));
+				return new Response("Продолжить", "Продолжить свое путешествие.",  PlaceType.DOMINION_DEMON_HOME_ZARANIX.getDialogue(false));
 			}
 			return null;
 		}
@@ -828,7 +822,7 @@ public class ZaranixHomeGroundFloor {
 
 		@Override
 		public String getLabel() {
-			return "Entrance Hall";
+			return "Прихожая";
 		}
 
 		@Override
@@ -849,7 +843,7 @@ public class ZaranixHomeGroundFloor {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new ResponseCombat("Fight", "Defend yourself against the furious maid!", Main.game.getNpc(Amber.class)) {
+				return new ResponseCombat("Сразиться", "Защититься от разъяренной горничной!", Main.game.getNpc(Amber.class)) {
 					@Override
 					public void effects() {
 						Main.game.getDialogueFlags().setFlag(DialogueFlagValue.zaranixMaidsHostile, true);
@@ -876,7 +870,7 @@ public class ZaranixHomeGroundFloor {
 
 		@Override
 		public String getLabel() {
-			return "Entrance Hall";
+			return "Прихожая";
 		}
 
 		@Override
@@ -895,7 +889,7 @@ public class ZaranixHomeGroundFloor {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Exit", "Leave Zaranix's house and head back out into Demon Home. <b>You will have to gain entry all over again if you choose to leave now!</b>", PlaceType.DOMINION_DEMON_HOME_ZARANIX.getDialogue(false)) {
+				return new Response("Выход", "Покинуть дом Зараникса и вернуться в Дом Демонов. <b>Если ты решишь уйти сейчас, тебе придется пробиваться внутрь заново!</b>", PlaceType.DOMINION_DEMON_HOME_ZARANIX.getDialogue(false)) {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setLocation(WorldType.DOMINION, PlaceType.DOMINION_DEMON_HOME_ZARANIX, false);
@@ -904,7 +898,7 @@ public class ZaranixHomeGroundFloor {
 				};
 
 			} else if(index==2 && Main.game.getNpc(Amber.class).getLocationPlace().getPlaceType().equals(PlaceType.ZARANIX_GF_ENTRANCE)) {
-				return new ResponseSex("Use Amber", "Have some fun with this fiery maid.",
+				return new ResponseSex("Использовать Эмбер", "Повеселиться с этой огненной горничной.",
 						true, false,
 						new SMGeneric(
 								Util.newArrayListOfValues(Main.game.getPlayer()),
@@ -913,8 +907,8 @@ public class ZaranixHomeGroundFloor {
 						null), Amber.AFTER_SEX_VICTORY, UtilText.parseFromXMLFile("places/dominion/zaranixHome/groundFloor", "ENTRANCE_AMBER_SEX"));
 				
 			} else if(index==3 && Main.game.getNpc(Amber.class).getLocationPlace().getPlaceType().equals(PlaceType.ZARANIX_GF_ENTRANCE)) {
-				return new ResponseSex("Submit",
-						"Amber's fiery personality is seriously turning you on. You can't bring yourself to take the dominant role, but you <i>do</i> want to have sex with her. Perhaps if you submitted, she'd be willing to fuck you?",
+				return new ResponseSex("Подчиниться",
+						"Огненный темперамент Эмбер чертовски тебя возбуждает. Ты не решаешься взять на себя доминирующую роль, но ты <i>действительно</i> хочешь заняться с ней сексом. Возможно, если ты подчинишься, она сама захочет тебя оттрахать?",
 						Util.newArrayListOfValues(Fetish.FETISH_SUBMISSIVE), null, CorruptionLevel.THREE_DIRTY, null, null, null,
 						true, false,
 						new SMGeneric(
@@ -924,8 +918,8 @@ public class ZaranixHomeGroundFloor {
 						null), Amber.AFTER_SEX_VICTORY, UtilText.parseFromXMLFile("places/dominion/zaranixHome/groundFloor", "ENTRANCE_AMBER_SEX_SUBMIT"));
 				
 			} else if (index == 4 && Main.game.getNpc(Amber.class).getLocationPlace().getPlaceType().equals(PlaceType.ZARANIX_GF_ENTRANCE)) {
-				return new Response("Transformations",
-						"Get Amber to use [amber.her] demonic powers to transform [amber.herself]...",
+				return new Response("Трансформации",
+						"Заставить Эмбер использовать [amber.her] демонические силы, чтобы трансформировать [amber.herself]...",
 						BodyChanging.BODY_CHANGING_CORE){
 					@Override
 					public void effects() {
@@ -949,7 +943,7 @@ public class ZaranixHomeGroundFloor {
 
 		@Override
 		public String getLabel() {
-			return "Staircase";
+			return "Лестница";
 		}
 
 		@Override
@@ -968,7 +962,7 @@ public class ZaranixHomeGroundFloor {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Upstairs", "Head upstairs to the first floor of Zaranix's house.", PlaceType.ZARANIX_FF_STAIRS.getDialogue(false)) {
+				return new Response("Наверх", "Подняться на второй этаж дома Зараникса.", PlaceType.ZARANIX_FF_STAIRS.getDialogue(false)) {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setLocation(WorldType.ZARANIX_HOUSE_FIRST_FLOOR, PlaceType.ZARANIX_FF_STAIRS, false);
@@ -990,7 +984,7 @@ public class ZaranixHomeGroundFloor {
 
 		@Override
 		public String getLabel() {
-			return "Corridor";
+			return "Коридор";
 		}
 
 		@Override
@@ -1023,7 +1017,7 @@ public class ZaranixHomeGroundFloor {
 
 		@Override
 		public String getLabel() {
-			return "Zaranix's Garden";
+			return "Сад Зараникса";
 		}
 
 		@Override
@@ -1035,32 +1029,27 @@ public class ZaranixHomeGroundFloor {
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
 				if(Main.game.getPlayer().isAbleToFly()) {
-					return new Response("Fly over fence",
-							"Fly over the garden's fence and back out into Demon Home. <b>If you leave, all progress you've made through Zaranix's home will be reset!</b>",
+					return new Response("Перелететь через забор",
+							"Перелететь через забор сада и вернуться в Дом Демонов. <b>Если ты уйдешь, весь твой прогресс в доме Зараникса будет сброшен!</b>",
 							PlaceType.DOMINION_DEMON_HOME_ZARANIX.getDialogue(false)) {
 						@Override
 						public void effects() {
 							resetHouseAfterLeaving();
 							Main.game.getPlayer().setLocation(WorldType.DOMINION, PlaceType.DOMINION_DEMON_HOME_ZARANIX, false);
 							Main.game.getTextStartStringBuilder().append(
-									"<p>"
-										+ "Deciding that you'll come back another time, you take a little run-up down the garden path, before launching yourself into the air."
-										+ " Swooping down over the fence, you very quickly find yourself back out in Demon Home once again..."
-									+ "</p>");
+									"<p>Решив, что вернешься в другой раз, ты немного разбегаешься по садовой дорожке, а затем взмываешь в воздух. Перелетев через забор, ты очень быстро оказываешься в Доме Демонов...</p>");
 						}
 					};
 				}
-				return new Response("Climb fence",
-						"Climb over the garden's fence and head back out into Demon Home. <b>If you leave, all progress you've made through Zaranix's home will be reset!</b>",
+				return new Response("Перелезть через забор",
+						"Перелезьте через садовый забор и вернитесь в Обитель Демонов. <b>Если вы уйдете, весь ваш прогресс в доме Зараникса будет сброшен!</b>",
 						PlaceType.DOMINION_DEMON_HOME_ZARANIX.getDialogue(false)) {
 					@Override
 					public void effects() {
 						resetHouseAfterLeaving();
 						Main.game.getPlayer().setLocation(WorldType.DOMINION, PlaceType.DOMINION_DEMON_HOME_ZARANIX, false);
 						Main.game.getTextStartStringBuilder().append(
-								"<p>"
-									+ "Deciding that you'll come back another time, you climb up and over the fence, quickly finding yourself back out in Demon Home once again..."
-								+ "</p>");
+								"<p>Решив, что вернетесь в другой раз, вы карабкаетесь через забор и вскоре снова оказываетесь в Обители Демонов...</p>");
 					}
 				};
 
@@ -1079,7 +1068,7 @@ public class ZaranixHomeGroundFloor {
 
 		@Override
 		public String getLabel() {
-			return "Zaranix's Garden";
+			return "Сад Зараникса";
 		}
 
 		@Override
@@ -1102,7 +1091,7 @@ public class ZaranixHomeGroundFloor {
 
 		@Override
 		public String getLabel() {
-			return "Garden Room";
+			return "Садовая комната";
 		}
 
 		@Override
@@ -1138,7 +1127,7 @@ public class ZaranixHomeGroundFloor {
 
 		@Override
 		public String getLabel() {
-			return "Corridor";
+			return "Коридор";
 		}
 
 		@Override
@@ -1161,7 +1150,7 @@ public class ZaranixHomeGroundFloor {
 		public Response getResponse(int responseTab, int index) {
 			if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.zaranixKatherineSubdued)) {
 				if(index==1) {
-					return new ResponseSex("Use Katherine", "Have some fun with this maid.",
+					return new ResponseSex("Использовать Кэтрин", "Немного развлечься с этой горничной.",
 							true, false,
 							new SMGeneric(
 									Util.newArrayListOfValues(Main.game.getPlayer()),
@@ -1170,8 +1159,8 @@ public class ZaranixHomeGroundFloor {
 							null), ZaranixMaidKatherine.AFTER_SEX_VICTORY, UtilText.parseFromXMLFile("places/dominion/zaranixHome/groundFloor", "CORRIDOR_MAID_KATHERINE_SEX"));
 					
 				} else if(index==2) {
-					return new ResponseSex("Submit",
-							"You can't bring yourself to take the dominant role, but you <i>do</i> want to have sex with Katherine. Perhaps if you submitted, she'd be willing to fuck you?",
+					return new ResponseSex("Подчиниться",
+							"Вы не можете заставить себя взять на себя доминирующую роль, но вы <i>действительно</i> хотите заняться сексом с Кэтрин. Возможно, если вы подчинитесь, она сама захочет вас оттрахать?",
 							Util.newArrayListOfValues(Fetish.FETISH_SUBMISSIVE), null, CorruptionLevel.THREE_DIRTY, null, null, null,
 							true, false,
 							new SMGeneric(
@@ -1181,8 +1170,8 @@ public class ZaranixHomeGroundFloor {
 							null), ZaranixMaidKatherine.AFTER_SEX_VICTORY, UtilText.parseFromXMLFile("places/dominion/zaranixHome/groundFloor", "CORRIDOR_MAID_KATHERINE_SEX_SUBMIT"));
 					
 				} else if (index == 3) {
-					return new Response("Transformations",
-							"Get Katherine to use [katherine.her] demonic powers to transform [katherine.herself]...",
+					return new Response("Трансформации",
+							"Заставить Кэтрин использовать [katherine.her] демонические силы, чтобы превратить [katherine.herself]...",
 							BodyChanging.BODY_CHANGING_CORE){
 						@Override
 						public void effects() {
@@ -1196,7 +1185,7 @@ public class ZaranixHomeGroundFloor {
 				}
 			} else {
 				if(index==1) {
-					return new ResponseCombat("Fight", "Defend yourself against the furious maid!", Main.game.getNpc(ZaranixMaidKatherine.class)) {
+					return new ResponseCombat("Сразиться", "Защититься от разъяренной горничной!", Main.game.getNpc(ZaranixMaidKatherine.class)) {
 						@Override
 						public void effects() {
 							Main.game.getNpc(ZaranixMaidKatherine.class).setPlayerKnowsName(true);
@@ -1224,7 +1213,7 @@ public class ZaranixHomeGroundFloor {
 
 		@Override
 		public String getLabel() {
-			return "Room";
+			return "Комната";
 		}
 
 		@Override
@@ -1247,7 +1236,7 @@ public class ZaranixHomeGroundFloor {
 
 		@Override
 		public String getLabel() {
-			return "Lounge";
+			return "Гостиная";
 		}
 
 		@Override
@@ -1283,7 +1272,7 @@ public class ZaranixHomeGroundFloor {
 				
 			} else if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.zaranixAmberSubdued)) {
 				if(index==1) {
-					return new ResponseSex("Use Amber", "Have some fun with this fiery maid.",
+					return new ResponseSex("Использовать Эмбер", "Повеселиться с этой огненной горничной.",
 							true, false,
 							new SMGeneric(
 									Util.newArrayListOfValues(Main.game.getPlayer()),
@@ -1293,8 +1282,8 @@ public class ZaranixHomeGroundFloor {
 							);
 					
 				} else if(index==2) {
-					return new ResponseSex("Submit",
-							"Amber's fiery personality is seriously turning you on. You can't bring yourself to take the dominant role, but you <i>do</i> want to have sex with her. Perhaps if you submitted, she'd be willing to fuck you?",
+					return new ResponseSex("Подчиниться",
+							"Огненный темперамент Эмбер чертовски тебя возбуждает. Ты не решаешься взять на себя доминирующую роль, но ты <i>действительно</i> хочешь заняться с ней сексом. Возможно, если ты подчинишься, она сама захочет тебя оттрахать?",
 							Util.newArrayListOfValues(Fetish.FETISH_SUBMISSIVE), null, CorruptionLevel.THREE_DIRTY, null, null, null,
 							true, false,
 							new SMGeneric(
@@ -1305,8 +1294,8 @@ public class ZaranixHomeGroundFloor {
 							);
 					
 				} else if (index == 3) {
-					return new Response("Transformations",
-							"Get Amber to use [amber.her] demonic powers to transform [amber.herself]...",
+					return new Response("Трансформации",
+							"Заставить Эмбер использовать [amber.her] демонические силы, чтобы трансформировать [amber.herself]...",
 							BodyChanging.BODY_CHANGING_CORE){
 						@Override
 						public void effects() {
@@ -1321,7 +1310,7 @@ public class ZaranixHomeGroundFloor {
 				
 			} else {
 				if(index==1) {
-					return new Response("Approach the maid", "Walk up behind the maid. <b>She's sure to notice your approach, which will most likely result in you having to fight her!</b>", LOUNGE_AMBER) {
+					return new Response("Подойти к горничной", "Подойдите к горничной со спины. <b>Она наверняка заметит ваше приближение, что, скорее всего, приведет к драке!</b>", LOUNGE_AMBER) {
 						@Override
 						public boolean isCombatHighlight() {
 							return true;
@@ -1342,7 +1331,7 @@ public class ZaranixHomeGroundFloor {
 
 		@Override
 		public String getLabel() {
-			return "Lounge";
+			return "Гостиная";
 		}
 
 		@Override
@@ -1364,7 +1353,7 @@ public class ZaranixHomeGroundFloor {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new ResponseCombat("Fight", "Defend yourself against the furious maid!", Main.game.getNpc(Amber.class)) {
+				return new ResponseCombat("Сразиться", "Защититься от разъяренной горничной!", Main.game.getNpc(Amber.class)) {
 					@Override
 					public void effects() {
 						Main.game.getDialogueFlags().setFlag(DialogueFlagValue.zaranixMaidsHostile, true);

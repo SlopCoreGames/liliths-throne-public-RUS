@@ -24,33 +24,22 @@ import com.lilithsthrone.utils.Util;
  */
 public class HarpyNestNympho {
 
-	public static final DialogueNode HARPY_NEST_NYMPHO_TALK = new DialogueNode("Harpy nest", ".", true) {
+	public static final DialogueNode HARPY_NEST_NYMPHO_TALK = new DialogueNode("Гнездо гарпий", ".", true) {
 
 		@Override
 		public String getLabel() {
-			return "[harpyNympho.NamePos] nest";
+			return "Гнездо [harpyNympho.NamePos]";
 		}
 		
 		@Override
 		public String getContent() {
-			return "<p>"
-						+ "[pc.speech(What I want,)] you say,"
-						+ " [pc.speech(is for you to get your nest under control. The Enforcers are struggling to keep the peace, and it's members of your nest who are responsible!)]"
-					+ "</p>"
-					+ "<p>"
-						+ "[harpyNympho.speech(Well it's not <i>my</i> fault if some of my playthings want to have a bit of extra fun elsewhere!)] [harpyNympho.name] replies."
-						+ " [harpyNympho.speech(And anyway, you're kind of interrupting things here, so how about you turn around and go bother someone else! [harpyNymphoCompanion.Name]! Why don't you show this rude [pc.race] the way out!)]"
-					+ "</p>"
-					+ "<p>"
-						+ "As [harpyNymphoCompanion.name] moves forwards, you realise that [harpyNympho.name] isn't going to listen to you."
-						+ " You'll either have to think of another way to convince these harpies to calm down, or make them calm down by using force."
-					+ "</p>";
+			return "<p>[pc.speech(Чего я хочу,)] — говоришь ты, — [pc.speech(хочу, чтобы ты взяла свое гнездо под контроль. Исполнители с трудом поддерживают порядок, а виной тому — члены твоего гнезда!)]</p><p>[harpyNympho.speech(Ну, это не <i>моя</i> вина, если некоторым моим игрушкам хочется немного развлечься где-то еще!)] [harpyNympho.name] отвечает. [harpyNympho.speech(И вообще, ты тут как бы мешаешь, так что разворачивайся и иди приставай к кому-нибудь другому! [harpyNymphoCompanion.Name]! Почему бы тебе не показать этой грубой [pc.race] выход!)]</p><p>Когда [harpyNymphoCompanion.name] делает шаг вперед, ты понимаешь, что [harpyNympho.name] тебя слушать не собирается. Тебе придется либо придумать другой способ убедить этих гарпий успокоиться, либо усмирить их силой.</p>";
 		}
 
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Nympho Queen", "You feel sorry for this matriarch, only getting to have sex with the same males over and over again. Tell her how a real nympho behaves!", HARPY_NEST_NYMPHO_QUEEN,
+				return new Response("Королева нимф", "Тебе становится её жалко — эта матриарх раз за разом трахается только с одними и теми же самцами. Покажи ей, как ведет себя настоящая нимфоманка!", HARPY_NEST_NYMPHO_QUEEN,
 						null, null, Util.newArrayListOfValues(Perk.NYMPHOMANIAC), Femininity.FEMININE_STRONG, null) {
 					@Override
 					public void effects() {
@@ -70,10 +59,10 @@ public class HarpyNestNympho {
 				};
 					
 			} else if (index == 2) {
-				return new Response("Force compliance",
-						"If you want these harpies to chill out, it looks as though you'll have to do it by force..."
+				return new Response("Усмирить силой",
+						"Если ты хочешь, чтобы эти гарпии расслабились, похоже, тебе придется сделать это силой..."
 						+ (Main.game.isBadEndsEnabled() && Main.game.getPlayer().isAbleToHaveRaceTransformed()
-								?"<br/>[style.boldBadEnd(BAD END:)] If you lose this fight, the harpies won't ever let you leave!"
+								?"<br/>[style.boldBadEnd(ПЛОХОЙ КОНЕЦ:)] Если ты проиграешь этот бой, гарпии больше никогда тебя не отпустят!"
 								:""),
 						HARPY_NEST_NYMPHO_FIGHT) {
 					@Override
@@ -83,18 +72,11 @@ public class HarpyNestNympho {
 				};
 					
 			} else if (index == 0) {
-				return new Response("Leave", "Tell [harpyNympho.name] that you'll be back later.", DialogueManager.getDialogueFromId("innoxia_places_dominion_harpy_nests_nympho_exterior")) {
+				return new Response("Уйти", "Сказать [harpyNympho.name], что ты вернешься позже.", DialogueManager.getDialogueFromId("innoxia_places_dominion_harpy_nests_nympho_exterior")) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(
-								"<p>"
-									+ "Deciding that now isn't the best time to start a confrontation, you turn around and take your leave."
-									+ " You hear [harpyNympho.name] complaining to [harpyNymphoCompanion.name] as you walk away,"
-									+ " [harpyNympho.speech(Well that was a waste of our time! Come on [harpyNymphoCompanion.name], this time I want you to use my mouth!)]"
-								+ "</p>"
-								+ "<p>"
-									+ "Ignoring her words, you continue back across the platform, quickly finding yourself on the outskirts of the nest once again."
-								+ "</p>");
+								"<p>Решив, что сейчас не лучшее время для открытого противостояния, ты разворачиваешься и уходишь. Уходя, ты слышишь, как [harpyNympho.name] жалуется [harpyNymphoCompanion.name]: [harpyNympho.speech(Ну, это была пустая трата времени! Пошли, [harpyNymphoCompanion.name], на этот раз я хочу, чтобы ты использовал мой рот!)]</p><p>Игнорируя её слова, ты продолжаешь путь через платформу и вскоре снова оказываешься на окраине гнезда.</p>");
 					}
 				};
 					
@@ -104,36 +86,25 @@ public class HarpyNestNympho {
 		}
 	};
 	
-	public static final DialogueNode HARPY_NEST_NYMPHO_UGLY = new DialogueNode("Harpy nest", ".", true) {
+	public static final DialogueNode HARPY_NEST_NYMPHO_UGLY = new DialogueNode("Гнездо гарпий", ".", true) {
 
 		@Override
 		public String getLabel() {
-			return "[harpyNympho.NamePos] nest";
+			return "Гнездо [harpyNympho.NamePos]";
 		}
 		
 		@Override
 		public String getContent() {
-			return "<p>"
-						+ "Realising that you're going to have to force [harpyNympho.name] to get her nest under control, you decide to draw her into a confrontation,"
-						+ " [pc.speech(Well, if you aren't going to calm your nest down, can you at least agree to put up some walls around your nest?"
-						+ " It's not nice having to see a harpy as ugly as you every time I walk past your nest.)]" //Innoxia's next-level witticisms!
-					+ "</p>"
-					+ "<p>"
-						+ "[harpyNympho.Name] lets out a furious scream, and, flapping her wings, she shouts out to her companion, "
-						+ "[harpyNympho.speech([harpyNymphoCompanion.Name]! Get [pc.herHim]! Get [pc.herHim]! That fucker! [pc.She] said I was ugly!)]"
-					+ "</p>"
-					+ "<p>"
-						+ "Looking almost as furious as [harpyNympho.name] does, [harpyNymphoCompanion.name] jumps forwards, eager to please her matriarch as she launches into a furious assault."
-					+ "</p>";
+			return "<p>Осознав, что тебе придется заставить [harpyNympho.name] взять свое гнездо под контроль, ты решаешь спровоцировать ее на конфронтацию: [pc.speech(Ну, если ты не собираешься успокаивать свое гнездо, можешь хотя бы согласиться возвести вокруг него стены? Не дело каждый раз видеть такую уродливую гарпию, как ты, когда я прохожу мимо.)]</p><p>[harpyNympho.Name] издает яростный крик и, хлопая крыльями, вопит своей спутнице: [harpyNympho.speech([harpyNymphoCompanion.Name]! Хватайте [pc.herHim]! Хватайте [pc.herHim]! Этот ублюдок! [pc.She] сказал, что я уродливая!)]</p><p>Выглядя почти такой же разъяренной, как [harpyNympho.name], [harpyNymphoCompanion.name] бросается вперед, стремясь угодить своей матриарху и начиная яростную атаку.</p>";
 		}
 
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new ResponseCombat("Fight",
-						"[harpyNymphoCompanion.Name] rushes to do her matriarch's bidding!"
+				return new ResponseCombat("Сразиться",
+						"[harpyNymphoCompanion.Name] спешит исполнить волю своей матриарха!"
 						+ (Main.game.isBadEndsEnabled() && Main.game.getPlayer().isAbleToHaveRaceTransformed()
-								?"<br/>[style.boldBadEnd(BAD END:)] If you lose this fight, the harpies won't ever let you leave!"
+								?"<br/>[style.boldBadEnd(ПЛОХОЙ КОНЕЦ:)] Если ты проиграешь этот бой, гарпии больше никогда тебя не отпустят!"
 								:""),
 						Main.game.getNpc(HarpyNymphoCompanion.class));
 					
@@ -143,115 +114,35 @@ public class HarpyNestNympho {
 		}
 	};
 	
-	public static final DialogueNode HARPY_NEST_NYMPHO_QUEEN = new DialogueNode("Harpy nest", ".", true) {
+	public static final DialogueNode HARPY_NEST_NYMPHO_QUEEN = new DialogueNode("Гнездо гарпий", ".", true) {
 
 		@Override
 		public String getLabel() {
-			return "[harpyNympho.NamePos] nest";
+			return "Гнездо [harpyNympho.NamePos]";
 		}
 		
 		@Override
 		public String getContent() { // Mock her for only having one partner at once, she gets flustered, you describe multiple harpies fucking her, she breaks and falls to her knees admitting that you're better than she is
-			return "<p>"
-					+ "[pc.speech(So, do you only fuck one of your little boy-toys here at a time?)] you ask in a derisory tone."
-					+ " [pc.speech(Because you know you could be doing a lot more than that, right?)]"
-				+ "</p>"
-				+ "<p>"
-					+ "For a moment, [harpyNympho.name] seems to be caught off guard, and stumbles over her words as she responds,"
-					+ " [harpyNympho.speech(W-Well, I mean, I like to make each harpy feel special!)]"
-				+ "</p>"
-				+ "<p>"
-					+ "The murmurs of conversation that had been surrounding you up until this point start to fade away, and you realise that the crowds of male harpies all around you are listening in closely."
-					+ " From the moment you stepped foot inside [harpyNympho.namePos] nest, you could feel her flock's gaze resting on your beautiful figure, and now, loudly critiquing their matriarch's sexual skills,"
-						+ " you're getting their full attention."
-				+ "</p>"
-				+ "<p>"
-					+ "Striking the most sensual pose you can muster, you continue,"
-					+ " [pc.speech(You know, you're hoarding all these gorgeous harpies here for your own personal use, but you're only willing to fuck them one at a time?!"
-					+ " That's kind of unfair, don't you all agree?)]"
-				+ "</p>"
-				+ "<p>"
-					+ "Turning to address the crowd as you ask that last question, the entire flock responds by calling out in agreement."
-					+ " Your beautiful features and potent arcane aura are obviously having a strong effect on these harpies, which, combined with talking about sex in such an open manner, has turned them over to your side."
-				+ "</p>"
-				+ "<p>"
-					+ "[harpyNympho.speech(But, w-what should I be doing then?)] [harpyNympho.name] nervously asks."
-					+ " [harpyNympho.speech(I didn't realise I was being unfair...)]"
-				+ "</p>"
-				+ "<p>"
-					+ "[pc.speech(Oh, there's lots of things you could be doing,)] you say, walking closer to her."
-					+ " [pc.speech(like having your pussy, ass and mouth all used at the same time. Or allowing your nest to run a train on your slutty little cunt here.)]"
-				+ "</p>"
-				+ "<p>"
-					+ "As you say that, you reach down and grab [harpyNympho.namePos] exposed pussy."
-					+ " She lets out a little squeak, and, leaning into you, moans,"
-					+ " [harpyNympho.speech(Yes... I'll do that... What else?)]"
-				+ "</p>"
-				+ "<p>"
-					+ "[pc.speech(I think it's obvious by now what you need to do,)] you moan into her ear."
-					+ " [pc.speech(Kneel down and accept that I'm the one in charge here.)]"
-				+ "</p>"
-				+ "<p>"
-					+ "Realising that her flock has been mesmerised by your words, [harpyNympho.name] falls down onto her knees before you."
-					+ " Looking up with big, lust-filled eyes, she moans, [harpyNympho.speech("+(Main.game.getPlayer().isFeminine()?"Mistress":"Master")+", please teach me!"
-							+ " I'll calm the flock down for you! Please "+(Main.game.getPlayer().isFeminine()?"Mistress":"Master")+", tell me what to do!)]"
-				+ "</p>"
-				+ "<p>"
-					+ "You can't help but let out a little laugh as the matriarch submits to you."
-					+ " [pc.speech(Good girl! You'll do exactly as I say from now on, understood?!)]"
-				+ "</p>"
-				+ "<p>"
-					+ "[harpyNympho.Name] shuffles closer, continuing to let out little moaning noises as she responds,"
-					+ " [harpyNympho.speech(Yes "+(Main.game.getPlayer().isFeminine()?"Mistress":"Master")+"! I'll do what you say!"
-							+ " Please, "+(Main.game.getPlayer().isFeminine()?"Mistress":"Master")+", I have something for you!)]"
-				+ "</p>"
-				+ "<p>"
-					+ "Producing a cock-shaped lollipop, [harpyNympho.name] holds it out towards you."
-					+ " [harpyNympho.speech("+(Main.game.getPlayer().isFeminine()?"Mistress":"Master")+", this will make you look like me! I-If you want to look like me, that is...)]"
-					+ " You take the lollipop in recognition of [harpyNympho.namePos] submission, but you're unsure whether you'll actually use it..."
-				+ "</p>"
-				+ "<p>"
-					+ "[pc.speech(Good girl!)] you say. [pc.speech(Now, you're going to get your nest to calm down, aren't you?)]"
-				+ "</p>"
-				+ "<p>"
-					+ "[harpyNympho.speech(Yes "+(Main.game.getPlayer().isFeminine()?"Mistress":"Master")+"! I'll be able to relieve all their stress if I start letting them use me all at once!)]"
-				+ "</p>"
-				+ "<p>"
-					+ "Thanks to your own obsession with sex, your powerful arcane aura, and your good looks, you've been able to subdue [harpyNympho.namePos] nest without fighting!"
-					+ " Looking down at the still-moaning matriarch, you wonder if you should give her some one-to-one tuition..."
-				+ "</p>";
+			return "<p>[pc.speech(Так что, ты трахаешь только одну из своих маленьких игрушек за раз?)] — спрашиваешь ты насмешливым тоном. [pc.speech(Потому что ты ведь понимаешь, что могла бы делать гораздо больше, верно?)]</p><p>На мгновение [harpyNympho.name] кажется, что она застигнута врасплох, и она запинается, отвечая тебе: [harpyNympho.speech(Н-ну, то есть, мне нравится, чтобы каждая гарпия чувствовала себя особенной!)]</p><p>Ропот разговоров, окружавший тебя до этого момента, начинает затихать, и ты понимаешь, что толпы самцов-гарпий вокруг внимательно прислушиваются. С того самого момента, как ты ступила в гнездо [harpyNympho.namePos], ты чувствовала на своей прекрасной фигуре взгляды её стаи, а теперь, громко критикуя сексуальные навыки их матриарха, ты завладела их полным вниманием.</p><p>Приняв самую соблазнительную позу, какую только смогла изобразить, ты продолжаешь: [pc.speech(Знаешь, ты припрятала всех этих великолепных гарпий здесь для личного пользования, но готова трахать их только по одной?! Это как-то несправедливо, вы все так не считаете?)]</p><p>Когда ты задаешь этот последний вопрос, обращаясь к толпе, вся стая отвечает дружным одобрительным криком. Твои прекрасные черты и мощная аркана-аура явно производят на этих гарпий сильное впечатление, что в сочетании с такими открытыми разговорами о сексе заставило их перейти на твою сторону.</p><p>[harpyNympho.speech(Но, ч-что же мне тогда делать?)] — нервно спрашивает [harpyNympho.name]. [harpyNympho.speech(Я и не осознавала, что поступаю несправедливо...)]</p><p>[pc.speech(О, есть много вещей, которые ты могла бы делать,)] — говоришь ты, подходя к ней ближе. [pc.speech(Например, позволить использовать твою киску, задницу и рот одновременно. Или позволить своей стае устроить групповой секс с твоей шлюшливой щелочкой.)]</p><p>С этими словами ты наклоняешься и сжимаешь обнаженную киску [harpyNympho.namePos]. Она издает короткий писк и, прижимаясь к тебе, стонет: [harpyNympho.speech(Да... я сделаю это... А что еще?)]</p><p>[pc.speech(Думаю, тебе уже очевидно, что нужно делать,)] — стонешь ты ей на ухо. [pc.speech(Встань на колени и признай, что здесь главная — я.)]</p><p>Понимая, что её стая заворожена твоими словами, [harpyNympho.name] падает перед тобой на колени. Глядя на тебя широко раскрытыми, полными похоти глазами, она стонет: [harpyNympho.speech("+(Main.game.getPlayer().isFeminine()?"Госпожа":"Хозяин")+", пожалуйста, научи меня! Я успокою стаю для тебя! Пожалуйста, "+(Main.game.getPlayer().isFeminine()?"Госпожа":"Хозяин")+", скажи, что мне делать!)]</p><p>Вы невольно издаете короткий смешок, видя, как матриарх подчиняется вам. [pc.speech(Хорошая девочка! Отныне ты будешь делать именно то, что я скажу, поняла?!)]</p><p>[harpyNympho.Name] подбирается ближе, продолжая издавать тихие стоны в ответ, [harpyNympho.speech(Да, "+(Main.game.getPlayer().isFeminine()?"Госпожа":"Хозяин")+"! Я буду делать всё, что ты скажешь! Пожалуйста, "+(Main.game.getPlayer().isFeminine()?"Госпожа":"Хозяин")+", у меня есть кое-что для тебя!)]</p><p>Достав леденец в форме члена, [harpyNympho.name] протягивает его вам. [harpyNympho.speech(, "+(Main.game.getPlayer().isFeminine()?"Госпожа":"Хозяин")+", это сделает тебя похожей на меня! Е-если ты хочешь быть похожей на меня, конечно...)] Вы берете леденец, признавая покорность [harpyNympho.namePos], но не уверены, решитесь ли вы его использовать...</p><p>[pc.speech(Хорошая девочка!)] — говорите вы. [pc.speech(А теперь ты успокоишь свое гнездо, верно?)]</p><p>[harpyNympho.speech(Да, "+(Main.game.getPlayer().isFeminine()?"Госпожа":"Хозяин")+"! Я смогу снять весь их стресс, если позволю им использовать меня всех разом!)]</p><p>Благодаря вашей собственной одержимости сексом, вашей мощной арканной ауре и вашей привлекательности, вам удалось покорить гнездо [harpyNympho.namePos] без единой битвы! Глядя на всё еще стонущую матриарха, вы задумываетесь, не стоит ли устроить ей индивидуальное занятие...</p>";
 		}
 
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			 if (index == 1) {
-				return new ResponseSex("Sex", "Have dominant sex with [harpyNympho.name].",
+				return new ResponseSex("Секс", "Заняться доминирующим сексом с [harpyNympho.name].",
 						true, false,
 						new SMGeneric(
 								Util.newArrayListOfValues(Main.game.getPlayer()),
 								Util.newArrayListOfValues(Main.game.getNpc(HarpyNympho.class)),
 						null,
-						null), HARPY_NEST_NYMPHO_AFTER_SEX, "<p>"
-							+ "Eager to help satisfy [harpyNympho.namePos] craving for sex, you reach down and grab her wings."
-							+ " Pulling her to her feet, you step forwards, before planting a deep kiss on her [harpyNympho.lips+]."
-						+ "</p>"
-						+ "<p>"
-							+ "[harpyNympho.Name] responds to your dominant move by letting out an excited squeal, and, enthusiastically wrapping her wings around your back, she passionately starts returning your kiss..."
-						+ "</p>");
+						null), HARPY_NEST_NYMPHO_AFTER_SEX, "<p>Стремясь утолить [harpyNympho.namePos] жажду секса, вы тянетесь вниз и хватаете её за крылья. Подняв её на ноги, вы делаете шаг вперед и глубоко целуете её в [harpyNympho.lips+].</p><p>[harpyNympho.Name] отвечает на ваш властный жест возбужденным визгом и, с энтузиазмом обхватив вашими крыльями вашу спину, страстно начинает отвечать на ваш поцелуй...</p>");
 						
 			} else if (index == 0) {
-				return new Response("Leave", "Decide to take your leave.", DialogueManager.getDialogueFromId("innoxia_places_dominion_harpy_nests_nympho_exterior")) {
+				return new Response("Уйти", "Решить уйти.", DialogueManager.getDialogueFromId("innoxia_places_dominion_harpy_nests_nympho_exterior")) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(
-								"<p>"
-									+ "Deciding that your work here is done, you turn around and start to walk back the way you came."
-									+ " You hear [harpyNympho.name] calling out to her harpies as you leave,"
-									+ " [harpyNympho.speech(You heard our new leader! Let's try starting with three of you at once!)]"
-								+ "</p>"
-								+ "<p>"
-									+ "Smirking as you hear that, you continue back across the main platform, quickly finding yourself on the outskirts of the nest once again."
-								+ "</p>");
+								"<p>Решив, что ваша работа здесь окончена, вы разворачиваетесь и отправляетесь обратно тем же путем. Уходя, вы слышите, как [harpyNympho.name] подзывает своих гарпий: [harpyNympho.speech(Вы слышали нашего нового лидера! Давайте попробуем сразу троих!)]</p><p>Услышав это, вы ухмыляетесь и продолжаете путь через главную платформу, вскоре снова оказавшись на окраине гнезда.</p>");
 					}
 				};
 					
@@ -261,35 +152,25 @@ public class HarpyNestNympho {
 		}
 	};
 	
-	public static final DialogueNode HARPY_NEST_NYMPHO_FIGHT = new DialogueNode("Harpy nest", ".", true) {
+	public static final DialogueNode HARPY_NEST_NYMPHO_FIGHT = new DialogueNode("Гнездо гарпий", ".", true) {
 
 		@Override
 		public String getLabel() {
-			return "[harpyNympho.NamePos] nest";
+			return "Гнездо [harpyNympho.NamePos]";
 		}
 		
 		@Override
 		public String getContent() {
-			return "<p>"
-					+ "Realising that [harpyNympho.name] isn't going to listen to reason, you make your final demand,"
-					+ " [pc.speech(You're either going to get your nest to calm down right now, or I'm going to make you!)]"
-				+ "</p>"
-				+ "<p>"
-					+ "[harpyNympho.Name] lets out an angry cry, and she shouts out to her companion,"
-					+ " [harpyNympho.speech([harpyNymphoCompanion.Name], throw this [pc.race] out already! <i>Nobody</i> talks to me like that and gets away with it!)]"
-				+ "</p>"
-				+ "<p>"
-					+ "[harpyNymphoCompanion.name] immediately runs forwards, eager to please her matriarch as she launches into a furious assault."
-				+ "</p>";
+			return "<p>Понимая, что [harpyNympho.name] не желает слушать доводы разума, вы выдвигаете свое последнее требование: [pc.speech(Либо ты прямо сейчас успокоишь свое гнездо, либо я заставлю тебя это сделать!)]</p><p>[harpyNympho.Name] издает гневный крик и кричит своей спутнице: [harpyNympho.speech([harpyNymphoCompanion.Name], вышвырни уже этого [pc.race]! <i>Никто</i> не смеет так со мной разговаривать и оставаться безнаказанным!)]</p><p>[harpyNymphoCompanion.name] тут же бросается вперед, стремясь угодить своей матриарху и начиная яростную атаку.</p>";
 		}
 
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new ResponseCombat("Fight",
-						"[harpyNymphoCompanion.Name] rushes to do her matriarch's bidding!"
+				return new ResponseCombat("Сразиться",
+						"[harpyNymphoCompanion.Name] спешит исполнить волю своей матриарха!"
 						+ (Main.game.isBadEndsEnabled() && Main.game.getPlayer().isAbleToHaveRaceTransformed()
-								?"<br/>[style.boldBadEnd(BAD END:)] If you lose this fight, the harpies won't ever let you leave!"
+								?"<br/>[style.boldBadEnd(ПЛОХОЙ КОНЕЦ:)] Если ты проиграешь этот бой, гарпии больше никогда тебя не отпустят!"
 								:""),
 						Main.game.getNpc(HarpyNymphoCompanion.class));
 					
@@ -299,33 +180,25 @@ public class HarpyNestNympho {
 		}
 	};
 	
-	public static final DialogueNode HARPY_NEST_NYMPHO_FIGHT_BEAT_BF = new DialogueNode("Harpy nest", ".", true) {
+	public static final DialogueNode HARPY_NEST_NYMPHO_FIGHT_BEAT_BF = new DialogueNode("Гнездо гарпий", ".", true) {
 
 		@Override
 		public String getLabel() {
-			return "[harpyNympho.NamePos] nest";
+			return "Гнездо [harpyNympho.NamePos]";
 		}
 		
 		@Override
 		public String getContent() {
-			return "<p>"
-					+ "[harpyNympho.Name] lets out an angry wail as [harpyNymphoCompanion.name] falls to the floor, defeated."
-					+ " You notice a lot of the surrounding harpies glancing nervously at each other, and a few start to shuffle around to your side of the platform."
-					+ " It looks as though they're getting ready to support you if you manage to defeat their matriarch."
-				+ "</p>"
-				+ "<p>"
-					+ "You don't have too much time to ponder on these harpies' fickle nature, as [harpyNympho.Name] suddenly rushes forwards, shouting,"
-					+ " [harpyNympho.speech(You're going to pay for this!)]"
-				+ "</p>";
+			return "<p>[harpyNympho.Name] издает гневный вопль, когда [harpyNymphoCompanion.name] падает на пол, поверженная. Вы замечаете, что многие окружающие гарпии нервно переглядываются, а некоторые начинают перебираться на вашу сторону платформы. Похоже, они готовятся поддержать вас, если вам удастся одолеть их матриарха.</p><p>У вас не так много времени, чтобы размышлять о переменчивой натуре этих гарпий, как [harpyNympho.Name] внезапно бросается вперед, выкрикивая: [harpyNympho.speech(Ты за это заплатишь!)]</p>";
 		}
 
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new ResponseCombat("Fight",
-						"[harpyNympho.Name] looks furious as she launches her attack on you!"
+				return new ResponseCombat("Сразиться",
+						"[harpyNympho.Name] выглядит разъяренной, когда обрушивает на вас свою атаку!"
 						+ (Main.game.isBadEndsEnabled() && Main.game.getPlayer().isAbleToHaveRaceTransformed()
-								?"<br/>[style.boldBadEnd(BAD END:)] If you lose this fight, the harpies won't ever let you leave!"
+								?"<br/>[style.boldBadEnd(ПЛОХОЙ КОНЕЦ:)] Если ты проиграешь этот бой, гарпии больше никогда тебя не отпустят!"
 								:""),
 						Main.game.getNpc(HarpyNympho.class));
 					
@@ -335,80 +208,35 @@ public class HarpyNestNympho {
 		}
 	};
 	
-	public static final DialogueNode HARPY_NEST_NYMPHO_FIGHT_BEAT_NYMPHO = new DialogueNode("Harpy nest", ".", true) {
+	public static final DialogueNode HARPY_NEST_NYMPHO_FIGHT_BEAT_NYMPHO = new DialogueNode("Гнездо гарпий", ".", true) {
 
 		@Override
 		public String getLabel() {
-			return "[harpyNympho.NamePos] nest";
+			return "Гнездо [harpyNympho.NamePos]";
 		}
 		
 		@Override
 		public String getContent() {
-			return "<p>"
-					+ "[harpyNympho.NamePos] flock, just a moment ago cheering and shouting support for their matriarch, falls completely silent as they see her slump to the floor, defeated."
-					+ " Walking forwards, you tower over the panting mass of pink feathers, and you hear an erotic moan slip out from between [harpyNympho.namePos] lips as she pushes herself up onto her knees."
-					+ " [harpyNympho.speech(Y-You're so... powerful...)]"
-				+ "</p>"
-				+ "<p>"
-					+ "[pc.speech(That's right,)] you respond,"
-					+ " [pc.speech(I don't care how you normally determine a flock's leader up here in the Nests; I'm in charge now!)]"
-				+ "</p>"
-				+ "<p>"
-					+ "Your arcane aura is clearly having a strong effect on [harpyNympho.name], and you hear her letting out another lewd moan as she responds,"
-					+ " [harpyNympho.speech(Y-Yes, "+(Main.game.getPlayer().isFeminine()?"mistress":"master")+"! I'll do as you ask!)]"
-				+ "</p>"
-				+ "<p>"
-					+ "Seeing their matriarch submit to you, the rest of the harpies fall to their knees, bowing down to you as you issue your orders,"
-					+ " [pc.speech(You're all going to calm down, understand?! No more feuds, and no more attacking travellers through the Harpy Nests!)]"
-				+ "</p>"
-				+ "<p>"
-					+ "A chorus of eager agreements rise up from the surrounding crowd, and you find yourself smirking as you look back down at the defeated matriarch at your feet."
-					+ " Shuffling closer, [harpyNympho.name] holds up a pink cock-shaped lollipop."
-					+ " [harpyNympho.speechNoEffects("+(Main.game.getPlayer().isFeminine()?"Mistress":"Master")+"! Please, have one of my special lollipops! This will make you look like me! I-If you want to look like me, that is...)]"
-					+ " You take the lollipop in recognition of [harpyNympho.namePos] submission, but you're unsure whether you'll actually use it..."
-				+ "</p>"
-				+ "<p>"
-					+ "[pc.speech(Good girl!)] you say. [pc.speech(Now, you're going to get your nest to calm down, aren't you?)]"
-				+ "</p>"
-				+ "<p>"
-					+ "[harpyNympho.speech(Yes, "+(Main.game.getPlayer().isFeminine()?"Mistress":"Master")+"! I'll keep them under control!)]"
-				+ "</p>"
-				+ "<p>"
-					+ "Thanks to your victory over [harpyNympho.name], and the power of your arcane aura, you've been able to subdue this once-troublesome nest!"
-					+ " Looking down at the matriarch, you wonder if you should publicly prove to all these harpies who's in control here..."
-				+ "</p>";
+			return "<p>[harpyNympho.NamePos], еще мгновение назад ликовавшая и выкрикивавшая слова поддержки своей матриарху, полностью замолкает, видя, как та тяжело оседает на пол. Шагая вперед, вы возвышаетесь над тяжело дышащей массой розовых перьев и слышите эротичный стон, вырывающийся из уст [harpyNympho.namePos], когда она приподнимается на колени. [harpyNympho.speech(Т-ты такой... могущественный...)]</p><p>[pc.speech(Именно так,)] отвечаете вы, [pc.speech(Мне плевать, как вы здесь, в Гнездах, обычно выбираете вожака стаи; теперь здесь главный я!)]</p><p>Ваша аркана-аура явно оказывает сильное воздействие на [harpyNympho.name], и вы слышите ее очередной похотливый стон, когда она отвечает: [harpyNympho.speech(Д-да,  "+(Main.game.getPlayer().isFeminine()?"mistress":"master")+"! Я сделаю всё, как ты просишь!)]</p><p>Видя, как их матриарх покоряется тебе, остальные гарпии падают на колени, склоняясь перед тобой, пока ты отдаешь приказы, [pc.speech(А теперь все успокоятся, ясно?! Никаких больше раздоров и никаких нападений на путешественников в гнездах гарпий!)]</p><p>Хором раздается восторженное согласие толпы, и ты ловишь себя на ухмылке, глядя сверху вниз на побежденную матриарха у своих ног. Подойдя ближе, [harpyNympho.name] протягивает розовый леденец в форме члена. [harpyNympho.speechNoEffects("+(Main.game.getPlayer().isFeminine()?"Госпожа":"Хозяин")+"! Пожалуйста, возьми один из моих особенных леденцов! С ним ты станешь похожа на меня! Е-если, конечно, ты хочешь быть похожей на меня...)] Ты берешь леденец в знак признания покорности [harpyNympho.namePos], но не уверен, решишься ли ты его съесть...</p><p>[pc.speech(Хорошая девочка!)] — говоришь ты. [pc.speech(А теперь ты успокоишь свое гнездо, верно?)]</p><p>[harpyNympho.speech(Да, "+(Main.game.getPlayer().isFeminine()?"Госпожа":"Хозяин")+"! Я буду держать их в узде!)]</p><p>Благодаря твоей победе над [harpyNympho.name] и силе твоей арканной ауры, тебе удалось усмирить это некогда беспокойное гнездо! Глядя на матриарха, ты задумываешься, не стоит ли тебе публично доказать всем этим гарпиям, кто здесь главный...</p>";
 		}
 
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			 if (index == 1) {
-				return new ResponseSex("Sex", "Have dominant sex with [harpyNympho.name].",
+				return new ResponseSex("Секс", "Заняться доминирующим сексом с [harpyNympho.name].",
 						true, false,
 						new SMGeneric(
 								Util.newArrayListOfValues(Main.game.getPlayer()),
 								Util.newArrayListOfValues(Main.game.getNpc(HarpyNympho.class)),
 						null,
-						null), HARPY_NEST_NYMPHO_AFTER_SEX, "<p>"
-							+ "Eager to show this nest who's in charge, you reach down and grab [harpyNympho.namePos] wings."
-							+ " Pulling her to her feet, you step forwards, before planting a deep kiss on her [harpyNympho.lips+]."
-						+ "</p>"
-						+ "<p>"
-							+ "[harpyNympho.Name] responds to your dominant move by letting out an excited squeal, and, enthusiastically wrapping her wings around your back, she passionately starts returning your kiss..."
-						+ "</p>");
+						null), HARPY_NEST_NYMPHO_AFTER_SEX, "<p>Желая показать этому гнезду, кто здесь главная, вы наклоняетесь и хватаете [harpyNympho.namePos] за крылья. Подняв её на ноги, вы делаете шаг вперед и глубоко целуете её в [harpyNympho.lips+].</p><p>[harpyNympho.Name] отвечает на ваш властный жест возбужденным визгом и, с энтузиазмом обхватив вашими крыльями вашу спину, страстно начинает отвечать на поцелуй...</p>");
 							
 				} else if (index == 0) {
-					return new Response("Leave", "Tell [harpyNympho.name] that you'll be back later.", DialogueManager.getDialogueFromId("innoxia_places_dominion_harpy_nests_nympho_exterior")) {
+					return new Response("Уйти", "Сказать [harpyNympho.name], что ты вернешься позже.", DialogueManager.getDialogueFromId("innoxia_places_dominion_harpy_nests_nympho_exterior")) {
 						@Override
 						public void effects() {
 							Main.game.getTextStartStringBuilder().append(
-								"<p>"
-									+ "Deciding that your work here is done, you turn around and start to walk back the way you came."
-									+ " You hear [harpyNympho.name] calling out to her harpies as you leave,"
-									+ " [harpyNympho.speech(That's our new leader now! Show some respect!)]"
-								+ "</p>"
-								+ "<p>"
-									+ "Smirking as you hear that, you continue back across the main platform, quickly finding yourself on the outskirts of the nest once again."
-								+ "</p>");
+								"<p>Решив, что ваша работа здесь окончена, вы разворачиваетесь и направляетесь назад тем же путем. Уходя, вы слышите, как [harpyNympho.name] подзывает своих гарпий: [harpyNympho.speech(Теперь она наша новая предводительница! Проявите уважение!)]</p><p>Услышав это, вы ухмыляетесь и продолжаете путь через главную платформу, вскоре снова оказавшись на окраине гнезда.</p>");
 					}
 				};
 					
@@ -418,39 +246,30 @@ public class HarpyNestNympho {
 		}
 	};
 	
-	public static final DialogueNode HARPY_NEST_NYMPHO_AFTER_SEX = new DialogueNode("Harpy nest", ".", true) {
+	public static final DialogueNode HARPY_NEST_NYMPHO_AFTER_SEX = new DialogueNode("Гнездо гарпий", ".", true) {
 
 		@Override
 		public String getLabel() {
-			return "[harpyNympho.NamePos] nest";
+			return "Гнездо [harpyNympho.NamePos]";
 		}
 		
 		@Override
 		public String getContent() {
 			if(Main.sex.getNumberOfOrgasms(Main.game.getNpc(HarpyNympho.class)) >= Main.game.getNpc(HarpyNympho.class).getOrgasmsBeforeSatisfied()) {
-				return "<p>"
-							+ "As you step back from [harpyNympho.name], she sinks to the floor, totally worn out from her orgasm"+(Main.sex.getNumberOfOrgasms(Main.game.getNpc(HarpyNympho.class)) > 1?"s":"")+"."
-							+ " The surrounding harpies, having watched the whole thing, kneel in submission as you finish with their matriarch."
-						+ "</p>";
+				return "<p>Когда вы отстраняетесь от [harpyNympho.name], она оседает на пол, совершенно измотанная своим оргазмом."+(Main.sex.getNumberOfOrgasms(Main.game.getNpc(HarpyNympho.class)) > 1?"s":"")+". Окружающие гарпии, наблюдавшие за всем этим, преклоняют колени в знак покорности, пока ты заканчиваешь с их матриаршей.</p>";
 			} else {
-				return "<p>"
-							+ "As you step back from [harpyNympho.name], she sinks to the floor, letting out a desperate whine as she realises that you've finished with her."
-							+ " Her feathered hands dart down between her legs, and she frantically starts masturbating as she seeks to finish what you started."
-							+ " The surrounding harpies, having watched the whole thing, kneel in submission as you finish with their matriarch."
-						+ "</p>";
+				return "<p>Когда вы отстраняетесь от [harpyNympho.name], она оседает на пол, издавая отчаянный скулеж, осознав, что вы с ней закончили. Её пернатые руки ныряют между ног, и она начинает неистово мастурбировать, стремясь завершить то, что начали вы. Окружающие гарпии, наблюдавшие за всем этим, преклоняют колени в знак подчинения, пока вы заканчиваете с их матриархом.</p>";
 			}
 		}
 
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 0) {
-				return new Response("Leave", "Having had your fun, you decide to leave.", DialogueManager.getDialogueFromId("innoxia_places_dominion_harpy_nests_nympho_exterior")) {
+				return new Response("Уйти", "Насладившись весельем, ты решаешь уйти.", DialogueManager.getDialogueFromId("innoxia_places_dominion_harpy_nests_nympho_exterior")) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(
-								"<p>"
-									+ "Having put [harpyNympho.name] in her place, you walk back across the platform, quickly finding yourself on the outskirts of the nest once again."
-								+ "</p>");
+								"<p>Поставив [harpyNympho.name] на место, вы возвращаетесь назад по платформе и вскоре снова оказываетесь на окраине гнезда.</p>");
 					}
 				};
 					

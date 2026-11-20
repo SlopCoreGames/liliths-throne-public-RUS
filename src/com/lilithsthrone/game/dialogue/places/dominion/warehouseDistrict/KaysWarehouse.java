@@ -133,17 +133,17 @@ public class KaysWarehouse {
 		SexType sexTypeWolfgang = new SexType(SexParticipantType.NORMAL, SexAreaPenetration.PENIS, sexAreaWolfgang);
 		SexType sexTypeKarl = new SexType(SexParticipantType.NORMAL, SexAreaPenetration.PENIS, sexAreaKarl);
 		
-		String fuckingText = "Wolfgang fucking your " +sexTypeWolfgang.getTargetedSexArea().getName(Main.game.getPlayer())+" while Karl fucks your " +sexTypeKarl.getTargetedSexArea().getName(Main.game.getPlayer());
+		String fuckingText = "Вольфганг трахает твою " +sexTypeWolfgang.getTargetedSexArea().getName(Main.game.getPlayer())+" пока Карл трахает твою " +sexTypeKarl.getTargetedSexArea().getName(Main.game.getPlayer());
 		if(sexTypeWolfgang.getTargetedSexArea()==sexTypeKarl.getTargetedSexArea()) {
-			fuckingText = "both Wolfgang and Karl fucking your " + sexTypeWolfgang.getTargetedSexArea().getName(Main.game.getPlayer());
+			fuckingText = "и Вольфганг, и Карл трахают твою " + sexTypeWolfgang.getTargetedSexArea().getName(Main.game.getPlayer());
 		}
 		if(sexTypeWolfgang.getTargetedSexArea()==SexAreaOrifice.MOUTH) {
-			fuckingText = "Wolfgang fucking your face while Karl makes you give him a handjob";
+			fuckingText = "Вольфганг трахает твое лицо, пока Карл заставляет тебя делать ему рукоблудие";
 		}
 		
 		return new ResponseSex(title,
 				description
-					+"<br/>[style.italicsSex(This will result in "+fuckingText+"!)]",
+					+"<br/>[style.italicsSex(Это приведет к тому, что "+fuckingText+"!)]",
 				true, false,
 				new SexManagerDefault(
 						position,
@@ -244,7 +244,7 @@ public class KaysWarehouse {
 			
 			if(!isPlayerMouthFree()) {
 				return new Response(title,
-						"As you cannot gain access to your mouth, you cannot offer to perform oral on the dobermann-boys...",
+						"Так как вы не можете разжать рот, вы не можете предложить доберман-мальчикам отсосать...",
 						null);
 				
 			} else {
@@ -253,7 +253,7 @@ public class KaysWarehouse {
 						SexSlotSitting.SITTING, SexAreaPenetration.FINGER,
 						SexSlotSitting.PERFORMING_ORAL,
 						title,
-						"Offer to suck the dobermann-boys' cocks...",
+						"Предложить отсосать доберман-мальчикам...",
 						AFTER_SEX_WILLING,
 						UtilText.parseFromXMLFile("places/dominion/warehouseDistrict/kaysTextiles", "DOBERMANNS_SEX_OFFER_ORAL"));
 			}
@@ -263,12 +263,12 @@ public class KaysWarehouse {
 			
 			if(!isPlayerMouthFree()) {
 				return new Response(title,
-						"As you cannot gain access to your mouth, you cannot offer to be spit-roasted by the dobermann-boys...",
+						"Так как вы не можете разжать рот, вы не можете предложить доберман-мальчикам устроить вам спит-рост...",
 						null);
 				
 			} else if(!isPlayerAssFree() && !isPlayerVaginaFree()) {
 				return new Response(title,
-						"As you cannot gain access to your ass"+(Main.game.getPlayer().hasVagina()?" or pussy":"")+", you cannot offer to be spit-roasted by the dobermann-boys...",
+						"Так как вы не можете открыть задницу"+(Main.game.getPlayer().hasVagina()?" или киску":"")+", вы не можете предложить доберман-мальчикам устроить вам спит-рост...",
 						null);
 				
 			} else {
@@ -277,7 +277,7 @@ public class KaysWarehouse {
 						SexSlotAllFours.IN_FRONT, SexAreaOrifice.MOUTH,
 						SexSlotAllFours.ALL_FOURS,
 						title,
-						"Offer to let the two dobermann-boys spit-roast you...",
+						"Предложить двум доберман-мальчикам устроить вам спит-рост...",
 						AFTER_SEX_WILLING,
 						UtilText.parseFromXMLFile("places/dominion/warehouseDistrict/kaysTextiles", "DOBERMANNS_SEX_OFFER_SPITROAST"));
 			}
@@ -287,7 +287,7 @@ public class KaysWarehouse {
 			
 			if(!isPlayerAssFree() && !isPlayerVaginaFree()) {
 				return new Response(title,
-						"As you cannot gain access to your ass"+(Main.game.getPlayer().hasVagina()?" or pussy":"")+", you cannot offer to ride the dobermann-boys...",
+						"Так как вы не можете открыть задницу"+(Main.game.getPlayer().hasVagina()?" или киску":"")+", вы не можете предложить оседлать доберман-мальчиков...",
 						null);
 				
 			} else {
@@ -296,7 +296,7 @@ public class KaysWarehouse {
 						SexSlotLyingDown.MISSIONARY, isPlayerAssFree()?SexAreaOrifice.ANUS:SexAreaOrifice.VAGINA,
 						SexSlotLyingDown.COWGIRL,
 						title,
-						"Offer to give the two dobermann-boys a ride...",
+						"Предложить двум мальчикам-доберманнам подвезти их...",
 						AFTER_SEX_WILLING,
 						UtilText.parseFromXMLFile("places/dominion/warehouseDistrict/kaysTextiles", "DOBERMANNS_SEX_OFFER_RIDE"));
 			}
@@ -307,8 +307,8 @@ public class KaysWarehouse {
 			if(!isPlayerNippleFuckFree()) {
 				return new Response(title,
 						Main.game.getPlayer().isBreastFuckableNipplePenetration()
-							?"As you cannot gain access to your fuckable nipples, you cannot offer them to the dobermann-boys..."
-							:"As you do not have fuckable nipples, you cannot offer them to the dobermann-boys...",
+							?"Так как вы не можете добраться до своих сочных сосков, вы не можете предложить их мальчикам-доберманнам..."
+							:"Так как у вас нет сочных сосков, вы не можете предложить их мальчикам-доберманнам...",
 						null);
 				
 			} else {
@@ -317,7 +317,7 @@ public class KaysWarehouse {
 						SexSlotStanding.STANDING_DOMINANT_TWO, SexAreaOrifice.NIPPLE,
 						SexSlotStanding.PERFORMING_ORAL,
 						title,
-						"Offer to let the two dobermann-boys fuck your nipples...",
+						"Предложить мальчикам-доберманнам оттрахать ваши соски...",
 						AFTER_SEX_WILLING,
 						UtilText.parseFromXMLFile("places/dominion/warehouseDistrict/kaysTextiles", "DOBERMANNS_SEX_OFFER_NIPPLES"));
 			}
@@ -425,7 +425,7 @@ public class KaysWarehouse {
 	}
 	
 	
-	public static final DialogueNode INITIAL_ENTRY = new DialogueNode("Reception Area", "", false) {
+	public static final DialogueNode INITIAL_ENTRY = new DialogueNode("Зона ресепшена", "", false) {
 		@Override
 		public int getSecondsPassed() {
 			return 60;
@@ -442,7 +442,7 @@ public class KaysWarehouse {
 		public Response getResponse(int responseTab, int index) {
 			if(index == 1) {
 				if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.supplierDepotDoorUnlocked)) {
-					return new Response("Exit", "Decide to leave the warehouse for now.", PlaceType.DOMINION_WAREHOUSES.getDialogue(false)) {
+					return new Response("Выход", "Решить пока покинуть склад.", PlaceType.DOMINION_WAREHOUSES.getDialogue(false)) {
 						@Override
 						public void effects() {
 							Main.game.getPlayer().setLocation(WorldType.DOMINION, PlaceType.DOMINION_WAREHOUSES, false);
@@ -450,7 +450,7 @@ public class KaysWarehouse {
 					};
 					
 				} else {
-					return new Response("Receptionist", "Approach the receptionist and tell her that you're here to see Kay.", RECEPTIONIST_UNLOCKING) {
+					return new Response("Регистратор", "Подойди к регистратору и скажи ей, что ты пришел к Кею.", RECEPTIONIST_UNLOCKING) {
 						@Override
 						public void effects() {
 							Main.game.getDialogueFlags().setFlag(DialogueFlagValue.supplierDepotDoorUnlocked, true);
@@ -462,7 +462,7 @@ public class KaysWarehouse {
 		}
 	};
 
-	public static final DialogueNode RECEPTIONIST_UNLOCKING = new DialogueNode("Reception Area", "", false) {
+	public static final DialogueNode RECEPTIONIST_UNLOCKING = new DialogueNode("Зона ресепшена", "", false) {
 		@Override
 		public int getSecondsPassed() {
 			return 2*60;
@@ -477,7 +477,7 @@ public class KaysWarehouse {
 		}
 	};
 	
-	public static final DialogueNode RECEPTION = new DialogueNode("Reception Area", "", false) {
+	public static final DialogueNode RECEPTION = new DialogueNode("Зона ресепшена", "", false) {
 		@Override
 		public int getSecondsPassed() {
 			return 60;
@@ -498,7 +498,7 @@ public class KaysWarehouse {
 			return INITIAL_ENTRY.getResponse(responseTab, index);}
 	};
 	
-	public static final DialogueNode CORRIDOR = new DialogueNode("Corridor", "", false) {
+	public static final DialogueNode CORRIDOR = new DialogueNode("Коридор", "", false) {
 		@Override
 		public int getSecondsPassed() {
 			return 30;
@@ -513,7 +513,7 @@ public class KaysWarehouse {
 		}
 	};
 	
-	public static final DialogueNode STORAGE_AREA = new DialogueNode("Storage Area", "", false) {
+	public static final DialogueNode STORAGE_AREA = new DialogueNode("Складская зона", "", false) {
 		@Override
 		public int getSecondsPassed() {
 			return 30;
@@ -526,13 +526,13 @@ public class KaysWarehouse {
 		public Response getResponse(int responseTab, int index) {
 			if(index == 1) {
 				if(!Main.game.getPlayer().isQuestProgressGreaterThan(QuestLine.RELATIONSHIP_NYAN_HELP, Quest.RELATIONSHIP_NYAN_3_STOCK_ISSUES_DOBERMANNS)) {
-					return new Response("Surplus", "You don't think it's a good idea to help yourself to items from the 'Surplus Disposal' crate without first receiving permission to do so...", null);
+					return new Response("Излишки", "Ты не думаешь, что это хорошая идея — без разрешения брать вещи из ящика «Утилизация излишков»...", null);
 					
 				} else if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.kayCratesSearched)) {
-					return new Response("Surplus", "You've already taken today's surplus stock!", null);
+					return new Response("Излишки", "Вы уже забрали сегодняшний излишек товара!", null);
 					
 				} else {
-					return new Response("Surplus", "Help yourself to today's surplus stock.", STORAGE_AREA_SEARCHING) {
+					return new Response("Излишки", "Возьмите сегодняшний излишек товара.", STORAGE_AREA_SEARCHING) {
 						@Override
 						public void effects() {
 							Main.game.getDialogueFlags().setFlag(DialogueFlagValue.kayCratesSearched, true);
@@ -554,7 +554,7 @@ public class KaysWarehouse {
 		}
 	};
 	
-	public static final DialogueNode STORAGE_AREA_SEARCHING = new DialogueNode("Storage Room", "", false) {
+	public static final DialogueNode STORAGE_AREA_SEARCHING = new DialogueNode("Склад", "", false) {
 		@Override
 		public int getSecondsPassed() {
 			return 5*60;
@@ -569,7 +569,7 @@ public class KaysWarehouse {
 		}
 	};
 	
-	public static final DialogueNode WEAVING_MACHINES = new DialogueNode("Weaving Machines", "", false) {
+	public static final DialogueNode WEAVING_MACHINES = new DialogueNode("Ткацкие станки", "", false) {
 		@Override
 		public int getSecondsPassed() {
 			return 2*60;
@@ -584,7 +584,7 @@ public class KaysWarehouse {
 		}
 	};
 
-	public static final DialogueNode OVERSEER_STATION = new DialogueNode("Overseer's Station", "", true) {
+	public static final DialogueNode OVERSEER_STATION = new DialogueNode("Пост надзирателя", "", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 2*60;
@@ -597,7 +597,7 @@ public class KaysWarehouse {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				if(Main.game.getPlayer().isQuestProgressGreaterThan(QuestLine.RELATIONSHIP_NYAN_HELP, Quest.RELATIONSHIP_NYAN_3_STOCK_ISSUES_DOBERMANNS)) {
-					return new Response("[kay.NamePos] office", "Head up the stairs, through the overseer's station, and pay [kay.name] a visit.", OFFICE) {
+					return new Response("офис [kay.NamePos]", "Поднимитесь по лестнице, пройдите через пост надзирателя и навестите [kay.name].", OFFICE) {
 						@Override
 						public void effects() {
 							Main.game.getPlayer().setLocation(WorldType.TEXTILES_WAREHOUSE, PlaceType.TEXTILE_WAREHOUSE_OFFICE, false);
@@ -606,7 +606,7 @@ public class KaysWarehouse {
 					};
 					
 				} else {
-					return new Response("Upstairs", "Head up the stairs and enter the overseer's station.", DOBERMANNS) {
+					return new Response("Наверх", "Поднимитесь по лестнице и войдите на пост надзирателя.", DOBERMANNS) {
 						@Override
 						public void effects() {
 							if(Main.game.getPlayer().getQuest(QuestLine.RELATIONSHIP_NYAN_HELP)==Quest.RELATIONSHIP_NYAN_2_STOCK_ISSUES_AGREED_TO_HELP) {
@@ -617,7 +617,7 @@ public class KaysWarehouse {
 				}
 				
 			} else if(index==2) {
-				return new Response("Turn around", "[pc.Step] away from the staircase and head back down the corridor.", CORRIDOR) {
+				return new Response("Развернуться", "[pc.Step] от лестницы и спуститесь обратно по коридору.", CORRIDOR) {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setNearestLocation(WorldType.TEXTILES_WAREHOUSE, PlaceType.TEXTILE_WAREHOUSE_CORRIDOR, false);
@@ -628,7 +628,7 @@ public class KaysWarehouse {
 		}
 	};
 	
-	public static final DialogueNode DOBERMANNS = new DialogueNode("Overseer's Station", "", true) {
+	public static final DialogueNode DOBERMANNS = new DialogueNode("Пост надзирателя", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			Main.game.getNpc(SupplierLeader.class).setPlayerKnowsName(true);
@@ -646,12 +646,12 @@ public class KaysWarehouse {
 		public Response getResponse(int responseTab, int index) {
 			if(index==0) {
 				if(Main.game.getPlayer().hasAnyEnforcerStatusEffect()) {
-					return new Response("Leave", "Now that the dobermann-boys have mistaken you for an Enforcer, it would be best to resolve this conflict before attempting to leave...", null);
+					return new Response("Уйти", "Теперь, когда эти доберманы-мальчишки приняли вас за Enforcer, лучше бы уладить этот конфликт, прежде чем пытаться уйти...", null);
 				}
 				if(Main.game.getPlayer().getRace()==Race.DEMON) {
-					return new Response("Leave", "Now that the dobermann-boys have seen you in your demonic form, it would be best to resolve this conflict before attempting to leave...", null);
+					return new Response("Уйти", "Теперь, когда доберман-мальчики увидели тебя в твоей демонической форме, лучше всего разрешить этот конфликт, прежде чем пытаться уйти...", null);
 				}
-				return new Response("Leave", "[pc.Step] back from the dobermann-boys and head back out the way you came.", CORRIDOR) {
+				return new Response("Уйти", "[pc.Step] отбиться от доберман-мальчиков и вернуться тем же путем, которым ты пришел.", CORRIDOR) {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setNearestLocation(WorldType.TEXTILES_WAREHOUSE, PlaceType.TEXTILE_WAREHOUSE_CORRIDOR, false);
@@ -661,13 +661,13 @@ public class KaysWarehouse {
 				
 			} else if(index == 1) {
 				if(Main.game.getPlayer().getMoney()<PAY_OFF_PRICE) {
-					return new Response("Pay off ("+UtilText.formatAsMoneyUncoloured(PAY_OFF_PRICE, "span")+")",
-							"You don't have enough flames to offer to pay off the dobermann-boys' contract...",
+					return new Response("Выплатить ("+UtilText.formatAsMoneyUncoloured(PAY_OFF_PRICE, "охват")+")",
+							"У тебя недостаточно огней, чтобы предложить выплату по контракту доберман-мальчиков...",
 							null);
 					
 				} else {
-					return new Response("Pay off ("+UtilText.formatAsMoney(PAY_OFF_PRICE, "span")+")",
-							"Offer to pay off the remainder of the dobermann-boys' contract, which, along with the pointed reminder that what they're doing is illegal, should be enough to make them leave.",
+					return new Response("Выплатить ("+UtilText.formatAsMoney(PAY_OFF_PRICE, "охват")+")",
+							"Предложить выплатить остаток контракта доберман-мальчиков, что вместе с колким напоминанием об их незаконности должно заставить их уйти.",
 							DOBERMANNS_PAID_OFF) {
 						@Override
 						public void effects() {
@@ -682,7 +682,7 @@ public class KaysWarehouse {
 				
 			} else if (index == 2) {
 				if(Main.game.getPlayer().hasAnyEnforcerStatusEffect()) {
-					return new Response("Enforcer bluff", "Use the fact that the dobermann-boys have mistaken you for an Enforcer to convince them to leave.", DOBERMANNS_ENFORCER_BLUFF) {
+					return new Response("Блеф с Enforcer", "Использовать тот факт, что доберман-мальчики приняли тебя за Enforcer, чтобы убедить их уйти.", DOBERMANNS_ENFORCER_BLUFF) {
 						@Override
 						public void effects() {
 							Main.game.getDialogueFlags().setFlag(DialogueFlagValue.suppliersEncountered, true);
@@ -691,17 +691,17 @@ public class KaysWarehouse {
 					};
 					
 				} else {
-					return new Response("Enforcer Bluff", "You'd need to be wearing an Enforcer's uniform in order to attempt this!", null);
+					return new Response("Блеф с Enforcer", "Чтобы попытаться это сделать, на тебе должна быть форма Enforcer!", null);
 				}
 				
 			} else if(index==3) {
 				if(Main.game.getPlayer().getRace()!=Race.DEMON
 						&& Main.game.getPlayer().getSubspeciesOverrideRace()==Race.DEMON) {
 					if(!Main.game.getPlayer().isAbleToSelfTransform()) {
-						return new Response("Demonic reveal", "As your self-transformative powers are current inhibited, you're not able to turn into a demon in front of the dobermann-boys in order to intimidate them into leaving!", null);
+						return new Response("Демоническое разоблачение", "Поскольку твои способности к самотрансформации сейчас подавлены, ты не можешь превратиться в демона на глазах у парней-доберманов, чтобы запугать их и заставить уйти!", null);
 					} else {
-						return new Response("Demonic reveal",
-								"Transform into a demon in front of the dobermann-boys and intimidate them into leaving.",
+						return new Response("Демоническое разоблачение",
+								"Превратиться в демона перед парнями-доберманами и запугать их, чтобы они ушли.",
 								DOBERMANNS_DEMON_REVEAL) {
 							@Override
 							public void effects() {
@@ -712,8 +712,8 @@ public class KaysWarehouse {
 					}
 					
 				} else {
-					return new Response("Demonic intimidation",
-							"Use the fact that you're a demon to intimidate the dobermann-boys into leaving.",
+					return new Response("Демоническое запугивание",
+							"Использовать тот факт, что ты демон, чтобы запугать парней-доберманов и заставить их уйти.",
 							DOBERMANNS_DEMONIC_INTIMIDATION,
 							null,
 							null,
@@ -730,10 +730,10 @@ public class KaysWarehouse {
 				
 			} else if(index==4) {
 				if(!isSexAvailable()) {
-					return new Response("Seduce", "As you're unable to access any of your orifices, you're unable to seduce the dobermann-boys...", null);
+					return new Response("Соблазнить", "Так как вы не можете добраться ни до одного из своих отверстий, вы не в состоянии соблазнить мальчиков-доберманнов...", null);
 				}
-				return new Response("Seduce",
-						"Seduce the dobermann-boys and offer them your body in exchange for leaving Kay alone.",
+				return new Response("Соблазнить",
+						"Соблазнить парней-доберманов и предложить им свое тело в обмен на то, что они оставят Кей в покое.",
 						DOBERMANNS_SEDUCE,
 						null,
 						null,
@@ -753,20 +753,18 @@ public class KaysWarehouse {
 				
 			} else if(index==5) {
 				if(Main.game.getPlayer().hasAnyEnforcerStatusEffect()) {
-					return new Response("Fight", "It'd be better to try and play on the fact that the dobermann-boys have mistaken you for an Enforcer...", null);
+					return new Response("Сразиться", "Было бы лучше попытаться сыграть на том, что парни-доберманы приняли тебя за Enforcer...", null);
 					
 				} else {
-					return new ResponseCombat("Fight", "Immediately launch into combat!",
+					return new ResponseCombat("Сразиться", "Немедленно вступить в бой!",
 							Main.game.getNpc(SupplierLeader.class),
 							Util.newArrayListOfValues(
 									Main.game.getNpc(SupplierLeader.class),
 									Main.game.getNpc(SupplierPartner.class)),
 							Util.newHashMapOfValues(
-									new Value<>(Main.game.getPlayer(), "[pc.speech(I'll soon have the two of you cleared out from here,)]"
-											+ " you declare, readying yourself for a fight,"
-											+ " [pc.speech(but I know that people like you only respect force, so I'm left with no choice but to do this!)]"),
-									new Value<>(Main.game.getNpc(SupplierLeader.class), "[wolfgang.speech(Hah!)] Wolfgang shouts, [wolfgang.speech(If it's a fight you want, we'll give you one!)]"),
-									new Value<>(Main.game.getNpc(SupplierPartner.class), "[karl.speech(You're gonna pay for this, bitch!)] Karl snarls."))) {
+									new Value<>(Main.game.getPlayer(), "[pc.speech(Скоро я вышвырну вас обоих отсюда,)] — заявляешь ты, готовясь к драке, — [pc.speech(но я знаю, что такие, как вы, уважают только силу, так что у меня нет другого выбора, кроме как сделать это!)]"),
+									new Value<>(Main.game.getNpc(SupplierLeader.class), "[wolfgang.speech(Ха!)] — кричит Wolfgang, — [wolfgang.speech(Если ты хочешь драки, мы ее тебе устроим!)]"),
+									new Value<>(Main.game.getNpc(SupplierPartner.class), "[karl.speech(Ты за это заплатишь, сучка!)] — рычит Karl."))) {
 						@Override
 						public void effects() {
 							Main.game.getDialogueFlags().setFlag(DialogueFlagValue.suppliersEncountered, true);
@@ -791,10 +789,10 @@ public class KaysWarehouse {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index == 1) {
-				return new Response("Let them go", "Stand aside and let the two dobermann-boys leave.", DOBERMANNS_BANISHED);
+				return new Response("Отпустить их", "Отойди в сторону и дай двум доберманам уйти.", DOBERMANNS_BANISHED);
 				
 			} else {
-				return getDobermannsRewardSexResponse(2, index, "\"Thank\" them (sex_type_replacement)");
+				return getDobermannsRewardSexResponse(2, index, "\"Поблагодарить\" их (sex_type_replacement)");
 			}
 		}
 	};
@@ -865,11 +863,11 @@ public class KaysWarehouse {
 		}
 		@Override
 		public Response getResponse(int responseTab, int index) {
-			return getDobermannsRewardSexResponse(1, index, "Offer sex_type_replacement");
+			return getDobermannsRewardSexResponse(1, index, "Предложить sex_type_replacement");
 		}
 	};
 	
-	public static final DialogueNode DOBERMANNS_COMBAT_PLAYER_VICTORY = new DialogueNode("Victory", "The two dobermann-boys have been defeated!", true) {
+	public static final DialogueNode DOBERMANNS_COMBAT_PLAYER_VICTORY = new DialogueNode("Победа", "Два добермана повержены!", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			Main.game.getDialogueFlags().setFlag(DialogueFlagValue.dobermannDefeatCombat, true);
@@ -881,11 +879,11 @@ public class KaysWarehouse {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Let them go", "Stand aside and let the two dobermann-boys leave.", DOBERMANNS_BANISHED);
+				return new Response("Отпустить их", "Отойди в сторону и дай двум доберманам уйти.", DOBERMANNS_BANISHED);
 				
 			} else if (index == 2) {
-				return new ResponseSex("Fuck Them",
-						"Push Wolfgang and Karl down side-by-side in the doggy-style position, ready to have some fun with them...",
+				return new ResponseSex("Трахнуть их",
+						"Повалить Вольфганга и Карла рядом друг с другом в позу догги-стайл, готовясь хорошенько развлечься с ними...",
 						null, null, null, null, null, null,
 						false, false,
 						new SMGeneric(
@@ -898,12 +896,12 @@ public class KaysWarehouse {
 						UtilText.parseFromXMLFile("places/dominion/warehouseDistrict/kaysTextiles", "OFFICE_VICTORY_FUCK_THEM"));
 				
 			} else {
-				return getDobermannsRewardSexResponse(3, index, "Submit (sex_type_replacement)");
+				return getDobermannsRewardSexResponse(3, index, "Подчиниться (sex_type_replacement)");
 			}
 		}
 	};
 	
-	public static final DialogueNode DOBERMANNS_COMBAT_PLAYER_LOSS = new DialogueNode("Defeated", "The dobermann-boys have proven to be too much for you to handle...", true) {
+	public static final DialogueNode DOBERMANNS_COMBAT_PLAYER_LOSS = new DialogueNode("Повержена", "Два добермана оказались тебе не по зубам...", true) {
 		@Override
 		public String getContent() {
 			return UtilText.parseFromXMLFile("places/dominion/warehouseDistrict/kaysTextiles", "DOBERMANNS_COMBAT_PLAYER_LOSS");
@@ -911,8 +909,8 @@ public class KaysWarehouse {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index == 1) {
-				return new ResponseSex("Fucked",
-						"Completely exhausted and utterly defeated, you're not able to offer any resistance as the two dobermann-boys prepare to fuck you...",
+				return new ResponseSex("Трахнутый",
+						"Совершенно измотанная и окончательно побежденная, ты не в силах оказать сопротивление, пока два добермана готовятся тебя оттрахать...",
 						null, null, null, null, null, null,
 						false, false,
 						new SMGeneric(
@@ -932,8 +930,8 @@ public class KaysWarehouse {
 						UtilText.parseFromXMLFile("places/dominion/warehouseDistrict/kaysTextiles", "DOBERMANNS_COMBAT_PLAYER_LOSS_FUCKED"));
 				
 			} else if(index == 2) {
-				return new ResponseSex("Eagerly fucked",
-						"Turned on from being so dominantly put in your place, you can't help but eagerly beg for the two dobermann-boys to fuck you...",
+				return new ResponseSex("Жадно оттраханная",
+						"Возбужденная тем, как властно тебя поставили на место, ты не можешь не умолять двух доберманов оттрахать тебя...",
 						null, null, null, null, null, null,
 						false, false,
 						new SMGeneric(
@@ -954,7 +952,7 @@ public class KaysWarehouse {
 				
 			} else if(index==3) {
 				if(!Main.game.isNonConEnabled()) {
-					return new Response("Refuse", "You might be defeated, but there's no way you're going to let these two brutes have their way with you!", PlaceType.DOMINION_WAREHOUSES.getDialogue(false)) {
+					return new Response("Отказаться", "Пусть ты и проиграла, но ты не позволишь этим двум громилам просто так взять свое!", PlaceType.DOMINION_WAREHOUSES.getDialogue(false)) {
 						@Override
 						public void effects() {
 							Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/warehouseDistrict/kaysTextiles", "DOBERMANNS_COMBAT_PLAYER_LOSS_THROWN_OUT"));
@@ -963,8 +961,8 @@ public class KaysWarehouse {
 					};
 					
 				} else {
-					return new ResponseSex("Resist",
-							"Despite being completely exhausted and utterly defeated, you do your best to resist as the two dobermann-boys prepare to rape you...",
+					return new ResponseSex("Сопротивляться",
+							"Несмотря на полное изнеможение и сокрушительное поражение, ты изо всех сил стараешься сопротивляться, пока два доберман-парня готовятся изнасиловать тебя...",
 							null, null, null, null, null, null,
 							false, false,
 							new SMGeneric(
@@ -988,7 +986,7 @@ public class KaysWarehouse {
 		}
 	};
 	
-	public static final DialogueNode AFTER_SEX_WILLING = new DialogueNode("Finished", "The two dobermann-boys have had enough...", true) {
+	public static final DialogueNode AFTER_SEX_WILLING = new DialogueNode("Завершено", "Двум доберман-парням уже всё надоело...", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 2*60;
@@ -1004,13 +1002,13 @@ public class KaysWarehouse {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Let them go", "Stand aside and let the two dobermann-boys leave.", DOBERMANNS_BANISHED);
+				return new Response("Отпустить их", "Отойди в сторону и дай двум доберманам уйти.", DOBERMANNS_BANISHED);
 			}
 			return null;
 		}
 	};
 	
-	public static final DialogueNode AFTER_SEX_FUCKED = new DialogueNode("Finished", "The two dobermann-boys have had their fun with you...", true) {
+	public static final DialogueNode AFTER_SEX_FUCKED = new DialogueNode("Завершено", "Два доберман-парня вдоволь натешались тобой...", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 2*60;
@@ -1022,7 +1020,7 @@ public class KaysWarehouse {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Thrown out", "Karl unceremoniously throws you out of the warehouse.", PlaceType.DOMINION_WAREHOUSES.getDialogue(false)) {
+				return new Response("Тебя вышвыривают", "Карл бесцеремонно вышвыривает тебя из склада.", PlaceType.DOMINION_WAREHOUSES.getDialogue(false)) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/warehouseDistrict/kaysTextiles", "AFTER_SEX_FUCKED_THROWN_OUT"));
@@ -1052,7 +1050,7 @@ public class KaysWarehouse {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Follow", "Follow the excitable Kay into his office.", KAY_SAVED_OFFICE) {
+				return new Response("Следовать", "Последовать за возбужденным Кеем в его кабинет.", KAY_SAVED_OFFICE) {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setLocation(WorldType.TEXTILES_WAREHOUSE, PlaceType.TEXTILE_WAREHOUSE_OFFICE, false);
@@ -1098,7 +1096,7 @@ public class KaysWarehouse {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==0) {
-				return new Response("Leave", "Exit [kay.namePos] office and head back down to the warehouse corridor.", CORRIDOR) {
+				return new Response("Уйти", "Выйти из кабинета [kay.namePos] и вернуться в коридор склада.", CORRIDOR) {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setNearestLocation(WorldType.TEXTILES_WAREHOUSE, PlaceType.TEXTILE_WAREHOUSE_CORRIDOR, false);
@@ -1108,10 +1106,10 @@ public class KaysWarehouse {
 				
 			} else if(index==1) {
 				if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.kayTalkedTo)) {
-					return new Response("Small talk", "You've already spent time talking to [kay.name] today, and as such, you don't have much more to say until tomorrow.", null);
+					return new Response("Светская беседа", "Ты уже успела поговорить с [kay.name] сегодня, так что тебе особо нечего сказать ему до завтра.", null);
 					
 				} else {
-					return new Response("Small talk", "Spend some time talking to [kay.name].", KAY_OFFICE_UTIL_EMPTY) {
+					return new Response("Светская беседа", "Немного поболтать с [kay.name].", KAY_OFFICE_UTIL_EMPTY) {
 						@Override
 						public int getSecondsPassed() {
 							return 30*60;
@@ -1148,10 +1146,10 @@ public class KaysWarehouse {
 				
 			} else if(index==2) {
 				if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.kayFlirtedWith)) {
-					return new Response("Flirt", "You've already spent time flirting with [kay.name] today. You should return tomorrow if you wanted to flirt with him some more.", null);
+					return new Response("Флиртовать", "Ты уже успела пофлиртовать с [kay.name] сегодня. Если хочешь пофлиртовать с ним еще, стоит вернуться завтра.", null);
 					
 				} else {
-					return new Response("Flirt", "Spend some time flirting with [kay.name].", KAY_OFFICE_UTIL_EMPTY) {
+					return new Response("Флиртовать", "Немного пофлиртовать с [kay.name].", KAY_OFFICE_UTIL_EMPTY) {
 						@Override
 						public int getSecondsPassed() {
 							return 20*60;
@@ -1167,17 +1165,16 @@ public class KaysWarehouse {
 				
 			} else if(index==3) {
 				if(Main.game.getNpc(Kay.class).getAffectionLevel(Main.game.getPlayer()).isLessThan(AffectionLevel.POSITIVE_FOUR_LOVE)) {
-					return new Response("Dominate",
-							"Although he clearly likes you, you can tell that [kay.name] wouldn't be comfortable with letting you sexually dominate him."
-							+ "<br/>[style.italicsMinorBad(Requires Kay to have an affection level of at least '"+AffectionLevel.POSITIVE_FOUR_LOVE.getName()+"' towards you.)]",
+					return new Response("Доминировать",
+							"Хотя он явно к тебе неравнодушен, заметно, что [kay.name] будет не по себе, если ты начнешь доминировать над ним в сексе.<br/>[style.italicsMinorBad(Требуется уровень привязанности у Кэя не ниже '"+AffectionLevel.POSITIVE_FOUR_LOVE.getName()+"' к тебе.)]",
 							null);
 					
 				} else if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.kayDommed)) {
-					return new Response("Dominate", "You've already dominated [kay.name] today, and as such he'll be far too exhausted to be of much fun until tomorrow.", null);
+					return new Response("Доминировать", "Ты уже доминировала над [kay.name] сегодня, так что он будет слишком измотан, чтобы развлекать тебя, до завтрашнего дня.", null);
 					
 				} else {
-					return new Response("Dominate",
-							"Dominate [kay.name] and make [kay.herHim] submit to you.",
+					return new Response("Доминировать",
+							"Доминируй над [kay.name] и заставь [kay.herHim] подчиниться тебе.",
 							KAY_OFFICE_DOMINATE,
 							Util.newArrayListOfValues(Fetish.FETISH_DOMINANT),
 							Fetish.FETISH_DOMINANT.getAssociatedCorruptionLevel(),
@@ -1226,7 +1223,7 @@ public class KaysWarehouse {
 		public Response getResponse(int responseTab, int index) {
 			if(!Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.kaySubmitted)) {
 				if(index==1) {
-					return new Response("[pc.Name]", "Don't give [kay.name] any special name to call you by.<br/>[style.colourMinorGood(This can be changed at any time after this scene.)]", KAY_OFFICE_DOMINATE_UTIL_EMPTY) {
+					return new Response("[pc.Name]", "Не позволяй [kay.name] называть тебя каким-то особенным именем.<br/>[style.colourMinorGood(Это можно будет изменить в любое время после этой сцены.)]", KAY_OFFICE_DOMINATE_UTIL_EMPTY) {
 						@Override
 						public void effects() {
 							Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/warehouseDistrict/kaysTextiles", "KAY_OFFICE_DOMINATE_NO_PET_NAME"));
@@ -1236,7 +1233,7 @@ public class KaysWarehouse {
 					};
 					
 				} else if(index==2) {
-					return new Response("[pc.Mistress]", "Get [kay.name] to call you '[pc.Mistress]'.<br/>[style.colourMinorGood(This can be changed at any time after this scene.)]", KAY_OFFICE_DOMINATE_UTIL_EMPTY) {
+					return new Response("[pc.Mistress]", "Заставь [kay.name] называть тебя '[pc.Mistress]'.<br/>[style.colourMinorGood(Это можно будет изменить в любое время после этой сцены.)]", KAY_OFFICE_DOMINATE_UTIL_EMPTY) {
 						@Override
 						public void effects() {
 							Main.game.getNpc(Kay.class).setPetName(Main.game.getPlayer(), "[pc.Mistress]");
@@ -1247,7 +1244,7 @@ public class KaysWarehouse {
 					};
 					
 				} else if(index==3) {
-					return new Response("[pc.Maam]", "Get [kay.name] to call you '[pc.Maam]'.<br/>[style.colourMinorGood(This can be changed at any time after this scene.)]", KAY_OFFICE_DOMINATE_UTIL_EMPTY) {
+					return new Response("[pc.Maam]", "Заставь [kay.name] называть тебя '[pc.Maam]'.<br/>[style.colourMinorGood(Это можно будет изменить в любое время после этой сцены.)]", KAY_OFFICE_DOMINATE_UTIL_EMPTY) {
 						@Override
 						public void effects() {
 							Main.game.getNpc(Kay.class).setPetName(Main.game.getPlayer(), "[pc.Maam]");
@@ -1259,7 +1256,7 @@ public class KaysWarehouse {
 					
 				} else if(index==4) {
 					String surname = (Main.game.getPlayer().getSurname()!=null && !Main.game.getPlayer().getSurname().isEmpty()?"[pc.Surname]":"[pc.Name]");
-					return new Response("[pc.Miss] "+surname,"Get [kay.name] to call you '[pc.Miss] "+surname+"'.<br/>[style.colourMinorGood(This can be changed at any time after this scene.)]", KAY_OFFICE_DOMINATE_UTIL_EMPTY) {
+					return new Response("[pc.Miss] "+surname,"Заставь [kay.name] называть тебя '[pc.Miss] "+surname+"'.<br/>[style.colourMinorGood(Это можно будет изменить в любое время после этой сцены.)]", KAY_OFFICE_DOMINATE_UTIL_EMPTY) {
 						@Override
 						public void effects() {
 							Main.game.getNpc(Kay.class).setPetName(Main.game.getPlayer(), "[pc.Miss] "+surname);
@@ -1270,7 +1267,7 @@ public class KaysWarehouse {
 					};
 					
 				} else if(index==5) {
-					return new Response("[pc.Mommy]", "Get [kay.name] to call you '[pc.Mommy]'.<br/>[style.colourMinorGood(This can be changed at any time after this scene.)]", KAY_OFFICE_DOMINATE_UTIL_EMPTY) {
+					return new Response("[pc.Mommy]", "Заставь [kay.name] называть тебя '[pc.Mommy]'.<br/>[style.colourMinorGood(Это можно будет изменить в любое время после этой сцены.)]", KAY_OFFICE_DOMINATE_UTIL_EMPTY) {
 						@Override
 						public void effects() {
 							Main.game.getNpc(Kay.class).setPetName(Main.game.getPlayer(), "[pc.Mommy]");
@@ -1285,8 +1282,8 @@ public class KaysWarehouse {
 				boolean buttplugActionAvailable = Main.game.getNpc(Kay.class).getClothingInSlot(InventorySlot.ANUS)!=null || Main.game.isAnalContentEnabled();
 				
 				if(index==0) {
-					return new Response("Leave",
-							"Having had your fun with [kay.name], it's time to leave his office.<br/>[style.italicsMinorBad(If you leave, you'll have to wait until tomorrow before being able to dominate him again!)]",
+					return new Response("Уйти",
+							"Насладившись обществом [kay.name], пора покинуть его кабинет.<br/>[style.italicsMinorBad(Если ты уйдешь, тебе придется ждать до завтра, прежде чем ты снова сможешь доминировать над ним!)]",
 							CORRIDOR) {
 						@Override
 						public void effects() {
@@ -1297,23 +1294,23 @@ public class KaysWarehouse {
 				}
 				// Standard actions:
 				if(index==1) {
-					return new Response("Pet [kay.herHim]", "Have [kay.name] kneel down beside you so that you can pet [kay.her] soft ears and hair for a while.", KAY_OFFICE_DOMINATE_PETTING);
+					return new Response("Погладить [kay.herHim]", "Заставить [kay.name] опуститься на колени рядом с тобой, чтобы можно было немного погладить мягкие ушки и волосы [kay.her].", KAY_OFFICE_DOMINATE_PETTING);
 					
 				} else if(index==2) {
-					return new Response("Get massage", "Get [kay.name] to massage your shoulders and back.", KAY_OFFICE_DOMINATE_MASSAGE);
+					return new Response("Сделать массаж", "Попросить [kay.name] размять твои плечи и спину.", KAY_OFFICE_DOMINATE_MASSAGE);
 					
 				} else if(index==3 && Main.game.isFootContentEnabled()) {
 					if(!Main.game.getPlayer().hasLegs()) {
-						return new Response("Get foot massage", "You do not have any feet for [kay.name] to massage...", null);
+						return new Response("Сделать массаж ног", "У тебя нет ног, чтобы [kay.name] могла их массировать...", null);
 					} else if(!Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.FEET, true)) {
-						return new Response("Get foot massage", "As you are unable to gain access to your [pc.feet], [kay.name] cannot give you a foot massage!", null);
+						return new Response("Сделать массаж ног", "Поскольку ты не можешь подобраться к своим [pc.feet], [kay.name] не может сделать тебе массаж ног!", null);
 					} else {
-						return new Response("Get foot massage", "Get [kay.name] to give you a foot massage.", KAY_OFFICE_DOMINATE_MASSAGE_FEET);
+						return new Response("Сделать массаж ног", "Заставить [kay.name] сделать тебе массаж ног.", KAY_OFFICE_DOMINATE_MASSAGE_FEET);
 					}
 					
 				} else if(Main.game.isFootContentEnabled()?index==4:index==3) {
-					return getKaySexResponse("Fuck [kay.herHim]",
-							"Pull [kay.name] into your embrace and tell [kay.herHim] that you're going to fuck [kay.herHim].",
+					return getKaySexResponse("Трахать [kay.herHim]",
+							"Притянуть [kay.name] к себе и сказать [kay.herHim], что ты собираешься трахать [kay.herHim].",
 							KAY_OFFICE_DOMINATE_POST_SEX,
 							UtilText.parseFromXMLFile("places/dominion/warehouseDistrict/kaysTextiles", "KAY_OFFICE_DOMINATE_FUCK"),
 							SexPosition.STANDING,
@@ -1328,33 +1325,30 @@ public class KaysWarehouse {
 				// Toys and behaviour changes:
 				if(index==6) {
 					if(Main.game.getNpc(Kay.class).getClothingInSlot(InventorySlot.PENIS)==null) {
-						return new Response("Cage: [style.colourMinorBad(Unequipped)]",
-								"[kay.Name] is currently not wearing [kay.her] chastity cage. You could change that, if you wanted to..."
-										+ "<br/>[style.italicsMinorGood(You can freely equip and remove [kay.namePos] cage at any time.)]",
+						return new Response("Клетка: [style.colourMinorBad(Не надета)]",
+								"На [kay.Name] сейчас нет клетки целомудрия [kay.her]. Ты мог бы это исправить, если захочешь...<br/>[style.italicsMinorGood(Ты можешь в любое время надевать и снимать клетку [kay.namePos].)]",
 								KAY_OFFICE_DOMINATE_CAGE);
 					} else {
-						return new Response("Cage: [style.colourMinorGood(Equipped)]",
-								"[kay.Name] is currently wearing [kay.her] chastity cage. You could take it off of [kay.herHim], if you wanted to..."
-									+ "<br/>[style.italicsMinorGood(You can freely equip and remove [kay.namePos] cage at any time.)]",
+						return new Response("Клетка: [style.colourMinorGood(Надета)]",
+								"На [kay.Name] сейчас надета клетка целомудрия [kay.her]. Ты мог бы снять её с [kay.herHim], если захочешь...<br/>[style.italicsMinorGood(Ты можешь в любое время надевать и снимать клетку [kay.namePos].)]",
 								KAY_OFFICE_DOMINATE_CAGE);
 					}
 					
 				} else if(index==7 && buttplugActionAvailable) {
 					if(Main.game.getNpc(Kay.class).getClothingInSlot(InventorySlot.ANUS)==null) {
-						return new Response("Buttplug: [style.colourMinorBad(Removed)]", "[kay.Name] is currently not wearing [kay.her] buttplug. You could change that, if you wanted to...", KAY_OFFICE_DOMINATE_BUTTPLUG);
+						return new Response("Анальная пробка: [style.colourMinorBad(Извлечена)]", "В [kay.Name] сейчас не вставлена анальная пробка [kay.her]. Ты мог бы это исправить, если захочешь...", KAY_OFFICE_DOMINATE_BUTTPLUG);
 					} else {
-						return new Response("Buttplug: [style.colourMinorGood(Inserted)]", "[kay.Name] is currently wearing [kay.her] buttplug. You could remove it, if you wanted to...", KAY_OFFICE_DOMINATE_BUTTPLUG);
+						return new Response("Анальная пробка: [style.colourMinorGood(Вставлена)]", "На [kay.Name] сейчас надета [kay.her] анальная пробка. Ты мог бы снять её, если захочешь...", KAY_OFFICE_DOMINATE_BUTTPLUG);
 					}
 					
 				} else if(buttplugActionAvailable?index==8:index==7) {
 					if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.kayFeminised)) {
-						return new Response("Clothing: [style.colourFeminine(Feminine)]",
-								"Tell [kay.name] to switch back to wearing [kay.her] old masculine suit."
-										+ "<br/>[style.italicsMinorBad([kay.Name] will revert to having [kay.her] old hairstyle and will wipe off [kay.her] makeup as part of this.)]",
+						return new Response("Одежда: [style.colourFeminine(Женская)]",
+								"Велеть [kay.name] переодеться обратно в старый мужской костюм [kay.her].<br/>[style.italicsMinorBad(В результате [kay.Name] вернется к своей старой прическе [kay.her], а макияж [kay.her] смоется.)]",
 								KAY_OFFICE_DOMINATE_CLOTHING);
 					} else {
-						return new Response("Clothing: [style.colourMasculine(Masculine)]",
-								"Tell [kay.name] that [kay.she] should find a feminine suit to wear.",
+						return new Response("Одежда: [style.colourMasculine(Мужская)]",
+								"Сказать [kay.name], что [kay.she] стоит найти женский костюм.",
 								Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.kayPreviouslyFeminised)
 									?KAY_OFFICE_DOMINATE_CLOTHING
 									:KAY_OFFICE_DOMINATE_CLOTHING_FIRST_TIME);
@@ -1362,17 +1356,17 @@ public class KaysWarehouse {
 					
 				} else if(buttplugActionAvailable?index==9:index==8) {
 					if(!Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.kayFeminised)) {
-						return new Response("Makeover", "[kay.Name] won't feel comfortable with you giving [kay.herHim] a makeover unless you've already got [kay.herHim] to wear feminine clothing!", null);
+						return new Response("Преображение", "[kay.Name] будет не по себе, если ты решишь устроить [kay.herHim] преображение, пока у неё нет [kay.herHim] для женской одежды!", null);
 						
 					} else if(!Main.game.getPlayer().hasItemType(ItemType.MAKEUP_SET)) {
-						return new Response("Makeover", "You require "+ItemType.MAKEUP_SET.getDeterminer()+" "+ItemType.MAKEUP_SET.getName(false)+" in order to do this!", null);
+						return new Response("Преображение", "Тебе требуется "+ItemType.MAKEUP_SET.getDeterminer()+" "+ItemType.MAKEUP_SET.getName(false)+" чтобы сделать это!", null);
 						
 					} else {
-						return new Response("Makeover", "Get [kay.name] to sit in [kay.her] chair while you change [kay.her] hairstyle and apply makeup to [kay.herHim].", KAY_OFFICE_DOMINATE_MAKEUP);
+						return new Response("Преображение", "Заставь [kay.name] сесть в [kay.her] стул, чтобы сменить [kay.her] прическу и нанести макияж на [kay.herHim].", KAY_OFFICE_DOMINATE_MAKEUP);
 					}
 					
 				} else if(index==10) {
-					return new Response("Naming", "Choose what name [kay.name] calls you by.", KAY_OFFICE_DOMINATE_NAMING);
+					return new Response("Имя", "Выбери, как [kay.name] будет тебя называть.", KAY_OFFICE_DOMINATE_NAMING);
 					
 				}
 			}
@@ -1423,7 +1417,7 @@ public class KaysWarehouse {
 		public Response getResponse(int responseTab, int index) {
 			List<Response> responses = new ArrayList<>();
 
-			responses.add(new Response("Stop petting", "Having had enough of petting [kay.name], you sit back in [kay.her] chair and wonder what to do next.", KAY_OFFICE_DOMINATE_UTIL_EMPTY) {
+			responses.add(new Response("Перестать ласкать", "Наласкавшись с [kay.name] досыта, ты откидываешься на [kay.her] стул и гадаешь, чем заняться дальше.", KAY_OFFICE_DOMINATE_UTIL_EMPTY) {
 				@Override
 				public void effects() {
 					Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/warehouseDistrict/kaysTextiles", "KAY_OFFICE_DOMINATE_PETTING_END"));
@@ -1431,10 +1425,10 @@ public class KaysWarehouse {
 			});
 			
 			if(isPlayerPenisFree()) {
-				responses.add(getKaySexResponse("Receive blowjob",
+				responses.add(getKaySexResponse("Получить минет",
 						Main.game.getPlayer().isTaur()
-							?"Stand up and get [kay.name] to kneel beneath your lower [pc.legRace]'s body so that [kay.she] can suck your cock."
-							:"Pull [kay.namePos] head into your lap and get [kay.herHim] to suck your cock.",
+							?"Встань и заставь [kay.name] опуститься на колени перед твоей нижней частью [pc.legRace], чтобы [kay.she] могла отсосать твой член."
+							:"Притяни голову [kay.namePos] к себе на колени и заставь [kay.herHim] отсосать твой член.",
 						KAY_OFFICE_DOMINATE_POST_SEX,
 						UtilText.parseFromXMLFile("places/dominion/warehouseDistrict/kaysTextiles", "KAY_OFFICE_DOMINATE_PETTING_BLOWJOB"),
 						Main.game.getPlayer().isTaur()
@@ -1452,14 +1446,14 @@ public class KaysWarehouse {
 						Util.newArrayListOfValues(new InitialSexActionInformation(Main.game.getPlayer(), Main.game.getNpc(Kay.class), PenisMouth.BLOWJOB_START, false, true))));
 				
 			} else {
-				responses.add(new Response("Receive blowjob", "You require a penis and access to it in able to receive a blowjob from [kay.name].", null));
+				responses.add(new Response("Получить минет", "Чтобы получить минет от [kay.name], тебе необходим пенис и доступ к нему.", null));
 			}
 			
 			if(isPlayerVaginaFree()) {
-				responses.add(getKaySexResponse("Receive cunnilingus",
+				responses.add(getKaySexResponse("Принять куннилингус",
 						Main.game.getPlayer().isTaur()
-							?"Stand up and get [kay.name] to kneel behind your lower [pc.legRace]'s body so that [kay.she] can eat you out."
-							:"Pull [kay.namePos] head into your lap and get [kay.herHim] to eat you out.",
+							?"Встань и заставь [kay.name] опуститься на колени позади твоей нижней части [pc.legRace], чтобы [kay.she] могла отлизать тебя."
+							:"Притяни голову [kay.namePos] к себе на колени и заставь [kay.herHim] отлизать тебя.",
 						KAY_OFFICE_DOMINATE_POST_SEX,
 						UtilText.parseFromXMLFile("places/dominion/warehouseDistrict/kaysTextiles", "KAY_OFFICE_DOMINATE_PETTING_CUNNILINGUS"),
 						Main.game.getPlayer().isTaur()
@@ -1477,10 +1471,10 @@ public class KaysWarehouse {
 						Util.newArrayListOfValues(new InitialSexActionInformation(Main.game.getPlayer(), Main.game.getNpc(Kay.class), TongueVagina.RECEIVING_CUNNILINGUS_START, false, true))));
 				
 				if(Main.game.getPlayer().isClitorisPseudoPenis()) {
-					responses.add(getKaySexResponse("Clit sucked",
+					responses.add(getKaySexResponse("Клитор отсосан",
 							Main.game.getPlayer().isTaur()
-								?"Stand up and get [kay.name] to kneel behind your lower [pc.legRace]'s body so that [kay.she] can suck your [pc.clitSize] clit."
-								:"Pull [kay.namePos] head into your lap and get [kay.herHim] to suck your [pc.clitSize] clit.",
+								?"Встань и заставь [kay.name] опуститься на колени позади твоего нижнего [pc.legRace], чтобы [kay.she] могла сосать твой [pc.clitSize] клитор."
+								:"Притяни голову [kay.namePos] к себе на колени и заставь [kay.herHim] сосать твой [pc.clitSize] клитор.",
 							KAY_OFFICE_DOMINATE_POST_SEX,
 							UtilText.parseFromXMLFile("places/dominion/warehouseDistrict/kaysTextiles", "KAY_OFFICE_DOMINATE_PETTING_CLIT_SUCK"),
 							Main.game.getPlayer().isTaur()
@@ -1497,12 +1491,12 @@ public class KaysWarehouse {
 							Util.newArrayListOfValues(CoverableArea.VAGINA),
 							Util.newArrayListOfValues(new InitialSexActionInformation(Main.game.getPlayer(), Main.game.getNpc(Kay.class), ClitMouth.CLIT_ORAL_START, false, true))));
 				} else {
-					responses.add(new Response("Clit sucked", "You require a clit of at least size '"+ClitorisSize.getMinimumClitorisSizeForPseudoPenis()+"' before you are able to get it sucked by [kay.name].", null));
+					responses.add(new Response("Клитор отсосан", "Тебе требуется клитор размером не меньше '"+ClitorisSize.getMinimumClitorisSizeForPseudoPenis()+"', прежде чем [kay.name] сможет его отсосать.", null));
 				}
 				
 			} else {
-				responses.add(new Response("Receive cunnilingus", "You require a pussy and access to it before you are able to receive cunnilingus from [kay.name].", null));
-				responses.add(new Response("Clit sucked", "You require a pussy, a clit of at least size '"+ClitorisSize.getMinimumClitorisSizeForPseudoPenis()+"', and access to it before you are able to get it sucked by [kay.name].", null));
+				responses.add(new Response("Принять куннилингус", "Тебе требуется киска и доступ к ней, прежде чем ты сможешь получить куннилингус от [kay.name].", null));
+				responses.add(new Response("Клитор отсосан", "Тебе требуется киска, клитор размером не меньше '"+ClitorisSize.getMinimumClitorisSizeForPseudoPenis()+"', и доступ к ней, прежде чем [kay.name] сможет его отсосать.", null));
 			}
 			
 			for(int i=0;i<responses.size();i++) {
@@ -1532,7 +1526,7 @@ public class KaysWarehouse {
 		public Response getResponse(int responseTab, int index) {
 			List<Response> responses = new ArrayList<>();
 
-			responses.add(new Response("Stop massage", "Tell [kay.name] that [kay.sheHas] done an excellent job, but that you've had enough of [kay.her] massaging for now.", KAY_OFFICE_DOMINATE_UTIL_EMPTY) {
+			responses.add(new Response("Прекратить массаж", "Сказать [kay.name], что [kay.sheHas] проделала отличную работу, но на данный момент с [kay.her] тебе хватит.", KAY_OFFICE_DOMINATE_UTIL_EMPTY) {
 				@Override
 				public void effects() {
 					Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/warehouseDistrict/kaysTextiles", "KAY_OFFICE_DOMINATE_MASSAGE_END"));
@@ -1540,13 +1534,13 @@ public class KaysWarehouse {
 			});
 			
 			if(isPlayerPenisFree() || isPlayerVaginaFree()) {
-				responses.add(getKaySexResponse("Groin 'massage'",
-						"Tell [kay.name] to move [kay.her] attention down to your groin and "
+				responses.add(getKaySexResponse("«Массаж» паха",
+						"Сказать [kay.name], чтобы она переместила внимание [kay.her] на твой пах и "
 						+(isPlayerPenisFree() && isPlayerVaginaFree()
-							?"finger you while also giving you a handjob."
+							?"ласкала тебя пальцами, одновременно делая тебе минет/мастурбируя."
 							:(isPlayerPenisFree()
-								?"give you a handjob."
-								:"finger you.")),
+								?"сделала тебе минет/мастурбировала."
+								:"ласкала тебя пальцами.")),
 						KAY_OFFICE_DOMINATE_POST_SEX,
 						UtilText.parseFromXMLFile("places/dominion/warehouseDistrict/kaysTextiles", "KAY_OFFICE_DOMINATE_MASSAGE_GROIN"),
 						Main.game.getPlayer().isTaur()
@@ -1572,12 +1566,12 @@ public class KaysWarehouse {
 									:null))));
 				
 			} else {
-				responses.add(new Response("Groin 'massage'", "You require a penis or a vagina, as well as access to them, before you're able to receive a groin 'massage' from [kay.name].", null));
+				responses.add(new Response("«Массаж» паха", "Чтобы получить «массаж» паха от [kay.name], тебе необходим пенис или влагалище, а также доступ к ним.", null));
 			}
 
 			if(isPlayerVaginaFree()) {
-				responses.add(getKaySexResponse("Cunnilingus",
-						"Get [kay.name] to drop down behind you and eat you out.",
+				responses.add(getKaySexResponse("Куннилингус",
+						"Заставить [kay.name] опуститься позади тебя и отсосать/полизать тебя.",
 						KAY_OFFICE_DOMINATE_POST_SEX,
 						UtilText.parseFromXMLFile("places/dominion/warehouseDistrict/kaysTextiles", "KAY_OFFICE_DOMINATE_MASSAGE_CUNNILINGUS"),
 						Main.game.getPlayer().isTaur()
@@ -1595,13 +1589,13 @@ public class KaysWarehouse {
 						Util.newArrayListOfValues(new InitialSexActionInformation(Main.game.getNpc(Kay.class), Main.game.getPlayer(), TongueVagina.CUNNILINGUS_START, false, true))));
 				
 			} else {
-				responses.add(new Response("Cunnilingus", "You require a vagina, as well as access to it, before you're able to receive cunnilingus from [kay.name].", null));
+				responses.add(new Response("Куннилингус", "Чтобы получить куннилингус от [kay.name], вам необходима вагина и доступ к ней.", null));
 			}
 			
 			if(Main.game.isAnalContentEnabled()) {
 				if(isPlayerAssFree()) {
-					responses.add(getKaySexResponse("Anilingus",
-							"Get [kay.name] to drop down behind you and perform anilingus.",
+					responses.add(getKaySexResponse("Анилингус",
+							"Заставьте [kay.name] опуститься позади вас и заняться анилингусом.",
 							KAY_OFFICE_DOMINATE_POST_SEX,
 							UtilText.parseFromXMLFile("places/dominion/warehouseDistrict/kaysTextiles", "KAY_OFFICE_DOMINATE_MASSAGE_ANILINGUS"),
 							Main.game.getPlayer().isTaur()
@@ -1619,19 +1613,19 @@ public class KaysWarehouse {
 							Util.newArrayListOfValues(new InitialSexActionInformation(Main.game.getNpc(Kay.class), Main.game.getPlayer(), TongueAnus.ANILINGUS_START, false, true))));
 					
 				} else {
-					responses.add(new Response("Anilingus", "You require access to your anus in order to receive cunnilingus from [kay.name].", null));
+					responses.add(new Response("Анилингус", "Чтобы получить куннилингус от [kay.name], вам необходим доступ к анусу.", null));
 				}
 			}
 			
 			if(!isPlayerVaginaFree()) {
-				responses.add(new Response("Fucked", "You require a vagina, as well as access to it, in order to get fucked by [kay.name].", null));
+				responses.add(new Response("Трахнутый", "Чтобы [kay.name] оттрахал вас, вам необходима вагина и доступ к ней.", null));
 				
 			} else if(!Main.game.getNpc(Kay.class).isAbleToAccessCoverableArea(CoverableArea.PENIS, true)) {
-				responses.add(new Response("Fucked", "As [kay.namePos] cock is locked away in [kay.her] chastity cage, [kay.she] is unable to fuck you!", null));
+				responses.add(new Response("Трахнутый", "Так как член [kay.namePos] заперт в девственной клетке [kay.her], [kay.she] не может трахать вас!", null));
 				
 			} else {
-				responses.add(getKaySexResponse("Fucked",
-						"Get [kay.name] to move up behind you and fuck you.",
+				responses.add(getKaySexResponse("Трахнутый",
+						"Заставьте [kay.name] подняться позади вас и оттрахать вас.",
 						KAY_OFFICE_DOMINATE_POST_SEX,
 						UtilText.parseFromXMLFile("places/dominion/warehouseDistrict/kaysTextiles", "KAY_OFFICE_DOMINATE_MASSAGE_VAGINAL"),
 						Main.game.getPlayer().isTaur()
@@ -1662,14 +1656,14 @@ public class KaysWarehouse {
 			
 			if(Main.game.isAnalContentEnabled()) {
 				if(!isPlayerAssFree()) {
-					responses.add(new Response("Fucked (anal)", "You require access to your anus in order to receive anal from [kay.name].", null));
+					responses.add(new Response("Трахали (анально)", "Чтобы получить анальный секс от [kay.name], вам необходим доступ к анусу.", null));
 					
 				} else if(!Main.game.getNpc(Kay.class).isAbleToAccessCoverableArea(CoverableArea.PENIS, true)) {
-					responses.add(new Response("Fucked (anal)", "As [kay.namePos] cock is locked away in [kay.her] chastity cage, [kay.she] is unable to fuck your ass!", null));
+					responses.add(new Response("Трахали (анально)", "Так как член [kay.namePos] заперт в девственной клетке [kay.her], [kay.she] не может трахать ваш зад!", null));
 					
 				} else {
-					responses.add(getKaySexResponse("Fucked (anal)",
-							"Get [kay.name] to move up behind you and fuck your ass.",
+					responses.add(getKaySexResponse("Трахали (анально)",
+							"Заставьте [kay.name] подняться позади вас и оттрахать ваш зад.",
 							KAY_OFFICE_DOMINATE_POST_SEX,
 							UtilText.parseFromXMLFile("places/dominion/warehouseDistrict/kaysTextiles", "KAY_OFFICE_DOMINATE_MASSAGE_ANAL"),
 							Main.game.getPlayer().isTaur()
@@ -1725,7 +1719,7 @@ public class KaysWarehouse {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Stop massage", "Tell [kay.name] that [kay.sheHas] done an excellent job, but that you've had enough of [kay.her] massaging for now.", KAY_OFFICE_DOMINATE_UTIL_EMPTY) {
+				return new Response("Прекратить массаж", "Сказать [kay.name], что [kay.sheHas] проделала отличную работу, но на данный момент с [kay.her] тебе хватит.", KAY_OFFICE_DOMINATE_UTIL_EMPTY) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/warehouseDistrict/kaysTextiles", "KAY_OFFICE_DOMINATE_MASSAGE_FEET_END"));
@@ -1733,8 +1727,8 @@ public class KaysWarehouse {
 				};
 				
 			} else if(index==2) {
-				return getKaySexResponse("[pc.Foot(true)] worship",
-						"Get [kay.name] to orally worship your [pc.feet+(true)].",
+				return getKaySexResponse("[pc.Foot(true)] поклоняться",
+						"Заставить [kay.name] восторженно воспевать твои [pc.feet+(true)] губами.",
 						KAY_OFFICE_DOMINATE_POST_SEX,
 						UtilText.parseFromXMLFile("places/dominion/warehouseDistrict/kaysTextiles", "KAY_OFFICE_DOMINATE_MASSAGE_FEET_FOOT_WORSHIP"),
 						Main.game.getPlayer().isTaur()
@@ -1753,11 +1747,11 @@ public class KaysWarehouse {
 				
 			} else if(index==3) {
 				if(!Main.game.getNpc(Kay.class).isAbleToAccessCoverableArea(CoverableArea.PENIS, true)) {
-					return new Response("[pc.Footjob]", "As [kay.namePos] cock is locked away in [kay.her] chastity cage, you are unable to give [kay.herHim] a [pc.footjob]!", null);
+					return new Response("[pc.Footjob]", "Поскольку член [kay.namePos] заперт в [kay.her] девственной клетке, ты не можешь подарить [kay.herHim] [pc.footjob]!", null);
 					
 				} else {
 					return getKaySexResponse("[pc.Footjob]",
-							"Get [kay.name] to present you with [kay.her] cock so that you can reward [kay.herHim] with a [pc.footjob].",
+							"Заставить [kay.name] выставить тебе [kay.her] член, чтобы ты могла наградить [kay.herHim] за [pc.footjob].",
 							KAY_OFFICE_DOMINATE_POST_SEX,
 							UtilText.parseFromXMLFile("places/dominion/warehouseDistrict/kaysTextiles", "KAY_OFFICE_DOMINATE_MASSAGE_FEET_FOOTJOB"),
 							Main.game.getPlayer().isTaur()
@@ -1812,7 +1806,7 @@ public class KaysWarehouse {
 			if(Main.game.getNpc(Kay.class).getClothingInSlot(InventorySlot.PENIS)==null) { // Taken cage off:
 				List<Response> responses = new ArrayList<>();
 
-				responses.add(new Response("Sit back", "Sit back and let [kay.name] pull [kay.her] trousers back up.", KAY_OFFICE_DOMINATE_UTIL_EMPTY) {
+				responses.add(new Response("Откинуться назад", "Откинуться назад и позволить [kay.name] натянуть [kay.her] брюки обратно.", KAY_OFFICE_DOMINATE_UTIL_EMPTY) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/warehouseDistrict/kaysTextiles", "KAY_OFFICE_DOMINATE_CAGE_SIT_BACK"));
@@ -1820,8 +1814,8 @@ public class KaysWarehouse {
 				});
 				
 				if(!Main.game.getPlayer().isTaur()) {
-					responses.add(getKaySexResponse("Pull into lap",
-							"Pull [kay.name] into your lap and tell [kay.herHim] that you're going to fuck [kay.herHim].",
+					responses.add(getKaySexResponse("Притянуть к себе на колени",
+							"Притянуть [kay.name] к себе на колени и сказать [kay.herHim], что ты собираешься трахнуть [kay.herHim].",
 							KAY_OFFICE_DOMINATE_POST_SEX,
 							UtilText.parseFromXMLFile("places/dominion/warehouseDistrict/kaysTextiles", "KAY_OFFICE_DOMINATE_CAGE_LAP"),
 							SexPosition.SITTING,
@@ -1832,12 +1826,12 @@ public class KaysWarehouse {
 							Util.newArrayListOfValues(),
 							Util.newArrayListOfValues()));
 				} else {
-					responses.add(new Response("Pull into lap", "As you have the lower body of [pc.a_legRace], you cannot pull [kay.name] into your lap!", null));
+					responses.add(new Response("Притянуть к себе на колени", "Так как у тебя нижняя часть тела как у [pc.a_legRace], ты не можешь притянуть [kay.name] к себе на колени!", null));
 				}
 
 				if(Main.game.isAnalContentEnabled()) {
-					responses.add(getKaySexResponse("Push over desk",
-							"Push [kay.name] over [kay.her] desk and tell [kay.herHim] that you're going to fuck [kay.herHim].",
+					responses.add(getKaySexResponse("Перевалить через стол",
+							"Толкнуть [kay.name] на стол [kay.her] и сказать [kay.herHim], что ты собираешься трахнуть [kay.herHim].",
 							KAY_OFFICE_DOMINATE_POST_SEX,
 							UtilText.parseFromXMLFile("places/dominion/warehouseDistrict/kaysTextiles", "KAY_OFFICE_DOMINATE_CAGE_DESK"),
 							SexPosition.OVER_DESK,
@@ -1849,8 +1843,8 @@ public class KaysWarehouse {
 							Util.newArrayListOfValues()));
 				}
 
-				responses.add(getKaySexResponse("Handjob",
-						"Reward [kay.name] by taking hold of [kay.her] cock and jerking [kay.herHim] off.",
+				responses.add(getKaySexResponse("Ручная стимуляция",
+						"Вознаградить [kay.name], взявшись за член [kay.her] и отсосав [kay.herHim].",
 						KAY_OFFICE_DOMINATE_POST_SEX,
 						UtilText.parseFromXMLFile("places/dominion/warehouseDistrict/kaysTextiles", "KAY_OFFICE_DOMINATE_CAGE_HANDJOB"),
 						SexPosition.STANDING,
@@ -1862,8 +1856,8 @@ public class KaysWarehouse {
 						Util.newArrayListOfValues(new InitialSexActionInformation(Main.game.getPlayer(), Main.game.getNpc(Kay.class), FingerPenis.COCK_MASTURBATING_START, false, true))));
 
 				if(isPlayerMouthFree()) {
-					responses.add(getKaySexResponse("Suck cock",
-							"Reward [kay.name] by leaning forwards and sucking [kay.her] cock.",
+					responses.add(getKaySexResponse("Сосать член",
+							"Вознаградить [kay.name], наклонившись вперед и посасывая член [kay.her].",
 							KAY_OFFICE_DOMINATE_POST_SEX,
 							UtilText.parseFromXMLFile("places/dominion/warehouseDistrict/kaysTextiles", "KAY_OFFICE_DOMINATE_CAGE_BLOWJOB"),
 							SexPosition.STANDING,
@@ -1875,15 +1869,15 @@ public class KaysWarehouse {
 							Util.newArrayListOfValues(new InitialSexActionInformation(Main.game.getPlayer(), Main.game.getNpc(Kay.class), PenisMouth.GIVING_BLOWJOB_START, false, true))));
 					
 				} else {
-					responses.add(new Response("Suck cock", "You cannot gain access to your mouth, and so are not able to suck [kay.namePos] cock.", null));
+					responses.add(new Response("Сосать член", "Ты не можешь дотянуться до своего рта, поэтому не можешь сосать член [kay.namePos].", null));
 				}
 
 				if(!isPlayerVaginaFree()) {
-					responses.add(new Response("Humped", "You require a vagina, as well as access to it, in order to get fucked by [kay.name].", null));
+					responses.add(new Response("Трахнутая", "Чтобы [kay.name] оттрахал вас, вам необходима вагина и доступ к ней.", null));
 					
 				} else {
-					responses.add(getKaySexResponse("Humped",
-							"Present yourself to [kay.name] and let [kay.herHim] fuck your pussy.",
+					responses.add(getKaySexResponse("Трахнутый",
+							"Предстать перед [kay.name] и позволить [kay.herHim] трахать твою киску.",
 							KAY_OFFICE_DOMINATE_POST_SEX,
 							UtilText.parseFromXMLFile("places/dominion/warehouseDistrict/kaysTextiles", "KAY_OFFICE_DOMINATE_CAGE_VAGINAL"),
 							SexPosition.ALL_FOURS,
@@ -1897,11 +1891,11 @@ public class KaysWarehouse {
 				
 				if(Main.game.isAnalContentEnabled()) {
 					if(!isPlayerAssFree()) {
-						responses.add(new Response("Humped (anal)", "You require access to your anus in order to receive anal from [kay.name].", null));
+						responses.add(new Response("Трахнутая (анально)", "Чтобы получить анальный секс от [kay.name], вам необходим доступ к анусу.", null));
 						
 					} else {
-						responses.add(getKaySexResponse("Humped (anal)",
-								"Present yourself to [kay.name] and let [kay.herHim] fuck your ass.",
+						responses.add(getKaySexResponse("Трахнутый (анально)",
+								"Предстать перед [kay.name] и позволить [kay.herHim] трахать твою задницу.",
 								KAY_OFFICE_DOMINATE_POST_SEX,
 								UtilText.parseFromXMLFile("places/dominion/warehouseDistrict/kaysTextiles", "KAY_OFFICE_DOMINATE_CAGE_ANAL"),
 								SexPosition.ALL_FOURS,
@@ -1959,7 +1953,7 @@ public class KaysWarehouse {
 			if(Main.game.getNpc(Kay.class).getClothingInSlot(InventorySlot.ANUS)==null) {
 				List<Response> responses = new ArrayList<>();
 
-				responses.add(new Response("Sit back", "Sit back and let [kay.name] pull [kay.her] trousers back up.", KAY_OFFICE_DOMINATE_UTIL_EMPTY) {
+				responses.add(new Response("Откинуться назад", "Откинуться назад и позволить [kay.name] натянуть [kay.her] брюки обратно.", KAY_OFFICE_DOMINATE_UTIL_EMPTY) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/warehouseDistrict/kaysTextiles", "KAY_OFFICE_DOMINATE_BUTTPLUG_SIT_BACK"));
@@ -1967,8 +1961,8 @@ public class KaysWarehouse {
 				});
 				
 				if(!Main.game.getPlayer().isTaur()) {
-					responses.add(getKaySexResponse("Pull into lap",
-							"Pull [kay.name] into your lap and tell [kay.herHim] that you're going to fuck [kay.herHim].",
+					responses.add(getKaySexResponse("Притянуть к себе на колени",
+							"Притянуть [kay.name] к себе на колени и сказать [kay.herHim], что ты собираешься трахнуть [kay.herHim].",
 							KAY_OFFICE_DOMINATE_POST_SEX,
 							UtilText.parseFromXMLFile("places/dominion/warehouseDistrict/kaysTextiles", "KAY_OFFICE_DOMINATE_BUTTPLUG_LAP"),
 							SexPosition.SITTING,
@@ -1979,13 +1973,13 @@ public class KaysWarehouse {
 							Util.newArrayListOfValues(),
 							Util.newArrayListOfValues()));
 				} else {
-					responses.add(new Response("Pull into lap", "As you have the lower body of [pc.a_legRace], you cannot pull [kay.name] into your lap!", null));
+					responses.add(new Response("Притянуть к себе на колени", "Так как у тебя нижняя часть тела как у [pc.a_legRace], ты не можешь притянуть [kay.name] к себе на колени!", null));
 				}
 				
 				if(Main.game.isAnalContentEnabled()) {
 					if(isPlayerMouthFree()) {
-						responses.add(getKaySexResponse("Desk anilingus",
-								"Push [kay.name] over [kay.her] desk and start eating [kay.her] ass.",
+						responses.add(getKaySexResponse("Анилингус на столе",
+								"Толкнуть [kay.name] на стол [kay.her] и начать сосать [kay.her] анус.",
 								KAY_OFFICE_DOMINATE_POST_SEX,
 								UtilText.parseFromXMLFile("places/dominion/warehouseDistrict/kaysTextiles", "KAY_OFFICE_DOMINATE_BUTTPLUG_DESK_ANILINGUS"),
 								SexPosition.OVER_DESK,
@@ -1997,12 +1991,12 @@ public class KaysWarehouse {
 								Util.newArrayListOfValues(new InitialSexActionInformation(Main.game.getPlayer(), Main.game.getNpc(Kay.class), TongueAnus.ANILINGUS_START, false, true))));
 						
 					} else {
-						responses.add(new Response("Desk anilingus", "You cannot gain access to your mouth, and so are not able to perform anilingus on [kay.name].", null));
+						responses.add(new Response("Анилингус на столе", "Ваш рот чем-то занят, поэтому вы не можете заняться анилингусом с [kay.name].", null));
 					}
 					
 					if(isPlayerPenisFree()) {
-						responses.add(getKaySexResponse("Desk anal",
-								"Push [kay.name] over [kay.her] desk and fuck [kay.her] ass.",
+						responses.add(getKaySexResponse("Анальный секс на столе",
+								"Толкнуть [kay.name] на стол [kay.her] и трахнуть [kay.her] в зад.",
 								KAY_OFFICE_DOMINATE_POST_SEX,
 								UtilText.parseFromXMLFile("places/dominion/warehouseDistrict/kaysTextiles", "KAY_OFFICE_DOMINATE_BUTTPLUG_DESK_FUCK"),
 								SexPosition.OVER_DESK,
@@ -2014,7 +2008,7 @@ public class KaysWarehouse {
 								Util.newArrayListOfValues(new InitialSexActionInformation(Main.game.getPlayer(), Main.game.getNpc(Kay.class), PenisAnus.PENIS_FUCKING_START, false, true))));
 						
 					} else {
-						responses.add(new Response("Desk fuck", "You require a penis, as well as access to it, in order to anally fuck [kay.name].", null));
+						responses.add(new Response("Секс на столе", "Чтобы трахнуть [kay.name] в зад, вам необходим пенис и свободный доступ к нему.", null));
 					}
 				}
 
@@ -2044,7 +2038,7 @@ public class KaysWarehouse {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue", "Tell Kay to get changed into 'her' new set of clothing...", KAY_OFFICE_DOMINATE_CLOTHING);
+				return new Response("Продолжить", "Попросить Кей переодеться в «её» новый комплект одежды...", KAY_OFFICE_DOMINATE_CLOTHING);
 				
 			}
 			return null;
@@ -2061,7 +2055,7 @@ public class KaysWarehouse {
 			if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.kayFeminised)) {
 				Main.game.getTextEndStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/warehouseDistrict/kaysTextiles", "KAY_OFFICE_DOMINATE_CLOTHING_MASCULINE"));
 				Main.game.getNpc(Kay.class).removeAllMakeup();
-				Main.game.getNpc(Kay.class).setName(new NameTriplet("Jack", "Jack", "Jackie"));
+				Main.game.getNpc(Kay.class).setName(new NameTriplet("Джек", "Джек", "Джеки"));
 				Main.game.getNpc(Kay.class).setHairStyle(HairStyle.LOOSE);
 				Main.game.getDialogueFlags().setFlag(DialogueFlagValue.kayFeminised, false);
 				Main.game.getNpc(Kay.class).equipClothing(EquipClothingSetting.getAllClothingSettings());
@@ -2085,10 +2079,10 @@ public class KaysWarehouse {
 		public Response getResponse(int responseTab, int index) {
 			if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.kayFeminised)) {
 				if(index==1) {
-					return new Response("Kay", "Keep calling the cute cat-girl by her surname and tell her that she looks very pretty.", KAY_OFFICE_DOMINATE_UTIL_EMPTY) {
+					return new Response("Кей", "Продолжать называть милую кошкодевочку по фамилии и говорить ей, что она выглядит очень прелестно.", KAY_OFFICE_DOMINATE_UTIL_EMPTY) {
 						@Override
 						public void effects() {
-							Main.game.getNpc(Kay.class).setName(new NameTriplet("Jack", "Jack", "Jackie"));
+							Main.game.getNpc(Kay.class).setName(new NameTriplet("Джек", "Джек", "Джеки"));
 							Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/warehouseDistrict/kaysTextiles", "KAY_OFFICE_DOMINATE_CLOTHING_NAME_START"));
 							Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/warehouseDistrict/kaysTextiles", "KAY_OFFICE_DOMINATE_CLOTHING_NAME_END"));
 							Main.game.getDialogueFlags().setFlag(DialogueFlagValue.kayPreviouslyFeminised, true);
@@ -2096,13 +2090,12 @@ public class KaysWarehouse {
 					};
 					
 				} else if(index==2) {
-					return new Response("Jackie",
-							"Tell the cute [kay.race] that she looks very pretty, and that the name of 'Jackie' is more suitable for [kay.herHim] when [kay.she] looks like this."
-							+ "<br/>[style.colourFeminine(Kay will be renamed to 'Jackie' until (if ever) you tell [kay.herHim] to start wearing masculine clothing again.)]",
+					return new Response("Джеки",
+							"Скажи милой [kay.race], что она выглядит очень прелестно, и что имя «Джеки» больше подходит [kay.herHim], когда [kay.she] выглядит вот так.<br/>[style.colourFeminine(Кей будет зваться «Джеки», пока (если вообще) ты не скажешь [kay.herHim] снова начать носить мужскую одежду.)]",
 							KAY_OFFICE_DOMINATE_UTIL_EMPTY) {
 						@Override
 						public void effects() {
-							Main.game.getNpc(Kay.class).setName(new NameTriplet("Jackie", "Jackie", "Jackie"));
+							Main.game.getNpc(Kay.class).setName(new NameTriplet("Джеки", "Джеки", "Джеки"));
 							Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/warehouseDistrict/kaysTextiles", "KAY_OFFICE_DOMINATE_CLOTHING_NAME_START"));
 							Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/warehouseDistrict/kaysTextiles", "KAY_OFFICE_DOMINATE_CLOTHING_NAME_MID"));
 							Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/warehouseDistrict/kaysTextiles", "KAY_OFFICE_DOMINATE_CLOTHING_NAME_JACKIE"));
@@ -2112,13 +2105,12 @@ public class KaysWarehouse {
 					};
 					
 				} else if(index==3) {
-					return new Response("Kaytie",
-							"Tell the cute [kay.race] that she looks very pretty, and that the name of 'Kaytie' is more suitable for [kay.herHim] when [kay.she] looks like this."
-							+ "<br/>[style.colourFeminine(Kay will be renamed to 'Kaytie' until (if ever) you tell [kay.herHim] to start wearing masculine clothing again.)]",
+					return new Response("Кейти",
+							"Скажи милой [kay.race], что она выглядит очень прелестно, и что имя «Кейти» больше подходит [kay.herHim], когда [kay.she] выглядит вот так.<br/>[style.colourFeminine(Кей будет зваться «Кейти», пока (если вообще) ты не скажешь [kay.herHim] снова начать носить мужскую одежду.)]",
 							KAY_OFFICE_DOMINATE_UTIL_EMPTY) {
 						@Override
 						public void effects() {
-							Main.game.getNpc(Kay.class).setName(new NameTriplet("Kaytie", "Kaytie", "Kaytie"));
+							Main.game.getNpc(Kay.class).setName(new NameTriplet("Кейти", "Кейти", "Кейти"));
 							Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/warehouseDistrict/kaysTextiles", "KAY_OFFICE_DOMINATE_CLOTHING_NAME_START"));
 							Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/warehouseDistrict/kaysTextiles", "KAY_OFFICE_DOMINATE_CLOTHING_NAME_MID"));
 							Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/warehouseDistrict/kaysTextiles", "KAY_OFFICE_DOMINATE_CLOTHING_NAME_KAYTIE"));
@@ -2128,13 +2120,12 @@ public class KaysWarehouse {
 					};
 					
 				} else if(index==4) {
-					return new Response("Mikayla",
-							"Tell the cute [kay.race] that she looks very pretty, and that the name of 'Mikayla' is more suitable for [kay.herHim] when [kay.she] looks like this."
-							+ "<br/>[style.colourFeminine(Kay will be renamed to 'Mikayla' until (if ever) you tell [kay.herHim] to start wearing masculine clothing again.)]",
+					return new Response("Микайла",
+							"Скажи милой [kay.race], что она выглядит очень прелестно, и что имя «Микаэла» больше подходит [kay.herHim], когда [kay.she] выглядит вот так.<br/>[style.colourFeminine(Кей будет зваться «Микаэла», пока (если вообще) ты не скажешь [kay.herHim] снова начать носить мужскую одежду.)]",
 							KAY_OFFICE_DOMINATE_UTIL_EMPTY) {
 						@Override
 						public void effects() {
-							Main.game.getNpc(Kay.class).setName(new NameTriplet("Mikayla", "Mikayla", "Mikayla"));
+							Main.game.getNpc(Kay.class).setName(new NameTriplet("Микайла", "Микайла", "Микайла"));
 							Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/warehouseDistrict/kaysTextiles", "KAY_OFFICE_DOMINATE_CLOTHING_NAME_START"));
 							Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/warehouseDistrict/kaysTextiles", "KAY_OFFICE_DOMINATE_CLOTHING_NAME_MID"));
 							Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/warehouseDistrict/kaysTextiles", "KAY_OFFICE_DOMINATE_CLOTHING_NAME_MIKAYLA"));
@@ -2163,25 +2154,25 @@ public class KaysWarehouse {
 
 			sb.append(UtilText.parseFromXMLFile("places/dominion/warehouseDistrict/kaysTextiles", "KAY_OFFICE_DOMINATE_MAKEUP"));
 					
-			sb.append(CharacterModificationUtils.getSelfDivHairStyles("Hair Style", UtilText.parse(BodyChanging.getTarget(), "Change [npc.namePos] hair style."))
+			sb.append(CharacterModificationUtils.getSelfDivHairStyles("Прическа", UtilText.parse(BodyChanging.getTarget(), "Изменить прическу [npc.namePos]."))
 					
 					+CharacterModificationUtils.getKatesDivCoveringsNew(
-							false, Race.NONE, BodyCoveringType.MAKEUP_BLUSHER, "Blusher", "Blusher (also called rouge) is used to colour the cheeks so as to provide a more youthful appearance, and to emphasise the cheekbones.", true, true)
+							false, Race.NONE, BodyCoveringType.MAKEUP_BLUSHER, "Румяна", "Румяна (также называемые руж) используются для придания щекам цвета, чтобы придать лицу более юный вид и подчеркнуть скулы.", true, true)
 					
 					+CharacterModificationUtils.getKatesDivCoveringsNew(
-							false, Race.NONE, BodyCoveringType.MAKEUP_LIPSTICK, "Lipstick", "Lipstick is used to provide colour, texture, and protection to the wearer's lips.", true, true)
+							false, Race.NONE, BodyCoveringType.MAKEUP_LIPSTICK, "Помада", "Помада используется для придания губам цвета, текстуры и защиты.", true, true)
 					
 					+CharacterModificationUtils.getKatesDivCoveringsNew(
-							false, Race.NONE, BodyCoveringType.MAKEUP_EYE_LINER, "Eyeliner", "Eyeliner is applied around the contours of the eyes to help to define shape or highlight different features.", true, true)
+							false, Race.NONE, BodyCoveringType.MAKEUP_EYE_LINER, "Подводка для глаз", "Подводка наносится по контуру глаз, чтобы подчеркнуть их форму или выделить отдельные черты.", true, true)
 					
 					+CharacterModificationUtils.getKatesDivCoveringsNew(
-							false, Race.NONE, BodyCoveringType.MAKEUP_EYE_SHADOW, "Eye shadow", "Eye shadow is used to make the wearer's eyes stand out or look more attractive.", true, true)
+							false, Race.NONE, BodyCoveringType.MAKEUP_EYE_SHADOW, "Тени для век", "Тени для век используются для того, чтобы сделать глаза ярче или привлекательнее.", true, true)
 					
 					+CharacterModificationUtils.getKatesDivCoveringsNew(
-							false, Race.NONE, BodyCoveringType.MAKEUP_NAIL_POLISH_HANDS, "Nail polish", "Nail polish is used to colour and protect the nails on your [pc.hands].", true, true)
+							false, Race.NONE, BodyCoveringType.MAKEUP_NAIL_POLISH_HANDS, "Лак для ногтей", "Лак для ногтей используется для окрашивания и защиты ногтей на твоих [pc.hands].", true, true)
 					
 					+CharacterModificationUtils.getKatesDivCoveringsNew(
-							false, Race.NONE, BodyCoveringType.MAKEUP_NAIL_POLISH_FEET, "Toenail polish", "Toenail polish is used to colour and protect the nails on your [pc.feet].", true, true));
+							false, Race.NONE, BodyCoveringType.MAKEUP_NAIL_POLISH_FEET, "Лак для ногтей на ногах", "Лак для ногтей на ногах используется для окрашивания и защиты ногтей на твоих [pc.feet].", true, true));
 			
 			return sb.toString();
 		}
@@ -2192,7 +2183,7 @@ public class KaysWarehouse {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Finished", "You've finished giving [kay.name] a makeover.", KAY_OFFICE_DOMINATE_MAKEUP_END);
+				return new Response("Завершено", "Вы закончили преображение [kay.name].", KAY_OFFICE_DOMINATE_MAKEUP_END);
 			}
 			return null;
 		}
@@ -2223,56 +2214,19 @@ public class KaysWarehouse {
 			UtilText.nodeContentSB.append(UtilText.parseFromXMLFile("places/dominion/warehouseDistrict/kaysTextiles", "KAY_OFFICE_DOMINATE_NAMING"));
 			
 			UtilText.nodeContentSB.append(UtilText.parse(kay,
-					"<p>"
-						+ "At the moment, [npc.nameIsFull] calling you '[npc.pcName]', and you wonder if you should get [npc.herHim] to call you by a different name or title."
-						+ " As [npc.sheIs] not your slave, you can't get [npc.herHim] to change [npc.her] name."
-					+ "</p>"));
+					"<p>В данный момент [npc.nameIsFull] называет тебя '[npc.pcName]', и ты гадаешь, стоит ли заставить [npc.herHim] называть тебя как-то иначе. Поскольку [npc.sheIs] не твоя рабыня, ты не можешь заставить [npc.herHim] изменить [npc.her] имя.</p>"));
 			
 			UtilText.nodeContentSB.append(
-				"<div class='container-full-width' style='padding:8px 16px;'>"
-					+ "<div style='width:18%; float:left; font-weight:bold; margin:0 13% 0 0; padding:0; text-align:center;'>"
-						+ "Name"
-					+ "</div>"
-					+ "<div style='width:18%; float:left; font-weight:bold; margin:0 13% 0 0; padding:0; text-align:center;'>"
-						+ "Surname"
-					+ "</div>"
-					+ "<div style='width:20%; float:left; font-weight:bold; margin:0 18% 0 0; padding:0; text-align:center;'>"
-						+ UtilText.parse(kay, "What [npc.she] calls you")
+				"<div class='container-full-width' style='padding:8px 16px;'><div style='width:18%; float:left; font-weight:bold; margin:0 13% 0 0; padding:0; text-align:center;'>Имя</div><div style='width:18%; float:left; font-weight:bold; margin:0 13% 0 0; padding:0; text-align:center;'>Фамилия</div><div style='width:20%; float:left; font-weight:bold; margin:0 18% 0 0; padding:0; text-align:center;'>"
+						+ UtilText.parse(kay, "Как тебя называет [npc.she]")
 					+ "</div>"
 					
 					+ "<form style='float:left; width:18%; margin:0; padding:0;'><input type='text' id='slaveNameInput'"
-						+ " value='"+ UtilText.parseForHTMLDisplay(kay.getName(false))+ "' style='width:100%; margin:0; padding:0;' disabled></form>"
-					+ "<div class='normal-button disabled' style='float:left; width:5%; height:28px; line-height:28px; margin:0 0 0 0.5%; padding:0; text-align:center;'>"
-						+ "&#10003;"
-					+ "</div>"
-					+ "<div class='normal-button disabled' style='float:left; width:5%; height:28px; line-height:28px; margin:0 2% 0 0.5%; padding:0; text-align:center;'>"
-						+ "&#127922;"
-					+ "</div>"
-						
-					+ "<form style='float:left; width:18%; margin:0; padding:0;'><input type='text' id='slaveSurnameInput'"
-						+ " value='"+ UtilText.parseForHTMLDisplay(kay.getSurname())+ "' style='width:100%; margin:0; padding:0;' disabled></form>"
-					+ "<div class='normal-button disabled' style='float:left; width:5%; height:28px; line-height:28px; margin:0 0 0 0.5%; padding:0; text-align:center;'>"
-						+ "&#10003;"
-					+ "</div>"
-					+ "<div class='normal-button disabled' style='float:left; width:5%; height:28px; line-height:28px; margin:0 2% 0 0.5%; padding:0; text-align:center;'>"
-						+ "&#127922;"
-					+ "</div>"
-					
-					+ "<form style='float:left; width:20%; margin:0; padding:0;'><input type='text' id='slaveToPlayerNameInput' value='"+ UtilText.parseForHTMLDisplay(kay.getPetName(Main.game.getPlayer()))
-						+ "' style='width:100%; margin:0; padding:0;'></form>"
-					+ "<div class='normal-button' id='"+kay.getId()+"_CALLS_PLAYER' style='float:left; width:5%; height:28px; line-height:28px; margin:0 0 0 0.5%; padding:0; text-align:center;'>"
-						+ "&#10003;"
-					+ "</div>"
-					+ " <div class='normal-button disabled' style='float:left; width:12%; height:28px; line-height:28px; margin:0 0 0 0.5%; padding:0; text-align:center;'>"
-						+ "All Slaves"
-					+ "</div>");
+						+ " value='"+ UtilText.parseForHTMLDisplay(kay.getName(false))+ "' style='width:100%; margin:0; padding:0;' disabled></form><div class='normal-button disabled' style='float:left; width:5%; height:28px; line-height:28px; margin:0 0 0 0.5%; padding:0; text-align:center;'>&#10003;</div><div class='normal-button disabled' style='float:left; width:5%; height:28px; line-height:28px; margin:0 2% 0 0.5%; padding:0; text-align:center;'>&#127922;</div><form style='float:left; width:18%; margin:0; padding:0;'><input type='text' id='slaveSurnameInput' value='"+ UtilText.parseForHTMLDisplay(kay.getSurname())+ "' style='width:100%; margin:0; padding:0;' disabled></form><div class='normal-button disabled' style='float:left; width:5%; height:28px; line-height:28px; margin:0 0 0 0.5%; padding:0; text-align:center;'>&#10003;</div><div class='normal-button disabled' style='float:left; width:5%; height:28px; line-height:28px; margin:0 2% 0 0.5%; padding:0; text-align:center;'>&#127922;</div><form style='float:left; width:20%; margin:0; padding:0;'><input type='text' id='slaveToPlayerNameInput' value='"+ UtilText.parseForHTMLDisplay(kay.getPetName(Main.game.getPlayer()))
+						+ "' style='width:100%; margin:0; padding:0;'></form><div class='normal-button' id='"+kay.getId()+"_CALLS_PLAYER' style='float:left; width:5%; height:28px; line-height:28px; margin:0 0 0 0.5%; padding:0; text-align:center;'>&#10003;</div> <div class='normal-button disabled' style='float:left; width:12%; height:28px; line-height:28px; margin:0 0 0 0.5%; padding:0; text-align:center;'>Все рабыни</div>");
 			
 			UtilText.nodeContentSB.append(UtilText.parse(kay,
-						"<p style='text-align:center; margin-top:4px;'>"
-							+ "<i>If [npc.name] is told to call you 'Mom' or 'Dad', 'Mommy' or 'Daddy', 'Mistress' or 'Master', or 'Ma'am' or 'Sir',"
-							+ " then [npc.she] will automatically switch to the appropriate paired name depending on the femininity of your character.</i>"
-						+ "</p>"
-					+ "</div>"));
+						"<p style='text-align:center; margin-top:4px;'><i>Если сказать [npc.name] называть вас «Мамой» или «Папой», «Мамочкой» или «Папочкой», «Госпожой» или «Господином», либо «Мадам» или «Сэр», то [npc.she] автоматически переключится на соответствующее парное имя в зависимости от пола вашего персонажа.</i></p></div>"));
 			
 			UtilText.nodeContentSB.append("<p id='hiddenFieldName' style='display:none;'></p>");
 			
@@ -2281,7 +2235,7 @@ public class KaysWarehouse {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Finished", "You've finished choosing what [kay.name] calls you.", KAY_OFFICE_DOMINATE_NAMING_END);
+				return new Response("Завершено", "Вы закончили выбирать, как [kay.name] будет вас называть.", KAY_OFFICE_DOMINATE_NAMING_END);
 			}
 			return null;
 		}

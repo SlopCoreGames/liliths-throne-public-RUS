@@ -42,10 +42,10 @@ import com.lilithsthrone.utils.Util.Value;
  */
 public class DominionPark {
 	
-	public static final DialogueNode PARK = new DialogueNode("Park", ".", false) {
+	public static final DialogueNode PARK = new DialogueNode("Парк", ".", false) {
 		@Override
 		public String getAuthor() {
-			return "Kumiko";
+			return "Кумико";
 		}
 		@Override
 		public int getSecondsPassed() {
@@ -53,24 +53,12 @@ public class DominionPark {
 		}
 		@Override
 		public String getContent() {
-			return "<p>"
-						+ "This area of Dominion is taken up by a gigantic park, filled with a lush amount of foliage, which makes the air here feel very fresh compared to the rest of the city."
-						+ " The park consists of several alternating areas of open lawn and woodland, connected by a series of winding paths."
-						+ " There's a small lake situated in one corner of the park, and adjacent to that, there's a small field of wild flowers."
-						+ " A couple of food stands have been set up in one area for people that didn't come prepared with a picnic."
-					+ "</p>"
-					+ "<p>"
-						+ "The most noteworthy feature is at the very centre of the park, and takes the form of a huge statue of Lilith herself."
-						+ " The sultry smile carved into the white marble almost feels at though it's mocking you, and you can't help but feel as though you don't want to stick around here for long."
-					+ "</p>"
-					+ "<p>"
-						+ "For now, you don't have much reason to wander through this park, but if you had someone else with you, it would be a nice place to spend an afternoon; if you can ignore the statue, that is..."
-					+ "</p>";
+			return "<p>Эта часть Dominion занята гигантским парком, утопающим в пышной зелени, благодаря чему воздух здесь кажется невероятно свежим по сравнению с остальной частью города. Парк состоит из чередующихся открытых лужаек и лесных массивов, соединенных сетью извилистых тропинок. В одном углу парка расположено небольшое озеро, а рядом с ним — поле диких цветов. В одной из зон обустроено несколько киосков с едой для тех, кто не взял с собой пикник.</p><p>Самая примечательная особенность находится в самом центре парка и представляет собой огромную статую самой Lilith. Ее томная улыбка, высеченная в белом мраморе, кажется почти насмешливой, и невольно возникает чувство, что здесь не стоит задерживаться надолго.</p><p>Пока что у вас не так много причин бродить по этому парку, но если бы вы были здесь не одни, это было бы прекрасное место, чтобы провести день; если, конечно, вы сможете игнорировать статую...</p>";
 		}
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Rose Garden", "There's a beautiful rose garden just off to your right. Walk over to it and take a closer look.", PARK_ROSE_GARDEN) {
+				return new Response("Розарий", "Справа от вас раскинулся прекрасный розарий. Подойдите поближе и рассмотрите его получше.", PARK_ROSE_GARDEN) {
 					@Override
 					public void effects() {
 						Main.game.getTextEndStringBuilder().append(Main.game.getPlayer().addClothing(Main.game.getItemGen().generateClothing("innoxia_hair_rose", false), false));
@@ -82,10 +70,10 @@ public class DominionPark {
 		}
 	};
 	
-	public static final DialogueNode PARK_ROSE_GARDEN = new DialogueNode("Park", ".", false, true) {
+	public static final DialogueNode PARK_ROSE_GARDEN = new DialogueNode("Парк", ".", false, true) {
 		@Override
 		public String getAuthor() {
-			return "Innoxia";
+			return "Инноксия";
 		}
 		@Override
 		public int getSecondsPassed() {
@@ -93,27 +81,12 @@ public class DominionPark {
 		}
 		@Override
 		public String getContent() {
-			return "<p>"
-					+ "You find your attention drawn towards a small rose garden that's positioned near the park's entrance."
-					+ " Walking over towards it, you see that someone's placed a little sign just in front of the border, which reads:"
-				+ "</p>"
-				+ "<p style='text-align:center;'>"
-					+ "<i>"
-						+ "<b>William's Rose Garden</b><br/>"
-						+ "Please feel free to help yourself to these roses!"
-						+ " I hope you or your partner gets as much happiness out of them as I do from growing them.<br/>"
-						+ "- William"
-					+ "</i>"
-				+ "</p>"
-				+ "<p>"
-					+ "You look around, but don't see anyone nearby who could be this 'William' character."
-					+ " Focusing your attention back to his rose garden, you decide to do as his sign says, and after [pc.stepping] forwards, you pluck a single rose from the nearest bush."
-				+ "</p>";
+			return "<p>Ваше внимание привлекает небольшой розарий, расположенный рядом с входом в парк. Подойдя ближе, вы замечаете небольшую табличку прямо перед оградой, на которой написано:</p><p style='text-align:center;'><i><b>Розарий Уильяма</b><br/>Пожалуйста, угощайтесь этими розами! Надеюсь, вы или ваш партнер получите от них столько же радости, сколько получаю я, выращивая их.<br/>— Уильям</i></p><p>Вы оглядываетесь по сторонам, но не видите никого поблизости, кто мог бы быть этим самым Уильямом. Снова сосредоточившись на его розарии, вы решаете последовать совету на табличке, и, пройдя вперед [pc.stepping], срываете одну розу с ближайшего куста.</p>";
 		}
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Rose Garden", "You've already taken a rose from the garden.", null);
+				return new Response("Розарий", "Вы уже сорвали розу из этого сада.", null);
 			} else {
 				return null;
 			}
@@ -124,7 +97,7 @@ public class DominionPark {
 	// Natalya encounter:
 //	#IF(pc.getClothingInSlot(IS_NECK)!=null && pc.getClothingInSlot(IS_NECK).getClothingType().getId().equals('innoxia_neck_filly_choker'))
 	
-	public static final DialogueNode NATALYA_ENCOUNTER_START = new DialogueNode("Suddenly Centaurs", "", true) {
+	public static final DialogueNode NATALYA_ENCOUNTER_START = new DialogueNode("Внезапно кентавры", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			Main.game.getDialogueFlags().setFlag(DialogueFlagValue.natalyaParkEncounter, true);
@@ -159,8 +132,8 @@ public class DominionPark {
 				if(index==1) {
 					if(Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.MOUTH, true)) {
 						return new ResponseSex(
-								"Anilingus",
-								UtilText.parse(natalya, "Drop down behind Natalya and give her a rimjob."),
+								"Анилингус",
+								UtilText.parse(natalya, "Спрыгивают позади Натальи и начинают делать ей римджоб."),
 								true,
 								false,
 								// This sex manager should be suitable
@@ -183,8 +156,8 @@ public class DominionPark {
 						
 					} else {
 						return new ResponseSex(
-								"Handjob",
-								UtilText.parse(natalya, "Drop down onto your knees beside Natalya and give her a handjob."),
+								"Ручная стимуляция",
+								UtilText.parse(natalya, "Опускаются на колени рядом с Натальей и начинают делать ей хендджоб."),
 								true,
 								false,
 								// This sex manager should be suitable
@@ -208,9 +181,8 @@ public class DominionPark {
 				
 			} else {
 				if(index==2) {
-					return new Response("Leave",
-							"You don't really want to see any more of this, and so turn around and continue on your way."
-								+ "<br/><i>You might encounter this character again somewhere else...</i>",
+					return new Response("Уйти",
+							"Вам больше не хочется на это смотреть, поэтому вы разворачиваетесь и продолжаете свой путь.<br/><i>Возможно, вы еще встретите этого персонажа где-нибудь еще...</i>",
 								NATALYA_ENCOUNTER_END_EARLY) {
 						@Override
 						public void effects() {
@@ -220,12 +192,11 @@ public class DominionPark {
 					
 				} else if(index==1) {
 					if(!Main.game.isAnalContentEnabled()) {
-						return new Response("Watch her",
-								"You don't really want to see any more of this..."
-										+ "<br/>[style.italicsMinorBad(This character's scenes involve anal content, and as such will be disabled for as long as your 'Anal Content' setting is turned off.)]",
+						return new Response("Наблюдать за ней",
+								"Вам больше не хочется на это смотреть...<br/>[style.italicsMinorBad(Сцены с этим персонажем включают анальный секс, поэтому они будут отключены до тех пор, пока в настройках не будет включен параметр «Анальный контент».)]",
 								null);
 					}
-					return new Response("Watch her", "Watch the centauress as she grinds her asshole up against the edge of the cart...", NATALYA_ENCOUNTER_CAUGHT);
+					return new Response("Наблюдать за ней", "Наблюдать за кентаврой, пока она втирается своей анусом в край телеги...", NATALYA_ENCOUNTER_CAUGHT);
 					
 				}
 			}
@@ -245,9 +216,8 @@ public class DominionPark {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==2) {
-				return new Response("Leave",
-						"You don't think that you need to give this centauress an apology, so decide to simply turn around and continue on your way."
-							+ "<br/><i>You might encounter her again somewhere else...</i>",
+				return new Response("Уйти",
+						"Вы не считаете, что обязаны извиняться перед этой кентаврицей, поэтому решаете просто развернуться и идти дальше.<br/><i>Возможно, вы встретите её снова где-нибудь ещё...</i>",
 							NATALYA_ENCOUNTER_END_EARLY) {
 					@Override
 					public void effects() {
@@ -256,7 +226,7 @@ public class DominionPark {
 				};
 				
 			} else if(index==1) {
-				return new Response("Apologise", "Tell her that you're sorry.", NATALYA_ENCOUNTER_APOLOGY);
+				return new Response("Извиниться", "Сказать ей, что вам жаль.", NATALYA_ENCOUNTER_APOLOGY);
 				
 			}
 			return null;
@@ -275,9 +245,8 @@ public class DominionPark {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==2) {
-				return new Response("Leave",
-						"You've already given this centauress an apology and don't want to give another, so decide to simply turn around and continue on your way."
-							+ "<br/><i>You might encounter her again somewhere else...</i>",
+				return new Response("Уйти",
+						"Вы уже извинялись перед этой кентаврицей и не хотите делать это снова, поэтому решаете просто развернуться и идти дальше.<br/><i>Возможно, вы встретите её снова где-нибудь ещё...</i>",
 						NATALYA_ENCOUNTER_END_EARLY) {
 					@Override
 					public void effects() {
@@ -286,7 +255,7 @@ public class DominionPark {
 				};
 				
 			} else if(index==1) {
-				return new Response("Follow", "Do as this centauress says and follow her behind the bushes.<br/>[style.italicsSex(You get the feeling that you might see something quite lewd...)]", NATALYA_ENCOUNTER_BUSHES) {
+				return new Response("Следовать", "Сделать так, как говорит кентаврица, и последовать за ней в кусты.<br/>[style.italicsSex(У вас возникает предчувствие, что вы можете увидеть нечто весьма непристойное...)]", NATALYA_ENCOUNTER_BUSHES) {
 					@Override
 					public void effects() {
 						Main.game.getNpc(Natalya.class).displaceClothingForAccess(CoverableArea.PENIS, null);
@@ -300,7 +269,7 @@ public class DominionPark {
 		}
 	};
 
-	public static final DialogueNode NATALYA_ENCOUNTER_BUSHES = new DialogueNode("Natalya's Demand", "", true) {
+	public static final DialogueNode NATALYA_ENCOUNTER_BUSHES = new DialogueNode("Требование Натальи", "", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 2*60;
@@ -312,7 +281,7 @@ public class DominionPark {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==2) {
-				return new Response("Leave", "Turn around and leave Natalya to get herself off without your help.", NATALYA_ENCOUNTER_END_EARLY) {
+				return new Response("Уйти", "Развернуться и оставить Наталию доводить себя до оргазма без вашей помощи.", NATALYA_ENCOUNTER_END_EARLY) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/park/natalya_encounter", "NATALYA_ENCOUNTER_BUSHES_END_EARLY"));
@@ -321,8 +290,8 @@ public class DominionPark {
 				};
 				
 			} else if(index==1) {
-				return new Response("Submit",
-						"Do as the dominant [natalya.race] commands, and after calling her 'Mistress', kneel down behind her and shove the dildo into her puffy asshole...",
+				return new Response("Подчиниться",
+						"Исполнить приказ доминантной [natalya.race], а после того как назовете её «Госпожой», опуститься на колени позади неё и втиснуть дилдо в её пухлую дырочку...",
 						NATALYA_ENCOUNTER_BUSHES_SUBMIT) {
 					@Override
 					public boolean isSexHighlight() {
@@ -353,7 +322,7 @@ public class DominionPark {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new ResponseSex("Start stroking", "Do as Mistress Natalya commands and start stroking her thick horse-like cock.",
+				return new ResponseSex("Начать ласкать", "Исполнить приказ Госпожи Натальи и начать ласкать её толстый лошадиный член.",
 						true,
 						false,
 						new SMStanding(
@@ -437,7 +406,7 @@ public class DominionPark {
 		}
 	};
 
-	public static final DialogueNode NATALYA_ENCOUNTER_BUSHES_SUBMIT_POST_SEX = new DialogueNode("Finished", "Mistress Natalya has finished with you for now.", true) {
+	public static final DialogueNode NATALYA_ENCOUNTER_BUSHES_SUBMIT_POST_SEX = new DialogueNode("Завершено", "На данный момент Госпожа Наталья закончила с вами.", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 2*60;
@@ -449,7 +418,7 @@ public class DominionPark {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Follow", "Follow Mistress Natalya to see if her centaurs have finished their work yet.", NATALYA_ENCOUNTER_END) {
+				return new Response("Следовать", "Последовать за госпожой Натальей, чтобы проверить, закончили ли её кентавры свою работу.", NATALYA_ENCOUNTER_END) {
 					@Override
 					public int getSecondsPassed() {
 						return 5*60;
@@ -500,7 +469,7 @@ public class DominionPark {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue", "Now that Mistress Natalya has left, all there is for you to do is continue on your way through the park...", PARK) {
+				return new Response("Продолжить", "Теперь, когда госпожа Наталья ушла, вам остается только продолжать свой путь через парк...", PARK) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/park/natalya_encounter", "NATALYA_ENCOUNTER_END_PARK"));
@@ -513,7 +482,7 @@ public class DominionPark {
 	
 	// Mule:
 
-	public static final DialogueNode AFTER_FILLY_SEX_ANAL = new DialogueNode("Finished", "Mistress Natalya has finished with you for now.", true) {
+	public static final DialogueNode AFTER_FILLY_SEX_ANAL = new DialogueNode("Завершено", "На данный момент Госпожа Наталья закончила с вами.", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 2*60;
@@ -525,7 +494,7 @@ public class DominionPark {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Follow", "Follow Mistress Natalya to see if her centaurs have finished their work yet.", NATALYA_ENCOUNTER_FILLY_END) {
+				return new Response("Следовать", "Последовать за госпожой Натальей, чтобы проверить, закончили ли её кентавры свою работу.", NATALYA_ENCOUNTER_FILLY_END) {
 					@Override
 					public int getSecondsPassed() {
 						return 5*60;
@@ -540,7 +509,7 @@ public class DominionPark {
 		}
 	};
 
-	public static final DialogueNode AFTER_FILLY_SEX_HANDJOB = new DialogueNode("Finished", "Mistress Natalya has finished with you for now.", true) {
+	public static final DialogueNode AFTER_FILLY_SEX_HANDJOB = new DialogueNode("Завершено", "На данный момент Госпожа Наталья закончила с вами.", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 2*60;
@@ -571,7 +540,7 @@ public class DominionPark {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue", "Now that Mistress Natalya has left, all there is for you to do is continue on your way through the park...", PARK);
+				return new Response("Продолжить", "Теперь, когда госпожа Наталья ушла, вам остается только продолжать свой путь через парк...", PARK);
 			}
 			return null;
 		}

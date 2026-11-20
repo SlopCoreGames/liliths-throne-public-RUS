@@ -408,7 +408,7 @@ public class HelenaHotel {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Walk", "Walk back to Helena's apartment with her.", DATE_TRAVEL) {
+				return new Response("Идти", "Пойти обратно к апартаментам Helena вместе с ней.", DATE_TRAVEL) {
 					@Override
 					public int getSecondsPassed() {
 						return 30*60;
@@ -425,7 +425,7 @@ public class HelenaHotel {
 				
 			} else if(index==2) {
 				if(Main.game.getPlayer().isAbleToFly()) {
-					return new Response("Fly", "Fly back to Helena's apartment with her.", DATE_TRAVEL) {
+					return new Response("Лететь", "Полететь обратно к апартаментам Helena вместе с ней.", DATE_TRAVEL) {
 						@Override
 						public int getSecondsPassed() {
 							return 5*60;
@@ -440,11 +440,11 @@ public class HelenaHotel {
 						}
 					};
 				}
-				return new Response("Fly", "You aren't able to fly...", null);
+				return new Response("Лететь", "Вы не можете летать...", null);
 				
 			} else if(index==3) {
 				if(Main.game.getPlayer().isTaur()) {
-					return new Response("Offer ride", "Offer to let Helena ride on your back and carry her back to her apartment.", DATE_TRAVEL) {
+					return new Response("Предложить подвезти", "Предложить Helena прокатиться у вас на спине и отнести её обратно к апартаментам.", DATE_TRAVEL) {
 						@Override
 						public int getSecondsPassed() {
 							return 10*60;
@@ -460,14 +460,14 @@ public class HelenaHotel {
 						}
 					};
 				}
-				return new Response("Offer ride", "You are not a taur, so can't offer to let Helena ride on your back...", null);
+				return new Response("Предложить подвезти", "Вы не тавр, поэтому не можете предложить Helena прокатиться у вас на спине...", null);
 			}
 			
 			return null;
 		}
 	};
 	
-	public static final DialogueNode DATE_TRAVEL = new DialogueNode("The Golden Feather Hotel", "", true) {
+	public static final DialogueNode DATE_TRAVEL = new DialogueNode("Отель «Золотое перо»", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			// Set place 2 tiles left of harpy nests as Helena's hotel:
@@ -495,7 +495,7 @@ public class HelenaHotel {
 		@Override
 		public Response getResponse(int responseTab, int index) { // Scarlett interactions:
 			if(index==1) {
-				return new Response("Small talk", "Make small talk with Scarlett while you wait for Helena to return.", DATE_RESTAURANT_START) {
+				return new Response("Светская беседа", "Поболтать с Scarlett, пока ждешь возвращения Helena.", DATE_RESTAURANT_START) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/helenaHotel/hotelDate", "DATE_TRAVEL_SMALL_TALK"));
@@ -504,7 +504,7 @@ public class HelenaHotel {
 				};
 				
 			} else if(index==2) {
-				return new Response("Wait", "Just wait for Helena to return.", DATE_RESTAURANT_START) {
+				return new Response("Ждать", "Просто ждать возвращения Helena.", DATE_RESTAURANT_START) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/helenaHotel/hotelDate", "DATE_TRAVEL_WAIT"));
@@ -514,13 +514,13 @@ public class HelenaHotel {
 			} else if(index==3
 					&& Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.helenaDateVirginityTalk)) {// Romantic setup for taking virginity or repeat of scene:
 				if(Main.game.getPlayer().getItemCount(Main.game.getItemGen().generateItem(ItemType.GIFT_ROSE_BOUQUET))<3) {
-					return new Response("Romantic setup", "You require at least [style.boldMinorBad(three "+ItemType.GIFT_ROSE_BOUQUET.getNamePlural(false)+")] in your inventory to do this!", null);
+					return new Response("Романтическая обстановка", "Для этого в вашем инвентаре должно быть как минимум [style.boldMinorBad(три "+ItemType.GIFT_ROSE_BOUQUET.getNamePlural(false)+")] предмета!", null);
 				}
 				if((!Main.game.getPlayer().hasVagina() || !Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.VAGINA, true))
 						 && (!Main.game.getPlayer().hasPenis() || !Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.PENIS, true))) {
-					return new Response("Romantic setup", "You [style.colourBad(require either a penis or vagina)], and [style.colourBad(to be able to access your genitals)] for this action!", null);
+					return new Response("Романтическая обстановка", "Для этого действия вам [style.colourBad(требуется либо пенис, либо вагина)], а также [style.colourBad(возможность получить доступ к своим гениталиям)]!", null);
 				}
-				return new Response("Romantic setup", "Ask Scarlett to set up a romantic scene in Helena's apartment for when the two of you return from your date.", DATE_RESTAURANT_ROMANTIC_SETUP);
+				return new Response("Романтическая обстановка", "Попросить Scarlett подготовить романтическую обстановку в квартире Helena к вашему возвращению со свидания.", DATE_RESTAURANT_ROMANTIC_SETUP);
 				
 			}
 			return null;
@@ -544,7 +544,7 @@ public class HelenaHotel {
 		public Response getResponse(int responseTab, int index) {
 			if(((Scarlett)Main.game.getNpc(Scarlett.class)).isLikesPlayer()) {
 				if(index==1) {
-					return new Response("Thank her", "Thank Scarlett for agreeing to do as you've asked.", DATE_RESTAURANT_START) {
+					return new Response("Поблагодарить её", "Поблагодарить Scarlett за то, что она согласилась на вашу просьбу.", DATE_RESTAURANT_START) {
 						@Override
 						public int getSecondsPassed() {
 							return 5*60;
@@ -560,7 +560,7 @@ public class HelenaHotel {
 				
 			} else {
 				if(index==1) {
-					return new Response("Refuse", "Refuse to agree to Scarlett's conditions.", DATE_RESTAURANT_START) {
+					return new Response("Отказаться", "Отказаться от условий Scarlett.", DATE_RESTAURANT_START) {
 						@Override
 						public void effects() {
 							Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/helenaHotel/hotelDate", "DATE_RESTAURANT_ROMANTIC_SETUP_REFUSED"));
@@ -569,9 +569,9 @@ public class HelenaHotel {
 					
 				} else if(index==2) {
 					if(Main.game.getPlayer().getMoney()<1000) {
-						return new Response("Pay her ("+UtilText.formatAsMoneyUncoloured(1000, "span")+")", "You don't have enough money to pay Scarlett...", null);
+						return new Response("Заплатить ей ("+UtilText.formatAsMoneyUncoloured(1000, "охват")+")", "У вас недостаточно денег, чтобы заплатить Scarlett...", null);
 					}
-					return new Response("Pay her ("+UtilText.formatAsMoney(1000, "span")+")", "Pay Scarlett one thousand flames in exchange for her setting up the romantic scene in Helena's apartment.", DATE_RESTAURANT_START) {
+					return new Response("Заплатить ей ("+UtilText.formatAsMoney(1000, "охват")+")", "Заплатить Scarlett одну тысячу огней в обмен на то, что она устроит романтическую обстановку в квартире Helena.", DATE_RESTAURANT_START) {
 						@Override
 						public int getSecondsPassed() {
 							return 5*60;
@@ -588,11 +588,11 @@ public class HelenaHotel {
 				} else if(index==3) {
 					if(Main.game.getNpc(Scarlett.class).hasPenis()) {
 						if(!Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.MOUTH, true)) {
-							return new Response("Suck cock", "You can't access your mouth at the moment, so can't offer to suck Scarlett's cock...", null);
+							return new Response("Сосать член", "В данный момент вы не можете пользоваться ртом, поэтому не можете предложить Scarlett отсосать её член...", null);
 						}
 						return new ResponseSex(
-								"Suck cock",
-								"Do as Scarlett suggests and quickly suck her cock in exchange for her setting up the romantic scene in Helena's apartment.",
+								"Сосать член",
+								"Сделать так, как предлагает Scarlett, и быстро отсосать ей член в обмен на то, что она устроит романтическую обстановку в квартире Helena.",
 								true,
 								false,
 								getScarlettOralSexManager(),
@@ -612,11 +612,11 @@ public class HelenaHotel {
 						
 					} else {
 						if(!Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.MOUTH, true)) {
-							return new Response("Cunnilingus", "You can't access your mouth at the moment, so can't offer to perform cunnilingus on Scarlett...", null);
+							return new Response("Куннилингус", "В данный момент вы не можете пользоваться ртом, поэтому не можете предложить Scarlett отсосать её киску...", null);
 						}
 						return new ResponseSex(
-								"Cunnilingus",
-								"Do as Scarlett suggests and quickly eat her out in exchange for her setting up the romantic scene in Helena's apartment.",
+								"Куннилингус",
+								"Сделать так, как предлагает Scarlett, и быстро отсосать ей киску в обмен на то, что она устроит романтическую обстановку в квартире Helena.",
 								true,
 								false,
 								getScarlettOralSexManager(),
@@ -641,7 +641,7 @@ public class HelenaHotel {
 		}
 	};
 
-	public static final DialogueNode DATE_RESTAURANT_ROMANTIC_SETUP_AFTER_ORAL = new DialogueNode("Finished", "Now that she's orgasmed, Scarlett has had enough.", true) {
+	public static final DialogueNode DATE_RESTAURANT_ROMANTIC_SETUP_AFTER_ORAL = new DialogueNode("Завершено", "Теперь, когда она получила оргазм, с Scarlett достаточно.", true) {
 		@Override
 		public void applyPreParsingEffects() { //TODO test
 			Main.game.getPlayer().removeItem(Main.game.getItemGen().generateItem(ItemType.GIFT_ROSE_BOUQUET), 3, true);
@@ -663,7 +663,7 @@ public class HelenaHotel {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Wait", "Wait for Helena to arrive.", DATE_RESTAURANT_START) {
+				return new Response("Ждать", "Дождаться прихода Helena.", DATE_RESTAURANT_START) {
 					@Override
 					public int getSecondsPassed() {
 						return 3*60;
@@ -691,7 +691,7 @@ public class HelenaHotel {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Wine", "Tell Helena and the harpy waitress that you'll also be drinking wine this evening.", DATE_RESTAURANT_TALKING) {
+				return new Response("Вино", "Сказать Helena и официантке-гарпии, что сегодня вечером вы тоже будете пить вино.", DATE_RESTAURANT_TALKING) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/helenaHotel/hotelDate", "DATE_RESTAURANT_START_WINE"));
@@ -701,7 +701,7 @@ public class HelenaHotel {
 				};
 				
 			} else if(index==2) {
-				return new Response("Water", "Ask the harpy for a drink of water.", DATE_RESTAURANT_TALKING) {
+				return new Response("Вода", "Попросить у гарпии воды.", DATE_RESTAURANT_TALKING) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/helenaHotel/hotelDate", "DATE_RESTAURANT_START_WATER"));
@@ -710,7 +710,7 @@ public class HelenaHotel {
 				};
 				
 			} else if(index==3) {
-				return new Response("Beer", "Ask the harpy for a beer.", DATE_RESTAURANT_TALKING) {
+				return new Response("Пиво", "Попросить у гарпии пива.", DATE_RESTAURANT_TALKING) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/helenaHotel/hotelDate", "DATE_RESTAURANT_START_BEER"));
@@ -720,7 +720,7 @@ public class HelenaHotel {
 				};
 				
 			} else if(index==4) {
-				return new Response("Whiskey", "Ask the harpy for a glass of whiskey.", DATE_RESTAURANT_TALKING) {
+				return new Response("Виски", "Попросить у гарпии стакан виски.", DATE_RESTAURANT_TALKING) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/helenaHotel/hotelDate", "DATE_RESTAURANT_START_WHISKEY"));
@@ -757,7 +757,7 @@ public class HelenaHotel {
 			switch(talkTopic) {
 				case SLAVES:
 					if(index==1) {
-						return new Response("Natural", "Tell Helena that you think it's perfectly natural for some people to be slaves.", DATE_RESTAURANT_PLAYER_TOPIC) {
+						return new Response("Естественно", "Сказать Helena, что вы считаете вполне естественным, когда некоторые люди являются рабами.", DATE_RESTAURANT_PLAYER_TOPIC) {
 							@Override
 							public void effects() {
 								Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/helenaHotel/hotelDate", "RESPONSE_SLAVES_NATURAL"));
@@ -766,7 +766,7 @@ public class HelenaHotel {
 						};
 						
 					} else if(index==2) {
-						return new Response("Necessity", "Tell Helena that you think that slavery is an unfortunate necessity in a society like Dominion's.", DATE_RESTAURANT_PLAYER_TOPIC) {
+						return new Response("Необходимость", "Сказать Helena, что считаете рабство прискорбной необходимостью в таком обществе, как в Dominion.", DATE_RESTAURANT_PLAYER_TOPIC) {
 							@Override
 							public void effects() {
 								Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/helenaHotel/hotelDate", "RESPONSE_SLAVES_NECESSITY"));
@@ -775,7 +775,7 @@ public class HelenaHotel {
 						};
 						
 					} else if(index==3) {
-						return new Response("Wrong", "Tell Helena that slavery is morally wrong, and that one day it will surely be abolished.", DATE_RESTAURANT_PLAYER_TOPIC) {
+						return new Response("Неверно", "Сказать Helena, что рабство аморально и что однажды его обязательно отменят.", DATE_RESTAURANT_PLAYER_TOPIC) {
 							@Override
 							public void effects() {
 								Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/helenaHotel/hotelDate", "RESPONSE_SLAVES_WRONG"));
@@ -787,7 +787,7 @@ public class HelenaHotel {
 					
 				case HARPY_NESTS:
 					if(index==1) {
-						return new Response("Queen", "Tell Helena that there should be a single queen in control of all of the Harpy Nests, and that she should take that role.", DATE_RESTAURANT_PLAYER_TOPIC) {
+						return new Response("Королева", "Сказать Helena, что над всеми Гнездами Гарпий должна править одна королева, и что эту роль стоит занять ей.", DATE_RESTAURANT_PLAYER_TOPIC) {
 							@Override
 							public void effects() {
 								Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/helenaHotel/hotelDate", "RESPONSE_HARPY_NESTS_HELENA_TOP"));
@@ -796,7 +796,7 @@ public class HelenaHotel {
 						};
 						
 					} else if(index==2) {
-						return new Response("Balance", "Tell Helena that the Harpy Nests seem to have found a somewhat stable balance, and so nothing should be changed.", DATE_RESTAURANT_PLAYER_TOPIC) {
+						return new Response("Баланс", "Сказать Helena, что Гнезда Гарпий, похоже, обрели некий стабильный баланс, поэтому менять ничего не стоит.", DATE_RESTAURANT_PLAYER_TOPIC) {
 							@Override
 							public void effects() {
 								Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/helenaHotel/hotelDate", "RESPONSE_HARPY_NESTS_BALANCE"));
@@ -805,7 +805,7 @@ public class HelenaHotel {
 						};
 						
 					} else if(index==3) {
-						return new Response("Dismantle", "Tell Helena that the societal structure of the Harpy Nests should be dismantled and completely remade.", DATE_RESTAURANT_PLAYER_TOPIC) {
+						return new Response("Демонтаж", "Сказать Helena, что социальную структуру Гнезд Гарпий нужно разрушить и полностью перестроить.", DATE_RESTAURANT_PLAYER_TOPIC) {
 							@Override
 							public void effects() {
 								Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/helenaHotel/hotelDate", "RESPONSE_HARPY_NESTS_BAD"));
@@ -817,7 +817,7 @@ public class HelenaHotel {
 					
 				case RACES:
 					if(index==1) {
-						return new Response("Harpies", "Tell Helena that harpies are undeniably the most beautiful of all races, and that she is the most beautiful of all.", DATE_RESTAURANT_PLAYER_TOPIC) {
+						return new Response("Гарпии", "Сказать Helena, что гарпии, несомненно, самые прекрасные из всех рас, и что она — самая прекрасная из всех.", DATE_RESTAURANT_PLAYER_TOPIC) {
 							@Override
 							public void effects() {
 								Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/helenaHotel/hotelDate", "RESPONSE_RACES_HARPIES"));
@@ -826,7 +826,7 @@ public class HelenaHotel {
 						};
 						
 					} else if(index==2) {
-						return new Response("Other", "Tell Helena that you have a preference for a race other than harpies.", DATE_RESTAURANT_PLAYER_TOPIC) {
+						return new Response("Другое", "Сказать Helena, что ты предпочитаешь какую-то другую расу, а не гарпий.", DATE_RESTAURANT_PLAYER_TOPIC) {
 							@Override
 							public void effects() {
 								Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/helenaHotel/hotelDate", "RESPONSE_RACES_OTHER"));
@@ -835,7 +835,7 @@ public class HelenaHotel {
 						};
 						
 					} else if(index==3) {
-						return new Response("Personality", "Tell Helena that you don't care about race, and that your attraction to someone depends more on their personality than their looks.", DATE_RESTAURANT_PLAYER_TOPIC) {
+						return new Response("Личность", "Сказать Helena, что тебе плевать на расу, и что твоё влечение к кому-то больше зависит от личности, чем от внешности.", DATE_RESTAURANT_PLAYER_TOPIC) {
 							@Override
 							public void effects() {
 								Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/helenaHotel/hotelDate", "RESPONSE_RACES_PERSONALITY"));
@@ -847,7 +847,7 @@ public class HelenaHotel {
 					
 				case HARPIES:
 					if(index==1) {
-						return new Response("Admirable", "Tell Helena that Scarlett makes for a most admirable companion.", DATE_RESTAURANT_PLAYER_TOPIC) {
+						return new Response("Восхитительна", "Сказать Helena, что Scarlett — самая восхитительная спутница.", DATE_RESTAURANT_PLAYER_TOPIC) {
 							@Override
 							public void effects() {
 								Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/helenaHotel/hotelDate", "RESPONSE_HARPIES_CONTROL"));
@@ -856,7 +856,7 @@ public class HelenaHotel {
 						};
 						
 					} else if(index==2) {
-						return new Response("Rude", "Tell Helena that Scarlett is very rude, but at least she behaves herself when in Helena's presence.", DATE_RESTAURANT_PLAYER_TOPIC) {
+						return new Response("Грубая", "Сказать Helena, что Scarlett очень грубая, но, по крайней мере, она ведет себя прилично в её присутствии.", DATE_RESTAURANT_PLAYER_TOPIC) {
 							@Override
 							public void effects() {
 								Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/helenaHotel/hotelDate", "RESPONSE_HARPIES_RUDE"));
@@ -865,7 +865,7 @@ public class HelenaHotel {
 						};
 						
 					} else if(index==3) {
-						return new Response("Bitch", "Tell Helena that Scarlett is a complete bitch.", DATE_RESTAURANT_PLAYER_TOPIC) {
+						return new Response("Сучка", "Сказать Helena, что Scarlett — настоящая сука.", DATE_RESTAURANT_PLAYER_TOPIC) {
 							@Override
 							public void effects() {
 								Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/helenaHotel/hotelDate", "RESPONSE_HARPIES_BITCH"));
@@ -877,7 +877,7 @@ public class HelenaHotel {
 					
 				case BUSINESS:
 					if(index==1) {
-						return new Response("Flatter", "Tell Helena that only someone of her exceptional abilities could have turned that business around.", DATE_RESTAURANT_PLAYER_TOPIC) {
+						return new Response("Лесть", "Сказать Helena, что только человек с её исключительными способностями смог так развернуть это дело.", DATE_RESTAURANT_PLAYER_TOPIC) {
 							@Override
 							public void effects() {
 								Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/helenaHotel/hotelDate", "RESPONSE_BUSINESS_FLATTER"));
@@ -886,7 +886,7 @@ public class HelenaHotel {
 						};
 						
 					} else if(index==2) {
-						return new Response("Take credit", "Tell Helena that you deserve at least some of the credit for how well things turned out.", DATE_RESTAURANT_PLAYER_TOPIC) {
+						return new Response("Присвоить заслуги", "Сказать Helena, что ты заслуживаешь как минимум части заслуг за то, как хорошо всё обернулось.", DATE_RESTAURANT_PLAYER_TOPIC) {
 							@Override
 							public void effects() {
 								Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/helenaHotel/hotelDate", "RESPONSE_BUSINESS_CREDIT"));
@@ -895,7 +895,7 @@ public class HelenaHotel {
 						};
 						
 					} else if(index==3) {
-						return new Response("Surprised", "Tell Helena that you're surprised at how successful it is; you never would have imagined Helena's idea to actually work.", DATE_RESTAURANT_PLAYER_TOPIC) {
+						return new Response("Удивлённая", "Сказать Helena, что вы удивлены успехом дела; вы и представить не могли, что идея Helena сработает.", DATE_RESTAURANT_PLAYER_TOPIC) {
 							@Override
 							public void effects() {
 								Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/helenaHotel/hotelDate", "RESPONSE_BUSINESS_SURPRISE"));
@@ -926,7 +926,7 @@ public class HelenaHotel {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Helena", "Talk about Helena and ask her what she's got planned for the weekend.", DATE_RESTAURANT_END) {
+				return new Response("Helena", "Поговорить с Helena и спросить, какие у неё планы на выходные.", DATE_RESTAURANT_END) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/helenaHotel/hotelDate", "DATE_RESTAURANT_PLAYER_TOPIC_HELENA"));
@@ -935,7 +935,7 @@ public class HelenaHotel {
 				};
 				
 			} else if(index==2) {
-				return new Response("Arcane", "Turn the topic of conversation to the arcane.", DATE_RESTAURANT_END) {
+				return new Response("Arcane", "Перевести тему разговора на Arcane.", DATE_RESTAURANT_END) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/helenaHotel/hotelDate", "DATE_RESTAURANT_PLAYER_TOPIC_ARCANE"));
@@ -943,7 +943,7 @@ public class HelenaHotel {
 				};
 				
 			} else if(index==3) {
-				return new Response("Politics", "Talk to Helena about Lilith and her rule over Dominion.", DATE_RESTAURANT_END) {
+				return new Response("Политика", "Поговорить с Helena о Lilith и её правлении в Dominion.", DATE_RESTAURANT_END) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/helenaHotel/hotelDate", "DATE_RESTAURANT_PLAYER_TOPIC_POLITICS"));
@@ -953,12 +953,11 @@ public class HelenaHotel {
 				
 			} else if(index==4 && !Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.helenaDateSexLifeTalk)) {
 				if(Main.game.getNpc(Helena.class).getAffection(Main.game.getPlayer())<70) {
-					return new Response("Sex life",
-							"You can tell that Helena isn't ready to talk openly about her sex life with you yet..."
-									+ "<br/>[style.italicsMinorBad(Requires Helena's affection towards you to be 70 or greater. It is currently "+Main.game.getNpc(Helena.class).getAffection(Main.game.getPlayer())+".)]",
+					return new Response("Секс-жизнь",
+							"Вы чувствуете, что Helena ещё не готова открыто обсуждать с вами свою сексуальную жизнь...<br/>[style.italicsMinorBad(Требуется Привязанность Helena к вам не менее 70. Сейчас она составляет "+Main.game.getNpc(Helena.class).getAffection(Main.game.getPlayer())+".)]",
 							null);
 				}
-				return new Response("Sex life", "Talk to Helena about her sex life.", DATE_RESTAURANT_END_SEX_TALK) {
+				return new Response("Секс-жизнь", "Поговорить с Helena о её сексуальной жизни.", DATE_RESTAURANT_END_SEX_TALK) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/helenaHotel/hotelDate", "DATE_RESTAURANT_PLAYER_TOPIC_SEX_LIFE"));
@@ -969,12 +968,11 @@ public class HelenaHotel {
 				
 			} else if(index==5) {
 				if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.helenaGift)) {
-					return new Response("Gift", "You've already given Helena a gift...", null);
+					return new Response("Подарок", "Вы уже дарили Helena подарок...", null);
 					
 				} else {
-					return new Response("Gift",
-							"Give Helena a gift (opens gift selection screen)."
-									+ "<br/>[style.italicsMinorGood(You will be able to return to this scene and ask her about one of the other topics after giving her a gift.)]",
+					return new Response("Подарок",
+							"Подарить Helena подарок (открывает экран выбора подарков).<br/>[style.italicsMinorGood(После того как вы подарите ей подарок, вы сможете вернуться к этой сцене и расспросить её об одной из других тем.)]",
 							DATE_RESTAURANT_PLAYER_TOPIC) {
 						@Override
 						public DialogueNode getNextDialogue() {
@@ -987,7 +985,7 @@ public class HelenaHotel {
 		}
 	};
 	
-	public static final DialogueNode DATE_RESTAURANT_GIFT = new DialogueNode("Give gift", "", true, true) {
+	public static final DialogueNode DATE_RESTAURANT_GIFT = new DialogueNode("Дарить подарок", "", true, true) {
 		@Override
 		public int getSecondsPassed() {
 			return 2*60;
@@ -1023,7 +1021,7 @@ public class HelenaHotel {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Accompany", "Accompany Helena back up to her penthouse apartment.", DATE_RESTAURANT_END_HOME) {
+				return new Response("Сопроводить", "Проводить Helena обратно в её пентхаус.", DATE_RESTAURANT_END_HOME) {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setLocation(WorldType.HELENAS_APARTMENT, PlaceType.HELENA_APARTMENT_ENTRANCE);
@@ -1036,9 +1034,9 @@ public class HelenaHotel {
 				
 			} else if(index==2) {
 				if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.helenaDateRomanticSetup)) {
-					return new Response("Leave", "With Scarlett having set up a romantic scene for you in Helena's apartment, you don't want to leave her now!", null);
+					return new Response("Уйти", "Поскольку Scarlett уже устроила для вас романтическую обстановку в квартире Helena, вам совсем не хочется её оставлять!", null);
 				}
-				return new Response("Leave", "Say goodbye to Helena and that you hope to see her again soon.", DATE_APARTMENT_LEAVE) {
+				return new Response("Уйти", "Попрощаться с Helena и сказать, что надеетесь скоро увидеться снова.", DATE_APARTMENT_LEAVE) {
 					@Override
 					public void effects() {
 						Main.game.getDialogueFlags().setFlag(DialogueFlagValue.helenaGoneHome, true);
@@ -1089,10 +1087,10 @@ public class HelenaHotel {
 		public Response getResponse(int responseTab, int index) {
 			if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.helenaDateRomanticSetup)) {
 				if(index==1) {
-					return new Response("Bedroom",
+					return new Response("Спальня",
 							Main.game.getNpc(Helena.class).hasFetish(Fetish.FETISH_DOMINANT)
-								?"Helena leads you down the hallway to her bedroom."
-								:"Lead Helena down the hallway to her bedroom.",
+								?"Helena ведет вас по коридору в свою спальню."
+								:"Вести за собой Helena по коридору в её спальню.",
 							DATE_APARTMENT_BEDROOM) {
 						@Override
 						public void effects() {
@@ -1103,7 +1101,7 @@ public class HelenaHotel {
 				
 			} else if(Main.game.getNpc(Helena.class).hasFetish(Fetish.FETISH_DOMINANT)) {
 				if(index==1) {
-					return new Response("Bedroom", "Helena isn't taking no for an answer as she pulls you along towards her bedroom...", DATE_APARTMENT_BEDROOM) {
+					return new Response("Спальня", "Helena не принимает отказов, увлекая вас за собой к своей спальне...", DATE_APARTMENT_BEDROOM) {
 						@Override
 						public void effects() {
 							Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/helenaHotel/hotelDate", "DATE_APARTMENT_BEDROOM_HELENA_DOM"));
@@ -1113,7 +1111,7 @@ public class HelenaHotel {
 				
 			} else {
 				if(index==1) {
-					return new Response("Goodbye", "Say goodbye to Helena and head back out into Dominion.", DATE_APARTMENT_LEAVE) {
+					return new Response("Прощай", "Попрощаться с Helena и вернуться в Dominion.", DATE_APARTMENT_LEAVE) {
 						@Override
 						public void effects() {
 							Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/helenaHotel/hotelDate", "DATE_RESTAURANT_END_HOME_GOODBYE"));
@@ -1124,7 +1122,7 @@ public class HelenaHotel {
 					};
 					
 				} else if(index==2) {
-					return new Response("Parting kiss", "Kiss Helena on the cheek and say goodbye.", DATE_APARTMENT_LEAVE) {
+					return new Response("Прощальный поцелуй", "Поцеловать Helena в щеку и попрощаться.", DATE_APARTMENT_LEAVE) {
 						@Override
 						public void effects() {
 							Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/helenaHotel/hotelDate", "DATE_RESTAURANT_END_HOME_GOODBYE_KISS"));
@@ -1136,12 +1134,11 @@ public class HelenaHotel {
 					
 				} else if(index==3) {
 					if(!Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.helenaDateSexLifeTalk)) {
-						return new Response("Inside",
-								"You think that Helena would invite you inside if you were first able to get her to openly talk to you about her sex life..."
-										+ "<br/>[style.italicsMinorBad(Next time you go on a date with Helena, if her affection towards you is 70 or more, you should ask her about her sex life to unlock this action.)]",
+						return new Response("Внутри",
+								"Вы думаете, что Helena пригласила бы вас внутрь, если бы вы смогли заставить её открыто поговорить о её сексуальной жизни...<br/>[style.italicsMinorBad(В следующий раз, когда вы пойдете на свидание с Helena, если её привязанность к вам будет 70 или выше, вам стоит спросить её о сексуальной жизни, чтобы открыть это действие.)]",
 								null);
 					}
-					return new Response("Inside", "Accept Helena's invitation to come inside.", DATE_APARTMENT_START) {
+					return new Response("Внутри", "Принять приглашение Helena войти внутрь.", DATE_APARTMENT_START) {
 						@Override
 						public void effects() {
 							Main.game.getPlayer().setLocation(WorldType.HELENAS_APARTMENT, PlaceType.HELENA_APARTMENT_LOUNGE);
@@ -1151,7 +1148,7 @@ public class HelenaHotel {
 					};
 					
 				} else if(index==4 && ((Helena)Main.game.getNpc(Helena.class)).isSlutty()) {
-					return new Response("Bedroom", "Take Helena straight into her bedroom to give her the fucking she's so obviously craving.", DATE_APARTMENT_BEDROOM) {
+					return new Response("Спальня", "Тащить Helena прямиком в спальню, чтобы дать ей тот трах, которого она так явно жаждет.", DATE_APARTMENT_BEDROOM) {
 						@Override
 						public void effects() {
 							Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/helenaHotel/hotelDate", "DATE_RESTAURANT_END_HOME_BEDROOM"));
@@ -1184,7 +1181,7 @@ public class HelenaHotel {
 			
 			if(index==0) {
 				if(Main.game.getCurrentDialogueNode()==DATE_APARTMENT_COFFEE) {
-					return new Response("Leave", "Now that you've had coffee, it's time to leave...", DATE_APARTMENT_LEAVE) {
+					return new Response("Уйти", "Теперь, когда вы выпили кофе, пора уходить...", DATE_APARTMENT_LEAVE) {
 						@Override
 						public void effects() {
 							Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/helenaHotel/hotelDate", "DATE_APARTMENT_START_LEAVE"));
@@ -1192,23 +1189,23 @@ public class HelenaHotel {
 					};
 					
 				} else {
-					return new Response("Leave", "You should at least have some coffee before you leave...", null);
+					return new Response("Уйти", "Тебе стоит хотя бы выпить немного кофе перед уходом...", null);
 				}
 			}
 			
 			if(Main.game.getCurrentDialogueNode()==DATE_APARTMENT_KISS) {
-				responses.add(new Response("Coffee", "Helena isn't going to want to stop the fun and have coffee now.", null));
+				responses.add(new Response("Кофе", "Helena вряд ли захочет прерывать веселье ради кофе.", null));
 				
 			} else if(Main.game.getCurrentDialogueNode()==DATE_APARTMENT_COFFEE) {
-				responses.add(new Response("Coffee", "You're already having coffee with Helena...", null));
+				responses.add(new Response("Кофе", "Ты и так пьешь кофе с Helena...", null));
 				
 			} else {
-				responses.add(new Response("Coffee", "Well, this is what you're here for, isn't it?", DATE_APARTMENT_COFFEE));
+				responses.add(new Response("Кофе", "Ну, ты ведь именно за этим сюда и пришел, верно?", DATE_APARTMENT_COFFEE));
 			}
 			
 			if(!Main.game.getNpc(Helena.class).getFetishDesire(Fetish.FETISH_ORAL_RECEIVING).isPositive()) {
-				responses.add(new Response("First kiss",
-						"With how she's acting towards you, you think that you have an opportunity to give Helena her first kiss...",
+				responses.add(new Response("Первый поцелуй",
+						"Судя по тому, как она к тебе относится, ты чувствуешь, что у тебя есть шанс подарить Helena её первый поцелуй...",
 						DATE_APARTMENT_KISS) {
 					@Override
 					public void effects() {
@@ -1221,21 +1218,21 @@ public class HelenaHotel {
 				
 			} else {
 				if(((Helena) Main.game.getNpc(Helena.class)).isSlutty()) {
-					responses.add(new Response("Make out", "Although she definitely wants more than just a kiss, Helena is still more than happy to spend some time making out with you on the sofa.", DATE_APARTMENT_KISS));
+					responses.add(new Response("Заняться милованием", "Хотя ей определенно хочется гораздо большего, чем просто поцелуй, Helena будет вполне счастлива провести время, страстно целуясь с тобой на диване.", DATE_APARTMENT_KISS));
 					
 				} else {
-					responses.add(new Response("Make out", "Now that Helena has discovered the pleasure of kissing, you know that she'd be willing to spend some time making out with you on the sofa.", DATE_APARTMENT_KISS));
+					responses.add(new Response("Заняться милованием", "Теперь, когда Helena познала удовольствие от поцелуев, вы понимаете, что она будет не прочь провести время, нежно целуясь с вами на диване.", DATE_APARTMENT_KISS));
 				}
 			}
 			
 			if(!Main.game.getNpc(Helena.class).getFetishDesire(Fetish.FETISH_ORAL_RECEIVING).isPositive()) {
-				responses.add(new Response("Bedroom", "Helena isn't quite ready for this yet. Perhaps if you were to take her first kiss, she'd be willing to take things into the bedroom the next time you're here.", null));
+				responses.add(new Response("Спальня", "Helena еще не совсем к этому готова. Возможно, если вы заберете ее первый поцелуй, в следующий раз, когда вы будете здесь, она согласится переместиться в спальню.", null));
 				
 			} else {
-				responses.add(new Response("Bedroom",
+				responses.add(new Response("Спальня",
 						((Helena) Main.game.getNpc(Helena.class)).isSlutty()
-							?"Give Helena what she so desperately wants and suggest that the two of you head to her bedroom."
-							:"Ask Helena if she'd like to head into her bedroom with you.",
+							?"Дать Helena то, чего она так отчаянно желает, и предложить отправиться в ее спальню."
+							:"Спросить Helena, не хочет ли она пойти в спальню вместе с вами.",
 						DATE_APARTMENT_BEDROOM) {
 					@Override
 					public void effects() {
@@ -1273,7 +1270,7 @@ public class HelenaHotel {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue", "Continue on out into the streets of Dominion.", PlaceType.DOMINION_HELENA_HOTEL.getDialogue(false));
+				return new Response("Продолжить", "Продолжить прогулку по улицам Dominion.", PlaceType.DOMINION_HELENA_HOTEL.getDialogue(false));
 			}
 			return null;
 		}
@@ -1315,8 +1312,8 @@ public class HelenaHotel {
 		public Response getResponse(int responseTab, int index) {
 			if(firstKissScene) {
 				if(index==1) {
-					return new Response("Leave",
-							"Completely overwhelmed with what's just happened, Helena has run off and needs time in which to recover. Perhaps the next time you take her on a date, she'll be willing to take things further with you...",
+					return new Response("Уйти",
+							"Совершенно ошеломленная произошедшим, Helena убежала, и ей нужно время, чтобы прийти в себя. Возможно, в следующий раз, когда вы поведете ее на свидание, она будет готова зайти еще дальше...",
 							DATE_APARTMENT_LEAVE) {
 						@Override
 						public void effects() {
@@ -1327,7 +1324,7 @@ public class HelenaHotel {
 				
 			} else {
 				if(index==0) {
-					return new Response("Leave", "Tell Helena that you need to be going now.", DATE_APARTMENT_LEAVE) {
+					return new Response("Уйти", "Сказать Helena, что вам пора идти.", DATE_APARTMENT_LEAVE) {
 						@Override
 						public void effects() {
 							Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/helenaHotel/hotelDate", "DATE_APARTMENT_KISS_LEAVE"));
@@ -1336,7 +1333,7 @@ public class HelenaHotel {
 					};
 					
 				} else if(index==1) {
-					return new Response("Bedroom", "Go to Helena's bedroom with her.", DATE_APARTMENT_BEDROOM) {
+					return new Response("Спальня", "Отправиться в спальню вместе с Helena.", DATE_APARTMENT_BEDROOM) {
 						@Override
 						public void effects() {
 							Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/helenaHotel/hotelDate", "DATE_APARTMENT_KISS_BEDROOM"));
@@ -1371,8 +1368,8 @@ public class HelenaHotel {
 					&& !Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.helenaDateRomanticSetupEatenOut)
 					&& Main.game.getNpc(Helena.class).isVaginaVirgin()) { // If romantic scene and Helena is still a virgin, you are led into giving oral:
 				responses.add(new ResponseSex(
-						"Perform cunnilingus",
-						"Push Helena onto the bed, drop your head between her legs, and start eating her out.",
+						"Куннилингус",
+						"Повалить Helena на кровать, опуститься головой между ее ног и начать ласкать ее губами.",
 						true,
 						true,
 						getHelenaSexManager(false,
@@ -1397,8 +1394,8 @@ public class HelenaHotel {
 				
 			} else { // This is not a romantic scene, so give all options:
 				responses.add(new ResponseSex(
-						"Finger her",
-						"Finger Helena's pussy while simultaneously giving her breasts some oral attention.",
+						"Ласкать пальцами",
+						"Ласкать киску Helena пальцами, одновременно посасывая ее грудь.",
 						true,
 						true,
 						getHelenaSexManager(false,
@@ -1440,15 +1437,15 @@ public class HelenaHotel {
 				
 				if(Main.game.getPlayer().hasPenis()) {
 					if(!Main.game.getNpc(Helena.class).getFetishDesire(Fetish.FETISH_BREASTS_SELF).isPositive()) {
-						responses.add(new Response("Receive paizuri", "Helena isn't ready to go this far with you yet...", null));
+						responses.add(new Response("Принять пайзури", "Helena еще не готова зайти так далеко с тобой...", null));
 						
 					} else if(Main.game.getPlayer().isTaur()) {
-						responses.add(new Response("Receive paizuri", "As you are a taur, Helena can't get into a suitable position in which to give you a titjob...", null));
+						responses.add(new Response("Принять пайзури", "Так как ты таур, Helena не может принять удобную позу, чтобы сделать тебе титджоб...", null));
 						
 					} else {
 						responses.add(new ResponseSex(
-								"Receive paizuri",
-								"Get Helena to push her breasts together and give you a titjob.",
+								"Принять пайзури",
+								"Заставить Helena сжать грудь и сделать тебе титджоб.",
 								true,
 								true,
 								getHelenaSexManager(false,
@@ -1481,12 +1478,12 @@ public class HelenaHotel {
 				}
 				
 				if(!Main.game.getNpc(Helena.class).getFetishDesire(Fetish.FETISH_BREASTS_SELF).isPositive()) {
-					responses.add(new Response("Perform cunnilingus", "Helena isn't ready to go this far with you yet...", null));
+					responses.add(new Response("Куннилингус", "Helena еще не готова зайти так далеко с тобой...", null));
 					
 				} else {
 					responses.add(new ResponseSex(
-							"Perform cunnilingus",
-							"Push Helena onto the bed, drop your head between her legs, and start eating her out.",
+							"Куннилингус",
+							"Повалить Helena на кровать, опуститься головой между ее ног и начать ласкать ее губами.",
 							true,
 							true,
 							getHelenaSexManager(false,
@@ -1519,15 +1516,15 @@ public class HelenaHotel {
 	
 				if(Main.game.getPlayer().hasVagina()) {
 					if(!Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.VAGINA, true)) {
-						responses.add(new Response("Receive cunnilingus", "As you cannot access your vagina, Helena cannot perform oral on you...", null));
+						responses.add(new Response("Принять куннилингус", "Так как у тебя нет доступа к влагалищу, Helena не может сделать тебе куннилингус...", null));
 						
 					} else if(!Main.game.getNpc(Helena.class).hasFetish(Fetish.FETISH_ORAL_RECEIVING)) {
-						responses.add(new Response("Receive cunnilingus", "Helena isn't ready to go this far with you yet...", null));
+						responses.add(new Response("Принять куннилингус", "Helena еще не готова зайти так далеко с тобой...", null));
 						
 					} else {
 						responses.add(new ResponseSex(
-								"Receive cunnilingus",
-								"Get Helena to get down on her knees and eat you out.",
+								"Принять куннилингус",
+								"Заставить Helena опуститься на колени и отсосать тебе.",
 								true,
 								true,
 								getHelenaSexManager(false,
@@ -1568,15 +1565,15 @@ public class HelenaHotel {
 	
 				if(Main.game.getPlayer().hasPenis()) {
 					if(!Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.PENIS, true)) {
-						responses.add(new Response("Receive blowjob", "As you cannot access your penis, Helena cannot perform oral on you...", null));
+						responses.add(new Response("Получить минет", "Так как ты не можешь получить доступ к своему члену, Helena не может отсосать тебе...", null));
 						
 					} else if(!Main.game.getNpc(Helena.class).hasFetish(Fetish.FETISH_ORAL_RECEIVING)) {
-						responses.add(new Response("Receive blowjob", "Helena isn't ready to go this far with you yet...", null));
+						responses.add(new Response("Получить минет", "Helena еще не готова зайти так далеко с тобой...", null));
 						
 					} else {
 						responses.add(new ResponseSex(
-								"Receive blowjob",
-								"Get Helena to get down on her knees and suck your cock.",
+								"Получить минет",
+								"Заставить Helena опуститься на колени и сосать твой член.",
 								true,
 								true,
 								getHelenaSexManager(false,
@@ -1619,15 +1616,15 @@ public class HelenaHotel {
 				
 				if(!Main.game.getNpc(Helena.class).hasFetish(Fetish.FETISH_ORAL_GIVING)
 						|| !Main.game.getNpc(Helena.class).hasFetish(Fetish.FETISH_ORAL_RECEIVING)) {
-					responses.add(new Response("Sixty-nine", "Helena isn't ready to do this with you just yet...", null));
+					responses.add(new Response("Шестьдесят девять", "Helena еще не готова заняться этим с тобой...", null));
 					
 				} else if(Main.game.getPlayer().isTaur()) {
-					responses.add(new Response("Sixty-nine", "As you are a taur, you can't get into a suitable position in which to sixty-nine with Helena...", null));
+					responses.add(new Response("Шестьдесят девять", "Так как ты тавр, ты не можешь принять удобную позу для секса в стиле «шестьдесят девять» с Helena...", null));
 					
 				} else if(Main.game.getNpc(Helena.class).hasFetish(Fetish.FETISH_DOMINANT)) {
 					responses.add(new ResponseSex(
-							"Sixty-nine",
-							"Suggest that Helena sit on your face and bend down to mutually perform oral on one another...",
+							"Шестьдесят девять",
+							"Предложить Helena сесть тебе на лицо и наклониться, чтобы вы могли отсасывать друг другу...",
 							true, true,
 							getHelenaSexManager(true,
 									SexPosition.LYING_DOWN, SexSlotLyingDown.SIXTY_NINE, SexSlotLyingDown.LYING_DOWN,
@@ -1660,8 +1657,8 @@ public class HelenaHotel {
 					
 				} else {
 					responses.add(new ResponseSex(
-							"Sixty-nine",
-							"Suggest you sit on Helena's face and bend down to mutually perform oral on one another...",
+							"Шестьдесят девять",
+							"Предложить самому сесть Helena на лицо и наклониться, чтобы вы могли отсасывать друг другу...",
 							true, true,
 							getHelenaSexManager(false,
 									SexPosition.LYING_DOWN, SexSlotLyingDown.LYING_DOWN, SexSlotLyingDown.SIXTY_NINE,
@@ -1694,22 +1691,22 @@ public class HelenaHotel {
 				}
 				
 				if(!Main.game.getNpc(Helena.class).hasFetish(Fetish.FETISH_ORAL_GIVING)) {
-					responses.add(new Response("Scissoring", "Helena isn't ready to do this with you just yet...", null));
+					responses.add(new Response("Скрайсинг", "Helena еще не готова заняться этим с тобой...", null));
 					
 				} else if(!Main.game.getPlayer().hasVagina()) {
-					responses.add(new Response("Scissoring", "You do not have a vagina, so you cannot scissor with Helena...", null));
+					responses.add(new Response("Скрайсинг", "У тебя нет влагалища, поэтому ты не можешь заняться скрайсингом с Helena...", null));
 
 				} else if(!Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.VAGINA, true)) {
-					responses.add(new Response("Scissoring", "As you cannot access your vagina, you cannot scissor with Helena...", null));
+					responses.add(new Response("Скрайсинг", "Так как у тебя нет доступа к влагалищу, ты не можешь заняться скрайсингом с Helena...", null));
 					
 				} else if(Main.game.getPlayer().isTaur()) {
-					responses.add(new Response("Scissoring", "As you are a taur, you can't get into a suitable position in which to scissor with Helena...", null));
+					responses.add(new Response("Скрайсинг", "Поскольку ты таур, ты не можешь принять подходящую позу для скрайсинга с Helena...", null));
 					
 				} else {
 					if(Main.game.getNpc(Helena.class).hasFetish(Fetish.FETISH_DOMINANT)) {
 						responses.add(new ResponseSex(
-								"Scissoring",
-								"Suggest that the two of you scissor with one another...",
+								"Скрайсинг",
+								"Предложить вам обоим заняться скрайсингом...",
 								true, true,
 								getHelenaSexManager(true,
 										SexPosition.LYING_DOWN, SexSlotLyingDown.SCISSORING, SexSlotLyingDown.LYING_DOWN,
@@ -1740,8 +1737,8 @@ public class HelenaHotel {
 						
 					} else {
 						responses.add(new ResponseSex(
-								"Scissoring",
-								"Suggest that the two of you scissor with one another...",
+								"Скрайсинг",
+								"Предложить вам обоим заняться скрайсингом...",
 								true, true,
 								getHelenaSexManager(false,
 										SexPosition.LYING_DOWN, SexSlotLyingDown.LYING_DOWN, SexSlotLyingDown.SCISSORING,
@@ -1775,15 +1772,15 @@ public class HelenaHotel {
 				if(!Main.game.getNpc(Helena.class).isVaginaVirgin()) {
 					if(Main.game.getNpc(Helena.class).hasFetish(Fetish.FETISH_DOMINANT)) {
 						if(!Main.game.getPlayer().hasPenis()) {
-							responses.add(new Response("Cowgirl", "As you don't have a penis, you can't get ridden by Helena...", null));
+							responses.add(new Response("Наездница", "Так как у тебя нет пениса, Helena не сможет оседлать тебя...", null));
 
 						} else if(!Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.PENIS, true)) {
-							responses.add(new Response("Cowgirl", "As you can't gain access to your penis, you can't get ridden by Helena...", null));
+							responses.add(new Response("Наездница", "Так как у тебя нет доступа к пенису, Helena не сможет оседлать тебя...", null));
 							
 						} else {
 							responses.add(new ResponseSex(
-									"Cowgirl",
-									"Let Helena dominantly ride your cock.",
+									"Наездница",
+									"Позволь Helena властно оседлать твой член.",
 									true, true,
 									getHelenaSexManager(true,
 											SexPosition.LYING_DOWN, SexSlotLyingDown.COWGIRL, SexSlotLyingDown.LYING_DOWN,
@@ -1804,15 +1801,15 @@ public class HelenaHotel {
 						
 					} else { // SUBMISSIVE:
 						if(!Main.game.getPlayer().hasPenis()) {
-							responses.add(new Response("Missionary", "As you don't have a penis, you can't dominantly fuck Helena in the missionary position...", null));
+							responses.add(new Response("Миссионерская", "Так как у тебя нет пениса, ты не сможешь властно трахать Helena в миссионерской позиции...", null));
 							
 						} else if(!Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.PENIS, true)) {
-							responses.add(new Response("Missionary", "As you can't gain access to your penis, you can't fuck Helena...", null));
+							responses.add(new Response("Миссионерская", "Так как у тебя нет доступа к пенису, ты не сможешь трахать Helena...", null));
 							
 						} else {
 							responses.add(new ResponseSex(
-									"Missionary",
-									"Dominantly fuck Helena in the missionary position.",
+									"Миссионерская",
+									"Властно трахай Helena в миссионерской позиции.",
 									true, true,
 									getHelenaSexManager(false,
 											SexPosition.LYING_DOWN, SexSlotLyingDown.LYING_DOWN, SexSlotLyingDown.MISSIONARY,
@@ -1832,15 +1829,15 @@ public class HelenaHotel {
 						}
 						
 						if(!Main.game.getPlayer().hasPenis()) {
-							responses.add(new Response("Doggy-style", "As you don't have a penis, you can't dominantly fuck Helena in the doggy-style position...", null));
+							responses.add(new Response("Догги-стайл", "Так как у тебя нет пениса, ты не можешь доминантно трахать Helena в позе догги-стайл...", null));
 							
 						} else if(!Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.PENIS, true)) {
-							responses.add(new Response("Doggy-style", "As you can't gain access to your penis, you can't fuck Helena...", null));
+							responses.add(new Response("Догги-стайл", "Так как у тебя нет доступа к пенису, ты не сможешь трахать Helena...", null));
 							
 						} else {
 							responses.add(new ResponseSex(
-									"Doggy-style",
-									"Dominantly fuck Helena in the doggy-style position.",
+									"Догги-стайл",
+									"Доминантно трахать Helena в позе догги-стайл.",
 									true, true,
 									getHelenaSexManager(false,
 											SexPosition.ALL_FOURS, SexSlotAllFours.ALL_FOURS, SexSlotAllFours.BEHIND,
@@ -1860,18 +1857,18 @@ public class HelenaHotel {
 						}
 						
 						if(!Main.game.getPlayer().hasPenis()) {
-							responses.add(new Response("Mating press", "As you don't have a penis, you can't dominantly breed Helena...", null));
+							responses.add(new Response("Прессинг при спаривании", "Так как у тебя нет пениса, ты не можешь доминантно осеменять Helena...", null));
 							
 						} else if(Main.game.getNpc(Helena.class).isVisiblyPregnant()) {
-							responses.add(new Response("Mating press", "As Helena already has a swollen, pregnant belly, she wouldn't want you to push her down into this position...", null));
+							responses.add(new Response("Прессинг при спаривании", "Поскольку у Helena уже раздутый, беременный живот, она вряд ли захочет, чтобы ты прижал её в этой позе...", null));
 							
 						} else if(!Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.PENIS, true)) {
-							responses.add(new Response("Mating press", "As you can't gain access to your penis, you can't fuck Helena...", null));
+							responses.add(new Response("Прессинг при спаривании", "Так как у тебя нет доступа к пенису, ты не сможешь трахать Helena...", null));
 							
 						} else {
 							responses.add(new ResponseSex(
-									"Mating press",
-									"Push Helena down onto her back and immediately start breeding her.",
+									"Прессинг при спаривании",
+									"Повали Helena на спину и немедленно начни её осеменять.",
 									true, true,
 									getHelenaSexManager(false,
 											SexPosition.LYING_DOWN, SexSlotLyingDown.LYING_DOWN, SexSlotLyingDown.MATING_PRESS,
@@ -1899,17 +1896,16 @@ public class HelenaHotel {
 					
 				} else {
 					if(!Main.game.getNpc(Helena.class).hasFetish(Fetish.FETISH_ORAL_RECEIVING)) {
-						responses.add(new Response("Virginity", "Helena isn't going to want to discuss losing her virginity until after she's received oral from you...", null));
+						responses.add(new Response("Девственность", "Helena вряд ли захочет обсуждать потерю девственности, пока ты не отсосешь ей...", null));
 						
 					} else if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.helenaDateVirginityTalk)) {
 						responses.add(new Response(
-								"Virginity",
-								"Helena has already told you that she's unwilling to lose her virginity."
-									+ "<br/>[style.italicsMinorGood(Perhaps you could arrange something with Scarlett the next time you take Helena on a date...)]",
+								"Девственность",
+								"Helena уже сказала тебе, что не готова лишиться девственности.<br/>[style.italicsMinorGood(Возможно, тебе удастся договориться со Scarlett, когда в следующий раз пойдешь с Helena на свидание...)]",
 								null));
 						
 					} else {
-						responses.add(new Response("Virginity", "Ask Helena if she's ready to lose her virginity to you.", DATE_APARTMENT_BEDROOM) {
+						responses.add(new Response("Девственность", "Спросить у Helena, готова ли она отдать тебе девственность.", DATE_APARTMENT_BEDROOM) {
 							@Override
 							public void effects() {
 								Main.game.getTextEndStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/helenaHotel/hotelDate", "DATE_APARTMENT_BEDROOM_VIRGINITY_TALK"));
@@ -1923,12 +1919,12 @@ public class HelenaHotel {
 				// Anal:
 				if(Main.game.isAnalContentEnabled()) {
 					if(!Main.game.getNpc(Helena.class).hasFetish(Fetish.FETISH_ORAL_RECEIVING)) {
-						responses.add(new Response("Perform anilingus", "Helena will not want to receive anilingus until after she's received cunnilingus from you.", null));
+						responses.add(new Response("Заняться анилингусом", "Helena не захочет анилингуса, пока ты не отсосешь ей клитор.", null));
 						
 					} else if(Main.game.getNpc(Helena.class).hasFetish(Fetish.FETISH_DOMINANT)) {
 						responses.add(new ResponseSex(
-								"Anilingus face-sitting",
-								"Get Helena to sit on your face so that you can perform anilingus on her.",
+								"Анилингус в позе «фейс-ситинг»",
+								"Заставить Helena сесть тебе на лицо, чтобы заняться анилингусом.",
 								true, true,
 								getHelenaSexManager(true,
 										SexPosition.LYING_DOWN, SexSlotLyingDown.FACE_SITTING_REVERSE, SexSlotLyingDown.LYING_DOWN,
@@ -1956,8 +1952,8 @@ public class HelenaHotel {
 						
 					} else {
 						responses.add(new ResponseSex(
-								"Perform anilingus",
-								"Get Helena to present her ass to you so that you can perform anilingus on her.",
+								"Заняться анилингусом",
+								"Заставить Helena подставить тебе задницу, чтобы заняться анилингусом.",
 								true, true,
 								getHelenaSexManager(false,
 										SexPosition.ALL_FOURS, SexSlotAllFours.ALL_FOURS, SexSlotAllFours.BEHIND_ORAL,
@@ -1989,17 +1985,17 @@ public class HelenaHotel {
 					
 					if(Main.game.getNpc(Helena.class).isAssVirgin()) {
 						if(!Main.game.getPlayer().hasPenis()) {
-							responses.add(new Response("Take anal virginity", "As you don't have a penis, you can't take Helena's anal virginity...", null));
+							responses.add(new Response("Лишить анальной девственности", "Так как у тебя нет пениса, ты не можешь лишить Helena анальной девственности...", null));
 							
 						} else if(!Main.game.getNpc(Helena.class).getFetishDesire(Fetish.FETISH_ANAL_RECEIVING).isPositive()) {
-							responses.add(new Response("Take anal virginity",
-									"Helena isn't at all interested in losing her anal virginity. Perhaps if you eased her into it by performing anilingus on her first, she could be convinced otherwise...",
+							responses.add(new Response("Лишить анальной девственности",
+									"Helena совсем не горит желанием лишиться своей анальной девственности. Возможно, если ты сначала подготовишь её с помощью анилингуса, её можно будет переубедить...",
 									null));
 							
 						} else {
 							responses.add(new ResponseSex(
-									"Take anal virginity",
-									"Suggest to Helena that you could take her anal virginity...",
+									"Лишить анальной девственности",
+									"Предложить Helena, что ты мог бы лишить её анальной девственности...",
 									true, true,
 									getHelenaSexManager(false,
 											Main.game.getNpc(Helena.class).hasFetish(Fetish.FETISH_DOMINANT)
@@ -2040,11 +2036,11 @@ public class HelenaHotel {
 					} else {
 						if(Main.game.getNpc(Helena.class).hasFetish(Fetish.FETISH_DOMINANT)) {
 							if(!Main.game.getPlayer().hasPenis()) {
-								responses.add(new Response("Cowgirl (anal)", "As you don't have a penis, you can't get Helena to anally ride your cock...", null));
+								responses.add(new Response("Наездница (анально)", "Так как у тебя нет пениса, ты не можешь заставить Helena оседлать твой член анально...", null));
 							} else {
 								responses.add(new ResponseSex(
-										"Cowgirl (anal)",
-										"Let Helena use her ass to dominantly ride your cock.",
+										"Наездница (анально)",
+										"Позволить Helena доминантно оседлать твой член, используя свою задницу.",
 										true, true,
 										getHelenaSexManager(false,
 												SexPosition.LYING_DOWN, SexSlotLyingDown.COWGIRL, SexSlotLyingDown.LYING_DOWN,
@@ -2065,11 +2061,11 @@ public class HelenaHotel {
 							
 						} else {
 							if(!Main.game.getPlayer().hasPenis()) {
-								responses.add(new Response("Doggy-style (anal)", "As you don't have a penis, you can't dominantly fuck Helena's ass in the doggy-style position...", null));
+								responses.add(new Response("Догги-стайл (анально)", "Так как у тебя нет пениса, ты не можешь доминантно трахать анус Helena в позе догги-стайл...", null));
 							} else {
 								responses.add(new ResponseSex(
-										"Doggy-style (anal)",
-										"Dominantly fuck Helena's ass in the doggy-style position.",
+										"Догги-стайл (анально)",
+										"Доминантно трахать анус Helena в позе догги-стайл.",
 										true, true,
 										getHelenaSexManager(false,
 												SexPosition.ALL_FOURS, SexSlotAllFours.ALL_FOURS, SexSlotAllFours.BEHIND,
@@ -2093,12 +2089,12 @@ public class HelenaHotel {
 				
 				if(Main.game.isFootContentEnabled() && Main.game.getPlayer().hasPenis()) {
 					if(Main.game.getPlayer().isTaur()) {
-						responses.add(new Response("Talon-job", "As you are a taur, you can't get into a suitable position in which Helena could give you a talon-job...", null));
+						responses.add(new Response("Когтистый кунилингус", "Поскольку ты таур, тебе трудно принять удобную позу, чтобы Helena могла отработать тебе когтями...", null));
 						
 					} else {
 						responses.add(new ResponseSex(
-								"Talon-job",
-								"Ask Helena to use her talons to jerk you off.",
+								"Когтистый кунилингус",
+								"Попросить Helena использовать свои когти, чтобы отдрочить тебе.",
 								true, true,
 								getHelenaSexManager(true,
 										SexPosition.SITTING, SexSlotSitting.SITTING, SexSlotSitting.PERFORMING_ORAL,
@@ -2139,7 +2135,7 @@ public class HelenaHotel {
 		}
 	};
 
-	public static final DialogueNode DATE_APARTMENT_BEDROOM_AFTER_ROMANCE_SEX = new DialogueNode("Finished", "Helena seems to have had enough and pulls away...", true) {
+	public static final DialogueNode DATE_APARTMENT_BEDROOM_AFTER_ROMANCE_SEX = new DialogueNode("Завершено", "Похоже, с Helena хватит, и она отстраняется...", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 2*60;
@@ -2151,10 +2147,10 @@ public class HelenaHotel {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==0) {
-				return new Response("Leave",
+				return new Response("Уйти",
 						Main.game.getPlayer().hasPenis()
-							?"Decide not to take Helena's virginity tonight, and after spending some time lying beside her, tell her that you need to leave."
-							:"Decide not to do anything else with Helena tonight, and after spending some time lying beside her, tell her that you need to leave.",
+							?"Решить не лишать Helena девственности сегодня ночью, и после того, как вы полежите рядом, сказать ей, что тебе пора уходить."
+							:"Решить не делать сегодня с Helena ничего больше, и после того, как вы полежите рядом, сказать ей, что тебе пора уходить.",
 						DATE_APARTMENT_LEAVE) {
 					@Override
 					public int getSecondsPassed() {
@@ -2167,18 +2163,16 @@ public class HelenaHotel {
 				};
 				
 			} else if(index==1) {
-				return new Response("Shower & sleep",
-						"Decide not to take Helena's virginity and instead join her in the shower before going to sleep in her bed with her."
-								+ "<br/>[style.italicsGood(Cleans <b>a maximum of "+Units.fluid(500)+"</b> of fluids from all orifices.)]"
-								+ "<br/>[style.italicsGood(This will clean <b>only</b> your currently equipped clothing.)]",
+				return new Response("Принять душ и поспать",
+						"Решить не лишать Helena девственности, а вместо этого отправиться с ней в душ, после чего лечь спать в её постель вместе с ней.<br/>[style.italicsGood(Это очистит <b> максимум "+Units.fluid(500)+"</b> жидкостей из всех отверстий.)]<br/>[style.italicsGood(Это очистит <b>только</b> твою текущую одежду.)]",
 						DATE_APARTMENT_BEDROOM_AFTER_SEX_SLEEP);
 			}
 			
 			if(Main.game.getPlayer().hasPenis()) {
 				if(index==2) {
 					return new ResponseSex(
-							"Take virginity (as sub)",
-							"Let Helena lose her virginity at her own pace by letting her ride your cock.<br/>[style.italicsSub(This will cause Helena to permanently gain the dominant fetish!)]",
+							"Лишить девственности (как саб)",
+							"Позволить Helena потерять девственность в её собственном темпе, позволив ей оседлать твой член.<br/>[style.italicsSub(Это навсегда даст Helena фетиш доминанта!)]",
 							true, true,
 							getHelenaSexManager(true,
 									SexPosition.LYING_DOWN, SexSlotLyingDown.COWGIRL, SexSlotLyingDown.LYING_DOWN,
@@ -2207,11 +2201,11 @@ public class HelenaHotel {
 					
 				} else if(index==3) {
 					return new ResponseSex(
-							"Take virginity (as dom)",
+							"Лишить девственности (как доминант)",
 							(Main.game.getPlayer().isTaur()
-									?"Mount Helena and take her virginity in the doggy-style position."
-									:"Take Helena's virginity in the missionary position.")
-								+ "<br/>[style.italicsSub(This will cause Helena to permanently gain the submissive fetish!)]",
+									?"Насадить на Helena и лишить её девственности в позе догги-стайл."
+									:"Лишить Helena девственности в миссионерской позе.")
+								+ "<br/>[style.italicsSub(Это навсегда привьет Helena фетиш подчинения!)]",
 							true, true,
 							getHelenaSexManager(false,
 									Main.game.getPlayer().isTaur()
@@ -2248,11 +2242,11 @@ public class HelenaHotel {
 					
 				} else if(index==4) {
 					return new ResponseSex(
-							"Break her",
+							"Сломать её",
 							(Main.game.getPlayer().isTaur()
-									?"Mount Helena and sadistically take her virginity in the doggy-style position."
-									:"Sadistically take Helena's virginity in the missionary position.")
-								+ "<br/>[style.italicsSub(This will cause Helena to permanently gain the submissive and masochistic fetishes!)]",
+									?"Насадить на Helena и садистски лишить её девственности в позе догги-стайл."
+									:"Садистски лишить Helena девственности в миссионерской позе.")
+								+ "<br/>[style.italicsSub(Это навсегда привьет Helena фетиши подчинения и мазохизма!)]",
 							Util.newArrayListOfValues(Fetish.FETISH_SADIST),
 							null,
 							CorruptionLevel.FIVE_CORRUPT,
@@ -2302,7 +2296,7 @@ public class HelenaHotel {
 		}
 	};
 
-	public static final DialogueNode DATE_APARTMENT_BEDROOM_AFTER_SEX = new DialogueNode("Finished", "Helena seems to have had enough and pulls away...", true) {
+	public static final DialogueNode DATE_APARTMENT_BEDROOM_AFTER_SEX = new DialogueNode("Завершено", "Похоже, с Helena хватит, и она отстраняется...", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 2*60;
@@ -2319,8 +2313,8 @@ public class HelenaHotel {
 		public Response getResponse(int responseTab, int index) {
 			if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.helenaBedroomFromNest)) { // Helena & the player have entered her bedroom directly from the nest, and so should return there:
 				if(index==1) {
-					return new Response("Leave",
-							"Do as Helena asks and exit her apartment.",
+					return new Response("Уйти",
+							"Сделать так, как просит Helena, и выйти из её квартиры.",
 							DATE_APARTMENT_LEAVE) {
 						@Override
 						public void effects() {
@@ -2337,8 +2331,8 @@ public class HelenaHotel {
 				
 			} else {
 				if(index==0) {
-					return new Response("Leave",
-							"Tell Helena that you should be leaving right away...",
+					return new Response("Уйти",
+							"Сказать Helena, что тебе пора уходить...",
 							DATE_APARTMENT_LEAVE) {
 						@Override
 						public void effects() {
@@ -2348,10 +2342,8 @@ public class HelenaHotel {
 					};
 					
 				} else if(index==1) {
-					return new Response("Shower & sleep",
-							"Join Helena in the shower before going to sleep in her bed with her."
-								+ "<br/>[style.italicsGood(Cleans <b>a maximum of "+Units.fluid(500)+"</b> of fluids from all orifices.)]"
-								+ "<br/>[style.italicsGood(This will clean <b>only</b> your currently equipped clothing.)]",
+					return new Response("Принять душ и поспать",
+							"Присоединиться к Helena в душе, прежде чем лечь спать в её постель вместе с ней.<br/>[style.italicsGood(Очистить <b> максимум "+Units.fluid(500)+"</b> жидкостей из всех отверстий.)]<br/>[style.italicsGood(Это очистит <b>только</b> твою текущую одежду.)]",
 							DATE_APARTMENT_BEDROOM_AFTER_SEX_SLEEP);
 				}
 			}
@@ -2379,8 +2371,8 @@ public class HelenaHotel {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Wake up",
-						"You wake up the next morning in Helena's bed...",
+				return new Response("Проснуться",
+						"Следующее утро ты просыпаешься в постели Helena...",
 						DATE_APARTMENT_BEDROOM_AFTER_SEX_SLEEP_WAKE_UP);
 			} 
 			return null;
@@ -2400,8 +2392,8 @@ public class HelenaHotel {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==0) {
-				return new Response("Leave",
-						"Tell Helena that you should be leaving right away...",
+				return new Response("Уйти",
+						"Сказать Helena, что тебе пора уходить...",
 						DATE_APARTMENT_LEAVE) {
 					@Override
 					public void effects() {
@@ -2410,8 +2402,8 @@ public class HelenaHotel {
 				};
 				
 			} else if(index==1) {
-				return new Response("Breakfast",
-						"Take up Helena's offer of having breakfast with her before leaving.",
+				return new Response("Завтрак",
+						"Принять предложение Helena позавтракать вместе перед уходом.",
 						DATE_APARTMENT_BREAKFAST) {
 					@Override
 					public void effects() {
@@ -2423,8 +2415,8 @@ public class HelenaHotel {
 			} else if(index==2 && ((Helena)Main.game.getNpc(Helena.class)).isSlutty()) {
 				if(Main.game.getNpc(Helena.class).hasFetish(Fetish.FETISH_DOMINANT)) {
 					return new ResponseSex(
-							"Morning sex",
-							"Let Helena take charge and have sex with her.",
+							"Утренний секс",
+							"Позволить Helena взять инициативу в свои руки и заняться с ней сексом.",
 							true, true,
 							getHelenaSexManager(true,
 									SexPosition.LYING_DOWN, SexSlotLyingDown.COWGIRL, SexSlotLyingDown.LYING_DOWN,
@@ -2442,8 +2434,8 @@ public class HelenaHotel {
 					
 				} else {
 					return new ResponseSex(
-							"Morning sex",
-							"Take charge and have sex with Helena.",
+							"Утренний секс",
+							"Взять инициативу в свои руки и заняться сексом с Helena.",
 							true, true,
 							getHelenaSexManager(false,
 									SexPosition.LYING_DOWN, SexSlotLyingDown.LYING_DOWN, SexSlotLyingDown.MISSIONARY,
@@ -2467,7 +2459,7 @@ public class HelenaHotel {
 		}
 	};
 	
-	public static final DialogueNode DATE_APARTMENT_BEDROOM_AFTER_SEX_MORNING = new DialogueNode("Finished", "Helena seems to have had enough and pulls away...", true) {
+	public static final DialogueNode DATE_APARTMENT_BEDROOM_AFTER_SEX_MORNING = new DialogueNode("Завершено", "Похоже, с Helena хватит, и она отстраняется...", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			Main.game.getPlayer().cleanAllClothing(false, false);
@@ -2486,8 +2478,8 @@ public class HelenaHotel {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==0) {
-				return new Response("Leave",
-						"Tell Helena that you should be leaving now...",
+				return new Response("Уйти",
+						"Сказать Helena, что тебе пора уходить...",
 						DATE_APARTMENT_LEAVE) {
 					@Override
 					public void effects() {
@@ -2496,8 +2488,8 @@ public class HelenaHotel {
 				};
 				
 			} else if(index==1) {
-				return new Response("Breakfast",
-						"Take up Helena's offer of having breakfast with her before leaving.",
+				return new Response("Завтрак",
+						"Принять предложение Helena позавтракать вместе перед уходом.",
 						DATE_APARTMENT_BREAKFAST) {
 					@Override
 					public void effects() {
@@ -2528,8 +2520,8 @@ public class HelenaHotel {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Eat",
-						"Enjoy your breakfast with Helena, before taking your leave and heading back out into Dominion.",
+				return new Response("Позавтракать",
+						"Насладиться завтраком с Helena, прежде чем отправиться обратно в Dominion.",
 						DATE_APARTMENT_LEAVE) {
 					@Override
 					public void effects() {

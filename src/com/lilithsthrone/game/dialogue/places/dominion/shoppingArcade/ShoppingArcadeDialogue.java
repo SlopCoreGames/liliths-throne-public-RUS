@@ -47,9 +47,9 @@ public class ShoppingArcadeDialogue {
 	
 	public static String getCoreResponseTab(int index) {
 		if(index==0) {
-			return "Actions";
+			return "Действия";
 		} else if(index==1) {
-			return "Fast travel";
+			return "Быстрое перемещение";
 		}
 		return null;
 	}
@@ -57,7 +57,7 @@ public class ShoppingArcadeDialogue {
 	public static Response getFastTravelResponses(int responseTab, int index) {
 		if(responseTab==1) {
 			if (index == 1) {
-				return new Response("Entrance", "Fast travel to the Shopping Arcade's main entrance.", PlaceType.SHOPPING_ARCADE_ENTRANCE.getDialogue(false)){
+				return new Response("Вход", "Быстрое перемещение к главному входу в Торговую аркаду.", PlaceType.SHOPPING_ARCADE_ENTRANCE.getDialogue(false)){
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setLocation(WorldType.SHOPPING_ARCADE, PlaceType.SHOPPING_ARCADE_ENTRANCE, false);
@@ -66,7 +66,7 @@ public class ShoppingArcadeDialogue {
 				};
 	
 			} else if (index == 2) {
-				return new Response("Ralph's Snacks", "Fast travel to Ralph's Snacks.", PlaceType.SHOPPING_ARCADE_RALPHS_SHOP.getDialogue(false)){
+				return new Response("Закуски от Ralph", "Быстрое перемещение к закускам Ralph.", PlaceType.SHOPPING_ARCADE_RALPHS_SHOP.getDialogue(false)){
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setLocation(WorldType.SHOPPING_ARCADE, PlaceType.SHOPPING_ARCADE_RALPHS_SHOP, false);
@@ -75,7 +75,7 @@ public class ShoppingArcadeDialogue {
 				};
 	
 			} else if (index == 3) {
-				return new Response("Nyan's Clothing Emporium", "Fast travel to Nyan's Clothing Emporium.", PlaceType.SHOPPING_ARCADE_NYANS_SHOP.getDialogue(false)){
+				return new Response("Магазин одежды Nyan", "Быстрое перемещение в магазин одежды Nyan.", PlaceType.SHOPPING_ARCADE_NYANS_SHOP.getDialogue(false)){
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setLocation(WorldType.SHOPPING_ARCADE, PlaceType.SHOPPING_ARCADE_NYANS_SHOP, false);
@@ -84,7 +84,7 @@ public class ShoppingArcadeDialogue {
 				};
 	
 			} else if (index == 4) {
-				return new Response("Arcane Arts", "Fast travel to Arcane Arts.", PlaceType.SHOPPING_ARCADE_VICKYS_SHOP.getDialogue(false)){
+				return new Response("Искусства Arcane", "Быстрое перемещение в Arcane Arts.", PlaceType.SHOPPING_ARCADE_VICKYS_SHOP.getDialogue(false)){
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setLocation(WorldType.SHOPPING_ARCADE, PlaceType.SHOPPING_ARCADE_VICKYS_SHOP, false);
@@ -93,7 +93,7 @@ public class ShoppingArcadeDialogue {
 				};
 	
 			} else if (index == 5) {
-				return new Response("Succubi's Secrets", "Fast travel to Succubi's Secrets.", PlaceType.SHOPPING_ARCADE_KATES_SHOP.getDialogue(false)){
+				return new Response("Секреты Суккуба", "Быстрое перемещение в Succubi's Secrets.", PlaceType.SHOPPING_ARCADE_KATES_SHOP.getDialogue(false)){
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setLocation(WorldType.SHOPPING_ARCADE, PlaceType.SHOPPING_ARCADE_KATES_SHOP, false);
@@ -102,7 +102,7 @@ public class ShoppingArcadeDialogue {
 				};
 	
 			} else if (index == 6) {
-				return new Response("Pix's Playground", "Fast travel to the gym, 'Pix's Playground'.", PlaceType.SHOPPING_ARCADE_PIXS_GYM.getDialogue(false)){
+				return new Response("Игровая площадка Пикса", "Быстрое перемещение в спортзал «Игровая площадка Pix».", PlaceType.SHOPPING_ARCADE_PIXS_GYM.getDialogue(false)){
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setLocation(WorldType.SHOPPING_ARCADE, PlaceType.SHOPPING_ARCADE_PIXS_GYM, false);
@@ -111,7 +111,7 @@ public class ShoppingArcadeDialogue {
 				};
 	
 			} else if (index == 7) {
-				return new Response("Dream Lover", "Fast travel to Dream Lover.", PlaceType.SHOPPING_ARCADE_ASHLEYS_SHOP.getDialogue(false)){
+				return new Response("Любимец снов", "Быстрое перемещение в Dream Lover.", PlaceType.SHOPPING_ARCADE_ASHLEYS_SHOP.getDialogue(false)){
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setLocation(WorldType.SHOPPING_ARCADE, PlaceType.SHOPPING_ARCADE_ASHLEYS_SHOP, false);
@@ -120,7 +120,7 @@ public class ShoppingArcadeDialogue {
 				};
 				
 			} else if (index == 8) {
-				return new Response("The Oaken Glade", "Fast travel to the restaurant, 'The Oaken Glade'.", PlaceType.SHOPPING_ARCADE_RESTAURANT.getDialogue(false)){
+				return new Response("Дубрава", "Быстрое перемещение в ресторан «Дубрава».", PlaceType.SHOPPING_ARCADE_RESTAURANT.getDialogue(false)){
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setLocation(WorldType.SHOPPING_ARCADE, PlaceType.SHOPPING_ARCADE_RESTAURANT, false);
@@ -134,7 +134,7 @@ public class ShoppingArcadeDialogue {
 	
 	// Dialogue noes:
 	
-	public static final DialogueNode OUTSIDE = new DialogueNode("Shopping arcade", "-", false) {
+	public static final DialogueNode OUTSIDE = new DialogueNode("Торговая аркада", "-", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -149,7 +149,7 @@ public class ShoppingArcadeDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Enter", "Step through the entrance and enter the shopping arcade.", PlaceType.SHOPPING_ARCADE_ENTRANCE.getDialogue(false)){
+				return new Response("Войти", "Вы проходите через вход и оказываетесь в торговой галерее.", PlaceType.SHOPPING_ARCADE_ENTRANCE.getDialogue(false)){
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setLocation(WorldType.SHOPPING_ARCADE, PlaceType.SHOPPING_ARCADE_ENTRANCE, false);
@@ -162,7 +162,7 @@ public class ShoppingArcadeDialogue {
 		}
 	};
 	
-	public static final DialogueNode ENTRY = new DialogueNode("Entrance to the arcade", "-", false) {
+	public static final DialogueNode ENTRY = new DialogueNode("Вход в галерею", "-", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -183,7 +183,7 @@ public class ShoppingArcadeDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(responseTab==0) {
 				if (index == 1) {
-					return new Response("Exit", "Leave the Shopping Arcade.", PlaceType.DOMINION_SHOPPING_ARCADE.getDialogue(false)){
+					return new Response("Выход", "Покинуть торговую галерею.", PlaceType.DOMINION_SHOPPING_ARCADE.getDialogue(false)){
 						@Override
 						public void effects() {
 							Main.game.getPlayer().setLocation(WorldType.DOMINION, PlaceType.DOMINION_SHOPPING_ARCADE, false);
@@ -196,7 +196,7 @@ public class ShoppingArcadeDialogue {
 		
 	};
 	
-	public static final DialogueNode ARCADE = new DialogueNode("Shopping arcade", "-", false) {
+	public static final DialogueNode ARCADE = new DialogueNode("Торговая аркада", "-", false) {
 		@Override
 		public int getSecondsPassed() {
 			return 20;
@@ -222,13 +222,13 @@ public class ShoppingArcadeDialogue {
 					if(Main.game.getPlayer().getQuest(QuestLine.SIDE_WES)==Quest.WES_START) {
 						if(Vector2i.getDistance(Main.game.getPlayer().getLocation(), Main.game.getWorlds().get(WorldType.SHOPPING_ARCADE).getCell(PlaceType.SHOPPING_ARCADE_ANTIQUES).getLocation())==1) {
 							if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.wesQuestMet)) {
-								return new Response("Meet Enforcer", "You've already met Wes today, and so will be unable to meet with him again until tomorrow at the earliest...", null);
+								return new Response("Встретиться с Enforcer", "Вы уже встречались с ним сегодня, поэтому сможете увидеться снова не раньше завтрашнего дня...", null);
 								
 							} else if(Main.game.getHourOfDay()!=13) {
-								return new Response("Meet Enforcer", "The mysterious Enforcer told you to meet him between the hours of [units.time(13)] and [units.time(14)], so you'll have to come back then...", null);
+								return new Response("Встретиться с Enforcer", "Таинственный Enforcer велел вам встретиться с ним между [units.time(13)] и [units.time(14)], так что вам придется вернуться в это время...", null);
 								
 							} else {
-								return new Response("Meet Enforcer", "Loiter around the area and wait for the mysterious Enforcer to contact you...", WesQuest.WES_QUEST_SHOPPING_ARCADE_MEETING);
+								return new Response("Встретиться с Enforcer", "Побродить неподалеку в ожидании, пока таинственный Enforcer свяжется с вами...", WesQuest.WES_QUEST_SHOPPING_ARCADE_MEETING);
 							}
 						}
 					}
@@ -239,7 +239,7 @@ public class ShoppingArcadeDialogue {
 		
 	};
 	
-	public static final DialogueNode GENERIC_SHOP = new DialogueNode("Shop", "-", false) {
+	public static final DialogueNode GENERIC_SHOP = new DialogueNode("Лавка", "-", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -262,7 +262,7 @@ public class ShoppingArcadeDialogue {
 		}
 	};
 	
-	public static final DialogueNode RESTAURANT = new DialogueNode("The Oaken Glade", "-", false) {
+	public static final DialogueNode RESTAURANT = new DialogueNode("Дубрава", "-", false) {
 		@Override
 		public int getSecondsPassed() {
 			return 5*60;
@@ -281,7 +281,7 @@ public class ShoppingArcadeDialogue {
 		}
 	};
 	
-	public static final DialogueNode ANTIQUES = new DialogueNode("Antiques Shop", "-", false) {
+	public static final DialogueNode ANTIQUES = new DialogueNode("Антикварная лавка", "-", false) {
 		@Override
 		public int getSecondsPassed() {
 			return 5*60;
@@ -299,16 +299,16 @@ public class ShoppingArcadeDialogue {
 			if(responseTab==0) {
 				if(index==1) {
 					if(!Main.game.isExtendedWorkTime()) {
-						return new Response("Enter", "The antiques shop is currently closed; you'll have to return at another time if you want to take a look inside.", null);
+						return new Response("Войти", "Лавка антиквариата сейчас закрыта; если захотите заглянуть внутрь, придется вернуться в другое время.", null);
 					}
-					return new Response("Enter", "Step inside the antiques shop and take a look around.", ANTIQUES_INTERIOR);
+					return new Response("Войти", "Войти в лавку антиквариата и осмотреться.", ANTIQUES_INTERIOR);
 				}
 			}
 			return getFastTravelResponses(responseTab, index);
 		}
 	};
 	
-	public static final DialogueNode ANTIQUES_INTERIOR = new DialogueNode("Antiques Shop", "-", true) {
+	public static final DialogueNode ANTIQUES_INTERIOR = new DialogueNode("Антикварная лавка", "-", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 5*60;
@@ -331,7 +331,7 @@ public class ShoppingArcadeDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(Main.game.getCharactersTreatingCellAsHome(Main.game.getPlayerCell()).contains(Main.game.getNpc(Scarlett.class))) {
 				if(index==1) {
-					return new Response("Scarlett", "Head over to the store's employee and ask them about Scarlett.", ANTIQUES_INTERIOR_SCARLETT) {
+					return new Response("Scarlett", "Подойти к сотруднику магазина и расспросить его о Scarlett.", ANTIQUES_INTERIOR_SCARLETT) {
 						@Override
 						public void effects() {
 							Main.game.getTextEndStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/shoppingArcade/generic", "ANTIQUES_INTERIOR_SCARLETT_START"));
@@ -350,7 +350,7 @@ public class ShoppingArcadeDialogue {
 				}
 			}
 			if(index==0) {
-				return new Response("Exit", "Head back out into the Shopping Arcade.", ANTIQUES);
+				return new Response("Выход", "Вернуться в Торговую аркаду.", ANTIQUES);
 			}
 			return null;
 		}
@@ -368,7 +368,7 @@ public class ShoppingArcadeDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Explain", "Explain that while you're not here from the business which the squirrel-boy is talking about, you <i>are</i> here to take Scarlett off his hands.", ANTIQUES_INTERIOR_SCARLETT_EXPLAIN);
+				return new Response("Объяснить", "Объяснить, что, хоть вы и не из той конторы, о которой твердит бельчонок, вы <i>пришли</i>, чтобы забрать Scarlett у него.", ANTIQUES_INTERIOR_SCARLETT_EXPLAIN);
 			}
 			return null;
 		}
@@ -387,10 +387,10 @@ public class ShoppingArcadeDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				if(Main.game.getPlayer().getMoney()<10_000) {
-					return new Response("Pay ("+UtilText.formatAsMoney(10_000, "span")+")", "You cannot afford to pay the squirrel-boy the ten thousand flames he's asking for!", null);
+					return new Response("Заплатить ("+UtilText.formatAsMoney(10_000, "охват")+")", "У вас не хватит денег, чтобы отдать бельчонку десять тысяч огней, которые он просит!", null);
 					
 				} else {
-					return new Response("Pay ("+UtilText.formatAsMoney(10_000, "span")+")", "Pay the squirrel-boy the ten thousand flames he's asking for.", ANTIQUES_INTERIOR_SCARLETT_END) {
+					return new Response("Заплатить ("+UtilText.formatAsMoney(10_000, "охват")+")", "Отдать бельчонку десять тысяч огней, которые он просит.", ANTIQUES_INTERIOR_SCARLETT_END) {
 						@Override
 						public void effects() {
 							Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/shoppingArcade/generic", "ANTIQUES_INTERIOR_SCARLETT_PURCHASED"));
@@ -400,7 +400,7 @@ public class ShoppingArcadeDialogue {
 				}
 				
 			} else if(index==2) {
-				return new Response("Haggle", "Haggle with the squirrel-boy in an attempt to drive down the price which he's asking for Scarlett.", ANTIQUES_INTERIOR_SCARLETT_END) {
+				return new Response("Торговаться", "Поторговаться с бельчонком, пытаясь сбить цену, которую он запрашивает за Scarlett.", ANTIQUES_INTERIOR_SCARLETT_END) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/shoppingArcade/generic", "ANTIQUES_INTERIOR_SCARLETT_HAGGLE"));
@@ -433,8 +433,8 @@ public class ShoppingArcadeDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue",
-						"Continue on your way out into the Shopping Arcade.",
+				return new Response("Продолжить",
+						"Продолжайте свой путь к выходу в Торговую галерею.",
 						ARCADE);
 			}
 			return null;
@@ -453,14 +453,12 @@ public class ShoppingArcadeDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Toilet", "Use the toilet.", TOILETS_USE);
+				return new Response("Туалет", "Воспользоваться туалетом.", TOILETS_USE);
 				
 			} else if(index==2) {
 				List<InventorySlot> washSlots = Util.newArrayListOfValues(InventorySlot.HEAD, InventorySlot.EYES, InventorySlot.MOUTH, InventorySlot.NECK, InventorySlot.HAIR, InventorySlot.FINGER, InventorySlot.HAND, InventorySlot.WRIST);
-				return new Response("Wash",
-						"Use the sinks to wash your hands and face."
-							+ "<br/>[style.italicsGood(This will clean your "+Util.inventorySlotsToParsedStringList(washSlots, Main.game.getPlayer())+", as well as any clothing worn in these slots.)]"
-							+ "<br/>[style.italicsMinorBad(This does <b>not</b> clean companions.)]",
+				return new Response("Умыться",
+						"Используйте раковины, чтобы умыться.<br/>[style.italicsGood(Это очистит вашу "+Util.inventorySlotsToParsedStringList(washSlots, Main.game.getPlayer())+", а также любую одежду в этих слотах.)]<br/>[style.italicsMinorBad(Это <b>не</b> очищает спутников.)]",
 						TOILETS_WASH) {
 					@Override
 					public void effects() {
@@ -479,8 +477,8 @@ public class ShoppingArcadeDialogue {
 				boolean vaginaAvailable = Main.game.getPlayer().hasVagina() && Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.VAGINA, true);
 				
 				if((penisAvailable && !Main.game.getPlayer().isTaur()) || vaginaAvailable) {
-					return new Response("Glory hole (use)",
-							"One of the toilet's stalls has a glory hole in it. Enter the stall and wait for someone on the other side to service you.",
+					return new Response("Глори-хоул (использовать)",
+							"В одной из туалетных кабинок есть «дыра славы». Зайдите в кабинку и ждите, пока кто-нибудь с другой стороны обслужит вас.",
 							TOILETS_GLORY_HOLE_DOM) {
 						@Override
 						public void effects() {
@@ -489,13 +487,13 @@ public class ShoppingArcadeDialogue {
 					};
 					
 				} else if(penisAvailable && Main.game.getPlayer().isTaur()) {
-					return new Response("Glory hole (use)",
-							"Due to the shape of your [pc.legRace]'s body, you cannot get into a suitable position for using the glory hole...",
+					return new Response("Глори-хоул (использовать)",
+							"Из-за особенностей телосложения твоей [pc.legRace], ты не можешь принять удобную позу, чтобы воспользоваться глори-хоулом...",
 							null);
 					
 				} else {
-					return new Response("Glory hole (use)",
-							"You can't get access to your genitals, so can't get serviced at a glory hole.",
+					return new Response("Глори-хоул (использовать)",
+							"У вас нет доступа к своим гениталиям, поэтому вы не можете получить обслуживание в «дыре славы».",
 							null);
 				}
 				
@@ -503,8 +501,8 @@ public class ShoppingArcadeDialogue {
 				if((Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.MOUTH, true))
 						|| (Main.game.getPlayer().hasVagina() && Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.VAGINA, true))
 						|| (Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.ANUS, true))) {
-					return new Response("Glory hole (service)",
-							"One of the toilet's stalls has a glory hole in it. Enter the stall and wait to service someone on the other side.",
+					return new Response("Глори-хоул (обслуживание)",
+							"В одной из туалетных кабинок есть «дыра славы». Зайдите в кабинку и ждите, чтобы обслужить кого-то с другой стороны.",
 							TOILETS_GLORY_HOLE_SUB) {
 						@Override
 						public void effects() {
@@ -514,8 +512,8 @@ public class ShoppingArcadeDialogue {
 					};
 				
 				} else {
-					return new Response("Glory hole (service)",
-							"You can't get access to your mouth, genitals, or asshole, so can't service any strangers at the glory holes.",
+					return new Response("Глори-хоул (обслуживание)",
+							"У вас нет доступа к вашему рту, гениталиям или анусу, поэтому вы не можете обслужить незнакомцев в «дырах славы».",
 							null);
 				}
 			}
@@ -553,7 +551,7 @@ public class ShoppingArcadeDialogue {
 		}
 	};
 	
-	public static final DialogueNode TOILETS_GLORY_HOLE_DOM = new DialogueNode("Toilets", "", true) {
+	public static final DialogueNode TOILETS_GLORY_HOLE_DOM = new DialogueNode("Туалеты", "", true) {
 		@Override
 		public int getSecondsPassed() {
 			if(Main.game.isExtendedWorkTime()) {
@@ -568,7 +566,7 @@ public class ShoppingArcadeDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==0) {
-				return new Response("Leave", "On second thoughts, you don't really want some stranger having fun with your private parts...", TOILETS) {
+				return new Response("Уйти", "Если подумать, тебе не особо хочется, чтобы какой-то незнакомец развлекался с твоими интимными местами...", TOILETS) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/shoppingArcade/generic", "TOILETS_GLORY_HOLE_DOM_LEAVE", getGloryHoleCharacter()));
@@ -577,8 +575,8 @@ public class ShoppingArcadeDialogue {
 				};
 				
 			} else if(index==1) {
-				return new ResponseSex("Start",
-						UtilText.parse(getGloryHoleCharacter(), "Do as [npc.name] says and step up to the glory hole."),
+				return new ResponseSex("Начать",
+						UtilText.parse(getGloryHoleCharacter(), "Сделайте так, как говорит [npc.name], и подойдите к «дыре славы»."),
 						true, false,
 						new SMGloryHole(
 								SexPosition.GLORY_HOLE,
@@ -598,7 +596,7 @@ public class ShoppingArcadeDialogue {
 		}
 	};
 	
-	public static final DialogueNode TOILETS_GLORY_HOLE_DOM_POST_SEX = new DialogueNode("Toilets", "The stranger quickly exits their stall, and heads back into the store, leaving you to do the same...", true) {
+	public static final DialogueNode TOILETS_GLORY_HOLE_DOM_POST_SEX = new DialogueNode("Туалеты", "Незнакомец быстро выходит из своей кабинки и направляется обратно в магазин, оставляя вас делать то же самое...", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 60;
@@ -610,7 +608,7 @@ public class ShoppingArcadeDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue", "Walk out of the stall.", TOILETS) {
+				return new Response("Продолжить", "Выйти из кабинки.", TOILETS) {
 					@Override
 					public void effects() {
 						Main.game.banishNPC((NPC) getGloryHoleCharacter());
@@ -621,7 +619,7 @@ public class ShoppingArcadeDialogue {
 		}
 	};
 	
-	public static final DialogueNode TOILETS_GLORY_HOLE_SUB = new DialogueNode("Toilets", "", true) {
+	public static final DialogueNode TOILETS_GLORY_HOLE_SUB = new DialogueNode("Туалеты", "", true) {
 		@Override
 		public int getSecondsPassed() {
 			if(Main.game.isExtendedWorkTime()) {
@@ -636,7 +634,7 @@ public class ShoppingArcadeDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==0) {
-				return new Response("Leave", "On second thoughts, you don't really want to suck the cock of some random stranger...", TOILETS) {
+				return new Response("Уйти", "Если подумать, тебе не особо хочется сосать член какому-то случайному незнакомцу...", TOILETS) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/shoppingArcade/generic", "TOILETS_GLORY_HOLE_SUB_LEAVE", getGloryHoleCharacter()));
@@ -645,8 +643,8 @@ public class ShoppingArcadeDialogue {
 				};
 				
 			} else if(index==1) {
-				return new ResponseSex("Start",
-						UtilText.parse(getGloryHoleCharacter(), "Do as [npc.name] says and get ready to service [npc.her] cock."),
+				return new ResponseSex("Начать",
+						UtilText.parse(getGloryHoleCharacter(), "Сделай так, как говорит [npc.name], и приготовься обслужить [npc.her] член."),
 						true, false,
 						new SMGloryHole(
 								SexPosition.GLORY_HOLE,
@@ -666,7 +664,7 @@ public class ShoppingArcadeDialogue {
 		}
 	};
 	
-	public static final DialogueNode TOILETS_GLORY_HOLE_SUB_POST_SEX = new DialogueNode("Toilets", "The stranger quickly exits their stall, and heads back into the store, leaving you to do the same...", true) {
+	public static final DialogueNode TOILETS_GLORY_HOLE_SUB_POST_SEX = new DialogueNode("Туалеты", "Незнакомец быстро выходит из своей кабинки и направляется обратно в магазин, оставляя вас делать то же самое...", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 60;
@@ -678,7 +676,7 @@ public class ShoppingArcadeDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue", "Walk out of the stall.", TOILETS) {
+				return new Response("Продолжить", "Выйти из кабинки.", TOILETS) {
 					@Override
 					public void effects() {
 						Main.game.banishNPC((NPC) getGloryHoleCharacter());

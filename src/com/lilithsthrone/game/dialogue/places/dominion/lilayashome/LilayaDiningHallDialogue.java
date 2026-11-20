@@ -55,7 +55,7 @@ public class LilayaDiningHallDialogue {
 			}
 			@Override
 			public String getDeskName() {
-				return "table";
+				return "таблица";
 			}
 		};
 	}
@@ -110,40 +110,40 @@ public class LilayaDiningHallDialogue {
 				
 			} else if (index == 1) {
 				if(Main.game.getPlayer().isAbleToAccessRoomManagement()) {
-					return new Response("Manage room", "Enter the management screen for this particular room.", OccupantManagementDialogue.ROOM_UPGRADES) {
+					return new Response("Управлять комнатой", "Перейти к экрану управления этой конкретной комнатой.", OccupantManagementDialogue.ROOM_UPGRADES) {
 						@Override
 						public void effects() {
 							OccupantManagementDialogue.cellToInspect = Main.game.getPlayerCell();
 						}
 					};
 				} else {
-					return new Response("Manage room", "You need a slaver license or permission from Lilaya to house your friends or dolls in order to access this menu!",  null);
+					return new Response("Управлять комнатой", "Чтобы получить доступ к этому меню, вам нужна лицензия работорговца или разрешение от Lilaya, чтобы поселить здесь своих друзей или кукол!",  null);
 				}
 				
 			} else if (index == 2) {
 				if(Main.game.getPlayer().isAbleToAccessRoomManagement()) {
-					return new Response("Manage people", "Enter the management screen for your slaves and friendly occupants.", OccupantManagementDialogue.getSlaveryRoomListDialogue(null, null)) {
+					return new Response("Управлять людьми", "Перейти к экрану управления вашими рабынями и дружелюбными жильцами.", OccupantManagementDialogue.getSlaveryRoomListDialogue(null, null)) {
 						@Override
 						public void effects() {
 							CompanionManagement.initManagement(Main.game.getDefaultDialogue(), 0, null);
 						}
 					};
 				} else {
-					return new Response("Manage people", "You need a slaver license or permission from Lilaya to house your friends or dolls in order to access this menu!",  null);
+					return new Response("Управлять людьми", "Чтобы получить доступ к этому меню, вам нужна лицензия работорговца или разрешение от Lilaya, чтобы поселить здесь своих друзей или кукол!",  null);
 				}
 				
 			} else if (index == 3) {
 				if(Main.game.getOccupancyUtil().getCharactersCurrentlyAtJob(SlaveJob.KITCHEN).isEmpty()) {
-					return new Response("Have a meal", "You need at least one slave working as a cook to be able to order a meal...",  null);
+					return new Response("Поесть", "Чтобы заказать еду, у вас должна быть хотя бы одна рабыня на должности повара...",  null);
 					
 				} else if(LilayaHomeGeneric.getSlavesAndOccupantsPresent().isEmpty()) {
-					return new Response("Have a meal", "You need at least one slave working in this dining hall as a waiter to be able to order a meal...",  null);
+					return new Response("Поесть", "Чтобы заказать еду, в этом обеденном зале должен работать хотя бы один раб в качестве официанта...",  null);
 					
 				} else if(!Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.MOUTH, true)) {
-					return new Response("Have a meal", "You need to be able to access your mouth to be able to order a meal...",  null);
+					return new Response("Поесть", "Чтобы заказать еду, у вас должен быть доступ к собственному рту...",  null);
 					
 				} else {
-					return new Response("Order a meal", "Sit down at the table and order a meal.", ROOM_DINING_HALL_ORDER_MEAL);
+					return new Response("Заказать еду", "Сесть за стол и заказать еду.", ROOM_DINING_HALL_ORDER_MEAL);
 				}
 				
 			}
@@ -156,10 +156,10 @@ public class LilayaDiningHallDialogue {
 					
 				} else {
 					return new Response(UtilText.parse(character, "[npc.Name]"),
-							UtilText.parse(character, "Although this is [npc.namePos] room, [npc.sheIs] "
+							UtilText.parse(character, "Хотя это комната [npc.namePos], сейчас [npc.sheIs] "
 									+(character.getLocationPlace().getPlaceUpgrades().contains(PlaceUpgrade.LILAYA_SLAVE_LOUNGE)
-											?"relaxing in a slave lounge at the moment."
-											:"out at work at the moment.")), null);
+											?"отдыхает в комнате отдыха для рабов."
+											:"сейчас на работе.")), null);
 				}
 			}
 			
@@ -189,7 +189,7 @@ public class LilayaDiningHallDialogue {
 			
 			if (index == 0) {
 				if(Main.game.getPlayer().isAbleToAccessRoomManagement()) {
-					return new Response("Nevermind", "Change your mind and decide against having a meal after all.", ROOM_DINING_HALL);
+					return new Response("Неважно", "Передумать и в итоге отказаться от трапезы.", ROOM_DINING_HALL);
 				}
 				
 			}
@@ -199,7 +199,7 @@ public class LilayaDiningHallDialogue {
 				if(charactersPresent.contains(character) || (character.getHomeCell().equals(Main.game.getPlayerCell()) && Main.game.getPlayer().getCompanions().contains(character))) {
 					return new Response(
 							UtilText.parse(character, "[npc.Name]"),
-							UtilText.parse(character, "Call over [npc.name] and tell [npc.herHim] that [npc.she]'ll be your "+(character.isFeminine()?"waitress":"waiter")+", before ordering a meal."),
+							UtilText.parse(character, "Позвать [npc.name] и сказать [npc.herHim], что [npc.she] будет твоей "+(character.isFeminine()?"официантка":"официант")+", прежде чем заказать еду."),
 							ROOM_DINING_HALL_RECEIVE_MEAL) {
 						@Override
 						public Colour getHighlightColour() {
@@ -237,18 +237,18 @@ public class LilayaDiningHallDialogue {
 			
 			if (index == 1) {
 				if(Main.game.getPlayer().isAbleToAccessRoomManagement()) {
-					return new Response("Finished", "Having had your meal.", ROOM_DINING_HALL);
+					return new Response("Завершено", "После того как вы поели.", ROOM_DINING_HALL);
 				}
 				
 			} else if(index==2) {
 				if(!waiter.hasPenis()) {
-					return new Response("Dessert (blowjob)", UtilText.parse(waiter, "As [npc.name] doesn't have a penis, you can't enjoy it as a dessert..."), null);
+					return new Response("Десерт (минет)", UtilText.parse(waiter, "Так как у [npc.name] нет пениса, вы не сможете насладиться им как десертом..."), null);
 					
 				} else if(!waiter.isAbleToAccessCoverableArea(CoverableArea.PENIS, true)) {
-					return new Response("Dessert (blowjob)", UtilText.parse(waiter, "[npc.Name] isn't able to access [npc.her] cock, so you can't enjoy it as a dessert..."), null);
+					return new Response("Десерт (минет)", UtilText.parse(waiter, "[npc.Name] не может добраться до [npc.her] члена, так что вы не сможете насладиться им как десертом..."), null);
 					
 				} else {
-					return new ResponseSex("Dessert (blowjob)", UtilText.parse(waiter, "Tell [npc.name] to go to the kitchen and have [npc.her] cock turned into a dessert, before returning here so that you can suck it."), 
+					return new ResponseSex("Десерт (минет)", UtilText.parse(waiter, "Велеть [npc.name] отправиться на кухню и превратить [npc.her] член в десерт, а затем вернуться сюда, чтобы вы могли его отсосать."), 
 							true, false,
 							getDessertSexManager(
 									waiter.isTaur()
@@ -273,13 +273,13 @@ public class LilayaDiningHallDialogue {
 				
 			} else if(index==3) {
 				if(!waiter.hasVagina()) {
-					return new Response("Dessert (cunnilingus)", UtilText.parse(waiter, "As [npc.name] doesn't have a pussy, you can't enjoy it as a dessert..."), null);
+					return new Response("Десерт (куннилингус)", UtilText.parse(waiter, "Раз у [npc.name] нет киски, ты не сможешь насладиться ею как десертом..."), null);
 					
 				} else if(!waiter.isAbleToAccessCoverableArea(CoverableArea.VAGINA, true)) {
-					return new Response("Dessert (cunnilingus)", UtilText.parse(waiter, "[npc.Name] isn't able to access [npc.her] pussy, so you can't enjoy it as a dessert..."), null);
+					return new Response("Десерт (куннилингус)", UtilText.parse(waiter, "[npc.Name] не может добраться до киски [npc.her], так что ты не сможешь насладиться ею как десертом..."), null);
 					
 				} else {
-					return new ResponseSex("Dessert (cunnilingus)", UtilText.parse(waiter, "Tell [npc.name] to go to the kitchen and have [npc.her] pussy turned into a dessert, before returning here so that you can eat it."), 
+					return new ResponseSex("Десерт (куннилингус)", UtilText.parse(waiter, "Велеть [npc.name] отправиться на кухню и превратить киску [npc.her] в десерт, а затем вернуться сюда, чтобы ты мог её съесть."), 
 							true, false,
 							getDessertSexManager(
 									waiter.isTaur()
@@ -304,10 +304,10 @@ public class LilayaDiningHallDialogue {
 				
 			} else if(index==4 && Main.game.isAnalContentEnabled()) {
 				if(!waiter.isAbleToAccessCoverableArea(CoverableArea.ANUS, true)) {
-					return new Response("Dessert (anilingus)", UtilText.parse(waiter, "[npc.Name] isn't able to access [npc.her] asshole, so you can't enjoy it as a dessert..."), null);
+					return new Response("Десерт (анилингус)", UtilText.parse(waiter, "[npc.Name] не может добраться до ануса [npc.her], так что ты не сможешь насладиться им как десертом..."), null);
 					
 				} else {
-					return new ResponseSex("Dessert (anilingus)", UtilText.parse(waiter, "Tell [npc.name] to go to the kitchen and have [npc.her] ass turned into a dessert, before returning here so that you can eat it."), 
+					return new ResponseSex("Десерт (анилингус)", UtilText.parse(waiter, "Велеть [npc.name] отправиться на кухню и превратить задницу [npc.her] в десерт, а затем вернуться сюда, чтобы ты мог её съесть."), 
 							true, false,
 							getDessertSexManager(
 									waiter.isTaur()
@@ -335,10 +335,10 @@ public class LilayaDiningHallDialogue {
 		}
 	};
 
-	public static final DialogueNode AFTER_SEX = new DialogueNode("Step back", "", true) {
+	public static final DialogueNode AFTER_SEX = new DialogueNode("Отступить", "", true) {
 		@Override
 		public String getDescription(){
-			return "Now that you've had your fun, you can step back and leave [npc.name] to recover.";
+			return "Теперь, когда ты вдоволь на楽しみлся, ты можешь отступить и оставить [npc.name] приходить в себя.";
 		}
 		@Override
 		public String getContent() {
@@ -347,7 +347,7 @@ public class LilayaDiningHallDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index == 1) {
-				return new Response("Continue", "Decide what to do next.", ROOM_DINING_HALL);
+				return new Response("Продолжить", "Реши, что делать дальше.", ROOM_DINING_HALL);
 				
 			} else {
 				return null;

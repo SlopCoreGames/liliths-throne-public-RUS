@@ -38,7 +38,7 @@ public class FeliciaApartment {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Leave", "Leave Felicia's home.", DemonHome.DEMON_HOME_ARTHURS_APARTMENT) {
+				return new Response("Уйти", "Покинуть дом Фелиции.", DemonHome.DEMON_HOME_ARTHURS_APARTMENT) {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setLocation(WorldType.DOMINION, PlaceType.DOMINION_DEMON_HOME_ARTHUR);
@@ -121,7 +121,7 @@ public class FeliciaApartment {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1 && getFelicia().getLocation().equals(Main.game.getPlayer().getLocation())) {
-				return new Response("Talk", "Talk to Felicia.", FELICIA_GREETINGS_APPROACH);			
+				return new Response("Поговорить", "Поговорить с Фелицией.", FELICIA_GREETINGS_APPROACH);			
 			}
 			return null;
 		}
@@ -200,10 +200,10 @@ public class FeliciaApartment {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				if (!Main.game.getPlayer().isQuestProgressGreaterThan(QuestLine.MAIN, Quest.MAIN_1_H_THE_GREAT_ESCAPE)) {
-					return new Response("No", "Tell her you haven't found him yet.", ARTHUR_WHEREABOUTS_NO);
+					return new Response("Нет", "Сказать ей, что ты его еще не нашел.", ARTHUR_WHEREABOUTS_NO);
 					
 				} else {
-					return new Response("Yes", "Tell her the good news.", FeliciaApartment.ARTHUR_WHEREABOUTS_YES) {
+					return new Response("Да", "Рассказать ей хорошие новости.", FeliciaApartment.ARTHUR_WHEREABOUTS_YES) {
 						@Override
 						public void effects() {
 							Main.game.getTextEndStringBuilder().append(getFelicia().incrementAffection(Main.game.getPlayer(), 30));
@@ -259,27 +259,27 @@ public class FeliciaApartment {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Arthur...", "Ask about Arthur.", TALK_MENU_ARTHUR);
+				return new Response("Arthur...", "Спросить об Arthur.", TALK_MENU_ARTHUR);
 				
 			} else if (index == 2) {
-				return new Response("About her", "Ask [felicia.name] about herself.", TALK_MENU_ABOUT_HER);
+				return new Response("О ней", "Спросить [felicia.name] о ней самой.", TALK_MENU_ABOUT_HER);
 				
 			} else if (index == 3) {
 				if(!Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.feliciaLewdTalkAborted)) {
-					return new Response("Lewd", "Ask [felicia.name] lewd questions.", TALK_LEWD);
+					return new Response("Пошлый", "Задавать [felicia.name] пошлые вопросы.", TALK_LEWD);
 				} else {
-					return new Response("Lewd", "Probably not the best idea to ask about this again.", null);
+					return new Response("Пошлый", "Возможно, не лучшая идея спрашивать об этом снова.", null);
 				}
 				
 			} else if (index == 4) {
 				if (getFelicia().getAffection(Main.game.getPlayer()) >= AffectionLevel.POSITIVE_THREE_CARING.getMinimumValue()) {
-					return new Response("Pet", "Ask to pet [felicia.name].", TALK_PET);
+					return new Response("Питомец", "Попросить погладить [felicia.name].", TALK_PET);
 				} else {
-					return new Response("Pet", "[felicia.Name] probably wouldn't appreciate that.", null);
+					return new Response("Питомец", "[felicia.Name] вряд ли это оценит.", null);
 				}
 				
 			} else if (index == 0) {
-				return new Response("Leave", "Leave Felicia be for now.", FELICIA_GOODBYE);
+				return new Response("Уйти", "Оставить Felicia в покое на время.", FELICIA_GOODBYE);
 			}
 			return null;
 		}
@@ -297,7 +297,7 @@ public class FeliciaApartment {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Personality", "What's Arthur like?", TALK_ARTHUR_PERSONALITY) {
+				return new Response("Личность", "Какой Arthur?", TALK_ARTHUR_PERSONALITY) {
 					@Override
 					public void effects() {
 						if(!Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.feliciaAskedArthurPersonality)) {
@@ -308,7 +308,7 @@ public class FeliciaApartment {
 				};
 				
 			} else if (index == 2) {
-				return new Response("Hobbies", "What does Arthur like to do?", TALK_ARTHUR_HOBBIES) {
+				return new Response("Хобби", "Что любит делать Arthur?", TALK_ARTHUR_HOBBIES) {
 					@Override
 					public void effects() {
 						if(!Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.feliciaAskedArthurHobbies)) {
@@ -319,7 +319,7 @@ public class FeliciaApartment {
 				};
 				
 			} else if (index == 0) {
-				return new Response("Back", "Ask about another topic.", TALK_MENU);
+				return new Response("Назад", "Спросить о чем-то другом.", TALK_MENU);
 			}
 			return null;
 		}
@@ -337,7 +337,7 @@ public class FeliciaApartment {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Surname", "Ask Felicia about her unusual surname.", TALK_ABOUT_HER_NAME) {
+				return new Response("Фамилия", "Спросить Фелицию о её необычной фамилии.", TALK_ABOUT_HER_NAME) {
 					@Override
 					public void effects() {
 						if(!Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.feliciaAskedAboutHerSurname)) {
@@ -348,7 +348,7 @@ public class FeliciaApartment {
 				};
 				
 			} else if (index == 2) {
-				return new Response("Her place", "Why so little stuff?", TALK_ABOUT_HER_PLACE) {
+				return new Response("Её жилище", "Почему так мало вещей?", TALK_ABOUT_HER_PLACE) {
 					@Override
 					public void effects() {
 						if(!Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.feliciaAskedAboutHerPlace)) {
@@ -359,7 +359,7 @@ public class FeliciaApartment {
 				};
 				
 			} else if (index == 3) {
-				return new Response("Fur", "How'd she get it so fluffy?", TALK_ABOUT_HER_FUR) {
+				return new Response("Мех", "Как она сделала его таким пушистым?", TALK_ABOUT_HER_FUR) {
 					@Override
 					public void effects() {
 						if(!Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.feliciaAskedAboutHerFur)) {
@@ -370,7 +370,7 @@ public class FeliciaApartment {
 				};
 				
 			} else if (index == 4) {
-				return new Response("Favourite store", "Where does she like to shop?", TALK_ABOUT_HER_FAVORITE_STORE) {
+				return new Response("Любимый магазин", "Где она любит закупаться?", TALK_ABOUT_HER_FAVORITE_STORE) {
 					@Override
 					public void effects() {
 						if(!Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.feliciaAskedAboutHerFavoriteStore)) {
@@ -381,7 +381,7 @@ public class FeliciaApartment {
 				};
 				
 			} else if (index == 0) {
-				return new Response("Back", "Ask about another topic.", TALK_MENU);
+				return new Response("Назад", "Спросить о чем-то другом.", TALK_MENU);
 			}
 			return null;
 		}
@@ -489,10 +489,10 @@ public class FeliciaApartment {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Continue", "Someone else, then?", TALK_LEWD_CONTINUE);
+				return new Response("Продолжить", "Значит, кто-то другой?", TALK_LEWD_CONTINUE);
 				
 			} else if (index == 2) {
-				return new Response("Back off", "Take the hint and talk about something else.", TALK_MENU) {
+				return new Response("Отступить", "Улови намек и смени тему.", TALK_MENU) {
 					@Override
 					public void effects() {
 						Main.game.getDialogueFlags().setFlag(DialogueFlagValue.feliciaLewdTalkAborted, true);
@@ -515,7 +515,7 @@ public class FeliciaApartment {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Push", "How can anyone in this realm be so innocent?", TALK_LEWD_PUSH) {
+				return new Response("Надавить", "Как в этом мире может существовать такая невинность?", TALK_LEWD_PUSH) {
 					@Override
 					public void effects() {
 						Main.game.getTextEndStringBuilder().append(getFelicia().incrementAffection(Main.game.getPlayer(), -5));
@@ -523,7 +523,7 @@ public class FeliciaApartment {
 				};
 				
 			} else if (index == 2) {
-				return new Response("Back off", "Take the hint and talk about something else.", TALK_MENU) {
+				return new Response("Отступить", "Улови намек и смени тему.", TALK_MENU) {
 					@Override
 					public void effects() {
 						Main.game.getDialogueFlags().setFlag(DialogueFlagValue.feliciaLewdTalkAborted, true);
@@ -546,9 +546,8 @@ public class FeliciaApartment {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Dig deep",
-						"You <i>must</i> know!"
-						+ "<br/>[style.italicsBad(You get the sneaking suspicion that this will end very badly!)]",
+				return new Response("Копать глубже",
+						"Ты <i>должен</i> знать!<br/>[style.italicsBad(У тебя возникает подозрение, что всё это закончится очень плохо!)]",
 						TALK_LEWD_DIG_DEEP) {
 					@Override
 					public Colour getHighlightColour() {
@@ -561,7 +560,7 @@ public class FeliciaApartment {
 				};
 				
 			} else if (index == 2) {
-				return new Response("Back off", "Take the hint and talk about something else.", TALK_MENU) {
+				return new Response("Отступить", "Улови намек и смени тему.", TALK_MENU) {
 					@Override
 					public void effects() {
 						Main.game.getDialogueFlags().setFlag(DialogueFlagValue.feliciaLewdTalkAborted, true);
@@ -584,7 +583,7 @@ public class FeliciaApartment {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Leave", "You've done enough damage for today.", DemonHome.DEMON_HOME_ARTHURS_APARTMENT) {
+				return new Response("Уйти", "На сегодня ты уже достаточно наворотил дел.", DemonHome.DEMON_HOME_ARTHURS_APARTMENT) {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setLocation(WorldType.DOMINION, PlaceType.DOMINION_DEMON_HOME_ARTHUR);

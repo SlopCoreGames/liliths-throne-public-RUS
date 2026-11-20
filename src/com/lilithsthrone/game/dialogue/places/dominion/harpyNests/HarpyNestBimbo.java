@@ -24,34 +24,22 @@ import com.lilithsthrone.utils.Util;
  */
 public class HarpyNestBimbo {
 
-	public static final DialogueNode HARPY_NEST_BIMBO_TALK = new DialogueNode("Harpy nest", ".", true) {
+	public static final DialogueNode HARPY_NEST_BIMBO_TALK = new DialogueNode("Гнездо гарпий", ".", true) {
 
 		@Override
 		public String getLabel() {
-			return "[harpyBimbo.NamePos] nest";
+			return "Гнездо [harpyBimbo.NamePos]";
 		}
 		
 		@Override
 		public String getContent() {
-			return "<p>"
-						+ "[pc.speech(I'm here to talk to you about all the recent unrest around here. The Enforcers are having a hard time keeping the peace, and it would be really helpful if you could get your flock to calm down a little,)]"
-						+ " you try to explain, but [bimboHarpy.name] simply rolls her eyes and makes an annoyed tutting sound in response."
-					+ "</p>"
-					+ "<p>"
-						+ "[bimboHarpy.speechNoEffects(Like, that is sooo not my problem!)]"
-						+ " she says, making a dismissive gesture with her hand before continuing,"
-						+ " [bimboHarpy.speechNoEffects(How about, like, you fuck off with your silly little moaning! I'm, like, sooo tempted to get [bimboHarpyCompanion.name] here to teach you a lesson right now!)]"
-					+ "</p>"
-					+ "<p>"
-						+ "It doesn't look like [bimboHarpy.name] is going to listen to reason."
-						+ " You'll either have to think of another way to convince the harpies to calm down, or make them calm down with force."
-					+ "</p>";
+			return "<p>[pc.speech(Я здесь, чтобы поговорить с тобой о недавних беспорядках в этих краях. Энфорсерам всё труднее поддерживать порядок, и было бы очень кстати, если бы ты заставила свою стаю немного успокоиться,)] — пытаешься ты объяснить, но [bimboHarpy.name] лишь закатывает глаза и в ответ раздраженно цокает языком.</p><p>[bimboHarpy.speechNoEffects(Типа, это вообще-то не моя проблема!)] — говорит она, пренебрежительно махнув рукой, прежде чем продолжить: [bimboHarpy.speechNoEffects(Как насчет того, чтобы, типа, отвалить со своим глупым нытьем! У меня, типа, прям так и чешутся руки позвать [bimboHarpyCompanion.name], чтобы она преподала тебе урок прямо сейчас!)]</p><p>Похоже, [bimboHarpy.name] не собирается прислушиваться к доводам разума. Тебе придется либо придумать другой способ убедить гарпий успокоиться, либо усмирить их силой.</p>";
 		}
 
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Bimbo queen", "Well, you, like, tried to talk and stuff, but this bitch isn't listening! You should totally convince the nest that you should be their queen!", HARPY_NEST_BIMBO_QUEEN,
+				return new Response("Бимбо-королева", "Ну, ты, типа, пытался поговорить и всё такое, но эта сучка тебя не слушает! Тебе определенно стоит убедить гнездо, что ты должна стать их королевой!", HARPY_NEST_BIMBO_QUEEN,
 						Util.newArrayListOfValues(Fetish.FETISH_BIMBO), null, null, Femininity.FEMININE_STRONG, null) {
 					@Override
 					public void effects() {
@@ -71,10 +59,10 @@ public class HarpyNestBimbo {
 				};
 					
 			} else if (index == 2) {
-				return new Response("Force compliance",
-						"If you want these harpies to chill out, it looks as though you'll have to do it by force..."
+				return new Response("Усмирить силой",
+						"Если ты хочешь, чтобы эти гарпии расслабились, похоже, тебе придется сделать это силой..."
 						+ (Main.game.isBadEndsEnabled() && Main.game.getPlayer().isAbleToHaveRaceTransformed()
-							?"<br/>[style.boldBadEnd(BAD END:)] If you lose this fight, the harpies won't ever let you leave!"
+							?"<br/>[style.boldBadEnd(ПЛОХОЙ КОНЕЦ:)] Если ты проиграешь этот бой, гарпии больше никогда тебя не отпустят!"
 							:""),
 						HARPY_NEST_BIMBO_FIGHT) {
 					@Override
@@ -84,18 +72,11 @@ public class HarpyNestBimbo {
 				};
 					
 			} else if (index == 0) {
-				return new Response("Leave", "Tell [bimboHarpy.name] that you'll be back later.", DialogueManager.getDialogueFromId("innoxia_places_dominion_harpy_nests_bimbo_exterior")) {
+				return new Response("Уйти", "Скажи [bimboHarpy.name], что вернешься позже.", DialogueManager.getDialogueFromId("innoxia_places_dominion_harpy_nests_bimbo_exterior")) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(
-								"<p>"
-									+ "Deciding that now isn't the best time to be doing this, you turn around and head back down the stairs."
-									+ " You hear [bimboHarpy.name] complaining to her harpies as you leave,"
-									+ " [bimboHarpy.speechNoEffects(Eugh! Like, what was all that about?!)]"
-								+ "</p>"
-								+ "<p>"
-									+ "Ignoring her words, you continue down the steps and back across the main platform, quickly finding yourself back on the outskirts of the nest."
-								+ "</p>");
+								"<p>Решив, что сейчас не лучшее время для этого, вы разворачиваетесь и направляетесь вниз по лестнице. Уходя, вы слышите, как [bimboHarpy.name] ворчит на своих гарпий: [bimboHarpy.speechNoEffects(Фу! Ну и что это вообще было?!)]</p><p>Не обращая внимания на её слова, вы продолжаете спускаться по ступеням и переходите через главную платформу, быстро оказываясь на окраине гнезда.</p>");
 					}
 				};
 					
@@ -105,35 +86,25 @@ public class HarpyNestBimbo {
 		}
 	};
 	
-	public static final DialogueNode HARPY_NEST_BIMBO_UGLY = new DialogueNode("Harpy nest", ".", true) {
+	public static final DialogueNode HARPY_NEST_BIMBO_UGLY = new DialogueNode("Гнездо гарпий", ".", true) {
 
 		@Override
 		public String getLabel() {
-			return "[harpyBimbo.NamePos] nest";
+			return "Гнездо [harpyBimbo.NamePos]";
 		}
 		
 		@Override
 		public String getContent() {
-			return "<p>"
-						+ "Annoyed by how this stupid bimbo is treating you, you decide to give her a taste of her own medicine."
-						+ " [pc.speech(How about you stop offending everyone, and put a bag over that ugly face of yours?)]"
-					+ "</p>"
-					+ "<p>"
-						+ "[bimboHarpy.NamePos] face goes bright red, and with a furious scream, she cries out to her companion,"
-						+ " [bimboHarpy.speechNoEffects([bimboHarpyCompanion.Name]! Get [pc.herHim]! Get [pc.herHim]! Nobody talks to me like that!)]"
-					+ "</p>"
-					+ "<p>"
-						+ "Looking almost as angry as [bimboHarpy.name] does, [bimboHarpyCompanion.name] runs forwards, eager to please her matriarch as she launches into a furious assault."
-					+ "</p>";
+			return "<p>Раздражённый тем, как эта глупая бимбо с вами обращается, вы решаете проучить её её же методами. [pc.speech(Может, хватит всех оскорблять, и просто наденешь мешок на своё уродливое лицо?)]</p><p>[bimboHarpy.NamePos] заливается ярко-красным цветом и с яростным криком взывает к своей спутнице: [bimboHarpy.speechNoEffects([bimboHarpyCompanion.Name]! Тащи [pc.herHim]! Тащи [pc.herHim]! Никто не смеет так со мной разговаривать!)]</p><p>Выглядя почти такой же разъярённой, как [bimboHarpy.name], [bimboHarpyCompanion.name] бросается вперёд, стремясь угодить своей матриарху и начиная яростную атаку.</p>";
 		}
 
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new ResponseCombat("Fight",
-						"[bimboHarpyCompanion.Name] rushes to do her matriarch's bidding!"
+				return new ResponseCombat("Сразиться",
+						"[bimboHarpyCompanion.Name] спешит исполнить волю своей матриархи!"
 						+ (Main.game.isBadEndsEnabled() && Main.game.getPlayer().isAbleToHaveRaceTransformed()
-								?"<br/>[style.boldBadEnd(BAD END:)] If you lose this fight, the harpies won't ever let you leave!"
+								?"<br/>[style.boldBadEnd(ПЛОХОЙ КОНЕЦ:)] Если ты проиграешь этот бой, гарпии больше никогда тебя не отпустят!"
 								:""),
 						Main.game.getNpc(HarpyBimboCompanion.class));
 					
@@ -143,97 +114,35 @@ public class HarpyNestBimbo {
 		}
 	};
 	
-	public static final DialogueNode HARPY_NEST_BIMBO_QUEEN = new DialogueNode("Harpy nest", ".", true) {
+	public static final DialogueNode HARPY_NEST_BIMBO_QUEEN = new DialogueNode("Гнездо гарпий", ".", true) {
 
 		@Override
 		public String getLabel() {
-			return "[harpyBimbo.NamePos] nest";
+			return "Гнездо [harpyBimbo.NamePos]";
 		}
 		
 		@Override
 		public String getContent() {
-			return "<p>"
-						+ "Having had enough of this bitch's attitude, you step forwards, looking at [bimboHarpyCompanion.name] as you speak,"
-						+ " [pc.speechNoEffects(Like, do you seriously have to listen to this all day? You're, like, gonna start doin' what I say now, got it?! Now, like, come kneel for your new queen!)]"
-					+ "</p>"
-					+ "<p>"
-						+ "The combination of your beautiful features and potent arcane aura seems to be having a strong effect on these harpies."
-						+ " Speaking in the same manner as their matriarch seems to be just enough to start to sway [bimboHarpy.namePos] followers to your side."
-						+ " Before she knows what she's doing, [bimboHarpyCompanion.name] is rushing forwards to obey your command."
-					+ "</p>"
-					+ "<p>"
-						+ "[bimboHarpy.speechNoEffects([bimboHarpyCompanion.Name]?! Like, what the hell are you doin'? Get back here!)] [bimboHarpy.name] shouts."
-					+ "</p>"
-					+ "<p>"
-						+ "[bimboHarpyCompanion.Name] stops in between the two of you, looking back and forth in confusion."
-						+ " You notice that the rest of the flock haven't come to the defence of their matriarch, and are watching, waiting to see what [bimboHarpyCompanion.name] decides to do."
-					+ "</p>"
-					+"<p>"
-						+ "[pc.speechNoEffects([bimboHarpyCompanion.Name]!)] you shout. [pc.speechNoEffects(Come over here and kneel to me, like, <i>right this instant</i>!)]"
-					+ "</p>"
-					+ "<p>"
-						+ "Not quite knowing how to react, [bimboHarpy.name] watches in disbelief as her companion rushes forwards and obediently drops to her knees in front of you."
-						+ " The rest of the harpies quickly follow suit; recognising you as a more powerful and, crucially, more attractive female than their current matriarch."
-					+ "</p>"
-					+ "<p>"
-						+ "As what's just happened starts to sink in, [bimboHarpy.name] quickly runs forwards, pushing [bimboHarpyCompanion.name] out of the way and taking her place as she kneels in front of you."
-						+ " Shuffling forwards, she looks up into your eyes."
-						+ " [bimboHarpy.speechNoEffects(Like, <i>I'm</i> the prettiest one here! A-Apart from you, of course! Let me be your personal pet, please!)]"
-					+ "</p>"
-					+ "<p>"
-						+ "Smirking down at your new pet harpy, you tell her what she wants to hear,"
-						+ " [pc.speechNoEffects(Good pet! You're, like, so super smart! I knew you'd understand your new place!)]"
-					+ "</p>"
-					+ "<p>"
-						+ "[bimboHarpy.Name] shuffles closer, letting out submissive little mewling sounds and looking up at you as you continue,"
-						+ " [pc.speechNoEffects(Now, like, I don't have the time and stuff to run this nest, so you're gonna, like carry on doin' all that stuff."
-						+ " You just gotta remember who's really in charge! Now, your first order is to, like, get all these harpies to chill out and stuff!"
-						+ " If I hear they've been trouble, you're gonna, like, be demoted from being my pet, got it?!)]"
-					+ "</p>"
-					+ "<p>"
-						+ "[bimboHarpy.speechNoEffects(Yes, mistress!)] [bimboHarpy.name] cries out. [bimboHarpy.speechNoEffects(I'll get them under control! Ooh! Ooh! Also! Mistress! I got a special lollipop for you!)]"
-					+ "</p>"
-					+ "<p>"
-						+ "Producing a pink-and-white swirly lollipop, [bimboHarpy.name] holds it out towards you."
-						+ " [bimboHarpy.speechNoEffects(This is, like, what I give to all the new members of the flock! It'll, like turn you into one of us!)]"
-						+ " You take the lollipop in recognition of [bimboHarpy.namePos] submission, but you're unsure whether you'll actually use it..."
-					+ "</p>"
-					+ "<p>"
-						+ "Thanks to your bimbo personality and good looks, you've been able to subdue [bimboHarpy.namePos] nest without fighting!"
-						+ " Looking down at the bimbo matriarch, you wonder if you should publicly prove to all these harpies who's in control here..."
-					+ "</p>";
+			return "<p>Насытившись гонором этой сучки, ты делаешь шаг вперед, глядя на [bimboHarpyCompanion.name] во время своей речи: [pc.speechNoEffects(Типа, тебе реально приходится слушать это весь день? Ты, типа, сейчас начнешь делать то, что я скажу, поняла?! А теперь, типа, иди и преклони колени перед своей новой королевой!)]</p><p>Сочетание твоих прекрасных черт и мощной арканной ауры, похоже, оказывает сильное влияние на этих гарпий. То, что ты говоришь в той же манере, что и их матриарх, оказывается достаточным, чтобы начать склонять последовательниц [bimboHarpy.namePos] на твою сторону. Прежде чем она успевает опомниться, [bimboHarpyCompanion.name] бросается вперед, чтобы исполнить твой приказ.</p><p>[bimboHarpy.speechNoEffects([bimboHarpyCompanion.Name]?! Типа, какого черта ты творишь? А ну вернись сюда!)] — кричит [bimboHarpy.name].</p><p>[bimboHarpyCompanion.Name] замирает между вами двумя, в замешательстве переводя взгляд с одной на другую. Ты замечаешь, что остальные члены стаи не спешат защищать свою матриарха, а лишь наблюдают, ожидая, что решит делать [bimboHarpyCompanion.name].</p><p>[pc.speechNoEffects([bimboHarpyCompanion.Name]!)] — выкрикиваешь ты. [pc.speechNoEffects(Иди сюда и преклони предо мной колени, типа, <i>прямо сейчас</i>!)]</p><p>Не совсем понимая, как реагировать, [bimboHarpy.name] с недоверием наблюдает, как её спутница бросается вперед и послушно опускается на колени перед тобой. Остальные гарпии быстро следуют её примеру, признавая в тебе более могущественную и, что критически важно, более привлекательную самку, чем их нынешняя матриарх.</p><p>Когда осознание произошедшего начинает доходить до неё, [bimboHarpy.name] быстро бежит вперед, оттесняя [bimboHarpyCompanion.name], и занимает её место, опускаясь перед тобой на колени. Подвинувшись ближе, она заглядывает тебе в глаза. [bimboHarpy.speechNoEffects(Типа, <i>я</i> самая красивая здесь! Н-ну, кроме тебя, конечно! Позволь мне стать твоей личной питомицей, пожалуйста!)]</p><p>Усмехаясь своей новой гарпии-бимбо, ты говоришь ей то, что она хочет услышать: [pc.speechNoEffects(Хорошая питомица! Ты, типа, такая супер-умная! Я знала, что ты поймешь свое новое место!)]</p><p>[bimboHarpy.Name] подползает ближе, издавая покорные тонкие звуки мяуканья и глядя на тебя снизу вверх, пока ты продолжаешь: [pc.speechNoEffects(Короче, типа, у меня нет времени и всего такого, чтобы рулить этим гнездом, так что ты будешь, типа, заниматься всей этой фигней. Тебе просто нужно помнить, кто тут на самом деле главная! Твое первое задание — типа, заставить всех этих гарпий успокоиться и всё такое! Если я услышу, что они капризничали, тебя, типа, понизит в звании с моей питомицы, поняла?!)]</p><p>[bimboHarpy.speechNoEffects(Да, госпожа!)] — восклицает [bimboHarpy.name]. [bimboHarpy.speechNoEffects(Я возьму их под контроль! Оо! Оо! Еще! Госпожа! У меня есть для тебя особенная леденцовая палочка!)]</p><p>Доставая розово-белый вихревой леденец, [bimboHarpy.name] протягивает его тебе. [bimboHarpy.speechNoEffects(Это, типа, то, что я даю всем новым членам стаи! Это, типа, превратит тебя в одну из нас!)] Ты берешь леденец в знак признания преданности [bimboHarpy.namePos], но не уверен, решишься ли ты его использовать...</p><p>Благодаря твоей личности бимбо и отличной внешности тебе удалось покорить гнездо [bimboHarpy.namePos] без боя! Глядя на матриарха-бимбо, ты задумываешься, не стоит ли тебе публично доказать всем этим гарпиям, кто здесь на самом деле заправляет...</p>";
 		}
 
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			 if (index == 1) {
-				return new ResponseSex("Sex", "Have dominant sex with [bimboHarpy.name] in front of her flock.",
+				return new ResponseSex("Секс", "Заняться доминантным сексом с [bimboHarpy.name] на глазах у всей её стаи.",
 						true, false,
 						new SMGeneric(
 								Util.newArrayListOfValues(Main.game.getPlayer()),
 								Util.newArrayListOfValues(Main.game.getNpc(HarpyBimbo.class)),
 						null,
-						null), HARPY_NEST_BIMBO_AFTER_SEX, "<p>"
-							+ "Eager to put [harpyBimbo.name] in her place in front of her inner-circle, you reach down and grab her by her wings."
-							+ " Pulling her to her feet, you step forwards, planting a deep kiss on her [harpyBimbo.lips+] and drawing a series of excited giggles from the surrounding bimbo harpies."
-						+ "</p>"
-						+ "<p>"
-							+ "[harpyBimbo.Name] responds to your dominant move by wrapping her wings around your back, grinding herself up against you as she passionately returns your kiss..."
-						+ "</p>");
+						null), HARPY_NEST_BIMBO_AFTER_SEX, "<p>Жаждая поставить [harpyBimbo.name] на место перед её ближайшим окружением, вы наклоняетесь и хватаете её за крылья. Подняв её на ноги, вы делаете шаг вперед и глубоко целуете её в [harpyBimbo.lips+], вызывая череду восторженных смешков у окружающих гарпий-бимбо.</p><p>[harpyBimbo.Name] отвечает на ваш властный жест, обвивая крыльями вашу спину и с упоением прижимаясь к вам всем телом, страстно отвечая на поцелуй...</p>");
 						
 			} else if (index == 0) {
-				return new Response("Leave", "Tell [bimboHarpy.name] that you'll be back later.", DialogueManager.getDialogueFromId("innoxia_places_dominion_harpy_nests_bimbo_exterior")) {
+				return new Response("Уйти", "Скажи [bimboHarpy.name], что вернешься позже.", DialogueManager.getDialogueFromId("innoxia_places_dominion_harpy_nests_bimbo_exterior")) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(
-								"<p>"
-									+ "Deciding that your work here is done, you turn around and head back down the stairs."
-									+ " You hear [bimboHarpy.name] shouting at the harpies as you leave,"
-									+ " [bimboHarpy.speechNoEffects(Like, be quiet! <i>[pc.SheIs]</i> the new leader around here, got it?!)]"
-								+ "</p>"
-								+ "<p>"
-									+ "Smirking as you hear that, you continue down the steps and back across the main platform, quickly finding yourself back on the outskirts of the nest."
-								+ "</p>");
+								"<p>Решив, что ваша работа здесь окончена, вы разворачиваетесь и направляетесь вниз по лестнице. Уходя, вы слышите, как [bimboHarpy.name] кричит на гарпий: [bimboHarpy.speechNoEffects(Так, тихо! <i>[pc.SheIs]</i> теперь здесь новый лидер, ясно?!)]</p><p>Услышав это, вы ухмыляетесь и продолжаете спускаться по ступеням через главную платформу, вскоре оказавшись на окраине гнезда.</p>");
 					}
 				};
 					
@@ -243,35 +152,25 @@ public class HarpyNestBimbo {
 		}
 	};
 	
-	public static final DialogueNode HARPY_NEST_BIMBO_FIGHT = new DialogueNode("Harpy nest", ".", true) {
+	public static final DialogueNode HARPY_NEST_BIMBO_FIGHT = new DialogueNode("Гнездо гарпий", ".", true) {
 
 		@Override
 		public String getLabel() {
-			return "[harpyBimbo.NamePos] nest";
+			return "Гнездо [harpyBimbo.NamePos]";
 		}
 		
 		@Override
 		public String getContent() {
-			return "<p>"
-						+ "Having had enough of [bimboHarpy.namePos] attitude, you make your final demand,"
-						+ " [pc.speech(You're going to get your nest to calm down, or I'm going to make you!)]"
-					+ "</p>"
-					+ "<p>"
-						+ "[bimboHarpy.NamePos] face goes bright red, and she shouts out to her companion,"
-						+ " [bimboHarpy.speechNoEffects([bimboHarpyCompanion.Name], teach this [pc.race] a lesson! Like, <i>nobody</i> talks to me like that!)]"
-					+ "</p>"
-					+ "<p>"
-						+ "With a shout, [bimboHarpyCompanion.name] runs forwards, eager to please her matriarch as she launches into a furious assault."
-					+ "</p>";
+			return "<p>Насытившись дерзостью [bimboHarpy.namePos], вы выдвигаете свое последнее требование: [pc.speech(Либо ты успокоишь свое гнездо, либо я заставлю тебя это сделать!)]</p><p>Лицо [bimboHarpy.NamePos] заливается пунцовой краской, и она выкрикивает своей спутнице: [bimboHarpy.speechNoEffects([bimboHarpyCompanion.Name], преподай урок этому [pc.race]! Типа, <i>никто</i> не смеет так со мной разговаривать!)]</p><p>С криком [bimboHarpyCompanion.name] бросается вперед, стремясь угодить своей матриарху и начиная яростную атаку.</p>";
 		}
 
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new ResponseCombat("Fight",
-						"[bimboHarpyCompanion.Name] rushes to do her matriarch's bidding!"
+				return new ResponseCombat("Сразиться",
+						"[bimboHarpyCompanion.Name] спешит исполнить волю своей матриархи!"
 						+ (Main.game.isBadEndsEnabled() && Main.game.getPlayer().isAbleToHaveRaceTransformed()
-								?"<br/>[style.boldBadEnd(BAD END:)] If you lose this fight, the harpies won't ever let you leave!"
+								?"<br/>[style.boldBadEnd(ПЛОХОЙ КОНЕЦ:)] Если ты проиграешь этот бой, гарпии больше никогда тебя не отпустят!"
 								:""),
 						Main.game.getNpc(HarpyBimboCompanion.class));
 					
@@ -281,33 +180,25 @@ public class HarpyNestBimbo {
 		}
 	};
 	
-	public static final DialogueNode HARPY_NEST_BIMBO_FIGHT_BEAT_GF = new DialogueNode("Harpy nest", ".", true) {
+	public static final DialogueNode HARPY_NEST_BIMBO_FIGHT_BEAT_GF = new DialogueNode("Гнездо гарпий", ".", true) {
 
 		@Override
 		public String getLabel() {
-			return "[harpyBimbo.NamePos] nest";
+			return "Гнездо [harpyBimbo.NamePos]";
 		}
 		
 		@Override
 		public String getContent() {
-			return "<p>"
-						+ "[bimboHarpy.Name] lets out a furious scream as [bimboHarpyCompanion.name] falls to the floor, defeated."
-						+ " You notice a lot of the surrounding harpies glancing nervously at each other, and a few start to shuffle around to your side of the platform."
-						+ " It looks as though they're trying to hedge their bets, and are getting ready to support you if you manage to prove your strength."
-					+ "</p>"
-					+ "<p>"
-						+ "You don't have too much time to ponder on these harpies' fickle nature, as [bimboHarpy.Name] suddenly darts forwards, screaming,"
-						+ " [bimboHarpy.speech(You're gonna pay for this!)]"
-					+ "</p>";
+			return "<p>[bimboHarpy.Name] издает яростный вопль, когда [bimboHarpyCompanion.name] падает на пол, поверженная. Вы замечаете, что многие окружающие гарпии нервно переглядываются, а некоторые начинают перебираться на вашу сторону платформы. Похоже, они пытаются подстраховаться и готовятся поддержать вас, если вам удастся доказать свою силу.</p><p>У вас не так много времени на раздумья о переменчивой натуре этих гарпий, как [bimboHarpy.Name] внезапно бросается вперед с криком: [bimboHarpy.speech(Ты за это заплатишь!)]</p>";
 		}
 
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new ResponseCombat("Fight",
-						"[bimboHarpy.Name] looks furious as she launches her attack on you!"
+				return new ResponseCombat("Сразиться",
+						"[bimboHarpy.Name] выглядит разъяренной, когда бросается на вас в атаку!"
 						+ (Main.game.isBadEndsEnabled() && Main.game.getPlayer().isAbleToHaveRaceTransformed()
-								?"<br/>[style.boldBadEnd(BAD END:)] If you lose this fight, the harpies won't ever let you leave!"
+								?"<br/>[style.boldBadEnd(ПЛОХОЙ КОНЕЦ:)] Если ты проиграешь этот бой, гарпии больше никогда тебя не отпустят!"
 								:""),
 						Main.game.getNpc(HarpyBimbo.class));
 					
@@ -317,77 +208,35 @@ public class HarpyNestBimbo {
 		}
 	};
 	
-	public static final DialogueNode HARPY_NEST_BIMBO_FIGHT_BEAT_BIMBO = new DialogueNode("Harpy nest", ".", true) {
+	public static final DialogueNode HARPY_NEST_BIMBO_FIGHT_BEAT_BIMBO = new DialogueNode("Гнездо гарпий", ".", true) {
 
 		@Override
 		public String getLabel() {
-			return "[harpyBimbo.NamePos] nest";
+			return "Гнездо [harpyBimbo.NamePos]";
 		}
 		
 		@Override
 		public String getContent() {
-			return "<p>"
-						+ "[bimboHarpy.NamePos] inner-circle of bimbo harpies, cheering and shouting just moments ago, falls completely silent as they see their matriarch slump to the floor."
-						+ " Walking forwards, you look down on her pitiful form, and you hear the bimbo let out an erotic moan as she pushes herself up onto her knees,"
-						+ " [bimboHarpy.speechNoEffects(Aah! Like, you're so powerful and stuff! W-Who are you?!)]"
-					+ "</p>"
-					+ "<p>"
-						+ "[pc.speech(Your new leader,)] you respond."
-						+ " [pc.speech(I don't care how you normally determine a flock's leader; I'm in charge now!)]"
-					+ "</p>"
-					+ "<p>"
-						+ "Your arcane aura is clearly having a strong effect on [bimboHarpy.name], as she lets out another lewd moan as she responds,"
-						+ " [bimboHarpy.speechNoEffects(Y-Yes "+(Main.game.getPlayer().isFeminine()?"mistress":"master")+"! I-I'll be, like, super good for you!)]"
-					+ "</p>"
-					+ "<p>"
-						+ "Seeing their matriarch submit to you, the rest of the harpies fall to their knees, bowing down to you as you issue your orders,"
-						+ " [pc.speech(You're all going to calm down, got it?! No more feuds, and no more attacking travellers through the Harpy Nests!)]"
-					+ "</p>"
-					+ "<p>"
-						+ "Your words seem to sink in, and are met by a chorus of eager agreements."
-						+ " Shuffling ever closer to you, [bimboHarpy.name] holds up a swirly pink-and-white lollipop."
-						+ " [bimboHarpy.speechNoEffects("+(Main.game.getPlayer().isFeminine()?"Mistress":"Master")+"! If you, like, wanted to look like us, give this a lick!"
-								+ " I promise to keep everything under control for you! We'll all be good, won't we, girls?!)]"
-					+ "</p>"
-					+ "<p>"
-						+ "As the bimbo harpies cry out in the affirmative, you bend down and take the lollipop in recognition of [bimboHarpy.namePos] submission, but you're unsure whether you'll actually use it..."
-					+ "</p>"
-					+ "<p>"
-						+ "Thanks to your victory over [bimboHarpy.name], and the power of your arcane aura, you've been able to subdue [bimboHarpy.namePos] nest!"
-						+ " Looking down at the bimbo matriarch, you wonder if you should publicly prove to all these harpies who's in control here..."
-					+ "</p>";
+			return "<p>[bimboHarpy.NamePos] внутренний круг глупых гарпий, которые еще мгновение назад ликовали и кричали, мгновенно замолкает, видя, как их матриарх оседает на пол. Сделав шаг вперед, вы смотрите на ее жалкую фигуру и слышите, как глупая гарпия издает эротичный стон, поднимаясь на колени: [bimboHarpy.speechNoEffects(Аах! Типа, ты такой мощный и всё такое! К-кто ты?!)]</p><p>[pc.speech(Твой новый лидер,)] — отвечаете вы. [pc.speech(Мне плевать, как вы обычно выбираете вожака стаи; теперь здесь главный я!)]</p><p>Ваша арканная аура явно оказывает сильное воздействие на [bimboHarpy.name]: она издает еще один похотливый стон, отвечая: [bimboHarpy.speechNoEffects(Д-да, "+(Main.game.getPlayer().isFeminine()?"mistress":"master")+"! Я б-буду, типа, очень послушной для тебя!)]</p><p>Видя, как их матриарх покоряется вам, остальные гарпии падают на колени, склоняясь перед вами, пока вы отдаете приказы: [pc.speech(Теперь все успокоятся, ясно?! Никаких больше раздоров и никаких нападений на путешественников в гнездах гарпий!)]</p><p>Ваши слова, кажется, доходят до них, встречая хор восторженного согласия. Подбираясь к вам всё ближе, [bimboHarpy.name] протягивает розово-белую леденцовую спираль. [bimboHarpy.speechNoEffects(\"}}"+(Main.game.getPlayer().isFeminine()?"Госпожа":"Хозяин")+"! Если ты, типа, хочешь выглядеть как мы, просто лизни это! Обещаю, что я всё проконтролирую! Мы ведь все будем послушными, правда, девчонки?!)]</p><p>Когда глупые гарпии радостно выкрикивают согласие, ты наклоняешься и берешь леденец в знак признания [bimboHarpy.namePos], но не уверен, решишься ли ты его использовать...</p><p>Благодаря твоей победе над [bimboHarpy.name] и силе твоей арканой ауры, тебе удалось покорить гнездо [bimboHarpy.namePos]! Глядя на глупую матриаршую, ты задаешься вопросом: стоит ли тебе публично доказать всем этим гарпиям, кто здесь на самом деле главный...</p>";
 		}
 
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			 if (index == 1) {
-				return new ResponseSex("Sex", "Have dominant sex with [bimboHarpy.name].",
+				return new ResponseSex("Секс", "Заняться доминантным сексом с [bimboHarpy.name].",
 						true, false,
 						new SMGeneric(
 								Util.newArrayListOfValues(Main.game.getPlayer()),
 								Util.newArrayListOfValues(Main.game.getNpc(HarpyBimbo.class)),
 						null,
-						null), HARPY_NEST_BIMBO_AFTER_SEX, "<p>"
-							+ "Eager to put [harpyBimbo.name] in her place in front of her inner-circle, you reach down and grab her by her wings."
-							+ " Pulling her to her feet, you step forwards, planting a deep kiss on her [harpyBimbo.lips+] and drawing a series of excited giggles from the surrounding bimbo harpies."
-						+ "</p>"
-						+ "<p>"
-							+ "[harpyBimbo.Name] responds to your dominant move by wrapping her wings around your back, grinding herself up against you as she passionately returns your kiss..."
-						+ "</p>");
+						null), HARPY_NEST_BIMBO_AFTER_SEX, "<p>Жаждая поставить [harpyBimbo.name] на место перед её ближайшим окружением, вы наклоняетесь и хватаете её за крылья. Подняв её на ноги, вы делаете шаг вперед и глубоко целуете её в [harpyBimbo.lips+], вызывая череду восторженных смешков у окружающих гарпий-бимбо.</p><p>[harpyBimbo.Name] отвечает на ваш властный жест, обвивая крыльями вашу спину и с упоением прижимаясь к вам всем телом, страстно отвечая на поцелуй...</p>");
 						
 			} else if (index == 0) {
-				return new Response("Leave", "Tell [bimboHarpy.name] that you'll be back later.", DialogueManager.getDialogueFromId("innoxia_places_dominion_harpy_nests_bimbo_exterior")) {
+				return new Response("Уйти", "Скажи [bimboHarpy.name], что вернешься позже.", DialogueManager.getDialogueFromId("innoxia_places_dominion_harpy_nests_bimbo_exterior")) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(
-								"<p>"
-									+ "Deciding that your work here is done, you turn around and head back down the stairs."
-									+ " You hear [bimboHarpy.name] shouting at the harpies as you leave,"
-									+ " [bimboHarpy.speechNoEffects(Like, be quiet! <i>[pc.SheIs]</i> the new leader around here, got it?!)]"
-								+ "</p>"
-								+ "<p>"
-									+ "Smirking as you hear that, you continue down the steps and back across the main platform, quickly finding yourself back on the outskirts of the nest."
-								+ "</p>");
+								"<p>Решив, что ваша работа здесь окончена, вы разворачиваетесь и направляетесь вниз по лестнице. Уходя, вы слышите, как [bimboHarpy.name] кричит на гарпий: [bimboHarpy.speechNoEffects(Так, тихо! <i>[pc.SheIs]</i> теперь здесь новый лидер, ясно?!)]</p><p>Услышав это, вы ухмыляетесь и продолжаете спускаться по ступеням через главную платформу, вскоре оказавшись на окраине гнезда.</p>");
 					}
 				};
 					
@@ -397,39 +246,30 @@ public class HarpyNestBimbo {
 		}
 	};
 	
-	public static final DialogueNode HARPY_NEST_BIMBO_AFTER_SEX = new DialogueNode("Harpy nest", ".", true) {
+	public static final DialogueNode HARPY_NEST_BIMBO_AFTER_SEX = new DialogueNode("Гнездо гарпий", ".", true) {
 
 		@Override
 		public String getLabel() {
-			return "[harpyBimbo.NamePos] nest";
+			return "Гнездо [harpyBimbo.NamePos]";
 		}
 		
 		@Override
 		public String getContent() {
 			if(Main.sex.getNumberOfOrgasms(Main.game.getNpc(HarpyBimbo.class)) >= Main.game.getNpc(HarpyBimbo.class).getOrgasmsBeforeSatisfied()) {
-				return "<p>"
-							+ "As you step back from [bimboHarpy.name], she sinks to the floor, totally worn out from her orgasm"+(Main.sex.getNumberOfOrgasms(Main.game.getNpc(HarpyBimbo.class)) > 1?"s":"")+"."
-							+ " The surrounding harpies, having watched the whole thing, kneel in submission as you finish with their matriarch."
-						+ "</p>";
+				return "<p>Когда ты отстраняешься от [bimboHarpy.name], она оседает на пол, совершенно измотанная своим оргазмом"+(Main.sex.getNumberOfOrgasms(Main.game.getNpc(HarpyBimbo.class)) > 1?"s":"")+". Окружающие гарпии, наблюдавшие за всем этим, преклоняют колени в знак покорности, пока ты заканчиваешь с их матриаршей.</p>";
 			} else {
-				return "<p>"
-							+ "As you step back from [bimboHarpy.name], she sinks to the floor, letting out a desperate whine as she realises that you've finished with her."
-							+ " Her feathered hands dart down between her legs, and she frantically starts masturbating as she seeks to finish what you started."
-							+ " The surrounding harpies, having watched the whole thing, kneel in submission as you finish with their matriarch."
-						+ "</p>";
+				return "<p>Когда ты отстраняешься от [bimboHarpy.name], она оседает на пол, издавая отчаянный скулеж, когда понимает, что ты с ней закончил. Ее пернатые руки метнулись между ног, и она начинает неистово мастурбировать, пытаясь завершить то, что ты начал. Окружающие гарпии, наблюдавшие за всем этим, преклоняют колени в знак покорности, пока ты заканчиваешь с их матриаршей.</p>";
 			}
 		}
 
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 0) {
-				return new Response("Leave", "Having had your fun, you decide to leave.", DialogueManager.getDialogueFromId("innoxia_places_dominion_harpy_nests_bimbo_exterior")) {
+				return new Response("Уйти", "Насладившись весельем, ты решаешь уйти.", DialogueManager.getDialogueFromId("innoxia_places_dominion_harpy_nests_bimbo_exterior")) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(
-								"<p>"
-									+ "Having shown [bimboHarpy.name] her place, you set off down the staircase, and, walking back across the lower platform, you quickly find yourself on the outskirts of [bimboHarpy.namePos] nest once again."
-								+ "</p>");
+								"<p>Показав [bimboHarpy.name] ей её место, вы спускаетесь по лестнице и, пройдя обратно через нижнюю платформу, быстро оказываетесь на окраине гнезда [bimboHarpy.namePos].</p>");
 					}
 				};
 					

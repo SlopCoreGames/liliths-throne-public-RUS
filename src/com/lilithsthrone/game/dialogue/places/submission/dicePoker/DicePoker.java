@@ -31,7 +31,7 @@ public class DicePoker {
 	private static List<Dice> playerDice = new ArrayList<>();
 	private static List<Dice> gamblerDice = new ArrayList<>();
 	private static List<Dice> diceToReroll = new ArrayList<>();
-	private static String[] progressDescriptions = new String[] {"Roll", "Betting", "Re-roll", "Payment"};
+	private static String[] progressDescriptions = new String[] {"Бросок", "Ставки", "Переброс", "Оплата"};
 	public static int progress = 0;
 	private static String responseContent;
 	private static String buyInDescription;
@@ -114,18 +114,17 @@ public class DicePoker {
 																	+SVGImages.SVG_IMAGE_PROVIDER.getDiceGlow()
 																+ "</div>"
 															:"")
-													+"<div class='modifier-icon-content'>"+playerDice.get(i).getFace().getSVGString()+"</div>"
-													+ "<div class='overlay' id='DICE_PLAYER_"+i+"'></div>"
+													+"<div class='modifier-icon-content'>"+playerDice.get(i).getFace().getSVGString()+"</div><div class='overlay' id='DICE_PLAYER_"+i+"'></div>"
 											+ "</div>");
 			}
 			Hand playerHand = Hand.getHand(playerDice);
 			UtilText.nodeContentSB.append("<div class='container-full-width' style='text-align:center;'>"
 					+ "<b>"+playerHand.getRanking()+". "+playerHand.getName()+"</b> | [style.colourDisabled(Value: "+Hand.getValue(playerDice)+")]<br/>"
 					+(comparingHands==0
-						?"[style.colourDisabled(You "+(progress==3?"have drawn":"are drawing")+"...)]"
+						?"[style.colourDisabled(Вы "+(progress==3?"вытянули":"вытягиваете")+"...)]"
 						:(comparingHands<0
-							?"[style.colourTerrible(You "+(progress==3?"have lost":"are losing")+"!)]"
-							:"[style.colourExcellent(You "+(progress==3?"have won":"are winning")+"!)]"))
+							?"[style.colourTerrible(Вы "+(progress==3?"проиграли":"проигрывают")+"!)]"
+							:"[style.colourExcellent(Вы "+(progress==3?"выиграли":"выигрываете")+"!)]"))
 						+ "</div>");
 		UtilText.nodeContentSB.append("</div>");
 		
@@ -144,18 +143,16 @@ public class DicePoker {
 			UtilText.nodeContentSB.append("<div class='container-full-width' style='text-align:center;'>"
 					+ "<b>"+gamblerHand.getRanking()+". "+gamblerHand.getName()+"</b> | [style.colourDisabled(Value: "+Hand.getValue(gamblerDice)+")]<br/>"
 					+UtilText.parse(gambler,(comparingHands==0
-						?"[style.colourDisabled([npc.Name] "+(progress==3?"has drawn":"is drawing")+"...)]"
+						?"[style.colourDisabled([npc.Name] "+(progress==3?"сделал ничью":"делает ничью")+"...)]"
 						:(comparingHands>0
-							?"[style.colourTerrible([npc.Name] "+(progress==3?"has lost":"is losing")+"!)]"
-							:"[style.colourExcellent([npc.Name] "+(progress==3?"has won":"is winning")+"!)]")))
+							?"[style.colourTerrible([npc.Name] "+(progress==3?"проиграл":"проигрывает")+"!)]"
+							:"[style.colourExcellent([npc.Name] "+(progress==3?"выиграл":"выигрывает")+"!)]")))
 					+ "</div>");
 		UtilText.nodeContentSB.append("</div>");
 		
 		
 		UtilText.nodeContentSB.append("<div class='container-full-width'>");
-		UtilText.nodeContentSB.append("<div class='container-quarter-width' style='width:13%; margin:0 2%; text-align:center;'>"
-				+ "Progress:"
-				+ "</div>");
+		UtilText.nodeContentSB.append("<div class='container-quarter-width' style='width:13%; margin:0 2%; text-align:center;'>Прогресс:</div>");
 		for(int i=0; i<progressDescriptions.length; i++) {
 			UtilText.nodeContentSB.append(
 					(i!=0
@@ -170,7 +167,7 @@ public class DicePoker {
 					+ "</div>");
 		}
 		UtilText.nodeContentSB.append("<div class='container-full-width' style='text-align:center;'>"
-				+ "Total pot: "+UtilText.formatAsMoney(moneyPool, "span")
+				+ "Total pot: "+UtilText.formatAsMoney(moneyPool, "охват")
 				+ "</div>");
 		UtilText.nodeContentSB.append("</div>");
 		
@@ -217,7 +214,7 @@ public class DicePoker {
 	/**
 	 * For use in external dialogue files.
 	 */
-	public static final DialogueNode GAMBLING = new DialogueNode("Dice Poker Tables", "", false) {
+	public static final DialogueNode GAMBLING = new DialogueNode("Столы для костей", "", false) {
 		@Override
 		public String getContent() {
 			return "";
@@ -230,7 +227,7 @@ public class DicePoker {
 				return null;
 				
 			} else if(index==gamblers.size()+1){
-				return new Response("Rules", "Take a look at a nearby sign which displays the rules of dice poker.", GAMBLING_RULES);
+				return new Response("Правила", "Взгляните на стоящую неподалеку табличку с правилами игры в костяной покер.", GAMBLING_RULES);
 				
 			} else {
 				try {
@@ -247,10 +244,10 @@ public class DicePoker {
 					int buyIn = table.getInitialBet()+table.getRaiseAmount();
 					if(Main.game.getPlayer().getMoney()>=buyIn) {
 						return new ResponseEffectsOnly(
-								"<span style='color:"+table.getColour().toWebHexString()+";'>"+UtilText.parse(gambler, "[npc.Name(a)]")+"</span> ("+UtilText.formatAsMoney(buyIn, "span")+")",
+								"<span style='color:"+table.getColour().toWebHexString()+";'>"+UtilText.parse(gambler, "[npc.Name(a)]")+"</span> ("+UtilText.formatAsMoney(buyIn, "охват")+")",
 								UtilText.parse(gambler,
-										"Start playing dice poker with [npc.name]. The buy-in amount is "+UtilText.formatAsMoney(table.getInitialBet(), "span")
-										+", but you'll also need "+UtilText.formatAsMoney(table.getRaiseAmount(), "span")+" for any raises.")) {
+										"Начать игру в костяной покер с [npc.name]. Взнос составляет "+UtilText.formatAsMoney(table.getInitialBet(), "охват")
+										+", но вам также понадобятся "+UtilText.formatAsMoney(table.getRaiseAmount(), "охват")+" для любых повышений ставок.")) {
 							@Override
 							public void effects() {
 								Main.game.setContent(new Response("", "", DicePoker.initDicePoker(gambler, table, Main.game.getDefaultDialogue(), "misc/dicePoker")));
@@ -258,9 +255,9 @@ public class DicePoker {
 						};
 						
 					} else {
-						return new Response(gambler.getName(true)+" ("+UtilText.formatAsMoneyUncoloured(buyIn, "span")+")",
-								"The buy-in amount is "+UtilText.formatAsMoney(table.getInitialBet(), "span")
-								+", but you'll also need "+UtilText.formatAsMoney(table.getRaiseAmount(), "span")+" for any raises. As a result, you don't have enough money to play at this table!",
+						return new Response(gambler.getName(true)+" ("+UtilText.formatAsMoneyUncoloured(buyIn, "охват")+")",
+								"Взнос составляет "+UtilText.formatAsMoney(table.getInitialBet(), "охват")
+								+", но вам также понадобятся "+UtilText.formatAsMoney(table.getRaiseAmount(), "охват")+" на любые повышения ставок. В итоге у тебя не хватает денег, чтобы играть за этим столом!",
 								null);
 					}
 					
@@ -271,7 +268,7 @@ public class DicePoker {
 		}
 	};
 
-	public static final DialogueNode GAMBLING_RULES = new DialogueNode("Dice Poker Tables", "", true) {
+	public static final DialogueNode GAMBLING_RULES = new DialogueNode("Столы для костей", "", true) {
 		@Override
 		public String getContent() {
 			return UtilText.parseFromXMLFile("places/submission/gamblingDen/main", "GAMBLING_RULES");
@@ -279,13 +276,13 @@ public class DicePoker {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==0) {
-				return new Response("Back", "Finish reading the rules and [pc.step] back from the sign.", Main.game.getDefaultDialogue());
+				return new Response("Назад", "Дочитай правила и [pc.step] от знака.", Main.game.getDefaultDialogue());
 			}
 			return null;
 		}
 	};
 	
-	private static final DialogueNode START = new DialogueNode("Dice Poker", "", true) {
+	private static final DialogueNode START = new DialogueNode("Костяной покер", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			UtilText.addSpecialParsingString(table.getName(), true);
@@ -298,7 +295,7 @@ public class DicePoker {
 		}
 		@Override
 		public String getLabel() {
-			return "Dice Poker - <b style='color:"+table.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(table.getName())+" Table</b>";
+			return "Костяной покер - <b style='color:"+table.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(table.getName())+" Стол</b>";
 		}
 		
 		@Override
@@ -309,7 +306,7 @@ public class DicePoker {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Roll", "Roll your dice.", ROLL) {
+				return new Response("Бросок", "Бросай кости.", ROLL) {
 					@Override
 					public void effects() {
 						rollRice();
@@ -321,7 +318,7 @@ public class DicePoker {
 		}
 	};
 	
-	private static final DialogueNode ROLL = new DialogueNode("Dice Poker", "", true) {
+	private static final DialogueNode ROLL = new DialogueNode("Костяной покер", "", true) {
 		
 		@Override
 		public String getContent() {
@@ -339,7 +336,7 @@ public class DicePoker {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new ResponseEffectsOnly("Call", "Don't increase the bet.") {
+				return new ResponseEffectsOnly("Колл", "Не повышать ставку.") {
 					@Override
 					public void effects() {
 						UtilText.addSpecialParsingString(UtilText.formatAsMoney(getRaiseAmount(), "span"), true);
@@ -358,7 +355,7 @@ public class DicePoker {
 				};
 				
 			} else if(index==2) {
-				return new ResponseEffectsOnly("Raise", "Increase the bet.") {
+				return new ResponseEffectsOnly("Повысить", "Увеличить ставку.") {
 					@Override
 					public void effects() {
 						UtilText.addSpecialParsingString(UtilText.formatAsMoney(getRaiseAmount(), "span"), true);
@@ -386,7 +383,7 @@ public class DicePoker {
 		}
 	};
 	
-	private static final DialogueNode BET_NEED_REACT = new DialogueNode("Dice Poker", "", true) {
+	private static final DialogueNode BET_NEED_REACT = new DialogueNode("Костяной покер", "", true) {
 		
 		@Override
 		public String getContent() {
@@ -396,7 +393,7 @@ public class DicePoker {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new ResponseEffectsOnly("Call ("+UtilText.formatAsMoney(getRaiseAmount(), "span")+")", UtilText.parse(gambler, "Match [npc.namePos] raise of "+UtilText.formatAsMoney(getRaiseAmount(), "span")+".")) {
+				return new ResponseEffectsOnly("Колл ("+UtilText.formatAsMoney(getRaiseAmount(), "охват")+")", UtilText.parse(gambler, "Уравнять повышение [npc.namePos] в размере "+UtilText.formatAsMoney(getRaiseAmount(), "охват")+".")) {
 					@Override
 					public void effects() {
 						UtilText.addSpecialParsingString(UtilText.formatAsMoney(getRaiseAmount(), "span"), true);
@@ -411,7 +408,7 @@ public class DicePoker {
 				};
 				
 			} else if(index==2) {
-				return new ResponseEffectsOnly("Fold", UtilText.parse(gambler, "Surrender to [npc.namePos] and let [npc.herHim] take the pool of "+UtilText.formatAsMoney(moneyPool, "span")+".")) {
+				return new ResponseEffectsOnly("Пас", UtilText.parse(gambler, "Сдаться [npc.namePos] и отдать банк [npc.herHim] в размере "+UtilText.formatAsMoney(moneyPool, "охват")+".")) {
 					@Override
 					public void effects() {
 						moneyPool+=getRaiseAmount();
@@ -427,7 +424,7 @@ public class DicePoker {
 		}
 	};
 	
-	private static final DialogueNode REROLL = new DialogueNode("Dice Poker", "", true) {
+	private static final DialogueNode REROLL = new DialogueNode("Костяной покер", "", true) {
 		
 		@Override
 		public String getContent() {
@@ -447,11 +444,11 @@ public class DicePoker {
 			if(index==1) {
 				return new ResponseEffectsOnly(
 						reroll
-							?"Roll"
-							:"No Roll",
+							?"Бросок"
+							:"Без переброса",
 						reroll
-							?"Roll your dice."
-							:"Choose not to re-roll any of your dice. (Click on your dice to select them for re-roll.)") {
+							?"Бросай кости."
+							:"Не перебрасывать ни одну из своих костей. (Нажмите на кости, чтобы выбрать их для переброса.)") {
 					@Override
 					public void effects() {
 						boolean diceRerolled = !diceToReroll.isEmpty();
@@ -496,7 +493,7 @@ public class DicePoker {
 		}
 	};
 	
-	private static final DialogueNode END_WIN = new DialogueNode("Dice Poker", "", true) {
+	private static final DialogueNode END_WIN = new DialogueNode("Костяной покер", "", true) {
 		
 		@Override
 		public String getContent() {
@@ -506,7 +503,7 @@ public class DicePoker {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue", "Step away from the table.", endingNode) {
+				return new Response("Продолжить", "Отойти от стола.", endingNode) {
 					@Override
 					public void effects() {
 						progress = 0;
@@ -517,7 +514,7 @@ public class DicePoker {
 		}
 	};
 	
-	private static final DialogueNode END_DRAW = new DialogueNode("Dice Poker", "", true) {
+	private static final DialogueNode END_DRAW = new DialogueNode("Костяной покер", "", true) {
 		
 		@Override
 		public String getContent() {
@@ -527,7 +524,7 @@ public class DicePoker {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue", "Step away from the table.", endingNode) {
+				return new Response("Продолжить", "Отойти от стола.", endingNode) {
 					@Override
 					public void effects() {
 						progress = 0;
@@ -538,7 +535,7 @@ public class DicePoker {
 		}
 	};
 	
-	private static final DialogueNode END_LOSS = new DialogueNode("Dice Poker", "", true) {
+	private static final DialogueNode END_LOSS = new DialogueNode("Костяной покер", "", true) {
 		
 		@Override
 		public String getContent() {
@@ -548,7 +545,7 @@ public class DicePoker {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Accept loss", "Step away from the table.", endingNode) {
+				return new Response("Принять поражение", "Отойти от стола.", endingNode) {
 					@Override
 					public void effects() {
 						progress = 0;
@@ -557,17 +554,17 @@ public class DicePoker {
 				
 			} else if(index==2) {
 				if(!gambler.isAttractedTo(Main.game.getPlayer())) {
-					return new Response("Offer body", UtilText.parse(gambler, "[npc.Name] is not attracted to you, so you can't hope to get your money back by offering your body to [npc.herHim]."), null);
+					return new Response("Предложить свое тело", UtilText.parse(gambler, "[npc.Name] не испытывает к тебе влечения, так что не надейся вернуть свои деньги, предлагая свое тело [npc.herHim]."), null);
 				}
-				return new Response("Offer body",
-						UtilText.parse(gambler, "Offer [npc.name] use of your body if [npc.she]'ll give you your money back."),
+				return new Response("Предложить свое тело",
+						UtilText.parse(gambler, "Предложить [npc.name] использовать свое тело, если [npc.she] вернет тебе деньги."),
 						END_LOSS_OFFER_BODY);
 			}
 			return null;
 		}
 	};
 	
-	private static final DialogueNode END_LOSS_OFFER_BODY = new DialogueNode("Dice Poker", "", true) {
+	private static final DialogueNode END_LOSS_OFFER_BODY = new DialogueNode("Костяной покер", "", true) {
 		
 		@Override
 		public String getContent() {
@@ -577,7 +574,7 @@ public class DicePoker {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Decline", "Step away from the table.", endingNode) {
+				return new Response("Отклонить", "Отойти от стола.", endingNode) {
 					@Override
 					public void effects() {
 						progress = 0;
@@ -586,8 +583,8 @@ public class DicePoker {
 				};
 				
 			} else if(index==2) {
-				return new ResponseSex("Accept",
-						UtilText.parse(gambler, "Allow [npc.name] to publicly fuck you in order to get your money back."),
+				return new ResponseSex("Принять",
+						UtilText.parse(gambler, "Позволить [npc.name] публично трахать тебя, чтобы вернуть свои деньги."),
 						true, false,
 						new SMGeneric(
 								Util.newArrayListOfValues(gambler),
@@ -606,10 +603,10 @@ public class DicePoker {
 		}
 	};
 
-	private static final DialogueNode END_LOSS_AFTER_SEX = new DialogueNode("Finished", "", true) {
+	private static final DialogueNode END_LOSS_AFTER_SEX = new DialogueNode("Завершено", "", true) {
 		@Override
 		public String getDescription() {
-			return UtilText.parse(gambler, "[npc.Name] has had [npc.her] fun, and so brings an end to the sex...");
+			return UtilText.parse(gambler, "[npc.Name] вдоволь развлекся с [npc.her], и на этом секс подошел к концу...");
 		}
 		@Override
 		public String getContent() {
@@ -618,7 +615,7 @@ public class DicePoker {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue", "Step away from the table.", endingNode) {
+				return new Response("Продолжить", "Отойти от стола.", endingNode) {
 					@Override
 					public void effects() {
 						progress = 0;

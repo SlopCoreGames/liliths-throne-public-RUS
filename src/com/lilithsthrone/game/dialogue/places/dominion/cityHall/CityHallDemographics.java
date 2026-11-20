@@ -48,7 +48,7 @@ public class CityHallDemographics {
 		Main.game.getNpc(Vanessa.class).equipClothing();
 	}
 	
-	public static final DialogueNode CITY_HALL_DEMOGRAPHICS_ENTRANCE = new DialogueNode("Bureau of Demographics", "-", true) {
+	public static final DialogueNode CITY_HALL_DEMOGRAPHICS_ENTRANCE = new DialogueNode("Бюро демографии", "-", true) {
 		
 		@Override
 		public String getContent() {
@@ -58,10 +58,10 @@ public class CityHallDemographics {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Ring bell",
+				return new Response("Позвонить в колокольчик",
 						Main.game.getPlayer().hasCompanions()
-							?UtilText.parse(Main.game.getPlayer().getMainCompanion(), "Tell [npc.name] to wait outside, before ringing the little bell on [vanessa.namePos] desk and waiting for her to appear.")
-							:"Ring the little bell on [vanessa.namePos] desk and wait for her to appear.",
+							?UtilText.parse(Main.game.getPlayer().getMainCompanion(), "Велеть [npc.name] подождать снаружи, затем позвонить в маленький колокольчик на столе [vanessa.namePos] и ждать её появления.")
+							:"Позвонить в маленький колокольчик на столе [vanessa.namePos] и ждать её появления.",
 						CITY_HALL_DEMOGRAPHICS_MAIN) {
 					@Override
 					public void effects() {
@@ -80,7 +80,7 @@ public class CityHallDemographics {
 				};
 				
 			} else if (index == 0) {
-				return new Response("Leave", "Decide against bothering [vanessa.name], and head back out into the corridor.", CityHall.CITY_HALL_CORRIDOR) {
+				return new Response("Уйти", "Решить не беспокоить [vanessa.name] и выйти обратно в коридор.", CityHall.CITY_HALL_CORRIDOR) {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setNearestLocation(WorldType.CITY_HALL, PlaceType.CITY_HALL_CORRIDOR, false);
@@ -95,7 +95,7 @@ public class CityHallDemographics {
 		}
 	};
 	
-	public static final DialogueNode CITY_HALL_DEMOGRAPHICS_MAIN = new DialogueNode("Bureau of Demographics", "-", true) {
+	public static final DialogueNode CITY_HALL_DEMOGRAPHICS_MAIN = new DialogueNode("Бюро демографии", "-", true) {
 		
 		@Override
 		public String getContent() {
@@ -105,21 +105,21 @@ public class CityHallDemographics {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Name change", "Ask [vanessa.name] about getting your name changed.", NAME_CHANGE);
+				return new Response("Смена имени", "Спросить [vanessa.name] о смене имени.", NAME_CHANGE);
 				
 			} else if (index == 2) {
 				if(Main.game.getPlayer().hasItemType(ItemType.OFFSPRING_MAP)) {
-					return new Response("Offspring map", "You've already purchased an offspring map from [vanessa.name], and do not need another one.", null);
+					return new Response("Карта потомства", "Вы уже купили карту потомства у [vanessa.name], так что новая вам не нужна.", null);
 					
 				} else {
-					return new Response("Offspring map", "Ask [vanessa.name] about obtaining a map of where any offspring of yours live.", OFFSPRING_MAP);
+					return new Response("Карта потомства", "Спросить [vanessa.name] о том, как получить карту с указанием мест проживания ваших отпрысков.", OFFSPRING_MAP);
 				}
 				
 			} else if (index == 3) {
 				if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.vanessaDailyHelped)) {
-					return new Response("Offer help", "You've already helped [vanessa.name] with her work today.", null);
+					return new Response("Предложить помощь", "Вы уже помогли [vanessa.name] с её работой сегодня.", null);
 				}
-				return new Response("Offer help", "Ask [vanessa.name] if she needs any help.", OFFER_HELP) {
+				return new Response("Предложить помощь", "Спросить [vanessa.name], не нужна ли ей помощь.", OFFER_HELP) {
 					@Override
 					public void effects() {
 						Main.game.getDialogueFlags().setFlag(DialogueFlagValue.vanessaDailyHelped, true);
@@ -135,10 +135,10 @@ public class CityHallDemographics {
 			} else if (index == 4 && (Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.vanessaDailyHelped) || Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.vanessaMassaged))) {
 				if(Main.game.isFootContentEnabled()) { // Foot massage:
 					if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.vanessaDailyMassage)) {
-						return new Response("Foot massage", "You've already given [vanessa.name] a foot massage today. She won't want another one until tomorrow.", null);
+						return new Response("Массаж стоп", "Вы уже делали [vanessa.name] массаж стоп сегодня. Она не захочет повторения до завтра.", null);
 					}
 					
-					return new Response("Foot massage", "Offer [vanessa.name] a foot massage.", FOOT_MASSAGE) {
+					return new Response("Массаж стоп", "Предложить [vanessa.name] массаж стоп.", FOOT_MASSAGE) {
 						@Override
 						public void effects() {
 							Main.game.getDialogueFlags().setFlag(DialogueFlagValue.vanessaDailyMassage, true);
@@ -156,10 +156,10 @@ public class CityHallDemographics {
 					
 				} else { // Shoulder massage:
 					if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.vanessaDailyMassage)) {
-						return new Response("Shoulder massage", "You've already given [vanessa.name] a massage today. She won't want another one until tomorrow.", null);
+						return new Response("Массаж плеч", "Вы уже делали [vanessa.name] массаж сегодня. Она не захочет повторения до завтра.", null);
 					}
 					
-					return new Response("Shoulder massage", "Offer [vanessa.name] a shoulder massage.", SHOULDER_MASSAGE) {
+					return new Response("Массаж плеч", "Предложить [vanessa.name] массаж плеч.", SHOULDER_MASSAGE) {
 						@Override
 						public void effects() {
 							Main.game.getDialogueFlags().setFlag(DialogueFlagValue.vanessaDailyMassage, true);
@@ -181,7 +181,7 @@ public class CityHallDemographics {
 					&& Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.vanessaFucked)
 					&& !Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.vanessaDailyMassage)) {
 				if(Main.game.isFootContentEnabled()) { // Foot massage:
-					return new Response("Make her beg", "Get [vanessa.name] to beg you for a foot massage.", FOOT_MASSAGE) {
+					return new Response("Заставить её умолять", "Заставить [vanessa.name] умолять тебя сделать ей массаж стоп.", FOOT_MASSAGE) {
 						@Override
 						public void effects() {
 							Main.game.getDialogueFlags().setFlag(DialogueFlagValue.vanessaDailyMassage, true);
@@ -198,7 +198,7 @@ public class CityHallDemographics {
 					};
 					
 				} else { // Shoulder massage:
-					return new Response("Make her beg", "Get [vanessa.name] to beg you for a shoulder massage.", SHOULDER_MASSAGE) {
+					return new Response("Заставить её умолять", "Заставить [vanessa.name] умолять тебя сделать ей массаж плеч.", SHOULDER_MASSAGE) {
 						@Override
 						public void effects() {
 							Main.game.getDialogueFlags().setFlag(DialogueFlagValue.vanessaDailyMassage, true);
@@ -216,7 +216,7 @@ public class CityHallDemographics {
 				}
 				
 			} else if (index == 6) {
-				return new Response("Cataloguing", "Ask [vanessa.name] about what sort of cataloguing work she's responsible for.", QUESTION_CATALOGUING) {
+				return new Response("Каталогизация", "Спросить [vanessa.name], за какой именно вид каталогизации она отвечает.", QUESTION_CATALOGUING) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/cityHall/demographics", "QUESTION_CATALOGUING"));
@@ -225,7 +225,7 @@ public class CityHallDemographics {
 				};
 				
 			} else if (index == 7) {
-				return new Response("Solitary", "Ask [vanessa.name] why she's the only person working in this department.", QUESTION_SOLITARY) {
+				return new Response("Одиночество", "Спросить [vanessa.name], почему в этом отделе работает только она одна.", QUESTION_SOLITARY) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/cityHall/demographics", "QUESTION_SOLITARY"));
@@ -234,7 +234,7 @@ public class CityHallDemographics {
 				};
 				
 			} else if(index==10 && Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.vanessaHelped)) {
-				return new ResponseEffectsOnly("Calling her: [vanessa.Name]", "Cycle between calling the elderly fox-girl 'Ms. Cunningham' and 'Vanessa'.") {
+				return new ResponseEffectsOnly("Звонить ей: [vanessa.Name]", "Чередовать обращение к пожилой лисице то «мисс Каннингем», то «Vanessa».") {
 					@Override
 					public void effects() {
 						Main.game.getNpc(Vanessa.class).setPlayerKnowsName(!Main.game.getNpc(Vanessa.class).isPlayerKnowsName());
@@ -242,7 +242,7 @@ public class CityHallDemographics {
 				};
 				
 			} if (index == 0) {
-				return new Response("Leave", "Decide against bothering [vanessa.name], and head back out into the corridor.", CityHall.CITY_HALL_CORRIDOR) {
+				return new Response("Уйти", "Решить не беспокоить [vanessa.name] и выйти обратно в коридор.", CityHall.CITY_HALL_CORRIDOR) {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setNearestLocation(WorldType.CITY_HALL, PlaceType.CITY_HALL_CORRIDOR, false);
@@ -257,7 +257,7 @@ public class CityHallDemographics {
 		}
 	};
 
-	public static final DialogueNode QUESTION_CATALOGUING = new DialogueNode("Bureau of Demographics", "-", true) {
+	public static final DialogueNode QUESTION_CATALOGUING = new DialogueNode("Бюро демографии", "-", true) {
 		
 		@Override
 		public String getContent() {
@@ -267,13 +267,13 @@ public class CityHallDemographics {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==6) {
-				return new Response("Cataloguing", "You just asked [vanessa.name] how name cataloguing works.", null); 
+				return new Response("Каталогизация", "Вы только что спросили [vanessa.name], как работает каталогизация имен.", null); 
 			}
 			return CITY_HALL_DEMOGRAPHICS_MAIN.getResponse(responseTab, index);
 		}
 	};
 
-	public static final DialogueNode QUESTION_SOLITARY = new DialogueNode("Bureau of Demographics", "-", true) {
+	public static final DialogueNode QUESTION_SOLITARY = new DialogueNode("Бюро демографии", "-", true) {
 		
 		@Override
 		public String getContent() {
@@ -283,13 +283,13 @@ public class CityHallDemographics {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==7) {
-				return new Response("Solitary", "You just asked [vanessa.name] why she's the only person working in this department.", null); 
+				return new Response("Одиночество", "Вы только что спросили [vanessa.name], почему она единственная, кто работает в этом отделе.", null); 
 			}
 			return CITY_HALL_DEMOGRAPHICS_MAIN.getResponse(responseTab, index);
 		}
 	};
 	
-	public static final DialogueNode OFFER_HELP = new DialogueNode("Bureau of Demographics", "-", true) {
+	public static final DialogueNode OFFER_HELP = new DialogueNode("Бюро демографии", "-", true) {
 		
 		@Override
 		public String getContent() {
@@ -300,7 +300,7 @@ public class CityHallDemographics {
 		public Response getResponse(int responseTab, int index) {
 			if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.vanessaHelped)) {
 				if (index == 1) {
-					return new Response("Work", "Get to work alongside [vanessa.name] cataloguing these papers.", OFFER_HELP_FINISH) {
+					return new Response("Работать", "Приступить к работе вместе с [vanessa.name], каталогизируя эти бумаги.", OFFER_HELP_FINISH) {
 						@Override
 						public void effects() {
 							Main.game.getNpc(Vanessa.class).setLocation(WorldType.CITY_HALL, PlaceType.CITY_HALL_BUREAU_OF_DEMOGRAPHICS);
@@ -318,8 +318,7 @@ public class CityHallDemographics {
 			} else {
 				if (index == 1) {
 					return new Response("Vanessa",
-							"Tell the elderly fox-girl that you'd be happy to call her 'Vanessa', before getting to work on cataloguing papers."
-									+ "<br/><i>(You can later switch between calling her 'Vanessa' and 'Ms. Cunningham' at any time.)</i>",
+							"Сказать пожилой лисице, что вы будете рады называть её «Vanessa», а затем приняться за каталогизацию бумаг.<br/><i>(Позже вы сможете в любой момент переключаться между «Vanessa» и «Мисс Каннингем».)</i>",
 							OFFER_HELP_FINISH) {
 						@Override
 						public void effects() {
@@ -338,9 +337,8 @@ public class CityHallDemographics {
 					};	
 					
 				} else if(index==2) {
-					return new Response("Ms. Cunningham",
-							"Tell the elderly fox-girl that you prefer to call her 'Ms. Cunningham', before getting to work on cataloguing papers."
-									+ "<br/><i>(You can later switch between calling her 'Vanessa' and 'Ms. Cunningham' at any time.)</i>",
+					return new Response("Мисс Каннингем",
+							"Сказать пожилой лисице, что предпочитаете называть её «Мисс Каннингем», а затем приняться за каталогизацию бумаг.<br/><i>(Позже вы сможете в любой момент переключаться между «Vanessa» и «Мисс Каннингем».)</i>",
 							OFFER_HELP_FINISH) {
 						@Override
 						public void effects() {
@@ -364,7 +362,7 @@ public class CityHallDemographics {
 		}
 	};
 	
-	public static final DialogueNode OFFER_HELP_FINISH = new DialogueNode("Bureau of Demographics", "-", true, true) {
+	public static final DialogueNode OFFER_HELP_FINISH = new DialogueNode("Бюро демографии", "-", true, true) {
 		
 		@Override
 		public String getContent() {
@@ -377,7 +375,7 @@ public class CityHallDemographics {
 		}
 	};
 	
-	public static final DialogueNode FOOT_MASSAGE = new DialogueNode("Bureau of Demographics", "-", true) {
+	public static final DialogueNode FOOT_MASSAGE = new DialogueNode("Бюро демографии", "-", true) {
 		
 		@Override
 		public String getContent() {
@@ -387,7 +385,7 @@ public class CityHallDemographics {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Bare feet", "Pull off [vanessa.namePos] pantyhose so that you can massage her bare feet.", BARE_FOOT_MASSAGE) {
+				return new Response("Босые ноги", "Снять с [vanessa.namePos] колготки, чтобы помассировать её босые ступни.", BARE_FOOT_MASSAGE) {
 					@Override
 					public void effects() {
 						Main.game.getDialogueFlags().setFlag(DialogueFlagValue.vanessaMassaged, true);
@@ -400,7 +398,7 @@ public class CityHallDemographics {
 				};
 				
 			} else if (index == 2) {
-				return new Response("Stop", "Stop giving [vanessa.name] a foot massage.", CITY_HALL_DEMOGRAPHICS_MAIN) {
+				return new Response("Остановиться", "Перестать делать [vanessa.name] массаж ног.", CITY_HALL_DEMOGRAPHICS_MAIN) {
 					@Override
 					public void effects() {
 						Main.game.getDialogueFlags().setFlag(DialogueFlagValue.vanessaMassaged, true);
@@ -415,7 +413,7 @@ public class CityHallDemographics {
 		}
 	};
 	
-	public static final DialogueNode BARE_FOOT_MASSAGE = new DialogueNode("Bureau of Demographics", "-", true, true) {
+	public static final DialogueNode BARE_FOOT_MASSAGE = new DialogueNode("Бюро демографии", "-", true, true) {
 		
 		@Override
 		public String getContent() {
@@ -426,10 +424,10 @@ public class CityHallDemographics {
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
 				if(!Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.MOUTH, true)) {
-					return new Response("Oral", "You are unable to access your mouth, so cannot perform cunnilingus on [vanessa.name]...", null);
+					return new Response("Оральный", "Вы не можете дотянуться ртом, поэтому не можете заняться куннилингусом с [vanessa.name]...", null);
 				}
-				return new ResponseSex("Oral",
-						"Shuffle forwards between [vanessa.namePos] legs and start eating her out.",
+				return new ResponseSex("Оральный",
+						"Протиснуться между ног [vanessa.namePos] и начать сосать её киску.",
 						true, true,
 						new SMVanessaOral(
 								SexPosition.SITTING,
@@ -451,16 +449,16 @@ public class CityHallDemographics {
 				
 			} else if (index == 2) {
 				if(!Main.game.getPlayer().hasPenis()) {
-					return new Response("Oral & footjob", "You don't have a penis, so cannot receive a footjob from [vanessa.name]...", null);
+					return new Response("Оральный секс и футджоб", "У вас нет пениса, поэтому вы не можете получать футджоб от [vanessa.name]...", null);
 				}
 				if(!Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.PENIS, true)) {
-					return new Response("Oral & footjob", "You can't get access to your penis, so cannot receive a footjob from [vanessa.name]...", null);
+					return new Response("Оральный секс и футджоб", "Вы не можете дотянуться до своего пениса, поэтому не можете получать футджоб от [vanessa.name]...", null);
 				}
 				if(!Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.MOUTH, true)) {
-					return new Response("Oral & footjob", "You are unable to access your mouth, so cannot perform cunnilingus on [vanessa.name]...", null);
+					return new Response("Оральный секс и футджоб", "Вы не можете дотянуться ртом, поэтому не можете заняться куннилингусом с [vanessa.name]...", null);
 				}
-				return new ResponseSex("Oral & footjob",
-						"Shuffle forwards between [vanessa.namePos] legs and start eating her out while she gives you a footjob.",
+				return new ResponseSex("Оральный секс и футджоб",
+						"Протиснуться между ног [vanessa.namePos] и начать сосать её киску, пока она делает вам футджоб.",
 						true, true,
 						new SMVanessaOralFootjob(
 								SexPosition.SITTING,
@@ -483,7 +481,7 @@ public class CityHallDemographics {
 				};
 				
 			} else if (index == 3) {
-				return new Response("Stop", "Stop giving [vanessa.name] a foot massage.", CITY_HALL_DEMOGRAPHICS_MAIN) {
+				return new Response("Остановиться", "Перестать делать [vanessa.name] массаж ног.", CITY_HALL_DEMOGRAPHICS_MAIN) {
 					@Override
 					public void effects() {
 						Main.game.getNpc(Vanessa.class).endSex(); // Cleans & replaces clothing
@@ -506,7 +504,7 @@ public class CityHallDemographics {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Thigh massage", "[vanessa.Name] kicks off her shoes and asks you to pull off her pantyhose so that you can massage her bare thighs.", THIGH_MASSAGE) {
+				return new Response("Массаж бедер", "[vanessa.Name] скидывает туфли и просит тебя снять с нее колготки, чтобы ты мог помассировать ее обнаженные бедра.", THIGH_MASSAGE) {
 					@Override
 					public void effects() {
 						Main.game.getDialogueFlags().setFlag(DialogueFlagValue.vanessaMassaged, true);
@@ -522,7 +520,7 @@ public class CityHallDemographics {
 				};
 				
 			} else if (index == 2) {
-				return new Response("Stop", "Stop giving [vanessa.name] a massage.", CITY_HALL_DEMOGRAPHICS_MAIN) {
+				return new Response("Остановиться", "Перестать делать [vanessa.name] массаж.", CITY_HALL_DEMOGRAPHICS_MAIN) {
 					@Override
 					public void effects() {
 						Main.game.getDialogueFlags().setFlag(DialogueFlagValue.vanessaMassaged, true);
@@ -548,10 +546,10 @@ public class CityHallDemographics {
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
 				if(!Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.MOUTH, true)) {
-					return new Response("Perform cunnilingus", "You are unable to access your mouth, so cannot perform cunnilingus on [vanessa.name]!", null);
+					return new Response("Куннилингус", "Ты не можешь пошевелить ртом, поэтому не получается сделать [vanessa.name] куннилингус!", null);
 				}
-				return new ResponseSex("Perform cunnilingus",
-						"Shuffle forwards between [vanessa.namePos] legs and start eating her out.",
+				return new ResponseSex("Куннилингус",
+						"Протиснуться между ног [vanessa.namePos] и начать сосать её киску.",
 						true, true,
 						new SMVanessaOral(
 								SexPosition.SITTING,
@@ -572,7 +570,7 @@ public class CityHallDemographics {
 				};
 				
 			} else if (index == 2) {
-				return new Response("Stop", "Stop giving [vanessa.name] a thigh massage.", CITY_HALL_DEMOGRAPHICS_MAIN) {
+				return new Response("Остановиться", "Перестать делать [vanessa.name] массаж бедер.", CITY_HALL_DEMOGRAPHICS_MAIN) {
 					@Override
 					public void effects() {
 						Main.game.getNpc(Vanessa.class).endSex(); // Cleans & replaces clothing
@@ -586,7 +584,7 @@ public class CityHallDemographics {
 		}
 	};
 	
-	public static final DialogueNode END_ORAL_SEX = new DialogueNode("Pushed back", "[vanessa.Name] pushes you away from her and grins down at you...", true) {
+	public static final DialogueNode END_ORAL_SEX = new DialogueNode("Оттолкнута", "[vanessa.Name] отталкивает тебя от себя и ухмыляется сверху вниз...", true) {
 		@Override
 		public String getContent() {
 			return UtilText.parseFromXMLFile("places/dominion/cityHall/demographics", "END_ORAL_SEX");
@@ -598,10 +596,10 @@ public class CityHallDemographics {
 				if(Main.game.getPlayer().hasPenis() && (Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.PENIS, true) || !Main.game.getPlayer().hasVagina())) {
 					if(Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.PENIS, true)) {
 						boolean biped = !Main.game.getPlayer().isTaur();
-						return new ResponseSex("Sex",
+						return new ResponseSex("Секс",
 								biped
-									?"Push [vanessa.name] back onto her desk and fuck her."
-									:"Mount [vanessa.name] and start fucking her.",
+									?"Прижать [vanessa.name] обратно к столу и трахнуть ее."
+									:"Оседлай [vanessa.name] и начни трахать её.",
 								true, true,
 								biped
 									?new SMVanessaSex(
@@ -627,16 +625,16 @@ public class CityHallDemographics {
 						};
 						
 					} else {
-						return new Response("Sex", "As you cannot get access to your cock, [vanessa.name] cannot have sex with you...", null);
+						return new Response("Секс", "Так как ты не можешь добраться до своего члена, [vanessa.name] не может заняться с тобой сексом...", null);
 					}
 					
 				} else if(Main.game.getPlayer().hasVagina()) {
 					if(Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.VAGINA, true)) {
 						boolean biped = !Main.game.getPlayer().isTaur();
-						return new ResponseSex("Receive cunnilingus",
+						return new ResponseSex("Принять куннилингус",
 								biped
-									?"Allow [vanessa.name] to swap places with you so that she can eat you out."
-									:"Allow [vanessa.name] to kneel behind you so that she can eat you out.",
+									?"Позволь [vanessa.name] поменяться с тобой местами, чтобы она могла отсосать тебе."
+									:"Позволь [vanessa.name] опуститься на колени позади тебя, чтобы она могла отсосать тебе.",
 								true, true,
 								biped
 									?new SMVanessaOral(
@@ -662,16 +660,16 @@ public class CityHallDemographics {
 						};
 						
 					} else {
-						return new Response("Receive cunnilingus", "As you cannot get access to your pussy, [vanessa.name] cannot have sex with you...", null);
+						return new Response("Принять куннилингус", "Так как ты не можешь добраться до своей киски, [vanessa.name] не может заняться с тобой сексом...", null);
 					}
 					
 				} else {
 					if(Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.VAGINA, true)) {
 						boolean biped = !Main.game.getPlayer().isTaur();
-						return new ResponseSex("Receive oral",
+						return new ResponseSex("Принять минет",
 								biped
-									?"Allow [vanessa.name] to swap places with you so that she can perform oral on your genderless mound."
-									:"Allow [vanessa.name] to kneel behind you so that she can perform oral on your genderless mound.",
+									?"Позволь [vanessa.name] поменяться с тобой местами, чтобы она могла отсосать твой бесполый бугорок."
+									:"Позволь [vanessa.name] опуститься на колени позади тебя, чтобы она могла отсосать твой бесполый бугорок.",
 								true, true,
 								biped
 									?new SMVanessaOral(
@@ -693,12 +691,12 @@ public class CityHallDemographics {
 						};
 						
 					} else {
-						return new Response("Receive oral", "As you cannot get access to your genderless mound, [vanessa.name] cannot have sex with you...", null);
+						return new Response("Принять минет", "Так как ты не можешь добраться до своего бесполого бугорка, [vanessa.name] не может заняться с тобой сексом...", null);
 					}
 				}
 				
 			} else if(index==2) {
-				return new Response("Decline", "Tell [vanessa.name] that you've had enough for now.", CITY_HALL_DEMOGRAPHICS_MAIN) {
+				return new Response("Отклонить", "Скажи [vanessa.name], что на сегодня тебе достаточно.", CITY_HALL_DEMOGRAPHICS_MAIN) {
 					@Override
 					public void effects() {
 						Main.game.getNpc(Vanessa.class).equipClothing();
@@ -711,7 +709,7 @@ public class CityHallDemographics {
 		}
 	};
 	
-	public static final DialogueNode END_SEX = new DialogueNode("Finished", "Having had enough sex for now, the two of you start to get your clothing back in order...", true) {
+	public static final DialogueNode END_SEX = new DialogueNode("Завершено", "Насытившись сексом, вы оба начинаете приводить одежду в порядок...", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			Main.game.getNpc(Vanessa.class).equipClothing();
@@ -733,7 +731,7 @@ public class CityHallDemographics {
 		}
 	};
 
-	public static final DialogueNode END_SEX_ORAL_RECEIVING = new DialogueNode("Finished", "Having had enough sex for now, the two of you start to get your clothing back in order...", true) {
+	public static final DialogueNode END_SEX_ORAL_RECEIVING = new DialogueNode("Завершено", "Насытившись сексом, вы оба начинаете приводить одежду в порядок...", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			Main.game.getNpc(Vanessa.class).equipClothing();
@@ -754,7 +752,7 @@ public class CityHallDemographics {
 		}
 	};
 	
-	public static final DialogueNode OFFSPRING_MAP = new DialogueNode("Bureau of Demographics", "-", true) {
+	public static final DialogueNode OFFSPRING_MAP = new DialogueNode("Бюро демографии", "-", true) {
 		
 		@Override
 		public String getContent() {
@@ -765,7 +763,7 @@ public class CityHallDemographics {
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
 				if(Main.game.getPlayer().getMoney()>=ItemType.OFFSPRING_MAP.getValue()) {
-					return new Response("Purchase ("+UtilText.formatAsMoney(ItemType.OFFSPRING_MAP.getValue(), "span")+")", "Tell [vanessa.name] that you want to buy an arcane offspring map.", OFFSPRING_MAP_PURCHASE) {
+					return new Response("Купить ("+UtilText.formatAsMoney(ItemType.OFFSPRING_MAP.getValue(), "охват")+")", "Сказать [vanessa.name], что вы хотите купить карту арканного потомства.", OFFSPRING_MAP_PURCHASE) {
 						@Override
 						public void effects() {
 							Main.game.getTextEndStringBuilder().append(Main.game.getPlayer().incrementMoney(-ItemType.OFFSPRING_MAP.getValue()));
@@ -774,11 +772,11 @@ public class CityHallDemographics {
 					};
 					
 				} else {
-					return new Response("Purchase ("+UtilText.formatAsMoneyUncoloured(ItemType.OFFSPRING_MAP.getValue(), "span")+")", "You don't have enough money for this...", null);
+					return new Response("Купить ("+UtilText.formatAsMoneyUncoloured(ItemType.OFFSPRING_MAP.getValue(), "охват")+")", "У вас недостаточно денег для этого...", null);
 				}
 				
 			} else if (index == 2) {
-				return new Response("Change mind", "Decide against buying an offspring map.", CITY_HALL_DEMOGRAPHICS_MAIN) {
+				return new Response("Передумать", "Решить не покупать карту потомства.", CITY_HALL_DEMOGRAPHICS_MAIN) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/cityHall/demographics", "OFFSPRING_MAP_BACK"));
@@ -791,7 +789,7 @@ public class CityHallDemographics {
 		}
 	};
 
-	public static final DialogueNode OFFSPRING_MAP_PURCHASE = new DialogueNode("Bureau of Demographics", "", true) {
+	public static final DialogueNode OFFSPRING_MAP_PURCHASE = new DialogueNode("Бюро демографии", "", true) {
 		
 		@Override
 		public String getContent() {
@@ -807,7 +805,7 @@ public class CityHallDemographics {
 	private static boolean unsuitableName = false;
 	private static boolean unsuitableSurname = false;
 	
-	public static final DialogueNode NAME_CHANGE = new DialogueNode("Bureau of Demographics", "-", true) {
+	public static final DialogueNode NAME_CHANGE = new DialogueNode("Бюро демографии", "-", true) {
 
 		@Override
 		public String getContent() {
@@ -825,22 +823,9 @@ public class CityHallDemographics {
 					+ "<br/>"
 					+ "<p style='display:inline-block; padding:0; margin:0; height:32px; line-height:32px; width:100px;'>First name: </p>"
 					+ "</form style='display:inline-block; padding:0; margin:0; text-align:center;'>"
-							+ "<input type='text' id='nameMasculineInput' style=' color:"+PresetColour.MASCULINE.toWebHexString()+";' value='"+ UtilText.parseForHTMLDisplay(Main.game.getPlayer().getNameTriplet().getMasculine())+ "'>"
-							
-					+ "</form style='display:inline-block; padding:0; margin:0; text-align:center;'>"
-						+ "<input type='text' id='nameAndrogynousInput' style=' color:"+PresetColour.ANDROGYNOUS.toWebHexString()+";' value='"+ UtilText.parseForHTMLDisplay(Main.game.getPlayer().getNameTriplet().getAndrogynous())+ "'>"
-						
-					+ "</form style='display:inline-block; padding:0; margin:0; text-align:center;'>"
-						+ "<input type='text' id='nameFeminineInput' style=' color:"+PresetColour.FEMININE.toWebHexString()+";' value='"+ UtilText.parseForHTMLDisplay(Main.game.getPlayer().getNameTriplet().getFeminine())+ "'>"
-					
-					+ "<br/>"
-					+ "<p style='display:inline-block; padding:0; margin:0; height:32px; line-height:32px; width:100px;'>Surname: </p>"
-					+ "<form style='display:inline-block; padding:0; margin:0; text-align:center;'><input type='text' id='surnameInput' value='"+ UtilText.parseForHTMLDisplay(Main.game.getPlayer().getSurname())+ "'></form>"
-				+ "</div>"
-						+ "<br/>"
-						+ "<i>Your name must be between 2 and 32 characters long. You cannot use the square bracket characters or full stops. (Surname may be left blank.)</i>"
-						+ (unsuitableName ? "<p style='text-align:center;padding-top:0;'><b style=' color:"+ PresetColour.GENERIC_BAD.toWebHexString()+ ";'>Invalid name.</b></p>" : "")
-						+ (unsuitableSurname ? "<p style='text-align:center;padding-top:0;'><b style=' color:"+ PresetColour.GENERIC_BAD.toWebHexString()+ ";'>Invalid Surname.</b></p>" : "")
+							+ "<input type='text' id='nameMasculineInput' style=' color:"+PresetColour.MASCULINE.toWebHexString()+";' value='"+ UtilText.parseForHTMLDisplay(Main.game.getPlayer().getNameTriplet().getMasculine())+ "'></form style='display:inline-block; padding:0; margin:0; text-align:center;'><input type='text' id='nameAndrogynousInput' style=' color:"+PresetColour.ANDROGYNOUS.toWebHexString()+";' value='"+ UtilText.parseForHTMLDisplay(Main.game.getPlayer().getNameTriplet().getAndrogynous())+ "'></form style='display:inline-block; padding:0; margin:0; text-align:center;'><input type='text' id='nameFeminineInput' style=' color:"+PresetColour.FEMININE.toWebHexString()+";' value='"+ UtilText.parseForHTMLDisplay(Main.game.getPlayer().getNameTriplet().getFeminine())+ "'><br/><p style='display:inline-block; padding:0; margin:0; height:32px; line-height:32px; width:100px;'>Фамилия: </p><form style='display:inline-block; padding:0; margin:0; text-align:center;'><input type='text' id='surnameInput' value='"+ UtilText.parseForHTMLDisplay(Main.game.getPlayer().getSurname())+ "'></form></div><br/><i>Длина вашего имени должна составлять от 2 до 32 символов. Нельзя использовать квадратные скобки или точки. (Фамилию можно оставить пустой.)</i>"
+						+ (unsuitableName ? "<p style='text-align:center;padding-top:0;'><b style=' color:"+ PresetColour.GENERIC_BAD.toWebHexString()+ ";'>Недопустимое имя.</b></p>" : "")
+						+ (unsuitableSurname ? "<p style='text-align:center;padding-top:0;'><b style=' color:"+ PresetColour.GENERIC_BAD.toWebHexString()+ ";'>Недопустимая фамилия.</b></p>" : "")
 					+ "</div>"
 					
 					+ "<p id='hiddenFieldName' style='display:none;'></p>"
@@ -853,12 +838,12 @@ public class CityHallDemographics {
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
 				if (Main.game.getPlayer().getMoney() < 100) {
-					return new Response("Confirm ("+UtilText.formatAsMoneyUncoloured(100, "span")+")",
-							"Have your name changed.<br/>[style.italicsBad(You cannot afford this!)]",
+					return new Response("Подтвердить ("+UtilText.formatAsMoneyUncoloured(100, "охват")+")",
+							"Изменить имя.<br/>[style.italicsBad(Вам не хватает денег!)]",
 							null);
 					
 				} else {
-					return new ResponseEffectsOnly("Confirm ("+UtilText.formatAsMoney(100, "span")+")", "Have your name changed.<br/>This will cost "+UtilText.formatAsMoney(100)+"."){
+					return new ResponseEffectsOnly("Подтвердить ("+UtilText.formatAsMoney(100, "охват")+")", "Изменить имя.<br/>Это будет стоить "+UtilText.formatAsMoney(100)+"."){
 						@Override
 						public int getSecondsPassed() {
 							return 10*60;
@@ -872,16 +857,16 @@ public class CityHallDemographics {
 				
 			} else if(index==2) {
 				if(Main.game.getPlayer().getAllCharactersOfRelationType(Relationship.Parent).isEmpty()) {
-					return new Response("Offspring ("+UtilText.formatAsMoneyUncoloured(5000, "span")+")",
-							"Change your name, and also have all lines of your offspring update their surnames to your surname.<br/>[style.italicsBad(You do not have any children, so you can't do this!)]", null);
+					return new Response("Потомство ("+UtilText.formatAsMoneyUncoloured(5000, "охват")+")",
+							"Изменить свое имя, при этом все ваши потомки также сменят фамилии на вашу фамилию.<br/>[style.italicsBad(У вас еще нет детей, так что это невозможно!)]", null);
 					
 				} else if (Main.game.getPlayer().getMoney() < 5000) {
-					return new Response("Offspring ("+UtilText.formatAsMoneyUncoloured(5000, "span")+")",
-							"Change your name, and also have all lines of your offspring update their surnames to your surname.<br/>[style.italicsBad(You cannot afford this!)]", null);
+					return new Response("Потомство ("+UtilText.formatAsMoneyUncoloured(5000, "охват")+")",
+							"Изменить свое имя, при этом все ваши потомки также сменят фамилии на вашу фамилию.<br/>[style.italicsBad(Вам не хватает денег!)]", null);
 					
 				} else {
-					return new ResponseEffectsOnly("Offspring ("+UtilText.formatAsMoney(5000, "span")+")",
-							"Change your name, and also have all lines of your offspring update their surnames to your surname.<br/>This will cost "+UtilText.formatAsMoney(5000)+"."){
+					return new ResponseEffectsOnly("Потомство ("+UtilText.formatAsMoney(5000, "охват")+")",
+							"Изменить свое имя, при этом все ваши потомки также сменят фамилии на вашу фамилию.<br/>Это будет стоить "+UtilText.formatAsMoney(5000)+"."){
 						@Override
 						public int getSecondsPassed() {
 							return 10*60;
@@ -894,7 +879,7 @@ public class CityHallDemographics {
 				}
 				
 			} else if (index == 0) {
-				return new Response("Back", "Decide not to change your name.", CITY_HALL_DEMOGRAPHICS_MAIN) {
+				return new Response("Назад", "Решить не менять имя.", CITY_HALL_DEMOGRAPHICS_MAIN) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/cityHall/demographics", "NAME_CHANGE_BACK"));
@@ -960,18 +945,11 @@ public class CityHallDemographics {
 			}
 			if(applyOffspringSurnames) {
 				Main.game.getTextEndStringBuilder().append(
-						"<p style='text-align:center;'>"
-							+ "You fill out the forms and hand over the required fee, officially changing your name to:<br/>"
-							+ "<b>[pc.Name]"+(!Main.game.getPlayer().getSurname().isEmpty()?" [pc.Surname]":"")+"</b><br/>"
-							+ "All of your offspring, all the way down your family tree, have had their surnames legally changed to:<br/>"
-							+ "<b>[pc.Surname]</b><br/>"
-						+ "</p>"
+						"<p style='text-align:center;'>Вы заполняете бланки и вносите необходимую плату, официально меняя свое имя на:<br/><b>[pc.Name]"+(!Main.game.getPlayer().getSurname().isEmpty()?" [pc.Surname]":"")+"</b><br/>Все ваши потомки, до самого конца вашего генеалогического древа, официально сменили фамилии на:<br/><b>[pc.Surname]</b><br/></p>"
 						+Main.game.getPlayer().incrementMoney(-5000));
 			} else {
 				Main.game.getTextEndStringBuilder().append(
-						"<p style='text-align:center;'>"
-							+ "You fill out the forms and hand over the required fee, officially changing your name to:<br/>"
-							+ "<b>[pc.Name]"+(!Main.game.getPlayer().getSurname().isEmpty()?" [pc.Surname]":"")+"</b>"
+						"<p style='text-align:center;'>Вы заполняете бланки и вносите необходимую плату, официально меняя свое имя на:<br/><b>[pc.Name]"+(!Main.game.getPlayer().getSurname().isEmpty()?" [pc.Surname]":"")+"</b>"
 						+ "</p>"
 						+Main.game.getPlayer().incrementMoney(-100));
 			}

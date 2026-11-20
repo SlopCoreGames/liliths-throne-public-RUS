@@ -115,8 +115,8 @@ public class RoomPlayer {
 				return null;
 				
 			} else if (index == 1) {
-				return new Response("Rest (1 hour)",
-						"Rest for an hour. As well as replenishing your "+Attribute.HEALTH_MAXIMUM.getName()+" and "+Attribute.MANA_MAXIMUM.getName()+", you will also get the 'Well Rested' status effect.",
+				return new Response("Отдохнуть (1 час)",
+						"Отдохнуть час. А также восстановить ваши "+Attribute.HEALTH_MAXIMUM.getName()+" и "+Attribute.MANA_MAXIMUM.getName()+", вы также получите статус «Выспавшийся».",
 						AUNT_HOME_PLAYERS_ROOM_SLEEP){
 					@Override
 					public void effects() {
@@ -126,8 +126,8 @@ public class RoomPlayer {
 				};
 
 			} else if (index == 2) {
-				return new Response("Rest (4 hours)",
-						"Rest for four hours. As well as replenishing your "+Attribute.HEALTH_MAXIMUM.getName()+" and "+Attribute.MANA_MAXIMUM.getName()+", you will also get the 'Well Rested' status effect.",
+				return new Response("Отдохнуть (4 часа)",
+						"Отдохнуть четыре часа. А также восстановить ваши "+Attribute.HEALTH_MAXIMUM.getName()+" и "+Attribute.MANA_MAXIMUM.getName()+", вы также получите статус «Выспавшийся».",
 						AUNT_HOME_PLAYERS_ROOM_SLEEP){
 					@Override
 					public void effects() {
@@ -137,8 +137,8 @@ public class RoomPlayer {
 				};
 
             } else if (index == 3) {
-                return new Response("Rest (8 hours)",
-                        "Rest for eight hours. As well as replenishing your "+Attribute.HEALTH_MAXIMUM.getName()+" and "+Attribute.MANA_MAXIMUM.getName()+", you will also get the 'Well Rested' status effect.",
+                return new Response("Отдохнуть (8 часов)",
+                        "Отдохнуть восемь часов. А также восстановить ваши "+Attribute.HEALTH_MAXIMUM.getName()+" и "+Attribute.MANA_MAXIMUM.getName()+", вы также получите статус «Выспавшийся».",
                         AUNT_HOME_PLAYERS_ROOM_SLEEP){
                     @Override
                     public void effects() {
@@ -148,8 +148,8 @@ public class RoomPlayer {
                 };
 
             } else if (index == 4) {
-				return new Response("Rest (12 hours)",
-						"Rest for twelve hours. As well as replenishing your "+Attribute.HEALTH_MAXIMUM.getName()+" and "+Attribute.MANA_MAXIMUM.getName()+", you will also get the 'Well Rested' status effect.",
+				return new Response("Отдохнуть (12 часов)",
+						"Отдохнуть двенадцать часов. А также восстановить ваши "+Attribute.HEALTH_MAXIMUM.getName()+" и "+Attribute.MANA_MAXIMUM.getName()+", вы также получите статус «Выспавшийся».",
 						AUNT_HOME_PLAYERS_ROOM_SLEEP){
 					@Override
 					public void effects() {
@@ -161,13 +161,13 @@ public class RoomPlayer {
 			} else if (index == 5) {
 				int timeUntilChange = Main.game.getMinutesUntilNextMorningOrEvening() + 5; // Add 5 minutes so that if the days are drawing in, you don't get stuck in a loop of always sleeping to sunset/sunrise
 				LocalDateTime[] sunriseSunset = DateAndTime.getTimeOfSolarElevationChange(Main.game.getDateNow(), SolarElevationAngle.SUN_ALTITUDE_SUNRISE_SUNSET, Game.DOMINION_LATITUDE, Game.DOMINION_LONGITUDE);
-				return new Response("Rest until " + (Main.game.isDayTime() ? "Sunset" : "Sunrise"),
-						"Rest for " + (timeUntilChange >= 60 ?timeUntilChange / 60 + " hours " : " ")
-							+ (timeUntilChange % 60 != 0 ? timeUntilChange % 60 + " minutes" : "")
+				return new Response("Отдыхать до " + (Main.game.isDayTime() ? "Заката" : "Рассвета"),
+						"Отдохнуть на " + (timeUntilChange >= 60 ?timeUntilChange / 60 + " часов " : " ")
+							+ (timeUntilChange % 60 != 0 ? timeUntilChange % 60 + " минут" : "")
 							+ (Main.game.isDayTime()
-									? " until five minutes past sunset ("+Units.time(sunriseSunset[1].plusMinutes(5))+")."
-									: " until five minutes past sunrise ("+Units.time(sunriseSunset[0].plusMinutes(5))+").")
-							+ " As well as replenishing your "+Attribute.HEALTH_MAXIMUM.getName()+" and "+Attribute.MANA_MAXIMUM.getName()+", you will also get the 'Well Rested' status effect.",
+									? " до пяти минут после заката ("+Units.time(sunriseSunset[1].plusMinutes(5))+")."
+									: " до пяти минут после рассвета ("+Units.time(sunriseSunset[0].plusMinutes(5))+").")
+							+ " А также восполнение вашего "+Attribute.HEALTH_MAXIMUM.getName()+" и "+Attribute.MANA_MAXIMUM.getName()+", вы также получите статус «Выспавшийся».",
 							AUNT_HOME_PLAYERS_ROOM_SLEEP){
 					@Override
 					public void effects() {
@@ -177,7 +177,7 @@ public class RoomPlayer {
 				};
 				
 			} else if (index == 6) {
-				return new Response("Manage room", "Enter the management screen for this particular room.", OccupantManagementDialogue.ROOM_UPGRADES) {
+				return new Response("Управлять комнатой", "Перейти к экрану управления этой конкретной комнатой.", OccupantManagementDialogue.ROOM_UPGRADES) {
 					@Override
 					public void effects() {
 						OccupantManagementDialogue.cellToInspect = Main.game.getPlayerCell();
@@ -186,7 +186,7 @@ public class RoomPlayer {
 				
 			}  else if (index == 7) {
 				if(Main.game.getPlayer().isAbleToAccessRoomManagement()) {
-					return new Response("Manage people", "Enter the management screen for your slaves and friendly occupants.", ROOM) {
+					return new Response("Управлять людьми", "Перейти к экрану управления вашими рабынями и дружелюбными жильцами.", ROOM) {
 						@Override
 						public DialogueNode getNextDialogue() {
 							return OccupantManagementDialogue.getSlaveryRoomListDialogue(null, null);
@@ -197,18 +197,18 @@ public class RoomPlayer {
 						}
 					};
 				} else {
-					return new Response("Manage people", "You need a slaver license or permission from Lilaya to house your friends or dolls in order to access this menu!",  null);
+					return new Response("Управлять людьми", "Чтобы получить доступ к этому меню, вам нужна лицензия работорговца или разрешение от Lilaya, чтобы поселить здесь своих друзей или кукол!",  null);
 				}
 				
 			} else if (index == 8) {
 				if(Main.game.getDialogueFlags().values.contains(DialogueFlagValue.knowsDate)) {
-					return new Response("Calendar", "Take another look at the enchanted calendar that's pinned up on one wall.", AUNT_HOME_PLAYERS_ROOM_CALENDAR);
+					return new Response("Календарь", "Еще раз взглянуть на зачарованный календарь, прикрепленный к стене.", AUNT_HOME_PLAYERS_ROOM_CALENDAR);
 				} else {
-					return new Response("<span style='color:"+PresetColour.GENERIC_EXCELLENT.toWebHexString()+";'>Calendar</span>", "There's a calendar pinned up on one wall. Take a closer look at it.", AUNT_HOME_PLAYERS_ROOM_CALENDAR);
+					return new Response("<span style='color:"+PresetColour.GENERIC_EXCELLENT.toWebHexString()+";'>Календарь</span>", "На стене висит календарь. Присмотреться к нему повнимательнее.", AUNT_HOME_PLAYERS_ROOM_CALENDAR);
 				}
 				
 			} else if (index == 9) {
-				return new Response("Set alarm", "Set the alarm on your phone, so that you can wake at a specific time.", RoomPlayer.ROOM_SET_ALARM) {
+				return new Response("Установить будильник", "Установи будильник на телефоне, чтобы проснуться в определенное время.", RoomPlayer.ROOM_SET_ALARM) {
 					@Override
 					public void effects() {
 						Main.game.saveDialogueNode();
@@ -221,13 +221,13 @@ public class RoomPlayer {
 					String alarmTimeStr = Main.game.getDisplayTime(LocalTime.ofSecondOfDay(alarmTime*60));
 					int timeUntilAlarm = Main.game.getMinutesUntilTimeInMinutes((int)alarmTime);
 					
-					return new Response("Rest until alarm (" + alarmTimeStr + ")",
-							"Rest for "
+					return new Response("Отдыхать до будильника (" + alarmTimeStr + ")",
+							"Отдохнуть на "
 									+ (timeUntilAlarm==0
-										?"24 hours"
-										:((timeUntilAlarm >= 60 ? timeUntilAlarm / 60 + " hours, " : "")
-												+ (timeUntilAlarm % 60 != 0 ? timeUntilAlarm % 60 + " minutes, " : "")))
-									+ " until your alarm goes off. As well as replenishing your " + Attribute.HEALTH_MAXIMUM.getName() + " and " + Attribute.MANA_MAXIMUM.getName() + ", you will also get the 'Well Rested' status effect.",
+										?"24 часа"
+										:((timeUntilAlarm >= 60 ? timeUntilAlarm / 60 + " ч, " : "")
+												+ (timeUntilAlarm % 60 != 0 ? timeUntilAlarm % 60 + " мин, " : "")))
+									+ " пока не прозвенит будильник. А также восстановит ваши " + Attribute.HEALTH_MAXIMUM.getName() + " и " + Attribute.MANA_MAXIMUM.getName() + ", вы также получите статус «Выспавшийся».",
 							AUNT_HOME_PLAYERS_ROOM_SLEEP) {
 						@Override
 						public void effects() {
@@ -236,7 +236,7 @@ public class RoomPlayer {
 						}
 					};
 				} else {
-					return new Response("Rest until alarm (unset)", "<span style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>Your alarm is unset!</span>", null);
+					return new Response("Отдыхать до будильника (не установлен)", "<span style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>Будильник не установлен!</span>", null);
 				}
 			}
 			
@@ -250,10 +250,8 @@ public class RoomPlayer {
 			
 		} else if(responseTab==2) {
 			if (index == 1) {
-				return new Response("Quick shower",
-						"Use your room's ensuite to take a quick shower."
-								+ "<br/>[style.italicsGood(Cleans <b>a maximum of "+Units.fluid(500)+"</b> of fluids from all orifices.)]"
-								+ "<br/>[style.italicsGood(This will clean <b>only</b> your currently equipped clothing.)]",
+				return new Response("Быстрый душ",
+						"Воспользоваться ванной комнатой, чтобы быстро принять душ.<br/>[style.italicsGood(Очистит <b>максимум "+Units.fluid(500)+"</b> жидкостей из всех отверстий.)]<br/>[style.italicsGood(Это очистит <b>только</b> твою текущую одежду.)]",
 //								+ "<br/>[style.italicsMinorBad(This does <b>not</b> clean companions.)]",
 						AUNT_HOME_PLAYERS_ROOM_QUICK_SHOWER){
 					@Override
@@ -264,7 +262,7 @@ public class RoomPlayer {
 							npc.applyWash(true, true, StatusEffect.CLEANED_SHOWER, 120+30);
 						}
 
-						Main.game.getTextEndStringBuilder().append("<p style='text-align:center'><i>You leave your clothes outside of your bathroom so that they can be cleaned while you wash yourself...</i></p>");
+						Main.game.getTextEndStringBuilder().append("<p style='text-align:center'><i>Вы оставляете одежду снаружи ванной комнаты, чтобы она очистилась, пока вы моетесь...</i></p>");
 						Main.game.getTextEndStringBuilder().append(Main.game.getPlayer().applyWash(false, false, null, 240+30));
 					}
 					@Override
@@ -274,10 +272,8 @@ public class RoomPlayer {
 				};
 				
 			} else if (index == 2) {
-				return new Response("Thorough shower",
-						"Use your room's en-suite to take a shower, and spend some time thoroughly cleaning yourself."
-								+ "<br/>[style.italicsExcellent(This will clean <b>all</b> fluids out of all your orifices.)]"
-								+ "<br/>[style.italicsGood(This will clean <b>only</b> your currently equipped clothing.)]",
+				return new Response("Тщательный душ",
+						"Воспользоваться ванной комнатой, чтобы принять душ и тщательно привести себя в порядок.<br/>[style.italicsExcellent(Это вымоет <b>все</b> жидкости из всех ваших отверстий.)]<br/>[style.italicsGood(Это очистит <b>только</b> вашу текущую одежду.)]",
 //								+ "<br/>[style.italicsMinorBad(This does <b>not</b> clean companions.)]",
 						AUNT_HOME_PLAYERS_ROOM_THOROUGH_SHOWER){
 					@Override
@@ -288,7 +284,7 @@ public class RoomPlayer {
 							npc.applyWash(true, true, StatusEffect.CLEANED_SHOWER, 240+30);
 						}
 						
-						Main.game.getTextEndStringBuilder().append("<p style='text-align:center'><i>You leave your clothes outside of your bathroom so that they can be cleaned while you wash yourself...</i></p>");
+						Main.game.getTextEndStringBuilder().append("<p style='text-align:center'><i>Вы оставляете одежду снаружи ванной комнаты, чтобы она очистилась, пока вы моетесь...</i></p>");
 						Main.game.getTextEndStringBuilder().append(Main.game.getPlayer().applyWash(true, false, StatusEffect.CLEANED_SHOWER, 240+30));
 					}
 					@Override
@@ -298,10 +294,8 @@ public class RoomPlayer {
 				};
 				
 			} else if(index==3) {
-				return new Response("Bath time",
-						"Use your room's en-suite to take a bath, and spend some time thoroughly cleaning yourself."
-								+ "<br/>[style.italicsExcellent(This will clean <b>all</b> fluids out of all your orifices.)]"
-								+ "<br/>[style.italicsExcellent(This will clean <b>all</b> clothing in your inventory.)]",
+				return new Response("Время купания",
+						"Воспользоваться ванной комнатой, чтобы принять ванну и тщательно привести себя в порядок.<br/>[style.italicsExcellent(Это вымоет <b>все</b> жидкости из всех ваших отверстий.)]<br/>[style.italicsExcellent(Это очистит <b>всю</b> одежду в вашем Инвентаре.)]",
 //								+ "<br/>[style.italicsMinorGood(This <b>does</b> clean companions.)]",
 						AUNT_HOME_PLAYERS_ROOM_BATH){
 					@Override
@@ -312,7 +306,7 @@ public class RoomPlayer {
 							npc.applyWash(true, true, StatusEffect.CLEANED_BATH, 240+30);
 						}
 						
-						Main.game.getTextEndStringBuilder().append("<p style='text-align:center'><i>You leave your clothes outside of your bathroom so that they can be cleaned while you wash yourself...</i></p>");
+						Main.game.getTextEndStringBuilder().append("<p style='text-align:center'><i>Вы оставляете одежду снаружи ванной комнаты, чтобы она очистилась, пока вы моетесь...</i></p>");
 						Main.game.getTextEndStringBuilder().append(Main.game.getPlayer().applyWash(true, true, StatusEffect.CLEANED_BATH, 240+30));
 					}
 					@Override
@@ -323,8 +317,8 @@ public class RoomPlayer {
 				
 			} else if(index==11) {
 				return new ResponseEffectsOnly(
-						UtilText.parse(getMakeupTarget(), "Target: <b style='color:"+getMakeupTarget().getFemininity().getColour().toWebHexString()+";'>[npc.Name]</b>"),
-						"Cycle the targeted character for applying makeup to.") {
+						UtilText.parse(getMakeupTarget(), "Цель: <b style='color:"+getMakeupTarget().getFemininity().getColour().toWebHexString()+";'>[npc.Name]</b>"),
+						"Сменить персонажа, которому будет нанесен макияж.") {
 					@Override
 					public void effects() {
 						List<GameCharacter> companions = Util.newArrayListOfValues(Main.game.getPlayer());
@@ -349,8 +343,8 @@ public class RoomPlayer {
 				};
 				
 			} else if(index==12) {
-				return new Response("Hairstyle & Makeup",
-						UtilText.parse(getMakeupTarget(), "There's an impressive assortment of makeup and hair-styling tools in one of your bathroom's cabinets. If you wanted to, you could spend some time improving [npc.namePos] appearance..."),
+				return new Response("Прическа и макияж",
+						UtilText.parse(getMakeupTarget(), "В одном из шкафчиков вашей ванной комнаты спрятан впечатляющий набор косметики и инструментов для укладки волос. Если захотите, вы могли бы потратить время на улучшение [npc.namePos] внешности..."),
 						AUNT_HOME_PLAYERS_ROOM_MAKEUP){
 					@Override
 					public int getSecondsPassed() {
@@ -375,14 +369,14 @@ public class RoomPlayer {
 		sb.append("<p>");
 			if(soloSlave) {
 				sb.append(UtilText.parse(slavesWashing,
-						"Having been instructed to assist you in washing yourself, your slave, "+Util.stringsToStringList(names, false)+", similarly leaves [npc.her] clothes by the door before following you into the bathroom."));
+						"Ваша рабыня, которой было приказано помогать вам во время мытья, "+Util.stringsToStringList(names, false)+", так же оставляет [npc.her] одежду у двери, прежде чем последовать за тобой в ванную."));
 					sb.append(UtilText.parse(slavesWashing,
-							" Thankfully, your luxurious shower is spacious enough that [npc.name] can quite comfortably fit in alongside you."));
+							" К счастью, твой роскошный душ достаточно просторный, чтобы [npc.name] могла вполне комфортно разместиться рядом с тобой."));
 				
 			} else {
-				sb.append("Having been instructed to assist you in washing yourself, your slaves, "+Util.stringsToStringList(names, false)+", similarly leave their clothes by the door before following you into the bathroom.");
+				sb.append("Получив указание помочь тебе вымыться, твои рабыни, "+Util.stringsToStringList(names, false)+", так же оставляют свою одежду у двери, прежде чем последовать за тобой в ванную.");
 					sb.append(UtilText.parse(slavesWashing,
-							" Thankfully, your luxurious shower is spacious enough that your slaves can quite comfortably fit in alongside you."));
+							" К счастью, твой роскошный душ достаточно просторный, чтобы твои рабыни могли вполне комфортно разместиться рядом с тобой."));
 			}
 		sb.append("</p>");
 		
@@ -398,140 +392,130 @@ public class RoomPlayer {
 			if(npc.hasSlavePermissionSetting(SlavePermissionSetting.BEHAVIOUR_PROFESSIONAL)) {
 				if(firstWashing) {
 					if(Main.game.getPlayer().hasHair()) {
-						start.add("Turning on the taps, [npc.name] dutifully starts to help you in washing your [pc.hair(true)] and body. Raising [npc.her] voice so as to be heard over the sound of running water, [npc.she] says,");
+						start.add("Включая краны, [npc.name] послушно принимается помогать тебе мыть твои [pc.hair(true)] и тело. Повысив [npc.her] голос, чтобы он был слышен сквозь шум льющейся воды, [npc.she] говорит,");
 					} else {
-						start.add("Turning on the taps, [npc.name] dutifully starts to help you in washing your body. Raising [npc.her] voice so as to be heard over the sound of running water, [npc.she] says,");
+						start.add("Включая краны, [npc.name] послушно принимается помогать тебе мыть твое тело. Повысив [npc.her] голос, чтобы он был слышен сквозь шум льющейся воды, [npc.she] говорит,");
 					}
 				} else {
-					start.add("Picking up a bar of soap, [npc.name] assists [npc.her] fellow "+(washingNice.size()>2?"slaves":"slave")+" in cleaning your body. As [npc.she] sets about [npc.her] task, [npc.she] says,");
-					start.add("Stepping forwards, with a bar of soap in [npc.hand], [npc.name] sets about cleaning your body, saying as [npc.she] does so,");
-					start.add("Stepping up beside [npc.her] fellow "+(washingNice.size()>2?"slaves":"slave")+", [npc.name] starts cleaning your body, saying,");
+					start.add("Взяв кусок мыла, [npc.name] помогает [npc.her] своей подруге "+(washingNice.size()>2?"slaves":"slave")+" очистить твое тело. Пока [npc.she] принимается за [npc.her] задачу, [npc.she] говорит,");
+					start.add("Сделав шаг вперед с куском мыла в [npc.hand], [npc.name] принимается очищать твое тело, приговаривая, пока [npc.she] это делает,");
+					start.add("[npc.her] подходит к тебе сбоку, "+(washingNice.size()>2?"slaves":"slave")+"[npc.name] начинает омывать твое тело, приговаривая:");
 				}
-				speech.add("[npc.speech(I hope this is to your satisfaction, [pc.name].)]");
-				speech.add("[npc.speech(Please let me know if you need me to do anything differently, [pc.name].)]");
-				speech.add("[npc.speech(I'll be sure to do a good job in cleaning you, [pc.name].)]");
+				speech.add("[npc.speech(Надеюсь, тебе понравится, [pc.name].)]");
+				speech.add("[npc.speech(Пожалуйста, дай мне знать, если хочешь, чтобы я делала что-то иначе, [pc.name].)]");
+				speech.add("[npc.speech(Я постараюсь очень тщательно тебя отмыть, [pc.name].)]");
 				
 			} else if(npc.hasSlavePermissionSetting(SlavePermissionSetting.BEHAVIOUR_SEDUCTIVE)) {
 				if(firstWashing) {
 					if(npc.hasBreasts()) {
-						start.add("Turning on the taps, [npc.name] moves up close behind you, before soaping your back down and starting to clean you."
-								+ " Suddenly, [npc.she] steps forwards, and, pressing [npc.her] [npc.breasts+] against your back, [npc.she] seductively [npc.moans],");
+						start.add("Включив воду, [npc.name] подходит вплотную к тебе со спины, намыливает твою спину и начинает тебя чистить. Внезапно [npc.she] делает шаг вперед и, прижимая [npc.her] [npc.breasts+] к твоей спине, [npc.she] соблазнительно [npc.moans],");
 					} else {
-						start.add("Turning on the taps, [npc.name] moves up close behind you, before soaping your back down and starting to clean you."
-								+ " Suddenly, [npc.she] steps forwards, and, pressing [npc.herself] against your back, [npc.she] seductively [npc.moans],");
+						start.add("Включив воду, [npc.name] подходит вплотную к тебе со спины, намыливает твою спину и начинает тебя чистить. Внезапно [npc.she] делает шаг вперед и, прижимая [npc.herself] к твоей спине, [npc.she] соблазнительно [npc.moans],");
 					}
 				} else {
 					if(npc.hasBreasts()) {
-						start.add("Stepping forwards, [npc.name] presses [npc.her] [npc.breasts+] against your back, before seductively [npc.moaning],");
-						start.add("Rubbing a bar of soap over your back, [npc.name] suddenly steps forwards, pressing [npc.her] [npc.breasts+] against you as [npc.she] seductively [npc.moans],");
-						start.add("Deciding to start by cleaning your back, [npc.name] steps around behind you, before leaning forwards and pressing [npc.her] [npc.breasts+] against you, [npc.moaning],");
+						start.add("Сделав шаг вперед, [npc.name] прижимает [npc.her] [npc.breasts+] к твоей спине, а затем соблазнительно [npc.moaning],");
+						start.add("Намыливая твою спину куском мыла, [npc.name] внезапно делает шаг вперед, прижимая [npc.her] [npc.breasts+] к тебе, пока [npc.she] соблазнительно [npc.moans],");
+						start.add("Решив начать с твоей спины, [npc.name] обходит тебя сзади, наклоняется вперед и прижимает [npc.her] [npc.breasts+] к тебе, [npc.moaning],");
 					} else {
-						start.add("Stepping forwards, [npc.name] presses [npc.herself] against your back, before seductively [npc.moaning],");
-						start.add("Rubbing a bar of soap over your back, [npc.name] suddenly steps forwards, pressing [npc.herself] against you as [npc.she] seductively [npc.moans],");
-						start.add("Deciding to start by cleaning your back, [npc.name] steps around behind you, before leaning forwards and pressing [npc.herself] against you, [npc.moaning],");
+						start.add("Сделав шаг вперед, [npc.name] прижимается [npc.herself] к твоей спине, а затем соблазнительно [npc.moaning],");
+						start.add("Намыливая твою спину, [npc.name] внезапно делает шаг вперед, прижимая [npc.herself] к тебе, пока [npc.she] соблазнительно [npc.moans],");
+						start.add("Решив начать с чистки твоей спины, [npc.name] обходит тебя сзади, после чего наклоняется вперед и прижимается [npc.herself] к тебе, [npc.moaning],");
 					}
 				}
-				speech.add("[npc.speech(You don't mind if I get this close, do you?)]");
-				speech.add("[npc.speech(You like the feeling of me being this close, don't you?)]");
-				speech.add("[npc.speech(That's right, relax and let me take care of you...)]");
-				speech.add("[npc.speech(Perhaps once you're clean, you'd like to do something dirty with me...)]");
+				speech.add("[npc.speech(Ты ведь не против, если я подойду так близко?)]");
+				speech.add("[npc.speech(Тебе ведь нравится это ощущение, когда я так близко, правда?)]");
+				speech.add("[npc.speech(Вот так, расслабься и позволь мне позаботиться о тебе...)]");
+				speech.add("[npc.speech(Возможно, когда ты отмоешься, ты захочешь заняться со мной чем-нибудь грязным...)]");
 				
 			} else if(npc.hasSlavePermissionSetting(SlavePermissionSetting.BEHAVIOUR_SLUTTY)) {
 				if(firstWashing) {
 					if(npc.hasBreasts()) {
-						start.add("Turning on the taps, [npc.name] moves up close behind you, before immediately pressing [npc.her] [npc.breasts+] against your back."
-								+ " Obviously seeing this as an opportunity to have some fun with you, [npc.she] reaches around to start groping your body, seductively [npc.moaning] into your [pc.ear] as [npc.she] does this,");
+						start.add("Включив воду, [npc.name] подходит вплотную к тебе со спины, а затем тут же прижимает [npc.her] [npc.breasts+] к твоей спине. Очевидно видя в этом возможность повеселиться с тобой, [npc.she] обхватывает тебя руками, начиная ласкать твое тело и соблазнительно [npc.moaning] в твою [pc.ear], пока [npc.she] делает это,");
 					} else {
-						start.add("Turning on the taps, [npc.name] moves up close behind you, before immediately pressing [npc.her] body in against your back."
-								+ " Obviously seeing this as an opportunity to have some fun with you, [npc.she] reaches around to start groping your body, seductively [npc.moaning] into your [pc.ear] as [npc.she] does this,");
+						start.add("Включив воду, [npc.name] подходит вплотную к тебе со спины, а затем тут же прижимает свое тело [npc.her] к твоей спине. Очевидно видя в этом возможность повеселиться с тобой, [npc.she] обхватывает тебя руками, начиная ласкать твое тело и соблазнительно [npc.moaning] в твою [pc.ear], пока [npc.she] делает это,");
 					}
 				} else {
 					if(npc.hasBreasts()) {
-						start.add("Stepping forwards, [npc.name] presses [npc.her] [npc.breasts+] against your back, before seductively [npc.moaning],");
-						start.add("Rubbing a bar of soap over your back, [npc.name] suddenly steps forwards, pressing [npc.her] [npc.breasts+] against you as [npc.she] seductively [npc.moans],");
-						start.add("Deciding to start by cleaning your back, [npc.name] steps around behind you, before leaning forwards and pressing [npc.her] [npc.breasts+] against you, [npc.moaning],");
+						start.add("Сделав шаг вперед, [npc.name] прижимает [npc.her] [npc.breasts+] к твоей спине, а затем соблазнительно [npc.moaning],");
+						start.add("Намыливая твою спину куском мыла, [npc.name] внезапно делает шаг вперед, прижимая [npc.her] [npc.breasts+] к тебе, пока [npc.she] соблазнительно [npc.moans],");
+						start.add("Решив начать с твоей спины, [npc.name] обходит тебя сзади, наклоняется вперед и прижимает [npc.her] [npc.breasts+] к тебе, [npc.moaning],");
 					} else {
-						start.add("Stepping forwards, [npc.name] presses [npc.herself] against your back, before seductively [npc.moaning],");
-						start.add("Rubbing a bar of soap over your back, [npc.name] suddenly steps forwards, pressing [npc.herself] against you as [npc.she] seductively [npc.moans],");
-						start.add("Deciding to start by cleaning your back, [npc.name] steps around behind you, before leaning forwards and pressing [npc.herself] against you, [npc.moaning],");
+						start.add("Сделав шаг вперед, [npc.name] прижимается [npc.herself] к твоей спине, а затем соблазнительно [npc.moaning],");
+						start.add("Намыливая твою спину, [npc.name] внезапно делает шаг вперед, прижимая [npc.herself] к тебе, пока [npc.she] соблазнительно [npc.moans],");
+						start.add("Решив начать с чистки твоей спины, [npc.name] обходит тебя сзади, после чего наклоняется вперед и прижимается [npc.herself] к тебе, [npc.moaning],");
 					}
 				}
-				speech.add("[npc.speech(Oh yeah, you like me feeling you up like this, don't you?)]");
-				speech.add("[npc.speech(All this close contact is really turning me on; you wanna fuck after this?)]");
-				speech.add("[npc.speech(This is making me so horny... You're up for having a good fuck after this, aren't you?)]");
+				speech.add("[npc.speech(О да, тебе ведь нравится, когда я так тебя ласкаю, правда?)]");
+				speech.add("[npc.speech(От такого тесного контакта меня так и штырит... Хочешь трахнуться после этого?)]");
+				speech.add("[npc.speech(Меня так возбуждает... Ты ведь не против хорошенько трахнуться после этого, а?)]");
 				
 			} else if(npc.hasSlavePermissionSetting(SlavePermissionSetting.BEHAVIOUR_STANDARD)
 					|| npc.hasSlavePermissionSetting(SlavePermissionSetting.BEHAVIOUR_WHOLESOME)) {
 				if(npc.isShy()) {
 					if(firstWashing) {
 						if(Main.game.getPlayer().hasHair()) {
-							start.add("Turning on the taps, [npc.name] nervously shuffles forwards, before starting to help you wash your [pc.hair(true)] and body."
-									+ " Doing [npc.her] best to be heard over the sound of running water, [npc.she] raises [npc.her] voice a little and says,");
+							start.add("Turning on the taps, [npc.name] nervously shuffles forwards, before starting to help you wash your [pc.hair(true)] and body. Doing [npc.her] best to be heard over the sound of running water, [npc.she] raises [npc.her] voice a little and says,");
 						} else {
-							start.add("Turning on the taps, [npc.name] nervously shuffles forwards, before starting to help you wash your body."
-									+ " Doing [npc.her] best to be heard over the sound of running water, [npc.she] raises [npc.her] voice a little and says,");
+							start.add("Turning on the taps, [npc.name] nervously shuffles forwards, before starting to help you wash your body. Doing [npc.her] best to be heard over the sound of running water, [npc.she] raises [npc.her] voice a little and says,");
 						}
 					} else {
-						start.add("Clutching a bar of soap, [npc.name] nervously shuffles forwards, before helping [npc.her] fellow "+(washingNice.size()>2?"slaves":"slave")+" to clean you. Raising [npc.her] voice a little, [npc.she] says,");
-						start.add("Stepping forwards with a bar of soap in [npc.hand], [npc.name] nervously sets about cleaning your body. Squeaking above the noise of running water, [npc.she] says,");
-						start.add("Stepping up beside [npc.her] fellow "+(washingNice.size()>2?"slaves":"slave")+", [npc.name] blushes as [npc.she] starts to clean your body, saying,");
+						start.add("Сжимая в руке кусок мыла, [npc.name] нервно подается вперед, чтобы помочь [npc.her] соратнику "+(washingNice.size()>2?"slaves":"slave")+" отмыться. Немного повысив [npc.her] голос, [npc.she] говорит:");
+						start.add("Сделав шаг вперед с куском мыла в [npc.hand], [npc.name] нервно принимается отмывать твое тело. Перекрикивая шум льющейся воды, [npc.she] говорит:");
+						start.add("[npc.her] подходит к тебе сбоку, "+(washingNice.size()>2?"slaves":"slave")+", [npc.name] краснеет, когда [npc.she] начинает отмывать твое тело, приговаривая:");
 					}
 					if(npc.hasSlavePermissionSetting(SlavePermissionSetting.BEHAVIOUR_WHOLESOME)) {
-						speech.add("[npc.speech(I love being so close to you, [pc.name]?)]");
-						speech.add("[npc.speech(I'm so happy to be able to help you like this...)]");
-						speech.add("[npc.speech(Getting to help you like this makes me so happy...)]");
+						speech.add("[npc.speech(Мне так нравится быть так близко к тебе, [pc.name]!)]");
+						speech.add("[npc.speech(Я так счастлива, что могу вот так тебе помогать...)]");
+						speech.add("[npc.speech(Меня так радует возможность помогать тебе вот так...)]");
 					} else {
-						speech.add("[npc.speech(I'm not doing this wrong, am I, [pc.name]?)]");
-						speech.add("[npc.speech(Just let me know if I'm doing this wrong...)]");
-						speech.add("[npc.speech(I hope this is how you wanted me to wash you...)]");
+						speech.add("[npc.speech(Я ведь всё правильно делаю, [pc.name]?)]");
+						speech.add("[npc.speech(Просто скажи, если я буду делать что-то не так...)]");
+						speech.add("[npc.speech(Надеюсь, ты именно так и хотел, чтобы я тебя отмыла...)]");
 					}
 					
 				} else if(npc.isKind()) {
 					if(firstWashing) {
 						if(Main.game.getPlayer().hasHair()) {
-							start.add("Turning on the taps, [npc.name] happily steps forwards, before gently starting to help you wash your [pc.hair(true)] and body."
-									+ " Doing [npc.her] best to be heard over the sound of running water, [npc.she] raises [npc.her] voice and says,");
+							start.add("Turning on the taps, [npc.name] happily steps forwards, before gently starting to help you wash your [pc.hair(true)] and body. Doing [npc.her] best to be heard over the sound of running water, [npc.she] raises [npc.her] voice and says,");
 						} else {
-							start.add("Turning on the taps, [npc.name] happily steps forwards, before gently starting to help you wash your body."
-									+ " Doing [npc.her] best to be heard over the sound of running water, [npc.she] raises [npc.her] voice and says,");
+							start.add("Turning on the taps, [npc.name] happily steps forwards, before gently starting to help you wash your body. Doing [npc.her] best to be heard over the sound of running water, [npc.she] raises [npc.her] voice and says,");
 						}
 					} else {
-						start.add("Clutching a bar of soap, [npc.name] happily steps forwards, before helping [npc.her] fellow "+(washingNice.size()>2?"slaves":"slave")+" to clean you. Raising [npc.her] voice, [npc.she] says,");
-						start.add("Stepping forwards with a bar of soap in [npc.hand], [npc.name] happily sets about cleaning your body. Raising [npc.her] voice above the noise of running water, [npc.she] says,");
-						start.add("Stepping up beside [npc.her] fellow "+(washingNice.size()>2?"slaves":"slave")+", [npc.name] smiles as [npc.she] starts to clean your body, saying,");
+						start.add("Сжимая в руке кусок мыла, [npc.name] счастливо шагает вперед, чтобы помочь своему товарищу [npc.her] "+(washingNice.size()>2?"slaves":"slave")+" отмыться. Повысив [npc.her] голос, [npc.she] говорит:");
+						start.add("Сделав шаг вперед с куском мыла в [npc.hand], [npc.name] с радостью принимается за очищение твоего тела. Повысив [npc.her] голос над шумом льющейся воды, [npc.she] говорит:");
+						start.add("[npc.her] подходит к тебе сбоку, "+(washingNice.size()>2?"slaves":"slave")+", [npc.name] улыбается, пока [npc.she] начинает отмывать твое тело, говоря,");
 					}
 					if(npc.hasSlavePermissionSetting(SlavePermissionSetting.BEHAVIOUR_WHOLESOME)) {
-						speech.add("[npc.speech(I love being so close to you, [pc.name]. Please let me know if you want me to anything differently.)]");
-						speech.add("[npc.speech(I'm so happy to be able to help you like this; I'm so lucky to be owned by you.)]");
-						speech.add("[npc.speech(Let me take care of you, [pc.name]; I want to show you how much you mean to me.)]");
+						speech.add("[npc.speech(Мне так нравится быть так близко к тебе, [pc.name]. Пожалуйста, скажи мне, если захочешь, чтобы я делала что-то иначе.)]");
+						speech.add("[npc.speech(Я так счастлива, что могу вот так помогать тебе; мне так повезло, что ты мой хозяин.)]");
+						speech.add("[npc.speech(Позволь мне позаботиться о тебе, [pc.name]; я хочу показать тебе, как много ты для меня значишь.)]");
 					} else {
-						speech.add("[npc.speech(Let me know if you need me to do anything differently, ok, [pc.name]?)]");
-						speech.add("[npc.speech(Please tell me if you need me to do anything differently.)]");
-						speech.add("[npc.speech(Let me take care of you, [pc.name].)]");
+						speech.add("[npc.speech(Дай мне знать, если нужно будет что-то изменить, хорошо, [pc.name]?)]");
+						speech.add("[npc.speech(Пожалуйста, скажи мне, если захочешь, чтобы я делала что-то иначе.)]");
+						speech.add("[npc.speech(Позволь мне позаботиться о тебе, [pc.name].)]");
 					}
 					
 				} else {
 					if(firstWashing) {
 						if(Main.game.getPlayer().hasHair()) {
-							start.add("Turning on the taps, [npc.name] steps forwards, before starting to help you wash your [pc.hair(true)] and body."
-									+ " Doing [npc.her] best to be heard over the sound of running water, [npc.she] raises [npc.her] voice and says,");
+							start.add("Turning on the taps, [npc.name] steps forwards, before starting to help you wash your [pc.hair(true)] and body. Doing [npc.her] best to be heard over the sound of running water, [npc.she] raises [npc.her] voice and says,");
 						} else {
-							start.add("Turning on the taps, [npc.name] steps forwards, before starting to help you wash your body."
-									+ " Doing [npc.her] best to be heard over the sound of running water, [npc.she] raises [npc.her] voice and says,");
+							start.add("Turning on the taps, [npc.name] steps forwards, before starting to help you wash your body. Doing [npc.her] best to be heard over the sound of running water, [npc.she] raises [npc.her] voice and says,");
 						}
 					} else {
-						start.add("Clutching a bar of soap, [npc.name] steps forwards, before helping [npc.her] fellow "+(washingNice.size()>2?"slaves":"slave")+" to clean you. Raising [npc.her] voice, [npc.she] says,");
-						start.add("Stepping forwards with a bar of soap in [npc.hand], [npc.name] sets about cleaning your body. Raising [npc.her] voice above the noise of running water, [npc.she] says,");
-						start.add("Stepping up beside [npc.her] fellow "+(washingNice.size()>2?"slaves":"slave")+", [npc.name] smiles as [npc.she] starts to clean your body, saying,");
+						start.add("Сжимая в руке кусок мыла, [npc.name] делает шаг вперед, чтобы помочь [npc.her] своему "+(washingNice.size()>2?"slaves":"slave")+" отмыться. Повысив [npc.her] голос, [npc.she] говорит:");
+						start.add("Сделав шаг вперед с куском мыла в [npc.hand], [npc.name] принимается отмывать твое тело. Возвышая [npc.her] голос над шумом текущей воды, [npc.she] говорит:");
+						start.add("[npc.her] подходит к тебе сбоку, "+(washingNice.size()>2?"slaves":"slave")+", [npc.name] улыбается, пока [npc.she] начинает отмывать твое тело, говоря,");
 					}
 					if(npc.hasSlavePermissionSetting(SlavePermissionSetting.BEHAVIOUR_WHOLESOME)) {
-						speech.add("[npc.speech(I love being so close to you, [pc.name]. Please let me know if you want me to anything differently.)]");
-						speech.add("[npc.speech(I'm so happy to be able to help you like this; I'm so lucky to be owned by you.)]");
-						speech.add("[npc.speech(Let me take care of you, [pc.name]; I want to show you how much you mean to me.)]");
+						speech.add("[npc.speech(Мне так нравится быть так близко к тебе, [pc.name]. Пожалуйста, скажи мне, если захочешь, чтобы я делала что-то иначе.)]");
+						speech.add("[npc.speech(Я так счастлива, что могу вот так помогать тебе; мне так повезло, что ты мой хозяин.)]");
+						speech.add("[npc.speech(Позволь мне позаботиться о тебе, [pc.name]; я хочу показать тебе, как много ты для меня значишь.)]");
 					} else {
-						speech.add("[npc.speech(Let me know if you need me to do anything differently.)]");
-						speech.add("[npc.speech(Just tell me if you need me to do anything differently.)]");
-						speech.add("[npc.speech(Let me take care of you, [pc.name].)]");
+						speech.add("[npc.speech(Дай знать, если хочешь, чтобы я делала что-то иначе.)]");
+						speech.add("[npc.speech(Просто скажи, если нужно, чтобы я делала что-то иначе.)]");
+						speech.add("[npc.speech(Позволь мне позаботиться о тебе, [pc.name].)]");
 					}
 				}
 			}
@@ -551,42 +535,40 @@ public class RoomPlayer {
 			
 				if(npc.isShy()) {
 					if(firstWashing) {
-						start.add("Reluctantly turning on the taps, [npc.name] steps forwards, before half-heartedly starting to help you wash yourself."
-								+ " Trying to use the sound of the running water to mask [npc.her] comments, [npc.she] mutters,");
+						start.add("Неохотно открыв краны, [npc.name] делает шаг вперед, а затем вяло принимается помогать тебе мыться. Пытаясь заглушить шум льющейся воды своими комментариями, [npc.she] бормочет, [npc.her],");
 					} else {
-						start.add("Reluctantly stepping forwards, [npc.name] casts [npc.her] gaze to the floor as [npc.she] half-heartedly starts to help you wash yourself. Letting out a weary sigh, [npc.she] mutters,");
-						start.add("Looking down at the floor, [npc.name] steps forwards and reluctantly starts to help you wash yourself. With an exasperated sigh, [npc.she] mutters under [npc.her] breath,");
-						start.add("Clearly not happy about it, [npc.name] nevertheless steps forwards and half-heartedly starts to help you wash yourself. Muttering under [npc.her] breath, [npc.she] sighs,");
+						start.add("Неохотно сделав шаг вперед, [npc.name] устремляет [npc.her] взгляд в пол, пока [npc.she] вяло помогает тебе мыться. Тяжело вздохнув, [npc.she] бормочет:");
+						start.add("Глядя в пол, [npc.name] делает шаг вперед и неохотно начинает помогать тебе мыться. Раздраженно вздохнув, [npc.she] бормочет себе под [npc.her] нос:");
+						start.add("Очевидно не в восторге, [npc.name], тем не менее, делает шаг вперед и вяло начинает помогать тебе мыться. Бормоча под [npc.her] нос, [npc.she] вздыхает:");
 					}
-					speech.add("[npc.speech(I hate this...)]");
-					speech.add("[npc.speech(How did I ever end up having to do things like this...)]");
-					speech.add("[npc.speech(This sucks...)]");
+					speech.add("[npc.speech(Ненавижу это...)]");
+					speech.add("[npc.speech(Как же я вообще докатилась до того, что приходится делать такое...)]");
+					speech.add("[npc.speech(Отстой какой-то...)]");
 					
 				} else if(npc.isSelfish()) {
 					if(firstWashing) {
-						start.add("Reluctantly turning on the taps, [npc.name] steps forwards, before half-heartedly starting to help you wash yourself."
-								+ " With a clear tone of animosity in [npc.her] voice, [npc.she] complains,");
+						start.add("Неохотно открыв краны, [npc.name] делает шаг вперед, а затем вяло принимается помогать тебе мыться. С явным оттенком враждебности в [npc.her] голосе, [npc.she] ворчит,");
 					} else {
-						start.add("Reluctantly stepping forwards, [npc.name] half-heartedly sets about helping you wash yourself. Letting out a weary sigh, [npc.she] complains,");
-						start.add("Rolling [npc.her] [npc.eyes], [npc.name] steps forwards and reluctantly starts to help you wash yourself, complaining as [npc.she] does so,");
-						start.add("With an annoyed sigh, [npc.name] steps forwards and half-heartedly starts to help you wash yourself. Not even trying to hide [npc.her] annoyance, [npc.she] angrily says,");
+						start.add("Неохотно сделав шаг вперед, [npc.name] вяло принимается помогать тебе мыться. Тяжело вздохнув, [npc.she] жалуется,");
+						start.add("Закатив [npc.her] [npc.eyes], [npc.name] делает шаг вперед и неохотно начинает помогать тебе мыться, при этом [npc.she] постоянно ворчит,");
+						start.add("Раздраженно вздохнув, [npc.name] делает шаг вперед и вяло принимается помогать тебе мыться. Даже не пытаясь скрыть [npc.her] раздражение, [npc.she] гневно говорит,");
 					}
-					speech.add("[npc.speech(I really hate doing this, you know? Just get some other slave to help you next time!)]");
-					speech.add("[npc.speech(Why do you insist on getting me to do this?! Isn't it clear that I hate helping you out like this?!)]");
-					speech.add("[npc.speech(This really fucking sucks. How about you get some other slave to wash you next time?)]");
+					speech.add("[npc.speech(Я прямо ненавижу это делать, понимаешь? Просто возьми в следующий раз другого раба, чтобы он тебе помог!)]");
+					speech.add("[npc.speech(Ну почему ты постоянно заставляешь меня это делать?! Разве не ясно, что я ненавижу помогать тебе вот так?!)]");
+					speech.add("[npc.speech(Это просто гребаный отстой. Как насчет того, чтобы в следующий раз тебя помыл какой-нибудь другой раб?)]");
 					
 				} else {
 					if(firstWashing) {
-						start.add("Reluctantly turning on the taps, [npc.name] steps forwards, before half-heartedly starting to help you wash yourself. In a clear sign of displeasure, [npc.she] sighs,");
+						start.add("Неохотно открыв краны, [npc.name] делает шаг вперед, а затем вяло принимается помогать тебе мыться. Явственно выражая недовольство, [npc.she] вздыхает,");
 					} else {
-						start.add("Reluctantly stepping forwards, [npc.name] half-heartedly sets about helping you wash yourself. Letting out a weary sigh, [npc.she] sighs,");
-						start.add("Rolling [npc.her] [npc.eyes], [npc.name] steps forwards and reluctantly starts to help you wash yourself, complaining as [npc.she] does so,");
-						start.add("With an annoyed sigh, [npc.name] steps forwards and half-heartedly starts to help you wash yourself. Not even trying to hide [npc.her] annoyance, [npc.she] sighs,");
+						start.add("Неохотно сделав шаг вперед, [npc.name] вяло принимается помогать тебе мыться. Тяжело вздохнув, [npc.she] вздыхает,");
+						start.add("Закатив [npc.her] [npc.eyes], [npc.name] делает шаг вперед и неохотно начинает помогать тебе мыться, при этом [npc.she] постоянно ворчит,");
+						start.add("С раздраженным вздохом [npc.name] делает шаг вперед и без особого энтузиазма принимается помогать тебе мыться. Даже не пытаясь скрыть [npc.her] раздражение, [npc.she] вздыхает,");
 					}
-					speech.add("[npc.speech(Is there nobody else you can ask to do this?)]");
-					speech.add("[npc.speech(I really wish you didn't make me do this...)]");
-					speech.add("[npc.speech(This sucks...)]");
-					speech.add("[npc.speech(I really hate having to do this, you know?)]");
+					speech.add("[npc.speech(Неужели тебе больше некого попросить об этом?)]");
+					speech.add("[npc.speech(Как бы я хотела, чтобы ты не заставлял меня это делать...)]");
+					speech.add("[npc.speech(Отстой какой-то...)]");
+					speech.add("[npc.speech(Ты же знаешь, как сильно я ненавижу это делать?)]");
 				}
 
 			sb.append(UtilText.parse(npc,Util.randomItemFrom(start)));
@@ -611,14 +593,14 @@ public class RoomPlayer {
 		sb.append("<p>");
 			if(soloSlave) {
 				sb.append(UtilText.parse(slavesWashing,
-						"Having been instructed to assist you in washing yourself, your slave, "+Util.stringsToStringList(names, false)+", similarly leaves [npc.her] clothes by the door before following you into the bathroom."));
+						"Ваша рабыня, которой было приказано помогать вам во время мытья, "+Util.stringsToStringList(names, false)+", так же оставляет [npc.her] одежду у двери, прежде чем последовать за тобой в ванную."));
 					sb.append(UtilText.parse(slavesWashing,
-							" Thankfully, your luxurious bathroom is spacious enough that the room doesn't feel overcrowded with [npc.name] in here as well."));
+							" К счастью, твоя роскошная ванная настолько просторна, что комната не кажется переполненной, даже когда здесь находится [npc.name]."));
 				
 			} else {
-				sb.append("Having been instructed to assist you in washing yourself, your slaves, "+Util.stringsToStringList(names, false)+", similarly leave their clothes by the door before following you into the bathroom.");
+				sb.append("Получив указание помочь тебе вымыться, твои рабыни, "+Util.stringsToStringList(names, false)+", так же оставляют свою одежду у двери, прежде чем последовать за тобой в ванную.");
 					sb.append(UtilText.parse(slavesWashing,
-							" Thankfully, your luxurious bathroom is spacious enough that the room doesn't feel overcrowded with your slaves in here as well."));
+							" К счастью, твоя роскошная ванная настолько просторна, что комната не кажется переполненной, даже когда здесь находятся твои рабыни."));
 			}
 		sb.append("</p>");
 		
@@ -634,140 +616,130 @@ public class RoomPlayer {
 			if(npc.hasSlavePermissionSetting(SlavePermissionSetting.BEHAVIOUR_PROFESSIONAL)) {
 				if(firstWashing) {
 					if(Main.game.getPlayer().hasHair()) {
-						start.add("Turning on the taps and running you a bath, [npc.name] dutifully starts to help you in washing your [pc.hair(true)] and body. Raising [npc.her] voice so as to be heard over the sound of running water, [npc.she] says,");
+						start.add("Открыв краны и набрав тебе ванну, [npc.name] послушно начинает помогать тебе мыть [pc.hair(true)] и тело. Повысив [npc.her] голос, чтобы его было слышно сквозь шум льющейся воды, [npc.she] говорит,");
 					} else {
-						start.add("Turning on the taps and running you a bath, [npc.name] dutifully starts to help you in washing your body. Raising [npc.her] voice so as to be heard over the sound of running water, [npc.she] says,");
+						start.add("Открыв краны и набрав тебе ванну, [npc.name] послушно начинает помогать тебе мыть тело. Повысив [npc.her] голос, чтобы его было слышно сквозь шум льющейся воды, [npc.she] говорит,");
 					}
 				} else {
-					start.add("Picking up a bar of soap, [npc.name] assists [npc.her] fellow "+(washingNice.size()>2?"slaves":"slave")+" in cleaning your body. As [npc.she] sets about [npc.her] task, [npc.she] says,");
-					start.add("Stepping forwards, with a bar of soap in [npc.hand], [npc.name] sets about cleaning your body, saying as [npc.she] does so,");
-					start.add("Stepping up beside [npc.her] fellow "+(washingNice.size()>2?"slaves":"slave")+", [npc.name] starts cleaning your body, saying,");
+					start.add("Взяв кусок мыла, [npc.name] помогает [npc.her] своей подруге "+(washingNice.size()>2?"slaves":"slave")+" очистить твое тело. Пока [npc.she] принимается за [npc.her] задачу, [npc.she] говорит,");
+					start.add("Сделав шаг вперед с куском мыла в [npc.hand], [npc.name] принимается очищать твое тело, приговаривая, пока [npc.she] это делает,");
+					start.add("[npc.her] подходит к тебе сбоку, "+(washingNice.size()>2?"slaves":"slave")+"[npc.name] начинает омывать твое тело, приговаривая:");
 				}
-				speech.add("[npc.speech(I hope this is to your satisfaction, [pc.name].)]");
-				speech.add("[npc.speech(Please let me know if you need me to do anything differently, [pc.name].)]");
-				speech.add("[npc.speech(I'll be sure to do a good job in cleaning you, [pc.name].)]");
+				speech.add("[npc.speech(Надеюсь, тебе понравится, [pc.name].)]");
+				speech.add("[npc.speech(Пожалуйста, дай мне знать, если хочешь, чтобы я делала что-то иначе, [pc.name].)]");
+				speech.add("[npc.speech(Я постараюсь очень тщательно тебя отмыть, [pc.name].)]");
 				
 			} else if(npc.hasSlavePermissionSetting(SlavePermissionSetting.BEHAVIOUR_SEDUCTIVE)) {
 				if(firstWashing) {
 					if(npc.hasBreasts()) {
-						start.add("Turning on the taps and running you a bath, [npc.name] moves up close behind you, before soaping your back down and starting to clean you."
-								+ " Suddenly, [npc.she] steps forwards, and, pressing [npc.her] [npc.breasts+] against your back, [npc.she] seductively [npc.moans],");
+						start.add("Открыв краны и набрав тебе ванну, [npc.name] подходит к тебе почти вплотную, после чего намыливает твою спину и начинает тебя очищать. Внезапно [npc.she] делает шаг вперед и, прижимая [npc.her] [npc.breasts+] к твоей спине, [npc.she] соблазнительно [npc.moans],");
 					} else {
-						start.add("Turning on the taps and running you a bath, [npc.name] moves up close behind you, before soaping your back down and starting to clean you."
-								+ " Suddenly, [npc.she] steps forwards, and, pressing [npc.herself] against your back, [npc.she] seductively [npc.moans],");
+						start.add("Включив воду и набрав тебе ванну, [npc.name] подходит вплотную сзади, после чего начинает намыливать твою спину и отмывать тебя. Внезапно [npc.she] делает шаг вперед и, прижимая [npc.herself] к твоей спине, соблазнительно [npc.moans] [npc.she],");
 					}
 				} else {
 					if(npc.hasBreasts()) {
-						start.add("Stepping forwards, [npc.name] presses [npc.her] [npc.breasts+] against your back, before seductively [npc.moaning],");
-						start.add("Rubbing a bar of soap over your back, [npc.name] suddenly steps forwards, pressing [npc.her] [npc.breasts+] against you as [npc.she] seductively [npc.moans],");
-						start.add("Deciding to start by cleaning your back, [npc.name] steps around behind you, before leaning forwards and pressing [npc.her] [npc.breasts+] against you, [npc.moaning],");
+						start.add("Сделав шаг вперед, [npc.name] прижимает [npc.her] [npc.breasts+] к твоей спине, а затем соблазнительно [npc.moaning],");
+						start.add("Намыливая твою спину куском мыла, [npc.name] внезапно делает шаг вперед, прижимая [npc.her] [npc.breasts+] к тебе, пока [npc.she] соблазнительно [npc.moans],");
+						start.add("Решив начать с твоей спины, [npc.name] обходит тебя сзади, наклоняется вперед и прижимает [npc.her] [npc.breasts+] к тебе, [npc.moaning],");
 					} else {
-						start.add("Stepping forwards, [npc.name] presses [npc.herself] against your back, before seductively [npc.moaning],");
-						start.add("Rubbing a bar of soap over your back, [npc.name] suddenly steps forwards, pressing [npc.herself] against you as [npc.she] seductively [npc.moans],");
-						start.add("Deciding to start by cleaning your back, [npc.name] steps around behind you, before leaning forwards and pressing [npc.herself] against you, [npc.moaning],");
+						start.add("Сделав шаг вперед, [npc.name] прижимается [npc.herself] к твоей спине, а затем соблазнительно [npc.moaning],");
+						start.add("Намыливая твою спину, [npc.name] внезапно делает шаг вперед, прижимая [npc.herself] к тебе, пока [npc.she] соблазнительно [npc.moans],");
+						start.add("Решив начать с чистки твоей спины, [npc.name] обходит тебя сзади, после чего наклоняется вперед и прижимается [npc.herself] к тебе, [npc.moaning],");
 					}
 				}
-				speech.add("[npc.speech(You don't mind if I get this close, do you?)]");
-				speech.add("[npc.speech(You like the feeling of me being this close, don't you?)]");
-				speech.add("[npc.speech(That's right, relax and let me take care of you...)]");
-				speech.add("[npc.speech(Perhaps once you're clean, you'd like to do something dirty with me...)]");
+				speech.add("[npc.speech(Ты ведь не против, если я подойду так близко?)]");
+				speech.add("[npc.speech(Тебе ведь нравится это ощущение, когда я так близко, правда?)]");
+				speech.add("[npc.speech(Вот так, расслабься и позволь мне позаботиться о тебе...)]");
+				speech.add("[npc.speech(Возможно, когда ты отмоешься, ты захочешь заняться со мной чем-нибудь грязным...)]");
 				
 			} else if(npc.hasSlavePermissionSetting(SlavePermissionSetting.BEHAVIOUR_SLUTTY)) {
 				if(firstWashing) {
 					if(npc.hasBreasts()) {
-						start.add("Turning on the taps and running you a bath, [npc.name] moves up close behind you, before immediately pressing [npc.her] [npc.breasts+] against your back."
-								+ " Obviously seeing this as an opportunity to have some fun with you, [npc.she] reaches around to start groping your body, seductively [npc.moaning] into your [pc.ear] as [npc.she] does this,");
+						start.add("Включив воду и набрав тебе ванну, [npc.name] подходит вплотную сзади, после чего сразу прижимает [npc.her] [npc.breasts+] к твоей спине. Очевидно видя в этом возможность немного развлечься с тобой, [npc.she] обхватывает тебя руками и начинает ласкать твое тело, соблазнительно [npc.moaning] в твою [pc.ear], пока [npc.she] делает это,");
 					} else {
-						start.add("Turning on the taps and running you a bath, [npc.name] moves up close behind you, before immediately pressing [npc.her] body in against your back."
-								+ " Obviously seeing this as an opportunity to have some fun with you, [npc.she] reaches around to start groping your body, seductively [npc.moaning] into your [pc.ear] as [npc.she] does this,");
+						start.add("Включив воду и набрав тебе ванну, [npc.name] подходит вплотную сзади, после чего сразу прижимается [npc.her] всем телом к твоей спине. Очевидно видя в этом возможность немного развлечься с тобой, [npc.she] обхватывает тебя руками и начинает ласкать твое тело, соблазнительно [npc.moaning] в твою [pc.ear], пока [npc.she] делает это,");
 					}
 				} else {
 					if(npc.hasBreasts()) {
-						start.add("Stepping forwards, [npc.name] presses [npc.her] [npc.breasts+] against your back, before seductively [npc.moaning],");
-						start.add("Rubbing a bar of soap over your back, [npc.name] suddenly steps forwards, pressing [npc.her] [npc.breasts+] against you as [npc.she] seductively [npc.moans],");
-						start.add("Deciding to start by cleaning your back, [npc.name] steps around behind you, before leaning forwards and pressing [npc.her] [npc.breasts+] against you, [npc.moaning],");
+						start.add("Сделав шаг вперед, [npc.name] прижимает [npc.her] [npc.breasts+] к твоей спине, а затем соблазнительно [npc.moaning],");
+						start.add("Намыливая твою спину куском мыла, [npc.name] внезапно делает шаг вперед, прижимая [npc.her] [npc.breasts+] к тебе, пока [npc.she] соблазнительно [npc.moans],");
+						start.add("Решив начать с твоей спины, [npc.name] обходит тебя сзади, наклоняется вперед и прижимает [npc.her] [npc.breasts+] к тебе, [npc.moaning],");
 					} else {
-						start.add("Stepping forwards, [npc.name] presses [npc.herself] against your back, before seductively [npc.moaning],");
-						start.add("Rubbing a bar of soap over your back, [npc.name] suddenly steps forwards, pressing [npc.herself] against you as [npc.she] seductively [npc.moans],");
-						start.add("Deciding to start by cleaning your back, [npc.name] steps around behind you, before leaning forwards and pressing [npc.herself] against you, [npc.moaning],");
+						start.add("Сделав шаг вперед, [npc.name] прижимается [npc.herself] к твоей спине, а затем соблазнительно [npc.moaning],");
+						start.add("Намыливая твою спину, [npc.name] внезапно делает шаг вперед, прижимая [npc.herself] к тебе, пока [npc.she] соблазнительно [npc.moans],");
+						start.add("Решив начать с чистки твоей спины, [npc.name] обходит тебя сзади, после чего наклоняется вперед и прижимается [npc.herself] к тебе, [npc.moaning],");
 					}
 				}
-				speech.add("[npc.speech(Oh yeah, you like me feeling you up like this, don't you?)]");
-				speech.add("[npc.speech(All this close contact is really turning me on; you wanna fuck after this?)]");
-				speech.add("[npc.speech(This is making me so horny... You're up for having a good fuck after this, aren't you?)]");
+				speech.add("[npc.speech(О да, тебе ведь нравится, когда я так тебя ласкаю, правда?)]");
+				speech.add("[npc.speech(От такого тесного контакта меня так и штырит... Хочешь трахнуться после этого?)]");
+				speech.add("[npc.speech(Меня так возбуждает... Ты ведь не против хорошенько трахнуться после этого, а?)]");
 				
 			} else if(npc.hasSlavePermissionSetting(SlavePermissionSetting.BEHAVIOUR_STANDARD)
 					|| npc.hasSlavePermissionSetting(SlavePermissionSetting.BEHAVIOUR_WHOLESOME)) {
 				if(npc.isShy()) {
 					if(firstWashing) {
 						if(Main.game.getPlayer().hasHair()) {
-							start.add("Turning on the taps and running you a bath, [npc.name] nervously shuffles forwards, before starting to help you wash your [pc.hair(true)] and body."
-									+ " Doing [npc.her] best to be heard over the sound of running water, [npc.she] raises [npc.her] voice a little and says,");
+							start.add("Turning on the taps and running you a bath, [npc.name] nervously shuffles forwards, before starting to help you wash your [pc.hair(true)] and body. Doing [npc.her] best to be heard over the sound of running water, [npc.she] raises [npc.her] voice a little and says,");
 						} else {
-							start.add("Turning on the taps and running you a bath, [npc.name] nervously shuffles forwards, before starting to help you wash your body."
-									+ " Doing [npc.her] best to be heard over the sound of running water, [npc.she] raises [npc.her] voice a little and says,");
+							start.add("Включив краны и набрав тебе ванну, [npc.name] нервно делает шаг вперед, а затем принимается помогать тебе мыться. Стараясь перекричать шум льющейся воды, [npc.she] немного повышает [npc.her] голос и говорит: [npc.her] старается изо всех сил, чтобы её было слышно, и говорит,");
 						}
 					} else {
-						start.add("Clutching a bar of soap, [npc.name] nervously shuffles forwards, before helping [npc.her] fellow "+(washingNice.size()>2?"slaves":"slave")+" to clean you. Raising [npc.her] voice a little, [npc.she] says,");
-						start.add("Stepping forwards with a bar of soap in [npc.hand], [npc.name] nervously sets about cleaning your body. Squeaking above the noise of running water, [npc.she] says,");
-						start.add("Stepping up beside [npc.her] fellow "+(washingNice.size()>2?"slaves":"slave")+", [npc.name] blushes as [npc.she] starts to clean your body, saying,");
+						start.add("Сжимая в руке кусок мыла, [npc.name] нервно подается вперед, чтобы помочь [npc.her] соратнику "+(washingNice.size()>2?"slaves":"slave")+" отмыться. Немного повысив [npc.her] голос, [npc.she] говорит:");
+						start.add("Сделав шаг вперед с куском мыла в [npc.hand], [npc.name] нервно принимается отмывать твое тело. Перекрикивая шум льющейся воды, [npc.she] говорит:");
+						start.add("[npc.her] подходит к тебе сбоку, "+(washingNice.size()>2?"slaves":"slave")+", [npc.name] краснеет, когда [npc.she] начинает отмывать твое тело, приговаривая:");
 					}
 					if(npc.hasSlavePermissionSetting(SlavePermissionSetting.BEHAVIOUR_WHOLESOME)) {
-						speech.add("[npc.speech(I love being so close to you, [pc.name]?)]");
-						speech.add("[npc.speech(I'm so happy to be able to help you like this...)]");
-						speech.add("[npc.speech(Getting to help you like this makes me so happy...)]");
+						speech.add("[npc.speech(Мне так нравится быть так близко к тебе, [pc.name]!)]");
+						speech.add("[npc.speech(Я так счастлива, что могу вот так тебе помогать...)]");
+						speech.add("[npc.speech(Меня так радует возможность помогать тебе вот так...)]");
 					} else {
-						speech.add("[npc.speech(I'm not doing this wrong, am I, [pc.name]?)]");
-						speech.add("[npc.speech(Just let me know if I'm doing this wrong...)]");
-						speech.add("[npc.speech(I hope this is how you wanted me to wash you...)]");
+						speech.add("[npc.speech(Я ведь всё правильно делаю, [pc.name]?)]");
+						speech.add("[npc.speech(Просто скажи, если я буду делать что-то не так...)]");
+						speech.add("[npc.speech(Надеюсь, ты именно так и хотел, чтобы я тебя отмыла...)]");
 					}
 					
 				} else if(npc.isKind()) {
 					if(firstWashing) {
 						if(Main.game.getPlayer().hasHair()) {
-							start.add("Turning on the taps and running you a bath, [npc.name] happily steps forwards, before gently starting to help you wash your [pc.hair(true)] and body."
-									+ " Doing [npc.her] best to be heard over the sound of running water, [npc.she] raises [npc.her] voice and says,");
+							start.add("Turning on the taps and running you a bath, [npc.name] happily steps forwards, before gently starting to help you wash your [pc.hair(true)] and body. Doing [npc.her] best to be heard over the sound of running water, [npc.she] raises [npc.her] voice and says,");
 						} else {
-							start.add("Turning on the taps and running you a bath, [npc.name] happily steps forwards, before gently starting to help you wash your body."
-									+ " Doing [npc.her] best to be heard over the sound of running water, [npc.she] raises [npc.her] voice and says,");
+							start.add("Turning on the taps and running you a bath, [npc.name] happily steps forwards, before gently starting to help you wash your body. Doing [npc.her] best to be heard over the sound of running water, [npc.she] raises [npc.her] voice and says,");
 						}
 					} else {
-						start.add("Clutching a bar of soap, [npc.name] happily steps forwards, before helping [npc.her] fellow "+(washingNice.size()>2?"slaves":"slave")+" to clean you. Raising [npc.her] voice, [npc.she] says,");
-						start.add("Stepping forwards with a bar of soap in [npc.hand], [npc.name] happily sets about cleaning your body. Raising [npc.her] voice above the noise of running water, [npc.she] says,");
-						start.add("Stepping up beside [npc.her] fellow "+(washingNice.size()>2?"slaves":"slave")+", [npc.name] smiles as [npc.she] starts to clean your body, saying,");
+						start.add("Сжимая в руке кусок мыла, [npc.name] счастливо шагает вперед, чтобы помочь своему товарищу [npc.her] "+(washingNice.size()>2?"slaves":"slave")+" отмыться. Повысив [npc.her] голос, [npc.she] говорит:");
+						start.add("Сделав шаг вперед с куском мыла в [npc.hand], [npc.name] с радостью принимается за очищение твоего тела. Повысив [npc.her] голос над шумом льющейся воды, [npc.she] говорит:");
+						start.add("[npc.her] подходит к тебе сбоку, "+(washingNice.size()>2?"slaves":"slave")+", [npc.name] улыбается, пока [npc.she] начинает отмывать твое тело, говоря,");
 					}
 					if(npc.hasSlavePermissionSetting(SlavePermissionSetting.BEHAVIOUR_WHOLESOME)) {
-						speech.add("[npc.speech(I love being so close to you, [pc.name]. Please let me know if you want me to anything differently.)]");
-						speech.add("[npc.speech(I'm so happy to be able to help you like this; I'm so lucky to be owned by you.)]");
-						speech.add("[npc.speech(Let me take care of you, [pc.name]; I want to show you how much you mean to me.)]");
+						speech.add("[npc.speech(Мне так нравится быть так близко к тебе, [pc.name]. Пожалуйста, скажи мне, если захочешь, чтобы я делала что-то иначе.)]");
+						speech.add("[npc.speech(Я так счастлива, что могу вот так помогать тебе; мне так повезло, что ты мой хозяин.)]");
+						speech.add("[npc.speech(Позволь мне позаботиться о тебе, [pc.name]; я хочу показать тебе, как много ты для меня значишь.)]");
 					} else {
-						speech.add("[npc.speech(Let me know if you need me to do anything differently, ok, [pc.name]?)]");
-						speech.add("[npc.speech(Please tell me if you need me to do anything differently.)]");
-						speech.add("[npc.speech(Let me take care of you, [pc.name].)]");
+						speech.add("[npc.speech(Дай мне знать, если нужно будет что-то изменить, хорошо, [pc.name]?)]");
+						speech.add("[npc.speech(Пожалуйста, скажи мне, если захочешь, чтобы я делала что-то иначе.)]");
+						speech.add("[npc.speech(Позволь мне позаботиться о тебе, [pc.name].)]");
 					}
 					
 				} else {
 					if(firstWashing) {
 						if(Main.game.getPlayer().hasHair()) {
-							start.add("Turning on the taps and running you a bath, [npc.name] steps forwards, before starting to help you wash your [pc.hair(true)] and body."
-									+ " Doing [npc.her] best to be heard over the sound of running water, [npc.she] raises [npc.her] voice and says,");
+							start.add("Turning on the taps and running you a bath, [npc.name] steps forwards, before starting to help you wash your [pc.hair(true)] and body. Doing [npc.her] best to be heard over the sound of running water, [npc.she] raises [npc.her] voice and says,");
 						} else {
-							start.add("Turning on the taps and running you a bath, [npc.name] steps forwards, before starting to help you wash your body."
-									+ " Doing [npc.her] best to be heard over the sound of running water, [npc.she] raises [npc.her] voice and says,");
+							start.add("Turning on the taps and running you a bath, [npc.name] steps forwards, before starting to help you wash your body. Doing [npc.her] best to be heard over the sound of running water, [npc.she] raises [npc.her] voice and says,");
 						}
 					} else {
-						start.add("Clutching a bar of soap, [npc.name] steps forwards, before helping [npc.her] fellow "+(washingNice.size()>2?"slaves":"slave")+" to clean you. Raising [npc.her] voice, [npc.she] says,");
-						start.add("Stepping forwards with a bar of soap in [npc.hand], [npc.name] sets about cleaning your body. Raising [npc.her] voice above the noise of running water, [npc.she] says,");
-						start.add("Stepping up beside [npc.her] fellow "+(washingNice.size()>2?"slaves":"slave")+", [npc.name] smiles as [npc.she] starts to clean your body, saying,");
+						start.add("Сжимая в руке кусок мыла, [npc.name] делает шаг вперед, чтобы помочь [npc.her] своему "+(washingNice.size()>2?"slaves":"slave")+" отмыться. Повысив [npc.her] голос, [npc.she] говорит:");
+						start.add("Сделав шаг вперед с куском мыла в [npc.hand], [npc.name] принимается отмывать твое тело. Возвышая [npc.her] голос над шумом текущей воды, [npc.she] говорит:");
+						start.add("[npc.her] подходит к тебе сбоку, "+(washingNice.size()>2?"slaves":"slave")+", [npc.name] улыбается, пока [npc.she] начинает отмывать твое тело, говоря,");
 					}
 					if(npc.hasSlavePermissionSetting(SlavePermissionSetting.BEHAVIOUR_WHOLESOME)) {
-						speech.add("[npc.speech(I love being so close to you, [pc.name]. Please let me know if you want me to anything differently.)]");
-						speech.add("[npc.speech(I'm so happy to be able to help you like this; I'm so lucky to be owned by you.)]");
-						speech.add("[npc.speech(Let me take care of you, [pc.name]; I want to show you how much you mean to me.)]");
+						speech.add("[npc.speech(Мне так нравится быть так близко к тебе, [pc.name]. Пожалуйста, скажи мне, если захочешь, чтобы я делала что-то иначе.)]");
+						speech.add("[npc.speech(Я так счастлива, что могу вот так помогать тебе; мне так повезло, что ты мой хозяин.)]");
+						speech.add("[npc.speech(Позволь мне позаботиться о тебе, [pc.name]; я хочу показать тебе, как много ты для меня значишь.)]");
 					} else {
-						speech.add("[npc.speech(Let me know if you need me to do anything differently.)]");
-						speech.add("[npc.speech(Just tell me if you need me to do anything differently.)]");
-						speech.add("[npc.speech(Let me take care of you, [pc.name].)]");
+						speech.add("[npc.speech(Дай знать, если хочешь, чтобы я делала что-то иначе.)]");
+						speech.add("[npc.speech(Просто скажи, если нужно, чтобы я делала что-то иначе.)]");
+						speech.add("[npc.speech(Позволь мне позаботиться о тебе, [pc.name].)]");
 					}
 				}
 			}
@@ -787,42 +759,40 @@ public class RoomPlayer {
 			
 				if(npc.isShy()) {
 					if(firstWashing) {
-						start.add("Reluctantly turning on the taps, [npc.name] steps forwards, before half-heartedly starting to help you wash yourself."
-								+ " Trying to use the sound of the running water to mask [npc.her] comments, [npc.she] mutters,");
+						start.add("Неохотно открыв краны, [npc.name] делает шаг вперед, а затем вяло принимается помогать тебе мыться. Пытаясь заглушить шум льющейся воды своими комментариями, [npc.she] бормочет, [npc.her],");
 					} else {
-						start.add("Reluctantly stepping forwards, [npc.name] casts [npc.her] gaze to the floor as [npc.she] half-heartedly starts to help you wash yourself. Letting out a weary sigh, [npc.she] mutters,");
-						start.add("Looking down at the floor, [npc.name] steps forwards and reluctantly starts to help you wash yourself. With an exasperated sigh, [npc.she] mutters under [npc.her] breath,");
-						start.add("Clearly not happy about it, [npc.name] nevertheless steps forwards and half-heartedly starts to help you wash yourself. Muttering under [npc.her] breath, [npc.she] sighs,");
+						start.add("Неохотно сделав шаг вперед, [npc.name] устремляет [npc.her] взгляд в пол, пока [npc.she] вяло помогает тебе мыться. Тяжело вздохнув, [npc.she] бормочет:");
+						start.add("Глядя в пол, [npc.name] делает шаг вперед и неохотно начинает помогать тебе мыться. Раздраженно вздохнув, [npc.she] бормочет себе под [npc.her] нос:");
+						start.add("Очевидно не в восторге, [npc.name], тем не менее, делает шаг вперед и вяло начинает помогать тебе мыться. Бормоча под [npc.her] нос, [npc.she] вздыхает:");
 					}
-					speech.add("[npc.speech(I hate this...)]");
-					speech.add("[npc.speech(How did I ever end up having to do things like this...)]");
-					speech.add("[npc.speech(This sucks...)]");
+					speech.add("[npc.speech(Ненавижу это...)]");
+					speech.add("[npc.speech(Как же я вообще докатилась до того, что приходится делать такое...)]");
+					speech.add("[npc.speech(Отстой какой-то...)]");
 					
 				} else if(npc.isSelfish()) {
 					if(firstWashing) {
-						start.add("Reluctantly turning on the taps, [npc.name] steps forwards, before half-heartedly starting to help you wash yourself."
-								+ " With a clear tone of animosity in [npc.her] voice, [npc.she] complains,");
+						start.add("Неохотно открыв краны, [npc.name] делает шаг вперед, а затем вяло принимается помогать тебе мыться. С явным оттенком враждебности в [npc.her] голосе, [npc.she] ворчит,");
 					} else {
-						start.add("Reluctantly stepping forwards, [npc.name] half-heartedly sets about helping you wash yourself. Letting out a weary sigh, [npc.she] complains,");
-						start.add("Rolling [npc.her] [npc.eyes], [npc.name] steps forwards and reluctantly starts to help you wash yourself, complaining as [npc.she] does so,");
-						start.add("With an annoyed sigh, [npc.name] steps forwards and half-heartedly starts to help you wash yourself. Not even trying to hide [npc.her] annoyance, [npc.she] angrily says,");
+						start.add("Неохотно сделав шаг вперед, [npc.name] вяло принимается помогать тебе мыться. Тяжело вздохнув, [npc.she] жалуется,");
+						start.add("Закатив [npc.her] [npc.eyes], [npc.name] делает шаг вперед и неохотно начинает помогать тебе мыться, при этом [npc.she] постоянно ворчит,");
+						start.add("Раздраженно вздохнув, [npc.name] делает шаг вперед и вяло принимается помогать тебе мыться. Даже не пытаясь скрыть [npc.her] раздражение, [npc.she] гневно говорит,");
 					}
-					speech.add("[npc.speech(I really hate doing this, you know? Just get some other slave to help you next time!)]");
-					speech.add("[npc.speech(Why do you insist on getting me to do this?! Isn't it clear that I hate helping you out like this?!)]");
-					speech.add("[npc.speech(This really fucking sucks. How about you get some other slave to wash you next time?)]");
+					speech.add("[npc.speech(Я прямо ненавижу это делать, понимаешь? Просто возьми в следующий раз другого раба, чтобы он тебе помог!)]");
+					speech.add("[npc.speech(Ну почему ты постоянно заставляешь меня это делать?! Разве не ясно, что я ненавижу помогать тебе вот так?!)]");
+					speech.add("[npc.speech(Это просто гребаный отстой. Как насчет того, чтобы в следующий раз тебя помыл какой-нибудь другой раб?)]");
 					
 				} else {
 					if(firstWashing) {
-						start.add("Reluctantly turning on the taps, [npc.name] steps forwards, before half-heartedly starting to help you wash yourself. In a clear sign of displeasure, [npc.she] sighs,");
+						start.add("Неохотно открыв краны, [npc.name] делает шаг вперед, а затем вяло принимается помогать тебе мыться. Явственно выражая недовольство, [npc.she] вздыхает,");
 					} else {
-						start.add("Reluctantly stepping forwards, [npc.name] half-heartedly sets about helping you wash yourself. Letting out a weary sigh, [npc.she] sighs,");
-						start.add("Rolling [npc.her] [npc.eyes], [npc.name] steps forwards and reluctantly starts to help you wash yourself, complaining as [npc.she] does so,");
-						start.add("With an annoyed sigh, [npc.name] steps forwards and half-heartedly starts to help you wash yourself. Not even trying to hide [npc.her] annoyance, [npc.she] sighs,");
+						start.add("Неохотно сделав шаг вперед, [npc.name] вяло принимается помогать тебе мыться. Тяжело вздохнув, [npc.she] вздыхает,");
+						start.add("Закатив [npc.her] [npc.eyes], [npc.name] делает шаг вперед и неохотно начинает помогать тебе мыться, при этом [npc.she] постоянно ворчит,");
+						start.add("С раздраженным вздохом [npc.name] делает шаг вперед и без особого энтузиазма принимается помогать тебе мыться. Даже не пытаясь скрыть [npc.her] раздражение, [npc.she] вздыхает,");
 					}
-					speech.add("[npc.speech(Is there nobody else you can ask to do this?)]");
-					speech.add("[npc.speech(I really wish you didn't make me do this...)]");
-					speech.add("[npc.speech(This sucks...)]");
-					speech.add("[npc.speech(I really hate having to do this, you know?)]");
+					speech.add("[npc.speech(Неужели тебе больше некого попросить об этом?)]");
+					speech.add("[npc.speech(Как бы я хотела, чтобы ты не заставлял меня это делать...)]");
+					speech.add("[npc.speech(Отстой какой-то...)]");
+					speech.add("[npc.speech(Ты же знаешь, как сильно я ненавижу это делать?)]");
 				}
 
 			sb.append(UtilText.parse(npc,Util.randomItemFrom(start)));
@@ -844,127 +814,114 @@ public class RoomPlayer {
 	private static String getCalendarImageDescription(Month month) {
 		StringBuilder sb = new StringBuilder();
 
-		sb.append("<p>"
-				+ "Flicking through the calendar until you're looking at the page for "+month.getDisplayName(TextStyle.FULL, Locale.ENGLISH)+", you see that this month's image is now of ");
+		sb.append("<p>Листая календарь, пока ты не доходишь до страницы "+month.getDisplayName(TextStyle.FULL, Locale.ENGLISH)+", ты видишь, что на картинке в этом месяце теперь изображена ");
 		
 		if(Util.random.nextInt()<15) {
 			if(Main.game.getPlayer().getSexualOrientation()==SexualOrientation.ANDROPHILIC) {
 				sb.append(UtilText.returnStringAtRandom(
-						"a handsome merman, who's busily flexing his muscles while perched on a wave-swept rock.",
-						"muscular reindeer-boy, who's grinning as he presents his huge cock to you."));
+						"красивый тритон, который увлеченно играет мускулами, восседая на омытом волнами камне.",
+						"мускулистый олень-мальчик, который ухмыляется, демонстрируя тебе свой огромный член."));
 			} else {
 				sb.append(UtilText.returnStringAtRandom(
-						"a beautiful mermaid, who's happily showing off her exposed breasts while perched on a wave-swept rock.",
-						"a curvy reindeer-girl, who's bending over a wooden table and presenting her wet pussy to you."));
+						"прекрасная русалка, которая счастливо выставляет напоказ свою обнаженную грудь, восседая на омытом волнами камне.",
+						"пышная олениха, которая склонилась над деревянным столом, подставляя тебе свою мокрую киску."));
 			}
 			
 		} else {
 			switch(month) {
 				case JANUARY:
 					if(Main.game.getPlayer().getSexualOrientation()==SexualOrientation.ANDROPHILIC) {
-						sb.append("a toned "+Subspecies.RAT_MORPH.getSingularMaleName(null)+", who's grinning mischievously at you while stroking his fat, erect cock.");
+						sb.append("подтянутый "+Subspecies.RAT_MORPH.getSingularMaleName(null)+", который озорно ухмыляется тебе, поглаживая свой толстый эрегированный член.");
 					} else {
-						sb.append("a horny "+Subspecies.RAT_MORPH.getSingularFemaleName(null)+", who's bent over a table in order to present her dripping pussy to you.");
+						sb.append("возбужденная "+Subspecies.RAT_MORPH.getSingularFemaleName(null)+", которая наклонилась над столом, чтобы продемонстрировать тебе свою сочащуюся киску.");
 					}
 					break;
 				case FEBRUARY:
 					if(Main.game.getPlayer().getSexualOrientation()==SexualOrientation.ANDROPHILIC) {
-						sb.append("a topless "+Subspecies.COW_MORPH.getSingularMaleName(null)+"."
-								+ " His huge muscles are flexing as he carries a felled tree over one shoulder, while between his legs, you can't help but notice that he's got a massive bulge pressing out against the fabric of his shorts.");
+						sb.append("с обнаженной грудью "+Subspecies.COW_MORPH.getSingularMaleName(null)+". Его огромные мышцы перекатываются, пока он несет срубленное дерево на одном плече, а между его ног невозможно не заметить массивный бугор, вдавливающийся в ткань шорт.");
 					} else {
-						sb.append("a black-and-white "+Subspecies.COW_MORPH.getSingularFemaleName(null)+", who's sitting on a small milking stool."
-								+ " With a happy smile on her face, she's busily pinching and tugging at her engorged nipples, causing a stream of milk to flow out into a metal bucket.");
+						sb.append("черно-белая "+Subspecies.COW_MORPH.getSingularFemaleName(null)+", сидящая на маленькой табуретке для дойки. С счастливой улыбкой на лице она увлеченно щиплет и тянет свои раздувшиеся соски, из-за чего струйки молока стекают в металлическое ведро.");
 					}
 					break;
 				case MARCH:
 					if(Main.game.getPlayer().getSexualOrientation()==SexualOrientation.ANDROPHILIC) {
-						sb.append("a fierce-looking "+Subspecies.getSubspeciesFromId("innoxia_panther_subspecies_tiger").getSingularMaleName(null)+"."
-								+ " Striking a dominant pose, he's flashing you a toothy grin, clearly excited by the fact that his huge feline cock is fully on display.");
+						sb.append("с яростным видом "+Subspecies.getSubspeciesFromId("innoxia_panther_subspecies_tiger").getSingularMaleName(null)+". Приняв доминантную позу, он скалится тебе в улыбке, явно возбужденный тем, что его огромный кошачий член выставлен напоказ.");
 					} else {
-						sb.append("a fierce-looking "+Subspecies.getSubspeciesFromId("innoxia_panther_subspecies_tiger").getSingularFemaleName(null)+"."
-								+ " Striking a dominant pose, she's flashing you a toothy grin, clearly excited by the fact that her large breasts and tight pussy are fully on display.");
+						sb.append("с яростным видом "+Subspecies.getSubspeciesFromId("innoxia_panther_subspecies_tiger").getSingularFemaleName(null)+". Приняв доминантную позу, она скалится тебе в улыбке, явно возбужденная тем, что ее пышная грудь и тугая киска выставлены напоказ.");
 					}
 					break;
 				case APRIL:
 					if(Main.game.getPlayer().getSexualOrientation()==SexualOrientation.ANDROPHILIC) {
-						sb.append("a handsome "+Subspecies.RABBIT_MORPH.getSingularMaleName(null)+", who's holding his massive cock in one hand while giving you a suggestive wink.");
+						sb.append("красивый "+Subspecies.RABBIT_MORPH.getSingularMaleName(null)+", который держит свой массивный член одной рукой, многозначительно подмигивая тебе.");
 					} else {
-						sb.append("three blushing "+Subspecies.RABBIT_MORPH.getPluralFemaleName(null)+", who are down on all fours, side-by-side, presenting their pussies to you.");
+						sb.append("три раскрасневшихся "+Subspecies.RABBIT_MORPH.getPluralFemaleName(null)+", которые стоят на четвереньках бок о бок, подставляя тебе свои киски.");
 					}
 					break;
 				case MAY:
 					if(Main.game.getPlayer().getSexualOrientation()==SexualOrientation.ANDROPHILIC) {
-						sb.append("a powerful dragon, who's sitting on a golden throne perched on the top of a huge pile of treasure."
-								+ " His huge, scaly cock is fully on display, and with a grin on his face, he's giving you an expectant look, as though he's waiting for you to climb up and get a taste of it.");
+						sb.append("могучий дракон, восседающий на золотом троне на вершине огромной горы сокровищ. Его огромный чешуйчатый член выставлен напоказ, и с ухмылкой на лице он смотрит на тебя с ожиданием, словно ждет, когда ты заберешься повыше и попробуешь его на вкус.");
 					} else {
-						sb.append("a powerful dragoness, who's sitting on a golden throne perched on the top of a huge pile of treasure."
-								+ " Her wet, scaly pussy is fully on display, and with a grin on her face, she's giving you an expectant look, as though she's waiting for you to climb up and get a taste of it.");
+						sb.append("могучая дракониха, восседающая на золотом троне на вершине огромной горы сокровищ. Ее влажная чешуйчатая киска выставлена напоказ, и с ухмылкой на лице она смотрит на тебя с ожиданием, словно ждет, когда ты заберешься повыше и попробуешь ее на вкус.");
 					}
 					break;
 				case JUNE:
 					if(Main.game.getPlayer().getSexualOrientation()==SexualOrientation.ANDROPHILIC) {
-						sb.append("an exotic-looking male lamia."
-								+ " He's quite clearly turned on and eager to have sex with someone, for his twin-cocks have pushed out from his cloaca; their heads already glistening in the sun from the slimy precum they're starting to exude.");
+						sb.append("экзотически выглядящий самец ламии. Он явно возбужден и жаждет секса: его двойной член высунулся из клоаки, а головки уже блестят на солнце от выделяющейся слизистой предэякулята.");
 					} else {
-						sb.append("an exotic-looking female lamia."
-								+ " She's quite clearly turned on and eager to have sex with someone, for she's reaching down to spread her cloaca and present her dripping-wet pussy to you.");
+						sb.append("экзотически выглядящая самка ламии. Она явно возбуждена и жаждет секса: она тянется вниз, чтобы раздвинуть клоаку и продемонстрировать тебе свою сочащуюся влагой киску.");
 					}
 					break;
 				case JULY:
 					if(Main.game.getPlayer().getSexualOrientation()==SexualOrientation.ANDROPHILIC) {
-						sb.append("an impressively-endowed "+Subspecies.HORSE_MORPH.getSingularMaleName(null)+", who's flexing his muscles as he presents his fully-erect flared cock to you.");
+						sb.append("впечатляюще одаренный "+Subspecies.HORSE_MORPH.getSingularMaleName(null)+", который напрягает мышцы, демонстрируя тебе свой полностью эрегированный расширенный член.");
 					} else {
-						sb.append("a fit "+Subspecies.HORSE_MORPH.getSingularFemaleName(null)+", who's leaning against a fence, flicking her tail to one side in order to present her animalistic-pussy to you.");
+						sb.append("подтянутая "+Subspecies.HORSE_MORPH.getSingularFemaleName(null)+", которая прислонилась к забору, помахивая хвостом в сторону, чтобы продемонстрировать тебе свою звериную киску.");
 					}
 					break;
 				case AUGUST:
 					if(Main.game.getPlayer().getSexualOrientation()==SexualOrientation.ANDROPHILIC) {
-						sb.append("a sheep-boy and goat-boy, standing side-by-side and presenting their erect cocks as they wink playfully at you.");
+						sb.append("мальчик-овечка и мальчик-козочка, стоящие плечом к плечу и демонстрирующие свои эрегированные члены, игриво подмигивая тебе.");
 					} else {
-						sb.append("a woolly sheep-girl and goat-girl, who are lying back and spreading their legs, presenting you with their tight, wet pussies.");
+						sb.append("пушистая овечья и козья девчонки, которые лежат, широко разведя ноги и демонстрируя тебе свои узкие, влажные киски.");
 					}
 					break;
 				case SEPTEMBER:
 					if(Main.game.getPlayer().getSexualOrientation()==SexualOrientation.ANDROPHILIC) {
-						sb.append("an unusually-masculine harpy."
-								+ " Although the size of his cock is nothing to write home about, he's extremely handsome, and you feel your heart beating faster as you see him winking at you.");
+						sb.append("необычайно мужественная гарпия. Хотя размер его члена не вызывает особого восторга, он чертовски красив, и ты чувствуешь, как твое сердце начинает биться чаще, когда он подмигивает тебе.");
 					} else {
-						sb.append("a beautiful female harpy."
-								+ " Although she's willingly presenting her wet pussy to you, the look on her face is one of condescending superiority,"
-									+ " and you get the impression that she'd make some kind of outrageous demand in exchange for allowing you to have sex with her.");
+						sb.append("прекрасная гарпия. Хотя она охотно подставляет тебе свою влажную киску, на её лице читается снисходительное превосходство, и у тебя складывается впечатление, что за право заняться с ней сексом она выдвинет какое-нибудь возмутительное требование.");
 					}
 					break;
 				case OCTOBER:
 					if(Main.game.getPlayer().getSexualOrientation()==SexualOrientation.ANDROPHILIC) {
-						sb.append("a fit, handsome "+Subspecies.DEMON.getSingularMaleName(null)+", who's suggestively winking at you as he runs his fingers over his huge, erect cock.");
+						sb.append("подтянутый, красавец "+Subspecies.DEMON.getSingularMaleName(null)+", который многозначительно подмигивает тебе, проводя пальцами по своему огромному, эрегированному члену.");
 					} else {
-						sb.append("a fit, beautiful "+Subspecies.DEMON.getSingularFemaleName(null)+", wearing nothing but a witch's hat, who's suggestively winking at you as she runs her fingers over her wet pussy and huge breasts.");
+						sb.append("подтянутая, красавица "+Subspecies.DEMON.getSingularFemaleName(null)+", на которой нет ничего, кроме ведьминой шляпы; она многозначительно подмигивает тебе, проводя пальцами по своей влажной киске и огромной груди.");
 					}
 					break;
 				case NOVEMBER:
 					if(Main.game.getPlayer().getSexualOrientation()==SexualOrientation.ANDROPHILIC) {
-						sb.append("an energetic-looking "+Subspecies.DOG_MORPH.getSingularMaleName(null)+", who's smiling at you as he strokes his erect, knotted dog-cock.");
+						sb.append("энергичный "+Subspecies.DOG_MORPH.getSingularMaleName(null)+", который улыбается тебе, поглаживая свой эрегированный, узловатый собачий член.");
 					} else {
-						sb.append("an excited-looking "+Subspecies.DOG_MORPH.getSingularFemaleName(null)+", who's down on all fours, raising her hips in order to present you with her wet pussy.");
+						sb.append("возбужденная "+Subspecies.DOG_MORPH.getSingularFemaleName(null)+", которая стоит на четвереньках, прогнув бедра, чтобы подставить тебе свою мокрую киску.");
 					}
 					break;
 				case DECEMBER:
 					if(Main.game.getPlayer().getSexualOrientation()==SexualOrientation.ANDROPHILIC) {
-						sb.append("a muscular boar-boy, who's grinning at you in anticipation as he strokes his huge cock and pair of massive, cum-filled balls.");
+						sb.append("мускулистый кабанчик, который предвкушающе скалится на тебя, поглаживая свой огромный член и пару массивных, полных спермы яиц.");
 					} else {
-						sb.append("a pretty, blushing pig-girl, who's leaning back against a wall and reaching down to spread her puffy pink pussy to you.");
+						sb.append("миловидная, покрасневшая свинка, которая прислонилась к стене и тянется вниз, чтобы раздвинуть тебе свою припухлую розовую киску.");
 					}
 					break;
 			}
 		}
 		
-		sb.append(" After gazing at the picture for a few moments, you force yourself to look away and read the information that's written beneath:"
-				+ "</p>");
+		sb.append(" Посмотрев на картину несколько мгновений, ты заставляешь себя отвести взгляд и читаешь написанное ниже:</p>");
 		
 		return sb.toString();
 	}
 
-	public static final DialogueNode ROOM = new DialogueNode("Your Room", "", false) {
+	public static final DialogueNode ROOM = new DialogueNode("Ваша комната", "", false) {
 		@Override
 		public void applyPreParsingEffects() {
 			makeupTarget = Main.game.getPlayer();
@@ -975,27 +932,16 @@ public class RoomPlayer {
 
 			GenericPlace place = Main.game.getPlayerCell().getPlace();
 			
-			sb.append("<p>"
-					+ "Your bedroom is positioned close to the main staircase linking the entrance hall to the first-floor corridor, and is one of the largest chambers in the entire mansion."
-					+ " Opposite the room's main doorway, a set of four large, sash windows provide an excellent view of the courtyard garden below, while off to the left, another door leads through into your private ensuite bathroom."
-				+ "</p>");
+			sb.append("<p>Твоя спальня расположена рядом с главной лестницей, соединяющей вестибюль с коридором первого этажа, и является одной из самых больших комнат во всем особняке. Напротив главного входа в комнату расположены четыре больших подъемных окна, из которых открывается отличный вид на внутренний сад, а слева еще одна дверь ведет в твою личную ванную комнату.</p>");
 			
 			if(place.getPlaceUpgrades().contains(PlaceUpgrade.LILAYA_PLAYER_ROOM_BED)) {
-				sb.append("<p>"
-							+ "Your room is well furnished, and contains both two sets of drawers and a full-height wardrobe, which provide you with all the storage space you'd ever need."
-							+ " Other than those items of furniture, you also have a sofa, a writing desk complete with matching chair, and a full-height free-standing mirror."
-						+ "</p>");
+				sb.append("<p>Твоя комната хорошо обставлена: здесь есть два комода и высокий гардероб, обеспечивающие тебя всем необходимым местом для хранения вещей. Помимо этой мебели, у тебя также есть диван, письменный стол с подходящим к нему стулом и высокий отдельно стоящий зеркало в полный рост.</p>");
 			} else {
-				sb.append("<p>"
-						+ "A king-sized bed sits against the right-hand wall, while two sets of drawers and a full-height wardrobe provide you with all the storage space you'd ever need."
-						+ " Other than those items of furniture, you also have a sofa, a writing desk complete with matching chair, and a full-height free-standing mirror."
-					+ "</p>");
+				sb.append("<p>У правой стены стоит огромная двуспальная кровать, а два комода и во весь рост стоящий гардероб обеспечивают вас всем необходимым местом для хранения вещей. Помимо этой мебели, у вас также есть диван, письменный стол с подходящим к нему стулом и ростовое зеркало на подставке.</p>");
 			}
 			
 			sb.append(
-					"<p>"
-						+ "Like everything else that normally would have run on electricity in your world, the lighting, radiators, and plumbing all appear to be powered by the arcane."
-					+ "</p>");
+					"<p>Как и всё остальное, что в вашем мире обычно работает на электричестве, освещение, радиаторы и сантехника, судя по всему, питаются арканой.</p>");
 			
 			sb.append(LilayaHomeGeneric.getRoomModificationsDescription(false));
 
@@ -1006,8 +952,7 @@ public class RoomPlayer {
 				for(NPC npc : charactersPresent) {
 					names.add("<span style='color:"+npc.getFemininity().getColour().toWebHexString()+";'>"+npc.getName()+"</span>");
 				}
-				sb.append("<p>"
-							+ "Assigned to your room "+(soloSlave?"is your slave":"are your slaves")+"; "+Util.stringsToStringList(names, false)+".");
+				sb.append("<p>Закреплена за вашей комнатой "+(soloSlave?"— ваша рабыня":"— ваши рабы")+"; "+Util.stringsToStringList(names, false)+".");
 				
 				List<NPC> greetings = charactersPresent.stream().filter(npc -> npc.hasSlaveJobSetting(SlaveJob.BEDROOM, SlaveJobSetting.BEDROOM_GREETING)).collect(Collectors.toList());
 				names = new ArrayList<>();
@@ -1016,10 +961,10 @@ public class RoomPlayer {
 				}
 				soloSlave = greetings.size()==1;
 				if(!greetings.isEmpty()) {
-					sb.append(" Having been instructed to greet you upon your arrival, "
+					sb.append(" Получив указание поприветствовать вас по прибытии, "
 								+(soloSlave
-										?UtilText.parse(charactersPresent.get(0), "[npc.she] steps forwards and welcomes you back.")
-										:Util.stringsToStringList(names, false)+" step forwards and welcome you back.")
+										?UtilText.parse(charactersPresent.get(0), "[npc.she] делает шаг вперед и приветствует ваше возвращение.")
+										:Util.stringsToStringList(names, false)+" делают шаг вперед и приветствуют ваше возвращение.")
 							+ "</p>");
 
 					List<NPC> greetingsNice = greetings.stream().filter(npc -> npc.getObedienceBasic()==ObedienceLevelBasic.OBEDIENT || npc.getAffectionLevelBasic(Main.game.getPlayer())==AffectionLevelBasic.LIKE).collect(Collectors.toList());
@@ -1030,113 +975,113 @@ public class RoomPlayer {
 						List<String> endSpeechGreetings = new ArrayList<>();
 						
 						if(npc.hasSlavePermissionSetting(SlavePermissionSetting.BEHAVIOUR_PROFESSIONAL)) {
-							speechGreetings.add("[npc.speech(Welcome back, [pc.name],)]");
-							speechGreetings.add("[npc.speech(Good [style.morning], [pc.name],)]");
-							speechGreetings.add("[npc.speech(Welcome home, [pc.name],)]");
+							speechGreetings.add("[npc.speech(С возвращением, [pc.name],)]");
+							speechGreetings.add("[npc.speech(Добрый [style.morning], [pc.name],)]");
+							speechGreetings.add("[npc.speech(С возвращением, [pc.name],)]");
 							
 							if(npc.isFeminine()) {
-								endGreetings.add("[npc.name] says, curtsying respectfully towards you.");
-								endGreetings.add("[npc.name] greets you, curtsying respectfully as [npc.she] does so.");
-								endGreetings.add("[npc.name] addresses you, curtsying in the process.");
+								endGreetings.add("[npc.name] говорит это, почтительно кланяясь вам.");
+								endGreetings.add("[npc.name] приветствует вас, почтительно кланяясь вслед за [npc.she].");
+								endGreetings.add("[npc.name] обращается к вам, сопровождая слова реверансом.");
 							} else {
-								endGreetings.add("[npc.name] says, bowing respectfully towards you.");
-								endGreetings.add("[npc.name] greets you, bowing respectfully as [npc.she] does so.");
-								endGreetings.add("[npc.name] addresses you, bowing in the process.");
+								endGreetings.add("[npc.name] говорит это, почтительно склоняясь перед вами.");
+								endGreetings.add("[npc.name] приветствует вас, почтительно склоняясь вслед за [npc.she].");
+								endGreetings.add("[npc.name] обращается к вам, сопровождая слова поклоном.");
 							}
 							
 						} else if(npc.hasSlavePermissionSetting(SlavePermissionSetting.BEHAVIOUR_SEDUCTIVE)) {
-							speechGreetings.add("[npc.speech(Back so soon, [pc.name]?)]");
-							speechGreetings.add("[npc.speech(Back already, [pc.name]?)]");
-							speechGreetings.add("[npc.speech(You're back to see me so soon, [pc.name]?)]");
+							speechGreetings.add("[npc.speech(Так скоро вернулся, [pc.name]?)]");
+							speechGreetings.add("[npc.speech(Уже вернулся, [pc.name]?)]");
+							speechGreetings.add("[npc.speech(Неужели ты вернулся повидаться со мной так быстро, [pc.name]?)]");
 							
 							if(npc.isFeminine()) {
-								endGreetings.add("[npc.name] coyly asks, before biting [npc.her] lip and winking at you.");
-								endGreetings.add("[npc.name] coyly asks, before turning slightly to one side and flashing you a seductive smile.");
-								endGreetings.add("[npc.name] coyly asks, winking at you before blowing you a little kiss.");
+								endGreetings.add("[npc.name] кокетливо спрашивает, прежде чем прикусить [npc.her] губу и подмигнуть тебе.");
+								endGreetings.add("[npc.name] кокетливо спрашивает, слегка повернувшись в сторону и одарив тебя соблазнительной улыбкой.");
+								endGreetings.add("[npc.name] кокетливо спрашивает, подмигивая тебе и посылая воздушный поцелуй.");
 							} else {
-								endGreetings.add("[npc.name] flirtatiously asks, before flashing you a charming smile.");
-								endGreetings.add("[npc.name] flirtatiously asks, before puffing his chest up and flashing you a winning smile.");
-								endGreetings.add("[npc.name] flirtatiously asks, smiling at you in a charming manner.");
+								endGreetings.add("[npc.name] игриво спрашивает, одарив тебя очаровательной улыбкой.");
+								endGreetings.add("[npc.name] игриво спрашивает, выпятив грудь и одарив тебя победоносной улыбкой.");
+								endGreetings.add("[npc.name] игриво спрашивает, очаровательно тебе улыбаясь.");
 							}
 							
 						} else if(npc.hasSlavePermissionSetting(SlavePermissionSetting.BEHAVIOUR_SLUTTY)) {
-							speechGreetings.add("[npc.speech(You're back to fuck, right, [pc.name]?)]");
-							speechGreetings.add("[npc.speech(Oh, [pc.name], you're here for a good fuck, aren't you?)]");
-							speechGreetings.add("[npc.speech(Hey, [pc.name], you wanna fuck, right?)]");
+							speechGreetings.add("[npc.speech(Ты ведь вернулся, чтобы трахнуться, [pc.name]?)]");
+							speechGreetings.add("[npc.speech(О, [pc.name], ты ведь здесь ради хорошего траха, верно?)]");
+							speechGreetings.add("[npc.speech(Эй, [pc.name], ты ведь хочешь трахнуться, да?)]");
 
-							endGreetings.add("[npc.name] bluntly asks,");
-							endGreetings.add("[npc.name] tactlessly asks,");
-							endGreetings.add("[npc.name] gracelessly asks,");
+							endGreetings.add("[npc.name] прямолинейно спрашивает,");
+							endGreetings.add("[npc.name] бестактно спрашивает,");
+							endGreetings.add("[npc.name] неловко спрашивает,");
 							
 							if(npc.isFeminine()) {
-								endSpeechGreetings.add("[npc.speech(You know I'm always horny for you...)]");
-								endSpeechGreetings.add("[npc.speech(I can't stop fantasising about you...)]");
-								endSpeechGreetings.add("[npc.speech(I get so horny just thinking about you...)]");
+								endSpeechGreetings.add("[npc.speech(Ты же знаешь, меня всегда тянет к тебе...)]");
+								endSpeechGreetings.add("[npc.speech(Не могу перестать фантазировать о тебе...)]");
+								endSpeechGreetings.add("[npc.speech(У меня всё горит внутри, стоит только подумать о тебе...)]");
 							} else {
-								endSpeechGreetings.add("[npc.speech(I want you so badly right now.)]");
-								endSpeechGreetings.add("[npc.speech(I can't stop fantasising about you.)]");
-								endSpeechGreetings.add("[npc.speech(You know I'm always ready whenever you are.)]");
+								endSpeechGreetings.add("[npc.speech(Я так сильно хочу тебя прямо сейчас.)]");
+								endSpeechGreetings.add("[npc.speech(Не могу перестать фантазировать о тебе.)]");
+								endSpeechGreetings.add("[npc.speech(Ты же знаешь, я всегда готова, когда и ты захочешь.)]");
 							}
 							
 						} else if(npc.hasSlavePermissionSetting(SlavePermissionSetting.BEHAVIOUR_STANDARD)) {
-							speechGreetings.add("[npc.speech(Hello, [pc.name],)]");
-							speechGreetings.add("[npc.speech(Good [style.morning], [pc.name],)]");
-							speechGreetings.add("[npc.speech(Welcome back, [pc.name],)]");
+							speechGreetings.add("[npc.speech(Привет, [pc.name],)]");
+							speechGreetings.add("[npc.speech(Добрый [style.morning], [pc.name],)]");
+							speechGreetings.add("[npc.speech(С возвращением, [pc.name],)]");
 							
 							if(npc.isShy()) {
-								endGreetings.add("[npc.name] says, looking at the floor and shyly shuffling [npc.her] [npc.feet].");
-								endGreetings.add("[npc.name] says in a quiet voice, before blushing and looking down at the floor.");
-								endGreetings.add("[npc.name] quietly greets you while shyly shuffling [npc.her] [npc.feet].");
+								endGreetings.add("[npc.name] говорит, глядя в пол и застенчиво переминаясь с [npc.her] на [npc.feet].");
+								endGreetings.add("[npc.name] тихо произносит это, а затем краснеет и опускает взгляд в пол.");
+								endGreetings.add("[npc.name] тихо приветствует тебя, застенчиво перебирая [npc.feet] [npc.her].");
 								
 							} else if(npc.isKind()) {
-								endGreetings.add("[npc.name] says, smiling kindly at you,");
-								endGreetings.add("[npc.name] says in a kind voice, before gently smiling at you and continuing,");
-								endGreetings.add("[npc.name] happily greets you in a loving tone,");
+								endGreetings.add("[npc.name] говорит, ласково улыбаясь тебе,");
+								endGreetings.add("[npc.name] говорит добрым голосом, после чего мягко улыбается тебе и продолжает,");
+								endGreetings.add("[npc.name] радостно приветствует тебя нежным тоном,");
 								
-								endSpeechGreetings.add("[npc.speech(Is there anything I can do for you?)]");
-								endSpeechGreetings.add("[npc.speech(How are you this [style.morning]?)]");
-								endSpeechGreetings.add("[npc.speech(Please let me know if there's anything I can do for you!)]");
+								endSpeechGreetings.add("[npc.speech(Могу я чем-нибудь тебе помочь?)]");
+								endSpeechGreetings.add("[npc.speech(Как ты поживаешь в этот [style.morning]?)]");
+								endSpeechGreetings.add("[npc.speech(Пожалуйста, дай знать, если я смогу что-то для тебя сделать!)]");
 								
 							} else {
-								endGreetings.add("[npc.name] calls out, before smiling happily at you.");
-								endGreetings.add("[npc.name] happily greets you, before smiling and waiting for your orders.");
-								endGreetings.add("[npc.name] says, smiling at you.");
-								endGreetings.add("[npc.name] happily says, before smiling at you.");
-								endGreetings.add("[npc.name] addresses you, before smiling and waiting to see what it is you'll do next.");
-								endGreetings.add("[npc.name] greets you with a smile.");
+								endGreetings.add("[npc.name] окликает тебя, а затем счастливо улыбается.");
+								endGreetings.add("[npc.name] радостно приветствует тебя, улыбается и ждет твоих распоряжений.");
+								endGreetings.add("[npc.name] говорит, улыбаясь вам.");
+								endGreetings.add("[npc.name] радостно произносит, прежде чем улыбнуться вам.");
+								endGreetings.add("[npc.name] обращается к вам, а затем улыбается и ждет, что вы предпримете дальше.");
+								endGreetings.add("[npc.name] приветствует вас с улыбкой.");
 							}
 							
 						} else if(npc.hasSlavePermissionSetting(SlavePermissionSetting.BEHAVIOUR_WHOLESOME)) {
-							speechGreetings.add("[npc.speech(Hello, [pc.name],)]");
-							speechGreetings.add("[npc.speech(Good [style.morning], [pc.name],)]");
-							speechGreetings.add("[npc.speech(Welcome home, [pc.name],)]");
+							speechGreetings.add("[npc.speech(Привет, [pc.name],)]");
+							speechGreetings.add("[npc.speech(Добрый [style.morning], [pc.name],)]");
+							speechGreetings.add("[npc.speech(С возвращением, [pc.name],)]");
 							
 							if(npc.isShy()) {
-								endGreetings.add("[npc.name] says, looking at the floor and shyly shuffling [npc.her] [npc.feet], before continuing,");
-								endGreetings.add("[npc.name] says in a quiet voice, before blushing and shyly continuing,");
-								endGreetings.add("[npc.name] quietly greets you while shyly shuffling [npc.her] [npc.feet], before blushing and continuing,");
+								endGreetings.add("[npc.name] говорит, глядя в пол и застенчиво перебирая [npc.her] [npc.feet], а затем продолжает,");
+								endGreetings.add("[npc.name] говорит тихим голосом, прежде чем покраснеть и застенчиво продолжить,");
+								endGreetings.add("[npc.name] тихо приветствует вас, застенчиво перебирая [npc.her] [npc.feet], а затем краснеет и продолжает,");
 								
-								endSpeechGreetings.add("[npc.speech(I'm so happy that you're back; I really missed you...)]");
-								endSpeechGreetings.add("[npc.speech(It really makes me happy to see you again...)]");
-								endSpeechGreetings.add("[npc.speech(I really missed you while you were gone...)]");
+								endSpeechGreetings.add("[npc.speech(Я так счастлива, что ты вернулся; я действительно скучала по тебе...)]");
+								endSpeechGreetings.add("[npc.speech(Видеть тебя снова — это такое счастье...)]");
+								endSpeechGreetings.add("[npc.speech(Я очень скучала по тебе, пока тебя не было...)]");
 								
 							} else if(npc.isKind()) {
-								endGreetings.add("[npc.name] says, smiling happily at you for a moment, before continuing,");
-								endGreetings.add("[npc.name] says in a kind voice, before smiling at you in a loving manner and continuing,");
-								endGreetings.add("[npc.name] greets you in a kind tone, before throwing you a loving smile and continuing,");
+								endGreetings.add("[npc.name] на мгновение счастливо улыбается вам и говорит,");
+								endGreetings.add("[npc.name] говорит добрым голосом, после чего нежно улыбается вам и продолжает,");
+								endGreetings.add("[npc.name] приветствует вас добрым тоном, одарив любящей улыбкой, и продолжает,");
 
-								endSpeechGreetings.add("[npc.speech(It's so good to see you again; it felt like you were gone forever!)]");
-								endSpeechGreetings.add("[npc.speech(I'm so happy to see you again; I hope that you won't be gone for so long next time!)]");
-								endSpeechGreetings.add("[npc.speech(I really missed you, you know; thank goodness you're back now!)]");
+								endSpeechGreetings.add("[npc.speech(Так здорово видеть тебя снова; казалось, ты ушел навсегда!)]");
+								endSpeechGreetings.add("[npc.speech(Я так счастлива видеть тебя снова; надеюсь, в следующий раз ты не задержишься так надолго!)]");
+								endSpeechGreetings.add("[npc.speech(Ты даже не представляешь, как я скучала; слава богу, ты вернулся!)]");
 								
 							} else {
-								endGreetings.add("[npc.name] cheerfully says, before continuing,");
-								endGreetings.add("[npc.name] happily says, before smiling at you and continuing,");
-								endGreetings.add("[npc.name] greets you in an exited tone, before flashing you a happy smile and continuing,");
+								endGreetings.add("[npc.name] весело говорит, после чего продолжает,");
+								endGreetings.add("[npc.name] счастливо говорит, улыбаясь вам, и продолжает,");
+								endGreetings.add("[npc.name] приветствует вас взволнованным тоном, одарив радостной улыбкой, и продолжает,");
 
-								endSpeechGreetings.add("[npc.speech(I'm so happy to see you again!)]");
-								endSpeechGreetings.add("[npc.speech(It really makes me happy to see you again!)]");
-								endSpeechGreetings.add("[npc.speech(I hope you aren't gone for so long next time! I miss you, you know?)]");
+								endSpeechGreetings.add("[npc.speech(Я так счастлива видеть тебя снова!)]");
+								endSpeechGreetings.add("[npc.speech(Я так счастлива снова тебя видеть!)]");
+								endSpeechGreetings.add("[npc.speech(Надеюсь, в следующий раз ты не исчезнешь на так долго! Ты же знаешь, я скучаю по тебе?)]");
 							}
 						}
 						sb.append(UtilText.parse(npc,Util.randomItemFrom(speechGreetings)));
@@ -1157,37 +1102,37 @@ public class RoomPlayer {
 						List<String> endGreetings = new ArrayList<>();
 						
 							if(npc.isShy()) {
-								speechGreetings.add("[npc.speech(Oh, it's just you,)]");
-								speechGreetings.add("[npc.speech(Damn, I was hoping it was someone else,)]");
-								speechGreetings.add("[npc.speech(Oh no, not you,)]");
-								speechGreetings.add("[npc.speech(Why did [pc.she] have to come back,)]");
+								speechGreetings.add("[npc.speech(А, это всего лишь ты,)]");
+								speechGreetings.add("[npc.speech(Черт, а я надеялась, что это кто-то другой,)]");
+								speechGreetings.add("[npc.speech(О нет, только не ты,)]");
+								speechGreetings.add("[npc.speech(Ну почему [pc.she] должна была вернуться,)]");
 								
-								endGreetings.add("[npc.name] mutters under [npc.her] breath, before looking at the floor and shuffling [npc.her] [npc.feet].");
-								endGreetings.add("[npc.name] mumbles, before casting [npc.her] gaze to the floor and refusing to look up at you.");
-								endGreetings.add("[npc.name] mutters in annoyance, before shuffling [npc.her] [npc.feet] and letting out another quiet curse.");
+								endGreetings.add("[npc.name] бормочет сквозь [npc.her] зубы, прежде чем посмотреть в пол и неловко переступить с [npc.her] на [npc.feet].");
+								endGreetings.add("[npc.name] бормочет, устремляя [npc.her] взгляд в пол и отказываясь смотреть тебе в глаза.");
+								endGreetings.add("[npc.name] раздраженно бормочет, переминаясь с [npc.her] на [npc.feet] и тихо выругавшись себе под нос.");
 								
 							} else if(npc.isSelfish()) {
-								speechGreetings.add("[npc.speech(Eugh, what do you want now, [pc.name]?)]");
-								speechGreetings.add("[npc.speech(And what exactly do you want <i>this</i> time, [pc.name]?)]");
-								speechGreetings.add("[npc.speech(So, why are you back?)]");
-								speechGreetings.add("[npc.speech(Why did you have to come back?)]");
+								speechGreetings.add("[npc.speech(Фу, чего тебе опять, [pc.name]?)]");
+								speechGreetings.add("[npc.speech(И чего именно тебе нужно от <i>этого</i> раза, [pc.name]?)]");
+								speechGreetings.add("[npc.speech(Ну и зачем ты вернулся?)]");
+								speechGreetings.add("[npc.speech(Зачем тебе обязательно было возвращаться?)]");
 								
-								endGreetings.add("[npc.name] angrily asks, not even trying to conceal [npc.her] animosity towards you.");
-								endGreetings.add("[npc.name] questions, before narrowing [npc.her] [npc.eyes] and glaring angrily at you.");
-								endGreetings.add("[npc.name] snaps, before glaring at you with resentment in [npc.her] [npc.eyes].");
+								endGreetings.add("[npc.name] гневно спрашивает, даже не пытаясь скрыть [npc.her] враждебность к тебе.");
+								endGreetings.add("[npc.name] вопрошает, прежде чем прищурить [npc.her] [npc.eyes] и яростно уставиться на тебя.");
+								endGreetings.add("[npc.name] огрызается, прежде чем бросить на тебя полный обиды взгляд своими [npc.her] [npc.eyes].");
 								
 							} else {
-								speechGreetings.add("[npc.speech(Just do whatever it is you're here to do, [pc.name],)]");
-								speechGreetings.add("[npc.speech(Go on then, [pc.name], do whatever it is you're here to do,)]");
-								speechGreetings.add("[npc.speech(Let's just get this over with,)]");
-								speechGreetings.add("[npc.speech(Go on then, tell me what it is you want this time,)]");
+								speechGreetings.add("[npc.speech(Просто делай то, ради чего пришел, [pc.name],)]");
+								speechGreetings.add("[npc.speech(Ну же, [pc.name], делай то, ради чего пришел,)]");
+								speechGreetings.add("[npc.speech(Давай просто покончим с этим,)]");
+								speechGreetings.add("[npc.speech(Ну же, говори, чего тебе нужно на этот раз,)]");
 								
-								endGreetings.add("[npc.name] sighs, before rolling [npc.her] [npc.eyes] in annoyance.");
-								endGreetings.add("[npc.name] sighs in annoyance, crossing [npc.her] [npc.arms] and waiting for you to make the next move.");
-								endGreetings.add("[npc.name] sighs, clearly not at all happy with being assigned to your room.");
-								endGreetings.add("[npc.name] says, before letting out a weary sigh and tapping [npc.her] [npc.foot] on the floor.");
-								endGreetings.add("[npc.name] says, before sighing and rolling [npc.her] [npc.eyes] in a clear sign of displeasure.");
-								endGreetings.add("[npc.name] says, crossing [npc.her] [npc.arms] and letting out an annoyed sigh.");
+								endGreetings.add("[npc.name] вздыхает, а затем раздраженно закатывает [npc.her] [npc.eyes].");
+								endGreetings.add("[npc.name] раздраженно вздыхает, скрестив [npc.her] [npc.arms], и ждет твоего следующего шага.");
+								endGreetings.add("[npc.name] вздыхает, явно не в восторге от того, что ее отправили в твою комнату.");
+								endGreetings.add("Говорит [npc.name], после чего устало вздыхает и постукивает [npc.her] [npc.foot] по полу.");
+								endGreetings.add("Говорит [npc.name], после чего вздыхает и закатывает [npc.her] [npc.eyes] в явном знак недовольства.");
+								endGreetings.add("Говорит [npc.name], скрестив [npc.her] [npc.arms] и раздраженно вздыхая.");
 							}
 
 						sb.append(UtilText.parse(npc,Util.randomItemFrom(speechGreetings)));
@@ -1249,7 +1194,7 @@ public class RoomPlayer {
 		return charactersPresent;
 	}
 	
-	public static final DialogueNode ROOM_SET_ALARM = new DialogueNode("Set Alarm", "", true) {
+	public static final DialogueNode ROOM_SET_ALARM = new DialogueNode("Установить будильник", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			super.applyPreParsingEffects();
@@ -1262,39 +1207,17 @@ public class RoomPlayer {
 		public String getContent() {
 			long alarmTime = Main.game.getDialogueFlags().getSavedLong("player_phone_alarm");
 			String alarmTimeStr = Units.time(LocalTime.ofSecondOfDay(alarmTime*60));
-			return "<div><p style='text-align:center;'>Taking out your phone, you open the alarm app and prepare to set a time for it to go off...</p></div>"
-					+ "<div class='cosmetics-inner-container' style='margin:1% 10%; width:78%; padding:1%; box-sizing:border-box; position:relative;'>"
-						+ "<p style='margin:0; padding:0;'>"
-							+ "<b>Set Alarm</b>"
-						+"</p>"
-						+ "<div class='container-full-width' style='width:35%; text-align:center; float:left; position:relative; padding:0; margin:0;'>"
-							+ "<div id='PLAYER_ALARM_DECREASE_LARGE' class='normal-button' style='width:48%; margin:1%; padding:0;'>"
-								+ "[style.boldBad(-1 hour)]"
-							+ "</div>"
-							+ "<div id='PLAYER_ALARM_DECREASE' class='normal-button' style='width:48%; margin:1%; padding:0;'>"
-								+ "[style.boldBadMinor(-5 minutes)]"
-							+ "</div>"
-						+ "</div>"
-						+ "<div class='container-full-width' style='width:28%; margin:1%; padding:0; text-align:center; float:left; position:relative;'>"
+			return "<div><p style='text-align:center;'>Достав телефон, ты открываешь приложение будильника и готовишься установить время его срабатывания...</p></div><div class='cosmetics-inner-container' style='margin:1% 10%; width:78%; padding:1%; box-sizing:border-box; position:relative;'><p style='margin:0; padding:0;'><b>Установить будильник</b></p><div class='container-full-width' style='width:35%; text-align:center; float:left; position:relative; padding:0; margin:0;'><div id='PLAYER_ALARM_DECREASE_LARGE' class='normal-button' style='width:48%; margin:1%; padding:0;'>[style.boldBad(-1 час)]</div><div id='PLAYER_ALARM_DECREASE' class='normal-button' style='width:48%; margin:1%; padding:0;'>[style.boldBadMinor(-5 минут)]</div></div><div class='container-full-width' style='width:28%; margin:1%; padding:0; text-align:center; float:left; position:relative;'>"
 							+ alarmTimeStr
-						+ "</div>"
-						+ "<div class='container-full-width' style='width:35%; text-align:center; float:left; position:relative; padding:0; margin:0;'>"
-							+ "<div id='PLAYER_ALARM_INCREASE' class='normal-button' style='width:48%; margin:1%; padding:0;'>"
-								+ "[style.boldGoodMinor(+5 minutes)]"
-							+ "</div>"
-							+ "<div id='PLAYER_ALARM_INCREASE_LARGE' class='normal-button' style='width:48%; margin:1%; padding:0;'>"
-								+ "[style.boldGood(+1 hour)]"
-							+ "</div>"
-						+ "</div>"
-					+ "</div>";
+						+ "</div><div class='container-full-width' style='width:35%; text-align:center; float:left; position:relative; padding:0; margin:0;'><div id='PLAYER_ALARM_INCREASE' class='normal-button' style='width:48%; margin:1%; padding:0;'>[style.boldGoodMinor(+5 минут)]</div><div id='PLAYER_ALARM_INCREASE_LARGE' class='normal-button' style='width:48%; margin:1%; padding:0;'>[style.boldGood(+1 час)]</div></div></div>";
 		}
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index == 1) {
-				return new Response("Set alarm", "Your alarm will be set to the time that you've entered.", Main.game.getSavedDialogueNode());
+				return new Response("Установить будильник", "Ваш будильник будет установлен на указанное время.", Main.game.getSavedDialogueNode());
 				
 			} else if(index == 2) {
-				return new Response("Delete alarm", "Delete your alarm, leaving it unset.", Main.game.getSavedDialogueNode()) {
+				return new Response("Удалить будильник", "Удалить ваш будильник, оставив его выключенным.", Main.game.getSavedDialogueNode()) {
 					@Override
 					public void effects() {
 						Main.game.getDialogueFlags().removeSavedLong("player_phone_alarm");
@@ -1318,7 +1241,7 @@ public class RoomPlayer {
 	private static List<GameCharacter> slavesPresentWhenWaking;
 	private static List<GameCharacter> slavesToWakePlayer;
 	
-	public static final DialogueNode AUNT_HOME_PLAYERS_ROOM_SLEEP = new DialogueNode("Your Room", "", false) {
+	public static final DialogueNode AUNT_HOME_PLAYERS_ROOM_SLEEP = new DialogueNode("Ваша комната", "", false) {
 
 		@Override
 		public boolean isTravelDisabled() {
@@ -1337,10 +1260,7 @@ public class RoomPlayer {
 				List<String> names = new ArrayList<>();
 				slavesPresentWhenGoingToSleep.stream().forEach((npc) -> names.add(npc.getName()));
 
-				sb.append("<p>"
-						+ "Feeling tired and in need of some rest, you head over to your bed and collapse down onto the mattress, before pulling back the covers and slipping beneath them."
-						+ " Realising that you want to go to sleep, "+Util.stringsToStringList(names, false)+(soloSlave?" quickly draws the curtains":" quickly draw the curtains")+", before stepping back over towards you."
-					+ "</p>");
+				sb.append("<p>Чувствуя усталость и потребность в отдыхе, вы направляетесь к кровати и рушитесь на матрас, после чего откидываете одеяло и ныряете под него. Осознав, что хотите поспать, "+Util.stringsToStringList(names, false)+(soloSlave?" быстро задергивает шторы":" быстро задергивают шторы")+", а затем делает шаг обратно к вам.</p>");
 
 				// Sleeping arrangements:
 				List<GameCharacter> floorSlaves = slavesPresentWhenGoingToSleep.stream().filter((npc) -> npc.hasSlaveJobSetting(SlaveJob.BEDROOM, SlaveJobSetting.BEDROOM_SLEEP_FLOOR)).collect(Collectors.toList());
@@ -1352,8 +1272,8 @@ public class RoomPlayer {
 					floorSlaves.stream().forEach((npc) -> floorNames.add(npc.getName()));
 					if(!floorSlaves.isEmpty()) {
 						sb.append(soloFloor
-								?UtilText.parse(floorSlaves.get(0), "Knowing that [npc.sheIs] not allowed to sleep on your bed, [npc.name] lies down on the floor and prepares to try to get some sleep.")
-								:"Knowing that they aren't allowed to sleep on your bed, "+Util.stringsToStringList(floorNames, false)+" lie down on the floor and prepare to try to get some sleep.");
+								?UtilText.parse(floorSlaves.get(0), "Зная, что [npc.sheIs] нельзя спать на вашей кровати, [npc.name] ложится на пол и готовится попытаться вздремнуть.")
+								:"Зная, что им нельзя спать на вашей кровати, "+Util.stringsToStringList(floorNames, false)+" лечь на пол и попытаться поспать.");
 					}
 					if(!onBedSlaves.isEmpty()) {
 						boolean soloOnBed = onBedSlaves.size()==1;
@@ -1361,13 +1281,13 @@ public class RoomPlayer {
 						onBedSlaves.stream().forEach((npc) -> onBedNames.add(npc.getName()));
 						if(!floorSlaves.isEmpty()) {
 							sb.append(soloOnBed
-									?UtilText.parse(onBedSlaves.get(0),  "Stepping past "+Util.stringsToStringList(floorNames, false)+", [npc.name] climbs up onto your bed, before letting out a relaxed sigh and curling up on your covers.")
-									:"Stepping past "+(soloFloor?UtilText.parse(floorSlaves.get(0), "[npc.name]"):"your slaves on the floor")
-										+", "+Util.stringsToStringList(onBedNames, false)+" climb up onto your bed, before each letting out relaxed sighs and curling up on your covers.");
+									?UtilText.parse(onBedSlaves.get(0),  "Проходя мимо "+Util.stringsToStringList(floorNames, false)+", [npc.name] забирается к тебе в постель, после чего издает расслабленный вздох и сворачивается калачиком на твоем одеяле.")
+									:"Проходя мимо "+(soloFloor?UtilText.parse(floorSlaves.get(0), "[npc.name]"):"твоих рабынь на полу,")
+										+", "+Util.stringsToStringList(onBedNames, false)+" они забираются к тебе в постель, каждая из которых издает расслабленный вздох и сворачивается калачиком на твоем одеяле.");
 						} else {
 							sb.append(soloOnBed
-									?UtilText.parse(onBedSlaves.get(0), "Knowing that [npc.sheIs] allowed to sleep on the covers, [npc.name] climbs up onto your bed, before letting out a relaxed sigh and curling up, ready to sleep.")
-									:"Knowing that they're allowed to sleep on the covers, "+Util.stringsToStringList(onBedNames, false)+" climb up onto your bed, before each letting out relaxed sighs and curling up, ready to sleep.");
+									?UtilText.parse(onBedSlaves.get(0), "Зная, что [npc.sheIs] разрешено спать на покрывале, [npc.name] забирается к тебе в постель, после чего издает расслабленный вздох и сворачивается калачиком, готовая ко сну.")
+									:"Зная, что им разрешено спать на покрывале, "+Util.stringsToStringList(onBedNames, false)+" они забираются к тебе в постель, каждая из которых издает расслабленный вздох и сворачивается калачиком, готовые ко сну.");
 						}
 					}
 					sb.append("</p>");
@@ -1380,9 +1300,9 @@ public class RoomPlayer {
 					List<String> inBedNames = new ArrayList<>();
 					inBedSlaves.stream().forEach((npc) -> inBedNames.add(npc.getName()));
 					sb.append(soloInBed
-							?UtilText.parse(inBedSlaves.get(0), "Having been given your explicit permission to do so, [npc.name] pulls back a corner of the duvet, and then quickly slips in under the covers.")
-							:"Having been given your explicit permission to do so, "+Util.stringsToStringList(inBedNames, false)
-								+" pull back the top two corners of the duvet, and then "+(inBedSlaves.size()==2?"both":"each")+" of them quickly slip in under the covers.");
+							?UtilText.parse(inBedSlaves.get(0), "Получив твое явное разрешение, [npc.name] откидывает край одеяла и быстро ныряет под него.")
+							:"Получив ваше явное разрешение, "+Util.stringsToStringList(inBedNames, false)
+								+" откинуть два верхних угла одеяла, а затем "+(inBedSlaves.size()==2?"оба":"каждый")+" из них быстро ныряют под покрывало.");
 					sb.append("</p>");
 					
 					List<GameCharacter> niceSlaves = inBedSlaves.stream().filter(npc -> npc.getObedienceBasic()==ObedienceLevelBasic.OBEDIENT || npc.getAffectionLevelBasic(Main.game.getPlayer())==AffectionLevelBasic.LIKE).collect(Collectors.toList());
@@ -1393,84 +1313,84 @@ public class RoomPlayer {
 						List<String> endSpeechGreetings = new ArrayList<>();
 						
 						if(npc.hasSlavePermissionSetting(SlavePermissionSetting.BEHAVIOUR_PROFESSIONAL)) {
-							speechGreetings.add(UtilText.parse(npc, "[npc.speech(Allow me to keep you warm, [pc.name],)]"));
-							speechGreetings.add(UtilText.parse(npc, "[npc.speech(Please let me provide you with some extra comfort, [pc.name],)]"));
-							speechGreetings.add(UtilText.parse(npc, "[npc.speech(Please allow me to keep you warm, [pc.name],)]"));
+							speechGreetings.add(UtilText.parse(npc, "[npc.speech(Позволь мне согреть тебя, [pc.name],)]"));
+							speechGreetings.add(UtilText.parse(npc, "[npc.speech(Позволь мне подарить тебе еще больше комфорта, [pc.name],)]"));
+							speechGreetings.add(UtilText.parse(npc, "[npc.speech(Позволь мне согреть тебя, [pc.name],)]"));
 							
-							endGreetings.add(UtilText.parse(npc, "[npc.name] offers, before snuggling up against you."));
-							endGreetings.add(UtilText.parse(npc, "[npc.name] offers, moving up beneath the sheets to snuggle in alongside you."));
-							endGreetings.add(UtilText.parse(npc, "[npc.name] says, before shuffling up against you and pressing [npc.her] body against yours."));
+							endGreetings.add(UtilText.parse(npc, "предлагает [npc.name], прежде чем прижаться к вам."));
+							endGreetings.add(UtilText.parse(npc, "предлагает [npc.name], забираясь под простыни, чтобы прижаться к вам."));
+							endGreetings.add(UtilText.parse(npc, "[npc.name] говорит это, прежде чем прижаться к тебе, вжимая [npc.her] тело в твое."));
 							
 						} else if(npc.hasSlavePermissionSetting(SlavePermissionSetting.BEHAVIOUR_SEDUCTIVE)) {
-							speechGreetings.add(UtilText.parse(npc, "[npc.speech(Perhaps we could do something else in this bed after you wake up?)]"));
-							speechGreetings.add(UtilText.parse(npc, "[npc.speech(After you've got some rest, perhaps the two of us could spend some energy together?)]"));
-							speechGreetings.add(UtilText.parse(npc, "[npc.speech(Would you like to have some fun with me after you've woken up, [pc.name]?)]"));
+							speechGreetings.add(UtilText.parse(npc, "[npc.speech(Может, когда ты проснешься, мы займемся в этой постели чем-нибудь еще?)]"));
+							speechGreetings.add(UtilText.parse(npc, "[npc.speech(Когда ты немного отдохнешь, может, мы вдвоем потратим немного энергии вместе?)]"));
+							speechGreetings.add(UtilText.parse(npc, "[npc.speech(Хочешь немного развлечься со мной после того, как проснешься, [pc.name]?)]"));
 							
-							endGreetings.add(UtilText.parse(npc, "[npc.name] teases, pressing [npc.herself] against you."));
-							endGreetings.add(UtilText.parse(npc, "[npc.name] seductively suggests, before moving up beneath the sheets to press [npc.herself] against you."));
-							endGreetings.add(UtilText.parse(npc, "[npc.name] teases, before sliding up beneath the sheets to press [npc.her] body against you."));
+							endGreetings.add(UtilText.parse(npc, "[npc.name] дразнит тебя, прижимаясь к тебе [npc.herself]."));
+							endGreetings.add(UtilText.parse(npc, "[npc.name] соблазнительно предлагает, прежде чем залезть под одеяло и прижаться к тебе [npc.herself]."));
+							endGreetings.add(UtilText.parse(npc, "[npc.name] дразнит тебя, прежде чем скользнуть под одеяло и прижаться к тебе [npc.her] телом."));
 							
 						} else if(npc.hasSlavePermissionSetting(SlavePermissionSetting.BEHAVIOUR_SLUTTY)) {
 							if(npc.hasBreasts()) {
-								speechGreetings.add(UtilText.parse(npc, "[npc.speech(You can use my tits as a pillow if you want,)]"));
-								speechGreetings.add(UtilText.parse(npc, "[npc.speech(Give my tits a good grope; it'll help you sleep better,)]"));
-								speechGreetings.add(UtilText.parse(npc, "[npc.speech(Come on, play with my tits a bit before you sleep,)]"));
+								speechGreetings.add(UtilText.parse(npc, "[npc.speech(Если хочешь, можешь использовать мою грудь вместо подушки,)]"));
+								speechGreetings.add(UtilText.parse(npc, "[npc.speech(Потискай мою грудь хорошенько; это поможет тебе лучше уснуть,)]"));
+								speechGreetings.add(UtilText.parse(npc, "[npc.speech(Ну же, поиграй с моей грудью немного, прежде чем уснешь,)]"));
 								
-								endGreetings.add(UtilText.parse(npc, "[npc.name] offers, pressing [npc.her] [npc.breastSize] breasts in against you."));
-								endGreetings.add(UtilText.parse(npc, "[npc.name] cheekily suggests, before sliding up under the covers and pressing [npc.her] [npc.breastSize] breasts into you."));
-								endGreetings.add(UtilText.parse(npc, "[npc.name] suggests, before shuffling up and pressing [npc.her] [npc.breastSize] breasts against you."));
+								endGreetings.add(UtilText.parse(npc, "[npc.name] предлагает, прижимая [npc.her] [npc.breastSize] груди к тебе."));
+								endGreetings.add(UtilText.parse(npc, "[npc.name] игриво предлагает, прежде чем заскользить под одеяло и прижаться к тебе [npc.her] [npc.breastSize] грудями."));
+								endGreetings.add(UtilText.parse(npc, "[npc.name] предлагает, прежде чем подползти ближе и прижаться к тебе [npc.her] [npc.breastSize] грудями."));
 								
 							} else {
-								speechGreetings.add(UtilText.parse(npc, "[npc.speech(We can have a good fuck after you've slept, right?)]"));
-								speechGreetings.add(UtilText.parse(npc, "[npc.speech(After you've got some rest, you'll be up for having a good fuck, won't you?)]"));
-								speechGreetings.add(UtilText.parse(npc, "[npc.speech(When you get up, we can have a good fuck, right?)]"));
+								speechGreetings.add(UtilText.parse(npc, "[npc.speech(Мы сможем хорошенько трахнуться после того, как ты поспишь, верно?)]"));
+								speechGreetings.add(UtilText.parse(npc, "[npc.speech(Когда ты немного отдохнешь, ты ведь будешь готов к хорошему траху, а?)]"));
+								speechGreetings.add(UtilText.parse(npc, "[npc.speech(Когда встанешь, мы сможем хорошенько трахнуться, ладно?)]"));
 								
-								endGreetings.add(UtilText.parse(npc, "[npc.name] bluntly asks, reaching down under the covers to stroke your [pc.leg]."));
-								endGreetings.add(UtilText.parse(npc, "[npc.name] cheekily suggests, before sliding up under the covers and pressing [npc.herself] against you."));
-								endGreetings.add(UtilText.parse(npc, "[npc.name] suggests, before shuffling up and pressing [npc.herself] against you."));
+								endGreetings.add(UtilText.parse(npc, "[npc.name] бесцеремонно спрашивает, запуская руку под одеяло, чтобы погладить твой [pc.leg]."));
+								endGreetings.add(UtilText.parse(npc, "[npc.name] игриво предлагает, прежде чем заскользить под одеяло и прижаться к тебе [npc.herself]."));
+								endGreetings.add(UtilText.parse(npc, "[npc.name] предлагает, прежде чем подползти ближе и прижаться к тебе [npc.herself]."));
 							}
 							
 						} else if(npc.hasSlavePermissionSetting(SlavePermissionSetting.BEHAVIOUR_STANDARD)) {
 							if(npc.isShy()) {
-								speechGreetings.add(UtilText.parse(npc, "[npc.speech(Erm, [pc.name], just let me know if I'm taking up too much room,)]"));
-								speechGreetings.add(UtilText.parse(npc, "[npc.speech(Just let me know if I'm getting in your way,)]"));
-								speechGreetings.add(UtilText.parse(npc, "[npc.speech(If I'm getting too close, just let me know,)]"));
+								speechGreetings.add(UtilText.parse(npc, "[npc.speech(Эм, [pc.name], только скажи, если я занимаю слишком много места,)]"));
+								speechGreetings.add(UtilText.parse(npc, "[npc.speech(Просто скажи, если я тебе мешаю,)]"));
+								speechGreetings.add(UtilText.parse(npc, "[npc.speech(Если я подбираюсь слишком близко, просто дай знать,)]"));
 								
-								endGreetings.add(UtilText.parse(npc, "[npc.name] shyly says, using the top edge of the sheets to hide [npc.her] blushing [npc.face]."));
-								endGreetings.add(UtilText.parse(npc, "[npc.name] says, nervously clutching the sheets as [npc.she] shuffles up alongside you."));
-								endGreetings.add(UtilText.parse(npc, "[npc.name] mutters, furiously blushing as [npc.she] moves up alongside you beneath the sheets."));
+								endGreetings.add(UtilText.parse(npc, "[npc.name] застенчиво произносит это, прикрывая [npc.her] краснеющую [npc.face] краем простыни."));
+								endGreetings.add(UtilText.parse(npc, "[npc.name] говорит, нервно вцепившись в простыни, пока [npc.she] подползает к тебе."));
+								endGreetings.add(UtilText.parse(npc, "[npc.name] бормочет, яростно краснея, пока [npc.she] подбирается к тебе под одеялом."));
 								
 							} else {
-								speechGreetings.add(UtilText.parse(npc, "[npc.speech(Let me get a little closer,)]"));
-								speechGreetings.add(UtilText.parse(npc, "[npc.speech(I just need to get comfortable,)]"));
-								speechGreetings.add(UtilText.parse(npc, "[npc.speech(There we go, that's better,)]"));
+								speechGreetings.add(UtilText.parse(npc, "[npc.speech(Позволь мне подобраться чуть ближе,)]"));
+								speechGreetings.add(UtilText.parse(npc, "[npc.speech(Мне просто нужно устроиться поудобнее,)]"));
+								speechGreetings.add(UtilText.parse(npc, "[npc.speech(Вот так, так-то лучше,)]"));
 								
-								endGreetings.add(UtilText.parse(npc, "[npc.name] says, shuffling up alongside you before nestling in against your [pc.breasts]."));
-								endGreetings.add(UtilText.parse(npc, "[npc.name] says, before sliding up under the covers and pressing [npc.herself] against you."));
-								endGreetings.add(UtilText.parse(npc, "[npc.name] says, smiling as [npc.she] presses [npc.herself] against you."));
+								endGreetings.add(UtilText.parse(npc, "[npc.name] говорит, подползая к тебе и прижимаясь своей [pc.breasts] к тебе."));
+								endGreetings.add(UtilText.parse(npc, "[npc.name] говорит, прежде чем залезть под одеяло и прижаться своей [npc.herself] к тебе."));
+								endGreetings.add(UtilText.parse(npc, "[npc.name] говорит, улыбаясь, пока [npc.she] прижимает [npc.herself] к тебе."));
 							}
 							
 						} else if(npc.hasSlavePermissionSetting(SlavePermissionSetting.BEHAVIOUR_WHOLESOME)) {
-							speechGreetings.add(UtilText.parse(npc, "[npc.speech(I love getting to sleep with you, [pc.name],)]"));
-							speechGreetings.add(UtilText.parse(npc, "[npc.speech(This is the best; getting to sleep with you like this,)]"));
-							speechGreetings.add(UtilText.parse(npc, "[npc.speech(Getting to sleep with you is the best part of the day,)]"));
+							speechGreetings.add(UtilText.parse(npc, "[npc.speech(Мне так нравится засыпать с тобой, [pc.name],)]"));
+							speechGreetings.add(UtilText.parse(npc, "[npc.speech(Это лучшее чувство — засыпать с тобой вот так,)]"));
+							speechGreetings.add(UtilText.parse(npc, "[npc.speech(Засыпать с тобой — лучшая часть моего дня,)]"));
 							
 							if(npc.isShy()) {
-								endGreetings.add(UtilText.parse(npc, "[npc.name] shyly says, using the top edge of the sheets to hide [npc.her] blushing [npc.face] as [npc.she] shuffles up to press [npc.herself] against you."));
-								endGreetings.add(UtilText.parse(npc, "[npc.name] says, nervously clutching the sheets as [npc.she] shuffles up alongside you."));
-								endGreetings.add(UtilText.parse(npc, "[npc.name] nervously mutters, furiously blushing as [npc.she] moves up alongside you beneath the sheets."));
+								endGreetings.add(UtilText.parse(npc, "[npc.name] застенчиво произносит, прикрываясь краем простыни, чтобы скрыть [npc.her] румянец [npc.face], пока [npc.she] подползает ближе, прижимаясь [npc.herself] к тебе."));
+								endGreetings.add(UtilText.parse(npc, "[npc.name] говорит, нервно вцепившись в простыни, пока [npc.she] подползает к тебе."));
+								endGreetings.add(UtilText.parse(npc, "[npc.name] нервно бормочет, заливаясь густым румянцем, пока [npc.she] подбирается к тебе под одеялом."));
 								
 							} else {
-								endGreetings.add(UtilText.parse(npc, "[npc.name] says, smiling happily as [npc.she] snuggles up against you."));
-								endGreetings.add(UtilText.parse(npc, "[npc.name] says, before sliding up under the covers and lovingly pressing [npc.herself] against you."));
-								endGreetings.add(UtilText.parse(npc, "[npc.name] lovingly says, before shuffling up and pressing [npc.herself] against you."));
+								endGreetings.add(UtilText.parse(npc, "[npc.name] говорит счастливо улыбаясь, пока [npc.she] прижимается к тебе."));
+								endGreetings.add(UtilText.parse(npc, "[npc.name] говорит, прежде чем скользнуть под одеяло и с любовью прижать [npc.herself] к тебе."));
+								endGreetings.add(UtilText.parse(npc, "[npc.name] нежно произносит, после чего подбирается ближе и прижимает [npc.herself] к тебе."));
 							}
 						}
 						if(npc.getTailType().isSuitableForSleepHugging()) {
-							endSpeechGreetings.add(UtilText.parse(npc, "With a satisfied sigh, the [npc.race] moves [npc.her] [npc.tail+] around beneath the covers, before laying it over your body and using it to give you a loving tail-hug."));
-							endSpeechGreetings.add(UtilText.parse(npc, "Moving [npc.her] [npc.tail+] around beneath the covers, the [npc.race] wraps it around your [pc.leg], before moving in even closer against you."));
+							endSpeechGreetings.add(UtilText.parse(npc, "С удовлетворенным вздохом [npc.race] водит [npc.her] [npc.tail+] под одеялом, прежде чем накрыть им твое тело, ласково обнимая тебя хвостом."));
+							endSpeechGreetings.add(UtilText.parse(npc, "Перемещая [npc.her] [npc.tail+] под одеялом, [npc.race] обвивает им твою [pc.leg], а затем прижимается к тебе еще плотнее."));
 							endSpeechGreetings.add(
-									UtilText.parse(npc, "Displaying an impressive level of control over [npc.her] [npc.tail+], the [npc.race] swiftly moves it up and wraps it around your lower body, before snuggling in even closer against you."));
+									UtilText.parse(npc, "Демонстрируя впечатляющий контроль над [npc.her] [npc.tail+], [npc.race] стремительно подтягивает его вверх и обвивает твою нижнюю часть тела, после чего прижимается к тебе еще теснее."));
 						}
 						
 						sb.append(UtilText.parse(npc,Util.randomItemFrom(speechGreetings)));
@@ -1490,31 +1410,31 @@ public class RoomPlayer {
 							List<String> speechGreetings = new ArrayList<>();
 							List<String> endGreetings = new ArrayList<>();
 							if(npc.isShy()) {
-								speechGreetings.add(UtilText.parse(npc, "[npc.speech(Please respect my side of the bed,)]"));
-								speechGreetings.add(UtilText.parse(npc, "[npc.speech(I really would prefer it if you didn't get too close,)]"));
-								speechGreetings.add(UtilText.parse(npc, "[npc.speech(I'd really like it if you didn't touch me,)]"));
+								speechGreetings.add(UtilText.parse(npc, "[npc.speech(Пожалуйста, соблюдай свою сторону кровати,)]"));
+								speechGreetings.add(UtilText.parse(npc, "[npc.speech(Я бы предпочла, чтобы ты не подбирался слишком близко,)]"));
+								speechGreetings.add(UtilText.parse(npc, "[npc.speech(Мне бы очень хотелось, чтобы ты меня не трогал,)]"));
 								
-								endGreetings.add(UtilText.parse(npc, "[npc.name] nervously requests, before rolling over and turning [npc.her] back to you."));
-								endGreetings.add(UtilText.parse(npc, "[npc.name] mutters, before shuffling away from you."));
-								endGreetings.add(UtilText.parse(npc, "[npc.name] shyly requests, before shuffling away under the covers and turning [npc.her] back to you."));
+								endGreetings.add(UtilText.parse(npc, "нервно просит [npc.name], после чего переворачивается на бок, повернувшись к тебе [npc.her]."));
+								endGreetings.add(UtilText.parse(npc, "бормочет [npc.name], прежде чем отползти от тебя."));
+								endGreetings.add(UtilText.parse(npc, "робко просит [npc.name], после чего зарывается под одеяло и поворачивается к тебе [npc.her]."));
 								
 							} else if(npc.isSelfish()) {
-								speechGreetings.add(UtilText.parse(npc, "[npc.speech(Don't roll over into my personal space in your sleep,)]"));
-								speechGreetings.add(UtilText.parse(npc, "[npc.speech(Keep to your side of the bed,)]"));
-								speechGreetings.add(UtilText.parse(npc, "[npc.speech(There's plenty of room on your side of the bed; don't come into mine,)]"));
+								speechGreetings.add(UtilText.parse(npc, "[npc.speech(Не заваливайся в мое личное пространство во сне,)]"));
+								speechGreetings.add(UtilText.parse(npc, "[npc.speech(Придерживайся своей половины кровати,)]"));
+								speechGreetings.add(UtilText.parse(npc, "[npc.speech(На твоей половине кровати полно места; в мою не лезь,)]"));
 								
-								endGreetings.add(UtilText.parse(npc, "[npc.name] warns, letting out an annoyed huff as [npc.she] shuffles away from you."));
-								endGreetings.add(UtilText.parse(npc, "[npc.name] bluntly states, before shuffling away from you and letting out a frustrated sigh."));
-								endGreetings.add(UtilText.parse(npc, "[npc.name] says, before turning [npc.her] back to you."));
+								endGreetings.add(UtilText.parse(npc, "[npc.name] предостерегает, раздраженно фыркнув, пока [npc.she] отодвигается от тебя."));
+								endGreetings.add(UtilText.parse(npc, "[npc.name] резко заявляет, после чего отодвигается от тебя с разочарованным вздохом."));
+								endGreetings.add(UtilText.parse(npc, "[npc.name] говорит, прежде чем снова развернуть [npc.her] к тебе."));
 								
 							} else {
-								speechGreetings.add(UtilText.parse(npc, "[npc.speech(I'm just going to keep to my part of the bed,)]"));
-								speechGreetings.add(UtilText.parse(npc, "[npc.speech(I'll just stay over here on my side,)]"));
-								speechGreetings.add(UtilText.parse(npc, "[npc.speech(I'll leave you plenty of room, don't worry,)]"));
+								speechGreetings.add(UtilText.parse(npc, "[npc.speech(Я просто буду держаться своей половины кровати,)]"));
+								speechGreetings.add(UtilText.parse(npc, "[npc.speech(Я просто останусь здесь, на своей стороне,)]"));
+								speechGreetings.add(UtilText.parse(npc, "[npc.speech(Я оставлю тебе много места, не волнуйся,)]"));
 								
-								endGreetings.add(UtilText.parse(npc, "[npc.name] says, letting out a weary sigh as [npc.she] shuffles away from you."));
-								endGreetings.add(UtilText.parse(npc, "[npc.name] sighs, shuffling away a little before rolling over and turning [npc.her] back on you."));
-								endGreetings.add(UtilText.parse(npc, "[npc.name] sighs, before turning [npc.her] back to you and shuffling over to the edge of the bed."));
+								endGreetings.add(UtilText.parse(npc, "[npc.name] говорит, устало вздыхая, пока [npc.she] отодвигается от тебя."));
+								endGreetings.add(UtilText.parse(npc, "[npc.name] вздыхает, немного отодвигаясь, а затем перекатывается и снова разворачивает [npc.her] к тебе."));
+								endGreetings.add(UtilText.parse(npc, "[npc.name] вздыхает, прежде чем снова развернуть [npc.her] к тебе и отодвинуться к краю кровати."));
 							}
 							sb.append(UtilText.parse(npc,Util.randomItemFrom(speechGreetings)));
 							sb.append(" ");
@@ -1524,10 +1444,7 @@ public class RoomPlayer {
 				}
 				
 			} else {
-				sb.append("<p>"
-						+ "You set your phone's alarm before drawing the curtains, lying on your bed and closing your eyes."
-						+ " You feel extremely safe and comfortable here in Lilaya's home, and soon drift off to sleep, thinking about all the things that have happened to you recently..."
-					+ "</p>");
+				sb.append("<p>Завесив шторы, вы заводите будильник на телефоне, ложитесь в постель и закрываете глаза. Здесь, в доме Lilaya, вы чувствуете себя в полной безопасности и комфорте, и вскоре погружаетесь в сон, размышляя обо всем, что произошло с вами за последнее время...</p>");
 				
 			}
 			
@@ -1576,61 +1493,37 @@ public class RoomPlayer {
 						sb.append("<p>");
 						if(slaveWaking.hasSlavePermissionSetting(SlavePermissionSetting.BEHAVIOUR_PROFESSIONAL)) {
 							sb.append(UtilText.parse(slaveWaking,
-									"[npc.speech([pc.Name]? It's the appointed hour for you to be waking up,)]"
-									+ " you hear a voice calling out to you, and as you slowly open your [pc.eyes], you see [npc.name] smiling down at you."
-									+ " Seeing that you're awake, [npc.she] withdraws to open the curtains, calling over [npc.her] shoulder as [npc.she] does so, [npc.speech(Good "+morningString+", [pc.name]!)]"));
+									"[npc.speech([pc.Name]? Пора просыпаться,)] — слышите вы чей-то голос. Медленно открыв [pc.eyes], вы видите, что [npc.name] улыбается вам сверху вниз. Заметив, что вы проснулись, [npc.she] отходит, чтобы раздвинуть шторы, и, заглядывая через [npc.her] плечо, пока [npc.she] это делает, [npc.speech(Добро "+morningString+", [pc.name]!)]"));
 						} else if(slaveWaking.hasSlavePermissionSetting(SlavePermissionSetting.BEHAVIOUR_SEDUCTIVE)) {
 							sb.append(UtilText.parse(slaveWaking, 
-									"[npc.speech(Come on, [pc.name], it's time to wake up,)]"
-									+ " you hear a voice seductively whispering into your [pc.ear], and as you slowly open your [pc.eyes], you see [npc.name] smiling down at you and biting [npc.her] lip."
-									+ " Seeing that you're awake, [npc.she] runs a hand over your [pc.chest], before withdrawing to open the curtains. Calling over [npc.her] shoulder as [npc.she] does so, [npc.she] teases,"
-									+ " [npc.speech(Good "+morningString+", [pc.name]... So, is there anything <i>special</i> that you wanted to do today?)]"));
+									"[npc.speech(Давай, [pc.name], пора вставать,)] — слышите вы соблазнительный шепот прямо в [pc.ear]. Медленно открыв [pc.eyes], вы видите, что [npc.name] улыбается вам, прикусив [npc.her] губу. Заметив, что вы проснулись, [npc.she] проводит рукой по вашим [pc.chest], после чего отходит, чтобы раздвинуть шторы. Заглядывая через [npc.her] плечо, пока [npc.she] это делает, [npc.she] дразнит вас: [npc.speech(Добро "+morningString+", [pc.name]... Ну так есть ли что-нибудь <i>особенное</i>, чем ты хотела бы заняться сегодня?)]"));
 						} else if(slaveWaking.hasSlavePermissionSetting(SlavePermissionSetting.BEHAVIOUR_SLUTTY)) {
 							sb.append(UtilText.parse(slaveWaking,
-									"[npc.speech(If you get up now, you can make time for a quick fuck, can't you?)]"
-									+ " you hear a voice asking, and as you slowly open your [pc.eyes], you see [npc.name] hungrily gazing down at you."
-									+ " Seeing that you're awake, [npc.she] leans down to kiss you fully on the [pc.lips], before withdrawing to open the curtains. Calling over [npc.her] shoulder as [npc.she] does so, [npc.she] teases,"
-									+ " [npc.speech(Good "+morningString+", [pc.name]! So, you want to fuck me now, right?)]"));
+									"[npc.speech(Если встанешь прямо сейчас, еще успеешь быстро трахнуться, верно?)] — слышишь ты чей-то голос, и когда ты медленно открываешь свои [pc.eyes], то видишь, как [npc.name] жадно смотрит на тебя сверху вниз. Заметив, что ты проснулась, [npc.she] наклоняется, чтобы крепко поцеловать тебя в [pc.lips], а затем отстраняется, чтобы раздвинуть шторы. Опираясь на плечо [npc.her], пока [npc.she] это делает, [npc.she] дразнит тебя: [npc.speech(Добро "+morningString+", [pc.name]! Значит, хочешь трахнуть меня прямо сейчас, да?)]"));
 						} else if(slaveWaking.hasSlavePermissionSetting(SlavePermissionSetting.BEHAVIOUR_STANDARD)) {
 							if(slaveWaking.isShy()) {
 								sb.append(UtilText.parse(slaveWaking,
-										"[npc.speech([pc.Name]? Erm, excuse me, [pc.name]? It's time to wake up,)]"
-										+ " you hear a voice nervously calling out to you, and as you slowly open your [pc.eyes], you see [npc.name] worriedly looking down at you."
-											+ " Seeing that you're awake, [npc.she] breaths a little sigh of relief and hurries off to open the curtains, calling out as [npc.she] does so, [npc.speech(Good "+morningString+", [pc.name]!)]"));
+										"[npc.speech([pc.Name]? Эм, извини, [pc.name]? Пора просыпаться,)] — слышишь ты чей-то нервный голос, и когда ты медленно открываешь свои [pc.eyes], то видишь, как [npc.name] обеспокоенно смотрит на тебя. Заметив, что ты проснулась, [npc.she] с облегчением вздыхает и спешит открыть шторы, выкрикивая на ходу, пока [npc.she] это делает: [npc.speech(Добро "+morningString+", [pc.name]!)]"));
 							} else {
 								sb.append(UtilText.parse(slaveWaking, 
-										"[npc.speech([pc.Name]? Come on, [pc.name], it's time to wake up,)]"
-										+ " you hear a voice calling out to you, and as you slowly open your [pc.eyes], you see [npc.name] smiling down at you."
-												+ " Seeing that you're awake, [npc.she] withdraws to open the curtains, calling over [npc.her] shoulder as [npc.she] does so, [npc.speech(Good "+morningString+", [pc.name]!)]"));
+										"[npc.speech([pc.Name]? Давай, [pc.name], пора просыпаться,)] — слышишь ты чей-то голос, и когда ты медленно открываешь свои [pc.eyes], то видишь, как [npc.name] улыбается тебе сверху вниз. Заметив, что ты проснулась, [npc.she] отстраняется, чтобы открыть шторы, и, опираясь на плечо [npc.her], пока [npc.she] это делает, поддразнивает тебя: [npc.speech(Добро "+morningString+", [pc.name]!)]"));
 							}
 						} else if(slaveWaking.hasSlavePermissionSetting(SlavePermissionSetting.BEHAVIOUR_WHOLESOME)) {
 							if(slaveWaking.isShy()) {
 								sb.append(UtilText.parse(slaveWaking,
-										"[npc.speech([pc.Name]? Um... Come on, sleepy... It's time to wake up,)]"
-										+ " you hear a voice shyly calling out to you, and as you slowly open your [pc.eyes], you see [npc.name] looking down at you."
-												+ " Seeing that you're awake, [npc.she] breaths a little sigh of relief and hurries off to open the curtains, quietly calling out as [npc.she] does so,"
-												+ " [npc.speech(Good "+morningString+", [pc.name]... I hope you have a wonderful day today...)]"));
+										"[npc.speech([pc.Name]? Ну же... Давай, соня... Пора просыпаться,)] ты слышишь робкий голос, зовущий тебя, и когда ты медленно открываешь свои [pc.eyes], ты видишь, что [npc.name] смотрит на тебя сверху вниз. Заметив, что ты проснулся, [npc.she] с легким вздохом облегчения спешит открыть шторы, тихонько выкликая, пока [npc.she] делает это, [npc.speech(Добро "+morningString+", [pc.name]... Надеюсь, сегодняшний день будет у тебя чудесным...)]"));
 							} else if(slaveWaking.isKind()) {
 								sb.append(UtilText.parse(slaveWaking,
-										"[npc.speech([pc.Name]? Come on, sleepy-head! You don't want to stay in bed forever do you?)]"
-										+ " you hear a voice calling out to you, and as you slowly open your [pc.eyes], you see [npc.name] smiling down at you."
-												+ " Seeing that you're awake, [npc.she] gives your face a gentle, loving stroke, before hurrying off to open the curtains, calling out over [npc.her] shoulder as [npc.she] does so,"
-												+ " [npc.speech(Good "+morningString+", [pc.name]! I hope you have a wonderful day today!)]"));
+										"[npc.speech([pc.Name]? Ну же, соня! Ты ведь не хочешь вечно проваляться в постели?)] ты слышишь зовущий тебя голос, и когда ты медленно открываешь свои [pc.eyes], ты видишь, что [npc.name] улыбается тебе, глядя сверху вниз. Заметив, что ты проснулся, [npc.she] нежно и любя гладит тебя по лицу, после чего спешит открыть шторы, окликая тебя через [npc.her] плечо, пока [npc.she] делает это, [npc.speech(Добро "+morningString+", [pc.name]! Надеюсь, сегодняшний день будет у тебя чудесным!)]"));
 							} else {
 								sb.append(UtilText.parse(slaveWaking,
-										"[npc.speech([pc.Name]? Come on, sleepy-head! You don't want to stay in bed forever do you?)]"
-										+ " you hear a voice calling out to you, and as you slowly open your [pc.eyes], you see [npc.name] smiling down at you."
-												+ " Seeing that you're awake, [npc.she] stands up and hurries off to open the curtains, calling out over [npc.her] shoulder as [npc.she] does so,"
-												+ " [npc.speech(Good "+morningString+", [pc.name]! I hope you have a wonderful day today!)]"));
+										"[npc.speech([pc.Name]? Ну же, соня! Ты ведь не хочешь вечно проваляться в постели?)] ты слышишь зовущий тебя голос, и когда ты медленно открываешь свои [pc.eyes], ты видишь, что [npc.name] улыбается тебе, глядя сверху вниз. Заметив, что ты проснулся, [npc.she] встает и спешит открыть шторы, окликая тебя через [npc.her] плечо, пока [npc.she] делает это, [npc.speech(Добро "+morningString+", [pc.name]! Надеюсь, сегодняшний день будет у тебя чудесным!)]"));
 							}
 						}
 						sb.append("</p>");
 
 						sb.append(UtilText.parse(slaveWaking,
-								"<p>"
-									+ "As comfortable as you are, you decide that you'd better do as [npc.name] says and get out of bed, and so, after a minute of lying beneath the covers, you do just that."
-									+ " With a satisfied yawn and stretch of your [pc.arms], you allow "+ Util.stringsToStringList(names, false)+" to assist you as you gather your things, and with one final stretch, you get ready to set out once more..."
-								+ "</p>"));
+								"<p>Как бы ни было уютно, вы решаете, что лучше поступить так, как говорит [npc.name], и встать с постели. После минуты лежания под одеялом вы так и делаете. С довольным зевком и потягиванием [pc.arms], вы позволяете "+ Util.stringsToStringList(names, false)+" ей помочь вам собрать вещи, и, сделав последнее глубокое потягивание, вы готовы отправиться в путь вновь...</p>"));
 					}
 					
 				} else {
@@ -1650,14 +1543,7 @@ public class RoomPlayer {
 						List<String> names = new ArrayList<>();
 						slavesPresentWhenWaking.stream().forEach((npc) -> names.add(npc.getName()));
 						sb.append(
-								"<p>"
-									+ "<i>Beep-beep... beep-beep... bee-</i>"
-								+ "</p>"
-								+ "<p>"
-									+ "Rolling over, you fumble for your phone, turning off the alarm before sinking back onto your bed with a sigh."
-									+ " As comfortable as you are, you decide that you'd better get out of bed, and so, after a minute of lying beneath the covers, you do just that."
-									+ " With a satisfied yawn and stretch of your [pc.arms], you allow "+ Util.stringsToStringList(names, false)+" to assist you as you gather your things, and with one final stretch, you get ready to set out once more..."
-								+ "</p>");
+								"<p><i>Бип-бип... бип-бип... би-</i></p><p>Перевернувшись на бок, вы нащупываете телефон и выключаете будильник, после чего со вздохом снова плюхаетесь на кровать. Несмотря на невероятный уют, вы решаете, что пора вставать, и после минуты лежания под одеялом наконец поднимаетесь. С довольным зевком и потягиванием [pc.arms], вы позволяете "+ Util.stringsToStringList(names, false)+" ей помочь вам собрать вещи, и, сделав последнее глубокое потягивание, вы готовы отправиться в путь вновь...</p>");
 					}
 				}
 
@@ -1669,63 +1555,41 @@ public class RoomPlayer {
 					if(Main.game.getPlayer().hasTrait(Perk.HEAVY_SLEEPER, true)) {
 						if(!hornySlaves.get(0).isMute()) {
 							sb.append(UtilText.parse(hornySlaves,
-									"<p>"
-										+ "[npc.speech(~Mmm!~ That's right... Don't wake up...)]"
-									+ "</p>"
-									+ "<p>"
-										+ "Being such a deep sleeper, these words uttered by [npc.name] don't even come close to waking you up."
+									"<p>[npc.speech(~Ммм!~ Вот так... Не просыпайся...)]</p><p>Поскольку вы спите очень крепко, эти слова, произнесенные [npc.name], даже близко не могут вас разбудить."
 										+ (soloHornySex
-												?" Sliding onto your bed, [npc.name] grins hungrily down at you."
-												:" Sliding onto your bed, "+Util.stringsToStringList(hornyNames, false)+" grin hungrily down at you.")
-										+ " With a horny [npc.moan], the [npc.race] starts gently groping you, eagerly panting as [npc.she] does so,"
-										+ " [npc.speech(I'm going to fuck you, [pc.name], and you'll never even know...)]"
-									+ "</p>"));
+												?" Скользя по вашей постели, [npc.name] с голодным блеском в глазах смотрит на вас сверху вниз."
+												:" Скользя по вашей постели, "+Util.stringsToStringList(hornyNames, false)+" с голодным блеском в глазах смотрит на вас сверху вниз.")
+										+ " С возбужденной [npc.moan], [npc.race] начинает нежно ласкать вас, жадно посапывая, пока [npc.she] делает это, [npc.speech(Я трахну тебя, [pc.name], а ты даже не узнаешь...)]</p>"));
 						} else {
 							sb.append(UtilText.parse(hornySlaves,
-									"<p>"
-										+ "Quietly sneaking over to your bed, [npc.name] looks down at you as you sleep and lets out an excited moan."
-										+ " Being such a deep sleeper, this noise doesn't even come close to waking you up."
+									"<p>Тихо подкравшись к твоей постели, [npc.name] смотрит на тебя, пока ты спишь, и издает возбужденный стон. Ты спишь так крепко, что этот звук даже близко не может тебя разбудить."
 										+ (soloHornySex
-												?" Sliding onto your bed, [npc.name] grins hungrily down at you."
-												:" Sliding onto your bed, "+Util.stringsToStringList(hornyNames, false)+" grin hungrily down at you.")
-										+ " Licking [npc.her] [npc.lips], the [npc.race] starts gently groping you, eagerly panting as [npc.she] prepares to fuck you in your sleep..."
-									+ "</p>"));
+												?" Скользя по вашей постели, [npc.name] с голодным блеском в глазах смотрит на вас сверху вниз."
+												:" Скользя по вашей постели, "+Util.stringsToStringList(hornyNames, false)+" с голодным блеском в глазах смотрит на вас сверху вниз.")
+										+ " Облизывая [npc.lips] [npc.her], [npc.race] начинает нежно ощупывать тебя, жадно дыша, пока [npc.she] готовится трахать тебя во сне...</p>"));
 						}
 						
 					} else {
 						sb.append(UtilText.parse(hornySlaves,
 								"<p>"
 									+ (soloHornySex
-											?"[npc.speech(~Mmm!~ That's right... I've got you now...)]"
-											:"[npc2.speech(~Mmm!~ That's right... I've got you now...)] the voice of [npc2.name] penetrates into your sleeping mind.")
-								+ "</p>"
-								+ "<p>"
-									+ "For a moment, you aren't quite sure if you're dreaming or not, but then you suddenly feel a strange weight shifting on top of you, which instantly jolts you awake."
+											?"[npc.speech(~Ммм!~ Вот так... теперь ты в моей власти...)]"
+											:"[npc2.speech(~Ммм!~ Вот так... теперь ты в моей власти...)] — голос [npc2.name] проникает в твой спящий разум.")
+								+ "</p><p>На мгновение ты не совсем понимаешь, снится тебе это или нет, но вдруг чувствуешь, как сверху на тебя переваливается странная тяжесть, что мгновенно заставляет тебя проснуться."
 									+ (soloHornySex
-											?" Opening your eyes, you see [npc.name] sitting on your chest, grinning hungrily down at you."
-											:" Opening your eyes, you see "+Util.stringsToStringList(hornyNames, false)+" leaning over you, each of them with a hungry grin on their faces.")
-									+ " With a horny [npc.moan], [npc.name] eagerly exclaims,"
-									+ " [npc.speech(Good "+morningString+", [pc.name]! I hope you're ready to fuck!)]"
-								+ "</p>"));
+											?" Открыв глаза, ты видишь [npc.name], сидящую на твоей груди и с голодным предвкушением смотрящую на тебя сверху вниз."
+											:" Открыв глаза, ты видишь, "+Util.stringsToStringList(hornyNames, false)+" наклонившихся над тобой, и на лицах каждой из них играет голодная ухмылка.")
+									+ " Видя похотливую [npc.moan], [npc.name] с нетерпением восклицает: [npc.speech(Хорош, "+morningString+", [pc.name]! Надеюсь, ты готова к траху!)]</p>"));
 					}
 					return sb.toString();
 				}
 				
 			} else {
-				sb.append("<p>"
-						+ "<i>Beep-beep... beep-beep... bee-</i>"
-					+ "</p>"
-					+ "<p>"
-						+ "Rolling over, you fumble for your phone, turning off the alarm before sinking back onto your bed with a sigh."
-						+ " As comfortable as you are, you decide that you'd better get out of bed, and so, after a minute of lying beneath the covers, you do just that."
-						+ " Opening the curtains, you set about gathering your things, and then with one final stretch, you get ready to set out once more..."
-					+ "</p>");
+				sb.append("<p><i>Бип-бип... бип-бип... би-</i></p><p>Перекатившись на бок, вы нащупываете телефон и выключаете будильник, после чего со вздохом снова плюхаетесь на кровать. Несмотря на невероятный уют, вы понимаете, что пора вставать, и, полежав под одеялом еще минуту, наконец решаетесь на это. Раздвинув шторы, вы начинаете собирать вещи и, сделав последнюю растяжку, готовитесь снова отправиться в путь...</p>");
 			}
 			
 			if(!slavesWantingToSexPlayer(Main.game.getHourOfDay()).isEmpty()) {
-				sb.append("<p style='text-align:center;'>"
-							+ "[style.italicsGood(You feel completely refreshed!)]"
-						+ "</p>");
+				sb.append("<p style='text-align:center;'>[style.italicsGood(Вы чувствуете себя совершенно бодрым!)]</p>");
 			}
 			
 			return sb.toString();
@@ -1754,10 +1618,10 @@ public class RoomPlayer {
 				
 				if(index==1) {
 					if(Main.game.getPlayer().hasTrait(Perk.HEAVY_SLEEPER, true)) {
-						return new ResponseSex("Sleep sex",
+						return new ResponseSex("Секс во сне",
 								(soloSex
-									?UtilText.parse(hornySlaves.get(0), "[npc.Name] fucks you in your sleep...")
-									:Util.stringsToStringList(names, false)+" fuck you in your sleep..."),
+									?UtilText.parse(hornySlaves.get(0), "[npc.Name] трахает вас во сне...")
+									:Util.stringsToStringList(names, false)+" трахает вас во сне..."),
 								false,
 								false,
 								new SMGeneric(
@@ -1800,10 +1664,10 @@ public class RoomPlayer {
 						};
 						
 					} else {
-						return new ResponseSex("Sex",
+						return new ResponseSex("Секс",
 								(soloSex
-									?UtilText.parse(hornySlaves.get(0), "[npc.Name] forces [npc.herself] on you...")
-									:Util.stringsToStringList(names, false)+" force themselves on you..."),
+									?UtilText.parse(hornySlaves.get(0), "[npc.Name] навязывает вам [npc.herself]...")
+									:Util.stringsToStringList(names, false)+" насилуют вас..."),
 								!hornySlaves.stream().anyMatch(s->s.isWillingToRape(Main.game.getPlayer()) && s.hasSlavePermissionSetting(SlavePermissionSetting.SEX_RAPIST)),
 								!hornySlaves.stream().anyMatch(s->s.isWillingToRape(Main.game.getPlayer()) && s.hasSlavePermissionSetting(SlavePermissionSetting.SEX_RAPIST)),
 								new SMGeneric(
@@ -1818,21 +1682,21 @@ public class RoomPlayer {
 					
 				} else if(index==2) {
 					if(Main.game.getPlayer().hasTrait(Perk.HEAVY_SLEEPER, true)) {
-						return new Response("Refuse",
-								"As you're deeply asleep, you can't say no!",
+						return new Response("Отказаться",
+								"Пока вы крепко спите, вы не можете сказать «нет»!",
 								null);
 						
 					} else if(hornySlaves.stream().anyMatch(s->s.isWillingToRape(Main.game.getPlayer()) && s.hasSlavePermissionSetting(SlavePermissionSetting.SEX_RAPIST))) {
 						GameCharacter rapist = hornySlaves.stream().filter(s->s.isWillingToRape(Main.game.getPlayer()) && s.hasSlavePermissionSetting(SlavePermissionSetting.SEX_RAPIST)).findFirst().get();
-						return new Response("Refuse",
-								UtilText.parse(rapist, "As you've given [npc.herHim] permission to rape, [npc.nameIsFull] not going to take no for an answer!"),
+						return new Response("Отказаться",
+								UtilText.parse(rapist, "Раз уж ты дал(а) [npc.herHim] разрешение на изнасилование, [npc.nameIsFull] не примет отказ!"),
 								null);
 						
 					} else {
-						return new Response("Refuse",
+						return new Response("Отказаться",
 								(soloSex
-										?UtilText.parse(hornySlaves.get(0), "You really aren't in the mood right now, so firmly tell [npc.name] to stop.")
-										:"You really aren't in the mood right now, so firmly tell "+ Util.stringsToStringList(names, false)+" to stop."),
+										?UtilText.parse(hornySlaves.get(0), "У тебя сейчас совсем нет настроения, так что решительно прикажи [npc.name] остановиться.")
+										:"Вы сейчас совсем не в настроении, поэтому твердо говорите "+ Util.stringsToStringList(names, false)+" чтобы они остановились."),
 								REFUSE_SLAVE_SEX);
 						
 					}
@@ -1848,7 +1712,7 @@ public class RoomPlayer {
 		}
 	};
 	
-	public static final DialogueNode POST_WAKE_UP_SEX = new DialogueNode("Finished", "", false) {
+	public static final DialogueNode POST_WAKE_UP_SEX = new DialogueNode("Завершено", "", false) {
 		@Override
 		public void applyPreParsingEffects() {
 			List<GameCharacter> hornySlaves = new ArrayList<>(Main.sex.getDominantParticipants(false).keySet());
@@ -1866,9 +1730,9 @@ public class RoomPlayer {
 		@Override
 		public String getDescription() {
 			if(Main.game.getPlayer().isAsleep()) {
-				return "You continue to sleep...";
+				return "Вы продолжаете спать...";
 			}
-			return "You collapse back onto your bed...";
+			return "Вы снова рушитесь на кровать...";
 		}
 		@Override
 		public String getContent() {
@@ -1924,7 +1788,7 @@ public class RoomPlayer {
 		}
 	};
 	
-	public static final DialogueNode AUNT_HOME_PLAYERS_ROOM_QUICK_SHOWER = new DialogueNode("Your Room", "", true) {
+	public static final DialogueNode AUNT_HOME_PLAYERS_ROOM_QUICK_SHOWER = new DialogueNode("Ваша комната", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			// Make sure that the washing slaves don't disappear during this scene:
@@ -1940,8 +1804,7 @@ public class RoomPlayer {
 			
 			UtilText.nodeContentSB.append("<p>");
 				UtilText.nodeContentSB.append(
-						"Wanting to clean yourself, but not spend too much time doing so, you step into your large ensuite bathroom and decide upon taking a quick shower."
-								+ " Disrobing, you leave your clothing by the door, before stepping over to your luxurious marble-and-glass walk-in shower.");
+						"Желая освежиться, но не тратя на это слишком много времени, вы заходите в свою просторную ванную комнату при спальне и решаете быстро принять душ. Раздевшись, вы оставляете одежду у двери и подходите к своей роскошной душевой кабине из мрамора и стекла.");
 			UtilText.nodeContentSB.append("</p>");
 			
 			if(!slavesWashing.isEmpty()) {
@@ -1949,10 +1812,7 @@ public class RoomPlayer {
 				
 			} else {
 				UtilText.nodeContentSB.append(
-						"<p>"
-							+ "Turning on the tap, you let out a relaxed sigh as you feel the warm water flowing down over your naked body."
-							+ " Not wanting to spend too much time in the shower, you focus on quickly cleaning yourself..."
-						+ "</p>");
+						"<p>Открыв кран, вы расслабленно вздыхаете, чувствуя, как теплые струи воды стекают по вашему обнаженному телу. Не желая задерживаться в душе слишком долго, вы сосредотачиваетесь на быстром мытье...</p>");
 			}
 			
 			return UtilText.nodeContentSB.toString();
@@ -1966,24 +1826,22 @@ public class RoomPlayer {
 					SexSlotStanding.STANDING_SUBMISSIVE_BEHIND_TWO};
 			
 			if(index==1) {
-				return new Response("Finish", "Finish having a shower and return to your room.", ROOM) {
+				return new Response("Закончить", "Закончить душ и вернуться в комнату.", ROOM) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append("<p>");
 							if(!slavesWashing.isEmpty()) {
 									if(slavesWashing.size()==1) {
 										Main.game.getTextStartStringBuilder().append(UtilText.parse(slavesWashing,
-												"Not wanting to spend too much time in the shower, you soon tell [npc.name] to turn off the tap and help you to dry off."
-													+ " After doing this, the two of you get dressed and step back into your room..."));
+												"Не желая проводить в душе слишком много времени, вы вскоре просите [npc.name] выключить воду и помочь вам вытереться. После этого вы вдвоем одеваетесь и возвращаетесь в комнату..."));
 									} else {
 										Main.game.getTextStartStringBuilder().append(
-												"Not wanting to spend too much time in the shower, you soon tell your slaves to turn off the tap and help you to dry off."
-													+ " After doing this, you all get dressed and step back into your room...");
+												"Не желая проводить в душе слишком много времени, вы вскоре приказываете своим рабыням выключить воду и помочь вам вытереться. После этого вы все одеваетесь и возвращаетесь в комнату...");
 									}
 								
 							} else {
 								Main.game.getTextStartStringBuilder().append(
-										"After a while, you feel as though you've spent enough time in the shower, and after turning off the tap and drying yourself with a fluffy towel, you get dressed and step back into your room...");
+										"Спустя некоторое время вы чувствуете, что провели в душе достаточно, поэтому, выключив воду и вытеревшись пушистым полотенцем, вы одеваетесь и возвращаетесь в комнату...");
 							}
 						Main.game.getTextStartStringBuilder().append("</p>");
 					}
@@ -1991,7 +1849,7 @@ public class RoomPlayer {
 				
 			} else if(index==2) { // If you change this, be aware that it is called in AUNT_HOME_PLAYERS_ROOM_THOROUGH_SHOWER
 				if(slavesWashing.isEmpty()) {
-					return new Response("Sex", "You do not have any slaves assigned to your bedroom with the washing permission, so there's nobody for you to have sex with...", null);
+					return new Response("Секс", "В вашей спальне нет назначенных рабынь с правом ухода за телом, так что вам не с кем заняться сексом...", null);
 				}
 				
 				Map<GameCharacter, SexSlot> slaveSlots = new HashMap<>();
@@ -1999,10 +1857,10 @@ public class RoomPlayer {
 					slaveSlots.put(slavesWashing.get(i), showerSlots[i]);
 				}
 				UtilText.addSpecialParsingString(String.valueOf(slavesWashing.size()), true);
-				return new ResponseSex("Sex",
+				return new ResponseSex("Секс",
 						slavesWashing.size()==1
-							?UtilText.parse(slavesWashing, "Have dominant sex with [npc.name] in the shower.")
-							:"Have dominant sex with your slaves in the shower.",
+							?UtilText.parse(slavesWashing, "Заняться доминантным сексом с [npc.name] в душе.")
+							:"Заняться доминантным сексом со своими рабами в душе.",
 						true, false,
 						new SMShower(SexPosition.STANDING,
 								Util.newHashMapOfValues(new Value<>(Main.game.getPlayer(), SexSlotStanding.STANDING_DOMINANT)),
@@ -2014,13 +1872,13 @@ public class RoomPlayer {
 				
 			} else if(index==3) {  // If you change this, be aware that it is called in AUNT_HOME_PLAYERS_ROOM_THOROUGH_SHOWER
 				if(slavesWashing.isEmpty()) {
-					return new Response("Submissive sex", "You do not have any slaves assigned to your bedroom with the washing permission, so there's nobody for you to have submissive sex with...", null);
+					return new Response("Субмиссивный секс", "В вашей спальне нет назначенных рабынь с правом ухода за телом, так что вам не с кем заняться подчиненным сексом...", null);
 				}
 				if(!slavesWashing.stream().anyMatch(s->s.isAttractedTo(Main.game.getPlayer()))) {
-					return new Response("Submissive sex",
+					return new Response("Субмиссивный секс",
 							slavesWashing.size()==1
-								?UtilText.parse(slavesWashing, "As [npc.name] isn't attracted to you, [npc.she] is unwilling to be the dominant partner in sex...")
-								:"Have dominant sex with your slaves in the shower.",
+								?UtilText.parse(slavesWashing, "Так как [npc.name] не испытывает к вам влечения, [npc.she] не желает выступать в роли доминанта в сексе...")
+								:"Заняться доминантным сексом со своими рабами в душе.",
 							null);
 				}
 				Map<GameCharacter, SexSlot> slaveSlots = new HashMap<>();
@@ -2029,10 +1887,10 @@ public class RoomPlayer {
 					slaveSlots.put(attractedSlaves.get(i), showerSlots[i]);
 				}
 				UtilText.addSpecialParsingString(String.valueOf(slavesWashing.size()), true);
-				return new ResponseSex("Submissive sex",
+				return new ResponseSex("Субмиссивный секс",
 						attractedSlaves.size()==1
-								?UtilText.parse(attractedSlaves, "Let [npc.name] dominantly fuck you in the shower.")
-										:"Let your slaves dominantly fuck you in the shower.",
+								?UtilText.parse(attractedSlaves, "Позволить [npc.name] доминантно трахать вас в душе.")
+										:"Позволь своим рабыням доминантно трахать тебя в душе.",
 						true, true,
 						new SMShower(SexPosition.STANDING,
 								slaveSlots,
@@ -2048,7 +1906,7 @@ public class RoomPlayer {
 		}
 	};
 	
-	public static final DialogueNode AUNT_HOME_PLAYERS_ROOM_THOROUGH_SHOWER = new DialogueNode("Your Room", "", true) {
+	public static final DialogueNode AUNT_HOME_PLAYERS_ROOM_THOROUGH_SHOWER = new DialogueNode("Ваша комната", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			// Make sure that the washing slaves don't disappear during this scene:
@@ -2064,8 +1922,7 @@ public class RoomPlayer {
 			
 			UtilText.nodeContentSB.append("<p>");
 				UtilText.nodeContentSB.append(
-						"Wanting to spend some time thoroughly cleaning yourself, you step into your large ensuite bathroom and decide upon taking a long shower."
-						+ " Disrobing, you leave your clothing by the door, before stepping over to your luxurious marble-and-glass walk-in shower.");
+						"Желая уделить время тщательному очищению, вы заходите в свою просторную ванную комнату при спальне и решаете принять долгий душ. Раздевшись, вы оставляете одежду у двери и подходите к своей роскошной душевой кабине из мрамора и стекла.");
 			UtilText.nodeContentSB.append("</p>");
 			
 			if(!slavesWashing.isEmpty()) {
@@ -2073,10 +1930,7 @@ public class RoomPlayer {
 				
 			} else {
 				UtilText.nodeContentSB.append(
-						"<p>"
-							+ "Turning on the tap, you let out a contented sigh as you feel the warm water flowing down over your naked body."
-							+ " Deciding that it wouldn't be so bad to take some time out in order to relax, you don't rush as you set about thoroughly cleaning yourself."
-						+ "</p>");
+						"<p>Открыв кран, вы удовлетворенно вздыхаете, чувствуя, как теплые струи воды стекают по вашему обнаженному телу. Решив, что не будет лишним немного расслабиться, вы не спешите, тщательно отмывая каждую клеточку кожи.</p>");
 			}
 			
 			return UtilText.nodeContentSB.toString();
@@ -2084,24 +1938,22 @@ public class RoomPlayer {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Finish", "Finish having a shower and return to your room.", ROOM) {
+				return new Response("Закончить", "Закончить душ и вернуться в комнату.", ROOM) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append("<p>");
 							if(!slavesWashing.isEmpty()) {
 									if(slavesWashing.size()==1) {
 										Main.game.getTextStartStringBuilder().append(UtilText.parse(slavesWashing,
-												"After making sure that every last inch of your body is sparkling clean, you tell [npc.name] to turn off the tap and help you to dry off."
-													+ " After doing this, the two of you get dressed and step back into your room..."));
+												"Убедившись, что каждый дюйм вашего тела сияет чистотой, вы просите [npc.name] выключить воду и помочь вам вытереться. После этого вы вдвоем одеваетесь и возвращаетесь в комнату..."));
 									} else {
 										Main.game.getTextStartStringBuilder().append(
-												"After making sure that every last inch of your body is sparkling clean, you tell your slaves to turn off the tap and help you to dry off."
-													+ " After doing this, you all get dressed and step back into your room...");
+												"Убедившись, что каждый дюйм вашего тела сияет чистотой, вы приказываете своим рабыням выключить воду и помочь вам вытереться. После этого вы все одеваетесь и возвращаетесь в комнату...");
 									}
 								
 							} else {
 								Main.game.getTextStartStringBuilder().append(
-										"After a while, you feel as though you've spent enough time in the shower, and after turning off the tap and drying yourself with a fluffy towel, you get dressed and step back into your room...");
+										"Спустя некоторое время вы чувствуете, что провели в душе достаточно, поэтому, выключив воду и вытеревшись пушистым полотенцем, вы одеваетесь и возвращаетесь в комнату...");
 							}
 						Main.game.getTextStartStringBuilder().append("</p>");
 					}
@@ -2118,7 +1970,7 @@ public class RoomPlayer {
 		}
 	};
 	
-	public static final DialogueNode AFTER_SHOWER_SEX = new DialogueNode("Finished", "", true) {
+	public static final DialogueNode AFTER_SHOWER_SEX = new DialogueNode("Завершено", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			for(GameCharacter npc : slavesWashing) {
@@ -2128,7 +1980,7 @@ public class RoomPlayer {
 		}
 		@Override
 		public String getDescription() {
-			return "Having had their fun, your slaves remind you that you have other things you need to be getting on with...";
+			return "Насладившись, твои рабыни напоминают тебе, что у тебя есть и другие дела, которыми нужно заняться...";
 		}
 		@Override
 		public String getContent() {
@@ -2137,13 +1989,13 @@ public class RoomPlayer {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue", "Now that you've had your fun, it's time to return to your room.", ROOM);
+				return new Response("Продолжить", "Теперь, когда вы вдоволь накупались, пора возвращаться в комнату.", ROOM);
 			}
 			return null;
 		}
 	};
 	
-	public static final DialogueNode AUNT_HOME_PLAYERS_ROOM_BATH = new DialogueNode("Your Room", "", true) {
+	public static final DialogueNode AUNT_HOME_PLAYERS_ROOM_BATH = new DialogueNode("Ваша комната", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			// Make sure that the washing slaves don't disappear during this scene:
@@ -2157,8 +2009,7 @@ public class RoomPlayer {
 			
 			UtilText.nodeContentSB.append("<p>");
 				UtilText.nodeContentSB.append(
-						"Wanting to spend some time relaxing and getting cleaned, you step into your large ensuite bathroom and decide upon taking a long bath."
-						+ " Disrobing, you leave your clothing by the door, before stepping over to your luxurious marble bathtub.");
+						"Желая расслабиться и привести себя в порядок, вы заходите в свою просторную ванную комнату при спальне и решаете принять долгую ванну. Раздевшись, вы оставляете одежду у двери и подходите к своей роскошной мраморной ванне.");
 			UtilText.nodeContentSB.append("</p>");
 			
 			if(!slavesWashing.isEmpty()) {
@@ -2166,10 +2017,7 @@ public class RoomPlayer {
 				
 			} else {
 				UtilText.nodeContentSB.append(
-						"<p>"
-							+ "Turning on the taps and running yourself a bath, you slip down into the hot water and let out a contented sigh."
-							+ " Deciding that it wouldn't be so bad to take some time out in order to relax, you don't rush as you set about thoroughly cleaning yourself..."
-						+"</p>");
+						"<p>Открыв краны и набрав ванну, вы погружаетесь в горячую воду и издаете удовлетворенный вздох. Решив, что не будет лишним уделить время отдыху, вы не спешите, тщательно отмывая свое тело...</p>");
 			}
 			
 			return UtilText.nodeContentSB.toString();
@@ -2183,25 +2031,22 @@ public class RoomPlayer {
 					SexSlotLyingDown.BESIDE_THREE};
 			
 			if(index==1) {
-				return new Response("Finish", "Finish having a bath and return to your room.", ROOM) {
+				return new Response("Закончить", "Закончить купание и вернуться в свою комнату.", ROOM) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append("<p>");
 							if(!slavesWashing.isEmpty()) {
 									if(slavesWashing.size()==1) {
 										Main.game.getTextStartStringBuilder().append(UtilText.parse(slavesWashing,
-												"After making sure that every last inch of your body is sparkling clean, you pull the plug, [pc.step] out of the bath, and tell [npc.name] to help you to dry off."
-														+ " After doing this, the two of you get dressed and step back into your room..."));
+												"Убедившись, что каждый дюйм вашего тела сияет чистотой, вы вынимаете пробку, [pc.step] выходите из ванны и просите [npc.name] помочь вам вытереться. После этого вы вдвоем одеваетесь и возвращаетесь в свою комнату..."));
 									} else {
 										Main.game.getTextStartStringBuilder().append(
-												"After making sure that every last inch of your body is sparkling clean, you pull the plug, you [pc.step] out of the bath, and tell your slaves to help you to dry off."
-														+ " After doing this, you all get dressed and step back into your room...");
+												"Убедившись, что каждый дюйм вашего тела сияет чистотой, вы вынимаете пробку, [pc.step] выходите из ванны и велите своим рабыням помочь вам вытереться. После этого вы все одеваетесь и возвращаетесь в свою комнату...");
 									}
 								
 							} else {
 								Main.game.getTextStartStringBuilder().append(
-										"After having a nice relaxing soak, you feel as though you've spent enough time in the bath."
-										+ " Pulling the plug and drying yourself off, you quickly get dressed and step back into your room...");
+										"Насладившись приятным расслабляющим купанием, вы чувствуете, что провели в ванне достаточно времени. Вынув пробку и вытеревшись, вы быстро одеваетесь и возвращаетесь в свою комнату...");
 							}
 						Main.game.getTextStartStringBuilder().append("</p>");
 					}
@@ -2209,7 +2054,7 @@ public class RoomPlayer {
 				
 			} else if(index==2) {
 				if(slavesWashing.isEmpty()) {
-					return new Response("Sex", "You do not have any slaves assigned to your bedroom with the washing permission, so there's nobody for you to have sex with...", null);
+					return new Response("Секс", "В вашей спальне нет назначенных рабынь с правом ухода за телом, так что вам не с кем заняться сексом...", null);
 				}
 				
 				Map<GameCharacter, SexSlot> slaveSlots = new HashMap<>();
@@ -2217,10 +2062,10 @@ public class RoomPlayer {
 					slaveSlots.put(slavesWashing.get(i), i==0?SexSlotLyingDown.LYING_DOWN:bathSlots[i]);
 				}
 				UtilText.addSpecialParsingString(String.valueOf(slavesWashing.size()), true);
-				return new ResponseSex("Sex",
+				return new ResponseSex("Секс",
 						slavesWashing.size()==1
-							?UtilText.parse(slavesWashing, "Have dominant sex with [npc.name] in the bath.")
-							:"Have dominant sex with your slaves in the bath.",
+							?UtilText.parse(slavesWashing, "Заняться доминантным сексом с [npc.name] в ванне.")
+							:"Заняться доминантным сексом со своими рабынями в ванне.",
 						true, false,
 						new SMBath(SexPosition.LYING_DOWN,
 								Util.newHashMapOfValues(new Value<>(Main.game.getPlayer(), SexSlotLyingDown.MISSIONARY)),
@@ -2232,13 +2077,13 @@ public class RoomPlayer {
 				
 			} else if(index==3) {
 				if(slavesWashing.isEmpty()) {
-					return new Response("Submissive sex", "You do not have any slaves assigned to your bedroom with the washing permission, so there's nobody for you to have submissive sex with...", null);
+					return new Response("Субмиссивный секс", "В вашей спальне нет назначенных рабынь с правом ухода за телом, так что вам не с кем заняться подчиненным сексом...", null);
 				}
 				if(!slavesWashing.stream().anyMatch(s->s.isAttractedTo(Main.game.getPlayer()))) {
-					return new Response("Submissive sex",
+					return new Response("Субмиссивный секс",
 							slavesWashing.size()==1
-								?UtilText.parse(slavesWashing, "As [npc.name] isn't attracted to you, [npc.she] is unwilling to be the dominant partner in sex...")
-								:"Have dominant sex with your slaves in the bath.",
+								?UtilText.parse(slavesWashing, "Так как [npc.name] не испытывает к вам влечения, [npc.she] не желает выступать в роли доминанта в сексе...")
+								:"Заняться доминантным сексом со своими рабынями в ванне.",
 							null);
 				}
 				Map<GameCharacter, SexSlot> slaveSlots = new HashMap<>();
@@ -2247,10 +2092,10 @@ public class RoomPlayer {
 					slaveSlots.put(attractedSlaves.get(i), bathSlots[i]);
 				}
 				UtilText.addSpecialParsingString(String.valueOf(attractedSlaves.size()), true);
-				return new ResponseSex("Submissive sex",
+				return new ResponseSex("Субмиссивный секс",
 						attractedSlaves.size()==1
-								?UtilText.parse(attractedSlaves, "Let [npc.name] dominantly fuck you in the bath.")
-										:"Let your slaves dominantly fuck you in the bath.",
+								?UtilText.parse(attractedSlaves, "Позволить [npc.name] доминантно трахать вас в ванне.")
+										:"Позволить своим рабыням доминантно трахать вас в ванне.",
 						true, true,
 						new SMBath(SexPosition.LYING_DOWN,
 								slaveSlots,
@@ -2265,7 +2110,7 @@ public class RoomPlayer {
 		}
 	};
 
-	public static final DialogueNode AFTER_BATH_SEX = new DialogueNode("Finished", "", true) {
+	public static final DialogueNode AFTER_BATH_SEX = new DialogueNode("Завершено", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			for(GameCharacter npc : slavesWashing) {
@@ -2275,7 +2120,7 @@ public class RoomPlayer {
 		}
 		@Override
 		public String getDescription() {
-			return "Having had their fun, your slaves remind you that you have other things you need to be getting on with...";
+			return "Насладившись, твои рабыни напоминают тебе, что у тебя есть и другие дела, которыми нужно заняться...";
 		}
 		@Override
 		public String getContent() {
@@ -2284,13 +2129,13 @@ public class RoomPlayer {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue", "Now that you've had your fun, it's time to return to your room.", ROOM);
+				return new Response("Продолжить", "Теперь, когда вы вдоволь накупались, пора возвращаться в комнату.", ROOM);
 			}
 			return null;
 		}
 	};
 	
-	public static final DialogueNode AUNT_HOME_PLAYERS_ROOM_MAKEUP = new DialogueNode("Hairstyle & Makeup", "", true) {
+	public static final DialogueNode AUNT_HOME_PLAYERS_ROOM_MAKEUP = new DialogueNode("Прическа и макияж", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			BodyChanging.setTarget(getMakeupTarget());
@@ -2299,8 +2144,8 @@ public class RoomPlayer {
 		public String getHeaderContent() {
 			return MiscDialogue.getMakeupDialogue(true,
 					BodyChanging.getTarget().isPlayer()
-						?"You sit down in front of the mirror and prepare to get started on improving your appearance..."
-						:UtilText.parse(BodyChanging.getTarget(), "You get [npc.name] to sit down in front of the mirror and prepare to get started on improving [npc.her] appearance...")).getHeaderContent();
+						?"Вы садитесь перед зеркалом, готовясь заняться своим внешним видом..."
+						:UtilText.parse(BodyChanging.getTarget(), "Вы заставляете [npc.name] сесть перед зеркалом и готовитесь заняться улучшением [npc.her] внешности...")).getHeaderContent();
 		}
 		@Override
 		public String getContent() {
@@ -2309,58 +2154,48 @@ public class RoomPlayer {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Finish", "Finish doing your makeup in the mirror and return to your bedroom.", ROOM);
+				return new Response("Закончить", "Закончить макияж перед зеркалом и вернуться в спальню.", ROOM);
 			}
 			return null;
 		}
 	};
 	
-	public static final DialogueNode AUNT_HOME_PLAYERS_ROOM_CALENDAR = new DialogueNode("Calendar", "", true) {
+	public static final DialogueNode AUNT_HOME_PLAYERS_ROOM_CALENDAR = new DialogueNode("Календарь", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			StringBuilder sb = new StringBuilder();
 			
-			sb.append("<p>"
-					+ "You step over to one side of your room, where a calendar has been pinned to the wall."
-					+ " It's quite obviously enchanted, for as you flick through the pages, you discover that each month's picture changes based on your current train of thought.");
+			sb.append("<p>Вы подходите к одной стороне комнаты, где на стене приколот календарь. Он явно зачарован, ведь когда вы перелистываете страницы, обнаруживаете, что картинка на каждый месяц меняется в зависимости от ваших текущих мыслей.");
 						
 			if(Main.game.getPlayer().getSexualOrientation()==SexualOrientation.ANDROPHILIC) {
-				sb.append(" As you think about each month, a thematically-dressed man, incubus, or some kind of animal-boy appears on the page.");
+				sb.append(" Когда вы думаете о каждом месяце, на странице появляется тематически одетый мужчина, инкуб или какой-нибудь зверочеловек.");
 			} else {
-				sb.append(" As you think about each month, a thematically-dressed woman, succubus, or some kind of animal-girl appears on the page.");
+				sb.append(" Когда вы думаете о каждом месяце, на странице появляется тематически одетая женщина, суккуб или какая-нибудь зверодевушка.");
 			}
 			
 			if(Main.game.getPlayer().getCorruptionLevel()==CorruptionLevel.ZERO_PURE) {
-				sb.append(" The more you flick back and forth through the calendar, the more scantily-dressed the subject of each picture becomes, until you suddenly realise what you're doing and step back, shocked.");
+				sb.append(" Чем больше вы листаете календарь туда-сюда, тем более раздетой становится фигура на каждой картинке, пока вы внезапно не осознаете, что делаете, и не отступаете в шоке.");
 			} else {
-				sb.append(" The more you flick back and forth through the calendar, the more scantily-dressed the subject of each picture becomes, and you find yourself getting a little turned on...");
+				sb.append(" Чем больше вы листаете календарь туда-сюда, тем более раздетой становится фигура на каждой картинке, и вы чувствуете, как вас начинает слегка возбуждать...");
 			}
 			sb.append("</p>");
 			
 			if(Main.game.getDialogueFlags().values.contains(DialogueFlagValue.knowsDate)) {
-				sb.append("<p>"
-						+ "Suddenly remembering what it was that you wanted to look at, you scan through the calendar to find the current date,");
+				sb.append("<p>Внезапно вспомнив, что именно вы хотели посмотреть, вы пролистываете календарь, чтобы найти текущую дату,");
 			} else {
-				sb.append("<p>"
-						+ "You were so distracted by the changing pictures that you momentarily forgot what it was that you wanted to check."
-						+ " Shaking your head, you flip back through the calendar to find out what the current date is,");
+				sb.append("<p>Вы так отвлеклись на сменяющиеся картинки, что на мгновение забыли, что именно хотели проверить. Потрясши головой, вы пролистываете календарь назад, чтобы узнать текущую дату,");
 			}
 			
-			sb.append(" and see that it's the <b style='color:"+PresetColour.BASE_BLUE_LIGHT.toWebHexString()+";'>"
+			sb.append(" и видите, что сегодня <b style='color:"+PresetColour.BASE_BLUE_LIGHT.toWebHexString()+";'>"
 						+ Units.date(Main.game.getDateNow(), Units.DateType.LONG)
-					+"</b>. From a quick calculation "+(Main.game.getPlayer().getAttributeValue(Attribute.MAJOR_ARCANE)<IntelligenceLevel.ONE_AVERAGE.getMaximumValue()?"(with some help from your phone's calculator)":"")
-					+ ", you figure out that it's been <b style='color:"+PresetColour.GENERIC_EXCELLENT.toWebHexString()+";'>"+Main.game.getDayNumber()+" day"+(Main.game.getDayNumber()>1?"s":"")+"</b> since you appeared in this world."
-					+ "</p>");
+					+"</b>. Сделав быстрый расчет "+(Main.game.getPlayer().getAttributeValue(Attribute.MAJOR_ARCANE)<IntelligenceLevel.ONE_AVERAGE.getMaximumValue()?"(с небольшой помощью калькулятора в телефоне)":"")
+					+ ", вы понимаете, что прошло уже <b style='color:"+PresetColour.GENERIC_EXCELLENT.toWebHexString()+";'>"+Main.game.getDayNumber()+" день"+(Main.game.getDayNumber()>1?"s":"")+"</b> с тех пор, как вы появились в этом мире.</p>");
 			
 			if(!Main.game.getDialogueFlags().values.contains(DialogueFlagValue.knowsDate)) {
-				sb.append("<p>"
-						+ "[pc.thought(Wait... "+Main.game.getDateNow().format(DateTimeFormatter.ofPattern("yyyy", Locale.ENGLISH))+"?! I need to check in with Lilaya about that...)]"
-						+ "</p>");
+				sb.append("<p>[pc.thought(Погоди... "+Main.game.getDateNow().format(DateTimeFormatter.ofPattern("yyyy", Locale.ENGLISH))+"?! Мне нужно обсудить это с Lilaya...)]</p>");
 			}
 			
-			sb.append("<p>"
-					+ "You notice that on each page of the calendar, there's a few paragraphs detailing the events that occur during that month."
-					+ "</p>");
+			sb.append("<p>Вы замечаете, что на каждой странице календаря есть несколько абзацев с описанием событий, происходящих в этом месяце.</p>");
 			
 			Main.game.getTextStartStringBuilder().append(sb.toString());
 			
@@ -2382,38 +2217,38 @@ public class RoomPlayer {
 //				return LilayaHomeGeneric.getLilayasHouseFastTravelResponses(index);
 //			}
 			if (index == 0) {
-				return new Response("Back", "Step away from the calendar.", ROOM);
+				return new Response("Назад", "Отойди от календаря.", ROOM);
 			} else if(index==1) {
-				return new Response("January", "Read the information on January's page. [style.italicsMinorBad(There are currently no special events during January.)]", AUNT_HOME_PLAYERS_ROOM_CALENDAR_JANUARY);
+				return new Response("Январь", "Прочитать информацию на странице января. [style.italicsMinorBad(В январе пока нет особых событий.)]", AUNT_HOME_PLAYERS_ROOM_CALENDAR_JANUARY);
 			} else if(index==2) {
-				return new Response("February", "Read the information on February page. [style.italicsMinorBad(There are currently no special events during February.)]", AUNT_HOME_PLAYERS_ROOM_CALENDAR_FEBRUARY);
+				return new Response("Февраль", "Прочитать информацию на странице февраля. [style.italicsMinorBad(В феврале пока нет особых событий.)]", AUNT_HOME_PLAYERS_ROOM_CALENDAR_FEBRUARY);
 			} else if(index==3) {
-				return new Response("March", "Read the information on March's page. [style.italicsMinorBad(There are currently no special events during March.)]", AUNT_HOME_PLAYERS_ROOM_CALENDAR_MARCH);
+				return new Response("Март", "Прочитать информацию на странице марта. [style.italicsMinorBad(В марте пока нет особых событий.)]", AUNT_HOME_PLAYERS_ROOM_CALENDAR_MARCH);
 			} else if(index==4) {
-				return new Response("April", "Read the information on April's page. [style.italicsMinorBad(There are currently no special events during April.)]", AUNT_HOME_PLAYERS_ROOM_CALENDAR_APRIL);
+				return new Response("Апрель", "Прочитать информацию на странице апреля. [style.italicsMinorBad(В апреле пока нет особых событий.)]", AUNT_HOME_PLAYERS_ROOM_CALENDAR_APRIL);
 			} else if(index==5) {
-				return new Response("May", "Read the information on May's page.", AUNT_HOME_PLAYERS_ROOM_CALENDAR_MAY);
+				return new Response("Май", "Прочитать информацию на странице мая.", AUNT_HOME_PLAYERS_ROOM_CALENDAR_MAY);
 			} else if(index==6) {
-				return new Response("June", "Read the information on June's page.", AUNT_HOME_PLAYERS_ROOM_CALENDAR_JUNE);
+				return new Response("Июнь", "Прочитать информацию на странице июня.", AUNT_HOME_PLAYERS_ROOM_CALENDAR_JUNE);
 			} else if(index==7) {
-				return new Response("July", "Read the information on July's page. [style.italicsMinorBad(There are currently no special events during July.)]", AUNT_HOME_PLAYERS_ROOM_CALENDAR_JULY);
+				return new Response("Июль", "Прочитать информацию на странице июля. [style.italicsMinorBad(В июле сейчас нет особых событий.)]", AUNT_HOME_PLAYERS_ROOM_CALENDAR_JULY);
 			} else if(index==8) {
-				return new Response("August", "Read the information on August's page. [style.italicsMinorBad(There are currently no special events during August.)]", AUNT_HOME_PLAYERS_ROOM_CALENDAR_AUGUST);
+				return new Response("Огаст", "Прочитать информацию на странице августа. [style.italicsMinorBad(В августе сейчас нет особых событий.)]", AUNT_HOME_PLAYERS_ROOM_CALENDAR_AUGUST);
 			} else if(index==9) {
-				return new Response("September", "Read the information on September's page. [style.italicsMinorBad(There are currently no special events during September.)]", AUNT_HOME_PLAYERS_ROOM_CALENDAR_SEPTEMBER);
+				return new Response("Сентябрь", "Прочитать информацию на странице сентября. [style.italicsMinorBad(В сентябре сейчас нет особых событий.)]", AUNT_HOME_PLAYERS_ROOM_CALENDAR_SEPTEMBER);
 			} else if(index==10) {
-				return new Response("October", "Read the information on October's page.", AUNT_HOME_PLAYERS_ROOM_CALENDAR_OCTOBER);
+				return new Response("Октябрь", "Прочитать информацию на странице октября.", AUNT_HOME_PLAYERS_ROOM_CALENDAR_OCTOBER);
 			} else if(index==11) {
-				return new Response("November", "Read the information on November's page. [style.italicsMinorBad(There are currently no special events during November.)]", AUNT_HOME_PLAYERS_ROOM_CALENDAR_NOVEMBER);
+				return new Response("Ноябрь", "Прочитать информацию на странице ноября. [style.italicsMinorBad(В ноябре сейчас нет особых событий.)]", AUNT_HOME_PLAYERS_ROOM_CALENDAR_NOVEMBER);
 			} else if(index==12) {
-				return new Response("December", "Read the information on December's page.", AUNT_HOME_PLAYERS_ROOM_CALENDAR_DECEMBER);
+				return new Response("Декабрь", "Прочитать информацию на странице декабря.", AUNT_HOME_PLAYERS_ROOM_CALENDAR_DECEMBER);
 			} else {
 				return null;
 			}
 		}
 	};
 
-	public static final DialogueNode AUNT_HOME_PLAYERS_ROOM_CALENDAR_JANUARY = new DialogueNode("Calendar", "", true) {
+	public static final DialogueNode AUNT_HOME_PLAYERS_ROOM_CALENDAR_JANUARY = new DialogueNode("Календарь", "", true) {
 
 		@Override
 		public String getContent() {
@@ -2422,21 +2257,20 @@ public class RoomPlayer {
 			UtilText.nodeContentSB.append(getCalendarImageDescription(Month.JANUARY));
 
 			UtilText.nodeContentSB.append(
-					"<h6 style='text-align:center;'>"
-							+ "[style.italicsMinorBad(There are currently no special events during January.)]");
+					"<h6 style='text-align:center;'>[style.italicsMinorBad(В январе сейчас нет особых событий.)]");
 
 			return UtilText.nodeContentSB.toString();
 		}
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("January", "You are already reading the calendar's page concerning the month of January.", null);
+				return new Response("Январь", "Вы уже читаете страницу календаря, относящуюся к январю.", null);
 			}
 			return AUNT_HOME_PLAYERS_ROOM_CALENDAR.getResponse(responseTab, index);
 		}
 	};
 
-	public static final DialogueNode AUNT_HOME_PLAYERS_ROOM_CALENDAR_FEBRUARY = new DialogueNode("Calendar", "", true) {
+	public static final DialogueNode AUNT_HOME_PLAYERS_ROOM_CALENDAR_FEBRUARY = new DialogueNode("Календарь", "", true) {
 
 		@Override
 		public String getContent() {
@@ -2445,21 +2279,20 @@ public class RoomPlayer {
 			UtilText.nodeContentSB.append(getCalendarImageDescription(Month.FEBRUARY));
 
 			UtilText.nodeContentSB.append(
-					"<h6 style='text-align:center;'>"
-							+ "[style.italicsMinorBad(There are currently no special events during February.)]");
+					"<h6 style='text-align:center;'>[style.italicsMinorBad(В феврале сейчас нет особых событий.)]");
 
 			return UtilText.nodeContentSB.toString();
 		}
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==2) {
-				return new Response("February", "You are already reading the calendar's page concerning the month of February.", null);
+				return new Response("Февраль", "Вы уже читаете страницу календаря, относящуюся к февралю.", null);
 			}
 			return AUNT_HOME_PLAYERS_ROOM_CALENDAR.getResponse(responseTab, index);
 		}
 	};
 
-	public static final DialogueNode AUNT_HOME_PLAYERS_ROOM_CALENDAR_MARCH = new DialogueNode("Calendar", "", true) {
+	public static final DialogueNode AUNT_HOME_PLAYERS_ROOM_CALENDAR_MARCH = new DialogueNode("Календарь", "", true) {
 
 		@Override
 		public String getContent() {
@@ -2468,21 +2301,20 @@ public class RoomPlayer {
 			UtilText.nodeContentSB.append(getCalendarImageDescription(Month.MARCH));
 
 			UtilText.nodeContentSB.append(
-					"<h6 style='text-align:center;'>"
-							+ "[style.italicsMinorBad(There are currently no special events during March.)]");
+					"<h6 style='text-align:center;'>[style.italicsMinorBad(В марте сейчас нет особых событий.)]");
 
 			return UtilText.nodeContentSB.toString();
 		}
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==3) {
-				return new Response("March", "You are already reading the calendar's page concerning the month of March.", null);
+				return new Response("Март", "Вы уже читаете страницу календаря, относящуюся к марту.", null);
 			}
 			return AUNT_HOME_PLAYERS_ROOM_CALENDAR.getResponse(responseTab, index);
 		}
 	};
 
-	public static final DialogueNode AUNT_HOME_PLAYERS_ROOM_CALENDAR_APRIL = new DialogueNode("Calendar", "", true) {
+	public static final DialogueNode AUNT_HOME_PLAYERS_ROOM_CALENDAR_APRIL = new DialogueNode("Календарь", "", true) {
 
 		@Override
 		public String getContent() {
@@ -2491,21 +2323,20 @@ public class RoomPlayer {
 			UtilText.nodeContentSB.append(getCalendarImageDescription(Month.APRIL));
 
 			UtilText.nodeContentSB.append(
-					"<h6 style='text-align:center;'>"
-							+ "[style.italicsMinorBad(There are currently no special events during April.)]");
+					"<h6 style='text-align:center;'>[style.italicsMinorBad(В апреле сейчас нет особых событий.)]");
 
 			return UtilText.nodeContentSB.toString();
 		}
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==4) {
-				return new Response("April", "You are already reading the calendar's page concerning the month of April.", null);
+				return new Response("Апрель", "Вы уже читаете страницу календаря, посвященную апрелю.", null);
 			}
 			return AUNT_HOME_PLAYERS_ROOM_CALENDAR.getResponse(responseTab, index);
 		}
 	};
 
-	public static final DialogueNode AUNT_HOME_PLAYERS_ROOM_CALENDAR_MAY = new DialogueNode("Calendar", "", true) {
+	public static final DialogueNode AUNT_HOME_PLAYERS_ROOM_CALENDAR_MAY = new DialogueNode("Календарь", "", true) {
 
 		@Override
 		public String getContent() {
@@ -2515,18 +2346,7 @@ public class RoomPlayer {
 
 			UtilText.nodeContentSB.append(
 					"<h4 style='text-align:center;'>"
-						+ "<span style='color:"+PresetColour.BASE_BLUE_LIGHT.toWebHexString()+";'>May</span>"
-					+ "</h4>"
-					+ "<h6 style='text-align:center;'>"
-						+ "<span style='color:"+PresetColour.BASE_PINK_LIGHT.toWebHexString()+";'>Mother's Week</span>"
-						+ "<br/>"
-						+ "8th-14th May"
-					+ "</h6>"
-					+ "<p><i>"
-						+ "The second week of May is a time in which to celebrate mothers, motherhood, and the nature of the maternal bond between mother and child."
-						+ " During this time, fertility-enhancing consumables are generously provided free of charge for all residents of Dominion, and are handed out by volunteers down the main boulevards."
-						+ " In this way, Lilith shows her love for mothers, and ensures that many more will be made!"
-					+ "</i></p>");
+						+ "<span style='color:"+PresetColour.BASE_BLUE_LIGHT.toWebHexString()+";'>Май</span></h4><h6 style='text-align:center;'><span style='color:"+PresetColour.BASE_PINK_LIGHT.toWebHexString()+";'>Неделя Матери</span><br/>8–14 мая</h6><p><i>Третья неделя мая — время чествования матерей, материнства и самой природы связи между матерью и ребенком. В это время всем жителям Dominion щедро и бесплатно раздаются средства, повышающие фертильность; волонтеры разносят их по главным бульварам. Так Lilith проявляет свою любовь к матерям и заботится о том, чтобы их стало еще больше!</i></p>");
 			
 			return UtilText.nodeContentSB.toString();
 		}
@@ -2535,13 +2355,13 @@ public class RoomPlayer {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==5) {
-				return new Response("May", "You are already reading the calendar's page concerning the month of May.", null);
+				return new Response("Май", "Вы уже читаете страницу календаря, посвященную маю.", null);
 			}
 			return AUNT_HOME_PLAYERS_ROOM_CALENDAR.getResponse(responseTab, index);
 		}
 	};
 
-	public static final DialogueNode AUNT_HOME_PLAYERS_ROOM_CALENDAR_JUNE = new DialogueNode("Calendar", "", true) {
+	public static final DialogueNode AUNT_HOME_PLAYERS_ROOM_CALENDAR_JUNE = new DialogueNode("Календарь", "", true) {
 
 		@Override
 		public String getContent() {
@@ -2551,18 +2371,7 @@ public class RoomPlayer {
 
 			UtilText.nodeContentSB.append(
 					"<h4 style='text-align:center;'>"
-						+ "<span style='color:"+PresetColour.BASE_BLUE_LIGHT.toWebHexString()+";'>June</span>"
-					+ "</h4>"
-					+"<h6 style='text-align:center;'>"
-						+ "<span style='color:"+PresetColour.BASE_BLUE.toWebHexString()+";'>Father's Week</span>"
-						+ "<br/>"
-						+ "15th-21st June"
-					+ "</h6>"
-					+ "<p><i>"
-						+ "The third week of June is a time in which to celebrate fathers, fatherhood, and the nature of the paternal bond between father and child."
-						+ " During this time, fertility-enhancing consumables are generously provided free of charge for all residents of Dominion, and are handed out by volunteers down the main boulevards."
-						+ " In this way, Lilith shows her love for fathers, and ensures that many more will be made!"
-					+ "</i></p>");
+						+ "<span style='color:"+PresetColour.BASE_BLUE_LIGHT.toWebHexString()+";'>Июнь</span></h4><h6 style='text-align:center;'><span style='color:"+PresetColour.BASE_BLUE.toWebHexString()+";'>Неделя Отца</span><br/>15–21 июня</h6><p><i>Третья неделя июня — время чествования отцов, отцовства и самой природы связи между отцом и ребенком. В это время всем жителям Dominion щедро и бесплатно раздаются средства, повышающие фертильность; волонтеры разносят их по главным бульварам. Так Lilith проявляет свою любовь к отцам и заботится о том, чтобы их стало еще больше!</i></p>");
 			
 			return UtilText.nodeContentSB.toString();
 		}
@@ -2571,13 +2380,13 @@ public class RoomPlayer {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==6) {
-				return new Response("June", "You are already reading the calendar's page concerning the month of June.", null);
+				return new Response("Июнь", "Вы уже читаете страницу календаря, посвященную июню.", null);
 			}
 			return AUNT_HOME_PLAYERS_ROOM_CALENDAR.getResponse(responseTab, index);
 		}
 	};
 
-	public static final DialogueNode AUNT_HOME_PLAYERS_ROOM_CALENDAR_JULY = new DialogueNode("Calendar", "", true) {
+	public static final DialogueNode AUNT_HOME_PLAYERS_ROOM_CALENDAR_JULY = new DialogueNode("Календарь", "", true) {
 
 		@Override
 		public String getContent() {
@@ -2586,21 +2395,20 @@ public class RoomPlayer {
 			UtilText.nodeContentSB.append(getCalendarImageDescription(Month.JULY));
 
 			UtilText.nodeContentSB.append(
-					"<h6 style='text-align:center;'>"
-							+ "[style.italicsMinorBad(There are currently no special events during July.)]");
+					"<h6 style='text-align:center;'>[style.italicsMinorBad(В июле специальных событий пока нет.)]");
 
 			return UtilText.nodeContentSB.toString();
 		}
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==7) {
-				return new Response("July", "You are already reading the calendar's page concerning the month of July.", null);
+				return new Response("Июль", "Вы уже читаете страницу календаря, посвященную июлю.", null);
 			}
 			return AUNT_HOME_PLAYERS_ROOM_CALENDAR.getResponse(responseTab, index);
 		}
 	};
 
-	public static final DialogueNode AUNT_HOME_PLAYERS_ROOM_CALENDAR_AUGUST = new DialogueNode("Calendar", "", true) {
+	public static final DialogueNode AUNT_HOME_PLAYERS_ROOM_CALENDAR_AUGUST = new DialogueNode("Календарь", "", true) {
 
 		@Override
 		public String getContent() {
@@ -2609,21 +2417,20 @@ public class RoomPlayer {
 			UtilText.nodeContentSB.append(getCalendarImageDescription(Month.AUGUST));
 
 			UtilText.nodeContentSB.append(
-					"<h6 style='text-align:center;'>"
-							+ "[style.italicsMinorBad(There are currently no special events during August.)]");
+					"<h6 style='text-align:center;'>[style.italicsMinorBad(В августе пока нет особых событий.)]");
 
 			return UtilText.nodeContentSB.toString();
 		}
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==8) {
-				return new Response("August", "You are already reading the calendar's page concerning the month of August.", null);
+				return new Response("Огаст", "Вы уже читаете страницу календаря, посвященную августу.", null);
 			}
 			return AUNT_HOME_PLAYERS_ROOM_CALENDAR.getResponse(responseTab, index);
 		}
 	};
 
-	public static final DialogueNode AUNT_HOME_PLAYERS_ROOM_CALENDAR_SEPTEMBER = new DialogueNode("Calendar", "", true) {
+	public static final DialogueNode AUNT_HOME_PLAYERS_ROOM_CALENDAR_SEPTEMBER = new DialogueNode("Календарь", "", true) {
 
 		@Override
 		public String getContent() {
@@ -2632,21 +2439,20 @@ public class RoomPlayer {
 			UtilText.nodeContentSB.append(getCalendarImageDescription(Month.SEPTEMBER));
 
 			UtilText.nodeContentSB.append(
-					"<h6 style='text-align:center;'>"
-							+ "[style.italicsMinorBad(There are currently no special events during September.)]");
+					"<h6 style='text-align:center;'>[style.italicsMinorBad(В сентябре пока нет особых событий.)]");
 
 			return UtilText.nodeContentSB.toString();
 		}
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==9) {
-				return new Response("September", "You are already reading the calendar's page concerning the month of September.", null);
+				return new Response("Сентябрь", "Вы уже читаете страницу календаря, посвященную сентябрю.", null);
 			}
 			return AUNT_HOME_PLAYERS_ROOM_CALENDAR.getResponse(responseTab, index);
 		}
 	};
 
-	public static final DialogueNode AUNT_HOME_PLAYERS_ROOM_CALENDAR_OCTOBER = new DialogueNode("Calendar", "", true) {
+	public static final DialogueNode AUNT_HOME_PLAYERS_ROOM_CALENDAR_OCTOBER = new DialogueNode("Календарь", "", true) {
 
 		@Override
 		public String getContent() {
@@ -2656,24 +2462,7 @@ public class RoomPlayer {
 
 			UtilText.nodeContentSB.append(
 					"<h4 style='text-align:center;'>"
-							+ "<span style='color:"+PresetColour.BASE_BLUE_LIGHT.toWebHexString()+";'>October</span>"
-					+ "</h4>"
-					+"<h6 style='text-align:center;'>"
-						+ "<span style='color:"+PresetColour.GENERIC_ARCANE.toWebHexString()+";'>Lilith's Month</span>"
-						+ "<br/>"
-						+ "All Month"
-					+ "</h6>"
-					+ "<p><i>"
-						+ "October was chosen by Lilith herself to be the month in which all of Dominion shows their devotion towards their glorious queen!"
-						+ " Banners and ribbons, typically in Lilith's traditional colours of orange, purple, and black, are proudly flown from every building, in order to show our queen just how devoted her subjects are!"
-						+ " While all citizens are expected to celebrate Lilith's rule, the most devout of her followers dress up in traditional demonic costumes in order to prove their loyalty."
-					+ "</p>"
-					+ "<p>"
-						+ "The officially sanctioned 'Cult of Lilith' is the most fanatical group of our queen's supporters, and are very easy to spot during October,"
-							+ " as they refuse to wear anything but traditional witch's outfits, of the sort worn by Lilith herself in centuries past."
-						+ " While content to carry out their acts of devotion in private for the rest of the year, these cultists can get quite zealous during October,"
-							+ " and will sometimes even go so far as to approach members of the public and demand a display of loyalty from them!"
-					+ "</i></p>");
+							+ "<span style='color:"+PresetColour.BASE_BLUE_LIGHT.toWebHexString()+";'>Октябрь</span></h4><h6 style='text-align:center;'><span style='color:"+PresetColour.GENERIC_ARCANE.toWebHexString()+";'>Месяц Lilith</span><br/>Весь месяц</h6><p><i>Lilith сама выбрала октябрь месяцем, в который все жители Dominion должны продемонстрировать свою преданность своей славной королеве! Знамена и ленты, обычно выполненные в традиционных цветах Lilith — оранжевом, фиолетовом и черном, — с гордостью развеваются на каждом здании, чтобы показать нашей королеве, насколько верны ей её подданные! И хотя праздновать правление Lilith должны все граждане, самые истовые последовательницы облачаются в традиционные демонические костюмы, чтобы доказать свою лояльность.</p><p>Официально признанный «Культ Lilith» — самая фанатичная группа сторонниц нашей королевы, и их очень легко заметить в октябре, так как они отказываются носить что-либо, кроме традиционных ведьминских нарядов, подобных тем, что носила сама Lilith столетия назад. Если в остальное время года они довольствуются совершением актов преданности в частном порядке, то в октябре эти культистки могут стать весьма ревностными и порой даже заходят так далеко, что подходят к случайным прохожим, требуя от них проявления верности!</i></p>");
 			
 			return UtilText.nodeContentSB.toString();
 		}
@@ -2682,13 +2471,13 @@ public class RoomPlayer {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==10) {
-				return new Response("October", "You are already reading the calendar's page concerning the month of October.", null);
+				return new Response("Октябрь", "Вы уже читаете страницу календаря, посвященную октябрю.", null);
 			}
 			return AUNT_HOME_PLAYERS_ROOM_CALENDAR.getResponse(responseTab, index);
 		}
 	};
 
-	public static final DialogueNode AUNT_HOME_PLAYERS_ROOM_CALENDAR_NOVEMBER = new DialogueNode("Calendar", "", true) {
+	public static final DialogueNode AUNT_HOME_PLAYERS_ROOM_CALENDAR_NOVEMBER = new DialogueNode("Календарь", "", true) {
 
 		@Override
 		public String getContent() {
@@ -2697,21 +2486,20 @@ public class RoomPlayer {
 			UtilText.nodeContentSB.append(getCalendarImageDescription(Month.NOVEMBER));
 
 			UtilText.nodeContentSB.append(
-					"<h6 style='text-align:center;'>"
-							+ "[style.italicsMinorBad(There are currently no special events during November.)]");
+					"<h6 style='text-align:center;'>[style.italicsMinorBad(В ноябре пока нет особых событий.)]");
 
 			return UtilText.nodeContentSB.toString();
 		}
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==11) {
-				return new Response("November", "You are already reading the calendar's page concerning the month of November.", null);
+				return new Response("Ноябрь", "Вы уже читаете страницу календаря, посвященную ноябрю.", null);
 			}
 			return AUNT_HOME_PLAYERS_ROOM_CALENDAR.getResponse(responseTab, index);
 		}
 	};
 
-	public static final DialogueNode AUNT_HOME_PLAYERS_ROOM_CALENDAR_DECEMBER = new DialogueNode("Calendar", "", true) {
+	public static final DialogueNode AUNT_HOME_PLAYERS_ROOM_CALENDAR_DECEMBER = new DialogueNode("Календарь", "", true) {
 
 		@Override
 		public String getContent() {
@@ -2721,27 +2509,7 @@ public class RoomPlayer {
 
 			UtilText.nodeContentSB.append(
 					"<h4 style='text-align:center;'>"
-							+ "<span style='color:"+PresetColour.BASE_BLUE_LIGHT.toWebHexString()+";'>December</span>"
-					+ "</h4>"
-					+ "<h6 style='text-align:center;'>"
-						+ "<span style='color:"+PresetColour.BASE_GOLD.toWebHexString()+";'>Yuletide</span>"
-						+ "<br/>"
-						+ "All Month"
-					+ "</h6>"
-					+ "<i>"
-					+ "<p>"
-						+ "The celebration of Yuletide is held throughout the month of December, and sometimes even drags on through January and February!"
-						+ " Giving gifts, holding feasts, and throwing parties are the ways in which Yuletide is celebrated."
-						+ " As this celebration coincides with the arrival of the reindeer-morphs in Dominion, it has become tradition for the gifts given during Yuletide to be items purchased from these reindeer-morphs."
-					+ "</p>"
-					+ "<p>"
-						+ "The figure associated with this season is the Lilin 'J&oacute;lnir' (meaning 'the Yule one', or 'Yule figure')."
-						+ " Not much is known about this Lilin, other than the obvious fact that their name breaks with the tradition of all Lilin's names beginning with an 'L', and that they are the leader of the 'Wild Hunt'."
-					+ "</p>"
-					+ "<p>"
-						+ "Consisting of a wandering horde of summoned arcane elementals, the 'Wild Hunt' was driven away from Dominion many years ago, and is now only found during Yuletide out in the Foloi Fields and the forests nearby."
-					+ "</p>"
-					+ "</i>");
+							+ "<span style='color:"+PresetColour.BASE_BLUE_LIGHT.toWebHexString()+";'>Декабрь</span></h4><h6 style='text-align:center;'><span style='color:"+PresetColour.BASE_GOLD.toWebHexString()+";'>Йоль</span><br/>Весь месяц</h6><i><p>Празднование Йоля проходит на протяжении всего декабря, а иногда затягивается даже на январь и февраль! Обмен подарками, пиршества и вечеринки — вот как празднуют Йоль. Поскольку это торжество совпадает с прибытием олене-морфов в Dominion, сложилась традиция дарить на Йоль вещи, купленные именно у этих олене-морфов.</p><p>Персонажем, ассоциирующимся с этим сезоном, является лилин «Йольнир» (что означает «йольский» или «фигура Йоля»). Об этом лилине известно немного, за исключением очевидного факта, что его имя нарушает традицию, согласно которой имена всех лилинов начинаются на «Л», и того, что он является предводителем «Дикой Охоты».</p><p>«Дикая Охота», представляющая собой бродячую орду призванных аркана-элементалей, была изгнана из Dominion много лет назад и теперь встречается только во время Йоля в полях Фолой и близлежащих лесах.</p></i>");
 			
 			return UtilText.nodeContentSB.toString();
 		}
@@ -2750,7 +2518,7 @@ public class RoomPlayer {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==12) {
-				return new Response("December", "You are already reading the calendar's page concerning the month of December.", null);
+				return new Response("Декабрь", "Вы уже читаете страницу календаря, посвященную декабрю.", null);
 			}
 			return AUNT_HOME_PLAYERS_ROOM_CALENDAR.getResponse(responseTab, index);
 		}
@@ -2758,7 +2526,7 @@ public class RoomPlayer {
 	
 
 	
-	public static final DialogueNode AUNT_HOME_PLAYERS_ROOM_CLUBBER_TAKEN_HOME = new DialogueNode("Your Room", "", true) {
+	public static final DialogueNode AUNT_HOME_PLAYERS_ROOM_CLUBBER_TAKEN_HOME = new DialogueNode("Ваша комната", "", true) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -2773,7 +2541,7 @@ public class RoomPlayer {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new ResponseSex("Sex (dom)", UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Have dominant sex with [npc.name]."),
+				return new ResponseSex("Секс (доминант)", UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Заняться доминантным сексом с [npc.name]."),
 						true, true,
 						new SMGeneric(
 								Util.newArrayListOfValues(Main.game.getPlayer()),
@@ -2782,7 +2550,7 @@ public class RoomPlayer {
 						null), BACK_HOME_AFTER_CLUBBER_SEX, UtilText.parseFromXMLFile("places/dominion/nightlife/theWateringHole", "AUNT_HOME_PLAYERS_ROOM_CLUBBER_TAKEN_HOME_SEX_AS_DOM", NightlifeDistrict.getClubbersPresent()));
 				
 			} else if(index==2) {
-				return new ResponseSex("Sex (sub)", UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Have submissive sex with [npc.name]."),
+				return new ResponseSex("Секс (сабмиссив)", UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Заниматься подчиненным сексом с [npc.name]."),
 						true, true,
 						new SMGeneric(
 								Util.newArrayListOfValues(NightlifeDistrict.getClubbersPresent().get(0)),
@@ -2791,9 +2559,8 @@ public class RoomPlayer {
 						null), BACK_HOME_AFTER_CLUBBER_SEX, UtilText.parseFromXMLFile("places/dominion/nightlife/theWateringHole", "AUNT_HOME_PLAYERS_ROOM_CLUBBER_TAKEN_HOME_SEX_AS_SUB", NightlifeDistrict.getClubbersPresent()));
 				
 			} else if(index==4) {
-				return new Response("Say goodbye",
-						UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Tell [npc.name] that you've changed your mind, sending [npc.herHim] home with the promise of seeing [npc.herHim] at the club another time."
-								+ "</br>[style.italicsGood(Saves this character, who can then be encountered in the club again.)]"),
+				return new Response("Попрощаться",
+						UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Сказать [npc.name], что вы передумали, отправив [npc.herHim] домой с обещанием увидеть [npc.herHim] в клубе в другой раз.</br>[style.italicsGood(Сохранить этого персонажа, которого затем можно будет снова встретить в клубе.)]"),
 						AUNT_HOME_PLAYERS_ROOM_CLUBBER_TAKEN_HOME_SEND_HOME) {
 					@Override
 					public void effects() {
@@ -2804,9 +2571,8 @@ public class RoomPlayer {
 				};
 				
 			} else if(index==5) {
-				return new Response("Send home",
-						UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Tell [npc.name] that you've changed your mind and abruptly send [npc.herHim] home."
-								+ "</br>[style.italicsBad(Removes this character from the game.)]"),
+				return new Response("Отправить домой",
+						UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Сказать [npc.name], что вы передумали, и резко отправить [npc.herHim] домой.</br>[style.italicsBad(Удаляет этого персонажа из игры.)]"),
 						AUNT_HOME_PLAYERS_ROOM_CLUBBER_TAKEN_HOME_SEND_HOME) {
 					@Override
 					public void effects() {
@@ -2822,7 +2588,7 @@ public class RoomPlayer {
 		}
 	};
 	
-	public static final DialogueNode BACK_HOME_AFTER_CLUBBER_SEX = new DialogueNode("Your Room", "", true) {
+	public static final DialogueNode BACK_HOME_AFTER_CLUBBER_SEX = new DialogueNode("Ваша комната", "", true) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -2841,9 +2607,8 @@ public class RoomPlayer {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("See again",
-						UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Tell [npc.name] that you hope to see [npc.herHim] again.</br>"
-								+ "[style.italicsGood(Saves this character, who can then be encountered in the club again.)]"),
+				return new Response("Увидеться снова",
+						UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Сказать [npc.name], что надеетесь снова увидеть [npc.herHim].</br>[style.italicsGood(Сохраняет этого персонажа, которого затем можно будет снова встретить в клубе.)]"),
 						BACK_HOME_AFTER_SEX) {
 					@Override
 					public void effects() {
@@ -2854,8 +2619,8 @@ public class RoomPlayer {
 				};
 				
 			} else if(index==2) {
-				return new Response("Hope not (gentle)",
-						UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Make a non-committal response, secretly hoping that you won't see [npc.name] again.</br>[style.italicsBad(Removes this character from the game.)]"),
+				return new Response("Надеяться, что нет (мягко)",
+						UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Ответить уклончиво, втайне надеясь, что вы больше не увидите [npc.name].</br>[style.italicsBad(Удаляет этого персонажа из игры.)]"),
 						BACK_HOME_AFTER_SEX) {
 					@Override
 					public void effects() {
@@ -2866,8 +2631,8 @@ public class RoomPlayer {
 				};
 				
 			} else if(index==3) {
-				return new Response("Hope not (harsh)",
-						UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Crudely tell [npc.name] that you were only interested in fucking [npc.herHim].</br>[style.italicsBad(Removes this character from the game.)]"),
+				return new Response("Надеяться, что нет (грубо)",
+						UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Грубо сказать [npc.name], что вас интересовал только трах [npc.herHim].</br>[style.italicsBad(Удаляет этого персонажа из игры.)]"),
 						BACK_HOME_AFTER_SEX) {
 					@Override
 					public void effects() {
@@ -2881,7 +2646,7 @@ public class RoomPlayer {
 		}
 	};
 
-	public static final DialogueNode BACK_HOME_AFTER_SEX = new DialogueNode("Your Room", "", false) {
+	public static final DialogueNode BACK_HOME_AFTER_SEX = new DialogueNode("Ваша комната", "", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -2904,7 +2669,7 @@ public class RoomPlayer {
 		}
 	};
 
-	public static final DialogueNode AUNT_HOME_PLAYERS_ROOM_CLUBBER_TAKEN_HOME_SEND_HOME = new DialogueNode("Your Room", "", false) {
+	public static final DialogueNode AUNT_HOME_PLAYERS_ROOM_CLUBBER_TAKEN_HOME_SEND_HOME = new DialogueNode("Ваша комната", "", false) {
 		
 		@Override
 		public int getSecondsPassed() {

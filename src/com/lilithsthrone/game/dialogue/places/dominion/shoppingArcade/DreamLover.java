@@ -15,11 +15,11 @@ import com.lilithsthrone.main.Main;
  */
 public class DreamLover {
 
-	public static final DialogueNode EXTERIOR = new DialogueNode("Dream Lover (Exterior)", "-", false) {
+	public static final DialogueNode EXTERIOR = new DialogueNode("Мечтатель (Снаружи)", "-", false) {
 
 		@Override
 		public String getAuthor() {
-			return "Kumiko";
+			return "Кумико";
 		}
 		
 		@Override
@@ -37,16 +37,16 @@ public class DreamLover {
 			if(responseTab==0) {
 				if (index == 1) {
 					if(!Main.game.isExtendedWorkTime()) {
-						return new Response("Enter", "Step inside 'Dream Lover'.", EXTERIOR_CLOSED);
+						return new Response("Войти", "Войти в «Мечтателя».", EXTERIOR_CLOSED);
 					}
-					return new Response("Enter", "Step inside 'Dream Lover'.", ENTRY);
+					return new Response("Войти", "Войти в «Мечтателя».", ENTRY);
 				}
 			}
 			return ShoppingArcadeDialogue.getFastTravelResponses(responseTab, index);
 		}
 	};
 
-	public static final DialogueNode EXTERIOR_CLOSED = new DialogueNode("Dream Lover (Exterior)", "-", false, true) {
+	public static final DialogueNode EXTERIOR_CLOSED = new DialogueNode("Мечтатель (Снаружи)", "-", false, true) {
 
 		@Override
 		public String getContent() {
@@ -62,18 +62,18 @@ public class DreamLover {
 		public Response getResponse(int responseTab, int index) {
 			if(responseTab==0) {
 				if (index == 1) {
-					return new Response("Enter", "'Dream Lover' is currently closed, so you'll have to back at another time if you wanted to do any shopping here.", null);
+					return new Response("Войти", "«Мечтатель» сейчас закрыт, так что, если вы хотели здесь что-то купить, придется вернуться в другое время.", null);
 				}
 			}
 			return ShoppingArcadeDialogue.getFastTravelResponses(responseTab, index);
 		}
 	};
 	
-	public static final DialogueNode ENTRY = new DialogueNode("Dream Lover", "-", true) {
+	public static final DialogueNode ENTRY = new DialogueNode("Любимец снов", "-", true) {
 
 		@Override
 		public String getAuthor() {
-			return "Kumiko";
+			return "Кумико";
 		}
 		
 		@Override
@@ -97,7 +97,7 @@ public class DreamLover {
 		public Response getResponse(int responseTab, int index) {
 			if(!Main.game.getDialogueFlags().values.contains(DialogueFlagValue.ashleyIntroduced)) {
 				if (index == 1) {
-					return new Response("Explore", "Explore the shelves.", EXPLORE_SHELVES) {
+					return new Response("Исследовать", "Осмотреть полки.", EXPLORE_SHELVES) {
 						@Override
 						public void effects() {
 							Main.game.getDialogueFlags().setFlag(DialogueFlagValue.ashleyIntroduced, true);
@@ -111,10 +111,10 @@ public class DreamLover {
 			} else {
 				
 				if (index == 1) {
-					return new ResponseTrade("Trade", "Wander around the shop and see what items there are for sale...", Main.game.getNpc(Ashley.class));
+					return new ResponseTrade("Торговать", "Побродить по магазину и посмотреть, какие товары есть в продаже...", Main.game.getNpc(Ashley.class));
 					
 				} else if(index==2 && !Main.game.getDialogueFlags().values.contains(DialogueFlagValue.ashleyAttitude)) {
-					return new Response("Confront Ashley", "What's with this person's attitude? Walk up to the counter and confront them about it.", CONFRONT_ASHLEY) {
+					return new Response("Противостоять Эшли", "Что это за манера поведения? Подойдите к прилавку и выскажите ей всё, что думаете.", CONFRONT_ASHLEY) {
 						@Override
 						public void effects() {
 							if(!Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.ashleySexToysDiscovered)) {
@@ -126,7 +126,7 @@ public class DreamLover {
 					};
 					
 				} else if (index == 0) {
-					return new Response("Leave", "Head back out to the Shopping Arcade.", EXTERIOR) {
+					return new Response("Уйти", "Вернуться в Торговую аркаду.", EXTERIOR) {
 						@Override
 						public void effects() {
 							Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/shoppingArcade/dreamLover", "EXIT"));
@@ -140,11 +140,11 @@ public class DreamLover {
 		}
 	};
 	
-	public static final DialogueNode EXPLORE_SHELVES = new DialogueNode("Dream Lover", "-", true, true) {
+	public static final DialogueNode EXPLORE_SHELVES = new DialogueNode("Любимец снов", "-", true, true) {
 
 		@Override
 		public String getAuthor() {
-			return "Kumiko";
+			return "Кумико";
 		}
 		
 		@Override
@@ -155,7 +155,7 @@ public class DreamLover {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Confront Ashley", "What's with this person's attitude? Walk up to the counter and confront them about it.", CONFRONT_ASHLEY) {
+				return new Response("Противостоять Эшли", "Что это за манера поведения? Подойдите к прилавку и выскажите ей всё, что думаете.", CONFRONT_ASHLEY) {
 					@Override
 					public void effects() {
 						Main.game.getTextEndStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/shoppingArcade/dreamLover", "SEX_TOY_DISCOVERY"));
@@ -165,7 +165,7 @@ public class DreamLover {
 				};
 				
 			} else if(index==2) {
-				return new Response("Keep quiet", "It's probably best to just ignore this person's strange attitude...", IGNORE_ASHLEY) {
+				return new Response("Помолчать", "Пожалуй, лучше просто игнорировать странное поведение этого человека...", IGNORE_ASHLEY) {
 					@Override
 					public void effects() {
 						Main.game.getTextEndStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/shoppingArcade/dreamLover", "SEX_TOY_DISCOVERY"));
@@ -179,11 +179,11 @@ public class DreamLover {
 		}
 	};
 	
-	public static final DialogueNode CONFRONT_ASHLEY = new DialogueNode("Dream Lover", "-", true, true) {
+	public static final DialogueNode CONFRONT_ASHLEY = new DialogueNode("Любимец снов", "-", true, true) {
 
 		@Override
 		public String getAuthor() {
-			return "Kumiko";
+			return "Кумико";
 		}
 		
 		@Override
@@ -197,11 +197,11 @@ public class DreamLover {
 		}
 	};
 	
-	public static final DialogueNode IGNORE_ASHLEY = new DialogueNode("Dream Lover", "-", true, true) {
+	public static final DialogueNode IGNORE_ASHLEY = new DialogueNode("Любимец снов", "-", true, true) {
 
 		@Override
 		public String getAuthor() {
-			return "Kumiko";
+			return "Кумико";
 		}
 		
 		@Override

@@ -179,7 +179,7 @@ public class EnforcerWarehouse {
 		// Add four Enforcers to the entrance:
 		EnforcerWarehouseGuard guard = generateGuard(Occupation.NPC_ENFORCER_SWORD_INSPECTOR);
 		guard.setLocation(WorldType.ENFORCER_WAREHOUSE, PlaceType.ENFORCER_WAREHOUSE_ENTRANCE, true);
-		guard.setGenericName("SWORD Inspector");
+		guard.setGenericName("Инспектор SWORD");
 		
 		guard = generateGuard(Occupation.NPC_ENFORCER_SWORD_SERGEANT);
 		guard.setLocation(WorldType.ENFORCER_WAREHOUSE, PlaceType.ENFORCER_WAREHOUSE_ENTRANCE, true);
@@ -195,8 +195,8 @@ public class EnforcerWarehouse {
 	private static Response getClaireCratesSexResponse() {
 		if(Main.game.getNpc(Claire.class).getLust()>75) {
 			return new ResponseSex(
-					"Offer help",
-					"There's a suitable place behind some nearby crates where you could help Claire get some relief...",
+					"Предложить помощь",
+					"Там, за ящиками неподалеку, есть подходящее место, где ты мог бы помочь Клэр немного расслабиться...",
 					true,
 					true,
 					new SMClaireWarehouse(
@@ -209,8 +209,8 @@ public class EnforcerWarehouse {
 			
 		} else if(Main.game.getNpc(Claire.class).getSexCount(Main.game.getPlayer()).getTotalTimesHadSex()>0) {
 			return new Response(
-					"Another round",
-					"See if Claire wants to have some more sex behind the crates...",
+					"Еще один раунд",
+					"Посмотреть, не хочет ли Клэр еще немного заняться сексом за ящиками...",
 					ASK_CLAIRE_REPEAT_SEX);
 			
 		} else {
@@ -220,7 +220,7 @@ public class EnforcerWarehouse {
 	
 	//---- ENCLOSURE DIALOGUE ----//
 	
-	public static final DialogueNode ENCLOSURE_TELEPORT_PADS = new DialogueNode("Teleport pads", "", false) {
+	public static final DialogueNode ENCLOSURE_TELEPORT_PADS = new DialogueNode("Телепортационные платформы", "", false) {
 		@Override
 		public boolean isTravelDisabled() {
 			return !Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.clairePadsInvestigated);
@@ -237,7 +237,7 @@ public class EnforcerWarehouse {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				if(!Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.clairePadsInvestigated)) {
-					return new Response("Investigate pad", "Take a closer look at the teleportation pad and try to find this 'essence port' Claire is searching for.", ENCLOSURE_TELEPORT_PADS_INVESTIGATE) {
+					return new Response("Осмотреть платформу", "Внимательно осмотреть телепортационную платформу и попытаться найти тот самый «порт эссенции», который ищет Клэр.", ENCLOSURE_TELEPORT_PADS_INVESTIGATE) {
 						@Override
 						public void effects() {
 							Main.game.getDialogueFlags().setFlag(DialogueFlagValue.clairePadsInvestigated, true);
@@ -261,8 +261,8 @@ public class EnforcerWarehouse {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Be stern",
-						"It isn't like Claire to be acting in such a defeatist manner. Tell her to pull herself together.<br/>[style.italicsGood(You think that taking a no-nonsense approach to this will help Claire the most.)]",
+				return new Response("Быть строгим",
+						"Клэр не свойственно так унывать. Скажи ей взять себя в руки.<br/>[style.italicsGood(Ты думаешь, что решительный подход поможет Клэр лучше всего.)]",
 						ENCLOSURE_TELEPORT_PADS_INVESTIGATE_RESPOND_TO_CLAIRE) {
 					@Override
 					public void effects() {
@@ -272,8 +272,8 @@ public class EnforcerWarehouse {
 				};
 				
 			} else if(index==2) {
-				return new Response("Reassure",
-						"Tell Claire not to despair, because everything is sure to turn out ok in the end.<br/>[style.italicsMinorGood(You're sure that Claire will appreciate this.)]",
+				return new Response("Успокоить",
+						"Скажи Клэр не отчаиваться, ведь в конце концов всё обязательно наладится.<br/>[style.italicsMinorGood(Ты уверен, что Клэр это оценит.)]",
 						ENCLOSURE_TELEPORT_PADS_INVESTIGATE_RESPOND_TO_CLAIRE) {
 					@Override
 					public void effects() {
@@ -283,8 +283,8 @@ public class EnforcerWarehouse {
 				};
 				
 			} else if(index==3) {
-				return new Response("Hug",
-						"Perhaps Claire just needs a hug to calm her down?<br/>[style.italicsMinorGood(Claire might find this to be a little too much, but will surely still appreciate the thought.)]",
+				return new Response("Обнять",
+						"Может, Клэр просто нужно обнять, чтобы она успокоилась?<br/>[style.italicsMinorGood(Клэр это может показаться излишним, но она наверняка оценит твой порыв.)]",
 						ENCLOSURE_TELEPORT_PADS_INVESTIGATE_RESPOND_TO_CLAIRE) {
 					@Override
 					public void effects() {
@@ -314,7 +314,7 @@ public class EnforcerWarehouse {
 	};
 
 	
-	public static final DialogueNode ENCLOSURE = new DialogueNode("Warehouse", "", false) {
+	public static final DialogueNode ENCLOSURE = new DialogueNode("Склад", "", false) {
 		@Override
 		public int getSecondsPassed() {
 			return 60;
@@ -330,7 +330,7 @@ public class EnforcerWarehouse {
 	};
 
 	
-	public static final DialogueNode ENCLOSURE_SHELVING = new DialogueNode("Shelving", "", false) {
+	public static final DialogueNode ENCLOSURE_SHELVING = new DialogueNode("Стеллажи", "", false) {
 		@Override
 		public int getSecondsPassed() {
 			return 60;
@@ -343,7 +343,7 @@ public class EnforcerWarehouse {
 		public Response getResponse(int responseTab, int index) {
 			if(!Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.claireEnclosureEscaped)) {
 				if(index==1) {
-					return new Response("Move shelves", "Move the shelves to try and open up a way out", ENCLOSURE_SHELVING_MOVE) {
+					return new Response("Двигать стеллажи", "Двигать стеллажи, чтобы попытаться освободить проход", ENCLOSURE_SHELVING_MOVE) {
 						@Override
 						public void effects() {
 							Main.game.getNpc(Claire.class).setLocation(Main.game.getPlayer(), false);
@@ -359,7 +359,7 @@ public class EnforcerWarehouse {
 		}
 	};
 
-	public static final DialogueNode ENCLOSURE_SHELVING_MOVE = new DialogueNode("Warehouse", "", true) {
+	public static final DialogueNode ENCLOSURE_SHELVING_MOVE = new DialogueNode("Склад", "", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 3*60;
@@ -371,7 +371,7 @@ public class EnforcerWarehouse {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Learn spell", "Skim through the teleport spell book and try to learn it as quickly as possible.", ENCLOSURE_SHELVING_DRAG_TELEPORT_LEARNED) {
+				return new Response("Выучить заклинание", "Бегло просмотреть книгу заклинаний телепортации и попытаться выучить его как можно быстрее.", ENCLOSURE_SHELVING_DRAG_TELEPORT_LEARNED) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/enforcerWarehouse/generic", "ENCLOSURE_SHELVING_DRAG_TELEPORT_LEARNED_START"));
@@ -405,7 +405,7 @@ public class EnforcerWarehouse {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Onwards", "Set off into the warehouse and look for the exit.", CORRIDOR) {
+				return new Response("Вперёд", "Отправиться на склад и искать выход.", CORRIDOR) {
 					@Override
 					public void effects() {
 						Main.game.getDialogueFlags().setFlag(DialogueFlagValue.claireEnclosureEscaped, true);
@@ -421,7 +421,7 @@ public class EnforcerWarehouse {
 
 	//---- CORRIDOR DIALOGUE ----//
 	
-	public static final DialogueNode CORRIDOR = new DialogueNode("Corridor", "", false) {
+	public static final DialogueNode CORRIDOR = new DialogueNode("Коридор", "", false) {
 		@Override
 		public int getSecondsPassed() {
 			return 60;
@@ -470,9 +470,9 @@ public class EnforcerWarehouse {
 				if(!dangerousDirections.isEmpty()) {
 					sb.append("<p style='test-align:center; color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'><i>");
 						if(dangerousDirections.size()>1) {
-							sb.append("There are manned guard posts to the "+Util.stringsToStringList(dangerousDirections, false)+"! Entering these areas will surely result in a fight!");
+							sb.append("Там, в сторону, "+Util.stringsToStringList(dangerousDirections, false)+" стоят посты охраны! Вход в эти зоны почти наверняка приведет к драке!");
 						} else {
-							sb.append("There is a manned guard post to the "+Util.stringsToStringList(dangerousDirections, false)+"! Entering that area will surely result in a fight!");
+							sb.append("Там, в сторону, "+Util.stringsToStringList(dangerousDirections, false)+" стоит пост охраны! Вход в эту зону почти наверняка приведет к драке!");
 						}
 					sb.append("</i></p>");
 				}
@@ -487,7 +487,7 @@ public class EnforcerWarehouse {
 		}
 	};
 
-	public static final DialogueNode CLAIRE_WARNING = new DialogueNode("Corridor", "", true) {
+	public static final DialogueNode CLAIRE_WARNING = new DialogueNode("Коридор", "", true) {
 		@Override
 		public boolean isTravelDisabled() {
 			return !Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.claireWarning);
@@ -509,7 +509,7 @@ public class EnforcerWarehouse {
 		public Response getResponse(int responseTab, int index) {
 			if(!Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.claireWarning)) {
 				if(index==1) {
-					return new Response("Continue", "Continue travelling through the warehouse...", CLAIRE_WARNING) {
+					return new Response("Продолжить", "Продолжать путь по складу...", CLAIRE_WARNING) {
 						@Override
 						public void effects() {
 							Main.game.getDialogueFlags().setFlag(DialogueFlagValue.claireWarning, true);
@@ -521,7 +521,7 @@ public class EnforcerWarehouse {
 		}
 	};
 
-	public static final DialogueNode AFTER_CLAIRE_SEX = new DialogueNode("Relieved", "You helped Claire to deal with her lust...", true) {
+	public static final DialogueNode AFTER_CLAIRE_SEX = new DialogueNode("С облегчением", "Вы помогли Клэр справиться с её похотью...", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 60;
@@ -533,7 +533,7 @@ public class EnforcerWarehouse {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue", "Continue travelling through the warehouse...", Main.game.getDefaultDialogue());
+				return new Response("Продолжить", "Продолжать путь по складу...", Main.game.getDefaultDialogue());
 			}
 			return null;
 		}
@@ -560,7 +560,7 @@ public class EnforcerWarehouse {
 	
 	//---- CRATES DIALOGUE ----//
 	
-	public static final DialogueNode CRATES = new DialogueNode("Crates", "", false) {
+	public static final DialogueNode CRATES = new DialogueNode("Ящики", "", false) {
 		@Override
 		public int getSecondsPassed() {
 			return 60;
@@ -583,10 +583,10 @@ public class EnforcerWarehouse {
 			if (index == 1) {
 				if(Main.game.getPlayerCell().getPlace().getPlaceType()==PlaceType.ENFORCER_WAREHOUSE_CRATES_SEARCHED
 						|| Main.game.getPlayerCell().getPlace().getPlaceType()==PlaceType.ENFORCER_WAREHOUSE_CRATES_ARK_SEARCHED) {
-					return new Response("Search crates", "You've already searched through the unsealed crates in this area!", null);
+					return new Response("Обыскать ящики", "Вы уже обыскали все открытые ящики в этой области!", null);
 					
 				} else {
-					return new Response("Search crates", "Search through the crates to try and find something valuable.", CRATES_SEARCH) {
+					return new Response("Обыскать ящики", "Обыскать ящики в надежде найти что-нибудь ценное.", CRATES_SEARCH) {
 						@Override
 						public void effects() {
 							
@@ -637,7 +637,7 @@ public class EnforcerWarehouse {
 		}
 	};
 	
-	public static final DialogueNode CRATES_SEARCH = new DialogueNode("Crates", "", false) {
+	public static final DialogueNode CRATES_SEARCH = new DialogueNode("Ящики", "", false) {
 		@Override
 		public int getSecondsPassed() {
 			return 60;
@@ -652,7 +652,7 @@ public class EnforcerWarehouse {
 		}
 	};
 
-	public static final DialogueNode CRATES_ARK = new DialogueNode("Crates", "", false) {
+	public static final DialogueNode CRATES_ARK = new DialogueNode("Ящики", "", false) {
 		@Override
 		public int getSecondsPassed() {
 			return 60;
@@ -673,7 +673,7 @@ public class EnforcerWarehouse {
 		}
 	};
 
-	public static final DialogueNode CRATES_LUST_WEAPON = new DialogueNode("'Top Secret' Crate", "", false) {
+	public static final DialogueNode CRATES_LUST_WEAPON = new DialogueNode("Ящик «Совершенно секретно»", "", false) {
 		@Override
 		public int getSecondsPassed() {
 			return 60;
@@ -695,9 +695,9 @@ public class EnforcerWarehouse {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.claireObtainedLightningGlobe)) {
-					return new Response("Search crate", "You've already searched through the unsealed crates in this area!", null);
+					return new Response("Обыскать ящик", "Вы уже обыскали все открытые ящики в этой области!", null);
 				} else {
-					return new Response("Search crate", "Search through the 'Top Secret' crate to try and find something which will help you escape from this warehouse.", CRATES_LUST_WEAPON_SEARCH) {
+					return new Response("Обыскать ящик", "Обыскать ящик с надписью «Совершенно секретно», чтобы найти что-то, что поможет вам сбежать со склада.", CRATES_LUST_WEAPON_SEARCH) {
 						@Override
 						public void effects() {
 							Main.game.getDialogueFlags().setFlag(DialogueFlagValue.claireObtainedLightningGlobe, true);
@@ -718,7 +718,7 @@ public class EnforcerWarehouse {
 		}
 	};
 
-	public static final DialogueNode CRATES_LUST_WEAPON_SEARCH = new DialogueNode("'Top Secret' Crate", "", true) {
+	public static final DialogueNode CRATES_LUST_WEAPON_SEARCH = new DialogueNode("Ящик «Совершенно секретно»", "", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 60;
@@ -730,7 +730,7 @@ public class EnforcerWarehouse {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {	
-				return new Response("Help", "Ask Claire if she's ok.", CRATES_LUST_WEAPON_OBTAINED) {
+				return new Response("Помочь", "Спросить Клэр, всё ли с ней в порядке.", CRATES_LUST_WEAPON_OBTAINED) {
 					@Override
 					public void effects() {
 						AbstractItem item = Main.game.getItemGen().generateItem(ItemType.getItemTypeFromId("BOTTLED_ESSENCE_DEMON"));
@@ -743,7 +743,7 @@ public class EnforcerWarehouse {
 		}
 	};
 
-	public static final DialogueNode CRATES_LUST_WEAPON_OBTAINED = new DialogueNode("'Top Secret' Crate", "", true) {
+	public static final DialogueNode CRATES_LUST_WEAPON_OBTAINED = new DialogueNode("Ящик «Совершенно секретно»", "", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 60;
@@ -755,7 +755,7 @@ public class EnforcerWarehouse {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue", "Trust that Claire will be able to control herself and continue on your way.", CRATES_LUST_WEAPON_OBTAINED_CONTINUE) {
+				return new Response("Продолжить", "Положиться на то, что Клэр сможет взять себя в руки, и продолжить путь.", CRATES_LUST_WEAPON_OBTAINED_CONTINUE) {
 					@Override
 					public void effects() {
 //						Main.game.getPlayer().setNearestLocation(WorldType.ENFORCER_WAREHOUSE, PlaceType.ENFORCER_WAREHOUSE_CORRIDOR, false);
@@ -770,7 +770,7 @@ public class EnforcerWarehouse {
 		}
 	};
 
-	public static final DialogueNode CRATES_LUST_WEAPON_OBTAINED_CONTINUE = new DialogueNode("'Top Secret' Crate", "", false) {
+	public static final DialogueNode CRATES_LUST_WEAPON_OBTAINED_CONTINUE = new DialogueNode("Ящик «Совершенно секретно»", "", false) {
 		@Override
 		public int getSecondsPassed() {
 			return 60;
@@ -788,7 +788,7 @@ public class EnforcerWarehouse {
 		}
 	};
 	
-	public static final DialogueNode SHELVES_SPELL_BOOK = new DialogueNode("Shelving", "", false) {
+	public static final DialogueNode SHELVES_SPELL_BOOK = new DialogueNode("Стеллажи", "", false) {
 		@Override
 		public int getSecondsPassed() {
 			return 60;
@@ -810,10 +810,10 @@ public class EnforcerWarehouse {
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
 				if(Main.game.getPlayerCell().getPlace().getPlaceType()==PlaceType.ENFORCER_WAREHOUSE_CRATES_SPELL_BOOK_SEARCHED) {
-					return new Response("Search shelves", "You've already searched through the shelves in this area!", null);
+					return new Response("Обыскать полки", "Вы уже обыскали все полки в этой области!", null);
 					
 				} else {
-					return new Response("Search shelves", "Search through the shelves to try and find something valuable.", SHELVES_SPELL_BOOK_SEARCH) {
+					return new Response("Обыскать полки", "Обыскать полки в попытках найти что-нибудь ценное.", SHELVES_SPELL_BOOK_SEARCH) {
 						@Override
 						public void effects() {
 							Main.game.getPlayerCell().getPlace().setPlaceType(PlaceType.ENFORCER_WAREHOUSE_CRATES_SPELL_BOOK_SEARCHED);
@@ -833,7 +833,7 @@ public class EnforcerWarehouse {
 		}
 	};
 	
-	public static final DialogueNode SHELVES_SPELL_BOOK_SEARCH = new DialogueNode("Crates", "", false) {
+	public static final DialogueNode SHELVES_SPELL_BOOK_SEARCH = new DialogueNode("Ящики", "", false) {
 		@Override
 		public int getSecondsPassed() {
 			return 60;
@@ -852,7 +852,7 @@ public class EnforcerWarehouse {
 	
 	//---- ENFORCER POST DIALOGUE ----//
 	
-	public static final DialogueNode ENFORCER_GUARD_POST = new DialogueNode("Enforcer guard post", "", true) {
+	public static final DialogueNode ENFORCER_GUARD_POST = new DialogueNode("Пост охраны Enforcer", "", true) {
 		@Override
 		public boolean isTravelDisabled() {
 			return !Main.game.getDialogueFlags().warehouseDefeatedIDs.contains(getEnforcersPresent().get(0).getId());
@@ -886,8 +886,8 @@ public class EnforcerWarehouse {
 //					};
 //					
 //				} else if(index==2) {
-					return new ResponseCombat("Defend yourself",
-							UtilText.parse(guard, "Defend yourself against the trigger-happy [npc.race] SWORD guard."),
+					return new ResponseCombat("Защищаться",
+							UtilText.parse(guard, "Защититься от безбашенного стражника SWORD [npc.race]."),
 							(NPC) guard,
 							Util.newHashMapOfValues(
 									new Value<>(Main.game.getPlayer(), UtilText.parseFromXMLFile("places/dominion/enforcerWarehouse/generic", "ENFORCER_GUARD_POST_PLAYER_FIGHT_START", getEnforcersPresent())),
@@ -898,7 +898,7 @@ public class EnforcerWarehouse {
 		}
 	};
 	
-	public static final DialogueNode AFTER_GUARD_COMBAT_VICTORY = new DialogueNode("Victory", "You've managed to defeat the SWORD guard!", true) {
+	public static final DialogueNode AFTER_GUARD_COMBAT_VICTORY = new DialogueNode("Победа", "Вам удалось одолеть стражника SWORD!", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 60;
@@ -911,15 +911,15 @@ public class EnforcerWarehouse {
 		public Response getResponse(int responseTab, int index) {
 			GameCharacter guard = getEnforcersPresent().get(0);
 			if(index==1) {
-				return new Response("Continue",
-						UtilText.parse(guard, "Leave the defeated [npc.race] behind and continue on your way through the warehouse."),
+				return new Response("Продолжить",
+						UtilText.parse(guard, "Оставить поверженного [npc.race] позади и продолжить путь через склад."),
 						Main.game.getDefaultDialogue());
 			}
 			return null;
 		}
 	};
 	
-	public static final DialogueNode AFTER_GUARD_COMBAT_DEFEAT = new DialogueNode("Defeat", "The SWORD guard has proven to be too much for you to handle!", true) {
+	public static final DialogueNode AFTER_GUARD_COMBAT_DEFEAT = new DialogueNode("Поражение", "Стражник SWORD оказался вам не по зубам!", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 60;
@@ -932,8 +932,8 @@ public class EnforcerWarehouse {
 		public Response getResponse(int responseTab, int index) {
 			GameCharacter guard = getEnforcersPresent().get(0);
 			if(index==1) {
-				return new Response("Arrested...",
-						UtilText.parse(guard, "Having been defeated, you can offer no resistance as [npc.name(the)] drags you off to meet your fate..."),
+				return new Response("Арест...",
+						UtilText.parse(guard, "Потерпев поражение, вы не можете оказать сопротивления, пока [npc.name(the)] тащит вас навстречу судьбе..."),
 						AFTER_GUARD_COMBAT_DEFEAT_ENTRANCE) {
 					@Override
 					public void effects() {
@@ -962,8 +962,8 @@ public class EnforcerWarehouse {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				if(Main.game.isNonConEnabled()) {
-					return new Response("Stocks",
-							UtilText.parse(arrestingGuard, "[npc.Name(the)] drags you off to the stocks..."),
+					return new Response("Стойла",
+							UtilText.parse(arrestingGuard, "[npc.Name(the)] тащит вас к стойлам..."),
 							AFTER_COMBAT_DEFEAT_SENT_TO_STOCKS) {
 						@Override
 						public void effects() {
@@ -976,8 +976,8 @@ public class EnforcerWarehouse {
 					};
 					
 				} else {
-					return new Response("Locked up",
-							UtilText.parse(arrestingGuard, "[npc.Name(the)] drags you into the Enforcer Headquarters and down to the cells..."),
+					return new Response("Заперта",
+							UtilText.parse(arrestingGuard, "[npc.Name(the)] тащит вас в штаб Enforcer, прямиком в камеры..."),
 							AFTER_COMBAT_DEFEAT_SENT_TO_CELLS) {
 						@Override
 						public void effects() {
@@ -999,7 +999,7 @@ public class EnforcerWarehouse {
 	
 	//---- ENTRANCE DIALOGUE ----//
 	
-	public static final DialogueNode ENTRANCE = new DialogueNode("Warehouse entrance", "", true) {
+	public static final DialogueNode ENTRANCE = new DialogueNode("Вход на склад", "", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 60;
@@ -1012,8 +1012,8 @@ public class EnforcerWarehouse {
 		public Response getResponse(int responseTab, int index) {
 
 			if(index==0) {
-				return new Response("Back off",
-						"Step back into the warehouse and re-think how you're going to get out of here.",
+				return new Response("Отступить",
+						"Сделайте шаг назад в склад и еще раз обдумайте, как вам отсюда выбраться.",
 						CORRIDOR) {
 					@Override
 					public void effects() {
@@ -1024,8 +1024,8 @@ public class EnforcerWarehouse {
 				};
 				
 			} else if(index==1) {
-				return new ResponseCombat("Fight",
-						"There's only way to get out of this mess, and that's by besting these SWORD Enforcers in combat!",
+				return new ResponseCombat("Сразиться",
+						"Есть только один способ выбраться из этой передряги — одолеть этих Enforcer из SWORD в бою!",
 						(NPC) getEnforcersPresent().get(0),
 						getEnforcersPresent(),
 						Util.newHashMapOfValues(
@@ -1037,17 +1037,17 @@ public class EnforcerWarehouse {
 				
 			} else if(index==2) {
 				if(!Main.game.getPlayer().hasWeaponType(WeaponType.getWeaponTypeFromId("innoxia_lightningGlobe_lightning_globe"), true)) {
-					return new Response("Lightning globe", "You haven't discovered the lightning globe in the warehouse...", null);
+					return new Response("Громовой шар", "Вы еще не обнаружили громовой шар на складе...", null);
 				}
-				return new Response("Lightning globe",
-						"Overload the lightning globe and roll it along the floor towards the Enforcers. The lustful discharge should hopefully get them so horny that they will desert their post to have sex with one another.",
+				return new Response("Громовой шар",
+						"Перегрузите громовой шар и покатите его по полу в сторону Enforcer. Надеемся, что вызванный им разряд похоти настолько возбудит их, что они бросят свои посты, чтобы заняться сексом друг с другом.",
 						ENTRANCE_LIGHTNING_GLOBE) {
 					@Override
 					public void effects() {
 						for(GameCharacter c : getEnforcersPresent()) {
 							c.setLust(100);
 						}
-						Main.game.getTextEndStringBuilder().append("<p style='text-align:center;'><i>You [style.colourBad(lose)] <b>"+Main.game.getPlayer().getMana()+"</b> [style.colourAura(aura)]!</i></p>");
+						Main.game.getTextEndStringBuilder().append("<p style='text-align:center;'><i>Вы [style.colourBad(проиграли)] <b>"+Main.game.getPlayer().getMana()+"</b> [style.colourAura(Аура)]!</i></p>");
 						Main.game.getPlayer().setMana(0);
 					}
 				};
@@ -1055,20 +1055,20 @@ public class EnforcerWarehouse {
 			} else if(index==3) {
 				if(Main.game.getPlayer().hasSpell(Spell.TELEPATHIC_COMMUNICATION)) {
 					if(Main.game.getPlayer().getMana()>=Spell.TELEPATHIC_COMMUNICATION.getModifiedCost(Main.game.getPlayer())) {
-						return new Response("Telepathic trickery",
+						return new Response("Телепатическая уловка",
 								UtilText.parse(getEnforcersPresent(),
-										"Cast the spell '"+Spell.TELEPATHIC_COMMUNICATION.getName()+"' on [npc.name(the)] and then use this connection to relay a distress message, pretending that you need help further inside the warehouse..."),
+										"Примените заклинание '"+Spell.TELEPATHIC_COMMUNICATION.getName()+"' на [npc.name(the)], а затем используйте эту связь, чтобы передать сигнал бедствия, притворяясь, что вам нужна помощь где-то в глубине склада..."),
 								ENTRANCE_TELEPATHIC_TRICKERY);
 						
 					} else {
-						return new Response("Telepathic trickery",
-								"You do not have enough aura to cast the spell '"+Spell.TELEPATHIC_COMMUNICATION.getName()+"'...",
+						return new Response("Телепатическая уловка",
+								"У вас недостаточно ауры, чтобы применить заклинание '"+Spell.TELEPATHIC_COMMUNICATION.getName()+"'...",
 								null);
 					}
 					
 				} else {
-					return new Response("Telepathic trickery",
-							"You do not know the spell '"+Spell.TELEPATHIC_COMMUNICATION.getName()+"'...",
+					return new Response("Телепатическая уловка",
+							"Вы не знаете заклинание '"+Spell.TELEPATHIC_COMMUNICATION.getName()+"'...",
 							null);
 				}
 			}
@@ -1076,7 +1076,7 @@ public class EnforcerWarehouse {
 		}
 	};
 	
-	public static final DialogueNode AFTER_ENTRANCE_VICTORY = new DialogueNode("Victory", "You've managed to defeat the four SWORD guards!", true) {
+	public static final DialogueNode AFTER_ENTRANCE_VICTORY = new DialogueNode("Победа", "Вам удалось победить четырех стражников SWORD!", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 60;
@@ -1088,8 +1088,8 @@ public class EnforcerWarehouse {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Escaped",
-						"You and Claire have finally managed to escape from the warehouse!",
+				return new Response("Сбежал",
+						"Вам с Клэр наконец-то удалось сбежать со склада!",
 						AFTER_ENTRANCE_VICTORY_ESCAPE) {
 					@Override
 					public void effects() {
@@ -1115,8 +1115,8 @@ public class EnforcerWarehouse {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Say goodbye",
-						"Say goodbye to Claire for now, before continuing on your way...",
+				return new Response("Попрощаться",
+						"Попрощайтесь с Клэр на время, прежде чем продолжить свой путь...",
 						Main.game.getDefaultDialogue()) {
 					@Override
 					public void effects() {
@@ -1130,7 +1130,7 @@ public class EnforcerWarehouse {
 		}
 	};
 	
-	public static final DialogueNode AFTER_ENTRANCE_DEFEAT = new DialogueNode("Defeat", "The four SWORD Enforcers prove to be too much for you to handle, and you collapse to the floor, completely defeated.", true) {
+	public static final DialogueNode AFTER_ENTRANCE_DEFEAT = new DialogueNode("Поражение", "Четверо Enforcer из SWORD оказываются слишком сильными для вас, и вы валитесь на пол, потерпев полное поражение.", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 60;
@@ -1142,8 +1142,8 @@ public class EnforcerWarehouse {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Stocks",
-						UtilText.parse(getEnforcersPresent().get(0), "[npc.Name(the)] drags you off to the stocks..."),
+				return new Response("Стойла",
+						UtilText.parse(getEnforcersPresent().get(0), "[npc.Name(the)] тащит вас к стойлам..."),
 						AFTER_COMBAT_DEFEAT_SENT_TO_STOCKS) {
 					@Override
 					public void effects() {
@@ -1172,8 +1172,8 @@ public class EnforcerWarehouse {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Escaped",
-						"You and Claire have finally managed to escape from the warehouse!",
+				return new Response("Сбежал",
+						"Вам с Клэр наконец-то удалось сбежать со склада!",
 						AFTER_ENTRANCE_VICTORY_ESCAPE) {
 					@Override
 					public void effects() {
@@ -1200,8 +1200,8 @@ public class EnforcerWarehouse {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Escaped",
-						"You and Claire have finally managed to escape from the warehouse!",
+				return new Response("Сбежал",
+						"Вам с Клэр наконец-то удалось сбежать со склада!",
 						AFTER_ENTRANCE_VICTORY_ESCAPE) {
 					@Override
 					public void effects() {
@@ -1237,8 +1237,8 @@ public class EnforcerWarehouse {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new ResponseSex("Locked in stocks",
-						UtilText.parse(arrestingGuard, "You're unable to do anything to stop [npc.name] from doing whatever [npc.she] wants with you."),
+				return new ResponseSex("Заперта в колодах",
+						UtilText.parse(arrestingGuard, "Вы не в силах помешать [npc.name] делать с вами всё, что пожелает [npc.she]."),
 						false,
 						false,
 						new SexManagerDefault(
@@ -1300,7 +1300,7 @@ public class EnforcerWarehouse {
 		}
 	};
 
-	public static final DialogueNode AFTER_STOCKS_ENFORCER_SEX = new DialogueNode("Finished", "", true) {
+	public static final DialogueNode AFTER_STOCKS_ENFORCER_SEX = new DialogueNode("Завершено", "", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 10*60;
@@ -1311,7 +1311,7 @@ public class EnforcerWarehouse {
 		}
 		@Override
 		public String getDescription() {
-			return UtilText.parse(arrestingGuard, "[npc.Name] has finished with you...");
+			return UtilText.parse(arrestingGuard, "[npc.Name] закончил с тобой...");
 		}
 		@Override
 		public String getContent() {
@@ -1320,8 +1320,8 @@ public class EnforcerWarehouse {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Strangers approach",
-						"A couple of strangers step forwards, ready to have some fun with you...",
+				return new Response("Приближаются незнакомцы",
+						"Пара незнакомцев делает шаг вперед, готовая немного развлечься с вами...",
 						STOCKS_RANDOMS) {
 					@Override
 					public void effects() {
@@ -1345,8 +1345,8 @@ public class EnforcerWarehouse {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new ResponseSex("Used again",
-						"The two strangers move into position to start using you...",
+				return new ResponseSex("Использована снова",
+						"Двое незнакомцев занимают позиции, чтобы начать использовать вас...",
 						false,
 						false,
 						new SexManagerDefault(
@@ -1412,14 +1412,14 @@ public class EnforcerWarehouse {
 		}
 	};
 
-	public static final DialogueNode AFTER_STOCKS_RANDOM_SEX = new DialogueNode("Finished", "", true) {
+	public static final DialogueNode AFTER_STOCKS_RANDOM_SEX = new DialogueNode("Завершено", "", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 20*60;
 		}
 		@Override
 		public String getDescription() {
-			return UtilText.parse(randomSexPartners, "[npc.Name] and [npc2.name] have finished with you...");
+			return UtilText.parse(randomSexPartners, "[npc.Name] и [npc2.name] закончили с вами...");
 		}
 		@Override
 		public void applyPreParsingEffects() {
@@ -1432,8 +1432,8 @@ public class EnforcerWarehouse {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Saved",
-						"The Enforcer overseer unlocks the stocks and sets you free.",
+				return new Response("Сохранено",
+						"Надзиратель Enforcer отпирает колоды и освобождает вас.",
 						STOCKS_SET_FREE) {
 					@Override
 					public void effects() {
@@ -1462,7 +1462,7 @@ public class EnforcerWarehouse {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue", "Continue on your way...", Main.game.getDefaultDialogue()) {
+				return new Response("Продолжить", "Продолжить путь...", Main.game.getDefaultDialogue()) {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setCaptive(false);
@@ -1491,8 +1491,8 @@ public class EnforcerWarehouse {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Wait",
-						"There's nothing else to do but wait for someone to rescue you...",
+				return new Response("Ждать",
+						"Вам остается только ждать, пока кто-нибудь придет вас на помощь...",
 						AFTER_COMBAT_DEFEAT_CELLS_WAITING) {
 					@Override
 					public void effects() {
@@ -1516,8 +1516,8 @@ public class EnforcerWarehouse {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Saved",
-						"Claire orders the Enforcer overseeing the cells to unlock you and set you free.",
+				return new Response("Сохранено",
+						"Клэр приказывает Enforcer, присматривающему за камерами, отпереть твою дверь и выпустить тебя на свободу.",
 						CELLS_SET_FREE) {
 					@Override
 					public void effects() {
@@ -1545,7 +1545,7 @@ public class EnforcerWarehouse {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue", "Continue on your way...", Main.game.getDefaultDialogue());
+				return new Response("Продолжить", "Продолжить путь...", Main.game.getDefaultDialogue());
 			}
 			return null;
 		}

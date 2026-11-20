@@ -48,7 +48,7 @@ public class RalphsSnacks {
 		}
 	}
 	
-	public static final DialogueNode EXTERIOR = new DialogueNode("Ralph's Snacks (Exterior)", "-", false) {
+	public static final DialogueNode EXTERIOR = new DialogueNode("Закуски от Ralph (Снаружи)", "-", false) {
 
 		@Override
 		public String getContent() {
@@ -65,9 +65,9 @@ public class RalphsSnacks {
 			if(responseTab==0) {
 				if (index == 1) {
 					if(!Main.game.isExtendedWorkTime()) {
-						return new Response("Enter", "'Ralph's Snacks' is currently closed, so you'll have to come back during opening hours if you wanted to take a look inside.", null);
+						return new Response("Войти", "«Закуски от Ralph» сейчас закрыты, так что, если вы хотите заглянуть внутрь, вам придется вернуться в часы работы.", null);
 					}
-					return new Response("Enter", "Step inside Ralph's Snacks.", INTERIOR){
+					return new Response("Войти", "Войти в «Закуски от Ralph».", INTERIOR){
 						@Override
 						public void effects() {
 							resetDiscountCheck();
@@ -79,48 +79,26 @@ public class RalphsSnacks {
 		}
 	};
 	
-	public static final DialogueNode INTERIOR = new DialogueNode("Ralph's Snacks", "-", true) {
+	public static final DialogueNode INTERIOR = new DialogueNode("Закуски от Ralph", "-", true) {
 
 		@Override
 		public String getContent() {
 			
 			if(!Main.game.getDialogueFlags().values.contains(DialogueFlagValue.ralphIntroduced)) {
-				return "<p>"
-							+ "You push the door open and step inside, looking up as a little bell rings to announce your arrival."
-							+ " [ralph.speech(Hey there! If you need any help, just ask!)] a horse-boy shouts to you from behind the counter."
-						+ "</p>"
-						+ "<p>"
-							+ "You thank the horse-boy, who you assume to be Ralph, and start to have a look around his shop."
-							+ " Most of the goods aren't anything special, and are just the typical sorts of food and drink that you could pick up almost anywhere."
-							+ " What sets this shop apart, however, is a special display of arcane-imbued consumables."
-							+ " The prices aren't listed, and instead, a little label reads 'Please ask Ralph for assistance with these items'."
-						+ "</p>";
+				return "<p>Вы толкаете дверь и входите внутрь; при вашем появлении звонит маленький колокольчик. [ralph.speech(Эй, привет! Если понадобится помощь — только спроси!)] — кричит вам из-за прилавка конько-мальчик.</p><p>Вы благодарите конько-мальчика, который, как вы полагаете, и есть Ralph, и начинаете осматривать его лавку. Большинство товаров не представляют собой ничего особенного — это обычная еда и напитки, которые можно встретить почти везде. Однако отличительной чертой этого магазина является специальный стеллаж с напитками и едой, пропитанными магией Арканы. Цены не указаны, вместо них на маленькой табличке написано: «Пожалуйста, обращайтесь к Ralph за помощью в выборе этих товаров».</p>";
 				
 			} else {
 				UtilText.nodeContentSB.setLength(0);
 				
-				UtilText.nodeContentSB.append("<p>"
-							+ "You make your way over, once again, to the only place in the shopping arcade that sells food to go."
-							+ " From the outside, it looks like an old-fashioned sweet shop, with large glass windows displaying all manner of exotic-looking food and drink."
-							+ " The words 'Ralph's Snacks' are painted in gold cursive letters above the entrance, and as you push the door open and step inside, a little bell rings to announce your arrival."
-						+ "</p>"
-						+ "<p>"
+				UtilText.nodeContentSB.append("<p>Вы снова направляетесь к единственному месту в торговой галерее, где продают еду навынос. Снаружи это выглядит как старомодная кондитерская с большими стеклянными витринами, за которыми выставлено всевозможной экзотической еды и напитков. Над входом золотыми курсивными буквами выведено «Закуски от Ralph», и когда вы толкаете дверь и входите, звонит маленький колокольчик, возвещая о вашем прибытии.</p><p>"
 						+ (Main.game.getDialogueFlags().getSavedLong(Ralph.RALPH_DISCOUNT_TIMER_ID)>0
-								?"As you enter the shop, Ralph winks at you and calls out from behind the very-familiar counter,"
-									+" [ralph.speech(Ah, well if it isn't my favourite regular! If you need any help, you know how to ask!)]"
-								:"[ralph.speech(Hello again! If you need any help, just ask!)] the familiar horse-boy shouts to you from behind the counter.")
-						+ "</p>"
-						+ "<p>"
-							+ "You thank Ralph, and start to have a look around his shop."
-							+ " Most of the goods aren't anything special, and are just the typical sorts of food and drink that you could pick up anywhere."
-							+ " What sets this shop apart, however, is a special display of arcane-imbued consumables."
-							+ " The prices aren't listed, and instead, a little label reads 'Please ask Ralph for assistance with these items'."
-						+ "</p>");
+								?"Когда вы входите в лавку, Ralph подмигивает вам и окликает из-за очень знакомой прилавка, [ralph.speech(А, ну надо же, неужели мой любимый постоянный клиент! Если понадобится помощь, ты знаешь, к кому обращаться!)]"
+								:"Знакомый конь-мальчик кричит вам из-за прилавка: [ralph.speech(Снова привет! Если что-то понадобится, просто спроси!)]")
+						+ "</p><p>Вы благодарите Ralph и начинаете осматривать его лавку. Большинство товаров не представляют собой ничего особенного — это обычная еда и напитки, которые можно найти где угодно. Однако отличительной чертой этого магазина является специальная витрина с пропитанными арканой расходниками. Цены не указаны, вместо них на маленькой табличке написано: «Пожалуйста, обращайтесь к Ralph за помощью с этими товарами».</p>");
 					
 				if(((Ralph)Main.game.getNpc(Ralph.class)).isDiscountActive()){
 					UtilText.nodeContentSB.append("<p>"
-									+ "<b>Ralph is giving you a</b> <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>"+Main.game.getDialogueFlags().ralphDiscount+"%</b> <b>discount!</b>"
-								+ "</p>");
+									+ "<b>Ralph is giving you a</b> <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>"+Main.game.getDialogueFlags().ralphDiscount+"%</b> <b>скидка!</b></p>");
 				}
 				
 				return UtilText.nodeContentSB.toString();
@@ -131,7 +109,7 @@ public class RalphsSnacks {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new ResponseTrade("Trade with Ralph", "Go and ask Ralph about the special consumables on display.", Main.game.getNpc(Ralph.class)){
+				return new ResponseTrade("Торговать с Ralph", "Подойти и расспросить Ralph об особых товарах на витрине.", Main.game.getNpc(Ralph.class)){
 					@Override
 					public void effects() {
 						Main.game.getDialogueFlags().values.add(DialogueFlagValue.ralphIntroduced);
@@ -141,7 +119,7 @@ public class RalphsSnacks {
 				
 			} else if (index == 2) {
 				if(Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.MOUTH, true)) {
-					return new Response("Discount", "Ask Ralph if there's anything you can do to get a discount.", INTERIOR_ASK_FOR_DISCOUNT){
+					return new Response("Скидка", "Спросить Ralph, можно ли получить скидку.", INTERIOR_ASK_FOR_DISCOUNT){
 						@Override
 						public void effects() {
 							Main.game.getDialogueFlags().values.add(DialogueFlagValue.ralphIntroduced);
@@ -150,7 +128,7 @@ public class RalphsSnacks {
 					};
 					
 				} else {
-					return new Response("Discount", "You can only get a discount from Ralph if he's able to gain access to your mouth!", null);
+					return new Response("Скидка", "Вы сможете получить скидку у Ralph только в том случае, если он получит доступ к вашему рту!", null);
 					
 				}
 
@@ -158,10 +136,10 @@ public class RalphsSnacks {
 					&& Main.game.getPlayer().hasQuest(QuestLine.SIDE_BUYING_BRAX)
 					&& Main.game.getPlayer().getQuest(QuestLine.SIDE_BUYING_BRAX)==Quest.BUYING_BRAX_LIPSTICK
 					&& !Main.game.getPlayer().hasItemType(ItemType.CANDI_HUNDRED_KISSES)) {
-					return new Response("Candi's lipstick",
+					return new Response("Помада Candi",
 							!Main.game.getDialogueFlags().values.contains(DialogueFlagValue.ralphAskedAboutHundredKisses)
-								?"Ask Ralph if he has a box of 'A Hundred Kisses', and if he'd be willing to sell it to you."
-								:"Ask Ralph if he still has the box of 'A Hundred Kisses' for sale.",
+								?"Спросить у Ralph, есть ли у него коробка конфет «Сотня поцелуев» и готов ли он её продать."
+								:"Спросить у Ralph, продаёт ли он всё ещё коробку «Сотня поцелуев».",
 							CANDI_LIPSTICK) {
 						@Override
 						public void effects() {
@@ -170,7 +148,7 @@ public class RalphsSnacks {
 					};
 
 			} else if (index == 0) {
-				return new Response("Leave", "Leave Ralph's shop.", EXTERIOR){
+				return new Response("Уйти", "Покинуть лавку Ralph.", EXTERIOR){
 					@Override
 					public void effects() {
 						Main.game.setResponseTab(0);
@@ -185,75 +163,21 @@ public class RalphsSnacks {
 		}
 	};
 	
-	public static final DialogueNode INTERIOR_ASK_FOR_DISCOUNT = new DialogueNode("Ralph's Snacks", "-", true, true) {
+	public static final DialogueNode INTERIOR_ASK_FOR_DISCOUNT = new DialogueNode("Закуски от Ralph", "-", true, true) {
 		@Override
 		public String getContent() {
 			if(Main.game.getDialogueFlags().getSavedLong(Ralph.RALPH_DISCOUNT_TIMER_ID)>0){
-				return "<p>"
-						+"Glancing over to the other side of the shop, you see Ralph giving you a cheerful wave from behind the counter."
-						+ " Images of his massive equine cock flash across your mind, and you let out a tiny moan as you remember it sliding deep down your throat..."
-						+ " His wide, flared head ramming its way past your lips... And the taste of his salty precum as saliva drools from your mouth..."
-					+ "</p>"
-					+ "<p>"
-						+"A familiar voice suddenly snaps you out of your daydream, "
-						+ "[ralph.speech(Hey, are you alright?)]"
-					+ "</p>"
-					+ "<p>"
-					 	+ "You were so engrossed in your fantasy that you didn't notice Ralph walking up to you, and, having been caught completely off-guard, you blurt out a reply in the affirmative."
-					 	+ " As you turn to face the muscular horse-boy, you notice that his eyes have started to roam up and down your body, and you get the feeling that he knows exactly what you were imagining."
-						+ " Glancing down, you see a distinctive bulge forming between his legs, but before you can react to the sight of Ralph's growing erection, he steps forwards, pinning you back against the wall."
-					+ "</p>"
-					+ "<p>"
-						+ "[ralph.speech(Fancy another taste?)] he slyly asks, before grinning deviously at you and leaning in a little closer."
-						+ " As you feel his hot breath on your face, the horse-boy continues, "
-						+ "[ralph.speech(Let me blow a load down that pretty little throat of yours, and I'll give you twenty-five percent off everything I have in stock for a few days.)]"
-					+ "</p>"
-					+ "<p>"
-						+ "As Ralph steps forwards and presses his hot body against yours, you struggle to get the image of his massive, throbbing black horse-cock out of your mind,"
-							+ " and as the tent in his trousers comes into contact with your leg, you blurt out your reply."
-					+ "</p>";
+				return "<p>Бросив взгляд на другую сторону лавки, вы видите, как Ralph весело машет вам из-за прилавка. Перед глазами вспыхивают образы его массивного лошадиного члена, и вы невольно издаете тихий стон, вспоминая, как он скользил глубоко в вашем горле... Как его широкая, раздутая головка прорывается сквозь ваши губы... И вкус его соленой предэякулята, когда слюна течет из вашего рта...</p><p>Знакомый голос внезапно вырывает вас из мечтаний: [ralph.speech(Эй, ты в порядке?)]</p><p>Вы были настолько поглощены своей фантазией, что не заметили, как Ralph подошел к вам, и, застигнутая врасплох, вы выпалили утвердительный ответ. Повернувшись к мускулистому коню-мальчику, вы замечаете, что его взгляд начал скользить вверх и вниз по вашему телу, и у вас возникает чувство, что он точно знает, о чем вы только что грезили. Посмотрев вниз, вы видите отчетливый бугорок, наливающимся между его ног, но прежде чем вы успеваете среагировать на растущую эрекцию Ralph, он делает шаг вперед, прижимая вас спиной к стене.</p><p>[ralph.speech(Хочешь еще глоточек?)] — лукаво спрашивает он, хитро ухмыляясь и наклоняясь чуть ближе. Почувствовав его горячее дыхание на своем лице, конь-мальчик продолжает: [ralph.speech(Позволь мне кончить тебе в это прелестное маленькое горлышко, и в течение нескольких дней я сделаю тебе скидку двадцать пять процентов на всё, что есть у меня в наличии.)]</p><p>Когда Ralph делает шаг вперед и прижимается своим горячим телом к вашему, вы изо всех сил пытаетесь выкинуть из головы образ его массивного, пульсирующего черного лошадиного члена, и когда палата в его брюках касается вашей ноги, вы выпаливаете свой ответ.</p>";
 				
 			}else{
-				return "<p>"
-							+ "You get the feeling that the price of many of these items is inflated past what would be considered a fair markup."
-							+ " Glancing over to the other side of the shop, you see Ralph giving you a cheerful wave from behind the counter."
-							+ " Encouraged by his disarming smile and friendly face, you decide to ask him if there's any way you can get a discount on some of these transformative items, and start to walk over to him."
-						+ "</p>"
-						+ "<p>"
-							+ "As he sees you approaching, Ralph calls out to you, [ralph.speech(Hello! Is there anything I can help you with?)]"
-						+ "</p>"
-						+ "<p>"
-							+ "[pc.speech(Hi there, I was wondering if you could show me the prices of some of these items,)] you reply." 
-						+ "</p>"
-						+ "<p>"
-							+ "Ralph cheerfully leads you back over to the special display, and as he informs you of some of the prices, your suspicions prove to be correct."
-							+ " While some of the items are a reasonable price, the more exotic foodstuffs are quite expensive."
-							+ " Looking across at the friendly shopkeeper, you ask him if there's any way he'd drop the prices a little."
-						+ "</p>"
-						+ "<p>"
-							+ "[ralph.speech(Hmm,)] he says, glancing over at you, "
-							+ "[ralph.speech(I suppose we could work something out...)]"
-						+ "</p>"
-						+ "<p>"
-							+ "You notice that his smile has suddenly lost its friendly appearance, and as his eyes roam up and down your body, you get the feeling that this horse-boy is having some dirty thoughts."
-							+ " Glancing down, you see a distinctive bulge forming between his legs, but before you can react to the sight of Ralph's growing erection, he steps forwards, pinning you back against the wall."
-						+ "</p>"
-						+ "<p>"
-							+ "[ralph.speech(Fancy a taste?)] he slyly asks, before grinning deviously at you and leaning in a little closer."
-							+ " As you feel his hot breath on your face, the horse-boy continues, "
-							+ "[ralph.speech(Let me blow a load down that pretty little throat of yours, and I'll give you twenty-five percent off everything I have in stock for a few days.)]"
-						+ "</p>"
-						+ "<p>"
-							+ "As Ralph steps forwards and presses his hot body against yours, you struggle to get the image of his massive, throbbing black horse-cock out of your mind,"
-								+ " and as the tent in his trousers comes into contact with your leg, you blurt out your reply."
-						+ "</p>";
+				return "<p>У вас возникает чувство, что цены на многие из этих товаров завышены сверх всякой разумной наценки. Бросив взгляд на другую сторону лавки, вы видите, как Ralph весело машет вам рукой из-за прилавка. Воодушевленный его обезоруживающей улыбкой и дружелюбным лицом, вы решаете спросить его, можно ли получить скидку на некоторые из этих трансформирующих предметов, и направляетесь к нему.</p><p>Заметив ваше приближение, Ralph окликает вас: [ralph.speech(Привет! Могу я чем-нибудь вам помочь?)]</p><p>[pc.speech(Привет, я как раз хотел(а) узнать цены на некоторые из этих товаров,)] отвечаете вы.</p><p>Ralph бодро ведет вас к специальному стеллажу, и когда он называет вам цены, ваши подозрения подтверждаются. В то время как некоторые товары стоят разумных денег, более экзотические продукты питания обходятся довольно дорого. Глядя на дружелюбного лавочника, вы спрашиваете его, нет ли возможности немного снизить цены.</p><p>[ralph.speech(Хм,)] говорит он, поглядывая на вас, [ralph.speech(Полагаю, мы могли бы о чем-то договориться...)]</p><p>Вы замечаете, что его улыбка внезапно утратила дружелюбный вид, и пока его глаза блуждают по вашему телу, у вас возникает ощущение, что этот жеребец-мальчик затеял какие-то грязные мысли. Посмотрев вниз, вы видите отчетливый бугорок, образующийся между его ног, но прежде чем вы успеваете среагировать на растущую эрекцию Ralph, он делает шаг вперед, прижимая вас к стене.</p><p>[ralph.speech(Хочется попробовать?)] — лукаво спрашивает он, хитро ухмыляясь и наклоняясь к вам чуть ближе. Почувствовав его горячее дыхание на своем лице, жеребец-мальчик продолжает: [ralph.speech(Позволь мне кончить тебе в это прелестное маленькое горлышко, и в течение нескольких дней я сделаю тебе скидку двадцать пять процентов на всё, что есть у меня в наличии.)]</p><p>Когда Ralph делает шаг вперед и прижимается своим горячим телом к вашему, вы изо всех сил пытаетесь выкинуть из головы образ его массивного, пульсирующего черного конского члена, и когда бугорок в его штанах касается вашей ноги, вы выпаливаете свой ответ.</p>";
 			}
 		}
 		
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new ResponseSex("Agree", "Agree to do as Ralph says and suck his cock.", Util.newArrayListOfValues(Fetish.FETISH_ORAL_GIVING),
+				return new ResponseSex("Согласиться", "Согласиться на то, что говорит Ralph, и отсосать его член.", Util.newArrayListOfValues(Fetish.FETISH_ORAL_GIVING),
 						null, CorruptionLevel.TWO_HORNY, null, null, null,
 						true, true,
 						new SMRalphDiscount(
@@ -263,42 +187,16 @@ public class RalphsSnacks {
 						null,
 						AFTER_SEX,
 						"<p>"
-							+ UtilText.parsePlayerSpeech("Ok, I'll do it,") + " you say, looking up at Ralph to see his smile grow even wider." + "</p>" + "<p>"
-							+ "He leans in, and you half-expect him to try and kiss you, but instead, he simply grabs your " + Main.game.getPlayer().getArmNameSingular() + " and starts to drag you back to his desk."
-							+ " As he walks, he starts instructing you on what's about to happen."
-						+ "</p>"
-						+ "<p>"
-							+ UtilText.parseSpeech("You're going to kneel under my desk over here, and I don't expect to have to do any of the work, understood?", Main.game.getNpc(Ralph.class))
-							+ " he asks, and as you answer in the affirmative, he continues, "
-							+ UtilText.parseSpeech("This is a respectable shop, so if anyone comes in, you're to keep quiet! For each customer that hears you, I'm going to knock five percent off our deal.", Main.game.getNpc(Ralph.class))
-						+ "</p>"
-						+ "<p>"
-							+ "By this time, Ralph has led you behind the shop's front desk, and you see that there's a hollow space beneath the counter-top"
+							+ UtilText.parsePlayerSpeech("«Ладно, я сделаю это»,") + " — говорите вы, глядя на Ralph и видя, как его улыбка становится еще шире.</p><p>Он наклоняется ближе, и вы почти ожидаете, что он попытается вас поцеловать, но вместо этого он просто хватает вас за " + Main.game.getPlayer().getArmNameSingular() + " и начинает тащить обратно к своему столу. Пока он идет, он начинает инструктировать вас по поводу того, что сейчас произойдет.</p><p>"
+							+ UtilText.parseSpeech("«Ты будешь стоять на коленях под моим столом вот здесь, и я не рассчитываю, что мне придется делать хоть какую-то работу, понятно?»", Main.game.getNpc(Ralph.class))
+							+ " — спрашивает он, и когда вы отвечаете утвердительно, он продолжает: "
+							+ UtilText.parseSpeech("«Это приличное заведение, так что если кто-то зайдет, ты должна молчать! За каждого покупателя, который тебя услышит, я вычту пять процентов из нашей сделки».", Main.game.getNpc(Ralph.class))
+						+ "</p><p>К этому времени Ralph уже завел вас за прилавок, и вы видите, что под столешницей есть пустое пространство,"
 							+(Main.game.getPlayer().isTaur()
-								?". Even with the size of your lower [pc.legRace]'s body, there's just about enough room for you to duck down into."
-								:", large enough for you to kneel inside quite comfortably.")
-							+ " The desk's solid front conceals you from the rest of the shop, and you realise that if you keep quiet, any customers will be completely oblivious as to what's going on."
-							+ " Ralph places his hands on your shoulders, and, feeling that it's too late to back out now, you allow him to push you to your knees."
-							+ " Shuffling back, you occupy the space under his desk, and Ralph steps forwards, bringing the massive bulge in his trousers right up to your face."
-						+ "</p>"
-						+ "<p>"
-							+ UtilText.parseSpeech("Make sure you give my balls some attention as well,", Main.game.getNpc(Ralph.class)) + " you hear him command."
-						+ "</p>"
-						+ "<p>"
-							+ "Just as you're about to answer him, you hear the little bell over the shop's front door ring out, announcing the arrival of a customer."
-							+ " You hear Ralph calling out his friendly greeting, but as he does so, he pushes his hips forwards, making it quite clear that he wants you to get started."
-							+ " There isn't much room for you to move around, and you realise that you're going to be totally restricted to using just your mouth in order to earn your discount."
-						+ "</p>"
-						+ "<p>"
-							+ "As the customer walks off to another part of the shop, Ralph reaches down and unbuttons his trousers."
-							+ " With a quick tug, he pulls them, along with his boxers, down to pool around his ankles."
-							+ " You feel your eyes go wide as you see the gigantic length of Ralph's rapidly-hardening horse-cock rise up to bump against your chin."
-							+ " His huge pair of black-skinned balls droop down loosely at the base of his bestial shaft, and you gulp at the thought of what's about to happen..."
-						+ "</p>" 
-						+ "<p>" 
-							+ "<b>There are</b> <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>no customers</b> <b>near the counter.</b>"
-							+ " <b>You will earn a</b> <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>25%</b> <b>discount.</b>"
-						+ "</p>"){
+								?". Даже учитывая размеры тела вашей нижней [pc.legRace], там как раз достаточно места, чтобы вы могли нырнуть внутрь,"
+								:", достаточно просторного, чтобы вы могли там вполне комфортно стоять на коленях».")
+							+ " Массивная передняя часть стола скрывает вас от остального магазина, и вы понимаете: если вести себя тихо, покупатели даже не заметят, что здесь происходит. Ralph кладет руки вам на плечи, и, чувствуя, что отступать уже поздно, вы позволяете ему опустить вас на колени. Подвинувшись назад, вы устраиваетесь под столом, и Ralph делает шаг вперед, поднося огромный бугор в своих брюках прямо к вашему лицу.</p><p>"
+							+ UtilText.parseSpeech("И не забудь уделить внимание и моим яйцам,", Main.game.getNpc(Ralph.class)) + " ты слышишь его приказ.</p><p>Как раз в тот момент, когда ты собираешься ему ответить, раздается звон маленького колокольчика над входной дверью лавки, возвещающий о приходе покупателя. Ты слышишь, как Ralph выкрикивает дружелюбное приветствие, но при этом он подается бедрами вперед, давая понять, что хочет, чтобы ты поскорее приступила к делу. Места для маневров у тебя немного, и ты понимаешь, что для получения скидки тебе придется ограничиться одним лишь ртом.</p><p>Пока покупатель уходит в другую часть магазина, Ralph наклоняется и расстегивает брюки. Резким движением он стягивает их вместе с боксерами, и они сбиваются у него на лодыжках. Твои глаза расширяются, когда ты видишь, как гигантская, стремительно твердеющая лошадиная херь Ральфа поднимается, упираясь тебе в подбородок. Его огромные черные яйца свободно свисают у основания звериного ствола, и ты сглатываешь, предвкушая то, что сейчас произойдет...</p><p><b>Здесь</b> <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>нет покупателей</b> <b>возле прилавка.</b> <b>Ты получишь</b> <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>25%</b> <b>скидку.</b></p>"){
 					@Override
 					public void effects() {
 						Main.game.getNpc(Ralph.class).setAreaKnownByCharacter(CoverableArea.PENIS, Main.game.getPlayer(), true);
@@ -309,7 +207,7 @@ public class RalphsSnacks {
 				};
 				
 			} else if (index == 2) {
-				return new Response("Refuse", "Tell him that you're not willing to do that.", INTERIOR_REFUSE_DISCOUNT_CONDITIONS);
+				return new Response("Отказаться", "Скажи ему, что не готова на это.", INTERIOR_REFUSE_DISCOUNT_CONDITIONS);
 
 			} else {
 				return null;
@@ -317,33 +215,15 @@ public class RalphsSnacks {
 		}
 	};
 	
-	public static final DialogueNode INTERIOR_REFUSE_DISCOUNT_CONDITIONS = new DialogueNode("Ralph's Snacks", "-", true) {
+	public static final DialogueNode INTERIOR_REFUSE_DISCOUNT_CONDITIONS = new DialogueNode("Закуски от Ralph", "-", true) {
 
 		@Override
 		public String getContent() {
 			if(Main.game.getDialogueFlags().getSavedLong(Ralph.RALPH_DISCOUNT_TIMER_ID)>0){
-				return "<p>"
-						+ "[pc.speech(No thanks,)] you force yourself to say, stepping to one side and moving away from the horny shopkeeper."
-					+ "</p>"
-					+ "<p>"
-						+ "[ralph.speech(Well, if you get a craving, I'm always ready to satisfy it!)] he laughs, turning around and heading back to his counter, "
-						+ "[ralph.speech(If you need anything else, just let me know.)]" 
-					+ "</p>"
-					+ "<p>"
-						+ "You go back to browsing the shop's wares, the images of Ralph's massive black horse-cock refusing to budge from your head."
-					+ "</p>";
+				return "<p>[pc.speech(Нет, спасибо,)] — заставляешь ты себя сказать, отступая в сторону и удаляясь от похотливого лавочника.</p><p>[ralph.speech(Ну, если вдруг приспичит, я всегда готов утолить твою жажду!)] — смеется он, разворачиваясь и направляясь обратно к своему прилавку, [ralph.speech(Если понадобится что-то еще, только скажи.)]</p><p>Ты возвращаешься к осмотру товаров, но образы массивного черного конского члена Ralph никак не хотят покидать твою голову.</p>";
 				
 			}else{
-				return "<p>"
-							+ "[pc.speech(No thanks,)] you say, stepping to one side and moving away from the horny shopkeeper."
-						+ "</p>"
-						+ "<p>"
-							+ "[ralph.speech(Well, no harm in either of us asking!)] he laughs, turning around and heading back to his counter. "
-							+ "[ralph.speech(If you need anything else, just let me know.)]" 
-						+ "</p>"
-						+ "<p>"
-							+ "You go back to browsing the shop's wares, but you find it hard to shake the image of Ralph's massive bulge from your head."
-						+ "</p>";
+				return "<p>[pc.speech(Нет, спасибо,)] — говоришь ты, отступая в сторону и удаляясь от похотливого лавочника.</p><p>[ralph.speech(Ну, мы оба ничего не теряем, если попробуем!)] — смеется он, разворачиваясь и направляясь обратно к своему прилавку. [ralph.speech(Если понадобится что-то еще, только скажи.)]</p><p>Ты возвращаешься к осмотру товаров, но тебе трудно избавиться от образа массивного бугра у Ralph в голове.</p>";
 			}
 		}
 		
@@ -353,20 +233,17 @@ public class RalphsSnacks {
 		}
 	};
 	
-	public static final DialogueNode AFTER_SEX = new DialogueNode("Shopping", "Return to browsing the wares in Ralph's shop.", true) {
+	public static final DialogueNode AFTER_SEX = new DialogueNode("Покупки", "Вернуться к осмотру товаров в лавке Ralph.", true) {
 		
 		@Override
 		public String getContent() {
-			return "<p>"
-						+ "Ralph returns to running his shop, and you walk back over to the transformative consumables section, wondering if you should buy anything with your discount."
-						+ " When he's sure that nobody else is watching, Ralph gazes lustfully at your body, and you're pretty sure that you could convince him to give you another \"discount\" any time you wanted it."
-					+ "</p>";
+			return "<p>Ralph возвращается к работе, а ты идешь обратно к отделу трансформирующих расходников, раздумывая, стоит ли купить что-нибудь со своей скидкой. Когда он убеждается, что за вами никто не наблюдает, Ralph пожирает твое тело похотливым взглядом, и ты почти уверена, что смогла бы уговорить его дать тебе очередную «скидку» в любое время, когда пожелаешь.</p>";
 		}
 
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Continue", "Carry on browsing the wares in Ralph's shop.", RalphsSnacks.INTERIOR);
+				return new Response("Продолжить", "Продолжить осмотр товаров в лавке Ralph.", RalphsSnacks.INTERIOR);
 			} else {
 				return null;
 			}
@@ -381,7 +258,7 @@ public class RalphsSnacks {
 		return price;
 	}
 	
-	public static final DialogueNode CANDI_LIPSTICK = new DialogueNode("Ralph's Snacks", "-", true) {
+	public static final DialogueNode CANDI_LIPSTICK = new DialogueNode("Закуски от Ralph", "-", true) {
 
 		@Override
 		public String getContent() {
@@ -394,10 +271,10 @@ public class RalphsSnacks {
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
 				if(Main.game.getPlayer().getMoney()<getLipstickPrice()) {
-					return new Response("Pay "+UtilText.formatAsMoneyUncoloured(getLipstickPrice(), "span"), "You cannot afford to pay "+UtilText.formatAsMoney(getLipstickPrice(), "span")+" in exchange for the box of 'A Hundred Kisses'!", null);
+					return new Response("Заплатить "+UtilText.formatAsMoneyUncoloured(getLipstickPrice(), "охват"), "Недостаточно средств, чтобы оплатить "+UtilText.formatAsMoney(getLipstickPrice(), "охват")+" в обмен на коробку «Ста к поцелуям»!", null);
 				}
-				return new Response("Pay "+UtilText.formatAsMoney(getLipstickPrice(), "span"),
-						"Pay Ralph "+UtilText.formatAsMoney(getLipstickPrice(), "span")+" in exchange for the box of 'A Hundred Kisses'.",
+				return new Response("Заплатить "+UtilText.formatAsMoney(getLipstickPrice(), "охват"),
+						"Заплатить Ralph "+UtilText.formatAsMoney(getLipstickPrice(), "охват")+" в обмен на коробку «Ста к поцелуям».",
 						CANDI_LIPSTICK_PURCHASE) {
 					@Override
 					public void effects() {
@@ -410,22 +287,22 @@ public class RalphsSnacks {
 
 			} else if (index == 2) {
 				if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.ralphDailyBred)) {
-					return new Response("Accept breeding", "Ralph is too busy running his shop to keep on trying to get you knocked up. Perhaps you should come back and try to get bred again tomorrow.", null);
+					return new Response("Согласиться на осеменение", "Ральф слишком занят своим магазином, чтобы продолжать попытки зачать от тебя ребенка. Возможно, тебе стоит прийти завтра и попробовать снова.", null);
 					
 				} else if(!Main.game.getPlayer().hasVagina()) {
-					return new Response("Accept breeding", "As you don't have a vagina, there's no other option but to pay Ralph "+UtilText.formatAsMoney(getLipstickPrice(), "span")+" for the box of 'A Hundred Kisses'.", null);
+					return new Response("Согласиться на осеменение", "Так как у тебя нет влагалища, остается только заплатить Ральфу "+UtilText.formatAsMoney(getLipstickPrice(), "охват")+" за коробку «Ста к поцелуям».", null);
 					
 				} else if(Main.game.getPlayer().isPregnant()) {
-					return new Response("Accept breeding", "As you're already pregnant, there's no other option but to pay Ralph "+UtilText.formatAsMoney(getLipstickPrice(), "span")+" for the box of 'A Hundred Kisses'.", null);
+					return new Response("Согласиться на осеменение", "Так как ты уже беременна, остается только заплатить Ральфу "+UtilText.formatAsMoney(getLipstickPrice(), "охват")+" за коробку «Ста к поцелуям».", null);
 					
 				} else if(Main.game.getPlayer().hasIncubationLitter(SexAreaOrifice.VAGINA)) {
-					return new Response("Accept breeding", "As your womb is full of eggs, there's no other option but to pay Ralph "+UtilText.formatAsMoney(getLipstickPrice(), "span")+" for the box of 'A Hundred Kisses'.", null);
+					return new Response("Согласиться на осеменение", "Поскольку твоя утроба полна яиц, у тебя нет другого выбора, кроме как заплатить Ralph "+UtilText.formatAsMoney(getLipstickPrice(), "охват")+" за коробку «Ста к поцелуям».", null);
 					
 				} else if(!Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.VAGINA, true)) {
-					return new Response("Accept breeding", "As you're unable to get access to your vagina, there's no other option but to pay Ralph "+UtilText.formatAsMoney(getLipstickPrice(), "span")+" for the box of 'A Hundred Kisses'.", null);
+					return new Response("Согласиться на осеменение", "Поскольку у тебя нет доступа к своей вагине, у тебя нет другого выбора, кроме как заплатить Ralph "+UtilText.formatAsMoney(getLipstickPrice(), "охват")+" за коробку «Ста к поцелуям».", null);
 				}
-				return new ResponseSex("Accept breeding",
-						"Tell Ralph that you'll let him breed you in exchange for the box of 'A Hundred Kisses'.",
+				return new ResponseSex("Согласиться на осеменение",
+						"Сказать Ralph, что ты позволишь ему осеменить тебя в обмен на коробку «Ста к поцелуям».",
 						Util.newArrayListOfValues(Fetish.FETISH_PREGNANCY),
 						null, CorruptionLevel.THREE_DIRTY, null, null, null,
 						true,
@@ -478,7 +355,7 @@ public class RalphsSnacks {
 				};
 
 			} else if (index == 0) {
-				return new Response("Decline", "Tell Ralph that you'll think about it...", BACK_TO_INTERIOR) {
+				return new Response("Отклонить", "Сказать Ralph, что ты об этом подумаешь...", BACK_TO_INTERIOR) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/shoppingArcade/ralphsSnacks", "CANDI_LIPSTICK_PURCHASE_DECLINE"));
@@ -493,7 +370,7 @@ public class RalphsSnacks {
 		}
 	};
 	
-	public static final DialogueNode CANDI_LIPSTICK_PURCHASE = new DialogueNode("Ralph's Snacks", "-", true) {
+	public static final DialogueNode CANDI_LIPSTICK_PURCHASE = new DialogueNode("Закуски от Ralph", "-", true) {
 
 		@Override
 		public String getContent() {
@@ -508,7 +385,7 @@ public class RalphsSnacks {
 		}
 	};
 	
-	public static final DialogueNode AFTER_BREEDING = new DialogueNode("Finished", "Now that your womb has been filled with his potent cum, Ralph has had enough.", true) {
+	public static final DialogueNode AFTER_BREEDING = new DialogueNode("Завершено", "Теперь, когда твоя утроба наполнена его мощной спермой, Ralph получает свое.", true) {
 
 		@Override
 		public String getContent() {
@@ -520,9 +397,9 @@ public class RalphsSnacks {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				if(Main.game.getPlayer().isPregnant() && Objects.equals(Main.game.getPlayer().getPregnantLitter().getFather(), Main.game.getNpc(Ralph.class))) {
-					return new Response("Success",
-							"Not only are you now the proud owner of the limited edition box of 'A Hundred Kisses', but you've also become the mother of Ralph's "
-									+(Main.game.getPlayer().getPregnantLitter().getTotalLitterCount()==1?"child":"children")+"!",
+					return new Response("Успех",
+							"Теперь ты не только гордая обладательница лимитированной коробки «Ста к поцелуям», но и стала матерью детей Ralph "
+									+(Main.game.getPlayer().getPregnantLitter().getTotalLitterCount()==1?"ребенок":"дети")+"!",
 									BACK_TO_INTERIOR) {
 						@Override
 						public void effects() {
@@ -533,8 +410,8 @@ public class RalphsSnacks {
 					};
 					
 				} else {
-					return new Response("Failure...",
-							"Ralph didn't manage to get you pregnant, and as such, he's unwilling to hand over the box of 'A Hundred Kisses'...",
+					return new Response("Неудача...",
+							"Ralph не удалось забеременеть тобой, и поэтому он не желает отдавать коробку «Ста к поцелуям»...",
 							BACK_TO_INTERIOR) {
 						@Override
 						public void effects() {
@@ -547,7 +424,7 @@ public class RalphsSnacks {
 		}
 	};
 	
-	public static final DialogueNode BACK_TO_INTERIOR = new DialogueNode("Ralph's Snacks", "-", true) {
+	public static final DialogueNode BACK_TO_INTERIOR = new DialogueNode("Закуски от Ralph", "-", true) {
 
 		@Override
 		public String getContent() {

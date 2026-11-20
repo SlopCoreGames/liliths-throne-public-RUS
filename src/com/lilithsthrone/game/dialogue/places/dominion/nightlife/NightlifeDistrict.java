@@ -211,22 +211,22 @@ public class NightlifeDistrict {
 				case NEGATIVE_FOUR_HATE:
 				case NEGATIVE_THREE_STRONG_DISLIKE:
 				case NEGATIVE_TWO_DISLIKE:
-					sb.append("[npc.Name] looks <i style='color:"+al.getColour().toWebHexString()+";'>angry and frustrated</i>, and will leave you if you continue to treat [npc.herHim] poorly.");
+					sb.append("[npc.Name] выглядит <i style='color:"+al.getColour().toWebHexString()+";'>сердитым и раздосадованным</i>, и уйдет от тебя, если ты продолжишь плохо относиться к [npc.herHim].");
 					break;
 				case NEGATIVE_ONE_ANNOYED:
-					sb.append("[npc.Name] looks <i style='color:"+al.getColour().toWebHexString()+";'>mildly annoyed</i>, and is starting to have a bad time.");
+					sb.append("[npc.Name] выглядит <i style='color:"+al.getColour().toWebHexString()+";'>слегка раздраженным</i>, и ему начинает не нравиться происходящее.");
 					break;
 				case ZERO_NEUTRAL:
 				case POSITIVE_ONE_FRIENDLY:
-					sb.append("[npc.Name] looks <i style='color:"+al.getColour().toWebHexString()+";'>entertained</i>, and has no reason to leave you.");
+					sb.append("[npc.Name] выглядит <i style='color:"+al.getColour().toWebHexString()+";'>развлеченным</i>, и у него нет причин уходить от тебя.");
 					break;
 				case POSITIVE_TWO_LIKE:
 				case POSITIVE_THREE_CARING:
-					sb.append("[npc.Name] looks like [npc.sheIs] <i style='color:"+al.getColour().toWebHexString()+";'>having a great time</i>.");
+					sb.append("[npc.Name] похож на [npc.sheIs], который <i style='color:"+al.getColour().toWebHexString()+";'>прекрасно проводит время</i>.");
 					break;
 				case POSITIVE_FOUR_LOVE:
 				case POSITIVE_FIVE_WORSHIP:
-					sb.append("[npc.NameIsFull] <i style='color:"+al.getColour().toWebHexString()+";'>desperate to have sex with you</i>.");
+					sb.append("[npc.NameIsFull] <i style='color:"+al.getColour().toWebHexString()+";'>отчаянно хочет заняться с тобой сексом</i>.");
 					break;
 			}
 			
@@ -236,46 +236,46 @@ public class NightlifeDistrict {
 						case ZERO_SOBER:
 							break;
 						case ONE_TIPSY:
-							sb.append("[npc.Name] is currently <i style='color:"+PresetColour.ALCOHOL.toWebHexString()+";'>tipsy</i>.");
+							sb.append("[npc.Name] сейчас <i style='color:"+PresetColour.ALCOHOL.toWebHexString()+";'>подшофе</i>.");
 							break;
 						case TWO_MERRY:
-							sb.append("[npc.Name] is currently <i style='color:"+PresetColour.ALCOHOL.toWebHexString()+";'>merry</i>.");
+							sb.append("[npc.Name] сейчас <i style='color:"+PresetColour.ALCOHOL.toWebHexString()+";'>весел</i>.");
 							break;
 						case THREE_DRUNK:
-							sb.append("[npc.Name] is currently <i style='color:"+PresetColour.ALCOHOL.toWebHexString()+";'>drunk</i>.");
+							sb.append("[npc.Name] сейчас <i style='color:"+PresetColour.ALCOHOL.toWebHexString()+";'>пьян</i>.");
 							break;
 						case FOUR_HAMMERED:
-							sb.append("[npc.Name] is currently <i style='color:"+PresetColour.ALCOHOL.toWebHexString()+";'>hammered</i>. Giving [npc.herHim] any more alcohol would be a bad idea.");
+							sb.append("[npc.Name] сейчас <i style='color:"+PresetColour.ALCOHOL.toWebHexString()+";'>в стельку</i>. Давать [npc.herHim] еще больше алкоголя было бы плохой идеей.");
 							break;
 						case FIVE_WASTED:
-							sb.append("[npc.Name] is currently <i style='color:"+PresetColour.ALCOHOL.toWebHexString()+";'>wasted</i>."+(isPartnerSub()?" [npc.She] looks like [npc.sheIs] going to pass out.":""));
+							sb.append("[npc.Name] сейчас <i style='color:"+PresetColour.ALCOHOL.toWebHexString()+";'>в хлам</i>."+(isPartnerSub()?" [npc.She] кажется, что [npc.sheIs] вот-вот отключится.":""));
 							break;
 					}
 			}
 
 			sb.append("</br>");
 			if(likesSex(clubber, isDominantPartner)) {
-				sb.append("You can tell that [npc.she] wants to have sex with you...");
+				sb.append("Можно заметить, что [npc.she] хочет переспать с тобой...");
 				
 			} else if(likesGroping(clubber, isDominantPartner)) {
 				if(isDominantPartner) {
-					sb.append("You can tell that [npc.sheIs] about to try and get some physical contact with you...");
+					sb.append("Можно заметить, что [npc.sheIs] вот-вот попытается к тебе прикоснуться...");
 				} else {
-					sb.append("You can tell that [npc.she] wants some physical contact...");
+					sb.append("Можно заметить, что [npc.she] жаждет физического контакта...");
 				}
 				
 			} else if(likesKiss(clubber, isDominantPartner)) {
 				if(isDominantPartner) {
-					sb.append("You can tell that [npc.sheIs] going to try and kiss you at any moment...");
+					sb.append("Можно заметить, что [npc.sheIs] может попытаться поцеловать тебя в любой момент...");
 				} else {
-					sb.append("You can tell that [npc.she] wouldn't mind a kiss...");
+					sb.append("Можно заметить, что [npc.she] не прочь получить поцелуй...");
 				}
 				
 			} else {
 				if(isDominantPartner) {
-					sb.append("You can tell that [npc.sheIs] not yet ready to make a move on you...");
+					sb.append("Можно заметить, что [npc.sheIs] еще не готова сделать первый шаг...");
 				} else {
-					sb.append("It would be best to talk to [npc.herHim] a little before making a move...");
+					sb.append("Было бы лучше немного поговорить с [npc.herHim], прежде чем переходить к делу...");
 				}
 			}
 			
@@ -311,22 +311,17 @@ public class NightlifeDistrict {
 		
 		sb.append("<p style='text-align:center;'>");
 		if(isPartnerLeaving(false)) {
-			sb.append(UtilText.parse(getClubbersPresent(), "[style.boldTerrible([npc.Name] leaves you!)]</br>"
-					+ "[npc.Name] is fed up, and with a dismissive wave of [npc.her] [npc.hand], [npc.she] turns around and leaves you!"));
+			sb.append(UtilText.parse(getClubbersPresent(), "[style.boldTerrible([npc.Name] бросает тебя!)]</br>[npc.Name] сыта по горло, и пренебрежительным взмахом [npc.her] [npc.hand], [npc.she] разворачивается и уходит от тебя!"));
 		
 		} else if(isPartnerPassingOut()) {
-			sb.append(UtilText.parse(getClubbersPresent(), "[style.boldTerrible([npc.Name] collapses!)]</br>"
-					+ "Having had far too much to drink, [npc.name] slumps down to the ground!"));
+			sb.append(UtilText.parse(getClubbersPresent(), "[style.boldTerrible([npc.Name] падает!)]</br>Перебрав с выпивкой, [npc.name] тяжело оседает на землю!"));
 			
 		} else if(!isClubOpen(minutesPassedForNextScene)) {
 			if(Main.game.getPlayer().getLocationPlace().getPlaceType().equals(PlaceType.WATERING_HOLE_VIP_AREA)) {
-				sb.append(UtilText.parse(getClubbersPresent(), "[style.boldTerrible(Closing time)]</br>"
-						+ "All of the lights in the club suddenly flash off and on a few times, and as the background music stops playing, Kruger growls,"
-							+ " [kruger.speech(Looks like it's time to close for the night. Go on, [pc.name]. We can do this another time.)]"));
+				sb.append(UtilText.parse(getClubbersPresent(), "[style.boldTerrible(Время закрытия)]</br>Весь свет в клубе внезапно несколько раз мигает, и когда фоновая музыка смолкает, Кругер рычит: [kruger.speech(Похоже, пора закрываться на ночь. Давай, [pc.name]. Мы можем продолжить в другой раз.)]"));
 				
 			} else {
-				sb.append(UtilText.parse(getClubbersPresent(), "[style.boldTerrible(Closing time)]</br>"
-						+ "All of the lights in the club suddenly flash off and on a few times, and as the background music stops playing, you hear Jules shout out, [jules.speech(It's closing time! Everyone out!)]"));
+				sb.append(UtilText.parse(getClubbersPresent(), "[style.boldTerrible(Время закрытия)]</br>Весь свет в клубе внезапно несколько раз мигает, и когда фоновая музыка смолкает, вы слышите крик Жюль: [jules.speech(Время закрытия! Всем выйти!)]"));
 			}
 		}
 		sb.append("</p>");
@@ -341,7 +336,7 @@ public class NightlifeDistrict {
 	private static Response getEndResponse(int index, int minutesPassedForNextScene) {
 		if(isPartnerLeaving(false)) {
 			if(index==1) {
-				return new Response("Continue", UtilText.parse(getClubbersPresent(), "Perhaps you should have treated [npc.name] a little better..."), Main.game.getDefaultDialogue(false)) {
+				return new Response("Продолжить", UtilText.parse(getClubbersPresent(), "Возможно, тебе следовало относиться к [npc.name] немного лучше..."), Main.game.getDefaultDialogue(false)) {
 					@Override
 					public void effects() {
 						if(isPartnerSub()) {
@@ -356,7 +351,7 @@ public class NightlifeDistrict {
 			
 		} else if(isPartnerPassingOut()) {
 			if(index==1) {
-				return new Response("Continue", UtilText.parse(getClubbersPresent(), "[npc.Name] collapses!"), Main.game.getDefaultDialogue(false)) {
+				return new Response("Продолжить", UtilText.parse(getClubbersPresent(), "[npc.Name] падает без сил!"), Main.game.getDefaultDialogue(false)) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/nightlife/theWateringHole", "WATERING_HOLE_PARTNER_TOO_WASTED", getClubbersPresent()));
@@ -368,9 +363,8 @@ public class NightlifeDistrict {
 		} else if(!isClubOpen(minutesPassedForNextScene)) {
 			if(hasPartner()) {
 				if(index==1) {
-					return new ResponseEffectsOnly("Say goodbye",
-							UtilText.parse(getClubbersPresent(), "It's closing time, so you need to leave the club now. Say goodbye to [npc.name] before heading back out into the district of Dominion known as 'Nightlife'."
-									+ "</br>[style.italicsGood(Saves this character, who can then be encountered in the club again.)]")) {
+					return new ResponseEffectsOnly("Попрощаться",
+							UtilText.parse(getClubbersPresent(), "Наступило время закрытия, так что тебе пора покинуть клуб. Попрощайся с [npc.name], прежде чем вернуться в район Dominion, известный как «Ночная жизнь».</br>[style.italicsGood(Сохраняет этого персонажа, чтобы его можно было снова встретить в клубе.)]")) {
 						@Override
 						public void effects() {
 							saveClubbers();
@@ -382,8 +376,8 @@ public class NightlifeDistrict {
 					
 				} else if(index==2) {
 					if(likesSex(getPartner(), false)) {
-						return new Response("Invite home",
-								UtilText.parse(getClubbersPresent(), "It's closing time, so you need to leave the club now. Ask [npc.name] to come back to your place."),
+						return new Response("Пригласить домой",
+								UtilText.parse(getClubbersPresent(), "Наступило время закрытия, так что тебе пора покинуть клуб. Позови [npc.name] к себе домой."),
 								RoomPlayer.AUNT_HOME_PLAYERS_ROOM_CLUBBER_TAKEN_HOME) {
 							@Override
 							public void effects() {
@@ -395,14 +389,13 @@ public class NightlifeDistrict {
 							}
 						};
 					} else {
-						return new Response("Invite home", UtilText.parse(getClubbersPresent(),
-								"It's closing time, so you need to leave the club now. [npc.Name] is showing no interest in wanting to go back to your place..."), null);
+						return new Response("Пригласить домой", UtilText.parse(getClubbersPresent(),
+								"Наступило время закрытия, так что тебе пора покинуть клуб. [npc.Name] явно не горит желанием идти к тебе домой..."), null);
 					}
 					
 				} else if(index==3) {
-					return new ResponseEffectsOnly("Lose company",
-							UtilText.parse(getClubbersPresent(), "It's closing time, so you need to leave the club now. Tell [npc.name] you've got to go before heading back out into the district of Dominion known as 'Nightlife'."
-									+ "</br>[style.italicsBad(Removes this character from the game.)]")) {
+					return new ResponseEffectsOnly("Расстаться",
+							UtilText.parse(getClubbersPresent(), "Время закрытия, так что тебе пора уходить из клуба. Скажи [npc.name], что тебе пора, прежде чем отправиться обратно в район Dominion, известный как «Nightlife».</br>[style.italicsBad(Удаляет этого персонажа из игры.)]")) {
 						@Override
 						public void effects() {
 							removeClubbers();
@@ -416,7 +409,7 @@ public class NightlifeDistrict {
 				
 			} else {
 				if(index==1) {
-					return new ResponseEffectsOnly("Leave", "It's closing time, so you need to leave the club now.") {
+					return new ResponseEffectsOnly("Уйти", "Время закрытия, так что тебе пора уходить из клуба.") {
 						@Override
 						public void effects() {
 							Main.game.getPlayer().setLocation(WorldType.DOMINION, PlaceType.DOMINION_NIGHTLIFE_DISTRICT);
@@ -436,7 +429,7 @@ public class NightlifeDistrict {
 		StringBuilder sb = new StringBuilder();
 		
 		sb.append("<p style='text-align:center;'><i>");
-		sb.append("Kalahari has "+(getKalahariBreakTimeLeft()-5)+" minutes of her break left.");
+		sb.append("У Kalahari осталось "+(getKalahariBreakTimeLeft()-5)+" минут перерыва.");
 		sb.append("</i></p>");
 		
 		int minutesPassedForNextScene = secondsPassedForNextScene/60;
@@ -464,7 +457,7 @@ public class NightlifeDistrict {
 	
 	private static final float KALAHARI_SELL_MODIFIER = 1.2f;
 
-	public static final DialogueNode OUTSIDE = new DialogueNode("Nightlife", "Nightlife", false) {
+	public static final DialogueNode OUTSIDE = new DialogueNode("Ночная жизнь", "Ночная жизнь", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -501,9 +494,9 @@ public class NightlifeDistrict {
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
 				if(!isClubOpen(0)) {
-					return new Response("Watering Hole", UtilText.parse("The nightclub, 'The Watering Hole', is currently closed. A sign by the entrance informs you that it's open from [unit.time(19)]-[unit.time(05)] every night."), null);
+					return new Response("Место для выпивки", UtilText.parse("Ночной клуб «Watering Hole» сейчас закрыт. Табличка у входа сообщает, что он открыт каждую ночь с [unit.time(19)] до [unit.time(05)]."), null);
 				} else {
-					return new Response("Watering Hole", "The nightclub, 'The Watering Hole', is currently open. You could enter if you wanted to.", WATERING_HOLE_ENTRANCE) {
+					return new Response("Место для выпивки", "Ночной клуб «Watering Hole» сейчас открыт. Ты можешь войти, если захочешь.", WATERING_HOLE_ENTRANCE) {
 						@Override
 						public void effects() {
 							Main.game.getDialogueFlags().setFlag(DialogueFlagValue.passedJules, false);
@@ -514,11 +507,11 @@ public class NightlifeDistrict {
 				
 			} else if(index==2 && Main.game.getDialogueFlags().hasFlag("innoxia_hannah_training_complete")) {
 				if(!Main.game.isHourBetween(18, 4)) {
-					return new Response("Lights Out", UtilText.parse("The bar, 'Lights Out', is currently closed. A sign by the entrance informs you that it's open from [unit.time(18)]-[unit.time(04)] every night."), null);
+					return new Response("Свет гаснет", UtilText.parse("Бар «Lights Out» сейчас закрыт. Табличка у входа сообщает, что он открыт каждую ночь с [unit.time(18)] до [unit.time(04)]."), null);
 					
 				} else {
-					return new Response("Lights Out",
-							"The bar, 'Lights Out', is currently open. You could enter if you wanted to.",
+					return new Response("Свет гаснет",
+							"Бар «Lights Out» сейчас открыт. Если захочешь, можешь войти.",
 							DialogueManager.getDialogueFromId("innoxia_places_dominion_nightlife_lights_out_exit_initial_entry"));
 				}
 			}
@@ -526,7 +519,7 @@ public class NightlifeDistrict {
 		}
 	};
 
-	public static final DialogueNode WATERING_HOLE_ENTRANCE = new DialogueNode("The Watering Hole", "", false) {
+	public static final DialogueNode WATERING_HOLE_ENTRANCE = new DialogueNode("Поилочка", "", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -556,8 +549,8 @@ public class NightlifeDistrict {
 		public Response getResponse(int responseTab, int index) {
 			if(!hasPartner()) {
 				if(index==0) {
-					return new ResponseEffectsOnly("Exit",
-							"Leave 'The Watering Hole' and head back out into the district of Dominion known as 'Nightlife'.") {
+					return new ResponseEffectsOnly("Выход",
+							"Покинуть «The Watering Hole» и вернуться в район Dominion, известный как «Nightlife».") {
 						@Override
 						public void effects() {
 							Main.game.getDialogueFlags().setFlag(DialogueFlagValue.julesIntroduced, true);
@@ -569,7 +562,7 @@ public class NightlifeDistrict {
 					
 				} else if(!Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.passedJules)) {
 					if(index==1) {
-						return new Response("Wait", "Wait patiently in the queue to get in to the club.", WATERING_HOLE_ENTRANCE_WAITING) {
+						return new Response("Ждать", "Терпеливо ждать в очереди, чтобы попасть в клуб.", WATERING_HOLE_ENTRANCE_WAITING) {
 							@Override
 							public void effects() {
 								Main.game.getDialogueFlags().setFlag(DialogueFlagValue.passedJules, true);
@@ -580,9 +573,9 @@ public class NightlifeDistrict {
 						
 					} else if(index==2) {
 						if(!Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.MOUTH, true)) {
-							return new Response("Suck cock", "You can't gain access to your mouth, so you can't suck Jules's cock!", null);
+							return new Response("Сосать член", "Ты не можешь дотянуться ртом до своего члена, так что не можешь отсосать Джулсу!", null);
 						}
-						return new ResponseSex("Suck cock", "Suck Jules's cock in front of everyone in order to skip to the front of the queue.",
+						return new ResponseSex("Сосать член", "Отсосать Джулсу на глазах у всех, чтобы пролезть без очереди.",
 								true,
 								false,
 								new SMJulesCockSucking(
@@ -606,7 +599,7 @@ public class NightlifeDistrict {
 						};
 						
 					} else if(index==3 && Main.game.getPlayer().getRace()==Race.DEMON) {
-						return new Response("Skip queue", "Use your status as a demon to cut the queue.", WATERING_HOLE_ENTRANCE_SKIP_QUEUE) {
+						return new Response("Пролезть без очереди", "Использовать свой статус демона, чтобы пройти без очереди.", WATERING_HOLE_ENTRANCE_SKIP_QUEUE) {
 							@Override
 							public void effects() {
 								Main.game.getDialogueFlags().setFlag(DialogueFlagValue.passedJules, true);
@@ -621,9 +614,9 @@ public class NightlifeDistrict {
 				} else { // Passed Jules:
 					if(index==1 && Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.suckedJulesCock)) {
 						if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.fuckedJulesTonight)) {
-							return new Response("Jules", "You've already had a 'proper fuck' from Jules tonight, and he doesn't have time to do it again...", null);
+							return new Response("Джулс", "Ты уже успела «хорошенько трахнуться» с Джулсом сегодня вечером, и у него нет времени на повторение...", null);
 						}
-						return new ResponseSex("Jules", "Tell Jules that you want him to give you 'a proper fuck'...",
+						return new ResponseSex("Джулс", "Сказать Джулсу, что ты хочешь, чтобы он «хорошенько тебя трахнул»...",
 								true, true,
 								new SMGeneric(
 										Util.newArrayListOfValues(Main.game.getNpc(Jules.class)),
@@ -649,9 +642,8 @@ public class NightlifeDistrict {
 				
 			} else {
 				if(index==1) {
-					return new ResponseEffectsOnly("Say goodbye",
-							UtilText.parse(getClubbersPresent(), "Say goodbye to [npc.name] before heading back out into the district of Dominion known as 'Nightlife'."
-									+ "</br>[style.italicsGood(Saves this character, who can then be encountered in the club again.)]")) {
+					return new ResponseEffectsOnly("Попрощаться",
+							UtilText.parse(getClubbersPresent(), "Попрощаться с [npc.name], прежде чем снова отправиться в район Dominion под названием «Ночная жизнь».</br>[style.italicsGood(Сохранить этого персонажа, чтобы его можно было снова встретить в клубе.)]")) {
 						@Override
 						public void effects() {
 							saveClubbers();
@@ -663,7 +655,7 @@ public class NightlifeDistrict {
 					
 				} else if(index==2) {
 					if(likesSex(getPartner(), false)) {
-						return new Response("Invite home", UtilText.parse(getClubbersPresent(), "Take [npc.name] back to your room."), RoomPlayer.AUNT_HOME_PLAYERS_ROOM_CLUBBER_TAKEN_HOME) {
+						return new Response("Пригласить домой", UtilText.parse(getClubbersPresent(), "Отвести [npc.name] обратно в свою комнату."), RoomPlayer.AUNT_HOME_PLAYERS_ROOM_CLUBBER_TAKEN_HOME) {
 							@Override
 							public void effects() {
 								for(GameCharacter clubber : getClubbersPresent()) {
@@ -675,13 +667,12 @@ public class NightlifeDistrict {
 							}
 						};
 					} else {
-						return new Response("Invite home", UtilText.parse(getClubbersPresent(), "[npc.Name] is showing no interest in wanting to go back to your place. You should interact with [npc.herHim] a little more first..."), null);
+						return new Response("Пригласить домой", UtilText.parse(getClubbersPresent(), "[npc.Name] явно не горит желанием идти к тебе. Стоит сначала еще немного пообщаться с [npc.herHim]..."), null);
 					}
 					
 				} else if(index==3) {
-					return new ResponseEffectsOnly("Lose company",
-							UtilText.parse(getClubbersPresent(), "Tell [npc.name] you've got to go before heading back out into the district of Dominion known as 'Nightlife'."
-									+ "</br>[style.italicsBad(Removes this character from the game.)]")) {
+					return new ResponseEffectsOnly("Расстаться",
+							UtilText.parse(getClubbersPresent(), "Сказать [npc.name], что тебе пора, прежде чем снова отправиться в район Dominion под названием «Ночная жизнь».</br>[style.italicsBad(Удаляет этого персонажа из игры.)]")) {
 						@Override
 						public void effects() {
 							removeClubbers();
@@ -700,7 +691,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_ENTRANCE_WAITING = new DialogueNode("The Watering Hole", "", false, true) {
+	public static final DialogueNode WATERING_HOLE_ENTRANCE_WAITING = new DialogueNode("Поилочка", "", false, true) {
 		@Override
 		public int getSecondsPassed() {
 			return 30*60;
@@ -716,7 +707,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_ENTRANCE_SKIP_QUEUE = new DialogueNode("The Watering Hole", "", false, true) {
+	public static final DialogueNode WATERING_HOLE_ENTRANCE_SKIP_QUEUE = new DialogueNode("Поилочка", "", false, true) {
 		@Override
 		public int getSecondsPassed() {
 			return 2*60;
@@ -732,7 +723,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode AFTER_JULES_BLOWJOB = new DialogueNode("Finished", "Jules has had enough.", false) {
+	public static final DialogueNode AFTER_JULES_BLOWJOB = new DialogueNode("Завершено", "С Джулс хватит.", false) {
 		@Override
 		public String getContent() {
 			return UtilText.parseFromXMLFile("places/dominion/nightlife/theWateringHole", "AFTER_JULES_BLOWJOB")
@@ -744,7 +735,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode AFTER_JULES_SEX = new DialogueNode("Finished", "Jules has had enough.", false) {
+	public static final DialogueNode AFTER_JULES_SEX = new DialogueNode("Завершено", "С Джулс хватит.", false) {
 		@Override
 		public String getContent() {
 			return UtilText.parseFromXMLFile("places/dominion/nightlife/theWateringHole", "AFTER_JULES_SEX");
@@ -755,7 +746,7 @@ public class NightlifeDistrict {
 		}
 	};
 
-	public static final DialogueNode WATERING_HOLE_MAIN = new DialogueNode("The Watering Hole", "", false) {
+	public static final DialogueNode WATERING_HOLE_MAIN = new DialogueNode("Поилочка", "", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -781,7 +772,7 @@ public class NightlifeDistrict {
 			
 			if(hasPartner()) {
 				if(index==1) {
-					return new Response("Talk", UtilText.parse(getClubbersPresent(), "Talk to [npc.name] and get to know [npc.herHim] a little better."), WATERING_HOLE_MAIN_TALK) {
+					return new Response("Поговорить", UtilText.parse(getClubbersPresent(), "Поговорить с [npc.name] и получше узнать [npc.herHim]."), WATERING_HOLE_MAIN_TALK) {
 						@Override
 						public void effects() {
 							Main.game.getTextEndStringBuilder().append(getClubbersPresent().get(0).incrementAffection(Main.game.getPlayer(), 5));
@@ -790,7 +781,7 @@ public class NightlifeDistrict {
 					};
 					
 				} else if(index==2) {
-					return new Response("Flirt", UtilText.parse(getClubbersPresent(), "Compliment [npc.namePos] appearance and start flirting with [npc.herHim]."), WATERING_HOLE_MAIN_FLIRT) {
+					return new Response("Флиртовать", UtilText.parse(getClubbersPresent(), "Сделать комплимент внешности [npc.namePos] и начать флиртовать с [npc.herHim]."), WATERING_HOLE_MAIN_FLIRT) {
 						@Override
 						public void effects() {
 							Main.game.getTextEndStringBuilder().append(getClubbersPresent().get(0).incrementAffection(Main.game.getPlayer(), 10));
@@ -799,8 +790,8 @@ public class NightlifeDistrict {
 					};
 					
 				} else if(index==3) {
-					return new Response("Kiss",
-							UtilText.parse(getClubbersPresent(), "Step forwards and kiss [npc.name]."+(likesKiss(getPartner(), false)?"":"</br>[style.italicsBad([npc.She] might not react well to this!)]")),
+					return new Response("Поцеловать",
+							UtilText.parse(getClubbersPresent(), "Сделать шаг вперед и поцеловать [npc.name]."+(likesKiss(getPartner(), false)?"":"</br>[style.italicsBad([npc.She] может отреагировать на это не лучшим образом!)]")),
 							WATERING_HOLE_MAIN_KISS) {
 						@Override
 						public void effects() {
@@ -821,8 +812,8 @@ public class NightlifeDistrict {
 					};
 					
 				} else if(index==4) {
-					return new Response("Feel up",
-							UtilText.parse(getClubbersPresent(), "Grind up against [npc.name] and start groping [npc.herHim]."+(likesGroping(getPartner(), false)?"":"</br>[style.italicsBad([npc.She] might not react well to this!)]")),
+					return new Response("Лапать",
+							UtilText.parse(getClubbersPresent(), "Прижаться к [npc.name] и начать ощупывать [npc.herHim]."+(likesGroping(getPartner(), false)?"":"</br>[style.italicsBad([npc.She] может отреагировать на это не лучшим образом!)]")),
 							WATERING_HOLE_MAIN_GROPE) {
 						@Override
 						public void effects() {
@@ -842,9 +833,8 @@ public class NightlifeDistrict {
 					};
 					
 				} if(index==9) {
-					return new Response("Say goodbye",
-							UtilText.parse(getClubbersPresent(), "Tell [npc.name] that you've got to head off for a little while, but that you hope to see [npc.herHim] again."
-									+ "</br>[style.italicsGood(Saves this character, who can then be encountered in the club again.)]"),
+					return new Response("Попрощаться",
+							UtilText.parse(getClubbersPresent(), "Сказать [npc.name], что тебе пора уходить, но ты надеешься снова увидеть [npc.herHim].</br>[style.italicsGood(Сохранить этого персонажа, чтобы его можно было снова встретить в клубе.)]"),
 							WATERING_HOLE_MAIN_LOSE_COMPANY) {
 						@Override
 						public void effects() {
@@ -854,8 +844,8 @@ public class NightlifeDistrict {
 					};
 					
 				} else if(index==10) {
-					return new Response("Lose company",
-							UtilText.parse(getClubbersPresent(), "Make up an excuse to get rid of [npc.name].</br>[style.italicsBad(Removes this character from the game.)]"),
+					return new Response("Расстаться",
+							UtilText.parse(getClubbersPresent(), "Придумать предлог, чтобы отделаться от [npc.name].</br>[style.italicsBad(Удалить этого персонажа из игры.)]"),
 							WATERING_HOLE_MAIN_LOSE_COMPANY) {
 						@Override
 						public void effects() {
@@ -870,8 +860,8 @@ public class NightlifeDistrict {
 				
 			} else {
 				if(index==1) {
-					return new Response("Search (as dom)",
-							"Search for someone to approach and start talking to. This will put you in the dominant role, where you'll be the one leading your partner around the club.",
+					return new Response("Искать (как доминант)",
+							"Искать кого-нибудь, чтобы подойти и заговорить. Это даст тебе роль доминанта, где ты будешь вести своего партнера по клубу.",
 							WATERING_HOLE_SEARCH_GENDER) {
 						@Override
 						public void effects() {
@@ -881,10 +871,10 @@ public class NightlifeDistrict {
 					
 				} else if(index==2) {
 					if(clubberGender==null || clubberSubspecies==null) {
-						return new Response("Repeat search (as dom)", "You need to have already searched the club!", null);
+						return new Response("Повторить поиск (как доминант)", "Сначала нужно обыскать клуб!", null);
 					} else {
-						return new Response("Repeat search (as dom)",
-								"Repeat your last search for someone to approach and start talking to. ("+Util.capitaliseSentence(clubberGender.getName())+" "+clubberSubspecies.getName(null)+")",
+						return new Response("Повторить поиск (как доминант)",
+								"Повторить ваш последний поиск кого-нибудь, чтобы подойти и заговорить. ("+Util.capitaliseSentence(clubberGender.getName())+" "+clubberSubspecies.getName(null)+")",
 								WATERING_HOLE_SEARCH_GENERATE) {
 							@Override
 							public void effects() {
@@ -896,11 +886,11 @@ public class NightlifeDistrict {
 					
 				} else if(index==3) {
 					if(getSavedClubbers(true).isEmpty()) {
-						return new Response("Contacts (as dom)", "You haven't met anybody who you said you'd meet in the club again...", null);
+						return new Response("Контакты (как доминант)", "Вы еще не встретили никого из тех, с кем обещали снова увидеться в клубе...", null);
 						
 					} else {
-						return new Response("Contacts (as dom)",
-								"Search for someone who you've already met in the club before. This will put you in the dominant role, where you'll be the one leading your partner around the club.",
+						return new Response("Контакты (как доминант)",
+								"Поискать кого-то, с кем вы уже встречались в клубе раньше. Это даст вам роль доминанта, где именно вы будете вести своего партнера по клубу.",
 								WATERING_HOLE_CONTACTS) {
 							@Override
 							public void effects() {
@@ -910,9 +900,8 @@ public class NightlifeDistrict {
 					}
 					
 				} else if(index==4) {
-					return new Response("Import (as dom)",
-							"View the character import screen."
-								+ " Characters imported in the following screen will be marked as being submissive, and will show up in your 'Contacts (as dom)' list after they've been imported.",
+					return new Response("Импорт (как доминант)",
+							"Открыть экран импорта персонажей. Персонажи, импортированные на следующем экране, будут помечены как подчиненные и появятся в вашем списке «Контакты (как доминант)» после завершения импорта.",
 							WATERING_HOLE_IMPORT) {
 						@Override
 						public void effects() {
@@ -921,9 +910,8 @@ public class NightlifeDistrict {
 					};
 					
 				} if(index==6) {
-					return new Response("Search (as sub)",
-							"Loiter in the main area of the club and try to catch the eye of someone you like the look of."
-									+ " This will put you in the submissive role, where your partner will be the one leading you around the club.",
+					return new Response("Поиск (как саб)",
+							"Послоняться в главной зоне клуба и попытаться привлечь взгляд того, кто вам приглянется. Это даст вам роль подчиненного, где ваш партнер будет вести вас по клубу.",
 							WATERING_HOLE_SEARCH_GENDER) {
 						@Override
 						public void effects() {
@@ -933,10 +921,10 @@ public class NightlifeDistrict {
 					
 				} else if(index==7) {
 					if(clubberGender==null || clubberSubspecies==null) {
-						return new Response("Repeat search (as sub)", "You need to have already searched the club!", null);
+						return new Response("Повторить поиск (как саб)", "Сначала нужно обыскать клуб!", null);
 					} else {
-						return new Response("Repeat search (as sub)",
-								"Repeat your last search for someone to catch the eye of. ("+Util.capitaliseSentence(clubberGender.getName())+" "+clubberSubspecies.getName(null)+")",
+						return new Response("Повторить поиск (как саб)",
+								"Повторить последний поиск того, кто мог бы привлечь ваше внимание. ("+Util.capitaliseSentence(clubberGender.getName())+" "+clubberSubspecies.getName(null)+")",
 								WATERING_HOLE_SEARCH_GENERATE_DOM) {
 							@Override
 							public void effects() {
@@ -949,11 +937,11 @@ public class NightlifeDistrict {
 					
 				} else if(index==8) {
 					if(getSavedClubbers(false).isEmpty()) {
-						return new Response("Contacts (as sub)", "You haven't met anybody who you said you'd meet in the club again...", null);
+						return new Response("Контакты (подменю)", "Вы еще не встретили никого из тех, с кем обещали снова увидеться в клубе...", null);
 						
 					} else {
-						return new Response("Contacts (as sub)",
-								"Search for one of your dominant contacts who you've already met in the club before. This will put you in the submissive role, where your partner will be the one leading you around the club.",
+						return new Response("Контакты (подменю)",
+								"Искать одного из ваших доминантных контактов, с которым вы уже встречались в клубе раньше. Это поставит вас в подчиненную роль, где ваш партнер будет вести вас по клубу.",
 								WATERING_HOLE_CONTACTS_DOM) {
 							@Override
 							public void effects() {
@@ -963,9 +951,8 @@ public class NightlifeDistrict {
 					}
 					
 				} else if(index==9) {
-					return new Response("Import (as sub)",
-							"View the character import screen."
-								+ " Characters imported in the following screen will be marked as being dominant, and will show up in your 'Contacts (as sub)' list after they've been imported.",
+					return new Response("Импорт (подменю)",
+							"Открыть экран импорта персонажей. Персонажи, импортированные на следующем экране, будут отмечены как доминантные и появятся в вашем списке «Контакты (подменю)» после завершения импорта.",
 							WATERING_HOLE_IMPORT) {
 						@Override
 						public void effects() {
@@ -979,7 +966,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_MAIN_TALK = new DialogueNode("The Watering Hole", "", false) {
+	public static final DialogueNode WATERING_HOLE_MAIN_TALK = new DialogueNode("Поилочка", "", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -1003,7 +990,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_MAIN_FLIRT = new DialogueNode("The Watering Hole", "", false) {
+	public static final DialogueNode WATERING_HOLE_MAIN_FLIRT = new DialogueNode("Поилочка", "", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -1027,7 +1014,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_MAIN_KISS = new DialogueNode("The Watering Hole", "", false) {
+	public static final DialogueNode WATERING_HOLE_MAIN_KISS = new DialogueNode("Поилочка", "", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -1050,7 +1037,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_MAIN_GROPE = new DialogueNode("The Watering Hole", "", false) {
+	public static final DialogueNode WATERING_HOLE_MAIN_GROPE = new DialogueNode("Поилочка", "", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -1073,7 +1060,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_MAIN_LOSE_COMPANY = new DialogueNode("The Watering Hole", "", false) {
+	public static final DialogueNode WATERING_HOLE_MAIN_LOSE_COMPANY = new DialogueNode("Поилочка", "", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -1096,7 +1083,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_SEARCH_GENDER = new DialogueNode("The Watering Hole", "", true) {
+	public static final DialogueNode WATERING_HOLE_SEARCH_GENDER = new DialogueNode("Поилочка", "", true) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -1111,13 +1098,13 @@ public class NightlifeDistrict {
 		@Override
 		public String getResponseTabTitle(int index) {
 			if(index==0) {
-				return "[style.colourFeminine(Feminine)]";
+				return "[style.colourFeminine(Женский)]";
 				
 			} else if(index==1) {
-				return "[style.colourMasculine(Masculine)]";
+				return "[style.colourMasculine(Мужской)]";
 				
 			} else if(index==2) {
-				return "[style.colourAndrogynous(Androgynous)]";
+				return "[style.colourAndrogynous(Андрогинно)]";
 				
 			}
 			return null;
@@ -1126,7 +1113,7 @@ public class NightlifeDistrict {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==0) {
-				return new Response("Back", "Decide against looking for someone to approach.", Main.game.getDefaultDialogue(false));
+				return new Response("Назад", "Решить не искать никого для сближения.", Main.game.getDefaultDialogue(false));
 			}
 			int count = 1;
 			for(Gender gender : Gender.values()) {
@@ -1135,10 +1122,9 @@ public class NightlifeDistrict {
 						|| (responseTab==2 && gender.getType()==PronounType.NEUTRAL)) {
 					if(count==index) {
 						return new Response(Util.capitaliseSentence(gender.getName()),
-								"Look for "+UtilText.generateSingularDeterminer(gender.getName())+" "+gender.getName()+" in amongst the crowds of revellers."
-									+ " ("+(gender.getGenderName().isHasBreasts()?"[style.colourGood(Breasts)]":"[style.colourBad(Breasts)]")+", "
-										+(gender.getGenderName().isHasPenis()?"[style.colourGood(Penis)]":"[style.colourBad(Penis)]")+", "
-										+(gender.getGenderName().isHasVagina()?"[style.colourGood(Vagina)]":"[style.colourBad(Vagina)]")+")",
+								"Искать "+UtilText.generateSingularDeterminer(gender.getName())+" "+gender.getName()+" среди толпы гуляк. ("+(gender.getGenderName().isHasBreasts()?"[style.colourGood(Грудь)]":"[style.colourBad(Грудь)]")+", "
+										+(gender.getGenderName().isHasPenis()?"[style.colourGood(Пенис)]":"[style.colourBad(Пенис)]")+", "
+										+(gender.getGenderName().isHasVagina()?"[style.colourGood(Вагина)]":"[style.colourBad(Вагина)]")+")",
 								WATERING_HOLE_SEARCH_RACE) {
 							@Override
 							public void effects() {
@@ -1154,7 +1140,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_SEARCH_RACE = new DialogueNode("The Watering Hole", "", true, true) {
+	public static final DialogueNode WATERING_HOLE_SEARCH_RACE = new DialogueNode("Поилочка", "", true, true) {
 		@Override
 		public int getSecondsPassed() {
 			return 0;
@@ -1166,20 +1152,20 @@ public class NightlifeDistrict {
 		@Override
 		public String getResponseTabTitle(int index) {
 			if(index == 0) {
-				return "[style.colourTfPartial(Partial)]";
+				return "[style.colourTfPartial(Частичная)]";
 			} else if(index == 1) {
-				return "[style.colourTfMinor(Minor)]";
+				return "[style.colourTfMinor(Незначительная)]";
 			} else if(index == 2) {
-				return "[style.colourTfLesser(Lesser)]";
+				return "[style.colourTfLesser(Малая)]";
 			} else if(index == 3) {
-				return "[style.colourTfGreater(Greater)]";
+				return "[style.colourTfGreater(Сильная)]";
 			}
 			return null;
 		}
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==0) {
-				return new Response("Back", "Decide to look for a different gender.", WATERING_HOLE_SEARCH_GENDER);
+				return new Response("Назад", "Решить поискать другой пол.", WATERING_HOLE_SEARCH_GENDER);
 			}
 			int count = 1;
 			
@@ -1193,7 +1179,7 @@ public class NightlifeDistrict {
 				for(AbstractSubspecies subspecies : sortedSubspecies) {
 					if(count==index) {
 						return new Response(Util.capitaliseSentence(subspecies.getName(null)),
-								"Look for "+UtilText.generateSingularDeterminer(subspecies.getName(null))+" "+subspecies.getName(null)+" in amongst the crowds of revellers.",
+								"Искать "+UtilText.generateSingularDeterminer(subspecies.getName(null))+" "+subspecies.getName(null)+" среди толпы гуляк.",
 								(isSearchingForASub
 										?WATERING_HOLE_SEARCH_GENERATE
 										:WATERING_HOLE_SEARCH_GENERATE_DOM)) {
@@ -1225,7 +1211,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_SEARCH_GENERATE = new DialogueNode("The Watering Hole", "", false, true) {
+	public static final DialogueNode WATERING_HOLE_SEARCH_GENERATE = new DialogueNode("Поилочка", "", false, true) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -1250,7 +1236,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_CONTACTS = new DialogueNode("The Watering Hole", "", true) {
+	public static final DialogueNode WATERING_HOLE_CONTACTS = new DialogueNode("Поилочка", "", true) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -1265,23 +1251,23 @@ public class NightlifeDistrict {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==0) {
-				return new Response("Back", "Decide to stop searching for someone you've met before.", WATERING_HOLE_MAIN);
+				return new Response("Назад", "Решить перестать искать того, кого вы уже встречали раньше.", WATERING_HOLE_MAIN);
 			}
 			int count = 1;
 			for(GameCharacter character : getSavedClubbers(true)) {
 				if(count==index) {
 					if(!character.isAttractedTo(Main.game.getPlayer())) {
 						return new Response(character.getName(true),
-								UtilText.parse(character, "[npc.Name] is [style.colourBad(no longer attracted to you)], and so would be unwilling to spend time with you in the club.<br/>([npc.She] is [npc.a_fullRace(true)].)"),
+								UtilText.parse(character, "[npc.Name] [style.colourBad(больше не испытывает к вам влечения)] и вряд ли захочет проводить с вами время в клубе.<br/>([npc.She] — это [npc.a_fullRace(true)].)"),
 								null);
 					}
 					if(Main.game.getMinutesPassed()-((NPC)character).getLastTimeEncountered()<12*60) {
 						return new Response(character.getName(true),
-								UtilText.parse(character, "You have already met [npc.name] in the club tonight, and as such, [style.colourBad(you will not be able to encounter [npc.herHim] again until tomorrow)]."),
+								UtilText.parse(character, "Вы уже встречали [npc.name] в клубе сегодня, поэтому [style.colourBad(вы не сможете снова встретить [npc.herHim] до завтра)]."),
 								null);
 					}
 					return new Response(character.getName(true),
-							UtilText.parse(character, "Look for [npc.name] in amongst the crowds of revellers.<br/>([npc.She] is [npc.a_fullRace(true)].)"),
+							UtilText.parse(character, "Искать [npc.name] среди толпы гуляк.<br/>([npc.She] — это [npc.a_fullRace(true)].)"),
 							WATERING_HOLE_FIND_CONTACT) {
 						@Override
 						public void effects() {
@@ -1298,7 +1284,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_FIND_CONTACT = new DialogueNode("The Watering Hole", "", false, true) {
+	public static final DialogueNode WATERING_HOLE_FIND_CONTACT = new DialogueNode("Поилочка", "", false, true) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -1353,7 +1339,7 @@ public class NightlifeDistrict {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==0) {
-				return new Response("Back", "Return to the previous screen.", Main.game.getDefaultDialogue());
+				return new Response("Назад", "Вернуться к предыдущему экрану.", Main.game.getDefaultDialogue());
 			}
 			return null;
 		}
@@ -1366,14 +1352,10 @@ public class NightlifeDistrict {
 		return "<tr>"
 				+ "<td style='min-width:200px;'>"
 					+ baseName
-				+ "</td>"
-				+ "<td>"
-					+ "<div class='saveLoadButton' id='IMPORT_CLUBBER_" + identifier + "' style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>Import</div>"
-				+ "</td>"
-				+ "</tr>";
+				+ "</td><td><div class='saveLoadButton' id='IMPORT_CLUBBER_" + identifier + "' style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>Импорт</div></td></tr>";
 	}
 	
-	public static final DialogueNode WATERING_HOLE_LOITER_GENERATE = new DialogueNode("The Watering Hole", "", false) {
+	public static final DialogueNode WATERING_HOLE_LOITER_GENERATE = new DialogueNode("Поилочка", "", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -1404,7 +1386,7 @@ public class NightlifeDistrict {
 		}
 	};
 
-	public static final DialogueNode WATERING_HOLE_SEATING = new DialogueNode("The Watering Hole", "", false) {
+	public static final DialogueNode WATERING_HOLE_SEATING = new DialogueNode("Поилочка", "", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -1434,7 +1416,7 @@ public class NightlifeDistrict {
 			
 			if(hasPartner()) {
 				if(index==1) {
-					return new Response("Talk", UtilText.parse(getClubbersPresent(), "Talk to [npc.name] and get to know [npc.herHim] a little better."), WATERING_HOLE_SEATING_TALK) {
+					return new Response("Поговорить", UtilText.parse(getClubbersPresent(), "Поговорить с [npc.name] и получше узнать [npc.herHim]."), WATERING_HOLE_SEATING_TALK) {
 						@Override
 						public void effects() {
 							Main.game.getTextEndStringBuilder().append(getClubbersPresent().get(0).incrementAffection(Main.game.getPlayer(), 5));
@@ -1443,7 +1425,7 @@ public class NightlifeDistrict {
 					};
 					
 				} else if(index==2) {
-					return new Response("Flirt", UtilText.parse(getClubbersPresent(), "Compliment [npc.namePos] appearance and start flirting with [npc.herHim]."), WATERING_HOLE_SEATING_FLIRT) {
+					return new Response("Флиртовать", UtilText.parse(getClubbersPresent(), "Сделать комплимент внешности [npc.namePos] и начать флиртовать с [npc.herHim]."), WATERING_HOLE_SEATING_FLIRT) {
 						@Override
 						public void effects() {
 							Main.game.getTextEndStringBuilder().append(getClubbersPresent().get(0).incrementAffection(Main.game.getPlayer(), 10));
@@ -1458,13 +1440,13 @@ public class NightlifeDistrict {
 					}
 					return new Response( // If both partners are bipeds, play footsie. If not, feeling up occurs instead.
 							bothBipeds
-								?"Footsie"
-								:"Feel up",
+								?"Игривые прикосновения ногами"
+								:"Лапать",
 							UtilText.parse(getClubbersPresent(),
 									(bothBipeds
-										?"Lightly push your [pc.foot] into [npc.namePos] groin."
-										:"Press yourself against [npc.name] and start groping [npc.herHim].")
-									+(likesGroping(getPartner(), false)?"":"</br>[style.italicsBad([npc.She] might not react well to this!)]")),
+										?"Слегка толкнуть [pc.foot] пахом в пах [npc.namePos]."
+										:"Прижаться к [npc.name] и начать лапать [npc.herHim].")
+									+(likesGroping(getPartner(), false)?"":"</br>[style.italicsBad([npc.She] может отреагировать на это не лучшим образом!)]")),
 							WATERING_HOLE_SEATING_FOOTSIE) {
 						@Override
 						public void effects() {
@@ -1484,8 +1466,8 @@ public class NightlifeDistrict {
 
 				} else if(index==4) {
 					if(!getPartner().isAttractedTo(Main.game.getPlayer())) {
-						return new Response("Sex (dom)",
-								UtilText.parse(getClubbersPresent(), "[npc.Name] is [style.colourBad(not attracted to you)], and so is unwilling to have sex with you..."),
+						return new Response("Секс (доминант)",
+								UtilText.parse(getClubbersPresent(), "[npc.Name] [style.colourBad(не испытывает к тебе влечения)], и поэтому не желает заниматься с тобой сексом..."),
 								null);
 					}
 					if(likesSex(getPartner(), false)) {
@@ -1517,8 +1499,8 @@ public class NightlifeDistrict {
 								}
 							};
 						}
-						return new ResponseSex("Sex (dom)",
-								UtilText.parse(getClubbersPresent(), "You can't resist [npc.name] any longer! Make a move to start having dominant sex with [npc.herHim]."),
+						return new ResponseSex("Секс (доминант)",
+								UtilText.parse(getClubbersPresent(), "Ты больше не можешь сопротивляться [npc.name]! Сделай шаг, чтобы начать доминировать над [npc.herHim]."),
 								true, true,
 								sm,
 								null,
@@ -1527,8 +1509,8 @@ public class NightlifeDistrict {
 								UtilText.parseFromXMLFile("places/dominion/nightlife/theWateringHole", "WATERING_HOLE_SEATING_SEX_AS_DOM", getClubbersPresent()));
 						
 					} else {
-						return new Response("Sex (dom)",
-								UtilText.parse(getClubbersPresent(), "You can't resist [npc.name] any longer! Make a move to start having dominant sex with [npc.herHim].</br>[style.italicsBad([npc.She] might not react well to this!)]"),
+						return new Response("Секс (доминант)",
+								UtilText.parse(getClubbersPresent(), "Ты больше не можешь сопротивляться [npc.name]! Сделай шаг, чтобы начать доминировать над [npc.herHim].</br>[style.italicsBad([npc.She] может отреагировать на это не слишком хорошо!)]"),
 								WATERING_HOLE_SEATING_SEX_AS_DOM_REJECTED) {
 							@Override
 							public void effects() {
@@ -1546,8 +1528,8 @@ public class NightlifeDistrict {
 					
 				} else if(index==5) {
 					if(!getPartner().isAttractedTo(Main.game.getPlayer())) {
-						return new Response("Sex (sub)",
-								UtilText.parse(getClubbersPresent(), "[npc.Name] is [style.colourBad(not attracted to you)], and so is unwilling to have sex with you..."),
+						return new Response("Секс (сабмиссив)",
+								UtilText.parse(getClubbersPresent(), "[npc.Name] [style.colourBad(не испытывает к тебе влечения)], и поэтому не желает заниматься с тобой сексом..."),
 								null);
 					}
 					if(likesSex(getPartner(), false)) {
@@ -1597,8 +1579,8 @@ public class NightlifeDistrict {
 							};
 						}
 						return new ResponseSex(
-								"Sex (sub)",
-								UtilText.parse(getClubbersPresent(), "You can't resist [npc.name] any longer! Make a move to start having submissive sex with [npc.herHim]."),
+								"Секс (сабмиссив)",
+								UtilText.parse(getClubbersPresent(), "Ты больше не можешь сопротивляться [npc.name]! Сделай шаг, чтобы начать подчиняться [npc.herHim]."),
 								true, true,
 								sm,
 								null,
@@ -1607,8 +1589,8 @@ public class NightlifeDistrict {
 								UtilText.parseFromXMLFile("places/dominion/nightlife/theWateringHole", "WATERING_HOLE_SEATING_SEX_AS_SUB", getClubbersPresent()));
 						
 					} else {
-						return new Response("Sex (sub)",
-								UtilText.parse(getClubbersPresent(), "You can't resist [npc.name] any longer! Make a move to start having submissive sex with [npc.herHim].</br>[style.italicsBad([npc.She] might not react well to this!)]"),
+						return new Response("Секс (сабмиссив)",
+								UtilText.parse(getClubbersPresent(), "Ты больше не можешь сопротивляться [npc.name]! Сделай шаг, чтобы начать подчиняться [npc.herHim].</br>[style.italicsBad([npc.She] может отреагировать на это не слишком хорошо!)]"),
 								WATERING_HOLE_SEATING_SEX_AS_SUB_REJECTED) {
 							@Override
 							public void effects() {
@@ -1623,9 +1605,8 @@ public class NightlifeDistrict {
 					}
 					
 				} if(index==9) {
-					return new Response("Say goodbye",
-							UtilText.parse(getClubbersPresent(), "Tell [npc.name] that you've got to head off for a little while, but that you hope to see [npc.herHim] again."
-									+ "</br>[style.italicsGood(Saves this character, who can then be encountered in the club again.)]"),
+					return new Response("Попрощаться",
+							UtilText.parse(getClubbersPresent(), "Сказать [npc.name], что тебе пора уходить, но ты надеешься снова увидеть [npc.herHim].</br>[style.italicsGood(Сохранить этого персонажа, чтобы его можно было снова встретить в клубе.)]"),
 							WATERING_HOLE_SEATING_LOSE_COMPANY) {
 						@Override
 						public void effects() {
@@ -1635,8 +1616,8 @@ public class NightlifeDistrict {
 					};
 					
 				} else if(index==10) {
-					return new Response("Lose company",
-							UtilText.parse(getClubbersPresent(), "Make up an excuse to get rid of [npc.name].</br>[style.italicsBad(Removes this character from the game.)]"),
+					return new Response("Расстаться",
+							UtilText.parse(getClubbersPresent(), "Придумать предлог, чтобы отделаться от [npc.name].</br>[style.italicsBad(Удалить этого персонажа из игры.)]"),
 							WATERING_HOLE_SEATING_LOSE_COMPANY) {
 						@Override
 						public void effects() {
@@ -1654,7 +1635,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_SEATING_TALK = new DialogueNode("The Watering Hole", "", false) {
+	public static final DialogueNode WATERING_HOLE_SEATING_TALK = new DialogueNode("Поилочка", "", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -1678,7 +1659,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_SEATING_FLIRT = new DialogueNode("The Watering Hole", "", false) {
+	public static final DialogueNode WATERING_HOLE_SEATING_FLIRT = new DialogueNode("Поилочка", "", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -1702,7 +1683,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_SEATING_FOOTSIE = new DialogueNode("The Watering Hole", "", false) {
+	public static final DialogueNode WATERING_HOLE_SEATING_FOOTSIE = new DialogueNode("Поилочка", "", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -1725,7 +1706,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_SEATING_SEX_AS_SUB_REJECTED = new DialogueNode("The Watering Hole", "", false) {
+	public static final DialogueNode WATERING_HOLE_SEATING_SEX_AS_SUB_REJECTED = new DialogueNode("Поилочка", "", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -1748,7 +1729,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_SEATING_SEX_AS_DOM_REJECTED = new DialogueNode("The Watering Hole", "", false) {
+	public static final DialogueNode WATERING_HOLE_SEATING_SEX_AS_DOM_REJECTED = new DialogueNode("Поилочка", "", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -1771,10 +1752,10 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_SEATING_AFTER_SEX = new DialogueNode("Finished", "", true) {
+	public static final DialogueNode WATERING_HOLE_SEATING_AFTER_SEX = new DialogueNode("Завершено", "", true) {
 		@Override
 		public String getDescription() {
-			return UtilText.parse(getClubbersPresent(), "[npc.Name] has had enough for now...");
+			return UtilText.parse(getClubbersPresent(), "С [npc.Name] на сегодня хватит...");
 		}
 		@Override
 		public String getContent() {
@@ -1788,9 +1769,8 @@ public class NightlifeDistrict {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("See again",
-						UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Tell [npc.name] that you hope to see [npc.herHim] again.</br>"
-								+ "[style.italicsGood(Saves this character, who can then be encountered in the club again.)]"),
+				return new Response("Увидеться снова",
+						UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Сказать [npc.name], что надеетесь снова увидеть [npc.herHim].</br>[style.italicsGood(Сохраняет этого персонажа, которого затем можно будет снова встретить в клубе.)]"),
 						WATERING_HOLE_SEATING_AFTER_SEX_SEE_AGAIN) {
 					@Override
 					public void effects() {
@@ -1800,8 +1780,8 @@ public class NightlifeDistrict {
 				};
 				
 			} else if(index==2) {
-				return new Response("Hope not (gentle)",
-						UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Make a non-committal response, secretly hoping that you won't see [npc.name] again.</br>[style.italicsBad(Removes this character from the game.)]"),
+				return new Response("Надеяться, что нет (мягко)",
+						UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Ответить уклончиво, втайне надеясь, что вы больше не увидите [npc.name].</br>[style.italicsBad(Удаляет этого персонажа из игры.)]"),
 						WATERING_HOLE_SEATING_AFTER_SEX_DO_NOT_SEE_AGAIN) {
 					@Override
 					public void effects() {
@@ -1811,8 +1791,8 @@ public class NightlifeDistrict {
 				};
 				
 			} else if(index==3) {
-				return new Response("Hope not (harsh)",
-						UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Crudely tell [npc.name] that you were only interested in fucking [npc.herHim].</br>[style.italicsBad(Removes this character from the game.)]"),
+				return new Response("Надеяться, что нет (грубо)",
+						UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Грубо сказать [npc.name], что вас интересовал только трах [npc.herHim].</br>[style.italicsBad(Удаляет этого персонажа из игры.)]"),
 						WATERING_HOLE_SEATING_AFTER_SEX_DO_NOT_SEE_AGAIN) {
 					@Override
 					public void effects() {
@@ -1825,7 +1805,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_SEATING_AFTER_SEX_SEE_AGAIN = new DialogueNode("The Watering Hole", "", false, true) {
+	public static final DialogueNode WATERING_HOLE_SEATING_AFTER_SEX_SEE_AGAIN = new DialogueNode("Поилочка", "", false, true) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -1848,7 +1828,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_SEATING_AFTER_SEX_DO_NOT_SEE_AGAIN = new DialogueNode("The Watering Hole", "", false, true) {
+	public static final DialogueNode WATERING_HOLE_SEATING_AFTER_SEX_DO_NOT_SEE_AGAIN = new DialogueNode("Поилочка", "", false, true) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -1871,7 +1851,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_SEATING_LOSE_COMPANY = new DialogueNode("The Watering Hole", "", false) {
+	public static final DialogueNode WATERING_HOLE_SEATING_LOSE_COMPANY = new DialogueNode("Поилочка", "", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -1894,7 +1874,7 @@ public class NightlifeDistrict {
 		}
 	};
 
-	public static final DialogueNode WATERING_HOLE_BAR = new DialogueNode("The Watering Hole", "", false) {
+	public static final DialogueNode WATERING_HOLE_BAR = new DialogueNode("Поилочка", "", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -1925,7 +1905,7 @@ public class NightlifeDistrict {
 			
 			if(!Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.kalahariIntroduced)) {
 				if(index==1) {
-					return new Response("Barmaid", "The lioness barmaid says hello.", WATERING_HOLE_BAR_KALAHARI_INTRO) {
+					return new Response("Барменша", "Львица-барменша приветствует тебя.", WATERING_HOLE_BAR_KALAHARI_INTRO) {
 						@Override
 						public void effects() {
 							Main.game.getDialogueFlags().setFlag(DialogueFlagValue.kalahariIntroduced, true);
@@ -1937,7 +1917,7 @@ public class NightlifeDistrict {
 				
 			} else {
 				if(index==1) {
-					return new Response("Kalahari", "Kalahari steps forwards and says hello.", WATERING_HOLE_BAR_KALAHARI) {
+					return new Response("Kalahari", "Kalahari делает шаг вперед и приветствует тебя.", WATERING_HOLE_BAR_KALAHARI) {
 						@Override
 						public void effects() {
 							Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/nightlife/theWateringHole", "WATERING_HOLE_BAR_KALAHARI", getClubbersPresent()));
@@ -1963,7 +1943,7 @@ public class NightlifeDistrict {
 		return sb.toString();
 	}
 	
-	public static final DialogueNode WATERING_HOLE_BAR_KALAHARI_INTRO = new DialogueNode("The Watering Hole", "", false) {
+	public static final DialogueNode WATERING_HOLE_BAR_KALAHARI_INTRO = new DialogueNode("Поилочка", "", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -1985,7 +1965,7 @@ public class NightlifeDistrict {
 		public String getResponseTabTitle(int index) {
 			if(hasPartner()) {
 				if(index==0) {
-					return "Self";
+					return "Я";
 					
 				} else if(index==1) {
 					return UtilText.parse(getClubbersPresent(), "[npc.Name]");
@@ -2006,28 +1986,14 @@ public class NightlifeDistrict {
 					AbstractItem drink = Main.game.getItemGen().generateItem("innoxia_race_human_vanilla_water");
 					int price = (int) (drink.getValue()*KALAHARI_SELL_MODIFIER);
 					if(Main.game.getPlayer().getMoney()<price) {
-						return new Response("Water ("+UtilText.formatAsMoneyUncoloured(price, "span")+")", "You can't afford a bottle of "+drink.getName(false, false)+"!", null);
+						return new Response("Вода ("+UtilText.formatAsMoneyUncoloured(price, "охват")+")", "Тебе не хватает на бутылку "+drink.getName(false, false)+"!", null);
 						
 					} else {
-						return new Response("Water ("+UtilText.formatAsMoney(price, "span")+")", "Ask Kalahari for a bottle of "+drink.getName(false, false)+"."+getDrinkEffects(drink), WATERING_HOLE_BAR_DRINK) {
+						return new Response("Вода ("+UtilText.formatAsMoney(price, "охват")+")", "Попросить у Kalahari бутылку "+drink.getName(false, false)+"."+getDrinkEffects(drink), WATERING_HOLE_BAR_DRINK) {
 							@Override
 							public void effects() {
 								Main.game.getTextStartStringBuilder().append(UtilText.parse(
-										"<p>"
-											+ "[pc.speech(Can I get a bottle of "+drink.getName(false, false)+"?)] you call out over the noise of the club to Kalahari."
-										+ "</p>"
-										+ "<p>"
-											+ "[kalahari.speech(Sure thing hun!)] the lioness responds. [kalahari.speech(That'll be "+Util.intToString(price)+" flames.)]"
-										+ "</p>"
-										+ "<p>"
-											+ "Handing over the money to Kalahari, you watch as she turns around and grabs a bottle of "+drink.getName(false, false)+" from one of the fridges behind the bar."
-											+ " Stepping back towards you, she leans forwards, flashing her cleavage and throwing you a playful wink as she sets the cold beverage down in front of you."
-											+ " [kalahari.speech(Enjoy!)]"
-										+ "</p>"
-										+ "<p>"
-											+ "Shouting out your thanks over the background noise of the club, you twist off the cap and bring the plastic bottle up to your [pc.lips]."
-											+ " A faint, sweet smell informs you that this isn't any ordinary water, and as you tilt your head back and start drinking the cool liquid, the taste of vanilla overwhelms your senses."
-										+ "</p>"));
+										"<p>[pc.speech(Можно мне бутылочку "+drink.getName(false, false)+"?)] — выкрикиваешь ты сквозь шум клуба, обращаясь к Kalahari.</p><p>[kalahari.speech(Конечно, дорогуша!)] — отвечает львица. [kalahari.speech(С тебя "+Util.intToString(price)+" огней.)]</p><p>Отдав деньги Kalahari, ты наблюдаешь, как она разворачивается и достает бутылку "+drink.getName(false, false)+" из одного из холодильников за барной стойкой. Шагнув к тебе, она наклоняется вперед, демонстрируя глубокое декольте, и игриво подмигивает, ставя перед тобой холодный напиток. [kalahari.speech(Наслаждайся!)]</p><p>Выкрикнув благодарность сквозь фоновый шум клуба, ты откручиваешь крышку и подносишь пластиковую бутылку к своим [pc.lips]. Слабый сладкий аромат подсказывает, что это не просто вода, и когда ты запрокидываешь голову и начинаешь пить прохладную жидкость, вкус ванили ошеломляет твои чувства.</p>"));
 								
 								Main.game.getTextStartStringBuilder().append(
 										drink.applyEffect(Main.game.getPlayer(), Main.game.getPlayer())
@@ -2040,30 +2006,14 @@ public class NightlifeDistrict {
 					AbstractItem drink = Main.game.getItemGen().generateItem("innoxia_race_dog_canine_crush");
 					int price = (int) (drink.getValue()*KALAHARI_SELL_MODIFIER);
 					if(Main.game.getPlayer().getMoney()<price) {
-						return new Response("Beer ("+UtilText.formatAsMoneyUncoloured(price, "span")+")", "You can't afford a bottle of "+drink.getName(false, false)+"!", null);
+						return new Response("Пиво ("+UtilText.formatAsMoneyUncoloured(price, "охват")+")", "Тебе не хватает на бутылку "+drink.getName(false, false)+"!", null);
 						
 					} else {
-						return new Response("Beer ("+UtilText.formatAsMoney(price, "span")+")", "Ask Kalahari for a bottle of "+drink.getName(false, false)+"."+getDrinkEffects(drink), WATERING_HOLE_BAR_DRINK) {
+						return new Response("Пиво ("+UtilText.formatAsMoney(price, "охват")+")", "Попросить у Kalahari бутылку "+drink.getName(false, false)+"."+getDrinkEffects(drink), WATERING_HOLE_BAR_DRINK) {
 							@Override
 							public void effects() {
 								Main.game.getTextStartStringBuilder().append(UtilText.parse(
-										"<p>"
-											+ "[pc.speech(Can I get a bottle of "+drink.getName(false, false)+"?)] you call out over the noise of the club to Kalahari."
-										+ "</p>"
-										+ "<p>"
-											+ "[kalahari.speech(Sure thing hun!)] the lioness responds. [kalahari.speech(That'll be "+Util.intToString(price)+" flames.)]"
-										+ "</p>"
-										+ "<p>"
-											+ "Handing over the money to Kalahari, you watch as she turns around and grabs a bottle of "+drink.getName(false, false)+" from one of the fridges behind the bar."
-											+ " Stepping back towards you, she leans forwards, flashing her cleavage and throwing you a playful wink as she sets the cold beer down in front of you."
-											+ " Grabbing a nearby bottle-opener, Kalahari pops the cap off, before pushing the bottle towards you over the bar top."
-											+ " [kalahari.speech(Enjoy!)]"
-										+ "</p>"
-										+ "<p>"
-											+ "Shouting out your thanks over the background noise of the club, you grab the cold bottle and bring it up to your [pc.lips]."
-											+ " As you start gulping it down, you find that it doesn't taste anything like any other beer you've ever had, and it reminds you more of a sugary energy drink rather than any alcoholic beverage."
-											+ " As the last few drops slide down your throat, a strange, musky aftertaste lingers on your tongue."
-										+ "</p>"));
+										"<p>[pc.speech(Можно мне бутылочку "+drink.getName(false, false)+"?)] — выкрикиваешь ты сквозь шум клуба, обращаясь к Kalahari.</p><p>[kalahari.speech(Конечно, дорогуша!)] — отвечает львица. [kalahari.speech(С тебя "+Util.intToString(price)+" огней.)]</p><p>Отдав деньги Kalahari, ты наблюдаешь, как она разворачивается и достает бутылку "+drink.getName(false, false)+" из одного из холодильников за барной стойкой. Отступив на шаг, она наклоняется к тебе, демонстрируя декольте, и игриво подмигивает, ставя перед тобой холодное пиво. Схватив лежавшую рядом открывалку, Kalahari откупоривает бутылку и пододвигает её к тебе по столешнице. [kalahari.speech(Наслаждайся!)]</p><p>Перекрикивая шум клуба, ты выкрикиваешь слова благодарности, хватаешь холодную бутылку и подносишь её к своим [pc.lips]. Когда ты начинаешь жадно глотать напиток, понимаешь, что он совсем не похож на любое другое пиво, что ты пробовал раньше: он больше напоминает сладкий энергетический напиток, чем какой-либо алкогольный коктейль. Когда последние капли проскальзывают в горло, на языке остается странное мускусное послевкусие.</p>"));
 								
 								Main.game.getTextStartStringBuilder().append(
 										drink.applyEffect(Main.game.getPlayer(), Main.game.getPlayer())
@@ -2076,32 +2026,16 @@ public class NightlifeDistrict {
 					AbstractItem drink = Main.game.getItemGen().generateItem("innoxia_race_cat_felines_fancy");
 					int price = (int) (drink.getValue()*KALAHARI_SELL_MODIFIER);
 					if(Main.game.getPlayer().getMoney()<price) {
-						return new Response(Util.capitaliseSentence(drink.getName(false, false))+" ("+UtilText.formatAsMoneyUncoloured(price, "span")+")", "You can't afford a glass of "+drink.getName(false, false)+"!", null);
+						return new Response(Util.capitaliseSentence(drink.getName(false, false))+" ("+UtilText.formatAsMoneyUncoloured(price, "охват")+")", "Тебе не хватает денег на стакан "+drink.getName(false, false)+"!", null);
 						
 					} else {
-						return new Response(Util.capitaliseSentence(drink.getName(false, false))+" ("+UtilText.formatAsMoney(price, "span")+")",
-								"Ask Kalahari for a glass of "+drink.getName(false, false)+"."+getDrinkEffects(drink),
+						return new Response(Util.capitaliseSentence(drink.getName(false, false))+" ("+UtilText.formatAsMoney(price, "охват")+")",
+								"Попросить у Kalahari стакан "+drink.getName(false, false)+"."+getDrinkEffects(drink),
 								WATERING_HOLE_BAR_DRINK) {
 							@Override
 							public void effects() {
 								Main.game.getTextStartStringBuilder().append(UtilText.parse(
-										"<p>"
-											+ "[pc.speech(Can I get a glass of "+drink.getName(false, false)+"?)] you call out over the noise of the club to Kalahari."
-										+ "</p>"
-										+ "<p>"
-											+ "[kalahari.speech(Sure thing hun!)] the lioness responds. [kalahari.speech(That'll be "+Util.intToString(price)+" flames.)]"
-										+ "</p>"
-										+ "<p>"
-											+ "Handing over the money to Kalahari, you watch as she turns around and grabs a bottle of "+drink.getName(false, false)+" from one of the fridges behind the bar."
-											+ " Stepping back towards you, she leans forwards, flashing her cleavage and throwing you a playful wink as she grabs a clean glass from under the bar top."
-											+ " Placing the glass before you, the lioness pours out a serving of the creamy alcoholic beverage, before sliding it over the bar towards you."
-											+ " [kalahari.speech(Enjoy!)]"
-										+ "</p>"
-										+ "<p>"
-											+ "Shouting out your thanks over the background noise of the club, you take hold of the glass and bring it up to your [pc.lips]."
-											+ " The beverage gives off a rich, creamy smell, and as you greedily drink down the cool liquid,"
-												+ " you're delighted to discover that it tastes every bit as good as its delicious aroma suggested it would."
-										+ "</p>"));
+										"<p>[pc.speech(Можно мне стакан "+drink.getName(false, false)+"?)] — выкрикиваешь ты сквозь шум клуба, обращаясь к Kalahari.</p><p>[kalahari.speech(Конечно, дорогуша!)] — отвечает львица. [kalahari.speech(С тебя "+Util.intToString(price)+" огней.)]</p><p>Отдав деньги Kalahari, ты наблюдаешь, как она разворачивается и достает бутылку "+drink.getName(false, false)+" из одного из холодильников за барной стойкой. Отступив на шаг к тебе, она наклоняется вперед, демонстрируя глубокое декольте, и игриво подмигивает, доставая чистый бокал из-под стойки. Поставив бокал перед тобой, львица наливает порцию кремового алкогольного напитка, а затем пододвигает его по барной стойке к тебе. [kalahari.speech(Наслаждайся!)]</p><p>Выкрикнув слова благодарности сквозь фоновый шум клуба, ты берешь бокал и подносишь его к своим [pc.lips]. Напиток источает густой сливочный аромат, и когда ты жадно осушаешь прохладную жидкость, ты с delight обнаруживаешь, что вкус оказывается в точности таким же великолепным, как и его восхитительный запах.</p>"));
 								
 								Main.game.getTextStartStringBuilder().append(
 										drink.applyEffect(Main.game.getPlayer(), Main.game.getPlayer())
@@ -2114,31 +2048,16 @@ public class NightlifeDistrict {
 					AbstractItem drink = Main.game.getItemGen().generateItem("innoxia_race_wolf_wolf_whiskey");
 					int price = (int) (drink.getValue()*KALAHARI_SELL_MODIFIER);
 					if(Main.game.getPlayer().getMoney()<price) {
-						return new Response(Util.capitaliseSentence(drink.getName(false, false))+" ("+UtilText.formatAsMoneyUncoloured(price, "span")+")", "You can't afford a glass of "+drink.getName(false, false)+"!", null);
+						return new Response(Util.capitaliseSentence(drink.getName(false, false))+" ("+UtilText.formatAsMoneyUncoloured(price, "охват")+")", "Тебе не хватает денег на стакан "+drink.getName(false, false)+"!", null);
 						
 					} else {
-						return new Response(Util.capitaliseSentence(drink.getName(false, false))+" ("+UtilText.formatAsMoney(price, "span")+")",
-								"Ask Kalahari for a glass of "+drink.getName(false, false)+"."+getDrinkEffects(drink),
+						return new Response(Util.capitaliseSentence(drink.getName(false, false))+" ("+UtilText.formatAsMoney(price, "охват")+")",
+								"Попросить у Kalahari стакан "+drink.getName(false, false)+"."+getDrinkEffects(drink),
 								WATERING_HOLE_BAR_DRINK) {
 							@Override
 							public void effects() {
 								Main.game.getTextStartStringBuilder().append(UtilText.parse(
-										"<p>"
-											+ "[pc.speech(Can I get a glass of "+drink.getName(false, false)+"?)] you call out over the noise of the club to Kalahari."
-										+ "</p>"
-										+ "<p>"
-											+ "[kalahari.speech(Sure thing hun!)] the lioness responds. [kalahari.speech(That'll be "+Util.intToString(price)+" flames.)]"
-										+ "</p>"
-										+ "<p>"
-											+ "Handing over the money to Kalahari, you watch as she turns around and grabs a bottle of "+drink.getName(false, false)+" from one of the shelves behind the bar."
-											+ " Stepping back towards you, she leans forwards, flashing her cleavage and throwing you a playful wink as she grabs a clean glass from under the bar top."
-											+ " Placing the glass before you, the lioness pours out a serving of the strong alcoholic beverage, before sliding it over the bar towards you."
-											+ " [kalahari.speech(Enjoy!)]"
-										+ "</p>"
-										+ "<p>"
-											+ "Shouting out your thanks over the background noise of the club, you take hold of the glass and bring it up to your [pc.lips]."
-											+ " The whiskey gives off a thick, musky scent, and as you start downing the liquid, you discover that the taste is almost identical to its pungent aroma."
-										+ "</p>"));
+										"<p>[pc.speech(Можно мне стакан "+drink.getName(false, false)+"?)] — выкрикиваешь ты сквозь шум клуба, обращаясь к Kalahari.</p><p>[kalahari.speech(Конечно, дорогуша!)] — отвечает львица. [kalahari.speech(С тебя "+Util.intToString(price)+" огней.)]</p><p>Отдав деньги Kalahari, ты наблюдаешь, как она разворачивается и достает бутылку "+drink.getName(false, false)+" с одной из полок за барной стойкой. Отступив на шаг к тебе, она наклоняется вперед, демонстрируя глубокое декольте, и игриво подмигивает, доставая чистый бокал из-под стойки. Поставив бокал перед тобой, львица наливает порцию крепкого алкогольного напитка, а затем пододвигает его по барной стойке к тебе. [kalahari.speech(Наслаждайся!)]</p><p>Выкрикнув слова благодарности сквозь фоновый шум клуба, ты берешь бокал и подносишь его к своим [pc.lips]. Виски источает густой мускусный аромат, и когда ты начинаешь глушить жидкость, ты обнаруживаешь, что вкус почти идентичен его резкому запаху.</p>"));
 								
 								Main.game.getTextStartStringBuilder().append(
 										drink.applyEffect(Main.game.getPlayer(), Main.game.getPlayer())
@@ -2151,32 +2070,16 @@ public class NightlifeDistrict {
 					AbstractItem drink = Main.game.getItemGen().generateItem("innoxia_race_rat_black_rats_rum");
 					int price = (int) (drink.getValue()*KALAHARI_SELL_MODIFIER);
 					if(Main.game.getPlayer().getMoney()<price) {
-						return new Response(Util.capitaliseSentence(drink.getName(false, false))+" ("+UtilText.formatAsMoneyUncoloured(price, "span")+")", "You can't afford a glass of "+drink.getName(false, false)+"!", null);
+						return new Response(Util.capitaliseSentence(drink.getName(false, false))+" ("+UtilText.formatAsMoneyUncoloured(price, "охват")+")", "Тебе не хватает денег на стакан "+drink.getName(false, false)+"!", null);
 						
 					} else {
-						return new Response(Util.capitaliseSentence(drink.getName(false, false))+" ("+UtilText.formatAsMoney(price, "span")+")",
-								"Ask Kalahari for a glass of "+drink.getName(false, false)+"."+getDrinkEffects(drink),
+						return new Response(Util.capitaliseSentence(drink.getName(false, false))+" ("+UtilText.formatAsMoney(price, "охват")+")",
+								"Попросить у Kalahari стакан "+drink.getName(false, false)+"."+getDrinkEffects(drink),
 								WATERING_HOLE_BAR_DRINK) {
 							@Override
 							public void effects() {
 								Main.game.getTextStartStringBuilder().append(UtilText.parse(
-										"<p>"
-											+ "[pc.speech(Can I get a glass of "+drink.getName(false, false)+"?)] you call out over the noise of the club to Kalahari."
-										+ "</p>"
-										+ "<p>"
-											+ "[kalahari.speech(Sure thing hun!)] the lioness responds. [kalahari.speech(That'll be "+Util.intToString(price)+" flames.)]"
-										+ "</p>"
-										+ "<p>"
-											+ "Handing over the money to Kalahari, you watch as she turns around and grabs a bottle of "+drink.getName(false, false)+" from one of the shelves behind the bar."
-											+ " Stepping back towards you, she leans forwards, flashing her cleavage and throwing you a playful wink as she grabs a clean glass from under the bar top."
-											+ " Placing the glass before you, the lioness pours out a serving of the strong alcoholic beverage, before sliding it over the bar towards you."
-											+ " [kalahari.speech(Enjoy!)]"
-										+ "</p>"
-										+ "<p>"
-											+ "Shouting out your thanks over the background noise of the club, you take hold of the glass and bring it up to your [pc.lips],"
-												+ " before tilting your head back and quickly gulping down the golden liquid."
-											+ " As the last few drops slide down your throat, you notice a faint, musky dryness permeating through the alcoholic beverage, which lingers for some time as a slightly unpleasant aftertaste."
-										+ "</p>"));
+										"<p>[pc.speech(Можно мне стакан "+drink.getName(false, false)+"?)] — выкрикиваешь ты сквозь шум клуба, обращаясь к Kalahari.</p><p>[kalahari.speech(Конечно, дорогуша!)] — отвечает львица. [kalahari.speech(С тебя "+Util.intToString(price)+" огней.)]</p><p>Отдав деньги Kalahari, ты наблюдаешь, как она разворачивается и достает бутылку "+drink.getName(false, false)+" с одной из полок за барной стойкой. Отступив на шаг назад, она наклоняется вперед, демонстрируя глубокое декольте, и игриво подмигивает тебе, доставая чистый бокал из-под стойки. Поставив бокал перед тобой, львица наливает порцию крепкого алкогольного напитка, а затем пододвигает его по барной стойке к тебе. [kalahari.speech(Наслаждайся!)]</p><p>Перекрикивая фоновый шум клуба, ты выкрикиваешь слова благодарности, берешь бокал и подносишь его к своим [pc.lips], после чего запрокидываешь голову и залпом осушаешь золотистую жидкость. Когда последние капли проскальзывают по твоему горлу, ты замечаешь слабый мускусный привкус, пропитывающий алкогольный напиток, который на некоторое время остается слегка неприятным послевкусием.</p>"));
 								
 								Main.game.getTextStartStringBuilder().append(
 										drink.applyEffect(Main.game.getPlayer(), Main.game.getPlayer())
@@ -2187,7 +2090,7 @@ public class NightlifeDistrict {
 				
 				} else if(index==6) {
 					if(!hasPartner()) {
-						return new Response("Talk", "Lean forwards and talk to Kalahari for a little while.", WATERING_HOLE_BAR_KALAHARI_TALK) {
+						return new Response("Поговорить", "Наклониться вперед и немного поболтать с Kalahari.", WATERING_HOLE_BAR_KALAHARI_TALK) {
 							@Override
 							public void effects() {
 								Main.game.getTextEndStringBuilder().append(Main.game.getNpc(Kalahari.class).incrementAffection(Main.game.getPlayer(), 5));
@@ -2195,12 +2098,12 @@ public class NightlifeDistrict {
 							}
 						};
 					} else {
-						return new Response("Talk", UtilText.parse(getClubbersPresent(), "You can't talk to Kalahari while [npc.name] is with you!"), null);
+						return new Response("Поговорить", UtilText.parse(getClubbersPresent(), "Ты не можешь разговаривать с Kalahari, пока с тобой [npc.name]!"), null);
 					}
 					
 				} else if(index==7) {
 					if(!hasPartner()) {
-						return new Response("Flirt", "Start flirting with Kalahari.", WATERING_HOLE_BAR_KALAHARI_FLIRT) {
+						return new Response("Флиртовать", "Начать флиртовать с Kalahari.", WATERING_HOLE_BAR_KALAHARI_FLIRT) {
 							@Override
 							public void effects() {
 								Main.game.getTextEndStringBuilder().append(Main.game.getNpc(Kalahari.class).incrementAffection(Main.game.getPlayer(), 10));
@@ -2210,22 +2113,22 @@ public class NightlifeDistrict {
 							}
 						};
 					} else {
-						return new Response("Flirt", UtilText.parse(getClubbersPresent(), "You can't flirt with Kalahari while [npc.name] is with you!"), null);
+						return new Response("Флиртовать", UtilText.parse(getClubbersPresent(), "Ты не можешь флиртовать с Kalahari, пока с тобой [npc.name]!"), null);
 					}
 					
 				} else if(index==8) {
 					if(hasPartner()) {
-						return new Response("Break", UtilText.parse(getClubbersPresent(), "You can't ask Kalahari to spend her break with you while [npc.name] is with you!"), null);
+						return new Response("Перерыв", UtilText.parse(getClubbersPresent(), "Ты не можешь попросить Kalahari провести перерыв с тобой, пока с тобой [npc.name]!"), null);
 						
 					} else if(Main.game.getMinutesPassed() - Main.game.getDialogueFlags().getSavedLong(Kalahari.KALAHARI_BREAK_TIMER_ID) < 60 * 12) {
-							return new Response("Break", "Kalahari has already used up her break tonight!", null);
+							return new Response("Перерыв", "Kalahari уже использовала свой перерыв сегодня вечером!", null);
 							
 					} else if(!likesKiss(Main.game.getNpc(Kalahari.class), false)) {
-						return new Response("Break", "You don't know Kalahari well enough to ask her to spend her break with you. Try talking and flirting with her a little first...", null);
+						return new Response("Перерыв", "Ты еще недостаточно хорошо знаешь Kalahari, чтобы пригласить ее провести перерыв вместе с тобой. Сначала попробуй немного поболтать и пофлиртовать...", null);
 						
 					} else {
 						if(!Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.krugerIntroduced)) {
-							return new Response("Break", "Ask Kalahari if she's got a break coming up, and if she'd like to spend it with you.", WATERING_HOLE_BAR_KALAHARI_BREAK_KRUGER_INTRO) {
+							return new Response("Перерыв", "Спросить Kalahari, скоро ли у нее будет перерыв и не хочет ли она провести его с тобой.", WATERING_HOLE_BAR_KALAHARI_BREAK_KRUGER_INTRO) {
 								@Override
 								public void effects() {
 									Main.game.getNpc(Kalahari.class).setLocation(WorldType.NIGHTLIFE_CLUB, PlaceType.WATERING_HOLE_VIP_AREA);
@@ -2237,7 +2140,7 @@ public class NightlifeDistrict {
 							};
 							
 						} else {
-							return new Response("Break", "Ask Kalahari if she's got a break coming up, and if she'd like to relax in the VIP area with you again.", WATERING_HOLE_BAR_KALAHARI_BREAK) {
+							return new Response("Перерыв", "Спросить Kalahari, скоро ли у нее будет перерыв и не хочет ли она снова отдохнуть с тобой в VIP-зоне.", WATERING_HOLE_BAR_KALAHARI_BREAK) {
 								@Override
 								public void effects() {
 									Main.game.getNpc(Kalahari.class).setLocation(WorldType.NIGHTLIFE_CLUB, PlaceType.WATERING_HOLE_VIP_AREA);
@@ -2257,33 +2160,16 @@ public class NightlifeDistrict {
 					AbstractItem drink = Main.game.getItemGen().generateItem("innoxia_race_human_vanilla_water");
 					int price = (int) (drink.getValue()*KALAHARI_SELL_MODIFIER);
 					if(Main.game.getPlayer().getMoney()<price) {
-						return new Response("Water ("+UtilText.formatAsMoneyUncoloured(price, "span")+")", "You can't afford a bottle of "+drink.getName(false, false)+"!", null);
+						return new Response("Вода ("+UtilText.formatAsMoneyUncoloured(price, "охват")+")", "Тебе не хватает на бутылку "+drink.getName(false, false)+"!", null);
 						
 					} else {
-						return new Response("Water ("+UtilText.formatAsMoney(price, "span")+")",
-								UtilText.parse(getClubbersPresent(), "Ask Kalahari for a bottle of "+drink.getName(false, false)+" for [npc.name]."+getDrinkEffects(drink)),
+						return new Response("Вода ("+UtilText.formatAsMoney(price, "охват")+")",
+								UtilText.parse(getClubbersPresent(), "Попросить у Kalahari бутылку "+drink.getName(false, false)+" для [npc.name]."+getDrinkEffects(drink)),
 								WATERING_HOLE_BAR_DRINK) {
 							@Override
 							public void effects() {
 								Main.game.getTextStartStringBuilder().append(UtilText.parse(getClubbersPresent(), 
-										"<p>"
-											+ "[pc.speech(Can I get a bottle of "+drink.getName(false, false)+"?)] you call out over the noise of the club to Kalahari."
-										+ "</p>"
-										+ "<p>"
-											+ "[kalahari.speech(Sure thing hun!)] the lioness responds. [kalahari.speech(That'll be "+Util.intToString(price)+" flames.)]"
-										+ "</p>"
-										+ "<p>"
-											+ "Handing over the money to Kalahari, you watch as she turns around and grabs a bottle of "+drink.getName(false, false)+" from one of the fridges behind the bar."
-											+ " Stepping back towards you, she leans forwards, flashing her cleavage and throwing you a playful wink as she sets the cold beverage down in front of you."
-											+ " [kalahari.speech(Enjoy!)]"
-										+ "</p>"
-										+ "<p>"
-											+ "Shouting out your thanks over the background noise of the club, you pass the bottle to [npc.name]."
-											+ " [pc.speech(You look like you could use some water. Here you go.)]"
-										+ "</p>"
-										+ "<p>"
-											+ "[npc.speech(Thanks, I was getting pretty thirsty, yeah,)] [npc.name] responds, before twisting off the bottle's cap and gulping down the water."
-										+ "</p>"));
+										"<p>[pc.speech(Можно мне бутылочку "+drink.getName(false, false)+"?)] — выкрикиваешь ты сквозь шум клуба, обращаясь к Kalahari.</p><p>[kalahari.speech(Конечно, дорогуша!)] — отвечает львица. [kalahari.speech(С тебя "+Util.intToString(price)+" огней.)]</p><p>Отдав деньги Kalahari, ты наблюдаешь, как она разворачивается и достает бутылку "+drink.getName(false, false)+" из одного из холодильников за барной стойкой. Отступая к тебе, она наклоняется вперед, демонстрируя декольте, и игриво подмигивает тебе, ставя перед тобой холодный напиток. [kalahari.speech(Наслаждайся!)]</p><p>Выкрикнув слова благодарности сквозь шум клуба, ты передаешь бутылку [npc.name]. [pc.speech(Похоже, тебе не помешало бы немного водички. Вот, держи.)]</p><p>[npc.speech(Спасибо, я уже изрядно притомилась, да,)] [npc.name] отвечает, прежде чем открутить крышку и жадно осушить бутылку.</p>"));
 								
 								Main.game.getTextStartStringBuilder().append(
 										drink.applyEffect(clubber, clubber)
@@ -2297,34 +2183,16 @@ public class NightlifeDistrict {
 					AbstractItem drink = Main.game.getItemGen().generateItem("innoxia_race_dog_canine_crush");
 					int price = (int) (drink.getValue()*KALAHARI_SELL_MODIFIER);
 					if(Main.game.getPlayer().getMoney()<price) {
-						return new Response("Beer ("+UtilText.formatAsMoneyUncoloured(price, "span")+")", "You can't afford a bottle of "+drink.getName(false, false)+"!", null);
+						return new Response("Пиво ("+UtilText.formatAsMoneyUncoloured(price, "охват")+")", "Тебе не хватает на бутылку "+drink.getName(false, false)+"!", null);
 						
 					} else {
-						return new Response("Beer ("+UtilText.formatAsMoney(price, "span")+")",
-								UtilText.parse(getClubbersPresent(), "Ask Kalahari for a bottle of "+drink.getName(false, false)+" for [npc.name]."+getDrinkEffects(drink)),
+						return new Response("Пиво ("+UtilText.formatAsMoney(price, "охват")+")",
+								UtilText.parse(getClubbersPresent(), "Попросить у Kalahari бутылку "+drink.getName(false, false)+" для [npc.name]."+getDrinkEffects(drink)),
 								WATERING_HOLE_BAR_DRINK) {
 							@Override
 							public void effects() {
 								Main.game.getTextStartStringBuilder().append(UtilText.parse(getClubbersPresent(), 
-										"<p>"
-											+ "[pc.speech(Can I get a bottle of "+drink.getName(false, false)+"?)] you call out over the noise of the club to Kalahari."
-										+ "</p>"
-										+ "<p>"
-											+ "[kalahari.speech(Sure thing hun!)] the lioness responds. [kalahari.speech(That'll be "+Util.intToString(price)+" flames.)]"
-										+ "</p>"
-										+ "<p>"
-											+ "Handing over the money to Kalahari, you watch as she turns around and grabs a bottle of "+drink.getName(false, false)+" from one of the fridges behind the bar."
-											+ " Stepping back towards you, she leans forwards, flashing her cleavage and throwing you a playful wink as she sets the cold beer down in front of you."
-											+ " Grabbing a nearby bottle-opener, Kalahari pops the cap off, before pushing the bottle towards you over the bar top."
-											+ " [kalahari.speech(Enjoy!)]"
-										+ "</p>"
-										+ "<p>"
-											+ "Shouting out your thanks over the background noise of the club, you pass the bottle to [npc.name]."
-											+ " [pc.speech(You look like you could use a drink. Here you go.)]"
-										+ "</p>"
-										+ "<p>"
-											+ "[npc.speech(Thanks! I was getting pretty thirsty, yeah,)] [npc.name] responds, before lifting the bottle up to [npc.her] [npc.lips] and gulping down the beer."
-										+ "</p>"));
+										"<p>[pc.speech(Можно мне бутылочку "+drink.getName(false, false)+"?)] — выкрикиваешь ты сквозь шум клуба, обращаясь к Kalahari.</p><p>[kalahari.speech(Конечно, дорогуша!)] — отвечает львица. [kalahari.speech(С тебя "+Util.intToString(price)+" огней.)]</p><p>Отдав деньги Kalahari, ты наблюдаешь, как она разворачивается и достает бутылку "+drink.getName(false, false)+" из одного из холодильников за барной стойкой. Отступив к тебе, она наклоняется вперед, демонстрируя глубокое декольте и игриво подмигивая, пока ставит перед тобой холодное пиво. Схватив лежащий рядом открывашка, Kalahari откупоривает бутылку и пододвигает её к тебе через стойку. [kalahari.speech(Наслаждайся!)]</p><p>Прокричав слова благодарности сквозь фоновый шум клуба, ты передаешь бутылку [npc.name]. [pc.speech(Похоже, тебе не помешает глоток. Держи.)]</p><p>[npc.speech(Спасибо! Я уже изрядно притомилась, да,)] [npc.name] отвечает, прежде чем поднести бутылку к [npc.her] [npc.lips] и жадно осушить её.</p>"));
 								
 								Main.game.getTextStartStringBuilder().append(
 										drink.applyEffect(clubber, clubber)
@@ -2338,34 +2206,16 @@ public class NightlifeDistrict {
 					AbstractItem drink = Main.game.getItemGen().generateItem("innoxia_race_cat_felines_fancy");
 					int price = (int) (drink.getValue()*KALAHARI_SELL_MODIFIER);
 					if(Main.game.getPlayer().getMoney()<price) {
-						return new Response(Util.capitaliseSentence(drink.getName(false, false))+" ("+UtilText.formatAsMoneyUncoloured(price, "span")+")", "You can't afford a glass of "+drink.getName(false, false)+"!", null);
+						return new Response(Util.capitaliseSentence(drink.getName(false, false))+" ("+UtilText.formatAsMoneyUncoloured(price, "охват")+")", "Тебе не хватает денег на стакан "+drink.getName(false, false)+"!", null);
 						
 					} else {
-						return new Response(Util.capitaliseSentence(drink.getName(false, false))+" ("+UtilText.formatAsMoney(price, "span")+")",
-								UtilText.parse(getClubbersPresent(), "Ask Kalahari for a glass of "+drink.getName(false, false)+" for [npc.name]."+getDrinkEffects(drink)),
+						return new Response(Util.capitaliseSentence(drink.getName(false, false))+" ("+UtilText.formatAsMoney(price, "охват")+")",
+								UtilText.parse(getClubbersPresent(), "Попросить у Kalahari стакан "+drink.getName(false, false)+" для [npc.name]."+getDrinkEffects(drink)),
 								WATERING_HOLE_BAR_DRINK) {
 							@Override
 							public void effects() {
 								Main.game.getTextStartStringBuilder().append(UtilText.parse(getClubbersPresent(), 
-										"<p>"
-											+ "[pc.speech(Can I get a glass of "+drink.getName(false, false)+"?)] you call out over the noise of the club to Kalahari."
-										+ "</p>"
-										+ "<p>"
-											+ "[kalahari.speech(Sure thing hun!)] the lioness responds. [kalahari.speech(That'll be "+Util.intToString(price)+" flames.)]"
-										+ "</p>"
-										+ "<p>"
-											+ "Handing over the money to Kalahari, you watch as she turns around and grabs a bottle of "+drink.getName(false, false)+" from one of the fridges behind the bar."
-											+ " Stepping back towards you, she leans forwards, flashing her cleavage and throwing you a playful wink as she grabs a clean glass from under the bar top."
-											+ " Placing the glass before you, the lioness pours out a serving of the creamy alcoholic beverage, before sliding it over the bar towards you."
-											+ " [kalahari.speech(Enjoy!)]"
-										+ "</p>"
-										+ "<p>"
-											+ "Shouting out your thanks over the background noise of the club, you pass the glass to [npc.name]."
-											+ " [pc.speech(You look like you could use a drink. Here you go.)]"
-										+ "</p>"
-										+ "<p>"
-											+ "[npc.speech(Aww, thanks! I love Feline's Fancy!)] [npc.name] happily responds, before lifting the glass up to [npc.her] [npc.lips] and gulping down the creamy alcoholic drink."
-										+ "</p>"));
+										"<p>[pc.speech(Можно мне стакан "+drink.getName(false, false)+"?)] — выкрикиваешь ты сквозь шум клуба, обращаясь к Kalahari.</p><p>[kalahari.speech(Конечно, дорогуша!)] — отвечает львица. [kalahari.speech(С тебя "+Util.intToString(price)+" огней.)]</p><p>Отдав деньги Kalahari, ты наблюдаешь, как она разворачивается и достает бутылку "+drink.getName(false, false)+" из одного из холодильников за барной стойкой. Отступив к тебе, она наклоняется вперед, демонстрируя глубокое декольте и игриво подмигивая, пока достает чистый бокал из-под стойки. Поставив бокал перед тобой, львица наливает порцию кремового алкогольного напитка, а затем пододвигает его к тебе по барной стойке. [kalahari.speech(Наслаждайся!)]</p><p>Прокричав слова благодарности сквозь фоновый шум клуба, ты передаешь бокал [npc.name]. [pc.speech(Похоже, тебе не помешает глоток. Держи.)]</p><p>[npc.speech(О-о, спасибо! Обожаю «Кошачью изысканность»!)] [npc.name] радостно отвечает, прежде чем поднести бокал к [npc.her] [npc.lips] и жадно осушить этот сливочный алкогольный напиток.</p>"));
 								
 								Main.game.getTextStartStringBuilder().append(
 										drink.applyEffect(clubber, clubber)
@@ -2379,34 +2229,16 @@ public class NightlifeDistrict {
 					AbstractItem drink = Main.game.getItemGen().generateItem("innoxia_race_wolf_wolf_whiskey");
 					int price = (int) (drink.getValue()*KALAHARI_SELL_MODIFIER);
 					if(Main.game.getPlayer().getMoney()<price) {
-						return new Response(Util.capitaliseSentence(drink.getName(false, false))+" ("+UtilText.formatAsMoneyUncoloured(price, "span")+")", "You can't afford a glass of "+drink.getName(false, false)+"!", null);
+						return new Response(Util.capitaliseSentence(drink.getName(false, false))+" ("+UtilText.formatAsMoneyUncoloured(price, "охват")+")", "Тебе не хватает денег на стакан "+drink.getName(false, false)+"!", null);
 						
 					} else {
-						return new Response(Util.capitaliseSentence(drink.getName(false, false))+" ("+UtilText.formatAsMoney(price, "span")+")",
-								UtilText.parse(getClubbersPresent(), "Ask Kalahari for a glass of "+drink.getName(false, false)+" for [npc.name]."+getDrinkEffects(drink)),
+						return new Response(Util.capitaliseSentence(drink.getName(false, false))+" ("+UtilText.formatAsMoney(price, "охват")+")",
+								UtilText.parse(getClubbersPresent(), "Попросить у Kalahari стакан "+drink.getName(false, false)+" для [npc.name]."+getDrinkEffects(drink)),
 								WATERING_HOLE_BAR_DRINK) {
 							@Override
 							public void effects() {
 								Main.game.getTextStartStringBuilder().append(UtilText.parse(getClubbersPresent(), 
-										"<p>"
-											+ "[pc.speech(Can I get a glass of "+drink.getName(false, false)+"?)] you call out over the noise of the club to Kalahari."
-										+ "</p>"
-										+ "<p>"
-											+ "[kalahari.speech(Sure thing hun!)] the lioness responds. [kalahari.speech(That'll be "+Util.intToString(price)+" flames.)]"
-										+ "</p>"
-										+ "<p>"
-											+ "Handing over the money to Kalahari, you watch as she turns around and grabs a bottle of "+drink.getName(false, false)+" from one of the shelves behind the bar."
-											+ " Stepping back towards you, she leans forwards, flashing her cleavage and throwing you a playful wink as she grabs a clean glass from under the bar top."
-											+ " Placing the glass before you, the lioness pours out a serving of the strong alcoholic beverage, before sliding it over the bar towards you."
-											+ " [kalahari.speech(Enjoy!)]"
-										+ "</p>"
-										+ "<p>"
-											+ "Shouting out your thanks over the background noise of the club, you pass the glass to [npc.name]."
-											+ " [pc.speech(You look like you could use a drink. Here you go.)]"
-										+ "</p>"
-										+ "<p>"
-											+ "[npc.speech(Hey, thanks, [pc.name]! Wolf Whiskey's the best!)] [npc.name] happily responds, before lifting the glass up to [npc.her] [npc.lips] and gulping down the strong alcoholic drink."
-										+ "</p>"));
+										"<p>[pc.speech(Можно мне стакан "+drink.getName(false, false)+"?)] — выкрикиваешь ты сквозь шум клуба, обращаясь к Kalahari.</p><p>[kalahari.speech(Конечно, дорогуша!)] — отвечает львица. [kalahari.speech(С тебя "+Util.intToString(price)+" огней.)]</p><p>Отдав деньги Kalahari, ты наблюдаешь, как она разворачивается и достает бутылку "+drink.getName(false, false)+" из одной из полок за барной стойкой. Отступив на шаг назад, она подается вперед, демонстрируя глубокое декольте, и игриво подмигивает тебе, доставая чистый бокал из-под стойки. Поставив бокал перед тобой, львица наливает порцию крепкого алкогольного напитка, а затем пододвигает его по стойке к тебе. [kalahari.speech(Наслаждайся!)]</p><p>Выкрикнув слова благодарности сквозь фоновый шум клуба, ты передаешь бокал [npc.name]. [pc.speech(Похоже, тебе не помешало бы выпить. Держи.)]</p><p>[npc.speech(Эй, спасибо, [pc.name]! Волчье виски — просто лучший!)] [npc.name] счастливо отзывается, прежде чем поднести бокал к [npc.her] [npc.lips] и залпом осушить крепкий алкогольный напиток.</p>"));
 								
 								Main.game.getTextStartStringBuilder().append(
 										drink.applyEffect(clubber, clubber)
@@ -2420,34 +2252,16 @@ public class NightlifeDistrict {
 					AbstractItem drink = Main.game.getItemGen().generateItem("innoxia_race_rat_black_rats_rum");
 					int price = (int) (drink.getValue()*KALAHARI_SELL_MODIFIER);
 					if(Main.game.getPlayer().getMoney()<price) {
-						return new Response(Util.capitaliseSentence(drink.getName(false, false))+" ("+UtilText.formatAsMoneyUncoloured(price, "span")+")", "You can't afford a glass of "+drink.getName(false, false)+"!", null);
+						return new Response(Util.capitaliseSentence(drink.getName(false, false))+" ("+UtilText.formatAsMoneyUncoloured(price, "охват")+")", "Тебе не хватает денег на стакан "+drink.getName(false, false)+"!", null);
 						
 					} else {
-						return new Response(Util.capitaliseSentence(drink.getName(false, false))+" ("+UtilText.formatAsMoney(price, "span")+")",
-								UtilText.parse(getClubbersPresent(), "Ask Kalahari for a glass of "+drink.getName(false, false)+" for [npc.name]."+getDrinkEffects(drink)),
+						return new Response(Util.capitaliseSentence(drink.getName(false, false))+" ("+UtilText.formatAsMoney(price, "охват")+")",
+								UtilText.parse(getClubbersPresent(), "Попросить у Kalahari стакан "+drink.getName(false, false)+" для [npc.name]."+getDrinkEffects(drink)),
 								WATERING_HOLE_BAR_DRINK) {
 							@Override
 							public void effects() {
 								Main.game.getTextStartStringBuilder().append(UtilText.parse(getClubbersPresent(), 
-										"<p>"
-											+ "[pc.speech(Can I get a glass of "+drink.getName(false, false)+"?)] you call out over the noise of the club to Kalahari."
-										+ "</p>"
-										+ "<p>"
-											+ "[kalahari.speech(Sure thing hun!)] the lioness responds. [kalahari.speech(That'll be "+Util.intToString(price)+" flames.)]"
-										+ "</p>"
-										+ "<p>"
-											+ "Handing over the money to Kalahari, you watch as she turns around and grabs a bottle of "+drink.getName(false, false)+" from one of the shelves behind the bar."
-											+ " Stepping back towards you, she leans forwards, flashing her cleavage and throwing you a playful wink as she grabs a clean glass from under the bar top."
-											+ " Placing the glass before you, the lioness pours out a serving of the strong alcoholic beverage, before sliding it over the bar towards you."
-											+ " [kalahari.speech(Enjoy!)]"
-										+ "</p>"
-										+ "<p>"
-											+ "Shouting out your thanks over the background noise of the club, you pass the glass to [npc.name]."
-											+ " [pc.speech(You look like you could use a drink. Here you go.)]"
-										+ "</p>"
-										+ "<p>"
-											+ "[npc.speech(Thanks, [pc.name]! This rum's the best!)] [npc.name] happily responds, before lifting the glass up to [npc.her] [npc.lips] and gulping down the strong alcoholic drink."
-										+ "</p>"));
+										"<p>[pc.speech(Можно мне стакан "+drink.getName(false, false)+"?)] — выкрикиваешь ты сквозь шум клуба, обращаясь к Kalahari.</p><p>[kalahari.speech(Конечно, дорогуша!)] — отвечает львица. [kalahari.speech(С тебя "+Util.intToString(price)+" огней.)]</p><p>Отдав деньги Kalahari, ты наблюдаешь, как она разворачивается и достает бутылку "+drink.getName(false, false)+" ...с одной из полок за барной стойкой. Отступив на шаг назад к тебе, она наклоняется вперед, демонстрируя декольте, и игриво подмигивает тебе, доставая чистый бокал из-под стойки. Поставив бокал перед тобой, львица наливает порцию крепкого алкогольного напитка, а затем пододвигает его по барной стойке к тебе. [kalahari.speech(Наслаждайся!)]</p><p>Перекрикивая фоновый шум клуба, ты выкрикиваешь слова благодарности и передаешь бокал [npc.name]. [pc.speech(Похоже, тебе не помешает выпить. Держи.)]</p><p>[npc.speech(Спасибо, [pc.name]! Этот ром просто лучший!)] [npc.name] счастливо отвечает, прежде чем поднести бокал к [npc.her] [npc.lips] и залпом осушить крепкий алкогольный напиток.</p>"));
 								
 								Main.game.getTextStartStringBuilder().append(
 										drink.applyEffect(clubber, clubber)
@@ -2458,7 +2272,7 @@ public class NightlifeDistrict {
 					}
 				
 				} else if(index==6) {
-					return new Response("Talk", UtilText.parse(getClubbersPresent(), "Talk to [npc.name] in order to get to know [npc.herHim] better."), WATERING_HOLE_BAR_TALK) {
+					return new Response("Поговорить", UtilText.parse(getClubbersPresent(), "Поговори с [npc.name], чтобы узнать [npc.herHim] получше."), WATERING_HOLE_BAR_TALK) {
 						@Override
 						public void effects() {
 							Main.game.getTextEndStringBuilder().append(getClubbersPresent().get(0).incrementAffection(Main.game.getPlayer(), 5));
@@ -2467,7 +2281,7 @@ public class NightlifeDistrict {
 					};
 					
 				} else if(index==7) {
-					return new Response("Flirt", UtilText.parse(getClubbersPresent(), "Start flirting with [npc.name]."), WATERING_HOLE_BAR_FLIRT) {
+					return new Response("Флиртовать", UtilText.parse(getClubbersPresent(), "Начать флиртовать с [npc.name]."), WATERING_HOLE_BAR_FLIRT) {
 						@Override
 						public void effects() {
 							Main.game.getTextEndStringBuilder().append(getClubbersPresent().get(0).incrementAffection(Main.game.getPlayer(), 10));
@@ -2476,8 +2290,8 @@ public class NightlifeDistrict {
 					};
 					
 				} else if(index==8) {
-					return new Response("Kiss",
-							UtilText.parse(getClubbersPresent(), "Step forwards and kiss [npc.name]."+(likesKiss(getPartner(), false)?"":"</br>[style.italicsBad([npc.She] might not react well to this!)]")),
+					return new Response("Поцеловать",
+							UtilText.parse(getClubbersPresent(), "Сделать шаг вперед и поцеловать [npc.name]."+(likesKiss(getPartner(), false)?"":"</br>[style.italicsBad([npc.She] может отреагировать на это не лучшим образом!)]")),
 							WATERING_HOLE_BAR_KISS) {
 						@Override
 						public void effects() {
@@ -2498,8 +2312,8 @@ public class NightlifeDistrict {
 					};
 					
 				} else if(index==9) {
-					return new Response("Feel up",
-							UtilText.parse(getClubbersPresent(), "Press yourself against [npc.name] and start groping [npc.herHim]."+(likesGroping(getPartner(), false)?"":"</br>[style.italicsBad([npc.She] might not react well to this!)]")),
+					return new Response("Лапать",
+							UtilText.parse(getClubbersPresent(), "Прижаться к [npc.name] и начать лапать [npc.herHim]."+(likesGroping(getPartner(), false)?"":"</br>[style.italicsBad([npc.She] может отреагировать на это не лучшим образом!)]")),
 							WATERING_HOLE_BAR_GROPE) {
 						@Override
 						public void effects() {
@@ -2520,9 +2334,8 @@ public class NightlifeDistrict {
 					};
 					
 				} else if(index==11) {
-					return new Response("Say goodbye",
-							UtilText.parse(getClubbersPresent(), "Tell [npc.name] that you've got to head off for a little while, but that you hope to see [npc.herHim] again."
-									+ "</br>[style.italicsGood(Saves this character, who can then be encountered in the club again.)]"),
+					return new Response("Попрощаться",
+							UtilText.parse(getClubbersPresent(), "Сказать [npc.name], что тебе пора уходить, но ты надеешься снова увидеть [npc.herHim].</br>[style.italicsGood(Сохранить этого персонажа, чтобы его можно было снова встретить в клубе.)]"),
 							WATERING_HOLE_BAR_LOSE_COMPANY) {
 						@Override
 						public void effects() {
@@ -2532,8 +2345,8 @@ public class NightlifeDistrict {
 					};
 					
 				} else if(index==12) {
-					return new Response("Lose company",
-							UtilText.parse(getClubbersPresent(), "Make up an excuse to get rid of [npc.name].</br>[style.italicsBad(Removes this character from the game.)]"),
+					return new Response("Расстаться",
+							UtilText.parse(getClubbersPresent(), "Придумать предлог, чтобы отделаться от [npc.name].</br>[style.italicsBad(Удалить этого персонажа из игры.)]"),
 							WATERING_HOLE_BAR_LOSE_COMPANY) {
 						@Override
 						public void effects() {
@@ -2548,7 +2361,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_BAR_TALK = new DialogueNode("The Watering Hole", "", false) {
+	public static final DialogueNode WATERING_HOLE_BAR_TALK = new DialogueNode("Поилочка", "", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -2577,7 +2390,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_BAR_FLIRT = new DialogueNode("The Watering Hole", "", false) {
+	public static final DialogueNode WATERING_HOLE_BAR_FLIRT = new DialogueNode("Поилочка", "", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -2606,7 +2419,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_BAR_KISS = new DialogueNode("The Watering Hole", "", false) {
+	public static final DialogueNode WATERING_HOLE_BAR_KISS = new DialogueNode("Поилочка", "", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -2634,7 +2447,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_BAR_GROPE = new DialogueNode("The Watering Hole", "", false) {
+	public static final DialogueNode WATERING_HOLE_BAR_GROPE = new DialogueNode("Поилочка", "", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -2662,7 +2475,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_BAR_LOSE_COMPANY = new DialogueNode("The Watering Hole", "", false) {
+	public static final DialogueNode WATERING_HOLE_BAR_LOSE_COMPANY = new DialogueNode("Поилочка", "", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -2690,7 +2503,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_BAR_DRINK = new DialogueNode("The Watering Hole", "", false) {
+	public static final DialogueNode WATERING_HOLE_BAR_DRINK = new DialogueNode("Поилочка", "", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -2718,7 +2531,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_BAR_KALAHARI = new DialogueNode("The Watering Hole", "", false) {
+	public static final DialogueNode WATERING_HOLE_BAR_KALAHARI = new DialogueNode("Поилочка", "", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -2747,7 +2560,7 @@ public class NightlifeDistrict {
 	};
 
 	
-	public static final DialogueNode WATERING_HOLE_BAR_KALAHARI_TALK = new DialogueNode("The Watering Hole", "", false) {
+	public static final DialogueNode WATERING_HOLE_BAR_KALAHARI_TALK = new DialogueNode("Поилочка", "", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -2775,7 +2588,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_BAR_KALAHARI_FLIRT = new DialogueNode("The Watering Hole", "", false) {
+	public static final DialogueNode WATERING_HOLE_BAR_KALAHARI_FLIRT = new DialogueNode("Поилочка", "", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -2807,7 +2620,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_BAR_KALAHARI_BREAK_KRUGER_INTRO = new DialogueNode("The Watering Hole", "", true) {
+	public static final DialogueNode WATERING_HOLE_BAR_KALAHARI_BREAK_KRUGER_INTRO = new DialogueNode("Поилочка", "", true) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -2828,7 +2641,7 @@ public class NightlifeDistrict {
 			
 			if(getKalahariBreakTimeLeft()<=0) {
 				if(index==1) {
-					return new Response("Break over", "Kalahari has run out of break time. Let her get back to work.", WATERING_HOLE_KALAHARI_BREAK_OUT_OF_TIME) {
+					return new Response("Прервать перерыв", "У Kalahari закончилось время перерыва. Дай ей вернуться к работе.", WATERING_HOLE_KALAHARI_BREAK_OUT_OF_TIME) {
 						@Override
 						public void effects() {
 							Main.game.getNpc(Kalahari.class).setLocation(WorldType.NIGHTLIFE_CLUB, PlaceType.WATERING_HOLE_BAR);
@@ -2841,10 +2654,10 @@ public class NightlifeDistrict {
 			} else {
 				if(index==1) {
 					if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.kalahariWantsSex)) {
-						return new Response("Talk", "Kalahari is only interested in having sex right now!", null);
+						return new Response("Поговорить", "Сейчас Kalahari интересует только секс!", null);
 						
 					} else {
-						return new Response("Talk", "Talk to Kalahari in order to get to know her better.", WATERING_HOLE_KALAHARI_BREAK_TALK) {
+						return new Response("Поговорить", "Поговори с Kalahari, чтобы узнать её получше.", WATERING_HOLE_KALAHARI_BREAK_TALK) {
 							@Override
 							public void effects() {
 								Main.game.getTextEndStringBuilder().append(Main.game.getNpc(Kalahari.class).incrementAffection(Main.game.getPlayer(), 5));
@@ -2855,10 +2668,10 @@ public class NightlifeDistrict {
 					
 				} else if(index==2) {
 					if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.kalahariWantsSex)) {
-						return new Response("Flirt", "Kalahari is only interested in having sex right now!", null);
+						return new Response("Флиртовать", "Сейчас Kalahari интересует только секс!", null);
 						
 					} else {
-						return new Response("Flirt", "Start flirting with Kalahari.", WATERING_HOLE_KALAHARI_BREAK_FLIRT) {
+						return new Response("Флиртовать", "Начать флиртовать с Kalahari.", WATERING_HOLE_KALAHARI_BREAK_FLIRT) {
 							@Override
 							public void effects() {
 								Main.game.getTextEndStringBuilder().append(Main.game.getNpc(Kalahari.class).incrementAffection(Main.game.getPlayer(), 10));
@@ -2869,13 +2682,13 @@ public class NightlifeDistrict {
 					
 				} else if(index==3) {
 					if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.kalahariWantsSex)) {
-						return new Response("Kiss", "Kalahari is only interested in having sex right now!", null);
+						return new Response("Поцеловать", "Сейчас Kalahari интересует только секс!", null);
 						
 					} else if(!likesKiss(Main.game.getNpc(Kalahari.class), false)) {
-						return new Response("Kiss", "You can tell that Kalahari doesn't want a kiss at the moment. It would be best to get to know her a little better first.", null);
+						return new Response("Поцеловать", "Похоже, Kalahari сейчас не настроена на поцелуи. Было бы лучше сначала узнать её немного лучше.", null);
 						
 					} else {
-						return new Response("Kiss", "Lean forwards and kiss Kalahari.", WATERING_HOLE_KALAHARI_BREAK_KISS) {
+						return new Response("Поцеловать", "Наклониться вперед и поцеловать Kalahari.", WATERING_HOLE_KALAHARI_BREAK_KISS) {
 							@Override
 							public void effects() {
 								Main.game.getTextEndStringBuilder().append(Main.game.getNpc(Kalahari.class).incrementAffection(Main.game.getPlayer(), 15));
@@ -2886,13 +2699,13 @@ public class NightlifeDistrict {
 					
 				} else if(index==4) {
 					if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.kalahariWantsSex)) {
-						return new Response("Feel up", "Kalahari is only interested in having sex right now!", null);
+						return new Response("Лапать", "Сейчас Kalahari интересует только секс!", null);
 						
 					} else if(!likesGroping(Main.game.getNpc(Kalahari.class), false)) {
-						return new Response("Feel up", "You can tell that Kalahari would react badly to any dominant move to feel her up. It would be best to spend some time flirting with her first.", null);
+						return new Response("Лапать", "Ты понимаешь, что Kalahari плохо отреагирует на любые попытки доминировать и ласкать её. Лучше сначала немного пофлиртовать с ней.", null);
 						
 					} else {
-						return new Response("Feel up", "Press yourself against Kalahari and start feeling her up.", WATERING_HOLE_KALAHARI_BREAK_GROPE) {
+						return new Response("Лапать", "Прижаться к Kalahari и начать ласкать её.", WATERING_HOLE_KALAHARI_BREAK_GROPE) {
 							@Override
 							public void effects() {
 								Main.game.getTextEndStringBuilder().append(Main.game.getNpc(Kalahari.class).incrementAffection(Main.game.getPlayer(), 20));
@@ -2909,7 +2722,7 @@ public class NightlifeDistrict {
 					
 				} else if(index==5) {
 					if(!Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.kalahariWantsSex)) {
-						return new Response("Sex (dom)", "You need to get Kalahari fully into the mood before having sex with her.", null);
+						return new Response("Секс (доминант)", "Тебе нужно полностью настроить Kalahari на нужный лад, прежде чем заняться с ней сексом.", null);
 					} else {
 						SexManagerDefault sm = new SMSitting(
 								Util.newHashMapOfValues(new Value<>(Main.game.getPlayer(), SexSlotSitting.SITTING)),
@@ -2931,10 +2744,10 @@ public class NightlifeDistrict {
 							};
 						}
 						
-						return new ResponseSex("Sex (dom)",
+						return new ResponseSex("Секс (доминант)",
 								!Main.game.getPlayer().isTaur()
-									?"Pull Kalahari into your lap and start having dominant sex with her."
-									:"Stand up, pulling Kalahari to her feet as you do so, and start having dominant sex with her.",
+									?"Притянуть Kalahari к себе на колени и начать доминирующий секс."
+									:"Встать, поднимая Kalahari вместе с собой, и начать доминирующий секс.",
 								true, true,
 								sm,
 								null,
@@ -2963,7 +2776,7 @@ public class NightlifeDistrict {
 //					
 //				}
 				else if(index==0) {
-					return new Response("Finish", "Let Kalahari get back to work.", WATERING_HOLE_KALAHARI_BREAK_END) {
+					return new Response("Закончить", "Дать Kalahari вернуться к работе.", WATERING_HOLE_KALAHARI_BREAK_END) {
 						@Override
 						public void effects() {
 							Main.game.getNpc(Kalahari.class).setLocation(WorldType.NIGHTLIFE_CLUB, PlaceType.WATERING_HOLE_BAR);
@@ -2978,7 +2791,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_BAR_KALAHARI_BREAK = new DialogueNode("The Watering Hole", "", true) {
+	public static final DialogueNode WATERING_HOLE_BAR_KALAHARI_BREAK = new DialogueNode("Поилочка", "", true) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -2998,7 +2811,7 @@ public class NightlifeDistrict {
 	};
 	
 
-	public static final DialogueNode WATERING_HOLE_KALAHARI_BREAK_TALK = new DialogueNode("The Watering Hole", "", true) {
+	public static final DialogueNode WATERING_HOLE_KALAHARI_BREAK_TALK = new DialogueNode("Поилочка", "", true) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -3016,7 +2829,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_KALAHARI_BREAK_FLIRT = new DialogueNode("The Watering Hole", "", true) {
+	public static final DialogueNode WATERING_HOLE_KALAHARI_BREAK_FLIRT = new DialogueNode("Поилочка", "", true) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -3034,7 +2847,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_KALAHARI_BREAK_KISS = new DialogueNode("The Watering Hole", "", true) {
+	public static final DialogueNode WATERING_HOLE_KALAHARI_BREAK_KISS = new DialogueNode("Поилочка", "", true) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -3052,7 +2865,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_KALAHARI_BREAK_GROPE = new DialogueNode("The Watering Hole", "", true) {
+	public static final DialogueNode WATERING_HOLE_KALAHARI_BREAK_GROPE = new DialogueNode("Поилочка", "", true) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -3077,7 +2890,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_BAR_KALAHARI_BREAK_AFTER_SEX = new DialogueNode("Finished", "Kalahari needs to get back to work...", true) {
+	public static final DialogueNode WATERING_HOLE_BAR_KALAHARI_BREAK_AFTER_SEX = new DialogueNode("Завершено", "Kalahari нужно вернуться к работе...", true) {
 		
 		@Override
 		public String getContent() {
@@ -3091,7 +2904,7 @@ public class NightlifeDistrict {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue", "Head back out into the main area of the club.", WATERING_HOLE_MAIN) {
+				return new Response("Продолжить", "Вернуться в основной зал клуба.", WATERING_HOLE_MAIN) {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setNearestLocation(WorldType.NIGHTLIFE_CLUB, PlaceType.WATERING_HOLE_MAIN_AREA, false);
@@ -3102,7 +2915,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_KALAHARI_BREAK_END = new DialogueNode("The Watering Hole", "", false) {
+	public static final DialogueNode WATERING_HOLE_KALAHARI_BREAK_END = new DialogueNode("Поилочка", "", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -3125,7 +2938,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_KALAHARI_BREAK_OUT_OF_TIME = new DialogueNode("The Watering Hole", "", false) {
+	public static final DialogueNode WATERING_HOLE_KALAHARI_BREAK_OUT_OF_TIME = new DialogueNode("Поилочка", "", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -3149,7 +2962,7 @@ public class NightlifeDistrict {
 	};
 	
 	
-	public static final DialogueNode WATERING_HOLE_VIP = new DialogueNode("The Watering Hole", "", false) {
+	public static final DialogueNode WATERING_HOLE_VIP = new DialogueNode("Поилочка", "", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -3181,15 +2994,13 @@ public class NightlifeDistrict {
 			if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.krugerIntroduced)) {
 				if(index==1) {
 					if(hasPartner()) {
-						return new Response("Kruger", UtilText.parse(getClubbersPresent(), "You can't talk to Kruger while [npc.name] is with you."), null);
+						return new Response("Крюгер", UtilText.parse(getClubbersPresent(), "Ты не можешь разговаривать с Кругером, пока с тобой [npc.name]."), null);
 						
 					} else if(Main.game.getNpc(Kruger.class).getLastTimeHadSex() >= Main.game.getMinutesPassed()-(60*12)) {
-						return new Response("Kruger", "You've already had sex with Kruger tonight."
-								+ " Although you wouldn't mind having some more fun with him, you can tell that his patience would soon wear thin if you keep going back to him."
-								+ " You can always come back and ride his cock tomorrow night.", null);
+						return new Response("Крюгер", "Сегодня ты уже занималась сексом с Крюгером. Хотя ты была бы не против еще немного развлечься с ним, ты понимаешь, что его терпение скоро лопнет, если ты будешь постоянно к нему возвращаться. Ты всегда сможешь прийти и оседлать его член завтра вечером.", null);
 						
 					} else {
-						return new Response("Kruger", "Walk up to Kruger and say hello.", WATERING_HOLE_VIP_KRUGER) {
+						return new Response("Крюгер", "Подойти к Крюгеру и поздороваться.", WATERING_HOLE_VIP_KRUGER) {
 							@Override
 							public void effects() {
 								Main.game.getTextEndStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/nightlife/theWateringHole", "WATERING_HOLE_VIP_KRUGER"));
@@ -3206,7 +3017,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_VIP_KRUGER = new DialogueNode("The Watering Hole", "", true) {
+	public static final DialogueNode WATERING_HOLE_VIP_KRUGER = new DialogueNode("Поилочка", "", true) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -3225,7 +3036,7 @@ public class NightlifeDistrict {
 			}
 			
 			if(index==1) {
-				return new Response("Talk", "Talk to Kruger for a little while.", WATERING_HOLE_VIP_KRUGER_TALK) {
+				return new Response("Поговорить", "Поговорить с Крюгером немного.", WATERING_HOLE_VIP_KRUGER_TALK) {
 					@Override
 					public void effects() {
 						Main.game.getTextEndStringBuilder().append(Main.game.getNpc(Kruger.class).incrementAffection(Main.game.getPlayer(), 5));
@@ -3235,7 +3046,7 @@ public class NightlifeDistrict {
 				
 			} else if(index==2) {
 				if(Main.game.getPlayer().isFeminine()) {
-					return new Response("Flirt", "Flirt with Kruger.", WATERING_HOLE_VIP_KRUGER_FLIRT) {
+					return new Response("Флиртовать", "Пофлиртовать с Крюгером.", WATERING_HOLE_VIP_KRUGER_FLIRT) {
 						@Override
 						public void effects() {
 							Main.game.getTextEndStringBuilder().append(Main.game.getNpc(Kruger.class).incrementAffection(Main.game.getPlayer(), 10));
@@ -3243,18 +3054,18 @@ public class NightlifeDistrict {
 						}
 					};
 				} else {
-					return new Response("Flirt", "Kruger is gynephilic, so isn't interested in doing anything sexual with you.", null);
+					return new Response("Флиртовать", "Крюгер — гинефил, поэтому он не заинтересован в интимной близости с тобой.", null);
 				}
 				
 			} else if(index==3) {
 				if(!Main.game.getPlayer().isFeminine()) {
-					return new Response("Kissed", "Kruger is gynephilic, so isn't interested in doing anything sexual with you.", null);
+					return new Response("Поцеловала", "Крюгер — гинефил, поэтому он не заинтересован в интимной близости с тобой.", null);
 					
 				} else if(!likesKiss(Main.game.getNpc(Kruger.class), false)) {
-					return new Response("Kissed", "Kruger doesn't seem to be interested in kissing you.", null);
+					return new Response("Поцеловала", "Похоже, Крюгер не особо горит желанием целоваться.", null);
 					
 				} else {
-					return new Response("Kissed", "You can tell that Kruger wants to kiss you. Lean forwards and let him.", WATERING_HOLE_VIP_KRUGER_KISSED) {
+					return new Response("Поцеловала", "Сразу видно, что Крюгер хочет тебя поцеловать. Подайся вперед и позволь ему это сделать.", WATERING_HOLE_VIP_KRUGER_KISSED) {
 						@Override
 						public void effects() {
 							Main.game.getTextEndStringBuilder().append(Main.game.getNpc(Kruger.class).incrementAffection(Main.game.getPlayer(), 15));
@@ -3265,13 +3076,13 @@ public class NightlifeDistrict {
 				
 			} else if(index==4) {
 				if(!Main.game.getPlayer().isFeminine()) {
-					return new Response("Felt up", "Kruger is gynephilic, so isn't interested in doing anything sexual with you.", null);
+					return new Response("Ласки", "Крюгер — гинефил, поэтому он не заинтересован в интимной близости с тобой.", null);
 					
 				} else if(!likesGroping(Main.game.getNpc(Kruger.class), false)) {
-					return new Response("Felt up", "Kruger doesn't seem to be interested in feeling you up at the moment.", null);
+					return new Response("Ласки", "Похоже, Крюгера сейчас не особо тянет пощупать тебя.", null);
 					
 				} else {
-					return new Response("Felt up", "You can tell that Kruger wants to have some physical contact with you. Shuffle up beside him and let him feel you up.", WATERING_HOLE_VIP_KRUGER_FELT_UP) {
+					return new Response("Ласки", "Ты чувствуешь, что Крюгер жаждет физического контакта. Придвинься к нему поближе и позволь ему ласкать тебя.", WATERING_HOLE_VIP_KRUGER_FELT_UP) {
 						@Override
 						public void effects() {
 							Main.game.getTextEndStringBuilder().append(Main.game.getNpc(Kruger.class).incrementAffection(Main.game.getPlayer(), 20));
@@ -3283,28 +3094,28 @@ public class NightlifeDistrict {
 				
 			} else if(index==5) {
 				if(!Main.game.getPlayer().isFeminine()) {
-					return new Response("Sex (sub)", "Kruger is gynephilic, so isn't interested in doing anything sexual with you.", null);
+					return new Response("Секс (сабмиссив)", "Крюгер — гинефил, поэтому он не заинтересован в интимной близости с тобой.", null);
 					
 				} else if(!likesSex(Main.game.getNpc(Kruger.class), false)) {
-					return new Response("Sex (sub)", "Kruger doesn't seem to be interested in having sex with you at the moment.", null);
+					return new Response("Секс (сабмиссив)", "Похоже, Крюгера сейчас не особо тянет на секс с тобой.", null);
 					
 				} else {
 					if(!Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.MOUTH, true)
 							&& (!Main.game.getPlayer().hasVagina() || !Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.VAGINA, true))
 							&& (!Main.game.isAnalContentEnabled() || !Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.ANUS, true))) {
-						return new Response("Sex (sub)",
-								"Kruger needs to be able to access"
+						return new Response("Секс (сабмиссив)",
+								"Крюгеру нужен доступ к"
 									+ (Main.game.getPlayer().hasVagina()
 										?(Main.game.isAnalContentEnabled()
-											?" your mouth, pussy, or asshole"
-											:" either your mouth or pussy")
+											?" твоему рту, киске или анусу"
+											:" либо к твоему рту, либо к киске")
 										:(Main.game.isAnalContentEnabled()
-											?" either your mouth or asshole"
-											:" your mouth"))
-								+ " to be able to have sex with you!",
+											?" либо рот, либо задницу"
+											:" твой рот"))
+								+ " чтобы перетрахать тебя!",
 								null);
 					}
-					return new ResponseSex("Sex (sub)", "Tell Kruger that you want him to fuck you...",
+					return new ResponseSex("Секс (сабмиссив)", "Скажи Крюгеру, что хочешь, чтобы он оттрахал тебя...",
 							true, true,
 							new SMKrugerChair(
 									Util.newHashMapOfValues(new Value<>(Main.game.getNpc(Kruger.class), SexSlotSitting.SITTING)),
@@ -3327,13 +3138,13 @@ public class NightlifeDistrict {
 				}
 				
 			} else if(index==0) {
-				return new Response("Leave", "Tell Kruger that you need to leave.", WATERING_HOLE_VIP_KRUGER_LEAVE);
+				return new Response("Уйти", "Скажи Крюгеру, что тебе пора уходить.", WATERING_HOLE_VIP_KRUGER_LEAVE);
 			}
 			return null;
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_VIP_KRUGER_TALK = new DialogueNode("The Watering Hole", "", true) {
+	public static final DialogueNode WATERING_HOLE_VIP_KRUGER_TALK = new DialogueNode("Поилочка", "", true) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -3351,7 +3162,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_VIP_KRUGER_FLIRT = new DialogueNode("The Watering Hole", "", true) {
+	public static final DialogueNode WATERING_HOLE_VIP_KRUGER_FLIRT = new DialogueNode("Поилочка", "", true) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -3369,7 +3180,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_VIP_KRUGER_KISSED = new DialogueNode("The Watering Hole", "", true) {
+	public static final DialogueNode WATERING_HOLE_VIP_KRUGER_KISSED = new DialogueNode("Поилочка", "", true) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -3387,7 +3198,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_VIP_KRUGER_FELT_UP = new DialogueNode("The Watering Hole", "", true) {
+	public static final DialogueNode WATERING_HOLE_VIP_KRUGER_FELT_UP = new DialogueNode("Поилочка", "", true) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -3405,7 +3216,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_VIP_KRUGER_AFTER_SEX = new DialogueNode("Finished", "Kruger is finished with you, and, being exhausted from the sex, you readily allow him to push you off of him.", false) {
+	public static final DialogueNode WATERING_HOLE_VIP_KRUGER_AFTER_SEX = new DialogueNode("Завершено", "Крюгер закончил с тобой, и, измотанная сексом, ты охотно позволяешь ему столкнуть тебя с себя.", false) {
 		@Override
 		public String getContent() {
 			return UtilText.parseFromXMLFile("places/dominion/nightlife/theWateringHole", "WATERING_HOLE_VIP_KRUGER_AFTER_SEX");
@@ -3416,7 +3227,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_VIP_KRUGER_LEAVE = new DialogueNode("The Watering Hole", "", false) {
+	public static final DialogueNode WATERING_HOLE_VIP_KRUGER_LEAVE = new DialogueNode("Поилочка", "", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -3434,7 +3245,7 @@ public class NightlifeDistrict {
 		}
 	};
 
-	public static final DialogueNode WATERING_HOLE_DANCE_FLOOR = new DialogueNode("The Watering Hole", "", false) {
+	public static final DialogueNode WATERING_HOLE_DANCE_FLOOR = new DialogueNode("Поилочка", "", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -3460,7 +3271,7 @@ public class NightlifeDistrict {
 			
 			if(hasPartner()) {
 				if(index==1) {
-					return new Response("Dance", UtilText.parse(getClubbersPresent(), "Dance with [npc.namePos] for a little while."), WATERING_HOLE_DANCE_FLOOR_DANCE) {
+					return new Response("Танцевать", UtilText.parse(getClubbersPresent(), "Потанцуй немного с [npc.namePos]."), WATERING_HOLE_DANCE_FLOOR_DANCE) {
 						@Override
 						public void effects() {
 							Main.game.getTextEndStringBuilder().append(getPartner().incrementAffection(Main.game.getPlayer(), 15));
@@ -3469,8 +3280,8 @@ public class NightlifeDistrict {
 					};
 					
 				} else if(index==2) {
-					return new Response("Kiss",
-							UtilText.parse(getClubbersPresent(), "Step forwards and kiss [npc.name]."+(likesKiss(getPartner(), false)?"":"</br>[style.italicsBad([npc.She] might not react well to this!)]")),
+					return new Response("Поцеловать",
+							UtilText.parse(getClubbersPresent(), "Сделать шаг вперед и поцеловать [npc.name]."+(likesKiss(getPartner(), false)?"":"</br>[style.italicsBad([npc.She] может отреагировать на это не лучшим образом!)]")),
 							WATERING_HOLE_DANCE_FLOOR_KISS) {
 						@Override
 						public void effects() {
@@ -3489,8 +3300,8 @@ public class NightlifeDistrict {
 					};
 					
 				} else if(index==3) {
-					return new Response("Feel up",
-							UtilText.parse(getClubbersPresent(), "Grind up against [npc.name] and start groping [npc.herHim]."+(likesGroping(getPartner(), false)?"":"</br>[style.italicsBad([npc.She] might not react well to this!)]")),
+					return new Response("Лапать",
+							UtilText.parse(getClubbersPresent(), "Прижаться к [npc.name] и начать ощупывать [npc.herHim]."+(likesGroping(getPartner(), false)?"":"</br>[style.italicsBad([npc.She] может отреагировать на это не лучшим образом!)]")),
 							WATERING_HOLE_DANCE_FLOOR_GROPE) {
 						@Override
 						public void effects() {
@@ -3509,9 +3320,8 @@ public class NightlifeDistrict {
 					};
 					
 				} else if(index==9) {
-					return new Response("Say goodbye",
-							UtilText.parse(getClubbersPresent(), "Tell [npc.name] that you've got to head off for a little while, but that you hope to see [npc.herHim] again."
-									+ "</br>[style.italicsGood(Saves this character, who can then be encountered in the club again.)]"),
+					return new Response("Попрощаться",
+							UtilText.parse(getClubbersPresent(), "Сказать [npc.name], что тебе пора уходить, но ты надеешься снова увидеть [npc.herHim].</br>[style.italicsGood(Сохранить этого персонажа, чтобы его можно было снова встретить в клубе.)]"),
 							WATERING_HOLE_DANCE_FLOOR_LOSE_COMPANY) {
 						@Override
 						public void effects() {
@@ -3521,8 +3331,8 @@ public class NightlifeDistrict {
 					};
 					
 				} else if(index==10) {
-					return new Response("Lose company",
-							UtilText.parse(getClubbersPresent(), "Make up an excuse to get rid of [npc.name].</br>[style.italicsBad(Removes this character from the game.)]"),
+					return new Response("Расстаться",
+							UtilText.parse(getClubbersPresent(), "Придумать предлог, чтобы отделаться от [npc.name].</br>[style.italicsBad(Удалить этого персонажа из игры.)]"),
 							WATERING_HOLE_DANCE_FLOOR_LOSE_COMPANY) {
 						@Override
 						public void effects() {
@@ -3537,7 +3347,7 @@ public class NightlifeDistrict {
 				
 			} else {
 				if(index==1) {
-					return new Response("Dance", "Dance for a little while.", WATERING_HOLE_DANCE_FLOOR_DANCE);
+					return new Response("Танцевать", "Потанцуй немного.", WATERING_HOLE_DANCE_FLOOR_DANCE);
 					
 				} else {
 					return null;
@@ -3546,7 +3356,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_DANCE_FLOOR_DANCE = new DialogueNode("The Watering Hole", "", false) {
+	public static final DialogueNode WATERING_HOLE_DANCE_FLOOR_DANCE = new DialogueNode("Поилочка", "", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -3573,7 +3383,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_DANCE_FLOOR_KISS = new DialogueNode("The Watering Hole", "", false) {
+	public static final DialogueNode WATERING_HOLE_DANCE_FLOOR_KISS = new DialogueNode("Поилочка", "", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -3596,7 +3406,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_DANCE_FLOOR_GROPE = new DialogueNode("The Watering Hole", "", false) {
+	public static final DialogueNode WATERING_HOLE_DANCE_FLOOR_GROPE = new DialogueNode("Поилочка", "", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -3619,7 +3429,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_DANCE_FLOOR_LOSE_COMPANY = new DialogueNode("The Watering Hole", "", false) {
+	public static final DialogueNode WATERING_HOLE_DANCE_FLOOR_LOSE_COMPANY = new DialogueNode("Поилочка", "", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -3642,7 +3452,7 @@ public class NightlifeDistrict {
 		}
 	};
 
-	public static final DialogueNode WATERING_HOLE_TOILETS = new DialogueNode("Toilets", "", false) {
+	public static final DialogueNode WATERING_HOLE_TOILETS = new DialogueNode("Туалеты", "", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -3668,19 +3478,17 @@ public class NightlifeDistrict {
 			
 			if(index==1) {
 				if(Main.game.getCurrentDialogueNode()==WATERING_HOLE_TOILETS_USE) {
-					return new Response("Toilet", "You're already using the toilet...", null);
+					return new Response("Туалет", "Ты уже сидишь на унитазе...", null);
 				}
-				return new Response("Toilet", "Use the toilet.", WATERING_HOLE_TOILETS_USE);
+				return new Response("Туалет", "Воспользоваться туалетом.", WATERING_HOLE_TOILETS_USE);
 				
 			} else if(index==2) {
 				if(Main.game.getCurrentDialogueNode()==WATERING_HOLE_TOILETS_WASH) {
-					return new Response("Wash", "You're already taking a wash...", null);
+					return new Response("Умыться", "Ты уже умываешься...", null);
 				}
 				List<InventorySlot> washSlots = Util.newArrayListOfValues(InventorySlot.HEAD, InventorySlot.EYES, InventorySlot.MOUTH, InventorySlot.NECK, InventorySlot.HAIR, InventorySlot.FINGER, InventorySlot.HAND, InventorySlot.WRIST);
-				return new Response("Wash",
-						"Use the sinks to wash your hands and face."
-							+ "<br/>[style.italicsGood(This will clean your "+Util.inventorySlotsToParsedStringList(washSlots, Main.game.getPlayer())+", as well as any clothing worn in these slots.)]"
-							+ "<br/>[style.italicsMinorBad(This does <b>not</b> clean companions.)]",
+				return new Response("Умыться",
+						"Используйте раковины, чтобы умыться.<br/>[style.italicsGood(Это очистит вашу "+Util.inventorySlotsToParsedStringList(washSlots, Main.game.getPlayer())+", а также любую одежду в этих слотах.)]<br/>[style.italicsMinorBad(Это <b>не</b> очищает спутников.)]",
 							WATERING_HOLE_TOILETS_WASH) {
 					@Override
 					public void effects() {
@@ -3699,12 +3507,12 @@ public class NightlifeDistrict {
 			if(hasPartner()) {
 				if(index==3) {
 					if(!getPartner().isAttractedTo(Main.game.getPlayer())) {
-						return new Response("Stall sex",
-								UtilText.parse(getClubbersPresent(), "[npc.Name] is [style.colourBad(not attracted to you)], and so is unwilling to have sex with you..."),
+						return new Response("Секс в кабинке",
+								UtilText.parse(getClubbersPresent(), "[npc.Name] [style.colourBad(не испытывает к тебе влечения)], и поэтому не желает заниматься с тобой сексом..."),
 								null);
 					}
 					if(likesSex(getPartner(), false)) {
-						return new ResponseSex("Stall sex", UtilText.parse(getClubbersPresent(), "Try and get [npc.name] to have sex in one of the toilet's stalls."),
+						return new ResponseSex("Секс в кабинке", UtilText.parse(getClubbersPresent(), "Попытаться заняться сексом с [npc.name] в одной из туалетных кабинок."),
 								true, true,
 								new SMStallSex(
 										Util.newHashMapOfValues(new Value<>(Main.game.getPlayer(), SexSlotStanding.STANDING_DOMINANT)),
@@ -3721,9 +3529,8 @@ public class NightlifeDistrict {
 						
 					} else {
 						if(getClubbersPresent().get(0).hasFetish(Fetish.FETISH_NON_CON_SUB)) {
-							return new ResponseSex("Stall 'rape'", UtilText.parse(getClubbersPresent(),
-										"Although [npc.she] [npc.do]n't seem interested in having sex right now, [npc.namePos] '"+Fetish.FETISH_NON_CON_SUB.getName(getClubbersPresent().get(0))+"' fetish"
-												+ " means that [npc.she]'ll engage in some rape-play with you in one of the toilet's stalls."),
+							return new ResponseSex("«Изнасилование» в кабинке", UtilText.parse(getClubbersPresent(),
+										"Хотя [npc.she] [npc.do] не кажется заинтересованной в сексе прямо сейчас, [npc.namePos] '"+Fetish.FETISH_NON_CON_SUB.getName(getClubbersPresent().get(0))+"' фетиш означает, что [npc.she] с удовольствием поиграет с тобой в «изнасилование» в одной из туалетных кабинок."),
 									false, false,
 									new SMStallSex(
 											Util.newHashMapOfValues(new Value<>(Main.game.getPlayer(), SexSlotStanding.STANDING_DOMINANT)),
@@ -3743,8 +3550,8 @@ public class NightlifeDistrict {
 									UtilText.parseFromXMLFile("places/dominion/nightlife/theWateringHole", "WATERING_HOLE_TOILETS_RAPE", getClubbersPresent()));
 							
 						} else {
-							return new Response("Stall sex",
-									UtilText.parse(getClubbersPresent(), "Try and get [npc.name] to have sex in one of the toilet's stalls.</br>[style.italicsBad([npc.She] might not react well to this!)]"),
+							return new Response("Секс в кабинке",
+									UtilText.parse(getClubbersPresent(), "Попытаться заняться сексом с [npc.name] в одной из туалетных кабинок.</br>[style.italicsBad([npc.She] может отреагировать на это не слишком хорошо!)]"),
 									WATERING_HOLE_TOILETS_SEX_REJECTED) {
 								@Override
 								public void effects() {
@@ -3762,9 +3569,8 @@ public class NightlifeDistrict {
 				} else if(index==4) {
 					// If the partner wants normal sex, add the option for rape play to index 4 instead of 3:
 					if(likesSex(getPartner(), false) && getClubbersPresent().get(0).hasFetish(Fetish.FETISH_NON_CON_SUB)) {
-						return new ResponseSex("Stall 'rape'", UtilText.parse(getClubbersPresent(),
-								"Although [npc.she]'d be happy to have regular sex with you, you could take advantage of [npc.namePos] '"+Fetish.FETISH_NON_CON_SUB.getName(getClubbersPresent().get(0))+"' fetish"
-										+ " to get [npc.herHim] to engage in some rape-play in one of the toilet's stalls."),
+						return new ResponseSex("«Изнасилование» в кабинке", UtilText.parse(getClubbersPresent(),
+								"Хотя [npc.she] была бы рада обычному сексу с тобой, ты мог бы воспользоваться [npc.namePos] '"+Fetish.FETISH_NON_CON_SUB.getName(getClubbersPresent().get(0))+"' фетиш, чтобы заставить [npc.herHim] заняться каким-нибудь насилием в одной из туалетных кабинок."),
 							false, false,
 							new SMStallSex(
 									Util.newHashMapOfValues(new Value<>(Main.game.getPlayer(), SexSlotStanding.STANDING_DOMINANT)),
@@ -3791,8 +3597,8 @@ public class NightlifeDistrict {
 					boolean vaginaAvailable = Main.game.getPlayer().hasVagina() && Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.VAGINA, true);
 					
 					if((penisAvailable && !Main.game.getPlayer().isTaur()) || vaginaAvailable) {
-						return new Response("Glory hole (use)",
-								"A couple of the toilet's stalls have glory holes in them. Step up to one and have the person on the other side service you.",
+						return new Response("Глори-хоул (использовать)",
+								"В паре туалетных кабинок есть «дыры славы». Подойди к одной из них и позволь человеку по ту сторону обслужить тебя.",
 								WATERING_HOLE_TOILETS_GLORY_HOLE_USING_GET_READY) {
 							@Override
 							public void effects() {
@@ -3801,13 +3607,13 @@ public class NightlifeDistrict {
 						};
 						
 					} else if(penisAvailable && Main.game.getPlayer().isTaur()) {
-						return new Response("Glory hole (use)",
-								"Due to the shape of your [pc.legRace]'s body, you cannot get into a suitable position for using the glory hole...",
+						return new Response("Глори-хоул (использовать)",
+								"Из-за особенностей телосложения твоей [pc.legRace], ты не можешь принять удобную позу, чтобы воспользоваться глори-хоулом...",
 								null);
 						
 					} else {
-						return new Response("Glory hole (use)",
-								"You can't get access to your genitals, so can't get serviced at a glory hole.",
+						return new Response("Глори-хоул (использовать)",
+								"У вас нет доступа к своим гениталиям, поэтому вы не можете получить обслуживание в «дыре славы».",
 								null);
 					}
 					
@@ -3815,8 +3621,8 @@ public class NightlifeDistrict {
 					if((Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.MOUTH, true))
 							|| (Main.game.getPlayer().hasVagina() && Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.VAGINA, true))
 							|| (Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.ANUS, true))) {
-						return new Response("Glory hole (service)",
-								"A couple of the toilet's stalls have glory holes in them. Kneel down and get ready to service whatever comes through the holes.",
+						return new Response("Глори-хоул (обслуживание)",
+								"В паре туалетных кабинок есть «дыры славы». Опустись на колени и приготовься обслужить всё, что покажется в отверстии.",
 								WATERING_HOLE_TOILETS_GLORY_HOLE_SERVICING_GET_READY) {
 							@Override
 							public void effects() {
@@ -3826,16 +3632,16 @@ public class NightlifeDistrict {
 						};
 					
 					} else {
-						return new Response("Glory hole (service)",
-								"You can't get access to your mouth, genitals, or asshole, so can't service any strangers at the glory holes.",
+						return new Response("Глори-хоул (обслуживание)",
+								"У вас нет доступа к вашему рту, гениталиям или анусу, поэтому вы не можете обслужить незнакомцев в «дырах славы».",
 								null);
 					}
 					
 				} else if(index==5) {
 					if(Main.game.getCurrentDialogueNode()==WATERING_HOLE_TOILETS_POSTERS) {
-						return new Response("Posters", "You're already taking a look at the posters...", null);
+						return new Response("Плакаты", "Ты уже рассматриваешь плакаты...", null);
 					}
-					return new Response("Posters", "Take a look at the posters.", WATERING_HOLE_TOILETS_POSTERS);
+					return new Response("Плакаты", "Рассмотреть плакаты.", WATERING_HOLE_TOILETS_POSTERS);
 					
 				}
 			}
@@ -3843,7 +3649,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_TOILETS_GLORY_HOLE_USING_GET_READY = new DialogueNode("Toilets", "", true) {
+	public static final DialogueNode WATERING_HOLE_TOILETS_GLORY_HOLE_USING_GET_READY = new DialogueNode("Туалеты", "", true) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -3858,7 +3664,7 @@ public class NightlifeDistrict {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==0) {
-				return new Response("Leave", "On second thoughts, you don't really want some stranger having fun with your private parts...", WATERING_HOLE_TOILETS) {
+				return new Response("Уйти", "Если подумать, тебе не особо хочется, чтобы какой-то незнакомец развлекался с твоими интимными местами...", WATERING_HOLE_TOILETS) {
 					@Override
 					public void effects() {
 						for(GameCharacter npc : getGloryHoleCharacters()) {
@@ -3870,7 +3676,7 @@ public class NightlifeDistrict {
 			} else if(index==1) {
 				List<GameCharacter> characters = getGloryHoleCharacters();
 				
-				return new ResponseSex("Use glory hole", UtilText.parse(characters.get(0), "Do as [npc.name] says and step up to the glory hole."),
+				return new ResponseSex("Использовать дыру славы", UtilText.parse(characters.get(0), "Сделайте так, как говорит [npc.name], и подойдите к «дыре славы»."),
 						true, false,
 						new SMGloryHole(
 								SexPosition.GLORY_HOLE,
@@ -3890,7 +3696,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_TOILETS_GLORY_HOLE_USING_POST_SEX = new DialogueNode("Toilets", "", true) {
+	public static final DialogueNode WATERING_HOLE_TOILETS_GLORY_HOLE_USING_POST_SEX = new DialogueNode("Туалеты", "", true) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -3905,7 +3711,7 @@ public class NightlifeDistrict {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue", "Walk out of the stall.", WATERING_HOLE_TOILETS) {
+				return new Response("Продолжить", "Выйти из кабинки.", WATERING_HOLE_TOILETS) {
 					@Override
 					public void effects() {
 						for(GameCharacter npc : getGloryHoleCharacters()) {
@@ -3918,7 +3724,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_TOILETS_GLORY_HOLE_SERVICING_GET_READY = new DialogueNode("Toilets", "", true) {
+	public static final DialogueNode WATERING_HOLE_TOILETS_GLORY_HOLE_SERVICING_GET_READY = new DialogueNode("Туалеты", "", true) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -3933,7 +3739,7 @@ public class NightlifeDistrict {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==0) {
-				return new Response("Leave", "On second thoughts, you don't really want to suck the cocks of some strangers...", WATERING_HOLE_TOILETS) {
+				return new Response("Уйти", "Если подумать, тебе не особо и хочется сосать члены незнакомцев...", WATERING_HOLE_TOILETS) {
 					@Override
 					public void effects() {
 						for(GameCharacter npc : getGloryHoleCharacters()) {
@@ -3945,7 +3751,7 @@ public class NightlifeDistrict {
 			} else if(index==1) {
 				List<GameCharacter> characters = getGloryHoleCharacters();
 				
-				return new ResponseSex("Start (close door)", "Close the door, affording yourself some privacy as you start to service the cocks before you.",
+				return new ResponseSex("Начать (закрыть дверь)", "Закрой дверь, чтобы обеспечить себе хоть какую-то приватность, пока ты начинаешь обслуживать стоящие перед тобой члены.",
 						true, false,
 						new SMGloryHole(
 								SexPosition.GLORY_HOLE,
@@ -3966,7 +3772,7 @@ public class NightlifeDistrict {
 			} else if(index==2) {
 				List<GameCharacter> characters = getGloryHoleCharacters();
 				
-				return new ResponseSex("Start (public view)", "Leave the door open, so that everyone in the toilets can watch as you service the cocks before you.",
+				return new ResponseSex("Начать (на виду у всех)", "Оставь дверь открытой, чтобы все в туалете могли наблюдать за тем, как ты обслуживаешь стоящие перед тобой члены.",
 						true, false,
 						new SMGloryHole(
 								SexPosition.GLORY_HOLE,
@@ -3984,7 +3790,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_TOILETS_GLORY_HOLE_SERVICING_POST_SEX = new DialogueNode("Toilets", "", true) {
+	public static final DialogueNode WATERING_HOLE_TOILETS_GLORY_HOLE_SERVICING_POST_SEX = new DialogueNode("Туалеты", "", true) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -4003,7 +3809,7 @@ public class NightlifeDistrict {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue", "Walk out of the stall.", WATERING_HOLE_TOILETS) {
+				return new Response("Продолжить", "Выйти из кабинки.", WATERING_HOLE_TOILETS) {
 					@Override
 					public void effects() {
 						for(GameCharacter npc : getGloryHoleCharacters()) {
@@ -4052,7 +3858,7 @@ public class NightlifeDistrict {
 			gloryholeNpcNameDescriptor = Main.game.getCharacterUtils().setGenericName(npc, genericName, Util.newArrayListOfValues(gloryholeNpcNameDescriptor));
 		}
 		
-		npc.setDescription("[npc.Name] is one of the Water Hole's patrons, who, seeking to take a break from the club floor, has wandered into the toilets to find you servicing the glory holes...");
+		npc.setDescription("[npc.Name] — один из завсегдатаев «Водяной дыры», который, желая отдохнуть от танцпола, забрел в туалеты и застал тебя за обслуживанием славных дырок...");
 		
 		if(Math.random()<0.4f) {
 			npc.setSexualOrientation(SexualOrientation.AMBIPHILIC);
@@ -4116,7 +3922,7 @@ public class NightlifeDistrict {
 		}
 		npc.setGenericName(Util.randomItemFrom(descriptors)+" "+genericName);
 		
-		npc.setDescription("[npc.Name] is one of the Water Hole's patrons, who, seeking to take a break from the club floor, has wandered into the toilets to service the glory holes...");
+		npc.setDescription("[npc.Name] — один из завсегдатаев «Водяной дыры», который, желая отдохнуть от танцпола, забрел в туалеты, чтобы заняться обслуживанием славных дырок...");
 		
 		if(Math.random()<0.4f) {
 			npc.setSexualOrientation(SexualOrientation.AMBIPHILIC);
@@ -4157,10 +3963,10 @@ public class NightlifeDistrict {
 		}
 	}
 	
-	public static final DialogueNode WATERING_HOLE_TOILETS_AFTER_SEX = new DialogueNode("Finished", "", true) {
+	public static final DialogueNode WATERING_HOLE_TOILETS_AFTER_SEX = new DialogueNode("Завершено", "", true) {
 		@Override
 		public String getDescription() {
-			return UtilText.parse(getClubbersPresent(), "[npc.Name] has had enough for now...");
+			return UtilText.parse(getClubbersPresent(), "С [npc.Name] на сегодня хватит...");
 		}
 		@Override
 		public String getContent() {
@@ -4177,9 +3983,8 @@ public class NightlifeDistrict {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("See again",
-						UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Tell [npc.name] that you hope to see [npc.herHim] again.</br>"
-								+ "[style.italicsGood(Saves this character, who can then be encountered in the club again.)]"),
+				return new Response("Увидеться снова",
+						UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Сказать [npc.name], что надеетесь снова увидеть [npc.herHim].</br>[style.italicsGood(Сохраняет этого персонажа, которого затем можно будет снова встретить в клубе.)]"),
 						WATERING_HOLE_TOILETS_AFTER_SEX_SEE_AGAIN) {
 					@Override
 					public void effects() {
@@ -4189,8 +3994,8 @@ public class NightlifeDistrict {
 				};
 				
 			} else if(index==2) {
-				return new Response("Hope not (gentle)",
-						UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Make a non-committal response, secretly hoping that you won't see [npc.name] again.</br>[style.italicsBad(Removes this character from the game.)]"),
+				return new Response("Надеяться, что нет (мягко)",
+						UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Ответить уклончиво, втайне надеясь, что вы больше не увидите [npc.name].</br>[style.italicsBad(Удаляет этого персонажа из игры.)]"),
 						WATERING_HOLE_TOILETS_AFTER_SEX_SEE_AGAIN) {
 					@Override
 					public void effects() {
@@ -4200,8 +4005,8 @@ public class NightlifeDistrict {
 				};
 				
 			} else if(index==3) {
-				return new Response("Hope not (harsh)",
-						UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Crudely tell [npc.name] that you were only interested in fucking [npc.herHim].</br>[style.italicsBad(Removes this character from the game.)]"),
+				return new Response("Надеяться, что нет (грубо)",
+						UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Грубо сказать [npc.name], что вас интересовал только трах [npc.herHim].</br>[style.italicsBad(Удаляет этого персонажа из игры.)]"),
 						WATERING_HOLE_TOILETS_AFTER_SEX_SEE_AGAIN) {
 					@Override
 					public void effects() {
@@ -4214,7 +4019,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_TOILETS_AFTER_SEX_SEE_AGAIN = new DialogueNode("The Watering Hole", "", false, true) {
+	public static final DialogueNode WATERING_HOLE_TOILETS_AFTER_SEX_SEE_AGAIN = new DialogueNode("Поилочка", "", false, true) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -4237,7 +4042,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_TOILETS_SEX_REJECTED = new DialogueNode("Toilets", "", false) {
+	public static final DialogueNode WATERING_HOLE_TOILETS_SEX_REJECTED = new DialogueNode("Туалеты", "", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -4261,7 +4066,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_TOILETS_USE = new DialogueNode("Toilets", "", false) {
+	public static final DialogueNode WATERING_HOLE_TOILETS_USE = new DialogueNode("Туалеты", "", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -4285,7 +4090,7 @@ public class NightlifeDistrict {
 		}
 	};
 
-	public static final DialogueNode WATERING_HOLE_TOILETS_WASH = new DialogueNode("Toilets", "", false) {
+	public static final DialogueNode WATERING_HOLE_TOILETS_WASH = new DialogueNode("Туалеты", "", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -4309,7 +4114,7 @@ public class NightlifeDistrict {
 		}
 	};
 
-	public static final DialogueNode WATERING_HOLE_TOILETS_POSTERS = new DialogueNode("Toilets", "", false) {
+	public static final DialogueNode WATERING_HOLE_TOILETS_POSTERS = new DialogueNode("Туалеты", "", false) {
 		@Override
 		public int getSecondsPassed() {
 			return 2*60;
@@ -4331,7 +4136,7 @@ public class NightlifeDistrict {
 	
 	// Dom partner:
 	
-	public static final DialogueNode WATERING_HOLE_SEARCH_GENERATE_DOM = new DialogueNode("The Watering Hole", "", true, true) {
+	public static final DialogueNode WATERING_HOLE_SEARCH_GENERATE_DOM = new DialogueNode("Поилочка", "", true, true) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -4350,7 +4155,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_CONTACTS_DOM = new DialogueNode("The Watering Hole", "", true) {
+	public static final DialogueNode WATERING_HOLE_CONTACTS_DOM = new DialogueNode("Поилочка", "", true) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -4365,23 +4170,23 @@ public class NightlifeDistrict {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==0) {
-				return new Response("Back", "Decide to stop searching for someone you've met before.", WATERING_HOLE_MAIN);
+				return new Response("Назад", "Решить перестать искать того, кого вы уже встречали раньше.", WATERING_HOLE_MAIN);
 			}
 			int count = 1;
 			for(GameCharacter character : getSavedClubbers(false)) {
 				if(count==index) {
 					if(!character.isAttractedTo(Main.game.getPlayer())) {
 						return new Response(character.getName(true),
-								UtilText.parse(character, "[npc.Name] is [style.colourBad(no longer attracted to you)], and so would be unwilling to spend time with you in the club.<br/>([npc.She] is [npc.a_fullRace(true)].)"),
+								UtilText.parse(character, "[npc.Name] [style.colourBad(больше не испытывает к вам влечения)] и вряд ли захочет проводить с вами время в клубе.<br/>([npc.She] — это [npc.a_fullRace(true)].)"),
 								null);
 					}
 					if(Main.game.getMinutesPassed()-((NPC)character).getLastTimeEncountered()<12*60) {
 						return new Response(character.getName(true),
-								UtilText.parse(character, "You have already met [npc.name] in the club tonight, and as such, [style.colourBad(you will not be able to encounter [npc.herHim] again until tomorrow)]."),
+								UtilText.parse(character, "Вы уже встречали [npc.name] в клубе сегодня, поэтому [style.colourBad(вы не сможете снова встретить [npc.herHim] до завтра)]."),
 								null);
 					}
 					return new Response(character.getName(true),
-							UtilText.parse(character, "Look for [npc.name] in amongst the crowds of revellers.<br/>([npc.She] is [npc.a_fullRace(true)].)"),
+							UtilText.parse(character, "Искать [npc.name] среди толпы гуляк.<br/>([npc.She] — это [npc.a_fullRace(true)].)"),
 							WATERING_HOLE_FIND_CONTACT_DOM) {
 						@Override
 						public void effects() {
@@ -4398,7 +4203,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_FIND_CONTACT_DOM = new DialogueNode("The Watering Hole", "", true, true) {
+	public static final DialogueNode WATERING_HOLE_FIND_CONTACT_DOM = new DialogueNode("Поилочка", "", true, true) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -4704,7 +4509,7 @@ public class NightlifeDistrict {
 		Main.game.getPlayer().setLocation(WorldType.NIGHTLIFE_CLUB, currentBehaviour.getPlaceType());
 	}
 	
-	public static final DialogueNode WATERING_HOLE_DOM_PARTNER = new DialogueNode("The Watering Hole", "", true) {
+	public static final DialogueNode WATERING_HOLE_DOM_PARTNER = new DialogueNode("Поилочка", "", true) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -4736,9 +4541,8 @@ public class NightlifeDistrict {
 			switch(behaviour) {
 				case LEAVES:
 					if(index==9) {
-						return new Response("Say goodbye",
-								UtilText.parse(getClubbersPresent(), "Tell [npc.name] that despite how you've treated [npc.herHim] this evening, you hope to see [npc.herHim] again."
-										+ "</br>[style.italicsGood(Saves this character, who can then be encountered in the club again.)]"),
+						return new Response("Попрощаться",
+								UtilText.parse(getClubbersPresent(), "Сказать [npc.name], что, несмотря на то, как ты обошлась с [npc.herHim] этим вечером, ты надеешься снова увидеть [npc.herHim].</br>[style.italicsGood(Сохранить этого персонажа, чтобы его можно было снова встретить в клубе.)]"),
 								UTIL_NEUTRAL_DIALOGUE_NO_TEXT) {
 							@Override
 							public void effects() {
@@ -4748,8 +4552,8 @@ public class NightlifeDistrict {
 						};
 						
 					} else if(index==10) {
-						return new Response("Lose company",
-								UtilText.parse(getClubbersPresent(), "Tell [npc.name] that you don't want to see [npc.herHim] again.</br>[style.italicsBad(Removes this character from the game.)]"),
+						return new Response("Расстаться",
+								UtilText.parse(getClubbersPresent(), "Сказать [npc.name], что ты не хочешь больше видеть [npc.herHim].</br>[style.italicsBad(Удалить этого персонажа из игры.)]"),
 								UTIL_NEUTRAL_DIALOGUE_NO_TEXT) {
 							@Override
 							public void effects() {
@@ -4763,8 +4567,8 @@ public class NightlifeDistrict {
 					if(getPartner().hasPersonalityTrait(PersonalityTrait.SELFISH)) {
 						if(index==1) {
 							// Accept rum
-							return new Response("Accept rum",
-									UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Accept the glass of Black Rat's Rum that [npc.name] has offered you.<br/>"
+							return new Response("Принять ром",
+									UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Принять бокал рома «Черная крыса», который тебе предложил [npc.name].<br/>"
 											+getDrinkEffects(Main.game.getItemGen().generateItem("innoxia_race_rat_black_rats_rum"))),
 									WATERING_HOLE_DOM_PARTNER_REACT) {
 								@Override
@@ -4779,8 +4583,8 @@ public class NightlifeDistrict {
 							
 						} else if(index==2) {
 							// Refuse rum
-							return new Response("Refuse rum",
-									UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Refuse the glass of Black Rat's Rum that [npc.name] has offered you."),
+							return new Response("Отклонить ром",
+									UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Отклонить бокал рома «Черная крыса», который тебе предложил [npc.name]."),
 									WATERING_HOLE_DOM_PARTNER_REACT) {
 								@Override
 								public void effects() {
@@ -4795,12 +4599,12 @@ public class NightlifeDistrict {
 						if(index==1) {
 							// Accept Feline's fancy/beer
 							return new Response((Main.game.getPlayer().isFeminine()
-										?"Accept Feline's Fancy"
-										:"Accept Canine Crush"),
+										?"Принять «Кошачью прихоть\""
+										:"Принять «Собачью страсть»"),
 									(Main.game.getPlayer().isFeminine()
-										?UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Accept the glass of Feline's Fancy that [npc.name] has offered you.<br/>"
+										?UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Принять бокал «Кошачьего каприза», который вам предложила [npc.name].<br/>"
 												+getDrinkEffects(Main.game.getItemGen().generateItem("innoxia_race_cat_felines_fancy")))
-										:UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Accept the bottle of Canine Crush that [npc.name] has offered you.<br/>"
+										:UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Принять бутылку «Собачьей страсти», которую вам предложила [npc.name].<br/>"
 												+getDrinkEffects(Main.game.getItemGen().generateItem("innoxia_race_dog_canine_crush")))),
 									WATERING_HOLE_DOM_PARTNER_REACT) {
 								@Override
@@ -4823,11 +4627,11 @@ public class NightlifeDistrict {
 						} else if(index==2) {
 							// Refuse Feline's fancy/beer
 							return new Response((Main.game.getPlayer().isFeminine()
-										?"Refuse Feline's Fancy"
-										:"Refuse Canine Crush"),
+										?"Отказаться от «Кошачьего каприза»"
+										:"Отказаться от «Собачьей страсти»"),
 									(Main.game.getPlayer().isFeminine()
-											?UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Refuse the glass of Feline's Fancy that [npc.name] has offered you.")
-											:UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Refuse the bottle of Canine Crush that [npc.name] has offered you.")),
+											?UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Отказаться от бокала «Кошачьего каприза», который вам предложила [npc.name].")
+											:UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Отказаться от бутылки «Собачьей страсти», которую вам предложила [npc.name].")),
 									WATERING_HOLE_DOM_PARTNER_REACT) {
 								@Override
 								public void effects() {
@@ -4847,8 +4651,8 @@ public class NightlifeDistrict {
 					} else {
 						if(index==1) {
 							// Accept whiskey
-							return new Response("Accept whiskey",
-									UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Accept the glass of Wolf Whiskey that [npc.name] has offered you.<br/>"
+							return new Response("Принять виски",
+									UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Принять бокал «Волчьего виски», который вам предложила [npc.name].<br/>"
 										+getDrinkEffects(Main.game.getItemGen().generateItem("innoxia_race_wolf_wolf_whiskey"))),
 									WATERING_HOLE_DOM_PARTNER_REACT) {
 								@Override
@@ -4862,8 +4666,8 @@ public class NightlifeDistrict {
 							
 						} else if(index==2) {
 							// Refuse whiskey
-							return new Response("Refuse whiskey",
-									UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Refuse the glass of Wolf Whiskey that [npc.name] has offered you."),
+							return new Response("Отказаться от виски",
+									UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Отказаться от стакана волчьего виски, который предложил [npc.name]."),
 									WATERING_HOLE_DOM_PARTNER_REACT) {
 								@Override
 								public void effects() {
@@ -4880,8 +4684,8 @@ public class NightlifeDistrict {
 				case BAR_FLIRT:
 					if(index==1) {
 						// Flirt back
-						return new Response("Flirt back",
-								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Respond positively to [npc.namePos] flirtatious remarks, and flirt back with [npc.herHim]."),
+						return new Response("Пофлиртовать в ответ",
+								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Положительно отреагировать на кокетливые замечания [npc.namePos] и пофлиртовать с [npc.herHim] в ответ."),
 								WATERING_HOLE_DOM_PARTNER_REACT) {
 							@Override
 							public void effects() {
@@ -4892,8 +4696,8 @@ public class NightlifeDistrict {
 						
 					} else if(index==2) {
 						// Shut down
-						return new Response("Show disdain",
-								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Respond negatively to [npc.namePos] flirtatious remarks, and tell [npc.herHim] to stop."),
+						return new Response("Проявить пренебрежение",
+								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Негативно отреагировать на кокетливые замечания [npc.namePos] и велеть [npc.herHim] остановиться."),
 								WATERING_HOLE_DOM_PARTNER_REACT) {
 							@Override
 							public void effects() {
@@ -4906,8 +4710,8 @@ public class NightlifeDistrict {
 				case BAR_GROPE:
 					if(index==1) {
 						// Let them grope you
-						return new Response("Submit",
-								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Lean in against [npc.name] and let [npc.herHim] feel you up."),
+						return new Response("Подчиниться",
+								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Прильнуть к [npc.name] и позволить [npc.herHim] ласкать тебя."),
 								WATERING_HOLE_DOM_PARTNER_REACT) {
 							@Override
 							public void effects() {
@@ -4919,8 +4723,8 @@ public class NightlifeDistrict {
 						};
 					} else if(index==2) {
 						// Shut down
-						return new Response("Push away",
-								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Tell [npc.name] to get away from you."),
+						return new Response("Оттолкнуть",
+								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Велеть [npc.name] убраться от тебя подальше."),
 								WATERING_HOLE_DOM_PARTNER_REACT) {
 							@Override
 							public void effects() {
@@ -4932,8 +4736,8 @@ public class NightlifeDistrict {
 					break;
 				case BAR_INVITE_HOME:
 					if(index==1) {
-						return new Response("Follow home",
-								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Follow [npc.name] back to [npc.her] house, where [npc.sheIs] sure to want to have sex with you..."),
+						return new Response("Пойти домой",
+								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Последовать за [npc.name] к дому [npc.her], где [npc.sheIs] наверняка захочет переспать с тобой..."),
 								WATERING_HOLE_DOM_PARTNER_TAKEN_HOME) {
 							@Override
 							public void effects() {
@@ -4952,9 +4756,8 @@ public class NightlifeDistrict {
 						};
 						
 					} else if(index==4) {
-						return new Response("Refuse (gentle)",
-								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Tell [npc.name] that you're not interested in going back to [npc.her] place, but that you hope to see [npc.herHim] at the club another time."
-										+ "</br>[style.italicsGood(Saves this character, who can then be encountered in the club again.)]"),
+						return new Response("Отказать (мягко)",
+								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Сказать [npc.name], что тебе не очень хочется возвращаться к [npc.her], но ты надеешься увидеть [npc.herHim] в клубе как-нибудь в другой раз.</br>[style.italicsGood(Сохраняет этого персонажа, которого можно будет снова встретить в клубе.)]"),
 								UTIL_NEUTRAL_DIALOGUE_NO_TEXT) {
 							@Override
 							public void effects() {
@@ -4964,9 +4767,8 @@ public class NightlifeDistrict {
 						};
 						
 					} else if(index==5) {
-						return new Response("Refuse (harsh)",
-								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Bluntly tell [npc.name] that you have no interest whatsoever in having sex with [npc.herHim]."
-										+ "</br>[style.italicsBad(Removes this character from the game.)]"),
+						return new Response("Отказать (грубо)",
+								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Резко заявить [npc.name], что у тебя вообще нет никакого желания заниматься сексом с [npc.herHim].</br>[style.italicsBad(Убирает этого персонажа из игры.)]"),
 								UTIL_NEUTRAL_DIALOGUE_NO_TEXT) {
 							@Override
 							public void effects() {
@@ -4982,8 +4784,8 @@ public class NightlifeDistrict {
 				case BAR_KISS:
 					if(index==1) {
 						// Let them kiss you
-						return new Response("Kiss", 
-								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Lean in against [npc.name] and start making out with [npc.herHim]."),
+						return new Response("Поцеловать", 
+								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Прильнуть к [npc.name] и начать страстно целоваться с [npc.herHim]."),
 								WATERING_HOLE_DOM_PARTNER_REACT) {
 							@Override
 							public void effects() {
@@ -4993,8 +4795,8 @@ public class NightlifeDistrict {
 						};
 					} else if(index==2) {
 						// Shut down
-						return new Response("Push away",
-								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Push [npc.name] away and tell [npc.herHim] to keep [npc.her] [npc.lips] to [npc.herself]."),
+						return new Response("Оттолкнуть",
+								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Оттолкнуть [npc.name] и сказать [npc.herHim], чтобы [npc.her] приберег(ла) свои [npc.lips] для [npc.herself]."),
 								WATERING_HOLE_DOM_PARTNER_REACT) {
 							@Override
 							public void effects() {
@@ -5007,8 +4809,8 @@ public class NightlifeDistrict {
 				case BAR_TALK:
 					if(index==1) {
 						// Continue conversation
-						return new Response("Continue conversation",
-								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Happily continue chatting with [npc.name]."),
+						return new Response("Продолжить разговор",
+								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "С радостью продолжить болтать с [npc.name]."),
 								WATERING_HOLE_DOM_PARTNER_REACT) {
 							@Override
 							public void effects() {
@@ -5018,8 +4820,8 @@ public class NightlifeDistrict {
 						};
 					} else if(index==2) {
 						// Show boredom
-						return new Response("Stay silent",
-								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Make a non-committal humming noise, before waiting for [npc.name] to continue."),
+						return new Response("Молчать",
+								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Неопределенно хмыкнуть, ожидая, пока [npc.name] продолжит."),
 								WATERING_HOLE_DOM_PARTNER_REACT) {
 							@Override
 							public void effects() {
@@ -5032,8 +4834,8 @@ public class NightlifeDistrict {
 				case DANCE:
 					if(index==1) {
 						// Dance
-						return new Response("Dance",
-								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Step out onto the dance floor and start dancing with [npc.name]."),
+						return new Response("Танцевать",
+								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Выйти на танцпол и начать танцевать с [npc.name]."),
 								WATERING_HOLE_DOM_PARTNER_REACT) {
 							@Override
 							public void effects() {
@@ -5043,8 +4845,8 @@ public class NightlifeDistrict {
 						};
 					} else if(index==2) {
 						// Step back
-						return new Response("Refuse",
-								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Tell [npc.name] that you have no interest in dancing with [npc.herHim]."),
+						return new Response("Отказаться",
+								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Сказать [npc.name], что тебе не интересно танцевать с [npc.herHim]."),
 								WATERING_HOLE_DOM_PARTNER_REACT) {
 							@Override
 							public void effects() {
@@ -5057,8 +4859,8 @@ public class NightlifeDistrict {
 				case DANCE_GROPE:
 					if(index==1) {
 						// Let them grope you
-						return new Response("Submit",
-								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Lean in against [npc.name] and let [npc.herHim] feel you up."),
+						return new Response("Подчиниться",
+								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Прильнуть к [npc.name] и позволить [npc.herHim] ласкать тебя."),
 								WATERING_HOLE_DOM_PARTNER_REACT) {
 							@Override
 							public void effects() {
@@ -5070,8 +4872,8 @@ public class NightlifeDistrict {
 						};
 					} else if(index==2) {
 						// Shut down
-						return new Response("Push away",
-								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Tell [npc.name] to get away from you."),
+						return new Response("Оттолкнуть",
+								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Велеть [npc.name] убраться от тебя подальше."),
 								WATERING_HOLE_DOM_PARTNER_REACT) {
 							@Override
 							public void effects() {
@@ -5084,8 +4886,8 @@ public class NightlifeDistrict {
 				case DANCE_KISS:
 					if(index==1) {
 						// Let them kiss you
-						return new Response("Kiss", 
-								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Lean in against [npc.name] and start making out with [npc.herHim]."),
+						return new Response("Поцеловать", 
+								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Прильнуть к [npc.name] и начать страстно целоваться с [npc.herHim]."),
 								WATERING_HOLE_DOM_PARTNER_REACT) {
 							@Override
 							public void effects() {
@@ -5095,8 +4897,8 @@ public class NightlifeDistrict {
 						};
 					} else if(index==2) {
 						// Shut down
-						return new Response("Push away",
-								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Push [npc.name] away and tell [npc.herHim] to keep [npc.her] [npc.lips] to [npc.herself]."),
+						return new Response("Оттолкнуть",
+								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Оттолкнуть [npc.name] и сказать [npc.herHim], чтобы [npc.her] приберег(ла) свои [npc.lips] для [npc.herself]."),
 								WATERING_HOLE_DOM_PARTNER_REACT) {
 							@Override
 							public void effects() {
@@ -5111,8 +4913,8 @@ public class NightlifeDistrict {
 				case SIT_DOWN_FLIRT:
 					if(index==1) {
 						// Flirt back
-						return new Response("Flirt back",
-								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Respond positively to [npc.namePos] flirtatious remarks, and flirt back with [npc.herHim]."),
+						return new Response("Пофлиртовать в ответ",
+								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Положительно отреагировать на кокетливые замечания [npc.namePos] и пофлиртовать с [npc.herHim] в ответ."),
 								WATERING_HOLE_DOM_PARTNER_REACT) {
 							@Override
 							public void effects() {
@@ -5122,8 +4924,8 @@ public class NightlifeDistrict {
 						};
 					} else if(index==2) {
 						// Shut down
-						return new Response("Show disdain",
-								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Respond negatively to [npc.namePos] flirtatious remarks, and tell [npc.herHim] to stop."),
+						return new Response("Проявить пренебрежение",
+								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Негативно отреагировать на кокетливые замечания [npc.namePos] и велеть [npc.herHim] остановиться."),
 								WATERING_HOLE_DOM_PARTNER_REACT) {
 							@Override
 							public void effects() {
@@ -5143,12 +4945,12 @@ public class NightlifeDistrict {
 						// Enjoy
 						return new Response(
 								bothBipeds
-									?"Play footsie"
-									:"Submit",
+									?"Потереться ножками"
+									:"Подчиниться",
 								UtilText.parse(NightlifeDistrict.getClubbersPresent(),
 										bothBipeds
-											?"Let [npc.namePos] [npc.foot] work all the way up to your groin, and start reciprocating [npc.her] flirtatious movements."
-											:"Buck your body back against [npc.name] and let [npc.herHim] feel you up."),
+											?"Позволить [npc.namePos] [npc.foot] ласкать тебя вплоть до паха и начать отвечать на [npc.her] кокетливые движения."
+											:"Прижаться задом к [npc.name] и позволить [npc.herHim] ласкать тебя."),
 								WATERING_HOLE_DOM_PARTNER_REACT) {
 							@Override
 							public void effects() {
@@ -5160,11 +4962,11 @@ public class NightlifeDistrict {
 						};
 					} else if(index==2) {
 						// Shut down
-						return new Response("Pull away",
+						return new Response("Отстраниться",
 								UtilText.parse(NightlifeDistrict.getClubbersPresent(),
 										bothBipeds
-											?"Pull away from [npc.namePos] [npc.foot], before angrily telling [npc.herHim] to stop."
-											:"Pull away from [npc.namePos] unwanted touch, before angrily telling [npc.herHim] to stop."),
+											?"Отстраниться от [npc.namePos] [npc.foot], а затем сердито велеть [npc.herHim] остановиться."
+											:"Отстраниться от нежелательных прикосновений [npc.namePos], а затем сердито велеть [npc.herHim] остановиться."),
 								WATERING_HOLE_DOM_PARTNER_REACT) {
 							@Override
 							public void effects() {
@@ -5176,8 +4978,8 @@ public class NightlifeDistrict {
 					break;
 				case SIT_DOWN_INVITE_HOME:
 					if(index==1) {
-						return new Response("Follow home",
-								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Follow [npc.name] back to [npc.her] house, where [npc.sheIs] sure to want to have sex with you..."),
+						return new Response("Пойти домой",
+								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Последовать за [npc.name] к дому [npc.her], где [npc.sheIs] наверняка захочет переспать с тобой..."),
 								WATERING_HOLE_DOM_PARTNER_TAKEN_HOME) {
 							@Override
 							public void effects() {
@@ -5195,9 +4997,8 @@ public class NightlifeDistrict {
 						};
 						
 					} else if(index==4) {
-						return new Response("Refuse (gentle)",
-								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Tell [npc.name] that you're not interested in going back to [npc.her] place, but that you hope to see [npc.herHim] at the club another time."
-										+ "</br>[style.italicsGood(Saves this character, who can then be encountered in the club again.)]"),
+						return new Response("Отказать (мягко)",
+								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Сказать [npc.name], что тебе не очень хочется возвращаться к [npc.her], но ты надеешься увидеть [npc.herHim] в клубе как-нибудь в другой раз.</br>[style.italicsGood(Сохраняет этого персонажа, которого можно будет снова встретить в клубе.)]"),
 								UTIL_NEUTRAL_DIALOGUE_NO_TEXT) {
 							@Override
 							public void effects() {
@@ -5207,9 +5008,8 @@ public class NightlifeDistrict {
 						};
 						
 					} else if(index==5) {
-						return new Response("Refuse (harsh)",
-								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Bluntly tell [npc.name] that you have no interest whatsoever in having sex with [npc.herHim]."
-										+ "</br>[style.italicsBad(Removes this character from the game.)]"),
+						return new Response("Отказать (грубо)",
+								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Резко заявить [npc.name], что у тебя вообще нет никакого желания заниматься сексом с [npc.herHim].</br>[style.italicsBad(Убирает этого персонажа из игры.)]"),
 								UTIL_NEUTRAL_DIALOGUE_NO_TEXT) {
 							@Override
 							public void effects() {
@@ -5225,8 +5025,8 @@ public class NightlifeDistrict {
 				case SIT_DOWN_KISS:
 					if(index==1) {
 						// Let them kiss you
-						return new Response("Kiss",
-								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Let [npc.name] start kissing you."),
+						return new Response("Поцеловать",
+								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Позволить [npc.name] начать целовать тебя."),
 								WATERING_HOLE_DOM_PARTNER_REACT) {
 							@Override
 							public void effects() {
@@ -5236,8 +5036,8 @@ public class NightlifeDistrict {
 						};
 					} else if(index==2) {
 						// Shut down
-						return new Response("Push away",
-								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Reject [npc.namePos] attempt to kiss you and push [npc.herHim] away."),
+						return new Response("Оттолкнуть",
+								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Отклонить попытку [npc.namePos] поцеловать тебя и оттолкнуть [npc.herHim]."),
 								WATERING_HOLE_DOM_PARTNER_REACT) {
 							@Override
 							public void effects() {
@@ -5278,8 +5078,8 @@ public class NightlifeDistrict {
 							};
 						}
 						
-						return new ResponseSex("Sex (sub)",
-								UtilText.parse(getClubbersPresent(), "Do as [npc.name] says and start having submissive sex with [npc.herHim]."),
+						return new ResponseSex("Секс (сабмиссив)",
+								UtilText.parse(getClubbersPresent(), "Сделать так, как говорит [npc.name], и начать подчиняться [npc.herHim] во время секса."),
 								true, true,
 								sm,
 								null,
@@ -5288,9 +5088,8 @@ public class NightlifeDistrict {
 								UtilText.parseFromXMLFile("places/dominion/nightlife/theWateringHole", "WATERING_HOLE_DOM_PARTNER_SIT_DOWN_SEX_START", getClubbersPresent()));
 						
 					} else if(index==4) {
-						return new Response("Refuse (gentle)",
-								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Tell [npc.name] that you're not interested in having sex with [npc.herHim], but that you hope to see [npc.herHim] at the club another time."
-										+ "</br>[style.italicsGood(Saves this character, who can then be encountered in the club again.)]"),
+						return new Response("Отказать (мягко)",
+								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Сказать [npc.name], что тебе не очень-то хочется трахаться с [npc.herHim], но ты надеешься увидеть [npc.herHim] в клубе как-нибудь в другой раз.</br>[style.italicsGood(Сохраняет этого персонажа, которого можно будет снова встретить в клубе.)]"),
 								UTIL_NEUTRAL_DIALOGUE_NO_TEXT) {
 							@Override
 							public void effects() {
@@ -5301,9 +5100,8 @@ public class NightlifeDistrict {
 						};
 						
 					} else if(index==5) {
-						return new Response("Refuse (harsh)",
-								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Bluntly tell [npc.name] that you have no interest whatsoever in having sex with [npc.herHim]."
-										+ "</br>[style.italicsBad(Removes this character from the game.)]"),
+						return new Response("Отказать (грубо)",
+								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Резко заявить [npc.name], что у тебя вообще нет никакого желания заниматься сексом с [npc.herHim].</br>[style.italicsBad(Убирает этого персонажа из игры.)]"),
 								UTIL_NEUTRAL_DIALOGUE_NO_TEXT) {
 							@Override
 							public void effects() {
@@ -5320,8 +5118,8 @@ public class NightlifeDistrict {
 				case SIT_DOWN_TALK:
 					if(index==1) {
 						// Continue conversation
-						return new Response("Continue conversation",
-								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Happily continue chatting with [npc.name]."),
+						return new Response("Продолжить разговор",
+								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "С радостью продолжить болтать с [npc.name]."),
 								WATERING_HOLE_DOM_PARTNER_REACT) {
 							@Override
 							public void effects() {
@@ -5331,8 +5129,8 @@ public class NightlifeDistrict {
 						};
 					} else if(index==2) {
 						// Show boredom
-						return new Response("Stay silent",
-								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Make a non-committal humming noise, before waiting for [npc.name] to continue."),
+						return new Response("Молчать",
+								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Неопределенно хмыкнуть, ожидая, пока [npc.name] продолжит."),
 								WATERING_HOLE_DOM_PARTNER_REACT) {
 							@Override
 							public void effects() {
@@ -5344,7 +5142,7 @@ public class NightlifeDistrict {
 					break;
 				case TOILETS:
 					if(index==1) {
-						return new ResponseSex("Stall sex", UtilText.parse(getClubbersPresent(), "Let [npc.name] fuck you in one of the toilet's stalls."),
+						return new ResponseSex("Секс в кабинке", UtilText.parse(getClubbersPresent(), "Позволить [npc.name] оттрахать тебя в одной из туалетных кабинок."),
 								true, true,
 								new SMStallSex(
 										Util.newHashMapOfValues(new Value<>(getPartner(), SexSlotStanding.STANDING_DOMINANT)),
@@ -5360,9 +5158,8 @@ public class NightlifeDistrict {
 								UtilText.parseFromXMLFile("places/dominion/nightlife/theWateringHole", "WATERING_HOLE_DOM_PARTNER_TOILETS_SEX_START", getClubbersPresent()));
 						
 					} else if(index==4) {
-						return new Response("Refuse (gentle)",
-								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Tell [npc.name] that you're not interested in having sex with [npc.herHim], but that you hope to see [npc.herHim] at the club another time."
-										+ "</br>[style.italicsGood(Saves this character, who can then be encountered in the club again.)]"),
+						return new Response("Отказать (мягко)",
+								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Сказать [npc.name], что тебе не очень-то хочется трахаться с [npc.herHim], но ты надеешься увидеть [npc.herHim] в клубе как-нибудь в другой раз.</br>[style.italicsGood(Сохраняет этого персонажа, которого можно будет снова встретить в клубе.)]"),
 								UTIL_NEUTRAL_DIALOGUE_NO_TEXT) {
 							@Override
 							public void effects() {
@@ -5373,9 +5170,8 @@ public class NightlifeDistrict {
 						};
 						
 					} else if(index==5) {
-						return new Response("Refuse (harsh)",
-								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Bluntly tell [npc.name] that you have no interest whatsoever in having sex with [npc.herHim]."
-										+ "</br>[style.italicsBad(Removes this character from the game.)]"),
+						return new Response("Отказать (грубо)",
+								UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Резко заявить [npc.name], что у тебя вообще нет никакого желания заниматься сексом с [npc.herHim].</br>[style.italicsBad(Убирает этого персонажа из игры.)]"),
 								UTIL_NEUTRAL_DIALOGUE_NO_TEXT) {
 							@Override
 							public void effects() {
@@ -5392,9 +5188,8 @@ public class NightlifeDistrict {
 			
 			if(behaviour!=ClubberBehaviour.LEAVES) {
 				if(index==9) {
-					return new Response("Say goodbye",
-							UtilText.parse(getClubbersPresent(), "Tell [npc.name] that you've got to head off for a little while, but that you hope to see [npc.herHim] again."
-									+ "</br>[style.italicsGood(Saves this character, who can then be encountered in the club again.)]"),
+					return new Response("Попрощаться",
+							UtilText.parse(getClubbersPresent(), "Сказать [npc.name], что тебе пора уходить, но ты надеешься снова увидеть [npc.herHim].</br>[style.italicsGood(Сохранить этого персонажа, чтобы его можно было снова встретить в клубе.)]"),
 							UTIL_NEUTRAL_DIALOGUE_NO_TEXT) {
 						@Override
 						public void effects() {
@@ -5404,8 +5199,8 @@ public class NightlifeDistrict {
 					};
 					
 				} else if(index==10) {
-					return new Response("Lose company",
-							UtilText.parse(getClubbersPresent(), "Make up an excuse to get rid of [npc.name].</br>[style.italicsBad(Removes this character from the game.)]"),
+					return new Response("Расстаться",
+							UtilText.parse(getClubbersPresent(), "Придумать предлог, чтобы отделаться от [npc.name].</br>[style.italicsBad(Удалить этого персонажа из игры.)]"),
 							UTIL_NEUTRAL_DIALOGUE_NO_TEXT) {
 						@Override
 						public void effects() {
@@ -5420,7 +5215,7 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_DOM_PARTNER_REACT = new DialogueNode("The Watering Hole", "", true, true) {
+	public static final DialogueNode WATERING_HOLE_DOM_PARTNER_REACT = new DialogueNode("Поилочка", "", true, true) {
 		
 		@Override
 		public String getLabel() {
@@ -5444,7 +5239,7 @@ public class NightlifeDistrict {
 			}
 			
 			if(index==1) {
-				return new Response("Continue", UtilText.parse(getClubbersPresent(), "See what [npc.name] wants to do next..."), WATERING_HOLE_DOM_PARTNER) {
+				return new Response("Продолжить", UtilText.parse(getClubbersPresent(), "Посмотреть, что [npc.name] захочет сделать дальше..."), WATERING_HOLE_DOM_PARTNER) {
 					@Override
 					public void effects() {
 						applyBehaviourEffects();
@@ -5466,7 +5261,7 @@ public class NightlifeDistrict {
 
 		@Override
 		public String getLabel() {
-			return UtilText.parse(NightlifeDistrict.getClubbersPresent(), "[npc.NamePos] Apartment");
+			return UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Квартира [npc.NamePos]");
 		}
 
 		@Override
@@ -5477,7 +5272,7 @@ public class NightlifeDistrict {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new ResponseSex("Sex", UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Have submissive sex with [npc.name]."),
+				return new ResponseSex("Секс", UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Заниматься подчиненным сексом с [npc.name]."),
 						true, true,
 						new SMGeneric(
 								Util.newArrayListOfValues(NightlifeDistrict.getClubbersPresent().get(0)),
@@ -5493,9 +5288,8 @@ public class NightlifeDistrict {
 						UtilText.parseFromXMLFile("places/dominion/nightlife/theWateringHole", "WATERING_HOLE_DOM_PARTNER_TAKEN_HOME_SEX", NightlifeDistrict.getClubbersPresent()));
 				
 			} else if(index==4) {
-				return new Response("Refuse",
-						UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Tell [npc.name] that you don't really want to go back to [npc.her] place to have sex..."
-								+ "</br>[style.italicsGood(Saves this character, who can then be encountered in the club again.)]"),
+				return new Response("Отказаться",
+						UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Сказать [npc.name], что ты не особо хочешь возвращаться к [npc.her], чтобы заняться сексом...</br>[style.italicsGood(Сохраняет этого персонажа, которого можно будет снова встретить в клубе.)]"),
 						UTIL_NEUTRAL_DIALOGUE_NO_TEXT) {
 					@Override
 					public void effects() {
@@ -5507,9 +5301,8 @@ public class NightlifeDistrict {
 				};
 				
 			} else if(index==5) {
-				return new Response("Angrily refuse",
-						UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Tell [npc.name] that this isn't at all the sort of thing you were thinking of when accepting [npc.her] invitation to come back to [npc.her] place!"
-								+ "</br>[style.italicsBad(Removes this character from the game.)]"),
+				return new Response("Сердито отказаться",
+						UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Сказать [npc.name], что это совсем не то, о чем ты думал(а), когда принимал(а) приглашение [npc.her] зайти к [npc.her]!</br>[style.italicsBad(Убирает этого персонажа из игры.)]"),
 						UTIL_NEUTRAL_DIALOGUE_NO_TEXT) {
 					@Override
 					public void effects() {
@@ -5531,7 +5324,7 @@ public class NightlifeDistrict {
 		}
 		@Override
 		public String getLabel() {
-			return UtilText.parse(NightlifeDistrict.getClubbersPresent(), "[npc.NamePos] Apartment");
+			return UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Квартира [npc.NamePos]");
 		}
 		@Override
 		public String getContent() {
@@ -5544,9 +5337,8 @@ public class NightlifeDistrict {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("See again",
-						UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Tell [npc.name] that you hope to see [npc.herHim] again.</br>"
-								+ "[style.italicsGood(Saves this character, who can then be encountered in the club again.)]"),
+				return new Response("Увидеться снова",
+						UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Сказать [npc.name], что надеетесь снова увидеть [npc.herHim].</br>[style.italicsGood(Сохраняет этого персонажа, которого затем можно будет снова встретить в клубе.)]"),
 						UTIL_NEUTRAL_DIALOGUE_NO_TEXT) {
 					@Override
 					public void effects() {
@@ -5558,8 +5350,8 @@ public class NightlifeDistrict {
 				};
 				
 			} else if(index==2) {
-				return new Response("Hope not (gentle)",
-						UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Make a non-committal response, secretly hoping that you won't see [npc.name] again.</br>[style.italicsBad(Removes this character from the game.)]"),
+				return new Response("Надеяться, что нет (мягко)",
+						UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Ответить уклончиво, втайне надеясь, что вы больше не увидите [npc.name].</br>[style.italicsBad(Удаляет этого персонажа из игры.)]"),
 						UTIL_NEUTRAL_DIALOGUE_NO_TEXT) {
 					@Override
 					public void effects() {
@@ -5571,8 +5363,8 @@ public class NightlifeDistrict {
 				};
 				
 			} else if(index==3) {
-				return new Response("Hope not (harsh)",
-						UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Crudely tell [npc.name] that you were only interested in fucking [npc.herHim].</br>[style.italicsBad(Removes this character from the game.)]"),
+				return new Response("Надеяться, что нет (грубо)",
+						UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Грубо сказать [npc.name], что вас интересовал только трах [npc.herHim].</br>[style.italicsBad(Удаляет этого персонажа из игры.)]"),
 						UTIL_NEUTRAL_DIALOGUE_NO_TEXT) {
 					@Override
 					public void effects() {
@@ -5587,10 +5379,10 @@ public class NightlifeDistrict {
 		}
 	};
 	
-	public static final DialogueNode WATERING_HOLE_DOM_PARTNER_TOILETS_AFTER_SEX = new DialogueNode("Finished", "", true) {
+	public static final DialogueNode WATERING_HOLE_DOM_PARTNER_TOILETS_AFTER_SEX = new DialogueNode("Завершено", "", true) {
 		@Override
 		public String getDescription() {
-			return UtilText.parse(getClubbersPresent(), "[npc.Name] has had enough for now...");
+			return UtilText.parse(getClubbersPresent(), "С [npc.Name] на сегодня хватит...");
 		}
 		@Override
 		public String getContent() {
@@ -5604,9 +5396,8 @@ public class NightlifeDistrict {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("See again",
-						UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Tell [npc.name] that you hope to see [npc.herHim] again.</br>"
-								+ "[style.italicsGood(Saves this character, who can then be encountered in the club again.)]"),
+				return new Response("Увидеться снова",
+						UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Сказать [npc.name], что надеетесь снова увидеть [npc.herHim].</br>[style.italicsGood(Сохраняет этого персонажа, которого затем можно будет снова встретить в клубе.)]"),
 						PlaceType.WATERING_HOLE_TOILETS.getDialogue(false)) {
 					@Override
 					public void effects() {
@@ -5617,8 +5408,8 @@ public class NightlifeDistrict {
 				};
 				
 			} else if(index==2) {
-				return new Response("Hope not (gentle)",
-						UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Make a non-committal response, secretly hoping that you won't see [npc.name] again.</br>[style.italicsBad(Removes this character from the game.)]"),
+				return new Response("Надеяться, что нет (мягко)",
+						UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Ответить уклончиво, втайне надеясь, что вы больше не увидите [npc.name].</br>[style.italicsBad(Удаляет этого персонажа из игры.)]"),
 						PlaceType.WATERING_HOLE_TOILETS.getDialogue(false)) {
 					@Override
 					public void effects() {
@@ -5629,8 +5420,8 @@ public class NightlifeDistrict {
 				};
 				
 			} else if(index==3) {
-				return new Response("Hope not (harsh)",
-						UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Crudely tell [npc.name] that you were only interested in fucking [npc.herHim].</br>[style.italicsBad(Removes this character from the game.)]"),
+				return new Response("Надеяться, что нет (грубо)",
+						UtilText.parse(NightlifeDistrict.getClubbersPresent(), "Грубо сказать [npc.name], что вас интересовал только трах [npc.herHim].</br>[style.italicsBad(Удаляет этого персонажа из игры.)]"),
 						PlaceType.WATERING_HOLE_TOILETS.getDialogue(false)) {
 					@Override
 					public void effects() {

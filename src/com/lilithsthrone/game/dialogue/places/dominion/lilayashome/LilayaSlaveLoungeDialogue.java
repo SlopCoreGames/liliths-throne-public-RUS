@@ -70,26 +70,26 @@ public class LilayaSlaveLoungeDialogue {
 				
 			} else if (index == 1) {
 				if(Main.game.getPlayer().isAbleToAccessRoomManagement()) {
-					return new Response("Manage room", "Enter the management screen for this particular room.", OccupantManagementDialogue.ROOM_UPGRADES) {
+					return new Response("Управлять комнатой", "Перейти к экрану управления этой конкретной комнатой.", OccupantManagementDialogue.ROOM_UPGRADES) {
 						@Override
 						public void effects() {
 							OccupantManagementDialogue.cellToInspect = Main.game.getPlayerCell();
 						}
 					};
 				} else {
-					return new Response("Manage room", "You need a slaver license or permission from Lilaya to house your friends or dolls in order to access this menu!",  null);
+					return new Response("Управлять комнатой", "Чтобы получить доступ к этому меню, вам нужна лицензия работорговца или разрешение от Lilaya, чтобы поселить здесь своих друзей или кукол!",  null);
 				}
 				
 			}  else if (index == 2) {
 				if(Main.game.getPlayer().isAbleToAccessRoomManagement()) {
-					return new Response("Manage people", "Enter the management screen for your slaves and friendly occupants.", OccupantManagementDialogue.getSlaveryRoomListDialogue(null, null)) {
+					return new Response("Управлять людьми", "Перейти к экрану управления вашими рабынями и дружелюбными жильцами.", OccupantManagementDialogue.getSlaveryRoomListDialogue(null, null)) {
 						@Override
 						public void effects() {
 							CompanionManagement.initManagement(Main.game.getDefaultDialogue(), 0, null);
 						}
 					};
 				} else {
-					return new Response("Manage people", "You need a slaver license or permission from Lilaya to house your friends or dolls in order to access this menu!",  null);
+					return new Response("Управлять людьми", "Чтобы получить доступ к этому меню, вам нужна лицензия работорговца или разрешение от Lilaya, чтобы поселить здесь своих друзей или кукол!",  null);
 				}
 				
 			}
@@ -102,10 +102,10 @@ public class LilayaSlaveLoungeDialogue {
 					
 				} else {
 					return new Response(UtilText.parse(character, "[npc.Name]"), 
-							UtilText.parse(character, "Although this is [npc.namePos] room, [npc.sheIs] "
+							UtilText.parse(character, "Хотя это комната [npc.namePos], сейчас [npc.sheIs] "
 									+(character.getLocationPlace().getPlaceUpgrades().contains(PlaceUpgrade.LILAYA_SLAVE_LOUNGE)
-											?"relaxing in a slave lounge at the moment."
-											:"out at work at the moment.")), null);
+											?"отдыхает в комнате отдыха для рабов."
+											:"сейчас на работе.")), null);
 				}
 			}
 			

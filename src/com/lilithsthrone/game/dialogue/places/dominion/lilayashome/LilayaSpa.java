@@ -128,146 +128,102 @@ public class LilayaSpa {
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_PROFESSIONAL,
 					Util.newArrayListOfValues(
-						"#IF(npc.isFeminine())"
-							+ "[npc.Name] professionally curtsies as [npc.she] sees you enter the reception area, before asking,"
-						+ "#ELSE"
-							+ "[npc.Name] professionally bows as [npc.she] sees you enter the reception area, before asking,"
-						+ "#ENDIF",
-						"Flashing you a professional smile, [npc.name] asks,")),
+						"#IF(npc.isFeminine())[npc.Name] профессионально реверанснет, когда [npc.she] заметит ваше появление в зоне ресепшена, а затем спросит,#ELSE[npc.Name] профессионально поклонится, когда [npc.she] заметит ваше появление в зоне ресепшена, а затем спросит,#ENDIF",
+						"Одарив тебя профессиональной улыбкой, [npc.name] спрашивает,")),
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_SEDUCTIVE,
 					Util.newArrayListOfValues(
-						"#IF(npc.isFeminine())"
-							+ "[npc.Name] leans forwards over the counter and puts on [npc.her] most seductive tone of voice as [npc.she] asks,"
-						+ "#ELSE"
-							+ "[npc.Name] gazes into your [pc.eyes] and puts on [npc.her] most seductive tone of voice as [npc.she] asks,"
-						+ "#ENDIF",
-						"Flashing you a seductive smile, [npc.name] asks,")),
+						"#IF(npc.isFeminine())[npc.Name] наклоняется над стойкой и принимает [npc.her] самый соблазнительный тон, когда [npc.she] спрашивает,#ELSE[npc.Name] пристально смотрит тебе в [pc.eyes] и принимает [npc.her] самый соблазнительный тон, когда [npc.she] спрашивает,#ENDIF",
+						"Одарив тебя соблазнительной улыбкой, [npc.name] спрашивает,")),
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_SLUTTY,
 					Util.newArrayListOfValues(
-						"#IF(npc.isFeminine())"
-							+ "[npc.Name] bites [npc.her] lip and lets out an inappropriate, slutty moan as [npc.she] asks,"
-						+ "#ELSE"
-							+ "[npc.Name] lustfully grins at you as you enter, before bluntly asking,"
-						+ "#ENDIF",
-						"Flashing you a lewd smile, [npc.name] asks,")),
+						"#IF(npc.isFeminine())[npc.Name] прикусывает [npc.her] губу и издает неуместный, шлюшковатый стон, когда [npc.she] спрашивает,#ELSE[npc.Name] похотливо ухмыляется тебе при входе, а затем бесцеремонно спрашивает,#ENDIF",
+						"Одарив тебя похотливой улыбкой, [npc.name] спрашивает,")),
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_STANDARD,
 					Util.newArrayListOfValues(
-						"#IF(npc.isFeminine())"
-							+ "[npc.Name] curtsies as [npc.she] sees you enter the reception area, before asking,"
-						+ "#ELSE"
-							+ "[npc.Name] smiles as [npc.she] sees you enter the reception area, before asking,"
-						+ "#ENDIF",
-						"Flashing you a quick smile, [npc.name] asks,")),
+						"#IF(npc.isFeminine())[npc.Name] делает реверанс, когда [npc.she] замечает твое появление у стойки регистрации, а затем спрашивает,#ELSE[npc.Name] улыбается, когда [npc.she] замечает твое появление у стойки регистрации, а затем спрашивает,#ENDIF",
+						"Одарив тебя мимолетной улыбкой, [npc.name] спрашивает,")),
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_WHOLESOME,
 					Util.newArrayListOfValues(
-						"#IF(npc.isFeminine())"
-							+ "[npc.Name] lets out a happy little cry as [npc.she] sees you enter the reception area, before eagerly asking,"
-						+ "#ELSE"
-							+ "[npc.Name] happily smiles as [npc.she] sees you enter the reception area, before eagerly asking,"
-						+ "#ENDIF",
-						"Flashing you a loving smile, [npc.name] eagerly asks,")));
+						"#IF(npc.isFeminine())[npc.Name] радостно вскрикивает, когда [npc.she] замечает твое появление у стойки регистрации, а затем с нетерпением спрашивает,#ELSE[npc.Name] счастливо улыбается, когда [npc.she] замечает твое появление у стойки регистрации, а затем с нетерпением спрашивает,#ENDIF",
+						"Одарив тебя любящей улыбкой, [npc.name] с нетерпением спрашивает,")));
 
 	private static Map<SlavePermissionSetting, List<String>> receptionGreetingsMute = Util.newHashMapOfValues(
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_PROFESSIONAL,
 					Util.newArrayListOfValues(
-						"#IF(npc.isFeminine())"
-							+ "[npc.Name] professionally curtsies as [npc.she] sees you enter the reception area, before dutifully waiting to see if you'll ask anything of [npc.herHim]."
-						+ "#ELSE"
-							+ "[npc.Name] professionally bows as [npc.she] sees you enter the reception area, before dutifully waiting to see if you'll ask anything of [npc.herHim]."
-						+ "#ENDIF",
-						"Flashing you a professional smile, [npc.name] obediently waits to see if [npc.she]'ll be able to help you with anything.")),
+						"#IF(npc.isFeminine())[npc.Name] профессионально реверансирует, когда [npc.she] замечает ваше появление в зоне ресепшена, после чего послушно ждет, не попросите ли вы чего-нибудь у [npc.herHim].#ELSE[npc.Name] профессионально кланяется, когда [npc.she] замечает ваше появление в зоне ресепшена, после чего послушно ждет, не попросите ли вы чего-нибудь у [npc.herHim].#ENDIF",
+						"Одарив вас профессиональной улыбкой, [npc.name] послушно ждет, сможет ли [npc.she] чем-нибудь вам помочь.")),
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_SEDUCTIVE,
 					Util.newArrayListOfValues(
-						"#IF(npc.isFeminine())"
-							+ "[npc.Name] leans forwards over the counter and flashes you [npc.her] most seductive smile as [npc.she] waits to see if you'll ask anything of [npc.herHim]."
-						+ "#ELSE"
-							+ "[npc.Name] gazes into your [pc.eyes] and flashes you [npc.her] most seductive smile as [npc.she] waits to see if you'll ask anything of [npc.herHim]."
-						+ "#ENDIF",
-						"Flashing you a seductive smile, [npc.name] waits to see if [npc.she]'ll be able to help you with anything.")),
+						"#IF(npc.isFeminine())[npc.Name] leans forwards over the counter and flashes you [npc.her] most seductive smile as [npc.she] waits to see if you'll ask anything of [npc.herHim].#ELSE[npc.Name] gazes into your [pc.eyes] and flashes you [npc.her] most seductive smile as [npc.she] waits to see if you'll ask anything of [npc.herHim].#ENDIF",
+						"Одарив вас соблазнительной улыбкой, [npc.name] ждет, сможет ли [npc.she] чем-нибудь вам помочь.")),
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_SLUTTY,
 					Util.newArrayListOfValues(
-						"#IF(npc.isFeminine())"
-							+ "[npc.Name] bites [npc.her] lip and lets out an inappropriate, slutty moan as [npc.she] waits to see if you'll ask anything of [npc.herHim]."
-						+ "#ELSE"
-							+ "[npc.Name] lustfully grins at you as you enter, before waiting to see if you'll ask anything of [npc.herHim]."
-						+ "#ENDIF",
-						"Flashing you a lustful grin, [npc.name] waits to see if [npc.she]'ll be able to help you with anything.")),
+						"#IF(npc.isFeminine())[npc.Name] прикусывает [npc.her] губу и издает неуместный, похотливый стон, пока [npc.she] ждет, не попросите ли вы чего-нибудь у [npc.herHim].#ELSE[npc.Name] похотливо ухмыляется вам при входе, после чего ждет, не попросите ли вы чего-нибудь у [npc.herHim].#ENDIF",
+						"Одарив вас похотливой ухмылкой, [npc.name] ждет, сможет ли [npc.she] чем-нибудь вам помочь.")),
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_STANDARD,
 					Util.newArrayListOfValues(
-						"#IF(npc.isFeminine())"
-							+ "[npc.Name] curtsies as [npc.she] sees you enter the reception area, before dutifully waiting to see if you'll ask anything of [npc.herHim]."
-						+ "#ELSE"
-							+ "[npc.Name] smiles as [npc.she] sees you enter the reception area, before dutifully waiting to see if you'll ask anything of [npc.herHim]."
-						+ "#ENDIF",
-						"Flashing you a quick smile, [npc.name] waits to see if [npc.she]'ll be able to help you with anything.")),
+						"#IF(npc.isFeminine())[npc.Name] делает реверанс, когда [npc.she] видит, как вы входите в зону ресепшена, после чего послушно ждет, не попросите ли вы чего-нибудь у [npc.herHim].#ELSE[npc.Name] улыбается, когда [npc.she] видит, как вы входите в зону ресепшена, после чего послушно ждет, не попросите ли вы чего-нибудь у [npc.herHim].#ENDIF",
+						"Быстро улыбнувшись вам, [npc.name] ждет, сможет ли [npc.she] чем-нибудь вам помочь.")),
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_WHOLESOME,
 					Util.newArrayListOfValues(
-						"#IF(npc.isFeminine())"
-							+ "[npc.Name] lets out a happy little cry as [npc.she] sees you enter the reception area, before dutifully waiting to see if you'll ask anything of [npc.herHim]."
-						+ "#ELSE"
-							+ "[npc.Name] happily smiles as [npc.she] sees you enter the reception area, before dutifully waiting to see if you'll ask anything of [npc.herHim]."
-						+ "#ENDIF",
-						"Flashing you a loving smile, [npc.name] happily waits to see if [npc.she]'ll be able to help you with anything.")));
+						"#IF(npc.isFeminine())[npc.Name] издает радостный возглас, когда [npc.she] видит, как вы входите в зону ресепшена, после чего послушно ждет, не попросите ли вы чего-нибудь у [npc.herHim].#ELSE[npc.Name] счастливо улыбается, когда [npc.she] видит, как вы входите в зону ресепшена, после чего послушно ждет, не попросите ли вы чего-нибудь у [npc.herHim].#ENDIF",
+						"Одарив вас любящей улыбкой, [npc.name] счастливо ждет, сможет ли [npc.she] чем-нибудь вам помочь.")));
 
 	private static Map<SlavePermissionSetting, List<String>> receptionSpeech = Util.newHashMapOfValues(
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_PROFESSIONAL,
 					Util.newArrayListOfValues(
-						"How may I help you, [pc.name]?",
-						"Is there anything I may assist you with, [pc.name]?",
-						"Would you care for a shower before entering the spa, [pc.name]?")),
+						"Чем я могу вам помочь, [pc.name]?",
+						"Могу ли я чем-нибудь вам помочь, [pc.name]?",
+						"Не желаете ли вы принять душ перед тем, как войти в спа, [pc.name]?")),
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_SEDUCTIVE,
 					Util.newArrayListOfValues(
-						"Would you care for some <i>personal</i> assistance?",
-						"Is there <i>anything</i> I can help you with, [pc.name]?",
-						"How may I <i>assist</i> you today, [pc.name]?")),
+						"Не желаете ли вы получить некоторую <i>личную</i> помощь?",
+						"Есть ли <i>что-нибудь</i>, с чем я могу вам помочь, [pc.name]?",
+						"Как я могу <i>помочь</i> вам сегодня, [pc.name]?")),
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_SLUTTY,
 					Util.newArrayListOfValues(
-						"#IF(npc.hasFetish(FETISH_SUBMISSIVE))"
-							+ "How about you bend me over this desk and fuck me senseless?"
-						+ "#ELSE"
-							+ "You're looking for a good fuck, right?"
-						+ "#ENDIF",
-						"Come on and fuck me already!",
-						"Let's fuck, [pc.name]!")),
+						"#IF(npc.hasFetish(FETISH_SUBMISSIVE))Как насчет того, чтобы нагнуть меня на этом столе и трахнуть до беспамятства?#ELSEТы ведь хочешь хорошенько трахнуться, верно?#ENDIF",
+						"Давай уже, трахни меня!",
+						"Давай трахнемся, [pc.name]!")),
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_STANDARD,
 					Util.newArrayListOfValues(
-						"Can I help you with anything, [pc.name]?",
-						"What can I do for you, [pc.name]?",
-						"Is there anything I can help you with, [pc.name]?")),
+						"[pc.name], я могу тебе чем-нибудь помочь?",
+						"Что я могу сделать для тебя, [pc.name]?",
+						"[pc.name], тебе чем-нибудь помочь?")),
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_WHOLESOME,
 					Util.newArrayListOfValues(
-						"Hi, [pc.name], can I do anything to help you?! I'm so happy to see you again!",
-						"What can I do for you, [pc.name]?!",
-						"Hi, [pc.name], what can I do for you today?!")));
+						"Привет, [pc.name]! Могу я чем-нибудь помочь?! Я так рада тебя снова видеть!",
+						"Что я могу сделать для тебя, [pc.name]?!",
+						"Привет, [pc.name]! Чем я могу помочь тебе сегодня?!")));
 	
 	private static List<String> receptionRudeGreetings = Util.newArrayListOfValues(
-			"Glaring angrily at you, [npc.name] disobediently scowls, ",
-			"With [npc.her] [npc.eyes+] full of resentment, [npc.name] glares at you and snaps,",
-			"Clearly not at all happy with being forced to work in the spa, [npc.name] angrily growls,");
+			"Сердито глядя на тебя, [npc.name] непослушно хмурится, ",
+			"С [npc.her], [npc.eyes+] переполненной обидой, [npc.name] свирепо смотрит на тебя и рявкает:",
+			"Явно не в восторге от того, что её заставили работать в спа, [npc.name] сердито рычит:");
 
 	private static List<String> receptionRudeGreetingsMute = Util.newArrayListOfValues(
-			"Glaring angrily at you, [npc.name] lets out a disobedient scowl, making it quite clear that [npc.sheHasFull] no interest in helping you with anything...",
-			"With [npc.her] [npc.eyes+] full of resentment, [npc.name] glares at you and lets out a disobedient growl.",
-			"Clearly not at all happy with being forced to work in the spa, [npc.name] angrily growls at you, before crossing [npc.her] [npc.arms] and refusing to offer you any assistance.");
+			"Гневно глядя на тебя, [npc.name] издает непослушную гримасу, ясно давая понять, что [npc.sheHasFull] совершенно не горит желанием тебе чем-либо помогать...",
+			"С [npc.her], [npc.eyes+] переполненной обидой, [npc.name] свирепо смотрит на тебя и издает непослушное рычание.",
+			"Явно не в восторге от того, что её заставили работать в спа, [npc.name] сердито рычит на тебя, после чего скрещивает [npc.her] [npc.arms] и отказывается оказывать тебе хоть какую-то помощь.");
 	
 	private static List<String> receptionRudeSpeech = Util.newArrayListOfValues(
-			"What the fuck do you want now, <i>[pc.name]</i>?",
-			"Just hurry the fuck up and get out of here.",
-			"How about you turn around and fuck off?");
+			"Какого хера тебе еще надо, <i>[pc.name]</i>?",
+			"Просто шевели жопой и вали отсюда.",
+			"Как насчет того, чтобы развернуться и съебаться?");
 	
 	
 	// Shower slave dialogues:
@@ -276,133 +232,97 @@ public class LilayaSpa {
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_PROFESSIONAL,
 					Util.newArrayListOfValues(
-						"Lathering soap over [npc.her] [npc.hands], [npc.name] sets about washing your back, saying,",
-						"Acting in a professional manner, [npc.name] sets about rubbing soap over your body, saying,")),
+						"Намыливая [npc.her] [npc.hands], [npc.name] принимается мыть твою спину, приговаривая:",
+						"Стараясь вести себя профессионально, [npc.name] принимается намыливать твое тело, приговаривая:")),
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_SEDUCTIVE,
 					Util.newArrayListOfValues(
-						"#IF(npc.isFeminine())"
-							+ "[npc.Name] leans in and presses [npc.her] [npc.breasts+] against your back, teasing,"
-						+ "#ELSE"
-							+ "[npc.Name] leans in and presses [npc.herself] against your back, teasing,"
-						+ "#ENDIF",
-						"#IF(npc.isFeminine())"
-							+ "Seductively teasing [npc.her] soapy [npc.fingers] over your body, [npc.name] teases,"
-						+ "#ELSE"
-							+ "Seductively running [npc.her] soapy [npc.hands] over your body, [npc.name] teases,"
-						+ "#ENDIF")),
+						"#IF(npc.isFeminine())[npc.Name] наклоняется и дразняще прижимает [npc.her] [npc.breasts+] к твоей спине,#ELSE[npc.Name] наклоняется и дразняще прижимает [npc.herself] к твоей спине,#ENDIF",
+						"#IF(npc.isFeminine())Соблазнительно поглаживая свои мыльные [npc.fingers] [npc.her] по твоему телу, [npc.name] дразнит,#ELSESоблачительно проводя своими мыльными [npc.hands] [npc.her] по твоему телу, [npc.name] дразнит,#ENDIF")),
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_SLUTTY,
 					Util.newArrayListOfValues(
-						"#IF(npc.isFeminine())"
-							+ "Shamelessly rubbing [npc.her] soapy [npc.breasts] over your back, [npc.name] crudely asks,"
-						+ "#ELSE"
-							+ "Shamelessly pressing [npc.her] soapy body against your back, [npc.name] crudely asks,"
-						+ "#ENDIF",
-						"Giving your body a good grope as [npc.she] rubs [npc.her] soapy [npc.hands] over your [pc.skin], [npc.name] pointedly asks,")),
+						"#IF(npc.isFeminine())Shamelessly rubbing [npc.her] soapy [npc.breasts] over your back, [npc.name] crudely asks,#ELSEShamelessly pressing [npc.her] soapy body against your back, [npc.name] crudely asks,#ENDIF",
+						"Основательно ощупывая твое тело, пока [npc.she] растирает мыльные [npc.hands] [npc.her] по твоим [pc.skin], [npc.name] многозначительно спрашивает,")),
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_STANDARD,
 					Util.newArrayListOfValues(
-						"Lathering soap over [npc.her] [npc.hands], [npc.name] sets about washing your back, saying,",
-						"Setting about [npc.her] job with all due diligence, [npc.name] rubs soap over your body, saying,")),
+						"Намыливая [npc.her] [npc.hands], [npc.name] принимается мыть твою спину, приговаривая:",
+						"Прилежно выполняя свою работу [npc.her], [npc.name] намыливает твое тело, приговаривая:")),
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_WHOLESOME,
 					Util.newArrayListOfValues(
-						"#IF(npc.isFeminine())"
-							+ "[npc.Name] lovingly runs [npc.her] soapy hands over your body, before leaning in against you and sighing,"
-						+ "#ELSE"
-							+ "[npc.Name] lovingly runs [npc.her] soapy hands over your body, before leaning in against you and saying,"
-						+ "#ENDIF",
-						"Happily humming to [npc.herself] as [npc.she] rubs soap over your body, [npc.name] says,")));
+						"#IF(npc.isFeminine())[npc.Name] lovingly runs [npc.her] soapy hands over your body, before leaning in against you and sighing,#ELSE[npc.Name] lovingly runs [npc.her] soapy hands over your body, before leaning in against you and saying,#ENDIF",
+						"Счастливо напевая [npc.herself], пока [npc.she] растирает мыло по твоему телу, [npc.name] говорит,")));
 
 	private static Map<SlavePermissionSetting, List<String>> showerGreetingsMute = Util.newHashMapOfValues(
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_PROFESSIONAL,
 					Util.newArrayListOfValues(
-						"Lathering soap over [npc.her] [npc.hands], [npc.name] sets about washing your back in a professional manner.",
-						"Acting in a professional manner, [npc.name] sets about rubbing soap over your body and helping to clean yourself.")),
+						"Вспенивая мыло на [npc.her] [npc.hands], [npc.name] профессионально принимается мыть твою спину.",
+						"Действуя профессионально, [npc.name] принимается растирать мыло по твоему телу, помогая тебе очиститься.")),
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_SEDUCTIVE,
 					Util.newArrayListOfValues(
-						"#IF(npc.isFeminine())"
-							+ "[npc.Name] leans in and seductively presses [npc.her] [npc.breasts+] against your back as [npc.she] helps to clean you."
-						+ "#ELSE"
-							+ "[npc.Name] leans in and seductively presses [npc.herself] against your back as [npc.she] helps to clean you."
-						+ "#ENDIF",
-						"#IF(npc.isFeminine())"
-							+ "Seductively teasing [npc.her] soapy [npc.fingers] over your body, [npc.name] smirks to [npc.herself] as [npc.she] helps to clean you."
-						+ "#ELSE"
-							+ "Seductively running [npc.her] soapy [npc.hands] over your body, [npc.name] smirks to [npc.herself] as [npc.she] helps to clean you."
-						+ "#ENDIF")),
+						"#IF(npc.isFeminine())[npc.Name] наклоняется и соблазнительно прижимается [npc.her] [npc.breasts+] к твоей спине, пока [npc.she] помогает тебе отмыться.#ELSE[npc.Name] наклоняется и соблазнительно прижимается [npc.herself] к твоей спине, пока [npc.she] помогает тебе отмыться.#ENDIF",
+						"#IF(npc.isFeminine())Соблазнительно водя [npc.her] мыльной [npc.fingers] по твоему телу, [npc.name] ухмыляется [npc.herself], пока [npc.she] помогает тебе отмыться.#ELSESоблазнительно проводя [npc.her] мыльной [npc.hands] по твоему телу, [npc.name] ухмыляется [npc.herself], пока [npc.she] помогает тебе отмыться.#ENDIF")),
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_SLUTTY,
 					Util.newArrayListOfValues(
-						"#IF(npc.isFeminine())"
-							+ "Shamelessly rubbing [npc.her] soapy [npc.breasts] over your back, [npc.name] reaches down to give your groin a good grope and lets out a hungry [npc.moan]."
-						+ "#ELSE"
-							+ "Shamelessly pressing [npc.her] soapy body against your back, [npc.name] reaches down to give your groin a good grope and lets out a hungry [npc.moan]."
-						+ "#ENDIF",
-						"Giving your body a good grope as [npc.she] rubs [npc.her] soapy [npc.hands] over your [pc.skin], [npc.name] lets out a hungry [npc.moan] as [npc.she] helps to clean you.")),
+						"#IF(npc.isFeminine())Бесстыдно растирая [npc.her] мыльную [npc.breasts] по твоей спине, [npc.name] тянется вниз, чтобы хорошенько ощупать твой пах, и издает голодный [npc.moan].#ELSESбесстыдно прижимая [npc.her] мыльное тело к твоей спине, [npc.name] тянется вниз, чтобы хорошенько ощупать твой пах, и издает голодный [npc.moan].#ENDIF",
+						"Хорошенько ощупывая твое тело, пока [npc.she] растирает мыльную [npc.her] [npc.hands] по твоей [pc.skin], [npc.name] издает голодный [npc.moan], пока [npc.she] помогает тебе отмыться.")),
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_STANDARD,
 					Util.newArrayListOfValues(
-						"Lathering soap over [npc.her] [npc.hands], [npc.name] dutifully sets about washing your back.",
-						"Setting about [npc.her] job with all due diligence, [npc.name] rubs soap over your body as [npc.she] helps to clean you.")),
+						"Намыливая [npc.her] [npc.hands], [npc.name] прилежно принимается за мытье твоей спины.",
+						"С присущим ей усердием принимаясь за [npc.her] работу, [npc.name] растирает мыло по твоему телу, пока [npc.she] помогает тебе отмыться.")),
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_WHOLESOME,
 					Util.newArrayListOfValues(
-						"#IF(npc.isFeminine())"
-							+ "[npc.Name] lovingly runs [npc.her] soapy hands over your body, before leaning in against you and letting out a happy sigh."
-						+ "#ELSE"
-							+ "[npc.Name] lovingly runs [npc.her] soapy hands over your body, before leaning in against you and letting out a happy sigh."
-						+ "#ENDIF",
-						"After happily rubbing soap all over your body, [npc.name] leans in against you and lets out a contented sigh.")));
+						"#IF(npc.isFeminine())[npc.Name] с любовью проводит [npc.her] мыльными руками по твоему телу, а затем прижимается к тебе, издавая счастливый вздох.#ELSE[npc.Name] с любовью проводит [npc.her] мыльными руками по твоему телу, а затем прижимается к тебе, издавая счастливый вздох.#ENDIF",
+						"Счастливо намылив всё твоё тело, [npc.name] прижимается к тебе и удовлетворенно вздыхает.")));
 
 	private static Map<SlavePermissionSetting, List<String>> showerSpeech = Util.newHashMapOfValues(
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_PROFESSIONAL,
 					Util.newArrayListOfValues(
-						"I'll have you nice and clean in no time, [pc.name].",
-						"This will only take a moment, [pc.name].")),
+						"Я быстро отмою тебя до блеска, [pc.name].",
+						"Это займет всего мгновение, [pc.name].")),
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_SEDUCTIVE,
 					Util.newArrayListOfValues(
-						"You know, there's more we can do in here than just getting clean...",
-						"Perhaps we could spend a little more time in here together...")),
+						"Знаешь, здесь можно заняться не только чисткой...",
+						"Возможно, нам стоит провести здесь еще немного времени вместе...")),
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_SLUTTY,
 					Util.newArrayListOfValues(
-						"#IF(npc.hasFetish(FETISH_SUBMISSIVE))"
-							+ "Come on, [pc.name], push me against the wall and give me a good fucking!"
-						+ "#ELSE"
-							+ "Come on, [pc.name], let's fuck!"
-						+ "#ENDIF",
-						"Come on and fuck me already!")),
+						"#IF(npc.hasFetish(FETISH_SUBMISSIVE))Ну же, [pc.name], прижми меня к стене и хорошенько оттрахай!#ELSEНу же, [pc.name], давай трахаться!#ENDIF",
+						"Давай уже, трахни меня!")),
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_STANDARD,
 					Util.newArrayListOfValues(
-						"You'll be sparkling clean after this, [pc.name].",
-						"I'll have you nice and clean in just a moment, [pc.name].")),
+						"После этого ты будешь сиять чистотой, [pc.name].",
+						"Еще секунду, и ты будешь чистеньким, [pc.name].")),
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_WHOLESOME,
 					Util.newArrayListOfValues(
-						"I hope this is to your liking, [pc.name]...",
-						"Is this how you like it, [pc.name]?")));
+						"Надеюсь, тебе нравится, [pc.name]...",
+						"Тебе так нравится, [pc.name]?")));
 	
 	private static List<String> showerRudeGreetings = Util.newArrayListOfValues(
-			"[npc.Name] angrily scowls as [npc.she] reluctantly helps you to clean yourself,",
-			"Glaring angrily at you as [npc.she] half-heartedly helps to wash your body, [npc.name] growls,",
-			"Resenting the fact that [npc.sheHasFull] to help you clean yourself, [npc.name] angrily sneers,");
+			"[npc.Name] сердито хмурится, пока [npc.she] неохотно помогает тебе отмыться,",
+			"Яростно глядя на тебя, пока [npc.she] вяло помогает мыть твое тело, [npc.name] рычит,",
+			"Испытывая негодование от того, что [npc.sheHasFull] приходится помогать тебе мыться, [npc.name] гневно усмехается,");
 
 	private static List<String> showerRudeGreetingsMute = Util.newArrayListOfValues(
-			"[npc.Name] angrily scowls as [npc.she] reluctantly helps you to clean yourself...",
-			"Glaring angrily at you the entire time, [npc.name] half-heartedly helps to wash your body...",
-			"Resenting the fact that [npc.sheHasFull] to help you clean yourself, [npc.name] angrily glares at you...");
+			"[npc.Name] сердито хмурится, пока [npc.she] неохотно помогает тебе отмыться...",
+			"Весь процесс [npc.name] яростно сверлит тебя взглядом, вяло помогая мыть твое тело...",
+			"Испытывая негодование от того, что [npc.sheHasFull] приходится помогать тебе мыться, [npc.name] гневно смотрит на тебя...");
 	
 	private static List<String> showerRudeSpeech = Util.newArrayListOfValues(
-			"Just fucking hurry up so I can get out of here...",
-			"I hate this so much...",
-			"Why the fuck do I have to do this?");
+			"Просто, блять, поторапливайся, чтобы я могла свалить отсюда...",
+			"Как же сильно я это ненавижу...",
+			"Какого хера я вообще должна это делать?");
 	
 	
 	// Bathing slave dialogues:
@@ -411,113 +331,97 @@ public class LilayaSpa {
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_PROFESSIONAL,
 					Util.newArrayListOfValues(
-						"Sinking down into the pool's warm water, [npc.name] sighs,",
-						"Letting out a deep sigh as [npc.she] enters the pool, [npc.name] remarks,")),
+						"Погружаясь в теплую воду бассейна, [npc.name] вздыхает,",
+						"Издавая глубокий вздох, когда [npc.she] входит в бассейн, [npc.name] замечает,")),
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_SEDUCTIVE,
 					Util.newArrayListOfValues(
-						"#IF(npc.isFeminine())"
-							+ "[npc.Name] bites [npc.her] [npc.lip] and flashes you a seductive look as [npc.she] teases,"
-						+ "#ELSE"
-							+ "[npc.Name] flashes you a seductive smirk and teases,"
-						+ "#ENDIF",
-						"#IF(npc.isFeminine())"
-							+ "Seductively teasing [npc.her] wet [npc.fingers] over [npc.her] body, [npc.name] teases,"
-						+ "#ELSE"
-							+ "Seductively running [npc.her] wet [npc.hands] over [npc.her] body, [npc.name] teases,"
-						+ "#ENDIF")),
+						"#IF(npc.isFeminine())[npc.Name] прикусывает [npc.her] [npc.lip] и бросает на тебя соблазнительный взгляд, пока [npc.she] дразнит тебя,#ELSE[npc.Name] бросает на тебя соблазнительную ухмылку и дразнит,#ENDIF",
+						"#IF(npc.isFeminine())Соблазнительно дразня [npc.her], мокрую [npc.fingers] по всему [npc.her] телу, [npc.name] дразнит,#ELSESоблазнительно проводя [npc.her], мокрым [npc.hands] по всему [npc.her] телу, [npc.name] дразнит,#ENDIF")),
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_SLUTTY,
 					Util.newArrayListOfValues(
-						"Splashing through the pool's water to rub up against you, [npc.name] crudely asks,",
-						"Sliding up next to you, [npc.name] gives your body a good grope as [npc.she] pointedly asks,")),
+						"Разбрызгивая воду в бассейне, чтобы прижаться к тебе, [npc.name] грубо спрашивает,",
+						"Подплывая вплотную, [npc.name] хорошенько прощупывает твое тело, пока [npc.she] многозначительно спрашивает,")),
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_STANDARD,
 					Util.newArrayListOfValues(
-						"Sinking down into the pool's warm water, [npc.name] sighs,",
-						"Letting out a deep sigh as [npc.she] enters the pool, [npc.name] remarks,")),
+						"Погружаясь в теплую воду бассейна, [npc.name] вздыхает,",
+						"Издавая глубокий вздох, когда [npc.she] входит в бассейн, [npc.name] замечает,")),
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_WHOLESOME,
 					Util.newArrayListOfValues(
-						"[npc.Name] blushes a little as [npc.she] sinks down into the warm water and sighs,",
-						"Happily humming to [npc.herself] as [npc.she] slides down into the warm water, [npc.name] sighs,")));
+						"[npc.Name] слегка краснеет, когда [npc.she] погружается в теплую воду и вздыхает,",
+						"Счастливо напевая [npc.herself], пока [npc.she] скользит в теплую воду, [npc.name] вздыхает,")));
 
 	private static Map<SlavePermissionSetting, List<String>> bathingGreetingsMute = Util.newHashMapOfValues(
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_PROFESSIONAL,
 					Util.newArrayListOfValues(
-						"Sinking down into the pool's warm water, [npc.name] lets out a quiet sigh and simply enjoys this opportunity to relax.",
-						"Letting out a barely-audible sigh as [npc.she] enters the pool, [npc.name] closes [npc.her] [npc.eyes] and relaxes in the warm water.")),
+						"Погружаясь в теплую воду бассейна, [npc.name] тихо вздыхает, просто наслаждаясь возможностью расслабиться.",
+						"Издавая едва слышный вздох, когда [npc.she] входит в бассейн, [npc.name] закрывает [npc.her] [npc.eyes] и расслабляется в теплой воде.")),
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_SEDUCTIVE,
 					Util.newArrayListOfValues(
-						"#IF(npc.isFeminine())"
-							+ "[npc.Name] bites [npc.her] [npc.lip] and flashes you a seductive look as [npc.she] moves up close to where you're sitting."
-						+ "#ELSE"
-							+ "[npc.Name] flashes you a seductive smirk as [npc.she] moves up close to where you're sitting."
-						+ "#ENDIF",
-						"[npc.Name] makes a show of seductively running [npc.her] wet [npc.hands] over [npc.her] body, before suggestively winking at you.")),
+						"#IF(npc.isFeminine())[npc.Name] прикусывает [npc.her] [npc.lip] и бросает на тебя соблазнительный взгляд, когда [npc.she] подплывает вплотную к тому месту, где ты сидишь.#ELSE[npc.Name] одаривает тебя соблазнительной ухмылкой, пока [npc.she] подплывает вплотную к тому месту, где ты сидишь.#ENDIF",
+						"[npc.Name] нарочито соблазнительно проводит своими мокрыми [npc.her] [npc.hands] по [npc.her] телу, а затем многозначительно подмигивает тебе.")),
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_SLUTTY,
 					Util.newArrayListOfValues(
-						"Splashing through the pool's water to rub up against you, [npc.name] crudely motions for you to fuck [npc.herHim]...",
-						"Sliding up next to you, [npc.name] gives your body a good grope as [npc.she] lets out a hungry whine.")),
+						"Разбрызгивая воду в бассейне, чтобы прижаться к тебе, [npc.name] грубо жестикулирует, призывая тебя трахнуть [npc.herHim]...",
+						"Подплывая к тебе вплотную, [npc.name] хорошенько ощупывает твое тело, пока [npc.she] издает голодный скулящий звук.")),
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_STANDARD,
 					Util.newArrayListOfValues(
-							"Sinking down into the pool's warm water, [npc.name] lets out a quiet sigh and simply enjoys this opportunity to relax.",
-							"Letting out a barely-audible sigh as [npc.she] enters the pool, [npc.name] closes [npc.her] [npc.eyes] and relaxes in the warm water.")),
+							"Погружаясь в теплую воду бассейна, [npc.name] тихо вздыхает, просто наслаждаясь возможностью расслабиться.",
+							"Издавая едва слышный вздох, когда [npc.she] входит в бассейн, [npc.name] закрывает [npc.her] [npc.eyes] и расслабляется в теплой воде.")),
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_WHOLESOME,
 					Util.newArrayListOfValues(
-						"[npc.Name] blushes a little as [npc.she] sinks down into the warm water and smiles at you.",
-						"[npc.Name] happily hums to [npc.herself] as [npc.she] slides down into the warm water and flashes you a loving smile.")));
+						"[npc.Name] слегка краснеет, когда [npc.she] погружается в теплую воду и улыбается тебе.",
+						"[npc.Name] счастливо напевает [npc.herself], пока [npc.she] погружается в теплую воду и одаривает тебя любящей улыбкой.")));
 
 	private static Map<SlavePermissionSetting, List<String>> bathingSpeech = Util.newHashMapOfValues(
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_PROFESSIONAL,
 					Util.newArrayListOfValues(
-						"Please let me know if you require anything of me, [pc.name]...",
-						"This is most pleasing...")),
+						"Пожалуйста, дай знать, если я тебе чем-то понадоблюсь, [pc.name]...",
+						"Это так приятно...")),
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_SEDUCTIVE,
 					Util.newArrayListOfValues(
-						"You know, we could be doing things other than just relaxing right now...",
-						"Perhaps we could find a way to make this more exciting?")),
+						"Знаешь, мы могли бы заняться чем-то помимо простого отдыха...",
+						"Может, найдем способ сделать это поинтереснее?")),
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_SLUTTY,
 					Util.newArrayListOfValues(
-						"#IF(npc.hasFetish(FETISH_SUBMISSIVE))"
-							+ "Come on, [pc.name], give me a good fucking already!"
-						+ "#ELSE"
-							+ "Come on, [pc.name], let's just fuck already!"
-						+ "#ENDIF",
-						"Hey, how about we fuck in the pool? Sounds good, right?")),
+						"#IF(npc.hasFetish(FETISH_SUBMISSIVE))Давай же, [pc.name], трахни меня как следует!#ELSEДавай же, [pc.name], давай уже просто трахнемся!#ENDIF",
+						"Эй, как насчет того, чтобы трахнуться в бассейне? Звучит неплохо, а?")),
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_STANDARD,
 					Util.newArrayListOfValues(
-						"This feels so good...",
-						"Thanks for letting me join you in here, [pc.name]...")),
+						"Это так охеренно...",
+						"Спасибо, что впустила меня к себе, [pc.name]...")),
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_WHOLESOME,
 					Util.newArrayListOfValues(
-						"This feels great... Thank you so much for letting me be with you, [pc.name]...",
-						"Thank you for sharing this with me, [pc.name]...")));
+						"Это просто супер... Спасибо тебе огромное, что позволила мне побыть с тобой, [pc.name]...",
+						"Спасибо, что разделила это со мной, [pc.name]...")));
 	
 	private static List<String> bathingRudeGreetings = Util.newArrayListOfValues(
-			"[npc.Name] angrily scowls as [npc.she] reluctantly joins you in the pool,",
-			"Glaring angrily at you as [npc.she] splashes down into the pool's warm water, [npc.name] scowls,",
-			"Resenting the fact that [npc.sheHasFull] to join you in the pool, [npc.name] angrily sneers,");
+			"[npc.Name] сердито хмурится, когда [npc.she] неохотно присоединяется к тебе в бассейне,",
+			"Яростно глядя на тебя, [npc.name] хмурится, когда [npc.she] с брызгами погружается в теплую воду бассейна,",
+			"Испытывая негодование от того, что [npc.sheHasFull] приходится присоединяться к тебе в бассейне, [npc.name] гневно усмехается,");
 
 	private static List<String> bathingRudeGreetingsMute = Util.newArrayListOfValues(
-			"[npc.Name] angrily scowls as [npc.she] reluctantly joins you in the pool...",
-			"Glaring angrily at you, [npc.name] reluctantly splashes down into the pool's warm water...",
-			"Resenting the fact that [npc.sheHasFull] to join you in the pool, [npc.name] angrily glares at you...");
+			"[npc.Name] сердито хмурится, пока [npc.she] неохотно заходит в бассейн...",
+			"Яростно глядя на тебя, [npc.name] неохотно плюхается в теплую воду бассейна...",
+			"Раздраженная тем, что [npc.sheHasFull] приходится присоединяться к тебе в бассейне, [npc.name] гневно сверлит тебя взглядом...");
 	
 	private static List<String> bathingRudeSpeech = Util.newArrayListOfValues(
-			"The spa's nice, but it's much better when you're not here...",
-			"Hurry up and leave so that I can enjoy this by myself again...",
-			"Just hurry up and get out of here...");
+			"Спа — это мило, но куда лучше, когда тебя здесь нет...",
+			"Поторапливайся и уходи, чтобы я снова могла наслаждаться этим в одиночестве...",
+			"Просто поскорее выметайся отсюда...");
 	
 	
 	private static String getReceptionSlavesDescription(List<GameCharacter> slavesReception) {
@@ -535,9 +439,9 @@ public class LilayaSpa {
 		
 		sb.append("<p>");
 			if(soloSlave) {
-				sb.append("Having been instructed to work as a receptionist at your private spa, your slave, "+Util.stringsToStringList(names, false)+", is standing behind the counter.");
+				sb.append("Получив указание работать администратором в твоем личном спа, твоя рабыня, "+Util.stringsToStringList(names, false)+", стоит за стойкой регистрации.");
 			} else {
-				sb.append("Having been instructed to work as receptionists at your private spa, your slaves, "+Util.stringsToStringList(names, false)+", are standing behind the counter.");
+				sb.append("Получив указание работать администраторами в вашем личном спа-салоне, ваши рабыни, "+Util.stringsToStringList(names, false)+", стоят за стойкой регистрации.");
 			}
 		sb.append("</p>");
 		
@@ -639,9 +543,9 @@ public class LilayaSpa {
 		
 		sb.append("<p>");
 			if(soloSlave) {
-				sb.append(UtilText.parse(slavesWashing, "Having been instructed to assist you with cleaning yourself, your slave, "+Util.stringsToStringList(names, false)+", [npc.steps] into the shower and prepares to start washing you..."));
+				sb.append(UtilText.parse(slavesWashing, "Получив указание помочь вам с мытьем, ваша рабыня, "+Util.stringsToStringList(names, false)+", [npc.steps] заходит в душевую и готовится начать мыть вас..."));
 			} else {
-				sb.append(UtilText.parse(slavesWashing, "Having been instructed to assist you with cleaning yourself, your slaves, "+Util.stringsToStringList(names, false)+", [npc.step] into the shower and prepare to start washing you..."));
+				sb.append(UtilText.parse(slavesWashing, "Получив указание помочь вам с мытьем, ваши рабыни, "+Util.stringsToStringList(names, false)+", [npc.step] заходят в душевую и готовятся начать мыть вас..."));
 			}
 		sb.append("</p>");
 		
@@ -743,27 +647,20 @@ public class LilayaSpa {
 		
 		sb.append("<p>");
 			if(soloSlave) {
-				sb.append("[style.boldMinorGood(Slaves Present)]<b>:</b>"
-						+ "<br/>");
-				sb.append(UtilText.parse(slavesPresent, "Sitting on one of the loungers positioned beside the pools, your slave, "+Util.stringsToStringList(names, false)+", is waiting for you to give [npc.herHim] an order."));
+				sb.append("[style.boldMinorGood(Присутствующие рабыни)]<b>:</b><br/>");
+				sb.append(UtilText.parse(slavesPresent, "Сидя на одном из шезлонгов у бассейна, ваша рабыня, "+Util.stringsToStringList(names, false)+", ждет, когда вы отдадите [npc.herHim] приказ."));
 				if(slavesPresent.get(0).hasSlaveJobSetting(SlaveJob.SPA, SlaveJobSetting.SPA_BATHING)) {
 					sb.append(UtilText.parse(slavesPresent,
-							"</p>"
-							+ "<p>[style.boldAqua(Bathing)]<b>:</b>"
-							+ "<br/>As you have instructed "+Util.stringsToStringList(names, false)+" to join you whenever you bathe in the spa, you can be sure that [npc.she]'ll accompany you if you were to slip into one of the pools."));
+							"</p><p>[style.boldAqua(Купание)]<b>:</b><br/>Раз уж ты велела "+Util.stringsToStringList(names, false)+" ей присоединяться к тебе каждый раз, когда ты принимаешь ванну в спа, можешь быть уверена, что [npc.she] составит тебе компанию, стоит тебе окунуться в один из бассейнов."));
 				}
 				if(slavesPresent.get(0).hasSlaveJobSetting(SlaveJob.SPA, SlaveJobSetting.SPA_MASSAGE)) {
 					sb.append(UtilText.parse(slavesPresent,
-							"</p>"
-							+ "<p>[style.boldTan(Massage)]<b>:</b>"
-							+ "<br/>"+Util.stringsToStringList(names, false)+" [npc.has] been given some training in how to perform a massage,"
-									+ " so if you wanted [npc.herHim] to give you one, all you'd need to do is lie down on one of the loungers and call [npc.herHim] over."));
+							"</p><p>[style.boldTan(Массаж)]<b>:</b><br/>"+Util.stringsToStringList(names, false)+" [npc.has] прошла небольшое обучение искусству массажа, так что если ты захочешь, чтобы [npc.herHim] сделала тебе массаж, тебе нужно лишь лечь на один из шезлонгов и позвать [npc.herHim]."));
 				}
 				
 			} else {
-				sb.append("[style.boldMinorGood(Slaves Present)]<b>:</b>"
-						+ "<br/>");
-				sb.append(UtilText.parse(slavesPresent, "Sitting on the loungers positioned beside the pools, your slaves, "+Util.stringsToStringList(names, false)+", are waiting for you to give them an order."));
+				sb.append("[style.boldMinorGood(Присутствующие рабыни)]<b>:</b><br/>");
+				sb.append(UtilText.parse(slavesPresent, "Сидя на шезлонгах у бассейнов, твои рабыни "+Util.stringsToStringList(names, false)+"ждут, когда ты отдашь им приказ."));
 				List<String> bathingNames = new ArrayList<>();
 				GameCharacter bathingSlave = null;
 				for(GameCharacter npc : slavesPresent) {
@@ -773,14 +670,12 @@ public class LilayaSpa {
 					}
 				}
 				if(!bathingNames.isEmpty()) {
-					sb.append("</p>"
-							+ "<p>[style.boldAqua(Bathing)]<b>:</b>"
-							+ "<br/>");
+					sb.append("</p><p>[style.boldAqua(Купание)]<b>:</b><br/>");
 					if(bathingNames.size()==1) {
 						sb.append(UtilText.parse(bathingSlave,
-								"As you have instructed [npc.herHim] to join you whenever you bathe in the spa, you can be sure that "+Util.stringsToStringList(bathingNames, false)+" will accompany you if you were to slip into one of the pools."));
+								"Раз уж ты велела [npc.herHim] присоединяться к тебе каждый раз, когда ты принимаешь ванну в спа, можешь быть уверена, что "+Util.stringsToStringList(bathingNames, false)+" составит тебе компанию, стоит тебе окунуться в один из бассейнов."));
 					} else {
-						sb.append("As you have instructed them to join you whenever you bathe in the spa, you can be sure that "+Util.stringsToStringList(bathingNames, false)+" will accompany you if you were to slip into one of the pools.");
+						sb.append("Раз уж ты велела им присоединяться к тебе каждый раз, когда ты принимаешь ванну в спа, можешь быть уверена, что "+Util.stringsToStringList(bathingNames, false)+" составит тебе компанию, стоит тебе окунуться в один из бассейнов.");
 					}
 				}
 				List<String> massageNames = new ArrayList<>();
@@ -791,16 +686,12 @@ public class LilayaSpa {
 					}
 				}
 				if(!massageNames.isEmpty()) {
-					sb.append("</p>"
-							+ "<p>[style.boldTan(Massage)]<b>:</b>"
-							+ "<br/>");
+					sb.append("</p><p>[style.boldTan(Массаж)]<b>:</b><br/>");
 					if(massageNames.size()==1) {
 						sb.append(UtilText.parse(massageSlave,
-								Util.stringsToStringList(bathingNames, false)+" [npc.has] been given some training in how to perform a massage,"
-										+ " so if you wanted [npc.herHim] to give you one, all you'd need to do is lie down on one of the loungers and call [npc.herHim] over."));
+								Util.stringsToStringList(bathingNames, false)+" [npc.has] прошла небольшое обучение искусству массажа, так что если ты захочешь, чтобы [npc.herHim] сделала тебе массаж, тебе нужно лишь лечь на один из шезлонгов и позвать [npc.herHim]."));
 					} else {
-						sb.append(Util.stringsToStringList(bathingNames, false)+" have been given some training in how to perform a massage,"
-										+ " so if you wanted one of these slaves to give you one, all you'd need to do is lie down on one of the loungers and call one of them over.");
+						sb.append(Util.stringsToStringList(bathingNames, false)+" их обучили искусству массажа, так что если вы захотите, чтобы одна из этих рабынь сделала вам массаж, вам нужно лишь лечь на один из шезлонгов и позвать одну из них.");
 					}
 				}
 			}
@@ -824,9 +715,9 @@ public class LilayaSpa {
 		
 		sb.append("<p>");
 			if(soloSlave) {
-				sb.append(UtilText.parse(slavesWashing, "Having been instructed to join you whenever you bathe, your slave, "+Util.stringsToStringList(names, false)+", [npc.steps] into the pool and sinks down into the warm water beside you..."));
+				sb.append(UtilText.parse(slavesWashing, "Получив указание присоединяться к вам каждый раз, когда вы принимаете ванну, ваша рабыня, "+Util.stringsToStringList(names, false)+", [npc.steps] входит в бассейн и погружается в теплую воду рядом с вами..."));
 			} else {
-				sb.append(UtilText.parse(slavesWashing, "Having been instructed to join you whenever you bathe, your slaves, "+Util.stringsToStringList(names, false)+", [npc.step] into the pool and sink down into the warm water beside you..."));
+				sb.append(UtilText.parse(slavesWashing, "Получив указание присоединяться к вам каждый раз, когда вы принимаете ванну, ваши рабыни, "+Util.stringsToStringList(names, false)+", [npc.step] входят в бассейн и погружаются в теплую воду рядом с вами..."));
 			}
 		sb.append("</p>");
 		
@@ -926,7 +817,7 @@ public class LilayaSpa {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Commit", "Commit to extending this room and turning it into a private spa.", SPA_INSTALLATION_COMMIT) {
+				return new Response("Решиться", "Решиться расширить эту комнату и превратить её в частный спа-салон.", SPA_INSTALLATION_COMMIT) {
 					@Override
 					public void effects() {
 						int size = Main.game.getWorlds().get(WorldType.LILAYAS_HOUSE_GROUND_FLOOR).WORLD_WIDTH;
@@ -950,7 +841,7 @@ public class LilayaSpa {
 				};
 				
 			} else if(index==2) {
-				return new Response("Change mind", "Tell Lilaya that you've changed your mind...", SPA_INSTALLATION_END) {
+				return new Response("Передумать", "Сказать Lilaya, что вы передумали...", SPA_INSTALLATION_END) {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().incrementMoney(PlaceUpgrade.LILAYA_SPA.getInstallCost());
@@ -963,7 +854,7 @@ public class LilayaSpa {
 		}
 	};
 
-	public static final DialogueNode SPA_INSTALLATION_COMMIT = new DialogueNode("Spa", "", true, true) {
+	public static final DialogueNode SPA_INSTALLATION_COMMIT = new DialogueNode("Спа", "", true, true) {
 		@Override
 		public void applyPreParsingEffects() {
 			Main.game.getNpc(Lilaya.class).returnToHome();
@@ -980,7 +871,7 @@ public class LilayaSpa {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue", "Follow in Lilaya's footsteps and head on out into the corridor...", SPA_INSTALLATION_END) {
+				return new Response("Продолжить", "Последовать примеру Lilaya и выйти в коридор...", SPA_INSTALLATION_END) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/lilayasHome/spa", "SPA_INSTALLATION_COMMIT_LEAVE"));
@@ -1019,7 +910,7 @@ public class LilayaSpa {
 		}
 	};
 
-	public static final DialogueNode SPA_CONSTRUCTION = new DialogueNode("Building site", "", false) {
+	public static final DialogueNode SPA_CONSTRUCTION = new DialogueNode("Строительная площадка", "", false) {
 		@Override
 		public void applyPreParsingEffects() {
 			// This is a backup check to finish construction if somehow the building site has not been converted to the spa:
@@ -1043,7 +934,7 @@ public class LilayaSpa {
 		}
 	};
 	
-	public static final DialogueNode SPA_RECEPTION = new DialogueNode("Spa", "", false) {
+	public static final DialogueNode SPA_RECEPTION = new DialogueNode("Спа", "", false) {
 		@Override
 		public void applyPreParsingEffects() {
 			drinksCharacter = null;
@@ -1085,34 +976,32 @@ public class LilayaSpa {
 				
 			} else if(index == 1) {
 				if(Main.game.getPlayer().isAbleToAccessRoomManagement()) {
-					return new Response("Manage room", "Enter the management screen for this particular room.", OccupantManagementDialogue.ROOM_UPGRADES) {
+					return new Response("Управлять комнатой", "Перейти к экрану управления этой конкретной комнатой.", OccupantManagementDialogue.ROOM_UPGRADES) {
 						@Override
 						public void effects() {
 							OccupantManagementDialogue.cellToInspect = Main.game.getPlayerCell();
 						}
 					};
 				} else {
-					return new Response("Manage room", "You need a slaver license or permission from Lilaya to house your friends or dolls in order to access this menu!",  null);
+					return new Response("Управлять комнатой", "Чтобы получить доступ к этому меню, вам нужна лицензия работорговца или разрешение от Lilaya, чтобы поселить здесь своих друзей или кукол!",  null);
 				}
 				
 			} else if(index == 2) {
 				if(Main.game.getPlayer().isAbleToAccessRoomManagement()) {
-					return new Response("Manage people", "Enter the management screen for your slaves and friendly occupants.", OccupantManagementDialogue.getSlaveryRoomListDialogue(null, null)) {
+					return new Response("Управлять людьми", "Перейти к экрану управления вашими рабынями и дружелюбными жильцами.", OccupantManagementDialogue.getSlaveryRoomListDialogue(null, null)) {
 						@Override
 						public void effects() {
 							CompanionManagement.initManagement(Main.game.getDefaultDialogue(), 0, null);
 						}
 					};
 				} else {
-					return new Response("Manage people", "You need a slaver license or permission from Lilaya to house your friends or dolls in order to access this menu!",  null);
+					return new Response("Управлять людьми", "Чтобы получить доступ к этому меню, вам нужна лицензия работорговца или разрешение от Lilaya, чтобы поселить здесь своих друзей или кукол!",  null);
 				}
 				
 			} else if(index==3) {
 				if(Main.game.getWorlds().get(WorldType.LILAYAS_HOUSE_GROUND_FLOOR).getCell(PlaceType.LILAYA_HOME_SPA)!=null) {
-					return new Response("Shower",
-							"Use one of the showers to quickly clean yourself before entering the spa proper."
-								+ "<br/>[style.italicsGood(Cleans <b>a maximum of "+Units.fluid(500)+"</b> of fluids from all orifices.)]"
-								+ "<br/>[style.italicsGood(This will clean <b>only</b> your currently equipped clothing.)]",
+					return new Response("Душ",
+							"Воспользуйтесь одним из душевых, чтобы быстро привести себя в порядок перед тем, как войти непосредственно в спа-зону.<br/>[style.italicsGood(Очищает <b> максимум "+Units.fluid(500)+"</b> жидкостей из всех отверстий.)]<br/>[style.italicsGood(Это очистит <b>только</b> твою текущую одежду.)]",
 							SPA_RECEPTION_SHOWER){
 						@Override
 						public void effects() {
@@ -1121,7 +1010,7 @@ public class LilayaSpa {
 								npc.applyWash(true, true, null, 240+30);
 							}
 
-							Main.game.getTextEndStringBuilder().append("<p style='text-align:center'><i>You leave your clothes in the changing room so that they can be cleaned while you wash yourself...</i></p>");
+							Main.game.getTextEndStringBuilder().append("<p style='text-align:center'><i>Вы оставляете одежду в раздевалке, чтобы её почистили, пока вы моетесь...</i></p>");
 							Main.game.getTextEndStringBuilder().append(Main.game.getPlayer().applyWash(false, false, null, 240+30));
 						}
 					};
@@ -1178,11 +1067,11 @@ public class LilayaSpa {
 					SexSlotStanding.STANDING_SUBMISSIVE_BEHIND_TWO};
 			
 			if(index==1) {
-				return new Response("Finish", "Finish having a shower and head back out into the changing room.", AFTER_SHOWER_FINISHED);
+				return new Response("Закончить", "Закончите принимать душ и вернитесь в раздевалку.", AFTER_SHOWER_FINISHED);
 				
 			} else if(index==2) {
 				if(slavesWashing.isEmpty()) {
-					return new Response("Sex", "You do not have any slaves assigned to work in the spa's reception with the washing permission, so there's nobody for you to have sex with...", null);
+					return new Response("Секс", "У вас нет рабов, назначенных на ресепшн спа с правом мытья, так что заняться сексом здесь не с кем...", null);
 				}
 				
 				Map<GameCharacter, SexSlot> slaveSlots = new HashMap<>();
@@ -1190,10 +1079,10 @@ public class LilayaSpa {
 					slaveSlots.put(slavesWashing.get(i), showerSlots[i]);
 				}
 				UtilText.addSpecialParsingString(String.valueOf(slavesWashing.size()), true);
-				return new ResponseSex("Sex",
+				return new ResponseSex("Секс",
 						slavesWashing.size()==1
-							?UtilText.parse(slavesWashing, "Have dominant sex with [npc.name] in the shower.")
-							:"Have dominant sex with your slaves in the shower.",
+							?UtilText.parse(slavesWashing, "Заняться доминантным сексом с [npc.name] в душе.")
+							:"Заняться доминантным сексом со своими рабами в душе.",
 						true, false,
 						new SMShower(SexPosition.STANDING,
 								Util.newHashMapOfValues(new Value<>(Main.game.getPlayer(), SexSlotStanding.STANDING_DOMINANT)),
@@ -1210,13 +1099,13 @@ public class LilayaSpa {
 				
 			} else if(index==3) {
 				if(slavesWashing.isEmpty()) {
-					return new Response("Submissive sex", "You do not have any slaves assigned to work in the spa's reception with the washing permission, so there's nobody for you to have submissive sex with...", null);
+					return new Response("Субмиссивный секс", "У вас нет рабов, назначенных на ресепшн спа с правом мытья, так что заняться сабмиссивным сексом здесь не с кем...", null);
 				}
 				if(!slavesWashing.stream().anyMatch(s->s.isAttractedTo(Main.game.getPlayer()))) {
-					return new Response("Submissive sex",
+					return new Response("Субмиссивный секс",
 							slavesWashing.size()==1
-								?UtilText.parse(slavesWashing, "As [npc.name] isn't attracted to you, [npc.she] is unwilling to be the dominant partner in sex...")
-								:UtilText.parse(slavesWashing, "As [npc2.name] isn't attracted to you, [npc2.she] is unwilling to be the dominant partner in sex..."),
+								?UtilText.parse(slavesWashing, "Так как [npc.name] не испытывает к вам влечения, [npc.she] не желает выступать в роли доминанта в сексе...")
+								:UtilText.parse(slavesWashing, "Так как [npc2.name] не испытывает к вам влечения, [npc2.she] не желает выступать в роли доминанта в сексе..."),
 							null);
 				}
 				Map<GameCharacter, SexSlot> slaveSlots = new HashMap<>();
@@ -1224,10 +1113,10 @@ public class LilayaSpa {
 				for(int i=0 ; i<attractedSlaves.size(); i++) {
 					slaveSlots.put(attractedSlaves.get(i), showerSlots[i]);
 				}
-				return new ResponseSex("Submissive sex",
+				return new ResponseSex("Субмиссивный секс",
 						attractedSlaves.size()==1
-								?UtilText.parse(attractedSlaves, "Let [npc.name] dominantly fuck you in the shower.")
-										:"Let your slaves dominantly fuck you in the shower.",
+								?UtilText.parse(attractedSlaves, "Позволить [npc.name] доминантно трахать вас в душе.")
+										:"Позволь своим рабыням доминантно трахать тебя в душе.",
 						true, true,
 						new SMShower(SexPosition.STANDING,
 								slaveSlots,
@@ -1246,7 +1135,7 @@ public class LilayaSpa {
 		}
 	};
 
-	public static final DialogueNode AFTER_SHOWER_SEX = new DialogueNode("Finished", "", false) {
+	public static final DialogueNode AFTER_SHOWER_SEX = new DialogueNode("Завершено", "", false) {
 		@Override
 		public void applyPreParsingEffects() {
 			for(GameCharacter npc : slavesWashing) {
@@ -1259,9 +1148,9 @@ public class LilayaSpa {
 			List<GameCharacter> sexSlaves = new ArrayList<>(Main.sex.getAllParticipants());
 			sexSlaves.removeIf(c -> c.isPlayer());
 			if(sexSlaves.size()==1) {
-				return UtilText.parse(sexSlaves, "Having had [npc.her] fun, [npc.name] reminds you that you have other things you need to be getting on with...");
+				return UtilText.parse(sexSlaves, "Насладившись [npc.her], [npc.name] напоминает тебе, что у тебя есть и другие дела, которыми нужно заняться...");
 			} else {
-				return "Having had their fun, your slaves remind you that you have other things you need to be getting on with...";
+				return "Насладившись, твои рабыни напоминают тебе, что у тебя есть и другие дела, которыми нужно заняться...";
 			}
 		}
 		@Override
@@ -1340,17 +1229,17 @@ public class LilayaSpa {
 				return null;
 			}
 			if(index==0) {
-				return "Pools";
+				return "Бассейны";
 			} else if(index==1) {
-				return "Bar";
+				return "Бар";
 			}
 			return null;
 		}
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(isGuestPresent() && index==0) {
-				return new Response("Leave",
-						UtilText.parse(guest, "Tell [npc.name] that you've got to leave now and accompany [npc.herHim] out of the spa."),
+				return new Response("Уйти",
+						UtilText.parse(guest, "Скажи [npc.name], что тебе пора уходить, и проводи [npc.herHim] из спа."),
 						SPA_GUEST_END);
 			}
 			
@@ -1365,8 +1254,8 @@ public class LilayaSpa {
 							
 				if(index==11) {
 					return new ResponseEffectsOnly(
-							UtilText.parse(target, "Target: <b style='color:"+target.getFemininity().getColour().toWebHexString()+";'>[npc.Name]</b>"),
-							"Cycle the targeted character to receive a drink.") {
+							UtilText.parse(target, "Цель: <b style='color:"+target.getFemininity().getColour().toWebHexString()+";'>[npc.Name]</b>"),
+							"Передать целевому персонажу напиток.") {
 						@Override
 						public void effects() {
 							List<GameCharacter> characters = Util.newArrayListOfValues(Main.game.getPlayer());
@@ -1393,8 +1282,8 @@ public class LilayaSpa {
 					AbstractItem drink = Main.game.getItemGen().generateItem(getDrinks().get(index-1));
 					return new Response(drink.getName(false, false),
 							target.isPlayer()
-								?"Have a glass of "+drink.getName(false, false)+" from the bar."
-								:UtilText.parse(target, "Give [npc.name] a glass of "+drink.getName(false, false)+" from the bar."),
+								?"Выпить бокал "+drink.getName(false, false)+" из бара."
+								:UtilText.parse(target, "Дать [npc.name] бокал "+drink.getName(false, false)+" из бара."),
 							SPA_CORE_BAR_DRINK) {
 						@Override
 						public void effects() {
@@ -1417,9 +1306,9 @@ public class LilayaSpa {
 			
 			if(isGuestPresent()) {
 				if(index==1) {
-					return new Response("Use pool",
-							UtilText.parse(guest, "Slip into one of the pools with [npc.name] and take some time to relax...")
-								+ "<br/>[style.italicsExcellent(This will clean <b>all</b> fluids out of all your orifices.)]",
+					return new Response("Воспользоваться бассейном",
+							UtilText.parse(guest, "Спуститься в один из бассейнов с [npc.name] и немного расслабиться...")
+								+ "<br/>[style.italicsExcellent(Это вымоет <b>все</b> жидкости из всех ваших отверстий.)]",
 							SPA_GUEST_CORE_BATHING){
 						@Override
 						public void effects() {
@@ -1429,25 +1318,24 @@ public class LilayaSpa {
 					};
 				}
 				if(index==2) {
-					return new Response("Give massage",
-							UtilText.parse(guest, "Get [npc.name] to lie down on one of the loungers and give [npc.herHim] a massage."),
+					return new Response("Сделать массаж",
+							UtilText.parse(guest, "Уложить [npc.name] на один из шезлонгов и сделать [npc.herHim] массаж."),
 							SPA_GUEST_CORE_MASSAGE_GIVE);
 				}
 				if(index==3) {
-					return new Response("Receive massage",
+					return new Response("Получить массаж",
 							UtilText.parse(guest,
-									"Lie down on one of the loungers and have [npc.name] give you a massage."),
+									"Прилечь на один из шезлонгов и позволить [npc.name] сделать вам массаж."),
 							SPA_GUEST_CORE_MASSAGE_RECEIVE);
 				}
 				
 			} else {
 				List<GameCharacter> slaves = new ArrayList<>(getSlaves());
 				if(index==1) {
-					return new Response("Use pool",
-							"Slip into one of the pools and take some time to relax..."
-								+ "<br/>[style.italicsExcellent(This will clean <b>all</b> fluids out of all your orifices.)]"
+					return new Response("Воспользоваться бассейном",
+							"Спуститься в один из бассейнов и немного расслабиться...<br/>[style.italicsExcellent(Это вымоет <b>все</b> жидкости из всех ваших отверстий.)]"
 								+ (Main.game.getPlayer().hasCompanions()
-									?"<br/>[style.italicsMinorGood(This <b>does</b> clean companions.)]"
+									?"<br/>[style.italicsMinorGood(Это <b>действительно</b> очищает спутников.)]"
 									:""),
 							SPA_CORE_BATHING){
 						@Override
@@ -1462,11 +1350,10 @@ public class LilayaSpa {
 					};
 					
 				} else if(index==2) {
-					return new Response("Use pool (strip)",
-							"Strip naked, then slip into one of the pools and take some time to relax..."
-								+ "<br/>[style.italicsExcellent(This will clean <b>all</b> fluids out of all your orifices.)]"
+					return new Response("Воспользоваться бассейном (раздеться)",
+							"Разденься догола, затем окунись в один из бассейнов и позволь себе немного расслабиться...<br/>[style.italicsExcellent(Это вымоет все <b>все</b> жидкости из всех твоих отверстий.)]"
 								+ (Main.game.getPlayer().hasCompanions()
-									?"<br/>[style.italicsMinorGood(This <b>does</b> clean companions.)]"
+									?"<br/>[style.italicsMinorGood(Это <b>действительно</b> очищает спутников.)]"
 									:""),
 							SPA_CORE_BATHING){
 						@Override
@@ -1484,13 +1371,12 @@ public class LilayaSpa {
 					
 				} else if(index==3) {
 					if(!slaves.stream().anyMatch(npc -> npc.hasSlaveJobSetting(SlaveJob.SPA, SlaveJobSetting.SPA_MASSAGE))) {
-						return new Response("Massage",
-								"There are no available slaves to give you a massage!"
-										+ "<br/><i>You need to assign slaves to work in the spa and give them the '"+SlaveJobSetting.SPA_MASSAGE.getName()+"' permission.</i>",
+						return new Response("Массаж",
+								"Нет свободных рабынь, чтобы сделать тебе массаж!<br/><i>Тебе нужно назначить рабынь для работы в спа и дать им разрешение на '"+SlaveJobSetting.SPA_MASSAGE.getName()+"' массаж'.</i>",
 								null);
 					}
-					return new Response("Massage",
-							"Have one of your slaves give you a massage.<br/>[style.italics(Proceed to the slave selection screen, where you can choose which slave you want to massage you.)]",
+					return new Response("Массаж",
+							"Попросить одну из своих рабынь сделать тебе массаж.<br/>[style.italics(Перейди к экрану выбора рабынь, где ты сможешь выбрать ту, которая будет делать тебе массаж.)]",
 							SPA_MASSAGE_SELECTION);
 					
 				} else if(index==4) {
@@ -1527,7 +1413,7 @@ public class LilayaSpa {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue", "Decide what to do next...", SPA_CORE);
+				return new Response("Продолжить", "Решить, что делать дальше...", SPA_CORE);
 			}
 			return null;
 		}
@@ -1577,14 +1463,14 @@ public class LilayaSpa {
 		    slavesSexNoNulls.removeIf(s->s==null);
 			
 			if(index==1) {
-				return new Response("Finish", "Finish with your bathing session and get out of the pool.", BATHING_FINISHED);
+				return new Response("Закончить", "Закончить купание и выйти из бассейна.", BATHING_FINISHED);
 				
 			} else if(index==2) {
 				if(slavesSex.isEmpty()) {
-					return new Response("Sex", "You do not have any slaves assigned to work in the spa with the bathing permission, so there's nobody for you to have sex with...", null);
+					return new Response("Секс", "У тебя нет рабынь, назначенных для работы в спа с правом купания, так что тебе не с кем заняться сексом...", null);
 				}
 				if(slavesSexNoNulls.isEmpty()) {
-					return new Response("Sex", "You need to select at least one slave to have sex with...", null);
+					return new Response("Секс", "Тебе нужно выбрать хотя бы одну рабыню для секса...", null);
 				}
 				
 				Map<GameCharacter, SexSlot> slaveSlots = new HashMap<>();
@@ -1603,23 +1489,23 @@ public class LilayaSpa {
 				}
 				
 				if(!Main.game.isNonConEnabled() && !notAttractedList.isEmpty()) {
-					return new Response("Sex",
+					return new Response("Секс",
 							notAttractedList.size()==1
-								?UtilText.parse(notAttractedList.get(0), "[npc.Name] is not attracted to you, and so [npc.she] isn't willing to let you have sex with [npc.herHim]...")
-								:Util.stringsToStringList(notAttractedNamesList, true)+" are not attracted to you, and so they aren't willing to let you have sex with them...",
+								?UtilText.parse(notAttractedList.get(0), "[npc.Name] не испытывает к тебе влечения, поэтому [npc.she] не хочет, чтобы ты трахал [npc.herHim]...")
+								:Util.stringsToStringList(notAttractedNamesList, true)+" не испытывают к тебе влечения, поэтому не хотят заниматься с тобой сексом...",
 							null);
 				}
-				return new ResponseSex(slavesSexNoNulls.stream().anyMatch(c->!c.isAttractedTo(Main.game.getPlayer()))?"Rape":"Sex",
+				return new ResponseSex(slavesSexNoNulls.stream().anyMatch(c->!c.isAttractedTo(Main.game.getPlayer()))?"Изнасилование":"Секс",
 						(slavesSexNoNulls.size()==1
-							?UtilText.parse(slavesSexNoNulls, "Have dominant sex with [npc.name].")
+							?UtilText.parse(slavesSexNoNulls, "Заняться доминантным сексом с [npc.name].")
 							:(slavesSexNoNulls.size()==2
-								?UtilText.parse(slavesSexNoNulls, "Have dominant sex with [npc.name] while [npc2.name] sits beside you.")
-								:UtilText.parse(slavesSexNoNulls, "Have dominant sex with [npc.name] while [npc2.name] and [npc3.name] sit beside you.")))
+								?UtilText.parse(slavesSexNoNulls, "Заняться доминантным сексом с [npc.name], пока [npc2.name] сидит рядом.")
+								:UtilText.parse(slavesSexNoNulls, "Заняться доминантным сексом с [npc.name], пока [npc2.name] и [npc3.name] сидят рядом.")))
 						+(notAttractedList.isEmpty()
 							?""
 							:(notAttractedList.size()==1
-								?UtilText.parse(notAttractedList.get(0), "<br/>[style.italicsBad([npc.Name] is not attracted to you, and so would consider this to be rape...)]")
-								:"<br/>[style.italicsBad("+Util.stringsToStringList(notAttractedNamesList, true)+" are not attracted to you, and so would consider this to be rape...)]")),
+								?UtilText.parse(notAttractedList.get(0), "<br/>[style.italicsBad([npc.Name] не испытывает к тебе влечения, поэтому сочтет это изнасилованием...)]")
+								:"<br/>[style.italicsBad("+Util.stringsToStringList(notAttractedNamesList, true)+" не испытывают к тебе влечения, поэтому сочтут это изнасилованием...)]")),
 						true, false,
 						new SMBath(SexPosition.SITTING,
 								Util.newHashMapOfValues(new Value<>(Main.game.getPlayer(), SexSlotSitting.SITTING)),
@@ -1642,17 +1528,17 @@ public class LilayaSpa {
 				
 			} else if(index==3) {
 				if(slavesSex.isEmpty()) {
-					return new Response("Submissive sex", "You do not have any slaves assigned to work in the spa with the bathing permission, so there's nobody for you to have submissive sex with...", null);
+					return new Response("Субмиссивный секс", "У тебя нет рабов, назначенных для работы в спа с правом купания, так что тебе не с кем заняться сабмиссивным сексом...", null);
 				}
 				if(slavesSexNoNulls.isEmpty()) {
-					return new Response("Submissive sex", "You need to select at least one slave to have sex with...", null);
+					return new Response("Субмиссивный секс", "Тебе нужно выбрать хотя бы одну рабыню для секса...", null);
 				}
 				
 				if(!slavesSexNoNulls.stream().anyMatch(s->s.isAttractedTo(Main.game.getPlayer()))) {
-					return new Response("Submissive sex",
+					return new Response("Субмиссивный секс",
 							slavesSexNoNulls.size()==1
-								?UtilText.parse(slavesSexNoNulls, "As [npc.name] isn't attracted to you, [npc.she] is unwilling to be the dominant partner in sex...")
-								:"As your slaves aren't attracted to you, they are unwilling to be the dominant partners in sex...",
+								?UtilText.parse(slavesSexNoNulls, "Так как [npc.name] не испытывает к вам влечения, [npc.she] не желает выступать в роли доминанта в сексе...")
+								:"Так как твои рабы не испытывают к тебе влечения, они не хотят выступать в роли доминантных партнеров в сексе...",
 							null);
 				}
 				Map<GameCharacter, SexSlot> slaveSlots = new HashMap<>();
@@ -1660,10 +1546,10 @@ public class LilayaSpa {
 				for(int i=0 ; i<attractedSlaves.size() && i<bathingSlots.length; i++) {
 					slaveSlots.put(attractedSlaves.get(i), bathingSlots[i]);
 				}
-				return new ResponseSex("Submissive sex",
+				return new ResponseSex("Субмиссивный секс",
 						attractedSlaves.size()==1
-								?UtilText.parse(attractedSlaves, "Let [npc.name] dominantly fuck you in the pool.")
-										:"Let your slaves dominantly fuck you in the pool.",
+								?UtilText.parse(attractedSlaves, "Позволить [npc.name] доминантно трахать тебя в бассейне.")
+										:"Позволить своим рабам доминантно трахать тебя в бассейне.",
 						true, true,
 						new SMBath(SexPosition.SITTING,
 								slaveSlots,
@@ -1689,9 +1575,9 @@ public class LilayaSpa {
 					GameCharacter target = slavesSex.get(0);
 					return new ResponseEffectsOnly(
 							target==null
-								?"Target: [style.boldDisabled(None)]"
-								:UtilText.parse(target, "Target: <b style='color:"+target.getFemininity().getColour().toWebHexString()+";'>[npc.Name]</b>"),
-							"Cycle the primary targeted character to have sex with.") {
+								?"Цель: [style.boldDisabled(Нет)]"
+								:UtilText.parse(target, "Цель: <b style='color:"+target.getFemininity().getColour().toWebHexString()+";'>[npc.Name]</b>"),
+							"Переключить основного персонажа для секса.") {
 						@Override
 						public void effects() {
 							setNextSexTarget(0);
@@ -1703,9 +1589,9 @@ public class LilayaSpa {
 					GameCharacter target = slavesSex.get(1);
 					return new ResponseEffectsOnly(
 							target==null
-								?"Target: [style.boldDisabled(None)]"
-								:UtilText.parse(target, "Target: <b style='color:"+target.getFemininity().getColour().toWebHexString()+";'>[npc.Name]</b>"),
-							"Cycle the secondary targeted character to have sex with.") {
+								?"Цель: [style.boldDisabled(Нет)]"
+								:UtilText.parse(target, "Цель: <b style='color:"+target.getFemininity().getColour().toWebHexString()+";'>[npc.Name]</b>"),
+							"Переключить второстепенного персонажа для секса.") {
 						@Override
 						public void effects() {
 							setNextSexTarget(1);
@@ -1717,9 +1603,9 @@ public class LilayaSpa {
 					GameCharacter target = slavesSex.get(2);
 					return new ResponseEffectsOnly(
 							target==null
-								?"Target: [style.boldDisabled(None)]"
-								:UtilText.parse(target, "Target: <b style='color:"+target.getFemininity().getColour().toWebHexString()+";'>[npc.Name]</b>"),
-							"Cycle the tertiary targeted character to have sex with.") {
+								?"Цель: [style.boldDisabled(Нет)]"
+								:UtilText.parse(target, "Цель: <b style='color:"+target.getFemininity().getColour().toWebHexString()+";'>[npc.Name]</b>"),
+							"Переключить третьего персонажа для секса.") {
 						@Override
 						public void effects() {
 							setNextSexTarget(2);
@@ -1767,7 +1653,7 @@ public class LilayaSpa {
 		}
 	}
 
-	public static final DialogueNode BATHING_AFTER_SEX = new DialogueNode("Finished", "", true) {
+	public static final DialogueNode BATHING_AFTER_SEX = new DialogueNode("Завершено", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
 //			for(GameCharacter character : bathingStripped) {
@@ -1783,9 +1669,9 @@ public class LilayaSpa {
 			List<GameCharacter> sexSlaves = new ArrayList<>(Main.sex.getAllParticipants());
 			sexSlaves.removeIf(c -> c.isPlayer());
 			if(sexSlaves.size()==1) {
-				return UtilText.parse(sexSlaves, "Having had [npc.her] fun, [npc.name] reminds you that you have other things you need to be getting on with...");
+				return UtilText.parse(sexSlaves, "Насладившись [npc.her], [npc.name] напоминает тебе, что у тебя есть и другие дела, которыми нужно заняться...");
 			} else {
-				return "Having had their fun, your slaves remind you that you have other things you need to be getting on with...";
+				return "Насладившись, твои рабыни напоминают тебе, что у тебя есть и другие дела, которыми нужно заняться...";
 			}
 		}
 		@Override
@@ -1856,7 +1742,7 @@ public class LilayaSpa {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==0) {
-				return new Response("Back", "Decide against having a massage after all...", SPA_CORE) {
+				return new Response("Назад", "В итоге решить отказаться от массажа...", SPA_CORE) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/lilayasHome/spa", "SPA_MASSAGE_SELECTION_BACK"));
@@ -1867,11 +1753,11 @@ public class LilayaSpa {
 				GameCharacter slave = slavesForMassage.get(index-1);
 				return new Response(UtilText.parse(slave, "[npc.Name]"),
 						UtilText.parse(slave,
-								"Lie down on one of the loungers and have [npc.name] give you a massage."
+								"Прилечь на один из шезлонгов и позволить [npc.name] сделать вам массаж."
 								+ (slave.hasSlavePermissionSetting(SlavePermissionSetting.SEX_INITIATE_PLAYER) && slave.isAttractedTo(Main.game.getPlayer())
 									?(slave.hasStatusEffect(StatusEffect.PENT_UP_SLAVE)
-										?"<br/>[style.italicsSex(As [npc.name] has permission to use you for sex, and as [npc.she] is currently pent up, [npc.she] is certain to start fucking you during the massage!)]"
-										:"<br/>[style.italicsSex(As [npc.name] has permission to use you for sex, [npc.she] might start fucking you during the massage!)]")
+										?"<br/>[style.italicsSex(Так как [npc.name] имеет разрешение использовать тебя для секса, а [npc.she] сейчас на взводе, [npc.she] наверняка начнет трахать тебя прямо во время массажа!)]"
+										:"<br/>[style.italicsSex(Так как [npc.name] имеет разрешение использовать тебя для секса, [npc.she] может начать трахать тебя прямо во время массажа!)]")
 									:"")),
 						SPA_MASSAGE) {
 					@Override
@@ -1918,8 +1804,8 @@ public class LilayaSpa {
 			if(massageSlaveSex) {
 				if(index==1) {
 					return new ResponseSex(
-							"Fucked",
-							UtilText.parse(massageSlave, "[npc.Name] has you pinned down on the lounger, ready to start fucking you..."),
+							"Трахнутый",
+							UtilText.parse(massageSlave, "[npc.Name] прижимает тебя к шезлонгу, готовая начать трахать тебя..."),
 							true,
 							!(massageSlave.isWillingToRape(Main.game.getPlayer()) && massageSlave.hasSlavePermissionSetting(SlavePermissionSetting.SEX_RAPIST)),
 							new SexManagerDefault(Main.game.getPlayer().isTaur()?SexPosition.ALL_FOURS:SexPosition.LYING_DOWN,
@@ -1933,13 +1819,13 @@ public class LilayaSpa {
 					
 				} else if(index==2) {
 					if(massageSlave.isWillingToRape(Main.game.getPlayer()) && massageSlave.hasSlavePermissionSetting(SlavePermissionSetting.SEX_RAPIST)) {
-						return new Response("Refuse",
-								UtilText.parse(massageSlave, "As you've given [npc.herHim] permission to rape, [npc.nameIsFull] not going to take no for an answer!"),
+						return new Response("Отказаться",
+								UtilText.parse(massageSlave, "Раз уж ты дал(а) [npc.herHim] разрешение на изнасилование, [npc.nameIsFull] не примет отказ!"),
 								null);
 						
 					} else {
-						return new Response("Refuse",
-								UtilText.parse(massageSlave, "You really aren't in the mood right now, so firmly tell [npc.name] to stop."),
+						return new Response("Отказаться",
+								UtilText.parse(massageSlave, "У тебя сейчас совсем нет настроения, так что решительно прикажи [npc.name] остановиться."),
 								REFUSE_SLAVE_SEX);
 						
 					}
@@ -1947,7 +1833,7 @@ public class LilayaSpa {
 				
 			} else {
 				if(index==1) {
-					return new Response("Continue", "Now that you've had a nice relaxing massage, you wonder what to do next...", SPA_CORE) {
+					return new Response("Продолжить", "Теперь, когда ты получил приятный расслабляющий массаж, ты задумываешься, чем заняться дальше...", SPA_CORE) {
 						@Override
 						public void effects() {
 							Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/lilayasHome/spa", "SPA_MASSAGE_FINISHED", massageSlave));
@@ -1956,15 +1842,15 @@ public class LilayaSpa {
 					
 				} else if(index==2) {
 					if(!Main.game.isNonConEnabled() && !massageSlave.isAttractedTo(Main.game.getPlayer())) {
-						return new Response("Sex", UtilText.parse(massageSlave, "[npc.Name] is not attracted to you, and so [npc.she] isn't willing to let you have sex with [npc.herHim]..."), null);
+						return new Response("Секс", UtilText.parse(massageSlave, "[npc.Name] не испытывает к тебе влечения, поэтому [npc.she] не хочет, чтобы ты трахал [npc.herHim]..."), null);
 					}
 					return new ResponseSex(
 							!massageSlave.isAttractedTo(Main.game.getPlayer())
-								?"Rape"
-								:"Sex",
+								?"Изнасилование"
+								:"Секс",
 							!massageSlave.isAttractedTo(Main.game.getPlayer())
-								?UtilText.parse(massageSlave, "Push [npc.name] down onto the lounger and rape [npc.herHim].")
-								:UtilText.parse(massageSlave, "Push [npc.name] down onto the lounger and have dominant sex with [npc.herHim]."),
+								?UtilText.parse(massageSlave, "Прижать [npc.name] к шезлонгу и изнасиловать [npc.herHim].")
+								:UtilText.parse(massageSlave, "Прижать [npc.name] к шезлонгу и заняться с [npc.herHim] доминантным сексом."),
 							true,
 							false,
 							new SexManagerDefault(massageSlave.isTaur()?SexPosition.ALL_FOURS:SexPosition.LYING_DOWN,
@@ -1978,11 +1864,11 @@ public class LilayaSpa {
 					
 				} else if(index==3) {
 					if(!massageSlave.isAttractedTo(Main.game.getPlayer())) {
-						return new Response("Submissive sex", UtilText.parse(massageSlave, "As [npc.name] is not attracted to you, [npc.she] is not willing to take the dominant role in having sex with you..."), null);
+						return new Response("Субмиссивный секс", UtilText.parse(massageSlave, "Поскольку [npc.name] не испытывает к тебе влечения, [npc.she] не желает брать на себя доминирующую роль в сексе с тобой..."), null);
 					}
 					return new ResponseSex(
-							"Submissive sex",
-							UtilText.parse(massageSlave, "Tell [npc.name] to fuck you on the lounger..."),
+							"Субмиссивный секс",
+							UtilText.parse(massageSlave, "Приказать [npc.name] трахнуть тебя на шезлонге..."),
 							true,
 							false,
 							new SexManagerDefault(Main.game.getPlayer().isTaur()?SexPosition.ALL_FOURS:SexPosition.LYING_DOWN,
@@ -1999,10 +1885,10 @@ public class LilayaSpa {
 		}
 	};
 
-	public static final DialogueNode AFTER_MASSAGE_SEX = new DialogueNode("Finished", "", true) {
+	public static final DialogueNode AFTER_MASSAGE_SEX = new DialogueNode("Завершено", "", true) {
 		@Override
 		public String getDescription() {
-			return UtilText.parse(massageSlave, "Having had [npc.her] fun, [npc.name] reminds you that you have other things you need to be getting on with...");
+			return UtilText.parse(massageSlave, "Насладившись [npc.her], [npc.name] напоминает тебе, что у тебя есть и другие дела, которыми нужно заняться...");
 		}
 		@Override
 		public String getContent() {
@@ -2011,7 +1897,7 @@ public class LilayaSpa {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue", "Now that you've had an unexpectedly fun massage, you wonder what to do next...", SPA_CORE) {
+				return new Response("Продолжить", "Теперь, когда массаж оказался неожиданно веселым, ты задумываешься, чем заняться дальше...", SPA_CORE) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/lilayasHome/spa", "AFTER_MASSAGE_SEX_FINISHED", massageSlave));
@@ -2030,7 +1916,7 @@ public class LilayaSpa {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue", "Now that you've told your slave to back off, you wonder what to do next...", SPA_CORE) {
+				return new Response("Продолжить", "Теперь, когда ты велел своей рабыне отступить, ты задумываешься, чем заняться дальше...", SPA_CORE) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/lilayasHome/spa", "REFUSE_SLAVE_SEX_FINISHED", massageSlave));
@@ -2060,7 +1946,7 @@ public class LilayaSpa {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("To the spa", UtilText.parse(guest, "Accompany [npc.name] to the spa."), SPA_GUEST_ARRIVE) {
+				return new Response("В спа", UtilText.parse(guest, "Сопроводить [npc.name] в спа."), SPA_GUEST_ARRIVE) {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setLocation(WorldType.LILAYAS_HOUSE_GROUND_FLOOR, PlaceType.LILAYA_HOME_SPA);
@@ -2097,7 +1983,7 @@ public class LilayaSpa {
 				
 				if(index==1) {
 					if(guest.isAbleToEquip(swimsuit, true, guest)) {
-						return new Response("Swimsuit", UtilText.parse(guest, "Tell [npc.name] to wear a modest swimsuit."), SPA_GUEST_PLAYER_CLOTHING) {
+						return new Response("Купальник", UtilText.parse(guest, "Попросить [npc.name] надеть скромный купальник."), SPA_GUEST_PLAYER_CLOTHING) {
 							@Override
 							public void effects() {
 								guest.unequipAllClothingIntoHoldingInventory(guest, false, false);
@@ -2106,12 +1992,12 @@ public class LilayaSpa {
 							}
 						};
 					} else {
-						return new Response("Swimsuit", UtilText.parse(guest, "[npc.Name] cannot wear a swimsuit, as some of [npc.her] sealed clothing is blocking [npc.herHim] from doing so..."), null);
+						return new Response("Купальник", UtilText.parse(guest, "[npc.Name] не может надеть купальник, так как часть запечатанной одежды [npc.her] мешает [npc.herHim] сделать это..."), null);
 					}
 				}
 				if(index==2) {
 					if(guest.isAbleToEquip(bikiniTop, true, guest) && guest.isAbleToEquip(bikiniBottom, true, guest)) {
-						return new Response("Bikini", UtilText.parse(guest, "Tell [npc.name] to wear a bikini."), SPA_GUEST_PLAYER_CLOTHING) {
+						return new Response("Бикини", UtilText.parse(guest, "Попросить [npc.name] надеть бикини."), SPA_GUEST_PLAYER_CLOTHING) {
 							@Override
 							public void effects() {
 								guest.unequipAllClothingIntoHoldingInventory(guest, false, false);
@@ -2121,18 +2007,18 @@ public class LilayaSpa {
 							}
 						};
 					} else {
-						return new Response("Bikini", UtilText.parse(guest, "[npc.Name] cannot wear a bikini, as some of [npc.her] sealed clothing is blocking [npc.herHim] from doing so..."), null);
+						return new Response("Бикини", UtilText.parse(guest, "[npc.Name] не может надеть бикини, так как часть запечатанной одежды [npc.her] мешает [npc.herHim] сделать это..."), null);
 					}
 				}
 				if(index==3) {
 					if(guest.isAbleToEquip(microBikiniTop, true, guest) && guest.isAbleToEquip(microBikiniBottom, true, guest)) {
 						return new Response(
 								guest.getFetishDesire(Fetish.FETISH_EXHIBITIONIST).isNegative()
-									?"[style.colourBad(Micro bikini)]"
-									:"Micro bikini",
-								UtilText.parse(guest, "Tell [npc.name] to wear a highly revealing micro bikini."
+									?"[style.colourBad(Микро-бикини)]"
+									:"Микро-бикини",
+								UtilText.parse(guest, "Попросить [npc.name] надеть вызывающее микро-бикини."
 										+ (guest.getFetishDesire(Fetish.FETISH_EXHIBITIONIST).isNegative()
-											?"[style.italicsBad(As [npc.name] has a negative desire towards the '"+Fetish.FETISH_EXHIBITIONIST.getName(guest)+"' fetish, [npc.she] will not like this!)]"
+											?"[style.italicsBad(Так как у [npc.name] отрицательное желание к '"+Fetish.FETISH_EXHIBITIONIST.getName(guest)+"' фетиш, [npc.she] это не понравится!)]"
 											:"")),
 								SPA_GUEST_PLAYER_CLOTHING) {
 							@Override
@@ -2147,17 +2033,17 @@ public class LilayaSpa {
 							}
 						};
 					} else {
-						return new Response("Micro bikini", UtilText.parse(guest, "[npc.Name] cannot wear a micro bikini, as some of [npc.her] sealed clothing is blocking [npc.herHim] from doing so..."), null);
+						return new Response("Микро-бикини", UtilText.parse(guest, "[npc.Name] не может надеть микро-бикини, так как часть [npc.her] облегающей одежды мешает [npc.herHim] сделать это..."), null);
 					}
 				}
 				if(index==4) {
 					return new Response(
 							guest.getFetishDesire(Fetish.FETISH_EXHIBITIONIST).isNegative()
-								?"[style.colourBad(Naked)]"
-								:"Naked",
-							UtilText.parse(guest, "Tell [npc.name] to strip out of all of [npc.her] clothes and head into the spa naked."
+								?"[style.colourBad(Обнаженная)]"
+								:"Обнаженная",
+							UtilText.parse(guest, "Приказать [npc.name] скинуть всю [npc.her] одежду и отправиться в спа обнаженной."
 								+ (guest.getFetishDesire(Fetish.FETISH_EXHIBITIONIST).isNegative()
-									?"[style.italicsBad(As [npc.name] has a negative desire towards the '"+Fetish.FETISH_EXHIBITIONIST.getName(guest)+"' fetish, [npc.she] will not like this!)]"
+									?"[style.italicsBad(Так как у [npc.name] отрицательное желание к '"+Fetish.FETISH_EXHIBITIONIST.getName(guest)+"' фетиш, [npc.she] это не понравится!)]"
 									:"")),
 							SPA_GUEST_PLAYER_CLOTHING) {
 						@Override
@@ -2175,7 +2061,7 @@ public class LilayaSpa {
 				AbstractClothing swimShorts = Main.game.getItemGen().generateClothing("innoxia_groin_swim_shorts", PresetColour.CLOTHING_BLUE, false);
 				if(index==1) {
 					if(guest.isAbleToEquip(swimShorts, true, guest)) {
-						return new Response("Swimming shorts", UtilText.parse(guest, "Tell [npc.name] to wear swimming shorts."), SPA_GUEST_PLAYER_CLOTHING) {
+						return new Response("Плавки", UtilText.parse(guest, "Приказать [npc.name] надеть плавки."), SPA_GUEST_PLAYER_CLOTHING) {
 							@Override
 							public void effects() {
 								guest.unequipAllClothingIntoHoldingInventory(guest, false, false);
@@ -2184,17 +2070,17 @@ public class LilayaSpa {
 							}
 						};
 					} else {
-						return new Response("Swimming shorts", UtilText.parse(guest, "[npc.Name] cannot wear swimming shorts, as some of [npc.her] sealed clothing is blocking [npc.herHim] from doing so..."), null);
+						return new Response("Плавки", UtilText.parse(guest, "[npc.Name] не может надеть плавки, так как часть [npc.her] облегающей одежды мешает [npc.herHim] сделать это..."), null);
 					}
 				}
 				if(index==2) {
 					return new Response(
 							guest.getFetishDesire(Fetish.FETISH_EXHIBITIONIST).isNegative()
-								?"[style.colourBad(Naked)]"
-								:"Naked",
-							UtilText.parse(guest, "Tell [npc.name] to strip out of all of [npc.her] clothes and head into the spa naked."
+								?"[style.colourBad(Обнаженная)]"
+								:"Обнаженная",
+							UtilText.parse(guest, "Приказать [npc.name] скинуть всю [npc.her] одежду и отправиться в спа обнаженной."
 								+ (guest.getFetishDesire(Fetish.FETISH_EXHIBITIONIST).isNegative()
-									?"[style.italicsBad(As [npc.name] has a negative desire towards the '"+Fetish.FETISH_EXHIBITIONIST.getName(guest)+"' fetish, [npc.she] will not like this!)]"
+									?"[style.italicsBad(Так как у [npc.name] отрицательное желание к '"+Fetish.FETISH_EXHIBITIONIST.getName(guest)+"' фетиш, [npc.she] это не понравится!)]"
 									:"")),
 							SPA_GUEST_PLAYER_CLOTHING) {
 						@Override
@@ -2224,7 +2110,7 @@ public class LilayaSpa {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Don't strip", "Decide against going naked and continue on into the spa as you are.", SPA_GUEST_PLAYER_CLOTHING_REVEAL) {
+				return new Response("Не раздеваться", "Решить не раздеваться и войти в спа в текущем виде.", SPA_GUEST_PLAYER_CLOTHING_REVEAL) {
 					@Override
 					public void effects() {
 						playerStripped = false;
@@ -2233,8 +2119,8 @@ public class LilayaSpa {
 				};
 			}
 			if(index==2) {
-				return new Response("Go naked",
-						"Strip out of all of your clothes and head into the spa naked.",
+				return new Response("Раздеться",
+						"Сбросить всю одежду и войти в спа нагишом.",
 						SPA_GUEST_PLAYER_CLOTHING_REVEAL) {
 					@Override
 					public void effects() {
@@ -2260,7 +2146,7 @@ public class LilayaSpa {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Pools", UtilText.parse(guest, "Lead [npc.name] through into the pools."), SPA_GUEST_CORE) {
+				return new Response("Бассейны", UtilText.parse(guest, "Провести [npc.name] к бассейнам."), SPA_GUEST_CORE) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/lilayasHome/spa", "SPA_GUEST_PLAYER_CLOTHING_REVEAL_POOLS", guest));
@@ -2302,7 +2188,7 @@ public class LilayaSpa {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Finish", "Finish with your bathing session and get out of the pool.", SPA_GUEST_CORE) {
+				return new Response("Закончить", "Закончить купание и выйти из бассейна.", SPA_GUEST_CORE) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/lilayasHome/spa", "SPA_GUEST_CORE_BATHING_END", guest));
@@ -2311,12 +2197,12 @@ public class LilayaSpa {
 				
 			} else if(index==2) {
 				if(!guest.isAttractedTo(Main.game.getPlayer())) {
-					return new Response("Sex",
-							UtilText.parse(guest, "[npc.Name] is not attracted to you, and so [npc.she] isn't willing to let you have sex with [npc.herHim]..."),
+					return new Response("Секс",
+							UtilText.parse(guest, "[npc.Name] не испытывает к тебе влечения, поэтому [npc.she] не хочет, чтобы ты трахал [npc.herHim]..."),
 							null);
 				}
-				return new ResponseSex("Sex",
-						UtilText.parse(guest, "Have dominant sex with [npc.name]."),
+				return new ResponseSex("Секс",
+						UtilText.parse(guest, "Заняться доминантным сексом с [npc.name]."),
 						true, false,
 						new SMBath(SexPosition.SITTING,
 								Util.newHashMapOfValues(new Value<>(Main.game.getPlayer(), SexSlotSitting.SITTING)),
@@ -2333,12 +2219,12 @@ public class LilayaSpa {
 				
 			} else if(index==3) {
 				if(!guest.isAttractedTo(Main.game.getPlayer())) {
-					return new Response("Submissive sex",
-							UtilText.parse(guest, "[npc.Name] is not attracted to you, and so [npc.she] isn't willing to let you have sex with [npc.herHim]..."),
+					return new Response("Субмиссивный секс",
+							UtilText.parse(guest, "[npc.Name] не испытывает к тебе влечения, поэтому [npc.she] не хочет, чтобы ты трахал [npc.herHim]..."),
 							null);
 				}
-				return new ResponseSex("Submissive sex",
-						UtilText.parse(guest, "Let [npc.name] take charge and fuck you right here in the pool."),
+				return new ResponseSex("Субмиссивный секс",
+						UtilText.parse(guest, "Позволить [npc.name] взять инициативу в свои руки и трахнуть вас прямо здесь, в бассейне."),
 						true, true,
 						new SMBath(SexPosition.SITTING,
 								Util.newHashMapOfValues(new Value<>(guest, SexSlotSitting.SITTING)),
@@ -2357,7 +2243,7 @@ public class LilayaSpa {
 		}
 	};
 
-	public static final DialogueNode SPA_GUEST_CORE_BATHING_AFTER_SEX = new DialogueNode("Finished", "", true) {
+	public static final DialogueNode SPA_GUEST_CORE_BATHING_AFTER_SEX = new DialogueNode("Завершено", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			guest.applyWash(true, true, StatusEffect.CLEANED_SPA, 240+30);
@@ -2365,7 +2251,7 @@ public class LilayaSpa {
 		}
 		@Override
 		public String getDescription() {
-			return UtilText.parse(guest, "Having had [npc.her] fun, [npc.name] asks if you'd like to do something else...");
+			return UtilText.parse(guest, "Насладившись временем с [npc.her], [npc.name] спрашивает, не хотите ли вы заняться чем-нибудь еще...");
 		}
 		@Override
 		public String getContent() {
@@ -2374,7 +2260,7 @@ public class LilayaSpa {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue", "Finish with your bathing session and get out of the pool.", SPA_GUEST_CORE) {
+				return new Response("Продолжить", "Закончить купание и выйти из бассейна.", SPA_GUEST_CORE) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/lilayasHome/spa", "SPA_GUEST_CORE_BATHING_AFTER_SEX_END", guest));
@@ -2401,7 +2287,7 @@ public class LilayaSpa {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue", UtilText.parse(guest, "Now that you've given [npc.name] a nice relaxing massage, you wonder what to do next..."), SPA_GUEST_CORE) {
+				return new Response("Продолжить", UtilText.parse(guest, "После того как вы сделали [npc.name] приятный расслабляющий массаж, вы задумываетесь, чем заняться дальше..."), SPA_GUEST_CORE) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/lilayasHome/spa", "SPA_GUEST_CORE_MASSAGE_GIVE_END", guest));
@@ -2410,13 +2296,13 @@ public class LilayaSpa {
 				
 			} else if(index==2) {
 				if(!guest.isAttractedTo(Main.game.getPlayer())) {
-					return new Response(UtilText.parse(guest, "Fuck [npc.herHim]"),
-							UtilText.parse(guest, "As [npc.name] is not attracted to you, [npc.she] is not willing to have sex with you..."),
+					return new Response(UtilText.parse(guest, "Трахнуть [npc.herHim]"),
+							UtilText.parse(guest, "Так как [npc.name] не испытывает к вам влечения, [npc.she] не желает заниматься с вами сексом..."),
 							null);
 				}
 				return new ResponseSex(
-						UtilText.parse(guest, "Fuck [npc.herHim]"),
-						UtilText.parse(guest, "Give [npc.name] what it is that [npc.she] so clearly wants from you..."),
+						UtilText.parse(guest, "Трахнуть [npc.herHim]"),
+						UtilText.parse(guest, "Дай [npc.name] то, чего [npc.she] так явно от тебя хочет..."),
 						true,
 						false,
 						new SexManagerDefault(guest.isTaur()?SexPosition.ALL_FOURS:SexPosition.LYING_DOWN,
@@ -2424,7 +2310,7 @@ public class LilayaSpa {
 								Util.newHashMapOfValues(new Value<>(guest, guest.isTaur()?SexSlotAllFours.ALL_FOURS:SexSlotLyingDown.LYING_DOWN))) {
 							@Override
 							public String getDeskName() {
-								return "massage table";
+								return "массажный стол";
 							}
 						},
 						null,
@@ -2452,7 +2338,7 @@ public class LilayaSpa {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue", "Now that you've had a nice relaxing massage, you wonder what to do next...", SPA_CORE) {
+				return new Response("Продолжить", "Теперь, когда ты получил приятный расслабляющий массаж, ты задумываешься, чем заняться дальше...", SPA_CORE) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/lilayasHome/spa", "SPA_GUEST_CORE_MASSAGE_RECEIVE_END", massageSlave));
@@ -2462,13 +2348,13 @@ public class LilayaSpa {
 			}
 			if(index==2) {
 				if(!guest.isAttractedTo(Main.game.getPlayer())) {
-					return new Response("Fucked",
-							UtilText.parse(guest, "As [npc.name] is not attracted to you, [npc.she] is not willing to have sex with you..."),
+					return new Response("Трахнутый",
+							UtilText.parse(guest, "Так как [npc.name] не испытывает к вам влечения, [npc.she] не желает заниматься с вами сексом..."),
 							null);
 				}
 				return new ResponseSex(
-						"Fucked",
-						UtilText.parse(guest, "Tell [npc.name] that [npc.she] can fuck you..."),
+						"Трахнутый",
+						UtilText.parse(guest, "Скажи [npc.name], что [npc.she] может трахать тебя..."),
 						true,
 						false,
 						new SexManagerDefault(Main.game.getPlayer().isTaur()?SexPosition.ALL_FOURS:SexPosition.LYING_DOWN,
@@ -2476,7 +2362,7 @@ public class LilayaSpa {
 								Util.newHashMapOfValues(new Value<>(Main.game.getPlayer(), Main.game.getPlayer().isTaur()?SexSlotAllFours.ALL_FOURS:SexSlotLyingDown.LYING_DOWN))) {
 							@Override
 							public String getDeskName() {
-								return "massage table";
+								return "массажный стол";
 							}
 						},
 						null,
@@ -2488,10 +2374,10 @@ public class LilayaSpa {
 		}
 	};
 
-	public static final DialogueNode SPA_GUEST_CORE_MASSAGE_AFTER_SEX = new DialogueNode("Finished", "", true) {
+	public static final DialogueNode SPA_GUEST_CORE_MASSAGE_AFTER_SEX = new DialogueNode("Завершено", "", true) {
 		@Override
 		public String getDescription() {
-			return UtilText.parse(guest, "Having had [npc.her] fun, [npc.name] asks if you'd like to do something else...");
+			return UtilText.parse(guest, "Насладившись временем с [npc.her], [npc.name] спрашивает, не хотите ли вы заняться чем-нибудь еще...");
 		}
 		@Override
 		public String getContent() {
@@ -2500,7 +2386,7 @@ public class LilayaSpa {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue", "Now that you've had an unexpectedly fun massage, you wonder what to do next...", SPA_GUEST_CORE) {
+				return new Response("Продолжить", "Теперь, когда массаж оказался неожиданно веселым, ты задумываешься, чем заняться дальше...", SPA_GUEST_CORE) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/lilayasHome/spa", "SPA_GUEST_CORE_MASSAGE_AFTER_SEX_FINISHED", guest));
@@ -2537,7 +2423,7 @@ public class LilayaSpa {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue", "Now that you've had an unexpectedly fun massage, you wonder what to do next...", PlaceType.LILAYA_HOME_CORRIDOR.getDialogue(false));
+				return new Response("Продолжить", "Теперь, когда массаж оказался неожиданно веселым, ты задумываешься, чем заняться дальше...", PlaceType.LILAYA_HOME_CORRIDOR.getDialogue(false));
 			}
 			return null;
 		}
@@ -2562,7 +2448,7 @@ public class LilayaSpa {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Commit", "Commit to extending the spa and adding a sauna extension.", SPA_SAUNA_INSTALLATION_END) {
+				return new Response("Решиться", "Решиться на расширение спа и пристройку сауны.", SPA_SAUNA_INSTALLATION_END) {
 					@Override
 					public void effects() {
 						int size = Main.game.getWorlds().get(WorldType.LILAYAS_HOUSE_GROUND_FLOOR).WORLD_WIDTH;
@@ -2586,7 +2472,7 @@ public class LilayaSpa {
 				};
 				
 			} else if(index==2) {
-				return new Response("Change mind", "Tell Lilaya that you've changed your mind...", SPA_SAUNA_INSTALLATION_END) {
+				return new Response("Передумать", "Сказать Lilaya, что вы передумали...", SPA_SAUNA_INSTALLATION_END) {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().incrementMoney(PlaceUpgrade.LILAYA_SPA_SAUNA.getInstallCost());
@@ -2636,7 +2522,7 @@ public class LilayaSpa {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Sauna", "Spend some time in the sauna.", null);
+				return new Response("Сауна", "Провести немного времени в сауне.", null);
 			}
 			//TODO slave interaction
 			
@@ -2657,7 +2543,7 @@ public class LilayaSpa {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Commit", "Commit to extending the spa and adding a sauna extension.", SPA_POOL_INSTALLATION_END) {
+				return new Response("Решиться", "Решиться на расширение спа и пристройку сауны.", SPA_POOL_INSTALLATION_END) {
 					@Override
 					public void effects() {
 						int size = Main.game.getWorlds().get(WorldType.LILAYAS_HOUSE_GROUND_FLOOR).WORLD_WIDTH;
@@ -2681,7 +2567,7 @@ public class LilayaSpa {
 				};
 				
 			} else if(index==2) {
-				return new Response("Change mind", "Tell Lilaya that you've changed your mind...", SPA_POOL_INSTALLATION_END) {
+				return new Response("Передумать", "Сказать Lilaya, что вы передумали...", SPA_POOL_INSTALLATION_END) {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().incrementMoney(PlaceUpgrade.LILAYA_SPA_POOL.getInstallCost());
@@ -2726,7 +2612,7 @@ public class LilayaSpa {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Swim", "Go for a swim.", null);
+				return new Response("Поплавать", "Поплавать.", null);
 			}
 			//TODO slave interaction
 			

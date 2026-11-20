@@ -56,7 +56,7 @@ public class HelenaApartment {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Dominion", "Exit Helena's apartment and travel down into Dominion.", PlaceType.DOMINION_HELENA_HOTEL.getDialogue(false)) {
+				return new Response("Dominion", "Выйти из апартаментов Helena и спуститься в Dominion.", PlaceType.DOMINION_HELENA_HOTEL.getDialogue(false)) {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setLocation(WorldType.DOMINION, PlaceType.DOMINION_HELENA_HOTEL);
@@ -64,7 +64,7 @@ public class HelenaApartment {
 				};
 				
 			} else if(index==2) {
-				return new Response("Nest", "Exit Helena's apartment and travel up to her nest.", PlaceType.HARPY_NESTS_HELENAS_NEST.getDialogue(false)) {
+				return new Response("Гнездо", "Выйти из апартаментов Helena и подняться в её гнездо.", PlaceType.HARPY_NESTS_HELENAS_NEST.getDialogue(false)) {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setLocation(WorldType.HARPY_NEST, PlaceType.HARPY_NESTS_HELENAS_NEST);

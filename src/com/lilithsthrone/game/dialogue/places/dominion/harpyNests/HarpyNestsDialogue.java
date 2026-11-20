@@ -27,7 +27,7 @@ import com.lilithsthrone.world.places.PlaceType;
  */
 public class HarpyNestsDialogue {
 	
-	public static final DialogueNode OUTSIDE = new DialogueNode("Harpy Nests", "Harpy Nests", false) {
+	public static final DialogueNode OUTSIDE = new DialogueNode("Гнезда гарпий", "Гнезда гарпий", false) {
 		@Override
 		public int getSecondsPassed() {
 			return 5*60;
@@ -39,7 +39,7 @@ public class HarpyNestsDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Harpy Nests", "Travel up to the Harpy Nests.", PlaceType.HARPY_NESTS_ENTRANCE_ENFORCER_POST.getDialogue(false)){
+				return new Response("Гнезда гарпий", "Отправиться к Гнездам гарпий.", PlaceType.HARPY_NESTS_ENTRANCE_ENFORCER_POST.getDialogue(false)){
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/harpyNests/generic", "OUTSIDE_ENTRY"));
@@ -53,7 +53,7 @@ public class HarpyNestsDialogue {
 		}
 	};
 	
-	public static final DialogueNode ENTRANCE_ENFORCER_POST = new DialogueNode("Enforcer post", ".", true) {
+	public static final DialogueNode ENTRANCE_ENFORCER_POST = new DialogueNode("Пост Enforcer", ".", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 60;
@@ -72,19 +72,17 @@ public class HarpyNestsDialogue {
 				return null;
 			}
 			if (index == 1) {
-				return new Response("To street level", "Travel back down to Dominion's streets.", PlaceType.DOMINION_HARPY_NESTS_ENTRANCE.getDialogue(false)){
+				return new Response("На уровень улиц", "Вернуться на улицы Dominion.", PlaceType.DOMINION_HARPY_NESTS_ENTRANCE.getDialogue(false)){
 					@Override
 					public void effects() {
 						if(Main.game.getPlayer().isAbleToFly()) {
 							Main.game.getTextStartStringBuilder()
-								.append("<p>Stepping back out through the same door you used to enter the Enforcer post, you")
-								.append(!Main.game.getPlayer().isAbleToFlyFromExtraParts() ? " spread your wings and" : "")
-								.append(" swoop back down to street level.</p>");
+								.append("<p>Выходя через ту же дверь, через которую вошли на пост Enforcer, вы")
+								.append(!Main.game.getPlayer().isAbleToFlyFromExtraParts() ? " расправляете крылья и" : "")
+								.append(" стремительно пикируете обратно на уровень улиц.</p>");
 						} else {
 							Main.game.getTextStartStringBuilder().append(
-									"<p>"
-										+ "Stepping into the same elevator you used to ride up to the Enforcer post, you soon find yourself travelling back down to street level."
-									+ "</p>");
+									"<p>Зайдя в тот же лифт, на котором поднимались к посту Enforcer, вы вскоре обнаруживаете, что снова спускаетесь на уровень улиц.</p>");
 						}
 						
 						Main.game.getPlayer().setLocation(WorldType.DOMINION, PlaceType.DOMINION_HARPY_NESTS_ENTRANCE, false);
@@ -96,7 +94,7 @@ public class HarpyNestsDialogue {
 			
 			if(!Main.game.getDialogueFlags().values.contains(DialogueFlagValue.hasHarpyNestAccess)) {
 				responses.add(
-						new Response("Request access", "Walk up to the desk and ask if you can visit the Harpy Nests.", ENTRANCE_ENFORCER_POST_ASK_FOR_ACCESS) {
+						new Response("Запросить доступ", "Подойти к столу и спросить, можно ли посетить Гнезда гарпий.", ENTRANCE_ENFORCER_POST_ASK_FOR_ACCESS) {
 							@Override
 							public void effects() {
 								Main.game.getDialogueFlags().values.add(DialogueFlagValue.hasHarpyNestAccess);
@@ -107,12 +105,12 @@ public class HarpyNestsDialogue {
 			} else {
 				if(!Main.game.getPlayer().hasQuest(QuestLine.SIDE_HARPY_PACIFICATION)) {
 					responses.add(
-							new Response("Angry Harpies", "Ask one of the Enforcers about the recent troubles in the Harpy Nests.", ENTRANCE_ENFORCER_POST_ASK_ABOUT_RIOTS));
+							new Response("Разгневанные гарпии", "Расспросить одного из Enforcer о недавних беспорядках в Гнездах гарпий.", ENTRANCE_ENFORCER_POST_ASK_ABOUT_RIOTS));
 					
 				} else {
 					if(Main.game.getPlayer().getQuest(QuestLine.SIDE_HARPY_PACIFICATION) == Quest.HARPY_PACIFICATION_REWARD && !Main.game.getPlayer().isQuestCompleted(QuestLine.SIDE_HARPY_PACIFICATION)) {
 						responses.add(
-								new Response("Report back", "Report to the Enforcer that you've calmed the three matriarchs down.", ENTRANCE_ENFORCER_POST_COMPLETED_PACIFICATION) {
+								new Response("Доложить", "Доложите Enforcer, что вы успокоили трех матриархов.", ENTRANCE_ENFORCER_POST_COMPLETED_PACIFICATION) {
 									@Override
 									public void effects() {
 										Main.game.getTextEndStringBuilder().append(Main.game.getPlayer().setQuestProgress(QuestLine.SIDE_HARPY_PACIFICATION, Quest.SIDE_UTIL_COMPLETE));
@@ -123,7 +121,7 @@ public class HarpyNestsDialogue {
 						
 					} else if(!Main.game.getPlayer().isQuestCompleted(QuestLine.SIDE_HARPY_PACIFICATION)){
 						responses.add(
-								new Response("Report back", "You haven't calmed the three matriarchs down yet!", null));
+								new Response("Доложить", "Вы еще не успокоили трех матриархов!", null));
 					}
 				}
 			}
@@ -132,7 +130,7 @@ public class HarpyNestsDialogue {
 					&& Main.game.getPlayer().getQuest(QuestLine.SIDE_BUYING_BRAX)==Quest.BUYING_BRAX_LOLLIPOPS
 					&& !Main.game.getPlayer().hasItemType(ItemType.CANDI_CONTRABAND)) {
 				responses.add(
-						new Response("Candi's lollipops", "Ask a nearby Enforcer about collecting the box of lollipops which Candi has requested.", ENTRANCE_ENFORCER_POST_CANDIS_LOLLIPOPS) {
+						new Response("Леденцы Кэнди", "Спросите ближайшего Enforcer о том, как забрать коробку леденцов, которую просила Кэнди.", ENTRANCE_ENFORCER_POST_CANDIS_LOLLIPOPS) {
 					@Override
 					public void effects() {
 						Main.game.getTextEndStringBuilder().append(Main.game.getPlayer().addItem(Main.game.getItemGen().generateItem(ItemType.CANDI_CONTRABAND), false));
@@ -153,7 +151,7 @@ public class HarpyNestsDialogue {
 		}
 	};
 	
-	public static final DialogueNode ENTRANCE_ENFORCER_POST_ASK_FOR_ACCESS = new DialogueNode("Enforcer post", ".", true) {
+	public static final DialogueNode ENTRANCE_ENFORCER_POST_ASK_FOR_ACCESS = new DialogueNode("Пост Enforcer", ".", true) {
 		@Override
 		public boolean isTravelDisabled() {
 			return !Main.game.getDialogueFlags().values.contains(DialogueFlagValue.hasHarpyNestAccess);
@@ -172,7 +170,7 @@ public class HarpyNestsDialogue {
 		}
 	};
 	
-	public static final DialogueNode ENTRANCE_ENFORCER_POST_ASK_ABOUT_RIOTS = new DialogueNode("Enforcer post", ".", true) {
+	public static final DialogueNode ENTRANCE_ENFORCER_POST_ASK_ABOUT_RIOTS = new DialogueNode("Пост Enforcer", ".", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 5*60;
@@ -184,7 +182,7 @@ public class HarpyNestsDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index == 1) {
-				return new Response("Follow", "Do as the horse-boy asks and follow him.", ENTRANCE_ENFORCER_POST_ASK_ABOUT_RIOTS_NEXT) {
+				return new Response("Следовать", "Сделайте так, как просит конь-мальчик, и следуйте за ним.", ENTRANCE_ENFORCER_POST_ASK_ABOUT_RIOTS_NEXT) {
 					@Override
 					public void effects() {
 						Main.game.getTextEndStringBuilder().append(Main.game.getPlayer().startQuest(QuestLine.SIDE_HARPY_PACIFICATION));
@@ -195,7 +193,7 @@ public class HarpyNestsDialogue {
 		}
 	};
 	
-	public static final DialogueNode ENTRANCE_ENFORCER_POST_ASK_ABOUT_RIOTS_NEXT = new DialogueNode("Enforcer post", ".", true, true) {
+	public static final DialogueNode ENTRANCE_ENFORCER_POST_ASK_ABOUT_RIOTS_NEXT = new DialogueNode("Пост Enforcer", ".", true, true) {
 		@Override
 		public int getSecondsPassed() {
 			return 5*60;
@@ -207,7 +205,7 @@ public class HarpyNestsDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index == 1) {
-				return new Response("Leave", "Having agreed to help pacify the Harpy Nests, you leave the horse-boy's office...", ENTRANCE_ENFORCER_POST) {
+				return new Response("Уйти", "Согласившись помочь усмирить гнезда гарпий, вы покидаете кабинет конь-мальчика...", ENTRANCE_ENFORCER_POST) {
 					@Override
 					public void effects() {
 						Main.game.appendToTextStartStringBuilder(UtilText.parseFromXMLFile("places/dominion/harpyNests/generic", "ENTRANCE_ENFORCER_POST_ASK_ABOUT_RIOTS_NEXT_LEAVE"));
@@ -218,7 +216,7 @@ public class HarpyNestsDialogue {
 		}
 	};
 	
-	public static final DialogueNode ENTRANCE_ENFORCER_POST_COMPLETED_PACIFICATION = new DialogueNode("Enforcer post", ".", false) {
+	public static final DialogueNode ENTRANCE_ENFORCER_POST_COMPLETED_PACIFICATION = new DialogueNode("Пост Enforcer", ".", false) {
 		@Override
 		public int getSecondsPassed() {
 			return 2*60;
@@ -238,7 +236,7 @@ public class HarpyNestsDialogue {
 	};
 	
 
-	public static final DialogueNode ENTRANCE_ENFORCER_POST_CANDIS_LOLLIPOPS = new DialogueNode("Enforcer post", ".", false) {
+	public static final DialogueNode ENTRANCE_ENFORCER_POST_CANDIS_LOLLIPOPS = new DialogueNode("Пост Enforcer", ".", false) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -261,7 +259,7 @@ public class HarpyNestsDialogue {
 		}
 	};
 	
-	public static final DialogueNode WALKWAY = new DialogueNode("Walkway", ".", false) {
+	public static final DialogueNode WALKWAY = new DialogueNode("Переход", ".", false) {
 		@Override
 		public int getSecondsPassed() {
 			return 2*60;
@@ -284,8 +282,8 @@ public class HarpyNestsDialogue {
 			if(index == 1) {
 				if(Main.game.getPlayer().isQuestCompleted(QuestLine.SIDE_HARPY_PACIFICATION)) {
 					return new ResponseEffectsOnly(
-							"Look for trouble",
-							"Although you've pacified the harpy nests, you're sure that you can find a harpy who's looking for a confrontation..."){
+							"Искать неприятностей",
+							"Хотя вы и усмирили гнезда гарпий, вы уверены, что сможете найти гарпию, жаждущую конфронтации..."){
 								@Override
 								public int getSecondsPassed() {
 									return 30*60;
@@ -298,7 +296,7 @@ public class HarpyNestsDialogue {
 							};
 							
 				} else {
-					return AbstractEncounter.exploreArea("the walkways");
+					return AbstractEncounter.exploreArea("проходы");
 				}
 			} else if (index == 2) {
 				return AbstractEncounter.useOffspringMap();
@@ -307,7 +305,7 @@ public class HarpyNestsDialogue {
 		}
 	};
 	
-	public static final DialogueNode WALKWAY_BRIDGE = new DialogueNode("Walkway Bridge", "", false) {
+	public static final DialogueNode WALKWAY_BRIDGE = new DialogueNode("Мост-переход", "", false) {
 		@Override
 		public int getSecondsPassed() {
 			return 2*60;

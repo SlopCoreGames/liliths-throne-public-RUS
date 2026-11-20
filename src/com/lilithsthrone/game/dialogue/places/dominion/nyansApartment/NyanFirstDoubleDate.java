@@ -75,7 +75,7 @@ public class NyanFirstDoubleDate {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Wait", "Wait in the lounge while Nyan and [nyanmum.name] get ready.", DATE_START_WAIT);
+				return new Response("Ждать", "Подожди в гостиной, пока Nyan и [nyanmum.name] будут собираться.", DATE_START_WAIT);
 			}
 			return null;
 		}
@@ -99,7 +99,7 @@ public class NyanFirstDoubleDate {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Restaurant", "Accompany Nyan and [nyanmum.name] to the restaurant.", DATE_RESTAURANT_1_ARRIVED);
+				return new Response("Ресторан", "Сопроводить Nyan и [nyanmum.name] в ресторан.", DATE_RESTAURANT_1_ARRIVED);
 			}
 			return null;
 		}
@@ -123,7 +123,7 @@ public class NyanFirstDoubleDate {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Share bottle", "Agree to share the bottle with Nyan and [nyanmum.name].", DATE_RESTAURANT_2_PLAYER_DRINK) {
+				return new Response("Разделить бутылку", "Согласиться разделить бутылку с Nyan и [nyanmum.name].", DATE_RESTAURANT_2_PLAYER_DRINK) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/nyansApartment/firstDoubleDate", "DATE_RESTAURANT_2_SHARE"));
@@ -132,7 +132,7 @@ public class NyanFirstDoubleDate {
 				};
 				
 			} else if(index==2) {
-				return new Response("Water", "Order a bottle of water for yourself.", DATE_RESTAURANT_2_PLAYER_DRINK) {
+				return new Response("Вода", "Заказать бутылку воды для себя.", DATE_RESTAURANT_2_PLAYER_DRINK) {
 					@Override
 					public void effects() {
 						dateBill+=25;
@@ -142,7 +142,7 @@ public class NyanFirstDoubleDate {
 				};
 				
 			} else if(index==3) {
-				return new Response("Beer", "Order a beer for yourself.", DATE_RESTAURANT_2_PLAYER_DRINK) {
+				return new Response("Пиво", "Заказать пиво для себя.", DATE_RESTAURANT_2_PLAYER_DRINK) {
 					@Override
 					public void effects() {
 						dateBill+=50;
@@ -167,7 +167,7 @@ public class NyanFirstDoubleDate {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Order", "Place your orders and wait for the starters to arrive.", DATE_RESTAURANT_3_STARTERS) {
+				return new Response("Заказать", "Сделайте заказ и ждите подачи закусок.", DATE_RESTAURANT_3_STARTERS) {
 					@Override
 					public void effects() {
 						dateBill+=1100;
@@ -176,7 +176,7 @@ public class NyanFirstDoubleDate {
 				};
 				
 			} else if(index==2) {
-				return new Response("Order (candle)", "Place your orders and wait for the starters to arrive. Also ask if you could have a romantic candle lit on your table.", DATE_RESTAURANT_3_STARTERS) {
+				return new Response("Заказать (свечу)", "Сделайте заказ и ждите подачи закусок. Также спросите, можно ли зажечь на вашем столе романтическую свечу.", DATE_RESTAURANT_3_STARTERS) {
 					@Override
 					public void effects() {
 						dateBill+=1100;
@@ -208,7 +208,7 @@ public class NyanFirstDoubleDate {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Respond", "Tell [nyanmum.name] all about yourself.", DATE_RESTAURANT_4_MAIN_MEAL);
+				return new Response("Ответить", "Расскажи [nyanmum.name] всё о себе.", DATE_RESTAURANT_4_MAIN_MEAL);
 			}
 			return null;
 		}
@@ -233,9 +233,8 @@ public class NyanFirstDoubleDate {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Agree",
-						"Agree to be both Nyan's and [nyanmum.namepos] [pc.girlfriend]."
-								+ "<br/>[style.italicsMinorGood(This will permanently result in both Nyan and [nyanmum.name] being your girlfriends...)]",
+				return new Response("Согласиться",
+						"Согласись стать [pc.girlfriend] и для Nyan, и для [nyanmum.namepos].<br/>[style.italicsMinorGood(Это навсегда сделает и Nyan, и [nyanmum.name] твоими девушками...)]",
 						DATE_5_END) {
 					@Override
 					public Colour getHighlightColour() {
@@ -249,9 +248,8 @@ public class NyanFirstDoubleDate {
 				};
 				
 			} else if(index==2) {
-				return new Response("Refuse",
-						"Tell [nyanmum.name] that you're only interested in dating her daughter."
-						+ "<br/>[style.italicsMinorBad(This is a permanent choice, and you will not get the opportunity to date [nyanmum.name] again...)]",
+				return new Response("Отказаться",
+						"Скажи [nyanmum.name], что тебя интересует только свидание с её дочерью.<br/>[style.italicsMinorBad(Это окончательный выбор, и у тебя больше не будет возможности встречаться с [nyanmum.name]...)]",
 						DATE_5_END) {
 					@Override
 					public Colour getHighlightColour() {
@@ -289,10 +287,10 @@ public class NyanFirstDoubleDate {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Leave ("+UtilText.formatAsMoney(dateBill, "span")+")",
+				return new Response("Уйти ("+UtilText.formatAsMoney(dateBill, "охват")+")",
 						Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.nyanmumGirlfriend)
-							?"Pay the bill and accompany Nyan and [nyanmum.name] back to their apartment."
-							:"Pay the bill and accompany Nyan back to her apartment building.",
+							?"Оплати счет и проводи Nyan и [nyanmum.name] обратно в их квартиру."
+							:"Оплатить счет и проводить Nyan до её дома.",
 						DATE_END_RETURN) {
 					@Override
 					public void effects() {
@@ -341,7 +339,7 @@ public class NyanFirstDoubleDate {
 		public Response getResponse(int responseTab, int index) {
 				if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.nyanmumGirlfriend)) {
 					if(index==1) {
-						return new Response("Lounge", "Do as [nyanmum.name] says and wait in the lounge...", POST_DATE_APARTMENT_LOUNGE) {
+						return new Response("Гостиная", "Сделать так, как говорит [nyanmum.name], и ждать в гостиной...", POST_DATE_APARTMENT_LOUNGE) {
 							@Override
 							public void effects() {
 								kinky = false;
@@ -350,7 +348,7 @@ public class NyanFirstDoubleDate {
 						};
 						
 					} else if(index==2) {
-						return new Response("Lounge (kinky)", "Tell [nyanmum.name] that you like the sound of her 'kinky idea', before doing as she says and waiting in the lounge...", POST_DATE_APARTMENT_LOUNGE) {
+						return new Response("Гостиная (с изюминкой)", "Сказать [nyanmum.name], что тебе нравится её «пикантная идея», а затем сделать, как она просит, и ждать в гостиной...", POST_DATE_APARTMENT_LOUNGE) {
 							@Override
 							public void effects() {
 								kinky = true;
@@ -361,7 +359,7 @@ public class NyanFirstDoubleDate {
 					
 				} else {
 					if(index==1) {
-						return new Response("Bedroom", "Head into Nyan's bedroom...", POST_DATE_APARTMENT_BEDROOM) {
+						return new Response("Спальня", "Направиться в спальню Nyan...", POST_DATE_APARTMENT_BEDROOM) {
 							@Override
 							public int getSecondsPassed() {
 								return 5*60;
@@ -390,7 +388,7 @@ public class NyanFirstDoubleDate {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Bedroom", "Head into [nyanmum.namePos] bedroom...", POST_DATE_APARTMENT_BEDROOM);
+				return new Response("Спальня", "Направиться в спальню к [nyanmum.namePos]...", POST_DATE_APARTMENT_BEDROOM);
 			}
 			return null;
 		}

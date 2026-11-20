@@ -33,7 +33,7 @@ public class LilayaMilkingRoomDialogue {
 		return MilkingRoom.getTargetedCharacter();
 	}
 	
-	public static final DialogueNode MILKING_ROOM = new DialogueNode("Room", "", false) {
+	public static final DialogueNode MILKING_ROOM = new DialogueNode("Комната", "", false) {
 		@Override
 		public int getSecondsPassed() {
 			return 10;
@@ -48,10 +48,7 @@ public class LilayaMilkingRoomDialogue {
 			StringBuilder sb = new StringBuilder();
 
 			sb.append("<p>"
-						+ "<b style='color:"+PlaceUpgrade.LILAYA_MILKING_ROOM.getColour().toWebHexString()+";'>"+PlaceUpgrade.LILAYA_MILKING_ROOM.getName()+"</b><br/>"
-						+ "This large room has been converted into a milking room, in which eight of your slaves can be milked of their various fluids."
-						+ " Four machines are set along the left-hand side of the wall, with the other four being placed on the opposite side of the room."
-					+ "</p>");
+						+ "<b style='color:"+PlaceUpgrade.LILAYA_MILKING_ROOM.getColour().toWebHexString()+";'>"+PlaceUpgrade.LILAYA_MILKING_ROOM.getName()+"</b><br/>Эта просторная комната была переоборудована в доильный зал, где восемь ваших рабынь могут отдавать свои различные жидкости. Вдоль левой стены установлены четыре аппарата, а остальные четыре расположены на противоположной стороне комнаты.</p>");
 			
 			sb.append(room.getRoomDescription());
 			sb.append("<br/>");
@@ -88,26 +85,26 @@ public class LilayaMilkingRoomDialogue {
 				
 			} else if (index == 1) {
 				if(Main.game.getPlayer().isAbleToAccessRoomManagement()) {
-					return new Response("Manage room", "Enter the management screen for this particular room.", OccupantManagementDialogue.ROOM_UPGRADES) {
+					return new Response("Управлять комнатой", "Перейти к экрану управления этой конкретной комнатой.", OccupantManagementDialogue.ROOM_UPGRADES) {
 						@Override
 						public void effects() {
 							OccupantManagementDialogue.cellToInspect = Main.game.getPlayerCell();
 						}
 					};
 				} else {
-					return new Response("Manage room", "You need a slaver license or permission from Lilaya to house your friends or dolls in order to access this menu!",  null);
+					return new Response("Управлять комнатой", "Чтобы получить доступ к этому меню, вам нужна лицензия работорговца или разрешение от Lilaya, чтобы поселить здесь своих друзей или кукол!",  null);
 				}
 				
 			}  else if (index == 2) {
 				if(Main.game.getPlayer().isAbleToAccessRoomManagement()) {
-					return new Response("Manage people", "Enter the management screen for your slaves and friendly occupants.", OccupantManagementDialogue.getSlaveryRoomListDialogue(null, null)) {
+					return new Response("Управлять людьми", "Перейти к экрану управления вашими рабынями и дружелюбными жильцами.", OccupantManagementDialogue.getSlaveryRoomListDialogue(null, null)) {
 						@Override
 						public void effects() {
 							CompanionManagement.initManagement(Main.game.getDefaultDialogue(), 0, null);
 						}
 					};
 				} else {
-					return new Response("Manage people", "You need a slaver license or permission from Lilaya to house your friends or dolls in order to access this menu!",  null);
+					return new Response("Управлять людьми", "Чтобы получить доступ к этому меню, вам нужна лицензия работорговца или разрешение от Lilaya, чтобы поселить здесь своих друзей или кукол!",  null);
 				}
 				
 			} else if(index>=3 && index<6) {
@@ -116,20 +113,20 @@ public class LilayaMilkingRoomDialogue {
 			} else if(index==6) {
 				if(getMilkingTarget().getBreastRawStoredMilkValue()==0) {
 					return new Response(
-							"Milk "+(getMilkingTarget().isPlayer()?"self":UtilText.parse(getMilkingTarget(), "[npc.Name]")),
-							UtilText.parse(getMilkingTarget(), "There is no milk stored in [npc.namePos] breasts, so [npc.she] can't be milked at the moment!"),
+							"Доить "+(getMilkingTarget().isPlayer()?"себя":UtilText.parse(getMilkingTarget(), "[npc.Name]")),
+							UtilText.parse(getMilkingTarget(), "В груди [npc.namePos] нет молока, поэтому [npc.she] сейчас невозможно подоить!"),
 							null);
 					
 				} else if(!getMilkingTarget().isAbleToAccessCoverableArea(CoverableArea.NIPPLES, true)) {
 					return new Response(
-							"Milk "+(getMilkingTarget().isPlayer()?"self":UtilText.parse(getMilkingTarget(), "[npc.Name]")),
-							UtilText.parse(getMilkingTarget(), "[npc.NameIsFull] unable to get access to [npc.her] nipples, so [npc.she] can't be milked at the moment!"),
+							"Доить "+(getMilkingTarget().isPlayer()?"себя":UtilText.parse(getMilkingTarget(), "[npc.Name]")),
+							UtilText.parse(getMilkingTarget(), "[npc.NameIsFull] не может добраться до сосков [npc.her], поэтому [npc.she] сейчас невозможно подоить!"),
 							null);
 					
 				} else if(charactersPresent.size()==8) {
 					return new Response(
-							"Milk "+(getMilkingTarget().isPlayer()?"self":UtilText.parse(getMilkingTarget(), "[npc.Name]")),
-							UtilText.parse(getMilkingTarget(), "There are no free milking machines for [npc.name] to use!"),
+							"Доить "+(getMilkingTarget().isPlayer()?"себя":UtilText.parse(getMilkingTarget(), "[npc.Name]")),
+							UtilText.parse(getMilkingTarget(), "Для [npc.name] нет свободных доильных аппаратов!"),
 							null);
 					
 				} else if(!getMilkingTarget().isPlayer()
@@ -137,10 +134,9 @@ public class LilayaMilkingRoomDialogue {
 						&& !getMilkingTarget().isSlave()
 						&& getMilkingTarget().getAffection(Main.game.getPlayer())<AffectionLevel.POSITIVE_FOUR_LOVE.getMinimumValue()) {
 					return new Response(
-							"Milk "+(getMilkingTarget().isPlayer()?"self":UtilText.parse(getMilkingTarget(), "[npc.Name]")),
+							"Доить "+(getMilkingTarget().isPlayer()?"себя":UtilText.parse(getMilkingTarget(), "[npc.Name]")),
 							UtilText.parse(getMilkingTarget(),
-									"As [npc.sheIs] not your slave, [npc.name] will only let you do this if [npc.she]"
-											+ " <span style='color:"+AffectionLevel.POSITIVE_FOUR_LOVE.getColour().toWebHexString()+";'>"+AffectionLevel.POSITIVE_FOUR_LOVE.getDescriptor()+"</span> you."),
+									"Так как [npc.sheIs] не твоя рабыня, [npc.name] позволит тебе это сделать, только если [npc.she] <span style='color:"+AffectionLevel.POSITIVE_FOUR_LOVE.getColour().toWebHexString()+";'>"+AffectionLevel.POSITIVE_FOUR_LOVE.getDescriptor()+"</span> тебя."),
 							null);
 					
 				} else if(!getMilkingTarget().isPlayer()
@@ -148,20 +144,20 @@ public class LilayaMilkingRoomDialogue {
 						&& !getMilkingTarget().isSlave()
 						&& (getMilkingTarget().getFetishDesire(Fetish.FETISH_LACTATION_SELF).isNegative() || getMilkingTarget().getFetishDesire(Fetish.FETISH_BREASTS_SELF).isNegative())) {
 					return new Response(
-							"Milk "+(getMilkingTarget().isPlayer()?"self":UtilText.parse(getMilkingTarget(), "[npc.NamePos]")),
+							"Доить "+(getMilkingTarget().isPlayer()?"себя":UtilText.parse(getMilkingTarget(), "[npc.NamePos]")),
 							UtilText.parse(getMilkingTarget(),
 									(getMilkingTarget().getFetishDesire(Fetish.FETISH_LACTATION_SELF).isNegative()
 											?(getMilkingTarget().getFetishDesire(Fetish.FETISH_BREASTS_SELF).isNegative()
-												?"As [npc.sheIs] not your slave, [npc.name] not let you do this, as [npc.sheHasFull] a negative desire for both the "
-													+Fetish.FETISH_LACTATION_SELF.getName(getMilkingTarget())+" and "+Fetish.FETISH_BREASTS_SELF.getName(getMilkingTarget())+" fetishes."
-												:"As [npc.sheIs] not your slave, [npc.name] not let you do this, as [npc.sheHasFull] a negative desire for the "+Fetish.FETISH_LACTATION_SELF.getName(getMilkingTarget())+" fetish.")
-											:"As [npc.sheIs] not your slave, [npc.name] not let you do this, as [npc.sheHasFull] a negative desire for the "+Fetish.FETISH_BREASTS_SELF.getName(getMilkingTarget())+" fetish.")),
+												?"Поскольку [npc.sheIs] не твоя рабыня, [npc.name] не позволит тебе этого сделать, так как [npc.sheHasFull] это вызовет нежелание у обоих "
+													+Fetish.FETISH_LACTATION_SELF.getName(getMilkingTarget())+" и "+Fetish.FETISH_BREASTS_SELF.getName(getMilkingTarget())+" фетишей."
+												:"Поскольку [npc.sheIs] не твоя рабыня, [npc.name] не позволит тебе этого сделать, так как [npc.sheHasFull] это вызовет нежелание у "+Fetish.FETISH_LACTATION_SELF.getName(getMilkingTarget())+" фетиш.")
+											:"Поскольку [npc.sheIs] не твоя рабыня, [npc.name] не позволит тебе этого сделать, так как [npc.sheHasFull] это вызовет нежелание у "+Fetish.FETISH_BREASTS_SELF.getName(getMilkingTarget())+" фетиш.")),
 							null);
 					
 				} else {
 					return new Response(
-							"Milk "+(getMilkingTarget().isPlayer()?"self":UtilText.parse(getMilkingTarget(), "[npc.Name]")),
-							"Use this room's spare milking equipment to milk "+(getMilkingTarget().isPlayer()?"yourself":UtilText.parse(getMilkingTarget(), "[npc.name]"))+".",
+							"Доить "+(getMilkingTarget().isPlayer()?"себя":UtilText.parse(getMilkingTarget(), "[npc.Name]")),
+							"Использовать запасное оборудование в этой комнате, чтобы подоить "+(getMilkingTarget().isPlayer()?"саму(ую)":UtilText.parse(getMilkingTarget(), "[npc.name]"))+".",
 							MILKED) {
 						@Override
 						public void effects() {
@@ -183,7 +179,7 @@ public class LilayaMilkingRoomDialogue {
 							
 							Main.game.getTextEndStringBuilder().append(
 								"<p style='text-align:center; color:"+PresetColour.MILK.toWebHexString()+";'>"
-										+ Units.fluid(milked) + UtilText.parse(getMilkingTarget(), " of [npc.milk] added to this room's storage!")
+										+ Units.fluid(milked) + UtilText.parse(getMilkingTarget(), " [npc.milk] добавлено в хранилище этой комнаты!")
 								+ "</p>");
 						}
 						@Override
@@ -198,42 +194,41 @@ public class LilayaMilkingRoomDialogue {
 			} else if(index==7) {
 				if(!getMilkingTarget().hasPenisIgnoreDildo()) {
 					return new Response(
-							"Milk "+(getMilkingTarget().isPlayer()?"self":UtilText.parse(getMilkingTarget(), "[npc.NamePos]"))+" cum",
-							UtilText.parse(getMilkingTarget(), "[npc.Name] [npc.do]n't have a penis, so [npc.she] can't produce any cum..."),
+							"Доить "+(getMilkingTarget().isPlayer()?"себя":UtilText.parse(getMilkingTarget(), "[npc.NamePos]"))+" сперма",
+							UtilText.parse(getMilkingTarget(), "У [npc.Name] [npc.do] нет пениса, так что [npc.she] не может выделять сперму..."),
 							null);
 					
 				} else if(getMilkingTarget().getPenisRawStoredCumValue()==0) {
 					return new Response(
-							"Milk "+(getMilkingTarget().isPlayer()?"self":UtilText.parse(getMilkingTarget(), "[npc.NamePos]"))+" cum",
-							UtilText.parse(getMilkingTarget(), "There isn't any cum stored in [npc.namePos] balls, so [npc.her] cock can't be milked..."),
+							"Доить "+(getMilkingTarget().isPlayer()?"себя":UtilText.parse(getMilkingTarget(), "[npc.NamePos]"))+" сперма",
+							UtilText.parse(getMilkingTarget(), "В [npc.namePos] нет спермы, так что [npc.her] нельзя подоить..."),
 							null);
 					
 				} else if(!getMilkingTarget().isAbleToAccessCoverableArea(CoverableArea.PENIS, true)) {
 					return new Response(
-							"Milk "+(getMilkingTarget().isPlayer()?"self":UtilText.parse(getMilkingTarget(), "[npc.NamePos]"))+" cum",
-							UtilText.parse(getMilkingTarget(), "[npc.NameIsFull] unable to get access to [npc.her] cock, so [npc.she] can't be milked at the moment..."),
+							"Доить "+(getMilkingTarget().isPlayer()?"себя":UtilText.parse(getMilkingTarget(), "[npc.NamePos]"))+" сперма",
+							UtilText.parse(getMilkingTarget(), "[npc.NameIsFull] не может добраться до [npc.her] члена, так что [npc.she] пока нельзя подоить..."),
 							null);
 					
 				} else if(!getMilkingTarget().isAbleToOrgasm()) {
 					return new Response(
-							"Milk "+(getMilkingTarget().isPlayer()?"self":UtilText.parse(getMilkingTarget(), "[npc.NamePos]"))+" cum",
-							UtilText.parse(getMilkingTarget(), "[npc.NameIsFull] unable to orgasm, so can't be milked of [npc.her] cum!"),
+							"Доить "+(getMilkingTarget().isPlayer()?"себя":UtilText.parse(getMilkingTarget(), "[npc.NamePos]"))+" сперма",
+							UtilText.parse(getMilkingTarget(), "[npc.NameIsFull] не может достичь оргазма, поэтому из него нельзя выдоить [npc.her] спермы!"),
 							null);
 					
 				} else if(charactersPresent.size()==8) {
 					return new Response(
-							"Milk "+(getMilkingTarget().isPlayer()?"self":UtilText.parse(getMilkingTarget(), "[npc.NamePos]"))+" cum",
-							UtilText.parse(getMilkingTarget(), "There are no free milking machines for [npc.name] to use!"),
+							"Доить "+(getMilkingTarget().isPlayer()?"себя":UtilText.parse(getMilkingTarget(), "[npc.NamePos]"))+" сперма",
+							UtilText.parse(getMilkingTarget(), "Для [npc.name] нет свободных доильных аппаратов!"),
 							null);
 					
 				} else if(!getMilkingTarget().isPlayer()
 						&& getMilkingTarget().isAbleToRefuseSexAsCompanion() && !getMilkingTarget().isSlave()
 						&& getMilkingTarget().getAffection(Main.game.getPlayer())<AffectionLevel.POSITIVE_FOUR_LOVE.getMinimumValue()) {
 					return new Response(
-							"Milk "+(getMilkingTarget().isPlayer()?"self":UtilText.parse(getMilkingTarget(), "[npc.NamePos]"))+" cum",
+							"Доить "+(getMilkingTarget().isPlayer()?"себя":UtilText.parse(getMilkingTarget(), "[npc.NamePos]"))+" сперма",
 							UtilText.parse(getMilkingTarget(),
-									"As [npc.sheIs] not your slave, [npc.name] will only let you do this if [npc.she]"
-											+ " <span style='color:"+AffectionLevel.POSITIVE_FOUR_LOVE.getColour().toWebHexString()+";'>"+AffectionLevel.POSITIVE_FOUR_LOVE.getDescriptor()+"</span> you."),
+									"Так как [npc.sheIs] не твоя рабыня, [npc.name] позволит тебе это сделать, только если [npc.she] <span style='color:"+AffectionLevel.POSITIVE_FOUR_LOVE.getColour().toWebHexString()+";'>"+AffectionLevel.POSITIVE_FOUR_LOVE.getDescriptor()+"</span> тебя."),
 							null);
 					
 				} else if(!getMilkingTarget().isPlayer()
@@ -241,20 +236,20 @@ public class LilayaMilkingRoomDialogue {
 						&& !getMilkingTarget().isSlave()
 						&& (getMilkingTarget().getFetishDesire(Fetish.FETISH_CUM_STUD).isNegative() || getMilkingTarget().getFetishDesire(Fetish.FETISH_PENIS_GIVING).isNegative())) {
 					return new Response(
-							"Milk "+(getMilkingTarget().isPlayer()?"self":UtilText.parse(getMilkingTarget(), "[npc.NamePos]"))+" cum",
+							"Доить "+(getMilkingTarget().isPlayer()?"себя":UtilText.parse(getMilkingTarget(), "[npc.NamePos]"))+" сперма",
 							UtilText.parse(getMilkingTarget(),
 									(getMilkingTarget().getFetishDesire(Fetish.FETISH_CUM_STUD).isNegative()
 											?(getMilkingTarget().getFetishDesire(Fetish.FETISH_PENIS_GIVING).isNegative()
-												?"As [npc.sheIs] not your slave, [npc.name] not let you do this, as [npc.sheHasFull] a negative desire for both the "
-													+Fetish.FETISH_CUM_STUD.getName(getMilkingTarget())+" and "+Fetish.FETISH_PENIS_GIVING.getName(getMilkingTarget())+" fetishes."
-												:"As [npc.sheIs] not your slave, [npc.name] not let you do this, as [npc.sheHasFull] a negative desire for the "+Fetish.FETISH_CUM_STUD.getName(getMilkingTarget())+" fetish.")
-											:"As [npc.sheIs] not your slave, [npc.name] not let you do this, as [npc.sheHasFull] a negative desire for the "+Fetish.FETISH_PENIS_GIVING.getName(getMilkingTarget())+" fetish.")),
+												?"Поскольку [npc.sheIs] не твоя рабыня, [npc.name] не позволит тебе этого сделать, так как [npc.sheHasFull] это вызовет нежелание у обоих "
+													+Fetish.FETISH_CUM_STUD.getName(getMilkingTarget())+" и "+Fetish.FETISH_PENIS_GIVING.getName(getMilkingTarget())+" фетишей."
+												:"Поскольку [npc.sheIs] не твоя рабыня, [npc.name] не позволит тебе этого сделать, так как [npc.sheHasFull] это вызовет нежелание у "+Fetish.FETISH_CUM_STUD.getName(getMilkingTarget())+" фетиш.")
+											:"Поскольку [npc.sheIs] не твоя рабыня, [npc.name] не позволит тебе этого сделать, так как [npc.sheHasFull] это вызовет нежелание у "+Fetish.FETISH_PENIS_GIVING.getName(getMilkingTarget())+" фетиш.")),
 							null);
 					
 				} else {
 					return new Response(
-							"Milk "+(getMilkingTarget().isPlayer()?"self":UtilText.parse(getMilkingTarget(), "[npc.NamePos]"))+" cum",
-							UtilText.parse(getMilkingTarget(), "Use this room's spare milking equipment to milk [npc.namePos] cock."),
+							"Доить "+(getMilkingTarget().isPlayer()?"себя":UtilText.parse(getMilkingTarget(), "[npc.NamePos]"))+" сперма",
+							UtilText.parse(getMilkingTarget(), "Использовать запасное оборудование для дойки в этой комнате, чтобы подоить член [npc.namePos]."),
 							MILKED) {
 						@Override
 						public void effects() {
@@ -273,7 +268,7 @@ public class LilayaMilkingRoomDialogue {
 
 							Main.game.getTextEndStringBuilder().append(
 								"<p style='text-align:center; color:"+PresetColour.CUM.toWebHexString()+";'>"
-										+ Units.fluid(milked) + UtilText.parse(getMilkingTarget(), " of [npc.cum] added to this room's storage!")
+										+ Units.fluid(milked) + UtilText.parse(getMilkingTarget(), " [npc.cum] добавлено в хранилище этой комнаты!")
 								+ "</p>");
 						}
 						@Override
@@ -289,32 +284,32 @@ public class LilayaMilkingRoomDialogue {
 			} else if(index==8) {
 				if(!getMilkingTarget().hasVagina()) {
 					return new Response(
-							"Milk "+(getMilkingTarget().isPlayer()?"self":UtilText.parse(getMilkingTarget(), "[npc.NamePos]"))+" girlcum",
-							UtilText.parse(getMilkingTarget(), "[npc.Name] [npc.do]n't have a vagina, so [npc.she] can't produce any girlcum..."),
+							"Доить "+(getMilkingTarget().isPlayer()?"себя":UtilText.parse(getMilkingTarget(), "[npc.NamePos]"))+" девичья сперма",
+							UtilText.parse(getMilkingTarget(), "[npc.Name] [npc.do]у [npc.she] нет влагалища, так что она не может выделять девичью смазку..."),
 							null);
 					
 				} else if(getMilkingTarget().getVaginaWetness().getValue()==0) {
 					return new Response(
-							"Milk "+(getMilkingTarget().isPlayer()?"self":UtilText.parse(getMilkingTarget(), "[npc.NamePos]"))+" girlcum",
-							UtilText.parse(getMilkingTarget(), "[npc.NamePos] pussy is completely dry, and cannot produce even one drop of girlcum..."),
+							"Доить "+(getMilkingTarget().isPlayer()?"себя":UtilText.parse(getMilkingTarget(), "[npc.NamePos]"))+" девичья сперма",
+							UtilText.parse(getMilkingTarget(), "Киска [npc.NamePos] совершенно сухая и не может произвести ни единой капли девичьей смазки..."),
 							null);
 					
 				} else if(!getMilkingTarget().isAbleToAccessCoverableArea(CoverableArea.VAGINA, true)) {
 					return new Response(
-							"Milk "+(getMilkingTarget().isPlayer()?"self":UtilText.parse(getMilkingTarget(), "[npc.NamePos]"))+" girlcum",
-							UtilText.parse(getMilkingTarget(), "[npc.NameIsFull] unable access to [npc.her] pussy, so can't be milked of [npc.her] girlcum at the moment..."),
+							"Доить "+(getMilkingTarget().isPlayer()?"себя":UtilText.parse(getMilkingTarget(), "[npc.NamePos]"))+" девичья сперма",
+							UtilText.parse(getMilkingTarget(), "У [npc.NameIsFull] нет доступа к [npc.her] киске, поэтому сейчас из неё нельзя выдоить [npc.her] девичьей смазки..."),
 							null);
 					
 				} else if(!getMilkingTarget().isAbleToOrgasm()) {
 					return new Response(
-							"Milk "+(getMilkingTarget().isPlayer()?"self":UtilText.parse(getMilkingTarget(), "[npc.NamePos]"))+" girlcum",
-							UtilText.parse(getMilkingTarget(), "[npc.NameIsFull] unable to orgasm, so can't be milked of [npc.her] girlcum!"),
+							"Доить "+(getMilkingTarget().isPlayer()?"себя":UtilText.parse(getMilkingTarget(), "[npc.NamePos]"))+" девичья сперма",
+							UtilText.parse(getMilkingTarget(), "[npc.NameIsFull] не может достичь оргазма, поэтому из неё нельзя выдоить [npc.her] девичьей смазки!"),
 							null);
 					
 				} else if(charactersPresent.size()==8) {
 					return new Response(
-							"Milk "+(getMilkingTarget().isPlayer()?"self":UtilText.parse(getMilkingTarget(), "[npc.NamePos]"))+" girlcum",
-							UtilText.parse(getMilkingTarget(), "There are no free milking machines for [npc.name] to use!"),
+							"Доить "+(getMilkingTarget().isPlayer()?"себя":UtilText.parse(getMilkingTarget(), "[npc.NamePos]"))+" девичья сперма",
+							UtilText.parse(getMilkingTarget(), "Для [npc.name] нет свободных доильных аппаратов!"),
 							null);
 					
 				} else if(!getMilkingTarget().isPlayer()
@@ -322,10 +317,9 @@ public class LilayaMilkingRoomDialogue {
 						&& !getMilkingTarget().isSlave()
 						&& getMilkingTarget().getAffection(Main.game.getPlayer())<AffectionLevel.POSITIVE_FOUR_LOVE.getMinimumValue()) {
 					return new Response(
-							"Milk "+(getMilkingTarget().isPlayer()?"self":UtilText.parse(getMilkingTarget(), "[npc.NamePos]"))+" girlcum",
+							"Доить "+(getMilkingTarget().isPlayer()?"себя":UtilText.parse(getMilkingTarget(), "[npc.NamePos]"))+" девичья сперма",
 							UtilText.parse(getMilkingTarget(),
-									"As [npc.sheIs] not your slave, [npc.name] will only let you do this if [npc.she]"
-											+ " <span style='color:"+AffectionLevel.POSITIVE_FOUR_LOVE.getColour().toWebHexString()+";'>"+AffectionLevel.POSITIVE_FOUR_LOVE.getDescriptor()+"</span> you."),
+									"Так как [npc.sheIs] не твоя рабыня, [npc.name] позволит тебе это сделать, только если [npc.she] <span style='color:"+AffectionLevel.POSITIVE_FOUR_LOVE.getColour().toWebHexString()+";'>"+AffectionLevel.POSITIVE_FOUR_LOVE.getDescriptor()+"</span> тебя."),
 							null);
 					
 				} else if(!getMilkingTarget().isPlayer()
@@ -333,14 +327,14 @@ public class LilayaMilkingRoomDialogue {
 						&& !getMilkingTarget().isSlave()
 						&& getMilkingTarget().getFetishDesire(Fetish.FETISH_VAGINAL_RECEIVING).isNegative()) {
 					return new Response(
-							"Milk "+(getMilkingTarget().isPlayer()?"self":UtilText.parse(getMilkingTarget(), "[npc.NamePos]"))+" girlcum",
-							UtilText.parse(getMilkingTarget(), "As [npc.sheIs] not your slave, [npc.name] not let you do this, as [npc.sheHasFull] a negative desire for the "+Fetish.FETISH_VAGINAL_RECEIVING.getName(getMilkingTarget())+" fetish."),
+							"Доить "+(getMilkingTarget().isPlayer()?"себя":UtilText.parse(getMilkingTarget(), "[npc.NamePos]"))+" девичья сперма",
+							UtilText.parse(getMilkingTarget(), "Поскольку [npc.sheIs] не твоя рабыня, [npc.name] не позволит тебе этого сделать, так как [npc.sheHasFull] это вызовет нежелание у "+Fetish.FETISH_VAGINAL_RECEIVING.getName(getMilkingTarget())+" фетиш."),
 							null);
 					
 				}else {
 					return new Response(
-							"Milk "+(getMilkingTarget().isPlayer()?"self":UtilText.parse(getMilkingTarget(), "[npc.NamePos]"))+" girlcum",
-							UtilText.parse(getMilkingTarget(), "Use this room's spare milking equipment to milk [npc.namePos] pussy."),
+							"Доить "+(getMilkingTarget().isPlayer()?"себя":UtilText.parse(getMilkingTarget(), "[npc.NamePos]"))+" девичья сперма",
+							UtilText.parse(getMilkingTarget(), "Использовать запасное оборудование для дойки в этой комнате, чтобы подоить киску [npc.namePos]."),
 							MILKED) {
 						@Override
 						public void effects() {
@@ -359,7 +353,7 @@ public class LilayaMilkingRoomDialogue {
 
 							Main.game.getTextEndStringBuilder().append(
 									"<p style='text-align:center; color:"+PresetColour.GIRLCUM.toWebHexString()+";'>"
-										+ Units.fluid(milked) + UtilText.parse(getMilkingTarget(), " of [npc.girlcum] added to this room's storage!")
+										+ Units.fluid(milked) + UtilText.parse(getMilkingTarget(), " [npc.girlcum] добавлено в хранилище этой комнаты!")
 									+ "</p>");
 						}
 						@Override
@@ -375,33 +369,33 @@ public class LilayaMilkingRoomDialogue {
 				if(!getMilkingTarget().hasBreastsCrotch()) {
 					return new Response(
 							(getMilkingTarget().isPlayer()
-									?"Milk self udders"
-									:UtilText.parse(getMilkingTarget(), "Milk [npc.NamePos] udders")),
-							UtilText.parse(getMilkingTarget(), "[npc.Name] [npc.do]n't have any udders to milk!"),
+									?"Доить собственные вымени"
+									:UtilText.parse(getMilkingTarget(), "Доить вымя [npc.NamePos]")),
+							UtilText.parse(getMilkingTarget(), "У [npc.Name] [npc.do] нет вымени, чтобы его доить!"),
 							null);
 					
 				} else if(getMilkingTarget().getBreastCrotchRawStoredMilkValue()==0) {
 					return new Response(
 							(getMilkingTarget().isPlayer()
-									?"Milk self [pc.crotchBoobs]"
-									:UtilText.parse(getMilkingTarget(), "Milk [npc.NamePos] [npc.crotchBoobs]")),
-							UtilText.parse(getMilkingTarget(), "There is no milk stored in [npc.namePos] [npc.crotchBoobs], so [npc.she] can't be milked at the moment!"),
+									?"Доить себя [pc.crotchBoobs]"
+									:UtilText.parse(getMilkingTarget(), "Доить [npc.NamePos] [npc.crotchBoobs]")),
+							UtilText.parse(getMilkingTarget(), "В [npc.namePos] [npc.crotchBoobs] нет запасов молока, так что [npc.she] сейчас нельзя подоить!"),
 							null);
 					
 				} else if(!getMilkingTarget().isAbleToAccessCoverableArea(CoverableArea.NIPPLES_CROTCH, true)) {
 					return new Response(
 							(getMilkingTarget().isPlayer()
-									?"Milk self [pc.crotchBoobs]"
-									:UtilText.parse(getMilkingTarget(), "Milk [npc.NamePos] [npc.crotchBoobs]")),
-							UtilText.parse(getMilkingTarget(), "[npc.NameIsFull] unable access to [npc.her] [npc.crotchNipples], so can't be milked at the moment..."),
+									?"Доить себя [pc.crotchBoobs]"
+									:UtilText.parse(getMilkingTarget(), "Доить [npc.NamePos] [npc.crotchBoobs]")),
+							UtilText.parse(getMilkingTarget(), "[npc.NameIsFull] не может добраться до [npc.her] [npc.crotchNipples], так что сейчас подоить не получится..."),
 							null);
 					
 				} else if(charactersPresent.size()==8) {
 					return new Response(
 							(getMilkingTarget().isPlayer()
-									?"Milk self [pc.crotchBoobs]"
-									:UtilText.parse(getMilkingTarget(), "Milk [npc.NamePos] [npc.crotchBoobs]")),
-							UtilText.parse(getMilkingTarget(), "There are no free milking machines for [npc.name] to use!"),
+									?"Доить себя [pc.crotchBoobs]"
+									:UtilText.parse(getMilkingTarget(), "Доить [npc.NamePos] [npc.crotchBoobs]")),
+							UtilText.parse(getMilkingTarget(), "Для [npc.name] нет свободных доильных аппаратов!"),
 							null);
 					
 				} else if(!getMilkingTarget().isPlayer()
@@ -410,11 +404,10 @@ public class LilayaMilkingRoomDialogue {
 						&& getMilkingTarget().getAffection(Main.game.getPlayer())<AffectionLevel.POSITIVE_FOUR_LOVE.getMinimumValue()) {
 					return new Response(
 							(getMilkingTarget().isPlayer()
-									?"Milk self [pc.crotchBoobs]"
-									:UtilText.parse(getMilkingTarget(), "Milk [npc.NamePos] [npc.crotchBoobs]")),
+									?"Доить себя [pc.crotchBoobs]"
+									:UtilText.parse(getMilkingTarget(), "Доить [npc.NamePos] [npc.crotchBoobs]")),
 							UtilText.parse(getMilkingTarget(),
-									"As [npc.sheIs] not your slave, [npc.name] will only let you do this if [npc.she]"
-											+ " <span style='color:"+AffectionLevel.POSITIVE_FOUR_LOVE.getColour().toWebHexString()+";'>"+AffectionLevel.POSITIVE_FOUR_LOVE.getDescriptor()+"</span> you."),
+									"Так как [npc.sheIs] не твоя рабыня, [npc.name] позволит тебе это сделать, только если [npc.she] <span style='color:"+AffectionLevel.POSITIVE_FOUR_LOVE.getColour().toWebHexString()+";'>"+AffectionLevel.POSITIVE_FOUR_LOVE.getDescriptor()+"</span> тебя."),
 							null);
 					
 				} else if(!getMilkingTarget().isPlayer()
@@ -423,23 +416,23 @@ public class LilayaMilkingRoomDialogue {
 						&& (getMilkingTarget().getFetishDesire(Fetish.FETISH_LACTATION_SELF).isNegative() || getMilkingTarget().getFetishDesire(Fetish.FETISH_BREASTS_SELF).isNegative())) {
 					return new Response(
 							(getMilkingTarget().isPlayer()
-									?"Milk self [pc.crotchBoobs]"
-									:UtilText.parse(getMilkingTarget(), "Milk [npc.NamePos] [npc.crotchBoobs]")),
+									?"Доить себя [pc.crotchBoobs]"
+									:UtilText.parse(getMilkingTarget(), "Доить [npc.NamePos] [npc.crotchBoobs]")),
 							UtilText.parse(getMilkingTarget(),
 									(getMilkingTarget().getFetishDesire(Fetish.FETISH_LACTATION_SELF).isNegative()
 											?(getMilkingTarget().getFetishDesire(Fetish.FETISH_BREASTS_SELF).isNegative()
-												?"As [npc.sheIs] not your slave, [npc.name] not let you do this, as [npc.sheHasFull] a negative desire for both the "
-													+Fetish.FETISH_LACTATION_SELF.getName(getMilkingTarget())+" and "+Fetish.FETISH_BREASTS_SELF.getName(getMilkingTarget())+" fetishes."
-												:"As [npc.sheIs] not your slave, [npc.name] not let you do this, as [npc.sheHasFull] a negative desire for the "+Fetish.FETISH_LACTATION_SELF.getName(getMilkingTarget())+" fetish.")
-											:"As [npc.sheIs] not your slave, [npc.name] not let you do this, as [npc.sheHasFull] a negative desire for the "+Fetish.FETISH_BREASTS_SELF.getName(getMilkingTarget())+" fetish.")),
+												?"Поскольку [npc.sheIs] не твоя рабыня, [npc.name] не позволит тебе этого сделать, так как [npc.sheHasFull] это вызовет нежелание у обоих "
+													+Fetish.FETISH_LACTATION_SELF.getName(getMilkingTarget())+" и "+Fetish.FETISH_BREASTS_SELF.getName(getMilkingTarget())+" фетишей."
+												:"Поскольку [npc.sheIs] не твоя рабыня, [npc.name] не позволит тебе этого сделать, так как [npc.sheHasFull] это вызовет нежелание у "+Fetish.FETISH_LACTATION_SELF.getName(getMilkingTarget())+" фетиш.")
+											:"Поскольку [npc.sheIs] не твоя рабыня, [npc.name] не позволит тебе этого сделать, так как [npc.sheHasFull] это вызовет нежелание у "+Fetish.FETISH_BREASTS_SELF.getName(getMilkingTarget())+" фетиш.")),
 							null);
 					
 				} else {
 					return new Response(
 							(getMilkingTarget().isPlayer()
-									?"Milk self [pc.crotchBoobs]"
-									:UtilText.parse(getMilkingTarget(), "Milk [npc.NamePos] [npc.crotchBoobs]")),
-							UtilText.parse(getMilkingTarget(), "Use this room's spare milking equipment to milk [npc.namePos] [npc.crotchBoobs]."),
+									?"Доить себя [pc.crotchBoobs]"
+									:UtilText.parse(getMilkingTarget(), "Доить [npc.NamePos] [npc.crotchBoobs]")),
+							UtilText.parse(getMilkingTarget(), "Использовать запасное доильное оборудование в этой комнате, чтобы подоить [npc.namePos] [npc.crotchBoobs]."),
 							MILKED) {
 						@Override
 						public void effects() {
@@ -461,7 +454,7 @@ public class LilayaMilkingRoomDialogue {
 							
 							Main.game.getTextEndStringBuilder().append(
 								"<p style='text-align:center; color:"+PresetColour.MILK.toWebHexString()+";'>"
-										+ Units.fluid(milked) + UtilText.parse(getMilkingTarget(), " of [npc.crotchMilk] added to this room's storage!")
+										+ Units.fluid(milked) + UtilText.parse(getMilkingTarget(), " [npc.crotchMilk] добавлено в хранилище этой комнаты!")
 								+ "</p>");
 						}
 						@Override
@@ -476,16 +469,15 @@ public class LilayaMilkingRoomDialogue {
 			} else if(index==10) {
 				if(Main.game.getCharactersPresent().isEmpty()) {
 					return new ResponseEffectsOnly(
-							"Target: <span style='color:"+getMilkingTarget().getFemininity().getColour().toWebHexString()+";'>"+UtilText.parse(getMilkingTarget(), "[npc.Name]")+"</span>",
-							UtilText.parse(getMilkingTarget(), "[npc.NameIsFull] currently targeted as the person both to be milked and to have fluids pumped inside of [npc.herHim]."
-									+ "If this room wasn't empty, you could use this button to cycle between available targets.")) {
+							"Цель: <span style='color:"+getMilkingTarget().getFemininity().getColour().toWebHexString()+";'>"+UtilText.parse(getMilkingTarget(), "[npc.Name]")+"</span>",
+							UtilText.parse(getMilkingTarget(), "[npc.NameIsFull] выбран(а) в качестве цели — человека, которого будут доить и в которого будут закачивать жидкости [npc.herHim]. Если бы комната не была пуста, вы могли бы использовать эту кнопку для переключения между доступными целями.")) {
 						
 					};
 					
 				} else {
 					return new Response(
-							"Target: <span style='color:"+getMilkingTarget().getFemininity().getColour().toWebHexString()+";'>"+UtilText.parse(getMilkingTarget(), "[npc.Name]")+"</span>",
-							UtilText.parse(getMilkingTarget(), "[npc.NameIsFull] currently targeted as the person both to be milked and to have fluids pumped inside of [npc.herHim]. Activate this button to cycle between available targets."),
+							"Цель: <span style='color:"+getMilkingTarget().getFemininity().getColour().toWebHexString()+";'>"+UtilText.parse(getMilkingTarget(), "[npc.Name]")+"</span>",
+							UtilText.parse(getMilkingTarget(), "[npc.NameIsFull] выбран(а) в качестве цели — человека, которого будут доить и в которого будут закачивать жидкости [npc.herHim]. Нажмите эту кнопку, чтобы переключиться между доступными целями."),
 							null) {
 						@Override
 						public DialogueNode getNextDialogue() {
@@ -519,7 +511,7 @@ public class LilayaMilkingRoomDialogue {
 		}
 	};
 	
-	public static final DialogueNode MILKED = new DialogueNode("Room", ".", true) {
+	public static final DialogueNode MILKED = new DialogueNode("Комната", ".", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 60*60;
@@ -539,7 +531,7 @@ public class LilayaMilkingRoomDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue", "Unstrap yourself from the milking machine and continue on your way.", MILKED) {
+				return new Response("Продолжить", "Отстегнитесь от доильного аппарата и идите дальше.", MILKED) {
 					@Override
 					public DialogueNode getNextDialogue() {
 						return Main.game.getDefaultDialogue(false);
@@ -554,7 +546,7 @@ public class LilayaMilkingRoomDialogue {
 	/**
 	 * Used in OccupantController when a character consumes fluids.
 	 */
-	public static final DialogueNode INGEST = new DialogueNode("Room", ".", true) {
+	public static final DialogueNode INGEST = new DialogueNode("Комната", ".", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 5*60;
@@ -574,7 +566,7 @@ public class LilayaMilkingRoomDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue", "You wonder what do do next...", INGEST) {
+				return new Response("Продолжить", "Вы гадаете, что делать дальше...", INGEST) {
 					@Override
 					public DialogueNode getNextDialogue() {
 						return Main.game.getDefaultDialogue(false);

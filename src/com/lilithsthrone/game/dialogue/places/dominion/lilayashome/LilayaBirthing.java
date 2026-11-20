@@ -94,7 +94,7 @@ public class LilayaBirthing {
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
 				if (Main.game.getPlayer().hasStatusEffect(StatusEffect.PREGNANT_3)) {
-					return new Response("Give birth", "Tell Lilaya that you're ready to give birth.", LILAYA_DETECTS_BIRTHING_TYPE){
+					return new Response("Родить", "Сказать Lilaya, что вы готовы к родам.", LILAYA_DETECTS_BIRTHING_TYPE){
 						@Override
 						public void effects() {
 							if (Main.game.getPlayer().isVisiblyPregnant() && !Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.reactedToPregnancyLilaya)) {
@@ -103,7 +103,7 @@ public class LilayaBirthing {
 						}
 					};
 				} else {
-					return new Response("Give birth", "You need to wait until your belly has finished growing before you're able to give birth.", null){
+					return new Response("Родить", "Вам нужно подождать, пока живот не вырастет полностью, прежде чем вы сможете родить.", null){
 						@Override
 						public void effects() {
 							if (Main.game.getPlayer().isVisiblyPregnant() && !Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.reactedToPregnancyLilaya)) {
@@ -114,19 +114,14 @@ public class LilayaBirthing {
 				}
 
 			} else if (index == 0) {
-				return new Response("Back", "Tell Lilaya that you need a moment to think.", Lab.LAB_EXIT){
+				return new Response("Назад", "Сказать Lilaya, что вам нужно минутку подумать.", Lab.LAB_EXIT){
 					@Override
 					public void effects() {
 						if (Main.game.getPlayer().isVisiblyPregnant() && !Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.reactedToPregnancyLilaya)) {
 							Main.game.getDialogueFlags().setFlag(DialogueFlagValue.reactedToPregnancyLilaya, true);
 						}
 						Main.game.getTextStartStringBuilder().append(
-								"<p>"
-									+ "[pc.speech(Thanks for your help, Lilaya, but can I just have a moment to think?)] you ask, smiling at your demonic [lilaya.relation(pc)]."
-								+ "</p>"
-								+ "<p>"
-									+ "[lilaya.speech(Sure, just let me know if you need anything else!)] she says, before backing off a little to give you some space."
-								+ "</p>");
+								"<p>[pc.speech(Спасибо за помощь, Lilaya, но можно мне просто минутку подумать?)] — спрашиваете вы, улыбаясь своей демонической [lilaya.relation(pc)].</p><p>[lilaya.speech(Конечно, только дай знать, если тебе что-нибудь еще понадобится!)] — отвечает она, слегка отступая, чтобы дать вам немного пространства.</p>");
 					}
 				};
 
@@ -163,7 +158,7 @@ public class LilayaBirthing {
 
 		@Override
 		public String getLabel() {
-			return "Giving birth";
+			return "Роды";
 		}
 
 		@Override
@@ -175,7 +170,7 @@ public class LilayaBirthing {
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
 				if(Main.game.getPlayer().isVaginaEggLayer()) {
-					return new Response("Follow Lilaya", "Allow Lilaya to lead you up to your room.", LILAYA_ASSISTS_EGG_LAYING) {
+					return new Response("Идти за Lilaya", "Позволить Lilaya проводить вас в вашу комнату.", LILAYA_ASSISTS_EGG_LAYING) {
 						@Override
 						public void effects() {
 							Main.game.getNpc(Lilaya.class).setLocation(WorldType.LILAYAS_HOUSE_FIRST_FLOOR, PlaceType.LILAYA_HOME_ROOM_PLAYER, false);
@@ -183,7 +178,7 @@ public class LilayaBirthing {
 						}
 					};
 				} else {
-					return new Response("Follow Lilaya", "Allow Lilaya to lead you to the birthing room.", LILAYA_ASSISTS_BIRTHING) {
+					return new Response("Идти за Lilaya", "Позволить Lilaya проводить вас в родильную.", LILAYA_ASSISTS_BIRTHING) {
 						@Override
 						public void effects() {
 							Main.game.getNpc(Lilaya.class).setLocation(WorldType.LILAYAS_HOUSE_GROUND_FLOOR, PlaceType.LILAYA_HOME_BIRTHING_ROOM, false);
@@ -207,7 +202,7 @@ public class LilayaBirthing {
 
 		@Override
 		public String getLabel() {
-			return "Birthing Room";
+			return "Родильная";
 		}
 
 		@Override
@@ -227,7 +222,7 @@ public class LilayaBirthing {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Start", "Tell Lilaya that you're ready to give birth now.", LILAYA_ASSISTS_BIRTHING_DELIVERS){
+				return new Response("Начать", "Сказать Lilaya, что ты готов рожать прямо сейчас.", LILAYA_ASSISTS_BIRTHING_DELIVERS){
 					@Override
 					public void effects() {
 						Main.game.getDialogueFlags().setFlag(DialogueFlagValue.reactedToPregnancyLilaya, false);
@@ -244,7 +239,7 @@ public class LilayaBirthing {
 				};
 
 			} else if (index == 2) {
-				return new Response("Knock out", "Ask Lilaya if she could give you something to knock you out. After all, she said you didn't need to be conscious for this.", LILAYA_ASSISTS_BIRTHING_KNOCK_OUT){
+				return new Response("Вырубить", "Спросить Lilaya, не может ли она дать тебе что-нибудь, чтобы ты отключился. В конце концов, она говорила, что сознание тебе здесь ни к чему.", LILAYA_ASSISTS_BIRTHING_KNOCK_OUT){
 					@Override
 					public void effects() {
 						Main.game.getDialogueFlags().setFlag(DialogueFlagValue.reactedToPregnancyLilaya, false);
@@ -279,18 +274,15 @@ public class LilayaBirthing {
 
 			UtilText.nodeContentSB.append(UtilText.parseFromXMLFile("places/dominion/lilayasHome/lilayaBirthing", "LILAYA_ASSISTS_BIRTHING_DELIVERS"));
 			
-			UtilText.nodeContentSB.append("<p>"
-					+ "<i>"
-					+ "You hear Lilaya speaking from somewhere beneath you, but you can't make out what she's saying..."
-					+ "<br/><br/>");
+			UtilText.nodeContentSB.append("<p><i>Ты слышишь голос Lilaya откуда-то снизу, но не можешь разобрать, что именно она говорит...<br/><br/>");
 
 			if(Main.game.getPlayer().getBreastRawMilkStorageValue() > 0
 					&& Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.NIPPLES, true)
 					&& Main.game.getPlayer().getNippleShape()==NippleShape.NORMAL
 					&& Main.game.isLactationContentEnabled()) {
-				UtilText.nodeContentSB.append("You feel a desperate suckling at your nipples, and you're vaguely aware of something greedily drinking down mouthfuls of your [pc.milk]...");
+				UtilText.nodeContentSB.append("Ты чувствуешь отчаянное сосание сосков и смутно осознаешь, что что-то жадно поглощает глотки твоего [pc.milk]...");
 			} else {
-				UtilText.nodeContentSB.append("You feel a weight on your chest, and you're vaguely aware of something greedily drinking a bottle of milk as you cradle it in your arms...");
+				UtilText.nodeContentSB.append("Ты чувствуешь тяжесть на груди и смутно осознаешь, что что-то жадно припало к бутылочке молока, которую ты прижимаешь к себе в руках...");
 			}
 			
 			String offspringId = Util.randomItemFrom(Main.game.getPlayer().getLastLitterBirthed().getOffspring());
@@ -298,25 +290,25 @@ public class LilayaBirthing {
 				if(offspringId.contains("NPCOffspring")) { // If the offspring is from the pre-offspring seed PR, handle them in the old way:
 					GameCharacter offspring = Main.game.getNPCById(offspringId);
 					if(offspring.isFeminine()) {
-						UtilText.nodeContentSB.append("<br/><br/>Some time later, you imagine seeing a strangely familiar "
+						UtilText.nodeContentSB.append("<br/><br/>Спустя какое-то время тебе кажется, что ты видишь странно знакомое "
 									+offspring.getSubspecies().getSingularFemaleName(offspring.getBody())
-									+" bending down over you, who gives you a loving hug and a kiss on your cheek before departing...");
+									+" лицо, склонившееся над тобой; оно нежно обнимает тебя и целует в щеку перед тем, как уйти...");
 					} else {
-						UtilText.nodeContentSB.append("<br/><br/>Some time later, you imagine seeing a strangely familiar "
+						UtilText.nodeContentSB.append("<br/><br/>Спустя какое-то время тебе кажется, что ты видишь странно знакомое "
 									+offspring.getSubspecies().getSingularMaleName(offspring.getBody())
-									+" bending down over you, who plants a kiss on your cheek and mutters something in your ear before walking out the door...");
+									+" лицо, склонившееся над тобой; оно целует тебя в щеку и шепчет что-то на ухо, прежде чем выйти за дверь...");
 					}
 					
 				} else {
 					OffspringSeed offspring = Main.game.getOffspringSeedById(offspringId);
 					if(offspring.isFeminine()) {
-						UtilText.nodeContentSB.append("<br/><br/>Some time later, you imagine seeing a strangely familiar "
+						UtilText.nodeContentSB.append("<br/><br/>Спустя какое-то время тебе кажется, что ты видишь странно знакомое "
 									+offspring.getSubspecies().getSingularFemaleName(offspring.getBody())
-									+" bending down over you, who gives you a loving hug and a kiss on your cheek before departing...");
+									+" лицо, склонившееся над тобой; оно нежно обнимает тебя и целует в щеку перед тем, как уйти...");
 					} else {
-						UtilText.nodeContentSB.append("<br/><br/>Some time later, you imagine seeing a strangely familiar "
+						UtilText.nodeContentSB.append("<br/><br/>Спустя какое-то время тебе кажется, что ты видишь странно знакомое "
 									+offspring.getSubspecies().getSingularMaleName(offspring.getBody())
-									+" bending down over you, who plants a kiss on your cheek and mutters something in your ear before walking out the door...");
+									+" лицо, склонившееся над тобой; оно целует тебя в щеку и шепчет что-то на ухо, прежде чем выйти за дверь...");
 					}
 				}
 			} catch(Exception ex) {
@@ -331,7 +323,7 @@ public class LilayaBirthing {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Pass out", "You have no energy left, and can't stay conscious any longer...", LILAYA_ASSISTS_BIRTHING_FINISHED){
+				return new Response("Потерять сознание", "У тебя больше не осталось энергии, и ты больше не можешь оставаться в сознании...", LILAYA_ASSISTS_BIRTHING_FINISHED){
 					@Override
 					public void effects() {
 						if (Main.game.getPlayer().getQuest(QuestLine.SIDE_FIRST_TIME_PREGNANCY) == Quest.SIDE_PREGNANCY_LILAYA_THE_MIDWIFE) {
@@ -351,7 +343,7 @@ public class LilayaBirthing {
 		}
 	};
 	
-	public static final DialogueNode LILAYA_ASSISTS_BIRTHING_KNOCK_OUT = new DialogueNode("Your room", "", true, true) {
+	public static final DialogueNode LILAYA_ASSISTS_BIRTHING_KNOCK_OUT = new DialogueNode("Твоя комната", "", true, true) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -366,7 +358,7 @@ public class LilayaBirthing {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Pass out", "The drink Lilaya gave you goes straight to your head, and you collapse back onto the bed as you lose consciousness.", LILAYA_ASSISTS_BIRTHING_FINISHED){
+				return new Response("Потерять сознание", "Напиток, который дала тебе Lilaya, мгновенно ударяет в голову, и ты валишься на кровать, теряя сознание.", LILAYA_ASSISTS_BIRTHING_FINISHED){
 					@Override
 					public void effects() {
 						if (Main.game.getPlayer().getQuest(QuestLine.SIDE_FIRST_TIME_PREGNANCY) == Quest.SIDE_PREGNANCY_LILAYA_THE_MIDWIFE) {
@@ -395,7 +387,7 @@ public class LilayaBirthing {
 
 		@Override
 		public String getLabel() {
-			return "Your room";
+			return "Твоя комната";
 		}
 
 		@Override
@@ -406,7 +398,7 @@ public class LilayaBirthing {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Lay eggs", "Tell Lilaya that you're ready to lay your eggs now.", LILAYA_ASSISTS_EGG_LAYING_DELIVERS){
+				return new Response("Отложить яйца", "Сказать Lilaya, что ты готов отложить яйца прямо сейчас.", LILAYA_ASSISTS_EGG_LAYING_DELIVERS){
 					@Override
 					public void effects() {
 						Main.game.getDialogueFlags().setFlag(DialogueFlagValue.reactedToPregnancyLilaya, false);
@@ -447,11 +439,11 @@ public class LilayaBirthing {
 			if (index == 1) {
 				return new Response(
 						Main.game.getPlayer().getLastLitterBirthed().getTotalLitterCount()==1
-							?"Protect the egg"
-							:"Protect the eggs!",
+							?"Защищать яйцо"
+							:"Защищать яйца!",
 						Main.game.getPlayer().getLastLitterBirthed().getTotalLitterCount()==1
-							?"Why is Lilaya getting so close?! Maybe she wants to take your egg for herself!"
-							:"Why is Lilaya getting so close?! Maybe she wants to take your eggs for herself!",
+							?"Почему Lilaya подходит так близко?! Может, она хочет забрать твое яйцо себе!"
+							:"Почему Lilaya подходит так близко?! Может, она хочет забрать твои яйца себе!",
 						LILAYA_ASSISTS_EGG_LAYING_PROTECT_THE_EGGS) {
 					@Override
 					public void effects() {
@@ -513,7 +505,7 @@ public class LilayaBirthing {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Some time later", "You eventually wake up from your exhausted slumber...", LILAYA_ASSISTS_BIRTHING_FINISHED){
+				return new Response("Спустя некоторое время", "В конце концов вы пробуждаетесь от изнурительного сна...", LILAYA_ASSISTS_BIRTHING_FINISHED){
 					@Override
 					public void effects() {
 						if (Main.game.getPlayer().getQuest(QuestLine.SIDE_FIRST_TIME_PREGNANCY) == Quest.SIDE_PREGNANCY_LILAYA_THE_MIDWIFE) {
@@ -529,7 +521,7 @@ public class LilayaBirthing {
 		}
 	};
 	
-	public static final DialogueNode LILAYA_ASSISTS_BIRTHING_FINISHED = new DialogueNode("Your room", "", true, true) {
+	public static final DialogueNode LILAYA_ASSISTS_BIRTHING_FINISHED = new DialogueNode("Твоя комната", "", true, true) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -570,10 +562,7 @@ public class LilayaBirthing {
 				}
 			}
 			
-			UtilText.nodeContentSB.append("</p>"
-					+ "<p>"
-					+ "After taking a minute to get your emotions under control, you put the picture away for safe-keeping, and think about what to do next."
-					+ "</p>");
+			UtilText.nodeContentSB.append("</p><p>Приведя эмоции в порядок, вы убираете фотографию на место, чтобы сохранить её, и задумываетесь о том, что делать дальше.</p>");
 
 			return UtilText.nodeContentSB.toString();
 		}
@@ -581,7 +570,7 @@ public class LilayaBirthing {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Get up", "Get out of bed, ready for a new day.", RoomPlayer.ROOM);
+				return new Response("Встать", "Встать с постели, готовым к новому дню.", RoomPlayer.ROOM);
 
 			} else {
 				return null;

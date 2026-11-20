@@ -57,7 +57,7 @@ public class BountyHunterLodge {
 			
 			if(!KaysWarehouse.isPlayerMouthFree()) {
 				return new Response(title,
-						"As you cannot gain access to your mouth, you cannot offer to perform oral on the dobermann-boys...",
+						"Так как вы не можете разжать рот, вы не можете предложить доберман-мальчикам отсосать...",
 						null);
 				
 			} else {
@@ -66,7 +66,7 @@ public class BountyHunterLodge {
 						SexSlotSitting.SITTING, SexAreaPenetration.FINGER,
 						SexSlotSitting.PERFORMING_ORAL,
 						title,
-						"Offer to suck the dobermann-boys' cocks...",
+						"Предложить отсосать доберман-мальчикам...",
 						DOBERMANNS_AFTER_SEX,
 						UtilText.parseFromXMLFile("places/dominion/slaverAlley/bountyHunterLodge", "DOBERMANNS_SEX_OFFER_ORAL"));
 			}
@@ -76,12 +76,12 @@ public class BountyHunterLodge {
 			
 			if(!KaysWarehouse.isPlayerMouthFree()) {
 				return new Response(title,
-						"As you cannot gain access to your mouth, you cannot offer to be spit-roasted by the dobermann-boys...",
+						"Так как вы не можете разжать рот, вы не можете предложить доберман-мальчикам устроить вам спит-рост...",
 						null);
 				
 			} else if(!KaysWarehouse.isPlayerAssFree() && !KaysWarehouse.isPlayerVaginaFree()) {
 				return new Response(title,
-						"As you cannot gain access to your ass"+(Main.game.getPlayer().hasVagina()?" or pussy":"")+", you cannot offer to be spit-roasted by the dobermann-boys...",
+						"Так как вы не можете открыть задницу"+(Main.game.getPlayer().hasVagina()?" или киску":"")+", вы не можете предложить доберман-мальчикам устроить вам спит-рост...",
 						null);
 				
 			} else {
@@ -90,7 +90,7 @@ public class BountyHunterLodge {
 						SexSlotAllFours.IN_FRONT, SexAreaOrifice.MOUTH,
 						SexSlotAllFours.ALL_FOURS,
 						title,
-						"Offer to let the two dobermann-boys spit-roast you...",
+						"Предложить двум доберман-мальчикам устроить вам спит-рост...",
 						DOBERMANNS_AFTER_SEX,
 						UtilText.parseFromXMLFile("places/dominion/slaverAlley/bountyHunterLodge", "DOBERMANNS_SEX_OFFER_SPITROAST"));
 			}
@@ -100,7 +100,7 @@ public class BountyHunterLodge {
 			
 			if(!KaysWarehouse.isPlayerAssFree() && !KaysWarehouse.isPlayerVaginaFree()) {
 				return new Response(title,
-						"As you cannot gain access to your ass"+(Main.game.getPlayer().hasVagina()?" or pussy":"")+", you cannot offer to ride the dobermann-boys...",
+						"Так как вы не можете открыть задницу"+(Main.game.getPlayer().hasVagina()?" или киску":"")+", вы не можете предложить оседлать доберман-мальчиков...",
 						null);
 				
 			} else {
@@ -109,7 +109,7 @@ public class BountyHunterLodge {
 						SexSlotLyingDown.MISSIONARY, KaysWarehouse.isPlayerAssFree()?SexAreaOrifice.ANUS:SexAreaOrifice.VAGINA,
 						SexSlotLyingDown.COWGIRL,
 						title,
-						"Offer to give the two dobermann-boys a ride...",
+						"Предложить двум мальчикам-доберманнам подвезти их...",
 						DOBERMANNS_AFTER_SEX,
 						UtilText.parseFromXMLFile("places/dominion/slaverAlley/bountyHunterLodge", "DOBERMANNS_SEX_OFFER_RIDE"));
 			}
@@ -120,8 +120,8 @@ public class BountyHunterLodge {
 			if(!KaysWarehouse.isPlayerNippleFuckFree()) {
 				return new Response(title,
 						Main.game.getPlayer().isBreastFuckableNipplePenetration()
-							?"As you cannot gain access to your fuckable nipples, you cannot offer them to the dobermann-boys..."
-							:"As you do not have fuckable nipples, you cannot offer them to the dobermann-boys...",
+							?"Так как вы не можете добраться до своих сочных сосков, вы не можете предложить их мальчикам-доберманнам..."
+							:"Так как у вас нет сочных сосков, вы не можете предложить их мальчикам-доберманнам...",
 						null);
 				
 			} else {
@@ -130,7 +130,7 @@ public class BountyHunterLodge {
 						SexSlotStanding.STANDING_DOMINANT_TWO, SexAreaOrifice.NIPPLE,
 						SexSlotStanding.PERFORMING_ORAL,
 						title,
-						"Offer to let the two dobermann-boys fuck your nipples...",
+						"Предложить мальчикам-доберманнам оттрахать ваши соски...",
 						DOBERMANNS_AFTER_SEX,
 						UtilText.parseFromXMLFile("places/dominion/slaverAlley/bountyHunterLodge", "DOBERMANNS_SEX_OFFER_NIPPLES"));
 			}
@@ -165,7 +165,7 @@ public class BountyHunterLodge {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index == 1) {
-				return new Response("Exit", "Step back out into Slaver Alley.", PlaceType.SLAVER_ALLEY_BOUNTY_HUNTERS.getDialogue(false)) {
+				return new Response("Выход", "Выйти обратно в Аллею Работорговцев.", PlaceType.SLAVER_ALLEY_BOUNTY_HUNTERS.getDialogue(false)) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/slaverAlley/bountyHunterLodge", "ENTRANCE_LEAVE"));
@@ -189,7 +189,7 @@ public class BountyHunterLodge {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1 && Main.game.getCharactersPresent().contains(Main.game.getNpc(SupplierLeader.class))) {
-				return new Response("Dobermanns", "Head over and say something to Wolfgang and Karl...", DOBERMANNS);
+				return new Response("Доберманны", "Подойти и что-нибудь сказать Вольфгангу и Карлу...", DOBERMANNS);
 			}
 			return null;
 		}
@@ -208,19 +208,14 @@ public class BountyHunterLodge {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				if(!KaysWarehouse.isSexAvailable()) {
-					return new Response("Seduce", "As you're unable to access any of your orifices, you're unable to seduce the dobermann-boys...", null);
+					return new Response("Соблазнить", "Так как вы не можете добраться ни до одного из своих отверстий, вы не в состоянии соблазнить мальчиков-доберманнов...", null);
 				}
 				if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.dobermannDefeatSeduced) || Main.game.getNpc(SupplierLeader.class).getSexCount(Main.game.getPlayer()).getTotalTimesHadSex()>0) {
-					return new Response("Seduce",
-							"Offer to let the dobermann-boys fuck you again..."
-								+ "<br/>"
+					return new Response("Соблазнить",
+							"Предложить мальчикам-доберманнам снова оттрахать вас...<br/>"
 								+ (Main.game.getPlayer().hasFetish(Fetish.FETISH_DOMINANT)
-										?"[style.italicsSexDom(As you)]"
-												+ " [style.italicsMinorGood(have the "+Fetish.FETISH_DOMINANT.getName(Main.game.getPlayer())+" fetish)]"
-												+ "[style.italicsSexDom(, you will be able to take either the dominant or submissive role in the following sex scene.)]"
-										:"[style.italicsSex(As you)]"
-												+ " [style.italicsMinorBad(do not have the "+Fetish.FETISH_DOMINANT.getName(Main.game.getPlayer())+" fetish)]"
-												+ "[style.italicsSex(, you will only be able to take the submissive role in the following sex scene.)]"),
+										?"[style.italicsSexDom(Раз уж у вас)] [style.italicsMinorGood(есть) "+Fetish.FETISH_DOMINANT.getName(Main.game.getPlayer())+" фетиш)][style.italicsSexDom(, в следующей секс-сцене вы сможете выбрать роль либо доминанта, либо сабмиссива.)]"
+										:"[style.italicsSex(Поскольку у вас)] [style.italicsMinorBad(нет "+Fetish.FETISH_DOMINANT.getName(Main.game.getPlayer())+" фетиша)][style.italicsSex(, в следующей секс-сцене вы сможете занять только роль сабмиссива.)]"),
 							DOBERMANNS_UPSTAIRS) {
 						@Override
 						public boolean isSexHighlight() {
@@ -233,16 +228,11 @@ public class BountyHunterLodge {
 					};
 					
 				} else {
-					return new Response("Seduce",
-							"Seduce the dobermann-boys and have sex with them..."
-									+ "<br/>"
+					return new Response("Соблазнить",
+							"Соблазнить мальчиков-доберманов и переспать с ними...<br/>"
 									+ (Main.game.getPlayer().hasFetish(Fetish.FETISH_DOMINANT)
-											?"[style.italicsSexDom(As you)]"
-													+ " [style.italicsMinorGood(have the "+Fetish.FETISH_DOMINANT.getName(Main.game.getPlayer())+" fetish)]"
-													+ "[style.italicsSexDom(, you will be able to take either the dominant or submissive role in the following sex scene.)]"
-											:"[style.italicsSex(As you)]"
-													+ " [style.italicsMinorBad(do not have the "+Fetish.FETISH_DOMINANT.getName(Main.game.getPlayer())+" fetish)]"
-													+ "[style.italicsSex(, you will only be able to take the submissive role in the following sex scene.)]"),
+											?"[style.italicsSexDom(Раз уж у вас)] [style.italicsMinorGood(есть) "+Fetish.FETISH_DOMINANT.getName(Main.game.getPlayer())+" фетиша)][style.italicsSexDom(, в следующей секс-сцене вы сможете выбрать роль либо доминанта, либо сабмиссива.)]"
+											:"[style.italicsSex(Поскольку у вас)] [style.italicsMinorBad(нет "+Fetish.FETISH_DOMINANT.getName(Main.game.getPlayer())+" фетиша)][style.italicsSex(, в следующей секс-сцене вы сможете занять только роль сабмиссива.)]"),
 							DOBERMANNS_UPSTAIRS,
 							null,
 							null,
@@ -262,7 +252,7 @@ public class BountyHunterLodge {
 				}
 				
 			} else if(index==2) {
-				return new Response("Leave", "Step away from the table and head back into the tavern.", FLOOR) {
+				return new Response("Уйти", "Отойти от стола и вернуться в таверну.", FLOOR) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/slaverAlley/bountyHunterLodge", "DOBERMANNS_LEAVE"));
@@ -291,8 +281,8 @@ public class BountyHunterLodge {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new ResponseSex("Fuck Them",
-						"Push Wolfgang and Karl down side-by-side in the doggy-style position, ready to have some fun with them...",
+				return new ResponseSex("Трахнуть их",
+						"Повалить Вольфганга и Карла рядом друг с другом в позу догги-стайл, готовясь хорошенько развлечься с ними...",
 						Util.newArrayListOfValues(Fetish.FETISH_DOMINANT),
 						null, null, null, null, null,
 						false, false,
@@ -305,7 +295,7 @@ public class BountyHunterLodge {
 						DOBERMANNS_AFTER_SEX,
 						UtilText.parseFromXMLFile("places/dominion/slaverAlley/bountyHunterLodge", "DOBERMANNS_UPSTAIRS_FUCK_THEM"));
 			}
-			return getDobermannsUpstairsSexResponse(2, index, "Submit (sex_type_replacement)");
+			return getDobermannsUpstairsSexResponse(2, index, "Подчиниться (sex_type_replacement)");
 		}
 	};
 
@@ -321,7 +311,7 @@ public class BountyHunterLodge {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Downstairs", "Head back downstairs to the tavern's ground floor...", STAIRS) {
+				return new Response("Вниз", "Спуститься обратно на первый этаж таверны...", STAIRS) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/slaverAlley/bountyHunterLodge", "DOBERMANNS_AFTER_SEX_DOWNSTAIRS"));
@@ -345,7 +335,7 @@ public class BountyHunterLodge {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1 && Main.game.getCharactersPresent().contains(Main.game.getNpc(Silence.class))) {
-				return new Response("Silence", "Head over and say something to Silence...<br/>[style.italicsBad(A mini-quest involving Silence and Shadow will be added soon!)]", null);
+				return new Response("Сайленс", "Подойти к Сайленс и что-нибудь ей сказать...<br/>[style.italicsBad(Вскоре будет добавлен мини-квест с участием Сайленс и Шэдоу!)]", null);
 			}
 			return null;
 		}
@@ -363,7 +353,7 @@ public class BountyHunterLodge {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Upstairs", "Head up the stairs to the tavern's first floor.", UPSTAIRS_STAIRS) {
+				return new Response("Наверх", "Подняться по лестнице на второй этаж таверны.", UPSTAIRS_STAIRS) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/slaverAlley/bountyHunterLodge", "STAIRS_UPSTAIRS"));
@@ -387,7 +377,7 @@ public class BountyHunterLodge {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Bounties", "Take a closer look at which bounties are available.<br/>[style.italicsMinorBad(Will be added in a later update!)]", null);
+				return new Response("Награды", "Внимательнее изучить доступные награды.<br/>[style.italicsMinorBad(Будет добавлено в одном из будущих обновлений!)]", null);
 			}
 			return null;
 		}
@@ -405,7 +395,7 @@ public class BountyHunterLodge {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Register", "Tell the barman that you'd like to register as an official bounty hunter.<br/>[style.italicsMinorBad(Will be added in a later update!)]", null);
+				return new Response("Зарегистрироваться", "Сказать бармену, что вы хотите зарегистрироваться как официальный охотник за головами.<br/>[style.italicsMinorBad(Будет добавлено в одном из будущих обновлений!)]", null);
 			}
 			
 			List<Response> responses = new ArrayList<>();
@@ -415,13 +405,13 @@ public class BountyHunterLodge {
 				int price = consumable.getPrice(BARMAN_BUY_MODIFIER);
 				
 				if(Main.game.getPlayer().getMoney()<price) {
-					responses.add(new Response(consumable.getName()+" ("+UtilText.formatAsMoneyUncoloured(price, "span")+")",
-							"You do not have the "+Util.intToString(price)+" flames required, and so cannot order "+consumable.getName(true, false)+"...",
+					responses.add(new Response(consumable.getName()+" ("+UtilText.formatAsMoneyUncoloured(price, "охват")+")",
+							"У вас недостаточно "+Util.intToString(price)+" огней, чтобы сделать заказ "+consumable.getName(true, false)+"...",
 							null));
 					
 				} else {
-					responses.add(new Response(consumable.getName()+" ("+UtilText.formatAsMoney(price, "span")+")",
-							"Hand over "+Util.intToString(price)+" flames and order "+consumable.getName(true, false)+".",
+					responses.add(new Response(consumable.getName()+" ("+UtilText.formatAsMoney(price, "охват")+")",
+							"Отдать "+Util.intToString(price)+" огни и порядок "+consumable.getName(true, false)+".",
 							BAR_CONSUME) {
 						@Override
 						public void effects() {
@@ -486,7 +476,7 @@ public class BountyHunterLodge {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Downstairs", "Head back down the stairs to the tavern's ground floor.", STAIRS) {
+				return new Response("Вниз", "Спуститься обратно по лестнице на первый этаж таверны.", STAIRS) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/slaverAlley/bountyHunterLodge", "UPSTAIRS_STAIRS_DOWNSTAIRS"));
@@ -531,15 +521,13 @@ public class BountyHunterLodge {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				if(Main.game.isHourBetween(9, 18)) {
-					return new Response("Angelixx",
-							"Knock on the door to meet with Angelixx."
-							+ "<br/>[style.italicsMinorBad(This content will be added soon!)]",
+					return new Response("Ангеликс",
+							"Постучать в дверь, чтобы встретиться с Анжеликсом.<br/>[style.italicsMinorBad(Этот контент скоро будет добавлен!)]",
 							null);
 					
 				} else {
-					return new Response("Angelixx",
-							"Angelixx isn't around at this time..."
-							+ "<br/><i>Return between the hours of [units.time(9)]-[units.time(18)] to meet Angelixx.</i>",
+					return new Response("Ангеликс",
+							"Анжеликса сейчас нет на месте...<br/><i>Приходите в период с [units.time(9)] по [units.time(18)], чтобы встретиться с Анжеликсом.</i>",
 							null);
 				}
 			}
@@ -563,15 +551,13 @@ public class BountyHunterLodge {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				if(Main.game.isHourBetween(9, 18)) {
-					return new Response("Sleip & Nir",
-							"Knock on the door to meet with Sleip and Nir."
-							+ "<br/>[style.italicsMinorBad(This content will be added soon!)]",
+					return new Response("Слейп и Нир",
+							"Постучать в дверь, чтобы встретиться со Слейпом и Ниром.<br/>[style.italicsMinorBad(Этот контент скоро будет добавлен!)]",
 							null);
 					
 				} else {
-					return new Response("Sleip & Nir",
-							"Sleip and Nir aren't around at this time..."
-							+ "<br/><i>Return between the hours of [units.time(9)]-[units.time(18)] to meet Angelixx.</i>",
+					return new Response("Слейп и Нир",
+							"Слейпа и Нира сейчас нет на месте...<br/><i>Приходите в период с [units.time(9)] по [units.time(18)], чтобы встретиться с Анжеликсом.</i>",
 							null);
 				}
 			}

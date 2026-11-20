@@ -26,11 +26,11 @@ import com.lilithsthrone.world.places.PlaceType;
  */
 public class LumiDialogue {
 	
-	public static final DialogueNode LUMI_APPEARS = new DialogueNode("Alleyways", "", true) {
+	public static final DialogueNode LUMI_APPEARS = new DialogueNode("Переулки", "", true) {
 		
 		@Override
 		public String getAuthor() {
-			return "Nnxx";
+			return "Ннхх";
 		}
 		
 		@Override
@@ -42,13 +42,13 @@ public class LumiDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
 				if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.lumiMet)) {
-					return new Response("Stay", "Decide to stay and see who approaches.", LUMI_APPEARS_REPEAT_ENCOUNTER);
+					return new Response("Остаться", "Решить остаться и посмотреть, кто подойдет.", LUMI_APPEARS_REPEAT_ENCOUNTER);
 				} else {
-					return new Response("Stay", "Decide to stay and see who approaches.", LUMI_APPEARS_FIRST_ENCOUNTER);
+					return new Response("Остаться", "Решить остаться и посмотреть, кто подойдет.", LUMI_APPEARS_FIRST_ENCOUNTER);
 				}
 				
 			} else if (index == 2) {
-				return new ResponseEffectsOnly("Evade", "Quickly duck away down a narrow passage.") {
+				return new ResponseEffectsOnly("Ускользнуть", "Быстро нырнуть в узкий проход.") {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("characters/dominion/lumi", "LUMI_APPEARS_EVADE"));
@@ -64,11 +64,11 @@ public class LumiDialogue {
 	
 	private static long moneyStolen = 0;
 	
-	public static final DialogueNode LUMI_APPEARS_FIRST_ENCOUNTER = new DialogueNode("Alleyways", "", true, true) {
+	public static final DialogueNode LUMI_APPEARS_FIRST_ENCOUNTER = new DialogueNode("Переулки", "", true, true) {
 
 		@Override
 		public String getAuthor() {
-			return "Nnxx";
+			return "Ннхх";
 		}
 		
 		@Override
@@ -79,7 +79,7 @@ public class LumiDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Wait", "Keep hiding behind the pile of junk.", LUMI_APPEARS_FIRST_ENCOUNTER_WAITING) {
+				return new Response("Ждать", "Продолжать прятаться за грудой хлама.", LUMI_APPEARS_FIRST_ENCOUNTER_WAITING) {
 					@Override
 					public void effects() {
 						moneyStolen = Main.game.getPlayer().getMoney()>=700?700:Main.game.getPlayer().getMoney();
@@ -99,11 +99,11 @@ public class LumiDialogue {
 		}
 	};
 	
-	public static final DialogueNode LUMI_APPEARS_FIRST_ENCOUNTER_WAITING = new DialogueNode("Alleyways", "", true, true) {
+	public static final DialogueNode LUMI_APPEARS_FIRST_ENCOUNTER_WAITING = new DialogueNode("Переулки", "", true, true) {
 
 		@Override
 		public String getAuthor() {
-			return "Nnxx";
+			return "Ннхх";
 		}
 		
 		@Override
@@ -114,10 +114,10 @@ public class LumiDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Chase them", "You're not going to let this thief escape!", LUMI_CHASE);
+				return new Response("Погнаться за ними", "Ты не позволишь этому вору ускользнуть!", LUMI_CHASE);
 				
 			} else if (index == 2) {
-				return new ResponseEffectsOnly("Let them go", "You don't have time to be chasing after petty thieves. Let them go.") {
+				return new ResponseEffectsOnly("Отпустить их", "У тебя нет времени гоняться за мелкими воришками. Пусть уходят.") {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("characters/dominion/lumi", "LUMI_LET_THEM_ESCAPE"));
@@ -131,11 +131,11 @@ public class LumiDialogue {
 		}
 	};
 	
-	public static final DialogueNode LUMI_CHASE = new DialogueNode("Alleyways", "", true, true) {
+	public static final DialogueNode LUMI_CHASE = new DialogueNode("Переулки", "", true, true) {
 
 		@Override
 		public String getAuthor() {
-			return "Nnxx";
+			return "Ннхх";
 		}
 		
 		@Override
@@ -146,7 +146,7 @@ public class LumiDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Continue pursuit", "You're not going to let this thief escape!", LUMI_CHASE_CONTINUE) {
+				return new Response("Продолжить погоню", "Ты не позволишь этому вору ускользнуть!", LUMI_CHASE_CONTINUE) {
 					@Override
 					public void effects() {
 						Main.game.getNpc(Lumi.class).setLocation(Main.game.getPlayer().getWorldLocation(), Main.game.getPlayer().getLocation(), true);
@@ -159,11 +159,11 @@ public class LumiDialogue {
 		}
 	};
 	
-	public static final DialogueNode LUMI_CHASE_CONTINUE = new DialogueNode("Alleyways", "", true, true) {
+	public static final DialogueNode LUMI_CHASE_CONTINUE = new DialogueNode("Переулки", "", true, true) {
 
 		@Override
 		public String getAuthor() {
-			return "Nnxx";
+			return "Ннхх";
 		}
 		
 		@Override
@@ -179,11 +179,11 @@ public class LumiDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Talk", "Decide to try talking to her. After all, violence is never the solution!", LUMI_CAUGHT_TALK);
+				return new Response("Поговорить", "Решить попробовать поговорить с ней. В конце концов, насилие — это не всегда выход!", LUMI_CAUGHT_TALK);
 				
 			} else if (index == 2) {
-				return new ResponseCombat("Fight",
-						"You're not going to let this thief escape!",
+				return new ResponseCombat("Сразиться",
+						"Ты не позволишь этому вору ускользнуть!",
 						Main.game.getNpc(Lumi.class),
 						Util.newHashMapOfValues(
 								new Value<>(Main.game.getPlayer(), UtilText.parseFromXMLFile("characters/dominion/lumi", "LUMI_COMBAT_PC_OPENING")),
@@ -200,11 +200,11 @@ public class LumiDialogue {
 		}
 	};
 	
-	public static final DialogueNode COMBAT_PLAYER_LOSS = new DialogueNode("Alleyways", "", true) {
+	public static final DialogueNode COMBAT_PLAYER_LOSS = new DialogueNode("Переулки", "", true) {
 
 		@Override
 		public String getAuthor() {
-			return "Nnxx";
+			return "Ннхх";
 		}
 		
 		@Override
@@ -215,7 +215,7 @@ public class LumiDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index == 1) {
-				return new Response("Continue", "Carry on your way...", null){
+				return new Response("Продолжить", "Продолжить путь...", null){
 					@Override
 					public DialogueNode getNextDialogue() {
 						return Main.game.getDefaultDialogue(false);
@@ -232,11 +232,11 @@ public class LumiDialogue {
 		}
 	};
 	
-	public static final DialogueNode COMBAT_PLAYER_WIN = new DialogueNode("Alleyways", "", true) {
+	public static final DialogueNode COMBAT_PLAYER_WIN = new DialogueNode("Переулки", "", true) {
 
 		@Override
 		public String getAuthor() {
-			return "Nnxx";
+			return "Ннхх";
 		}
 		
 		@Override
@@ -247,7 +247,7 @@ public class LumiDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Recover money", "Just pick your money up and leave without making a fuss.", COMBAT_PLAYER_WIN_RECOVER_MONEY) {
+				return new Response("Вернуть деньги", "Просто забрать свои деньги и уйти, не поднимая шума.", COMBAT_PLAYER_WIN_RECOVER_MONEY) {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().incrementMoney(moneyStolen);
@@ -255,8 +255,8 @@ public class LumiDialogue {
 				};
 				
 			} else if (index == 2 && Main.getProperties().hasValue(PropertyValue.nonConContent)) {
-				return new ResponseSex("Take advantage",
-						"Now that she's been subdued, it's time to have some fun with this helpless wolf-girl!",
+				return new ResponseSex("Воспользоваться случаем",
+						"Теперь, когда она покорена, самое время повеселиться с этой беспомощной волчьей девчонкой!",
 						false, false,
 						new SMLyingDown(
 								Util.newHashMapOfValues(new Value<>(Main.game.getPlayer(), SexSlotLyingDown.MISSIONARY)),
@@ -283,11 +283,11 @@ public class LumiDialogue {
 		}
 	};
 	
-	public static final DialogueNode AFTER_SEX = new DialogueNode("Alleyways", "", true, true) {
+	public static final DialogueNode AFTER_SEX = new DialogueNode("Переулки", "", true, true) {
 
 		@Override
 		public String getAuthor() {
-			return "Nnxx";
+			return "Ннхх";
 		}
 		
 		@Override
@@ -298,7 +298,7 @@ public class LumiDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index == 1) {
-				return new Response("Continue", "Carry on your way...", null){
+				return new Response("Продолжить", "Продолжить путь...", null){
 					@Override
 					public DialogueNode getNextDialogue() {
 						return Main.game.getDefaultDialogue(false);
@@ -315,11 +315,11 @@ public class LumiDialogue {
 		}
 	};
 	
-	public static final DialogueNode COMBAT_PLAYER_WIN_RECOVER_MONEY = new DialogueNode("Alleyways", "", true, true) {
+	public static final DialogueNode COMBAT_PLAYER_WIN_RECOVER_MONEY = new DialogueNode("Переулки", "", true, true) {
 
 		@Override
 		public String getAuthor() {
-			return "Nnxx";
+			return "Ннхх";
 		}
 		
 		@Override
@@ -330,7 +330,7 @@ public class LumiDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index == 1) {
-				return new Response("Continue", "Carry on your way...", null){
+				return new Response("Продолжить", "Продолжить путь...", null){
 					@Override
 					public DialogueNode getNextDialogue() {
 						return Main.game.getDefaultDialogue(false);
@@ -347,11 +347,11 @@ public class LumiDialogue {
 		}
 	};
 	
-	public static final DialogueNode COMBAT_PLAYER_WIN_TAKE_ADVANTAGE = new DialogueNode("Alleyways", "", true, true) {
+	public static final DialogueNode COMBAT_PLAYER_WIN_TAKE_ADVANTAGE = new DialogueNode("Переулки", "", true, true) {
 
 		@Override
 		public String getAuthor() {
-			return "Nnxx";
+			return "Ннхх";
 		}
 		
 		@Override
@@ -362,7 +362,7 @@ public class LumiDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index == 1) {
-				return new Response("Continue", "Carry on your way...", null){
+				return new Response("Продолжить", "Продолжить путь...", null){
 					@Override
 					public DialogueNode getNextDialogue() {
 						return Main.game.getDefaultDialogue(false);
@@ -379,11 +379,11 @@ public class LumiDialogue {
 		}
 	};
 	
-	public static final DialogueNode LUMI_CAUGHT_TALK = new DialogueNode("Alleyways", "", true, true) {
+	public static final DialogueNode LUMI_CAUGHT_TALK = new DialogueNode("Переулки", "", true, true) {
 
 		@Override
 		public String getAuthor() {
-			return "Nnxx";
+			return "Ннхх";
 		}
 		
 		@Override
@@ -394,7 +394,7 @@ public class LumiDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index == 1) {
-				return new Response("Give", "Let Lumi keep the money that she stole from you, and tell her how to make the most of it.", LUMI_CAUGHT_TALK_GIVE_MONEY) {
+				return new Response("Отдать", "Позволить Люми оставить украденные у тебя деньги и подсказать ей, как распорядиться ими с наибольшей пользой.", LUMI_CAUGHT_TALK_GIVE_MONEY) {
 					@Override
 					public void effects() {
 						Main.game.getNpc(Lumi.class).setPlayerKnowsName(true);
@@ -403,7 +403,7 @@ public class LumiDialogue {
 				};
 				
 			} else if(index == 2) {
-				return new Response("Ask", "Ask Lumi to return the money that she stole from you.", LUMI_CAUGHT_TALK_ASK_FOR_MONEY_BACK) {
+				return new Response("Спросить", "Попросить Люми вернуть деньги, которые она у тебя украла.", LUMI_CAUGHT_TALK_ASK_FOR_MONEY_BACK) {
 					@Override
 					public void effects() {
 						Main.game.getNpc(Lumi.class).setPlayerKnowsName(true);
@@ -414,7 +414,7 @@ public class LumiDialogue {
 				};
 				
 			} else if(index == 3) {
-				return new Response("Threaten", "Discipline this thief! You get the feeling that if you were to do this, you'd never see her again.", LUMI_CAUGHT_TALK_THREATEN){
+				return new Response("Угрожать", "Проучить эту воровку! У тебя возникает предчувствие, что если ты сделаешь это, то больше её никогда не увидишь.", LUMI_CAUGHT_TALK_THREATEN){
 					@Override
 					public void effects() {
 						Main.game.getDialogueFlags().setFlag(DialogueFlagValue.lumiDisabled, true);
@@ -427,11 +427,11 @@ public class LumiDialogue {
 		}
 	};
 	
-	public static final DialogueNode LUMI_CAUGHT_TALK_GIVE_MONEY = new DialogueNode("Alleyways", "", true, true) {
+	public static final DialogueNode LUMI_CAUGHT_TALK_GIVE_MONEY = new DialogueNode("Переулки", "", true, true) {
 
 		@Override
 		public String getAuthor() {
-			return "Nnxx";
+			return "Ннхх";
 		}
 		
 		@Override
@@ -442,7 +442,7 @@ public class LumiDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index == 1) {
-				return new Response("Continue", "Carry on your way...", null){
+				return new Response("Продолжить", "Продолжить путь...", null){
 					@Override
 					public DialogueNode getNextDialogue() {
 						return Main.game.getDefaultDialogue(false);
@@ -455,11 +455,11 @@ public class LumiDialogue {
 		}
 	};
 	
-	public static final DialogueNode LUMI_CAUGHT_TALK_ASK_FOR_MONEY_BACK = new DialogueNode("Alleyways", "", true, true) {
+	public static final DialogueNode LUMI_CAUGHT_TALK_ASK_FOR_MONEY_BACK = new DialogueNode("Переулки", "", true, true) {
 
 		@Override
 		public String getAuthor() {
-			return "Nnxx";
+			return "Ннхх";
 		}
 		
 		@Override
@@ -470,7 +470,7 @@ public class LumiDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index == 1) {
-				return new Response("Continue", "Carry on your way...", null){
+				return new Response("Продолжить", "Продолжить путь...", null){
 					@Override
 					public DialogueNode getNextDialogue() {
 						return Main.game.getDefaultDialogue(false);
@@ -483,11 +483,11 @@ public class LumiDialogue {
 		}
 	};
 	
-	public static final DialogueNode LUMI_CAUGHT_TALK_THREATEN = new DialogueNode("Alleyways", "", true, true) {
+	public static final DialogueNode LUMI_CAUGHT_TALK_THREATEN = new DialogueNode("Переулки", "", true, true) {
 
 		@Override
 		public String getAuthor() {
-			return "Nnxx";
+			return "Ннхх";
 		}
 		
 		@Override
@@ -498,7 +498,7 @@ public class LumiDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index == 1) {
-				return new Response("Continue", "Carry on your way...", null){
+				return new Response("Продолжить", "Продолжить путь...", null){
 					@Override
 					public DialogueNode getNextDialogue() {
 						return Main.game.getDefaultDialogue(false);
@@ -517,11 +517,11 @@ public class LumiDialogue {
 	
 	
 	
-	public static final DialogueNode LUMI_APPEARS_REPEAT_ENCOUNTER = new DialogueNode("Alleyways", "", true, true) {
+	public static final DialogueNode LUMI_APPEARS_REPEAT_ENCOUNTER = new DialogueNode("Переулки", "", true, true) {
 
 		@Override
 		public String getAuthor() {
-			return "Nnxx";
+			return "Ннхх";
 		}
 		
 		@Override

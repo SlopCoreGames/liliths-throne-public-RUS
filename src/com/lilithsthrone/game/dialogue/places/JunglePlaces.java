@@ -10,14 +10,14 @@ import com.lilithsthrone.game.dialogue.responses.Response;
  */
 public class JunglePlaces {
 
-	public static final DialogueNode PATH = new DialogueNode("Jungle path", "", false) {
+	public static final DialogueNode PATH = new DialogueNode("Тропа в джунглях", "", false) {
 		/**
 		 * 
 		 */
 
 		@Override
 		public String getContent() {
-			return "TODO Walking down a narrow path...";
+			return "TODO Вы идете по узкой тропе...";
 		}
 
 		@Override
@@ -26,23 +26,7 @@ public class JunglePlaces {
 		}
 	};
 
-	public static final DialogueNode CLUB = new DialogueNode("Club", "A place.", false) {
-		/**
-		 * 
-		 */
-
-		@Override
-		public String getContent() {
-			return "TODO";
-		}
-
-		@Override
-		public Response getResponse(int responseTab, int index) {
-			return null;
-		}
-	};
-
-	public static final DialogueNode BROTHEL = new DialogueNode("Brothel", "A place.", false) {
+	public static final DialogueNode CLUB = new DialogueNode("Клуб", "Место.", false) {
 		/**
 		 * 
 		 */
@@ -58,7 +42,7 @@ public class JunglePlaces {
 		}
 	};
 
-	public static final DialogueNode TENTACLE_QUEENS_LAIR = new DialogueNode("Tentacle Queen's Lair", "A place.", false) {
+	public static final DialogueNode BROTHEL = new DialogueNode("Бордель", "Место.", false) {
 		/**
 		 * 
 		 */
@@ -74,7 +58,23 @@ public class JunglePlaces {
 		}
 	};
 
-	public static final DialogueNode DENSE_JUNGLE = new DialogueNode("Dense Jungle", "A place.", false) {
+	public static final DialogueNode TENTACLE_QUEENS_LAIR = new DialogueNode("Логово Королевы Тентаклей", "Место.", false) {
+		/**
+		 * 
+		 */
+
+		@Override
+		public String getContent() {
+			return "TODO";
+		}
+
+		@Override
+		public Response getResponse(int responseTab, int index) {
+			return null;
+		}
+	};
+
+	public static final DialogueNode DENSE_JUNGLE = new DialogueNode("Густые джунгли", "Место.", false) {
 		/**
 		 * 
 		 */
@@ -92,19 +92,19 @@ public class JunglePlaces {
 
 	// Entrances and exits:
 
-	public static final DialogueNode JUNGLE_ENTRANCE = new DialogueNode("", "Travel to Dominion.", false) {
+	public static final DialogueNode JUNGLE_ENTRANCE = new DialogueNode("", "Отправиться в Dominion.", false) {
 		/**
 		 * 
 		 */
 
 		@Override
 		public String getContent() {
-			return "A half-overgrown sign near the road tells you that this path leads back to Dominion.";
+			return "Полузаросший указатель у дороги сообщает, что эта тропа ведет обратно в Dominion.";
 		}
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Dominion", "Travel to Dominion. (This will be added later!)", null);
+				return new Response("Dominion", "Отправиться в Dominion. (Будет добавлено позже!)", null);
 
 			} else {
 				return null;

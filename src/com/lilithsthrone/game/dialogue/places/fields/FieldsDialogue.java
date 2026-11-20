@@ -41,9 +41,9 @@ public class FieldsDialogue {
 				if(sb.length()>0) {
 					sb.append("<br/>");
 				} else {
-					sb.append("<p style='text-align:center;'>[style.boldBad(Travel Restricted)]<br/>[style.italicsMinorBad(");
+					sb.append("<p style='text-align:center;'>[style.boldBad(Путешествие ограничено)]<br/>[style.italicsMinorBad(, ");
 				}
-				sb.append("You cannot currently travel <b>"+entry.getKey().getName()+"</b> into the "+entry.getValue().getPlace().getName()+"!");
+				sb.append("В данный момент вы не можете отправиться из <b>"+entry.getKey().getName()+"</b> в "+entry.getValue().getPlace().getName()+"!");
 				
 			}
 		}
@@ -66,7 +66,7 @@ public class FieldsDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Prepare", "Prepare yourself for whatever is about to appear!", DOMINION_EXTERIOR_FIRST_TIME_LEAVING_MERAXIS);
+				return new Response("Приготовиться", "Приготовься к тому, что вот-вот появится!", DOMINION_EXTERIOR_FIRST_TIME_LEAVING_MERAXIS);
 			}
 			return null;
 		}
@@ -89,14 +89,14 @@ public class FieldsDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Decline", "Tell Meraxis that you aren't interested in duelling her.", DOMINION_EXTERIOR_FIRST_TIME_LEAVING_MERAXIS_DECLINED);
+				return new Response("Отклонить", "Сказать Мераксис, что вы не заинтересованы в дуэли с ней.", DOMINION_EXTERIOR_FIRST_TIME_LEAVING_MERAXIS_DECLINED);
 				
 			} else if (index == 2) {
 				//TODO chuuni variation
-				return new Response("Accept", "Agree to duel Meraxis.", null);
+				return new Response("Принять", "Согласиться на дуэль с Мераксис.", null);
 				
 			} else if (index == 3) {//TODO need more ways to have sex with Meraxis
-				return new Response("Sex duel", "Offer Meraxis an alternative way to duel; the two of you have sex, and whoever orgasms first loses!", null);
+				return new Response("Секс-дуэль", "Предложить Мераксис альтернативный способ дуэли: вы занимаетесь сексом, и тот, кто испытает оргазм первым, проигрывает!", null);
 			}
 			return null;
 		}
@@ -118,7 +118,7 @@ public class FieldsDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Continue", "With Meraxis having given her warning and departed, you're free to continue on your way out into the Fields.", Main.game.getDefaultDialogue(false));
+				return new Response("Продолжить", "Мераксис предупредила вас и ушла, так что вы вольны продолжить свой путь на поля.", Main.game.getDefaultDialogue(false));
 			}
 			return null;
 		}
@@ -136,7 +136,7 @@ public class FieldsDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new ResponseEffectsOnly("City centre", "Head into the centre of Dominion.") {
+				return new ResponseEffectsOnly("Центр города", "Направиться в центр Dominion.") {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setLocation(
@@ -154,7 +154,7 @@ public class FieldsDialogue {
 		}
 	};
 	
-	public static final DialogueNode FOLOI_FIELDS = new DialogueNode("Foloi Fields", "", false) {
+	public static final DialogueNode FOLOI_FIELDS = new DialogueNode("Поля Фолой", "", false) {
 		@Override
 		public int getSecondsPassed() {
 			if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.hasSnowedThisWinter)
@@ -181,7 +181,7 @@ public class FieldsDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(Main.game.getPlayer().getLocation().increment(0, -1).equals(Main.game.getWorlds().get(WorldType.WORLD_MAP).getCell(PlaceType.WORLD_MAP_DOMINION).getLocation())) {
 				if (index == 1) {
-					return new Response("Depot", "Approach the 'Centaur Carriage Depot' and see if any businesses are still operating out of it.", DialogueManager.getDialogueFromId("innoxia_places_fields_centaur_transport_approach")) {
+					return new Response("Депо", "Подойти к «Депо кентавров» и посмотреть, работает ли там еще какой-нибудь бизнес.", DialogueManager.getDialogueFromId("innoxia_places_fields_centaur_transport_approach")) {
 						@Override
 						public void effects() {
 							Main.game.getPlayerCell().getPlace().setPlaceType(PlaceType.getPlaceTypeFromId("innoxia_fields_centaur_transport"));
@@ -192,8 +192,8 @@ public class FieldsDialogue {
 			} else {
 				if (index == 1) {
 					return new ResponseEffectsOnly(
-							"Explore",
-							"Take some time to explore the fields. Although you don't think you're any more or less likely to find anything by doing this, at least you won't have to keep travelling back and forth..."){
+							"Исследовать",
+							"Уделить время исследованию полей. Хотя вы и не думаете, что это повысит или понизит ваши шансы что-то найти, по крайней мере, вам не придется постоянно мотаться туда-сюда..."){
 							@Override
 							public int getSecondsPassed() {
 								return 30*60;
@@ -210,7 +210,7 @@ public class FieldsDialogue {
 		}
 	};
 	
-	public static final DialogueNode FOLOI_FOREST = new DialogueNode("Foloi Forest", "", false) {
+	public static final DialogueNode FOLOI_FOREST = new DialogueNode("Лес Фолои", "", false) {
 		@Override
 		public int getSecondsPassed() {
 			return 60 * 60;
@@ -240,7 +240,7 @@ public class FieldsDialogue {
 		}
 	};
 	
-	public static final DialogueNode GRASSLAND_WILDERNESS = new DialogueNode("Grassland Wilderness", "", false) {
+	public static final DialogueNode GRASSLAND_WILDERNESS = new DialogueNode("Дикие луга", "", false) {
 		@Override
 		public int getSecondsPassed() {
 			return 60 * 60;
@@ -259,8 +259,8 @@ public class FieldsDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
 				return new ResponseEffectsOnly(
-						"Explore",
-						"Explore some of the valleys and see what you can find. Although you don't think you're any more or less likely to find anything by doing this, at least you won't have to keep travelling back and forth..."){
+						"Исследовать",
+						"Исследовать долины и посмотреть, что удастся найти. Хотя вы и не думаете, что это повысит или понизит ваши шансы что-то найти, по крайней мере, вам не придется постоянно мотаться туда-сюда..."){
 						@Override
 						public int getSecondsPassed() {
 							return 30*60;
@@ -278,7 +278,7 @@ public class FieldsDialogue {
 		}
 	};
 	
-	public static final DialogueNode RIVER_HUBUR = new DialogueNode("River Hubur", "", false) {
+	public static final DialogueNode RIVER_HUBUR = new DialogueNode("Река Хубур", "", false) {
 		@Override
 		public int getSecondsPassed() {
 			return 30 * 60;
@@ -298,8 +298,8 @@ public class FieldsDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
 				return new ResponseEffectsOnly(
-						"Explore",
-						"Take some time to explore the shores of the river. Although you don't think you're any more or less likely to find anything by doing this, at least you won't have to keep travelling back and forth..."){
+						"Исследовать",
+						"Уделить время исследованию берегов реки. Хотя вы и не думаете, что это повысит или понизит ваши шансы что-то найти, по крайней мере, вам не придется постоянно мотаться туда-сюда..."){
 						@Override
 						public int getSecondsPassed() {
 							return 30*60;
@@ -317,7 +317,7 @@ public class FieldsDialogue {
 		}
 	};
 	
-	public static final DialogueNode ELIS = new DialogueNode("Elis", "", false) {
+	public static final DialogueNode ELIS = new DialogueNode("Элис", "", false) {
 		@Override
 		public int getSecondsPassed() {
 			return 30 * 60;
@@ -336,7 +336,7 @@ public class FieldsDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Enter (main)", "Approach Elis from the East so that you can enter the town via its main gatehouse.", DialogueManager.getDialogueFromId("innoxia_places_fields_elis_generic_road_east")) {
+				return new Response("Войти (главный)", "Подойти к Элис с востока, чтобы войти в город через главные ворота.", DialogueManager.getDialogueFromId("innoxia_places_fields_elis_generic_road_east")) {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setLocation(WorldType.getWorldTypeFromId("innoxia_fields_elis_town"), PlaceType.getPlaceTypeFromId("innoxia_fields_elis_town_entry_east"));
@@ -349,7 +349,7 @@ public class FieldsDialogue {
 				};
 				
 			} else if (index == 2) {
-				return new Response("Enter (rear)", "Approach Elis from the West so that you can enter the town via its rear gatehouse.", DialogueManager.getDialogueFromId("innoxia_places_fields_elis_generic_road_west")) {
+				return new Response("Войти (с тыла)", "Подойдите к Элис с запада, чтобы войти в город через задние ворота.", DialogueManager.getDialogueFromId("innoxia_places_fields_elis_generic_road_west")) {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setLocation(WorldType.getWorldTypeFromId("innoxia_fields_elis_town"), PlaceType.getPlaceTypeFromId("innoxia_fields_elis_town_entry_west"));

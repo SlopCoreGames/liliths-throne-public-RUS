@@ -72,7 +72,7 @@ public class GamblingDenDialogue {
 	
 	private static final int REWARD_AMOUNT = 50_000;
 	
-	public static final DialogueNode ENTRANCE = new DialogueNode("Entrance", "", false) {
+	public static final DialogueNode ENTRANCE = new DialogueNode("Вход", "", false) {
 		@Override
 		public boolean isTravelDisabled() {
 			return !Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.axelIntroduced)
@@ -95,7 +95,7 @@ public class GamblingDenDialogue {
 		public Response getResponse(int responseTab, int index) {
 			 if(Main.game.getPlayer().getQuest(QuestLine.SIDE_VENGAR)==Quest.VENGAR_THREE_END) {
 				if(index==1) {
-					return new Response("Continue", "[axel.Name] lets out a deep sigh and turns back towards you.", AXEL_VENGAR_RESOLUTION) {
+					return new Response("Продолжить", "[axel.Name] глубоко вздыхает и поворачивается к тебе.", AXEL_VENGAR_RESOLUTION) {
 						@Override
 						public void effects() {
 							Main.game.getTextEndStringBuilder().append(Main.game.getPlayer().setQuestProgress(QuestLine.SIDE_VENGAR, Quest.SIDE_UTIL_COMPLETE));
@@ -108,7 +108,7 @@ public class GamblingDenDialogue {
 			} else {
 				if(index==1) {
 					if(!Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.axelIntroduced)) {
-						return new Response("Continue", "Set off to explore the Gambling Den.", ENTRANCE){
+						return new Response("Продолжить", "Отправиться исследовать Игорный притон.", ENTRANCE){
 							@Override
 							public void effects() {
 								Main.game.getDialogueFlags().setFlag(DialogueFlagValue.axelIntroduced, true);
@@ -116,7 +116,7 @@ public class GamblingDenDialogue {
 						};
 						
 					} else {
-						return new Response("Leave", "Push open the doors and step back out into Submission.", SubmissionGenericPlaces.GAMBLING_DEN){
+						return new Response("Уйти", "Толкнуть двери и выйти обратно в Submission.", SubmissionGenericPlaces.GAMBLING_DEN){
 							@Override
 							public void effects() {
 								Main.game.getDialogueFlags().setFlag(DialogueFlagValue.axelIntroduced, true);
@@ -126,7 +126,7 @@ public class GamblingDenDialogue {
 					}
 					
 				} else if(index==2) {
-					return new Response("[axel.name]", "Walk over to [axel.name] and say hello.", AXEL){
+					return new Response("[axel.name]", "Подойти к [axel.name] и поздороваться.", AXEL){
 						@Override
 						public void effects() {
 							Main.game.getDialogueFlags().setFlag(DialogueFlagValue.axelIntroduced, true);
@@ -150,7 +150,7 @@ public class GamblingDenDialogue {
 		}
 	};
 	
-	public static final DialogueNode OFFICE = new DialogueNode("[axel.name]'s Office", "", false) {
+	public static final DialogueNode OFFICE = new DialogueNode("Кабинет [axel.name]", "", false) {
 		
 		@Override
 		public String getContent() {
@@ -163,7 +163,7 @@ public class GamblingDenDialogue {
 		}
 	};
 
-	public static final DialogueNode OFFICE_WITH_AXEL = new DialogueNode("[axel.name]'s Office", "", true) {
+	public static final DialogueNode OFFICE_WITH_AXEL = new DialogueNode("Кабинет [axel.name]", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			Main.game.getPlayer().setLocation(WorldType.GAMBLING_DEN, PlaceType.GAMBLING_DEN_OFFICE);
@@ -184,11 +184,11 @@ public class GamblingDenDialogue {
 				boolean attracted = Main.game.getNpc(Axel.class).isAttractedTo(Main.game.getPlayer());
 				if(index==1) {
 					if(!attracted) {
-						return new Response("Dominate", "[axel.name] is not willing to have sex with you, as [axel.she] is only attracted to masculine people.", null);
+						return new Response("Доминировать", "[axel.name] не хочет заниматься с тобой сексом, так как [axel.she] привлекают только маскулинные люди.", null);
 					}
 					return new ResponseSex(
-							"Dominate",
-							"Tell [axel.name] that you're going to dominate [axel.herHim]...",
+							"Доминировать",
+							"Сказать [axel.name], что ты собираешься доминировать над [axel.herHim]...",
 							true,
 							true,
 							new SexManagerDefault(
@@ -204,11 +204,11 @@ public class GamblingDenDialogue {
 					
 				} else if(index==2) {
 					if(!attracted) {
-						return new Response("Submit", "[axel.name] is not willing to have sex with you, as [axel.she] is only attracted to masculine people.", null);
+						return new Response("Подчиниться", "[axel.name] не хочет заниматься с тобой сексом, так как [axel.she] привлекают только маскулинные люди.", null);
 					}
 					return new ResponseSex(
-							"Submit",
-							"Tell [axel.name] that [axel.sheIs] going to do [axel.her] best at dominating you...",
+							"Подчиниться",
+							"Сказать [axel.name], что [axel.sheIs] сделает [axel.her] всё возможное, чтобы подчинить тебя...",
 							true,
 							true,
 							new SexManagerDefault(
@@ -225,9 +225,8 @@ public class GamblingDenDialogue {
 				} else if(index==3) {
 					// Cage on/off
 					if(Main.game.getNpc(Axel.class).getClothingInSlot(InventorySlot.PENIS)!=null) {
-						return new Response("Cage: [style.colourMinorGood(Equipped)]",
-								"[axel.Name] is currently wearing [axel.her] chastity cage. You could take it off of [axel.herHim], if you wanted to..."
-										+ "<br/>[style.italicsMinorGood(You can freely equip and remove [axel.namePos] cage at any time.)]",
+						return new Response("Клетка: [style.colourMinorGood(Надета)]",
+								"На [axel.Name] сейчас надета [axel.her] девственная клетка. Ты мог бы снять её с [axel.herHim], если захочешь...<br/>[style.italicsMinorGood(Вы можете свободно надевать и снимать клетку [axel.namePos] в любое время.)]",
 								OFFICE_WITH_LEXA_CAGE) {
 							@Override
 							public void effects() {
@@ -237,9 +236,8 @@ public class GamblingDenDialogue {
 						};
 						
 					} else {
-						return new Response("Cage: [style.colourMinorBad(Unequipped)]",
-								"[axel.Name] is currently not wearing [axel.her] chastity cage. You could change that, if you wanted to..."
-										+ "<br/>[style.italicsMinorGood(You can freely equip and remove [axel.namePos] cage at any time.)]",
+						return new Response("Клетка: [style.colourMinorBad(Не надета)]",
+								"На [axel.Name] сейчас нет [axel.her] девственной клетки. Ты мог бы это исправить, если захочешь...<br/>[style.italicsMinorGood(Вы можете свободно надевать и снимать клетку [axel.namePos] в любое время.)]",
 								OFFICE_WITH_LEXA_CAGE) {
 							@Override
 							public void effects() {
@@ -251,24 +249,22 @@ public class GamblingDenDialogue {
 					
 				} else if(index==6) {
 					if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.axelFeminised)) {
-						return new Response("Clothing",
-								"Tell [axel.name] that [axel.she] should change the sort of outfit [axel.she] chooses to wear.",
+						return new Response("Одежда",
+								"Сказать [axel.name], что [axel.she] стоит сменить стиль одежды, которую выбирает [axel.she].",
 								OFFICE_WITH_LEXA_CLOTHING);
 					}
-					return new Response("Feminise",
-							"Tell [axel.name] that you're going to help [axel.herHim] realise [axel.her] full potential and fully feminise [axel.herHim]."
-									+ "<br/>[style.italicsArcane(This is a permanent, non-reversible transformation!)]",
+					return new Response("Феминизация",
+							"Сказать [axel.name], что ты собираешься помочь [axel.herHim] реализовать [axel.her] полный потенциал и полностью феминизировать [axel.herHim].<br/>[style.italicsArcane(Это постоянная, необратимая трансформация!)]",
 							OFFICE_WITH_LEXA_FEMINISE);
 					
 				} else if(index==7
 						&& Main.game.getPlayer().isFeminine()
 						&& !Main.game.getNpc(Axel.class).getSexualOrientation().isAttractedToFeminine()) {
 					if(!Main.game.getPlayer().hasItemType(ItemType.ORIENTATION_HYPNO_WATCH)) {
-						return new Response("Hypno-watch", "You do not have a hypno-watch, so cannot make [axel.name] ambiphilic...", null);
+						return new Response("Гипно-часы", "У тебя нет гипно-часов, поэтому ты не можешь сделать [axel.name] амбифилом...", null);
 					}
-					return new Response("Hypno-watch",
-							"Use your hypno-watch to make [axel.name] ambiphilic."
-									+ "<br/>[style.italicsArcane(This is a permanent, non-reversible change!)]",
+					return new Response("Гипно-часы",
+							"Использовать гипно-часы, чтобы сделать [axel.name] амбифилом.<br/>[style.italicsArcane(Это постоянное, необратимое изменение!)]",
 							OFFICE_WITH_LEXA_HYPNO) {
 						@Override
 						public void effects() {
@@ -277,7 +273,7 @@ public class GamblingDenDialogue {
 					};
 					
 				} else if(index==0) {
-					return new Response("Leave", "Decide against doing anything with [axel.name] and head back into the gambling den.", ENTRANCE) {
+					return new Response("Уйти", "Решить ничего не делать с [axel.name] и вернуться в игорный притон.", ENTRANCE) {
 						@Override
 						public void effects() {
 							Main.game.getPlayer().setLocation(WorldType.GAMBLING_DEN, PlaceType.GAMBLING_DEN_ENTRANCE);
@@ -291,8 +287,8 @@ public class GamblingDenDialogue {
 			} else {
 				if(index==1) {
 					return new ResponseSex(
-							"Dominate",
-							"Tell [axel.name] that you're going to dominate [axel.herHim]...",
+							"Доминировать",
+							"Сказать [axel.name], что ты собираешься доминировать над [axel.herHim]...",
 							true,
 							true,
 							new SexManagerDefault(
@@ -308,8 +304,8 @@ public class GamblingDenDialogue {
 					
 				} else if(index==2) {
 					return new ResponseSex(
-							"Submit",
-							"Tell [axel.name] that [axel.sheIs] going to do [axel.her] best at dominating you...",
+							"Подчиниться",
+							"Сказать [axel.name], что [axel.sheIs] сделает [axel.her] всё возможное, чтобы подчинить тебя...",
 							true,
 							true,
 							new SexManagerDefault(
@@ -325,11 +321,11 @@ public class GamblingDenDialogue {
 					
 				} else if(index==6) {
 					if(!Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.MOUTH, true)) {
-						return new Response("Give blowjob", "You are unable to gain access to your mouth, so cannot suck [axel.namePos] cock...", null);
+						return new Response("Отсосать", "Вы не можете дотянуться до своего рта, поэтому не можете сосать член [axel.namePos]...", null);
 					}
 					return new ResponseSex(
-							"Give blowjob",
-							"Start having sex with [axel.name] by dropping down onto your knees and starting to suck his cock...",
+							"Отсосать",
+							"Начать заниматься сексом с [axel.name]: опуститься на колени и начать сосать его член...",
 							true,
 							true,
 							new SMAxel(
@@ -356,13 +352,13 @@ public class GamblingDenDialogue {
 					boolean pussyAccess = Main.game.getPlayer().hasVagina() && Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.VAGINA, true);
 					
 					if(!cockAccess && !pussyAccess) {
-						return new Response("Receive oral", "You do not have any genitalia which [axel.name] can access in order to perform oral on you...", null);
+						return new Response("Принять минет", "У вас нет гениталий, к которым [axel.name] мог бы прикоснуться, чтобы отсосать вам...", null);
 					}
 					return new ResponseSex(
-							"Receive oral",
+							"Принять минет",
 							cockAccess
-								?"Start having sex with [axel.name] by getting him to drop down onto his knees and suck your cock..."
-								:"Start having sex with [axel.name] by getting him to drop down onto his knees and perform cunnilingus on you...",
+								?"Начать заниматься сексом с [axel.name]: заставить его опуститься на колени и сосать ваш член..."
+								:"Начать заниматься сексом с [axel.name]: заставить его опуститься на колени и отсосать вам...",
 							true,
 							true,
 							new SMAxel(
@@ -394,11 +390,11 @@ public class GamblingDenDialogue {
 					
 				} else if(index==8 && Main.game.isAnalContentEnabled()) {
 					if(!Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.MOUTH, true)) {
-						return new Response("Perform anilingus", "You are unable to gain access to your mouth, so cannot perform anilingus on [axel.name]...", null);
+						return new Response("Заняться анилингусом", "Вы не можете дотянуться до своего рта, поэтому не можете отлизать анус [axel.name]...", null);
 					}
 					return new ResponseSex( 
-							"Perform anilingus",
-							"Start having sex with [axel.name] by getting him to bend over his desk so that you can perform anilingus on him...",
+							"Заняться анилингусом",
+							"Начать заниматься сексом с [axel.name]: заставить его наклониться над столом, чтобы вы могли отлизать ему анус...",
 							true,
 							true,
 							new SMAxel(
@@ -423,11 +419,11 @@ public class GamblingDenDialogue {
 					
 				} else if(index==9 && Main.game.isAnalContentEnabled()) {
 					if(!Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.ANUS, true)) {
-						return new Response("Receive anilingus", "You cannot gain access to your asshole, so [axel.name] cannot perform anilingus on you...", null);
+						return new Response("Получить анилингус", "Вы не можете получить доступ к своему анусу, поэтому [axel.name] не может отлизать вам...", null);
 					}
 					return new ResponseSex(
-							"Receive anilingus",
-							"Start having sex with [axel.name] by getting him to perform anilingus on you...",
+							"Получить анилингус",
+							"Начать заниматься сексом с [axel.name], заставив его делать тебе анилингус...",
 							true,
 							true,
 							new SMAxel(
@@ -459,7 +455,7 @@ public class GamblingDenDialogue {
 					};
 					
 				} else if(index==0) {
-					return new Response("Leave", "Decide against doing anything with [axel.name] and head back into the gambling den.", ENTRANCE) {
+					return new Response("Уйти", "Решить ничего не делать с [axel.name] и вернуться в игорный притон.", ENTRANCE) {
 						@Override
 						public void effects() {
 							Main.game.getPlayer().setLocation(WorldType.GAMBLING_DEN, PlaceType.GAMBLING_DEN_ENTRANCE);
@@ -491,7 +487,7 @@ public class GamblingDenDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Leave", "Leave [axel.namePos] office and head back into the gambling den.", ENTRANCE) {
+				return new Response("Уйти", "Выйти из кабинета [axel.namePos] и вернуться в игорный притон.", ENTRANCE) {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setLocation(WorldType.GAMBLING_DEN, PlaceType.GAMBLING_DEN_ENTRANCE);
@@ -549,8 +545,8 @@ public class GamblingDenDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Drink (No supplement)",
-						"Get [axel.name] to drink the potion and none of the supplement, feminising [axel.herHim] and allowing [axel.her] cock to shrink to a tiny little clit-dick.",
+				return new Response("Выпить (Без добавки)",
+						"Заставить [axel.name] выпить зелье без добавки, что феминизирует [axel.herHim] и заставит член [axel.her] уменьшиться до крошечного клиторо-члена.",
 						OFFICE_WITH_LEXA_FEMINISE_APPLY) {
 					@Override
 					public void effects() {
@@ -561,8 +557,8 @@ public class GamblingDenDialogue {
 				};
 				
 			} else if(index==2) {
-				return new Response("Drink (Half supplement)",
-						"Get [axel.name] to drink both the potion and half of the supplement, feminising [axel.herHim] while also keeping [axel.her] cock at an average size.",
+				return new Response("Выпить (Половина добавки)",
+						"Заставить [axel.name] выпить зелье и половину добавки, что феминизирует [axel.herHim], но оставит член [axel.her] среднего размера.",
 						OFFICE_WITH_LEXA_FEMINISE_APPLY) {
 					@Override
 					public void effects() {
@@ -573,8 +569,8 @@ public class GamblingDenDialogue {
 				};
 				
 			} else if(index==3) {
-				return new Response("Drink (Full supplement)",
-						"Get [axel.name] to drink both the potion and the supplement, feminising [axel.herHim] while also growing [axel.her] cock back to how it used to be.",
+				return new Response("Выпить (Полная добавка)",
+						"Заставить [axel.name] выпить зелье вместе с полной добавкой, что феминизирует [axel.herHim], но вернет член [axel.her] к прежним размерам.",
 						OFFICE_WITH_LEXA_FEMINISE_APPLY) {
 					@Override
 					public void effects() {
@@ -585,8 +581,8 @@ public class GamblingDenDialogue {
 				};
 				
 			} else if(index==0) {
-				return new Response("Back out",
-						"Decide against feminising [axel.name] and decide upon something else to do in [axel.her] office.",
+				return new Response("Назад",
+						"Решить не феминизировать [axel.name] и выбрать другое занятие в кабинете [axel.her].",
 						OFFICE_WITH_LEXA_FEMINISE_BACK_OUT);
 			}
 			return null;
@@ -622,8 +618,8 @@ public class GamblingDenDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Agree",
-						"You see no reason not to help [axel.name] choose what clothing to wear.",
+				return new Response("Согласиться",
+						"Вы не видите причин не помочь [axel.name] выбрать, какую одежду надеть.",
 						OFFICE_WITH_LEXA_FEMINISE_APPLY_CLOTHING);
 			}
 			return null;
@@ -643,8 +639,8 @@ public class GamblingDenDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Feminine",
-						"Tell [axel.name] to start wearing feminine dresses.",
+				return new Response("Женственные",
+						"Велеть [axel.name] начать носить женственные платья.",
 						OFFICE_WITH_LEXA_FEMINISE_CLOTHING_END) {
 					@Override
 					public void effects() {
@@ -655,8 +651,8 @@ public class GamblingDenDialogue {
 				};
 				
 			} else if(index==2) {
-				return new Response("Maid",
-						"Tell [axel.name] to start wearing a maid dress.",
+				return new Response("Горничная",
+						"Велеть [axel.name] начать носить платье горничной.",
 						OFFICE_WITH_LEXA_FEMINISE_CLOTHING_END) {
 					@Override
 					public void effects() {
@@ -667,8 +663,8 @@ public class GamblingDenDialogue {
 				};
 				
 			} else if(index==3) {
-				return new Response("Whore",
-						"Tell [axel.name] to start wearing extremely provocative clothing so that everyone knows [axel.sheIs] your slutty whore.",
+				return new Response("Шалава",
+						"Велеть [axel.name] начать носить вызывающе откровенную одежду, чтобы все знали, какая [axel.sheIs] шлюха.",
 						OFFICE_WITH_LEXA_FEMINISE_CLOTHING_END) {
 					@Override
 					public void effects() {
@@ -712,10 +708,10 @@ public class GamblingDenDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.axelClothingFeminine)) {
-					return new Response("Feminine", "[axel.Name] is already wearing a feminine dress.", null);
+					return new Response("Женственные", "[axel.Name] уже носит женственное платье.", null);
 				}
-				return new Response("Feminine",
-						"Tell [axel.name] to wear a feminine dress.",
+				return new Response("Женственные",
+						"Велеть [axel.name] надеть женственное платье.",
 						OFFICE_WITH_LEXA_FEMINISE_CLOTHING_END) {
 					@Override
 					public void effects() {
@@ -729,10 +725,10 @@ public class GamblingDenDialogue {
 				
 			} else if(index==2) {
 				if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.axelClothingMaid)) {
-					return new Response("Maid", "[axel.Name] is already wearing a maid uniform.", null);
+					return new Response("Горничная", "[axel.Name] уже одета в форму горничной.", null);
 				}
-				return new Response("Maid",
-						"Tell [axel.name] to start wearing a maid dress.",
+				return new Response("Горничная",
+						"Велеть [axel.name] начать носить платье горничной.",
 						OFFICE_WITH_LEXA_FEMINISE_CLOTHING_END) {
 					@Override
 					public void effects() {
@@ -746,10 +742,10 @@ public class GamblingDenDialogue {
 				
 			} else if(index==3) {
 				if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.axelClothingWhore)) {
-					return new Response("Whore", "[axel.Name] is already wearing a whorish outfit.", null);
+					return new Response("Шалава", "[axel.Name] уже одета как настоящая шлюха.", null);
 				}
-				return new Response("Whore",
-						"Tell [axel.name] to start wearing extremely provocative clothing so that everyone knows [axel.sheIs] your slutty whore.",
+				return new Response("Шалава",
+						"Велеть [axel.name] начать носить вызывающе откровенную одежду, чтобы все знали, какая [axel.sheIs] шлюха.",
 						OFFICE_WITH_LEXA_FEMINISE_CLOTHING_END) {
 					@Override
 					public void effects() {
@@ -762,8 +758,8 @@ public class GamblingDenDialogue {
 				};
 				
 			} else if(index==0) {
-				return new Response("Change mind",
-						"Decide against a change of outfit for [axel.name] and decide upon something else to do in [axel.her] office.",
+				return new Response("Передумать",
+						"Решить не менять наряд [axel.name] и заняться чем-то другим в кабинете [axel.her].",
 						OFFICE_WITH_LEXA_CLOTHING_BACK_OUT);
 			}
 			return null;
@@ -786,7 +782,7 @@ public class GamblingDenDialogue {
 		}
 	};
 	
-	public static final DialogueNode AXEL = new DialogueNode("Talking to [axel.name]", "", true) {
+	public static final DialogueNode AXEL = new DialogueNode("Разговор с [axel.name]", "", true) {
 		
 		@Override
 		public String getContent() {
@@ -796,11 +792,11 @@ public class GamblingDenDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Business", "Talk to [axel.name] about his business.", AXEL_BUSINESS);
+				return new Response("Дела", "Поговорить с [axel.name] о его делах.", AXEL_BUSINESS);
 				
 			} else if(index==2) {
 				if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.roxyIntroduced)) {
-					return new Response("Roxy", "Ask [axel.name] about Roxy.", AXEL_ROXY) {
+					return new Response("Рокси", "Спросить [axel.name] о Рокси.", AXEL_ROXY) {
 						@Override
 						public void effects() {
 							if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.axelMentionedVengar)) {
@@ -813,14 +809,14 @@ public class GamblingDenDialogue {
 					};
 					
 				} else {
-					return new Response("Roxy", "You'd need to talk with Roxy before asking [axel.name] about her.", null);
+					return new Response("Рокси", "Тебе нужно сначала поговорить с Рокси, прежде чем расспрашивать [axel.name] о ней.", null);
 				}
 				
 			} else if(index==3) {
 				if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.axelMentionedVengar) && !Main.game.getPlayer().hasQuest(QuestLine.SIDE_VENGAR)) { // Initial asking/quest start:
 					if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.axelExplainedVengar)) {
-						return new Response("Offer help",
-								"Tell [axel.name] that you'd like to help [axel.herHim] deal with Vengar.",
+						return new Response("Предложить помощь",
+								"Сказать [axel.name], что ты хочешь помочь [axel.herHim] разобраться с Венгаром.",
 								AXEL_VENGAR) {
 							@Override
 							public Colour getHighlightColour() {
@@ -834,7 +830,7 @@ public class GamblingDenDialogue {
 						};
 						
 					} else {
-						return new Response("Vengar", "Ask [axel.name] about Vengar.", AXEL_VENGAR) {
+						return new Response("Венгар", "Спросить [axel.name] о Венгаре.", AXEL_VENGAR) {
 							@Override
 							public void effects() {
 								Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/submission/gamblingDen/main", "AXEL_VENGAR"));
@@ -846,7 +842,7 @@ public class GamblingDenDialogue {
 				} else if(Main.game.getPlayer().hasQuest(QuestLine.SIDE_VENGAR)
 						&& Main.game.getPlayer().getQuest(QuestLine.SIDE_VENGAR)==Quest.VENGAR_TWO_COOPERATION) {
 					if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.axelToldSubmit)) {
-						return new Response("Visit Vengar", "Tell [axel.name] that you're ready to go with [axel.herHim] to visit Vengar now.", AXEL_VENGAR_VISIT) {
+						return new Response("Навестить Венгара", "Сказать [axel.name], что ты готов отправиться вместе с [axel.herHim] навестить Венгара прямо сейчас.", AXEL_VENGAR_VISIT) {
 							@Override
 							public Colour getHighlightColour() {
 								return PresetColour.QUEST_SIDE;
@@ -861,7 +857,7 @@ public class GamblingDenDialogue {
 						};
 						
 					} else {
-						return new Response("Vengar's demand", "Tell [axel.name] about Vengar's demand.", AXEL_VENGAR_SUBMIT) {
+						return new Response("Требование Венгара", "Рассказать [axel.name] о требовании Венгара.", AXEL_VENGAR_SUBMIT) {
 							@Override
 							public void effects() {
 								Main.game.getDialogueFlags().setFlag(DialogueFlagValue.axelToldSubmit, true);
@@ -872,13 +868,13 @@ public class GamblingDenDialogue {
 				} else if(Main.game.getPlayer().isQuestCompleted(QuestLine.SIDE_VENGAR)) {
 					if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.axelSissified)
 							|| Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.axelFeminised)) {
-						return new Response("Office", "Tell Lexa that you want to have a private 'discussion' with [lexa.herHim] in [lexa.her] office.", OFFICE_WITH_AXEL);
+						return new Response("Кабинет", "Сказать Лексе, что ты хочешь провести приватную «дискуссию» с [lexa.herHim] в кабинете [lexa.her].", OFFICE_WITH_AXEL);
 						
 					} else {
 						if(Main.game.getPlayer().isFeminine()) {
-							return new Response("Office", "You can tell that Axel isn't sexually interested in someone as feminine as you, and would therefore be unwilling to spend some time with you in his office.", null);
+							return new Response("Кабинет", "Можешь сказать, что Акселя не интересуют такие женственные особы, как ты, и поэтому он вряд ли захочет провести с тобой время в своем кабинете.", null);
 						}
-						return new Response("Office", "Ask Axel if the two of you can have a private 'discussion' in his office about how thankful he is for your help.", OFFICE_WITH_AXEL) {
+						return new Response("Кабинет", "Спросить Акселя, не могли бы вы вдвоем провести приватную «дискуссию» в его кабинете о том, как сильно он благодарен тебе за помощь.", OFFICE_WITH_AXEL) {
 							@Override
 							public boolean isSexHighlight() {
 								return true;
@@ -888,14 +884,14 @@ public class GamblingDenDialogue {
 				}
 				
 			} else if(index==0) {
-				return new Response("Back", "Say goodbye and walk back out into the entrance hall.", ENTRANCE);
+				return new Response("Назад", "Попрощаться и выйти обратно в вестибюль.", ENTRANCE);
 				
 			}
 			return null;
 		}
 	};
 	
-	public static final DialogueNode AXEL_BUSINESS = new DialogueNode("Talking to [axel.name]", "", true) {
+	public static final DialogueNode AXEL_BUSINESS = new DialogueNode("Разговор с [axel.name]", "", true) {
 		
 		@Override
 		public String getContent() {
@@ -905,13 +901,13 @@ public class GamblingDenDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Business", "You're already talking to [axel.name].", null);
+				return new Response("Дела", "Вы уже разговариваете с [axel.name].", null);
 			}
 			return AXEL.getResponse(responseTab, index);
 		}
 	};
 	
-	public static final DialogueNode AXEL_ROXY = new DialogueNode("Talking to [axel.name]", "", true) {
+	public static final DialogueNode AXEL_ROXY = new DialogueNode("Разговор с [axel.name]", "", true) {
 		
 		@Override
 		public String getContent() {
@@ -921,13 +917,13 @@ public class GamblingDenDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==2) {
-				return new Response("Roxy", "You're already talking with [axel.name] about Roxy.", null);
+				return new Response("Рокси", "Вы уже обсуждаете Рокси с [axel.name].", null);
 			}
 			return AXEL.getResponse(responseTab, index);
 		}
 	};
 	
-	public static final DialogueNode AXEL_VENGAR = new DialogueNode("Talking to [axel.name]", "", true) {
+	public static final DialogueNode AXEL_VENGAR = new DialogueNode("Разговор с [axel.name]", "", true) {
 		
 		@Override
 		public String getContent() {
@@ -952,7 +948,7 @@ public class GamblingDenDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Visit Vengar", "Tell [axel.name] that you're ready to go with [axel.herHim] to visit Vengar now.", AXEL_VENGAR_VISIT) {
+				return new Response("Навестить Венгара", "Сказать [axel.name], что ты готов отправиться вместе с [axel.herHim] навестить Венгара прямо сейчас.", AXEL_VENGAR_VISIT) {
 					@Override
 					public Colour getHighlightColour() {
 						return PresetColour.QUEST_SIDE;
@@ -967,7 +963,7 @@ public class GamblingDenDialogue {
 				};
 				
 			} else if(index==2) {
-				return new Response("Later", "Tell [axel.name] that you're not ready to go with [axel.herHim] to visit Vengar right now, and that you'll let [axel.herHim] know when you are.", AXEL_VENGAR);
+				return new Response("Позже", "Сказать [axel.name], что ты пока не готова отправиться с [axel.herHim] на встречу к Венгару, и что ты дашь знать [axel.herHim], когда будешь готова.", AXEL_VENGAR);
 				
 			}
 			return null;
@@ -987,7 +983,7 @@ public class GamblingDenDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue", "Think about Shadow's warning as you follow [axel.name] and Silence to Vengar's hall.", AXEL_VENGAR_VISIT_KNEEL) {
+				return new Response("Продолжить", "Размышлять о предупреждении Шэдоу, следуя за [axel.name] и Сайленс в зал Венгара.", AXEL_VENGAR_VISIT_KNEEL) {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setLocation(WorldType.RAT_WARRENS, PlaceType.RAT_WARRENS_VENGARS_HALL);
@@ -1018,11 +1014,11 @@ public class GamblingDenDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Stop [axel.name]", "Stop [axel.name] from drinking the potion-laced rum.", AXEL_VENGAR_VISIT_STOPPED);
+				return new Response("Остановить [axel.name]", "Остановить [axel.name], чтобы он не выпил ром с зельем.", AXEL_VENGAR_VISIT_STOPPED);
 				
 			} else if(index==2) {
-				return new Response("Say nothing",
-						"Say nothing to stop [axel.name] from drinking the potion-laced rum, allowing [axel.herHim] to be transformed into a sissified version of himself.",
+				return new Response("Промолчать",
+						"Ничего не сказать, чтобы помешать [axel.name] выпить ром с зельем, позволяя [axel.herHim] превратиться в изнеженную версию самого себя.",
 						AXEL_VENGAR_VISIT_SISSIFIED) {
 					@Override
 					public Colour getHighlightColour() {
@@ -1032,7 +1028,7 @@ public class GamblingDenDialogue {
 					public void effects() {
 						((Axel)Main.game.getNpc(Axel.class)).applySissification();
 						((Axel)Main.game.getNpc(Axel.class)).applyCage(true, Main.game.getPlayer());
-						((Axel)Main.game.getNpc(Axel.class)).setName(new NameTriplet("Lexa", "Lexa", "Lexa"));
+						((Axel)Main.game.getNpc(Axel.class)).setName(new NameTriplet("Лекса", "Лекса", "Лекса"));
 						Main.game.getDialogueFlags().setFlag(DialogueFlagValue.axelSissified, true);
 					}
 				};
@@ -1054,7 +1050,7 @@ public class GamblingDenDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Leave", "Head back to the gambling den with [axel.name].", AXEL_VENGAR_VISIT_RETURN) {
+				return new Response("Уйти", "Вернуться в игорный притон вместе с [axel.name].", AXEL_VENGAR_VISIT_RETURN) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/submission/gamblingDen/main", "AXEL_VENGAR_VISIT_STOPPED_RETURN"));
@@ -1079,7 +1075,7 @@ public class GamblingDenDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Enough", "Stop Vengar from going any further, and take [axel.name] back to the gambling den.", AXEL_VENGAR_VISIT_RETURN) {
+				return new Response("Достаточно", "Не дать Венгару зайти слишком далеко и увести [axel.name] обратно в игорный притон.", AXEL_VENGAR_VISIT_RETURN) {
 					@Override
 					public void effects() {
 						Main.game.getNpc(Axel.class).equipClothing(EquipClothingSetting.getAllClothingSettings());
@@ -1089,7 +1085,7 @@ public class GamblingDenDialogue {
 				};
 				
 			} else if(index==2) {
-				return new Response("Watch", "Let Vengar take it a little further...", AXEL_VENGAR_VISIT_SISSIFIED_FINISH);
+				return new Response("Смотреть", "Позволить Венгару зайти чуть дальше...", AXEL_VENGAR_VISIT_SISSIFIED_FINISH);
 			}
 			return null;
 		}
@@ -1108,7 +1104,7 @@ public class GamblingDenDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Enough", "Tell Vengar that enough's enough, and take [axel.name] back to the gambling den.", AXEL_VENGAR_VISIT_RETURN) {
+				return new Response("Достаточно", "Сказать Венгару, что хватит, и увести [axel.name] обратно в игорный притон.", AXEL_VENGAR_VISIT_RETURN) {
 					@Override
 					public void effects() {
 						Main.game.getNpc(Axel.class).equipClothing(EquipClothingSetting.getAllClothingSettings());
@@ -1119,11 +1115,11 @@ public class GamblingDenDialogue {
 				
 			} else if(index==2) {
 				if(Main.game.getPlayer().isFeminine()) {
-					return new Response("Fuck Lexa", "'Lexa' doesn't seem to be interested in having sex with someone as feminine as you...", null);
+					return new Response("Трахнуть Лексу", "Похоже, Лексу не особо интересно заниматься сексом с кем-то настолько женственным, как ты...", null);
 				}
 				return new ResponseSex(
-						"Fuck Lexa",
-						"Do as Vengar suggests and fuck Lexa in front of everyone in the hall.",
+						"Трахнуть Лексу",
+						"Сделай, как советует Венгар: трахни Лексу прямо на глазах у всех в зале.",
 						true,
 						false,
 						new SMAllFours(
@@ -1141,8 +1137,8 @@ public class GamblingDenDialogue {
 				
 			} else if(index==3) {
 				return new ResponseSex(
-						"Watch Vengar",
-						"Join everyone else in the hall in watching 'Lexa' get fucked by Vengar.",
+						"Наблюдать за Венгаром",
+						"Присоединиться к остальным в зале и смотреть, как Венгар трахает «Лексу».",
 						true,
 						false,
 						new SMAllFours(
@@ -1175,7 +1171,7 @@ public class GamblingDenDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Leave", "Escort Lexa back to the gambling den.", AXEL_VENGAR_VISIT_RETURN) {
+				return new Response("Уйти", "Сопроводить Лексу обратно в игорный притон.", AXEL_VENGAR_VISIT_RETURN) {
 					@Override
 					public void effects() {
 						Main.game.getNpc(Axel.class).equipClothing(EquipClothingSetting.getAllClothingSettings());
@@ -1200,8 +1196,8 @@ public class GamblingDenDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue",
-						"Continue on your way through the tunnels...",
+				return new Response("Продолжить",
+						"Продолжать путь через туннели...",
 						AXEL_VENGAR_VISIT_RETURN_NEXT);
 			}
 			return null;
@@ -1225,8 +1221,8 @@ public class GamblingDenDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Escorted",
-						"The Enforcer escorts you and [axel.name] to the nearest Enforcer post...",
+				return new Response("Сопровождение",
+						"Enforcer сопровождает тебя и [axel.name] к ближайшему посту Enforcer...",
 						AXEL_VENGAR_VISIT_RETURN_ENFORCERS);
 			}
 			return null;
@@ -1252,8 +1248,8 @@ public class GamblingDenDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Gambling Den",
-						"Escort [axel.name] back to the Gambling Den...",
+				return new Response("Игорный притон",
+						"Сопроводить [axel.name] обратно в игорный притон...",
 						AXEL_VENGAR_VISIT_RETURN_ENFORCERS_END);
 			}
 			return null;
@@ -1278,8 +1274,8 @@ public class GamblingDenDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Reward",
-						"Wait for [axel.name] to fetch your reward from [axel.her] office.",
+				return new Response("Награда",
+						"Ждать, пока [axel.name] заберет твою награду из кабинета [axel.her].",
 						AXEL_VENGAR_VISIT_RETURN_FINISH) {
 					@Override
 					public void effects() {
@@ -1314,7 +1310,7 @@ public class GamblingDenDialogue {
 		}
 	};
 	
-	public static final DialogueNode CORRIDOR = new DialogueNode("Gambling Den", "", false) {
+	public static final DialogueNode CORRIDOR = new DialogueNode("Игорный притон", "", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -1330,9 +1326,9 @@ public class GamblingDenDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				if(Main.game.getPlayer().getMoney()<10) {
-					return new Response("Slot Machine ("+UtilText.formatAsMoney(10, "span")+")", "You don't have enough money to play on the slot machines!", null);
+					return new Response("Игровой автомат ("+UtilText.formatAsMoney(10, "охват")+")", "У вас недостаточно денег, чтобы играть в игровые автоматы!", null);
 				} else {
-					return new Response("Slot Machine ("+UtilText.formatAsMoney(10, "span")+")", "Put 10 flames into the nearest slot machine and pull the handle.", SLOT_MACHINE) {
+					return new Response("Игровой автомат ("+UtilText.formatAsMoney(10, "охват")+")", "Положите 10 огней в ближайший игровой автомат и потяните за рычаг.", SLOT_MACHINE) {
 						@Override
 						public void effects() {
 							
@@ -1355,19 +1351,14 @@ public class GamblingDenDialogue {
 									new Value<>(Subspecies.ELEMENTAL_ARCANE, 1));
 							
 							Main.game.getTextEndStringBuilder().append(
-									"<p>"
-										+ "Deciding to try your luck at one of the slot machines, you walk up to the nearest one and place ten flames in the coin slot."
-									+ "</p>"
+									"<p>Решив испытать удачу за одним из игровых автоматов, вы подходите к ближайшему и опускаете десять огней в прорезь для монет.</p>"
 									+ Main.game.getPlayer().incrementMoney(-10)
-									+"<p>"
-										+ "Pulling the handle, you watch as the three reels on the front rapidly spin round and round, before slowly stopping on three pictures..."
-									+ "</p>");
+									+"<p>Потянув за рычаг, вы наблюдаете, как три барабана на передней панели стремительно вращаются, прежде чем медленно остановиться на трех картинках...</p>");
 							
 
 							Main.game.getTextEndStringBuilder().append("<div class='container-full-width'>");
 							
-								Main.game.getTextEndStringBuilder().append("<div class='container-half-width' style='position:relative; text-align:center;'>"
-										+ "<p style='width:100%'><b>Slot Machine Results:</b></p>");
+								Main.game.getTextEndStringBuilder().append("<div class='container-half-width' style='position:relative; text-align:center;'><p style='width:100%'><b>Результаты автомата:</b></p>");
 								
 								List<AbstractSubspecies> races = new ArrayList<>(slotMachineValues.keySet());
 								
@@ -1394,20 +1385,16 @@ public class GamblingDenDialogue {
 								
 								for(AbstractSubspecies r : results) {
 									Main.game.getTextEndStringBuilder().append(
-											"<div class='modifier-icon' style='width:31.3%; margin:0 1%; border:3px solid "+(winner?PresetColour.GENERIC_EXCELLENT.toWebHexString():"")+"; display:inline-block;'>"
-													+"<div class='modifier-icon-content'>"+r.getSVGString(null)+"</div>"
+											"<div class='modifier-icon' style='width:31.3%; margin:0 1%; border:3px solid "+(winner?PresetColour.GENERIC_EXCELLENT.toWebHexString():"")+"; display:inline-block;'><div class='modifier-icon-content'>"+r.getSVGString(null)+"</div>"
 											+ "</div>");
 								}
 								if(winner) {
 									Main.game.getTextEndStringBuilder().append(
-											"<p style='text-align:center;'>"
-													+ "[style.colourExcellent(You won!)]<br/>Three "+results.get(0).getNamePlural(null)+" pay out "+UtilText.formatAsMoney(slotMachineValues.get(results.get(0)), "span")+"!"
+											"<p style='text-align:center;'>[style.colourExcellent(Вы выиграли!)]<br/>Три "+results.get(0).getNamePlural(null)+" выплата "+UtilText.formatAsMoney(slotMachineValues.get(results.get(0)), "охват")+"!"
 											+ "</p>");
 								} else {
 									Main.game.getTextEndStringBuilder().append(
-											"<p style='text-align:center;'>"
-													+ "[style.colourTerrible(You lost!)]"
-											+ "</p>");
+											"<p style='text-align:center;'>[style.colourTerrible(Вы проиграли!)]</p>");
 								}
 								
 								Main.game.getTextEndStringBuilder().append("</div>");
@@ -1416,7 +1403,7 @@ public class GamblingDenDialogue {
 							
 									for(Entry<AbstractSubspecies, Integer> entry : slotMachineValues.entrySet()) {
 										Main.game.getTextEndStringBuilder().append("<span style='color:"+entry.getKey().getColour(null).toWebHexString()+";'>"+Util.capitaliseSentence(entry.getKey().getNamePlural(null))+"</span>: "
-												+UtilText.formatAsMoney(entry.getValue(), "span")+"<br/>");
+												+UtilText.formatAsMoney(entry.getValue(), "охват")+"<br/>");
 									}
 												
 									Main.game.getTextEndStringBuilder().append("</p>");
@@ -1426,14 +1413,10 @@ public class GamblingDenDialogue {
 							if(winner) {
 								Main.game.getTextEndStringBuilder().append(Main.game.getPlayer().incrementMoney(slotMachineValues.get(results.get(0))));
 								Main.game.getTextEndStringBuilder().append(
-										"<p>"
-											+ "Having won "+Util.intToString(slotMachineValues.get(results.get(0)))+" flames, you wonder if you should pocket your money and continue on your way, or have another go and try for another win..."
-										+ "</p>");
+										"<p>Выиграв "+Util.intToString(slotMachineValues.get(results.get(0)))+" огни, вы раздумываете, стоит ли забрать деньги и отправиться дальше, или же сделать еще одну ставку в попытке выиграть снова...</p>");
 							} else {
 								Main.game.getTextEndStringBuilder().append(
-										"<p>"
-											+ "Having lost your ten flames, you wonder if you should cut your losses and continue on your way, or have another go and try for a win..."
-										+ "</p>");
+										"<p>Проиграв десять огней, вы раздумываете, стоит ли смириться с потерей и отправиться дальше, или же сделать еще одну ставку в попытке выиграть...</p>");
 							}
 						}
 					};
@@ -1444,7 +1427,7 @@ public class GamblingDenDialogue {
 	};
 	
 
-	public static final DialogueNode SLOT_MACHINE = new DialogueNode("Gambling Den", "", false) {
+	public static final DialogueNode SLOT_MACHINE = new DialogueNode("Игорный притон", "", false) {
 		
 		@Override
 		public String getContent() {
@@ -1459,7 +1442,7 @@ public class GamblingDenDialogue {
 	};
 	
 	
-	public static final DialogueNode GAMBLING = new DialogueNode("Dice Poker Tables", "", false) {
+	public static final DialogueNode GAMBLING = new DialogueNode("Столы для костей", "", false) {
 		
 		@Override
 		public String getContent() {
@@ -1474,7 +1457,7 @@ public class GamblingDenDialogue {
 				return null;
 				
 			} else if(index==gamblers.size()+1){
-				return new Response("Rules", "Take a look at a nearby sign which displays the rules of dice poker.", GAMBLING_RULES);
+				return new Response("Правила", "Взгляните на стоящую неподалеку табличку с правилами игры в костяной покер.", GAMBLING_RULES);
 				
 			} else {
 				try {
@@ -1491,10 +1474,10 @@ public class GamblingDenDialogue {
 					int buyIn = table.getInitialBet()+table.getRaiseAmount();
 					if(Main.game.getPlayer().getMoney()>=buyIn) {
 						return new ResponseEffectsOnly(
-								"<span style='color:"+table.getColour().toWebHexString()+";'>"+UtilText.parse(gambler, "[npc.Name]")+"</span> ("+UtilText.formatAsMoney(buyIn, "span")+")",
+								"<span style='color:"+table.getColour().toWebHexString()+";'>"+UtilText.parse(gambler, "[npc.Name]")+"</span> ("+UtilText.formatAsMoney(buyIn, "охват")+")",
 								UtilText.parse(gambler,
-										"Start playing dice poker with [npc.name]. The buy-in amount is "+UtilText.formatAsMoney(table.getInitialBet(), "span")
-										+", but you'll also need "+UtilText.formatAsMoney(table.getRaiseAmount(), "span")+" for any raises.")) {
+										"Начать игру в костяной покер с [npc.name]. Взнос составляет "+UtilText.formatAsMoney(table.getInitialBet(), "охват")
+										+", но вам также понадобятся "+UtilText.formatAsMoney(table.getRaiseAmount(), "охват")+" для любых повышений ставок.")) {
 							@Override
 							public void effects() {
 								Main.game.setContent(new Response("", "", DicePoker.initDicePoker(gambler, table, GAMBLING, "misc/dicePoker")));
@@ -1502,9 +1485,9 @@ public class GamblingDenDialogue {
 						};
 						
 					} else {
-						return new Response(gambler.getName(true)+" ("+UtilText.formatAsMoneyUncoloured(buyIn, "span")+")",
-								"The buy-in amount is "+UtilText.formatAsMoney(table.getInitialBet(), "span")
-								+", but you'll also need "+UtilText.formatAsMoney(table.getRaiseAmount(), "span")+" for any raises. As a result, you don't have enough money to play at this table!",
+						return new Response(gambler.getName(true)+" ("+UtilText.formatAsMoneyUncoloured(buyIn, "охват")+")",
+								"Взнос составляет "+UtilText.formatAsMoney(table.getInitialBet(), "охват")
+								+", но вам также понадобятся "+UtilText.formatAsMoney(table.getRaiseAmount(), "охват")+" на любые повышения ставок. В итоге у тебя не хватает денег, чтобы играть за этим столом!",
 								null);
 					}
 					
@@ -1515,7 +1498,7 @@ public class GamblingDenDialogue {
 		}
 	};
 	
-	public static final DialogueNode GAMBLING_RULES = new DialogueNode("Dice Poker Tables", "", true) {
+	public static final DialogueNode GAMBLING_RULES = new DialogueNode("Столы для костей", "", true) {
 		
 		@Override
 		public String getContent() {
@@ -1525,14 +1508,14 @@ public class GamblingDenDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==0) {
-				return new Response("Back", "Finish reading the rules and step back from the sign.", GAMBLING);
+				return new Response("Назад", "Дочитав правила, вы отходите от знака.", GAMBLING);
 			} else {
 				return null;
 			}
 		}
 	};
 	
-	public static final DialogueNode PREGNANCY_ROULETTE_MALE_STALLS = new DialogueNode("Male Breeding Stalls", "", false) {
+	public static final DialogueNode PREGNANCY_ROULETTE_MALE_STALLS = new DialogueNode("Стойла для разведения самцов", "", false) {
 		
 		@Override
 		public String getContent() {
@@ -1555,7 +1538,7 @@ public class GamblingDenDialogue {
 		}
 	};
 	
-	public static final DialogueNode PREGNANCY_ROULETTE_FUTA_STALLS = new DialogueNode("Futa Breeding Stalls", "", false) {
+	public static final DialogueNode PREGNANCY_ROULETTE_FUTA_STALLS = new DialogueNode("Загоны для фута-разведения", "", false) {
 		
 		@Override
 		public String getContent() {

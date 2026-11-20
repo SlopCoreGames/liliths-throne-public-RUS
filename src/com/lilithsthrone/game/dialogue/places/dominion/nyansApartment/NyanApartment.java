@@ -255,7 +255,7 @@ public class NyanApartment {
 			boolean vaginaAccess = Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.VAGINA, true);
 			
 			responses.add(
-				new ResponseSex("Cunnilingus", "Give the horny cat-girl what she wants by eating her out.",
+				new ResponseSex("Куннилингус", "Дать похотливой кошкодевочке то, чего она хочет, отсосав ей.",
 					true, true,
 					new SMNyanSex(
 							SexPosition.SITTING,
@@ -286,7 +286,7 @@ public class NyanApartment {
 			});
 			
 			responses.add(
-				new ResponseSex("Fingering", UtilText.parse(getActiveSexPartner(), "Push [npc.name] down on the bed and finger her while kissing her."),
+				new ResponseSex("Фингеринг", UtilText.parse(getActiveSexPartner(), "Повалить [npc.name] на кровать и ласкать её пальцами, одновременно целуя."),
 					true, true,
 					new SMNyanSex(
 							Util.newHashMapOfValues(new Value<>(Main.game.getPlayer(), SexSlotLyingDown.LYING_DOWN_TWO)),
@@ -318,17 +318,17 @@ public class NyanApartment {
 			
 			if(Main.game.getPlayer().hasPenis()) {
 				if(!penisAccess) {
-					responses.add(new Response("Sixty-nine"+(Main.game.getPlayer().hasVagina()?" (blowjob)":""),
-							UtilText.parse(getActiveSexPartner(), "As you are unable to access your penis, you cannot sixty-nine with [npc.name]!"),
+					responses.add(new Response("Шестьдесят девять"+(Main.game.getPlayer().hasVagina()?" (минет)":""),
+							UtilText.parse(getActiveSexPartner(), "Так как вы не можете дотянуться до своего члена, у вас не получится заняться сексом в позе шестьдесят девять с [npc.name]!"),
 							null));
 					
 				} else if(Main.game.getPlayer().isTaur()) {
-					responses.add(new Response("Sixty-nine"+(Main.game.getPlayer().hasVagina()?" (blowjob)":""), "Due to your [pc.legRace]'s lower body, you cannot use this position!", null));
+					responses.add(new Response("Шестьдесят девять"+(Main.game.getPlayer().hasVagina()?" (минет)":""), "Из-за строения нижней части тела [pc.legRace], вы не можете использовать эту позу!", null));
 							
 				} else {
 					responses.add(
-							new ResponseSex("Sixty-nine"+(Main.game.getPlayer().hasVagina()?" (blowjob)":""),
-									UtilText.parse(getActiveSexPartner(), "Get [npc.name] to straddle your face and bend down to suck your cock while you're eating her out."),
+							new ResponseSex("Шестьдесят девять"+(Main.game.getPlayer().hasVagina()?" (минет)":""),
+									UtilText.parse(getActiveSexPartner(), "Заставить [npc.name] сесть верхом на ваше лицо и наклониться, чтобы она сосала ваш член, пока вы ласкаете её языком."),
 									true, true,
 									new SMNyanSex(
 											Util.newHashMapOfValues(new Value<>(Main.game.getPlayer(), SexSlotLyingDown.LYING_DOWN)),
@@ -361,17 +361,17 @@ public class NyanApartment {
 			}
 			if(Main.game.getPlayer().hasVagina()) {
 				if(!vaginaAccess) {
-					responses.add(new Response("Sixty-nine"+(Main.game.getPlayer().hasPenis()?" (cunnilingus)":""),
-							UtilText.parse(getActiveSexPartner(), "As you are unable to access your vagina, you cannot sixty-nine with [npc.name]!"),
+					responses.add(new Response("Шестьдесят девять"+(Main.game.getPlayer().hasPenis()?" (куннилингус)":""),
+							UtilText.parse(getActiveSexPartner(), "Поскольку вы не можете дотянуться до своей киски, вы не можете заняться сексом в стиле шестьдесят девять с [npc.name]!"),
 							null)); 
 					
 				} else if(Main.game.getPlayer().isTaur()) {
-					responses.add(new Response("Sixty-nine"+(Main.game.getPlayer().hasVagina()?" (cunnilingus)":""), "Due to your [pc.legRace]'s lower body, you cannot use this position!", null));
+					responses.add(new Response("Шестьдесят девять"+(Main.game.getPlayer().hasVagina()?" (куннилингус)":""), "Из-за строения нижней части тела [pc.legRace], вы не можете использовать эту позу!", null));
 							
 				} else {
 					responses.add(
-							new ResponseSex("Sixty-nine"+(Main.game.getPlayer().hasPenis()?" (cunnilingus)":""),
-									UtilText.parse(getActiveSexPartner(), "Get [npc.name] to straddle your face and bend down to eat you out while you're returning the favour."),
+							new ResponseSex("Шестьдесят девять"+(Main.game.getPlayer().hasPenis()?" (куннилингус)":""),
+									UtilText.parse(getActiveSexPartner(), "Заставьте [npc.name] сесть вам на лицо и наклониться, чтобы она отсосала вам, пока вы будете ласкать её губами."),
 									true, true,
 									new SMNyanSex(
 											Util.newHashMapOfValues(new Value<>(Main.game.getPlayer(), SexSlotLyingDown.LYING_DOWN)),
@@ -405,13 +405,13 @@ public class NyanApartment {
 			
 			if(Main.game.getPlayer().hasPenis()) {
 				if(!penisAccess) {
-					responses.add(new Response("Receive blowjob",
-							UtilText.parse(getActiveSexPartner(), "As you are unable to access your penis, you cannot get [npc.name] to suck your cock!"),
+					responses.add(new Response("Получить минет",
+							UtilText.parse(getActiveSexPartner(), "Поскольку вы не можете дотянуться до своего члена, вы не можете заставить [npc.name] отсосать вам!"),
 							null)); 
 				} else {
 					responses.add(
-							new ResponseSex("Receive blowjob",
-									UtilText.parse(getActiveSexPartner(), "Get [npc.name] to suck your cock."),
+							new ResponseSex("Получить минет",
+									UtilText.parse(getActiveSexPartner(), "Заставить [npc.name] отсосать ваш член."),
 									true, true,
 									new SMNyanSex(
 											Main.game.getPlayer().isTaur()
@@ -445,15 +445,15 @@ public class NyanApartment {
 				}
 				if(!penisAccess) {
 					responses.add(new Response(UtilText.parse(getActiveSexPartner(), "[npc.Paizuri]"),
-							UtilText.parse(getActiveSexPartner(), "As you are unable to access your penis, you cannot get [npc.name] to give you a tit-fuck!"),
+							UtilText.parse(getActiveSexPartner(), "Поскольку вы не можете дотянуться до своего члена, вы не можете заставить [npc.name] отсосать вам между грудей!"),
 							null)); 
 				} else {
 					responses.add(
 							new ResponseSex(UtilText.parse(getActiveSexPartner(), "[npc.Paizuri]"),
 									UtilText.parse(getActiveSexPartner(),
 											getActiveSexPartner().isBreastFuckablePaizuri()
-												?"Get [npc.name] to kneel down and wrap her [npc.breasts+] around your cock so that you can get a tit-fuck."
-												:"Get [npc.name] to kneel down and press her [npc.breasts+] against your cock so that you can grind up against them."),
+												?"Заставьте [npc.name] опуститься на колени и прижать её [npc.breasts+] к вашему члену, чтобы вы могли заняться тит-факом."
+												:"Заставьте [npc.name] опуститься на колени и прижать её [npc.breasts+] к вашему члену, чтобы вы могли тереться об них."),
 									true, true,
 									new SMNyanSex(
 											Main.game.getPlayer().isTaur()
@@ -493,13 +493,13 @@ public class NyanApartment {
 			}
 			if(Main.game.getPlayer().hasVagina()) {
 				if(!vaginaAccess) {
-					responses.add(new Response("Receive cunnilingus",
-							UtilText.parse(getActiveSexPartner(), "As you are unable to access your vagina, you cannot get [npc.name] to perform cunnilingus on you!"),
+					responses.add(new Response("Принять куннилингус",
+							UtilText.parse(getActiveSexPartner(), "Поскольку вы не можете дотянуться до своей киски, вы не можете заставить [npc.name] отсосать вам!"),
 							null)); 
 				} else {
 					responses.add(
-							new ResponseSex("Receive cunnilingus",
-									UtilText.parse(getActiveSexPartner(), "Get [npc.name] to eat you out."),
+							new ResponseSex("Принять куннилингус",
+									UtilText.parse(getActiveSexPartner(), "Заставить [npc.name] отсосать вам!"),
 									true, true,
 									new SMNyanSex(
 											Main.game.getPlayer().isTaur()
@@ -534,8 +534,8 @@ public class NyanApartment {
 			}
 			
 			responses.add(
-					new ResponseSex("Face-sitting",
-							UtilText.parse(getActiveSexPartner(), "Get [npc.name] to sit on your face and eat her out."), 
+					new ResponseSex("Фейсситтинг",
+							UtilText.parse(getActiveSexPartner(), "Заставить [npc.name] сесть вам на лицо и ласкать её губами."), 
 							true, true,
 							new SMNyanSex(
 									Util.newHashMapOfValues(new Value<>(Main.game.getPlayer(), SexSlotLyingDown.LYING_DOWN)),
@@ -566,15 +566,15 @@ public class NyanApartment {
 
 			if(Main.game.isAnalContentEnabled()) {
 				if((getActiveSexPartner() instanceof Nyan) && !Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.nyanAnalTalk)) {
-						responses.add(new Response("Ask about anal", "Ask Nyan if she'd be comfortable doing anal stuff with you.", SOLO_FOREPLAY_ANAL_TALK));
+						responses.add(new Response("Спросить об анальном сексе", "Спросить Nyan, будет ли ей комфортно заниматься анальным сексом с тобой.", SOLO_FOREPLAY_ANAL_TALK));
 					
 				} else if((getActiveSexPartner() instanceof NyanMum) && !Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.nyanmumAnalTalk)) {
-					responses.add(new Response("Ask about anal", "Ask [nyanmum.name] if she'd be comfortable doing anal stuff with you.", SOLO_FOREPLAY_ANAL_TALK));
+					responses.add(new Response("Спросить об анальном сексе", "Спросить [nyanmum.name], будет ли ей комфортно заниматься анальным сексом с тобой.", SOLO_FOREPLAY_ANAL_TALK));
 					
 				} else {
 					responses.add(
-							new ResponseSex("Perform anilingus",
-								"Get the horny cat-girl to present you with her ass and start rimming her.",
+							new ResponseSex("Заняться анилингусом",
+								"Заставить возбужденную кошкодевочку подставить тебе свою задницу и начать её лизать.",
 								true, true,
 								new SMNyanSex(
 										SexPosition.ALL_FOURS,
@@ -644,10 +644,10 @@ public class NyanApartment {
 		}
 	};
 
-	public static final DialogueNode SOLO_SEX_MAIN = new DialogueNode("Moving on", "", true) {
+	public static final DialogueNode SOLO_SEX_MAIN = new DialogueNode("Идти дальше", "", true) {
 		@Override
 		public String getDescription() {
-			return UtilText.parse(getActiveSexPartner(), "[npc.Name] has had enough of foreplay...");
+			return UtilText.parse(getActiveSexPartner(), "[npc.Name] уже достаточно прелюдий...");
 		}
 		@Override
 		public int getSecondsPassed() {
@@ -666,14 +666,14 @@ public class NyanApartment {
 			
 			if(Main.game.getPlayer().hasPenis()) {
 				if(!penisAccess) {
-					responses.add(new Response("Missionary", UtilText.parse(getActiveSexPartner(), "As you are unable to access your penis, you cannot fuck [npc.name]!"), null)); 
+					responses.add(new Response("Миссионерская", UtilText.parse(getActiveSexPartner(), "Так как ты не можешь дотянуться до своего члена, ты не можешь трахнуть [npc.name]!"), null)); 
 					
 				} else {
 					responses.add(
-							new ResponseSex("Missionary",
+							new ResponseSex("Миссионерская",
 									getActiveSexPartner() instanceof Nyan && getNyan().isVaginaVirgin()
-										?"Get Nyan to lie back and present herself to you, before taking her virginity."
-										:UtilText.parse(getActiveSexPartner(), "Get [npc.name] to lie back and present herself to you, before fucking her."),
+										?"Заставить Nyan лечь на спину и открыться тебе, прежде чем лишить её девственности."
+										:UtilText.parse(getActiveSexPartner(), "Заставить [npc.name] лечь на спину и открыться тебе, прежде чем трахнуть её."),
 									true, true,
 									new SMNyanSex(
 											SexPosition.LYING_DOWN,
@@ -713,14 +713,14 @@ public class NyanApartment {
 							});
 				}
 				if(!penisAccess) {
-					responses.add(new Response("Doggy-style", UtilText.parse(getActiveSexPartner(), "As you are unable to access your penis, you cannot fuck [npc.name]!"), null)); 
+					responses.add(new Response("Догги-стайл", UtilText.parse(getActiveSexPartner(), "Так как ты не можешь дотянуться до своего члена, ты не можешь трахнуть [npc.name]!"), null)); 
 					
 				} else {
 					responses.add(
-							new ResponseSex("Doggy-style",
+							new ResponseSex("Догги-стайл",
 									getActiveSexPartner() instanceof Nyan && getNyan().isVaginaVirgin()
-										?"Get Nyan to drop down on all fours and present herself to you, before taking her virginity."
-										:UtilText.parse(getActiveSexPartner(), "Get [npc.name] to drop down on all fours and present herself to you, before fucking her."),
+										?"Заставить Nyan встать на четвереньки и подставить себя вам, прежде чем лишить её девственности."
+										:UtilText.parse(getActiveSexPartner(), "Заставить [npc.name] встать на четвереньки и подставить себя вам, прежде чем трахнуть её."),
 									true, true,
 									new SMNyanSex(
 											SexPosition.ALL_FOURS,
@@ -760,17 +760,17 @@ public class NyanApartment {
 							});
 				}
 				if(!penisAccess) {
-					responses.add(new Response("Cowgirl", UtilText.parse(getActiveSexPartner(), "As you are unable to access your penis, you cannot fuck [npc.name]!"), null)); 
+					responses.add(new Response("Наездница", UtilText.parse(getActiveSexPartner(), "Так как ты не можешь дотянуться до своего члена, ты не можешь трахнуть [npc.name]!"), null)); 
 					
 				} else if(Main.game.getPlayer().isTaur()) {
-					responses.add(new Response("Cowgirl", "Due to your lower [pc.legRace]'s body, you cannot use this position...", null)); 
+					responses.add(new Response("Наездница", "Из-за положения нижней части тела [pc.legRace] вы не можете использовать эту позу...", null)); 
 					
 				} else {
 					responses.add(
-							new ResponseSex("Cowgirl",
+							new ResponseSex("Наездница",
 									getActiveSexPartner() instanceof Nyan && getNyan().isVaginaVirgin()
-										?"Take Nyan's virginity by having her ride your cock."
-										:UtilText.parse(getActiveSexPartner(), "Have [npc.name] ride your cock in the cowgirl position."),
+										?"Лишить Nyan девственности, заставив её оседлать ваш член."
+										:UtilText.parse(getActiveSexPartner(), "Заставить [npc.name] оседлать ваш член в позе наездницы."),
 									true, true,
 									new SMNyanSex(
 											SexPosition.LYING_DOWN,
@@ -810,10 +810,10 @@ public class NyanApartment {
 							});
 				}
 				if(!penisAccess) {
-					responses.add(new Response("Receive blowjob", "As you are unable to access your penis, you cannot have your cock sucked!", null)); 
+					responses.add(new Response("Получить минет", "Поскольку у вас нет доступа к пенису, вы не можете сосать член!", null)); 
 				} else {
 					responses.add(
-							new ResponseSex("Receive blowjob", UtilText.parse(getActiveSexPartner(), "Get [npc.name] to suck your cock."),
+							new ResponseSex("Получить минет", UtilText.parse(getActiveSexPartner(), "Заставить [npc.name] отсосать ваш член."),
 									true, true,
 									new SMNyanSex(
 											Main.game.getPlayer().isTaur()
@@ -857,17 +857,17 @@ public class NyanApartment {
 			}
 			if(Main.game.getPlayer().hasVagina()) {
 				if(!vaginaAccess) {
-					responses.add(new Response(UtilText.parse(getActiveSexPartner(), "Scissor ([npc.name] bottom)"),
-							UtilText.parse(getActiveSexPartner(), "As you are unable to access your vagina, you cannot scissor with [npc.name]!"),
+					responses.add(new Response(UtilText.parse(getActiveSexPartner(), "Миссионерский секс ножницами ([npc.name] снизу)"),
+							UtilText.parse(getActiveSexPartner(), "Поскольку у вас нет доступа к влагалищу, вы не можете заниматься сексом ножницами с [npc.name]!"),
 							null));
 					
 				} else if(Main.game.getPlayer().isTaur()) {
-					responses.add(new Response(UtilText.parse(getActiveSexPartner(), "Scissor ([npc.name] bottom)"), "Due to your lower [pc.legRace]'s body, you cannot use this position...", null));
+					responses.add(new Response(UtilText.parse(getActiveSexPartner(), "Миссионерский секс ножницами ([npc.name] снизу)"), "Из-за положения нижней части тела [pc.legRace] вы не можете использовать эту позу...", null));
 					
 				} else {
 					responses.add(
-							new ResponseSex(UtilText.parse(getActiveSexPartner(), "Scissor ([npc.name] bottom)"),
-									UtilText.parse(getActiveSexPartner(), "Get [npc.name] to lie back and scissor with her."),
+							new ResponseSex(UtilText.parse(getActiveSexPartner(), "Миссионерский секс ножницами ([npc.name] снизу)"),
+									UtilText.parse(getActiveSexPartner(), "Заставить [npc.name] лечь на спину и заняться с ней ножницами."),
 									true, true,
 									new SMNyanSex(
 											SexPosition.LYING_DOWN,
@@ -907,15 +907,15 @@ public class NyanApartment {
 							});
 				}
 				if(!vaginaAccess) {
-					responses.add(new Response(UtilText.parse(getActiveSexPartner(), "Scissor ([npc.name] top)"), UtilText.parse(getActiveSexPartner(), "As you are unable to access your vagina, you cannot scissor with [npc.name]!"), null));
+					responses.add(new Response(UtilText.parse(getActiveSexPartner(), "Ножницы ([npc.name] сверху)"), UtilText.parse(getActiveSexPartner(), "Поскольку у вас нет доступа к влагалищу, вы не можете заниматься сексом ножницами с [npc.name]!"), null));
 					
 				} else if(Main.game.getPlayer().isTaur()) {
-					responses.add(new Response(UtilText.parse(getActiveSexPartner(), "Scissor ([npc.name] top)"), "Due to your lower [pc.legRace]'s body, you cannot use this position...", null));
+					responses.add(new Response(UtilText.parse(getActiveSexPartner(), "Ножницы ([npc.name] сверху)"), "Из-за положения нижней части тела [pc.legRace] вы не можете использовать эту позу...", null));
 					
 				} else {
 					responses.add(
-							new ResponseSex(UtilText.parse(getActiveSexPartner(), "Scissor ([npc.name] top)"),
-									UtilText.parse(getActiveSexPartner(), "Lie back and get [npc.name] to scissor with you."),
+							new ResponseSex(UtilText.parse(getActiveSexPartner(), "Ножницы ([npc.name] сверху)"),
+									UtilText.parse(getActiveSexPartner(), "Лечь на спину и заставить [npc.name] заняться с вами ножницами."),
 									true, true,
 									new SMNyanSex(
 											SexPosition.LYING_DOWN,
@@ -955,12 +955,12 @@ public class NyanApartment {
 							});
 				}
 				if(!vaginaAccess) {
-					responses.add(new Response("Receive cunnilingus", "As you are unable to access your vagina, you cannot receive cunnilingus!", null)); 
+					responses.add(new Response("Принять куннилингус", "Так как вы не можете получить доступ к своей вагине, вы не можете принимать куннилингус!", null)); 
 					
 				} else {
 					responses.add(
-							new ResponseSex("Receive cunnilingus",
-									UtilText.parse(getActiveSexPartner(), "Get [npc.name] to eat you out."),
+							new ResponseSex("Принять куннилингус",
+									UtilText.parse(getActiveSexPartner(), "Заставить [npc.name] отсосать вам!"),
 									true, true,
 									new SMNyanSex(
 											Main.game.getPlayer().isTaur()
@@ -1002,8 +1002,8 @@ public class NyanApartment {
 							});
 				}
 				responses.add(
-						new ResponseSex("Perform cunnilingus",
-							"Get the horny cat-girl to present you with her pussy and eat her out.",
+						new ResponseSex("Куннилингус",
+							"Заставить похотливую кошкодевочку подставить вам свою киску и отсосать ей.",
 							true, true,
 							new SMNyanSex(
 									SexPosition.LYING_DOWN,
@@ -1045,15 +1045,15 @@ public class NyanApartment {
 			
 			if(Main.game.isAnalContentEnabled()) {
 				if((getActiveSexPartner() instanceof Nyan) && !Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.nyanAnalTalk)) {
-						responses.add(new Response("Ask about anal", "Ask Nyan if she'd be comfortable doing anal stuff with you.", SOLO_SEX_ANAL_TALK));
+						responses.add(new Response("Спросить об анальном сексе", "Спросить Nyan, будет ли ей комфортно заниматься анальным сексом с тобой.", SOLO_SEX_ANAL_TALK));
 					
 				} else if((getActiveSexPartner() instanceof NyanMum) && !Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.nyanmumAnalTalk)) {
-					responses.add(new Response("Ask about anal", "Ask [nyanmum.name] if she'd be comfortable doing anal stuff with you.", SOLO_SEX_ANAL_TALK));
+					responses.add(new Response("Спросить об анальном сексе", "Спросить [nyanmum.name], будет ли ей комфортно заниматься анальным сексом с тобой.", SOLO_SEX_ANAL_TALK));
 					
 				} else {
 					responses.add(
-							new ResponseSex("Perform anilingus",
-								"Get the horny cat-girl to present you with her ass and start rimming her.",
+							new ResponseSex("Заняться анилингусом",
+								"Заставить возбужденную кошкодевочку подставить тебе свою задницу и начать её лизать.",
 								true, true,
 								new SMNyanSex(
 										SexPosition.ALL_FOURS,
@@ -1093,14 +1093,14 @@ public class NyanApartment {
 						});
 					if(Main.game.getPlayer().hasPenis()) {
 						if(!penisAccess) {
-							responses.add(new Response("Anal", UtilText.parse(getActiveSexPartner(), "As you are unable to access your penis, you cannot fuck [npc.name]!"), null)); 
+							responses.add(new Response("Анал", UtilText.parse(getActiveSexPartner(), "Так как ты не можешь дотянуться до своего члена, ты не можешь трахнуть [npc.name]!"), null)); 
 							
 						} else {
 							responses.add(
-									new ResponseSex("Anal",
+									new ResponseSex("Анал",
 											getActiveSexPartner() instanceof Nyan && getNyan().isAssVirgin()
-												?"Get Nyan to drop down on all fours and present herself to you, before taking her anal virginity."
-												:"Get [pc.name] to drop down on all fours and present herself to you, before fucking her ass.",
+												?"Заставить Nyan встать на четвереньки и подставиться перед тем, как лишить её девственности в анусе."
+												:"Заставить [pc.name] встать на четвереньки и подставиться перед тем, как оттрахать ей задницу.",
 											true, true,
 											new SMNyanSex(
 													SexPosition.ALL_FOURS,
@@ -1173,10 +1173,10 @@ public class NyanApartment {
 		}
 	};
 	
-	public static final DialogueNode POST_SOLO_SEX = new DialogueNode("Finished", "", true) {
+	public static final DialogueNode POST_SOLO_SEX = new DialogueNode("Завершено", "", true) {
 		@Override
 		public String getDescription() {
-			return UtilText.parse(getActiveSexPartner(), "[npc.Name] is satisfied and puts an end to the sex...");
+			return UtilText.parse(getActiveSexPartner(), "[npc.Name] удовлетворена и прекращает секс...");
 		}
 		@Override
 		public void applyPreParsingEffects() {
@@ -1195,7 +1195,7 @@ public class NyanApartment {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Sleep", UtilText.parse(getActiveSexPartner(), "Let [npc.name] rest and go sleep with her in her bed."), POST_SOLO_SEX_SLEEP);
+				return new Response("Спать", UtilText.parse(getActiveSexPartner(), "Дать [npc.name] отдохнуть и лечь спать вместе с ней в её постель."), POST_SOLO_SEX_SLEEP);
 			}
 			return null;
 		}
@@ -1223,7 +1223,7 @@ public class NyanApartment {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Kitchen", "Head into the kitchen...", POST_SOLO_SEX_KITCHEN);
+				return new Response("Кухня", "Направиться на кухню...", POST_SOLO_SEX_KITCHEN);
 			}
 			return null;
 		}
@@ -1262,10 +1262,10 @@ public class NyanApartment {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Goodbye",
+				return new Response("Прощай",
 						Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.nyanmumGirlfriend)
-							?"Kiss Nyan and [nyanmum.name] goodbye and tell them that you'll see them soon."
-							:"Kiss Nyan goodbye and tell her that you'll see her soon.",
+							?"Поцеловать Nyan и [nyanmum.name] на прощание и сказать, что скоро увидишься с ними."
+							:"Поцеловать Nyan на прощание и сказать, что скоро увидишься с ней.",
 						POST_SEX_MORNING_NO_CONTENT) {
 					@Override
 					public void effects() {
@@ -1325,7 +1325,7 @@ public class NyanApartment {
 			boolean vaginaAccess = Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.VAGINA, true);
 			
 			if(index==1) {
-				return new ResponseSex("Perform cunnilingus", "Get the horny cat-girls to present you with their pussies and eat them both out.",
+				return new ResponseSex("Куннилингус", "Заставить похотливых кошкодевочек выставить тебе свои киски и отсосать обеим.",
 						true, true,
 						new SMNyanSex(
 								SexPosition.LYING_DOWN,
@@ -1378,7 +1378,7 @@ public class NyanApartment {
 				};
 				
 			} else if(index==2) {
-				return new ResponseSex("Fingering", "Push the horny cat-girls down on [nyanmum.namePos] bed and start fingering them.",
+				return new ResponseSex("Фингеринг", "Повалить похотливых кошкодевочек на кровать [nyanmum.namePos] и начать ласкать их пальцами.",
 						true, true,
 						new SMNyanSex(
 								SexPosition.LYING_DOWN,
@@ -1423,10 +1423,10 @@ public class NyanApartment {
 			}
 			if(Main.game.getPlayer().hasPenis()) {
 				if(!penisAccess) {
-					responses.add(new Response("Receive blowjob", "As you are unable to access your penis, you cannot have your cock sucked!", null)); 
+					responses.add(new Response("Получить минет", "Поскольку у вас нет доступа к пенису, вы не можете сосать член!", null)); 
 				} else {
 					responses.add(
-							new ResponseSex("Receive blowjob", "Get Nyan and [nyanmum.name] to suck your cock.",
+							new ResponseSex("Получить минет", "Заставить Nyan и [nyanmum.name] отсосать твой член.",
 									true, true,
 									new SMNyanSex(
 											Main.game.getPlayer().isTaur()
@@ -1473,10 +1473,10 @@ public class NyanApartment {
 			}
 			if(Main.game.getPlayer().hasVagina()) {
 				if(!vaginaAccess) {
-					responses.add(new Response("Receive cunnilingus", "As you are unable to access your vagina, you cannot receive cunnilingus!", null)); 
+					responses.add(new Response("Принять куннилингус", "Так как вы не можете получить доступ к своей вагине, вы не можете принимать куннилингус!", null)); 
 				} else {
 					responses.add(
-							new ResponseSex("Receive cunnilingus", "Get Nyan and [nyanmum.name] to eat you out.",
+							new ResponseSex("Принять куннилингус", "Заставить Nyan и [nyanmum.name] отлизать тебя.",
 									true, true,
 									new SMNyanSex(
 											Main.game.getPlayer().isTaur()
@@ -1523,11 +1523,11 @@ public class NyanApartment {
 			}
 			if(Main.game.isAnalContentEnabled()) {
 				if(!Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.nyanAnalTalk) || !Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.nyanmumAnalTalk)) {
-					responses.add(new Response("Ask about anal", "Ask Nyan and [nyanmum.name] if they'd be comfortable doing anal stuff with you.", DOUBLE_FOREPLAY_ANAL_TALK));
+					responses.add(new Response("Спросить об анальном сексе", "Спросить Nyan и [nyanmum.name], не против ли они заняться с тобой анальным сексом.", DOUBLE_FOREPLAY_ANAL_TALK));
 					
 				} else {
 					responses.add(
-							new ResponseSex("Perform anilingus", "Get the horny cat-girls to present you with their asses and start rimming them.",
+							new ResponseSex("Заняться анилингусом", "Заставить похотливых кошкодевочек выставить тебе свои задницы и начать их риммить.",
 								true, true,
 								new SMNyanSex(
 										SexPosition.ALL_FOURS,
@@ -1604,7 +1604,7 @@ public class NyanApartment {
 		}
 	};
 	
-	public static final DialogueNode DOUBLE_SEX_MAIN = new DialogueNode("Moving on", "Nyan and [nyanmum.name] seem to have had enough of foreplay for now...", true) {
+	public static final DialogueNode DOUBLE_SEX_MAIN = new DialogueNode("Идти дальше", "Похоже, Nyan и [nyanmum.name] на данный момент сыты по горло прелюдиями...", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 5*60;
@@ -1622,14 +1622,14 @@ public class NyanApartment {
 			
 			if(Main.game.getPlayer().hasPenis()) {
 				if(!penisAccess) {
-					responses.add(new Response("Missionary (Nyan)", "As you are unable to access your penis, you cannot fuck Nyan or [nyanmum.name]!", null)); 
+					responses.add(new Response("Миссионерская поза (Nyan)", "Поскольку у тебя нет доступа к члену, ты не можешь трахать Nyan или [nyanmum.name]!", null)); 
 					
 				} else {
 					responses.add(
-							new ResponseSex("Missionary (Nyan)",
+							new ResponseSex("Миссионерская поза (Nyan)",
 									getNyan().isVaginaVirgin()
-										?"Get Nyan and [nyanmum.name] to lie back on the bed and present themselves to you, before taking Nyan's virginity."
-										:"Get Nyan and [nyanmum.name] to lie back on the bed and present themselves to you, before penetrating Nyan's pussy.",
+										?"Заставь Nyan и [nyanmum.name] лечь на кровать и открыться тебе, прежде чем лишить Nyan девственности."
+										:"Заставь Nyan и [nyanmum.name] лечь на кровать и открыться тебе, прежде чем проникнуть в киску Nyan.",
 									true, true,
 									new SMNyanSex(
 											SexPosition.LYING_DOWN,
@@ -1686,11 +1686,11 @@ public class NyanApartment {
 							});
 				}
 				if(!penisAccess) {
-					responses.add(new Response("Missionary ([nyanmum.name])", "As you are unable to access your penis, you cannot fuck Nyan or [nyanmum.name]!", null)); 
+					responses.add(new Response("Миссионерская поза ([nyanmum.name])", "Поскольку у тебя нет доступа к члену, ты не можешь трахать Nyan или [nyanmum.name]!", null)); 
 					
 				} else {
 					responses.add(
-							new ResponseSex("Missionary ([nyanmum.name])", "Get Nyan and [nyanmum.name] to lie back on the bed and present themselves to you, before penetrating [nyanmum.namePos] [nyanmum.pussy+].",
+							new ResponseSex("Миссионерская поза ([nyanmum.name])", "Заставь Nyan и [nyanmum.name] лечь на кровать и открыться тебе, прежде чем проникнуть в [nyanmum.namePos] [nyanmum.pussy+].",
 									true, true,
 									new SMNyanSex(
 											SexPosition.LYING_DOWN,
@@ -1747,14 +1747,14 @@ public class NyanApartment {
 							});
 				}
 				if(!penisAccess) {
-					responses.add(new Response("Doggy-style (Nyan)", "As you are unable to access your penis, you cannot fuck Nyan or [nyanmum.name]!", null)); 
+					responses.add(new Response("Догги-стайл (Nyan)", "Поскольку у тебя нет доступа к члену, ты не можешь трахать Nyan или [nyanmum.name]!", null)); 
 					
 				} else {
 					responses.add(
-							new ResponseSex("Doggy-style (Nyan)",
+							new ResponseSex("Догги-стайл (Nyan)",
 									getNyan().isVaginaVirgin()
-										?"Get Nyan and [nyanmum.name] to get down on all fours and present themselves to you, before taking Nyan's virginity."
-										:"Get Nyan and [nyanmum.name] to get down on all fours and present themselves to you, before penetrating Nyan's pussy.",
+										?"Заставить Nyan и [nyanmum.name] встать на четвереньки и подставиться под вас, прежде чем лишить Nyan девственности."
+										:"Заставить Nyan и [nyanmum.name] встать на четвереньки и подставиться под вас, прежде чем войти в киску Nyan.",
 									true, true,
 									new SMNyanSex(
 											SexPosition.ALL_FOURS,
@@ -1811,11 +1811,11 @@ public class NyanApartment {
 							});
 				}
 				if(!penisAccess) {
-					responses.add(new Response("Doggy-style ([nyanmum.name])", "As you are unable to access your penis, you cannot fuck Nyan or [nyanmum.name]!", null)); 
+					responses.add(new Response("Догги-стайл ([nyanmum.name])", "Поскольку у тебя нет доступа к члену, ты не можешь трахать Nyan или [nyanmum.name]!", null)); 
 					
 				} else {
 					responses.add(
-							new ResponseSex("Doggy-style ([nyanmum.name])", "Get Nyan and [nyanmum.name] to get down on all fours and present themselves to you, before penetrating [nyanmum.namePos] [nyanmum.pussy+].",
+							new ResponseSex("Догги-стайл ([nyanmum.name])", "Заставить Nyan и [nyanmum.name] встать на четвереньки и подставиться под вас, прежде чем проникнуть в [nyanmum.namePos] [nyanmum.pussy+].",
 									true, true,
 									new SMNyanSex(
 											SexPosition.ALL_FOURS,
@@ -1872,17 +1872,17 @@ public class NyanApartment {
 							});
 				}
 				if(!penisAccess) {
-					responses.add(new Response("Cowgirl (Nyan)", "As you are unable to access your penis, you cannot fuck Nyan or [nyanmum.name]!", null)); 
+					responses.add(new Response("Наездница (Nyan)", "Поскольку у тебя нет доступа к члену, ты не можешь трахать Nyan или [nyanmum.name]!", null)); 
 					
 				} else if(Main.game.getPlayer().isTaur()) {
-					responses.add(new Response("Cowgirl (Nyan)", "Due to your lower [pc.legRace]'s body, you cannot use this position...", null)); 
+					responses.add(new Response("Наездница (Nyan)", "Из-за положения нижней части тела [pc.legRace] вы не можете использовать эту позу...", null)); 
 					
 				} else {
 					responses.add(
-							new ResponseSex("Cowgirl (Nyan)",
+							new ResponseSex("Наездница (Nyan)",
 									getNyan().isVaginaVirgin()
-										?"Take Nyan's virginity by having her ride your cock, while [nyanmum.name] sits on your face."
-										:"Get Nyan to ride your cock, while [nyanmum.name] sits on your face.",
+										?"Лиши Nyan девственности, позволив ей скакать на твоем члене, пока [nyanmum.name] сидит у тебя на лице."
+										:"Заставь Nyan скакать на твоем члене, пока [nyanmum.name] сидит у тебя на лице.",
 									true, true,
 									new SMNyanSex(
 											SexPosition.LYING_DOWN,
@@ -1939,14 +1939,14 @@ public class NyanApartment {
 							});
 				}
 				if(!penisAccess) {
-					responses.add(new Response("Cowgirl ([nyanmum.name])", "As you are unable to access your penis, you cannot fuck Nyan or [nyanmum.name]!", null)); 
+					responses.add(new Response("Наездница ([nyanmum.name])", "Поскольку у тебя нет доступа к члену, ты не можешь трахать Nyan или [nyanmum.name]!", null)); 
 					
 				} else if(Main.game.getPlayer().isTaur()) {
-					responses.add(new Response("Cowgirl ([nyanmum.name])", "Due to your lower [pc.legRace]'s body, you cannot use this position...", null)); 
+					responses.add(new Response("Наездница ([nyanmum.name])", "Из-за положения нижней части тела [pc.legRace] вы не можете использовать эту позу...", null)); 
 					
 				} else {
 					responses.add(
-							new ResponseSex("Cowgirl ([nyanmum.name])", "Get [nyanmum.name] to ride your cock, while Nyan sits on your face.",
+							new ResponseSex("Наездница ([nyanmum.name])", "Заставь [nyanmum.name] скакать на твоем члене, пока Nyan сидит у тебя на лице.",
 									true, true,
 									new SMNyanSex(
 											SexPosition.LYING_DOWN,
@@ -2003,10 +2003,10 @@ public class NyanApartment {
 							});
 				}
 				if(!penisAccess) {
-					responses.add(new Response("Receive blowjob", "As you are unable to access your penis, you cannot have your cock sucked!", null)); 
+					responses.add(new Response("Получить минет", "Поскольку у вас нет доступа к пенису, вы не можете сосать член!", null)); 
 				} else {
 					responses.add(
-							new ResponseSex("Receive blowjob", "Get Nyan and [nyanmum.name] to suck your cock.",
+							new ResponseSex("Получить минет", "Заставить Nyan и [nyanmum.name] отсосать твой член.",
 									true, true,
 									new SMNyanSex(
 											Main.game.getPlayer().isTaur()
@@ -2066,14 +2066,14 @@ public class NyanApartment {
 			}
 			if(Main.game.getPlayer().hasVagina()) {
 				if(!vaginaAccess) {
-					responses.add(new Response("Scissor (Nyan bottom)", "As you are unable to access your vagina, you cannot scissor with Nyan!", null));
+					responses.add(new Response("Ножницы (Nyan снизу)", "Так как ты не можешь дотянуться до своей вагины, ты не можешь заняться ножницами с Nyan!", null));
 					
 				} else if(Main.game.getPlayer().isTaur()) {
-					responses.add(new Response("Scissor (Nyan bottom)", "Due to your lower [pc.legRace]'s body, you cannot use this position...", null));
+					responses.add(new Response("Ножницы (Nyan снизу)", "Из-за положения нижней части тела [pc.legRace] вы не можете использовать эту позу...", null));
 					
 				} else {
 					responses.add(
-							new ResponseSex("Scissor (Nyan bottom)", "Get Nyan to lie back and scissor with her while [nyanmum.name] sits on her face.",
+							new ResponseSex("Ножницы (Nyan снизу)", "Заставить Nyan лечь на спину и заняться с ней ножницами, пока [nyanmum.name] сидит у неё на лице.",
 									true, true,
 									new SMNyanSex(
 											SexPosition.LYING_DOWN,
@@ -2130,14 +2130,14 @@ public class NyanApartment {
 							});
 				}
 				if(!vaginaAccess) {
-					responses.add(new Response("Scissor ([nyanmum.name] bottom)", "As you are unable to access your vagina, you cannot scissor with [nyanmum.name]!", null));
+					responses.add(new Response("Ножницы ([nyanmum.name] снизу)", "Так как вы не можете получить доступ к своей вагине, вы не можете заняться ножницами с [nyanmum.name]!", null));
 					
 				} else if(Main.game.getPlayer().isTaur()) {
-					responses.add(new Response("Scissor ([nyanmum.name] bottom)", "Due to your lower [pc.legRace]'s body, you cannot use this position...", null));
+					responses.add(new Response("Ножницы ([nyanmum.name] снизу)", "Из-за положения нижней части тела [pc.legRace] вы не можете использовать эту позу...", null));
 					
 				} else {
 					responses.add(
-							new ResponseSex("Scissor ([nyanmum.name] bottom)", "Get [nyanmum.name] to lie back and scissor with her while [nyan.name] sits on her face.",
+							new ResponseSex("Ножницы ([nyanmum.name] снизу)", "Заставить [nyanmum.name] лечь на спину и заняться с ней ножницами, пока [nyan.name] сидит у неё на лице.",
 									true, true,
 									new SMNyanSex(
 											SexPosition.LYING_DOWN,
@@ -2194,14 +2194,14 @@ public class NyanApartment {
 							});
 				}
 				if(!vaginaAccess) {
-					responses.add(new Response("Scissored (Nyan top)", "As you are unable to access your vagina, you cannot scissor with Nyan!", null));
+					responses.add(new Response("Ножницы (Nyan сверху)", "Так как ты не можешь дотянуться до своей вагины, ты не можешь заняться ножницами с Nyan!", null));
 					
 				} else if(Main.game.getPlayer().isTaur()) {
-					responses.add(new Response("Scissored (Nyan top)", "Due to your lower [pc.legRace]'s body, you cannot use this position...", null));
+					responses.add(new Response("Ножницы (Nyan сверху)", "Из-за положения нижней части тела [pc.legRace] вы не можете использовать эту позу...", null));
 					
 				} else {
 					responses.add(
-							new ResponseSex("Scissored (Nyan top)", "Lie back and get Nyan to scissor with you while [nyanmum.name] sits on your face.",
+							new ResponseSex("Ножницы (Nyan сверху)", "Лечь на спину и заставить Nyan заняться с вами ножницами, пока [nyanmum.name] сидит у вас на лице.",
 									true, true,
 									new SMNyanSex(
 											SexPosition.LYING_DOWN,
@@ -2258,14 +2258,14 @@ public class NyanApartment {
 							});
 				}
 				if(!vaginaAccess) {
-					responses.add(new Response("Scissored ([nyanmum.name] top)", "As you are unable to access your vagina, you cannot scissor with [nyanmum.name]!", null));
+					responses.add(new Response("Ножницы ([nyanmum.name] сверху)", "Так как вы не можете получить доступ к своей вагине, вы не можете заняться ножницами с [nyanmum.name]!", null));
 					
 				} else if(Main.game.getPlayer().isTaur()) {
-					responses.add(new Response("Scissored ([nyanmum.name] top)", "Due to your lower [pc.legRace]'s body, you cannot use this position...", null));
+					responses.add(new Response("Ножницы ([nyanmum.name] сверху)", "Из-за положения нижней части тела [pc.legRace] вы не можете использовать эту позу...", null));
 					
 				} else {
 					responses.add(
-							new ResponseSex("Scissored ([nyanmum.name] top)", "Lie back and get Nyan to scissor with you while [nyanmum.name] sits on your face.",
+							new ResponseSex("Ножницы ([nyanmum.name] сверху)", "Лечь на спину и заставить Nyan заняться с вами ножницами, пока [nyanmum.name] сидит у вас на лице.",
 									true, true,
 									new SMNyanSex(
 											SexPosition.LYING_DOWN,
@@ -2322,11 +2322,11 @@ public class NyanApartment {
 							});
 				}
 				if(!vaginaAccess) {
-					responses.add(new Response("Receive cunnilingus", "As you are unable to access your vagina, you cannot receive cunnilingus!", null)); 
+					responses.add(new Response("Принять куннилингус", "Так как вы не можете получить доступ к своей вагине, вы не можете принимать куннилингус!", null)); 
 					
 				} else {
 					responses.add(
-							new ResponseSex("Receive cunnilingus", "Get Nyan and [nyanmum.name] to eat you out.",
+							new ResponseSex("Принять куннилингус", "Заставить Nyan и [nyanmum.name] отлизать тебя.",
 									true, true,
 									new SMNyanSex(
 											Main.game.getPlayer().isTaur()
@@ -2379,7 +2379,7 @@ public class NyanApartment {
 							});
 				}
 				responses.add(
-						new ResponseSex("Perform cunnilingus", "Get the horny cat-girls to present you with their pussies and eat them both out.",
+						new ResponseSex("Куннилингус", "Заставить похотливых кошкодевочек выставить тебе свои киски и отсосать обеим.",
 							true, true,
 							new SMNyanSex(
 									SexPosition.LYING_DOWN,
@@ -2433,11 +2433,11 @@ public class NyanApartment {
 			
 			if(Main.game.isAnalContentEnabled()) {
 				if(!Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.nyanAnalTalk) || !Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.nyanmumAnalTalk)) {
-					responses.add(new Response("Ask about anal", "Ask Nyan and [nyanmum.name] if they'd be comfortable doing anal stuff with you.", DOUBLE_SEX_ANAL_TALK));
+					responses.add(new Response("Спросить об анальном сексе", "Спросить Nyan и [nyanmum.name], не против ли они заняться с тобой анальным сексом.", DOUBLE_SEX_ANAL_TALK));
 					
 				} else {
 					responses.add(
-							new ResponseSex("Perform anilingus", "Get the horny cat-girls to present you with their asses and start rimming them.",
+							new ResponseSex("Заняться анилингусом", "Заставить похотливых кошкодевочек выставить тебе свои задницы и начать их риммить.",
 								true, true,
 								new SMNyanSex(
 										SexPosition.ALL_FOURS,
@@ -2490,14 +2490,14 @@ public class NyanApartment {
 					
 					if(Main.game.getPlayer().hasPenis()) {
 						if(!penisAccess) {
-							responses.add(new Response("Anal (Nyan)", "As you are unable to access your penis, you cannot fuck Nyan's ass!", null)); 
+							responses.add(new Response("Анал (Nyan)", "Поскольку вы не можете дотянуться до своего члена, вы не можете трахнуть Nyan в зад!", null)); 
 							
 						} else {
 							responses.add(
-									new ResponseSex("Anal (Nyan)",
+									new ResponseSex("Анал (Nyan)",
 											getNyan().isAssVirgin()
-												?"Get Nyan and [nyanmum.name] to get down on all fours and present themselves to you, before taking Nyan's anal virginity."
-												:"Get Nyan and [nyanmum.name] to get down on all fours and present themselves to you, before penetrating Nyan's asshole.",
+												?"Заставить Nyan и [nyanmum.name] встать на четвереньки и подставить вам свои зады, прежде чем лишить Nyan девственности в анусе."
+												:"Заставить Nyan и [nyanmum.name] встать на четвереньки и подставить вам свои зады, прежде чем войти в анус Nyan.",
 											true, true,
 											new SMNyanSex(
 													SexPosition.ALL_FOURS,
@@ -2554,12 +2554,12 @@ public class NyanApartment {
 									});
 						}
 						if(!penisAccess) {
-							responses.add(new Response("Anal ([nyanmum.name])", "As you are unable to access your penis, you cannot fuck [nyanmum.namePos] ass!", null)); 
+							responses.add(new Response("Анал ([nyanmum.name])", "Поскольку вы не можете дотянуться до своего члена, вы не можете трахнуть [nyanmum.namePos] в зад!", null)); 
 							
 						} else {
 							responses.add(
-									new ResponseSex("Anal ([nyanmum.name])",
-											"Get Nyan and [nyanmum.name] to get down on all fours and present themselves to you, before penetrating [nyanmum.namePos] asshole.",
+									new ResponseSex("Анал ([nyanmum.name])",
+											"Заставьте Nyan и [nyanmum.name] встать на четвереньки и подставить свои задницы, прежде чем войти в [nyanmum.namePos] анус.",
 											true, true,
 											new SMNyanSex(
 													SexPosition.ALL_FOURS,
@@ -2654,7 +2654,7 @@ public class NyanApartment {
 		}
 	};
 	
-	public static final DialogueNode POST_DOUBLE_SEX = new DialogueNode("Finished", "Nyan and [nyanmum.name] are satisfied and put an end to the sex...", true) {
+	public static final DialogueNode POST_DOUBLE_SEX = new DialogueNode("Завершено", "Nyan и [nyanmum.name] удовлетворены, и секс заканчивается...", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			getNyan().applyWash(true, true, StatusEffect.CLEANED_SHOWER, 8*60);
@@ -2674,7 +2674,7 @@ public class NyanApartment {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Sleep", "Let the cat-girls rest and go sleep with them.", POST_DOUBLE_SEX_SLEEP);
+				return new Response("Спать", "Дайте кошкодевочкам отдохнуть и ложитесь спать вместе с ними.", POST_DOUBLE_SEX_SLEEP);
 			}
 			return null;
 		}
@@ -2702,7 +2702,7 @@ public class NyanApartment {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Kitchen", "Head into the kitchen...", POST_DOUBLE_SEX_KITCHEN);
+				return new Response("Кухня", "Направиться на кухню...", POST_DOUBLE_SEX_KITCHEN);
 			}
 			return null;
 		}
@@ -2741,7 +2741,7 @@ public class NyanApartment {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Goodbye", "Kiss Nyan and [nyanmum.name] goodbye and tell them that you'll see them soon.", POST_SEX_MORNING_NO_CONTENT) {
+				return new Response("Прощай", "Поцеловать Nyan и [nyanmum.name] на прощание и сказать, что скоро увидишься с ними.", POST_SEX_MORNING_NO_CONTENT) {
 					@Override
 					public void effects() {
 						getNyan().setCharacterReactedToPregnancy(Main.game.getPlayer(), true);

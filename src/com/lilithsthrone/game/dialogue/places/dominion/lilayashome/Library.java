@@ -103,11 +103,11 @@ public class Library {
 			if(!charactersPresent.isEmpty()) {
 				for(NPC slave : charactersPresent) {
 					UtilText.nodeContentSB.append(LilayaHomeGeneric.getSlavePresentDescription(slave,
-							"is not even bothering to pretend that [npc.sheIs] working.",
-							"appears to be half-heartedly rearranging some books.",
-							"is currently dusting the shelves and making sure that everything is in order.",
-							"is currently reorganising one of the shelves.",
-							"is dutifully making a catalogue of all the books available in the library."));
+							"даже не пытается притворяться, что [npc.sheIs] работает.",
+							"похоже, вяло переставляет какие-то книги.",
+							"сейчас протирает пыль с полок, следя за тем, чтобы всё было в порядке.",
+							"сейчас переставляет книги на одной из полок.",
+							"прилежно составляет каталог всех книг, имеющихся в библиотеке."));
 				}
 			}
 			
@@ -117,16 +117,16 @@ public class Library {
 		@Override
 		public String getResponseTabTitle(int index) {
 			if(index==0) {
-				return "Library";
+				return "Библиотека";
 				
 			} else if(index==1) {
-				return "Fast Travel";
+				return "Быстрое перемещение";
 				
 			} else if(index==2) {
-				return "Spells";
+				return "Заклинания";
 				
 			} else if(index==3) {
-				return "Races";
+				return "Расы";
 			}
 			
 			return null;
@@ -139,9 +139,9 @@ public class Library {
 				
 				if (index == 1) {
 					if(Main.game.getCurrentDialogueNode()==ARCANE_AROUSAL) {
-						return new Response("Arcane Arousal", "You are already reading this book!", null);
+						return new Response("Arcane Возбуждение", "Вы уже читаете эту книгу!", null);
 					}
-					return new Response("Arcane Arousal", "A leather-bound tome that seems to offer an insight into how the arcane works.", ARCANE_AROUSAL) {
+					return new Response("Arcane Возбуждение", "Переплетённый в кожу том, который, кажется, позволяет заглянуть в суть того, как работает Аркана.", ARCANE_AROUSAL) {
 						@Override
 						public void effects() {
 							Main.game.getDialogueFlags().setFlag(DialogueFlagValue.readBook1, true);
@@ -150,9 +150,9 @@ public class Library {
 
 				} else if (index == 2) {
 					if(Main.game.getCurrentDialogueNode()==LILITHS_DYNASTY) {
-						return new Response("Lilith's Dynasty", "You are already reading this book!", null);
+						return new Response("Династия Lilith", "Вы уже читаете эту книгу!", null);
 					}
-					return new Response("Lilith's Dynasty", "A hardback book that might give some clues as to who exactly Lilith is.", LILITHS_DYNASTY) {
+					return new Response("Династия Lilith", "Твердый переплет книги, которая может дать некоторые подсказки о том, кем именно является Lilith.", LILITHS_DYNASTY) {
 						@Override
 						public void effects() {
 							Main.game.getDialogueFlags().setFlag(DialogueFlagValue.readBook2, true);
@@ -161,9 +161,9 @@ public class Library {
 
 				} else if (index == 3) {
 					if(Main.game.getCurrentDialogueNode()==DOMINION_HISTORY) {
-						return new Response("Dominion's History", "You are already reading this book!", null);
+						return new Response("История Dominion", "Вы уже читаете эту книгу!", null);
 					}
-					return new Response("Dominion's History", "A paperback book describing the events that led to the creation of the city you currently find yourself in.", DOMINION_HISTORY) {
+					return new Response("История Dominion", "Книга в мягкой обложке, описывающая события, которые привели к созданию города, в котором вы сейчас находитесь.", DOMINION_HISTORY) {
 						@Override
 						public void effects() {
 							Main.game.getDialogueFlags().setFlag(DialogueFlagValue.readBook3, true);
@@ -172,9 +172,9 @@ public class Library {
 
 				} else if (index == 4) {
 					if(Main.game.getCurrentDialogueNode()==PREGNANCY_INFO) {
-						return new Response("Knocked Up", "You are already reading this book!", null);
+						return new Response("Беременная", "Вы уже читаете эту книгу!", null);
 					}
-					return new Response("Knocked Up", "A small paperback book which contains all the information you'd ever need concerning pregnancies in this world.", PREGNANCY_INFO) {
+					return new Response("Беременная", "Небольшая книга в мягкой обложке, содержащая всю необходимую информацию о беременностях в этом мире.", PREGNANCY_INFO) {
 						@Override
 						public void effects() {
 							Main.game.getDialogueFlags().setFlag(DialogueFlagValue.readBook4, true);
@@ -183,9 +183,9 @@ public class Library {
 
 				} else if(index==5) {
 					if(Main.game.getCurrentDialogueNode()==FERAL_HISTORY) {
-						return new Response("The History of Ferals", "You are already reading this book!", null);
+						return new Response("История дикарей", "Вы уже читаете эту книгу!", null);
 					}
-					return new Response("The History of Ferals", "A hardback book detailing the history of feral transformations in the society of Lilith's Realm.", FERAL_HISTORY) {
+					return new Response("История дикарей", "Книга в твердом переплете, подробно описывающая историю превращений в дикарей в обществе королевства Lilith.", FERAL_HISTORY) {
 						@Override
 						public void effects() {
 							Main.game.getDialogueFlags().setFlag(DialogueFlagValue.readBook5, true);
@@ -194,9 +194,9 @@ public class Library {
 					
 				} else if (index == 6) {
 					if(Main.game.getCurrentDialogueNode()==DOMINION_MAP) {
-						return new Response("City Map", "You are already viewing the map of Dominion!", null);
+						return new Response("Карта города", "Вы уже смотрите на карту Dominion!", null);
 					}
-					return new Response("City Map", "A large, framed map of Dominion hangs on one wall. Take a picture of it.", DOMINION_MAP) {
+					return new Response("Карта города", "На одной из стен висит большая карта Dominion в рамке. Сфотографировать её.", DOMINION_MAP) {
 						@Override
 						public void effects() {
 							Cell[][] grid = Main.game.getWorlds().get(WorldType.DOMINION).getGrid();
@@ -210,9 +210,9 @@ public class Library {
 	
 				} else if (index == 7 && Main.game.getPlayer().isQuestProgressGreaterThan(QuestLine.SIDE_SLAVERY, Quest.SIDE_SLAVER_NEED_RECOMMENDATION)) {
 					if(Main.game.getCurrentDialogueNode()==SLAVERY_HISTORY) {
-						return new Response("People as Property", "You are already reading this book!", null);
+						return new Response("Люди как собственность", "Вы уже читаете эту книгу!", null);
 					}
-					return new Response("People as Property", "A thick, hardback book detailing the history and legality of slavery in Lilith's Realm.", SLAVERY_HISTORY) {
+					return new Response("Люди как собственность", "Толстая книга в твердом переплете, подробно описывающая историю и законность рабства в царстве Lilith.", SLAVERY_HISTORY) {
 						@Override
 						public void effects() {
 							Main.game.appendToTextStartStringBuilder(UtilText.parseFromXMLFile("places/dominion/lilayasHome/library", "SLAVERY_HISTORY"));
@@ -222,8 +222,8 @@ public class Library {
 	
 				} else if (index == 8 && Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.readBookSlavery)) {
 					if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.getDialogueFlagValueFromId("acexp_dungeon_found"))) {
-						return new Response("Lilaya's dungeon",
-								"Pull the thick book bearing the title 'Lilaya's Dirty Secrets' to open the secret passage down to Lilaya's dungeon.",
+						return new Response("Подземелье Lilaya",
+								"Потяните за толстую книгу с названием «Грязные секреты Lilaya», чтобы открыть секретный проход в подземелье Lilaya.",
 								DialogueManager.getDialogueFromId("acexp_dominion_lilaya_dungeon_stairsUp")) {
 							@Override
 							public void effects() {
@@ -234,7 +234,7 @@ public class Library {
 						};
 						
 					} else {
-						return new Response("'Lilaya's Dirty Secrets'", "A thick book bearing the title 'Lilaya's Dirty Secrets' has caught your eye...", DUNGEON_TRIGGER) {
+						return new Response("«Грязные секреты Lilaya»", "Ваш взгляд упал на толстую книгу под названием «Грязные секреты Lilaya»...", DUNGEON_TRIGGER) {
 							@Override
 							public void effects() {
 								Main.game.getDialogueFlags().setFlag(DialogueFlagValue.getDialogueFlagValueFromId("acexp_dungeon_found"), true);
@@ -274,25 +274,25 @@ public class Library {
 				
 			} else if(responseTab==3) {
 				if (index == 1) {
-					return new Response("Ancient Ones", "A section of the library dedicated to books concerning demonic and angelic races.", ELDER_RACES);
+					return new Response("Древние", "Секция библиотеки, посвященная книгам о демонических и ангельских расах.", ELDER_RACES);
 
 				} else if (index == 2) {
-					return new Response("Races of Dominion", "A section of the library dedicated to books concerning the predominant races within the city.", DOMINION_RACES);
+					return new Response("Расы Dominion", "Раздел библиотеки, посвященный книгам о преобладающих расах города.", DOMINION_RACES);
 
 				} else if (index == 3) {
-					return new Response("Foloi Fields", "A section of the library dedicated to books about the area known as the Foloi Fields.", FIELDS_BOOKS);
+					return new Response("Поля Фолой", "Раздел библиотеки, посвященный книгам о местности, известной как Поля Фолой.", FIELDS_BOOKS);
 
 				} else if (index == 4) {
-					return new Response("Mountains", "A section of the library dedicated to books on the area known as the Mountains of the Moon.", MOUNTAIN_BOOKS);
+					return new Response("Горы", "Раздел библиотеки, посвященный книгам о местности, известной как Лунные горы.", MOUNTAIN_BOOKS);
 
 				} else if (index == 5) {
-					return new Response("Endless Sea", "A section of the library dedicated to books on the area known as the Endless Sea.", SEA_BOOKS);
+					return new Response("Бескрайнее море", "Раздел библиотеки, посвященный книгам о местности, известной как Бескрайнее море.", SEA_BOOKS);
 
 				} else if (index == 6) {
-					return new Response("The Jungle", "A section of the library dedicated to books on the area known as the Jungle.", JUNGLE_BOOKS);
+					return new Response("Джунгли", "Раздел библиотеки, посвященный книгам о местности, известной как Джунгли.", JUNGLE_BOOKS);
 
 				} else if (index == 7) {
-					return new Response("The Desert", "A section of the library dedicated to books about the desert to the south of Lilith's Realm.", DESERT_BOOKS);
+					return new Response("Пустыня", "Секция библиотеки, посвященная книгам о пустыне к югу от владений Lilith.", DESERT_BOOKS);
 				}
 			}
 			
@@ -301,7 +301,7 @@ public class Library {
 	};
 	
 	private static Response getSpellResponse(Spell spell) {
-		return new Response(spell.getName(), "Read about the spell '"+spell.getName()+"'.", SPELL_BOOK) {
+		return new Response(spell.getName(), "Прочитать о заклинании '"+spell.getName()+"'.", SPELL_BOOK) {
 			@Override
 			public void effects() {
 				Main.game.getTextEndStringBuilder().append(ItemType.getSpellBookType(spell).getEffects().get(0).applyEffect(Main.game.getPlayer(), Main.game.getPlayer(), 0));
@@ -442,8 +442,8 @@ public class Library {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Lilaya's dungeon",
-						"Head down the spiral staircase to Lilaya's dungeon.",
+				return new Response("Подземелье Lilaya",
+						"Спуститься по винтовой лестнице в подземелье Lilaya.",
 						DialogueManager.getDialogueFromId("acexp_dominion_lilaya_dungeon_stairsUp")) {
 					@Override
 					public void effects() {
@@ -452,7 +452,7 @@ public class Library {
 					}
 				};
 			} else if(index==2) {
-				return new Response("Maybe later", "Decide against heading down to Lilaya's dungeon for now...", DUNGEON_TRIGGER_BACK);
+				return new Response("Может быть, позже", "Решить пока не спускаться в подземелье Lilaya...", DUNGEON_TRIGGER_BACK);
 			}
 			return null;
 		}
@@ -476,13 +476,7 @@ public class Library {
 	public static final DialogueNode ELDER_RACES = new DialogueNode("", "", false) {
 		@Override
 		public String getContent() {
-			return "<p>"
-						+ "Walking down one of the aisles, you find yourself surrounded by shelving that's been carved out of dark purple stone, and as you pass, the polished surface glistens and sparkles as it reflects the light from the overhead lamps."
-						+ " You're alarmed to discover that as you touch this strange material, a sexual thrill runs through your body."
-					+ "</p>"
-					+ "<p>"
-						+ "It looks as though the books in this particular section are concerned with demonic history and trivia, and while most of them wouldn't really be worth your time, there are a few that catch your attention..."
-					+ "</p>";
+			return "<p>Шагая по одному из проходов, вы оказываетесь в окружении стеллажей, высеченных из темно-пурпурного камня; когда вы проходите мимо, их полированная поверхность блестит и искрится, отражая свет ламп над головой. К вашему удивлению, стоит вам коснуться этого странного материала, как по телу пробегает волна сексуального возбуждения.</p><p>Похоже, что книги в этой секции посвящены истории демонов и разным мелочам, и хотя большинство из них вряд ли стоят вашего времени, несколько штук привлекают ваше внимание...</p>";
 		}
 
 		@Override
@@ -501,7 +495,7 @@ public class Library {
 					}
 				}
 				if(index == 0) {
-					return new Response("Back", "Return to the race index.", LIBRARY);
+					return new Response("Назад", "Вернуться к списку рас.", LIBRARY);
 					
 				} else if(index>0 && index-1<raceResponses.size()) {
 					return raceResponses.get(index-1);
@@ -519,19 +513,7 @@ public class Library {
 	public static final DialogueNode DOMINION_RACES = new DialogueNode("", "", false) {
 		@Override
 		public String getContent() {
-			return "<p>"
-						+ "Walking down one of the aisles, you find yourself surrounded by heavy wooden shelves, fastened together by prominent beams of iron and steel."
-						+ " A lot of the books here seem to be about local history of Dominion's many districts, and, while fascinating for a historian, they don't offer much use to you."
-					+ "</p>"
-					+ "<p>"
-						+ "You notice that a couple of the shelves look a little different from the others."
-						+ " The top-most shelf seems to be decorated to make it look as though it's crafted from twigs, just like a bird's nest."
-						+ " The shelf nearest to the floor has a very smooth surface, almost like the wood as been transmuted into stone."
-						+ " It looks like it would be moist to the touch."
-					+ "</p>"
-					+ "<p>"
-						+ "Despite most of these books not being worth your time, there are a few here and there that detail the many races found within the city, and you wonder if you should give them a read..."
-					+ "</p>";
+			return "<p>Прогуливаясь по одному из проходов, вы обнаруживаете, что окружены массивными деревянными стеллажами, скрепленными мощными балками из железа и стали. Кажется, большинство книг здесь посвящено истории различных районов Dominion, и, хотя для историка они могут быть крайне любопытны, для вас они не представляют особой пользы.</p><p>Вы замечаете, что пара полок немного отличается от остальных. Самая верхняя полка словно украшена так, будто она сплетена из веток, напоминая птичье гнездо. Полка, расположенная ближе всего к полу, имеет очень гладкую поверхность, будто дерево превратилось в камень. Кажется, на ощупь она будет влажной.</p><p>Несмотря на то, что большинство этих книг не стоят вашего времени, здесь попадаются редкие экземпляры, подробно описывающие многочисленные расы города, и вы задаетесь вопросом, не стоит ли их почитать...</p>";
 		}
 
 		@Override
@@ -550,7 +532,7 @@ public class Library {
 					}
 				}
 				if(index == 0) {
-					return new Response("Back", "Return to the race index.", LIBRARY);
+					return new Response("Назад", "Вернуться к списку рас.", LIBRARY);
 					
 				} else if(index>0 && index-1<raceResponses.size()) {
 					return raceResponses.get(index-1);
@@ -568,15 +550,7 @@ public class Library {
 	public static final DialogueNode FIELDS_BOOKS = new DialogueNode("", "", false) {
 		@Override
 		public String getContent() {
-			return "<p>"
-						+ "As you walk down one of the library's many aisles, you notice that the air feels somehow fresher than normal."
-						+ " Realising that it must be an arcane enchantment of some sort, you take a closer look at some of the shelves around you."
-					+ "</p>"
-					+ "<p>"
-						+ "At first glance, they look to be crafted from blocks of sod, but upon closer inspection, you see that it's actually masterfully-engraved pieces of wood."
-						+ " One shelf looks like the sod is covered in snow, and you can feel the cold wafting off of it."
-						+ " The books that they hold all seem to be related to the Foloi Fields and the many races found there, which would explain the pastoral scent and appearance of this particular section."
-					+ "</p>";
+			return "<p>Проходя по одному из многочисленных проходов библиотеки, вы замечаете, что воздух кажется каким-то необычайно свежим. Осознав, что это, должно быть, какое-то аркана-заклинание, вы начинаете внимательнее рассматривать ближайшие к вам полки.</p><p>На первый взгляд кажется, будто они сделаны из пластов дерна, но при ближайшем рассмотрении выясняется, что это на самом деле искусно вырезанные куски дерева. Одна полка выглядит так, будто дерн покрыт снегом, и вы почти физически ощущаете исходящий от нее холод. Книги на них, судя по всему, посвящены Полям Фолой и множеству обитающих там рас, что объясняет пасторальный аромат и облик этого конкретного раздела.</p>";
 		}
 
 		@Override
@@ -595,7 +569,7 @@ public class Library {
 					}
 				}
 				if(index == 0) {
-					return new Response("Back", "Return to the race index.", LIBRARY);
+					return new Response("Назад", "Вернуться к списку рас.", LIBRARY);
 					
 				} else if(index>0 && index-1<raceResponses.size()) {
 					return raceResponses.get(index-1);
@@ -612,14 +586,7 @@ public class Library {
 	public static final DialogueNode JUNGLE_BOOKS = new DialogueNode("", "", false) {
 		@Override
 		public String getContent() {
-			return "<p>"
-						+ "The aisle you find yourself [pc.walking] down has had an arcane enchantment placed upon it, which is creating a hot, humid atmosphere."
-						+ " The shelves to either side of you have been formed from huge, living pieces of dark wood, and here and there, small tropical plants are growing from its surface."
-					+ "</p>"
-					+ "<p>"
-						+ "Thanks once again to the arcane enchantment, this environment doesn't seem to be damaging the many books which are on display, and as you pass them by, you see that they're almost exclusively related to jungle topics."
-						+ " Coming to a halt half-way down the aisle, you see that some of the nearby books are related to the many races found in the northern jungles, and you wonder whether you should stop and read some of them..."
-					+ "</p>";
+			return "<p>Проход, по которому вы идете [pc.walking], окутан арканой чарой, создающей жаркую и влажную атмосферу. Полки по обе стороны от вас сделаны из огромных кусков живого темного дерева, на поверхности которых то и дело пробиваются маленькие тропические растения.</p><p>Благодаря арканой чаре, эта среда, кажется, не вредит множеству выставленных здесь книг, и, проходя мимо них, вы замечаете, что они почти исключительно посвящены джунглям. Остановившись на середине прохода, вы видите, что некоторые из ближайших книг повествуют о многочисленных расах северных джунглей, и задаетесь вопросом: стоит ли остановиться и почитать одну из них...</p>";
 		}
 		@Override
 		public String getResponseTabTitle(int index) {
@@ -636,7 +603,7 @@ public class Library {
 					}
 				}
 				if(index == 0) {
-					return new Response("Back", "Return to the race index.", LIBRARY);
+					return new Response("Назад", "Вернуться к списку рас.", LIBRARY);
 					
 				} else if(index>0 && index-1<raceResponses.size()) {
 					return raceResponses.get(index-1);
@@ -653,14 +620,7 @@ public class Library {
 	public static final DialogueNode MOUNTAIN_BOOKS = new DialogueNode("", "", false) {
 		@Override
 		public String getContent() {
-			return "<p>"
-						+ "[pc.Walking] down one of the many aisles in Lilaya's library, you become aware of the fact that the air around you is significantly colder and thinner than it should be."
-						+ " Realising that it must be due to an arcane enchantment of some sort, you look around at the shelves to either side of you and see that they're made out of roughly-hewn rock."
-						+ " The books sitting upon them seem to all be related to mountainous topics, letting you know that the arcane enchantment must be to give a sense of atmosphere to the high-altitude theme of this area."
-					+ "</p>"
-					+ "<p>"
-						+ "A collection of books near to hand appear to be related to the many races which call the Mountains of the Moon their home, and you wonder whether you should stop and read some of them..."
-					+ "</p>";
+			return "<p>[pc.Walking] спускаясь по одному из многочисленных проходов в библиотеке Lilaya, вы осознаете, что воздух вокруг вас значительно холоднее и разреженнее, чем должен быть. Понимая, что это, должно быть, результат какого-то арканального зачарования, вы осматриваете полки по обе стороны от себя и видите, что они сделаны из грубо отесанного камня. Книги на них, кажется, все так или иначе связаны с горной тематикой, что наводит на мысль: арканальное зачарование призвано создать атмосферу, соответствующую высокогорному стилю этого места.</p><p>Под рукой оказывается коллекция книг, посвященных множеству рас, населяющих Лунные горы, и вы задумываетесь, не стоит ли остановиться и почитать одну из них...</p>";
 		}
 		@Override
 		public String getResponseTabTitle(int index) {
@@ -677,7 +637,7 @@ public class Library {
 					}
 				}
 				if(index == 0) {
-					return new Response("Back", "Return to the race index.", LIBRARY);
+					return new Response("Назад", "Вернуться к списку рас.", LIBRARY);
 					
 				} else if(index>0 && index-1<raceResponses.size()) {
 					return raceResponses.get(index-1);
@@ -694,14 +654,7 @@ public class Library {
 	public static final DialogueNode SEA_BOOKS = new DialogueNode("", "", false) {
 		@Override
 		public String getContent() {
-			return "<p>"
-						+ "The faint sound of waves lapping on the shore can be heard as you [pc.walk] down one of the many aisles of books in Lilaya's library."
-						+ " Breathing in the refreshing, salty smell of the sea, you realise that this section has had an arcane enchantment placed upon it."
-						+ " With the shelves made out of what appears to be living coral and pieces of driftwood, you're given all the clues you need to deduce that this aisle is dedicated to books on the topic of the sea."
-					+ "</p>"
-					+ "<p>"
-						+ "Stopping to take a closer look at some of the tomes on offer, you see that there are several related to the many races found in the Endless Sea, and you wonder whether you should take some time out to do a spot of reading..."
-					+ "</p>";
+			return "<p>Слабый звук волн, плещущихся о берег, доносится до вас, пока вы [pc.walk] по одному из многочисленных книжных рядов в библиотеке Lilaya. Вдыхая освежающий соленый запах моря, вы понимаете, что на этот отдел наложено аркана-заклинание. Полки, сделанные, судя по всему, из живого коралла и обломков плавника, дают вам все необходимые подсказки, чтобы сделать вывод: этот ряд посвящен книгам о море.</p><p>Остановившись, чтобы поближе рассмотреть представленные фолианты, вы замечаете, что некоторые из них посвящены множеству рас, обитающих в Бескрайнем море, и задумываетесь, не стоит ли вам выкроить немного времени на чтение...</p>";
 		}
 		@Override
 		public String getResponseTabTitle(int index) {
@@ -718,7 +671,7 @@ public class Library {
 					}
 				}
 				if(index == 0) {
-					return new Response("Back", "Return to the race index.", LIBRARY);
+					return new Response("Назад", "Вернуться к списку рас.", LIBRARY);
 					
 				} else if(index>0 && index-1<raceResponses.size()) {
 					return raceResponses.get(index-1);
@@ -735,15 +688,7 @@ public class Library {
 	public static final DialogueNode DESERT_BOOKS = new DialogueNode("", "", false) {
 		@Override
 		public String getContent() {
-			return "<p>"
-						+ "[pc.Walking] down one of the library's many aisles, you can't help but notice how the air is significantly hotter and drier than elsewhere in the room."
-						+ " The arcane enchantment responsible for this effect seems to have been created to fit with the theme of the books on the shelves, as they appear to all be about topics related to the desert to the south of Lilith's Realm."
-						+ " The shelves themselves are also in keeping with this theme, as they're built out of thick blocks of marble, with curious hieroglyphics carved into their surface."
-					+ "</p>"
-					+ "<p>"
-						+ "Stopping half-way down the aisle, you look over the books and see that several of them are related to the races found in the desert."
-						+ " Wondering if they may contain useful information, you think that it may be a good idea to stop and read through them..."
-					+ "</p>";
+			return "<p>[pc.Walking], спускаясь по одному из многочисленных проходов библиотеки, вы невольно замечаете, что воздух здесь значительно жарче и суше, чем в остальной части комнаты. Аркана-зачарование, вызывающее этот эффект, кажется, было создано в тон книгам на полках, ведь все они, судя по всему, посвящены темам, связанным с пустыней к югу от владений Lilith. Сами полки также выдержаны в этой тематике: они сделаны из массивных мраморных блоков с вырезанными на поверхности причудливыми иероглифами.</p><p>Остановившись на полпути, вы осматриваете книги и замечаете, что несколько из них посвящены расам, обитающим в пустыне. Задавшись вопросом, не содержат ли они полезную информацию, вы решаете, что было бы неплохо остановиться и прочитать их...</p>";
 		}
 		@Override
 		public String getResponseTabTitle(int index) {
@@ -760,7 +705,7 @@ public class Library {
 					}
 				}
 				if(index == 0) {
-					return new Response("Back", "Return to the race index.", LIBRARY);
+					return new Response("Назад", "Вернуться к списку рас.", LIBRARY);
 					
 				} else if(index>0 && index-1<raceResponses.size()) {
 					return raceResponses.get(index-1);
@@ -786,7 +731,7 @@ public class Library {
 			};
 			
 		} else {
-			return new Response(book.getName(false), "You haven't discovered this book yet!", null);
+			return new Response(book.getName(false), "Вы еще не открыли эту книгу!", null);
 		}
 	}
 }

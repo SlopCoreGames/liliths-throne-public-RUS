@@ -85,7 +85,7 @@ public class DominionPlaces {
 		}
 		
 		if(Main.game.getPlayerCell().getPlace().getPlaceType()==PlaceType.DOMINION_CALLIE_BAKERY) {
-			mommySB.append("<p>[style.boldBrown(Пекарня The Creamy Bakey:)]</p>");
+			mommySB.append("<p>[style.boldBrown(Пекарня The Creamy Bakery:)]</p>");
 			mommySB.append(UtilText.parseFromXMLFile("nnxx/callie_bakery", "EXTERIOR"));
 		}
 		
@@ -187,33 +187,33 @@ public class DominionPlaces {
 				int dateCost = 4000;
 				if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.nyanWeekendDated)) {
 					if(!Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.nyanmumDateCompleted)) {
-						mommyResponses.add(new Response("Двойное свидание ("+UtilText.formatAsMoneyUncoloured(dateCost, "span")+")",
+						mommyResponses.add(new Response("Двойное свидание ("+UtilText.formatAsMoneyUncoloured(dateCost, "охват")+")",
 								"На этих выходных ты уже водил Nyan на свидание. Придется ждать следующих выходных, чтобы выбраться на двойное свидание с ней и [nyanmum.name]...",
 								null));
 					} else {
-						mommyResponses.add(new Response("Двойное свидание ("+UtilText.formatAsMoneyUncoloured(dateCost, "span")+")",
+						mommyResponses.add(new Response("Двойное свидание ("+UtilText.formatAsMoneyUncoloured(dateCost, "охват")+")",
 								"На этих выходных ты уже водил Nyan и [nyanmum.name] на свидание. Придется ждать следующих выходных, чтобы выбраться с ними снова...",
 								null));
 					}
 					
 				} else if((Main.game.getDayOfWeek()==DayOfWeek.FRIDAY || Main.game.getDayOfWeek()==DayOfWeek.SATURDAY) && (Main.game.isHourBetween(20, 23))) {
 					if(Main.game.getNpc(Nyan.class).getWorldLocation()!=WorldType.NYANS_APARTMENT) {
-						mommyResponses.add(new Response("Двойное свидание ("+UtilText.formatAsMoneyUncoloured(dateCost, "span")+")",
+						mommyResponses.add(new Response("Двойное свидание ("+UtilText.formatAsMoneyUncoloured(dateCost, "охват")+")",
 								"Nyan и [nyanmum.name] сейчас нет дома. Придется зайти после того, как закончится их рабочий день...",
 								null));
 						
 					} else if(Main.game.getPlayer().getMoney()<dateCost) {
-						mommyResponses.add(new Response("Двойное свидание ("+UtilText.formatAsMoneyUncoloured(dateCost, "span")+")",
+						mommyResponses.add(new Response("Двойное свидание ("+UtilText.formatAsMoneyUncoloured(dateCost, "охват")+")",
 								"'Дубовая поляна' — очень дорогое место для свидания. Тебе понадобится как минимум "+Util.intToString(dateCost)+" огней, прежде чем пригласить Nyan и [nyanmum.name] на свидание туда.",
 								null));
 						
 					} else if(!Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.MOUTH, true)) {
-						mommyResponses.add(new Response("Двойное свидание ("+UtilText.formatAsMoneyUncoloured(dateCost, "span")+")",
+						mommyResponses.add(new Response("Двойное свидание ("+UtilText.formatAsMoneyUncoloured(dateCost, "охват")+")",
 								"Ты не сможешь пойти на свидание в ресторан, если не сможешь ничего съесть!<br/>[style.italicsMinorBad(Чтобы пригласить Nyan и [nyanmum.name] на свидание, тебе нужно иметь доступ к своему рту...)]",
 								null));
 						
 					} else {
-						mommyResponses.add(new Response("Двойное свидание ("+UtilText.formatAsMoney(dateCost, "span")+")",
+						mommyResponses.add(new Response("Двойное свидание ("+UtilText.formatAsMoney(dateCost, "охват")+")",
 								"Забери Nyan и [nyanmum.name] из их жилого дома и отвези их на свидание в ресторан 'Дубовая поляна'.",
 								Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.nyanmumGirlfriend)
 									?NyanDateFinalRepeat.DOUBLE_DATE_START
@@ -221,7 +221,7 @@ public class DominionPlaces {
 					}
 					
 				} else {
-					mommyResponses.add(new Response("Двойное свидание ("+UtilText.formatAsMoneyUncoloured(dateCost, "span")+")",
+					mommyResponses.add(new Response("Двойное свидание ("+UtilText.formatAsMoneyUncoloured(dateCost, "охват")+")",
 							"Сейчас ты не можешь пригласить Nyan и [nyanmum.name] на свидание...<br/><i>Нужно, чтобы это был либо а "
 								+ (Main.game.getDayOfWeek()==DayOfWeek.FRIDAY
 									?"[style.italicsMinorGood(Пятница)]"

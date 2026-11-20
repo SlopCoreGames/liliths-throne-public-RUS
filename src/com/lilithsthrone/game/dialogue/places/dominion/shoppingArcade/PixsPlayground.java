@@ -15,7 +15,7 @@ import com.lilithsthrone.world.places.PlaceType;
  */
 public class PixsPlayground {
 	
-	public static final DialogueNode GYM_EXTERIOR = new DialogueNode("Pix's Playground (Exterior)", "", false) {
+	public static final DialogueNode GYM_EXTERIOR = new DialogueNode("Игровая площадка Пикс (Снаружи)", "", false) {
 		@Override
 		public String getContent() {
 			return UtilText.parseFromXMLFile("places/dominion/shoppingArcade/pixsPlayground", "GYM_EXTERIOR");
@@ -28,8 +28,8 @@ public class PixsPlayground {
 		public Response getResponse(int responseTab, int index) {
 			if(responseTab==0) {
 				if (index == 1) {
-					return new Response("Enter",
-							"Enter the gym.",
+					return new Response("Войти",
+							"Войти в спортзал.",
 							DialogueManager.getDialogueFromId("innoxia_places_dominion_shopping_arcade_gym_exit_initial_entry")) {
 						@Override
 						public void effects() {

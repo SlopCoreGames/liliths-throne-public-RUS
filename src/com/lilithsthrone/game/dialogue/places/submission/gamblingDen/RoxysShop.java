@@ -59,7 +59,7 @@ public class RoxysShop {
 		return ratGCumAdd!=null && ratGCumAdd.getProviderIDs().contains(Main.game.getNpc(Roxy.class).getId());
 	}
 	
-	public static final DialogueNode TRADER_EXTERIOR = new DialogueNode("Roxy's Fun Box", "", false) {
+	public static final DialogueNode TRADER_EXTERIOR = new DialogueNode("Веселая коробочка Рокси", "", false) {
 		@Override
 		public String getContent() {
 			return UtilText.parseFromXMLFile("places/submission/gamblingDen/roxysShop", "TRADER_EXTERIOR");
@@ -67,13 +67,13 @@ public class RoxysShop {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Enter", "[pc.Step] inside 'Roxy's Fun Box' and take a look around...", TRADER);
+				return new Response("Войти", "[pc.Step] войти в «Веселую коробочку Рокси» и осмотреться...", TRADER);
 			}
 			return null;
 		}
 	};
 	
-	public static final DialogueNode TRADER = new DialogueNode("Roxy's Fun Box", "", true) {
+	public static final DialogueNode TRADER = new DialogueNode("Веселая коробочка Рокси", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			ItemEffectType.CIGARETTE.applyEffect(null, null, null, 0, Main.game.getNpc(Roxy.class), Main.game.getNpc(Roxy.class), null);
@@ -111,7 +111,7 @@ public class RoxysShop {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==0) {
-				return new Response("Exit", "Head out of Roxy's shop...", PlaceType.GAMBLING_DEN_CORRIDOR.getDialogue(false)){
+				return new Response("Выход", "Выйти из лавки Рокси...", PlaceType.GAMBLING_DEN_CORRIDOR.getDialogue(false)){
 					@Override
 					public void effects() {
 						Main.game.getDialogueFlags().values.add(DialogueFlagValue.roxyIntroduced);
@@ -121,7 +121,7 @@ public class RoxysShop {
 				
 			} else if (index == 1) {
 				if(!Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.roxyIntroduced)) {
-					return new Response("Refuse", "Tell Roxy that you're only interested in having a look around her shop.", TRADER_REPLY_NO){
+					return new Response("Отказаться", "Сказать Рокси, что ты просто хочешь осмотреться в её лавке.", TRADER_REPLY_NO){
 						@Override
 						public void effects() {
 							Main.game.getDialogueFlags().values.add(DialogueFlagValue.roxyIntroduced);
@@ -129,7 +129,7 @@ public class RoxysShop {
 					};
 					
 				} else {
-					return new ResponseTrade("Trade", "Trade with Roxy.", Main.game.getNpc(Roxy.class)){
+					return new ResponseTrade("Торговать", "Торговать с Рокси.", Main.game.getNpc(Roxy.class)){
 						@Override
 						public void effects() {
 							Main.game.getDialogueFlags().values.add(DialogueFlagValue.roxyIntroduced);
@@ -140,18 +140,18 @@ public class RoxysShop {
 			} else if (index == 2) {
 				if(isAddictedToRoxy()) { // Repeat oral:
 					if(!Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.MOUTH, true)) {
-						return new Response("Get fix ("+UtilText.formatAsMoneyUncoloured(1000, "span")+")",
-								"You can only service Roxy if you're able to gain access to your mouth!",
+						return new Response("Починить ("+UtilText.formatAsMoneyUncoloured(1000, "охват")+")",
+								"Ты сможешь обслужить Рокси, только если научишься управлять своим ртом!",
 								null);
 						
 					} else if(Main.game.getPlayer().getMoney()<1000) {
-						return new Response("Get fix ("+UtilText.formatAsMoneyUncoloured(1000, "span")+")",
-								"You don't have the one thousand flames that Roxy is asking for!",
+						return new Response("Починить ("+UtilText.formatAsMoneyUncoloured(1000, "охват")+")",
+								"У тебя нет той тысячи огней, которую просит Рокси!",
 								null);
 						
 					} else {
-						return new ResponseSex("Get fix ("+UtilText.formatAsMoney(1000, "span")+")",
-								"Desperate to get another fix of her addictive girl cum, you agree to <b>pay Roxy 1000 flames</b> to get her to sit on your face for an hour.",
+						return new ResponseSex("Починить ("+UtilText.formatAsMoney(1000, "охват")+")",
+								"Отчаянно желая получить еще одну дозу ее вызывающей зависимость девичьей спермы, вы соглашаетесь <b>заплатить Рокси 1000 огней</b>, чтобы она час сидела у вас на лице.",
 								Util.newArrayListOfValues(Fetish.FETISH_ORAL_GIVING), null, CorruptionLevel.TWO_HORNY, null, null, null,
 								true, false,
 								new SMRoxyPussyLicker(
@@ -175,7 +175,7 @@ public class RoxysShop {
 					
 				} else { // Perform oral:
 					if(Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.MOUTH, true)) {
-						return new ResponseSex("Lick for item", "Agree to let Roxy sit on your face and eat her out until she cums in exchange for a random item from her shop.",
+						return new ResponseSex("Лизать ради предмета", "Согласиться на то, чтобы Рокси села вам на лицо, и ласкать ее до самого оргазма в обмен на случайный предмет из ее лавки.",
 								Util.newArrayListOfValues(Fetish.FETISH_ORAL_GIVING), null, CorruptionLevel.TWO_HORNY, null, null, null,
 								true, false,
 								new SMRoxyPussyLicker(
@@ -196,12 +196,12 @@ public class RoxysShop {
 						};
 						
 					} else {
-						return new Response("Lick for item", "You can only service Roxy if you're able to gain access to your mouth!", null);
+						return new Response("Лизать ради предмета", "Ты сможешь обслужить Рокси, только если научишься управлять своим ртом!", null);
 					}
 				}
 				
 			} else if(index==3 && Main.game.getNpc(Vengar.class).isSlave()) {
-				return new Response("Vengar", "Ask Roxy if you can talk to Vengar.", VENGAR);
+				return new Response("Венгар", "Спросить Рокси, можно ли поговорить с Венгаром.", VENGAR);
 				
 				
 			} else if(index==4
@@ -211,7 +211,7 @@ public class RoxysShop {
 					&& !Main.game.getPlayer().isQuestFailed(QuestLine.SIDE_REBEL_BASE_FIREBOMBS)) {
 				if(Main.game.getPlayer().isQuestProgressLessThan(QuestLine.SIDE_REBEL_BASE_FIREBOMBS, Quest.REBEL_BASE_FIREBOMBS_FINISH)) {
 					if(Main.game.getPlayer().hasWeaponType(WeaponType.getWeaponTypeFromId("dsg_hlf_weap_pbomb"), true)) {
-						return new Response("Firebombs", "Show Roxy the firebombs you recovered to see if she has a way of getting or making more.<br/>[style.boldBad(You will lose one firebomb.)] ", FIREBOMBS) {
+						return new Response("Огненные бомбы", "Показать Рокси найденные огненные бомбы, чтобы узнать, может ли она достать или изготовить еще. <br/>[style.boldBad(Вы потеряете одну огненную бомбу.)] ", FIREBOMBS) {
 							@Override
 							public void effects() {
 								Main.game.getTextEndStringBuilder().append(Main.game.getPlayer().setQuestProgress(QuestLine.SIDE_REBEL_BASE_FIREBOMBS, Quest.REBEL_BASE_FIREBOMBS_FINISH));
@@ -244,9 +244,8 @@ public class RoxysShop {
 						};
 						
 					} else {
-						return new Response("Firebombs",
-								"As you don't have any firebombs on you, you're going to have to try describing them to Roxy in the hopes that she can find someone to replicate them."
-										+ " [style.boldBad(It would probably be best to have a physical example though.)]",
+						return new Response("Огненные бомбы",
+								"Так как при вас нет огненных бомб, вам придется попытаться описать их Рокси в надежде, что она найдет кого-то, кто сможет их воссоздать. [style.boldBad(Хотя, вероятно, было бы лучше иметь перед глазами физический образец.)]",
 								FIREBOMBS_FAILED) {
 							@Override
 							public Colour getHighlightColour() {
@@ -257,9 +256,9 @@ public class RoxysShop {
 					
 				} else if(Main.game.getPlayer().isQuestProgressGreaterThan(QuestLine.SIDE_REBEL_BASE_FIREBOMBS, Quest.REBEL_BASE_FIREBOMBS_START)) {
 					if((Main.game.getMinutesPassed() - Main.game.getDialogueFlags().getSavedLong(REBEL_BASE_ROXY_TIMER)) < 2880) { // Roxy needs 2 days to get firebombs
-						return new Response("Firebombs", "Roxy hasn't had enough time to get more firebombs yet.", null);
+						return new Response("Огненные бомбы", "Рокси еще не успела раздобыть больше огненных бомб.", null);
 					} else {
-						return new Response("Firebombs", "It's been two days since you asked Roxy about getting more firebombs, better check in.", FIREBOMBS_COMPLETE);
+						return new Response("Огненные бомбы", "Прошло два дня с тех пор, как ты спрашивал Рокси о новых огненных бомбах; стоит наведаться к ней.", FIREBOMBS_COMPLETE);
 					}
 				}
 			}
@@ -268,7 +267,7 @@ public class RoxysShop {
 		}
 	};
 	
-	public static final DialogueNode FIREBOMBS = new DialogueNode("Roxy's Fun Box", "", true, true) {
+	public static final DialogueNode FIREBOMBS = new DialogueNode("Веселая коробочка Рокси", "", true, true) {
 		@Override
 		public String getContent() {
 			return UtilText.parseFromXMLFile("places/submission/gamblingDen/roxysShop", "FIREBOMBS");
@@ -279,7 +278,7 @@ public class RoxysShop {
 		}
 	};
 	
-	public static final DialogueNode FIREBOMBS_COMPLETE = new DialogueNode("Roxy's Fun Box", "", true, true) {
+	public static final DialogueNode FIREBOMBS_COMPLETE = new DialogueNode("Веселая коробочка Рокси", "", true, true) {
 		@Override
 		public void applyPreParsingEffects() {
                Main.game.getTextEndStringBuilder().append(Main.game.getPlayer().setQuestProgress(QuestLine.SIDE_REBEL_BASE_FIREBOMBS, Quest.SIDE_UTIL_COMPLETE));
@@ -295,7 +294,7 @@ public class RoxysShop {
 		}
 	};
 	
-	public static final DialogueNode FIREBOMBS_FAILED = new DialogueNode("Roxy's Fun Box", "", true, true) {
+	public static final DialogueNode FIREBOMBS_FAILED = new DialogueNode("Веселая коробочка Рокси", "", true, true) {
 		@Override
 		public void applyPreParsingEffects() {
 			Main.game.getTextEndStringBuilder().append(Main.game.getPlayer().setQuestFailed(QuestLine.SIDE_REBEL_BASE_FIREBOMBS, Quest.REBEL_BASE_FIREBOMBS_FAILED));
@@ -310,7 +309,7 @@ public class RoxysShop {
 		}
 	};
 	
-	public static final DialogueNode TRADER_REPLY_NO = new DialogueNode("Roxy's Fun Box", "", true, true) {
+	public static final DialogueNode TRADER_REPLY_NO = new DialogueNode("Веселая коробочка Рокси", "", true, true) {
 		@Override
 		public String getContent() {
 			return UtilText.parseFromXMLFile("places/submission/gamblingDen/roxysShop", "TRADER_REPLY_NO");
@@ -321,7 +320,7 @@ public class RoxysShop {
 		}
 	};
 	
-	public static final DialogueNode AFTER_ROXY_SEX = new DialogueNode("Roxy stands up", "Roxy is finished, and, not caring whether you've had any fun or not, starts to stand up.", true) {
+	public static final DialogueNode AFTER_ROXY_SEX = new DialogueNode("Рокси встает", "Рокси закончила и, не заботясь о том, весело ли тебе было, начинает подниматься.", true) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -336,7 +335,7 @@ public class RoxysShop {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Roll", "Watch Roxy roll her dice.", AFTER_ROXY_SEX_ITEM_OBTAINED) {
+				return new Response("Бросок", "Смотреть, как Рокси бросает кости.", AFTER_ROXY_SEX_ITEM_OBTAINED) {
 					@Override
 					public void effects() {
 						Dice d = new Dice(Util.newHashMapOfValues(new Value<>(DiceFace.ONE, 8f), new Value<>(DiceFace.TWO, 4f), new Value<>(DiceFace.THREE, 2f)));
@@ -379,7 +378,7 @@ public class RoxysShop {
 		}
 	};
 	
-	public static final DialogueNode AFTER_ROXY_SEX_ITEM_OBTAINED = new DialogueNode("Roxy's Fun Box", "", false, true) {
+	public static final DialogueNode AFTER_ROXY_SEX_ITEM_OBTAINED = new DialogueNode("Веселая коробочка Рокси", "", false, true) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -397,7 +396,7 @@ public class RoxysShop {
 		}
 	};
 	
-	public static final DialogueNode AFTER_ROXY_SEX_ADDICT = new DialogueNode("Roxy stands up", "Roxy is finished, and, not caring whether you've had any fun or not, starts to stand up.", false) {
+	public static final DialogueNode AFTER_ROXY_SEX_ADDICT = new DialogueNode("Рокси встает", "Рокси закончила и, не заботясь о том, весело ли тебе было, начинает подниматься.", false) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -428,11 +427,11 @@ public class RoxysShop {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				if(Main.game.getPlayer().getMoney()<VENGAR_SUB_DOM_COST) {
-					return new Response("Fuck ("+UtilText.formatAsMoney(VENGAR_SUB_DOM_COST, "span")+")", "You don't have enough money to buy a session of dominant sex with Vengar.", null);
+					return new Response("Блядь ("+UtilText.formatAsMoney(VENGAR_SUB_DOM_COST, "охват")+")", "У тебя недостаточно денег, чтобы купить сеанс доминантного секса с Венгар.", null);
 				}
 				return new ResponseSex(
-						"Fuck ("+UtilText.formatAsMoney(VENGAR_SUB_DOM_COST, "span")+")",
-						"Tell Roxy that you're willing to pay in order to fuck Vengar.",
+						"Блядь ("+UtilText.formatAsMoney(VENGAR_SUB_DOM_COST, "охват")+")",
+						"Скажи Рокси, что ты готов заплатить, чтобы трахнуть Венгара.",
 						true,
 						false,
 						new SMGeneric(
@@ -467,11 +466,11 @@ public class RoxysShop {
 				
 			} else if(index==2) {
 				if(Main.game.getPlayer().getMoney()<VENGAR_SUB_SEX_COST) {
-					return new Response("Fucked ("+UtilText.formatAsMoney(VENGAR_SUB_SEX_COST, "span")+")", "You don't have enough money to buy a session of submissive sex with Vengar.", null);
+					return new Response("Трахнуто ("+UtilText.formatAsMoney(VENGAR_SUB_SEX_COST, "охват")+")", "Тебе не хватает денег, чтобы купить сеанс подчиненного секса с Венгаром.", null);
 				}
 				return new ResponseSex(
-						"Fucked ("+UtilText.formatAsMoney(VENGAR_SUB_SEX_COST, "span")+")",
-						"Tell Roxy that you're willing to pay in order to get Vengar to fuck you.",
+						"Трахнуто ("+UtilText.formatAsMoney(VENGAR_SUB_SEX_COST, "охват")+")",
+						"Скажи Рокси, что ты готов заплатить, чтобы Венгар трахнул тебя.",
 						true,
 						false,
 						new SMGeneric(
@@ -512,20 +511,18 @@ public class RoxysShop {
 				
 			} else if(index==3 && !Main.game.getNpc(Vengar.class).isFeminine()) {
 				if(Main.game.getPlayer().getEssenceCount()<100 || !Main.game.getPlayer().hasItemType(ItemType.FETISH_UNREFINED)) {
-					return new Response("Sissify",
-							"Tell Roxy that Vengar would behave a lot better if she were to turn him into a sissy."
-							+ "<br/>Requires: "
+					return new Response("Сиссифицировать",
+							"Скажи Рокси, что Венгар вел бы себя гораздо лучше, если бы она превратила его в сисси.<br/>Требуется: "
 							+ (Main.game.getPlayer().getEssenceCount()<100?"[style.italicsBad(":"[style.italicsGood(")
-							+"At least 100 essences)] and "
+							+"Как минимум 100 эссенций)] и "
 							+ (Main.game.getPlayer().hasItemType(ItemType.FETISH_UNREFINED)
 									?"[style.italicsBad("
 									:"[style.italicsGood(")
 								+"[#ITEM_FETISH_UNREFINED.getDeterminer()] [#ITEM_FETISH_UNREFINED.getName(false)])].",
 							null);
 				}
-				return new Response("Sissify",
-						"Tell Roxy that Vengar would behave a lot better if she were to turn him into a sissy."
-						+ "<br/>Will consume: [style.italicsArcane(100 essences)] and [style.italicsMinorGood(one [#ITEM_FETISH_UNREFINED.getName(false)])].",
+				return new Response("Сиссифицировать",
+						"Скажи Рокси, что Венгар вел бы себя гораздо лучше, если бы она превратила его в сисси.<br/>Потребуется: [style.italicsArcane(100 эссенций)] и [style.italicsMinorGood(одну [#ITEM_FETISH_UNREFINED.getName(false)])].",
 						VENGAR_SISSIFY) {
 					@Override
 					public void effects() {
@@ -534,18 +531,18 @@ public class RoxysShop {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/submission/gamblingDen/roxysShop", "VENGAR_SISSIFY_END"));
 						Main.game.getTextEndStringBuilder().append(Main.game.getPlayer().incrementEssenceCount(-100, false));
 						Main.game.getPlayer().removeItemByType(ItemType.FETISH_UNREFINED);
-						Main.game.getTextEndStringBuilder().append("<p style='text-align:center;'>[style.italicsMinorBad(You lost <b>1</b> [#ITEM_FETISH_UNREFINED.getName(false)]!)]</p>");
+						Main.game.getTextEndStringBuilder().append("<p style='text-align:center;'>[style.italicsMinorBad(Вы проиграли <b>1</b> [#ITEM_FETISH_UNREFINED.getName(false)]!)]</p>");
 					}
 				};
 				
 			} else if(index==0) {
-				return new Response("Back", "Decide against doing anything with Vengar.", TRADER);
+				return new Response("Назад", "Решить ничего не предпринимать в отношении Венгара.", TRADER);
 			}
 			return null;
 		}
 	};
 	
-	public static final DialogueNode AFTER_VENGAR_SEX = new DialogueNode("Finished", "You and Vengar are finished...", true) {
+	public static final DialogueNode AFTER_VENGAR_SEX = new DialogueNode("Завершено", "Вы с Венгаром покончили с этим...", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			Main.game.getNpc(Vengar.class).equipClothing();

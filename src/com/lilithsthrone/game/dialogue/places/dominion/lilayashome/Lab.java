@@ -66,7 +66,7 @@ public class Lab {
 		return arthurRoomCell;
 	}
 	
-	public static final DialogueNode LAB = new DialogueNode("Lilaya's Laboratory", "", false) {
+	public static final DialogueNode LAB = new DialogueNode("Лаборатория Lilaya", "", false) {
 		@Override
 		public String getContent() {
 			if(Main.game.getNpc(Lilaya.class).getLocationPlaceType()==PlaceType.LILAYA_HOME_LAB) {
@@ -98,18 +98,18 @@ public class Lab {
 			if(index==1) {
 				if(Main.game.getNpc(Lilaya.class).getBaseFetishDesire(Fetish.FETISH_PREGNANCY).isNegative()) {
 					if(Main.game.getNpc(Lilaya.class).hasStatusEffect(StatusEffect.PREGNANT_0)) {
-						return new Response("Enter", "The door to Lilaya's laboratory is firmly shut. You'd better come back later.", null);
+						return new Response("Войти", "Дверь в лабораторию Lilaya плотно закрыта. Лучше вернуться позже.", null);
 						
 					} else if((Main.game.getNpc(Lilaya.class).isPregnant() && Main.game.getNpc(Lilaya.class).isCharacterReactedToPregnancy(Main.game.getPlayer()))) {
-						return new Response("Enter", "The door to Lilaya's laboratory is firmly shut. You're not going to be able to get back in until her pregnancy is resolved.", null);
+						return new Response("Войти", "Дверь в лабораторию Lilaya плотно закрыта. Ты не сможешь войти, пока её беременность не разрешится.", null);
 					}
 				}
 				
 				if(Main.game.getNpc(Lilaya.class).getLocationPlaceType()!=PlaceType.LILAYA_HOME_LAB) {
-					return new Response("Enter", "The door to Lilaya's laboratory is firmly shut, and, considering the hour, she's probably sleeping upstairs.", null);
+					return new Response("Войти", "Дверь в лабораторию Lilaya плотно закрыта, и, учитывая час, она, скорее всего, спит наверху.", null);
 				}
 				
-				return new Response("Enter", "Step through the door and enter Lilaya's laboratory.", LAB_ENTRY) {
+				return new Response("Войти", "Переступить порог и войти в лабораторию Lilaya.", LAB_ENTRY) {
 					@Override
 					public void effects() {
 						if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.roseToldOnYou)
@@ -156,25 +156,24 @@ public class Lab {
 		List<Response> generatedResponses = new ArrayList<>();
 		
 		if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.lilayaHug)) {
-			generatedResponses.add(new Response("Hug",
-					"You've already given Lilaya an unexpected hug today, and although she liked it, she seemed serious about not doing again..."
-							+ "<br/><i>You should wait until tomorrow before giving her another hug!</i>",
+			generatedResponses.add(new Response("Обнять",
+					"Ты уже успел неожиданно обнять Lilaya сегодня, и хотя ей это понравилось, она, кажется, настроена серьезно и не хочет повторения...<br/><i>Тебе стоит подождать до завтра, прежде чем обнимать её снова!</i>",
 					null));
 		} else if(isLilayaAngryAtPlayerDemonTF()) {
-			generatedResponses.add(new Response("Hug",
-					"Due to her resentment towards you for being a full demon, Lilaya absolutely does not want a hug!",
+			generatedResponses.add(new Response("Обнять",
+					"Из-за своей обиды на тебя за то, что ты — полноценный демон, Lilaya решительно не хочет никаких объятий!",
 					null));
 		} else {
-			generatedResponses.add(new Response("Hug", "[pc.Step] up to Lilaya and give her a big hug.", LAB_LILAYA_HUG));
+			generatedResponses.add(new Response("Обнять", "[pc.Step] подойти к Lilaya и крепко её обнять.", LAB_LILAYA_HUG));
 		}
 		
 		if(Main.game.getPlayer().isVisiblyPregnant()) {
 			if (!Main.game.getPlayer().isQuestProgressGreaterThan(QuestLine.MAIN, Quest.MAIN_1_A_LILAYAS_TESTS)) {
-				generatedResponses.add(new Response("Pregnancy", "You'll need to complete Lilaya's initial tests before she'll agree to help you deal with your pregnancy.", null));
+				generatedResponses.add(new Response("Беременность", "Тебе нужно будет пройти первичные тесты Lilaya, прежде чем она согласится помочь тебе справиться с твоей беременностью.", null));
 				
 			} else {
 				if(Main.game.getPlayer().getQuest(QuestLine.SIDE_FIRST_TIME_PREGNANCY) == Quest.SIDE_PREGNANCY_CONSULT_LILAYA) {
-					generatedResponses.add(new Response("Pregnancy", "Speak to Lilaya about your pregnancy.", LilayaBirthing.LILAYA_ASSISTS_PREGNANCY){
+					generatedResponses.add(new Response("Беременность", "Поговорить с Lilaya о своей беременности.", LilayaBirthing.LILAYA_ASSISTS_PREGNANCY){
 						@Override
 						public void effects() {
 							setEntryFlags();
@@ -183,7 +182,7 @@ public class Lab {
 					});
 					
 				} else {
-					generatedResponses.add(new Response("Pregnancy", "Speak to Lilaya about your pregnancy.", LilayaBirthing.LILAYA_ASSISTS_PREGNANCY_REPEAT){
+					generatedResponses.add(new Response("Беременность", "Поговорить с Lilaya о своей беременности.", LilayaBirthing.LILAYA_ASSISTS_PREGNANCY_REPEAT){
 						@Override
 						public void effects() {
 							setEntryFlags();
@@ -221,10 +220,10 @@ public class Lab {
 		if(Main.game.getPlayer().hasQuest(QuestLine.SIDE_ENCHANTMENT_DISCOVERY)) {
 			if(!Main.game.getPlayer().isQuestCompleted(QuestLine.SIDE_ENCHANTMENT_DISCOVERY)) {
 				if (!Main.game.getPlayer().isQuestProgressGreaterThan(QuestLine.MAIN, Quest.MAIN_1_A_LILAYAS_TESTS)) {
-					generatedResponses.add(new Response("Essences & Enchantments", "You'll need to complete Lilaya's initial tests before you're able to ask her about that strange energy you absorbed.", null));
+					generatedResponses.add(new Response("Эссенции и зачарования", "Тебе нужно будет пройти начальные тесты Lilaya, прежде чем ты сможешь расспросить её о той странной энергии, которую ты поглотил.", null));
 					
 				} else {
-					generatedResponses.add(new Response("Essences & Enchantments", "Ask Lilaya about that strange energy you absorbed.", LILAYA_EXPLAINS_ESSENCES){
+					generatedResponses.add(new Response("Эссенции и зачарования", "Расспросить Lilaya о той странной энергии, которую ты поглотил.", LILAYA_EXPLAINS_ESSENCES){
 						@Override
 						public void effects() {
 							setEntryFlags();
@@ -233,10 +232,10 @@ public class Lab {
 				}
 				
 			} else {
-				generatedResponses.add(new Response("Extract Essences",
+				generatedResponses.add(new Response("Извлечь эссенции",
 						Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.essenceExtractionKnown)
-								?"Ask Lilaya if you can use her equipment to extract some essences."
-								:"Ask Lilaya if there's any way to extract essences you've absorbed",
+								?"Спросить Lilaya, можно ли использовать её оборудование для извлечения эссенций."
+								:"Спросить Lilaya, есть ли способ извлечь поглощенные эссенции.",
 							ESSENCE_EXTRACTION){
 					@Override
 					public void effects() {
@@ -249,10 +248,10 @@ public class Lab {
 		if(Main.game.getPlayer().hasQuest(QuestLine.SIDE_SLAVERY)) {
 			if(Main.game.getPlayer().getQuest(QuestLine.SIDE_SLAVERY) == Quest.SIDE_SLAVER_NEED_RECOMMENDATION) {
 				if (!Main.game.getPlayer().isQuestProgressGreaterThan(QuestLine.MAIN, Quest.MAIN_1_A_LILAYAS_TESTS)) {
-					generatedResponses.add(new Response("Slaver", "You'll need to complete Lilaya's initial tests before you can ask her for a letter of recommendation.", null));
+					generatedResponses.add(new Response("Работорговец", "Тебе нужно будет пройти начальные тесты Lilaya, прежде чем ты сможешь попросить у неё рекомендательное письмо.", null));
 					
 				} else {
-					generatedResponses.add(new Response("Slaver", "Ask Lilaya for a letter of recommendation in order to obtain a slaver license.", LILAYA_SLAVER_RECOMMENDATION){
+					generatedResponses.add(new Response("Работорговец", "Попросить у Lilaya рекомендательное письмо, чтобы получить лицензию работорговца.", LILAYA_SLAVER_RECOMMENDATION){
 						@Override
 						public void effects() {
 							setEntryFlags();
@@ -264,10 +263,10 @@ public class Lab {
 		
 		if(Main.game.getPlayer().hasQuest(QuestLine.SIDE_ACCOMMODATION) && !Main.game.getPlayer().isQuestCompleted(QuestLine.SIDE_ACCOMMODATION)) {
 			if (!Main.game.getPlayer().isQuestProgressGreaterThan(QuestLine.MAIN, Quest.MAIN_1_A_LILAYAS_TESTS)) {
-				generatedResponses.add(new Response("Accommodation", "You'll need to complete Lilaya's initial tests before you can ask her about inviting friends home!", null));
+				generatedResponses.add(new Response("Жилье", "Сначала тебе нужно будет пройти начальные тесты Lilaya, прежде чем ты сможешь спросить её о приглашении друзей в дом!", null));
 				
 			} else {
-				generatedResponses.add(new Response("Accommodation", "Ask Lilaya about inviting your new friend to live in one of the many spare rooms in the mansion.", LILAYA_FRIEND_ACCOMMODATION){
+				generatedResponses.add(new Response("Жилье", "Спросить Lilaya о том, чтобы пригласить своего нового друга пожить в одной из многочисленных свободных комнат особняка.", LILAYA_FRIEND_ACCOMMODATION){
 					@Override
 					public void effects() {
 						setEntryFlags();
@@ -279,10 +278,10 @@ public class Lab {
 		
 		if(Main.game.getPlayer().hasQuest(QuestLine.SIDE_DOLL_STORAGE) && !Main.game.getPlayer().isQuestCompleted(QuestLine.SIDE_DOLL_STORAGE)) {
 			if (!Main.game.getPlayer().isQuestProgressGreaterThan(QuestLine.MAIN, Quest.MAIN_1_A_LILAYAS_TESTS)) {
-				generatedResponses.add(new Response("Doll storage", "You'll need to complete Lilaya's initial tests before you can ask her about storing sex dolls in the mansion!", null));
+				generatedResponses.add(new Response("Хранилище кукол", "Тебе нужно будет завершить начальные тесты Lilaya, прежде чем ты сможешь спросить её о хранении секс-кукол в особняке!", null));
 				
 			} else {
-				generatedResponses.add(new Response("Doll storage", "Ask Lilaya if you can use one of the spare rooms in the mansion to store sex dolls.", LILAYA_DOLL_STORAGE){
+				generatedResponses.add(new Response("Хранилище кукол", "Спросить Lilaya, можно ли использовать одну из свободных комнат особняка для хранения секс-кукол.", LILAYA_DOLL_STORAGE){
 					@Override
 					public void effects() {
 						setEntryFlags();
@@ -296,7 +295,7 @@ public class Lab {
 		
 		if(!Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.lilayaDateTalk)
 				&& Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.knowsDate)) {
-			generatedResponses.add(new Response("Current Date", "Ask Lilaya why the calendar in your room is three years ahead of the correct date.", LILAYA_CURRENT_DATE_TALK) {
+			generatedResponses.add(new Response("Текущая дата", "Спросить Lilaya, почему календарь в твоей комнате спешит на три года.", LILAYA_CURRENT_DATE_TALK) {
 				@Override
 				public void effects() {
 					setEntryFlags();
@@ -307,10 +306,10 @@ public class Lab {
 		
 		if(Main.game.getPlayer().hasItemType(ItemType.PRESENT) && !Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.givenLilayaPresent3)) {
 			if(isLilayaAngryAtPlayerDemonTF()) {
-				generatedResponses.add(new Response("Give Present", "Although you have a present in your inventory, Lilaya is not interested in receiving it, due to her resentment towards you for being a full demon, while she is not.", null));
+				generatedResponses.add(new Response("Вручить подарок", "Хотя в твоём инвентаре есть подарок, Lilaya не горит желанием его принимать из-за своей обиды на то, что ты — полноценный демон, в то время как она — нет.", null));
 				
 			} else {
-				generatedResponses.add(new Response("Give Present", "Give the present in your inventory to Lilaya.", LILAYA_PRESENT) {
+				generatedResponses.add(new Response("Вручить подарок", "Отдать подарок из инвентаря Lilaya.", LILAYA_PRESENT) {
 					@Override
 					public void effects() {
 						setEntryFlags();
@@ -332,10 +331,10 @@ public class Lab {
 		
 		if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.givenLilayaPresent3)) {
 			if(isLilayaAngryAtPlayerDemonTF()) {
-				generatedResponses.add(new Response("Geisha Lilaya", "Lilaya is not interested in showing off her kimono, nor having sex with you, until she's a full demon as well.", null));
+				generatedResponses.add(new Response("Гейша Lilaya", "Lilaya не заинтересована в том, чтобы выставлять напоказ свое кимоно или заниматься с вами сексом, пока сама не станет полноценным демоном.", null));
 				
 			} else {
-				generatedResponses.add(new Response("Geisha Lilaya", "Ask Lilaya if she'd like to wear the gifts you got for her.", LILAYA_GEISHA) {
+				generatedResponses.add(new Response("Гейша Lilaya", "Спросить Lilaya, не хочет ли она надеть подарки, которые вы ей принесли.", LILAYA_GEISHA) {
 					@Override
 					public void effects() {
 						setEntryFlags();
@@ -351,15 +350,15 @@ public class Lab {
 		if(Main.game.getPlayer().hasQuest(QuestLine.SIDE_DADDY)) {
 			if(Main.game.getPlayer().getQuest(QuestLine.SIDE_DADDY) == Quest.DADDY_ACCEPTED) {
 				if(!Daddy.isAvailable()) {
-					generatedResponses.add(new Response("Meeting [daddy.name]", Daddy.getAvailabilityText(), null));
+					generatedResponses.add(new Response("Встреча с [daddy.name]", Daddy.getAvailabilityText(), null));
 					
 				} else if(Main.game.getPlayer().hasCompanions()) {
-					generatedResponses.add(new Response("Meeting [daddy.name]",
-							"[style.italicsBad(You cannot ask Lilaya to go with you and meet [daddy.name] while you have companions in your party!)]",
+					generatedResponses.add(new Response("Встреча с [daddy.name]",
+							"[style.italicsBad(Вы не можете попросить Lilaya пойти с вами на встречу с [daddy.name], пока в вашей группе есть спутники!)]",
 							null));
 					
 				} else {
-					generatedResponses.add(new Response("Meeting [daddy.name]", "Convince Lilaya to go out for dinner with you and [daddy.name].", DaddyDialogue.CONVINCING_LILAYA) {
+					generatedResponses.add(new Response("Встреча с [daddy.name]", "Убедить Lilaya пойти с вами и [daddy.name] на ужин.", DaddyDialogue.CONVINCING_LILAYA) {
 						@Override
 						public void effects() {
 							setEntryFlags();
@@ -371,15 +370,15 @@ public class Lab {
 	
 			} else if(Main.game.getPlayer().isQuestProgressGreaterThan(QuestLine.SIDE_DADDY, Quest.DADDY_LILAYA_MEETING)) {
 				if(!Daddy.isAvailable()) {
-					generatedResponses.add(new Response("Visit [daddy.name]", Daddy.getAvailabilityText(), null));
+					generatedResponses.add(new Response("Навестить [daddy.name]", Daddy.getAvailabilityText(), null));
 					
 				} else if(Main.game.getPlayer().hasCompanions()) {
-					generatedResponses.add(new Response("Visit [daddy.name]",
-							"[style.italicsBad(You cannot ask Lilaya to go with you and vist [daddy.name] while you have companions in your party!)]",
+					generatedResponses.add(new Response("Навестить [daddy.name]",
+							"[style.italicsBad(Вы не можете попросить Lilaya пойти с вами навестить [daddy.name], пока в вашей группе есть спутники!)]",
 							null));
 					
 				} else  {
-					generatedResponses.add(new Response("Visit [daddy.name]", "Ask Lilaya if she'd like to join you in paying [daddy.name] a visit.", DaddyDialogue.MEETING) {
+					generatedResponses.add(new Response("Навестить [daddy.name]", "Спросить Lilaya, не хочет ли она навестить [daddy.name] вместе с вами.", DaddyDialogue.MEETING) {
 						@Override
 						public int getSecondsPassed() {
 							return 30*60;
@@ -408,9 +407,8 @@ public class Lab {
 		if(Main.game.getPlayer().isQuestCompleted(QuestLine.SIDE_ENCHANTMENT_DISCOVERY)
 				&& Main.game.getPlayer().getClothingCurrentlyEquipped().stream().anyMatch(c -> c.isSelfTransformationInhibiting())
 				&& Main.game.getPlayer().getClothingCurrentlyEquipped().stream().anyMatch(c -> c.isSealed())) {
-			generatedResponses.add(new Response("Sealed problem",
-					"Tell Lilaya that you have some enchanted clothing sealed onto you, and that due to another enchantment on some of your clothing, you cannot remove it."
-							+ "<br/>[style.italicsMinorGood(Lilaya will remove the 'servitude' enchantment from all of your clothing!)]",
+			generatedResponses.add(new Response("Запечатанная проблема",
+					"Сказать Lilaya, что на вас надеты зачарованные одежды, которые невозможно снять из-за другого заклинания.<br/>[style.italicsMinorGood(Lilaya снимет чары «служения» со всей вашей одежды!)]",
 						LAB_JINX_REMOVAL){
 				@Override
 				public void effects() {
@@ -425,13 +423,13 @@ public class Lab {
 		
 		if(Main.game.getPlayer().getQuest(QuestLine.SIDE_WES)==Quest.WES_1) {
 			if(Main.game.getCurrentDialogueNode()==LILAYA_ELLE_HELP) {
-				generatedResponses.add(new Response("Elle's location", "You are already asking Lilaya about where Elle could be!", null));
+				generatedResponses.add(new Response("Местоположение Elle", "Вы уже спрашивали Lilaya о том, где может быть Elle!", null));
 				
 			} else {
-				generatedResponses.add(new Response("Elle's location",
+				generatedResponses.add(new Response("Местоположение Elle",
 						Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.wesQuestLilayaHelp)
-							?"Ask Lilaya if she can remind you where Elle is teleporting to."
-							:"Ask Lilaya for some help in figuring out where Elle is teleporting to.",
+							?"Спросить Lilaya, не напомнит ли она вам, куда телепортируется Elle."
+							:"Попросить Lilaya помочь выяснить, куда телепортируется Elle.",
 						LILAYA_ELLE_HELP){
 					@Override
 					public void effects() {
@@ -448,8 +446,8 @@ public class Lab {
 		}
 		
 		if(!Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.obtainedScientistClothing)) {
-			generatedResponses.add(new Response("Scientist outfit",
-					"Ask Lilaya if she has a spare lab coat you could have.",
+			generatedResponses.add(new Response("Наряд учёного",
+					"Спросить Lilaya, нет ли у неё лишнего лабораторного халата, который вы могли бы взять.",
 					LILAYA_SCIENTIST_OUTFIT){
 				@Override
 				public void effects() {
@@ -464,7 +462,7 @@ public class Lab {
 		return generatedResponses;
 	}
 	
-	public static final DialogueNode LAB_ENTRY = new DialogueNode("Lilaya's Laboratory", "", true) {
+	public static final DialogueNode LAB_ENTRY = new DialogueNode("Лаборатория Lilaya", "", true) {
 
 		@Override
 		public String getContent() {
@@ -545,8 +543,8 @@ public class Lab {
 		public Response getResponse(int responseTab, int index) {
 			if(isLilayaAngryAtPlayerDemonTF() && !Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.lilayaReactedToPlayerAsDemon)) {
 				if(index == 1) {
-					return new Response("Agree",
-							"Tell Lilaya that you'll help her convince Lyssieth to turn her into a full demon.<br/>[style.italicsDemon(This will end with Lilaya being permanently transformed into a demon!)]",
+					return new Response("Согласиться",
+							"Сказать Lilaya, что вы поможете ей убедить Lyssieth превратить её в полноценного демона.<br/>[style.italicsDemon(Это закончится тем, что Lilaya навсегда превратится в демона!)]",
 							LAB_DEMON_TF_AGREE){
 						@Override
 						public Colour getHighlightColour() {
@@ -562,8 +560,8 @@ public class Lab {
 					};
 					
 				} else if(index == 2) {
-					return new Response("Refuse",
-							"Try and convince Lilaya that she should stay as a half-demon.<br/>[style.italics(You can always change your mind later and tell Lilaya you'll help her to become a full demon.)]",
+					return new Response("Отказаться",
+							"Попытаться убедить Lilaya, что ей лучше остаться полудемоном.<br/>[style.italics(Вы всегда сможете передумать позже и сказать Lilaya, что поможете ей стать полноценным демоном.)]",
 							LAB_DEMON_TF_REFUSE){
 						@Override
 						public void effects() {
@@ -576,7 +574,7 @@ public class Lab {
 					
 			} else if(Main.game.getPlayer().getQuest(QuestLine.MAIN) == Quest.MAIN_1_I_ARTHURS_TALE || Main.game.getPlayer().getQuest(QuestLine.MAIN) == Quest.MAIN_1_J_ARTHURS_ROOM) {
 				if(index == 1) {
-					return new Response("Agree", "Knowing how fierce your [lilaya.relation(pc)] can get when she's in one of these moods, you realise that you don't really have much of a choice...", LAB_ARTHURS_TALE){
+					return new Response("Согласиться", "Зная, насколько свирепой может стать ваша [lilaya.relation(pc)] в такие моменты, вы понимаете, что особого выбора у вас нет...", LAB_ARTHURS_TALE){
 						@Override
 						public void effects() {
 							setEntryFlags();
@@ -589,7 +587,7 @@ public class Lab {
 					&& Main.game.getNpc(Lilaya.class).isVisiblyPregnant()
 					&& Main.game.getNpc(Lilaya.class).getRaceStage()!=RaceStage.GREATER) {
 				if(index==0) {
-					return new Response("Thrown out", "Lilaya is clearly not interested in talking to you until her pregnancy has been resolved...", LAB_EXIT_THROWN_OUT) {
+					return new Response("Тебя вышвыривают", "Очевидно, что Lilaya не настроена на разговоры, пока не решится вопрос с её беременностью...", LAB_EXIT_THROWN_OUT) {
 						@Override
 						public void effects() {
 							setEntryFlags();
@@ -603,21 +601,19 @@ public class Lab {
 				
 				// Return responses:
 				if(index==0) {
-					return new Response("Leave", "Say goodbye to Lilaya and exit her lab.", LAB) {
+					return new Response("Уйти", "Попрощаться с Lilaya и выйти из её лаборатории.", LAB) {
 						@Override
 						public void effects() {
 							setEntryFlags();
 							Main.game.getTextStartStringBuilder().append(
-									"<p>"
-										+ "You tell Lilaya that you've got to get going, and, after saying goodbye, you head over to the lab's door and make your exit."
-									+ "</p>");
+									"<p>Вы говорите Lilaya, что вам пора идти, и, попрощавшись, направляетесь к двери лаборатории, чтобы выйти.</p>");
 						}
 					};
 					
 				} else if (index == 1) {
 					if(isLilayaAngryAtPlayerDemonTF()) {
-						return new Response("Full demon",
-								"Tell Lilaya that you'll help her convince her mother to turn her into a full demon.<br/>[style.italicsDemon(This will end with Lilaya being permanently transformed into a full demon!)]",
+						return new Response("Полноценный демон",
+								"Сказать Lilaya, что вы поможете ей убедить её мать превратить её в полноценного демона.<br/>[style.italicsDemon(Это закончится тем, что Lilaya навсегда превратится в полноценного демона!)]",
 								LAB_DEMON_TF_AGREE) {
 							@Override
 							public Colour getHighlightColour() {
@@ -633,7 +629,7 @@ public class Lab {
 						
 					} else {
 						if (Main.game.getPlayer().getQuest(QuestLine.MAIN) == Quest.MAIN_1_A_LILAYAS_TESTS) {
-							return new Response("Tests", "Let Lilaya know that you're here to let her run her tests on you.", AUNT_HOME_LABORATORY_TESTING){
+							return new Response("Тесты", "Дать Lilaya понять, что вы пришли, чтобы она могла провести над вами свои тесты.", AUNT_HOME_LABORATORY_TESTING){
 								@Override
 								public void effects() {
 									setEntryFlags();
@@ -642,17 +638,17 @@ public class Lab {
 							
 						} else {
 							if(Main.game.getNpc(Arthur.class).getLocationPlace().getPlaceType().equals(PlaceType.LILAYA_HOME_LAB)) {
-								return new Response("\"Tests\"", "Lilaya can't run any \"tests\" on you while Arthur is still present in her lab. Find him a suitable room first.", null);
+								return new Response("\"Тесты\"", "Lilaya не может проводить никаких «тестов» на тебе, пока Arthur всё еще находится в её лаборатории. Сначала найди ему подходящую комнату.", null);
 								
 							} else if (Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.hadSexWithLilaya)) {
-								return new Response("\"Tests\"", "Let Lilaya know that you're here to let her run more of her \"tests\" on you.", AUNT_HOME_LABORATORY_TESTING_MORE_SEX){
+								return new Response("\"Тесты\"", "Дать Lilaya понять, что ты пришел, чтобы она могла провести над тобой еще больше своих «тестов».", AUNT_HOME_LABORATORY_TESTING_MORE_SEX){
 									@Override
 									public void effects() {
 										setEntryFlags();
 									}
 								};
 							} else {
-								return new Response("Tests", "Tell Lilaya that you want her to run more of her 'tests' on you.", AUNT_HOME_LABORATORY_TESTING_REPEAT){
+								return new Response("Тесты", "Сказать Lilaya, что ты хочешь, чтобы она провела над тобой еще больше своих «тестов».", AUNT_HOME_LABORATORY_TESTING_REPEAT){
 									@Override
 									public void effects() {
 										setEntryFlags();
@@ -671,7 +667,7 @@ public class Lab {
 					
 				} else if(index==11 && Main.game.getPlayer().isQuestProgressGreaterThan(QuestLine.MAIN, Quest.MAIN_2_D_MEETING_A_LILIN)) {
 					// Teleport
-					return new Response("Lyssieth's office", "Ask Lilaya to use the resonance stone to contact Lyssieth, and ask her to teleport you to her office.", LyssiethPalaceDialogue.LYSSIETH_OFFICE_TALK){
+					return new Response("Кабинет Lyssieth", "Попросить Lilaya использовать резонансный камень, чтобы связаться с Lyssieth, и попросить её телепортировать тебя в её кабинет.", LyssiethPalaceDialogue.LYSSIETH_OFFICE_TALK){
 						@Override
 						public void effects() {
 							Main.game.getPlayer().setLocation(WorldType.LYSSIETH_PALACE, PlaceType.LYSSIETH_PALACE_OFFICE);
@@ -697,16 +693,16 @@ public class Lab {
 		}
 	};
 	
-	public static final DialogueNode LILAYA_END_SEX = new DialogueNode("Get up", "Lilaya really needs to get back to work.", true) {
+	public static final DialogueNode LILAYA_END_SEX = new DialogueNode("Встать", "Lilaya действительно нужно вернуться к работе.", true) {
 
 		@Override
 		public String getDescription() {
 			if((Main.game.getNpc(Lilaya.class).hasStatusEffect(StatusEffect.CREAMPIE_VAGINA) || ((Lilaya)Main.game.getNpc(Lilaya.class)).isAmazonsSecretImpregnation())
 					&& Main.game.getNpc(Lilaya.class).getFetishDesire(Fetish.FETISH_PREGNANCY).isNegative()
 					&& !Main.game.getNpc(Lilaya.class).isVisiblyPregnant()) {
-				return "Lilaya looks pretty angry, maybe you should have pulled out...";
+				return "Lilaya выглядит довольно злой, возможно, тебе стоило вытащить...";
 			} else {
-				return "Lilaya really needs to get back to work.";
+				return "Lilaya действительно нужно вернуться к работе.";
 			}
 		}
 
@@ -731,7 +727,7 @@ public class Lab {
 				if((Main.game.getNpc(Lilaya.class).hasStatusEffect(StatusEffect.CREAMPIE_VAGINA) || ((Lilaya)Main.game.getNpc(Lilaya.class)).isAmazonsSecretImpregnation())
 						&& Main.game.getNpc(Lilaya.class).getFetishDesire(Fetish.FETISH_PREGNANCY).isNegative()
 						&& !Main.game.getNpc(Lilaya.class).isVisiblyPregnant()) {
-					return new Response("Thrown out", "Maybe it's best to leave Lilaya to cool down for a while.", Lab.LAB_EXIT_THROWN_OUT){
+					return new Response("Тебя вышвыривают", "Возможно, лучше оставить Lilaya в покое, чтобы она немного остыла.", Lab.LAB_EXIT_THROWN_OUT){
 						@Override
 						public void effects() {
 							if((Main.game.getNpc(Lilaya.class).hasStatusEffect(StatusEffect.CREAMPIE_VAGINA) || ((Lilaya)Main.game.getNpc(Lilaya.class)).isAmazonsSecretImpregnation())
@@ -747,7 +743,7 @@ public class Lab {
 					};
 					
 				} else {
-					return new Response("Continue", "Leave the lab and let Lilaya carry on with her work.", Lab.LAB_EXIT) {
+					return new Response("Продолжить", "Покинуть лабораторию и дать Lilaya продолжить работу.", Lab.LAB_EXIT) {
 						@Override
 						public void effects() {
 							Main.game.getNpc(Rose.class).setLocation(WorldType.LILAYAS_HOUSE_GROUND_FLOOR, PlaceType.LILAYA_HOME_LAB, false);
@@ -765,7 +761,7 @@ public class Lab {
 		}
 	};
 	
-	public static final DialogueNode LAB_EXIT = new DialogueNode("Lilaya's Laboratory", "", true) {
+	public static final DialogueNode LAB_EXIT = new DialogueNode("Лаборатория Lilaya", "", true) {
 		
 		@Override
 		public String getContent() {
@@ -778,7 +774,7 @@ public class Lab {
 		}
 	};
 	
-	public static final DialogueNode LAB_EXIT_THROWN_OUT = new DialogueNode("Lilaya's Laboratory", "", false) {
+	public static final DialogueNode LAB_EXIT_THROWN_OUT = new DialogueNode("Лаборатория Lilaya", "", false) {
 		
 		@Override
 		public String getContent() {
@@ -801,7 +797,7 @@ public class Lab {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Teleported", "Lyssieth teleports the three of you back to her palace...", LyssiethPalaceDialogue.LILAYA_DEMON_TF_START){
+				return new Response("Телепортирован(а)", "Lyssieth телепортирует вас троих обратно в свой дворец...", LyssiethPalaceDialogue.LILAYA_DEMON_TF_START){
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setLocation(WorldType.LYSSIETH_PALACE, PlaceType.LYSSIETH_PALACE_OFFICE);
@@ -833,7 +829,7 @@ public class Lab {
 	};
 	
 	
-	public static final DialogueNode LILAYA_PRESENT = new DialogueNode("Lilaya's Laboratory", "", true) {
+	public static final DialogueNode LILAYA_PRESENT = new DialogueNode("Лаборатория Lilaya", "", true) {
 		
 		@Override
 		public String getContent() {
@@ -855,7 +851,7 @@ public class Lab {
 		}
 	};
 	
-	public static final DialogueNode LILAYA_GEISHA = new DialogueNode("Lilaya's Bedroom", "", true) {
+	public static final DialogueNode LILAYA_GEISHA = new DialogueNode("Спальня Lilaya", "", true) {
 		
 
 		@Override
@@ -866,7 +862,7 @@ public class Lab {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new ResponseSex("Sex", "Start having sex with Lilaya.",
+				return new ResponseSex("Секс", "Начать заниматься сексом с Lilaya.",
 						Util.newArrayListOfValues(Fetish.FETISH_INCEST), null, CorruptionLevel.FOUR_LUSTFUL, null, null, null,
 						true, true,
 						new SMGeneric(
@@ -883,7 +879,7 @@ public class Lab {
 				};
 
 			} if (index == 2) {
-				return new ResponseSex("Submissive Sex", "Start having submissive sex with Lilaya.",
+				return new ResponseSex("Секс в подчиненной позиции", "Начать заниматься подчиненным сексом с Lilaya.",
 						Util.newArrayListOfValues(Fetish.FETISH_INCEST), null, CorruptionLevel.FOUR_LUSTFUL, null, null, null,
 						true, true,
 						new SMGeneric(
@@ -900,8 +896,8 @@ public class Lab {
 				};
 
 			} else if (index == 3) {
-				return new Response("Leave",
-						"Tell Lilaya that she looks stunning, but you don't want to have sex with her.",
+				return new Response("Уйти",
+						"Сказать Lilaya, что она выглядит потрясающе, но ты пока не хочешь заниматься с ней сексом.",
 						RoomPlayer.ROOM){
 					@Override public void effects() {
 
@@ -922,16 +918,16 @@ public class Lab {
 		}
 	};
 	
-	public static final DialogueNode END_SEX_GEISHA = new DialogueNode("Finished", "Lilaya collapses back on her bed with a satisfied sigh.", true) {
+	public static final DialogueNode END_SEX_GEISHA = new DialogueNode("Завершено", "Lilaya с удовлетворенным вздохом падает на кровать.", true) {
 		
 		@Override
 		public String getDescription() {
 			if((Main.game.getNpc(Lilaya.class).hasStatusEffect(StatusEffect.CREAMPIE_VAGINA) || ((Lilaya)Main.game.getNpc(Lilaya.class)).isAmazonsSecretImpregnation())
 					&& Main.game.getNpc(Lilaya.class).getFetishDesire(Fetish.FETISH_PREGNANCY).isNegative()
 					&& !Main.game.getNpc(Lilaya.class).isVisiblyPregnant()) {
-				return "Lilaya looks pretty angry, maybe you should have pulled out...";
+				return "Lilaya выглядит довольно злой, возможно, тебе стоило вытащить...";
 			} else {
-				return "Lilaya collapses back on her bed with a satisfied sigh.";
+				return "Lilaya с удовлетворенным вздохом падает на кровать.";
 			}
 		}
 
@@ -957,7 +953,7 @@ public class Lab {
 				if((Main.game.getNpc(Lilaya.class).hasStatusEffect(StatusEffect.CREAMPIE_VAGINA) || ((Lilaya)Main.game.getNpc(Lilaya.class)).isAmazonsSecretImpregnation())
 						&& Main.game.getNpc(Lilaya.class).getFetishDesire(Fetish.FETISH_PREGNANCY).isNegative()
 						&& !Main.game.getNpc(Lilaya.class).isVisiblyPregnant()) {
-					return new Response("Thrown out", "Maybe it's best to leave Lilaya to cool down for a while.", RoomPlayer.ROOM){
+					return new Response("Тебя вышвыривают", "Возможно, лучше оставить Lilaya в покое, чтобы она немного остыла.", RoomPlayer.ROOM){
 						@Override
 						public void effects() {
 							Main.game.getPlayer().setLocation(WorldType.LILAYAS_HOUSE_FIRST_FLOOR, PlaceType.LILAYA_HOME_ROOM_PLAYER, true);
@@ -973,7 +969,7 @@ public class Lab {
 					};
 					
 				} else {
-					return new Response("To your room", "Head back to your room.", RoomPlayer.ROOM){
+					return new Response("В свою комнату", "Вернуться в свою комнату.", RoomPlayer.ROOM){
 						@Override
 						public void effects() {
 							Main.game.getPlayer().setLocation(WorldType.LILAYAS_HOUSE_FIRST_FLOOR, PlaceType.LILAYA_HOME_ROOM_PLAYER, true);
@@ -1056,7 +1052,7 @@ public class Lab {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("What's wrong?", "Ask Lilaya what's wrong.", LILAYA_EXPLAINS_ESSENCES_2) {
+				return new Response("Что случилось?", "Спросить у Lilaya, что случилось.", LILAYA_EXPLAINS_ESSENCES_2) {
 					@Override
 					public void effects() {
 						if(!Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.essenceBottledDiscovered)
@@ -1082,7 +1078,7 @@ public class Lab {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Listen", "Listen as Lilaya shows you how to use your stored essences in order to enchant items.", LILAYA_EXPLAINS_ESSENCES_3);
+				return new Response("Слушать", "Слушать, как Lilaya показывает, как использовать накопленные эссенции для зачарования предметов.", LILAYA_EXPLAINS_ESSENCES_3);
 
 			} else {
 				return null;
@@ -1100,7 +1096,7 @@ public class Lab {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Thank her", "Thank Lilaya for showing you how to enchant items.", LAB_EXIT){
+				return new Response("Поблагодарить её", "Поблагодарить Lilaya за то, что она показала, как зачаровывать предметы.", LAB_EXIT){
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(
@@ -1115,7 +1111,7 @@ public class Lab {
 		}
 	};
 	
-	public static final DialogueNode ESSENCE_EXTRACTION = new DialogueNode("Lilaya's Lab", "-", true, false) {
+	public static final DialogueNode ESSENCE_EXTRACTION = new DialogueNode("Лаборатория Lilaya", "-", true, false) {
 		
 		@Override
 		public String getContent() {
@@ -1128,7 +1124,7 @@ public class Lab {
 			if(index == 1) {
 				if((!Main.game.getPlayer().isInventoryFull() || Main.game.getPlayer().hasItem(Main.game.getItemGen().generateItem(ItemType.BOTTLED_ESSENCE_ARCANE)))) {
 					if(Main.game.getPlayer().getEssenceCount()>=1) {
-						return new Response("Extract (1)", "Extract one of your arcane essences.", ESSENCE_EXTRACTION_BOTTLED) {
+						return new Response("Извлечь (1)", "Извлечь одну из ваших арканных эссенций.", ESSENCE_EXTRACTION_BOTTLED) {
 							@Override
 							public void effects() {
 								Main.game.getPlayer().addItem(Main.game.getItemGen().generateItem(ItemType.BOTTLED_ESSENCE_ARCANE), false, false);
@@ -1136,27 +1132,23 @@ public class Lab {
 								
 								Main.game.getTextEndStringBuilder().append(
 										"<p style='text-align:center;'>"
-											+ "<b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>Item added to inventory:</b> <b>" + (ItemType.BOTTLED_ESSENCE_ARCANE).getDisplayName(true) + "</b>"
-										+ "</p>"
-										+ "<p>"
-											+ "You now have <b>"+count+" "+(count>1?ItemType.BOTTLED_ESSENCE_ARCANE.getNamePlural(true):ItemType.BOTTLED_ESSENCE_ARCANE.getName(true))+"</b> in your inventory."
-										+ "</p>");
+											+ "<b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>Предмет добавлен в инвентарь:</b> <b>" + (ItemType.BOTTLED_ESSENCE_ARCANE).getDisplayName(true) + "</b></p><p>Теперь у вас есть <b>"+count+" "+(count>1?ItemType.BOTTLED_ESSENCE_ARCANE.getNamePlural(true):ItemType.BOTTLED_ESSENCE_ARCANE.getName(true))+"</b> в вашем инвентаре.</p>");
 								Main.game.getPlayer().incrementEssenceCount(-1, false);
 							}
 						};
 						
 					} else {
-						return new Response("Extract (1)", "You don't have any arcane essences!", null);
+						return new Response("Извлечь (1)", "У вас нет арканных эссенций!", null);
 					}
 				} else {
-					return new Response("Extract (1)", "You don't have any free space in your inventory!", null);
+					return new Response("Извлечь (1)", "В вашем инвентаре нет свободного места!", null);
 				}
 				
 				
 			} else if(index == 2) {
 				if((!Main.game.getPlayer().isInventoryFull() || Main.game.getPlayer().hasItem(Main.game.getItemGen().generateItem(ItemType.BOTTLED_ESSENCE_ARCANE)))) {
 					if(Main.game.getPlayer().getEssenceCount()>=5) {
-						return new Response("Extract (5)", "Extract five of your arcane essences.", ESSENCE_EXTRACTION_BOTTLED) {
+						return new Response("Извлечь (5)", "Извлечь пять ваших арканных эссенций.", ESSENCE_EXTRACTION_BOTTLED) {
 							@Override
 							public void effects() {
 								for(int i =0; i<5; i++) {
@@ -1168,26 +1160,22 @@ public class Lab {
 											+ "Grabbing another vial, you set about repeating the process several times..."
 										+ "</p>"
 										+ "<p style='text-align:center;'>"
-											+ "<b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>Items added to inventory:</b> <b>5x</b> <b>" + ItemType.BOTTLED_ESSENCE_ARCANE.getDisplayName(true) + "</b>"
-										+ "</p>"
-										+ "<p>"
-											+ "You now have <b>"+count+" "+(count>1?ItemType.BOTTLED_ESSENCE_ARCANE.getNamePlural(true):ItemType.BOTTLED_ESSENCE_ARCANE.getName(true))+"</b> in your inventory."
-										+ "</p>");
+											+ "<b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>Предметы добавлены в инвентарь:</b> <b>5x</b> <b>" + ItemType.BOTTLED_ESSENCE_ARCANE.getDisplayName(true) + "</b></p><p>Теперь у вас есть <b>"+count+" "+(count>1?ItemType.BOTTLED_ESSENCE_ARCANE.getNamePlural(true):ItemType.BOTTLED_ESSENCE_ARCANE.getName(true))+"</b> в вашем инвентаре.</p>");
 								Main.game.getPlayer().incrementEssenceCount(-5, false);
 							}
 						};
 						
 					} else {
-						return new Response("Extract (5)", "You don't have enough arcane essences!", null);
+						return new Response("Извлечь (5)", "У вас недостаточно арканных эссенций!", null);
 					}
 				} else {
-					return new Response("Extract (5)", "You don't have any free space in your inventory!", null);
+					return new Response("Извлечь (5)", "В вашем инвентаре нет свободного места!", null);
 				}
 				
 			} else if(index == 3) {
 				if((!Main.game.getPlayer().isInventoryFull() || Main.game.getPlayer().hasItem(Main.game.getItemGen().generateItem(ItemType.BOTTLED_ESSENCE_ARCANE)))) {
 					if(Main.game.getPlayer().getEssenceCount()>=25) {
-						return new Response("Extract (25)", "Extract twenty-five of your arcane essences.", ESSENCE_EXTRACTION_BOTTLED) {
+						return new Response("Извлечь (25)", "Извлечь двадцать пять единиц вашей арканы.", ESSENCE_EXTRACTION_BOTTLED) {
 							@Override
 							public void effects() {
 								for(int i =0; i<25; i++) {
@@ -1199,26 +1187,22 @@ public class Lab {
 											+ "Grabbing another vial, you set about repeating the process several times..."
 										+ "</p>"
 										+ "<p style='text-align:center;'>"
-											+ "<b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>Items added to inventory:</b> <b>25x</b> <b>" + ItemType.BOTTLED_ESSENCE_ARCANE.getDisplayName(true) + "</b>"
-										+ "</p>"
-										+ "<p>"
-											+ "You now have <b>"+count+" "+(count>1?ItemType.BOTTLED_ESSENCE_ARCANE.getNamePlural(true):ItemType.BOTTLED_ESSENCE_ARCANE.getName(true))+"</b> in your inventory."
-										+ "</p>");
+											+ "<b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>Предметы добавлены в инвентарь:</b> <b>25x</b> <b>" + ItemType.BOTTLED_ESSENCE_ARCANE.getDisplayName(true) + "</b></p><p>Теперь у вас есть <b>"+count+" "+(count>1?ItemType.BOTTLED_ESSENCE_ARCANE.getNamePlural(true):ItemType.BOTTLED_ESSENCE_ARCANE.getName(true))+"</b> в вашем инвентаре.</p>");
 								Main.game.getPlayer().incrementEssenceCount(-25, false);
 							}
 						};
 						
 					} else {
-						return new Response("Extract (25)", "You don't have enough arcane essences!", null);
+						return new Response("Извлечь (25)", "У вас недостаточно арканных эссенций!", null);
 					}
 				} else {
-					return new Response("Extract (25)", "You don't have any free space in your inventory!", null);
+					return new Response("Извлечь (25)", "В вашем инвентаре нет свободного места!", null);
 				}
 				
 			} else if(index == 4) {
 				if((!Main.game.getPlayer().isInventoryFull() || Main.game.getPlayer().hasItem(Main.game.getItemGen().generateItem(ItemType.BOTTLED_ESSENCE_ARCANE)))) {
 					if(Main.game.getPlayer().getEssenceCount()>=1) {
-						return new Response("Extract (all)", "Extract all of your arcane essences.", ESSENCE_EXTRACTION_BOTTLED) {
+						return new Response("Извлечь (все)", "Извлечь всю вашу аркану.", ESSENCE_EXTRACTION_BOTTLED) {
 							@Override
 							public void effects() {
 								for(int i =0; i<Main.game.getPlayer().getEssenceCount(); i++) {
@@ -1230,26 +1214,22 @@ public class Lab {
 											+ "Grabbing another vial, you set about repeating the process several times..."
 										+ "</p>"
 										+ "<p style='text-align:center;'>"
-											+ "<b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>Items added to inventory:</b> <b>"+Main.game.getPlayer().getEssenceCount()+"x</b> <b>"
-												+ ItemType.BOTTLED_ESSENCE_ARCANE.getDisplayName(true) + "</b>"
-										+ "</p>"
-										+ "<p>"
-											+ "You now have <b>"+count+" "+(count>1?ItemType.BOTTLED_ESSENCE_ARCANE.getNamePlural(true):ItemType.BOTTLED_ESSENCE_ARCANE.getName(true))+"</b> in your inventory."
-										+ "</p>");
+											+ "<b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>Предметы добавлены в инвентарь:</b> <b>"+Main.game.getPlayer().getEssenceCount()+"x</b> <b>"
+												+ ItemType.BOTTLED_ESSENCE_ARCANE.getDisplayName(true) + "</b></p><p>Теперь у вас есть <b>"+count+" "+(count>1?ItemType.BOTTLED_ESSENCE_ARCANE.getNamePlural(true):ItemType.BOTTLED_ESSENCE_ARCANE.getName(true))+"</b> в вашем инвентаре.</p>");
 								Main.game.getPlayer().incrementEssenceCount(-Main.game.getPlayer().getEssenceCount(), false);
 								
 							}
 						};
 						
 					} else {
-						return new Response("Extract (all)", "You don't have any essences!", null);
+						return new Response("Извлечь (все)", "У вас нет эссенций!", null);
 					}
 				} else {
-					return new Response("Extract (all)", "You don't have any free space in your inventory!", null);
+					return new Response("Извлечь (все)", "В вашем инвентаре нет свободного места!", null);
 				}
 				
 			} else if (index == 0) {
-				return new Response("Back", "Stop extracting essences.", LAB_ENTRY) {
+				return new Response("Назад", "Хватит извлекать эссенции.", LAB_ENTRY) {
 					@Override
 					public void effects() {
 						Main.game.getDialogueFlags().setFlag(DialogueFlagValue.essenceExtractionKnown, true);
@@ -1262,7 +1242,7 @@ public class Lab {
 		}
 	};
 	
-	public static final DialogueNode ESSENCE_EXTRACTION_BOTTLED = new DialogueNode("Lilaya's Lab", "-", true, false) {
+	public static final DialogueNode ESSENCE_EXTRACTION_BOTTLED = new DialogueNode("Лаборатория Lilaya", "-", true, false) {
 		
 		@Override
 		public String getContent() {
@@ -1276,7 +1256,7 @@ public class Lab {
 	};
 	
 	
-	public static final DialogueNode LILAYA_CURRENT_DATE_TALK = new DialogueNode("Lilaya's Lab", "-", true, false) {
+	public static final DialogueNode LILAYA_CURRENT_DATE_TALK = new DialogueNode("Лаборатория Lilaya", "-", true, false) {
 		
 		@Override
 		public String getContent() {
@@ -1291,7 +1271,7 @@ public class Lab {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Thank her", "Thank Lilaya for her information (or lack thereof), and think about asking her something else.", LAB_EXIT);
+				return new Response("Поблагодарить её", "Поблагодарить Lilaya за информацию (или её отсутствие) и подумать о том, чтобы спросить её о чём-нибудь другом.", LAB_EXIT);
 			} else {
 				return null;
 			}
@@ -1311,7 +1291,7 @@ public class Lab {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Returning home", "Ask Lilaya if she's found a way to send you back home.", AUNT_HOME_LABORATORY_TESTING_ARTHUR){
+				return new Response("Возвращение домой", "Спросить Lilaya, нашла ли она способ отправить тебя обратно домой.", AUNT_HOME_LABORATORY_TESTING_ARTHUR){
 					@Override
 					public void effects() {
 						if (Main.game.getPlayer().getQuest(QuestLine.MAIN) == Quest.MAIN_1_A_LILAYAS_TESTS) {
@@ -1343,9 +1323,9 @@ public class Lab {
 			if (index == 1) {
 				return new Response(
 						!Main.game.getPlayer().isTaur()
-							?"Sit down"
-							:"Step forwards",
-						"You know exactly why Lilaya seems embarrassed about these 'tests'...",
+							?"Сесть"
+							:"Сделать шаг вперёд",
+						"Ты прекрасно понимаешь, почему Lilaya так смущается из-за этих «тестов»...",
 						AUNT_HOME_LABORATORY_TESTING_HORNY_LILAYA){
 					@Override
 					public void effects() {
@@ -1356,7 +1336,7 @@ public class Lab {
 				};
 
 			} else if (index == 2) {
-				return new Response("Decline", "Tell Lilaya that you've changed your mind. While she'll probably be a little disappointed, you can always come back later to take up her offer if you should change your mind.", LAB_EXIT){
+				return new Response("Отклонить", "Сказать Lilaya, что ты передумал. Хотя она, вероятно, будет немного разочарована, ты всегда сможешь вернуться позже и принять её предложение, если передумаешь.", LAB_EXIT){
 					@Override public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/lilayasHome/lab", "AUNT_HOME_LABORATORY_TESTING_LEAVE"));
 						if (Main.game.getPlayer().isVisiblyPregnant() && !Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.reactedToPregnancyLilaya)) {
@@ -1382,8 +1362,8 @@ public class Lab {
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
 				if(!Main.game.getPlayer().isTaur()) {
-					return new ResponseSex("Sex",
-							"Start having sex with Lilaya.",
+					return new ResponseSex("Секс",
+							"Начать заниматься сексом с Lilaya.",
 							Util.newArrayListOfValues(Fetish.FETISH_INCEST), null, CorruptionLevel.FOUR_LUSTFUL, null, null, null,
 							true, true,
 							new SMSitting(
@@ -1400,8 +1380,8 @@ public class Lab {
 						}
 					};
 				} else {
-					return new ResponseSex("Sex",
-							"Start having sex with Lilaya.",
+					return new ResponseSex("Секс",
+							"Начать заниматься сексом с Lilaya.",
 							Util.newArrayListOfValues(Fetish.FETISH_INCEST), null, CorruptionLevel.FOUR_LUSTFUL, null, null, null,
 							true, true,
 							new SMGeneric(
@@ -1424,7 +1404,7 @@ public class Lab {
 
 
 			} else if (index == 2) {
-				return new Response("Stop", "Tell Lilaya that you need to get going. While she'll definitely be disappointed that you're stopping so soon, you can always come back later if you should change your mind.",
+				return new Response("Остановиться", "Сказать Lilaya, что тебе пора идти. Хотя она определенно будет разочарована тем, что ты уходишь так скоро, ты всегда сможешь вернуться позже, если передумаешь.",
 						LAB_EXIT){
 					@Override public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/lilayasHome/lab", "AUNT_HOME_LABORATORY_TESTING_MORE_SEX_STOP"));
@@ -1448,13 +1428,13 @@ public class Lab {
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
 				return new Response(
-						"'Tests'",
-						"Accept Lilaya's offer of more 'tests'. You're not sure what her intentions really are, but you're confident that you'll be able to stop her if she tries any funny business.",
+						"«Тесты»",
+						"Принять предложение Lilaya провести еще несколько «тестов». Ты не совсем уверен в её истинных намерениях, но полагаешь, что сможешь остановить её, если она начнет выкидывать что-нибудь эдакое.",
 						AUNT_HOME_LABORATORY_TESTING_HORNY_LILAYA);
 
 			} else if (index == 2) {
-				return new Response("Decline",
-						"Tell Lilaya that you're not up for this sort of thing. While she'll probably be a little disappointed, you can always come back later to take up her offer if you should change your mind.",
+				return new Response("Отклонить",
+						"Скажите Lilaya, что вы не настроены на подобное. Она, вероятно, немного расстроится, но вы всегда сможете вернуться позже и принять её предложение, если передумаете.",
 						LAB_EXIT){
 					@Override public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/lilayasHome/lab", "AUNT_HOME_LABORATORY_TESTING_ARTHUR_DECLINED"));
@@ -1477,13 +1457,13 @@ public class Lab {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Open your mouth",
-						"Let Lilaya push her finger into your mouth. After all, maybe this is just part of the test?",
+				return new Response("Откройте рот",
+						"Позвольте Lilaya просунуть палец вам в рот. В конце концов, может, это всего лишь часть теста?",
 						AUNT_HOME_LABORATORY_TESTING_HORNY_LILAYA_WANTS_SEX);
 
 			} else if (index == 2) {
-				return new Response("Stop this",
-						"Stand up and tell Lilaya that this is going too far. While she'll undoubtedly be upset at this sudden end to her advances, you're sure that she'd try to hit on you again if you changed your mind in the future.",
+				return new Response("Прекратить это",
+						"Встаньте и скажите Lilaya, что это заходит слишком далеко. Хотя она, несомненно, будет расстроена таким внезапным концом её ухаживаний, вы уверены, что она попробует снова, если вы передумаете в будущем.",
 						LAB_EXIT){
 					@Override public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/lilayasHome/lab", "AUNT_HOME_LABORATORY_TESTING_HORNY_LILAYA_DECLINED"));
@@ -1507,10 +1487,10 @@ public class Lab {
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
 				if(!Main.game.getPlayer().isTaur()) {
-					return new ResponseSex("Let it happen",
+					return new ResponseSex("Позволить этому случиться",
 							Main.game.getPlayer().hasFetish(Fetish.FETISH_INCEST)
-								?"You know that this can only end one way, and the fact that Lilaya reminds you of your aunt Lily only makes it all the more exciting..."
-								:"You know that this can only end one way. Although Lilaya reminds you of your [lilaya.relation(pc)] Lily, you don't think it will get in the way of you enjoying this...",
+								?"Вы знаете, что всё это может закончиться только одним способом, и тот факт, что Lilaya напоминает вам вашу тетю Лили, делает процесс еще более возбуждающим..."
+								:"Вы знаете, что всё это может закончиться только одним способом. Хотя Lilaya напоминает вам вашу [lilaya.relation(pc)] Лили, вы не думаете, что это помешает вам насладиться процессом...",
 							Util.newArrayListOfValues(Fetish.FETISH_INCEST), null, CorruptionLevel.FOUR_LUSTFUL, null, null, null,
 							true, true,
 							new SMSitting(
@@ -1528,10 +1508,10 @@ public class Lab {
 					};
 					
 				} else {
-					return new ResponseSex("Let it happen",
+					return new ResponseSex("Позволить этому случиться",
 							Main.game.getPlayer().hasFetish(Fetish.FETISH_INCEST)
-								?"You know that this can only end one way, and the fact that Lilaya reminds you of your aunt Lily only makes it all the more exciting..."
-								:"You know that this can only end one way. Although Lilaya reminds you of your [lilaya.relation(pc)] Lily, you don't think it will get in the way of you enjoying this...",
+								?"Вы знаете, что всё это может закончиться только одним способом, и тот факт, что Lilaya напоминает вам вашу тетю Лили, делает процесс еще более возбуждающим..."
+								:"Вы знаете, что всё это может закончиться только одним способом. Хотя Lilaya напоминает вам вашу [lilaya.relation(pc)] Лили, вы не думаете, что это помешает вам насладиться процессом...",
 							Util.newArrayListOfValues(Fetish.FETISH_INCEST), null, CorruptionLevel.FOUR_LUSTFUL, null, null, null,
 							true, true,
 							new SMGeneric(
@@ -1553,8 +1533,8 @@ public class Lab {
 				}
 
 			} else if (index == 2) {
-				return new Response("Stop this",
-						"Stand up and tell Lilaya that this has gone too far. While she'll undoubtedly be upset at this sudden end, you're sure that she'd try to hit on you again if you changed your mind in the future.",
+				return new Response("Прекратить это",
+						"Встань и скажи Lilaya, что всё это зашло слишком далеко. Хотя она, несомненно, расстроится из-за такого внезапного конца, ты уверен, что если ты передумаешь в будущем, она снова попытается с тобой заигрывать.",
 						LAB_EXIT){
 					@Override public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/lilayasHome/lab", "AUNT_HOME_LABORATORY_TESTING_HORNY_LILAYA_WANTS_SEX_DECLINED"));
@@ -1584,7 +1564,7 @@ public class Lab {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Continue", "You've now got Lilaya's permission to invite friends back home!", LAB_EXIT);
+				return new Response("Продолжить", "Теперь Lilaya разрешает тебе приглашать друзей к себе домой!", LAB_EXIT);
 			}
 			return null;
 		}
@@ -1598,7 +1578,7 @@ public class Lab {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Continue", "You've now got Lilaya's permission to store dolls in her mansion!", LAB_EXIT);
+				return new Response("Продолжить", "Теперь Lilaya разрешает тебе хранить кукол в её особняке!", LAB_EXIT);
 			}
 			return null;
 		}
@@ -1612,7 +1592,7 @@ public class Lab {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Accommodation", "Agree with Lilaya's observation that you'll need somewhere to keep your slaves.", LILAYA_SLAVER_RECOMMENDATION_SLAVE_ACCOMMODATION) {
+				return new Response("Жилье", "Согласись с наблюдением Lilaya о том, что тебе понадобится место для содержания твоих рабов.", LILAYA_SLAVER_RECOMMENDATION_SLAVE_ACCOMMODATION) {
 					@Override
 					public void effects() {
 						if (Main.game.getPlayer().getQuest(QuestLine.SIDE_SLAVERY) == Quest.SIDE_SLAVER_NEED_RECOMMENDATION) {
@@ -1633,13 +1613,13 @@ public class Lab {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Continue", "Now that you've got Lilaya's letter of recommendation, you should head back to Slaver Alley and talk to [finch.name].", LAB_EXIT);
+				return new Response("Продолжить", "Теперь, когда у тебя есть рекомендательное письмо от Lilaya, тебе стоит вернуться в Переулок Работорговцев и поговорить с [finch.name].", LAB_EXIT);
 			}
 			return null;
 		}
 	};
 
-	public static final DialogueNode LAB_ARTHURS_TALE = new DialogueNode("Lilaya's Laboratory", "", true, true) {
+	public static final DialogueNode LAB_ARTHURS_TALE = new DialogueNode("Лаборатория Lilaya", "", true, true) {
 		@Override
 		public int getSecondsPassed() {
 			return 30*60;
@@ -1651,7 +1631,7 @@ public class Lab {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index == 1) {
-				return new ResponseEffectsOnly("Clear storeroom", "Head on over to the lab's storeroom and help Rose clear it out so that Arthur can use it as a bedroom.") {
+				return new ResponseEffectsOnly("Расчистить кладовую", "Отправляйся в кладовую лаборатории и помоги Rose расчистить её, чтобы Arthur мог использовать её как спальню.") {
 					@Override
 					public void effects() {
 						Cell arthurRoomCell = addArthurRoom();

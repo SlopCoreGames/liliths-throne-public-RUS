@@ -96,22 +96,22 @@ public class SlaveAuctionBidder {
 		Gender gender = Util.randomItemFrom(genders);
 		
 		List<String> biddingComments = Util.newArrayListOfValues(
-				"I deserve a new fucktoy...",
-				"My slaves need a new toy...",
-				UtilText.parse(slave, "I could put [npc.herHim] to work in the brothel..."),
-				UtilText.parse(slave, "I could put [npc.herHim] to work in the milking sheds..."),
-				UtilText.parse(slave, "[npc.She] looks like [npc.she]'d make a good maid..."));
+				"Мне нужна новая игрушка для траха...",
+				"Моим рабыням нужна новая игрушка...",
+				UtilText.parse(slave, "Я мог бы отправить [npc.herHim] работать в бордель..."),
+				UtilText.parse(slave, "Я мог бы отправить [npc.herHim] работать в доильные сараи..."),
+				UtilText.parse(slave, "[npc.She] выглядит как отличная служанка, если [npc.she]..."));
 		
 		List<String> failedBidComments = Util.newArrayListOfValues(
-				"I can't afford that...",
-				"That's too much for me...",
-				"Maybe I'll bid on the next one...");
+				"Мне это не по карману...",
+				"Для меня это слишком дорого...",
+				"Может, сделаю ставку на следующую...");
 		
 		List<String> successfulBidComments = Util.newArrayListOfValues(
-				UtilText.parse(slave, "I'm going to break [npc.herHim] in as soon as I get home..."),
-				UtilText.parse(slave, "I'll get my other slaves to break [npc.herHim] in..."),
-				UtilText.parse(slave, "I'm sure [npc.she]'ll love [npc.her] new life in my brothel..."),
-				UtilText.parse(slave, "I'm sure [npc.she]'ll love [npc.her] new life in the milking sheds..."));
+				UtilText.parse(slave, "Как только приду домой, сразу начну приручать [npc.herHim]..."),
+				UtilText.parse(slave, "Я заставлю своих остальных рабов приручить [npc.herHim]..."),
+				UtilText.parse(slave, "Уверен, [npc.she] будет в восторге от [npc.her] новой жизни в моем борделе..."),
+				UtilText.parse(slave, "Уверен, [npc.she] будет в восторге от [npc.her] новой жизни в доильных сараях..."));
 		
 		return new SlaveAuctionBidder(race, gender, biddingComments, failedBidComments, successfulBidComments);
 	}

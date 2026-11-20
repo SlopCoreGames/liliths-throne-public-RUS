@@ -62,7 +62,7 @@ public class NyanRepeatDate {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Restaurant", "Accompany Nyan to the restaurant.", DATE_RESTAURANT_1_ARRIVED);
+				return new Response("Ресторан", "Сопроводить Nyan в ресторан.", DATE_RESTAURANT_1_ARRIVED);
 			}
 			return null;
 		}
@@ -87,10 +87,10 @@ public class NyanRepeatDate {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				int cost = 350;
-				return new Response("Vulpine's Vineyard ("+UtilText.formatAsMoney(cost, "span")+")", "Order the cheapest wine on the menu, which is nevertheless still a very good vintage.", DATE_RESTAURANT_2_WINE_ORDER) {
+				return new Response("Виноградник Лисицы ("+UtilText.formatAsMoney(cost, "охват")+")", "Заказать самое дешевое вино в меню, которое, тем не менее, является очень хорошим винтажем.", DATE_RESTAURANT_2_WINE_ORDER) {
 					@Override
 					public void effects() {
-						UtilText.addSpecialParsingString("Vulpine's Vineyard", true);
+						UtilText.addSpecialParsingString("Виноградник Вульпина", true);
 						UtilText.addSpecialParsingString(Util.intToString(cost), false);
 						dateBill+=cost;
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/nyansApartment/repeatDate", "DATE_RESTAURANT_2_VULPINE"));
@@ -99,10 +99,10 @@ public class NyanRepeatDate {
 				
 			} else if(index==2) {
 				int cost = 600;
-				return new Response("Alicorn's Finest ("+UtilText.formatAsMoney(cost, "span")+")", "Order one of the more expensive wines on the menu.", DATE_RESTAURANT_2_WINE_ORDER) {
+				return new Response("Лучшее Аликорна ("+UtilText.formatAsMoney(cost, "охват")+")", "Заказать одно из более дорогих вин в меню.", DATE_RESTAURANT_2_WINE_ORDER) {
 					@Override
 					public void effects() {
-						UtilText.addSpecialParsingString("Alicorn's Finest", true);
+						UtilText.addSpecialParsingString("Лучшее Аликорна", true);
 						UtilText.addSpecialParsingString(Util.intToString(cost), false);
 						dateBill+=cost;
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/nyansApartment/repeatDate", "DATE_RESTAURANT_2_ALICORN"));
@@ -112,10 +112,10 @@ public class NyanRepeatDate {
 				
 			} else if(index==3) {
 				int cost = 950;
-				return new Response("Youko's Reserve ("+UtilText.formatAsMoney(cost, "span")+")", "Order the most expensive wine on the menu.", DATE_RESTAURANT_2_WINE_ORDER) {
+				return new Response("Резерв Юко ("+UtilText.formatAsMoney(cost, "охват")+")", "Заказать самое дорогое вино в меню.", DATE_RESTAURANT_2_WINE_ORDER) {
 					@Override
 					public void effects() {
-						UtilText.addSpecialParsingString("Youko's Reserve", true);
+						UtilText.addSpecialParsingString("Резерв Юко", true);
 						UtilText.addSpecialParsingString(Util.intToString(cost), false);
 						dateBill+=cost;
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/nyansApartment/repeatDate", "DATE_RESTAURANT_2_YOUKO"));
@@ -139,7 +139,7 @@ public class NyanRepeatDate {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Share bottle", "Say that you'll share the bottle with Nyan.", DATE_RESTAURANT_3_MAIN_DATE) {
+				return new Response("Разделить бутылку", "Сказать, что ты разделишь бутылку с Nyan.", DATE_RESTAURANT_3_MAIN_DATE) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/nyansApartment/repeatDate", "DATE_RESTAURANT_3_SHARE"));
@@ -148,7 +148,7 @@ public class NyanRepeatDate {
 				};
 				
 			} else if(index==2) {
-				return new Response("Water", "Order a bottle of water for yourself.", DATE_RESTAURANT_3_MAIN_DATE) {
+				return new Response("Вода", "Заказать бутылку воды для себя.", DATE_RESTAURANT_3_MAIN_DATE) {
 					@Override
 					public void effects() {
 						dateBill+=25;
@@ -158,7 +158,7 @@ public class NyanRepeatDate {
 				};
 				
 			} else if(index==3) {
-				return new Response("Beer", "Order a beer for yourself.", DATE_RESTAURANT_3_MAIN_DATE) {
+				return new Response("Пиво", "Заказать пиво для себя.", DATE_RESTAURANT_3_MAIN_DATE) {
 					@Override
 					public void effects() {
 						dateBill+=50;
@@ -190,7 +190,7 @@ public class NyanRepeatDate {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Leave ("+UtilText.formatAsMoney(dateBill, "span")+")", "Pay the bill and accompany Nyan back to her apartment building.", DATE_END_RETURN) {
+				return new Response("Уйти ("+UtilText.formatAsMoney(dateBill, "охват")+")", "Оплатить счет и проводить Nyan до её дома.", DATE_END_RETURN) {
 					@Override
 					public void effects() {
 						Main.game.getTextEndStringBuilder().append(Main.game.getPlayer().incrementMoney(-dateBill));
@@ -227,7 +227,7 @@ public class NyanRepeatDate {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("[nyanmum.Name]", "It's time to meet [nyanmum.name] again...", POST_DATE_APARTMENT_INTERVIEW_2_FOOD);
+				return new Response("[nyanmum.Name]", "Пришло время снова встретиться с [nyanmum.name]...", POST_DATE_APARTMENT_INTERVIEW_2_FOOD);
 			}
 			return null;
 		}
@@ -255,12 +255,12 @@ public class NyanRepeatDate {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Salad", "Tell [nyanmum.name] that Nyan's favourite food is salad.", POST_DATE_APARTMENT_INTERVIEW_3_HISTORY) {
+				return new Response("Салат", "Сказать [nyanmum.name], что любимое блюдо Nyan — салат.", POST_DATE_APARTMENT_INTERVIEW_3_HISTORY) {
 					@Override
 					public void effects() { failEffects("salad"); }
 				};
 			} else if(index==2) {
-				return new Response("Tsipoura", "Tell [nyanmum.name] that Nyan's favourite food is the fish dish, 'tsipoura'.", POST_DATE_APARTMENT_INTERVIEW_3_HISTORY) {
+				return new Response("Ципура", "Сказать [nyanmum.name], что любимое блюдо Nyan — это рыба «ципура».", POST_DATE_APARTMENT_INTERVIEW_3_HISTORY) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/nyansApartment/repeatDate", "POST_DATE_APARTMENT_INTERVIEW_2_FOOD_SUCCESS"));
@@ -268,19 +268,19 @@ public class NyanRepeatDate {
 					}
 				};
 			} else if(index==3) {
-				return new Response("Pizza", "Tell [nyanmum.name] that Nyan's favourite food is pizza.", POST_DATE_APARTMENT_INTERVIEW_3_HISTORY) {
+				return new Response("Пицца", "Сказать [nyanmum.name], что любимая еда Nyan — пицца.", POST_DATE_APARTMENT_INTERVIEW_3_HISTORY) {
 					@Override
 					public void effects() { failEffects("pizza"); }
 				};
 			} else if(index==4) {
-				return new Response("Catnip", "Tell [nyanmum.name] that Nyan's favourite food is the plant 'nepeta cataria', known by the common name of catnip.", POST_DATE_APARTMENT_INTERVIEW_3_HISTORY) {
+				return new Response("Кошачья мята", "Сказать [nyanmum.name], что любимое лакомство Nyan — это растение «непета кошачья», известное как кошачья мята.", POST_DATE_APARTMENT_INTERVIEW_3_HISTORY) {
 					@Override
 					public void effects() { failEffects("catnip"); }
 				};
 			} else if(index==5) {
-				return new Response("Ice cream", "Tell [nyanmum.name] that Nyan's favourite food is ice cream.", POST_DATE_APARTMENT_INTERVIEW_3_HISTORY) {
+				return new Response("Мороженое", "Сказать [nyanmum.name], что любимое лакомство Nyan — мороженое.", POST_DATE_APARTMENT_INTERVIEW_3_HISTORY) {
 					@Override
-					public void effects() { failEffects("ice cream"); }
+					public void effects() { failEffects("мороженое"); }
 				};
 			}
 			return null;
@@ -304,22 +304,22 @@ public class NyanRepeatDate {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Organise day", "Tell [nyanmum.name] that Nyan used to organise her day for her every morning.", POST_DATE_APARTMENT_INTERVIEW_4_STORE) {
+				return new Response("Организовать день", "Рассказать [nyanmum.name], что Nyan раньше каждое утро планировала её день.", POST_DATE_APARTMENT_INTERVIEW_4_STORE) {
 					@Override
-					public void effects() { failEffects("organise her day for her"); }
+					public void effects() { failEffects("планировала её день"); }
 				};
 			} else if(index==2) {
-				return new Response("Kiss her", "Tell [nyanmum.name] that Nyan used to kiss her every morning.", POST_DATE_APARTMENT_INTERVIEW_4_STORE) {
+				return new Response("Поцеловать её", "Рассказать [nyanmum.name], что Nyan раньше каждое утро целовала её.", POST_DATE_APARTMENT_INTERVIEW_4_STORE) {
 					@Override
-					public void effects() { failEffects("kiss her"); }
+					public void effects() { failEffects("целовала её"); }
 				};
 			} else if(index==3) {
-				return new Response("Breakfast in bed", "Tell [nyanmum.name] that Nyan used to make breakfast in bed for her every morning.", POST_DATE_APARTMENT_INTERVIEW_4_STORE) {
+				return new Response("Завтрак в постель", "Рассказать [nyanmum.name], что Nyan раньше каждое утро готовила ей завтрак в постель.", POST_DATE_APARTMENT_INTERVIEW_4_STORE) {
 					@Override
-					public void effects() { failEffects("make breakfast in bed for her"); }
+					public void effects() { failEffects("готовила ей завтрак в постель"); }
 				};
 			} else if(index==4) {
-				return new Response("Bake pastries", "Tell [nyanmum.name] that Nyan used to bake pastries for her every morning.", POST_DATE_APARTMENT_INTERVIEW_4_STORE) {
+				return new Response("Печь выпечку", "Рассказать [nyanmum.name], что Nyan раньше каждое утро пекла для неё выпечку.", POST_DATE_APARTMENT_INTERVIEW_4_STORE) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/nyansApartment/repeatDate", "POST_DATE_APARTMENT_INTERVIEW_3_HISTORY_SUCCESS"));
@@ -327,9 +327,9 @@ public class NyanRepeatDate {
 					}
 				};
 			} else if(index==5) {
-				return new Response("Play piano", "Tell [nyanmum.name] that Nyan used to play the piano for her every morning.", POST_DATE_APARTMENT_INTERVIEW_4_STORE) {
+				return new Response("Играть на пианино", "Сказать [nyanmum.name], что Nyan раньше каждое утро играла для неё на пианино.", POST_DATE_APARTMENT_INTERVIEW_4_STORE) {
 					@Override
-					public void effects() { failEffects("play the piano for her"); }
+					public void effects() { failEffects("сыграть ей на пианино"); }
 				};
 			}
 			return null;
@@ -353,27 +353,27 @@ public class NyanRepeatDate {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Space", "Tell [nyanmum.name] that Nyan's store used to be called 'Space'.", POST_DATE_APARTMENT_INTERVIEW_5_FLOWER) {
+				return new Response("Пробел", "Сказать [nyanmum.name], что магазин Nyan раньше назывался «Space».", POST_DATE_APARTMENT_INTERVIEW_5_FLOWER) {
 					@Override
-					public void effects() { failEffects("Space"); }
+					public void effects() { failEffects("Пробел"); }
 				};
 			} else if(index==2) {
-				return new Response("Dapper Duds", "Tell [nyanmum.name] that Nyan's store used to be called 'Dapper Duds'.", POST_DATE_APARTMENT_INTERVIEW_5_FLOWER) {
+				return new Response("Приличный наряд", "Сказать [nyanmum.name], что магазин Nyan раньше назывался «Dapper Duds».", POST_DATE_APARTMENT_INTERVIEW_5_FLOWER) {
 					@Override
-					public void effects() { failEffects("Dapper Duds"); }
+					public void effects() { failEffects("Приличный наряд"); }
 				};
 			} else if(index==3) {
-				return new Response("The Dress Shop", "Tell [nyanmum.name] that Nyan's store used to be called 'The Dress Shop'.", POST_DATE_APARTMENT_INTERVIEW_5_FLOWER) {
+				return new Response("Магазин платьев", "Сказать [nyanmum.name], что магазин Nyan раньше назывался «Магазин платьев».", POST_DATE_APARTMENT_INTERVIEW_5_FLOWER) {
 					@Override
-					public void effects() { failEffects("The Dress Shop"); }
+					public void effects() { failEffects("Магазин платьев"); }
 				};
 			} else if(index==4) {
-				return new Response("[nyanmum.NamePos] Finest", "Tell [nyanmum.name] that Nyan's store used to be called '[nyanmum.NamePos] Finest'.", POST_DATE_APARTMENT_INTERVIEW_5_FLOWER) {
+				return new Response("[nyanmum.NamePos] Изысканный", "Сказать [nyanmum.name], что магазин Nyan раньше назывался «[nyanmum.NamePos] Finest».", POST_DATE_APARTMENT_INTERVIEW_5_FLOWER) {
 					@Override
-					public void effects() { failEffects("[nyanmum.NamePos] Finest"); }
+					public void effects() { failEffects("[nyanmum.NamePos] Изысканный"); }
 				};
 			} else if(index==5) {
-				return new Response("Golden Threads", "Tell [nyanmum.name] that Nyan's store used to be called 'Golden Threads'.", POST_DATE_APARTMENT_INTERVIEW_5_FLOWER) {
+				return new Response("Золотые нити", "Сказать [nyanmum.name], что магазин Nyan раньше назывался «Золотые нити».", POST_DATE_APARTMENT_INTERVIEW_5_FLOWER) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/nyansApartment/repeatDate", "POST_DATE_APARTMENT_INTERVIEW_4_STORE_SUCCESS"));
@@ -402,7 +402,7 @@ public class NyanRepeatDate {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Daisies", "Tell [nyanmum.name] that Nyan's favourite flowers are daisies.", POST_DATE_APARTMENT_INTERVIEW_6_BOOK) {
+				return new Response("Ромашки", "Сказать [nyanmum.name], что любимые цветы Nyan — ромашки.", POST_DATE_APARTMENT_INTERVIEW_6_BOOK) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/nyansApartment/repeatDate", "POST_DATE_APARTMENT_INTERVIEW_5_FLOWER_SUCCESS"));
@@ -410,22 +410,22 @@ public class NyanRepeatDate {
 					}
 				};
 			} else if(index==2) {
-				return new Response("Tulips", "Tell [nyanmum.name] that Nyan's favourite flowers are tulips.", POST_DATE_APARTMENT_INTERVIEW_6_BOOK) {
+				return new Response("Тюльпаны", "Сказать [nyanmum.name], что любимые цветы Nyan — тюльпаны.", POST_DATE_APARTMENT_INTERVIEW_6_BOOK) {
 					@Override
 					public void effects() { failEffects("tulips"); }
 				};
 			} else if(index==3) {
-				return new Response("Roses", "Tell [nyanmum.name] that Nyan's favourite flowers are roses.", POST_DATE_APARTMENT_INTERVIEW_6_BOOK) {
+				return new Response("Розы", "Сказать [nyanmum.name], что любимые цветы Nyan — розы.", POST_DATE_APARTMENT_INTERVIEW_6_BOOK) {
 					@Override
 					public void effects() { failEffects("roses"); }
 				};
 			} else if(index==4) {
-				return new Response("Fuchsias", "Tell [nyanmum.name] that Nyan's favourite flowers are fuchsias.", POST_DATE_APARTMENT_INTERVIEW_6_BOOK) {
+				return new Response("Фуксии", "Сказать [nyanmum.name], что любимые цветы Nyan — фуксии.", POST_DATE_APARTMENT_INTERVIEW_6_BOOK) {
 					@Override
 					public void effects() { failEffects("fuchsias"); }
 				};
 			} else if(index==5) {
-				return new Response("Hydrangeas", "Tell [nyanmum.name] that Nyan's favourite flowers are hydrangeas.", POST_DATE_APARTMENT_INTERVIEW_6_BOOK) {
+				return new Response("Гортензии", "Сказать [nyanmum.name], что любимые цветы Nyan — гортензии.", POST_DATE_APARTMENT_INTERVIEW_6_BOOK) {
 					@Override
 					public void effects() { failEffects("hydrangeas"); }
 				};
@@ -455,17 +455,17 @@ public class NyanRepeatDate {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Nightmare Chapel", "Tell [nyanmum.name] that Nyan's favourite book is called 'Nightmare Chapel'.", POST_DATE_APARTMENT_INTERVIEW_PASS) {
+				return new Response("Часовня кошмаров", "Сказать [nyanmum.name], что любимая книга Nyan называется «Часовня кошмаров».", POST_DATE_APARTMENT_INTERVIEW_PASS) {
 					@Override
-					public void effects() { failEffects("Nightmare Chapel"); }
+					public void effects() { failEffects("Часовня кошмаров"); }
 				};
 			} else if(index==2) {
-				return new Response("The Peacock's Progress", "Tell [nyanmum.name] that Nyan's favourite book is called 'The Peacock's Progress'.", POST_DATE_APARTMENT_INTERVIEW_PASS) {
+				return new Response("Прогресс павлина", "Сказать [nyanmum.name], что любимая книга Nyan называется «Прогресс павлина».", POST_DATE_APARTMENT_INTERVIEW_PASS) {
 					@Override
-					public void effects() { failEffects("The Peacock's Progress"); }
+					public void effects() { failEffects("Прогресс павлина"); }
 				};
 			} else if(index==3) {
-				return new Response("One Day in June", "Tell [nyanmum.name] that Nyan's favourite book is called 'One Day in June'.", POST_DATE_APARTMENT_INTERVIEW_PASS) {
+				return new Response("Один день в июне", "Сказать [nyanmum.name], что любимая книга Nyan называется «Один день в июне».", POST_DATE_APARTMENT_INTERVIEW_PASS) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/nyansApartment/repeatDate", "POST_DATE_APARTMENT_INTERVIEW_6_BOOK_SUCCESS"));
@@ -473,14 +473,14 @@ public class NyanRepeatDate {
 					}
 				};
 			} else if(index==4) {
-				return new Response("The Sign of Eight", "Tell [nyanmum.name] that Nyan's favourite book is called 'The Sign of Eight'.", POST_DATE_APARTMENT_INTERVIEW_PASS) {
+				return new Response("Знак восьми", "Сказать [nyanmum.name], что любимая книга Nyan называется «Знак восьми».", POST_DATE_APARTMENT_INTERVIEW_PASS) {
 					@Override
-					public void effects() { failEffects("The Sign of Eight"); }
+					public void effects() { failEffects("Знак восьми"); }
 				};
 			} else if(index==5) {
-				return new Response("Lord of the Hats", "Tell [nyanmum.name] that Nyan's favourite book is called 'Lord of the Hats'.", POST_DATE_APARTMENT_INTERVIEW_PASS) {
+				return new Response("Повелитель шляп", "Сказать [nyanmum.name], что любимая книга Nyan называется «Повелитель шляп».", POST_DATE_APARTMENT_INTERVIEW_PASS) {
 					@Override
-					public void effects() { failEffects("Lord of the Hats"); }
+					public void effects() { failEffects("Повелитель шляп"); }
 				};
 			}
 			return null;
@@ -504,7 +504,7 @@ public class NyanRepeatDate {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) { 
-				return new Response("Hug", "Nyan looks like she could really use a reassuring hug right about now.", NyanFirstDate.POST_DATE_APARTMENT_BEDROOM);
+				return new Response("Обнять", "Nyan выглядит так, будто ей сейчас очень не помешало бы утешительное объятие.", NyanFirstDate.POST_DATE_APARTMENT_BEDROOM);
 			}
 			return null;
 		}

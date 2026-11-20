@@ -43,7 +43,7 @@ import com.lilithsthrone.world.places.PlaceType;
  */
 public class RedLightDistrict {
 	
-	public static final DialogueNode OUTSIDE = new DialogueNode("Red-light District", "Red-light District", false) {
+	public static final DialogueNode OUTSIDE = new DialogueNode("Квартал красных фонарей", "Квартал красных фонарей", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -70,7 +70,7 @@ public class RedLightDistrict {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Angel's Kiss", "Step inside the large brothel named 'Angel's Kiss'.", PlaceType.ANGELS_KISS_ENTRANCE.getDialogue(false)){
+				return new Response("Поцелуй Ангела", "Войти в огромный бордель под названием «Поцелуй ангела».", PlaceType.ANGELS_KISS_ENTRANCE.getDialogue(false)){
 					@Override
 					public void effects() {
 						if(!Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.angelIntroduced)) {
@@ -86,7 +86,7 @@ public class RedLightDistrict {
 		}
 	};
 	
-	public static final DialogueNode ANGELS_KISS_ENTRANCE = new DialogueNode("Entrance", ".", false) {
+	public static final DialogueNode ANGELS_KISS_ENTRANCE = new DialogueNode("Вход", ".", false) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -125,7 +125,7 @@ public class RedLightDistrict {
 		public Response getResponse(int responseTab, int index) {
 			if(!Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.angelIntroduced)) {
 				if (index == 1) {
-					return new Response("Continue", "Angel leaves you alone to explore Angel's Kiss by yourself...", ANGELS_KISS_ENTRANCE){
+					return new Response("Продолжить", "Ангел оставляет вас одних, чтобы вы могли осмотреть «Поцелуй ангела» самостоятельно...", ANGELS_KISS_ENTRANCE){
 						@Override
 						public void effects() {
 							Main.game.getNpc(Angel.class).setLocation(WorldType.ANGELS_KISS_GROUND_FLOOR, PlaceType.ANGELS_KISS_OFFICE, false);
@@ -136,7 +136,7 @@ public class RedLightDistrict {
 				
 			} else {
 				if (index == 1) {
-					return new Response("Exit", "Exit the brothel and head back out into Dominion.", PlaceType.DOMINION_RED_LIGHT_DISTRICT.getDialogue(false)){
+					return new Response("Выход", "Выйти из борделя и вернуться в Dominion.", PlaceType.DOMINION_RED_LIGHT_DISTRICT.getDialogue(false)){
 						@Override
 						public void effects() {
 							Main.game.getPlayer().setLocation(WorldType.DOMINION, PlaceType.DOMINION_RED_LIGHT_DISTRICT, false);
@@ -148,7 +148,7 @@ public class RedLightDistrict {
 		}
 	};
 	
-	public static final DialogueNode ANGELS_KISS_CORRIDOR = new DialogueNode("Corridor", ".", false) {
+	public static final DialogueNode ANGELS_KISS_CORRIDOR = new DialogueNode("Коридор", ".", false) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -166,7 +166,7 @@ public class RedLightDistrict {
 		}
 	};
 	
-	public static final DialogueNode ANGELS_KISS_STAIRS_UP = new DialogueNode("Staircase Up", ".", false) {
+	public static final DialogueNode ANGELS_KISS_STAIRS_UP = new DialogueNode("Лестница вверх", ".", false) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -181,7 +181,7 @@ public class RedLightDistrict {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Upstairs", "Go up the staircase to the first floor of the brothel.", PlaceType.ANGELS_KISS_STAIRCASE_DOWN.getDialogue(false)){
+				return new Response("Наверх", "Подняться по лестнице на первый этаж борделя.", PlaceType.ANGELS_KISS_STAIRCASE_DOWN.getDialogue(false)){
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setLocation(WorldType.ANGELS_KISS_FIRST_FLOOR, PlaceType.ANGELS_KISS_STAIRCASE_DOWN, false);
@@ -194,7 +194,7 @@ public class RedLightDistrict {
 		}
 	};
 	
-	public static final DialogueNode ANGELS_KISS_STAIRS_DOWN = new DialogueNode("Staircase Down", ".", false) {
+	public static final DialogueNode ANGELS_KISS_STAIRS_DOWN = new DialogueNode("Лестница вниз", ".", false) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -209,7 +209,7 @@ public class RedLightDistrict {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Downstairs", "Go down the staircase to the ground floor of the brothel.", PlaceType.ANGELS_KISS_STAIRCASE_UP.getDialogue(false)){
+				return new Response("Вниз", "Спуститься по лестнице на первый этаж борделя.", PlaceType.ANGELS_KISS_STAIRCASE_UP.getDialogue(false)){
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setLocation(WorldType.ANGELS_KISS_GROUND_FLOOR, PlaceType.ANGELS_KISS_STAIRCASE_UP, false);
@@ -222,7 +222,7 @@ public class RedLightDistrict {
 		}
 	};
 
-	public static final DialogueNode ANGELS_KISS_BEDROOM = new DialogueNode("Bedroom", ".", false) {
+	public static final DialogueNode ANGELS_KISS_BEDROOM = new DialogueNode("Спальня", ".", false) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -304,8 +304,8 @@ public class RedLightDistrict {
 				if(charactersPresent.size()<=1){
 					if(charactersPresent.get(0).isSlave() && charactersPresent.get(0).getOwner().isPlayer()) {
 						if (index == 1) {
-								return new ResponseSex("Sex",
-										UtilText.parse(npc, "Have sex with [npc.name], with you as the dominant partner."),
+								return new ResponseSex("Секс",
+										UtilText.parse(npc, "Заняться сексом с [npc.name], где вы будете доминирующим партнером."),
 										true, false,
 										new SMGeneric(
 												Util.newArrayListOfValues(Main.game.getPlayer()),
@@ -323,8 +323,8 @@ public class RedLightDistrict {
 										UtilText.parseFromXMLFile("places/dominion/redLightDistrict/angelsKiss", "BEDROOM_PROSTITUTE_SLAVE_SEX"));
 							
 						} else if (index == 2) {
-								return new ResponseSex("Submissive Sex",
-										UtilText.parse(npc, "Let [npc.name] take charge, allowing you to have submissive sex with [npc.herHim]."),
+								return new ResponseSex("Секс в подчиненной позиции",
+										UtilText.parse(npc, "Позвольте [npc.name] взять инициативу на себя, чтобы заняться подчиненным сексом с [npc.herHim]."),
 										true, false,
 										new SMGeneric(
 												Util.newArrayListOfValues(npc),
@@ -347,12 +347,12 @@ public class RedLightDistrict {
 					} else {
 						if (index == 1) {
 							if(Main.game.getPlayer().getMoney()<cost) {
-								return new Response("Sex ("+UtilText.formatAsMoney(cost, "span")+")",
-										UtilText.parse(npc, "You don't have "+cost+" flames, so you can't afford to have sex with [npc.name]."), null);
+								return new Response("Секс ("+UtilText.formatAsMoney(cost, "охват")+")",
+										UtilText.parse(npc, "У тебя нет "+cost+" огней, так что ты не можешь позволить себе секс с [npc.name]."), null);
 								
 							} else {
-								return new ResponseSex("Sex ("+UtilText.formatAsMoney(cost, "span")+")",
-										UtilText.parse(npc, "Pay "+cost+" flames to have sex with [npc.name], with you as the dominant partner."),
+								return new ResponseSex("Секс ("+UtilText.formatAsMoney(cost, "охват")+")",
+										UtilText.parse(npc, "Заплатить "+cost+" Огней (Flames), чтобы заняться сексом с [npc.name], где вы будете доминирующим партнером."),
 										true, false,
 										new SMGeneric(
 												Util.newArrayListOfValues(Main.game.getPlayer()),
@@ -377,12 +377,12 @@ public class RedLightDistrict {
 							
 						} else if (index == 2) {
 							if(Main.game.getPlayer().getMoney()<cost) {
-								return new Response("Submissive Sex ("+UtilText.formatAsMoney(cost, "span")+")",
-										UtilText.parse(npc, "You don't have "+cost+" flames, so you can't afford to have submissive sex with [npc.name]."), null);
+								return new Response("Подчиненный секс ("+UtilText.formatAsMoney(cost, "охват")+")",
+										UtilText.parse(npc, "У тебя нет "+cost+" Огней (Flames), так что вы не можете позволить себе подчиненный секс с [npc.name]."), null);
 								
 							} else {
-								return new ResponseSex("Submissive Sex ("+UtilText.formatAsMoney(cost, "span")+")",
-										UtilText.parse(npc, "Pay "+cost+" flames to let [npc.name] take charge, allowing you to have submissive sex with [npc.herHim]."),
+								return new ResponseSex("Подчиненный секс ("+UtilText.formatAsMoney(cost, "охват")+")",
+										UtilText.parse(npc, "Заплатить "+cost+" Огней (Flames), чтобы позволить [npc.name] взять инициативу на себя и заняться подчиненным сексом с [npc.herHim]."),
 										true, false,
 										new SMGeneric(
 												Util.newArrayListOfValues(npc),
@@ -408,14 +408,13 @@ public class RedLightDistrict {
 						} else if (index == 5) {
 							int fineAmount = AlleywayProstituteDialogue.getModifiedFineAmount(npc);
 							if(Main.game.getPlayer().getMoney()<fineAmount) {
-								return new Response("Remove ("+UtilText.formatAsMoney(fineAmount, "span")+")",
-										UtilText.parse(npc, "You don't have "+Util.intToString(fineAmount)+" flames, so you can't afford to pay off [npc.namePos] debt."),
+								return new Response("Убрать ("+UtilText.formatAsMoney(fineAmount, "охват")+")",
+										UtilText.parse(npc, "У тебя нет "+Util.intToString(fineAmount)+" Огней (Flames), так что вы не можете позволить себе выплатить долг [npc.namePos]."),
 										null);
 							} else {
 								return new Response(
-										"Remove ("+UtilText.formatAsMoney(fineAmount, "span")+")",
-										UtilText.parse(npc, "Even though [npc.name] no longer has an arrest warrant, [npc.she] still has to pay off [npc.herHis] fine. Give [npc.name] enough money to pay off the remainder, which would allow [npc.herHim] the freedom to leave the city."
-												+ "<br/>[style.italicsBad(This will permanently remove [npc.herHim] from the game!)]"),
+										"Убрать ("+UtilText.formatAsMoney(fineAmount, "охват")+")",
+										UtilText.parse(npc, "Хотя на [npc.name] больше нет ордера на арест, [npc.she] все еще должен выплатить штраф [npc.herHis]. Дайте [npc.name] достаточно денег, чтобы погасить остаток, что даст [npc.herHim] свободу покинуть город.<br/>[style.italicsBad(Это навсегда удалит [npc.herHim] из игры!)]"),
 										ANGELS_KISS_PROSTITUTE_REMOVAL_PAID) {
 									@Override
 									public Colour getHighlightColour() {
@@ -429,7 +428,7 @@ public class RedLightDistrict {
 				
 			} else if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.prostitutionLicenseObtained) && Main.game.getPlayer().getWorldLocation()==WorldType.ANGELS_KISS_FIRST_FLOOR) {
 				if(index==1) {
-					return new Response("Sell body (Sub)", "Tell Angel that you've like to act as the submissive partner, and then wait around for a client to show up.", ANGELS_KISS_SELL_SELF_SUB){
+					return new Response("Продать тело (Саб)", "Сказать Ангел, что ты хочешь быть ведомой, а затем ждать появления клиента.", ANGELS_KISS_SELL_SELF_SUB){
 						@Override
 						public void effects() {
 							NPC npc = new GenericSexualPartner(Gender.getGenderFromUserPreferences(false, false), Main.game.getPlayer().getWorldLocation(), Main.game.getPlayer().getLocation(), false);
@@ -454,7 +453,7 @@ public class RedLightDistrict {
 					};
 					
 				} else if(index==2) {
-					return new Response("Sell body (Dom)", "Tell Angel that you've like to act as the dominant partner, and then wait around for a client to show up.", ANGELS_KISS_SELL_SELF_DOM){
+					return new Response("Продать тело (Дом)", "Сказать Ангел, что ты хочешь быть ведущей, а затем ждать появления клиента.", ANGELS_KISS_SELL_SELF_DOM){
 						@Override
 						public void effects() {
 							NPC npc = new GenericSexualPartner(Gender.getGenderFromUserPreferences(false, false), Main.game.getPlayer().getWorldLocation(), Main.game.getPlayer().getLocation(), false);
@@ -483,7 +482,7 @@ public class RedLightDistrict {
 		}
 	};
 	
-	public static final DialogueNode AFTER_SEX_PROSTITUTE = new DialogueNode("Bedroom", "Disentangle yourself from [npc.namePos] clutches.", false) {
+	public static final DialogueNode AFTER_SEX_PROSTITUTE = new DialogueNode("Спальня", "Вырваться из хватки [npc.namePos].", false) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -508,7 +507,7 @@ public class RedLightDistrict {
 		}
 	};
 	
-	public static final DialogueNode ANGELS_KISS_SELL_SELF_SUB = new DialogueNode("Bedroom", ".", true) {
+	public static final DialogueNode ANGELS_KISS_SELL_SELF_SUB = new DialogueNode("Спальня", ".", true) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -525,8 +524,8 @@ public class RedLightDistrict {
 			int payment = 2000;
 			
 			if (index == 1) {
-				return new ResponseSex("Sex ("+UtilText.formatAsMoney(2000, "span")+")",
-						"Accept the price of "+2000+" flames to have sex with [npc.name].",
+				return new ResponseSex("Секс ("+UtilText.formatAsMoney(2000, "охват")+")",
+						"Accept the price of "+2000+" огней, чтобы переспать с [npc.name].",
 						true, false,
 						new SMGeneric(
 								Util.newArrayListOfValues(Main.game.getActiveNPC()),
@@ -542,7 +541,7 @@ public class RedLightDistrict {
 				};
 				
 			} else if(index == 2) {
-				return new Response("Decline", "Tell [npc.name] that you're not interested in what [npc.sheHasFull] in mind...", ANGELS_KISS_SELL_SELF_DECLINE){
+				return new Response("Отклонить", "Сказать [npc.name], что тебя не интересует то, что задумала [npc.sheHasFull]...", ANGELS_KISS_SELL_SELF_DECLINE){
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(
@@ -558,7 +557,7 @@ public class RedLightDistrict {
 		}
 	};
 	
-	public static final DialogueNode ANGELS_KISS_SELL_SELF_DOM = new DialogueNode("Bedroom", ".", true) {
+	public static final DialogueNode ANGELS_KISS_SELL_SELF_DOM = new DialogueNode("Спальня", ".", true) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -575,8 +574,8 @@ public class RedLightDistrict {
 			int payment = 2000;
 			
 			if (index == 1) {
-				return new ResponseSex("Sex ("+UtilText.formatAsMoney(2000, "span")+")",
-						"Accept the price of "+2000+" flames to have sex with [npc.name].",
+				return new ResponseSex("Секс ("+UtilText.formatAsMoney(2000, "охват")+")",
+						"Accept the price of "+2000+" огней, чтобы переспать с [npc.name].",
 						true, false,
 						new SMGeneric(
 								Util.newArrayListOfValues(Main.game.getPlayer()),
@@ -590,7 +589,7 @@ public class RedLightDistrict {
 				};
 				
 			} else if(index == 2) {
-				return new Response("Decline", "Tell [npc.name] that you're not interested in what [npc.sheHasFull] in mind...", ANGELS_KISS_SELL_SELF_DECLINE){
+				return new Response("Отклонить", "Сказать [npc.name], что тебя не интересует то, что задумала [npc.sheHasFull]...", ANGELS_KISS_SELL_SELF_DECLINE){
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(
@@ -606,7 +605,7 @@ public class RedLightDistrict {
 		}
 	};
 	
-	public static final DialogueNode ANGELS_KISS_SELL_SELF_DECLINE = new DialogueNode("Bedroom", ".", false, true) {
+	public static final DialogueNode ANGELS_KISS_SELL_SELF_DECLINE = new DialogueNode("Спальня", ".", false, true) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -624,7 +623,7 @@ public class RedLightDistrict {
 		}
 	};
 	
-	public static final DialogueNode AFTER_SEX_SELL_SELF_DOM = new DialogueNode("Bedroom", "Disentangle yourself from [npc.namePos] clutches.", true) {
+	public static final DialogueNode AFTER_SEX_SELL_SELF_DOM = new DialogueNode("Спальня", "Вырваться из хватки [npc.namePos].", true) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -639,7 +638,7 @@ public class RedLightDistrict {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Recover", "Recover from the exhausting sex you've just had.", ANGELS_KISS_BEDROOM){
+				return new Response("Восстановиться", "Прийти в себя после изнурительного секса.", ANGELS_KISS_BEDROOM){
 					@Override
 					public void effects() {
 						Main.game.banishNPC(Main.game.getActiveNPC());
@@ -647,7 +646,7 @@ public class RedLightDistrict {
 				};
 
 			} else if (index == 2) {
-				return new Response("Wash", "Have a quick wash to clean yourself.", ANGELS_KISS_BEDROOM){
+				return new Response("Умыться", "Быстро сполоснуться, чтобы привести себя в порядок.", ANGELS_KISS_BEDROOM){
 					@Override
 					public void effects() {
 						Main.game.banishNPC(Main.game.getActiveNPC());
@@ -660,7 +659,7 @@ public class RedLightDistrict {
 		}
 	};
 	
-	public static final DialogueNode AFTER_SEX_SELL_SELF_SUB = new DialogueNode("Bedroom", "Disentangle yourself from [npc.namePos] clutches.", true) {
+	public static final DialogueNode AFTER_SEX_SELL_SELF_SUB = new DialogueNode("Спальня", "Вырваться из хватки [npc.namePos].", true) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -675,7 +674,7 @@ public class RedLightDistrict {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Recover", "Recover from the exhausting sex you've just had.", ANGELS_KISS_BEDROOM){
+				return new Response("Восстановиться", "Прийти в себя после изнурительного секса.", ANGELS_KISS_BEDROOM){
 					@Override
 					public void effects() {
 						Main.game.banishNPC(Main.game.getActiveNPC());
@@ -683,7 +682,7 @@ public class RedLightDistrict {
 				};
 
 			} else if (index == 2) {
-				return new Response("Wash", "Have a quick wash to clean yourself.", ANGELS_KISS_BEDROOM){
+				return new Response("Умыться", "Быстро сполоснуться, чтобы привести себя в порядок.", ANGELS_KISS_BEDROOM){
 					@Override
 					public void effects() {
 						Main.game.banishNPC(Main.game.getActiveNPC());
@@ -696,7 +695,7 @@ public class RedLightDistrict {
 		}
 	};
 	
-	public static final DialogueNode ANGELS_KISS_BEDROOM_BUNNY = new DialogueNode("Bunny's Bedroom", "", false) {
+	public static final DialogueNode ANGELS_KISS_BEDROOM_BUNNY = new DialogueNode("Спальня Банни", "", false) {
 		@Override
 		public int getSecondsPassed() {
 			return 60;
@@ -712,13 +711,13 @@ public class RedLightDistrict {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index == 1) {
-				return new Response("Enter", "Enter Bunny's room and say hello.", ANGELS_KISS_BEDROOM_BUNNY_ENTER);
+				return new Response("Войти", "Войти в комнату Банни и поздороваться.", ANGELS_KISS_BEDROOM_BUNNY_ENTER);
 			}
 			return null;
 		}
 	};
 	
-	public static final DialogueNode ANGELS_KISS_BEDROOM_BUNNY_ENTER = new DialogueNode("Bunny's Bedroom", "", true) {
+	public static final DialogueNode ANGELS_KISS_BEDROOM_BUNNY_ENTER = new DialogueNode("Спальня Банни", "", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 60;
@@ -738,11 +737,11 @@ public class RedLightDistrict {
 			
 			if (index == 1) {
 				if(Main.game.getPlayer().getMoney()<cost) {
-					return new Response("Sex ("+UtilText.formatAsMoney(cost, "span")+")", "You don't have "+cost+" flames, so you can't afford to have sex with Bunny.", null);
+					return new Response("Секс ("+UtilText.formatAsMoney(cost, "охват")+")", "У тебя нет "+cost+" огней, так что ты не можешь позволить себе секс с Банни.", null);
 					
 				} else {
-					return new ResponseSex("Sex ("+UtilText.formatAsMoney(cost, "span")+")",
-							"Pay "+cost+" flames to have sex with Bunny.",
+					return new ResponseSex("Секс ("+UtilText.formatAsMoney(cost, "охват")+")",
+							"Заплатить "+cost+" огней, чтобы заняться сексом с Банни.",
 							true, false,
 							new SMGeneric(
 									Util.newArrayListOfValues(Main.game.getPlayer()),
@@ -762,11 +761,11 @@ public class RedLightDistrict {
 				
 			} else if (index == 2) {
 				if(Main.game.getPlayer().getMoney()<threesomeCost) {
-					return new Response("Threesome ("+UtilText.formatAsMoney(threesomeCost, "span")+")", "You don't have "+threesomeCost+" flames, so you can't afford to have sex with both Bunny and Loppy at the same time.", null);
+					return new Response("Тройничок ("+UtilText.formatAsMoney(threesomeCost, "охват")+")", "У тебя нет "+threesomeCost+" огней, так что ты не можешь позволить себе секс одновременно и с Банни, и с Лоппи.", null);
 					
 				} else {
-					return new ResponseSex("Threesome ("+UtilText.formatAsMoney(threesomeCost, "span")+")",
-							"Pay "+threesomeCost+" flames to have sex with both Bunny and Loppy at the same time.",
+					return new ResponseSex("Тройничок ("+UtilText.formatAsMoney(threesomeCost, "охват")+")",
+							"Заплатить "+threesomeCost+" огней, чтобы заняться сексом одновременно и с Банни, и с Лоппи.",
 							true, false,
 							new SMGeneric(
 									Util.newArrayListOfValues(Main.game.getPlayer()),
@@ -796,7 +795,7 @@ public class RedLightDistrict {
 				}
 				
 			} else if(index == 3) {
-				return new Response("Decline", "You're not really interested in paying for sex with Bunny right now...", PlaceType.ANGELS_KISS_CORRIDOR.getDialogue(false)){
+				return new Response("Отклонить", "Тебя не особо прельщает мысль платить за секс с Банни прямо сейчас...", PlaceType.ANGELS_KISS_CORRIDOR.getDialogue(false)){
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setNearestLocation(WorldType.ANGELS_KISS_FIRST_FLOOR, PlaceType.ANGELS_KISS_CORRIDOR, false);
@@ -813,7 +812,7 @@ public class RedLightDistrict {
 		}
 	};
 
-	public static final DialogueNode AFTER_SEX_BUNNY = new DialogueNode("Finished", "Disentangle yourself from Bunny's clutches.", false) {
+	public static final DialogueNode AFTER_SEX_BUNNY = new DialogueNode("Завершено", "Вырваться из объятий Банни.", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -835,7 +834,7 @@ public class RedLightDistrict {
 		}
 	};
 	
-	public static final DialogueNode AFTER_SEX_BUNNY_THREESOME = new DialogueNode("Finished", "Disentangle yourself from Bunny's clutches.", false) {
+	public static final DialogueNode AFTER_SEX_BUNNY_THREESOME = new DialogueNode("Завершено", "Вырваться из объятий Банни.", false) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -853,7 +852,7 @@ public class RedLightDistrict {
 		}
 	};
 
-	public static final DialogueNode ANGELS_KISS_BEDROOM_LOPPY = new DialogueNode("Loppy's Bedroom", "", false) {
+	public static final DialogueNode ANGELS_KISS_BEDROOM_LOPPY = new DialogueNode("Спальня Лоппи", "", false) {
 		@Override
 		public int getSecondsPassed() {
 			return 60;
@@ -869,12 +868,12 @@ public class RedLightDistrict {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index == 1) {
-				return new Response("Enter", "Enter Loppy's room and say hello.", ANGELS_KISS_BEDROOM_LOPPY_ENTER);
+				return new Response("Войти", "Зайти в комнату Лоппи и поздороваться.", ANGELS_KISS_BEDROOM_LOPPY_ENTER);
 			}
 			return null;
 		}
 	};
-	public static final DialogueNode ANGELS_KISS_BEDROOM_LOPPY_ENTER = new DialogueNode("Loppy's Bedroom", "", true) {
+	public static final DialogueNode ANGELS_KISS_BEDROOM_LOPPY_ENTER = new DialogueNode("Спальня Лоппи", "", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 60;
@@ -895,11 +894,11 @@ public class RedLightDistrict {
 			
 			if (index == 1) {
 				if(Main.game.getPlayer().getMoney()<cost) {
-					return new Response("Sex ("+UtilText.formatAsMoney(cost, "span")+")", "You don't have "+cost+" flames, so you can't afford to have sex with Loppy.", null);
+					return new Response("Секс ("+UtilText.formatAsMoney(cost, "охват")+")", "У тебя нет "+cost+" огней, так что ты не можешь позволить себе секс с Лоппи.", null);
 					
 				} else {
-					return new ResponseSex("Sex ("+UtilText.formatAsMoney(cost, "span")+")",
-							"Pay "+cost+" flames to have sex with Loppy.",
+					return new ResponseSex("Секс ("+UtilText.formatAsMoney(cost, "охват")+")",
+							"Заплатить "+cost+" огней, чтобы заняться сексом с Лоппи.",
 							true, false,
 							new SMGeneric(
 									Util.newArrayListOfValues(Main.game.getPlayer()),
@@ -919,11 +918,11 @@ public class RedLightDistrict {
 				
 			} else if (index == 2) {
 				if(Main.game.getPlayer().getMoney()<dominantCost) {
-					return new Response("Submissive Sex ("+UtilText.formatAsMoney(dominantCost, "span")+")", "You don't have "+dominantCost+" flames, so you can't afford to have submissive sex with Loppy.", null);
+					return new Response("Подчиненный секс ("+UtilText.formatAsMoney(dominantCost, "охват")+")", "У тебя нет "+dominantCost+" огней, так что ты не можешь позволить себе подчиняющийся секс с Лоппи.", null);
 					
 				} else {
-					return new ResponseSex("Submissive Sex ("+UtilText.formatAsMoney(dominantCost, "span")+")",
-							"Pay "+dominantCost+" flames to let Loppy take charge and fuck you.",
+					return new ResponseSex("Подчиненный секс ("+UtilText.formatAsMoney(dominantCost, "охват")+")",
+							"Заплатить "+dominantCost+" огней, чтобы позволить Лоппи доминировать и трахать тебя.",
 							true, true,
 							new SMGeneric(
 									Util.newArrayListOfValues(Main.game.getNpc(Loppy.class)),
@@ -943,11 +942,11 @@ public class RedLightDistrict {
 				
 			} else if (index == 3) {
 				if(Main.game.getPlayer().getMoney()<threesomeCost) {
-					return new Response("Threesome ("+UtilText.formatAsMoney(threesomeCost, "span")+")", "You don't have "+threesomeCost+" flames, so you can't afford to have sex with both Loppy and Bunny at the same time.", null);
+					return new Response("Тройничок ("+UtilText.formatAsMoney(threesomeCost, "охват")+")", "У тебя нет "+threesomeCost+" огней, так что ты не можешь позволить себе секс одновременно с Лоппи и Банни.", null);
 					
 				} else {
-					return new ResponseSex("Threesome ("+UtilText.formatAsMoney(threesomeCost, "span")+")",
-							"Pay "+threesomeCost+" flames to have sex with both Loppy and Bunny at the same time.",
+					return new ResponseSex("Тройничок ("+UtilText.formatAsMoney(threesomeCost, "охват")+")",
+							"Заплатить "+threesomeCost+" огней, чтобы заняться сексом одновременно с Лоппи и Банни.",
 							true, false,
 							new SMGeneric(
 									Util.newArrayListOfValues(Main.game.getPlayer()),
@@ -977,7 +976,7 @@ public class RedLightDistrict {
 				}
 				
 			} else if(index == 4) {
-				return new Response("Decline", "You're not really interested in paying for sex with Loppy right now...", PlaceType.ANGELS_KISS_CORRIDOR.getDialogue(false)){
+				return new Response("Отклонить", "Тебя не особо прельщает мысль платить за секс с Лоппи прямо сейчас...", PlaceType.ANGELS_KISS_CORRIDOR.getDialogue(false)){
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setNearestLocation(WorldType.ANGELS_KISS_FIRST_FLOOR, PlaceType.ANGELS_KISS_CORRIDOR, false);
@@ -995,7 +994,7 @@ public class RedLightDistrict {
 		}
 	};
 	
-	public static final DialogueNode AFTER_SEX_LOPPY = new DialogueNode("Finished", "Disentangle yourself from Loppy's clutches.", false) {
+	public static final DialogueNode AFTER_SEX_LOPPY = new DialogueNode("Завершено", "Вырваться из объятий Лоппи.", false) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -1018,7 +1017,7 @@ public class RedLightDistrict {
 	};
 
 	
-	public static final DialogueNode AFTER_SEX_LOPPY_THREESOME = new DialogueNode("Finished", "Disentangle yourself from Loppy's clutches.", false) {
+	public static final DialogueNode AFTER_SEX_LOPPY_THREESOME = new DialogueNode("Завершено", "Вырваться из объятий Лоппи.", false) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -1036,7 +1035,7 @@ public class RedLightDistrict {
 		}
 	};
 	
-	public static final DialogueNode ANGELS_KISS_OFFICE = new DialogueNode("Angel's Office", ".", false) {
+	public static final DialogueNode ANGELS_KISS_OFFICE = new DialogueNode("Кабинет Энджел", ".", false) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -1065,7 +1064,7 @@ public class RedLightDistrict {
 		public Response getResponse(int responseTab, int index) {
 			if(!Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.angelsOfficeIntroduced)) {
 				if (index == 1) {
-					return new Response("Continue", "Now that Angel's offered you her deal, you could ask some other questions...", ANGELS_KISS_OFFICE_CONTINUE) {
+					return new Response("Продолжить", "Теперь, когда Ангел предложила тебе сделку, можно задать и другие вопросы...", ANGELS_KISS_OFFICE_CONTINUE) {
 						@Override
 						public void effects() {
 							Main.game.getDialogueFlags().setFlag(DialogueFlagValue.angelsOfficeIntroduced, true);
@@ -1076,17 +1075,17 @@ public class RedLightDistrict {
 				
 			} else {
 				if (index == 1) {
-					return new Response("Prostitution", "Ask Angel about the laws and regulations regarding prostitution in Dominion.", ANGELS_KISS_OFFICE_PROSTITUTION);
+					return new Response("Проституция", "Спросить Ангел о законах и правилах, касающихся проституции в Dominion.", ANGELS_KISS_OFFICE_PROSTITUTION);
 					
 				} else if (index == 2) {
-					return new Response("Background", "Ask Angel about her background, and how she ended up owning Angel's Kiss.", ANGELS_KISS_OFFICE_BACKGROUND);
+					return new Response("Прошлое", "Спросить Ангел о её прошлом и о том, как она стала владелицей «Поцелуя Ангела».", ANGELS_KISS_OFFICE_BACKGROUND);
 					
 				} else if (index == 3) {
 					if(!Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.prostitutionLicenseObtained)) {
 						if(Main.game.getPlayer().getMoney()<5000) {
-							return new Response("License ("+UtilText.formatAsMoney(5000, "span")+")", "You don't have enough money to purchase a prostitution license!", null);
+							return new Response("Лицензия ("+UtilText.formatAsMoney(5000, "охват")+")", "У тебя недостаточно денег, чтобы купить лицензию на проституцию!", null);
 						} else {
-							return new Response("License ("+UtilText.formatAsMoney(5000, "span")+")", "Agree to Angel's deal and purchase a prostitution license.", ANGELS_KISS_OFFICE_LICENSE_PURCHASE) {
+							return new Response("Лицензия ("+UtilText.formatAsMoney(5000, "охват")+")", "Согласиться на сделку Ангел и купить лицензию на проституцию.", ANGELS_KISS_OFFICE_LICENSE_PURCHASE) {
 								@Override
 								public void effects() {
 									Main.game.getDialogueFlags().setFlag(DialogueFlagValue.prostitutionLicenseObtained, true);
@@ -1105,7 +1104,7 @@ public class RedLightDistrict {
 		}
 	};
 	
-	public static final DialogueNode ANGELS_KISS_OFFICE_CONTINUE = new DialogueNode("Angel's Office", ".", false, true) {
+	public static final DialogueNode ANGELS_KISS_OFFICE_CONTINUE = new DialogueNode("Кабинет Энджел", ".", false, true) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -1123,7 +1122,7 @@ public class RedLightDistrict {
 		}
 	};
 	
-	public static final DialogueNode ANGELS_KISS_OFFICE_PROSTITUTION = new DialogueNode("Angel's Office", ".", false) {
+	public static final DialogueNode ANGELS_KISS_OFFICE_PROSTITUTION = new DialogueNode("Кабинет Энджел", ".", false) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -1138,7 +1137,7 @@ public class RedLightDistrict {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Prostitution", "You are already talking to Angel about prostitution.", null);
+				return new Response("Проституция", "Вы уже говорите с Ангелом о проституции.", null);
 				
 			} else {
 				return ANGELS_KISS_OFFICE.getResponse(responseTab, index);
@@ -1146,7 +1145,7 @@ public class RedLightDistrict {
 		}
 	};
 	
-	public static final DialogueNode ANGELS_KISS_OFFICE_BACKGROUND = new DialogueNode("Angel's Office", ".", false) {
+	public static final DialogueNode ANGELS_KISS_OFFICE_BACKGROUND = new DialogueNode("Кабинет Энджел", ".", false) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -1161,7 +1160,7 @@ public class RedLightDistrict {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 2) {
-				return new Response("Background", "You are already talking to Angel about her background.", null);
+				return new Response("Прошлое", "Вы уже говорите с Ангелом о её прошлом.", null);
 				
 			} else {
 				return ANGELS_KISS_OFFICE.getResponse(responseTab, index);
@@ -1169,7 +1168,7 @@ public class RedLightDistrict {
 		}
 	};
 	
-	public static final DialogueNode ANGELS_KISS_OFFICE_LICENSE_PURCHASE = new DialogueNode("Angel's Office", ".", false) {
+	public static final DialogueNode ANGELS_KISS_OFFICE_LICENSE_PURCHASE = new DialogueNode("Кабинет Энджел", ".", false) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -1206,7 +1205,7 @@ public class RedLightDistrict {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Continue", "Feeling happy to have been able to help out one of Dominion's troubled citizens, you continue on your way...", Main.game.getDefaultDialogue(false));
+				return new Response("Продолжить", "Чувствуя радость от того, что смог помочь одной из обездоленных жительниц Dominion, ты продолжаешь свой путь...", Main.game.getDefaultDialogue(false));
 			}
 			return null;
 		}

@@ -40,33 +40,23 @@ public class DemonHome {
     	
 		if(Main.game.getCurrentWeather()==Weather.MAGIC_STORM) {
 			sb.append(
-					"<p>"
-						+ "The arcane storm that's raging overhead has brought out a heavy presence of demon Enforcers in this area."
-						+ " Unaffected by the arousing power of the storm's thunder, these elite Enforcers keep a close watch on you as you pass through the all-but-deserted area known as Demon Home."
-						+ " There's no way anyone would be able to assault you while under their watchful gaze, allowing you continue on your way in peace..."
-					+ "</p>");
+					"<p>Бушующий над головой шторм Арканы привел в этот район целую толпу демонов-Enforcer. Невозмутимые перед возбуждающей мощью грозовых раскатов, эти элитные Enforcer пристально следят за вами, пока вы проходите через почти опустевшую местность, известную как Дом Демонов. Под их бдительным взором никто не сможет напасть на вас, что позволяет вам спокойно продолжать свой путь...</p>");
 		}
 
 		if(Main.game.getDateNow().getMonth()==Month.OCTOBER) {
 			sb.append(
 				"<p>"
-					+ "<b style='color:"+PresetColour.BASE_ORANGE.toWebHexString()+";'>October;</b> <b style='color:"+PresetColour.GENERIC_ARCANE.toWebHexString()+";'>Lilith's Month:</b><br/>"
-					+ "Orange, black, and purple flags fly from almost every window, and you look up to see that large banners have been hung across the street, each one bearing a different slogan celebrating Lilith's rule."
-					+ " The occasional demon that you see is usually dressed up in a Halloween-esque costume for the occasion, which does nothing to help alleviate the eerie atmosphere."
-				+ "</p>");
+					+ "<b style='color:"+PresetColour.BASE_ORANGE.toWebHexString()+";'>Октябрь;</b> <b style='color:"+PresetColour.GENERIC_ARCANE.toWebHexString()+";'>Месяц Lilith:</b><br/>Оранжевые, черные и фиолетовые флаги развеваются почти в каждом окне, а подняв взгляд, вы видите, что через всю улицу натянуты огромные баннеры, каждый из которых украшен новым лозунгом в честь правления Lilith. Редкие демоны, которых вы встречаете, обычно наряжены в костюмы в духе Хэллоуина, что лишь добавляет жуткой атмосферы этому месту.</p>");
 		}
 		if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.hasSnowedThisWinter) && Main.game.getSeason()==Season.WINTER) {
 			sb.append(
-				"<p>"
-					+ "The reindeer-morph workers are doing a good job of keeping Dominion's streets clear from the snow, but the rooftops, trees, and tops of lamp posts are all home to a thick layer of white."
-					+ " You see your breath exiting your mouth in a little cloud of condensation, but despite the clear evidence of the air's freezing temperature, your arcane aura protects your body from feeling the cold."
-				+ "</p>");
+				"<p>Рабочие-олени отлично справляются с расчисткой улиц Dominion от снега, но крыши, деревья и верхушки фонарных столбов покрыты толстым слоем белого одеяла. Вы видите, как ваше дыхание вырывается изо рта маленьким облачком пара, но, несмотря на явные признаки ледяного воздуха, ваша арканная Аура защищает тело от холода.</p>");
 		}
 		
 		return sb.toString();
     }
     
-	public static final DialogueNode DEMON_HOME_GATE = new DialogueNode("Demon Home (Gates)", "Demon Home", false) {
+	public static final DialogueNode DEMON_HOME_GATE = new DialogueNode("Demon Home (Ворота)", "Демоний Дом", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -78,14 +68,7 @@ public class DemonHome {
 			UtilText.nodeContentSB.setLength(0);
 
 			UtilText.nodeContentSB.append(
-					"<p>"
-						+ "A set of huge, iron gates have been built across the street here, separating the regular areas of Dominion from that known as 'Demon Home' beyond."
-						+ " Half a dozen elite demon Enforcers are stationed here, keeping a close eye on anyone who comes and goes."
-					+ "</p>"
-					+ "<p>"
-						+ "As you walk forwards to pass through the gates, you see one of these demonic guards staring at you."
-						+ " Ignoring their penetrating gaze, you stride forwards, breathing a sigh of relief as you get through to the other side without being stopped."
-					+ "</p>");
+					"<p>Здесь, поперек улицы, возведены огромные железные ворота, отделяющие обычные районы Dominion от земель, известных как «Demon Home». Здесь дежурят полдюжины элитных демонических Enforcer, пристально следящих за каждым входящим и выходящим.</p><p>Когда вы идете вперед, чтобы пройти сквозь ворота, вы замечаете, что один из этих демонических стражей пристально смотрит на вас. Игнорируя их пронзительный взгляд, вы решительно шагаете вперед, с облегчением вздыхая, когда проходите на другую сторону без лишних вопросов.</p>");
 			
 			UtilText.nodeContentSB.append(getAdditionalDescriptions());
 			
@@ -98,7 +81,7 @@ public class DemonHome {
 		}
 	};
 	
-	public static final DialogueNode DEMON_HOME_STREET = new DialogueNode("Demon Home", "Demon Home", false) {
+	public static final DialogueNode DEMON_HOME_STREET = new DialogueNode("Демоний Дом", "Демоний Дом", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -111,22 +94,12 @@ public class DemonHome {
 			
 			
 			UtilText.nodeContentSB.append(
-					"<p>"
-						+ "From the wide, marble-paved streets, to the immaculate frontages of the regency-style buildings, it's quite clear that this district of 'Demon Home' is one of the more upmarket areas of Dominion."
-						+ " Numerous masterfully-carved statues, the vast majority of which depict some form of demon or another, are dotted around the area, and, considering their subject matter,"
-							+ " you assume that these sculptures are what gives this area its name."
-					+ "</p>"
-					+ "<p>"
-						+ "As you walk down the street, you pass several fenced-off private gardens; their lush splash of greenery helping to break up the monotony of the surrounding building's creamy-white stone facades."
-						+ " Despite the fact that Demon Home is a little quieter than most of the other areas of Dominion, you notice that there are slightly more Enforcers patrolling the streets;"
-									+ " evidence that the wealthy and influential residents of the city are afforded extra protection."
-					+ "</p>");
+					"<p>От широких, вымощенных мрамором улиц до безупречных фасадов зданий в стиле регентства — здесь совершенно очевидно, что район «Демоньего дома» является одним из самых элитных в Dominion. Повсюду расставлены многочисленные искусно вырезанные статуи, большинство из которых изображают ту или иную форму демона; учитывая их тематику, невольно предполагаешь, что именно эти скульптуры дали району его название.</p><p>Пока ты идешь по улице, мимо тебя мелькают огороженные частные сады; их пышная зелень помогает разбавить монотонность кремово-белых каменных фасадов окружающих зданий. Несмотря на то, что в Демоньем доме чуть спокойнее, чем в других районах Dominion, ты замечаешь, что на улицах патрулирует чуть больше Enforcer; это служит доказательством того, что богатым и влиятельным жителям города обеспечивается усиленная защита.</p>");
 			
 			if(Main.game.getPlayerCell().getPlace().getPlaceType().equals(PlaceType.DOMINION_DEMON_HOME_DADDY)) {
 				UtilText.nodeContentSB.append(
 						"<p>"
-							+ "<b style='color:"+PresetColour.RACE_DEMON.toWebHexString()+";'>[daddy.NamePos] residence:</b><br/>"
-							+ "[daddy.NamePos] apartment is located in this particular area of Demon Home."
+							+ "<b style='color:"+PresetColour.RACE_DEMON.toWebHexString()+";'>[daddy.NamePos] место жительства:</b><br/>[daddy.NamePos] квартира находится именно в этом районе Демоньего дома."
 							+ Daddy.getAvailabilityText()
 						+ "</p>");
 			}
@@ -134,9 +107,7 @@ public class DemonHome {
 			if(Main.game.getPlayerCell().getPlace().getPlaceType().equals(PlaceType.DOMINION_DEMON_HOME_ARTHUR)) {
 				UtilText.nodeContentSB.append(
 						"<p>"
-							+ "<b style='color:"+PresetColour.RACE_HUMAN.toWebHexString()+";'>Sawlty Towers:</b><br/>"
-							+ "Arthur's apartment building, 'Sawlty Towers', is located in this particular area of Demon Home."
-						+ "</p>");
+							+ "<b style='color:"+PresetColour.RACE_HUMAN.toWebHexString()+";'>Башни Солти:</b><br/>Жилой дом Артура, «Башни Солти», расположен именно в этом районе Демоньего дома.</p>");
 			}
 
 			UtilText.nodeContentSB.append(getAdditionalDescriptions());
@@ -150,7 +121,7 @@ public class DemonHome {
 		}
 	};
 	
-	public static final DialogueNode DEMON_HOME_STREET_ARTHUR = new DialogueNode("Demon Home", "Demon Home", false) {
+	public static final DialogueNode DEMON_HOME_STREET_ARTHUR = new DialogueNode("Демоний Дом", "Демоний Дом", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -166,10 +137,10 @@ public class DemonHome {
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
 				if (Main.game.getPlayer().getQuest(QuestLine.MAIN) == Quest.MAIN_1_B_DEMON_HOME) {
-					return new Response("Sawlty Towers", "Find Arthur's apartment in the building using the instructions Lilaya gave to you.", DEMON_HOME_ARTHURS_APARTMENT);
+					return new Response("Башни Солти", "Найди квартиру Артура в здании, следуя инструкциям, которые дала тебе Lilaya.", DEMON_HOME_ARTHURS_APARTMENT);
 					
 				} else if (Main.game.getPlayer().isQuestProgressGreaterThan(QuestLine.MAIN, Quest.MAIN_1_B_DEMON_HOME)) {
-					return new Response("Sawlty Towers", "Head over to the Sawlty Towers apartment building.", DEMON_HOME_ARTHURS_APARTMENT);
+					return new Response("Башни Солти", "Направляйся к жилому дому Башни Солти.", DEMON_HOME_ARTHURS_APARTMENT);
 					
 				} else {
 					return null;
@@ -181,7 +152,7 @@ public class DemonHome {
 		}
 	};
 	
-	public static final DialogueNode DEMON_HOME_STREET_ZARANIX = new DialogueNode("Demon Home", "Demon Home", false) {
+	public static final DialogueNode DEMON_HOME_STREET_ZARANIX = new DialogueNode("Демоний Дом", "Демоний Дом", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -197,10 +168,10 @@ public class DemonHome {
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
 				if (Main.game.getPlayer().getQuest(QuestLine.MAIN) == Quest.MAIN_1_H_THE_GREAT_ESCAPE) {
-					return new Response("Zaranix's Home", "A little way down the road from Arthur's apartment building stands the home of Zaranix; the demon that Scarlett told you about.", ZaranixHomeGroundFloor.OUTSIDE);
+					return new Response("Дом Зараникса", "Чуть дальше по дороге от дома Arthur стоит жилище Zaranix — того самого демона, о котором тебе рассказывала Scarlett.", ZaranixHomeGroundFloor.OUTSIDE);
 					
 				} else if (Main.game.getPlayer().isQuestProgressGreaterThan(QuestLine.MAIN, Quest.MAIN_1_H_THE_GREAT_ESCAPE)) {
-					return new Response("Zaranix's Home", "Pay Zaranix another visit.", ZaranixHomeGroundFloorRepeat.OUTSIDE);
+					return new Response("Дом Зараникса", "Навестить Zaranix еще раз.", ZaranixHomeGroundFloorRepeat.OUTSIDE);
 				}
 				return null;
 
@@ -210,7 +181,7 @@ public class DemonHome {
 		}
 	};
 	
-	public static final DialogueNode DEMON_HOME_STREET_DADDY = new DialogueNode("Demon Home", "Demon Home", false) {
+	public static final DialogueNode DEMON_HOME_STREET_DADDY = new DialogueNode("Демоний Дом", "Демоний Дом", false) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -232,12 +203,12 @@ public class DemonHome {
 					
 				} else if(Main.game.getPlayer().hasCompanions()) {
 					return new Response("[daddy.Name]",
-							"[style.italicsBad(You cannot meet [daddy.name] while you have companions in your party!)]",
+							"[style.italicsBad(Вы не можете встретиться с [daddy.name], пока в вашей группе есть спутники!)]",
 							null);
 					
 				} else {
 					return new Response("[daddy.Name]",
-							"Head over to [daddy.namePos] apartment and knock on [daddy.her] door.",
+							"Направиться к квартире [daddy.namePos] и постучать в дверь [daddy.her].",
 							DaddyDialogue.MEETING) {
 						@Override
 						public void effects() {
@@ -270,7 +241,7 @@ public class DemonHome {
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
 				if (Main.game.getPlayer().getQuest(QuestLine.MAIN) == Quest.MAIN_1_B_DEMON_HOME) {
-					return new Response("Arthur's room", "Head up to Arthur's room.", DEMON_HOME_ARTHURS_APARTMENT_ARTHURS_ROOM){
+					return new Response("Комната Arthur", "Подняться в комнату Arthur.", DEMON_HOME_ARTHURS_APARTMENT_ARTHURS_ROOM){
 						@Override
 						public void effects() {
 							if (Main.game.getPlayer().getQuest(QuestLine.MAIN) == Quest.MAIN_1_B_DEMON_HOME) {
@@ -280,23 +251,23 @@ public class DemonHome {
 					};
 					
 				} else if (Main.game.getPlayer().isQuestProgressGreaterThan(QuestLine.MAIN, Quest.MAIN_1_B_DEMON_HOME)) {
-					return new Response("Arthur's room", "Arthur is no longer living here...", null);
+					return new Response("Комната Arthur", "Arthur здесь больше не живет...", null);
 				}
 				
 			} else if (index == 2) {
 				if (Main.game.getPlayer().isQuestProgressGreaterThan(QuestLine.MAIN, Quest.MAIN_1_B_DEMON_HOME)) {
-					return new Response("[felicia.Name]'s room", "Head up to [felicia.namePos] room.", DEMON_HOME_ARTHURS_APARTMENT_FELICIAS_ROOM);
+					return new Response("Комната [felicia.Name]", "Направиться в комнату [felicia.namePos].", DEMON_HOME_ARTHURS_APARTMENT_FELICIAS_ROOM);
 				}
 				
 			} else if (index == 0) {
-				return new Response("Leave", "Leave the building and head back out into Demon Home.", DEMON_HOME_STREET_ARTHUR);
+				return new Response("Уйти", "Выйти из здания и вернуться в Обитель Демонов.", DEMON_HOME_STREET_ARTHUR);
 			}
 			
 			return null;
 		}
 	};
 
-	public static final DialogueNode DEMON_HOME_ARTHURS_APARTMENT_ARTHURS_ROOM = new DialogueNode("Arthur's Room", "-", true) {
+	public static final DialogueNode DEMON_HOME_ARTHURS_APARTMENT_ARTHURS_ROOM = new DialogueNode("Комната Arthur", "-", true) {
 		@Override
 		public void applyPreParsingEffects() {
             getFelicia().equipOutsideClothing();
@@ -308,7 +279,7 @@ public class DemonHome {
 		}
 		@Override
 		public String getLabel() {
-			return "Arthur's Room";
+			return "Комната Arthur";
 		}
 		@Override
 		public String getContent() {
@@ -317,13 +288,13 @@ public class DemonHome {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Question dog-girl", "Ask the dog-girl if she knows anything about Arthur's arrest.", DEMON_HOME_ARTHURS_APARTMENT_ARTHURS_ROOM_END);
+				return new Response("Расспросить собакодеву", "Спросить у собакодеву, знает ли она что-нибудь об аресте Arthur.", DEMON_HOME_ARTHURS_APARTMENT_ARTHURS_ROOM_END);
 			}
 			return null;
 		}
 	};
 
-	public static final DialogueNode DEMON_HOME_ARTHURS_APARTMENT_ARTHURS_ROOM_END = new DialogueNode("Arthur's Room", "-", true, true) {
+	public static final DialogueNode DEMON_HOME_ARTHURS_APARTMENT_ARTHURS_ROOM_END = new DialogueNode("Комната Arthur", "-", true, true) {
 		@Override
 		public void applyPreParsingEffects() {
             getFelicia().setPlayerKnowsName(true);
@@ -339,7 +310,7 @@ public class DemonHome {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Leave", "You've done all you can here. Head back outside to Demon Home.", DEMON_HOME_STREET_ARTHUR){
+				return new Response("Уйти", "Здесь вы сделали всё, что могли. Возвращайтесь в Обитель Демонов.", DEMON_HOME_STREET_ARTHUR){
                         @Override
                         public void effects() {
                             getFelicia().equipInsideClothing();
@@ -367,7 +338,7 @@ public class DemonHome {
 		}
 		@Override
 		public String getLabel() {
-			return "[felicia.NamePos] Room";
+			return "[felicia.NamePos] Комната";
 		}
 		@Override
 		public String getContent() {
@@ -378,14 +349,14 @@ public class DemonHome {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.feliciaRejectedPlayer)) {
-	                 return new Response("Leave", "Looks like Felicia doesn't want to talk to you. Head back outside to Demon Home.", DEMON_HOME_STREET_ARTHUR);
+	                 return new Response("Уйти", "Похоже, Фелиция не хочет с вами разговаривать. Возвращайтесь в Обитель Демонов.", DEMON_HOME_STREET_ARTHUR);
 				}
 				if(h < 6 || h > 14) {
-					return new Response("Leave", "Looks like [felicia.name] isn't here. Head back outside to Demon Home.", DEMON_HOME_STREET_ARTHUR);
+					return new Response("Уйти", "Похоже, [felicia.name] здесь нет. Возвращайтесь в Обитель Демонов.", DEMON_HOME_STREET_ARTHUR);
 					
 				} else if(h >= 6 && h <= 14) {
 	                if (!Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.feliciaToldAboutArthur)) {
-	                    return new Response("Enter", "Enter [felicia.namePos] home.", FeliciaApartment.ARTHUR_WHEREABOUTS) {
+	                    return new Response("Войти", "Войти в дом [felicia.namePos].", FeliciaApartment.ARTHUR_WHEREABOUTS) {
 	                        @Override
 	                        public void effects() {
 	                            getFelicia().setLocation(WorldType.FELICIA_APARTMENT, PlaceType.FELICIA_APARTMENT_LIVING_AREA, false);
@@ -394,7 +365,7 @@ public class DemonHome {
 	                    };
 	                    
 	                } else {
-	                   return new Response("Enter", "Enter [felicia.namePos] home.", FeliciaApartment.FELICIA_GREETINGS) {
+	                   return new Response("Войти", "Войти в дом [felicia.namePos].", FeliciaApartment.FELICIA_GREETINGS) {
 	                        @Override
 	                        public void effects() {
 	                            getFelicia().setLocation(WorldType.FELICIA_APARTMENT, PlaceType.FELICIA_APARTMENT_LIVING_AREA, false);
@@ -420,14 +391,14 @@ public class DemonHome {
             		&& Main.game.getSecondsPassed() - Main.game.getDialogueFlags().getSavedLong("doll_quest_choice_time") < (7 * 24 * 60 * 60)) {
             	int daysToGo = 7 - (int) (((Main.game.getSecondsPassed() - Main.game.getDialogueFlags().getSavedLong("doll_quest_choice_time")) / (24 * 60 * 60)));
             	if(daysToGo<=1) {
-                	UtilText.addSpecialParsingString("[style.italicsGood(Lovienne's Luxuries will reopen in a day or so.)]", true);
+                	UtilText.addSpecialParsingString("[style.italicsGood(Лавка Лювьенны откроется через день или около того.)]", true);
             	} else {
-                	UtilText.addSpecialParsingString("[style.italicsMinorGood(Lovienne's Luxuries will reopen in about "+daysToGo+" days...)]", true);
+                	UtilText.addSpecialParsingString("[style.italicsMinorGood(Лавка роскоши Ловьенн снова откроется примерно через "+daysToGo+" дней...)]", true);
             	}
             }
             if(Main.game.getPlayer().getQuest(QuestLine.SIDE_DOLL_FACTORY)==Quest.DOLL_FACTORY_7B
             		&& Main.game.getSecondsPassed() - Main.game.getDialogueFlags().getSavedLong("doll_quest_choice_time") < (1 * 24 * 60 * 60)) {
-            	UtilText.addSpecialParsingString("[style.italicsGood(Lovienne's Luxuries will reopen in a day or so.)]", true);
+            	UtilText.addSpecialParsingString("[style.italicsGood(Лавка Лювьенны откроется через день или около того.)]", true);
             }
 		}
 		@Override
@@ -471,8 +442,8 @@ public class DemonHome {
 							|| !Main.game.getDialogueFlags().hasFlag("innoxia_doll_factory_ending_riot_witnessed")
 							|| !Main.game.getDialogueFlags().hasFlag("innoxia_doll_factory_ending_reopen_scene_seen"))) {
 					if(!Main.game.getDialogueFlags().hasFlag("innoxia_doll_factory_ending_riot_witnessed")) {
-						return new Response("Goodbye",
-								"Say goodbye to Fiammetta.",
+						return new Response("Прощай",
+								"Попрощайся с Фиамметой.",
 								DEMON_HOME_SEX_SHOP_RIOT_CONTINUE) {
 							@Override
 							public void effects() {
@@ -487,8 +458,8 @@ public class DemonHome {
 						
 					} else if((Main.game.getSecondsPassed() - Main.game.getDialogueFlags().getSavedLong("doll_quest_choice_time") >= (7 * 24 * 60 * 60))
 							&& !Main.game.getDialogueFlags().hasFlag("innoxia_doll_factory_ending_reopen_scene_seen")) {
-						return new Response("Continue",
-								"Continue on your way.",
+						return new Response("Продолжить",
+								"Продолжить свой путь.",
 								DEMON_HOME_SEX_SHOP) {
 							@Override
 							public void effects() {
@@ -499,28 +470,26 @@ public class DemonHome {
 					} else {
 						int daysRemaining = 7 - (int) ((Main.game.getSecondsPassed() - (Main.game.getDialogueFlags().getSavedLong("doll_quest_choice_time"))) / (24 * 60 * 60));
 						
-						return new Response("Lovienne's Luxuries",
-								"Due to the public unrest, Lovienne's Luxuries is currently [style.colourBad(closed)]."
-									+ "<br/>[style.italicsMinorGood(It's likely to reopen within "+Util.intToString(daysRemaining)+" "+(daysRemaining<=1?"day":"days")+" or so...)]",
+						return new Response("Роскошь Ловьенн",
+								"Из-за общественных беспорядков Лавка роскоши Ловьенн сейчас [style.colourBad(закрыта)].<br/>[style.italicsMinorGood(Скорее всего, она откроется в течение "+Util.intToString(daysRemaining)+" "+(daysRemaining<=1?"день":"дней")+"  дней...)]",
 								null);
 					}
 					
 				} else if(Main.game.getPlayer().getQuest(QuestLine.SIDE_DOLL_FACTORY)==Quest.DOLL_FACTORY_7B
 						&& Main.game.getDialogueFlags().hasSavedLong("doll_quest_choice_time")
 						&& (Main.game.getSecondsPassed() - Main.game.getDialogueFlags().getSavedLong("doll_quest_choice_time") < (1 * 24 * 60 * 60))) { // 1 day
-					return new Response("Lovienne's Luxuries",
-							"Due to having to deal with the situation with Fiammetta's article, Lovienne's Luxuries is currently [style.colourBad(closed)]."
-								+ "<br/>[style.italicsMinorGood(It's likely to reopen within a day or two...)]",
+					return new Response("Роскошь Ловьенн",
+							"Из-за необходимости разбираться с ситуацией вокруг статьи Фиамметты, Лавка роскоши Ловьенн сейчас [style.colourBad(закрыта)].<br/>[style.italicsMinorGood(Скорее всего, она откроется через день или два...)]",
 							null);
 					
 				} else if(!Main.game.isHourBetween(11, 23)) {
-					return new Response("Lovienne's Luxuries",
-							"Lovienne's Luxuries is open between [units.time(11)]-[units.time(23)], and as such is currently [style.colourBad(closed)].",
+					return new Response("Роскошь Ловьенн",
+							"Лавка роскоши Ловьенн работает с [units.time(11)] до [units.time(23)], поэтому сейчас она [style.colourBad(закрыта)].",
 							null);
 					
 				} else {
-					return new Response("Lovienne's Luxuries",
-							"Push open the front door and enter Lovienne's Luxuries.",
+					return new Response("Роскошь Ловьенн",
+							"Толкнуть входную дверь и войти в Лавку роскоши Ловьенн.",
 							DialogueManager.getDialogueFromId("innoxia_places_dominion_sex_shop_generic_enter")) {
 						@Override
 						public void effects() {
@@ -547,64 +516,61 @@ public class DemonHome {
 				
 				if(Main.game.getPlayer().getQuest(QuestLine.SIDE_DOLL_FACTORY)==Quest.DOLL_FACTORY_2) {
 					if(!Main.game.isHourBetween(1, 4)) {
-						return new Response("Find Fia",
-								"You need to wait until it's between [units.time(1)]-[units.time(4)] to break into Lovienne's Luxuries with Fia...",
+						return new Response("Найти Фию",
+								"Тебе нужно подождать, пока не наступит время между [units.time(1)] и [units.time(4)], чтобы вместе с Фией пробраться в «Роскошь Ловиенны»...",
 								null);
 						
 					} else if(Main.game.getCurrentWeather()==Weather.MAGIC_STORM) {
-						return new Response("Find Fia",
-								"Although you're here at the right time, between [units.time(1)]-[units.time(4)], Fia can't show up due to the ongoing arcane storm...",
+						return new Response("Найти Фию",
+								"Хотя ты пришел в нужное время, между [units.time(1)] и [units.time(4)], Фия не может появиться из-за непрекращающегося арканального шторма...",
 								null);
 						
 					} else {
-						return new Response("Find Fia",
-								"Look for Fia so that the two of you can break into Lovienne's Luxuries and search for evidence of where the kidnapped people are being held."
-									+"<br/>[style.italicsCombat(Be prepared, for this will start a lengthy section of the side quest during which there may be difficult fights!)]",
+						return new Response("Найти Фию",
+								"Найди Фию, чтобы вы могли вместе пробраться в «Роскошь Ловиенны» и поискать улики, указывающие на место заточения похищенных людей.<br/>[style.italicsCombat(Приготовься, ведь это положит начало долгой части побочного квеста, в которой могут быть трудные сражения!)]",
 								DialogueManager.getDialogueFromId("innoxia_places_dominion_sex_shop_factory_meet_fia_start"));
 					}
 					
 				} else if(Main.game.getPlayer().hasQuestInLine(QuestLine.SIDE_DOLL_FACTORY, Quest.DOLL_FACTORY_7A)) {
 					if(!Main.game.getPlayer().isQuestCompleted(QuestLine.SIDE_DOLL_FACTORY)) {
-						return new Response("Fia",
-								"Fia hasn't come out of hiding yet, and will only do so after Loveinne's Luxuries reopens..."
+						return new Response("Фиа",
+								"Фия еще не вышла из укрытия и появится только после того, как «Роскошь Ловиенны» снова откроется..."
 									+ (!Main.game.getDialogueFlags().hasFlag("innoxia_doll_factory_ending_reopen_scene_seen")
-											?"<br/>[style.italics(Fia will return after you've entered the newly-reopened Loveinne's Luxuries.)]"
+											?"<br/>[style.italics(Фия вернется после того, как ты войдешь в заново открывшуюся «Роскошь Ловиенны».)]"
 											:""),
 								null);
 					} else {
 						if(!Main.game.isHourBetween(19, 00)) {
-							return new Response("Fia",
-									"Fia isn't around at this time..."
-									+ "<br/><i>Return between the hours of [units.time(19)]-[units.time(00)] to find Fia.</i>",
+							return new Response("Фиа",
+									"В это время Фии нет рядом...<br/><i>Возвращайся в период с [units.time(19)] до [units.time(00)], чтобы найти Фию.</i>",
 									null);
 							
 						} else if(Main.game.getDialogueFlags().hasFlag("innoxia_fia_bar_seen")) {
-							return new Response("Find Fia",
-									"You've already met Fia this evening, and won't be able to find her again until tomorrow.",
+							return new Response("Найти Фию",
+									"Ты уже встречал Фию этим вечером, и сможешь найти ее снова только завтра.",
 									null);
 								
 						} else {
-							return new Response("Fia",
-									"Look for Fia in the nearby bars.",
+							return new Response("Фиа",
+									"Поищи Фию в ближайших барах.",
 									DialogueManager.getDialogueFromId("innoxia_places_dominion_demon_home_fia_start"));
 						}
 					}
 					
 				} else if(Main.game.getPlayer().hasQuestInLine(QuestLine.SIDE_DOLL_FACTORY, Quest.DOLL_FACTORY_7B) && Main.game.getPlayer().isQuestCompleted(QuestLine.SIDE_DOLL_FACTORY)) {
 					if(!Main.game.isHourBetween(16, 22)) {
-						return new Response("Angelixx",
-								"Angelixx and her sons are out at 'work' at this time, so you'll have to come back later if you wanted to see them."
-								+ "<br/><i>Return between the hours of [units.time(16)]-[units.time(22)] to meet Angelixx and her sons.</i>",
+						return new Response("Ангеликс",
+								"Анжеликса и ее сыновья сейчас на «работе», так что, если хочешь их увидеть, придется вернуться позже.<br/><i>Возвращайся в период с [units.time(16)] до [units.time(22)], чтобы встретить Анжеликссу и ее сыновей.</i>",
 								null);
 						
 					} else if(Main.game.getDialogueFlags().hasFlag("innoxia_angelixx_apartment_visited")) {
-							return new Response("Angelixx",
-									"You've already paid a visit to Angelixx's apartment this evening, and can't do so again until tomorrow.",
+							return new Response("Ангеликс",
+									"Ты уже заглядывал в квартиру Анжеликссы этим вечером, и сможешь сделать это снова только завтра.",
 									null);
 							
 					} else {
-						return new Response("Angelixx",
-								"Head up to Angelixx's apartment and pay her and her sons a visit.",
+						return new Response("Ангеликс",
+								"Отправляйся в квартиру Анжеликс и навести её и её сыновей.",
 								DialogueManager.getDialogueFromId("innoxia_places_dominion_angelixx_apartment_generic_visit"));
 					}
 				}

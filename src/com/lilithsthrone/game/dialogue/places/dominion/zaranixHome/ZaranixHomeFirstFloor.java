@@ -43,7 +43,7 @@ public class ZaranixHomeFirstFloor {
 
 		@Override
 		public String getLabel() {
-			return "Staircase";
+			return "Лестница";
 		}
 
 		@Override
@@ -54,7 +54,7 @@ public class ZaranixHomeFirstFloor {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Downstairs", "Head downstairs to the ground floor of Zaranix's house.", PlaceType.ZARANIX_GF_STAIRS.getDialogue(false)) {
+				return new Response("Вниз", "Спуститься на первый этаж дома Зараникса.", PlaceType.ZARANIX_GF_STAIRS.getDialogue(false)) {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setLocation(WorldType.ZARANIX_HOUSE_GROUND_FLOOR, PlaceType.ZARANIX_GF_STAIRS, false);
@@ -76,7 +76,7 @@ public class ZaranixHomeFirstFloor {
 
 		@Override
 		public String getLabel() {
-			return "Corridor";
+			return "Коридор";
 		}
 
 		@Override
@@ -116,7 +116,7 @@ public class ZaranixHomeFirstFloor {
 
 		@Override
 		public String getLabel() {
-			return "Corridor";
+			return "Коридор";
 		}
 
 		@Override
@@ -136,7 +136,7 @@ public class ZaranixHomeFirstFloor {
 		public Response getResponse(int responseTab, int index) {
 			if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.zaranixKellySubdued)) {
 				if(index==1) {
-					return new ResponseSex("Use Kelly", "Have some fun with this maid.",
+					return new ResponseSex("Использовать Келли", "Немного развлечься с этой горничной.",
 							true, false,
 							new SMGeneric(
 									Util.newArrayListOfValues(Main.game.getPlayer()),
@@ -145,8 +145,8 @@ public class ZaranixHomeFirstFloor {
 							null), ZaranixMaidKelly.AFTER_SEX_VICTORY, UtilText.parseFromXMLFile("places/dominion/zaranixHome/firstFloor", "CORRIDOR_MAID_KELLY_SEX"));
 					
 				} else if(index==2) {
-					return new ResponseSex("Submit",
-							"You can't bring yourself to take the dominant role, but you <i>do</i> want to have sex with Kelly. Perhaps if you submitted, she'd be willing to fuck you?",
+					return new ResponseSex("Подчиниться",
+							"Ты не можешь заставить себя взять на себя доминирующую роль, но ты <i>действительно</i> хочешь заняться сексом с Келли. Возможно, если ты подчинишься, она сама захочет тебя оттрахать?",
 							Util.newArrayListOfValues(Fetish.FETISH_SUBMISSIVE), null, CorruptionLevel.THREE_DIRTY, null, null, null,
 							true, false,
 							new SMGeneric(
@@ -156,8 +156,8 @@ public class ZaranixHomeFirstFloor {
 							null), ZaranixMaidKelly.AFTER_SEX_VICTORY, UtilText.parseFromXMLFile("places/dominion/zaranixHome/firstFloor", "CORRIDOR_MAID_KELLY_SEX_SUBMIT"));
 					
 				} else if (index == 3) {
-					return new Response("Transformations",
-							"Get Kelly to use [kelly.her] demonic powers to transform [kelly.herself]...",
+					return new Response("Трансформации",
+							"Заставить Келли использовать [kelly.her] демонические силы, чтобы превратить [kelly.herself]...",
 							BodyChanging.BODY_CHANGING_CORE){
 						@Override
 						public void effects() {
@@ -171,7 +171,7 @@ public class ZaranixHomeFirstFloor {
 				}
 			} else {
 				if(index==1) {
-					return new ResponseCombat("Fight", "Defend yourself against the furious maid!", Main.game.getNpc(ZaranixMaidKelly.class)) {
+					return new ResponseCombat("Сразиться", "Защититься от разъяренной горничной!", Main.game.getNpc(ZaranixMaidKelly.class)) {
 						@Override
 						public void effects() {
 							Main.game.getNpc(ZaranixMaidKelly.class).setPlayerKnowsName(true);
@@ -199,7 +199,7 @@ public class ZaranixHomeFirstFloor {
 
 		@Override
 		public String getLabel() {
-			return "Room";
+			return "Комната";
 		}
 
 		@Override
@@ -217,7 +217,7 @@ public class ZaranixHomeFirstFloor {
 
 		@Override
 		public String getLabel() {
-			return "Zaranix's Lab";
+			return "Лаборатория Зараникса";
 		}
 
 		@Override
@@ -228,7 +228,7 @@ public class ZaranixHomeFirstFloor {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Zaranix's lab", "You find yourself stepping into a laboratory much like that of Lilaya's.", ZARANIX_ROOM_ENTRY) {
+				return new Response("Лаборатория Зараникса", "Вы входите в лабораторию, очень похожую на ту, что принадлежит Lilaya.", ZARANIX_ROOM_ENTRY) {
 					@Override
 					public void effects() {
 						Main.game.getDialogueFlags().setFlag(DialogueFlagValue.zaranixMaidsHostile, true);
@@ -244,7 +244,7 @@ public class ZaranixHomeFirstFloor {
 
 		@Override
 		public String getLabel() {
-			return "Zaranix's Lab";
+			return "Лаборатория Зараникса";
 		}
 
 		@Override
@@ -261,7 +261,7 @@ public class ZaranixHomeFirstFloor {
 		public Response getResponse(int responseTab, int index) {
 			if(Main.game.getNpc(Zaranix.class).getFoughtPlayerCount()==0) {
 				if(index==1) {
-					return new Response("Demand Arthur", "Refuse to tell Zaranix why you're here, and instead simply demand that he hand over Arthur to you.", ZARANIX_ROOM_NO_EXPLANATION) {
+					return new Response("Потребовать Arthur", "Отказаться объяснять Зараниксу, зачем вы здесь, и вместо этого просто потребовать, чтобы он отдал вам Arthur.", ZARANIX_ROOM_NO_EXPLANATION) {
 						@Override
 						public boolean isCombatHighlight() {
 							return true;
@@ -269,7 +269,7 @@ public class ZaranixHomeFirstFloor {
 					};
 					
 				} else if(index==2) {
-					return new Response("Explain everything", "Tell Zaranix that Lilaya needs Arthur in order to help her unravel the mystery of inter-dimensional travel.", ZARANIX_ROOM_EXPLANATION) {
+					return new Response("Объяснить всё", "Скажите Зараниксу, что Лилая нуждается в Артуре, чтобы тот помог ей разгадать тайну межпространственных путешествий.", ZARANIX_ROOM_EXPLANATION) {
 						@Override
 						public void effects() {
 							Main.game.getTextEndStringBuilder().append(Main.game.getPlayer().setQuestProgress(QuestLine.MAIN, Quest.MAIN_1_I_ARTHURS_TALE));
@@ -282,7 +282,7 @@ public class ZaranixHomeFirstFloor {
 				}
 			} else {
 				if(index==1) {
-					return new ResponseCombat("Fight", "Defend yourself against Zaranix's attack!", Main.game.getNpc(Zaranix.class));
+					return new ResponseCombat("Сразиться", "Защититесь от атаки Зараникса!", Main.game.getNpc(Zaranix.class));
 				} else {
 					return null;
 				}
@@ -294,7 +294,7 @@ public class ZaranixHomeFirstFloor {
 
 		@Override
 		public String getLabel() {
-			return "Zaranix's Lab";
+			return "Лаборатория Зараникса";
 		}
 
 		@Override
@@ -305,7 +305,7 @@ public class ZaranixHomeFirstFloor {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new ResponseCombat("Fight", "Defend yourself against Zaranix's attack!", Main.game.getNpc(Zaranix.class));
+				return new ResponseCombat("Сразиться", "Защититесь от атаки Зараникса!", Main.game.getNpc(Zaranix.class));
 			} else {
 				return null;
 			}
@@ -316,7 +316,7 @@ public class ZaranixHomeFirstFloor {
 
 		@Override
 		public String getLabel() {
-			return "Zaranix's Lab";
+			return "Лаборатория Зараникса";
 		}
 
 		@Override
@@ -327,7 +327,7 @@ public class ZaranixHomeFirstFloor {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Leave", "Leave Zaranix's house.", PlaceType.DOMINION_DEMON_HOME_ZARANIX.getDialogue(false)) {
+				return new Response("Уйти", "Покинуть дом Зараникса.", PlaceType.DOMINION_DEMON_HOME_ZARANIX.getDialogue(false)) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/zaranixHome/firstFloor", "ZARANIX_ROOM_EXPLANATION_THANKS"));
@@ -337,7 +337,7 @@ public class ZaranixHomeFirstFloor {
 				};
 				
 			} else if(index==2) {
-				return new Response("'Thank' Zaranix", "You feel a little sorry for Zaranix. Perhaps you could offer to give him a blowjob as thanks...", ZARANIX_ROOM_EXPLANATION_THANK_ZARANIX,
+				return new Response("'Поблагодарить' Зараникса", "Вам становится немного жаль Зараникса. Возможно, стоит предложить ему отсосать в знак благодарности...", ZARANIX_ROOM_EXPLANATION_THANK_ZARANIX,
 						Util.newArrayListOfValues(Fetish.FETISH_ORAL_GIVING), CorruptionLevel.TWO_HORNY, null, null, null) {
 					@Override
 					public boolean isSexHighlight() {
@@ -355,7 +355,7 @@ public class ZaranixHomeFirstFloor {
 
 		@Override
 		public String getLabel() {
-			return "Zaranix's Lab";
+			return "Лаборатория Зараникса";
 		}
 
 		@Override
@@ -366,7 +366,7 @@ public class ZaranixHomeFirstFloor {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new ResponseSex("Suck cock", "Show Zaranix how good you are at sucking cock.",
+				return new ResponseSex("Сосать член", "Показать Зараниксу, как хорошо вы умеете сосать член.",
 						true, true,
 						new SMZaranixCockSucking(
 								Util.newHashMapOfValues(new Value<>(Main.game.getNpc(Zaranix.class), SexSlotSitting.SITTING)),
@@ -391,7 +391,7 @@ public class ZaranixHomeFirstFloor {
 
 		@Override
 		public String getLabel() {
-			return "Zaranix is finished";
+			return "Зараникс закончил";
 		}
 
 		@Override
@@ -402,7 +402,7 @@ public class ZaranixHomeFirstFloor {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Continue", "Continue on your journey.",  PlaceType.DOMINION_DEMON_HOME_ZARANIX.getDialogue(false)) {
+				return new Response("Продолжить", "Продолжить свое путешествие.",  PlaceType.DOMINION_DEMON_HOME_ZARANIX.getDialogue(false)) {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setLocation(WorldType.DOMINION, PlaceType.DOMINION_DEMON_HOME_ZARANIX, false);

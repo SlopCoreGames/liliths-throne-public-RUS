@@ -65,14 +65,14 @@ public class ClothingEmporium {
 		
 		if(increment==0 || (increment>0 && currentAffection>=maximumLimit)) {
 			return "<p style='text-align:center'>"
-						+ UtilText.parse(character, "[style.italicsDisabled([npc.Name] doesn't gain any additional affection towards you from this action...)]")
+						+ UtilText.parse(character, "[style.italicsDisabled([npc.Name] не получает дополнительной привязанности к вам от этого действия...)]")
 						+ "<br/>"
 						+ AffectionLevel.getDescription(character, Main.game.getPlayer(), true)
 					+ "</p>";
 		}
 		if(increment<0 && currentAffection<=minimumLimit) {
 			return "<p style='text-align:center'>"
-						+ UtilText.parse(character, "[style.italicsDisabled([npc.Name] doesn't lose any affection towards you from this action...)]")
+						+ UtilText.parse(character, "[style.italicsDisabled([npc.Name] не теряет привязанности к вам от этого действия...)]")
 						+ "<br/>"
 						+ AffectionLevel.getDescription(character, Main.game.getPlayer(), true)
 					+ "</p>";
@@ -94,7 +94,7 @@ public class ClothingEmporium {
 		return ((Nyan)Main.game.getNpc(Nyan.class));
 	}
 	
-	public static final DialogueNode EXTERIOR = new DialogueNode("Nyan's Clothing Emporium (Exterior)", "", false) {
+	public static final DialogueNode EXTERIOR = new DialogueNode("Магазин одежды Nyan (Снаружи)", "", false) {
 		@Override
 		public int getSecondsPassed() {
 			return 60;
@@ -112,13 +112,13 @@ public class ClothingEmporium {
 			if(responseTab==0) {
 				if (index == 1) {
 					if(!Main.game.isHourBetween(9, 20)) {
-						return new Response("Enter", "Nyan's Clothing Emporium is currently closed. You'll have to come back later...", null);
+						return new Response("Войти", "Магазин одежды Nyan сейчас закрыт. Придется зайти позже...", null);
 						
 					} else if(Main.game.getDialogueFlags().values.contains(DialogueFlagValue.nyanIntroduced)) {
-						return new Response("Enter", "Step inside Nyan's Clothing Emporium.", SHOP_CLOTHING_REPEAT);
+						return new Response("Войти", "Войти в магазин одежды Nyan.", SHOP_CLOTHING_REPEAT);
 						
 					} else {
-						return new Response("Enter", "Step inside Nyan's Clothing Emporium.", SHOP_CLOTHING);
+						return new Response("Войти", "Войти в магазин одежды Nyan.", SHOP_CLOTHING);
 					}
 				}
 			}
@@ -138,7 +138,7 @@ public class ClothingEmporium {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Stockroom", "Nyan has shown you into the stockroom.", SHOP_CLOTHING_STOCK_ROOM) {
+				return new Response("Кладовая", "Nyan проводит вас в кладовую.", SHOP_CLOTHING_STOCK_ROOM) {
 					@Override
 					public void effects() {
 						Main.game.getDialogueFlags().values.add(DialogueFlagValue.nyanIntroduced);
@@ -176,9 +176,9 @@ public class ClothingEmporium {
 		@Override
 		public String getAuthor() {
 			if(getNyan().isPregnant() && !getNyan().isCharacterReactedToPregnancy(Main.game.getPlayer())) {
-				return "Duner";
+				return "Дунер";
 			} else {
-				return "Innoxia";
+				return "Инноксия";
 			}
 		}
 		@Override
@@ -209,9 +209,9 @@ public class ClothingEmporium {
 			}
 
 			if(index==0) {
-				return "Trade";
+				return "Торговать";
 			} else if(index==1) {
-				return "Talk";
+				return "Поговорить";
 			} else {
 				return null;
 			}
@@ -221,7 +221,7 @@ public class ClothingEmporium {
 			if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.nyanHiding)) {
 				if(index==1) {
 					if(Main.game.getDialogueFlags().getSavedLong(NYAN_HIDING_DAY_ID)<Main.game.getDayNumber()) {
-						return new Response("Follow", "Follow Nyan into her stockroom again and listen to what she has to say.", NYAN_HIDING_END) {
+						return new Response("Следовать", "Снова пойти за Nyan в её кладовую и послушать, что она скажет.", NYAN_HIDING_END) {
 							@Override
 							public void effects() {
 								Main.game.getDialogueFlags().setFlag(DialogueFlagValue.nyanHiding, false);
@@ -229,7 +229,7 @@ public class ClothingEmporium {
 						};
 						
 					} else {
-						return new Response("Leave", "With Nyan in hiding and no shop assistant to help, there's nothing for you to do but leave.", EXTERIOR) {
+						return new Response("Уйти", "Поскольку Nyan прячется, а помощника в лавке нет, вам остается только уйти.", EXTERIOR) {
 							@Override
 							public void effects() {
 								Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/shoppingArcade/clothingEmporium", "NYAN_HIDING_LEAVE"));
@@ -246,8 +246,8 @@ public class ClothingEmporium {
 				
 				if(!Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.nyanDating)) {
 					if(index==1) {
-						return new Response("Girlfriend",
-								"Tell Nyan that you've changed your mind and would like her to be your girlfriend.",
+						return new Response("Девушка",
+								"Сказать Nyan, что вы передумали и хотите, чтобы она стала вашей девушкой.",
 								NYAN_HIDING_END_SHOP) {
 							@Override
 							public void effects() {
@@ -261,10 +261,10 @@ public class ClothingEmporium {
 				} else {
 					if(index==1) {
 						if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.nyanTalkedTo)) {
-							return new Response("Talk", "You've already had a chat with Nyan today. You can repeat this action tomorrow.", null);
+							return new Response("Поговорить", "Вы уже общались с Nyan сегодня. Вы сможете повторить это действие завтра.", null);
 							
 						} else {
-							return new Response("Talk", "Talk with Nyan for a while and get to know her a little better.", ROMANCE_TALK) {
+							return new Response("Поговорить", "Поговорить с Nyan немного, чтобы узнать её получше.", ROMANCE_TALK) {
 								@Override
 								public void effects() {
 									UtilText.nodeContentSB.append(UtilText.parseFromXMLFile("characters/dominion/nyan", "NYAN_TALK_BASE"));
@@ -302,16 +302,15 @@ public class ClothingEmporium {
 						
 					} else if(index==2) {
 						if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.nyanComplimented)) {
-							return new Response("Compliment", "You've already complimented Nyan today. You can repeat this action tomorrow.", null);
+							return new Response("Сделать комплимент", "Вы уже делали Nyan комплимент сегодня. Вы сможете повторить это действие завтра.", null);
 							
 						} else if(!Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.nyanTalkedTo) && currentAffection<50) {
-							return new Response("Compliment",
-									"You can tell that attempting to give Nyan a compliment without first spending some time talking with her would end in disaster."
-										+ "<br/>[style.italicsMinorBad(You need to talk to Nyan before complimenting her!)]",
+							return new Response("Сделать комплимент",
+									"Вы понимаете, что попытка сделать Nyan комплимент, не поговорив с ней предварительно, закончится катастрофой.<br/>[style.italicsMinorBad(Вам нужно сначала поговорить с Nyan, прежде чем делать комплименты!)]",
 									null);
 							
 						} else {
-							return new Response("Compliment", "Compliment Nyan's appearance and abilities.", ROMANCE_COMPLIMENT) {
+							return new Response("Сделать комплимент", "Сделать комплимент внешности и способностям Nyan.", ROMANCE_COMPLIMENT) {
 								@Override
 								public void effects() {
 									Main.game.getTextEndStringBuilder().append(incrementAffection(getNyan(), 2, 30, 50));
@@ -325,23 +324,20 @@ public class ClothingEmporium {
 						int requiredAffection = 40;
 						if(currentAffection<requiredAffection) {
 							return new Response(
-									"Flirt",
-									"You can tell that attempting to flirt with Nyan would end in disaster."
-										+ " You should work on getting to know her a little better first."
-										+ "<br/>[style.italicsMinorBad(Requires Nyan's affection to be at least "+requiredAffection+", and is currently "+currentAffection+".)]",
+									"Флиртовать",
+									"Вы понимаете, что попытка флиртовать с Nyan закончится катастрофой. Сначала стоит узнать её получше.<br/>[style.italicsMinorBad(Требуется, чтобы привязанность Nyan была не ниже "+requiredAffection+", а сейчас она составляет  "+currentAffection+".)]",
 									null);
 							
 						} else if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.nyanFlirtedWith)) {
-							return new Response("Flirt", "You've already flirted with Nyan today. You can repeat this action tomorrow.", null);
+							return new Response("Флиртовать", "Вы уже флиртовали с Nyan сегодня. Повторить можно будет завтра.", null);
 							
 						} else if(!Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.nyanTalkedTo) && currentAffection<50) {
-							return new Response("Flirt",
-									"You can tell that attempting to flirt with Nyan without first spending some time talking with her would end in disaster."
-										+ "<br/>[style.italicsMinorBad(You need to talk to Nyan before flirting with her!)]",
+							return new Response("Флиртовать",
+									"Можно заметить, что попытка флиртовать с Nyan, не поговорив с ней предварительно, закончится катастрофой.<br/>[style.italicsMinorBad(Вам нужно поговорить с Nyan, прежде чем флиртовать с ней!)]",
 									null);
 							
 						} else {
-							return new Response("Flirt", "Flirt with Nyan a little.", ROMANCE_FLIRT) {
+							return new Response("Флиртовать", "Немного пофлиртовать с Nyan.", ROMANCE_FLIRT) {
 								@Override
 								public void effects() {
 									Main.game.getTextEndStringBuilder().append(incrementAffection(getNyan(), 3, 30, 50));
@@ -355,16 +351,15 @@ public class ClothingEmporium {
 						int requiredAffection = 50;
 						if(currentAffection<requiredAffection) {
 							return new Response(
-									"Walk",
-									"You don't think that Nyan is ready to go for a walk with you..."
-										+ "<br/>[style.italicsMinorBad(Requires Nyan's affection to be at least "+requiredAffection+", and is currently "+currentAffection+".)]",
+									"Идти",
+									"Вам кажется, что Nyan еще не готова пойти с вами на прогулку...<br/>[style.italicsMinorBad(Требуется привязанность Nyan не менее "+requiredAffection+", а сейчас она составляет  "+currentAffection+".)]",
 									null);
 							
 						} else if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.nyanWalked)) {
-							return new Response("Walk", "You've already gone for a walk with Nyan today. You can repeat this action tomorrow.", null);
+							return new Response("Идти", "Вы уже гуляли с Nyan сегодня. Повторить можно будет завтра.", null);
 							
 						} else {
-							return new Response("Walk", "Ask Nyan if she'd like to go for a walk with you.", ROMANCE_WALK) {
+							return new Response("Идти", "Спросить Nyan, не хочет ли она прогуляться с вами.", ROMANCE_WALK) {
 								@Override
 								public void effects() {
 									Main.game.getTextEndStringBuilder().append(incrementAffection(getNyan(), 2, 50, 60));
@@ -378,10 +373,10 @@ public class ClothingEmporium {
 					if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.nyanFirstKissed)) {
 						if(index==4) {
 							if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.nyanHeadPatted)) {
-								return new Response("Head pat", "You've already patted Nyan on the head today. You can repeat this action tomorrow.", null);
+								return new Response("Погладить по голове", "Вы уже гладили Nyan по голове сегодня. Повторить можно будет завтра.", null);
 								
 							} else {
-								return new Response("Head pat", "Pat Nyan on the head and tell her she's a good girl.", ROMANCE_HEAD_PAT) {
+								return new Response("Погладить по голове", "Погладить Nyan по голове и сказать ей, что она хорошая девочка.", ROMANCE_HEAD_PAT) {
 									@Override
 									public void effects() {
 										Main.game.getTextEndStringBuilder().append(incrementAffection(getNyan(), 2, 50, 60));
@@ -393,10 +388,10 @@ public class ClothingEmporium {
 							
 						} else if(index==5) {
 							if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.nyanKissed)) {
-								return new Response("Kiss", "You've already kissed Nyan today. You can repeat this action tomorrow.", null);
+								return new Response("Поцеловать", "Вы уже целовали Nyan сегодня. Вы сможете повторить это завтра.", null);
 								
 							} else {
-								return new Response("Kiss", "You can tell from the way Nyan is looking at you that she wants to be kissed again. Lean forwards and give her what she wants.", ROMANCE_KISS) {
+								return new Response("Поцеловать", "По тому, как Nyan смотрит на вас, можно понять, что она хочет еще одного поцелуя. Наклонитесь вперед и дайте ей то, чего она желает.", ROMANCE_KISS) {
 									@Override
 									public void effects() {
 										Main.game.getTextEndStringBuilder().append(incrementAffection(getNyan(), 5, 50, 60));
@@ -411,21 +406,19 @@ public class ClothingEmporium {
 							int requiredAffection = 60;
 							if(currentAffection<requiredAffection) {
 								return new Response(
-										"Restaurant date",
-										"Considering Nyan's nervousness, you need to be sure that she'll be able to handle the prospect of going out on a public date with you..."
-											+ "<br/>[style.italicsMinorBad(Requires Nyan's affection to be at least "+requiredAffection+", and is currently "+currentAffection+".)]",
+										"Свидание в ресторане",
+										"Учитывая нервозность Nyan, вам нужно быть уверенным, что она справится с перспективой публичного свидания с вами...<br/>[style.italicsMinorBad(Требуется привязанность Nyan не менее "+requiredAffection+", а сейчас она составляет  "+currentAffection+".)]",
 										null);
 								
 							} else if(!Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.nyanRestaurantDateRequested)) {
 								if(Main.game.getDayOfWeek()==DayOfWeek.FRIDAY || Main.game.getDayOfWeek()==DayOfWeek.SATURDAY) {
-									return new Response("Restaurant date",
-											"Ask Nyan if she'd like to go out with you on a date to the restaurant, 'The Oaken Glade'."
-												+ "<br/>[style.italicsMinorBad(This action cannot be performed on Fridays or Saturdays!)]",
+									return new Response("Свидание в ресторане",
+											"Спросить Nyan, не хочет ли она сходить с вами на свидание в ресторан «Дубовая поляна».<br/>[style.italicsMinorBad(Это действие нельзя совершать в пятницу или субботу!)]",
 											null);
 									
 								} else {
-									return new Response("Restaurant date",
-											"Ask Nyan if she'd like to go out with you on a date to the restaurant, 'The Oaken Glade'.",
+									return new Response("Свидание в ресторане",
+											"Спросить Nyan, не хочет ли она сходить с вами на свидание в ресторан «Дубовая поляна».",
 											ROMANCE_DATE_REQUESTED) {
 										@Override
 										public void effects() {
@@ -441,10 +434,10 @@ public class ClothingEmporium {
 					if(currentAffection>60 || Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.nyanRestaurantDateCompleted)) {
 						if(index==7) {
 							if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.nyanMakeOut)) {
-								return new Response("Make Out", "You've already made out with Nyan today. You can repeat this action tomorrow.", null);
+								return new Response("Миловаться", "Вы уже миловались с Nyan сегодня. Вы сможете повторить это завтра.", null);
 								
 							} else {
-								return new Response("Make Out", "You can tell that Nyan is desperate for some intense physical contact with you. Lean forwards and passionately start making out with her.", ROMANCE_MAKE_OUT) {
+								return new Response("Миловаться", "Сразу видно, что Nyan отчаянно жаждет страстного физического контакта с тобой. Наклонись вперед и начни пылко целовать её.", ROMANCE_MAKE_OUT) {
 									@Override
 									public void effects() {
 										Main.game.getTextEndStringBuilder().append(incrementAffection(getNyan(), 5, 60, 100));
@@ -459,11 +452,11 @@ public class ClothingEmporium {
 					if(index==8) {
 						if(getNyan().isVisiblyPregnant()) {
 							if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.nyanTummyRubbed)) {
-								return new Response("Rub tummy", "You've already spent time rubbing Nyan's tummy today. You can repeat this action tomorrow.", null);
+								return new Response("Погладить животик", "Ты уже гладил Nyan по животику сегодня. Ты сможешь повторить это завтра.", null);
 								
 							} else {
-								return new Response("Rub tummy",
-										"Rub Nyan's pregnant tummy and ask her how she's handling her pregnancy.",
+								return new Response("Погладить животик",
+										"Погладить беременный животик Nyan и спросить, как она справляется с беременностью.",
 										ROMANCE_RUB_TUMMY) {
 									@Override
 									public void effects() {
@@ -480,15 +473,14 @@ public class ClothingEmporium {
 						int requiredAffection = 40;
 						if(currentAffection<requiredAffection) {
 							return new Response(
-									"Gift",
-									"Receiving a gift might be too much for the delicate cat-girl to handle right now..."
-										+ "<br/>[style.italicsMinorBad(Requires Nyan's affection to be at least "+requiredAffection+", and is currently "+currentAffection+".)]",
+									"Подарок",
+									"Подарок может оказаться слишком сильным потрясением для этой нежной кошкодевочки прямо сейчас...<br/>[style.italicsMinorBad(Требуется привязанность Nyan не менее "+requiredAffection+", а сейчас она составляет  "+currentAffection+".)]",
 									null);
 							
 						} else if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.nyanGift)) { // This is set in Nyan's getGiftReaction() method
-							return new Response("Gift", "You've already given Nyan a gift today. You can repeat this action tomorrow.", null);
+							return new Response("Подарок", "Ты уже дарил Nyan подарок сегодня. Ты сможешь повторить это завтра.", null);
 						} else {
-							return new Response("Gift", "Give Nyan a gift (opens gift selection screen).", ROMANCE_GIFT) {
+							return new Response("Подарок", "Подарить Nyan подарок (открывает экран выбора подарков).", ROMANCE_GIFT) {
 								@Override
 								public DialogueNode getNextDialogue() {
 									return GiftDialogue.getGiftDialogue(getNyan(), ROMANCE_GIFT, 1);
@@ -503,7 +495,7 @@ public class ClothingEmporium {
 				}
 				
 				if(index == 0) {
-					return new Response("Leave", "Tell Nyan that you've got to get going.", EXTERIOR) {
+					return new Response("Уйти", "Сказать Nyan, что тебе пора идти.", EXTERIOR) {
 						@Override
 						public void effects() {
 							Main.game.setResponseTab(0);
@@ -516,13 +508,13 @@ public class ClothingEmporium {
 				return null;
 				
 			} else if(responseTab==0) {
-				String descriptionStart = "Ask her ";
+				String descriptionStart = "Спросить её ";
 				if(!Main.game.getCharactersPresent().contains(getNyan())) {
-					descriptionStart = "Take a look at ";
+					descriptionStart = "Посмотреть, ";
 				}
 				
 				if (index == 1) {
-					return new ResponseTrade("Female Clothing", descriptionStart+"what female clothing is available.", getNyan()){
+					return new ResponseTrade("Женская одежда", descriptionStart+"какая женская одежда есть в наличии.", getNyan()){
 						@Override
 						public void effects() {
 							getNyan().clearNonEquippedInventory(false);
@@ -537,7 +529,7 @@ public class ClothingEmporium {
 					};
 					
 				} else if (index == 2) {
-					return new ResponseTrade("Female Lingerie", descriptionStart+"what female lingerie is available.", getNyan()){
+					return new ResponseTrade("Женское белье", descriptionStart+"какое женское нижнее белье есть в наличии.", getNyan()){
 						@Override
 						public void effects() {
 							getNyan().clearNonEquippedInventory(false);
@@ -552,7 +544,7 @@ public class ClothingEmporium {
 					};
 					
 				} else if (index == 3) {
-					return new ResponseTrade("Female Accessories", descriptionStart+"what female accessories are available.", getNyan()){
+					return new ResponseTrade("Женские аксессуары", descriptionStart+"какие женские аксессуары есть в наличии.", getNyan()){
 						@Override
 						public void effects() {
 							getNyan().clearNonEquippedInventory(false);
@@ -567,7 +559,7 @@ public class ClothingEmporium {
 					};
 					
 				} else if (index == 6) {
-					return new ResponseTrade("Male Clothing", descriptionStart+"what male clothing is available.", getNyan()){
+					return new ResponseTrade("Мужская одежда", descriptionStart+"какая мужская одежда есть в наличии.", getNyan()){
 						@Override
 						public void effects() {
 							getNyan().clearNonEquippedInventory(false);
@@ -582,7 +574,7 @@ public class ClothingEmporium {
 					};
 					
 				} else if (index == 7) {
-					return new ResponseTrade("Male Underwear", descriptionStart+"what male underwear is available.", getNyan()){
+					return new ResponseTrade("Мужское нижнее белье", descriptionStart+"какое мужское нижнее белье есть в наличии.", getNyan()){
 						@Override
 						public void effects() {
 							getNyan().clearNonEquippedInventory(false);
@@ -597,7 +589,7 @@ public class ClothingEmporium {
 					};
 					
 				} else if (index == 8) {
-					return new ResponseTrade("Male Accessories", descriptionStart+"what male accessories are is available.", getNyan()){
+					return new ResponseTrade("Мужские аксессуары", descriptionStart+"какие мужские аксессуары есть в наличии.", getNyan()){
 						@Override
 						public void effects() {
 							getNyan().clearNonEquippedInventory(false);
@@ -612,7 +604,7 @@ public class ClothingEmporium {
 					};
 					
 				} else if (index == 11) {
-					return new ResponseTrade("Unisex Clothing", descriptionStart+"what unisex clothing is available.", getNyan()){
+					return new ResponseTrade("Унисекс одежда", descriptionStart+"какая унисекс-одежда есть в наличии.", getNyan()){
 						@Override
 						public void effects() {
 							getNyan().clearNonEquippedInventory(false);
@@ -627,7 +619,7 @@ public class ClothingEmporium {
 					};
 					
 				} else if (index == 12) {
-					return new ResponseTrade("Unisex Underwear", descriptionStart+"what unisex underwear is available.", getNyan()){
+					return new ResponseTrade("Унисекс белье", descriptionStart+"какое унисекс-нижнее белье есть в наличии.", getNyan()){
 						@Override
 						public void effects() {
 							getNyan().clearNonEquippedInventory(false);
@@ -642,7 +634,7 @@ public class ClothingEmporium {
 					};
 					
 				} else if (index == 13) {
-					return new ResponseTrade("Unisex Accessories", descriptionStart+"what unisex accessories are is available.", getNyan()){
+					return new ResponseTrade("Аксессуары унисекс", descriptionStart+"какие унисекс-аксессуары есть в наличии.", getNyan()){
 						@Override
 						public void effects() {
 							getNyan().clearNonEquippedInventory(false);
@@ -658,7 +650,7 @@ public class ClothingEmporium {
 					
 				} else if (index == 5) {
 					if(Main.game.getPlayer().isQuestCompleted(QuestLine.RELATIONSHIP_NYAN_HELP)) {
-						return new ResponseTrade("Enchanted Clothing", descriptionStart+" what special items of clothing are now in stock.", getNyan()){
+						return new ResponseTrade("Зачарованная одежда", descriptionStart+" какая особенная одежда сейчас есть в наличии.", getNyan()){
 							@Override
 							public void effects() {
 								getNyan().clearNonEquippedInventory(false);
@@ -673,9 +665,8 @@ public class ClothingEmporium {
 						};
 						
 					} else if(!Main.game.getPlayer().hasQuest(QuestLine.RELATIONSHIP_NYAN_HELP)) {
-						return new Response("Enchanted Clothing",
-								"Ask Nyan if she stocks enchanted clothing."
-										+ "<br/>[style.italicsQuestRomance(This will start Nyan's romance quest!)]",
+						return new Response("Зачарованная одежда",
+								"Спросить у Nyan, есть ли у неё в продаже зачарованная одежда.<br/>[style.italicsQuestRomance(Это запустит романтический квест с Nyan!)]",
 								SHOP_ENCHANTED_CLOTHING) {
 							@Override
 							public void effects() {
@@ -688,7 +679,7 @@ public class ClothingEmporium {
 						};
 						
 					} else if(Main.game.getPlayer().getQuest(QuestLine.RELATIONSHIP_NYAN_HELP) == Quest.RELATIONSHIP_NYAN_4_STOCK_ISSUES_SUPPLIERS_BEATEN) {
-						return new Response("Report back", "Tell Nyan that you've dealt with the suppliers.", SHOP_REPORT_BACK) {
+						return new Response("Доложить", "Сказать Nyan, что ты разобрался с поставщиками.", SHOP_REPORT_BACK) {
 							@Override
 							public void effects() {
 								getNyan().setSellModifier(1.25f);
@@ -699,10 +690,10 @@ public class ClothingEmporium {
 						};
 						
 					} else if(Main.game.getPlayer().isQuestProgressGreaterThan(QuestLine.RELATIONSHIP_NYAN_HELP, Quest.RELATIONSHIP_NYAN_1_STOCK_ISSUES)) {
-						return new Response("Report back", "Report back to Nyan once you've dealt with the suppliers.", null);
+						return new Response("Доложить", "Вернуться к Nyan после того, как разберешься с поставщиками.", null);
 						
 					} else {
-						return new Response("Offer help", "Tell Nyan that you'll help her with her supplier problem.", SHOP_OFFER_HELP) {
+						return new Response("Предложить помощь", "Сказать Nyan, что ты поможешь ей решить проблему с поставщиками.", SHOP_OFFER_HELP) {
 							@Override
 							public void effects() {
 								Main.game.getTextEndStringBuilder().append(getNyan().setAffection(Main.game.getPlayer(), 10));
@@ -712,7 +703,7 @@ public class ClothingEmporium {
 					}
 					 
 				} else if (index == 0) {
-					return new Response("Leave", "Tell Nyan that you've got to get going.", EXTERIOR) {
+					return new Response("Уйти", "Сказать Nyan, что тебе пора идти.", EXTERIOR) {
 						@Override
 						public void effects() {
 							Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/shoppingArcade/clothingEmporium", "NYAN_EXIT"));
@@ -777,7 +768,7 @@ public class ClothingEmporium {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 0) {
-				return new Response("Leave", "Exit the store.", EXTERIOR) {
+				return new Response("Уйти", "Выйти из магазина.", EXTERIOR) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/dominion/shoppingArcade/clothingEmporium", "NYAN_EXIT_EMBARRASSED"));
@@ -802,8 +793,8 @@ public class ClothingEmporium {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Girlfriend",
-						"Tell Nyan that you'd like her to be your girlfriend.",
+				return new Response("Девушка",
+						"Сказать Nyan, что хочешь, чтобы она стала твоей девушкой.",
 						NYAN_HIDING_END_SHOP) {
 					@Override
 					public void effects() {
@@ -814,9 +805,8 @@ public class ClothingEmporium {
 				};
 				
 			} else if(index==2) {
-				return new Response("Decline",
-						"Tell Nyan that you're not able to commit to having a girlfriend at the moment."
-							+ "<br/>[style.italicsMinorGood(You will be able to change your mind and ask Nyan to be your girlfriend at any time.)]",
+				return new Response("Отклонить",
+						"Сказать Nyan, что в данный момент ты не готов к серьезным отношениям.<br/>[style.italicsMinorGood(Ты сможешь передумать и попросить Nyan стать твоей девушкой в любое время.)]",
 							NYAN_HIDING_END_SHOP) {
 					@Override
 					public void effects() {
@@ -1029,12 +1019,12 @@ public class ClothingEmporium {
 		public Response getResponse(int responseTab, int index) {
 			if(!Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.nyanFirstKissed)) {
 				if(index==1) {
-					return new Response("Continue", "Continue walking with Nyan around the Arcade.", ROMANCE_WALK_INITIAL_CONTINUE);
+					return new Response("Продолжить", "Продолжить прогулку с Nyan по Аркаде.", ROMANCE_WALK_INITIAL_CONTINUE);
 				}
 				
 			} else {
 				if(index==1) {
-					return new Response("Return", "Walk Nyan back to her store.", ROMANCE_WALK_END) {
+					return new Response("Назад", "Проводить Nyan обратно в её лавку.", ROMANCE_WALK_END) {
 						@Override
 						public void effects() {
 							Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("characters/dominion/nyan", "ROMANCE_WALK_END_NO_EVENT"));
@@ -1043,13 +1033,13 @@ public class ClothingEmporium {
 					
 				} else if(index==2) {
 					if(!Main.game.getPlayer().hasArms()) {
-						return new Response("Hold hands", "As you do not have any arms, you cannot hold hands with Nyan!", null);
+						return new Response("Взяться за руки", "Так как у тебя нет рук, ты не можешь взять Nyan за руку!", null);
 						
 					} else if(Main.game.getPlayer().isArmMovementHindered()) {
-						return new Response("Hold hands", "As your [pc.arm] movement is currently hindered by your clothing, you cannot comfortably hold hands with Nyan!", null);
+						return new Response("Взяться за руки", "Так как твоё [pc.arm] движение сейчас сковано одеждой, ты не можешь с комфортом держать Nyan за руку!", null);
 						
 					} else {
-						return new Response("Hold hands", "Hold hands with Nyan as you walk her back to her store.", ROMANCE_WALK_END) {
+						return new Response("Взяться за руки", "Взять Nyan за руку, пока ты провожаешь её обратно в лавку.", ROMANCE_WALK_END) {
 							@Override
 							public void effects() {
 								Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("characters/dominion/nyan", "ROMANCE_WALK_END_HOLD_HANDS"));
@@ -1060,10 +1050,10 @@ public class ClothingEmporium {
 					
 				} else if(index==3) {
 					if(!Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.MOUTH, true)) {
-						return new Response("Kiss", "As you are unable to access your mouth, you cannot kiss Nyan!", null);
+						return new Response("Поцеловать", "Так как у тебя нет доступа к рту, ты не можешь поцеловать Nyan!", null);
 						
 					} else {
-						return new Response("Kiss", "Take this opportunity to kiss Nyan in public.", ROMANCE_WALK_END) {
+						return new Response("Поцеловать", "Воспользоваться случаем и поцеловать Nyan на людях.", ROMANCE_WALK_END) {
 							@Override
 							public void effects() {
 								Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("characters/dominion/nyan", "ROMANCE_WALK_END_KISS"));
@@ -1097,7 +1087,7 @@ public class ClothingEmporium {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Return", "Accompany Nyan back to her shop.", ROMANCE_WALK_INITIAL_END);
+				return new Response("Назад", "Сопроводить Nyan обратно в её лавку.", ROMANCE_WALK_INITIAL_END);
 			}
 			return null;
 		}
@@ -1121,10 +1111,10 @@ public class ClothingEmporium {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				if(!Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.MOUTH, true)) {
-					return new Response("Kiss", "As you are unable to access your mouth, you cannot kiss Nyan!", null);
+					return new Response("Поцеловать", "Так как у тебя нет доступа к рту, ты не можешь поцеловать Nyan!", null);
 					
 				} else {
-					return new Response("Kiss", "Take this opportunity to kiss Nyan.", ROMANCE_WALK_END) {
+					return new Response("Поцеловать", "Воспользоваться случаем и поцеловать Nyan.", ROMANCE_WALK_END) {
 						@Override
 						public void effects() {
 							Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("characters/dominion/nyan", "ROMANCE_WALK_INITIAL_END_KISS"));
@@ -1135,7 +1125,7 @@ public class ClothingEmporium {
 				}
 				
 			} else if(index==2) {
-				return new Response("Don't kiss", "You can always repeat this experience again at another time...", ROMANCE_WALK_END) {
+				return new Response("Не целоваться", "Вы всегда сможете повторить этот опыт в другой раз...", ROMANCE_WALK_END) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("characters/dominion/nyan", "ROMANCE_WALK_INITIAL_END_NO_KISS"));
@@ -1217,10 +1207,10 @@ public class ClothingEmporium {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue", "Bring an end to your makeout session.", POST_MAKEOUT);
+				return new Response("Продолжить", "Прервать долгий поцелуй.", POST_MAKEOUT);
 				
 			} else if(index==2) {
-				return new ResponseSex("Cunnilingus", "Suggest to the horny cat-girl that you could eat her out right here in the storeroom.",
+				return new ResponseSex("Куннилингус", "Предложить возбужденной кошкодевочке отсосать ей прямо здесь, в кладовой.",
 						true, true,
 						new SMNyanSex(
 								SexPosition.AGAINST_WALL,
@@ -1260,7 +1250,7 @@ public class ClothingEmporium {
 				};
 				
 			} else if(index==3) {
-				return new ResponseSex("Fingering", "Pull up Nyan's miniskirt and start fingering her while continuing to kiss her.",
+				return new ResponseSex("Фингеринг", "Задрать мини-юбку Nyan и начать ласкать её пальцами, не прекращая поцелуев.",
 						true, true,
 						new SMNyanSex(
 								SexPosition.AGAINST_WALL,
@@ -1298,10 +1288,10 @@ public class ClothingEmporium {
 			
 			if(Main.game.getPlayer().hasPenisIgnoreDildo()) {
 				if(!penisAccess) {
-					receiveOralResponses.add(new Response("Receive blowjob", "As you are unable to access your penis, you cannot get Nyan to suck your cock!", null)); 
+					receiveOralResponses.add(new Response("Получить минет", "Поскольку у тебя нет доступа к члену, ты не можешь заставить Nyan сосать твой член!", null)); 
 				} else {
 					receiveOralResponses.add(
-							new ResponseSex("Receive blowjob", "Get Nyan to kneel down and suck your cock right here in the storeroom.",
+							new ResponseSex("Получить минет", "Заставить Nyan опуститься на колени и отсосать вам член прямо здесь, в кладовой.",
 									true, true,
 									new SMNyanSex(
 											Main.game.getPlayer().isTaur()
@@ -1341,10 +1331,10 @@ public class ClothingEmporium {
 			}
 			if(Main.game.getPlayer().hasVagina()) {
 				if(!vaginaAccess) {
-					receiveOralResponses.add(new Response("Receive cunnilingus", "As you are unable to access your vagina, you cannot get Nyan to perform cunnilingus on you!", null)); 
+					receiveOralResponses.add(new Response("Принять куннилингус", "Поскольку у тебя нет доступа к влагалищу, ты не можешь заставить Nyan заняться куннилингусом!", null)); 
 				} else {
 					receiveOralResponses.add(
-							new ResponseSex("Receive cunnilingus", "Get Nyan to kneel down and eat you out right here in the storeroom.",
+							new ResponseSex("Принять куннилингус", "Заставить Nyan опуститься на колени и отлизать вас прямо здесь, в кладовой.",
 									true, true,
 									new SMNyanSex(
 											Main.game.getPlayer().isTaur()
@@ -1384,12 +1374,12 @@ public class ClothingEmporium {
 			}
 			if(Main.game.isAnalContentEnabled() && Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.nyanmumDateCompleted)) {
 				if(!Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.nyanAnalTalk)) {
-					receiveOralResponses.add(new Response("Ask about anal", "Ask Nyan if she'd be comfortable doing anal stuff with you.", ANAL_TALK));
+					receiveOralResponses.add(new Response("Спросить об анальном сексе", "Спросить Nyan, будет ли ей комфортно заниматься анальным сексом с тобой.", ANAL_TALK));
 					
 				} else {
 					receiveOralResponses.add(
-							new ResponseSex("Perform anilingus",
-								"Get the horny cat-girl to present you with her ass and start rimming her.",
+							new ResponseSex("Заняться анилингусом",
+								"Заставить возбужденную кошкодевочку подставить тебе свою задницу и начать её лизать.",
 								true, true,
 								new SMNyanSex(
 										SexPosition.AGAINST_WALL,
@@ -1468,7 +1458,7 @@ public class ClothingEmporium {
 		}
 	};
 	
-	public static final DialogueNode POST_ORAL = new DialogueNode("Finished", "Nyan has had enough for now...", true) {
+	public static final DialogueNode POST_ORAL = new DialogueNode("Завершено", "На сегодня с Nyan хватит...", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			getNyan().cleanAllDirtySlots(true);
@@ -1489,7 +1479,7 @@ public class ClothingEmporium {
 		}
 	};
 	
-	public static final DialogueNode ROMANCE_GIFT = new DialogueNode("Give gift", "", true, true) {
+	public static final DialogueNode ROMANCE_GIFT = new DialogueNode("Дарить подарок", "", true, true) {
 		@Override
 		public String getContent() {
 			return "";
