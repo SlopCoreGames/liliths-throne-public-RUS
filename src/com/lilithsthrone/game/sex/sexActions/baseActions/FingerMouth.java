@@ -131,12 +131,12 @@ public class FingerMouth {
 		
 		@Override
 		public String getActionTitle() {
-			return "Assist blowjob";
+			return "Помогать в минете";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Assist [npc2.namePos] efforts in giving [npc3.name] a blowjob.";
+			return "Помогать усилиям [npc2.namePos], когда тот делает [npc3.name] минет.";
 		}
 
 		@Override
@@ -144,22 +144,19 @@ public class FingerMouth {
 			if(Main.sex.getSexPace(Main.sex.getCharacterPerformingAction())==SexPace.DOM_ROUGH) {
 				return UtilText.returnStringAtRandom(
 								(Main.sex.getCharacterTargetedForSexAction(this).hasHair() && Main.sex.getCharacterTargetedForSexAction(this).getHairRawLengthValue()>HairLength.THREE_SHOULDER_LENGTH.getMaximumValue()
-									?"Reaching up and roughly taking a fistful of [npc2.namePos] [npc2.hair+], [npc.name] [npc.verb(force)] [npc2.her] head down into [npc3.namePos] groin while ordering [npc2.herHim] to choke on [npc3.her] [npc3.cock+]."
+									?"Протянув руку и грубо схватив горсть [npc2.namePos] [npc2.hair+], [npc.name] [npc.verb(force)] [npc2.her] голову вниз, к паху [npc3.namePos], приказывая [npc2.herHim] подавиться [npc3.her] [npc3.cock+]."
 									:""),
-								"Roughly grabbing hold of the sides of [npc2.namePos] head, [npc.name] violently [npc.verb(slam)] [npc2.namePos] head up and down, forcing [npc2.herHim] to [npc2.verb(continue)] sucking [npc3.namePos] [npc3.cock+].",
-								"Snarling a series of lewd, degrading remarks into [npc2.her] [npc2.ear], [npc.name] [npc.verb(slam)] [npc2.namePos] head into [npc3.namePos] crotch,"
-										+ " thereby forcing [npc2.herHim] to take [npc3.her] [npc3.cock+] fully into [npc2.her] mouth.");
+								"Грубо обхватив голову [npc2.namePos] по бокам, [npc.name] неистово [npc.verb(slam)] [npc2.namePos] голову вверх и вниз, заставляя [npc2.herHim] [npc2.verb(continue)] сосать [npc3.namePos] [npc3.cock+].",
+								"Выплевывая серию похотливых, унизительных замечаний прямо в [npc2.her] [npc2.ear], [npc.name] [npc.verb(slam)] [npc2.namePos] голову в пах [npc3.namePos], тем самым заставляя [npc2.herHim] заглотить [npc3.her] [npc3.cock+] целиком в [npc2.her] рот.");
 				
 			} else {
 				return UtilText.returnStringAtRandom(
 								(Main.sex.getCharacterTargetedForSexAction(this).hasHair() && Main.sex.getCharacterTargetedForSexAction(this).getHairRawLengthValue()>HairLength.THREE_SHOULDER_LENGTH.getMaximumValue()
-									?"Reaching up and running [npc.her] [npc.fingers+] through [npc2.namePos] [npc2.hair+],"
-											+ " [npc.name] [npc.verb(gather)] it up and [npc.verb(hold)] "+(Main.sex.getCharacterTargetedForSexAction(this).getHairType().isDefaultPlural(Main.sex.getCharacterTargetedForSexAction(this))?"them":"it")
-											+" out of the way as [npc2.name] [npc2.verb(continue)] to give [npc3.name] a blowjob."
+									?"Протянув руку вверх и проводя [npc.her] [npc.fingers+] по [npc2.namePos] [npc2.hair+], [npc.name] [npc.verb(gather)] её и [npc.verb(hold)] "+(Main.sex.getCharacterTargetedForSexAction(this).getHairType().isDefaultPlural(Main.sex.getCharacterTargetedForSexAction(this))?"их":"это")
+											+" с дороги, пока [npc2.name] [npc2.verb(continue)] делать [npc3.name] минет."
 									:""),
-								"Taking hold of the sides of [npc2.namePos] head, [npc.name] [npc.verb(help)] to lift and push [npc2.her] head up and down, helping [npc2.herHim] to continue sucking on [npc3.namePos] [npc3.cock+].",
-								"Giving [npc2.herHim] some lewd words of encouragement, [npc.name] [npc.verb(help)] to push [npc2.namePos] head into [npc3.namePos] crotch,"
-										+ " thereby ensuring that [npc2.she] [npc2.verb(take)] [npc3.her] [npc3.cock+] fully into [npc2.her] mouth.");
+								"Обхватив голову [npc2.namePos] по бокам, [npc.name] [npc.verb(help)], чтобы поднимать и толкать [npc2.her] голову вверх и вниз, помогая [npc2.herHim] продолжать сосать [npc3.namePos] [npc3.cock+].",
+								"Шепча [npc2.herHim] грязные слова поддержки, [npc.name] [npc.verb(help)], толкая голову [npc2.namePos] в пах [npc3.namePos], чтобы [npc2.she] [npc2.verb(take)] [npc3.her] [npc3.cock+] глубоко в [npc2.her] рот.");
 			}
 		}
 	};

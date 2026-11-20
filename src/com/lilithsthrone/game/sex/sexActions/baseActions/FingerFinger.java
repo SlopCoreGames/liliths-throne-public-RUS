@@ -32,11 +32,11 @@ public class FingerFinger {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Start hand holding";
+			return "Начать удерживать рукой";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Take hold of [npc2.namePos] [npc2.hands].";
+			return "Схватить [npc2.namePos] [npc2.hands].";
 		}
 		@Override
 		public String getDescription() {
@@ -45,24 +45,24 @@ public class FingerFinger {
 			switch(Main.sex.getSexPace(Main.sex.getCharacterPerformingAction())) {
 				case DOM_GENTLE:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"Wanting some more physical contact with [npc2.name], [npc.name] [npc.verb(reach)] out and gently [npc.verb(take)] hold of [npc2.her] [npc2.hands].",
-							"Letting out [npc.a_moan+], [npc.name] [npc.verb(reach)] out and gently [npc.verb(take)] hold of [npc2.namePos] [npc2.hands]."));
+							"Желая еще большего физического контакта с [npc2.name], [npc.name] [npc.verb(reach)] и нежно [npc.verb(take)] [npc2.her] [npc2.hands].",
+							"Выпустив [npc.a_moan+], [npc.name] [npc.verb(reach)] и нежно [npc.verb(take)] [npc2.namePos] [npc2.hands]."));
 					break;
 				case DOM_ROUGH:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"Wanting a greater degree of control over [npc2.namePos] movements, [npc.name] [npc.verb(reach)] out and roughly [npc.verb(grab)] hold of [npc2.her] [npc2.hands].",
-							"Letting out [npc.a_moan+], [npc.name] [npc.verb(reach)] out and roughly [npc.verb(grab)] hold of [npc2.namePos] [npc2.hands]."));
+							"Желая лучше контролировать движения [npc2.namePos], [npc.name] [npc.verb(reach)] и грубо [npc.verb(grab)] [npc2.her] [npc2.hands].",
+							"Выпустив [npc.a_moan+], [npc.name] [npc.verb(reach)] и грубо [npc.verb(grab)] [npc2.namePos] [npc2.hands]."));
 					break;
 				case DOM_NORMAL:
 				case SUB_EAGER:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"Wanting some more physical contact with [npc2.name], [npc.name] [npc.verb(reach)] out and eagerly [npc.verb(take)] hold of [npc2.her] [npc2.hands].",
-							"Letting out [npc.a_moan+], [npc.name] [npc.verb(reach)] out and eagerly [npc.verb(take)] hold of [npc2.namePos] [npc2.hands]."));
+							"Желая еще большего физического контакта с [npc2.name], [npc.name] [npc.verb(reach)] и жадно [npc.verb(take)] [npc2.her] [npc2.hands].",
+							"Выпустив [npc.a_moan+], [npc.name] [npc.verb(reach)] и жадно [npc.verb(take)] [npc2.namePos] [npc2.hands]."));
 					break;
 				case SUB_NORMAL:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"Wanting some more physical contact with [npc2.name], [npc.name] [npc.verb(reach)] out and [npc.verb(take)] hold of [npc2.her] [npc2.hands].",
-							"Letting out [npc.a_moan+], [npc.name] [npc.verb(reach)] out and [npc.verb(take)] hold of [npc2.namePos] [npc2.hands]."));
+							"Желая еще большего физического контакта с [npc2.name], [npc.name] [npc.verb(reach)] и [npc.verb(take)] [npc2.her] [npc2.hands].",
+							"Выпустив [npc.a_moan+], [npc.name] [npc.verb(reach)] и [npc.verb(take)] [npc2.namePos] [npc2.hands]."));
 					break;
 				case SUB_RESISTING:
 					break;
@@ -71,29 +71,29 @@ public class FingerFinger {
 				switch(Main.sex.getSexPace(Main.sex.getCharacterTargetedForSexAction(this))) {
 					case DOM_GENTLE:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" Happily wrapping [npc2.her] [npc2.fingers+] around [npc.namePos] [npc.hand] in return, [npc2.name] [npc2.verb(let)] out a gentle sigh.",
-								" Responding by gently wrapping [npc2.her] [npc2.fingers+] around [npc.namePos] [npc.hand], [npc2.name] happily [npc2.verb(engage)] in [npc.namePos] hand holding."));
+								" Счастливая, в ответ обхватив [npc.namePos] [npc.hand] своими [npc2.her] [npc2.fingers+], [npc2.name] [npc2.verb(let)] нежный вздох.",
+								" В ответ на это [npc2.name] нежно обвивает [npc2.her] [npc2.fingers+] вокруг [npc.namePos] [npc.hand], счастливо [npc2.verb(engage)] в [npc.namePos] руке."));
 						break;
 					case DOM_ROUGH:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" Roughly squeezing [npc2.her] [npc2.fingers+] around [npc.namePos] [npc.hand] in return, [npc2.name] [npc2.verb(let)] out a dominant growl.",
-								" Responding by tightly squeezing [npc2.her] [npc2.fingers+] around [npc.namePos] [npc.hand], [npc2.name] roughly [npc2.verb(engage)] in [npc.namePos] hand holding."));
+								" Грубо сжимая в ответ [npc.namePos] [npc.hand] своими [npc2.her] [npc2.fingers+], [npc2.name] [npc2.verb(let)] доминантный рык.",
+								" В ответ [npc2.name] крепко сжимает [npc2.her] [npc2.fingers+] вокруг [npc.namePos] [npc.hand], что примерно [npc2.verb(engage)] в [npc.namePos] руке."));
 						break;
 					case DOM_NORMAL:
 					case SUB_EAGER:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" Happily wrapping [npc2.her] [npc2.fingers+] around [npc.namePos] [npc.hand] in return, [npc2.name] [npc2.verb(let)] out a happy [npc2.moan].",
-								" Responding by eagerly wrapping [npc2.her] [npc2.fingers+] around [npc.namePos] [npc.hand], [npc2.name] happily [npc2.verb(engage)] in [npc.namePos] hand holding."));
+								" Счастливая, в ответ обхватив [npc.namePos] [npc.hand] своими [npc2.her] [npc2.fingers+], [npc2.name] [npc2.verb(let)] радостный [npc2.moan].",
+								" В ответ на это [npc2.name] с восторгом обхватывает [npc2.her] [npc2.fingers+] вокруг [npc.namePos] [npc.hand], счастливо [npc2.verb(engage)] в [npc.namePos] руке, которая их держит."));
 						break;
 					case SUB_NORMAL:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" Wrapping [npc2.her] [npc2.fingers+] around [npc.namePos] [npc.hand] in return, [npc2.name] [npc2.verb(let)] out [npc2.a_moan+].",
-								" Responding by wrapping [npc2.her] [npc2.fingers+] around [npc.namePos] [npc.hand], [npc2.name] [npc2.verb(engage)] in [npc.namePos] hand holding."));
+								" В ответ обхватив [npc.namePos] [npc.hand] своими [npc2.her] [npc2.fingers+], [npc2.name] [npc2.verb(let)] [npc2.a_moan+].",
+								" В ответ обхватив [npc.namePos] [npc.hand] своими [npc2.her] [npc2.fingers+], [npc2.name] [npc2.verb(engage)] в [npc.namePos] руке."));
 						break;
 					case SUB_RESISTING:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" Desperately trying to pull [npc2.her] [npc2.hand] away from [npc.nameHers], [npc2.name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(beg)] to be released.",
-								" Responding by frantically recoiling from [npc.namePos] unwanted advance, [npc2.name] [npc2.verb(start)] pleading to be left alone, all the while trying to pull [npc2.her] [npc2.hand] away from [npc.nameHers]."));
+								" Отчаянно пытаясь оттянуть [npc2.her] [npc2.hand] от [npc.nameHers], [npc2.name] [npc2.verb(let)] [npc2.a_moan+], пока [npc2.she] [npc2.verb(beg)] на свободу.",
+								" В ответ на это, отчаянно отпрянув от нежелательного напора [npc.namePos], [npc2.name] [npc2.verb(start)], умоляя оставить её в покое и одновременно пытаясь оттянуть [npc2.her] [npc2.hand] от [npc.nameHers]."));
 						break;
 				}
 			}
@@ -107,34 +107,33 @@ public class FingerFinger {
 				case SUB_EAGER:
 				case DOM_NORMAL:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							" [npc2.Name] enthusiastically [npc2.verb(respond)] in kind, and [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(grip)] [npc.namePos] [npc.hand+] in [npc2.her] own.",
-							" [npc2.A_moan+] bursts out from between [npc2.namePos] [npc2.lips+] as [npc2.she] eagerly [npc2.verb(grip)] [npc.namePos] [npc.hand+].",
-							" [npc2.Moaning] in delight, [npc2.name] eagerly [npc2.verb(grip)] [npc.namePos] [npc.hand+]."));
+							" [npc2.Name] с энтузиазмом [npc2.verb(respond)] в ответ, и [npc2.verb(let)] [npc2.a_moan+], пока [npc2.she] [npc2.verb(grip)] [npc.namePos] [npc.hand+] в [npc2.her] руках.",
+							" [npc2.A_moan+] вырывается из между [npc2.namePos] [npc2.lips+], пока [npc2.she] жадно [npc2.verb(grip)] [npc.namePos] [npc.hand+].",
+							" [npc2.Moaning] в восторге, [npc2.name] жадно [npc2.verb(grip)] [npc.namePos] [npc.hand+]."));
 					break;
 				case SUB_RESISTING:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							" Desperately trying, and failing, to pull [npc2.her] [npc2.hand] away from [npc.nameHers], [npc2.name] desperately [npc2.verb(beg)] for [npc.name] to get away from [npc2.herHim].",
-							" [npc2.A_sob+] bursts out from between [npc2.namePos] [npc2.lips] as [npc2.she] weakly [npc2.verb(try)] to pull [npc2.her] [npc2.hand] away from [npc.nameHers].",
-							" [npc2.Sobbing] in distress, and with tears running down [npc2.her] [npc2.face],"
-									+ " [npc2.name] weakly [npc2.verb(struggle)] against [npc.name], pleading and crying for [npc.herHim] to let go of [npc2.her] [npc2.hand]."));
+							" Отчаянно пытаясь, но не в силах оттянуть [npc2.her] [npc2.hand] от [npc.nameHers], [npc2.name] в отчаянии [npc2.verb(beg)], чтобы [npc.name] поскорее выбралась из рук [npc2.herHim].",
+							" [npc2.A_sob+] вырывается из между [npc2.namePos] [npc2.lips], пока [npc2.she] слабо [npc2.verb(try)], пытаясь оттянуть [npc2.her] [npc2.hand] от [npc.nameHers].",
+							" [npc2.Sobbing] в смятении, со слезами, текущими по [npc2.her] [npc2.face], [npc2.name] слабо [npc2.verb(struggle)] против [npc.name], умоляя и плача, чтобы [npc.herHim] отпустил [npc2.her] [npc2.hand]."));
 					break;
 				case SUB_NORMAL:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							" [npc2.Name] [npc2.verb(respond)] in kind, and [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(grip)] [npc.namePos] [npc.hand+] in [npc2.her] own.",
-							" [npc2.A_moan+] bursts out from between [npc2.namePos] [npc2.lips+] as [npc2.she] [npc2.verb(grip)] [npc.namePos] [npc.hand+].",
-							" Letting out [npc2.a_moan], [npc2.name] [npc2.verb(respond)] by gripping [npc.namePos] [npc.hand+]."));
+							" [npc2.Name] [npc2.verb(respond)] в ответ, и [npc2.verb(let)] [npc2.a_moan+], пока [npc2.she] [npc2.verb(grip)] [npc.namePos] [npc.hand+] в [npc2.her] руках.",
+							" [npc2.A_moan+] вырывается из между [npc2.namePos] [npc2.lips+], пока [npc2.she] [npc2.verb(grip)] [npc.namePos] [npc.hand+].",
+							" Издавая [npc2.a_moan], [npc2.name] [npc2.verb(respond)], сжимая [npc.namePos] [npc.hand+]."));
 					break;
 				case DOM_GENTLE:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							" [npc2.Name] happily [npc2.verb(respond)] in kind, and [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] softly [npc2.verb(hold)] [npc.namePos] [npc.hand+] in [npc2.her] own.",
-							" [npc2.A_moan+] drifts out from between [npc2.namePos] [npc2.lips+] as [npc2.she] gently [npc2.verb(hold)] [npc.namePos] [npc.hand+].",
-							" Letting out [npc2.a_moan], [npc2.name] [npc2.verb(respond)] by gently squeezing [npc.namePos] [npc.hand+]."));
+							" [npc2.Name] с удовольствием [npc2.verb(respond)] в ответ, и [npc2.verb(let)] наружу [npc2.a_moan+], пока [npc2.she] мягко [npc2.verb(hold)] [npc.namePos] [npc.hand+] в [npc2.her] руках.",
+							" [npc2.A_moan+] медленно вытекает из между [npc2.namePos] [npc2.lips+], пока [npc2.she] нежно [npc2.verb(hold)] [npc.namePos] [npc.hand+].",
+							" Издавая [npc2.a_moan], [npc2.name] [npc2.verb(respond)], мягко сжимая [npc.namePos] [npc.hand+]."));
 					break;
 				case DOM_ROUGH:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							" [npc2.Name] forcefully [npc2.verb(respond)] in kind, and [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] roughly [npc2.verb(squeeze)] [npc.namePos] [npc.hand+] in [npc2.her] own.",
-							" [npc2.A_moan+] bursts out from between [npc2.namePos] [npc2.lips+] as [npc2.she] roughly [npc2.verb(squeeze)] [npc.namePos] [npc.hand+].",
-							" Letting out [npc2.a_moan], [npc2.name] [npc2.verb(respond)] by forcefully squeezing [npc.namePos] [npc.hand+]."));
+							" [npc2.Name] властно [npc2.verb(respond)] в ответ, и [npc2.verb(let)] наружу [npc2.a_moan+], пока [npc2.she] грубо [npc2.verb(squeeze)] [npc.namePos] [npc.hand+] в [npc2.her] руках.",
+							" [npc2.A_moan+] вырывается из между [npc2.namePos] [npc2.lips+], пока [npc2.she] грубо [npc2.verb(squeeze)] [npc.namePos] [npc.hand+].",
+							" Издавая [npc2.a_moan], [npc2.name] [npc2.verb(respond)], с силой сжимая [npc.namePos] [npc.hand+]."));
 					break;
 			}
 		}
@@ -152,12 +151,12 @@ public class FingerFinger {
 		
 		@Override
 		public String getActionTitle() {
-			return "Gentle hand holding";
+			return "Нежное удерживание рукой";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Gently hold [npc2.namePos] [npc2.hand+] in your own.";
+			return "Нежно возьми [npc2.namePos] [npc2.hand+] в свои руки.";
 		}
 
 		@Override
@@ -165,9 +164,9 @@ public class FingerFinger {
 			UtilText.nodeContentSB.setLength(0);
 			
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"Letting out a little [npc.moan], [npc.name] gently [npc.verb(squeeze)] [npc2.namePos] [npc2.hand+].",
-					"[npc.Name] [npc.verb(let)] out a series of soft sighs as [npc.she] gently [npc.verb(wrap)] [npc.her] [npc.fingers+] around [npc2.namePos] [npc2.hand+].",
-					"Gently wrapping [npc.her] [npc.fingers+] around [npc2.namePos] [npc2.hand+], [npc.name] [npc.verb(let)] out a little [npc.moan]."));
+					"Издавая легкий [npc.moan], [npc.name] нежно [npc.verb(squeeze)] [npc2.namePos] [npc2.hand+].",
+					"[npc.Name] [npc.verb(let)] серию тихих вздохов, пока [npc.she] мягко [npc.verb(wrap)] [npc.her] [npc.fingers+] вокруг [npc2.namePos] [npc2.hand+].",
+					"Мягко обхватывая [npc.her] [npc.fingers+] вокруг [npc2.namePos] [npc2.hand+], [npc.name] [npc.verb(let)] легкий [npc.moan]."));
 
 			UtilText.nodeContentSB.append(getTargetedCharacterResponse(this));
 					
@@ -186,12 +185,12 @@ public class FingerFinger {
 		
 		@Override
 		public String getActionTitle() {
-			return "Hand holding";
+			return "Нежное удержание рукой";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Eagerly hold [npc2.namePos] [npc2.hand+] in your own.";
+			return "С жадностью возьми [npc2.namePos] [npc2.hand+] в свою руку.";
 		}
 
 		@Override
@@ -199,9 +198,9 @@ public class FingerFinger {
 			UtilText.nodeContentSB.setLength(0);
 
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"Letting out [npc.a_moan+], [npc.name] happily [npc.verb(squeeze)] [npc2.namePos] [npc2.hand+].",
-					"[npc.Name] [npc.verb(let)] out a series of [npc.moans+] as [npc.she] eagerly [npc.verb(wrap)] [npc.her] [npc.fingers+] around [npc2.namePos] [npc2.hand+].",
-					"Eagerly wrapping [npc.her] [npc.fingers+] around [npc2.namePos] [npc2.hand+], [npc.name] [npc.verb(let)] out a [npc.moan+]."));
+					"Издавая [npc.a_moan+], [npc.name] счастливо [npc.verb(squeeze)] [npc2.namePos] [npc2.hand+].",
+					"[npc.Name] [npc.verb(let)] серию [npc.moans+], пока [npc.she] с нетерпением [npc.verb(wrap)] [npc.her] [npc.fingers+] вокруг [npc2.namePos] [npc2.hand+].",
+					"С жадностью обхватывая [npc.her] [npc.fingers+] вокруг [npc2.namePos] [npc2.hand+], [npc.name] [npc.verb(let)] [npc.moan+]."));
 
 			UtilText.nodeContentSB.append(getTargetedCharacterResponse(this));
 			
@@ -220,12 +219,12 @@ public class FingerFinger {
 
 		@Override
 		public String getActionTitle() {
-			return "Rough hand holding";
+			return "Грубое удержание рукой";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Roughly grasp [npc2.namePos] [npc2.hand+] in your own.";
+			return "Грубо схвати [npc2.namePos] [npc2.hand+] в свою руку.";
 		}
 		
 		@Override
@@ -233,9 +232,9 @@ public class FingerFinger {
 			UtilText.nodeContentSB.setLength(0);
 
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"Letting out [npc.a_moan+], [npc.name] forcefully [npc.verb(squeeze)] [npc2.namePos] [npc2.hand+].",
-					"[npc.Name] [npc.verb(let)] out a series of [npc.moans+] as [npc.she] roughly [npc.verb(clench)] [npc.her] [npc.fingers+] around [npc2.namePos] [npc2.hand+].",
-					"Roughly wrapping [npc.her] [npc.fingers+] around [npc2.namePos] [npc2.hand+], [npc.name] [npc.verb(let)] out a [npc.moan+]."));
+					"Издавая [npc.a_moan+], [npc.name] с силой [npc.verb(squeeze)] [npc2.namePos] [npc2.hand+].",
+					"[npc.Name] [npc.verb(let)] серию [npc.moans+], пока [npc.she] грубо [npc.verb(clench)] [npc.her] [npc.fingers+] вокруг [npc2.namePos] [npc2.hand+].",
+					"Грубо обхватив [npc.her] [npc.fingers+] вокруг [npc2.namePos] [npc2.hand+], [npc.name] [npc.verb(let)] [npc.moan+]."));
 			
 			UtilText.nodeContentSB.append(getTargetedCharacterResponse(this));
 			
@@ -254,12 +253,12 @@ public class FingerFinger {
 		
 		@Override
 		public String getActionTitle() {
-			return "Hand holding";
+			return "Нежное удержание рукой";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Hold [npc2.namePos] [npc2.hand+] in your own.";
+			return "Удерживать [npc2.namePos] [npc2.hand+] в своих.";
 		}
 
 		@Override
@@ -267,9 +266,9 @@ public class FingerFinger {
 			UtilText.nodeContentSB.setLength(0);
 
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"Letting out [npc.a_moan+], [npc.name] [npc.verb(squeeze)] [npc2.namePos] [npc2.hand+].",
-					"[npc.Name] [npc.verb(let)] out a series of [npc.moans+] as [npc.she] [npc.verb(wrap)] [npc.her] [npc.fingers+] around [npc2.namePos] [npc2.hand+].",
-					"Wrapping [npc.her] [npc.fingers+] around [npc2.namePos] [npc2.hand+], [npc.name] [npc.verb(let)] out a [npc.moan+]."));
+					"Издавая [npc.a_moan+], [npc.name] [npc.verb(squeeze)] [npc2.namePos] [npc2.hand+].",
+					"[npc.Name] [npc.verb(let)] серию [npc.moans+], пока [npc.she] [npc.verb(wrap)] [npc.her] [npc.fingers+] вокруг [npc2.namePos] [npc2.hand+].",
+					"Обхватив [npc.her] [npc.fingers+] вокруг [npc2.namePos] [npc2.hand+], [npc.name] [npc.verb(let)] [npc.moan+]."));
 
 			UtilText.nodeContentSB.append(getTargetedCharacterResponse(this));
 			
@@ -288,12 +287,12 @@ public class FingerFinger {
 		
 		@Override
 		public String getActionTitle() {
-			return "Eager hand holding";
+			return "Жадно сжимающая рука";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Eagerly hold [npc2.namePos] [npc2.hand+] in your own.";
+			return "С жадностью возьми [npc2.namePos] [npc2.hand+] в свою руку.";
 		}
 
 		@Override
@@ -301,9 +300,9 @@ public class FingerFinger {
 			UtilText.nodeContentSB.setLength(0);
 
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"Letting out [npc.a_moan+], [npc.name] happily [npc.verb(squeeze)] [npc2.namePos] [npc2.hand+].",
-					"[npc.Name] [npc.verb(let)] out a series of [npc.moans+] as [npc.she] eagerly [npc.verb(wrap)] [npc.her] [npc.fingers+] around [npc2.namePos] [npc2.hand+].",
-					"Eagerly wrapping [npc.her] [npc.fingers+] around [npc2.namePos] [npc2.hand+], [npc.name] [npc.verb(let)] out a [npc.moan+]."));
+					"Издавая [npc.a_moan+], [npc.name] счастливо [npc.verb(squeeze)] [npc2.namePos] [npc2.hand+].",
+					"[npc.Name] [npc.verb(let)] серию [npc.moans+], пока [npc.she] с нетерпением [npc.verb(wrap)] [npc.her] [npc.fingers+] вокруг [npc2.namePos] [npc2.hand+].",
+					"С жадностью обхватывая [npc.her] [npc.fingers+] вокруг [npc2.namePos] [npc2.hand+], [npc.name] [npc.verb(let)] [npc.moan+]."));
 
 			UtilText.nodeContentSB.append(getTargetedCharacterResponse(this));
 			
@@ -323,12 +322,12 @@ public class FingerFinger {
 		
 		@Override
 		public String getActionTitle() {
-			return "Resist hand holding";
+			return "Сопротивляющаяся рука";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Try to pull your [npc.hand] away from [npc2.nameHers].";
+			return "Попытаться оттянуть свой [npc.hand] от [npc2.nameHers].";
 		}
 
 		@Override
@@ -338,15 +337,15 @@ public class FingerFinger {
 			switch(Main.sex.getSexPace(Main.sex.getCharacterTargetedForSexAction(this))) {
 				case DOM_ROUGH:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"[npc.Name] [npc.verb(try)] to pull [npc.her] [npc.hand] away from [npc2.nameHers], but [npc.she] [npc.verb(fail)] to escape from [npc2.her] rough grip.",
-							"With [npc.a_sob+], [npc.name] [npc.verb(try)] to pull [npc.her] [npc.hand] away from [npc2.nameHers], but [npc.she] [npc.do]n't manage to escape from [npc2.her] rough grip.",
-							"Tears start to well up in [npc.namePos] [npc.eyes] as [npc.she] [npc.verb(fail)] to pull [npc.her] [npc.hand] away from [npc2.nameHers]."));
+							"[npc.Name] [npc.verb(try)] попытаться оттянуть [npc.her] [npc.hand] от [npc2.nameHers], но [npc.she] [npc.verb(fail)] вырваться из [npc2.her] грубой хватки.",
+							"С [npc.a_sob+], [npc.name] [npc.verb(try)] попытаться оттянуть [npc.her] [npc.hand] от [npc2.nameHers], но [npc.she] [npc.do] не удается вырваться из [npc2.her] грубой хватки.",
+							"На глазах у [npc.namePos] [npc.eyes] начинают наворачиваться слезы, пока [npc.she] [npc.verb(fail)] попытаться оттянуть [npc.her] [npc.hand] от [npc2.nameHers]."));
 					break;
 				default: 
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"[npc.Name] [npc.verb(try)] to pull [npc.her] [npc.hand] away from [npc2.nameHers], but [npc.she] [npc.verb(fail)] to escape from [npc2.her] grip.",
-							"With [npc.a_sob+], [npc.name] [npc.verb(try)] to pull [npc.her] [npc.hand] away from [npc2.nameHers], but [npc.she] [npc.do]n't manage to escape from [npc2.her] grip.",
-							"Tears start to well up in [npc.namePos] [npc.eyes] as [npc.she] [npc.verb(fail)] to pull [npc.her] [npc.hand] away from [npc2.nameHers]."));
+							"[npc.Name] [npc.verb(try)] попытаться оттянуть [npc.her] [npc.hand] от [npc2.nameHers], но [npc.she] [npc.verb(fail)] вырваться из [npc2.her] хватки.",
+							"С [npc.a_sob+], [npc.name] [npc.verb(try)] попытаться оттянуть [npc.her] [npc.hand] от [npc2.nameHers], но [npc.she] [npc.do] не удается вырваться из [npc2.her] хватки.",
+							"На глазах у [npc.namePos] [npc.eyes] начинают наворачиваться слезы, пока [npc.she] [npc.verb(fail)] попытаться оттянуть [npc.her] [npc.hand] от [npc2.nameHers]."));
 					break;
 			}
 			
@@ -365,12 +364,12 @@ public class FingerFinger {
 		
 		@Override
 		public String getActionTitle() {
-			return "Stop hand holding";
+			return "Перестать держать рукой";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Pull your [npc.hand+] away from [npc2.nameHers].";
+			return "Оттянуть свой [npc.hand+] от [npc2.nameHers].";
 		}
 
 		@Override
@@ -380,26 +379,26 @@ public class FingerFinger {
 			switch(Main.sex.getSexPace(Main.sex.getCharacterPerformingAction())) {
 				case DOM_ROUGH:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"With one last rough squeeze, [npc.name] [npc.verb(release)] [npc.her] grip on [npc2.namePos] [npc2.hand+], putting an end to the hand holding.",
-							"Roughly squeezing [npc.her] [npc.fingers+] around [npc2.namePos] [npc2.hand] one last time, [npc.name] then [npc.verb(release)] [npc.her] grip, putting an end to the rough hand holding."));
+							"С последним грубым сжатием, [npc.name] [npc.verb(release)] [npc.her] хватку на [npc2.namePos] [npc2.hand+], кладя конец этому удержанию рукой.",
+							"Грубо сжав [npc.her] [npc.fingers+] вокруг [npc2.namePos] [npc2.hand] в последний раз, [npc.name] затем [npc.verb(release)] [npc.her] хватку, кладя конец этому грубому удержанию рукой."));
 					break;
 				default:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"With one last squeeze, [npc.name] [npc.verb(release)] [npc.her] grip on [npc2.namePos] [npc2.hand+], putting an end to the hand holding.",
-							"Squeezing [npc.her] [npc.fingers+] around [npc2.namePos] [npc2.hand] one last time, [npc.name] then [npc.verb(release)] [npc.her] grip, putting an end to the hand holding."));
+							"С последним сжатием, [npc.name] [npc.verb(release)] [npc.her] хватка на [npc2.namePos] [npc2.hand+], кладя конец ручному ласканию.",
+							"В последний раз сжав [npc.her] [npc.fingers+] вокруг [npc2.namePos] [npc2.hand], [npc.name] затем [npc.verb(release)] [npc.her] хватка, кладя конец ручному ласканию."));
 					break;
 			}
 			
 			switch(Main.sex.getSexPace(Main.sex.getCharacterTargetedForSexAction(this))) {
 				case SUB_RESISTING:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							" Although happy to have [npc2.her] [npc2.hand] released, [npc2.name] [npc2.verb(continue)] crying and weakly struggling against [npc.name] as [npc2.she] [npc2.verb(plead)] for [npc.herHim] to leave [npc2.herHim] alone.",
-							" With [npc2.a_sob+], [npc2.name] [npc2.verb(continue)] to struggle and protest, tears streaming down [npc2.her] [npc2.face] as [npc2.she] [npc2.verb(pull)] away from [npc.name]."));
+							" Хотя и радуясь тому, что [npc2.her] [npc2.hand] освободились, [npc2.name] [npc2.verb(continue)] плачет и слабо сопротивляется [npc.name], пока [npc2.she] [npc2.verb(plead)], чтобы [npc.herHim] оставил(а) [npc2.herHim] в покое.",
+							" С [npc2.a_sob+], [npc2.name] [npc2.verb(continue)] в попытках сопротивляться и протестовать, слезы текут по [npc2.her] [npc2.face], пока [npc2.she] [npc2.verb(pull)] от [npc.name]."));
 					break;
 				default:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							" [npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc.name] [npc.verb(pull)] [npc.her] [npc.hand] back, signalling [npc2.her] desire for more attention.",
-							" [npc2.A_moan+] escapes from between [npc2.namePos] [npc2.lips+], betraying [npc2.her] desperate desire for more of [npc.namePos] attention."));
+							" [npc2.Name] [npc2.verb(let)] [npc2.a_moan+], пока [npc.name] [npc.verb(pull)] [npc.her] [npc.hand] назад, сигнализируя о [npc2.her] желании получить еще больше внимания.",
+							" [npc2.A_moan+] вырывается между [npc2.namePos] [npc2.lips+], выдавая отчаянное желание [npc2.her] получить еще больше внимания от [npc.namePos]."));
 					break;
 			}
 			

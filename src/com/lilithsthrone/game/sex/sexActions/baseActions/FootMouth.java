@@ -33,11 +33,11 @@ public class FootMouth {
 			SexParticipantType.NORMAL) {
 		@Override
 		public String getActionTitle() {
-			return "Worship [npc2.feet(true)]";
+			return "Поклоняться [npc2.feet(true)]";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Press your [npc.lips] against [npc2.namePos] [npc2.feet] and start kissing and licking them.";
+			return "Прижать свой [npc.lips] к [npc2.namePos] [npc2.feet] и начать целовать и лизать их.";
 		}
 		@Override
 		public String getDescription() {
@@ -48,42 +48,40 @@ public class FootMouth {
 				if(Main.sex.getCharacterTargetedForSexAction(this).getLegType().getFootType().equals(FootType.HOOFS)) {
 					foundFootType = true;
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"[npc.Eagerly(bringing)] [npc.her] head down to [npc2.namePos] hard hoofs, [npc.name] [npc.verb(press)] [npc.her] [npc.lips+] against them and [npc.verb(start)] passionately kissing and licking them.",
-							"[npc.Name] [npc.verb(drop)] [npc.her] head down to [npc2.namePos] [npc2.feet], before eagerly pressing [npc.her] [npc.lips+] against [npc2.namePos] hard hoofs and starting to [npc.gently] kiss and lick them."));
+							"[npc.Eagerly(bringing)] [npc.her] склоняет голову к твердым копытам [npc2.namePos], [npc.name] [npc.verb(press)] [npc.her] [npc.lips+] к ним и [npc.verb(start)] страстно целует и лижет их.",
+							"[npc.Name] [npc.verb(drop)] [npc.her] склоняет голову к [npc2.namePos] [npc2.feet], прежде чем жадно прижать [npc.her] [npc.lips+] к [npc2.namePos] твердым копытам и начать [npc.gently] целовать и лизать их."));
 					
 				} else if(Main.sex.getCharacterTargetedForSexAction(this).getLegType().getFootType().equals(FootType.TALONS)) {
 					foundFootType = true;
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"[npc.Eagerly(bringing)] [npc.her] head down to [npc2.namePos] bird-like feet, [npc.name] [npc.verb(press)] [npc.her] [npc.lips+] against [npc2.her] talons and [npc.verb(start)] passionately kissing and licking them.",
-							"[npc.Name] [npc.verb(drop)] [npc.her] head down to [npc2.namePos] bird-like feet, before eagerly pressing [npc.her] [npc.lips+] against [npc2.namePos] talons and starting to [npc.gently] kiss and lick them."));
+							"[npc.Eagerly(bringing)] [npc.her] склоняет голову к птичьим лапам [npc2.namePos], [npc.name] [npc.verb(press)] [npc.her] [npc.lips+] к [npc2.her] когтям и [npc.verb(start)] страстно целует и лижет их.",
+							"[npc.Name] [npc.verb(drop)] [npc.her] склоняет голову к птичьим лапам [npc2.namePos], прежде чем жадно прижать [npc.her] [npc.lips+] к [npc2.namePos] когтям и начать [npc.gently] целовать и лизать их."));
 					
 				} else if(Main.sex.getCharacterTargetedForSexAction(this).getLegType().getFootType().equals(FootType.TENTACLE)) {
 					foundFootType = true;
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"[npc.Eagerly(bringing)] [npc.her] head down to [npc2.namePos] tentacles, [npc.name] [npc.verb(press)] [npc.her] [npc.lips+] against them and [npc.verb(start)] passionately kissing and licking them.",
-							"[npc.Name] [npc.verb(drop)] [npc.her] head down to [npc2.namePos] tentacles, before eagerly pressing [npc.her] [npc.lips+] against them and starting to [npc.gently] kiss and lick them."));
+							"[npc.Eagerly(bringing)] [npc.her] склоняет голову к щупальцам [npc2.namePos], [npc.name] [npc.verb(press)] [npc.her] [npc.lips+] к ним и [npc.verb(start)] страстно целует и лижет их.",
+							"[npc.Name] [npc.verb(drop)] [npc.her] склоняет голову к щупальцам [npc2.namePos], прежде чем жадно прижать [npc.her] [npc.lips+] к ним и начать [npc.gently] целовать и лизать их."));
 					
 				}
 			}
 			if(!foundFootType) {
 				UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-						"[npc.Eagerly(bringing)] [npc.her] head down to [npc2.namePos] [npc2.feet+], [npc.name] [npc.verb(press)] [npc.her] [npc.lips+] against them and [npc.verb(start)] passionately kissing and licking them.",
-						"[npc.Name] [npc.verb(drop)] [npc.her] head down to [npc2.namePos] [npc2.feet+], before eagerly pressing [npc.her] [npc.lips+] against them and starting to [npc.gently] kiss and lick them."));
+						"[npc.Eagerly(bringing)] [npc.her] наклоняет голову к [npc2.namePos] [npc2.feet+], [npc.name] [npc.verb(press)] [npc.her] [npc.lips+] против них и [npc.verb(start)] страстно целует и лижет их.",
+						"[npc.Name] [npc.verb(drop)] [npc.her] голову к [npc2.namePos] [npc2.feet+], прежде чем жадно прижать [npc.her] [npc.lips+] к ним и начать страстно [npc.gently] целовать и облизывать их."));
 			}
 
 			if(!isTargetedCharacterInanimate()) {
 				switch(Main.sex.getSexPace(Main.sex.getCharacterTargetedForSexAction(this))) {
 					case SUB_RESISTING:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							" [npc2.Name] [npc2.verb(let)] out [npc2.a_sob+] as [npc.name] [npc.do] this, and with tears running down [npc2.her] [npc2.face], [npc2.she] desperately [npc2.verb(beg)] for [npc.herHim] to stop.",
-							" With [npc2.a_sob+], [npc2.name] [npc2.verb(try)] to pull away from [npc.name], but, being unable to do so, all [npc2.she] can do is sob as [npc.name] [npc.verb(continue)] worshipping [npc2.her] [npc2.feet]."));
+							" [npc2.Name] [npc2.verb(let)] [npc2.a_sob+], пока [npc.name] [npc.do] это, и со слезами, текущими по [npc2.her] [npc2.face], [npc2.she] отчаянно [npc2.verb(beg)], чтобы [npc.herHim] прекратил(а).",
+							" С [npc2.a_sob+], [npc2.name] [npc2.verb(try)] отстраниться от [npc.name], но, не в силах этого сделать, всё, что может делать [npc2.she] — это всхлипывать, пока [npc.name] [npc.verb(continue)] поклоняется [npc2.her] [npc2.feet]."));
 						break;
 					default:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							" [npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc.name] [npc.verb(start)] worshipping [npc2.her] [npc2.feet],"
-									+ " before [npc2.eagerly] pushing them into [npc.her] [npc.face] in order to encourage [npc.herHim] to keep on going.",
-							" In response to this, [npc2.name] [npc2.verb(start)] [npc2.eagerly] pushing [npc2.her] [npc2.feet] into [npc.namePos] [npc.face],"
-									+ " letting out [npc2.a_moan+] as [npc2.she] [npc2.verb(focus)] on the delightful feeling of having [npc2.her] [npc2.feet(true)] worshipped."));
+							" [npc2.Name] [npc2.verb(let)] [npc2.a_moan+], пока [npc.name] [npc.verb(start)] поклоняется [npc2.her] [npc2.feet], прежде чем [npc2.eagerly] подтолкнет их к [npc.her] [npc.face], чтобы побудить [npc.herHim] продолжать.",
+							" В ответ на это [npc2.name] [npc2.verb(start)] [npc2.eagerly], толкая [npc2.her] [npc2.feet] в [npc.namePos] [npc.face], издавая [npc2.a_moan+], пока [npc2.she] [npc2.verb(focus)] от восхитительного чувства того, что [npc2.her] [npc2.feet(true)] боготворят."));
 						break;
 				}
 			}
@@ -100,16 +98,15 @@ public class FootMouth {
 				case SUB_NORMAL:
 				case DOM_GENTLE:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							" [npc2.Name] [npc2.verb(start)] [npc2.eagerly] sliding [npc2.her] [npc2.feet+] up and down over [npc.namePos] [npc.face] in response,"
-									+ " letting out [npc2.a_moan+] as [npc2.she] [npc2.verb(get)] [npc.herHim] to worship [npc2.her] [npc2.feet(true)].",
-							" [npc2.A_moan+] bursts out from between [npc2.namePos] [npc2.lips+] as [npc2.she] [npc2.eagerly] [npc2.verb(slide)] [npc2.her] [npc2.feet+] up and down over [npc.namePos] [npc.face+].",
-							" [npc2.Moaning] in delight, [npc2.name] [npc2.eagerly] [npc2.verb(push)] [npc2.her] [npc2.feet+] against [npc.namePos] mouth as [npc2.she] [npc2.has] them worshipped."));
+							" [npc2.Name] [npc2.verb(start)] [npc2.eagerly] скользящие [npc2.her] [npc2.feet+] вверх и вниз по [npc.namePos] [npc.face] в ответ, издавая [npc2.a_moan+], пока [npc2.she] [npc2.verb(get)] [npc.herHim], чтобы поклоняться [npc2.her] [npc2.feet(true)].",
+							" [npc2.A_moan+] вырывается из между [npc2.namePos] [npc2.lips+], пока [npc2.she] [npc2.eagerly] [npc2.verb(slide)] [npc2.her] [npc2.feet+] вверх и вниз по [npc.namePos] [npc.face+].",
+							" [npc2.Moaning] в восторге, [npc2.name] [npc2.eagerly] [npc2.verb(push)] [npc2.her] [npc2.feet+] о [npc.namePos] рот, пока [npc2.she] [npc2.has] их боготворят."));
 					break;
 				case SUB_RESISTING:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							" Desperately trying, and failing, to pull away from [npc.name], [npc2.name] [npc2.verb(let)] out [npc2.a_sob+] and weakly [npc2.verb(beg)] for [npc.herHim] to stop worshipping [npc2.her] [npc2.feet(true)].",
-							" [npc2.A_sob+] bursts out from between [npc2.namePos] [npc2.lips] as [npc2.she] weakly [npc2.verb(try)] to push [npc.namePos] [npc.face] away from [npc2.her] [npc2.feet].",
-							" [npc2.Sobbing] in distress, and with tears running down [npc2.her] [npc2.face], [npc2.name] weakly [npc2.verb(try)] to pull [npc2.her] [npc2.feet] away from [npc.namePos] [npc.face]."));
+							" Отчаянно пытаясь, но не в силах отстраниться от [npc.name], [npc2.name] [npc2.verb(let)] [npc2.a_sob+] и слабо [npc2.verb(beg)], чтобы [npc.herHim] прекратил(а) поклоняться [npc2.her] [npc2.feet(true)].",
+							" [npc2.A_sob+] вырывается из между [npc2.namePos] [npc2.lips], пока [npc2.she] слабо [npc2.verb(try)], чтобы оттолкнуть [npc.namePos] [npc.face] от [npc2.her] [npc2.feet].",
+							" [npc2.Sobbing] в смятении, и со слезами, текущими по [npc2.her] [npc2.face], [npc2.name] слабо [npc2.verb(try)], чтобы оттянуть [npc2.her] [npc2.feet] от [npc.namePos] [npc.face]."));
 					break;
 				case DOM_ROUGH:
 					boolean foundFootType = false;
@@ -117,31 +114,24 @@ public class FootMouth {
 						if(Main.sex.getCharacterTargetedForSexAction(action).getLegType().getFootType().equals(FootType.HOOFS)) {
 							foundFootType = true;
 							UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-									" [npc2.Name] [npc2.verb(start)] [npc2.roughly] grinding [npc2.her] [npc2.feet+] up and down over [npc.namePos] [npc.face] in response,"
-											+ " not caring about the fact that using [npc2.her] hard hoofs in such a violent manner is extremely uncomfortable for [npc.herHim].",
-									" [npc2.A_moan+] bursts out from between [npc2.namePos] [npc2.lips+] as [npc2.she] [npc2.roughly] [npc2.verb(rub)] [npc2.her] hard hoofs up and down over [npc.namePos] [npc.face+],"
-											+ " not caring in the least about how uncomfortable it must be for [npc.herHim].",
-									" [npc2.Moaning] in delight, [npc2.name] [npc2.eagerly] [npc2.verb(push)] [npc2.her] hard hoofs against [npc.namePos] mouth,"
-											+ " laughing derisively at [npc.herHim] as [npc2.she] [npc2.has] [npc2.her] [npc2.feet] worshipped."));
+									" [npc2.Name] [npc2.verb(start)] [npc2.roughly] с яростным трением [npc2.her] [npc2.feet+] вверх и вниз по [npc.namePos] [npc.face] в ответ, совершенно не заботясь о том, что использование [npc2.her] твердых копыт в столь грубой манере доставляет [npc.herHim] крайний дискомфорт.",
+									" [npc2.A_moan+] вырывается из между [npc2.namePos] [npc2.lips+], пока [npc2.she] [npc2.roughly] [npc2.verb(rub)] [npc2.her] твердыми копытами вверх и вниз по [npc.namePos] [npc.face+], ни капли не заботясь о том, насколько неудобно это должно быть для [npc.herHim].",
+									" [npc2.Moaning] в восторге, [npc2.name] [npc2.eagerly] [npc2.verb(push)] [npc2.her] твердыми копытами о [npc.namePos] рот, насмешливо хохоча над [npc.herHim], пока [npc2.she] [npc2.has] [npc2.her] [npc2.feet] обожаемый."));
 							
 						} else if(Main.sex.getCharacterTargetedForSexAction(action).getLegType().getFootType().equals(FootType.TALONS)) {
 							foundFootType = true;
 							UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-									" [npc2.Name] [npc2.verb(start)] [npc2.roughly] grinding [npc2.her] [npc2.feet+] up and down over [npc.namePos] [npc.face] in response,"
-											+ " not caring about the fact that [npc2.her] sharp talons keep on coming dangerously close to cutting [npc.herHim].",
-									" [npc2.A_moan+] bursts out from between [npc2.namePos] [npc2.lips+] as [npc2.she] [npc2.roughly] [npc2.verb(rub)] [npc2.her] bird-like claws up and down over [npc.namePos] [npc.face+],"
-											+ " not caring in the least about how close [npc2.her] sharp talons come to cutting [npc.herHim].",
-									" [npc2.Moaning] in delight, [npc2.name] [npc2.eagerly] [npc2.verb(push)] [npc2.her] clawed, bird-like feet against [npc.namePos] mouth,"
-											+ " laughing derisively at [npc.herHim] as [npc2.she] [npc2.verb(draw)] dangerously close to cutting [npc.herHim] with [npc2.her] sharp talons."));
+									" [npc2.Name] [npc2.verb(start)] [npc2.roughly] с яростным трением [npc2.her] [npc2.feet+] вверх и вниз по [npc.namePos] [npc.face] в ответ, не обращая внимания на то, что [npc2.her] острые когти то и дело опасно подбираются к тому, чтобы полоснуть [npc.herHim].",
+									" [npc2.A_moan+] вырывается из между [npc2.namePos] [npc2.lips+], пока [npc2.she] [npc2.roughly] [npc2.verb(rub)] [npc2.her] птичьими когтями вверх и вниз по [npc.namePos] [npc.face+], ни капли не заботясь о том, насколько близко [npc2.her] острые когти подходят к тому, чтобы располосовать [npc.herHim].",
+									" [npc2.Moaning] в восторге, [npc2.name] [npc2.eagerly] [npc2.verb(push)] [npc2.her] скребла птичьими лапками по рту [npc.namePos], насмешливо хохоча над [npc.herHim], пока [npc2.she] [npc2.verb(draw)] опасно близко к тому, чтобы полоснуть [npc.herHim] своими [npc2.her] острыми когтями."));
 							
 						}
 					}
 					if(!foundFootType) {
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" [npc2.Name] [npc2.verb(start)] [npc2.eagerly] sliding [npc2.her] [npc2.feet+] up and down over [npc.namePos] [npc.face] in response,"
-										+ " letting out [npc2.a_moan+] as [npc2.she] [npc2.verb(get)] [npc.herHim] to worship [npc2.her] [npc2.feet(true)].",
-								" [npc2.A_moan+] bursts out from between [npc2.namePos] [npc2.lips+] as [npc2.she] [npc2.eagerly] [npc2.verb(slide)] [npc2.her] [npc2.feet+] up and down over [npc.namePos] [npc.face+].",
-								" [npc2.Moaning] in delight, [npc2.name] [npc2.eagerly] [npc2.verb(push)] [npc2.her] [npc2.feet+] against [npc.namePos] mouth as [npc2.she] [npc2.has] them worshipped."));
+								" [npc2.Name] [npc2.verb(start)] [npc2.eagerly] скользящие [npc2.her] [npc2.feet+] вверх и вниз по [npc.namePos] [npc.face] в ответ, издавая [npc2.a_moan+], пока [npc2.she] [npc2.verb(get)] [npc.herHim], чтобы поклоняться [npc2.her] [npc2.feet(true)].",
+								" [npc2.A_moan+] вырывается из между [npc2.namePos] [npc2.lips+], пока [npc2.she] [npc2.eagerly] [npc2.verb(slide)] [npc2.her] [npc2.feet+] вверх и вниз по [npc.namePos] [npc.face+].",
+								" [npc2.Moaning] в восторге, [npc2.name] [npc2.eagerly] [npc2.verb(push)] [npc2.her] [npc2.feet+] о [npc.namePos] рот, пока [npc2.she] [npc2.has] их боготворят."));
 					}
 					break;
 			}
@@ -159,20 +149,20 @@ public class FootMouth {
 			SexPace.DOM_GENTLE) {
 		@Override
 		public String getActionTitle() {
-			return "Gently worship [npc2.feet(true)]";
+			return "Нежно боготворить [npc2.feet(true)]";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Gently kiss and lick [npc2.namePos] [npc2.feet+].";
+			return "Нежно целовать и лизать [npc2.namePos] [npc2.feet+].";
 		}
 		@Override
 		public String getDescription() {
 			UtilText.nodeContentSB.setLength(0);
 			
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"After planting a series of gentle kisses on [npc2.namePos] [npc2.feet], [npc.name] [npc.verb(proceed)] to start lovingly licking them, letting out a series of soft [npc.moans] in the process.",
-					"Gently kissing and licking [npc2.namePos] [npc2.toes+], [npc.name] [npc.verb(let)] out a little [npc.moan] as [npc.she] lovingly [npc.verb(worship)] [npc2.namePos] [npc2.feet(true)].",
-					"[npc.Name] [npc.verb(let)] out a little [npc.moan] as [npc.she] [npc.verb(press)] [npc.her] [npc.lips+] against [npc2.namePos] [npc2.feet], before starting to lovingly kiss and lick them."));
+					"Осыпав [npc2.namePos] [npc2.feet] серией нежных поцелуев, [npc.name] [npc.verb(proceed)] с любовью приняться их вылизывать, издавая при этом тихие [npc.moans].",
+					"Нежно целуя и лизая [npc2.namePos] [npc2.toes+], [npc.name] [npc.verb(let)] слегка [npc.moan], пока [npc.she] с любовью [npc.verb(worship)] [npc2.namePos] [npc2.feet(true)].",
+					"[npc.Name] [npc.verb(let)] слегка [npc.moan], пока [npc.she] [npc.verb(press)] [npc.her] [npc.lips+] против [npc2.namePos] [npc2.feet], прежде чем начать с любовью их целовать и лизать."));
 			
 			UtilText.nodeContentSB.append(getTargetedCharacterResponse(this));
 			
@@ -190,20 +180,20 @@ public class FootMouth {
 			SexPace.DOM_NORMAL) {
 		@Override
 		public String getActionTitle() {
-			return "Worship [npc2.feet(true)]";
+			return "Поклоняться [npc2.feet(true)]";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Continue licking and kissing [npc2.namePos] [npc2.feet+].";
+			return "Продолжить лизать и целовать [npc2.namePos] [npc2.feet+].";
 		}
 		@Override
 		public String getDescription() {
 			UtilText.nodeContentSB.setLength(0);
 			
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"After planting a series of passionate kisses on [npc2.namePos] [npc2.feet], [npc.name] [npc.verb(proceed)] to start enthusiastically licking them, letting out a series of [npc.moans+] in the process.",
-					"Passionately kissing and licking [npc2.namePos] [npc2.toes+], [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] happily [npc.verb(worship)] [npc2.namePos] [npc2.feet(true)].",
-					"[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(press)] [npc.her] [npc.lips+] against [npc2.namePos] [npc2.feet], before starting to eagerly kiss and lick them."));
+					"Осыпав [npc2.namePos] [npc2.feet] серией страстных поцелуев, [npc.name] [npc.verb(proceed)] с энтузиазмом приняться их вылизывать, издавая при этом серию [npc.moans+].",
+					"Страстно целуя и лизая [npc2.namePos] [npc2.toes+], [npc.name] [npc.verb(let)] слегка [npc.a_moan+], пока [npc.she] счастливо [npc.verb(worship)] [npc2.namePos] [npc2.feet(true)].",
+					"[npc.Name] [npc.verb(let)] из [npc.a_moan+] как [npc.she] [npc.verb(press)] [npc.her] [npc.lips+] против [npc2.namePos] [npc2.feet], прежде чем начать жадно целовать и лизать их."));
 			
 			UtilText.nodeContentSB.append(getTargetedCharacterResponse(this));
 			
@@ -221,20 +211,20 @@ public class FootMouth {
 			SexPace.DOM_ROUGH) {
 		@Override
 		public String getActionTitle() {
-			return "Roughly worship [npc2.feet(true)]";
+			return "Грубо боготворить [npc2.feet(true)]";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Roughly kiss and lick [npc2.namePos] [npc2.feet+].";
+			return "Грубо целовать и лизать [npc2.namePos] [npc2.feet+].";
 		}
 		@Override
 		public String getDescription() {
 			UtilText.nodeContentSB.setLength(0);
 			
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"After planting a series of forceful kisses on [npc2.namePos] [npc2.feet], [npc.name] [npc.verb(proceed)] to start roughly licking them, letting out a series of [npc.moans+] in the process.",
-					"Roughly kissing and licking [npc2.namePos] [npc2.toes+], [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] dominantly [npc.verb(worship)] [npc2.namePos] [npc2.feet(true)].",
-					"[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(press)] [npc.her] [npc.lips+] against [npc2.namePos] [npc2.feet], before starting to forcefully kiss and lick them."));
+					"Осыпав [npc2.namePos] [npc2.feet] серией властных поцелуев, [npc.name] [npc.verb(proceed)], чтобы начать грубо их лизать, издавая при этом серию [npc.moans+].",
+					"Грубо целуя и лизая [npc2.namePos] [npc2.toes+], [npc.name] [npc.verb(let)] из [npc.a_moan+], доминантно [npc.verb(worship)] [npc.she] [npc2.namePos] [npc2.feet(true)].",
+					"[npc.Name] [npc.verb(let)] из [npc.a_moan+] как [npc.she] [npc.verb(press)] [npc.her] [npc.lips+] против [npc2.namePos] [npc2.feet], прежде чем начать властно целовать и лизать их."));
 			
 			UtilText.nodeContentSB.append(getTargetedCharacterResponse(this));
 			
@@ -252,20 +242,20 @@ public class FootMouth {
 			SexPace.SUB_NORMAL) {
 		@Override
 		public String getActionTitle() {
-			return "Worship [npc2.feet(true)]";
+			return "Поклоняться [npc2.feet(true)]";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Continue kissing and licking [npc2.namePos] [npc2.feet+].";
+			return "Продолжить целовать и лизать [npc2.namePos] [npc2.feet+].";
 		}
 		@Override
 		public String getDescription() {
 			UtilText.nodeContentSB.setLength(0);
 			
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"After planting a series of kisses on [npc2.namePos] [npc2.feet], [npc.name] [npc.verb(proceed)] to start licking them, letting out a series of [npc.moans+] in the process.",
-					"Kissing and licking [npc2.namePos] [npc2.toes+], [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(worship)] [npc2.namePos] [npc2.feet(true)].",
-					"[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(press)] [npc.her] [npc.lips+] against [npc2.namePos] [npc2.feet], before starting to kiss and lick them."));
+					"Осыпав [npc2.namePos] [npc2.feet] серией поцелуев, [npc.name] [npc.verb(proceed)], чтобы начать их лизать, издавая при этом серию [npc.moans+].",
+					"Целуя и лизая [npc2.namePos] [npc2.toes+], [npc.name] [npc.verb(let)] из [npc.a_moan+], как [npc.she] [npc.verb(worship)] [npc2.namePos] [npc2.feet(true)].",
+					"[npc.Name] [npc.verb(let)] из [npc.a_moan+] как [npc.she] [npc.verb(press)] [npc.her] [npc.lips+] против [npc2.namePos] [npc2.feet], прежде чем начать целовать и лизать их."));
 			
 			UtilText.nodeContentSB.append(getTargetedCharacterResponse(this));
 			
@@ -283,20 +273,20 @@ public class FootMouth {
 			SexPace.SUB_EAGER) {
 		@Override
 		public String getActionTitle() {
-			return "Eagerly worship [npc2.feet(true)]";
+			return "С жадностью боготворить [npc2.feet(true)]";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Eagerly kiss and lick [npc2.namePos] [npc2.feet+].";
+			return "С жадностью целовать и лизать [npc2.namePos] [npc2.feet+].";
 		}
 		@Override
 		public String getDescription() {
 			UtilText.nodeContentSB.setLength(0);
 			
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"After planting a series of passionate kisses on [npc2.namePos] [npc2.feet], [npc.name] [npc.verb(proceed)] to start enthusiastically licking them, letting out a series of [npc.moans+] in the process.",
-					"Passionately kissing and licking [npc2.namePos] [npc2.toes+], [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] happily [npc.verb(worship)] [npc2.namePos] [npc2.feet(true)].",
-					"[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(press)] [npc.her] [npc.lips+] against [npc2.namePos] [npc2.feet], before starting to eagerly kiss and lick them."));
+					"Осыпав [npc2.namePos] [npc2.feet] серией страстных поцелуев, [npc.name] [npc.verb(proceed)] с энтузиазмом приняться их вылизывать, издавая при этом серию [npc.moans+].",
+					"Страстно целуя и лизая [npc2.namePos] [npc2.toes+], [npc.name] [npc.verb(let)] слегка [npc.a_moan+], пока [npc.she] счастливо [npc.verb(worship)] [npc2.namePos] [npc2.feet(true)].",
+					"[npc.Name] [npc.verb(let)] из [npc.a_moan+] как [npc.she] [npc.verb(press)] [npc.her] [npc.lips+] против [npc2.namePos] [npc2.feet], прежде чем начать жадно целовать и лизать их."));
 			
 			UtilText.nodeContentSB.append(getTargetedCharacterResponse(this));
 			
@@ -314,39 +304,39 @@ public class FootMouth {
 			SexPace.SUB_RESISTING) {
 		@Override
 		public String getActionTitle() {
-			return "Resist worshipping [npc2.feet(true)]";
+			return "Сопротивляться поклонению [npc2.feet(true)]";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Try to pull your [npc.face] away from [npc2.namePos] [npc2.feet+].";
+			return "Попытаться оттянуть свои [npc.face] от [npc2.namePos] [npc2.feet+].";
 		}
 		@Override
 		public String getDescription() {
 			UtilText.nodeContentSB.setLength(0);
 			
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"[npc.Name] desperately [npc.verb(try)], and [npc.verb(fail)], to pull [npc.her] [npc.face+] away from [npc2.namePos] [npc2.feet+], letting out [npc.a_sob+] in the process.",
-					"[npc.A_sob+] bursts out from between [npc.namePos] [npc.lips] as [npc.she] weakly tries to push [npc2.namePos] [npc2.feet+] away from [npc.her] [npc.face].",
-					"[npc.Sobbing] in distress, [npc.name] weakly [npc.verb(struggle)] against [npc2.name] as [npc.she] [npc.verb(plead)] for [npc2.herHim] to take [npc2.her] [npc2.feet] away from [npc.her] [npc.face]."));
+					"[npc.Name] отчаянно [npc.verb(try)] и [npc.verb(fail)], чтобы оттащить [npc.her] [npc.face+] от [npc2.namePos] [npc2.feet+], издавая при этом [npc.a_sob+].",
+					"[npc.A_sob+] вырывается из между [npc.namePos] [npc.lips], пока [npc.she] слабо пытается оттолкнуть [npc2.namePos] [npc2.feet+] от [npc.her] [npc.face].",
+					"[npc.Sobbing] в смятении, [npc.name] слабо [npc.verb(struggle)] против [npc2.name], пока [npc.she] [npc.verb(plead)], чтобы [npc2.herHim] забрал(а) [npc2.her] [npc2.feet] от [npc.her] [npc.face]."));
 			
 			switch(Main.sex.getSexPace(Main.sex.getCharacterTargetedForSexAction(this))) {
 				case DOM_GENTLE:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							" Totally ignoring [npc.namePos] protests, [npc2.name] gently, yet firmly, [npc2.verb(continue)] to push [npc2.her] [npc2.feet] against [npc.her] mouth, forcing [npc.herHim] to worship [npc2.her] [npc2.feet+].",
-							" Softly [npc2.moaning] in delight, [npc2.name] completely [npc2.verb(ignore)] [npc.namePos] protests and [npc2.verb(continue)] to push [npc2.her] [npc2.feet+] into [npc.her] [npc.face].",
-							" Not paying any attention to [npc.namePos] struggles, [npc2.name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(push)] [npc2.her] [npc2.feet+] against [npc.namePos] mouth."));
+							" Полностью игнорируя протесты [npc.namePos], [npc2.name] мягко, но решительно [npc2.verb(continue)], чтобы прижать [npc2.her] [npc2.feet] к [npc.her] рту, заставляя [npc.herHim] боготворить [npc2.her] [npc2.feet+].",
+							" Тихо [npc2.moaning] в восторге, [npc2.name] полностью [npc2.verb(ignore)] протесты [npc.namePos] и [npc2.verb(continue)], чтобы втиснуть [npc2.her] [npc2.feet+] в [npc.her] [npc.face].",
+							" Не обращая внимания на попытки [npc.namePos] вырваться, [npc2.name] [npc2.verb(let)] наружу [npc2.a_moan+], пока [npc2.she] [npc2.verb(push)] [npc2.her] [npc2.feet+] против [npc.namePos] рта."));
 					break;
 				case DOM_ROUGH:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							" Totally ignoring [npc.namePos] protests, [npc2.name] dominantly [npc2.verb(push)] [npc2.her] [npc2.feet] against [npc.her] mouth, roughly forcing [npc.herHim] to worship [npc2.her] [npc2.feet+].",
-							" [npc2.Moaning+] in delight, [npc2.name] completely [npc2.verb(ignore)] [npc.namePos] protests and [npc2.verb(continue)] to roughly grind [npc2.her] [npc2.feet+] into [npc.her] [npc.face].",
-							" Not paying any attention to [npc.namePos] struggles, [npc2.name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] forcefully [npc2.verb(push)] [npc2.her] [npc2.feet+] against [npc.namePos] mouth."));
+							" Полностью игнорируя протесты [npc.namePos], [npc2.name] властно [npc2.verb(push)] [npc2.her] [npc2.feet] в рот [npc.her], грубо заставляя [npc.herHim] поклоняться [npc2.her] [npc2.feet+].",
+							" В восторге [npc2.Moaning+], [npc2.name] полностью [npc2.verb(ignore)] [npc.namePos] протесты и [npc2.verb(continue)] грубо втирать [npc2.her] [npc2.feet+] в [npc.her] [npc.face].",
+							" Не обращая никакого внимания на попытки [npc.namePos] вырваться, [npc2.name] [npc2.verb(let)] [npc2.a_moan+], пока [npc2.she] силой [npc2.verb(push)] [npc2.her] [npc2.feet+] в рот [npc.namePos]."));
 					break;
 				default: // DOM_NORMAL and in case anything goes wrong:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							" Totally ignoring [npc.namePos] protests, [npc2.name] firmly [npc2.verb(continue)] to push [npc2.her] [npc2.feet] against [npc.her] mouth, forcing [npc.herHim] to worship [npc2.her] [npc2.feet+].",
-							" [npc2.Moaning+] in delight, [npc2.name] completely [npc2.verb(ignore)] [npc.namePos] protests and [npc2.verb(continue)] to firmly push [npc2.her] [npc2.feet+] into [npc.her] [npc.face].",
-							" Not paying any attention to [npc.namePos] struggles, [npc2.name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(push)] [npc2.her] [npc2.feet+] against [npc.namePos] mouth."));
+							" Полностью игнорируя протесты [npc.namePos], [npc2.name] решительно [npc2.verb(continue)], чтобы прижать [npc2.her] [npc2.feet] к рту [npc.her], заставляя [npc.herHim] поклоняться [npc2.her] [npc2.feet+].",
+							" В восторге [npc2.Moaning+], [npc2.name] полностью [npc2.verb(ignore)] [npc.namePos] протесты и [npc2.verb(continue)] решительно вжимать [npc2.her] [npc2.feet+] в [npc.her] [npc.face].",
+							" Не обращая внимания на попытки [npc.namePos] вырваться, [npc2.name] [npc2.verb(let)] наружу [npc2.a_moan+], пока [npc2.she] [npc2.verb(push)] [npc2.her] [npc2.feet+] против [npc.namePos] рта."));
 					break;
 			}
 			
@@ -363,11 +353,11 @@ public class FootMouth {
 			SexParticipantType.NORMAL) {
 		@Override
 		public String getActionTitle() {
-			return "Stop worshipping [npc2.feet(true)]";
+			return "Хватит поклоняться [npc2.feet(true)]";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Take your [npc.face] away from [npc2.namePos] [npc2.feet] and stop worshipping them.";
+			return "Убери свой [npc.face] от [npc2.namePos] [npc2.feet] и перестань им поклоняться.";
 		}
 		@Override
 		public String getDescription() {
@@ -376,26 +366,26 @@ public class FootMouth {
 			switch(Main.sex.getSexPace(Main.sex.getCharacterPerformingAction())) {
 				case DOM_ROUGH:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"After planting one last, rough kiss on [npc2.namePos] [npc2.feet+], [npc.name] [npc.verb(lift)] [npc.her] head and [npc.verb(bring)] an end to [npc.her] worshipping.",
-							"Forcefully licking [npc2.namePos] [npc2.toes+] one last time, [npc.name] then [npc2.verb(pull)] back, putting an end to [npc.her] worship of [npc2.namePos] [npc2.feet+]."));
+							"Оставив последний грубый поцелуй на [npc2.namePos] [npc2.feet+], [npc.name] [npc.verb(lift)] голову [npc.her] и [npc.verb(bring)] поклонению [npc.her].",
+							"В последний раз властно вылизав [npc2.namePos] [npc2.toes+], [npc.name] затем [npc2.verb(pull)] назад, кланясь в завершение [npc.her] поклонения [npc2.namePos] [npc2.feet+]."));
 					break;
 				default:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"After planting one last kiss on [npc2.namePos] [npc2.feet+], [npc.name] [npc.verb(lift)] [npc.her] head and [npc.verb(bring)] an end to [npc.her] worshipping.",
-							"Greedily licking [npc2.namePos] [npc2.toes+] one last time, [npc.name] then [npc2.verb(pull)] back, putting an end to [npc.her] worship of [npc2.namePos] [npc2.feet+]."));
+							"Оставив последний поцелуй на [npc2.namePos] [npc2.feet+], [npc.name] [npc.verb(lift)] голову [npc.her] и [npc.verb(bring)] поклонению [npc.her].",
+							"В последний раз жадно вылизав [npc2.namePos] [npc2.toes+], [npc.name] затем [npc2.verb(pull)] назад, кланясь в завершение [npc.her] поклонения [npc2.namePos] [npc2.feet+]."));
 					break;
 			}
 			
 			switch(Main.sex.getSexPace(Main.sex.getCharacterTargetedForSexAction(this))) {
 				case SUB_RESISTING:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							" [npc2.Name] can't help but let out a relieved sob as [npc.name] moves away, before hopefully asking if [npc2.her] ordeal is now over.",
-							" With [npc2.a_sob+], [npc2.name] [npc2.verb(continue)] to struggle against [npc.name], tears streaming down [npc2.her] [npc2.face] as [npc2.she] [npc2.verb(beg)] to be left alone."));
+							" [npc2.Name] не может сдержать облегченного всхлипа, когда [npc.name] отстраняется, прежде чем с надеждой спросить, закончилось ли теперь испытание [npc2.her].",
+							" С [npc2.a_sob+], [npc2.name] [npc2.verb(continue)] бороться против [npc.name], слезы текут по [npc2.her] [npc2.face], пока [npc2.she] [npc2.verb(beg)] остаться в одиночестве."));
 					break;
 				default:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							" [npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc.name] [npc.verb(pull)] back, eager for more of [npc.her] attention.",
-							" [npc2.A_moan+] escapes from between [npc2.namePos] [npc2.lips+], betraying [npc2.her] lust for [npc.namePos] [npc.tongue+]."));
+							" [npc2.Name] [npc2.verb(let)] [npc2.a_moan+], пока [npc.name] [npc.verb(pull)] назад, жаждая еще большего внимания [npc.her].",
+							" [npc2.A_moan+] выскальзывает из между [npc2.namePos] [npc2.lips+], выдавая [npc2.her] похоть к [npc.namePos] [npc.tongue+]."));
 					break;
 			}
 			
@@ -415,11 +405,11 @@ public class FootMouth {
 			SexParticipantType.NORMAL) {
 		@Override
 		public String getActionTitle() {
-			return "Have [npc.feet(true)] worshipped";
+			return "Заставить поклоняться [npc.feet(true)]";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Get [npc2.name] to drop [npc2.her] head down to your [npc.feet] and start orally worshipping them.";
+			return "Заставить [npc2.name] опустить [npc2.her] голову к твоим [npc.feet] и начать орально поклоняться им.";
 		}
 		@Override
 		public String getDescription() {
@@ -430,39 +420,39 @@ public class FootMouth {
 				if(Main.sex.getCharacterPerformingAction().getLegType().getFootType().equals(FootType.HOOFS)) {
 					foundFootType = true;
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"With [npc.a_moan+], [npc.name] [npc.eagerly] [npc.verb(push)] [npc2.namePos] head down to [npc.her] hard hoofs, before getting [npc2.herHim] to kiss them and start orally worshipping [npc.her] [npc.feet+].",
-							"Pushing [npc2.namePos] head down to [npc.her] hard hoofs, [npc.name] can't help but [npc.moanVerb+] as [npc.she] [npc.verb(make)] [npc2.herHim] kiss and orally worship [npc.her] [npc.feet+]."));
+							"С [npc.a_moan+], [npc.name] [npc.eagerly] [npc.verb(push)] [npc2.namePos] голову к твердым копытам [npc.her], прежде чем заставить [npc2.herHim] поцеловать их и начать орально поклоняться [npc.her] [npc.feet+].",
+							"Прижимая голову [npc2.namePos] к твердым копытам [npc.her], [npc.name] не может не [npc.moanVerb+], пока [npc.she] [npc.verb(make)] [npc2.herHim] целует и орально боготворит [npc.her] [npc.feet+]."));
 					
 				} else if(Main.sex.getCharacterPerformingAction().getLegType().getFootType().equals(FootType.TALONS)) {
 					foundFootType = true;
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"With [npc.a_moan+], [npc.name] [npc.eagerly] [npc.verb(push)] [npc2.namePos] head down to [npc.her] bird-like feet, before getting [npc2.herHim] to kiss [npc.her] talons and start orally worshipping [npc.her] [npc.feet+].",
-							"Pushing [npc2.namePos] head down to [npc.her] bird-like feet, [npc.name] can't help but [npc.moanVerb+] as [npc.she] [npc.verb(make)] [npc2.herHim] kiss [npc.her] talons and orally worship [npc.her] [npc.feet+]."));
+							"С [npc.a_moan+], [npc.name] [npc.eagerly] [npc.verb(push)] [npc2.namePos] голову к птичьим лапам [npc.her], прежде чем заставить [npc2.herHim] целовать когти [npc.her] и начать орально боготворить [npc.her] [npc.feet+].",
+							"Прижимая голову [npc2.namePos] к птичьим лапам [npc.her], [npc.name] не может не [npc.moanVerb+], пока [npc.she] [npc.verb(make)] [npc2.herHim] целует когти [npc.her] и орально боготворит [npc.her] [npc.feet+]."));
 					
 				} else if(Main.sex.getCharacterPerformingAction().getLegType().getFootType().equals(FootType.TENTACLE)) {
 					foundFootType = true;
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"With [npc.a_moan+], [npc.name] [npc.eagerly] [npc.verb(push)] [npc2.namePos] head down to [npc.her] tentacles, before getting [npc2.herHim] to kiss and start orally worshipping them.",
-							"Pushing [npc2.namePos] head down to [npc.her] tentacles, [npc.name] can't help but [npc.moanVerb+] as [npc.she] [npc.verb(make)] [npc2.herHim] kiss and orally worship them."));
+							"С [npc.a_moan+], [npc.name] [npc.eagerly] [npc.verb(push)] [npc2.namePos] голову к щупальцам [npc.her], прежде чем заставить [npc2.herHim] целовать их и начать орально боготворить.",
+							"Прижимая голову [npc2.namePos] к щупальцам [npc.her], [npc.name] не может не [npc.moanVerb+], пока [npc.she] [npc.verb(make)] [npc2.herHim] целует и орально боготворит их."));
 				}
 			}
 			if(!foundFootType) {
 				UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-						"With [npc.a_moan+], [npc.name] [npc.eagerly] [npc.verb(push)] [npc2.namePos] head down to [npc.her] [npc.feet], before getting [npc2.herHim] to kiss them and start orally worshipping them.",
-						"Pushing [npc2.namePos] head down to [npc.her] [npc.feet], [npc.name] can't help but [npc.moanVerb+] as [npc.she] [npc.verb(make)] [npc2.herHim] kiss and orally worship them."));
+						"С [npc.a_moan+], [npc.name] [npc.eagerly] [npc.verb(push)] [npc2.namePos] голову к [npc.her] [npc.feet], прежде чем заставить [npc2.herHim] целовать их и начать орально боготворить.",
+						"Прижимая голову [npc2.namePos] к [npc.her] [npc.feet], [npc.name] не может не [npc.moanVerb+], пока [npc.she] [npc.verb(make)] [npc2.herHim] целует и орально боготворит их."));
 			}
 
 			if(!isTargetedCharacterInanimate()) {
 				switch(Main.sex.getSexPace(Main.sex.getCharacterTargetedForSexAction(this))) {
 					case SUB_RESISTING:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" [npc2.Name] [npc2.verb(let)] out [npc2.a_sob+] as [npc.name] [npc.eagerly] [npc.verb(push)] [npc.her] [npc.feet] against [npc2.her] mouth, and desperately [npc2.verb(try)] to pull away.",
-								" With [npc2.a_sob+], [npc2.name] [npc2.verb(struggle)] against [npc.name] as [npc.she] [npc.eagerly] [npc.verb(press)] [npc.her] [npc.feet+] against [npc2.her] mouth."));
+								" [npc2.Name] [npc2.verb(let)] из [npc2.a_sob+] как [npc.name] [npc.eagerly] [npc.verb(push)] [npc.her] [npc.feet] против [npc2.her] рта, отчаянно [npc2.verb(try)], чтобы отстраниться.",
+								" С [npc2.a_sob+], [npc2.name] [npc2.verb(struggle)] против [npc.name], пока [npc.she] [npc.eagerly] [npc.verb(press)] [npc.her] [npc.feet+] против [npc2.her] рта."));
 						break;
 					default:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" [npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.eagerly] [npc2.verb(plant)] a series of kisses and licks on [npc.namePos] [npc.feet].",
-								" With [npc2.a_moan+], [npc2.name] [npc2.eagerly] [npc2.verb(start)] kissing and licking [npc.namePos] [npc.feet+]."));
+								" [npc2.Name] [npc2.verb(let)] из [npc2.a_moan+] как [npc2.she] [npc2.eagerly] [npc2.verb(plant)] серию поцелуев и облизываний [npc.namePos] [npc.feet].",
+								" С [npc2.a_moan+], [npc2.name] [npc2.eagerly] [npc2.verb(start)], целуя и облизывая [npc.namePos] [npc.feet+]."));
 						break;
 				}
 			}
@@ -480,15 +470,15 @@ public class FootMouth {
 				case DOM_GENTLE:
 				case DOM_ROUGH:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							" [npc2.Name] [npc.eagerly] [npc2.verb(lick)] and [npc2.verb(suck)] on [npc.namePos] [npc.toes+], letting out [npc2.a_moan+] as [npc2.she] [npc2.eagerly] [npc2.verb(worship)] [npc.her] [npc.feet+].",
-							" [npc2.A_moan+] bursts out from [npc2.namePos] mouth as [npc2.she] [npc2.verb(continue)] [npc.eagerly] licking and kissing [npc.namePos] [npc.feet+].",
-							" [npc2.Moaning] in delight, [npc2.name] [npc.eagerly] [npc2.verb(worship)] [npc.namePos] [npc.feet+] by planting a series of passionate kisses on them."));
+							" [npc2.Name] [npc.eagerly] [npc2.verb(lick)] и [npc2.verb(suck)] на [npc.namePos] [npc.toes+], издавая [npc2.a_moan+], пока [npc2.she] [npc2.eagerly] [npc2.verb(worship)] [npc.her] [npc.feet+].",
+							" [npc2.A_moan+] вырывается из [npc2.namePos] рта, пока [npc2.she] [npc2.verb(continue)] [npc.eagerly], облизывая и целуя [npc.namePos] [npc.feet+].",
+							" [npc2.Moaning] в восторге, [npc2.name] [npc.eagerly] [npc2.verb(worship)] [npc.namePos] [npc.feet+], осыпая их серией страстных поцелуев."));
 					break;
 				case SUB_RESISTING:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							" Failing to pull [npc2.her] [npc2.face] away from [npc.namePos] [npc.feet], [npc2.name] [npc2.verb(let)] out [npc2.a_sob+] as [npc2.she] weakly [npc2.verb(try)] to struggle free.",
-							" [npc2.A_sob+] bursts out from between [npc2.namePos] [npc2.lips] as [npc2.she] weakly [npc2.verb(try)] to push [npc.namePos] [npc.feet] away from [npc2.her] face.",
-							" [npc2.Sobbing] in distress, [npc2.name] [npc2.verb(try)], in vain, to pull [npc2.her] [npc2.face] away from [npc.namePos] [npc.feet+]."));
+							" Не сумев оттащить [npc2.her] [npc2.face] от [npc.namePos] [npc.feet], [npc2.name] [npc2.verb(let)] из [npc2.a_sob+], пока [npc2.she] слабо [npc2.verb(try)], чтобы вырваться на свободу.",
+							" [npc2.A_sob+] вырывается из между [npc2.namePos] [npc2.lips], пока [npc2.she] слабо [npc2.verb(try)], чтобы оттолкнуть [npc.namePos] [npc.feet] от [npc2.her] лица.",
+							" [npc2.Sobbing] в смятении, [npc2.name] тщетно [npc2.verb(try)], чтобы оттянуть [npc2.her] [npc2.face] от [npc.namePos] [npc.feet+]."));
 					break;
 			}
 		}
@@ -505,20 +495,20 @@ public class FootMouth {
 			SexPace.DOM_GENTLE) {
 		@Override
 		public String getActionTitle() {
-			return "Gentle [npc.feet(true)] worshipped";
+			return "Нежное [npc.feet(true)] поклонение";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Gently continue to push your [npc.feet+] into [npc2.namePos] [npc2.face].";
+			return "Мягко продолжай втискивать свои [npc.feet+] в [npc2.namePos] [npc2.face].";
 		}
 		@Override
 		public String getDescription() {
 			UtilText.nodeContentSB.setLength(0);
 			
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"Gently pushing [npc.her] [npc.feet+] into [npc2.namePos] [npc2.face], [npc.name] [npc.verb(let)] out a soft [npc.moan] as [npc.she] [npc.has] them orally worshipped.",
-					"With a soft [npc.moan], [npc.name] gently [npc.verb(push)] [npc.her] [npc.feet+] against [npc2.namePos] [npc2.lips+], giving [npc2.herHim] no option but to continue worshipping them.",
-					"Slowly pressing [npc.her] [npc.feet+] into [npc2.namePos] [npc2.face], [npc.name] can't help but let out a soft [npc.moan] as [npc.she] [npc.has] them worshipped."));
+					"Мягко вдавливая [npc.her] [npc.feet+] в [npc2.namePos] [npc2.face], [npc.name] тихо [npc.verb(let)] нежный [npc.moan], пока [npc.she] [npc.has] их в оральном поклонении.",
+					"С мягким [npc.moan], [npc.name] осторожно [npc.verb(push)] [npc.her] [npc.feet+] против [npc2.namePos] [npc2.lips+], не оставляя [npc2.herHim] иного выбора, кроме как продолжать поклоняться им.",
+					"Медленно вдавливая [npc.her] [npc.feet+] в [npc2.namePos] [npc2.face], [npc.name] не может не издать тихий [npc.moan], пока [npc.she] [npc.has] их в поклонении."));
 			
 			UtilText.nodeContentSB.append(getTargetedCharacterReceivingResponse(this));
 			
@@ -536,20 +526,20 @@ public class FootMouth {
 			SexPace.DOM_NORMAL) {
 		@Override
 		public String getActionTitle() {
-			return "[npc.Feet(true)] worshipped";
+			return "[npc.Feet(true)] поклонение";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Continue to push your [npc.feet+] into [npc2.namePos] [npc2.face].";
+			return "Продолжай втискивать свои [npc.feet+] в [npc2.namePos] [npc2.face].";
 		}
 		@Override
 		public String getDescription() {
 			UtilText.nodeContentSB.setLength(0);
 			
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"[npc.Eagerly] pushing [npc.her] [npc.feet+] into [npc2.namePos] [npc2.face], [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.has] them orally worshipped.",
-					"With [npc.a_moan+], [npc.name] [npc.eagerly] [npc.verb(push)] [npc.her] [npc.feet+] against [npc2.namePos] [npc2.lips+], giving [npc2.herHim] no option but to continue worshipping them.",
-					"[npc.Eagerly] pressing [npc.her] [npc.feet+] into [npc2.namePos] [npc2.face], [npc.name] can't help but let out [npc.a_moan+] as [npc.she] [npc.has] them worshipped."));
+					"[npc.Eagerly] вдавливает [npc.her] [npc.feet+] в [npc2.namePos] [npc2.face], [npc.name] тихо [npc.verb(let)] [npc.a_moan+], пока [npc.she] [npc.has] их в оральном поклонении.",
+					"С [npc.a_moan+], [npc.name] [npc.eagerly] [npc.verb(push)] [npc.her] [npc.feet+] против [npc2.namePos] [npc2.lips+], не оставляя [npc2.herHim] иного выбора, кроме как продолжать им поклоняться.",
+					"[npc.Eagerly], вдавливая [npc.her] [npc.feet+] в [npc2.namePos] [npc2.face], [npc.name] не может не издать [npc.a_moan+], пока [npc.she] [npc.has] ими в поклонении."));
 			
 			UtilText.nodeContentSB.append(getTargetedCharacterReceivingResponse(this));
 			
@@ -567,20 +557,20 @@ public class FootMouth {
 			SexPace.DOM_ROUGH) {
 		@Override
 		public String getActionTitle() {
-			return "Rough [npc.feet(true)] worshipped";
+			return "Грубое [npc.feet(true)] поклонение";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Roughly continue to push your [npc.feet+] into [npc2.namePos] [npc2.face].";
+			return "Продолжай грубо вжимать свои [npc.feet+] в [npc2.namePos] [npc2.face].";
 		}
 		@Override
 		public String getDescription() {
 			UtilText.nodeContentSB.setLength(0);
 			
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"[npc.Eagerly] pushing [npc.her] [npc.feet+] into [npc2.namePos] [npc2.face], [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.has] them orally worshipped.",
-					"With [npc.a_moan+], [npc.name] [npc.eagerly] [npc.verb(push)] [npc.her] [npc.feet+] against [npc2.namePos] [npc2.lips+], giving [npc2.herHim] no option but to continue worshipping them.",
-					"[npc.Eagerly] pressing [npc.her] [npc.feet+] into [npc2.namePos] [npc2.face], [npc.name] can't help but let out [npc.a_moan+] as [npc.she] [npc.has] them worshipped."));
+					"[npc.Eagerly] вдавливает [npc.her] [npc.feet+] в [npc2.namePos] [npc2.face], [npc.name] тихо [npc.verb(let)] [npc.a_moan+], пока [npc.she] [npc.has] их в оральном поклонении.",
+					"С [npc.a_moan+], [npc.name] [npc.eagerly] [npc.verb(push)] [npc.her] [npc.feet+] против [npc2.namePos] [npc2.lips+], не оставляя [npc2.herHim] иного выбора, кроме как продолжать им поклоняться.",
+					"[npc.Eagerly], вдавливая [npc.her] [npc.feet+] в [npc2.namePos] [npc2.face], [npc.name] не может не издать [npc.a_moan+], пока [npc.she] [npc.has] ими в поклонении."));
 			
 			UtilText.nodeContentSB.append(getTargetedCharacterReceivingResponse(this));
 			
@@ -598,20 +588,20 @@ public class FootMouth {
 			SexPace.SUB_NORMAL) {
 		@Override
 		public String getActionTitle() {
-			return "[npc.Feet(true)] worshipped";
+			return "[npc.Feet(true)] поклонение";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Continue to push your [npc.feet+] into [npc2.namePos] [npc2.face].";
+			return "Продолжай втискивать свои [npc.feet+] в [npc2.namePos] [npc2.face].";
 		}
 		@Override
 		public String getDescription() {
 			UtilText.nodeContentSB.setLength(0);
 			
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"Pushing [npc.her] [npc.feet+] into [npc2.namePos] [npc2.face], [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.has] them orally worshipped.",
-					"With [npc.a_moan+], [npc.name] [npc.verb(push)] [npc.her] [npc.feet+] against [npc2.namePos] [npc2.lips+], giving [npc2.herHim] no option but to continue worshipping them.",
-					"Pressing [npc.her] [npc.feet+] into [npc2.namePos] [npc2.face], [npc.name] can't help but let out [npc.a_moan+] as [npc.she] [npc.has] them worshipped."));
+					"Вдавливая [npc.her] [npc.feet+] в [npc2.namePos] [npc2.face], [npc.name] [npc.verb(let)] [npc.a_moan+], пока [npc.she] [npc.has] ими через оральное поклонение.",
+					"С [npc.a_moan+], [npc.name] [npc.verb(push)] [npc.her] [npc.feet+] против [npc2.namePos] [npc2.lips+], не оставляя [npc2.herHim] иного выбора, кроме как продолжать им поклоняться.",
+					"Вдавливая [npc.her] [npc.feet+] в [npc2.namePos] [npc2.face], [npc.name] не может не издать [npc.a_moan+], пока [npc.she] [npc.has] ими в поклонении."));
 			
 			UtilText.nodeContentSB.append(getTargetedCharacterReceivingResponse(this));
 			
@@ -629,20 +619,20 @@ public class FootMouth {
 			SexPace.SUB_EAGER) {
 		@Override
 		public String getActionTitle() {
-			return "Eager [npc.feet(true)] worshipped";
+			return "Жадное [npc.feet(true)] поклонение";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Eagerly continue to push your [npc.feet+] into [npc2.namePos] [npc2.face].";
+			return "С жадностью продолжай впихивать свой [npc.feet+] в [npc2.namePos] [npc2.face].";
 		}
 		@Override
 		public String getDescription() {
 			UtilText.nodeContentSB.setLength(0);
 			
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"[npc.Eagerly] pushing [npc.her] [npc.feet+] into [npc2.namePos] [npc2.face], [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.has] them orally worshipped.",
-					"With [npc.a_moan+], [npc.name] [npc.eagerly] [npc.verb(push)] [npc.her] [npc.feet+] against [npc2.namePos] [npc2.lips+], giving [npc2.herHim] no option but to continue worshipping them.",
-					"[npc.Eagerly] pressing [npc.her] [npc.feet+] into [npc2.namePos] [npc2.face], [npc.name] can't help but let out [npc.a_moan+] as [npc.she] [npc.has] them worshipped."));
+					"[npc.Eagerly] вдавливает [npc.her] [npc.feet+] в [npc2.namePos] [npc2.face], [npc.name] тихо [npc.verb(let)] [npc.a_moan+], пока [npc.she] [npc.has] их в оральном поклонении.",
+					"С [npc.a_moan+], [npc.name] [npc.eagerly] [npc.verb(push)] [npc.her] [npc.feet+] против [npc2.namePos] [npc2.lips+], не оставляя [npc2.herHim] иного выбора, кроме как продолжать им поклоняться.",
+					"[npc.Eagerly], вдавливая [npc.her] [npc.feet+] в [npc2.namePos] [npc2.face], [npc.name] не может не издать [npc.a_moan+], пока [npc.she] [npc.has] ими в поклонении."));
 			
 			UtilText.nodeContentSB.append(getTargetedCharacterReceivingResponse(this));
 			
@@ -660,39 +650,39 @@ public class FootMouth {
 			SexPace.SUB_RESISTING) {
 		@Override
 		public String getActionTitle() {
-			return "Resist [npc.feet(true)] worshipped";
+			return "Сопротивляться [npc.feet(true)] поклонению";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Try and pull your [npc.feet+] away from [npc2.namePos] [npc2.face+].";
+			return "Попытаться оттянуть свой [npc.feet+] от [npc2.namePos] [npc2.face+].";
 		}
 		@Override
 		public String getDescription() {
 			UtilText.nodeContentSB.setLength(0);
 			
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"[npc.Name] desperately [npc.verb(try)], and [npc.verb(fail)], to pull [npc.her] [npc.feet] away from [npc2.namePos] [npc2.face], letting out [npc.a_sob+] in the process.",
-					"[npc.A_sob+] bursts out from between [npc.namePos] [npc.lips] as [npc.she] weakly tries to push [npc2.namePos] [npc2.face+] away from [npc.her] [npc.feet].",
-					"[npc.Sobbing] in distress, [npc.name] weakly [npc.verb(struggle)] against [npc2.name] as [npc.she] [npc.verb(plead)] for [npc2.herHim] to take [npc2.her] mouth away from [npc.her] [npc.feet]."));
+					"[npc.Name] отчаянно [npc.verb(try)] и [npc.verb(fail)], чтобы оттащить [npc.her] [npc.feet] от [npc2.namePos] [npc2.face], издавая при этом [npc.a_sob+].",
+					"[npc.A_sob+] вырывается из между [npc.namePos] [npc.lips], пока [npc.she] слабо пытается оттолкнуть [npc2.namePos] [npc2.face+] от [npc.her] [npc.feet].",
+					"[npc.Sobbing] в смятении, [npc.name] слабо [npc.verb(struggle)] против [npc2.name], пока [npc.she] [npc.verb(plead)], чтобы [npc2.herHim] убрал(а) [npc2.her] рот от [npc.her] [npc.feet]."));
 			
 			switch(Main.sex.getSexPace(Main.sex.getCharacterTargetedForSexAction(this))) {
 				case DOM_GENTLE:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							" Totally ignoring [npc.namePos] protests, [npc2.name] gently, yet firmly, [npc2.verb(continue)] to worship [npc.her] [npc.feet+] by planting a series of licks and kisses on them.",
-							" Softly [npc2.moaning] in delight, [npc2.name] completely [npc2.verb(ignore)] [npc.namePos] protests and [npc2.verb(continue)] to orally worship [npc.her] [npc.feet+].",
-							" Not paying any attention to [npc.namePos] struggles, [npc2.name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(press)] [npc2.her] [npc2.lips+] against [npc.namePos] [npc.feet+]."));
+							" Полностью игнорируя протесты [npc.namePos], [npc2.name] мягко, но уверенно [npc2.verb(continue)], чтобы поклоняться [npc.her] [npc.feet+], осыпая их серией облизываний и поцелуев.",
+							" Тихо [npc2.moaning] от восторга, [npc2.name] полностью [npc2.verb(ignore)] протесты [npc.namePos] и [npc2.verb(continue)], чтобы орально поклоняться [npc.her] [npc.feet+].",
+							" Не обращая внимания на попытки [npc.namePos], [npc2.name] [npc2.verb(let)] [npc2.a_moan+], пока [npc2.she] [npc2.verb(press)] [npc2.her] [npc2.lips+] против [npc.namePos] [npc.feet+]."));
 					break;
 				case DOM_ROUGH:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							" Totally ignoring [npc.namePos] protests, [npc2.name] dominantly [npc2.verb(continue)] to worship [npc.her] [npc.feet+] by planting a series of rough licks and kisses on them.",
-							" [npc2.Moaning+] in delight, [npc2.name] completely [npc2.verb(ignore)] [npc.namePos] protests and [npc2.verb(continue)] to forcefully worship [npc.her] [npc.feet+].",
-							" Not paying any attention to [npc.namePos] struggles, [npc2.name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] forcefully [npc2.verb(press)] [npc2.her] [npc2.lips+] against [npc.namePos] [npc.feet+]."));
+							" Полностью игнорируя протесты [npc.namePos], [npc2.name] властно [npc2.verb(continue)], чтобы поклоняться [npc.her] [npc.feet+], осыпая их серией грубых облизываний и поцелуев.",
+							" [npc2.Moaning+] в восторге, [npc2.name] совершенно [npc2.verb(ignore)] [npc.namePos] протесты и [npc2.verb(continue)] с силой поклоняться [npc.her] [npc.feet+].",
+							" Совершенно не обращая внимания на борьбу [npc.namePos], [npc2.name] [npc2.verb(let)] [npc2.a_moan+], пока [npc2.she] с силой [npc2.verb(press)] [npc2.her] [npc2.lips+] против [npc.namePos] [npc.feet+]."));
 					break;
 				default: // DOM_NORMAL and in case anything goes wrong:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							" Totally ignoring [npc.namePos] protests, [npc2.name] [npc.eagerly] [npc2.verb(continue)] to worship [npc.her] [npc.feet+] by planting a series of licks and kisses on them.",
-							" [npc2.Moaning+] in delight, [npc2.name] completely [npc2.verb(ignore)] [npc.namePos] protests and [npc2.verb(continue)] to orally worship [npc.her] [npc.feet+].",
-							" Not paying any attention to [npc.namePos] struggles, [npc2.name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(press)] [npc2.her] [npc2.lips+] against [npc.namePos] [npc.feet+]."));
+							" Полностью игнорируя протесты [npc.namePos], [npc2.name] [npc.eagerly] [npc2.verb(continue)], чтобы поклоняться [npc.her] [npc.feet+], осыпая их серией лизьев и поцелуев.",
+							" [npc2.Moaning+] в восторге, [npc2.name] совершенно [npc2.verb(ignore)] [npc.namePos] протесты и [npc2.verb(continue)], чтобы орально поклоняться [npc.her] [npc.feet+].",
+							" Не обращая внимания на попытки [npc.namePos], [npc2.name] [npc2.verb(let)] [npc2.a_moan+], пока [npc2.she] [npc2.verb(press)] [npc2.her] [npc2.lips+] против [npc.namePos] [npc.feet+]."));
 					break;
 			}
 			
@@ -709,11 +699,11 @@ public class FootMouth {
 			SexParticipantType.NORMAL) {
 		@Override
 		public String getActionTitle() {
-			return "Stop [npc.feet(true)] worshipped";
+			return "Прекратить [npc.feet(true)] поклонение";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Pull your [npc.feet+] away from [npc2.namePos] [npc2.face+].";
+			return "Убери свои [npc.feet+] от [npc2.namePos] [npc2.face+].";
 		}
 		@Override
 		public String getDescription() {
@@ -722,25 +712,25 @@ public class FootMouth {
 			switch(Main.sex.getSexPace(Main.sex.getCharacterPerformingAction())) {
 				case DOM_ROUGH:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-						"After roughly pushing [npc.her] [npc.feet+] into [npc2.namePos] face one last time, [npc.name] [npc.verb(pull)] them away and [npc.verb(put)] an end to [npc2.her] oral worshipping.",
-						"[npc.Name] [npc.verb(grind)] [npc.her] [npc.feet+] into [npc2.namePos] face one last time, before letting out an amused [npc.moan] and suddenly pulling them away from [npc2.her] mouth."));
+						"Грубо ткнув [npc.her] [npc.feet+] в [npc2.namePos] лицо в последний раз, [npc.name] [npc.verb(pull)] их прочь и [npc.verb(put)] оральному поклонению [npc2.her].",
+						"[npc.Name] [npc.verb(grind)] [npc.her] [npc.feet+] в [npc2.namePos] лицо в последний раз, после чего издает забавный [npc.moan] и внезапно отрывает их от [npc2.her] рта."));
 					break;
 				default:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-						"After [npc.eagerly] pushing [npc.her] [npc.feet+] into [npc2.namePos] face one last time, [npc.name] [npc.verb(pull)] them away and [npc.verb(put)] an end to [npc2.her] oral worshipping.",
-						"[npc.Name] [npc.verb(push)] [npc.her] [npc.feet+] into [npc2.namePos] face one last time, before letting out [npc.a_moan+] and firmly pulling them away from [npc2.her] mouth."));
+						"После того как [npc.eagerly] [npc.her] [npc.feet+] в [npc2.namePos] лицо в последний раз, [npc.name] [npc.verb(pull)] их прочь и [npc.verb(put)] оральному поклонению [npc2.her].",
+						"[npc.Name] [npc.verb(push)] [npc.her] [npc.feet+] в [npc2.namePos] лицо в последний раз, прежде чем выдохнуть [npc.a_moan+] и решительно отстранить их от [npc2.her] рта."));
 					break;
 			}
 			
 			switch(Main.sex.getSexPace(Main.sex.getCharacterTargetedForSexAction(this))) {
 				case SUB_RESISTING:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-						" [npc2.Name] [npc2.verb(let)] out a relieved sigh, which soon turns into [npc2.a_sob+] as [npc2.she] [npc2.verb(realise)] that [npc.name] [npc.has]n't finished with [npc2.herHim] just yet.",
-						" With [npc2.a_sob+], [npc2.name] [npc2.verb(continue)] to protest and struggle against [npc.name] as [npc.she] [npc.verb(hold)] [npc2.herHim] firmly in place."));
+						" [npc2.Name] [npc2.verb(let)] облегченно вздыхает, но вскоре этот вздох переходит в [npc2.a_sob+], когда [npc2.she] [npc2.verb(realise)] понимает, что [npc.name] [npc.has] еще не закончил с [npc2.herHim].",
+						" С [npc2.a_sob+], [npc2.name] [npc2.verb(continue)], протестуя и сопротивляясь [npc.name], пока [npc.she] [npc.verb(hold)] [npc2.herHim] на месте."));
 					break;
 				default:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-						" [npc2.A_moan+] escapes from between [npc2.namePos] [npc2.lips+], betraying [npc2.her] desire to continue licking and kissing [npc.her] [npc.feet]."));
+						" [npc2.A_moan+] вырывается из между [npc2.namePos] [npc2.lips+], выдавая [npc2.her] желание продолжать лизать и целовать [npc.her] [npc.feet]."));
 					break;
 			}
 			

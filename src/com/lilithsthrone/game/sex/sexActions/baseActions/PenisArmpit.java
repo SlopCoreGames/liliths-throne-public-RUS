@@ -29,36 +29,32 @@ public class PenisArmpit {
 			SexParticipantType.NORMAL) {
 		@Override
 		public String getActionTitle() {
-			return "Fuck armpit";
+			return "Трахать в подмышку";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Rub your [npc.cock] up and down against [npc2.namePos] [npc2.armpit+].";
+			return "Тереби свой [npc.cock] вверх и вниз о [npc2.namePos] [npc2.armpit+].";
 		}
 		@Override
 		public String getDescription() {
 			UtilText.nodeContentSB.setLength(0);
 			
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"[npc.Eagerly(pulling)] [npc2.namePos] [npc2.arm(true)] up, [npc.name] [npc.verb(press)] the [npc.cockHead+] of [npc.her] [npc.cock+] up against [npc2.her] now-exposed armpit,"
-								+ " before [npc.eagerly] starting to rub [npc.her] [npc.cock+] up and down against it.",
+					"[npc.Eagerly(с энтузиазмом, потягивая)] [npc2.namePos] [npc2.arm(true)] вверх, [npc.name] [npc.verb(press)] [npc.cockHead+] [npc.her] [npc.cock+] о теперь открытую подмышку [npc2.her], прежде чем [npc.eagerly] начнет тереть [npc.her] [npc.cock+] вверх и вниз по ней.",
 
-					"[npc.Name] [npc.verb(pull)] [npc2.namePos] [npc2.arm(true)] up, before rubbing the [npc.cockHead+] of [npc.her] [npc.cock] up against [npc2.her] [npc2.armpit+]."));
+					"[npc.Name] [npc.verb(pull)] [npc2.namePos] [npc2.arm(true)] вверх, прежде чем начать тереть [npc.cockHead+] [npc.her] [npc.cock] о [npc2.her] [npc2.armpit+]."));
 
 			if(!isTargetedCharacterInanimate()) {
 				switch(Main.sex.getSexPace(Main.sex.getCharacterTargetedForSexAction(this))) {
 					case SUB_RESISTING:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" [npc2.Name] [npc2.verb(let)] out [npc2.a_sob+] as [npc.name] [npc.verb(start)] using [npc2.her] [npc2.armpit],"
-										+ " and with tears running down [npc2.her] [npc2.face], [npc2.she] desperately [npc2.verb(beg)] for [npc.herHim] to stop.",
-								" With [npc2.a_sob+], [npc2.name] [npc2.verb(try)] to pull away from [npc.name];"
-										+ " tears run down [npc2.her] [npc2.face] as the unwelcome [npc.cock] slides against [npc2.her] [npc2.armpit]."));
+								" [npc2.Name] [npc2.verb(let)] [npc2.a_sob+], пока [npc.name] [npc.verb(start)], используя [npc2.her] [npc2.armpit], а по [npc2.her] [npc2.face] текут слезы, и [npc2.she] отчаянно [npc2.verb(beg)], чтобы [npc.herHim] прекратил.",
+								" С [npc2.a_sob+], [npc2.name] [npc2.verb(try)], чтобы отстраниться от [npc.name]; слезы текут по [npc2.her] [npc2.face], пока незваный [npc.cock] скользит по [npc2.her] [npc2.armpit]."));
 						break;
 					default:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" [npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc.name] [npc.verb(start)] using [npc2.her] [npc2.armpit],"
-										+ " before [npc2.eagerly] pushing back and helping to rub [npc.her] [npc.cock+] over it.",
-								" With [npc2.a_moan+], [npc2.name] [npc2.verb(start)] [npc2.eagerly] sliding [npc2.her] [npc2.armpit] up and down against [npc.namePos] [npc.cock+]."));
+								" [npc2.Name] [npc2.verb(let)] [npc2.a_moan+], пока [npc.name] [npc.verb(start)], используя [npc2.her] [npc2.armpit], прежде чем [npc2.eagerly] толкнет в ответ, помогая тереть [npc.her] [npc.cock+] о нее.",
+								" С [npc2.a_moan+], [npc2.name] [npc2.verb(start)], когда [npc2.eagerly] [npc2.her] [npc2.armpit] скользит вверх и вниз по [npc.namePos] [npc.cock+]."));
 						break;
 				}
 			}
@@ -73,50 +69,43 @@ public class PenisArmpit {
 				case SUB_EAGER:
 				case DOM_NORMAL:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							" [npc2.Name] [npc2.verb(start)] eagerly pushing [npc2.her] [npc2.armpit+] up and down against [npc.namePos] [npc.cock+] in response,"
-									+ " letting out [npc2.a_moan+] as [npc2.she] [npc2.do] so.",
+							" [npc2.Name] с нетерпением [npc2.verb(start)], толкая [npc2.her] [npc2.armpit+] вверх и вниз по [npc.namePos] [npc.cock+] в ответ, издавая [npc2.a_moan+], пока [npc2.she] [npc2.do].",
 		
-							" [npc2.A_moan+] bursts out from between [npc2.namePos] [npc2.lips+] as [npc2.she] eagerly [npc2.verb(slide)] [npc2.her] [npc2.armpit+] up and down against [npc.namePos] [npc.cock+].",
+							" [npc2.A_moan+] вырывается из между [npc2.namePos] [npc2.lips+], пока [npc2.she] с жадностью [npc2.verb(slide)] [npc2.her] [npc2.armpit+] вверх и вниз по [npc.namePos] [npc.cock+].",
 		
-							" [npc2.Moaning] in delight, [npc2.name] eagerly [npc2.verb(slide)] [npc2.her] [npc2.armpit+] up and down against [npc.namePos] [npc.cock+]."));
+							" [npc2.Moaning] в восторге, [npc2.name] с нетерпением [npc2.verb(slide)] [npc2.her] [npc2.armpit+] вверх и вниз по [npc.namePos] [npc.cock+]."));
 					break;
 				case SUB_RESISTING:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							" Desperately trying, and failing, to pull [npc2.her] [npc2.arm(true)] away from [npc.namePos] [npc.cock],"
-									+ " [npc2.name] [npc2.verb(let)] out [npc2.a_sob+], tears streaming down [npc2.her] [npc2.face] as [npc2.she] weakly [npc2.verb(beg)] for [npc.name] to stop using [npc2.her] [npc2.armpit].",
+							" Отчаянно пытаясь, но не в силах оттянуть [npc2.her] [npc2.arm(true)] от [npc.namePos] [npc.cock], [npc2.name] [npc2.verb(let)] [npc2.a_sob+], слезы текут по [npc2.her] [npc2.face], пока [npc2.she] слабо [npc2.verb(beg)], чтобы [npc.name] перестал использовать [npc2.her] [npc2.armpit].",
 		
-							" [npc2.A_sob+] bursts out from between [npc2.namePos] [npc2.lips] as [npc2.she] weakly [npc2.verb(try)] to push [npc.name] away,"
-									+ " tears streaming down [npc2.her] [npc2.face] as [npc2.she] [npc2.verb(plead)] for [npc.herHim] to get away from [npc2.her] [npc2.armpit].",
+							" [npc2.A_sob+] вырывается из между [npc2.namePos] [npc2.lips], пока [npc2.she] слабо [npc2.verb(try)], пытаясь оттолкнуть [npc.name], слезы текут по [npc2.her] [npc2.face], пока [npc2.she] [npc2.verb(plead)], чтобы [npc.herHim] поскорее ушел от [npc2.her] [npc2.armpit].",
 		
-							" [npc2.Sobbing] in distress, and with tears running down [npc2.her] [npc2.face],"
-									+ " [npc2.name] weakly [npc2.verb(struggle)] against [npc.name], pleading and crying for [npc.herHim] to get away from [npc2.her] [npc2.armpit]."));
+							" [npc2.Sobbing] в смятении, со слезами, бегущими по [npc2.her] [npc2.face], [npc2.name] слабо [npc2.verb(struggle)] против [npc.name], умоляя и плача, чтобы [npc.herHim] ушел от [npc2.her] [npc2.armpit]."));
 					break;
 				case SUB_NORMAL:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							" [npc2.Name] [npc2.verb(start)] sliding [npc2.her] [npc2.armpit+] up and down against [npc.namePos] [npc.cock+] in response,"
-									+ " letting out [npc2.a_moan+] as [npc2.she] [npc2.do] so.",
+							" [npc2.Name] [npc2.verb(start)] скользит [npc2.her] [npc2.armpit+] вверх и вниз по [npc.namePos] [npc.cock+] в ответ, издавая [npc2.a_moan+], пока [npc2.she] [npc2.do] так.",
 		
-							" [npc2.A_moan+] bursts out from between [npc2.namePos] [npc2.lips+] as [npc2.she] [npc2.verb(slide)] [npc2.her] [npc2.armpit+] up and down against [npc.namePos] [npc.cock+].",
+							" [npc2.A_moan+] вырывается из между [npc2.namePos] [npc2.lips+], пока [npc2.she] [npc2.verb(slide)] [npc2.her] [npc2.armpit+] вверх и вниз по [npc.namePos] [npc.cock+].",
 		
-							" [npc2.Moaning] in delight, [npc2.name] [npc2.verb(slide)] [npc2.her] [npc2.armpit+] up and down against [npc.namePos] [npc.cock+]."));
+							" [npc2.Moaning] в восторге, [npc2.name] [npc2.verb(slide)] [npc2.her] [npc2.armpit+] вверх и вниз по [npc.namePos] [npc.cock+]."));
 					break;
 				case DOM_GENTLE:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							" [npc2.Name] [npc2.verb(start)] gently sliding [npc2.her] [npc2.armpit+] up and down against [npc.namePos] [npc.cock+] in response,"
-									+ " letting out [npc2.a_moan+] as [npc2.she] [npc2.do] so.",
+							" [npc2.Name] [npc2.verb(start)] нежно скользит [npc2.her] [npc2.armpit+] вверх и вниз по [npc.namePos] [npc.cock+] в ответ, издавая [npc2.a_moan+], пока [npc2.she] [npc2.do] так.",
 		
-							" [npc2.A_moan+] bursts out from between [npc2.namePos] [npc2.lips+] as [npc2.she] gently [npc2.verb(slide)] [npc2.her] [npc2.armpit+] up and down against [npc.namePos] [npc.cock+].",
+							" [npc2.A_moan+] вырывается из между [npc2.namePos] [npc2.lips+], пока [npc2.she] нежно [npc2.verb(slide)] [npc2.her] [npc2.armpit+] вверх и вниз по [npc.namePos] [npc.cock+].",
 		
-							" [npc2.Moaning] in delight, [npc2.name] softly [npc2.verb(slide)] [npc2.her] [npc2.armpit+] up and down against [npc.namePos] [npc.cock+]."));
+							" [npc2.Moaning] в восторге, [npc2.name] мягко [npc2.verb(slide)] [npc2.her] [npc2.armpit+] вверх и вниз по [npc.namePos] [npc.cock+]."));
 					break;
 				case DOM_ROUGH:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							" [npc2.Name] [npc2.verb(start)] roughly sliding [npc2.her] [npc2.armpit+] up and down against [npc.namePos] [npc.cock+] in response,"
-									+ " letting out [npc2.a_moan+] as [npc2.she] [npc2.do] so.",
+							" [npc2.Name] [npc2.verb(start)] грубо скользит [npc2.her] [npc2.armpit+] вверх и вниз по [npc.namePos] [npc.cock+] в ответ, издавая [npc2.a_moan+], пока [npc2.she] [npc2.do] так.",
 		
-							" [npc2.A_moan+] bursts out from between [npc2.namePos] [npc2.lips+] as [npc2.she] forcefully [npc2.verb(slide)] [npc2.her] [npc2.armpit+] up and down against [npc.namePos] [npc.cock+].",
+							" [npc2.A_moan+] вырывается из между [npc2.namePos] [npc2.lips+], пока [npc2.she] с силой [npc2.verb(slide)] [npc2.her] [npc2.armpit+] вверх и вниз по [npc.namePos] [npc.cock+].",
 		
-							" [npc2.Moaning] in delight, [npc2.name] violently [npc2.verb(rub)] [npc2.her] [npc2.armpit+] up and down against [npc.namePos] [npc.cock+]."));
+							" [npc2.Moaning] в восторге, [npc2.name] яростно [npc2.verb(rub)] [npc2.her] [npc2.armpit+] вверх и вниз по [npc.namePos] [npc.cock+]."));
 					break;
 			}
 		}
@@ -133,25 +122,22 @@ public class PenisArmpit {
 			SexPace.DOM_GENTLE) {
 		@Override
 		public String getActionTitle() {
-			return "Gentle armpit fuck";
+			return "Нежный секс в подмышках";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Gently continue sliding your [npc.cock+] up and down against [npc2.namePos] [npc2.armpit+].";
+			return "Продолжайте мягко водить своим [npc.cock+] вверх и вниз по [npc2.namePos] [npc2.armpit+].";
 		}
 		@Override
 		public String getDescription() {
 			UtilText.nodeContentSB.setLength(0);
 			
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"Gently sliding [npc.her] [npc.cock+] up and down against [npc2.namePos] [npc2.armpit],"
-							+ " [npc.name] [npc.verb(start)] steadily bucking [npc.her] [npc.hips] back and forth, letting out a little [npc.moan] with every thrust as [npc.she] slowly [npc.verb(fuck)] [npc2.her] [npc2.armpit+].",
+					"Мягко водя [npc.her] [npc.cock+] вверх и вниз по [npc2.namePos] [npc2.armpit], [npc.name] steadily [npc.verb(start)] [npc.her] [npc.hips] вперед-назад, издавая легкий [npc.moan] при каждом толчке, пока [npc.she] медленно [npc.verb(fuck)] [npc2.her] [npc2.armpit+].",
 
-					"Gently rubbing [npc.her] [npc.cock+] up and down against [npc2.namePos] [npc2.armpit],"
-							+ " [npc.name] [npc.verb(start)] softly thrusting [npc.her] [npc.hips] forwards, letting out a little [npc.moan] as [npc.she] gently [npc.verb(fuck)] [npc2.her] [npc2.armpit+].",
+					"Мягко потирая [npc.her] [npc.cock+] вверх и вниз по [npc2.namePos] [npc2.armpit], [npc.name] softly [npc.verb(start)] [npc.her] [npc.hips] вперед, издавая легкий [npc.moan], пока [npc.she] нежно [npc.verb(fuck)] [npc2.her] [npc2.armpit+].",
 
-					"Softly pushing [npc.her] [npc.cock+] up against [npc2.namePos] [npc2.armpit], [npc.name] [npc.verb(let)] out a little [npc.moan] as [npc.she] [npc.verb(start)] to gently pump [npc.her] [npc.hips] back and forth,"
-							+ " breathing in [npc2.her] [npc2.scent] as [npc.she] slowly [npc.verb(fuck)] [npc2.her] [npc2.armpit+]."));
+					"Мягко прижимая [npc.her] [npc.cock+] к [npc2.namePos] [npc2.armpit], [npc.name] [npc.verb(let)] легкий [npc.moan], пока [npc.she] [npc.verb(start)] плавно качать [npc.her] [npc.hips] вперед-назад, вдыхая [npc2.her] [npc2.scent], пока [npc.she] медленно [npc.verb(fuck)] [npc2.her] [npc2.armpit+]."));
 
 			UtilText.nodeContentSB.append(getTargetedCharacterResponse(this));
 			
@@ -169,25 +155,22 @@ public class PenisArmpit {
 			SexPace.DOM_NORMAL) {
 		@Override
 		public String getActionTitle() {
-			return "Armpit fuck";
+			return "Подмышечный секс";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Continue sliding your [npc.cock+] up and down against [npc2.namePos] [npc2.armpit+].";
+			return "Продолжайте мягко водить своим [npc.cock+] вверх и вниз по [npc2.namePos] [npc2.armpit+].";
 		}
 		@Override
 		public String getDescription() {
 			UtilText.nodeContentSB.setLength(0);
 
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"Eagerly pushing [npc.her] [npc.cock+] up and down against [npc2.namePos] [npc2.armpit],"
-							+ " [npc.name] [npc.verb(start)] energetically bucking [npc.her] [npc.hips] back and forth, letting out [npc.a_moan+] with every thrust as [npc.she] greedily [npc.verb(fuck)] [npc2.her] [npc2.armpit+].",
+					"С жадностью толкая [npc.her] [npc.cock+] вверх и вниз по [npc2.namePos] [npc2.armpit], [npc.name] [npc.verb(start)] энергично дергает [npc.her] [npc.hips] взад-вперед, издавая [npc.a_moan+] при каждом толчке, пока [npc.she] жадно [npc.verb(fuck)] [npc2.her] [npc2.armpit+].",
 
-					"Desperately pushing [npc.her] [npc.cock+] up and down against [npc2.namePos] [npc2.armpit],"
-							+ " [npc.name] [npc.verb(start)] frantically thrusting [npc.her] [npc.hips] forwards, letting out [npc.a_moan+] as [npc.she] greedily [npc.verb(fuck)] [npc2.her] [npc2.armpit+].",
+					"Отчаянно толкая [npc.her] [npc.cock+] вверх и вниз по [npc2.namePos] [npc2.armpit], [npc.name] [npc.verb(start)] неистово вбивает [npc.her] [npc.hips] вперед, издавая [npc.a_moan+], пока [npc.she] жадно [npc.verb(fuck)] [npc2.her] [npc2.armpit+].",
 
-					"Greedily pushing [npc.her] [npc.cock+] up against [npc2.namePos] [npc2.armpit], [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(start)] to desperately pump [npc.her] [npc.hips] back and forth,"
-							+ " breathing in [npc2.her] [npc2.scent] as [npc.she] energetically [npc.verb(fuck)] [npc2.her] [npc2.armpit+]."));
+					"Жадно прижимая [npc.her] [npc.cock+] к [npc2.namePos] [npc2.armpit], [npc.name] [npc.verb(let)] издает [npc.a_moan+], пока [npc.she] [npc.verb(start)] отчаянно качает [npc.her] [npc.hips] взад-вперед, вдыхая [npc2.her] [npc2.scent], пока [npc.she] энергично [npc.verb(fuck)] [npc2.her] [npc2.armpit+]."));
 
 			UtilText.nodeContentSB.append(getTargetedCharacterResponse(this));
 			
@@ -205,25 +188,22 @@ public class PenisArmpit {
 			SexPace.DOM_ROUGH) {
 		@Override
 		public String getActionTitle() {
-			return "Rough armpit fuck";
+			return "Грубый секс в подмышке";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Continue roughly sliding your [npc.cock+] up and down against [npc2.namePos] [npc2.armpit+].";
+			return "Продолжить грубо водить своим [npc.cock+] вверх и вниз по [npc2.namePos] [npc2.armpit+].";
 		}
 		@Override
 		public String getDescription() {
 			UtilText.nodeContentSB.setLength(0);
 
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"Roughly thrusting [npc.her] [npc.cock+] up and down against [npc2.namePos] [npc2.armpit],"
-							+ " [npc.name] [npc.verb(start)] dominantly pumping [npc.her] [npc.hips] back and forth, letting out [npc.a_moan+] with every thrust as [npc.she] forcefully [npc.verb(fuck)] [npc2.her] [npc2.armpit+].",
+					"Грубо толкая [npc.her] [npc.cock+] вверх и вниз по [npc2.namePos] [npc2.armpit], [npc.name] [npc.verb(start)] властно качает [npc.her] [npc.hips] взад-вперед, издавая [npc.a_moan+] при каждом толчке, пока [npc.she] с силой [npc.verb(fuck)] [npc2.her] [npc2.armpit+].",
 
-					"Forcefully pushing [npc.her] [npc.cock+] up and down against [npc2.namePos] [npc2.armpit],"
-							+ " [npc.name] [npc.verb(start)] violently thrusting [npc.her] [npc.hips] forwards, letting out [npc.a_moan+] as [npc.she] roughly [npc.verb(fuck)] [npc2.her] [npc2.armpit+].",
+					"Сильно толкая [npc.her] [npc.cock+] вверх и вниз о [npc2.namePos] [npc2.armpit], [npc.name] [npc.verb(start)] яростно вгоняя [npc.her] [npc.hips] вперед, издавая [npc.a_moan+], пока [npc.she] грубо [npc.verb(fuck)] [npc2.her] [npc2.armpit+].",
 
-					"Dominantly pushing [npc.her] [npc.cock+] up against [npc2.namePos] [npc2.armpit], [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(start)] to slam [npc.her] [npc.hips] back and forth,"
-							+ " breathing in [npc2.her] [npc2.scent] as [npc.she] roughly [npc.verb(fuck)] [npc2.her] [npc2.armpit+]."));
+					"Доминантно прижимая [npc.her] [npc.cock+] к [npc2.namePos] [npc2.armpit], [npc.name] [npc.verb(let)] с [npc.a_moan+], пока [npc.she] [npc.verb(start)], чтобы с силой вбивать [npc.her] [npc.hips] туда-сюда, вдыхая [npc2.her] [npc2.scent], пока [npc.she] грубо [npc.verb(fuck)] [npc2.her] [npc2.armpit+]."));
 
 			UtilText.nodeContentSB.append(getTargetedCharacterResponse(this));
 			
@@ -241,25 +221,22 @@ public class PenisArmpit {
 			SexPace.SUB_NORMAL) {
 		@Override
 		public String getActionTitle() {
-			return "Armpit fuck";
+			return "Подмышечный секс";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Continue sliding your [npc.cock+] up and down against [npc2.namePos] [npc2.armpit+].";
+			return "Продолжайте мягко водить своим [npc.cock+] вверх и вниз по [npc2.namePos] [npc2.armpit+].";
 		}
 		@Override
 		public String getDescription() {
 			UtilText.nodeContentSB.setLength(0);
 
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"Pushing [npc.her] [npc.cock+] up and down against [npc2.namePos] [npc2.armpit],"
-							+ " [npc.name] [npc.verb(start)] bucking [npc.her] [npc.hips] back and forth, letting out [npc.a_moan+] with every thrust as [npc.she] greedily [npc.verb(fuck)] [npc2.her] [npc2.armpit+].",
+					"Толкая [npc.her] [npc.cock+] вверх и вниз о [npc2.namePos] [npc2.armpit], [npc.name] [npc.verb(start)] дергая [npc.her] [npc.hips] туда-сюда, издавая [npc.a_moan+] при каждом толчке, пока [npc.she] жадно [npc.verb(fuck)] [npc2.her] [npc2.armpit+].",
 
-					"Pushing [npc.her] [npc.cock+] up and down against [npc2.namePos] [npc2.armpit],"
-							+ " [npc.name] [npc.verb(start)] thrusting [npc.her] [npc.hips] forwards, letting out [npc.a_moan+] as [npc.she] happily [npc.verb(fuck)] [npc2.her] [npc2.armpit+].",
+					"Толкая [npc.her] [npc.cock+] вверх и вниз о [npc2.namePos] [npc2.armpit], [npc.name] [npc.verb(start)] вгоняя [npc.her] [npc.hips] вперед, издавая [npc.a_moan+], пока [npc.she] с наслаждением [npc.verb(fuck)] [npc2.her] [npc2.armpit+].",
 
-					"Pushing [npc.her] [npc.cock+] up against [npc2.namePos] [npc2.armpit], [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(start)] to pump [npc.her] [npc.hips] back and forth,"
-							+ " breathing in [npc2.her] [npc2.scent] as [npc.she] [npc.verb(fuck)] [npc2.her] [npc2.armpit+]."));
+					"Прижимая [npc.her] [npc.cock+] к [npc2.namePos] [npc2.armpit], [npc.name] [npc.verb(let)] с [npc.a_moan+], пока [npc.she] [npc.verb(start)], чтобы качать [npc.her] [npc.hips] туда-сюда, вдыхая [npc2.her] [npc2.scent], пока [npc.she] [npc.verb(fuck)] [npc2.her] [npc2.armpit+]."));
 
 			UtilText.nodeContentSB.append(getTargetedCharacterResponse(this));
 			
@@ -277,25 +254,22 @@ public class PenisArmpit {
 			SexPace.SUB_EAGER) {
 		@Override
 		public String getActionTitle() {
-			return "Eager armpit fuck";
+			return "Жадный секс в подмышках";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Eagerly continue sliding your [npc.cock+] up and down against [npc2.namePos] [npc2.armpit+].";
+			return "С энтузиазмом продолжать водить своим [npc.cock+] вверх и вниз по [npc2.namePos] [npc2.armpit+].";
 		}
 		@Override
 		public String getDescription() {
 			UtilText.nodeContentSB.setLength(0);
 
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"Eagerly pushing [npc.her] [npc.cock+] up and down against [npc2.namePos] [npc2.armpit],"
-							+ " [npc.name] [npc.verb(start)] energetically bucking [npc.her] [npc.hips] back and forth, letting out [npc.a_moan+] with every thrust as [npc.she] greedily [npc.verb(fuck)] [npc2.her] [npc2.armpit+].",
+					"С жадностью толкая [npc.her] [npc.cock+] вверх и вниз по [npc2.namePos] [npc2.armpit], [npc.name] [npc.verb(start)] энергично дергает [npc.her] [npc.hips] взад-вперед, издавая [npc.a_moan+] при каждом толчке, пока [npc.she] жадно [npc.verb(fuck)] [npc2.her] [npc2.armpit+].",
 
-					"Desperately pushing [npc.her] [npc.cock+] up and down against [npc2.namePos] [npc2.armpit],"
-							+ " [npc.name] [npc.verb(start)] frantically thrusting [npc.her] [npc.hips] forwards, letting out [npc.a_moan+] as [npc.she] greedily [npc.verb(fuck)] [npc2.her] [npc2.armpit+].",
+					"Отчаянно толкая [npc.her] [npc.cock+] вверх и вниз по [npc2.namePos] [npc2.armpit], [npc.name] [npc.verb(start)] неистово вбивает [npc.her] [npc.hips] вперед, издавая [npc.a_moan+], пока [npc.she] жадно [npc.verb(fuck)] [npc2.her] [npc2.armpit+].",
 
-					"Greedily pushing [npc.her] [npc.cock+] up against [npc2.namePos] [npc2.armpit], [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(start)] to desperately pump [npc.her] [npc.hips] back and forth,"
-							+ " breathing in [npc2.her] [npc2.scent] as [npc.she] energetically [npc.verb(fuck)] [npc2.her] [npc2.armpit+]."));
+					"Жадно прижимая [npc.her] [npc.cock+] к [npc2.namePos] [npc2.armpit], [npc.name] [npc.verb(let)] издает [npc.a_moan+], пока [npc.she] [npc.verb(start)] отчаянно качает [npc.her] [npc.hips] взад-вперед, вдыхая [npc2.her] [npc2.scent], пока [npc.she] энергично [npc.verb(fuck)] [npc2.her] [npc2.armpit+]."));
 
 			UtilText.nodeContentSB.append(getTargetedCharacterResponse(this));
 			
@@ -313,11 +287,11 @@ public class PenisArmpit {
 			SexPace.SUB_RESISTING) {
 		@Override
 		public String getActionTitle() {
-			return "Resist armpit fuck";
+			return "Сопротивляться сексу в подмышках";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Try to pull your [npc.cock] away from [npc2.namePos] [npc2.armpit+].";
+			return "Попытаться оттянуть свой [npc.cock] от [npc2.namePos] [npc2.armpit+].";
 		}
 		@Override
 		public String getDescription() {
@@ -326,37 +300,27 @@ public class PenisArmpit {
 			switch(Main.sex.getSexPace(Main.sex.getCharacterTargetedForSexAction(this))) {
 				case DOM_GENTLE:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"Desperately trying, and failing, to pull [npc.her] [npc.cock+] away from [npc2.name], [npc.name] [npc.verb(let)] out [npc.a_sob+] as, ignoring [npc.her] protests,"
-									+ " [npc2.she] slowly, yet firmly, [npc2.verb(push)] [npc2.her] [npc2.armpit] against [npc.her] [npc.cock+].",
+							"Отчаянно пытаясь, но так и не сумев оттянуть [npc.her] [npc.cock+] от [npc2.name], [npc.name] [npc.verb(let)] [npc.a_sob+], игнорируя протесты [npc.her], [npc2.she] медленно, но уверенно [npc2.verb(push)] [npc2.her] [npc2.armpit] против [npc.her] [npc.cock+].",
 
-							"[npc.A_sob+] bursts out from between [npc.namePos] [npc.lips] as [npc.she] weakly tries to push [npc2.name] away, but, totally ignoring [npc.her] protests,"
-									+ " [npc2.name] firmly [npc2.verb(hold)] [npc.herHim] in place, gently pushing [npc2.her] [npc2.armpit] against [npc.her] [npc.cock+].",
+							"[npc.A_sob+] вырывается из-под [npc.namePos] [npc.lips], пока [npc.she] слабо пытается оттолкнуть [npc2.name], но, полностью игнорируя [npc.her] протесты, [npc2.name] уверенно [npc2.verb(hold)] [npc.herHim] на месте, мягко прижимая [npc2.her] [npc2.armpit] к [npc.her] [npc.cock+].",
 
-							"[npc.Sobbing] in distress, [npc.name] weakly [npc.verb(struggle)] against [npc2.name] as [npc.she] [npc.verb(plead)] for [npc2.herHim] to let go of [npc.her] [npc.cock]."
-									+ " [npc2.Moaning] in delight, [npc2.name] totally [npc2.verb(ignore)] [npc.her] protests, slowly grinding [npc2.her] [npc2.armpit] against [npc.her] [npc.cock+]."));
+							"[npc.Sobbing] в смятении, [npc.name] слабо [npc.verb(struggle)] против [npc2.name], пока [npc.she] [npc.verb(plead)], чтобы [npc2.herHim] отпустила [npc.her] [npc.cock]. [npc2.Moaning] в восторге, [npc2.name] совершенно [npc2.verb(ignore)] протесты [npc.her], медленно растирая [npc2.her] [npc2.armpit] о [npc.her] [npc.cock+]."));
 					break;
 				case DOM_ROUGH:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"Desperately trying, and failing, to pull [npc.her] [npc.cock+] away from [npc2.name], [npc.name] [npc.verb(let)] out [npc.a_sob+] as, ignoring [npc.her] protests,"
-									+ " [npc2.she] violently [npc2.verb(grind)] [npc2.her] [npc2.armpit] against [npc.her] [npc.cock+].",
+							"Отчаянно пытаясь, но так и не сумев оттянуть [npc.her] [npc.cock+] от [npc2.name], [npc.name] [npc.verb(let)] [npc.a_sob+], игнорируя протесты [npc.her], [npc2.she] яростно [npc2.verb(grind)] [npc2.her] [npc2.armpit] против [npc.her] [npc.cock+].",
 
-							"[npc.A_sob+] bursts out from between [npc.namePos] [npc.lips] as [npc.she] weakly tries to push [npc2.name] away, but, totally ignoring [npc.her] protests,"
-									+ " [npc2.she] dominantly hold [npc.herHim] in place,"
-									+ " violently pushing [npc2.her] [npc2.armpit] against [npc.her] [npc.cock+].",
+							"[npc.A_sob+] вырывается из-под [npc.namePos] [npc.lips], пока [npc.she] слабо пытается оттолкнуть [npc2.name], но, полностью игнорируя протесты [npc.her], [npc2.she] властно удерживает [npc.herHim] на месте, яростно вжимая [npc2.her] [npc2.armpit] в [npc.her] [npc.cock+].",
 
-							"[npc.Sobbing] in distress, [npc.name] weakly [npc.verb(struggle)] against [npc2.name] as [npc.she] [npc.verb(plead)] for [npc2.name] to let go of [npc.her] [npc.cock]."
-									+ " [npc2.Moaning] in delight, [npc2.name] totally [npc2.verb(ignore)] [npc.her] protests, roughly grinding [npc2.her] [npc2.armpit] against [npc.her] [npc.cock+]."));
+							"[npc.Sobbing] в смятении, [npc.name] слабо [npc.verb(struggle)] против [npc2.name], пока [npc.she] [npc.verb(plead)], чтобы [npc2.name] отпустила [npc.her] [npc.cock]. [npc2.Moaning] в восторге, [npc2.name] совершенно [npc2.verb(ignore)] протесты [npc.her], грубо втирая [npc2.her] [npc2.armpit] в [npc.her] [npc.cock+]."));
 					break;
 				default: // DOM_NORMAL and in case anything goes wrong:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"Desperately trying, and failing, to pull [npc.her] [npc.cock+] away from [npc2.name], [npc.name] [npc.verb(let)] out [npc.a_sob+] as, ignoring [npc.her] protests,"
-									+ " [npc2.she] eagerly [npc2.verb(press)] [npc2.her] [npc2.armpit] against [npc.her] [npc.cock+].",
+							"Отчаянно пытаясь — и безуспешно — оттянуть [npc.her] [npc.cock+] от [npc2.name], [npc.name] [npc.verb(let)] из-под [npc.a_sob+], в то время как, игнорируя протесты [npc.her], [npc2.she] с жадностью [npc2.verb(press)] [npc2.her] [npc2.armpit] против [npc.her] [npc.cock+].",
 
-							"[npc.A_sob+] bursts out from between [npc.namePos] [npc.lips] as [npc.she] weakly tries to push [npc2.name] away, but, totally ignoring [npc.her] protests,"
-									+ " [npc2.she] firmly hold [npc.herHim] in place, eagerly pushing [npc2.her] [npc2.armpit] against [npc.her] [npc.cock+].",
+							"[npc.A_sob+] вырывается из-под [npc.namePos] [npc.lips], пока [npc.she] слабо пытается оттолкнуть [npc2.name], но, полностью игнорируя протесты [npc.her], [npc2.she] крепко удерживает [npc.herHim] на месте, с азартом вжимая [npc2.her] [npc2.armpit] в [npc.her] [npc.cock+].",
 
-							"[npc.Sobbing] in distress, [npc.name] weakly [npc.verb(struggle)] against [npc2.name] as [npc.she] [npc.verb(plead)] for [npc2.name] to let go of [npc.her] [npc.cock]."
-									+ " [npc2.Moaning] in delight, [npc2.name] totally [npc2.verb(ignore)] [npc.her] protests, eagerly grinding [npc2.her] [npc2.armpit] against [npc.her] [npc.cock+]."));
+							"[npc.Sobbing] в смятении, [npc.name] слабо [npc.verb(struggle)] против [npc2.name], пока [npc.she] [npc.verb(plead)], чтобы [npc2.name] отпустила [npc.her] [npc.cock]. [npc2.Moaning] в восторге, [npc2.name] полностью [npc2.verb(ignore)] протесты [npc.her], жадно втирая [npc2.her] [npc2.armpit] в [npc.her] [npc.cock+]."));
 					break;
 			}
 			
@@ -373,11 +337,11 @@ public class PenisArmpit {
 			SexParticipantType.NORMAL) {
 		@Override
 		public String getActionTitle() {
-			return "Stop armpit fuck";
+			return "Прекратить секс в подмышках";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Pull your [npc.cock+] away from [npc2.namePos] [npc2.armpit+].";
+			return "Оттяни свой [npc.cock+] от [npc2.namePos] [npc2.armpit+].";
 		}
 		@Override
 		public String getDescription() {
@@ -386,17 +350,15 @@ public class PenisArmpit {
 			switch(Main.sex.getSexPace(Main.sex.getCharacterPerformingAction())) {
 				case DOM_ROUGH:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"Roughly yanking [npc.her] [npc.cock+] away from [npc2.namePos] [npc2.armpit+],"
-									+ " [npc.name] dominantly [npc.verb(slide)] the [npc.cockHead] of [npc.her] [npc.cock] up and down against [npc2.her] [npc2.arm+(true)] one last time before pulling [npc.her] [npc.hips] back.",
+							"Грубо вырывая [npc.her] [npc.cock+] от [npc2.namePos] [npc2.armpit+], [npc.name] властно [npc.verb(slide)] [npc.cockHead] [npc.her] [npc.cock] вверх и вниз по [npc2.her] [npc2.arm+(true)] в последний раз, прежде чем оттянуть [npc.her] [npc.hips] назад.",
 
-							"Thrusting up against [npc2.namePos] [npc2.armpit+] one last time, [npc.name] then [npc2.verb(pull)] back, putting an end to the armpit fuck."));
+							"В последний раз мощно толкнувшись в [npc2.namePos] [npc2.armpit+], [npc.name] затем [npc2.verb(pull)] назад, завершая секс в подмышках."));
 					break;
 				default:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"Sliding [npc.her] [npc.cock+] away from [npc2.namePos] [npc2.armpit+],"
-									+ " [npc.name] slaps the [npc.cockHead] of [npc.her] [npc.cock] against [npc2.her] [npc2.arm+(true)] one last time before pulling [npc.her] [npc.hips] back.",
+							"Выскальзывая [npc.her] [npc.cock+] из [npc2.namePos] [npc2.armpit+], [npc.name] в последний раз шлепает [npc.cockHead] [npc.her] [npc.cock] о [npc2.her] [npc2.arm+(true)], прежде чем оттянуть [npc.her] [npc.hips] назад.",
 
-							"Pushing up against [npc2.namePos] [npc2.armpit+] one last time, [npc.name] then [npc2.verb(pull)] back, putting an end to the armpit fuck."));
+							"В последний раз толкнувшись вверх в [npc2.namePos] [npc2.armpit+], [npc.name] затем [npc2.verb(pull)] назад, завершая секс в подмышках."));
 					break;
 			}
 
@@ -404,16 +366,15 @@ public class PenisArmpit {
 				switch(Main.sex.getSexPace(Main.sex.getCharacterTargetedForSexAction(this))) {
 					case SUB_RESISTING:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" [npc2.Name] can't help but let out [npc2.sob+] as [npc.name] moves away,"
-										+ " and [npc2.she] [npc2.verb(continue)] crying and protesting as [npc2.she] [npc2.verb(plead)] for [npc.herHim] to leave [npc.herHim] alone.",
+								" [npc2.Name] не может не издать [npc2.sob+], когда [npc.name] отстраняется, а [npc2.she] [npc2.verb(continue)], плача и протестуя, пока [npc2.she] [npc2.verb(plead)], чтобы [npc.herHim] оставила [npc.herHim] в покое.",
 	
-								" With [npc2.a_sob+], [npc2.name] [npc2.verb(continue)] to struggle against [npc.name], tears streaming down [npc2.her] [npc2.face] as [npc2.she] [npc2.verb(beg)] to be left alone."));
+								" С [npc2.a_sob+], [npc2.name] [npc2.verb(continue)] бороться против [npc.name], слезы текут по [npc2.her] [npc2.face], пока [npc2.she] [npc2.verb(beg)] остаться в одиночестве."));
 						break;
 					default:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" [npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc.name] [npc.verb(pull)] [npc.her] [npc.cock+] back, eager for more of [npc.her] attention.",
+								" [npc2.Name] [npc2.verb(let)] из [npc2.a_moan+] как [npc.name] [npc.verb(pull)] [npc.her] [npc.cock+] назад, жаждая еще большего [npc.her] внимания.",
 	
-								" [npc2.A_moan+] escapes from between [npc2.namePos] [npc2.lips+], betraying [npc2.her] lust for [npc.namePos] [npc.cock+]."));
+								" [npc2.A_moan+] выскальзывает из-под [npc2.namePos] [npc2.lips+], выдавая [npc2.her] похоть к [npc.namePos] [npc.cock+]."));
 						break;
 				}
 			}
@@ -432,36 +393,34 @@ public class PenisArmpit {
 			SexParticipantType.NORMAL) {
 		@Override
 		public String getActionTitle() {
-			return "Armpit fucked";
+			return "Трахнуть в подмышке";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Press your [npc.armpit] against [npc2.namePos] [npc2.cock+] and get [npc2.herHim] to start fucking it.";
+			return "Прижми свой [npc.armpit] к [npc2.namePos] [npc2.cock+], чтобы заставить [npc2.herHim] начать трахать его.";
 		}
 		@Override
 		public String getDescription() {
 			UtilText.nodeContentSB.setLength(0);
 
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"With [npc.a_moan+], [npc.name] [npc.verb(lift)] [npc.her] [npc.arm(true)] and [npc.eagerly] [npc.verb(press)] [npc.her] [npc.armpit+] against [npc2.namePos] [npc2.cock+],"
-							+ " before [npc.eagerly] rubbing it up and down against [npc2.her] [npc2.cockHead+].",
+					"С помощью [npc.a_moan+], [npc.name] [npc.verb(lift)] [npc.her] [npc.arm(true)] и [npc.eagerly] [npc.verb(press)] [npc.her] [npc.armpit+] против [npc2.namePos] [npc2.cock+], прежде чем [npc.eagerly] начнет тереть его вверх и вниз по [npc2.her] [npc2.cockHead+].",
 
-					"Lifting up [npc.her] [npc.arm(true)], [npc.name] [npc.verb(bring)] [npc.her] [npc.armpit+] down to [npc2.namePos] groin, before [npc.eagerly] pressing [npc.her] [npc.armpit+] against [npc2.her] [npc2.cock+]."));
+					"Подняв [npc.her] [npc.arm(true)], [npc.name] [npc.verb(bring)] [npc.her] [npc.armpit+] вниз к [npc2.namePos] паху, прежде чем [npc.eagerly] прижмет [npc.her] [npc.armpit+] к [npc2.her] [npc2.cock+]."));
 
 			if(!isTargetedCharacterInanimate()) {
 				switch(Main.sex.getSexPace(Main.sex.getCharacterTargetedForSexAction(this))) {
 					case SUB_RESISTING:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" [npc2.Name] [npc2.verb(let)] out [npc2.a_sob+] as [npc.name] [npc.verb(force)] [npc.her] [npc.armpit] against [npc2.her] [npc2.cock+],"
-										+ " and struggling against [npc.herHim], [npc2.she] desperately [npc2.verb(try)] to pull away.",
+								" [npc2.Name] [npc2.verb(let)] из [npc2.a_sob+], пока [npc.name] [npc.verb(force)] [npc.her] [npc.armpit] против [npc2.her] [npc2.cock+], и, сопротивляясь [npc.herHim], [npc2.she] отчаянно [npc2.verb(try)], чтобы отстраниться.",
 	
-								" With [npc2.a_sob+], [npc2.name] [npc2.verb(struggle)] against [npc.name] as [npc.she] [npc.verb(force)] [npc.her] [npc.armpit] against [npc2.her] [npc2.cock]."));
+								" С помощью [npc2.a_sob+], [npc2.name] [npc2.verb(struggle)] против [npc.name], пока [npc.she] [npc.verb(force)] [npc.her] [npc.armpit] против [npc2.her] [npc2.cock]."));
 						break;
 					default:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" [npc2.Name] [npc2.verb(let)] out [npc2.a_moan+], [npc2.eagerly] bucking [npc2.her] [npc2.hips] forwards as [npc2.she] [npc2.verb(start)] [npc2.eagerly] grinding against [npc.her] [npc.armpit].",
+								" [npc2.Name] [npc2.verb(let)] из [npc2.a_moan+], [npc2.eagerly] дергаясь, [npc2.her] [npc2.hips] вперед, пока [npc2.she] [npc2.verb(start)] [npc2.eagerly], трусь о [npc.her] [npc.armpit].",
 	
-								" With [npc2.a_moan+], [npc2.name] [npc2.eagerly] [npc2.verb(thrust)] [npc2.her] [npc2.hips] forwards and [npc2.verb(press)] [npc2.her] [npc2.cock+] against [npc.namePos] [npc.armpit+]."));
+								" С [npc2.a_moan+], [npc2.name] [npc2.eagerly] [npc2.verb(thrust)] [npc2.her] [npc2.hips] вперед и [npc2.verb(press)] [npc2.her] [npc2.cock+] против [npc.namePos] [npc.armpit+]."));
 						break;
 				}
 			}
@@ -476,49 +435,43 @@ public class PenisArmpit {
 				case SUB_EAGER:
 				case DOM_NORMAL:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							" [npc2.Name] greedily [npc2.verb(grind)] [npc2.her] [npc2.cock+] against [npc.namePos] [npc.armpit+],"
-									+ " letting out [npc2.a_moan+] as [npc2.she] [npc2.do] so.",
+							" [npc2.Name] жадно [npc2.verb(grind)] [npc2.her] [npc2.cock+] против [npc.namePos] [npc.armpit+], издавая [npc2.a_moan+], пока [npc2.she] [npc2.do] так.",
 		
-							" [npc2.A_moan+] bursts out from [npc2.namePos] mouth, before [npc2.she] [npc2.verb(start)] eagerly thrusting [npc2.her] [npc2.cock+] against [npc.namePos] [npc.armpit].",
+							" [npc2.A_moan+] вырывается изо рта [npc2.namePos], прежде чем [npc2.she] [npc2.verb(start)] с нетерпением вгоняя [npc2.her] [npc2.cock+] против [npc.namePos] [npc.armpit].",
 									
-							" [npc2.Moaning] in delight, [npc2.name] eagerly [npc2.verb(press)] [npc2.her] [npc2.cock+] against [npc.namePos] [npc.armpit+]."));
+							" [npc2.Moaning] в восторге, [npc2.name] с жадностью [npc2.verb(press)] [npc2.her] [npc2.cock+] против [npc.namePos] [npc.armpit+]."));
 					break;
 				case SUB_RESISTING:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							" Failing to pull [npc2.her] [npc2.cock] away from [npc.namePos] [npc.armpit],"
-									+ " [npc2.name] [npc2.verb(let)] out [npc2.a_sob+] as [npc2.she] weakly [npc2.verb(try)] to struggle free.",
+							" Не в силах оттащить [npc2.her] [npc2.cock] от [npc.namePos] [npc.armpit], [npc2.name] [npc2.verb(let)] из [npc2.a_sob+], пока [npc2.she] слабо [npc2.verb(try)], пытаясь вырваться.",
 		
-							" [npc2.A_sob+] bursts out from between [npc2.namePos] [npc2.lips] as [npc2.she] weakly [npc2.verb(try)] to push [npc.name] away,"
-									+ " squirming and protesting as [npc.name] [npc.verb(continue)] to force [npc2.her] [npc2.cock+] in against [npc.her] [npc.armpit+].",
+							" [npc2.A_sob+] вырывается из между [npc2.namePos] [npc2.lips], пока [npc2.she] слабо [npc2.verb(try)], чтобы оттолкнуть [npc.name], извиваясь и протестуя, пока [npc.name] [npc.verb(continue)], чтобы втиснуть [npc2.her] [npc2.cock+] против [npc.her] [npc.armpit+].",
 		
-							" [npc2.Sobbing] in distress, [npc2.name] [npc2.verb(try)], in vain, to pull [npc2.her] [npc2.cock] away from [npc.namePos] [npc.armpit+]."));
+							" [npc2.Sobbing] в смятении, [npc2.name] тщетно [npc2.verb(try)], чтобы оттащить [npc2.her] [npc2.cock] от [npc.namePos] [npc.armpit+]."));
 					break;
 				case SUB_NORMAL:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							" [npc2.Name] [npc2.verb(thrust)] [npc2.her] [npc2.cock+] against [npc.namePos] [npc.armpit+],"
-									+ " letting out [npc2.a_moan+] as [npc2.she] [npc2.do] so.",
+							" [npc2.Name] [npc2.verb(thrust)] [npc2.her] [npc2.cock+] против [npc.namePos] [npc.armpit+], издавая [npc2.a_moan+], пока [npc2.she] [npc2.do] так.",
 		
-							" [npc2.A_moan+] bursts out from [npc2.namePos] mouth, before [npc2.she] [npc2.verb(start)] thrusting [npc2.her] [npc2.cock+] against [npc.namePos] [npc.armpit].",
+							" [npc2.A_moan+] вырывается изо рта [npc2.namePos], прежде чем [npc2.she] [npc2.verb(start)] с силой вгоняет [npc2.her] [npc2.cock+] в [npc.namePos] [npc.armpit].",
 									
-							" [npc2.Moaning] in delight, [npc2.name] [npc2.verb(press)] [npc2.her] [npc2.cock+] up against [npc.namePos] [npc.armpit+]."));
+							" [npc2.Moaning] в восторге, [npc2.name] нежно [npc2.verb(press)] [npc2.her] [npc2.cock+] вплотную к [npc.namePos] [npc.armpit+]."));
 					break;
 				case DOM_GENTLE:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							" [npc2.Name] gently [npc2.verb(thrust)] [npc2.her] [npc2.cock+] against [npc.namePos] [npc.armpit+],"
-									+ " letting out a soft [npc2.moan] as [npc2.she] [npc2.do] so.",
+							" [npc2.Name] мягко [npc2.verb(thrust)] [npc2.her] [npc2.cock+] против [npc.namePos] [npc.armpit+], издавая тихий [npc2.moan], пока [npc2.she] [npc2.do] так.",
 		
-							" A soft [npc2.moan] drifts out from [npc2.namePos] mouth, before [npc2.she] [npc2.verb(start)] gently thrusting [npc2.her] [npc2.cock+] against [npc.namePos] [npc.armpit].",
+							" Тихий [npc2.moan] вырывается изо рта [npc2.namePos], прежде чем [npc2.she] [npc2.verb(start)] плавно вгоняет [npc2.her] [npc2.cock+] в [npc.namePos] [npc.armpit].",
 									
-							" [npc2.Moaning] in delight, [npc2.name] gently [npc2.verb(thrust)] [npc2.her] [npc2.cock+] up against [npc.namePos] [npc.armpit+]."));
+							" [npc2.Moaning] в восторге, [npc2.name] мягко [npc2.verb(thrust)] [npc2.her] [npc2.cock+] вплотную к [npc.namePos] [npc.armpit+]."));
 					break;
 				case DOM_ROUGH:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							" [npc2.Name] violently [npc2.verb(thrust)] [npc2.her] [npc2.cock+] against [npc.namePos] [npc.armpit+],"
-									+ " letting out [npc2.a_moan+] as [npc2.she] [npc2.do] so.",
+							" [npc2.Name] яростно [npc2.verb(thrust)] [npc2.her] [npc2.cock+] против [npc.namePos] [npc.armpit+], издавая [npc2.a_moan+], пока [npc2.she] [npc2.do] так.",
 		
-							" [npc2.A_moan+] bursts out from [npc2.namePos] mouth, before [npc2.she] [npc2.verb(start)] roughly grinding [npc2.her] [npc2.cock+] against [npc.namePos] [npc.armpit].",
+							" [npc2.A_moan+] вырывается изо рта [npc2.namePos], прежде чем [npc2.she] [npc2.verb(start)] грубо втирает [npc2.her] [npc2.cock+] в [npc.namePos] [npc.armpit].",
 									
-							" [npc2.Moaning] in delight, [npc2.name] roughly [npc2.verb(thrust)] [npc2.her] [npc2.cock+] up against [npc.namePos] [npc.armpit+]."));
+							" [npc2.Moaning] в восторге, [npc2.name] грубо [npc2.verb(thrust)] [npc2.her] [npc2.cock+] вплотную к [npc.namePos] [npc.armpit+]."));
 					break;
 			}
 		}
@@ -535,22 +488,22 @@ public class PenisArmpit {
 			SexPace.DOM_GENTLE) {
 		@Override
 		public String getActionTitle() {
-			return "Gentle armpit fucked";
+			return "Нежный секс в подмышках";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Gently continue sliding your [npc.armpit+] up and down against [npc2.namePos] [npc2.cock+].";
+			return "Мягко продолжай водить своим [npc.armpit+] вверх и вниз по [npc2.namePos] [npc2.cock+].";
 		}
 		@Override
 		public String getDescription() {
 			UtilText.nodeContentSB.setLength(0);
 			
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"[npc.Name] [npc.verb(let)] out a soft [npc.moan] as [npc.she] gently [npc.verb(slide)] [npc.her] [npc.armpit] up and down against [npc2.namePos] [npc2.cock+].",
+					"[npc.Name] [npc.verb(let)] тихий [npc.moan], пока [npc.she] нежно [npc.verb(slide)] [npc.her] [npc.armpit] вверх и вниз по [npc2.namePos] [npc2.cock+].",
 
-					"With a soft [npc.moan], [npc.name] gently [npc.verb(start)] sliding [npc.her] [npc.armpit+] up and down against [npc2.namePos] [npc2.cock+].",
+					"С мягким [npc.moan], [npc.name] нежно [npc.verb(start)] скользит [npc.her] [npc.armpit+] вверх и вниз по [npc2.namePos] [npc2.cock+].",
 
-					"Slowly pressing [npc.her] [npc.armpit+] against [npc2.namePos] [npc2.cock+], [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(get)] [npc2.herHim] to fuck it."));
+					"Медленно прижимая [npc.her] [npc.armpit+] к [npc2.namePos] [npc2.cock+], [npc.name] [npc.verb(let)] тихий [npc.a_moan+], пока [npc.she] [npc.verb(get)] [npc2.herHim], чтобы трахнуть это."));
 
 			UtilText.nodeContentSB.append(getTargetedCharacterReceivingResponse(this));
 			
@@ -569,22 +522,22 @@ public class PenisArmpit {
 			SexPace.DOM_NORMAL) {
 		@Override
 		public String getActionTitle() {
-			return "Armpit fucked";
+			return "Трахнуть в подмышке";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Continue sliding your [npc.armpit+] up and down against [npc2.namePos] [npc2.cock+].";
+			return "Продолжай водить своим [npc.armpit+] вверх и вниз по [npc2.namePos] [npc2.cock+].";
 		}
 		@Override
 		public String getDescription() {
 			UtilText.nodeContentSB.setLength(0);
 
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] eagerly [npc.verb(slide)] [npc.her] [npc.armpit] up and down against [npc2.namePos] [npc2.cock+].",
+					"[npc.Name] [npc.verb(let)] [npc.a_moan+], пока [npc.she] жадно [npc.verb(slide)] [npc.her] [npc.armpit] вверх и вниз по [npc2.namePos] [npc2.cock+].",
 
-					"With [npc.a_moan+], [npc.name] happily [npc.verb(start)] sliding [npc.her] [npc.armpit+] up and down against [npc2.namePos] [npc2.cock+].",
+					"С [npc.a_moan+], [npc.name] счастливо [npc.verb(start)] скользит [npc.her] [npc.armpit+] вверх и вниз по [npc2.namePos] [npc2.cock+].",
 
-					"Eagerly pressing [npc.her] [npc.armpit+] down against [npc2.namePos] [npc2.cock+], [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(get)] [npc2.herHim] to fuck it."));
+					"Жадно прижимая [npc.her] [npc.armpit+] к [npc2.namePos] [npc2.cock+], [npc.name] [npc.verb(let)] тихий [npc.a_moan+], пока [npc.she] [npc.verb(get)] [npc2.herHim], чтобы трахнуть это."));
 
 			UtilText.nodeContentSB.append(getTargetedCharacterReceivingResponse(this));
 			
@@ -603,20 +556,20 @@ public class PenisArmpit {
 			SexPace.DOM_ROUGH) {
 		@Override
 		public String getActionTitle() {
-			return "Rough armpit fucked";
+			return "Грубый секс в подмышке";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Roughly continue sliding your [npc.armpit+] up and down against [npc2.namePos] [npc2.cock+].";
+			return "Грубо продолжай водить своим [npc.armpit+] вверх и вниз по [npc2.namePos] [npc2.cock+].";
 		}
 		@Override
 		public String getDescription() {
 			UtilText.nodeContentSB.setLength(0);
 
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] roughly [npc.verb(grind)] [npc.her] [npc.armpit] up and down against [npc2.namePos] [npc2.cock+].",
-					"With [npc.a_moan+], [npc.name] [npc.verb(start)] forcefully sliding [npc.her] [npc.armpit+] up and down against [npc2.namePos] [npc2.cock+].",
-					"Roughly pressing [npc.her] [npc.armpit+] down against [npc2.namePos] [npc2.cock+], [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(get)] [npc2.herHim] to fuck it."));
+					"[npc.Name] [npc.verb(let)] из [npc.a_moan+] как [npc.she] грубо [npc.verb(grind)] [npc.her] [npc.armpit] вверх и вниз по [npc2.namePos] [npc2.cock+].",
+					"С [npc.a_moan+], [npc.name] [npc.verb(start)] с силой скользит [npc.her] [npc.armpit+] вверх и вниз по [npc2.namePos] [npc2.cock+].",
+					"Грубо прижимая [npc.her] [npc.armpit+] к [npc2.namePos] [npc2.cock+], [npc.name] [npc.verb(let)] из [npc.a_moan+] как [npc.she] [npc.verb(get)] [npc2.herHim], чтобы трахнуть это."));
 
 			UtilText.nodeContentSB.append(getTargetedCharacterReceivingResponse(this));
 			
@@ -635,22 +588,22 @@ public class PenisArmpit {
 			SexPace.SUB_NORMAL) {
 		@Override
 		public String getActionTitle() {
-			return "Armpit fucked";
+			return "Трахнуть в подмышке";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Continue sliding your [npc.armpit+] up and down against [npc2.namePos] [npc2.cock+].";
+			return "Продолжай водить своим [npc.armpit+] вверх и вниз по [npc2.namePos] [npc2.cock+].";
 		}
 		@Override
 		public String getDescription() {
 			UtilText.nodeContentSB.setLength(0);
 
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(slide)] [npc.her] [npc.armpit] up and down against [npc2.namePos] [npc2.cock+].",
+					"[npc.Name] [npc.verb(let)] из [npc.a_moan+] как [npc.she] [npc.verb(slide)] [npc.her] [npc.armpit] вверх и вниз по [npc2.namePos] [npc2.cock+].",
 
-					"With [npc.a_moan+], [npc.name] happily [npc.verb(start)] sliding [npc.her] [npc.armpit+] up and down against [npc2.namePos] [npc2.cock+].",
+					"С [npc.a_moan+], [npc.name] счастливо [npc.verb(start)] скользит [npc.her] [npc.armpit+] вверх и вниз по [npc2.namePos] [npc2.cock+].",
 
-					"Pressing [npc.her] [npc.armpit+] down against [npc2.namePos] [npc2.cock+], [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(get)] [npc2.herHim] to fuck it."));
+					"Прижимая [npc.her] [npc.armpit+] к [npc2.namePos] [npc2.cock+], [npc.name] [npc.verb(let)] из [npc.a_moan+] как [npc.she] [npc.verb(get)] [npc2.herHim], чтобы трахнуть это."));
 
 			UtilText.nodeContentSB.append(getTargetedCharacterReceivingResponse(this));
 			
@@ -669,22 +622,22 @@ public class PenisArmpit {
 			SexPace.SUB_EAGER) {
 		@Override
 		public String getActionTitle() {
-			return "Eager armpit fucked";
+			return "Жадно трахаемая подмышка";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Eagerly continue sliding your [npc.armpit+] up and down against [npc2.namePos] [npc2.cock+].";
+			return "С энтузиазмом продолжай скользить своим [npc.armpit+] вверх и вниз по [npc2.namePos] [npc2.cock+].";
 		}
 		@Override
 		public String getDescription() {
 			UtilText.nodeContentSB.setLength(0);
 
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] eagerly [npc.verb(slide)] [npc.her] [npc.armpit] up and down against [npc2.namePos] [npc2.cock+].",
+					"[npc.Name] [npc.verb(let)] [npc.a_moan+], пока [npc.she] жадно [npc.verb(slide)] [npc.her] [npc.armpit] вверх и вниз по [npc2.namePos] [npc2.cock+].",
 
-					"With [npc.a_moan+], [npc.name] happily [npc.verb(start)] sliding [npc.her] [npc.armpit+] up and down against [npc2.namePos] [npc2.cock+].",
+					"С [npc.a_moan+], [npc.name] счастливо [npc.verb(start)] скользит [npc.her] [npc.armpit+] вверх и вниз по [npc2.namePos] [npc2.cock+].",
 
-					"Eagerly pressing [npc.her] [npc.armpit+] down against [npc2.namePos] [npc2.cock+], [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(get)] [npc2.herHim] to fuck it."));
+					"Жадно прижимая [npc.her] [npc.armpit+] к [npc2.namePos] [npc2.cock+], [npc.name] [npc.verb(let)] тихий [npc.a_moan+], пока [npc.she] [npc.verb(get)] [npc2.herHim], чтобы трахнуть это."));
 
 			UtilText.nodeContentSB.append(getTargetedCharacterReceivingResponse(this));
 			
@@ -703,11 +656,11 @@ public class PenisArmpit {
 			SexPace.SUB_RESISTING) {
 		@Override
 		public String getActionTitle() {
-			return "Resist armpit fucked";
+			return "Сопротивляющаяся подмышка";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Try and pull your [npc.armpit+] away from [npc2.namePos] [npc2.cock+].";
+			return "Попытаться оттянуть свой [npc.armpit+] от [npc2.namePos] [npc2.cock+].";
 		}
 		@Override
 		public String getDescription() {
@@ -717,33 +670,27 @@ public class PenisArmpit {
 			switch(Main.sex.getSexPace(Main.sex.getCharacterTargetedForSexAction(this))) {
 				case DOM_GENTLE:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"[npc.Name] [npc.verb(feel)] tears start to well up in [npc.her] [npc.eyes], and not being able to hold back any longer, [npc.she] suddenly [npc.verb(let)] out [npc.a_sob+],"
-									+ " weakly trying to pull away from [npc2.namePos] [npc2.cock] as [npc2.she] [npc2.verb(continue)] gently humping [npc.her] [npc.armpit].",
+							"[npc.Name] [npc.verb(feel)] слезы начинают наворачиваться на [npc.her] [npc.eyes], и, не в силах больше сдерживаться, [npc.she] внезапно [npc.verb(let)] из [npc.a_sob+], слабо пытаясь отстраниться от [npc2.namePos] [npc2.cock], пока [npc2.she] [npc2.verb(continue)] нежно вжимается в [npc.her] [npc.armpit].",
 
-							"[npc.A_sob+] bursts out from [npc.namePos] mouth as [npc.she] frantically [npc.verb(try)] to pull [npc.her] [npc.armpit] away from [npc2.namePos] [npc2.cock],"
-									+ " struggling in desperation as [npc2.she] [npc2.verb(continue)] slowly humping [npc.her] [npc.armpit].",
+							"[npc.A_sob+] вырывается изо рта [npc.namePos], пока [npc.she] отчаянно [npc.verb(try)], пытаясь оттянуть [npc.her] [npc.armpit] от [npc2.namePos] [npc2.cock], в безнадежной борьбе, пока [npc2.she] [npc2.verb(continue)] медленно вбивается в [npc.her] [npc.armpit].",
 
-							"Trying desperately to pull [npc.her] [npc.armpit] away from [npc2.name], [npc.name] [npc.sobVerb] in distress as [npc2.her] [npc2.cock+] [npc2.verb(continue)] gently sliding against [npc.her] [npc.armpit]."));
+							"Отчаянно пытаясь оттянуть [npc.her] [npc.armpit] от [npc2.name], [npc.name] [npc.sobVerb] в смятении, пока [npc2.her] [npc2.cock+] [npc2.verb(continue)] нежно скользит по [npc.her] [npc.armpit]."));
 					break;
 				case DOM_NORMAL:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"Y[npc.Name] [npc.verb(feel)] tears start to well up in [npc.her] [npc.eyes], and, not being able to hold back any longer, [npc.she] suddenly [npc.verb(let)] out [npc.a_sob+],"
-									+ " weakly trying to pull away from [npc2.namePos] [npc2.cock] as [npc2.she] [npc2.verb(continue)] eagerly humping [npc.her] [npc.armpit].",
+							"В [npc.her] [npc.eyes] [npc.verb(feel)] Y[npc.Name] начинают подступают слезы, и, не в силах больше сдерживаться, [npc.she] внезапно [npc.verb(let)] [npc.a_sob+], слабо пытаясь отстраниться от [npc2.namePos] [npc2.cock], пока [npc2.she] с жадностью [npc2.verb(continue)] [npc.her] [npc.armpit].",
 
-							"[npc.A_sob+] bursts out from [npc.namePos] mouth as [npc.she] frantically [npc.verb(try)] to pull [npc.her] [npc.armpit] away from [npc2.namePos] [npc2.cock],"
-									+ " struggling in desperation as [npc2.she] [npc2.verb(continue)] eagerly humping [npc.her] [npc.armpit].",
+							"[npc.A_sob+] вырывается изо рта [npc.namePos], пока [npc.she] отчаянно [npc.verb(try)], пытаясь оттянуть [npc.her] [npc.armpit] от [npc2.namePos] [npc2.cock], в безнадежной борьбе, пока [npc2.she] с жадностью [npc2.verb(continue)] вбивается в [npc.her] [npc.armpit].",
 
-							"Trying desperately to pull [npc.her] [npc.armpit] away from [npc2.name], [npc.name] [npc.sobVerb] in distress as [npc2.her] [npc2.cock+] [npc2.verb(continue)] eagerly sliding against [npc.her] [npc.armpit]."));
+							"Отчаянно пытаясь оттянуть [npc.her] [npc.armpit] от [npc2.name], [npc.name] [npc.sobVerb] в смятении, пока [npc2.her] [npc2.cock+] с жадностью [npc2.verb(continue)] скользит по [npc.her] [npc.armpit]."));
 					break;
 				case DOM_ROUGH:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"[npc.Name] [npc.verb(feel)] tears start to well up in [npc.her] [npc.eyes], and, not being able to hold back any longer, [npc.she] suddenly [npc.verb(let)] out [npc.a_sob+],"
-									+ " weakly trying to pull away from [npc2.namePos] [npc2.cock] as [npc2.she] [npc2.verb(continue)] roughly humping [npc.her] [npc.armpit].",
+							"[npc.her] [npc.eyes] начинают наполняться [npc.Name] [npc.verb(feel)], и, больше не в силах сдерживаться, [npc.she] внезапно [npc.verb(let)] [npc.a_sob+], слабо пытаясь отстраниться от [npc2.namePos] [npc2.cock], пока [npc2.she] [npc2.verb(continue)] грубо трахает [npc.her] [npc.armpit].",
 
-							"[npc.A_sob+] bursts out from [npc.namePos] mouth as [npc.she] frantically [npc.verb(try)] to pull [npc.her] [npc.armpit] away from [npc2.namePos] [npc2.cock],"
-									+ " struggling in desperation as [npc2.she] [npc2.verb(continue)] roughly humping [npc.her] [npc.armpit].",
+							"[npc.A_sob+] вырывается из рта [npc.namePos], пока [npc.she] отчаянно [npc.verb(try)], пытаясь оттащить [npc.her] [npc.armpit] от [npc2.namePos] [npc2.cock], в отчаянной борьбе, пока [npc2.she] [npc2.verb(continue)] грубо трахает [npc.her] [npc.armpit].",
 
-							"Trying desperately to pull [npc.her] [npc.armpit] away from [npc2.name], [npc.name] [npc.sobVerb] in distress as [npc2.her] [npc2.cock+] [npc2.verb(continue)] roughly grinding against [npc.her] [npc.armpit]."));
+							"Отчаянно пытаясь оттащить [npc.her] [npc.armpit] от [npc2.name], [npc.name] [npc.sobVerb] в смятении, пока [npc2.her] [npc2.cock+] [npc2.verb(continue)] грубо втираясь в [npc.her] [npc.armpit]."));
 					break;
 				default:
 					break;
@@ -763,11 +710,11 @@ public class PenisArmpit {
 			SexParticipantType.NORMAL) {
 		@Override
 		public String getActionTitle() {
-			return "Stop armpit fucked";
+			return "Прекратить секс в подмышках";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Get [npc2.name] to pull [npc2.her] [npc2.cock+] away against your [npc.armpit+].";
+			return "Заставить [npc2.name] оттащить [npc2.her] [npc2.cock+] от твоей [npc.armpit+].";
 		}
 		@Override
 		public String getDescription() {
@@ -777,15 +724,15 @@ public class PenisArmpit {
 			switch(Main.sex.getSexPace(Main.sex.getCharacterPerformingAction())) {
 				case DOM_ROUGH:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"Taking [npc.her] [npc.armpit] away from [npc2.namePos] [npc2.cock+], [npc.name] [npc.verb(let)] out a menacing growl as [npc.she] [npc.verb(command)] [npc2.herHim] to leave [npc.her] [npc.arm(true)] alone.",
+							"Забирая [npc.her] [npc.armpit] от [npc2.namePos] [npc2.cock+], [npc.name] [npc.verb(let)] угрожающее рычание, пока [npc.she] [npc.verb(command)] [npc2.herHim], чтобы оставить [npc.her] [npc.arm(true)] в покое.",
 
-							"[npc.Name] [npc.verb(lean)] into [npc2.name], inhaling [npc2.her] [npc2.scent] before quickly taking [npc.her] [npc.armpit] away from [npc2.her] [npc2.cock+]."));
+							"[npc.Name] [npc.verb(lean)] в [npc2.name], вдыхая [npc2.her] [npc2.scent], прежде чем быстро увести [npc.her] [npc.armpit] от [npc2.her] [npc2.cock+]."));
 					break;
 				default:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"Taking [npc.her] [npc.armpit] away from [npc2.namePos] [npc2.cock+], [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(tell)] [npc2.herHim] to leave [npc.her] [npc.arm(true)] alone.",
+							"Убирая [npc.her] [npc.armpit] от [npc2.namePos] [npc2.cock+], [npc.name] [npc.verb(let)] [npc.a_moan+] как [npc.she] [npc.verb(tell)] [npc2.herHim], чтобы оставить [npc.her] [npc.arm(true)] в покое.",
 
-							"[npc.Name] [npc.verb(lean)] into [npc2.name], inhaling [npc2.her] [npc2.scent] before taking [npc.her] [npc.armpit] away from [npc2.her] [npc2.cock+]."));
+							"[npc.Name] [npc.verb(lean)] в [npc2.name], вдыхая [npc2.her] [npc2.scent], прежде чем убрать [npc.her] [npc.armpit] от [npc2.her] [npc2.cock+]."));
 					break;
 			}
 
@@ -793,13 +740,13 @@ public class PenisArmpit {
 				switch(Main.sex.getSexPace(Main.sex.getCharacterTargetedForSexAction(this))) {
 					case SUB_RESISTING:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" [npc2.Name] [npc2.verb(let)] out a relieved sigh, which soon turns into [npc2.a_sob+] as [npc2.she] [npc2.verb(realise)] that [npc.name] [npc.has]n't finished with [npc2.herHim] just yet.",
+								" [npc2.Name] [npc2.verb(let)] облегченно вздыхает, но вскоре этот вздох переходит в [npc2.a_sob+], когда [npc2.she] [npc2.verb(realise)] понимает, что [npc.name] [npc.has] еще не закончил с [npc2.herHim].",
 	
-								" With [npc2.a_sob+], [npc2.name] [npc2.verb(continue)] to protest and struggle against [npc.name] as [npc.she] [npc.verb(hold)] [npc2.herHim] firmly in place."));
+								" С [npc2.a_sob+], [npc2.name] [npc2.verb(continue)], протестуя и сопротивляясь [npc.name], пока [npc.she] [npc.verb(hold)] [npc2.herHim] на месте."));
 						break;
 					default:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" [npc2.A_moan+] escapes from against [npc2.namePos] [npc2.lips+], betraying [npc2.her] desire to continue humping [npc.her] [npc.armpit]."));
+								" [npc2.A_moan+] вырывается из-под [npc2.namePos] [npc2.lips+], выдавая [npc2.her] желание продолжать трахать [npc.her] [npc.armpit]."));
 						break;
 				}
 			}

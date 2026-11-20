@@ -27,15 +27,15 @@ public class FingerNippleCrotch {
 		@Override
 		public String getActionTitle() {
 			if(Main.sex.getCharacterTargetedForSexAction(this).getBreastCrotchShape()==BreastShape.UDDERS) {
-				return "Pinch udder-nipples";
+				return "Сжимать соски-вымя";
 			} else {
-				return "Pinch crotch-nipples";
+				return "Сжимать соски в паху";
 			}
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Pinch [npc2.namePos] [npc2.crotchNipples+].";
+			return "Сжимать [npc2.namePos] [npc2.crotchNipples+].";
 		}
 
 		@Override
@@ -50,50 +50,43 @@ public class FingerNippleCrotch {
 			switch(Main.sex.getSexPace(Main.sex.getCharacterPerformingAction())) {
 				case DOM_GENTLE:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"Reaching up to [npc2.namePos] [npc2.crotchBoobs+], [npc.name] [npc.verb(let)] out a soft [npc.moan] as [npc.she] [npc.verb(start)] to gently pinch and rub at [npc2.her] [npc2.crotchNipples+].",
+							"Протягивая руку к [npc2.namePos] [npc2.crotchBoobs+], [npc.name] [npc.verb(let)] тихий [npc.moan], пока [npc.she] [npc.verb(start)] осторожно сжимает и растирает [npc2.her] [npc2.crotchNipples+].",
 
-							"[npc2.NamePos] [npc2.crotchBoobs+], fully on display, prove to be too tempting a target for [npc.name] to ignore,"
-									+ " and with a soft little [npc.moan], [npc.she] [npc.verb(start)] gently tugging and pinching [npc2.her] [npc2.crotchNipples+].",
+							"[npc2.NamePos] [npc2.crotchBoobs+], выставленные напоказ, оказываются слишком соблазнительной целью, чтобы [npc.name] могла их игнорировать, и с тихим маленьким [npc.moan], [npc.she] [npc.verb(start)] нежно тянет и щиплет [npc2.her] [npc2.crotchNipples+].",
 
-							"Teasing [npc.her] [npc.fingers] over [npc2.namePos] [npc2.crotchBoobRows] [npc2.crotchBoobs+], [npc.name] [npc.verb(start)] to gently tug and pinch at [npc2.her] [npc2.crotchNipples+]."));
+							"Дразня [npc.her] [npc.fingers] над [npc2.namePos] [npc2.crotchBoobRows] [npc2.crotchBoobs+], [npc.name] [npc.verb(start)] осторожно тянет и щиплет [npc2.her] [npc2.crotchNipples+]."));
 					break;
 				case DOM_NORMAL:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"Reaching up to [npc2.namePos] [npc2.crotchBoobs+], [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(start)] to eagerly pinch and rub at [npc2.her] [npc2.crotchNipples+].",
+							"Протягивая руку к [npc2.namePos] [npc2.crotchBoobs+], [npc.name] [npc.verb(let)] тихий [npc.a_moan+], пока [npc.she] [npc.verb(start)] с нетерпением сжимает и растирает [npc2.her] [npc2.crotchNipples+].",
 
-							"[npc2.NamePos] [npc2.crotchBoobs+], fully on display, prove to be too tempting a target for [npc.name] to ignore,"
-									+ " and with [npc.a_moan+], [npc.she] [npc.verb(start)] eagerly tugging and pinching [npc2.her] [npc2.crotchNipples+].",
+							"[npc2.NamePos] [npc2.crotchBoobs+], выставленные напоказ, оказываются слишком соблазнительной целью, чтобы [npc.name] могла их игнорировать, и с [npc.a_moan+], [npc.she] [npc.verb(start)] с нетерпением тянет и щиплет [npc2.her] [npc2.crotchNipples+].",
 
-							"Teasing [npc.her] [npc.fingers] over [npc2.namePos] [npc2.crotchBoobRows] [npc2.crotchBoobs+], [npc.name] [npc.verb(start)] eagerly tugging and pinching at [npc2.her] [npc2.crotchNipples+]."));
+							"Дразня [npc.her] [npc.fingers] над [npc2.namePos] [npc2.crotchBoobRows] [npc2.crotchBoobs+], [npc.name] [npc.verb(start)] с нетерпением тянет и щиплет [npc2.her] [npc2.crotchNipples+]."));
 					break;
 				case DOM_ROUGH:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"Reaching up to [npc2.namePos] [npc2.crotchBoobs+],"
-									+ " [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(start)] roughly groping [npc2.namePos] chest, before moving up to forcefully pinch and squeeze [npc2.her] [npc2.crotchNipples+].",
+							"Протянув руку к [npc2.namePos] [npc2.crotchBoobs+], [npc.name] [npc.verb(let)] [npc.a_moan+], пока [npc.she] [npc.verb(start)] грубо ощупывает [npc2.namePos] грудь, а затем переходит к тому, чтобы с силой ущипнуть и сжать [npc2.her] [npc2.crotchNipples+].",
 
-							"[npc2.NamePos] [npc2.crotchBoobs+], fully on display, prove to be too tempting a target for [npc.name] to ignore,"
-									+ " and with [npc.a_moan+], [npc.she] [npc.verb(start)] roughly pinching and squeezing [npc2.her] [npc2.crotchNipples+].",
+							"[npc2.NamePos] [npc2.crotchBoobs+], выставленные напоказ, оказываются слишком соблазнительной целью, чтобы [npc.name] мог их игнорировать, и при [npc.a_moan+], [npc.she] [npc.verb(start)] грубо щипает и сжимает [npc2.her] [npc2.crotchNipples+].",
 
-							"Sinking [npc.her] [npc.fingers] into [npc2.namePos] [npc2.crotchBoobRows] [npc2.crotchBoobs+],"
-									+ " [npc.name] [npc.verb(let)] out [npc.a_moan+] before starting to roughly pinch and squeeze [npc2.her] [npc2.crotchNipples+]."));
+							"Втискивая [npc.her] [npc.fingers] в [npc2.namePos] [npc2.crotchBoobRows] [npc2.crotchBoobs+], [npc.name] [npc.verb(let)] [npc.a_moan+], прежде чем начать грубо щипать и сжимать [npc2.her] [npc2.crotchNipples+]."));
 					break;
 				case SUB_EAGER:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"Reaching up to [npc2.namePos] [npc2.crotchBoobs+], [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(start)] to eagerly pinch and rub at [npc2.her] [npc2.crotchNipples+].",
+							"Протягивая руку к [npc2.namePos] [npc2.crotchBoobs+], [npc.name] [npc.verb(let)] тихий [npc.a_moan+], пока [npc.she] [npc.verb(start)] с нетерпением сжимает и растирает [npc2.her] [npc2.crotchNipples+].",
 
-							"[npc2.NamePos] [npc2.crotchBoobs+], fully on display, prove to be too tempting a target for [npc.name] to ignore,"
-									+ " and with [npc.a_moan+], [npc.she] [npc.verb(start)] eagerly tugging and pinching [npc2.her] [npc2.crotchNipples+].",
+							"[npc2.NamePos] [npc2.crotchBoobs+], выставленные напоказ, оказываются слишком соблазнительной целью, чтобы [npc.name] могла их игнорировать, и с [npc.a_moan+], [npc.she] [npc.verb(start)] с нетерпением тянет и щиплет [npc2.her] [npc2.crotchNipples+].",
 
-							"Teasing [npc.her] [npc.fingers] over [npc2.namePos] [npc2.crotchBoobRows] [npc2.crotchBoobs+], [npc.name] [npc.verb(start)] eagerly tugging and pinching at [npc2.her] [npc2.crotchNipples+]."));
+							"Дразня [npc.her] [npc.fingers] над [npc2.namePos] [npc2.crotchBoobRows] [npc2.crotchBoobs+], [npc.name] [npc.verb(start)] с нетерпением тянет и щиплет [npc2.her] [npc2.crotchNipples+]."));
 					break;
 				case SUB_NORMAL:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"Reaching up to [npc2.namePos] [npc2.crotchBoobs+], [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(start)] to pinch and rub at [npc2.her] [npc2.crotchNipples+].",
+							"Протянув руку к [npc2.namePos] [npc2.crotchBoobs+], [npc.name] [npc.verb(let)] [npc.a_moan+], пока [npc.she] [npc.verb(start)] щипать и теребить [npc2.her] [npc2.crotchNipples+].",
 
-							"[npc2.NamePos] [npc2.crotchBoobs+], fully on display, prove to be too tempting a target for [npc.name] to ignore,"
-									+ " and with [npc.a_moan+], [npc.she] [npc.verb(start)] tugging and pinching [npc2.her] [npc2.crotchNipples+].",
+							"[npc2.NamePos] [npc2.crotchBoobs+], выставленные напоказ, оказываются слишком соблазнительной целью, чтобы [npc.name] мог их игнорировать, и при [npc.a_moan+], [npc.she] [npc.verb(start)] тянет и щиплет [npc2.her] [npc2.crotchNipples+].",
 
-							"Teasing [npc.her] [npc.fingers] over [npc2.namePos] [npc2.crotchBoobRows] [npc2.crotchBoobs+], [npc.name] [npc.verb(start)] tugging and pinching at [npc2.her] [npc2.crotchNipples+]."));
+							"Дразня [npc.her] [npc.fingers] над [npc2.namePos] [npc2.crotchBoobRows] [npc2.crotchBoobs+], [npc.name] [npc.verb(start)] тянет и щиплет [npc2.her] [npc2.crotchNipples+]."));
 					break;
 				default:
 					break;
@@ -103,55 +96,51 @@ public class FingerNippleCrotch {
 				switch(Main.sex.getSexPace(Main.sex.getCharacterTargetedForSexAction(this))) {
 					case DOM_GENTLE:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" [npc2.Name] [npc2.verb(let)] out a soft [npc2.moan] at [npc.namePos] touch, before gently encouraging [npc.herHim] to continue giving [npc2.her] [npc2.crotchNipples+] [npc.her] full attention.",
+								" [npc2.Name] [npc2.verb(let)] тихий [npc2.moan] от [npc.namePos] прикосновения, прежде чем мягко подгонять [npc.herHim] продолжать уделять [npc2.her] [npc2.crotchNipples+] [npc.her] всё своё внимание.",
 	
-								" With a soft [npc2.moan], [npc2.name] slowly [npc2.verb(push)] [npc2.her] chest out, imploring [npc.name] to continue as [npc2.she] [npc2.verb(carry)] on making lewd little noises.",
+								" С мягким [npc2.moan], [npc2.name] медленно [npc2.verb(push)] [npc2.her] вперед, умоляя [npc.name] продолжать, пока [npc2.she] [npc2.verb(carry)] издает похотливые звуки.",
 	
-								" Softly [npc2.moaning] at [npc.her] touch, [npc2.name] gently [npc2.verb(encourage)] [npc.name] to carry on stimulating [npc2.her] [npc2.crotchNipples+]."));
+								" Мягко [npc2.moaning] от [npc.her] прикосновения, [npc2.name] нежно [npc2.verb(encourage)] [npc.name] продолжать стимулировать [npc2.her] [npc2.crotchNipples+]."));
 						break;
 					case DOM_NORMAL:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" [npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] at [npc.namePos] touch, before eagerly encouraging [npc.herHim] to continue giving [npc2.her] [npc2.crotchNipples+] [npc.her] full attention.",
+								" [npc2.Name] [npc2.verb(let)] тихий [npc2.a_moan+] от [npc.namePos] прикосновения, прежде чем с нетерпением подгонять [npc.herHim] продолжать уделять [npc2.her] [npc2.crotchNipples+] [npc.her] всё своё внимание.",
 	
-								" With [npc2.a_moan+], [npc2.name] eagerly [npc2.verb(push)] [npc2.her] chest out, imploring [npc.name] to continue as [npc2.she] [npc2.verb(carry)] on making lewd noises.",
+								" С [npc2.a_moan+], [npc2.name] с нетерпением [npc2.verb(push)] [npc2.her] вперед, умоляя [npc.name] продолжать, пока [npc2.she] [npc2.verb(carry)] издает похотливые звуки.",
 	
-								" [npc2.Moaning+] at [npc.her] touch, [npc2.name] eagerly [npc2.verb(encourage)] [npc.name] to carry on stimulating [npc2.her] [npc2.crotchNipples+]."));
+								" [npc2.Moaning+] от [npc.her] прикосновения, [npc2.name] с нетерпением [npc2.verb(encourage)] [npc.name] продолжать стимулировать [npc2.her] [npc2.crotchNipples+]."));
 						break;
 					case DOM_ROUGH:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" [npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] at [npc.namePos] touch, before roughly growling for [npc.herHim] to continue giving [npc2.her] [npc2.crotchNipples+] [npc.her] full attention.",
+								" [npc2.Name] [npc2.verb(let)] тихий [npc2.a_moan+] от [npc.namePos] прикосновения, прежде чем грубо прорычать, чтобы [npc.herHim] продолжал уделять [npc2.her] [npc2.crotchNipples+] [npc.her] всё своё внимание.",
 	
-								" With [npc2.a_moan+], [npc2.name] [npc2.verb(push)] [npc2.her] chest out, and in a firm tone,"
-										+ " [npc2.she] [npc2.verb(order)] [npc.name] to continue giving [npc2.her] [npc2.crotchNipples+] [npc.her] full attention.",
+								" С [npc2.a_moan+], [npc2.name] [npc2.verb(push)] грудь [npc2.her] вперед и твердым тоном, [npc2.she] [npc2.verb(order)] [npc.name] продолжать уделять [npc2.her] [npc2.crotchNipples+] [npc.her] всё своё внимание.",
 	
-								" Letting out [npc2.a_moan+] at [npc.her] touch, [npc2.name] [npc2.verb(demand)] that [npc.she] carries on stimulating [npc2.her] [npc2.crotchNipples+]."));
+								" Издавая [npc2.a_moan+] от [npc.her] прикосновения, [npc2.name] [npc2.verb(demand)], что [npc.she] продолжает стимулировать [npc2.her] [npc2.crotchNipples+]."));
 						break;
 					case SUB_EAGER:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" [npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] at [npc.namePos] touch, before eagerly encouraging [npc.herHim] to continue giving [npc2.her] [npc2.crotchNipples+] [npc.her] full attention.",
+								" [npc2.Name] [npc2.verb(let)] тихий [npc2.a_moan+] от [npc.namePos] прикосновения, прежде чем с нетерпением подгонять [npc.herHim] продолжать уделять [npc2.her] [npc2.crotchNipples+] [npc.her] всё своё внимание.",
 	
-								" With [npc2.a_moan+], [npc2.name] eagerly [npc2.verb(push)] [npc2.her] chest out, imploring [npc.herHim] to continue as [npc2.she] [npc2.verb(carry)] on making lewd noises.",
+								" С [npc2.a_moan+], [npc2.name] с нетерпением [npc2.verb(push)], выпятив [npc2.her] грудь и умоляя [npc.herHim] продолжать, пока [npc2.she] [npc2.verb(carry)], издавая похотливые звуки.",
 	
-								" [npc2.Moaning+] at [npc.her] touch, [npc2.name] eagerly [npc2.verb(encourage)] [npc.name] to carry on stimulating [npc2.her] [npc2.crotchNipples+]."));
+								" [npc2.Moaning+] от [npc.her] прикосновения, [npc2.name] с нетерпением [npc2.verb(encourage)] [npc.name] продолжать стимулировать [npc2.her] [npc2.crotchNipples+]."));
 						break;
 					case SUB_NORMAL:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" [npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] at [npc.namePos] touch, before encouraging [npc.herHim] to continue giving [npc2.her] [npc2.crotchNipples+] [npc.her] full attention.",
+								" [npc2.Name] [npc2.verb(let)] из-за [npc2.a_moan+] при [npc.namePos] касании, прежде чем подтолкнуть [npc.herHim] продолжить уделять [npc2.her] [npc2.crotchNipples+] всё свое [npc.her] внимание.",
 	
-								" With [npc2.a_moan+], [npc2.name] [npc2.verb(push)] [npc2.her] chest out, imploring [npc.herHim] to continue as [npc2.she] [npc2.verb(carry)] on making lewd noises.",
+								" С [npc2.a_moan+], [npc2.name] [npc2.verb(push)], выпятив [npc2.her] грудь и умоляя [npc.herHim] продолжать, пока [npc2.she] [npc2.verb(carry)], издавая похотливые звуки.",
 	
-								" [npc2.Moaning+] at [npc.her] touch, [npc2.name] [npc2.verb(encourage)] [npc.name] to carry on stimulating [npc2.her] [npc2.crotchNipples+]."));
+								" [npc2.Moaning+] при [npc.her] касании, [npc2.name] [npc2.verb(encourage)] [npc.name] продолжать стимулировать [npc2.her] [npc2.crotchNipples+]."));
 						break;
 					case SUB_RESISTING:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" [npc2.Name] instinctively [npc2.verb(try)] to pull back,"
-										+ " [npc2.sobbing] and struggling against [npc.namePos] touch as [npc2.she] [npc2.verb(try)] to knock [npc.her] [npc.fingers] away from [npc2.her] [npc2.crotchNipples+].",
+								" [npc2.Name] инстинктивно [npc2.verb(try)] отпрянуть, [npc2.sobbing] и сопротивляться [npc.namePos] касанию, пока [npc2.she] [npc2.verb(try)] оттолкнуть [npc.her] [npc.fingers] от [npc2.her] [npc2.crotchNipples+].",
 	
-								" With [npc2.a_sob+], [npc2.name] [npc2.verb(start)] writhing around in discomfort,"
-										+ " pleading for [npc.name] to leave [npc2.herHim] alone as [npc.she] [npc.verb(continue)] stimulating [npc2.her] [npc2.crotchNipples+].",
+								" С [npc2.a_sob+], [npc2.name] [npc2.verb(start)] корчится от дискомфорта, умоляя [npc.name] оставить [npc2.herHim] в покое, пока [npc.she] [npc.verb(continue)] стимулирует [npc2.her] [npc2.crotchNipples+].",
 	
-								" [npc2.A_sob+] bursts out from between [npc2.namePos] [npc2.lips+] in response to [npc.namePos] touch,"
-										+ " and as [npc.name] carries on stimulating [npc2.her] [npc2.crotchNipples+], [npc2.name] [npc2.verb(continue)] to struggle against [npc.herHim]."));
+								" [npc2.A_sob+] вырывается из между [npc2.namePos] [npc2.lips+] в ответ на [npc.namePos] касание, и пока [npc.name] продолжает стимулировать [npc2.her] [npc2.crotchNipples+], [npc2.name] [npc2.verb(continue)] сопротивляется [npc.herHim]."));
 						break;
 					default:
 						break;
@@ -160,25 +149,25 @@ public class FingerNippleCrotch {
 			
 			switch (Main.sex.getCharacterTargetedForSexAction(this).getBreastCrotchStoredMilk()) {
 				case ONE_TRICKLE:
-					UtilText.nodeContentSB.append(" As [npc.name] [npc.verb(start)] pinching [npc2.namePos] [npc2.crotchNipples], a small trickle of [npc2.milk] leaks out to run down [npc2.her] [npc2.crotchBoobs+].");
+					UtilText.nodeContentSB.append(" Пока [npc.name] [npc.verb(start)] щиплет [npc2.namePos] [npc2.crotchNipples], тонкая струйка [npc2.milk] вытекает и стекает по [npc2.her] [npc2.crotchBoobs+].");
 					break;
 				case TWO_SMALL_AMOUNT:
-					UtilText.nodeContentSB.append(" As [npc.name] [npc.verb(start)] pinching [npc2.namePos] [npc2.crotchNipples], a small squirt of [npc2.milk] leaks out to run down [npc2.her] [npc2.crotchBoobs+].");
+					UtilText.nodeContentSB.append(" Пока [npc.name] [npc.verb(start)] щиплет [npc2.namePos] [npc2.crotchNipples], небольшая порция [npc2.milk] выплескивается и стекает по [npc2.her] [npc2.crotchBoobs+].");
 					break;
 				case THREE_DECENT_AMOUNT:
-					UtilText.nodeContentSB.append(" As [npc.name] [npc.verb(start)] pinching [npc2.namePos] [npc2.crotchNipples], a trickle of [npc2.milk] runs down over [npc2.her] [npc2.crotchBoobs+].");
+					UtilText.nodeContentSB.append(" Пока [npc.name] [npc.verb(start)] щипает [npc2.namePos] [npc2.crotchNipples], тонкая струйка [npc2.milk] стекает по [npc2.her] [npc2.crotchBoobs+].");
 					break;
 				case FOUR_LARGE_AMOUNT:
-					UtilText.nodeContentSB.append(" [npc2.NamePos] [npc2.milk] [npc.verb(start)] to flow out over [npc.namePos] fingertips as [npc.she] greedily [npc.verb(milk)] [npc2.her] [npc2.crotchBoobs+].");
+					UtilText.nodeContentSB.append(" [npc2.NamePos] [npc2.milk] [npc.verb(start)], вытекая на [npc.namePos] кончики пальцев, пока [npc.she] жадно [npc.verb(milk)] [npc2.her] [npc2.crotchBoobs+].");
 					break;
 				case FIVE_VERY_LARGE_DROOLING:
-					UtilText.nodeContentSB.append(" [npc2.NamePos] [npc2.milk] [npc.verb(start)] drooling out over [npc.namePos] fingertips as [npc.she] greedily [npc.verb(milk)] [npc2.her] [npc2.crotchBoobs+].");
+					UtilText.nodeContentSB.append(" [npc2.NamePos] [npc2.milk] [npc.verb(start)], выплескиваясь на [npc.namePos] кончики пальцев, пока [npc.she] жадно [npc.verb(milk)] [npc2.her] [npc2.crotchBoobs+].");
 					break;
 				case SIX_EXTREME_AMOUNT_DRIPPING:
-					UtilText.nodeContentSB.append(" [npc2.NamePos] [npc2.milk] [npc.verb(start)] pouring out over [npc.namePos] fingertips as [npc.she] greedily [npc.verb(milk)] [npc2.her] [npc2.crotchBoobs+].");
+					UtilText.nodeContentSB.append(" [npc2.NamePos] [npc2.milk] [npc.verb(start)], изливаясь на [npc.namePos] кончики пальцев, пока [npc.she] жадно [npc.verb(milk)] [npc2.her] [npc2.crotchBoobs+].");
 					break;
 				case SEVEN_MONSTROUS_AMOUNT_POURING:
-					UtilText.nodeContentSB.append(" [npc2.NamePos] [npc2.milk] [npc.verb(start)] pouring out over [npc.namePos] fingertips as [npc.she] greedily [npc.verb(milk)] [npc2.her] [npc2.crotchBoobs+].");
+					UtilText.nodeContentSB.append(" [npc2.NamePos] [npc2.milk] [npc.verb(start)], изливаясь на [npc.namePos] кончики пальцев, пока [npc.she] жадно [npc.verb(milk)] [npc2.her] [npc2.crotchBoobs+].");
 					break;
 				default:
 					break;
@@ -206,15 +195,15 @@ public class FingerNippleCrotch {
 		@Override
 		public String getActionTitle() {
 			if(Main.sex.getCharacterTargetedForSexAction(this).getBreastCrotchShape()==BreastShape.UDDERS) {
-				return "Milk udders";
+				return "Доить вымя";
 			} else {
-				return "Milk crotch-boobs";
+				return "Доить лобковые бугорки";
 			}
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Pinch and tug at [npc2.namePos] [npc2.crotchNipples+] in order to coax [npc2.her] [npc2.milk+] out.";
+			return "Щипать и тянуть за [npc2.namePos] [npc2.crotchNipples+], чтобы выманить [npc2.her] [npc2.milk+].";
 		}
 
 		@Override
@@ -230,27 +219,21 @@ public class FingerNippleCrotch {
 			switch(Main.sex.getSexPace(Main.sex.getCharacterPerformingAction())) {
 				case DOM_GENTLE:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"[npc.Name] [npc.verb(trace)] [npc.her] [npc.fingers+] up and over [npc2.namePos] [npc2.crotchBoobs+], before homing in on [npc2.her] [npc2.crotchNipples+]."
-								+ " Gently tugging and squeezing at [npc2.namePos] [npc2.crotchNipples+], [npc.name] [npc.verb(let)] out a soft cry of delight as [npc.she] [npc.verb(manage)] to draw out",
+							"[npc.Name] [npc.verb(trace)] [npc.her] [npc.fingers+] вверх и по поверхности [npc2.namePos] [npc2.crotchBoobs+], прежде чем сосредоточиться на [npc2.her] [npc2.crotchNipples+]. Мягко потягивая и сжимая [npc2.namePos] [npc2.crotchNipples+], [npc.name] [npc.verb(let)] тихий крик восторга, пока [npc.she] [npc.verb(manage)], чтобы вытянуть",
 
-							"With a soft [npc.moan], [npc.name] gently [npc.verb(press)] [npc.her] [npc.fingers] into [npc2.namePos] [npc2.crotchBoobs+], before moving down to tease [npc2.her] [npc2.crotchNipples+]."
-								+ " Delicately pinching and squeezing at [npc2.namePos] [npc2.crotchNipples+], [npc.name] [npc.verb(let)] out a delighted cry as [npc.she] [npc.verb(manage)] to draw out"));
+							"С мягким [npc.moan], [npc.name] нежно [npc.verb(press)] [npc.her] [npc.fingers] в [npc2.namePos] [npc2.crotchBoobs+], прежде чем спуститься ниже, чтобы дразнить [npc2.her] [npc2.crotchNipples+]. Деликатно щипая и сжимая [npc2.namePos] [npc2.crotchNipples+], [npc.name] [npc.verb(let)] восторженный крик, пока [npc.she] [npc.verb(manage)], чтобы вытянуть"));
 					break;
 				case SUB_NORMAL: case DOM_NORMAL: case SUB_EAGER:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"[npc.Name] eagerly [npc.verb(trace)] [npc.her] [npc.fingers+] up and over [npc2.namePos] [npc2.crotchBoobs+], before quickly homing in on [npc2.her] [npc2.crotchNipples+]."
-								+ " Greedily tugging and squeezing at [npc2.namePos] [npc2.crotchNipples+], [npc.name] [npc.verb(let)] out a delighted cry as [npc.she] [npc.verb(manage)] to draw out",
+							"[npc.Name] жадно [npc.verb(trace)] [npc.her] [npc.fingers+] вверх и через [npc2.namePos] [npc2.crotchBoobs+], прежде чем быстро сосредоточиться на [npc2.her] [npc2.crotchNipples+]. Алчно щипая и сжимая [npc2.namePos] [npc2.crotchNipples+], [npc.name] [npc.verb(let)] восторженный крик, пока [npc.she] [npc.verb(manage)], чтобы вытянуть",
 
-							"With [npc.a_moan+], [npc.name] eagerly [npc.verb(press)] [npc.her] [npc.fingers] into [npc2.namePos] [npc2.crotchBoobs+], before quickly moving down to tease [npc2.her] [npc2.crotchNipples+]."
-									+ " Greedily pinching and squeezing at [npc2.namePos] [npc2.crotchNipples+], [npc.name] [npc.verb(let)] out a delighted cry as [npc.she] [npc.verb(manage)] to draw out"));
+							"С [npc.a_moan+], [npc.name] жадно [npc.verb(press)] [npc.her] [npc.fingers] в [npc2.namePos] [npc2.crotchBoobs+], прежде чем быстро спуститься ниже, чтобы дразнить [npc2.her] [npc2.crotchNipples+]. Алчно щипая и сжимая [npc2.namePos] [npc2.crotchNipples+], [npc.name] [npc.verb(let)] восторженный крик, пока [npc.she] [npc.verb(manage)], чтобы вытянуть"));
 					break;
 				case DOM_ROUGH:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"[npc.Name] digs [npc.her] [npc.fingers+] into [npc2.namePos] [npc2.crotchBoobs+], before moving [npc.her] rough touch up to [npc2.her] [npc2.crotchNipples+]."
-								+ " Forcefully pinching and squeezing [npc2.namePos] [npc2.crotchNipples+], [npc.name] [npc.verb(let)] out a triumphant growl as [npc.she] [npc.verb(manage)] to draw out",
+							"[npc.Name] впивается [npc.her] [npc.fingers+] в [npc2.namePos] [npc2.crotchBoobs+], прежде чем сменить [npc.her] грубое прикосновение на [npc2.her] [npc2.crotchNipples+]. Сильно щипая и сжимая [npc2.namePos] [npc2.crotchNipples+], [npc.name] [npc.verb(let)] победный рык, пока [npc.she] [npc.verb(manage)], чтобы вытянуть",
 
-							"With [npc.a_moan+], [npc.name] roughly digs [npc.her] [npc.fingers] into [npc2.namePos] [npc2.crotchBoobs+], before quickly moving down to roughly flick [npc2.her] [npc2.crotchNipples+]."
-									+ " Dominantly pinching and squeezing at [npc2.namePos] [npc2.crotchNipples+], [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(manage)] to draw out"));
+							"С помощью [npc.a_moan+], [npc.name] грубо втыкает [npc.her] [npc.fingers] в [npc2.namePos] [npc2.crotchBoobs+], после чего быстро опускается ниже, чтобы грубо пощекотать [npc2.her] [npc2.crotchNipples+]. Доминантно щипая и сжимая [npc2.namePos] [npc2.crotchNipples+], [npc.name] [npc.verb(let)] [npc.a_moan+], пока [npc.she] [npc.verb(manage)], чтобы выжать"));
 					break;
 				case SUB_RESISTING:
 					break;
@@ -258,40 +241,40 @@ public class FingerNippleCrotch {
 			
 			switch (Main.sex.getCharacterTargetedForSexAction(this).getBreastCrotchStoredMilk()) {
 				case ZERO_NONE://Shouldn't be able to be reached
-					UtilText.nodeContentSB.append(" no [npc2.milk] from [npc2.namePos] [npc2.crotchBoobs+].");
+					UtilText.nodeContentSB.append(" нисколько [npc2.milk] из [npc2.namePos] [npc2.crotchBoobs+].");
 					break;
 				case ONE_TRICKLE:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							" a small trickle of [npc2.milk] from [npc2.her] [npc2.crotchBoobs+].",
+							" тонкую струйку [npc2.milk] из [npc2.her] [npc2.crotchBoobs+].",
 
-							" a little trickle of [npc2.milk] from [npc2.her] [npc2.crotchBoobs+]."));
+							" небольшую струйку [npc2.milk] из [npc2.her] [npc2.crotchBoobs+]."));
 					break;
 				case TWO_SMALL_AMOUNT:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							" a small squirt of [npc2.milk] from [npc2.her] [npc2.crotchBoobs+].",
+							" маленькую струю [npc2.milk] из [npc2.her] [npc2.crotchBoobs+].",
 
-							" a little stream of [npc2.milk] from [npc2.her] [npc2.crotchBoobs+]."));
+							" тонкую струю [npc2.milk] из [npc2.her] [npc2.crotchBoobs+]."));
 					break;
 				case THREE_DECENT_AMOUNT:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							" a squirt of [npc2.milk] from [npc2.her] [npc2.crotchBoobs+].",
+							" брызги [npc2.milk] из [npc2.her] [npc2.crotchBoobs+].",
 
-							" a trickle of [npc2.milk] from [npc2.her] [npc2.crotchBoobs+]."));
+							" тонкую струйку [npc2.milk] из [npc2.her] [npc2.crotchBoobs+]."));
 					break;
 				case FOUR_LARGE_AMOUNT:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							" a flow of [npc2.milk] from [npc2.her] [npc2.crotchBoobs+].",
+							" поток [npc2.milk] из [npc2.her] [npc2.crotchBoobs+].",
 
-							" a stream of [npc2.milk] from [npc2.her] [npc2.crotchBoobs+]."));
+							" струю [npc2.milk] из [npc2.her] [npc2.crotchBoobs+]."));
 					break;
 				case FIVE_VERY_LARGE_DROOLING:
-					UtilText.nodeContentSB.append(" a heavy flow of [npc2.milk] from [npc2.her] [npc2.crotchBoobs+].");
+					UtilText.nodeContentSB.append(" обильный поток [npc2.milk] из [npc2.her] [npc2.crotchBoobs+].");
 					break;
 				case SIX_EXTREME_AMOUNT_DRIPPING:
-					UtilText.nodeContentSB.append(" a considerable amount of [npc2.milk] from [npc2.her] [npc2.crotchBoobs+].");
+					UtilText.nodeContentSB.append(" значительное количество [npc2.milk] из [npc2.her] [npc2.crotchBoobs+].");
 					break;
 				case SEVEN_MONSTROUS_AMOUNT_POURING:
-					UtilText.nodeContentSB.append(" a huge amount of [npc2.milk] from [npc2.her] [npc2.crotchBoobs+].");
+					UtilText.nodeContentSB.append(" целое море [npc2.milk] из [npc2.her] [npc2.crotchBoobs+].");
 					break;
 			}
 
@@ -299,36 +282,29 @@ public class FingerNippleCrotch {
 				switch(Main.sex.getSexPace(Main.sex.getCharacterTargetedForSexAction(this))) {
 					case DOM_GENTLE:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" [npc2.Name] [npc2.verb(let)] out a soft [npc2.moan] as [npc.name] [npc.verb(start)] to milk [npc2.herHim],"
-										+ " and, pushing [npc2.her] [npc2.crotchBoobs] out into [npc.her] [npc.hands], [npc2.name] gently [npc2.verb(encourage)] [npc.name] to continue.",
+								" [npc2.Name] [npc2.verb(let)] тихий [npc2.moan], пока [npc.name] [npc.verb(start)], чтобы подоить [npc2.herHim], и, с силой выталкивая [npc2.her] [npc2.crotchBoobs] в [npc.her] [npc.hands], [npc2.name] нежно [npc2.verb(encourage)] [npc.name], чтобы продолжить.",
 	
-								" [npc2.Name] can't help but [npc2.moanVerb] at the delightful feeling of having [npc2.her] [npc2.crotchBoobs] milked,"
-										+ " and, biting [npc2.her] [npc2.lip], [npc2.she] gently [npc2.verb(plead)] with [npc.name] to continue."));
+								" [npc2.Name] не может не [npc2.moanVerb] от восхитительного чувства, когда ее [npc2.her] [npc2.crotchBoobs] доят, и, прикусывая [npc2.her] [npc2.lip], [npc2.she] слегка [npc2.verb(plead)] с [npc.name], чтобы продолжить."));
 						break;
 					case DOM_NORMAL:
 					case SUB_EAGER:
 					case SUB_NORMAL:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" [npc2.Name] [npc2.verb(let)] out a delighted [npc2.moan] as [npc.name] [npc.verb(start)] to milk [npc2.herHim],"
-										+ " and, frantically pushing [npc2.her] [npc2.crotchBoobs] out into [npc.her] [npc.hands], [npc2.name] happily [npc2.verb(encourage)] [npc.name] to continue.",
+								" [npc2.Name] [npc2.verb(let)] восторженный [npc2.moan], пока [npc.name] [npc.verb(start)], чтобы подоить [npc2.herHim], и, лихорадочно выталкивая [npc2.her] [npc2.crotchBoobs] в [npc.her] [npc.hands], [npc2.name] счастливо [npc2.verb(encourage)] [npc.name], чтобы продолжить.",
 	
-								" [npc2.Name] can't help but [npc2.moanVerb] at the delightful feeling of having [npc2.her] [npc2.crotchBoobs] milked,"
-										+ " and, biting [npc2.her] [npc2.lip], [npc2.she] eagerly [npc2.verb(plead)] with [npc.name] to continue."));
+								" [npc2.Name] не может не [npc2.moanVerb] от восхитительного чувства, когда ее [npc2.her] [npc2.crotchBoobs] доят, и, прикусывая [npc2.her] [npc2.lip], [npc2.she] жадно [npc2.verb(plead)] с [npc.name], чтобы продолжить."));
 						break;
 					case DOM_ROUGH:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" [npc2.Name] [npc2.verb(let)] out a deeply satisfied growl as [npc.name] [npc.verb(start)] to milk [npc2.herHim],"
-										+ " and, pushing [npc2.her] [npc2.crotchBoobs] out into [npc.her] [npc.hands], [npc2.name] roughly [npc2.verb(order)] [npc.name] to continue.",
+								" [npc2.Name] [npc2.verb(let)] глубоко удовлетворенный рык, пока [npc.name] [npc.verb(start)], чтобы подоить [npc2.herHim], и, выталкивая [npc2.her] [npc2.crotchBoobs] в [npc.her] [npc.hands], [npc2.name] грубо [npc2.verb(order)] [npc.name], чтобы продолжить.",
 	
-								" [npc2.Name] can't help but [npc2.moanVerb] at the delightful feeling of having [npc2.her] [npc2.crotchBoobs] milked,"
-										+ " and, biting [npc2.her] [npc2.lip], [npc2.she] roughly [npc2.verb(order)] [npc.name] to continue."));
+								" [npc2.Name] не может не [npc2.moanVerb] от восхитительного чувства, когда [npc2.her] [npc2.crotchBoobs] доят, и, прикусывая [npc2.her] [npc2.lip], [npc2.she] грубо [npc2.verb(order)] [npc.name], чтобы продолжить."));
 						break;
 					case SUB_RESISTING:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" [npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc.name] [npc.verb(start)] to milk [npc2.herHim],"
-										+ " and, trying to pull [npc2.her] [npc2.crotchBoobs] away from [npc.her] [npc.hands], [npc2.name] desperately [npc2.verb(plead)] with [npc.name] to stop.",
+								" [npc2.Name] [npc2.verb(let)] [npc2.a_moan+], пока [npc.name] [npc.verb(start)], чтобы доить [npc2.herHim], и, пытаясь оттянуть [npc2.her] [npc2.crotchBoobs] от [npc.her] [npc.hands], [npc2.name] отчаянно [npc2.verb(plead)] с [npc.name], чтобы остановиться.",
 	
-								" Desperately trying to pull [npc2.her] [npc2.crotchBoobs+] away from the unwanted milking, [npc2.name] [npc2.verb(plead)] with [npc.name] to leave [npc2.herHim] alone."));
+								" Отчаянно пытаясь оттянуть [npc2.her] [npc2.crotchBoobs+] от нежелательного доения, [npc2.name] [npc2.verb(plead)] с [npc.name], чтобы оставить [npc2.herHim] в покое."));
 						break;
 				}
 			}
@@ -354,15 +330,15 @@ public class FingerNippleCrotch {
 		@Override
 		public String getActionTitle() {
 			if(Main.sex.getCharacterPerformingAction().getBreastCrotchShape()==BreastShape.UDDERS) {
-				return "Get udders milked";
+				return "Дать подоить вымя";
 			} else {
-				return "Get crotch-boobs milked";
+				return "Дать подоить лобковую грудь";
 			}
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Guide [npc2.namePos] [npc2.hands] up to your [npc.crotchBoobs+] and get [npc2.herHim] to milk you.";
+			return "Направь [npc2.namePos] [npc2.hands] к своим [npc.crotchBoobs+] и заставь [npc2.herHim] подоить тебя.";
 		}
 
 		@Override
@@ -378,29 +354,21 @@ public class FingerNippleCrotch {
 			switch(Main.sex.getSexPace(Main.sex.getCharacterPerformingAction())) {
 				case DOM_GENTLE:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"Taking hold of [npc2.namePos] [npc2.hand], [npc.name] [npc.verb(encourage)] [npc2.herHim] to trace [npc2.her] [npc2.fingers+] up and over [npc.her] [npc.crotchBoobs+],"
-									+ " before gently guiding [npc2.herHim] down to [npc.her] [npc.crotchNipples+]."
-									+ " Instructing [npc2.herHim] to tug and squeeze at [npc.her] [npc.crotchNipples+], [npc.name] [npc.verb(let)] out a soft cry as [npc2.namePos] [npc2.verb(manage)] to draw out",
+							"Схватив [npc2.namePos] [npc2.hand], [npc.name] [npc.verb(encourage)] [npc2.herHim], чтобы провести [npc2.her] [npc2.fingers+] вверх и через [npc.her] [npc.crotchBoobs+], а затем мягко направляя [npc2.herHim] вниз к [npc.her] [npc.crotchNipples+]. Приказывая [npc2.herHim] дергать и сжимать [npc.her] [npc.crotchNipples+], [npc.name] [npc.verb(let)] тихий крик, пока [npc2.namePos] [npc2.verb(manage)], чтобы выжать",
 
-							"With a soft [npc.moan], [npc.name] gently [npc.verb(guide)] [npc2.namePos] [npc2.fingers] into [npc.her] [npc.crotchBoobs+], before moving [npc2.her] touch down to tease [npc.her] [npc.crotchNipples+]."
-									+ " Instructing [npc2.herHim] to pinch and squeeze at [npc.her] [npc.crotchNipples+], [npc.name] [npc.verb(let)] out a delighted cry as [npc2.namePos] [npc2.verb(manage)] to draw out"));
+							"С мягким [npc.moan], [npc.name] нежно [npc.verb(guide)] [npc2.namePos] [npc2.fingers] в [npc.her] [npc.crotchBoobs+], прежде чем переместить [npc2.her] прикосновение ниже, чтобы дразнить [npc.her] [npc.crotchNipples+]. Приказывая [npc2.herHim] щипать и сжимать [npc.her] [npc.crotchNipples+], [npc.name] [npc.verb(let)] восторженный крик, пока [npc2.namePos] [npc2.verb(manage)], чтобы вытянуть"));
 					break;
 				case SUB_NORMAL: case DOM_NORMAL: case SUB_EAGER:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"Taking hold of [npc2.namePos] [npc2.hand], [npc.name] guide [npc2.her] [npc2.fingers+] up and over [npc.her] [npc.crotchBoobs+], before greedily guiding [npc2.herHim] down to [npc.her] [npc.crotchNipples+]."
-									+ " Telling [npc2.herHim] to tug and squeeze at [npc.her] [npc.crotchNipples+], [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc2.namePos] [npc2.verb(manage)] to draw out",
+							"Схватив [npc2.namePos] [npc2.hand], [npc.name] направляет [npc2.her] [npc2.fingers+] вверх и через [npc.her] [npc.crotchBoobs+], прежде чем жадно вести [npc2.herHim] вниз к [npc.her] [npc.crotchNipples+]. Веля [npc2.herHim] тянуть и сжимать [npc.her] [npc.crotchNipples+], [npc.name] [npc.verb(let)] [npc.a_moan+], пока [npc2.namePos] [npc2.verb(manage)], чтобы вытянуть",
 
-							"With [npc.a_moan+], [npc.name] eagerly [npc.verb(guide)] [npc2.namePos] [npc2.fingers] into [npc.her] [npc.crotchBoobs+], before moving [npc2.her] touch down to tease [npc.her] [npc.crotchNipples+]."
-									+ " Instructing [npc2.herHim] to pinch and squeeze at [npc.her] [npc.crotchNipples+], [npc.name] [npc.verb(let)] out a delighted cry as [npc2.namePos] [npc2.verb(manage)] to draw out"));
+							"С [npc.a_moan+], [npc.name] с нетерпением [npc.verb(guide)] [npc2.namePos] [npc2.fingers] в [npc.her] [npc.crotchBoobs+], прежде чем переместить [npc2.her] прикосновение ниже, чтобы дразнить [npc.her] [npc.crotchNipples+]. Приказывая [npc2.herHim] щипать и сжимать [npc.her] [npc.crotchNipples+], [npc.name] [npc.verb(let)] восторженный крик, пока [npc2.namePos] [npc2.verb(manage)], чтобы вытянуть"));
 					break;
 				case DOM_ROUGH:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"Grabbing hold of [npc2.namePos] [npc2.hand], [npc.name] roughly [npc.verb(force)] [npc2.her] [npc2.fingers+] up and over [npc.her] [npc.crotchBoobs+],"
-									+ " before dominantly guiding [npc2.her] touch down to [npc.her] [npc.crotchNipples+]."
-									+ " Ordering [npc2.herHim] to tug and squeeze at [npc.her] [npc.crotchNipples+], [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc2.namePos] [npc2.verb(manage)] to draw out",
+							"Схватив [npc2.namePos] [npc2.hand], [npc.name] грубо [npc.verb(force)] [npc2.her] [npc2.fingers+] вверх и через [npc.her] [npc.crotchBoobs+], а затем властно направляя [npc2.her] касание к [npc.her] [npc.crotchNipples+]. Приказывая [npc2.herHim] дергать и сжимать [npc.her] [npc.crotchNipples+], [npc.name] [npc.verb(let)] [npc.a_moan+], пока [npc2.namePos] [npc2.verb(manage)], чтобы выжать",
 
-							"With [npc.a_moan+], [npc.name] forcefully [npc.verb(guide)] [npc2.namePos] [npc2.fingers] into [npc.her] [npc.crotchBoobs+], before moving [npc2.her] touch down to tease [npc.her] [npc.crotchNipples+]."
-									+ " Ordering [npc2.herHim] to pinch and squeeze at [npc.her] [npc.crotchNipples+], [npc.name] [npc.verb(let)] out a delighted cry as [npc2.namePos] [npc2.verb(manage)] to draw out"));
+							"Схватив [npc.a_moan+], [npc.name] с силой [npc.verb(guide)] [npc2.namePos] [npc2.fingers] в [npc.her] [npc.crotchBoobs+], после чего перемещая [npc2.her] касание, чтобы дразнить [npc.her] [npc.crotchNipples+]. Приказывая [npc2.herHim] щипать и сжимать [npc.her] [npc.crotchNipples+], [npc.name] [npc.verb(let)] восторженный крик, пока [npc2.namePos] [npc2.verb(manage)], чтобы выжать"));
 					break;
 				case SUB_RESISTING:
 					break;
@@ -408,40 +376,40 @@ public class FingerNippleCrotch {
 			
 			switch (Main.sex.getCharacterPerformingAction().getBreastCrotchStoredMilk()) {
 				case ZERO_NONE:
-					UtilText.nodeContentSB.append(" no [npc.milk] from [npc.namePos] [npc.crotchBoobs+]."); //Shouldn't be able to be reached
+					UtilText.nodeContentSB.append(" никаких [npc.milk] из [npc.namePos] [npc.crotchBoobs+]."); //Shouldn't be able to be reached
 					break;
 				case ONE_TRICKLE:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							" a small trickle of [npc.milk] from [npc.her] [npc.crotchBoobs+].",
+							" тонкая струйка [npc.milk] из [npc.her] [npc.crotchBoobs+].",
 
-							" a little trickle of [npc.milk] from [npc.her] [npc.crotchBoobs+]."));
+							" небольшая струйка [npc.milk] из [npc.her] [npc.crotchBoobs+]."));
 					break;
 				case TWO_SMALL_AMOUNT:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							" a small squirt of [npc.milk] from [npc.her] [npc.crotchBoobs+].",
+							" маленький брызг [npc.milk] из [npc.her] [npc.crotchBoobs+].",
 
-							" a little stream of [npc.milk] from [npc.her] [npc.crotchBoobs+]."));
+							" небольшая струя [npc.milk] из [npc.her] [npc.crotchBoobs+]."));
 					break;
 				case THREE_DECENT_AMOUNT:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							" a squirt of [npc.milk] from [npc.her] [npc.crotchBoobs+].",
+							" брызг [npc.milk] из [npc.her] [npc.crotchBoobs+].",
 
-							" a trickle of [npc.milk] from [npc.her] [npc.crotchBoobs+]."));
+							" струйка [npc.milk] из [npc.her] [npc.crotchBoobs+]."));
 					break;
 				case FOUR_LARGE_AMOUNT:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							" a flow of [npc.milk] from [npc.her] [npc.crotchBoobs+].",
+							" поток [npc.milk] из [npc.her] [npc.crotchBoobs+].",
 
-							" a stream of [npc.milk] from [npc.her] [npc.crotchBoobs+]."));
+							" тонкая струйка [npc.milk] из [npc.her] [npc.crotchBoobs+]."));
 					break;
 				case FIVE_VERY_LARGE_DROOLING:
-					UtilText.nodeContentSB.append(" a heavy flow of [npc.milk] from [npc.her] [npc.crotchBoobs+].");
+					UtilText.nodeContentSB.append(" густая струя [npc.milk] из [npc.her] [npc.crotchBoobs+].");
 					break;
 				case SIX_EXTREME_AMOUNT_DRIPPING:
-					UtilText.nodeContentSB.append(" a considerable amount of [npc.milk] from [npc.her] [npc.crotchBoobs+].");
+					UtilText.nodeContentSB.append(" приличное количество [npc.milk] из [npc.her] [npc.crotchBoobs+].");
 					break;
 				case SEVEN_MONSTROUS_AMOUNT_POURING:
-					UtilText.nodeContentSB.append(" a huge amount of [npc.milk] from [npc.her] [npc.crotchBoobs+].");
+					UtilText.nodeContentSB.append(" огромное количество [npc.milk] из [npc.her] [npc.crotchBoobs+].");
 					break;
 			}
 
@@ -449,37 +417,29 @@ public class FingerNippleCrotch {
 				switch(Main.sex.getSexPace(Main.sex.getCharacterTargetedForSexAction(this))) {
 					case DOM_GENTLE:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" [npc2.Name] [npc2.verb(let)] out a soft [npc2.moan] as [npc2.she] [npc2.verb(start)] to milk [npc.name],"
-										+ " and as [npc.name] [npc.verb(push)] [npc.her] [npc.crotchBoobs] out into [npc2.her] [npc2.hands], [npc2.name] [npc2.verb(continue)] gently drawing the [npc.milk+] from [npc.her] [npc.crotchNipples].",
+								" [npc2.Name] [npc2.verb(let)] с тихим [npc2.moan], пока [npc2.she] [npc2.verb(start)], чтобы подоить [npc.name], и когда [npc.name] [npc.verb(push)] [npc.her] [npc.crotchBoobs] вытекает в [npc2.her] [npc2.hands], [npc2.name] [npc2.verb(continue)] нежно вытягивая [npc.milk+] из [npc.her] [npc.crotchNipples].",
 	
-								" [npc2.Name] can't help but let out [npc2.a_moan+] at the delightful feeling of milking [npc.namePos] [npc.crotchBoobs],"
-										+ " and, encouraged by the similar sounds that [npc.sheIs] making, [npc2.she] [npc2.verb(continue)] gently teasing the [npc.milk+] from [npc.namePos] [npc.crotchNipples]."));
+								" [npc2.Name] не может не издать [npc2.a_moan+] от восхитительного ощущения, когда [npc.crotchBoobs] доят [npc.namePos], и, воодушевленный похожими звуками, которые издает [npc.sheIs], [npc2.she] [npc2.verb(continue)] нежно дразнит [npc.milk+] из [npc.namePos] [npc.crotchNipples]."));
 						break;
 					case DOM_NORMAL:
 					case SUB_EAGER:
 					case SUB_NORMAL:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" [npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(start)] to milk [npc.name],"
-										+ " and as [npc.name] [npc.verb(push)] [npc.her] [npc.crotchBoobs] out into [npc2.her] [npc2.hands], [npc2.name] [npc2.verb(continue)] eagerly drawing the [npc.milk+] from [npc.her] [npc.crotchNipples].",
+								" [npc2.Name] [npc2.verb(let)] с [npc2.a_moan+], пока [npc2.she] [npc2.verb(start)], чтобы подоить [npc.name], и когда [npc.name] [npc.verb(push)] [npc.her] [npc.crotchBoobs] вытекает в [npc2.her] [npc2.hands], [npc2.name] [npc2.verb(continue)] жадно вытягивая [npc.milk+] из [npc.her] [npc.crotchNipples].",
 	
-								" [npc2.Name] can't help but let out [npc2.a_moan+] at the delightful feeling of milking [npc.namePos] [npc.crotchBoobs],"
-										+ " and, encouraged by the similar sounds that [npc.sheIs] making, [npc2.she] [npc2.verb(continue)] greedily squeezing the [npc.milk+] from [npc.namePos] [npc.crotchNipples]."));
+								" [npc2.Name] не может сдержать [npc2.a_moan+] от восхитительного ощущения, когда [npc.namePos] [npc.crotchBoobs] доится, а, воодушевленная похожими звуками, которые издает [npc.sheIs], [npc2.she] [npc2.verb(continue)] жадно выжимает [npc.milk+] из [npc.namePos] [npc.crotchNipples]."));
 						break;
 					case DOM_ROUGH:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" [npc2.Name] [npc2.verb(let)] out a growl as [npc2.she] [npc2.verb(start)] to milk [npc.name],"
-										+ " and as [npc.name] [npc.verb(push)] [npc.her] [npc.crotchBoobs] out into [npc2.her] [npc2.hands], [npc2.name] [npc2.verb(continue)] roughly drawing the [npc.milk+] from [npc.her] [npc.crotchNipples].",
+								" [npc2.Name] [npc2.verb(let)] рычание, пока [npc2.she] [npc2.verb(start)], чтобы доить [npc.name], и когда [npc.name] [npc.verb(push)] [npc.her] [npc.crotchBoobs] в [npc2.her] [npc2.hands], [npc2.name] [npc2.verb(continue)] грубо вытягивает [npc.milk+] из [npc.her] [npc.crotchNipples].",
 	
-								" [npc2.Name] can't help but let out [npc2.a_moan+] at the feeling of milking [npc.namePos] [npc.crotchBoobs],"
-										+ " and, encouraged by the similar sounds that [npc.sheIs] making, [npc2.she] [npc2.verb(continue)] roughly squeezing the [npc.milk+] from [npc.namePos] [npc.crotchNipples]."));
+								" [npc2.Name] не может сдержать [npc2.a_moan+] от ощущения, когда доится [npc.namePos] [npc.crotchBoobs], и, воодушевленная похожими звуками, которые издает [npc.sheIs], [npc2.she] [npc2.verb(continue)] грубо выжимает [npc.milk+] из [npc.namePos] [npc.crotchNipples]."));
 						break;
 					case SUB_RESISTING:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" [npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] and [npc2.verb(try)] to pull away, but, with a forceful yank, [npc.name] [npc.verb(pull)] [npc2.her] [npc2.hands] back into [npc.her] [npc.crotchBoobs],"
-										+ " making it quite clear that [npc2.sheHasFull] no choice but to squeeze the [npc.milk+] from [npc.her] [npc.crotchNipples].",
+								" [npc2.Name] [npc2.verb(let)] [npc2.a_moan+] и [npc2.verb(try)], чтобы отстраниться, но резким рывком [npc.name] [npc.verb(pull)] [npc2.her] [npc2.hands] обратно в [npc.her] [npc.crotchBoobs], ясно давая понять, что у [npc2.sheHasFull] нет другого выбора, кроме как выжимать [npc.milk+] из [npc.her] [npc.crotchNipples].",
 	
-								" [npc2.Name] desperately tries to pull away from [npc.namePos] [npc.crotchBoobs],"
-										+ " but, grabbing hold of [npc2.her] [npc2.hand], [npc.name] [npc.verb(force)] [npc2.herHim] to continue squeezing the [npc.milk+] from [npc.her] [npc.crotchNipples]."));
+								" [npc2.Name] отчаянно пытается вырваться из рук [npc.namePos] [npc.crotchBoobs], но, вцепившись в [npc2.her] [npc2.hand], [npc.name] [npc.verb(force)] [npc2.herHim], чтобы продолжить выжимать [npc.milk+] из [npc.her] [npc.crotchNipples]."));
 						break;
 				}
 			}
@@ -506,15 +466,15 @@ public class FingerNippleCrotch {
 		@Override
 		public String getActionTitle() {
 			if(Main.sex.getCharacterTargetedForSexAction(this).getBreastCrotchShape()== BreastShape.UDDERS) {
-				return "Finger udder-nipples";
+				return "Ласкать соски на вымени";
 			} else {
-				return "Finger crotch-nipples";
+				return "Ласкать соски в паху";
 			}
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Sink your [npc.fingers] into one of [npc2.namePos] fuckable [npc2.crotchNipples] and [npc2.verb(start)] fingering [npc2.her] breasts.";
+			return "Погрузите свой [npc.fingers] в одну из похотливых [npc2.crotchNipples] [npc2.namePos] и [npc2.verb(start)] перебирайте пальцами [npc2.her] груди.";
 		}
 
 		@Override
@@ -525,43 +485,33 @@ public class FingerNippleCrotch {
 			switch(Main.sex.getSexPace(Main.sex.getCharacterPerformingAction())) {
 				case DOM_GENTLE:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"Teasing [npc.her] [npc.fingers] over [npc2.namePos] [npc2.crotchBoobs+],"
-									+ " [npc2.name] [npc2.verb(let)] out a gasp as [npc.name] circles around one of [npc2.her] [npc2.crotchNipples+], before slowly pushing [npc.her] digits into [npc2.her] inviting orifice.",
+							"Дразня [npc.her] [npc.fingers] над [npc2.namePos] [npc2.crotchBoobs+], [npc2.name] [npc2.verb(let)] прерывисто вздыхает, пока [npc.name] описывает круги вокруг одного из [npc2.her] [npc2.crotchNipples+], прежде чем медленно втиснуть [npc.her] пальцев в манящее отверстие [npc2.her].",
 
-							"[npc.Name] [npc.verb(press)] [npc.her] [npc.fingers] against one of [npc2.namePos] [npc2.crotchNipples+],"
-									+ " and with a slow, steady pressure, [npc.she] gently [npc.verb(sink)] [npc.her] digits into the flesh of [npc2.namePos] breast."));
+							"[npc.Name] [npc.verb(press)] [npc.her] [npc.fingers] о одну из [npc2.namePos] [npc2.crotchNipples+], и медленным, уверенным давлением [npc.she] осторожно [npc.verb(sink)] [npc.her] пальцев в плоть [npc2.namePos] груди."));
 					break;
 				case DOM_NORMAL:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"Teasing [npc.her] [npc.fingers] over [npc2.namePos] [npc2.crotchBoobs+],"
-									+ " [npc2.name] [npc2.verb(let)] out a gasp as [npc.name] circles around one of [npc2.her] [npc2.crotchNipples+], before eagerly pushing [npc.her] digits into [npc2.her] inviting orifice.",
+							"Дразня [npc.her] [npc.fingers] над [npc2.namePos] [npc2.crotchBoobs+], [npc2.name] [npc2.verb(let)] прерывисто вздыхает, пока [npc.name] описывает круги вокруг одного из [npc2.her] [npc2.crotchNipples+], прежде чем жадно втиснуть [npc.her] пальцев в манящее отверстие [npc2.her].",
 
-							"[npc.Name] [npc.verb(press)] [npc.her] [npc.fingers] against one of [npc2.namePos] [npc2.crotchNipples+],"
-									+ " and with a steady pressure, [npc.she] greedily [npc.verb(sink)] [npc.her] digits into the flesh of [npc2.namePos] breast."));
+							"[npc.Name] [npc.verb(press)] [npc.her] [npc.fingers] о одну из [npc2.namePos] [npc2.crotchNipples+], и уверенным давлением [npc.she] жадно [npc.verb(sink)] [npc.her] пальцев в плоть [npc2.namePos] груди."));
 					break;
 				case DOM_ROUGH:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"Groping and squeezing [npc2.namePos] [npc2.crotchBoobs+],"
-									+ " [npc.name] [npc.verb(start)] to circle [npc.her] [npc.fingers] around one of [npc2.her] [npc2.crotchNipples+], before roughly forcing [npc.her] digits into [npc2.namePos] inviting orifice.",
+							"Ощупывая и сжимая [npc2.namePos] [npc2.crotchBoobs+], [npc.name] [npc.verb(start)], чтобы обвести [npc.her] [npc.fingers] вокруг одного из [npc2.her] [npc2.crotchNipples+], а затем грубо втискивая [npc.her] пальцев в манящее отверстие [npc2.namePos].",
 
-							"Greedily pressing [npc.her] [npc.fingers] against one of [npc2.namePos] [npc2.crotchNipples+],"
-									+ " [npc.name] [npc.verb(let)] out a little growl as [npc.she] roughly [npc.verb(sink)] [npc.her] digits into the flesh of [npc2.namePos] breast."));
+							"Алчно прижимая [npc.her] [npc.fingers] к одному из [npc2.namePos] [npc2.crotchNipples+], [npc.name] [npc.verb(let)] тихий рык, когда [npc.she] грубо [npc.verb(sink)] [npc.her] пальцев в плоть [npc2.namePos] груди."));
 					break;
 				case SUB_EAGER:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"Teasing [npc.her] [npc.fingers] over [npc2.namePos] [npc2.crotchBoobs+],"
-									+ " [npc2.name] [npc2.verb(let)] out a gasp as [npc.name] eagerly circles around one of [npc2.her] [npc2.crotchNipples+], before desperately pushing [npc.her] digits into [npc2.her] inviting orifice.",
+							"Дразня [npc.her] [npc.fingers] по поверхности [npc2.namePos] [npc2.crotchBoobs+], [npc2.name] [npc2.verb(let)] вздох, пока [npc.name] жадно обводит один из [npc2.her] [npc2.crotchNipples+], прежде чем отчаянно втиснуть [npc.her] пальцев в манящее отверстие [npc2.her].",
 
-							"[npc.Name] [npc.verb(press)] [npc.her] [npc.fingers] against one of [npc2.namePos] [npc2.crotchNipples+],"
-									+ " and with a steady pressure, [npc.she] eagerly [npc.verb(sink)] [npc.her] digits into the flesh of [npc2.namePos] breast."));
+							"[npc.Name] [npc.verb(press)] [npc.her] [npc.fingers] к одному из [npc2.namePos] [npc2.crotchNipples+], и с нарастающим давлением [npc.she] жадно [npc.verb(sink)] [npc.her] пальцев в плоть [npc2.namePos] груди."));
 					break;
 				case SUB_NORMAL:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"Teasing [npc.her] [npc.fingers] over [npc2.namePos] [npc2.crotchBoobs+],"
-									+ " [npc2.name] [npc2.verb(let)] out a gasp as [npc.name] circles around one of [npc2.her] [npc2.crotchNipples+], before eagerly pushing [npc.her] digits into [npc2.her] inviting orifice.",
+							"Дразня [npc.her] [npc.fingers] над [npc2.namePos] [npc2.crotchBoobs+], [npc2.name] [npc2.verb(let)] прерывисто вздыхает, пока [npc.name] описывает круги вокруг одного из [npc2.her] [npc2.crotchNipples+], прежде чем жадно втиснуть [npc.her] пальцев в манящее отверстие [npc2.her].",
 
-							"[npc.Name] [npc.verb(press)] [npc.her] [npc.fingers] against one of [npc2.namePos] [npc2.crotchNipples+],"
-									+ " and with a steady pressure, [npc.she] greedily [npc.verb(sink)] [npc.her] digits into the flesh of [npc2.namePos] breast."));
+							"[npc.Name] [npc.verb(press)] [npc.her] [npc.fingers] о одну из [npc2.namePos] [npc2.crotchNipples+], и уверенным давлением [npc.she] жадно [npc.verb(sink)] [npc.her] пальцев в плоть [npc2.namePos] груди."));
 					break;
 				default:
 					break;
@@ -571,51 +521,39 @@ public class FingerNippleCrotch {
 				switch(Main.sex.getSexPace(Main.sex.getCharacterTargetedForSexAction(this))) {
 					case DOM_GENTLE:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" [npc2.Name] [npc2.verb(let)] out a soft [npc2.moan] as [npc.name] [npc.verb(start)] fingering [npc2.namePos] [npc2.crotchBoobs],"
-										+ " gently pushing [npc2.her] chest out as [npc2.she] [npc2.verb(help)] [npc.name] sink [npc.her] [npc.fingers] even deeper into [npc2.her] [npc2.crotchNipple+].",
+								" [npc2.Name] [npc2.verb(let)] тихий [npc2.moan], пока [npc.name] [npc.verb(start)] пальцами [npc2.namePos] [npc2.crotchBoobs], мягко выпячивая [npc2.her] грудь, когда [npc2.she] [npc2.verb(help)] [npc.name] погружают [npc.her] [npc.fingers] еще глубже в [npc2.her] [npc2.crotchNipple+].",
 	
-								" With a soft [npc2.moan], [npc2.name] slowly [npc2.verb(push)] [npc2.her] chest out,"
-										+ " imploring [npc.name] to sink [npc.her] [npc.fingers+] even deeper into [npc2.her] breast."));
+								" С мягким [npc2.moan], [npc2.name] медленно [npc2.verb(push)] [npc2.her] грудь вперед, умоляя [npc.name] погрузить [npc.her] [npc.fingers+] еще глубже в [npc2.her] грудь."));
 						break;
 					case DOM_NORMAL:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" [npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc.name] [npc.verb(start)] fingering [npc2.namePos] [npc2.crotchBoob],"
-										+ " eagerly pushing [npc2.her] chest out as [npc2.she] [npc2.verb(help)] [npc.name] sink [npc.her] [npc.fingers] even deeper into [npc2.her] [npc2.crotchNipple+].",
+								" [npc2.Name] [npc2.verb(let)] наружу, пока [npc2.a_moan+] как [npc.name] [npc.verb(start)] пальцами ласкает [npc2.namePos] [npc2.crotchBoob], с нетерпением выпячивая [npc2.her] грудь, пока [npc2.she] [npc2.verb(help)] [npc.name] погружаются [npc.her] [npc.fingers] еще глубже в [npc2.her] [npc2.crotchNipple+].",
 	
-								" With [npc.a_moan+], [npc2.name] eagerly [npc2.verb(push)] [npc2.her] chest out,"
-										+ " imploring [npc.name] to sink [npc.her] [npc.fingers] even deeper into [npc2.her] breast."));
+								" С [npc.a_moan+], [npc2.name] с нетерпением [npc2.verb(push)] выпячивает [npc2.her] грудь, умоляя [npc.name] погрузить [npc.her] [npc.fingers] еще глубже в [npc2.her] грудь."));
 						break;
 					case DOM_ROUGH:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" [npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc.name] [npc.verb(start)] fingering [npc2.namePos] [npc2.crotchBoobs],"
-										+ " violently thrusting [npc2.her] chest out against [npc.her] touch as [npc2.she] [npc2.verb(command)] [npc.name] to sink [npc.her] [npc.fingers] even deeper into [npc2.her] [npc2.crotchNipple+].",
+								" [npc2.Name] [npc2.verb(let)] извлекает [npc2.a_moan+] как [npc.name] [npc.verb(start)] перебирая [npc2.namePos] [npc2.crotchBoobs], яростно выпячивая [npc2.her] грудь навстречу [npc.her] касаниям, пока [npc2.she] [npc2.verb(command)] [npc.name], чтобы погрузить [npc.her] [npc.fingers] еще глубже в [npc2.her] [npc2.crotchNipple+].",
 	
-								" With [npc2.a_moan+], [npc2.name] respond by violently thrusting [npc2.her] chest out,"
-										+ " commanding [npc.name] to sink [npc.her] [npc.fingers] even deeper into [npc2.her] breast."));
+								" С [npc2.a_moan+], [npc2.name] отвечает яростным выпячиванием [npc2.her] груди, приказывая [npc.name] погрузить [npc.her] [npc.fingers] еще глубже в [npc2.her] грудь."));
 						break;
 					case SUB_EAGER:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" [npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc.name] [npc.verb(start)] fingering [npc2.namePos] [npc2.crotchBoobs],"
-										+ " eagerly pushing [npc2.her] chest out as [npc2.name] [npc2.verb(help)] [npc.name] sink [npc.her] [npc.fingers] even deeper into [npc2.her] [npc2.crotchNipple+].",
+								" [npc2.Name] [npc2.verb(let)] извлекает [npc2.a_moan+] как [npc.name], [npc.verb(start)] лаская [npc2.namePos] [npc2.crotchBoobs], с нетерпением выпячивая [npc2.her] грудь, пока [npc2.name] [npc2.verb(help)] [npc.name] погружаются [npc.her] [npc.fingers] еще глубже в [npc2.her] [npc2.crotchNipple+].",
 	
-								" With [npc.a_moan+], [npc2.name] eagerly [npc2.verb(push)] [npc2.her] chest out,"
-										+ " imploring [npc.name] to sink [npc.her] [npc.fingers] even deeper into [npc2.her] breast."));
+								" С [npc.a_moan+], [npc2.name] с нетерпением [npc2.verb(push)] выпячивает [npc2.her] грудь, умоляя [npc.name] погрузить [npc.her] [npc.fingers] еще глубже в [npc2.her] грудь."));
 						break;
 					case SUB_NORMAL:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" [npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc.name] [npc.verb(start)] fingering [npc2.namePos] [npc2.crotchBoob],"
-										+ " eagerly pushing [npc2.her] chest out as [npc2.name] [npc2.verb(help)] [npc.name] sink [npc.her] [npc.fingers] even deeper into [npc2.her] [npc2.crotchNipple+].",
+								" [npc2.Name] [npc2.verb(let)] извлекает [npc2.a_moan+] как [npc.name] [npc.verb(start)] пальцами лаская [npc2.namePos] [npc2.crotchBoob], жадно выпячивая [npc2.her] грудь, пока [npc2.name] [npc2.verb(help)] [npc.name] погружаются [npc.her] [npc.fingers] еще глубже в [npc2.her] [npc2.crotchNipple+].",
 	
-								" With [npc.a_moan+], [npc2.name] eagerly [npc2.verb(push)] [npc2.her] chest out,"
-										+ " imploring [npc.name] to sink [npc.her] [npc.fingers] even deeper into [npc2.her] breast."));
+								" С [npc.a_moan+], [npc2.name] с нетерпением [npc2.verb(push)] выпячивает [npc2.her] грудь, умоляя [npc.name] погрузить [npc.her] [npc.fingers] еще глубже в [npc2.her] грудь."));
 						break;
 					case SUB_RESISTING:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" [npc2.Name] [npc2.verb(try)] to pull back,"
-										+ " [npc2.sobbing] and writhing in discomfort as [npc.name] [npc.verb(start)] to pump [npc.her] [npc.fingers] in and out of [npc2.her] [npc2.crotchNipple+].",
+								" [npc2.Name] [npc2.verb(try)], чтобы отпрянуть, [npc2.sobbing] и корчась от дискомфорта, пока [npc.name] [npc.verb(start)] чтобы качать [npc.her] [npc.fingers] туда-сюда в [npc2.her] [npc2.crotchNipple+].",
 	
-								" With [npc2.a_sob+], [npc2.name] [npc2.verb(try)], in vain, to pull away from the unwanted penetration,"
-										+ " protesting and struggling against [npc.namePos] touch as [npc.she] [npc.verb(pump)] [npc.her] [npc.fingers+] in and out of [npc2.her] [npc2.crotchNipple+]."));
+								" С [npc2.a_sob+], [npc2.name] [npc2.verb(try)], тщетно пытаясь отстраниться от нежеланного проникновения, протестуя и борясь с прикосновениями [npc.namePos], пока [npc.she] [npc.verb(pump)] [npc.her] [npc.fingers+] туда-сюда в [npc2.her] [npc2.crotchNipple+]."));
 						break;
 					default:
 						break;
@@ -633,53 +571,39 @@ public class FingerNippleCrotch {
 				case SUB_EAGER:
 				case DOM_NORMAL:
 					return (UtilText.returnStringAtRandom(
-							" [npc2.Name] [npc2.verb(push)] [npc2.her] chest out in response,"
-									+ " letting out a delighted [npc2.moan] as [npc2.she] [npc2.verb(start)] enthusiastically imploring [npc.name] to continue fingering [npc2.her] [npc2.crotchBoobs].",
+							" [npc2.Name] [npc2.verb(push)] [npc2.her] грудью в ответ, издавая восторженный [npc2.moan], пока [npc2.she] [npc2.verb(start)] с энтузиазмом умоляя [npc.name] продолжать ласкать пальцами [npc2.her] [npc2.crotchBoobs].",
 		
-							" A delighted [npc2.moan] bursts out from between [npc2.namePos] [npc2.lips],"
-									+ " and [npc2.she] [npc2.verb(start)] eagerly thrusting [npc2.her] chest out against [npc.namePos] touch as [npc2.she] [npc2.verb(beg)] [npc.herHim] to continue fingering [npc2.her] [npc2.crotchNipples+].",
+							" Восторженный [npc2.moan] вырывается из между [npc2.namePos] [npc2.lips], и [npc2.she] [npc2.verb(start)], жадно выпячивая [npc2.her] грудь навстречу прикосновениям [npc.namePos], пока [npc2.she] [npc2.verb(beg)] [npc.herHim] продолжать пальцевую стимуляцию [npc2.her] [npc2.crotchNipples+].",
 		
-							" [npc2.Moaning] in delight, [npc2.name] [npc2.verb(push)] out [npc2.her] chest,"
-									+ " eagerly imploring [npc.name] to continue fingering [npc2.her] [npc2.crotchBoobs] as [npc2.her] movements cause [npc.name] to sink [npc.her] [npc.fingers] deep into [npc2.her] [npc2.crotchNipple+]."));
+							" [npc2.Moaning] в восторге, [npc2.name] [npc2.verb(push)] [npc2.her] грудь, жадно умоляя [npc.name] продолжать ласкать пальцами [npc2.her] [npc2.crotchBoobs], пока движения [npc2.her] заставляют [npc.name] погружаться [npc.her] [npc.fingers] глубоко в [npc2.her] [npc2.crotchNipple+]."));
 				case SUB_RESISTING:
 					return (UtilText.returnStringAtRandom(
-							" Failing to recoil [npc2.her] chest away from [npc.namePos] touch,"
-									+ " [npc2.name] [npc2.verb(let)] out [npc2.a_sob+] as [npc2.she] weakly [npc2.verb(try)] to push [npc.name] away from [npc2.herHim].",
+							" Не в силах отстранить [npc2.her] грудь от прикосновений [npc.namePos], [npc2.name] [npc2.verb(let)] [npc2.a_sob+], пока [npc2.she] слабо [npc2.verb(try)], чтобы оттолкнуть [npc.name] от [npc2.herHim].",
 		
-							" [npc2.A_sob+] bursts out from between [npc2.namePos] [npc2.lips],"
-									+ " before [npc2.she] [npc2.verb(start)] weakly trying to push [npc.name] away, squirming and protesting as [npc.name] [npc.verb(continue)] to gently finger [npc2.her] [npc2.crotchNipple+].",
+							" [npc2.A_sob+] вырывается из между [npc2.namePos] [npc2.lips], прежде чем [npc2.she] [npc2.verb(start)] слабо пытается оттолкнуть [npc.name], извиваясь и протестуя, пока [npc.name] [npc.verb(continue)] нежно ласкает пальцами [npc2.her] [npc2.crotchNipple+].",
 		
-							" [npc2.Sobbing] in distress, [npc2.name] [npc2.verb(try)], in vain,"
-									+ " to recoil [npc2.her] chest away from [npc.namePos] touch, struggling against [npc.herHim] as [npc.her] [npc.fingers] [npc.verb(continue)] gently sliding deep into [npc2.her] [npc2.crotchNipple+]."));
+							" [npc2.Sobbing] в смятении, [npc2.name] [npc2.verb(try)], тщетно пытаясь отпрянуть [npc2.her] грудью от [npc.namePos] прикосновений, борясь с [npc.herHim], пока [npc.her] [npc.fingers] [npc.verb(continue)] плавно скользит глубоко в [npc2.her] [npc2.crotchNipple+]."));
 				case DOM_GENTLE:
 					return (UtilText.returnStringAtRandom(
-							" [npc2.Name] [npc2.verb(push)] [npc2.her] chest out in response,"
-									+ " letting out a delighted [npc2.moan] before starting to enthusiastically implore [npc.name] to continue fingering [npc2.her] [npc2.crotchBoobs].",
+							" [npc2.Name] [npc2.verb(push)] выпячивает [npc2.her] грудь в ответ, издавая восторженный [npc2.moan], прежде чем начать с энтузиазмом умолять [npc.name] продолжать ласкать пальцами [npc2.her] [npc2.crotchBoobs].",
 	
-							" A delighted [npc2.moan] bursts out from between [npc2.namePos] [npc2.lips],"
-									+ " and [npc2.she] [npc2.verb(start)] gently pushing [npc2.her] chest out against [npc.namePos] touch as [npc2.she] [npc2.verb(beg)] [npc.herHim] to continue fingering [npc2.her] [npc2.crotchNipples+].",
+							" Восторженный [npc2.moan] вырывается из глубин [npc2.namePos] [npc2.lips], и [npc2.she] [npc2.verb(start)] мягко подает [npc2.her] грудь навстречу [npc.namePos] прикосновениям, пока [npc2.she] [npc2.verb(beg)] [npc.herHim], чтобы продолжать пальцевать [npc2.her] [npc2.crotchNipples+].",
 	
-							" [npc2.Moaning] in delight, [npc2.name] gently [npc2.verb(push)] out [npc2.her] chest,"
-									+ " imploring [npc.name] to continue fingering [npc2.her] [npc2.crotchBoobs] as [npc2.her] movements cause [npc.name] to sink [npc.her] [npc.fingers] deep into [npc2.her] [npc2.crotchNipple+]."));
+							" [npc2.Moaning] в восторге, [npc2.name] мягко [npc2.verb(push)] выставляет вперед [npc2.her] грудь, умоляя [npc.name] продолжать ласкать пальцами [npc2.her] [npc2.crotchBoobs], пока движения [npc2.her] заставляют [npc.name] погружаться [npc.her] [npc.fingers] глубоко в [npc2.her] [npc2.crotchNipple+]."));
 				case DOM_ROUGH:
 					return (UtilText.returnStringAtRandom(
-							" [npc2.Name] [npc2.verb(push)] [npc2.her] chest out in response, letting out a delighted [npc2.moan] as [npc2.she] [npc2.verb(start)] commanding [npc.name] to continue fingering [npc2.her] [npc2.crotchBoobs].",
+							" [npc2.Name] [npc2.verb(push)] выпячивает [npc2.her] грудь в ответ, издавая восторженный [npc2.moan], пока [npc2.she] [npc2.verb(start)] приказывает [npc.name] продолжать пальцевать [npc2.her] [npc2.crotchBoobs].",
 	
-							" A delighted [npc2.moan] bursts out from between [npc2.namePos] [npc2.lips],"
-									+ " and [npc2.she] [npc2.verb(start)] roughly thrusting [npc2.her] chest out against [npc.namePos] touch as [npc2.she] [npc2.verb(order)] [npc.name] to continue fingering [npc2.her] [npc2.crotchNipples+].",
+							" Восторженный [npc2.moan] вырывается из-под [npc2.namePos] [npc2.lips], и [npc2.she] [npc2.verb(start)], грубо выпячивая [npc2.her] грудь навстречу [npc.namePos], пока [npc2.she] [npc2.verb(order)] [npc.name], чтобы продолжать ласкать [npc2.her] [npc2.crotchNipples+].",
 	
-							" [npc2.Moaning] in delight, [npc2.name] [npc2.verb(thrust)] out [npc2.her] chest,"
-									+ " commanding [npc.name] to continue fingering [npc2.her] [npc2.crotchBoobs] as [npc2.her] sudden movement causes [npc.name] to sink [npc.her] [npc.fingers] deep into [npc2.her] [npc2.crotchNipple+]."));
+							" [npc2.Moaning] в восторге, [npc2.name] [npc2.verb(thrust)], выпятив [npc2.her] грудь, приказывает [npc.name] продолжать ласкать [npc2.her] [npc2.crotchBoobs], пока внезапное движение [npc2.her] заставляет [npc.name] погрузить [npc.her] [npc.fingers] глубоко в [npc2.her] [npc2.crotchNipple+]."));
 				case SUB_NORMAL:
 					return (UtilText.returnStringAtRandom(
-							" [npc2.Name] [npc2.verb(push)] [npc2.her] chest out in response,"
-									+ " letting out [npc2.a_moan] as [npc2.she] [npc2.verb(implore)] [npc.name] to continue fingering [npc2.her] [npc2.crotchBoobs].",
+							" [npc2.Name] [npc2.verb(push)], выпячивая [npc2.her] грудь в ответ, издает [npc2.a_moan], пока [npc2.she] [npc2.verb(implore)] [npc.name], чтобы продолжать ласкать [npc2.her] [npc2.crotchBoobs].",
 		
-							" [npc2.A_moan+] bursts out from between [npc2.namePos] [npc2.lips],"
-									+ " and [npc2.she] [npc2.verb(push)] [npc2.her] chest out against [npc.namePos] touch as [npc2.she] [npc2.verb(implore)] [npc.herHim] to continue fingering [npc2.her] [npc2.crotchNipples+].",
+							" [npc2.A_moan+] вырывается из-под [npc2.namePos] [npc2.lips], и [npc2.she] [npc2.verb(push)] выпячивает [npc2.her] грудь навстречу [npc.namePos], пока [npc2.she] [npc2.verb(implore)] [npc.herHim], чтобы продолжать ласкать [npc2.her] [npc2.crotchNipples+].",
 		
-							" [npc2.Moaning+], [npc2.name] [npc2.verb(push)] out [npc2.her] chest,"
-									+ " imploring [npc.name] to continue fingering [npc2.her] [npc2.crotchBoobs] as [npc2.her] movements cause [npc.name] to sink [npc.her] [npc.fingers+] deep into [npc2.her] [npc2.crotchNipple+]."));
+							" [npc2.Moaning+], [npc2.name] [npc2.verb(push)], выпятив [npc2.her] грудь, умоляет [npc.name] продолжать ласкать [npc2.her] [npc2.crotchBoobs], пока движения [npc2.her] заставляют [npc.name] погрузить [npc.her] [npc.fingers+] глубоко в [npc2.her] [npc2.crotchNipple+]."));
 			}
 		}
 		return "";
@@ -697,15 +621,15 @@ public class FingerNippleCrotch {
 		@Override
 		public String getActionTitle() {
 			if(Main.sex.getCharacterTargetedForSexAction(this).getBreastCrotchShape()== BreastShape.UDDERS) {
-				return "Gentle udder-nipple fingering";
+				return "Нежные ласки сосков вымени";
 			} else {
-				return "Gentle crotch-nipple fingering";
+				return "Нежные ласки сосков в паху";
 			}
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Gently finger [npc2.namePos] [npc2.crotchNipple].";
+			return "Нежно ласкать [npc2.namePos] [npc2.crotchNipple].";
 		}
 		
 		@Override
@@ -714,11 +638,11 @@ public class FingerNippleCrotch {
 			UtilText.nodeContentSB.setLength(0);
 			
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"Gently sinking [npc.her] [npc.fingers+] deep into [npc2.namePos] [npc2.crotchNipple+], [npc.name] slowly [npc.verb(start)] to slide [npc.her] digits in and out of [npc2.her] [npc2.crotchBoob].",
+					"Мягко погружая [npc.her] [npc.fingers+] глубоко в [npc2.namePos] [npc2.crotchNipple+], [npc.name] медленно [npc.verb(start)], чтобы проскальзывать [npc.her] пальцами туда-сюда в [npc2.her] [npc2.crotchBoob].",
 
-					"[npc.Name] gently [npc.verb(lean)] in against [npc2.name], causing [npc2.herHim] to inhale [npc.her] [npc.scent+] as [npc.she] gently [npc.verb(pump)] [npc.her] [npc.fingers+] in and out of [npc2.her] [npc2.crotchNipple+].",
+					"[npc.Name] мягко [npc.verb(lean)] в [npc2.name], заставляя [npc2.herHim] судорожно вдыхать [npc.her] [npc.scent+], пока [npc.she] плавно [npc.verb(pump)] [npc.her] [npc.fingers+] туда-сюда в [npc2.her] [npc2.crotchNipple+].",
 
-					"Gently pressing [npc.herself] against [npc2.name], [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] softly [npc.verb(pump)] [npc.her] [npc.fingers+] in and out of [npc2.namePos] [npc2.crotchNipple+]."));
+					"Мягко прижимая [npc.herself] к [npc2.name], [npc.name] [npc.verb(let)] [npc.a_moan+], пока [npc.she] нежно [npc.verb(pump)] [npc.her] [npc.fingers+] туда-сюда в [npc2.namePos] [npc2.crotchNipple+]."));
 			
 			UtilText.nodeContentSB.append(getTargetedCharacterResponse(this));
 			
@@ -739,15 +663,15 @@ public class FingerNippleCrotch {
 		@Override
 		public String getActionTitle() {
 			if(Main.sex.getCharacterTargetedForSexAction(this).getBreastCrotchShape()== BreastShape.UDDERS) {
-				return "Finger udder-nipples";
+				return "Ласкать соски на вымени";
 			} else {
-				return "Finger crotch-nipples";
+				return "Ласкать соски в паху";
 			}
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Continue fingering [npc2.namePos] [npc2.crotchNipple+].";
+			return "Продолжить пальцевать [npc2.namePos] [npc2.crotchNipple+].";
 		}
 		
 		@Override
@@ -756,13 +680,11 @@ public class FingerNippleCrotch {
 			UtilText.nodeContentSB.setLength(0);
 			
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"Sinking [npc.her] [npc.fingers+] deep into [npc2.namePos] [npc2.crotchNipple+], [npc.name] [npc.verb(start)] eagerly fingering [npc2.her] [npc2.crotchBoobs],"
-							+ " letting out [npc.a_moan+] as [npc.she] [npc.verb(press)] [npc.herself] up against [npc2.herHim].",
+					"Погружая [npc.her] [npc.fingers+] глубоко в [npc2.namePos] [npc2.crotchNipple+], [npc.name] жадно [npc.verb(start)], пальцуя [npc2.her] [npc2.crotchBoobs] и издавая [npc.a_moan+], пока [npc.she] [npc.verb(press)] [npc.herself] о [npc2.herHim].",
 
-					"[npc.Name] [npc.verb(lean)] in against [npc2.herHim],"
-							+ " [npc.her] [npc.scent+] overwhelming [npc2.namePos] senses as [npc.she] [npc.verb(start)] eagerly pumping [npc.her] [npc.fingers+] in and out of [npc2.namePos] [npc2.crotchNipple+].",
+					"[npc.Name] [npc.verb(lean)] в [npc2.herHim], [npc.her] [npc.scent+] переполняет чувства [npc2.namePos], пока [npc.she] жадно [npc.verb(start)] [npc.her] [npc.fingers+] туда-сюда в [npc2.namePos] [npc2.crotchNipple+].",
 
-					"Pressing [npc.herself] against [npc2.name], [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(start)] eagerly pumping [npc.her] [npc.fingers+] in and out of [npc2.namePos] [npc2.crotchNipple+]."));
+					"Прижимая [npc.herself] к [npc2.name], [npc.name] [npc.verb(let)] [npc.a_moan+], пока [npc.she] жадно [npc.verb(start)] [npc.her] [npc.fingers+] туда-сюда в [npc2.namePos] [npc2.crotchNipple+]."));
 
 			UtilText.nodeContentSB.append(getTargetedCharacterResponse(this));
 			
@@ -783,15 +705,15 @@ public class FingerNippleCrotch {
 		@Override
 		public String getActionTitle() {
 			if(Main.sex.getCharacterTargetedForSexAction(this).getBreastCrotchShape()== BreastShape.UDDERS) {
-				return "Rough udder-nipple fingering";
+				return "Грубые ласки сосков пальцами";
 			} else {
-				return "Rough crotch-nipple fingering";
+				return "Грубые ласки паха пальцами";
 			}
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Roughly finger [npc2.namePos] [npc2.crotchNipple].";
+			return "Грубо перебирать пальцами [npc2.namePos] [npc2.crotchNipple].";
 		}
 		
 		@Override
@@ -800,13 +722,11 @@ public class FingerNippleCrotch {
 			UtilText.nodeContentSB.setLength(0);
 			
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"Greedily plunging [npc.her] [npc.fingers+] deep into [npc2.namePos] [npc2.crotchNipple+],"
-							+ " [npc.name] [npc.verb(start)] roughly slamming [npc.her] digits in and out, rapidly fingering [npc2.namePos] [npc2.crotchBoob] as [npc.she] grinds [npc.herself] up against [npc2.herHim].",
+					"Алчно вонзая [npc.her] [npc.fingers+] глубоко в [npc2.namePos] [npc2.crotchNipple+], [npc.name] [npc.verb(start)] грубо вбивая [npc.her] пальцы туда-сюда, стремительно лаская [npc2.namePos] [npc2.crotchBoob], пока [npc.she] вжимает [npc.herself] в [npc2.herHim].",
 
-					"[npc.Name] grinds [npc.herself] against [npc2.name],"
-							+ " forcing [npc2.herHim] to inhale [npc.her] [npc.scent+] as [npc.she] [npc.verb(start)] roughly slamming [npc.her] [npc.fingers+] in and out of [npc2.namePos] [npc2.crotchNipple+].",
+					"[npc.Name] вжимает [npc.herself] в [npc2.name], заставляя [npc2.herHim] судорожно вдыхать [npc.her] [npc.scent+], пока [npc.she] [npc.verb(start)] грубо вбивает [npc.her] [npc.fingers+] туда-сюда в [npc2.namePos] [npc2.crotchNipple+].",
 
-					"Grinding [npc.herself] up against [npc2.name], [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(start)] roughly slamming [npc.her] [npc.fingers+] in and out of [npc2.namePos] [npc2.crotchNipple+]."));
+					"Вжимая [npc.herself] в [npc2.name], [npc.name] [npc.verb(let)] [npc.a_moan+], пока [npc.she] [npc.verb(start)] грубо вбивает [npc.her] [npc.fingers+] туда-сюда в [npc2.namePos] [npc2.crotchNipple+]."));
 			
 			UtilText.nodeContentSB.append(getTargetedCharacterResponse(this));
 			
@@ -827,15 +747,15 @@ public class FingerNippleCrotch {
 		@Override
 		public String getActionTitle() {
 			if(Main.sex.getCharacterTargetedForSexAction(this).getBreastCrotchShape()== BreastShape.UDDERS) {
-				return "Finger udder-nipples";
+				return "Ласкать соски на вымени";
 			} else {
-				return "Finger crotch-nipples";
+				return "Ласкать соски в паху";
 			}
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Continue fingering [npc2.namePos] [npc2.crotchNipple].";
+			return "Продолжить ласкать пальцами [npc2.namePos] [npc2.crotchNipple].";
 		}
 		
 		@Override
@@ -844,12 +764,11 @@ public class FingerNippleCrotch {
 			UtilText.nodeContentSB.setLength(0);
 			
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"Sinking [npc.her] [npc.fingers+] deep into [npc2.namePos] [npc2.crotchNipple+],"
-							+ " [npc.name] [npc.verb(start)] sliding [npc.her] digits in and out, fingering [npc2.namePos] [npc2.crotchBoob] as [npc.she] [npc.verb(press)] [npc.herself] up against [npc2.herHim].",
+					"Погружая [npc.her] [npc.fingers+] глубоко в [npc2.namePos] [npc2.crotchNipple+], [npc.name] [npc.verb(start)] скользит [npc.her] пальцами туда-сюда, лаская [npc2.namePos] [npc2.crotchBoob], пока [npc.she] [npc.verb(press)] [npc.herself] прижимается к [npc2.herHim].",
 
-					"[npc.Name] [npc.verb(lean)] in against [npc2.name], causing [npc2.herHim] to inhale [npc.her] [npc.scent+] as [npc.she] [npc.verb(start)] pumping [npc.her] [npc.fingers+] in and out of [npc2.her] [npc2.crotchNipple+].",
+					"[npc.Name] [npc.verb(lean)] в [npc2.name], заставляя [npc2.herHim] судорожно вдыхать [npc.her] [npc.scent+], пока [npc.she] [npc.verb(start)] качает [npc.her] [npc.fingers+] туда-сюда в [npc2.her] [npc2.crotchNipple+].",
 
-					"Pressing [npc.herself] against [npc2.name], [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(start)] pumping [npc.her] [npc.fingers+] in and out of [npc2.namePos] [npc2.crotchNipple+]."));
+					"Прижимая [npc.herself] к [npc2.name], [npc.name] [npc.verb(let)] [npc.a_moan+], пока [npc.she] [npc.verb(start)] [npc.her] [npc.fingers+] туда-сюда в [npc2.namePos] [npc2.crotchNipple+]."));
 
 			UtilText.nodeContentSB.append(getTargetedCharacterResponse(this));
 			
@@ -870,15 +789,15 @@ public class FingerNippleCrotch {
 		@Override
 		public String getActionTitle() {
 			if(Main.sex.getCharacterTargetedForSexAction(this).getBreastCrotchShape()== BreastShape.UDDERS) {
-				return "Eager udder-nipple fingering";
+				return "Жадно ласкать соски груди пальцами";
 			} else {
-				return "Eager crotch-nipple fingering";
+				return "Жадно ласкать соски промежности пальцами";
 			}
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Eagerly finger [npc2.namePos] [npc2.crotchNipple].";
+			return "Жадно ласкать пальцами [npc2.namePos] [npc2.crotchNipple].";
 		}
 		
 		@Override
@@ -887,13 +806,11 @@ public class FingerNippleCrotch {
 			UtilText.nodeContentSB.setLength(0);
 			
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"Sinking [npc.her] [npc.fingers+] deep into [npc2.namePos] [npc2.crotchNipple+],"
-							+ " [npc.name] [npc.verb(start)] sliding [npc.her] digits in and out, eagerly fingering [npc2.her] [npc2.crotchBoob] as [npc.she] [npc.verb(press)] [npc.herself] up against [npc2.herHim].",
+					"Погружая [npc.her] [npc.fingers+] глубоко в [npc2.namePos] [npc2.crotchNipple+], [npc.name] [npc.verb(start)] проталкивает [npc.her] пальцы туда-сюда, жадно лаская [npc2.her] [npc2.crotchBoob], пока [npc.she] [npc.verb(press)] [npc.herself] прижимается к [npc2.herHim].",
 
-					"[npc.Name] [npc.verb(lean)] in against [npc2.name],"
-							+ " causing [npc2.herHim] to breathe in [npc.her] [npc.scent+] as [npc.she] [npc.verb(start)] eagerly pumping [npc.her] [npc.fingers+] in and out of [npc2.her] [npc2.crotchNipple+].",
+					"[npc.Name] [npc.verb(lean)] в [npc2.name], заставляя [npc2.herHim] вдыхать [npc.her] [npc.scent+], пока [npc.she] с нетерпением [npc.verb(start)], энергично двигая [npc.her] [npc.fingers+] туда-сюда в [npc2.her] [npc2.crotchNipple+].",
 
-					"Pressing [npc.herself] against [npc2.name], [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(start)] eagerly pumping [npc.her] [npc.fingers+] in and out of [npc2.namePos] [npc2.crotchNipple+]."));
+					"Прижимая [npc.herself] к [npc2.name], [npc.name] [npc.verb(let)] [npc.a_moan+], пока [npc.she] жадно [npc.verb(start)] [npc.her] [npc.fingers+] туда-сюда в [npc2.namePos] [npc2.crotchNipple+]."));
 
 			UtilText.nodeContentSB.append(getTargetedCharacterResponse(this));
 			
@@ -914,15 +831,15 @@ public class FingerNippleCrotch {
 		@Override
 		public String getActionTitle() {
 			if(Main.sex.getCharacterTargetedForSexAction(this).getBreastCrotchShape()== BreastShape.UDDERS) {
-				return "Resist udder-nipple fingering";
+				return "Сопротивляться ласкам сосков груди";
 			} else {
-				return "Resist crotch-nipple fingering";
+				return "Сопротивляться ласкам сосков промежности";
 			}
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Try and pull your [npc.fingers] out of [npc2.namePos] [npc2.crotchNipple+].";
+			return "Попытаться вытащить свой [npc.fingers] из [npc2.namePos] [npc2.crotchNipple+].";
 		}
 		
 		@Override
@@ -933,36 +850,27 @@ public class FingerNippleCrotch {
 			switch(Main.sex.getSexPace(Main.sex.getCharacterTargetedForSexAction(this))) {
 				case DOM_GENTLE:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"[npc.Name] [npc.verb(feel)] tears starting to well up in [npc.namePos] [npc.eyes], and, unable to keep it in any longer,"
-									+ " [npc.a_sob+] bursts out from [npc.her] mouth as [npc.she] weakly [npc.verb(try)] to pull [npc.her] [npc.fingers] out of [npc2.namePos] [npc2.crotchNipple+].",
+							"[npc.Name] [npc.verb(feel)], в [npc.namePos] [npc.eyes] начинают наворачиваться слезы, и, не в силах больше сдерживаться, [npc.a_sob+] вырывается из рта [npc.her], пока [npc.she] слабо [npc.verb(try)], пытаясь вытащить [npc.her] [npc.fingers] из [npc2.namePos] [npc2.crotchNipple+].",
 
-							"[npc.A_sob+] bursts out from [npc.namePos] mouth as [npc.she] frantically [npc.verb(try)] to [npc.verb(pull)] [npc.her] [npc.fingers+] out of [npc2.namePos] [npc2.crotchNipple+].",
+							"[npc.A_sob+] вырывается изо рта [npc.namePos], пока [npc.she] неистово [npc.verb(try)], чтобы [npc.verb(pull)] [npc.her] [npc.fingers+] из [npc2.namePos] [npc2.crotchNipple+].",
 
-							"Trying desperately to pull [npc.her] [npc.fingers+] out of [npc2.namePos] [npc2.crotchNipple+],"
-									+ " [npc.name] [npc.sob] in distress as [npc2.namePos] [npc2.verb(hold)] [npc.her] [npc.hand] in position,"
-									+ " before gently thrusting [npc2.her] chest out and forcing [npc.namePos] [npc.fingers] deep into [npc2.her] [npc2.crotchBoob]."));
+							"Отчаянно пытаясь вытащить [npc.her] [npc.fingers+] из [npc2.namePos] [npc2.crotchNipple+], [npc.name] [npc.sob] в смятении, пока [npc2.namePos] [npc2.verb(hold)] [npc.her] [npc.hand] в позиции, прежде чем нежно выпятить [npc2.her] грудь и с силой вогнать [npc.namePos] [npc.fingers] глубоко в [npc2.her] [npc2.crotchBoob]."));
 					break;
 				case DOM_NORMAL:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"[npc.Name] [npc.verb(feel)] tears starting to well up in [npc.namePos] [npc.eyes], and, unable to keep it in any longer,"
-									+ " [npc.a_sob+] bursts out from [npc.her] mouth as [npc.she] weakly [npc.verb(try)] to pull [npc.her] [npc.fingers] out of [npc2.namePos] [npc2.crotchNipple+].",
+							"[npc.Name] [npc.verb(feel)], в [npc.namePos] [npc.eyes] начинают наворачиваться слезы, и, не в силах больше сдерживаться, [npc.a_sob+] вырывается из рта [npc.her], пока [npc.she] слабо [npc.verb(try)], пытаясь вытащить [npc.her] [npc.fingers] из [npc2.namePos] [npc2.crotchNipple+].",
 
-							"[npc.A_sob+] bursts out from [npc.namePos] mouth as [npc.she] frantically [npc.verb(try)] to [npc.verb(pull)] [npc.her] [npc.fingers+] out of [npc2.namePos] [npc2.crotchNipple+].",
+							"[npc.A_sob+] вырывается изо рта [npc.namePos], пока [npc.she] неистово [npc.verb(try)], чтобы [npc.verb(pull)] [npc.her] [npc.fingers+] из [npc2.namePos] [npc2.crotchNipple+].",
 
-							"Trying desperately to pull [npc.her] [npc.fingers+] out of [npc2.namePos] [npc2.crotchNipple+],"
-									+ " [npc.name] [npc.sob] in distress as [npc2.namePos] [npc2.verb(hold)] [npc.her] [npc.hand] in position,"
-									+ " before eagerly thrusting [npc2.her] chest out and forcing [npc.namePos] [npc.fingers] deep into [npc2.her] [npc2.crotchBoob]."));
+							"Отчаянно пытаясь вытащить [npc.her] [npc.fingers+] из [npc2.namePos] [npc2.crotchNipple+], [npc.name] [npc.sob] в смятении, пока [npc2.namePos] [npc2.verb(hold)] [npc.her] [npc.hand] в позиции, прежде чем жадно выпятить [npc2.her] грудь и с силой вогнать [npc.namePos] [npc.fingers] глубоко в [npc2.her] [npc2.crotchBoob]."));
 					break;
 				case DOM_ROUGH:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"[npc.Name] [npc.verb(feel)] tears starting to well up in [npc.namePos] [npc.eyes], and, unable to keep it in any longer,"
-									+ " [npc.a_sob+] bursts out from [npc.her] mouth as [npc.she] weakly [npc.verb(try)] to pull [npc.her] [npc.fingers] out of [npc2.namePos] [npc2.crotchNipple+].",
+							"[npc.Name] [npc.verb(feel)], в [npc.namePos] [npc.eyes] начинают наворачиваться слезы, и, не в силах больше сдерживаться, [npc.a_sob+] вырывается из рта [npc.her], пока [npc.she] слабо [npc.verb(try)], пытаясь вытащить [npc.her] [npc.fingers] из [npc2.namePos] [npc2.crotchNipple+].",
 
-							"[npc.A_sob+] bursts out from [npc.namePos] mouth as [npc.she] frantically [npc.verb(try)] to [npc.verb(pull)] [npc.her] [npc.fingers+] out of [npc2.namePos] [npc2.crotchNipple+].",
+							"[npc.A_sob+] вырывается изо рта [npc.namePos], пока [npc.she] неистово [npc.verb(try)], чтобы [npc.verb(pull)] [npc.her] [npc.fingers+] из [npc2.namePos] [npc2.crotchNipple+].",
 
-							"Trying desperately to pull [npc.her] [npc.fingers+] out of [npc2.namePos] [npc2.crotchNipple+],"
-									+ " [npc.name] [npc.sob] in distress as [npc2.namePos] [npc2.verb(hold)] [npc.her] [npc.hand] in position,"
-									+ " before roughly thrusting [npc2.her] chest out and forcing [npc.namePos] [npc.fingers] deep into [npc2.her] [npc2.crotchBoob]."));
+							"Отчаянно пытаясь вытащить [npc.her] [npc.fingers+] из [npc2.namePos] [npc2.crotchNipple+], [npc.name] [npc.sob] в смятении, пока [npc2.namePos] [npc2.verb(hold)] [npc.her] [npc.hand] в позиции, прежде чем грубо выпятить [npc2.her] грудь и с силой вогнать [npc.namePos] [npc.fingers] глубоко в [npc2.her] [npc2.crotchBoob]."));
 					break;
 				default:
 					break;
@@ -983,15 +891,15 @@ public class FingerNippleCrotch {
 		@Override
 		public String getActionTitle() {
 			if(Main.sex.getCharacterTargetedForSexAction(this).getBreastCrotchShape()== BreastShape.UDDERS) {
-				return "Stop udder-nipple fingering";
+				return "Прекратить ласкать соски вымени пальцами";
 			} else {
-				return "Stop crotch-nipple fingering";
+				return "Прекратить ласкать соски в паху пальцами";
 			}
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Pull your [npc.fingers] out of [npc2.namePos] [npc2.crotchNipple] and stop fingering [npc2.her] [npc2.crotchBoob].";
+			return "Вытащить свой [npc.fingers] из [npc2.namePos] [npc2.crotchNipple] и перестать ласкать [npc2.her] [npc2.crotchBoob] пальцами.";
 		}
 
 		@Override
@@ -1002,30 +910,30 @@ public class FingerNippleCrotch {
 			switch(Main.sex.getSexPace(Main.sex.getCharacterPerformingAction())) {
 				case DOM_ROUGH:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"Yanking [npc.her] [npc.fingers] out of [npc2.namePos] [npc2.crotchNipple+], [npc.name] [npc.verb(give)] [npc2.namePos] [npc2.crotchBoob] one last rough squeeze as [npc.she] stops fingering [npc2.her] chest.",
+							"Резко выдергивая [npc.her] [npc.fingers] из [npc2.namePos] [npc2.crotchNipple+], [npc.name] [npc.verb(give)] [npc2.namePos] [npc2.crotchBoob] напоследок, пока [npc.she] перестает ласкать пальцами [npc2.her] грудь.",
 
-							"[npc.Name] sharply [npc.verb(inhale)], breathing in [npc2.namePos] [npc2.scent+] before roughly yanking [npc.her] [npc.fingers] out of [npc2.her] [npc2.crotchNipple]."));
+							"[npc.Name] резко [npc.verb(inhale)], вдыхая [npc2.namePos] [npc2.scent+], прежде чем грубо выдернуть [npc.her] [npc.fingers] из [npc2.her] [npc2.crotchNipple]."));
 					break;
 				default:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"Sliding [npc.her] [npc.fingers] out of [npc2.namePos] [npc2.crotchNipple], [npc.name] [npc.verb(give)] [npc2.namePos] [npc2.crotchBoob] one last squeeze as [npc.she] stops fingering [npc2.her] chest.",
+							"Выскальзывая [npc.her] [npc.fingers] из [npc2.namePos] [npc2.crotchNipple], [npc.name] [npc.verb(give)] [npc2.namePos] [npc2.crotchBoob] напоследок, пока [npc.she] перестает ласкать пальцами [npc2.her] грудь.",
 
-							"[npc.Name] sharply [npc.verb(inhale)], breathing in [npc2.namePos] [npc2.scent+] before sliding [npc.her] [npc.fingers] out of [npc2.her] [npc2.crotchNipple]."));
+							"[npc.Name] резко [npc.verb(inhale)], вдыхая [npc2.namePos] [npc2.scent+], прежде чем плавно выскользнуть [npc.her] [npc.fingers] из [npc2.her] [npc2.crotchNipple]."));
 					break;
 			}
 			
 			switch(Main.sex.getSexPace(Main.sex.getCharacterTargetedForSexAction(this))) {
 				case SUB_RESISTING:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							" [npc2.Name] [npc2.verb(let)] out a relieved sigh, which soon turns into [npc2.a_sob+] as [npc2.she] [npc2.verb(continue)] to struggle against [npc.name].",
+							" [npc2.Name] [npc2.verb(let)] с облегчением, что вскоре переходит в [npc2.a_sob+], когда [npc2.she] [npc2.verb(continue)], пытаясь вырваться из [npc.name].",
 
-							" With [npc2.a_sob+], [npc2.name] [npc2.verb(continue)] to protest and struggle in discomfort as [npc.name] holds [npc2.herHim] in place."));
+							" Из-за [npc2.a_sob+], [npc2.name] [npc2.verb(continue)], протестуя и дергаясь от дискомфорта, пока [npc.name] удерживает [npc2.herHim] на месте."));
 					break;
 				default:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							" [npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc.name] stops stimulating [npc2.her] [npc2.crotchBoobs+].",
+							" [npc2.Name] [npc2.verb(let)] [npc2.a_moan+], пока [npc.name] перестает стимулировать [npc2.her] [npc2.crotchBoobs+].",
 
-							" [npc2.A_moan+] escapes from between [npc2.namePos] [npc2.lips+], betraying [npc2.her] desire for more of [npc.namePos] attention."));
+							" [npc2.A_moan+] вырывается между [npc2.namePos] [npc2.lips+], выдавая [npc2.her] жажду еще большего внимания к [npc.namePos]."));
 					break;
 			}
 			
@@ -1044,15 +952,15 @@ public class FingerNippleCrotch {
 		@Override
 		public String getActionTitle() {
 			if(Main.sex.getCharacterPerformingAction().getBreastCrotchShape()== BreastShape.UDDERS) {
-				return "Get udder-nipples fingered";
+				return "Получать ласки пальцами в соски вымени";
 			} else {
-				return "Get crotch-nipples fingered";
+				return "Позволить ласкать соски на лобке";
 			}
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Get [npc2.name] to start fingering your [npc.crotchNipple+].";
+			return "Заставить [npc2.name] начать ласкать твои [npc.crotchNipple+].";
 		}
 
 		@Override
@@ -1063,43 +971,33 @@ public class FingerNippleCrotch {
 			switch(Main.sex.getSexPace(Main.sex.getCharacterPerformingAction())) {
 				case DOM_GENTLE:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"Taking a gentle, but firm, grip on [npc2.namePos] [npc2.hand], [npc.name] slowly [npc.verb(guide)] [npc2.her] [npc2.fingers] up and over [npc.her] [npc.crotchBoobs],"
-									+ " letting out a little [npc.moan] before pushing [npc2.her] digits into [npc.her] [npc.crotchNipple+].",
+							"Мягко, но уверенно сжав [npc2.namePos] [npc2.hand], [npc.name] медленно [npc.verb(guide)] [npc2.her] [npc2.fingers] вверх и через [npc.her] [npc.crotchBoobs], издавая легкий [npc.moan], прежде чем втиснуть [npc2.her] пальцев в [npc.her] [npc.crotchNipple+].",
 							
-							"Taking hold of [npc2.namePos] [npc2.hand], [npc.name] [npc.verb(guide)] [npc2.her] [npc2.fingers] up to [npc.her] [npc.crotchBoobs], and with a slow, steady pressure,"
-									+ " [npc.she] gently [npc.verb(push)] [npc2.her] digits into [npc.her] [npc.crotchNipple+]."));
+							"Схватив [npc2.namePos] [npc2.hand], [npc.name] [npc.verb(guide)] [npc2.her] [npc2.fingers] до [npc.her] [npc.crotchBoobs], и с медленным, ровным нажимом, [npc.she] нежно [npc.verb(push)] [npc2.her] пальцев в [npc.her] [npc.crotchNipple+]."));
 					break;
 				case DOM_NORMAL:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"With a firm grip on [npc2.her] [npc2.hand], [npc.name] eagerly [npc.verb(guide)] [npc2.namePos] [npc2.fingers] up and over [npc.her] [npc.crotchBoobs],"
-									+ " letting out [npc.a_moan+] before greedily pushing [npc2.her] digits into [npc.her] [npc.crotchNipple+].",
+							"Крепко сжав [npc2.her] [npc2.hand], [npc.name] с нетерпением [npc.verb(guide)] [npc2.namePos] [npc2.fingers] вверх и через [npc.her] [npc.crotchBoobs], издавая [npc.a_moan+], прежде чем жадно втиснуть [npc2.her] пальцев в [npc.her] [npc.crotchNipple+].",
 
-							"Taking hold of [npc2.namePos] [npc2.hand], [npc.name] eagerly [npc.verb(guide)] [npc2.her] [npc2.fingers] up to [npc.her] [npc.crotchBoobs], and with a determined pressure,"
-									+ " [npc.she] greedily [npc.verb(push)] [npc2.her] digits into [npc.her] [npc.crotchNipple+]."));
+							"Схватив [npc2.namePos] [npc2.hand], [npc.name] с нетерпением [npc.verb(guide)] [npc2.her] [npc2.fingers] до [npc.her] [npc.crotchBoobs], и с решительным напором, [npc.she] жадно [npc.verb(push)] [npc2.her] пальцев в [npc.her] [npc.crotchNipple+]."));
 					break;
 				case DOM_ROUGH:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"With a vice-like grip on [npc2.her] [npc2.hand], [npc.name] [npc.verb(grind)] [npc2.namePos] [npc2.fingers] up and over [npc.her] [npc.crotchBoobs],"
-									+ " letting out [npc.a_moan+] before roughly forcing [npc2.her] digits into [npc.her] [npc.crotchNipple+].",
+							"Мертвой хваткой вцепившись в [npc2.her] [npc2.hand], [npc.name] [npc.verb(grind)] [npc2.namePos] [npc2.fingers] вверх и через [npc.her] [npc.crotchBoobs], издавая [npc.a_moan+], прежде чем грубо впихнуть [npc2.her] пальцев в [npc.her] [npc.crotchNipple+].",
 
-							"Grabbing [npc2.namePos] [npc2.hand], [npc.name] forcefully [npc.verb(push)] [npc2.namePos] [npc2.fingers] up to [npc.her] [npc.crotchBoobs], and with a dominant, jerking motion,"
-									+ " [npc.she] roughly [npc.verb(stuff)] [npc2.her] digits into [npc.her] [npc.crotchNipple+]."));
+							"Схватив [npc2.namePos] [npc2.hand], [npc.name] властно [npc.verb(push)] [npc2.namePos] [npc2.fingers] до [npc.her] [npc.crotchBoobs], и доминирующим, дерганым движением, [npc.she] грубо [npc.verb(stuff)] [npc2.her] пальцев в [npc.her] [npc.crotchNipple+]."));
 					break;
 				case SUB_EAGER:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"With a firm grip on [npc2.her] [npc2.hand], [npc.name] eagerly [npc.verb(guide)] [npc2.namePos] [npc2.fingers] up and over [npc.her] [npc.crotchBoobs],"
-									+ " letting out [npc.a_moan+] before greedily pushing [npc2.her] digits into [npc.her] [npc.crotchNipple+].",
+							"Крепко сжав [npc2.her] [npc2.hand], [npc.name] с нетерпением [npc.verb(guide)] [npc2.namePos] [npc2.fingers] вверх и через [npc.her] [npc.crotchBoobs], издавая [npc.a_moan+], прежде чем жадно втиснуть [npc2.her] пальцев в [npc.her] [npc.crotchNipple+].",
 
-							"Taking hold of [npc2.namePos] [npc2.hand], [npc.name] eagerly [npc.verb(guide)] [npc2.namePos] [npc2.fingers] up to [npc.her] [npc.crotchBoobs], and with a determined pressure,"
-									+ " [npc.she] greedily [npc.verb(push)] [npc2.her] digits into [npc.her] [npc.crotchNipple+]."));
+							"Ухватив [npc2.namePos] [npc2.hand], [npc.name] жадно [npc.verb(guide)] [npc2.namePos] [npc2.fingers] до [npc.her] [npc.crotchBoobs], и с решительным напором, [npc.she] алчно [npc.verb(push)] [npc2.her] пальцев в [npc.her] [npc.crotchNipple+]."));
 					break;
 				case SUB_NORMAL:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"With a firm grip on [npc2.her] [npc2.hand], [npc.name] [npc.verb(guide)] [npc2.namePos] [npc2.fingers] up and over [npc.her] [npc.crotchBoobs],"
-									+ " letting out [npc.a_moan+] before pushing [npc2.her] digits into [npc.her] [npc.crotchNipple+].",
+							"Крепко сжав [npc2.her] [npc2.hand], [npc.name] [npc.verb(guide)] [npc2.namePos] [npc2.fingers] вверх и через [npc.her] [npc.crotchBoobs], издавая [npc.a_moan+], прежде чем втиснуть [npc2.her] пальцев в [npc.her] [npc.crotchNipple+].",
 
-							"Taking hold of [npc2.namePos] [npc2.hand], [npc.name] [npc.verb(guide)] [npc2.namePos] [npc2.fingers] up to [npc.her] [npc.crotchBoobs], and with a determined pressure,"
-									+ " [npc.she] [npc.verb(push)] [npc2.her] digits into [npc.her] [npc.crotchNipple+]."));
+							"Ухватив [npc2.namePos] [npc2.hand], [npc.name] [npc.verb(guide)] [npc2.namePos] [npc2.fingers] до [npc.her] [npc.crotchBoobs], и с решительным напором, [npc.she] [npc.verb(push)] [npc2.her] пальцев в [npc.her] [npc.crotchNipple+]."));
 					break;
 				default:
 					break;
@@ -1109,47 +1007,39 @@ public class FingerNippleCrotch {
 				switch(Main.sex.getSexPace(Main.sex.getCharacterTargetedForSexAction(this))) {
 					case DOM_GENTLE:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" [npc2.Name] [npc2.verb(let)] out a soft [npc2.moan] as [npc2.she] [npc2.verb(enter)] [npc.herHim], curling [npc2.her] [npc2.fingers] up before gently starting to finger [npc.her] [npc.crotchNipple+].",
+								" [npc2.Name] [npc2.verb(let)] тихий [npc2.moan], пока [npc2.she] [npc2.verb(enter)] [npc.herHim], подгибая [npc2.her] [npc2.fingers], прежде чем мягко начать ласкать [npc.her] [npc.crotchNipple+].",
 	
-								" With a soft [npc2.moan], [npc2.name] [npc2.verb(curl)] [npc2.her] [npc2.fingers+] up inside of [npc.name],"
-										+ " gently pushing [npc2.her] [npc2.hand] into the soft flesh of [npc.her] [npc.crotchBoob] as [npc2.she] [npc2.verb(set)] about fingering [npc.her] [npc.crotchNipple+]."));
+								" С мягким [npc2.moan], [npc2.name] [npc2.verb(curl)] [npc2.her] [npc2.fingers+] внутри [npc.name], осторожно вдавливая [npc2.her] [npc2.hand] в нежную плоть [npc.her] [npc.crotchBoob], пока [npc2.she] [npc2.verb(set)], лаская [npc.her] [npc.crotchNipple+]."));
 						break;
 					case DOM_NORMAL:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" [npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(enter)] [npc.herHim], curling [npc2.her] [npc2.fingers] up before eagerly starting to finger [npc.her] [npc.crotchNipple+].",
+								" [npc2.Name] [npc2.verb(let)] наружу, [npc2.a_moan+], пока [npc2.she] [npc2.verb(enter)] [npc.herHim], подгибая [npc2.her] [npc2.fingers], прежде чем с нетерпением приняться пальцами ласкать [npc.her] [npc.crotchNipple+].",
 	
-								" With [npc2.a_moan+], [npc2.name] [npc2.verb(curl)] [npc2.her] [npc2.fingers+] up inside of [npc.name],"
-										+ " eagerly pushing [npc2.her] [npc2.hand] into the soft flesh of [npc.her] [npc.crotchBoob] as [npc2.she] [npc2.verb(set)] about fingering [npc.her] [npc.crotchNipple+]."));
+								" С [npc2.a_moan+], [npc2.name] [npc2.verb(curl)] [npc2.her] [npc2.fingers+] внутри [npc.name], жадно вдавливая [npc2.her] [npc2.hand] в мягкую плоть [npc.her] [npc.crotchBoob], пока [npc2.she] [npc2.verb(set)], исследуя пальцами [npc.her] [npc.crotchNipple+]."));
 						break;
 					case DOM_ROUGH:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" [npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(enter)] [npc.herHim], and, seeking to remind [npc.name] who's in charge,"
-										+ " [npc2.she] roughly [npc2.verb(curl)] [npc2.her] [npc2.fingers] up before starting to ruthlessly finger-fuck [npc.her] [npc.crotchNipple+].",
+								" [npc2.Name] [npc2.verb(let)] наружу, [npc2.a_moan+], пока [npc2.she] [npc2.verb(enter)] [npc.herHim], и, желая напомнить [npc.name], кто здесь главный, [npc2.she] грубо [npc2.verb(curl)] [npc2.her] [npc2.fingers], прежде чем начать безжалостно трахать [npc.her] [npc.crotchNipple+] пальцами.",
 	
-								" With [npc2.a_moan+], [npc2.name] [npc2.verb(curl)] [npc2.her] [npc2.fingers+] up inside of [npc.name],"
-										+ " seeking to remind [npc.herHim] who's in charge as [npc2.she] [npc2.verb(start)] roughly fingering [npc.her] [npc.crotchNipple+]."));
+								" С [npc2.a_moan+], [npc2.name] [npc2.verb(curl)] [npc2.her] [npc2.fingers+] внутри [npc.name], стремясь напомнить [npc.herHim], кто здесь главный, пока [npc2.she] [npc2.verb(start)] грубо ласкает [npc.her] [npc.crotchNipple+] пальцами."));
 						break;
 					case SUB_EAGER:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" [npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(enter)] [npc.herHim], curling [npc2.her] [npc2.fingers] up before eagerly starting to finger [npc.her] [npc.crotchNipple+].",
+								" [npc2.Name] [npc2.verb(let)] наружу, [npc2.a_moan+], пока [npc2.she] [npc2.verb(enter)] [npc.herHim], подгибая [npc2.her] [npc2.fingers], прежде чем с нетерпением приняться пальцами ласкать [npc.her] [npc.crotchNipple+].",
 	
-								" With [npc2.a_moan+], [npc2.name] [npc2.verb(curl)] [npc2.her] [npc2.fingers+] up inside of [npc.name],"
-										+ " eagerly pushing [npc2.her] [npc2.hand] into the soft flesh of [npc.her] [npc.crotchBoob] as [npc2.she] [npc2.verb(set)] about fingering [npc.her] [npc.crotchNipple+]."));
+								" С [npc2.a_moan+], [npc2.name] [npc2.verb(curl)] [npc2.her] [npc2.fingers+] внутри [npc.name], жадно вдавливая [npc2.her] [npc2.hand] в мягкую плоть [npc.her] [npc.crotchBoob], пока [npc2.she] [npc2.verb(set)], исследуя пальцами [npc.her] [npc.crotchNipple+]."));
 						break;
 					case SUB_NORMAL:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" [npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(enter)] [npc.herHim], curling [npc2.her] [npc2.fingers] up before starting to finger [npc.her] [npc.crotchNipple+].",
+								" [npc2.Name] [npc2.verb(let)] [npc2.a_moan+] как [npc2.she] [npc2.verb(enter)] [npc.herHim], подгибая [npc2.her] [npc2.fingers] перед тем, как начать ласкать пальцами [npc.her] [npc.crotchNipple+].",
 	
-								" With [npc2.a_moan+], [npc2.name] [npc2.verb(curl)] [npc2.her] [npc2.fingers+] up inside of [npc.name],"
-										+ " pushing [npc2.her] [npc2.hand] into the soft flesh of [npc.her] [npc.crotchBoob] as [npc2.she] [npc2.verb(set)] about fingering [npc.her] [npc.crotchNipple+]."));
+								" С [npc2.a_moan+], [npc2.name] [npc2.verb(curl)] [npc2.her] [npc2.fingers+] внутри [npc.name], вжимая [npc2.her] [npc2.hand] в мягкую плоть [npc.her] [npc.crotchBoob], пока [npc2.she] [npc2.verb(set)] ласкать пальцами [npc.her] [npc.crotchNipple+]."));
 						break;
 					case SUB_RESISTING:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" [npc2.Name] [npc2.verb(let)] out [npc2.a_sob+] as [npc.name] [npc.verb(force)] [npc2.her] [npc2.fingers] inside of [npc.herHim],"
-										+ " struggling against [npc.namePos] firm grip on [npc2.her] [npc2.hand] as [npc2.she] tries to pull [npc2.herself] free.",
+								" [npc2.Name] [npc2.verb(let)] [npc2.a_sob+], пока [npc.name] [npc.verb(force)] [npc2.her] [npc2.fingers] внутри [npc.herHim], пытаясь вырваться из [npc.namePos] крепкой хватки на [npc2.her] [npc2.hand], пока [npc2.she] пытается вытащить [npc2.herself].",
 	
-								" With [npc2.a_sob+], [npc2.name] [npc2.verb(start)] struggling against [npc.namePos] tight grip on [npc2.her] [npc2.hand],"
-										+ " pleading for [npc.name] to stop as [npc.she] [npc2.verb(force)] [npc2.her] [npc2.fingers] deep into [npc.her] [npc.crotchNipple+]."));
+								" С [npc2.a_sob+], [npc2.name] [npc2.verb(start)] отчаянно борется с [npc.namePos] тугой хваткой на [npc2.her] [npc2.hand], умоляя [npc.name] остановиться, пока [npc.she] [npc2.verb(force)] [npc2.her] [npc2.fingers] глубоко в [npc.her] [npc.crotchNipple+]."));
 						break;
 					default:
 						break;
@@ -1173,15 +1063,15 @@ public class FingerNippleCrotch {
 		@Override
 		public String getActionTitle() {
 			if(Main.sex.getCharacterPerformingAction().getBreastCrotchShape()== BreastShape.UDDERS) {
-				return "Gently udder-nipple-fingered";
+				return "Мягкие ласки сосков и паха пальцами";
 			} else {
-				return "Gently crotch-nipple-fingered";
+				return "Мягкие ласки сосков и промежности пальцами";
 			}
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Gently enjoy [npc2.namePos] [npc2.fingers+] in your [npc.crotchNipple+].";
+			return "Мягко наслаждайся [npc2.namePos] [npc2.fingers+] в своих [npc.crotchNipple+].";
 		}
 
 		@Override
@@ -1189,13 +1079,11 @@ public class FingerNippleCrotch {
 			UtilText.nodeContentSB.setLength(0);
 			
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"Gently pushing [npc.her] [npc.crotchBoob] out against [npc2.namePos] [npc2.hand],"
-							+ " [npc.name] [npc.verb(let)] out a soft [npc.moan] as [npc.she] [npc.verb(help)] to sink [npc2.namePos] [npc2.fingers+] deep into [npc.her] [npc.crotchNipple+].",
+					"Мягко надавливая [npc.her] [npc.crotchBoob] на [npc2.namePos] [npc2.hand], [npc.name] [npc.verb(let)] нежный [npc.moan], пока [npc.she] [npc.verb(help)] погрузить [npc2.namePos] [npc2.fingers+] глубоко в [npc.her] [npc.crotchNipple+].",
 
-					"With a soft [npc.moan], [npc.name] gently [npc.verb(start)] thrusting [npc.her] [npc.crotchBoob] out against [npc2.namePos] [npc2.hand], forcing [npc2.her] [npc2.fingers+] ever deeper into [npc.her] [npc.crotchNipple+].",
+					"С мягким [npc.moan], [npc.name] нежно [npc.verb(start)] вгоняет [npc.her] [npc.crotchBoob] в [npc2.namePos] [npc2.hand], заставляя [npc2.her] [npc2.fingers+] проникать всё глубже в [npc.her] [npc.crotchNipple+].",
 
-					"Slowly thrusting [npc.her] [npc.crotchBoob] out against [npc2.namePos] [npc2.hand],"
-							+ " a soft [npc.moan] drifts out from between [npc.namePos] [npc.lips+] as [npc.her] movements force [npc2.namePos] [npc2.fingers+] deep into [npc.her] [npc.crotchNipple+]."));
+					"Медленно выталкивая [npc.her] [npc.crotchBoob] против [npc2.namePos] [npc2.hand], мягкий [npc.moan] соскальзывает между [npc.namePos] [npc.lips+], пока движения [npc.her] заставляют [npc2.namePos] [npc2.fingers+] глубоко входить в [npc.her] [npc.crotchNipple+]."));
 
 			return UtilText.nodeContentSB.toString();
 		}
@@ -1214,15 +1102,15 @@ public class FingerNippleCrotch {
 		@Override
 		public String getActionTitle() {
 			if(Main.sex.getCharacterPerformingAction().getBreastCrotchShape()== BreastShape.UDDERS) {
-				return "Enjoy udder-nipple-fingering";
+				return "Насладиться ласками сосков на вымени";
 			} else {
-				return "Enjoy crotch-nipple-fingering";
+				return "Насладиться ласками сосков в паху";
 			}
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Enjoy [npc2.namePos] [npc2.fingers+] in your [npc.crotchNipple+].";
+			return "Насладиться [npc2.namePos] [npc2.fingers+] в твоих [npc.crotchNipple+].";
 		}
 
 		@Override
@@ -1230,13 +1118,11 @@ public class FingerNippleCrotch {
 			UtilText.nodeContentSB.setLength(0);
 
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"Eagerly pushing [npc.her] [npc.crotchBoob] out against [npc2.namePos] [npc2.hand],"
-							+ " [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(help)] to sink [npc2.namePos] [npc2.fingers+] deep into [npc.her] [npc.crotchNipple+].",
+					"С жадностью выталкивая [npc.her] [npc.crotchBoob] против [npc2.namePos] [npc2.hand], [npc.name] [npc.verb(let)] [npc.a_moan+], пока [npc.she] [npc.verb(help)] погрузить [npc2.namePos] [npc2.fingers+] глубоко в [npc.her] [npc.crotchNipple+].",
 
-					"With [npc.a_moan+], [npc.name] energetically [npc.verb(start)] thrusting [npc.her] [npc.crotchBoob] out against [npc2.namePos] [npc2.hand], forcing [npc2.her] [npc2.fingers+] ever deeper into [npc.her] [npc.crotchNipple+].",
+					"С [npc.a_moan+], [npc.name] энергично [npc.verb(start)] вгоняет [npc.her] [npc.crotchBoob] против [npc2.namePos] [npc2.hand], заставляя [npc2.her] [npc2.fingers+] проникать всё глубже в [npc.her] [npc.crotchNipple+].",
 
-					"Enthusiastically thrusting [npc.her] [npc.crotchBoob] out against [npc2.namePos] [npc2.hand],"
-							+ " [npc.a_moan+] drifts out from between [npc.her] [npc.lips+] as [npc.her] movements force [npc2.namePos] [npc2.fingers+] deep into [npc.her] [npc.crotchNipple+]."));
+					"Энтузиазмом выталкивая [npc.her] [npc.crotchBoob] против [npc2.namePos] [npc2.hand], [npc.a_moan+] соскальзывает между [npc.her] [npc.lips+], пока движения [npc.her] заставляют [npc2.namePos] [npc2.fingers+] глубоко входить в [npc.her] [npc.crotchNipple+]."));
 
 			return UtilText.nodeContentSB.toString();
 		}
@@ -1255,15 +1141,15 @@ public class FingerNippleCrotch {
 		@Override
 		public String getActionTitle() {
 			if(Main.sex.getCharacterPerformingAction().getBreastCrotchShape()== BreastShape.UDDERS) {
-				return "Roughly udder-nipple-fingered";
+				return "Грубые ласки сосков на вымени";
 			} else {
-				return "Roughly crotch-nipple-fingered";
+				return "Грубые ласки сосков в паху";
 			}
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Roughly force [npc2.namePos] [npc2.fingers+] deep inside your [npc.crotchNipple+].";
+			return "Грубо вгонять [npc2.namePos] [npc2.fingers+] глубоко внутрь твоей [npc.crotchNipple+].";
 		}
 
 		@Override
@@ -1271,13 +1157,11 @@ public class FingerNippleCrotch {
 			UtilText.nodeContentSB.setLength(0);
 
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"Violently slamming [npc.her] [npc.crotchBoob] out against [npc2.namePos] [npc2.hand],"
-							+ " [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] roughly [npc.verb(force)] [npc2.namePos] [npc2.fingers+] deep into [npc.her] [npc.crotchNipple+].",
+					"Яростно вбивая [npc.her] [npc.crotchBoob] о [npc2.namePos] [npc2.hand], [npc.name] [npc.verb(let)] [npc.a_moan+], пока [npc.she] грубо [npc.verb(force)] [npc2.namePos] [npc2.fingers+] глубоко в [npc.her] [npc.crotchNipple+].",
 
-					"With [npc.a_moan+], [npc.name] [npc.verb(start)] aggressively thrusting [npc.her] [npc.crotchBoob] out against [npc2.namePos] [npc2.hand], forcing [npc2.her] [npc2.fingers+] ever deeper into [npc.her] [npc.crotchNipple+].",
+					"С помощью [npc.a_moan+], [npc.name] [npc.verb(start)] агрессивно толкая [npc.her] [npc.crotchBoob] о [npc2.namePos] [npc2.hand], заставляя [npc2.her] [npc2.fingers+] проникать всё глубже в [npc.her] [npc.crotchNipple+].",
 
-					"Roughly thrusting [npc.her] [npc.crotchBoob] out against [npc2.namePos] [npc2.hand],"
-							+ " [npc.a_moan+] bursts out from between [npc.her] [npc.lips+] as [npc.her] forceful movements drive [npc2.namePos] [npc2.fingers+] deep into [npc.her] [npc.crotchNipple+]."));
+					"Грубо толкая [npc.her] [npc.crotchBoob] о [npc2.namePos] [npc2.hand], так что [npc.a_moan+] вырывается из между [npc.her] [npc.lips+], пока мощные движения [npc.her] вгоняют [npc2.namePos] [npc2.fingers+] глубоко в [npc.her] [npc.crotchNipple+]."));
 
 			return UtilText.nodeContentSB.toString();
 		}
@@ -1296,15 +1180,15 @@ public class FingerNippleCrotch {
 		@Override
 		public String getActionTitle() {
 			if(Main.sex.getCharacterPerformingAction().getBreastCrotchShape()== BreastShape.UDDERS) {
-				return "Enjoy udder-nipple-fingering";
+				return "Насладиться ласками сосков на вымени";
 			} else {
-				return "Enjoy crotch-nipple-fingering";
+				return "Насладиться ласками сосков в паху";
 			}
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Enjoy [npc2.namePos] [npc2.fingers+] in [npc.her] [npc.crotchNipple+].";
+			return "Наслаждайся [npc2.namePos] [npc2.fingers+] в [npc.her] [npc.crotchNipple+].";
 		}
 
 		@Override
@@ -1312,13 +1196,11 @@ public class FingerNippleCrotch {
 			UtilText.nodeContentSB.setLength(0);
 
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"Pushing [npc.her] [npc.crotchBoob] out against [npc2.namePos] [npc2.hand],"
-							+ " [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(help)] to sink [npc2.namePos] [npc2.fingers+] deep into [npc.her] [npc.crotchNipple+].",
+					"Прижимая [npc.her] [npc.crotchBoob] к [npc2.namePos] [npc2.hand], [npc.name] [npc.verb(let)] [npc.a_moan+], пока [npc.she] [npc.verb(help)] погружать [npc2.namePos] [npc2.fingers+] глубоко в [npc.her] [npc.crotchNipple+].",
 
-					"With [npc.a_moan+], [npc.name] [npc.verb(start)] thrusting [npc.her] [npc.crotchBoob] out against [npc2.namePos] [npc2.hand], forcing [npc2.her] [npc2.fingers+] ever deeper into [npc.her] [npc.crotchNipple+].",
+					"С помощью [npc.a_moan+], [npc.name] [npc.verb(start)] толкая [npc.her] [npc.crotchBoob] о [npc2.namePos] [npc2.hand], заставляя [npc2.her] [npc2.fingers+] проникать всё глубже в [npc.her] [npc.crotchNipple+].",
 
-					"Thrusting [npc.her] [npc.crotchBoob] out against [npc2.namePos] [npc2.hand],"
-							+ " [npc.a_moan+] drifts out from between [npc.her] [npc.lips+] as [npc.her] movements force [npc2.namePos] [npc2.fingers+] deep into [npc.her] [npc.crotchNipple+]."));
+					"[npc.her] [npc.crotchBoob] толчками упираются в [npc2.namePos] [npc2.hand], а [npc.a_moan+] вырывается из меж[npc.her] [npc.lips+], пока [npc.her] движения заставляют [npc2.namePos] [npc2.fingers+] глубоко входить в [npc.her] [npc.crotchNipple+]."));
 
 			return UtilText.nodeContentSB.toString();
 		}
@@ -1337,15 +1219,15 @@ public class FingerNippleCrotch {
 		@Override
 		public String getActionTitle() {
 			if(Main.sex.getCharacterPerformingAction().getBreastCrotchShape()== BreastShape.UDDERS) {
-				return "Eagerly udder-nipple-fingered";
+				return "Жадно ласкать соски пальцами, прижимая их к вымени";
 			} else {
-				return "Eagerly crotch-nipple-fingered";
+				return "Жадно ласкать соски пальцами, прижимая их к промежности";
 			}
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Eagerly push your [npc.breast+(true)] against [npc2.namePos] [npc2.hand] as [npc2.she] fingers your [npc.crotchNipple+].";
+			return "Попытаться с энтузиазмом прижать свой [npc.breast+(true)] к [npc2.namePos] [npc2.hand], пока [npc2.she] ласкает твои [npc.crotchNipple+].";
 		}
 
 		@Override
@@ -1353,13 +1235,11 @@ public class FingerNippleCrotch {
 			UtilText.nodeContentSB.setLength(0);
 
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"Eagerly pushing [npc.her] [npc.crotchBoob] out against [npc2.namePos] [npc2.hand],"
-							+ " [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(help)] to sink [npc2.namePos] [npc2.fingers+] deep into [npc.her] [npc.crotchNipple+].",
+					"С жадностью выталкивая [npc.her] [npc.crotchBoob] против [npc2.namePos] [npc2.hand], [npc.name] [npc.verb(let)] [npc.a_moan+], пока [npc.she] [npc.verb(help)] погрузить [npc2.namePos] [npc2.fingers+] глубоко в [npc.her] [npc.crotchNipple+].",
 
-					"With [npc.a_moan+], [npc.name] energetically [npc.verb(start)] thrusting [npc.her] [npc.crotchBoob] out against [npc2.namePos] [npc2.hand], forcing [npc2.her] [npc2.fingers+] ever deeper into [npc.her] [npc.crotchNipple+].",
+					"С [npc.a_moan+], [npc.name] энергично [npc.verb(start)] вгоняет [npc.her] [npc.crotchBoob] против [npc2.namePos] [npc2.hand], заставляя [npc2.her] [npc2.fingers+] проникать всё глубже в [npc.her] [npc.crotchNipple+].",
 
-					"Enthusiastically thrusting [npc.her] [npc.crotchBoob] out against [npc2.namePos] [npc2.hand],"
-							+ " [npc.a_moan+] drifts out from between [npc.her] [npc.lips+] as [npc.her] movements force [npc2.namePos] [npc2.fingers+] deep into [npc.her] [npc.crotchNipple+]."));
+					"Энтузиазмом выталкивая [npc.her] [npc.crotchBoob] против [npc2.namePos] [npc2.hand], [npc.a_moan+] соскальзывает между [npc.her] [npc.lips+], пока движения [npc.her] заставляют [npc2.namePos] [npc2.fingers+] глубоко входить в [npc.her] [npc.crotchNipple+]."));
 
 			return UtilText.nodeContentSB.toString();
 		}
@@ -1378,15 +1258,15 @@ public class FingerNippleCrotch {
 		@Override
 		public String getActionTitle() {
 			if(Main.sex.getCharacterPerformingAction().getBreastCrotchShape()== BreastShape.UDDERS) {
-				return "Resist udder-nipple-fingering";
+				return "Сопротивляться ласкам сосков пальцами, как вымени";
 			} else {
-				return "Resist crotch-nipple-fingering";
+				return "Сопротивляться ласкам сосков пальцами, как в промежности";
 			}
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Try and pull [npc2.namePos] [npc2.fingers] out of your [npc.crotchNipple+].";
+			return "Попытаться вытащить [npc2.namePos] [npc2.fingers] из своих [npc.crotchNipple+].";
 		}
 		
 		@Override
@@ -1397,40 +1277,31 @@ public class FingerNippleCrotch {
 			switch(Main.sex.getSexPace(Main.sex.getCharacterTargetedForSexAction(this))) {
 				case DOM_GENTLE:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"[npc.Name] [npc.verb(feel)] tears starting to well up in [npc.namePos] [npc.eyes], and, unable to keep it in any longer,"
-									+ " [npc.a_sob+] bursts out from [npc.her] mouth as [npc.she] weakly [npc.verb(try)] to pull [npc2.namePos] gently-pumping [npc2.fingers] out of [npc.her] [npc.crotchNipple+].",
+							"В [npc.namePos] [npc.eyes] начинают подступать [npc.Name] [npc.verb(feel)], и, не в силах больше сдерживаться, [npc.a_sob+] вырывается из рта [npc.her], пока [npc.she] слабо [npc.verb(try)], чтобы мягко вытягивать [npc2.namePos] [npc2.fingers] из [npc.her] [npc.crotchNipple+].",
 
-							"[npc.A_sob+] bursts out from [npc.namePos] mouth as [npc.she] frantically [npc.verb(try)] to [npc.verb(pull)] [npc.her] [npc.crotchBoob] away from [npc2.namePos] unwanted touch,"
-									+ " struggling in desperation as [npc2.namePos] [npc2.fingers+] continue gently sliding in and out of [npc.her] [npc.crotchNipple+].",
+							"[npc.A_sob+] вырывается из рта [npc.namePos], пока [npc.she] отчаянно [npc.verb(try)], чтобы [npc.verb(pull)] [npc.her] [npc.crotchBoob] подальше от [npc2.namePos] нежелательных прикосновений, в отчаянной попытке спастись, пока [npc2.namePos] [npc2.fingers+] продолжают мягко скользить туда-сюда в [npc.her] [npc.crotchNipple+].",
 
-							"Trying desperately to pull [npc.her] [npc.crotchBoob] away from [npc2.namePos] [npc2.hand],"
-									+ " [npc.name] [npc.sob] in distress as [npc2.namePos] [npc2.fingers+] continue gently sliding deep into [npc.her] [npc.crotchNipple+]."));
+							"Отчаянно пытаясь оттянуть [npc.her] [npc.crotchBoob] от [npc2.namePos] [npc2.hand], [npc.name] [npc.sob] в смятении, пока [npc2.namePos] [npc2.fingers+] продолжают мягко скользить глубоко в [npc.her] [npc.crotchNipple+]."));
 					break;
 				case DOM_NORMAL:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"[npc.Name] [npc.verb(feel)] tears starting to well up in [npc.namePos] [npc.eyes], and, unable to keep it in any longer,"
-									+ " [npc.a_sob+] bursts out from [npc.her] mouth as [npc.she] weakly [npc.verb(try)] to pull [npc2.namePos] greedily-thrusting [npc2.fingers] out of [npc.her] [npc.crotchNipple+].",
+							"[npc.Name] [npc.verb(feel)] начинают подступать к [npc.namePos] [npc.eyes], и, больше не в силах сдерживаться, [npc.a_sob+] вырывается из [npc.her] рта, пока [npc.she] слабо [npc.verb(try)], чтобы жадно вытянуть [npc2.namePos], жадно вонзающийся [npc2.fingers] из [npc.her] [npc.crotchNipple+].",
 
 
-							"[npc.A_sob+] bursts out from [npc.namePos] mouth as [npc.she] frantically [npc.verb(try)] to [npc.verb(pull)] [npc.her] [npc.crotchBoob] away from [npc2.namePos] unwanted touch,"
-									+ " struggling in desperation as [npc2.namePos] [npc2.fingers+] continue eagerly sliding in and out of [npc.her] [npc.crotchNipple+].",
+							"[npc.A_sob+] вырывается из [npc.namePos] рта, пока [npc.she] лихорадочно [npc.verb(try)], чтобы [npc.verb(pull)] [npc.her] [npc.crotchBoob] от нежелательного прикосновения [npc2.namePos], отчаянно извиваясь, пока [npc2.namePos] [npc2.fingers+] продолжают с энтузиазмом входить и выходить из [npc.her] [npc.crotchNipple+].",
 
 
-							"Trying desperately to pull [npc.her] [npc.crotchBoob] away from [npc2.namePos] [npc2.hand],"
-									+ " [npc.name] [npc.sob] in distress as [npc2.namePos] [npc2.fingers+] continue eagerly pumping deep into [npc.her] [npc.crotchNipple+]."));
+							"Отчаянно пытаясь оттянуть [npc.her] [npc.crotchBoob] от [npc2.namePos] [npc2.hand], [npc.name] [npc.sob] в смятении, пока [npc2.namePos] [npc2.fingers+] продолжают с энтузиазмом глубоко входить в [npc.her] [npc.crotchNipple+]."));
 					break;
 				case DOM_ROUGH:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"[npc.Name] [npc.verb(feel)] tears starting to well up in [npc.namePos] [npc.eyes], and, unable to keep it in any longer,"
-									+ " [npc.a_sob+] bursts out from [npc.her] mouth as [npc.she] weakly [npc.verb(try)] to pull [npc2.namePos] roughly-thrusting [npc2.fingers] out of [npc.her] [npc.crotchNipple+].",
+							"[npc.Name] [npc.verb(feel)] начинают подступать к [npc.namePos] [npc.eyes], и, не в силах больше сдерживаться, [npc.a_sob+] вырывается из [npc.her] рта, пока [npc.she] слабо [npc.verb(try)], пытаясь вытащить [npc2.namePos] грубо вбивающийся [npc2.fingers] из [npc.her] [npc.crotchNipple+].",
 
 
-							"[npc.A_sob+] bursts out from [npc.namePos] mouth as [npc.she] frantically [npc.verb(try)] to [npc.verb(pull)] [npc.her] [npc.crotchBoob] away from [npc2.namePos] unwanted touch,"
-									+ " struggling in desperation as [npc2.namePos] [npc2.fingers+] continue roughly slamming in and out of [npc.her] [npc.crotchNipple+].",
+							"[npc.A_sob+] вырывается изо рта [npc.namePos], пока [npc.she] отчаянно [npc.verb(try)], пытаясь [npc.verb(pull)] [npc.her] [npc.crotchBoob] от нежелательных прикосновений [npc2.namePos] и тщетно борясь, пока [npc2.namePos] [npc2.fingers+] продолжают грубо входить и выходить из [npc.her] [npc.crotchNipple+].",
 
 
-							"Trying desperately to pull [npc.her] [npc.crotchBoob] away from [npc2.namePos] [npc2.hand],"
-									+ " [npc.name] [npc.sob] in distress as [npc2.namePos] [npc2.fingers+] continue roughly slamming deep into [npc.her] [npc.crotchNipple+]."));
+							"Отчаянно пытаясь оттянуть [npc.her] [npc.crotchBoob] от [npc2.namePos] [npc2.hand], [npc.name] [npc.sob] в смятении, пока [npc2.namePos] [npc2.fingers+] продолжают грубо вбиваться глубоко в [npc.her] [npc.crotchNipple+]."));
 					break;
 				default:
 					break;
@@ -1452,15 +1323,15 @@ public class FingerNippleCrotch {
 		@Override
 		public String getActionTitle() {
 			if(Main.sex.getCharacterPerformingAction().getBreastCrotchShape()== BreastShape.UDDERS) {
-				return "Stop udder-nipple-fingering";
+				return "Прекратить ласки сосков пальцами у вымени";
 			} else {
-				return "Stop crotch-nipple-fingering";
+				return "Прекратить ласки сосков пальцами в промежности";
 			}
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Get [npc2.name] to pull [npc2.her] [npc2.fingers] out of your [npc.crotchNipple] and stop fingering your [npc.crotchBoobs].";
+			return "Заставить [npc2.name] вытащить [npc2.her] [npc2.fingers] из твоих [npc.crotchNipple] и перестать теребить твои [npc.crotchBoobs].";
 		}
 
 		@Override
@@ -1471,30 +1342,30 @@ public class FingerNippleCrotch {
 			switch(Main.sex.getSexPace(Main.sex.getCharacterPerformingAction())) {
 				case DOM_ROUGH:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"Yanking [npc2.namePos] [npc2.fingers] out of [npc.her] [npc.crotchNipple+], [npc.name] [npc.verb(growl)] at [npc2.name] as [npc.she] [npc.verb(command)] [npc2.herHim] to stop fingering [npc.herHim].",
+							"Резко выдергивая [npc2.namePos] [npc2.fingers] из [npc.her] [npc.crotchNipple+], [npc.name] [npc.verb(growl)] на [npc2.name], пока [npc.she] [npc.verb(command)] [npc2.herHim], чтобы прекратить ласки [npc.herHim].",
 	
-							"[npc.Name] [npc.verb(lean)] into [npc2.name], inhaling [npc2.her] [npc2.scent] before yanking [npc2.her] [npc2.fingers] out of [npc.her] [npc.crotchNipple+]."));
+							"[npc.Name] [npc.verb(lean)] в [npc2.name], вдыхая [npc2.her] [npc2.scent], прежде чем резко выдернуть [npc2.her] [npc2.fingers] из [npc.her] [npc.crotchNipple+]."));
 					break;
 				default:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"Sliding [npc2.namePos] [npc2.fingers] out of [npc.her] [npc.crotchNipple+], [npc.name] [npc.verb(let)] out [npc.a_moan+] before telling [npc2.herHim] to stop fingering [npc.herHim].",
+							"Медленно вытягивая [npc2.namePos] [npc2.fingers] из [npc.her] [npc.crotchNipple+], [npc.name] [npc.verb(let)] из [npc.a_moan+], прежде чем велеть [npc2.herHim] перестать теребить [npc.herHim].",
 	
-							"[npc.Name] lean into [npc2.name], inhaling [npc2.her] [npc2.scent] as [npc.name] [npc.verb(slide)] [npc2.her] [npc2.fingers] out of [npc.her] [npc.crotchNipple+]."));
+							"[npc.Name] наклоняется к [npc2.name], вдыхая [npc2.her] [npc2.scent], пока [npc.name] [npc.verb(slide)] [npc2.her] [npc2.fingers] из [npc.her] [npc.crotchNipple+]."));
 					break;
 			}
 			
 			switch(Main.sex.getSexPace(Main.sex.getCharacterTargetedForSexAction(this))) {
 				case SUB_RESISTING:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							" [npc2.Name] [npc2.verb(let)] out a relieved sigh, which soon turns into [npc2.a_sob+] as [npc2.she] [npc2.verb(realise)] that [npc.nameIsFull]n't finished with [npc2.herHim] yet.",
+							" [npc2.Name] [npc2.verb(let)] вздох облегчения, который вскоре сменяется [npc2.a_sob+], когда [npc2.she] [npc2.verb(realise)], что [npc.nameIsFull] еще не закончил с [npc2.herHim].",
 	
-							" With [npc2.a_sob+], [npc2.name] [npc2.verb(continue)] to protest and struggle against [npc.name] as [npc.she] [npc.verb(hold)] [npc2.herHim] firmly in place."));
+							" С [npc2.a_sob+], [npc2.name] [npc2.verb(continue)], протестуя и сопротивляясь [npc.name], пока [npc.she] [npc.verb(hold)] [npc2.herHim] на месте."));
 					break;
 				default:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							" [npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc.name] [npc.verb(stop)] [npc2.herHim] from stimulating [npc.her] [npc.crotchNipple+].",
+							" [npc2.Name] [npc2.verb(let)] [npc2.a_moan+], пока [npc.name] [npc.verb(stop)] [npc2.herHim] от стимуляции [npc.her] [npc.crotchNipple+].",
 	
-							" [npc2.A_moan+] escapes from between [npc2.namePos] [npc2.lips+], betraying [npc2.her] desire to give [npc.her] [npc.crotchNipple+] more of [npc2.her] attention."));
+							" [npc2.A_moan+] вырывается из между [npc2.namePos] [npc2.lips+], выдавая [npc2.her] желание уделить [npc.her] [npc.crotchNipple+] больше [npc2.her] внимания."));
 					break;
 			}
 			
