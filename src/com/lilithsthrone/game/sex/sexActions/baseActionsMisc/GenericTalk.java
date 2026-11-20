@@ -44,27 +44,27 @@ public class GenericTalk {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Stop rape-play";
+			return "Прекратить игру в изнасилование";
 		}
 		@Override
 		public String getActionDescription() {
 			if(Main.sex.getCharacterPerformingAction().isSpeechMuffled()) {
-				return "As your mouth is blocked, you're not able to tell [npc2.name] to stop pretending to resist, but you can still make a disapproving noise to let [npc2.her] know that you want [npc2.herHim] to stop it.";
+				return "Поскольку твой рот забит, ты не можешь сказать [npc2.name], чтобы тот перестал притворяться сопротивляющимся, но ты все еще можешь издать неодобрительный звук, чтобы дать [npc2.her] понять, что ты хочешь, чтобы [npc2.herHim] прекратил это.";
 			}
-			return "Tell [npc2.name] to stop pretending to resist.";
+			return "Сказать [npc2.name], чтобы тот перестал притворяться сопротивляющимся.";
 		}
 		@Override
 		public String getDescription() {
 			StringBuilder sb = new StringBuilder();
 
 			if(Main.sex.getCharacterPerformingAction().isSpeechMuffled()) {
-				sb.append("Although [npc.namePos] mouth is blocked, [npc.sheIs] still able to make a disapproving noise to signal to [npc2.name] that [npc2.she] should stop pretending to resist.");
+				sb.append("Хотя рот [npc.namePos] забит, [npc.sheIs] все же может издать неодобрительный звук, давая понять [npc2.name], что [npc2.she] пора перестать притворяться, будто он сопротивляется.");
 				
 			} else {
-				sb.append("Not liking [npc2.namePos] behaviour, [npc.name] [npc.verb(tell)] [npc2.herHim] in no uncertain terms to stop pretending to resist.");
+				sb.append("Не довольный поведением [npc2.namePos], [npc.name] [npc.verb(tell)] [npc2.herHim] самым недвусмысленным образом, чтобы тот перестал притворяться сопротивляющимся.");
 			}
 
-			sb.append(" Although [npc2.she] [npc2.verb(let)] out a disappointed [npc2.moan], [npc2.name] [npc2.verb(decide)] to agree to [npc.namePos] request and [npc2.verb(put)] a stop to the rape-play.");
+			sb.append(" Хотя [npc2.she] [npc2.verb(let)] разочарованный [npc2.moan], [npc2.name] [npc2.verb(decide)] согласиться на просьбу [npc.namePos] и [npc2.verb(put)] игру в изнасилование.");
 			
 			return sb.toString();
 		}
@@ -96,27 +96,27 @@ public class GenericTalk {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Allow rape-play";
+			return "Продолжить игру в изнасилование";
 		}
 		@Override
 		public String getActionDescription() {
 			if(Main.sex.getCharacterPerformingAction().isSpeechMuffled()) {
-				return "Although your mouth is blocked, you can still make a suggestive noise to let [npc2.her] know that [npc2.she] can pretend to resist if [npc2.she] wants to.";
+				return "Хотя твой рот забит, ты все еще можешь издать многозначительный звук, чтобы дать [npc2.her] понять, что [npc2.she] может притворяться сопротивляющимся, если [npc2.she] того захочет.";
 			}
-			return "Tell [npc2.name] that [npc.she] can pretend to resist if [npc2.she] wants to.";
+			return "Сказать [npc2.name], что [npc.she] может притворяться сопротивляющимся, если [npc2.she] захочет.";
 		}
 		@Override
 		public String getDescription() {
 			StringBuilder sb = new StringBuilder();
 
 			if(Main.sex.getCharacterPerformingAction().isSpeechMuffled()) {
-				sb.append("Although [npc.namePos] mouth is blocked, [npc.sheIs] still able to make a suggestive noise to signal to [npc2.name] that [npc2.she] can pretend to resist if [npc2.she] [npc2.verb(want)] to.");
+				sb.append("Хотя рот [npc.namePos] забит, [npc.sheIs] все еще может издать многозначительный звук, сигнализируя [npc2.name], что [npc2.she] может притворяться сопротивляющимся, если [npc2.she] [npc2.verb(want)].");
 				
 			} else {
-				sb.append("Wanting things to get a little kinkier, [npc.name] [npc.verb(tell)] [npc2.name] that [npc2.she] can pretend to resist if [npc2.she] [npc2.verb(want)] to.");
+				sb.append("Желая добавить немного извращенности, [npc.name] [npc.verb(tell)] [npc2.name], что [npc2.she] может притворяться сопротивляющейся, если [npc2.she] [npc2.verb(want)].");
 			}
 
-			sb.append(" Letting out an excited [npc2.moan], [npc2.name] [npc2.verb(take)] a moment in which to decide whether or not to continue pretending to resist...");
+			sb.append(" Издавая возбужденный [npc2.moan], [npc2.name] [npc2.verb(take)] мгновение, чтобы решить, стоит ли и дальше притворяться, что она сопротивляется...");
 			
 			return sb.toString();
 		}
@@ -149,17 +149,17 @@ public class GenericTalk {
 		@Override
 		public String getActionTitle() {
 			if(Main.sex.getCharacterPerformingAction().isSpeechMuffled()) {
-				return "Threatening growl";
+				return "Угрожающее рычание";
 			}
-			return "Degrading talk";
+			return "Унизительные слова";
 		}
 
 		@Override
 		public String getActionDescription() {
 			if(Main.sex.getCharacterPerformingAction().isSpeechMuffled()) {
-				return "As your mouth is blocked, you're not able to tell [npc2.name] that [npc2.sheIs] your little fuck-toy, but you can still make an aggressive growling noise to let [npc2.her] know you still mean business.";
+				return "Поскольку твой рот забит, ты не можешь сказать [npc2.name], что [npc2.sheIs] — твоя маленькая секс-игрушка, но ты все еще можешь издать агрессивное рычание, чтобы дать [npc2.her] понять, что ты настроен серьезно.";
 			}
-			return "Tell [npc2.name] that [npc2.sheIs] your little fuck-toy.";
+			return "Сказать [npc2.name], что [npc2.sheIs] — твоя маленькая секс-игрушка.";
 		}
 
 		@Override
@@ -169,21 +169,20 @@ public class GenericTalk {
 			if(Main.sex.getCharacterPerformingAction().isSpeechMuffled()) {
 				sb.append(
 						UtilText.returnStringAtRandom(
-						"As [npc.namePos] mouth is blocked, [npc.sheIs] not able to speak, but, still wanting to give [npc2.name] an audible reminder that [npc2.sheIs] [npc.her] bitch, [npc.she] [npc.verb(let)] out a particularly aggressive growl.",
-						"Due to [npc.her] mouth currently being blocked, [npc.nameIsFull] not able to speak, and instead [npc.verb(decide)] to let out a deep, menacing growl to let [npc2.name] know that [npc2.sheIs] still [npc.her] worthless bitch.",
-						"Not being deterred by [npc.her] current lack of ability to speak, [npc.name] [npc.verb(let)] out a particularly threatening growl, letting [npc2.name] know that [npc2.sheIs] going to be treated like a pathetic fuck-toy.",
-						"Although [npc.her] mouth is blocked, making [npc.herHim] unable to speak,"
-								+ " [npc.nameIsFull] not deterred from making one of the most menacing growls [npc.she] can muster, letting [npc2.name] know that [npc2.sheIs] going to be treated like a submissive bitch."));
+						"Поскольку рот [npc.namePos] забит и [npc.sheIs] не может говорить, но все же желая дать [npc2.name] звуковое напоминание о том, что [npc2.sheIs] — [npc.her] сучка, [npc.she] [npc.verb(let)] особенно агрессивное рычание.",
+						"Из-за того, что рот [npc.her] сейчас забит и [npc.nameIsFull] не может говорить, она вместо этого [npc.verb(decide)] издать глубокое, угрожающее рычание, чтобы дать [npc2.name] понять, что [npc2.sheIs] все еще [npc.her] никчемная сучка.",
+						"Несмотря на то, что [npc.her] сейчас не может говорить, [npc.name] [npc.verb(let)] угрожающее рычание, давая [npc2.name] понять, что [npc2.sheIs] будет обращаться с ней как с жалкой подстилкой.",
+						"Хотя рот [npc.her] забит, из-за чего [npc.herHim] не может говорить, это не мешает [npc.nameIsFull] издать самый угрожающий рык, на который только способна [npc.she], давая [npc2.name] понять, что с [npc2.sheIs] будут обращаться как с покорной сучкой."));
 				
 			} else {
 				if(Main.sex.getCharacterPerformingAction().getFetishDesire(Fetish.FETISH_SADIST).isPositive()) {
 					sb.append(UtilText.returnStringAtRandom(
-							"With an evil grin, [npc.name] [npc.verb(snarl)] at [npc2.name], ",
-							"[npc.NamePos] voice drips with sadistic glee as [npc.she] [npc.verb(snarl)], "));
+							"Со злой ухмылкой, [npc.name] [npc.verb(snarl)] на [npc2.name], ",
+							"Голос [npc.NamePos] так и сочится садистским восторгом, пока [npc.she] [npc.verb(snarl)], "));
 				} else {
 					sb.append(UtilText.returnStringAtRandom(
-							"Grinning to [npc.herself], [npc.name] [npc.verb(snarl)] at [npc2.name], ",
-							"[npc.Name] puts on [npc.her] most dominant voice as [npc.she] [npc.verb(snarl)], "));
+							"Ухмыляясь [npc.herself], [npc.name] [npc.verb(snarl)] на [npc2.name], ",
+							"[npc.Name] принимает самый властный голос [npc.her], когда [npc.she] [npc.verb(snarl)], "));
 				}
 				
 				sb.append(Main.sex.getRoughTalk(Main.sex.getCharacterPerformingAction()));
@@ -210,9 +209,9 @@ public class GenericTalk {
 		@Override
 		public String getActionTitle() {
 			if(Main.sex.getCharacterPerformingAction().isSpeechMuffled()) {
-				return "Submissive whine";
+				return "Покорный скулеж";
 			}
-			return "Submissive talk";
+			return "Покорные речи";
 		}
 			
 		@Override
@@ -226,9 +225,9 @@ public class GenericTalk {
 		@Override
 		public String getActionDescription() {
 			if(Main.sex.getCharacterPerformingAction().isSpeechMuffled()) {
-				return "As your mouth is blocked, you're not able to tell [npc2.name] that you're [npc2.her] submissive slut, but you can still make a pitiful whine to let [npc2.her] know you're still [npc2.her] loyal bitch.";
+				return "Поскольку твой рот забит, ты не можешь сказать [npc2.name], что ты — [npc2.her] покорная шлюха, но всё же можешь издать жалобный скулеж, чтобы дать [npc2.her] понять, что ты всё еще [npc2.her] верная сучка.";
 			}
-			return "Tell [npc2.name] that you're [npc2.her] submissive slut, and want to be fucked like a worthless bitch.";
+			return "Сказать [npc2.name], что ты — [npc2.her] покорная шлюха и хочешь, чтобы тебя трахали как никчемную сучку.";
 		}
 
 		@Override
@@ -238,17 +237,16 @@ public class GenericTalk {
 			if(Main.sex.getCharacterPerformingAction().isSpeechMuffled()) {
 				sb.append(
 						UtilText.returnStringAtRandom(
-						"As [npc.namePos] mouth is blocked, [npc.sheIs] not able to speak, but, still wanting to give [npc2.name] an audible indication that [npc.sheIs] enjoying [npc.herself], [npc.she] [npc.verb(let)] out a particularly pathetic whine.",
-						"Due to [npc.her] mouth currently being blocked, [npc.nameIsFull] not able to speak, and instead [npc.verb(decide)] to let out an incredibly submissive, horny whine to let [npc2.name] know that [npc.sheIs] enjoying [npc.herself].",
-						"Not being deterred by [npc.her] current lack of ability to speak, [npc.name] [npc.verb(let)] out a pathetic, horny whine, letting [npc2.name] know that [npc.sheIs] happy to remain [npc2.her] submissive bitch.",
-						"Although [npc.her] mouth is blocked, making [npc.herHim] unable to speak,"
-								+ " [npc.nameIsFull] not deterred from making one of the most pathetic whines [npc.she] can, letting [npc2.name] know that [npc.sheIs] enjoying being [npc2.her] submissive bitch."));
+						"Так как рот [npc.namePos] забит и [npc.sheIs] не может говорить, но всё же желая подать [npc2.name] звуковой сигнал о том, что [npc.sheIs] наслаждается [npc.herself], [npc.she] [npc.verb(let)] особенно жалкий скулеж.",
+						"Из-за того, что рот [npc.her] сейчас забит, [npc.nameIsFull] не может говорить, и вместо этого [npc.verb(decide)] невероятно покорный, похотливый стон, давая [npc2.name] понять, что [npc.sheIs] наслаждается [npc.herself].",
+						"Не смущаясь текущей неспособности [npc.her] говорить, [npc.name] [npc.verb(let)] жалкий, похотливый стон, давая [npc2.name] понять, что [npc.sheIs] рада оставаться [npc2.her] покорной сучкой.",
+						"Хотя рот [npc.her] забит, из-за чего [npc.herHim] не может говорить, [npc.nameIsFull] не упускает возможности издать самый жалкий стон, на который только способна [npc.she], давая [npc2.name] понять, что [npc.sheIs] наслаждается тем, что она [npc2.her] покорная сучка."));
 				
 			} else {
 				sb.append(
 						UtilText.returnStringAtRandom(
-						"[npc.Name] [npc.verb(bite)] [npc.her] [npc.lip] and [npc.verb(try)] to look as submissive as possible as [npc.she] [npc.verb(cry)] out, ",
-						"[npc.Name] [npc.verb(put)] on [npc.her] most innocent expression, before [npc.moaning], "));
+						"[npc.Name] [npc.verb(bite)] [npc.her] [npc.lip] и [npc.verb(try)], стараясь выглядеть как можно более покорной, пока [npc.she] [npc.verb(cry)], ",
+						"[npc.Name] [npc.verb(put)] на [npc.her] самом невинном выражении лица, прежде чем [npc.moaning], "));
 	
 				sb.append(Main.sex.getSubmissiveTalk(Main.sex.getCharacterPerformingAction()));
 			}
@@ -287,17 +285,17 @@ public class GenericTalk {
 		@Override
 		public String getActionTitle() {
 			if(Main.sex.getCharacterPerformingAction().isSpeechMuffled()) {
-				return "Loving sigh";
+				return "Любящий вздох";
 			}
-			return "Loving confession";
+			return "Любовное признание";
 		}
 
 		@Override
 		public String getActionDescription() {
 			if(Main.sex.getCharacterPerformingAction().isSpeechMuffled()) {
-				return "As your mouth is blocked, you're not able to tell [npc2.name] that you love [npc2.herHim], but you can still make a loving humming noise to let [npc2.her] know what your feelings are.";
+				return "Поскольку ваш рот забит, вы не можете сказать [npc2.name], что любите [npc2.herHim], но все же можете издать нежный гудящий звук, чтобы дать [npc2.her] понять ваши чувства.";
 			}
-			return "Gently tell [npc2.name] that you love [npc2.herHim].";
+			return "Нежно сказать [npc2.name], что вы любите [npc2.herHim].";
 		}
 
 		@Override
@@ -307,17 +305,17 @@ public class GenericTalk {
 			if(Main.sex.getCharacterPerformingAction().isSpeechMuffled()) {
 				sb.append(
 						UtilText.returnStringAtRandom(
-						"As [npc.namePos] mouth is blocked, [npc.sheIs] not able to speak, but, still wanting to give [npc2.name] a reminder of [npc.her] feelings, [npc.she] [npc.verb(let)] out a particularly loving sigh.",
-						"Due to [npc.her] mouth currently being blocked, [npc.nameIsFull] not able to speak, and instead [npc.verb(decide)] to let out a soft, whimsical sigh to let [npc2.name] know that [npc.she] [npc.verb(love)] [npc2.herHim].",
-						"Not being deterred by [npc.her] current lack of ability to speak, [npc.name] [npc.verb(let)] out a gentle, pining sigh, letting [npc2.name] know that [npc.she] [npc.verb(love)] [npc2.herHim]."));
+						"Так как рот [npc.namePos] забит и [npc.sheIs] не может говорить, но все же желая напомнить [npc2.name] о [npc.her] чувствах, [npc.she] [npc.verb(let)] особенно нежный вздох.",
+						"Поскольку рот [npc.her] сейчас чем-то забит, [npc.nameIsFull] не может говорить, и вместо этого [npc.verb(decide)] тихий, мечтательный вздох, чтобы дать [npc2.name] понять, что [npc.she] [npc.verb(love)] [npc2.herHim].",
+						"Не смущаясь нынешней неспособности [npc.her] говорить, [npc.name] [npc.verb(let)] нежный, тоскующий вздох, давая понять [npc2.name], что [npc.she] [npc.verb(love)] [npc2.herHim]."));
 				
 			} else {
 				sb.append(UtilText.returnStringAtRandom(
-						"With a loving smile on [npc.her] face,",
-						"Lovingly gazing at [npc2.name],"));
+						"С любящей улыбкой на лице [npc.her],",
+						"Любовно глядя на [npc2.name],"));
 				sb.append(UtilText.returnStringAtRandom(
-						" [npc.name] softly",
-						" [npc.name] gently"));
+						" [npc.name] тихо",
+						" [npc.name] нежно"));
 				sb.append(UtilText.returnStringAtRandom(
 						" [npc.verb(sigh)], ",
 						" [npc.verb(whisper)], "));
@@ -350,7 +348,7 @@ public class GenericTalk {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Loving response";
+			return "Любящий ответ";
 		}
 		@Override
 		public SexActionPriority getPriority() {
@@ -363,9 +361,9 @@ public class GenericTalk {
 		@Override
 		public String getActionDescription() {
 			if(Main.sex.getCharacterPerformingAction().isSpeechMuffled()) {
-				return "As your mouth is blocked, you're not able to tell [npc2.name] that you love [npc2.herHim] too, but you can still make a gentle sigh to let [npc2.her] know your feelings.";
+				return "Так как ваш рот занят, вы не можете сказать [npc2.name], что тоже любите [npc2.herHim], но все же можете издать нежный вздох, чтобы дать [npc2.her] понять ваши чувства.";
 			}
-			return "Tell [npc2.name] that you love [npc2.herHim] too.";
+			return "Сказать [npc2.name], что вы тоже любите [npc2.herHim].";
 		}
 
 		@Override
@@ -375,17 +373,17 @@ public class GenericTalk {
 			if(Main.sex.getCharacterPerformingAction().isSpeechMuffled()) {
 				sb.append(
 						UtilText.returnStringAtRandom(
-						"As [npc.namePos] mouth is blocked, [npc.sheIs] not able to speak, but, still wanting to tell [npc2.name] that [npc2.her] feelings are reciprocated, [npc.she] [npc.verb(let)] out a deeply loving moan.",
-						"Due to [npc.her] mouth currently being blocked, [npc.nameIsFull] not able to speak, and instead [npc.verb(decide)] to let out a loving moan to let [npc2.name] know that [npc.she] [npc.verb(love)] [npc2.herHim] too.",
-						"Not being deterred by [npc.her] current lack of ability to speak, [npc.name] [npc.verb(let)] out a loving moan, letting [npc2.name] know that [npc.she] [npc.verb(love)] [npc2.herHim] too."));
+						"Так как рот [npc.namePos] забит и [npc.sheIs] не может говорить, но, все же желая сказать [npc2.name], что [npc2.her] чувства взаимны, [npc.she] [npc.verb(let)] глубокий, полный любви стон.",
+						"Поскольку рот [npc.her] сейчас заблокирован, [npc.nameIsFull] не может говорить, и вместо этого [npc.verb(decide)] нежный стон, давая [npc2.name] понять, что [npc.she] тоже [npc.verb(love)] [npc2.herHim].",
+						"Несмотря на то, что [npc.her] сейчас не может говорить, [npc.name] [npc.verb(let)] нежный стон, давая [npc2.name] понять, что [npc.she] тоже [npc.verb(love)] [npc2.herHim]."));
 				
 			} else {
 				sb.append(UtilText.returnStringAtRandom(
-						"Happily smiling at [npc2.name],",
-						"Letting out a happy moan,"));
+						"Счастливо улыбаясь [npc2.name],",
+						"Издавая счастливый стон,"));
 				sb.append(UtilText.returnStringAtRandom(
-						" [npc.name] lovingly",
-						" [npc.name] passionately"));
+						" [npc.name] с любовью",
+						" [npc.name] страстно"));
 				sb.append(UtilText.returnStringAtRandom(
 						" [npc.verb(reply)], ",
 						" [npc.verb(respond)], "));
@@ -409,9 +407,9 @@ public class GenericTalk {
 		@Override
 		public String getActionTitle() {
 			if(Main.sex.getCharacterPerformingAction().isSpeechMuffled()) {
-				return "Look small";
+				return "Выглядеть маленькой";
 			}
-			return "Request rough sex";
+			return "Просить грубого секса";
 		}
 
 		private boolean isAcceptingRequest() {
@@ -424,24 +422,17 @@ public class GenericTalk {
 		@Override
 		public String getActionDescription() {
 			if(Main.sex.getCharacterPerformingAction().isSpeechMuffled()) {
-				return "As your mouth is blocked, you can't directly ask [npc2.name] for [npc2.herHim] to treat you roughly."
-						+ " Instead, you could make yourself look as small and pathetic as possible in an attempt to entice [npc2.herHim] to do so."
-						+ "<br/>"
+				return "Поскольку ваш рот забит, вы не можете напрямую попросить [npc2.name] обращаться с вами [npc2.herHim] грубее. Вместо этого вы можете попытаться выглядеть как можно более маленьким и жалким, чтобы соблазнить [npc2.herHim] на это.<br/>"
 						+ (isAcceptingRequest()
 								?"[style.italicsGood("
 								:"[style.italicsBad(")
-						+"Requires [npc2.name] to like the '"+Fetish.FETISH_DOMINANT.getName(Main.sex.getCharacterTargetedForSexAction(this))+"' fetish,"
-							+ " like the '"+Fetish.FETISH_SADIST.getName(Main.sex.getCharacterTargetedForSexAction(this))+"' fetish,"
-							+ " or for you to have the '"+Perk.CONVINCING_REQUESTS.getName(Main.sex.getCharacterPerformingAction())+"' trait activated.)]";
+						+"Требуется, чтобы [npc2.name] любил(а) '"+Fetish.FETISH_DOMINANT.getName(Main.sex.getCharacterTargetedForSexAction(this))+"' фетиш, такой как '"+Fetish.FETISH_SADIST.getName(Main.sex.getCharacterTargetedForSexAction(this))+"' фетиш, или чтобы у тебя был '"+Perk.CONVINCING_REQUESTS.getName(Main.sex.getCharacterPerformingAction())+"' черта активирована.)]";
 			}
-			return "Ask [npc2.name] to treat you as though you're [npc2.her] worthless whore."
-						+ "<br/>"
+			return "Попросить [npc2.name] относиться к тебе как к [npc2.her] никчемной шлюхе.<br/>"
 						+ (isAcceptingRequest()
 								?"[style.italicsGood("
 								:"[style.italicsBad(")
-						+"Requires [npc2.name] to like the '"+Fetish.FETISH_DOMINANT.getName(Main.sex.getCharacterTargetedForSexAction(this))+"' fetish,"
-							+ " like the '"+Fetish.FETISH_SADIST.getName(Main.sex.getCharacterTargetedForSexAction(this))+"' fetish,"
-							+ " or for you to have the '"+Perk.CONVINCING_REQUESTS.getName(Main.sex.getCharacterPerformingAction())+"' trait activated.)]";
+						+"Требуется, чтобы [npc2.name] любил(а) '"+Fetish.FETISH_DOMINANT.getName(Main.sex.getCharacterTargetedForSexAction(this))+"' фетиш, такой как '"+Fetish.FETISH_SADIST.getName(Main.sex.getCharacterTargetedForSexAction(this))+"' фетиш, или чтобы у тебя был '"+Perk.CONVINCING_REQUESTS.getName(Main.sex.getCharacterPerformingAction())+"' черта активирована.)]";
 		}
 
 		@Override
@@ -458,48 +449,46 @@ public class GenericTalk {
 			if(Main.sex.getCharacterPerformingAction().isSpeechMuffled()) {
 				sb.append(
 						UtilText.returnStringAtRandom(
-						"As [npc.her] mouth is currently blocked, [npc.name] can't make a direct request, so instead,"
-								+ " [npc.she] [npc.verb(let)] out a pathetic whine and [npc.verb(try)] to make [npc.herself] look as small as possible in an attempt to entice [npc2.name] to start treating [npc.herHim] roughly.",
-						"Making [npc.herself] look as small and pathetic as possible, [npc.name] [npc.verb(let)] out a high-pitched whine as [npc.she] [npc.verb(attempt)] to entice [npc2.name] into treating [npc.her] badly.",
-						"Desperate to be treated like a worthless bitch, [npc.name] [npc.verb(try)] to make [npc.herself] look as small as possible, while simultaneously letting out a pathetic, horny whine.",
-						"Not able to speak, due to [npc.her] mouth being blocked, [npc.name] [npc.do] the next best thing [npc.she] can think of in an attempt to get [npc2.name] to start treating [npc.her] badly,"
-								+ " and [npc.verb(make)] [npc.herself] look as small and pathetic as possible, while also letting out a high-pitched whine."));
+						"As [npc.her] mouth is currently blocked, [npc.name] can't make a direct request, so instead, [npc.she] [npc.verb(let)] out a pathetic whine and [npc.verb(try)] to make [npc.herself] look as small as possible in an attempt to entice [npc2.name] to start treating [npc.herHim] roughly.",
+						"Стараясь выглядеть перед [npc.herself] как можно более жалкой и ничтожной, [npc.name] [npc.verb(let)] издает тонкий скулящий звук, пока [npc.she] [npc.verb(attempt)], чтобы заставить [npc2.name] обращаться с [npc.her] похуже.",
+						"В отчаянии желая, чтобы с ней обращались как с никчемной сучкой, [npc.name] [npc.verb(try)], стараясь казаться [npc.herself] как можно меньше, и одновременно издавая жалкий, похотливый скулеж.",
+						"Не получается говорить, так как рот [npc.her] забит; [npc.name] [npc.do] — лучшее, что [npc.she] может придумать, пытаясь заставить [npc2.name] обращаться с [npc.her] грубо, и [npc.verb(make)] [npc.herself] выглядит как можно более жалко и беспомощно, при этом издавая тонкий скулящий звук."));
 				
 			} else {
 				sb.append(
 						UtilText.returnStringAtRandom(
-						"Putting on the most pleading voice [npc.she] can muster, [npc.name] [npc.verb(beg)] for [npc2.name] to treat [npc.herHim] badly, ",
-						"[npc.Name] [npc.verb(bite)] [npc.her] [npc.lip] and [npc.verb(try)] to look as innocent as possible as [npc.she] [npc.verb(beg)], "));
+						"Приняв самый умоляющий вид, на который только был способен [npc.she], [npc.name] [npc.verb(beg)], чтобы [npc2.name] обращалась с [npc.herHim] грубо, ",
+						"[npc.Name] [npc.verb(bite)] [npc.her] [npc.lip] и [npc.verb(try)], стараясь выглядеть как можно невиннее, пока [npc.she] [npc.verb(beg)], "));
 				
 				sb.append(UtilText.returnStringAtRandom(
-						"[npc.speech(Come on! I'm your worthless little slut! Treat me like one!)]",
-						"[npc.speech(Fuck me like I'm your worthless slut! Please!)]",
-						"[npc.speech(Treat me like your dirty little slut! I love it rough!)]",
-						"[npc.speech(You know you want to break me! Give me a good, rough fuck! Come on!)]"));
+						"[npc.speech(Ну же! Я твоя никчемная маленькая шлюшка! Обращайся со мной как с ней!)]",
+						"[npc.speech(Трахни меня, как свою никчемную шлюшку! Пожалуйста!)]",
+						"[npc.speech(Обращайся со мной как со своей грязной маленькой шлюшкой! Обожаю, когда грубо!)]",
+						"[npc.speech(Ты же знаешь, что хочешь сломать меня! Трахни меня хорошенько, жестко! Ну же!)]"));
 			}
 			
 			if(Main.sex.getCharacterPerformingAction().isPlayer()) {
 				if(isAcceptingRequest()) {
 					sb.append("<br/><br/>"
 							+UtilText.returnStringAtRandom(
-								"Grinning in sadistic delight as you ask this, [npc2.name] lets out a menacing growl as [npc2.she] replies, ",
-								"Letting out a deep growl in response to your request, [npc2.name] responds in the affirmative, "));
+								"Усмехаясь от садистского восторга после твоей просьбы, [npc2.name] издает угрожающее рычание, когда [npc2.she] отвечает, ",
+								"Издавая в ответ на твою просьбу глубокое рычание, [npc2.name] утвердительно отвечает, "));
 
 					sb.append(UtilText.returnStringAtRandom(
-							"[npc2.speech(Oh, so that's what you want, you little bitch?! Fine, I'll treat you like the worthless slut you are!)]",
-							"[npc2.speech(So that's what you really want, is it?! In that case, get ready to be treated like my worthless fuck-toy!)]",
-							"[npc2.speech(You dirty little whore! Fine, I'm all too happy to fuck you senseless!)]"));
+							"[npc2.speech(О, так вот чего ты хочешь, маленькая сучка?! Ладно, тогда я буду обращаться с тобой как с никчемной шлюхой, которой ты и являешься!)]",
+							"[npc2.speech(Так вот чего ты на самом деле хочешь, да?! В таком случае, готовься к тому, что я буду обращаться с тобой как со своей никчемной шлюхой-игрушкой!)]",
+							"[npc2.speech(Грязная маленькая шлюшка! Что ж, я с огромным удовольствием оттрахаю тебя до беспамятства!)]"));
 					
 				} else {
 					sb.append("<br/><br/>"
 							+UtilText.returnStringAtRandom(
-								"Furrowing [npc2.her] eyebrows as you ask this, [npc2.name] lets out a sigh as [npc2.she] replies, ",
-								"Letting out a disappointed sigh in response to your request, [npc2.name] responds in the negative, "));
+								"Нахмурив [npc2.her] брови, когда ты спрашиваешь об этом, [npc2.name] вздыхает, прежде чем [npc2.she] ответить, ",
+								"Издавая разочарованный вздох в ответ на твою просьбу, [npc2.name] отвечает отрицательно, "));
 
 					sb.append(UtilText.returnStringAtRandom(
-							"[npc2.speech(Sorry, but I'm not up for that... Let's just keep things going as they are, ok?)]",
-							"[npc2.speech(I'm not really into that sort of thing... Let's just keep things as they are.)]",
-							"[npc2.speech(Sorry... I'm not one to be doing that sort of thing...)]"));
+							"[npc2.speech(Прости, но я сейчас не в настроении для такого... Давай просто продолжим как есть, ладно?)]",
+							"[npc2.speech(Мне не особо нравится подобное... Давай оставим всё как есть.)]",
+							"[npc2.speech(Прости... Я не из тех, кто занимается подобным...)]"));
 				}
 			}
 			
@@ -525,9 +514,9 @@ public class GenericTalk {
 		@Override
 		public String getActionTitle() {
 			if(Main.sex.getCharacterPerformingAction().isSpeechMuffled()) {
-				return "Look worried";
+				return "Выглядеть обеспокоенно";
 			}
-			return "Object to rough";
+			return "Возразить против грубости";
 		}
 		
 		private boolean isAcceptingRequest() {
@@ -540,24 +529,17 @@ public class GenericTalk {
 		@Override
 		public String getActionDescription() {
 			if(Main.sex.getCharacterPerformingAction().isSpeechMuffled()) {
-				return "As your mouth is blocked, you can't directly ask [npc2.name] for [npc2.herHim] to treat you gently."
-						+ " Instead, you could make yourself look quite worried in an attempt to convince [npc2.herHim] to slow down."
-						+ "<br/>"
+				return "Поскольку твой рот занят, ты не можешь напрямую попросить [npc2.name], чтобы [npc2.herHim] обращалась с тобой нежно. Вместо этого ты можешь изобразить крайнюю обеспокоенность, пытаясь убедить [npc2.herHim] замедлиться.<br/>"
 						+ (isAcceptingRequest()
 								?"[style.italicsGood("
 								:"[style.italicsBad(")
-						+"Requires [npc.name] to like the '"+Fetish.FETISH_SUBMISSIVE.getName(Main.sex.getCharacterTargetedForSexAction(this))+"' fetish,"
-							+ " dislike the '"+Fetish.FETISH_SADIST.getName(Main.sex.getCharacterTargetedForSexAction(this))+"' fetish,"
-							+ " or for you to have the '"+Perk.CONVINCING_REQUESTS.getName(Main.sex.getCharacterPerformingAction())+"' trait activated.)]";
+						+"Требуется, чтобы [npc.name] любил(а) фетиш '"+Fetish.FETISH_SUBMISSIVE.getName(Main.sex.getCharacterTargetedForSexAction(this))+"', не любил(а) фетиш '"+Fetish.FETISH_SADIST.getName(Main.sex.getCharacterTargetedForSexAction(this))+"' фетиш, или чтобы у тебя был '"+Perk.CONVINCING_REQUESTS.getName(Main.sex.getCharacterPerformingAction())+"' черта активирована.)]";
 			}
-			return "Ask [npc2.name] to be more gentle with you."
-					+ "<br/>"
+			return "Попросить [npc2.name] быть нежнее с тобой.<br/>"
 					+ (isAcceptingRequest()
 							?"[style.italicsGood("
 							:"[style.italicsBad(")
-					+"Requires [npc.name] to like the '"+Fetish.FETISH_SUBMISSIVE.getName(Main.sex.getCharacterTargetedForSexAction(this))+"' fetish,"
-						+ " dislike the '"+Fetish.FETISH_SADIST.getName(Main.sex.getCharacterTargetedForSexAction(this))+"' fetish,"
-						+ " or for you to have the '"+Perk.CONVINCING_REQUESTS.getName(Main.sex.getCharacterPerformingAction())+"' trait activated.)]";
+					+"Требуется, чтобы [npc.name] любил(а) фетиш '"+Fetish.FETISH_SUBMISSIVE.getName(Main.sex.getCharacterTargetedForSexAction(this))+"', не любил(а) фетиш '"+Fetish.FETISH_SADIST.getName(Main.sex.getCharacterTargetedForSexAction(this))+"' фетиш, или чтобы у тебя был '"+Perk.CONVINCING_REQUESTS.getName(Main.sex.getCharacterPerformingAction())+"' черта активирована.)]";
 		}
 
 		@Override
@@ -575,48 +557,46 @@ public class GenericTalk {
 			if(Main.sex.getCharacterPerformingAction().isSpeechMuffled()) {
 				sb.append(
 						UtilText.returnStringAtRandom(
-						"As [npc.her] mouth is currently blocked, [npc.name] can't make a direct request, so instead,"
-								+ " [npc.she] [npc.verb(raise)] [npc.her] eyebrows and [npc.verb(let)] out a concerned whine in an attempt to convince [npc2.name] to slow down and be more gentle with [npc.herHim].",
-						"Putting on a worried look, [npc.name] [npc.verb(let)] out an anxious whine as [npc.she] [npc.verb(attempt)] to convey to [npc2.name] that [npc.she] [npc.verb(want)] to be treated in a more gentle manner.",
-						"Wanting to be treated a little more gently, [npc.name] [npc.verb(raise)] [npc.her] eyebrows, while simultaneously letting out an uneasy whine.",
-						"Not able to speak, due to [npc.her] mouth being blocked, [npc.name] [npc.do] the next best thing [npc.she] can think of in an attempt to get [npc2.name] to start treating [npc.her] more gently,"
-								+ " and [npc.verb(put)] on an anxious look, while also letting out a worried whine."));
+						"Поскольку рот [npc.her] сейчас занят, [npc.name] не может обратиться с прямой просьбой, поэтому вместо этого [npc.she] [npc.verb(raise)] [npc.her] брови и [npc.verb(let)] обеспокоенный стон, пытаясь убедить [npc2.name] замедлиться и быть нежнее с [npc.herHim].",
+						"Приняв обеспокоенный вид, [npc.name] [npc.verb(let)] тревожный стон, пока [npc.she] [npc.verb(attempt)], чтобы передать [npc2.name], что [npc.she] [npc.verb(want)] более нежного обращения.",
+						"Желая более нежного обращения, [npc.name] [npc.verb(raise)] [npc.her] брови, одновременно издавая беспокойный стон.",
+						"Не имея возможности говорить из-за того, что рот [npc.her] занят, [npc.name] [npc.do] лучшее, что может придумать [npc.she], чтобы заставить [npc2.name] относиться к [npc.her] нежнее, и [npc.verb(put)] с тревожным видом, также издавая обеспокоенный стон."));
 				
 			} else {
 				sb.append(
 						UtilText.returnStringAtRandom(
-						"Putting on the most pleading voice [npc.she] can muster, [npc.name] [npc.verb(ask)] for [npc2.name] to calm down, ",
-						"[npc.Name] [npc.verb(raise)] [npc.her] eyebrows and [npc.verb(put)] on a worried look as [npc.she] [npc.verb(ask)], "));
+						"Приняв самый умоляющий вид, на который только был способен [npc.she], [npc.name] [npc.verb(ask)] [npc2.name], чтобы тот успокоился, ",
+						"[npc.Name] [npc.verb(raise)] [npc.her] брови и [npc.verb(put)] с обеспокоенным видом, пока [npc.she] [npc.verb(ask)], "));
 				
 				sb.append(UtilText.returnStringAtRandom(
-						"[npc.speech(Please, can you not be so rough? I'd like this to be a little more loving...)]",
-						"[npc.speech(Slow down, please! Can't you be a little gentler?)]",
-						"[npc.speech(Can you treat me a little gentler? This is too much for me...)]",
-						"[npc.speech(Please can you slow down? I'd like you to be a little gentler...)]"));
+						"[npc.speech(Пожалуйста, можно не так грубо? Я бы хотела, чтобы это было чуть более нежно...)]",
+						"[npc.speech(Помедленнее, пожалуйста! Неужели ты не можешь быть чуть нежнее?)]",
+						"[npc.speech(Можешь относиться ко мне немного мягче? Для меня это слишком...)]",
+						"[npc.speech(Пожалуйста, можешь замедлиться? Я бы хотела, чтобы ты был чуть нежнее...)]"));
 			}
 
 			if(Main.sex.getCharacterPerformingAction().isPlayer()) {
 				if(isAcceptingRequest()) {
 					sb.append("<br/><br/>"
 							+UtilText.returnStringAtRandom(
-								"Happily smiling as you ask this, [npc2.name] lets out a soothing sigh as [npc2.she] replies, ",
-								"Letting out a soft [npc.moan] in response to your request, [npc2.name] responds in the affirmative, "));
+								"Счастливо улыбаясь на твою просьбу, [npc2.name] издает успокаивающий вздох, когда [npc2.she] отвечает, ",
+								"Издавая тихий [npc.moan] в ответ на твою просьбу, [npc2.name] утвердительно отвечает, "));
 
 					sb.append(UtilText.returnStringAtRandom(
-							"[npc2.speech(Oh, so that's what you want, hmm? I'm happy to take things a little slower...)]",
-							"[npc2.speech(That's fine with me... Let's take things a little slower, ok?)]",
-							"[npc2.speech(That sounds like a good idea... I'll be gentler with you from now on...)]"));
+							"[npc2.speech(О, так вот чего ты хочешь, ммм? Я не против двигаться чуть медленнее...)]",
+							"[npc2.speech(Меня это устраивает... Давай не будем спешить, ладно?)]",
+							"[npc2.speech(Звучит как отличная идея... С этого момента я буду нежнее с тобой...)]"));
 					
 				} else {
 					sb.append("<br/><br/>"
 							+UtilText.returnStringAtRandom(
-								"Furrowing [npc2.her] eyebrows as you ask this, [npc2.name] lets out a tutting noise as [npc2.she] replies, ",
-								"Letting out a disapproving tut in response to your request, [npc2.name] responds in the negative, "));
+								"[npc2.her] нахмуривает брови, выслушав твой вопрос, и, издав цокающий звук, [npc2.name] отвечает, что [npc2.she], ",
+								"издав неодобрительный цок в ответ на твою просьбу, [npc2.name] отвечает отрицательно, "));
 
 					sb.append(UtilText.returnStringAtRandom(
-							"[npc2.speech(Yeah, I'm not up for that soft crap. You're just going to have to learn to like this!)]",
-							"[npc2.speech(I'm not really into all that gentle loving shit. You're going to have to just deal with the way I like doing things.)]",
-							"[npc2.speech(Yeah, that's not happening. Don't ask for all that gentle loving crap again!)]"));
+							"[npc2.speech(Ага, на эту нежную херню я не подписывалась. Тебе просто придется привыкнуть к тому, как это будет!)]",
+							"[npc2.speech(Меня не особо прет вся эта нежная любовь, блядь. Тебе придется смириться с тем, как нравится мне.)]",
+							"[npc2.speech(Ага, этого не будет. И не проси больше этой нежной любовной херни!)]"));
 				}
 			}
 			

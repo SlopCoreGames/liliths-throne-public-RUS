@@ -54,20 +54,20 @@ public class PartnerTalk {
 			if(Main.sex.getCharacterPerformingAction().isSpeechMuffled()) {
 				switch(Main.sex.getSexPace(Main.sex.getCharacterPerformingAction())) {
 					default:
-						return Main.sex.getCharacterPerformingAction().isFeminine()?"Horny moan":"Horny groan";
+						return Main.sex.getCharacterPerformingAction().isFeminine()?"Похотливый стон":"Похотливый стон";
 					case DOM_ROUGH:
-						return "Rough growl";
+						return "Грубое рычание";
 					case SUB_RESISTING:
-						return "Protesting cry";
+						return "Протестующий крик";
 				}
 			}
 			switch(Main.sex.getSexPace(Main.sex.getCharacterPerformingAction())) {
 				default:
-					return "Dirty talk";
+					return "Грязные разговоры";
 				case DOM_ROUGH:
-					return "Rough talk";
+					return "Грубые ласки словами";
 				case SUB_RESISTING:
-					return "Beg to stop";
+					return "Умолять остановиться";
 			}
 		}
 
@@ -82,29 +82,29 @@ public class PartnerTalk {
 				switch(Main.sex.getSexPace(Main.sex.getCharacterPerformingAction())) {
 					default:
 						return UtilText.returnStringAtRandom(
-								"As [npc.namePos] mouth is blocked, all [npc.she] can do in place of talking dirty to [npc2.name] is let out a series of horny, muffled [npc.moans].",
-								"With [npc.her] mouth being currently blocked, [npc.nameIsFull] only able to make a series of muffled, lewd [npc.moans] to let [npc2.name] know that [npc.sheIs] enjoying [npc.herself].",
-								"Wanting to let [npc2.name] know that [npc.sheIs] enjoying [npc.herself], but having [npc.her] mouth blocked, [npc.name] [npc.verb(make)] do with letting out a series of incredibly lewd, muffled [npc.moans].",
-								"Although [npc.her] mouth is blocked, [npc.nameIsFull] still able to let out a series of horny, muffled [npc.moans], letting [npc2.name] know that [npc.sheIs] enjoying [npc.herself].");
+								"Поскольку рот [npc.namePos] забит, всё, что [npc.she] может вместо грязных слов для [npc2.name] — это издавать серию похотливых, приглушенных [npc.moans].",
+								"Поскольку рот [npc.her] сейчас забит, [npc.nameIsFull] может лишь издавать серию приглушенных, похотливых [npc.moans], чтобы дать [npc2.name] понять, что [npc.sheIs] наслаждается [npc.herself].",
+								"Желая дать [npc2.name] понять, что [npc.sheIs] наслаждается [npc.herself], но из-за того, что рот [npc.her] забит, [npc.name] [npc.verb(make)] лишь издает серию невероятно похотливых, приглушенных [npc.moans].",
+								"Хотя рот [npc.her] забит, [npc.nameIsFull] всё же может издавать серию похотливых, приглушенных [npc.moans], давая [npc2.name] понять, что [npc.sheIs] наслаждается [npc.herself].");
 					case DOM_ROUGH:
 						return UtilText.returnStringAtRandom(
-								"As [npc.namePos] mouth is blocked, all [npc.she] can do in place of talking rough to [npc2.name] is let out a series of aggressive, muffled growls.",
-								"With [npc.her] mouth being currently blocked, [npc.nameIsFull] only able to make a series of muffled, rough growls to let [npc2.name] know that [npc.sheIs] still firmly in charge.",
-								"Wanting to let [npc2.name] know that [npc.sheIs] still in charge, but having [npc.her] mouth blocked, [npc.name] [npc.verb(make)] do with letting out a series of menacing, muffled growls.",
-								"Although [npc.her] mouth is blocked, [npc.nameIsFull] still able to let out a series of deep, muffled growls, letting [npc2.name] know that [npc.sheIs] still in charge.");
+								"Поскольку рот [npc.namePos] забит, всё, что [npc.she] может вместо грубых слов сказать [npc2.name], — это издать серию агрессивных, приглушенных рыков.",
+								"Поскольку рот [npc.her] сейчас забит, [npc.nameIsFull] остается только издавать серию приглушенных, грубых рыков, чтобы дать [npc2.name] понять, что [npc.sheIs] всё еще здесь главный.",
+								"Желая дать [npc2.name] понять, что [npc.sheIs] всё еще главный, но при этом имея забитый рот [npc.her], [npc.name] [npc.verb(make)] лишь издает серию угрожающих, приглушенных рыков.",
+								"Хотя рот [npc.her] забит, [npc.nameIsFull] всё же может издать серию глубоких, приглушенных рыков, давая [npc2.name] понять, что [npc.sheIs] всё еще главный.");
 					case SUB_RESISTING:
 						return UtilText.returnStringAtRandom(
-								"As [npc.namePos] mouth is blocked, all [npc.she] can do in place of begging for mercy is to let out a series of pathetic whines and muffled cries.",
-								"With [npc.her] mouth being currently blocked, [npc.nameIsFull] only able to make a series of muffled sobs and distressed whines to let [npc2.name] know that [npc.she] [npc.verb(want)] to be let go.",
-								"Wanting to let [npc2.name] know that [npc.she] desires to be released, but having [npc.her] mouth blocked, [npc.name] [npc.verb(make)] do with letting out a series of distressed sobs and muffled cries.",
-								"Although [npc.her] mouth is blocked, [npc.nameIsFull] still able to let out a series of distressed whines and muffled sobs, letting [npc2.name] know that [npc.she] [npc.verb(want)] this to stop.");
+								"Поскольку рот [npc.namePos] забит, всё, что [npc.she] может вместо мольбы о пощаде, — это издавать серию жалких скулящих звуков и приглушенных всхлипов.",
+								"Поскольку рот [npc.her] сейчас забит, [npc.nameIsFull] может лишь издавать серию приглушенных рыданий и страдальческого скулежа, чтобы дать [npc2.name] понять, что [npc.she] [npc.verb(want)] нужно отпустить.",
+								"Желая дать [npc2.name] понять, что [npc.she] хочет, чтобы его освободили, но при этом имея забитый рот [npc.her], [npc.name] [npc.verb(make)] лишь издает серию полных страдания рыданий и приглушенных всхлипов.",
+								"Хотя рот [npc.her] заблокирован, [npc.nameIsFull] все же удается издавать серию жалобных стонов и приглушенных всхлипов, давая [npc2.name] понять, что [npc.she] [npc.verb(want)], чтобы это прекратилось.");
 				}
 			}
 
 			if(Main.sex.getCharacterTargetedForSexAction(this).isAsleep()) {
 				return UtilText.returnStringAtRandom(
-						"Not wanting to wake [npc2.name] up, [npc.name] quietly [npc.verb(tease)], ",
-						"Making sure to keep [npc.her] voice down so as to not wake [npc2.name] up, [npc.name] [npc.verb(whisper)], ")
+						"Не желая будить [npc2.name], [npc.name] тихо [npc.verb(tease)], ",
+						"Стараясь говорить [npc.her] тише, чтобы не разбудить [npc2.name], [npc.name] [npc.verb(whisper)], ")
 						+ Main.sex.getDirtyTalk(Main.sex.getCharacterPerformingAction());
 			}
 			
@@ -113,18 +113,18 @@ public class PartnerTalk {
 				switch(Main.sex.getSexPace(Main.sex.getCharacterPerformingAction())) {
 					case SUB_EAGER:
 						return UtilText.returnStringAtRandom(
-								"Turning [npc.her] head to look back at [npc2.name], [npc.a_moan+] escapes from between [npc.namePos] [npc.lips+], ",
-								"[npc.Name] turns [npc.her] head to look back at [npc2.name], letting out [npc.a_moan+] before calling out, ")
+								"Повернув [npc.her] голову, чтобы оглянуться на [npc2.name], [npc.a_moan+] вырывается из между [npc.namePos] [npc.lips+], ",
+								"[npc.Name] поворачивает [npc.her] голову, чтобы оглянуться на [npc2.name], издавая [npc.a_moan+], прежде чем позвать, ")
 								+ Main.sex.getDirtyTalk(Main.sex.getCharacterPerformingAction());
 					case SUB_RESISTING:
 						return UtilText.returnStringAtRandom(
-								"Desperately trying to crawl away from [npc2.name], [npc.name] [npc.sobsVerb+] as [npc2.she] [npc2.verb(grab)] [npc.her] [npc.hips+] and pull [npc.herHim] back, ",
-								"Trying to crawl away from [npc2.name], [npc.name] lets out [npc.a_sob+] as [npc2.she] [npc2.verb(hold)] [npc.herHim] firmly in place, ")
+								"Отчаянно пытаясь уползти от [npc2.name], [npc.name] [npc.sobsVerb+], пока [npc2.she] [npc2.verb(grab)] [npc.her] [npc.hips+] и тянет [npc.herHim] обратно, ",
+								"Пытаясь уползти от [npc2.name], [npc.name] издает [npc.a_sob+], пока [npc2.she] [npc2.verb(hold)] [npc.herHim] на месте, ")
 								+ Main.sex.getDirtyTalk(Main.sex.getCharacterPerformingAction());
 					default: 
 						return UtilText.returnStringAtRandom(
-								"Turning [npc.her] head to look back at [npc2.name], [npc.a_moan] escapes from between [npc.namePos] [npc.lips+], ",
-								"[npc.Name] turns [npc.her] head to look back at [npc2.name], letting out [npc.a_moan] before calling out, ")
+								"Повернув [npc.her] голову, чтобы оглянуться на [npc2.name], [npc.a_moan] вырывается из между [npc.namePos] [npc.lips+], ",
+								"[npc.Name] поворачивает [npc.her] голову, чтобы оглянуться на [npc2.name], издавая [npc.a_moan], прежде чем позвать, ")
 								+ Main.sex.getDirtyTalk(Main.sex.getCharacterPerformingAction());
 				}
 				
@@ -134,18 +134,18 @@ public class PartnerTalk {
 					switch(Main.sex.getSexPace(Main.sex.getCharacterPerformingAction())) {
 						case DOM_GENTLE:
 							return UtilText.returnStringAtRandom(
-									"[npc.Name] softly [npc.verb(call)] out to [npc2.name] as [npc2.she] [npc2.verb(kneel)] beneath [npc.herHim], ",
-									"With [npc2.name] kneeling down beneath [npc.her] feral [npc.legRace]'s body, [npc.name] softly sighs, ")
+									"[npc.Name] тихо [npc.verb(call)] [npc2.name], пока [npc2.she] [npc2.verb(kneel)] под [npc.herHim], ",
+									"Когда [npc2.name] опускается на колени перед диким телом [npc.her] ([npc.legRace]), [npc.name] тихо вздыхает, ")
 									+ Main.sex.getDirtyTalk(Main.sex.getCharacterPerformingAction());
 						case DOM_ROUGH:
 							return UtilText.returnStringAtRandom(
-									"[npc.Name] [npc.moansVerb+] out to [npc2.name] as [npc2.she] [npc2.verb(kneel)] beneath [npc.herHim], ",
-									"With [npc2.name] kneeling down beneath [npc.her] feral [npc.legRace]'s body, [npc.name] [npc.moansVerb+], ")
+									"[npc.Name] [npc.moansVerb+] [npc2.name], пока [npc2.she] [npc2.verb(kneel)] под [npc.herHim], ",
+									"Когда [npc2.name] опускается на колени перед диким телом [npc.her] ([npc.legRace]), [npc.name] [npc.moansVerb+], ")
 									+ Main.sex.getDirtyTalk(Main.sex.getCharacterPerformingAction());
 						default: 
 							return UtilText.returnStringAtRandom(
-									"[npc.Name] [npc.moansVerb+] out to [npc2.name] as [npc2.she] [npc2.verb(kneel)] beneath [npc.herHim], ",
-									"With [npc2.name] kneeling down beneath [npc.her] feral [npc.legRace]'s body, [npc.name] [npc.moansVerb+], ")
+									"[npc.Name] [npc.moansVerb+] [npc2.name], пока [npc2.she] [npc2.verb(kneel)] под [npc.herHim], ",
+									"Когда [npc2.name] опускается на колени перед диким телом [npc.her] ([npc.legRace]), [npc.name] [npc.moansVerb+], ")
 									+ Main.sex.getDirtyTalk(Main.sex.getCharacterPerformingAction());
 					}
 				
@@ -153,18 +153,18 @@ public class PartnerTalk {
 					switch(Main.sex.getSexPace(Main.sex.getCharacterPerformingAction())) {
 						case DOM_GENTLE:
 							return UtilText.returnStringAtRandom(
-									"[npc.Name] looks down at [npc2.name] as [npc2.she] [npc2.verb(kneel)] beneath [npc.herHim], ",
-									"Looking down at [npc2.name], [npc.name] sighs, ")
+									"[npc.Name] смотрит вниз на [npc2.name], пока [npc2.she] [npc2.verb(kneel)] под [npc.herHim], ",
+									"Смотря на [npc2.name] сверху вниз, [npc.name] вздыхает, ")
 									+ Main.sex.getDirtyTalk(Main.sex.getCharacterPerformingAction());
 						case DOM_ROUGH:
 							return UtilText.returnStringAtRandom(
-									"[npc.Name] smirks down at [npc2.name] as [npc2.she] [npc2.verb(kneel)] beneath [npc.herHim], ",
-									"Smirking down at [npc2.name], [npc.name] [npc.moansVerb+], ")
+									"[npc.Name] ухмыляется, глядя на [npc2.name], пока [npc2.she] [npc2.verb(kneel)] под [npc.herHim], ",
+									"Ухмыляясь, глядя на [npc2.name] сверху вниз, [npc.name] [npc.moansVerb+], ")
 									+ Main.sex.getDirtyTalk(Main.sex.getCharacterPerformingAction());
 						default: 
 							return UtilText.returnStringAtRandom(
-									"[npc.Name] looks down at [npc2.name] as [npc2.she] [npc2.verb(kneel)] beneath [npc.herHim], ",
-									"Looking down at [npc2.name], [npc.name] [npc.moansVerb], ")
+									"[npc.Name] смотрит вниз на [npc2.name], пока [npc2.she] [npc2.verb(kneel)] под [npc.herHim], ",
+									"Смотря на [npc2.name], [npc.name] [npc.moansVerb], ")
 									+ Main.sex.getDirtyTalk(Main.sex.getCharacterPerformingAction());
 					}
 				}
@@ -174,18 +174,18 @@ public class PartnerTalk {
 				switch(Main.sex.getSexPace(Main.sex.getCharacterPerformingAction())) {
 					case SUB_EAGER:
 						return UtilText.returnStringAtRandom(
-								"[npc.Name] glances up at [npc2.name] as [npc.she] [npc.moansVerb], ",
-								"Looking up at [npc2.name], [npc.name] [npc.moansVerb], ")
+								"[npc.Name] бросает взгляд на [npc2.name], пока [npc.she] [npc.moansVerb], ",
+								"Смотря на [npc2.name] снизу вверх, [npc.name] [npc.moansVerb], ")
 								+ Main.sex.getDirtyTalk(Main.sex.getCharacterPerformingAction());
 					case SUB_RESISTING:
 						return UtilText.returnStringAtRandom(
-								"[npc.Name] glances up at [npc2.name], before letting out [npc.a_sob+], ",
-								"Looking up at [npc2.name], [npc.name] lets out [npc.a_sob+], ")
+								"[npc.Name] бросает взгляд на [npc2.name], прежде чем издать [npc.a_sob+], ",
+								"Смотря на [npc2.name] снизу вверх, [npc.name] издает [npc.a_sob+], ")
 								+ Main.sex.getDirtyTalk(Main.sex.getCharacterPerformingAction());
 					default: 
 						return UtilText.returnStringAtRandom(
-								"[npc.Name] glances up at [npc2.name] as [npc.she] speaks, ",
-								"Looking up at [npc2.name], [npc.name] speaks, ")
+								"[npc.Name] бросает взгляд на [npc2.name], пока [npc.she] говорит, ",
+								"Смотря на [npc2.name] снизу вверх, [npc.name] говорит, ")
 								+ Main.sex.getDirtyTalk(Main.sex.getCharacterPerformingAction());
 				}
 				
@@ -193,18 +193,18 @@ public class PartnerTalk {
 				switch(Main.sex.getSexPace(Main.sex.getCharacterPerformingAction())) {
 					case DOM_GENTLE:
 						return UtilText.returnStringAtRandom(
-								"[npc.Name] looks down at [npc2.name] as [npc2.she] [npc2.verb(lie)] beneath [npc.herHim], and speaks down to [npc2.herHim], ",
-								"Looking down at [npc2.name] as [npc2.she] [npc2.verb(lie)] beneath [npc.herHim], [npc.name] speaks down to [npc2.herHim], ")
+								"[npc.Name] смотрит на [npc2.name], пока [npc2.she] [npc2.verb(lie)] под [npc.herHim], и говорит сверху вниз на [npc2.herHim], ",
+								"Смотря на [npc2.name] снизу вверх, пока [npc2.she] [npc2.verb(lie)] под [npc.herHim], [npc.name] говорит сверху вниз на [npc2.herHim], ")
 								+ Main.sex.getDirtyTalk(Main.sex.getCharacterPerformingAction());
 					case DOM_ROUGH:
 						return UtilText.returnStringAtRandom(
-								"[npc.Name] looks down at [npc2.name] as [npc2.she] [npc2.verb(lie)] beneath [npc.herHim], and growls down to [npc2.herHim], ",
-								"Looking down at [npc2.name] as [npc2.she] [npc2.verb(lie)] beneath [npc.herHim], [npc.name] growls down to [npc2.herHim], ")
+								"[npc.Name] смотрит на [npc2.name], пока [npc2.she] [npc2.verb(lie)] под [npc.herHim], и рычит сверху вниз на [npc2.herHim], ",
+								"Глядя вниз на [npc2.name], пока [npc2.she] [npc2.verb(lie)] под [npc.herHim], [npc.name] рычит на [npc2.herHim], ")
 								+ Main.sex.getDirtyTalk(Main.sex.getCharacterPerformingAction());
 					default: 
 						return UtilText.returnStringAtRandom(
-								"[npc.Name] looks down at [npc2.name] as [npc2.she] [npc2.verb(lie)] beneath [npc.herHim], and [npc.moansVerb] down to [npc2.herHim], ",
-								"Looking down at [npc2.name] as [npc2.she] [npc2.verb(lie)] beneath [npc.herHim], [npc.name] [npc.moansVerb] down to [npc2.herHim], ")
+								"[npc.Name] смотрит вниз на [npc2.name], пока [npc2.she] [npc2.verb(lie)] под [npc.herHim], и [npc.moansVerb] на [npc2.herHim], ",
+								"Глядя вниз на [npc2.name], пока [npc2.she] [npc2.verb(lie)] под [npc.herHim], [npc.name] [npc.moansVerb] на [npc2.herHim], ")
 								+ Main.sex.getDirtyTalk(Main.sex.getCharacterPerformingAction());
 				}
 				
@@ -213,28 +213,28 @@ public class PartnerTalk {
 				switch(Main.sex.getSexPace(Main.sex.getCharacterPerformingAction())) {
 					case DOM_GENTLE:
 						return UtilText.returnStringAtRandom(
-								"[npc.Name] lets out a soft [npc.moan], ",
-								"[npc.Name] gently sighs, ")
+								"[npc.Name] издает тихий [npc.moan], ",
+								"[npc.Name] нежно вздыхает, ")
 								+ Main.sex.getDirtyTalk(Main.sex.getCharacterPerformingAction());
 					case DOM_ROUGH:
 						return UtilText.returnStringAtRandom(
-								"[npc.Name] lets out a rough growl before speaking out loud, ",
-								"[npc.Name] makes a threatening growling noise before speaking, ")
+								"[npc.Name] издает хриплый рык, прежде чем заговорить, ",
+								"[npc.Name] издает угрожающее рычание, прежде чем заговорить, ")
 								+ Main.sex.getDirtyTalk(Main.sex.getCharacterPerformingAction());
 					case SUB_EAGER:
 						return UtilText.returnStringAtRandom(
-								"A desperate [npc.moan] escapes from between [npc.namePos] [npc.lips+], ",
-								"[npc.Name] lets out a desperate [npc.moan] before addressing [npc2.name], ")
+								"Отчаянный [npc.namePos] вырывается из-за [npc.lips+] [npc.moan], ",
+								"[npc.Name] издает отчаянный [npc.moan], прежде чем обратиться к [npc2.name], ")
 								+ Main.sex.getDirtyTalk(Main.sex.getCharacterPerformingAction());
 					case SUB_RESISTING:
 						return UtilText.returnStringAtRandom(
-								"A protesting whine escapes from between [npc.namePos] [npc.lips+] as [npc.she] struggles against [npc2.name], ",
-								"[npc.Name] lets out a distressed whining noise as [npc.she] tries to shuffle away from [npc2.name], ")
+								"Протестующий скулеж вырывается из [npc.lips+] [npc.namePos], пока [npc.she] пытается вырваться из [npc2.name], ",
+								"[npc.Name] издает жалобный скулящий звук, когда [npc.she] пытается отстраниться от [npc2.name], ")
 								+ Main.sex.getDirtyTalk(Main.sex.getCharacterPerformingAction());
 					default: // DOM_NORMAL, SUB_NORMAL:
 						return UtilText.returnStringAtRandom(
-								"[npc.A_moan] escapes from between [npc.namePos] [npc.lips+], ",
-								"[npc.Name] lets out [npc.a_moan] before addressing [npc2.name], ")
+								"[npc.A_moan] вырывается из объятий [npc.namePos] и [npc.lips+], ",
+								"[npc.Name] издает [npc.a_moan], прежде чем обратиться к [npc2.name], ")
 								+ Main.sex.getDirtyTalk(Main.sex.getCharacterPerformingAction());
 				}
 			}

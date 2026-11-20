@@ -23,9 +23,9 @@ public class TongueMound {
 	private static String getDescriptionFinisher(SexAction action, int variation) {
 		if(!action.isTargetedCharacterInanimate()) {
 			if(variation==1) {
-				return " as [npc2.name] [npc2.moan+] beneath [npc.herHim].";
+				return " как [npc2.name] [npc2.moan+] под [npc.herHim].";
 			}
-			return " as [npc2.she] [npc2.moan+] beneath [npc.herHim].";
+			return " как [npc2.she] [npc2.moan+] под [npc.herHim].";
 		}
 		return ".";
 	}
@@ -41,12 +41,12 @@ public class TongueMound {
 		
 		@Override
 		public String getActionTitle() {
-			return "Rough mound kiss";
+			return "Грубые поцелуи в лоно";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Roughly kiss [npc2.namePos] genderless crotch.";
+			return "Грубо целовать бесполое лоно [npc2.namePos].";
 		}
 
 		@Override
@@ -58,14 +58,11 @@ public class TongueMound {
 		@Override
 		public String getDescription() {
 			return UtilText.returnStringAtRandom(
-						"[npc.Name] roughly [npc.verb(grind)] [npc.her] [npc.lips+] down against [npc2.namePos] doll-like mound,"
-								+ " forcefully kissing and licking at [npc2.her] sensitive crotch"+getDescriptionFinisher(this, 0),
+						"[npc.Name] грубо [npc.verb(grind)] [npc.her] [npc.lips+] вниз, прижимаясь к кукольному лону [npc2.namePos], с силой целуя и облизывая чувствительную промежность [npc2.her]"+getDescriptionFinisher(this, 0),
 
-						"Dropping [npc.her] head down into [npc2.namePos] crotch, [npc.name] roughly [npc.verb(grind)] [npc.her] mouth against [npc2.her] genderless crotch,"
-								+ " kissing and licking [npc2.her] sensitive mound"+getDescriptionFinisher(this, 1),
+						"Опустив голову [npc.her] в промежность [npc2.namePos], [npc.name] грубо [npc.verb(grind)] прижимает рот [npc.her] к бесполому лону [npc2.her], целуя и облизывая чувствительное лоно [npc2.her]"+getDescriptionFinisher(this, 1),
 
-						"Pushing [npc.her] face down into [npc2.namePos] groin, [npc.name] [npc.verb(start)] grinding [npc.her] [npc.lips+] against [npc2.her] genderless mound,"
-								+ " roughly kissing and licking [npc2.her] sensitive crotch"+getDescriptionFinisher(this, 0));
+						"Вжимая лицо [npc.her] в пах [npc2.namePos], [npc.name] [npc.verb(start)] втирает [npc.her] [npc.lips+] в бесполое лоно [npc2.her], грубо целуя и облизывая чувствительную промежность [npc2.her]"+getDescriptionFinisher(this, 0));
 		}
 	};
 	
@@ -80,12 +77,12 @@ public class TongueMound {
 		
 		@Override
 		public String getActionTitle() {
-			return "Kiss mound";
+			return "Целовать лоно";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Passionately kiss and lick [npc2.namePos] genderless mound.";
+			return "Страстно целовать и облизывать бесполое лоно [npc2.namePos].";
 		}
 
 		@Override
@@ -97,14 +94,11 @@ public class TongueMound {
 		@Override
 		public String getDescription() {
 			return UtilText.returnStringAtRandom(
-					"[npc.Name] eagerly [npc.verb(press)] [npc.her] [npc.lips+] down against [npc2.namePos] doll-like mound,"
-							+ " passionately kissing and licking at [npc2.her] sensitive crotch"+getDescriptionFinisher(this, 0),
+					"[npc.Name] с жадностью [npc.verb(press)] [npc.her] [npc.lips+] вниз, прижимаясь к кукольному лону [npc2.namePos], страстно целуя и облизывая чувствительную промежность [npc2.her]"+getDescriptionFinisher(this, 0),
 
-					"Dropping [npc.her] head down into [npc2.namePos] crotch, [npc.name] passionately [npc.verb(press)] [npc.her] mouth against [npc2.her] genderless crotch,"
-							+ " kissing and licking [npc2.her] sensitive mound"+getDescriptionFinisher(this, 1),
+					"Опустив голову [npc.her] в пах [npc2.namePos], [npc.name] страстно [npc.verb(press)] [npc.her] губами к [npc2.her] бесполому паху, целуя и вылизывая [npc2.her] чувствительный холмик"+getDescriptionFinisher(this, 1),
 
-					"Pushing [npc.her] face down into [npc2.namePos] groin, [npc.name] [npc.verb(start)] pressing [npc.her] [npc.lips+] against [npc2.her] genderless mound,"
-							+ " eagerly kissing and licking [npc2.her] sensitive crotch"+getDescriptionFinisher(this, 0));
+					"Вжимаясь лицом [npc.her] в пах [npc2.namePos], [npc.name] [npc.verb(start)] прижимая [npc.her] [npc.lips+] к [npc2.her] бесполому холмику, жадно целуя и вылизывая [npc2.her] чувствительный пах"+getDescriptionFinisher(this, 0));
 		}
 	};
 	
@@ -119,12 +113,12 @@ public class TongueMound {
 		
 		@Override
 		public String getActionTitle() {
-			return "Kiss mound";
+			return "Целовать лоно";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Gently kiss and lick [npc2.namePos] genderless mound.";
+			return "Нежно целовать и вылизывать бесполый холмик [npc2.namePos].";
 		}
 
 		@Override
@@ -136,14 +130,11 @@ public class TongueMound {
 		@Override
 		public String getDescription() {
 			return UtilText.returnStringAtRandom(
-					"[npc.Name] gently [npc.verb(press)] [npc.her] [npc.lips+] down against [npc2.namePos] doll-like mound,"
-							+ " planting delicate kisses on [npc2.her] sensitive crotch"+getDescriptionFinisher(this, 0),
+					"[npc.Name] нежно [npc.verb(press)] [npc.her] [npc.lips+] вниз к кукольному холмику [npc2.namePos], оставляя деликатные поцелуи на чувствительном паху [npc2.her]"+getDescriptionFinisher(this, 0),
 
-					"Dropping [npc.her] head down into [npc2.namePos] crotch, [npc.name] gently [npc.verb(press)] [npc.her] mouth against [npc2.her] genderless crotch,"
-							+ " kissing and licking [npc2.her] sensitive mound"+getDescriptionFinisher(this, 1),
+					"Опустив голову [npc.her] в пах [npc2.namePos], [npc.name] нежно [npc.verb(press)] [npc.her] губами к [npc2.her] бесполому паху, целуя и вылизывая [npc2.her] чувствительный холмик"+getDescriptionFinisher(this, 1),
 
-					"Pushing [npc.her] face down into [npc2.namePos] groin, [npc.name] [npc.verb(start)] softly pressing [npc.her] [npc.lips+] against [npc2.her] genderless mound,"
-							+ " gently kissing and licking [npc2.her] sensitive crotch"+getDescriptionFinisher(this, 0));
+					"Вжимаясь лицом [npc.her] в пах [npc2.namePos], [npc.name] [npc.verb(start)] мягко прижимая [npc.her] [npc.lips+] к [npc2.her] бесполому холмику, нежно целуя и вылизывая [npc2.her] чувствительный пах"+getDescriptionFinisher(this, 0));
 		}
 	};
 	
@@ -158,12 +149,12 @@ public class TongueMound {
 		
 		@Override
 		public String getActionTitle() {
-			return "Snog mound";
+			return "Трусситься о холмик";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Passionately snog [npc2.namePos] genderless crotch.";
+			return "Страстно трусситься о бесполый пах [npc2.namePos].";
 		}
 
 		@Override
@@ -175,14 +166,11 @@ public class TongueMound {
 		@Override
 		public String getDescription() {
 			return UtilText.returnStringAtRandom(
-					"[npc.Name] eagerly [npc.verb(press)] [npc.her] [npc.lips+] down against [npc2.namePos] doll-like mound,"
-							+ " passionately kissing and licking at [npc2.her] sensitive crotch"+getDescriptionFinisher(this, 0),
+					"[npc.Name] с жадностью [npc.verb(press)] [npc.her] [npc.lips+] вниз, прижимаясь к кукольному лону [npc2.namePos], страстно целуя и облизывая чувствительную промежность [npc2.her]"+getDescriptionFinisher(this, 0),
 
-					"Dropping [npc.her] head down into [npc2.namePos] crotch, [npc.name] passionately [npc.verb(press)] [npc.her] mouth against [npc2.her] genderless crotch,"
-							+ " kissing and licking [npc2.her] sensitive mound"+getDescriptionFinisher(this, 1),
+					"Опустив голову [npc.her] в пах [npc2.namePos], [npc.name] страстно [npc.verb(press)] [npc.her] губами к [npc2.her] бесполому паху, целуя и вылизывая [npc2.her] чувствительный холмик"+getDescriptionFinisher(this, 1),
 
-					"Pushing [npc.her] face down into [npc2.namePos] groin, [npc.name] [npc.verb(start)] pressing [npc.her] [npc.lips+] against [npc2.her] genderless mound,"
-							+ " eagerly kissing and licking [npc2.her] sensitive crotch"+getDescriptionFinisher(this, 0));
+					"Вжимаясь лицом [npc.her] в пах [npc2.namePos], [npc.name] [npc.verb(start)] прижимая [npc.her] [npc.lips+] к [npc2.her] бесполому холмику, жадно целуя и вылизывая [npc2.her] чувствительный пах"+getDescriptionFinisher(this, 0));
 		}
 	};
 	
@@ -197,12 +185,12 @@ public class TongueMound {
 		
 		@Override
 		public String getActionTitle() {
-			return "Kiss mound";
+			return "Целовать лоно";
 		}
 	
 		@Override
 		public String getActionDescription() {
-			return "Gently kiss and lick [npc.namePos] doll-like crotch.";
+			return "Нежно целовать и лизать кукольную промежность [npc.namePos].";
 		}
 	
 		@Override
@@ -214,14 +202,11 @@ public class TongueMound {
 		@Override
 		public String getDescription() {
 			return UtilText.returnStringAtRandom(
-					"[npc.Name] [npc.verb(press)] [npc.her] [npc.lips+] down against [npc2.namePos] doll-like mound,"
-							+ " kissing and licking at [npc2.her] sensitive crotch"+getDescriptionFinisher(this, 0),
+					"[npc.Name] [npc.verb(press)] [npc.her] [npc.lips+] вниз, прижимаясь к кукольному холмику [npc2.namePos], целуя и лизажа чувствительную промежность [npc2.her]"+getDescriptionFinisher(this, 0),
 
-					"Dropping [npc.her] head down into [npc2.namePos] crotch, [npc.name] [npc.verb(press)] [npc.her] mouth against [npc2.her] genderless crotch,"
-							+ " kissing and licking [npc2.her] sensitive mound"+getDescriptionFinisher(this, 1),
+					"Опуская голову [npc.her] в промежность [npc2.namePos], [npc.name] [npc.verb(press)] прижимая рот [npc.her] к бесполому лону [npc2.her], целуя и лижа чувствительный холмик [npc2.her]"+getDescriptionFinisher(this, 1),
 
-					"Pushing [npc.her] face down into [npc2.namePos] groin, [npc.name] [npc.verb(start)] pressing [npc.her] [npc.lips+] against [npc2.her] genderless mound,"
-							+ " kissing and licking [npc2.her] sensitive crotch"+getDescriptionFinisher(this, 0));
+					"Вжимая лицо [npc.her] в пах [npc2.namePos], [npc.name] [npc.verb(start)] прижимая [npc.her] к бесполому холмику [npc.lips+], целуя и лижа чувствительную промежность [npc2.her], при этом [npc2.her]"+getDescriptionFinisher(this, 0));
 		}
 	};
 }

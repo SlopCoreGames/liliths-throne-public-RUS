@@ -41,28 +41,27 @@ public class MiscActions {
 		@Override
 		public String getActionTitle() {
 			if(!isOppositeDom() || isCharacterImmune()) {
-				return "[style.colourDisabled(Level drain: "
+				return "[style.colourDisabled(Поглощение уровня: "
 						+(Main.sex.playerLevelDrain
-							?"ON)]"
-							:"OFF)]");
+							?"ВКЛ)]"
+							:"ВЫКЛ)]");
 			}
-			return "[style.colourSex(Level drain:)] "
+			return "[style.colourSex(Поглощение уровня:)] "
 					+(Main.sex.playerLevelDrain
-						?"[style.colourMinorGood(ON)]"
-						:"[style.colourMinorBad(OFF)]");
+						?"[style.colourMinorGood(ВКЛ)]"
+						:"[style.colourMinorBad(ВЫКЛ)]");
 		}
 		@Override
 		public String getActionDescription() {
 			return UtilText.parse(Main.sex.getCharacterOrgasming(),
-					"'"+Util.capitaliseSentence(Perk.ORGASMIC_LEVEL_DRAIN.getName(Main.game.getPlayer()))+"' perk effect:<br/>"
-							+ "Toggle whether or not you're going to drain [npc.namePos] level when [npc.she] orgasms."
+					"'"+Util.capitaliseSentence(Perk.ORGASMIC_LEVEL_DRAIN.getName(Main.game.getPlayer()))+"' эффект перка:<br/>Переключает режим, при котором [npc.she] будет терять [npc.namePos] уровень во время оргазма."
 							+(!isOppositeDom()
-								?" [style.italicsMinorBad(You can only drain opposite partners (sub/dom)!)]"
-								:" You can only use this ability to drain opposite partners (sub/dom).")
+								?" [style.italicsMinorBad(Вы можете поглощать уровень только у противоположных партнеров (саб/дом)!)]"
+								:" Вы можете использовать эту способность только для поглощения уровня у противоположных партнеров (саб/дом).")
 							+(isCharacterImmune()
 								?(Main.sex.getCharacterOrgasming().isImmuneToLevelDrain()
-									?"<br/>[style.italicsTerrible([npc.Name] cannot have [npc.her] level drained!)]"
-									:"<br/>[style.italicsTerrible(You cannot level drain during a bad end!)]")
+									?"<br/>[style.italicsTerrible(У [npc.Name] нельзя поглотить уровень [npc.her]!)]"
+									:"<br/>[style.italicsTerrible(Во время плохого финала нельзя высасывать уровни!)]")
 								:""));
 		}
 		@Override

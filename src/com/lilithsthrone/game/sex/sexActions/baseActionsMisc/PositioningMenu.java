@@ -440,7 +440,7 @@ public class PositioningMenu {
 				}
 			}
 			if(!(domsAcceptable && subsAcceptable)) {
-				return new Value<Boolean, String>(false, "You need to have at least one dominant and one submissive character in non-spectator slots.");
+				return new Value<Boolean, String>(false, "В слотах (не считая зрителей) должен быть как минимум один доминант и один сабмиссив.");
 			}
 		}
 
@@ -453,7 +453,7 @@ public class PositioningMenu {
 		sb.append("<div class='container-half-width'>");
 			sb.append("<p style='text-align:center;'>");
 			if(Main.sex.getDominantParticipants(true).size()>0) {
-				sb.append("[style.boldDominant(Dominants)]</b>");
+				sb.append("[style.boldDominant(Доминанты)]</b>");
 					for(GameCharacter c : Main.sex.getDominantParticipants(true).keySet()) {
 						sb.append(UtilText.parse(c,
 								"<br/><b style='color:"+c.getFemininity().getColour().toWebHexString()+";'>[npc.Name]</b><b>:</b> "
@@ -474,7 +474,7 @@ public class PositioningMenu {
 		sb.append("<div class='container-half-width'>");
 			sb.append("<p style='text-align:center;'>");
 			if(Main.sex.getSubmissiveParticipants(true).size()>0) {
-				sb.append("[style.boldSubmissive(Submissives)]</b>");
+				sb.append("[style.boldSubmissive(Сабмиссивы)]</b>");
 					for(GameCharacter c : Main.sex.getSubmissiveParticipants(true).keySet()) {
 						sb.append(UtilText.parse(c,
 								"<br/><b style='color:"+c.getFemininity().getColour().toWebHexString()+";'>[npc.Name]</b><b>:</b> "
@@ -499,7 +499,7 @@ public class PositioningMenu {
 				charactersToMoveToSpectators.add(e.getKey());
 				sb.append(
 						"[style.colourBad("+UtilText.parse(e.getKey(),
-								"[npc.NamePos] selected position slot, '"+Util.capitaliseSentence(e.getValue().getDescription())+"', is now unavailable, and as such, [npc.sheHasFull] been moved to a spectator slot!")
+								"Слот позиции [npc.NamePos], '"+Util.capitaliseSentence(e.getValue().getDescription())+"', теперь недоступен, поэтому [npc.sheHasFull] перенесен в слот зрителя!")
 						+")]");
 			}
 		}
@@ -511,10 +511,10 @@ public class PositioningMenu {
 		return sb.toString();
 	}
 	
-	public static final DialogueNode POSITIONING_MENU = new DialogueNode("Positioning Selection", "", true) {
+	public static final DialogueNode POSITIONING_MENU = new DialogueNode("Выбор позиций", "", true) {
 		@Override
 		public String getLabel() {
-			return "Positioning Selection: "+position.getName();
+			return "Выбор позиций: "+position.getName();
 		}
 		@Override
 		public String getContent() {
@@ -532,24 +532,18 @@ public class PositioningMenu {
 			Value<Boolean, String> acceptablePosition = position.isAcceptablePosition(positioningSlots);
 			if(!acceptablePosition.getKey()) {
 				UtilText.nodeContentSB.append(
-						"<p style='text-align:center;'>"
-								+ "[style.boldBad(Invalid position)]<b>:</b><br/>"
-								+"[style.italicsMinorBad("+acceptablePosition.getValue()+")]"
+						"<p style='text-align:center;'>[style.boldBad(Неверная позиция)]<b>:</b><br/>[style.italicsMinorBad("+acceptablePosition.getValue()+")]"
 						+ "</p>");
 				
 			} else {
 				Value<Boolean, String> acceptableValue = isSlotsAcceptable();
 				if(!acceptableValue.getKey()) {
 					UtilText.nodeContentSB.append(
-							"<p style='text-align:center;'>"
-									+ "[style.boldBad(Invalid position)]<b>:</b><br/>"
-									+"[style.italicsMinorBad("+acceptableValue.getValue()+")]"
+							"<p style='text-align:center;'>[style.boldBad(Неверная позиция)]<b>:</b><br/>[style.italicsMinorBad("+acceptableValue.getValue()+")]"
 							+ "</p>");
 				} else {
 					UtilText.nodeContentSB.append(
-							"<p style='text-align:center;'>"
-									+ "<b>Projected outcome:</b><br/>"
-									+"<i>"+position.getDescription(positioningSlots)+"</i>"
+							"<p style='text-align:center;'><b>Ожидаемый результат:</b><br/><i>"+position.getDescription(positioningSlots)+"</i>"
 							+ "</p>");
 				}
 			}
@@ -563,7 +557,7 @@ public class PositioningMenu {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index == 0) {
-				return new ResponseEffectsOnly("Back", "Decide against changing position."){
+				return new ResponseEffectsOnly("Назад", "Решить не менять позу."){
 					@Override
 					public void effects() {
 						Main.game.restoreSavedContent(false);
@@ -573,9 +567,9 @@ public class PositioningMenu {
 			} else if(index==1) {
 				Value<Boolean, String> acceptableValue = isSlotsAcceptable();
 				if(!acceptableValue.getKey()) {
-					return new Response("Accept", acceptableValue.getValue(), null);
+					return new Response("Принять", acceptableValue.getValue(), null);
 				}
-				return new ResponseEffectsOnly("Accept", "Move into the selected position."){
+				return new ResponseEffectsOnly("Принять", "Перейти в выбранную позу."){
 					@Override
 					public boolean isSexPositioningHighlight() {
 						return true;
@@ -587,12 +581,12 @@ public class PositioningMenu {
 						Main.mainController.openPhone();
 						
 						positioningSB.append(
-								"Wanting to switch into a new position, "
+								"Желая сменить позу, "
 									+(Main.sex.isMasturbation()
-										?"you move around until you've assumed the posture you had in mind..."
+										?"ты возишься и ерзаешь, пока не принимаешь нужную позу..."
 										:(Main.sex.getAllParticipants(false).size()==2
-											?UtilText.parse(Main.sex.getTargetedPartner(Main.game.getPlayer()), "you manoeuvre [npc.name] into [npc.her] new place...")
-											:"you manoeuvre your partners into their new places...")));
+											?UtilText.parse(Main.sex.getTargetedPartner(Main.game.getPlayer()), "ты перетаскиваешь [npc.name] на новое [npc.her]...")
+											:"ты перетаскиваешь своих партнеров на новые места...")));
 
 						SexActionUtility.POSITION_SELECTION.applyEffects();
 						Main.sex.endSexTurn(SexActionUtility.POSITION_SELECTION);
@@ -605,8 +599,8 @@ public class PositioningMenu {
 				
 			} else if(index==2) {
 				return new Response(
-						"Target: <b style='color:"+targetedCharacter.getFemininity().getColour().toWebHexString()+";'>"+UtilText.parse(targetedCharacter, "[npc.Name]")+"</b>",
-						"This is the character you're currently choosing a slot for.",
+						"Цель: <b style='color:"+targetedCharacter.getFemininity().getColour().toWebHexString()+";'>"+UtilText.parse(targetedCharacter, "[npc.Name]")+"</b>",
+						"Персонаж, для которого вы сейчас выбираете слот.",
 						POSITIONING_MENU){
 					@Override
 					public void effects() {
@@ -640,7 +634,7 @@ public class PositioningMenu {
 				}
 				
 				if(targetedCharacter.equals(characterInSlot)) {
-					return new Response(Util.capitaliseSentence(slot.getDescription()), UtilText.parse(targetedCharacter, "[npc.NameIsFull] already in this slot..."), null);
+					return new Response(Util.capitaliseSentence(slot.getDescription()), UtilText.parse(targetedCharacter, "[npc.NameIsFull] уже находится в этом слоте..."), null);
 				}
 				
 				if(!position.isSlotUnlocked(targetedCharacter, slot, positioningSlots).getKey()) {
@@ -648,12 +642,12 @@ public class PositioningMenu {
 				}
 
 				if(!Main.sex.getInitialSexManager().isSlotAvailable(targetedCharacter, slot)) {
-					return new Response(Util.capitaliseSentence(slot.getDescription()), UtilText.parse(targetedCharacter, "[npc.Name] cannot access this slot in this sex scene..."), null);
+					return new Response(Util.capitaliseSentence(slot.getDescription()), UtilText.parse(targetedCharacter, "[npc.Name] не может занимать этот слот в этой сцене..."), null);
 				}
 				
 				if(characterInSlot!=null && !Main.sex.getInitialSexManager().isSlotAvailable(characterInSlot, Main.sex.getSexPositionSlot(targetedCharacter))) {
 					return new Response(Util.capitaliseSentence(slot.getDescription()),
-							UtilText.parse(characterInSlot, targetedCharacter, "[npc.Name] cannot access [npc2.namePos] slot in this sex scene, so [npc2.name] cannot swap with [npc.herHim]..."),
+							UtilText.parse(characterInSlot, targetedCharacter, "[npc.Name] не может занимать слот [npc2.namePos] в этой сцене, поэтому [npc2.name] не может поменяться местами с [npc.herHim]..."),
 							null);
 				}
 				
@@ -663,9 +657,8 @@ public class PositioningMenu {
 							:Util.capitaliseSentence(slot.getDescription()),
 						characterInSlot!=null && slot!=SexSlotGeneric.MISC_WATCHING
 							?UtilText.parse(targetedCharacter, characterInSlot,
-									"[npc2.NameIsFull] already assigned to this slot, so by selecting [npc.name] to take this slot, you will swap the two of them around."
-									+ " (Resulting in [npc2.name] being in the '"+positioningSlots.get(targetedCharacter).getDescription()+"' slot.)")
-							:UtilText.parse(targetedCharacter, "Assign [npc.name] to this slot."),
+									"[npc2.NameIsFull] уже занимает это место, поэтому, выбрав [npc.name] на это место, вы поменяете их местами. (В итоге [npc2.name] окажется в слоте '"+positioningSlots.get(targetedCharacter).getDescription()+"' слот.)")
+							:UtilText.parse(targetedCharacter, "Назначить [npc.name] на это место."),
 						POSITIONING_MENU){
 					@Override
 					public void effects() {
@@ -722,7 +715,7 @@ public class PositioningMenu {
 
 		@Override
 		public String getActionDescription() {
-			return "Open the positioning menu for all sex positions related to the '"+Util.capitaliseSentence(SexPosition.STANDING.getName())+"' core position.";
+			return "Открыть меню позиций для всех вариантов, связанных с основной позицией '"+Util.capitaliseSentence(SexPosition.STANDING.getName())+"основная позиция.";
 		}
 
 		@Override
@@ -790,7 +783,7 @@ public class PositioningMenu {
 
 		@Override
 		public String getActionDescription() {
-			return "Open the positioning menu for all sex positions related to the '"+Util.capitaliseSentence(SexPosition.AGAINST_WALL.getName())+"' core position.";
+			return "Открыть меню позиций для всех вариантов, связанных с основной позицией '"+Util.capitaliseSentence(SexPosition.AGAINST_WALL.getName())+"основная позиция.";
 		}
 
 		@Override
@@ -866,7 +859,7 @@ public class PositioningMenu {
 
 		@Override
 		public String getActionDescription() {
-			return "Open the positioning menu for all sex positions related to the '"+Util.capitaliseSentence(SexPosition.SITTING.getName())+"' core position.";
+			return "Открыть меню позиций для всех вариантов, связанных с основной позицией '"+Util.capitaliseSentence(SexPosition.SITTING.getName())+"основная позиция.";
 		}
 
 		@Override
@@ -952,7 +945,7 @@ public class PositioningMenu {
 
 		@Override
 		public String getActionDescription() {
-			return "Open the positioning menu for all sex positions related to the '"+Util.capitaliseSentence(SexPosition.OVER_DESK.getName())+"' core position.";
+			return "Открыть меню позиций для всех вариантов, связанных с основной позицией '"+Util.capitaliseSentence(SexPosition.OVER_DESK.getName())+"основная позиция.";
 		}
 
 		@Override
@@ -1020,7 +1013,7 @@ public class PositioningMenu {
 
 		@Override
 		public String getActionDescription() {
-			return "Open the positioning menu for all sex positions related to the '"+Util.capitaliseSentence(SexPosition.ALL_FOURS.getName())+"' core position.";
+			return "Открыть меню позиций для всех вариантов, связанных с основной позицией '"+Util.capitaliseSentence(SexPosition.ALL_FOURS.getName())+"основная позиция.";
 		}
 
 		@Override
@@ -1088,7 +1081,7 @@ public class PositioningMenu {
 
 		@Override
 		public String getActionDescription() {
-			return "Open the positioning menu for all sex positions related to the '"+Util.capitaliseSentence(SexPosition.LYING_DOWN.getName())+"' core position.";
+			return "Открыть меню позиций для всех вариантов, связанных с основной позицией '"+Util.capitaliseSentence(SexPosition.LYING_DOWN.getName())+"основная позиция.";
 		}
 
 		@Override
@@ -1156,7 +1149,7 @@ public class PositioningMenu {
 
 		@Override
 		public String getActionDescription() {
-			return "Open the positioning menu for all sex positions related to the '"+Util.capitaliseSentence(SexPosition.STOCKS.getName())+"' core position.";
+			return "Открыть меню позиций для всех вариантов, связанных с основной позицией '"+Util.capitaliseSentence(SexPosition.STOCKS.getName())+"основная позиция.";
 		}
 
 		@Override
@@ -1224,7 +1217,7 @@ public class PositioningMenu {
 
 		@Override
 		public String getActionDescription() {
-			return "Open the positioning menu for all sex positions related to the '"+Util.capitaliseSentence(SexPosition.MILKING_STALL.getName())+"' core position.";
+			return "Открыть меню позиций для всех вариантов, связанных с основной позицией '"+Util.capitaliseSentence(SexPosition.MILKING_STALL.getName())+"основная позиция.";
 		}
 
 		@Override

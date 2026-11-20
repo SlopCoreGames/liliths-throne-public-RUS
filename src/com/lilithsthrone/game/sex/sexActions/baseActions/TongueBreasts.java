@@ -31,15 +31,15 @@ public class TongueBreasts {
 		@Override
 		public String getActionTitle() {
 			if(Main.sex.getCharacterTargetedForSexAction(this).hasBreasts()) {
-				return "Kiss breasts";
+				return "Целовать грудь";
 			} else {
-				return "Kiss chest";
+				return "Целовать грудь";
 			}
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Plant a series of kisses on [npc2.namePos] exposed [npc2.breasts].";
+			return "Осыпать поцелуями обнаженную [npc2.breasts] [npc2.namePos].";
 		}
 
 		@Override
@@ -54,58 +54,43 @@ public class TongueBreasts {
 			switch(Main.sex.getSexPace(Main.sex.getCharacterPerformingAction())) {
 				case DOM_GENTLE:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"[npc.Name] slowly [npc.verb(lean)] in to [npc2.namePos] chest,"
-									+ " pressing [npc.her] [npc.lips+] against [npc2.her] [npc2.breastSkin+] before starting to plant a series of gentle kisses on [npc2.her] [npc2.breasts+].",
+							"[npc.Name] медленно [npc.verb(lean)] в [npc2.namePos] грудь, жадно прижимая [npc.her] [npc.lips+] к [npc2.her] [npc2.breastSkin+], прежде чем начать осыпать нежными поцелуями [npc2.her] [npc2.breasts+].",
 
-							"Gently pressing [npc.her] [npc.lips+] against [npc2.namePos] chest,"
-									+ " [npc.name] [npc.verb(start)] delivering a series of loving kisses to [npc2.her] exposed [npc2.breasts+].",
+							"Мягко прижимая [npc.her] [npc.lips+] к [npc2.namePos] груди, [npc.name] [npc.verb(start)] осыпает любящими поцелуями обнаженную [npc2.breasts+] [npc2.her].",
 
-							"[npc.Name] [npc.verb(start)] gently kissing [npc2.namePos] exposed [npc2.breasts],"
-									+ " breathing in [npc2.her] [npc2.scent+] as [npc.she] [npc.verb(press)] [npc.her] [npc.lips+] against [npc2.her] [npc2.skin+]."));
+							"[npc.Name] [npc.verb(start)], нежно целуя обнаженную [npc2.breasts] [npc2.namePos], вдыхает аромат [npc2.her] [npc2.scent+], пока [npc.she] отчаянно [npc.verb(press)] [npc.her] [npc.lips+] о [npc2.her] [npc2.skin+]."));
 					break;
 				case DOM_NORMAL:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"[npc.Name] eagerly [npc.verb(lean)] in to [npc2.namePos] chest,"
-									+ " greedily pressing [npc.her] [npc.lips+] against [npc2.her] [npc2.breastSkin+] before starting to plant a series of passionate kisses on [npc2.her] [npc2.breasts+].",
+							"[npc.Name] с жадностью [npc.verb(lean)] в [npc2.namePos] грудь, ненасытно прижимая [npc.her] [npc.lips+] к [npc2.her] [npc2.breastSkin+], прежде чем начать осыпать страстными поцелуями [npc2.her] [npc2.breasts+].",
 
-							"Greedily pressing [npc.her] [npc.lips+] against [npc2.namePos] chest,"
-									+ " [npc.name] [npc.verb(start)] delivering a series of enthusiastic kisses to [npc2.her] exposed [npc2.breasts+].",
+							"Жадно прижимая [npc.her] [npc.lips+] к [npc2.namePos] груди, [npc.name] [npc.verb(start)] осыпает восторженными поцелуями обнаженную [npc2.breasts+] [npc2.her].",
 
-							"[npc.Name] [npc.verb(start)] passionately kissing [npc2.namePos] exposed [npc2.breasts],"
-									+ " breathing in [npc2.her] [npc2.scent+] as [npc.she] desperately [npc.verb(press)] [npc.her] [npc.lips+] against [npc2.her] [npc2.skin+]."));
+							"[npc.Name] [npc.verb(start)], страстно целуя обнаженную [npc2.breasts] [npc2.namePos], вдыхает аромат [npc2.her] [npc2.scent+], пока [npc.she] в отчаянии [npc.verb(press)] [npc.her] [npc.lips+] о [npc2.her] [npc2.skin+]."));
 					break;
 				case DOM_ROUGH:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"[npc.Name] greedily [npc.verb(lean)] in to [npc2.namePos] chest,"
-									+ " roughly pressing [npc.her] [npc.lips+] against [npc2.her] [npc2.breastSkin+] before starting to plant a series of forceful kisses on [npc2.her] [npc2.breasts+].",
+							"[npc.Name] жадно [npc.verb(lean)] в [npc2.namePos] грудь, грубо прижимая [npc.her] [npc.lips+] к [npc2.her] [npc2.breastSkin+], прежде чем начать осыпать [npc2.her] [npc2.breasts+] серией властных поцелуев.",
 
-							"Greedily pressing [npc.her] [npc.lips+] against [npc2.namePos] chest,"
-									+ " [npc.name] [npc.verb(start)] delivering a series of rough kisses to [npc2.her] exposed [npc2.breasts+].",
+							"Жадно прижимая [npc.her] [npc.lips+] к [npc2.namePos] груди, [npc.name] [npc.verb(start)] осыпает [npc2.her] обнаженную [npc2.breasts+] серией грубых поцелуев.",
 
-							"[npc.Name] [npc.verb(start)] roughly kissing [npc2.namePos] exposed [npc2.breasts],"
-									+ " breathing in [npc2.her] [npc2.scent+] as [npc.she] forcefully [npc.verb(press)] [npc.her] [npc.lips+] against [npc2.her] [npc2.skin+]."));
+							"[npc.Name] [npc.verb(start)], грубо целуя обнаженную [npc2.breasts] [npc2.namePos], вдыхает [npc2.her] [npc2.scent+], пока [npc.she] с силой [npc.verb(press)] [npc.her] [npc.lips+] против [npc2.her] [npc2.skin+]."));
 					break;
 				case SUB_EAGER:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"[npc.Name] eagerly [npc.verb(lean)] in to [npc2.namePos] chest,"
-									+ " greedily pressing [npc.her] [npc.lips+] against [npc2.her] [npc2.breastSkin+] before starting to plant a series of passionate kisses on [npc2.her] [npc2.breasts+].",
+							"[npc.Name] с жадностью [npc.verb(lean)] в [npc2.namePos] грудь, ненасытно прижимая [npc.her] [npc.lips+] к [npc2.her] [npc2.breastSkin+], прежде чем начать осыпать страстными поцелуями [npc2.her] [npc2.breasts+].",
 
-							"Greedily pressing [npc.her] [npc.lips+] against [npc2.namePos] chest,"
-									+ " [npc.name] [npc.verb(start)] delivering a series of enthusiastic kisses to [npc2.her] exposed [npc2.breasts+].",
+							"Жадно прижимая [npc.her] [npc.lips+] к [npc2.namePos] груди, [npc.name] [npc.verb(start)] осыпает восторженными поцелуями обнаженную [npc2.breasts+] [npc2.her].",
 
-							"[npc.Name] [npc.verb(start)] passionately kissing [npc2.namePos] exposed [npc2.breasts],"
-									+ " breathing in [npc2.her] [npc2.scent+] as [npc.she] desperately [npc.verb(press)] [npc.her] [npc.lips+] against [npc2.her] [npc2.skin+]."));
+							"[npc.Name] [npc.verb(start)], страстно целуя обнаженную [npc2.breasts] [npc2.namePos], вдыхает аромат [npc2.her] [npc2.scent+], пока [npc.she] в отчаянии [npc.verb(press)] [npc.her] [npc.lips+] о [npc2.her] [npc2.skin+]."));
 					break;
 				case SUB_NORMAL:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"[npc.Name] [npc.verb(lean)] in to [npc2.namePos] chest,"
-									+ " pressing [npc.her] [npc.lips+] against [npc2.her] [npc2.breastSkin+] before starting to plant a series of kisses on [npc2.her] [npc2.breasts+].",
+							"[npc.Name] [npc.verb(lean)] в [npc2.namePos] грудь, прижимая [npc.her] [npc.lips+] к [npc2.her] [npc2.breastSkin+], прежде чем начать осыпать [npc2.her] [npc2.breasts+] серией поцелуев.",
 
-							"Pressing [npc.her] [npc.lips+] against [npc2.namePos] chest,"
-									+ " [npc.name] [npc.verb(start)] delivering a series of kisses to [npc2.her] exposed [npc2.breasts+].",
+							"Прижимая [npc.her] [npc.lips+] к [npc2.namePos] груди, [npc.name] [npc.verb(start)] осыпает [npc2.her] обнаженную [npc2.breasts+] серией поцелуев.",
 
-							"[npc.Name] [npc.verb(start)] kissing [npc2.namePos] exposed [npc2.breasts],"
-									+ " breathing in [npc2.her] [npc2.scent+] as [npc.she] [npc.verb(press)] [npc.her] [npc.lips+] against [npc2.her] [npc2.skin+]."));
+							"[npc.Name] [npc.verb(start)], целуя обнаженную [npc2.breasts] [npc2.namePos], вдыхает [npc2.her] [npc2.scent+], пока [npc.she] [npc.verb(press)] [npc.her] [npc.lips+] против [npc2.her] [npc2.skin+]."));
 					break;
 				default:
 					break;
@@ -115,54 +100,51 @@ public class TongueBreasts {
 				switch(Main.sex.getSexPace(Main.sex.getCharacterTargetedForSexAction(this))) {
 					case DOM_GENTLE:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" [npc2.Name] [npc2.verb(let)] out a soft [npc2.moan] in response, and gently [npc2.verb(pull)] [npc.namePos] [npc.face] into [npc2.her] chest as [npc2.she] [npc2.verb(cry)] out for [npc.herHim] to continue.",
+								" [npc2.Name] [npc2.verb(let)] тихий [npc2.moan] в ответ и мягко [npc2.verb(pull)] [npc.namePos] [npc.face] в [npc2.her] грудь, пока [npc2.she] [npc2.verb(cry)], чтобы [npc.herHim] мог(ла) продолжать.",
 	
-								" A gentle [npc2.moan] drifts out from between [npc2.namePos] [npc2.lips] as [npc2.she] [npc2.verb(push)] out [npc2.her] chest in response.",
+								" Нежный [npc2.moan] доносится из-за [npc2.namePos] [npc2.lips], когда [npc2.she] [npc2.verb(push)] [npc2.her] грудь в ответ.",
 	
-								" Gently pushing [npc2.her] chest out into [npc.namePos] [npc.face], [npc2.name] [npc2.verb(let)] out a soft [npc2.moan] as [npc2.she] [npc2.verb(plead)] for [npc.herHim] to continue."));
+								" Мягко выпячивая [npc2.her] грудь навстречу [npc.namePos] [npc.face], [npc2.name] [npc2.verb(let)] тихий [npc2.moan], пока [npc2.she] [npc2.verb(plead)], чтобы [npc.herHim] мог(ла) продолжить."));
 						break;
 					case DOM_NORMAL:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" [npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] in response, and eagerly [npc2.verb(pull)] [npc.namePos] [npc.face] into [npc2.her] chest as [npc2.she] [npc2.verb(cry)] out for [npc.herHim] to continue.",
+								" [npc2.Name] [npc2.verb(let)] [npc2.a_moan+] в ответ, и с нетерпением [npc2.verb(pull)] [npc.namePos] [npc.face] в [npc2.her] грудь, пока [npc2.she] [npc2.verb(cry)], чтобы [npc.herHim] мог(ла) продолжить.",
 	
-								" [npc.A_moan+] drifts out from between [npc2.namePos] [npc2.lips] as [npc2.she] enthusiastically [npc2.verb(push)] out [npc2.her] chest in response.",
+								" [npc.A_moan+] доносится из-за [npc2.namePos] [npc2.lips], когда [npc2.she] с энтузиазмом [npc2.verb(push)] [npc2.her] грудь в ответ.",
 	
-								" Eagerly pushing [npc2.her] chest out into [npc.namePos] [npc.face], [npc2.name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(plead)] for [npc.herHim] to continue."));
+								" С нетерпением выпячивая [npc2.her] грудь навстречу [npc.namePos] [npc.face], [npc2.name] [npc2.verb(let)] [npc2.a_moan+], пока [npc2.she] [npc2.verb(plead)], чтобы [npc.herHim] мог(ла) продолжить."));
 						break;
 					case DOM_ROUGH:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" [npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] in response, and roughly [npc2.verb(yank)] [npc.namePos] [npc.face] into [npc2.her] chest as [npc2.she] [npc2.verb(order)] [npc.herHim] to continue.",
+								" [npc2.Name] [npc2.verb(let)] [npc2.a_moan+] в ответ, и грубо [npc2.verb(yank)] [npc.namePos] [npc.face] в [npc2.her] грудь, пока [npc2.she] [npc2.verb(order)] [npc.herHim], чтобы продолжить.",
 	
-								" [npc.A_moan+] drifts out from between [npc2.namePos] [npc2.lips] as [npc2.she] roughly [npc2.verb(push)] out [npc2.her] chest in response.",
+								" [npc.A_moan+] доносится из-за [npc2.namePos] [npc2.lips], когда [npc2.she] грубо [npc2.verb(push)] [npc2.her] грудь в ответ.",
 	
-								" Forcefully pushing [npc2.her] chest out into [npc.namePos] [npc.face], [npc2.name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(order)] [npc.herHim] to continue."));
+								" Сильно выпячивая [npc2.her] грудь навстречу [npc.namePos] [npc.face], [npc2.name] [npc2.verb(let)] [npc2.a_moan+], пока [npc2.she] [npc2.verb(order)] [npc.herHim], чтобы продолжить."));
 						break;
 					case SUB_EAGER:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" [npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] in response, and eagerly [npc2.verb(pull)] [npc.namePos] [npc.face] into [npc2.her] chest as [npc2.she] [npc2.verb(cry)] out for [npc.herHim] to continue.",
+								" [npc2.Name] [npc2.verb(let)] [npc2.a_moan+] в ответ, и с нетерпением [npc2.verb(pull)] [npc.namePos] [npc.face] в [npc2.her] грудь, пока [npc2.she] [npc2.verb(cry)], чтобы [npc.herHim] мог(ла) продолжить.",
 	
-								" [npc.A_moan+] drifts out from between [npc2.namePos] [npc2.lips] as [npc2.she] enthusiastically [npc2.verb(push)] out [npc2.her] chest in response.",
+								" [npc.A_moan+] доносится из-за [npc2.namePos] [npc2.lips], когда [npc2.she] с энтузиазмом [npc2.verb(push)] [npc2.her] грудь в ответ.",
 	
-								" Eagerly pushing [npc2.her] chest out into [npc.namePos] [npc.face], [npc2.name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(plead)] for [npc.herHim] to continue."));
+								" С нетерпением выпячивая [npc2.her] грудь навстречу [npc.namePos] [npc.face], [npc2.name] [npc2.verb(let)] [npc2.a_moan+], пока [npc2.she] [npc2.verb(plead)], чтобы [npc.herHim] мог(ла) продолжить."));
 						break;
 					case SUB_NORMAL:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" [npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] in response, and [npc2.verb(pull)] [npc.namePos] [npc.face] into [npc2.her] chest as [npc2.she] [npc2.verb(cry)] out for [npc.herHim] to continue.",
+								" [npc2.Name] [npc2.verb(let)] наружу в ответ на [npc2.a_moan+], и [npc2.verb(pull)] [npc.namePos] [npc.face] в [npc2.her] грудь, пока [npc2.she] [npc2.verb(cry)] наружу, чтобы [npc.herHim] мог(ла) продолжать.",
 	
-								" [npc.A_moan+] drifts out from between [npc2.namePos] [npc2.lips] as [npc2.she] [npc2.verb(push)] out [npc2.her] chest in response.",
+								" [npc.A_moan+] выскальзывает из между [npc2.namePos] [npc2.lips], когда [npc2.she] [npc2.verb(push)] наружу [npc2.her] грудь в ответ.",
 	
-								" Pushing [npc2.her] chest out into [npc.namePos] [npc.face], [npc2.name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(plead)] for [npc.herHim] to continue."));
+								" Выпячивая [npc2.her] грудь навстречу [npc.namePos] [npc.face], [npc2.name] [npc2.verb(let)] наружу [npc2.a_moan+], пока [npc2.she] [npc2.verb(plead)], чтобы [npc.herHim] мог(ла) продолжать."));
 						break;
 					case SUB_RESISTING:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" [npc2.Name] desperately [npc2.verb(try)] to pull [npc2.her] [npc2.breasts] away from [npc.namePos] [npc.face],"
-										+ " letting out [npc2.a_sob+] as [npc2.she] [npc2.verb(beg)] for [npc.herHim] to leave [npc2.herHim] alone.",
+								" [npc2.Name] отчаянно [npc2.verb(try)], чтобы оттянуть [npc2.her] [npc2.breasts] от [npc.namePos] [npc.face], издавая [npc2.a_sob+], пока [npc2.she] [npc2.verb(beg)], чтобы [npc.herHim] оставил(а) [npc2.herHim] в покое.",
 	
-								" With tears streaming down [npc2.her] [npc2.face], [npc2.name] [npc2.verb(struggle)] against [npc.name],"
-										+ " [npc2.sobbing] out loud as [npc2.she] [npc2.verb(try)] to pull [npc2.her] [npc2.breasts] away from [npc.her] unwelcome [npc.lips].",
+								" Со слезами, катящимися по [npc2.her] [npc2.face], [npc2.name] [npc2.verb(struggle)] против [npc.name], [npc2.sobbing] вслух, пока [npc2.she] [npc2.verb(try)] отталкивать [npc2.her] [npc2.breasts] от нежелательного [npc.lips] [npc.her].",
 	
-								" [npc2.Sobbing] out loud, and with tears in [npc2.namePos] [npc2.eyes],"
-										+ " [npc2.name] [npc2.verb(beg)] for [npc.name] to leave [npc2.herHim] alone as [npc2.she] frantically [npc2.verb(try)] to pull [npc2.her] [npc2.breasts] away."));
+								" [npc2.Sobbing] вслух, и со слезами на [npc2.namePos] [npc2.eyes], [npc2.name] [npc2.verb(beg)], чтобы [npc.name] оставил(а) [npc2.herHim] в покое, пока [npc2.she] лихорадочно [npc2.verb(try)], чтобы оттащить [npc2.her] [npc2.breasts]."));
 						break;
 					default:
 						break;

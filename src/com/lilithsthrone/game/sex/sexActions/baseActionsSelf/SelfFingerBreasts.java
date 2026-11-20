@@ -28,12 +28,12 @@ public class SelfFingerBreasts {
 		
 		@Override
 		public String getActionTitle() {
-			return "Grope breasts (self)";
+			return "Тискать грудь (самой себе)";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Squeeze and grope your own [npc.breasts+].";
+			return "Сжимать и тискать свою собственную [npc.breasts+].";
 		}
 
 		@Override
@@ -50,63 +50,51 @@ public class SelfFingerBreasts {
 				switch(Main.sex.getSexPace(Main.sex.getCharacterPerformingAction())) {
 					case DOM_GENTLE:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								"Reaching up to [npc.her] chest, [npc.name] [npc.verb(let)] out a soft [npc.moan] as [npc.she] [npc.verb(start)] fondling and groping [npc.her] [npc.breastRows] [npc.breasts+],"
-										+ " softly pressing [npc.her] [npc.lowClothing(NIPPLES)] down against [npc.her] [npc.nipples+] in the process.",
-								"Turned on and desperate to have [npc.her] [npc.breasts+] toyed with, [npc.name] [npc.verb(reach)] up to gently press [npc.her] [npc.hands+]"
-									+ " against [npc.her] [npc.topClothing(NIPPLES)], before starting to softly grope and squeeze [npc.her] chest.",
-								"Teasing [npc.her] [npc.fingers] over [npc.her] [npc.topClothing(NIPPLES)],"
-										+ " [npc.name] [npc.verb(start)] softly [npc.moaning] and sighing as [npc.she] gently [npc.verb(fondle)] and [npc.verb(grope)] [npc.her] own [npc.breastRows] [npc.breasts+]."));
+								"Протягивая руки к груди [npc.her], [npc.name] [npc.verb(let)] мягкую [npc.moan], пока [npc.she] [npc.verb(start)] ласкает и тискает [npc.her] [npc.breastRows] [npc.breasts+], мягко прижимая [npc.her] [npc.lowClothing(NIPPLES)] к [npc.her] [npc.nipples+] в процессе.",
+								"Возбужденная и жаждущая, чтобы [npc.her] [npc.breasts+] ласкали, [npc.name] [npc.verb(reach)] вверх, чтобы нежно прижать [npc.her] [npc.hands+] к [npc.her] [npc.topClothing(NIPPLES)], прежде чем начать мягко тискать и сжимать грудь [npc.her].",
+								"Дразня [npc.her] [npc.fingers] над [npc.her] [npc.topClothing(NIPPLES)], [npc.name] [npc.verb(start)] мягко [npc.moaning] и вздыхая, пока [npc.she] нежно [npc.verb(fondle)] и [npc.verb(grope)] [npc.her] собственные [npc.breastRows] [npc.breasts+]."));
 						break;
 					case DOM_ROUGH:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								"Reaching up to [npc.her] chest, [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(start)] roughly fondling and groping [npc.her] [npc.breastRows] [npc.breasts+],"
-										+ " forcefully grinding [npc.her] [npc.lowClothing(NIPPLES)] down against [npc.her] [npc.nipples+] in the process.",
-								"Turned on and desperate to have [npc.her] [npc.breasts+] toyed with, [npc.name] [npc.verb(reach)] up to forcefully grind [npc.her] [npc.hands+]"
-									+ " against [npc.her] [npc.topClothing(NIPPLES)], before starting to roughly grope and squeeze [npc.her] chest.",
-								"Running [npc.her] [npc.fingers] over [npc.her] [npc.topClothing(NIPPLES)],"
-										+ " [npc.name] [npc.verb(start)] loudly panting and [npc.moaning] as [npc.she] roughly [npc.verb(fondle)] and [npc.verb(grope)] [npc.her] own [npc.breastRows] [npc.breasts+]."));
+								"Протягивая руки к груди [npc.her], [npc.name] [npc.verb(let)] мягкую [npc.a_moan+], пока [npc.she] [npc.verb(start)] грубо ласкает и тискает [npc.her] [npc.breastRows] [npc.breasts+], с силой втирая [npc.her] [npc.lowClothing(NIPPLES)] в [npc.her] [npc.nipples+] в процессе.",
+								"Возбужденная и жаждущая, чтобы [npc.her] [npc.breasts+] ласкали, [npc.name] [npc.verb(reach)] вверх, чтобы с силой втереть [npc.her] [npc.hands+] в [npc.her] [npc.topClothing(NIPPLES)], прежде чем начать грубо тискать и сжимать грудь [npc.her].",
+								"Проводя [npc.her] [npc.fingers] по [npc.her] [npc.topClothing(NIPPLES)], [npc.name] [npc.verb(start)] громко тяжело дышит и [npc.moaning], пока [npc.she] грубо [npc.verb(fondle)] и [npc.verb(grope)] [npc.her] собственные [npc.breastRows] [npc.breasts+]."));
 						break;
 					case SUB_NORMAL:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								"Reaching up to [npc.her] chest, [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(start)] fondling and groping [npc.her] [npc.breastRows] [npc.breasts+],"
-										+ " pressing [npc.her] [npc.lowClothing(NIPPLES)] down against [npc.her] [npc.nipples+] in the process.",
-								"Turned on and desperate to have [npc.her] [npc.breasts+] toyed with, [npc.name] [npc.verb(reach)] up to press [npc.her] [npc.hands+]"
-									+ " against [npc.her] [npc.topClothing(NIPPLES)], before starting to grope and squeeze [npc.her] chest.",
-								"Running [npc.her] [npc.fingers] over [npc.her] [npc.topClothing(NIPPLES)],"
-										+ " [npc.name] [npc.verb(start)] panting and [npc.moaning] as [npc.she] [npc.verb(fondle)] and [npc.verb(grope)] [npc.her] own [npc.breastRows] [npc.breasts+]."));
+								"Протягивая руки к [npc.her] груди, [npc.name] [npc.verb(let)] [npc.a_moan+], пока [npc.she] жадно [npc.verb(start)] ласкает и ощупывает [npc.her] [npc.breastRows] [npc.breasts+], прижимая при этом [npc.her] [npc.lowClothing(NIPPLES)] к [npc.her] [npc.nipples+].",
+								"Возбужденная и отчаянно желающая, чтобы [npc.her] [npc.breasts+] поиграла с ней, [npc.name] [npc.verb(reach)] прижимает [npc.her] [npc.hands+] к [npc.her] [npc.topClothing(NIPPLES)], прежде чем начать ощупывать и сжимать [npc.her] грудь.",
+								"Проводя [npc.her] [npc.fingers] по [npc.her] [npc.topClothing(NIPPLES)], [npc.name] [npc.verb(start)] тяжело дышит и [npc.moaning], пока [npc.she] [npc.verb(fondle)] и [npc.verb(grope)] [npc.her] собственные [npc.breastRows] [npc.breasts+]."));
 						break;
 					default: // Dom normal and sub eager:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								"Reaching up to [npc.her] chest, [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(start)] eagerly fondling and groping [npc.her] [npc.breastRows] [npc.breasts+],"
-										+ " desperately pressing [npc.her] [npc.lowClothing(NIPPLES)] down against [npc.her] [npc.nipples+] in the process.",
-								"Turned on and desperate to have [npc.her] [npc.breasts+] toyed with, [npc.name] [npc.verb(reach)] up to eagerly press [npc.her] [npc.hands+]"
-									+ " against [npc.her] [npc.topClothing(NIPPLES)], before starting to frantically grope and squeeze [npc.her] chest.",
-								"Running [npc.her] [npc.fingers] over [npc.her] [npc.topClothing(NIPPLES)],"
-										+ " [npc.name] [npc.verb(start)] desperately panting and [npc.moaning] as [npc.she] eagerly [npc.verb(fondle)] and [npc.verb(grope)] [npc.her] own [npc.breastRows] [npc.breasts+]."));
+								"Протягивая руки к [npc.her] груди, [npc.name] [npc.verb(let)] [npc.a_moan+], пока [npc.she] жадно [npc.verb(start)] ласкает и ощупывает [npc.her] [npc.breastRows] [npc.breasts+], отчаянно прижимая при этом [npc.her] [npc.lowClothing(NIPPLES)] к [npc.her] [npc.nipples+].",
+								"Возбужденная и жаждущая, чтобы [npc.her] [npc.breasts+] ласкали, [npc.name] [npc.verb(reach)] до нетерпеливого прижимания [npc.her] [npc.hands+] к [npc.her] [npc.topClothing(NIPPLES)], прежде чем начать неистово ощупывать и сжимать [npc.her] грудь.",
+								"Водя [npc.her] [npc.fingers] по [npc.her] [npc.topClothing(NIPPLES)], [npc.name] [npc.verb(start)] отчаянно тяжело дыша и [npc.moaning], пока [npc.she] жадно [npc.verb(fondle)] и [npc.verb(grope)] [npc.her] собственные [npc.breastRows] [npc.breasts+]."));
 						break;
 				}
 				
 				switch (Main.sex.getCharacterPerformingAction().getBreastStoredMilk()) {
 					case ONE_TRICKLE:
-						UtilText.nodeContentSB.append(" A small trickle of [npc.milk] leaks out into [npc.her] [npc.lowClothing(NIPPLES)] as [npc.she] [npc.verb(squeeze)] down on [npc.her] [npc.nipples+].");
+						UtilText.nodeContentSB.append(" Тонкая струйка [npc.milk] вытекает в [npc.her] [npc.lowClothing(NIPPLES)], пока [npc.she] [npc.verb(squeeze)] на [npc.her] [npc.nipples+].");
 						break;
 					case TWO_SMALL_AMOUNT:
-						UtilText.nodeContentSB.append(" A small squirt of [npc.milk] leaks out into [npc.her] [npc.lowClothing(NIPPLES)] as [npc.she] [npc.verb(squeeze)] down on [npc.her] [npc.nipples+].");
+						UtilText.nodeContentSB.append(" Небольшая порция [npc.milk] выплескивается в [npc.her] [npc.lowClothing(NIPPLES)], пока [npc.she] [npc.verb(squeeze)] на [npc.her] [npc.nipples+].");
 						break;
 					case THREE_DECENT_AMOUNT:
-						UtilText.nodeContentSB.append(" A trickle of [npc.milk] runs out into [npc.her] [npc.lowClothing(NIPPLES)] as [npc.she] [npc.verb(squeeze)] down on [npc.her] [npc.nipples+].");
+						UtilText.nodeContentSB.append(" Струйка [npc.milk] стекает в [npc.her] [npc.lowClothing(NIPPLES)], пока [npc.she] [npc.verb(squeeze)] на [npc.her] [npc.nipples+].");
 						break;
 					case FOUR_LARGE_AMOUNT:
-						UtilText.nodeContentSB.append(" Almost immediately, [npc.her] [npc.milk] [npc.verb(start)] to flow out of [npc.her] [npc.nipples+] and into [npc.her] [npc.lowClothing(NIPPLES)].");
+						UtilText.nodeContentSB.append(" Почти мгновенно [npc.her] [npc.milk] [npc.verb(start)] наружу из [npc.her] [npc.nipples+] прямо в [npc.her] [npc.lowClothing(NIPPLES)].");
 						break;
 					case FIVE_VERY_LARGE_DROOLING:
-						UtilText.nodeContentSB.append(" [npc.Her] [npc.milk] quickly [npc.verb(start)] streaming out into [npc.her] [npc.lowClothing(NIPPLES)] as [npc.she] [npc.verb(squeeze)] down on [npc.her] [npc.nipples+].");
+						UtilText.nodeContentSB.append(" [npc.Her] [npc.milk] быстро [npc.verb(start)] струей в [npc.her] [npc.lowClothing(NIPPLES)], пока [npc.she] [npc.verb(squeeze)] на [npc.her] [npc.nipples+].");
 						break;
 					case SIX_EXTREME_AMOUNT_DRIPPING:
-						UtilText.nodeContentSB.append(" [npc.Her] [npc.milk] immediately [npc.verb(start)] pouring out in a constant stream, quickly soaking [npc.her] [npc.lowClothing(NIPPLES)].");
+						UtilText.nodeContentSB.append(" [npc.Her] [npc.milk] немедленно [npc.verb(start)] сплошным потоком, быстро пропитывая [npc.her] [npc.lowClothing(NIPPLES)].");
 						break;
 					case SEVEN_MONSTROUS_AMOUNT_POURING:
-						UtilText.nodeContentSB.append(" [npc.Her] [npc.milk] immediately [npc.verb(start)] pouring out in a heavy flow, quickly soaking [npc.her] [npc.lowClothing(NIPPLES)].");
+						UtilText.nodeContentSB.append(" [npc.Her] [npc.milk] тут же [npc.verb(start)], обильно выливаясь и быстро пропитывая [npc.her] [npc.lowClothing(NIPPLES)].");
 						break;
 					default:
 						break;
@@ -121,64 +109,51 @@ public class SelfFingerBreasts {
 				switch(Main.sex.getSexPace(Main.sex.getCharacterPerformingAction())) {
 					case DOM_GENTLE:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								"Reaching up to [npc.her] exposed chest, [npc.name] [npc.verb(let)] out a soft [npc.moan] as [npc.she] [npc.verb(start)] fondling and groping [npc.her] [npc.breastRows] [npc.breasts+],"
-										+ " softly pressing [npc.her] [npc.fingers+] down against [npc.her] [npc.nipples+] in the process.",
-								"Turned on and desperate to have [npc.her] [npc.breasts+] toyed with, [npc.name] [npc.verb(reach)] up to gently press [npc.her] [npc.hands+]"
-									+ " against [npc.her] exposed chest, before starting to softly grope and squeeze [npc.her] [npc.breastRows] [npc.breasts].",
-								"Teasing [npc.her] [npc.fingers] over [npc.her] exposed [npc.breastRows] [npc.breasts+],"
-										+ " [npc.name] [npc.verb(start)] gently [npc.moaning] and sighing as [npc.she] [npc.verb(begin)] to gently fondle and grope them."));
+								"Протягивая руки к обнаженной груди [npc.her], [npc.name] [npc.verb(let)] с мягким [npc.moan], пока [npc.she] [npc.verb(start)] ласкает и тискает [npc.her] [npc.breastRows] [npc.breasts+], мягко прижимая [npc.her] [npc.fingers+] к [npc.her] [npc.nipples+] в процессе.",
+								"Возбужденная и жаждущая, чтобы [npc.her] [npc.breasts+] поиграла с ней, [npc.name] [npc.verb(reach)] вверх, чтобы нежно прижать [npc.her] [npc.hands+] к обнаженной груди [npc.her], прежде чем начать мягко ощупывать и сжимать [npc.her] [npc.breastRows] [npc.breasts].",
+								"Дразня [npc.her] [npc.fingers] над обнаженной [npc.her] [npc.breastRows] [npc.breasts+], [npc.name] [npc.verb(start)] нежно [npc.moaning] и вздыхая, пока [npc.she] [npc.verb(begin)] мягко ласкает и тискает их."));
 						break;
 					case DOM_ROUGH:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								"Reaching up to [npc.her] exposed chest, [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(start)] roughly fondling and groping [npc.her] [npc.breastRows] [npc.breasts+],"
-										+ " forcefully grinding [npc.her] [npc.fingers+] down against [npc.her] [npc.nipples+] in the process.",
-								"Turned on and desperate to have [npc.her] [npc.breasts+] toyed with, [npc.name] [npc.verb(reach)] up to forcefully grind [npc.her] [npc.hands+]"
-									+ " against [npc.her] exposed chest, before starting to roughly grope and squeeze [npc.her] [npc.breastRows] [npc.breasts].",
-								"Running [npc.her] [npc.fingers] over [npc.her] exposed [npc.breastRows] [npc.breasts+],"
-										+ " [npc.name] [npc.verb(start)] loudly panting and [npc.moaning] as [npc.she] [npc.verb(begin)] to roughly fondle and grope them."));
+								"Протягивая руки к обнаженной груди [npc.her], [npc.name] [npc.verb(let)] с [npc.a_moan+], пока [npc.she] [npc.verb(start)] грубо ласкает и тискает [npc.her] [npc.breastRows] [npc.breasts+], с силой втирая [npc.her] [npc.fingers+] в [npc.her] [npc.nipples+] в процессе.",
+								"Возбужденная и жаждущая, чтобы [npc.her] [npc.breasts+] поиграли с ней, [npc.name] [npc.verb(reach)], чтобы с силой прижать [npc.her] [npc.hands+] к [npc.her] обнаженной груди, после чего она начинает грубо ощупывать и сжимать [npc.her] [npc.breastRows] [npc.breasts].",
+								"Проводя [npc.her] [npc.fingers] по [npc.her] обнаженной [npc.breastRows] [npc.breasts+], [npc.name] [npc.verb(start)], громко тяжело дыша и [npc.moaning], пока [npc.she] [npc.verb(begin)], чтобы грубо ласкать и тискать их."));
 						break;
 					case SUB_NORMAL:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								"Reaching up to [npc.her] exposed chest, [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(start)] fondling and groping [npc.her] [npc.breastRows] [npc.breasts+],"
-										+ " pressing [npc.her] [npc.fingers+] down against [npc.her] [npc.nipples+] in the process.",
-								"Turned on and desperate to have [npc.her] [npc.breasts+] toyed with, [npc.name] [npc.verb(reach)] up to press [npc.her] [npc.hands+]"
-									+ " against [npc.her] exposed chest, before starting to grope and squeeze [npc.her] [npc.breastRows] [npc.breasts].",
-								"Running [npc.her] [npc.fingers] over [npc.her] exposed [npc.breastRows] [npc.breasts+],"
-										+ " [npc.name] [npc.verb(start)] panting and [npc.moaning] as [npc.she] [npc.verb(begin)] to fondle and grope them."));
+								"Протягивая руки к [npc.her] обнаженной груди, [npc.name] [npc.verb(let)], выставляя [npc.a_moan+] напоказ, пока [npc.she] [npc.verb(start)] ласкает и ощупывает [npc.her] [npc.breastRows] [npc.breasts+], прижимая при этом [npc.her] [npc.fingers+] к [npc.her] [npc.nipples+].",
+								"Возбужденная и жаждущая, чтобы [npc.her] [npc.breasts+] поиграли с ней, [npc.name] [npc.verb(reach)], чтобы прижать [npc.her] [npc.hands+] к [npc.her] обнаженной груди, после чего она начинает ощупывать и сжимать [npc.her] [npc.breastRows] [npc.breasts].",
+								"Проводя [npc.her] [npc.fingers] по [npc.her] обнаженной [npc.breastRows] [npc.breasts+], [npc.name] [npc.verb(start)], тяжело дыша и [npc.moaning], пока [npc.she] [npc.verb(begin)], чтобы ласкать и ощупывать их."));
 						break;
 					default: // Dom normal and sub eager:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								"Reaching up to [npc.her] exposed chest, [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(start)] eagerly fondling and groping [npc.her] [npc.breastRows] [npc.breasts+],"
-										+ " desperately pressing [npc.her] [npc.fingers+] down against [npc.her] [npc.nipples+] in the process.",
-								"Turned on and desperate to have [npc.her] [npc.breasts+] toyed with, [npc.name] [npc.verb(reach)] up to eagerly press [npc.her] [npc.hands+]"
-									+ " against [npc.her] exposed chest, before starting to frantically grope and squeeze [npc.her] [npc.breastRows] [npc.breasts].",
-								"Running [npc.her] [npc.fingers] over [npc.her] exposed [npc.breastRows] [npc.breasts+],"
-										+ " [npc.name] [npc.verb(start)] desperately panting and [npc.moaning] as [npc.she] [npc.verb(begin)] to eagerly fondle and grope them."));
+								"Протягивая руки к обнаженной груди [npc.her], [npc.name] [npc.verb(let)] [npc.a_moan+], пока [npc.she] с жадностью [npc.verb(start)] и ощупывает [npc.her] [npc.breastRows] [npc.breasts+], отчаянно прижимая [npc.her] [npc.fingers+] к [npc.her] [npc.nipples+] в процессе.",
+								"Возбужденная и жаждущая, чтобы ее [npc.her] [npc.breasts+] ласкали, [npc.name] [npc.verb(reach)] вверх, чтобы с жадностью прижать [npc.her] [npc.hands+] к обнаженной груди [npc.her], прежде чем начать неистово ощупывать и сжимать [npc.her] [npc.breastRows] [npc.breasts].",
+								"[npc.her] [npc.fingers] скользят по [npc.her] обнаженным [npc.breastRows] [npc.breasts+], [npc.name] [npc.verb(start)] отчаянно тяжело дыша и [npc.moaning], пока [npc.she] [npc.verb(begin)] с нетерпением ласкать и тискать их."));
 						break;
 				}
 				
 				switch (Main.sex.getCharacterPerformingAction().getBreastStoredMilk()) {
 					case ONE_TRICKLE:
-						UtilText.nodeContentSB.append(" A small trickle of [npc.milk] leaks out onto [npc.her] [npc.fingers] as [npc.she] [npc.verb(squeeze)] down on [npc.namePos] [npc.nipples+].");
+						UtilText.nodeContentSB.append(" Тонкая струйка [npc.milk] вытекает на [npc.her] [npc.fingers], пока [npc.she] [npc.verb(squeeze)] на [npc.namePos] [npc.nipples+].");
 						break;
 					case TWO_SMALL_AMOUNT:
-						UtilText.nodeContentSB.append(" A small squirt of [npc.milk] leaks out onto [npc.her] [npc.fingers] as [npc.she] [npc.verb(squeeze)] down on [npc.namePos] [npc.nipples+].");
+						UtilText.nodeContentSB.append(" Маленькая струйка [npc.milk] вырывается на [npc.her] [npc.fingers], пока [npc.she] [npc.verb(squeeze)] на [npc.namePos] [npc.nipples+].");
 						break;
 					case THREE_DECENT_AMOUNT:
-						UtilText.nodeContentSB.append(" A trickle of [npc.milk] runs out over [npc.her] [npc.fingers] as [npc.she] [npc.verb(squeeze)] down on [npc.namePos] [npc.nipples+].");
+						UtilText.nodeContentSB.append(" Струйка [npc.milk] стекает по [npc.her] [npc.fingers], пока [npc.she] [npc.verb(squeeze)] на [npc.namePos] [npc.nipples+].");
 						break;
 					case FOUR_LARGE_AMOUNT:
-						UtilText.nodeContentSB.append(" Almost immediately, [npc.her] [npc.milk] starts to flow out over [npc.her] [npc.fingers],"
-								+ " and [npc.she] [npc.moansVerb] as [npc.she] [npc.verb(feel)] it running down over [npc.her] [npc.breasts+].");
+						UtilText.nodeContentSB.append(" Почти мгновенно [npc.her] [npc.milk] начинает вытекать по [npc.her] [npc.fingers], и [npc.she] [npc.moansVerb], пока [npc.she] [npc.verb(feel)] ее, стекающую по [npc.her] [npc.breasts+].");
 						break;
 					case FIVE_VERY_LARGE_DROOLING:
-						UtilText.nodeContentSB.append(" [npc.Her] [npc.milk] quickly [npc.verb(start)] drooling out in a little stream over [npc.her] [npc.fingers] as [npc.she] [npc.verb(squeeze)] down on [npc.her] [npc.nipples+].");
+						UtilText.nodeContentSB.append(" [npc.Her] [npc.milk] быстро [npc.verb(start)] стекает тонкой струйкой по [npc.her] [npc.fingers], пока [npc.she] [npc.verb(squeeze)] на [npc.her] [npc.nipples+].");
 						break;
 					case SIX_EXTREME_AMOUNT_DRIPPING:
-						UtilText.nodeContentSB.append(" [npc.Her] [npc.milk] immediately [npc.verb(start)] pouring out in a constant stream, quickly soaking [npc.her] [npc.breasts+] and dripping down onto the floor beneath [npc.herHim].");
+						UtilText.nodeContentSB.append(" [npc.Her] [npc.milk] мгновенно [npc.verb(start)] льется непрерывным потоком, быстро пропитывая [npc.her] [npc.breasts+] и капая на пол под [npc.herHim].");
 						break;
 					case SEVEN_MONSTROUS_AMOUNT_POURING:
-						UtilText.nodeContentSB.append(" [npc.Her] [npc.milk] [npc.verb(start)] pouring out in a heavy flow, quickly soaking [npc.her] [npc.breasts+] and dripping down to form a large pool on the floor beneath [npc.herHim].");
+						UtilText.nodeContentSB.append(" [npc.Her] [npc.milk] [npc.verb(start)] хлещет мощным потоком, быстро пропитывая [npc.her] [npc.breasts+] и стекая на пол под [npc.herHim], образуя там огромную лужу.");
 						break;
 					default:
 						break;

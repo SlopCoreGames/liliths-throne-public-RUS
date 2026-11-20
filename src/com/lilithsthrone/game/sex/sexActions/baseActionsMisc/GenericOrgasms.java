@@ -159,16 +159,10 @@ public class GenericOrgasms {
 		
 		sb.append("<p>");
 		if(characterOrgasming.isPlayer()) {
-			sb.append("As [npc.name] [npc.verb(reach)] [npc.her] climax, [npc.she] can't help but [npc.verb(let)] out an extremely loud, shuddering [npc.moan]."
-					+ " Within moments, your mind has gone blank, and as you lose [npc.herself] to the overwhelming strength of [npc.her] orgasm, you unwittingly [npc.verb(find)] [npc.herself] making an extremely lewd facial expression."
-					+ " As [npc.her] [npc.tongue+] lolls out of [npc.her] mouth, [npc.she] [npc.verb(feel)] [npc.her] cheeks flushing, and can't stop [npc.herself] from rolling [npc.her] [npc.eyes] upwards."
-					+ " With this expression of exaggerated ecstasy temporarily stuck on [npc.her] face, [npc.name] [npc.verb(let)] out yet another desperate [npc.moan] and [npc.verb(prepare)] to experience the full force of [npc.her] incoming orgasm.");
+			sb.append("As [npc.name] [npc.verb(reach)] [npc.her] climax, [npc.she] can't help but [npc.verb(let)] out an extremely loud, shuddering [npc.moan]. Within moments, your mind has gone blank, and as you lose [npc.herself] to the overwhelming strength of [npc.her] orgasm, you unwittingly [npc.verb(find)] [npc.herself] making an extremely lewd facial expression. As [npc.her] [npc.tongue+] lolls out of [npc.her] mouth, [npc.she] [npc.verb(feel)] [npc.her] cheeks flushing, and can't stop [npc.herself] from rolling [npc.her] [npc.eyes] upwards. With this expression of exaggerated ecstasy temporarily stuck on [npc.her] face, [npc.name] [npc.verb(let)] out yet another desperate [npc.moan] and [npc.verb(prepare)] to experience the full force of [npc.her] incoming orgasm.");
 			
 		} else {
-			sb.append("As [npc.name] [npc.verb(reach)] [npc.her] climax, [npc.she] [npc.verb(let)] out an extremely loud, shuddering [npc.moan]."
-					+ " Within moments, [npc.sheHas] lost [npc.herself] to the overwhelming strength of [npc.her] orgasm, and [npc.she] unwittingly [npc.verb(find)] [npc.herself] making an extremely lewd facial expression."
-					+ " As [npc.her] [npc.tongue+] lolls out of [npc.her] mouth, [npc.she] [npc.verb(feel)] [npc.her] cheeks flushing, and can't stop [npc.herself] from rolling [npc.her] [npc.eyes] upwards."
-					+ " With this expression of exaggerated ecstasy temporarily stuck on [npc.her] face, [npc.name] [npc.verb(let)] out yet another desperate [npc.moan] and [npc.verb(prepare)] to experience the full force of [npc.her] incoming orgasm.");
+			sb.append("Когда [npc.name] [npc.verb(reach)] [npc.her] достигает пика, [npc.she] [npc.verb(let)] издает чрезвычайно громкий, дрожащий [npc.moan]. Мгновение спустя [npc.sheHas] теряет [npc.herself] перед сокрушительной силой [npc.her] оргазма, и [npc.she] невольно [npc.verb(find)] [npc.herself], застыв с крайне похотливым выражением лица. Пока [npc.her] [npc.tongue+] свисает из [npc.her] рта, [npc.she] [npc.verb(feel)], а [npc.her] щеки пылают, и не может остановить [npc.herself] от закатывания [npc.her] [npc.eyes] вверх. С этим выражением преувеличенного экстаза, временно застывшим на [npc.her] лице, [npc.name] [npc.verb(let)] еще один отчаянный [npc.moan] и [npc.verb(prepare)], чтобы ощутить всю мощь приближающегося [npc.her] оргазма.");
 		}
 		sb.append("</p>");
 		
@@ -178,16 +172,16 @@ public class GenericOrgasms {
 	private static String getPenisOrgasmModifierDescriptionPostfix(GameCharacter targetedCharacter) {
 		if(targetedCharacter.isAsleep()) {
 			return UtilText.returnStringAtRandom(
-					", but despite this extra stimulation, [npc2.she] doesn't wake up.",
-					", but [npc2.she] still [npc.verb(remain)] totally asleep.");
+					", но, несмотря на эту дополнительную стимуляцию, [npc2.she] не просыпается.",
+					", но [npc2.she] все еще [npc.verb(remain)] совершенно крепко спит.");
 			
 		} else if(isCharacterTotallyImmobilised(targetedCharacter)) {
 			return UtilText.returnStringAtRandom(
-					", but despite this extra stimulation, [npc2.she] doesn't react in any way whatsoever.",
-					", but [npc2.she] [npc.verb(remain)] totally silent and immobile.");
+					", но, несмотря на эту дополнительную стимуляцию, [npc2.she] никак не реагирует.",
+					", но [npc2.she] [npc.verb(remain)] совершенно безмолвен и неподвижен.");
 			
 		} else {
-			return ", which causes [npc2.herHim] to let out [npc2.a_moan+].";
+			return ", что заставляет [npc2.herHim] издать [npc2.a_moan+].";
 		}
 	}
 	
@@ -206,34 +200,34 @@ public class GenericOrgasms {
 				if(Main.sex.getCreampieLockedBy().containsKey(characterOrgasming)) {
 					GameCharacter lockingCharacter = Main.sex.getCreampieLockedBy().get(characterOrgasming).getKey();
 					Class<? extends BodyPartInterface> bodypart = Main.sex.getCreampieLockedBy().get(characterOrgasming).getValue();
-					String orgasmPreventionDesc = "pull out";
+					String orgasmPreventionDesc = "вытянуть";
 					if(Main.sex.getOngoingSexAreas(characterOrgasming, SexAreaPenetration.PENIS, lockingCharacter).contains(SexAreaPenetration.PENIS)) {
-						orgasmPreventionDesc = "pull [npc.her] [npc.cock+] away from [npc2.namePos]"; // frotting variation
+						orgasmPreventionDesc = "оттянуть [npc.her] [npc.cock+] от [npc2.namePos]"; // frotting variation
 					}
 					
 					if(bodypart == Torso.class) {
 						genericOrgasmSB.append(UtilText.parse(characterOrgasming, lockingCharacter,
-								"With [npc2.name] pressing [npc2.herself] tightly against [npc.herHim], [npc.nameIsFull] unable to "+orgasmPreventionDesc+", and [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(start)] to orgasm."));
+								"Когда [npc2.name] плотно прижимает [npc2.herself] к [npc.herHim], [npc.nameIsFull] не может "+orgasmPreventionDesc+", и [npc.verb(let)] [npc.a_moan+], пока [npc.she] [npc.verb(start)] к оргазму."));
 						
 					} else if(bodypart == Arm.class) {
 						genericOrgasmSB.append(UtilText.parse(characterOrgasming, lockingCharacter,
-								"With [npc2.namePos] [npc2.arms] wrapped tightly around [npc.her] lower back, [npc.nameIsFull] unable to "+orgasmPreventionDesc+", and [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(start)] to orgasm."));
+								"Когда [npc2.namePos] [npc2.arms] плотно обхватывает низкую часть спины [npc.her], [npc.nameIsFull] не может "+orgasmPreventionDesc+", и [npc.verb(let)] [npc.a_moan+], пока [npc.she] [npc.verb(start)] к оргазму."));
 						
 					} else if(bodypart == Leg.class) {
 						genericOrgasmSB.append(UtilText.parse(characterOrgasming, lockingCharacter,
-								"With [npc2.namePos] [npc2.legs] locked tightly around [npc.her] lower back, [npc.nameIsFull] unable to "+orgasmPreventionDesc+", and [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(start)] to orgasm."));
+								"Когда [npc2.namePos] [npc2.legs] плотно обхватывают нижнюю часть спины [npc.her], [npc.nameIsFull] не в силах "+orgasmPreventionDesc+", и [npc.verb(let)] [npc.a_moan+], пока [npc.she] [npc.verb(start)] к оргазму."));
 						
 					} else if(bodypart == Tail.class) {
 						genericOrgasmSB.append(UtilText.parse(characterOrgasming, lockingCharacter,
-								"With [npc2.namePos] [npc2.tail] wrapped tightly around [npc.her] lower back, [npc.nameIsFull] unable to "+orgasmPreventionDesc+", and [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(start)] to orgasm."));
+								"Когда [npc2.namePos] [npc2.tail] плотно обвивают нижнюю часть спины [npc.her], [npc.nameIsFull] не в силах "+orgasmPreventionDesc+", и [npc.verb(let)] [npc.a_moan+], пока [npc.she] [npc.verb(start)] к оргазму."));
 						
 					} else if(bodypart == Tail.class) {
 						genericOrgasmSB.append(UtilText.parse(characterOrgasming, lockingCharacter,
-								"With [npc2.namePos] [npc2.wingSize] [npc2.wings] wrapped tightly around [npc.her] body, [npc.nameIsFull] unable to "+orgasmPreventionDesc+", and [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(start)] to orgasm."));
+								"Когда [npc2.namePos] [npc2.wingSize] [npc2.wings] плотно обхватили тело [npc.her], [npc.nameIsFull] было не в силах "+orgasmPreventionDesc+", и [npc.verb(let)] [npc.a_moan+], пока [npc.she] [npc.verb(start)] к оргазму."));
 						
 					} else if(bodypart == Tentacle.class) {
 						genericOrgasmSB.append(UtilText.parse(characterOrgasming, lockingCharacter,
-								"With [npc2.namePos] [npc2.tentacles] wrapped tightly around [npc.her] lower back, [npc.nameIsFull] unable to "+orgasmPreventionDesc+", and [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(start)] to orgasm."));
+								"Когда [npc2.namePos] [npc2.tentacles] плотно обвивают нижнюю часть спины [npc.her], [npc.nameIsFull] не в силах "+orgasmPreventionDesc+", и [npc.verb(let)] [npc.a_moan+], пока [npc.she] [npc.verb(start)] к оргазму."));
 					}
 				}
 			}
@@ -257,13 +251,11 @@ public class GenericOrgasms {
 						break;
 					case ANUS:
 						genericOrgasmSB.append(UtilText.parse(Util.newArrayListOfValues(characterOrgasming, characterPenetrated, characterTargeted),
-								"With half of [npc.her] load being pumped into [npc2.namePos] [npc2.asshole+], and still in the middle of [npc.her] orgasm, [npc.name] suddenly [npc.verb(pull)] out,"
-										+ " before quickly moving over to [npc3.name] and lining the [npc.cockHead+] of [npc.her] [npc.cock+] up to [npc3.her] [npc3.asshole+]."));
+								"Пока половина порции [npc.her] вкачивается в [npc2.namePos] [npc2.asshole+], и [npc.her] всё еще находится в разгаре оргазма, [npc.name] внезапно [npc.verb(pull)], прежде чем быстро переместиться к [npc3.name] и приставить [npc.cockHead+] [npc.her] [npc.cock+] к [npc3.her] [npc3.asshole+]."));
 						break;
 					case VAGINA:
 						genericOrgasmSB.append(UtilText.parse(Util.newArrayListOfValues(characterOrgasming, characterPenetrated, characterTargeted),
-								"With half of [npc.her] load being pumped into [npc2.namePos] [npc2.pussy+], and still in the middle of [npc.her] orgasm, [npc.name] suddenly [npc.verb(pull)] out,"
-										+ " before quickly moving over to [npc3.name] and lining the [npc.cockHead+] of [npc.her] [npc.cock+] up to [npc3.her] [npc3.pussy+]."));
+								"Пока половина порции [npc.her] вкачивается в [npc2.namePos] [npc2.pussy+], и [npc.her] всё еще находится в разгаре оргазма, [npc.name] внезапно [npc.verb(pull)], прежде чем быстро переместиться к [npc3.name] и приставить [npc.cockHead+] [npc.her] [npc.cock+] к [npc3.her] [npc3.pussy+]."));
 						break;
 				}
 			}
@@ -275,17 +267,17 @@ public class GenericOrgasms {
 				switch(mod) {
 					case FLARED:
 						if(characterOrgasming.hasPenisModifier(mod)) {
-							modifiers.add(" wide, flared head of [npc.namePos] [npc.cock] swells up, and [npc.she] [npc.verb(feel)] [npc.her] [npc.balls+] tightening as [npc.she] [npc.verb(start)] to cum.");
+							modifiers.add(" широкая, раздутая головка [npc.namePos] [npc.cock] набухает, и [npc.she] [npc.verb(feel)] [npc.her] [npc.balls+] сжимаются, когда [npc.she] [npc.verb(start)] к кончил.");
 						}
 						break;
 					case KNOTTED:
 						if(characterOrgasming.hasPenisModifier(mod)) {
-							modifiers.add(" thick knot at the base of [npc.namePos] [npc.cock] swells up, and [npc.she] [npc.verb(feel)] [npc.her] [npc.balls+] tightening as [npc.she] [npc.verb(start)] to cum.");
+							modifiers.add(" толстое уплотнение у основания [npc.namePos] [npc.cock] набухает, и [npc.she] [npc.verb(feel)] [npc.her] [npc.balls+] сжимаются, когда [npc.she] [npc.verb(start)] к кончил.");
 						}
 						break;
 					case TENTACLED:
 						if(characterOrgasming.hasPenisModifier(mod)) {
-							modifiers.add(" little tentacles lining [npc.namePos] [npc.cock] start frantically wriggling, and [npc.she] [npc.verb(feel)] [npc.her] [npc.balls+] tightening as [npc.she] [npc.verb(start)] to cum.");
+							modifiers.add(" маленькие щупальца, выстилающие [npc.namePos] [npc.cock], начинают неистово извиваться, а [npc.she] [npc.verb(feel)] [npc.her] [npc.balls+] сжимаются, когда [npc.she] [npc.verb(start)] кончить.");
 						}
 						break;
 					case BARBED:
@@ -308,17 +300,13 @@ public class GenericOrgasms {
 				if(!ongoingProstateStimulators.isEmpty() && !isCharacterTotallyImmobilised(ongoingProstateStimulators.get(0))) {
 					if(ongoingProstateStimulators.get(0).equals(characterOrgasming)) {
 						genericOrgasmSB.append(UtilText.parse(ongoingProstateStimulators.get(0),
-								" At this moment, [npc.name] [npc.verb(curl)] [npc.her] [npc.fingers+] up inside [npc.her] "+(characterOrgasming.hasVagina()?"[npc.pussy+]":"[npc.asshole+]")+","
-									+ " before rapidly stroking and massaging [npc.her] prostate in an attempt to milk as much [npc.cum] out of [npc.herself] as possible."
-									+ " Immediately, [npc.her] body reacts to this added stimulation, and the "));
+								" В этот момент [npc.name] [npc.verb(curl)] [npc.her] [npc.fingers+] внутри [npc.her] "+(characterOrgasming.hasVagina()?"[npc.pussy+]":"[npc.asshole+]")+", прежде чем начать быстро ласкать и массировать [npc.her] простату, пытаясь выжать из [npc.herself] как можно больше [npc.cum]. Тело [npc.her] мгновенно реагирует на эту дополнительную стимуляцию, и "));
 					} else {
 						genericOrgasmSB.append(UtilText.parse(ongoingProstateStimulators.get(0), characterOrgasming,
-								" At this moment, [npc.name] [npc.verb(curl)] [npc.her] [npc.fingers+] up inside [npc2.namePos] "+(characterOrgasming.hasVagina()?"[npc2.pussy+]":"[npc2.asshole+]")+","
-									+ " before rapidly stroking and massaging [npc2.her] prostate in an attempt to milk as much [npc2.cum] out of [npc2.herHim] as possible."
-									+ " Immediately, [npc2.her] body reacts to this added stimulation, and the "));
+								" В этот момент [npc.name] [npc.verb(curl)] [npc.her] [npc.fingers+] внутри [npc2.namePos] "+(characterOrgasming.hasVagina()?"[npc2.pussy+]":"[npc2.asshole+]")+", прежде чем начать быстро ласкать и массировать [npc2.her] простату, пытаясь выжать из [npc2.herHim] как можно больше [npc2.cum]. Тело [npc2.her] мгновенно реагирует на эту дополнительную стимуляцию, и "));
 					}
 				} else {
-					genericOrgasmSB.append(" The");
+					genericOrgasmSB.append("");
 				}
 				genericOrgasmSB.append(modifiers.get(Util.random.nextInt(modifiers.size())));
 				
@@ -326,19 +314,13 @@ public class GenericOrgasms {
 				if(!ongoingProstateStimulators.isEmpty() && !isCharacterTotallyImmobilised(ongoingProstateStimulators.get(0))) {
 					if(ongoingProstateStimulators.get(0).equals(characterOrgasming)) {
 						genericOrgasmSB.append(UtilText.parse(ongoingProstateStimulators.get(0),
-								" At this moment, [npc.name] [npc.verb(curl)] [npc.her] [npc.fingers+] up inside [npc.her] "+(characterOrgasming.hasVagina()?"[npc.pussy+]":"[npc.asshole+]")+","
-										+ " before rapidly stroking and massaging [npc.her] prostate in an attempt to milk as much [npc.cum] out of [npc.herself] as possible."
-										+ " Immediately, [npc.her] body reacts to this added stimulation, and with a twitch of [npc.her] [npc.cock+],"
-											+ " [npc.she] [npc.verb(feel)] [npc.her] [npc.balls+] tightening as [npc.she] [npc.verb(start)] to cum."));
+								" В этот момент [npc.name] [npc.verb(curl)] [npc.her] [npc.fingers+] внутри [npc.her] "+(characterOrgasming.hasVagina()?"[npc.pussy+]":"[npc.asshole+]")+", прежде чем начать быстро ласкать и массировать [npc.her] простату, пытаясь выжать из [npc.herself] как можно больше [npc.cum]. Тело [npc.her] мгновенно реагирует на эту дополнительную стимуляцию, и от вздрагивания [npc.her] [npc.cock+], [npc.she] [npc.verb(feel)] [npc.her] [npc.balls+] сжимаются, когда [npc.she] [npc.verb(start)] кончить."));
 					} else {
 						genericOrgasmSB.append(UtilText.parse(ongoingProstateStimulators.get(0), characterOrgasming,
-								" At this moment, [npc.name] [npc.verb(curl)] [npc.her] [npc.fingers+] up inside [npc2.namePos] "+(characterOrgasming.hasVagina()?"[npc2.pussy+]":"[npc2.asshole+]")+","
-									+ " before rapidly stroking and massaging [npc2.her] prostate in an attempt to milk as much [npc2.cum] out of [npc2.herHim] as possible."
-									+ " Immediately, [npc2.her] body reacts to this added stimulation, and with a twitch of [npc2.her] [npc2.cock+],"
-										+ " [npc2.she] [npc2.verb(feel)] [npc2.her] [npc2.balls+] tightening as [npc2.she] [npc2.verb(start)] to cum."));
+								" В этот момент [npc.name] [npc.verb(curl)] [npc.her] [npc.fingers+] внутри [npc2.namePos] "+(characterOrgasming.hasVagina()?"[npc2.pussy+]":"[npc2.asshole+]")+", прежде интенсивно поглаживая и массируя простату [npc2.her] в попытке выжать из [npc2.herHim] как можно больше [npc2.cum]. Тело [npc2.her] мгновенно реагирует на эту дополнительную стимуляцию, и при вздрагивании [npc2.her] [npc2.cock+], [npc2.she] [npc2.verb(feel)] [npc2.her] [npc2.balls+] сжимается, пока [npc2.she] [npc2.verb(start)] к оргазму."));
 					}
 				} else {
-					genericOrgasmSB.append(" [npc.NamePos] [npc.cock+] twitches, and [npc.she] [npc.verb(feel)] [npc.her] [npc.balls+] tightening as [npc.she] [npc.verb(start)] to cum.");
+					genericOrgasmSB.append(" [npc.NamePos] [npc.cock+] дергается, и [npc.she] [npc.verb(feel)] [npc.her] [npc.balls+] сжимается, пока [npc.she] [npc.verb(start)] к оргазму.");
 				}
 			}
 			
@@ -354,56 +336,56 @@ public class GenericOrgasms {
 				if(contactingArea.isOrifice()) {
 					if(immobile) {
 						if(sleeping) {
-							genericOrgasmSB.append("[npc.Name] [npc.verb(remain)] asleep as [npc.her] [npc.cock+] rubs against [npc2.namePos] "+((SexAreaOrifice) contactingArea).getName(characterTargeted));
+							genericOrgasmSB.append("[npc.Name] [npc.verb(remain)] спит, пока [npc.her] [npc.cock+] трется о [npc2.namePos] "+((SexAreaOrifice) contactingArea).getName(characterTargeted));
 						} else {
-							genericOrgasmSB.append("[npc.Name] [npc.verb(remain)] completely motionless as [npc.her] [npc.cock+] rubs against [npc2.namePos] "+((SexAreaOrifice) contactingArea).getName(characterTargeted));
+							genericOrgasmSB.append("[npc.Name] [npc.verb(remain)] совершенно неподвижен, пока [npc.her] [npc.cock+] трется о [npc2.namePos] "+((SexAreaOrifice) contactingArea).getName(characterTargeted));
 						}
 						
 					} else {
 						switch((SexAreaOrifice) contactingArea) {
 							case ARMPITS:
-								genericOrgasmSB.append("[npc.Name] [npc.verb(pull)] [npc.her] [npc.cock+] away from [npc2.namePos] [npc2.armpit+]");
+								genericOrgasmSB.append("[npc.Name] [npc.verb(pull)] [npc.her] [npc.cock+] прочь от [npc2.namePos] [npc2.armpit+]");
 								break;
 							case ANUS:
-								genericOrgasmSB.append("[npc.Name] [npc.verb(slide)] [npc.her] [npc.cock+] out of [npc2.namePos] [npc2.asshole+]");
+								genericOrgasmSB.append("[npc.Name] [npc.verb(slide)] [npc.her] [npc.cock+] из [npc2.namePos] [npc2.asshole+]");
 								break;
 							case ASS:
-								genericOrgasmSB.append("[npc.Name] [npc.verb(slide)] [npc.her] [npc.cock+] out from between [npc2.namePos] ass cheeks");
+								genericOrgasmSB.append("[npc.Name] [npc.verb(slide)] [npc.her] [npc.cock+] из-под ягодиц [npc2.namePos]");
 								break;
 							case BREAST:
-								genericOrgasmSB.append("[npc.Name] [npc.verb(slide)] [npc.her] [npc.cock+] out from between [npc2.namePos] [npc2.breasts+]");
+								genericOrgasmSB.append("[npc.Name] [npc.verb(slide)] [npc.her] [npc.cock+] из между [npc2.namePos] [npc2.breasts+]");
 								break;
 							case BREAST_CROTCH:
-								genericOrgasmSB.append("[npc.Name] [npc.verb(slide)] [npc.her] [npc.cock+] out from between [npc2.namePos] [npc2.crotchBoobs+]");
+								genericOrgasmSB.append("[npc.Name] [npc.verb(slide)] [npc.her] [npc.cock+] из между [npc2.namePos] [npc2.crotchBoobs+]");
 								break;
 							case MOUTH:
 								if(!Main.sex.getCreampieLockedBy().containsKey(characterOrgasming)) {
 									GameCharacter primary = PenisMouth.getPrimaryBlowjobPerformer(characterOrgasming);
-									genericOrgasmSB.append(UtilText.parse(characterOrgasming, primary, "[npc.Name] [npc.verb(slide)] [npc.her] [npc.cock+] out of [npc2.namePos] mouth"));
+									genericOrgasmSB.append(UtilText.parse(characterOrgasming, primary, "[npc.Name] [npc.verb(slide)] [npc.her] [npc.cock+] изо рта [npc2.namePos]"));
 								} else {
-									genericOrgasmSB.append("[npc.Name] [npc.verb(slide)] [npc.her] [npc.cock+] out of [npc2.namePos] mouth");
+									genericOrgasmSB.append("[npc.Name] [npc.verb(slide)] [npc.her] [npc.cock+] изо рта [npc2.namePos]");
 								}
 								break;
 							case NIPPLE:
-								genericOrgasmSB.append("[npc.Name] [npc.verb(slide)] [npc.her] [npc.cock+] out of [npc2.namePos] [npc2.nipple+]");
+								genericOrgasmSB.append("[npc.Name] [npc.verb(slide)] [npc.her] [npc.cock+] из [npc2.namePos] [npc2.nipple+]");
 								break;
 							case NIPPLE_CROTCH:
-								genericOrgasmSB.append("[npc.Name] [npc.verb(slide)] [npc.her] [npc.cock+] out of [npc2.namePos] [npc2.crotchNipple+]");
+								genericOrgasmSB.append("[npc.Name] [npc.verb(slide)] [npc.her] [npc.cock+] из [npc2.namePos] [npc2.crotchNipple+]");
 								break;
 							case THIGHS:
-								genericOrgasmSB.append("[npc.Name] [npc.verb(slide)] [npc.her] [npc.cock+] out from between [npc2.namePos] thighs");
+								genericOrgasmSB.append("[npc.Name] [npc.verb(slide)] [npc.her] [npc.cock+] из-под [npc2.namePos] бедер");
 								break;
 							case URETHRA_PENIS:
-								genericOrgasmSB.append("[npc.Name] [npc.verb(slide)] [npc.her] [npc.cock+] out of [npc2.namePos] [npc2.penisUrethra+]");
+								genericOrgasmSB.append("[npc.Name] [npc.verb(slide)] [npc.her] [npc.cock+] из [npc2.namePos] [npc2.penisUrethra+]");
 								break;
 							case URETHRA_VAGINA:
-								genericOrgasmSB.append("[npc.Name] [npc.verb(slide)] [npc.her] [npc.cock+] out of [npc2.namePos] [npc2.vaginaUrethra+]");
+								genericOrgasmSB.append("[npc.Name] [npc.verb(slide)] [npc.her] [npc.cock+] из [npc2.namePos] [npc2.vaginaUrethra+]");
 								break;
 							case VAGINA:
-								genericOrgasmSB.append("[npc.Name] [npc.verb(slide)] [npc.her] [npc.cock+] out of [npc2.namePos] [npc2.pussy+]");
+								genericOrgasmSB.append("[npc.Name] [npc.verb(slide)] [npc.her] [npc.cock+] из [npc2.namePos] [npc2.pussy+]");
 								break;
 							case SPINNERET:
-								genericOrgasmSB.append("[npc.Name] [npc.verb(slide)] [npc.her] [npc.cock+] out of [npc2.namePos] [npc2.spinneret+]");
+								genericOrgasmSB.append("[npc.Name] [npc.verb(slide)] [npc.her] [npc.cock+] из [npc2.namePos] [npc2.spinneret+]");
 								break;
 						}
 					}
@@ -411,39 +393,37 @@ public class GenericOrgasms {
 					if(!characterOrgasming.getPenisModifiers().isEmpty() && !immobile) {
 						switch(characterOrgasming.getPenisModifiers().get(Util.random.nextInt(characterOrgasming.getPenisModifiers().size()))) {
 							case BARBED:
-								genericOrgasmSB.append(", before reaching down and sliding [npc.her] [npc.hand] up and down over [npc.her] sensitive little barbs.");
+								genericOrgasmSB.append(", прежде чем потянуться вниз и начать водить [npc.her] [npc.hand] вверх и вниз по [npc.her] чувствительным маленьким бугоркам.");
 								break;
 							case BLUNT:
-								genericOrgasmSB.append(", before reaching down and starting to furiously masturbate; [npc.her] [npc.hand] running up the length of [npc.her] [npc.cock] to rub and tease [npc.her] blunt head.");
+								genericOrgasmSB.append(", прежде чем потянуться вниз и начать неистово мастурбировать; [npc.her] [npc.hand] скользит по всей длине [npc.her] [npc.cock], чтобы тереть и дразнить [npc.her] тупую головку.");
 								break;
 							case FLARED:
-								genericOrgasmSB.append(", before reaching down and starting to furiously masturbate; [npc.her] [npc.hand] running up the length of [npc.her] [npc.cock] to rub and tease [npc.her] wide, flared head.");
+								genericOrgasmSB.append(", прежде чем потянуться вниз и начать неистово мастурбировать; [npc.her] [npc.hand] скользит по всей длине [npc.her] [npc.cock], чтобы тереть и дразнить [npc.her] широкую, расширенную головку.");
 								break;
 							case KNOTTED:
-								genericOrgasmSB.append(", before reaching down and starting to furiously masturbate; [npc.her] [npc.hand] sliding down the length of [npc.her] [npc.cock] to grip and rub at [npc.her] swollen knot.");
+								genericOrgasmSB.append(", прежде чем потянуться вниз и начать неистово мастурбировать; [npc.her] [npc.hand] скользит вдоль всей длины [npc.her] [npc.cock], чтобы обхватить и теребить [npc.her] разбухший узел.");
 								break;
 							case PREHENSILE:
-								genericOrgasmSB.append(", before reaching down and starting to furiously masturbate;"
-										+ " [npc.her] [npc.hand] sliding down the length of [npc.her] prehensile [npc.cock] as [npc.she] [npc.verb(curl)] it back against [npc.her] [npc.fingers].");
+								genericOrgasmSB.append(", прежде чем потянуться вниз и начать неистово мастурбировать; [npc.her] [npc.hand] скользит вдоль всей длины цепкого [npc.cock] [npc.her], пока [npc.she] [npc.verb(curl)] его обратно к [npc.her] [npc.fingers].");
 								break;
 							case RIBBED:
-								genericOrgasmSB.append(", before reaching down and sliding [npc.her] [npc.hand] up and down over the bumpy ribs that line [npc.her] [npc.cock].");
+								genericOrgasmSB.append(", прежде чем потянуться вниз и начать водить [npc.her] [npc.hand] вверх и вниз по бугристым ребрам, идущим вдоль [npc.her] [npc.cock].");
 								break;
 							case SHEATHED:
-								genericOrgasmSB.append(", before reaching down and starting to furiously masturbate;"
-											+ " [npc.her] [npc.hand] sliding down the length of [npc.her] [npc.cock] to bump against [npc.her] sheath, before rising back up to [npc.her] [npc.cockHead+].");
+								genericOrgasmSB.append(", прежде чем потянуться вниз и начать неистово мастурбировать; [npc.her] [npc.hand] скользит вдоль всей длины [npc.her] [npc.cock], чтобы ткнуться в [npc.her] чехол, а затем снова подняться к [npc.her] [npc.cockHead+].");
 								break;
 							case TAPERED:
-								genericOrgasmSB.append(", before reaching down and starting to furiously masturbate; [npc.her] [npc.hand] running up the length of [npc.her] [npc.cock] to rub and tease [npc.her] tapered head.");
+								genericOrgasmSB.append(", прежде чем потянуться вниз и начать неистово мастурбировать; [npc.her] [npc.hand] скользит вверх по всей длине [npc.her] [npc.cock], чтобы теребить и дразнить [npc.her] сужающуюся головку.");
 								break;
 							case TENTACLED:
-								genericOrgasmSB.append(", before reaching down and sliding [npc.her] [npc.hand] up and down over the squirming tentacles that line the sides of [npc.her] [npc.cock].");
+								genericOrgasmSB.append(", прежде чем потянуться вниз и начать водить [npc.her] [npc.hand] вверх и вниз по извивающимся щупальцам, покрывающим бока [npc.her] [npc.cock].");
 								break;
 							case VEINY:
-								genericOrgasmSB.append(", before reaching down and sliding [npc.her] [npc.hand] up and down over [npc.her] veiny [npc.cock].");
+								genericOrgasmSB.append(", прежде чем потянуться вниз и начать водить [npc.her] [npc.hand] вверх и вниз по [npc.her] венистому [npc.cock].");
 								break;
 							case OVIPOSITOR:
-								genericOrgasmSB.append(", before reaching down and sliding [npc.her] [npc.hand] up and down over [npc.her] [npc.cock+].");
+								genericOrgasmSB.append(", прежде чем потянуться вниз и начать водить [npc.her] [npc.hand] вверх и вниз по [npc.her] [npc.cock+].");
 								break;
 						}
 						
@@ -452,10 +432,10 @@ public class GenericOrgasms {
 							if(sleeping) {
 								genericOrgasmSB.append(".");
 							} else {
-								genericOrgasmSB.append(", performing the role of inanimate sex doll with absolute perfection.");
+								genericOrgasmSB.append(", исполняя роль неодушевленной секс-куклы с абсолютным совершенством.");
 							}
 						} else {
-							genericOrgasmSB.append(", before reaching down and starting to furiously masturbate; [npc.her] [npc.hand] running up the length of [npc.her] [npc.cock] to rub and tease [npc.her] [npc.cockHead].");
+							genericOrgasmSB.append(", прежде чем опуститься рукой вниз и начать неистово мастурбировать; [npc.her] [npc.hand] пробегает по всей длине [npc.her] [npc.cock], чтобы тереться и дразнить [npc.her] [npc.cockHead].");
 						}
 					}
 					
@@ -464,53 +444,52 @@ public class GenericOrgasms {
 						case CLIT:
 							if(immobile) {
 								if(sleeping) {
-									genericOrgasmSB.append("[npc.Name] [npc.verb(remain)] asleep as [npc.her] [npc.cock+] rubs against [npc2.namePos] [npc2.pussy+].");
+									genericOrgasmSB.append("[npc.Name] [npc.verb(remain)] во сне, пока [npc.her] [npc.cock+] трется о [npc2.namePos] [npc2.pussy+].");
 								} else {
-									genericOrgasmSB.append("[npc.Name] [npc.verb(remain)] completely motionless as [npc.her] [npc.cock+] rubs against [npc2.namePos] [npc2.pussy+], performing the role of inanimate sex doll with absolute perfection.");
+									genericOrgasmSB.append("[npc.Name] [npc.verb(remain)] совершенно неподвижно, пока [npc.her] [npc.cock+] трется о [npc2.namePos] [npc2.pussy+], с абсолютным совершенством исполняя роль неодушевленной секс-куклы.");
 								}
 							} else {
-								genericOrgasmSB.append("[npc.Name] [npc.verb(take)] [npc.her] [npc.cock+] away from [npc2.namePos] [npc2.pussy+], before reaching down and starting to furiously masturbate;"
-										+ " [npc.her] [npc.hand] running up the length of [npc.her] [npc.cock] to rub and tease [npc.her] [npc.cockHead].");
+								genericOrgasmSB.append("[npc.Name] [npc.verb(take)] [npc.her] [npc.cock+] от [npc2.namePos] [npc2.pussy+], прежде чем опуститься рукой вниз и начать неистово мастурбировать; [npc.her] [npc.hand] пробегает по всей длине [npc.her] [npc.cock], чтобы тереться и дразнить [npc.her] [npc.cockHead].");
 							}
 							break;
 						case FINGER:
 							if(immobile) {
 								if(sleeping) {
-									genericOrgasmSB.append("[npc.Name] [npc.verb(remain)] asleep as");
+									genericOrgasmSB.append("[npc.Name] [npc.verb(remain)] во сне, пока");
 								} else {
-									genericOrgasmSB.append("[npc.Name] [npc.verb(remain)] completely motionless as");
+									genericOrgasmSB.append("[npc.Name] [npc.verb(remain)] совершенно неподвижно, пока");
 								}
 								if(immobileTarget) {
 									if(sleepingTarget) {
-										genericOrgasmSB.append(" [npc2.name] also [npc2.verb(sleep)] with [npc2.her] [npc2.fingers+] wrapped around [npc.namePos] [npc.cock+].");
+										genericOrgasmSB.append(" [npc2.name] также [npc2.verb(sleep)], при этом [npc2.her] [npc2.fingers+] обвивает [npc.namePos] [npc.cock+].");
 									} else {
-										genericOrgasmSB.append(" [npc2.name] similarly [npc.verb(stay)] totally still with [npc2.her] [npc2.fingers+] wrapped around [npc.namePos] [npc.cock+].");
+										genericOrgasmSB.append(" [npc2.name] так же [npc.verb(stay)], оставаясь совершенно неподвижной, пока [npc2.her] [npc2.fingers+] обвивает [npc.namePos] [npc.cock+].");
 									}
 								} else {
 									genericOrgasmSB.append(
 											UtilText.returnStringAtRandom(
-													" [npc2.name] [npc2.verb(continue)] to stroke [npc.her] [npc.cock+].",
-													selfTargeting?null:" [npc2.name] [npc2.verb(continue)] giving [npc.herHim] a handjob through [npc.her] orgasm.",
-													" [npc2.name] [npc2.verb(continue)] stroking [npc.her] [npc.cock+] through [npc.her] orgasm."));
+													" [npc2.name] [npc2.verb(continue)] гладить [npc.her] [npc.cock+].",
+													selfTargeting?null:" [npc2.name] [npc2.verb(continue)], делая [npc.herHim] минет через [npc.her] во время оргазма.",
+													" [npc2.name] [npc2.verb(continue)] ласкает [npc.her] [npc.cock+] во время [npc.her] оргазма."));
 								}
 							} else {
 								genericOrgasmSB.append(
 										UtilText.returnStringAtRandom(
-												" [npc.Name] [npc.verb(let)] out [npc.a_moan+] and [npc.verb(buck)] [npc.her] [npc.hips+] forwards",
-												" Letting out [npc.a_moan+], [npc.name] [npc.verb(buck)] [npc.her] [npc.hips+] forwards",
-												" Bucking [npc.her] [npc.hips] forwards, [npc.name] [npc.verb(let)] out [npc.a_moan+]"));
+												" [npc.Name] [npc.verb(let)] вытаскивает [npc.a_moan+] и [npc.verb(buck)] [npc.her] [npc.hips+] вперед",
+												" Издавая [npc.a_moan+], [npc.name] [npc.verb(buck)] [npc.her] [npc.hips+] вперед",
+												" Дергаясь, [npc.her] [npc.hips] вперед, [npc.name] [npc.verb(let)] наружу [npc.a_moan+]"));
 								if(immobileTarget) {
 									if(sleepingTarget) {
-										genericOrgasmSB.append(" as [npc2.name] [npc2.verb(remain)] asleep with [npc2.her] [npc2.fingers+] wrapped around [npc.namePos] [npc.cock+].");
+										genericOrgasmSB.append(" пока [npc2.name] [npc2.verb(remain)] спит, а [npc2.her] [npc2.fingers+] обвивает [npc.namePos] [npc.cock+].");
 									} else {
-										genericOrgasmSB.append(" as [npc2.name] [npc2.verb(remain)] frozen in place with [npc2.her] [npc2.fingers+] wrapped around [npc.namePos] [npc.cock+].");
+										genericOrgasmSB.append(" пока [npc2.name] [npc2.verb(remain)] замерла на месте, а [npc2.her] [npc2.fingers+] обвивает [npc.namePos] [npc.cock+].");
 									}
 								} else {
 									genericOrgasmSB.append(
 											UtilText.returnStringAtRandom(
-													" as [npc2.name] [npc2.verb(continue)] to stroke [npc.her] [npc.cock+].",
-													selfTargeting?null:" as [npc2.name] [npc2.verb(continue)] giving [npc.herHim] a handjob through [npc.her] orgasm.",
-													" as [npc2.name] [npc2.verb(continue)] stroking [npc.her] [npc.cock+] through [npc.her] orgasm."));
+													" пока [npc2.name] [npc2.verb(continue)] ласкает [npc.her] [npc.cock+].",
+													selfTargeting?null:" пока [npc2.name] [npc2.verb(continue)] делает [npc.herHim] мастурбацию во время [npc.her] оргазма.",
+													" пока [npc2.name] [npc2.verb(continue)] ласкает [npc.her] [npc.cock+] во время [npc.her] оргазма."));
 								}
 							}
 							break;
@@ -523,33 +502,32 @@ public class GenericOrgasms {
 						case FOOT:
 							if(immobile) {
 								if(sleeping) {
-									genericOrgasmSB.append("[npc.Name] [npc.verb(remain)] asleep");
+									genericOrgasmSB.append("[npc.Name] [npc.verb(remain)] спит");
 								} else {
-									genericOrgasmSB.append("[npc.Name] [npc.verb(remain)] completely motionless");
+									genericOrgasmSB.append("[npc.Name] [npc.verb(remain)] совершенно неподвижно");
 								}
 							} else {
-								genericOrgasmSB.append(" Bucking [npc.her] [npc.hips], [npc.name] [npc.verb(let)] out [npc.a_moan+]");
+								genericOrgasmSB.append(" Дергающийся [npc.her] [npc.hips], [npc.name] [npc.verb(let)] наружу [npc.a_moan+]");
 							}
 							if(immobileTarget) {
 								if(sleepingTarget) {
-									genericOrgasmSB.append(" as [npc2.namePos] [npc2.feet+] remain in place around [npc.her] [npc.cock+].");
+									genericOrgasmSB.append(" пока [npc2.namePos] [npc2.feet+] остаются на месте вокруг [npc.her] [npc.cock+].");
 								} else {
-									genericOrgasmSB.append(" as [npc2.name] [npc2.verb(hold)] [npc2.her] [npc2.feet+] in place around [npc.namePos] [npc.cock+].");
+									genericOrgasmSB.append(" пока [npc2.name] [npc2.verb(hold)] [npc2.her] [npc2.feet+] на месте вокруг [npc.namePos] [npc.cock+].");
 								}
 							} else {
-								genericOrgasmSB.append(" as [npc2.name] [npc2.verb(continue)] stimulating [npc.her] [npc.cock+] with [npc2.her] [npc2.feet+].");
+								genericOrgasmSB.append(" пока [npc2.name] [npc2.verb(continue)] стимулирует [npc.her] [npc.cock+] с помощью [npc2.her] [npc2.feet+].");
 							}
 							break;
 						case TONGUE:
 							if(immobile) {
 								if(sleeping) {
-									genericOrgasmSB.append("[npc.Name] [npc.verb(remain)] asleep as [npc.her] [npc.cock+] rubs against [npc2.namePos] [npc2.lips+].");
+									genericOrgasmSB.append("[npc.Name] [npc.verb(remain)] спит, пока [npc.her] [npc.cock+] трется о [npc2.namePos] [npc2.lips+].");
 								} else {
-									genericOrgasmSB.append("[npc.Name] [npc.verb(remain)] completely motionless as [npc.her] [npc.cock+] rubs against [npc2.namePos] [npc2.lips+], performing the role of inanimate sex doll with absolute perfection.");
+									genericOrgasmSB.append("[npc.Name] [npc.verb(remain)] совершенно неподвижно, пока [npc.her] [npc.cock+] трется о [npc2.namePos] [npc2.lips+], с абсолютным совершенством исполняя роль неодушевленной секс-куклы.");
 								}
 							} else {
-								genericOrgasmSB.append("[npc.Name] [npc.verb(slide)] [npc.her] [npc.cock+] out of [npc2.namePos] mouth, before reaching down and starting to furiously masturbate;"
-										+ " [npc.her] [npc.hand] running up the length of [npc.her] [npc.cock] to rub and tease [npc.her] [npc.cockHead].");
+								genericOrgasmSB.append("[npc.Name] [npc.verb(slide)] [npc.her] [npc.cock+] изо рта [npc2.namePos], прежде чем наклониться и начать яростно мастурбировать; [npc.her] [npc.hand] пробегает по всей длине [npc.her] [npc.cock], чтобы тереть и дразнить [npc.her] [npc.cockHead].");
 							}
 							break;
 					}
@@ -575,12 +553,10 @@ public class GenericOrgasms {
 			if(!ongoingProstateStimulators.isEmpty() && !isCharacterTotallyImmobilised(ongoingProstateStimulators.get(0))) {
 				if(ongoingProstateStimulators.get(0).equals(characterOrgasming)) {
 					genericOrgasmSB.append(UtilText.parse(ongoingProstateStimulators.get(0),
-							" At this moment, [npc.name] [npc.verb(curl)] [npc.her] [npc.fingers+] up inside [npc.her] "+(characterOrgasming.hasVagina()?"[npc.pussy+]":"[npc.asshole+]")+","
-									+ " before rapidly stroking and massaging [npc.her] prostate in an attempt to milk as much [npc.cum] out of [npc.herself] as possible."));
+							" В этот момент [npc.name] [npc.verb(curl)] [npc.her] [npc.fingers+] внутри [npc.her] "+(characterOrgasming.hasVagina()?"[npc.pussy+]":"[npc.asshole+]")+", прежде чем начать быстро поглаживать и массировать [npc.her] простату, пытаясь выжать из [npc.herself] как можно больше [npc.cum]."));
 				} else {
 					genericOrgasmSB.append(UtilText.parse(ongoingProstateStimulators.get(0), characterOrgasming,
-							" At this moment, [npc.name] [npc.verb(curl)] [npc.her] [npc.fingers+] up inside [npc2.namePos] "+(characterOrgasming.hasVagina()?"[npc2.pussy+]":"[npc2.asshole+]")+","
-								+ " before rapidly stroking and massaging [npc2.her] prostate in an attempt to milk as much [npc2.cum] out of [npc2.herHim] as possible."));
+							" В этот момент [npc.name] [npc.verb(curl)] [npc.her] [npc.fingers+] внутри [npc2.namePos] "+(characterOrgasming.hasVagina()?"[npc2.pussy+]":"[npc2.asshole+]")+", прежде чем начать быстро поглаживать и массировать [npc2.her] простату, пытаясь выжать из [npc2.herHim] как можно больше [npc2.cum]."));
 				}
 			}
 			
@@ -609,7 +585,7 @@ public class GenericOrgasms {
 																	:"urethra")))));
 							String orificeNamePlusDescriptor =
 									(contactingArea == SexAreaOrifice.SPINNERET
-										?"web-spinning orifice"
+										?"плетущее паутину отверстие"
 										:(contactingArea == SexAreaOrifice.VAGINA
 											?"[npc2.pussy+]"
 											:(contactingArea == SexAreaOrifice.ANUS
@@ -622,9 +598,9 @@ public class GenericOrgasms {
 							
 							if(immobile) {
 								if(sleeping) {
-									genericOrgasmSB.append(" Remaining asleep, [npc.name] [npc.verb(keep)] [npc.her] [npc.cock+] hilted deep inside of [npc2.namePos] "+orificeNamePlusDescriptor+".");
+									genericOrgasmSB.append(" Все еще спя, [npc.name] [npc.verb(keep)] [npc.her] [npc.cock+] глубоко внутри [npc2.namePos] "+orificeNamePlusDescriptor+".");
 								} else {
-									genericOrgasmSB.append(" Remaining completely motionless, [npc.name] [npc.verb(keep)] [npc.her] [npc.cock+] hilted deep inside of [npc2.namePos] "+orificeNamePlusDescriptor+".");
+									genericOrgasmSB.append(" Оставаясь совершенно неподвижной, [npc.name] [npc.verb(keep)] [npc.her] [npc.cock+] глубоко внутри [npc2.namePos] "+orificeNamePlusDescriptor+".");
 								}
 								
 							} else if(characterOrgasming.hasPenisModifier(PenetrationModifier.KNOTTED)) {
@@ -632,54 +608,47 @@ public class GenericOrgasms {
 									if(!isSecondaryCreampieTarget) {
 										GameCharacter secondaryTarget = getSecondaryCreampieTarget(characterTargeted, (SexAreaOrifice) contactingArea);
 										if(!Main.game.isPenetrationLimitationsEnabled() || characterOrgasming.isFullPenetrationTooShort(SexAreaPenetration.PENIS, characterTargeted, (SexAreaOrifice)contactingArea)) {
-											genericOrgasmSB.append(" Pushing forwards, [npc.name] [npc.verb(hilt)] [npc.her] [npc.cock+] fully inside of [npc2.namePos] "+orificeNamePlusDescriptor+".");
+											genericOrgasmSB.append(" Толкаясь вперед, [npc.name] [npc.verb(hilt)] [npc.her] [npc.cock+] полностью внутри [npc2.namePos] "+orificeNamePlusDescriptor+".");
 											if(Objects.equals(Main.sex.getCharacterKnotting(characterOrgasming), secondaryTarget)) {
-												genericOrgasmSB.append(" Wanting to save [npc.her] rapidly-swelling knot for "+(UtilText.parse(characterOrgasming, secondaryTarget, "[npc2.namePos] "+orificeNamePlusDescriptor))+","
-																+ " [npc.she] [npc.verb(hold)] back from pushing it inside of [npc2.name], and [npc.verb(make)] do with just grinding it against [npc2.her] "+orificeName+".");
+												genericOrgasmSB.append(" Желая сохранить [npc.her] стремительно раздувающийся узел для "+(UtilText.parse(characterOrgasming, secondaryTarget, "[npc2.namePos] "+orificeNamePlusDescriptor))+", [npc.she] [npc.verb(hold)] назад от попытки втиснуть его в [npc2.name], и [npc.verb(make)] сделать, просто растирая его о [npc2.her] "+orificeName+".");
 											} else {
-												genericOrgasmSB.append(" Not wanting to get locked inside of [npc2.herHim], [npc.she] [npc.verb(hold)] back from pushing [npc.her] rapidly-swelling knot inside of [npc2.namePos] "+orificeName+".");
+												genericOrgasmSB.append(" Не желая застрять внутри [npc2.herHim], [npc.she] [npc.verb(hold)] назад от попытки втиснуть стремительно раздувающийся узел [npc.her] в [npc2.namePos] "+orificeName+".");
 											}
 											
 										} else if(characterOrgasming.isWantingToFullyPenetrate(characterTargeted, SexAreaPenetration.PENIS)) {
-											genericOrgasmSB.append(" Pushing forwards, [npc.name] [npc.verb(feel)] [npc.her] [npc.cock+] bottoming out in [npc2.namePos] "+orificeNamePlusDescriptor+".");
+											genericOrgasmSB.append(" Толкаясь вперед, [npc.name] [npc.verb(feel)] [npc.her] [npc.cock+] упираясь до самого дна в [npc2.namePos] "+orificeNamePlusDescriptor+".");
 											if(Objects.equals(Main.sex.getCharacterKnotting(characterOrgasming), secondaryTarget)) {
-												genericOrgasmSB.append(" Desperate to sink [npc.her] rapidly-swelling knot into something, [npc.name] [npc.verb(look)] over at "
-														+(UtilText.parse(characterOrgasming, secondaryTarget, "[npc2.namePos] "+orificeNamePlusDescriptor))+" and [npc.verb(let)] out an excited [npc.moan].");
+												genericOrgasmSB.append(" В отчаянии стремясь погрузить стремительно раздувающийся узел [npc.her] во что-то, [npc.name] [npc.verb(look)] прямо на "
+														+(UtilText.parse(characterOrgasming, secondaryTarget, "[npc2.namePos] "+orificeNamePlusDescriptor))+" и [npc.verb(let)] возбужденный [npc.moan].");
 											} else {
-												genericOrgasmSB.append(" [npc.She] [npc.verb(let)] out a disappointed [npc.moan] as [npc.she] [npc.verb(realise)]"
-														+ " that [npc.her] rapidly-swelling knot isn't going to fit inside of [npc2.namePos] "+orificeName+".");
+												genericOrgasmSB.append(" [npc.She] [npc.verb(let)] разочарованный [npc.moan], пока [npc.she] [npc.verb(realise)], что [npc.her] стремительно раздувающийся узел не влезет в [npc2.namePos] "+orificeName+".");
 											}
 											
 										} else {
-											genericOrgasmSB.append(" Not wanting to cause [npc2.her] any discomfort, [npc.name] [npc.verb(hold)] back from fully hilting [npc.her] [npc.cock] in [npc2.namePos] "+orificeNamePlusDescriptor+".");
+											genericOrgasmSB.append(" Не желая причинять [npc2.her] никакого дискомфорта, [npc.name] [npc.verb(hold)] назад, не вгоняя полностью [npc.her] [npc.cock] в [npc2.namePos] "+orificeNamePlusDescriptor+".");
 										}
 										
 									} else {
 										if(Objects.equals(Main.sex.getCharacterKnotting(characterOrgasming), characterTargeted)) {
-											genericOrgasmSB.append(" Pushing forwards, [npc.name] [npc.verb(ram)] the now-fully swollen knot at the base of [npc.her] [npc.cock+] against [npc2.namePos] "+orificeNamePlusDescriptor+"."
-													+ " By now it's so engorged that it seems almost impossible to push it inside, but with a determined [npc.moan], [npc.name] violently [npc.verb(thrust)] forwards,"
-														+ " and with an accompanying cry from [npc2.name], [npc.she] [npc.verb(manage)] to force [npc.her] fat knot into [npc2.her] "+orificeNamePlusDescriptor+".");
+											genericOrgasmSB.append(" Толкаясь вперед, [npc.name] [npc.verb(ram)] теперь уже полностью раздутый узел у основания [npc.her] [npc.cock+] против [npc2.namePos] "+orificeNamePlusDescriptor+". К этому моменту он так разбух, что кажется почти невозможным протолкнуть его внутрь, но с решимостью [npc.moan], [npc.name] яростно [npc.verb(thrust)] вперед, и под сопровождающий крик [npc2.name], [npc.she] [npc.verb(manage)], чтобы заставить [npc.her] толстый узел войти в [npc2.her] "+orificeNamePlusDescriptor+".");
 										} else {
-											genericOrgasmSB.append(" Not wanting to get locked inside of [npc2.herHim], [npc.she] [npc.verb(hold)] back from pushing [npc.her] rapidly-swelling knot inside of [npc2.namePos] "+orificeName+".");
+											genericOrgasmSB.append(" Не желая застрять внутри [npc2.herHim], [npc.she] [npc.verb(hold)] назад от попытки втиснуть стремительно раздувающийся узел [npc.her] в [npc2.namePos] "+orificeName+".");
 										}
 									}
 									
 								} else {
 									if(Objects.equals(Main.sex.getCharacterKnotting(characterOrgasming), characterTargeted)) {
-										genericOrgasmSB.append(" Pushing forwards, [npc.name] [npc.verb(ram)] the knot at the base of [npc.her] [npc.cock+] against [npc2.namePos] "+orificeNamePlusDescriptor+"."
-												+ " It's already started to swell up so much that [npc.she] [npc.do]n't manage to get it inside on the first thrust,"
-													+ " but after pulling back and slamming [npc.her] [npc.hips] forwards, [npc.she] [npc.verb(manage)] to push the thick knot into [npc2.her] "+orificeNamePlusDescriptor+".");
+										genericOrgasmSB.append(" Толкаясь вперед, [npc.name] [npc.verb(ram)] узел у основания [npc.her] [npc.cock+] против [npc2.namePos] "+orificeNamePlusDescriptor+". Он уже начал так сильно раздуваться, что [npc.she] [npc.do] не удается протолкнуть его внутрь с первого толчка, но после того как он отстранился и с силой вогнал [npc.her] [npc.hips] вперед, [npc.she] [npc.verb(manage)], чтобы втиснуть толстый узел в [npc2.her] "+orificeNamePlusDescriptor+".");
 									} else {
-										genericOrgasmSB.append(" Not wanting to get locked inside of [npc2.herHim], [npc.she] [npc.verb(hold)] back from pushing [npc.her] rapidly-swelling knot inside of [npc2.namePos] "+orificeName+".");
+										genericOrgasmSB.append(" Не желая застрять внутри [npc2.herHim], [npc.she] [npc.verb(hold)] назад от попытки втиснуть стремительно раздувающийся узел [npc.her] в [npc2.namePos] "+orificeName+".");
 									}
 								}
 								
 							} else {
 								if(cumTarget==OrgasmCumTarget.INSIDE_SWITCH_DOUBLE && isSecondaryCreampieTarget) { 
-									genericOrgasmSB.append(" Thrusting [npc.her] [npc.cock+] into [npc2.namePos] "+orificeNamePlusDescriptor+","
-											+ " [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(prepare)] to finish orgasming inside of [npc2.herHim].");
+									genericOrgasmSB.append(" Вгоняя [npc.her] [npc.cock+] в [npc2.namePos] "+orificeNamePlusDescriptor+", [npc.name] [npc.verb(let)] извлекает [npc.a_moan+], пока [npc.she] [npc.verb(prepare)], чтобы закончить оргазм внутри [npc2.herHim].");
 								} else {
-									genericOrgasmSB.append(" Ramming [npc.her] [npc.cock+] deep into [npc2.namePos] "+orificeNamePlusDescriptor+", [npc.name] [npc.verb(let)] out [npc.a_moan+] as it starts to twitch inside of [npc2.herHim].");
+									genericOrgasmSB.append(" Вбивая [npc.her] [npc.cock+] глубоко в [npc2.namePos] "+orificeNamePlusDescriptor+", [npc.name] [npc.verb(let)] из [npc.a_moan+], когда он начинает дергаться внутри [npc2.herHim].");
 								}
 							}
 							
@@ -688,34 +657,34 @@ public class GenericOrgasms {
 								switch(mod) {
 									case BARBED:
 										if(!immobile && characterOrgasming.hasPenisModifier(mod)) {
-											modifiers.add(" [npc.Name] [npc.verb(continue)] to make small, thrusting movements, raking [npc.her] barbs back against the inner walls of [npc2.namePos] "+orificeName
-													+(immobileTarget?".":" and causing [npc2.herHim] to let out [npc2.a_moan+]."));
+											modifiers.add(" [npc.Name] [npc.verb(continue)] совершать короткие толчки, вонзая [npc.her] шипы в стенки [npc2.namePos] "+orificeName
+													+(immobileTarget?".":" и заставляя [npc2.herHim] издавать [npc2.a_moan+]."));
 										}
 										break;
 									case FLARED:
 										if(characterOrgasming.hasPenisModifier(mod)) {
 											if(characterOrgasming.isPlayer() && !sleeping) {
-												modifiers.add(" You feel the wide, flared head of your [npc.cock] swell up, making a seal with which to trap your [npc.cum] deep within [npc2.her] "+orificeName+".");
+												modifiers.add(" Ты чувствуешь, как широкая, расширенная головка твоего [npc.cock] раздувается, создавая герметичное соединение, чтобы запереть твою [npc.cum] глубоко внутри [npc2.her] "+orificeName+".");
 											} else {
-												modifiers.add(" The wide, flared head of [npc.namePos] [npc.cock] swells up, making a seal with which to trap [npc.her] [npc.cum] deep within [npc2.namePos] "+orificeName+".");
+												modifiers.add(" Широкая, расширенная головка [npc.namePos] [npc.cock] раздувается, создавая герметичное соединение, чтобы запереть [npc.her] [npc.cum] глубоко внутри [npc2.namePos] "+orificeName+".");
 											}
 										}
 										break;
 									case RIBBED:
 										if(characterOrgasming.hasPenisModifier(mod)) {
 											if(characterOrgasming.isPlayer() && !sleeping) {
-												modifiers.add(" You feel your ribbed [npc.cock] bumping against the inner walls of [npc2.her] "+orificeName+penisModPostfix);
+												modifiers.add(" Ты чувствуешь, как твой ребристый [npc.cock] бьется о внутренние стенки [npc2.her] "+orificeName+penisModPostfix);
 											} else {
-												modifiers.add(" The ribbed length of [npc.namePos] [npc.cock] bumps against the inner walls of [npc2.namePos] "+orificeName+penisModPostfix);
+												modifiers.add(" Ребристый ствол [npc.namePos] [npc.cock] бьется о внутренние стенки [npc2.namePos] "+orificeName+penisModPostfix);
 											}
 										}
 										break;
 									case TENTACLED:
 										if(characterOrgasming.hasPenisModifier(mod)) {
 											if(characterOrgasming.isPlayer() && !sleeping) {
-												modifiers.add(" You feel the wriggling tentacles lining your [npc.cock] start to massage the inner walls of [npc2.her] "+orificeName+penisModPostfix);
+												modifiers.add(" Ты чувствуешь, как извивающиеся щупальца, покрывающие твой [npc.cock], начинают массировать внутренние стенки [npc2.her] "+orificeName+penisModPostfix);
 											} else {
-												modifiers.add(" The wriggling tentacles lining [npc.namePos] [npc.cock] start to massage the inner walls of [npc2.namePos] "+orificeName+penisModPostfix);
+												modifiers.add(" Извивающиеся щупальца, покрывающие [npc.namePos], [npc.cock] начинают массировать внутренние стенки [npc2.namePos] "+orificeName+penisModPostfix);
 												
 											}
 										}
@@ -738,13 +707,13 @@ public class GenericOrgasms {
 							if(!immobile && characterOrgasming.hasPenisModifier(PenetrationModifier.KNOTTED)) {
 								if(cumTarget!=OrgasmCumTarget.INSIDE_SWITCH_DOUBLE || isSecondaryCreampieTarget) {
 									if(Objects.equals(Main.sex.getCharacterKnotting(characterOrgasming), characterTargeted)) {
-										genericOrgasmSB.append(" Keeping [npc.her] [npc.hips] pushed tightly against [npc2.namePos] "+orificeName+", [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.her] knot swells up to its full size.");
+										genericOrgasmSB.append(" Удерживая [npc.her] [npc.hips] плотно прижатым к [npc2.namePos] "+orificeName+", [npc.name] [npc.verb(let)] из [npc.a_moan+], пока [npc.her] не раздуется до своего полного размера.");
 										if(immobileTarget) {
-											genericOrgasmSB.append(" [npc.She] then [npc.verb(buck)] back a little, causing [npc2.name] to be pulled along with [npc.herHim];");
+											genericOrgasmSB.append(" затем [npc.She] слегка [npc.verb(buck)] назад, заставляя [npc2.name] тянуться вслед за [npc.herHim];");
 										} else {
-											genericOrgasmSB.append(" [npc.She] then [npc.verb(buck)] back a little, and [npc2.name] [npc2.verb(let)] out a startled cry as [npc2.sheIs] pulled along with [npc.herHim];");
+											genericOrgasmSB.append(" затем [npc.She] слегка [npc.verb(buck)] назад, и [npc2.name] [npc2.verb(let)] от неожиданности, пока [npc2.sheIs] тянется вслед за [npc.herHim];");
 										}
-										genericOrgasmSB.append(" evidence that [npc.her] [npc.cock] is now firmly locked inside [npc2.her] "+orificeNamePlusDescriptor+".");
+										genericOrgasmSB.append(" свидетельство того, что [npc.her] [npc.cock] теперь крепко зажат внутри [npc2.her] "+orificeNamePlusDescriptor+".");
 									}
 								}
 							}
@@ -753,43 +722,43 @@ public class GenericOrgasms {
 						case ARMPITS:
 							if(immobile) {
 								if(sleeping) {
-									genericOrgasmSB.append(" Remaining asleep, [npc.name] [npc.verb(keep)] [npc.her] [npc.cock+] pressed up against [npc2.namePos] armpit.");
+									genericOrgasmSB.append(" Все еще спящий, [npc.name] [npc.verb(keep)] [npc.her] [npc.cock+], прижатый к [npc2.namePos] подмышке.");
 								} else {
-									genericOrgasmSB.append(" Remaining completely motionless, [npc.name] [npc.verb(keep)] [npc.her] [npc.cock+] pressed up against [npc2.namePos] armpit.");
+									genericOrgasmSB.append(" Оставаясь совершенно неподвижным, [npc.name] [npc.verb(keep)] [npc.her] [npc.cock+], прижатый к [npc2.namePos] подмышке.");
 								}
 							} else {
-								genericOrgasmSB.append(" [npc.Name] [npc.verb(continue)] thrusting [npc.her] [npc.cock+] up against [npc2.namePos] armpit, letting out [npc.a_moan+] as [npc.she] [npc.verb(feel)] it start to twitch.");
+								genericOrgasmSB.append(" [npc.Name] [npc.verb(continue)] толкая [npc.her] [npc.cock+] в [npc2.namePos] подмышку, издавая [npc.a_moan+], когда [npc.she] [npc.verb(feel)] начинает дергаться.");
 							}
 							for(PenetrationModifier mod : PenetrationModifier.getPenetrationModifiers()) {
 								switch(mod) {
 									case BARBED:
 										if(!immobile && characterOrgasming.hasPenisModifier(mod)) {
-											modifiers.add(" [npc.Her] movements cause the barbs lining the sides of [npc.her] [npc.cock] to rake against [npc2.namePos] [npc2.arm+]"+penisModPostfix);
+											modifiers.add(" движения [npc.Her] заставляют шипы вдоль стенок [npc.her] [npc.cock] скрести по [npc2.namePos] [npc2.arm+]"+penisModPostfix);
 										}
 										break;
 									case FLARED:
 										if(characterOrgasming.hasPenisModifier(mod)) {
-											modifiers.add(" [npc.Her] flared head swells up and lewdly rubs against [npc2.namePos] [npc2.arm]"+penisModPostfix);
+											modifiers.add(" раздутая головка [npc.Her] похотливо трется о [npc2.namePos] [npc2.arm]"+penisModPostfix);
 										}
 										break;
 									case KNOTTED:
 										if(!immobile && characterOrgasming.hasPenisModifier(mod)) {
-											modifiers.add(" [npc.Her] fat knot swells up, and with each thrust, bumps wildly against [npc2.namePos] [npc2.arm+]"+penisModPostfix);
+											modifiers.add(" жирное уплотнение [npc.Her] раздувается, и с каждым толчком оно дико бьется о [npc2.namePos] [npc2.arm+]"+penisModPostfix);
 										}
 										break;
 									case PREHENSILE:
 										if(!immobile && characterOrgasming.hasPenisModifier(mod)) {
-											modifiers.add(" Harnessing the ability of [npc.her] prehensile cock, [npc.name] bends it around [npc2.namePos] [npc2.arm+] on each thrust"+penisModPostfix);
+											modifiers.add(" Используя способность [npc.her] хватательного члена, [npc.name] при каждом толчке обвивает им [npc2.namePos] [npc2.arm+]"+penisModPostfix);
 										}
 										break;
 									case RIBBED:
 										if(!immobile && characterOrgasming.hasPenisModifier(mod)) {
-											modifiers.add(" [npc.Her] ribbed shaft repeatedly bumps against [npc2.namePos] [npc2.arm+] on every thrust"+penisModPostfix);
+											modifiers.add(" [npc.Her] ребристый ствол при каждом толчке ритмично бьется о [npc2.namePos] [npc2.arm+]"+penisModPostfix);
 										}
 										break;
 									case TENTACLED:
 										if(characterOrgasming.hasPenisModifier(mod)) {
-											modifiers.add(" The little tentacles lining [npc.her] shaft wriggle against and massage [npc2.namePos] [npc2.arm+]"+penisModPostfix);
+											modifiers.add(" Маленькие щупальца, покрывающие [npc.her] ствол, извиваются и массируют [npc2.namePos] [npc2.arm+]"+penisModPostfix);
 										}
 										break;
 									case BLUNT:
@@ -805,43 +774,43 @@ public class GenericOrgasms {
 						case ASS:
 							if(immobile) {
 								if(sleeping) {
-									genericOrgasmSB.append(" Remaining asleep, [npc.name] [npc.verb(keep)] [npc.her] [npc.cock+] positioned between [npc2.namePos] [npc2.assSize] ass cheeks.");
+									genericOrgasmSB.append(" Все еще спящая, [npc.name] [npc.verb(keep)] [npc.her] [npc.cock+] зажат между [npc2.namePos] [npc2.assSize] ягодицами.");
 								} else {
-									genericOrgasmSB.append(" Remaining completely motionless, [npc.name] [npc.verb(keep)] [npc.her] [npc.cock+] positioned between [npc2.namePos] [npc2.assSize] ass cheeks.");
+									genericOrgasmSB.append(" Совершенно не шевелясь, [npc.name] [npc.verb(keep)] [npc.her] [npc.cock+] зажат между [npc2.namePos] [npc2.assSize] ягодицами.");
 								}
 							} else {
-								genericOrgasmSB.append(" [npc.Name] [npc.verb(continue)] thrusting [npc.her] [npc.cock+] between [npc2.namePos] [npc2.assSize] ass cheeks, letting out [npc.a_moan+] as [npc.she] [npc.verb(feel)] it start to twitch.");
+								genericOrgasmSB.append(" [npc.Name] [npc.verb(continue)] вгоняет [npc.her] [npc.cock+] между [npc2.namePos] [npc2.assSize] ягодицами, издавая [npc.a_moan+], когда [npc.she] [npc.verb(feel)] начинает дергаться.");
 							}
 							for(PenetrationModifier mod : PenetrationModifier.getPenetrationModifiers()) {
 								switch(mod) {
 									case BARBED:
 										if(!immobile && characterOrgasming.hasPenisModifier(mod)) {
-											modifiers.add(" [npc.Her] movements cause the barbs lining the sides of [npc.her] [npc.cock] to rake against [npc2.namePos] [npc2.ass]"+penisModPostfix);
+											modifiers.add(" Движения [npc.Her] заставляют шипы по бокам [npc.her] [npc.cock] скрести по [npc2.namePos] [npc2.ass]"+penisModPostfix);
 										}
 										break;
 									case FLARED:
 										if(characterOrgasming.hasPenisModifier(mod)) {
-											modifiers.add(" [npc.Her] flared head swells up, causing [npc2.namePos] cheeks to be parted ever wider"+penisModPostfix);
+											modifiers.add(" Раздутая головка [npc.Her] увеличивается в размерах, заставляя щеки [npc2.namePos] раздвигаться еще шире"+penisModPostfix);
 										}
 										break;
 									case KNOTTED:
 										if(!immobile && characterOrgasming.hasPenisModifier(mod)) {
-											modifiers.add(" [npc.Her] fat knot swells up, and with each thrust, bumps wildly against [npc2.namePos] [npc2.asshole]"+penisModPostfix);
+											modifiers.add(" Жирное уплотнение [npc.Her] раздувается, и с каждым толчком оно дико бьется о [npc2.namePos] [npc2.asshole]"+penisModPostfix);
 										}
 										break;
 									case PREHENSILE:
 										if(!immobile && characterOrgasming.hasPenisModifier(mod)) {
-											modifiers.add(" Harnessing the ability of [npc.her] prehensile cock, [npc.name] bends it down over [npc2.namePos] back on each thrust"+penisModPostfix);
+											modifiers.add(" Используя способность [npc.her] хватательного члена, [npc.name] при каждом толчке прижимает его к спине [npc2.namePos]"+penisModPostfix);
 										}
 										break;
 									case RIBBED:
 										if(!immobile && characterOrgasming.hasPenisModifier(mod)) {
-											modifiers.add(" [npc.Her] ribbed shaft repeatedly bumps against [npc2.namePos] [npc2.asshole] on every thrust"+penisModPostfix);
+											modifiers.add(" [npc.Her] ребристый ствол при каждом толчке раз за разом ударяется о [npc2.namePos] [npc2.asshole]"+penisModPostfix);
 										}
 										break;
 									case TENTACLED:
 										if(characterOrgasming.hasPenisModifier(mod)) {
-											modifiers.add(" The little tentacles lining [npc.her] shaft wriggle against and massage [npc2.namePos] [npc2.asshole]"+penisModPostfix);
+											modifiers.add(" Маленькие щупальца, покрывающие ствол [npc.her], извиваются и массируют [npc2.namePos] [npc2.asshole]"+penisModPostfix);
 										}
 										break;
 									case BLUNT:
@@ -858,44 +827,44 @@ public class GenericOrgasms {
 							if(characterTargeted.hasBreasts()) {
 								if(immobile) {
 									if(sleeping) {
-										genericOrgasmSB.append(" Remaining asleep, [npc.name] [npc.verb(keep)] [npc.her] [npc.cock+] positioned between [npc2.namePos] [npc2.breasts+].");
+										genericOrgasmSB.append(" Все еще спящая, [npc.name] [npc.verb(keep)] [npc.her] [npc.cock+] расположена между [npc2.namePos] [npc2.breasts+].");
 									} else {
-										genericOrgasmSB.append(" Remaining completely motionless, [npc.name] [npc.verb(keep)] [npc.her] [npc.cock+] positioned between [npc2.namePos] [npc2.breasts+].");
+										genericOrgasmSB.append(" Совершенно неподвижная, [npc.name] [npc.verb(keep)] [npc.her] [npc.cock+] расположена между [npc2.namePos] [npc2.breasts+].");
 									}
 								} else {
-									genericOrgasmSB.append(" [npc.Name] [npc.verb(continue)] thrusting [npc.her] [npc.cock+] between [npc2.namePos] [npc2.breasts+], letting out [npc.a_moan+] as [npc.she] [npc.verb(feel)] it start to twitch.");
+									genericOrgasmSB.append(" [npc.Name] [npc.verb(continue)] вгоняет [npc.her] [npc.cock+] между [npc2.namePos] [npc2.breasts+], издавая [npc.a_moan+], когда [npc.she] [npc.verb(feel)] начинает дергаться.");
 								}
 								
 								for(PenetrationModifier mod : PenetrationModifier.getPenetrationModifiers()) {
 									switch(mod) {
 										case BARBED:
 											if(!immobile && characterOrgasming.hasPenisModifier(mod)) {
-												modifiers.add(" [npc.Her] movements cause the barbs lining [npc.her] [npc.cock] to rake against the sides of [npc2.namePos] breasts"+penisModPostfix);
+												modifiers.add(" Движения [npc.Her] заставляют шипы, покрывающие [npc.her] [npc.cock], скрести по бокам груди [npc2.namePos]"+penisModPostfix);
 											}
 											break;
 										case FLARED:
 											if(characterOrgasming.hasPenisModifier(mod)) {
-												modifiers.add(" [npc.Her] flared head swells up and rubs lewdly against [npc2.namePos] [npc2.breasts+]"+penisModPostfix);
+												modifiers.add(" Раздутая головка [npc.Her] набухает и похотливо трется о [npc2.namePos] [npc2.breasts+]"+penisModPostfix);
 											}
 											break;
 										case KNOTTED:
 											if(!immobile && characterOrgasming.hasPenisModifier(mod)) {
-												modifiers.add(" [npc.Her] fat knot swells up, and with each thrust, bumps wildly against [npc2.namePos] [npc2.breasts+]"+penisModPostfix);
+												modifiers.add(" Жирное уплотнение [npc.Her] раздувается, и с каждым толчком оно дико бьется о [npc2.namePos] [npc2.breasts+]"+penisModPostfix);
 											}
 											break;
 										case PREHENSILE:
 											if(!immobile && characterOrgasming.hasPenisModifier(mod)) {
-												modifiers.add(" Harnessing the ability of [npc.her] prehensile cock, [npc.name] curls it around alternating sides of [npc2.namePos] breasts"+penisModPostfix);
+												modifiers.add(" Используя способность хватательного члена [npc.her], [npc.name] обвивает его вокруг грудей [npc2.namePos], чередуя стороны"+penisModPostfix);
 											}
 											break;
 										case RIBBED:
 											if(!immobile && characterOrgasming.hasPenisModifier(mod)) {
-												modifiers.add(" [npc.Her] ribbed shaft repeatedly bumps against [npc2.namePos] [npc2.breasts+] on every thrust"+penisModPostfix);
+												modifiers.add(" [npc.Her] ребристый ствол при каждом толчке раз за разом ударяется о [npc2.namePos] [npc2.breasts+]"+penisModPostfix);
 											}
 											break;
 										case TENTACLED:
 											if(characterOrgasming.hasPenisModifier(mod)) {
-												modifiers.add(" The little tentacles lining [npc.her] shaft wriggle against and massage [npc2.namePos] [npc2.breasts+]"+penisModPostfix);
+												modifiers.add(" Маленькие щупальца, покрывающие ствол [npc.her], извиваются и массируют [npc2.namePos] [npc2.breasts+]"+penisModPostfix);
 											}
 											break;
 										case BLUNT:
@@ -910,45 +879,45 @@ public class GenericOrgasms {
 							} else {
 								if(immobile) {
 									if(sleeping) {
-										genericOrgasmSB.append(" Remaining asleep, [npc.name] [npc.verb(keep)] [npc.her] [npc.cock+] resting on [npc2.namePos] flat chest.");
+										genericOrgasmSB.append(" Все еще спящий, [npc.name] [npc.verb(keep)] [npc.her] [npc.cock+] покоится на плоской груди [npc2.namePos].");
 									} else {
-										genericOrgasmSB.append(" Remaining completely motionless, [npc.name] [npc.verb(keep)] [npc.her] [npc.cock+] resting on [npc2.namePos] flat chest.");
+										genericOrgasmSB.append(" Оставаясь совершенно неподвижным, [npc.name] [npc.verb(keep)] [npc.her] [npc.cock+] покоится на плоской груди [npc2.namePos].");
 									}
 								} else {
-									genericOrgasmSB.append(" [npc.Name] [npc.verb(continue)] grinding [npc.her] [npc.cock+] against [npc2.namePos] flat chest, letting out [npc.a_moan+] as [npc.she] [npc.verb(feel)] it start to twitch.");
+									genericOrgasmSB.append(" [npc.Name] [npc.verb(continue)] трется [npc.her] [npc.cock+] о плоскую грудь [npc2.namePos], издавая [npc.a_moan+], когда [npc.she] [npc.verb(feel)] начинает дергаться.");
 								}
 								
 								for(PenetrationModifier mod : PenetrationModifier.getPenetrationModifiers()) {
 									switch(mod) {
 										case BARBED:
 											if(!immobile && characterOrgasming.hasPenisModifier(mod)) {
-												modifiers.add(" [npc.Her] movements cause the barbs lining [npc.her] [npc.cock] to rake sharply over [npc2.namePos] torso"+penisModPostfix);
+												modifiers.add(" Движения [npc.Her] заставляют шипы, покрывающие [npc.her] [npc.cock], резко царапать торс [npc2.namePos]"+penisModPostfix);
 											}
 											break;
 										case FLARED:
 											if(characterOrgasming.hasPenisModifier(mod)) {
-												modifiers.add(" [npc.Her] flared head swells up and rubs lewdly against [npc2.namePos] torso"+penisModPostfix);
+												modifiers.add(" Раздутая головка [npc.Her] набухает и похотливо трется о торс [npc2.namePos]"+penisModPostfix);
 											}
 											break;
 										case KNOTTED:
 											if(!immobile && characterOrgasming.hasPenisModifier(mod)) {
-												modifiers.add(" [npc.Her] fat knot swells up, and with each thrust, bumps wildly against [npc2.namePos] torso"+penisModPostfix);
+												modifiers.add(" Жирное уплотнение [npc.Her] набухает и при каждом толчке дико бьется о торс [npc2.namePos]"+penisModPostfix);
 											}
 											break;
 										case PREHENSILE:
 											if(!immobile && characterOrgasming.hasPenisModifier(mod)) {
-												modifiers.add(" Harnessing the ability of [npc.her] prehensile cock, [npc.name] curls it this way and that as [npc.she] grinds against [npc2.namePos] chest"
+												modifiers.add(" Используя возможности цепкого члена [npc.her], [npc.name] изгибает его то так, то эдак, пока [npc.she] трется о грудь [npc2.namePos]"
 														+penisModPostfix);
 											}
 											break;
 										case RIBBED:
 											if(!immobile && characterOrgasming.hasPenisModifier(mod)) {
-												modifiers.add(" [npc.Her] ribbed shaft repeatedly bumps over [npc2.namePos] torso on every thrust"+penisModPostfix);
+												modifiers.add(" Ребристый ствол [npc.Her] при каждом толчке раз за разом бьется о торс [npc2.namePos]"+penisModPostfix);
 											}
 											break;
 										case TENTACLED:
 											if(characterOrgasming.hasPenisModifier(mod)) {
-												modifiers.add(" The little tentacles lining [npc.her] shaft wriggle against and massage [npc2.namePos] torso"+penisModPostfix);
+												modifiers.add(" Маленькие щупальца, покрывающие ствол [npc.her], извиваются и массируют торс [npc2.namePos]"+penisModPostfix);
 											}
 											break;
 										case BLUNT:
@@ -965,44 +934,44 @@ public class GenericOrgasms {
 						case BREAST_CROTCH:
 							if(immobile) {
 								if(sleeping) {
-									genericOrgasmSB.append(" Remaining asleep, [npc.name] [npc.verb(keep)] [npc.her] [npc.cock+] positioned between [npc2.namePos] [npc2.crotchBoobs+].");
+									genericOrgasmSB.append(" Все еще спящий, [npc.name] [npc.verb(keep)] [npc.her] [npc.cock+] расположен между [npc2.namePos] [npc2.crotchBoobs+].");
 								} else {
-									genericOrgasmSB.append(" Remaining completely motionless, [npc.name] [npc.verb(keep)] [npc.her] [npc.cock+] positioned between [npc2.namePos] [npc2.crotchBoobs+].");
+									genericOrgasmSB.append(" Оставаясь совершенно неподвижным, [npc.name] [npc.verb(keep)] [npc.her] [npc.cock+] расположен между [npc2.namePos] [npc2.crotchBoobs+].");
 								}
 							} else {
-								genericOrgasmSB.append(" [npc.Name] [npc.verb(continue)] thrusting [npc.her] [npc.cock+] against [npc2.namePos] [npc2.crotchBoobs+], letting out [npc.a_moan+] as [npc.she] [npc.verb(feel)] it start to twitch.");
+								genericOrgasmSB.append(" [npc.Name] [npc.verb(continue)] толчками вгоняет [npc.her] [npc.cock+] в [npc2.namePos] [npc2.crotchBoobs+], издавая [npc.a_moan+], когда [npc.she] [npc.verb(feel)] начинает дергаться.");
 							}
 							
 							for(PenetrationModifier mod : PenetrationModifier.getPenetrationModifiers()) {
 								switch(mod) {
 									case BARBED:
 										if(!immobile && characterOrgasming.hasPenisModifier(mod)) {
-											modifiers.add(" [npc.Her] movements cause the barbs lining [npc.her] [npc.cock] to rake against the sides of [npc2.namePos] [npc2.crotchBoobs]"+penisModPostfix);
+											modifiers.add(" Движения [npc.Her] заставляют шипы, покрывающие [npc.her] [npc.cock], скрести по стенкам [npc2.namePos] [npc2.crotchBoobs]"+penisModPostfix);
 										}
 										break;
 									case FLARED:
 										if(characterOrgasming.hasPenisModifier(mod)) {
-											modifiers.add(" [npc.Her] flared head swells up and rubs lewdly against [npc2.namePos] [npc2.crotchBoobs+]"+penisModPostfix);
+											modifiers.add(" Раздутая головка [npc.Her] набухает и похотливо трется о [npc2.namePos] [npc2.crotchBoobs+]"+penisModPostfix);
 										}
 										break;
 									case KNOTTED:
 										if(!immobile && characterOrgasming.hasPenisModifier(mod)) {
-											modifiers.add(" [npc.Her] fat knot swells up, and with each thrust, bumps wildly against [npc2.namePos] [npc2.crotchBoobs+]"+penisModPostfix);
+											modifiers.add(" Жирное уплотнение [npc.Her] набухает, и с каждым толчком оно неистово бьется о [npc2.namePos] [npc2.crotchBoobs+]"+penisModPostfix);
 										}
 										break;
 									case PREHENSILE:
 										if(!immobile && characterOrgasming.hasPenisModifier(mod)) {
-											modifiers.add(" Harnessing the ability of [npc.her] prehensile cock, [npc.name] curls it around alternating sides of [npc2.namePos] [npc2.crotchBoobs]"+penisModPostfix);
+											modifiers.add(" Используя способность хватательного члена [npc.her], [npc.name] обвивает его вокруг разных сторон [npc2.namePos] [npc2.crotchBoobs]"+penisModPostfix);
 										}
 										break;
 									case RIBBED:
 										if(!immobile && characterOrgasming.hasPenisModifier(mod)) {
-											modifiers.add(" [npc.Her] ribbed shaft repeatedly bumps against [npc2.namePos] [npc2.crotchBoobs+] on every thrust"+penisModPostfix);
+											modifiers.add(" Ребристый ствол [npc.Her] при каждом толчке раз за разом бьется о [npc2.namePos] [npc2.crotchBoobs+]"+penisModPostfix);
 										}
 										break;
 									case TENTACLED:
 										if(characterOrgasming.hasPenisModifier(mod)) {
-											modifiers.add(" The little tentacles lining [npc.her] shaft wriggle against and massage [npc2.namePos] [npc2.crotchBoobs+]"+penisModPostfix);
+											modifiers.add(" Маленькие щупальца, покрывающие ствол [npc.her], извиваются и массируют [npc2.namePos] [npc2.crotchBoobs+]"+penisModPostfix);
 										}
 										break;
 									case BLUNT:
@@ -1021,51 +990,39 @@ public class GenericOrgasms {
 								if(immobile) { // Doesn't make sense if characterTargeted is resisting...
 									if(sleeping) {
 										genericOrgasmSB.append(UtilText.parse(Util.newArrayListOfValues(characterOrgasming, characterTargeted, primary),
-												" [npc.NamePos] [npc.cock+] slides out of [npc3.namePos] throat at the last moment,"
-														+ " and [npc.she] [npc.verb(remain)] asleep as [npc2.name] [npc2.verb(lean)] forwards and [npc2.verb(take)] it in [npc2.her] mouth."));
+												" [npc.NamePos] [npc.cock+] в последний момент выскальзывает из горла [npc3.namePos], и [npc.she] [npc.verb(remain)] спящим, пока [npc2.name] [npc2.verb(lean)] вперед и [npc2.verb(take)] его в [npc2.her] рот."));
 									} else {
 										genericOrgasmSB.append(UtilText.parse(Util.newArrayListOfValues(characterOrgasming, characterTargeted, primary),
-												" Feeling [npc.her] [npc.cock+] sliding out of [npc3.namePos] throat at the last moment,"
-														+ " [npc.name] obediently [npc.verb(remain)] motionless as [npc2.name] [npc2.verb(lean)] forwards and [npc2.verb(take)] it in [npc2.her] mouth."));
+												" Чувствуя, как [npc.her] [npc.cock+] выскальзывает из [npc3.namePos] горла в самый последний момент, [npc.name] послушно [npc.verb(remain)] неподвижно, пока [npc2.name] [npc2.verb(lean)] вперед и [npc2.verb(take)] это в [npc2.her] рот."));
 									}
 									
 								} else {
 									genericOrgasmSB.append(UtilText.parse(Util.newArrayListOfValues(characterOrgasming, characterTargeted, primary),
-											" Not wanting [npc3.herHim] to be the one to bear the brunt of [npc.her] orgasm, [npc.name] [npc.verb(draw)] [npc.her] [npc.cock+] from out of [npc3.namePos] throat."));
+											" Не желая, чтобы [npc3.herHim] пришлось принимать на себя основной удар [npc.her] оргазма, [npc.name] [npc.verb(draw)] [npc.her] [npc.cock+] из [npc3.namePos] горла."));
 											
 									if(characterOrgasming.hasPenisModifier(PenetrationModifier.KNOTTED)) {
 										if(Objects.equals(Main.sex.getCharacterKnotting(characterOrgasming), characterTargeted)) {
 											genericOrgasmSB.append(UtilText.parse(Util.newArrayListOfValues(characterOrgasming, characterTargeted, primary),
-													" Moving the [npc.cockHead+] over to point directly at [npc2.namePos] mouth, [npc.she] [npc.verb(thrust)] forwards and "
-														+ " [npc.verb(hilt)] [npc.her] [npc.cock+] down [npc2.namePos] throat, ramming [npc.her] rapidly-growing knot against [npc2.her] [npc2.lips+] in the process."
-													+ " It's already started to swell up so much that [npc.she] [npc.do]n't manage to get it into [npc2.her] [npc2.mouth] on the first thrust,"
-														+ " but after pulling back and slamming [npc.her] [npc.hips] forwards once again, [npc.she] [npc.verb(succeed)] in pushing the thick knot past [npc2.her] [npc2.lips]."
-													+ "<br/>"
-													+ "The moment [npc.she] [npc.verb(feel)] it pop inside, [npc.name] [npc.verb(let)] out [npc.a_moan+], and as [npc.she] presses [npc.her] groin firmly against [npc2.namePos] [npc2.face+],"
-														+ " [npc.her] knot finishes fully expanding and firmly locks [npc.her] [npc.cock+] down [npc2.namePos] throat."));
+													" Направляя [npc.cockHead+] прямо к рту [npc2.namePos], [npc.she] [npc.verb(thrust)] вперед и [npc.verb(hilt)] [npc.her] [npc.cock+] в [npc2.namePos] горло, при этом стремительно растущий узел [npc.her] с силой вбивается в [npc2.her] [npc2.lips+]. Он уже так раздулся, что [npc.she] [npc.do] не получается засунуть его в [npc2.her] [npc2.mouth] с первого толчка, но после того как [npc.her] отстраняется и снова с силой [npc.hips] вперед, [npc.she] [npc.verb(succeed)] удается протолкнуть толстый узел сквозь [npc2.her] [npc2.lips].<br/>В тот момент, когда [npc.she] [npc.verb(feel)] он лопается внутри, [npc.name] [npc.verb(let)] наружу [npc.a_moan+], и когда [npc.she] плотно прижимает [npc.her] пах к [npc2.namePos] [npc2.face+], узел [npc.her] полностью расширяется и намертво застревает в [npc.her] [npc.cock+] глубоко в [npc2.namePos] горле."));
 											
 										} else {
 											if(!Main.game.isPenetrationLimitationsEnabled() || characterOrgasming.isFullPenetrationTooShort(SexAreaPenetration.PENIS, characterTargeted, (SexAreaOrifice)contactingArea)) {
 												genericOrgasmSB.append(UtilText.parse(characterOrgasming, characterTargeted,
-														" Moving the [npc.cockHead+] over to point directly at [npc2.namePos] mouth, [npc.she] [npc.verb(thrust)] forwards until [npc.her] rapidly-growing knot is rammed against [npc2.her] [npc2.lips+]."
-														+ " Not wanting to get locked down [npc2.her] throat, [npc.name] [npc.verb(hold)] back from pushing the thick knot past [npc2.her] [npc2.lips]."));
+														" Направив [npc.cockHead+] прямо к рту [npc2.namePos], [npc.she] [npc.verb(thrust)] вперед, пока стремительно растущий узел [npc.her] не врезается в [npc2.her] [npc2.lips+]. Не желая застрять в [npc2.her] горле, [npc.name] [npc.verb(hold)] назад, не проталкивая толстый узел через [npc2.her] [npc2.lips]."));
 												
 											} else if(characterOrgasming.isWantingToFullyPenetrate(characterTargeted, SexAreaPenetration.PENIS)) {
-												genericOrgasmSB.append(" Moving the [npc.cockHead+] over to point directly at [npc2.namePos] mouth, [npc.she] [npc.verb(thrust)] forwards,"
-														+ " only to feel that [npc2.her] throat isn't deep enough to accommodate the full length of [npc.her] [npc.cock+], preventing [npc.her] rapidly-swelling knot from being pushed into [npc2.her] mouth.");
+												genericOrgasmSB.append(" Направив [npc.cockHead+] прямо к рту [npc2.namePos], [npc.she] [npc.verb(thrust)] вперед, лишь для того, чтобы почувствовать, что [npc2.her] горло недостаточно глубокое, чтобы вместить всю длину [npc.her] [npc.cock+], из-за чего стремительно набухающий узел [npc.her] не может пробиться в рот [npc2.her].");
 												
 											} else {
-												genericOrgasmSB.append(" Moving the [npc.cockHead+] over to point directly at [npc2.namePos] mouth, [npc.she] [npc.verb(thrust)] forwards,"
-														+ " but as [npc.she] [npc.do]n't want to cause [npc2.herHim] any discomfort, [npc.she] [npc.verb(hold)] back from fully hilting [npc.her] [npc.cock] down [npc2.her] throat.");
+												genericOrgasmSB.append(" Направив [npc.cockHead+] прямо к рту [npc2.namePos], [npc.she] [npc.verb(thrust)] вперед, но так как [npc.she] [npc.do] не хочет причинять [npc2.herHim] дискомфорт, [npc.she] [npc.verb(hold)] назад, не вбивая [npc.her] [npc.cock] до упора в [npc2.her] горло.");
 											}
 										}
 										
 									} else {
 										if(!Main.game.isPenetrationLimitationsEnabled() || characterOrgasming.isFullPenetrationTooShort(SexAreaPenetration.PENIS, characterTargeted, (SexAreaOrifice)contactingArea)) {
-											genericOrgasmSB.append(" Moving the [npc.cockHead+] over to point directly at [npc2.namePos] mouth, [npc.she] [npc.verb(thrust)] forwards, fully hilting [npc.her] [npc.cock+] deep down [npc2.her] throat."
-													+ " Grinding the base up against [npc2.her] [npc2.lips], [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(feel)] [npc.her] [npc.cock+] start to twitch inside of [npc2.herHim].");
+											genericOrgasmSB.append(" Направив [npc.cockHead+] прямо к рту [npc2.namePos], [npc.she] [npc.verb(thrust)] вперед, полностью вбивая [npc.her] [npc.cock+] глубоко в [npc2.her] горло. Втирая основание в [npc2.her] [npc2.lips], [npc.name] [npc.verb(let)] [npc.a_moan+], пока [npc.she] [npc.verb(feel)] [npc.her] [npc.cock+] начинают дергаться внутри [npc2.herHim].");
 										} else {
-											genericOrgasmSB.append(" Moving the [npc.cockHead+] over to point directly at [npc2.namePos] mouth, [npc.she] [npc.verb(thrust)] forwards, ramming [npc.her] twitching [npc.cock] deep down [npc2.namePos] throat.");
+											genericOrgasmSB.append(" Направляя [npc.cockHead+] прямо к рту [npc2.namePos], [npc.she] [npc.verb(thrust)] вперед, вбивая дергающийся [npc.cock] [npc.her] глубоко в [npc2.namePos] горло.");
 										}
 									}
 								}
@@ -1073,44 +1030,35 @@ public class GenericOrgasms {
 							} else {
 								if(immobile) {
 									if(!Main.game.isPenetrationLimitationsEnabled() || characterOrgasming.isFullPenetrationTooShort(SexAreaPenetration.PENIS, characterTargeted, (SexAreaOrifice)contactingArea)) {
-										genericOrgasmSB.append(" Remaining "+(sleeping?"asleep":"completely motionless")+", [npc.name] [npc.verb(keep)] [npc.her] [npc.cock+] fully hilted deep down [npc2.namePos] throat.");
+										genericOrgasmSB.append(" Остальное "+(sleeping?"спящий":"совершенно неподвижный")+", [npc.name] [npc.verb(keep)] [npc.her] [npc.cock+] до самого основания глубоко в [npc2.namePos] горло.");
 									} else {
-										genericOrgasmSB.append(" Remaining "+(sleeping?"asleep":"completely motionless")+", [npc.name] [npc.verb(keep)] [npc.her] [npc.cock+] shoved deep down [npc2.namePos] throat.");
+										genericOrgasmSB.append(" Остальное "+(sleeping?"спящий":"совершенно неподвижный")+", [npc.name] [npc.verb(keep)] [npc.her] [npc.cock+] заталкивая глубоко в [npc2.namePos] горло.");
 									}
 									
 								} else {
 									if(characterOrgasming.hasPenisModifier(PenetrationModifier.KNOTTED)) {
 										if(Objects.equals(Main.sex.getCharacterKnotting(characterOrgasming), characterTargeted)) {
 											genericOrgasmSB.append(UtilText.parse(Util.newArrayListOfValues(characterOrgasming, characterTargeted, primary),
-													" Letting out [npc.a_moan+], [npc.name] [npc.verb(thrust)] forwards and [npc.verb(hilt)] [npc.her] [npc.cock+] down [npc2.namePos] throat,"
-															+ " ramming [npc.her] rapidly-growing knot against [npc2.her] [npc2.lips+] in the process."
-													+ " It's already started to swell up so much that [npc.she] [npc.do]n't manage to get it into [npc2.her] [npc2.mouth] on the first thrust,"
-														+ " but after pulling back and slamming [npc.her] [npc.hips] forwards once again, [npc.she] [npc.verb(succeed)] in pushing the thick knot past [npc2.her] [npc2.lips]."
-													+ "<br/>"
-													+ "The moment [npc.she] [npc.verb(feel)] it pop inside, [npc.name] [npc.verb(let)] out [npc.a_moan+], and as [npc.she] presses [npc.her] groin firmly against [npc2.namePos] [npc2.face+],"
-														+ " [npc.her] knot finishes fully expanding and firmly locks [npc.her] [npc.cock+] down [npc2.namePos] throat."));
+													" Издавая [npc.a_moan+], [npc.name] [npc.verb(thrust)] вперед и [npc.verb(hilt)] [npc.her] [npc.cock+] вниз по [npc2.namePos] горлу, при этом стремительно растущий узел [npc.her] с силой вжимается в [npc2.her] [npc2.lips+]. Он уже начал так сильно раздуваться, что [npc.she] [npc.do] не получается загнать его в [npc2.her] [npc2.mouth] с первого толчка, но после того как [npc.her] оттягивается и снова с силой [npc.hips] вперед, [npc.she] [npc.verb(succeed)] удается протолкнуть толстый узел сквозь [npc2.her] [npc2.lips].<br/>В тот момент, когда [npc.she] [npc.verb(feel)] он лопается внутри, [npc.name] [npc.verb(let)] наружу [npc.a_moan+], и когда [npc.she] плотно прижимает [npc.her] пах к [npc2.namePos] [npc2.face+], узел [npc.her] окончательно расширяется и намертво застревает в [npc.her] [npc.cock+] глубоко в [npc2.namePos] горле."));
 											
 										} else {
 											if(!Main.game.isPenetrationLimitationsEnabled() || characterOrgasming.isFullPenetrationTooShort(SexAreaPenetration.PENIS, characterTargeted, (SexAreaOrifice)contactingArea)) {
 												genericOrgasmSB.append(UtilText.parse(characterOrgasming, characterTargeted,
-														" Letting out [npc.a_moan+], [npc.name] [npc.verb(thrust)] forwards until [npc.her] rapidly-growing knot is rammed against [npc2.her] [npc2.lips+]."
-														+ " Not wanting to get locked down [npc2.her] throat, [npc.name] [npc.verb(hold)] back from pushing the thick knot past [npc2.her] [npc2.lips]."));
+														" Издавая [npc.a_moan+], [npc.name] [npc.verb(thrust)] вперед, пока стремительно растущий узел [npc.her] не впечатывается в [npc2.her] [npc2.lips+]. Не желая, чтобы [npc2.her] горло заклинило, [npc.name] [npc.verb(hold)] назад, не давая толстому узлу проскочить сквозь [npc2.her] [npc2.lips]."));
 												
 											} else if(characterOrgasming.isWantingToFullyPenetrate(characterTargeted, SexAreaPenetration.PENIS)) {
-												genericOrgasmSB.append(" Letting out [npc.a_moan+], [npc.name] [npc.verb(thrust)] forwards,"
-														+ " only to feel that [npc2.her] throat isn't deep enough to accommodate the full length of [npc.her] [npc.cock+], preventing [npc.her] rapidly-swelling knot from being pushed into [npc2.her] mouth.");
+												genericOrgasmSB.append(" Издавая [npc.a_moan+], [npc.name], [npc.verb(thrust)] вперед, лишь для того, чтобы почувствовать, что [npc2.her] горло недостаточно глубокое, чтобы вместить всю длину [npc.her] [npc.cock+], из-за чего стремительно раздувающийся узел [npc.her] не может пробиться в [npc2.her] рот.");
 												
 											} else {
-												genericOrgasmSB.append(" Letting out [npc.a_moan+], [npc.name] [npc.verb(thrust)] forwards,"
-														+ " but as [npc.she] [npc.do]n't want to cause [npc2.herHim] any discomfort, [npc.she] [npc.verb(hold)] back from fully hilting [npc.her] [npc.cock] down [npc2.her] throat.");
+												genericOrgasmSB.append(" Издавая [npc.a_moan+], [npc.name] [npc.verb(thrust)] вперед, но так как [npc.she] [npc.do] не хочет причинять [npc2.herHim] дискомфорт, [npc.she] [npc.verb(hold)] назад, не давая [npc.her] [npc.cock] полностью войти в [npc2.her] горло.");
 											}
 										}
 											
 									} else {
 										if(!Main.game.isPenetrationLimitationsEnabled() || characterOrgasming.isFullPenetrationTooShort(SexAreaPenetration.PENIS, characterTargeted, (SexAreaOrifice)contactingArea)) {
-											genericOrgasmSB.append(" Fully hilting [npc.her] [npc.cock+] deep down [npc2.namePos] throat, [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(feel)] it starts to twitch inside of [npc2.herHim].");
+											genericOrgasmSB.append(" Полностью вогнав [npc.her] [npc.cock+] глубоко в [npc2.namePos] горло, [npc.name] [npc.verb(let)] [npc.a_moan+], когда [npc.she] [npc.verb(feel)], так как он начинает дергаться внутри [npc2.herHim].");
 										} else {
-											genericOrgasmSB.append(" Ramming [npc.her] [npc.cock+] deep down [npc2.namePos] throat, [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(feel)] it starts to twitch inside of [npc2.herHim].");
+											genericOrgasmSB.append(" Впечатывая [npc.her] [npc.cock+] глубоко в [npc2.namePos] горло, [npc.name] [npc.verb(let)] [npc.a_moan+], когда [npc.she] [npc.verb(feel)], так как он начинает дергаться внутри [npc2.herHim].");
 										}
 									}
 								}
@@ -1121,38 +1069,38 @@ public class GenericOrgasms {
 								switch(mod) {
 									case BARBED:
 										if(!immobile && characterOrgasming.hasPenisModifier(mod)) {
-											modifiers.add(" [npc.Name] [npc.verb(continue)] to make small, thrusting movements, raking [npc.her] barbs back against the lining of [npc2.namePos] throat"
-													+ (immobileTarget?".":" and causing [npc2.herHim] to let out a choking [npc2.moan]."));
+											modifiers.add(" [npc.Name] [npc.verb(continue)], совершая короткие толчки, скребя [npc.her] шипами по слизистой [npc2.namePos] горла"
+													+ (immobileTarget?".":" и заставляя [npc2.herHim] издать удушливый [npc2.moan]."));
 										}
 										break;
 									case FLARED:
 										if(characterOrgasming.hasPenisModifier(mod)) {
 											if(characterOrgasming.isPlayer()) {
-												modifiers.add(" You feel the wide, flared head of your [npc.cock] swell up, making a seal with which to trap your [npc.cum] deep down [npc2.her] throat.");
+												modifiers.add(" Вы чувствуете, как широкая, расширенная головка вашего [npc.cock] раздувается, плотно прилегая к стенкам и запечатывая вашу [npc.cum] глубоко в [npc2.her] горле.");
 											} else {
-												modifiers.add(" The wide, flared head of [npc.namePos] [npc.cock] swells up, making a seal with which to trap [npc.her] [npc.cum] deep down [npc2.namePos] throat.");
+												modifiers.add(" Широкая, расширенная головка [npc.namePos] [npc.cock] раздувается, плотно прилегая и запечатывая [npc.her] [npc.cum] глубоко в [npc2.namePos] горле.");
 											}
 										}
 										break;
 									case RIBBED:
 										if(characterOrgasming.hasPenisModifier(mod)) {
 											if(characterOrgasming.isPlayer()) {
-												modifiers.add(" You feel your ribbed [npc.cock] bumping against the lining of [npc2.her] throat"
-														+ (immobileTarget?", but [npc2.she] doesn't react in any way whatsoever.":", which causes [npc2.herHim] to let out a muffled [npc2.moan]."));
+												modifiers.add(" Вы чувствуете, как ваш ребристый [npc.cock] упирается в стенки [npc2.her] горла"
+														+ (immobileTarget?", но [npc2.she] никак на это не реагирует.":", из-за чего [npc2.herHim] издает приглушенный [npc2.moan]."));
 											} else {
-												modifiers.add(" The ribbed length of [npc.namePos] [npc.cock] bumps against the lining of [npc2.namePos] throat"
-														+ (immobileTarget?", but [npc2.she] [npc2.do]n't react in any way whatsoever.":", which causes [npc2.herHim] to let out a muffled [npc2.moan]."));
+												modifiers.add(" Ребристое тело [npc.namePos] [npc.cock] упирается в стенки [npc2.namePos] горла"
+														+ (immobileTarget?", но [npc2.she] [npc2.do] никак на это не реагирует.":", из-за чего [npc2.herHim] издает приглушенный [npc2.moan]."));
 											}
 										}
 										break;
 									case TENTACLED:
 										if(characterOrgasming.hasPenisModifier(mod)) {
 											if(characterOrgasming.isPlayer()) {
-												modifiers.add(" You feel the wriggling tentacles lining your [npc.cock] start to massage the lining of [npc2.her] throat"
-														+ (immobileTarget?", but [npc2.she] [npc2.do]n't react in any way whatsoever.":", which causes [npc2.herHim] to let out a muffled [npc2.moan]."));
+												modifiers.add(" Вы чувствуете, как извивающиеся щупальца внутри вашего [npc.cock] начинают массировать стенки [npc2.her] горла"
+														+ (immobileTarget?", но [npc2.she] [npc2.do] никак на это не реагирует.":", из-за чего [npc2.herHim] издает приглушенный [npc2.moan]."));
 											} else {
-												modifiers.add(" The wriggling tentacles lining [npc.namePos] [npc.cock] start to massage the lining of [npc2.namePos] throat"
-														+ (immobileTarget?", but [npc2.she] [npc2.do]n't react in any way whatsoever.":", which causes [npc2.herHim] to let out a muffled [npc2.moan]."));
+												modifiers.add(" Извивающиеся щупальца, покрывающие [npc.namePos] [npc.cock], начинают массировать слизистую [npc2.namePos] горла"
+														+ (immobileTarget?", но [npc2.she] [npc2.do] никак на это не реагирует.":", из-за чего [npc2.herHim] издает приглушенный [npc2.moan]."));
 											}
 										}
 										break;
@@ -1175,12 +1123,12 @@ public class GenericOrgasms {
 						case THIGHS:
 							if(immobile) {
 								if(sleeping) {
-									genericOrgasmSB.append(" Remaining asleep, [npc.name] [npc.verb(keep)] [npc.her] [npc.cock+] positioned between [npc2.namePos] thighs.");
+									genericOrgasmSB.append(" Все еще спящая, [npc.name] [npc.verb(keep)] [npc.her] [npc.cock+] зажат между бедер [npc2.namePos].");
 								} else {
-									genericOrgasmSB.append(" Remaining completely motionless, [npc.name] [npc.verb(keep)] [npc.her] [npc.cock+] positioned between [npc2.namePos] thighs.");
+									genericOrgasmSB.append(" Оставаясь совершенно неподвижной, [npc.name] [npc.verb(keep)] [npc.her] [npc.cock+] зажат между бедер [npc2.namePos].");
 								}
 							} else {
-								genericOrgasmSB.append(" [npc.Name] [npc.verb(continue)] thrusting [npc.her] [npc.cock+] between [npc2.namePos] thighs, letting out [npc.a_moan+] as [npc.she] [npc.verb(feel)] it start to twitch.");
+								genericOrgasmSB.append(" [npc.Name] [npc.verb(continue)] вгоняет [npc.her] [npc.cock+] между бедер [npc2.namePos], издавая [npc.a_moan+], когда [npc.she] [npc.verb(feel)] начинает дергаться.");
 							}
 
 							modifiers.clear();
@@ -1188,32 +1136,32 @@ public class GenericOrgasms {
 								switch(mod) {
 									case BARBED:
 										if(!immobile && characterOrgasming.hasPenisModifier(mod)) {
-											modifiers.add(" [npc.Her] movements cause the barbs lining the sides of [npc.her] [npc.cock] to rake against [npc2.namePos] [npc2.legs+]"+penisModPostfix);
+											modifiers.add(" Движения [npc.Her] заставляют шипы по бокам [npc.her] [npc.cock] скрести по [npc2.namePos] [npc2.legs+]"+penisModPostfix);
 										}
 										break;
 									case FLARED:
 										if(characterOrgasming.hasPenisModifier(mod)) {
-											modifiers.add(" [npc.Her] flared head swells up, causing [npc2.namePos] [npc2.legs+] to be parted ever wider"+penisModPostfix);
+											modifiers.add(" Раздутая головка [npc.Her] набухает, заставляя [npc2.namePos] [npc2.legs+] раскрываться еще шире"+penisModPostfix);
 										}
 										break;
 									case KNOTTED:
 										if(!immobile && characterOrgasming.hasPenisModifier(mod)) {
-											modifiers.add(" [npc.Her] fat knot swells up, and with each thrust, bumps wildly against [npc2.namePos] [npc2.legs+]"+penisModPostfix);
+											modifiers.add(" Жирное уплотнение [npc.Her] набухает, и с каждым толчком оно дико бьется о [npc2.namePos] [npc2.legs+]"+penisModPostfix);
 										}
 										break;
 									case PREHENSILE:
 										if(!immobile && characterOrgasming.hasPenisModifier(mod)) {
-											modifiers.add(" Harnessing the ability of [npc.her] prehensile cock, [npc.name] bends it around [npc2.namePos] [npc2.legs+] on each thrust"+penisModPostfix);
+											modifiers.add(" Используя способность хватательного члена [npc.her], [npc.name] обвивает его вокруг [npc2.namePos] [npc2.legs+] при каждом толчке"+penisModPostfix);
 										}
 										break;
 									case RIBBED:
 										if(!immobile && characterOrgasming.hasPenisModifier(mod)) {
-											modifiers.add(" [npc.Her] ribbed shaft repeatedly bumps against [npc2.namePos] [npc2.legs+] on every thrust"+penisModPostfix);
+											modifiers.add(" Ребристый ствол [npc.Her] при каждом толчке раз за разом бьется о [npc2.namePos] [npc2.legs+]"+penisModPostfix);
 										}
 										break;
 									case TENTACLED:
 										if(!immobile && characterOrgasming.hasPenisModifier(mod)) {
-											modifiers.add(" The little tentacles lining [npc.her] shaft wriggle against and massage [npc2.namePos] [npc2.legs+]"+penisModPostfix);
+											modifiers.add(" Маленькие щупальца, покрывающие ствол [npc.her], извиваются и массируют [npc2.namePos] [npc2.legs+]"+penisModPostfix);
 										}
 										break;
 									case BLUNT:
@@ -1238,15 +1186,15 @@ public class GenericOrgasms {
 							if(characterOrgasming.equals(characterTargeted)) {
 								if(immobile) {
 									if(sleeping) {
-										genericOrgasmSB.append(" [npc.She] [npc.verb(remain)] asleep while holding [npc.her] [npc.cock+] in [npc.her] [npc.hand].");
+										genericOrgasmSB.append(" [npc.She] [npc.verb(remain)] во сне, сжимая [npc.her] [npc.cock+] в [npc.her] [npc.hand].");
 									} else {
-										genericOrgasmSB.append(" [npc.She] [npc.verb(remain)] completely motionless while holding [npc.her] [npc.cock+] in [npc.her] [npc.hand], performing the role of inanimate sex doll with absolute perfection.");
+										genericOrgasmSB.append(" [npc.She] [npc.verb(remain)] совершенно неподвижно, сжимая [npc.her] [npc.cock+] в [npc.her] [npc.hand], с абсолютным совершенством исполняя роль неодушевленной секс-куклы.");
 									}
 								} else {
-									genericOrgasmSB.append(" [npc.She] [npc.verb(continue)] pumping [npc.her] [npc.cock+] with [npc.her] [npc.hand], letting out [npc.a_moan+] as [npc.she] [npc.verb(feel)] it start to twitch.");
+									genericOrgasmSB.append(" [npc.She] [npc.verb(continue)] качает [npc.her] [npc.cock+] с помощью [npc.her] [npc.hand], издавая [npc.a_moan+], когда [npc.she] [npc.verb(feel)] начинает дергаться.");
 								}
 							} else {
-								genericOrgasmSB.append(" [npc.Name] [npc.verb(continue)] thrusting [npc.her] [npc.cock+] into [npc2.namePos] [npc2.hand], letting out [npc.a_moan+] as [npc.she] [npc.verb(feel)] it start to twitch.");
+								genericOrgasmSB.append(" [npc.Name] [npc.verb(continue)] вгоняет [npc.her] [npc.cock+] в [npc2.namePos] [npc2.hand], издавая [npc.a_moan+], когда [npc.she] [npc.verb(feel)] начинает дергаться.");
 							}
 
 							modifiers.clear();
@@ -1255,58 +1203,57 @@ public class GenericOrgasms {
 									case BARBED:
 										if(!immobile && characterOrgasming.hasPenisModifier(mod)) {
 											if(characterOrgasming.equals(characterTargeted)) {
-												modifiers.add(" [npc.Her] movements cause the barbs lining the sides of [npc.her] [npc.cock] to rake against [npc.her] [npc.fingers+], causing [npc.herHim] to let out [npc.a_moan+].");
+												modifiers.add(" Движения [npc.Her] заставляют шипы вдоль боков [npc.her] [npc.cock] скрести по [npc.her] [npc.fingers+], заставляя [npc.herHim] издавать [npc.a_moan+].");
 											} else {
-												modifiers.add(" [npc.Her] movements cause the barbs lining the sides of [npc.her] [npc.cock] to rake against [npc2.namePos] [npc2.fingers+]"+penisModPostfix);
+												modifiers.add(" Движения [npc.Her] заставляют шипы вдоль боков [npc.her] [npc.cock] скрести по [npc2.namePos] [npc2.fingers+]"+penisModPostfix);
 											}
 										}
 										break;
 									case FLARED:
 										if(characterOrgasming.hasPenisModifier(mod)) {
 											if(characterOrgasming.equals(characterTargeted)) {
-												modifiers.add(" [npc.Her] flared head swells up, causing [npc.her] [npc.fingers+] to be spread ever wider"
+												modifiers.add(" Раздутая головка [npc.Her] набухает, заставляя [npc.her] [npc.fingers+] раздвигаться еще шире"
 														+(immobile
-															?" around [npc.her] [npc.cock+]."
-															:", which in turn causes [npc.herHim] to let out [npc.a_moan+]."));
+															?" вокруг [npc.her] [npc.cock+]."
+															:", что, в свою очередь, заставляет [npc.herHim] издавать [npc.a_moan+]."));
 											} else {
-												modifiers.add(" [npc.Her] flared head swells up, causing [npc2.namePos] [npc2.fingers+] to be parted ever wider"+penisModPostfix);
+												modifiers.add(" Раздутая головка [npc.Her] набухает, заставляя [npc2.namePos] [npc2.fingers+] расходиться еще шире"+penisModPostfix);
 											}
 										}
 										break;
 									case KNOTTED:
 										if(!immobile && characterOrgasming.hasPenisModifier(mod)) {
 											if(characterOrgasming.equals(characterTargeted)) {
-												modifiers.add(" [npc.Her] fat knot swells up, and with each thrust, bumps wildly against [npc.her] [npc.fingers+], which in turn causes [npc.herHim] to let out [npc.a_moan+].");
+												modifiers.add(" Жирный узел [npc.Her] раздувается, и с каждым толчком он неистово бьется о [npc.her] [npc.fingers+], отчего [npc.herHim] издает [npc.a_moan+].");
 											} else {
-												modifiers.add(" [npc.Her] fat knot swells up, and with each thrust, bumps wildly against [npc2.namePos] [npc2.fingers+]"+penisModPostfix);
+												modifiers.add(" Жирный узел [npc.Her] раздувается, и с каждым толчком он неистово бьется о [npc2.namePos] [npc2.fingers+]"+penisModPostfix);
 											}
 										}
 										break;
 									case PREHENSILE:
 										if(!immobile && characterOrgasming.hasPenisModifier(mod)) {
 											if(characterOrgasming.equals(characterTargeted)) {
-												modifiers.add(" Harnessing the ability of [npc.her] prehensile cock, [npc.name] [npc.verb(bend)] it around [npc.her] [npc.fingers+] on each thrust,"
-														+ " which in turn causes [npc.herHim] to let out [npc.a_moan+].");
+												modifiers.add(" Используя способность хватательного члена [npc.her], [npc.name] [npc.verb(bend)] его вокруг [npc.her] [npc.fingers+] при каждом толчке, что заставляет [npc.herHim] издавать [npc.a_moan+].");
 											} else {
-												modifiers.add(" Harnessing the ability of [npc.her] prehensile cock, [npc.name] [npc.verb(bend)] it around [npc2.namePos] [npc2.fingers+] on each thrust"+penisModPostfix);
+												modifiers.add(" Используя способность хватательного члена [npc.her], [npc.name] [npc.verb(bend)] его вокруг [npc2.namePos] [npc2.fingers+] при каждом толчке"+penisModPostfix);
 											}
 										}
 										break;
 									case RIBBED:
 										if(!immobile && characterOrgasming.hasPenisModifier(mod)) {
 											if(characterOrgasming.equals(characterTargeted)) {
-												modifiers.add(" [npc.Her] ribbed shaft repeatedly bumps against [npc.her] [npc.fingers+] on every thrust, which in turn causes [npc.herHim] to let out [npc.a_moan+].");
+												modifiers.add(" Ребристый ствол [npc.Her] при каждом толчке раз за разом бьется о [npc.her] [npc.fingers+], отчего [npc.herHim] издает [npc.a_moan+].");
 											} else {
-												modifiers.add(" [npc.Her] ribbed shaft repeatedly bumps against [npc2.namePos] [npc2.fingers+] on every thrust"+penisModPostfix);
+												modifiers.add(" Ребристый ствол [npc.Her] при каждом толчке раз за разом бьется о [npc2.namePos] [npc2.fingers+]"+penisModPostfix);
 											}
 										}
 										break;
 									case TENTACLED:
 										if(characterOrgasming.hasPenisModifier(mod)) {
 											if(characterOrgasming.equals(characterTargeted)) {
-												modifiers.add(" The little tentacles lining [npc.her] shaft wriggle against and massage [npc.her] [npc.fingers+]"+(immobile?".":", which in turn causes [npc.herHim] to let out [npc.a_moan+]."));
+												modifiers.add(" Маленькие щупальца, покрывающие ствол [npc.her], извиваются и массируют [npc.her] [npc.fingers+]"+(immobile?".":", что, в свою очередь, заставляет [npc.herHim] издавать [npc.a_moan+]."));
 											} else {
-												modifiers.add(" The little tentacles lining [npc.her] shaft wriggle against and massage [npc2.namePos] [npc2.fingers+] on every thrust"+penisModPostfix);
+												modifiers.add(" Маленькие щупальца, покрывающие ствол [npc.her], извиваются и массируют [npc2.namePos] [npc2.fingers+] при каждом толчке"+penisModPostfix);
 											}
 										}
 										break;
@@ -1323,39 +1270,39 @@ public class GenericOrgasms {
 							}
 							break;
 						case PENIS:
-							genericOrgasmSB.append(" [npc.Name] [npc.verb(continue)] grinding [npc.her] [npc.cock+] against [npc2.namePos] [npc2.cock+], letting out [npc.a_moan+] as [npc.she] [npc.verb(feel)] it start to twitch.");
+							genericOrgasmSB.append(" [npc.Name] [npc.verb(continue)], растирая [npc.her] [npc.cock+] о [npc2.namePos] [npc2.cock+], издает [npc.a_moan+], когда [npc.she] [npc.verb(feel)] начинает дергаться.");
 
 							modifiers.clear();
 							for(PenetrationModifier mod : PenetrationModifier.getPenetrationModifiers()) {
 								switch(mod) {
 									case BARBED:
 										if(!immobile && characterOrgasming.hasPenisModifier(mod)) {
-											modifiers.add(" [npc.Her] movements cause the barbs lining the sides of [npc.her] [npc.cock] to rake against [npc2.namePos] shaft"+penisModPostfix);
+											modifiers.add(" Движения [npc.Her] заставляют шипы по бокам [npc.her] [npc.cock] скрести по стволу [npc2.namePos]"+penisModPostfix);
 										}
 										break;
 									case FLARED:
 										if(characterOrgasming.hasPenisModifier(mod)) {
-											modifiers.add(" [npc.Her] flared head swells up and rubs against [npc2.namePos] shaft"+penisModPostfix);
+											modifiers.add(" Раздутая головка [npc.Her] набухает и трется о ствол [npc2.namePos]"+penisModPostfix);
 										}
 										break;
 									case KNOTTED:
 										if(!immobile && characterOrgasming.hasPenisModifier(mod)) {
-											modifiers.add(" [npc.Her] fat knot swells up, and with each thrust, bumps wildly against [npc2.namePos] shaft"+penisModPostfix);
+											modifiers.add(" Жирный узел [npc.Her] раздувается и с каждым толчком неистово бьется о ствол [npc2.namePos]"+penisModPostfix);
 										}
 										break;
 									case PREHENSILE:
 										if(!immobile && characterOrgasming.hasPenisModifier(mod)) {
-											modifiers.add(" Harnessing the ability of [npc.her] prehensile cock, [npc.name] [npc.verb(bend)] it around [npc2.namePos] shaft"+penisModPostfix);
+											modifiers.add(" Используя способность хватательного члена [npc.her], [npc.name] [npc.verb(bend)] его вокруг ствола [npc2.namePos]"+penisModPostfix);
 										}
 										break;
 									case RIBBED:
 										if(!immobile && characterOrgasming.hasPenisModifier(mod)) {
-											modifiers.add(" [npc.Her] ribbed shaft repeatedly bumps against [npc2.namePos] shaft on every thrust"+penisModPostfix);
+											modifiers.add(" Ребристый ствол [npc.Her] при каждом толчке раз за разом бьется о ствол [npc2.namePos]"+penisModPostfix);
 										}
 										break;
 									case TENTACLED:
 										if(characterOrgasming.hasPenisModifier(mod)) {
-											modifiers.add(" The little tentacles lining [npc.her] shaft wriggle against and massage [npc2.namePos] shaft"+penisModPostfix);
+											modifiers.add(" Маленькие щупальца, покрывающие ствол [npc.her], извиваются и массируют ствол [npc2.namePos]"+penisModPostfix);
 										}
 										break;
 									case BLUNT:
@@ -1377,15 +1324,15 @@ public class GenericOrgasms {
 						case FOOT://TODO modifiers
 							if(immobile) {
 								if(Main.sex.isDoubleFootJob(characterTargeted)) {
-									genericOrgasmSB.append(" Remaining "+(sleeping?"asleep":"completely motionless")+", [npc.name] [npc.verb(keep)] [npc.her] [npc.cock+] positioned between [npc2.namePos] [npc2.feet+].");
+									genericOrgasmSB.append(" Остальное "+(sleeping?"спящий":"совершенно неподвижный")+", [npc.name] [npc.verb(keep)] [npc.her] [npc.cock+], расположенный между [npc2.namePos] [npc2.feet+].");
 								} else {
-									genericOrgasmSB.append(" Remaining "+(sleeping?"asleep":"completely motionless")+", [npc.name] [npc.verb(keep)] [npc.her] [npc.cock+] pressed against [npc2.namePos] [npc2.foot+].");
+									genericOrgasmSB.append(" Остальное "+(sleeping?"спящий":"совершенно неподвижный")+", [npc.name] [npc.verb(keep)] [npc.her] [npc.cock+], прижатый к [npc2.namePos] [npc2.foot+].");
 								}
 							} else {
 								if(Main.sex.isDoubleFootJob(characterTargeted)) {
-									genericOrgasmSB.append(" [npc.Name] [npc.verb(continue)] thrusting [npc.her] [npc.cock+] between [npc2.namePos] [npc2.feet+], letting out [npc.a_moan+] as [npc.she] [npc.verb(feel)] it start to twitch.");
+									genericOrgasmSB.append(" [npc.Name] [npc.verb(continue)] толкая [npc.her] [npc.cock+] между [npc2.namePos] [npc2.feet+], издавая [npc.a_moan+], когда [npc.she] [npc.verb(feel)] он начинает дергаться.");
 								} else {
-									genericOrgasmSB.append(" [npc.Name] [npc.verb(continue)] rubbing [npc.her] [npc.cock+] against [npc2.namePos] [npc2.foot+], letting out [npc.a_moan+] as [npc.she] [npc.verb(feel)] it start to twitch.");
+									genericOrgasmSB.append(" [npc.Name] [npc.verb(continue)] потирая [npc.her] [npc.cock+] о [npc2.namePos] [npc2.foot+], издавая [npc.a_moan+], когда [npc.she] [npc.verb(feel)] он начинает дергаться.");
 								}
 							}
 							break;
@@ -1396,7 +1343,7 @@ public class GenericOrgasms {
 			}
 		}
 		
-		genericOrgasmSB.append(" As [npc.her] [npc.balls+] tense up, ");
+		genericOrgasmSB.append(" Когда [npc.her] и [npc.balls+] напрягаются, ");
 		genericOrgasmSB.append(getCumQuantityDescription(characterOrgasming));
 		if(characterOrgasming.getPenisRawOrgasmCumQuantity()>0) {
 			genericOrgasmSB.append(cumTargetDescription(sexAction, characterOrgasming, characterTargeted, cumTarget, condomFailure, isSecondaryCreampieTarget));
@@ -1425,44 +1372,44 @@ public class GenericOrgasms {
 					&& !immobile) {
 				if(immobileTarget) {
 					if(sleepingTarget) {
-						genericOrgasmSB.append("<br/>[npc2.Name] [npc2.verb(remain)] asleep as [npc.namePos] [npc.cum+] shoots deep inside [npc2.her] womb");
+						genericOrgasmSB.append("<br/>[npc2.Name] [npc2.verb(remain)] во сне, пока [npc.namePos] [npc.cum+] глубоко извергается в чрево [npc2.her]");
 					} else {
-						genericOrgasmSB.append("<br/>[npc2.Name] [npc2.verb(remain)] frozen in place as [npc2.she] [npc2.verb(feel)] [npc.namePos] [npc.cum+] shooting deep inside [npc2.her] womb");
+						genericOrgasmSB.append("<br/>[npc2.Name] [npc2.verb(remain)] замерла на месте, пока [npc2.she] [npc2.verb(feel)] в [npc.namePos] [npc.cum+], глубоко извергаясь в чрево [npc2.her]");
 					}
 				} else {
 					if(Main.sex.getSexPace(characterTargeted)==SexPace.SUB_RESISTING || characterTargeted.getFetishDesire(Fetish.FETISH_PREGNANCY).isNegative()) {
-						genericOrgasmSB.append("<br/>[npc2.Name] [npc2.verb(sob)] as [npc2.she] [npc2.verb(feel)] [npc.namePos] [npc.cum+] shooting deep inside [npc2.her] womb");
+						genericOrgasmSB.append("<br/>[npc2.Name] [npc2.verb(sob)], пока [npc2.she] [npc2.verb(feel)] в [npc.namePos] [npc.cum+], глубоко извергаясь в чрево [npc2.her]");
 					} else {
-						genericOrgasmSB.append("<br/>[npc2.Name] [npc2.moansVerb+] as [npc2.she] [npc2.verb(feel)] [npc.namePos] [npc.cum+] shooting deep inside [npc2.her] womb");
+						genericOrgasmSB.append("<br/>[npc2.Name] [npc2.moansVerb+], пока [npc2.she] [npc2.verb(feel)] в [npc.namePos] [npc.cum+], глубоко извергаясь в чрево [npc2.her]");
 					}
 				}
 				if(!characterOrgasming.isMute() && characterOrgasming.getFetishDesire(Fetish.FETISH_IMPREGNATION).isPositive()) {
 					if(immobileTarget) {
-						genericOrgasmSB.append(", and [npc2.verb(stay)] silent as [npc.name] ");
+						genericOrgasmSB.append(", и [npc2.verb(stay)] тихо, как [npc.name] ");
 					} else {
 						if(Main.sex.getSexPace(characterTargeted)==SexPace.SUB_RESISTING || characterTargeted.getFetishDesire(Fetish.FETISH_PREGNANCY).isNegative()) {
-							genericOrgasmSB.append(", and [npc2.verb(let)] out a distressed cry as [npc.name] ");
+							genericOrgasmSB.append(", и [npc2.verb(let)] издает страдальческий крик, как [npc.name] ");
 						} else {
-							genericOrgasmSB.append(", and [npc2.verb(let)] out a horny whine as [npc.name] ");
+							genericOrgasmSB.append(", и [npc2.verb(let)] издает похотливый стон, как [npc.name] ");
 						}
 					}
 					if(Main.sex.getSexPace(characterOrgasming)==SexPace.DOM_ROUGH
 							&& characterOrgasming.hasFetish(Fetish.FETISH_SADIST)
 							&& !Main.sex.isDom(characterTargeted)) {
 						genericOrgasmSB.append(UtilText.returnStringAtRandom(
-								"[npc.moansVerb], [npc.speechNoEffects(Get pregnant, you [npc2.bitch+]!)]",
-								"[npc.verb(tease)], [npc.speechNoEffects(You're going to get pregnant from this, [npc2.bitch]...)]",
-								"[npc.verb(tease)], [npc.speechNoEffects(You'll be carrying my kids soon enough, [npc2.bitch]...)]",
-								"[npc.verb(tease)], [npc.speechNoEffects(I'll have knocked you up from this, [npc2.bitch]...)]",
-								"[npc.verb(tease)], [npc.speechNoEffects(I'll have got you pregnant from this, [npc2.bitch]...)]"));
+								"[npc.moansVerb], [npc.speechNoEffects(Забеременеешь, [npc2.bitch+]!)]",
+								"[npc.verb(tease)], [npc.speechNoEffects(От этого ты точно забеременеешь, [npc2.bitch]...)]",
+								"[npc.verb(tease)], [npc.speechNoEffects(Скоро ты будешь носить моих детей, [npc2.bitch]...)]",
+								"[npc.verb(tease)], [npc.speechNoEffects(От этого ты точно забеременеешь, [npc2.bitch]...)]",
+								"[npc.verb(tease)], [npc.speechNoEffects(От этого ты точно залетаешь, [npc2.bitch]...)]"));
 						
 					} else {
 						genericOrgasmSB.append(UtilText.returnStringAtRandom(
-								"[npc.moansVerb], [npc.speechNoEffects(Get pregnant!)]",
-								"[npc.verb(tease)], [npc.speechNoEffects(You're going to get pregnant from this...)]",
-								"[npc.verb(tease)], [npc.speechNoEffects(You'll be carrying my kids soon enough...)]",
-								"[npc.verb(tease)], [npc.speechNoEffects(I'll have knocked you up from this...)]",
-								"[npc.verb(tease)], [npc.speechNoEffects(I'll have got you pregnant from this...)]"));
+								"[npc.moansVerb], [npc.speechNoEffects(Беременней!)]",
+								"[npc.verb(tease)], [npc.speechNoEffects(От этого ты можешь забеременеть...)]",
+								"[npc.verb(tease)], [npc.speechNoEffects(Скоро ты будешь носить моих детей...)]",
+								"[npc.verb(tease)], [npc.speechNoEffects(От этого ты точно забеременеешь...)]",
+								"[npc.verb(tease)], [npc.speechNoEffects(От этого ты точно залетишь...)]"));
 					}
 				} else {
 					genericOrgasmSB.append(".");
@@ -1471,15 +1418,15 @@ public class GenericOrgasms {
 			} else {
 				if(immobileTarget) {
 					if(sleepingTarget) {
-						genericOrgasmSB.append("<br/>[npc2.Name] [npc2.verb(remain)] asleep as [npc.namePos] [npc.cum+] shoots deep inside of [npc2.herHim].");
+						genericOrgasmSB.append("<br/>[npc2.Name] [npc2.verb(remain)] спит, пока [npc.namePos] [npc.cum+] кончает глубоко внутрь [npc2.herHim].");
 					} else {
-						genericOrgasmSB.append("<br/>[npc2.Name] [npc2.verb(remain)] frozen in place as [npc2.she] [npc2.verb(feel)] [npc.namePos] [npc.cum+] shooting deep inside of [npc2.herHim].");
+						genericOrgasmSB.append("<br/>[npc2.Name] [npc2.verb(remain)] замерла на месте, пока [npc2.she] [npc2.verb(feel)] [npc.namePos] [npc.cum+] кончает глубоко внутрь [npc2.herHim].");
 					}
 				} else {
 					if(Main.sex.getSexPace(characterTargeted)==SexPace.SUB_RESISTING) {
-						genericOrgasmSB.append("<br/>[npc2.Name] [npc2.verb(sob)] as [npc2.she] [npc2.verb(feel)] [npc.namePos] [npc.cum+] shooting deep inside of [npc2.herHim].");
+						genericOrgasmSB.append("<br/>[npc2.Name] [npc2.verb(sob)], пока [npc2.she] [npc2.verb(feel)] [npc.namePos] [npc.cum+] кончает глубоко внутрь [npc2.herHim].");
 					} else {
-						genericOrgasmSB.append("<br/>[npc2.Name] [npc2.moansVerb+] as [npc2.she] [npc2.verb(feel)] [npc.namePos] [npc.cum+] shooting deep inside of [npc2.herHim].");
+						genericOrgasmSB.append("<br/>[npc2.Name] [npc2.moansVerb+] как [npc2.she] [npc2.verb(feel)] [npc.namePos] [npc.cum+], выстреливая глубоко внутрь [npc2.herHim].");
 					}
 				}
 			}
@@ -1490,14 +1437,7 @@ public class GenericOrgasms {
 				&& Objects.equals(Main.sex.getCharacterKnotting(characterOrgasming), characterTargeted)
 				&& contactingArea.isOrifice()
 				&& ((SexAreaOrifice)contactingArea).isInternalOrifice()) {
-			genericOrgasmSB.append("<br/>"
-					+ "Even after [npc.namePos] [npc.balls+] have pumped their entire load into [npc2.name], [npc.her] knot remains swollen, locking"
-					+ "#IF(npc2.isPlayer() || npc.isPlayer())"
-						+ " the two of you together."
-					+ "#ELSE"
-						+ " [npc.herHim] and [npc.her] partner together."
-					+ "#ENDIF"
-					+ " It takes a few minutes for it to start to deflate, and with a wet pop, [npc.sheIs] finally able to pull [npc.her] [npc.cock+] free.");
+			genericOrgasmSB.append("<br/>Даже после того, как [npc.namePos] [npc.balls+] выкачали всю свою порцию в [npc2.name], [npc.her] узел остается раздутым, намертво сцепляя#IF(npc2.isPlayer() || npc.isPlayer()) вас двоих.#ELSE [npc.herHim] и [npc.her] в единое целое.#ENDIF Проходит несколько минут, прежде чем он начинает спадать, и с влажным хлопком [npc.sheIs] наконец удается высвободить [npc.her] [npc.cock+].");
 		}
 		
 		if(characterTargeted!=null) {
@@ -1512,32 +1452,32 @@ public class GenericOrgasms {
 		if(!characterOrgasming.isPlayer()) {
 			targetName = "[npc.namePos]";
 		}
-		String cumQuantityDescription = targetName+" [npc.cum+] squirts";
+		String cumQuantityDescription = targetName+" [npc.cum+] брызжет";
 		
 		switch (characterOrgasming.getPenisOrgasmCumQuantity()) {
 			case ZERO_NONE:
-				cumQuantityDescription = "not even a single drop of [npc.cum] is produced...";
+				cumQuantityDescription = "не выдается ни единой капли [npc.cum]...";
 				break;
 			case ONE_TRICKLE:
-				cumQuantityDescription = "a small trickle of [npc.cum+] squirts";
+				cumQuantityDescription = "тонкая струйка [npc.cum+] брызжет";
 				break;
 			case TWO_SMALL_AMOUNT:
-				cumQuantityDescription = "a small amount of [npc.cum+] squirts";
+				cumQuantityDescription = "небольшое количество [npc.cum+] брызжет";
 				break;
 			case THREE_AVERAGE:
-				cumQuantityDescription = targetName+" [npc.cum+] squirts out";
+				cumQuantityDescription = targetName+" [npc.cum+] выплескивается";
 				break;
 			case FOUR_LARGE:
-				cumQuantityDescription = targetName+" [npc.cum+] shoots out";
+				cumQuantityDescription = targetName+" [npc.cum+] вылетает струей";
 				break;
 			case FIVE_HUGE:
-				cumQuantityDescription = targetName+" [npc.cum+] shoots out";
+				cumQuantityDescription = targetName+" [npc.cum+] вылетает струей";
 				break;
 			case SIX_EXTREME:
-				cumQuantityDescription = targetName+" [npc.cum+] spurts out";
+				cumQuantityDescription = targetName+" [npc.cum+] брызжет наружу";
 				break;
 			case SEVEN_MONSTROUS:
-				cumQuantityDescription = targetName+" [npc.cum+] spurts out";
+				cumQuantityDescription = targetName+" [npc.cum+] брызжет наружу";
 				break;
 		}
 		return UtilText.parse(characterOrgasming, cumQuantityDescription);
@@ -1548,41 +1488,36 @@ public class GenericOrgasms {
 		
 		if(!isSecondaryCreampieTarget) {
 			if(characterOrgasming.isWearingCondom()) {
-				cumTargetSB.append(UtilText.parse(characterOrgasming, " into the condom that [npc.sheIs] wearing."));
+				cumTargetSB.append(UtilText.parse(characterOrgasming, " в презерватив, который [npc.sheIs] носит."));
 				
 				switch(condomFailure) {
 					case CUM_OVERLOAD:
 						cumTargetSB.append(UtilText.parse(characterOrgasming,
-								" [npc.Her] orgasm proves to be too much for the rubbery sheath to endure, and after swelling up and filling with [npc.her] huge amount of [npc.cum+], it suddenly bursts, expelling [npc.her] cum"));
+								" Оргазм [npc.Her] оказывается слишком мощным для резиновой оболочки, и после того как она раздувается и наполняется огромным количеством [npc.cum+] [npc.her], она внезапно лопается, извергая [npc.her] сперму"));
 						break;
 					case MINERAL_OIL_CUM:
 						cumTargetSB.append(UtilText.parse(characterOrgasming, target,
-								" Although ordinarily strong enough to contain [npc.her] cum, the rubbery sheath's durability has been severely degraded by [npc2.namePos] mineral-oil-infused cum, and"
-										+ " after swelling up and filling with [npc.namePos] [npc.cum+], it suddenly bursts, expelling [npc.her] seed"));
+								" Хотя обычно резиновая оболочка достаточно прочна, чтобы удерживать [npc.her] сперму, её долговечность была серьезно подорвана [npc2.namePos] пропитанной минеральным маслом спермой, и после того как она раздувается и наполняется [npc.namePos] [npc.cum+], она внезапно лопается, извергая [npc.her] семя"));
 						break;
 					case MINERAL_OIL_GIRLCUM:
 						cumTargetSB.append(UtilText.parse(characterOrgasming, target,
-								" Although ordinarily strong enough to contain [npc.her] cum, the rubbery sheath's durability has been severely degraded by [npc2.namePos] mineral-oil-infused girlcum, and"
-										+ " after swelling up and filling with [npc.namePos] [npc.cum+], it suddenly bursts, expelling [npc.her] seed"));
+								" Хотя обычно резиновая оболочка достаточно прочна, чтобы удерживать [npc.her] сперму, её долговечность была серьезно подорвана [npc2.namePos] пропитанной минеральным маслом женской спермой, и после того как она раздувается и наполняется [npc.namePos] [npc.cum+], она внезапно лопается, извергая [npc.her] семя"));
 						break;
 					case MINERAL_OIL_MILK:
 						cumTargetSB.append(UtilText.parse(characterOrgasming, target,
-								" Although ordinarily strong enough to contain [npc.her] cum, the rubbery sheath's durability has been severely degraded by [npc2.namePos] mineral-oil-infused milk, and"
-										+ " after swelling up and filling with [npc.namePos] [npc.cum+], it suddenly bursts, expelling [npc.her] seed"));
+								" Хотя обычно резиновая оболочка достаточно прочна, чтобы удерживать [npc.her] сперму, её долговечность была серьезно подорвана [npc2.namePos] пропитанным минеральным маслом молоком, и после того как она раздувается и наполняется [npc.namePos] [npc.cum+], она внезапно лопается, извергая [npc.her] семя"));
 						break;
 					case MINERAL_OIL_SALIVA:
 						cumTargetSB.append(UtilText.parse(characterOrgasming, target,
-								" Although ordinarily strong enough to contain [npc.her] cum, the rubbery sheath's durability has been severely degraded by [npc2.namePos] mineral-oil-infused saliva, and"
-										+ " after swelling up and filling with [npc.namePos] [npc.cum+], it suddenly bursts, expelling [npc.her] seed"));
+								" Хотя обычно резиновая оболочка достаточно прочна, чтобы удерживать [npc.her] сперму, её долговечность была серьезно подорвана [npc2.namePos] пропитанной минеральным маслом слюной, и после того как она раздувается и наполняется [npc.namePos] [npc.cum+], она внезапно лопается, извергая [npc.her] семя"));
 						break;
 					case MINERAL_OIL_SELF_CUM:
 						cumTargetSB.append(UtilText.parse(characterOrgasming, target,
-								" Although ordinarily strong enough to contain the quantity of cum that [npc.name] produces, the rubbery sheath's durability is instantaneously degraded by [npc.her] mineral-oil-infused cum,"
-										+ " and it suddenly bursts, expelling [npc.her] seed"));
+								" Хотя обычно прочности резинового презерватива хватает, чтобы удержать объем спермы, который производит [npc.name], насыщенная [npc.her] минеральным маслом сперма мгновенно разъедает его, и он внезапно лопается, извергая [npc.her] семя"));
 						break;
 					case SABOTAGED:
 						cumTargetSB.append(UtilText.parse(characterOrgasming,
-								" Having been surreptitiously sabotaged, the rubbery sheath's durability is severely compromised, and as it swells up and fills with [npc.namePos] [npc.cum+], it suddenly bursts, expelling [npc.her] seed"));
+								" Из-за тайного саботажа прочность резинового презерватива оказывается серьезно подорвана, и когда он раздувается, наполняясь [npc.cum+] [npc.namePos], он внезапно лопается, извергая [npc.her] семя"));
 						break;
 					case NONE:
 					case EGG_LAYING:
@@ -1594,9 +1529,9 @@ public class GenericOrgasms {
 		
 		if(!characterOrgasming.isCoverableAreaExposed(CoverableArea.PENIS)) {
 			if(characterOrgasming.isPlayer()) {
-				return "  into your [npc.lowClothing(PENIS)].";
+				return "  прямо на твой [npc.lowClothing(PENIS)].";
 			} else {
-				return UtilText.parse(characterOrgasming, "  into [npc.her] [npc.lowClothing(PENIS)].");
+				return UtilText.parse(characterOrgasming, "  прямо на [npc.lowClothing(PENIS)] [npc.her].");
 			}
 		}
 
@@ -1631,24 +1566,24 @@ public class GenericOrgasms {
 					
 				} else {
 					StringBuilder sb = new StringBuilder();
-					sb.append(" all over [npc2.namePos] [npc2.armpit+].");
+					sb.append(" по всей [npc2.namePos] [npc2.armpit+].");
 					if(immobile) {
 						if(sleeping) {
-							sb.append(" [npc.Name] [npc.verb(remain)] deeply asleep as [npc.her] [npc.cum+] splatters onto [npc2.namePos] arm,");
+							sb.append(" [npc.Name] [npc.verb(remain)] глубоко спит, пока [npc.her] [npc.cum+] разбрызгивается по [npc2.namePos] руке,");
 						} else {
-							sb.append(" [npc.Name] [npc.verb(remain)] silent and unmoving as [npc.her] [npc.cum+] splatters onto [npc2.namePos] arm,");
+							sb.append(" [npc.Name] [npc.verb(remain)] тихо и неподвижно, пока [npc.her] [npc.cum+] разбрызгивается по [npc2.namePos] руке,");
 						}
 					} else {
-						sb.append(" [npc.Name] [npc.verb(grin)] as [npc.her] [npc.cum+] splatters onto [npc2.namePos] arm,");
+						sb.append(" [npc.Name] [npc.verb(grin)], пока [npc.her] [npc.cum+] разбрызгивается по [npc2.namePos] руке,");
 					}
 					if(isCharacterTotallyImmobilised(target)) {
 						if(target.isAsleep()) {
-							sb.append(" who [npc2.verb(remain)] deeply asleep as it runs down over [npc2.her] [npc2.armSkin+].");
+							sb.append(" которая [npc2.verb(remain)] глубоко спит, пока оно стекает по [npc2.her] [npc2.armSkin+].");
 						} else {
-							sb.append(" who [npc2.do]n't react in any way whatsoever as [npc2.she] [npc2.verb(feel)] it run down over [npc2.her] [npc2.armSkin+].");
+							sb.append(" которая [npc2.do] никак не реагирует, пока [npc2.she] [npc2.verb(feel)] стекает по [npc2.her] [npc2.armSkin+].");
 						}
 					} else {
-						sb.append(" who can't help but let out [npc2.a_moan] as [npc2.she] [npc2.verb(feel)] it run down over [npc2.her] [npc2.armSkin+].");
+						sb.append(" которая не может не издать [npc2.a_moan], пока [npc2.she] [npc2.verb(feel)] стекает по [npc2.her] [npc2.armSkin+].");
 					}
 					return UtilText.parse(characterOrgasming, target, sb.toString());
 				}
@@ -1659,31 +1594,31 @@ public class GenericOrgasms {
 					
 				} else {
 					StringBuilder sb = new StringBuilder();
-					sb.append(" all over [npc2.namePos] [npc2.ass+].");
+					sb.append(" по всему [npc2.namePos] [npc2.ass+].");
 					if(immobile) {
 						if(sleeping) {
-							sb.append(" [npc.Name] [npc.verb(remain)] deeply asleep as [npc.her] [npc.cum+] splatters onto [npc2.namePos] naked backside,");
+							sb.append(" [npc.Name] [npc.verb(remain)] глубоким сном, пока [npc.her] [npc.cum+] разлетается по [npc2.namePos] голой заднице,");
 						} else {
-							sb.append(" [npc.Name] [npc.verb(remain)] silent and unmoving as [npc.her] [npc.cum+] splatters onto [npc2.namePos] naked backside,");
+							sb.append(" [npc.Name] [npc.verb(remain)] безмолвно и неподвижно, пока [npc.her] [npc.cum+] разлетается по [npc2.namePos] голой заднице,");
 						}
 					} else {
-						sb.append(" [npc.Name] [npc.verb(grin)] as [npc.her] [npc.cum+] splatters onto [npc2.namePos] naked backside,");
+						sb.append(" [npc.Name] [npc.verb(grin)], пока [npc.her] [npc.cum+] разлетается по [npc2.namePos] голой заднице,");
 					}
 					if(isCharacterTotallyImmobilised(target)) {
 						if(target.isAsleep()) {
-							sb.append(" who [npc2.verb(remain)] deeply asleep as it");
+							sb.append(" которая [npc2.verb(remain)] глубоким сном, пока оно");
 						} else {
-							sb.append(" who [npc2.do]n't react in any way whatsoever as [npc2.she] [npc2.verb(feel)] it");
+							sb.append(" которая [npc2.do] не реагирует никак, пока [npc2.she] [npc2.verb(feel)] его");
 						}
 					} else {
-						sb.append(" who can't help but let out [npc2.a_moan] as [npc2.she] [npc2.verb(feel)] it");
+						sb.append(" которая не может не издать [npc2.a_moan], пока [npc2.she] [npc2.verb(feel)] его");
 					}
 					if(target.getGenitalArrangement()==GenitalArrangement.CLOACA) {
-						sb.append(" run down over [npc2.her] [npc2.assSkin+].");
+						sb.append(" стекает по [npc2.her] [npc2.assSkin+].");
 					} else if(target.getGenitalArrangement()==GenitalArrangement.CLOACA_BEHIND) {
-						sb.append(" run down over [npc2.her] [npc2.assSkin+] and rear-facing cloaca.");
+						sb.append(" стекает по [npc2.her] [npc2.assSkin+] и задней клоаке.");
 					} else {
-						sb.append(" run down over [npc2.her] [npc2.asshole+].");
+						sb.append(" стекает по [npc2.her] [npc2.asshole+].");
 					}
 					return UtilText.parse(characterOrgasming, target, sb.toString());
 				}
@@ -1694,24 +1629,24 @@ public class GenericOrgasms {
 					
 				} else {
 					StringBuilder sb = new StringBuilder();
-					sb.append(" all over [npc2.namePos] back.");
+					sb.append(" по всей спине [npc2.namePos].");
 					if(immobile) {
 						if(sleeping) {
-							sb.append(" [npc.Name] [npc.verb(remain)] deeply asleep as [npc.her] [npc.cum+] splatters onto [npc2.name],");
+							sb.append(" [npc.Name] [npc.verb(remain)] глубоко спит, пока [npc.her] [npc.cum+] разлетается по [npc2.name],");
 						} else {
-							sb.append(" [npc.Name] [npc.verb(remain)] silent and unmoving as [npc.her] [npc.cum+] splatters onto [npc2.name],");
+							sb.append(" [npc.Name] [npc.verb(remain)] тихо и неподвижно, пока [npc.her] [npc.cum+] разлетается по [npc2.name],");
 						}
 					} else {
-						sb.append(" [npc.Name] [npc.verb(grin)] as [npc.her] [npc.cum+] splatters onto [npc2.name],");
+						sb.append(" [npc.Name] [npc.verb(grin)], пока [npc.her] [npc.cum+] разлетается по [npc2.name],");
 					}
 					if(isCharacterTotallyImmobilised(target)) {
 						if(target.isAsleep()) {
-							sb.append(" who [npc2.verb(remain)] deeply asleep as it runs down over [npc2.her] [npc2.skin+].");
+							sb.append(" который(ая) [npc2.verb(remain)] глубоко спит, пока это стекает по [npc2.her] [npc2.skin+].");
 						} else {
-							sb.append(" who [npc2.do]n't react in any way whatsoever as [npc2.she] [npc2.verb(feel)] it run down over [npc2.her] [npc2.skin+].");
+							sb.append(" который(ая) [npc2.do] никак не реагирует, пока [npc2.she] [npc2.verb(feel)] это стекает по [npc2.her] [npc2.skin+].");
 						}
 					} else {
-						sb.append(" who can't help but let out [npc2.a_moan] as [npc2.she] [npc2.verb(feel)] it run down over [npc2.her] [npc2.skin+].");
+						sb.append(" который(ая) не может не издать [npc2.a_moan], пока [npc2.she] [npc2.verb(feel)] это стекает по [npc2.her] [npc2.skin+].");
 					}
 
 					return UtilText.parse(characterOrgasming, target, sb.toString());
@@ -1723,24 +1658,24 @@ public class GenericOrgasms {
 					
 				} else {
 					StringBuilder sb = new StringBuilder();
-					sb.append(" all over [npc2.namePos] [npc2.breasts].");
+					sb.append(" по всей [npc2.namePos] [npc2.breasts].");
 					if(immobile) {
 						if(sleeping) {
-							sb.append(" [npc.Name] [npc.verb(remain)] deeply asleep as [npc.her] [npc.cum+] splatters onto [npc2.name],");
+							sb.append(" [npc.Name] [npc.verb(remain)] глубоко спит, пока [npc.her] [npc.cum+] разлетается по [npc2.name],");
 						} else {
-							sb.append(" [npc.Name] [npc.verb(remain)] silent and unmoving as [npc.her] [npc.cum+] splatters onto [npc2.name],");
+							sb.append(" [npc.Name] [npc.verb(remain)] тихо и неподвижно, пока [npc.her] [npc.cum+] разлетается по [npc2.name],");
 						}
 					} else {
-						sb.append(" [npc.Name] [npc.verb(grin)] as [npc.her] [npc.cum+] splatters onto [npc2.name],");
+						sb.append(" [npc.Name] [npc.verb(grin)], пока [npc.her] [npc.cum+] разлетается по [npc2.name],");
 					}
 					if(isCharacterTotallyImmobilised(target)) {
 						if(target.isAsleep()) {
-							sb.append(" who [npc2.verb(remain)] deeply asleep as it runs down over [npc2.her] [npc2.breastsSkin+].");
+							sb.append(" кто [npc2.verb(remain)] крепко спит, пока оно стекает по [npc2.her] [npc2.breastsSkin+].");
 						} else {
-							sb.append(" who [npc2.do]n't react in any way whatsoever as [npc2.she] [npc2.verb(feel)] it run down over [npc2.her] [npc2.breastsSkin+].");
+							sb.append(" кто [npc2.do] никак не реагирует, пока [npc2.she] [npc2.verb(feel)] оно стекает по [npc2.her] [npc2.breastsSkin+].");
 						}
 					} else {
-						sb.append(" who can't help but let out [npc2.a_moan] as [npc2.she] [npc2.verb(feel)] it run down over [npc2.her] [npc2.breastsSkin+].");
+						sb.append(" кто не может не издать [npc2.a_moan], пока [npc2.she] [npc2.verb(feel)] оно стекает по [npc2.her] [npc2.breastsSkin+].");
 					}
 
 					return UtilText.parse(characterOrgasming, target, sb.toString());
@@ -1752,30 +1687,30 @@ public class GenericOrgasms {
 					
 				} else {
 					StringBuilder sb = new StringBuilder();
-					sb.append(" all over [npc2.namePos] [npc2.face+].");
+					sb.append(" по всему [npc2.namePos] [npc2.face+].");
 					if(immobile) {
 						if(sleeping) {
-							sb.append(" [npc.Name] [npc.verb(remain)] deeply asleep as [npc.her] [npc.cum+] splatters onto [npc2.name],");
+							sb.append(" [npc.Name] [npc.verb(remain)] глубоко спит, пока [npc.her] [npc.cum+] разлетается по [npc2.name],");
 						} else {
-							sb.append(" [npc.Name] [npc.verb(remain)] silent and unmoving as [npc.her] [npc.cum+] splatters onto [npc2.name],");
+							sb.append(" [npc.Name] [npc.verb(remain)] тихо и неподвижно, пока [npc.her] [npc.cum+] разлетается по [npc2.name],");
 						}
 					} else {
-						sb.append(" [npc.Name] [npc.verb(grin)] as [npc.her] [npc.cum+] splatters onto [npc2.name],");
+						sb.append(" [npc.Name] [npc.verb(grin)], пока [npc.her] [npc.cum+] разлетается по [npc2.name],");
 					}
 					if(isCharacterTotallyImmobilised(target)) {
 						if(target.isAsleep()) {
-							sb.append(" who [npc2.verb(remain)] deeply asleep as it runs down over [npc2.her] [npc2.faceSkin+].");
+							sb.append(" кто [npc2.verb(remain)] крепко спит, пока оно стекает по [npc2.her] [npc2.faceSkin+].");
 						} else {
-							sb.append(" who [npc2.do]n't react in any way whatsoever as [npc2.she] [npc2.verb(feel)] it run down over [npc2.her] [npc2.faceSkin+].");
+							sb.append(" кто [npc2.do] никак не реагирует, пока [npc2.she] [npc2.verb(feel)] оно стекает по [npc2.her] [npc2.faceSkin+].");
 						}
 					} else {
-						sb.append(" who can't help but let out [npc2.a_moan] as [npc2.she] [npc2.verb(feel)] it run down over [npc2.her] [npc2.faceSkin+].");
+						sb.append(" кто не может не издать [npc2.a_moan], пока [npc2.she] [npc2.verb(feel)] оно стекает по [npc2.her] [npc2.faceSkin+].");
 					}
 
 					return UtilText.parse(characterOrgasming, target, sb.toString());
 				}
 			case FLOOR:
-				return " all over the floor.";
+				return " по всему полу.";
 			case STOMACH:
 				target = Main.sex.getTargetedPartner(characterOrgasming);
 				if (!targetAreaClothingCummedOn.isEmpty()) {
@@ -1783,24 +1718,24 @@ public class GenericOrgasms {
 					
 				} else {
 					StringBuilder sb = new StringBuilder();
-					sb.append(" all over [npc2.namePos] stomach.");
+					sb.append(" по всему [npc2.namePos] животу.");
 					if(immobile) {
 						if(sleeping) {
-							sb.append(" [npc.Name] [npc.verb(remain)] deeply asleep as [npc.her] [npc.cum+] splatters onto [npc2.name],");
+							sb.append(" [npc.Name] [npc.verb(remain)] глубоко спит, пока [npc.her] [npc.cum+] разлетается по [npc2.name],");
 						} else {
-							sb.append(" [npc.Name] [npc.verb(remain)] silent and unmoving as [npc.her] [npc.cum+] splatters onto [npc2.name],");
+							sb.append(" [npc.Name] [npc.verb(remain)] тихо и неподвижно, пока [npc.her] [npc.cum+] разлетается по [npc2.name],");
 						}
 					} else {
-						sb.append(" [npc.Name] [npc.verb(grin)] as [npc.her] [npc.cum+] splatters onto [npc2.name],");
+						sb.append(" [npc.Name] [npc.verb(grin)], пока [npc.her] [npc.cum+] разлетается по [npc2.name],");
 					}
 					if(isCharacterTotallyImmobilised(target)) {
 						if(target.isAsleep()) {
-							sb.append(" who [npc2.verb(remain)] deeply asleep as it runs down over [npc2.her] [npc2.skin+].");
+							sb.append(" который(ая) [npc2.verb(remain)] глубоко спит, пока это стекает по [npc2.her] [npc2.skin+].");
 						} else {
-							sb.append(" who [npc2.do]n't react in any way whatsoever as [npc2.she] [npc2.verb(feel)] it run down over [npc2.her] [npc2.skin+].");
+							sb.append(" который(ая) [npc2.do] никак не реагирует, пока [npc2.she] [npc2.verb(feel)] это стекает по [npc2.her] [npc2.skin+].");
 						}
 					} else {
-						sb.append(" who can't help but let out [npc2.a_moan] as [npc2.she] [npc2.verb(feel)] it run down over [npc2.her] [npc2.skin+].");
+						sb.append(" который(ая) не может не издать [npc2.a_moan], пока [npc2.she] [npc2.verb(feel)] это стекает по [npc2.her] [npc2.skin+].");
 					}
 
 					return UtilText.parse(characterOrgasming, target, sb.toString());
@@ -1823,17 +1758,17 @@ public class GenericOrgasms {
 					return getClothingCummedOnText(characterOrgasming, target, areasCummedOn, targetAreaClothingCummedOn);
 					
 				} else {
-					String groinText = "groin.";
+					String groinText = "паху.";
 					if(target.hasPenisIgnoreDildo()) {
 						if(target.hasVagina()) {
 							if(target.getGenitalArrangement()==GenitalArrangement.CLOACA || (isFrotting && target.getGenitalArrangement()==GenitalArrangement.CLOACA_BEHIND)) {
-								groinText = " [npc2.cock], [npc2.pussy], and [npc2.asshole].";
+								groinText = " [npc2.cock], [npc2.pussy] и [npc2.asshole].";
 							} else if(target.getGenitalArrangement()==GenitalArrangement.NORMAL) {
-								groinText = " [npc2.cock] and [npc2.pussy].";
+								groinText = " [npc2.cock] и [npc2.pussy].";
 							}
 						} else {
 							if(target.getGenitalArrangement()==GenitalArrangement.CLOACA) {
-								groinText = " [npc2.cock] and [npc2.asshole].";
+								groinText = " [npc2.cock] и [npc2.asshole].";
 							} else if(target.getGenitalArrangement()==GenitalArrangement.NORMAL) {
 								groinText = " [npc2.cock+].";
 							}
@@ -1841,34 +1776,34 @@ public class GenericOrgasms {
 						
 					} else if(target.hasVagina()) {
 						if(target.getGenitalArrangement()==GenitalArrangement.CLOACA) {
-							groinText = " [npc2.pussy] and [npc2.asshole].";
+							groinText = " [npc2.pussy] и [npc2.asshole].";
 						} else if(target.getGenitalArrangement()==GenitalArrangement.NORMAL) {
 							groinText = " [npc2.pussy+].";
 						}
 						
 					} else {
-						groinText = " genderless mound.";
+						groinText = " бесполое тело.";
 					}
 
 					StringBuilder sb = new StringBuilder();
-					sb.append(" all over [npc2.namePos] "+groinText);
+					sb.append(" по всему [npc2.namePos] "+groinText);
 					if(immobile) {
 						if(sleeping) {
-							sb.append(" [npc.Name] [npc.verb(remain)] deeply asleep as [npc.her] [npc.cum+] splatters onto [npc2.name],");
+							sb.append(" [npc.Name] [npc.verb(remain)] глубоко спит, пока [npc.her] [npc.cum+] разлетается по [npc2.name],");
 						} else {
-							sb.append(" [npc.Name] [npc.verb(remain)] silent and unmoving as [npc.her] [npc.cum+] splatters onto [npc2.name],");
+							sb.append(" [npc.Name] [npc.verb(remain)] тихо и неподвижно, пока [npc.her] [npc.cum+] разлетается по [npc2.name],");
 						}
 					} else {
-						sb.append(" [npc.Name] [npc.verb(grin)] as [npc.her] [npc.cum+] splatters onto [npc2.name],");
+						sb.append(" [npc.Name] [npc.verb(grin)], пока [npc.her] [npc.cum+] разлетается по [npc2.name],");
 					}
 					if(isCharacterTotallyImmobilised(target)) {
 						if(target.isAsleep()) {
-							sb.append(" who [npc2.verb(remain)] deeply asleep as it runs down over [npc2.her] groin.");
+							sb.append(" который(ая) [npc2.verb(remain)] глубоко спит, пока оно стекает по паху [npc2.her].");
 						} else {
-							sb.append(" who [npc2.do]n't react in any way whatsoever as [npc2.she] [npc2.verb(feel)] it run down over [npc2.her] groin.");
+							sb.append(" кто [npc2.do] даже не реагирует, когда [npc2.she] [npc2.verb(feel)] стекает по [npc2.her] паху.");
 						}
 					} else {
-						sb.append(" who can't help but let out [npc2.a_moan] as [npc2.she] [npc2.verb(feel)] it run down over [npc2.her] groin.");
+						sb.append(" который(ая) не может не издать [npc2.a_moan], пока [npc2.she] [npc2.verb(feel)] его/ее по паху [npc2.her].");
 					}
 
 					return UtilText.parse(characterOrgasming, target, sb.toString());
@@ -1890,24 +1825,24 @@ public class GenericOrgasms {
 					}
 
 					StringBuilder sb = new StringBuilder();
-					sb.append(" all over [npc2.namePos] "+Util.stringsToStringList(areas, false)+".");
+					sb.append(" по всему [npc2.namePos] "+Util.stringsToStringList(areas, false)+".");
 					if(immobile) {
 						if(sleeping) {
-							sb.append(" [npc.Name] [npc.verb(remain)] deeply asleep as [npc.her] [npc.cum+] splatters onto [npc2.name],");
+							sb.append(" [npc.Name] [npc.verb(remain)] глубоко спит, пока [npc.her] [npc.cum+] разлетается по [npc2.name],");
 						} else {
-							sb.append(" [npc.Name] [npc.verb(remain)] silent and unmoving as [npc.her] [npc.cum+] splatters onto [npc2.name],");
+							sb.append(" [npc.Name] [npc.verb(remain)] тихо и неподвижно, пока [npc.her] [npc.cum+] разлетается по [npc2.name],");
 						}
 					} else {
-						sb.append(" [npc.Name] [npc.verb(grin)] as [npc.her] [npc.cum+] splatters onto [npc2.name],");
+						sb.append(" [npc.Name] [npc.verb(grin)], пока [npc.her] [npc.cum+] разлетается по [npc2.name],");
 					}
 					if(isCharacterTotallyImmobilised(target)) {
 						if(target.isAsleep()) {
-							sb.append(" who [npc2.verb(remain)] deeply asleep as it runs down onto [npc2.her] face.");
+							sb.append(" кто [npc2.verb(remain)] крепко спит, пока оно стекает по лицу [npc2.her].");
 						} else {
-							sb.append(" who [npc2.do]n't react in any way whatsoever as [npc2.she] [npc2.verb(feel)] it run down onto [npc2.her] face.");
+							sb.append(" кто [npc2.do] никак не реагирует, пока [npc2.she] [npc2.verb(feel)] оно стекает по лицу [npc2.her].");
 						}
 					} else {
-						sb.append(" who can't help but let out [npc2.a_moan] as [npc2.she] [npc2.verb(feel)] it run down onto [npc2.her] face.");
+						sb.append(" кто не может не издать [npc2.a_moan], пока [npc2.she] [npc2.verb(feel)] оно стекает по лицу [npc2.her].");
 					}
 
 					return UtilText.parse(characterOrgasming, target, sb.toString());
@@ -1919,24 +1854,24 @@ public class GenericOrgasms {
 					
 				} else {
 					StringBuilder sb = new StringBuilder();
-					sb.append(" all over [npc2.namePos] [npc2.legs].");
+					sb.append(" по всему [npc2.namePos] [npc2.legs].");
 					if(immobile) {
 						if(sleeping) {
-							sb.append(" [npc.Name] [npc.verb(remain)] deeply asleep as [npc.her] [npc.cum+] splatters onto [npc2.name],");
+							sb.append(" [npc.Name] [npc.verb(remain)] глубоко спит, пока [npc.her] [npc.cum+] разлетается по [npc2.name],");
 						} else {
-							sb.append(" [npc.Name] [npc.verb(remain)] silent and unmoving as [npc.her] [npc.cum+] splatters onto [npc2.name],");
+							sb.append(" [npc.Name] [npc.verb(remain)] тихо и неподвижно, пока [npc.her] [npc.cum+] разлетается по [npc2.name],");
 						}
 					} else {
-						sb.append(" [npc.Name] [npc.verb(grin)] as [npc.her] [npc.cum+] splatters onto [npc2.name],");
+						sb.append(" [npc.Name] [npc.verb(grin)], пока [npc.her] [npc.cum+] разлетается по [npc2.name],");
 					}
 					if(isCharacterTotallyImmobilised(target)) {
 						if(target.isAsleep()) {
-							sb.append(" who [npc2.verb(remain)] deeply asleep as it runs down over [npc2.her] [npc2.legsSkin+].");
+							sb.append(" кто [npc2.verb(remain)] крепко спит, пока оно стекает по [npc2.her] [npc2.legsSkin+].");
 						} else {
-							sb.append(" who [npc2.do]n't react in any way whatsoever as [npc2.she] [npc2.verb(feel)] it run down over [npc2.her] [npc2.legsSkin+].");
+							sb.append(" кто [npc2.do] никак не реагирует, пока [npc2.she] [npc2.verb(feel)] оно стекает по [npc2.her] [npc2.legsSkin+].");
 						}
 					} else {
-						sb.append(" who can't help but let out [npc2.a_moan] as [npc2.she] [npc2.verb(feel)] it run down over [npc2.her] [npc2.legsSkin+].");
+						sb.append(" кто не может не издать [npc2.a_moan], пока [npc2.she] [npc2.verb(feel)] оно стекает по [npc2.her] [npc2.legsSkin+].");
 					}
 
 					return UtilText.parse(characterOrgasming, target, sb.toString());
@@ -1948,59 +1883,59 @@ public class GenericOrgasms {
 					
 				} else {
 					StringBuilder sb = new StringBuilder();
-					sb.append(" all over [npc2.namePos] [npc2.feet+].");
+					sb.append(" по всему [npc2.namePos] [npc2.feet+].");
 					if(immobile) {
 						if(sleeping) {
-							sb.append(" [npc.Name] [npc.verb(remain)] deeply asleep as [npc.her] [npc.cum+] splatters onto [npc2.name],");
+							sb.append(" [npc.Name] [npc.verb(remain)] глубоко спит, пока [npc.her] [npc.cum+] разлетается по [npc2.name],");
 						} else {
-							sb.append(" [npc.Name] [npc.verb(remain)] silent and unmoving as [npc.her] [npc.cum+] splatters onto [npc2.name],");
+							sb.append(" [npc.Name] [npc.verb(remain)] тихо и неподвижно, пока [npc.her] [npc.cum+] разлетается по [npc2.name],");
 						}
 					} else {
-						sb.append(" [npc.Name] [npc.verb(grin)] as [npc.her] [npc.cum+] splatters onto [npc2.name],");
+						sb.append(" [npc.Name] [npc.verb(grin)], пока [npc.her] [npc.cum+] разлетается по [npc2.name],");
 					}
 					if(isCharacterTotallyImmobilised(target)) {
 						if(target.isAsleep()) {
-							sb.append(" who [npc2.verb(remain)] deeply asleep as it runs down over [npc2.her] [npc2.toes+].");
+							sb.append(" кто [npc2.verb(remain)] крепко спит, пока оно стекает по [npc2.her] [npc2.toes+].");
 						} else {
-							sb.append(" who [npc2.do]n't react in any way whatsoever as [npc2.she] [npc2.verb(feel)] it run down over [npc2.her] [npc2.toes+].");
+							sb.append(" кто [npc2.do] никак не реагирует, пока [npc2.she] [npc2.verb(feel)] оно стекает по [npc2.her] [npc2.toes+].");
 						}
 					} else {
-						sb.append(" who can't help but let out [npc2.a_moan] as [npc2.she] [npc2.verb(feel)] it run down over [npc2.her] [npc2.toes+].");
+						sb.append(" которая не может не издать [npc2.a_moan], пока [npc2.she] [npc2.verb(feel)] стекает по [npc2.her] [npc2.toes+].");
 					}
 
 					return UtilText.parse(characterOrgasming, target, sb.toString());
 				}
 			case WALL:
-				return " all up the [pc.wall].";
+				return " по всему [pc.wall].";
 				
 			case SELF_GROIN:
 				if (!targetAreaClothingCummedOn.isEmpty()) {
 					return getClothingCummedOnText(characterOrgasming, areasCummedOn, targetAreaClothingCummedOn);
 						
 				} else {
-					String groinText = "groin.";
+					String groinText = "паху.";
 					if(characterOrgasming.hasPenisIgnoreDildo()) {
 						if(characterOrgasming.hasVagina()) {
-							groinText = " [npc.cock] and [npc.pussy].";
+							groinText = " [npc.cock] и [npc.pussy].";
 						} else {
 							groinText = " [npc.cock+].";
 						}
 					} else if(characterOrgasming.hasVagina()) {
 						groinText = " [npc.pussy+].";
 					} else {
-						groinText = " genderless mound.";
+						groinText = " бесполое тело.";
 					}
 
 					StringBuilder sb = new StringBuilder();
-					sb.append(" all over [npc.her] "+groinText);
+					sb.append(" по всему [npc.her] "+groinText);
 					if(immobile) {
 						if(sleeping) {
-							sb.append(" [npc.Name] [npc.verb(remain)] deeply asleep as [npc.her] [npc.cum+] splatters onto [npc.herHim], and doesn't show any signs of waking as it begins to run down over [npc.her] [npc.skin].");
+							sb.append(" [npc.Name] [npc.verb(remain)] крепко спит, пока [npc.her] [npc.cum+] разбрызгивается на [npc.herHim], и даже не подает признаков пробуждения, когда оно начинает стекать по [npc.her] [npc.skin].");
 						} else {
-							sb.append(" [npc.Name] [npc.verb(remain)] silent and unmoving as [npc.her] [npc.cum+] splatters onto [npc.herHim], and doesn't react at all as it begins to run down over [npc.her] [npc.skin].");
+							sb.append(" [npc.Name] [npc.verb(remain)] тихо и неподвижно, пока [npc.her] [npc.cum+] разбрызгивается на [npc.herHim], и никак не реагирует, когда оно начинает стекать по [npc.her] [npc.skin].");
 						}
 					} else {
-						sb.append(" [npc.Name] [npc.verb(grin)] as [npc.her] [npc.cum+] splatters onto [npc.herHim], and [npc.she] can't help but let out [npc.a_moan] as [npc.she] [npc.verb(feel)] it running down over [npc.her] [npc.skin].");
+						sb.append(" [npc.Name] [npc.verb(grin)], когда [npc.her] [npc.cum+] разбрызгивается на [npc.herHim], и [npc.she] не может не издать [npc.a_moan], пока [npc.she] [npc.verb(feel)] то, как оно стекает по [npc.her] [npc.skin].");
 					}
 					return UtilText.parse(characterOrgasming, sb.toString());
 				}
@@ -2011,15 +1946,15 @@ public class GenericOrgasms {
 					
 				} else {
 					StringBuilder sb = new StringBuilder();
-					sb.append(" all over [npc.her] stomach.");
+					sb.append(" по всему животу [npc.her].");
 					if(immobile) {
 						if(sleeping) {
-							sb.append(" [npc.Name] [npc.verb(remain)] deeply asleep as [npc.her] [npc.cum+] splatters onto [npc.herHim], and doesn't show any signs of waking as it begins to run down over [npc.her] [npc.skin].");
+							sb.append(" [npc.Name] [npc.verb(remain)] крепко спит, пока [npc.her] [npc.cum+] разбрызгивается на [npc.herHim], и даже не подает признаков пробуждения, когда оно начинает стекать по [npc.her] [npc.skin].");
 						} else {
-							sb.append(" [npc.Name] [npc.verb(remain)] silent and unmoving as [npc.her] [npc.cum+] splatters onto [npc.herHim], and doesn't react at all as it begins to run down over [npc.her] [npc.skin].");
+							sb.append(" [npc.Name] [npc.verb(remain)] тихо и неподвижно, пока [npc.her] [npc.cum+] разбрызгивается на [npc.herHim], и никак не реагирует, когда оно начинает стекать по [npc.her] [npc.skin].");
 						}
 					} else {
-						sb.append(" [npc.Name] [npc.verb(grin)] as [npc.her] [npc.cum+] splatters onto [npc.herHim], and [npc.she] can't help but let out [npc.a_moan] as [npc.she] [npc.verb(feel)] it running down over [npc.her] [npc.skin].");
+						sb.append(" [npc.Name] [npc.verb(grin)], когда [npc.her] [npc.cum+] разбрызгивается на [npc.herHim], и [npc.she] не может не издать [npc.a_moan], пока [npc.she] [npc.verb(feel)] то, как оно стекает по [npc.her] [npc.skin].");
 					}
 					return UtilText.parse(characterOrgasming, sb.toString());
 				}
@@ -2030,15 +1965,15 @@ public class GenericOrgasms {
 					
 				} else {
 					StringBuilder sb = new StringBuilder();
-					sb.append(" all over [npc.her] [npc.legs].");
+					sb.append(" повсюду на [npc.her] [npc.legs].");
 					if(immobile) {
 						if(sleeping) {
-							sb.append(" [npc.Name] [npc.verb(remain)] deeply asleep as [npc.her] [npc.cum+] splatters onto [npc.herHim], and doesn't show any signs of waking as it begins to run down over [npc.her] [npc.skin].");
+							sb.append(" [npc.Name] [npc.verb(remain)] крепко спит, пока [npc.her] [npc.cum+] разбрызгивается на [npc.herHim], и даже не подает признаков пробуждения, когда оно начинает стекать по [npc.her] [npc.skin].");
 						} else {
-							sb.append(" [npc.Name] [npc.verb(remain)] silent and unmoving as [npc.her] [npc.cum+] splatters onto [npc.herHim], and doesn't react at all as it begins to run down over [npc.her] [npc.skin].");
+							sb.append(" [npc.Name] [npc.verb(remain)] тихо и неподвижно, пока [npc.her] [npc.cum+] разбрызгивается на [npc.herHim], и никак не реагирует, когда оно начинает стекать по [npc.her] [npc.skin].");
 						}
 					} else {
-						sb.append(" [npc.Name] [npc.verb(grin)] as [npc.her] [npc.cum+] splatters onto [npc.herHim], and [npc.she] can't help but let out [npc.a_moan] as [npc.she] [npc.verb(feel)] it running down over [npc.her] [npc.skin].");
+						sb.append(" [npc.Name] [npc.verb(grin)], когда [npc.her] [npc.cum+] разбрызгивается на [npc.herHim], и [npc.she] не может не издать [npc.a_moan], пока [npc.she] [npc.verb(feel)] то, как оно стекает по [npc.her] [npc.skin].");
 					}
 					return UtilText.parse(characterOrgasming, sb.toString());
 				}
@@ -2049,15 +1984,15 @@ public class GenericOrgasms {
 					
 				} else {
 					StringBuilder sb = new StringBuilder();
-					sb.append(" all over [npc.her] [npc.feet+].");
+					sb.append(" повсюду на [npc.her] [npc.feet+].");
 					if(immobile) {
 						if(sleeping) {
-							sb.append(" [npc.Name] [npc.verb(remain)] deeply asleep as [npc.her] [npc.cum+] splatters onto [npc.herHim], and doesn't show any signs of waking as it begins to run down over [npc.her] [npc.toes+].");
+							sb.append(" [npc.Name] [npc.verb(remain)] крепко спит, пока [npc.her] [npc.cum+] разбрызгивается на [npc.herHim], и даже не подает признаков пробуждения, когда оно начинает стекать по [npc.her] [npc.toes+].");
 						} else {
-							sb.append(" [npc.Name] [npc.verb(remain)] silent and unmoving as [npc.her] [npc.cum+] splatters onto [npc.herHim], and doesn't react at all as it begins to run down over [npc.her] [npc.toes+].");
+							sb.append(" [npc.Name] [npc.verb(remain)] тихо и неподвижно, пока [npc.her] [npc.cum+] разбрызгивается на [npc.herHim], и совершенно не реагирует, когда оно начинает стекать по [npc.her] [npc.toes+].");
 						}
 					} else {
-						sb.append(" [npc.Name] [npc.verb(grin)] as [npc.her] [npc.cum+] splatters onto [npc.herHim], and [npc.she] can't help but let out [npc.a_moan] as [npc.she] [npc.verb(feel)] it running down over [npc.her] [npc.toes+].");
+						sb.append(" [npc.Name] [npc.verb(grin)], когда [npc.her] [npc.cum+] разбрызгивается на [npc.herHim], и [npc.she] не может сдержать [npc.a_moan], пока [npc.she] [npc.verb(feel)] то, как оно стекает по [npc.her] [npc.toes+].");
 					}
 					return UtilText.parse(characterOrgasming, sb.toString());
 				}
@@ -2068,15 +2003,15 @@ public class GenericOrgasms {
 					
 				} else {
 					StringBuilder sb = new StringBuilder();
-					sb.append(" all over [npc.her] [npc.breasts].");
+					sb.append(" повсюду на [npc.her] [npc.breasts].");
 					if(immobile) {
 						if(sleeping) {
-							sb.append(" [npc.Name] [npc.verb(remain)] deeply asleep as [npc.her] [npc.cum+] splatters onto [npc.herHim], and doesn't show any signs of waking as it begins to run down over [npc.her] [npc.breastsSkin+].");
+							sb.append(" [npc.Name] [npc.verb(remain)] крепко спит, пока [npc.her] [npc.cum+] разбрызгивается на [npc.herHim], и даже не подает признаков пробуждения, когда оно начинает стекать по [npc.her] [npc.breastsSkin+].");
 						} else {
-							sb.append(" [npc.Name] [npc.verb(remain)] silent and unmoving as [npc.her] [npc.cum+] splatters onto [npc.herHim], and doesn't react at all as it begins to run down over [npc.her] [npc.breastsSkin+].");
+							sb.append(" [npc.Name] [npc.verb(remain)] тихо и неподвижно, пока [npc.her] [npc.cum+] разбрызгивается на [npc.herHim], и совершенно не реагирует, когда оно начинает стекать по [npc.her] [npc.breastsSkin+].");
 						}
 					} else {
-						sb.append(" [npc.Name] [npc.verb(grin)] as [npc.her] [npc.cum+] splatters onto [npc.herHim], and [npc.she] can't help but let out [npc.a_moan] as [npc.she] [npc.verb(feel)] it running down over [npc.her] [npc.breastsSkin+].");
+						sb.append(" [npc.Name] [npc.verb(grin)], когда [npc.her] [npc.cum+] разбрызгивается на [npc.herHim], и [npc.she] не может сдержать [npc.a_moan], пока [npc.she] [npc.verb(feel)] то, как оно стекает по [npc.her] [npc.breastsSkin+].");
 					}
 					return UtilText.parse(characterOrgasming, sb.toString());
 				}
@@ -2086,15 +2021,15 @@ public class GenericOrgasms {
 					
 				} else {
 					StringBuilder sb = new StringBuilder();
-					sb.append(" all over [npc.her] [npc.face+].");
+					sb.append(" повсюду на [npc.her] [npc.face+].");
 					if(immobile) {
 						if(sleeping) {
-							sb.append(" [npc.Name] [npc.verb(remain)] deeply asleep as [npc.her] [npc.cum+] splatters onto [npc.herHim], and doesn't show any signs of waking as it begins to run down over [npc.her] [npc.faceSkin+].");
+							sb.append(" [npc.Name] [npc.verb(remain)] крепко спит, пока [npc.her] [npc.cum+] разлетается брызгами по [npc.herHim], и даже не думает просыпаться, когда всё это начинает стекать по [npc.her] [npc.faceSkin+].");
 						} else {
-							sb.append(" [npc.Name] [npc.verb(remain)] silent and unmoving as [npc.her] [npc.cum+] splatters onto [npc.herHim], and doesn't react at all as it begins to run down over [npc.her] [npc.faceSkin+].");
+							sb.append(" [npc.Name] [npc.verb(remain)] тихо и неподвижно, пока [npc.her] [npc.cum+] разлетается брызгами по [npc.herHim], и совершенно не реагирует, когда всё это начинает стекать по [npc.her] [npc.faceSkin+].");
 						}
 					} else {
-						sb.append(" [npc.Name] [npc.verb(grin)] as [npc.her] [npc.cum+] splatters onto [npc.herHim], and [npc.she] can't help but let out [npc.a_moan] as [npc.she] [npc.verb(feel)] it running down over [npc.her] [npc.faceSkin+].");
+						sb.append(" [npc.Name] [npc.verb(grin)], когда [npc.her] [npc.cum+] разлетается брызгами по [npc.herHim], и [npc.she] не может сдержать [npc.a_moan], пока [npc.she] [npc.verb(feel)] то, как оно стекает по [npc.her] [npc.faceSkin+].");
 					}
 					return UtilText.parse(characterOrgasming, sb.toString());
 				}
@@ -2104,15 +2039,13 @@ public class GenericOrgasms {
 					return getClothingCummedOnText(characterOrgasming, areasCummedOn, targetAreaClothingCummedOn);
 				} else {
 					return UtilText.parse(characterOrgasming,
-							" all over [npc.namePos] [npc.hands].");
+							" по всему [npc.namePos] [npc.hands].");
 				}
 				
 			case LILAYA_PANTIES:
 				LilayasRoom.lilayasPanties.setDirty(null, true);
 				return UtilText.parse(characterOrgasming,
-						" directly into Lilaya's panties."
-						+ " You can't help but let out [pc.a_moan+] as you watch your [pc.cum+] pool in the soft fabric,"
-							+ " and you give your [pc.cock+] a few extra strokes as you imagine your demonic [lilaya.relation(pc)] blushing as she slides the cum-saturated underwear up over her hot pussy.");
+						" прямо в трусики Lilaya. Ты невольно издаешь [pc.a_moan+], наблюдая, как твоя [pc.cum+] скапливается в мягкой ткани, и делаешь несколько лишних движений своим [pc.cock+], представляя, как твоя демоническая [lilaya.relation(pc)] краснеет, натягивая пропитанные спермой трусики на свою горячую киску.");
 		}
 		
 		// Continued description for cumming inside:
@@ -2127,12 +2060,11 @@ public class GenericOrgasms {
 							return getClothingCummedOnText(characterOrgasming, target, areasCummedOn, targetAreaClothingCummedOn);
 							
 						} else {
-							cumTargetSB.append(" all over [npc2.namePos] [npc2.armpit+] and [npc2.arm+(true)].");
+							cumTargetSB.append(" по всему [npc2.namePos] [npc2.armpit+] и [npc2.arm+(true)].");
 		
 							switch (characterOrgasming.getPenisOrgasmCumQuantity()) {
 								case SIX_EXTREME: case SEVEN_MONSTROUS:
-									cumTargetSB.append(" After a few seconds, [npc2.name] [npc2.verb(realise)] that [npc.nameIs] not even close to stopping, and after just a moment more,"
-											+ " [npc2.her] [npc2.arm+(true)] are absolutely drenched in [npc.cum+].");
+									cumTargetSB.append(" Спустя несколько секунд становится ясно, что [npc2.name] [npc2.verb(realise)], что [npc.nameIs] даже близко не собирается останавливаться, и еще мгновение спустя [npc2.her] [npc2.arm+(true)] оказываются абсолютно пропитаны [npc.cum+].");
 									break;
 								default:
 									break;
@@ -2141,22 +2073,22 @@ public class GenericOrgasms {
 						break;
 						
 					case ANUS:
-						cumTargetSB.append(" deep into [npc2.namePos] [npc2.asshole+].");
+						cumTargetSB.append(" глубоко в [npc2.namePos] [npc2.asshole+].");
 						switch (characterOrgasming.getPenisOrgasmCumQuantity()) {
 							case SIX_EXTREME: case SEVEN_MONSTROUS:
-								cumTargetSB.append(" After a few seconds, it becomes clear that [npc.nameIs] not even close to stopping,");
+								cumTargetSB.append(" Спустя несколько секунд становится ясно, что [npc.nameIs] даже близко не собирается останавливаться,");
 								if(isCharacterTotallyImmobilised(target)) {
 									if(target.isAsleep()) {
-										cumTargetSB.append(" and even as [npc.her] [npc.cum+] backs up and starts drooling out of [npc2.namePos] [npc2.asshole], [npc2.name] [npc2.verb(show)] no sign of waking.");
+										cumTargetSB.append(" и даже когда [npc.her] [npc.cum+] откидывается назад и у [npc2.namePos] [npc2.asshole] начинает течь слюна, [npc2.name] [npc2.verb(show)] без признаков пробуждения.");
 									} else {
-										cumTargetSB.append(" and even as [npc.her] [npc.cum+] backs up and starts drooling out of [npc2.namePos] [npc2.asshole], [npc2.name] [npc2.verb(hold)] still and [npc2.verb(remain)] totally silent.");
+										cumTargetSB.append(" и даже когда [npc.her] [npc.cum+] откидывается назад и у [npc2.namePos] [npc2.asshole] начинает течь слюна, [npc2.name] [npc2.verb(hold)] неподвижен и [npc2.verb(remain)] совершенно безмолвен.");
 									}
 								} else {
-									cumTargetSB.append(" and as [npc.her] [npc.cum+] backs up and starts drooling out of [npc2.namePos] [npc2.asshole], [npc2.she] [npc2.verb(let)] out [npc2.a_moan+].");
+									cumTargetSB.append(" и когда [npc.her] [npc.cum+] откидывается назад и у [npc2.namePos] [npc2.asshole] начинает течь слюна, [npc2.she] [npc2.verb(let)] из [npc2.a_moan+].");
 								}
 								
 								cumTargetSB.append(((targetArea!=OrgasmCumTarget.INSIDE_SWITCH_DOUBLE || isSecondaryCreampieTarget) && !immobile
-														?" [npc.Name] [npc.verb(keep)] [npc.her] [npc.cock] hilted deep in [npc2.her] ass, [npc.moaning+] as [npc.she] [npc.verb(wait)] for [npc.her] [npc.balls] to run dry."
+														?" [npc.Name] [npc.verb(keep)] [npc.her] [npc.cock] глубоко вошел в задницу [npc2.her], [npc.moaning+], пока [npc.she] [npc.verb(wait)] для [npc.her] [npc.balls] не иссякнет."
 														:""));
 								break;
 							default:
@@ -2176,11 +2108,11 @@ public class GenericOrgasms {
 							return getClothingCummedOnText(characterOrgasming, target, areasCummedOn, targetAreaClothingCummedOn);
 							
 						} else {
-							cumTargetSB.append(" all over [npc2.namePos] back and [npc2.ass+].");
+							cumTargetSB.append(" по всей спине [npc2.namePos] и [npc2.ass+].");
 	
 							switch (characterOrgasming.getPenisOrgasmCumQuantity()) {
 								case SIX_EXTREME: case SEVEN_MONSTROUS:
-									cumTargetSB.append(" After a few seconds, it becomes clear that [npc.nameIs] not even close to stopping, and after just a moment more, [npc2.namePos] [npc2.ass+] is absolutely drenched in [npc.cum+].");
+									cumTargetSB.append(" Спустя несколько секунд становится ясно, что [npc.nameIs] и близко не собирается останавливаться, и еще мгновение спустя [npc2.namePos] [npc2.ass+] оказывается полностью пропитан в [npc.cum+].");
 									break;
 								default:
 									break;
@@ -2194,13 +2126,13 @@ public class GenericOrgasms {
 							
 						} else {
 							if(target.hasBreasts()) {
-								cumTargetSB.append(" all over [npc2.namePos] [npc2.breasts+] and face.");
+								cumTargetSB.append(" по всему [npc2.namePos] [npc2.breasts+] и лицу.");
 							} else {
-								cumTargetSB.append(" all over [npc2.namePos] flat chest and face.");
+								cumTargetSB.append(" по всей плоской груди и лицу [npc2.namePos].");
 							}
 							switch (characterOrgasming.getPenisOrgasmCumQuantity()) {
 								case SIX_EXTREME: case SEVEN_MONSTROUS:
-									cumTargetSB.append(" After a few seconds, it becomes clear that [npc.nameIs] not even close to stopping, and after just a moment more, [npc2.namePos] torso is absolutely drenched in [npc.cum+].");
+									cumTargetSB.append(" Спустя несколько секунд становится ясно, что [npc.nameIs] и близко не собирается останавливаться, и еще мгновение спустя торс [npc2.namePos] оказывается полностью пропитан в [npc.cum+].");
 									break;
 								default:
 									break;
@@ -2213,10 +2145,10 @@ public class GenericOrgasms {
 							return getClothingCummedOnText(characterOrgasming, target, areasCummedOn, targetAreaClothingCummedOn);
 							
 						} else {
-							cumTargetSB.append(" all over [npc2.namePos] [npc2.crotchBoobs+] and groin.");
+							cumTargetSB.append(" по всему [npc2.namePos] [npc2.crotchBoobs+] и паху.");
 							switch (characterOrgasming.getPenisOrgasmCumQuantity()) {
 								case SIX_EXTREME: case SEVEN_MONSTROUS:
-									cumTargetSB.append(" After a few seconds, it becomes clear that [npc.nameIs] not even close to stopping, and after just a moment more, [npc2.namePos] crotch and stomach are absolutely drenched in [npc.cum+].");
+									cumTargetSB.append(" Спустя несколько секунд становится ясно, что [npc.nameIs] даже не думает останавливаться, и еще мгновение спустя пах и живот [npc2.namePos] оказываются полностью залиты [npc.cum+].");
 									break;
 								default:
 									break;
@@ -2226,153 +2158,153 @@ public class GenericOrgasms {
 						
 					case MOUTH:
 						if(target.isPlayer()) {
-							cumTargetSB.append(" deep down your throat, and you ");
+							cumTargetSB.append(" глубоко в твоем горле, и ты ");
 							if(isCharacterTotallyImmobilised(target)) {
 								if(target.isAsleep()) {
-									cumTargetSB.append("reamin deeply asleep as [npc.cum+] slides down into your stomach.");
+									cumTargetSB.append("продолжаешь крепко спать, пока [npc.cum+] стекает в твой желудок.");
 								} else {
-									cumTargetSB.append("remain still and silent as you feel the [npc.cum+] sliding down into your stomach.");
+									cumTargetSB.append("лежишь неподвижно и тихо, чувствуя, как [npc.cum+] стекает в твой желудок.");
 								}
 							} else {
-								cumTargetSB.append("find yourself making muffled whining noises as you feel the [npc.cum+] sliding down into your stomach.");
+								cumTargetSB.append("заходишься приглушенным скулением, чувствуя, как [npc.cum+] стекает в твой желудок.");
 							}
 							switch(characterOrgasming.getCumFlavour()) {
 								case BEER:
-									cumTargetSB.append(" The unusual taste of [npc.namePos] beer-flavoured");
+									cumTargetSB.append(" Необычный вкус [npc.namePos] со вкусом пива");
 									break;
 								case CHOCOLATE:
-									cumTargetSB.append(" The sweet taste of [npc.namePos] chocolate-flavoured");
+									cumTargetSB.append(" Сладкий вкус [npc.namePos] со вкусом шоколада");
 									break;
 								case CUM:
-									cumTargetSB.append(" The salty taste of");
+									cumTargetSB.append(" Соленый вкус");
 									break;
 								case GIRL_CUM:
-									cumTargetSB.append(" The unusual taste of [npc.namePos] sweet");
+									cumTargetSB.append(" Необычный сладкий вкус [npc.namePos]");
 									break;
 								case HONEY:
-									cumTargetSB.append(" The sweet taste of [npc.namePos] honey-flavoured");
+									cumTargetSB.append(" Сладкий вкус [npc.namePos] со вкусом меда");
 									break;
 								case MILK:
-									cumTargetSB.append(" The unusual taste of [npc.namePos] milk-flavoured");
+									cumTargetSB.append(" Необычный вкус [npc.namePos] со вкусом молока");
 									break;
 								case MINT:
-									cumTargetSB.append(" The taste of [npc.namePos] mint-flavoured");
+									cumTargetSB.append(" Вкус [npc.namePos] со вкусом мяты");
 									break;
 								case PINEAPPLE:
-									cumTargetSB.append(" The sweet taste of [npc.namePos] pineapple-flavoured");
+									cumTargetSB.append(" Сладкий вкус [npc.namePos] со вкусом ананаса");
 									break;
 								case BUBBLEGUM:
-									cumTargetSB.append(" The fruity taste of [npc.namePos] bubblegum-flavoured");
+									cumTargetSB.append(" Фруктовый вкус [npc.namePos] со вкусом баблгама");
 									break;
 								case STRAWBERRY:
-									cumTargetSB.append(" The sweet taste of [npc.namePos] strawberry-flavoured");
+									cumTargetSB.append(" Сладкий вкус [npc.namePos] со вкусом клубники");
 									break;
 								case VANILLA:
-									cumTargetSB.append(" The taste of [npc.namePos] vanilla-flavoured");
+									cumTargetSB.append(" Вкус [npc.namePos] со вкусом ванили");
 									break;
 								case CHERRY:
-									cumTargetSB.append(" The sweet taste of [npc.namePos] cherry-flavoured");
+									cumTargetSB.append(" Сладкий вкус [npc.namePos] со вкусом вишни");
 									break;
 								case COFFEE:
-									cumTargetSB.append(" The strong, bitter taste of [npc.namePos] coffee-flavoured");
+									cumTargetSB.append(" Сильный, горький вкус [npc.namePos] со вкусом кофе");
 									break;
 								case TEA:
-									cumTargetSB.append(" The taste of [npc.namePos] tea-flavoured");
+									cumTargetSB.append(" Вкус [npc.namePos] со вкусом чая");
 									break;
 								case MAPLE:
-									cumTargetSB.append(" The sweet taste of [npc.namePos] maple-flavoured");
+									cumTargetSB.append(" Сладкий вкус [npc.namePos] со вкусом кленового сиропа");
 									break;
 								case CINNAMON:
-									cumTargetSB.append(" The taste of [npc.namePos] cinnamon-flavoured");
+									cumTargetSB.append(" Вкус [npc.namePos] корицы");
 									break;
 								case LEMON:
-									cumTargetSB.append(" The sour taste of [npc.namePos] lemon-flavoured");
+									cumTargetSB.append(" Кислый вкус [npc.namePos] лимона");
 									break;
 								case ORANGE:
-									cumTargetSB.append(" The citrus taste of [npc.namePos] orange-flavoured");
+									cumTargetSB.append(" Цитрусовый вкус [npc.namePos] апельсина");
 									break;
 								case GRAPE:
-									cumTargetSB.append(" The taste of [npc.namePos] grape-flavoured");
+									cumTargetSB.append(" Вкус [npc.namePos] винограда");
 									break;
 								case MELON:
-									cumTargetSB.append(" The taste of [npc.namePos] melon-flavoured");
+									cumTargetSB.append(" Вкус [npc.namePos] дыни");
 									break;
 								case COCONUT:
-									cumTargetSB.append(" The taste of [npc.namePos] coconut-flavoured");
+									cumTargetSB.append(" Вкус [npc.namePos] кокоса");
 									break;
 								case BLUEBERRY:
-									cumTargetSB.append(" The taste of [npc.namePos] blueberry-flavoured");
+									cumTargetSB.append(" Вкус [npc.namePos] черники");
 									break;
 								case BANANA:
-									cumTargetSB.append(" The taste of [npc.namePos] banana-flavoured");
+									cumTargetSB.append(" Вкус [npc.namePos] банана");
 									break;
 								case FLAVOURLESS:
-									cumTargetSB.append(" [npc.NamePos] cum is completely flavourless, and you");
+									cumTargetSB.append(" [npc.NamePos] сперма совершенно безвкусная, и ты");
 									break;
 							}
 							if(characterOrgasming.getCumFlavour()!=FluidFlavour.FLAVOURLESS) {
-								cumTargetSB.append(" cum rises up to hit your [npc2.tongue], and you");
+								cumTargetSB.append(" сперма поднимается и попадает тебе на [npc2.tongue], и ты");
 							}
 							
 							if(target.hasFetish(Fetish.FETISH_CUM_ADDICT) || Main.sex.getCharactersRequestingCreampie().contains(target) || Main.sex.getCharactersRequestingKnot().contains(target)) {
-								cumTargetSB.append(" " + UtilText.returnStringAtRandom("greedily","hungrily"));
+								cumTargetSB.append(" " + UtilText.returnStringAtRandom("жадно","голодно"));
 							} else {
-								cumTargetSB.append("'re left with no other option but to");
+								cumTargetSB.append("у тебя не остается иного выбора, кроме как");
 							}
-							cumTargetSB.append(" gulp down as much of the");
+							cumTargetSB.append(" заглатывать как можно больше");
 							if(!characterOrgasming.getCumModifiers().isEmpty()) {
 								switch(characterOrgasming.getCumModifiers().get(Util.random.nextInt(characterOrgasming.getCumModifiers().size()))) { //TODO specials for ALCOHOLIC & HALLUCINOGENIC
 									case ADDICTIVE:
-										cumTargetSB.append(" delicious, highly-addictive [npc.cum] as you possibly can.");
+										cumTargetSB.append(" вкусного, вызывающего сильнейшее привыкание [npc.cum], сколько только сможешь.");
 										break;
 									case ALCOHOLIC:
 									case ALCOHOLIC_WEAK:
-										cumTargetSB.append(" alcoholic [npc.cum] as you possibly can.");
+										cumTargetSB.append(" алкогольного [npc.cum], сколько только сможешь.");
 										break;
 									case BUBBLING:
-										cumTargetSB.append(" bubbling, fizzy [npc.cum] as you possibly can.");
+										cumTargetSB.append(" шипучего, пузырящегося [npc.cum], сколько только сможешь.");
 										break;
 									case HALLUCINOGENIC:
-										cumTargetSB.append(" psychoactive [npc.cum] as you possibly can.");
+										cumTargetSB.append(" психоактивного [npc.cum], сколько только сможешь.");
 										break;
 									case MUSKY:
-										cumTargetSB.append(" musky [npc.cum] as you possibly can.");
+										cumTargetSB.append(" мускусного [npc.cum], сколько только сможешь.");
 										break;
 									case SLIMY:
-										cumTargetSB.append(" slimy [npc.cum] as you possibly can.");
+										cumTargetSB.append(" слизистого [npc.cum], сколько только сможешь.");
 										break;
 									case STICKY:
-										cumTargetSB.append(" sticky [npc.cum] as you possibly can.");
+										cumTargetSB.append(" максимально липкую [npc.cum].");
 										break;
 									case VISCOUS:
-										cumTargetSB.append(" thick, viscous [npc.cum] as you possibly can.");
+										cumTargetSB.append(" максимально густую и вязкую [npc.cum].");
 										break;
 									case MINERAL_OIL:
-										cumTargetSB.append(" tasty [npc.cum] as you possibly can.");
+										cumTargetSB.append(" максимально вкусную [npc.cum].");
 										break;
 								}
 							} else {
-								cumTargetSB.append(" [npc.cum] as you possibly can.");
+								cumTargetSB.append(" [npc.cum], насколько это возможно.");
 							}
 							
 						} else {
-							cumTargetSB.append(" deep down [npc2.namePos] throat.");
+							cumTargetSB.append(" глубоко в глотку [npc2.namePos].");
 						}
 						switch (characterOrgasming.getPenisOrgasmCumQuantity()) {
 							case SIX_EXTREME: case SEVEN_MONSTROUS:
-								cumTargetSB.append(" After a few seconds, it becomes clear that [npc.nameIs] not even close to stopping, and [npc2.name]");
+								cumTargetSB.append(" Спустя несколько секунд становится ясно, что [npc.nameIs] даже не думает останавливаться, и [npc2.name]");
 								if(isCharacterTotallyImmobilised(target)) {
 									if(target.isAsleep()) {
-										cumTargetSB.append(" [npc2.verb(remain)] asleep");
+										cumTargetSB.append(" [npc2.verb(remain)] спящим");
 									} else {
-										cumTargetSB.append(" [npc2.verb(remain)] still and silent");
+										cumTargetSB.append(" [npc2.verb(remain)] неподвижным и тихим");
 									}
 								} else {
-									cumTargetSB.append(" [npc2.verb(let)] out a desperate, gargled [npc2.moan]");
+									cumTargetSB.append(" [npc2.verb(let)] отчаянный, булькающий [npc2.moan]");
 								}
-								cumTargetSB.append(" as [npc.namePos] [npc.cum+] backs up and starts drooling out of the corners of [npc2.her] mouth.");
+								cumTargetSB.append(" пока [npc.namePos] [npc.cum+] отстраняется назад, и из уголков [npc2.her] рта начинает течь слюна.");
 								if(!immobile) {
-									cumTargetSB.append(" [npc.Name] [npc.verb(keep)] [npc.her] [npc.cock] hilted deep down [npc2.her] throat, [npc.moaning+] as [npc.she] [npc.verb(wait)] for [npc.her] [npc.balls] to run dry.");
+									cumTargetSB.append(" [npc.Name] [npc.verb(keep)] [npc.her] [npc.cock] глубоко в [npc2.her] горло, [npc.moaning+] пока [npc.she] [npc.verb(wait)], чтобы [npc.her] [npc.balls] иссякли.");
 								}
 								break;
 							default:
@@ -2386,9 +2318,9 @@ public class GenericOrgasms {
 						
 					case NIPPLE:
 						if(target.isPlayer()) {
-							cumTargetSB.append(" deep into your [pc.breasts+]"+(isCharacterTotallyImmobilised(target)?".":", and you find yourself whining and moaning as you feel the [npc.cum+] deep inside of your [pc.breasts+]."));
+							cumTargetSB.append(" глубоко в твою [pc.breasts+]"+(isCharacterTotallyImmobilised(target)?".":", и ты обнаруживаешь, что скулишь и стонешь, чувствуя [npc.cum+] глубоко внутри своей [pc.breasts+]."));
 						} else {
-							cumTargetSB.append(" deep into [npc2.namePos] [npc2.breasts+].");
+							cumTargetSB.append(" глубоко в [npc2.namePos] [npc2.breasts+].");
 						}
 						if(Main.getProperties().hasValue(PropertyValue.inflationContent)) {
 							float cumAmount = target.getTotalFluidInArea(SexAreaOrifice.NIPPLE) + characterOrgasming.getPenisRawOrgasmCumQuantity();
@@ -2397,7 +2329,7 @@ public class GenericOrgasms {
 						break;
 						
 					case NIPPLE_CROTCH:
-						cumTargetSB.append(" deep into [npc2.namePos] [npc2.crotchBoobs+].");
+						cumTargetSB.append(" глубоко в [npc2.namePos] [npc2.crotchBoobs+].");
 						
 						if(Main.getProperties().hasValue(PropertyValue.inflationContent)) {
 							float cumAmount = target.getTotalFluidInArea(SexAreaOrifice.NIPPLE_CROTCH) + characterOrgasming.getPenisRawOrgasmCumQuantity();
@@ -2410,12 +2342,11 @@ public class GenericOrgasms {
 							return getClothingCummedOnText(characterOrgasming, target, areasCummedOn, targetAreaClothingCummedOn);
 							
 						} else {
-							cumTargetSB.append(" all over [npc2.namePos] thighs.");
+							cumTargetSB.append(" по всем [npc2.namePos] бедрам.");
 							
 							switch (characterOrgasming.getPenisOrgasmCumQuantity()) {
 								case SIX_EXTREME: case SEVEN_MONSTROUS:
-									cumTargetSB.append(" After a few seconds, it becomes clear that [npc.nameIs] not even close to stopping, and after just a moment more,"
-											+ " [npc2.namePos] [npc2.legs+] are absolutely drenched in [npc.cum+].");
+									cumTargetSB.append(" Спустя несколько секунд становится ясно, что [npc.nameIs] и близко не собирается останавливаться, и еще мгновение спустя [npc2.namePos] [npc2.legs+] насквозь пропитаны [npc.cum+].");
 									break;
 								default:
 							}
@@ -2424,15 +2355,15 @@ public class GenericOrgasms {
 						
 					case URETHRA_PENIS: case URETHRA_VAGINA:
 						if(target.isPlayer()) {
-							cumTargetSB.append(" deep into your urethra.");
+							cumTargetSB.append(" глубоко в твою уретру.");
 						} else {
-							cumTargetSB.append(" deep into [npc2.namePos] urethra.");
+							cumTargetSB.append(" глубоко в [npc2.namePos] уретру.");
 						}
 						switch (characterOrgasming.getPenisOrgasmCumQuantity()) {
 							case SIX_EXTREME: case SEVEN_MONSTROUS:
-								cumTargetSB.append(" After a few seconds, it becomes clear that [npc.nameIs] not even close to stopping, and after just a moment more, [npc.her] [npc.cum+] backs up and starts drooling out of [npc2.namePos] urethra.");
+								cumTargetSB.append(" Спустя несколько секунд становится ясно, что [npc.nameIs] и близко не собирается останавливаться, и еще мгновение спустя [npc.her] [npc.cum+] затекает обратно и начинает вытекать из [npc2.namePos] уретры.");
 								if(!immobile) {
-									cumTargetSB.append(" [npc.Name] [npc.verb(keep)] [npc.her] [npc.cock] hilted inside of [npc2.herHim], [npc.moaning+] as [npc.she] [npc.verb(wait)] for [npc.her] [npc.balls] to run dry.");
+									cumTargetSB.append(" [npc.Name] [npc.verb(keep)] [npc.her] [npc.cock] глубоко внутри [npc2.herHim], [npc.moaning+], пока [npc.she] [npc.verb(wait)], чтобы [npc.her] [npc.balls] окончательно не иссяк.");
 								}
 								break;
 							default:
@@ -2447,22 +2378,22 @@ public class GenericOrgasms {
 					case VAGINA:
 						if(target.isPlayer()) {
 							if(!target.isVisiblyPregnant()) {
-								cumTargetSB.append(" deep into your waiting womb"+(isCharacterTotallyImmobilised(target)?".":", and you find yourself whining and moaning as you wonder if the [npc.cum+] will get you pregnant."));
+								cumTargetSB.append(" глубоко в твою ждущую матку"+(isCharacterTotallyImmobilised(target)?".":", и ты ловишь себя на том, что скулишь и стонешь, гадая, не сделает ли тебя беременной [npc.cum+]."));
 							} else {
-								cumTargetSB.append(" deep into your hungry [pc.pussy]"+(isCharacterTotallyImmobilised(target)?".":", and you find yourself whining and moaning as you feel the [npc.cum+] deep inside of you."));
+								cumTargetSB.append(" глубоко в твою голодную [pc.pussy]"+(isCharacterTotallyImmobilised(target)?".":", и ты ловишь себя на том, что скулишь и стонешь, чувствуя [npc.cum+] глубоко внутри себя."));
 							}
 						} else {
 							if(!target.isVisiblyPregnant()) {
-								cumTargetSB.append(" deep into [npc2.namePos] waiting womb.");
+								cumTargetSB.append(" глубоко в ждущую матку [npc2.namePos].");
 							} else {
-								cumTargetSB.append(" deep into [npc2.namePos] [npc2.pussy+].");
+								cumTargetSB.append(" глубоко в [npc2.namePos] [npc2.pussy+].");
 							}
 						}
 						switch (characterOrgasming.getPenisOrgasmCumQuantity()) {
 							case SIX_EXTREME: case SEVEN_MONSTROUS:
-								cumTargetSB.append(" After a few seconds, it becomes clear that [npc.nameIs] not even close to stopping, and after just a moment more, [npc.her] [npc.cum+] backs up and starts drooling out of [npc2.namePos] [npc2.pussy+].");
+								cumTargetSB.append(" Спустя несколько секунд становится ясно, что [npc.nameIs] даже близко не закончила, и еще мгновение спустя [npc.her] [npc.cum+] отстраняется и начинает пускать слюни из [npc2.namePos] [npc2.pussy+].");
 								cumTargetSB.append(((targetArea!=OrgasmCumTarget.INSIDE_SWITCH_DOUBLE || isSecondaryCreampieTarget) && !immobile
-											?" [npc.Name] [npc.verb(keep)] [npc.her] [npc.cock] hilted deep in [npc2.her] [npc2.pussy], [npc.moaning+] as [npc.she] [npc.verb(wait)] for [npc.her] [npc.balls] to run dry."
+											?" [npc.Name] [npc.verb(keep)] [npc.her] [npc.cock] глубоко внутри [npc2.her], [npc2.pussy], пока [npc.moaning+] [npc.she] [npc.verb(wait)], чтобы [npc.her] [npc.balls] иссяк."
 											:""));
 								break;
 							default:
@@ -2478,13 +2409,12 @@ public class GenericOrgasms {
 						break;
 	
 					case SPINNERET:
-						cumTargetSB.append(" deep into [npc2.namePos] spinneret.");
+						cumTargetSB.append(" глубоко в паутинный аппарат [npc2.namePos].");
 						switch (characterOrgasming.getPenisOrgasmCumQuantity()) {
 							case SIX_EXTREME: case SEVEN_MONSTROUS:
-								cumTargetSB.append(" After a few seconds, it becomes clear that [npc.nameIs] not even close to stopping, and after just a moment more,"
-										+ " [npc.her] [npc.cum+] backs up and starts drooling out of [npc2.namePos] web-spinning orifice.");
+								cumTargetSB.append(" Спустя несколько секунд становится ясно, что [npc.nameIs] и не думает останавливаться, и еще мгновение спустя [npc.her] [npc.cum+] откидывается назад и начинает пускать слюни из своего паучьего отверстия [npc2.namePos].");
 								if(!immobile) {
-									cumTargetSB.append(" [npc.Name] [npc.verb(keep)] [npc.her] [npc.cock] hilted inside of [npc2.herHim], [npc.moaning+] as [npc.she] [npc.verb(wait)] for [npc.her] [npc.balls] to run dry.");
+									cumTargetSB.append(" [npc.Name] [npc.verb(keep)] [npc.her] [npc.cock] глубоко внутри [npc2.herHim], [npc.moaning+], пока [npc.she] [npc.verb(wait)], чтобы [npc.her] [npc.balls] окончательно не иссяк.");
 								}
 								break;
 							default:
@@ -2502,9 +2432,7 @@ public class GenericOrgasms {
 					case ARCANE:
 					case WATER:
 					case SLIME:
-						cumTargetSB.append("<br/>"
-								+ "As [npc2.namePos] body is made completely out of translucent "+target.getBodyMaterial().getName()+","
-										+ " you're able to see the cloud of [npc.namePos] [npc.cum+] shooting up and dispersing inside of [npc2.herHim].");
+						cumTargetSB.append("<br/>Так как тело [npc2.namePos] полностью состоит из полупрозрачного "+target.getBodyMaterial().getName()+", вы можете видеть облако [npc.namePos], вырывающееся из [npc.cum+] и рассеивающееся внутри [npc2.herHim].");
 						break;
 					case FIRE:
 					case FLESH:
@@ -2524,12 +2452,12 @@ public class GenericOrgasms {
 							if (!targetAreaClothingCummedOn.isEmpty()) {
 								return getClothingCummedOnText(characterOrgasming, areasCummedOn, targetAreaClothingCummedOn);
 							} else {
-								cumTargetSB.append(" all over [npc.her] [npc.fingers+].");
+								cumTargetSB.append(" по всему [npc.her] [npc.fingers+].");
 								
 								switch (characterOrgasming.getPenisOrgasmCumQuantity()) {
 									case SIX_EXTREME:
 									case SEVEN_MONSTROUS:
-										cumTargetSB.append(" After a few seconds, [npc.her] [npc.hands+] are absolutely drenched in [npc.cum+].");
+										cumTargetSB.append(" Спустя несколько секунд [npc.her] [npc.hands+] становятся совершенно промокшими от [npc.cum+].");
 										break;
 									default:
 										break;
@@ -2539,12 +2467,11 @@ public class GenericOrgasms {
 							return getClothingCummedOnText(characterOrgasming, target, areasCummedOn, targetAreaClothingCummedOn);
 							
 						} else {
-							cumTargetSB.append(" all over [npc2.namePos] [npc2.fingers+].");
+							cumTargetSB.append(" по всему [npc2.namePos] [npc2.fingers+].");
 							
 							switch (characterOrgasming.getPenisOrgasmCumQuantity()) {
 								case SIX_EXTREME: case SEVEN_MONSTROUS:
-									cumTargetSB.append(" After a few seconds, it becomes clear that [npc.nameIs] not even close to stopping, and after just a moment more,"
-											+ " [npc2.namePos] [npc2.hands+] are absolutely drenched in [npc.cum+].");
+									cumTargetSB.append(" Спустя несколько секунд становится ясно, что [npc.nameIs] и не думает останавливаться, и еще мгновение спустя [npc2.namePos] [npc2.hands+] становятся совершенно промокшими от [npc.cum+].");
 									break;
 								default:
 									break;
@@ -2562,12 +2489,11 @@ public class GenericOrgasms {
 							return getClothingCummedOnText(characterOrgasming, target, areasCummedOn, targetAreaClothingCummedOn);
 							
 						} else {
-							cumTargetSB.append(" all over [npc2.namePos] [npc2.toes+].");
+							cumTargetSB.append(" по всему [npc2.namePos] [npc2.toes+].");
 							
 							switch (characterOrgasming.getPenisOrgasmCumQuantity()) {
 								case SIX_EXTREME: case SEVEN_MONSTROUS:
-									cumTargetSB.append(" After a few seconds, it becomes clear that [npc.nameIs] not even close to stopping, and after just a moment more,"
-											+ " [npc2.namePos] [npc2.feet+] are absolutely drenched in [npc.cum+].");
+									cumTargetSB.append(" Спустя несколько секунд становится ясно, что [npc.nameIs] и не думает останавливаться, и еще мгновение спустя [npc2.namePos] [npc2.feet+] становятся совершенно промокшими от [npc.cum+].");
 									break;
 								default:
 									break;
@@ -2625,12 +2551,12 @@ public class GenericOrgasms {
 		StringBuilder sb = new StringBuilder();
 		
 		if(nakedAreas.isEmpty()) {
-			sb.append(" all over [npc2.namePos] "+Util.clothesToStringList(clothing, false)+".");
+			sb.append(" по всему [npc2.namePos] "+Util.clothesToStringList(clothing, false)+".");
 		} else {
-			sb.append(" all over [npc2.namePos] "+Util.clothesToStringList(clothing, false)+", as well as [npc2.her] exposed "+Util.inventorySlotsToParsedStringList(nakedAreas, target)+".");
+			sb.append(" по всему [npc2.namePos] "+Util.clothesToStringList(clothing, false)+", а также [npc2.her] обнаженных "+Util.inventorySlotsToParsedStringList(nakedAreas, target)+".");
 		}
 		if(!immobile) {
-			sb.append(" [npc.Name] [npc.verb(grin)] as [npc.her] [npc.cum+] splatters onto [npc2.name], making a mess of [npc2.her] outfit.");
+			sb.append(" [npc.Name] [npc.verb(grin)] в виде [npc.her] [npc.cum+] разбрызгивается по [npc2.name], пачкая [npc2.her] одежду.");
 		}
 		return UtilText.parse(characterOrgasming, target, sb.toString());
 	}
@@ -2646,13 +2572,13 @@ public class GenericOrgasms {
 		StringBuilder sb = new StringBuilder();
 		
 		if(nakedAreas.isEmpty()) {
-			sb.append(" all over [npc.her] "+Util.clothesToStringList(clothing, false)+".");
+			sb.append(" по всему [npc.her] "+Util.clothesToStringList(clothing, false)+".");
 		} else {
-			sb.append(" all over [npc.her] "+Util.clothesToStringList(clothing, false)+", as well as [npc.her] exposed "+Util.inventorySlotsToParsedStringList(nakedAreas, characterOrgasming)+".");
+			sb.append(" по всему [npc.her] "+Util.clothesToStringList(clothing, false)+", а также обнаженную [npc.her] "+Util.inventorySlotsToParsedStringList(nakedAreas, characterOrgasming)+".");
 		}
 
 		if(!immobile) {
-			sb.append(" [npc.She] [npc.verb(let)] out [npc.a_moan+] as [npc.her] [npc.cum+] splatters onto [npc.her] clothing, making a mess of [npc.her] outfit.");
+			sb.append(" [npc.She] [npc.verb(let)] в виде [npc.a_moan+], когда [npc.her] [npc.cum+] разбрызгивается по одежде [npc.her], пачкая [npc.her] наряд.");
 		}
 		return UtilText.parse(characterOrgasming, sb.toString());
 	}
@@ -2662,43 +2588,43 @@ public class GenericOrgasms {
 		
 		if(characterOrgasming.isPlayer()) {
 			if(cumAmount >= CumProduction.SEVEN_MONSTROUS.getMaximumValue()) {
-				return ("<br/>You see [npc2.namePos] stomach swell out to a massive, over-inflated size as it distends from the colossal amount of cum that you've pumped inside of [npc2.herHim]."
-						+ (!immobile?" Placing a [npc.hand] on [npc2.her] huge belly, you grin as you think to yourself that [npc2.she] now looks as though [npc2.sheIs] heavily pregnant.":""));
+				return ("<br/>Вы видите, как живот [npc2.namePos] раздувается до огромных, переполненных размеров от колоссального количества спермы, которую вы закачали в [npc2.herHim]."
+						+ (!immobile?" Положив [npc.hand] на огромный живот [npc2.her], вы ухмыляетесь, думая про себя, что [npc2.she] теперь выглядит так, будто [npc2.sheIs] на позднем сроке беременности.":""));
 				
 			} else if(cumAmount >= CumProduction.SEVEN_MONSTROUS.getMedianValue()) {
-				return ("<br/>You see [npc2.namePos] stomach swell out as it distends from the huge amount of cum that you've pumped inside of [npc2.herHim]."
-						+ (!immobile?" Placing a [npc.hand] on [npc2.her] belly, you grin as you think to yourself that [npc2.she] now looks as though [npc2.sheIs] pregnant.":""));
+				return ("<br/>Вы видите, как живот [npc2.namePos] раздувается от огромного количества спермы, которую вы закачали в [npc2.herHim]."
+						+ (!immobile?" Положив [npc.hand] на живот [npc2.her], вы ухмыляетесь, думая про себя, что [npc2.she] теперь выглядит так, будто [npc2.sheIs] беременна.":""));
 				
 			} else if(cumAmount >= CumProduction.SEVEN_MONSTROUS.getMinimumValue()) {
-				return ("<br/>You see [npc2.namePos] stomach swell out a little as it distends from the sheer amount of cum that you've pumped inside of [npc2.herHim]."
-						+ (!immobile?" Placing a [npc.hand] on [npc2.her] belly, you grin as you think to yourself that [npc2.she] now looks as though [npc2.sheIs] in the early stages of pregnancy.":""));
+				return ("<br/>Вы видите, как живот [npc2.namePos] немного раздувается от того невероятного количества спермы, которое вы закачали в [npc2.herHim]."
+						+ (!immobile?" Положив [npc.hand] на живот [npc2.her], вы ухмыляетесь, думая про себя, что [npc2.she] теперь выглядит так, будто [npc2.sheIs] на ранней стадии беременности.":""));
 			}
 		} else {
 			if(target.isPlayer()) {
 				if(cumAmount >= CumProduction.SEVEN_MONSTROUS.getMaximumValue()) {
-					return ("<br/>You feel your stomach swell out to a massive, over-inflated size as it distends from the colossal amount of cum that's been pumped inside of you."
-							+ (!immobile?" Placing a [npc.hand] on your belly, [npc.name] grins as [npc.she] remarks on the fact that you now look as though you're heavily pregnant.":""));
+					return ("<br/>Вы чувствуете, как ваш живот раздувается до огромных, переполненных размеров от колоссального количества спермы, которую в вас закачали."
+							+ (!immobile?" Положив [npc.hand] на твой живот, [npc.name] ухмыляется, пока [npc.she] замечает, что теперь ты выглядишь так, будто ты на позднем сроке беременности.":""));
 					
 				} else if(cumAmount >= CumProduction.SEVEN_MONSTROUS.getMedianValue()) {
-					return ("<br/>You feel your stomach swell out a little as it distends from the huge amount of cum that's been pumped inside of you."
-							+ (!immobile?" Placing a [npc.hand] on your belly, [npc.name] grins as [npc.she] remarks on the fact that you now look as though you're pregnant.":""));
+					return ("<br/>Ты чувствуешь, как твой живот слегка раздувается от огромного количества спермы, закачанной внутрь тебя."
+							+ (!immobile?" Положив [npc.hand] на твой живот, [npc.name] ухмыляется, пока [npc.she] замечает, что теперь ты выглядишь беременной.":""));
 					
 				} else if(cumAmount >= CumProduction.SEVEN_MONSTROUS.getMinimumValue()) {
-					return ("<br/>You feel your stomach swell out a little as it distends from the sheer amount of cum that's been pumped inside of you."
-							+ (!immobile?" Placing a [npc.hand] on your belly, [npc.name] grins as [npc.she] remarks on the fact that you now look as though you're in the early stages of pregnancy.":""));
+					return ("<br/>Ты чувствуешь, как твой живот слегка раздувается от невероятного количества спермы, закачанной внутрь тебя."
+							+ (!immobile?" Положив [npc.hand] на твой живот, [npc.name] ухмыляется, пока [npc.she] замечает, что теперь ты выглядишь так, будто у тебя самый ранний срок беременности.":""));
 				}
 			} else {
 				if(cumAmount >= CumProduction.SEVEN_MONSTROUS.getMaximumValue()) {
-					return ("<br/>[npc2.NamePos] stomach swells out to a massive, over-inflated size as it distends from the sheer amount of cum that [npc.namePos] pumped inside of [npc2.herHim]."
-							+ (!immobile?" Placing a [npc.hand] on [npc2.her] belly, the [npc.race] grins as [npc.she] remarks on the fact that [npc2.name] now looks as though [npc2.sheIs] heavily pregnant.":""));
+					return ("<br/>Живот [npc2.NamePos] раздувается до огромных, переполненных размеров от того невероятного количества спермы, которое [npc.namePos] закачал в [npc2.herHim]."
+							+ (!immobile?" Положив [npc.hand] на живот [npc2.her], [npc.race] ухмыляется, пока [npc.she] замечает, что [npc2.name] теперь выглядит так, будто [npc2.sheIs] на позднем сроке беременности.":""));
 					
 				} else if(cumAmount >= CumProduction.SEVEN_MONSTROUS.getMedianValue()) {
-					return ("<br/>[npc2.NamePos] stomach swells out as it distends from the huge amount of cum that [npc.namePos] pumped inside of [npc2.herHim]."
-							+ (!immobile?" Placing a [npc.hand] on [npc2.her] belly, the [npc.race] grins as [npc.she] remarks on the fact that [npc2.name] now looks as though [npc2.sheIs] pregnant.":""));
+					return ("<br/>Живот [npc2.NamePos] раздувается от огромного количества спермы, которое [npc.namePos] закачал в [npc2.herHim]."
+							+ (!immobile?" Положив [npc.hand] на живот [npc2.her], [npc.race] ухмыляется, пока [npc.she] замечает, что [npc2.name] теперь выглядит так, будто [npc2.sheIs] беременна.":""));
 					
 				} else if(cumAmount >= CumProduction.SEVEN_MONSTROUS.getMinimumValue()) {
-					return ("<br/>[npc2.NamePos] stomach swells out a little as it distends from the sheer amount of cum that [npc.namePos] pumped inside of [npc2.herHim]."
-							+ (!immobile?" Placing a [npc.hand] on [npc2.her] belly, the [npc.race] grins as [npc.she] remarks on the fact that [npc2.name] now looks as though [npc2.sheIs] in the early stages of pregnancy.":""));
+					return ("<br/>[npc2.NamePos] слегка раздувается от того огромного количества спермы, которое [npc.namePos] [npc2.herHim] влил внутрь."
+							+ (!immobile?" Положив [npc.hand] на живот [npc2.her], [npc.race] ухмыляется, когда [npc.she] замечает, что [npc2.name] теперь выглядит так, словно [npc2.sheIs] на ранних стадиях беременности.":""));
 				}
 			}
 		}
@@ -2707,39 +2633,39 @@ public class GenericOrgasms {
 	
 	private static String getSpinneretInflationText(GameCharacter characterOrgasming, GameCharacter target, float cumAmount) {
 		if(cumAmount >= CumProduction.SEVEN_MONSTROUS.getMaximumValue()) {
-			return ("<br/>[npc2.NamePos] "+(target.hasTailSpinneret()?"[npc2.tail]":"abdomen")+" swells out to a massive, over-inflated size as it distends from the sheer amount of cum that [npc.nameHas] pumped inside of [npc2.her] spinneret.");
+			return ("<br/>[npc2.NamePos] "+(target.hasTailSpinneret()?"[npc2.tail]":"abdomen")+" раздувается до массивных, раздутых размеров от того огромного количества спермы, которое [npc.nameHas] влил в паутину [npc2.her].");
 			
 		} else if(cumAmount >= CumProduction.SEVEN_MONSTROUS.getMedianValue()) {
-			return ("<br/>[npc2.NamePos] "+(target.hasTailSpinneret()?"[npc2.tail]":"abdomen")+" swells out as it distends from the huge amount of cum that [npc.nameHas] pumped inside of [npc2.her] spinneret.");
+			return ("<br/>[npc2.NamePos] "+(target.hasTailSpinneret()?"[npc2.tail]":"abdomen")+" раздувается от огромного количества спермы, которое [npc.nameHas] влил в паутину [npc2.her].");
 			
 		} else if(cumAmount >= CumProduction.SEVEN_MONSTROUS.getMinimumValue()) {
-			return ("<br/>[npc2.NamePos] "+(target.hasTailSpinneret()?"[npc2.tail]":"abdomen")+" swells out a little as it distends from the sheer amount of cum that [npc.nameHas] pumped inside of [npc2.her] spinneret.");
+			return ("<br/>[npc2.NamePos] "+(target.hasTailSpinneret()?"[npc2.tail]":"abdomen")+" слегка раздувается от того огромного количества спермы, которое [npc.nameHas] влил в паутину [npc2.her].");
 		}
 		return "";
 	}
 	
 	private static String getBreastInflationText(GameCharacter characterOrgasming, GameCharacter target, float cumAmount) {
 		if(cumAmount >= CumProduction.SEVEN_MONSTROUS.getMaximumValue()) {
-			return ("<br/>[npc2.NamePos] [npc2.breasts] swell out to a massive, over-inflated size as they distend from the sheer amount of cum that [npc.nameHas] pumped inside of them.");
+			return ("<br/>[npc2.NamePos] [npc2.breasts] раздуваются до массивных, раздутых размеров, когда их распирает от того огромного количества спермы, которое [npc.nameHas] влил в них.");
 			
 		} else if(cumAmount >= CumProduction.SEVEN_MONSTROUS.getMedianValue()) {
-			return ("<br/>[npc2.NamePos] [npc2.breasts] swell out as they distend from the huge amount of cum that [npc.nameHas] pumped inside of them.");
+			return ("<br/>[npc2.NamePos] [npc2.breasts] раздуваются от огромного количества спермы, которое [npc.nameHas] влил в них.");
 			
 		} else if(cumAmount >= CumProduction.SEVEN_MONSTROUS.getMinimumValue()) {
-			return ("<br/>[npc2.NamePos] [npc2.breasts] swell out a little as they distend from the sheer amount of cum that [npc.nameHas] pumped inside of them.");
+			return ("<br/>[npc2.NamePos] [npc2.breasts] слегка раздуваются от того огромного количества спермы, которое [npc.nameHas] влил в них.");
 		}
 		return "";
 	}
 	
 	private static String getBreastCrotchInflationText(GameCharacter characterOrgasming, GameCharacter target, float cumAmount) {
 		if(cumAmount >= CumProduction.SEVEN_MONSTROUS.getMaximumValue()) {
-			return ("<br/>[npc2.NamePos] [npc2.crotchBoobs] swell out to a massive, over-inflated size as they distend from the sheer amount of cum that [npc.nameHas] pumped inside of them.");
+			return ("<br/>[npc2.NamePos] [npc2.crotchBoobs] раздуваются до массивных, раздутых размеров, когда их распирает от того огромного количества спермы, которое [npc.nameHas] влил в них.");
 			
 		} else if(cumAmount >= CumProduction.SEVEN_MONSTROUS.getMedianValue()) {
-			return ("<br/>[npc2.NamePos] [npc2.crotchBoobs] swell out as they distend from the huge amount of cum that [npc.nameHas] pumped inside of them.");
+			return ("<br/>[npc2.NamePos] [npc2.crotchBoobs] раздуваются от огромного количества спермы, которую [npc.nameHas] влил в них.");
 			
 		} else if(cumAmount >= CumProduction.SEVEN_MONSTROUS.getMinimumValue()) {
-			return ("<br/>[npc2.NamePos] [npc2.crotchBoobs] swell out a little as they distend from the sheer amount of cum that [npc.nameHas] pumped inside of them.");
+			return ("<br/>[npc2.NamePos] [npc2.crotchBoobs] слегка раздуваются от невероятного количества спермы, которую [npc.nameHas] влил в них.");
 		}
 		return "";
 	}
@@ -2751,14 +2677,14 @@ public class GenericOrgasms {
 		genericOrgasmSB.setLength(0);
 		
 		if(immobile) {
-			genericOrgasmSB.append("A desperate, shuddering heat suddenly crashing up from [npc.her] [npc.pussy+],");
+			genericOrgasmSB.append("Отчаянный, дрожащий жар, внезапно нахлынувший из [npc.her] [npc.pussy+],");
 			if(sleeping) {
-				genericOrgasmSB.append(" but even with this [npc.name] [npc.verb(remain)] deeply asleep, with not even the wave of pure ecstasy that washes over [npc.herHim] being enough to wake [npc.herHim].");
+				genericOrgasmSB.append(" но даже при этом [npc.name] [npc.verb(remain)] глубоко спит, и даже волны чистого экстаза, омывающей [npc.herHim], недостаточно, чтобы разбудить [npc.herHim].");
 			} else {
-				genericOrgasmSB.append(" but even with this [npc.name] [npc.verb(remain)] completely silent and motionless, not reacting at all to the wave of pure ecstasy that washes over [npc.herHim].");
+				genericOrgasmSB.append(" но даже при этом [npc.name] [npc.verb(remain)] остается совершенно тихой и неподвижной, никак не реагируя на волну чистого экстаза, омывающую [npc.herHim].");
 			}
 		} else {
-			genericOrgasmSB.append("A desperate, shuddering heat suddenly crashes up from [npc.namePos] [npc.pussy+], and [npc.she] [npc.verb(let)] out a manic squeal as a blinding wave of pure ecstasy washes over [npc.herHim].");
+			genericOrgasmSB.append("Отчаянный, дрожащий жар внезапно нахлынывает из [npc.namePos] [npc.pussy+], и [npc.she] [npc.verb(let)] источает маниакальный визг, когда ослепительная волна чистого экстаза омывает [npc.herHim].");
 		}
 		
 		GameCharacter characterPenetrating = null;
@@ -2776,39 +2702,34 @@ public class GenericOrgasms {
 				case FINGER:
 					if(immobile) {
 						if(characterOrgasming.equals(characterPenetrating)) {
-							genericOrgasmSB.append(" [npc.Name] [npc.verb(keep)] [npc.her] [npc.fingers] stuffed deep in [npc.her] [npc.pussy+] while remaining "+(sleeping?"asleep":"completely motionless")+".");
+							genericOrgasmSB.append(" [npc.Name] [npc.verb(keep)] [npc.her] [npc.fingers] глубоко засунут в [npc.her] [npc.pussy+], оставаясь при этом "+(sleeping?"спящий":"совершенно неподвижный")+".");
 						} else {
 							if(immobilePenetrator) {
-								genericOrgasmSB.append(" [npc2.NamePos] [npc2.fingers+] remain stuffed in [npc.namePos] [npc.pussy+] through [npc.her] orgasm, with the two of "
-										+(playerInvolved?"you":"them")+" remaining "+(sleeping&&sleepingPenetrator?"asleep":"completely motionless")+".");
+								genericOrgasmSB.append(" [npc2.NamePos] [npc2.fingers+] остаются засунутыми в [npc.namePos] [npc.pussy+] на протяжении [npc.her] оргазма, при этом оба "
+										+(playerInvolved?"вы":"их")+" остаются "+(sleeping&&sleepingPenetrator?"спящий":"совершенно неподвижный")+".");
 							} else {
-								genericOrgasmSB.append(" [npc2.NamePos] [npc2.fingers+] carry on pumping away at [npc.namePos] [npc.pussy+] through [npc.her] orgasm,"
-										+ " but despite this stimulation, [npc.she] [npc.verb(remain)] "+(sleeping?"deeply asleep":"completely motionless")+".");
+								genericOrgasmSB.append(" [npc2.NamePos] [npc2.fingers+] продолжают качать в [npc.namePos] [npc.pussy+] сквозь [npc.her] оргазм, но, несмотря на эту стимуляцию, [npc.she] [npc.verb(remain)] "+(sleeping?"крепко спит":"совершенно неподвижный")+".");
 							}
 						}
 					} else {
 						if(characterOrgasming.isPlayer()) {
 							if(characterPenetrating.isPlayer()) {
-								genericOrgasmSB.append(" You curl your fingers up deep inside your [npc.pussy+], and, while desperately stroking in a 'come-hither' motion,"
-										+ " you let out a series of high-pitched moans as your vaginal muscles grip and squeeze around your intruding digits.");
+								genericOrgasmSB.append(" Вы поджимаете пальцы глубоко внутри своей [npc.pussy+], и, отчаянно совершая манящие движения, вы издаете серию пронзительных стонов, пока мышцы влагалища сжимают и обхватывают ваши вошедшие пальцы.");
 							} else {
 								if(immobilePenetrator) {
-									genericOrgasmSB.append(" [npc2.NamePos] fingers remain stuffed in your [npc.pussy+], and you let out a series of high-pitched moans as your vaginal muscles grip and squeeze around the intruding digits.");
+									genericOrgasmSB.append(" Пальцы [npc2.NamePos] так и остаются засунутыми в вашу [npc.pussy+], и вы издаете серию пронзительных стонов, пока мышцы влагалища сжимают и обхватывают вошедшие пальцы.");
 								} else {
-									genericOrgasmSB.append(" [npc2.NamePos] fingers carry on pumping away at your [npc.pussy+], and you let out a series of high-pitched moans as your vaginal muscles grip and squeeze around the intruding digits.");
+									genericOrgasmSB.append(" Пальцы [npc2.NamePos] продолжают ритмично двигаться в вашей [npc.pussy+], и вы издаете серию пронзительных стонов, пока мышцы влагалища сжимают и обхватывают вошедшие пальцы.");
 								}
 							}
 						} else {
 							if(characterOrgasming.equals(characterPenetrating)) {
-								genericOrgasmSB.append(" [npc.NamePos] vaginal muscles grip and squeeze around [npc.her] intruding digits,"
-										+ " and, driven on by the intense, pleasurable sensation, [npc.she] continues to stroke and tease [npc.her] clit, all the while letting out a series of [npc.moans+].");
+								genericOrgasmSB.append(" Мышцы влагалища [npc.NamePos] сжимают и обхватывают вошедшие пальцы [npc.her], и, подгоняемая интенсивным, приятным ощущением, [npc.she] продолжает ласкать и дразнить клитор [npc.her], при этом издавая серию [npc.moans+].");
 							} else {
 								if(immobilePenetrator) {
-									genericOrgasmSB.append(" [npc2.NamePos] fingers remain stuffed in [npc.namePos] [npc.pussy+],"
-											+ " and [npc.she] [npc.verb(let)] out a series of high-pitched moans as [npc.her] vaginal muscles grip and squeeze around the intruding digits.");
+									genericOrgasmSB.append(" Пальцы [npc2.NamePos] так и остаются засунутыми в [npc.namePos] [npc.pussy+], и [npc.she] [npc.verb(let)] серию пронзительных стонов, пока мышцы влагалища [npc.her] сжимают и обхватывают вошедшие пальцы.");
 								} else {
-									genericOrgasmSB.append(" [npc.NamePos] vaginal muscles grip and squeeze around [npc2.namePos] intruding digits,"
-											+ " and [npc2.she] continues to stroke and tease [npc.her] clit, drawing out a series of [npc.moans+] from between [npc.her] [npc.lips+].");
+									genericOrgasmSB.append(" Мышцы влагалища [npc.NamePos] сжимают и обхватывают вошедшие пальцы [npc2.namePos], и [npc2.she] продолжает ласкать и дразнить клитор [npc.her], вырывая серию [npc.moans+] из между [npc.her] [npc.lips+].");
 								}
 							}
 						}
@@ -2817,36 +2738,35 @@ public class GenericOrgasms {
 				case PENIS:
 					if(immobile) {
 						if(immobilePenetrator) {
-							genericOrgasmSB.append(" [npc2.NamePos] [npc2.cock+] remains stuffed in [npc.namePos] [npc.pussy+] through [npc.her] orgasm, with the two of "
-									+(playerInvolved?"you":"them")+" remaining "+(sleeping&&sleepingPenetrator?"asleep":"completely motionless")+".");
+							genericOrgasmSB.append(" [npc2.NamePos] [npc2.cock+] остается засунутым в [npc.namePos] [npc.pussy+] на протяжении [npc.her] оргазма, при этом оба "
+									+(playerInvolved?"вы":"их")+" остаются "+(sleeping&&sleepingPenetrator?"спящий":"совершенно неподвижный")+".");
 						} else {
-							genericOrgasmSB.append(" [npc2.Name] [npc2.verb(carry)] on fucking [npc.namePos] [npc.pussy+] through [npc.her] orgasm, but despite this stimulation, [npc.she] [npc.verb(remain)] "
-									+(sleeping?"deeply asleep":"completely motionless")+".");
+							genericOrgasmSB.append(" [npc2.Name] [npc2.verb(carry)] трахает [npc.namePos] [npc.pussy+] во время [npc.her] оргазма, но, несмотря на эту стимуляцию, [npc.she] [npc.verb(remain)] "
+									+(sleeping?"крепко спит":"совершенно неподвижный")+".");
 						}
 						
 					} else {
 						if(characterOrgasming.isPlayer()) {
 							if(characterPenetrating.isPlayer()) {
-								genericOrgasmSB.append(" You carry on fucking yourself through your orgasm, letting out a series of high-pitched moans as your vaginal muscles grip and squeeze around your [npc.cock+].");
+								genericOrgasmSB.append(" Ты продолжаешь трахать саму себя во время оргазма, издавая серию высоких стонов, пока мышцы влагалища сжимают и обхватывают твой [npc.cock+].");
 							} else {
 								if(immobilePenetrator) {
-									genericOrgasmSB.append(" [npc2.NamePos] [npc2.cock+] remains stuffed in your [npc.pussy+] through your orgasm,");
+									genericOrgasmSB.append(" [npc2.NamePos] [npc2.cock+] остается внутри твоей [npc.pussy+] на протяжении всего оргазма,");
 								} else {
-									genericOrgasmSB.append(" [npc2.Name] [npc2.verb(carry)] on fucking your [npc.pussy+] through your orgasm,");
+									genericOrgasmSB.append(" [npc2.Name] [npc2.verb(carry)] в еблу твою [npc.pussy+] до самого оргазма,");
 								}
-								genericOrgasmSB.append(" and you let out a series of high-pitched moans as your vaginal muscles grip and squeeze around [npc2.her] [npc2.penis+].");
+								genericOrgasmSB.append(" и ты издаешь серию высоких стонов, пока мышцы влагалища сжимают и обхватывают [npc2.her] [npc2.penis+].");
 							}
 						} else {
 							if(characterOrgasming.equals(characterPenetrating)) {
-								genericOrgasmSB.append(" [npc.Name] carries on fucking [npc.her] own [npc.pussy+] through [npc.her] orgasm,"
-										+ " causing [npc.herHim] to let out a series of high-pitched moans as [npc.her] vaginal muscles grip and squeeze around [npc.her] [npc.penis+].");
+								genericOrgasmSB.append(" [npc.Name] carries on fucking [npc.her] own [npc.pussy+] through [npc.her] orgasm, causing [npc.herHim] to let out a series of high-pitched moans as [npc.her] vaginal muscles grip and squeeze around [npc.her] [npc.penis+].");
 							} else {
 								if(immobilePenetrator) {
-									genericOrgasmSB.append(" [npc2.NamePos] [npc2.cock+] remains stuffed in [npc.namePos] [npc.pussy+] through [npc.her] orgasm,");
+									genericOrgasmSB.append(" [npc2.NamePos] [npc2.cock+] остается внутри [npc.namePos] [npc.pussy+] во время [npc.her] оргазма,");
 								} else {
-									genericOrgasmSB.append(" [npc2.Name] [npc2.verb(carry)] on fucking [npc.namePos] [npc.pussy+] through [npc.her] orgasm,");
+									genericOrgasmSB.append(" [npc2.Name] [npc2.verb(carry)] трахает [npc.namePos] [npc.pussy+] во время [npc.her] оргазма,");
 								}
-								genericOrgasmSB.append(" causing [npc.herHim] to let out a series of high-pitched moans as [npc.her] vaginal muscles grip and squeeze around [npc2.her] [npc2.penis+].");
+								genericOrgasmSB.append(" заставляя [npc.herHim] издавать серию высоких стонов, пока [npc.her] влагалищные мышцы сжимают и обхватывают [npc2.her] [npc2.penis+].");
 							}
 						}
 					}
@@ -2854,36 +2774,35 @@ public class GenericOrgasms {
 				case TAIL:
 					if(immobile) {
 						if(immobilePenetrator) {
-							genericOrgasmSB.append(" [npc2.NamePos] [npc2.tail+] remains stuffed in [npc.namePos] [npc.pussy+] through [npc.her] orgasm, with the two of "
-									+(playerInvolved?"you":"them")+" remaining "+(sleeping&&sleepingPenetrator?"asleep":"completely motionless")+".");
+							genericOrgasmSB.append(" [npc2.NamePos] [npc2.tail+] остается внутри [npc.namePos] [npc.pussy+] во время [npc.her] оргазма, при этом оба "
+									+(playerInvolved?"вы":"их")+" остаются "+(sleeping&&sleepingPenetrator?"спящий":"совершенно неподвижный")+".");
 						} else {
-							genericOrgasmSB.append(" [npc2.Name] [npc2.verb(carry)] on tail-fucking [npc.namePos] [npc.pussy+] through [npc.her] orgasm, but despite this stimulation, [npc.she] [npc.verb(remain)] "
-									+(sleeping?"deeply asleep":"completely motionless")+".");
+							genericOrgasmSB.append(" [npc2.Name] [npc2.verb(carry)] на хвосте-трахании [npc.namePos] [npc.pussy+] сквозь [npc.her] оргазм, но несмотря на эту стимуляцию, [npc.she] [npc.verb(remain)] "
+									+(sleeping?"крепко спит":"совершенно неподвижный")+".");
 						}
 						
 					} else {
 						if(characterOrgasming.isPlayer()) {
 							if(characterPenetrating.isPlayer()) {
-								genericOrgasmSB.append(" You carry on tail-fucking yourself through your orgasm, letting out a series of high-pitched moans as your vaginal muscles grip and squeeze around the intruding object.");
+								genericOrgasmSB.append(" Ты продолжаешь трахать себя хвостом на протяжении всего оргазма, издавая серию высоких стонов, пока мышцы влагалища сжимают и обхватывают инородный предмет.");
 							} else {
 								if(immobilePenetrator) {
-									genericOrgasmSB.append(" [npc2.NamePos] [npc2.tail+] remains stuffed in your [npc.pussy+] through your orgasm,");
+									genericOrgasmSB.append(" [npc2.tail+] [npc2.NamePos] остается засунутым в твою [npc.pussy+] на протяжении всего оргазма,");
 								} else {
-									genericOrgasmSB.append(" [npc2.Name] [npc2.verb(carry)] on tail-fucking your [npc.pussy+] through your orgasm,");
+									genericOrgasmSB.append(" [npc2.Name] [npc2.verb(carry)] на хвосте-трахании твоей [npc.pussy+] на протяжении всего оргазма,");
 								}
-								genericOrgasmSB.append(" and you let out a series of high-pitched moans as your vaginal muscles grip and squeeze around the intruding object.");
+								genericOrgasmSB.append(" и ты издаешь серию высоких стонов, пока мышцы влагалища сжимают и обхватывают инородный предмет.");
 							}
 						} else {
 							if(characterOrgasming.equals(characterPenetrating)) {
-								genericOrgasmSB.append(" [npc.Name] carries on tail-fucking [npc.her] own [npc.pussy+] through [npc.her] orgasm,"
-										+ " causing [npc.herHim] to let out a series of high-pitched moans as [npc.her] vaginal muscles grip and squeeze around the intruding object.");
+								genericOrgasmSB.append(" [npc.Name] carries on tail-fucking [npc.her] own [npc.pussy+] through [npc.her] orgasm, causing [npc.herHim] to let out a series of high-pitched moans as [npc.her] vaginal muscles grip and squeeze around the intruding object.");
 							} else {
 								if(immobilePenetrator) {
-									genericOrgasmSB.append(" [npc2.NamePos] [npc2.tail+] remains stuffed in [npc.namePos] [npc.pussy+] through [npc.her] orgasm,");
+									genericOrgasmSB.append(" [npc2.tail+] [npc2.NamePos] остается засунутым в [npc.namePos] [npc.pussy+] на протяжении [npc.her] оргазма,");
 								} else {
-									genericOrgasmSB.append(" [npc2.Name] [npc2.verb(carry)] on tail-fucking [npc.namePos] [npc.pussy+] through [npc.her] orgasm,");
+									genericOrgasmSB.append(" [npc2.Name] [npc2.verb(carry)] на хвосте-трахании [npc.namePos] [npc.pussy+] на протяжении [npc.her] оргазма,");
 								}
-								genericOrgasmSB.append(" causing [npc.herHim] to let out a series of high-pitched moans as [npc.her] vaginal muscles grip and squeeze around the intruding object.");
+								genericOrgasmSB.append(" заставляя [npc.herHim] издавать серию высоких стонов, пока [npc.her] влагалищные мышцы сжимают и обхватывают инородный предмет.");
 							}
 						}
 					}
@@ -2891,36 +2810,35 @@ public class GenericOrgasms {
 				case TONGUE:
 					if(immobile) {
 						if(immobilePenetrator) {
-							genericOrgasmSB.append(" [npc2.NamePos] [npc2.tongue+] remains thrust deep into [npc.namePos] [npc.pussy+] through [npc.her] orgasm, with the two of "
-									+(playerInvolved?"you":"them")+" remaining "+(sleeping&&sleepingPenetrator?"asleep":"completely motionless")+".");
+							genericOrgasmSB.append(" [npc2.tongue+] [npc2.NamePos] остается глубоко вонзенным в [npc.namePos] [npc.pussy+] на протяжении [npc.her] оргазма, при этом оба "
+									+(playerInvolved?"вы":"их")+" остаются "+(sleeping&&sleepingPenetrator?"спящий":"совершенно неподвижный")+".");
 						} else {
-							genericOrgasmSB.append(" [npc2.Name] [npc2.verb(carry)] on licking and kissing [npc.namePos] clit through [npc.her] orgasm, but despite this stimulation, [npc.she] [npc.verb(remain)] "
-									+(sleeping?"deeply asleep":"completely motionless")+".");
+							genericOrgasmSB.append(" [npc2.Name] [npc2.verb(carry)], вылизывая и целуя [npc.namePos] клитор во время [npc.her] оргазма, но, несмотря на эту стимуляцию, [npc.she] [npc.verb(remain)] "
+									+(sleeping?"крепко спит":"совершенно неподвижный")+".");
 						}
 						
 					} else {
 						if(characterOrgasming.isPlayer()) {
 							if(characterPenetrating.isPlayer()) {
-								genericOrgasmSB.append(" You carry on licking and kissing your clit as you orgasm, letting out a series of high-pitched moans as you feel your vaginal muscles quiver and contract at the overwhelming sensation.");
+								genericOrgasmSB.append(" Ты продолжаешь лизать и целовать свой клитор во время оргазма, издавая серию высоких стонов, когда чувствуешь, как мышцы влагалища дрожат и сокращаются от этого всепоглощающего ощущения.");
 							} else {
 								if(immobilePenetrator) {
-									genericOrgasmSB.append(" [npc2.Name] [npc2.tongue+] remains thrust deep into your [npc.pussy+] while you orgasm,");
+									genericOrgasmSB.append(" [npc2.Name] [npc2.tongue+] остается глубоко внутри твоей [npc.pussy+], пока ты испытываешь оргазм,");
 								} else {
-									genericOrgasmSB.append(" [npc2.Name] carries on licking and kissing at your clit while you orgasm,");
+									genericOrgasmSB.append(" [npc2.Name] продолжает лизать и целовать твой клитор, пока ты испытываешь оргазм,");
 								}
-								genericOrgasmSB.append(" causing you to let out a series of high-pitched moans as you feel your vaginal muscles quiver and contract at the overwhelming sensation.");
+								genericOrgasmSB.append(" заставляя тебя издавать серию высоких стонов, когда ты чувствуешь, как мышцы влагалища дрожат и сокращаются от этого всепоглощающего ощущения.");
 							}
 						} else {
 							if(characterOrgasming.equals(characterPenetrating)) {
-								genericOrgasmSB.append(" [npc.Name] carries on licking and kissing [npc.her] own clit while [npc.she] orgasms,"
-										+ " causing [npc.herHim] to let out a series of high-pitched moans as [npc.her] vaginal muscles quiver and contract at the overwhelming sensation.");
+								genericOrgasmSB.append(" [npc.Name] продолжает лизать и целовать собственный [npc.her] клитор, пока [npc.she] испытывает оргазм, отчего [npc.herHim] издает серию высоких стонов, пока [npc.her] влагалищные мышцы дрожат и сокращаются от этого всепоглощающего ощущения.");
 							} else {
 								if(immobilePenetrator) {
-									genericOrgasmSB.append(" [npc2.Name] [npc2.tongue+] remains thrust deep [npc.namePos] [npc.pussy+] while [npc.she] [npc.verb(orgasm)],");
+									genericOrgasmSB.append(" [npc2.Name] [npc2.tongue+] остается глубоко внутри [npc.namePos] [npc.pussy+], пока [npc.she] [npc.verb(orgasm)],");
 								} else {
-									genericOrgasmSB.append(" [npc2.Name] [npc2.verb(carry)] on licking and kissing [npc.namePos] clit while [npc.she] orgasms,");
+									genericOrgasmSB.append(" [npc2.Name] [npc2.verb(carry)], вылизывая и целуя [npc.namePos] клитор, пока [npc.she] испытывает оргазм,");
 								}
-								genericOrgasmSB.append(" causing [npc.herHim] to let out a series of high-pitched moans as [npc.her] vaginal muscles quiver and contract at the overwhelming sensation.");
+								genericOrgasmSB.append(" заставляя [npc.herHim] издавать серию высоких стонов, пока [npc.her] влагалищные мышцы дрожат и сокращаются от этого всепоглощающего ощущения.");
 							}
 						}
 					}
@@ -2928,36 +2846,35 @@ public class GenericOrgasms {
 				case TENTACLE:
 					if(immobile) {
 						if(immobilePenetrator) {
-							genericOrgasmSB.append(" [npc2.NamePos] [npc2.tentacle+] remains stuffed in [npc.namePos] [npc.pussy+] through [npc.her] orgasm, with the two of "
-									+(playerInvolved?"you":"them")+" remaining "+(sleeping&&sleepingPenetrator?"asleep":"completely motionless")+".");
+							genericOrgasmSB.append(" [npc2.NamePos] [npc2.tentacle+] остается глубоко в [npc.namePos] [npc.pussy+] во время [npc.her] оргазма, при этом оба "
+									+(playerInvolved?"вы":"их")+" остаются "+(sleeping&&sleepingPenetrator?"спящий":"совершенно неподвижный")+".");
 						} else {
-							genericOrgasmSB.append(" [npc2.Name] [npc2.verb(carry)] on tentacle-fucking [npc.namePos] [npc.pussy+] through [npc.her] orgasm, but despite this stimulation, [npc.she] [npc.verb(remain)] "
-									+(sleeping?"deeply asleep":"completely motionless")+".");
+							genericOrgasmSB.append(" [npc2.Name] [npc2.verb(carry)] на щупальцевом трахании [npc.namePos] [npc.pussy+] сквозь [npc.her] оргазм, но, несмотря на эту стимуляцию, [npc.she] [npc.verb(remain)] "
+									+(sleeping?"крепко спит":"совершенно неподвижный")+".");
 						}
 						
 					} else {
 						if(characterOrgasming.isPlayer()) {
 							if(characterPenetrating.isPlayer()) {
-								genericOrgasmSB.append(" You carry on tentacle-fucking yourself through your orgasm, letting out a series of high-pitched moans as your vaginal muscles grip and squeeze around the intruding object.");
+								genericOrgasmSB.append(" Ты продолжаешь трахать себя щупальцем на протяжении всего оргазма, издавая серию высоких стонов, пока твои влагалищные мышцы сжимаются и обхватывают вошедший внутрь объект.");
 							} else {
 								if(immobilePenetrator) {
-									genericOrgasmSB.append(" [npc2.NamePos] [npc2.tentacle+] remains stuffed in your [npc.pussy+] through your orgasm,");
+									genericOrgasmSB.append(" [npc2.NamePos] [npc2.tentacle+] остается внутри твоей [npc.pussy+] на протяжении всего оргазма,");
 								} else {
-									genericOrgasmSB.append(" [npc2.Name] [npc2.verb(carry)] on tentacle-fucking your [npc.pussy+] through your orgasm,");
+									genericOrgasmSB.append(" [npc2.Name] [npc2.verb(carry)] на щупальцевом трахании твоей [npc.pussy+] на протяжении всего твоего оргазма,");
 								}
-								genericOrgasmSB.append(" and you let out a series of high-pitched moans as your vaginal muscles grip and squeeze around the intruding object.");
+								genericOrgasmSB.append(" и ты издаешь серию высоких стонов, пока мышцы влагалища сжимают и обхватывают инородный предмет.");
 							}
 						} else {
 							if(characterOrgasming.equals(characterPenetrating)) {
-								genericOrgasmSB.append(" [npc.Name] carries on tentacle-fucking [npc.her] own [npc.pussy+] through [npc.her] orgasm,"
-										+ " causing [npc.herHim] to let out a series of high-pitched moans as [npc.her] vaginal muscles grip and squeeze around the intruding object.");
+								genericOrgasmSB.append(" [npc.Name] продолжает кромсать щупальцами [npc.her] собственную [npc.pussy+] через [npc.her] оргазм, заставляя [npc.herHim] издавать череду высоких стонов, пока [npc.her] вагинальные мышцы сжимаются и обхватывают вошедший внутрь объект.");
 							} else {
 								if(immobilePenetrator) {
-									genericOrgasmSB.append(" [npc2.NamePos] [npc2.tentacle+] remains stuffed in [npc.namePos] [npc.pussy+] through [npc.her] orgasm,");
+									genericOrgasmSB.append(" [npc2.NamePos] [npc2.tentacle+] остается зажатым в [npc.namePos] [npc.pussy+] до самого [npc.her] оргазма,");
 								} else {
-									genericOrgasmSB.append(" [npc2.Name] [npc2.verb(carry)] on tentacle-fucking [npc.namePos] [npc.pussy+] through [npc.her] orgasm,");
+									genericOrgasmSB.append(" [npc2.Name] [npc2.verb(carry)] на щупальцевом трахании [npc.namePos] [npc.pussy+] на протяжении [npc.her] оргазма,");
 								}
-								genericOrgasmSB.append(" causing [npc.herHim] to let out a series of high-pitched moans as [npc.her] vaginal muscles grip and squeeze around the intruding object.");
+								genericOrgasmSB.append(" заставляя [npc.herHim] издавать серию высоких стонов, пока [npc.her] влагалищные мышцы сжимают и обхватывают инородный предмет.");
 							}
 						}
 					}
@@ -2965,36 +2882,35 @@ public class GenericOrgasms {
 				case CLIT:
 					if(immobile) {
 						if(immobilePenetrator) {
-							genericOrgasmSB.append(" [npc2.NamePos] [npc2.clit+] remains stuffed in [npc.namePos] [npc.pussy+] through [npc.her] orgasm, with the two of "
-									+(playerInvolved?"you":"them")+" remaining "+(sleeping&&sleepingPenetrator?"asleep":"completely motionless")+".");
+							genericOrgasmSB.append(" [npc2.NamePos] [npc2.clit+] остается засунутым в [npc.namePos] [npc.pussy+] на протяжении [npc.her] оргазма, при этом оба "
+									+(playerInvolved?"вы":"их")+" остаются "+(sleeping&&sleepingPenetrator?"спящий":"совершенно неподвижный")+".");
 						} else {
-							genericOrgasmSB.append(" [npc2.Name] [npc2.verb(carry)] on clit-fucking [npc.namePos] [npc.pussy+] through [npc.her] orgasm, but despite this stimulation, [npc.she] [npc.verb(remain)] "
-									+(sleeping?"deeply asleep":"completely motionless")+".");
+							genericOrgasmSB.append(" [npc2.Name] [npc2.verb(carry)] на клиторовом трахании [npc.namePos] [npc.pussy+] сквозь [npc.her] оргазм, но, несмотря на эту стимуляцию, [npc.she] [npc.verb(remain)] "
+									+(sleeping?"крепко спит":"совершенно неподвижный")+".");
 						}
 						
 					} else {
 						if(characterOrgasming.isPlayer()) {
 							if(characterPenetrating.isPlayer()) {
-								genericOrgasmSB.append(" You carry on clit-fucking yourself through your orgasm, letting out a series of high-pitched moans as your vaginal muscles grip and squeeze around your [npc.clit+].");
+								genericOrgasmSB.append(" Ты продолжаешь трахать свой клитор щупальцем на протяжении всего оргазма, издавая серию высоких стонов, пока твои влагалищные мышцы сжимаются и обхватывают твой [npc.clit+].");
 							} else {
 								if(immobilePenetrator) {
-									genericOrgasmSB.append(" [npc2.NamePos] [npc2.clit+] remains stuffed in your [npc.pussy+] through your orgasm,");
+									genericOrgasmSB.append(" [npc2.NamePos] [npc2.clit+] остается внутри твоей [npc.pussy+] на протяжении всего твоего оргазма,");
 								} else {
-									genericOrgasmSB.append(" [npc2.Name] [npc2.verb(carry)] on clit-fucking your [npc.pussy+] through your orgasm,");
+									genericOrgasmSB.append(" [npc2.Name] [npc2.verb(carry)], продолжая трахать твою [npc.pussy+] клитором во время твоего оргазма,");
 								}
-								genericOrgasmSB.append(" and you let out a series of high-pitched moans as your vaginal muscles grip and squeeze around [npc2.her] [npc2.clit+].");
+								genericOrgasmSB.append(" и ты издаешь серию высоких стонов, пока твои влагалищные мышцы сжимают и обхватывают [npc2.her] [npc2.clit+].");
 							}
 						} else {
 							if(characterOrgasming.equals(characterPenetrating)) {
-								genericOrgasmSB.append(" [npc.Name] carries on clit-fucking [npc.her] own [npc.pussy+] through [npc.her] orgasm,"
-										+ " causing [npc.herHim] to let out a series of high-pitched moans as [npc.her] vaginal muscles grip and squeeze around [npc.her] [npc.clit+].");
+								genericOrgasmSB.append(" [npc.Name] продолжает трахать [npc.her] собственный [npc.pussy+] клитором во время [npc.her] оргазма, заставляя [npc.herHim] издавать серию высоких стонов, пока [npc.her] влагалищные мышцы сжимают и обхватывают [npc.her] [npc.clit+].");
 							} else {
 								if(immobilePenetrator) {
-									genericOrgasmSB.append(" [npc2.NamePos] [npc2.clit+] remains stuffed in [npc.namePos] [npc.pussy+] through [npc.her] orgasm,");
+									genericOrgasmSB.append(" [npc2.NamePos] [npc2.clit+] остается внутри [npc.namePos] [npc.pussy+] во время [npc.her] оргазма,");
 								} else {
-									genericOrgasmSB.append(" [npc2.Name] [npc2.verb(carry)] on clit-fucking [npc.namePos] [npc.pussy+] through [npc.her] orgasm,");
+									genericOrgasmSB.append(" [npc2.Name] [npc2.verb(carry)], продолжая трахать [npc.namePos] [npc.pussy+] во время [npc.her] оргазма,");
 								}
-								genericOrgasmSB.append(" causing [npc.herHim] to let out a series of high-pitched moans as [npc.her] vaginal muscles grip and squeeze around [npc2.her] [npc2.clit+].");
+								genericOrgasmSB.append(" заставляя [npc.herHim] издавать серию высоких стонов, пока [npc.her] влагалищные мышцы сжимают и обхватывают [npc2.her] [npc2.clit+].");
 							}
 						}
 					}
@@ -3010,13 +2926,12 @@ public class GenericOrgasms {
 					pluggedVagina = true;
 					if(immobile) {
 						if(sleeping) {
-							genericOrgasmSB.append(" [npc.Name] [npc.verb(remain)] deeply asleep as [npc.her] vaginal muscles grip and squeeze around the "+c.getName()+" inserted into [npc.her] [npc.pussy].");
+							genericOrgasmSB.append(" [npc.Name] [npc.verb(remain)] глубоко спит, пока [npc.her] влагалищные мышцы сжимают и обхватывают "+c.getName()+" вставший в [npc.her] [npc.pussy].");
 						} else {
-							genericOrgasmSB.append(" [npc.Name] [npc.verb(remain)] totally motionless as [npc.her] vaginal muscles grip and squeeze around the "+c.getName()+" inserted into [npc.her] [npc.pussy].");
+							genericOrgasmSB.append(" [npc.Name] [npc.verb(remain)] совершенно неподвижно, пока [npc.her] влагалищные мышцы сжимают и обхватывают "+c.getName()+" вставший в [npc.her] [npc.pussy].");
 						}
 					} else {
-						genericOrgasmSB.append(" [npc.NamePos] [npc.pussy+] clenches down hard,"
-								+ " causing [npc.herHim] to let out a series of high-pitched moans as [npc.her] vaginal muscles grip and squeeze around the "+c.getName()+" inserted into [npc.her] [npc.pussy].");
+						genericOrgasmSB.append(" [npc.NamePos] [npc.pussy+] сильно сжимаются, заставляя [npc.herHim] издавать серию высоких стонов, пока вагинальные мышцы [npc.her] обхватывают и сжимают "+c.getName()+" вставший в [npc.her] [npc.pussy].");
 					}
 					break;
 				}
@@ -3030,34 +2945,33 @@ public class GenericOrgasms {
 						&& analPenetrator.isTakesVirginity()) {
 					GameCharacter characterPenetratingAss = Main.sex.getOngoingCharactersUsingAreas(characterOrgasming, SexAreaOrifice.ANUS, analPenetrator).iterator().next();
 					genericOrgasmSB.append(UtilText.parse(characterOrgasming, characterPenetratingAss,
-							" [npc.NamePos] [npc.pussy+] clenches down hard, and despite the fact that it's not being penetrated, [npc.namePos] pleasure isn't in any way lessened due to the fact that [npc.sheIs] "
-								+(Main.sex.getSexPace(characterOrgasming)==SexPace.SUB_RESISTING?"focusing primarily on":"loving")
-								+" the feeling of [npc2.namePos] "+analPenetrator.getName(characterPenetratingAss)+" in [npc.her] ass."));
+							" [npc.NamePos] [npc.pussy+] сильно сжимаются, и несмотря на то, что проникновения нет, удовольствие [npc.namePos] ничуть не уменьшается из-за того, что [npc.sheIs] "
+								+(Main.sex.getSexPace(characterOrgasming)==SexPace.SUB_RESISTING?"сосредоточена в основном на":"обожании")
+								+" ощущения [npc2.namePos] "+analPenetrator.getName(characterPenetratingAss)+" в заднице [npc.her]."));
 					
 				} else if(tribbingPartners!=null && !tribbingPartners.isEmpty()) {
 					GameCharacter tribbingPartner = tribbingPartners.iterator().next();
 					if(immobile) {
 						if(sleeping) {
 							genericOrgasmSB.append(UtilText.parse(characterOrgasming, tribbingPartner,
-									"  [npc.Name] [npc.verb(remain)] deeply asleep as [npc2.namePos] [npc2.pussy+] rubs, bumps, and grinds against [npc.hers]."));
+									"  [npc.Name] [npc.verb(remain)] глубоко спит, пока [npc2.namePos] [npc2.pussy+] трется, толкается и прижимается к [npc.hers]."));
 						} else {
 							genericOrgasmSB.append(UtilText.parse(characterOrgasming, tribbingPartner,
-									"  [npc.Name] [npc.verb(remain)] totally motionless as [npc2.namePos] [npc2.pussy+] rubs, bumps, and grinds against [npc.hers]."));
+									"  [npc.Name] [npc.verb(remain)] совершенно неподвижна, пока [npc2.namePos] [npc2.pussy+] трется, толкается и прижимается к [npc.hers]."));
 						}
 					} else {
 						genericOrgasmSB.append(UtilText.parse(characterOrgasming, tribbingPartner,
-								" [npc.NamePos] [npc.pussy+] clenches down hard, and [npc.she] can't help but let out [npc.a_moan+] as [npc.she] [npc.verb(focus)]"
-									+ " on the feeling of [npc2.namePos] [npc2.pussy+] rubbing, bumping, and grinding against [npc.hers]."));
+								" [npc.NamePos] [npc.pussy+] сильно сжимаются, и [npc.she] не может не издать [npc.a_moan+], пока [npc.she] [npc.verb(focus)] на ощущении того, как [npc2.namePos] [npc2.pussy+] трется, толкается и прижимается к [npc.hers]."));
 					}
 					
 				} else {
-					genericOrgasmSB.append(" [npc.NamePos] [npc.pussy+] clenches down hard, and the wave of disappointment upon finding itself empty almost overwhelms the pleasure that radiates up through [npc.her] groin.");
+					genericOrgasmSB.append(" [npc.NamePos] [npc.pussy+] сильно сжимаются, и волна разочарования от осознания собственной пустоты почти перекрывает удовольствие, разливающееся по паху [npc.her].");
 				}
 			}
 		}
 		
 		if(targetArea == OrgasmCumTarget.LILAYA_PANTIES && !Main.game.getPlayer().hasPenisIgnoreDildo()) {
-			genericOrgasmSB.append(" As you squeal and pant, you bring Lilaya's panties up to your face, and breathe in your demonic [lilaya.relation(pc)]'s musky, perfume-laced scent as you imagine her pussy pressing against the soft fabric.");
+			genericOrgasmSB.append(" Пока ты визжишь и тяжело дышишь, ты подносишь трусики Lilaya к самому лицу, вдыхая мускусный аромат твоей демоницы [lilaya.relation(pc)], смешанный с запахом духов, и представляешь, как её киска прижимается к мягкой ткани.");
 		}
 		
 		if(characterOrgasming.isVaginaSquirter()) {
@@ -3068,51 +2982,51 @@ public class GenericOrgasms {
 				}
 			}
 			ejaculateDescriptors.add("wet");
-			genericOrgasmSB.append("<br/>As [npc.namePos] [npc.pussy+] uncontrollably spasms and quivers with delight, it suddenly squirts out a huge amount of hot, "+Util.randomItemFrom(ejaculateDescriptors)+" female ejaculate");
+			genericOrgasmSB.append("<br/>Пока [npc.namePos] [npc.pussy+] в неудержимых спазмах и дрожи от восторга, внезапно выплескивается огромное количество горячей, "+Util.randomItemFrom(ejaculateDescriptors)+" женской эякуляции");
 
 			if(characterPenetrating!=null && penetration!=null) {
 				boolean immobilePenetrator = isCharacterTotallyImmobilised(characterPenetrating);
 				boolean sleepingPenetrator = characterPenetrating.isAsleep();
 				switch(penetration) {
 					case CLIT:
-						genericOrgasmSB.append(", which helps to lube [npc2.namePos] [npc2.clit+].");
+						genericOrgasmSB.append(", которая помогает смазать [npc2.namePos] [npc2.clit+].");
 						break;
 					case FINGER:
 						if(immobilePenetrator) {
-							genericOrgasmSB.append(", which helps to lube [npc2.namePos] [npc2.fingers+] as they remain "+(sleepingPenetrator?"stuffed":"motionless")+" deep within [npc.her] [npc.pussy].");
+							genericOrgasmSB.append(", которая помогает смазать [npc2.namePos] [npc2.fingers+], пока они остаются "+(sleepingPenetrator?"набитыми":"неподвижно")+" глубоко внутри [npc.her] [npc.pussy].");
 						} else {
-							genericOrgasmSB.append(", which helps to produce a slick, wet sound as [npc2.namePos] [npc2.fingers+] continue to slide in and out of [npc.her] [npc.pussy].");
+							genericOrgasmSB.append(", что создает скользкий, влажный звук, пока [npc2.namePos] [npc2.fingers+] продолжают входить и выходить из [npc.her] [npc.pussy].");
 						}
 						break;
 					case FOOT:
-						genericOrgasmSB.append(", which runs down over [npc2.namePos] [npc2.feet+].");
+						genericOrgasmSB.append(", которая стекает по [npc2.namePos] [npc2.feet+].");
 						break;
 					case PENIS:
 						if(immobilePenetrator) {
-							genericOrgasmSB.append(", which helps to lube [npc2.namePos] [npc2.cock+] as it remains "+(sleepingPenetrator?"stuffed":"motionless")+" deep within [npc.her] [npc.pussy].");
+							genericOrgasmSB.append(", что помогает смазывать [npc2.namePos] [npc2.cock+], пока тот остается "+(sleepingPenetrator?"набитыми":"неподвижно")+" глубоко внутри [npc.her] [npc.pussy].");
 						} else {
-							genericOrgasmSB.append(", which helps to produce a lewd, squelching noise as [npc2.namePos] [npc2.cock+] continues to pump in and out of [npc.her] [npc.pussy].");
+							genericOrgasmSB.append(", что помогает издавать похотливый, хлюпающий звук, пока [npc2.namePos] [npc2.cock+] продолжает входить и выходить из [npc.her] [npc.pussy].");
 						}
 						break;
 					case TAIL:
 						if(immobilePenetrator) {
-							genericOrgasmSB.append(", which helps to lube [npc2.namePos] [npc2.tail+(true)] as it remains "+(sleepingPenetrator?"stuffed":"motionless")+" deep within [npc.her] [npc.pussy].");
+							genericOrgasmSB.append(", что помогает смазывать [npc2.namePos] [npc2.tail+(true)], пока тот остается "+(sleepingPenetrator?"набитыми":"неподвижно")+" глубоко внутри [npc.her] [npc.pussy].");
 						} else {
-							genericOrgasmSB.append(", which helps to produce a lewd, squelching noise as [npc2.namePos] [npc2.tail+(true)] continues to pump in and out of [npc.her] [npc.pussy].");
+							genericOrgasmSB.append(", что помогает издавать похотливый хлюпающий звук, пока [npc2.namePos] [npc2.tail+(true)] продолжает входить и выходить из [npc.her] [npc.pussy].");
 						}
 						break;
 					case TENTACLE:
 						if(immobilePenetrator) {
-							genericOrgasmSB.append(", which helps to lube [npc2.namePos] [npc2.tentacle+(true)] as it remains "+(sleepingPenetrator?"stuffed":"motionless")+" deep within [npc.her] [npc.pussy].");
+							genericOrgasmSB.append(", что помогает смазывать [npc2.namePos] [npc2.tentacle+(true)], пока тот остается "+(sleepingPenetrator?"набитыми":"неподвижно")+" глубоко внутри [npc.her] [npc.pussy].");
 						} else {
-							genericOrgasmSB.append(", which helps to produce a lewd, squelching noise as [npc2.namePos] [npc2.tentacle+(true)] continues to pump in and out of [npc.her] [npc.pussy].");
+							genericOrgasmSB.append(", что помогает издавать похотливый хлюпающий звук, пока [npc2.namePos] [npc2.tentacle+(true)] продолжает входить и выходить из [npc.her] [npc.pussy].");
 						}
 						break;
 					case TONGUE:
 						if(immobilePenetrator) {
-							genericOrgasmSB.append(", which runs down over [npc2.namePos] [npc2.tongue+] as [npc2.she] [npc2.verb(keep)] it "+(sleepingPenetrator?"stuffed":"motionless")+" deep within [npc.her] [npc.pussy].");
+							genericOrgasmSB.append(", которое стекает по [npc2.namePos] [npc2.tongue+], пока [npc2.she] [npc2.verb(keep)] его "+(sleepingPenetrator?"набитыми":"неподвижно")+" глубоко внутри [npc.her] [npc.pussy].");
 						} else {
-							genericOrgasmSB.append(", which [npc2.name] [npc2.verb(lap)] up with [npc2.her] [npc2.tongue+].");
+							genericOrgasmSB.append(", что [npc2.name] [npc2.verb(lap)] вместе с [npc2.her] [npc2.tongue+].");
 						}
 						break;
 				}
@@ -3121,7 +3035,7 @@ public class GenericOrgasms {
 			}
 			
 			if(targetArea == OrgasmCumTarget.LILAYA_PANTIES) {
-				genericOrgasmSB.append("<br/>You quickly drop Lilaya's panties down between your legs, squirting directly into her underwear as you let out [pc.a_moan+].");
+				genericOrgasmSB.append("<br/>Ты быстро спускаешь трусики Lilaya между своих ног, кончая прямо в её белье и издавая [pc.a_moan+].");
 				LilayasRoom.lilayasPanties.setDirty(null, true);
 				
 			} else {
@@ -3131,19 +3045,19 @@ public class GenericOrgasms {
 							&& !vaginaClothing.getItemTags().contains(ItemTag.SEALS_VAGINA)) {
 						if(immobile) {
 							if(sleeping) {
-								genericOrgasmSB.append(" [npc.She] [npc.verb(continue)] to sleep as [npc.her] "
-										+vaginaClothing.getName()+" "+(vaginaClothing.getClothingType().isPlural()?"are":"is")+" quickly dirtied by [npc.her] fluids.");
+								genericOrgasmSB.append(" [npc.She] [npc.verb(continue)] в сон, пока [npc.her] "
+										+vaginaClothing.getName()+" "+(vaginaClothing.getClothingType().isPlural()?"являются":"есть")+" быстро пачкается жидкостями [npc.her].");
 							} else {
-								genericOrgasmSB.append(" [npc.She] [npc.do]n't react at all as [npc.she] [npc.verb(feel)] that [npc.her] "
-										+vaginaClothing.getName()+" "+(vaginaClothing.getClothingType().isPlural()?"are":"is")+" quickly getting dirtied by [npc.her] fluids.");
+								genericOrgasmSB.append(" [npc.She] [npc.do] совсем не реагирует, пока [npc.she] [npc.verb(feel)], что [npc.her] "
+										+vaginaClothing.getName()+" "+(vaginaClothing.getClothingType().isPlural()?"являются":"есть")+" быстро пачкается жидкостями [npc.her].");
 							}
 						} else {
-							genericOrgasmSB.append(" [npc.She] [npc.verb(let)] out a deep sigh as [npc.she] [npc.verb(feel)] that [npc.her] "
-									+vaginaClothing.getName()+" "+(vaginaClothing.getClothingType().isPlural()?"are":"is")+" quickly getting dirtied by [npc.her] fluids.");
+							genericOrgasmSB.append(" [npc.She] [npc.verb(let)] глубокий вздох, пока [npc.she] [npc.verb(feel)], что [npc.her] "
+									+vaginaClothing.getName()+" "+(vaginaClothing.getClothingType().isPlural()?"являются":"есть")+" быстро пачкается жидкостями [npc.her].");
 						}
 						
 					} else {
-						genericOrgasmSB.append(" As [npc.her] "+vaginaClothing.getName()+" "+(vaginaClothing.getClothingType().isPlural()?"are":"is")+" sealing [npc.her] [npc.pussy], nothing gets dirtied by [npc.her] fluids.");
+						genericOrgasmSB.append(" Пока [npc.her] "+vaginaClothing.getName()+" "+(vaginaClothing.getClothingType().isPlural()?"являются":"есть")+" запечатывает [npc.her] [npc.pussy], ничто не пачкается жидкостями [npc.her].");
 					}
 					vaginaClothing.setDirty(Main.sex.getCharacterPerformingAction(), true);
 					
@@ -3154,10 +3068,10 @@ public class GenericOrgasms {
 					for(GameCharacter character : charactersEatingOut) { // Should only be one character
 						if(isCharacterTotallyImmobilised(character)) {
 							genericOrgasmSB.append(UtilText.parse(characterOrgasming, character,
-									" As [npc2.namePos] face is right in front of [npc.namePos] [npc.pussy+], [npc.namePos] fluids squirt out both into [npc2.her] mouth, as well as all over [npc2.her] [npc2.face]."));
+									" Когда лицо [npc2.namePos] оказывается прямо перед [npc.namePos], [npc.pussy+], жидкости [npc.namePos] брызжут как прямо в рот [npc2.her], так и на [npc2.her] [npc2.face]."));
 						} else {
 							genericOrgasmSB.append(UtilText.parse(characterOrgasming, character,
-									" As [npc2.nameIs] eating [npc.herHim] out, [npc.namePos] fluids squirt out both into [npc2.her] mouth, as well as all over [npc2.her] [npc2.face]."));
+									" Пока [npc2.nameIs] ласкает [npc.herHim] языком, [npc.namePos] жидкости брызжут как в [npc2.her] рот, так и на все [npc2.her] [npc2.face]."));
 						}
 					}
 				}
@@ -3169,14 +3083,12 @@ public class GenericOrgasms {
 //		}
 		if(immobile) {
 			if(sleeping) {
-				genericOrgasmSB.append("<br/><br/>Although [npc.she] [npc.verb(make)] some lewd noises and [npc.verb(squirm)] about a little, [npc.name] [npc.verb(remain)] asleep as [npc.her] feminine climax starts to fade,"
-						+ " and [npc.do]n't show any sign of being close to waking up.");
+				genericOrgasmSB.append("<br/><br/>Хотя [npc.she] [npc.verb(make)] издает кое-какие похотливые звуки и немного [npc.verb(squirm)], [npc.name] [npc.verb(remain)] засыпает, когда [npc.her] женский оргазм начинает стихать, и [npc.do] нет никаких признаков того, что она вот-вот проснется.");
 			} else {
-				genericOrgasmSB.append("<br/><br/>Obediently acting like an inanimate sex doll, [npc.name] [npc.verb(remain)] silent and unmoving as [npc.her] feminine climax starts to fade,"
-						+ " and [npc.do]n't show any sign of needing to recover from [npc.her] orgasm.");
+				genericOrgasmSB.append("<br/><br/>Покорно изображая неодушевленную секс-куклу, [npc.name] [npc.verb(remain)] безмолвно и неподвижно, пока [npc.her] женская разрядка начинает угасать, и [npc.do] не подавая никаких признаков того, что ей нужно восстановиться после [npc.her] оргазма.");
 			}
 		} else {
-			genericOrgasmSB.append("<br/><br/>With a deeply-satisfied sigh, [npc.namePos] feminine climax starts to fade, and [npc.she] [npc.verb(take)] a few deep gasps of air as [npc.she] [npc.verb(seek)] to catch [npc.her] breath.");
+			genericOrgasmSB.append("<br/><br/>С глубоким, удовлетворенным вздохом [npc.namePos] женская разрядка начинает угасать, и [npc.she] [npc.verb(take)] несколько глубоких вдохов, пока [npc.she] [npc.verb(seek)], чтобы перевести [npc.her] дух.");
 		}
 		
 		if(characterPenetrating!=null) {
@@ -3190,24 +3102,18 @@ public class GenericOrgasms {
 		if(isCharacterTotallyImmobilised(characterOrgasming)) {
 			if(characterOrgasming.isAsleep()) {
 				return UtilText.parse(characterOrgasming,
-						"Without waking, [npc.name] lets out a lewd [npc.moan] as a crashing wave of pure ecstasy suddenly washes through [npc.herHim]."
-								+ " The muscles within [npc.her] genderless mound start to spasm and contract, but despite this [npc.she] remains deeply asleep,"
-								+ " with [npc.her] intense pseudo-orgasm not being enough to rouse [npc.herHim] from [npc.her] slumber.");
+						"Не просыпаясь, [npc.name] издает похотливый [npc.moan], когда внезапная волна чистого экстаза накрывает [npc.herHim]. Мышцы внутри [npc.her] бесполого тела начинают спазмировать и сокращаться, но, несмотря на это, [npc.she] остается глубоко спящей, и [npc.her] интенсивного псевдо-оргазма оказывается недостаточно, чтобы пробудить [npc.herHim] от [npc.her] сна.");
 			} else {
 				return UtilText.parse(characterOrgasming,
-						"Continuing to remain completely silent and motionless, [npc.name] [npc.do]n't react at all as a crashing wave of pure ecstasy suddenly washes through [npc.herHim]."
-								+ " The muscles within [npc.her] genderless mound start to spasm and contract, but despite this [npc.she] manages to carry out the role of inanimate sex doll to perfection,"
-								+ " allowing [npc.her] intense pseudo-orgasm to crash over [npc.herHim] without making so much as a whimper.");
+						"Продолжая оставаться совершенно тихой и неподвижной, [npc.name] [npc.do] никак не реагирует на то, как внезапная волна чистого экстаза накрывает [npc.herHim]. Мышцы внутри [npc.her] бесполого тела начинают спазмировать и сокращаться, но, несмотря на это, [npc.she] удается безупречно исполнить роль неодушевленной секс-куклы, позволяя [npc.her] интенсивному псевдо-оргазму обрушиться на [npc.herHim] без единого стона.");
 			}
 		}
 		if(characterOrgasming.isPlayer()) {
-			return "With an ear-splitting scream and trembling legs, a crashing wave of pure ecstasy suddenly washes through you."
-					+ " The muscles within your genderless mound start to spasm and contract, and you're soon left as a panting, moaning wreck as an intense pseudo-orgasm crashes over you.";
+			return "С оглушительным криком и дрожащими ногами, внезапная волна чистого экстаза накрывает вас. Мышцы внутри вашего бесполого холмика начинают спазмировать и сокращаться, и вскоре вы остаетесь лишь тяжело дышащей, стонущей развалиной, когда на вас обрушивается интенсивный псевдо-оргазм.";
 			
 		} else {
 			return UtilText.parse(characterOrgasming,
-					"With an ear-splitting scream and trembling legs, a crashing wave of pure ecstasy suddenly washes through [npc.name]."
-							+ " The muscles within [npc.her] genderless mound start to spasm and contract, and [npc.sheIs] soon left as a panting, moaning wreck as [npc.her] intense pseudo-orgasm crashes over [npc.herHim].");
+					"С оглушительным криком и дрожащими ногами, внезапная волна чистого экстаза накрывает [npc.name]. Мышцы внутри бесполого холмика [npc.her] начинают спазмировать и сокращаться, и [npc.sheIs] вскоре остается лишь тяжело дышащей, стонущей развалиной, когда на [npc.herHim] обрушивается интенсивный псевдо-оргазм [npc.her].");
 		}
 		
 	}
@@ -3232,10 +3138,10 @@ public class GenericOrgasms {
 		if(isCharacterTotallyImmobilised(characterOrgasming)) {
 			if(characterOrgasming.isAsleep()) {
 				descriptionSB.append(UtilText.parse(characterOrgasming,
-						"Upon reaching [npc.her] climax, [npc.name] [npc.verb(let)] out [npc.a_moan+], but despite making this noise and briefly squirming about, [npc.she] [npc.verb(remain)] fast asleep."));
+						"Достигнув [npc.her] климакса, [npc.name] [npc.verb(let)] [npc.a_moan+], но, несмотря на этот шум и кратковременные конвульсии, [npc.she] [npc.verb(remain)] крепко спящим."));
 			} else {
 				descriptionSB.append(UtilText.parse(characterOrgasming,
-						"Upon reaching [npc.her] climax, [npc.name] obediently [npc.verb(suppress)] [npc.her] urge to let out [npc.a_moan], and without making so much as a whimper, [npc.she] [npc.verb(remain)] frozen in place."));
+						"Достигнув [npc.her] климакса, [npc.name] послушно [npc.verb(suppress)] [npc.her] желание выпустить [npc.a_moan], и, не издав ни единого всхлипа, [npc.she] [npc.verb(remain)] на месте."));
 			}
 			
 		} else {
@@ -3294,12 +3200,12 @@ public class GenericOrgasms {
 		
 		@Override
 		public String getActionTitle() {
-			return "Orgasm";
+			return "Оргазм";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "You've reached your climax, and can't hold back your orgasm any longer.";
+			return "Вы достигли климакса и больше не можете сдерживать оргазм.";
 		}
 
 		@Override
@@ -3464,22 +3370,22 @@ public class GenericOrgasms {
 			if(Main.sex.getCreampieLockedBy().containsKey(Main.sex.getCharacterPerformingAction())) {
 				Class<? extends BodyPartInterface> bodypart = Main.sex.getCreampieLockedBy().get(Main.sex.getCharacterPerformingAction()).getValue();
 				if(bodypart == Torso.class) {
-					return "Forced creampie!";
+					return "Принудительный кремпи!";
 					
 				} else if(bodypart == Arm.class) {
-					return "Hug-locked!";
+					return "Зажаты в объятиях!";
 					
 				} else if(bodypart == Leg.class) {
-					return "Leg-locked!";
+					return "Зажаты ногами!";
 					
 				} else if(bodypart == Tail.class) {
-					return "Tail-locked!";
+					return "Зажаты хвостом!";
 					
 				} else if(bodypart == Wing.class) {
-					return "Wing-locked!";
+					return "Крылья зажаты!";
 					
 				} else if(bodypart == Tentacle.class) {
-					return "Tentacle-locked!";
+					return "Тентакли зажали!";
 				}
 			}
 			
@@ -3489,31 +3395,31 @@ public class GenericOrgasms {
 			if(areaContacted.isOrifice()) {
 				switch((SexAreaOrifice)areaContacted) {
 					case ARMPITS:
-						return "Armpit climax";
+						return "Климакс в подмышках";
 					case ANUS:
-						return "Anal creampie";
+						return "Анальный криампи";
 					case ASS:
-						return "Hotdogging climax";
+						return "Климакс на фаллоимитаторе";
 					case BREAST:
 						if(characterPenetrated.hasBreasts()) {
-							return "Paizuri climax";
+							return "Климакс при пайзури";
 						} else {
-							return "Naizuri climax";
+							return "Климакс при найзури";
 						}
 					case BREAST_CROTCH:
-						return "Paizuri climax";
+						return "Климакс при пайзури";
 					case MOUTH:
-						return "Deepthroat";
+						return "Глубокий минет";
 					case NIPPLE: case NIPPLE_CROTCH:
-						return "Nipple creampie";
+						return "Криампи на сосках";
 					case THIGHS:
-						return "Thigh-sex climax";
+						return "Климакс между бёдер";
 					case URETHRA_PENIS: case URETHRA_VAGINA:
-						return "Urethra creampie";
+						return "Уретральный криампи";
 					case VAGINA:
-						return "Creampie";
+						return "Криампи";
 					case SPINNERET:
-						return "Spinneret creampie";
+						return "Криампи из паучьих желез";
 				}
 				
 			} else {
@@ -3521,7 +3427,7 @@ public class GenericOrgasms {
 					case CLIT:
 						break;
 					case FINGER:
-						return "Handjob Climax";
+						return "Климакс при мастурбации рукой";
 					case PENIS:
 						break;
 					case TAIL:
@@ -3529,12 +3435,12 @@ public class GenericOrgasms {
 					case TENTACLE:
 						break;
 					case FOOT:
-						return "Footjob Climax";
+						return "Климакс при футджеббе";
 					case TONGUE:
 						break;
 				}
 			}
-			return "Creampie";
+			return "Криампи";
 		}
 		@Override
 		public String getActionDescription() {
@@ -3543,115 +3449,108 @@ public class GenericOrgasms {
 				Class<? extends BodyPartInterface> bodypart = Main.sex.getCreampieLockedBy().get(Main.sex.getCharacterPerformingAction()).getValue();
 				if(bodypart == Torso.class) {
 					return UtilText.parse(character,
-							"[npc.NameIsFull] using [npc.her] advantageous position to force you to cum inside of [npc.herHim]! As you're on the very brink of orgasm, you have no time to try and push [npc.herHim] away!");
+							"[npc.NameIsFull] использует выгодную позицию [npc.her], чтобы заставить тебя кончить прямо в [npc.herHim]! Ты находишься на самом пике оргазма, и у тебя нет времени попытаться оттолкнуть [npc.herHim]!");
 					
 				} else if(bodypart == Arm.class) {
 					return UtilText.parse(character,
-							"[npc.NameHasFull] tightly wrapped [npc.her] [npc.arms+] around your lower body, thereby forcing you to cum inside of [npc.herHim]!"
-							+ " As you're on the very brink of orgasm, you have no time to try and disentangle yourself from [npc.her] clutches!");
+							"[npc.NameHasFull] плотно обвил(а) твой низ [npc.her] [npc.arms+], вынуждая тебя кончить прямо в [npc.herHim]! Ты на самом пороге оргазма, и у тебя нет времени вырваться из хватки [npc.her]!");
 					
 				} else if(bodypart == Leg.class) {
 					return UtilText.parse(character,
-							"[npc.NameHasFull] tightly wrapped [npc.her] [npc.legs+] around your lower body, thereby forcing you to cum inside of [npc.herHim]!"
-							+ " As you're on the very brink of orgasm, you have no time to try and disentangle yourself from [npc.her] clutches!");
+							"[npc.NameHasFull] плотно обвил(а) твой низ [npc.her] [npc.legs+], вынуждая тебя кончить прямо в [npc.herHim]! Ты на самом пороге оргазма, и у тебя нет времени вырваться из хватки [npc.her]!");
 					
 				} else if(bodypart == Tail.class) {
 					return UtilText.parse(character,
-							"[npc.NameHasFull] tightly wrapped [npc.her] "+(character.getTailCount()>1?"[npc.tails+]":"[npc.tail]")+" around your lower body, thereby forcing you to cum inside of [npc.herHim]!"
-							+ " As you're on the very brink of orgasm, you have no time to try and disentangle yourself from [npc.her] clutches!");
+							"[npc.NameHasFull] крепко обвивает [npc.her] "+(character.getTailCount()>1?"[npc.tails+]":"[npc.tail]")+" вокруг твоего низа, вынуждая тебя кончить прямо в [npc.herHim]! Ты на самом пороге оргазма, и у тебя нет времени вырваться из хватки [npc.her]!");
 					
 				} else if(bodypart == Wing.class) {
 					return UtilText.parse(character,
-							"[npc.NameHasFull] tightly wrapped [npc.her] [npc.wingSize] [npc.wings] around your body, thereby forcing you to cum inside of [npc.herHim]!"
-							+ " As you're on the very brink of orgasm, you have no time to try and disentangle yourself from [npc.her] clutches!");
+							"[npc.NameHasFull] туго обхватила твоё тело своими [npc.her] [npc.wingSize] [npc.wings], вынуждая тебя кончить прямо в [npc.herHim]! Когда ты оказываешься на самом пике оргазма, у тебя просто нет времени попытаться вырваться из хватки [npc.her]!");
 					
 				} else if(bodypart == Tentacle.class) {
 					return UtilText.parse(character,
-							"[npc.NameHasFull] tightly wrapped [npc.her] [npc.tentacles+] around your lower body, thereby forcing you to cum inside of [npc.herHim]!"
-							+ " As you're on the very brink of orgasm, you have no time to try and disentangle yourself from [npc.her] clutches!");
+							"[npc.NameHasFull] туго обхватила твой низ своими [npc.her] [npc.tentacles+], вынуждая тебя кончить прямо в [npc.herHim]! Когда ты оказываешься на самом пике оргазма, у тебя просто нет времени попытаться вырваться из хватки [npc.her]!");
 				}
 			}
 			
 			GameCharacter characterPenetrated = getCharacterToBeCreampied();
 			SexAreaInterface areaContacted = getAreaToBeCreampied();
-			String returnString = "You've reached your climax, and can't hold back your orgasm any longer. Creampie [npc2.name].";
+			String returnString = "Ты достиг кульминации и больше не можешь сдерживать оргазм. Заливай кремпай в [npc2.name].";
 			
 			if(areaContacted.isOrifice()) {
 				switch((SexAreaOrifice)areaContacted) {
 					case ARMPITS:
-						returnString = "Keep on rubbing your [npc.cock+] over [npc2.namePos] [npc2.armpit+] as you orgasm, spurting your [npc.cum+] all over [npc2.her] arm and pit.";
+						returnString = "Продолжай тереть свой [npc.cock+] о [npc2.namePos] [npc2.armpit+] во время оргазма, забрызгивая всю [npc2.her] руку и подмышку [npc.cum+].";
 						break;
 					case ANUS:
 						if(Main.sex.getCharacterPerformingAction().hasPenisModifier(PenetrationModifier.KNOTTED)) {
 							if(Main.game.isPenetrationLimitationsEnabled() && Main.sex.getCharacterPerformingAction().isFullPenetrationTooLongToFit(SexAreaPenetration.PENIS, characterPenetrated, (SexAreaOrifice)areaContacted, false)) {
-								returnString = "[style.italicsBad([npc2.NamePos] asshole is not deep enough for you to insert your knot)],"
-										+ " and so you'll just have to make do with pushing your [npc.cock+] deep into [npc2.her] butt before filling [npc2.herHim] with your [npc.cum+].";
+								returnString = "[style.italicsBad([npc2.NamePos] анус недостаточно глубокий, чтобы вставить твой узел)], так что тебе придётся довольствоваться тем, что ты втиснешь свой [npc.cock+] глубоко в [npc2.her] задницу, прежде чем заполнишь [npc2.herHim] своей [npc.cum+].";
 							} else {
-								returnString = "Hold back from inserting your knot, and just push your [npc.cock+] deep inside [npc2.namePos] [npc2.asshole+] before filling [npc2.herHim] with your [npc.cum+].";
+								returnString = "Не спеши вставлять узел, а просто втисни свой [npc.cock+] глубоко в [npc2.namePos] [npc2.asshole+], прежде чем заполнишь [npc2.herHim] своей [npc.cum+].";
 							}
 							
 						} else {
-							returnString = "Push your [npc.cock+] deep inside [npc2.namePos] [npc2.asshole+], before filling [npc2.herHim] with your [npc.cum+].";
+							returnString = "Втисни свой [npc.cock+] глубоко в [npc2.namePos] [npc2.asshole+], прежде чем заполнишь [npc2.herHim] своей [npc.cum+].";
 						}
 						break;
 					case ASS:
-						returnString = "Keep on hotdogging [npc2.name] as you orgasm, spurting your [npc.cum+] all over [npc2.her] back and [npc2.assSize] ass.";
+						returnString = "Продолжай горячее «хотдоггин» своим [npc2.name] во время оргазма, забрызгивая всю [npc2.her] спину и [npc2.assSize] задницу своей [npc.cum+].";
 						break;
 					case BREAST:
 						if(characterPenetrated.hasBreasts()) {
-							returnString = "Keep on fucking [npc2.namePos] breasts as you orgasm, spurting your [npc.cum+] all over [npc2.her] tits and [npc2.face].";
+							returnString = "Продолжай трахать [npc2.namePos] грудь, кончая и забрызгивая [npc.cum+] все ее соски и [npc2.her] [npc2.face].";
 						} else {
-							returnString = "Keep on grinding against [npc2.namePos] flat chest as you orgasm, spurting your [npc.cum+] all over [npc2.her] torso and [npc2.face].";
+							returnString = "Продолжай тереться о плоскую грудь [npc2.namePos], кончая и забрызгивая [npc.cum+] все ее туловище и [npc2.her] [npc2.face].";
 						}
 						break;
 					case BREAST_CROTCH:
 						returnString = "Keep on fucking [npc2.namePos] [npc2.crotchBoobs] as you orgasm, spurting your [npc.cum+] all over [npc2.her] stomach, [npc2.crotchBoobs] and crotch.";
 						break;
 					case MOUTH:
-						returnString = "Push your [npc.cock+] deep down [npc2.namePos] throat, before filling [npc2.her] stomach with your [npc.cum+].";
+						returnString = "Запихни свой [npc.cock+] глубоко в [npc2.namePos] горло, прежде чем наполнить [npc2.her] желудок своей [npc.cum+].";
 						break;
 					case NIPPLE:
-						returnString = "Push your [npc.cock+] deep into [npc2.namePos] [npc2.nipple+], before filling [npc2.her] breast with your [npc.cum+].";
+						returnString = "Запихни свой [npc.cock+] глубоко в [npc2.namePos] [npc2.nipple+], прежде чем наполнить [npc2.her] грудь своей [npc.cum+].";
 						break;
 					case NIPPLE_CROTCH:
-						returnString = "Push your [npc.cock+] deep into [npc2.namePos] [npc2.crotchNipple+], before filling [npc2.her] [npc2.crotchBoob] with your [npc.cum+].";
+						returnString = "Запихни свой [npc.cock+] глубоко в [npc2.namePos] [npc2.crotchNipple+], прежде чем наполнить [npc2.her] [npc2.crotchBoob] своей [npc.cum+].";
 						break;
 					case THIGHS:
-						returnString = "Keep on fucking [npc2.namePos] thighs as you start to orgasm, before pulling back and spurting your [npc.cum+] all over [npc2.her] [npc2.legs].";
+						returnString = "Продолжай трахать [npc2.namePos] бедра, пока не начнешь кончать, а затем отстранись и забрызгай [npc.cum+] все ее [npc2.her] [npc2.legs].";
 						break;
 					case URETHRA_PENIS:
-						returnString = "Push your [npc.cock+] deep into the urethra of [npc2.namePos] [npc2.cock+], before filling [npc2.her] bladder with your [npc.cum+].";
+						returnString = "Запихни свой [npc.cock+] глубоко в уретру [npc2.namePos] [npc2.cock+], прежде чем наполнить [npc2.her] мочевой пузырь своей [npc.cum+].";
 						break;
 					case URETHRA_VAGINA:
-						returnString = "Push your [npc.cock+] deep into the urethra of [npc2.namePos] [npc2.pussy+], before filling [npc2.her] bladder with your [npc.cum+].";
+						returnString = "Запихни свой [npc.cock+] глубоко в уретру [npc2.namePos] [npc2.pussy+], прежде чем наполнить [npc2.her] мочевой пузырь своей [npc.cum+].";
 						break;
 					case VAGINA:
 						if(Main.sex.getCharacterPerformingAction().hasPenisModifier(PenetrationModifier.KNOTTED)) {
 							if(Main.game.isPenetrationLimitationsEnabled() && Main.sex.getCharacterPerformingAction().isFullPenetrationTooLongToFit(SexAreaPenetration.PENIS, characterPenetrated, (SexAreaOrifice)areaContacted, false)) {
-								returnString = "[style.italicsBad([npc2.NamePos] pussy is not deep enough for you to insert your knot)],"
-										+ " and so you'll just have to make do with pushing your [npc.cock+] deep into [npc2.her] cunt before filling"
+								returnString = "[style.italicsBad([npc2.NamePos] киска недостаточно глубокая, чтобы ты мог вставить свой узел)], так что тебе придется довольствоваться тем, что ты запихиваешь свой [npc.cock+] глубоко в [npc2.her] щель, прежде чем наполнить"
 										+(characterPenetrated.isPregnant() || characterPenetrated.hasIncubationLitter(SexAreaOrifice.VAGINA)
 												?" [npc2.herHim]"
-												:" [npc2.her] womb")
-										+ " with your [npc.cum+].";
+												:" [npc2.her] матку")
+										+ " своей [npc.cum+].";
 							} else {
-								returnString = "Hold back from inserting your knot, and just push your [npc.cock+] deep inside [npc2.namePos] [npc2.pussy+] before filling"
+								returnString = "Не спеши вводить узел, а просто [npc2.pussy+] [npc2.namePos], глубоко [npc.cock+], прежде чем наполнить"
 										+(characterPenetrated.isPregnant() || characterPenetrated.hasIncubationLitter(SexAreaOrifice.VAGINA)
 												?" [npc2.herHim]"
-												:" [npc2.her] womb")
-										+ " with your [npc.cum+].";
+												:" [npc2.her] матку")
+										+ " своей [npc.cum+].";
 							}
 							
 						} else {
-							returnString = "Push your [npc.cock+] deep inside [npc2.namePos] [npc2.pussy+], before filling [npc2.her]"
+							returnString = "[npc2.pussy+] [npc2.namePos], глубоко [npc.cock+], прежде чем наполнить [npc2.her]"
 										+(characterPenetrated.isPregnant() || characterPenetrated.hasIncubationLitter(SexAreaOrifice.VAGINA)
 												?" [npc2.pussy]"
 												:" womb")
-										+ " with your [npc.cum+].";
+										+ " своей [npc.cum+].";
 						}
 						break;
 					case SPINNERET:
-						returnString = "Push your [npc.cock+] deep into [npc2.namePos] spinneret, before filling [npc2.herHim] with your [npc.cum+].";
+						returnString = "Засунь свой [npc.cock+] глубоко в [npc2.namePos] паутинный аппарат, а затем заполни [npc2.herHim] своей [npc.cum+].";
 						break;
 				}
 			} else {
@@ -3660,9 +3559,9 @@ public class GenericOrgasms {
 						break;
 					case FINGER:
 						if(Main.sex.getCharacterPerformingAction().equals(characterPenetrated)) {
-							returnString = "Carry on stroking your cock, before spurting your [npc.cum+] all over your [npc.hand+].";
+							returnString = "Продолжай ласкать свой член, прежде чем облить своей [npc.cum+] всю её [npc.hand+].";
 						} else {
-							returnString = "Carry on focusing on the pleasure that you're getting from [npc2.name] giving you a handjob, before pulling back slightly and spurting your [npc.cum+] all over [npc2.her] [npc2.hand+].";
+							returnString = "Продолжай сосредоточиваться на удовольствии от того, как [npc2.name] ласкает твой член рукой, прежде чем слегка отстраниться и облить своей [npc.cum+] всю [npc2.her] [npc2.hand+].";
 						}
 						break;
 					case PENIS:
@@ -3672,7 +3571,7 @@ public class GenericOrgasms {
 					case TENTACLE:
 						break;
 					case FOOT:
-						returnString = "Carry on focusing on the pleasure that you're getting from [npc2.namePos] [npc2.footjob], before spurting your [npc.cum+] all over [npc2.her] [npc2.feet+].";
+						returnString = "Продолжай сосредоточиваться на удовольствии, которое ты получаешь от [npc2.namePos] [npc2.footjob], прежде чем забрызгать всю [npc2.her] [npc2.feet+] своей [npc.cum+].";
 						break;
 					case TONGUE:
 						break;
@@ -3898,26 +3797,26 @@ public class GenericOrgasms {
 			if(Main.sex.getCreampieLockedBy().containsKey(Main.sex.getCharacterPerformingAction())) {
 				Class<? extends BodyPartInterface> bodypart = Main.sex.getCreampieLockedBy().get(Main.sex.getCharacterPerformingAction()).getValue();
 				if(bodypart == Torso.class) {
-					return "Forced creampie (Knot!)";
+					return "Принудительный кримпэй (Узел!)";
 					
 				} else if(bodypart == Arm.class) {
-					return "Hug-locked (Knot!)";
+					return "Замок в объятиях (Узел!)";
 					
 				} else if(bodypart == Leg.class) {
-					return "Leg-locked (Knot!)";
+					return "Замок ногами (Узел!)";
 					
 				} else if(bodypart == Tail.class) {
-					return "Tail-locked (Knot!)";
+					return "Замок хвостом (Узел!)";
 					
 				} else if(bodypart == Wing.class) {
-					return "Wing-locked (Knot!)";
+					return "Замок крыльями (Узел!)";
 					
 				} else if(bodypart == Tentacle.class) {
-					return "Tentacle-locked (Knot!)";
+					return "Замок тентаклями (Узел!)";
 				}
 			}
 			
-			return UtilText.parse(getCharacterToBeKnotted(), "Knot [npc.herHim]");
+			return UtilText.parse(getCharacterToBeKnotted(), "Узел [npc.herHim]");
 		}
 
 		@Override
@@ -3927,69 +3826,62 @@ public class GenericOrgasms {
 				Class<? extends BodyPartInterface> bodypart = Main.sex.getCreampieLockedBy().get(Main.sex.getCharacterPerformingAction()).getValue();
 				if(bodypart == Torso.class) {
 					return UtilText.parse(character,
-							"[npc.NameIsFull] using [npc.her] advantageous position to force you to cum inside of [npc.herHim]!"
-							+ " Give [npc.herHim] what [npc.she] wants and knot [npc.herHim]!");
+							"[npc.NameIsFull] использует выгодную позицию [npc.her], чтобы заставить тебя кончить внутрь [npc.herHim]! Дай [npc.herHim] то, чего хочет [npc.she], и завяжи узел в [npc.herHim]!");
 					
 				} else if(bodypart == Arm.class) {
 					return UtilText.parse(character,
-							"[npc.NameHasFull] tightly wrapped [npc.her] [npc.arms+] around your lower body, thereby forcing you to cum inside of [npc.herHim]!"
-							+ " Give [npc.herHim] what [npc.she] wants and knot [npc.herHim]!");
+							"[npc.NameHasFull] плотно обхватывает [npc.her] [npc.arms+] вокруг твоего низа, заставляя тебя кончить внутрь [npc.herHim]! Дай [npc.herHim] то, чего хочет [npc.she], и завяжи узел в [npc.herHim]!");
 					
 				} else if(bodypart == Leg.class) {
 					return UtilText.parse(character,
-							"[npc.NameHasFull] tightly wrapped [npc.her] [npc.legs+] around your lower body, thereby forcing you to cum inside of [npc.herHim]!"
-							+ " Give [npc.herHim] what [npc.she] wants and knot [npc.herHim]!");
+							"[npc.NameHasFull] туго обхватила [npc.her] [npc.legs+] вокруг твоего низа, заставляя тебя кончить прямо в [npc.herHim]! Дай [npc.herHim] то, чего [npc.she] хочет, и завяжи [npc.herHim]!");
 					
 				} else if(bodypart == Tail.class) {
 					return UtilText.parse(character,
-							"[npc.NameHasFull] tightly wrapped [npc.her] "+(character.getTailCount()>1?"[npc.tails+]":"[npc.tail]")+" around your lower body, thereby forcing you to cum inside of [npc.herHim]!"
-							+ " Give [npc.herHim] what [npc.she] wants and knot [npc.herHim]!");
+							"[npc.NameHasFull] крепко обвивает [npc.her] "+(character.getTailCount()>1?"[npc.tails+]":"[npc.tail]")+" вокруг твоего низа, заставляя тебя кончить прямо в [npc.herHim]! Дай [npc.herHim] то, чего [npc.she] хочет, и завяжи [npc.herHim]!");
 					
 				} else if(bodypart == Wing.class) {
 					return UtilText.parse(character,
-							"[npc.NameHasFull] tightly wrapped [npc.her] [npc.wingSize] [npc.wings] around your body, thereby forcing you to cum inside of [npc.herHim]!"
-							+ " Give [npc.herHim] what [npc.she] wants and knot [npc.herHim]!");
+							"[npc.NameHasFull] туго обхватила [npc.her] [npc.wingSize] [npc.wings] вокруг твоего тела, заставляя тебя кончить прямо в [npc.herHim]! Дай [npc.herHim] то, чего [npc.she] хочет, и завяжи [npc.herHim]!");
 					
 				} else if(bodypart == Tentacle.class) {
 					return UtilText.parse(character,
-							"[npc.NameHasFull] tightly wrapped [npc.her] [npc.tentacles+] around your lower body, thereby forcing you to cum inside of [npc.herHim]!"
-							+ " Give [npc.herHim] what [npc.she] wants and knot [npc.herHim]!");
+							"[npc.NameHasFull] туго обхватила [npc.her] [npc.tentacles+] вокруг твоего низа, заставляя тебя кончить прямо в [npc.herHim]! Дай [npc.herHim] то, чего [npc.she] хочет, и завяжи [npc.herHim]!");
 				}
 			}
 			
 			GameCharacter characterPenetrated = getCharacterToBeKnotted();
 			SexAreaInterface areaContacted = getAreaToBeKnotted();
-			String returnString = "You've reached your climax, and can't hold back your orgasm any longer. Push your knot inside of [npc2.namePos] "+areaContacted.getName(characterPenetrated)+" and fill [npc2.herHim] with your [npc.cum+].";
+			String returnString = "Ты достиг пика и больше не можешь сдерживать оргазм. Втолкни свой узел в [npc2.namePos] "+areaContacted.getName(characterPenetrated)+" и заполни [npc2.herHim] своей [npc.cum+].";
 			
 			switch((SexAreaOrifice)areaContacted) {
 				case ANUS:
-					returnString = "Push your cock fully into [npc2.namePos] [npc2.asshole+] before your knot swells up, which will lock you inside of [npc2.herHim] as you fill [npc2.herHim] with your [npc.cum+].";
+					returnString = "Засунь член в [npc2.namePos] [npc2.asshole+] до того, как твой узел раздуется — это намертво заклинит тебя внутри [npc2.herHim], пока ты будешь заполнять [npc2.herHim] своей [npc.cum+].";
 					break;
 				case MOUTH:
-					returnString = "Push your cock fully down [npc2.namePos] throat before your knot swells up, which will lock you inside of [npc2.herHim] as you fill [npc2.her] stomach with your [npc.cum+].";
+					returnString = "Засунь член глубоко в горло [npc2.namePos] до того, как твой узел раздуется — это намертво заклинит тебя внутри [npc2.herHim], пока ты будешь заполнять желудок [npc2.her] своей [npc.cum+].";
 					break;
 				case NIPPLE:
-					returnString = "Push your cock fully into [npc2.namePos] [npc2.nipple+] before your knot swells up, which will lock you inside of [npc2.herHim] as you fill [npc2.her] breast with your [npc.cum+].";
+					returnString = "Засунь свой член целиком в [npc2.namePos] [npc2.nipple+], прежде чем твоя узел раздуется и намертво запрёт тебя внутри [npc2.herHim], пока ты наполняешь [npc2.her] грудь своей [npc.cum+].";
 					break;
 				case NIPPLE_CROTCH:
-					returnString = "Push your cock fully into [npc2.namePos] [npc2.crotchNipple+] before your knot swells up, which will lock you inside of [npc2.herHim] as you fill [npc2.her] [npc2.crotchBoob] with your [npc.cum+].";
+					returnString = "Засунь свой член целиком в [npc2.namePos] [npc2.crotchNipple+], прежде чем твоя узел раздуется и намертво запрёт тебя внутри [npc2.herHim], пока ты наполняешь [npc2.her] [npc2.crotchBoob] своей [npc.cum+].";
 					break;
 				case URETHRA_PENIS:
-					returnString = "Push your cock fully into the urethra of [npc2.namePos] [npc2.cock+] before your knot swells up, which will lock you inside of [npc2.herHim] as you fill [npc2.her] bladder with your [npc.cum+].";
+					returnString = "Засунь свой член целиком в уретру [npc2.namePos] [npc2.cock+], прежде чем твоя узел раздуется и намертво запрёт тебя внутри [npc2.herHim], пока ты наполняешь [npc2.her] мочевой пузырь своей [npc.cum+].";
 					break;
 				case URETHRA_VAGINA:
-					returnString = "Push your cock fully into the urethra of [npc2.namePos] [npc2.pussy+] before your knot swells up, which will lock you inside of [npc2.herHim] as you fill [npc2.her] bladder with your [npc.cum+].";
+					returnString = "Засунь свой член целиком в уретру [npc2.namePos] [npc2.pussy+], прежде чем твоя узел раздуется и намертво запрёт тебя внутри [npc2.herHim], пока ты наполняешь [npc2.her] мочевой пузырь своей [npc.cum+].";
 					break;
 				case VAGINA:
-					returnString = "Push your cock fully into [npc2.namePos] [npc2.pussy+] before your knot swells up,"
-							+ " which will lock you inside of [npc2.herHim] as you fill [npc2.her]"
+					returnString = "Засунь свой член целиком в [npc2.namePos] [npc2.pussy+], прежде чем твоя узел раздуется и намертво запрёт тебя внутри [npc2.herHim], пока ты наполняешь [npc2.her]"
 										+(characterPenetrated.isPregnant() || characterPenetrated.hasIncubationLitter(SexAreaOrifice.VAGINA)
 												?" [npc2.pussy]"
 												:" womb")
-										+ " with your [npc.cum+].";
+										+ " своей [npc.cum+].";
 					break;
 				default:
-					return "Knotting error! (Code 1)";
+					return "Ошибка узла! (Код 1)";
 			}
 			return UtilText.parse(Main.sex.getCharacterPerformingAction(), characterPenetrated, returnString);
 		}
@@ -4204,12 +4096,12 @@ public class GenericOrgasms {
 					case SPINNERET:
 						break;
 					case ANUS:
-						return "Double anal creampie";
+						return "Двойной анальный криампи";
 					case VAGINA:
-						return "Double creampie";
+						return "Двойной криампи";
 				}
 			}
-			return "Double creampie";
+			return "Двойной криампи";
 		}
 
 		@Override
@@ -4219,7 +4111,7 @@ public class GenericOrgasms {
 			GameCharacter secondaryCharacterPenetrated = getSecondaryCreampieTarget(Main.sex.getCharacterTargetedForSexAction(this), (SexAreaOrifice) areaContacted);
 			
 			String returnString = UtilText.parse(characterPenetrated, secondaryCharacterPenetrated,
-					"You've reached your climax, and can't hold back your orgasm any longer. Give [npc.name] half of your creampie, before quickly pulling out and finishing inside of [npc2.name].");
+					"Ты достиг пика и больше не можешь сдерживать оргазм. Отдай [npc.name] половину своего криампи, прежде чем быстро вытащить член и кончить внутрь [npc2.name].");
 			
 			if(areaContacted.isOrifice()) {
 				switch((SexAreaOrifice)areaContacted) {
@@ -4239,36 +4131,32 @@ public class GenericOrgasms {
 						if(Main.sex.getCharacterPerformingAction().hasPenisModifier(PenetrationModifier.KNOTTED)) {
 							if(Main.game.isPenetrationLimitationsEnabled() && Main.sex.getCharacterPerformingAction().isFullPenetrationTooLongToFit(SexAreaPenetration.PENIS, characterPenetrated, (SexAreaOrifice)areaContacted, false)) {
 								returnString = UtilText.parse(characterPenetrated, secondaryCharacterPenetrated,
-										"[style.italicsBad([npc2.NamePos] asshole is not deep enough for you to insert your knot)],"
-										+ " and so you'll just have to make do with pushing your [npc.cock+] deep into [npc2.her] butt and filling [npc2.herHim] with your cum after giving [npc.name] half of your load.");
+										"[style.italicsBad([npc2.NamePos] анус недостаточно глубокий, чтобы ты мог вставить свой узел)], так что тебе придется довольствоваться тем, что ты втиснешь свой [npc.cock+] глубоко в [npc2.her] задницу и заполнишь [npc2.herHim] своей спермой, отдав [npc.name] половину своей порции.");
 								
 							} else {
 								returnString = UtilText.parse(characterPenetrated, secondaryCharacterPenetrated,
-										"Keep your knot out of [npc.namePos] [npc.asshole] as you give [npc.herHim] half of your load,"
-												+ " before quickly pulling out and similarly avoiding getting locked inside of [npc2.name] as you finish inside of [npc2.her] [npc2.asshole].");
+										"Держи свой узел подальше от [npc.namePos] [npc.asshole], пока отдаешь [npc.herHim] половину своей порции, а затем быстро выходи, стараясь не застрять внутри [npc2.name], когда кончаешь в [npc2.her] [npc2.asshole].");
 							}
 							
 						} else {
 							returnString = UtilText.parse(characterPenetrated, secondaryCharacterPenetrated,
-									"You've reached your climax, and can't hold back your orgasm any longer. Spurt half of your load into [npc.namePos] [npc.asshole], before quickly pulling out and finishing inside of [npc2.namePos] [npc2.asshole+].");
+									"Ты достиг пика и больше не можешь сдерживать оргазм. Выплесни половину своей порции в [npc.namePos] [npc.asshole], а затем быстро выходи и кончай в [npc2.namePos] [npc2.asshole+].");
 						}
 						break;
 					case VAGINA:
 						if(Main.sex.getCharacterPerformingAction().hasPenisModifier(PenetrationModifier.KNOTTED)) {
 							if(Main.game.isPenetrationLimitationsEnabled() && Main.sex.getCharacterPerformingAction().isFullPenetrationTooLongToFit(SexAreaPenetration.PENIS, characterPenetrated, (SexAreaOrifice)areaContacted, false)) {
 								returnString = UtilText.parse(characterPenetrated, secondaryCharacterPenetrated,
-										"[style.italicsBad([npc2.NamePos] pussy is not deep enough for you to insert your knot)],"
-										+ " and so you'll just have to make do with pushing your [npc.cock+] deep into [npc2.her] cunt and filling [npc2.herHim] with your cum after giving [npc.name] half of your load.");
+										"[style.italicsBad([npc2.NamePos] киска недостаточно глубокая, чтобы ты мог вставить свой узел)], так что тебе придется довольствоваться тем, что ты втиснешь свой [npc.cock+] глубоко в [npc2.her] щель и заполнишь [npc2.herHim] своей спермой, отдав [npc.name] половину своей порции.");
 								
 							} else {
 								returnString = UtilText.parse(characterPenetrated, secondaryCharacterPenetrated,
-										"Keep your knot out of [npc.namePos] [npc.pussy] as you give [npc.herHim] half of your load,"
-												+ " before quickly pulling out and similarly avoiding getting locked inside of [npc2.name] as you finish inside of [npc2.her] [npc2.pussy].");
+										"Держи свой узел подальше от [npc.namePos] [npc.pussy], пока отдаешь [npc.herHim] половину своей порции, а затем быстро выходи, стараясь не застрять внутри [npc2.name], когда кончаешь в [npc2.her] [npc2.pussy].");
 							}
 							
 						} else {
 							returnString = UtilText.parse(characterPenetrated, secondaryCharacterPenetrated,
-									"You've reached your climax, and can't hold back your orgasm any longer. Spurt half of your load into [npc.namePos] [npc.pussy+], before quickly pulling out and finishing inside of [npc2.namePos] [npc2.pussy+].");
+									"Вы достигли пика и больше не можете сдерживать оргазм. Выплесните половину своей порции в [npc.namePos] [npc.pussy+], после чего быстро выходите и заканчиваете внутрь [npc2.namePos] [npc2.pussy+].");
 						}
 						break;
 				}
@@ -4526,12 +4414,12 @@ public class GenericOrgasms {
 					case SPINNERET:
 						break;
 					case ANUS:
-						return "Double anal knotting";
+						return "Двойное анальное узлование";
 					case VAGINA:
-						return "Double knotting";
+						return "Двойное узлование";
 				}
 			}
-			return "Double knotting";
+			return "Двойное узлование";
 		}
 
 		@Override
@@ -4541,7 +4429,7 @@ public class GenericOrgasms {
 			GameCharacter secondaryCharacterPenetrated = getSecondaryCreampieTarget(Main.sex.getCharacterTargetedForSexAction(this), (SexAreaOrifice) areaContacted);
 			
 			String returnString = UtilText.parse(characterPenetrated, secondaryCharacterPenetrated,
-					"You've reached your climax, and can't hold back your orgasm any longer. Give [npc.name] half of your creampie, before quickly pulling out and knotting [npc2.name] as you finish inside of [npc2.herHim].");
+					"Вы достигли пика и больше не можете сдерживать оргазм. Отдайте [npc.name] половину своего кремпайпа, после чего быстро выходите и завязываете узел в [npc2.name], заканчивая внутри [npc2.herHim].");
 			
 			if(areaContacted.isOrifice()) {
 				switch((SexAreaOrifice)areaContacted) {
@@ -4559,13 +4447,11 @@ public class GenericOrgasms {
 						break;
 					case ANUS:
 						returnString = UtilText.parse(characterPenetrated, secondaryCharacterPenetrated,
-								"Keep your knot out of [npc.namePos] [npc.asshole] as you give [npc.herHim] half of your load,"
-										+ " before quickly pulling out and ramming your knot into [npc2.namePos] [npc2.asshole], before finishing inside of [npc2.herHim].");
+								"Не держите узел в [npc.namePos] [npc.asshole], отдавая [npc.herHim] половину своей порции, после чего быстро выходите и вбиваете свой узел в [npc2.namePos] [npc2.asshole], завершая внутри [npc2.herHim].");
 						break;
 					case VAGINA:
 						returnString = UtilText.parse(characterPenetrated, secondaryCharacterPenetrated,
-								"Keep your knot out of [npc.namePos] [npc.pussy+] as you give [npc.herHim] half of your load,"
-										+ " before quickly pulling out and ramming your knot into [npc2.namePos] [npc2.pussy+], before finishing inside of [npc2.herHim].");
+								"Не держите узел в [npc.namePos] [npc.pussy+], отдавая [npc.herHim] половину своей порции, после чего быстро выходите и вбиваете свой узел в [npc2.namePos] [npc2.pussy+], завершая внутри [npc2.herHim].");
 						break;
 				}
 			}
@@ -4732,16 +4618,16 @@ public class GenericOrgasms {
 		public String getActionTitle() {
 			if(!Main.sex.getCharactersHavingOngoingActionWith(Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS).isEmpty()) {
 				if(!Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS, SexAreaPenetration.FINGER).isEmpty()) {
-					return "Handjob onto floor";
+					return "Дрочка на пол";
 				}
-				return "Pull out (floor)";
+				return "Выйти (на пол)";
 			}
-			return "Cum on floor";
+			return "Кончить на пол";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "You've reached your climax, and can't hold back your orgasm any longer. Direct your cum onto the floor.";
+			return "Вы достигли пика и больше не можете сдерживать оргазм. Направьте свою сперму на пол.";
 		}
 
 		@Override
@@ -4780,16 +4666,16 @@ public class GenericOrgasms {
 		public String getActionTitle() {
 			if(!Main.sex.getCharactersHavingOngoingActionWith(Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS).isEmpty()) {
 				if(!Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS, SexAreaPenetration.FINGER).isEmpty()) {
-					return "Handjob onto [pc.wall]";
+					return "Дрочить на [pc.wall]";
 				}
-				return "Pull out ([pc.wall])";
+				return "Вытащить ([pc.wall])";
 			}
-			return "Cum on [pc.wall]";
+			return "Кончить на [pc.wall]";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "You've reached your climax, and can't hold back your orgasm any longer. Direct your cum onto the [pc.wall].";
+			return "Вы достигли пика и больше не можете сдерживать оргазм. Направьте свою сперму на [pc.wall].";
 		}
 
 		@Override
@@ -4823,16 +4709,16 @@ public class GenericOrgasms {
 		public String getActionTitle() {
 			if(!Main.sex.getCharactersHavingOngoingActionWith(Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS).isEmpty()) {
 				if(!Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS, SexAreaPenetration.FINGER).isEmpty()) {
-					return "Handjob onto ass";
+					return "Дрочить на задницу";
 				}
-				return "Pull out (ass)";
+				return "Вытащить (задница)";
 			}
-			return "Cum on ass";
+			return "Кончить на задницу";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "You've reached your climax, and can't hold back your orgasm any longer. Direct your cum onto [npc2.namePos] [npc2.ass+].";
+			return "Вы достигли пика и больше не можете сдерживать оргазм. Направьте свою сперму на [npc2.namePos] [npc2.ass+].";
 		}
 
 		@Override
@@ -4887,16 +4773,16 @@ public class GenericOrgasms {
 		public String getActionTitle() {
 			if(!Main.sex.getCharactersHavingOngoingActionWith(Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS).isEmpty()) {
 				if(!Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS, SexAreaPenetration.FINGER).isEmpty()) {
-					return "Handjob onto groin";
+					return "Дрочить на пах";
 				}
-				return "Pull out (groin)";
+				return "Вытащить (пах)";
 			}
-			return "Cum on groin";
+			return "Кончить на пах";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "You've reached your climax, and can't hold back your orgasm any longer. Direct your cum onto [npc2.namePos] groin.";
+			return "Вы достигли пика и больше не можете сдерживать оргазм. Направьте струю спермы на пах [npc2.namePos].";
 		}
 
 		@Override
@@ -4948,16 +4834,16 @@ public class GenericOrgasms {
 		public String getActionTitle() {
 			if(!Main.sex.getCharactersHavingOngoingActionWith(Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS).isEmpty()) {
 				if(!Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS, SexAreaPenetration.FINGER).isEmpty()) {
-					return "Handjob (own groin)";
+					return "Мастурбация (свой пах)";
 				}
-				return "Pull out (own groin)";
+				return "Вытащить (свой пах)";
 			}
-			return "Cum on own groin";
+			return "Кончить на свой пах";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "You've reached your climax, and can't hold back your orgasm any longer. Direct your cum onto your groin.";
+			return "Вы достигли пика и больше не можете сдерживать оргазм. Направьте струю спермы на свой пах.";
 		}
 
 		@Override
@@ -5012,16 +4898,16 @@ public class GenericOrgasms {
 			}
 			if(!Main.sex.getCharactersHavingOngoingActionWith(Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS).isEmpty()) {
 				if(!Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS, SexAreaPenetration.FINGER).isEmpty()) {
-					return "Handjob onto "+breasts;
+					return "Мастурбация на "+breasts;
 				}
-				return "Pull out ("+breasts+")";
+				return "Вытащить ("+breasts+")";
 			}
-			return "Cum on "+breasts;
+			return "Кончить на "+breasts;
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "You've reached your climax, and can't hold back your orgasm any longer. Direct your cum onto [npc2.namePos] [npc2.breasts].";
+			return "Ты достиг пика и больше не можешь сдерживать оргазм. Направь свою сперму на [npc2.namePos] [npc2.breasts].";
 		}
 
 		@Override
@@ -5066,16 +4952,16 @@ public class GenericOrgasms {
 			}
 			if(!Main.sex.getCharactersHavingOngoingActionWith(Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS).isEmpty()) {
 				if(!Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS, SexAreaPenetration.FINGER).isEmpty()) {
-					return "Handjob (own "+breasts+")";
+					return "Дрочка (своей "+breasts+")";
 				}
-				return "Pull out (own "+breasts+")";
+				return "Кончить внутрь (своей "+breasts+")";
 			}
-			return "Cum on own "+breasts;
+			return "Кончить на себя "+breasts;
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "You've reached your climax, and can't hold back your orgasm any longer. Direct your cum onto your [npc.breasts+].";
+			return "Ты достиг пика и больше не можешь сдерживать оргазм. Направь свою сперму на свой [npc.breasts+].";
 		}
 
 		@Override
@@ -5119,16 +5005,16 @@ public class GenericOrgasms {
 		public String getActionTitle() {
 			if(!Main.sex.getCharactersHavingOngoingActionWith(Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS).isEmpty()) {
 				if(!Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS, SexAreaPenetration.FINGER).isEmpty()) {
-					return "Handjob onto face";
+					return "Дрочка на лицо";
 				}
-				return "Pull out (facial)";
+				return "Кончить на лицо";
 			}
-			return "Facial";
+			return "Лицо";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "You've reached your climax, and can't hold back your orgasm any longer. Direct your cum onto [npc2.namePos] face.";
+			return "Ты достиг пика и больше не можешь сдерживать оргазм. Направь свою сперму на лицо [npc2.namePos].";
 		}
 
 		@Override
@@ -5167,16 +5053,16 @@ public class GenericOrgasms {
 		public String getActionTitle() {
 			if(!Main.sex.getCharactersHavingOngoingActionWith(Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS).isEmpty()) {
 				if(!Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS, SexAreaPenetration.FINGER).isEmpty()) {
-					return "Handjob (own face)";
+					return "Дрочка (на свое лицо)";
 				}
-				return "Pull out (own face)";
+				return "Кончить (на свое лицо)";
 			}
-			return "Cum on own face";
+			return "Кончить на свое лицо";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "You've reached your climax, and can't hold back your orgasm any longer. Direct your cum onto your [npc.face+].";
+			return "Вы достигли пика и больше не можете сдерживать оргазм. Направьте свою сперму на свой [npc.face+].";
 		}
 
 		@Override
@@ -5215,16 +5101,16 @@ public class GenericOrgasms {
 		public String getActionTitle() {
 			if(!Main.sex.getCharactersHavingOngoingActionWith(Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS).isEmpty()) {
 				if(!Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS, SexAreaPenetration.FINGER).isEmpty()) {
-					return "Handjob (own hands)";
+					return "Дрочка (собственными руками)";
 				}
-				return "Pull out (own hands)";
+				return "Вытащить (собственными руками)";
 			}
-			return "Cum on own hands";
+			return "Кончить на свои руки";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "You've reached your climax, and can't hold back your orgasm any longer. Direct your cum onto your [npc.hands].";
+			return "Вы достигли пика и больше не можете сдерживать оргазм. Направьте свою сперму на свой [npc.hands].";
 		}
 
 		@Override
@@ -5267,16 +5153,16 @@ public class GenericOrgasms {
 		public String getActionTitle() {
 			if(!Main.sex.getCharactersHavingOngoingActionWith(Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS).isEmpty()) {
 				if(!Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS, SexAreaPenetration.FINGER).isEmpty()) {
-					return "Handjob into [npc2.hair(true)]";
+					return "Дрочка в [npc2.hair(true)]";
 				}
-				return "Pull out ([npc2.hair(true)])";
+				return "Вытащить ([npc2.hair(true)])";
 			}
-			return "Cum in [npc2.hair(true)]";
+			return "Кончить в [npc2.hair(true)]";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "You've reached your climax, and can't hold back your orgasm any longer. Direct your cum into [npc2.namePos] [npc2.hair(true)].";
+			return "Вы достигли пика и больше не можете сдерживать оргазм. Направьте свою сперму в [npc2.namePos] [npc2.hair(true)].";
 		}
 
 		@Override
@@ -5319,16 +5205,16 @@ public class GenericOrgasms {
 		public String getActionTitle() {
 			if(!Main.sex.getCharactersHavingOngoingActionWith(Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS).isEmpty()) {
 				if(!Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS, SexAreaPenetration.FINGER).isEmpty()) {
-					return "Handjob onto stomach";
+					return "Дрочить на живот";
 				}
-				return "Pull out (stomach)";
+				return "Вытащить (на живот)";
 			}
-			return "Cum on stomach";
+			return "Кончить на живот";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "You've reached your climax, and can't hold back your orgasm any longer. Direct your cum onto [npc2.namePos] stomach.";
+			return "Вы достигли пика и больше не можете сдерживать оргазм. Направьте свою струю на живот [npc2.namePos].";
 		}
 
 		@Override
@@ -5367,16 +5253,16 @@ public class GenericOrgasms {
 		public String getActionTitle() {
 			if(!Main.sex.getCharactersHavingOngoingActionWith(Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS).isEmpty()) {
 				if(!Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS, SexAreaPenetration.FINGER).isEmpty()) {
-					return "Handjob (own stomach)";
+					return "Дрочить на свой живот";
 				}
-				return "Pull out (own stomach)";
+				return "Вытащить (на свой живот)";
 			}
-			return "Cum on own stomach";
+			return "Кончить на свой живот";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "You've reached your climax, and can't hold back your orgasm any longer. Direct your cum onto your stomach.";
+			return "Вы достигли пика и больше не можете сдерживать оргазм. Направьте свою струю на свой живот.";
 		}
 
 		@Override
@@ -5419,16 +5305,16 @@ public class GenericOrgasms {
 		public String getActionTitle() {
 			if(!Main.sex.getCharactersHavingOngoingActionWith(Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS).isEmpty()) {
 				if(!Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS, SexAreaPenetration.FINGER).isEmpty()) {
-					return "Handjob onto [npc2.legs]";
+					return "Дрочить на [npc2.legs]";
 				}
-				return "Pull out ([npc2.legs])";
+				return "Вытащить ([npc2.legs])";
 			}
-			return "Cum on [npc2.legs]";
+			return "Кончить на [npc2.legs]";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "You've reached your climax, and can't hold back your orgasm any longer. Direct your cum onto [npc2.namePos] [npc2.legs].";
+			return "Вы достигли пика и больше не можете сдерживать оргазм. Направьте свою сперму на [npc2.namePos] [npc2.legs].";
 		}
 
 		@Override
@@ -5467,16 +5353,16 @@ public class GenericOrgasms {
 		public String getActionTitle() {
 			if(!Main.sex.getCharactersHavingOngoingActionWith(Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS).isEmpty()) {
 				if(!Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS, SexAreaPenetration.FINGER).isEmpty()) {
-					return "Handjob (own [npc.legs])";
+					return "Мастурбация (своим [npc.legs])";
 				}
-				return "Pull out (own [npc.legs])";
+				return "Вытащить (свой [npc.legs])";
 			}
-			return "Cum on own [npc.legs]";
+			return "Кончить на свой [npc.legs]";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "You've reached your climax, and can't hold back your orgasm any longer. Direct your cum onto your [npc.legs+].";
+			return "Вы достигли пика и больше не можете сдерживать оргазм. Направьте свою сперму на свой [npc.legs+].";
 		}
 
 		@Override
@@ -5520,16 +5406,16 @@ public class GenericOrgasms {
 		public String getActionTitle() {
 			if(!Main.sex.getCharactersHavingOngoingActionWith(Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS).isEmpty()) {
 				if(!Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS, SexAreaPenetration.FINGER).isEmpty()) {
-					return "Handjob onto [npc2.feet]";
+					return "Мастурбация на [npc2.feet]";
 				}
-				return "Pull out ([npc2.feet])";
+				return "Вытащить ([npc2.feet])";
 			}
-			return "Cum on [npc2.feet]";
+			return "Кончить на [npc2.feet]";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "You've reached your climax, and can't hold back your orgasm any longer. Direct your cum onto [npc2.namePos] [npc2.feet+].";
+			return "Вы достигли пика и больше не можете сдерживать оргазм. Направьте свою сперму на [npc2.namePos] [npc2.feet+].";
 		}
 
 		@Override
@@ -5568,16 +5454,16 @@ public class GenericOrgasms {
 		public String getActionTitle() {
 			if(!Main.sex.getCharactersHavingOngoingActionWith(Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS).isEmpty()) {
 				if(!Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS, SexAreaPenetration.FINGER).isEmpty()) {
-					return "Handjob (own [npc.feet])";
+					return "Мастурбация (собственный [npc.feet])";
 				}
-				return "Pull out (own [npc.feet])";
+				return "Вытащить (собственный [npc.feet])";
 			}
-			return "Cum on own [npc.feet]";
+			return "Кончить на собственный [npc.feet]";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "You've reached your climax, and can't hold back your orgasm any longer. Direct your cum onto your [npc.feet+].";
+			return "Вы достигли пика и больше не можете сдерживать оргазм. Направьте свою сперму на свой [npc.feet+].";
 		}
 
 		@Override
@@ -5620,16 +5506,16 @@ public class GenericOrgasms {
 		public String getActionTitle() {
 			if(!Main.sex.getCharactersHavingOngoingActionWith(Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS).isEmpty()) {
 				if(!Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS, SexAreaPenetration.FINGER).isEmpty()) {
-					return "Handjob onto back";
+					return "Мастурбация на спину";
 				}
-				return "Pull out (back)";
+				return "Вытащить (спина)";
 			}
-			return "Cum on back";
+			return "Кончить на спину";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "You've reached your climax, and can't hold back your orgasm any longer. Direct your cum onto [npc2.namePos] back.";
+			return "Вы достигли пика и больше не можете сдерживать оргазм. Направьте свою сперму на [npc2.namePos] спину.";
 		}
 
 		@Override
@@ -5672,16 +5558,16 @@ public class GenericOrgasms {
 		public String getActionTitle() {
 			if(!Main.sex.getCharactersHavingOngoingActionWith(Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS).isEmpty()) {
 				if(!Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS, SexAreaPenetration.FINGER).isEmpty()) {
-					return "Handjob onto armpit";
+					return "Мастурбация на подмышку";
 				}
-				return "Pull out (armpit)";
+				return "Вытащить (подмышка)";
 			}
-			return "Cum on armpit";
+			return "Кончить на подмышку";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "You've reached your climax, and can't hold back your orgasm any longer. Direct your cum onto [npc2.namePos] armpit.";
+			return "Вы достигли пика и больше не можете сдерживать оргазм. Направьте свою сперму на подмышку [npc2.namePos].";
 		}
 
 		@Override
@@ -5732,26 +5618,26 @@ public class GenericOrgasms {
 		@Override
 		public String getActionTitle() {
 			if(Main.sex.getCharacterPerformingAction().isAsleep()) {
-				return "So sleepy...";
+				return "Так хочется спать...";
 			} else {
-				return "Stay still";
+				return "Замереть";
 			}
 		}
 		@Override
 		public String getActionDescription() {
 			if(Main.sex.getCharacterPerformingAction().isAsleep()) {
-				return "[npc2.NameIsFull] fast approaching [npc2.her] orgasm, but you're so sleepy that there's no chance of [npc2.her] climax being able to wake you up...";
+				return "[npc2.NameIsFull] стремительно приближается к [npc2.her] оргазму, но вы настолько сонны, что даже [npc2.her] кульминация вряд ли сможет вас разбудить...";
 			} else {
-				return "You can feel that [npc2.name] is fast approaching [npc2.her] orgasm. Remain motionless and don't react to it.";
+				return "Вы чувствуете, что [npc2.name] стремительно приближается к [npc2.her] оргазму. Оставайтесь неподвижными и не реагируйте на это.";
 			}
 		}
 		@Override
 		public String getDescription() {
 			String description = "";
 			if(Main.sex.getCharacterPerformingAction().isAsleep()) {
-				description = "Remaining fast asleep, [npc.name] [npc.verb(show)] no sign of waking up as [npc2.name] [npc2.verb(prepare)] to reach [npc2.her] climax.";
+				description = "Все еще крепко спящий, [npc.name] [npc.verb(show)] без малейшего признака пробуждения, пока [npc2.name] [npc2.verb(prepare)] к достижению [npc2.her] кульминации.";
 			} else {
-				description = "Continuing to act like an inanmate sex doll, [npc.name] [npc.verb(remain)] silent and completely motionless, even though [npc.she] can tell that [npc2.nameIsFull] about to orgasm.";
+				description = "Продолжая вести себя как неодушевленная секс-кукла, [npc.name] [npc.verb(remain)] тихо и совершенно неподвижно, хотя [npc.she] может сказать, что [npc2.nameIsFull] вот-вот кончит.";
 			}
 			GameCharacter orgasming = Main.sex.getCharacterOrgasming();
 			if(orgasming==null) {
@@ -5780,11 +5666,11 @@ public class GenericOrgasms {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Prepare";
+			return "Приготовиться";
 		}
 		@Override
 		public String getActionDescription() {
-			return "You can feel that [npc2.name] is fast approaching [npc2.her] orgasm. Prepare yourself for it.";
+			return "Вы чувствуете, что [npc2.name] стремительно приближается к [npc2.her] оргазму. Приготовьтесь к нему.";
 		}
 		@Override
 		public String getDescription() {
@@ -5792,25 +5678,25 @@ public class GenericOrgasms {
 			
 			switch(Main.sex.getSexPace(Main.sex.getCharacterPerformingAction())) {
 				case DOM_GENTLE:
-					description = "[npc.Name] [npc.verb(let)] out a soft [npc.moan] of encouragement as [npc.she] [npc.verb(prepare)] for [npc2.name] to reach [npc2.her] orgasm.";
+					description = "[npc.Name] [npc.verb(let)] нежный [npc.moan] ободрения, пока [npc.she] [npc.verb(prepare)], чтобы [npc2.name] достиг(ла) [npc2.her] оргазма.";
 					break;
 				case DOM_NORMAL:
-					description = "[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(prepare)] for [npc2.name] to reach [npc2.her] orgasm.";
+					description = "[npc.Name] [npc.verb(let)] [npc.a_moan+], пока [npc.she] [npc.verb(prepare)], чтобы [npc2.name] достиг(ла) [npc2.her] оргазма.";
 					break;
 				case DOM_ROUGH:
-					description = "[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(prepare)] for [npc2.name] to reach [npc2.her] orgasm.";
+					description = "[npc.Name] [npc.verb(let)] [npc.a_moan+], пока [npc.she] [npc.verb(prepare)], чтобы [npc2.name] достиг(ла) [npc2.her] оргазма.";
 					break;
 				case SUB_EAGER:
-					description = "[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(prepare)] for [npc2.name] to reach [npc2.her] orgasm.";
+					description = "[npc.Name] [npc.verb(let)] [npc.a_moan+], пока [npc.she] [npc.verb(prepare)], чтобы [npc2.name] достиг(ла) [npc2.her] оргазма.";
 					break;
 				case SUB_NORMAL:
-					description = "[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(prepare)] for [npc2.name] to reach [npc2.her] orgasm.";
+					description = "[npc.Name] [npc.verb(let)] [npc.a_moan+], пока [npc.she] [npc.verb(prepare)], чтобы [npc2.name] достиг(ла) [npc2.her] оргазма.";
 					break;
 				case SUB_RESISTING:
 					if(Main.sex.isSpectator(Main.sex.getCharacterPerformingAction())) {
-						description = "Not liking what [npc.sheIs] seeing, [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(realise)] that [npc2.nameIs] about to orgasm.";
+						description = "Не довольный тем, что видит [npc.sheIs], [npc.name] [npc.verb(let)] [npc.a_moan+] как [npc.she] [npc.verb(realise)], что [npc2.nameIs] вот-вот кончит.";
 					} else {
-						description = "[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] desperately [npc.verb(try)] to pull away from [npc2.name] before [npc2.she] [npc2.verb(orgasm)].";
+						description = "[npc.Name] [npc.verb(let)] [npc.a_moan+] как [npc.she] отчаянно [npc.verb(try)], пытаясь отстраниться от [npc2.name], прежде чем [npc2.she] [npc2.verb(orgasm)].";
 					}
 					break;
 			}
@@ -5868,44 +5754,44 @@ public class GenericOrgasms {
 		@Override
 		public String getActionTitle() {
 			if(!isRealPenisFuckingCharacter(Main.sex.getCharacterPerformingAction(), Main.sex.getCharacterTargetedForSexAction(this))) {
-				return "Keep fucking";
+				return "Продолжать трахать";
 				
 			} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.MOUTH)) {
-				return "Request cum";
+				return "Попросить кончить";
 
 			} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.BREAST)) {
-				return "Request cum on [npc.breasts]";
+				return "Попросить кончить на [npc.breasts]";
 				
 			} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaPenetration.FOOT)) {
-				return "Request cum on [npc.feet]";
+				return "Попросить кончить на [npc.feet]";
 				
 			} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.ARMPITS)) {
-				return "Request cum on [npc.armpit]";
+				return "Попросить кончить на [npc.armpit]";
 				
 			} else {
-				return "Request creampie";
+				return "Попросить кремпи";
 			}
 		}
 
 		@Override
 		public String getActionDescription() {
 			if(!isRealPenisFuckingCharacter(Main.sex.getCharacterPerformingAction(), Main.sex.getCharacterTargetedForSexAction(this))) {
-				return "You can feel that [npc2.name] is fast approaching [npc2.her] orgasm. Ask [npc2.herHim] to keep fucking you with [npc2.her] dildo as [npc2.she] climaxes.";
+				return "Вы чувствуете, что [npc2.name] вот-вот достигнет [npc2.her] оргазма. Попросите [npc2.herHim] продолжать трахать вас [npc2.her] дилдо, пока [npc2.she] кончает.";
 				
 			} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.MOUTH)) {
-				return "You can feel that [npc2.name] is fast approaching [npc2.her] orgasm. Ask [npc2.herHim] to fill your stomach with [npc2.her] cum.";
+				return "Вы чувствуете, что [npc2.name] вот-вот достигнет [npc2.her] оргазма. Попросите [npc2.herHim] наполнить ваш живот [npc2.her] спермой.";
 
 			} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.BREAST)) {
-				return "You can feel that [npc2.name] is fast approaching [npc2.her] orgasm. Ask [npc2.herHim] to cum all over your [pc.breasts+].";
+				return "Ты чувствуешь, что [npc2.name] вот-вот достигнет [npc2.her] оргазма. Попроси [npc2.herHim] кончить прямо на твою [pc.breasts+].";
 				
 			} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaPenetration.FOOT)) {
-				return "You can feel that [npc2.name] is fast approaching [npc2.her] orgasm. Ask [npc2.herHim] to cum all over your [pc.feet+].";
+				return "Ты чувствуешь, что [npc2.name] вот-вот достигнет [npc2.her] оргазма. Попроси [npc2.herHim] кончить прямо на твою [pc.feet+].";
 				
 			} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.ARMPITS)) {
-				return "You can feel that [npc2.name] is fast approaching [npc2.her] orgasm. Ask [npc2.herHim] to cum all over your [pc.armpit+].";
+				return "Ты чувствуешь, что [npc2.name] вот-вот достигнет [npc2.her] оргазма. Попроси [npc2.herHim] кончить прямо на твою [pc.armpit+].";
 				
 			} else {
-				return "You can feel that [npc2.name] is fast approaching [npc2.her] orgasm. Ask [npc2.herHim] to fill you with [npc2.her] cum.";
+				return "Ты чувствуешь, что [npc2.name] вот-вот достигнет [npc2.her] оргазма. Попроси [npc2.herHim] наполнить тебя его [npc2.her] спермой.";
 			}
 		}
 
@@ -5953,84 +5839,84 @@ public class GenericOrgasms {
 				if(!isRealPenisFuckingCharacter(Main.sex.getCharacterPerformingAction(), Main.sex.getCharacterTargetedForSexAction(this))) {
 					sb.append("Although not able to speak, [npc.name] [npc.verb(manage)] to use a series of pleading whines in order to convey that [npc.she] [npc.verb(want)] [npc2.name] to keep");
 					if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.VAGINA)) {
-						sb.append(" pounding [npc.her] [npc.pussy+] as [npc2.she] [npc2.verb(orgasm)].");
+						sb.append(" вколачивать в [npc.her] [npc.pussy+], пока [npc2.she] [npc2.verb(orgasm)].");
 						
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.ANUS)) {
-						sb.append(" pounding [npc.her] [npc.asshole+] as [npc2.she] [npc2.verb(orgasm)].");
+						sb.append(" вколачивать в [npc.her] [npc.asshole+], пока [npc2.she] [npc2.verb(orgasm)].");
 						
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.NIPPLE)) {
-						sb.append(" pounding [npc.her] [npc.nipple+] as [npc2.she] [npc2.verb(orgasm)].");
+						sb.append(" вколачивать в [npc.her] [npc.nipple+], пока [npc2.she] [npc2.verb(orgasm)].");
 						
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.SPINNERET)) {
-						sb.append(" pounding [npc.her] [npc.spinneret+] as [npc2.she] [npc2.verb(orgasm)].");
+						sb.append(" вколачивать в [npc.her] [npc.spinneret+], пока [npc2.she] [npc2.verb(orgasm)].");
 						
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.BREAST)) {
-						sb.append(" fucking [npc.her] [npc.breasts+] as [npc2.she] [npc2.verb(orgasm)].");
+						sb.append(" трахать [npc.her] [npc.breasts+], пока [npc2.she] [npc2.verb(orgasm)].");
 						
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.ARMPITS)) {
-						sb.append(" fucking [npc.her] [npc.armpit+] as [npc2.she] [npc2.verb(orgasm)].");
+						sb.append(" трахать [npc.her] [npc.armpit+], когда [npc2.she] [npc2.verb(orgasm)].");
 						
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaPenetration.FOOT)) {
-						sb.append(" fucking [npc.her] [npc.feet+] as [npc2.she] [npc2.verb(orgasm)].");
+						sb.append(" трахать [npc.her] [npc.feet+], когда [npc2.she] [npc2.verb(orgasm)].");
 						
 					} else {
-						sb.append(" fucking [npc.herHim] as [npc2.she] [npc2.verb(orgasm)].");
+						sb.append(" трахать [npc.herHim] как [npc2.she] [npc2.verb(orgasm)].");
 					}
 	
 				} else {
-					sb.append("Although not able to speak, [npc.name] [npc.verb(manage)] to use a series of pleading whines in order to convey that [npc.she] [npc.verb(want)]");
+					sb.append("Хотя [npc.name] не может говорить, она [npc.verb(manage)], издавая череду умоляющих стонов, чтобы передать, что [npc.she] [npc.verb(want)]");
 					if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.VAGINA)) {
-						sb.append(" [npc2.name] to cum in [npc.her] [npc.pussy+].");
+						sb.append(" [npc2.name] кончает в [npc.her] [npc.pussy+].");
 						
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.ANUS)) {
-						sb.append(" [npc2.name] to cum in [npc.her] [npc.asshole+].");
+						sb.append(" [npc2.name] кончает в [npc.her] [npc.asshole+].");
 						
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.NIPPLE)) {
-						sb.append(" [npc2.name] to cum in [npc.her] [npc.nipple+].");
+						sb.append(" [npc2.name] кончает в [npc.her] [npc.nipple+].");
 						
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.SPINNERET)) {
-						sb.append(" [npc2.name] to cum in [npc.her] [npc.spinneret+].");
+						sb.append(" [npc2.name] кончает в [npc.her] [npc.spinneret+].");
 						
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.BREAST)) {
-						sb.append(" [npc2.name] to cum all over [npc.her] [npc.breasts+].");
+						sb.append(" [npc2.name] кончает на всем [npc.her] [npc.breasts+].");
 						
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaPenetration.FOOT)) {
-						sb.append(" [npc2.name] to cum all over [npc.her] [npc.feet+].");
+						sb.append(" [npc2.name] кончает на всем [npc.her] [npc.feet+].");
 						
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.ARMPITS)) {
-						sb.append(" [npc2.name] to cum all over [npc.her] [npc.armpit+].");
+						sb.append(" [npc2.name] кончает на [npc.her] [npc.armpit+].");
 						
 					} else {
-						sb.append(" [npc2.namePos] cum.");
+						sb.append(" [npc2.namePos] кончает.");
 					}
 				}
 				
 			} else {
 				if(!isRealPenisFuckingCharacter(Main.sex.getCharacterPerformingAction(), Main.sex.getCharacterTargetedForSexAction(this))) {
-					sb.append("Through [npc.her] desperate moans and lewd cries, [npc.name] somehow [npc.verb(manage)] to formulate a sentence and [npc.verb(cry)] out for [npc2.name] to keep");
+					sb.append("Сквозь [npc.her] отчаянных стонов и похотливых криков, [npc.name] каким-то образом [npc.verb(manage)] сформулировать предложение и [npc.verb(cry)] для [npc2.name], чтобы та могла наслаждаться ими вечно");
 					if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.VAGINA)) {
-						sb.append(" pounding [npc.her] [npc.pussy+] as [npc2.she] [npc2.verb(orgasm)], [npc.speech(Fuck! Yes! Keep fucking me!)]");
+						sb.append(" вколачивать в [npc.her] [npc.pussy+], пока [npc2.she] [npc2.verb(orgasm)], [npc.speech(Бля! Да! Трахни меня еще!)]");
 						
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.ANUS)) {
-						sb.append(" pounding [npc.her] [npc.asshole+] as [npc2.she] [npc2.verb(orgasm)], [npc.speech(Fuck! Yes! Keep fucking my ass!)]");
+						sb.append(" вколачивать в [npc.her] [npc.asshole+], пока [npc2.she] [npc2.verb(orgasm)], [npc.speech(Бля! Да! Трахни мой зад!)]");
 						
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.NIPPLE)) {
-						sb.append(" pounding [npc.her] [npc.nipple+] as [npc2.she] [npc2.verb(orgasm)], [npc.speech(Fuck! Yes! Keep fucking my [npc.nipple(true)]!)]");
+						sb.append(" вколачивать в [npc.her] [npc.nipple+], пока [npc2.she] [npc2.verb(orgasm)], [npc.speech(Бля! Да! Трахни мой [npc.nipple(true)]!)]");
 						
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.SPINNERET)) {
-						sb.append(" pounding [npc.her] [npc.spinneret+] as [npc2.she] [npc2.verb(orgasm)], [npc.speech(Fuck! Yes! Keep fucking my spinneret!)]");
+						sb.append(" вколачивать в [npc.her] [npc.spinneret+], пока [npc2.she] [npc2.verb(orgasm)], [npc.speech(Бля! Да! Трахни мой паучий аппарат!)]");
 						
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.BREAST)) {
-						sb.append(" fucking [npc.her] [npc.breasts+] as [npc2.she] [npc2.verb(orgasm)], [npc.speech(Fuck! Yes! Keep fucking my tits!)]");
+						sb.append(" трахать [npc.her] [npc.breasts+], пока [npc2.she] [npc2.verb(orgasm)], [npc.speech(Бля! Да! Трахни мои сиськи!)]");
 						
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaPenetration.FOOT)) {
-						sb.append(" fucking [npc.her] [npc.feet+] as [npc2.she] [npc2.verb(orgasm)], [npc.speech(Fuck! Yes! Keep fucking my [npc.feet]!)]");
+						sb.append(" трахать [npc.her] [npc.feet+], пока [npc2.she] [npc2.verb(orgasm)], [npc.speech(Бля! Да! Трахни мою [npc.feet]!)]");
 						
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.ARMPITS)) {
-						sb.append(" fucking [npc.her] [npc.armpit+] as [npc2.she] [npc2.verb(orgasm)], [npc.speech(Fuck! Yes! Keep fucking my [npc.armpit]!)]");
+						sb.append(" трахать [npc.her] [npc.armpit+], пока [npc2.she] [npc2.verb(orgasm)], [npc.speech(Бля! Да! Трахни мою [npc.armpit]!)]");
 						
 					} else {
-						sb.append(" fucking [npc.herHim] as [npc2.she] [npc2.verb(orgasm)], [npc.speech(Fuck! Yes! Keep fucking me!)]");
+						sb.append(" трахая [npc.herHim], пока [npc2.she] [npc2.verb(orgasm)], [npc.speech(Блядь! Да! Трахни меня еще!)]");
 					}
 	
 				} else if(Main.sex.getCharacterTargetedForSexAction(this).isWearingCondom()) {
@@ -6039,21 +5925,21 @@ public class GenericOrgasms {
 						petName = true;
 					}
 
-					sb.append("Through [npc.her] desperate moans and lewd cries, [npc.name] somehow [npc.verb(manage)] to formulate a sentence and [npc.verb(cry)] out for [npc2.name] to cum,");
+					sb.append("Сквозь отчаянные стоны и похотливые крики [npc.her], [npc.name] каким-то образом [npc.verb(manage)] составить предложение и [npc.verb(cry)], чтобы [npc2.name] кончил,");
 					if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.VAGINA)) {
-						sb.append(" [npc.speech(Finish inside of me if you want"+(petName?", [#npc.getPetName(npc2)]":"")+"! Spurt it all out into that condom!)]");
+						sb.append(" [npc.speech(Кончай в меня, если хочешь,"+(petName?", [#npc.getPetName(npc2)]":"")+"! Выплесни всё в этот презерватив!)]");
 	
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.ANUS)) {
-						sb.append(" [npc.speech(Finish inside of me if you want"+(petName?", [#npc.getPetName(npc2)]":"")+"! Spurt it all out into that condom!)]");
+						sb.append(" [npc.speech(Кончай в меня, если хочешь,"+(petName?", [#npc.getPetName(npc2)]":"")+"! Выплесни всё в этот презерватив!)]");
 	
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.NIPPLE)) {
-						sb.append(" [npc.speech(Finish inside of me if you want"+(petName?", [#npc.getPetName(npc2)]":"")+"! Spurt it all out into that condom!)]");
+						sb.append(" [npc.speech(Кончай в меня, если хочешь,"+(petName?", [#npc.getPetName(npc2)]":"")+"! Выплесни всё в этот презерватив!)]");
 	
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.SPINNERET)) {
-						sb.append(" [npc.speech(Finish inside of me if you want"+(petName?", [#npc.getPetName(npc2)]":"")+"! Spurt it all out into that condom!)]");
+						sb.append(" [npc.speech(Кончай в меня, если хочешь,"+(petName?", [#npc.getPetName(npc2)]":"")+"! Выплесни всё в этот презерватив!)]");
 	
 					} else {
-						sb.append(" [npc.speech(Yes! Cum for me"+(petName?", [#npc.getPetName(npc2)]":"")+"! Spurt it all out into that condom!)]");
+						sb.append(" [npc.speech(Да! Кончай для меня!"+(petName?", [#npc.getPetName(npc2)]":"")+"! Выплесни всё в этот презерватив!)]");
 					}
 					
 				} else {
@@ -6062,35 +5948,35 @@ public class GenericOrgasms {
 						petName = true;
 					}
 
-					sb.append("Through [npc.her] desperate moans and lewd cries, [npc.name] somehow [npc.verb(manage)] to formulate a sentence as [npc.she] [npc.verb(cry)] out for [npc2.namePos] cum,");
+					sb.append("Сквозь [npc.her] отчаянные стоны и похотливые крики, [npc.name] каким-то образом [npc.verb(manage)] составить предложение, пока [npc.she] [npc.verb(cry)] изливает [npc2.namePos] сперму,");
 					if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.VAGINA)) {
 						sb.append(((Main.sex.getCharacterPerformingAction().isVisiblyPregnant() || !Main.sex.getCharacterPerformingAction().isImpregnationPhysicallyPossible())
-										?" [npc.speech(Fuck! Cum in me"+(petName?", [#npc.getPetName(npc2)]":"")+"! I need your cum!)]"
-										:" [npc.speech(Breed me"+(petName?", [#npc.getPetName(npc2)]":"")+"! Cum in me! I need your cum!)]"));
+										?" [npc.speech(Блядь! Кончай в меня!"+(petName?", [#npc.getPetName(npc2)]":"")+"Мне нужна твоя сперма!)]"
+										:" [npc.speech(Оплодотвори меня!"+(petName?", [#npc.getPetName(npc2)]":"")+"Кончай в меня! Мне нужна твоя сперма!)]"));
 	
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.ANUS)) {
-						sb.append(" [npc.speech(Fuck! Cum in me"+(petName?", [#npc.getPetName(npc2)]":"")+"! I need your cum!)]");
+						sb.append(" [npc.speech(Блядь! Кончай в меня!"+(petName?", [#npc.getPetName(npc2)]":"")+"Мне нужна твоя сперма!)]");
 	
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.NIPPLE)) {
-						sb.append(" [npc.speech(Fuck! Cum in me"+(petName?", [#npc.getPetName(npc2)]":"")+"! I need your cum!)]");
+						sb.append(" [npc.speech(Блядь! Кончай в меня!"+(petName?", [#npc.getPetName(npc2)]":"")+"Мне нужна твоя сперма!)]");
 	
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.SPINNERET)) {
-						sb.append(" [npc.speech(Fuck! Cum in me"+(petName?", [#npc.getPetName(npc2)]":"")+"! I need your cum!)]");
+						sb.append(" [npc.speech(Блядь! Кончай в меня!"+(petName?", [#npc.getPetName(npc2)]":"")+"Мне нужна твоя сперма!)]");
 	
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.BREAST)) {
-						sb.append(" [npc.speech(Yes! Cum for me"+(petName?", [#npc.getPetName(npc2)]":"")+"! Cover my tits with your cum!)]");
+						sb.append(" [npc.speech(Да! Кончай для меня!"+(petName?", [#npc.getPetName(npc2)]":"")+"! Закрой мои сиськи своей кончой!)]");
 	
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaPenetration.FOOT)) {
-						sb.append(" [npc.speech(Fuck! Yes! Cum all over my [npc.feet]"+(petName?", [#npc.getPetName(npc2)]":"")+"!)]");
+						sb.append(" [npc.speech(Бля! Да! Лей всю свою кончу на мои [npc.feet]"+(petName?", [#npc.getPetName(npc2)]":"")+"!)]");
 						
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.MOUTH)) {
-						sb.append(" [npc.speech(Cum for me"+(petName?", [#npc.getPetName(npc2)]":"")+"! I want to taste your cum!)]");
+						sb.append(" [npc.speech(Кончай для меня"+(petName?", [#npc.getPetName(npc2)]":"")+"! Я хочу попробовать твою сперму на вкус!)]");
 						
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.ARMPITS)) {
-						sb.append(" [npc.speech(Fuck! Yes! Cum all over my [npc.armpit]"+(petName?", [#npc.getPetName(npc2)]":"")+"!)]");
+						sb.append(" [npc.speech(Бля! Да! Лей всю свою кончу на мои [npc.armpit]"+(petName?", [#npc.getPetName(npc2)]":"")+"!)]");
 						
 					} else {
-						sb.append(" [npc.speech(Cum for me"+(petName?", [#npc.getPetName(npc2)]":"")+"! Don't pull out!)]");
+						sb.append(" [npc.speech(Кончай для меня"+(petName?", [#npc.getPetName(npc2)]":"")+"! Не вынимай!)]");
 					}
 				}
 			}
@@ -6098,37 +5984,34 @@ public class GenericOrgasms {
 			if(!Main.sex.getCharacterTargetedForSexAction(this).isPlayer() && !Main.sex.isSpectator(Main.sex.getCharacterPerformingAction())) {
 				if(Main.sex.getCharacterTargetedForSexAction(this).isSpeechMuffled() || Main.sex.getCharacterTargetedForSexAction(this).isMute()) {
 					if(Main.sex.isCharacterObeyingTarget(Main.sex.getCharacterTargetedForSexAction(this), Main.sex.getCharacterPerformingAction())) {
-						sb.append("<br/><br/>"
-								+"Grinning as [npc.name] [npc.verb(ask)] this, [npc2.name] [npc2.verb(let)] out a positive-sounding [npc2.moan] in order to let [npc.name] know that that's exactly what [npc2.sheHasFull] planned.");
+						sb.append("<br/><br/>Улыбаясь, когда [npc.name] [npc.verb(ask)] это, [npc2.name] [npc2.verb(let)] положительный [npc2.moan], чтобы дать [npc.name] понять, что это именно то, что [npc2.sheHasFull] планировал.");
 						
 					} else {
-						sb.append("<br/><br/>"
-								+"Furrowing [npc2.her] eyebrows as [npc.name] [npc.verb(ask)] this,"
-								+ " [npc2.name] [npc2.verb(let)] out a negative-sounding [npc2.moan] in order to let [npc.name] know that [npc2.sheIs] not interested in listening to anything [npc.sheHasFull] to say.");
+						sb.append("<br/><br/>Нахмурив [npc2.her] брови, когда [npc.name] [npc.verb(ask)] это, [npc2.name] [npc2.verb(let)] отрицательный [npc2.moan], чтобы дать [npc.name] понять, что [npc2.sheIs] не заинтересован в том, чтобы слушать всё, что [npc.sheHasFull] скажет.");
 					}
 					
 				} else {
 					if(Main.sex.isCharacterObeyingTarget(Main.sex.getCharacterTargetedForSexAction(this), Main.sex.getCharacterPerformingAction())) {
 						sb.append("<br/><br/>"
 								+UtilText.returnStringAtRandom(
-									"Grinning as [npc.name] [npc.verb(ask)] this, [npc2.name] quickly replies in the positive, ",
-									"Letting out [npc.a_moan+] after hearing what it is [npc.nameIs] asking of [npc2.herHim], [npc2.name] responds, "));
+									"Улыбаясь, когда [npc.name] [npc.verb(ask)] это, [npc2.name] быстро отвечает утвердительно, ",
+									"Издавая [npc.a_moan+] после того, как услышала, что именно [npc.nameIs] просит у [npc2.herHim], [npc2.name] отвечает, "));
 		
 						sb.append(UtilText.returnStringAtRandom(
-								"[npc2.speech(Sure, if that's what you want!)]",
-								"[npc2.speech(Sounds good to me!)]",
-								"[npc2.speech(Sure thing! I'm going to enjoy this!)]"));
+								"[npc2.speech(Конечно, если ты так хочешь!)]",
+								"[npc2.speech(Мне это нравится!)]",
+								"[npc2.speech(Без проблем! Я получу от этого удовольствие!)]"));
 						
 					} else {
 						sb.append("<br/><br/>"
 								+UtilText.returnStringAtRandom(
-									"Furrowing [npc2.her] eyebrows as [npc.name] [npc.verb(ask)] this, [npc2.name] quickly [npc2.verb(shut)] [npc.herHim] down, ",
-									"Clearly not liking the fact that [npc.nameIs] asking something of [npc2.herHim], [npc2.name] responds, "));
+									"Нахмурив брови [npc2.her], пока [npc.name] [npc.verb(ask)] это, [npc2.name] быстро [npc2.verb(shut)] [npc.herHim] вниз, ",
+									"Явно не в восторге от того, что [npc.nameIs] просит чего-то у [npc2.herHim], [npc2.name] отвечает, "));
 		
 						sb.append(UtilText.returnStringAtRandom(
-								"[npc2.speech(I'll do whatever I feel like doing!)]",
-								"[npc2.speech(I'm not listening to you!)]",
-								"[npc2.speech(I'll do what I want!)]"));
+								"[npc2.speech(Я буду делать всё, что мне вздумается!)]",
+								"[npc2.speech(Я тебя не слушаю!)]",
+								"[npc2.speech(Буду делать то, что хочу!)]"));
 					}
 				}
 			}
@@ -6217,12 +6100,12 @@ public class GenericOrgasms {
 		
 		@Override
 		public String getActionTitle() {
-			return "Request knot";
+			return "Попросить узел";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "You can feel that [npc2.name] is fast approaching [npc2.her] orgasm. Ask [npc2.herHim] to knot you and fill you with [npc2.her] cum.";
+			return "Ты чувствуешь, что [npc2.name] стремительно приближается к [npc2.her] оргазму. Попроси [npc2.herHim] завязать узел и наполнить тебя [npc2.her] спермой.";
 		}
 
 		@Override
@@ -6271,7 +6154,7 @@ public class GenericOrgasms {
 			StringBuilder sb = new StringBuilder();
 			
 			if(Main.sex.getCharacterPerformingAction().isSpeechMuffled() || Main.sex.getCharacterPerformingAction().isMute()) {
-				sb.append("Although not able to speak, [npc.name] [npc.verb(manage)] to use a series of pleading whines in order to convey that [npc.she] [npc.verb(want)] [npc2.name] to knot [npc.herHim] and cum deep inside");
+				sb.append("Хотя [npc.name] не может говорить, [npc.verb(manage)] издает серию умоляющих стонов, чтобы передать, что [npc.she] [npc.verb(want)] [npc2.name] завязать [npc.herHim] и кончить глубоко внутри");
 				
 				if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.VAGINA)) {
 					sb.append(" [npc.her] [npc.pussy+].");
@@ -6305,31 +6188,31 @@ public class GenericOrgasms {
 						petName = true;
 					}
 
-					sb.append("Through [npc.her] desperate moans and lewd cries, [npc.name] somehow [npc.verb(manage)] to formulate a sentence and [npc.verb(cry)] out for [npc2.name] to knot [npc.herHim] and cum deep inside");
+					sb.append("Сквозь отчаянные стоны и похотливые крики [npc.her], [npc.name] каким-то образом [npc.verb(manage)] сформулировать фразу и [npc.verb(cry)] попросить [npc2.name] завязать узел в [npc.herHim] и кончить глубоко внутри");
 					
 					if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.VAGINA)) {
-						sb.append(" [npc.her] [npc.pussy+], [npc.speech(Knot me"+(petName?", [#npc.getPetName(npc2)]":"")+"! Finish inside my pussy and fill up that condom!)]");
+						sb.append(" [npc.her] [npc.pussy+], [npc.speech(Завяжи мне"+(petName?", [#npc.getPetName(npc2)]":"")+"узел! Кончи в мою киску и наполни этот презерватив!)]");
 	
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.ANUS)) {
-						sb.append(" [npc.her] [npc.asshole+], [npc.speech(Knot me"+(petName?", [#npc.getPetName(npc2)]":"")+"! Finish inside my ass and fill up that condom!)]");
+						sb.append(" [npc.her] [npc.asshole+], [npc.speech(Завяжи мне"+(petName?", [#npc.getPetName(npc2)]":"")+"узел! Кончи в мою задницу и наполни этот презерватив!)]");
 	
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.NIPPLE)) {
-						sb.append(" [npc.her] [npc.nipple+], [npc.speech(Knot me"+(petName?", [#npc.getPetName(npc2)]":"")+"! Finish inside my nipple and fill up that condom!)]");
+						sb.append(" [npc.her] [npc.nipple+], [npc.speech(Завяжи мне"+(petName?", [#npc.getPetName(npc2)]":"")+"узел! Кончи в мой сосок и наполни этот презерватив!)]");
 	
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.NIPPLE_CROTCH)) {
-						sb.append(" [npc.her] [npc.nippleCrotch+], [npc.speech(Knot me"+(petName?", [#npc.getPetName(npc2)]":"")+"! Finish inside me and fill up that condom!)]");
+						sb.append(" [npc.her] [npc.nippleCrotch+], [npc.speech(Завяжи меня,"+(petName?", [#npc.getPetName(npc2)]":"")+"! кончи в меня и наполни этот презерватив!)]");
 	
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.SPINNERET)) {
-						sb.append(" [npc.her] [npc.spinneret+], [npc.speech(Knot me"+(petName?", [#npc.getPetName(npc2)]":"")+"! Finish inside me and fill up that condom!)]");
+						sb.append(" [npc.her] [npc.spinneret+], [npc.speech(Завяжи меня,"+(petName?", [#npc.getPetName(npc2)]":"")+"! кончи в меня и наполни этот презерватив!)]");
 	
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.URETHRA_PENIS)) {
-						sb.append(" [npc.her] [npc.urethraPenis+], [npc.speech(Knot me"+(petName?", [#npc.getPetName(npc2)]":"")+"! Finish inside me and fill up that condom!)]");
+						sb.append(" [npc.her] [npc.urethraPenis+], [npc.speech(Завяжи меня,"+(petName?", [#npc.getPetName(npc2)]":"")+"! кончи в меня и наполни этот презерватив!)]");
 	
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.URETHRA_VAGINA)) {
-						sb.append(" [npc.her] [npc.urethraVagina+], [npc.speech(Knot me"+(petName?", [#npc.getPetName(npc2)]":"")+"! Finish inside me and fill up that condom!)]");
+						sb.append(" [npc.her] [npc.urethraVagina+], [npc.speech(Завяжи меня,"+(petName?", [#npc.getPetName(npc2)]":"")+"! кончи в меня и наполни этот презерватив!)]");
 	
 					} else {
-						sb.append(" of [npc.herHim], [npc.speech(Knot me"+(petName?", [#npc.getPetName(npc2)]":"")+"! Finish inside me and fill up that condom!)]");
+						sb.append(" [npc.herHim], [npc.speech(Завяжи меня,"+(petName?", [#npc.getPetName(npc2)]":"")+"! кончи в меня и наполни этот презерватив!)]");
 					}
 					
 				} else {
@@ -6338,34 +6221,34 @@ public class GenericOrgasms {
 						petName = true;
 					}
 					
-					sb.append("Through [npc.her] desperate moans and lewd cries, [npc.name] somehow [npc.verb(manage)] to formulate a sentence and [npc.verb(cry)] out for [npc2.name] to knot [npc.herHim] and cum deep inside");
+					sb.append("Сквозь отчаянные стоны и похотливые крики [npc.her], [npc.name] каким-то образом [npc.verb(manage)] сформулировать фразу и [npc.verb(cry)] попросить [npc2.name] завязать узел в [npc.herHim] и кончить глубоко внутри");
 					
 					if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.VAGINA)) {
 						sb.append(" [npc.her] [npc.pussy+],"
 									+(Main.sex.getCharacterPerformingAction().isVisiblyPregnant()
-											?" [npc.speech(Knot me"+(petName?", [#npc.getPetName(npc2)]":"")+"! Finish inside of me and fill my pussy with your cum!)]"
-											:" [npc.speech(Knot me"+(petName?", [#npc.getPetName(npc2)]":"")+"! Fill my pussy with your cum and breed me!)]"));
+											?" [npc.speech(Завяжи меня,"+(petName?", [#npc.getPetName(npc2)]":"")+"! кончи в меня и заполни мою киску своей спермой!)]"
+											:" [npc.speech(Завяжи меня,"+(petName?", [#npc.getPetName(npc2)]":"")+"! заполни мою киску своей спермой и осемени меня!)]"));
 	
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.ANUS)) {
-						sb.append(" [npc.her] [npc.asshole+], [npc.speech(Knot me"+(petName?", [#npc.getPetName(npc2)]":"")+"! Finish inside my ass!)]");
+						sb.append(" [npc.her] [npc.asshole+], [npc.speech(Завяжи мне"+(petName?", [#npc.getPetName(npc2)]":"")+"! кончи мне в задницу!)]");
 	
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.NIPPLE)) {
-						sb.append(" [npc.her] [npc.nipple+], [npc.speech(Knot me"+(petName?", [#npc.getPetName(npc2)]":"")+"! Finish inside my nipple!)]");
+						sb.append(" [npc.her] [npc.nipple+], [npc.speech(Завяжи мне"+(petName?", [#npc.getPetName(npc2)]":"")+"! кончи мне в сосок!)]");
 	
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.NIPPLE_CROTCH)) {
-						sb.append(" [npc.her] [npc.nippleCrotch+], [npc.speech(Knot me"+(petName?", [#npc.getPetName(npc2)]":"")+"! Finish inside me!)]");
+						sb.append(" [npc.her] [npc.nippleCrotch+], [npc.speech(Завяжи меня,"+(petName?", [#npc.getPetName(npc2)]":"")+"! кончи в меня!)]");
 	
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.SPINNERET)) {
-						sb.append(" [npc.her] [npc.spinneret+], [npc.speech(Knot me"+(petName?", [#npc.getPetName(npc2)]":"")+"! Finish inside me!)]");
+						sb.append(" [npc.her] [npc.spinneret+], [npc.speech(Завяжи меня,"+(petName?", [#npc.getPetName(npc2)]":"")+"! кончи в меня!)]");
 	
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.URETHRA_PENIS)) {
-						sb.append(" [npc.her] [npc.urethraPenis+], [npc.speech(Knot me"+(petName?", [#npc.getPetName(npc2)]":"")+"! Finish inside me!)]");
+						sb.append(" [npc.her] [npc.urethraPenis+], [npc.speech(Завяжи меня,"+(petName?", [#npc.getPetName(npc2)]":"")+"! кончи в меня!)]");
 	
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.URETHRA_VAGINA)) {
-						sb.append(" [npc.her] [npc.urethraVagina+], [npc.speech(Knot me"+(petName?", [#npc.getPetName(npc2)]":"")+"! Finish inside me!)]");
+						sb.append(" [npc.her] [npc.urethraVagina+], [npc.speech(Завяжи меня,"+(petName?", [#npc.getPetName(npc2)]":"")+"! кончи в меня!)]");
 	
 					} else {
-						sb.append(" of [npc.herHim], [npc.speech(Knot me"+(petName?", [#npc.getPetName(npc2)]":"")+"! Finish inside me!)]");
+						sb.append(" [npc.herHim], [npc.speech(Завяжи меня,"+(petName?", [#npc.getPetName(npc2)]":"")+"! кончи в меня!)]");
 					}
 				}
 			}
@@ -6373,37 +6256,34 @@ public class GenericOrgasms {
 			if(!Main.sex.getCharacterTargetedForSexAction(this).isPlayer() && !Main.sex.isSpectator(Main.sex.getCharacterPerformingAction())) {
 				if(Main.sex.getCharacterTargetedForSexAction(this).isSpeechMuffled() || Main.sex.getCharacterTargetedForSexAction(this).isMute()) {
 					if(Main.sex.isCharacterObeyingTarget(Main.sex.getCharacterTargetedForSexAction(this), Main.sex.getCharacterPerformingAction())) {
-						sb.append("<br/><br/>"
-								+"Grinning as [npc.name] [npc.verb(ask)] this, [npc2.name] [npc2.verb(let)] out a positive-sounding [npc2.moan] in order to let [npc.name] know that that's exactly what [npc2.sheHasFull] planned.");
+						sb.append("<br/><br/>Улыбаясь, когда [npc.name] [npc.verb(ask)] это, [npc2.name] [npc2.verb(let)] положительный [npc2.moan], чтобы дать [npc.name] понять, что это именно то, что [npc2.sheHasFull] планировал.");
 						
 					} else {
-						sb.append("<br/><br/>"
-								+"Furrowing [npc2.her] eyebrows as [npc.name] [npc.verb(ask)] this,"
-								+ " [npc2.name] [npc2.verb(let)] out a negative-sounding [npc2.moan] in order to let [npc.name] know that [npc2.sheIs] not interested in listening to anything [npc.sheHasFull] to say.");
+						sb.append("<br/><br/>Нахмурив [npc2.her] брови, когда [npc.name] [npc.verb(ask)] это, [npc2.name] [npc2.verb(let)] отрицательный [npc2.moan], чтобы дать [npc.name] понять, что [npc2.sheIs] не заинтересован в том, чтобы слушать всё, что [npc.sheHasFull] скажет.");
 					}
 					
 				} else {
 					if(Main.sex.isCharacterObeyingTarget(Main.sex.getCharacterTargetedForSexAction(this), Main.sex.getCharacterPerformingAction())) {
 						sb.append("<br/><br/>"
 								+UtilText.returnStringAtRandom(
-									"Grinning as [npc.name] [npc.verb(ask)] this, [npc2.name] quickly replies in the positive, ",
-									"Letting out [npc.a_moan+] after hearing what it is [npc.nameIs] asking of [npc2.herHim], [npc2.name] responds, "));
+									"Улыбаясь, когда [npc.name] [npc.verb(ask)] это, [npc2.name] быстро отвечает утвердительно, ",
+									"Издавая [npc.a_moan+] после того, как услышала, что именно [npc.nameIs] просит у [npc2.herHim], [npc2.name] отвечает, "));
 		
 						sb.append(UtilText.returnStringAtRandom(
-								"[npc2.speech(Sure, if that's what you want!)]",
-								"[npc2.speech(Sounds good to me!)]",
-								"[npc2.speech(Sure thing! I'm going to enjoy this!)]"));
+								"[npc2.speech(Конечно, если ты так хочешь!)]",
+								"[npc2.speech(Мне это нравится!)]",
+								"[npc2.speech(Без проблем! Я получу от этого удовольствие!)]"));
 						
 					} else {
 						sb.append("<br/><br/>"
 								+UtilText.returnStringAtRandom(
-									"Furrowing [npc2.her] eyebrows as [npc.name] [npc.verb(ask)] this, [npc2.name] quickly [npc2.verb(shut)] [npc.herHim] down, ",
-									"Clearly not liking the fact that [npc.nameIs] asking something of [npc2.herHim], [npc2.name] responds, "));
+									"Нахмурив брови [npc2.her], пока [npc.name] [npc.verb(ask)] это, [npc2.name] быстро [npc2.verb(shut)] [npc.herHim] вниз, ",
+									"Явно не в восторге от того, что [npc.nameIs] просит чего-то у [npc2.herHim], [npc2.name] отвечает, "));
 		
 						sb.append(UtilText.returnStringAtRandom(
-								"[npc2.speech(I'll do whatever I feel like doing!)]",
-								"[npc2.speech(I'm not listening to you!)]",
-								"[npc2.speech(I'll do what I want!)]"));
+								"[npc2.speech(Я буду делать всё, что мне вздумается!)]",
+								"[npc2.speech(Я тебя не слушаю!)]",
+								"[npc2.speech(Буду делать то, что хочу!)]"));
 					}
 				}
 			}
@@ -6510,65 +6390,65 @@ public class GenericOrgasms {
 			if(isAreaFuckedByTarget(sexAction, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.VAGINA)) {
 				if(Main.sex.getCharacterPerformingAction().getFetishDesire(Fetish.FETISH_PREGNANCY).isPositive() && !Main.sex.getCharacterPerformingAction().isVisiblyPregnant()) {
 					return (performerSpeechMuffled
-								?" With [npc.her] mouth being blocked, [npc.sheIs] only able to make a very muffled [npc.moan] as [npc.she] [npc.verb(prepare)] to receive [npc.her] creampie."
-								:" With a hysterical squeal, [npc.she] [npc.verb(cry)] out, [npc.speechNoExtraEffects(~Aah!~ Now I've got you! Cum in me"+(knowsName?", [npc2.name]":"")+"! ~Ooh!~ ~Yes!~ Give me your babies!)]");
+								?" Рот [npc.her] забит, и [npc.sheIs] лишь издает приглушенный [npc.moan], пока [npc.she] [npc.verb(prepare)], чтобы получить [npc.her] креампи."
+								:" С истерическим визгом [npc.she] [npc.verb(cry)], [npc.speechNoExtraEffects(~Аах!~ Теперь ты в моей власти! Кончай в меня"+(knowsName?", [npc2.name]":"")+"! ~Ооо!~ ~Да!~ Дай мне своих деток!)]");
 				}
 				return (performerSpeechMuffled
-								?" With [npc.her] mouth being blocked, [npc.sheIs] only able to make a very muffled [npc.moan] as [npc.she] [npc.verb(prepare)] to receive [npc.her] creampie."
-								:" With a desperate [npc.moan], [npc.she] [npc.verb(cry)] out, [npc.speechNoExtraEffects(~Ooh!~ ~Yes!~ Cum in my pussy"+(knowsName?", [npc2.name]":"")+"! ~Aah!~ Give me a nice big creampie!)]");
+								?" Рот [npc.her] забит, и [npc.sheIs] лишь издает приглушенный [npc.moan], пока [npc.she] [npc.verb(prepare)], чтобы получить [npc.her] креампи."
+								:" С отчаянным [npc.moan], [npc.she] [npc.verb(cry)], [npc.speechNoExtraEffects(~Ооо!~ ~Да!~ Кончай в мою киску"+(knowsName?", [npc2.name]":"")+"! ~Аах!~ Дай мне сочный, большой креампи!)]");
 
 			} else if(isAreaFuckedByTarget(sexAction, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.ANUS)) {
 				return (performerSpeechMuffled
-								?" With [npc.her] mouth being blocked, [npc.sheIs] only able to make a very muffled [npc.moan] as [npc.she] [npc.verb(prepare)] to receive [npc.her] creampie."
-								:" With a desperate [npc.moan], [npc.she] [npc.verb(cry)] out, [npc.speechNoExtraEffects(~Ooh!~ ~Yes!~ Cum in my ass"+(knowsName?", [npc2.name]":"")+"! ~Aah!~ Give me a nice big creampie!)]");
+								?" Рот [npc.her] забит, и [npc.sheIs] лишь издает приглушенный [npc.moan], пока [npc.she] [npc.verb(prepare)], чтобы получить [npc.her] креампи."
+								:" С отчаянным [npc.moan], [npc.she] [npc.verb(cry)], [npc.speechNoExtraEffects(~Ооо!~ ~Да!~ Кончай в мою задницу"+(knowsName?", [npc2.name]":"")+"! ~Аах!~ Дай мне сочный, большой креампи!)]");
 				
 			} else if(isAreaFuckedByTarget(sexAction, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.SPINNERET)) {
 				return (performerSpeechMuffled
-							?" With [npc.her] mouth being blocked, [npc.sheIs] only able to make a very muffled [npc.moan] as [npc.she] [npc.verb(prepare)] to receive [npc.her] creampie."
-							:" With a desperate [npc.moan], [npc.she] [npc.verb(cry)] out, [npc.speechNoExtraEffects(~Ooh!~ ~Yes!~ Cum in my spinneret"+(knowsName?", [npc2.name]":"")+"! ~Aah!~ Give me a nice big creampie!)]");
+							?" Рот [npc.her] забит, и [npc.sheIs] лишь издает приглушенный [npc.moan], пока [npc.she] [npc.verb(prepare)], чтобы получить [npc.her] креампи."
+							:" С отчаянным [npc.moan], [npc.she] [npc.verb(cry)] наружу, [npc.speechNoExtraEffects(~Ооо!~ ~Да!~ Кончай в мой паутинный орган,"+(knowsName?", [npc2.name]":"")+"! ~Аах!~ Дай мне сочный, большой креампи!)]");
 		
 			} else if(isAreaFuckedByTarget(sexAction, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.URETHRA_PENIS)) {
 				return (performerSpeechMuffled
-								?" With [npc.her] mouth being blocked, [npc.sheIs] only able to make a very muffled [npc.moan] as [npc.she] [npc.verb(prepare)] to receive [npc.her] creampie."
-								:" With a desperate [npc.moan], [npc.she] [npc.verb(cry)] out, [npc.speechNoExtraEffects(~Ooh!~ ~Yes!~ Cum in me"+(knowsName?", [npc2.name]":"")+"! ~Aah!~ Fill my balls with your cum!)]");
+								?" Рот [npc.her] забит, и [npc.sheIs] лишь издает приглушенный [npc.moan], пока [npc.she] [npc.verb(prepare)], чтобы получить [npc.her] креампи."
+								:" С отчаянным [npc.moan], [npc.she] [npc.verb(cry)] наружу, [npc.speechNoExtraEffects(~Ооо!~ ~Да!~ Кончай в меня,"+(knowsName?", [npc2.name]":"")+"! ~Ааах!~ Наполни мои яйца своей спермой!)]");
 				
 			} else if(isAreaFuckedByTarget(sexAction, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.URETHRA_VAGINA)) {
 				return (performerSpeechMuffled
-								?" With [npc.her] mouth being blocked, [npc.sheIs] only able to make a very muffled [npc.moan] as [npc.she] [npc.verb(prepare)] to receive [npc.her] creampie."
-								:" With a desperate [npc.moan], [npc.she] [npc.verb(cry)] out, [npc.speechNoExtraEffects(~Ooh!~ ~Yes!~ Cum in me"+(knowsName?", [npc2.name]":"")+"! ~Aah!~ Give me a nice big creampie!)]");
+								?" Рот [npc.her] забит, и [npc.sheIs] лишь издает приглушенный [npc.moan], пока [npc.she] [npc.verb(prepare)], чтобы получить [npc.her] креампи."
+								:" С отчаянным [npc.moan], [npc.she] [npc.verb(cry)] наружу, [npc.speechNoExtraEffects(~Ооо!~ ~Да!~ Кончай в меня,"+(knowsName?", [npc2.name]":"")+"! ~Аах!~ Дай мне сочный, большой креампи!)]");
 				
 			} else if(isAreaFuckedByTarget(sexAction, Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS)) {
 				return (performerSpeechMuffled
-							?" With [npc.her] mouth being blocked, [npc.sheIs] only able to make a very muffled [npc.moan] as [npc.she] [npc.verb(prepare)] for [npc2.name] to cum all over [npc.her] cock."
-							:" With a desperate [npc.moan], [npc.she] [npc.verb(cry)] out, [npc.speechNoExtraEffects(That's it! ~Mmm!~ Cum all over my cock"+(knowsName?", [npc2.name]":"")+"!)]");
+							?" Пока рот [npc.her] заблокирован, [npc.sheIs] может лишь издавать приглушенное [npc.moan], пока [npc.she] [npc.verb(prepare)], чтобы [npc2.name] кончил на весь [npc.her] член."
+							:" С отчаянным [npc.moan], [npc.she] [npc.verb(cry)] наружу, [npc.speechNoExtraEffects(Вот так! ~Ммм!~ Кончай на весь мой член,"+(knowsName?", [npc2.name]":"")+"!)]");
 		
 			}
 			
 		} else { // Dildo:
 			if(isAreaFuckedByTarget(sexAction, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.VAGINA)) {
 				return (performerSpeechMuffled
-								?" With [npc.her] mouth being blocked, [npc.sheIs] only able to make a very muffled [npc.moan] as [npc.she] [npc.verb(feel)] [npc.herself] being filled by [npc2.namePos] toy."
-								:" With a desperate [npc.moan], [npc.she] [npc.verb(cry)] out, [npc.speechNoExtraEffects(~Ooh!~ ~Yes!~ Fill my pussy with that toy"+(knowsName?", [npc2.name]":"")+"!)]");
+								?" Пока рот [npc.her] заблокирован, [npc.sheIs] может лишь издавать приглушенное [npc.moan], пока [npc.she] [npc.verb(feel)], и [npc.herself] наполняется [npc2.namePos] игрушкой."
+								:" С отчаянным [npc.moan], [npc.she] [npc.verb(cry)] наружу, [npc.speechNoExtraEffects(~Ооо!~ ~Да!~ Наполни мою киску этой игрушкой,"+(knowsName?", [npc2.name]":"")+"!)]");
 
 			} else if(isAreaFuckedByTarget(sexAction, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.ANUS)) {
 				return (performerSpeechMuffled
-								?" With [npc.her] mouth being blocked, [npc.sheIs] only able to make a very muffled [npc.moan] as [npc.she] [npc.verb(feel)] [npc.herself] being filled by [npc2.namePos] toy."
-								:" With a desperate [npc.moan], [npc.she] [npc.verb(cry)] out, [npc.speechNoExtraEffects(~Ooh!~ ~Yes!~ Fill my ass with that toy"+(knowsName?", [npc2.name]":"")+"!)]");
+								?" Пока рот [npc.her] заблокирован, [npc.sheIs] может лишь издавать приглушенное [npc.moan], пока [npc.she] [npc.verb(feel)], и [npc.herself] наполняется [npc2.namePos] игрушкой."
+								:" С отчаянным [npc.moan], [npc.she] [npc.verb(cry)] наружу, [npc.speechNoExtraEffects(~Ооо!~ ~Да!~ Наполни мою задницу этой игрушкой"+(knowsName?", [npc2.name]":"")+"!)]");
 				
 			} else if(isAreaFuckedByTarget(sexAction, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.SPINNERET)) {
 				return (performerSpeechMuffled
-						?" With [npc.her] mouth being blocked, [npc.sheIs] only able to make a very muffled [npc.moan] as [npc.she] [npc.verb(feel)] [npc.herself] being filled by [npc2.namePos] toy."
-						:" With a desperate [npc.moan], [npc.she] [npc.verb(cry)] out, [npc.speechNoExtraEffects(~Ooh!~ ~Yes!~ Fill my spinneret with that toy"+(knowsName?", [npc2.name]":"")+"!)]");
+						?" Пока рот [npc.her] заблокирован, [npc.sheIs] может лишь издавать приглушенное [npc.moan], пока [npc.she] [npc.verb(feel)], и [npc.herself] наполняется [npc2.namePos] игрушкой."
+						:" С отчаянным [npc.moan], [npc.she] [npc.verb(cry)], [npc.speechNoExtraEffects(~Ох!~ ~Да!~ Наполни мою паутину этой игрушкой"+(knowsName?", [npc2.name]":"")+"!)]");
 		
 			} else if(isAreaFuckedByTarget(sexAction, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.URETHRA_PENIS)) {
 				return (performerSpeechMuffled
-								?" With [npc.her] mouth being blocked, [npc.sheIs] only able to make a very muffled [npc.moan] as [npc.she] [npc.verb(feel)] [npc.herself] being filled by [npc2.namePos] toy."
-								:" With a desperate [npc.moan], [npc.she] [npc.verb(cry)] out, [npc.speechNoExtraEffects(~Ooh!~ ~Yes!~ Fill my cock with that toy"+(knowsName?", [npc2.name]":"")+"!)]");
+								?" Пока рот [npc.her] заблокирован, [npc.sheIs] может лишь издавать приглушенное [npc.moan], пока [npc.she] [npc.verb(feel)], и [npc.herself] наполняется [npc2.namePos] игрушкой."
+								:" С отчаянным [npc.moan], [npc.she] [npc.verb(cry)], [npc.speechNoExtraEffects(~Ох!~ ~Да!~ Наполни мой член этой игрушкой"+(knowsName?", [npc2.name]":"")+"!)]");
 				
 			} else if(isAreaFuckedByTarget(sexAction, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.URETHRA_VAGINA)) {
 				return (performerSpeechMuffled
-								?" With [npc.her] mouth being blocked, [npc.sheIs] only able to make a very muffled [npc.moan] as [npc.she] [npc.verb(feel)] [npc.herself] being filled by [npc2.namePos] toy."
-								:" With a desperate [npc.moan], [npc.she] [npc.verb(cry)] out, [npc.speechNoExtraEffects(~Ooh!~ ~Yes!~ Fill me with that toy"+(knowsName?", [npc2.name]":"")+"!)]");
+								?" Пока рот [npc.her] заблокирован, [npc.sheIs] может лишь издавать приглушенное [npc.moan], пока [npc.she] [npc.verb(feel)], и [npc.herself] наполняется [npc2.namePos] игрушкой."
+								:" С отчаянным [npc.moan], [npc.she] [npc.verb(cry)], [npc.speechNoExtraEffects(~Ох!~ ~Да!~ Наполни меня этой игрушкой"+(knowsName?", [npc2.name]":"")+"!)]");
 			}
 		}
 		
@@ -6592,17 +6472,17 @@ public class GenericOrgasms {
 		@Override
 		public String getActionTitle() {
 			if(isFrottingOrgasm()) {
-				return "Force frotting orgasm";
+				return "Принудительный оргазм от фроттинга";
 			}
-			return "Force creampie";
+			return "Принудительный кримпай";
 		}
 
 		@Override
 		public String getActionDescription() {
 			if(isFrottingOrgasm()) {
-				return "You can feel that [npc2.name] is fast approaching [npc2.her] orgasm. Use your advantageous position to force [npc2.herHim] to cum all over your [pc.cock+].";
+				return "Вы чувствуете, что [npc2.name] близок к [npc2.her] оргазму. Используйте свое выгодное положение, чтобы заставить [npc2.herHim] кончить прямо на вашу [pc.cock+].";
 			}
-			return "You can feel that [npc2.name] is fast approaching [npc2.her] orgasm. Use your advantageous position to force [npc2.herHim] to cum inside of you.";
+			return "Вы чувствуете, что [npc2.name] близок к [npc2.her] оргазму. Используйте свое выгодное положение, чтобы заставить [npc2.herHim] кончить внутрь вас.";
 		}
 
 		@Override
@@ -6658,63 +6538,62 @@ public class GenericOrgasms {
 			if(isRealPenisFuckingCharacter(Main.sex.getCharacterPerformingAction(), Main.sex.getCharacterTargetedForSexAction(this))) {
 				if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.VAGINA)) {
 					if(Main.sex.getCharacterPerformingAction().getFetishDesire(Fetish.FETISH_PREGNANCY).isPositive() && !Main.sex.getCharacterPerformingAction().isVisiblyPregnant()) {
-						return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] [npc.verb(use)] [npc.her] advantageous position to force [npc2.namePos] [npc2.cock+] deep into [npc.her] [npc.pussy+]."
+						return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] [npc.verb(use)] [npc.her] выгодное положение, чтобы заставить [npc2.namePos] [npc2.cock+] глубоко в [npc.her] [npc.pussy+]."
 								+ getForcedCreampieSpeech(this);
 					}
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] [npc.verb(use)] [npc.her] advantageous position to force [npc2.her] [npc2.cock+] deep into [npc.her] [npc.pussy+]."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] [npc.verb(use)] [npc.her] выгодное положение, чтобы заставить [npc2.her] [npc2.cock+] глубоко в [npc.her] [npc.pussy+]."
 							+ getForcedCreampieSpeech(this);
 
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.ANUS)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] [npc.verb(use)] [npc.her] advantageous position to force [npc2.her] [npc2.cock+] deep into [npc.her] [npc.asshole+]."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] [npc.verb(use)] [npc.her] выгодное положение, чтобы заставить [npc2.her] [npc2.cock+] глубоко в [npc.her] [npc.asshole+]."
 							+ getForcedCreampieSpeech(this);
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.URETHRA_PENIS)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] [npc.verb(use)] [npc.her] advantageous position to force [npc2.her] [npc2.cock+] deep into [npc.her] cock's urethra."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] [npc.verb(use)] [npc.her] выгодное положение, чтобы загнать [npc2.her] [npc2.cock+] глубоко в уретру [npc.her] члена."
 							+ getForcedCreampieSpeech(this);
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.URETHRA_VAGINA)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] [npc.verb(use)] [npc.her] advantageous position to force [npc2.her] [npc2.cock+] deep into [npc.her] pussy's urethra."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] [npc.verb(use)] [npc.her] выгодное положение, чтобы загнать [npc2.her] [npc2.cock+] глубоко в уретру [npc.her] киски."
 							+ getForcedCreampieSpeech(this);
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.SPINNERET)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] [npc.verb(use)] [npc.her] advantageous position to force [npc2.her] [npc2.cock+] deep into [npc.her] spinneret."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] [npc.verb(use)] [npc.her] выгодное положение, чтобы загнать [npc2.her] [npc2.cock+] глубоко в паутину [npc.her]."
 							+ getForcedCreampieSpeech(this);
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.MOUTH)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] [npc.verb(use)] [npc.her] advantageous position to force [npc2.her] [npc2.cock+] deep down [npc.her] throat."
-							+ " With a desperate, gurgling [npc.moan], [npc.she] [npc.verb(prepare)] to swallow all of the cum that's about to be pumped inside of [npc.herHim].";
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] [npc.verb(use)] [npc.her] выгодное положение, чтобы загнать [npc2.her] [npc2.cock+] глубоко в [npc.her] горло. С отчаянным, булькающим [npc.moan], [npc.she] [npc.verb(prepare)] проглотить всю сперму, которая вот-вот хлынет в [npc.herHim].";
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] [npc.verb(use)] [npc.her] advantageous position to forcefully press [npc.her] own [npc.cock+] against [npc2.hers]."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] [npc.verb(use)] [npc.her] выгодное положение, чтобы с силой прижать собственный [npc.her] [npc.cock+] к [npc2.hers]."
 							+ getForcedCreampieSpeech(this);
 				}
-				return "Error: Forced creampie not accounted for. Please let Innoxia know!";
+				return "Ошибка: принудительный кримпэй не учтен. Пожалуйста, сообщите Инноксии!";
 				
 			} else { // Dildo:
 				if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.VAGINA)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] [npc.verb(use)] [npc.her] advantageous position to force [npc2.her] [npc2.cock+] deep into [npc.her] [npc.pussy+]."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] [npc.verb(use)] [npc.her] выгодное положение, чтобы заставить [npc2.her] [npc2.cock+] глубоко в [npc.her] [npc.pussy+]."
 							+ getForcedCreampieSpeech(this);
 
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.ANUS)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] [npc.verb(use)] [npc.her] advantageous position to force [npc2.her] [npc2.cock+] deep into [npc.her] [npc.asshole+]."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] [npc.verb(use)] [npc.her] выгодное положение, чтобы заставить [npc2.her] [npc2.cock+] глубоко в [npc.her] [npc.asshole+]."
 							+ getForcedCreampieSpeech(this);
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.URETHRA_PENIS)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] [npc.verb(use)] [npc.her] advantageous position to force [npc2.her] [npc2.cock+] deep into [npc.her] cock's urethra."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] [npc.verb(use)] [npc.her] выгодное положение, чтобы загнать [npc2.her] [npc2.cock+] глубоко в уретру [npc.her] члена."
 							+ getForcedCreampieSpeech(this);
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.URETHRA_VAGINA)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] [npc.verb(use)] [npc.her] advantageous position to force [npc2.her] [npc2.cock+] deep into [npc.her] pussy's urethra."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] [npc.verb(use)] [npc.her] выгодное положение, чтобы загнать [npc2.her] [npc2.cock+] глубоко в уретру [npc.her] киски."
 							+ getForcedCreampieSpeech(this);
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.SPINNERET)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] [npc.verb(use)] [npc.her] advantageous position to force [npc2.her] [npc2.cock+] deep into [npc.her] spinneret."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] [npc.verb(use)] [npc.her] выгодное положение, чтобы загнать [npc2.her] [npc2.cock+] глубоко в паутину [npc.her]."
 							+ getForcedCreampieSpeech(this);
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.MOUTH)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] [npc.verb(use)] [npc.her] advantageous position to force [npc2.her] [npc2.cock+] deep down [npc.her] throat.";
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] [npc.verb(use)] [npc.her] в выгодную позицию, чтобы заставить [npc2.her] [npc2.cock+] глубоко в [npc.her] горло.";
 				}
-				return "Error: Forced creampie area not accounted for. Please let Innoxia know!";
+				return "Ошибка: область принудительного кримплея не учтена. Пожалуйста, сообщите Инноксии!";
 			}
 		}
 
@@ -6773,12 +6652,12 @@ public class GenericOrgasms {
 		
 		@Override
 		public String getActionTitle() {
-			return "Hug-lock";
+			return "Объятия-замок";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "You can feel that [npc2.name] is fast approaching [npc2.her] orgasm. Quickly wrap your [npc.arms] around [npc2.her] lower back, and, by tightly hugging [npc2.herHim] into you, force [npc2.herHim] to cum inside of you.";
+			return "Вы чувствуете, что [npc2.name] стремительно приближается к [npc2.her] оргазму. Быстро обхватите свои [npc.arms] вокруг поясницы [npc2.her] и, крепко прижимая [npc2.herHim] к себе, заставьте [npc2.herHim] кончить внутрь вас.";
 		}
 
 		@Override
@@ -6812,77 +6691,62 @@ public class GenericOrgasms {
 			if(isRealPenisFuckingCharacter(Main.sex.getCharacterPerformingAction(), Main.sex.getCharacterTargetedForSexAction(this))) {
 				if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.VAGINA)) {
 					if(Main.sex.getCharacterPerformingAction().getFetishDesire(Fetish.FETISH_PREGNANCY).isPositive() && !Main.sex.getCharacterPerformingAction().isVisiblyPregnant()) {
-						return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.arms] around [npc2.her] lower back,"
-								+ " and, tightly hugging [npc2.herHim], [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep into [npc.her] [npc.pussy+]."
+						return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.arms] вокруг поясницы [npc2.her] и, крепко прижимая [npc2.herHim], [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в [npc.her] [npc.pussy+]."
 								+ getForcedCreampieSpeech(this);
 					}
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.arms] around [npc2.her] lower back,"
-								+ " and, tightly hugging [npc2.herHim], [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep into [npc.her] [npc.pussy+]."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.arms] вокруг поясницы [npc2.her] и, крепко прижимая [npc2.herHim], [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в [npc.her] [npc.pussy+]."
 								+ getForcedCreampieSpeech(this);
 
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.ANUS)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.arms] around [npc2.her] lower back,"
-								+ " and, tightly hugging [npc2.herHim], [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep into [npc.her] [npc.asshole+]."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.arms] вокруг поясницы [npc2.her] и, крепко прижимая [npc2.herHim], [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в [npc.her] [npc.asshole+]."
 								+ getForcedCreampieSpeech(this);
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.URETHRA_PENIS)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.arms] around [npc2.her] lower back,"
-								+ " and, tightly hugging [npc2.herHim], [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep into [npc.her] cock's urethra."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.arms] вокруг [npc2.her] поясницы и, крепко обхватив [npc2.herHim], [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в уретру [npc.her] члена."
 							+ getForcedCreampieSpeech(this);
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.URETHRA_VAGINA)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.arms] around [npc2.her] lower back,"
-							+ " and, tightly hugging [npc2.herHim], [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep into [npc.her] pussy's urethra."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.arms] вокруг [npc2.her] поясницы и, крепко обхватив [npc2.herHim], [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в уретру [npc.her] киски."
 						+ getForcedCreampieSpeech(this);
 				
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.SPINNERET)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.arms] around [npc2.her] lower back,"
-							+ " and, tightly hugging [npc2.herHim], [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep into [npc.her] spinneret."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.arms] вокруг [npc2.her] поясницы и, крепко обхватив [npc2.herHim], [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в паутинный орган [npc.her]."
 						+ getForcedCreampieSpeech(this);
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.MOUTH)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.arms] around [npc2.her] lower back,"
-								+ " and, tightly hugging [npc2.herHim], [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep down [npc.her] throat."
-							+ " With a desperate, gurgling [npc.moan], [npc.she] [npc.verb(prepare)] to swallow all of the cum that's about to be pumped inside of [npc.herHim].";
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.arms] вокруг [npc2.her] поясницы и, крепко обхватив [npc2.herHim], [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в глотку [npc.her]. С отчаянным, булькающим [npc.moan], [npc.she] [npc.verb(prepare)] проглотить всю сперму, которая вот-вот хлынет внутрь [npc.herHim].";
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.arms] around [npc2.her] lower back,"
-							+ " and, tightly hugging [npc2.herHim], [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] against [npc.hers]."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.arms] вокруг [npc2.her] поясницы и, крепко обхватив [npc2.herHim], [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] против [npc.hers]."
 							+ getForcedCreampieSpeech(this);
 				}
-				return "Error: Hug-lock area not accounted for. Please let Innoxia know!";
+				return "Ошибка: область фиксации объятиями не учтена. Пожалуйста, сообщите Innoxia!";
 				
 			} else { // Dildo:
 				if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.VAGINA)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.arms] around [npc2.her] lower back,"
-							+ " and, tightly hugging [npc2.herHim], [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep into [npc.her] [npc.pussy+]."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.arms] вокруг поясницы [npc2.her] и, крепко прижимая [npc2.herHim], [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в [npc.her] [npc.pussy+]."
 							+ getForcedCreampieSpeech(this);
 
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.ANUS)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.arms] around [npc2.her] lower back,"
-							+ " and, tightly hugging [npc2.herHim], [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep into [npc.her] [npc.asshole+]."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.arms] вокруг поясницы [npc2.her] и, крепко прижимая [npc2.herHim], [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в [npc.her] [npc.asshole+]."
 							+ getForcedCreampieSpeech(this);
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.URETHRA_PENIS)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.arms] around [npc2.her] lower back,"
-							+ " and, tightly hugging [npc2.herHim], [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep into [npc.her] cock's urethra."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.arms] вокруг [npc2.her] поясницы и, крепко обхватив [npc2.herHim], [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в уретру [npc.her] члена."
 						+ getForcedCreampieSpeech(this);
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.URETHRA_VAGINA)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.arms] around [npc2.her] lower back,"
-							+ " and, tightly hugging [npc2.herHim], [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep into [npc.her] pussy's urethra."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.arms] вокруг [npc2.her] поясницы и, крепко обхватив [npc2.herHim], [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в уретру [npc.her] киски."
 						+ getForcedCreampieSpeech(this);
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.SPINNERET)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.arms] around [npc2.her] lower back,"
-							+ " and, tightly hugging [npc2.herHim], [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep into [npc.her] spinneret."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.arms] вокруг [npc2.her] поясницы и, крепко обхватив [npc2.herHim], [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в паутинный орган [npc.her]."
 						+ getForcedCreampieSpeech(this);
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.MOUTH)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.arms] around [npc2.her] lower back,"
-								+ " and, tightly hugging [npc2.herHim], [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep down [npc.her] throat.";
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.arms] вокруг [npc2.her] поясницы и, крепко обхватив [npc2.herHim], [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в [npc.her] горло.";
 				}
-				return "Error: Hug-lock area not accounted for. Please let Innoxia know!";
+				return "Ошибка: область фиксации объятиями не учтена. Пожалуйста, сообщите Innoxia!";
 			}
 		}
 
@@ -6941,12 +6805,12 @@ public class GenericOrgasms {
 		
 		@Override
 		public String getActionTitle() {
-			return "Leg-lock";
+			return "Замок ногами";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "You can feel that [npc2.name] is fast approaching [npc2.her] orgasm. Quickly wrap your [npc.legs] around [npc2.herHim] and force [npc2.herHim] to cum inside of you.";
+			return "Ты чувствуешь, что [npc2.her] оргазм [npc2.name] уже совсем близко. Быстро обхвати [npc2.herHim] своими [npc.legs] и заставь [npc2.herHim] кончить в тебя.";
 		}
 
 		@Override
@@ -6980,74 +6844,62 @@ public class GenericOrgasms {
 			if(isRealPenisFuckingCharacter(Main.sex.getCharacterPerformingAction(), Main.sex.getCharacterTargetedForSexAction(this))) {
 				if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.VAGINA)) {
 					if(Main.sex.getCharacterPerformingAction().getFetishDesire(Fetish.FETISH_PREGNANCY).isPositive() && !Main.sex.getCharacterPerformingAction().isVisiblyPregnant()) {
-						return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.legs] around [npc2.her] lower back,"
-								+ " forcing [npc2.her] [npc2.cock+] deep into [npc.her] [npc.pussy+]."
+						return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.legs] вокруг [npc2.her] поясницы, заставляя [npc2.her] [npc2.cock+] глубоко войти в [npc.her] [npc.pussy+]."
 								+ getForcedCreampieSpeech(this);
 					}
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.legs] around [npc2.her] lower back,"
-								+ " forcing [npc2.her] [npc2.cock+] deep into [npc.her] [npc.pussy+]."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.legs] вокруг [npc2.her] поясницы, заставляя [npc2.her] [npc2.cock+] глубоко войти в [npc.her] [npc.pussy+]."
 								+ getForcedCreampieSpeech(this);
 
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.ANUS)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.legs] around [npc2.her] lower back,"
-								+ " forcing [npc2.her] [npc2.cock+] deep into [npc.her] [npc.asshole+]."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.legs] вокруг [npc2.her] поясницы, заставляя [npc2.her] [npc2.cock+] глубоко в [npc.her] [npc.asshole+]."
 								+ getForcedCreampieSpeech(this);
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.URETHRA_PENIS)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.legs] around [npc2.her] lower back,"
-								+ " forcing [npc2.her] [npc2.cock+] deep into [npc.her] cock's urethra."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.legs] вокруг [npc2.her] поясницы, заставляя [npc2.her] [npc2.cock+] глубоко в уретру [npc.her] члена."
 								+ getForcedCreampieSpeech(this);
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.URETHRA_VAGINA)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.legs] around [npc2.her] lower back,"
-								+ " forcing [npc2.her] [npc2.cock+] deep into [npc.her] pussy's urethra."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.legs] вокруг [npc2.her] поясницы, заставляя [npc2.her] [npc2.cock+] глубоко в уретру [npc.her] киски."
 								+ getForcedCreampieSpeech(this);
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.SPINNERET)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.legs] around [npc2.her] lower back,"
-							+ " forcing [npc2.her] [npc2.cock+] deep into [npc.her] spinneret."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.legs] вокруг [npc2.her] поясницы, заставляя [npc2.her] [npc2.cock+] глубоко в паутинный аппарат [npc.her]."
 							+ getForcedCreampieSpeech(this);
 				
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.MOUTH)) { // This shouldn't really ever be encountered:
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.legs] around [npc2.her] lower back, before letting out a desperate, muffled [npc.moan].";
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.legs] вокруг [npc2.her] поясницы, прежде чем издать отчаянный, приглушенный [npc.moan].";
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.legs] around [npc2.her] lower back,"
-							+ " forcing [npc2.her] [npc2.cock+] against [npc.hers]."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.legs] вокруг [npc2.her] поясницы, вдавливая [npc2.her] [npc2.cock+] в [npc.hers]."
 							+ getForcedCreampieSpeech(this);
 				}
-				return "Error: Leg-lock area not accounted for. Please let Innoxia know!";
+				return "Ошибка: область захвата ног не учтена. Пожалуйста, сообщите Инноксии!";
 				
 			} else { // Dildo:
 				if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.VAGINA)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to orgasm, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.legs] around [npc2.her] lower back,"
-								+ " forcing [npc2.her] [npc2.cock+] deep into [npc.her] [npc.pussy+]."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.legs] вокруг [npc2.her] поясницы, заставляя [npc2.her] [npc2.cock+] глубоко в [npc.her] [npc.pussy+]."
 							+ getForcedCreampieSpeech(this);
 
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.ANUS)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to orgasm, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.legs] around [npc2.her] lower back,"
-								+ " forcing [npc2.her] [npc2.cock+] deep into [npc.her] [npc.asshole+]."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.legs] вокруг [npc2.her] поясницы, заставляя [npc2.her] [npc2.cock+] глубоко в [npc.her] [npc.asshole+]."
 							+ getForcedCreampieSpeech(this);
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.URETHRA_PENIS)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to orgasm, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.legs] around [npc2.her] lower back,"
-								+ " forcing [npc2.her] [npc2.cock+] deep into [npc.her] cock's urethra."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.legs] вокруг [npc2.her] поясницы, заставляя [npc2.her] [npc2.cock+] глубоко в уретру [npc.her] члена."
 								+ getForcedCreampieSpeech(this);
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.URETHRA_VAGINA)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to orgasm, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.legs] around [npc2.her] lower back,"
-								+ " forcing [npc2.her] [npc2.cock+] deep into [npc.her] pussy's urethra."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.legs] вокруг [npc2.her] поясницы, заставляя [npc2.her] [npc2.cock+] глубоко в уретру [npc.her] киски."
 								+ getForcedCreampieSpeech(this);
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.SPINNERET)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to orgasm, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.legs] around [npc2.her] lower back,"
-							+ " forcing [npc2.her] [npc2.cock+] deep into [npc.her] spinneret."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.legs] вокруг [npc2.her] поясницы, заставляя [npc2.her] [npc2.cock+] глубоко в [npc.her] паучье веретено."
 							+ getForcedCreampieSpeech(this);
 				
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.MOUTH)) { // This shouldn't really ever be encountered:
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to orgasm, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.legs] around [npc2.her] lower back, before letting out a desperate, muffled [npc.moan].";
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.legs] вокруг [npc2.her] поясницы, прежде чем издать отчаянный, приглушенный [npc.moan].";
 				}
-				return "Error: Leg-lock area not accounted for. Please let Innoxia know!";
+				return "Ошибка: область захвата ног не учтена. Пожалуйста, сообщите Инноксии!";
 			}
 		}
 
@@ -7098,13 +6950,12 @@ public class GenericOrgasms {
 		
 		@Override
 		public String getActionTitle() {
-			return "Tail-lock";
+			return "Захват хвостом";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "You can feel that [npc2.name] is fast approaching [npc2.her] orgasm."
-					+ " Quickly wrap your prehensile [npc.tail] around [npc2.her] lower back, and, by tightly pulling [npc2.herHim] into you, force [npc2.herHim] to cum inside of you.";
+			return "Ты чувствуешь, что [npc2.name] стремительно приближается к [npc2.her] оргазму. Быстро обхвати своей цепкой [npc.tail] [npc2.her] поясницу и, с силой притягивая [npc2.herHim] к себе, заставляешь [npc2.herHim] кончить прямо в тебя.";
 		}
 
 		@Override
@@ -7139,77 +6990,62 @@ public class GenericOrgasms {
 			if(isRealPenisFuckingCharacter(Main.sex.getCharacterPerformingAction(), Main.sex.getCharacterTargetedForSexAction(this))) {
 				if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.VAGINA)) {
 					if(Main.sex.getCharacterPerformingAction().getFetishDesire(Fetish.FETISH_PREGNANCY).isPositive() && !Main.sex.getCharacterPerformingAction().isVisiblyPregnant()) {
-						return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.tail] around [npc2.her] lower back,"
-								+ " and, pulling [npc2.herHim] forwards, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep into [npc.her] [npc.pussy+]."
+						return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.tail] вокруг [npc2.her] поясницы и, потянув [npc2.herHim] на себя, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в [npc.her] [npc.pussy+]."
 								+ getForcedCreampieSpeech(this);
 					}
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.tail] around [npc2.her] lower back,"
-								+ " and, pulling [npc2.herHim] forwards, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep into [npc.her] [npc.pussy+]."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.tail] вокруг [npc2.her] поясницы и, потянув [npc2.herHim] на себя, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в [npc.her] [npc.pussy+]."
 							+ getForcedCreampieSpeech(this);
 
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.ANUS)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.tail] around [npc2.her] lower back,"
-								+ " and, pulling [npc2.herHim] forwards, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep into [npc.her] [npc.asshole+]."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.tail] вокруг [npc2.her] поясницы и, потянув [npc2.herHim] на себя, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в [npc.her] [npc.asshole+]."
 							+ getForcedCreampieSpeech(this);
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.URETHRA_PENIS)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.tail] around [npc2.her] lower back,"
-								+ " and, pulling [npc2.herHim] forwards, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep into [npc.her] cock's urethra."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.tail] вокруг [npc2.her] поясницы и, потянув [npc2.herHim] на себя, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в уретру члена [npc.her]."
 							+ getForcedCreampieSpeech(this);
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.URETHRA_VAGINA)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.tail] around [npc2.her] lower back,"
-								+ " and, pulling [npc2.herHim] forwards, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep into [npc.her] pussy's urethra."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.tail] вокруг [npc2.her] поясницы и, потянув [npc2.herHim] вперед, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в уретру [npc.her] киски."
 							+ getForcedCreampieSpeech(this);
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.SPINNERET)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.tail] around [npc2.her] lower back,"
-							+ " and, pulling [npc2.herHim] forwards, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep into [npc.her] spinneret."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.tail] вокруг [npc2.her] поясницы и, потянув [npc2.herHim] вперед, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в паутинный аппарат [npc.her]."
 						+ getForcedCreampieSpeech(this);
 				
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.MOUTH)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.tail] around [npc2.her] lower back,"
-								+ " and, pulling [npc2.herHim] forwards, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep down [npc.her] throat."
-							+ " With a desperate, gurgling [npc.moan], [npc.she] [npc.verb(prepare)] to swallow all of the cum that's about to be pumped inside of [npc.herHim].";
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.tail] вокруг [npc2.her] поясницы, и, потянув [npc2.herHim] вперед, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в [npc.her] горло. С отчаянным, булькающим [npc.moan], [npc.she] [npc.verb(prepare)] проглотить всю сперму, которая вот-вот хлынет внутрь [npc.herHim].";
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.tail] around [npc2.her] lower back,"
-							+ " and, pulling [npc2.herHim] forwards, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] against [npc.hers]."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.tail] вокруг [npc2.her] поясницы и, потянув [npc2.herHim] вперед, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] на [npc.hers]."
 							+ getForcedCreampieSpeech(this);
 				}
-				return "Error: Tail-lock area not accounted for. Please let Innoxia know!";
+				return "Ошибка: область фиксации хвоста не учтена. Пожалуйста, сообщите Иннокси!";
 				
 			} else { // Dildo:
 				if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.VAGINA)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.tail] around [npc2.her] lower back,"
-							+ " and, pulling [npc2.herHim] forwards, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep into [npc.her] [npc.pussy+]."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.tail] вокруг [npc2.her] поясницы и, потянув [npc2.herHim] на себя, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в [npc.her] [npc.pussy+]."
 							+ getForcedCreampieSpeech(this);
 
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.ANUS)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.tail] around [npc2.her] lower back,"
-							+ " and, pulling [npc2.herHim] forwards, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep into [npc.her] [npc.asshole+]."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.tail] вокруг [npc2.her] поясницы и, потянув [npc2.herHim] на себя, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в [npc.her] [npc.asshole+]."
 							+ getForcedCreampieSpeech(this);
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.URETHRA_PENIS)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.tail] around [npc2.her] lower back,"
-							+ " and, pulling [npc2.herHim] forwards, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep into [npc.her] cock's urethra."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.tail] вокруг [npc2.her] поясницы и, потянув [npc2.herHim] на себя, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в уретру члена [npc.her]."
 						+ getForcedCreampieSpeech(this);
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.URETHRA_VAGINA)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.tail] around [npc2.her] lower back,"
-							+ " and, pulling [npc2.herHim] forwards, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep into [npc.her] pussy's urethra."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.tail] вокруг [npc2.her] поясницы и, потянув [npc2.herHim] вперед, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в уретру [npc.her] киски."
 						+ getForcedCreampieSpeech(this);
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.SPINNERET)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.tail] around [npc2.her] lower back,"
-							+ " and, pulling [npc2.herHim] forwards, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep into [npc.her] spinneret."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.tail] вокруг [npc2.her] поясницы и, потянув [npc2.herHim] вперед, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в паутинный аппарат [npc.her]."
 						+ getForcedCreampieSpeech(this);
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.MOUTH)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.tail] around [npc2.her] lower back,"
-								+ " and, pulling [npc2.herHim] forwards, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep down [npc.her] throat.";
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.tail] вокруг [npc2.her] поясницы, и, потянув [npc2.herHim] вперед, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в [npc.her] горло.";
 				}
-				return "Error: Tail-lock area not accounted for. Please let Innoxia know!";
+				return "Ошибка: область фиксации хвоста не учтена. Пожалуйста, сообщите Иннокси!";
 			}
 		}
 
@@ -7268,13 +7104,12 @@ public class GenericOrgasms {
 		
 		@Override
 		public String getActionTitle() {
-			return "Wing-lock";
+			return "Захват крыльями";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "You can feel that [npc2.name] is fast approaching [npc2.her] orgasm."
-					+ " Quickly wrap your [npc.wingSize] [npc.wings] around [npc2.her] body, and, by tightly pulling [npc2.herHim] into you, force [npc2.herHim] to cum inside of you.";
+			return "Ты чувствуешь, что [npc2.name] стремительно приближается к [npc2.her] оргазму. Быстро обхвати [npc2.her] своим [npc.wingSize] [npc.wings] и, крепко притянув [npc2.herHim] к себе, заставь [npc2.herHim] кончить в тебя.";
 		}
 
 		@Override
@@ -7308,77 +7143,62 @@ public class GenericOrgasms {
 			if(isRealPenisFuckingCharacter(Main.sex.getCharacterPerformingAction(), Main.sex.getCharacterTargetedForSexAction(this))) {
 				if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.VAGINA)) {
 					if(Main.sex.getCharacterPerformingAction().getFetishDesire(Fetish.FETISH_PREGNANCY).isPositive() && !Main.sex.getCharacterPerformingAction().isVisiblyPregnant()) {
-						return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.wingSize] [npc.wings] around [npc2.her] body,"
-								+ " and, pulling [npc2.herHim] forwards, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep into [npc.her] [npc.pussy+]."
+						return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.wingSize] [npc.wings] вокруг [npc2.her] тела, и, потянув [npc2.herHim] на себя, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в [npc.her] [npc.pussy+]."
 								+ getForcedCreampieSpeech(this);
 					}
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.wingSize] [npc.wings] around [npc2.her] body,"
-								+ " and, pulling [npc2.herHim] forwards, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep into [npc.her] [npc.pussy+]."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.wingSize] [npc.wings] вокруг [npc2.her] тела, и, потянув [npc2.herHim] на себя, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в [npc.her] [npc.pussy+]."
 							+ getForcedCreampieSpeech(this);
 
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.ANUS)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.wingSize] [npc.wings] around [npc2.her] body,"
-								+ " and, pulling [npc2.herHim] forwards, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep into [npc.her] [npc.asshole+]."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.wingSize] [npc.wings] вокруг [npc2.her] тела, и, потянув [npc2.herHim] на себя, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в [npc.her] [npc.asshole+]."
 							+ getForcedCreampieSpeech(this);
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.URETHRA_PENIS)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.wingSize] [npc.wings] around [npc2.her] body,"
-								+ " and, pulling [npc2.herHim] forwards, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep into [npc.her] cock's urethra."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.wingSize] [npc.wings] вокруг [npc2.her] тела, и, потянув [npc2.herHim] на себя, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в уретру [npc.her] члена."
 							+ getForcedCreampieSpeech(this);
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.URETHRA_VAGINA)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.wingSize] [npc.wings] around [npc2.her] body,"
-								+ " and, pulling [npc2.herHim] forwards, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep into [npc.her] pussy's urethra."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.wingSize] [npc.wings] вокруг [npc2.her] тела, и, потянув [npc2.herHim] на себя, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в уретру [npc.her] киски."
 							+ getForcedCreampieSpeech(this);
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.SPINNERET)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.wingSize] [npc.wings] around [npc2.her] body,"
-							+ " and, pulling [npc2.herHim] forwards, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep into [npc.her] spinneret."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.wingSize] [npc.wings] вокруг [npc2.her] тела, и, потянув [npc2.herHim] на себя, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в паутинный аппарат [npc.her]."
 						+ getForcedCreampieSpeech(this);
 				
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.MOUTH)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.wingSize] [npc.wings] around [npc2.her] body,"
-								+ " and, pulling [npc2.herHim] forwards, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep down [npc.her] throat."
-							+ " With a desperate, gurgling [npc.moan], [npc.she] [npc.verb(prepare)] to swallow all of the cum that's about to be pumped inside of [npc.herHim].";
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.wingSize] [npc.wings] вокруг [npc2.her] тела, и, потянув [npc2.herHim] на себя, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в глотку [npc.her]. С отчаянным, булькающим [npc.moan], [npc.she] [npc.verb(prepare)] проглотить всю сперму, которая вот-вот хлынет внутрь [npc.herHim].";
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.wingSize] [npc.wings] around [npc2.her] body,"
-							+ " and, pulling [npc2.herHim] forwards, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] against [npc.hers]."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.wingSize] [npc.wings] вокруг [npc2.her] тела, и, потянув [npc2.herHim] на себя, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] против [npc.hers]."
 							+ getForcedCreampieSpeech(this);
 				}
-				return "Error: Tail-lock area not accounted for. Please let Innoxia know!";
+				return "Ошибка: область фиксации хвоста не учтена. Пожалуйста, сообщите Иннокси!";
 				
 			} else { // Dildo:
 				if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.VAGINA)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.wingSize] [npc.wings] around [npc2.her] body,"
-							+ " and, pulling [npc2.herHim] forwards, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep into [npc.her] [npc.pussy+]."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.wingSize] [npc.wings] вокруг [npc2.her] тела, и, потянув [npc2.herHim] на себя, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в [npc.her] [npc.pussy+]."
 							+ getForcedCreampieSpeech(this);
 
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.ANUS)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.wingSize] [npc.wings] around [npc2.her] body,"
-							+ " and, pulling [npc2.herHim] forwards, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep into [npc.her] [npc.asshole+]."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.wingSize] [npc.wings] вокруг [npc2.her] тела, и, потянув [npc2.herHim] на себя, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в [npc.her] [npc.asshole+]."
 							+ getForcedCreampieSpeech(this);
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.URETHRA_PENIS)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.wingSize] [npc.wings] around [npc2.her] body,"
-							+ " and, pulling [npc2.herHim] forwards, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep into [npc.her] cock's urethra."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.wingSize] [npc.wings] вокруг [npc2.her] тела, и, потянув [npc2.herHim] на себя, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в уретру [npc.her] члена."
 						+ getForcedCreampieSpeech(this);
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.URETHRA_VAGINA)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.wingSize] [npc.wings] around [npc2.her] body,"
-							+ " and, pulling [npc2.herHim] forwards, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep into [npc.her] pussy's urethra."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.wingSize] [npc.wings] вокруг [npc2.her] тела, и, потянув [npc2.herHim] на себя, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в уретру [npc.her] киски."
 						+ getForcedCreampieSpeech(this);
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.SPINNERET)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.wingSize] [npc.wings] around [npc2.her] body,"
-							+ " and, pulling [npc2.herHim] forwards, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep into [npc.her] spinneret."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.wingSize] [npc.wings] вокруг [npc2.her] тела, и, потянув [npc2.herHim] на себя, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в паутинный аппарат [npc.her]."
 						+ getForcedCreampieSpeech(this);
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.MOUTH)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.wingSize] [npc.wings] around [npc2.her] body,"
-								+ " and, pulling [npc2.herHim] forwards, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep down [npc.her] throat.";
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.wingSize] [npc.wings] вокруг [npc2.her] тела, и, потянув [npc2.herHim] на себя, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в [npc.her] горло.";
 				}
-				return "Error: Tail-lock area not accounted for. Please let Innoxia know!";
+				return "Ошибка: область фиксации хвоста не учтена. Пожалуйста, сообщите Иннокси!";
 			}
 		}
 
@@ -7437,13 +7257,12 @@ public class GenericOrgasms {
 		
 		@Override
 		public String getActionTitle() {
-			return "Tentacle-lock";
+			return "Захват щупальцами";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "You can feel that [npc2.name] is fast approaching [npc2.her] orgasm."
-					+ " Quickly wrap your [npc.tentacles] around [npc2.her] lower back, and, by tightly pulling [npc2.herHim] into you, force [npc2.herHim] to cum inside of you.";
+			return "Ты чувствуешь, что [npc2.name] стремительно приближается к [npc2.her] оргазму. Быстро обхвати своими [npc.tentacles] нижнюю часть спины [npc2.her] и, с силой притянув [npc2.herHim] к себе, заставь [npc2.herHim] кончить в тебя.";
 		}
 
 		@Override
@@ -7477,77 +7296,62 @@ public class GenericOrgasms {
 			if(isRealPenisFuckingCharacter(Main.sex.getCharacterPerformingAction(), Main.sex.getCharacterTargetedForSexAction(this))) {
 				if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.VAGINA)) {
 					if(Main.sex.getCharacterPerformingAction().getFetishDesire(Fetish.FETISH_PREGNANCY).isPositive() && !Main.sex.getCharacterPerformingAction().isVisiblyPregnant()) {
-						return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.tentacles] around [npc2.her] lower back,"
-								+ " and, pulling [npc2.herHim] forwards, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep into [npc.her] [npc.pussy+]."
+						return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.tentacles] вокруг [npc2.her] поясницы, и, потянув [npc2.herHim] на себя, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в [npc.her] [npc.pussy+]."
 								+ getForcedCreampieSpeech(this);
 					}
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.tentacles] around [npc2.her] lower back,"
-								+ " and, pulling [npc2.herHim] forwards, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep into [npc.her] [npc.pussy+]."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.tentacles] вокруг [npc2.her] поясницы, и, потянув [npc2.herHim] на себя, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в [npc.her] [npc.pussy+]."
 							+ getForcedCreampieSpeech(this);
 
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.ANUS)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.tentacles] around [npc2.her] lower back,"
-								+ " and, pulling [npc2.herHim] forwards, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep into [npc.her] [npc.asshole+]."
+					return "Когда [npc.name] [npc.verb(realise)], понимая, что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.tentacles] вокруг [npc2.her] поясницы и, потянув [npc2.herHim] вперед, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в [npc.her] [npc.asshole+]."
 							+ getForcedCreampieSpeech(this);
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.URETHRA_PENIS)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.tentacles] around [npc2.her] lower back,"
-								+ " and, pulling [npc2.herHim] forwards, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep into [npc.her] cock's urethra."
+					return "Когда [npc.name] [npc.verb(realise)], понимая, что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.tentacles] вокруг [npc2.her] поясницы и, потянув [npc2.herHim] вперед, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в уретру [npc.her] члена."
 							+ getForcedCreampieSpeech(this);
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.URETHRA_VAGINA)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.tentacles] around [npc2.her] lower back,"
-								+ " and, pulling [npc2.herHim] forwards, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep into [npc.her] pussy's urethra."
+					return "Когда [npc.name] [npc.verb(realise)], понимая, что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.tentacles] вокруг [npc2.her] поясницы и, потянув [npc2.herHim] вперед, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в уретру [npc.her] киски."
 							+ getForcedCreampieSpeech(this);
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.SPINNERET)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.tentacles] around [npc2.her] lower back,"
-							+ " and, pulling [npc2.herHim] forwards, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep into [npc.her] spinneret."
+					return "Когда [npc.name] [npc.verb(realise)], понимая, что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.tentacles] вокруг [npc2.her] поясницы и, потянув [npc2.herHim] вперед, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в паутинный аппарат [npc.her]."
 						+ getForcedCreampieSpeech(this);
 				
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.MOUTH)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.tentacles] around [npc2.her] lower back,"
-								+ " and, pulling [npc2.herHim] forwards, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep down [npc.her] throat."
-							+ " With a desperate, gurgling [npc.moan], [npc.she] [npc.verb(prepare)] to swallow all of the cum that's about to be pumped inside of [npc.herHim].";
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.tentacles] вокруг [npc2.her] поясницы, и, потянув [npc2.herHim] на себя, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в [npc.her] горло. С отчаянным, булькающим [npc.moan], [npc.she] [npc.verb(prepare)] проглотить всю сперму, которая вот-вот хлынет в [npc.herHim].";
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.tentacles] around [npc2.her] lower back,"
-							+ " and, pulling [npc2.herHim] forwards, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] against [npc.hers]."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.tentacles] вокруг [npc2.her] поясницы, и, потянув [npc2.herHim] на себя, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] против [npc.hers]."
 							+ getForcedCreampieSpeech(this);
 				}
-				return "Error: Tail-lock area not accounted for. Please let Innoxia know!";
+				return "Ошибка: область фиксации хвоста не учтена. Пожалуйста, сообщите Иннокси!";
 				
 			} else { // Dildo:
 				if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.VAGINA)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.tentacles] around [npc2.her] lower back,"
-							+ " and, pulling [npc2.herHim] forwards, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep into [npc.her] [npc.pussy+]."
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.tentacles] вокруг [npc2.her] поясницы, и, потянув [npc2.herHim] на себя, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в [npc.her] [npc.pussy+]."
 							+ getForcedCreampieSpeech(this);
 
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.ANUS)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.tentacles] around [npc2.her] lower back,"
-							+ " and, pulling [npc2.herHim] forwards, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep into [npc.her] [npc.asshole+]."
+					return "Когда [npc.name] [npc.verb(realise)], понимая, что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.tentacles] вокруг [npc2.her] поясницы и, потянув [npc2.herHim] вперед, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в [npc.her] [npc.asshole+]."
 							+ getForcedCreampieSpeech(this);
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.URETHRA_PENIS)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.tentacles] around [npc2.her] lower back,"
-							+ " and, pulling [npc2.herHim] forwards, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep into [npc.her] cock's urethra."
+					return "Когда [npc.name] [npc.verb(realise)], понимая, что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.tentacles] вокруг [npc2.her] поясницы и, потянув [npc2.herHim] вперед, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в уретру [npc.her] члена."
 						+ getForcedCreampieSpeech(this);
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.URETHRA_VAGINA)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.tentacles] around [npc2.her] lower back,"
-							+ " and, pulling [npc2.herHim] forwards, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep into [npc.her] pussy's urethra."
+					return "Когда [npc.name] [npc.verb(realise)], понимая, что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.tentacles] вокруг [npc2.her] поясницы и, потянув [npc2.herHim] вперед, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в уретру [npc.her] киски."
 						+ getForcedCreampieSpeech(this);
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.SPINNERET)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.tentacles] around [npc2.her] lower back,"
-							+ " and, pulling [npc2.herHim] forwards, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep into [npc.her] spinneret."
+					return "Когда [npc.name] [npc.verb(realise)], понимая, что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.tentacles] вокруг [npc2.her] поясницы и, потянув [npc2.herHim] вперед, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в паутинный аппарат [npc.her]."
 						+ getForcedCreampieSpeech(this);
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.MOUTH)) {
-					return "As [npc.name] [npc.verb(realise)] that [npc2.nameIsFull] about to cum, [npc.she] quickly [npc.verb(wrap)] [npc.her] [npc.tentacles] around [npc2.her] lower back,"
-								+ " and, pulling [npc2.herHim] forwards, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] deep down [npc.her] throat.";
+					return "Когда [npc.name] [npc.verb(realise)], что [npc2.nameIsFull] вот-вот кончит, [npc.she] быстро [npc.verb(wrap)] [npc.her] [npc.tentacles] вокруг [npc2.her] поясницы, и, потянув [npc2.herHim] на себя, [npc.she] [npc.verb(force)] [npc2.her] [npc2.cock+] глубоко в [npc.her] горло.";
 				}
-				return "Error: Tail-lock area not accounted for. Please let Innoxia know!";
+				return "Ошибка: область фиксации хвоста не учтена. Пожалуйста, сообщите Иннокси!";
 			}
 		}
 
@@ -7615,15 +7419,15 @@ public class GenericOrgasms {
 		
 		@Override
 		public String getActionTitle() {
-			return "Request pullout";
+			return "Попросить вытащить";
 		}
 
 		@Override
 		public String getActionDescription() {
 			if(!isRealPenisFuckingCharacter(Main.sex.getCharacterPerformingAction(), Main.sex.getCharacterTargetedForSexAction(this))) {
-				return "You can feel that [npc2.name] is fast approaching [npc2.her] orgasm. Ask [npc2.herHim] to pull [npc2.her] dildo out of you as [npc2.she] [npc2.verb(orgasm)].";
+				return "Ты чувствуешь, что [npc2.name] стремительно приближается к [npc2.her] оргазму. Попроси [npc2.herHim] вытащить из тебя [npc2.her], пока [npc2.she] [npc2.verb(orgasm)].";
 			}
-			return "You can feel that [npc2.name] is fast approaching [npc2.her] orgasm. Ask [npc2.herHim] to pull out before [npc2.she] cums.";
+			return "Ты чувствуешь, что [npc2.name] стремительно приближается к [npc2.her] оргазму. Попроси [npc2.herHim] вытащить, прежде чем [npc2.she] кончит.";
 		}
 
 		@Override
@@ -7693,49 +7497,43 @@ public class GenericOrgasms {
 			if(Main.sex.getSexPace(Main.sex.getCharacterPerformingAction())==SexPace.SUB_RESISTING) {
 				if(Main.sex.getCharacterPerformingAction().isMute()) {
 					if(Main.sex.getOrificesBeingPenetratedBy(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, Main.sex.getCharacterPerformingAction()).isEmpty()) { // Non-orifice penetration
-						return "Although not able to speak, [npc.namePos] distressed struggles make it very clear that [npc.she] [npc.verb(want)] [npc2.name] to pull [npc2.her] [npc2.cock+] away from [npc.herhim].";
+						return "Хотя [npc.namePos] не может говорить, ее полные отчаяния попытки вырваться ясно дают понять, что [npc.she] [npc.verb(want)] [npc2.name], пытаясь оттянуть [npc2.her] [npc2.cock+] от [npc.herhim].";
 					} else { // Orifice penetration
 						SexAreaInterface areaPenetrated = Main.sex.getOrificesBeingPenetratedBy(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, Main.sex.getCharacterPerformingAction()).get(0);
 						if(areaPenetrated.isOrifice() && ((SexAreaOrifice)areaPenetrated).isInternalOrifice()) {
-							return "Although not able to speak, [npc.namePos] distressed struggles make it very clear that [npc.she] [npc.verb(want)] [npc2.name] to pull out of [npc.herhim].";
+							return "Хотя [npc.namePos] не может говорить, ее полные отчаяния попытки вырваться ясно дают понять, что [npc.she] [npc.verb(want)] [npc2.name], пытаясь вытащить [npc.herhim].";
 						} else {
-							return "Although not able to speak, [npc.namePos] distressed struggles make it very clear that [npc.she] [npc.verb(want)] [npc2.name] to pull [npc2.her] [npc2.cock+] away from [npc.herhim].";
+							return "Хотя [npc.namePos] не может говорить, ее полные отчаяния попытки вырваться ясно дают понять, что [npc.she] [npc.verb(want)] [npc2.name], пытаясь оттянуть [npc2.her] [npc2.cock+] от [npc.herhim].";
 						}
 					}
 					
 				} else {
 					if(!isRealPenisFuckingCharacter(Main.sex.getCharacterPerformingAction(), Main.sex.getCharacterTargetedForSexAction(this))) {
 						if(Main.sex.getOrificesBeingPenetratedBy(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, Main.sex.getCharacterPerformingAction()).isEmpty()) { // Non-orifice penetration
-							return "Desperately struggling as [npc.she] [npc.verb(try)] to push [npc2.name] away from [npc.herHim], [npc.name] [npc.verb(cry)] out,"
-									+ " [npc.speech(No! Please! Get your [npc2.cock] away from me!)]";
+							return "Отчаянно сопротивляясь, пока [npc.she] [npc.verb(try)] [npc2.name], пытаясь оттолкнуть [npc.herHim], [npc.name] [npc.verb(cry)], [npc.speech(Нет! Пожалуйста! Убери свой [npc2.cock] от меня!)]";
 						} else { // Orifice penetration
 							SexAreaInterface areaPenetrated = Main.sex.getOrificesBeingPenetratedBy(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, Main.sex.getCharacterPerformingAction()).get(0);
 							if(areaPenetrated.isOrifice() && ((SexAreaOrifice)areaPenetrated).isInternalOrifice()) {
-								return "Desperately struggling as [npc.she] [npc.verb(try)] to push [npc2.name] away from [npc.herHim], [npc.name] [npc.verb(cry)] out,"
-										+ " [npc.speech(No! Please! Pull out! Get your [npc2.cock] out of me!)]";
+								return "Отчаянно сопротивляясь, пока [npc.she] [npc.verb(try)] [npc2.name], пытаясь оттолкнуть [npc.herHim], [npc.name] [npc.verb(cry)], [npc.speech(Нет! Пожалуйста! Вытащи его! Убери свой [npc2.cock] из меня!)]";
 								
 							} else {
-								return "Desperately struggling as [npc.she] [npc.verb(try)] to push [npc2.name] away from [npc.herHim], [npc.name] [npc.verb(cry)] out,"
-										+ " [npc.speech(No! Please! Get your [npc2.cock] away from my "+areaPenetrated.getName(Main.sex.getCharacterPerformingAction(), true)+"!)]";
+								return "Отчаянно сопротивляясь, пока [npc.she] [npc.verb(try)] [npc2.name], пытаясь оттолкнуть [npc.herHim], [npc.name] [npc.verb(cry)], [npc.speech(Нет! Пожалуйста! Убери свой [npc2.cock] от моей "+areaPenetrated.getName(Main.sex.getCharacterPerformingAction(), true)+"!)]";
 							}
 						}
 					
 					} else {
 						if(Main.sex.getOrificesBeingPenetratedBy(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, Main.sex.getCharacterPerformingAction()).isEmpty()) { // Non-orifice penetration
-							return "Desperately struggling as [npc.she] [npc.verb(try)] to push [npc2.name] away from [npc.herHim], [npc.name] cries out, [npc.speech(No! Please! Get your cock away from me!)]";
+							return "Отчаянно борясь, пока [npc.she] [npc.verb(try)] отталкивать [npc2.name] от [npc.herHim], [npc.name] вскрикивает: [npc.speech(Нет! Пожалуйста! Убери свой член от меня!)]";
 						} else { // Orifice penetration
 							SexAreaInterface areaPenetrated = Main.sex.getOrificesBeingPenetratedBy(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, Main.sex.getCharacterPerformingAction()).get(0);
 							if(areaPenetrated.isOrifice() && ((SexAreaOrifice)areaPenetrated).isInternalOrifice()) {
 								if(Main.sex.getCharacterTargetedForSexAction(this).isWearingCondom()) {
-									return "Desperately struggling as [npc.she] [npc.verb(try)] to push [npc2.name] away from [npc.herHim], [npc.name] [npc.verb(cry)] out,"
-											+ " [npc.speech(No! Please! Pull out! Your condom could break inside of me!)]";
+									return "Отчаянно борясь, пока [npc.she] [npc.verb(try)], пытаясь оттолкнуть [npc2.name] от [npc.herHim], [npc.name] [npc.verb(cry)], [npc.speech(Нет! Пожалуйста! Вытащи! Твой презерватив может порваться внутри меня!)]";
 								} else {
-									return "Desperately struggling as [npc.she] [npc.verb(try)] to push [npc2.name] away from [npc.herHim], [npc.name] [npc.verb(cry)] out,"
-											+ " [npc.speech(No! Please! Pull out of my "+areaPenetrated.getName(Main.sex.getCharacterPerformingAction(), true)+"! Don't cum inside me!)]";
+									return "Отчаянно борясь, пока [npc.she] [npc.verb(try)], пытаясь оттолкнуть [npc2.name] от [npc.herHim], [npc.name] [npc.verb(cry)], [npc.speech(Нет! Пожалуйста! Вытащи свой "+areaPenetrated.getName(Main.sex.getCharacterPerformingAction(), true)+"! Не кончай в меня!)]";
 								}
 							} else {
-								return "Desperately struggling as [npc.she] [npc.verb(try)] to push [npc2.name] away from [npc.herHim], [npc.name] [npc.verb(cry)] out,"
-										+ " [npc.speech(No! Please! Get your cock away from my "+areaPenetrated.getName(Main.sex.getCharacterPerformingAction(), true)+"!)]";
+								return "Отчаянно борясь, пока [npc.she] [npc.verb(try)], пытаясь оттолкнуть [npc2.name] от [npc.herHim], [npc.name] [npc.verb(cry)], [npc.speech(Нет! Пожалуйста! Убери свой член от моей "+areaPenetrated.getName(Main.sex.getCharacterPerformingAction(), true)+"!)]";
 							}
 						}
 					}
@@ -7745,69 +7543,54 @@ public class GenericOrgasms {
 			if(Main.sex.getCharacterPerformingAction().isSpeechMuffled() || Main.sex.getCharacterPerformingAction().isMute()) {
 				if(!isRealPenisFuckingCharacter(Main.sex.getCharacterPerformingAction(), Main.sex.getCharacterTargetedForSexAction(this))) {
 					if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.VAGINA)) {
-						return "Although not able to speak,"
-								+ " [npc.name] [npc.verb(manage)] to use a series of pleading whines in order to convey that [npc.she] [npc.verb(want)] [npc2.name] to pull out of [npc.her] [npc.pussy+].";
+						return "Хотя и не в силах говорить, [npc.name] [npc.verb(manage)], издавая череду умоляющих скулящих звуков, чтобы передать, что [npc.she] [npc.verb(want)] [npc2.name], чтобы вытащить из [npc.her] [npc.pussy+].";
 						
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.ANUS)) {
-						return "Although not able to speak,"
-								+ " [npc.name] [npc.verb(manage)] to use a series of pleading whines in order to convey that [npc.she] [npc.verb(want)] [npc2.name] to pull out of [npc.her] [npc.asshole+].";
+						return "Хотя и не в силах говорить, [npc.name] [npc.verb(manage)], издавая череду умоляющих скулящих звуков, чтобы передать, что [npc.she] [npc.verb(want)] [npc2.name], чтобы вытащить из [npc.her] [npc.asshole+].";
 						
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.NIPPLE)) {
-						return "Although not able to speak,"
-								+ " [npc.name] [npc.verb(manage)] to use a series of pleading whines in order to convey that [npc.she] [npc.verb(want)] [npc2.name] to pull out of [npc.her] [npc.nipple+].";
+						return "Хотя и не в силах говорить, [npc.name] [npc.verb(manage)], издавая череду умоляющих скулящих звуков, чтобы передать, что [npc.she] [npc.verb(want)] [npc2.name], чтобы вытащить из [npc.her] [npc.nipple+].";
 						
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.SPINNERET)) {
-						return "Although not able to speak,"
-								+ " [npc.name] [npc.verb(manage)] to use a series of pleading whines in order to convey that [npc.she] [npc.verb(want)] [npc2.name] to pull out of [npc.her] [npc.spinneret+].";
+						return "Хотя и не в силах говорить, [npc.name] [npc.verb(manage)], издавая череду умоляющих скулящих звуков, чтобы передать, что [npc.she] [npc.verb(want)] [npc2.name], чтобы вытащить из [npc.her] [npc.spinneret+].";
 						
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.BREAST)) {
-						return "Although not able to speak,"
-								+ " [npc.name] [npc.verb(manage)] to use a series of pleading whines in order to convey that [npc.she] [npc.verb(want)] [npc2.name] to get away from [npc.her] [npc.breasts+].";
+						return "Хотя и не в силах говорить, [npc.name] [npc.verb(manage)] использовать череду жалобных скулящих звуков, чтобы передать, что [npc.she] [npc.verb(want)] [npc2.name] подальше от [npc.her] [npc.breasts+].";
 						
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaPenetration.FOOT)) {
-						return "Although not able to speak,"
-								+ " [npc.name] [npc.verb(manage)] to use a series of pleading whines in order to convey that [npc.she] [npc.verb(want)] [npc2.name] to get away from [npc.her] [npc.feet+].";
+						return "Хотя и не в силах говорить, [npc.name] [npc.verb(manage)] использовать череду жалобных скулящих звуков, чтобы передать, что [npc.she] [npc.verb(want)] [npc2.name] подальше от [npc.her] [npc.feet+].";
 						
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.ARMPITS)) {
-						return "Although not able to speak,"
-								+ " [npc.name] [npc.verb(manage)] to use a series of pleading whines in order to convey that [npc.she] [npc.verb(want)] [npc2.name] to get away from [npc.her] [npc.armpit+].";
+						return "Хотя и не в силах говорить, [npc.name] [npc.verb(manage)] использовать череду жалобных скулящих звуков, чтобы передать, что [npc.she] [npc.verb(want)] [npc2.name] подальше от [npc.her] [npc.armpit+].";
 						
 					} else {
-						return "Although not able to speak,"
-								+ " [npc.name] [npc.verb(manage)] to use a series of pleading whines in order to convey that [npc.she] [npc.verb(want)] [npc2.name] to pull out of [npc.herHim] as [npc2.she] [npc2.verb(orgasm)].";
+						return "Хотя и не в силах говорить, [npc.name] [npc.verb(manage)] использовать череду жалобных скулящих звуков, чтобы передать, что [npc.she] [npc.verb(want)] [npc2.name] вытащить из [npc.herHim], пока [npc2.she] [npc2.verb(orgasm)].";
 					}
 	
 				} else {
 					if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.VAGINA)) {
-						return "Although not able to speak,"
-								+ " [npc.name] [npc.verb(manage)] to use a series of pleading whines in order to convey that [npc.she] [npc.verb(want)] [npc2.name] to pull out of [npc.her] [npc.pussy+] before [npc2.she] [npc2.verb(cum)].";
+						return "Хотя и не в силах говорить, [npc.name] [npc.verb(manage)] использовать череду жалобных скулящих звуков, чтобы передать, что [npc.she] [npc.verb(want)] [npc2.name] вытащить из [npc.her] [npc.pussy+] до того, как [npc2.she] [npc2.verb(cum)].";
 						
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.ANUS)) {
-						return "Although not able to speak,"
-								+ " [npc.name] [npc.verb(manage)] to use a series of pleading whines in order to convey that [npc.she] [npc.verb(want)] [npc2.name] to pull out of [npc.her] [npc.asshole+] before [npc2.she] [npc2.verb(cum)].";
+						return "Хотя и не в силах говорить, [npc.name] [npc.verb(manage)] использовать череду жалобных скулящих звуков, чтобы передать, что [npc.she] [npc.verb(want)] [npc2.name] вытащить из [npc.her] [npc.asshole+] до того, как [npc2.she] [npc2.verb(cum)].";
 						
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.NIPPLE)) {
-						return "Although not able to speak,"
-								+ " [npc.name] [npc.verb(manage)] to use a series of pleading whines in order to convey that [npc.she] [npc.verb(want)] [npc2.name] to pull out of [npc.her] [npc.nipple+] before [npc2.she] [npc2.verb(cum)].";
+						return "Although not able to speak, [npc.name] [npc.verb(manage)] to use a series of pleading whines in order to convey that [npc.she] [npc.verb(want)] [npc2.name] to pull out of [npc.her] [npc.nipple+] before [npc2.she] [npc2.verb(cum)].";
 						
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.SPINNERET)) {
-						return "Although not able to speak,"
-								+ " [npc.name] [npc.verb(manage)] to use a series of pleading whines in order to convey that [npc.she] [npc.verb(want)] [npc2.name] to pull out of [npc.her] [npc.spinneret+] before [npc2.she] [npc2.verb(cum)].";
+						return "Although not able to speak, [npc.name] [npc.verb(manage)] to use a series of pleading whines in order to convey that [npc.she] [npc.verb(want)] [npc2.name] to pull out of [npc.her] [npc.spinneret+] before [npc2.she] [npc2.verb(cum)].";
 						
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.BREAST)) {
-						return "Although not able to speak,"
-								+ " [npc.name] [npc.verb(manage)] to use a series of pleading whines in order to convey that [npc.she] [npc.verb(want)] [npc2.name] to pull away from [npc.her] [npc.breasts+] before [npc2.she] [npc2.verb(cum)].";
+						return "Although not able to speak, [npc.name] [npc.verb(manage)] to use a series of pleading whines in order to convey that [npc.she] [npc.verb(want)] [npc2.name] to pull away from [npc.her] [npc.breasts+] before [npc2.she] [npc2.verb(cum)].";
 						
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaPenetration.FOOT)) {
-						return "Although not able to speak,"
-								+ " [npc.name] [npc.verb(manage)] to use a series of pleading whines in order to convey that [npc.she] [npc.verb(want)] [npc2.name] to pull away from [npc.her] [npc.feet+] before [npc2.she] [npc2.verb(cum)].";
+						return "Although not able to speak, [npc.name] [npc.verb(manage)] to use a series of pleading whines in order to convey that [npc.she] [npc.verb(want)] [npc2.name] to pull away from [npc.her] [npc.feet+] before [npc2.she] [npc2.verb(cum)].";
 						
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.ARMPITS)) {
-						return "Although not able to speak,"
-								+ " [npc.name] [npc.verb(manage)] to use a series of pleading whines in order to convey that [npc.she] [npc.verb(want)] [npc2.name] to pull away from [npc.her] [npc.armpit+] before [npc2.she] [npc2.verb(cum)].";
+						return "Although not able to speak, [npc.name] [npc.verb(manage)] to use a series of pleading whines in order to convey that [npc.she] [npc.verb(want)] [npc2.name] to pull away from [npc.her] [npc.armpit+] before [npc2.she] [npc2.verb(cum)].";
 						
 					} else {
-						return "Although not able to speak, [npc.name] [npc.verb(manage)] to use a series of pleading whines in order to convey that [npc.she] [npc.do]n't want [npc2.namePos] cum.";
+						return "Хотя [npc.name] и не может говорить, [npc.verb(manage)] пытается издавать жалобные стоны, чтобы показать, что [npc.she] [npc.do] не хочет [npc2.namePos] спермы.";
 					}
 				}
 				
@@ -7815,128 +7598,100 @@ public class GenericOrgasms {
 				if(!isRealPenisFuckingCharacter(Main.sex.getCharacterPerformingAction(), Main.sex.getCharacterTargetedForSexAction(this))) {
 					if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.VAGINA)
 							|| isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.URETHRA_VAGINA)) {
-						return "Through [npc.her] desperate moans and lewd cries, [npc.name] somehow [npc.verb(manage)] to formulate a sentence as [npc.she] [npc.verb(cry)] out to [npc2.name], "
-								+"[npc.speech(Pull out! Get that dildo out of me!)]";
+						return "Сквозь [npc.her] отчаянные стоны и похотливые крики, [npc.name] каким-то образом [npc.verb(manage)] составить предложение, когда [npc.she] [npc.verb(cry)] обращается к [npc2.name], [npc.speech(Вытащи! Вытащи из меня этот дилдо!)]";
 						
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.URETHRA_PENIS)) {
-						return "Through [npc.her] desperate moans and lewd cries, [npc.name] somehow [npc.verb(manage)] to formulate a sentence as [npc.she] [npc.verb(cry)] out to [npc2.name], "
-								+"[npc.speech(Pull out! Get that dildo out of me!)]";
+						return "Сквозь [npc.her] отчаянные стоны и похотливые крики, [npc.name] каким-то образом [npc.verb(manage)] составить предложение, когда [npc.she] [npc.verb(cry)] обращается к [npc2.name], [npc.speech(Вытащи! Вытащи из меня этот дилдо!)]";
 						
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.ANUS)) {
-						return "Through [npc.her] desperate moans and lewd cries, [npc.name] somehow [npc.verb(manage)] to formulate a sentence as [npc.she] [npc.verb(cry)] out to [npc2.name], "
-								+"[npc.speech(Pull out! Get that dildo out of me!)]";
+						return "Сквозь [npc.her] отчаянные стоны и похотливые крики, [npc.name] каким-то образом [npc.verb(manage)] составить предложение, когда [npc.she] [npc.verb(cry)] обращается к [npc2.name], [npc.speech(Вытащи! Вытащи из меня этот дилдо!)]";
 						
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.NIPPLE)) {
-						return "Through [npc.her] desperate moans and lewd cries, [npc.name] somehow [npc.verb(manage)] to formulate a sentence as [npc.she] [npc.verb(cry)] out to [npc2.name], "
-								+"[npc.speech(Pull out! Get that dildo out of me!)]";
+						return "Сквозь [npc.her] отчаянные стоны и похотливые крики, [npc.name] каким-то образом [npc.verb(manage)] составить предложение, когда [npc.she] [npc.verb(cry)] обращается к [npc2.name], [npc.speech(Вытащи! Вытащи из меня этот дилдо!)]";
 						
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.SPINNERET)) {
-						return "Through [npc.her] desperate moans and lewd cries, [npc.name] somehow [npc.verb(manage)] to formulate a sentence as [npc.she] [npc.verb(cry)] out to [npc2.name], "
-								+"[npc.speech(Pull out! Get that dildo out of me!)]";
+						return "Сквозь [npc.her] отчаянные стоны и похотливые крики, [npc.name] каким-то образом [npc.verb(manage)] составить предложение, когда [npc.she] [npc.verb(cry)] обращается к [npc2.name], [npc.speech(Вытащи! Вытащи из меня этот дилдо!)]";
 						
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.BREAST)) {
-						return "Through [npc.her] desperate moans and lewd cries, [npc.name] somehow [npc.verb(manage)] to formulate a sentence as [npc.she] [npc.verb(cry)] out to [npc2.name], "
-								+"[npc.speech(Pull out! Get that dildo away from me!)]";
+						return "Сквозь [npc.her] отчаянные стоны и похотливые крики, [npc.name] каким-то образом [npc.verb(manage)] составить предложение, когда [npc.she] [npc.verb(cry)] обращается к [npc2.name], [npc.speech(Убери от меня этот дилдо!)]";
 						
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaPenetration.FOOT)) {
-						return "Through [npc.her] desperate moans and lewd cries, [npc.name] somehow [npc.verb(manage)] to formulate a sentence as [npc.she] [npc.verb(cry)] out to [npc2.name], "
-								+"[npc.speech(Get that dildo away from me!)]";
+						return "Сквозь [npc.her] отчаянные стоны и похотливые крики, [npc.name] каким-то образом [npc.verb(manage)] выдавить из себя фразу, когда [npc.she] [npc.verb(cry)] на [npc2.name], [npc.speech(Убери от меня этот дилдо!)]";
 						
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.ARMPITS)) {
-						return "Through [npc.her] desperate moans and lewd cries, [npc.name] somehow [npc.verb(manage)] to formulate a sentence as [npc.she] [npc.verb(cry)] out to [npc2.name], "
-								+"[npc.speech(Get that dildo away from me!)]";
+						return "Сквозь [npc.her] отчаянные стоны и похотливые крики, [npc.name] каким-то образом [npc.verb(manage)] выдавить из себя фразу, когда [npc.she] [npc.verb(cry)] на [npc2.name], [npc.speech(Убери от меня этот дилдо!)]";
 						
 					} else {
-						return "Through [npc.her] desperate moans and lewd cries, [npc.name] somehow [npc.verb(manage)] to cry out around [npc2.namePos] [npc2.cock], "
-								+ "[npc.speech(Pull out! Get that dildo out of my mouth!)]";
+						return "Сквозь [npc.her] отчаянные стоны и похотливые крики, [npc.name] каким-то образом [npc.verb(manage)] выкрикнуть, обращаясь к [npc2.namePos] [npc2.cock], [npc.speech(Вытащи! Вытащи этот дилдо из моего рта!)]";
 					}
 					
 				} else if(Main.sex.getCharacterTargetedForSexAction(this).isWearingCondom()) {
 					if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.VAGINA)) {
-						return "Through [npc.her] desperate moans and lewd cries, [npc.name] somehow [npc.verb(manage)] to formulate a sentence as [npc.she] [npc.verb(cry)] out to [npc2.name], "
-								+ "[npc.speech(Pull out! I don't want to risk that condom breaking in my pussy!)]";
+						return "Сквозь [npc.her] отчаянные стоны и похотливые крики, [npc.name] каким-то образом [npc.verb(manage)] выдавить из себя фразу, когда [npc.she] [npc.verb(cry)] на [npc2.name], [npc.speech(Вытащи! Я не хочу рисковать тем, что презерватив порвется у меня в киске!)]";
 	
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.URETHRA_VAGINA)) {
-						return "Through [npc.her] desperate moans and lewd cries, [npc.name] somehow [npc.verb(manage)] to formulate a sentence as [npc.she] [npc.verb(cry)] out to [npc2.name], "
-								+ "[npc.speech(Pull out! I don't want to risk that condom breaking!)]";
+						return "Сквозь [npc.her] отчаянные стоны и похотливые крики, [npc.name] каким-то образом [npc.verb(manage)] выдавить из себя фразу, когда [npc.she] [npc.verb(cry)] на [npc2.name], [npc.speech(Вытащи! Я не хочу рисковать тем, что презерватив порвется!)]";
 						
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.URETHRA_PENIS)) {
-						return "Through [npc.her] desperate moans and lewd cries, [npc.name] somehow [npc.verb(manage)] to formulate a sentence as [npc.she] [npc.verb(cry)] out to [npc2.name], "
-								+ "[npc.speech(Pull out! I don't want to risk that condom breaking!)]";
+						return "Сквозь [npc.her] отчаянные стоны и похотливые крики, [npc.name] каким-то образом [npc.verb(manage)] выдавить из себя фразу, когда [npc.she] [npc.verb(cry)] на [npc2.name], [npc.speech(Вытащи! Я не хочу рисковать тем, что презерватив порвется!)]";
 						
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.ANUS)) {
-						return "Through [npc.her] desperate moans and lewd cries, [npc.name] somehow [npc.verb(manage)] to formulate a sentence as [npc.she] [npc.verb(cry)] out to [npc2.name], "
-								+ "[npc.speech(Pull out! I don't want that condom breaking in my ass!)]";
+						return "Сквозь [npc.her] отчаянные стоны и похотливые крики, [npc.name] каким-то образом [npc.verb(manage)] составить предложение, когда [npc.she] [npc.verb(cry)] на [npc2.name], [npc.speech(Кончай! Не хочу, чтобы этот презерватив лопнул у меня в заднице!)]";
 	
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.NIPPLE)) {
-						return "Through [npc.her] desperate moans and lewd cries, [npc.name] somehow [npc.verb(manage)] to formulate a sentence as [npc.she] [npc.verb(cry)] out to [npc2.name], "
-								+ "[npc.speech(Pull out! I don't want that condom breaking in my nipple!)]";
+						return "Сквозь [npc.her] отчаянные стоны и похотливые крики, [npc.name] каким-то образом [npc.verb(manage)] составить предложение, когда [npc.she] [npc.verb(cry)] на [npc2.name], [npc.speech(Кончай! Не хочу, чтобы этот презерватив лопнул у меня на соске!)]";
 	
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.SPINNERET)) {
-						return "Through [npc.her] desperate moans and lewd cries, [npc.name] somehow [npc.verb(manage)] to formulate a sentence as [npc.she] [npc.verb(cry)] out to [npc2.name], "
-								+ "[npc.speech(Pull out! I don't want that condom breaking in my spinneret!)]";
+						return "Сквозь [npc.her] отчаянные стоны и похотливые крики, [npc.name] каким-то образом [npc.verb(manage)] составить предложение, когда [npc.she] [npc.verb(cry)] на [npc2.name], [npc.speech(Кончай! Не хочу, чтобы этот презерватив лопнул у меня в паутинном аппарате!)]";
 	
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.BREAST)) {
-						return "Through [npc.her] desperate moans and lewd cries, [npc.name] somehow [npc.verb(manage)] to formulate a sentence as [npc.she] [npc.verb(cry)] out to [npc2.name], "
-								+ "[npc.speech(Get back! I don't want that condom breaking all over my tits!)]";
+						return "Сквозь [npc.her] отчаянные стоны и похотливые крики, [npc.name] каким-то образом [npc.verb(manage)] составить предложение, когда [npc.she] [npc.verb(cry)] на [npc2.name], [npc.speech(Назад! Не хочу, чтобы этот презерватив лопнул прямо на моих сиськах!)]";
 	
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaPenetration.FOOT)) {
-						return "Through [npc.her] desperate moans and lewd cries, [npc.name] somehow [npc.verb(manage)] to formulate a sentence as [npc.she] [npc.verb(cry)] out to [npc2.name], "
-								+ "[npc.speech(Get back! I don't want that condom breaking all over my [npc.feet]!)]";
+						return "Сквозь [npc.her] отчаянные стоны и похотливые крики, [npc.name] каким-то образом [npc.verb(manage)] составить предложение, когда [npc.she] [npc.verb(cry)] на [npc2.name], [npc.speech(Назад! Не хочу, чтобы этот презерватив лопнул прямо на моих [npc.feet]!)]";
 						
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.ARMPITS)) {
-						return "Through [npc.her] desperate moans and lewd cries, [npc.name] somehow [npc.verb(manage)] to formulate a sentence as [npc.she] [npc.verb(cry)] out to [npc2.name], "
-								+ "[npc.speech(Get back! I don't want that condom breaking all over my [npc.armpit]!)]";
+						return "Сквозь [npc.her] отчаянные стоны и похотливые крики, [npc.name] каким-то образом [npc.verb(manage)] сумела выдавить из себя фразу, пока [npc.she] [npc.verb(cry)] на [npc2.name], [npc.speech(Назад! Я не хочу, чтобы этот презерватив лопнул у меня на [npc.armpit]!)]";
 						
 					} else {
-						return "Through [npc.her] desperate moans and lewd cries, [npc.name] somehow [npc.verb(manage)] to cry out around [npc2.namePos] [npc2.cock], "
-								+ "[npc.speech(Pull out! Please!)]";
+						return "Сквозь [npc.her] отчаянные стоны и похотливые крики, [npc.name] каким-то образом [npc.verb(manage)] сумела прокричать сквозь [npc2.namePos] [npc2.cock], [npc.speech(Вытащи! Пожалуйста!)]";
 					}
 					
 				} else {
 					if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.VAGINA)) {
-						return "Through [npc.her] desperate moans and lewd cries, [npc.name] somehow [npc.verb(manage)] to formulate a sentence as [npc.she] [npc.verb(cry)] out to [npc2.name], "
+						return "Сквозь [npc.her] отчаянные стоны и похотливые крики, [npc.name] каким-то образом [npc.verb(manage)] сумела выдавить из себя фразу, пока [npc.she] [npc.verb(cry)] на [npc2.name], "
 								+(Main.sex.getCharacterPerformingAction().isVisiblyPregnant()
 										|| Main.sex.getCharacterPerformingAction().hasStatusEffect(StatusEffect.MENOPAUSE)
 //										|| !Main.sex.getCharacterPerformingAction().getFetishDesire(Fetish.FETISH_PREGNANCY).isNegative()
-									?"[npc.speech(Pull out! I don't want you to cum in me!)]"
-									:"[npc.speech(Pull out! I don't want to get pregnant!)]");
+									?"[npc.speech(Вытащи! Я не хочу, чтобы ты кончил в меня!)]"
+									:"[npc.speech(Вытащи! Я не хочу забеременеть!)]");
 	
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.URETHRA_VAGINA)) {
-						return "Through [npc.her] desperate moans and lewd cries, [npc.name] somehow [npc.verb(manage)] to formulate a sentence as [npc.she] [npc.verb(cry)] out to [npc2.name], "
-								+ "[npc.speech(Pull out! Don't cum in me, please!)]";
+						return "Сквозь [npc.her] отчаянные стоны и похотливые крики, [npc.name] каким-то образом [npc.verb(manage)] сумела выдавить из себя фразу, пока [npc.she] [npc.verb(cry)] на [npc2.name], [npc.speech(Вытащи! Не кончай в меня, пожалуйста!)]";
 						
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.URETHRA_PENIS)) {
-						return "Through [npc.her] desperate moans and lewd cries, [npc.name] somehow [npc.verb(manage)] to formulate a sentence as [npc.she] [npc.verb(cry)] out to [npc2.name], "
-								+ "[npc.speech(Pull out! Don't cum in me, please!)]";
+						return "Сквозь [npc.her] отчаянные стоны и похотливые крики, [npc.name] каким-то образом [npc.verb(manage)] сумела выдавить из себя фразу, пока [npc.she] [npc.verb(cry)] на [npc2.name], [npc.speech(Вытащи! Не кончай в меня, пожалуйста!)]";
 						
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.ANUS)) {
-						return "Through [npc.her] desperate moans and lewd cries, [npc.name] somehow [npc.verb(manage)] to formulate a sentence as [npc.she] [npc.verb(cry)] out to [npc2.name], "
-								+ "[npc.speech(Pull out! Don't cum in my ass, please!)]";
+						return "Сквозь [npc.her] отчаянные стоны и похотливые крики, [npc.name] каким-то образом [npc.verb(manage)] сумела выдавить из себя фразу, пока [npc.she] [npc.verb(cry)] на [npc2.name], [npc.speech(Вытащи! Пожалуйста, не кончай мне в задницу!)]";
 	
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.NIPPLE)) {
-						return "Through [npc.her] desperate moans and lewd cries, [npc.name] somehow [npc.verb(manage)] to formulate a sentence as [npc.she] [npc.verb(cry)] out to [npc2.name], "
-								+ "[npc.speech(Pull out! Don't cum in my nipple! Don't do it!)]";
+						return "Сквозь [npc.her] отчаянные стоны и похотливые крики, [npc.name] каким-то образом [npc.verb(manage)] составить предложение, когда [npc.she] [npc.verb(cry)] на [npc2.name], [npc.speech(Вытащи! Не кончай мне в сосок! Только не это!)]";
 	
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.SPINNERET)) {
-						return "Through [npc.her] desperate moans and lewd cries, [npc.name] somehow [npc.verb(manage)] to formulate a sentence as [npc.she] [npc.verb(cry)] out to [npc2.name], "
-								+ "[npc.speech(Pull out! Don't cum in my spinneret! Don't do it!)]";
+						return "Сквозь [npc.her] отчаянные стоны и похотливые крики, [npc.name] каким-то образом [npc.verb(manage)] составить предложение, когда [npc.she] [npc.verb(cry)] на [npc2.name], [npc.speech(Вытащи! Не кончай в мой паучий аппарат! Только не это!)]";
 	
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.BREAST)) {
-						return "Through [npc.her] desperate moans and lewd cries, [npc.name] somehow [npc.verb(manage)] to formulate a sentence as [npc.she] [npc.verb(cry)] out to [npc2.name], "
-								+ "[npc.speech(Get back! Don't cum on my tits! Don't you dare!)]";
+						return "Сквозь [npc.her] отчаянные стоны и похотливые крики, [npc.name] каким-то образом [npc.verb(manage)] составить предложение, когда [npc.she] [npc.verb(cry)] на [npc2.name], [npc.speech(Назад! Не кончай мне на сиськи! Только посмей!)]";
 	
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaPenetration.FOOT)) {
-						return "Through [npc.her] desperate moans and lewd cries, [npc.name] somehow [npc.verb(manage)] to formulate a sentence as [npc.she] [npc.verb(cry)] out to [npc2.name], "
-								+ "[npc.speech(Get back! Don't cum on my [npc.feet]! Don't you dare!)]";
+						return "Сквозь [npc.her] отчаянных стонов и похотливых криков, [npc.name] каким-то образом [npc.verb(manage)] удалось сформулировать фразу, когда [npc.she] [npc.verb(cry)] обратилась к [npc2.name], [npc.speech(Назад! Не кончай на мою [npc.feet]! Только посмей!)]";
 						
 					} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.ARMPITS)) {
-						return "Through [npc.her] desperate moans and lewd cries, [npc.name] somehow [npc.verb(manage)] to formulate a sentence as [npc.she] [npc.verb(cry)] out to [npc2.name], "
-								+ "[npc.speech(Get back! Don't cum on my [npc.armpit]! Don't you dare!)]";
+						return "Сквозь [npc.her] отчаянных стонов и похотливых криков, [npc.name] каким-то образом [npc.verb(manage)] удалось сформулировать фразу, когда [npc.she] [npc.verb(cry)] обратилась к [npc2.name], [npc.speech(Назад! Не кончай мне на [npc.armpit]! Только посмей!)]";
 						
 					} else {
-						return "Through [npc.her] desperate moans and lewd cries, [npc.name] somehow [npc.verb(manage)] to cry out around [npc2.namePos] [npc2.cock], "
-								+ "[npc.speech(Pull out! I don't want to taste your cum!)]";
+						return "Сквозь [npc.her] отчаянные стоны и похотливые крики, [npc.name] каким-то образом [npc.verb(manage)] выкрикнуть [npc2.namePos] [npc2.cock], [npc.speech(Вытащи! Я не хочу чувствовать вкус твоей спермы!)]";
 					}
 				}
 			}
@@ -7952,11 +7707,11 @@ public class GenericOrgasms {
 			SexParticipantType.NORMAL) {
 		@Override
 		public String getActionTitle() {
-			return "Request facial";
+			return "Попросить минет";
 		}
 		@Override
 		public String getActionDescription() {
-			return "You can feel that [npc2.name] is fast approaching [npc2.her] orgasm. Ask [npc2.herHim] to finish all over your face.";
+			return "Ты чувствуешь, что [npc2.name] стремительно приближается к [npc2.her] оргазму. Попроси [npc2.herHim] кончить прямо тебе на лицо.";
 		}
 		@Override
 		public boolean isBaseRequirementsMet() {
@@ -8014,7 +7769,7 @@ public class GenericOrgasms {
 		@Override
 		public String getDescription() {
 			if(Main.sex.getCharacterPerformingAction().isSpeechMuffled() || Main.sex.getCharacterPerformingAction().isMute()) {
-				return "Although not able to speak, [npc.name] [npc.verb(manage)] to use a series of pleading whines and gestures in order to convey that [npc.she] [npc.verb(want)] [npc2.name] to finish on [npc.her] face.";
+				return "Хотя [npc.name] не может говорить, [npc.verb(manage)] использует череду умоляющих стонов и жестов, чтобы передать, что [npc.she] [npc.verb(want)] [npc2.name] кончить на лицо [npc.her].";
 				
 			} else {
 				if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.VAGINA)
@@ -8023,12 +7778,10 @@ public class GenericOrgasms {
 						|| isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.ANUS)
 						|| isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.NIPPLE)
 						|| isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.SPINNERET)) {
-					return "Through [npc.her] desperate moans and lewd cries, [npc.name] somehow [npc.verb(manage)] to formulate a sentence as [npc.she] [npc.verb(cry)] out to [npc2.name], "
-							+"[npc.speech(Pull out! Finish on my face!)]";
+					return "Сквозь отчаянные стоны и похотливые крики [npc.her], [npc.name] каким-то образом [npc.verb(manage)] удается сформулировать фразу, когда [npc.she] [npc.verb(cry)] выкрикивает [npc2.name]: [npc.speech(Вытащи! Кончи мне на лицо!)]";
 
 				} else {
-					return "Through [npc.her] desperate moans and lewd cries, [npc.name] somehow [npc.verb(manage)] to formulate a sentence as [npc.she] [npc.verb(cry)] out to [npc2.name], "
-							+ "[npc.speech(I want you to finish on my face!)]";
+					return "Сквозь отчаянные стоны и похотливые крики [npc.her], [npc.name] каким-то образом [npc.verb(manage)] удается сформулировать фразу, когда [npc.she] [npc.verb(cry)] выкрикивает [npc2.name]: [npc.speech(Я хочу, чтобы ты кончил мне на лицо!)]";
 				}
 			}
 		}
@@ -8052,12 +7805,12 @@ public class GenericOrgasms {
 		
 		@Override
 		public String getActionTitle() {
-			return "No request";
+			return "Без просьб";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "You can feel that [npc2.name] is fast approaching [npc2.her] orgasm. Don't make any requests of [npc2.herHim], and see what [npc2.sheHasFull] in store for you.";
+			return "Ты чувствуешь, что [npc2.name] стремительно приближается к [npc2.her] оргазму. Ничего не проси у [npc2.herHim] и посмотри, что [npc2.sheHasFull] приготовил для тебя.";
 		}
 
 		@Override
@@ -8077,67 +7830,65 @@ public class GenericOrgasms {
 		public String getDescription() {
 			if(!isRealPenisFuckingCharacter(Main.game.getPlayer(), Main.sex.getCharacterTargetedForSexAction(this))) {
 				if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.VAGINA)) {
-					return "You continue [npc.moaning+] as [npc2.namePos] [npc2.cock+] continues to slam in and out of your [npc.pussy+], and you wonder if [npc2.sheIs] going to pull out or carry on fucking you through [npc2.her] orgasm.";
+					return "Ты продолжаешь [npc.moaning+], пока [npc2.namePos] [npc2.cock+] продолжает вколачиваться в твою [npc.pussy+], и ты гадаешь, собирается ли [npc2.sheIs] вытащить член или продолжит трахать тебя до самого [npc2.her] оргазма.";
 
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.ANUS)) {
-					return "You continue [npc.moaning+] as [npc2.namePos] [npc2.cock+] continues to slam in and out of your [npc.asshole+], and you wonder if [npc2.sheIs] going to pull out or carry on fucking you through [npc2.her] orgasm.";
+					return "Ты продолжаешь [npc.moaning+], пока [npc2.namePos] [npc2.cock+] продолжает вколачиваться в твою [npc.asshole+], и ты гадаешь, собирается ли [npc2.sheIs] вытащить член или продолжит трахать тебя до самого [npc2.her] оргазма.";
 
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.NIPPLE)) {
-					return "You continue [npc.moaning+] as [npc2.namePos] [npc2.cock+] continues to slam in and out of your [npc.nipple+], and you wonder if [npc2.sheIs] going to pull out or carry on fucking you through [npc2.her] orgasm.";
+					return "Вы продолжаете [npc.moaning+], пока [npc2.namePos] [npc2.cock+] продолжает вколачиваться в вашу [npc.nipple+], и вы гадаете, собирается ли [npc2.sheIs] вытащить член или продолжит трахать вас до самого [npc2.her] оргазма.";
 
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.SPINNERET)) {
-					return "You continue [npc.moaning+] as [npc2.namePos] [npc2.cock+] continues to slam in and out of your [npc.spinneret+], and you wonder if [npc2.sheIs] going to pull out or carry on fucking you through [npc2.her] orgasm.";
+					return "Вы продолжаете [npc.moaning+], пока [npc2.namePos] [npc2.cock+] продолжает вколачиваться в вашу [npc.spinneret+], и вы гадаете, собирается ли [npc2.sheIs] вытащить член или продолжит трахать вас до самого [npc2.her] оргазма.";
 
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.BREAST)) {
 					if(Main.sex.getCharacterPerformingAction().isBreastFuckablePaizuri()) {
-						return "You continue [npc.moaning+] as [npc2.namePos] [npc2.cock+] continues to slide up and down between your [npc.breasts+],"
-								+ " and you wonder if [npc2.sheIs] going to carry on fucking your [npc.breasts+] through [npc2.her] orgasm.";
+						return "Вы продолжаете [npc.moaning+], пока [npc2.namePos] [npc2.cock+] продолжает скользить вверх и вниз между вашими [npc.breasts+], и вы гадаете, собирается ли [npc2.sheIs] продолжать трахать вашу [npc.breasts+] до самого [npc2.her] оргазма.";
 					} else {
-						return "You continue [npc.moaning+] as [npc2.namePos] [npc2.cock+] continues to slide up and down over your torso,"
-								+ " and you wonder if [npc2.sheIs] going to back away or carry on fucking your flat chest through [npc2.her] orgasm.";
+						return "Вы продолжаете [npc.moaning+], пока [npc2.namePos] [npc2.cock+] продолжает скользить вверх и вниз по вашему торсу, и вы гадаете, собирается ли [npc2.sheIs] отстраниться или продолжит трахать вашу плоскую грудь до самого [npc2.her] оргазма.";
 					}
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaPenetration.FOOT)) {
-					return "You continue [npc.moaning+] as you give [npc.name] [pc.a_footjob], and you wonder if [npc2.sheIs] going to back away or carry on fucking your [npc.feet] through [npc2.her] orgasm.";
+					return "Вы продолжаете [npc.moaning+], давая [npc.name] [pc.a_footjob], и вы гадаете, собирается ли [npc2.sheIs] отстраниться или продолжит трахать вашу [npc.feet] до самого [npc2.her] оргазма.";
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.ARMPITS)) {
-					return "You continue [npc.moaning+] as [npc.name] fucks your [pc.armpit+], and you wonder if [npc2.sheIs] going to back away or carry on fucking your pit through [npc2.her] orgasm.";
+					return "Вы продолжаете [npc.moaning+], пока [npc.name] трахает вашу [pc.armpit+], и вы гадаете, собирается ли [npc2.sheIs] отстраниться или продолжит трахать вашу впадину до самого [npc2.her] оргазма.";
 					
 				} else {
-					return "You continue [npc.moaning+] as [npc2.name] continues to fuck you with [npc2.her] [npc2.cock+], and you wonder if [npc2.sheIs] going to pull out, or carry on fucking you through [npc2.her] orgasm.";
+					return "Вы продолжаете [npc.moaning+], пока [npc2.name] продолжает трахать вас с [npc2.her] [npc2.cock+], и вы гадаете, собирается ли [npc2.sheIs] вытащить член или продолжит трахать вас до самого [npc2.her] оргазма.";
 				}
 				
 			} else {
 				if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.VAGINA)) {
-					return "You continue [npc.moaning+] as you feel [npc2.namePos] [npc2.cock+] start to twitch inside your [npc.pussy+], and you wonder if [npc2.sheIs] going to pull out or"
+					return "Вы продолжаете [npc.moaning+], чувствуя, как [npc2.namePos] [npc2.cock+] начинает дергаться внутри вашей [npc.pussy+], и вы гадаете, собирается ли [npc2.sheIs] вытащить его или"
 							+(Main.game.getPlayer().isVisiblyPregnant()
-									?" give you a fresh creampie..."
-									:" fill your womb with [npc2.her] [npc2.cum+]...");
+									?" сделает вам свежий кремпи..."
+									:" наполнит вашу утробу [npc2.her] [npc2.cum+]...");
 
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.ANUS)) {
-					return "You continue [npc.moaning+] as you feel [npc2.namePos] [npc2.cock+] start to twitch inside your [npc.asshole+], and you wonder if [npc2.sheIs] going to pull out or give you a fresh anal creampie...";
+					return "Вы продолжаете [npc.moaning+], чувствуя, как [npc2.namePos] [npc2.cock+] начинает дергаться внутри вашей [npc.asshole+], и вы гадаете, собирается ли [npc2.sheIs] вытащить его или сделать вам свежий анальный кремпи...";
 
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.NIPPLE)) {
-					return "You continue [npc.moaning+] as you feel [npc2.namePos] [npc2.cock+] start to twitch inside your [npc.nipple+], and you wonder if [npc2.sheIs] going to pull out or give you a fresh nipple creampie...";
+					return "Вы продолжаете [npc.moaning+], чувствуя, как [npc2.namePos] [npc2.cock+] начинает дергаться внутри вашей [npc.nipple+], и вы гадаете, собирается ли [npc2.sheIs] вытащить его или сделать вам свежий кремпи в соски...";
 
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.SPINNERET)) {
-					return "You continue [npc.moaning+] as you feel [npc2.namePos] [npc2.cock+] start to twitch inside your [npc.spinneret+], and you wonder if [npc2.sheIs] going to pull out or give you a fresh spinneret creampie...";
+					return "Вы продолжаете [npc.moaning+], чувствуя, как [npc2.namePos] [npc2.cock+] начинает дергаться внутри вашей [npc.spinneret+], и вы гадаете, собирается ли [npc2.sheIs] вытащить его или сделать вам свежий кремпи из паучьего пакля...";
 
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaOrifice.BREAST)) {
 					if(Main.sex.getCharacterPerformingAction().isBreastFuckablePaizuri()) {
-						return "You continue [npc.moaning+] as [npc2.namePos] [npc2.cock+] continues to slide up and down between your [npc.breasts+], and you wonder if [npc2.sheIs] going to pull out or cum all over your [npc.breasts+].";
+						return "Вы продолжаете [npc.moaning+], пока [npc2.namePos] [npc2.cock+] продолжает скользить вверх и вниз между вашими [npc.breasts+], и вы гадаете, собирается ли [npc2.sheIs] вытащить его или кончит прямо на вашу [npc.breasts+].";
 					} else {
-						return "You continue [npc.moaning+] as [npc2.namePos] [npc2.cock+] continues to slide up and down over your torso, and you wonder if [npc2.sheIs] going to back away or cum all over your flat chest.";
+						return "Вы продолжаете [npc.moaning+], пока [npc2.namePos] [npc2.cock+] продолжает скользить вверх и вниз по вашему торсу, и вы гадаете, собирается ли [npc2.sheIs] отстраниться или кончит прямо на вашу плоскую грудь.";
 					}
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaPenetration.FOOT)) {
-					return "You continue [npc.moaning+] as you give [npc.name] [pc.a_footjob], and you wonder if [npc2.sheIs] going to pull back or cum all over your [npc.feet].";
+					return "Вы продолжаете [npc.moaning+], давая [npc.name] [pc.a_footjob], и вы гадаете, собирается ли [npc2.sheIs] отстраниться или кончит на вашу [npc.feet].";
 					
 				} else if(isAreaFuckedByTarget(this, Main.sex.getCharacterPerformingAction(), SexAreaPenetration.FOOT)) {
-					return "You continue [npc.moaning+] as [npc.name] fucks your [pc.armpit+], and you wonder if [npc2.sheIs] going to pull back or cum all over your pit.";
+					return "Вы продолжаете [npc.moaning+], пока [npc.name] трахает вашу [pc.armpit+], и вы гадаете, собирается ли [npc2.sheIs] отстраниться или кончит вам в ложбинку.";
 					
 				} else {
-					return "You continue [npc.moaning+] as you feel [npc2.namePos] [npc2.cock+] start to twitch, and you wonder if [npc2.sheIs] going to pull out or fill you with [npc2.her] [npc2.cum+]...";
+					return "Вы продолжаете [npc.moaning+], чувствуя, как [npc2.namePos] [npc2.cock+] начинает подергиваться, и вы гадаете, собирается ли [npc2.sheIs] вытащить член или наполнить вас [npc2.her] [npc2.cum+]...";
 				}
 			}
 		}
@@ -8184,12 +7935,12 @@ public class GenericOrgasms {
 		
 		@Override
 		public String getActionTitle() {
-			return "Deny";
+			return "Отвергнуть";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "You can feel that [npc2.name] is fast approaching [npc2.her] orgasm. Don't let [npc2.herHim] have it.";
+			return "Вы чувствуете, что [npc2.name] стремительно приближается к [npc2.her] оргазму. Не дайте [npc2.herHim] забрать его себе.";
 		}
 
 		@Override
@@ -8199,27 +7950,25 @@ public class GenericOrgasms {
 			if(isCharacterTotallyImmobilised(Main.sex.getCharacterTargetedForSexAction(this))) {
 				if(Main.sex.getCharacterTargetedForSexAction(this).isAsleep()) {
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"From the increased intensity of [npc2.namePos] sleepy whines and pants, it's clear to [npc.name] that [npc2.sheIs] about to orgasm in [npc2.her] sleep.",
-							"[npc2.Name] [npc2.verb(let)] out a particularly lewd, sleepy moan, making it clear to [npc.name] that [npc2.sheIs] about to orgasm in [npc2.her] sleep."));
+							"По усиливающимся сонным стонам и тяжелому дыханию [npc2.namePos], [npc.name] становится ясно, что [npc2.sheIs] вот-вот кончит во [npc2.her] сне.",
+							"[npc2.Name] [npc2.verb(let)] особенно похотливый, сонный стон, давая [npc.name] понять, что [npc2.sheIs] вот-вот кончит во [npc2.her] сне."));
 					
 					UtilText.nodeContentSB.append("<br/><br/>");
 					
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"Upon hearing this, [npc.name] [npc.verb(stop)] moving, bringing [npc2.namePos] stimulation to an abrupt halt in order to stop [npc2.herHim] from reaching [npc2.her] climax.",
-							"As [npc.she] [npc.verb(hear)] this, [npc.name] quickly [npc.verb(stop)] what [npc.sheIs] doing,"
-									+ " making sure that [npc2.nameIsFull] receiving no stimulation in order to prevent [npc2.herHim] from reaching [npc2.her] climax."));
+							"Услышав это, [npc.name] [npc.verb(stop)], резко прекращая стимуляцию [npc2.namePos], чтобы не дать [npc2.herHim] достичь [npc2.her] климакса.",
+							"Пока [npc.she] [npc.verb(hear)] это, [npc.name] быстро [npc.verb(stop)] то, что делает [npc.sheIs], следя за тем, чтобы [npc2.nameIsFull] не получала никакой стимуляции, дабы не дать [npc2.herHim] достичь [npc2.her] оргазма."));
 					
 				} else {
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"Although [npc2.she] [npc2.verb(remain)] totally motionless, [npc.name] [npc.verb(get)] the feeling that [npc2.she] must be close to orgasming.",
-							"Despite the fact that [npc2.name] [npc.verb(remain)] in a completely inanimate state, [npc.name] intuitively [npc2.verb(realise)] that [npc2.she] must be about to orgasm."));
+							"Хотя [npc2.she] [npc2.verb(remain)] совершенно неподвижно, [npc.name] [npc.verb(get)] ощущение, что [npc2.she] вот-вот кончит.",
+							"Несмотря на то, что [npc2.name] [npc.verb(remain)] в состоянии полного оцепенения, [npc.name] интуитивно [npc2.verb(realise)], что [npc2.she] вот-вот испытает оргазм."));
 					
 					UtilText.nodeContentSB.append("<br/><br/>");
 
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"Upon coming to this realisation, [npc.name] [npc.verb(stop)] moving, bringing [npc2.namePos] stimulation to an abrupt halt in order to stop [npc2.herHim] from reaching [npc2.her] climax.",
-							"As [npc.she] [npc.verb(realise)] this, [npc.name] quickly [npc.verb(stop)] what [npc.sheIs] doing,"
-									+ " making sure that [npc2.nameIsFull] receiving no stimulation in order to prevent [npc2.herHim] from reaching [npc2.her] climax."));
+							"Осознав это, [npc.name] [npc.verb(stop)], резко прекращая стимуляцию [npc2.namePos], чтобы не дать [npc2.herHim] достичь [npc2.her] оргазма.",
+							"Пока [npc.she] [npc.verb(realise)] это, [npc.name] быстро [npc.verb(stop)] то, что делает [npc.sheIs], следя за тем, чтобы [npc2.nameIsFull] не получала никакой стимуляции, дабы не дать [npc2.herHim] достичь [npc2.her] оргазма."));
 				}
 				
 			} else {
@@ -8229,13 +7978,13 @@ public class GenericOrgasms {
 					switch(Main.sex.getSexPace(Main.sex.getCharacterTargetedForSexAction(this))) {
 						case SUB_RESISTING:
 							UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-									"From the increased intensity of [npc2.namePos] desperate, muffled whines and pants, it's clear to [npc.name] that [npc2.sheIs] about to orgasm.",
-									"[npc2.Name] [npc2.verb(let)] out a particularly lewd, muffled whine, making it clear to [npc.name] that [npc2.sheIs] about to orgasm."));
+									"По тому, как усилились отчаянные, приглушенные стоны и тяжелое дыхание [npc2.namePos], [npc.name] становится ясно, что [npc2.sheIs] вот-вот кончит.",
+									"[npc2.Name] [npc2.verb(let)] особенно похотливый, приглушенный стон, давая [npc.name] понять, что [npc2.sheIs] вот-вот испытает оргазм."));
 							break;
 						default:
 							UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-									"From the increased intensity of [npc2.namePos] excited, muffled [npc2.moans], it's clear to [npc.name] that [npc2.sheIs] about to orgasm.",
-									"[npc2.Name] [npc2.verb(let)] out a particularly erotic, muffled [npc2.moan], making it clear to [npc.name] that [npc2.sheIs] about to orgasm."));
+									"По тому, как усилились возбужденные, приглушенные [npc2.moans] [npc2.namePos], [npc.name] становится ясно, что [npc2.sheIs] вот-вот кончит.",
+									"[npc2.Name] [npc2.verb(let)] особенно эротичный, приглушенный [npc2.moan], давая [npc.name] понять, что [npc2.sheIs] вот-вот кончит."));
 							break;
 					}
 					
@@ -8243,15 +7992,15 @@ public class GenericOrgasms {
 					switch(Main.sex.getSexPace(Main.sex.getCharacterTargetedForSexAction(this))) {
 						case SUB_RESISTING:
 							UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-									"[npc2.Name] [npc2.verb(start)] desperately whining and panting, before blurting out, [npc2.speech(No! You're going to make me cum!)]",
-									"[npc2.Name] [npc2.verb(let)] out a particularly lewd whine, before shuddering and crying out, [npc2.speech(Not like this! I'm going to cum! No!)]",
-									"Letting out a surprisingly erotic scream, [npc2.name] [npc2.verb(exclaim)], [npc2.speech(Stop it! No! I'm... I'm going to cum!)]"));
+									"[npc2.Name] [npc2.verb(start)] отчаянно скулит и тяжело дышит, прежде чем выпалить: [npc2.speech(Нет! Ты сейчас заставишь меня кончить!)]",
+									"[npc2.Name] [npc2.verb(let)] особенно похотливый стон, после чего содрогается и вскрикивает: [npc2.speech(Не так! Я сейчас кончу! Нет!)]",
+									"Издавая удивительно эротичный крик, [npc2.name] [npc2.verb(exclaim)], [npc2.speech(Прекрати! Нет! Я... я сейчас кончу!)]"));
 							break;
 						default:
 							UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-									"[npc2.Name] [npc2.verb(start)] desperately panting and [npc2.moaning], before blurting out, [npc2.speech(Yes! You're going to make me cum!)]",
-									"[npc2.Name] [npc2.verb(let)] out a particularly erotic [npc2.moan], before excitedly exclaiming, [npc2.speech(Yes! I'm going to cum! Yes, give it to me!)]",
-									"Letting out an incredibly erotic [npc2.moan], [npc2.name] [npc2.verb(exclaim)], [npc2.speech(Just like that! Yes! I'm... I'm going to cum!)]"));
+									"[npc2.Name] [npc2.verb(start)] отчаянно тяжело дышит и [npc2.moaning], прежде чем выпалить: [npc2.speech(Да! Ты сейчас заставишь меня кончить!)]",
+									"[npc2.Name] [npc2.verb(let)] особенно эротичный [npc2.moan], прежде чем возбужденно воскликнуть: [npc2.speech(Да! Я сейчас кончу! Да, давай же!)]",
+									"Издавая невероятно эротичный [npc2.moan], [npc2.name] [npc2.verb(exclaim)], [npc2.speech(Вот так! Да! Я... я сейчас кончу!)]"));
 							break;
 					}
 				}
@@ -8262,17 +8011,15 @@ public class GenericOrgasms {
 					case DOM_GENTLE:
 					case DOM_NORMAL:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								"Upon hearing this, [npc.name] quickly [npc.verb(take)] a firm grip of [npc2.namePos] [npc2.arms], before holding [npc2.herHim] in place and preventing [npc2.herHim] from stimulating [npc2.herself].",
-								"As [npc.she] [npc.verb(hear)] this, [npc.name] quickly [npc.verb(grab)] hold of [npc2.namePos] [npc2.arms],"
-										+ " before using [npc.her] leverage to hold [npc2.herHim] still and stop [npc2.herHim] from reaching [npc2.her] climax.",
-								"Hearing that [npc2.sheIs] about to orgasm, [npc.name] quickly [npc.verb(grab)] hold of [npc2.namePos] [npc2.arms], before holding [npc2.herHim] still and preventing [npc2.herHim] from reaching [npc2.her] climax."));
+								"Услышав это, [npc.name] быстро [npc.verb(take)] крепко сжимает [npc2.namePos] [npc2.arms], после чего удерживает [npc2.herHim] на месте, не давая [npc2.herHim] стимулировать [npc2.herself].",
+								"Пока [npc.she] [npc.verb(hear)] это, [npc.name] быстро [npc.verb(grab)] хватает [npc2.namePos] [npc2.arms], используя [npc.her] как рычаг, чтобы удержать [npc2.herHim] на месте и не дать [npc2.herHim] достичь [npc2.her] оргазма.",
+								"Услышав, что [npc2.sheIs] вот-вот испытает оргазм, [npc.name] быстро [npc.verb(grab)] хватает [npc2.namePos] за [npc2.arms], после чего крепко удерживает [npc2.herHim] на месте, не давая [npc2.herHim] достичь [npc2.her] пика."));
 						break;
 					case DOM_ROUGH:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								"Upon hearing this, [npc.name] quickly [npc.verb(take)] a forceful grip of [npc2.namePos] [npc2.arms], before roughly holding [npc2.herHim] in place and preventing [npc2.herHim] from stimulating [npc2.herself].",
-								"As [npc.she] [npc.verb(hear)] this, [npc.name] roughly [npc.verb(grab)] hold of [npc2.namePos] [npc2.arms],"
-										+ " before using [npc.her] leverage to force [npc2.herHim] to stay still in order to stop [npc2.herHim] from reaching [npc2.her] climax.",
-								"Hearing that [npc2.sheIs] about to orgasm, [npc.name] forcefully [npc.verb(grab)] hold of [npc2.namePos] [npc2.arms], before roughly holding [npc2.herHim] still and preventing [npc2.herHim] from reaching [npc2.her] climax."));
+								"Услышав это, [npc.name] быстро и властно [npc.verb(take)] хватает [npc2.namePos] за [npc2.arms], после чего грубо фиксирует [npc2.herHim], не позволяя [npc2.herHim] стимулировать [npc2.herself].",
+								"Пока [npc.she] [npc.verb(hear)] это, [npc.name] грубо [npc.verb(grab)] хватает [npc2.namePos] [npc2.arms], после чего использует [npc.her] рычаг, чтобы заставить [npc2.herHim] замереть и не дать [npc2.herHim] достичь [npc2.her] кульминации.",
+								"Услышав, что [npc2.sheIs] вот-вот испытает оргазм, [npc.name] с силой [npc.verb(grab)] хватает [npc2.namePos] за [npc2.arms], после чего грубо удерживает [npc2.herHim] на месте, не давая [npc2.herHim] достичь [npc2.her] пика."));
 						break;
 					default:
 						break;
@@ -8282,54 +8029,47 @@ public class GenericOrgasms {
 					case SUB_RESISTING:
 						if(Main.sex.getCharacterTargetedForSexAction(this).isPlayer()) {
 							UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-									" You find yourself feeling a little relieved as you realise that you're not going be forced into orgasming,"
-											+ " and simply continue to sob and plead to be left alone as [npc.name] [npc.verb(force)] you to calm down."));
+									" Вы чувствуете легкое облегчение, понимая, что вас не заставят кончить, и просто продолжаете рыдать и умолять, чтобы вас оставили в покое, пока [npc.name] [npc.verb(force)] вас успокоить."));
 							
 						} else {
 							UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-									" [npc2.Name] [npc2.verb(seem)] a little relieved that [npc2.sheIs] not going be forced into orgasming,"
-											+ " and simply [npc2.verb(continue)] to sob and plead to be left alone as [npc.name] [npc.verb(force)] [npc2.herHim] to calm down."));
+									" [npc2.Name] [npc2.verb(seem)] с небольшим облегчением, что [npc2.sheIs] не заставят дойти до оргазма, а лишь [npc2.verb(continue)] рыдать и умолять, чтобы её оставили в покое, пока [npc.name] [npc.verb(force)] [npc2.herHim] успокоиться."));
 						}
 						break;
 					default:
 						if(Main.sex.getCharacterTargetedForSexAction(this).isSpeechMuffled() || Main.sex.getCharacterTargetedForSexAction(this).isMute()) {
 							if(Main.sex.getCharacterTargetedForSexAction(this).getFetishDesire(Fetish.FETISH_DENIAL_SELF).isPositive()) {
 								UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-										" Being enamoured with the concept of being denied so close to [npc2.her] climax, [npc2.name] [npc2.verb(let)] out a lewd cry as [npc2.sheIs] forced to calm down,"
-												+ " and as [npc2.she] [npc2.verb(withdraw)] from the edge of [npc2.her] orgasm, [npc2.her] erotic exclamation turns into a particularly desperate, muffled [npc2.moan]."));
+										" Обожая саму концепцию лишения удовольствия в шаге от [npc2.her] оргазма, [npc2.name] [npc2.verb(let)] похотливый возглас, пока [npc2.sheIs] заставляют успокоиться, и когда [npc2.she] [npc2.verb(withdraw)] от самого края [npc2.her] оргазма, [npc2.her] эротическое восклицание превращается в особенно отчаянный, приглушенный [npc2.moan]."));
 								
 							} else {
 								UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-										" Feeling incredibly frustrated at being denied when so close to [npc2.her] climax, [npc2.name] [npc2.verb(let)] out a frantic, muffled cry as [npc2.sheIs] forced to calm down,"
-												+ " making it clear that [npc2.she] desperately [npc2.verb(want)] to orgasm."));
+										" Чувствуя невероятное разочарование от того, что ее лишили удовольствия так близко к [npc2.her] оргазму, [npc2.name] [npc2.verb(let)] неистовый, приглушенный крик, пока [npc2.sheIs] заставляют успокоиться, ясно давая понять, что [npc2.she] отчаянно [npc2.verb(want)] к оргазму."));
 							}
 							
 						} else {
 							if(Main.sex.getCharacterTargetedForSexAction(this).getFetishDesire(Fetish.FETISH_DENIAL_SELF).isPositive()) {
 								UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-										" Being enamoured with the concept of being denied so close to [npc2.her] climax, [npc2.name] [npc2.verb(let)] out a lewd cry as [npc2.sheIs] forced to calm down,"
-												+ " and as [npc2.she] [npc2.verb(withdraw)] from the edge of [npc2.her] orgasm, [npc2.she] [npc2.moansVerb], "));
+										" Обожая саму концепцию лишения удовольствия в шаге от [npc2.her] оргазма, [npc2.name] [npc2.verb(let)] похотливый возглас, пока [npc2.sheIs] заставляют успокоиться, и когда [npc2.she] [npc2.verb(withdraw)] от самого края [npc2.her] оргазма, [npc2.she] [npc2.moansVerb], "));
 		
 								UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-										"[npc2.speech(Oh yes... That feels good... I'll only cum when you allow me to, [npc.name]...)]",
-										"[npc2.speech(Yes... I'm yours to deny as you wish, [npc.name]...)]"));
+										"[npc2.speech(О да... Это так приятно... Я кончу только тогда, когда ты позволишь, [npc.name]...)]",
+										"[npc2.speech(Да... Ты можешь лишать меня удовольствия, как пожелаешь, [npc.name]...)]"));
 								
 							} else {
 								UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-										" Feeling incredibly frustrated at being denied when so close to [npc2.her] climax, [npc2.name] [npc2.verb(let)] out a frantic cry as [npc2.sheIs] forced to calm down, "));
+										" Чувствуя невероятное разочарование от того, что ее лишили удовольствия так близко к [npc2.her] оргазму, [npc2.name] [npc2.verb(let)] неистовый крик, пока [npc2.sheIs] заставляют успокоиться, "));
 		
 								UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-										"[npc2.speech(No! I was so close! Let me cum already!)]",
-										"[npc2.speech(Let me cum! No! I was so close!)]"));
+										"[npc2.speech(Нет! Я была так близко! Дай мне уже кончить!)]",
+										"[npc2.speech(Дай мне кончить! Нет! Я была так близко!)]"));
 							}
 						}
 						break;
 				}
 			}
 			
-			UtilText.nodeContentSB.append("<p style='text-align:center'>"
-						+ "<i>[npc2.NamePos] orgasm was [style.boldBad(denied)]!</i>"
-					+ "</p>");
+			UtilText.nodeContentSB.append("<p style='text-align:center'><i>[npc2.NamePos] оргазм был [style.boldBad(лишен)]!</i></p>");
 			
 			return UtilText.nodeContentSB.toString();
 		}
@@ -8374,22 +8114,22 @@ public class GenericOrgasms {
 		@Override
 		public String getActionTitle() {
 			if(!isRealPenisFuckingCharacter(getCharacterBeingFucked(), Main.sex.getCharacterTargetedForSexAction(this))) {
-				return "Encourage fucking";
+				return "Поощрять трах";
 				
 			} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.MOUTH).contains(getCharacterBeingFucked())) {
-				return "Encourage deepthroat";
+				return "Подгонять к глубокому минет";
 
 			} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.BREAST).contains(getCharacterBeingFucked())) {
-				return UtilText.parse(getCharacterBeingFucked(), "Encourage cum on [npc.breasts]");
+				return UtilText.parse(getCharacterBeingFucked(), "Подгонять кончить на [npc.breasts]");
 				
 			} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaPenetration.FOOT).contains(getCharacterBeingFucked())) {
-				return UtilText.parse(getCharacterBeingFucked(), "Encourage cum on [npc.feet]");
+				return UtilText.parse(getCharacterBeingFucked(), "Подгонять кончить на [npc.feet]");
 				
 			} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.ARMPITS).contains(getCharacterBeingFucked())) {
-				return UtilText.parse(getCharacterBeingFucked(), "Encourage cum on [npc.armpit]");
+				return UtilText.parse(getCharacterBeingFucked(), "Подгонять кончить на [npc.armpit]");
 				
 			} else {
-				return "Encourage creampie";
+				return "Подгонять к кнуту";
 			}
 		}
 
@@ -8397,36 +8137,36 @@ public class GenericOrgasms {
 		public String getActionDescription() {
 			if(isSelfFucking()) {
 				if(!isRealPenisFuckingCharacter(getCharacterBeingFucked(), Main.sex.getCharacterTargetedForSexAction(this))) {
-					return UtilText.parse(getCharacterBeingFucked(), "You can tell that [npc.name] is fast approaching [npc.her] orgasm. Encourage [npc.herHim] to keep fucking [npc.herself] with [npc.her] dildo as [npc.she] climaxes.");
+					return UtilText.parse(getCharacterBeingFucked(), "Видно, что [npc.name] вот-вот достигнет [npc.her] оргазма. Подгоняйте [npc.herHim], чтобы он продолжал трахать [npc.herself] [npc.her] дилдо, пока [npc.she] кончает.");
 	
 				} else {
-					return UtilText.parse(getCharacterBeingFucked(), "You can tell that [npc.name] is fast approaching [npc.her] orgasm. Encourage [npc.herHim] to keep fucking [npc.herself] as [npc.she] climaxes.");
+					return UtilText.parse(getCharacterBeingFucked(), "Видно, что [npc.name] вот-вот достигнет [npc.her] оргазма. Подгоняйте [npc.herHim], чтобы он продолжал трахать [npc.herself], пока [npc.she] кончает.");
 				}
 				
 			} else {
 				if(!isRealPenisFuckingCharacter(getCharacterBeingFucked(), Main.sex.getCharacterTargetedForSexAction(this))) {
 					return UtilText.parse(getCharacterBeingFucked(), Main.sex.getCharacterTargetedForSexAction(this),
-							"You can tell that [npc2.name] is fast approaching [npc2.her] orgasm. Encourage [npc2.herHim] to keep fucking [npc.name] with [npc2.her] dildo as [npc2.she] climaxes.");
+							"Видно, что [npc2.name] вот-вот достигнет [npc2.her] оргазма. Подгоняйте [npc2.herHim], чтобы он продолжал трахать [npc.name] [npc2.her] дилдо, пока [npc2.she] кончает.");
 	
 				} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.MOUTH).contains(getCharacterBeingFucked())) {
 					return UtilText.parse(getCharacterBeingFucked(), Main.sex.getCharacterTargetedForSexAction(this),
-							"You can tell that [npc2.name] is fast approaching [npc2.her] orgasm. Encourage [npc2.herHim] to fill [npc.namePos] stomach with [npc2.her] cum.");
+							"Видно, что [npc2.name] вот-вот достигнет [npc2.her] оргазма. Подгоняйте [npc2.herHim], чтобы он заполнил живот [npc.namePos] своим [npc2.her].");
 	
 				} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.BREAST).contains(getCharacterBeingFucked())) {
 					return UtilText.parse(getCharacterBeingFucked(), Main.sex.getCharacterTargetedForSexAction(this),
-							"You can tell that [npc2.name] is fast approaching [npc2.her] orgasm. Encourage [npc2.herHim] to cum all over [npc.namePos] [npc.breasts+].");
+							"Видно, что [npc2.name] вот-вот достигнет [npc2.her] оргазма. Подгоняйте [npc2.herHim], чтобы он кончил на всю [npc.namePos] [npc.breasts+].");
 	
 				} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaPenetration.FOOT).contains(getCharacterBeingFucked())) {
 					return UtilText.parse(getCharacterBeingFucked(), Main.sex.getCharacterTargetedForSexAction(this),
-							"You can tell that [npc2.name] is fast approaching [npc2.her] orgasm. Encourage [npc2.herHim] to cum all over [npc.namePos] [npc.feet+].");
+							"Видно, что [npc2.name] стремительно приближается к [npc2.her] оргазму. Подбодрите [npc2.herHim], чтобы она кончила прямо на [npc.namePos] [npc.feet+].");
 					
 				} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.ARMPITS).contains(getCharacterBeingFucked())) {
 					return UtilText.parse(getCharacterBeingFucked(), Main.sex.getCharacterTargetedForSexAction(this),
-							"You can tell that [npc2.name] is fast approaching [npc2.her] orgasm. Encourage [npc2.herHim] to cum all over [npc.namePos] [npc.armpit+].");
+							"Видно, что [npc2.name] стремительно приближается к [npc2.her] оргазму. Подбодрите [npc2.herHim], чтобы она кончила прямо на [npc.namePos] [npc.armpit+].");
 					
 				} else {
 					return UtilText.parse(getCharacterBeingFucked(), Main.sex.getCharacterTargetedForSexAction(this),
-							"You can tell that [npc2.name] is fast approaching [npc2.her] orgasm. Encourage [npc2.herHim] to fill [npc.name] with [npc2.her] cum.");
+							"Видно, что [npc2.name] стремительно приближается к [npc2.her] оргазму. Подбодрите [npc2.herHim], чтобы она заполнила [npc.name] своей [npc2.her] спермой.");
 				}
 			}
 		}
@@ -8480,8 +8220,7 @@ public class GenericOrgasms {
 			
 			if(isSelfFucking()) {
 				if(Main.sex.getCharacterPerformingAction().isSpeechMuffled() || Main.sex.getCharacterPerformingAction().isMute()) {
-					sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(make)] a series of muffled cries as [npc.she] [npc.verb(try)] to convey to [npc2.name]"
-							+ " that [npc.she] [npc.verb(want)] [npc2.herHim] to keep fucking [npc2.herself] as [npc2.she] [npc2.verb(orgasm)].");
+					sb.append("Точно понимая, что это [npc.she] [npc.verb(want)], [npc.name] [npc.verb(make)] серию приглушенных стонов, пока [npc.she] [npc.verb(try)], чтобы дать [npc2.name] понять, что [npc.she] [npc.verb(want)] [npc2.herHim], и продолжать трахать [npc2.herself], пока [npc2.she] [npc2.verb(orgasm)].");
 				
 				} else {
 					boolean petName = false;
@@ -8490,24 +8229,22 @@ public class GenericOrgasms {
 					}
 
 					if(!isRealPenisFuckingCharacter(getCharacterBeingFucked(), Main.sex.getCharacterTargetedForSexAction(this))) {
-						sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] out for [npc2.name] to keep fucking [npc2.herself] as [npc2.she] [npc2.verb(orgasm)],"
-								+" [npc.speech(Don't pull out"+(petName?", [#npc.getPetName(npc2)]":"")+"! Keep going!)]");
+						sb.append("Точно понимая, что это [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)], чтобы [npc2.name] продолжал трахать [npc2.herself], пока [npc2.she] [npc2.verb(orgasm)], [npc.speech(Не вынимай"+(petName?", [#npc.getPetName(npc2)]":"")+"! Продолжай!)]");
 						
 					} else if(Main.sex.getCharacterTargetedForSexAction(this).isWearingCondom()) {
-						sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] out for [npc2.name] to keep fucking [npc2.herself] as [npc2.she] [npc2.verb(orgasm)],"
-								+" [npc.speech(Don't pull out"+(petName?", [#npc.getPetName(npc2)]":"")+"! Spurt it all out into that condom!)]");
+						sb.append("Точно понимая, что это [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)], чтобы [npc2.name] продолжал трахать [npc2.herself], пока [npc2.she] [npc2.verb(orgasm)], [npc.speech(Не вынимай"+(petName?", [#npc.getPetName(npc2)]":"")+"! Выплесни всё в этот презерватив!)]");
 						
 					} else {
-						sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] out for [npc2.name] to keep fucking [npc2.herself] as [npc2.she] [npc2.verb(orgasm)],");
+						sb.append("Точно понимая, что это [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)], чтобы [npc2.name] продолжал трахать [npc2.herself], пока [npc2.she] [npc2.verb(orgasm)],");
 
 						if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.VAGINA).contains(getCharacterBeingFucked())) {
 							if(getCharacterBeingFucked().isVisiblyPregnant()) {
-								sb.append(" [npc.speech(Don't pull out"+(petName?", [#npc.getPetName(npc2)]":"")+"! Fill your pussy with your cum!)]");
+								sb.append(" [npc.speech(Не вынимай"+(petName?", [#npc.getPetName(npc2)]":"")+"! Заполни свою киску своей спермой!)]");
 							} else {
-								sb.append(" [npc.speech(Don't pull out"+(petName?", [#npc.getPetName(npc2)]":"")+"! Fill your pussy with your cum and knock yourself up!)]");
+								sb.append(" [npc.speech(Не вынимай"+(petName?", [#npc.getPetName(npc2)]":"")+"! Залей свою киску своей спермой и забеременей!)]");
 							}
 						} else {
-							sb.append(" [npc.speech(Don't pull out"+(petName?", [#npc.getPetName(npc2)]":"")+"! Keep going!)]");
+							sb.append(" [npc.speech(Не вынимай"+(petName?", [#npc.getPetName(npc2)]":"")+"! Продолжай!)]");
 						}
 					}
 				}
@@ -8516,106 +8253,82 @@ public class GenericOrgasms {
 				if(Main.sex.getCharacterPerformingAction().isSpeechMuffled() || Main.sex.getCharacterPerformingAction().isMute()) {
 					if(!isRealPenisFuckingCharacter(getCharacterBeingFucked(), Main.sex.getCharacterTargetedForSexAction(this))) {
 						if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.VAGINA).contains(getCharacterBeingFucked())) {
-							sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(make)] a series of muffled cries as [npc.she] [npc.verb(try)] to convey to [npc2.name]"
-									+ " that [npc.she] [npc.verb(want)] [npc2.herHim] to keep pounding [npc3.namePos] [npc3.pussy+] as [npc2.she] [npc2.verb(orgasm)].");
+							sb.append("Точно зная, что это [npc.she] [npc.verb(want)], [npc.name] [npc.verb(make)] череду приглушенных стонов, пока [npc.she] [npc.verb(try)], чтобы дать понять [npc2.name], что [npc.she] [npc.verb(want)] [npc2.herHim], продолжая вколачивать [npc3.namePos] [npc3.pussy+], пока [npc2.she] [npc2.verb(orgasm)].");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.ANUS).contains(getCharacterBeingFucked())) {
-							sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(make)] a series of muffled cries as [npc.she] [npc.verb(try)] to convey to [npc2.name]"
-									+ " that [npc.she] [npc.verb(want)] [npc2.herHim] to keep pounding [npc3.namePos] [npc3.asshole+] as [npc2.she] [npc2.verb(orgasm)].");
+							sb.append("Точно зная, что это [npc.she] [npc.verb(want)], [npc.name] [npc.verb(make)] череду приглушенных стонов, пока [npc.she] [npc.verb(try)], чтобы дать понять [npc2.name], что [npc.she] [npc.verb(want)] [npc2.herHim], продолжая вколачивать [npc3.namePos] [npc3.asshole+], пока [npc2.she] [npc2.verb(orgasm)].");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.NIPPLE).contains(getCharacterBeingFucked())) {
-							sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(make)] a series of muffled cries as [npc.she] [npc.verb(try)] to convey to [npc2.name]"
-									+ " that [npc.she] [npc.verb(want)] [npc2.herHim] to keep pounding [npc3.namePos] [npc3.nipple+] as [npc2.she] [npc2.verb(orgasm)].");
+							sb.append("Точно зная, что это [npc.she] [npc.verb(want)], [npc.name] [npc.verb(make)] череду приглушенных стонов, пока [npc.she] [npc.verb(try)], чтобы дать понять [npc2.name], что [npc.she] [npc.verb(want)] [npc2.herHim], продолжая вколачивать [npc3.namePos] [npc3.nipple+], пока [npc2.she] [npc2.verb(orgasm)].");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.SPINNERET).contains(getCharacterBeingFucked())) {
-							sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(make)] a series of muffled cries as [npc.she] [npc.verb(try)] to convey to [npc2.name]"
-									+ " that [npc.she] [npc.verb(want)] [npc2.herHim] to keep fucking [npc3.namePos] [npc3.spinneret+] as [npc2.she] [npc2.verb(orgasm)].");
+							sb.append("Точно зная, что это [npc.she] [npc.verb(want)], [npc.name] [npc.verb(make)] череду приглушенных стонов, пока [npc.she] [npc.verb(try)], чтобы дать понять [npc2.name], что [npc.she] [npc.verb(want)] [npc2.herHim], продолжая трахать [npc3.namePos] [npc3.spinneret+], пока [npc2.she] [npc2.verb(orgasm)].");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.BREAST).contains(getCharacterBeingFucked())) {
-							sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(make)] a series of muffled cries as [npc.she] [npc.verb(try)] to convey to [npc2.name]"
-									+ " that [npc.she] [npc.verb(want)] [npc2.herHim] to keep fucking [npc3.namePos] [npc3.breasts+] as [npc2.she] [npc2.verb(orgasm)].");
+							sb.append("Точно зная, что это [npc.she] [npc.verb(want)], [npc.name] [npc.verb(make)] серия приглушенных стонов, пока [npc.she] [npc.verb(try)], чтобы дать понять [npc2.name], что [npc.she] [npc.verb(want)] [npc2.herHim] продолжать трахать [npc3.namePos] [npc3.breasts+], пока [npc2.she] [npc2.verb(orgasm)].");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaPenetration.FOOT).contains(getCharacterBeingFucked())) {
-							sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(make)] a series of muffled cries as [npc.she] [npc.verb(try)] to convey to [npc2.name]"
-									+ " that [npc.she] [npc.verb(want)] [npc2.herHim] to keep fucking [npc3.namePos] [npc3.feet+] as [npc2.she] [npc2.verb(orgasm)].");
+							sb.append("Точно зная, что это [npc.she] [npc.verb(want)], [npc.name] [npc.verb(make)] серия приглушенных стонов, пока [npc.she] [npc.verb(try)], чтобы дать понять [npc2.name], что [npc.she] [npc.verb(want)] [npc2.herHim] продолжать трахать [npc3.namePos] [npc3.feet+], пока [npc2.she] [npc2.verb(orgasm)].");
 							
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.ARMPITS).contains(getCharacterBeingFucked())) {
-							sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(make)] a series of muffled cries as [npc.she] [npc.verb(try)] to convey to [npc2.name]"
-									+ " that [npc.she] [npc.verb(want)] [npc2.herHim] to keep fucking [npc3.namePos] [npc3.armpit+] as [npc2.she] [npc2.verb(orgasm)].");
+							sb.append("Точно зная, что это [npc.she] [npc.verb(want)], [npc.name] [npc.verb(make)] серия приглушенных стонов, пока [npc.she] [npc.verb(try)], чтобы дать понять [npc2.name], что [npc.she] [npc.verb(want)] [npc2.herHim] продолжать трахать [npc3.namePos] [npc3.armpit+], пока [npc2.she] [npc2.verb(orgasm)].");
 							
 						} else {
-							sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(make)] a series of muffled cries as [npc.she] [npc.verb(try)] to convey to [npc2.name]"
-									+ " that [npc.she] [npc.verb(want)] [npc2.herHim] to keep fucking [npc3.name] as [npc2.she] [npc2.verb(orgasm)].");
+							sb.append("Точно зная, что это [npc.she] [npc.verb(want)], [npc.name] [npc.verb(make)] серия приглушенных стонов, пока [npc.she] [npc.verb(try)], чтобы дать понять [npc2.name], что [npc.she] [npc.verb(want)] [npc2.herHim] продолжать трахать [npc3.name], пока [npc2.she] [npc2.verb(orgasm)].");
 						}
 		
 					} else {
 						if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.VAGINA).contains(getCharacterBeingFucked())) {
-							sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(make)] a series of muffled cries as [npc.she] [npc.verb(try)] to convey to [npc2.name]"
-									+ " that [npc.she] [npc.verb(want)] [npc2.herHim] to cum inside [npc3.namePos] [npc3.pussy+].");
+							sb.append("Точно зная, что это [npc.she] [npc.verb(want)], [npc.name] [npc.verb(make)] серия приглушенных стонов, пока [npc.she] [npc.verb(try)], чтобы дать понять [npc2.name], что [npc.she] [npc.verb(want)] [npc2.herHim] кончить внутрь [npc3.namePos] [npc3.pussy+].");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.ANUS).contains(getCharacterBeingFucked())) {
-							sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(make)] a series of muffled cries as [npc.she] [npc.verb(try)] to convey to [npc2.name]"
-									+ " that [npc.she] [npc.verb(want)] [npc2.herHim] to cum inside [npc3.namePos] [npc3.asshole+].");
+							sb.append("Точно зная, что это [npc.she] [npc.verb(want)], [npc.name] [npc.verb(make)] серия приглушенных стонов, пока [npc.she] [npc.verb(try)], чтобы дать [npc2.name] понять, что [npc.she] [npc.verb(want)] [npc2.herHim] кончить внутрь [npc3.namePos] [npc3.asshole+].");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.NIPPLE).contains(getCharacterBeingFucked())) {
-							sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(make)] a series of muffled cries as [npc.she] [npc.verb(try)] to convey to [npc2.name]"
-									+ " that [npc.she] [npc.verb(want)] [npc2.herHim] to cum inside [npc3.namePos] [npc3.nipple+].");
+							sb.append("Точно зная, что это [npc.she] [npc.verb(want)], [npc.name] [npc.verb(make)] серия приглушенных стонов, пока [npc.she] [npc.verb(try)], чтобы дать [npc2.name] понять, что [npc.she] [npc.verb(want)] [npc2.herHim] кончить внутрь [npc3.namePos] [npc3.nipple+].");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.SPINNERET).contains(getCharacterBeingFucked())) {
-							sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(make)] a series of muffled cries as [npc.she] [npc.verb(try)] to convey to [npc2.name]"
-									+ " that [npc.she] [npc.verb(want)] [npc2.herHim] to cum inside [npc3.namePos] [npc3.spinneret+].");
+							sb.append("Точно зная, что это [npc.she] [npc.verb(want)], [npc.name] [npc.verb(make)] серия приглушенных стонов, пока [npc.she] [npc.verb(try)], чтобы дать [npc2.name] понять, что [npc.she] [npc.verb(want)] [npc2.herHim] кончить внутрь [npc3.namePos] [npc3.spinneret+].");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.BREAST).contains(getCharacterBeingFucked())) {
-							sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(make)] a series of muffled cries as [npc.she] [npc.verb(try)] to convey to [npc2.name]"
-									+ " that [npc.she] [npc.verb(want)] [npc2.herHim] to cum all over [npc3.namePos] [npc3.breasts+].");
+							sb.append("Точно зная, что это [npc.she] [npc.verb(want)], [npc.name] [npc.verb(make)] серия приглушенных стонов, пока [npc.she] [npc.verb(try)], чтобы дать [npc2.name] понять, что [npc.she] [npc.verb(want)] [npc2.herHim] кончить на весь [npc3.namePos] [npc3.breasts+].");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaPenetration.FOOT).contains(getCharacterBeingFucked())) {
-							sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(make)] a series of muffled cries as [npc.she] [npc.verb(try)] to convey to [npc2.name]"
-									+ " that [npc.she] [npc.verb(want)] [npc2.herHim] to cum all over [npc3.namePos] [npc3.feet+].");
+							sb.append("Точно зная, что это [npc.she] [npc.verb(want)], [npc.name] [npc.verb(make)] серия приглушенных стонов, пока [npc.she] [npc.verb(try)], чтобы дать [npc2.name] понять, что [npc.she] [npc.verb(want)] [npc2.herHim] кончить на весь [npc3.namePos] [npc3.feet+].");
 							
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.ARMPITS).contains(getCharacterBeingFucked())) {
-							sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(make)] a series of muffled cries as [npc.she] [npc.verb(try)] to convey to [npc2.name]"
-									+ " that [npc.she] [npc.verb(want)] [npc2.herHim] to cum all over [npc3.namePos] [npc3.armpit+].");
+							sb.append("Точно зная, что это [npc.she] [npc.verb(want)], [npc.name] [npc.verb(make)] серия приглушенных стонов, пока [npc.she] [npc.verb(try)], чтобы дать [npc2.name] понять, что [npc.she] [npc.verb(want)] [npc2.herHim] кончить прямо на [npc3.namePos] [npc3.armpit+].");
 							
 						} else {
-							sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(make)] a series of muffled cries as [npc.she] [npc.verb(try)] to convey to [npc2.name]"
-									+ " that [npc.she] [npc.verb(want)] [npc2.herHim] to cum inside of [npc3.name].");
+							sb.append("Точно зная, что это [npc.she] [npc.verb(want)], [npc.name] [npc.verb(make)] серия приглушенных стонов, пока [npc.she] [npc.verb(try)], чтобы дать [npc2.name] понять, что [npc.she] [npc.verb(want)] [npc2.herHim] кончить внутрь [npc3.name].");
 						}
 					}
 					
 				} else {
 					if(!isRealPenisFuckingCharacter(getCharacterBeingFucked(), Main.sex.getCharacterTargetedForSexAction(this))) {
 						if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.VAGINA).contains(getCharacterBeingFucked())) {
-							sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] out for [npc2.name] to keep pounding [npc3.namePos] [npc3.pussy+] as [npc2.she] [npc2.verb(orgasm)],"
-									+" [npc.speech(Yes! That's right! Don't stop fucking "+targetHerHim+"!)]");
+							sb.append("Точно зная, что это [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] ради того, чтобы [npc2.name] продолжал вколачивать [npc3.namePos] [npc3.pussy+], пока [npc2.she] [npc2.verb(orgasm)], [npc.speech(Да! Именно так! Не переставай трахать "+targetHerHim+"!)]");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.ANUS).contains(getCharacterBeingFucked())) {
-							sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] out for [npc2.name] to keep pounding [npc3.namePos] [npc3.asshole+] as [npc2.she] [npc2.verb(orgasm)],"
-									+" [npc.speech(Yes! That's right! Don't stop fucking "+targetHer+" [npc3.ass]!)]");
+							sb.append("Точно зная, что это [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] ради того, чтобы [npc2.name] продолжал вколачивать [npc3.namePos] [npc3.asshole+], пока [npc2.she] [npc2.verb(orgasm)], [npc.speech(Да! Именно так! Не переставай трахать "+targetHer+" [npc3.ass]!)]");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.NIPPLE).contains(getCharacterBeingFucked())) {
-							sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] out for [npc2.name] to keep pounding [npc3.namePos] [npc3.nipple+] as [npc2.she] [npc2.verb(orgasm)],"
-									+" [npc.speech(Yes! That's right! Don't stop fucking "+targetHer+" [npc3.breasts]!)]");
+							sb.append("Точно зная, что это [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] ради того, чтобы [npc2.name] продолжал вколачивать [npc3.namePos] [npc3.nipple+], пока [npc2.she] [npc2.verb(orgasm)], [npc.speech(Да! Именно так! Не переставай трахать "+targetHer+" [npc3.breasts]!)]");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.SPINNERET).contains(getCharacterBeingFucked())) {
-							sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] out for [npc2.name] to keep pounding [npc3.namePos] [npc3.spinneret+] as [npc2.she] [npc2.verb(orgasm)],"
-									+" [npc.speech(Yes! That's right! Don't stop fucking "+targetHer+" [npc3.spinneret]!)]");
+							sb.append("Точно зная, что это [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] наружу, чтобы [npc2.name] продолжал вколачивать [npc3.namePos] [npc3.spinneret+], пока [npc2.she] [npc2.verb(orgasm)], [npc.speech(Да! Именно так! Не переставай трахать "+targetHer+" [npc3.spinneret]!)]");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.BREAST).contains(getCharacterBeingFucked())) {
-							sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] out for [npc2.name] to keep pounding [npc3.namePos] [npc3.breasts+] as [npc2.she] [npc2.verb(orgasm)],"
-									+" [npc.speech(Yes! That's right! Don't stop fucking "+targetHer+" tits!)]");
+							sb.append("только что что это [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] наружу, чтобы [npc2.name] продолжал вколачивать [npc3.namePos] [npc3.breasts+], пока [npc2.she] [npc2.verb(orgasm)], [npc.speech(Да! Именно так! Не переставай трахать "+targetHer+" сиськи!)]");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaPenetration.FOOT).contains(getCharacterBeingFucked())) {
-							sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] out for [npc2.name] to keep pounding [npc3.namePos] [npc3.feet+] as [npc2.she] [npc2.verb(orgasm)],"
-									+" [npc.speech(Yes! That's right! Don't stop fucking "+targetHer+" [npc3.feet]!)]");
+							sb.append("Точно зная, что это [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] наружу, чтобы [npc2.name] продолжал вколачивать [npc3.namePos] [npc3.feet+], пока [npc2.she] [npc2.verb(orgasm)], [npc.speech(Да! Именно так! Не переставай трахать "+targetHer+" [npc3.feet]!)]");
 							
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.ARMPITS).contains(getCharacterBeingFucked())) {
-							sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] out for [npc2.name] to keep pounding [npc3.namePos] [npc3.armpit+] as [npc2.she] [npc2.verb(orgasm)],"
-									+" [npc.speech(Yes! That's right! Don't stop fucking "+targetHer+" pit!)]");
+							sb.append("Точно зная, что это [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] наружу, чтобы [npc2.name] продолжал вколачивать [npc3.namePos] [npc3.armpit+], пока [npc2.she] [npc2.verb(orgasm)], [npc.speech(Да! Именно так! Не переставай трахать "+targetHer+" дырку!)]");
 							
 						} else {
-							sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] out for [npc2.name] to keep pounding [npc3.name] as [npc2.she] [npc2.verb(orgasm)],"
-									+" [npc.speech(Yes! That's right! Don't stop fucking "+targetHerHim+"!)]");
+							sb.append("Точно зная, что это [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] наружу, чтобы [npc2.name] продолжал вколачивать [npc3.name] как [npc2.she] [npc2.verb(orgasm)], [npc.speech(Да! Именно так! Не переставай трахать "+targetHerHim+"!)]");
 						}
 		
 					} else if(Main.sex.getCharacterTargetedForSexAction(this).isWearingCondom()) {
@@ -8625,36 +8338,28 @@ public class GenericOrgasms {
 						}
 						
 						if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.VAGINA).contains(getCharacterBeingFucked())) {
-							sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] out for [npc2.name] to keep pounding [npc3.namePos] [npc3.pussy+] as [npc2.she] [npc2.verb(orgasm)],"
-									+" [npc.speech(Finish inside of "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Spurt it all out into that condom!)]");
+							sb.append("Точно зная, что это [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] наружу, чтобы [npc2.name] продолжал вколачивать [npc3.namePos] [npc3.pussy+], пока [npc2.she] [npc2.verb(orgasm)], [npc.speech(Кончай внутрь "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Выплесни всё в этот презерватив!)]");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.ANUS).contains(getCharacterBeingFucked())) {
-							sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] out for [npc2.name] to keep pounding [npc3.namePos] [npc3.asshole+] as [npc2.she] [npc2.verb(orgasm)],"
-									+" [npc.speech(Finish inside of "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Spurt it all out into that condom!)]");
+							sb.append("Точно зная, что это [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] наружу, чтобы [npc2.name] продолжал вколачивать [npc3.namePos] [npc3.asshole+], пока [npc2.she] [npc2.verb(orgasm)], [npc.speech(Кончай внутри "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Выплесни всё в этот презерватив!)]");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.NIPPLE).contains(getCharacterBeingFucked())) {
-							sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] out for [npc2.name] to keep pounding [npc3.namePos] [npc3.nipple+] as [npc2.she] [npc2.verb(orgasm)],"
-									+" [npc.speech(Finish inside of "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Spurt it all out into that condom!)]");
+							sb.append("Точно зная, что это [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] наружу, чтобы [npc2.name] продолжал вколачивать [npc3.namePos] [npc3.nipple+], пока [npc2.she] [npc2.verb(orgasm)], [npc.speech(Кончай внутри "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Выплесни всё в этот презерватив!)]");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.SPINNERET).contains(getCharacterBeingFucked())) {
-							sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] out for [npc2.name] to keep pounding [npc3.namePos] [npc3.spinneret+] as [npc2.she] [npc2.verb(orgasm)],"
-									+" [npc.speech(Finish inside of "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Spurt it all out into that condom!)]");
+							sb.append("Точно зная, что это [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] наружу, чтобы [npc2.name] продолжал вколачивать [npc3.namePos] [npc3.spinneret+], пока [npc2.she] [npc2.verb(orgasm)], [npc.speech(Кончай внутри "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Выплесни всё в этот презерватив!)]");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.BREAST).contains(getCharacterBeingFucked())) {
-							sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] out for [npc2.name] to keep pounding [npc3.namePos] [npc3.breasts+] as [npc2.she] [npc2.verb(orgasm)],"
-									+ " [npc.speech(That's it"+(petName?", [#npc.getPetName(npc2)]":"")+"! Spurt it all out into that condom!)]");
+							sb.append("Точно зная, что это [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] наружу, чтобы [npc2.name] продолжал вколачивать [npc3.namePos] [npc3.breasts+], пока [npc2.she] [npc2.verb(orgasm)], [npc.speech(Вот так"+(petName?", [#npc.getPetName(npc2)]":"")+"! Выплесни всё в этот презерватив!)]");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaPenetration.FOOT).contains(getCharacterBeingFucked())) {
-							sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] out for [npc2.name] to keep pounding [npc3.namePos] [npc3.feet+] as [npc2.she] [npc2.verb(orgasm)],"
-									+ " [npc.speech(That's it"+(petName?", [#npc.getPetName(npc2)]":"")+"! Spurt it all out into that condom!)]");
+							sb.append("Точно зная, что это [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] наружу, чтобы [npc2.name] продолжал вколачивать [npc3.namePos] [npc3.feet+], пока [npc2.she] [npc2.verb(orgasm)], [npc.speech(Вот так"+(petName?", [#npc.getPetName(npc2)]":"")+"! Выплесни всё в этот презерватив!)]");
 							
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.ARMPITS).contains(getCharacterBeingFucked())) {
-							sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] out for [npc2.name] to keep pounding [npc3.namePos] [npc3.armpit+] as [npc2.she] [npc2.verb(orgasm)],"
-									+ " [npc.speech(That's it"+(petName?", [#npc.getPetName(npc2)]":"")+"! Spurt it all out into that condom!)]");
+							sb.append("Точно зная, что это [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] наружу, чтобы [npc2.name] продолжал вколачивать [npc3.namePos] [npc3.armpit+], пока [npc2.she] [npc2.verb(orgasm)], [npc.speech(Вот так"+(petName?", [#npc.getPetName(npc2)]":"")+"! Выплесни всё в этот презерватив!)]");
 							
 						} else {
-							sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] out for [npc2.name] to keep pounding [npc3.name] as [npc2.she] [npc2.verb(orgasm)],"
-									+ " [npc.speech(That's it"+(petName?", [#npc.getPetName(npc2)]":"")+"! Spurt it all out into that condom!)]");
+							sb.append("Точно зная, что это [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] наружу, чтобы [npc2.name] продолжал вколачивать [npc3.name], пока [npc2.she] [npc2.verb(orgasm)], [npc.speech(Вот так,"+(petName?", [#npc.getPetName(npc2)]":"")+"! Выплесни всё в этот презерватив!)]");
 						}
 						
 					} else {
@@ -8664,38 +8369,31 @@ public class GenericOrgasms {
 						}
 		
 						if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.VAGINA).contains(getCharacterBeingFucked())) {
-							sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] out for [npc2.name] to keep pounding [npc3.namePos] [npc3.pussy+] as [npc2.she] [npc2.verb(orgasm)],"
+							sb.append("Точно зная, что это [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] наружу, чтобы [npc2.name] продолжал вколачивать [npc3.namePos] [npc3.pussy+], пока [npc2.she] [npc2.verb(orgasm)],"
 									+(getCharacterBeingFucked().isVisiblyPregnant()
-											?" [npc.speech(Fuck! Cum in "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Fill "+targetHer+" pussy with your cum!)]"
-											:" [npc.speech(Breed "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Fill "+targetHer+" pussy with your cum and knock "+targetHerHim+" up!)]"));
+											?" [npc.speech(Блядь! Кончай в "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Наполни "+targetHer+" киску своей спермой!)]"
+											:" [npc.speech(Оплодотвори "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Наполни "+targetHer+" киска, полная твоей спермы, и стук "+targetHerHim+" вверх!)]"));
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.ANUS).contains(getCharacterBeingFucked())) {
-							sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] out for [npc2.name] to keep pounding [npc3.namePos] [npc3.asshole+] as [npc2.she] [npc2.verb(orgasm)],"
-									+" [npc.speech(Fuck! Cum in "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Fill "+targetHer+" ass with your cum!)]");
+							sb.append("Точно зная, что это [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] наружу, чтобы [npc2.name] продолжал вколачивать [npc3.namePos] [npc3.asshole+], пока [npc2.she] [npc2.verb(orgasm)], [npc.speech(Блядь! Кончай в "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Наполни "+targetHer+" зад своей спермой!)]");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.NIPPLE).contains(getCharacterBeingFucked())) {
-							sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] out for [npc2.name] to keep pounding [npc3.namePos] [npc3.nipple+] as [npc2.she] [npc2.verb(orgasm)],"
-									+" [npc.speech(Fuck! Cum in "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Fill "+targetHer+" nipple with your cum!)]");
+							sb.append("Точно зная, что это [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] на виду у [npc2.name], чтобы он продолжал долбить [npc3.namePos] [npc3.nipple+], пока [npc2.she] [npc2.verb(orgasm)], [npc.speech(Блядь! Кончай в "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Наполни "+targetHer+" сосок своей спермой!)]");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.SPINNERET).contains(getCharacterBeingFucked())) {
-							sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] out for [npc2.name] to keep pounding [npc3.namePos] [npc3.spinneret+] as [npc2.she] [npc2.verb(orgasm)],"
-									+" [npc.speech(Fuck! Cum in "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Fill "+targetHer+" spinneret with your cum!)]");
+							sb.append("Точно зная, что это [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] на виду у [npc2.name], чтобы он продолжал долбить [npc3.namePos] [npc3.spinneret+], пока [npc2.she] [npc2.verb(orgasm)], [npc.speech(Блядь! Кончай в "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Наполни "+targetHer+" паутинный аппарат своей спермой!)]");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.BREAST).contains(getCharacterBeingFucked())) {
-							sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] out for [npc2.name] to keep pounding [npc3.namePos] [npc3.breasts+] as [npc2.she] [npc2.verb(orgasm)],"
-									+ " [npc.speech(Yes! Cum for "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Cover "+targetHer+" tits with your cum!)]");
+							sb.append("Точно зная, что это [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] на виду у [npc2.name], чтобы он продолжал долбить [npc3.namePos] [npc3.breasts+], пока [npc2.she] [npc2.verb(orgasm)], [npc.speech(Да! Кончай в "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Покрой "+targetHer+" сиськи своей спермой!)]");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaPenetration.FOOT).contains(getCharacterBeingFucked())) {
-							sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] out for [npc2.name] to keep pounding [npc3.namePos] [npc3.feet+] as [npc2.she] [npc2.verb(orgasm)],"
-									+ " [npc.speech(Yes! Cum for "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Cover "+targetHer+" [npc3.feet] with your cum!)]");
+							sb.append("Точно зная, что это [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] на виду у [npc2.name], чтобы он продолжал долбить [npc3.namePos] [npc3.feet+], пока [npc2.she] [npc2.verb(orgasm)], [npc.speech(Да! Кончай в "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Покрой "+targetHer+" [npc3.feet] своей спермой!)]");
 							
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.ARMPITS).contains(getCharacterBeingFucked())) {
-							sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] out for [npc2.name] to keep pounding [npc3.namePos] [npc3.armpit+] as [npc2.she] [npc2.verb(orgasm)],"
-									+ " [npc.speech(Yes! Cum for "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Cover "+targetHer+" pit with your cum!)]");
+							sb.append("Точно зная, что это такое, [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)], чтобы [npc2.name] продолжал вбивать [npc3.namePos] [npc3.armpit+], пока [npc2.she] [npc2.verb(orgasm)], [npc.speech(Да! кончай "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Покрой "+targetHer+" ямой со своей спермой!)]");
 							
 						} else {
-							sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] out for [npc2.name] to keep pounding [npc3.name] as [npc2.she] [npc2.verb(orgasm)],"
-									+ " [npc.speech(Yes! Cum for "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Don't pull out!)]");
+							sb.append("Точно зная, что это такое, [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)], чтобы [npc2.name] продолжал вбивать [npc3.name], пока [npc2.she] [npc2.verb(orgasm)], [npc.speech(Да! кончай "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Не вынимай!)]");
 						}
 					}
 				}
@@ -8704,37 +8402,34 @@ public class GenericOrgasms {
 			if(!Main.sex.getCharacterTargetedForSexAction(this).isPlayer() && !Main.sex.isSpectator(Main.sex.getCharacterPerformingAction())) {
 				if(Main.sex.getCharacterTargetedForSexAction(this).isSpeechMuffled() || Main.sex.getCharacterTargetedForSexAction(this).isMute()) {
 					if(Main.sex.isCharacterObeyingTarget(Main.sex.getCharacterTargetedForSexAction(this), Main.sex.getCharacterPerformingAction())) {
-						sb.append("<br/><br/>"
-								+"Grinning as [npc.name] [npc.verb(ask)] this, [npc2.name] [npc2.verb(let)] out a positive-sounding [npc2.moan] in order to let [npc.name] know that that's exactly what [npc2.sheHasFull] planned.");
+						sb.append("<br/><br/>Улыбаясь, когда [npc.name] [npc.verb(ask)] это, [npc2.name] [npc2.verb(let)] положительный [npc2.moan], чтобы дать [npc.name] понять, что это именно то, что [npc2.sheHasFull] планировал.");
 						
 					} else {
-						sb.append("<br/><br/>"
-								+"Furrowing [npc2.her] eyebrows as [npc.name] [npc.verb(ask)] this,"
-								+ " [npc2.name] [npc2.verb(let)] out a negative-sounding [npc2.moan] in order to let [npc.name] know that [npc2.sheIs] not interested in listening to anything [npc.sheHasFull] to say.");
+						sb.append("<br/><br/>Нахмурив [npc2.her] брови, когда [npc.name] [npc.verb(ask)] это, [npc2.name] [npc2.verb(let)] отрицательный [npc2.moan], чтобы дать [npc.name] понять, что [npc2.sheIs] не заинтересован в том, чтобы слушать всё, что [npc.sheHasFull] скажет.");
 					}
 					
 				} else {
 					if(Main.sex.isCharacterObeyingTarget(Main.sex.getCharacterTargetedForSexAction(this), Main.sex.getCharacterPerformingAction())) {
 						sb.append("<br/><br/>"
 								+UtilText.returnStringAtRandom(
-									"Grinning as [npc.name] [npc.verb(ask)] this, [npc2.name] quickly replies in the positive, ",
-									"Letting out [npc.a_moan+] after hearing what it is [npc.nameIs] asking of [npc2.herHim], [npc2.name] responds, "));
+									"Улыбаясь, когда [npc.name] [npc.verb(ask)] это, [npc2.name] быстро отвечает утвердительно, ",
+									"Издавая [npc.a_moan+] после того, как услышала, что именно [npc.nameIs] просит у [npc2.herHim], [npc2.name] отвечает, "));
 		
 						sb.append(UtilText.returnStringAtRandom(
-								"[npc2.speech(Sure, if that's what you want to see!)]",
-								"[npc2.speech(Sounds good to me!)]",
-								"[npc2.speech(Sure thing! I'm going to enjoy this!)]"));
+								"[npc2.speech(Конечно, если ты хочешь это увидеть!)]",
+								"[npc2.speech(Мне это нравится!)]",
+								"[npc2.speech(Без проблем! Я получу от этого удовольствие!)]"));
 						
 					} else {
 						sb.append("<br/><br/>"
 								+UtilText.returnStringAtRandom(
-									"Furrowing [npc2.her] eyebrows as [npc.name] [npc.verb(ask)] this, [npc2.name] quickly [npc2.verb(shut)] [npc.herHim] down, ",
-									"Clearly not liking the fact that [npc.nameIs] asking something of [npc2.herHim], [npc2.name] responds, "));
+									"Нахмурив брови [npc2.her], пока [npc.name] [npc.verb(ask)] это, [npc2.name] быстро [npc2.verb(shut)] [npc.herHim] вниз, ",
+									"Явно не в восторге от того, что [npc.nameIs] просит чего-то у [npc2.herHim], [npc2.name] отвечает, "));
 		
 						sb.append(UtilText.returnStringAtRandom(
-								"[npc2.speech(I'll do whatever I feel like doing!)]",
-								"[npc2.speech(I'm not listening to you!)]",
-								"[npc2.speech(I'll do what I want!)]"));
+								"[npc2.speech(Я буду делать всё, что мне вздумается!)]",
+								"[npc2.speech(Я тебя не слушаю!)]",
+								"[npc2.speech(Буду делать то, что хочу!)]"));
 					}
 				}
 			}
@@ -8781,22 +8476,22 @@ public class GenericOrgasms {
 		
 		@Override
 		public String getActionTitle() {
-			return "Encourage knotting";
+			return "Поощрять узловатость";
 		}
 
 		@Override
 		public String getActionDescription() {
 			if(isSelfFucking()) {
-				return UtilText.parse(getCharacterBeingFucked(), "You can tell that [npc.name] is fast approaching [npc.her] orgasm. Encourage [npc.herHim] to push [npc.her] knot inside and fill [npc.herself] with [npc.her] cum.");
+				return UtilText.parse(getCharacterBeingFucked(), "Видно, что [npc.name] стремительно приближается к [npc.her] оргазму. Поощрить [npc.herHim] протолкнуть [npc.her] узел внутрь и наполнить [npc.herself] [npc.her] спермой.");
 				
 			} else {
 				if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.MOUTH).contains(getCharacterBeingFucked())) {
 					return UtilText.parse(getCharacterBeingFucked(), Main.sex.getCharacterTargetedForSexAction(this),
-							"You can tell that [npc2.name] is fast approaching [npc2.her] orgasm. Encourage [npc2.herHim] to push [npc2.her] knot into [npc.namePos] mouth and fill [npc.her] stomach with [npc2.her] cum.");
+							"Видно, что [npc2.name] стремительно приближается к [npc2.her] оргазму. Поощрить [npc2.herHim] протолкнуть [npc2.her] узел в рот [npc.namePos] и наполнить [npc.her] желудок [npc2.her] спермой.");
 	
 				} else {
 					return UtilText.parse(getCharacterBeingFucked(), Main.sex.getCharacterTargetedForSexAction(this),
-							"You can tell that [npc2.name] is fast approaching [npc2.her] orgasm. Encourage [npc2.herHim] to push [npc2.her] knot into [npc.name] and fill [npc.name] with [npc2.her] cum.");
+							"Видно, что [npc2.name] стремительно приближается к [npc2.her] оргазму. Поощрить [npc2.herHim] протолкнуть [npc2.her] узел в [npc.name] и наполнить [npc.name] [npc2.her] спермой.");
 				}
 			}
 		}
@@ -8851,8 +8546,7 @@ public class GenericOrgasms {
 
 			if(isSelfFucking()) {
 				if(Main.sex.getCharacterPerformingAction().isSpeechMuffled() || Main.sex.getCharacterPerformingAction().isMute()) {
-					sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(make)] a series of muffled cries as [npc.she] [npc.verb(try)] to convey to [npc2.name]"
-							+ " that [npc.she] [npc.verb(want)] [npc2.herHim] to knot [npc2.herself] as [npc2.she] [npc2.verb(orgasm)].");
+					sb.append("Точно зная, что [npc.she] [npc.verb(want)], [npc.name] [npc.verb(make)] серия приглушенных криков, пока [npc.she] [npc.verb(try)], чтобы передать [npc2.name], что [npc.she] [npc.verb(want)] [npc2.herHim], чтобы завязать [npc2.herself], пока [npc2.she] [npc2.verb(orgasm)].");
 				
 				} else {
 					boolean petName = false;
@@ -8861,28 +8555,26 @@ public class GenericOrgasms {
 					}
 
 					if(Main.sex.getCharacterTargetedForSexAction(this).isWearingCondom()) {
-						sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] out for [npc2.name] to knot [npc2.herself] as [npc2.she] [npc2.verb(orgasm)],"
-								+" [npc.speech(Don't pull out"+(petName?", [#npc.getPetName(npc2)]":"")+"! Get your knot in and fill up that condom!)]");
+						sb.append("Точно зная, что это [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] наружу, чтобы [npc2.name] мог завязать [npc2.herself], пока [npc2.she] [npc2.verb(orgasm)], [npc.speech(Не вынимай"+(petName?", [#npc.getPetName(npc2)]":"")+"! Завязывайся внутри и наполни этот презерватив!)]");
 						
 					} else {
-						sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] out for [npc2.name] to knot [npc2.herself] as [npc2.she] [npc2.verb(orgasm)],");
+						sb.append("Точно зная, что это [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] наружу, чтобы [npc2.name] мог завязать [npc2.herself], пока [npc2.she] [npc2.verb(orgasm)],");
 
 						if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.VAGINA).contains(getCharacterBeingFucked())) {
 							if(getCharacterBeingFucked().isVisiblyPregnant()) {
-								sb.append(" [npc.speech(Don't pull out"+(petName?", [#npc.getPetName(npc2)]":"")+"! Knot yourself and fill up your pussy!)]");
+								sb.append(" [npc.speech(Не вынимай"+(petName?", [#npc.getPetName(npc2)]":"")+"! Завязывайся сам и наполни свою киску!)]");
 							} else {
-								sb.append(" [npc.speech(Don't pull out"+(petName?", [#npc.getPetName(npc2)]":"")+"! Knot yourself and knock yourself up!)]");
+								sb.append(" [npc.speech(Не вынимай"+(petName?", [#npc.getPetName(npc2)]":"")+"! Завязывайся сам и оплодотвори себя!)]");
 							}
 						} else {
-							sb.append(" [npc.speech(Don't pull out"+(petName?", [#npc.getPetName(npc2)]":"")+"! Knot yourself!)]");
+							sb.append(" [npc.speech(Не вынимай"+(petName?", [#npc.getPetName(npc2)]":"")+"! Завязывайся!)]");
 						}
 					}
 				}
 				
 			} else {
 				if(Main.sex.getCharacterPerformingAction().isSpeechMuffled() || Main.sex.getCharacterPerformingAction().isMute()) {
-					sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(make)] a series of muffled cries as [npc.she] [npc.verb(try)] to convey to [npc2.name]"
-							+ " that [npc.she] [npc.verb(want)] [npc2.herHim] to knot [npc3.name] and cum deep inside");
+					sb.append("Точно зная, что это [npc.she] [npc.verb(want)], [npc.name] [npc.verb(make)] серию приглушенных стонов, пока [npc.she] [npc.verb(try)], чтобы дать понять [npc2.name], что [npc.she] [npc.verb(want)] [npc2.herHim] завязать [npc3.name] и кончить глубоко внутри");
 					if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.VAGINA).contains(getCharacterBeingFucked())) {
 						sb.append(" [npc3.her] [npc3.pussy+].");
 	
@@ -8915,31 +8607,31 @@ public class GenericOrgasms {
 							petName = true;
 						}
 	
-						sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] out for [npc2.name] to ram [npc2.her] knot into");
+						sb.append("Точно зная, что это [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] наружу, чтобы [npc2.name] мог вбить свой [npc2.her] узел в");
 						
 						if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.VAGINA).contains(getCharacterBeingFucked())) {
-							sb.append(" [npc3.namePos] [npc3.pussy+] and cum deep inside of [npc3.herHim], [npc.speech(Knot "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Finish inside of "+targetHerHim+" and fill up that condom!)]");
+							sb.append(" [npc3.namePos] [npc3.pussy+] и кончить глубоко внутри [npc3.herHim], [npc.speech(Завязывайся "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Кончай внутрь "+targetHerHim+" и наполни этот презерватив!)]");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.ANUS).contains(getCharacterBeingFucked())) {
-							sb.append(" [npc3.namePos] [npc3.asshole+] and cum deep inside of [npc3.herHim], [npc.speech(Knot "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Finish inside of "+targetHerHim+" and fill up that condom!)]");
+							sb.append(" [npc3.namePos] [npc3.asshole+] и кончай глубоко в [npc3.herHim], [npc.speech(Узел "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Кончай внутрь "+targetHerHim+" и наполни этот презерватив!)]");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.NIPPLE).contains(getCharacterBeingFucked())) {
-							sb.append(" [npc3.namePos] [npc3.nipple+] and cum deep inside of [npc3.herHim], [npc.speech(Knot "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Finish inside of "+targetHerHim+" and fill up that condom!)]");
+							sb.append(" [npc3.namePos] [npc3.nipple+] и кончай глубоко в [npc3.herHim], [npc.speech(Узел "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Кончай внутрь "+targetHerHim+" и наполни этот презерватив!)]");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.NIPPLE_CROTCH).contains(getCharacterBeingFucked())) {
-							sb.append(" [npc3.namePos] [npc3.nippleCrotch+] and cum deep inside of [npc3.herHim], [npc.speech(Knot "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Finish inside of "+targetHerHim+" and fill up that condom!)]");
+							sb.append(" [npc3.namePos] [npc3.nippleCrotch+] и кончай глубоко в [npc3.herHim], [npc.speech(Узел "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Кончай внутрь "+targetHerHim+" и наполни этот презерватив!)]");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.SPINNERET).contains(getCharacterBeingFucked())) {
-							sb.append(" [npc3.namePos] [npc3.spinneret+] and cum deep inside of [npc3.herHim], [npc.speech(Knot "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Finish inside of "+targetHerHim+" and fill up that condom!)]");
+							sb.append(" [npc3.namePos] [npc3.spinneret+] и кончаешь глубоко внутри [npc3.herHim], [npc.speech(Узел "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Кончай внутрь "+targetHerHim+" и наполни этот презерватив!)]");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.URETHRA_PENIS).contains(getCharacterBeingFucked())) {
-							sb.append(" [npc3.namePos] [npc3.urethraPenis+] and cum deep inside of [npc3.herHim], [npc.speech(Knot "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Finish inside of "+targetHerHim+" and fill up that condom!)]");
+							sb.append(" [npc3.namePos] [npc3.urethraPenis+] и кончаешь глубоко внутри [npc3.herHim], [npc.speech(Узел "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Кончай внутрь "+targetHerHim+" и наполни этот презерватив!)]");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.URETHRA_VAGINA).contains(getCharacterBeingFucked())) {
-							sb.append(" [npc3.namePos] [npc3.urethraVagina+] and cum deep inside of [npc3.herHim], [npc.speech(Knot "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Finish inside of "+targetHerHim+" and fill up that condom!)]");
+							sb.append(" [npc3.namePos] [npc3.urethraVagina+] и кончаешь глубоко внутри [npc3.herHim], [npc.speech(Узел "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Кончай внутрь "+targetHerHim+" и наполни этот презерватив!)]");
 		
 						} else {
-							sb.append(" [npc3.name] and cum deep inside of [npc3.herHim], [npc.speech(Knot "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Finish inside of "+targetHerHim+" and fill up that condom!)]");
+							sb.append(" [npc3.name] и кончаешь глубоко внутри [npc3.herHim], [npc.speech(Узел "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Кончай внутрь "+targetHerHim+" и наполни этот презерватив!)]");
 						}
 						
 					} else {
@@ -8948,41 +8640,34 @@ public class GenericOrgasms {
 							petName = true;
 						}
 	
-						sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] out for [npc2.name] to ram [npc2.her] knot into");
+						sb.append("Точно зная, что это [npc.she] [npc.verb(want)], [npc.name] [npc.verb(cry)] наружу, чтобы [npc2.name] мог вбить свой [npc2.her] узел в");
 						
 						if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.VAGINA).contains(getCharacterBeingFucked())) {
-							sb.append(" [npc3.namePos] [npc3.pussy+] and cum deep inside of [npc3.herHim],"
+							sb.append(" [npc3.namePos] [npc3.pussy+] и кончаешь глубоко внутри [npc3.herHim],"
 										+(getCharacterBeingFucked().isVisiblyPregnant()
-											?" [npc.speech(Knot "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Finish inside of "+targetHerHim+" and stuff "+targetHer+" pussy with your cum!)]"
-											:" [npc.speech(Knot "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Stuff "+targetHer+" pussy with your cum and breed "+targetHerHim+"!)]"));
+											?" [npc.speech(Узел "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Кончай внутрь "+targetHerHim+" и всё такое "+targetHer+" киску своей спермой!)]"
+											:" [npc.speech(Узел "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Всё такое "+targetHer+" заливаешь киской своей спермой и осеменяешь "+targetHerHim+"!)]"));
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.ANUS).contains(getCharacterBeingFucked())) {
-							sb.append(" [npc3.namePos] [npc3.asshole+] and cum deep inside of [npc3.herHim],"
-										+ " [npc.speech(Knot "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Finish inside of "+targetHerHim+" and stuff "+targetHer+" ass with your cum!)]");
+							sb.append(" [npc3.namePos] [npc3.asshole+] и кончай глубоко в [npc3.herHim], [npc.speech(Узел "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Кончай внутрь "+targetHerHim+" и всё такое "+targetHer+" зад своей спермой!)]");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.NIPPLE).contains(getCharacterBeingFucked())) {
-							sb.append(" [npc3.namePos] [npc3.nipple+] and cum deep inside of [npc3.herHim],"
-										+ " [npc.speech(Knot "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Finish inside of "+targetHerHim+" and stuff "+targetHer+" nipple with your cum!)]");
+							sb.append(" [npc3.namePos] [npc3.nipple+] и кончай глубоко в [npc3.herHim], [npc.speech(Узел "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Кончай внутрь "+targetHerHim+" и всё такое "+targetHer+" сосок своей спермой!)]");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.NIPPLE_CROTCH).contains(getCharacterBeingFucked())) {
-							sb.append(" [npc3.namePos] [npc3.nippleCrotch+] and cum deep inside of [npc3.herHim],"
-										+ " [npc.speech(Knot "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Finish inside of "+targetHerHim+" and stuff "+targetHer+" nipple with your cum!)]");
+							sb.append(" [npc3.namePos] [npc3.nippleCrotch+] и кончай глубоко в [npc3.herHim], [npc.speech(Узел "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Кончай внутрь "+targetHerHim+" и всё такое "+targetHer+" сосок своей спермой!)]");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.SPINNERET).contains(getCharacterBeingFucked())) {
-							sb.append(" [npc3.namePos] [npc3.spinneret+] and cum deep inside of [npc3.herHim],"
-										+ " [npc.speech(Knot "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Finish inside of "+targetHerHim+" and stuff "+targetHer+" spinneret with your cum!)]");
+							sb.append(" [npc3.namePos] [npc3.spinneret+] и кончаешь глубоко внутри [npc3.herHim], [npc.speech(Узел "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Кончай внутрь "+targetHerHim+" и всё такое "+targetHer+" паутинный аппарат своей спермой!)]");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.URETHRA_PENIS).contains(getCharacterBeingFucked())) {
-							sb.append(" [npc3.namePos] [npc3.urethraPenis+] and cum deep inside of [npc3.herHim],"
-										+ " [npc.speech(Knot "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Finish inside of "+targetHerHim+" and fill "+targetHer+" balls with your cum!)]");
+							sb.append(" [npc3.namePos] [npc3.urethraPenis+] и кончаешь глубоко внутри [npc3.herHim], [npc.speech(Узел "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Кончай внутрь "+targetHerHim+" и наполнить "+targetHer+" яички своей спермой!)]");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.URETHRA_VAGINA).contains(getCharacterBeingFucked())) {
-							sb.append(" [npc3.namePos] [npc3.urethraVagina+] and cum deep inside of [npc3.herHim],"
-										+ " [npc.speech(Knot "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Finish inside of "+targetHerHim+" and fill "+targetHer+" bladder with your cum!)]");
+							sb.append(" [npc3.namePos] [npc3.urethraVagina+] и кончаешь глубоко внутри [npc3.herHim], [npc.speech(Узел "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Кончай внутрь "+targetHerHim+" и наполнить "+targetHer+" мочевой пузырь своей спермой!)]");
 		
 						} else {
-							sb.append(" [npc3.name] and cum deep inside of [npc3.herHim],"
-										+ " [npc.speech(Knot "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Finish inside of "+targetHerHim+" and stuff "+targetHerHim+" with your cum!)]");
+							sb.append(" [npc3.name] и кончаешь глубоко внутри [npc3.herHim], [npc.speech(Узел "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Кончай внутрь "+targetHerHim+" и всё такое "+targetHerHim+" своей спермой!)]");
 						}
 					}
 				}
@@ -8991,37 +8676,34 @@ public class GenericOrgasms {
 			if(!Main.sex.getCharacterTargetedForSexAction(this).isPlayer() && !Main.sex.isSpectator(Main.sex.getCharacterPerformingAction())) {
 				if(Main.sex.getCharacterTargetedForSexAction(this).isSpeechMuffled() || Main.sex.getCharacterTargetedForSexAction(this).isMute()) {
 					if(Main.sex.isCharacterObeyingTarget(Main.sex.getCharacterTargetedForSexAction(this), Main.sex.getCharacterPerformingAction())) {
-						sb.append("<br/><br/>"
-								+"Grinning as [npc.name] [npc.verb(ask)] this, [npc2.name] [npc2.verb(let)] out a positive-sounding [npc2.moan] in order to let [npc.name] know that that's exactly what [npc2.sheHasFull] planned.");
+						sb.append("<br/><br/>Улыбаясь, когда [npc.name] [npc.verb(ask)] это, [npc2.name] [npc2.verb(let)] положительный [npc2.moan], чтобы дать [npc.name] понять, что это именно то, что [npc2.sheHasFull] планировал.");
 						
 					} else {
-						sb.append("<br/><br/>"
-								+"Furrowing [npc2.her] eyebrows as [npc.name] [npc.verb(ask)] this,"
-								+ " [npc2.name] [npc2.verb(let)] out a negative-sounding [npc2.moan] in order to let [npc.name] know that [npc2.sheIs] not interested in listening to anything [npc.sheHasFull] to say.");
+						sb.append("<br/><br/>Нахмурив [npc2.her] брови, когда [npc.name] [npc.verb(ask)] это, [npc2.name] [npc2.verb(let)] отрицательный [npc2.moan], чтобы дать [npc.name] понять, что [npc2.sheIs] не заинтересован в том, чтобы слушать всё, что [npc.sheHasFull] скажет.");
 					}
 					
 				} else {
 					if(Main.sex.isCharacterObeyingTarget(Main.sex.getCharacterTargetedForSexAction(this), Main.sex.getCharacterPerformingAction())) {
 						sb.append("<br/><br/>"
 								+UtilText.returnStringAtRandom(
-									"Grinning as [npc.name] [npc.verb(ask)] this, [npc2.name] quickly replies in the positive, ",
-									"Letting out [npc.a_moan+] after hearing what it is [npc.nameIs] asking of [npc2.herHim], [npc2.name] responds, "));
+									"Улыбаясь, когда [npc.name] [npc.verb(ask)] это, [npc2.name] быстро отвечает утвердительно, ",
+									"Издавая [npc.a_moan+] после того, как услышала, что именно [npc.nameIs] просит у [npc2.herHim], [npc2.name] отвечает, "));
 		
 						sb.append(UtilText.returnStringAtRandom(
-								"[npc2.speech(Sure, if that's what you want to see!)]",
-								"[npc2.speech(Sounds good to me!)]",
-								"[npc2.speech(Sure thing! I'm going to enjoy this!)]"));
+								"[npc2.speech(Конечно, если ты хочешь это увидеть!)]",
+								"[npc2.speech(Мне это нравится!)]",
+								"[npc2.speech(Без проблем! Я получу от этого удовольствие!)]"));
 						
 					} else {
 						sb.append("<br/><br/>"
 								+UtilText.returnStringAtRandom(
-									"Furrowing [npc2.her] eyebrows as [npc.name] [npc.verb(ask)] this, [npc2.name] quickly [npc2.verb(shut)] [npc.herHim] down, ",
-									"Clearly not liking the fact that [npc.nameIs] asking something of [npc2.herHim], [npc2.name] responds, "));
+									"Нахмурив брови [npc2.her], пока [npc.name] [npc.verb(ask)] это, [npc2.name] быстро [npc2.verb(shut)] [npc.herHim] вниз, ",
+									"Явно не в восторге от того, что [npc.nameIs] просит чего-то у [npc2.herHim], [npc2.name] отвечает, "));
 		
 						sb.append(UtilText.returnStringAtRandom(
-								"[npc2.speech(I'll do whatever I feel like doing!)]",
-								"[npc2.speech(I'm not listening to you!)]",
-								"[npc2.speech(I'll do what I want!)]"));
+								"[npc2.speech(Я буду делать всё, что мне вздумается!)]",
+								"[npc2.speech(Я тебя не слушаю!)]",
+								"[npc2.speech(Буду делать то, что хочу!)]"));
 					}
 				}
 			}
@@ -9067,21 +8749,21 @@ public class GenericOrgasms {
 		
 		@Override
 		public String getActionTitle() {
-			return "Encourage pullout";
+			return "Поощрить прерванный акт";
 		}
 
 		@Override
 		public String getActionDescription() {
 			if(isSelfFucking()) {
-				return UtilText.parse(getCharacterBeingFucked(), "You can tell that [npc.name] is fast approaching [npc.her] orgasm. Encourage [npc.herHim] to pull out of [npc.herself] as [npc.she] [npc.verb(orgasm)].");
+				return UtilText.parse(getCharacterBeingFucked(), "Видно, что [npc.name] стремительно приближается к [npc.her] оргазму. Поощрить [npc.herHim] вытащиться из [npc.herself], пока [npc.she] [npc.verb(orgasm)].");
 				
 			} else {
 				if(!isRealPenisFuckingCharacter(getCharacterBeingFucked(), Main.sex.getCharacterTargetedForSexAction(this))) {
 					return UtilText.parse(getCharacterBeingFucked(), Main.sex.getCharacterTargetedForSexAction(this),
-							"You can tell that [npc2.name] is fast approaching [npc2.her] orgasm. Encourage [npc2.herHim] to pull [npc2.her] dildo out of [npc.name] as [npc2.she] [npc2.verb(orgasm)].");
+							"Видно, что [npc2.name] стремительно приближается к [npc2.her] оргазму. Поощрить [npc2.herHim] вытащить [npc2.her] дилдо из [npc.name], пока [npc2.she] [npc2.verb(orgasm)].");
 				}
 				return UtilText.parse(getCharacterBeingFucked(), Main.sex.getCharacterTargetedForSexAction(this),
-						"You can tell that [npc2.name] is fast approaching [npc2.her] orgasm. Encourage [npc2.herHim] to pull out of [npc.name] as [npc2.she] [npc2.verb(orgasm)].");
+						"Видно, что [npc2.name] стремительно приближается к [npc2.her] оргазму. Поощрить [npc2.herHim] вытащиться из [npc.name], пока [npc2.she] [npc2.verb(orgasm)].");
 			}
 		}
 
@@ -9149,8 +8831,7 @@ public class GenericOrgasms {
 
 			if(isSelfFucking()) {
 				if(Main.sex.getCharacterPerformingAction().isSpeechMuffled() || Main.sex.getCharacterPerformingAction().isMute()) {
-					sb.append("Knowing exactly what it is [npc.she] [npc.verb(want)], [npc.name] [npc.verb(make)] a series of muffled cries as [npc.she] [npc.verb(try)] to convey to [npc2.name]"
-							+ " that [npc.she] [npc.verb(want)] [npc2.herHim] to keep fucking [npc2.herself] as [npc2.she] [npc2.verb(orgasm)].");
+					sb.append("Точно понимая, что это [npc.she] [npc.verb(want)], [npc.name] [npc.verb(make)] серию приглушенных стонов, пока [npc.she] [npc.verb(try)], чтобы дать [npc2.name] понять, что [npc.she] [npc.verb(want)] [npc2.herHim], и продолжать трахать [npc2.herself], пока [npc2.she] [npc2.verb(orgasm)].");
 				
 				} else {
 					boolean petName = false;
@@ -9159,20 +8840,19 @@ public class GenericOrgasms {
 					}
 
 					if(!isRealPenisFuckingCharacter(getCharacterBeingFucked(), Main.sex.getCharacterTargetedForSexAction(this)) || Main.sex.getCharacterTargetedForSexAction(this).isWearingCondom()) {
-						sb.append("Not wanting [npc2.name] to continue fucking [npc2.herself] through [npc2.her] orgasm, [npc.name] [npc.verb(cry)] out for [npc2.herHim] to stop,"
-								+" [npc.speech(Pull out"+(petName?", [#npc.getPetName(npc2)]":"")+"!)]");
+						sb.append("Не желая, чтобы [npc2.name] продолжал трахать [npc2.herself] до самого [npc2.her] оргазма, [npc.name] [npc.verb(cry)], чтобы [npc2.herHim] остановился, [npc.speech(Вытащись!"+(petName?", [#npc.getPetName(npc2)]":"")+"!)]");
 						
 					} else {
-						sb.append("Not wanting [npc2.name] to continue fucking [npc2.herself] through [npc2.her] orgasm, [npc.name] [npc.verb(cry)] out for [npc2.herHim] to stop,");
+						sb.append("Не желая, чтобы [npc2.name] продолжал трахать [npc2.herself] до самого [npc2.her] оргазма, [npc.name] [npc.verb(cry)], чтобы [npc2.herHim] остановился,");
 
 						if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.VAGINA).contains(getCharacterBeingFucked())) {
 							if(getCharacterBeingFucked().isVisiblyPregnant()) {
-								sb.append(" [npc.speech(Pull out"+(petName?", [#npc.getPetName(npc2)]":"")+"! Don't cum in your pussy!)]");
+								sb.append(" [npc.speech(Вынимай"+(petName?", [#npc.getPetName(npc2)]":"")+"! Не кончай в свою киску!)]");
 							} else {
-								sb.append(" [npc.speech(Pull out"+(petName?", [#npc.getPetName(npc2)]":"")+"! Don't knock yourself up!)]");
+								sb.append(" [npc.speech(Вынимай"+(petName?", [#npc.getPetName(npc2)]":"")+"! Не забеременей!)]");
 							}
 						} else {
-							sb.append(" [npc.speech(Pull out"+(petName?", [#npc.getPetName(npc2)]":"")+"!)]");
+							sb.append(" [npc.speech(Вынимай"+(petName?", [#npc.getPetName(npc2)]":"")+"!)]");
 						}
 					}
 				}
@@ -9181,106 +8861,82 @@ public class GenericOrgasms {
 				if(Main.sex.getCharacterPerformingAction().isSpeechMuffled() || Main.sex.getCharacterPerformingAction().isMute()) {
 					if(!isRealPenisFuckingCharacter(getCharacterBeingFucked(), Main.sex.getCharacterTargetedForSexAction(this))) {
 						if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.VAGINA).contains(getCharacterBeingFucked())) {
-							sb.append("Not wanting [npc2.name] to continue fucking [npc3.namePos] [npc3.pussy+] through [npc2.her] orgasm, [npc.name] [npc.verb(make)] a series of muffled cries as [npc.she] [npc.verb(try)] to convey to [npc2.herHim]"
-									+ " that [npc.she] [npc.verb(want)] [npc2.herHim] to pull out.");
+							sb.append("Не желая, чтобы [npc2.name] продолжал трахать [npc3.namePos] [npc3.pussy+] до самого [npc2.her] оргазма, [npc.name] [npc.verb(make)] серию приглушенных стонов, пока [npc.she] [npc.verb(try)], чтобы передать [npc2.herHim], что [npc.she] [npc.verb(want)] [npc2.herHim] вынуть.");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.ANUS).contains(getCharacterBeingFucked())) {
-							sb.append("Not wanting [npc2.name] to continue fucking [npc3.namePos] [npc3.asshole+] through [npc2.her] orgasm, [npc.name] [npc.verb(make)] a series of muffled cries as [npc.she] [npc.verb(try)] to convey to [npc2.herHim]"
-									+ " that [npc.she] [npc.verb(want)] [npc2.herHim] to pull out.");
+							sb.append("Не желая, чтобы [npc2.name] продолжал трахать [npc3.namePos] [npc3.asshole+] до самого [npc2.her] оргазма, [npc.name] [npc.verb(make)] серию приглушенных стонов, пока [npc.she] [npc.verb(try)], чтобы передать [npc2.herHim], что [npc.she] [npc.verb(want)] [npc2.herHim] вынуть.");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.NIPPLE).contains(getCharacterBeingFucked())) {
-							sb.append("Not wanting [npc2.name] to continue fucking [npc3.namePos] [npc3.nipple+] through [npc2.her] orgasm, [npc.name] [npc.verb(make)] a series of muffled cries as [npc.she] [npc.verb(try)] to convey to [npc2.herHim]"
-									+ " that [npc.she] [npc.verb(want)] [npc2.herHim] to pull out.");
+							sb.append("Не желая, чтобы [npc2.name] продолжал трахать [npc3.namePos] [npc3.nipple+] до самого [npc2.her] оргазма, [npc.name] [npc.verb(make)] серию приглушенных стонов, пока [npc.she] [npc.verb(try)], чтобы передать [npc2.herHim], что [npc.she] [npc.verb(want)] [npc2.herHim] вынуть.");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.SPINNERET).contains(getCharacterBeingFucked())) {
-							sb.append("Not wanting [npc2.name] to continue fucking [npc3.namePos] [npc3.spinneret+] through [npc2.her] orgasm, [npc.name] [npc.verb(make)] a series of muffled cries as [npc.she] [npc.verb(try)] to convey to [npc2.herHim]"
-									+ " that [npc.she] [npc.verb(want)] [npc2.herHim] to pull out.");
+							sb.append("Не желая, чтобы [npc2.name] продолжал трахать [npc3.namePos] [npc3.spinneret+] до самого [npc2.her] оргазма, [npc.name] [npc.verb(make)] серию приглушенных стонов, пока [npc.she] [npc.verb(try)], чтобы передать [npc2.herHim], что [npc.she] [npc.verb(want)] [npc2.herHim] вынуть.");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.BREAST).contains(getCharacterBeingFucked())) {
-							sb.append("Not wanting [npc2.name] to continue fucking [npc3.namePos] [npc3.breasts+] through [npc2.her] orgasm, [npc.name] [npc.verb(make)] a series of muffled cries as [npc.she] [npc.verb(try)] to convey to [npc2.herHim]"
-									+ " that [npc.she] [npc.verb(want)] [npc2.herHim] to pull out.");
+							sb.append("Не желая, чтобы [npc2.name] продолжал трахать [npc3.namePos] [npc3.breasts+] сквозь [npc2.her] оргазм, [npc.name] [npc.verb(make)] серию приглушенных стонов, пока [npc.she] [npc.verb(try)], чтобы дать понять [npc2.herHim], что [npc.she] [npc.verb(want)] [npc2.herHim] вытащить.");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaPenetration.FOOT).contains(getCharacterBeingFucked())) {
-							sb.append("Not wanting [npc2.name] to continue fucking [npc3.namePos] [npc3.feet+] through [npc2.her] orgasm, [npc.name] [npc.verb(make)] a series of muffled cries as [npc.she] [npc.verb(try)] to convey to [npc2.herHim]"
-									+ " that [npc.she] [npc.verb(want)] [npc2.herHim] to pull away.");
+							sb.append("Не желая, чтобы [npc2.name] продолжал трахать [npc3.namePos] [npc3.feet+] сквозь [npc2.her] оргазм, [npc.name] [npc.verb(make)] серию приглушенных стонов, пока [npc.she] [npc.verb(try)], чтобы дать понять [npc2.herHim], что [npc.she] [npc.verb(want)] [npc2.herHim] отстраниться.");
 							
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.ARMPITS).contains(getCharacterBeingFucked())) {
-							sb.append("Not wanting [npc2.name] to continue fucking [npc3.namePos] [npc3.armpit+] through [npc2.her] orgasm, [npc.name] [npc.verb(make)] a series of muffled cries as [npc.she] [npc.verb(try)] to convey to [npc2.herHim]"
-									+ " that [npc.she] [npc.verb(want)] [npc2.herHim] to pull away.");
+							sb.append("Не желая, чтобы [npc2.name] продолжал трахать [npc3.namePos] [npc3.armpit+] сквозь [npc2.her] оргазм, [npc.name] [npc.verb(make)] серию приглушенных стонов, пока [npc.she] [npc.verb(try)], чтобы дать понять [npc2.herHim], что [npc.she] [npc.verb(want)] [npc2.herHim] отстраниться.");
 							
 						} else {
-							sb.append("Not wanting [npc2.name] to continue fucking [npc3.name] through [npc2.her] orgasm, [npc.name] [npc.verb(make)] a series of muffled cries as [npc.she] [npc.verb(try)] to convey to [npc2.herHim]"
-									+ " that [npc.she] [npc.verb(want)] [npc2.herHim] to pull out.");
+							sb.append("Не желая, чтобы [npc2.name] продолжал трахать [npc3.name] сквозь [npc2.her] оргазм, [npc.name] [npc.verb(make)] серию приглушенных стонов, пока [npc.she] [npc.verb(try)], чтобы дать понять [npc2.herHim], что [npc.she] [npc.verb(want)] [npc2.herHim] вытащить.");
 						}
 		
 					} else {
 						if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.VAGINA).contains(getCharacterBeingFucked())) {
-							sb.append("Not wanting [npc2.name] to cum inside [npc3.namePos] [npc3.pussy+], [npc.name] [npc.verb(make)] a series of muffled cries as [npc.she] [npc.verb(try)] to convey to [npc2.herHim]"
-									+ " that [npc.she] [npc.verb(want)] [npc2.herHim] to pull out.");
+							sb.append("Не желая, чтобы [npc2.name] кончил внутрь [npc3.namePos] [npc3.pussy+], [npc.name] [npc.verb(make)] серию приглушенных стонов, пока [npc.she] [npc.verb(try)], чтобы дать понять [npc2.herHim], что [npc.she] [npc.verb(want)] [npc2.herHim] вытащить.");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.ANUS).contains(getCharacterBeingFucked())) {
-							sb.append("Not wanting [npc2.name] to cum inside [npc3.namePos] [npc3.asshole+], [npc.name] [npc.verb(make)] a series of muffled cries as [npc.she] [npc.verb(try)] to convey to [npc2.herHim]"
-									+ " that [npc.she] [npc.verb(want)] [npc2.herHim] to pull out.");
+							sb.append("Не желая, чтобы [npc2.name] кончил внутри [npc3.namePos] [npc3.asshole+], [npc.name] [npc.verb(make)] серию приглушенных стонов, пока [npc.she] [npc.verb(try)], чтобы дать понять [npc2.herHim], что [npc.she] [npc.verb(want)] [npc2.herHim], чтобы он вытащил член.");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.NIPPLE).contains(getCharacterBeingFucked())) {
-							sb.append("Not wanting [npc2.name] to cum inside [npc3.namePos] [npc3.nipple+], [npc.name] [npc.verb(make)] a series of muffled cries as [npc.she] [npc.verb(try)] to convey to [npc2.herHim]"
-									+ " that [npc.she] [npc.verb(want)] [npc2.herHim] to pull out.");
+							sb.append("Не желая, чтобы [npc2.name] кончил внутри [npc3.namePos] [npc3.nipple+], [npc.name] [npc.verb(make)] серию приглушенных стонов, пока [npc.she] [npc.verb(try)], чтобы дать понять [npc2.herHim], что [npc.she] [npc.verb(want)] [npc2.herHim], чтобы он вытащил член.");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.SPINNERET).contains(getCharacterBeingFucked())) {
-							sb.append("Not wanting [npc2.name] to cum inside [npc3.namePos] [npc3.spinneret+], [npc.name] [npc.verb(make)] a series of muffled cries as [npc.she] [npc.verb(try)] to convey to [npc2.herHim]"
-									+ " that [npc.she] [npc.verb(want)] [npc2.herHim] to pull out.");
+							sb.append("Не желая, чтобы [npc2.name] кончил внутри [npc3.namePos] [npc3.spinneret+], [npc.name] [npc.verb(make)] серию приглушенных стонов, пока [npc.she] [npc.verb(try)], чтобы дать понять [npc2.herHim], что [npc.she] [npc.verb(want)] [npc2.herHim], чтобы он вытащил член.");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.BREAST).contains(getCharacterBeingFucked())) {
-							sb.append("Not wanting [npc2.name] to cum all over [npc3.namePos] [npc3.breasts+], [npc.name] [npc.verb(make)] a series of muffled cries as [npc.she] [npc.verb(try)] to convey to [npc2.herHim]"
-									+ " that [npc.she] [npc.verb(want)] [npc2.herHim] to pull out.");
+							sb.append("Не желая, чтобы [npc2.name] кончил на всю [npc3.namePos] [npc3.breasts+], [npc.name] [npc.verb(make)] серию приглушенных стонов, пока [npc.she] [npc.verb(try)], чтобы дать понять [npc2.herHim], что [npc.she] [npc.verb(want)] [npc2.herHim], чтобы он вытащил член.");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaPenetration.FOOT).contains(getCharacterBeingFucked())) {
-							sb.append("Not wanting [npc2.name] to cum all over [npc3.namePos] [npc3.feet+], [npc.name] [npc.verb(make)] a series of muffled cries as [npc.she] [npc.verb(try)] to convey to [npc2.herHim]"
-									+ " that [npc.she] [npc.verb(want)] [npc2.herHim] to pull out.");
+							sb.append("Не желая, чтобы [npc2.name] кончил на всю [npc3.namePos] [npc3.feet+], [npc.name] [npc.verb(make)] серию приглушенных стонов, пока [npc.she] [npc.verb(try)], чтобы дать понять [npc2.herHim], что [npc.she] [npc.verb(want)] [npc2.herHim], чтобы он вытащил член.");
 							
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.ARMPITS).contains(getCharacterBeingFucked())) {
-							sb.append("Not wanting [npc2.name] to cum all over [npc3.namePos] [npc3.armpit+], [npc.name] [npc.verb(make)] a series of muffled cries as [npc.she] [npc.verb(try)] to convey to [npc2.herHim]"
-									+ " that [npc.she] [npc.verb(want)] [npc2.herHim] to pull away.");
+							sb.append("Не желая, чтобы [npc2.name] кончил прямо на [npc3.namePos] [npc3.armpit+], [npc.name] [npc.verb(make)] серию приглушенных стонов, когда [npc.she] [npc.verb(try)], чтобы дать [npc2.herHim] понять, что [npc.she] [npc.verb(want)], чтобы тот [npc2.herHim] отстранился.");
 							
 						} else {
-							sb.append("Not wanting [npc2.name] to cum inside [npc3.name], [npc.name] [npc.verb(make)] a series of muffled cries as [npc.she] [npc.verb(try)] to convey to [npc2.herHim]"
-									+ " that [npc.she] [npc.verb(want)] [npc2.herHim] to pull out.");
+							sb.append("Не желая, чтобы [npc2.name] кончил внутрь [npc3.name], [npc.name] [npc.verb(make)] серию приглушенных стонов, когда [npc.she] [npc.verb(try)], чтобы дать [npc2.herHim] понять, что [npc.she] [npc.verb(want)], чтобы тот [npc2.herHim] кончил наружу.");
 						}
 					}
 					
 				} else {
 					if(!isRealPenisFuckingCharacter(getCharacterBeingFucked(), Main.sex.getCharacterTargetedForSexAction(this))) {
 						if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.VAGINA).contains(getCharacterBeingFucked())) {
-							sb.append("Not wanting [npc2.name] to continue fucking [npc3.name] through [npc2.her] orgasm, [npc.name] [npc.verb(cry)] out for [npc2.herHim] to stop,"
-									+" [npc.speech("+targetSheHas+" had enough! Pull out of "+targetHer+" pussy when you're going to cum!)]");
+							sb.append("Не желая, чтобы [npc2.name] продолжал трахать [npc3.name] во время [npc2.her] оргазма, [npc.name] [npc.verb(cry)], чтобы [npc2.herHim] остановился, [npc.speech(\""+targetSheHas+" хватит! Вынимай из "+targetHer+" киски, когда собираешься кончить!)]");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.ANUS).contains(getCharacterBeingFucked())) {
-							sb.append("Not wanting [npc2.name] to continue fucking [npc3.name] through [npc2.her] orgasm, [npc.name] [npc.verb(cry)] out for [npc2.herHim] to stop,"
-									+" [npc.speech("+targetSheHas+" had enough! Pull out of "+targetHer+" ass when you're going to cum!)]");
+							sb.append("Не желая, чтобы [npc2.name] продолжал трахать [npc3.name] во время [npc2.her] оргазма, [npc.name] [npc.verb(cry)], чтобы [npc2.herHim] остановился, [npc.speech(\""+targetSheHas+" хватит! Вынимай из "+targetHer+" жопы, когда собираешься кончить!)]");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.NIPPLE).contains(getCharacterBeingFucked())) {
-							sb.append("Not wanting [npc2.name] to continue fucking [npc3.name] through [npc2.her] orgasm, [npc.name] [npc.verb(cry)] out for [npc2.herHim] to stop,"
-									+" [npc.speech("+targetSheHas+" had enough! Pull out of "+targetHer+" nipple when you're going to cum!)]");
+							sb.append("Не желая, чтобы [npc2.name] продолжал трахать [npc3.name] во время [npc2.her] оргазма, [npc.name] [npc.verb(cry)], чтобы [npc2.herHim] остановился, [npc.speech(\""+targetSheHas+" хватит! Вынимай из "+targetHer+" сосок, когда ты сейчас кончишь!)]");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.SPINNERET).contains(getCharacterBeingFucked())) {
-							sb.append("Not wanting [npc2.name] to continue fucking [npc3.name] through [npc2.her] orgasm, [npc.name] [npc.verb(cry)] out for [npc2.herHim] to stop,"
-									+" [npc.speech("+targetSheHas+" had enough! Pull out of "+targetHer+" spinneret when you're going to cum!)]");
+							sb.append("Не желая, чтобы [npc2.name] продолжал трахать [npc3.name] во время [npc2.her] оргазма, [npc.name] [npc.verb(cry)], чтобы [npc2.herHim] остановился, [npc.speech(\""+targetSheHas+" хватит! Вынимай из "+targetHer+" паутинницу, когда ты сейчас кончишь!)]");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.BREAST).contains(getCharacterBeingFucked())) {
-							sb.append("Not wanting [npc2.name] to continue fucking [npc3.name] through [npc2.her] orgasm, [npc.name] [npc.verb(cry)] out for [npc2.herHim] to stop,"
-									+" [npc.speech("+targetSheHas+" had enough! Get away from "+targetHer+" tits when you're going to cum!)]");
+							sb.append("Не желая, чтобы [npc2.name] продолжал трахать [npc3.name] во время [npc2.her] оргазма, [npc.name] [npc.verb(cry)], чтобы [npc2.herHim] остановился, [npc.speech(\""+targetSheHas+" хватит с меня! Отойди от "+targetHer+" сиськи, когда ты сейчас кончишь!)]");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaPenetration.FOOT).contains(getCharacterBeingFucked())) {
-							sb.append("Not wanting [npc2.name] to continue fucking [npc3.name] through [npc2.her] orgasm, [npc.name] [npc.verb(cry)] out for [npc2.herHim] to stop,"
-									+" [npc.speech("+targetSheHas+" had enough! Get away from "+targetHer+" feet when you're going to cum!)]");
+							sb.append("Не желая, чтобы [npc2.name] продолжал трахать [npc3.name] во время [npc2.her] оргазма, [npc.name] [npc.verb(cry)], чтобы [npc2.herHim] остановился, [npc.speech(\""+targetSheHas+" хватит с меня! Отойди от "+targetHer+" ступни, когда ты сейчас кончишь!)]");
 							
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.ARMPITS).contains(getCharacterBeingFucked())) {
-							sb.append("Not wanting [npc2.name] to continue fucking [npc3.name] through [npc2.her] orgasm, [npc.name] [npc.verb(cry)] out for [npc2.herHim] to stop,"
-									+" [npc.speech("+targetSheHas+" had enough! Get away from "+targetHer+" pit when you're going to cum!)]");
+							sb.append("Не желая, чтобы [npc2.name] продолжал трахать [npc3.name] во время [npc2.her] оргазма, [npc.name] [npc.verb(cry)], чтобы [npc2.herHim] остановился, [npc.speech(\""+targetSheHas+" хватит с меня! Отойди от "+targetHer+" ямку, когда ты сейчас кончишь!)]");
 							
 						} else {
-							sb.append("Not wanting [npc2.name] to continue fucking [npc3.name] through [npc2.her] orgasm, [npc.name] [npc.verb(cry)] out for [npc2.herHim] to stop,"
-									+" [npc.speech("+targetSheHas+" had enough! Pull away from "+targetHerHim+" when you're going to cum!)]");
+							sb.append("Не желая, чтобы [npc2.name] продолжал трахать [npc3.name] во время [npc2.her] оргазма, [npc.name] [npc.verb(cry)], чтобы [npc2.herHim] остановился, [npc.speech(\""+targetSheHas+" хватит с меня! Отстранись от "+targetHerHim+" когда ты сейчас кончишь!)]");
 						}
 		
 					} else if(Main.sex.getCharacterTargetedForSexAction(this).isWearingCondom()) {
@@ -9290,40 +8946,31 @@ public class GenericOrgasms {
 						}
 						
 						if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.VAGINA).contains(getCharacterBeingFucked())) {
-							sb.append("Not wanting [npc2.name] to continue fucking [npc3.namePos] [npc.pussy+] through [npc2.her] orgasm, [npc.name] [npc.verb(cry)] out for [npc2.herHim] to stop,"
-									+" [npc.speech(Pull out of "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! I want to see your condom inflating!)]");
+							sb.append("Не желая, чтобы [npc2.name] продолжал трахать [npc3.namePos] [npc.pussy+] через [npc2.her] оргазм, [npc.name] [npc.verb(cry)], чтобы [npc2.herHim] остановился, [npc.speech(Вытащи из "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"свой член! Я хочу видеть, как раздувается твой презерватив!)]");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.ANUS).contains(getCharacterBeingFucked())) {
-							sb.append("Not wanting [npc2.name] to continue fucking [npc3.namePos] [npc3.asshole+] through [npc2.her] orgasm, [npc.name] [npc.verb(cry)] out for [npc2.herHim] to stop,"
-									+" [npc.speech(Pull out of "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! I want to see your condom inflating!)]");
+							sb.append("Не желая, чтобы [npc2.name] продолжал трахать [npc3.namePos] [npc3.asshole+] сквозь [npc2.her] оргазм, [npc.name] [npc.verb(cry)], чтобы [npc2.herHim] остановился, [npc.speech(Вытащи из "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"свой член! Я хочу видеть, как раздувается твой презерватив!)]");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.MOUTH).contains(getCharacterBeingFucked())) {
-							sb.append("Not wanting [npc2.name] to continue fucking [npc3.namePos] [npc3.face+] through [npc2.her] orgasm, [npc.name] [npc.verb(cry)] out for [npc2.herHim] to stop,"
-									+" [npc.speech(Pull out of "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! I want to see your condom inflating!)]");
+							sb.append("Не желая, чтобы [npc2.name] продолжал трахать [npc3.namePos] [npc3.face+] через [npc2.her] оргазм, [npc.name] [npc.verb(cry)], чтобы [npc2.herHim] остановился, [npc.speech(Вытащи из "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"свой член! Я хочу видеть, как раздувается твой презерватив!)]");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.NIPPLE).contains(getCharacterBeingFucked())) {
-							sb.append("Not wanting [npc2.name] to continue fucking [npc3.namePos] [npc3.nipple+] through [npc2.her] orgasm, [npc.name] [npc.verb(cry)] out for [npc2.herHim] to stop,"
-									+" [npc.speech(Pull out of "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! I want to see your condom inflating!)]");
+							sb.append("Не желая, чтобы [npc2.name] продолжал трахать [npc3.namePos] [npc3.nipple+] сквозь [npc2.her] оргазм, [npc.name] [npc.verb(cry)], чтобы [npc2.herHim] остановился, [npc.speech(Вытащи из "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"свой член! Я хочу видеть, как раздувается твой презерватив!)]");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.SPINNERET).contains(getCharacterBeingFucked())) {
-							sb.append("Not wanting [npc2.name] to continue fucking [npc3.namePos] [npc3.spinneret+] through [npc2.her] orgasm, [npc.name] [npc.verb(cry)] out for [npc2.herHim] to stop,"
-									+" [npc.speech(Pull out of "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! I want to see your condom inflating!)]");
+							sb.append("Не желая, чтобы [npc2.name] продолжал трахать [npc3.namePos] [npc3.spinneret+] через [npc2.her] оргазм, [npc.name] [npc.verb(cry)] чтобы [npc2.herHim] остановился, [npc.speech(Вытащи из "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"свой член! Я хочу видеть, как раздувается твой презерватив!)]");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.BREAST).contains(getCharacterBeingFucked())) {
-							sb.append("Not wanting [npc2.name] to continue fucking [npc3.namePos] [npc3.breasts+] through [npc2.her] orgasm, [npc.name] [npc.verb(cry)] out for [npc2.herHim] to stop,"
-									+ " [npc.speech(Pull back"+(petName?", [#npc.getPetName(npc2)]":"")+"! I want to see your condom inflating!)]");
+							sb.append("Не желая, чтобы [npc2.name] продолжал трахать [npc3.namePos] [npc3.breasts+] во время [npc2.her] оргазма, [npc.name] [npc.verb(cry)], чтобы [npc2.herHim] остановился, [npc.speech(Отстранись"+(petName?", [#npc.getPetName(npc2)]":"")+"свой член! Я хочу видеть, как раздувается твой презерватив!)]");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaPenetration.FOOT).contains(getCharacterBeingFucked())) {
-							sb.append("Not wanting [npc2.name] to continue fucking [npc3.namePos] [npc3.feet+] through [npc2.her] orgasm, [npc.name] [npc.verb(cry)] out for [npc2.herHim] to stop,"
-									+ " [npc.speech(Pull back"+(petName?", [#npc.getPetName(npc2)]":"")+"! I want to see your condom inflating!)]");
+							sb.append("Не желая, чтобы [npc2.name] продолжал трахать [npc3.namePos] [npc3.feet+] во время [npc2.her] оргазма, [npc.name] [npc.verb(cry)], чтобы [npc2.herHim] остановился, [npc.speech(Отстранись"+(petName?", [#npc.getPetName(npc2)]":"")+"свой член! Я хочу видеть, как раздувается твой презерватив!)]");
 							
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.ARMPITS).contains(getCharacterBeingFucked())) {
-							sb.append("Not wanting [npc2.name] to continue fucking [npc3.namePos] [npc3.armpit+] through [npc2.her] orgasm, [npc.name] [npc.verb(cry)] out for [npc2.herHim] to stop,"
-									+ " [npc.speech(Pull back"+(petName?", [#npc.getPetName(npc2)]":"")+"! I want to see your condom inflating!)]");
+							sb.append("Не желая, чтобы [npc2.name] продолжал трахать [npc3.namePos] [npc3.armpit+] во время [npc2.her] оргазма, [npc.name] [npc.verb(cry)], чтобы [npc2.herHim] остановился, [npc.speech(Отстранись"+(petName?", [#npc.getPetName(npc2)]":"")+"свой член! Я хочу видеть, как раздувается твой презерватив!)]");
 							
 						} else {
-							sb.append("Not wanting [npc2.name] to continue fucking [npc3.name] through [npc2.her] orgasm, [npc.name] [npc.verb(cry)] out for [npc2.herHim] to stop,"
-									+ " [npc.speech(Pull back"+(petName?", [#npc.getPetName(npc2)]":"")+"! I want to see your condom inflating!)]");
+							sb.append("Не желая, чтобы [npc2.name] продолжал трахать [npc3.name] во время [npc2.her] оргазма, [npc.name] [npc.verb(cry)], чтобы [npc2.herHim] остановился, [npc.speech(Отстранись"+(petName?", [#npc.getPetName(npc2)]":"")+"свой член! Я хочу видеть, как раздувается твой презерватив!)]");
 						}
 						
 					} else {
@@ -9333,42 +8980,34 @@ public class GenericOrgasms {
 						}
 		
 						if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.VAGINA).contains(getCharacterBeingFucked())) {
-							sb.append("Not wanting [npc2.name] to cum inside of [npc3.name], [npc.name] [npc.verb(cry)] out for [npc2.herHim] to stop,"
+							sb.append("Не желая, чтобы [npc2.name] кончил внутрь [npc3.name], [npc.name] [npc.verb(cry)], чтобы [npc2.herHim] остановился,"
 									+(getCharacterBeingFucked().isVisiblyPregnant()
-											?" [npc.speech(I don't want you cumming inside of "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Pull out of "+targetHer+" pussy!)]"
-											:" [npc.speech(I don't want "+targetHerHim+" getting pregnant"+(petName?", [#npc.getPetName(npc2)]":"")+"! Pull out of "+targetHer+" pussy before you cum!)]"));
+											?" [npc.speech(Я не хочу, чтобы ты кончил внутри "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Вытащи из "+targetHer+" киски!)]"
+											:" [npc.speech(Я не хочу "+targetHerHim+" забеременеть}"+(petName?", [#npc.getPetName(npc2)]":"")+"! Вытащи из "+targetHer+" киску перед тем, как кончишь!)]"));
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.ANUS).contains(getCharacterBeingFucked())) {
-							sb.append("Not wanting [npc2.name] to cum inside of [npc3.name], [npc.name] [npc.verb(cry)] out for [npc2.herHim] to stop,"
-									+" [npc.speech(I don't want you cumming inside of "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Pull out of "+targetHer+" ass!)]");
+							sb.append("Не желая, чтобы [npc2.name] кончил внутрь [npc3.name], [npc.name] [npc.verb(cry)], чтобы [npc2.herHim] остановилась, [npc.speech(Не хочу, чтобы ты кончил в "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Вытащи из "+targetHer+" зад!)]");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.MOUTH).contains(getCharacterBeingFucked())) {
-							sb.append("Not wanting [npc2.name] to cum inside of [npc3.name], [npc.name] [npc.verb(cry)] out for [npc2.herHim] to stop,"
-									+" [npc.speech(I don't want you cumming inside of "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Pull out of "+targetHer+" throat!)]");
+							sb.append("Не желая, чтобы [npc2.name] кончил внутрь [npc3.name], [npc.name] [npc.verb(cry)], чтобы [npc2.herHim] остановилась, [npc.speech(Не хочу, чтобы ты кончил в "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Вытащи из "+targetHer+" глотку!)]");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.NIPPLE).contains(getCharacterBeingFucked())) {
-							sb.append("Not wanting [npc2.name] to cum inside of [npc3.name], [npc.name] [npc.verb(cry)] out for [npc2.herHim] to stop,"
-									+" [npc.speech(I don't want you cumming inside of "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Pull out of "+targetHer+" nipple!)]");
+							sb.append("Не желая, чтобы [npc2.name] кончил внутрь [npc3.name], [npc.name] [npc.verb(cry)], чтобы [npc2.herHim] остановилась, [npc.speech(Не хочу, чтобы ты кончил в "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Вытащи из "+targetHer+" сосок!)]");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.SPINNERET).contains(getCharacterBeingFucked())) {
-							sb.append("Not wanting [npc2.name] to cum inside of [npc3.name], [npc.name] [npc.verb(cry)] out for [npc2.herHim] to stop,"
-									+" [npc.speech(I don't want you cumming inside of "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Pull out of "+targetHer+" spinneret!)]");
+							sb.append("Не желая, чтобы [npc2.name] кончил внутрь [npc3.name], [npc.name] [npc.verb(cry)], чтобы [npc2.herHim] остановилась, [npc.speech(Не хочу, чтобы ты кончил в "+targetHerHim+(petName?", [#npc.getPetName(npc2)]":"")+"! Вытащи из "+targetHer+" паутину!)]");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.BREAST).contains(getCharacterBeingFucked())) {
-							sb.append("Not wanting [npc2.name] to cum all over [npc3.name], [npc.name] [npc.verb(cry)] out for [npc2.herHim] to stop,"
-									+" [npc.speech(I don't want you cumming on "+targetHer+" tits"+(petName?", [#npc.getPetName(npc2)]":"")+"! Pull away from "+targetHerHim+"!)]");
+							sb.append("Не желая, чтобы [npc2.name] кончил на всю [npc3.name], [npc.name] [npc.verb(cry)], чтобы [npc2.herHim] остановилась, [npc.speech(Не хочу, чтобы ты кончил на "+targetHer+" сиськи"+(petName?", [#npc.getPetName(npc2)]":"")+"! Отстраниться от "+targetHerHim+"!)]");
 		
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaPenetration.FOOT).contains(getCharacterBeingFucked())) {
-							sb.append("Not wanting [npc2.name] to cum all over [npc3.name], [npc.name] [npc.verb(cry)] out for [npc2.herHim] to stop,"
-									+" [npc.speech(I don't want you cumming on "+targetHer+" [npc3.feet]"+(petName?", [#npc.getPetName(npc2)]":"")+"! Pull away from "+targetHerHim+"!)]");
+							sb.append("Не желая, чтобы [npc2.name] кончил на всю [npc3.name], [npc.name] [npc.verb(cry)], чтобы [npc2.herHim] остановилась, [npc.speech(Не хочу, чтобы ты кончил на "+targetHer+" [npc3.feet]"+(petName?", [#npc.getPetName(npc2)]":"")+"! Отстраниться от "+targetHerHim+"!)]");
 							
 						} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaPenetration.PENIS, SexAreaOrifice.ARMPITS).contains(getCharacterBeingFucked())) {
-							sb.append("Not wanting [npc2.name] to cum all over [npc3.name], [npc.name] [npc.verb(cry)] out for [npc2.herHim] to stop,"
-									+" [npc.speech(I don't want you cumming on "+targetHer+" pit"+(petName?", [#npc.getPetName(npc2)]":"")+"! Pull away from "+targetHerHim+"!)]");
+							sb.append("Не желая, чтобы [npc2.name] кончил на всю [npc3.name], [npc.name] [npc.verb(cry)], чтобы [npc2.herHim] остановилась, [npc.speech(Не хочу, чтобы ты кончил на "+targetHer+" ямы"+(petName?", [#npc.getPetName(npc2)]":"")+"! Отстраниться от "+targetHerHim+"!)]");
 							
 						} else {
-							sb.append("Not wanting [npc2.name] to cum all over [npc3.name], [npc.name] [npc.verb(cry)] out for [npc2.herHim] to stop,"
-									+" [npc.speech(I don't want you cumming on "+targetHer+""+(petName?", [#npc.getPetName(npc2)]":"")+"! Pull away from "+targetHerHim+"!)]");
+							sb.append("Не желая, чтобы [npc2.name] кончил на всю [npc3.name], [npc.name] [npc.verb(cry)], чтобы [npc2.herHim] остановилась, [npc.speech(Не хочу, чтобы ты кончил на "+targetHer+""+(petName?", [#npc.getPetName(npc2)]":"")+"! Отстраниться от "+targetHerHim+"!)]");
 						}
 					}
 				}
@@ -9377,37 +9016,34 @@ public class GenericOrgasms {
 			if(!Main.sex.getCharacterTargetedForSexAction(this).isPlayer() && !Main.sex.isSpectator(Main.sex.getCharacterPerformingAction())) {
 				if(Main.sex.getCharacterTargetedForSexAction(this).isSpeechMuffled() || Main.sex.getCharacterTargetedForSexAction(this).isMute()) {
 					if(Main.sex.isCharacterObeyingTarget(Main.sex.getCharacterTargetedForSexAction(this), Main.sex.getCharacterPerformingAction())) {
-						sb.append("<br/><br/>"
-								+"Grinning as [npc.name] [npc.verb(ask)] this, [npc2.name] [npc2.verb(let)] out a positive-sounding [npc2.moan] in order to let [npc.name] know that that's exactly what [npc2.sheHasFull] planned.");
+						sb.append("<br/><br/>Улыбаясь, когда [npc.name] [npc.verb(ask)] это, [npc2.name] [npc2.verb(let)] положительный [npc2.moan], чтобы дать [npc.name] понять, что это именно то, что [npc2.sheHasFull] планировал.");
 						
 					} else {
-						sb.append("<br/><br/>"
-								+"Furrowing [npc2.her] eyebrows as [npc.name] [npc.verb(ask)] this,"
-								+ " [npc2.name] [npc2.verb(let)] out a negative-sounding [npc2.moan] in order to let [npc.name] know that [npc2.sheIs] not interested in listening to anything [npc.sheHasFull] to say.");
+						sb.append("<br/><br/>Нахмурив [npc2.her] брови, когда [npc.name] [npc.verb(ask)] это, [npc2.name] [npc2.verb(let)] отрицательный [npc2.moan], чтобы дать [npc.name] понять, что [npc2.sheIs] не заинтересован в том, чтобы слушать всё, что [npc.sheHasFull] скажет.");
 					}
 					
 				} else {
 					if(Main.sex.isCharacterObeyingTarget(Main.sex.getCharacterTargetedForSexAction(this), Main.sex.getCharacterPerformingAction())) {
 						sb.append("<br/><br/>"
 								+UtilText.returnStringAtRandom(
-									"Grinning as [npc.name] [npc.verb(ask)] this, [npc2.name] quickly replies in the positive, ",
-									"Letting out [npc.a_moan+] after hearing what it is [npc.nameIs] asking of [npc2.herHim], [npc2.name] responds, "));
+									"Улыбаясь, когда [npc.name] [npc.verb(ask)] это, [npc2.name] быстро отвечает утвердительно, ",
+									"Издавая [npc.a_moan+] после того, как услышала, что именно [npc.nameIs] просит у [npc2.herHim], [npc2.name] отвечает, "));
 		
 						sb.append(UtilText.returnStringAtRandom(
-								"[npc2.speech(Sure, if that's what you want to see!)]",
-								"[npc2.speech(Sounds good to me!)]",
-								"[npc2.speech(Sure thing! I'm going to enjoy this!)]"));
+								"[npc2.speech(Конечно, если ты хочешь это увидеть!)]",
+								"[npc2.speech(Мне это нравится!)]",
+								"[npc2.speech(Без проблем! Я получу от этого удовольствие!)]"));
 						
 					} else {
 						sb.append("<br/><br/>"
 								+UtilText.returnStringAtRandom(
-									"Furrowing [npc2.her] eyebrows as [npc.name] [npc.verb(ask)] this, [npc2.name] quickly [npc2.verb(shut)] [npc.herHim] down, ",
-									"Clearly not liking the fact that [npc.nameIs] asking something of [npc2.herHim], [npc2.name] responds, "));
+									"Нахмурив брови [npc2.her], пока [npc.name] [npc.verb(ask)] это, [npc2.name] быстро [npc2.verb(shut)] [npc.herHim] вниз, ",
+									"Явно не в восторге от того, что [npc.nameIs] просит чего-то у [npc2.herHim], [npc2.name] отвечает, "));
 		
 						sb.append(UtilText.returnStringAtRandom(
-								"[npc2.speech(I'll do whatever I feel like doing!)]",
-								"[npc2.speech(I'm not listening to you!)]",
-								"[npc2.speech(I'll do what I want!)]"));
+								"[npc2.speech(Я буду делать всё, что мне вздумается!)]",
+								"[npc2.speech(Я тебя не слушаю!)]",
+								"[npc2.speech(Буду делать то, что хочу!)]"));
 					}
 				}
 			}
@@ -9437,11 +9073,11 @@ public class GenericOrgasms {
 			SexParticipantType.SELF) {
 		@Override
 		public String getActionTitle() {
-			return "Orgasm";
+			return "Оргазм";
 		}
 		@Override
 		public String getActionDescription() {
-			return "You've reached your climax, and can't hold back your orgasm any longer.";
+			return "Вы достигли климакса и больше не можете сдерживать оргазм.";
 		}
 		@Override
 		public boolean isBaseRequirementsMet() {
@@ -9496,46 +9132,44 @@ public class GenericOrgasms {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Denied!";
+			return "Отказ!";
 		}
 		@Override
 		public String getActionDescription() {
-			return "You were denied at the last moment!";
+			return "Вам отказали в самый последний момент!";
 		}
 		@Override
 		public String getDescription() {
 			if(isPerformingCharacterTotallyImmobilised()) {
 				if(Main.sex.getCharacterPerformingAction().isAsleep()) {
-					return "[npc.Name] uncomfortably [npc.verb(shuffle)] about in [npc.her] sleep, but other than that [npc.she] [npc.do]n't react to having had [npc.her] orgasm denied.";
+					return "[npc.Name] неуютно [npc.verb(shuffle)] во сне в [npc.her], но в остальном [npc.she] [npc.do] нет реакции на то, что [npc.her] оргазм был прерван.";
 				} else {
-					return "[npc.Name] [npc.verb(remain)] completely motionless and [npc.do]n't react to having had [npc.her] orgasm denied.";
+					return "[npc.Name] [npc.verb(remain)] совершенно неподвижно и [npc.do] не реагирует на то, что ей [npc.her] отказали в оргазме.";
 				}
 			}
 			
 			if(Main.sex.getCharacterPerformingAction().isSpeechMuffled() || Main.sex.getCharacterPerformingAction().isMute()) {
 				switch(Main.sex.getSexPace(Main.sex.getCharacterPerformingAction())) {
 					case SUB_RESISTING:
-						return UtilText.returnStringAtRandom("[npc.Name] [npc.verb(let)] out a distressed, muffled cry, making it clear that [npc.sheIs] having a bad time.");
+						return UtilText.returnStringAtRandom("[npc.Name] [npc.verb(let)] приглушенным, полным страдания криком, ясно давая понять, что [npc.sheIs] приходится несладко.");
 					default:
 						if(Main.sex.getCharacterPerformingAction().hasFetish(Fetish.FETISH_DENIAL_SELF)) {
-							return UtilText.returnStringAtRandom("[npc.Name] [npc.verb(let)] out an erotic, muffled cry, making it clear that [npc.she] [npc.verb(enjoy)] having [npc.her] orgasms denied.");
+							return UtilText.returnStringAtRandom("[npc.Name] [npc.verb(let)] эротичный, приглушенный крик, ясно давая понять, что [npc.she] [npc.verb(enjoy)] лишена [npc.her] оргазмов.");
 						} else {
-							return UtilText.returnStringAtRandom("[npc.Name] [npc.verb(let)] out a dismayed, muffled cry, making it clear that [npc.sheIs] desperate to be allowed to orgasm.");
+							return UtilText.returnStringAtRandom("[npc.Name] [npc.verb(let)] разочарованный, приглушенный крик, ясно давая понять, что [npc.sheIs] отчаянно хочет, чтобы ей позволили кончить.");
 						}
 				}
 				
 			} else {
 				switch(Main.sex.getSexPace(Main.sex.getCharacterPerformingAction())) {
 					case SUB_RESISTING:
-						return UtilText.returnStringAtRandom("[npc.speech(You've had your fun! Now leave me alone!)] [npc.name] [npc.verb(scream)], [npc.speech(D-Don't make me go through that again!)]");
+						return UtilText.returnStringAtRandom("[npc.speech(Ты уже повеселился! А теперь оставь меня в покое!)] [npc.name] [npc.verb(scream)], [npc.speech(Н-не заставляй меня проходить через это снова!)]");
 					default:
 						if(Main.sex.getCharacterPerformingAction().hasFetish(Fetish.FETISH_DENIAL_SELF)) {
 							return UtilText.returnStringAtRandom(
-									"[npc.speech(I was so close!)] [npc.name] [npc.verb(whine)]."
-									+ " The erotic tone of [npc.her] voice makes it clear that [npc.sheIs] actually enjoying being denied, and is simply acting as [npc.she] [npc.verb(go)] on to playfully protest,"
-									+ "[npc.speech(Let me cum next time!)]");
+									"[npc.speech(Я была так близка!)] [npc.name] [npc.verb(whine)]. Эротичный тон [npc.her] голоса ясно дает понять, что [npc.sheIs] на самом деле наслаждается тем, что ей отказывают, и просто ведет себя как [npc.she] [npc.verb(go)], игриво протестуя: [npc.speech(Дай мне кончить в следующий раз!)]");
 						} else {
-							return UtilText.returnStringAtRandom("[npc.speech(No! I was so close!)] [npc.name] [npc.verb(wail)] in dismay, [npc.speech(Let me cum next time!)]");
+							return UtilText.returnStringAtRandom("[npc.speech(Нет! Я была так близка!)] [npc.name] [npc.verb(wail)] в смятении, [npc.speech(Дай мне кончить в следующий раз!)]");
 						}
 				}
 			}
