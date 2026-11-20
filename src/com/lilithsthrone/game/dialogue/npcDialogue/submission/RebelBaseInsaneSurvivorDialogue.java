@@ -21,7 +21,7 @@ public class RebelBaseInsaneSurvivorDialogue {
 		return Main.game.getActiveNPC();
 	}
 	
-	public static final DialogueNode INSANE_SURVIVOR_ATTACK = new DialogueNode("A Living Ghost", "A strange figure in the corner.", true) {
+	public static final DialogueNode INSANE_SURVIVOR_ATTACK = new DialogueNode("Живой призрак", "Странная фигура в углу.", true) {
 		@Override
 		public String getAuthor() {
 				return "DSG";
@@ -37,22 +37,22 @@ public class RebelBaseInsaneSurvivorDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new ResponseCombat("Fight", "[npc.She] seems determined to fight you. Oblige [npc.herHim].",
+				return new ResponseCombat("Сразиться", "[npc.She], похоже, настроен сразиться с тобой. Подыграй [npc.herHim].",
 						getAttacker(), 
 						Util.newHashMapOfValues(
-						new Value<>(getAttacker(), UtilText.parse(getAttacker(), "[npc.speech(I'll fucking end you, demon scum!)]"))));
+						new Value<>(getAttacker(), UtilText.parse(getAttacker(), "[npc.speech(Я тебя, демонская мразь, на куски порву!)]"))));
 			}
 			else if (index == 2) {
-				return new Response("Talk", "You get the feeling [npc.she] is beyond reason but it might be worth a try.", INSANE_SURVIVOR_TALK_ATTEMPT);
+				return new Response("Поговорить", "У тебя такое чувство, что [npc.she] уже лишился рассудка, но попытка не пытка.", INSANE_SURVIVOR_TALK_ATTEMPT);
 			}
 			else if (index == 3 && Main.game.getPlayer().getMoney() <= 0) {
-				return new Response("Offer money", "Your empty pockets don't give you the means to try this.", null);
+				return new Response("Предложить деньги", "Твои пустые карманы не дают возможности даже попробовать.", null);
 			}
 			else if (index == 3) {
-				return new Response("Offer money", "While [npc.she] probably isn't after money, a simple offer couldn't hurt...could it?", INSANE_SURVIVOR_BRIBE_ATTEMPT);
+				return new Response("Предложить деньги", "Хотя [npc.she] вряд ли гонится за деньгами, простое предложение не повредит... ведь так?", INSANE_SURVIVOR_BRIBE_ATTEMPT);
 			}
 			else if (index == 4) {
-				return new Response("Surrender", "[npc.Her] kit might be ragged but it still looks serious. You might not be able to win this.", INSANE_SURVIVOR_SURRENDER_ATTEMPT);
+				return new Response("Сдаться", "Снаряжение [npc.Her] может и потрепанное, но выглядит серьезно. Возможно, тебе не удастся победить.", INSANE_SURVIVOR_SURRENDER_ATTEMPT);
 			}
 			else {
 				return null;
@@ -60,7 +60,7 @@ public class RebelBaseInsaneSurvivorDialogue {
 		}	 
 	};
 	
-	public static final DialogueNode INSANE_SURVIVOR_TALK_ATTEMPT = new DialogueNode("Talk Attempt", "", true) {
+	public static final DialogueNode INSANE_SURVIVOR_TALK_ATTEMPT = new DialogueNode("Попытка разговора", "", true) {
 		@Override
 		public String getAuthor() {
 				return "DSG";
@@ -76,16 +76,16 @@ public class RebelBaseInsaneSurvivorDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new ResponseCombat("Fight", "[npc.She] can't be reasoned with. Defend yourself!",
+				return new ResponseCombat("Сразиться", "С [npc.She] бесполезно договариваться. Защищайся!",
 						getAttacker(), 
 						Util.newHashMapOfValues(
-						new Value<>(getAttacker(), UtilText.parse(getAttacker(), "[npc.speech(I'll fucking end you, demon scum!)]"))));
+						new Value<>(getAttacker(), UtilText.parse(getAttacker(), "[npc.speech(Я тебя, демонская мразь, на куски порву!)]"))));
 			}
 			return null;
 		}
 	};
 	
-	public static final DialogueNode INSANE_SURVIVOR_BRIBE_ATTEMPT = new DialogueNode("Bribe Attempt", "", true) {
+	public static final DialogueNode INSANE_SURVIVOR_BRIBE_ATTEMPT = new DialogueNode("Попытка подкупа", "", true) {
 		@Override
 		public String getAuthor() {
 			return "DSG";
@@ -101,16 +101,16 @@ public class RebelBaseInsaneSurvivorDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new ResponseCombat("Fight", "[npc.She] can't be bought. Defend yourself!",
+				return new ResponseCombat("Сразиться", "[npc.She] не купишь. Защищайся!",
 						getAttacker(), 
 						Util.newHashMapOfValues(
-						new Value<>(getAttacker(), UtilText.parse(getAttacker(), "[npc.speech(I'll fucking end you, demon scum!)]"))));
+						new Value<>(getAttacker(), UtilText.parse(getAttacker(), "[npc.speech(Я тебя, демонская мразь, на куски порву!)]"))));
 			}
 			return null;
 		}
 	};
 	
-	public static final DialogueNode INSANE_SURVIVOR_SURRENDER_ATTEMPT = new DialogueNode("Surrendered!", "Know when to fold 'em.", true) {
+	public static final DialogueNode INSANE_SURVIVOR_SURRENDER_ATTEMPT = new DialogueNode("Сдался!", "Нужно знать, когда пора сбросить карты.", true) {
 		@Override
 		public String getAuthor() {
 			return "DSG";
@@ -126,16 +126,16 @@ public class RebelBaseInsaneSurvivorDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new ResponseCombat("Defend yourself", "[npc.She] doesn't think your surrender is genuine, leaving you with little choice.",
+				return new ResponseCombat("Защищаться", "[npc.She] не верит, что твоя сдача искренняя, так что у тебя почти не остается выбора.",
 						getAttacker(), 
 						Util.newHashMapOfValues(
-						new Value<>(getAttacker(), UtilText.parse(getAttacker(), "[npc.speech(I'll fucking end you, demon scum!)]"))));
+						new Value<>(getAttacker(), UtilText.parse(getAttacker(), "[npc.speech(Я тебя, демонская мразь, на куски порву!)]"))));
 			}
 			return null;
 		}
 	};
 	
-	public static final DialogueNode INSANE_SURVIVOR_VICTORY = new DialogueNode("Victory!", "", true) {
+	public static final DialogueNode INSANE_SURVIVOR_VICTORY = new DialogueNode("Победа!", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("encounters/submission/rebelBase/InsaneSurvivorAttack", "VICTORY", getAttacker()));
@@ -157,13 +157,13 @@ public class RebelBaseInsaneSurvivorDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Continue", "There's no sign of the stranger anywhere. Might as well carry on your way...", Main.game.getDefaultDialogue(false));
+				return new Response("Продолжить", "Незнакомца нигде не видно. Можно и дальше идти своим путем...", Main.game.getDefaultDialogue(false));
 			}
 			return null;
 		}	   
 	};
 	
-	public static final DialogueNode INSANE_SURVIVOR_DEFEATED = new DialogueNode("Defeated!", "", true) {
+	public static final DialogueNode INSANE_SURVIVOR_DEFEATED = new DialogueNode("Побежден!", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("encounters/submission/rebelBase/InsaneSurvivorAttack", "DEFEATED", getAttacker()));
@@ -186,7 +186,7 @@ public class RebelBaseInsaneSurvivorDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Continue", "There's no sign of the stranger anywhere. Might as well carry on your way...", Main.game.getDefaultDialogue(false));
+				return new Response("Продолжить", "Незнакомца нигде не видно. Можно и дальше идти своим путем...", Main.game.getDefaultDialogue(false));
 			}
 			return null;
 		}  

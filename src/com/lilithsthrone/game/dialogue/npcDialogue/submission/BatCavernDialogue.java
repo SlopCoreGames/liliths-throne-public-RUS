@@ -68,19 +68,19 @@ public class BatCavernDialogue {
 			if(isCompanionDialogue()) {
 				return "slimeCompanions";
 			}
-			return "slime";
+			return "слайм";
 			
 		} if(getMugger().getRace()==Race.BAT_MORPH) {
 			if(isCompanionDialogue()) {
 				return "batCompanions";
 			}
-			return "bat";
+			return "летучая мышь";
 			
 		} else {
 			if(isCompanionDialogue()) {
 				return "genericCompanions";
 			}
-			return "generic";
+			return "общий";
 		}
 	}
 
@@ -116,7 +116,7 @@ public class BatCavernDialogue {
 		return AffectionLevel.getAttitudeDescription(getMugger(), Main.game.getPlayer(), true);
 	}
 
-	public static final DialogueNode CAVERN_ATTACK = new DialogueNode("Assaulted!", "A figure jumps out from the shadows!", true) {
+	public static final DialogueNode CAVERN_ATTACK = new DialogueNode("Нападение!", "Из теней выскакивает фигура!", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			if(!isWantsToFight()) { // Catch for if the player has somehow raised this npc's affection without using the talk option. Should be impossible but someone managed it somehow (maybe with mods)
@@ -246,7 +246,7 @@ public class BatCavernDialogue {
 			
 			if(isWantsToFight()) {
 				if (index == 1) {
-					return new ResponseCombat("Fight", "Stand up for yourself and fight [npc.name]!", getMugger()) {
+					return new ResponseCombat("Сразиться", "Побори за себя и сразись с [npc.name]!", getMugger()) {
 						@Override
 						public void effects() {
 							applyPregnancyReactions();
@@ -255,11 +255,11 @@ public class BatCavernDialogue {
 					
 				} else if (index == 2) {
 					if(Main.game.getPlayer().getMoney()<Main.game.getDialogueFlags().getMuggerDemand2()) {
-						return new Response("Offer money ("+UtilText.formatAsMoney(Main.game.getDialogueFlags().getMuggerDemand2(), "span")+")",
-								"You don't have enough money to offer to pay [npc.name] off. You'll have to either fight [npc.herHim] or offer [npc.herHim] your body!", null);
+						return new Response("Предложить деньги ("+UtilText.formatAsMoney(Main.game.getDialogueFlags().getMuggerDemand2(), "охват")+")",
+								"У тебя недостаточно денег, чтобы откупиться от [npc.name]. Тебе придется либо сразиться с [npc.herHim], либо предложить [npc.herHim] свое тело!", null);
 					} else {
-						return new Response("Offer money ("+UtilText.formatAsMoney(Main.game.getDialogueFlags().getMuggerDemand2(), "span")+")",
-								"Offer to pay [npc.name] "+Util.intToString(Main.game.getDialogueFlags().getMuggerDemand2())+" flames to leave you alone.", Main.game.getDefaultDialogue(false)) {
+						return new Response("Предложить деньги ("+UtilText.formatAsMoney(Main.game.getDialogueFlags().getMuggerDemand2(), "охват")+")",
+								"Предложить заплатить [npc.name] "+Util.intToString(Main.game.getDialogueFlags().getMuggerDemand2())+" Огни, чтобы он оставил тебя в покое.", Main.game.getDefaultDialogue(false)) {
 							@Override
 							public void effects() {
 								applyPregnancyReactions();
@@ -271,9 +271,8 @@ public class BatCavernDialogue {
 					
 				} else if (index == 3) {
 					if(getMugger().isAttractedTo(Main.game.getPlayer())) {
-						return new ResponseSex("Offer body",
-								"Offer your body to [npc.name] so that you can avoid a violent confrontation."
-									+"<br/>[style.italicsSex(Repeatedly submitting to [npc.name] will eventually lead to [npc.herHim] demanding that you become [npc.her] bitch...)]",
+						return new ResponseSex("Предложить свое тело",
+								"Предложить свое тело [npc.name], чтобы избежать жестокого столкновения.<br/>[style.italicsSex(Постоянная покорность перед [npc.name] в конечном итоге приведет к тому, что [npc.herHim] заставит тебя стать [npc.her] сучкой...)]",
 								Util.newArrayListOfValues(Fetish.FETISH_SUBMISSIVE), null, Fetish.FETISH_SUBMISSIVE.getAssociatedCorruptionLevel(),
 								null, null, null,
 								true, false,
@@ -300,14 +299,12 @@ public class BatCavernDialogue {
 						};
 						
 					} else {
-						return new Response("Offer body", "You can tell that [npc.name] isn't at all interested in having sex with you. You'll either have to offer [npc.herHim] some money, or prepare for a fight!", null);
+						return new Response("Предложить свое тело", "Ты понимаешь, что [npc.name] совсем не заинтересован в сексе с тобой. Тебе придется либо предложить [npc.herHim] немного денег, либо приготовиться к бою!", null);
 					}
 					
 				} else if (index == 4 && getMugger().isApplyingPostCombatTransformations()) {
-					return new Response("Surrender",
-							"Completely surrender to [npc.name] and let [npc.herHim] do whatever [npc.she] wants with your body..."
-									+"<br/>[style.italicsTfGeneric(This will result in [npc.name] trying to get you to drink a transformation potion, before possibly choosing to fuck you!)]."
-									+"<br/>[style.italicsSex(Repeatedly submitting to [npc.name] will eventually lead to [npc.herHim] demanding that you become [npc.her] bitch...)]",
+					return new Response("Сдаться",
+							"Полностью сдаться на милость [npc.name] и позволить [npc.herHim] делать с твоим телом всё, что пожелает [npc.she]...<br/>[style.italicsTfGeneric(Это приведет к тому, что [npc.name] попытается заставить тебя выпить зелье трансформации, прежде чем, возможно, решит трахнуть тебя!)].<br/>[style.italicsSex(Постоянная покорность перед [npc.name] в конечном итоге приведет к тому, что [npc.herHim] заставит тебя стать [npc.her] сучкой...)]",
 								SURRENDER,
 							Util.newArrayListOfValues(Fetish.FETISH_SUBMISSIVE, Fetish.FETISH_TRANSFORMATION_RECEIVING), Fetish.FETISH_SUBMISSIVE.getAssociatedCorruptionLevel(), null, null, null) {
 						@Override
@@ -323,9 +320,9 @@ public class BatCavernDialogue {
 					
 				} else if (index == 5 && getMugger().getRace()==Race.SLIME) {
 					if(!Main.game.getPlayer().hasItemType(ItemType.MUSHROOM)) {
-						return new Response("Offer mushroom", "You don't have any mushrooms to offer to [npc.name]!", null);
+						return new Response("Предложить гриб", "У вас нет грибов, чтобы предложить [npc.name]!", null);
 					} else {
-						return new Response("Offer mushroom", "Offer one of your Glowing Mushrooms to [npc.name] in exchange for leaving you alone.", Main.game.getDefaultDialogue(false)) {
+						return new Response("Предложить гриб", "Предложить один из своих Светящихся грибов [npc.name] в обмен на то, чтобы тебя оставили в покое.", Main.game.getDefaultDialogue(false)) {
 							@Override
 							public void effects() {
 								if(getMugger().isVisiblyPregnant()){
@@ -344,23 +341,23 @@ public class BatCavernDialogue {
 					GameCharacter companion = getMainCompanion();
 	
 					if(!getMugger().isAttractedTo(Main.game.getPlayer())) {
-						return new Response(UtilText.parse(companion, "Offer threesome"),
-								UtilText.parse(getMugger(), companion, "You can tell that [npc.name] isn't at all interested in having sex with you, so wouldn't want to have a threesome..."),
+						return new Response(UtilText.parse(companion, "Предложить секс втроем"),
+								UtilText.parse(getMugger(), companion, "Сразу видно, что [npc.name] совсем не горит желанием трахаться с тобой, так что секс втроем ей вряд ли интересен..."),
 								null);
 						
 					} else if(!getMugger().isAttractedTo(companion)) {
-						return new Response(UtilText.parse(companion, "Offer threesome"),
-								UtilText.parse(getMugger(), companion, "You can tell that [npc.name] isn't at all interested in having sex with [npc2.name], so wouldn't want to have a threesome..."),
+						return new Response(UtilText.parse(companion, "Предложить секс втроем"),
+								UtilText.parse(getMugger(), companion, "Сразу видно, что [npc.name] совсем не горит желанием трахаться с [npc2.name], так что секс втроем ей вряд ли интересен..."),
 								null);
 						
 					} else if(!companion.isAttractedTo(getMugger()) && companion.isAbleToRefuseSexAsCompanion()) {
-						return new Response(UtilText.parse(companion, "Offer threesome"),
-								UtilText.parse(getMugger(), companion, "You can tell that [npc2.name] isn't at all interested in having sex with [npc.name], and you can't force [npc2.herHim] to do so..."),
+						return new Response(UtilText.parse(companion, "Предложить секс втроем"),
+								UtilText.parse(getMugger(), companion, "Сразу видно, что [npc2.name] совсем не горит желанием трахаться с [npc.name], а заставить [npc2.herHim] ты всё равно не сможешь..."),
 								null);
 						
 					} else {
-						return new ResponseSex(UtilText.parse(companion, "Offer threesome"),
-								UtilText.parse(getMugger(), companion, "Offer [npc.name] the opportunity to have sex with both you and [npc2.name] in order to avoid a violent confrontation."),
+						return new ResponseSex(UtilText.parse(companion, "Предложить секс втроем"),
+								UtilText.parse(getMugger(), companion, "Предложить [npc.name] заняться сексом одновременно с тобой и [npc2.name], чтобы избежать кровавой драки."),
 								true, false,
 								new SMGeneric(
 										Util.newArrayListOfValues(getMugger()),
@@ -381,18 +378,18 @@ public class BatCavernDialogue {
 					GameCharacter companion = getMainCompanion();
 	
 					if(!getMugger().isAttractedTo(companion)) {
-						return new Response(UtilText.parse(companion, "Offer [npc.name]"),
-								UtilText.parse(getMugger(), companion, "You can tell that [npc.name] isn't at all interested in having sex with [npc2.name]..."),
+						return new Response(UtilText.parse(companion, "Предложить [npc.name]"),
+								UtilText.parse(getMugger(), companion, "Сразу видно, что [npc.name] совсем не горит желанием трахаться с [npc2.name]..."),
 								null);
 						
 					} else if(!companion.isAttractedTo(getMugger()) && companion.isAbleToRefuseSexAsCompanion()) {
-						return new Response(UtilText.parse(companion, "Offer [npc.name]"),
-								UtilText.parse(getMugger(), companion, "You can tell that [npc2.name] isn't at all interested in having sex with [npc.name], and you can't force [npc2.herHim] to do so..."),
+						return new Response(UtilText.parse(companion, "Предложить [npc.name]"),
+								UtilText.parse(getMugger(), companion, "Сразу видно, что [npc2.name] совсем не горит желанием трахаться с [npc.name], а заставить [npc2.herHim] ты всё равно не сможешь..."),
 								null);
 						
 					} else {
-						return new ResponseSex(UtilText.parse(companion, "Offer [npc.name]"),
-								UtilText.parse(getMugger(), companion, "Tell [npc.name] that [npc.she] can use [npc2.namePos] body in order to avoid a violent confrontation."),
+						return new ResponseSex(UtilText.parse(companion, "Предложить [npc.name]"),
+								UtilText.parse(getMugger(), companion, "Сказать [npc.name], что [npc.she] может использовать тело [npc2.namePos], чтобы избежать кровавой драки."),
 								true, false,
 								new SMGeneric(
 										Util.newArrayListOfValues(getMugger()),
@@ -416,7 +413,7 @@ public class BatCavernDialogue {
 			
 			} else {
 				if (index == 1) {
-					return new Response("Talk", "Talk to [npc.name] for a while in order to get to know [npc.herHim] a little better.", CAVERN_PEACEFUL_TALK) {
+					return new Response("Поговорить", "Поговорите с [npc.name] какое-то время, чтобы получше узнать [npc.herHim].", CAVERN_PEACEFUL_TALK) {
 						@Override
 						public void effects() {
 							applyPregnancyReactions();
@@ -430,11 +427,11 @@ public class BatCavernDialogue {
 					
 				} else if (index == 2) {
 					if(Main.game.getPlayer().getMoney()<Main.game.getDialogueFlags().getMuggerDemand2()) {
-						return new Response("Offer money ("+UtilText.formatAsMoney(Main.game.getDialogueFlags().getMuggerDemand2(), "span")+")",
-								"You don't have enough money to offer [npc.name] any.", null);
+						return new Response("Предложить деньги ("+UtilText.formatAsMoney(Main.game.getDialogueFlags().getMuggerDemand2(), "охват")+")",
+								"У вас недостаточно денег, чтобы предложить что-то [npc.name].", null);
 					} else {
-						return new Response("Offer money ("+UtilText.formatAsMoney(Main.game.getDialogueFlags().getMuggerDemand2(), "span")+")",
-								"Offer [npc.name] some money to help [npc.herHim] buy food and clothing.", CAVERN_PEACEFUL_OFFER_MONEY) {
+						return new Response("Предложить деньги ("+UtilText.formatAsMoney(Main.game.getDialogueFlags().getMuggerDemand2(), "охват")+")",
+								"Предложите [npc.name] немного денег, чтобы помочь [npc.herHim] купить еду и одежду.", CAVERN_PEACEFUL_OFFER_MONEY) {
 							@Override
 							public void effects() {
 								applyPregnancyReactions();
@@ -450,7 +447,7 @@ public class BatCavernDialogue {
 					
 				} else if (index == 3) {
 					if(getMugger().isAttractedTo(Main.game.getPlayer())) {
-						return new ResponseSex("Sex (dom)", "Take the dominant role and have sex with [npc.name].",
+						return new ResponseSex("Секс (доминант)", "Возьмите на себя доминирующую роль и займитесь сексом с [npc.name].",
 								Util.newArrayListOfValues(Fetish.FETISH_DOMINANT), null, Fetish.FETISH_DOMINANT.getAssociatedCorruptionLevel(),
 								null, null, null,
 								true, true,
@@ -467,12 +464,12 @@ public class BatCavernDialogue {
 						};
 						
 					} else {
-						return new Response("Sex (dom)", "You can tell that [npc.name] isn't interested in having sex with you...", null);
+						return new Response("Секс (доминант)", "Вы чувствуете, что [npc.name] не особо заинтересована в сексе с вами...", null);
 					}
 					
 				} else if (index == 4) {
 					if(getMugger().isAttractedTo(Main.game.getPlayer())) {
-						return new ResponseSex("Sex (sub)", "Offer your body to [npc.name].",
+						return new ResponseSex("Секс (сабмиссив)", "Предложите свое тело [npc.name].",
 								Util.newArrayListOfValues(Fetish.FETISH_SUBMISSIVE), null, Fetish.FETISH_SUBMISSIVE.getAssociatedCorruptionLevel(),
 								null, null, null,
 								true, true,
@@ -489,28 +486,27 @@ public class BatCavernDialogue {
 						};
 						
 					} else {
-						return new Response("Sex (sub)", "You can tell that [npc.name] isn't interested in having sex with you...", null);
+						return new Response("Секс (сабмиссив)", "Вы чувствуете, что [npc.name] не особо заинтересована в сексе с вами...", null);
 					}
 					
 				} if (index == 5) {
 					if(!Main.game.getPlayer().hasQuest(QuestLine.SIDE_ACCOMMODATION) || !getMugger().isAffectionHighEnoughToInviteHome()) {
-						return new Response("Offer room",
-								"You feel as though it would be best to spend some more time getting to know [npc.name] before inviting [npc.herHim] back to Lilaya's mansion...<br/>"
-								+ "[style.italics(Requires [npc.name] to have at least "+AffectionLevel.POSITIVE_THREE_CARING.getMinimumValue()+" affection towards you.)]",
+						return new Response("Предложить комнату",
+								"Вам кажется, что было бы лучше провести больше времени, узнавая [npc.name], прежде чем приглашать [npc.herHim] обратно в особняк Lilaya...<br/>[style.italics(Требуется, чтобы [npc.name] имела хотя бы "+AffectionLevel.POSITIVE_THREE_CARING.getMinimumValue()+" немного привязанности к вам.)]",
 								null);
 						
 					} else if(!Main.game.getPlayer().isQuestCompleted(QuestLine.SIDE_ACCOMMODATION)) {
-						return new Response("Offer room",
-								"You'll need to get Lilaya's permission before inviting [npc.name] back to her mansion...",
+						return new Response("Предложить комнату",
+								"Вам нужно получить разрешение Lilaya, прежде чем приглашать [npc.name] обратно в её особняк...",
 								null);
 						
 					} else if(!OccupancyUtil.isFreeRoomAvailableForOccupant()) {
-						return new Response("Offer room",
-								"You don't have a suitable room prepared for [npc.name] to move in to. Upgrade one of the empty rooms in Lilaya's house to a 'Guest Room' first.",
+						return new Response("Предложить комнату",
+								"У тебя нет подходящей комнаты, чтобы [npc.name] могла въехать. Сначала улучши одну из пустых комнат в доме Lilaya до «Гостевой комнаты».",
 								null);
 						
 					} else {
-						return new Response("Offer room", "Ask [npc.name] if [npc.she] would like a room in Lilaya's mansion.", CAVERN_PEACEFUL_OFFER_ROOM) {
+						return new Response("Предложить комнату", "Спросить у [npc.name], хочет ли [npc.she] комнату в особняке Lilaya.", CAVERN_PEACEFUL_OFFER_ROOM) {
 							@Override
 							public void effects() {
 								applyPregnancyReactions();
@@ -522,14 +518,13 @@ public class BatCavernDialogue {
 				} else if(index==6) {
 					if(getMugger().getPlayerSurrenderCount()<3 && getMugger().isApplyingPostCombatTransformations()) {
 						if(transformationsApplied) {
-							return new Response("Get transformed",
-									"[npc.Name] has already given you all the transformation potions [npc.she] had!",
+							return new Response("Трансформироваться",
+									"[npc.Name] уже отдала тебе все зелья трансформации, что были у [npc.she]!",
 									null);
 							
 						} else {
-							return new Response("Get transformed",
-									"Tell [npc.name] that you'd like to drink any transformation potions which [npc.she] has..."
-										+"<br/>[style.italicsTfGeneric(This will result in [npc.name] getting you to drink a transformation potion!)]",
+							return new Response("Трансформироваться",
+									"Сказать [npc.name], что ты хочешь выпить любые зелья трансформации, которые есть у [npc.she]...<br/>[style.italicsTfGeneric(Это приведет к тому, что [npc.name] заставит тебя выпить зелье трансформации!)]",
 										CAVERN_PEACEFUL_TRANSFORMED,
 									Util.newArrayListOfValues(Fetish.FETISH_SUBMISSIVE, Fetish.FETISH_TRANSFORMATION_RECEIVING), Fetish.FETISH_TRANSFORMATION_RECEIVING.getAssociatedCorruptionLevel(), null, null, null) {
 								@Override
@@ -548,7 +543,7 @@ public class BatCavernDialogue {
 					}
 					
 				} else if (index==10) {
-					return new Response("Attack", "Betray [npc.namePos] trust and attack [npc.herHim]!", CAVERN_PEACEFUL_ATTACK) {
+					return new Response("Атаковать", "Предать доверие [npc.namePos] и напасть на [npc.herHim]!", CAVERN_PEACEFUL_ATTACK) {
 						@Override
 						public void effects() {
 							applyPregnancyReactions();
@@ -565,23 +560,23 @@ public class BatCavernDialogue {
 					GameCharacter companion = getMainCompanion();
 	
 					if(!getMugger().isAttractedTo(Main.game.getPlayer())) {
-						return new Response(UtilText.parse(companion, "Offer threesome"),
-								UtilText.parse(getMugger(), companion, "You can tell that [npc.name] isn't at all interested in having sex with you, so wouldn't want to have a threesome..."),
+						return new Response(UtilText.parse(companion, "Предложить секс втроем"),
+								UtilText.parse(getMugger(), companion, "Сразу видно, что [npc.name] совсем не горит желанием трахаться с тобой, так что секс втроем ей вряд ли интересен..."),
 								null);
 						
 					} else if(!getMugger().isAttractedTo(companion)) {
-						return new Response(UtilText.parse(companion, "Offer threesome"),
-								UtilText.parse(getMugger(), companion, "You can tell that [npc.name] isn't at all interested in having sex with [npc2.name], so wouldn't want to have a threesome..."),
+						return new Response(UtilText.parse(companion, "Предложить секс втроем"),
+								UtilText.parse(getMugger(), companion, "Сразу видно, что [npc.name] совсем не горит желанием трахаться с [npc2.name], так что секс втроем ей вряд ли интересен..."),
 								null);
 						
 					} else if(!companion.isAttractedTo(getMugger()) && companion.isAbleToRefuseSexAsCompanion()) {
-						return new Response(UtilText.parse(companion, "Offer threesome"),
-								UtilText.parse(getMugger(), companion, "You can tell that [npc2.name] isn't at all interested in having sex with [npc.name], and you can't force [npc2.herHim] to do so..."),
+						return new Response(UtilText.parse(companion, "Предложить секс втроем"),
+								UtilText.parse(getMugger(), companion, "Сразу видно, что [npc2.name] совсем не горит желанием трахаться с [npc.name], а заставить [npc2.herHim] ты всё равно не сможешь..."),
 								null);
 						
 					} else {
-						return new ResponseSex(UtilText.parse(companion, "Offer threesome"),
-								UtilText.parse(getMugger(), companion, "Offer [npc.name] the opportunity to have sex with both you and [npc2.name]."),
+						return new ResponseSex(UtilText.parse(companion, "Предложить секс втроем"),
+								UtilText.parse(getMugger(), companion, "Предложить [npc.name] заняться сексом одновременно с тобой и [npc2.name]."),
 								true, false,
 								new SMGeneric(
 										Util.newArrayListOfValues(getMugger()),
@@ -601,18 +596,18 @@ public class BatCavernDialogue {
 					GameCharacter companion = getMainCompanion();
 	
 					if(!getMugger().isAttractedTo(companion)) {
-						return new Response(UtilText.parse(companion, "Offer [npc.name]"),
-								UtilText.parse(getMugger(), companion, "You can tell that [npc.name] isn't at all interested in having sex with [npc2.name]..."),
+						return new Response(UtilText.parse(companion, "Предложить [npc.name]"),
+								UtilText.parse(getMugger(), companion, "Сразу видно, что [npc.name] совсем не горит желанием трахаться с [npc2.name]..."),
 								null);
 						
 					} else if(!companion.isAttractedTo(getMugger()) && companion.isAbleToRefuseSexAsCompanion()) {
-						return new Response(UtilText.parse(companion, "Offer [npc.name]"),
-								UtilText.parse(getMugger(), companion, "You can tell that [npc2.name] isn't at all interested in having sex with [npc.name], and you can't force [npc2.herHim] to do so..."),
+						return new Response(UtilText.parse(companion, "Предложить [npc.name]"),
+								UtilText.parse(getMugger(), companion, "Сразу видно, что [npc2.name] совсем не горит желанием трахаться с [npc.name], а заставить [npc2.herHim] ты всё равно не сможешь..."),
 								null);
 						
 					} else {
-						return new ResponseSex(UtilText.parse(companion, "Offer [npc.name]"),
-								UtilText.parse(getMugger(), companion, "Tell [npc.name] that [npc.she] can use [npc2.namePos] body."),
+						return new ResponseSex(UtilText.parse(companion, "Предложить [npc.name]"),
+								UtilText.parse(getMugger(), companion, "Сказать [npc.name], что [npc.she] может использовать тело [npc2.namePos]."),
 								true, false,
 								new SMGeneric(
 										Util.newArrayListOfValues(getMugger()),
@@ -631,14 +626,14 @@ public class BatCavernDialogue {
 					}
 					
 				} else if (index == 0) {
-					return new Response("Leave", "Tell [npc.name] that you're in a rush to be somewhere else, before continuing on your way.", Main.game.getDefaultDialogue(false));
+					return new Response("Уйти", "Сказать [npc.name], что ты спешишь по делам, и отправиться дальше.", Main.game.getDefaultDialogue(false));
 				}
 				return null;
 			}
 		}
 	};
 	
-	public static final DialogueNode CAVERN_PEACEFUL_TALK = new DialogueNode("Talk", "", true, true) {
+	public static final DialogueNode CAVERN_PEACEFUL_TALK = new DialogueNode("Поговорить", "", true, true) {
 		
 		@Override
 		public String getContent() {
@@ -662,7 +657,7 @@ public class BatCavernDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Continue", "Let [npc.name] go.", Main.game.getDefaultDialogue(false));
+				return new Response("Продолжить", "Отпустить [npc.name].", Main.game.getDefaultDialogue(false));
 				
 			} else {
 				return null;
@@ -670,7 +665,7 @@ public class BatCavernDialogue {
 		}
 	};
 	
-	public static final DialogueNode CAVERN_PEACEFUL_OFFER_MONEY = new DialogueNode("Offer money", "", true, true) {
+	public static final DialogueNode CAVERN_PEACEFUL_OFFER_MONEY = new DialogueNode("Предложить деньги", "", true, true) {
 		
 		@Override
 		public String getContent() {
@@ -694,7 +689,7 @@ public class BatCavernDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Continue", "Let [npc.name] go and buy food.", Main.game.getDefaultDialogue(false));
+				return new Response("Продолжить", "Отпустить [npc.name] и пойти купить еды.", Main.game.getDefaultDialogue(false));
 				
 			} else {
 				return null;
@@ -702,7 +697,7 @@ public class BatCavernDialogue {
 		}
 	};
 	
-	public static final DialogueNode CAVERN_PEACEFUL_OFFER_ROOM = new DialogueNode("Offer room", "", true, true) {
+	public static final DialogueNode CAVERN_PEACEFUL_OFFER_ROOM = new DialogueNode("Предложить комнату", "", true, true) {
 		
 		@Override
 		public String getContent() {
@@ -712,7 +707,7 @@ public class BatCavernDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Take home", "Take [npc.name] to [npc.her] new room.", CAVERN_PEACEFUL_OFFER_ROOM_BACK_HOME) {
+				return new Response("Забрать к себе", "Перенести [npc.name] в новую комнату [npc.her].", CAVERN_PEACEFUL_OFFER_ROOM_BACK_HOME) {
 					@Override
 					public void effects() {
 						Cell c = OccupancyUtil.getFreeRoomForOccupant();
@@ -729,7 +724,7 @@ public class BatCavernDialogue {
 		}
 	};
 	
-	public static final DialogueNode CAVERN_PEACEFUL_OFFER_ROOM_BACK_HOME = new DialogueNode("New Room", "", true) {
+	public static final DialogueNode CAVERN_PEACEFUL_OFFER_ROOM_BACK_HOME = new DialogueNode("Новая комната", "", true) {
 		
 		@Override
 		public String getContent() {
@@ -739,7 +734,7 @@ public class BatCavernDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Continue", "Let [npc.name] get settled in.", Main.game.getDefaultDialogue(false));
+				return new Response("Продолжить", "Дать [npc.name] освоиться.", Main.game.getDefaultDialogue(false));
 				
 			} else {
 				return null;
@@ -758,7 +753,7 @@ public class BatCavernDialogue {
 		}
 	};
 	
-	public static final DialogueNode CAVERN_PEACEFUL_ATTACK = new DialogueNode("Attack", "", true, true) {
+	public static final DialogueNode CAVERN_PEACEFUL_ATTACK = new DialogueNode("Атаковать", "", true, true) {
 		
 		@Override
 		public String getContent() {
@@ -768,7 +763,7 @@ public class BatCavernDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new ResponseCombat("Fight", "Start fighting [npc.name]!", getMugger());
+				return new ResponseCombat("Сразиться", "Начать бой с [npc.name]!", getMugger());
 				
 			} else {
 				return null;
@@ -776,7 +771,7 @@ public class BatCavernDialogue {
 		}
 	};
 	
-	public static final DialogueNode AFTER_SEX_PEACEFUL = new DialogueNode("Continue", "Step away from [npc.name] and prepare to continue on your way.", true) {
+	public static final DialogueNode AFTER_SEX_PEACEFUL = new DialogueNode("Продолжить", "Отойти от [npc.name] и приготовиться продолжить свой путь.", true) {
 		
 		@Override
 		public String getContent() {
@@ -790,7 +785,7 @@ public class BatCavernDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Continue", "Carry on your way.", Main.game.getDefaultDialogue(false));
+				return new Response("Продолжить", "Продолжить путь.", Main.game.getDefaultDialogue(false));
 				
 			} else {
 				return null;
@@ -798,7 +793,7 @@ public class BatCavernDialogue {
 		}
 	};
 	
-	public static final DialogueNode AFTER_SEX_PEACEFUL_THREESOME = new DialogueNode("Continue", "Step away from [npc.name] and prepare to continue on your way.", true) {
+	public static final DialogueNode AFTER_SEX_PEACEFUL_THREESOME = new DialogueNode("Продолжить", "Отойти от [npc.name] и приготовиться продолжить свой путь.", true) {
 		
 		@Override
 		public String getContent() {
@@ -808,7 +803,7 @@ public class BatCavernDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Continue", "Carry on your way.", Main.game.getDefaultDialogue(false));
+				return new Response("Продолжить", "Продолжить путь.", Main.game.getDefaultDialogue(false));
 				
 			} else {
 				return null;
@@ -816,7 +811,7 @@ public class BatCavernDialogue {
 		}
 	};
 	
-	public static final DialogueNode AFTER_SEX_PEACEFUL_OFFERED_COMPANION = new DialogueNode("Continue", "Step away from [npc.name] and prepare to continue on your way.", true) {
+	public static final DialogueNode AFTER_SEX_PEACEFUL_OFFERED_COMPANION = new DialogueNode("Продолжить", "Отойти от [npc.name] и приготовиться продолжить свой путь.", true) {
 		
 		@Override
 		public String getContent() {
@@ -830,7 +825,7 @@ public class BatCavernDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Continue", "Carry on your way.", Main.game.getDefaultDialogue(false));
+				return new Response("Продолжить", "Продолжить путь.", Main.game.getDefaultDialogue(false));
 				
 			} else {
 				return null;
@@ -838,7 +833,7 @@ public class BatCavernDialogue {
 		}
 	};
 	
-	public static final DialogueNode AFTER_COMBAT_VICTORY = new DialogueNode("Victory", "", true) {
+	public static final DialogueNode AFTER_COMBAT_VICTORY = new DialogueNode("Победа", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			getMugger().setPlayerSurrenderCount(0);
@@ -847,7 +842,7 @@ public class BatCavernDialogue {
 
 		@Override
 		public String getDescription() {
-			return "You have defeated [npc.name]!";
+			return "Вы победили [npc.name]!";
 		}
 
 		@Override
@@ -872,10 +867,10 @@ public class BatCavernDialogue {
 			boolean rapePlay = getMugger().isPostCombatRapePlay();
 			
 			if (index == 1) {
-				return new Response("Continue",
-							"Carry on your way..."
+				return new Response("Продолжить",
+							"Продолжить путь..."
 								+ (getMugger().hasFlag(NPCFlagValue.genericNPCBetrayedByPlayer)
-									?UtilText.parse(getMugger(), "<br/>[style.italicsBad([npc.Name] will be permanently removed from the game.)]")
+									?UtilText.parse(getMugger(), "<br/>[style.italicsBad([npc.Name] будет навсегда удален из игры.)]")
 									:""),
 							Main.game.getDefaultDialogue(false)){
 					@Override
@@ -895,11 +890,11 @@ public class BatCavernDialogue {
 				
 			} else if (index == 2) {
 				if(noSex) {
-					return new Response("Sex", "[npc.Name] has no interest in having sex with you!", null);
+					return new Response("Секс", "[npc.Name] не заинтересована в сексе с вами!", null);
 					
 				} else if(wantsSex) {
-					return new ResponseSex(rapePlay?"Rape-play":"Sex",
-							"Well, [npc.she] <i>is</i> asking for it!",
+					return new ResponseSex(rapePlay?"Игры в изнасилование":"Секс",
+							"Ну, [npc.she] <i>сам</i> напросился!",
 							true, false,
 							new SMGeneric(
 									Util.newArrayListOfValues(Main.game.getPlayer()),
@@ -910,8 +905,8 @@ public class BatCavernDialogue {
 							UtilText.parseFromXMLFile("encounters/submission/batCavern/"+getDialogueId(), rapePlay?"AFTER_COMBAT_VICTORY_RAPE":"AFTER_COMBAT_VICTORY_SEX", getAllCharacters()));
 				} else {
 					return new ResponseSex(
-							"Rape [npc.herHim]",
-							"[npc.She] needs to be punished for attacking you like that...",
+							"Изнасиловать [npc.herHim]",
+							"[npc.She] нужно наказать за то, что он так на тебя напал...",
 							Util.newArrayListOfValues(Fetish.FETISH_NON_CON_DOM), null, Fetish.FETISH_NON_CON_DOM.getAssociatedCorruptionLevel(), null, null, null,
 							false, false,
 							new SMGeneric(
@@ -925,11 +920,11 @@ public class BatCavernDialogue {
 				
 			} else if (index == 3) {
 				if(noSex) {
-					return new Response("Gentle Sex", "[npc.Name] has no interest in having sex with you!", null);
+					return new Response("Нежный секс", "[npc.Name] не заинтересована в сексе с вами!", null);
 					
 				} else if(wantsSex) {
-					return new ResponseSex(rapePlay?"Rape-play (gentle)":"Gentle sex",
-							"Well, [npc.she] <i>is</i> asking for it!",
+					return new ResponseSex(rapePlay?"Игры в изнасилование (нежные)":"Нежный секс",
+							"Ну, [npc.she] <i>сам</i> напросился!",
 							true, false,
 							new SMGeneric(
 									Util.newArrayListOfValues(Main.game.getPlayer()),
@@ -941,8 +936,8 @@ public class BatCavernDialogue {
 							UtilText.parseFromXMLFile("encounters/submission/batCavern/"+getDialogueId(), rapePlay?"AFTER_COMBAT_VICTORY_RAPE_GENTLE":"AFTER_COMBAT_VICTORY_SEX_GENTLE", getAllCharacters()));
 					
 				} else {
-					return new ResponseSex("Rape [npc.herHim] (gentle)",
-							"[npc.She] needs to be punished for attacking you like that...",
+					return new ResponseSex("Изнасиловать [npc.herHim] (нежно)",
+							"[npc.She] нужно наказать за то, что он так на тебя напал...",
 							Util.newArrayListOfValues(Fetish.FETISH_NON_CON_DOM), null, Fetish.FETISH_NON_CON_DOM.getAssociatedCorruptionLevel(), null, null, null,
 							false, false,
 							new SMGeneric(
@@ -957,11 +952,11 @@ public class BatCavernDialogue {
 				
 			} else if (index == 4) {
 				if(noSex) {
-					return new Response("Rough Sex", "[npc.Name] has no interest in having sex with you!", null);
+					return new Response("Грубый секс", "[npc.Name] не заинтересована в сексе с вами!", null);
 					
 				} else if(wantsSex) {
-					return new ResponseSex(rapePlay?"Rape-play (rough)":"Rough sex",
-							"Well, [npc.she] <i>is</i> asking for it!",
+					return new ResponseSex(rapePlay?"Игры в изнасилование (грубо)":"Грубый секс",
+							"Ну, [npc.she] <i>сам</i> напросился!",
 							true, false,
 							new SMGeneric(
 									Util.newArrayListOfValues(Main.game.getPlayer()),
@@ -973,8 +968,8 @@ public class BatCavernDialogue {
 							UtilText.parseFromXMLFile("encounters/submission/batCavern/"+getDialogueId(), rapePlay?"AFTER_COMBAT_VICTORY_RAPE_ROUGH":"AFTER_COMBAT_VICTORY_SEX_ROUGH", getAllCharacters()));
 					
 				} else {
-					return new ResponseSex("Rape [npc.herHim] (rough)",
-							"[npc.She] needs to be punished for attacking you like that...",
+					return new ResponseSex("Изнасиловать [npc.herHim] (грубо)",
+							"[npc.She] нужно наказать за то, что он так на тебя напал...",
 							Util.newArrayListOfValues(Fetish.FETISH_NON_CON_DOM), null, Fetish.FETISH_NON_CON_DOM.getAssociatedCorruptionLevel(), null, null, null,
 							false, false,
 							new SMGeneric(
@@ -989,12 +984,12 @@ public class BatCavernDialogue {
 				
 			} else if (index == 5) {
 				if(!getMugger().isAttractedTo(Main.game.getPlayer()) || getMugger().hasFlag(NPCFlagValue.genericNPCBetrayedByPlayer)) {
-					return new Response("Submit",
-							"You can't submit to [npc.herHim], as [npc.sheHasFull] no interest in having sex with you!",
+					return new Response("Подчиниться",
+							"Ты не можешь поддаться [npc.herHim], ведь [npc.sheHasFull] не заинтересована в сексе с тобой!",
 							null);
 				} else {
-					return new ResponseSex("Submit",
-							"You're not really sure what to do now... Perhaps it would be best to let [npc.name] choose what to do next?",
+					return new ResponseSex("Подчиниться",
+							"Ты не совсем понимаешь, что делать... Возможно, лучше позволить [npc.name] решить, что будет дальше?",
 							Util.newArrayListOfValues(Fetish.FETISH_SUBMISSIVE),
 							null, CorruptionLevel.THREE_DIRTY, null, null, null,
 							true, false,
@@ -1007,7 +1002,7 @@ public class BatCavernDialogue {
 				}
 				
 			} else if (index == 6) {
-				return new ResponseEffectsOnly("Inventory", "Now that you've defeated [npc.name], there's nothing stopping you from helping yourself to [npc.her] clothing and items..."){
+				return new ResponseEffectsOnly("Инвентарь", "Теперь, когда ты одолел(а) [npc.name], ничто не мешает тебе полакомиться одеждой и вещами [npc.her]..."){
 					@Override
 					public void effects() {
 						Main.mainController.openInventory(getMugger(), InventoryInteraction.FULL_MANAGEMENT);
@@ -1016,10 +1011,10 @@ public class BatCavernDialogue {
 				
 			} else if (index == 7) {
 				if(getMugger().hasFlag(NPCFlagValue.genericNPCBetrayedByPlayer)) {
-					return new Response("Talk", "After betraying [npc.namePos] trust, [npc.she] will never want to talk to you again.", null);
+					return new Response("Поговорить", "Предав доверие [npc.namePos], [npc.she] больше никогда не захочет с тобой разговаривать.", null);
 					
 				} else {
-					return new Response("Talk", "Talk to [npc.name] and ask [npc.herHim] why [npc.she] attacked you.", AFTER_COMBAT_VICTORY_TALK){
+					return new Response("Поговорить", "Поговорить с [npc.name] и спросить [npc.herHim], почему [npc.she] напал(ла) на тебя.", AFTER_COMBAT_VICTORY_TALK){
 						@Override
 						public void effects() {
 							getMugger().setPlayerKnowsName(true);
@@ -1029,8 +1024,8 @@ public class BatCavernDialogue {
 				}
 				
 			} else if (index == 8 && getMugger().isAbleToSelfTransform()) {
-				return new Response("Transform [npc.herHim]",
-						"Take a very detailed look at what [npc.name] can transform [npc.herself] into...",
+				return new Response("Трансформировать [npc.herHim]",
+						"Внимательно рассмотреть, в кого [npc.name] может превратить [npc.herself]...",
 						BodyChanging.BODY_CHANGING_CORE){
 					@Override
 					public void effects() {
@@ -1040,16 +1035,14 @@ public class BatCavernDialogue {
 				};
 				
 			} else if (index == 9 && getMugger().isAbleToSelfTransform()) {
-				return new Response("Quick transformations",
-						"As [npc.she] is able to transform [npc.herself], you have a few quick ideas in mind..."
-								+ "(You'll return to these options once finished transforming [npc.herHim].)",
+				return new Response("Быстрые трансформации",
+						"Так как [npc.she] может превращать [npc.herself], у тебя в голове рождается несколько идей...(Ты вернешься к этим вариантам, когда закончишь превращать [npc.herHim].)",
 						QuickTransformations.initQuickTransformations("misc/quickTransformations", getMugger(), AFTER_COMBAT_VICTORY));
 			
 			} else if (index == 10 && !getMugger().hasFlag(NPCFlagValue.genericNPCBetrayedByPlayer)) {
 				return new Response(
-						"Remove character",
-						UtilText.parse(getMugger(), "Scare [npc.name] away."
-								+ "<br/>[style.italicsBad(This will permanently remove [npc.herHim] from the game!)]"),
+						"Удалить персонажа",
+						UtilText.parse(getMugger(), "Напугать [npc.name].<br/>[style.italicsBad(Это навсегда удалит [npc.herHim] из игры!)]"),
 						Main.game.getDefaultDialogue(false)){
 					@Override
 					public Colour getHighlightColour() {
@@ -1066,14 +1059,14 @@ public class BatCavernDialogue {
 				GameCharacter companion = getMainCompanion();
 				
 				if(!Main.game.isNonConEnabled() && (!getMugger().isAttractedTo(Main.game.getPlayer()) || !getMugger().isAttractedTo(companion))) {
-					return new Response("Threesome", UtilText.parse(companion, getMugger(), "[npc2.Name] has no interest in having sex with you or [npc.name]!"), null);
+					return new Response("Трио", UtilText.parse(companion, getMugger(), "[npc2.Name] не заинтересована в сексе ни с тобой, ни с [npc.name]!"), null);
 					
 				} else if(!companion.isAttractedTo(getMugger())) {
-					return new Response(UtilText.parse(companion, "Threesome"), UtilText.parse(companion, getMugger(), "[npc.Name] isn't attracted to [npc2.name], so wouldn't be willing to have sex with [npc2.herHim]!"), null);
+					return new Response(UtilText.parse(companion, "Трио"), UtilText.parse(companion, getMugger(), "[npc.Name] не испытывает влечения к [npc2.name], так что она не захочет заняться сексом с [npc2.herHim]!"), null);
 					
 				} else {
-					return new ResponseSex(UtilText.parse(companion, "Threesome"),
-							UtilText.parse(getMugger(), companion, "Have dominant sex with [npc.name], and get [npc2.name] to join in with the fun."),
+					return new ResponseSex(UtilText.parse(companion, "Трио"),
+							UtilText.parse(getMugger(), companion, "Занимайтесь доминирующим сексом с [npc.name], и тогда [npc2.name] присоединится к веселью."),
 							true, false,
 							new SMGeneric(
 									Util.newArrayListOfValues(Main.game.getPlayer(), companion),
@@ -1088,14 +1081,14 @@ public class BatCavernDialogue {
 				GameCharacter companion = getMainCompanion();
 
 				if(!Main.game.isNonConEnabled() && !getMugger().isAttractedTo(companion)) {
-					return new Response(UtilText.parse(companion, "Give to [npc.name]"), UtilText.parse(companion, getMugger(), "[npc2.Name] isn't attracted to [npc.name], so wouldn't be willing to have sex with [npc.herHim]!"), null);
+					return new Response(UtilText.parse(companion, "Отдать [npc.name]"), UtilText.parse(companion, getMugger(), "[npc2.Name] не испытывает влечения к [npc.name], так что она не захочет переспать с [npc.herHim]!"), null);
 					
 				} else if(!companion.isAttractedTo(getMugger())) {
-					return new Response(UtilText.parse(companion, "Give to [npc.name]"), UtilText.parse(companion, getMugger(), "[npc.Name] isn't attracted to [npc2.name], so wouldn't be willing to have sex with [npc2.herHim]!"), null);
+					return new Response(UtilText.parse(companion, "Отдать [npc.name]"), UtilText.parse(companion, getMugger(), "[npc.Name] не испытывает влечения к [npc2.name], так что она не захочет заняться сексом с [npc2.herHim]!"), null);
 					
 				} else {
-					return new ResponseSex(UtilText.parse(companion, "Give to [npc.name]"),
-							UtilText.parse(companion, getMugger(), "Tell [npc.name] that [npc.she] can have some fun with [npc2.name] while you watch."),
+					return new ResponseSex(UtilText.parse(companion, "Отдать [npc.name]"),
+							UtilText.parse(companion, getMugger(), "Сказать [npc.name], что [npc.she] может немного развлечься с [npc2.name] под твоим присмотром."),
 							false, false,
 							new SMGeneric(
 									Util.newArrayListOfValues(companion),
@@ -1109,19 +1102,19 @@ public class BatCavernDialogue {
 				GameCharacter companion = getMainCompanion();
 
 				if(!Main.game.isNonConEnabled() && !companion.isAttractedTo(getMugger())) {
-					return new Response(UtilText.parse(companion, "Offer [npc.name]"), UtilText.parse(companion, getMugger(), "[npc.Name] has no interest in having sex with [npc2.name]!"), null);
+					return new Response(UtilText.parse(companion, "Предложить [npc.name]"), UtilText.parse(companion, getMugger(), "[npc.Name] не заинтересована в сексе с [npc2.name]!"), null);
 					
 				} else if(!getMugger().isAttractedTo(companion)) {
-					return new Response(UtilText.parse(companion, "Offer [npc.name]"), UtilText.parse(companion, getMugger(), "[npc2.Name] has no interest in having sex with [npc.name]!"), null);
+					return new Response(UtilText.parse(companion, "Предложить [npc.name]"), UtilText.parse(companion, getMugger(), "[npc2.Name] не заинтересована в сексе с [npc.name]!"), null);
 					
 				} else if(!companion.isAttractedTo(getMugger()) && companion.isAbleToRefuseSexAsCompanion()) {
-					return new Response(UtilText.parse(companion, "Offer [npc.name]"),
-							UtilText.parse(getMugger(), companion, "You can tell that [npc2.name] isn't at all interested in having sex with [npc.name], and you can't force [npc2.herHim] to do so..."),
+					return new Response(UtilText.parse(companion, "Предложить [npc.name]"),
+							UtilText.parse(getMugger(), companion, "Сразу видно, что [npc2.name] совсем не горит желанием трахаться с [npc.name], а заставить [npc2.herHim] ты всё равно не сможешь..."),
 							null);
 					
 				} else {
-					return new ResponseSex(UtilText.parse(companion, "Offer [npc.name]"),
-							UtilText.parse(getMugger(), companion, "Tell [npc.name] that [npc.she] can use [npc2.name]."),
+					return new ResponseSex(UtilText.parse(companion, "Предложить [npc.name]"),
+							UtilText.parse(getMugger(), companion, "Сказать [npc.name], что [npc.she] может использовать [npc2.name]."),
 							true, false,
 							new SMGeneric(
 									Util.newArrayListOfValues(getMugger()),
@@ -1143,7 +1136,7 @@ public class BatCavernDialogue {
 		}
 	};
 	
-	public static final DialogueNode AFTER_COMBAT_VICTORY_TALK = new DialogueNode("Talk", "", true) {
+	public static final DialogueNode AFTER_COMBAT_VICTORY_TALK = new DialogueNode("Поговорить", "", true) {
 		
 		@Override
 		public String getContent() {
@@ -1153,8 +1146,8 @@ public class BatCavernDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Continue",
-						"Let [npc.name] go.",
+				return new Response("Продолжить",
+						"Отпустить [npc.name].",
 						Main.game.getDefaultDialogue(false));
 				
 			} else {
@@ -1173,19 +1166,14 @@ public class BatCavernDialogue {
 		
 		if(potion!=null && forcedTF) {
 			sb.append(UtilText.parse(getMugger(), target,
-					"<p>"
-						+ "[npc.Name] steps back, grinning down at [npc2.name] as [npc2.she] obediently [npc2.verb(swallow)] the strange liquid."
-						+ " [npc.speech(Good [npc2.girl]! I'm going to turn you into my perfect "+getMugger().getPreferredBodyDescription("b")+"!)]"
+					"<p>[npc.Name] отступает, ухмыляясь на [npc2.name], пока [npc2.she] послушно [npc2.verb(swallow)] странную жидкость. [npc.speech(Отличная [npc2.girl]! Я превращу тебя в мою идеальную "+getMugger().getPreferredBodyDescription("b")+"!)]"
 					+ "</p>"));
 			sb.append(getMugger().applyPotion(potion, target));
 		}
 		
 		if(fetishPotion!=null && forcedFetish) {
 			sb.append(UtilText.parse(getMugger(),
-					"<p>"
-						+ "With a look of fiendish delight in [npc.her] [npc.eyes], [npc.name] excitedly cries out,"
-						+ " [npc.speech(That's right, swallow it all down! These changes are all for the better!)]"
-					+ "</p>"));
+					"<p>С дьявольским восторгом в [npc.her] [npc.eyes], [npc.name] азартно выкрикивает: [npc.speech(Именно так, глотай всё до капли! Все эти изменения только к лучшему!)]</p>"));
 			sb.append(getMugger().applyPotion(fetishPotion, target));
 		}
 		return sb.toString();
@@ -1206,7 +1194,7 @@ public class BatCavernDialogue {
 		}
 	};
 	
-	public static final DialogueNode AFTER_COMBAT_DEFEAT = new DialogueNode("Defeat", "", true) {
+	public static final DialogueNode AFTER_COMBAT_DEFEAT = new DialogueNode("Поражение", "", true) {
 
 		public void applyPreParsingEffects() {
 			transformationsApplied = false;
@@ -1230,7 +1218,7 @@ public class BatCavernDialogue {
 		
 		@Override
 		public String getDescription() {
-			return "You have been defeated by [npc.name]!";
+			return "Вы были повержены [npc.name]!";
 		}
 
 		@Override
@@ -1311,7 +1299,7 @@ public class BatCavernDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(getMugger().hasFlag(NPCFlagValue.genericNPCBetrayedByPlayer)) {
 				if (index == 1) {
-					return new Response("Continue", "Carry on your way.", Main.game.getDefaultDialogue(false)) {
+					return new Response("Продолжить", "Продолжить путь.", Main.game.getDefaultDialogue(false)) {
 						@Override
 						public void effects() {
 							Main.game.banishNPC(getMugger());
@@ -1355,17 +1343,15 @@ public class BatCavernDialogue {
 						return Response.getDisallowedSpittingResponse();
 					}
 					if(!Collections.disjoint(Main.game.getPlayer().getFetishes(true), applicableFetishes)) {
-						return new Response("Spit",
-									"Due to your [style.boldFetish("+applicableFetishes.get(0).getName(Main.game.getPlayer())+")] fetish,"
-										+ " you love "+applicableFetishes.get(0).getShortDescriptor(Main.game.getPlayer())+" so much that you can't bring yourself to spit out the transformative "+(multiplePotions?"potions":"potion")+"!",
+						return new Response("Сплюнуть",
+									"Благодаря вашему [style.boldFetish("+applicableFetishes.get(0).getName(Main.game.getPlayer())+")] фетиш, который ты обожаешь "+applicableFetishes.get(0).getShortDescriptor(Main.game.getPlayer())+" настолько, что не можете заставить себя выплюнуть трансформирующую "+(multiplePotions?"зелья":"зелье")+"!",
 								null);
 					} else {
-						return new Response("Spit", 
+						return new Response("Сплюнуть", 
 								UtilText.parse(getMainCompanion(),
-										"Spit out the "+(multiplePotions?"potions":"potion")+"."
-												+ " ([npc.Name] will likely choose to "
-													+(getMainCompanion().getFetishDesire(Fetish.FETISH_TRANSFORMATION_RECEIVING).isPositive()?"[style.boldTfGeneric(swallow)]":"[style.boldMinorBad(spit out)]")
-													+" [npc.her] own "+(companionMultiplePotions?"potions":"potion")+"!)"),
+										"Выплюнуть "+(multiplePotions?"зелья":"зелье")+". ([npc.Name], скорее всего, решит "
+													+(getMainCompanion().getFetishDesire(Fetish.FETISH_TRANSFORMATION_RECEIVING).isPositive()?"[style.boldTfGeneric(проглотить)]":"[style.boldMinorBad(выплюнуть)]")
+													+" собственный [npc.her] "+(companionMultiplePotions?"зелья":"зелье")+"!)"),
 								AFTER_COMBAT_TRANSFORMATION) {
 							@Override
 							public void effects(){
@@ -1383,12 +1369,11 @@ public class BatCavernDialogue {
 					}
 					
 				} else if (index == 2) {
-					return new Response("Swallow",
+					return new Response("Проглотить",
 							UtilText.parse(getMainCompanion(),
-								"Swallow the "+(multiplePotions?"potions":"potion")+"."
-										+ " ([npc.Name] will likely choose to "
-											+(getMainCompanion().getFetishDesire(Fetish.FETISH_TRANSFORMATION_RECEIVING).isPositive()?"[style.boldTfGeneric(swallow)]":"[style.boldMinorBad(spit out)]")
-											+" [npc.her] own "+(companionMultiplePotions?"potions":"potion")+"!)"),
+								"Проглотить "+(multiplePotions?"зелья":"зелье")+". ([npc.Name], скорее всего, решит "
+											+(getMainCompanion().getFetishDesire(Fetish.FETISH_TRANSFORMATION_RECEIVING).isPositive()?"[style.boldTfGeneric(проглотить)]":"[style.boldMinorBad(выплюнуть)]")
+											+" собственный [npc.her] "+(companionMultiplePotions?"зелья":"зелье")+"!)"),
 							AFTER_COMBAT_TRANSFORMATION,
 							applicableFetishes,
 							applicableCorruptionLevel,
@@ -1413,21 +1398,21 @@ public class BatCavernDialogue {
 					
 				} else if (index == 6) {
 					if(Main.game.isSpittingDisabled()) {
-						return Response.getDisallowedSpittingResponse("Spit (both)");
+						return Response.getDisallowedSpittingResponse("Сплюнуть (оба)");
 					}
 					if(Main.game.getPlayer().hasFetish(Fetish.FETISH_TRANSFORMATION_RECEIVING)) {
-						return new Response("Spit (both)",
+						return new Response("Сплюнуть (оба)",
 								UtilText.parse(getMainCompanion(),
-									"Due to your <b style='color:"+PresetColour.FETISH.toWebHexString()+";'>"+Fetish.FETISH_TRANSFORMATION_RECEIVING.getName(Main.game.getPlayer())
-										+"</b> fetish, you love being transformed so much that you can't bring yourself to spit out the transformative "+(multiplePotions?"potions":"potion")+", nor to tell [npc.name] to do so!"),
+									"Из-за твоего <b style='color:"+PresetColour.FETISH.toWebHexString()+";'>"+Fetish.FETISH_TRANSFORMATION_RECEIVING.getName(Main.game.getPlayer())
+										+"</b> фетиш, тебе так нравится превращаться, что ты даже не можешь заставить себя выплюнуть трансформацию "+(multiplePotions?"зелья":"зелье")+", равно как и велеть [npc.name] сделать то же самое!"),
 								null);
 						
 					} else {
-						return new Response("Spit (both)",
+						return new Response("Сплюнуть (оба)",
 								UtilText.parse(getMainCompanion(),
-										"Spit out the "+(multiplePotions?"potions":"potion")+", and tell [npc.name] to do the same."
+										"Выплюнуть "+(multiplePotions?"зелья":"зелье")+", и велеть [npc.name] сделать то же самое."
 										+ (getMainCompanion().hasFetish(Fetish.FETISH_TRANSFORMATION_RECEIVING)
-												?" (However, as [npc.name] has the "+Fetish.FETISH_TRANSFORMATION_RECEIVING.getName(getMainCompanion())+" fetish, [npc.sheIsFull] unlikely to listen to you!)"
+												?" (Однако, раз у [npc.name] есть "+Fetish.FETISH_TRANSFORMATION_RECEIVING.getName(getMainCompanion())+" фетиш, [npc.sheIsFull] вряд ли тебя послушает!)"
 												:"")),
 								AFTER_COMBAT_TRANSFORMATION) {
 							@Override
@@ -1449,11 +1434,11 @@ public class BatCavernDialogue {
 					}
 					
 				} else if (index == 7) {
-					return new Response("Swallow (both)",
+					return new Response("Проглотить (оба)",
 							UtilText.parse(getMainCompanion(),
-									"Swallow the "+(multiplePotions?"potions":"potion")+", and tell [npc.name] to do the same."
+									"Проглотить "+(multiplePotions?"зелья":"зелье")+", и велеть [npc.name] сделать то же самое."
 									+ (getMainCompanion().getFetishDesire(Fetish.FETISH_TRANSFORMATION_RECEIVING).isNegative()
-											?" (However, as [npc.name] has a negative desire towards the "+Fetish.FETISH_TRANSFORMATION_RECEIVING.getName(getMainCompanion())+" fetish, [npc.sheIsFull] unlikely to listen to you!)"
+											?" (Однако, поскольку у [npc.name] отрицательное желание к "+Fetish.FETISH_TRANSFORMATION_RECEIVING.getName(getMainCompanion())+" фетиш, [npc.sheIsFull] вряд ли тебя послушает!)"
 											:"")),
 							AFTER_COMBAT_TRANSFORMATION,
 							applicableFetishes,
@@ -1486,12 +1471,12 @@ public class BatCavernDialogue {
 						return Response.getDisallowedSpittingResponse();
 					};
 					if(Main.game.getPlayer().hasFetish(Fetish.FETISH_TRANSFORMATION_RECEIVING)) {
-						return new Response("Spit",
-								"Due to your <b style='color:"+PresetColour.FETISH.toWebHexString()+";'>"+Fetish.FETISH_TRANSFORMATION_RECEIVING.getName(Main.game.getPlayer())
-									+"</b> fetish, you love being transformed so much that you can't bring yourself to spit out the transformative "+(multiplePotions?"potions":"potion")+"!",
+						return new Response("Сплюнуть",
+								"Из-за твоего <b style='color:"+PresetColour.FETISH.toWebHexString()+";'>"+Fetish.FETISH_TRANSFORMATION_RECEIVING.getName(Main.game.getPlayer())
+									+"</b> фетиш, тебе так нравится превращаться, что ты даже не можешь заставить себя выплюнуть трансформацию "+(multiplePotions?"зелья":"зелье")+"!",
 								null);
 					} else {
-						return new Response("Spit", "Spit out the potion.", AFTER_COMBAT_TRANSFORMATION) {
+						return new Response("Сплюнуть", "Выплюнуть зелье.", AFTER_COMBAT_TRANSFORMATION) {
 							@Override
 							public void effects() {
 								transformationsApplied = true;
@@ -1501,8 +1486,8 @@ public class BatCavernDialogue {
 					}
 					
 				} else if (index == 2) {
-					return new Response("Swallow",
-							"Swallow the "+(multiplePotions?"potions":"potion")+".",
+					return new Response("Проглотить",
+							"Проглотить "+(multiplePotions?"зелья":"зелье")+".",
 							AFTER_COMBAT_TRANSFORMATION,
 							applicableFetishes,
 							applicableCorruptionLevel,
@@ -1518,50 +1503,50 @@ public class BatCavernDialogue {
 					};
 					
 				} else if (index == 6 && isCompanionDialogue()) {
-					return new Response("Swallow (both)",
+					return new Response("Проглотить (оба)",
 							UtilText.parse(getMainCompanion(),
 									getMainCompanion().isAbleToAccessCoverableArea(CoverableArea.MOUTH, true)
-										?"[npc.Name] is not being forced to drink any transformative potions!"
-										:"As [npc.namePos] mouth is blocked, [npc.she] cannot drink any transformative potions!"),
+										?"[npc.Name] не заставляют пить никакие трансформирующие зелья!"
+										:"Так как рот [npc.namePos] заблокирован, [npc.she] не может пить никакие трансформирующие зелья!"),
 							null);
 					
 				}  else if (index == 7 && isCompanionDialogue()) {
 					if(Main.game.isSpittingDisabled()) {
-						return Response.getDisallowedSpittingResponse("Spit (both)");
+						return Response.getDisallowedSpittingResponse("Сплюнуть (оба)");
 					}
-					return new Response("Spit (both)",
+					return new Response("Сплюнуть (оба)",
 							UtilText.parse(getMainCompanion(),
 									getMainCompanion().isAbleToAccessCoverableArea(CoverableArea.MOUTH, true)
-										?"[npc.Name] is not being forced to drink any transformative potions!"
-										:"As [npc.namePos] mouth is blocked, [npc.she] cannot drink any transformative potions!"),
+										?"[npc.Name] не заставляют пить никакие трансформирующие зелья!"
+										:"Так как рот [npc.namePos] заблокирован, [npc.she] не может пить никакие трансформирующие зелья!"),
 							null);
 				}
 				
 			} else if(isCompanionDialogue()) {
 				if (index == 1) {
-					return new Response("Spit",
+					return new Response("Сплюнуть",
 							UtilText.parse(getMainCompanion(),
 									Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.MOUTH, true)
-										?"You are not being forced to drink any transformative potions!"
-										:"As your mouth is blocked, you cannot drink any transformative potions!"),
+										?"Тебя не заставляют пить никакие трансформирующие зелья!"
+										:"Так как твой рот заблокирован, ты не можешь пить никакие трансформирующие зелья!"),
 							null);
 					
 				} else if (index == 2) {
-					return new Response("Swallow",
+					return new Response("Проглотить",
 							UtilText.parse(getMainCompanion(),
 									Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.MOUTH, true)
-										?"You are not being forced to drink any transformative potions!"
-										:"As your mouth is blocked, you cannot drink any transformative potions!"),
+										?"Тебя не заставляют пить никакие трансформирующие зелья!"
+										:"Так как твой рот заблокирован, ты не можешь пить никакие трансформирующие зелья!"),
 							null);
 					
 				} else if (index == 6) {
 					if(Main.game.isSpittingDisabled()) {
-						return Response.getDisallowedSpittingResponse("Order spit");
+						return Response.getDisallowedSpittingResponse("Приказать выплюнуть");
 					}
-					return new Response("Order spit",
-							UtilText.parse(getMainCompanion(), "Tell [npc.name] to spit out the "+(companionMultiplePotions?"potions":"potion")+"!"
+					return new Response("Приказать выплюнуть",
+							UtilText.parse(getMainCompanion(), "Приказать [npc.name] выплюнуть "+(companionMultiplePotions?"зелья":"зелье")+"!"
 									+ (getMainCompanion().hasFetish(Fetish.FETISH_TRANSFORMATION_RECEIVING)
-											?" (However, as [npc.name] has the "+Fetish.FETISH_TRANSFORMATION_RECEIVING.getName(getMainCompanion())+" fetish, [npc.sheIsFull] unlikely to listen to you!)"
+											?" (Однако, раз у [npc.name] есть "+Fetish.FETISH_TRANSFORMATION_RECEIVING.getName(getMainCompanion())+" фетиш, [npc.sheIsFull] вряд ли тебя послушает!)"
 											:"")),
 							AFTER_COMBAT_TRANSFORMATION) {
 						@Override
@@ -1579,11 +1564,11 @@ public class BatCavernDialogue {
 					};
 					
 				} else if (index == 7) {
-					return new Response("Order swallow",
+					return new Response("Приказать проглотить",
 							UtilText.parse(getMainCompanion(),
-								"Tell [npc.name] to swallow the "+(companionMultiplePotions?"potions":"potion")+"."
+								"Приказать [npc.name] проглотить "+(companionMultiplePotions?"зелья":"зелье")+"."
 								+(getMainCompanion().getFetishDesire(Fetish.FETISH_TRANSFORMATION_RECEIVING).isNegative()
-										?" (However, as [npc.she] dislikes being transformed, [npc.sheIsFull] unlikely to listen to you!)"
+										?" (Однако, так как [npc.she] не любит превращения, [npc.sheIsFull] вряд ли тебя послушает!)"
 										:"")),
 							AFTER_COMBAT_TRANSFORMATION,
 							applicableFetishes,
@@ -1610,7 +1595,7 @@ public class BatCavernDialogue {
 		}
 	};
 	
-	public static final DialogueNode AFTER_COMBAT_TRANSFORMATION = new DialogueNode("Transformed", "", true) {
+	public static final DialogueNode AFTER_COMBAT_TRANSFORMATION = new DialogueNode("Превращен(а)", "", true) {
 		@Override
 		public String getContent() {
 			if(isCompanionDialogue()) {
@@ -1664,11 +1649,11 @@ public class BatCavernDialogue {
 				if(getMugger().isAttractedTo(Main.game.getPlayer())) {
 					if(getMugger().isAttractedTo(getMainCompanion())) { // Threesome sex:
 						if (index == 1) {
-							return new ResponseSex("Sex",
+							return new ResponseSex("Секс",
 									UtilText.parse(getMugger(),
 											getMugger().isWillingToRape()
-												?"[npc.Name] forces [npc.herself] on you"+(companionSex?UtilText.parse(getMainCompanion(), " and [npc.name]"):"")+"..."
-												:"Tell [npc.name] that you"+(companionSex?UtilText.parse(getMainCompanion(), " and [npc.name]"):"")+" would like to have sex with [npc.herHim]."),
+												?"[npc.Name] навязывает [npc.herself] тебе"+(companionSex?UtilText.parse(getMainCompanion(), " и [npc.name]"):"")+"..."
+												:"Сказать [npc.name], что ты"+(companionSex?UtilText.parse(getMainCompanion(), " и [npc.name]"):"")+" хочет заняться сексом с [npc.herHim]."),
 									false, false,
 									new SMGeneric(
 											Util.newArrayListOfValues(getMugger()),
@@ -1686,11 +1671,11 @@ public class BatCavernDialogue {
 									UtilText.parseFromXMLFile("encounters/submission/batCavern/"+getDialogueId(), "START_DEFEATED_SEX_THREESOME", getAllCharacters()));
 							
 						} else if (index == 2) {
-							return new ResponseSex("Eager Sex",
+							return new ResponseSex("Жажда секса",
 									UtilText.parse(getMugger(),
 											getMugger().isWillingToRape()
-												?"[npc.Name] forces [npc.herself] on you"+(companionSex?UtilText.parse(getMainCompanion(), " and [npc.name]"):"")+"..."
-												:"Tell [npc.name] that you"+(companionSex?UtilText.parse(getMainCompanion(), " and [npc.name]"):"")+" are more than happy to have sex with [npc.herHim]."),
+												?"[npc.Name] навязывает [npc.herself] тебе"+(companionSex?UtilText.parse(getMainCompanion(), " и [npc.name]"):"")+"..."
+												:"Сказать [npc.name], что ты"+(companionSex?UtilText.parse(getMainCompanion(), " и [npc.name]"):"")+" с радостью займется сексом с [npc.herHim]."),
 									false, false,
 									new SMGeneric(
 											Util.newArrayListOfValues(getMugger()),
@@ -1709,8 +1694,8 @@ public class BatCavernDialogue {
 									UtilText.parseFromXMLFile("encounters/submission/batCavern/"+getDialogueId(), "START_DEFEATED_SEX_THREESOME", getAllCharacters()));
 							
 						} else if (index == 3 && Main.game.isNonConEnabled()) {
-							return new ResponseSex("Resist Sex",
-									UtilText.parse(getMugger(), "[npc.Name] forces [npc.herself] on you"+(companionSex?UtilText.parse(getMainCompanion(), " and [npc.name]"):"")+"..."),
+							return new ResponseSex("Сопротивляться сексу",
+									UtilText.parse(getMugger(), "[npc.Name] навязывает [npc.herself] тебе"+(companionSex?UtilText.parse(getMainCompanion(), " и [npc.name]"):"")+"..."),
 									false, false,
 									new SMGeneric(
 											Util.newArrayListOfValues(getMugger()),
@@ -1729,8 +1714,8 @@ public class BatCavernDialogue {
 									UtilText.parseFromXMLFile("encounters/submission/batCavern/"+getDialogueId(), "START_DEFEATED_SEX_THREESOME_RESIST", getAllCharacters()));
 							
 						} else if (index == 4 && !getMugger().isWillingToRape()) {
-							return new Response("Refuse",
-									UtilText.parse(getMugger(), "Refuse to have sex with [npc.name] and continue on your way."),
+							return new Response("Отказаться",
+									UtilText.parse(getMugger(), "Отказаться от секса с [npc.name] и продолжить свой путь."),
 									Main.game.getDefaultDialogue(false)) {
 								@Override
 								public void effects() {
@@ -1742,11 +1727,11 @@ public class BatCavernDialogue {
 						
 					} else { // Solo sex with player:
 						if (index == 1) {
-							return new ResponseSex("Sex",
+							return new ResponseSex("Секс",
 									UtilText.parse(getMugger(),
 											getMugger().isWillingToRape()
-												?"[npc.Name] forces [npc.herself] on you..."
-												:"Tell [npc.name] that you would like to have sex with [npc.herHim]."),
+												?"[npc.Name] навязывает вам [npc.herself]..."
+												:"Сказать [npc.name], что вы хотите заняться сексом с [npc.herHim]."),
 									false, false,
 									new SMGeneric(
 											Util.newArrayListOfValues(getMugger()),
@@ -1757,11 +1742,11 @@ public class BatCavernDialogue {
 									UtilText.parseFromXMLFile("encounters/submission/batCavern/"+getDialogueId(), "START_DEFEATED_SEX_SOLO", getAllCharacters()));
 							
 						} else if (index == 2) {
-							return new ResponseSex("Eager Sex",
+							return new ResponseSex("Жажда секса",
 									UtilText.parse(getMugger(),
 											getMugger().isWillingToRape()
-												?"[npc.Name] forces [npc.herself] on you..."
-												:"Tell [npc.name] that you are more than happy to have sex with [npc.herHim]."),
+												?"[npc.Name] навязывает вам [npc.herself]..."
+												:"Сказать [npc.name], что вы с радостью займетесь сексом с [npc.herHim]."),
 									false, false,
 									new SMGeneric(
 											Util.newArrayListOfValues(getMugger()),
@@ -1773,8 +1758,8 @@ public class BatCavernDialogue {
 									UtilText.parseFromXMLFile("encounters/submission/batCavern/"+getDialogueId(), "START_DEFEATED_SEX_SOLO", getAllCharacters()));
 							
 						} else if (index == 3 && Main.game.isNonConEnabled()) {
-							return new ResponseSex("Resist Sex",
-									UtilText.parse(getMugger(), "[npc.Name] forces [npc.herself] on you..."),
+							return new ResponseSex("Сопротивляться сексу",
+									UtilText.parse(getMugger(), "[npc.Name] навязывает вам [npc.herself]..."),
 									false, false,
 									new SMGeneric(
 											Util.newArrayListOfValues(getMugger()),
@@ -1786,8 +1771,8 @@ public class BatCavernDialogue {
 									UtilText.parseFromXMLFile("encounters/submission/batCavern/"+getDialogueId(), "START_DEFEATED_SEX_SOLO_RESIST", getAllCharacters()));
 							
 						} else if (index == 4 && !getMugger().isWillingToRape()) {
-							return new Response("Refuse",
-									UtilText.parse(getMugger(), "Refuse to have sex with [npc.name] and continue on your way."),
+							return new Response("Отказаться",
+									UtilText.parse(getMugger(), "Отказаться от секса с [npc.name] и продолжить свой путь."),
 									Main.game.getDefaultDialogue(false)) {
 								@Override
 								public void effects() {
@@ -1802,9 +1787,9 @@ public class BatCavernDialogue {
 						&& Main.getProperties().hasValue(PropertyValue.involuntaryNTR)) { // Solo sex with companion:
 					if(getMugger().isWillingToRape()) {
 						if (index == 1) {
-							return new ResponseSex("Watch rape",
+							return new ResponseSex("Смотреть на изнасилование",
 									UtilText.parse(getMugger(), getMainCompanion(),
-											"You can do nothing but watch as [npc.name] forces [npc.herself] on [npc2.name]."),
+											"Вам остается только наблюдать, как [npc.name] насилует [npc2.name], навязывая [npc.herself]."),
 									false, false,
 									new SMGeneric(
 											Util.newArrayListOfValues(getMugger()),
@@ -1817,9 +1802,9 @@ public class BatCavernDialogue {
 						
 					} else if(companionHappyToHaveSex) {
 						if (index == 1) {
-							return new ResponseSex("Watch sex",
+							return new ResponseSex("Смотреть на секс",
 									UtilText.parse(getMugger(), getMainCompanion(),
-											"You can do nothing but watch as [npc2.name] happily agrees to let [npc.name] fuck [npc2.herHim]."),
+											"Вам остается только наблюдать, как [npc2.name] с радостью соглашается позволить [npc.name] трахать [npc2.herHim]."),
 									false, false,
 									new SMGeneric(
 											Util.newArrayListOfValues(getMugger()),
@@ -1832,8 +1817,8 @@ public class BatCavernDialogue {
 						
 					} else if (index == 1) {
 						return new Response(
-								UtilText.parse(getMainCompanion(), "[npc.Name] refuses"),
-								UtilText.parse(getMugger(), getMainCompanion(), "It looks like [npc2.name] is going to refuse to have sex with [npc.name]."),
+								UtilText.parse(getMainCompanion(), "[npc.Name] отказывается"),
+								UtilText.parse(getMugger(), getMainCompanion(), "Похоже, [npc2.name] собирается отказаться заниматься сексом с [npc.name]."),
 								Main.game.getDefaultDialogue(false)) {
 							@Override
 							public void effects() {
@@ -1846,11 +1831,11 @@ public class BatCavernDialogue {
 			} else {
 				if(getMugger().isAttractedTo(Main.game.getPlayer())) { // Solo sex with player:
 					if (index == 1) {
-						return new ResponseSex("Sex",
+						return new ResponseSex("Секс",
 								UtilText.parse(getMugger(),
 										getMugger().isWillingToRape()
-											?"[npc.Name] forces [npc.herself] on you..."
-											:"Tell [npc.name] that you would like to have sex with [npc.herHim]."),
+											?"[npc.Name] навязывает вам [npc.herself]..."
+											:"Сказать [npc.name], что вы хотите заняться сексом с [npc.herHim]."),
 								false, false,
 								new SMGeneric(
 										Util.newArrayListOfValues(getMugger()),
@@ -1861,11 +1846,11 @@ public class BatCavernDialogue {
 								UtilText.parseFromXMLFile("encounters/submission/batCavern/"+getDialogueId(), "START_DEFEATED_SEX", getAllCharacters()));
 						
 					} else if (index == 2) {
-						return new ResponseSex("Eager Sex",
+						return new ResponseSex("Жажда секса",
 								UtilText.parse(getMugger(),
 										getMugger().isWillingToRape()
-											?"[npc.Name] forces [npc.herself] on you..."
-											:"Tell [npc.name] that you are more than happy to have sex with [npc.herHim]."),
+											?"[npc.Name] навязывает вам [npc.herself]..."
+											:"Сказать [npc.name], что вы с радостью займетесь сексом с [npc.herHim]."),
 								false, false,
 								new SMGeneric(
 										Util.newArrayListOfValues(getMugger()),
@@ -1877,8 +1862,8 @@ public class BatCavernDialogue {
 								UtilText.parseFromXMLFile("encounters/submission/batCavern/"+getDialogueId(), "START_DEFEATED_SEX", getAllCharacters()));
 						
 					} else if (index == 3 && Main.game.isNonConEnabled()) {
-						return new ResponseSex("Resist Sex",
-								UtilText.parse(getMugger(), "[npc.Name] forces [npc.herself] on you..."),
+						return new ResponseSex("Сопротивляться сексу",
+								UtilText.parse(getMugger(), "[npc.Name] навязывает вам [npc.herself]..."),
 								false, false,
 								new SMGeneric(
 										Util.newArrayListOfValues(getMugger()),
@@ -1890,8 +1875,8 @@ public class BatCavernDialogue {
 								UtilText.parseFromXMLFile("encounters/submission/batCavern/"+getDialogueId(), "START_DEFEATED_SEX_RESIST", getAllCharacters()));
 						
 					} else if (index == 4 && !getMugger().isWillingToRape()) {
-						return new Response("Refuse",
-								UtilText.parse(getMugger(), "Refuse to have sex with [npc.name] and continue on your way."),
+						return new Response("Отказаться",
+								UtilText.parse(getMugger(), "Отказаться от секса с [npc.name] и продолжить свой путь."),
 								Main.game.getDefaultDialogue(false)) {
 							@Override
 							public void effects() {
@@ -1903,7 +1888,7 @@ public class BatCavernDialogue {
 				}
 			}
 			if (index == 1) {
-				return new Response("Continue", "Carry on your way.", Main.game.getDefaultDialogue(false)) {
+				return new Response("Продолжить", "Продолжить путь.", Main.game.getDefaultDialogue(false)) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("encounters/submission/batCavern/"+getDialogueId(), "DEFEATED_NO_SEX", getAllCharacters()));
@@ -1916,11 +1901,11 @@ public class BatCavernDialogue {
 		}
 	};
 	
-	public static final DialogueNode AFTER_SEX_VICTORY = new DialogueNode("Step back", "", true) {
+	public static final DialogueNode AFTER_SEX_VICTORY = new DialogueNode("Отступить", "", true) {
 		
 		@Override
 		public String getDescription(){
-			return "Now that you've had your fun, you can step back and leave [npc.name] to recover.";
+			return "Теперь, когда ты вдоволь на楽しみлся, ты можешь отступить и оставить [npc.name] приходить в себя.";
 		}
 
 		@Override
@@ -1945,7 +1930,7 @@ public class BatCavernDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Continue", "Carry on your way.", Main.game.getDefaultDialogue(false)){
+				return new Response("Продолжить", "Продолжить путь.", Main.game.getDefaultDialogue(false)){
 					@Override
 					public void effects() {
 						if(getMugger().hasFlag(NPCFlagValue.genericNPCBetrayedByPlayer)) {
@@ -1955,7 +1940,7 @@ public class BatCavernDialogue {
 				};
 				
 			} else if (index == 6) {
-				return new ResponseEffectsOnly("Inventory", "There's nothing stopping you from helping yourself to [npc.namePos] clothing and items..."){
+				return new ResponseEffectsOnly("Инвентарь", "Ничто не мешает вам полакомиться одеждой и вещами [npc.namePos]..."){
 					@Override
 					public void effects() {
 						Main.mainController.openInventory(getMugger(), InventoryInteraction.FULL_MANAGEMENT);
@@ -1964,9 +1949,8 @@ public class BatCavernDialogue {
 				
 			} else if (index == 10 && !getMugger().hasFlag(NPCFlagValue.genericNPCBetrayedByPlayer)) {
 				return new Response(
-						"Remove character",
-						UtilText.parse(getMugger(), "Scare [npc.name] away."
-								+ "<br/>[style.italicsBad(This will permanently remove [npc.herHim] from the game!)]"),
+						"Удалить персонажа",
+						UtilText.parse(getMugger(), "Напугать [npc.name].<br/>[style.italicsBad(Это навсегда удалит [npc.herHim] из игры!)]"),
 						AFTER_COMBAT_VICTORY){
 					@Override
 					public Colour getHighlightColour() {
@@ -1988,7 +1972,7 @@ public class BatCavernDialogue {
 		}
 	};
 	
-	public static final DialogueNode AFTER_SEX_DEFEAT = new DialogueNode("Collapse", "", true) {
+	public static final DialogueNode AFTER_SEX_DEFEAT = new DialogueNode("Свалиться", "", true) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -1997,7 +1981,7 @@ public class BatCavernDialogue {
 		
 		@Override
 		public String getDescription(){
-			return "You're completely worn out from [npc.namePos] dominant treatment, and need a while to recover.";
+			return "Вы совершенно измотаны доминирующим напором [npc.namePos] и нуждаетесь в отдыхе, чтобы прийти в себя.";
 		}
 
 		@Override
@@ -2008,7 +1992,7 @@ public class BatCavernDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Continue", "Carry on your way.", AFTER_SEX_VICTORY) {
+				return new Response("Продолжить", "Продолжить путь.", AFTER_SEX_VICTORY) {
 					@Override
 					public void effects() {
 						if(getMugger().hasFlag(NPCFlagValue.genericNPCBetrayedByPlayer)) {

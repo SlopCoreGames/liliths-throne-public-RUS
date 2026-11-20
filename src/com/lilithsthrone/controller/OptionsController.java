@@ -173,7 +173,7 @@ public class OptionsController {
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
-			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Large Increase", "Увеличить скорость появления НПС в виде полноценных людей. (Значение по умолчанию - 5%).", 24));
+			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Сильное увеличение", "Увеличить скорость появления НПС в виде полноценных людей. (Значение по умолчанию - 5%).", 24));
 		}
 		id = "HUMAN_SPAWN_RATE_INCREASE";
 		if (MainController.document.getElementById(id) != null) {
@@ -182,7 +182,7 @@ public class OptionsController {
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
-			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Increase", "Увеличить скорость появления НПС в виде полноценных людей. (Значение по умолчанию - 5%).", 24));
+			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Увеличение", "Увеличить скорость появления НПС в виде полноценных людей. (Значение по умолчанию - 5%).", 24));
 		}
 		id = "HUMAN_SPAWN_RATE_DECREASE";
 		if (MainController.document.getElementById(id) != null) {
@@ -191,7 +191,7 @@ public class OptionsController {
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
-			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Decrease", "Уменьшить скорость появления НПС в виде полноценных людей. (Значение по умолчанию - 5%).", 24));
+			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Уменьшение", "Уменьшить скорость появления НПС в виде полноценных людей. (Значение по умолчанию - 5%).", 24));
 		}
 		id = "HUMAN_SPAWN_RATE_DECREASE_LARGE";
 		if (MainController.document.getElementById(id) != null) {
@@ -200,7 +200,7 @@ public class OptionsController {
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
-			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Large Decrease", "Уменьшить скорость появления НПС в виде полноценных людей. (Значение по умолчанию - 5%).", 24));
+			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Сильное уменьшение", "Уменьшить скорость появления НПС в виде полноценных людей. (Значение по умолчанию - 5%).", 24));
 		}
 		
 		// Taur spawn rates:
@@ -211,7 +211,7 @@ public class OptionsController {
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
-			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Large Increase", "Увеличить скорость появления НПС в виде полудемонических существ. (Значение по умолчанию - 5%).", 24));
+			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Сильное увеличение", "Увеличить скорость появления НПС в виде полудемонических существ. (Значение по умолчанию - 5%).", 24));
 		}
 		id = "TAUR_SPAWN_RATE_INCREASE";
 		if (MainController.document.getElementById(id) != null) {
@@ -220,7 +220,7 @@ public class OptionsController {
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
-			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Increase", "Увеличить скорость появления НПС в виде полудемонических существ. (Значение по умолчанию - 5%).", 24));
+			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Увеличение", "Увеличить скорость появления НПС в виде полудемонических существ. (Значение по умолчанию - 5%).", 24));
 		}
 		id = "TAUR_SPAWN_RATE_DECREASE";
 		if (MainController.document.getElementById(id) != null) {
@@ -229,7 +229,7 @@ public class OptionsController {
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
-			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Decrease", "Уменьшить скорость появления НПС в виде полудемонических существ. (Значение по умолчанию - 5%).", 24));
+			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Уменьшение", "Уменьшить скорость появления НПС в виде полудемонических существ. (Значение по умолчанию - 5%).", 24));
 		}
 		id = "TAUR_SPAWN_RATE_DECREASE_LARGE";
 		if (MainController.document.getElementById(id) != null) {
@@ -238,7 +238,7 @@ public class OptionsController {
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
-			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Large Decrease", "Уменьшить скорость появления НПС в виде полудемонических существ. (Значение по умолчанию - 5%).", 24));
+			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Сильное уменьшение", "Уменьшить скорость появления НПС в виде полудемонических существ. (Значение по умолчанию - 5%).", 24));
 		}
 		
 		// Human spawn rates:
@@ -249,7 +249,7 @@ public class OptionsController {
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
-			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Large Increase", "Увеличить скорость появления НПС в виде полудемонических существ. (Значение по умолчанию - 5%).", 24));
+			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Сильное увеличение", "Увеличить скорость появления НПС в виде полудемонических существ. (Значение по умолчанию - 5%).", 24));
 		}
 		id = "HALF_DEMON_SPAWN_RATE_INCREASE";
 		if (MainController.document.getElementById(id) != null) {
@@ -258,7 +258,7 @@ public class OptionsController {
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
-			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Increase", "Увеличить скорость появления НПС в виде полудемонических существ. (Значение по умолчанию - 5%).", 24));
+			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Увеличение", "Увеличить скорость появления НПС в виде полудемонических существ. (Значение по умолчанию - 5%).", 24));
 		}
 		id = "HALF_DEMON_SPAWN_RATE_DECREASE";
 		if (MainController.document.getElementById(id) != null) {
@@ -267,7 +267,7 @@ public class OptionsController {
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
-			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Decrease", "Уменьшите частоту появления НПС в виде полудемонов. (Значение по умолчанию - 5%.)", 24));
+			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Уменьшение", "Уменьшите частоту появления НПС в виде полудемонов. (Значение по умолчанию - 5%.)", 24));
 		}
 		id = "HALF_DEMON_SPAWN_RATE_DECREASE_LARGE";
 		if (MainController.document.getElementById(id) != null) {
@@ -276,7 +276,7 @@ public class OptionsController {
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
-			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Large Decrease", "Уменьшите частоту появления НПС в виде полудемонов. (Значение по умолчанию - 5%.)", 24));
+			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Сильное уменьшение", "Уменьшите частоту появления НПС в виде полудемонов. (Значение по умолчанию - 5%.)", 24));
 		}
 		
 		// Taur furry spawns:
@@ -575,23 +575,23 @@ public class OptionsController {
 				String description = "";
 				switch (fp) {
 					case HUMAN:
-						title = "Human Only";
+						title = "Только люди";
 						description = "Принудительные трансформации от NPC всегда будут влиять только на нерасовые характеристики вашего тела, и если требуется новая часть (например, влагалище или пенис), она всегда будет человеческой.";
 						break;
 					case MINIMUM:
-						title = "Minimum Furry";
+						title = "Минимум фурри";
 						description = "Принудительные трансформации от NPC могут дать вам нечеловеческие волосы, уши, глаза, хвосты, рога, антенны и крылья. Все остальные части всегда останутся человеческими.";
 						break;
 					case REDUCED:
-						title = "Lesser Furry";
+						title = "Мало фурри";
 						description = "Принудительные трансформации от NPC могут дать вам нечеловеческие волосы, уши, глаза, хвосты, рога, антенны, крылья, грудь, ягодицы, гениталии, руки и ноги. Ваша кожа и лицо всегда останутся человеческими.";
 						break;
 					case NORMAL:
-						title = "Greater Furry";
+						title = "Много фурри";
 						description = "Принудительные трансформации от NPC могут дать вам нечеловеческие волосы, уши, глаза, хвосты, рога, антенны, крылья, грудь, ягодицы, гениталии, руки, ноги, кожу и лицо. (То есть, все может быть изменено.)";
 						break;
 					case MAXIMUM:
-						title = "Maximum Furry";
+						title = "Максимум фурри";
 						description = "Принудительные трансформации от NPC всегда дадут вам нечеловеческие волосы, уши, глаза, хвосты, рога, антенны, крылья, грудь, гениталии, ягодицы, руки, ноги, кожу и лицо. (То есть, все будет изменено.)";
 						break;
 				}

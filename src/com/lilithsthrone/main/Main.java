@@ -83,8 +83,8 @@ public class Main extends Application {
 
 	public static Stage primaryStage;
 	
-	public static final String AUTHOR = "Innoxia";
-	public static final String NAME_OF_GAME = "Lilith's Throne"; // Sick of eclipse auto-correcting "Main.game.get..." to "Main.GAME_NAME.get..." so changed to NAME_OF_GAME in v0.4.11.4
+	public static final String AUTHOR = "Инноксия";
+	public static final String NAME_OF_GAME = "Трон Лилит"; // Sick of eclipse auto-correcting "Main.game.get..." to "Main.GAME_NAME.get..." so changed to NAME_OF_GAME in v0.4.11.4
 	public static final String VERSION_NUMBER = "0.4.11.9"; // Remember to do the stuff below!
 	/*
 	 * BEFORE BUILDING:
@@ -94,7 +94,7 @@ public class Main extends Application {
 	 * launch4j include JVM options:
 	 * -Dbuild.type=exe64 or -Dbuild.type=exe32 as appropriate
 	 */
-	public static final String VERSION_DESCRIPTION = "Alpha";
+	public static final String VERSION_DESCRIPTION = "Альфа";
 
 	public static boolean quickSaved = false;
 	
@@ -113,26 +113,7 @@ public class Main extends Application {
 	
 	private static String patchNotes = "";
 	
-	public static String disclaimer = "<h6 style='text-align: center; color:"+PresetColour.GENERIC_ARCANE.toWebHexString()+";'>You must read and agree to the following in order to play this game!</h6>"
-
-			+ "<p>This game is a <b>fictional</b> text-based erotic RPG. All content contained within this game forms part of a fictional universe that is not related to real-life places, people or events.<br/><br/>"
-
-			+ " All of the characters that appear in this story are fictional entities who have given their consent to appear and act in this story."
-			+ " If you find yourself concerned for the characters in the story then please be reassured that they are all consenting adults who are speaking lines from a script."
-			+ " None of the characters portrayed within this game were or are being harmed in any way during the construction or execution of this game."
-			+ " Every character in the game is at least 18 years of age (or is magically the legal age needed to appear in erotic literature in whatever country you are playing this)."
-			+  " No character in this game is blood-related to any other; once again, they are simply speaking lines from a script.<br/><br/>"
-
-			+ "By agreeing to this disclaimer and playing this game you agree to be exposed to graphic sexual and adult content that is presented as part of the game's fictional universe."
-			+ " Such content consists of, but is not limited to; graphic depictions of sex, inter-species sex (with fantasy creatures), sexual transformation,"
-			+ " rape fantasy/implied lack of consent, mild physical violence, sexual violence, and drug use.<br/>"
-			+ "Extreme fetish content such as gore/extreme violence, scat, and under/questionable age, is <i>not</i> a part of this game.<br/><br/>"
-
-			+ "By agreeing to this disclaimer and playing this game you also agree that you are <b>at least 18 years of age</b>,"
-			+ " or at least the legal age for you to purchase and view pornographic material in your country if that age is over 18.<br/><br/>"
-
-			+ "As a final note, the creators of this game wish to stress that the content presented within is entirely fictional and does not reflect any of their personal views or opinions."
-			+ " This game has been made in the spirit of creating a piece of artistic interactive literature, and it is imperative that you maintain a clear distinction between reality and the fictional events depicted in this game.</p>";
+	public static String disclaimer = "<h6 style='text-align: center; color:"+PresetColour.GENERIC_ARCANE.toWebHexString()+";'>Чтобы играть в эту игру, вы должны прочитать и согласиться со следующим!</h6><p>Эта игра представляет собой <b>вымышленную</b> текстовую эротическую RPG. Весь контент, содержащийся в этой игре, является частью вымышленной вселенной, не связанной с реальными местами, людьми или событиями.<br/><br/> Все персонажи, появляющиеся в этой истории, являются вымышленными существами, которые дали свое согласие на появление и участие в этой истории. Если вы начнете беспокоиться за персонажей, пожалуйста, будьте уверены, что все они — согласные взрослые люди, произносящие реплики по сценарию. Ни один из персонажей, представленных в этой игре, не пострадал и не подвергается каким-либо вредным воздействиям во время создания или прохождения игры. Каждому персонажу в игре не менее 18 лет (или же он магическим образом достиг законного возраста, необходимого для появления в эротической литературе в любой стране, где вы играете). Ни один персонаж в этой игре не состоит в кровном родстве с другими; повторим еще раз, они просто произносят реплики по сценарию.<br/><br/>Соглашаясь с этим дисклеймером и играя в эту игру, вы соглашаетесь на столкновение с откровенным сексуальным и взрослым контентом, представленным как часть вымышленной вселенной игры. Такой контент включает в себя, помимо прочего: графические описания секса, межвидовой секс (с фантастическими существами), сексуальные трансформации, фантазии о изнасиловании/подразумеваемое отсутствие согласия, умеренное физическое насилие, сексуальное насилие и употребление наркотиков.<br/>Экстремальный фетиш-контент, такой как гуро/экстремальное насилие, скатология и несовершеннолетний/сомнительный возраст, <i>не</i> является частью этой игры.<br/><br/>Соглашаясь с этим дисклеймером и играя в эту игру, вы также подтверждаете, что вам <b>как минимум 18 лет</b>, или вы достигли как минимум возраста, позволяющего покупать и смотреть порнографические материалы в вашей стране, если этот возраст превышает 18 лет.<br/><br/>В заключение создатели этой игры хотят подчеркнуть, что представленный контент является полностью вымышленным и не отражает их личных взглядов или мнений. Эта игра была создана в духе художественной интерактивной литературы, и крайне важно, чтобы вы проводили четкую грань между реальностью и вымышленными событиями, изображенными в этой игре.</p>";
 	
 	public static List<CreditsSlot> credits = new ArrayList<>();
 
@@ -144,321 +125,321 @@ public class Main extends Application {
 		CheckForDataDirectory();
 		CheckForResFolder();
 		
-		credits.add(new CreditsSlot("Anonymous", "", 99, 99, 99, 99));
+		credits.add(new CreditsSlot("Аноним", "", 99, 99, 99, 99));
 		
 		
-		credits.add(new CreditsSlot("Kyle S P", "", 0, 0, 0, 0, Subspecies.DEMON));
+		credits.add(new CreditsSlot("Кайл С. П.", "", 0, 0, 0, 0, Subspecies.DEMON));
 		credits.add(new CreditsSlot("Paradoxiso", "", 0, 0, 0, 0, Subspecies.DEMON));
 		credits.add(new CreditsSlot("luka_fateburn", "", 0, 0, 0, 0, Subspecies.DEMON));
-		credits.add(new CreditsSlot("CinnamonSuccubus", "", 0, 0, 0, 0, Subspecies.DEMON));
-		credits.add(new CreditsSlot("Luka_Fateburn", "", 0, 0, 0, 0, Subspecies.DEMON));
-		credits.add(new CreditsSlot("Phlarx", "", 0, 0, 0, 0, Subspecies.DEMON));
-		credits.add(new CreditsSlot("Moro", "", 0, 0, 0, 0, Subspecies.DEMON));
-		credits.add(new CreditsSlot("Neo", "", 0, 0, 0, 0, Subspecies.DEMON));
+		credits.add(new CreditsSlot("Коричная Суккуб", "", 0, 0, 0, 0, Subspecies.DEMON));
+		credits.add(new CreditsSlot("Лука Фейтберн", "", 0, 0, 0, 0, Subspecies.DEMON));
+		credits.add(new CreditsSlot("Фларкс", "", 0, 0, 0, 0, Subspecies.DEMON));
+		credits.add(new CreditsSlot("Моро", "", 0, 0, 0, 0, Subspecies.DEMON));
+		credits.add(new CreditsSlot("Нео", "", 0, 0, 0, 0, Subspecies.DEMON));
 		credits.add(new CreditsSlot("Abaddon_TMZ", "", 0, 0, 0, 0, Subspecies.DEMON));
-		credits.add(new CreditsSlot("ForgottenOne", "", 0, 0, 0, 0, Subspecies.DEMON));
-		credits.add(new CreditsSlot("Velvet", "", 0, 0, 0, 0, Subspecies.DEMON));
+		credits.add(new CreditsSlot("Забытый_Один", "", 0, 0, 0, 0, Subspecies.DEMON));
+		credits.add(new CreditsSlot("Вельвет", "", 0, 0, 0, 0, Subspecies.DEMON));
 		credits.add(new CreditsSlot("GentleTark", "", 0, 0, 0, 0, Subspecies.DEMON));
 		credits.add(new CreditsSlot("QW", "", 0, 0, 0, 0, Subspecies.DEMON));
-		credits.add(new CreditsSlot("Master Isami", "", 0, 0, 0, 0, Subspecies.DEMON));
-		credits.add(new CreditsSlot("Valeiya", "", 0, 0, 0, 0, Subspecies.DEMON));
-		credits.add(new CreditsSlot("Bubbleeey", "", 0, 0, 0, 0, Subspecies.DEMON));
-		credits.add(new CreditsSlot("RatKing", "", 0, 0, 0, 0, Subspecies.DEMON));
+		credits.add(new CreditsSlot("Мастер Исами", "", 0, 0, 0, 0, Subspecies.DEMON));
+		credits.add(new CreditsSlot("Валейя", "", 0, 0, 0, 0, Subspecies.DEMON));
+		credits.add(new CreditsSlot("Бабблээээй", "", 0, 0, 0, 0, Subspecies.DEMON));
+		credits.add(new CreditsSlot("Крысиный Король", "", 0, 0, 0, 0, Subspecies.DEMON));
 		credits.add(new CreditsSlot("H3adShotB33otch", "", 0, 0, 0, 0, Subspecies.DEMON));
-		credits.add(new CreditsSlot("BerzerkerSteel", "", 0, 0, 0, 0, Subspecies.DEMON));
-		credits.add(new CreditsSlot("Dave Ziegler", "", 0, 0, 0, 0, Subspecies.DEMON));
-		credits.add(new CreditsSlot("Kaas", "", 0, 0, 0, 0, Subspecies.DEMON));
-		credits.add(new CreditsSlot("Dark Miros", "", 0, 0, 0, 0, Subspecies.DEMON));
+		credits.add(new CreditsSlot("Берсеркская Сталь", "", 0, 0, 0, 0, Subspecies.DEMON));
+		credits.add(new CreditsSlot("Дейв Зиглер", "", 0, 0, 0, 0, Subspecies.DEMON));
+		credits.add(new CreditsSlot("Каас", "", 0, 0, 0, 0, Subspecies.DEMON));
+		credits.add(new CreditsSlot("Темный Мирос", "", 0, 0, 0, 0, Subspecies.DEMON));
 		credits.add(new CreditsSlot("DethEagle666", "", 0, 0, 0, 0, Subspecies.DEMON));
-		credits.add(new CreditsSlot("Mystic Exarch", "", 0, 0, 0, 0, Subspecies.DEMON));
-		credits.add(new CreditsSlot("Lucifer", "", 0, 0, 0, 0, Subspecies.DEMON));
-		credits.add(new CreditsSlot("A(woo)CE", "", 0, 0, 0, 0, Subspecies.DEMON));
+		credits.add(new CreditsSlot("Мистический Экзарх", "", 0, 0, 0, 0, Subspecies.DEMON));
+		credits.add(new CreditsSlot("Люцифер", "", 0, 0, 0, 0, Subspecies.DEMON));
+		credits.add(new CreditsSlot("A(ух)CE", "", 0, 0, 0, 0, Subspecies.DEMON));
 		credits.add(new CreditsSlot("BL4Z3ST0RM", "", 0, 0, 0, 0, Subspecies.DEMON));
-		credits.add(new CreditsSlot("~Chai~", "", 0, 0, 0, 0, Subspecies.DEMON));
-		credits.add(new CreditsSlot("Scarecrowlust", "", 0, 0, 0, 0, Subspecies.DEMON));
+		credits.add(new CreditsSlot("~Чай~", "", 0, 0, 0, 0, Subspecies.DEMON));
+		credits.add(new CreditsSlot("Похоть пугала", "", 0, 0, 0, 0, Subspecies.DEMON));
 		credits.add(new CreditsSlot("Doomtrack", "", 0, 0, 0, 0, Subspecies.DEMON));
-		credits.add(new CreditsSlot("Ookurikara", "", 0, 0, 0, 0, Subspecies.DEMON));
-		credits.add(new CreditsSlot("Inferniken", "", 0, 0, 0, 0, Subspecies.DEMON));
-		credits.add(new CreditsSlot("Ace Morris", "", 0, 0, 0, 0, Subspecies.DEMON));
-		credits.add(new CreditsSlot("Zyrodil", "", 0, 0, 0, 0, Subspecies.DEMON));
+		credits.add(new CreditsSlot("Окурикара", "", 0, 0, 0, 0, Subspecies.DEMON));
+		credits.add(new CreditsSlot("Инферникен", "", 0, 0, 0, 0, Subspecies.DEMON));
+		credits.add(new CreditsSlot("Эйс Моррис", "", 0, 0, 0, 0, Subspecies.DEMON));
+		credits.add(new CreditsSlot("Зиродил", "", 0, 0, 0, 0, Subspecies.DEMON));
 		credits.add(new CreditsSlot("Vorst", "", 0, 0, 0, 0, Subspecies.DEMON));
-		credits.add(new CreditsSlot("MegaJank", "", 0, 0, 0, 0, Subspecies.DEMON));
-		credits.add(new CreditsSlot("Fox-Sama", "", 0, 0, 0, 0, Subspecies.DEMON));
-		credits.add(new CreditsSlot("Riaten", "", 0, 0, 0, 0, Subspecies.DEMON));
-		credits.add(new CreditsSlot("John Guardian", "", 0, 0, 0, 0, Subspecies.DEMON));
+		credits.add(new CreditsSlot("МегаДжанк", "", 0, 0, 0, 0, Subspecies.DEMON));
+		credits.add(new CreditsSlot("Фокс-Сама", "", 0, 0, 0, 0, Subspecies.DEMON));
+		credits.add(new CreditsSlot("Риатен", "", 0, 0, 0, 0, Subspecies.DEMON));
+		credits.add(new CreditsSlot("Джон Страж", "", 0, 0, 0, 0, Subspecies.DEMON));
 		credits.add(new CreditsSlot("LemonMuffin", "", 0, 0, 0, 0, Subspecies.DEMON));
-		credits.add(new CreditsSlot("AuRah", "", 0, 0, 0, 0, Subspecies.DEMON));
+		credits.add(new CreditsSlot("Аура", "", 0, 0, 0, 0, Subspecies.DEMON));
 		credits.add(new CreditsSlot("shotgunlo", "", 0, 0, 0, 0, Subspecies.DEMON));
-		credits.add(new CreditsSlot("Polyfield", "", 0, 0, 0, 0, Subspecies.DEMON));
+		credits.add(new CreditsSlot("Полиполе", "", 0, 0, 0, 0, Subspecies.DEMON));
 		credits.add(new CreditsSlot("Homero L", "", 0, 0, 0, 0, Subspecies.DEMON));
 		credits.add(new CreditsSlot("UtmostPlatypus", "", 0, 0, 0, 0, Subspecies.DEMON));
-		credits.add(new CreditsSlot("Raven Claudius", "", 0, 0, 0, 0, Subspecies.DEMON));
-		credits.add(new CreditsSlot("Drakar Bragi", "", 0, 0, 0, 0, Subspecies.DEMON));
-		credits.add(new CreditsSlot("The Colonel", "", 0, 0, 0, 0, Subspecies.DEMON));
-		credits.add(new CreditsSlot("Melone", "", 0, 0, 0, 0, Subspecies.DEMON));
+		credits.add(new CreditsSlot("Рейвен Клавдий", "", 0, 0, 0, 0, Subspecies.DEMON));
+		credits.add(new CreditsSlot("Дракар Браги", "", 0, 0, 0, 0, Subspecies.DEMON));
+		credits.add(new CreditsSlot("Полковник", "", 0, 0, 0, 0, Subspecies.DEMON));
+		credits.add(new CreditsSlot("Мелоне", "", 0, 0, 0, 0, Subspecies.DEMON));
 		
 		
-		credits.add(new CreditsSlot("Adhana Konker", "", 0, 0, 3, 0));
-		credits.add(new CreditsSlot("Akira", "", 0, 0, 0, 2));
-		credits.add(new CreditsSlot("Aleskah", "", 0, 0, 0, 1));
-		credits.add(new CreditsSlot("Lexi <3", "", 0, 0, 0, 1));
+		credits.add(new CreditsSlot("Адана Конкер", "", 0, 0, 3, 0));
+		credits.add(new CreditsSlot("Акира", "", 0, 0, 0, 2));
+		credits.add(new CreditsSlot("Алеска", "", 0, 0, 0, 1));
+		credits.add(new CreditsSlot("Лекси <3", "", 0, 0, 0, 1));
 		credits.add(new CreditsSlot("Alvinsimon", "", 0, 0, 3, 0));
 		credits.add(new CreditsSlot("dragonouv2019", "", 0, 0, 4, 0));
 		credits.add(new CreditsSlot("Aklev", "", 0, 0, 3, 0));
 		credits.add(new CreditsSlot("AndroidSam", "", 0, 0, 2, 0));
-		credits.add(new CreditsSlot("48days", "", 0, 0, 2, 17));
-		credits.add(new CreditsSlot("Spaghetti Code", "", 0, 0, 2, 3));
+		credits.add(new CreditsSlot("48 дней", "", 0, 0, 2, 17));
+		credits.add(new CreditsSlot("Спагетти-код", "", 0, 0, 2, 3));
 		credits.add(new CreditsSlot("Anonymous_Platypus", "", 0, 0, 4, 0));
-		credits.add(new CreditsSlot("Apthydragon", "", 0, 0, 9, 0));
+		credits.add(new CreditsSlot("Аптидрагон", "", 0, 0, 9, 0));
 		credits.add(new CreditsSlot("Archan9el S117", "", 0, 0, 0, 12));
 		credits.add(new CreditsSlot("SchALLieS", "", 0, 0, 4, 12));
-		credits.add(new CreditsSlot("Argmoe", "", 0, 0, 14, 0));
+		credits.add(new CreditsSlot("Аргмоэ", "", 0, 0, 14, 0));
 		credits.add(new CreditsSlot("HoneyNutQueerios", "", 0, 0, 16, 0));
-		credits.add(new CreditsSlot("Arkhan", "", 0, 0, 6, 0));
-		credits.add(new CreditsSlot("Ash", "", 0, 1, 0, 10));
-		credits.add(new CreditsSlot("Jack Cloudie", "", 0, 1, 10, 0));
+		credits.add(new CreditsSlot("Архан", "", 0, 0, 6, 0));
+		credits.add(new CreditsSlot("Эш", "", 0, 1, 0, 10));
+		credits.add(new CreditsSlot("Джек Клауди", "", 0, 1, 10, 0));
 		credits.add(new CreditsSlot("b00marrows", "", 0, 1, 5, 0));
-		credits.add(new CreditsSlot("Deimios", "", 0, 0, 3, 7));
-		credits.add(new CreditsSlot("Baz GoldenClaw", "", 0, 0, 17, 0));
+		credits.add(new CreditsSlot("Деймиос", "", 0, 0, 3, 7));
+		credits.add(new CreditsSlot("Баз Голденкло*", "", 0, 0, 17, 0));
 		credits.add(new CreditsSlot("Mhaak", "", 0, 0, 0, 9));
-		credits.add(new CreditsSlot("FidelPinochetov", "", 0, 0, 0, 13));
-		credits.add(new CreditsSlot("Tieria", "", 0, 0, 1, 0));
+		credits.add(new CreditsSlot("Фидель Пиночет", "", 0, 0, 0, 13));
+		credits.add(new CreditsSlot("Тирия", "", 0, 0, 1, 0));
 		credits.add(new CreditsSlot("Runehood66", "", 0, 0, 0, 5));
 		credits.add(new CreditsSlot("Krissy2017", "", 0, 0, 2, 6));
-		credits.add(new CreditsSlot("Blackcanine", "", 0, 0, 17, 0));
-		credits.add(new CreditsSlot("Blackheart", "", 0, 0, 1, 3));
-		credits.add(new CreditsSlot("Blacktouch", "", 0, 0, 2, 17));
+		credits.add(new CreditsSlot("Блэккайн", "", 0, 0, 17, 0));
+		credits.add(new CreditsSlot("Блэкхарт", "", 0, 0, 1, 3));
+		credits.add(new CreditsSlot("Блэктач", "", 0, 0, 2, 17));
 		credits.add(new CreditsSlot("BlakLite", "", 0, 0, 9, 0));
 		credits.add(new CreditsSlot("Blue999", "", 0, 0, 0, 19));
 		credits.add(new CreditsSlot("BlueWolf", "", 0, 0, 5, 0));
-		credits.add(new CreditsSlot("Brandon Stach", "", 0, 0, 15, 0));
+		credits.add(new CreditsSlot("Брэндон Стах", "", 0, 0, 15, 0));
 		credits.add(new CreditsSlot("BreakerB", "", 0, 0, 6, 0));
 		credits.add(new CreditsSlot("BRobort", "", 0, 0, 9, 0));
 		credits.add(new CreditsSlot("BloodsailXXII", "", 0, 0, 0, 19));
-		credits.add(new CreditsSlot("Burt", "", 0, 0, 6, 0));
+		credits.add(new CreditsSlot("Берт", "", 0, 0, 6, 0));
 		credits.add(new CreditsSlot("Atroykus", "", 0, 0, 0, 6));
-		credits.add(new CreditsSlot("Calrak", "", 0, 0, 0, 18, Subspecies.DEMON));
-		credits.add(new CreditsSlot("CancerMage", "", 0, 0, 12, 0));
-		credits.add(new CreditsSlot("Captain_Sigmus", "", 0, 0, 7, 0));
-		credits.add(new CreditsSlot("Casper &quot;Cdaser&quot; D.", "", 0, 0, 10, 0));
-		credits.add(new CreditsSlot("CelestialNightmare", "", 0, 0, 0, 15));
-		credits.add(new CreditsSlot("Sxythe", "", 0, 0, 0, 2));
-		credits.add(new CreditsSlot("Lexi the slut", "", 0, 0, 0, 19));
+		credits.add(new CreditsSlot("Калрак", "", 0, 0, 0, 18, Subspecies.DEMON));
+		credits.add(new CreditsSlot("Рак-Маг", "", 0, 0, 12, 0));
+		credits.add(new CreditsSlot("Капитан_Сигмус", "", 0, 0, 7, 0));
+		credits.add(new CreditsSlot("Каспер &quot;Cdaser&quot; Д.", "", 0, 0, 10, 0));
+		credits.add(new CreditsSlot("Небесный Кошмар", "", 0, 0, 0, 15));
+		credits.add(new CreditsSlot("Сайт»", "", 0, 0, 0, 2));
+		credits.add(new CreditsSlot("Шлюшка Лекси", "", 0, 0, 0, 19));
 		credits.add(new CreditsSlot("Chattyneko", "", 0, 0, 10, 0));
-		credits.add(new CreditsSlot("Vmpireassassin (Chloe)", "", 0, 0, 0, 5));
+		credits.add(new CreditsSlot("Vmpireassassin (Хлоя)", "", 0, 0, 0, 5));
 		credits.add(new CreditsSlot("cinless", "", 0, 0, 0, 13));
 		credits.add(new CreditsSlot("crashtestdummy", "", 0, 0, 9, 5));
-		credits.add(new CreditsSlot("Crimson", "", 0, 0, 0, 17));
+		credits.add(new CreditsSlot("Малиновый", "", 0, 0, 0, 17));
 		credits.add(new CreditsSlot("CrowCorvus", "", 0, 0, 9, 0));
-		credits.add(new CreditsSlot("Cryostorm", "", 0, 0, 15, 0));
-		credits.add(new CreditsSlot("Cursed Rena", "", 0, 0, 1, 12));
-		credits.add(new CreditsSlot("Cynical-Cy", "", 0, 0, 11, 0));
+		credits.add(new CreditsSlot("Криошторм", "", 0, 0, 15, 0));
+		credits.add(new CreditsSlot("Проклятая Рена", "", 0, 0, 1, 12));
+		credits.add(new CreditsSlot("Циничный-Си", "", 0, 0, 11, 0));
 		credits.add(new CreditsSlot("Dace617", "", 0, 0, 0, 4));
-		credits.add(new CreditsSlot("Saladofstones", "", 0, 0, 7, 0));
-		credits.add(new CreditsSlot("Dan", "", 0, 1, 0, 15));
-		credits.add(new CreditsSlot("Hikaru Lightbringer", "", 0, 0, 5, 0));
-		credits.add(new CreditsSlot("Griff", "", 0, 0, 3, 0));
-		credits.add(new CreditsSlot("Daniel D Magnan", "", 0, 0, 10, 0));
-		credits.add(new CreditsSlot("DarKaz", "", 0, 0, 0, 2));
-		credits.add(new CreditsSlot("Darthsawyer", "", 0, 0, 6, 0));
-		credits.add(new CreditsSlot("Yllarius", "", 0, 0, 2, 0));
-		credits.add(new CreditsSlot("DeadEyesSee", "", 0, 0, 11, 0));
+		credits.add(new CreditsSlot("Саладофстоунс", "", 0, 0, 7, 0));
+		credits.add(new CreditsSlot("Дэн", "", 0, 1, 0, 15));
+		credits.add(new CreditsSlot("Хикару Светоносный", "", 0, 0, 5, 0));
+		credits.add(new CreditsSlot("Грифф", "", 0, 0, 3, 0));
+		credits.add(new CreditsSlot("Даниэль Д. Манан", "", 0, 0, 10, 0));
+		credits.add(new CreditsSlot("ДарКаз", "", 0, 0, 0, 2));
+		credits.add(new CreditsSlot("Дартсойер", "", 0, 0, 6, 0));
+		credits.add(new CreditsSlot("Иллариус", "", 0, 0, 2, 0));
+		credits.add(new CreditsSlot("МертвыеГлазаВидят", "", 0, 0, 11, 0));
 		credits.add(new CreditsSlot("DeadMasterZero", "", 0, 0, 8, 6));
 		credits.add(new CreditsSlot("CruellerTwo24 ", "", 0, 0, 0, 5));
 		credits.add(new CreditsSlot("Demonicgamer666", "", 0, 0, 0, 8));
-		credits.add(new CreditsSlot("John Scarlet", "", 0, 0, 0, 5));
-		credits.add(new CreditsSlot("Desgax", "", 0, 0, 7, 0));
-		credits.add(new CreditsSlot("Destont", "", 0, 0, 16, 0));
-		credits.add(new CreditsSlot("Nordo", "", 0, 0, 0, 1));
-		credits.add(new CreditsSlot("Di", "", 0, 0, 0, 2));
+		credits.add(new CreditsSlot("Джон Скарлет", "", 0, 0, 0, 5));
+		credits.add(new CreditsSlot("Десгакс", "", 0, 0, 7, 0));
+		credits.add(new CreditsSlot("Дестон", "", 0, 0, 16, 0));
+		credits.add(new CreditsSlot("Нордо", "", 0, 0, 0, 1));
+		credits.add(new CreditsSlot("Ди", "", 0, 0, 0, 2));
 		credits.add(new CreditsSlot("DLI", "", 0, 0, 0, 14));
 		credits.add(new CreditsSlot("suka", "", 0, 0, 19, 0));
 		credits.add(new CreditsSlot("rinoskin", "", 0, 0, 0, 6));
-		credits.add(new CreditsSlot("Alatar", "", 0, 0, 0, 2));
-		credits.add(new CreditsSlot("Elmsdor", "", 0, 0, 0, 19));
+		credits.add(new CreditsSlot("Алатар", "", 0, 0, 0, 2));
+		credits.add(new CreditsSlot("Элмсдор", "", 0, 0, 0, 19));
 		credits.add(new CreditsSlot("EnigmaticYoshi", "", 0, 0, 19, 0));
-		credits.add(new CreditsSlot("Endless", "", 0, 0, 6, 2));
-		credits.add(new CreditsSlot("Gr33n B3ans", "", 0, 0, 0, 2));
-		credits.add(new CreditsSlot("Erin Kyan", "", 0, 0, 13, 0));
-		credits.add(new CreditsSlot("Avandemine", "", 0, 0, 1, 11));
-		credits.add(new CreditsSlot("Evit", "", 0, 0, 5, 0));
-		credits.add(new CreditsSlot("F. Rowan", "", 0, 0, 7, 0));
-		credits.add(new CreditsSlot("Farseeker", "", 0, 0, 8, 0));
-		credits.add(new CreditsSlot("pupslut felix", "", 0, 0, 0, 12));
+		credits.add(new CreditsSlot("Бесконечный", "", 0, 0, 6, 2));
+		credits.add(new CreditsSlot("Зелёная фасоль", "", 0, 0, 0, 2));
+		credits.add(new CreditsSlot("Эрин Киан", "", 0, 0, 13, 0));
+		credits.add(new CreditsSlot("Авандемин", "", 0, 0, 1, 11));
+		credits.add(new CreditsSlot("Эвит", "", 0, 0, 5, 0));
+		credits.add(new CreditsSlot("Ф. Роуэн", "", 0, 0, 7, 0));
+		credits.add(new CreditsSlot("Искатель", "", 0, 0, 8, 0));
+		credits.add(new CreditsSlot("щенячий шлюх феликс", "", 0, 0, 0, 12));
 		credits.add(new CreditsSlot("Fenrakk101", "", 0, 0, 11, 0));
-		credits.add(new CreditsSlot("Fiona", "", 0, 0, 0, 19));
+		credits.add(new CreditsSlot("Фиона", "", 0, 0, 0, 19));
 		credits.add(new CreditsSlot("ForeverFree2MeTaMax", "", 0, 0, 14, 0));
 		credits.add(new CreditsSlot("FossorTumulus", "", 0, 0, 11, 0));
-		credits.add(new CreditsSlot("William E", "", 0, 0, 0, 15));
+		credits.add(new CreditsSlot("Уильям Э", "", 0, 0, 0, 15));
 		credits.add(new CreditsSlot("Freekingamer", "", 0, 0, 0, 10));
 		credits.add(new CreditsSlot("fun_bot", "", 0, 0, 0, 3));
-		credits.add(new CreditsSlot("Niki Parks", "", 0, 0, 19, 0));
-		credits.add(new CreditsSlot("Garkylal", "", 0, 0, 10, 0));
+		credits.add(new CreditsSlot("Ники Паркс", "", 0, 0, 19, 0));
+		credits.add(new CreditsSlot("Гаркилал", "", 0, 0, 10, 0));
 		credits.add(new CreditsSlot("Georgio154", "", 0, 0, 1, 6));
 		credits.add(new CreditsSlot("glocknar", "", 0, 0, 11, 0));
-		credits.add(new CreditsSlot("Goldmember", "", 0, 0, 0, 3));
-		credits.add(new CreditsSlot("Grakcnar", "", 0, 0, 9, 0));
-		credits.add(new CreditsSlot("Grave Indignation", "", 0, 0, 4, 0));
+		credits.add(new CreditsSlot("Золотой член", "", 0, 0, 0, 3));
+		credits.add(new CreditsSlot("Гракснар", "", 0, 0, 9, 0));
+		credits.add(new CreditsSlot("Гробовое негодование", "", 0, 0, 4, 0));
 		credits.add(new CreditsSlot("GravyRainbow", "", 0, 0, 0, 6));
 		credits.add(new CreditsSlot("WodashGSJ", "", 0, 0, 15, 0));
 		credits.add(new CreditsSlot("Aceofspades", "", 0, 0, 2, 0));
-		credits.add(new CreditsSlot("Assiyalos", "", 0, 0, 9, 0));
-		credits.add(new CreditsSlot("Hedgehog", "", 0, 0, 0, 10));
-		credits.add(new CreditsSlot("Helyriel", "", 0, 0, 15, 0));
+		credits.add(new CreditsSlot("Ассиялос", "", 0, 0, 9, 0));
+		credits.add(new CreditsSlot("Ёжик", "", 0, 0, 0, 10));
+		credits.add(new CreditsSlot("Хелириэль", "", 0, 0, 15, 0));
 		credits.add(new CreditsSlot("Jatch", "", 0, 0, 11, 0));
 		credits.add(new CreditsSlot("JaminGold", "", 0, 0, 4, 0));
-		credits.add(new CreditsSlot("Jason Paterson", "", 0, 0, 0, 9));
-		credits.add(new CreditsSlot("no1skill", "", 0, 0, 0, 5));
+		credits.add(new CreditsSlot("Джейсон Патерсон", "", 0, 0, 0, 9));
+		credits.add(new CreditsSlot("первый_навык", "", 0, 0, 0, 5));
 		credits.add(new CreditsSlot("Bocaj91", "", 0, 0, 0, 13));
-		credits.add(new CreditsSlot("Krejil", "", 0, 0, 13, 0));
-		credits.add(new CreditsSlot("Joeybear", "", 0, 0, 0, 5));
+		credits.add(new CreditsSlot("Крейжил", "", 0, 0, 13, 0));
+		credits.add(new CreditsSlot("Джоибер", "", 0, 0, 0, 5));
 		credits.add(new CreditsSlot("Eushully", "", 0, 0, 0, 12));
-		credits.add(new CreditsSlot("Joshua Walter", "", 0, 0, 0, 1));
+		credits.add(new CreditsSlot("Джошуа Уолтер", "", 0, 0, 0, 1));
 		credits.add(new CreditsSlot("Garth614", "", 0, 0, 0, 15));
-		credits.add(new CreditsSlot("Justicia Anthony", "", 0, 0, 0, 5));
+		credits.add(new CreditsSlot("Хустисия Энтони", "", 0, 0, 0, 5));
 		credits.add(new CreditsSlot("HerrKommissar11", "", 0, 0, 1, 4));
-		credits.add(new CreditsSlot("Kaerea", "", 0, 0, 7, 0));
-		credits.add(new CreditsSlot("Kaleb the Wise", "", 0, 0, 0, 5));
-		credits.add(new CreditsSlot("Karlimero", "", 0, 0, 0, 8));
+		credits.add(new CreditsSlot("Каэреа", "", 0, 0, 7, 0));
+		credits.add(new CreditsSlot("Калеб Мудрый", "", 0, 0, 0, 5));
+		credits.add(new CreditsSlot("Карлимеро", "", 0, 0, 0, 8));
 		credits.add(new CreditsSlot("Tappi", "", 0, 0, 7, 0));
 		credits.add(new CreditsSlot("KazukiNero", "", 0, 0, 12, 0));
 		credits.add(new CreditsSlot("Kelly999", "", 0, 1, 12, 0));
 		credits.add(new CreditsSlot("kenshin5491", "", 0, 0, 18, 0));
-		credits.add(new CreditsSlot("Kestrel", "", 0, 0, 19, 0));
+		credits.add(new CreditsSlot("Кестрел", "", 0, 0, 19, 0));
 		credits.add(new CreditsSlot("BlueVulcan", "", 0, 0, 6, 0));
-		credits.add(new CreditsSlot("KingofKings", "", 0, 0, 0, 19));
-		credits.add(new CreditsSlot("Kiroberos", "", 0, 0, 0, 17));
-		credits.add(new CreditsSlot("Kernog", "", 0, 0, 1, 0));
-		credits.add(new CreditsSlot("Knight-Lord Xander", "", 0, 0, 0, 19));
-		credits.add(new CreditsSlot("Krozoz", "", 0, 0, 2, 0, Subspecies.DEMON));
-		credits.add(new CreditsSlot("Krulin", "", 0, 0, 1, 0));
-		credits.add(new CreditsSlot("Kyralon", "", 0, 0, 0, 5));
-		credits.add(new CreditsSlot("Chris Turpin", "", 0, 0, 17, 0));
-		credits.add(new CreditsSlot("Lee Thompson", "", 0, 0, 14, 0));
-		credits.add(new CreditsSlot("Leob", "", 0, 0, 10, 4));
-		credits.add(new CreditsSlot("Pallid", "", 0, 0, 0, 5));
+		credits.add(new CreditsSlot("Царь Царей", "", 0, 0, 0, 19));
+		credits.add(new CreditsSlot("Кироберос", "", 0, 0, 0, 17));
+		credits.add(new CreditsSlot("Керног", "", 0, 0, 1, 0));
+		credits.add(new CreditsSlot("Рыцарь-лорд Ксандер", "", 0, 0, 0, 19));
+		credits.add(new CreditsSlot("Крозоз", "", 0, 0, 2, 0, Subspecies.DEMON));
+		credits.add(new CreditsSlot("Крулин", "", 0, 0, 1, 0));
+		credits.add(new CreditsSlot("Киралон", "", 0, 0, 0, 5));
+		credits.add(new CreditsSlot("Крис Терпин", "", 0, 0, 17, 0));
+		credits.add(new CreditsSlot("Ли Томпсон", "", 0, 0, 14, 0));
+		credits.add(new CreditsSlot("Леоб", "", 0, 0, 10, 4));
+		credits.add(new CreditsSlot("Паллид", "", 0, 0, 0, 5));
 		credits.add(new CreditsSlot("ilderon", "", 0, 0, 5, 0));
-		credits.add(new CreditsSlot("Littlemankitten", "", 0, 0, 0, 12));
-		credits.add(new CreditsSlot("LadyofFoxes", "", 0, 0, 2, 0));
-		credits.add(new CreditsSlot("Mr L", "", 0, 0, 4, 1));
+		credits.add(new CreditsSlot("МаленькаяКошечка", "", 0, 0, 0, 12));
+		credits.add(new CreditsSlot("ЛедиЛисиц", "", 0, 0, 2, 0));
+		credits.add(new CreditsSlot("Мистер Л", "", 0, 0, 4, 1));
 		credits.add(new CreditsSlot("loveless", "", 0, 0, 0, 19, Subspecies.DEMON));
-		credits.add(new CreditsSlot("Vaddex", "", 0, 0, 0, 5));
-		credits.add(new CreditsSlot("Kitsune Lyn", "", 0, 0, 0, 10));
-		credits.add(new CreditsSlot("Manwhore", "", 0, 0, 0, 3));
-		credits.add(new CreditsSlot("Beldamon", "", 0, 0, 0, 10));
+		credits.add(new CreditsSlot("Ваддекс", "", 0, 0, 0, 5));
+		credits.add(new CreditsSlot("Кицунэ Лин", "", 0, 0, 0, 10));
+		credits.add(new CreditsSlot("Бабник", "", 0, 0, 0, 3));
+		credits.add(new CreditsSlot("Бельдамон", "", 0, 0, 0, 10));
 		credits.add(new CreditsSlot("matchsticks", "", 0, 0, 10, 0));
 		credits.add(new CreditsSlot("masterpuppet", "", 0, 0, 15, 0));
-		credits.add(new CreditsSlot("Nightmare", "", 0, 0, 0, 5));
-		credits.add(new CreditsSlot("AlphaOneBravo", "", 0, 0, 0, 19));
-		credits.add(new CreditsSlot("Max Nobody", "", 0, 0, 0, 19));
-		credits.add(new CreditsSlot("Mega", "", 0, 0, 11, 0));
-		credits.add(new CreditsSlot("Mia Montane", "", 0, 0, 0, 3, Subspecies.DEMON));
-		credits.add(new CreditsSlot("Mora", "", 0, 0, 4, 0));
-		credits.add(new CreditsSlot("Muhaku", "", 0, 0, 9, 0));
-		credits.add(new CreditsSlot("Neximus", "", 0, 0, 10, 0));
-		credits.add(new CreditsSlot("Mylerra", "", 0, 0, 10, 0));
-		credits.add(new CreditsSlot("Kobu", "", 0, 0, 0, 14));
-		credits.add(new CreditsSlot("Natemare", "", 0, 0, 8, 0));
+		credits.add(new CreditsSlot("Кошмар", "", 0, 0, 0, 5));
+		credits.add(new CreditsSlot("АльфаОдинБраво", "", 0, 0, 0, 19));
+		credits.add(new CreditsSlot("Макс Никто", "", 0, 0, 0, 19));
+		credits.add(new CreditsSlot("Мега", "", 0, 0, 11, 0));
+		credits.add(new CreditsSlot("Миа Монтане", "", 0, 0, 0, 3, Subspecies.DEMON));
+		credits.add(new CreditsSlot("Мора", "", 0, 0, 4, 0));
+		credits.add(new CreditsSlot("Мухаку", "", 0, 0, 9, 0));
+		credits.add(new CreditsSlot("Нексимус", "", 0, 0, 10, 0));
+		credits.add(new CreditsSlot("Милерра", "", 0, 0, 10, 0));
+		credits.add(new CreditsSlot("Кобу", "", 0, 0, 0, 14));
+		credits.add(new CreditsSlot("Натемаре", "", 0, 0, 8, 0));
 		credits.add(new CreditsSlot("IreCobra", "", 0, 0, 10, 0));
 		credits.add(new CreditsSlot("NeonRaven94", "", 0, 0, 0, 9));
-		credits.add(new CreditsSlot("Neon Swaglord Chen", "", 0, 0, 4, 0));
-		credits.add(new CreditsSlot("Nexusman", "", 0, 0, 11, 0));
-		credits.add(new CreditsSlot("SisterFister420", "", 0, 0, 0, 10));
-		credits.add(new CreditsSlot("Nick LaBlue", "", 0, 0, 16, 0));
-		credits.add(new CreditsSlot("Kvernik", "", 0, 0, 6, 0));
-		credits.add(new CreditsSlot("Niko", "", 0, 0, 16, 0));
-		credits.add(new CreditsSlot("Nnxx", "", 0, 1, 3, 2));
-		credits.add(new CreditsSlot("NorwegianMonster", "", 0, 0, 0, 6));
-		credits.add(new CreditsSlot("Seo Leifthrasir", "", 0, 0, 0, 6));
+		credits.add(new CreditsSlot("Неоновый Сваглорд Чен", "", 0, 0, 4, 0));
+		credits.add(new CreditsSlot("Нексусмен", "", 0, 0, 11, 0));
+		credits.add(new CreditsSlot("Сестра-Фистер420", "", 0, 0, 0, 10));
+		credits.add(new CreditsSlot("Ник Лаблю", "", 0, 0, 16, 0));
+		credits.add(new CreditsSlot("Кверник", "", 0, 0, 6, 0));
+		credits.add(new CreditsSlot("Нико", "", 0, 0, 16, 0));
+		credits.add(new CreditsSlot("Ннхх", "", 0, 1, 3, 2));
+		credits.add(new CreditsSlot("НорвежскийМонстр", "", 0, 0, 0, 6));
+		credits.add(new CreditsSlot("Сео Лейфтхрасир", "", 0, 0, 0, 6));
 		credits.add(new CreditsSlot("Odd8Ball", "", 0, 0, 0, 18));
-		credits.add(new CreditsSlot("Party Commissar", "", 0, 0, 4, 13));
-		credits.add(new CreditsSlot("Patrik Gr&#246;nlund", "", 0, 0, 2, 0));
-		credits.add(new CreditsSlot("Totes Amazeballs", "", 0, 0, 0, 3));
-		credits.add(new CreditsSlot("Rohsie", "", 0, 0, 0, 10));
+		credits.add(new CreditsSlot("Партийный комиссар", "", 0, 0, 4, 13));
+		credits.add(new CreditsSlot("Патрик Грёндлунд", "", 0, 0, 2, 0));
+		credits.add(new CreditsSlot("Просто отпад", "", 0, 0, 0, 3));
+		credits.add(new CreditsSlot("Ропси", "", 0, 0, 0, 10));
 		credits.add(new CreditsSlot("P.", "", 0, 0, 0, 4));
 		credits.add(new CreditsSlot("BLKCandy", "", 0, 0, 12, 0));
-		credits.add(new CreditsSlot("Pierre Mura", "", 0, 0, 0, 11));
-		credits.add(new CreditsSlot("Pokys", "", 0, 0, 9, 0));
+		credits.add(new CreditsSlot("Пьер Мура", "", 0, 0, 0, 11));
+		credits.add(new CreditsSlot("Покис", "", 0, 0, 9, 0));
 		credits.add(new CreditsSlot("PoyntFury", "", 0, 0, 1, 4, Subspecies.DEMON));
 		credits.add(new CreditsSlot("QQQ", "", 0, 0, 0, 19, Subspecies.DEMON));
 		credits.add(new CreditsSlot("awrfyu_", "", 0, 0, 0, 7));
-		credits.add(new CreditsSlot("Rakesh", "", 0, 0, 8, 0));
+		credits.add(new CreditsSlot("Ракеш", "", 0, 0, 8, 0));
 		credits.add(new CreditsSlot("R.W", "", 0, 3, 11, 0, Subspecies.DEMON));
-		credits.add(new CreditsSlot("Raruke", "", 0, 0, 3, 0));
-		credits.add(new CreditsSlot("The Void Prince", "", 0, 0, 13, 0));
-		credits.add(new CreditsSlot("Master's dumb bitch", "", 0, 0, 0, 19));
-		credits.add(new CreditsSlot("Arpie", "", 0, 0, 0, 1));
-		credits.add(new CreditsSlot("Reila Oda", "", 0, 0, 0, 9));
-		credits.add(new CreditsSlot("Roarik", "", 0, 0, 0, 10));
-		credits.add(new CreditsSlot("Dark_Lord", "", 0, 0, 2, 6));
+		credits.add(new CreditsSlot("Раруке", "", 0, 0, 3, 0));
+		credits.add(new CreditsSlot("Принц Бездны", "", 0, 0, 13, 0));
+		credits.add(new CreditsSlot("Тупая сучка Хозяина", "", 0, 0, 0, 19));
+		credits.add(new CreditsSlot("Арпи", "", 0, 0, 0, 1));
+		credits.add(new CreditsSlot("Рейла Ода", "", 0, 0, 0, 9));
+		credits.add(new CreditsSlot("Роарик", "", 0, 0, 0, 10));
+		credits.add(new CreditsSlot("Темный_Лорд", "", 0, 0, 2, 6));
 		credits.add(new CreditsSlot("redwulfen", "", 0, 0, 0, 18));
-		credits.add(new CreditsSlot("Roger Reyne", "", 0, 0, 0, 3));
+		credits.add(new CreditsSlot("Роджер Рейн", "", 0, 0, 0, 3));
 		credits.add(new CreditsSlot("RogueRandom", "", 0, 0, 16, 0));
 		credits.add(new CreditsSlot("Horagen81", "", 0, 0, 0, 13, Subspecies.DEMON));
 		credits.add(new CreditsSlot("RyubosJ", "", 0, 0, 6, 0));
-		credits.add(new CreditsSlot("Saladine the Legendary", "", 0, 0, 0, 15));
+		credits.add(new CreditsSlot("Саладин Легендарный", "", 0, 0, 0, 15));
 		credits.add(new CreditsSlot("Sand9k", "", 0, 0, 0, 11));
-		credits.add(new CreditsSlot("Schande", "", 0, 0, 0, 11));
-		credits.add(new CreditsSlot("Scith", "", 0, 0, 5, 0));
-		credits.add(new CreditsSlot("Blue Kobold", "", 0, 0, 12, 0));
+		credits.add(new CreditsSlot("Шанде", "", 0, 0, 0, 11));
+		credits.add(new CreditsSlot("Скит", "", 0, 0, 5, 0));
+		credits.add(new CreditsSlot("Синий кобольд", "", 0, 0, 12, 0));
 		credits.add(new CreditsSlot("sebasjac", "", 0, 0, 0, 2));
 		credits.add(new CreditsSlot("S", "", 0, 0, 1, 18));
-		credits.add(new CreditsSlot("Shas'O Dal'yth Kauyon Kais Taku", "", 0, 0, 19, 0));
-		credits.add(new CreditsSlot("Crow Invictus", "", 0, 0, 18, 0));
-		credits.add(new CreditsSlot("Sheltem", "", 0, 0, 16, 0));
-		credits.add(new CreditsSlot("Shilou", "", 0, 0, 0, 1, Subspecies.DEMON));
+		credits.add(new CreditsSlot("Шас'О Дал'ит Кауйон Кайс Таку", "", 0, 0, 19, 0));
+		credits.add(new CreditsSlot("Ворон Непобедимый", "", 0, 0, 18, 0));
+		credits.add(new CreditsSlot("Шелтем", "", 0, 0, 16, 0));
+		credits.add(new CreditsSlot("Шилоу", "", 0, 0, 0, 1, Subspecies.DEMON));
 		credits.add(new CreditsSlot("shrikes", "", 0, 0, 8, 2));
-		credits.add(new CreditsSlot("Sig", "", 0, 0, 4, 0));
-		credits.add(new CreditsSlot("Silentark", "", 0, 0, 16, 0));
-		credits.add(new CreditsSlot("Sir beans", "", 0, 0, 10, 0));
-		credits.add(new CreditsSlot("Sorter", "", 0, 0, 0, 9));
-		credits.add(new CreditsSlot("Spectacular", "", 0, 0, 11, 0));
-		credits.add(new CreditsSlot("Spencer", "", 0, 0, 0, 7));
-		credits.add(new CreditsSlot("Spookermen", "", 0, 0, 0, 19));
-		credits.add(new CreditsSlot("Starchiller", "", 0, 0, 0, 8));
-		credits.add(new CreditsSlot("Steph", "", 0, 0, 9, 0));
+		credits.add(new CreditsSlot("Сиг", "", 0, 0, 4, 0));
+		credits.add(new CreditsSlot("Силентарк", "", 0, 0, 16, 0));
+		credits.add(new CreditsSlot("Сэр Бинс", "", 0, 0, 10, 0));
+		credits.add(new CreditsSlot("Сортировщик", "", 0, 0, 0, 9));
+		credits.add(new CreditsSlot("Зрелищный", "", 0, 0, 11, 0));
+		credits.add(new CreditsSlot("Спенсер", "", 0, 0, 0, 7));
+		credits.add(new CreditsSlot("Призрачные люди", "", 0, 0, 0, 19));
+		credits.add(new CreditsSlot("Звездохлад", "", 0, 0, 0, 8));
+		credits.add(new CreditsSlot("Стеф", "", 0, 0, 9, 0));
 		credits.add(new CreditsSlot("Strigon888", "", 0, 0, 0, 10));
-		credits.add(new CreditsSlot("Suvarestin", "", 0, 0, 2, 0));
-		credits.add(new CreditsSlot("Swift Shot", "", 0, 0, 14, 0));
+		credits.add(new CreditsSlot("Суварестин", "", 0, 0, 2, 0));
+		credits.add(new CreditsSlot("Быстрый выстрел", "", 0, 0, 14, 0));
 		credits.add(new CreditsSlot("TalonMort", "", 0, 0, 17, 0));
-		credits.add(new CreditsSlot("Tanall", "", 0, 1, 17, 0));
-		credits.add(new CreditsSlot("Tanner D.", "", 0, 0, 0, 6));
-		credits.add(new CreditsSlot("Terrance", "", 0, 0, 3, 0));
+		credits.add(new CreditsSlot("Таналл", "", 0, 1, 17, 0));
+		credits.add(new CreditsSlot("Таннер Д.", "", 0, 0, 0, 6));
+		credits.add(new CreditsSlot("Терренс", "", 0, 0, 3, 0));
 		credits.add(new CreditsSlot("Testostetyrone", "", 0, 0, 15, 0));
-		credits.add(new CreditsSlot("The Brocenary", "", 0, 0, 0, 4));
-		credits.add(new CreditsSlot("Jordan Aitken", "", 0, 0, 15, 0));
-		credits.add(new CreditsSlot("T. Garou", "", 0, 0, 0, 12));
+		credits.add(new CreditsSlot("Бросенарий", "", 0, 0, 0, 4));
+		credits.add(new CreditsSlot("Джордан Эйткен", "", 0, 0, 15, 0));
+		credits.add(new CreditsSlot("Т. Гару", "", 0, 0, 0, 12));
 		credits.add(new CreditsSlot("xerton", "", 0, 0, 3, 0));
 		credits.add(new CreditsSlot("Timmybond24", "", 0, 0, 0, 4));
 		credits.add(new CreditsSlot("TKaempfer", "", 0, 0, 8, 0));
-		credits.add(new CreditsSlot("Tom Clancy's Pro Skater", "", 0, 0, 6, 0));
+		credits.add(new CreditsSlot("Pro Skater от Тома Клэнси", "", 0, 0, 6, 0));
 		credits.add(new CreditsSlot("FreakyHydra", "", 0, 0, 0, 4));
 		credits.add(new CreditsSlot("Kahvi_Toope", "", 0, 0, 0, 6));
-		credits.add(new CreditsSlot("Torinir", "", 0, 0, 18, 0));
+		credits.add(new CreditsSlot("Торинир", "", 0, 0, 18, 0));
 		credits.add(new CreditsSlot("Torsten015", "", 0, 0, 0, 18));
-		credits.add(new CreditsSlot("TreenVall", "", 0, 0, 3, 0));
+		credits.add(new CreditsSlot("ТринВалл", "", 0, 0, 3, 0));
 		credits.add(new CreditsSlot("triangleman", "", 0, 0, 16, 0));
-		credits.add(new CreditsSlot("Antriad", "", 0, 0, 1, 13));
-		credits.add(new CreditsSlot("Jess", "", 0, 0, 3, 0));
-		credits.add(new CreditsSlot("Isidoros", "", 0, 0, 7, 0));
-		credits.add(new CreditsSlot("SolarEidolon", "", 0, 0, 8, 0));
-		credits.add(new CreditsSlot("Vaelin", "", 0, 0, 4, 14));
+		credits.add(new CreditsSlot("Антриад", "", 0, 0, 1, 13));
+		credits.add(new CreditsSlot("Джесс", "", 0, 0, 3, 0));
+		credits.add(new CreditsSlot("Исидорос", "", 0, 0, 7, 0));
+		credits.add(new CreditsSlot("СоларЭйдолон", "", 0, 0, 8, 0));
+		credits.add(new CreditsSlot("Ваэлин", "", 0, 0, 4, 14));
 		credits.add(new CreditsSlot("vasadariu", "", 0, 0, 15, 0));
 		credits.add(new CreditsSlot("waaaghkus", "", 0, 0, 19, 0));
-		credits.add(new CreditsSlot("Venomy", "", 0, 0, 0, 5));
+		credits.add(new CreditsSlot("Веноми", "", 0, 0, 0, 5));
 		credits.add(new CreditsSlot("iloveyouMiaoNiNi", "", 0, 0, 0, 14));
-		credits.add(new CreditsSlot("Weegschaal", "", 0, 0, 0, 3));
-		credits.add(new CreditsSlot("Whatever", "", 0, 0, 17, 0));
-		credits.add(new CreditsSlot("Will Landrum", "", 0, 0, 0, 7));
-		credits.add(new CreditsSlot("William Brown", "", 0, 0, 5, 2));
-		credits.add(new CreditsSlot("Marys", "", 0, 0, 0, 10));
+		credits.add(new CreditsSlot("Вегсхааль", "", 0, 0, 0, 3));
+		credits.add(new CreditsSlot("Без разницы", "", 0, 0, 17, 0));
+		credits.add(new CreditsSlot("Уилл Ландрум", "", 0, 0, 0, 7));
+		credits.add(new CreditsSlot("Уильям Браун", "", 0, 0, 5, 2));
+		credits.add(new CreditsSlot("Мэри́с", "", 0, 0, 0, 10));
 		credits.add(new CreditsSlot("CMPirate9867", "", 0, 0, 8, 0));
-		credits.add(new CreditsSlot("Wolfrave", "", 0, 0, 6, 0));
-		credits.add(new CreditsSlot("Wolfregis", "", 0, 0, 0, 19));
+		credits.add(new CreditsSlot("Волфрейв", "", 0, 0, 6, 0));
+		credits.add(new CreditsSlot("Вольфрегис", "", 0, 0, 0, 19));
 		credits.add(new CreditsSlot("Yuki_Sukafu", "", 0, 0, 5, 0));
-		credits.add(new CreditsSlot("Nelson Adams", "", 0, 0, 12, 0));
-		credits.add(new CreditsSlot("Zakarin", "", 0, 0, 0, 14, Subspecies.DEMON));
-		credits.add(new CreditsSlot("Zaya", "", 0, 0, 5, 0));
+		credits.add(new CreditsSlot("Нельсон Адамс", "", 0, 0, 12, 0));
+		credits.add(new CreditsSlot("Закарин", "", 0, 0, 0, 14, Subspecies.DEMON));
+		credits.add(new CreditsSlot("Зая", "", 0, 0, 5, 0));
 		credits.add(new CreditsSlot("Zero_One", "", 0, 0, 4, 0));
 		
 		
@@ -540,10 +521,7 @@ public class Main extends Application {
 		File dir = new File("data/");
 		if(!dir.exists()) {
 			Alert a = new Alert(AlertType.ERROR,
-					"Unable to find the 'data' folder ("+dir.getAbsolutePath()+"). Saving and error logging is disabled."
-							+ "\nMake sure that you've extracted the game from the zip file, and that the file has write permissions."
-							+ "\n(Please read section 'MISSING FOLDERS' in the README.txt file.)"
-							+ "\nContinue?",
+					"Не удалось найти папку 'data' ("+dir.getAbsolutePath()+"). Сохранение и ведение логов ошибок отключены.\nУбедитесь, что вы распаковали игру из zip-архива и что у файлов есть права на запись.\n(Пожалуйста, прочитайте раздел 'MISSING FOLDERS' в файле README.txt.)\nПродолжить?",
 					ButtonType.YES, ButtonType.NO);
 			System.err.println("Unable to find the 'data' folder ("+dir.getAbsolutePath()+").");
 			a.showAndWait().ifPresent(response -> {
@@ -558,11 +536,7 @@ public class Main extends Application {
 		File dir = new File("res/");
 		if(!dir.exists()) {
 			Alert a = new Alert(AlertType.WARNING,
-					"Could not find the 'res' folder ("+dir.getAbsolutePath()+"). This WILL cause errors and present sections of missing text."
-							+ "\nMake sure that you've extracted the game from the zip file, and that the file has write permissions."
-							+ "\nIf you use the command line or a batch/script file to start the game, please try starting it in the game folder to prevent this error."
-							+ "\n(Please read section 'MISSING FOLDERS' in the README.txt file.)"
-							+ "\nContinue?",
+					"Не удалось найти папку 'res' ("+dir.getAbsolutePath()+"). Это ОБЯЗАТЕЛЬНО приведет к ошибкам и появлению фрагментов отсутствующего текста.\nУбедитесь, что вы распаковали игру из zip-архива и что у файлов есть права на запись.\nЕсли вы используете командную строку или batch/script файл для запуска игры, попробуйте запустить её непосредственно из папки с игрой, чтобы избежать этой ошибки.\n(Пожалуйста, прочитайте раздел 'MISSING FOLDERS' в файле README.txt.)\nПродолжить?",
 					ButtonType.YES, ButtonType.NO);
 			System.err.println("Unable to find the 'res' folder ("+dir.getAbsolutePath()+").");
 			a.showAndWait().ifPresent(response -> {
@@ -764,7 +738,7 @@ public class Main extends Application {
 					e.printStackTrace();
 				}
 				
-				Main.game.setPlayer(new PlayerCharacter(false, new NameTriplet("Player"), 1, null, Gender.M_P_MALE, Subspecies.HUMAN, RaceStage.HUMAN, WorldType.MUSEUM, PlaceType.MUSEUM_ENTRANCE));
+				Main.game.setPlayer(new PlayerCharacter(false, new NameTriplet("Игрок"), 1, null, Gender.M_P_MALE, Subspecies.HUMAN, RaceStage.HUMAN, WorldType.MUSEUM, PlaceType.MUSEUM_ENTRANCE));
 
 				Main.game.initNewGame(startingDialogueNode);
 
@@ -820,7 +794,7 @@ public class Main extends Application {
 		return NAME_OF_GAME
 				+ " " + VERSION_NUMBER
 				+ " " + VERSION_DESCRIPTION
-				+ (DEBUG?" (Debug Mode)":"")
+				+ (DEBUG?" (Режим отладки)":"")
 				+ (displayingTurnTimer
 					?" "+Math.round((Main.game.endTurnTimeTaken/1000000000d)*1000)/1000f+"s"
 					:"");
@@ -849,19 +823,19 @@ public class Main extends Application {
 	
 	public static String getQuickSaveUnavailabilityDescription() {
 		if (!Main.game.isInNewWorld()) {
-			return "You cannot save the game during the character creation process or prologue!";
+			return "Вы не можете сохранить игру во время создания персонажа или пролога!";
 			
 		} else if (Main.game.isInCombat()) {
-			return "You cannot save the game while in combat!";
+			return "Вы не можете сохранить игру во время боя!";
 			
 		} else if (Main.game.isInSex()) {
-			return "You cannot save the game while in a sex scene!";
+			return "Вы не можете сохранить игру во время секса!";
 			
 		} else if (Main.game.getCurrentDialogueNode().getDialogueNodeType()!=DialogueNodeType.NORMAL) {
-			return "You cannot save the game unless you are in a neutral scene!";
+			return "Вы можете сохранить игру только в нейтральной сцене!";
 			
 		} else if (!Main.game.isStarted() || !Main.game.isInNeutralDialogue()) {
-			return "You cannot save the game unless you are in a neutral scene!";
+			return "Вы можете сохранить игру только в нейтральной сцене!";
 		}
 		
 		return "";
@@ -870,9 +844,9 @@ public class Main extends Application {
 	public static String getQuickSaveName() {
 		String name;
 		if(!Main.game.isStarted()) {
-			name = "QuickSave_intro";
+			name = "Быстрое сохранение: вступление";
 		} else {
-			name = "QuickSave_"+Main.game.getPlayer().getName(false);
+			name = "Быстрое сохранение_"+Main.game.getPlayer().getName(false);
 		}
 		return Main.checkFileName(name);
 	}
@@ -940,11 +914,11 @@ public class Main extends Application {
 	public static String checkFileName(String name) {
 		name = name.replace(" ", "_").replaceAll("[^\\w]+", "");
 		if (name.length()==0) {
-			Main.game.flashMessage(PresetColour.GENERIC_BAD, "Name too short!");
+			Main.game.flashMessage(PresetColour.GENERIC_BAD, "Слишком короткое имя!");
 			return "";
 		}
 		if (name.length() > 64) {
-			Main.game.flashMessage(PresetColour.GENERIC_BAD, "Name too long!");
+			Main.game.flashMessage(PresetColour.GENERIC_BAD, "Слишком длинное имя!");
 			return "";
 		}
 		return name;
@@ -980,7 +954,7 @@ public class Main extends Application {
 			}
 
 		} else {
-			Main.game.flashMessage(PresetColour.GENERIC_BAD, "File not found...");
+			Main.game.flashMessage(PresetColour.GENERIC_BAD, "Файл не найден...");
 		}
 	}
 
@@ -996,7 +970,7 @@ public class Main extends Application {
 			}
 
 		} else {
-			Main.game.flashMessage(PresetColour.GENERIC_BAD, "File not found...");
+			Main.game.flashMessage(PresetColour.GENERIC_BAD, "Файл не найден...");
 		}
 	}
 
@@ -1012,7 +986,7 @@ public class Main extends Application {
 			}
 			
 		} else {
-			Main.game.flashMessage(PresetColour.GENERIC_BAD, "File not found...");
+			Main.game.flashMessage(PresetColour.GENERIC_BAD, "Файл не найден...");
 		}
 	}
 	

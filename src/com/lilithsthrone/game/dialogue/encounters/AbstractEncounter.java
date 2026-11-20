@@ -602,13 +602,13 @@ public abstract class AbstractEncounter {
 	}
 	
 	public static Response exploreArea() {
-		return exploreArea("this area");
+		return exploreArea("эта область");
 	}
 
 	public static Response exploreArea(String areaDescription) {
 		return new ResponseEffectsOnly(
-				"Explore",
-				"Explore " + areaDescription + ". Although you don't think you're any more or less likely to find anything by doing this, at least you won't have to keep travelling back and forth..."){
+				"Исследовать",
+				"Исследовать " + areaDescription + ". Хотя вы не думаете, что это повысит или понизит ваши шансы что-то найти, по крайней мере, вам не придется постоянно мотаться туда-сюда..."){
 			@Override
 			public int getSecondsPassed() {
 				return 30*60;
@@ -625,16 +625,15 @@ public abstract class AbstractEncounter {
 //		System.out.println("AVAILABLE: "+ItemType.OFFSPRING_MAP.isAbleToBeUsed(Main.game.getPlayer(), Main.game.getPlayer()));
 		
 		if(!Main.game.getPlayer().hasItemType(ItemType.OFFSPRING_MAP)) {
-			return new Response("Offspring Map",
-							UtilText.parse("You do not have an offspring map..."
-									+ "<br/><i>An offspring map can be purchased from [vanessa.name] in City Hall.</i>"),
+			return new Response("Карта потомства",
+							UtilText.parse("У вас нет карты потомства...<br/><i>Карту потомства можно купить у [vanessa.name] в Ратуше.</i>"),
 					null);
 		} else if (!ItemType.OFFSPRING_MAP.isAbleToBeUsed(Main.game.getPlayer(), Main.game.getPlayer())) {
-			return new Response("Offspring Map",
+			return new Response("Карта потомства",
 					ItemType.OFFSPRING_MAP.getUnableToBeUsedDescription(Main.game.getPlayer(), Main.game.getPlayer()),
 					null);
 		} else {
-			return new ResponseEffectsOnly("Offspring Map",
+			return new ResponseEffectsOnly("Карта потомства",
 					ItemType.OFFSPRING_MAP.getUseTooltipDescription(Main.game.getPlayer(), Main.game.getPlayer())) {
 				@Override
 				public void effects() {

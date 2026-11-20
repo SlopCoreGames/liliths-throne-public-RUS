@@ -556,7 +556,7 @@ public class DialogueFlagValue {
 		
 		// Modded dialogueFlagValues:
 		
-		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/dialogue", null, "flags");
+		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/диалог", null, "flags");
 		for(Entry<String, Map<String, File>> entry : moddedFilesMap.entrySet()) {
 			for(Entry<String, File> innerEntry : entry.getValue().entrySet()) {
 				try {

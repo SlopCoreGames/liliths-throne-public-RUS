@@ -268,7 +268,7 @@ public class SlaveryEventLogEntry implements XMLSaving {
 			return UtilText.parse(slave, descriptionSB.toString());
 			
 		} catch (Exception e) {
-			Util.logGetNpcByIdError("SlaveryEventLogEntry.getDescription()", slaveID);
+			Util.logGetNpcByIdError("Описание записи о рабстве", slaveID);
 			return descriptionSB.toString();
 		}
 	}
@@ -282,8 +282,8 @@ public class SlaveryEventLogEntry implements XMLSaving {
 			return "<b style='color:"+slave.getFemininity().getColour().toWebHexString()+";'>"+slave.getName(true)+"</b>";
 		
 		} catch (Exception e) {
-			Util.logGetNpcByIdError("SlaveryEventLogEntry.getSlaveName()", slaveID);
-			return "<b>Slave</b>";
+			Util.logGetNpcByIdError("Имя раба в записи", slaveID);
+			return "<b>Раб</b>";
 		}
 	}
 	

@@ -24,8 +24,8 @@ public class ReindeerOverseerDialogue {
 	
 	private static Response getDefaultResponses(int index) {
 		if(index == 1) {
-			return new ResponseTrade("Trade",
-					UtilText.parse(getReindeer(), "Ask [npc.name] what Yuletide presents [npc.sheIs] selling."),
+			return new ResponseTrade("Торговать",
+					UtilText.parse(getReindeer(), "Спросить у [npc.name], какие рождественские подарки [npc.sheIs] продает."),
 					getReindeer()) {
 				@Override
 				public void effects() {
@@ -35,12 +35,12 @@ public class ReindeerOverseerDialogue {
 			
 		} else if(index == 2) {
 			if(Main.game.getDialogueFlags().hasWorkedForReindeer(getReindeer().getId())) {
-				return new Response("Work",
-						UtilText.parse(getReindeer(), "You've already helped [npc.name] to finish all of the work [npc.she] had today, so you'll need to come back tomorrow if you wanted to work for [npc.herHim] again."),
+				return new Response("Работать",
+						UtilText.parse(getReindeer(), "Вы уже помогли [npc.name] закончить всю работу, которую [npc.she] должна была сделать сегодня, так что, если вы хотите снова поработать на [npc.herHim], вам придется вернуться завтра."),
 						null);
 				
 			} else {
-				return new Response("Work", "Offer to work with the reindeer-morphs.", ENCOUNTER_WORK) {
+				return new Response("Работать", "Предложить поработать с оленеморфами.", ENCOUNTER_WORK) {
 					@Override
 					public void effects() {
 						Main.game.getDialogueFlags().addReindeerEncountered(getReindeer().getId());
@@ -51,18 +51,18 @@ public class ReindeerOverseerDialogue {
 			
 		} else if(index == 3) {
 			if(!Main.game.getDialogueFlags().hasWorkedForReindeer(getReindeer().getId())) {
-				return new Response("Relieve stress",
-						UtilText.parse(getReindeer(), "[npc.Name] is far too busy to take any time off work right now. Perhaps if you helped out first, [npc.she]'d have time to have sex with you..."),
+				return new Response("Снять стресс",
+						UtilText.parse(getReindeer(), "[npc.Name] сейчас слишком занята, чтобы отвлекаться от работы. Возможно, если вы сначала поможете, у [npc.she] найдется время, чтобы трахнуть вас..."),
 						null);
 				
 			} else if(!getReindeer().isAttractedTo(Main.game.getPlayer())) {
-				return new Response("Relieve stress",
-						UtilText.parse(getReindeer(), "[npc.Name] is not attracted to you, and as such, [npc.sheIs] not willing to have sex with you..."),
+				return new Response("Снять стресс",
+						UtilText.parse(getReindeer(), "[npc.Name] не испытывает к вам влечения, и поэтому [npc.sheIs] не готова заняться с вами сексом..."),
 						null);
 				
 			} else {
-				return new ResponseSex("Relieve stress",
-							UtilText.parse(getReindeer(), "Ask [npc.name] if [npc.she]'d like to blow off some steam with you."),
+				return new ResponseSex("Снять стресс",
+							UtilText.parse(getReindeer(), "Спросить [npc.name], не хочет ли [npc.she] немного развлечься с вами."),
 							true, true,
 							new SMGeneric(
 									Util.newArrayListOfValues(Main.game.getPlayer()),
@@ -84,8 +84,8 @@ public class ReindeerOverseerDialogue {
 			}
 			
 		} else if(index==0) {
-			return new Response("Leave",
-					UtilText.parse(getReindeer(), "Tell [npc.name] that you might come back another time, before taking your leave."),
+			return new Response("Уйти",
+					UtilText.parse(getReindeer(), "Сказать [npc.name], что вы, возможно, заглянете в другой раз, прежде чем уйти."),
 					ENCOUNTER_START){
 				@Override
 				public void effects() {
@@ -100,7 +100,7 @@ public class ReindeerOverseerDialogue {
 		return null;
 	}
 	
-	public static final DialogueNode ENCOUNTER_START = new DialogueNode("Reindeer Overseer", "", true) {
+	public static final DialogueNode ENCOUNTER_START = new DialogueNode("Надзиратель оленей", "", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 2*60;
@@ -115,7 +115,7 @@ public class ReindeerOverseerDialogue {
 		}
 	};
 	
-	public static final DialogueNode ENCOUNTER_WORK = new DialogueNode("Reindeer Overseer", "", true) {
+	public static final DialogueNode ENCOUNTER_WORK = new DialogueNode("Надзиратель оленей", "", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 2*60;
@@ -127,9 +127,8 @@ public class ReindeerOverseerDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Shovel snow",
-						UtilText.parse(getReindeer(), "Tell [npc.name] that you'll shovel snow with the rest of the workers."
-								+ "<br/>Your performance and payment will be based on your [style.italicsStrength("+Attribute.MAJOR_PHYSIQUE.getName()+")]."),
+				return new Response("Копать снег",
+						UtilText.parse(getReindeer(), "Скажи [npc.name], что будешь чистить снег вместе с остальными рабочими.<br/>Твоя производительность и оплата будут зависеть от твоей [style.italicsStrength("+Attribute.MAJOR_PHYSIQUE.getName()+")]."),
 						ENCOUNTER_WORK_FINISHED) {
 					@Override
 					public void effects() {
@@ -141,9 +140,8 @@ public class ReindeerOverseerDialogue {
 				};
 				
 			} else if(index==2) {
-				return new Response("Use heat-stave",
-						UtilText.parse(getReindeer(), "Tell [npc.name] that you'd like to use one of the heat-staves to score out lines in the snow."
-								+ "<br/>Your performance and payment will be based on your [style.italicsIntelligence("+Attribute.MAJOR_ARCANE.getName()+")]."),
+				return new Response("Использовать тепловой шест",
+						UtilText.parse(getReindeer(), "Tell [npc.name] that you'd like to use one of the heat-staves to score out lines in the snow.<br/>Your performance and payment will be based on your [style.italicsIntelligence("+Attribute.MAJOR_ARCANE.getName()+")]."),
 						ENCOUNTER_WORK_FINISHED) {
 					@Override
 					public void effects() {
@@ -155,9 +153,8 @@ public class ReindeerOverseerDialogue {
 				};
 				
 			} else if(index==3) {
-				return new Response("'Encouragement'",
-						UtilText.parse(getReindeer(), "Tell [npc.name] that you'd be best suited for delivering drinks and 'encouraging' the workers."
-								+ "<br/>Your performance and payment will be based on your [style.italicsCorruption("+Attribute.MAJOR_CORRUPTION.getName()+")]."),
+				return new Response("'Поощрение'",
+						UtilText.parse(getReindeer(), "Tell [npc.name] that you'd be best suited for delivering drinks and 'encouraging' the workers.<br/>Your performance and payment will be based on your [style.italicsCorruption("+Attribute.MAJOR_CORRUPTION.getName()+")]."),
 						ENCOUNTER_WORK_FINISHED) {
 					@Override
 					public void effects() {
@@ -172,7 +169,7 @@ public class ReindeerOverseerDialogue {
 		}
 	};
 	
-	public static final DialogueNode ENCOUNTER_WORK_FINISHED = new DialogueNode("Reindeer Overseer", "", true) {
+	public static final DialogueNode ENCOUNTER_WORK_FINISHED = new DialogueNode("Надзиратель оленей", "", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 60 * 4*60;
@@ -187,10 +184,10 @@ public class ReindeerOverseerDialogue {
 		}
 	};
 	
-	public static final DialogueNode AFTER_SEX = new DialogueNode("Finished", "", true) {
+	public static final DialogueNode AFTER_SEX = new DialogueNode("Завершено", "", true) {
 		@Override
 		public String getDescription() {
-			return UtilText.parse(getReindeer(), "[npc.Name] has had enough and brings an end to the sex...");
+			return UtilText.parse(getReindeer(), "[npc.Name] берет свое, и секс заканчивается...");
 		}
 		@Override
 		public String getContent() {

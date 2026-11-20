@@ -165,11 +165,8 @@ public class DebugController {
 
 				MainController.addEventListener(MainController.document, id, "mousemove", MainController.moveTooltipListener, false);
 				MainController.addEventListener(MainController.document, id, "mouseleave", MainController.hideTooltipListener, false);
-				TooltipInformationEventListener el =  new TooltipInformationEventListener().setInformation("Apply Outfit",
-						"Click to apply this outfit to the Dress-up doll."
-						+ " The outfit's femininity, outfit type, and conditional statement are all ignored for this purpose."
-						+ " The doll's leg configuration will change if needed."
-						+ " Click this multiple times to see many variations.");
+				TooltipInformationEventListener el =  new TooltipInformationEventListener().setInformation("Применить наряд",
+						"Нажмите, чтобы надеть этот наряд на куклу. Для этой цели игнорируются женственность наряда, его тип и условия. Конфигурация ног куклы изменится при необходимости. Нажимайте несколько раз, чтобы увидеть разные варианты.");
 				MainController.addEventListener(MainController.document, id, "mouseenter", el, false);
 			}
 		}

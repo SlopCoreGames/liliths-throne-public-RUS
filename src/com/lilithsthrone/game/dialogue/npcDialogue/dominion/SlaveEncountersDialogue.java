@@ -116,7 +116,7 @@ public class SlaveEncountersDialogue {
 		};
 	}
 	
-	private static final DialogueNode SLAVE_USES_YOU = new DialogueNode("Ambushed", "", true) {
+	private static final DialogueNode SLAVE_USES_YOU = new DialogueNode("Засада", "", true) {
 		@Override
 		public String getContent() {
 			return UtilText.parseFromXMLFile("encounters/dominion/slaveEncounters", "SLAVE_USES_YOU", slave);
@@ -125,8 +125,8 @@ public class SlaveEncountersDialogue {
 		public Response getResponse(int responseTab, int index) {
 			boolean isRape = getSlave().isWillingToRape(Main.game.getPlayer()) && getSlave().hasSlavePermissionSetting(SlavePermissionSetting.SEX_RAPIST);
 			if(index == 1) {
-				return new ResponseSex("Sex",
-						"[npc.Name] forces [npc.herself] on you...",
+				return new ResponseSex("Секс",
+						"[npc.Name] навязывает вам [npc.herself]...",
 						!isRape, !isRape,
 						new SMGeneric(
 								Util.newArrayListOfValues(getSlave()),
@@ -137,8 +137,8 @@ public class SlaveEncountersDialogue {
 						UtilText.parseFromXMLFile("encounters/dominion/slaveEncounters", "SLAVE_USES_YOU_SEX", slave));
 				
 			} else if(index == 2) {
-				return new ResponseSex("Eager Sex",
-						"[npc.Name] forces [npc.herself] on you...",
+				return new ResponseSex("Жажда секса",
+						"[npc.Name] навязывает вам [npc.herself]...",
 						!isRape, !isRape,
 						new SMGeneric(
 								Util.newArrayListOfValues(getSlave()),
@@ -150,8 +150,8 @@ public class SlaveEncountersDialogue {
 						UtilText.parseFromXMLFile("encounters/dominion/slaveEncounters", "SLAVE_USES_YOU_SEX_EAGER", slave));
 				
 			} else if(index == 3 && isRape) {
-				return new ResponseSex("Resist Sex",
-						"[npc.Name] forces [npc.herself] on you...",
+				return new ResponseSex("Сопротивляться сексу",
+						"[npc.Name] навязывает вам [npc.herself]...",
 						!isRape, !isRape,
 						new SMGeneric(
 								Util.newArrayListOfValues(getSlave()),
@@ -164,13 +164,13 @@ public class SlaveEncountersDialogue {
 				
 			} else if(index==5) {
 				if(getSlave().isWillingToRape(Main.game.getPlayer()) && getSlave().hasSlavePermissionSetting(SlavePermissionSetting.SEX_RAPIST)) {
-					return new Response("Refuse",
-							UtilText.parse(getSlave(), "As you've given [npc.herHim] permission to rape, [npc.nameIsFull] not going to take no for an answer!"),
+					return new Response("Отказаться",
+							UtilText.parse(getSlave(), "Раз уж ты дал(а) [npc.herHim] разрешение на изнасилование, [npc.nameIsFull] не примет отказ!"),
 							null);
 					
 				} else {
-					return new Response("Refuse",
-							UtilText.parse(getSlave(), "You really aren't in the mood right now, so firmly tell [npc.name] to stop."),
+					return new Response("Отказаться",
+							UtilText.parse(getSlave(), "У тебя сейчас совсем нет настроения, так что решительно прикажи [npc.name] остановиться."),
 							SLAVE_USES_YOU_REFUSED);
 					
 				}
@@ -179,10 +179,10 @@ public class SlaveEncountersDialogue {
 		}
 	};
 	
-	public static final DialogueNode SLAVE_USES_YOU_POST_SEX = new DialogueNode("Used", "", true) {
+	public static final DialogueNode SLAVE_USES_YOU_POST_SEX = new DialogueNode("Использовано", "", true) {
 		@Override
 		public String getDescription(){
-			return UtilText.parse(slave, "Now that [npc.sheHas] had [npc.her] fun, [npc.name] starts to step back...");
+			return UtilText.parse(slave, "Теперь, когда [npc.sheHas] вдоволь на[npc.her], [npc.name] начинает отступать...");
 		}
 		@Override
 		public String getContent() {
@@ -191,7 +191,7 @@ public class SlaveEncountersDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index == 1) {
-				return new Response("Continue", "Continue on your way.", Main.game.getDefaultDialogue(false)) {
+				return new Response("Продолжить", "Продолжить свой путь.", Main.game.getDefaultDialogue(false)) {
 					@Override
 					public void effects() {
 						getSlave().returnToHome();
@@ -210,7 +210,7 @@ public class SlaveEncountersDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index == 1) {
-				return new Response("Continue", "Continue on your way.", Main.game.getDefaultDialogue(false)) {
+				return new Response("Продолжить", "Продолжить свой путь.", Main.game.getDefaultDialogue(false)) {
 					@Override
 					public void effects() {
 						getSlave().returnToHome();
@@ -221,7 +221,7 @@ public class SlaveEncountersDialogue {
 		}
 	};
 	
-	private static final DialogueNode SLAVE_USES_YOU_DUNGEON = new DialogueNode("Ambushed", "", true) {
+	private static final DialogueNode SLAVE_USES_YOU_DUNGEON = new DialogueNode("Засада", "", true) {
 		@Override
 		public String getContent() {
 			return UtilText.parseFromXMLFile("encounters/dominion/slaveEncounters", "SLAVE_USES_YOU_DUNGEON", slave);
@@ -230,8 +230,8 @@ public class SlaveEncountersDialogue {
 		public Response getResponse(int responseTab, int index) {
 			boolean isRape = getSlave().isWillingToRape(Main.game.getPlayer()) && getSlave().hasSlavePermissionSetting(SlavePermissionSetting.SEX_RAPIST);
 			if(index == 1) {
-				return new ResponseSex("Sex",
-						"[npc.Name] forces [npc.herself] on you...",
+				return new ResponseSex("Секс",
+						"[npc.Name] навязывает вам [npc.herself]...",
 						!isRape, !isRape,
 						new SMGeneric(
 								Util.newArrayListOfValues(getSlave()),
@@ -242,8 +242,8 @@ public class SlaveEncountersDialogue {
 						UtilText.parseFromXMLFile("encounters/dominion/slaveEncounters", "SLAVE_USES_YOU_DUNGEON_SEX", slave));
 				
 			} else if(index == 2) {
-				return new ResponseSex("Eager Sex",
-						"[npc.Name] forces [npc.herself] on you...",
+				return new ResponseSex("Жажда секса",
+						"[npc.Name] навязывает вам [npc.herself]...",
 						!isRape, !isRape,
 						new SMGeneric(
 								Util.newArrayListOfValues(getSlave()),
@@ -255,8 +255,8 @@ public class SlaveEncountersDialogue {
 						UtilText.parseFromXMLFile("encounters/dominion/slaveEncounters", "SLAVE_USES_YOU_DUNGEON_SEX_EAGER", slave));
 				
 			} else if(index == 3 && isRape) {
-				return new ResponseSex("Resist Sex",
-						"[npc.Name] forces [npc.herself] on you...",
+				return new ResponseSex("Сопротивляться сексу",
+						"[npc.Name] навязывает вам [npc.herself]...",
 						!isRape, !isRape,
 						new SMGeneric(
 								Util.newArrayListOfValues(getSlave()),
@@ -269,13 +269,13 @@ public class SlaveEncountersDialogue {
 				
 			} else if(index==5) {
 				if(getSlave().isWillingToRape(Main.game.getPlayer()) && getSlave().hasSlavePermissionSetting(SlavePermissionSetting.SEX_RAPIST)) {
-					return new Response("Refuse",
-							UtilText.parse(getSlave(), "As you've given [npc.herHim] permission to rape, [npc.nameIsFull] not going to take no for an answer!"),
+					return new Response("Отказаться",
+							UtilText.parse(getSlave(), "Раз уж ты дал(а) [npc.herHim] разрешение на изнасилование, [npc.nameIsFull] не примет отказ!"),
 							null);
 					
 				} else {
-					return new Response("Refuse",
-							UtilText.parse(getSlave(), "You really aren't in the mood right now, so firmly tell [npc.name] to stop."),
+					return new Response("Отказаться",
+							UtilText.parse(getSlave(), "У тебя сейчас совсем нет настроения, так что решительно прикажи [npc.name] остановиться."),
 							SLAVE_USES_YOU_DUNGEON_REFUSED);
 					
 				}
@@ -284,10 +284,10 @@ public class SlaveEncountersDialogue {
 		}
 	};
 	
-	public static final DialogueNode SLAVE_USES_YOU_DUNGEON_POST_SEX = new DialogueNode("Used", "", true) {
+	public static final DialogueNode SLAVE_USES_YOU_DUNGEON_POST_SEX = new DialogueNode("Использовано", "", true) {
 		@Override
 		public String getDescription(){
-			return UtilText.parse(slave, "Now that [npc.sheHas] had [npc.her] fun, [npc.name] starts to step back...");
+			return UtilText.parse(slave, "Теперь, когда [npc.sheHas] вдоволь на[npc.her], [npc.name] начинает отступать...");
 		}
 		@Override
 		public String getContent() {
@@ -296,7 +296,7 @@ public class SlaveEncountersDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index == 1) {
-				return new Response("Continue", "Continue on your way.", Main.game.getDefaultDialogue(false)) {
+				return new Response("Продолжить", "Продолжить свой путь.", Main.game.getDefaultDialogue(false)) {
 					@Override
 					public void effects() {
 						getSlave().returnToHome();
@@ -315,7 +315,7 @@ public class SlaveEncountersDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index == 1) {
-				return new Response("Continue", "Continue on your way.", Main.game.getDefaultDialogue(false)) {
+				return new Response("Продолжить", "Продолжить свой путь.", Main.game.getDefaultDialogue(false)) {
 					@Override
 					public void effects() {
 						getSlave().returnToHome();
@@ -326,7 +326,7 @@ public class SlaveEncountersDialogue {
 		}
 	};
 	
-	private static final DialogueNode SLAVE_USES_YOU_STREETS = new DialogueNode("Ambushed", "", true) {
+	private static final DialogueNode SLAVE_USES_YOU_STREETS = new DialogueNode("Засада", "", true) {
 		@Override
 		public String getContent() {
 			return UtilText.parseFromXMLFile("encounters/dominion/slaveEncounters", "SLAVE_USES_YOU_STREETS", slave);
@@ -335,8 +335,8 @@ public class SlaveEncountersDialogue {
 		public Response getResponse(int responseTab, int index) {
 			boolean isRape = getSlave().isWillingToRape(Main.game.getPlayer()) && getSlave().hasSlavePermissionSetting(SlavePermissionSetting.SEX_RAPIST);
 			if(index == 1) {
-				return new ResponseSex("Sex",
-						"[npc.Name] forces [npc.herself] on you...",
+				return new ResponseSex("Секс",
+						"[npc.Name] навязывает вам [npc.herself]...",
 						!isRape, !isRape,
 						new SMGeneric(
 								Util.newArrayListOfValues(getSlave()),
@@ -347,8 +347,8 @@ public class SlaveEncountersDialogue {
 						UtilText.parseFromXMLFile("encounters/dominion/slaveEncounters", "SLAVE_USES_YOU_STREETS_SEX", slave));
 				
 			} else if(index == 2) {
-				return new ResponseSex("Eager Sex",
-						"[npc.Name] forces [npc.herself] on you...",
+				return new ResponseSex("Жажда секса",
+						"[npc.Name] навязывает вам [npc.herself]...",
 						!isRape, !isRape,
 						new SMGeneric(
 								Util.newArrayListOfValues(getSlave()),
@@ -360,8 +360,8 @@ public class SlaveEncountersDialogue {
 						UtilText.parseFromXMLFile("encounters/dominion/slaveEncounters", "SLAVE_USES_YOU_STREETS_SEX_EAGER", slave));
 				
 			} else if(index == 3 && isRape) {
-				return new ResponseSex("Resist Sex",
-						"[npc.Name] forces [npc.herself] on you...",
+				return new ResponseSex("Сопротивляться сексу",
+						"[npc.Name] навязывает вам [npc.herself]...",
 						!isRape, !isRape,
 						new SMGeneric(
 								Util.newArrayListOfValues(getSlave()),
@@ -374,13 +374,13 @@ public class SlaveEncountersDialogue {
 				
 			} else if(index==5) {
 				if(getSlave().isWillingToRape(Main.game.getPlayer()) && getSlave().hasSlavePermissionSetting(SlavePermissionSetting.SEX_RAPIST)) {
-					return new Response("Refuse",
-							UtilText.parse(getSlave(), "As you've given [npc.herHim] permission to rape, [npc.nameIsFull] not going to take no for an answer!"),
+					return new Response("Отказаться",
+							UtilText.parse(getSlave(), "Раз уж ты дал(а) [npc.herHim] разрешение на изнасилование, [npc.nameIsFull] не примет отказ!"),
 							null);
 					
 				} else {
-					return new Response("Refuse",
-							UtilText.parse(getSlave(), "You really aren't in the mood right now, so firmly tell [npc.name] to stop."),
+					return new Response("Отказаться",
+							UtilText.parse(getSlave(), "У тебя сейчас совсем нет настроения, так что решительно прикажи [npc.name] остановиться."),
 							SLAVE_USES_YOU_STREETS_REFUSED);
 					
 				}
@@ -389,10 +389,10 @@ public class SlaveEncountersDialogue {
 		}
 	};
 
-	public static final DialogueNode SLAVE_USES_YOU_POST_SEX_STREETS = new DialogueNode("Used", "", true) {
+	public static final DialogueNode SLAVE_USES_YOU_POST_SEX_STREETS = new DialogueNode("Использовано", "", true) {
 		@Override
 		public String getDescription(){
-			return UtilText.parse(slave, "Now that [npc.sheHas] had [npc.her] fun, [npc.name] starts to step back...");
+			return UtilText.parse(slave, "Теперь, когда [npc.sheHas] вдоволь на[npc.her], [npc.name] начинает отступать...");
 		}
 		@Override
 		public String getContent() {
@@ -401,7 +401,7 @@ public class SlaveEncountersDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index == 1) {
-				return new Response("Continue", "Continue on your way.", Main.game.getDefaultDialogue(false)) {
+				return new Response("Продолжить", "Продолжить свой путь.", Main.game.getDefaultDialogue(false)) {
 					@Override
 					public void effects() {
 						getSlave().returnToHome();
@@ -420,7 +420,7 @@ public class SlaveEncountersDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index == 1) {
-				return new Response("Continue", "Continue on your way.", Main.game.getDefaultDialogue(false)) {
+				return new Response("Продолжить", "Продолжить свой путь.", Main.game.getDefaultDialogue(false)) {
 					@Override
 					public void effects() {
 						getSlave().returnToHome();
@@ -431,7 +431,7 @@ public class SlaveEncountersDialogue {
 		}
 	};
 	
-	private static final DialogueNode SLAVE_USES_YOU_ALLEYWAY = new DialogueNode("Ambushed", "", true) {
+	private static final DialogueNode SLAVE_USES_YOU_ALLEYWAY = new DialogueNode("Засада", "", true) {
 		@Override
 		public String getContent() {
 			return UtilText.parseFromXMLFile("encounters/dominion/slaveEncounters", "SLAVE_USES_YOU_ALLEYWAY", slave);
@@ -440,8 +440,8 @@ public class SlaveEncountersDialogue {
 		public Response getResponse(int responseTab, int index) {
 			boolean isRape = getSlave().isWillingToRape(Main.game.getPlayer()) && getSlave().hasSlavePermissionSetting(SlavePermissionSetting.SEX_RAPIST);
 			if(index == 1) {
-				return new ResponseSex("Sex",
-						"[npc.Name] forces [npc.herself] on you...",
+				return new ResponseSex("Секс",
+						"[npc.Name] навязывает вам [npc.herself]...",
 						!isRape, !isRape,
 						new SMGeneric(
 								Util.newArrayListOfValues(getSlave()),
@@ -452,8 +452,8 @@ public class SlaveEncountersDialogue {
 						UtilText.parseFromXMLFile("encounters/dominion/slaveEncounters", "SLAVE_USES_YOU_ALLEYWAY_SEX", slave));
 				
 			} else if(index == 2) {
-				return new ResponseSex("Eager Sex",
-						"[npc.Name] forces [npc.herself] on you...",
+				return new ResponseSex("Жажда секса",
+						"[npc.Name] навязывает вам [npc.herself]...",
 						!isRape, !isRape,
 						new SMGeneric(
 								Util.newArrayListOfValues(getSlave()),
@@ -465,8 +465,8 @@ public class SlaveEncountersDialogue {
 						UtilText.parseFromXMLFile("encounters/dominion/slaveEncounters", "SLAVE_USES_YOU_ALLEYWAY_SEX_EAGER", slave));
 				
 			} else if(index == 3 && isRape) {
-				return new ResponseSex("Resist Sex",
-						"[npc.Name] forces [npc.herself] on you...",
+				return new ResponseSex("Сопротивляться сексу",
+						"[npc.Name] навязывает вам [npc.herself]...",
 						!isRape, !isRape,
 						new SMGeneric(
 								Util.newArrayListOfValues(getSlave()),
@@ -479,13 +479,13 @@ public class SlaveEncountersDialogue {
 				
 			} else if(index==5) {
 				if(getSlave().isWillingToRape(Main.game.getPlayer()) && getSlave().hasSlavePermissionSetting(SlavePermissionSetting.SEX_RAPIST)) {
-					return new Response("Refuse",
-							UtilText.parse(getSlave(), "As you've given [npc.herHim] permission to rape, [npc.nameIsFull] not going to take no for an answer!"),
+					return new Response("Отказаться",
+							UtilText.parse(getSlave(), "Раз уж ты дал(а) [npc.herHim] разрешение на изнасилование, [npc.nameIsFull] не примет отказ!"),
 							null);
 					
 				} else {
-					return new Response("Refuse",
-							UtilText.parse(getSlave(), "You really aren't in the mood right now, so firmly tell [npc.name] to stop."),
+					return new Response("Отказаться",
+							UtilText.parse(getSlave(), "У тебя сейчас совсем нет настроения, так что решительно прикажи [npc.name] остановиться."),
 							SLAVE_USES_YOU_REFUSED);
 					
 				}
@@ -494,10 +494,10 @@ public class SlaveEncountersDialogue {
 		}
 	};
 
-	public static final DialogueNode SLAVE_USES_YOU_POST_SEX_ALLEYWAY = new DialogueNode("Used", "", true) {
+	public static final DialogueNode SLAVE_USES_YOU_POST_SEX_ALLEYWAY = new DialogueNode("Использовано", "", true) {
 		@Override
 		public String getDescription(){
-			return UtilText.parse(slave, "Now that [npc.sheHas] had [npc.her] fun, [npc.name] starts to step back...");
+			return UtilText.parse(slave, "Теперь, когда [npc.sheHas] вдоволь на[npc.her], [npc.name] начинает отступать...");
 		}
 		@Override
 		public String getContent() {
@@ -506,7 +506,7 @@ public class SlaveEncountersDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index == 1) {
-				return new Response("Continue", "Continue on your way.", Main.game.getDefaultDialogue(false)) {
+				return new Response("Продолжить", "Продолжить свой путь.", Main.game.getDefaultDialogue(false)) {
 					@Override
 					public void effects() {
 						getSlave().returnToHome();
@@ -525,7 +525,7 @@ public class SlaveEncountersDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index == 1) {
-				return new Response("Continue", "Continue on your way.", Main.game.getDefaultDialogue(false)) {
+				return new Response("Продолжить", "Продолжить свой путь.", Main.game.getDefaultDialogue(false)) {
 					@Override
 					public void effects() {
 						getSlave().returnToHome();
@@ -551,7 +551,7 @@ public class SlaveEncountersDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index == 1) {
-				return new Response("Ignore", "You don't care to find out who's responsible for making those lewd noises.", Main.game.getDefaultDialogue(false)) {
+				return new Response("Игнорировать", "Тебе не очень-то и хочется выяснять, кто издает эти похотливые звуки.", Main.game.getDefaultDialogue(false)) {
 					@Override
 					public void effects() {
 						SlaveryEventLogEntry event = OccupancyUtil.applySlaveSexWithOtherSlave(Main.game.getDayNumber(), Main.game.getHourOfDay(), slave, characterForSex);
@@ -565,7 +565,7 @@ public class SlaveEncountersDialogue {
 				};
 				
 			} else if(index == 2) {
-				return new Response("Check", "Continue forwards around the next corner and find out who's responsible for making those lewd noises.", SLAVE_USES_OTHER_SLAVE_ALLEYWAY_CHECK);
+				return new Response("Проверить", "Продолжить путь за следующий угол и выяснить, кто издает эти похотливые звуки.", SLAVE_USES_OTHER_SLAVE_ALLEYWAY_CHECK);
 			}
 			return null;
 		}
@@ -583,8 +583,8 @@ public class SlaveEncountersDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index == 1) {
-				return new ResponseSex("Join (dom)",
-						UtilText.parse(slave, characterForSex, "Announce your presence and take charge of fucking [npc.name] and [npc2.name]."),
+				return new ResponseSex("Присоединиться (дом)",
+						UtilText.parse(slave, characterForSex, "Заявить о своем присутствии и взять под контроль трах [npc.name] и [npc2.name]."),
 						true, false,
 						getSlaveOnSlaveSexManager(Util.newArrayListOfValues(Main.game.getPlayer()), Util.newArrayListOfValues(slave, characterForSex), null),
 						SLAVE_USES_OTHER_SLAVE_ALLEYWAY_POST_SEX,
@@ -592,25 +592,25 @@ public class SlaveEncountersDialogue {
 				
 			} else if(index == 2) {
 				if(!slave.isAttractedTo(Main.game.getPlayer())) {
-					return new Response("Join (sub)", UtilText.parse(slave, "As [npc.name] isn't attracted to you, you can't force [npc.herHim] to dominate you..."), null);
+					return new Response("Присоединиться (саб)", UtilText.parse(slave, "Так как [npc.name] к тебе не тянет, ты не можешь заставить [npc.herHim] доминировать над тобой..."), null);
 				}
-				return new ResponseSex("Join (sub)",
-						UtilText.parse(slave, characterForSex, "Announce your presence and submit to [npc.name], allowing [npc.herHim] to dominate both you and [npc2.name]."),
+				return new ResponseSex("Присоединиться (саб)",
+						UtilText.parse(slave, characterForSex, "Заявить о себе и подчиниться [npc.name], позволяя [npc.herHim] доминировать как над тобой, так и над [npc2.name]."),
 						true, false,
 						getSlaveOnSlaveSexManager(Util.newArrayListOfValues(slave), Util.newArrayListOfValues(Main.game.getPlayer(), characterForSex), null),
 						SLAVE_USES_OTHER_SLAVE_ALLEYWAY_POST_SEX,
 						UtilText.parseFromXMLFile("encounters/dominion/slaveEncounters", "SLAVE_USES_OTHER_SLAVE_ALLEYWAY_START_SEX_SUB", slave, characterForSex));
 					
 			} else if(index == 3) {
-				return new ResponseSex("Watch",
-						UtilText.parse(slave, characterForSex, "Stay hidden around the corner and watch as [npc.name] fucks [npc2.name]..."),
+				return new ResponseSex("Смотреть",
+						UtilText.parse(slave, characterForSex, "Остаться незамеченным за углом и наблюдать, как [npc.name] трахает [npc2.name]..."),
 						true, false,
 						getSlaveOnSlaveSexManager(Util.newArrayListOfValues(slave), Util.newArrayListOfValues(characterForSex), Util.newArrayListOfValues(Main.game.getPlayer())),
 						SLAVE_USES_OTHER_SLAVE_ALLEYWAY_POST_SEX,
 						UtilText.parseFromXMLFile("encounters/dominion/slaveEncounters", "SLAVE_USES_OTHER_SLAVE_ALLEYWAY_START_SEX_WATCHING", slave, characterForSex));
 				
 			} else if(index == 4) {
-				return new Response("Leave", "Leave your slaves to have their fun together and continue on your way...", Main.game.getDefaultDialogue(false)) {
+				return new Response("Уйти", "Оставить своих рабынь развлекаться вместе и продолжить свой путь...", Main.game.getDefaultDialogue(false)) {
 					@Override
 					public void effects() {
 						SlaveryEventLogEntry event = OccupancyUtil.applySlaveSexWithOtherSlave(Main.game.getDayNumber(), Main.game.getHourOfDay(), slave, characterForSex);
@@ -627,10 +627,10 @@ public class SlaveEncountersDialogue {
 		}
 	};
 	
-	public static final DialogueNode SLAVE_USES_OTHER_SLAVE_ALLEYWAY_POST_SEX = new DialogueNode("Finished", "", true) {
+	public static final DialogueNode SLAVE_USES_OTHER_SLAVE_ALLEYWAY_POST_SEX = new DialogueNode("Завершено", "", true) {
 		@Override
 		public String getDescription(){
-			return UtilText.parse(slave, "Now that [npc.sheHas] had [npc.her] fun, [npc.name] [npc.steps] back...");
+			return UtilText.parse(slave, "Теперь, когда [npc.sheHas] наставила [npc.her] на путь наслаждения, [npc.name] [npc.steps] обратно...");
 		}
 		@Override
 		public String getContent() {
@@ -639,7 +639,7 @@ public class SlaveEncountersDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index == 1) {
-				return new Response("Continue", "Continue on your way...", Main.game.getDefaultDialogue(false)) {
+				return new Response("Продолжить", "Продолжить путь...", Main.game.getDefaultDialogue(false)) {
 					@Override
 					public void effects() {
 						SlaveryEventLogEntry event = new SlaveryEventLogEntry(Main.game.getHourOfDay(),
@@ -647,7 +647,7 @@ public class SlaveEncountersDialogue {
 									Util.newArrayListOfValues(characterForSex.getId()),
 									SlaveEvent.SLAVE_SEX,
 									null,
-									Util.newArrayListOfValues(UtilText.parse(slave,  characterForSex, "You caught [npc.name] having sex with [npc2.name] in one of Dominion's alleyways.")),
+									Util.newArrayListOfValues(UtilText.parse(slave,  characterForSex, "Ты застал [npc.name] за сексом с [npc2.name] в одном из переулков Dominion.")),
 									true);
 						Main.game.addSlaveryEvent(Main.game.getDayNumber(), event);
 						slave.returnToHome();
@@ -688,7 +688,7 @@ public class SlaveEncountersDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index == 1) {
-				return new Response("Ignore", "You don't care to find out who's responsible for making those lewd noises.", Main.game.getDefaultDialogue(false)) {
+				return new Response("Игнорировать", "Тебе не очень-то и хочется выяснять, кто издает эти похотливые звуки.", Main.game.getDefaultDialogue(false)) {
 					@Override
 					public void effects() {
 						SlaveryEventLogEntry event = OccupancyUtil.applySlaveSexWithOtherSlave(Main.game.getDayNumber(), Main.game.getHourOfDay(), slave, characterForSex);
@@ -701,7 +701,7 @@ public class SlaveEncountersDialogue {
 				};
 				
 			} else if(index == 2) {
-				return new Response("Check", "Move closer and find out who's responsible for making those lewd noises.", SLAVE_USES_OTHER_SLAVE_LILAYA_CORRIDOR_CHECK);
+				return new Response("Проверить", "Подойти ближе и выяснить, кто издает эти похотливые звуки.", SLAVE_USES_OTHER_SLAVE_LILAYA_CORRIDOR_CHECK);
 			}
 			return null;
 		}
@@ -719,8 +719,8 @@ public class SlaveEncountersDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index == 1) {
-				return new ResponseSex("Join (dom)",
-						UtilText.parse(slave, characterForSex, "Announce your presence and take charge of fucking [npc.name] and [npc2.name]."),
+				return new ResponseSex("Присоединиться (дом)",
+						UtilText.parse(slave, characterForSex, "Заявить о своем присутствии и взять под контроль трах [npc.name] и [npc2.name]."),
 						true, false,
 						getSlaveOnSlaveSexManager(Util.newArrayListOfValues(Main.game.getPlayer()), Util.newArrayListOfValues(slave, characterForSex), null),
 						SLAVE_USES_OTHER_SLAVE_LILAYA_CORRIDOR_POST_SEX,
@@ -728,25 +728,25 @@ public class SlaveEncountersDialogue {
 				
 			} else if(index == 2) {
 				if(!slave.isAttractedTo(Main.game.getPlayer())) {
-					return new Response("Join (sub)", UtilText.parse(slave, "As [npc.name] isn't attracted to you, you can't force [npc.herHim] to dominate you..."), null);
+					return new Response("Присоединиться (саб)", UtilText.parse(slave, "Так как [npc.name] к тебе не тянет, ты не можешь заставить [npc.herHim] доминировать над тобой..."), null);
 				}
-				return new ResponseSex("Join (sub)",
-						UtilText.parse(slave, characterForSex, "Announce your presence and submit to [npc.name], allowing [npc.herHim] to dominate both you and [npc2.name]."),
+				return new ResponseSex("Присоединиться (саб)",
+						UtilText.parse(slave, characterForSex, "Заявить о себе и подчиниться [npc.name], позволяя [npc.herHim] доминировать как над тобой, так и над [npc2.name]."),
 						true, false,
 						getSlaveOnSlaveSexManager(Util.newArrayListOfValues(slave), Util.newArrayListOfValues(Main.game.getPlayer(), characterForSex), null),
 						SLAVE_USES_OTHER_SLAVE_LILAYA_CORRIDOR_POST_SEX,
 						UtilText.parseFromXMLFile("encounters/dominion/slaveEncounters", "SLAVE_USES_OTHER_SLAVE_LILAYA_CORRIDOR_START_SEX_SUB", slave, characterForSex));
 					
 			} else if(index == 3) {
-				return new ResponseSex("Watch",
-						UtilText.parse(slave, characterForSex, "Stay hidden and watch as [npc.name] fucks [npc2.name]..."),
+				return new ResponseSex("Смотреть",
+						UtilText.parse(slave, characterForSex, "Скрыться из виду и наблюдать, как [npc.name] трахает [npc2.name]..."),
 						true, false,
 						getSlaveOnSlaveSexManager(Util.newArrayListOfValues(slave), Util.newArrayListOfValues(characterForSex), Util.newArrayListOfValues(Main.game.getPlayer())),
 						SLAVE_USES_OTHER_SLAVE_LILAYA_CORRIDOR_POST_SEX,
 						UtilText.parseFromXMLFile("encounters/dominion/slaveEncounters", "SLAVE_USES_OTHER_SLAVE_LILAYA_CORRIDOR_START_SEX_WATCHING", slave, characterForSex));
 				
 			} else if(index == 4) {
-				return new Response("Leave", "Leave your slaves to have their fun together and continue on your way...", Main.game.getDefaultDialogue(false)) {
+				return new Response("Уйти", "Оставить своих рабынь развлекаться вместе и продолжить свой путь...", Main.game.getDefaultDialogue(false)) {
 					@Override
 					public void effects() {
 						SlaveryEventLogEntry event = OccupancyUtil.applySlaveSexWithOtherSlave(Main.game.getDayNumber(), Main.game.getHourOfDay(), slave, characterForSex);
@@ -762,10 +762,10 @@ public class SlaveEncountersDialogue {
 		}
 	};
 	
-	public static final DialogueNode SLAVE_USES_OTHER_SLAVE_LILAYA_CORRIDOR_POST_SEX = new DialogueNode("Finished", "", true) {
+	public static final DialogueNode SLAVE_USES_OTHER_SLAVE_LILAYA_CORRIDOR_POST_SEX = new DialogueNode("Завершено", "", true) {
 		@Override
 		public String getDescription(){
-			return UtilText.parse(slave, "Now that [npc.sheHas] had [npc.her] fun, [npc.name] [npc.steps] back...");
+			return UtilText.parse(slave, "Теперь, когда [npc.sheHas] наставила [npc.her] на путь наслаждения, [npc.name] [npc.steps] обратно...");
 		}
 		@Override
 		public String getContent() {
@@ -774,7 +774,7 @@ public class SlaveEncountersDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index == 1) {
-				return new Response("Continue", "Continue on your way...", Main.game.getDefaultDialogue(false)) {
+				return new Response("Продолжить", "Продолжить путь...", Main.game.getDefaultDialogue(false)) {
 					@Override
 					public void effects() {
 						SlaveryEventLogEntry event = new SlaveryEventLogEntry(Main.game.getHourOfDay(),
@@ -782,7 +782,7 @@ public class SlaveEncountersDialogue {
 									Util.newArrayListOfValues(characterForSex.getId()),
 									SlaveEvent.SLAVE_SEX,
 									null,
-									Util.newArrayListOfValues(UtilText.parse(slave,  characterForSex, "You caught [npc.name] having sex with [npc2.name] in one of the corridors in Lilaya's home.")),
+									Util.newArrayListOfValues(UtilText.parse(slave,  characterForSex, "Вы застали [npc.name] за сексом с [npc2.name] в одном из коридоров дома Lilaya.")),
 									true);
 						Main.game.addSlaveryEvent(Main.game.getDayNumber(), event);
 						returnSlavesToHomeLilayasCorridor();

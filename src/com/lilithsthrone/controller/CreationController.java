@@ -226,7 +226,7 @@ public class CreationController {
 				}, false);
 				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation(
 						Util.capitaliseSentence(orificeMod.getName()),
-						(orificeMod.isSpecialEffects()?"[style.boldGood(Special Effect:)] ":"")+orificeMod.getDescription()));
+						(orificeMod.isSpecialEffects()?"[style.boldGood(Особый эффект:)] ":"")+orificeMod.getDescription()));
 			}
 		}
 	}
@@ -403,7 +403,7 @@ public class CreationController {
 				}, false);
 				if (BodyChanging.getTarget().getBreastRawSizeValue()<=CupSize.getMinimumCupSizeForEggIncubation().getMeasurement() && BodyChanging.getTarget().getIncubationLitter(SexAreaOrifice.NIPPLE) != null) {
 					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation(
-							"[style.colourBad(Size Decrease Blocked)]",
+							"[style.colourBad(Уменьшение размера заблокировано)]",
 							UtilText.parse(BodyChanging.getTarget(),
 									"[npc.NamePos] грудь не может быть уменьшена дальше, пока в ней инкубируются яйца!"),
 							32));
@@ -417,7 +417,7 @@ public class CreationController {
 				}, false);
 				if (BodyChanging.getTarget().getBreastRawSizeValue()<=CupSize.getMinimumCupSizeForEggIncubation().getMeasurement() && BodyChanging.getTarget().getIncubationLitter(SexAreaOrifice.NIPPLE) != null) {
 					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation(
-							"[style.colourBad(Size Decrease Blocked)]",
+							"[style.colourBad(Уменьшение размера заблокировано)]",
 							UtilText.parse(BodyChanging.getTarget(),
 									"[npc.NamePos] грудь не может быть уменьшена дальше, пока в ней инкубируются яйца!"),
 							32));
@@ -515,7 +515,7 @@ public class CreationController {
 				}, false);
 				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation(
 						Util.capitaliseSentence(modifier.getName()),
-						(modifier.isSpecialEffects()?"[style.boldGood(Special Effect:)] ":"")+modifier.getDescription()));
+						(modifier.isSpecialEffects()?"[style.boldGood(Особый эффект:)] ":"")+modifier.getDescription()));
 			}
 		}
 	}
@@ -642,7 +642,7 @@ public class CreationController {
 				}, false);
 				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation(
 						Util.capitaliseSentence(orificeMod.getName()),
-						(orificeMod.isSpecialEffects()?"[style.boldGood(Special Effect:)] ":"")+orificeMod.getDescription()));
+						(orificeMod.isSpecialEffects()?"[style.boldGood(Особый эффект:)] ":"")+orificeMod.getDescription()));
 			}
 		}
 	}
@@ -853,7 +853,7 @@ public class CreationController {
 			}, false);
 			if (BodyChanging.getTarget().getBreastRawSizeValue()<=CupSize.getMinimumCupSizeForEggIncubation().getMeasurement() && BodyChanging.getTarget().getIncubationLitter(SexAreaOrifice.NIPPLE) != null) {
 				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation(
-						"[style.colourBad(Size Decrease Blocked)]",
+						"[style.colourBad(Уменьшение размера заблокировано)]",
 						UtilText.parse(BodyChanging.getTarget(),
 								"[npc.NamePos] грудь не может быть уменьшена дальше, пока в ней инкубируются яйца!"),
 						32));
@@ -867,7 +867,7 @@ public class CreationController {
 			}, false);
 			if (BodyChanging.getTarget().getBreastRawSizeValue()<=CupSize.getMinimumCupSizeForEggIncubation().getMeasurement() && BodyChanging.getTarget().getIncubationLitter(SexAreaOrifice.NIPPLE) != null) {
 				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation(
-						"[style.colourBad(Size Decrease Blocked)]",
+						"[style.colourBad(Уменьшение размера заблокировано)]",
 						UtilText.parse(BodyChanging.getTarget(),
 								"[npc.NamePos] грудь не может быть уменьшена, пока в ней инкубируются яйца!"),
 						32));
@@ -2928,9 +2928,9 @@ public class CreationController {
 					boolean confirm = Main.getProperties().hasValue(PropertyValue.tattooRemovalConfirmations);
 					if (Main.game.isInNewWorld()) {
 						if (Main.game.getPlayer().getMoney()>=100) {
-							sb.append("Это будет стоить "+UtilText.formatAsMoney(100, "span")+" за удаление этой татуировки!");
+							sb.append("Это будет стоить "+UtilText.formatAsMoney(100, "охват")+" за удаление этой татуировки!");
 						} else {
-							sb.append("У вас нет требуемого "+UtilText.formatAsMoney(100, "span")+" за удаление этой татуировки!");
+							sb.append("У вас нет требуемого "+UtilText.formatAsMoney(100, "охват")+" за удаление этой татуировки!");
 							confirm = false;
 						}
 					} else {
@@ -2939,7 +2939,7 @@ public class CreationController {
 					if(confirm) {
 						sb.append(" (<i>Вам нужно будет нажать дважды, чтобы удалить её.</i>)");
 					}
-					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Remove tattoo", sb.toString(), 32));
+					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Убрать татуировку", sb.toString(), 32));
 					
 				} else {
 					DialogueNode nextDialogue;
@@ -2963,7 +2963,7 @@ public class CreationController {
 							}
 						});
 					}, false);
-					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Add tattoo", "Нажмите, чтобы перейти к экрану настройки татуировки.", 16));
+					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Добавить татуировку", "Нажмите, чтобы перейти к экрану настройки татуировки.", 16));
 				}
 			}
 			
@@ -2991,7 +2991,7 @@ public class CreationController {
 						}
 					});
 				}, false);
-				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Modify tattoo", "Нажмите, чтобы перейти к экрану настройки татуировки.", 16));
+				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Изменить татуировку", "Нажмите, чтобы перейти к экрану настройки татуировки.", 16));
 			}
 			
 			id = "TATTOO_ENCHANT_"+invSlot.toString();
@@ -3004,7 +3004,7 @@ public class CreationController {
 						}
 					});
 				}, false);
-				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Enchant tattoo", "Нажмите, чтобы перейти к экрану заклинания татуировки.", 16));
+				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Зачаровать татуировку", "Нажмите, чтобы перейти к экрану заклинания татуировки.", 16));
 			}
 		}
 	}
@@ -3039,8 +3039,7 @@ public class CreationController {
 				}
 				String description = type.getDescription();
 				if (!type.getSlotAvailability().contains(CharacterModificationUtils.tattooInventorySlot)) {
-					description += "<br/>[style.italicsBad(Этот тип татуировки не может быть нанесен на '"+CharacterModificationUtils.tattooInventorySlot.getTattooSlotName()+"'!)]<br/>"
-							+"Available slots: "+Util.tattooInventorySlotsToStringList(type.getSlotAvailability());
+					description += "<br/>[style.italicsBad(Этот тип татуировки не может быть нанесен на '"+CharacterModificationUtils.tattooInventorySlot.getTattooSlotName()+"'!)]<br/>Доступные слоты: "+Util.tattooInventorySlotsToStringList(type.getSlotAvailability());
 				}
 				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation(Util.capitaliseSentence(type.getName()), description));
 			}

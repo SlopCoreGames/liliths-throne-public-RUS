@@ -15,13 +15,13 @@ public enum DialogueNodeType {
 	
 	PHONE("phone"),
 	
-	CHARACTERS_PRESENT("characters present"),
+	CHARACTERS_PRESENT("присутствующие персонажи"),
 
-	OCCUPANT_MANAGEMENT("character management"),
+	OCCUPANT_MANAGEMENT("управление персонажами"),
 	
 	OPTIONS("options"),
 	
-	GIFT("gifts");
+	GIFT("подарки");
 
 	private String name;
 

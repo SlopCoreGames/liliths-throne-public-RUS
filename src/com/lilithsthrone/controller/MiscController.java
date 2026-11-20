@@ -216,7 +216,7 @@ public class MiscController {
 			if (MainController.document.getElementById(id) != null) {
 				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
 					Main.game.restoreSavedContent(false);
-					Main.game.setContent(new Response("Give Gift", "", GiftDialogue.getDialogueToProceedTo()) {
+					Main.game.setContent(new Response("Подарить подарок", "", GiftDialogue.getDialogueToProceedTo()) {
 						@Override
 						public void effects() {
 							Main.game.setResponseTab(GiftDialogue.getProceedDialogueTab());
@@ -233,7 +233,7 @@ public class MiscController {
 			if (MainController.document.getElementById(id) != null) {
 				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
 					Main.game.restoreSavedContent(false);
-					Main.game.setContent(new Response("Give Gift", "", GiftDialogue.getDialogueToProceedTo()) {
+					Main.game.setContent(new Response("Подарить подарок", "", GiftDialogue.getDialogueToProceedTo()) {
 						@Override
 						public void effects() {
 							Main.game.setResponseTab(GiftDialogue.getProceedDialogueTab());
@@ -250,7 +250,7 @@ public class MiscController {
 			if (MainController.document.getElementById(id) != null) {
 				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
 					Main.game.restoreSavedContent(false);
-					Main.game.setContent(new Response("Give Gift", "", GiftDialogue.getDialogueToProceedTo()) {
+					Main.game.setContent(new Response("Подарить подарок", "", GiftDialogue.getDialogueToProceedTo()) {
 						@Override
 						public void effects() {
 							Main.game.setResponseTab(GiftDialogue.getProceedDialogueTab());
@@ -285,7 +285,7 @@ public class MiscController {
 					}
 					
 					if (!unsuitableName) {
-						Main.game.setContent(new Response("Rename", "", Main.game.getCurrentDialogueNode()) {
+						Main.game.setContent(new Response("Переименовать", "", Main.game.getCurrentDialogueNode()) {
 							@Override
 							public void effects() {
 								finalSlave.setName(new NameTriplet(Main.mainController.getWebEngine().getDocument().getElementById("hiddenFieldName").getTextContent()));
@@ -301,7 +301,7 @@ public class MiscController {
 		id = slave.getId()+"_RENAME_RANDOM";
 		if (MainController.document.getElementById(id) != null) {
 			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
-				Main.game.setContent(new Response("Rename", "", Main.game.getCurrentDialogueNode()) {
+				Main.game.setContent(new Response("Переименовать", "", Main.game.getCurrentDialogueNode()) {
 					@Override
 					public void effects() {
 						finalSlave.setName(new NameTriplet(Name.getRandomName(finalSlave)));
@@ -323,7 +323,7 @@ public class MiscController {
 					}
 					
 					if (!unsuitableName) {
-						Main.game.setContent(new Response("Rename", "", Main.game.getCurrentDialogueNode()) {
+						Main.game.setContent(new Response("Переименовать", "", Main.game.getCurrentDialogueNode()) {
 							@Override
 							public void effects() {
 								finalSlave.setSurname(Main.mainController.getWebEngine().getDocument().getElementById("hiddenFieldName").getTextContent());
@@ -337,7 +337,7 @@ public class MiscController {
 		id = slave.getId()+"_RENAME_SURNAME_RANDOM";
 		if (MainController.document.getElementById(id) != null) {
 			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
-				Main.game.setContent(new Response("Rename", "", Main.game.getCurrentDialogueNode()) {
+				Main.game.setContent(new Response("Переименовать", "", Main.game.getCurrentDialogueNode()) {
 					@Override
 					public void effects() {
 						finalSlave.setSurname(Name.getSurname(finalSlave));
@@ -358,7 +358,7 @@ public class MiscController {
 					}
 					
 					if (!unsuitableName) {
-						Main.game.setContent(new Response("Rename", "", Main.game.getCurrentDialogueNode()) {
+						Main.game.setContent(new Response("Переименовать", "", Main.game.getCurrentDialogueNode()) {
 							@Override
 							public void effects() {
 								finalSlave.setPetName(Main.game.getPlayer(), Main.mainController.getWebEngine().getDocument().getElementById("hiddenFieldName").getTextContent());
@@ -382,7 +382,7 @@ public class MiscController {
 					}
 					
 					if (!unsuitableName) {
-						Main.game.setContent(new Response("Rename", "", Main.game.getCurrentDialogueNode()) {
+						Main.game.setContent(new Response("Переименовать", "", Main.game.getCurrentDialogueNode()) {
 							@Override
 							public void effects() {
 								for (String id : Main.game.getPlayer().getSlavesOwned()) {
@@ -413,7 +413,7 @@ public class MiscController {
 					}
 					
 					if (!unsuitableName) {
-						Main.game.setContent(new Response("Rename", "", Main.game.getCurrentDialogueNode()) {
+						Main.game.setContent(new Response("Переименовать", "", Main.game.getCurrentDialogueNode()) {
 							@Override
 							public void effects() {
 								Main.game.getActiveNPC().setPetName(Main.game.getPlayer(), Main.mainController.getWebEngine().getDocument().getElementById("hiddenFieldName").getTextContent());
@@ -434,16 +434,10 @@ public class MiscController {
 					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation(
 							Util.capitaliseSentence(dt.getName())+" shielding",
 							dt == DamageType.HEALTH
-									?UtilText.parse(combatant, "[npc.Name] will block incoming damage from any non-lust source by this amount."
-									+" Other damage type shielding will be used first, with health shielding used as the last resort."
-									+" Negative values have no effect.")
+									?UtilText.parse(combatant, "[npc.Name] будет блокировать входящий урон от любых источников, не связанных с похотью, на это значение. Сначала будет использоваться щит от других типов урона, а щит здоровья — в последнюю очередь. Отрицательные значения не имеют эффекта.")
 									:dt != DamageType.LUST
-									?UtilText.parse(combatant, "[npc.Name] will block incoming "+dt.getName()+" damage by this amount."
-									+" Once this shielding is broken, health shielding will be used, and once that's broken, damage will be dealt [npc.her] health."
-									+" Negative values have no effect.")
-									:UtilText.parse(combatant, "[npc.Name] will block incoming "+dt.getName()+" damage by this amount."
-									+" Once this shielding is broken, incoming "+dt.getName()+" damage will cause [npc.her] lust to rise."
-									+" Negative values have no effect.")));
+									?UtilText.parse(combatant, "[npc.Name] будет блокировать входящий "+dt.getName()+" урон на это значение. Как только этот щит будет пробит, начнет использоваться щит здоровья, а после его пробития урон будет наноситься по [npc.her] здоровью. Отрицательные значения не имеют эффекта.")
+									:UtilText.parse(combatant, "[npc.Name] будет блокировать входящий "+dt.getName()+" на этот урон. Как только это щитовое поле будет пробито, входящий "+dt.getName()+" урон заставит [npc.her] похоть расти. Отрицательные значения не оказывают эффекта.")));
 				}
 			}
 		}
@@ -507,7 +501,7 @@ public class MiscController {
 				}, false);
 				Util.Value<Boolean, String> useDec = s.getSpellCastOutOfCombatDescription(SpellManagement.getSpellOwner(), SpellManagement.getSpellTarget());
 				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation(
-						"Cast "+s.getName(),
+						"Применить "+s.getName(),
 						useDec.getKey()
 								?useDec.getValue()
 								:"[style.italicsBad("+useDec.getValue()+")]"));
@@ -560,8 +554,8 @@ public class MiscController {
 					if (character.hasPerkAnywhereInTree(perk)) {
 						MainController.addTooltipListeners(id, new TooltipInformationEventListener().setLevelUpPerk(0, perk, character, false));
 					} else {
-						MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Unknown!",
-								"This is an undiscovered hidden perk, and as such, you have no idea what it could be!<br/><i>Hidden perks are discovered through the main quest.</i>"));
+						MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Неизвестно!",
+								"Это необнаруженный скрытый перк, а значит, вы понятия не имеете, что это может быть!<br/><i>Скрытые перки обнаруживаются через основной квест.</i>"));
 					}
 				}
 			} else if (perk.getPerkCategory() == PerkCategory.JOB) {
@@ -758,9 +752,7 @@ public class MiscController {
 									Main.game.getPlayer().setLocation(worldType, clickLocation, false);
 									DialogueNode dn = Main.game.getActiveWorld().getCell(Main.game.getPlayer().getLocation()).getDialogue(true);
 									Main.game.getTextStartStringBuilder().append(
-											"<p style='text-align:center'>"
-													+"[style.italicsArcane(Recalling what your destination looked like the last time you were there, you cast the teleportation spell, and in an instant, you appear there!)]"
-													+"</p>");
+											"<p style='text-align:center'>[style.italicsArcane(Вспоминая, как выглядело ваше место назначения в прошлый раз, когда вы там были, вы произносите заклинание телепортации и в мгновение ока оказываетесь там!)]</p>");
 									Main.game.setContent(new Response("", "", dn) {
 										@Override
 										public int getSecondsPassed() {
@@ -776,14 +768,14 @@ public class MiscController {
 								if (worldType.equals(Main.game.getPlayer().getWorldLocation())) {
 									if (clickLocation.equals(Pathing.getEndPoint())) {
 										if (Pathing.isImpossibleDestination()) {
-											Main.game.flashMessage(PresetColour.GENERIC_BAD, "Cannot travel here!");
+											Main.game.flashMessage(PresetColour.GENERIC_BAD, "Сюда нельзя добраться!");
 										} else {
 											Main.game.getPlayer().setLocation(worldType, clickLocation, false);
 											DialogueNode dn = c.getDialogue(true);
 											Main.game.getTextStartStringBuilder()
 													.append("<p style='text-align:center'>[style.italicsAir(")
-													.append(!Main.game.getPlayer().isAbleToFlyFromExtraParts()?"With a flap of your wings, you":"You")
-													.append(" launch yourself into the air, before swiftly flying to your destination!)]</p>");
+													.append(!Main.game.getPlayer().isAbleToFlyFromExtraParts()?"Взмахом крыльев вы":"Вы")
+													.append(" подбрасываете себя в воздух, а затем стремительно летите к месту назначения!)]</p>");
 											Main.game.setContent(new Response("", "", dn) {
 												@Override
 												public int getSecondsPassed() {
@@ -803,7 +795,7 @@ public class MiscController {
 								if (worldType.equals(Main.game.getPlayer().getWorldLocation())) {
 									if (clickLocation.equals(Pathing.getEndPoint())) {
 										if (Pathing.isImpossibleDestination()) {
-											Main.game.flashMessage(PresetColour.GENERIC_BAD, "Cannot travel here!");
+											Main.game.flashMessage(PresetColour.GENERIC_BAD, "Сюда нельзя добраться!");
 										} else {
 											Main.game.setContent(Pathing.walkPath(Pathing.getMapTravelType()));
 										}
@@ -822,9 +814,9 @@ public class MiscController {
 					}
 				} else {
 					if (!c.isTravelledTo()) {
-						Main.game.flashMessage(PresetColour.GENERIC_BAD, "Cannot fast-travel to unexplored locations!");
+						Main.game.flashMessage(PresetColour.GENERIC_BAD, "Нельзя совершить быстрое перемещение в неисследованные локации!");
 					} else {
-						Main.game.flashMessage(PresetColour.GENERIC_BAD, "Cannot travel here!");
+						Main.game.flashMessage(PresetColour.GENERIC_BAD, "Сюда нельзя добраться!");
 					}
 				}
 				
@@ -854,7 +846,7 @@ public class MiscController {
 					}
 					
 					if (!unsuitableName) {
-						Main.game.setContent(new Response("Set outfit name", "", Main.game.getCurrentDialogueNode()) {
+						Main.game.setContent(new Response("Установить название наряда", "", Main.game.getCurrentDialogueNode()) {
 							@Override
 							public void effects() {
 								LilayaDressingRoomDialogue.setOutfitName(Main.mainController.getWebEngine().getDocument().getElementById("hiddenPField").getTextContent());
@@ -881,13 +873,13 @@ public class MiscController {
 							if(LilayaDressingRoomDialogue.initItemFromSlot()) {	// If there's already an item in this slot, load it and go straight to enchant menu:
 								LilayaDressingRoomDialogue.initEnchantDialogue();
 	//							LilayaDressingRoomDialogue.setOutputName(LilayaDressingRoomDialogue.getSelectedItem().getName());
-								Main.game.setContent(new Response("Enchantment screen", "", LilayaDressingRoomDialogue.OUTFIT_EDITOR_ITEM_ENCHANT));
+								Main.game.setContent(new Response("Экран зачарования", "", LilayaDressingRoomDialogue.OUTFIT_EDITOR_ITEM_ENCHANT));
 								
 							} else {
 								if(slot.isWeapon()) {
 									LilayaDressingRoomDialogue.newlyCreatedWeapon = true;
 								}
-								Main.game.setContent(new Response("Select item", "", LilayaDressingRoomDialogue.OUTFIT_EDITOR_ITEM_CHOICE));
+								Main.game.setContent(new Response("Выбрать предмет", "", LilayaDressingRoomDialogue.OUTFIT_EDITOR_ITEM_CHOICE));
 							}
 						}, false);
 					}
@@ -903,13 +895,13 @@ public class MiscController {
 					} else {
 						if(disabled) {
 							MainController.addTooltipListeners(id,
-									new TooltipInformationEventListener().setInformation(Util.capitaliseSentence(slot.getName())+": [style.colourBad(Blocked!)]",
+									new TooltipInformationEventListener().setInformation(Util.capitaliseSentence(slot.getName())+": [style.colourBad(Заблокировано!)]",
 											LilayaDressingRoomDialogue.getSlotDisabledText(slot),
 											18));
 						} else {
 							MainController.addTooltipListeners(id,
 									new TooltipInformationEventListener().setInformation(Util.capitaliseSentence(slot.getName()),
-											"Click on this slot to open the item selection screen.",
+											"Нажмите на этот слот, чтобы открыть окно выбора предмета.",
 											18));
 						}
 					}
@@ -921,7 +913,7 @@ public class MiscController {
 						
 						LilayaDressingRoomDialogue.setSelectedSlot(slot);
 						LilayaDressingRoomDialogue.clearSlot();
-						Main.game.setContent(new Response("Remove item", "", LilayaDressingRoomDialogue.OUTFIT_EDITOR));
+						Main.game.setContent(new Response("Убрать предмет", "", LilayaDressingRoomDialogue.OUTFIT_EDITOR));
 						
 					}, false);
 				}
@@ -935,11 +927,11 @@ public class MiscController {
 				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
 					
 					LilayaDressingRoomDialogue.clearSlot();
-					Main.game.setContent(new Response("Clear slot", "", LilayaDressingRoomDialogue.OUTFIT_EDITOR));
+					Main.game.setContent(new Response("Очистить слот", "", LilayaDressingRoomDialogue.OUTFIT_EDITOR));
 					
 				}, false);
 				MainController.addTooltipListeners(id,
-						new TooltipInformationEventListener().setInformation("Clear slot", "Remove whatever clothing/weapon is in this slot.", 18));
+						new TooltipInformationEventListener().setInformation("Очистить слот", "Снять любую одежду/оружие в этом слоте.", 18));
 			}
 			
 			id = "ignore_slot";
@@ -947,16 +939,15 @@ public class MiscController {
 				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
 
 					LilayaDressingRoomDialogue.ignoreSlot();
-					Main.game.setContent(new Response("Ignore slot", "", LilayaDressingRoomDialogue.OUTFIT_EDITOR));
+					Main.game.setContent(new Response("Игнорировать слот", "", LilayaDressingRoomDialogue.OUTFIT_EDITOR));
 					
 				}, false);
 				
 				String clothingWeapon = LilayaDressingRoomDialogue.getSelectedSlot().isWeapon()?"weapon":"clothing";
 				MainController.addTooltipListeners(id,
 						new TooltipInformationEventListener().setInformation(
-								"Ignore slot",
-								"Remove whatever "+clothingWeapon+" is in this slot and then define it as being [style.italicsBad(ignored)]."
-										+ " This means that whenever this outfit is applied to a character, instead of removing whatever "+clothingWeapon+" the character currently has equipped in this slot, it will be ignored and left as-is.",
+								"Игнорировать слот",
+								"Снять всё, "+clothingWeapon+" что находится в этом слоте, и пометить это как [style.italicsBad(игнорируемое)]. Это значит, что когда этот наряд будет надет на персонажа, вместо того чтобы снять то, "+clothingWeapon+" что сейчас надето на персонаже в этом слоте, предмет будет проигнорирован и оставлен как есть.",
 								106));
 			}
 			
@@ -967,11 +958,11 @@ public class MiscController {
 						((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
 							
 							LilayaDressingRoomDialogue.setWeaponSelected(weaponType);
-							Main.game.setContent(new Response("Select weapon", "", LilayaDressingRoomDialogue.OUTFIT_EDITOR_ITEM_DYE));
+							Main.game.setContent(new Response("Выбрать оружие", "", LilayaDressingRoomDialogue.OUTFIT_EDITOR_ITEM_DYE));
 							
 						}, false);
 						MainController.addTooltipListeners(id,
-								new TooltipInformationEventListener().setInformation(Util.capitaliseSentence(weaponType.getName()), "Select this weapon to proceed to the dye menu.", 18));
+								new TooltipInformationEventListener().setInformation(Util.capitaliseSentence(weaponType.getName()), "Выберите это оружие, чтобы перейти в меню покраски.", 18));
 					}
 				}
 				
@@ -982,7 +973,7 @@ public class MiscController {
 						((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
 
 							LilayaDressingRoomDialogue.setClothingSelected(clothingType);
-							Main.game.setContent(new Response("Select clothing", "", LilayaDressingRoomDialogue.OUTFIT_EDITOR_ITEM_DYE));
+							Main.game.setContent(new Response("Выбрать одежду", "", LilayaDressingRoomDialogue.OUTFIT_EDITOR_ITEM_DYE));
 							
 						}, false);
 						// Warn player if this clothing is incompatible with any of the outfit's currently selected clothing
@@ -999,10 +990,10 @@ public class MiscController {
 						MainController.addTooltipListeners(id,
 								new TooltipInformationEventListener().setInformation(
 										Util.capitaliseSentence(clothingType.getName()),
-										"Select this clothing to proceed to the dye menu."
+										"Выберите эту одежду, чтобы перейти в меню покраски."
 										+(!incompatibleClothing.isEmpty()
-											?"<br/>[style.boldBad(!)] [style.italicsMinorBad(The "+clothingType.getName()+" "+(clothingType.isPlural()?"are":"is")
-													+" incompatible with other clothing in your outfit, and if selected, the following items will be removed:)]"
+											?"<br/>[style.boldBad(!)] [style.italicsMinorBad(Этот "+clothingType.getName()+" "+(clothingType.isPlural()?"are":"is")
+													+" предмет не сочетается с остальной вашей одеждой, и если вы его выберете, следующие вещи будут сняты:)]"
 												+incompatibleClothingSB.toString()
 											:""),
 										incompatibleClothing.isEmpty()
@@ -1077,11 +1068,11 @@ public class MiscController {
 						int lineHeight = 0;
 						StringBuilder tooltipDescriptionSB = new StringBuilder();
 						if (!requirements.isEmpty()) {
-							tooltipDescriptionSB.append("[style.boldBad(Locked:)] <i>"+requirements+"</i><br/>");
+							tooltipDescriptionSB.append("[style.boldBad(Заблокировано:)] <i>"+requirements+"</i><br/>");
 							lineHeight += 2;
 						} else {
 							if (!s.getAvailabilityText().isEmpty()) {
-								tooltipDescriptionSB.append("[style.boldGood(Unlocked:)] <i>"+s.getAvailabilityText()+"</i><br/>");
+								tooltipDescriptionSB.append("[style.boldGood(Разблокировано:)] <i>"+s.getAvailabilityText()+"</i><br/>");
 								lineHeight += 2;
 							}
 							
@@ -1089,7 +1080,7 @@ public class MiscController {
 							for (ItemTag tag : s.getTagsApplied()) {
 								for (String tagTooltip : tag.getClothingTooltipAdditions()) {
 									if (!tagApplicationFound) {
-										tooltipDescriptionSB.append("[style.boldMinorGood(Effects added:)]<br/>");
+										tooltipDescriptionSB.append("[style.boldMinorGood(Эффекты добавлены:)]<br/>");
 										tagApplicationFound = true;
 										lineHeight++;
 									}
@@ -1102,7 +1093,7 @@ public class MiscController {
 							for (ItemTag tag : s.getTagsRemoved()) {
 								for (String tagTooltip : tag.getClothingTooltipAdditions()) {
 									if (!tagApplicationFound) {
-										tooltipDescriptionSB.append("[style.boldMinorBad(Effects removed:)]<br/>");
+										tooltipDescriptionSB.append("[style.boldMinorBad(Эффекты сняты:)]<br/>");
 										tagApplicationFound = true;
 										lineHeight++;
 									}
@@ -1113,11 +1104,11 @@ public class MiscController {
 						}
 						TooltipInformationEventListener el = new TooltipInformationEventListener();
 						if (lineHeight>0) {
-							el.setInformation("Special Effects",
+							el.setInformation("Особые эффекты",
 									tooltipDescriptionSB.toString(),
 									(lineHeight*16));
 						} else {
-							el.setInformation("No Special Effects", "");
+							el.setInformation("Без особых эффектов", "");
 						}
 						MainController.addTooltipListeners(id, el);
 					}
@@ -1192,7 +1183,7 @@ public class MiscController {
 		id = "DELETE_EFFECT_"+effectCount;
 		while(MainController.document.getElementById(id) != null) {
 			MainController.addTooltipListeners(id,
-					new TooltipInformationEventListener().setInformation("Delete Effect", ""),
+					new TooltipInformationEventListener().setInformation("Удалить эффект", ""),
 					new EnchantmentEventListener().removeEffect(effectCount), false);
 			effectCount++;
 			id = "DELETE_EFFECT_"+effectCount;
@@ -1282,7 +1273,7 @@ public class MiscController {
 			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
 				if (LilayaDressingRoomDialogue.getSelectedItem().getEnchantmentEffect().getEffectsDescription(
 						LilayaDressingRoomDialogue.getPrimaryMod(), LilayaDressingRoomDialogue.getSecondaryMod(), LilayaDressingRoomDialogue.getPotency(), LilayaDressingRoomDialogue.getLimit(), Main.game.getPlayer(), Main.game.getPlayer()) != null) {
-					Main.game.setContent(new Response("Add", "Add the effect.", LilayaDressingRoomDialogue.OUTFIT_EDITOR_ITEM_ENCHANT) {
+					Main.game.setContent(new Response("Добавить", "Добавить эффект.", LilayaDressingRoomDialogue.OUTFIT_EDITOR_ITEM_ENCHANT) {
 						@Override
 						public void effects() {
 							LilayaDressingRoomDialogue.addEffect(new ItemEffect(
@@ -1291,15 +1282,15 @@ public class MiscController {
 					});
 				}
 			}, false);
-			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Add Effect", ""));
+			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Добавить эффект", ""));
 		}
 		
 		id = "ENCHANT_ADD_BUTTON_DISABLED";
 		if (MainController.document.getElementById(id) != null) {
 			String blockedString = LilayaDressingRoomDialogue.getEnchantmentEffectBlockedReason(LilayaDressingRoomDialogue.getCurrentEffect());
-			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Add Effect",
+			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Добавить эффект",
 					LilayaDressingRoomDialogue.getEffects().size()>=LilayaDressingRoomDialogue.getSelectedItem().getEnchantmentLimit()
-							?"You have already added the maximum number of effects for this item!"
+							?"Вы уже добавили максимально возможное количество эффектов для этого предмета!"
 							:(blockedString != null
 							?blockedString
 							:"")));

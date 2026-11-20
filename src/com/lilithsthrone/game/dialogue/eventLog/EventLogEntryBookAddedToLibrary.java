@@ -13,7 +13,7 @@ public class EventLogEntryBookAddedToLibrary extends EventLogEntry {
 
 	
 	public EventLogEntryBookAddedToLibrary(AbstractItemType book) {
-		super("Added to Library", "<span style='color:"+book.getRarity().getColour().toWebHexString()+";'>"+Util.capitaliseSentence(book.getName(false))+"</span>");
+		super("Добавлено в библиотеку", "<span style='color:"+book.getRarity().getColour().toWebHexString()+";'>"+Util.capitaliseSentence(book.getName(false))+"</span>");
 	}
 	
 	@Override
@@ -24,8 +24,7 @@ public class EventLogEntryBookAddedToLibrary extends EventLogEntry {
 	@Override
 	public String getMainDialogueDescription() {
 		return "<p style='text-align:center;'>"
-				+ "<b style='color:"+PresetColour.GENERIC_EXCELLENT.toWebHexString()+";'>Book added to Lilaya's library</b>"
-				+ "<br/>"
+				+ "<b style='color:"+PresetColour.GENERIC_EXCELLENT.toWebHexString()+";'>Книга добавлена в библиотеку Lilaya</b><br/>"
 				+ description
 			+ "</p>";
 	}

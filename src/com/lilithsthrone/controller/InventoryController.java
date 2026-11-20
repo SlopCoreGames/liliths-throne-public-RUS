@@ -372,11 +372,11 @@ public class InventoryController {
 					int lineHeight = 0;
 					StringBuilder tooltipDescriptionSB = new StringBuilder();
 					if (!requirements.isEmpty()) {
-						tooltipDescriptionSB.append("[style.boldBad(Locked:)] <i>"+requirements+"</i><br/>");
+						tooltipDescriptionSB.append("[style.boldBad(Заблокировано:)] <i>"+requirements+"</i><br/>");
 						lineHeight += 2;
 					} else {
 						if (!s.getAvailabilityText().isEmpty()) {
-							tooltipDescriptionSB.append("[style.boldGood(Unlocked:)] <i>"+s.getAvailabilityText()+"</i><br/>");
+							tooltipDescriptionSB.append("[style.boldGood(Разблокировано:)] <i>"+s.getAvailabilityText()+"</i><br/>");
 							lineHeight += 2;
 						}
 						
@@ -384,7 +384,7 @@ public class InventoryController {
 						for (ItemTag tag : s.getTagsApplied()) {
 							for (String tagTooltip : tag.getClothingTooltipAdditions()) {
 								if (!tagApplicationFound) {
-									tooltipDescriptionSB.append("[style.boldMinorGood(Effects added:)]<br/>");
+									tooltipDescriptionSB.append("[style.boldMinorGood(Эффекты добавлены:)]<br/>");
 									tagApplicationFound = true;
 									lineHeight++;
 								}
@@ -397,7 +397,7 @@ public class InventoryController {
 						for (ItemTag tag : s.getTagsRemoved()) {
 							for (String tagTooltip : tag.getClothingTooltipAdditions()) {
 								if (!tagApplicationFound) {
-									tooltipDescriptionSB.append("[style.boldMinorBad(Effects removed:)]<br/>");
+									tooltipDescriptionSB.append("[style.boldMinorBad(Эффекты сняты:)]<br/>");
 									tagApplicationFound = true;
 									lineHeight++;
 								}
@@ -408,11 +408,11 @@ public class InventoryController {
 					}
 					TooltipInformationEventListener el = new TooltipInformationEventListener();
 					if (lineHeight>0) {
-						el.setInformation("Special Effects",
+						el.setInformation("Особые эффекты",
 								tooltipDescriptionSB.toString(),
 								(lineHeight*16));
 					} else {
-						el.setInformation("No Special Effects", "");
+						el.setInformation("Без особых эффектов", "");
 					}
 					MainController.addTooltipListeners(id, el);
 				}

@@ -15,7 +15,7 @@ public class EventLogEntryGainItem extends EventLogEntry {
 
 	
 	public EventLogEntryGainItem(AbstractCoreItem item) {
-		super((item instanceof AbstractItem?"Gained Item":(item instanceof AbstractClothing?"Gained Clothing":"Gained Weapon")),
+		super((item instanceof AbstractItem?"Получен предмет":(item instanceof AbstractClothing?"Получена одежда":"Получено оружие")),
 				"<span style='color:"+item.getRarity().getColour().toWebHexString()+";'>"+Util.capitaliseSentence(item.getName())+"</span>");
 	}
 	

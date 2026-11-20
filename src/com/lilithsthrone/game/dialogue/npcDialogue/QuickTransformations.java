@@ -35,7 +35,7 @@ public class QuickTransformations {
 	
 	// Quick transformations:
 	
-	public static final DialogueNode QUICK_TRANSFORMATIONS_FEMININITY = new DialogueNode("Transformations", "", true, true) {
+	public static final DialogueNode QUICK_TRANSFORMATIONS_FEMININITY = new DialogueNode("Трансформации", "", true, true) {
 		@Override
 		public String getContent() {
 			return UtilText.parseFromXMLFile(dialoguePath, "QUICK_TRANSFORMATIONS_FEMININITY", targetedNpc);
@@ -47,8 +47,8 @@ public class QuickTransformations {
 			String maleName = targetedNpc.getSubspecies().getSingularMaleName(targetedNpc.getBody());
 			
 			if (index == 1) {
-				return new Response("[style.colourMasculineStrong(Very masculine)]",
-						"Tell [npc.name] that you want [npc.herHim] to shift [npc.her] femininity so that [npc.sheIs] "+UtilText.generateSingularDeterminer(maleName)+" "+maleName+".",
+				return new Response("[style.colourMasculineStrong(Очень мужественно)]",
+						"Скажи [npc.name], что хочешь, чтобы [npc.herHim] изменила [npc.her] женственность так, чтобы [npc.sheIs] "+UtilText.generateSingularDeterminer(maleName)+" "+maleName+".",
 						QUICK_TRANSFORMATIONS_PENIS){
 					@Override
 					public void effects() {
@@ -58,8 +58,8 @@ public class QuickTransformations {
 				};
 				
 			} else if (index == 2) {
-				return new Response("[style.colourMasculine(Masculine)]",
-						"Tell [npc.name] that you want [npc.herHim] to shift [npc.her] femininity so that [npc.sheIs] "+UtilText.generateSingularDeterminer(maleName)+" "+maleName+".",
+				return new Response("[style.colourMasculine(Мужской)]",
+						"Скажи [npc.name], что хочешь, чтобы [npc.herHim] изменила [npc.her] женственность так, чтобы [npc.sheIs] "+UtilText.generateSingularDeterminer(maleName)+" "+maleName+".",
 						QUICK_TRANSFORMATIONS_PENIS){
 					@Override
 					public void effects() {
@@ -69,8 +69,8 @@ public class QuickTransformations {
 				};
 				
 			} else if (index == 3) {
-				return new Response("[style.colourAndrogynous(Androgynous)]",
-						"Tell [npc.name] that you want [npc.herHim] to shift [npc.her] femininity so that [npc.sheIs] "+UtilText.generateSingularDeterminer(femaleName)+" "+femaleName+".",
+				return new Response("[style.colourAndrogynous(Андрогинно)]",
+						"Скажи [npc.name], что хочешь, чтобы [npc.herHim] изменила [npc.her] женственность так, чтобы [npc.sheIs] "+UtilText.generateSingularDeterminer(femaleName)+" "+femaleName+".",
 						QUICK_TRANSFORMATIONS_PENIS){
 					@Override
 					public void effects() {
@@ -80,8 +80,8 @@ public class QuickTransformations {
 				};
 				
 			} else if (index == 4) {
-				return new Response("[style.colourFeminine(Feminine)]",
-						"Tell [npc.name] that you want [npc.herHim] to shift [npc.her] femininity so that [npc.sheIs] "+UtilText.generateSingularDeterminer(femaleName)+" "+femaleName+".",
+				return new Response("[style.colourFeminine(Женский)]",
+						"Скажи [npc.name], что хочешь, чтобы [npc.herHim] изменила [npc.her] женственность так, чтобы [npc.sheIs] "+UtilText.generateSingularDeterminer(femaleName)+" "+femaleName+".",
 						QUICK_TRANSFORMATIONS_PENIS){
 					@Override
 					public void effects() {
@@ -91,8 +91,8 @@ public class QuickTransformations {
 				};
 				
 			} else if (index == 5) {
-				return new Response("[style.colourFeminineStrong(Very feminine)]",
-						"Tell [npc.name] that you want [npc.herHim] to shift [npc.her] femininity so that [npc.sheIs] "+UtilText.generateSingularDeterminer(femaleName)+" "+femaleName+".",
+				return new Response("[style.colourFeminineStrong(Очень женственно)]",
+						"Скажи [npc.name], что хочешь, чтобы [npc.herHim] изменила [npc.her] женственность так, чтобы [npc.sheIs] "+UtilText.generateSingularDeterminer(femaleName)+" "+femaleName+".",
 						QUICK_TRANSFORMATIONS_PENIS){
 					@Override
 					public void effects() {
@@ -107,7 +107,7 @@ public class QuickTransformations {
 		}
 	};
 	
-	private static final DialogueNode QUICK_TRANSFORMATIONS_PENIS = new DialogueNode("Transformations", "", true, true) {
+	private static final DialogueNode QUICK_TRANSFORMATIONS_PENIS = new DialogueNode("Трансформации", "", true, true) {
 		
 
 		@Override
@@ -118,8 +118,8 @@ public class QuickTransformations {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("No cock",
-						"Tell the [npc.race] that you don't want [npc.herHim] to have a cock.",
+				return new Response("Без члена",
+						"Скажи [npc.race], что не хочешь, чтобы у [npc.herHim] был член.",
 						QUICK_TRANSFORMATIONS_VAGINA){
 					@Override
 					public boolean isSexHighlight() {
@@ -134,8 +134,8 @@ public class QuickTransformations {
 				};
 				
 			} else if (index == 2) {
-				return new Response("Tiny cock",
-						"Tell the [npc.race] that you want [npc.herHim] to have a tiny little [unit.size(3)] cock.",
+				return new Response("Крошечный член",
+						"Скажите [npc.race], что хотите, чтобы у [npc.herHim] был крошечный [unit.size(3)] член.",
 						QUICK_TRANSFORMATIONS_VAGINA){
 					@Override
 					public boolean isSexHighlight() {
@@ -155,8 +155,8 @@ public class QuickTransformations {
 				};
 				
 			} else if (index == 3) {
-				return new Response("Average-sized cock",
-						"Tell the [npc.race] that you want [npc.herHim] to have an average, [unit.size(15)] cock.",
+				return new Response("Средний член",
+						"Скажите [npc.race], что хотите, чтобы у [npc.herHim] был средний [unit.size(15)] член.",
 						QUICK_TRANSFORMATIONS_VAGINA){
 					@Override
 					public boolean isSexHighlight() {
@@ -176,8 +176,8 @@ public class QuickTransformations {
 				};
 				
 			} if (index == 4) {
-				return new Response("Large cock",
-						"Tell the [npc.race] that you want [npc.herHim] to have a large, [unit.size(30)] cock.",
+				return new Response("Большой член",
+						"Скажите [npc.race], что хотите, чтобы у [npc.herHim] был большой [unit.size(30)] член.",
 						QUICK_TRANSFORMATIONS_VAGINA){
 					@Override
 					public boolean isSexHighlight() {
@@ -197,8 +197,8 @@ public class QuickTransformations {
 				};
 				
 			} if (index == 5) {
-				return new Response("Enormous cock",
-						"Tell the [npc.race] that you want [npc.herHim] to have a massive [unit.size(50)] cock.",
+				return new Response("Огромный член",
+						"Скажите [npc.race], что хотите, чтобы у [npc.herHim] был массивный [unit.size(50)] член.",
 						QUICK_TRANSFORMATIONS_VAGINA){
 					@Override
 					public boolean isSexHighlight() {
@@ -223,7 +223,7 @@ public class QuickTransformations {
 		}
 	};
 	
-	private static final DialogueNode QUICK_TRANSFORMATIONS_VAGINA = new DialogueNode("Transformations", "", true, true) {
+	private static final DialogueNode QUICK_TRANSFORMATIONS_VAGINA = new DialogueNode("Трансформации", "", true, true) {
 
 
 		@Override
@@ -234,8 +234,8 @@ public class QuickTransformations {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Vagina",
-						"Tell the [npc.race] that you want [npc.herHim] to have a pussy.",
+				return new Response("Киска",
+						"Скажите [npc.race], что хотите, чтобы у [npc.herHim] была киска.",
 						QUICK_TRANSFORMATIONS_BREASTS){
 					@Override
 					public boolean isSexHighlight() {
@@ -250,8 +250,8 @@ public class QuickTransformations {
 				};
 				
 			} else if (index == 2) {
-				return new Response("No Vagina",
-						"Tell the [npc.race] that [npc.she] won't be needing a pussy.",
+				return new Response("Без влагалища",
+						"Скажи [npc.race], что [npc.she] больше не нужна киска.",
 						QUICK_TRANSFORMATIONS_BREASTS){
 					@Override
 					public boolean isSexHighlight() {
@@ -271,7 +271,7 @@ public class QuickTransformations {
 		}
 	};
 	
-	private static final DialogueNode QUICK_TRANSFORMATIONS_BREASTS = new DialogueNode("Transformations", "", true, true) {
+	private static final DialogueNode QUICK_TRANSFORMATIONS_BREASTS = new DialogueNode("Трансформации", "", true, true) {
 
 		@Override
 		public String getContent() {
@@ -281,8 +281,8 @@ public class QuickTransformations {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Flat chest",
-						"Tell [npc.name] that [npc.she] should have no breasts.",
+				return new Response("Плоская грудь",
+						"Скажи [npc.name], чтобы у [npc.she] вообще не было груди.",
 						QUICK_TRANSFORMATIONS_FINISHED){
 					@Override
 					public void effects() {
@@ -292,8 +292,8 @@ public class QuickTransformations {
 				};
 				
 			} else if (index == 2) {
-				return new Response("AA-cup",
-						"Tell [npc.name] to make [npc.her] breasts tiny little AA-cups.",
+				return new Response("Размер AA",
+						"Скажи [npc.name] сделать [npc.her] крошечную грудь размера AA.",
 						QUICK_TRANSFORMATIONS_FINISHED){
 					@Override
 					public void effects() {
@@ -303,8 +303,8 @@ public class QuickTransformations {
 				};
 				
 			} else if (index == 3) {
-				return new Response("C-cup",
-						"Tell [npc.name] to make [npc.her] breasts C-cups.",
+				return new Response("Размер C",
+						"Скажи [npc.name] сделать [npc.her] грудь размера C.",
 						QUICK_TRANSFORMATIONS_FINISHED){
 					@Override
 					public void effects() {
@@ -314,8 +314,8 @@ public class QuickTransformations {
 				};
 				
 			} else if (index == 4) {
-				return new Response("E-cup",
-						"Tell [npc.name] to make [npc.her] breasts E-cups.",
+				return new Response("Размер E",
+						"Скажи [npc.name] сделать [npc.her] грудь размера E.",
 						QUICK_TRANSFORMATIONS_FINISHED){
 					@Override
 					public void effects() {
@@ -325,8 +325,8 @@ public class QuickTransformations {
 				};
 				
 			} else if (index == 5) {
-				return new Response("H-cup",
-						"Tell [npc.name] to make [npc.her] breasts H-cups.",
+				return new Response("Размер H",
+						"Попросить [npc.name] сделать [npc.her] грудь размера H.",
 						QUICK_TRANSFORMATIONS_FINISHED){
 					@Override
 					public void effects() {
@@ -336,8 +336,8 @@ public class QuickTransformations {
 				};
 				
 			} else if (index == 6) {
-				return new Response("N-cup",
-						"Tell [npc.name] to make [npc.her] breasts N-cups.",
+				return new Response("N-размер",
+						"Попросить [npc.name] сделать [npc.her] грудь размера N.",
 						QUICK_TRANSFORMATIONS_FINISHED){
 					@Override
 					public void effects() {
@@ -352,7 +352,7 @@ public class QuickTransformations {
 		}
 	};
 	
-	private static final DialogueNode QUICK_TRANSFORMATIONS_FINISHED = new DialogueNode("Transformations", "", true, true) {
+	private static final DialogueNode QUICK_TRANSFORMATIONS_FINISHED = new DialogueNode("Трансформации", "", true, true) {
 		
 		@Override
 		public String getContent() {

@@ -19,24 +19,24 @@ public enum SlavePermissionSetting {
 
 	// General/Misc.:
 	
-	GENERAL_SILENCE(false, "Silence", "Forbid this slave from talking. [style.italics(This slave will be treated as though they're mute while this permission is active.)]"),
-	GENERAL_CRAWLING(false, "Crawling", "Forbid this slave from walking, forcing them to crawl around on all fours."),
-	GENERAL_HOUSE_FREEDOM(false, "House Freedom", "Grant this slave the freedom to walk around Lilaya's house in their free time."),
-	GENERAL_OUTSIDE_FREEDOM(false, "Outside Freedom", "Grant this slave the freedom to leave Lilaya's house in their free time."),
+	GENERAL_SILENCE(false, "Сайленс", "Запретить этой рабыне говорить. [style.italics(Пока это разрешение активно, рабыня будет считаться немой.)]"),
+	GENERAL_CRAWLING(false, "Ползание", "Запретить этой рабыне ходить, заставляя её передвигаться на четвереньках."),
+	GENERAL_HOUSE_FREEDOM(false, "Свобода в доме", "Даровать этой рабыне свободу перемещаться по дому Lilaya в свободное время."),
+	GENERAL_OUTSIDE_FREEDOM(false, "Свобода на улице", "Даровать этой рабыне свободу выходить из дома Lilaya в свободное время."),
 	
 	
 	// Behaviour:
 	
-	BEHAVIOUR_WHOLESOME(false, "Wholesome", "Get this slave to act in a loving and wholesome manner around you. [style.italics(This will only take effect if they like you or are obedient.)]"),
-	BEHAVIOUR_PROFESSIONAL(false, "Professional", "Get this slave to act in a professional manner when interacting with you. [style.italics(This will only take effect if they like you or are obedient.)]"),
-	BEHAVIOUR_STANDARD(true, "Standard", "Do not give this slave any instructions as to how they should act around you."),
-	BEHAVIOUR_SEDUCTIVE(false, "Seductive", "Get this slave to act in a refined, seductive manner when interacting with you. [style.italics(This will only take effect if they like you or are obedient.)]"),
-	BEHAVIOUR_SLUTTY(false, "Slutty", "Get this slave to act in a trashy, slutty manner when interacting with you. [style.italics(This will only take effect if they like you or are obedient.)]"),
+	BEHAVIOUR_WHOLESOME(false, "Благообразность", "Заставить эту рабыню вести себя с вами любяще и благообразно. [style.italics(Это сработает только в том случае, если вы ей нравитесь или она послушна.)]"),
+	BEHAVIOUR_PROFESSIONAL(false, "Профессионализм", "Заставьте эту рабыню вести себя профессионально при общении с вами. [style.italics(Это сработает только в том случае, если она к вам расположена или послушна.)]"),
+	BEHAVIOUR_STANDARD(true, "Стандартный", "Не давайте этой рабыне никаких указаний относительно того, как она должна вести себя рядом с вами."),
+	BEHAVIOUR_SEDUCTIVE(false, "Соблазнительный", "Заставьте эту рабыню вести себя изысканно и соблазнительно при общении с вами. [style.italics(Это сработает только в том случае, если она к вам расположена или послушна.)]"),
+	BEHAVIOUR_SLUTTY(false, "Шаловливый", "Заставьте эту рабыню вести себя вульгарно и распутно при общении с вами. [style.italics(Это сработает только в том случае, если она к вам расположена или послушна.)]"),
 
 	
 	// Sex:
 	
-	SEX_LUBE_PILL(false, "Lube pills", "Keep this slave on lube pills, which will result in their entire body being lubricated in sex scenes.") {
+	SEX_LUBE_PILL(false, "Лубрикант-таблетки", "Давайте этой рабыне таблетки-лубриканты, благодаря чему всё её тело будет покрыто смазкой во время секс-сцен.") {
 		@Override
 		public void applyEffectsOnAddition(GameCharacter character) {
 			character.useItem(Main.game.getItemGen().generateItem("innoxia_pills_lubrication"), character, false);
@@ -46,44 +46,35 @@ public enum SlavePermissionSetting {
 			character.removeStatusEffect(StatusEffect.LUBE_PILL);
 		}
 	},
-	SEX_MASTURBATE(false, "Masturbation", "Allow this slave to masturbate."),
-	SEX_INITIATE_SLAVES(false, "Initiate Sex", "") {
+	SEX_MASTURBATE(false, "Мастурбация", "Разрешить этой рабыне мастурбировать."),
+	SEX_INITIATE_SLAVES(false, "Начать секс", "") {
 		@Override
 		public String getDescription() {
 			if(Main.game.isNonConEnabled()) {
-				return "Allow this slave to initiate sex with any other slave that has the 'Sex Toy' permission enabled."
-						+ " They will only initiate sex with slaves who they are attracted to, and if they do not have the 'Rapist' permission, then they will also only initiate sex with slaves who are attracted to them in turn."
-						+ " They will only have sex with slaves who they can find, either by working in the same location as them or by having the 'House Freedom' permission or both sharing the 'Outside Freedom' permission.";
+				return "Разрешить этой рабыне проявлять инициативу в сексе с любой другой рабыней, у которой включено разрешение «Секс-игрушка». Она будет проявлять инициативу только с теми рабынями, к которым испытывает влечение, а если у неё нет разрешения «Изнасилователь», то она будет проявлять инициативу только с теми, кто испытывает влечение к ней в ответ. Она будет заниматься сексом только с теми рабынями, которых сможет найти: либо работая с ними в одном месте, либо имея разрешение «Домашняя свобода», либо если обе обладают разрешением «Свобода на улице», либо и то, и другое вместе.";
 			}
-			return "Allow this slave to initiate sex with any other slave that has the 'Sex Toy' permission enabled."
-					+ " They will only initiate sex with slaves who they are attracted to, and who are attracted to them in turn."
-					+ " They will only have sex with slaves who they can find, either by working in the same location as them or by having the 'House Freedom' permission or both sharing the 'Outside Freedom' permission.";
+			return "Разрешить этой рабыне проявлять инициативу в сексе с любой другой рабыней, у которой включено разрешение «Секс-игрушка». Она будет проявлять инициативу только с теми рабынями, к которым испытывает влечение и которые испытывают влечение к ней в ответ. Она будет заниматься сексом только с теми рабынями, которых сможет найти: либо работая с ними в одном месте, либо имея разрешение «Домашняя свобода», либо если обе обладают разрешением «Свобода на улице», либо и то, и другое вместе.";
 		}
 		@Override
 		public int getAdditionalDescriptionLines() {
 			return 6;
 		}
 	},
-	SEX_INITIATE_PLAYER(false, "Use You", "") {
+	SEX_INITIATE_PLAYER(false, "Использовать тебя", "") {
 		@Override
 		public String getDescription() {
 			if(Main.game.isNonConEnabled()) {
-				return "Allow this slave to use you for sexual relief."
-						+ " This will allow them to proposition you for sex at any time, and if they have the 'Rapist' permission, then you will not be able to refuse their advances."
-						+ " They will also need the 'House Freedom' and/or 'Outside Freedom' to be able to find you within the mansion or out in Dominion's alleyways.";
+				return "Разрешить этой рабыне использовать тебя для сексуальной разрядки. Это позволит ей предлагать тебе секс в любое время, а если у неё есть разрешение «Изнасилователь», то ты не сможешь отвергнуть её притязания. Ей также понадобятся «Домашняя свобода» и/или «Свобода на улице», чтобы иметь возможность найти тебя внутри особняка или на улочках Dominion.";
 			}
-			return "Allow this slave to use you for sexual relief. This will allow them to proposition you for sex at any time."
-					+ "They will also need the 'House Freedom' and/or 'Outside Freedom' to be able to find you within the mansion or out in Dominion's alleyways.";
+			return "Позволяет этой рабыне использовать вас для сексуальной разрядки. Это позволит ей предлагать вам секс в любое время. Также ей потребуются «Домашняя свобода» и/или «Уличная свобода», чтобы иметь возможность найти вас внутри особняка или в переулках Dominion.";
 		}
 		@Override
 		public int getAdditionalDescriptionLines() {
 			return 3;
 		}
 	},
-	SEX_RAPIST(false, "Rapist",
-			"Allow this slave to ignore the sexual preferences of others, including yourself."
-				+ " If this slave has a negative desire towards the '"+Fetish.FETISH_NON_CON_DOM.getName(null)+"' fetish,"
-						+ " or if they like their partner and their partner does not have a positive desire towards the '"+Fetish.FETISH_NON_CON_SUB.getName(null)+"' fetish, then even with this permission this slave will not rape their partner.") {
+	SEX_RAPIST(false, "Изнасиловательница",
+			"Позволяет этой рабыне игнорировать сексуальные предпочтения других, включая вас. Если у этой рабыни есть негативное влечение к фетишу '"+Fetish.FETISH_NON_CON_DOM.getName(null)+"' или если ей нравится партнер, но у партнера нет положительного влечения к фетишу '"+Fetish.FETISH_NON_CON_SUB.getName(null)+"', то даже с этим разрешением она не станет насиловать своего партнера.") {
 		@Override
 		public boolean isAvailableForCharacter(GameCharacter character) {
 			return Main.game.isNonConEnabled();
@@ -93,15 +84,15 @@ public enum SlavePermissionSetting {
 			return 3;
 		}
 	},
-	SEX_RECEIVE_SLAVES(false, "Sex Toy", "Allow this slave to be used for sexual relief by any of your slaves with the 'Initiate Sex' permission enabled."),
-	SEX_SAVE_VIRGINITY(true, "Save Virginity", "Do not let any other slaves take this slave's virginity during sex."),
-	SEX_IMPREGNATED(false, "Breeding Bitch", "Allow this slave to be impregnated during sexual events with any other slave that has the 'Slave Stud' permission enabled.") {
+	SEX_RECEIVE_SLAVES(false, "Секс-игрушка", "Позволяет любой из ваших рабынь с включенным разрешением «Инициировать секс» использовать эту рабыню для сексуальной разрядки."),
+	SEX_SAVE_VIRGINITY(true, "Сохранить девственность", "Не позволяет другим рабыням лишать эту рабыню девственности во время секса."),
+	SEX_IMPREGNATED(false, "Сука-разводчица", "Разрешить этому рабыне забеременеть во время сексуальных актов с любым другим рабом, у которого включено разрешение «Самец-раб».") {
 		@Override
 		public boolean isAvailableForCharacter(GameCharacter character) {
 			return !character.isDoll();
 		}	
 	},
-	SEX_IMPREGNATE(false, "Slave Stud", "Allow this slave to impregnate any other slave that has the 'Breeding Bitch' permission enabled during sexual events.") {
+	SEX_IMPREGNATE(false, "Самец-раб", "Разрешить этой рабыне оплодотворять любого другого раба, у которого включено разрешение «Самка для разведения», во время сексуальных актов.") {
 		@Override
 		public boolean isAvailableForCharacter(GameCharacter character) {
 			return !character.isDoll();
@@ -111,7 +102,7 @@ public enum SlavePermissionSetting {
 	
 	// Pills:
 
-	PILLS_NO_PILLS(true, "No Pills", "Don't give this slave any sort of fertility modification pills, resulting in a natural chance of them getting pregnant."),
+	PILLS_NO_PILLS(true, "Без таблеток", "Не давать этой рабыне никаких таблеток, изменяющих фертильность, что обеспечит естественный шанс на наступление беременности."),
 	
 	PILLS_PROMISCUITY_PILLS(false, "", "") {
 		@Override
@@ -120,7 +111,7 @@ public enum SlavePermissionSetting {
 		}
 		@Override
 		public String getDescription() {
-			return UtilText.parse("Keep this slave on [#ITEM_innoxia_pills_sterility.getNamePlural(false)], greatly reducing both their fertility and virility.");
+			return UtilText.parse("Держать эту рабыню на [#ITEM_innoxia_pills_sterility.getNamePlural(false)], что значительно снижает как её фертильность, так и вирильность.");
 		}
 		@Override
 		public void applyEffectsOnAddition(GameCharacter character) {
@@ -139,7 +130,7 @@ public enum SlavePermissionSetting {
 		}
 		@Override
 		public String getDescription() {
-			return UtilText.parse("Keep this slave on [#ITEM_innoxia_pills_fertility.getNamePlural(false)], greatly increasing both their fertility and virility.");
+			return UtilText.parse("Держать эту рабыню на [#ITEM_innoxia_pills_fertility.getNamePlural(false)], что значительно повышает как её фертильность, так и вирильность.");
 		}
 		@Override
 		public void applyEffectsOnAddition(GameCharacter character) {
@@ -158,7 +149,7 @@ public enum SlavePermissionSetting {
 		}
 		@Override
 		public String getDescription() {
-			return UtilText.parse("Keep this slave on [#ITEM_innoxia_pills_broodmother.getNamePlural(false)], massively increasing both their fertility and virility and [style.colourExcellent(doubling)] how many offspring they conceive.");
+			return UtilText.parse("Держать эту рабыню на [#ITEM_innoxia_pills_broodmother.getNamePlural(false)], что колоссально повышает как её фертильность, так и вирильность, а также [style.colourExcellent(удваивает)] количество зачатых ею потомков.");
 		}
 		@Override
 		public void applyEffectsOnAddition(GameCharacter character) {
@@ -173,88 +164,78 @@ public enum SlavePermissionSetting {
 	
 	// Pregnancy:
 
-	PREGNANCY_MOTHERS_MILK(false, "Mother's Milk", "Order this slave to regularly consume Mother's Milk while pregnant, which will result in them completing their pregnancy within a few hours of becoming visibly pregnant."),
-	PREGNANCY_ALLOW_BIRTHING(true, "Allow Birthing", "Allow this slave to go to Lilaya's birthing room to give birth whenever they need to."),
-	PREGNANCY_ALLOW_EGG_LAYING(true, "Allow Egg Laying", "Allow this slave to go to Lilaya's birthing room to lay any eggs which have been implanted in them whenever they need to."),
+	PREGNANCY_MOTHERS_MILK(false, "Материнское молоко", "Приказать этой рабыне регулярно употреблять материнское молоко во время беременности, благодаря чему она завершит вынашивание всего через несколько часов после того, как живот станет заметным."),
+	PREGNANCY_ALLOW_BIRTHING(true, "Разрешить роды", "Разрешить этой рабыне ходить в родильную комнату Lilaya, чтобы рожать, когда ей это понадобится."),
+	PREGNANCY_ALLOW_EGG_LAYING(true, "Разрешить откладывание яиц", "Разрешить этой рабыне ходить в родильную комнату Lilaya, чтобы откладывать любые имплантированные в неё яйца, когда ей это понадобится."),
 	
 	
 	// Diet/Body size:
 	
 	FOOD_DIET_EXTREME(false,
 			Util.capitaliseSentence(BodySize.ZERO_SKINNY.getName(false)),
-			"Severely limit the amount of food available to this slave, which will result in a large daily change to their body size,"
-					+ " eventually making them <b style='color:"+BodySize.ZERO_SKINNY.getColour().toWebHexString()+";'>"+BodySize.ZERO_SKINNY.getName(false)+"</b>."),
+			"Сильно ограничить количество еды для этой рабыни, что приведет к значительным ежедневным изменениям её размера тела, в конечном итоге превращая её в <b style='color:"+BodySize.ZERO_SKINNY.getColour().toWebHexString()+";'>"+BodySize.ZERO_SKINNY.getName(false)+"</b>."),
 	
 	FOOD_DIET(false,
 			Util.capitaliseSentence(BodySize.ONE_SLENDER.getName(false)),
-			"Restrict the amount of food available to this slave, which will result in a daily change to their body size,"
-					+ " eventually making them <b style='color:"+BodySize.ONE_SLENDER.getColour().toWebHexString()+";'>"+BodySize.ONE_SLENDER.getName(false)+"</b>."),
+			"Ограничить количество еды для этой рабыни, что приведет к ежедневным изменениям её размера тела, в конечном итоге превращая её в <b style='color:"+BodySize.ONE_SLENDER.getColour().toWebHexString()+";'>"+BodySize.ONE_SLENDER.getName(false)+"</b>."),
 	
 	FOOD_NORMAL(true,
 			Util.capitaliseSentence(BodySize.TWO_AVERAGE.getName(false)),
-			"Give this slave a healthy amount of food, which will result in a daily change to their body size,"
-					+ " eventually making them <b style='color:"+BodySize.TWO_AVERAGE.getColour().toWebHexString()+";'>"+BodySize.TWO_AVERAGE.getName(false)+"</b>."),
+			"Давать этой рабыне достаточно еды, что приведет к ежедневным изменениям её размера тела, в конечном итоге превращая её в <b style='color:"+BodySize.TWO_AVERAGE.getColour().toWebHexString()+";'>"+BodySize.TWO_AVERAGE.getName(false)+"</b>."),
 	
 	FOOD_PLUS(false,
 			Util.capitaliseSentence(BodySize.THREE_LARGE.getName(false)),
-			"Give this slave an extra meal every day, which will result in a daily change to their body size,"
-					+ " eventually making them <b style='color:"+BodySize.THREE_LARGE.getColour().toWebHexString()+";'>"+BodySize.THREE_LARGE.getName(false)+"</b>."),
+			"Давать этой рабыне дополнительный прием пищи каждый день, что приведет к ежедневным изменениям её размера тела, в конечном итоге превращая её в <b style='color:"+BodySize.THREE_LARGE.getColour().toWebHexString()+";'>"+BodySize.THREE_LARGE.getName(false)+"</b>."),
 	
 	FOOD_LAVISH(false,
 			Util.capitaliseSentence(BodySize.FOUR_HUGE.getName(false)),
-			"Make an abundance of food available to this slave, which will result in a large daily change to their body size,"
-					+ " eventually making them <b style='color:"+BodySize.FOUR_HUGE.getColour().toWebHexString()+";'>"+BodySize.FOUR_HUGE.getName(false)+"</b>."),
+			"Обеспечить эту рабыню изобилием еды, что приведет к значительным ежедневным изменениям её размера тела, в конечном итоге превращая её в <b style='color:"+BodySize.FOUR_HUGE.getColour().toWebHexString()+";'>"+BodySize.FOUR_HUGE.getName(false)+"</b>."),
 
 	
 	// Exercise/Muscle:
 	
 	EXERCISE_FORBIDDEN(false,
 			Util.capitaliseSentence(Muscle.ZERO_SOFT.getName(false)),
-			"Forbid this slave from performing any strenuous activities, which will result in their muscles getting a lot smaller every day,"
-					+ " eventually making them <b style='color:"+Muscle.ZERO_SOFT.getColour().toWebHexString()+";'>"+Muscle.ZERO_SOFT.getName(false)+"</b>."),
+			"Запретить этой рабыне любые физические нагрузки, что приведет к сильному уменьшению её мышц каждый день, в конечном итоге превращая её в <b style='color:"+Muscle.ZERO_SOFT.getColour().toWebHexString()+";'>"+Muscle.ZERO_SOFT.getName(false)+"</b>."),
 	
 	EXERCISE_REST(false,
 			Util.capitaliseSentence(Muscle.ONE_LIGHTLY_MUSCLED.getName(false)),
-			"Do not give this slave any exercise routine, which will result in a daily change to their muscle mass,"
-					+ " eventually making them <b style='color:"+Muscle.ONE_LIGHTLY_MUSCLED.getColour().toWebHexString()+";'>"+Muscle.ONE_LIGHTLY_MUSCLED.getName(false)+"</b>."),
+			"Не давать этой рабыне никаких физических упражнений, что приведет к ежедневным изменениям её мышечной массы, в конечном итоге превращая её в <b style='color:"+Muscle.ONE_LIGHTLY_MUSCLED.getColour().toWebHexString()+";'>"+Muscle.ONE_LIGHTLY_MUSCLED.getName(false)+"</b>."),
 	
 	EXERCISE_NORMAL(true,
 			Util.capitaliseSentence(Muscle.TWO_TONED.getName(false)),
-			"Set this slave to perform a healthy amount of exercise, which will result in a daily change to their muscle mass,"
-					+ " eventually making them <b style='color:"+Muscle.TWO_TONED.getColour().toWebHexString()+";'>"+Muscle.TWO_TONED.getName(false)+"</b>."),
+			"Назначьте этой рабыне умеренное количество упражнений, что будет приводить к ежедневному изменению мышечной массы, со временем делая её <b style='color:"+Muscle.TWO_TONED.getColour().toWebHexString()+";'>"+Muscle.TWO_TONED.getName(false)+"</b>."),
 	
 	EXERCISE_TRAINING(false,
 			Util.capitaliseSentence(Muscle.THREE_MUSCULAR.getName(false)),
-			"Give this slave a workout routine, which will result in a daily change to their muscle mass,"
-					+ " eventually making them <b style='color:"+Muscle.THREE_MUSCULAR.getColour().toWebHexString()+";'>"+Muscle.THREE_MUSCULAR.getName(false)+"</b>."),
+			"Дайте этой рабыне режим тренировок, что будет приводить к ежедневному изменению мышечной массы, со временем делая её <b style='color:"+Muscle.THREE_MUSCULAR.getColour().toWebHexString()+";'>"+Muscle.THREE_MUSCULAR.getName(false)+"</b>."),
 	
 	EXERCISE_BODY_BUILDING(false,
 			Util.capitaliseSentence(Muscle.FOUR_RIPPED.getName(false)),
-			"Give this slave a strenuous exercise routine, which will result in their muscles getting a lot bigger every day,"
-					+ " eventually making them <b style='color:"+Muscle.FOUR_RIPPED.getColour().toWebHexString()+";'>"+Muscle.FOUR_RIPPED.getName(false)+"</b>."),
+			"Дайте этой рабыне режим изнурительных упражнений, что будет приводить к значительному росту мышц каждый день, со временем делая её <b style='color:"+Muscle.FOUR_RIPPED.getColour().toWebHexString()+";'>"+Muscle.FOUR_RIPPED.getName(false)+"</b>."),
 	
 	
 	// Cleanliness:
 	
-	CLEANLINESS_WASH_CLOTHES(true, "Wash Clothing", "Tell this slave to keep their clothing washed and clean."),
-	CLEANLINESS_WASH_BODY(true, "Wash Body", "Tell this slave to keep their body washed and clean, which will keep their orifices free of creampies."),
-	CLEANLINESS_WASH_THOROUGH(false, "Remove Odours", "When this slave washes their body, they will also remove any musky odours they might be marked with."),
+	CLEANLINESS_WASH_CLOTHES(true, "Стирать одежду", "Прикажите этой рабыне следить за тем, чтобы её одежда всегда была чистой и выстиранной."),
+	CLEANLINESS_WASH_BODY(true, "Мыть тело", "Прикажите этой рабыне следить за чистотой своего тела, чтобы её отверстия всегда были свободны от спермы."),
+	CLEANLINESS_WASH_THOROUGH(false, "Устранять запахи", "Когда эта рабыня будет мыться, она также будет смывать любые мускусные запахи, которыми она может быть помечена."),
 	
 	
 	// Sleeping:
-	SLEEPING_DEFAULT(true, "Sleep Whenever", "Tell this slave to sleep whenever they like, which will be during the night for diurnal races and during the day for nocturnal races.") {
+	SLEEPING_DEFAULT(true, "Спать когда угодно", "Приказывать этой рабыне спать, когда ей вздумается: для дневных рас это будет ночью, а для ночных — днем.") {
 		@Override
 		public void applyEffectsOnAddition(GameCharacter character) {
 			character.recalculateSleepHours();
 		}
 	},
-	SLEEPING_NIGHT(false, "Sleep At Night", "Tell this slave to sleep during the night. This will have neither a positive nor negative effect on them.") {
+	SLEEPING_NIGHT(false, "Спать ночью", "Приказывать этой рабыне спать ночью. Это не окажет на неё ни положительного, ни отрицательного эффекта.") {
 		@Override
 		public void applyEffectsOnAddition(GameCharacter character) {
 			character.recalculateSleepHours();
 		}
 	},
-	SLEEPING_DAY(false, "Sleep During Day", "Tell this slave to sleep during the day. This will have neither a positive nor negative effect on them.") {
+	SLEEPING_DAY(false, "Спать днем", "Приказывать этой рабыне спать днем. Это не окажет на неё ни положительного, ни отрицательного эффекта.") {
 		@Override
 		public void applyEffectsOnAddition(GameCharacter character) {
 			character.recalculateSleepHours();

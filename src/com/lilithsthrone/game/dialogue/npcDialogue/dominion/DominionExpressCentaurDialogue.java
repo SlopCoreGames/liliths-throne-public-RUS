@@ -102,19 +102,19 @@ public class DominionExpressCentaurDialogue {
 			UtilText.addSpecialParsingString(Util.intToString(slavePointsReward), true);
 
 			if(sexAreaWanted==SexAreaOrifice.MOUTH) {
-				UtilText.addSpecialParsingString("suck my cock", false);
+				UtilText.addSpecialParsingString("соси мой член", false);
 			} else if(sexAreaWanted==SexAreaOrifice.ANUS) {
-				UtilText.addSpecialParsingString("let me rut your ass", false);
+				UtilText.addSpecialParsingString("дай мне оттрахать твою задницу", false);
 			} else {
-				UtilText.addSpecialParsingString("give me a rimjob", false);
+				UtilText.addSpecialParsingString("сделай мне римjob", false);
 			}
 			return UtilText.parseFromXMLFile("characters/dominion/dominionExpressCentaur", "INITIAL_ENCOUNTER", centaur());
 		}
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Refuse",
-						UtilText.parse(centaur(), "Tell [npc.name] that you don't want to service [npc.herHim] right now and continue on your way..."),
+				return new Response("Отказаться",
+						UtilText.parse(centaur(), "Сказать [npc.name], что ты не хочешь обслуживать [npc.herHim] прямо сейчас, и продолжить свой путь..."),
 						Main.game.getDefaultDialogue(false)) {
 					@Override
 					public void effects() {
@@ -126,8 +126,8 @@ public class DominionExpressCentaurDialogue {
 			} else if(index==2) {
 				if(sexAreaWanted==SexAreaOrifice.MOUTH) {
 					return new ResponseSex(
-							"Suck cock",
-							UtilText.parse(centaur(), "Drop down onto your knees and kiss [npc.namePos] asshole, before shuffling around to suck [npc.her] cock."),
+							"Сосать член",
+							UtilText.parse(centaur(), "Опуститься на колени и поцеловать анус [npc.namePos], а затем перебраться к [npc.her], чтобы сосать его член."),
 							true,
 							false,
 							new SMDominionExpressEncounter(SexPosition.STANDING,
@@ -158,8 +158,8 @@ public class DominionExpressCentaurDialogue {
 					
 				} else if(sexAreaWanted==SexAreaPenetration.TONGUE) {
 					return new ResponseSex(
-							"Rimjob",
-							UtilText.parse(centaur(), "Drop down onto your knees behind [npc.name] and give [npc.herHim] a rimjob."),
+							"Римджоб",
+							UtilText.parse(centaur(), "Опуститься на колени позади [npc.name] и сделать [npc.herHim] римjob."),
 							true,
 							false,
 							new SMDominionExpressEncounter(SexPosition.STANDING,
@@ -182,8 +182,8 @@ public class DominionExpressCentaurDialogue {
 					
 				} else if(sexAreaWanted==SexAreaOrifice.ANUS) {
 					return new ResponseSex(
-							"Mounted",
-							UtilText.parse(centaur(), "Drop down onto your knees and kiss [npc.namePos] asshole, before presenting your own [pc.asshole+] to [npc.herHim] so that [npc.she] can mount and rut you."),
+							"Оседлан",
+							UtilText.parse(centaur(), "Опуститься на колени и поцеловать анус [npc.namePos], а затем подставить свою [pc.asshole+] перед [npc.herHim], чтобы [npc.she] мог оседлать и оттрахать тебя."),
 							true,
 							false,
 							new SMDominionExpressEncounter(SexPosition.ALL_FOURS,
@@ -218,10 +218,10 @@ public class DominionExpressCentaurDialogue {
 		}
 	};
 	
-	private static final DialogueNode AFTER_SEX = new DialogueNode("Finished", "", true) {
+	private static final DialogueNode AFTER_SEX = new DialogueNode("Завершено", "", true) {
 		@Override
 		public String getDescription() {
-			return UtilText.parse(centaur(), "[npc.Name] has finished with you...");
+			return UtilText.parse(centaur(), "[npc.Name] закончил с тобой...");
 		}
 		@Override
 		public void applyPreParsingEffects() {
@@ -238,8 +238,8 @@ public class DominionExpressCentaurDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue",
-						UtilText.parse(centaur(), "Leave [npc.name] to get on with [npc.her] work and continue on your way..."),
+				return new Response("Продолжить",
+						UtilText.parse(centaur(), "Оставить [npc.name] заниматься делами с [npc.her] и продолжить свой путь..."),
 						Main.game.getDefaultDialogue(false)) {
 					@Override
 					public void effects() {

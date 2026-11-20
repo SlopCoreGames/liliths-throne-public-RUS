@@ -235,11 +235,11 @@ public class OccupantDialogue {
 		@Override
 		public String getResponseTabTitle(int index) {
 			if(index == 0) {
-				return "Interaction";
+				return "Взаимодействие";
 			} else if(index == 1) {
 				return UtilText.parse("[style.colourSex(Sex)]");
 			} else if(index == 2) {
-				return UtilText.parse("[style.colourCompanion(Manage)]");
+				return UtilText.parse("[style.colourCompanion(Управление)]");
 			}
 			
 			return null;
@@ -251,20 +251,20 @@ public class OccupantDialogue {
 				if(responseTab == 1) {
 					if(index == 1) {
 						if(!occupant().hasTrait(Perk.HEAVY_SLEEPER, true)) {
-							return new Response("Sleep sex", UtilText.parse(characterForSex, "[npc.Name] is not a heavy sleeper, and so you can't have sleep sex with [npc.herHim]..."), null);
+							return new Response("Секс во сне", UtilText.parse(characterForSex, "[npc.Name] спит не так уж крепко, так что вы не можете заняться сексом во сне с [npc.herHim]..."), null);
 							
 						} else if(!characterForSex.isAttractedTo(Main.game.getPlayer())) {
-							return new Response("Sleep sex", UtilText.parse(characterForSex, "[npc.Name] is not attracted to you, and you cannot force [npc.herHim] to have sex with you..."), null);
+							return new Response("Секс во сне", UtilText.parse(characterForSex, "[npc.Name] не испытывает к вам влечения, и вы не можете заставить [npc.herHim] переспать с вами..."), null);
 							
 						} else if(characterForSex.getSexConsensualCount(Main.game.getPlayer())==0) {
-							return new Response("Sleep sex", UtilText.parse(characterForSex, "You need to have had sex with [npc.name] at least once before fucking [npc.herHim] in [npc.her] sleep..."), null);
+							return new Response("Секс во сне", UtilText.parse(characterForSex, "Вам нужно было заняться сексом с [npc.name] хотя бы раз, прежде чем трахать [npc.herHim] во время [npc.her] сна..."), null);
 							
 						} else {
-							return new ResponseSex("Sleep sex",
+							return new ResponseSex("Секс во сне",
 									UtilText.parse(characterForSex,
 											isApartment
-												?"As [npc.sheIs] a heavy sleeper, you could sneak into [npc.namePos] apartment and gently fuck [npc.herHim] without waking [npc.herHim] up..."
-												:"As [npc.sheIs] a heavy sleeper, you could sneak into [npc.namePos] room and gently fuck [npc.herHim] without waking [npc.herHim] up..."), 
+												?"Поскольку [npc.sheIs] крепко спит, вы могли бы прокрасться в квартиру [npc.namePos] и нежно трахать [npc.herHim], не разбудив [npc.herHim]..."
+												:"Поскольку [npc.sheIs] крепко спит, вы могли бы прокрасться в комнату [npc.namePos] и нежно трахать [npc.herHim], не разбудив [npc.herHim]..."), 
 									true, false,
 									new SMGeneric(
 											Util.newArrayListOfValues(Main.game.getPlayer()),
@@ -303,10 +303,9 @@ public class OccupantDialogue {
 					
 				} else {
 					if(index == 1) {
-						return new Response(UtilText.parse(occupant(), "Wake [npc.herHim]"),
+						return new Response(UtilText.parse(occupant(), "Разбудить [npc.herHim]"),
 								UtilText.parse(occupant(),
-										"Wake [npc.name] up so that you can interact with [npc.herHim]."
-										+ "<br/>[style.italicsMinorBad([npc.She] will be a little annoyed with you for having woken [npc.herHim] up...)]"),
+										"Разбудить [npc.name], чтобы вы могли взаимодействовать с [npc.herHim].<br/>[style.italicsMinorBad([npc.She] будет немного раздражена тем, что вы разбудили [npc.herHim]...)]"),
 								OCCUPANT_START_NO_CONTENT) {
 							@Override
 							public void effects() {
@@ -314,7 +313,7 @@ public class OccupantDialogue {
 								
 								occupant().wakeUp();
 								
-								Main.game.appendToTextEndStringBuilder(UtilText.parse(occupant(), "<p style='text-align:center;'>[style.italicsMinorBad([npc.Name] doesn't appreciate being woken up...)]</p>"));
+								Main.game.appendToTextEndStringBuilder(UtilText.parse(occupant(), "<p style='text-align:center;'>[style.italicsMinorBad([npc.Name] не очень-то нравится, когда её будят...)]</p>"));
 								Main.game.appendToTextEndStringBuilder(occupant().incrementAffection(Main.game.getPlayer(), -1));
 								Main.game.appendToTextEndStringBuilder(getOccupantStartCoreContent());
 							}
@@ -322,8 +321,8 @@ public class OccupantDialogue {
 					}
 				}
 				if (index == 0) {
-					return new Response("Leave",
-							UtilText.parse(occupant(), "Leave and allow [npc.name] to get some sleep."),
+					return new Response("Уйти",
+							UtilText.parse(occupant(), "Уйти и дать [npc.name] немного поспать."),
 							Main.game.getDefaultDialogue(false)) {
 						@Override
 						public void effects() {
@@ -339,7 +338,7 @@ public class OccupantDialogue {
 				if(responseTab == 0) {
 					if (index == 1) {
 						if(!occupant().NPCFlagValues.contains(NPCFlagValue.occupantTalkLife)) {
-							return new Response("Life", UtilText.parse(occupant(), "Ask [npc.name] about [npc.her] past life."), OCCUPANT_TALK_LIFE) {
+							return new Response("Жизнь", UtilText.parse(occupant(), "Спросить [npc.name] о прошлой жизни [npc.her]."), OCCUPANT_TALK_LIFE) {
 								@Override
 								public void effects() {
 									applyReactionReset();
@@ -349,22 +348,22 @@ public class OccupantDialogue {
 							};
 							
 						} else {
-							return new Response("Life", UtilText.parse(occupant(), "You've already talked with [npc.name] about [npc.her] past life today."), null);
+							return new Response("Жизнь", UtilText.parse(occupant(), "Вы уже говорили с [npc.name] о прошлой жизни [npc.her] сегодня."), null);
 						}
 						
 					} else if (index == 2) {
 						if(!occupant().NPCFlagValues.contains(NPCFlagValue.occupantTalkJob)) {
 							return new Response(hasJob()
-										?"Job"
+										?"Работа"
 										:(occupant().getDesiredJobs().isEmpty()
-											?"Unemployment"
-											:"Job hunt"),
+											?"Безработица"
+											:"Поиск работы"),
 									UtilText.parse(occupant(),
 											hasJob()
-											?"Ask [npc.name] about [npc.her] job."
+											?"Спросить [npc.name] о работе [npc.her]."
 											:(occupant().getDesiredJobs().isEmpty()
-												?"Ask [npc.name] if [npc.she] happy to remain unemployed."
-												:"Ask [npc.name] how [npc.her] job hunt is going.")),
+												?"Спросить [npc.name], счастлива ли [npc.she] оставаться безработной."
+												:"Спросить [npc.name], как продвигаются [npc.her] поиски работы.")),
 									OCCUPANT_TALK_JOB) {
 								@Override
 								public void effects() {
@@ -376,13 +375,13 @@ public class OccupantDialogue {
 							
 							
 						} else {
-							return new Response("Job", UtilText.parse(occupant(),
-									hasJob()?"You've already asked [npc.name] about [npc.her] job today.":"You've already asked [npc.name] how [npc.her] job hunt is going today."), null);
+							return new Response("Работа", UtilText.parse(occupant(),
+									hasJob()?"Вы уже спрашивали [npc.name] о [npc.her] работе сегодня.":"Вы уже спрашивали [npc.name] сегодня, как продвигаются [npc.her] поиски работы."), null);
 						}
 						
 					} else if (index == 3) {
 						if(!occupant().NPCFlagValues.contains(NPCFlagValue.occupantTalkLilaya)) {
-							return new Response("Lilaya", UtilText.parse(occupant(), "Ask [npc.name] about [npc.her] interactions with Lilaya and Rose."), OCCUPANT_TALK_LILAYA) {
+							return new Response("Lilaya", UtilText.parse(occupant(), "Спросить [npc.name] о взаимодействии [npc.her] с Lilaya и Rose."), OCCUPANT_TALK_LILAYA) {
 								@Override
 								public void effects() {
 									applyReactionReset();
@@ -392,15 +391,15 @@ public class OccupantDialogue {
 							};
 							
 						} else {
-							return new Response("Lilaya", UtilText.parse(occupant(), "You've already talked with [npc.name] about [npc.her] interactions with Lilaya and Rose today."), null);
+							return new Response("Lilaya", UtilText.parse(occupant(), "Вы уже обсуждали с [npc.name] взаимодействие [npc.her] с Lilaya и Rose сегодня."), null);
 						}
 						
 					} else if (index == 4) {
 						if(Main.game.getPlayer().getSlavesOwned().size()==0) {
-							return new Response("Slaves", "You don't own any slaves, so there's nothing to discuss about this with [npc.name].", null);
+							return new Response("Рабы", "У вас нет рабов, так что обсуждать это с [npc.name] не о чем.", null);
 							
 						} else if(!occupant().NPCFlagValues.contains(NPCFlagValue.occupantTalkSlaves)) {
-							return new Response("Slaves", UtilText.parse(occupant(), "Ask [npc.name] about [npc.her] interactions with your slaves."), OCCUPANT_TALK_SLAVES) {
+							return new Response("Рабы", UtilText.parse(occupant(), "Спросить [npc.name] о [npc.her] взаимодействиях с вашими рабынями."), OCCUPANT_TALK_SLAVES) {
 								@Override
 								public void effects() {
 									applyReactionReset();
@@ -410,19 +409,19 @@ public class OccupantDialogue {
 							};
 							
 						} else {
-							return new Response("Slaves", UtilText.parse(occupant(), "You've already talked with [npc.name] about [npc.her] interactions with your slaves today."), null);
+							return new Response("Рабы", UtilText.parse(occupant(), "Вы уже говорили с [npc.name] о [npc.her] взаимодействиях с вашими рабынями сегодня."), null);
 						}
 						
 					} else if (index == 5 && Main.getProperties().hasValue(PropertyValue.companionContent)) {
 						if(!Main.game.getPlayer().hasCompanion(occupant())) {
 							if(!occupant().isCompanionAvailable(Main.game.getPlayer())) {
-								return new Response("Add to party",
-										UtilText.parse(occupant(), "[npc.Name] cannot be added to your party!"),
+								return new Response("Взять в отряд",
+										UtilText.parse(occupant(), "[npc.Name] нельзя добавить в ваш отряд!"),
 										null);
 									
 							} else if(Main.game.getPlayer().canHaveMoreCompanions()) {
-								return new Response("Add to party",
-										UtilText.parse(occupant(), "Ask [npc.name] if [npc.she] would like to accompany you for a while."),
+								return new Response("Взять в отряд",
+										UtilText.parse(occupant(), "Спросить [npc.name], не хочет ли [npc.she] ненадолго составить вам компанию."),
 										OCCUPANT_START){
 									@Override
 									public void effects() {
@@ -431,14 +430,14 @@ public class OccupantDialogue {
 									}
 								};
 							} else {
-								return new Response("Add to party",
-										"You are already at your party limit!",
+								return new Response("Взять в отряд",
+										"Вы уже достигли лимита участников в отряде!",
 										null);
 							}
 							
 						} else {
-							return new Response("Remove from party",
-									UtilText.parse(occupant(), "Command [npc.name] to leave your party."),
+							return new Response("Убрать из отряда",
+									UtilText.parse(occupant(), "Приказать [npc.name] покинуть ваш отряд."),
 									OCCUPANT_START){
 								@Override
 								public void effects() {
@@ -451,14 +450,13 @@ public class OccupantDialogue {
 					} else if (index == 6) {
 						if(!occupant().NPCFlagValues.contains(NPCFlagValue.occupantHugged)) {
 							if(!occupant().getAffectionLevel(Main.game.getPlayer()).isGreaterThan(AffectionLevel.POSITIVE_TWO_LIKE)) {
-								return new Response("Hug",
+								return new Response("Обнять",
 										UtilText.parse(occupant(),
-												"[npc.Name] does not like you enough to want to give you a hug."
-												+ "<br/>[style.italicsMinorBad(Requires [npc.name] to have an affection of at least '"+AffectionLevel.POSITIVE_THREE_CARING.getName()+"' towards you.)]"),
+												"[npc.Name] недостаточно симпатизирует вам, чтобы обнять вас.<br/>[style.italicsMinorBad(Требуется, чтобы привязанность [npc.name] к вам была не ниже '"+AffectionLevel.POSITIVE_THREE_CARING.getName()+"' towards you.)]"),
 										null);
 							}
 							
-							return new Response("Hug", UtilText.parse(occupant(), "Give [npc.name] a big hug."), OCCUPANT_HUG) {
+							return new Response("Обнять", UtilText.parse(occupant(), "Крепко обнять [npc.name]."), OCCUPANT_HUG) {
 								@Override
 								public void effects() {
 									applyReactionReset();
@@ -468,19 +466,18 @@ public class OccupantDialogue {
 							};
 							
 						} else {
-							return new Response("Hug", UtilText.parse(occupant(), "You've already hugged [npc.name] today."), null);
+							return new Response("Обнять", UtilText.parse(occupant(), "Вы уже обнимали [npc.name] сегодня."), null);
 						}
 						
 					} else if (index == 7) {
 						if(!occupant().NPCFlagValues.contains(NPCFlagValue.occupantPet)) {
 							if(!occupant().getAffectionLevel(Main.game.getPlayer()).isGreaterThan(AffectionLevel.POSITIVE_THREE_CARING)) {
-								return new Response("Pettings",
+								return new Response("Поглаживания",
 										UtilText.parse(occupant(),
-												"[npc.Name] does not like you enough to allow you to pet [npc.herHim]."
-												+ "<br/>[style.italicsMinorBad(Requires [npc.name] to have an affection of at least '"+AffectionLevel.POSITIVE_FOUR_LOVE.getName()+"' towards you.)]"),
+												"[npc.Name] недостаточно симпатизирует вам, чтобы позволить гладить [npc.herHim].<br/>[style.italicsMinorBad(Требуется, чтобы привязанность [npc.name] к вам была не ниже '"+AffectionLevel.POSITIVE_FOUR_LOVE.getName()+"' towards you.)]"),
 										null);
 							}
-							return new Response("Pettings", UtilText.parse(occupant(), "Give [npc.name] some loving pettings."), OCCUPANT_PETTINGS) {
+							return new Response("Поглаживания", UtilText.parse(occupant(), "Ласково погладить [npc.name]."), OCCUPANT_PETTINGS) {
 								@Override
 								public void effects() {
 									applyReactionReset();
@@ -490,20 +487,18 @@ public class OccupantDialogue {
 							};
 							
 						} else {
-							return new Response("Pettings", UtilText.parse(occupant(), "You've already given [npc.name] some pettings today."), null);
+							return new Response("Поглаживания", UtilText.parse(occupant(), "Сегодня ты уже успел немного погладить [npc.name]."), null);
 						}
 						
 					} else if(index==8 && Main.game.getWorlds().get(WorldType.LILAYAS_HOUSE_GROUND_FLOOR).getCell(PlaceType.LILAYA_HOME_SPA)!=null) {
 						if(!LilayaSpa.isGuestAbleToEquipSwimwear(occupant())) {
-							return new Response("Invite to spa",
-									UtilText.parse(occupant(), "As [npc.name] is unable to equip swimwear, [npc.she] cannot go to the spa..."
-										+ "<br/><i>Unsealing [npc.her] clothing would fix this...</i>"),
+							return new Response("Пригласить в спа",
+									UtilText.parse(occupant(), "Так как [npc.name] не может надеть купальник, [npc.she] не может пойти в спа...<br/><i>Разблокировка одежды [npc.her] решила бы эту проблему...</i>"),
 									null);
 						}
-						return new Response("Invite to spa",
+						return new Response("Пригласить в спа",
 								UtilText.parse(occupant(),
-										"Ask [npc.name] if [npc.she] would like to accompany you to the spa that you've had built here in Lilaya's mansion."
-										+ "<br/>[style.italicsBlueLight(You'll remain in the clothes you're currently wearing, so if you want to wear suitable swimwear, now's the time to change!)]"),
+										"Спросить [npc.name], не хочет ли [npc.she] составить тебе компанию в спа, которое построили здесь, в особняке Lilaya.<br/>[style.italicsBlueLight(Ты останешься в той одежде, в которой сейчас находишься, так что если хочешь надеть подходящий купальник — самое время переодеться!)]"),
 								LilayaSpa.SPA_GUEST_INVITE) {
 							@Override
 							public void effects() {
@@ -515,10 +510,9 @@ public class OccupantDialogue {
 						
 					} else if (index == 10) {
 						if(hasJob()) {
-							return new Response("Move out",
+							return new Response("Выселить",
 									UtilText.parse(occupant(),
-											"Tell [npc.name] that you think that [npc.her] idea of moving out would be good for [npc.herHim].<br/>"
-											+ "[style.italics(You will have the option to save or remove this character in the next scene.)]"),
+											"Сказать [npc.name], что ты считаешь идею [npc.her] о переезде полезной для [npc.herHim].<br/>[style.italics(В следующей сцене у тебя будет возможность сохранить или удалить этого персонажа.)]"),
 									OCCUPANT_MOVE_OUT) {
 								@Override
 								public void effects() {
@@ -529,10 +523,9 @@ public class OccupantDialogue {
 							
 						} else {
 							if(confirmKickOut) {
-								return new Response("Confirm removal",
+								return new Response("Подтвердить удаление",
 										UtilText.parse(occupant(),
-												"Tell [npc.name] that you want [npc.herHim] to leave.<br/>"
-												+ "[style.italicsBad(Permanently removes this character from the game.)]"),
+												"Сказать [npc.name], что ты хочешь, чтобы [npc.herHim] ушла.<br/>[style.italicsBad(Навсегда удаляет этого персонажа из игры.)]"),
 										OCCUPANT_KICK_OUT) {
 									@Override
 									public Colour getHighlightColour() {
@@ -549,10 +542,9 @@ public class OccupantDialogue {
 								};
 								
 							} else {
-								return new ResponseEffectsOnly("Kick out",
+								return new ResponseEffectsOnly("Вышвырнуть",
 										UtilText.parse(occupant(),
-												"Tell [npc.name] that you want [npc.herHim] to leave.<br/>"
-													+ "[style.italicsMinorBad(After choosing this action, you'll need to click again to confirm that you want this character removed from the game forever.)]")) {
+												"Скажите [npc.name], что хотите, чтобы [npc.herHim] ушел.<br/>[style.italicsMinorBad(После выбора этого действия вам нужно будет кликнуть еще раз, чтобы подтвердить, что вы хотите навсегда удалить этого персонажа из игры.)]")) {
 									@Override
 									public void effects() {
 										confirmKickOut = true;
@@ -564,12 +556,12 @@ public class OccupantDialogue {
 					} else if (index == 11) {
 						return new Response(
 								hasJob()
-									?"Suggest job change"
-									:"Suggest job",
+									?"Предложить смену работы"
+									:"Предложить работу",
 								UtilText.parse(occupant(),
 										hasJob()
-											?"Tell [npc.name] that [npc.her] current job as "+UtilText.addDeterminer(occupant.getHistory().getName(occupant()))+" isn't suitable for [npc.herHim], and that [npc.she] should look for a new job."
-											:"Tell [npc.name] what sort of job you think [npc.she] should be looking for."),
+											?"Скажите [npc.name], что нынешняя работа [npc.her] в качестве "+UtilText.addDeterminer(occupant.getHistory().getName(occupant()))+" не подходит для [npc.herHim], и что [npc.she] стоит поискать новую работу."
+											:"Скажите [npc.name], какую именно работу, по вашему мнению, стоит искать [npc.she]."),
 								OCCUPANT_JOB_SUGGESTION) {
 							@Override
 							public void effects() {
@@ -578,8 +570,8 @@ public class OccupantDialogue {
 						};
 						
 					} else if(index==12 && occupant().hasJob()) {
-						return new Response("[style.colourBad(Quit job)]",
-								UtilText.parse(occupant(), "Tell [npc.name] to quit [npc.her] job as [npc.a_job], and to remain unemployed until you suggest something else for [npc.herHim]."),
+						return new Response("[style.colourBad(Уволиться)]",
+								UtilText.parse(occupant(), "Скажите [npc.name], чтобы [npc.her] уволился с работы [npc.a_job] и оставался безработным, пока вы не предложите что-то другое для [npc.herHim]."),
 								OCCUPANT_JOB_QUIT) {
 							@Override
 							public void effects() {
@@ -590,7 +582,7 @@ public class OccupantDialogue {
 						};
 						
 					} else if (index == 0) {
-						return new Response("Leave", UtilText.parse(occupant(), "Tell [npc.name] that you'll catch up with [npc.herHim] some other time."), Main.game.getDefaultDialogue(false)) {
+						return new Response("Уйти", UtilText.parse(occupant(), "Сказать [npc.name], что вы догоните [npc.herHim] в другой раз."), Main.game.getDefaultDialogue(false)) {
 							@Override
 							public void effects() {
 								Main.game.setResponseTab(0);
@@ -605,11 +597,11 @@ public class OccupantDialogue {
 				} else if(responseTab == 1) {
 					if (index == 1) {
 						if(!characterForSex.isAttractedTo(Main.game.getPlayer())) {
-							return new Response("Sex", UtilText.parse(characterForSex, "[npc.Name] is not attracted to you..."), null);
+							return new Response("Секс", UtilText.parse(characterForSex, "[npc.Name] не испытывает к вам влечения..."), null);
 							
 						} else {
-							return new ResponseSex("Sex",
-									UtilText.parse(characterForSex, "Have sex with [npc.name]."), 
+							return new ResponseSex("Секс",
+									UtilText.parse(characterForSex, "Заняться сексом с [npc.name]."), 
 									true, true,
 									new SMGeneric(
 											Util.newArrayListOfValues(Main.game.getPlayer()),
@@ -633,35 +625,35 @@ public class OccupantDialogue {
 						
 					} else if (index == 2) {
 						if(characterForSexSecondary==null || charactersPresent.size()<2) {
-							return new Response("Spitroast (front)", "You'd need a third person to be present in order to get a spitroast going...", null);
+							return new Response("Спитройст (спереди)", "Чтобы устроить спитройст, понадобится еще один человек...", null);
 							
 						} else if(characterForSex.isPlayer()) {
-							return new Response("Spitroast (front)", "You cannot target yourself for this action!", null);
+							return new Response("Спитройст (спереди)", "Вы не можете выбрать самого себя для этого действия!", null);
 							
 						} else if(!characterForSex.isAttractedTo(Main.game.getPlayer())) {
 							if(!characterForSexSecondary.isAttractedTo(Main.game.getPlayer())) {
-								return new Response("Spitroast (front)", UtilText.parse(characterForSexSecondary, characterForSex, "Neither [npc.name] nor [npc2.name] are attracted to you..."), null);
+								return new Response("Спитройст (спереди)", UtilText.parse(characterForSexSecondary, characterForSex, "Ни [npc.name], ни [npc2.name] к вам не испытывают влечения..."), null);
 							} else {
-								return new Response("Spitroast (front)", UtilText.parse(characterForSex, "[npc.Name] is not attracted to you, and so would be unwilling to participate in a threesome..."), null);
+								return new Response("Спитройст (спереди)", UtilText.parse(characterForSex, "[npc.Name] не испытывает к вам влечения, поэтому она неохотно согласится на секс втроем..."), null);
 							}
 							
 						} else if(!characterForSexSecondary.isAttractedTo(Main.game.getPlayer())) {
-							return new Response("Spitroast (front)", UtilText.parse(characterForSexSecondary, characterForSex, "[npc.Name] is not attracted to you, and so neither [npc.she] nor [npc2.name] would be willing to have a threesome..."), null);
+							return new Response("Спитройст (спереди)", UtilText.parse(characterForSexSecondary, characterForSex, "[npc.Name] не испытывает к вам влечения, поэтому ни [npc.she], ни [npc2.name] не захотят заняться сексом втроем..."), null);
 							
 						} else if(!characterForSexSecondary.isAttractedTo(characterForSex)) {
-							return new Response("Spitroast (front)",
-									UtilText.parse(characterForSexSecondary, characterForSex, "[npc.Name] is not attracted to [npc2.name], and so neither of them would be willing to be in a threesome position in which they are expected to interact with one other..."),
+							return new Response("Спитройст (спереди)",
+									UtilText.parse(characterForSexSecondary, characterForSex, "[npc.Name] не испытывает влечения к [npc2.name], поэтому ни один из них не захочет участвовать в групповом сексе, где предполагается взаимодействие друг с другом..."),
 									null);
 	
 						} else if(!characterForSex.isAttractedTo(characterForSexSecondary)) {
-							return new Response("Spitroast (front)",
-									UtilText.parse(characterForSexSecondary, characterForSex, "[npc2.Name] is not attracted to [npc.name], and so neither of them would be willing to be in a threesome position in which they are expected to interact with one other..."),
+							return new Response("Спитройст (спереди)",
+									UtilText.parse(characterForSexSecondary, characterForSex, "[npc2.Name] не испытывает влечения к [npc.name], поэтому ни один из них не захочет участвовать в групповом сексе, где предполагается взаимодействие друг с другом..."),
 									null);
 							
 						} else {
 							return new ResponseSex(
-									"Spitroast (front)",
-									UtilText.parse(characterForSex, characterForSexSecondary, "Move around in front of [npc.name] so that you can use [npc.her] mouth while [npc2.name] takes [npc.her] rear."),
+									"Спитройст (спереди)",
+									UtilText.parse(characterForSex, characterForSexSecondary, "Подвинься перед [npc.name] так, чтобы ты мог использовать рот [npc.her], пока [npc2.name] берет [npc.her] сзади."),
 									null, null, null, null, null, null,
 									true, true,
 									new SMGeneric(
@@ -686,35 +678,35 @@ public class OccupantDialogue {
 					
 					} else if (index == 3) {
 						if(characterForSexSecondary==null || charactersPresent.size()<2) {
-							return new Response("Spitroast (behind)", "You'd need a third person to be present in order to get a spitroast going...", null);
+							return new Response("Вертел (сзади)", "Чтобы устроить спитройст, понадобится еще один человек...", null);
 							
 						} else if(characterForSex.isPlayer()) {
-							return new Response("Spitroast (behind)", "You cannot target yourself for this action!", null);
+							return new Response("Вертел (сзади)", "Вы не можете выбрать самого себя для этого действия!", null);
 							
 						} else if(!characterForSex.isAttractedTo(Main.game.getPlayer())) {
 							if(!characterForSexSecondary.isAttractedTo(Main.game.getPlayer())) {
-								return new Response("Spitroast (behind)", UtilText.parse(characterForSexSecondary, characterForSex, "Neither [npc.name] nor [npc2.name] are attracted to you..."), null);
+								return new Response("Вертел (сзади)", UtilText.parse(characterForSexSecondary, characterForSex, "Ни [npc.name], ни [npc2.name] к вам не испытывают влечения..."), null);
 							} else {
-								return new Response("Spitroast (behind)", UtilText.parse(characterForSex, "[npc.Name] is not attracted to you, and so would be unwilling to participate in a threesome..."), null);
+								return new Response("Вертел (сзади)", UtilText.parse(characterForSex, "[npc.Name] не испытывает к вам влечения, поэтому она неохотно согласится на секс втроем..."), null);
 							}
 							
 						} else if(!characterForSexSecondary.isAttractedTo(Main.game.getPlayer())) {
-							return new Response("Spitroast (behind)", UtilText.parse(characterForSexSecondary, characterForSex, "[npc.Name] is not attracted to you, and so neither [npc.she] nor [npc2.name] would be willing to have a threesome..."), null);
+							return new Response("Вертел (сзади)", UtilText.parse(characterForSexSecondary, characterForSex, "[npc.Name] не испытывает к вам влечения, поэтому ни [npc.she], ни [npc2.name] не захотят заняться сексом втроем..."), null);
 							
 						} else if(!characterForSexSecondary.isAttractedTo(characterForSex)) {
-							return new Response("Spitroast (front)",
-									UtilText.parse(characterForSexSecondary, characterForSex, "[npc.Name] is not attracted to [npc2.name], and so neither of them would be willing to be in a threesome position in which they are expected to interact with one other..."),
+							return new Response("Спитройст (спереди)",
+									UtilText.parse(characterForSexSecondary, characterForSex, "[npc.Name] не испытывает влечения к [npc2.name], поэтому ни один из них не захочет участвовать в групповом сексе, где предполагается взаимодействие друг с другом..."),
 									null);
 	
 						} else if(!characterForSex.isAttractedTo(characterForSexSecondary)) {
-							return new Response("Spitroast (front)",
-									UtilText.parse(characterForSexSecondary, characterForSex, "[npc2.Name] is not attracted to [npc.name], and so neither of them would be willing to be in a threesome position in which they are expected to interact with one other..."),
+							return new Response("Спитройст (спереди)",
+									UtilText.parse(characterForSexSecondary, characterForSex, "[npc2.Name] не испытывает влечения к [npc.name], поэтому ни один из них не захочет участвовать в групповом сексе, где предполагается взаимодействие друг с другом..."),
 									null);
 							
 						} else {
 							return new ResponseSex(
-									"Spitroast (behind)",
-									UtilText.parse(characterForSex, characterForSexSecondary, "Move around behind [npc.name] so that you can use [npc.her] rear while [npc2.name] takes [npc.her] mouth."),
+									"Вертел (сзади)",
+									UtilText.parse(characterForSex, characterForSexSecondary, "Переместись за спину [npc.name], чтобы иметь доступ к заднице [npc.her], пока [npc2.name] занята ртом [npc.her]."),
 									null, null, null, null, null, null,
 									true, true,
 									new SMGeneric(
@@ -739,24 +731,24 @@ public class OccupantDialogue {
 					
 					} else if (index == 4) {
 						if(characterForSexSecondary==null || charactersPresent.size()<2) {
-							return new Response("Side-by-side (as dom)", "You'd need a third person to be present in order to get a spitroast going...", null);
+							return new Response("Бок о бок (как доминант)", "Чтобы устроить спитройст, понадобится еще один человек...", null);
 							
 						} else if(characterForSex.isPlayer()) {
-							return new Response("Side-by-side (as dom)", "You cannot target yourself for this action!", null);
+							return new Response("Бок о бок (как доминант)", "Вы не можете выбрать самого себя для этого действия!", null);
 							
 						} else if(!characterForSex.isAttractedTo(Main.game.getPlayer())) {
 							if(!characterForSexSecondary.isAttractedTo(Main.game.getPlayer())) {
-								return new Response("Side-by-side (as dom)", UtilText.parse(characterForSexSecondary, characterForSex, "Neither [npc.name] nor [npc2.name] are attracted to you..."), null);
+								return new Response("Бок о бок (как доминант)", UtilText.parse(characterForSexSecondary, characterForSex, "Ни [npc.name], ни [npc2.name] к вам не испытывают влечения..."), null);
 							} else {
-								return new Response("Side-by-side (as dom)", UtilText.parse(characterForSex, "[npc.Name] is not attracted to you, and so would be unwilling to participate in a threesome..."), null);
+								return new Response("Бок о бок (как доминант)", UtilText.parse(characterForSex, "[npc.Name] не испытывает к вам влечения, поэтому она неохотно согласится на секс втроем..."), null);
 							}
 							
 						} else if(!characterForSexSecondary.isAttractedTo(Main.game.getPlayer())) {
-							return new Response("Side-by-side (as dom)", UtilText.parse(characterForSexSecondary, characterForSex, "[npc.Name] is not attracted to you, and so neither [npc.she] nor [npc2.name] would be willing to have a threesome..."), null);
+							return new Response("Бок о бок (как доминант)", UtilText.parse(characterForSexSecondary, characterForSex, "[npc.Name] не испытывает к вам влечения, поэтому ни [npc.she], ни [npc2.name] не захотят заняться сексом втроем..."), null);
 							
 						} else {
-							return new ResponseSex("Side-by-side (as dom)",
-									UtilText.parse(characterForSex, characterForSexSecondary, "Push [npc.name] and [npc2.name] down onto all fours, before kneeling behind [npc.name], ready to fuck them both side-by-side."),
+							return new ResponseSex("Бок о бок (как доминант)",
+									UtilText.parse(characterForSex, characterForSexSecondary, "Прижми [npc.name] и [npc2.name] к полу на четвереньки, а затем встань на колени позади [npc.name], готовый трахнуть их обеих бок о бок."),
 									null, null, null, null, null, null,
 									true, false,
 									new SMGeneric(
@@ -781,13 +773,13 @@ public class OccupantDialogue {
 					
 					} else if (index == 6) {
 						if(!characterForSex.isAttractedTo(Main.game.getPlayer())) {
-							return new Response("Submissive sex",
-									UtilText.parse(characterForSex, "[npc.Name] is not too keen on having sex with you, so you'd need to be the dom..."),
+							return new Response("Субмиссивный секс",
+									UtilText.parse(characterForSex, "[npc.Name] не слишком горит желанием заниматься с тобой сексом, так что тебе придется взять на себя роль доминанта..."),
 									null);
 							
 						} else {
-							return new ResponseSex("Submissive sex",
-									UtilText.parse(characterForSex, "Have submissive sex with [npc.name]."), 
+							return new ResponseSex("Субмиссивный секс",
+									UtilText.parse(characterForSex, "Заниматься подчиненным сексом с [npc.name]."), 
 									Util.newArrayListOfValues(Fetish.FETISH_SUBMISSIVE), null, Fetish.FETISH_SUBMISSIVE.getAssociatedCorruptionLevel(), null, null, null,
 									true, true,
 									new SMGeneric(
@@ -813,25 +805,25 @@ public class OccupantDialogue {
 						
 					} else if (index == 7) {
 						if(characterForSexSecondary==null || charactersPresent.size()<2) {
-							return new Response("Spitroasted (front)", "You'd a third person to be present in order to get spitroasted...", null);
+							return new Response("Шпиготка (спереди)", "Тебе понадобится третий человек, чтобы устроить шпиготку...", null);
 							
 						} else if(characterForSex.isPlayer()) {
-							return new Response("Spitroasted (front)", "You cannot target yourself for this action!", null);
+							return new Response("Шпиготка (спереди)", "Вы не можете выбрать самого себя для этого действия!", null);
 							
 						} else if(!characterForSex.isAttractedTo(Main.game.getPlayer())) {
 							if(!characterForSexSecondary.isAttractedTo(Main.game.getPlayer())) {
-								return new Response("Spitroasted (front)", UtilText.parse(characterForSexSecondary, characterForSex, "Neither [npc.name] nor [npc2.name] are attracted to you..."), null);
+								return new Response("Шпиготка (спереди)", UtilText.parse(characterForSexSecondary, characterForSex, "Ни [npc.name], ни [npc2.name] к вам не испытывают влечения..."), null);
 							} else {
-								return new Response("Spitroasted (front)", UtilText.parse(characterForSex, "[npc.Name] is not attracted to you, and so would be unwilling to participate in a threesome..."), null);
+								return new Response("Шпиготка (спереди)", UtilText.parse(characterForSex, "[npc.Name] не испытывает к вам влечения, поэтому она неохотно согласится на секс втроем..."), null);
 							}
 							
 						} else if(!characterForSexSecondary.isAttractedTo(Main.game.getPlayer())) {
-							return new Response("Spitroasted (front)", UtilText.parse(characterForSexSecondary, characterForSex, "[npc.Name] is not attracted to you, and so neither [npc.she] nor [npc2.name] would be willing to have a threesome..."), null);
+							return new Response("Шпиготка (спереди)", UtilText.parse(characterForSexSecondary, characterForSex, "[npc.Name] не испытывает к вам влечения, поэтому ни [npc.she], ни [npc2.name] не захотят заняться сексом втроем..."), null);
 							
 						} else {
 							return new ResponseSex(
-									"Spitroasted (front)",
-									UtilText.parse(characterForSex, characterForSexSecondary, "Get down on all fours facing [npc.name], so that [npc.she] can use your mouth while [npc2.name] takes your rear."),
+									"Шпиготка (спереди)",
+									UtilText.parse(characterForSex, characterForSexSecondary, "Встань на четвереньки лицом к [npc.name], чтобы [npc.she] мог использовать твой рот, пока [npc2.name] берет тебя сзади."),
 									null, null, null, null, null, null,
 									true, true,
 									new SMGeneric(
@@ -856,25 +848,25 @@ public class OccupantDialogue {
 					
 					} else if (index == 8) {
 						if(characterForSexSecondary==null || charactersPresent.size()<2) {
-							return new Response("Spitroast (behind)", "You'd need a third person to be present in order to get a spitroast going...", null);
+							return new Response("Вертел (сзади)", "Чтобы устроить спитройст, понадобится еще один человек...", null);
 							
 						} else if(characterForSex.isPlayer()) {
-							return new Response("Spitroasted (behind)", "You cannot target yourself for this action!", null);
+							return new Response("Шпиготка (сзади)", "Вы не можете выбрать самого себя для этого действия!", null);
 							
 						} else if(!characterForSex.isAttractedTo(Main.game.getPlayer())) {
 							if(!characterForSexSecondary.isAttractedTo(Main.game.getPlayer())) {
-								return new Response("Spitroasted (behind)", UtilText.parse(characterForSexSecondary, characterForSex, "Neither [npc.name] nor [npc2.name] are attracted to you..."), null);
+								return new Response("Шпиготка (сзади)", UtilText.parse(characterForSexSecondary, characterForSex, "Ни [npc.name], ни [npc2.name] к вам не испытывают влечения..."), null);
 							} else {
-								return new Response("Spitroasted (behind)", UtilText.parse(characterForSex, "[npc.Name] is not attracted to you, and so would be unwilling to participate in a threesome..."), null);
+								return new Response("Шпиготка (сзади)", UtilText.parse(characterForSex, "[npc.Name] не испытывает к вам влечения, поэтому она неохотно согласится на секс втроем..."), null);
 							}
 							
 						} else if(!characterForSexSecondary.isAttractedTo(Main.game.getPlayer())) {
-							return new Response("Spitroasted (behind)", UtilText.parse(characterForSexSecondary, characterForSex, "[npc.Name] is not attracted to you, and so neither [npc.she] nor [npc2.name] would be willing to have a threesome..."), null);
+							return new Response("Шпиготка (сзади)", UtilText.parse(characterForSexSecondary, characterForSex, "[npc.Name] не испытывает к вам влечения, поэтому ни [npc.she], ни [npc2.name] не захотят заняться сексом втроем..."), null);
 							
 						} else {
 							return new ResponseSex(
-									"Spitroasted (behind)",
-									UtilText.parse(characterForSex, characterForSexSecondary, "Get down on all fours and present your rear to [npc.name], so that [npc.she] can fuck you while [npc2.name] uses your mouth."),
+									"Шпиготка (сзади)",
+									UtilText.parse(characterForSex, characterForSexSecondary, "Встань на четвереньки и подставь задницу [npc.name], чтобы [npc.she] трахал тебя, пока [npc2.name] использует твой рот."),
 									null, null, null, null, null, null,
 									true, true,
 									new SMGeneric(
@@ -899,34 +891,34 @@ public class OccupantDialogue {
 					
 					} else if (index == 9) {
 						if(characterForSexSecondary==null || charactersPresent.size()<2) {
-							return new Response("Side-by-side (as sub)", UtilText.parse(characterForSex, "You'd need a third person to be present in order to get fucked alongside either them or [npc.name]..."), null);
+							return new Response("Рядом (как саб)", UtilText.parse(characterForSex, "Тебе понадобится третий человек, чтобы тебя трахали вместе с кем-то из них или с [npc.name]..."), null);
 							
 						} else if(characterForSex.isPlayer()) {
-							return new Response("Side-by-side (as sub)", "You cannot target yourself for this action!", null);
+							return new Response("Рядом (как саб)", "Вы не можете выбрать самого себя для этого действия!", null);
 							
 						} else if(!characterForSex.isAttractedTo(Main.game.getPlayer())) {
 							if(!characterForSexSecondary.isAttractedTo(Main.game.getPlayer())) {
-								return new Response("Side-by-side (as sub)", UtilText.parse(characterForSexSecondary, characterForSex, "Neither [npc.name] nor [npc2.name] are attracted to you..."), null);
+								return new Response("Рядом (как саб)", UtilText.parse(characterForSexSecondary, characterForSex, "Ни [npc.name], ни [npc2.name] к вам не испытывают влечения..."), null);
 							} else {
-								return new Response("Side-by-side (as sub)", UtilText.parse(characterForSex, "[npc.Name] is not attracted to you, and so would be unwilling to participate in a threesome..."), null);
+								return new Response("Рядом (как саб)", UtilText.parse(characterForSex, "[npc.Name] не испытывает к вам влечения, поэтому она неохотно согласится на секс втроем..."), null);
 							}
 							
 						} else if(!characterForSexSecondary.isAttractedTo(Main.game.getPlayer())) {
-							return new Response("Side-by-side (as sub)", UtilText.parse(characterForSexSecondary, characterForSex, "[npc.Name] is not attracted to you, and so neither [npc.she] nor [npc2.name] would be willing to have a threesome..."), null);
+							return new Response("Рядом (как саб)", UtilText.parse(characterForSexSecondary, characterForSex, "[npc.Name] не испытывает к вам влечения, поэтому ни [npc.she], ни [npc2.name] не захотят заняться сексом втроем..."), null);
 							
 						} else if(!characterForSexSecondary.isAttractedTo(characterForSex)) {
-							return new Response("Side-by-side (as sub)",
-									UtilText.parse(characterForSexSecondary, characterForSex, "[npc.Name] is not attracted to [npc2.name], and so neither of them would be willing to be in a threesome position in which they are expected to interact with one other..."),
+							return new Response("Рядом (как саб)",
+									UtilText.parse(characterForSexSecondary, characterForSex, "[npc.Name] не испытывает влечения к [npc2.name], поэтому ни один из них не захочет участвовать в групповом сексе, где предполагается взаимодействие друг с другом..."),
 									null);
 	
 						} else if(!characterForSex.isAttractedTo(characterForSexSecondary)) {
-							return new Response("Side-by-side (as sub)",
-									UtilText.parse(characterForSexSecondary, characterForSex, "[npc2.Name] is not attracted to [npc.name], and so neither of them would be willing to be in a threesome position in which they are expected to interact with one other..."),
+							return new Response("Рядом (как саб)",
+									UtilText.parse(characterForSexSecondary, characterForSex, "[npc2.Name] не испытывает влечения к [npc.name], поэтому ни один из них не захочет участвовать в групповом сексе, где предполагается взаимодействие друг с другом..."),
 									null);
 							
 						} else {
-							return new ResponseSex("Side-by-side (as sub)",
-									UtilText.parse(characterForSex, characterForSexSecondary, "Get down on all fours beside [npc2.name], so that [npc.name] can kneel down behind the two of you, ready to fuck you both side-by-side."),
+							return new ResponseSex("Рядом (как саб)",
+									UtilText.parse(characterForSex, characterForSexSecondary, "Встань на четвереньки рядом с [npc2.name], чтобы [npc.name] мог опуститься на колени позади вас обоих, готовый трахать вас обоих бок о бок."),
 									null, null, null, null, null, null,
 									true, false,
 									new SMGeneric(
@@ -952,8 +944,8 @@ public class OccupantDialogue {
 					} else if(index==11) {
 						if(characterForSexSecondary!=null) {
 							return new ResponseEffectsOnly(
-									UtilText.parse(characterForSex, "Target: <b style='color:"+characterForSex.getFemininity().getColour().toWebHexString()+";'>[npc.Name]</b>"),
-									"Cycle the targeted character for group sex.") {
+									UtilText.parse(characterForSex, "Цель: <b style='color:"+characterForSex.getFemininity().getColour().toWebHexString()+";'>[npc.Name]</b>"),
+									"Сменить целевого персонажа для группового секса.") {
 								@Override
 								public void effects() {
 									if(charactersPresent.size()>1) {
@@ -980,16 +972,16 @@ public class OccupantDialogue {
 							
 						} else {
 							return new Response(
-									UtilText.parse(characterForSex, "Target: <b>[npc.Name]</b>"),
-									"Cycle the targeted character for group sex.<br/>[style.italicsBad(You'd need to have a companion with you for this action to be unlocked!)]",
+									UtilText.parse(characterForSex, "Цель: <b>[npc.Name]</b>"),
+									"Сменить целевого персонажа для группового секса.<br/>[style.italicsBad(Чтобы разблокировать это действие, с вами должен быть спутник!)]",
 									null); 
 						}
 						
 					} else if(index==12) {
 						if(characterForSexSecondary!=null) {
 							return new ResponseEffectsOnly(
-									UtilText.parse(characterForSexSecondary, "Secondary: <b style='color:"+characterForSexSecondary.getFemininity().getColour().toWebHexString()+";'>[npc.Name]</b>"),
-									"Cycle the secondary targeted character for group sex.") {
+									UtilText.parse(characterForSexSecondary, "Второй: <b style='color:"+characterForSexSecondary.getFemininity().getColour().toWebHexString()+";'>[npc.Name]</b>"),
+									"Сменить второго целевого персонажа для группового секса.") {
 								@Override
 								public void effects() {
 									if(charactersPresent.size()>1) {
@@ -1016,13 +1008,13 @@ public class OccupantDialogue {
 	
 						} else {
 							return new Response(
-									UtilText.parse(characterForSex, "Secondary: <b>[npc.Name]</b>"),
-									"Cycle the secondary targeted character for group sex.<br/>[style.italicsBad(You'd need to have a companion with you for this action to be unlocked!)]",
+									UtilText.parse(characterForSex, "Второй: <b>[npc.Name]</b>"),
+									"Сменить второго целевого персонажа для группового секса.<br/>[style.italicsBad(Чтобы разблокировать это действие, с вами должен быть спутник!)]",
 									null);
 						}
 	
 					} else if (index == 0) {
-						return new Response("Leave", UtilText.parse(occupant(), "Tell [npc.name] that you'll catch up with [npc.herHim] some other time."), Main.game.getDefaultDialogue(false)) {
+						return new Response("Уйти", UtilText.parse(occupant(), "Сказать [npc.name], что вы догоните [npc.herHim] в другой раз."), Main.game.getDefaultDialogue(false)) {
 							@Override
 							public void effects() {
 								Main.game.setResponseTab(0);
@@ -1056,7 +1048,7 @@ public class OccupantDialogue {
 		
 		@Override
 		public String getLabel(){
-			return UtilText.parse(occupant(),"Talking with [npc.Name]");
+			return UtilText.parse(occupant(),"Разговор с [npc.Name]");
 		}
 
 		@Override
@@ -1091,7 +1083,7 @@ public class OccupantDialogue {
 		
 		@Override
 		public String getLabel(){
-			return UtilText.parse(occupant(),"Talking with [npc.Name]");
+			return UtilText.parse(occupant(),"Разговор с [npc.Name]");
 		}
 
 		@Override
@@ -1130,7 +1122,7 @@ public class OccupantDialogue {
 		
 		@Override
 		public String getLabel(){
-			return UtilText.parse(occupant(),"Talking with [npc.Name]");
+			return UtilText.parse(occupant(),"Разговор с [npc.Name]");
 		}
 
 		@Override
@@ -1164,7 +1156,7 @@ public class OccupantDialogue {
 		
 		@Override
 		public String getLabel(){
-			return UtilText.parse(occupant(),"Talking with [npc.Name]");
+			return UtilText.parse(occupant(),"Разговор с [npc.Name]");
 		}
 
 		@Override
@@ -1204,7 +1196,7 @@ public class OccupantDialogue {
 		}
 		@Override
 		public String getLabel(){
-			return UtilText.parse(occupant(),"Hugging [npc.Name]");
+			return UtilText.parse(occupant(),"Обнять [npc.Name]");
 		}
 		@Override
 		public String getContent() {
@@ -1233,7 +1225,7 @@ public class OccupantDialogue {
 		}
 		@Override
 		public String getLabel(){
-			return UtilText.parse(occupant(), "Petting [npc.Name]");
+			return UtilText.parse(occupant(), "Погладить [npc.Name]");
 		}
 		@Override
 		public String getContent() {
@@ -1264,7 +1256,7 @@ public class OccupantDialogue {
 		
 		@Override
 		public String getLabel(){
-			return UtilText.parse(occupant(),"Talking with [npc.Name]");
+			return UtilText.parse(occupant(),"Разговор с [npc.Name]");
 		}
 
 		@Override
@@ -1295,15 +1287,15 @@ public class OccupantDialogue {
 			}
 			
 			if(index==0) {
-				return new Response("Back",
-						UtilText.parse(occupant(), "Decide against telling [npc.name] what job you think [npc.she] should have."),
+				return new Response("Назад",
+						UtilText.parse(occupant(), "Решить не говорить [npc.name], какую работу, по вашему мнению, стоит выбрать [npc.she]."),
 						isApartment
 							?OCCUPANT_APARTMENT
 							:OCCUPANT_START);
 				
 			} else if(index==1) {
-				return new Response("[style.colourGood(Select all)]",
-						UtilText.parse(occupant(), "Select all job types for [npc.name] to search for."),
+				return new Response("[style.colourGood(Выбрать все)]",
+						UtilText.parse(occupant(), "Выбрать все типы работ, которые [npc.name] должна искать."),
 						OCCUPANT_JOB_SUGGESTION) {
 					@Override
 					public void effects() {
@@ -1314,10 +1306,10 @@ public class OccupantDialogue {
 				};
 				
 			} else if(index==2) {
-				return new Response("[style.colourBad(Select none)]",
+				return new Response("[style.colourBad(Не выбирать ничего)]",
 						occupant().hasJob()
-							?UtilText.parse(occupant(), "Select no job types for [npc.name] to search for, causing [npc.herHim] to remain employed as [npc.a_job].")
-							:UtilText.parse(occupant(), "Select no job types for [npc.name] to search for, causing [npc.herHim] to remain unemployed."),
+							?UtilText.parse(occupant(), "Не выбирать типы работ для [npc.name], из-за чего [npc.herHim] останется работать [npc.a_job].")
+							:UtilText.parse(occupant(), "Не выбирать типы работ для [npc.name], из-за чего [npc.herHim] останется без работы."),
 							OCCUPANT_JOB_SUGGESTION) {
 					@Override
 					public void effects() {
@@ -1330,12 +1322,12 @@ public class OccupantDialogue {
 				String jobName = job.getName(occupant());
 				if(occupant().getHistory().equals(job)) {
 					return new Response(Util.capitaliseSentence(jobName),
-							UtilText.parse(occupant(), "[npc.Name] is already employed as "+UtilText.generateSingularDeterminer(jobName)+" "+jobName+"."),
+							UtilText.parse(occupant(), "[npc.Name] уже работает "+UtilText.generateSingularDeterminer(jobName)+" "+jobName+"."),
 							null);
 					
 				} else if(occupant().getDesiredJobs().contains(job)) {
 					return new Response(Util.capitaliseSentence(jobName),
-							UtilText.parse(occupant(), "Tell [npc.name] to stop looking for a job as "+UtilText.generateSingularDeterminer(jobName)+" "+jobName+"."),
+							UtilText.parse(occupant(), "Сказать [npc.name], чтобы перестал искать работу в качестве "+UtilText.generateSingularDeterminer(jobName)+" "+jobName+"."),
 							OCCUPANT_JOB_SUGGESTION) {
 						@Override
 						public Colour getHighlightColour() {
@@ -1349,7 +1341,7 @@ public class OccupantDialogue {
 					
 				} else {
 					return new Response(Util.capitaliseSentence(jobName),
-							UtilText.parse(occupant(), "Tell [npc.name] that [npc.she] should look for a job as "+UtilText.generateSingularDeterminer(jobName)+" "+jobName+"."),
+							UtilText.parse(occupant(), "Сказать [npc.name], что [npc.she] стоит поискать работу в качестве "+UtilText.generateSingularDeterminer(jobName)+" "+jobName+"."),
 							OCCUPANT_JOB_SUGGESTION) {
 						@Override
 						public void effects() {
@@ -1372,7 +1364,7 @@ public class OccupantDialogue {
 		
 		@Override
 		public String getLabel(){
-			return UtilText.parse(occupant(),"Talking with [npc.Name]");
+			return UtilText.parse(occupant(),"Разговор с [npc.Name]");
 		}
 
 		@Override
@@ -1392,11 +1384,11 @@ public class OccupantDialogue {
 	};
 	
 	
-	public static final DialogueNode AFTER_SEX = new DialogueNode("Finish", "", true) {
+	public static final DialogueNode AFTER_SEX = new DialogueNode("Закончить", "", true) {
 		
 		@Override
 		public String getDescription(){
-			return "Collapse down onto [npc.namePos] sofa and catch your breath.";
+			return "Рухнуть на диван [npc.namePos] и перевести дух.";
 		}
 
 		@Override
@@ -1415,11 +1407,11 @@ public class OccupantDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Leave",
+				return new Response("Уйти",
 						UtilText.parse(occupant(),
 								occupant().isAsleep()
-									?"Leave [npc.name] to sleep and exit [npc.her] "+(isApartment?"apartment":"room")+"."
-									:"Give [npc.name] some time to rest."),
+									?"Оставить [npc.name] спать и выйти из [npc.her] "+(isApartment?"квартиры":"комната")+"."
+									:"Дать [npc.name] немного времени на отдых."),
 						Main.game.getDefaultDialogue(false)) {
 					@Override
 					public void effects() {
@@ -1433,7 +1425,7 @@ public class OccupantDialogue {
 		}
 	};
 	
-	public static final DialogueNode OCCUPANT_KICK_OUT = new DialogueNode("Kicking out", "", false) {
+	public static final DialogueNode OCCUPANT_KICK_OUT = new DialogueNode("Выселение", "", false) {
 		@Override
 		public String getContent() {
 			return "";
@@ -1444,7 +1436,7 @@ public class OccupantDialogue {
 		}
 	};
 	
-	public static final DialogueNode OCCUPANT_MOVE_OUT = new DialogueNode("Moving out", "", true) {
+	public static final DialogueNode OCCUPANT_MOVE_OUT = new DialogueNode("Переезд", "", true) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -1459,8 +1451,7 @@ public class OccupantDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Visit apartment", "Tell [npc.name] that you'd love to see [npc.her] new apartment, and follow [npc.herHim] there.<br/>"
-						+ "[style.italicsGood(Saves this character by moving them to a random street or boulevard tile in Dominion.)]",
+				return new Response("Навестить квартиру", "Сказать [npc.name], что ты бы с удовольствием посмотрел на новую квартиру [npc.her], и последовать за [npc.herHim] туда.<br/>[style.italicsGood(Сохраняет этого персонажа, перемещая его на случайную клетку улицы или бульвара в Dominion.)]",
 						OCCUPANT_MOVE_OUT_APARTMENT) {
 					@Override
 					public void effects() {
@@ -1474,8 +1465,7 @@ public class OccupantDialogue {
 				
 			} else if(index==10) {
 				if(confirmKickOut) {
-					return new Response("Confirm removal", "Tell [npc.name] that the [npc.she] should move on with [npc.her] life.<br/>"
-							+ "[style.italicsBad(Permanently removes this character from the game.)]",
+					return new Response("Подтвердить удаление", "Сказать [npc.name], что [npc.she] пора жить своей [npc.her] жизнью.<br/>[style.italicsBad(Навсегда удаляет этого персонажа из игры.)]",
 							OCCUPANT_KICK_OUT) {
 						@Override
 						public Colour getHighlightColour() {
@@ -1492,8 +1482,7 @@ public class OccupantDialogue {
 					};
 					
 				} else {
-					return new ResponseEffectsOnly("Remove character", "Tell [npc.name] that the [npc.she] should move on with [npc.her] life.<br/>"
-							+ "[style.italicsMinorBad(After choosing this action, you'll need to click again to confirm that you want this character removed from the game forever.)]") {
+					return new ResponseEffectsOnly("Удалить персонажа", "Сказать [npc.name], что [npc.she] пора жить своей [npc.her] жизнью.<br/>[style.italicsMinorBad(После выбора этого действия вам нужно будет кликнуть еще раз, чтобы подтвердить, что вы хотите навсегда удалить этого персонажа из игры.)]") {
 						@Override
 						public void effects() {
 							confirmKickOut = true;
@@ -1507,7 +1496,7 @@ public class OccupantDialogue {
 		}
 	};
 	
-	public static final DialogueNode OCCUPANT_MOVE_OUT_APARTMENT = new DialogueNode("Moving out", "", true, true) {
+	public static final DialogueNode OCCUPANT_MOVE_OUT_APARTMENT = new DialogueNode("Переезд", "", true, true) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -1516,7 +1505,7 @@ public class OccupantDialogue {
 		
 		@Override
 		public String getLabel() {
-			return UtilText.parse(occupant(), "[npc.NamePos] apartment");
+			return UtilText.parse(occupant(), "квартира [npc.NamePos]");
 		}
 		
 		@Override
@@ -1579,7 +1568,7 @@ public class OccupantDialogue {
 	public static final DialogueNode OCCUPANT_APARTMENT_NO_CONTENT = new DialogueNode("", "", true) {
 		@Override
 		public String getLabel() {
-			return UtilText.parse(occupant(), "[npc.NamePos] Apartment");
+			return UtilText.parse(occupant(), "Квартира [npc.NamePos]");
 		}
 		@Override
 		public String getContent() {
@@ -1595,10 +1584,10 @@ public class OccupantDialogue {
 		}
 	};
 	
-	public static final DialogueNode OCCUPANT_APARTMENT = new DialogueNode("Moving out", "", true) {//TODO
+	public static final DialogueNode OCCUPANT_APARTMENT = new DialogueNode("Переезд", "", true) {//TODO
 		@Override
 		public String getLabel() {
-			return UtilText.parse(occupant(), "[npc.NamePos] Apartment");
+			return UtilText.parse(occupant(), "Квартира [npc.NamePos]");
 		}
 		@Override
 		public String getContent() {
@@ -1613,11 +1602,11 @@ public class OccupantDialogue {
 		public String getResponseTabTitle(int index) {
 			if(occupant().isAtHome()) {
 				if(index == 0) {
-					return "Interaction";
+					return "Взаимодействие";
 				} else if(index == 1) {
-					return UtilText.parse("[style.colourSex(Sex)]");
+					return UtilText.parse("[style.colourSex(Секс)]");
 				} else if(index == 2) {
-					return UtilText.parse("[style.colourCompanion(Manage)]");
+					return UtilText.parse("[style.colourCompanion(Управление)]");
 				}
 			}
 			
@@ -1628,8 +1617,8 @@ public class OccupantDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(!occupant().isAtHome()) {
 				if(index==1) {
-					return new Response("Leave",
-							UtilText.parse(occupant(), "As [npc.name] is not at home right now, there's nothing left to do but head back out into Dominion."),
+					return new Response("Уйти",
+							UtilText.parse(occupant(), "Так как [npc.name] сейчас нет дома, остается только отправиться обратно в Dominion."),
 							Main.game.getDefaultDialogue(false));
 				}
 				return null;
@@ -1637,10 +1626,9 @@ public class OccupantDialogue {
 			
 			if(occupant().isAsleep()) {
 				if(index == 1) {
-					return new Response(UtilText.parse(occupant(), "Wake [npc.herHim]"),
+					return new Response(UtilText.parse(occupant(), "Разбудить [npc.herHim]"),
 							UtilText.parse(occupant(),
-									"Wake [npc.name] up so that you can interact with [npc.herHim]."
-									+ "<br/>[style.italicsMinorBad([npc.She] will be a little annoyed with you for having woken [npc.herHim] up...)]"),
+									"Разбудить [npc.name], чтобы вы могли взаимодействовать с [npc.herHim].<br/>[style.italicsMinorBad([npc.She] будет немного раздражена тем, что вы разбудили [npc.herHim]...)]"),
 							OCCUPANT_APARTMENT_NO_CONTENT) {
 						@Override
 						public void effects() {
@@ -1648,15 +1636,15 @@ public class OccupantDialogue {
 							
 							occupant().wakeUp();
 							
-							Main.game.appendToTextEndStringBuilder(UtilText.parse(occupant(), "<p style='text-align:center;'>[style.italicsMinorBad([npc.Name] doesn't appreciate being woken up...)]</p>"));
+							Main.game.appendToTextEndStringBuilder(UtilText.parse(occupant(), "<p style='text-align:center;'>[style.italicsMinorBad([npc.Name] не очень-то нравится, когда её будят...)]</p>"));
 							Main.game.appendToTextEndStringBuilder(occupant().incrementAffection(Main.game.getPlayer(), -1));
 							Main.game.appendToTextEndStringBuilder(getOccupantApartmentCoreContent());
 						}
 					};
 					
 				} else if (index == 0) {
-					return new Response("Leave",
-							UtilText.parse(occupant(), "Leave and allow [npc.name] to get some sleep."),
+					return new Response("Уйти",
+							UtilText.parse(occupant(), "Уйти и дать [npc.name] немного поспать."),
 							Main.game.getDefaultDialogue(false)) {
 						@Override
 						public void effects() {
@@ -1672,7 +1660,7 @@ public class OccupantDialogue {
 			if(responseTab == 0) {
 				if (index == 1) {
 					if(!occupant().NPCFlagValues.contains(NPCFlagValue.occupantTalkLife)) {
-						return new Response("Life", UtilText.parse(occupant(), "Ask [npc.name] about [npc.her] past life."), OCCUPANT_APARTMENT_TALK_LIFE) {
+						return new Response("Жизнь", UtilText.parse(occupant(), "Спросить [npc.name] о прошлой жизни [npc.her]."), OCCUPANT_APARTMENT_TALK_LIFE) {
 							@Override
 							public void effects() {
 								applyReactionReset();
@@ -1682,13 +1670,13 @@ public class OccupantDialogue {
 						};
 						
 					} else {
-						return new Response("Life", UtilText.parse(occupant(), "You've already talked with [npc.name] about [npc.her] past life today."), null);
+						return new Response("Жизнь", UtilText.parse(occupant(), "Вы уже говорили с [npc.name] о прошлой жизни [npc.her] сегодня."), null);
 					}
 					
 				} else if (index == 2) {
 					if(!occupant().NPCFlagValues.contains(NPCFlagValue.occupantTalkJob)) {
-						return new Response("Job",
-								UtilText.parse(occupant(), "Ask [npc.name] about [npc.her] job."),
+						return new Response("Работа",
+								UtilText.parse(occupant(), "Спросить [npc.name] о работе [npc.her]."),
 								OCCUPANT_APARTMENT_TALK_JOB) {
 							@Override
 							public void effects() {
@@ -1700,14 +1688,14 @@ public class OccupantDialogue {
 						
 						
 					} else {
-						return new Response("Job", UtilText.parse(occupant(), "You've already asked [npc.name] about [npc.her] job today."), null);
+						return new Response("Работа", UtilText.parse(occupant(), "Вы уже спрашивали [npc.name] о [npc.her] работе сегодня."), null);
 					}
 					
 				}
 				else if (index == 3) {
-					return new Response("Rest",
-							UtilText.parse(occupant(), "Ask [npc.name] if you can crash on [npc.her] sofa for four hours.")
-							+ " As well as replenishing your "+Attribute.HEALTH_MAXIMUM.getName()+" and "+Attribute.MANA_MAXIMUM.getName()+", you will also get the 'Well Rested' status effect.",
+					return new Response("Отдых",
+							UtilText.parse(occupant(), "Спросить у [npc.name], можно ли перекантоваться на диване у [npc.her] четыре часа.")
+							+ " А также восполнение вашего "+Attribute.HEALTH_MAXIMUM.getName()+" и "+Attribute.MANA_MAXIMUM.getName()+", вы также получите статус «Выспавшийся».",
 							OCCUPANT_APARTMENT_SLEEP_OVER){
 						@Override
 						public void effects() {
@@ -1719,14 +1707,14 @@ public class OccupantDialogue {
 				} else if (index == 4) {
 					int timeUntilChange = Main.game.getMinutesUntilNextMorningOrEvening() + 5; // Add 5 minutes so that if the days are drawing in, you don't get stuck in a loop of always sleeping to sunset/sunrise
 					LocalDateTime[] sunriseSunset = DateAndTime.getTimeOfSolarElevationChange(Main.game.getDateNow(), SolarElevationAngle.SUN_ALTITUDE_SUNRISE_SUNSET, Game.DOMINION_LATITUDE, Game.DOMINION_LONGITUDE);
-					return new Response("Rest until " + (Main.game.isDayTime() ? "Sunset" : "Sunrise"),
-							UtilText.parse(occupant(), "Ask [npc.name] if you can crash on [npc.her] sofa for ")
-								+ (timeUntilChange >= 60 ?timeUntilChange / 60 + " hours " : " ")
-								+ (timeUntilChange % 60 != 0 ? timeUntilChange % 60 + " minutes" : "")
+					return new Response("Отдыхать до " + (Main.game.isDayTime() ? "Заката" : "Рассвета"),
+							UtilText.parse(occupant(), "Спросить [npc.name], можно ли перекантоваться на диване у [npc.her] на ")
+								+ (timeUntilChange >= 60 ?timeUntilChange / 60 + " часов " : " ")
+								+ (timeUntilChange % 60 != 0 ? timeUntilChange % 60 + " минут" : "")
 								+ (Main.game.isDayTime()
-										? " until five minutes past sunset ("+Units.time(sunriseSunset[1].plusMinutes(5))+")."
-										: " until five minutes past sunrise ("+Units.time(sunriseSunset[0].plusMinutes(5))+").")
-								+ " As well as replenishing your "+Attribute.HEALTH_MAXIMUM.getName()+" and "+Attribute.MANA_MAXIMUM.getName()+", you will also get the 'Well Rested' status effect.",
+										? " до пяти минут после заката ("+Units.time(sunriseSunset[1].plusMinutes(5))+")."
+										: " до пяти минут после рассвета ("+Units.time(sunriseSunset[0].plusMinutes(5))+").")
+								+ " А также восполнение вашего "+Attribute.HEALTH_MAXIMUM.getName()+" и "+Attribute.MANA_MAXIMUM.getName()+", вы также получите статус «Выспавшийся».",
 								OCCUPANT_APARTMENT_SLEEP_OVER){
 						@Override
 						public void effects() {
@@ -1739,13 +1727,13 @@ public class OccupantDialogue {
 					if(!Main.game.getPlayer().hasCompanion(occupant())) {
 						
 						if(!occupant().isCompanionAvailable(Main.game.getPlayer())) {
-							return new Response("Add to party",
-									UtilText.parse(occupant(), "[npc.Name] cannot be added to your party!"),
+							return new Response("Взять в отряд",
+									UtilText.parse(occupant(), "[npc.Name] нельзя добавить в ваш отряд!"),
 									null);
 								
 						} else if(Main.game.getPlayer().canHaveMoreCompanions()) {
-							return new Response("Add to party",
-									UtilText.parse(occupant(), "Ask [npc.name] if [npc.she] would like to accompany you for a while."),
+							return new Response("Взять в отряд",
+									UtilText.parse(occupant(), "Спросить [npc.name], не хочет ли [npc.she] ненадолго составить вам компанию."),
 									OCCUPANT_APARTMENT){
 								@Override
 								public void effects() {
@@ -1755,14 +1743,14 @@ public class OccupantDialogue {
 							};
 							
 						} else {
-							return new Response("Add to party",
-									"You are already at your party limit!",
+							return new Response("Взять в отряд",
+									"Вы уже достигли лимита участников в отряде!",
 									null);
 						}
 						
 					} else {
-						return new Response("Remove from party",
-								"Command [npc.name] to leave your party.",
+						return new Response("Убрать из отряда",
+								"Приказать [npc.name] покинуть ваш отряд.",
 								OCCUPANT_APARTMENT){
 							@Override
 							public void effects() {
@@ -1775,12 +1763,12 @@ public class OccupantDialogue {
 				} else if (index == 6) {
 					return new Response(
 							hasJob()
-								?"Suggest job change"
-								:"Suggest job",
+								?"Предложить смену работы"
+								:"Предложить работу",
 							UtilText.parse(occupant(),
 									hasJob()
-										?"Tell [npc.name] that [npc.her] current job as "+UtilText.addDeterminer(occupant.getHistory().getName(occupant()))+" isn't suitable for [npc.herHim], and that [npc.she] should look for a new job."
-										:"Tell [npc.name] what sort of job you think [npc.she] should be looking for."),
+										?"Скажите [npc.name], что нынешняя работа [npc.her] в качестве "+UtilText.addDeterminer(occupant.getHistory().getName(occupant()))+" не подходит для [npc.herHim], и что [npc.she] стоит поискать новую работу."
+										:"Скажите [npc.name], какую именно работу, по вашему мнению, стоит искать [npc.she]."),
 							OCCUPANT_JOB_SUGGESTION) {
 						@Override
 						public void effects() {
@@ -1789,7 +1777,7 @@ public class OccupantDialogue {
 					};
 
 				} else if (index == 8) {
-					return new Response("Set alarm", "Set the alarm on your phone, so that you can wake at a specific time.", RoomPlayer.ROOM_SET_ALARM) {
+					return new Response("Установить будильник", "Установи будильник на телефоне, чтобы проснуться в определенное время.", RoomPlayer.ROOM_SET_ALARM) {
 						@Override
 						public void effects() {
 							Main.game.saveDialogueNode();
@@ -1801,10 +1789,10 @@ public class OccupantDialogue {
 					if(alarmTime >= 0) {
 						String alarmTimeStr = Main.game.getDisplayTime(LocalTime.ofSecondOfDay(alarmTime*60));
 						int timeUntilAlarm = Main.game.getMinutesUntilTimeInMinutes((int)alarmTime-1)+1; // -1+1 is so we get 1440 instead of 0
-						return new Response("Rest until alarm (" + alarmTimeStr + ")",
-								"Ask [npc.name] if you can crash on [npc.her] sofa for " + (timeUntilAlarm >= 60 ? timeUntilAlarm / 60 + " hours, " : "")
-										+ (timeUntilAlarm % 60 != 0 ? timeUntilAlarm % 60 + " minutes, " : "")
-										+ " until your alarm goes off. As well as replenishing your " + Attribute.HEALTH_MAXIMUM.getName() + " and " + Attribute.MANA_MAXIMUM.getName() + ", you will also get the 'Well Rested' status effect.",
+						return new Response("Отдыхать до будильника (" + alarmTimeStr + ")",
+								"Спросить [npc.name], можно ли перекантоваться на диване у [npc.her] на " + (timeUntilAlarm >= 60 ? timeUntilAlarm / 60 + " ч, " : "")
+										+ (timeUntilAlarm % 60 != 0 ? timeUntilAlarm % 60 + " мин, " : "")
+										+ " пока не прозвенит будильник. А также восстановит ваши " + Attribute.HEALTH_MAXIMUM.getName() + " и " + Attribute.MANA_MAXIMUM.getName() + ", вы также получите статус «Выспавшийся».",
 								OCCUPANT_APARTMENT_SLEEP_OVER) {
 							@Override
 							public void effects() {
@@ -1813,13 +1801,12 @@ public class OccupantDialogue {
 							}
 						};
 					} else {
-						return new Response("Rest until alarm (unset)", "<span style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>Your alarm is unset!</span>", null);
+						return new Response("Отдыхать до будильника (не установлен)", "<span style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>Будильник не установлен!</span>", null);
 					}
 					
 				} else if (index == 10) {
 					if(confirmKickOut) {
-						return new Response("Confirm removal", UtilText.parse(occupant(), "Tell [npc.name] that you need to move on, and that you won't see [npc.herHim] ever again.<br/>"
-								+ "[style.italicsBad(This will permanently remove [npc.name] from the game!)]"),
+						return new Response("Подтвердить удаление", UtilText.parse(occupant(), "Сказать [npc.name], что пора двигаться дальше и что вы больше никогда не увидите [npc.herHim].<br/>[style.italicsBad(Это навсегда удалит [npc.name] из игры!)]"),
 								OCCUPANT_APARTMENT_REMOVE) {
 							@Override
 							public Colour getHighlightColour() {
@@ -1836,8 +1823,7 @@ public class OccupantDialogue {
 						};
 						
 					} else {
-						return new ResponseEffectsOnly("Remove character", UtilText.parse(occupant(), "Tell [npc.name] that you need to move on, and that you won't see [npc.herHim] ever again.<br/>"
-								+ "[style.italicsMinorBad(After choosing this action, you'll need to click again to confirm that you want this character removed from the game forever.)]")) {
+						return new ResponseEffectsOnly("Удалить персонажа", UtilText.parse(occupant(), "Сказать [npc.name], что пора двигаться дальше и что вы больше никогда не увидите [npc.herHim].<br/>[style.italicsMinorBad(После выбора этого действия вам нужно будет кликнуть еще раз, чтобы подтвердить, что вы хотите навсегда удалить этого персонажа из игры.)]")) {
 							@Override
 							public void effects() {
 								confirmKickOut = true;
@@ -1846,7 +1832,7 @@ public class OccupantDialogue {
 					}
 					
 				} else if (index == 0) {
-					return new Response("Leave", UtilText.parse(occupant(), "Tell [npc.name] that you'll catch up with [npc.herHim] some other time."), Main.game.getDefaultDialogue(false)) {
+					return new Response("Уйти", UtilText.parse(occupant(), "Сказать [npc.name], что вы догоните [npc.herHim] в другой раз."), Main.game.getDefaultDialogue(false)) {
 						@Override
 						public void effects() {
 							applyReactionReset();
@@ -1860,7 +1846,7 @@ public class OccupantDialogue {
 			
 			} else if(responseTab == 1) {
 				if (index == 0) {
-					return new Response("Leave", UtilText.parse(occupant(), "Tell [npc.name] that you'll catch up with [npc.herHim] some other time."), Main.game.getDefaultDialogue(false)) {
+					return new Response("Уйти", UtilText.parse(occupant(), "Сказать [npc.name], что вы догоните [npc.herHim] в другой раз."), Main.game.getDefaultDialogue(false)) {
 						@Override
 						public void effects() {
 							Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile(getTextFilePath(), "APARTMENT_LEAVING", occupant()));
@@ -1976,7 +1962,7 @@ public class OccupantDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Wake up", "You wake up some time later...", OCCUPANT_APARTMENT_SLEEP_OVER_WAKE_UP);
+				return new Response("Проснуться", "Спустя некоторое время вы просыпаетесь...", OCCUPANT_APARTMENT_SLEEP_OVER_WAKE_UP);
 				
 			} else {
 				return null;
@@ -2016,7 +2002,7 @@ public class OccupantDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(!occupant().isAtHome()) {
 				if (index == 1) {
-					return new Response("Outside", "You find yourself back outside in the streets of Dominion.", Main.game.getDefaultDialogue(false)) {
+					return new Response("Снаружи", "Вы снова оказываетесь на улицах Dominion.", Main.game.getDefaultDialogue(false)) {
 						@Override
 						public void effects() {
 							exitDialogue();
@@ -2045,11 +2031,11 @@ public class OccupantDialogue {
 		}
 	};
 	
-	public static final DialogueNode APARTMENT_AFTER_SEX = new DialogueNode("Finish", "", true) {
+	public static final DialogueNode APARTMENT_AFTER_SEX = new DialogueNode("Закончить", "", true) {
 		
 		@Override
 		public String getDescription(){
-			return "Collapse down onto [npc.namePos] sofa and catch your breath.";
+			return "Рухнуть на диван [npc.namePos] и перевести дух.";
 		}
 
 		@Override
@@ -2068,11 +2054,11 @@ public class OccupantDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Leave", 
+				return new Response("Уйти", 
 						UtilText.parse(occupant(),
 								occupant().isAsleep()
-									?"Leave [npc.name] to sleep and exit [npc.her] "+(isApartment?"apartment":"room")+"."
-									:"Give [npc.name] some time to rest."),
+									?"Оставить [npc.name] спать и выйти из [npc.her] "+(isApartment?"квартиры":"комната")+"."
+									:"Дать [npc.name] немного времени на отдых."),
 						Main.game.getDefaultDialogue(false)) {
 					@Override
 					public void effects() {

@@ -458,8 +458,8 @@ public class MainController implements Initializable {
 			}
 			
 			private void printAlreadyExistingBinding(String primarySecondary, String actionName, String eventCodeName) {
-				Main.game.getTextStartStringBuilder().append("<p style='text-align:center;'>" + "<b style='color:" + PresetColour.GENERIC_BAD.toWebHexString() + ";'>The key '" + eventCodeName
-						+ "' is already the " + primarySecondary + " bind for the action '" + actionName + "'!</b>" + "</p>");
+				Main.game.getTextStartStringBuilder().append("<p style='text-align:center;'>" + "<b style='color:" + PresetColour.GENERIC_BAD.toWebHexString() + ";'>Ключ '" + eventCodeName
+						+ "' уже " + primarySecondary + " привязан к действию '" + actionName + "'!</b>" + "</p>");
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}
 			
@@ -761,7 +761,7 @@ public class MainController implements Initializable {
 						
 						// Misc.:
 						if (keyEventMatchesBindings(KeyboardAction.FULL_SCREEN, event)) {
-							Main.primaryStage.setFullScreenExitHint("Press 'Esc' or '"+KeyboardAction.FULL_SCREEN.getPrimaryDefault().getFullName()+"' to exit fullscreen mode.");
+							Main.primaryStage.setFullScreenExitHint("Нажмите 'Esc' или '"+KeyboardAction.FULL_SCREEN.getPrimaryDefault().getFullName()+"', чтобы выйти из полноэкранного режима.");
 							Main.primaryStage.setFullScreen(!Main.primaryStage.isFullScreen());
 						}
 						
@@ -1917,7 +1917,7 @@ public class MainController implements Initializable {
 		
 		// Responses:
 		for (int i = 0; i < RESPONSE_COUNT; i++) {
-			String id = "option_" + i;
+			String id = "вариант_" + i;
 			if (((EventTarget) document.getElementById(id)) != null) {
 				SetContentEventListener el = new SetContentEventListener().setIndex(i);
 				addEventListener(document, id, "click", el, false);
@@ -1937,7 +1937,7 @@ public class MainController implements Initializable {
 	}
 	
 	private static void setResponseTabListeners(int responsePageCounter) {
-		String id = "tab_" + responsePageCounter;
+		String id = "вкладка_" + responsePageCounter;
 
 		addEventListener(document, id, "click", e -> {
 				Main.game.setResponseTab(responsePageCounter);
@@ -1957,7 +1957,7 @@ public class MainController implements Initializable {
 			if(i==5) {
 				MainController.addEventListener(MainController.document, id, "mousemove", MainController.moveTooltipListener, false);
 				MainController.addEventListener(MainController.document, id, "mouseleave", MainController.hideTooltipListener, false);
-				TooltipInformationEventListener el2 =  new TooltipInformationEventListener().setInformation("Unique Items", "");
+				TooltipInformationEventListener el2 =  new TooltipInformationEventListener().setInformation("Уникальные предметы", "");
 				MainController.addEventListener(MainController.document, id, "mouseenter", el2, false);
 			}
 		}
@@ -1978,7 +1978,7 @@ public class MainController implements Initializable {
 			if(i==5) {
 				MainController.addEventListener(MainController.document, id, "mousemove", MainController.moveTooltipListener, false);
 				MainController.addEventListener(MainController.document, id, "mouseleave", MainController.hideTooltipListener, false);
-				TooltipInformationEventListener el2 =  new TooltipInformationEventListener().setInformation("Unique Items", "");
+				TooltipInformationEventListener el2 =  new TooltipInformationEventListener().setInformation("Уникальные предметы", "");
 				MainController.addEventListener(MainController.document, id, "mouseenter", el2, false);
 			}
 		}
@@ -1994,35 +1994,35 @@ public class MainController implements Initializable {
 			MainController.addEventListener(documentButtonsLeft, "mainMenu", "mousemove", MainController.moveTooltipListener, false);
 			MainController.addEventListener(documentButtonsLeft, "mainMenu", "mouseleave", MainController.hideTooltipListener, false);
 			hotKey = Main.getProperties().hotkeyMapPrimary.get(KeyboardAction.MENU);
-			MainController.addEventListener(documentButtonsLeft, "mainMenu", "mouseenter", new TooltipInformationEventListener().setInformation("Main Menu"+(hotKey==null?"":" ("+hotKey.getFullName()+")"), ""), false);
+			MainController.addEventListener(documentButtonsLeft, "mainMenu", "mouseenter", new TooltipInformationEventListener().setInformation("Главное меню"+(hotKey==null?"":" ("+hotKey.getFullName()+")"), ""), false);
 		}
 		if(((EventTarget) documentButtonsLeft.getElementById("inventory"))!=null) {
 			addEventListener(documentButtonsLeft, "inventory", "click", inventoryButtonListener, true);
 			MainController.addEventListener(documentButtonsLeft, "inventory", "mousemove", MainController.moveTooltipListener, false);
 			MainController.addEventListener(documentButtonsLeft, "inventory", "mouseleave", MainController.hideTooltipListener, false);
 			hotKey = Main.getProperties().hotkeyMapPrimary.get(KeyboardAction.INVENTORY);
-			MainController.addEventListener(documentButtonsLeft, "inventory", "mouseenter", new TooltipInformationEventListener().setInformation("Inventory"+(hotKey==null?"":" ("+hotKey.getFullName()+")"), ""), false);
+			MainController.addEventListener(documentButtonsLeft, "inventory", "mouseenter", new TooltipInformationEventListener().setInformation("Инвентарь"+(hotKey==null?"":" ("+hotKey.getFullName()+")"), ""), false);
 		}
 		if(((EventTarget) documentButtonsLeft.getElementById("journal"))!=null) {
 			addEventListener(documentButtonsLeft, "journal", "click", journalButtonListener, true);
 			MainController.addEventListener(documentButtonsLeft, "journal", "mousemove", MainController.moveTooltipListener, false);
 			MainController.addEventListener(documentButtonsLeft, "journal", "mouseleave", MainController.hideTooltipListener, false);
 			hotKey = Main.getProperties().hotkeyMapPrimary.get(KeyboardAction.JOURNAL);
-			MainController.addEventListener(documentButtonsLeft, "journal", "mouseenter", new TooltipInformationEventListener().setInformation("Phone"+(hotKey==null?"":" ("+hotKey.getFullName()+")"), ""), false);
+			MainController.addEventListener(documentButtonsLeft, "journal", "mouseenter", new TooltipInformationEventListener().setInformation("Телефон"+(hotKey==null?"":" ("+hotKey.getFullName()+")"), ""), false);
 		}
 		if(((EventTarget) documentButtonsLeft.getElementById("charactersPresent"))!=null) {
 			addEventListener(documentButtonsLeft, "charactersPresent", "click", charactersPresentButtonListener, true);
 			MainController.addEventListener(documentButtonsLeft, "charactersPresent", "mousemove", MainController.moveTooltipListener, false);
 			MainController.addEventListener(documentButtonsLeft, "charactersPresent", "mouseleave", MainController.hideTooltipListener, false);
 			hotKey = Main.getProperties().hotkeyMapPrimary.get(KeyboardAction.CHARACTERS);
-			MainController.addEventListener(documentButtonsLeft, "charactersPresent", "mouseenter", new TooltipInformationEventListener().setInformation("Characters Present"+(hotKey==null?"":" ("+hotKey.getFullName()+")"), ""), false);
+			MainController.addEventListener(documentButtonsLeft, "charactersPresent", "mouseenter", new TooltipInformationEventListener().setInformation("Присутствующие персонажи"+(hotKey==null?"":" ("+hotKey.getFullName()+")"), ""), false);
 		}
 		if(((EventTarget) documentButtonsLeft.getElementById("mapZoom"))!=null) {
 			addEventListener(documentButtonsLeft, "mapZoom", "click", zoomButtonListener, true);
 			MainController.addEventListener(documentButtonsLeft, "mapZoom", "mousemove", MainController.moveTooltipListener, false);
 			MainController.addEventListener(documentButtonsLeft, "mapZoom", "mouseleave", MainController.hideTooltipListener, false);
 			hotKey = Main.getProperties().hotkeyMapPrimary.get(KeyboardAction.ZOOM);
-			MainController.addEventListener(documentButtonsLeft, "mapZoom", "mouseenter", new TooltipInformationEventListener().setInformation("Minimap Zoom"+(hotKey==null?"":" ("+hotKey.getFullName()+")"), ""), false);
+			MainController.addEventListener(documentButtonsLeft, "mapZoom", "mouseenter", new TooltipInformationEventListener().setInformation("Масштаб миникарты"+(hotKey==null?"":" ("+hotKey.getFullName()+")"), ""), false);
 		}
 	}
 	
@@ -2046,10 +2046,10 @@ public class MainController implements Initializable {
 					quickSaveAvailable
 						?"[style.colourGood(Быстрое сохранение"+(hotKey==null?"":" ("+hotKey.getFullName()+")")+")]"
 						:"[style.colourBad(Быстрое сохранение"+(hotKey==null?"":" ("+hotKey.getFullName()+")")+")]",
-					"Либо создает, либо "+(quickLoadAvailable?"[style.italicsBad(overrides)]":"")+"файл сохранения с именем '"+Main.getQuickSaveName()+"'."
+					"Либо создает, либо "+(quickLoadAvailable?"[style.italicsBad(переопределяет)]":"")+"файл сохранения с именем '"+Main.getQuickSaveName()+"'."
 						+ (hotKey==null
 							?"<br/>Нет горячих клавиш, назначенных на эту акцию."
-							:"<br/>Вы также можете быстро сохранить, нажав '"+hotKey.getFullName()+"' key.")
+							:"<br/>Вы также можете быстро сохранить, нажав '"+hotKey.getFullName()+" клавиша.")
 						+ (quickSaveAvailable
 							?"<br/>[style.italicsGood(Вы можете сохранить игру в этой сцене!)]"
 							:"<br/>[style.italicsBad("+Main.getQuickSaveUnavailabilityDescription()+")]")),
@@ -2071,7 +2071,7 @@ public class MainController implements Initializable {
 					"Загружает файл игры с именем '"+Main.getQuickSaveName()+"'."
 						+(hotKey==null
 							?"<br/>В настоящее время к этой функции не присвоено сочетание клавиш."
-							:"<br/>Вы также можете быстро сохранить, нажав '"+hotKey.getFullName()+"' key.")
+							:"<br/>Вы также можете быстро сохранить, нажав '"+hotKey.getFullName()+" клавиша.")
 						+(quickLoadAvailable
 							?"<br/>[style.italicsGood(Быстро сохраняемый файл обнаружен для этого персонажа!)]"
 							:"<br/>[style.italicsBad(Для этого персонажа не обнаружен быстро сохраняемый файл!)]")),
@@ -2109,16 +2109,16 @@ public class MainController implements Initializable {
 				String name = "<span style='color:"+exportCharacter.getFemininity().getColour().toWebHexString()+";'>"+exportCharacter.getName(false)+"</span>";
 				MainController.addEventListener(documentButtonsRight, id, "click", e -> {
 					Game.exportCharacter(exportCharacter);
-					Main.game.flashMessage(PresetColour.GENERIC_EXCELLENT, "Character Exported!");
+					Main.game.flashMessage(PresetColour.GENERIC_EXCELLENT, "Персонаж экспортирован!");
 				}, false);
 				MainController.addEventListener(documentButtonsRight, id, "mouseenter", new TooltipInformationEventListener().setInformation(
-						"Export Character",
-						"Export "+name+" в папку 'data/characters'. Экспортированные персонажи могут быть импортированы на аукционном блоке в Улице работорговцев.",
+						"Экспортировать персонажа",
+						"Экспорт "+name+" в папку 'data/characters'. Экспортированные персонажи могут быть импортированы на аукционном блоке в Улице работорговцев.",
 						48), false);
 				
 			} else {
 				MainController.addEventListener(documentButtonsRight, id, "mouseenter", new TooltipInformationEventListener().setInformation(
-						"Export Character",
+						"Экспортировать персонажа",
 						"Чтобы экспортировать любого персонажа, включая вашего собственного, вам нужно просматривать их на экране 'Присутствующие персонажи' в вашем телефоне.",
 						48), false);
 			}
@@ -2147,7 +2147,7 @@ public class MainController implements Initializable {
 		// For all equipped clothing slots:
 		String id;
 		for (InventorySlot invSlot : InventorySlot.values()) {
-			id = invSlot.toString() + "Slot";
+			id = invSlot.toString() + "Слот";
 			if (!invSlot.isWeapon()) {
 				if (((EventTarget) documentAttributes.getElementById(id)) != null) {
 					if(!RenderingEngine.ENGINE.isRenderingTattoosLeft() || invSlot.isJewellery()) {
@@ -2181,8 +2181,8 @@ public class MainController implements Initializable {
 			addEventListener(documentAttributes, id, "mouseleave", hideTooltipListener, false);
 			TooltipInformationEventListener el2 = new TooltipInformationEventListener().setInformation(
 					!RenderingEngine.ENGINE.isRenderingTattoosLeft()
-						?"Switch to tattoos"
-						:"Switch to clothing",
+						?"Переключиться на татуировки"
+						:"Переключиться на одежду",
 					"");
 			addEventListener(documentAttributes, id, "mouseenter", el2, false);
 		}
@@ -2193,8 +2193,7 @@ public class MainController implements Initializable {
 			addEventListener(documentAttributes, id, "mouseleave", hideTooltipListener, false);
 			TooltipInformationEventListener el2 = new TooltipInformationEventListener().setInformation(
 					Util.capitaliseSentence(Attribute.ENCHANTMENT_LIMIT.getName()),
-					"The total amount of weapon, clothing, and tattoo attribute enchantments you're able to handle without incurring massive penalties."
-					+" Your limit is calculated from: <i>10 + (level) + (perk gains)</i>");
+					"Общее количество зачарований оружия, одежды и татуировок, которое вы можете выдержать без огромных штрафов. Ваш предел рассчитывается как: <i>10 + (уровень) + (бонусы от перков)</i>");
 			addEventListener(documentAttributes, id, "mouseenter", el2, false);
 		}
 
@@ -2211,20 +2210,19 @@ public class MainController implements Initializable {
 			}, false);
 			
 			addEventListener(documentAttributes, id, "mousemove", moveTooltipListener, false);
-			addEventListener(documentAttributes, id, "mouseleave", hideTooltipListener, false);
+			addEventListener(documentAttributes, id, "уход курсора", hideTooltipListener, false);
 			String day = Main.game.getDateNow().getDayOfWeek().getDisplayName(TextStyle.FULL, Locale.ENGLISH);
 			StringBuilder dateSB = new StringBuilder();
 			if(Main.game.isBadEnd()) {
-				dateSB.append("[style.italicsBad(Given your current situation, you've lost track of what day it is...)]");
+				dateSB.append("[style.italicsBad(Учитывая вашу нынешнюю ситуацию, вы уже сбились со счета, какой сегодня день...)]");
 			} else {
 				if(!dateKnown) {
-					dateSB.append("[style.italicsMinorBad(Look at the calendar in your room to reveal the date!)]");
+					dateSB.append("[style.italicsMinorBad(Посмотрите на календарь в своей комнате, чтобы узнать дату!)]");
 				} else {
-					dateSB.append("The current date is: [style.colourGood("+ Main.game.getDisplayDate(true)+")]");
+					dateSB.append("Сегодняшняя дата: [style.colourGood("+ Main.game.getDisplayDate(true)+")]");
 				}
 				dateSB.append("<br/>");
-				dateSB.append("It is currently "+UtilText.generateSingularDeterminer(day)+" [style.colourBlueLight("+day+")].<br/>"
-						+ "You've been in this new world for: [style.colourExcellent("+Main.game.getDayNumber()+" day"+(Main.game.getDayNumber()>1?"s":"")+")]");
+				dateSB.append("Сейчас  "+UtilText.generateSingularDeterminer(day)+" [style.colourBlueLight("+day+")].<br/>Вы находитесь в этом новом мире уже: [style.colourExcellent("+Main.game.getDayNumber()+" день"+(Main.game.getDayNumber()>1?"s":"")+")]");
 				dateSB.append("<br/><i>Нажмите, чтобы переключаться между датой и счётом дней.</i>");
 			}
 			TooltipInformationEventListener el2 = new TooltipInformationEventListener().setInformation("Переключить отображение календаря",
@@ -2255,12 +2253,11 @@ public class MainController implements Initializable {
 				timeSB.append("[style.italicsBad(Учитывая вашу текущую ситуацию, вы потеряли отчёт о том, какое сейчас время...)]");
 			} else {
 				timeSB.append("Текущее время: "+Units.time(Main.game.getDateNow())+" (<span style='color:"+dp.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(dp.getName())+"</span>)<br/>"
-					+ "Sunrise: "+(!dateKnown?"[style.colourMinorBad(??/??/??)] [style.colourYellow("+Units.time(ldt[0]):"[style.colourYellow("+Units.dateTime(ldt[0]))+")]<br/>"
-					+ "Sunset: "+(!dateKnown?"[style.colourMinorBad(??/??/??)] [style.colourOrange("+Units.time(ldt[1]):"[style.colourOrange("+Units.dateTime(ldt[1]))+")]<br/>"
+					+ "Sunrise: "+(!dateKnown?"[style.colourMinorBad(??/??/??)] [style.colourYellow("+Units.time(ldt[0]):"[style.colourYellow("+Units.dateTime(ldt[0]))+")]<br/>Закат: "+(!dateKnown?"[style.colourMinorBad(??/??/??)] [style.colourOrange("+Units.time(ldt[1]):"[style.colourOrange("+Units.dateTime(ldt[1]))+")]<br/>"
 					+ "<i>Нажмите, чтобы переключать отображение времени между 24-часовым и 12-часовым часами.</i>");
 			}
 			TooltipInformationEventListener el2 = new TooltipInformationEventListener().setInformation(
-					(Main.game.isDayTime()?"Day-time":"Night-time"),
+					(Main.game.isDayTime()?"День":"Ночь"),
 					timeSB.toString());
 			addEventListener(documentAttributes, id, "mouseenter", el2, false);
 		}
@@ -2551,7 +2548,7 @@ public class MainController implements Initializable {
 		// Inventory:
 		String id;
 		for (InventorySlot invSlot : InventorySlot.values()) {
-			id = invSlot.toString() + "Slot";
+			id = invSlot.toString() + "Слот";
 			if (!invSlot.isWeapon()) {
 				if (((EventTarget) documentRight.getElementById(id)) != null) {
 					if(concealedSlots.keySet().contains(invSlot)) {
@@ -2715,10 +2712,10 @@ public class MainController implements Initializable {
 						subspecies.addAll(pop.getSpecies().keySet());
 						TooltipInformationEventListener el;
 						if(subspecies.isEmpty()) {
-							el = new TooltipInformationEventListener().setInformation("Races Present", "[style.colourDisabled(Unknown)]");
+							el = new TooltipInformationEventListener().setInformation("Присутствующие расы", "[style.colourDisabled(Неизвестно)]");
 						} else {
 							el = new TooltipInformationEventListener().setInformation(
-									"Races Present",
+									"Присутствующие расы",
 									Util.subspeciesToStringList(subspecies, true)+".",
 									16 + ((subspecies.size()/3)*16));
 						}
@@ -2900,9 +2897,7 @@ public class MainController implements Initializable {
 		content=content.replaceAll("\"", "'");
 		
 		engine.executeScript(
-			"document.open('text/html');"
-			+ "document.write(\""+content+"\");"
-			+"document.close();");
+			"document.open('text/html');document.write(\""+content+"\");document.close();");
 	}
 	
 	public void setMainContent(String content) {
@@ -3106,7 +3101,7 @@ public class MainController implements Initializable {
 					});
 					
 				} else {
-					Main.game.flashMessage(PresetColour.GENERIC_BAD, "Cannot dominate!");
+					Main.game.flashMessage(PresetColour.GENERIC_BAD, "Нельзя подчинить!");
 				}
 			}
 		}
@@ -3192,7 +3187,7 @@ public class MainController implements Initializable {
 					});
 					
 				} else {
-					Main.game.flashMessage(PresetColour.GENERIC_BAD, "Cannot dominate!");
+					Main.game.flashMessage(PresetColour.GENERIC_BAD, "Нельзя подчинить!");
 				}
 			}
 		}

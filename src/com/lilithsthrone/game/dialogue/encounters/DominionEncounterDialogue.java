@@ -25,7 +25,7 @@ public class DominionEncounterDialogue {
 		return Main.game.getPlayer().getLocationPlace().getPlaceType()==PlaceType.DOMINION_CANAL || Main.game.getPlayer().getLocationPlace().getPlaceType()==PlaceType.DOMINION_CANAL_END;
 	}
 	
-	public static final DialogueNode ALLEY_FIND_ITEM = new DialogueNode("Abandoned package", "", true) {
+	public static final DialogueNode ALLEY_FIND_ITEM = new DialogueNode("Заброшенная посылка", "", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 2*60;
@@ -42,7 +42,7 @@ public class DominionEncounterDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Take", "Add the " + AbstractEncounter.getRandomItem().getName() + " to your inventory.", Main.game.getDefaultDialogue(false)){
+				return new Response("Взять", "Добавить  " + AbstractEncounter.getRandomItem().getName() + " в ваш инвентарь.", Main.game.getDefaultDialogue(false)){
 					@Override
 					public void effects() {
 						if(AbstractEncounter.getRandomItem() instanceof AbstractWeapon) {
@@ -58,7 +58,7 @@ public class DominionEncounterDialogue {
 				};
 				
 			} else if (index == 2) {
-				return new Response("Leave", "Leave the " + AbstractEncounter.getRandomItem().getName() + " on the floor.", Main.game.getDefaultDialogue(false));
+				return new Response("Уйти", "Оставить  " + AbstractEncounter.getRandomItem().getName() + " на полу.", Main.game.getDefaultDialogue(false));
 				
 			} else {
 				return null;
@@ -66,7 +66,7 @@ public class DominionEncounterDialogue {
 		}
 	};
 	
-	public static final DialogueNode HARPY_NESTS_FIND_ITEM = new DialogueNode("Dropped item", "", true) {
+	public static final DialogueNode HARPY_NESTS_FIND_ITEM = new DialogueNode("Выпавший предмет", "", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 2*60;
@@ -80,7 +80,7 @@ public class DominionEncounterDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Take", "Add the " + AbstractEncounter.getRandomItem().getName() + " to your inventory.", Main.game.getDefaultDialogue(false)){
+				return new Response("Взять", "Добавить  " + AbstractEncounter.getRandomItem().getName() + " в ваш инвентарь.", Main.game.getDefaultDialogue(false)){
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(Main.game.getPlayer().addItem((AbstractItem) AbstractEncounter.getRandomItem(), true, true));
@@ -88,7 +88,7 @@ public class DominionEncounterDialogue {
 				};
 				
 			} else if (index == 2) {
-				return new Response("Leave", "Leave the " + AbstractEncounter.getRandomItem().getName() + " on the floor.", Main.game.getDefaultDialogue(false));
+				return new Response("Уйти", "Оставить  " + AbstractEncounter.getRandomItem().getName() + " на полу.", Main.game.getDefaultDialogue(false));
 				
 			} else {
 				return null;
@@ -96,7 +96,7 @@ public class DominionEncounterDialogue {
 		}
 	};
 	
-	public static final DialogueNode DOMINION_STREET_FIND_HAPPINESS = new DialogueNode("Finding Happiness", "", true) {
+	public static final DialogueNode DOMINION_STREET_FIND_HAPPINESS = new DialogueNode("В поисках счастья", "", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 5*60;
@@ -108,7 +108,7 @@ public class DominionEncounterDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Continue", "Continue on your way.", Main.game.getDefaultDialogue(false));
+				return new Response("Продолжить", "Продолжить свой путь.", Main.game.getDefaultDialogue(false));
 				
 			} else {
 				return null;
@@ -121,9 +121,9 @@ public class DominionEncounterDialogue {
 		@Override
 		public String getLabel() {
 			if(Main.game.getDateNow().getMonth()==Month.MAY) {
-				return "Mother's Week Gift";
+				return "Еженедельный подарок матери";
 			} else {
-				return "Father's Week Gift";
+				return "Еженедельный подарок отца";
 			}
 		}
 		@Override
@@ -150,7 +150,7 @@ public class DominionEncounterDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Continue", "Continue on your way.", Main.game.getDefaultDialogue(false));
+				return new Response("Продолжить", "Продолжить свой путь.", Main.game.getDefaultDialogue(false));
 				
 			} else {
 				return null;

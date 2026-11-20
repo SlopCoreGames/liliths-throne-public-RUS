@@ -58,7 +58,7 @@ public class WesQuest {
 		workTalkIds = Util.newArrayListOfValues("1", "2", "3", "4", "5");
 	}
 	
-	public static final DialogueNode WES_QUEST_START = new DialogueNode("A Sudden Interruption", "", true) {
+	public static final DialogueNode WES_QUEST_START = new DialogueNode("Внезапное прерывание", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			((Wes)Main.game.getNpc(Wes.class)).applyDisguise();
@@ -75,7 +75,7 @@ public class WesQuest {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Agree", "Agree to meet this mysterious Enforcer outside of the Shopping Arcade's antiques shop.", WES_QUEST_START_END) {
+				return new Response("Согласиться", "Согласиться встретиться с этим таинственным Enforcer у антикварной лавки в Торговом ряду.", WES_QUEST_START_END) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("characters/dominion/wes", "WES_QUEST_AGREE"));
@@ -83,7 +83,7 @@ public class WesQuest {
 				};
 				
 			} else if(index==2) {
-				return new Response("Question", "Ask the mysterious Enforcer why he wants to see you.", WES_QUEST_START_END) {
+				return new Response("Допрос", "Спросить таинственного Enforcer, зачем он хочет тебя видеть.", WES_QUEST_START_END) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("characters/dominion/wes", "WES_QUEST_QUESTION"));
@@ -112,7 +112,7 @@ public class WesQuest {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue", "Continue on your way through Dominion...", Main.game.getPlayer().getLocationPlace().getPlaceType().getDialogue(false));
+				return new Response("Продолжить", "Продолжить свой путь через Dominion...", Main.game.getPlayer().getLocationPlace().getPlaceType().getDialogue(false));
 			}
 			return null;
 		}
@@ -141,7 +141,7 @@ public class WesQuest {
 				
 			} else {
 				if(index==1) {
-					return new Response("Question", "Ask Wes for more details on what he wants you to do.", WES_QUEST_SHOPPING_ARCADE_MEETING_QUESTION);
+					return new Response("Допрос", "Попросить Веса рассказать подробнее о том, что он хочет от тебя.", WES_QUEST_SHOPPING_ARCADE_MEETING_QUESTION);
 				}
 			}
 			return null;
@@ -160,12 +160,11 @@ public class WesQuest {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Agree", "Agree to do as Wes asks and collect evidence of his superior officer's corruption...", WES_QUEST_SHOPPING_ARCADE_MEETING_QUESTION_END);
+				return new Response("Согласиться", "Согласиться сделать так, как просит Вес, и собрать улики порочности его вышестоящего офицера...", WES_QUEST_SHOPPING_ARCADE_MEETING_QUESTION_END);
 				
 			} else if(index==2) {
-				return new Response("Refuse",
-						"Tell Wes that you don't want to get involved in something like this."
-								+ "<br/>[style.italicsMinorGood(You will be able to change your mind and seek out Wes to help him again later.)]",
+				return new Response("Отказаться",
+						"Сказать Весу, что ты не хочешь ввязываться в подобное.<br/>[style.italicsMinorGood(Позже ты сможешь передумать и снова разыскать Веса, чтобы помочь ему.)]",
 								WES_QUEST_SHOPPING_ARCADE_MEETING_FAIL);
 			}
 			return null;
@@ -192,7 +191,7 @@ public class WesQuest {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue", "Continue on your way through the Shopping Arcade...", Main.game.getPlayer().getLocationPlace().getPlaceType().getDialogue(false)) {
+				return new Response("Продолжить", "Продолжить свой путь через Торговый ряд...", Main.game.getPlayer().getLocationPlace().getPlaceType().getDialogue(false)) {
 					@Override
 					public void effects() {
 						Main.game.getDialogueFlags().setFlag(DialogueFlagValue.wesQuestMet, true);
@@ -224,14 +223,14 @@ public class WesQuest {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue", "Continue on your way through the Shopping Arcade...", Main.game.getPlayer().getLocationPlace().getPlaceType().getDialogue(false));
+				return new Response("Продолжить", "Продолжить свой путь через Торговый ряд...", Main.game.getPlayer().getLocationPlace().getPlaceType().getDialogue(false));
 			}
 			return null;
 		}
 	};
 	
 
-	public static final DialogueNode ELLE_SEARCH = new DialogueNode("Finding Elle", "", true) {
+	public static final DialogueNode ELLE_SEARCH = new DialogueNode("В поисках Элль", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			Vector2i playerLoc = Main.game.getPlayer().getLocation();
@@ -253,7 +252,7 @@ public class WesQuest {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Enter cave", "Enter the cave and take a look around...", ELLE_SEARCH_CAVE);
+				return new Response("Войти в пещеру", "Войти в пещеру и осмотреться...", ELLE_SEARCH_CAVE);
 			}
 			return null;
 		}
@@ -275,7 +274,7 @@ public class WesQuest {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Start recording", "Remain hidden behind the crates and start recording Elle's dealings...", ELLE_SEARCH_CAVE_RECORDING);
+				return new Response("Начать запись", "Остаться незамеченным за ящиками и начать записывать дела Элль...", ELLE_SEARCH_CAVE_RECORDING);
 			}
 			return null;
 		}
@@ -297,7 +296,7 @@ public class WesQuest {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Leave", "Leave your hiding place and set out into the Bat Caverns...", ELLE_SEARCH_CAVE_LEAVE);
+				return new Response("Уйти", "Покинуть укрытие и отправиться в Пещеры Летучих Мышей...", ELLE_SEARCH_CAVE_LEAVE);
 			}
 			return null;
 		}
@@ -380,7 +379,7 @@ public class WesQuest {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Explain", "Reveal to Elle everything that Wes told you and show her the evidence on the arcane recorder.", APPROACH_ELLE_EXPLAIN);
+				return new Response("Объяснить", "Рассказать Элль всё, что поведал вам Вес, и показать ей доказательства на арканном регистраторе.", APPROACH_ELLE_EXPLAIN);
 			}
 			return null;
 		}
@@ -407,13 +406,13 @@ public class WesQuest {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue", "Continue on your way...", Main.game.getPlayer().getLocationPlace().getPlaceType().getDialogue(false));
+				return new Response("Продолжить", "Продолжить путь...", Main.game.getPlayer().getLocationPlace().getPlaceType().getDialogue(false));
 			}
 			return null;
 		}
 	};
 	
-	public static final DialogueNode INTRO_HQ_WES = new DialogueNode("Meeting Wes", "", true) {
+	public static final DialogueNode INTRO_HQ_WES = new DialogueNode("Встреча с Весом", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			Main.game.getPlayer().setLocation(WorldType.ENFORCER_HQ, PlaceType.ENFORCER_HQ_WAITING_AREA);
@@ -429,13 +428,13 @@ public class WesQuest {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Wait", "Wait for Wes to show up.", INTRO_HQ_WES_ARRIVE);
+				return new Response("Ждать", "Дождаться появления Веса.", INTRO_HQ_WES_ARRIVE);
 			}
 			return null;
 		}
 	};
 
-	public static final DialogueNode INTRO_HQ_WES_ARRIVE = new DialogueNode("Meeting Wes", "", true, true) {
+	public static final DialogueNode INTRO_HQ_WES_ARRIVE = new DialogueNode("Встреча с Весом", "", true, true) {
 		@Override
 		public void applyPreParsingEffects() {
 			Main.game.getNpc(Wes.class).addSlave(Main.game.getNpc(Elle.class));
@@ -456,13 +455,13 @@ public class WesQuest {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Follow", "Follow Wes into the Enforcer HQ.", INTRO_HQ_WES_OFFICE);
+				return new Response("Следовать", "Последовать за Весом в штаб-квартиру Enforcer.", INTRO_HQ_WES_OFFICE);
 			}
 			return null;
 		}
 	};
 	
-	public static final DialogueNode INTRO_HQ_WES_OFFICE = new DialogueNode("Meeting Wes", "", true, true) {
+	public static final DialogueNode INTRO_HQ_WES_OFFICE = new DialogueNode("Встреча с Весом", "", true, true) {
 		@Override
 		public void applyPreParsingEffects() {
 			Vector2i playerLoc = Main.game.getPlayer().getLocation();
@@ -488,13 +487,13 @@ public class WesQuest {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Requisitions", "Head over to the requisitions area to see what Wes can offer you.", INTRO_HQ_WES_REQUISITIONS);
+				return new Response("Заявки", "Отправляйтесь в зону заявок, чтобы узнать, что Уэс может вам предложить.", INTRO_HQ_WES_REQUISITIONS);
 			}
 			return null;
 		}
 	};
 
-	public static final DialogueNode INTRO_HQ_WES_REQUISITIONS = new DialogueNode("Meeting Wes", "", true, true) {
+	public static final DialogueNode INTRO_HQ_WES_REQUISITIONS = new DialogueNode("Встреча с Весом", "", true, true) {
 		@Override
 		public void applyPreParsingEffects() {
 			Main.game.getPlayer().setLocation(WorldType.ENFORCER_HQ, PlaceType.ENFORCER_HQ_REQUISITIONS, false);
@@ -515,7 +514,7 @@ public class WesQuest {
 		}
 	};
 	
-	public static final DialogueNode INTRO_HQ_ELLE = new DialogueNode("Meeting Elle", "", true) {
+	public static final DialogueNode INTRO_HQ_ELLE = new DialogueNode("Встреча с Элль", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			Main.game.getPlayer().setLocation(WorldType.ENFORCER_HQ, PlaceType.ENFORCER_HQ_WAITING_AREA);
@@ -531,13 +530,13 @@ public class WesQuest {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Wait", "Wait for Elle to show up.", INTRO_HQ_ELLE_ARRIVE);
+				return new Response("Ждать", "Дождитесь появления Элль.", INTRO_HQ_ELLE_ARRIVE);
 			}
 			return null;
 		}
 	};
 
-	public static final DialogueNode INTRO_HQ_ELLE_ARRIVE = new DialogueNode("Meeting Elle", "", true, true) {
+	public static final DialogueNode INTRO_HQ_ELLE_ARRIVE = new DialogueNode("Встреча с Элль", "", true, true) {
 		@Override
 		public void applyPreParsingEffects() {
 			Main.game.getNpc(Elle.class).addSlave(Main.game.getNpc(Wes.class));
@@ -563,13 +562,13 @@ public class WesQuest {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Follow", "Follow Elle into the Enforcer HQ.", INTRO_HQ_ELLE_OFFICE);
+				return new Response("Следовать", "Следуйте за Элль в штаб-квартиру Enforcer.", INTRO_HQ_ELLE_OFFICE);
 			}
 			return null;
 		}
 	};
 
-	public static final DialogueNode INTRO_HQ_ELLE_OFFICE = new DialogueNode("Meeting Elle", "", true, true) {
+	public static final DialogueNode INTRO_HQ_ELLE_OFFICE = new DialogueNode("Встреча с Элль", "", true, true) {
 		@Override
 		public void applyPreParsingEffects() {
 			Vector2i playerLoc = Main.game.getPlayer().getLocation();
@@ -595,13 +594,13 @@ public class WesQuest {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Requisitions", "Head over to the requisitions area to see what Elle can offer you.", INTRO_HQ_ELLE_REQUISITIONS);
+				return new Response("Заявки", "Отправляйтесь в зону заявок, чтобы узнать, что Элль может вам предложить.", INTRO_HQ_ELLE_REQUISITIONS);
 			}
 			return null;
 		}
 	};
 
-	public static final DialogueNode INTRO_HQ_ELLE_REQUISITIONS = new DialogueNode("Meeting Elle", "", true, true) {
+	public static final DialogueNode INTRO_HQ_ELLE_REQUISITIONS = new DialogueNode("Встреча с Элль", "", true, true) {
 		@Override
 		public void applyPreParsingEffects() {
 			Main.game.getPlayer().setLocation(WorldType.ENFORCER_HQ, PlaceType.ENFORCER_HQ_REQUISITIONS, false);
@@ -641,7 +640,7 @@ public class WesQuest {
 			
 			if(Main.game.getPlayer().hasQuestInLine(QuestLine.SIDE_WES, Quest.WES_3_ELLE)) {
 				if(index==0) {
-					return new Response("Leave", "Tell Elle that you've got to be going now and head back out into the corridor.", PlaceType.ENFORCER_HQ_CELLS_CORRIDOR.getDialogue(false)) {
+					return new Response("Уйти", "Скажите Элль, что вам пора идти, и направляйтесь обратно в коридор.", PlaceType.ENFORCER_HQ_CELLS_CORRIDOR.getDialogue(false)) {
 						@Override
 						public void effects() {
 							Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("characters/dominion/wes", "REQUISITIONS_INTERACTION_LEAVE"));
@@ -650,16 +649,16 @@ public class WesQuest {
 					};
 					
 				} else if(index==1) {
-					return new ResponseTrade("Trade", "Buy some gear from Elle.", Main.game.getNpc(Elle.class));
+					return new ResponseTrade("Торговать", "Купить снаряжение у Элль.", Main.game.getNpc(Elle.class));
 					
 				} else if(index==2) {
 					if(Main.game.getCurrentDialogueNode()==REQUISITIONS_BACKGROUND) {
-						return new Response("Background", "You're already asking Elle about herself!", null);
+						return new Response("Прошлое", "Вы уже расспрашиваете Элль о ней самой!", null);
 					}
 					if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.wesQuestTalked)) {
-						return new Response("Background", "You've already spent some time asking Elle about herself...<br/>[style.italicsMinorBad(You can only do this once per day.)]", null);
+						return new Response("Прошлое", "Вы уже потратили время, расспрашивая Элль о ней самой...<br/>[style.italicsMinorBad(Это можно сделать лишь раз в день.)]", null);
 					}
-					return new Response("Background", "Ask Elle about herself.<br/>[style.italicsMinorGood(You can do this once per day.)]", REQUISITIONS_BACKGROUND) {
+					return new Response("Прошлое", "Расспросить Элль о ней самой.<br/>[style.italicsMinorGood(Это можно сделать раз в день.)]", REQUISITIONS_BACKGROUND) {
 						@Override
 						public void effects() {
 							Main.game.getDialogueFlags().setFlag(DialogueFlagValue.wesQuestTalked, true);
@@ -669,12 +668,12 @@ public class WesQuest {
 					
 				} else if(index==3) {
 					if(Main.game.getCurrentDialogueNode()==REQUISITIONS_WORK) {
-						return new Response("Work", "You're already asking Elle about how her work is going!", null);
+						return new Response("Работать", "Вы уже спрашивали Элль о том, как идут её дела!", null);
 					}
 					if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.wesQuestTalkedAlt)) {
-						return new Response("Work", "You've already spent some time asking Elle about how her work is going...<br/>[style.italicsMinorBad(You can only do this once per day.)]", null);
+						return new Response("Работать", "Вы уже потратили время, расспрашивая Элль о том, как идут её дела...<br/>[style.italicsMinorBad(Это можно сделать лишь раз в день.)]", null);
 					}
-					return new Response("Work", "Ask Elle about how her work is going.<br/>[style.italicsMinorGood(You can do this once per day.)]", REQUISITIONS_WORK) {
+					return new Response("Работать", "Расспросить Элль о том, как идут её дела.<br/>[style.italicsMinorGood(Это можно сделать раз в день.)]", REQUISITIONS_WORK) {
 						@Override
 						public void effects() {
 							Main.game.getDialogueFlags().setFlag(DialogueFlagValue.wesQuestTalkedAlt, true);
@@ -684,9 +683,9 @@ public class WesQuest {
 					
 				} else if(index==4) {
 					if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.wesQuestFlirted)) {
-						return new Response("Flirt", "You've already spent some time flirting with Elle today...<br/>[style.italicsMinorBad(You can only do this once per day.)]", null);
+						return new Response("Флиртовать", "Вы уже успели пофлиртовать с Элль сегодня...<br/>[style.italicsMinorBad(Это можно сделать лишь раз в день.)]", null);
 					}
-					return new Response("Flirt", "Flirt with Elle.<br/>[style.italicsMinorGood(You can do this once per day.)]", REQUISITIONS_FLIRT_ELLE) {
+					return new Response("Флиртовать", "Пофлиртовать с Элль.<br/>[style.italicsMinorGood(Это можно сделать раз в день.)]", REQUISITIONS_FLIRT_ELLE) {
 						@Override
 						public void effects() {
 							Main.game.getDialogueFlags().setFlag(DialogueFlagValue.wesQuestFlirted, true);
@@ -697,7 +696,7 @@ public class WesQuest {
 				
 			} else {
 				if(index==0) {
-					return new Response("Leave", "Tell Wes that you've got to be going now and head back out into the corridor.", PlaceType.ENFORCER_HQ_CELLS_CORRIDOR.getDialogue(false)) {
+					return new Response("Уйти", "Скажите Уэсу, что вам пора идти, и направляйтесь обратно в коридор.", PlaceType.ENFORCER_HQ_CELLS_CORRIDOR.getDialogue(false)) {
 						@Override
 						public void effects() {
 							Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("characters/dominion/wes", "REQUISITIONS_INTERACTION_LEAVE"));
@@ -709,16 +708,16 @@ public class WesQuest {
 					};
 					
 				} else if(index==1) {
-					return new ResponseTrade("Trade", "Buy some gear from Wes.", Main.game.getNpc(Wes.class));
+					return new ResponseTrade("Торговать", "Купить снаряжение у Уэса.", Main.game.getNpc(Wes.class));
 					
 				} else if(index==2) {
 					if(Main.game.getCurrentDialogueNode()==REQUISITIONS_BACKGROUND) {
-						return new Response("Background", "You're already asking Wes about himself!", null);
+						return new Response("Прошлое", "Вы уже расспрашиваете Уэса о нем самом!", null);
 					}
 					if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.wesQuestTalked)) {
-						return new Response("Background", "You've already spent some time asking Wes about himself...<br/>[style.italicsMinorBad(You can only do this once per day.)]", null);
+						return new Response("Прошлое", "Вы уже потратили время, расспрашивая Уэса о нем самом...<br/>[style.italicsMinorBad(Это можно сделать лишь раз в день.)]", null);
 					}
-					return new Response("Background", "Ask Wes about himself.<br/>[style.italicsMinorGood(You can do this once per day.)]", REQUISITIONS_BACKGROUND) {
+					return new Response("Прошлое", "Расспросить Уэса о нем самом.<br/>[style.italicsMinorGood(Это можно сделать раз в день.)]", REQUISITIONS_BACKGROUND) {
 						@Override
 						public void effects() {
 							Main.game.getDialogueFlags().setFlag(DialogueFlagValue.wesQuestTalked, true);
@@ -731,12 +730,12 @@ public class WesQuest {
 					
 				} else if(index==3) {
 					if(Main.game.getCurrentDialogueNode()==REQUISITIONS_WORK) {
-						return new Response("Work", "You're already asking Wes about how his work is going!", null);
+						return new Response("Работать", "Вы уже расспрашивали Уэса о том, как идут его дела!", null);
 					}
 					if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.wesQuestTalkedAlt)) {
-						return new Response("Work", "You've already spent some time asking Wes about how his work is going...<br/>[style.italicsMinorBad(You can only do this once per day.)]", null);
+						return new Response("Работать", "Вы уже потратили время, расспрашивая Уэса о том, как идут его дела...<br/>[style.italicsMinorBad(Это можно сделать лишь раз в день.)]", null);
 					}
-					return new Response("Work", "Ask Wes about how his work is going.<br/>[style.italicsMinorGood(You can do this once per day.)]", REQUISITIONS_WORK) {
+					return new Response("Работать", "Расспросить Уэса о том, как идут его дела.<br/>[style.italicsMinorGood(Это можно сделать раз в день.)]", REQUISITIONS_WORK) {
 						@Override
 						public void effects() {
 							Main.game.getDialogueFlags().setFlag(DialogueFlagValue.wesQuestTalkedAlt, true);
@@ -749,12 +748,12 @@ public class WesQuest {
 					
 				} else if(index==4) {
 					if(!Main.game.getNpc(Wes.class).isAttractedTo(Main.game.getPlayer())) {
-						return new Response("Flirt", "As Wes is not attracted to you, you can tell that trying to flirt with him wouldn't end well...", null);
+						return new Response("Флиртовать", "Поскольку Уэс не испытывает к вам влечения, становится ясно, что попытки флиртовать с ним не закончатся ничем хорошим...", null);
 					}
 					if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.wesQuestFlirted)) {
-						return new Response("Flirt", "You've already spent some time flirting with Wes today...<br/>[style.italicsMinorBad(You can only do this once per day.)]", null);
+						return new Response("Флиртовать", "Вы уже потратили время на флирт с Уэсом сегодня...<br/>[style.italicsMinorBad(Это можно сделать лишь раз в день.)]", null);
 					}
-					return new Response("Flirt", "Flirt with Wes.<br/>[style.italicsMinorGood(You can do this once per day.)]", REQUISITIONS_FLIRT_WES) {
+					return new Response("Флиртовать", "Флиртовать с Уэсом.<br/>[style.italicsMinorGood(Вы можете сделать это один раз в день.)]", REQUISITIONS_FLIRT_WES) {
 						@Override
 						public void effects() {
 							Main.game.getDialogueFlags().setFlag(DialogueFlagValue.wesQuestFlirted, true);
@@ -767,9 +766,9 @@ public class WesQuest {
 					
 				} else if(index==5) {
 					if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.wesQuestSex)) {
-						return new Response("Elle", "You've already spent some time with Elle today...<br/>[style.italicsMinorBad(You can only do this once per day.)]", null);
+						return new Response("Элль", "Вы уже провели время с Элль сегодня...<br/>[style.italicsMinorBad(Вы можете сделать это только один раз в день.)]", null);
 					}
-					return new Response("Elle", "Ask Wes if you can spend some time with Elle.<br/>[style.italicsMinorGood(You can do this once per day.)]", WES_ELLE_OFFICE) {
+					return new Response("Элль", "Спросить Уэса, можно ли вам провести время с Элль.<br/>[style.italicsMinorGood(Вы можете сделать это один раз в день.)]", WES_ELLE_OFFICE) {
 						@Override
 						public boolean isSexHighlight() {
 							return true;
@@ -907,7 +906,7 @@ public class WesQuest {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Office tour", "Tell Elle that you'd love to take a 'tour' around her office...", REQUISITIONS_FLIRT_ELLE_OFFICE) {
+				return new Response("Экскурсия по офису", "Сказать Элль, что вы бы с удовольствием устроили «экскурсию» по её офису...", REQUISITIONS_FLIRT_ELLE_OFFICE) {
 					@Override
 					public boolean isSexHighlight() {
 						return true;
@@ -920,7 +919,7 @@ public class WesQuest {
 				};
 				
 			} if(index==2) {
-				return new Response("Decline", "Tell Elle that you don't have time to take a tour around her office...", REQUISITIONS_FLIRT_ELLE_DECLINED) {
+				return new Response("Отклонить", "Сказать Элль, что у вас нет времени на экскурсию по её офису...", REQUISITIONS_FLIRT_ELLE_DECLINED) {
 					@Override
 					public void effects() {
 						Main.game.getTextEndStringBuilder().append(Main.game.getNpc(Elle.class).incrementAffection(Main.game.getPlayer(), -5));
@@ -959,7 +958,7 @@ public class WesQuest {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new ResponseSex("Take charge", "Dominantly have sex with Elle.",
+				return new ResponseSex("Взять инициативу в свои руки", "Заняться с Элль доминирующим сексом.",
 						true, true,
 						new SMGeneric(
 								Util.newArrayListOfValues(Main.game.getPlayer()),
@@ -975,7 +974,7 @@ public class WesQuest {
 						UtilText.parseFromXMLFile("characters/dominion/wes", "REQUISITIONS_FLIRT_ELLE_OFFICE_SEX_START_AS_DOM"));
 				
 			} else if(index==2) {
-				return new ResponseSex("Submit", "Let Elle take charge and be dominantly fucked by her.",
+				return new ResponseSex("Подчиниться", "Позволить Элль взять всё в свои руки и дать ей доминировать над собой.",
 						true, true,
 						new SMGeneric(
 								Util.newArrayListOfValues(Main.game.getNpc(Elle.class)),
@@ -1011,7 +1010,7 @@ public class WesQuest {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue", "Step out into the corridor and continue on your way...", EnforcerHQDialogue.CORRIDOR_PLAIN) {
+				return new Response("Продолжить", "Выйти в коридор и продолжить свой путь...", EnforcerHQDialogue.CORRIDOR_PLAIN) {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setNearestLocation(WorldType.ENFORCER_HQ, PlaceType.ENFORCER_HQ_CELLS_CORRIDOR, false);
@@ -1040,7 +1039,7 @@ public class WesQuest {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Office tour", "Suggest to Wes that he give you a 'tour' around his office...", REQUISITIONS_FLIRT_WES_OFFICE) {
+				return new Response("Экскурсия по офису", "Предложить Уэсу устроить вам «экскурсию» по его кабинету...", REQUISITIONS_FLIRT_WES_OFFICE) {
 					@Override
 					public boolean isSexHighlight() {
 						return true;
@@ -1055,11 +1054,11 @@ public class WesQuest {
 			} else if(index==2) {
 				int progress = (int) Main.game.getDialogueFlags().getSavedLong("wes_background_progress");
 				if(progress<5) {
-					return new Response("Group tour",
-							"You need to get to know Wes better before he'd feel comfortable bringing Elle along for a 'tour' around his office...",
+					return new Response("Групповая экскурсия",
+							"Вам нужно получше узнать Уэса, прежде чем он решится взять с собой Элль для «экскурсии» по его кабинету...",
 							null);
 				}
-				return new Response("Group tour", "Suggest to Wes that he bring Elle along for a 'tour' around his office...", REQUISITIONS_FLIRT_WES_OFFICE_THREESOME) {
+				return new Response("Групповая экскурсия", "Предложить Уэсу взять Элль с собой на «экскурсию» по его кабинету...", REQUISITIONS_FLIRT_WES_OFFICE_THREESOME) {
 					@Override
 					public boolean isSexHighlight() {
 						return true;
@@ -1073,7 +1072,7 @@ public class WesQuest {
 				};
 				
 			} else if(index==3) {
-				return new Response("Finish", "Having had your fun with Wes, decide not to take things any further with him...", REQUISITIONS_FLIRT_WES_FINISH);
+				return new Response("Закончить", "Насладившись Уэсом, решить не заходить с ним слишком далеко...", REQUISITIONS_FLIRT_WES_FINISH);
 				
 			}
 			return null;
@@ -1107,7 +1106,7 @@ public class WesQuest {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new ResponseSex("Take charge", "Dominantly have sex with Wes.",
+				return new ResponseSex("Взять инициативу в свои руки", "Доминировать во время секса с Уэсом.",
 						true, true,
 						new SMGeneric(
 								Util.newArrayListOfValues(Main.game.getPlayer()),
@@ -1118,7 +1117,7 @@ public class WesQuest {
 						UtilText.parseFromXMLFile("characters/dominion/wes", "REQUISITIONS_FLIRT_WES_OFFICE_SEX_START_AS_DOM"));
 				
 			} else if(index==2) {
-				return new ResponseSex("Submit", "Let Wes take charge and be dominantly fucked by him.",
+				return new ResponseSex("Подчиниться", "Позволить Уэсу взять всё в свои руки и подчиниться ему в сексе.",
 						true, true,
 						new SMGeneric(
 								Util.newArrayListOfValues(Main.game.getNpc(Wes.class)),
@@ -1149,7 +1148,7 @@ public class WesQuest {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue", "Step out into the corridor and continue on your way...", EnforcerHQDialogue.CORRIDOR_PLAIN) {
+				return new Response("Продолжить", "Выйти в коридор и продолжить свой путь...", EnforcerHQDialogue.CORRIDOR_PLAIN) {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setNearestLocation(WorldType.ENFORCER_HQ, PlaceType.ENFORCER_HQ_CELLS_CORRIDOR, false);
@@ -1172,7 +1171,7 @@ public class WesQuest {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new ResponseSex("Take charge", "Dominantly have sex with Wes and Elle.",
+				return new ResponseSex("Взять инициативу в свои руки", "Доминировать во время секса с Уэсом и Элль.",
 						true, true,
 						new SMGeneric(
 								Util.newArrayListOfValues(
@@ -1191,7 +1190,7 @@ public class WesQuest {
 						UtilText.parseFromXMLFile("characters/dominion/wes", "REQUISITIONS_FLIRT_WES_OFFICE_THREESOME_AS_DOM"));
 				
 			} if(index==2) {
-				return new ResponseSex("Dominate Elle", "Join Wes in dominantly fucking Elle.",
+				return new ResponseSex("Доминировать над Элль", "Присоединиться к Весу, чтобы доминантно трахать Элль.",
 						true, true,
 						new SMGeneric(
 								Util.newArrayListOfValues(
@@ -1210,7 +1209,7 @@ public class WesQuest {
 						UtilText.parseFromXMLFile("characters/dominion/wes", "REQUISITIONS_FLIRT_WES_OFFICE_THREESOME_AS_JOINT_DOM"));
 				
 			} else if(index==3) {
-				return new ResponseSex("Join Elle", "Let Wes take charge and join Elle in being dominantly fucked by him.",
+				return new ResponseSex("Присоединиться к Элль", "Позволить Весу взять инициативу и присоединиться к Элль, чтобы он доминантно трахал вас обоих.",
 						true, true,
 						new SMAllFours(
 								Util.newHashMapOfValues(
@@ -1229,7 +1228,7 @@ public class WesQuest {
 						UtilText.parseFromXMLFile("characters/dominion/wes", "REQUISITIONS_FLIRT_WES_OFFICE_THREESOME_AS_JOINT_SUB"));
 				
 			} else if(index==4) {
-				return new ResponseSex("Submit", "Let Elle and Wes take charge and be dominantly fucked by them.",
+				return new ResponseSex("Подчиниться", "Позволить Элль и Весу взять инициативу и доминантно трахать вас обоих.",
 						true, true,
 						Main.game.getPlayer().isTaur()
 							?new SMAllFours(
@@ -1255,7 +1254,7 @@ public class WesQuest {
 						UtilText.parseFromXMLFile("characters/dominion/wes", "REQUISITIONS_FLIRT_WES_OFFICE_THREESOME_AS_SUB"));
 				
 			} else if(index==5) {
-				return new ResponseSex("Elle's revenge", "Let Elle take charge and join Wes in being dominantly fucked by her.",
+				return new ResponseSex("Месть Элль", "Позволить Элль взять инициативу и присоединиться к Весу, чтобы она доминантно трахала вас обоих.",
 						true, true,
 						new SMLyingDown(
 								Util.newHashMapOfValues(
@@ -1296,7 +1295,7 @@ public class WesQuest {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue", "Step out into the corridor and continue on your way...", EnforcerHQDialogue.CORRIDOR_PLAIN) {
+				return new Response("Продолжить", "Выйти в коридор и продолжить свой путь...", EnforcerHQDialogue.CORRIDOR_PLAIN) {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setNearestLocation(WorldType.ENFORCER_HQ, PlaceType.ENFORCER_HQ_CELLS_CORRIDOR, false);
@@ -1319,7 +1318,7 @@ public class WesQuest {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new ResponseSex("Take charge", "Dominantly have sex with Elle.",
+				return new ResponseSex("Взять инициативу в свои руки", "Заняться с Элль доминирующим сексом.",
 						true, true,
 						new SMGeneric(
 								Util.newArrayListOfValues(Main.game.getPlayer()),
@@ -1335,7 +1334,7 @@ public class WesQuest {
 						UtilText.parseFromXMLFile("characters/dominion/wes", "WES_ELLE_OFFICE_START_AS_DOM"));
 				
 			} else if(index==2) {
-				return new ResponseSex("Submit", "Let Elle take charge and be dominantly fucked by her.",
+				return new ResponseSex("Подчиниться", "Позволить Элль взять всё в свои руки и дать ей доминировать над собой.",
 						true, true,
 						new SMGeneric(
 								Util.newArrayListOfValues(Main.game.getNpc(Elle.class)),
@@ -1371,7 +1370,7 @@ public class WesQuest {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue", "Step out into the corridor and continue on your way...", EnforcerHQDialogue.CORRIDOR_PLAIN) {
+				return new Response("Продолжить", "Выйти в коридор и продолжить свой путь...", EnforcerHQDialogue.CORRIDOR_PLAIN) {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setNearestLocation(WorldType.ENFORCER_HQ, PlaceType.ENFORCER_HQ_CELLS_CORRIDOR, false);

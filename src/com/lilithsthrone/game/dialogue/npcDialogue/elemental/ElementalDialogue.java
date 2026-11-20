@@ -63,9 +63,9 @@ public class ElementalDialogue {
 		@Override
 		public String getResponseTabTitle(int index) {
 			if(index==0) {
-				return "Interactions";
+				return "Взаимодействие";
 			} else if(index==1) {
-				return UtilText.parse("[style.colourCompanion(Manage)]");
+				return UtilText.parse("[style.colourCompanion(Управление)]");
 			}
 			return null;
 		}
@@ -74,40 +74,40 @@ public class ElementalDialogue {
 			if(responseTab==0) { // Interactions:
 				if(index==1) {
 					if(!getElemental().isActive()) {
-						return new Response("Inspect", "You need to have [el.name] take on [el.her] active form in order to inspect [el.herHim].", null);
+						return new Response("Осмотреть", "Чтобы осмотреть [el.herHim], вам нужно, чтобы [el.name] приняла [el.her] активную форму.", null);
 					}
-					return new Response("Inspect", "Take a good look at [el.name].", ELEMENTAL_INSPECT);
+					return new Response("Осмотреть", "Внимательно осмотрите [el.name].", ELEMENTAL_INSPECT);
 					
 				} else if(index==2) {
-					return new Response("Talk", "Talk to [el.name] for a while.", ELEMENTAL_TALK);
+					return new Response("Поговорить", "Поговорите с [el.name] какое-то время.", ELEMENTAL_TALK);
 					
 				} else if(index==3) {
 					if(getElemental().isActive()) {
-						return new Response("Pet", "[el.Name] needs to be in [el.her] passive form in order to pet [el.herHim]...", null);
+						return new Response("Питомец", "Чтобы погладить [el.herHim], [el.Name] должна находиться в [el.her] пассивной форме...", null);
 					}
-					return new Response("Pet", "Give [el.name] a good petting.", ELEMENTAL_PETTING);
+					return new Response("Питомец", "Хорошенько погладьте [el.name].", ELEMENTAL_PETTING);
 					
 				}
 				// index==5 is transform toggle defined below
 				if(index==6) {
 					if(!Main.game.getPlayer().getSexAvailabilityBasedOnLocation().getKey()) {
-						return new Response("Dominant sex", Main.game.getPlayer().getSexAvailabilityBasedOnLocation().getValue(), null);
+						return new Response("Доминирующий секс", Main.game.getPlayer().getSexAvailabilityBasedOnLocation().getValue(), null);
 						
 					} else if(Main.game.getPlayerCell().getPlace().isPopulated() && !Main.game.getPlayer().hasFetish(Fetish.FETISH_EXHIBITIONIST)) {
-						return new Response("Dominant sex",
-								"As you do not have the [style.colourFetish("+Fetish.FETISH_EXHIBITIONIST.getName(Main.game.getPlayer())+" fetish)], you are not comfortable with the idea of having sex with [el.name] in a place where people could see you!",
+						return new Response("Доминирующий секс",
+								"Так как у вас нет [style.colourFetish(\""+Fetish.FETISH_EXHIBITIONIST.getName(Main.game.getPlayer())+" фетиша)], мысль о сексе с [el.name] в месте, где вас могут увидеть, кажется вам неуютной!",
 								null);
 						
 					} else if(!getElemental().isActive()) {
-						return new Response("Dominant sex", "You need to have [el.name] take on [el.her] active form in order to have sex with [el.herHim].", null);
+						return new Response("Доминирующий секс", "Чтобы заняться сексом с [el.herHim], вам нужно, чтобы [el.name] приняла [el.her] активную форму.", null);
 						
 					} else if(getElemental().isSummonerServant() && !getElemental().hasFetish(Fetish.FETISH_SUBMISSIVE)) {
-						return new Response("Dominant sex",
-								"As you have sworn subservience to the school of [el.school], and [el.name] does not have the '"+Fetish.FETISH_SUBMISSIVE.getName(getElemental())+"' fetish, [el.name] is not going to let you dominantly fuck [el.herHim]...",
+						return new Response("Доминирующий секс",
+								"Поскольку вы поклялись в верности школе [el.school], а у [el.name] нет фетиша \""+Fetish.FETISH_SUBMISSIVE.getName(getElemental())+"\", [el.name] не позволит вам доминантно трахать [el.herHim]...",
 								null);
 					}
-					return new ResponseSex("Dominant sex",
-							"Have dominant sex with [el.name].",
+					return new ResponseSex("Доминирующий секс",
+							"Заняться [el.name] в доминантной позиции.",
 							true, true,
 							new SMStanding(
 									Util.newHashMapOfValues(new Value<>(Main.game.getPlayer(), SexSlotStanding.STANDING_DOMINANT)),
@@ -123,18 +123,18 @@ public class ElementalDialogue {
 					
 				} else if(index==7) {
 					if(!Main.game.getPlayer().getSexAvailabilityBasedOnLocation().getKey()) {
-						return new Response("Submissive sex", Main.game.getPlayer().getSexAvailabilityBasedOnLocation().getValue(), null);
+						return new Response("Субмиссивный секс", Main.game.getPlayer().getSexAvailabilityBasedOnLocation().getValue(), null);
 						
 					} else if(Main.game.getPlayerCell().getPlace().isPopulated() && !Main.game.getPlayer().hasFetish(Fetish.FETISH_EXHIBITIONIST)) {
-						return new Response("Submissive sex",
-								"As you do not have the [style.colourFetish("+Fetish.FETISH_EXHIBITIONIST.getName(Main.game.getPlayer())+" fetish)], you are not comfortable with the idea of having sex with [el.name] in a place where people could see you!",
+						return new Response("Субмиссивный секс",
+								"Так как у вас нет [style.colourFetish(\""+Fetish.FETISH_EXHIBITIONIST.getName(Main.game.getPlayer())+" фетиша)], мысль о сексе с [el.name] в месте, где вас могут увидеть, кажется вам неуютной!",
 								null);
 						
 					} else if(!getElemental().isActive()) {
-						return new Response("Submissive sex", "You need to have [el.name] take on [el.her] active form in order to have sex with [el.herHim].", null);
+						return new Response("Субмиссивный секс", "Чтобы заняться сексом с [el.herHim], вам нужно, чтобы [el.name] приняла [el.her] активную форму.", null);
 					}
-					return new ResponseSex("Submissive sex",
-							"Let [el.name] take charge and have submissive sex with [el.herHim].",
+					return new ResponseSex("Субмиссивный секс",
+							"Позволить [el.name] взять инициативу и заняться сексом с [el.herHim] в субмиссивной позиции.",
 							true, true,
 							new SMStanding(
 									Util.newHashMapOfValues(new Value<>(getElemental(), SexSlotStanding.STANDING_DOMINANT)),
@@ -149,16 +149,16 @@ public class ElementalDialogue {
 			} else if(responseTab==1) { // Management:
 				if(index==1) {
 					if(getElemental().isActive()) {
-						return new Response("Passive transform", "You need to have [el.name] take on [el.her] passive form in order for [el.herHim] to change it to something else...", null);
+						return new Response("Пассивная трансформация", "Нужно, чтобы [el.name] приняла [el.her] пассивную форму, тогда [el.herHim] сможет изменить её на что-то другое...", null);
 					}
-					return new Response("Passive transform", "Ask [el.name] about [el.her] passive form and whether [el.she] can change it to something else...", ELEMENTAL_PASSIVE_FORM);
+					return new Response("Пассивная трансформация", "Спросить [el.name] о пассивной форме [el.her] и о том, сможет ли [el.she] изменить её на что-то другое...", ELEMENTAL_PASSIVE_FORM);
 					
 				} else if(index==2) {
 					if(!getElemental().isActive()) {
-						return new Response("Active transform", "You need to have [el.name] take on [el.her] active form in order for [el.herHim] to change it to something else...", null);
+						return new Response("Активная трансформация", "Нужно, чтобы [el.name] приняла [el.her] активную форму, тогда [el.herHim] сможет изменить её на что-то другое...", null);
 					}
-					return new Response("Active transform",
-							"Get [el.name] to transform [el.herself] into a different form...",
+					return new Response("Активная трансформация",
+							"Заставить [el.name] превратить [el.herself] в другую форму...",
 							BodyChanging.BODY_CHANGING_CORE){
 						@Override
 						public void effects() {
@@ -168,15 +168,15 @@ public class ElementalDialogue {
 					};
 					
 				} else if(index==3) {
-					return new Response("Perks", "Assign [el.namePos] perk points.", ELEMENTAL_PERKS);
+					return new Response("Перки", "Назначить [el.namePos] очков перков.", ELEMENTAL_PERKS);
 					
 				} else if(index==4) {
-					return new Response("Fetishes", "Use your intimate psychic connection with [el.name] to alter [el.her] fetishes based on which fetishes you have.", ELEMENTAL_FETISHES);
+					return new Response("Фетиши", "Используйте свою интимную психическую связь с [el.name], чтобы изменять фетиши [el.her] в зависимости от ваших собственных фетишей.", ELEMENTAL_FETISHES);
 					
 				}
 				// index==5 is transform toggle defined below
 				if(index==6) {
-					return new Response("Combat moves", "Adjust the moves [el.name] can perform in combat.", CombatMovesSetup.COMBAT_MOVES_CORE) {
+					return new Response("Боевые приемы", "Настроить приемы, которые [el.name] может выполнять в бою.", CombatMovesSetup.COMBAT_MOVES_CORE) {
 						@Override
 						public void effects() {
 							CombatMovesSetup.setTarget(getElemental(), ELEMENTAL_START);
@@ -185,9 +185,9 @@ public class ElementalDialogue {
 					
 				} else if(index==7) {
 					if(!getElemental().isActive()) {
-						return new Response("Inventory", "You need to have [el.name] take on [el.her] active form in order to manage [el.her] inventory...", null);
+						return new Response("Инвентарь", "Чтобы управлять [el.her] инвентарем, [el.name] должна принять [el.her] активную форму...", null);
 					}
-					return new ResponseEffectsOnly("Inventory", "Manage [el.namePos] inventory.") {
+					return new ResponseEffectsOnly("Инвентарь", "Управлять [el.namePos] инвентарем.") {
 						@Override
 						public void effects() {
 							Main.mainController.openInventory((NPC) getElemental(), InventoryInteraction.FULL_MANAGEMENT);
@@ -195,10 +195,10 @@ public class ElementalDialogue {
 					};
 					
 				} else if(index==8) {
-					return new ResponseEffectsOnly("Self-clean: "+(!getElemental().hasFlag(NPCFlagValue.elementalStayDirty)?"[style.colourGood(On)]":"[style.colourBad(Off)]"),
+					return new ResponseEffectsOnly("Самоочистка: "+(!getElemental().hasFlag(NPCFlagValue.elementalStayDirty)?"[style.colourGood(Вкл)]":"[style.colourBad(Выкл)]"),
 							!getElemental().hasFlag(NPCFlagValue.elementalStayDirty)
-								?"[el.Name] is currently using [el.her] self-transformative powers to clean any fluids from [el.her] body or clothing.<br/>[style.colourMinorBad(Click to toggle self-clean off.)]"
-								:"[el.Name] is currently using [el.her] self-transformative powers to retain any fluids which dirty [el.her] body or clothing.<br/>[style.colourMinorGood(Click to toggle self-clean on.)]") {
+								?"[el.Name] сейчас использует свои самотрансформирующие способности [el.her], чтобы очистить тело или одежду [el.her] от любых жидкостей.<br/>[style.colourMinorBad(Нажмите, чтобы выключить самоочистку.)]"
+								:"[el.Name] сейчас использует [el.her] самотрансформирующие силы, чтобы очищать любую жидкость, пачкающую [el.her] тело или одежду.<br/>[style.colourMinorGood(Нажмите, чтобы включить самоочищение.)]") {
 						@Override
 						public void effects() {
 							if(getElemental().hasFlag(NPCFlagValue.elementalStayDirty)) {
@@ -211,15 +211,15 @@ public class ElementalDialogue {
 					};
 					
 				} else if(index==9) {
-					return new Response("Set names", "Change [el.namePos] name or tell [el.herHim] to call you by a different name.", ELEMENTAL_CHOOSE_NAME);
+					return new Response("Установить имена", "Изменить имя [el.namePos] или попросить [el.herHim] называть вас другим именем.", ELEMENTAL_CHOOSE_NAME);
 					
 				}
 			}
 			
 			if(index==5) {
 				if(getElemental().isActive()) {
-					return new Response("Form: <b style='color:"+getElemental().getCurrentSchool().getColour().toWebHexString()+";'>Active</b>",
-							"Tell [el.name] to switch back into [el.her] passive form.",
+					return new Response("Форма: <b style='color:"+getElemental().getCurrentSchool().getColour().toWebHexString()+";'>Активная</b>",
+							"Приказать [el.name] вернуться в [el.her] пассивную форму.",
 							UTIL_NO_CONTENT) {
 						@Override
 						public void effects() {
@@ -229,8 +229,8 @@ public class ElementalDialogue {
 					};
 					
 				} else {
-					return new Response("Form: <i style='color:"+getElemental().getCurrentSchool().getColour().toWebHexString()+";'>Passive</i>",
-							"Tell [el.name] to switch into [el.her] active form.",
+					return new Response("Форма: <i style='color:"+getElemental().getCurrentSchool().getColour().toWebHexString()+";'>Пассивная</i>",
+							"Приказать [el.name] перейти в [el.her] активную форму.",
 							UTIL_NO_CONTENT) {
 						@Override
 						public void effects() {
@@ -242,7 +242,7 @@ public class ElementalDialogue {
 				}
 				
 			} else if(index==10) {
-				return new Response("Dispel", "Dispel [el.name]...",  Main.game.getDefaultDialogue(false)) {
+				return new Response("Рассеять", "Рассеять [el.name]...",  Main.game.getDefaultDialogue(false)) {
 					@Override
 					public void effects() {
 						getElemental().returnToHome();
@@ -252,7 +252,7 @@ public class ElementalDialogue {
 			}
 			
 			if(index==0) {
-				return new Response("Finished", "Tell [el.name] that you've finished talking with [el.herHim] and let [el.herHim] return to [el.her] passive form.", Main.game.getDefaultDialogue(false)) {
+				return new Response("Завершено", "Сказать [el.name], что разговор с [el.herHim] окончен, и позволить [el.herHim] вернуться в [el.her] пассивную форму.", Main.game.getDefaultDialogue(false)) {
 					@Override
 					public void effects() {
 						Main.game.setResponseTab(0);
@@ -264,7 +264,7 @@ public class ElementalDialogue {
 		}
 	};
 
-	public static final DialogueNode ELEMENTAL_AFTER_SEX = new DialogueNode("Finished", "Having had [el.her] fun with you, [el.name] puts an end to the sex...", true) {
+	public static final DialogueNode ELEMENTAL_AFTER_SEX = new DialogueNode("Завершено", "Насладившись [el.her] весельем с тобой, [el.name] решает закончить секс...", true) {
 		@Override
 		public String getContent() {
 			return UtilText.parseFromXMLFile("characters/elemental", "ELEMENTAL_AFTER_SEX");
@@ -293,7 +293,7 @@ public class ElementalDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(ELEMENTAL_START.getResponse(responseTab, index)!=null
 					&& ELEMENTAL_START.getResponse(responseTab, index).getNextDialogue()==ELEMENTAL_INSPECT) {
-				return new Response("Inspect", "You are already taking a good look at [el.name].", null);
+				return new Response("Осмотреть", "Ты уже вовсю разглядываешь [el.name].", null);
 			}
 			return ELEMENTAL_START.getResponse(responseTab, index);
 		}
@@ -312,7 +312,7 @@ public class ElementalDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(ELEMENTAL_START.getResponse(responseTab, index)!=null
 					&& ELEMENTAL_START.getResponse(responseTab, index).getNextDialogue()==ELEMENTAL_TALK) {
-				return new Response("Talk", "You are already talking to [el.name].", null);
+				return new Response("Поговорить", "Ты уже разговариваешь с [el.name].", null);
 			}
 			return ELEMENTAL_START.getResponse(responseTab, index);
 		}
@@ -331,7 +331,7 @@ public class ElementalDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(ELEMENTAL_START.getResponse(responseTab, index)!=null
 					&& ELEMENTAL_START.getResponse(responseTab, index).getNextDialogue()==ELEMENTAL_PETTING) {
-				return new Response("Petting", "You are already petting [el.name]!", null);
+				return new Response("Ласкать", "Ты уже ласкаешь [el.name]!", null);
 			}
 			return ELEMENTAL_START.getResponse(responseTab, index);
 		}
@@ -345,7 +345,7 @@ public class ElementalDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==0) {
-				return new Response("Back", "Decide against having [el.name] take on a different passive form.", UTIL_NO_CONTENT) {
+				return new Response("Назад", "Решить не позволять [el.name] принять другую пассивную форму.", UTIL_NO_CONTENT) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("characters/elemental", "ELEMENTAL_PASSIVE_FORM_BACK"));
@@ -362,9 +362,9 @@ public class ElementalDialogue {
 			subspecies.removeIf(s -> s==Subspecies.CENTAUR || s==Subspecies.PEGATAUR || s==Subspecies.ALITAUR || s==Subspecies.UNITAUR); // Centaurs are a special case, as we don't want centaur ferals
 			
 			if(getElemental().getPassiveForm()==null) {
-				responses.add(new Response("Wisp", "[el.Name] is already assuming the passive form of an elemental wisp!", null));
+				responses.add(new Response("Огонек", "[el.Name] уже принимает пассивную форму элементального огонька!", null));
 			} else {
-				responses.add(new Response("Wisp", "Tell [el.name] to assume the passive form of an elemental wisp.", UTIL_NO_CONTENT) {
+				responses.add(new Response("Огонек", "Приказать [el.name] принять пассивную форму элементального огонька.", UTIL_NO_CONTENT) {
 					@Override
 					public void effects() {
 						UtilText.addSpecialParsingString("wisp", true);
@@ -381,10 +381,10 @@ public class ElementalDialogue {
 				if(!nameDuplicates.contains(feralName)) {
 					nameDuplicates.add(feralName);
 					if(getElemental().getPassiveForm()==sub) {
-						responses.add(new Response(Util.capitaliseSentence(feralName), "[el.Name] is already assuming the passive form of a small, feral "+feralName+"!", null));
+						responses.add(new Response(Util.capitaliseSentence(feralName), "[el.Name] уже принимает пассивную форму маленького, дикого "+feralName+"!", null));
 						
 					} else {
-						responses.add(new Response(Util.capitaliseSentence(feralName), "Tell [el.name] to assume the passive form of a small, feral "+feralName+".", UTIL_NO_CONTENT) {
+						responses.add(new Response(Util.capitaliseSentence(feralName), "Приказать [el.name] принять пассивную форму маленького, дикого "+feralName+".", UTIL_NO_CONTENT) {
 							@Override
 							public void effects() {
 								UtilText.addSpecialParsingString(UtilText.generateSingularDeterminer(feralName)+" "+feralName, true);
@@ -407,20 +407,13 @@ public class ElementalDialogue {
 		}
 	};
 
-	public static final DialogueNode ELEMENTAL_PERKS = new DialogueNode("[el.NamePos] Perk Tree", "", true) {
+	public static final DialogueNode ELEMENTAL_PERKS = new DialogueNode("Древо перков [el.NamePos]", "", true) {
 		@Override
 		public String getContent() {
 			UtilText.nodeContentSB.setLength(0);
 			
 			UtilText.nodeContentSB.append(UtilText.parse(getElemental(),
-					"<details>"
-							+ "<summary>[style.boldPerk(Perk & Trait Information)]</summary>"
-							+ "[style.colourPerk(Perks)] (circular icons) apply permanent boosts to [npc.namePos] attributes.<br/>"
-							+ "[style.colourPerk(Traits)] (square icons) provide unique effects for [npc.name]."
-								+ " Unlike perks, <b>traits will have no effect on [npc.name] until they're slotted into [npc.her] 'Active Traits' bar</b>.<br/>"
-							+ "Perks require perk points to unlock. [npc.Name] earns one perk point each time [npc.she] levels up, and earns an extra two perk points every five levels.<br/><br/>"
-							+ "In addition to the perks that can be purchased via perk points, there are also several special, hidden perks that are unlocked via special events."
-					+ "</details>"));
+					"<details><summary>[style.boldPerk(Информация о Перках и Чертах)]</summary>[style.colourPerk(Перки)] (круглые иконки) дают постоянные бонусы к атрибутам [npc.namePos].<br/>[style.colourPerk(Черты)] (квадратные иконки) дают уникальные эффекты для [npc.name]. В отличие от перков, <b>черты не будут влиять на [npc.name], пока их не вставят в панель [npc.her] «Активные черты»</b>.<br/>Для разблокировки перков требуются очки перков. [npc.Name] получает одно очко перка каждый раз, когда [npc.she] повышает уровень, и получает дополнительные два очка перка каждые пять уровней.<br/><br/>В дополнение к перкам, которые можно купить за очки перков, существуют также несколько специальных скрытых перков, которые открываются через особые события.</details>"));
 			
 			UtilText.nodeContentSB.append(PerkManager.MANAGER.getPerkTreeDisplay(getElemental(), true));
 			
@@ -436,10 +429,10 @@ public class ElementalDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(ELEMENTAL_START.getResponse(responseTab, index)!=null
 					&& ELEMENTAL_START.getResponse(responseTab, index).getNextDialogue()==ELEMENTAL_PERKS) {
-				return new Response("Perks", "You are already assigning [el.namePos] perk points!", null);
+				return new Response("Перки", "Вы уже распределяете очки перков [el.namePos]!", null);
 			}
 			if(responseTab==1 && index==11) {
-				return new Response("Reset perks", "Reset all perks and traits, refunding all points spent. (This is a temporary action while the perk tree is still under development.)", ELEMENTAL_PERKS) {
+				return new Response("Сбросить перки", "Сбросить все перки и черты, вернув все потраченные очки. (Это временная мера, так как древо перков всё еще находится в разработке.)", ELEMENTAL_PERKS) {
 					@Override
 					public void effects() {
 						getElemental().resetPerksMap(false, false);
@@ -450,28 +443,17 @@ public class ElementalDialogue {
 		}
 	};
 
-	public static final DialogueNode ELEMENTAL_FETISHES = new DialogueNode("[el.NamePos] Fetishes", "", true) {
+	public static final DialogueNode ELEMENTAL_FETISHES = new DialogueNode("Фетиши [el.NamePos]", "", true) {
 		@Override
 		public String getContent() {
 			StringBuilder sb = new StringBuilder();
 			
 			sb = new StringBuilder(
-					"<details>"
-						+ "<summary>[style.boldFetish(Fetish Information)]</summary>"
-							+ "You can select [el.namePos] [style.colourLust(desire)] for each fetish [style.colourArcane(for free)],"
-							+ " or choose to take the associated [style.colourFetish(fetish)] for a cost of [style.colourArcane(arcane essences)].<br/><br/>"
-							+ "Choosing a desire will affect bonus lust gains in sex, while taking a fetish will permanently lock [el.namePos] desire to 'love', and also give [el.herHim] special bonuses."
-							+ " Fetishes can only be removed through enchanted potions.<br/><br/>"
-							+ "[el.NamePos] currently selected desire has a "+PresetColour.FETISH.getName()+" border, but [el.her] true desire (indicated by the coloured desire icon) may be modified by enchanted clothes or other items.<br/><br/>"
-							+ "[el.name] will earn experience for each fetish through performing related actions in sex."
-							+ " Experience is earned regardless of whether or not [el.she] has the associated fetish."
-							+ " Higher level fetishes will cause both [el.name] and [el.her] partner to gain more arousal from related sex actions, as well as increase the fetish's bonuses.<br/><br/>"
-							+ "Finally, derived fetishes cannot be directly unlocked, but are instead automatically applied when [el.name] meets their requirements."
-					+ "</details>");
+					"<details><summary>[style.boldFetish(Информация о фетишах)]</summary>Вы можете выбрать [el.namePos] [style.colourLust(желание)] для каждого фетиша [style.colourArcane(бесплатно)], либо выбрать соответствующий [style.colourFetish(фетиш)] за [style.colourArcane(арканные эссенции)].<br/><br/>Выбор желания повлияет на бонусный прирост похоти во время секса, в то время как получение фетиша навсегда закрепит [el.namePos] желание как «любовь», а также даст [el.herHim] особые бонусы. Фетиши можно убрать только с помощью зачарованных зелий.<br/><br/>[el.NamePos] текущее выбранное желание имеет "+PresetColour.FETISH.getName()+" границы, но [el.her] истинное желание (обозначенное цветной иконкой желания) может изменяться зачарованной одеждой или другими предметами.<br/><br/>[el.name] будет получать опыт для каждого фетиша, совершая соответствующие действия во время секса. Опыт начисляется независимо от того, есть ли у [el.she] соответствующий фетиш. Фетиши более высокого уровня заставляют как [el.name], так и [el.her] партнера получать больше возбуждения от соответствующих сексуальных действий, а также увеличивают бонусы самого фетиша.<br/><br/>Наконец, производные фетиши нельзя разблокировать напрямую — они применяются автоматически, когда [el.name] соответствует их требованиям.</details>");
 			
 			// Normal fetishes:
 
-			sb.append("<div class='container-full-width' style='text-align:center; font-weight:bold;'><h6>Fetishes</h6></div>");
+			sb.append("<div class='container-full-width' style='text-align:center; font-weight:bold;'><h6>Фетиши</h6></div>");
 			sb.append(PhoneDialogue.getFetishEntry(getElemental(), Fetish.FETISH_DOMINANT, Fetish.FETISH_SUBMISSIVE));
 			sb.append(PhoneDialogue.getFetishEntry(getElemental(), Fetish.FETISH_VAGINAL_GIVING, Fetish.FETISH_VAGINAL_RECEIVING));
 			sb.append(PhoneDialogue.getFetishEntry(getElemental(), Fetish.FETISH_PENIS_GIVING, Fetish.FETISH_PENIS_RECEIVING));
@@ -519,17 +501,17 @@ public class ElementalDialogue {
 			
 			// Derived fetishes:
 
-			sb.append("<div class='container-full-width' style='text-align:center; font-weight:bold; margin-top:16px;'><h6>Derived Fetishes</h6></div>");
+			sb.append("<div class='container-full-width' style='text-align:center; font-weight:bold; margin-top:16px;'><h6>Производные фетиши</h6></div>");
 			sb.append("<div class='fetish-container'>");
 			
 			for(AbstractFetish fetish : Fetish.getAllFetishes()) {
 				if(!fetish.getFetishesForAutomaticUnlock().isEmpty()) {
 					sb.append(
 							"<div id='FETISH_" + Fetish.getIdFromFetish(fetish) + "' class='fetish-icon" + (Main.game.getPlayer().hasFetish(fetish)
-							? " owned' style='border:2px solid " + PresetColour.FETISH.getShades()[1] + ";'>"
+							? " есть' style='border:2px solid " + PresetColour.FETISH.getShades()[1] + ";'>"
 							: (fetish.isAvailable(Main.game.getPlayer())
-									? " unlocked' style='border:2px solid " +  PresetColour.TEXT_GREY.toWebHexString() + ";" + "'>"
-									: " locked' style='border:2px solid " + PresetColour.TEXT_GREY.toWebHexString() + ";'>"))
+									? " разблокирован' style='border:2px solid " +  PresetColour.TEXT_GREY.toWebHexString() + ";" + "'>"
+									: " заблокирован' style='border:2px solid " + PresetColour.TEXT_GREY.toWebHexString() + ";'>"))
 							+ "<div class='fetish-icon-content'>"+fetish.getSVGString(Main.game.getPlayer())+"</div>"
 							+ (Main.game.getPlayer().hasFetish(fetish) // Overlay to create disabled effect:
 									? ""
@@ -553,7 +535,7 @@ public class ElementalDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(ELEMENTAL_START.getResponse(responseTab, index)!=null
 					&& ELEMENTAL_START.getResponse(responseTab, index).getNextDialogue()==ELEMENTAL_FETISHES) {
-				return new Response("Fetishes", "You are already assigning [el.namePos] fetishes!", null);
+				return new Response("Фетиши", "Вы уже назначаете [el.namePos] фетишей!", null);
 			}
 			//TODO
 			return ELEMENTAL_START.getResponse(responseTab, index);
@@ -566,56 +548,19 @@ public class ElementalDialogue {
 			UtilText.nodeContentSB.setLength(0);
 			
 			UtilText.nodeContentSB.append(UtilText.parse(getElemental(), 
-				"<p>"
-					+ "At the moment, [npc.nameIsFull] calling you '[npc.pcName]', and you wonder if you should get [npc.herHim] to call you by a different name or title."
-					+ " As [npc.sheIs] your slave, you could also change [npc.her] name to whatever you'd like it to be..."
-				+ "</p>"));
+				"<p>В данный момент [npc.nameIsFull] называет тебя «[npc.pcName]», и ты гадаешь, стоит ли попросить [npc.herHim] называть тебя как-то иначе или использовать другой титул. Будучи [npc.sheIs], ты также могла бы изменить [npc.her] имя на любое другое, какое пожелаешь...</p>"));
 			
 			UtilText.nodeContentSB.append(
-				"<div class='container-full-width' style='padding:8px 16px;'>"
-					+ "<div style='width:18%; float:left; font-weight:bold; margin:0 13% 0 0; padding:0; text-align:center;'>"
-						+ "Name"
-					+ "</div>"
-					+ "<div style='width:18%; float:left; font-weight:bold; margin:0 13% 0 0; padding:0; text-align:center;'>"
-						+ "Surname"
-					+ "</div>"
-					+ "<div style='width:20%; float:left; font-weight:bold; margin:0 18% 0 0; padding:0; text-align:center;'>"
-						+ UtilText.parse(getElemental(), "What [npc.she] calls you")
+				"<div class='container-full-width' style='padding:8px 16px;'><div style='width:18%; float:left; font-weight:bold; margin:0 13% 0 0; padding:0; text-align:center;'>Имя</div><div style='width:18%; float:left; font-weight:bold; margin:0 13% 0 0; padding:0; text-align:center;'>Фамилия</div><div style='width:20%; float:left; font-weight:bold; margin:0 18% 0 0; padding:0; text-align:center;'>"
+						+ UtilText.parse(getElemental(), "Как тебя называет [npc.she]")
 					+ "</div>"
 					
 					+ "<form style='float:left; width:18%; margin:0; padding:0;'><input type='text' id='slaveNameInput'"
-						+ " value='"+ UtilText.parseForHTMLDisplay(getElemental().getName(false))+ "' style='width:100%; margin:0; padding:0;'></form>"
-					+ "<div class='normal-button' id='"+getElemental().getId()+"_RENAME' style='float:left; width:5%; height:28px; line-height:28px; margin:0 0 0 0.5%; padding:0; text-align:center;'>"
-						+ "&#10003;"
-					+ "</div>"
-					+ "<div class='normal-button' id='"+getElemental().getId()+"_RENAME_RANDOM' style='float:left; width:5%; height:28px; line-height:28px; margin:0 2% 0 0.5%; padding:0; text-align:center;'>"
-						+ "&#127922;"
-					+ "</div>"
-						
-					+ "<form style='float:left; width:18%; margin:0; padding:0;'><input type='text' id='slaveSurnameInput'"
-						+ " value='"+ UtilText.parseForHTMLDisplay(getElemental().getSurname())+ "' style='width:100%; margin:0; padding:0;'></form>"
-					+ "<div class='normal-button' id='"+getElemental().getId()+"_RENAME_SURNAME' style='float:left; width:5%; height:28px; line-height:28px; margin:0 0 0 0.5%; padding:0; text-align:center;'>"
-						+ "&#10003;"
-					+ "</div>"
-					+ "<div class='normal-button' id='"+getElemental().getId()+"_RENAME_SURNAME_RANDOM' style='float:left; width:5%; height:28px; line-height:28px; margin:0 2% 0 0.5%; padding:0; text-align:center;'>"
-						+ "&#127922;"
-					+ "</div>"
-					
-					+ "<form style='float:left; width:20%; margin:0; padding:0;'><input type='text' id='slaveToPlayerNameInput' value='"+ UtilText.parseForHTMLDisplay(getElemental().getPetName(Main.game.getPlayer()))
-						+ "' style='width:100%; margin:0; padding:0;'></form>"
-					+ "<div class='normal-button' id='"+getElemental().getId()+"_CALLS_PLAYER' style='float:left; width:5%; height:28px; line-height:28px; margin:0 0 0 0.5%; padding:0; text-align:center;'>"
-						+ "&#10003;"
-					+ "</div>"
-					+ " <div class='normal-button' id='GLOBAL_CALLS_PLAYER' style='float:left; width:12%; height:28px; line-height:28px; margin:0 0 0 0.5%; padding:0; text-align:center;'>"
-						+ "All Slaves"
-					+ "</div>");
+						+ " value='"+ UtilText.parseForHTMLDisplay(getElemental().getName(false))+ "' style='width:100%; margin:0; padding:0;'></form><div class='normal-button' id='"+getElemental().getId()+"_RENAME' style='float:left; width:5%; height:28px; line-height:28px; margin:0 0 0 0.5%; padding:0; text-align:center;'>&#10003;</div><div class='normal-button' id='"+getElemental().getId()+"_RENAME_RANDOM' style='float:left; width:5%; height:28px; line-height:28px; margin:0 2% 0 0.5%; padding:0; text-align:center;'>&#127922;</div><form style='float:left; width:18%; margin:0; padding:0;'><input type='text' id='slaveSurnameInput' value='"+ UtilText.parseForHTMLDisplay(getElemental().getSurname())+ "' style='width:100%; margin:0; padding:0;'></form><div class='normal-button' id='"+getElemental().getId()+"_RENAME_SURNAME' style='float:left; width:5%; height:28px; line-height:28px; margin:0 0 0 0.5%; padding:0; text-align:center;'>&#10003;</div><div class='normal-button' id='"+getElemental().getId()+"_RENAME_SURNAME_RANDOM' style='float:left; width:5%; height:28px; line-height:28px; margin:0 2% 0 0.5%; padding:0; text-align:center;'>&#127922;</div><form style='float:left; width:20%; margin:0; padding:0;'><input type='text' id='slaveToPlayerNameInput' value='"+ UtilText.parseForHTMLDisplay(getElemental().getPetName(Main.game.getPlayer()))
+						+ "' style='width:100%; margin:0; padding:0;'></form><div class='normal-button' id='"+getElemental().getId()+"_CALLS_PLAYER' style='float:left; width:5%; height:28px; line-height:28px; margin:0 0 0 0.5%; padding:0; text-align:center;'>&#10003;</div> <div class='normal-button' id='GLOBAL_CALLS_PLAYER' style='float:left; width:12%; height:28px; line-height:28px; margin:0 0 0 0.5%; padding:0; text-align:center;'>Все рабыни</div>");
 			
 			UtilText.nodeContentSB.append(UtilText.parse(getElemental(), 
-						"<p style='text-align:center; margin-top:4px;'>"
-							+ "<i>If [npc.name] is told to call you 'Mom' or 'Dad', 'Mommy' or 'Daddy', 'Mistress' or 'Master', or 'Ma'am' or 'Sir',"
-							+ " then [npc.she] will automatically switch to the appropriate paired name depending on the femininity of your character.</i>"
-						+ "</p>"
-					+ "</div>"));
+						"<p style='text-align:center; margin-top:4px;'><i>Если сказать [npc.name] называть вас «Мамой» или «Папой», «Мамочкой» или «Папочкой», «Госпожой» или «Господином», либо «Мадам» или «Сэр», то [npc.she] автоматически переключится на соответствующее парное имя в зависимости от пола вашего персонажа.</i></p></div>"));
 			
 			UtilText.nodeContentSB.append("<p id='hiddenFieldName' style='display:none;'></p>");
 			
@@ -629,7 +574,7 @@ public class ElementalDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(ELEMENTAL_START.getResponse(responseTab, index)!=null
 					&& ELEMENTAL_START.getResponse(responseTab, index).getNextDialogue()==ELEMENTAL_CHOOSE_NAME) {
-				return new Response("Set names", "You are already telling [el.name] what names [el.she] should use!", null);
+				return new Response("Установить имена", "Вы уже говорите [el.name], какие имена должны использовать [el.she]!", null);
 			}
 			return ELEMENTAL_START.getResponse(responseTab, index);
 		}

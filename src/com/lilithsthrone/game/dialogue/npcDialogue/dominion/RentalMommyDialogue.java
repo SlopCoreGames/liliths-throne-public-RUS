@@ -24,7 +24,7 @@ public class RentalMommyDialogue {
 		return Main.game.getActiveNPC();
 	}
 	
-	public static final DialogueNode ENCOUNTER = new DialogueNode("Rental Mommy", "", true) {
+	public static final DialogueNode ENCOUNTER = new DialogueNode("Арендованная мамочка", "", true) {
 		
 		@Override
 		public String getContent() {
@@ -39,9 +39,9 @@ public class RentalMommyDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				if(Main.game.getPlayer().getMoney()<50) {
-					return new Response("Hire "+UtilText.formatAsMoneyUncoloured(50, "span"), "You don't have enough money for this!", null);
+					return new Response("Нанять "+UtilText.formatAsMoneyUncoloured(50, "охват"), "Тебе не хватает денег для этого!", null);
 				}
-				return new Response("Hire "+UtilText.formatAsMoney(50, "span"), "Hire the rental Mommy and spend some time resting your head on her lap.", MOMMYS_EXTRAS) {
+				return new Response("Нанять "+UtilText.formatAsMoney(50, "охват"), "Нанять арендованную мамочку и провести время, отдыхая у неё на коленях.", MOMMYS_EXTRAS) {
 					@Override
 					public void effects() {
 						Main.game.getTextEndStringBuilder().append(Main.game.getPlayer().incrementMoney(-50));
@@ -50,7 +50,7 @@ public class RentalMommyDialogue {
 				};
 				
 			} else if(index==2) {
-				return new Response("Decline", "Tell the rental Mommy that you're not interested in hiring her right now.", ENCOUNTER) {
+				return new Response("Отклонить", "Сказать арендованной мамочке, что ты пока не заинтересован в ней.", ENCOUNTER) {
 					@Override
 					public DialogueNode getNextDialogue() {
 						return Main.game.getDefaultDialogue(false);
@@ -67,7 +67,7 @@ public class RentalMommyDialogue {
 		}
 	};
 	
-	public static final DialogueNode MOMMYS_EXTRAS = new DialogueNode("Rental Mommy", "", true, true) {
+	public static final DialogueNode MOMMYS_EXTRAS = new DialogueNode("Арендованная мамочка", "", true, true) {
 		
 		@Override
 		public String getContent() {
@@ -86,9 +86,9 @@ public class RentalMommyDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				if(Main.game.getPlayer().getMoney()<1000) {
-					return new Response("Submissive Sex "+UtilText.formatAsMoneyUncoloured(1000, "span"), "You don't have enough money for this!", null);
+					return new Response("Секс в подчиненной позиции "+UtilText.formatAsMoneyUncoloured(1000, "охват"), "Тебе не хватает денег для этого!", null);
 				}
-				return new ResponseSex("Submissive Sex "+UtilText.formatAsMoney(1000, "span"), "Follow Mommy into her house, before letting her take the dominant role in having sex with you.",
+				return new ResponseSex("Секс в подчиненной позиции "+UtilText.formatAsMoney(1000, "охват"), "Пойти за Мамочкой в её дом, чтобы позволить ей доминировать во время секса с тобой.",
 						true, true,
 						new SMGeneric(
 								Util.newArrayListOfValues(getMommy()),
@@ -112,9 +112,9 @@ public class RentalMommyDialogue {
 				
 			} else if(index==2) {
 				if(Main.game.getPlayer().getMoney()<2000) {
-					return new Response("Dominant Sex "+UtilText.formatAsMoneyUncoloured(2000, "span"), "You don't have enough money for this!", null);
+					return new Response("Доминирующий секс "+UtilText.formatAsMoneyUncoloured(2000, "охват"), "Тебе не хватает денег для этого!", null);
 				}
-				return new ResponseSex("Dominant Sex "+UtilText.formatAsMoney(2000, "span"), "Follow Mommy into her house, before taking the dominant role and having sex with her.",
+				return new ResponseSex("Доминирующий секс "+UtilText.formatAsMoney(2000, "охват"), "Пойти за Мамочкой в её дом, чтобы самому доминировать и заняться с ней сексом.",
 						true, true,
 						new SMGeneric(
 								Util.newArrayListOfValues(Main.game.getPlayer()),
@@ -138,12 +138,12 @@ public class RentalMommyDialogue {
 				
 			} else if(index==3) {
 				if(Main.game.getPlayer().getMoney()<500) {
-					return new Response("Breastfeeding "+UtilText.formatAsMoneyUncoloured(500, "span"), "You don't have enough money for this!", null);
+					return new Response("Кормление грудью "+UtilText.formatAsMoneyUncoloured(500, "охват"), "Тебе не хватает денег для этого!", null);
 				}
 				if(!Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.MOUTH, true)) {
-					return new Response("Breastfeeding "+UtilText.formatAsMoneyUncoloured(500, "span"), "You can't access your mouth, so you can't be breastfed by Mommy!", null);
+					return new Response("Кормление грудью "+UtilText.formatAsMoneyUncoloured(500, "охват"), "Ты не можешь дотянуться ртом, так что Мамочка не сможет тебя покормить!", null);
 				}
-				return new Response("Breastfeeding "+UtilText.formatAsMoney(500, "span"), "Follow Mommy into her house and be breastfed by her.", MOMMYS_EXTRAS_BREASTFEEDING) {
+				return new Response("Кормление грудью "+UtilText.formatAsMoney(500, "охват"), "Пойти за Мамочкой в её дом, чтобы она тебя покормила грудью.", MOMMYS_EXTRAS_BREASTFEEDING) {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().incrementMoney(-500);
@@ -155,12 +155,12 @@ public class RentalMommyDialogue {
 				
 			} else if(index==4) {
 				if(Main.game.getPlayer().getMoney()<1000) {
-					return new Response("Public Breastfeeding "+UtilText.formatAsMoneyUncoloured(1000, "span"), "You don't have enough money for this!", null);
+					return new Response("Кормление грудью на людях "+UtilText.formatAsMoneyUncoloured(1000, "охват"), "Тебе не хватает денег для этого!", null);
 				}
 				if(!Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.MOUTH, true)) {
-					return new Response("Public Breastfeeding "+UtilText.formatAsMoneyUncoloured(1000, "span"), "You can't access your mouth, so you can't be breastfed by Mommy!", null);
+					return new Response("Кормление грудью на людях "+UtilText.formatAsMoneyUncoloured(1000, "охват"), "Ты не можешь дотянуться ртом, так что Мамочка не сможет тебя покормить!", null);
 				}
-				return new Response("Public Breastfeeding "+UtilText.formatAsMoney(1000, "span"), "Remain out here on the bench, and, in full sight of the public, be breastfed by Mommy.", MOMMYS_EXTRAS_BREASTFEEDING_PUBLIC) {
+				return new Response("Кормление грудью на людях "+UtilText.formatAsMoney(1000, "охват"), "Остаться здесь, на скамейке, на виду у всех, чтобы мамочка тебя выкормила.", MOMMYS_EXTRAS_BREASTFEEDING_PUBLIC) {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().incrementMoney(-1000);
@@ -173,7 +173,7 @@ public class RentalMommyDialogue {
 				};
 				
 			} else if(index==5) {
-				return new Response("Decline", "Decline Mommy's extra offers, and take your leave.", ENCOUNTER) {
+				return new Response("Отклонить", "Отклонить дополнительные предложения мамочки и уйти.", ENCOUNTER) {
 					@Override
 					public DialogueNode getNextDialogue() {
 						return Main.game.getDefaultDialogue(false);
@@ -189,7 +189,7 @@ public class RentalMommyDialogue {
 		}
 	};
 	
-	public static final DialogueNode MOMMYS_EXTRAS_BREASTFEEDING = new DialogueNode("Rental Mommy", "", true, true) {
+	public static final DialogueNode MOMMYS_EXTRAS_BREASTFEEDING = new DialogueNode("Арендованная мамочка", "", true, true) {
 
 		@Override
 		public String getContent() {
@@ -207,7 +207,7 @@ public class RentalMommyDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			 if(index==1) {
-				return new Response("Leave", "Thank Mommy and take your leave.", MOMMYS_EXTRAS_BREASTFEEDING) {
+				return new Response("Уйти", "Поблагодарить мамочку и уйти.", MOMMYS_EXTRAS_BREASTFEEDING) {
 					@Override
 					public DialogueNode getNextDialogue() {
 						return Main.game.getDefaultDialogue(false);
@@ -219,7 +219,7 @@ public class RentalMommyDialogue {
 		}
 	};
 	
-	public static final DialogueNode MOMMYS_EXTRAS_BREASTFEEDING_PUBLIC = new DialogueNode("Rental Mommy", "", true, true) {
+	public static final DialogueNode MOMMYS_EXTRAS_BREASTFEEDING_PUBLIC = new DialogueNode("Арендованная мамочка", "", true, true) {
 
 		@Override
 		public String getContent() {
@@ -233,7 +233,7 @@ public class RentalMommyDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			 if(index==1) {
-				return new Response("Leave", "Thank Mommy and take your leave.", MOMMYS_EXTRAS_BREASTFEEDING_PUBLIC) {
+				return new Response("Уйти", "Поблагодарить мамочку и уйти.", MOMMYS_EXTRAS_BREASTFEEDING_PUBLIC) {
 					@Override
 					public DialogueNode getNextDialogue() {
 						return Main.game.getDefaultDialogue(false);
@@ -245,7 +245,7 @@ public class RentalMommyDialogue {
 		}
 	};
 	
-	public static final DialogueNode AFTER_SEX_MOMMY_AS_DOM = new DialogueNode("Finished", "The rental Mommy has given you your money's worth, and so brings an end to the sex...", true) {
+	public static final DialogueNode AFTER_SEX_MOMMY_AS_DOM = new DialogueNode("Завершено", "Арендованная мамочка отработала каждую копейку, и на этом секс подходит к концу...", true) {
 
 		@Override
 		public String getContent() {
@@ -266,7 +266,7 @@ public class RentalMommyDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			 if(index==1) {
-				return new Response("Leave", "Thank Mommy and take your leave.", AFTER_SEX_MOMMY_AS_DOM) {
+				return new Response("Уйти", "Поблагодарить мамочку и уйти.", AFTER_SEX_MOMMY_AS_DOM) {
 					@Override
 					public DialogueNode getNextDialogue() {
 						return Main.game.getDefaultDialogue(false);
@@ -278,7 +278,7 @@ public class RentalMommyDialogue {
 		}
 	};
 	
-	public static final DialogueNode AFTER_SEX_MOMMY_AS_SUB = new DialogueNode("Finished", "The rental Mommy has given you your money's worth, and so brings an end to the sex...", true) {
+	public static final DialogueNode AFTER_SEX_MOMMY_AS_SUB = new DialogueNode("Завершено", "Арендованная мамочка отработала каждую копейку, и на этом секс подходит к концу...", true) {
 
 		@Override
 		public String getContent() {
@@ -299,7 +299,7 @@ public class RentalMommyDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			 if(index==1) {
-				return new Response("Leave", "Thank Mommy and take your leave.", AFTER_SEX_MOMMY_AS_SUB) {
+				return new Response("Уйти", "Поблагодарить мамочку и уйти.", AFTER_SEX_MOMMY_AS_SUB) {
 					@Override
 					public DialogueNode getNextDialogue() {
 						return Main.game.getDefaultDialogue(false);

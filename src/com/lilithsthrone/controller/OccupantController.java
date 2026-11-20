@@ -47,9 +47,9 @@ public class OccupantController {
 	public static void initRoomManagerListeners() {
 		for (Cell c : OccupantManagementDialogue.getImportantCells()) {
 			if (MainController.document.getElementById(c.getId()+"_PRESENT_DISABLED") != null) {
-				MainController.addTooltipListeners(c.getId()+"_PRESENT_DISABLED", new TooltipInformationEventListener().setInformation("Manage Room", "You are not able to manage this room!"));
+				MainController.addTooltipListeners(c.getId()+"_PRESENT_DISABLED", new TooltipInformationEventListener().setInformation("Управление комнатой", "Вы не можете управлять этой комнатой!"));
 			} else if (MainController.document.getElementById(c.getId()+"_DISABLED") != null) {
-				MainController.addTooltipListeners(c.getId()+"_DISABLED", new TooltipInformationEventListener().setInformation("Manage Room", "You are not able to manage this room!"));
+				MainController.addTooltipListeners(c.getId()+"_DISABLED", new TooltipInformationEventListener().setInformation("Управление комнатой", "Вы не можете управлять этой комнатой!"));
 			} else if (MainController.document.getElementById(c.getId()+"_PRESENT") != null) {
 				((EventTarget) MainController.document.getElementById(c.getId()+"_PRESENT")).addEventListener("click", e->{
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
@@ -64,7 +64,7 @@ public class OccupantController {
 						}
 					});
 				}, false);
-				MainController.addTooltipListeners(c.getId()+"_PRESENT", new TooltipInformationEventListener().setInformation("Manage Room", "Open this room's management screen."));
+				MainController.addTooltipListeners(c.getId()+"_PRESENT", new TooltipInformationEventListener().setInformation("Управление комнатой", "Открыть экран управления этой комнатой."));
 			} else if (MainController.document.getElementById(c.getId()) != null) {
 				((EventTarget) MainController.document.getElementById(c.getId())).addEventListener("click", e->{
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
@@ -79,7 +79,7 @@ public class OccupantController {
 						}
 					});
 				}, false);
-				MainController.addTooltipListeners(c.getId(), new TooltipInformationEventListener().setInformation("Manage Room", "Open this room's management screen."));
+				MainController.addTooltipListeners(c.getId(), new TooltipInformationEventListener().setInformation("Управление комнатой", "Открыть экран управления этой комнатой."));
 			}
 		}
 	}
@@ -111,15 +111,15 @@ public class OccupantController {
 							});
 				}, false);
 				MainController.addTooltipListeners(id,
-						new TooltipInformationEventListener().setInformation("Purchase Modification",
-								"This will cost: "+UtilText.formatAsMoney(placeUpgrade.getInstallCost())
+						new TooltipInformationEventListener().setInformation("Купить модификацию",
+								"Стоимость: "+UtilText.formatAsMoney(placeUpgrade.getInstallCost())
 										+"<br/>"+OccupantManagementDialogue.getPurchaseAvailabilityTooltipText(OccupantManagementDialogue.cellToInspect, placeUpgrade)));
 			}
 			id = PlaceUpgrade.getIdFromPlaceUpgrade(placeUpgrade)+"_BUY_DISABLED";
 			if (MainController.document.getElementById(id) != null) {
 				MainController.addTooltipListeners(id,
-						new TooltipInformationEventListener().setInformation("Purchase Modification",
-								"This will cost: "+UtilText.formatAsMoney(placeUpgrade.getInstallCost())
+						new TooltipInformationEventListener().setInformation("Купить модификацию",
+								"Стоимость: "+UtilText.formatAsMoney(placeUpgrade.getInstallCost())
 										+"<br/>"+OccupantManagementDialogue.getPurchaseAvailabilityTooltipText(OccupantManagementDialogue.cellToInspect, placeUpgrade)));
 			}
 			id = PlaceUpgrade.getIdFromPlaceUpgrade(placeUpgrade)+"_SELL";
@@ -134,17 +134,17 @@ public class OccupantController {
 					});
 				}, false);
 				MainController.addTooltipListeners(id,
-						new TooltipInformationEventListener().setInformation("Remove Modification",
-								"This will cost: "+UtilText.formatAsMoney(placeUpgrade.getRemovalCost())
+						new TooltipInformationEventListener().setInformation("Убрать модификацию",
+								"Стоимость: "+UtilText.formatAsMoney(placeUpgrade.getRemovalCost())
 										+"<br/>"+OccupantManagementDialogue.getPurchaseAvailabilityTooltipText(OccupantManagementDialogue.cellToInspect, placeUpgrade)));
 			}
 			id = PlaceUpgrade.getIdFromPlaceUpgrade(placeUpgrade)+"_SELL_DISABLED";
 			if (MainController.document.getElementById(id) != null) {
 				MainController.addTooltipListeners(id,
-						new TooltipInformationEventListener().setInformation("Remove Modification",
+						new TooltipInformationEventListener().setInformation("Убрать модификацию",
 								(!placeUpgrade.getRemovalAvailability(OccupantManagementDialogue.cellToInspect).getKey()
 										?placeUpgrade.getRemovalAvailability(OccupantManagementDialogue.cellToInspect).getValue()
-										:"This will cost: "+UtilText.formatAsMoney(placeUpgrade.getRemovalCost())
+										:"Стоимость: "+UtilText.formatAsMoney(placeUpgrade.getRemovalCost())
 										+"<br/>"+OccupantManagementDialogue.getPurchaseAvailabilityTooltipText(OccupantManagementDialogue.cellToInspect, placeUpgrade))));
 			}
 		}
@@ -160,7 +160,7 @@ public class OccupantController {
 								|| Main.mainController.getWebEngine().getDocument().getElementById("hiddenFieldName").getTextContent().length()>32;
 					}
 					if (!unsuitableName) {
-						Main.game.setContent(new Response("Rename Room", "Rename this room to whatever you've entered in the text box.", Main.game.getCurrentDialogueNode()) {
+						Main.game.setContent(new Response("Переименовать комнату", "Переименуйте эту комнату, введя новое название в текстовое поле.", Main.game.getCurrentDialogueNode()) {
 							@Override
 							public void effects() {
 								OccupantManagementDialogue.cellToInspect.getPlace().setName(Main.mainController.getWebEngine().getDocument().getElementById("hiddenFieldName").getTextContent());
@@ -200,9 +200,9 @@ public class OccupantController {
 				boolean canIngest = room.isAbleToIngestThroughArea(fluid.getFluid().getType().getBaseType(), MilkingRoom.getTargetedCharacter(), area.getKey(), milkAmount);
 				
 				String fluidOwnerName = fluidOwner == null
-						?"the"
+						?""
 						:(fluidOwner.equals(MilkingRoom.getTargetedCharacter())
-						?UtilText.parse(fluidOwner, "[npc.her] own")
+						?UtilText.parse(fluidOwner, "собственный [npc.her]")
 						:UtilText.parse(fluidOwner, "[npc.namePos]"));
 				
 				if (canIngest) {
@@ -212,24 +212,18 @@ public class OccupantController {
 							switch (area.getKey()) {
 								case ANUS:
 									Main.game.getTextEndStringBuilder().append(UtilText.parse(MilkingRoom.getTargetedCharacter(),
-											"Grabbing one of the free tubes connected to the vat of "+fluidOwnerName+" "+fluidName+", you quickly remove the suction device on the end, before screwing on one of the funnel attachments."
-													+" Guiding the end of the tube around to your [pc.ass+], you waste no time in sliding the funnel into your [pc.asshole+]."
-													+" Flicking the switch on the side of the vat from 'suck' to 'pump', you then press the start button, letting out a delighted [pc.moan] as you feel the "+fluidName+" being pumped into your [pc.asshole]."));
+											"Схватив один из свободных шлангов, подсоединенных к чану с "+fluidOwnerName+" "+fluidName+", вы быстро снимаете всасывающее устройство с конца, а затем навинчиваете воронку. Направив конец шланга к своей [pc.ass+], вы без промедления вставляете воронку в свою [pc.asshole+]. Переключив рычаг на боку чана из режима «всасывание» в режим «нагнетание», вы нажимаете кнопку пуска и издаете восторженный [pc.moan], чувствуя, как "+fluidName+" нагнетается в вашу [pc.asshole]."));
 									break;
 								case MOUTH:
 									Main.game.getTextEndStringBuilder().append(UtilText.parse(MilkingRoom.getTargetedCharacter(),
-											"Grabbing one of the free tubes connected to the vat of "+fluidOwnerName+" "+fluidName+", you quickly remove the suction device on the end, before screwing on one of the straw-like attachments."
-													+" Lifting the straw up to your mouth, you waste no time in sliding it between your [pc.lips+]."
-													+" Flicking the switch on the side of the vat from 'suck' to 'pump', you then press the start button, letting out a delighted [pc.moan] as you hungrily gulp down the "+fluidName+"."));
+											"Схватив один из свободных шлангов, подсоединенных к чану с "+fluidOwnerName+" "+fluidName+", ты быстро снимаешь всасывающее устройство с наконечника и навинчиваешь одну из трубок-насадок. Поднеся трубку ко рту, ты не теряя времени просовываешь её между своих [pc.lips+]. Переключая тумблер на боку чана с режима «всасывание» на «насос», ты нажимаешь кнопку пуска, издавая восторженный [pc.moan], пока жадно глотаешь "+fluidName+"."));
 									break;
 								case VAGINA:
 									Main.game.getTextEndStringBuilder().append(UtilText.parse(MilkingRoom.getTargetedCharacter(),
-											"Grabbing one of the free tubes connected to the vat of "+fluidOwnerName+" "+fluidName+", you quickly remove the suction device on the end, before screwing on one of the funnel attachments."
-													+" Guiding the end of the tube #IF(pc.hasLegs())between your [pc.legs+]#ELSEto your groin#ENDIF, you waste no time in sliding the funnel into your [pc.pussy+]."
-													+" Flicking the switch on the side of the vat from 'suck' to 'pump', you then press the start button, letting out a delighted [pc.moan] as you feel the "+fluidName+" being pumped"
+											"Схватив один из свободных шлангов, подсоединенных к чану с "+fluidOwnerName+" "+fluidName+", ты быстро снимаешь всасывающее устройство с наконечника и навинчиваешь одну из воронкообразных насадок. Направляя конец трубки #IF(pc.hasLegs())между своих [pc.legs+]#ELSEк своему паху#ENDIF, ты не теряя времени просовываешь воронку в свои [pc.pussy+]. Переключая тумблер на боку чана с режима «всасывание» на «насос», ты нажимаешь кнопку пуска, издавая восторженный [pc.moan], когда чувствуешь, как "+fluidName+" в тебя закачивают"
 													+(MilkingRoom.getTargetedCharacter().isVisiblyPregnant()
-													?" into your [pc.pussy]."
-													:" directly into your waiting womb.")));
+													?" прямо в твои [pc.pussy]."
+													:" прямо в твою ждущую матку.")));
 									break;
 								default:
 									break;
@@ -238,45 +232,28 @@ public class OccupantController {
 							switch (area.getKey()) {
 								case ANUS:
 									Main.game.getTextEndStringBuilder().append(UtilText.parse(MilkingRoom.getTargetedCharacter(),
-											"Wanting to pump [npc.namePos] [npc.ass+] full of "+fluidOwnerName+" "+fluidName+", you instruct [npc.herHim] to"
+											"Желая наполнить [npc.namePos] [npc.ass+] "+fluidOwnerName+" "+fluidName+", ты приказываешь [npc.herHim]"
 													+(!MilkingRoom.getTargetedCharacter().isTaur() && MilkingRoom.getTargetedCharacter().getGenitalArrangement() == GenitalArrangement.NORMAL
-													?" bend over before you."
-													:" kneel down and present [npc.herself] to you.")
-													+" As soon as [npc.her] [npc.asshole+] is fully on display, you grab one of the free tubes connected to your selected vat of fluid,"
-													+" before quickly removing the suction device on the end and screwing on one of the funnel attachments."
-													+"</p>"
-													+"<p>"
-													+"Guiding the end of the tube up to [npc.namePos] [npc.ass+], you waste no time in sliding the funnel into [npc.her] [npc.asshole+], smiling to yourself as [npc.she] lets out [npc.a_moan+]."
-													+" Flicking the switch on the side of the vat from 'suck' to 'pump', you then press the start button,"
-													+" causing [npc.name] to let out yet more delighted [npc.moans] as [npc.she] feels the "+fluidName+" being pumped into [npc.her] [npc.asshole]."));
+													?" наклониться перед тобой."
+													:" опуститься на колени и подставить [npc.herself] тебе.")
+													+" Как только [npc.her] [npc.asshole+] предстает перед вами во всей красе, вы хватаете один из свободных шлангов, подсоединенных к выбранному вами резервуару с жидкостью, быстро снимаете всасывающее устройство на конце и навинчиваете воронку-насадку.</p><p>Подводя конец шланга к [npc.namePos] [npc.ass+], вы не теряя времени впихиваете воронку в [npc.her] [npc.asshole+], довольно улыбаясь, когда [npc.she] издает [npc.a_moan+]. Переключив тумблер на боку резервуара из режима «всасывание» в режим «насос», вы нажимаете кнопку пуска, заставляя [npc.name] издать еще более восторженные [npc.moans], когда [npc.she] чувствует... "+fluidName+" втекающее в [npc.her] [npc.asshole]."));
 									break;
 								case MOUTH:
 									Main.game.getTextEndStringBuilder().append(UtilText.parse(MilkingRoom.getTargetedCharacter(),
-											"Wanting to give [npc.namePos] a taste of "+fluidOwnerName+" "+fluidName+", you instruct [npc.herHim] to kneel down before you."
-													+" As soon as [npc.she] complies, you grab one of the free tubes connected to your selected vat of fluid,"
-													+" before quickly removing the suction device on the end and screwing on one of the straw-like attachments."
-													+"</p>"
-													+"Bringing the straw to [npc.namePos] mouth, you waste no time in sliding it between [npc.her] [npc.lips+] and telling [npc.herHim] to prepare [npc.herself] for a tasty meal."
-													+" Flicking the switch on the side of the vat from 'suck' to 'pump', you then press the start button, letting out a delighted [pc.moan] as you watch [npc.name] hungrily gulp down the "+fluidName+"."));
+											"Желая дать [npc.namePos] попробовать "+fluidOwnerName+" "+fluidName+", вы приказываете [npc.herHim] опуститься перед вами на колени. Как только [npc.she] подчиняется, вы хватаете одну из свободных трубок, подсоединенных к выбранному вами резервуару с жидкостью, быстро снимаете наконечник-присоску и навинчиваете одну из соломинок-насадок.</p>Поднеся соломинку к рту [npc.namePos], вы не теряя времени просовываете ее между [npc.her] [npc.lips+] и велите [npc.herHim] подготовить [npc.herself] к вкусной трапезе. Переключая тумблер на боку резервуара с режима «всасывание» на «нагнетание», вы нажимаете кнопку пуска, извлекая из [pc.moan] восторженный звук, пока наблюдаете, как [npc.name] жадно глотает "+fluidName+"."));
 									break;
 								case VAGINA:
 									Main.game.getTextEndStringBuilder().append(UtilText.parse(MilkingRoom.getTargetedCharacter(),
-											"Wanting to pump [npc.namePos] [npc.pussy+] full of "+fluidOwnerName+" "+fluidName+", you instruct [npc.herHim] to"
+											"Желая наполнить [npc.namePos] [npc.pussy+] до краев "+fluidOwnerName+" "+fluidName+", ты приказываешь [npc.herHim]"
 													+(!MilkingRoom.getTargetedCharacter().isTaur()
 													&& MilkingRoom.getTargetedCharacter().hasLegs()
 													&& MilkingRoom.getTargetedCharacter().getGenitalArrangement() == GenitalArrangement.NORMAL
-													?" sit down on a nearby chair and spread [npc.her] [npc.legs]."
-													:" kneel down and present [npc.herself] to you.")
-													+" As soon as [npc.she] complies, and [npc.her] [npc.pussy+] is fully on display, you grab one of the free tubes connected to your selected vat of fluid,"
-													+" before quickly removing the suction device on the end and screwing on one of the funnel attachments."
-													+"</p>"
-													+"<p>"
-													+"Guiding the end of the tube up to [npc.namePos] [npc.labia+], you waste no time in sliding the funnel into [npc.her] [npc.pussy+], smiling to yourself as [npc.she] lets out [npc.a_moan+]."
-													+" Flicking the switch on the side of the vat from 'suck' to 'pump', you then press the start button,"
-													+" causing [npc.name] to let out yet more delighted [npc.moans] as [npc.she] feels the "+fluidName+" being pumped"
+													?" садится на ближайший стул и широко разводит [npc.her] [npc.legs]."
+													:" опуститься на колени и подставить [npc.herself] тебе.")
+													+" Как только [npc.she] подчиняется, и [npc.her] [npc.pussy+] оказывается полностью на виду, ты хватаешь одну из свободных трубок, подключенных к выбранному тобой чану с жидкостью, быстро снимаешь всасывающее устройство на конце и навинчиваешь одну из воронкообразных насадок.</p><p>Подводя конец трубки к [npc.namePos] [npc.labia+], ты не теряя времени просовываешь воронку в [npc.her] [npc.pussy+], довольно улыбаясь про себя, когда [npc.she] издает [npc.a_moan+]. Переключив рычаг на боку чана из режима «всасывание» в режим «насос», ты нажимаешь кнопку пуска, заставляя [npc.name] издавать еще больше восторженных [npc.moans], пока [npc.she] чувствует "+fluidName+" в тебя закачивают"
 													+(MilkingRoom.getTargetedCharacter().isVisiblyPregnant()
-													?" into [npc.her] [npc.pussy]."
-													:" directly into [npc.her] waiting womb.")));
+													?" в [npc.her] [npc.pussy]."
+													:" прямо в ожидающее чрево [npc.her].")));
 									break;
 								default:
 									break;
@@ -298,8 +275,7 @@ public class OccupantController {
 						Main.game.getTextEndStringBuilder().append("</p>");
 						Main.game.getTextEndStringBuilder().append(
 								"<p style='text-align:center;'>"
-										+"<i style='color:"+PresetColour.GENERIC_MINOR_BAD.toWebHexString()+";'>"+Units.fluid(milkAmount)+" of "+fluidOwnerName+" "+fluidName+" has been consumed!</i>"
-										+"</p>");
+										+"<i style='color:"+PresetColour.GENERIC_MINOR_BAD.toWebHexString()+";'>"+Units.fluid(milkAmount)+" из "+fluidOwnerName+" "+fluidName+" было поглощено!</i></p>");
 						
 						room.incrementFluidStored(fluid, -milkAmount);
 						
@@ -307,21 +283,21 @@ public class OccupantController {
 						
 					}, false);
 				}
-				String verb = "Drink";
+				String verb = "Выпить";
 				String description;
 				
 				if (MilkingRoom.getTargetedCharacter().isPlayer()) {
-					description = "Drink "+Units.fluid(milkAmount)+" of the "+fluidName+".";
+					description = "Выпить "+Units.fluid(milkAmount)+" из "+fluidName+".";
 					if (area.getKey() != CoverableArea.MOUTH) {
-						verb = "Pump";
-						description = "Pump "+Units.fluid(milkAmount)+" of the "+fluidName+" into your "+area.getKey().getName()+".";
+						verb = "Насос";
+						description = "Насос "+Units.fluid(milkAmount)+" из "+fluidName+" в твою "+area.getKey().getName()+".";
 					}
 					
 				} else {
-					description = UtilText.parse(MilkingRoom.getTargetedCharacter(), "Get [npc.name] to drink ")+Units.fluid(milkAmount)+" of the "+fluidName+".";
+					description = UtilText.parse(MilkingRoom.getTargetedCharacter(), "Заставить [npc.name] выпить ")+Units.fluid(milkAmount)+" из "+fluidName+".";
 					if (area.getKey() != CoverableArea.MOUTH) {
-						verb = "Pump";
-						description = "Pump "+Units.fluid(milkAmount)+" of the "+fluidName+" into "+UtilText.parse(MilkingRoom.getTargetedCharacter(), "[npc.namePos] ")+area.getKey().getName()+".";
+						verb = "Насос";
+						description = "Насос "+Units.fluid(milkAmount)+" из "+fluidName+" into "+UtilText.parse(MilkingRoom.getTargetedCharacter(), "[npc.namePos] ")+area.getKey().getName()+".";
 					}
 				}
 				
@@ -343,11 +319,11 @@ public class OccupantController {
 				int income = Math.max(1, (int) (fluid.getFluid().getValuePerMl()*fluid.getMillilitres()));
 				Main.game.getPlayer().incrementMoney(income);
 				room.getFluidsStored().remove(fluid);
-				Main.game.getTextEndStringBuilder().append("<p style='text-align:center;'>You sold the "+fluidName+" for "+(UtilText.formatAsMoney(income, "span"))+"!</p>");
+				Main.game.getTextEndStringBuilder().append("<p style='text-align:center;'>Вы продали "+fluidName+" на "+(UtilText.formatAsMoney(income, "охват"))+"!</p>");
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
 			MainController.addTooltipListeners(id,
-					new TooltipInformationEventListener().setInformation("Sell", "Sell all of the "+fluidName+" for "+(Math.max(1, (int) (fluid.getFluid().getValuePerMl()*fluid.getMillilitres())))+" flames."));
+					new TooltipInformationEventListener().setInformation("Продать", "Продать все "+fluidName+" for "+(Math.max(1, (int) (fluid.getFluid().getValuePerMl()*fluid.getMillilitres())))+" огни."));
 		}
 	}
 	
@@ -358,7 +334,7 @@ public class OccupantController {
 				int finalI = i; // Lambda requirement
 				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
 					OccupantManagementDialogue.setDayNumber(Main.game.getDayNumber()-finalI);
-					Main.game.setContent(new Response("Rename", "", Main.game.getCurrentDialogueNode()));
+					Main.game.setContent(new Response("Переименовать", "", Main.game.getCurrentDialogueNode()));
 				}, false);
 			}
 		}
@@ -375,9 +351,9 @@ public class OccupantController {
 				CompanionManagement.copyJobSchedule();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
-			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Copy Job Schedule",
+			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Копировать график работ",
 					UtilText.parse(CompanionManagement.characterSelected(),
-							"Copy [npc.namePos] job schedule, which will then enable you to paste this exact same schedule onto other slaves within their own job management screen.")));
+							"Копировать график работ [npc.namePos], что позволит вам вставить точно такой же график другим рабыням в их собственных окнах управления работами.")));
 		}
 		id = "pasteSlaveJobSchedule";
 		if (MainController.document.getElementById(id) != null) {
@@ -387,15 +363,15 @@ public class OccupantController {
 					if(fullyPasted) {
 						Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 					} else {
-						Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()), PresetColour.GENERIC_BAD, "Some jobs were unable to be pasted!");
+						Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()), PresetColour.GENERIC_BAD, "Некоторые задачи не удалось вставить!");
 					}
 				}
 			}, false);
-			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Paste Job Schedule",
+			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Вставить график работ",
 					UtilText.parse(CompanionManagement.characterSelected(),
 							CompanionManagement.isJobSchedulePasteAvailable()
-								?"Paste the currently copied job schedule, thereby making [npc.name] have the exact same job schedule as the one which you've copied."
-								:"You haven't copied a job schedule yet, so you can't paste it to replace [npc.namePos]...")));
+								?"Вставить текущий скопированный график работ, благодаря чему у [npc.name] будет точно такой же график, как у того, который вы скопировали."
+								:"Вы еще не копировали график работ, поэтому не можете вставить его, чтобы заменить график [npc.namePos]...")));
 		}
 		// Job settings:
 		id = "copySlaveJobSettings";
@@ -404,9 +380,9 @@ public class OccupantController {
 				CompanionManagement.copyJobSettings();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
-			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Copy Job Settings",
+			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Копировать настройки работы",
 					UtilText.parse(CompanionManagement.characterSelected(),
-							"Copy [npc.namePos] job settings, which will then enable you to paste these exact same settings onto other slaves within their own job management screen.")));
+							"Копирует настройки работы [npc.namePos], что позволит вам вставить точно такие же настройки другим рабыням в их собственных окнах управления работой.")));
 		}
 		id = "pasteSlaveJobSettings";
 		if (MainController.document.getElementById(id) != null) {
@@ -416,11 +392,11 @@ public class OccupantController {
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}
 			}, false);
-			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Paste Job Settings",
+			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Вставить настройки работы",
 					UtilText.parse(CompanionManagement.characterSelected(),
 							CompanionManagement.isJobSettingsPasteAvailable()
-								?"Paste the currently copied job settings, thereby making [npc.name] have the exact same job settings as those which you've copied."
-								:"You haven't copied a set of job settings yet, so you can't paste them to replace [npc.namePos]...")));
+								?"Вставляет скопированные настройки работы, благодаря чему у [npc.name] будут точно такие же настройки, как у тех, кого вы скопировали."
+								:"Вы еще не копировали набор настроек работы, поэтому не можете вставить их, чтобы заменить настройки [npc.namePos]...")));
 		}
 		
 		// Job hours:
@@ -441,7 +417,7 @@ public class OccupantController {
 				id = i+"_WORK_DISABLED";
 				if (MainController.document.getElementById(id) != null) {
 					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation(
-							"[style.colourBad(Unavailable Time Slot)]",
+							"[style.colourBad(Недоступный временной слот)]",
 							Main.game.getDialogueFlags().getSlaveryManagerJobSelected().getAvailabilityText(i, Main.game.getDialogueFlags().getManagementCompanion())));
 				}
 			}
@@ -468,14 +444,14 @@ public class OccupantController {
 					}
 					Main.game.setContent(new Response("", "", CompanionManagement.getSlaveryManagementSlaveJobsDialogue(Main.game.getDialogueFlags().getManagementCompanion())));
 				}, false);
-				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Set Preset Work Hours", preset.getDescription()));
+				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Установить предустановленные рабочие часы", preset.getDescription()));
 			}
 			
 			id = preset+"_TIME_DISABLED";
 			if (MainController.document.getElementById(id) != null) {
 				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation(
-						"[style.colourBad(Set Preset Work Hours)]",
-						"You cannot assign these hours. Either the job is not available for these hours, or it is too much work."));
+						"[style.colourBad(Установить предустановленные рабочие часы)]",
+						"Вы не можете назначить эти часы. Либо работа недоступна в это время, либо это слишком большая нагрузка."));
 			}
 		}
 		
@@ -503,10 +479,9 @@ public class OccupantController {
 						Main.game.setContent(new Response("", "", CompanionManagement.getSlaveryManagementSlaveJobsDialogue(Main.game.getDialogueFlags().getManagementCompanion())));
 					}, false);
 					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation(
-							"<b style='color:"+job.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(job.getName(Main.game.getDialogueFlags().getManagementCompanion()))+":</b> "
-									+"<b style='color:"+setting.getColour().toWebHexString()+";'>"+setting.getName()+"</b>",
+							"<b style='color:"+job.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(job.getName(Main.game.getDialogueFlags().getManagementCompanion()))+":</b> <b style='color:"+setting.getColour().toWebHexString()+";'>"+setting.getName()+"</b>",
 							setting.getDescription()
-									+" [style.italicsMinorGood(Click to apply this permission.)]"));
+									+" [style.italicsMinorGood(Нажмите, чтобы применить это разрешение.)]"));
 				}
 				
 				id = job.toString()+setting+"_REMOVE";
@@ -516,10 +491,9 @@ public class OccupantController {
 						Main.game.setContent(new Response("", "", CompanionManagement.getSlaveryManagementSlaveJobsDialogue(Main.game.getDialogueFlags().getManagementCompanion())));
 					}, false);
 					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation(
-							"<b style='color:"+job.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(job.getName(Main.game.getDialogueFlags().getManagementCompanion()))+":</b> "
-									+"<b style='color:"+setting.getColour().toWebHexString()+";'>"+setting.getName()+"</b>",
+							"<b style='color:"+job.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(job.getName(Main.game.getDialogueFlags().getManagementCompanion()))+":</b> <b style='color:"+setting.getColour().toWebHexString()+";'>"+setting.getName()+"</b>",
 							setting.getDescription()
-									+" [style.italicsMinorBad(Click to revoke this permission.)]"));
+									+" [style.italicsMinorBad(Нажмите, чтобы отозвать это разрешение.)]"));
 				}
 			}
 			
@@ -535,19 +509,17 @@ public class OccupantController {
 							Main.game.setContent(new Response("", "", CompanionManagement.getSlaveryManagementSlaveJobsDialogue(Main.game.getDialogueFlags().getManagementCompanion())));
 						}, false);
 						MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation(
-								"<b style='color:"+job.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(job.getName(Main.game.getDialogueFlags().getManagementCompanion()))+":</b> "
-										+"<b style='color:"+setting.getColour().toWebHexString()+";'>"+setting.getName()+"</b>",
+								"<b style='color:"+job.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(job.getName(Main.game.getDialogueFlags().getManagementCompanion()))+":</b> <b style='color:"+setting.getColour().toWebHexString()+";'>"+setting.getName()+"</b>",
 								setting.getDescription()
-										+" [style.italicsMinorGood(Click to apply this permission.)]"));
+										+" [style.italicsMinorGood(Нажмите, чтобы применить это разрешение.)]"));
 					}
 					
 					id = setting+"_DISABLED";
 					if (MainController.document.getElementById(id) != null) {
 						MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation(
-								"<b style='color:"+job.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(job.getName(Main.game.getDialogueFlags().getManagementCompanion()))+":</b> "
-										+"<b style='color:"+setting.getColour().toWebHexString()+";'>"+setting.getName()+"</b>",
+								"<b style='color:"+job.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(job.getName(Main.game.getDialogueFlags().getManagementCompanion()))+":</b> <b style='color:"+setting.getColour().toWebHexString()+";'>"+setting.getName()+"</b>",
 								setting.getDescription()
-										+" [style.italicsMinorBad(You cannot revoke permissions in this category. Select a different one instead.)]"));
+										+" [style.italicsMinorBad(В этой категории нельзя отзывать разрешения. Выберите другую.)]"));
 					}
 				}
 			}
@@ -563,9 +535,9 @@ public class OccupantController {
 				CompanionManagement.copyPermissions();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
-			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Copy Permissions",
+			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Копировать разрешения",
 					UtilText.parse(CompanionManagement.characterSelected(),
-							"Copy [npc.namePos] permissions, which will then enable you to paste these exact same permissions onto other slaves within their own permissions management screen.")));
+							"Копирует разрешения [npc.namePos], после чего вы сможете вставить точно такие же разрешения другим рабыням в их собственных окнах управления разрешениями.")));
 		}
 		id = "pastePermissions";
 		if (MainController.document.getElementById(id) != null) {
@@ -575,11 +547,11 @@ public class OccupantController {
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}
 			}, false);
-			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Paste Permissions",
+			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Вставить разрешения",
 					UtilText.parse(CompanionManagement.characterSelected(),
 							CompanionManagement.isPermissionsPasteAvailable()
-								?"Paste the currently copied permissions, thereby making [npc.name] have the exact same permissions as those which you've copied."
-								:"You haven't copied a set of permissions yet, so you can't paste them to replace [npc.namePos]...")));
+								?"Вставить скопированные права доступа, благодаря чему [npc.name] получит точно такие же права, какие вы скопировали."
+								:"Вы еще не копировали набор прав доступа, поэтому не можете вставить их, чтобы заменить [npc.namePos]...")));
 		}
 		
 		// Permissions:
@@ -594,9 +566,9 @@ public class OccupantController {
 					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation(
 							"<b style='color:"+permission.getColour().toWebHexString()+";'>"+permission.getName()+":</b> "+setting.getName(),
 							setting.getDescription()
-									+" [style.italicsMinorGood(Click to apply this permission.)]"
+									+" [style.italicsMinorGood(Нажмите, чтобы применить это разрешение.)]"
 									+(permission.isMutuallyExclusiveSettings()
-									?" [style.italicsMinorBad(Only one permission in this category can be active at once.)]"
+									?" [style.italicsMinorBad(В этой категории может быть активным только одно право одновременно.)]"
 									:""),
 							91 + (setting.getAdditionalDescriptionLines()*16)));
 				}
@@ -610,7 +582,7 @@ public class OccupantController {
 					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation(
 							"<b style='color:"+permission.getColour().toWebHexString()+";'>"+permission.getName()+":</b> "+setting.getName(),
 							setting.getDescription()
-									+" [style.italicsMinorBad(Click to revoke this permission.)]",
+									+" [style.italicsMinorBad(Нажмите, чтобы отозвать это разрешение.)]",
 							91 + (setting.getAdditionalDescriptionLines()*16)));
 				}
 				
@@ -619,7 +591,7 @@ public class OccupantController {
 					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation(
 							"<b style='color:"+permission.getColour().toWebHexString()+";'>"+permission.getName()+":</b> "+setting.getName(),
 							setting.getDescription()
-									+" [style.italicsMinorBad(You cannot revoke permissions in this category. Select a different one instead.)]",
+									+" [style.italicsMinorBad(В этой категории нельзя отзывать разрешения. Выберите другую.)]",
 							91 + (setting.getAdditionalDescriptionLines()*16)));
 				}
 			}
@@ -643,8 +615,8 @@ public class OccupantController {
 				}, false);
 				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation(
 						osm==OccupantSortingMethod.NONE
-							?"No Sorting"
-							:"Sort By "+friendlyName,
+							?"Без сортировки"
+							:"Сортировать по "+friendlyName,
 						osm.getSortingDescription(),
 						18*2));
 			}
@@ -662,7 +634,7 @@ public class OccupantController {
 				});
 			}, false);
 			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation(
-					"Sort in ascending order",
+					"По возрастанию",
 					""));
 		}
 		
@@ -678,7 +650,7 @@ public class OccupantController {
 				});
 			}, false);
 			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation(
-					"Sort in descending order",
+					"По убыванию",
 					""));
 		}
 		
@@ -704,8 +676,8 @@ public class OccupantController {
 							}
 						});
 					}, false);
-					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Inspect Slave",
-							UtilText.parse(slave, "Inspect [npc.name]."),
+					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Осмотреть рабыню",
+							UtilText.parse(slave, "Осмотреть [npc.name]."),
 							18));
 				}
 				
@@ -724,8 +696,8 @@ public class OccupantController {
 							}
 						});
 					}, false);
-					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Manage Slave's Job",
-							UtilText.parse(slave, "Set [npc.namePos] job and work hours."),
+					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Управление работой рабыни",
+							UtilText.parse(slave, "Установить работу и часы работы [npc.namePos]."),
 							18));
 				}
 				
@@ -744,8 +716,8 @@ public class OccupantController {
 							}
 						});
 					}, false);
-					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Manage Slave's Permissions",
-							UtilText.parse(slave, "Manage [npc.namePos] permissions."),
+					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Управление правами рабыни",
+							UtilText.parse(slave, "Управление правами [npc.namePos]."),
 							18));
 				}
 				
@@ -755,8 +727,8 @@ public class OccupantController {
 						CompanionManagement.initManagement(Main.game.getCurrentDialogueNode(), CompanionManagement.getDefaultResponseTab(), slave);
 						Main.mainController.openInventory(slave, InventoryInteraction.FULL_MANAGEMENT);
 					}, false);
-					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Manage Slave's Inventory",
-							UtilText.parse(slave, "Manage [npc.namePos] inventory."),
+					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Управление инвентарем рабыни",
+							UtilText.parse(slave, "Управление инвентарем [npc.namePos]."),
 							18));
 				}
 				
@@ -775,32 +747,32 @@ public class OccupantController {
 							}
 						});
 					}, false);
-					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Move Slave Here",
-							UtilText.parse(slave, "Move [npc.name] to your current location."),
+					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Переместить рабыню сюда",
+							UtilText.parse(slave, "Переместить [npc.name] в ваше текущее местоположение."),
 							18));
 				}
 				
 				id = slaveId+"_TRANSFER_DISABLED_FULL";
 				if (MainController.document.getElementById(id) != null) {
-					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Move Slave Here",
-							UtilText.parse(slave, "You cannot move [npc.name] to this location, as there's no room for [npc.herHim] here."),
+					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Переместить рабыню сюда",
+							UtilText.parse(slave, "Вы не можете переместить [npc.name] в это место, так как здесь нет места для [npc.herHim]."),
 							18*2));
 				}
 				id = slaveId+"_TRANSFER_DISABLED_INAPPPROPRIATE";
 				if (MainController.document.getElementById(id) != null) {
-					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Move Slave Here",
+					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Переместить рабыню сюда",
 							UtilText.parse(slave,
-									"You cannot move [npc.name] to this location, as it's not a suitable room for [npc.herHim]..."
+									"Вы не можете переместить [npc.name] в это место, так как это неподходящая комната для [npc.herHim]..."
 									+(slave.isDoll()
-										?"<br/><i>Dolls can only use doll closets as their home tile...</i>"
-										:"<br/><i>Slaves can only use slave rooms as their home tile...</i>")
+										?"<br/><i>Куклы могут использовать в качестве своего домашнего тайла только шкафы для кукол...</i>"
+										:"<br/><i>Рабы могут использовать в качестве своего домашнего тайла только рабские комнаты...</i>")
 									),
 							18*3));
 				}
 				id = slaveId+"_TRANSFER_DISABLED_ALREADY_HERE";
 				if (MainController.document.getElementById(id) != null) {
-					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Move Slave Here",
-							UtilText.parse(slave, "You cannot move [npc.name] to this location, as [npc.sheIs] already treating this room as [npc.her] home!"),
+					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Переместить рабыню сюда",
+							UtilText.parse(slave, "Вы не можете переместить [npc.name] в это место, так как [npc.sheIs] уже считает эту комнату своим [npc.her] домом!"),
 							18*2));
 				}
 				
@@ -820,26 +792,25 @@ public class OccupantController {
 					}, false);
 					
 					if(slave.isAbleToBeSold()) {
-						MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Sell Slave",
+						MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Продать раба",
 								UtilText.parse(slave,
-										"[npc.Name] has a value of "+UtilText.formatAsMoney(slave.getValueAsSlave(true), "b", PresetColour.GENERIC_GOOD)
-											+"<br/>"
-											+"However, "+Main.game.getDialogueFlags().getSlaveTrader().getName(true)+" will buy [npc.herHim] for "
+										"Стоимость [npc.Name] составляет "+UtilText.formatAsMoney(slave.getValueAsSlave(true), "b", PresetColour.GENERIC_GOOD)
+											+"<br/>Однако, "+Main.game.getDialogueFlags().getSlaveTrader().getName(true)+" купит [npc.herHim] за "
 											+UtilText.formatAsMoney((int) (slave.getValueAsSlave(true)*Main.game.getDialogueFlags().getSlaveTrader().getBuyModifier()), "b", PresetColour.GENERIC_ARCANE)+".")));
 					} else {
-						MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Sell Slave",
-								UtilText.parse(slave,"[npc.Name] cannot be sold!"),
+						MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Продать раба",
+								UtilText.parse(slave,"[npc.Name] нельзя продать!"),
 								18));
 					}
 				}
 				
 				id = slaveId+"_SELL_DISABLED";
 				if (MainController.document.getElementById(id) != null) {
-					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Sell Slave",
+					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Продать раба",
 							UtilText.parse(slave,
 									slave.isAbleToBeSold()
-											?"You cannot sell [npc.name], as there's nobody here to sell [npc.herHim] to."
-											:"[npc.Name] cannot be sold!"),
+											?"Вы не можете продать [npc.name], так как здесь некому продать [npc.herHim]."
+											:"[npc.Name] нельзя продать!"),
 							slave.isAbleToBeSold()
 								?18*2
 								:18));
@@ -857,15 +828,15 @@ public class OccupantController {
 							}
 						});
 					}, false);
-					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Send to Kate",
-							UtilText.parse(slave, "Send [npc.name] to Kate's beauty salon, 'Succubi's Secrets', to get [npc.her] appearance changed."),
+					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Отправить Кейт",
+							UtilText.parse(slave, "Отправить [npc.name] в салон красоты Кейт «Секреты суккуба», чтобы изменить внешность [npc.her]."),
 							18*2));
 				}
 				
 				id = slaveId+"_COSMETICS_DISABLED";
 				if (MainController.document.getElementById(id) != null) {
-					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Send Slave to Kate",
-							UtilText.parse(slave, "You haven't met Kate yet!"),
+					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Отправить рабыню к Кейт",
+							UtilText.parse(slave, "Вы еще не встречали Кейт!"),
 							18));
 				}
 			}
@@ -893,16 +864,16 @@ public class OccupantController {
 							}
 						});
 					}, false);
-					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Inspect Character",
-							UtilText.parse(occupant, "Inspect [npc.name]."),
+					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Осмотреть персонажа",
+							UtilText.parse(occupant, "Осмотреть [npc.name]."),
 							18));
 				}
 				
 				id = occupantId+"_JOB";
 				if (MainController.document.getElementById(id) != null) {
 					if(occupant.hasJob()) {
-						MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Manage Job",
-								UtilText.parse(occupant, "[npc.name] already has a permanent job, so cannot be assigned to work within the mansion..."),
+						MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Управление работой",
+								UtilText.parse(occupant, "У [npc.name] уже есть постоянная работа, поэтому его нельзя назначить на работу в особняке..."),
 								18*2));
 						
 					} else {
@@ -915,16 +886,16 @@ public class OccupantController {
 								}
 							});
 						}, false);
-						MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Manage Job",
-								UtilText.parse(occupant, "Assign [npc.name] some temporary work."),
+						MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Управление работой",
+								UtilText.parse(occupant, "Дать [npc.name] какую-нибудь временную работу."),
 								18));
 					}
 				}
 				
 				id = occupantId+"_PERMISSIONS";
 				if (MainController.document.getElementById(id) != null) {
-					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Manage Permissions",
-							"You cannot manage a free-willed occupant's permissions.",
+					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Управление правами",
+							"Вы не можете управлять правами свободного обитателя.",
 							18*2));
 				}
 				
@@ -936,8 +907,8 @@ public class OccupantController {
 						Main.mainController.openInventory(occupant, InventoryInteraction.FULL_MANAGEMENT);
 						
 					}, false);
-					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Manage Inventory",
-							UtilText.parse(occupant, "Manage [npc.namePos] inventory."),
+					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Управление инвентарем",
+							UtilText.parse(occupant, "Управление инвентарем [npc.namePos]."),
 							18));
 				}
 				
@@ -952,15 +923,15 @@ public class OccupantController {
 							}
 						});
 					}, false);
-					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Move Here",
-							UtilText.parse(occupant, "Move [npc.name] to your current location."),
+					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Переместить сюда",
+							UtilText.parse(occupant, "Переместить [npc.name] в ваше текущее местоположение."),
 							18));
 				}
 				
 				id = occupantId+"_TRANSFER_DISABLED";
 				if (MainController.document.getElementById(id) != null) {
-					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Move Here",
-							UtilText.parse(occupant, "You cannot move [npc.name] to this location, as there's no room for [npc.herHim] here."),
+					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Переместить сюда",
+							UtilText.parse(occupant, "Вы не можете переместить [npc.name] в это место, так как здесь нет места для [npc.herHim]."),
 							18*2));
 				}
 				
@@ -976,15 +947,15 @@ public class OccupantController {
 							}
 						});
 					}, false);
-					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Send to Kate",
-							UtilText.parse(occupant, "Send [npc.name] to Kate's beauty salon, 'Succubi's Secrets', to get [npc.her] appearance changed."),
+					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Отправить Кейт",
+							UtilText.parse(occupant, "Отправить [npc.name] в салон красоты Кейт «Секреты суккуба», чтобы изменить внешность [npc.her]."),
 							18*2));
 				}
 				
 				id = occupantId+"_COSMETICS_DISABLED";
 				if (MainController.document.getElementById(id) != null) {
-					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Send to Kate",
-							"You haven't met Kate yet!",
+					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Отправить Кейт",
+							"Вы еще не встречали Кейт!",
 							18));
 				}
 			}
@@ -998,7 +969,7 @@ public class OccupantController {
 			try {
 				slave = (NPC) Main.game.getNPCById(slaveId);
 			} catch (Exception e) {
-				Util.logGetNpcByIdError("OccupantController.initOccupantListListeners, TRADER.", slaveId);
+				Util.logGetNpcByIdError("OccupantController.initOccupantListListeners, ТОРГОВЕЦ.", slaveId);
 				continue;
 			}
 			
@@ -1012,32 +983,32 @@ public class OccupantController {
 						}
 					});
 				}, false);
-				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Inspect Slave",
-						UtilText.parse(slave, "Take a detailed look at [npc.name].")));
+				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Осмотреть рабыню",
+						UtilText.parse(slave, "Внимательно осмотреть [npc.name].")));
 			}
 			
 			id = slaveId+"_TRADER_JOB";
 			if (MainController.document.getElementById(id) != null) {
-				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Manage Slave's Job",
-						UtilText.parse(slave, "You cannot manage [npc.namePos] job, as you don't own [npc.herHim]!")));
+				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Управление работой рабыни",
+						UtilText.parse(slave, "Вы не можете управлять работой [npc.namePos], так как [npc.herHim] вам не принадлежит!")));
 			}
 			
 			id = slaveId+"_TRADER_PERMISSIONS";
 			if (MainController.document.getElementById(id) != null) {
-				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Manage Slave's Permissions",
-						UtilText.parse(slave, "You cannot manage [npc.namePos] permissions, as you don't own [npc.herHim]!")));
+				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Управление правами рабыни",
+						UtilText.parse(slave, "Вы не можете управлять правами [npc.namePos], так как [npc.herHim] вам не принадлежит!")));
 			}
 			
 			id = slaveId+"_TRADER_INVENTORY";
 			if (MainController.document.getElementById(id) != null) {
-				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Manage Slave's Inventory",
-						UtilText.parse(slave, "You cannot manage [npc.namePos] inventory, as you don't own [npc.herHim]!")));
+				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Управление инвентарем рабыни",
+						UtilText.parse(slave, "Вы не можете управлять инвентарем [npc.namePos], так как не владеете [npc.herHim]!")));
 			}
 			
 			id = slaveId+"_TRADER_TRANSFER";
 			if (MainController.document.getElementById(id) != null) {
-				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Move Slave Here",
-						UtilText.parse(slave, "You cannot move [npc.name] to this location, as you don't own [npc.herHim], as well as due to the fact that [npc.sheIs] already here!")));
+				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Переместить рабыню сюда",
+						UtilText.parse(slave, "Вы не можете переместить [npc.name] в это место, так как не владеете [npc.herHim], а также потому, что [npc.sheIs] уже здесь!")));
 			}
 			
 			id = slaveId+"_BUY";
@@ -1052,22 +1023,21 @@ public class OccupantController {
 						}
 					});
 				}, false);
-				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Buy Slave",
-						UtilText.parse(slave, "[npc.Name] has a value of "+UtilText.formatAsMoney(slave.getValueAsSlave(true), "b", PresetColour.GENERIC_GOOD)+"<br/>"
-								+"However, "+Main.game.getDialogueFlags().getSlaveTrader().getName(true)+" will sell [npc.herHim] for "
+				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Купить рабыню",
+						UtilText.parse(slave, "Стоимость [npc.Name] составляет "+UtilText.formatAsMoney(slave.getValueAsSlave(true), "b", PresetColour.GENERIC_GOOD)+"<br/>Однако, "+Main.game.getDialogueFlags().getSlaveTrader().getName(true)+" продаст [npc.herHim] за "
 								+UtilText.formatAsMoney((int) (slave.getValueAsSlave(true)*Main.game.getDialogueFlags().getSlaveTrader().getSellModifier(null)), "b", PresetColour.GENERIC_ARCANE)+".")));
 			}
 			
 			id = slaveId+"_BUY_DISABLED";
 			if (MainController.document.getElementById(id) != null) {
-				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Buy Slave",
-						UtilText.parse(slave, "You cannot buy [npc.name], as you don't have enough money!")));
+				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Купить рабыню",
+						UtilText.parse(slave, "Вы не можете купить [npc.name], так как у вас недостаточно денег!")));
 			}
 			
 			id = slaveId+"_TRADER_COSMETICS";
 			if (MainController.document.getElementById(id) != null) {
-				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Send Slave to Kate",
-						UtilText.parse(slave, "You can't send a slave you don't own to Kate!")));
+				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Отправить рабыню к Кейт",
+						UtilText.parse(slave, "Вы не можете отправить Кейт рабыню, которой не владеете!")));
 			}
 		}
 	}

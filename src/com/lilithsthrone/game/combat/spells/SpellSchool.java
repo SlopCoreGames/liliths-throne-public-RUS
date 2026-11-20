@@ -12,77 +12,28 @@ import com.lilithsthrone.utils.colours.PresetColour;
 public enum SpellSchool {
 
 	EARTH("earth",
-			"<p>"
-				+ "Spells in the school of Earth are focused on manipulating both solid objects and pure waves of force."
-			+ "</p>"
-			+ "<p>"
-				+ "As with all schools of the arcane, the vast majority of Earth practitioners are demons, and can earn a considerable salary by using their telekinetic powers to aid with construction and heavy lifting."
-				+ " Perhaps due to these lucrative applications, the school of Earth is the most widely-practised and popular of all the arcane schools."
-			+ "</p>"
-			+ "<p>"
-				+ "A prerequisite to harnessing Earth spells is the ability to freely manipulate solid, non-organic matter."
-				+ " Easily learned by anyone possessing a demon-strength aura, and outlined in the introduction of all Earth spell books, this ability allows the practitioner to change the colour and material of any object."
-			+ "</p>",
-			"Dye clothing and reforge weapons at will.",
+			"<p>Заклинания школы Земли сосредоточены на манипулировании как твердыми объектами, так и чистыми волнами силы.</p><p>Как и во всех школах арканы, подавляющее большинство практиков Земли — это демоны, которые могут получать значительную плату, используя свои телекинетические способности для помощи в строительстве и подъеме тяжестей. Возможно, именно благодаря такому прибыльному применению, школа Земли является самой распространенной и популярной среди всех школ арканы.</p><p>Необходимым условием для использования заклинаний Земли является способность свободно манипулировать твердой неорганической материей. Эта способность, легко осваиваемая любым, кто обладает аурой демонической силы, и описанная во введении ко всем книгам заклинаний Земли, позволяет практику менять цвет и материал любого объекта.</p>",
+			"Красить одежду и перековывать оружие по своему желанию.",
 			PresetColour.BASE_BROWN),
 
 	WATER("water",
-			"<p>"
-				+ "Spells in the school of Water are focused on infusing liquids with arcane energy in order to manipulate their movement and temperature."
-			+ "</p>"
-			+ "<p>"
-				+ "As with all schools of the arcane, the vast majority of Water practitioners are demons, and mainly use their spells to assist with the maintenance of waterways, and to repair and install plumbing."
-				+ " Despite the lack of glamour, a student of Water can complete these tasks in a fraction of the time that it would take a regular person to do manually, allowing them to earn a considerable amount of money for their work."
-			+ "</p>"
-			+ "<p>"
-				+ "Students of the school of Water are able to effortlessly manipulate all fluids, allowing them to enchant any fluid-related potions without needing to expend arcane essences."
-			+ "</p>",
-			"All fluid-related enchantments are free.",
+			"<p>Заклинания школы Воды сосредоточены на насыщении жидкостей арканной энергией, чтобы управлять их движением и температурой.</p><p>Как и во всех школах арканы, подавляющее большинство практиков Воды — это демоны, которые в основном используют свои заклинания для обслуживания водных путей, а также для ремонта и прокладки водопровода. Несмотря на отсутствие лоска, ученик школы Воды может выполнять эти задачи в разы быстрее, чем обычный человек вручную, что позволяет ему зарабатывать на своей работе немалые деньги.</p><p>Ученики школы Воды способны без труда манипулировать любыми жидкостями, что позволяет им зачаровывать любые связанные с жидкостями зелья, не расходуя арканные эссенции.</p>",
+			"Все чары, связанные с жидкостями, бесплатны.",
 			PresetColour.BASE_AQUA),
 	
 	AIR("air",
-			"<p>"
-				+ "The school of air focuses on spells that allow the caster to manipulate the temperature and movement of gases."
-			+ "</p>"
-			+ "<p>"
-				+ "As with all schools of the arcane, the vast majority of Air practitioners are demons, but, with not many opportunities to use their spells in day-to-day business,"
-					+ " their numbers are considerably lower than those of the schools of Earth and Water."
-				+ " The only regular application of Air spells is to increase or decrease the temperature of rooms, allowing the occupants to escape the cold of winter or the heat of summer."
-			+ "</p>"
-			+ "<p>"
-				+ "Students of the school of Air are able to effortlessly control the temperature of air around them, making sure that they're never too hot or too cold."
-			+ "</p>",
-			"Passive "+Attribute.HEALTH_MAXIMUM.getName()+" and "+Attribute.MANA_MAXIMUM.getName()+" regeneration is doubled.",
+			"<p>Школа воздуха специализируется на заклинаниях, позволяющих заклинателю манипулировать температурой и движением газов.</p><p>Как и во всех школах арканы, подавляющее большинство практиков воздуха — это демоны, но, поскольку у них не так много возможностей использовать свои заклинания в повседневных делах, их численность значительно ниже, чем у школ Земли и Воды. Единственное регулярное применение заклинаний воздуха — это повышение или понижение температуры в помещениях, что позволяет обитателям спасаться от зимнего холода или летнего зноя.</p><p>Ученики школы воздуха способны без труда контролировать температуру окружающего воздуха, следя за тем, чтобы им никогда не было ни слишком жарко, ни слишком холодно.</p>",
+			"Пассивное "+Attribute.HEALTH_MAXIMUM.getName()+" and "+Attribute.MANA_MAXIMUM.getName()+" регенерация удваивается.",
 			PresetColour.BASE_BLUE_LIGHT),
 	
 	FIRE("fire",
-			"<p>"
-				+ "The school of fire, much as its name would suggest, is purely focused on summoning arcane fire."
-			+ "</p>"
-			+ "<p>"
-				+ "While arcane fire is employed in smelting and other heat-intensive industries, its many combat applications has given the school of Fire a rather poor reputation in demon society, which regards it as distasteful and crude."
-				+ " Due to this, the only demons who choose to study the school of Fire are those who are interested in arcane research, those who are directly involved in heat-intensive industries, or those who expect to do a lot of fighting."
-			+ "</p>"
-			+ "<p>"
-				+ "By sacrificing a portion of their health, students of the school of Fire are able to cast Fire spells even when out of aura."
-			+ "</p>",
-			"When out of aura, fire spells will be cast at 1/4 spell cost by using "+Attribute.HEALTH_MAXIMUM.getName()+"."
-				+ " The 'darkness' status effect will also be negated.",
+			"<p>Школа огня, как и следует из названия, сосредоточена исключительно на призыве арканического пламени.</p><p>Хотя арканический огонь используется в плавильных процессах и других высокотемпературных отраслях промышленности, его многочисленное применение в бою принесло школе огня довольно дурную репутацию в обществе демонов, которое считает это безвкусным и грубым занятием. Из-за этого единственные демоны, выбирающие изучение школы огня, — это те, кто интересуется арканическими исследованиями, те, кто непосредственно занят в высокотемпературной промышленности, или те, кто рассчитывает на участие во множестве сражений.</p><p>Принося в жертву часть своего здоровья, ученики школы огня могут творить огненные заклинания даже при отсутствии ауры.</p>",
+			"При отсутствии ауры огненные заклинания будут твориться за 1/4 стоимости заклинания с использованием "+Attribute.HEALTH_MAXIMUM.getName()+". Эффект статуса «тьма» также будет аннулирован.",
 			PresetColour.BASE_ORANGE),
 
 	ARCANE("arcane",
-			"<p>"
-				+ "Focused on harnessing the most pure form of arcane energy, the spells in the school of Arcane are concerned with either influencing a person's lust, or performing extremely powerful miscellaneous abilities."
-			+ "</p>"
-			+ "<p>"
-				+ "As the only publicly-available spells are the ones associated with influencing lust, the school of Arcane is overlooked by most demons, as their physical charms are more than adequate on this front."
-				+ " The vast majority of the students of the school of Arcane can be found in the ranks of the cult of Lilith, who view this school as the one favoured by Lilith herself."
-			+ "</p>"
-			+ "<p>"
-				+ "Once a prospective student has a basic grasp of Arcane spells, they will find that they're able to feel the ebb and flow of the arcane currents woven throughout the world,"
-					+ " and will be able to accurately predict when the next arcane storm will break."
-			+ "</p>",
-			"Know the exact time until the next arcane storm breaks.",
+			"<p>Сосредоточенные на обуздании чистейшей формы арканической энергии, заклинания школы Arcane направлены либо на управление похотью человека, либо на выполнение чрезвычайно мощных разнообразных способностей.</p><p>Поскольку единственные общедоступные заклинания — это те, что связаны с влиянием на похоть, большинство демонов обходят школу Arcane вниманием, так как их физического обаяния вполне достаточно в этом плане. Подавляющее большинство студентов школы Arcane можно найти в рядах культа Lilith, который считает эту школу любимой самой Lilith.</p><p>Как только будущий студент освоит основы заклинаний Arcane, он обнаружит, что способен чувствовать приливы и отливы арканических потоков, пронизывающих мир, и сможет точно предсказывать, когда разразится следующая арканическая буря.</p>",
+			"Знать точное время до начала следующей арканической бури.",
 			PresetColour.GENERIC_ARCANE);
 	
 	

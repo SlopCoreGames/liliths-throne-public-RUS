@@ -35,10 +35,10 @@ import com.lilithsthrone.world.places.PlaceType;
  */
 public class ZaranixDialogue {
 
-	public static final DialogueNode AFTER_COMBAT_VICTORY = new DialogueNode("Victory", "", true) {
+	public static final DialogueNode AFTER_COMBAT_VICTORY = new DialogueNode("Победа", "", true) {
 		@Override
 		public String getDescription() {
-			return "[zaranix.Name] is completely defeated, and with a weary groan, [zaranix.she] staggers back and surrenders to you...";
+			return "[zaranix.Name] полностью повержен, и с усталым стоном [zaranix.she] отступает, сдаваясь тебе...";
 		}
 		@Override
 		public int getSecondsPassed() {
@@ -51,7 +51,7 @@ public class ZaranixDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Leave", "Leave Zaranix's house.", PlaceType.DOMINION_DEMON_HOME_ZARANIX.getDialogue(false)) {
+				return new Response("Уйти", "Покинуть дом Зараникса.", PlaceType.DOMINION_DEMON_HOME_ZARANIX.getDialogue(false)) {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setLocation(WorldType.DOMINION, PlaceType.DOMINION_DEMON_HOME_ZARANIX, false);
@@ -59,7 +59,7 @@ public class ZaranixDialogue {
 				};
 				
 			} else if(index==2) {
-				return new ResponseSex("Use Zaranix", "Have some fun with this incubus.",
+				return new ResponseSex("Использовать Зараникса", "Немного развлечься с этим инкубом.",
 						true, false,
 						new SMGeneric(
 								Util.newArrayListOfValues(Main.game.getPlayer()),
@@ -70,8 +70,8 @@ public class ZaranixDialogue {
 						UtilText.parseFromXMLFile("characters/dominion/zaranix", "AFTER_COMBAT_VICTORY_USE_HIM"));
 				
 			} else if(index==3) {
-				return new ResponseSex("Submit",
-						"Allow Zaranix to fuck you.",
+				return new ResponseSex("Подчиниться",
+						"Позволить Зараникса трахать тебя.",
 						Util.newArrayListOfValues(Fetish.FETISH_SUBMISSIVE), null, CorruptionLevel.THREE_DIRTY, null, null, null,
 						true, false,
 						new SMGeneric(
@@ -83,8 +83,8 @@ public class ZaranixDialogue {
 						UtilText.parseFromXMLFile("characters/dominion/zaranix", "AFTER_COMBAT_VICTORY_SUBMIT"));
 				
 			} else if (index == 4) {
-				return new Response("Transformations",
-						"Get Zaranix to use [zaranix.her] demonic powers to transform [zaranix.herself]...",
+				return new Response("Трансформации",
+						"Заставить Зараникса использовать демонические силы [zaranix.her], чтобы трансформировать [zaranix.herself]...",
 						BodyChanging.BODY_CHANGING_CORE){
 					@Override
 					public void effects() {
@@ -99,7 +99,7 @@ public class ZaranixDialogue {
 		}
 	};
 	
-	public static final DialogueNode AFTER_SEX_VICTORY = new DialogueNode("Continue", "", true) {
+	public static final DialogueNode AFTER_SEX_VICTORY = new DialogueNode("Продолжить", "", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 2*60;
@@ -111,7 +111,7 @@ public class ZaranixDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue", "Continue on your journey.", PlaceType.DOMINION_DEMON_HOME_ZARANIX.getDialogue(false)) {
+				return new Response("Продолжить", "Продолжить свое путешествие.", PlaceType.DOMINION_DEMON_HOME_ZARANIX.getDialogue(false)) {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setLocation(WorldType.DOMINION, PlaceType.DOMINION_DEMON_HOME_ZARANIX, false);
@@ -125,7 +125,7 @@ public class ZaranixDialogue {
 		}
 	};
 	
-	public static final DialogueNode AFTER_COMBAT_DEFEAT = new DialogueNode("Defeated", "", true) {
+	public static final DialogueNode AFTER_COMBAT_DEFEAT = new DialogueNode("Повержена", "", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 1*60;
@@ -138,7 +138,7 @@ public class ZaranixDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(!Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.MOUTH, true)) {
 				if(index==1) {
-					return new Response("Thrown out", "As he's unable to gain access to your mouth, Zaranix cannot make use of you and so simply throws out into the street.", PlaceType.DOMINION_DEMON_HOME_ZARANIX.getDialogue(false)) {
+					return new Response("Тебя вышвыривают", "Поскольку он не может добраться до твоего рта, Зараникс не может использовать тебя и просто выбрасывает на улицу.", PlaceType.DOMINION_DEMON_HOME_ZARANIX.getDialogue(false)) {
 						@Override
 						public void effects() {
 							Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("characters/dominion/zaranix", "AFTER_COMBAT_DEFEAT_NO_MOUTH"));
@@ -151,12 +151,12 @@ public class ZaranixDialogue {
 			} else if(!Main.game.isNonConEnabled()) {
 				if(index==1) {
 					if(Main.game.getPlayer().hasFetish(Fetish.FETISH_TRANSFORMATION_RECEIVING)) {
-						return new Response("Refuse",
-								"Due to your <b style='color:"+PresetColour.FETISH.toWebHexString()+";'>"+Fetish.FETISH_TRANSFORMATION_RECEIVING.getName(Main.game.getPlayer())
-									+"</b> fetish, you love being transformed so much that you can't bring yourself to refuse the transformative liquid!",
+						return new Response("Отказаться",
+								"Из-за твоего <b style='color:"+PresetColour.FETISH.toWebHexString()+";'>"+Fetish.FETISH_TRANSFORMATION_RECEIVING.getName(Main.game.getPlayer())
+									+"</b> фетиш: тебе так нравится трансформация, что ты не можешь заставить себя отказаться от преобразующей жидкости!",
 								null);
 					} else {
-						return new Response("Refuse", "Refuse to drink the transformative potion. This will result in Zaranix having you thrown out into the street.", PlaceType.DOMINION_DEMON_HOME_ZARANIX.getDialogue(false)) {
+						return new Response("Отказаться", "Отказаться пить преобразующее зелье. Это приведет к тому, что Зараникс выбросит тебя на улицу.", PlaceType.DOMINION_DEMON_HOME_ZARANIX.getDialogue(false)) {
 							@Override
 							public void effects() {
 								Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("characters/dominion/zaranix", "AFTER_COMBAT_DEFEAT_REFUSE"));
@@ -167,7 +167,7 @@ public class ZaranixDialogue {
 					}
 					
 				} else if(index==2) {
-					return new Response("Drink", "Agree to drink the transformative potion.", AFTER_COMBAT_DEFEAT_SWALLOW);
+					return new Response("Выпить", "Согласиться выпить трансформирующее зелье.", AFTER_COMBAT_DEFEAT_SWALLOW);
 				}
 				
 			} else {
@@ -176,16 +176,16 @@ public class ZaranixDialogue {
 						return Response.getDisallowedSpittingResponse();
 					}
 					if(Main.game.getPlayer().hasFetish(Fetish.FETISH_TRANSFORMATION_RECEIVING)) {
-						return new Response("Spit",
-								"Due to your <b style='color:"+PresetColour.FETISH.toWebHexString()+";'>"+Fetish.FETISH_TRANSFORMATION_RECEIVING.getName(Main.game.getPlayer())
-									+"</b> fetish, you love being transformed so much that you can't bring yourself to spit out the transformative liquid!",
+						return new Response("Сплюнуть",
+								"Из-за твоего <b style='color:"+PresetColour.FETISH.toWebHexString()+";'>"+Fetish.FETISH_TRANSFORMATION_RECEIVING.getName(Main.game.getPlayer())
+									+"</b> фетиш: ты так обожаешь превращения, что даже не можешь заставить себя выплюнуть трансформирующую жидкость!",
 								null);
 					} else {
-						return new Response("Spit", "Spit out the potion.", AFTER_COMBAT_DEFEAT_SPIT);
+						return new Response("Сплюнуть", "Выплюнуть зелье.", AFTER_COMBAT_DEFEAT_SPIT);
 					}
 					
 				} else if(index==2) {
-					return new Response("Swallow", "Swallow the potion.", AFTER_COMBAT_DEFEAT_SWALLOW);
+					return new Response("Проглотить", "Проглотить зелье.", AFTER_COMBAT_DEFEAT_SWALLOW);
 				}
 			}
 			
@@ -194,7 +194,7 @@ public class ZaranixDialogue {
 		}
 	};
 	
-	public static final DialogueNode AFTER_COMBAT_DEFEAT_SPIT = new DialogueNode("Defeated", "", true, true) {
+	public static final DialogueNode AFTER_COMBAT_DEFEAT_SPIT = new DialogueNode("Повержена", "", true, true) {
 		@Override
 		public void applyPreParsingEffects() {
 			Main.game.getDialogueFlags().setFlag(DialogueFlagValue.zaranixTransformedPlayer, false);
@@ -210,7 +210,7 @@ public class ZaranixDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new ResponseSex("Obey", "Zaranix forces you to orally service him.",
+				return new ResponseSex("Повиноваться", "Зараникс заставляет тебя отсосать ему.",
 						false, false,
 						new SMZaranixCockSucking(
 								Util.newHashMapOfValues(new Value<>(Main.game.getNpc(Zaranix.class), SexSlotSitting.SITTING)),
@@ -227,7 +227,7 @@ public class ZaranixDialogue {
 				};
 				
 			} else if(index==2) {
-				return new ResponseSex("Eagerly obey", "Zaranix forces you to orally service him.",
+				return new ResponseSex("С готовностью подчиниться", "Зараникс заставляет тебя отсосать ему.",
 						false, false,
 						new SMZaranixCockSucking(
 								Util.newHashMapOfValues(new Value<>(Main.game.getNpc(Zaranix.class), SexSlotSitting.SITTING)),
@@ -252,7 +252,7 @@ public class ZaranixDialogue {
 				};
 				
 			} else if(index==3) {
-				return new ResponseSex("Resist", "Zaranix forces you to orally service him.",
+				return new ResponseSex("Сопротивляться", "Зараникс заставляет тебя отсосать ему.",
 						false, false,
 						new SMZaranixCockSucking(
 								Util.newHashMapOfValues(new Value<>(Main.game.getNpc(Zaranix.class), SexSlotSitting.SITTING)),
@@ -281,7 +281,7 @@ public class ZaranixDialogue {
 		}
 	};
 	
-	public static final DialogueNode AFTER_COMBAT_DEFEAT_SWALLOW = new DialogueNode("Defeated", "", true, true) {
+	public static final DialogueNode AFTER_COMBAT_DEFEAT_SWALLOW = new DialogueNode("Повержена", "", true, true) {
 		@Override
 		public void applyPreParsingEffects() {
 			Main.game.getDialogueFlags().setFlag(DialogueFlagValue.zaranixTransformedPlayer, true);
@@ -297,7 +297,7 @@ public class ZaranixDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new ResponseSex("Need... Cock...", "Zaranix's potion has had quite a strong effect... You really need to suck his cock, then maybe you'll be able to think clearly again?",
+				return new ResponseSex("Нужен... член...", "Зелье Зараникса подействовало весьма сильно... Тебе определенно нужно отсосать его член, может, тогда ты снова сможешь соображать здраво?",
 						true, false,
 						new SMZaranixCockSucking(
 								Util.newHashMapOfValues(new Value<>(Main.game.getNpc(Zaranix.class), SexSlotSitting.SITTING)),
@@ -323,8 +323,8 @@ public class ZaranixDialogue {
 			}
 			if(!Main.game.getPlayer().getSexualOrientation().isAttractedToMasculine()) {
 				if(index==2) {
-					return new Response("Feminine form?",
-							"You want to suck Zaranix's cock, but you aren't really attracted to masculine people. Maybe if you were to ask nicely, he could use his demonic powers to transform into a succubus for you?",
+					return new Response("Женская форма?",
+							"Тебе хочется отсосать член Зараникса, но тебя не особо привлекают мужчины. Может, если ты попросишь его вежливо, он использует свои демонические силы, чтобы превратиться в суккуба ради тебя?",
 							AFTER_COMBAT_DEFEAT_SWALLOW_ZARANIX_TF);
 				}
 			}
@@ -332,7 +332,7 @@ public class ZaranixDialogue {
 		}
 	};
 	
-	public static final DialogueNode AFTER_COMBAT_DEFEAT_SWALLOW_ZARANIX_TF = new DialogueNode("Used", "", true) {
+	public static final DialogueNode AFTER_COMBAT_DEFEAT_SWALLOW_ZARANIX_TF = new DialogueNode("Использовано", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("characters/dominion/zaranix", "AFTER_COMBAT_DEFEAT_SWALLOW_ZARANIX_TF_START"));
@@ -350,7 +350,7 @@ public class ZaranixDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new ResponseSex("Need... Cock...", "Having got what you wanted, all you can now think about is sucking Zaranix's cock...",
+				return new ResponseSex("Нужен... член...", "Получив желаемое, ты теперь можешь думать только об одном — как бы посильнее отсосать член Зараникса...",
 						true, false,
 						new SMZaranixCockSucking(
 								Util.newHashMapOfValues(new Value<>(Main.game.getNpc(Zaranix.class), SexSlotSitting.SITTING)),
@@ -372,7 +372,7 @@ public class ZaranixDialogue {
 		}
 	};
 	
-	public static final DialogueNode AFTER_SEX_DEFEAT = new DialogueNode("Used", "Zaranix has had enough of experiencing your cock-sucking skills...", true) {
+	public static final DialogueNode AFTER_SEX_DEFEAT = new DialogueNode("Использовано", "Зараникса уже тошнит от твоих навыков минета...", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 1*60;
@@ -384,7 +384,7 @@ public class ZaranixDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Thrown out", "Zaranix has thrown you out into the street.", PlaceType.DOMINION_DEMON_HOME_ZARANIX.getDialogue(false)) {
+				return new Response("Тебя вышвыривают", "Зараникс вышвырнул тебя на улицу.", PlaceType.DOMINION_DEMON_HOME_ZARANIX.getDialogue(false)) {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setLocation(WorldType.DOMINION, PlaceType.DOMINION_DEMON_HOME_ZARANIX, false);

@@ -47,9 +47,9 @@ public class GenericOffspringDialogue {
 	
 	private static String getOffspringLabel() {
 		if(offspring().hasFlag(NPCFlagValue.flagOffspringIntroduced)) {
-			return UtilText.parse(offspring(), "Talking to [npc.Name]");
+			return UtilText.parse(offspring(), "Разговор с [npc.Name]");
 		} else {
-			return "A familiar face";
+			return "Знакомое лицо";
 		}
 	}
 	
@@ -67,16 +67,16 @@ public class GenericOffspringDialogue {
 		sb.append("<p style='text-align:center;'><i>");
 		int tokens = Main.game.getDialogueFlags().offspringDialogueTokens;
 		if(tokens>=1) {
-			sb.append("[npc.Name] only has time for [style.italicsMinorBad("+Util.intToString(tokens)+" more thing"+(tokens>1?"s":"")+")] to discuss.");
+			sb.append("У [npc.Name] есть время только на [style.italicsMinorBad(, "+Util.intToString(tokens)+" одну вещь"+(tokens>1?"s":"")+")] чтобы обсудить.");
 		} else {
-			sb.append("[npc.Name] [style.italicsBad(doesn't have any time left)], and needs to get back to work.");
+			sb.append("[npc.Name] [style.italicsBad(у него почти не осталось времени)] и ему нужно возвращаться к работе.");
 		}
 		sb.append("</i></p>");
 		
 		return UtilText.parse(offspring(), sb.toString());
 	}
 	
-	public static final DialogueNode OFFSPRING_ENCOUNTER = new DialogueNode("", "You encounter someone who looks very familiar...", true) {
+	public static final DialogueNode OFFSPRING_ENCOUNTER = new DialogueNode("", "Вы встречаете кого-то, чье лицо кажется вам очень знакомым...", true) {
 		@Override
 		public void applyPreParsingEffects(){
 			if(Main.game.getCharactersTreatingCellAsHome(Main.game.getPlayerCell()).isEmpty()) {
@@ -109,7 +109,7 @@ public class GenericOffspringDialogue {
 			
 			if(offspring().getAffection(Main.game.getPlayer()) < AffectionLevel.NEGATIVE_TWO_DISLIKE.getMaximumValue()) {
 				if (index == 1) {
-					return new Response("Apologise", UtilText.parse(offspring(), "Apologise to [npc.name]."), OFFSPRING_ENCOUNTER_APOLOGY) {
+					return new Response("Извиниться", UtilText.parse(offspring(), "Извиниться перед [npc.name]."), OFFSPRING_ENCOUNTER_APOLOGY) {
 						@Override
 						public void effects() {
 							if(!offspring().hasFlag(NPCFlagValue.flagOffspringFightApologyNeeded) && !offspring().hasFlag(NPCFlagValue.flagOffspringRapeApologyNeeded)) {
@@ -129,7 +129,7 @@ public class GenericOffspringDialogue {
 					};
 					
 				} else if (index == 8) {
-					return new Response("Sex", UtilText.parse(offspring(), "There's no way [npc.she]'ll consider having sex with you when [npc.sheIs] this angry."), null) {
+					return new Response("Секс", UtilText.parse(offspring(), "Не может быть, чтобы [npc.she] захотел(а) заняться с тобой сексом, когда [npc.sheIs] в таком гневе."), null) {
 						@Override
 						public void effects() {
 							setOffspringFlags();
@@ -137,7 +137,7 @@ public class GenericOffspringDialogue {
 					};
 					
 				} else if (index == 10) {
-					return new Response("Attack", UtilText.parse(offspring(), "How dare [npc.name] talk to you like that! It's time to show [npc.herHim] [npc.her] place!"), OFFSPRING_ENCOUNTER_FIGHT) {
+					return new Response("Атаковать", UtilText.parse(offspring(), "Как [npc.name] смеет так с тобой разговаривать! Пора показать [npc.herHim], где её [npc.her] место!"), OFFSPRING_ENCOUNTER_FIGHT) {
 						@Override
 						public boolean isCombatHighlight() {
 							return true;
@@ -152,7 +152,7 @@ public class GenericOffspringDialogue {
 					};
 					
 				} else if (index == 0) {
-					return new Response("Leave", UtilText.parse(offspring(), "Tell [npc.name] that you'll come back some other time."), OFFSPRING_ENCOUNTER) {
+					return new Response("Уйти", UtilText.parse(offspring(), "Сказать [npc.name], что ты вернешься в другой раз."), OFFSPRING_ENCOUNTER) {
 							@Override
 							public DialogueNode getNextDialogue() {
 								setOffspringFlags();
@@ -170,7 +170,7 @@ public class GenericOffspringDialogue {
 				
 			} else {
 				if (index == 1) {
-					return new Response("Greeting", UtilText.parse(offspring(), "Say hello to [npc.name]."), OFFSPRING_ENCOUNTER_TALKING) {
+					return new Response("Приветствие", UtilText.parse(offspring(), "Поздороваться с [npc.name]."), OFFSPRING_ENCOUNTER_TALKING) {
 						@Override
 						public void effects() {
 							Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile(getTextFilePath(), "OFFSPRING_ENCOUNTER_GREETING", offspring()));
@@ -183,7 +183,7 @@ public class GenericOffspringDialogue {
 					};
 					
 				} else if (index == 2) {
-					return new Response("Hug", UtilText.parse(offspring(), "Hug [npc.name]."), OFFSPRING_ENCOUNTER_TALKING) {
+					return new Response("Обнять", UtilText.parse(offspring(), "Обнять [npc.name]."), OFFSPRING_ENCOUNTER_TALKING) {
 						@Override
 						public void effects() {
 							Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile(getTextFilePath(), "OFFSPRING_ENCOUNTER_HUG", offspring()));
@@ -197,7 +197,7 @@ public class GenericOffspringDialogue {
 					};
 					
 				} else if (index == 3) {
-					return new Response("Kiss", UtilText.parse(offspring(), "Give [npc.name] a hug and a kiss."), OFFSPRING_ENCOUNTER_TALKING) {
+					return new Response("Поцеловать", UtilText.parse(offspring(), "Обнять и поцеловать [npc.name]."), OFFSPRING_ENCOUNTER_TALKING) {
 						@Override
 						public void effects() {
 							Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile(getTextFilePath(), "OFFSPRING_ENCOUNTER_KISS", offspring()));
@@ -211,7 +211,7 @@ public class GenericOffspringDialogue {
 					};
 					
 				} else if (index == 4 && Main.game.isIncestEnabled()) {
-					return new Response("Passionate kiss", UtilText.parse(offspring(), "Passionately kiss [npc.name] on the lips, and feel [npc.herHim] up as you do so."), OFFSPRING_ENCOUNTER_TALKING,
+					return new Response("Страстный поцелуй", UtilText.parse(offspring(), "Страстно поцеловать [npc.name] в губы, попутно лаская [npc.herHim]."), OFFSPRING_ENCOUNTER_TALKING,
 							Util.newArrayListOfValues(Fetish.FETISH_INCEST),
 							CorruptionLevel.FOUR_LUSTFUL,
 							null,
@@ -244,11 +244,11 @@ public class GenericOffspringDialogue {
 					};
 					
 				} if (index == 5) {
-					return new Response("Scold [npc.herHim]",
-							UtilText.parse(offspring(), "Ask [npc.name] just what [npc.she] thinks [npc.sheIs] doing!"
+					return new Response("Отругать [npc.herHim].",
+							UtilText.parse(offspring(), "Спросить [npc.name], что именно [npc.she] думает о том, чем занимается [npc.sheIs]!"
 									+(offspring().getHistory()==Occupation.NPC_PROSTITUTE
-											?" (This will voice disapproval about [npc.herHim] being a prostitute.)"
-											:" (This will voice disapproval about [npc.herHim] being a mugger.)")),
+											?" (Это выразит неодобрение по поводу того, что [npc.herHim] — проститутка.)"
+											:" (Это выразит неодобрение по поводу того, что [npc.herHim] — грабительница.)")),
 							OFFSPRING_ENCOUNTER_TALKING) {
 						@Override
 						public void effects() {
@@ -268,7 +268,7 @@ public class GenericOffspringDialogue {
 					};
 					
 				} else if (index == 10) {
-					return new Response("Attack", UtilText.parse(offspring(), "How dare [npc.name] talk to you like that! It's time to show [npc.herHim] [npc.her] place!"), OFFSPRING_ENCOUNTER_FIGHT) {
+					return new Response("Атаковать", UtilText.parse(offspring(), "Как [npc.name] смеет так с тобой разговаривать! Пора показать [npc.herHim], где её [npc.her] место!"), OFFSPRING_ENCOUNTER_FIGHT) {
 						@Override
 						public boolean isCombatHighlight() {
 							return true;
@@ -283,7 +283,7 @@ public class GenericOffspringDialogue {
 					};
 					
 				} else if (index == 0 && offspring().hasFlag(NPCFlagValue.flagOffspringIntroduced)) {
-					return new Response("Leave", UtilText.parse(offspring(), "Tell [npc.name] that you'll catch up with [npc.herHim] some other time."), OFFSPRING_ENCOUNTER) {
+					return new Response("Уйти", UtilText.parse(offspring(), "Сказать [npc.name], что вы догоните [npc.herHim] в другой раз."), OFFSPRING_ENCOUNTER) {
 							@Override
 							public DialogueNode getNextDialogue() {
 								return Main.game.getDefaultDialogue(false);
@@ -330,7 +330,7 @@ public class GenericOffspringDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Continue", "Give [npc.name] some time to think, and continue on your way.", OFFSPRING_ENCOUNTER_APOLOGY) {
+				return new Response("Продолжить", "Дать [npc.name] время подумать и отправиться дальше своим путем.", OFFSPRING_ENCOUNTER_APOLOGY) {
 					@Override
 					public DialogueNode getNextDialogue(){
 						return Main.game.getDefaultDialogue(false);
@@ -362,8 +362,8 @@ public class GenericOffspringDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new ResponseCombat("Fight",
-						"You find yourself fighting your [npc.daughter]!",
+				return new ResponseCombat("Сразиться",
+						"Вы обнаруживаете, что сражаетесь со своим [npc.daughter]!",
 						offspring());
 			} else {
 				return null;
@@ -396,7 +396,7 @@ public class GenericOffspringDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(Main.game.getDialogueFlags().offspringDialogueTokens<=0) {
 				if (index == 1) {
-					return new Response("Time to go", UtilText.parse(offspring(), "[npc.Name] has started glancing at the clock on the wall, giving you a clear indication that it's time to make your exit."), OFFSPRING_ENCOUNTER) {
+					return new Response("Пора идти", UtilText.parse(offspring(), "[npc.Name] начал(а) поглядывать на настенные часы, явно давая понять, что тебе пора уходить."), OFFSPRING_ENCOUNTER) {
 						@Override
 						public void effects() {
 							Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile(getTextFilePath(), "OFFSPRING_ENCOUNTER_TALKING_OUT_OF_TIME", offspring()));
@@ -415,7 +415,7 @@ public class GenericOffspringDialogue {
 				
 			} else {
 				if (index == 1) {
-					return new Response("Background", UtilText.parse(offspring(), "Ask [npc.name] about [npc.her] background, and about what [npc.she] does for a living."), OFFSPRING_ENCOUNTER_BACKGROUND) {
+					return new Response("Прошлое", UtilText.parse(offspring(), "Спросить [npc.name] о происхождении [npc.her] и о том, чем [npc.she] зарабатывает на жизнь."), OFFSPRING_ENCOUNTER_BACKGROUND) {
 						@Override
 						public void effects() {
 							Main.game.getTextEndStringBuilder().append(offspring().incrementAffection(Main.game.getPlayer(), 10));
@@ -425,7 +425,7 @@ public class GenericOffspringDialogue {
 					};
 					
 				} else if (index == 2) {
-					return new Response("Small talk", UtilText.parse(offspring(), "Chat about this and that with [npc.name]."), OFFSPRING_ENCOUNTER_SMALL_TALK) {
+					return new Response("Светская беседа", UtilText.parse(offspring(), "Поболтать с [npc.name] о том о сем."), OFFSPRING_ENCOUNTER_SMALL_TALK) {
 						@Override
 						public void effects() {
 							Main.game.getTextEndStringBuilder().append(offspring().incrementAffection(Main.game.getPlayer(), 5));
@@ -435,7 +435,7 @@ public class GenericOffspringDialogue {
 					};
 					
 				} else if (index == 3) {
-					return new Response("Encourage", UtilText.parse(offspring(), "Encourage [npc.name] to do [npc.her] best."), OFFSPRING_ENCOUNTER_ENCOURAGE) {
+					return new Response("Подбодрить", UtilText.parse(offspring(), "Подбодрить [npc.name], чтобы [npc.her] выложился(ась) на полную."), OFFSPRING_ENCOUNTER_ENCOURAGE) {
 						@Override
 						public void effects() {
 							Main.game.getTextEndStringBuilder().append(offspring().incrementAffection(Main.game.getPlayer(), 10));
@@ -445,7 +445,7 @@ public class GenericOffspringDialogue {
 					};
 					
 				} else if (index == 4) {
-					return new Response("Scold", UtilText.parse(offspring(), "Scold [npc.name], and tell [npc.herHim] to better [npc.herself]."), OFFSPRING_ENCOUNTER_SCOLD) {
+					return new Response("Отругать", UtilText.parse(offspring(), "Отругать [npc.name] и велеть [npc.herHim] лучше [npc.herself]."), OFFSPRING_ENCOUNTER_SCOLD) {
 						@Override
 						public void effects() {
 							Main.game.getTextEndStringBuilder().append(offspring().incrementAffection(Main.game.getPlayer(), -10));
@@ -456,23 +456,22 @@ public class GenericOffspringDialogue {
 					
 				} else if (index == 5) {
 					if(!Main.game.getPlayer().hasQuest(QuestLine.SIDE_ACCOMMODATION) || !offspring().isAffectionHighEnoughToInviteHome()) {
-						return new Response("Offer room",
-								UtilText.parse(offspring(), "You feel as though it would be best to spend some more time getting to know [npc.name] before inviting [npc.herHim] back to Lilaya's mansion...<br/>"
-								+ "[style.italics(Requires [npc.name] to have at least "+AffectionLevel.POSITIVE_THREE_CARING.getMinimumValue()+" affection towards you.)]"),
+						return new Response("Предложить комнату",
+								UtilText.parse(offspring(), "Вам кажется, что было бы лучше провести больше времени, узнавая [npc.name], прежде чем приглашать [npc.herHim] обратно в особняк Lilaya...<br/>[style.italics(Требуется, чтобы [npc.name] имела хотя бы "+AffectionLevel.POSITIVE_THREE_CARING.getMinimumValue()+" немного привязанности к вам.)]"),
 								null);
 						
 					} else if(!Main.game.getPlayer().isQuestCompleted(QuestLine.SIDE_ACCOMMODATION)) {
-						return new Response("Offer room",
-								UtilText.parse(offspring(), "You'll need to get Lilaya's permission before inviting [npc.name] back to her mansion..."),
+						return new Response("Предложить комнату",
+								UtilText.parse(offspring(), "Вам нужно получить разрешение Lilaya, прежде чем приглашать [npc.name] обратно в её особняк..."),
 								null);
 						
 					} else if(!OccupancyUtil.isFreeRoomAvailableForOccupant()) {
-						return new Response("Offer room",
-								UtilText.parse(offspring(), "You don't have a suitable room prepared for [npc.name] to move in to. Upgrade one of the empty rooms in Lilaya's house to a 'Guest Room' first."),
+						return new Response("Предложить комнату",
+								UtilText.parse(offspring(), "У тебя нет подходящей комнаты, чтобы [npc.name] могла въехать. Сначала улучши одну из пустых комнат в доме Lilaya до «Гостевой комнаты»."),
 								null);
 						
 					} else {
-						return new Response("Offer room", UtilText.parse(offspring(), "Ask [npc.name] if [npc.she] would like a room in Lilaya's mansion."), OFFSPRING_OFFER_ROOM) {
+						return new Response("Предложить комнату", UtilText.parse(offspring(), "Спросить у [npc.name], хочет ли [npc.she] комнату в особняке Lilaya."), OFFSPRING_OFFER_ROOM) {
 							@Override
 							public void effects() {
 								offspring().setFlag(NPCFlagValue.flagOffspringApartmentIntroduced, true);
@@ -488,7 +487,7 @@ public class GenericOffspringDialogue {
 					}
 
 				} else if (index == 6) {
-					return new Response("Pet name", UtilText.parse(offspring(), "Ask [npc.name] to call you by a different name."), OFFSPRING_ENCOUNTER_CHOOSE_NAME) {
+					return new Response("Ласковое имя", UtilText.parse(offspring(), "Попросить [npc.name] называть тебя другим именем."), OFFSPRING_ENCOUNTER_CHOOSE_NAME) {
 						@Override
 						public void effects() {
 							offspring().setFlag(NPCFlagValue.flagOffspringApartmentIntroduced, true);
@@ -498,7 +497,7 @@ public class GenericOffspringDialogue {
 					
 				}  else if (index == 7) {
 					if(Main.game.getPlayer().hasItemType(ItemType.PRESENT)) {
-						return new Response("Give Present", UtilText.parse(offspring(), "Give [npc.name] the present that you're carrying."), OFFSPRING_PRESENT) {
+						return new Response("Вручить подарок", UtilText.parse(offspring(), "Вручить [npc.name] подарок, который у тебя с собой."), OFFSPRING_PRESENT) {
 							@Override
 							public void effects() {
 								Main.game.getPlayer().removeItem(Main.game.getItemGen().generateItem(ItemType.PRESENT));
@@ -514,7 +513,7 @@ public class GenericOffspringDialogue {
 					}
 					
 				} else if (index == 8 && Main.game.isIncestEnabled()) {
-					return new Response("Sex", UtilText.parse(offspring(), "Tell [npc.name] that you want to have sex with [npc.herHim]."), OFFSPRING_ENCOUNTER_SEX,
+					return new Response("Секс", UtilText.parse(offspring(), "Сказать [npc.name], что ты хочешь переспать с [npc.herHim]."), OFFSPRING_ENCOUNTER_SEX,
 							Util.newArrayListOfValues(Fetish.FETISH_INCEST),
 							CorruptionLevel.FIVE_CORRUPT,
 							null,
@@ -533,7 +532,7 @@ public class GenericOffspringDialogue {
 					};
 					
 				} else if (index == 10) {
-					return new Response("Attack", UtilText.parse(offspring(), "It's time to show [npc.herHim] [npc.her] true place in this family!"), OFFSPRING_ENCOUNTER_APARTMENT_FIGHT) {
+					return new Response("Атаковать", UtilText.parse(offspring(), "Пришло время показать [npc.herHim] [npc.her] истинное место в этой семье!"), OFFSPRING_ENCOUNTER_APARTMENT_FIGHT) {
 						@Override
 						public boolean isCombatHighlight() {
 							return true;
@@ -549,9 +548,9 @@ public class GenericOffspringDialogue {
 					
 				} else if (index == 11) {
 					if(!offspring().isAllowingPlayerToManageInventory()) {
-						return new Response("Inventory", UtilText.parse(offspring(), "[npc.Name] doesn't like you enough to allow you to choose what [npc.she] wears, or what [npc.she] eats and drinks."), null);
+						return new Response("Инвентарь", UtilText.parse(offspring(), "[npc.Name] не настолько тебя любит, чтобы позволить тебе выбирать, что [npc.she] носит или что [npc.she] ест и пьет."), null);
 					} else {
-						return new ResponseEffectsOnly("Inventory", UtilText.parse(offspring(), "Manage [npc.namePos] inventory.")) {
+						return new ResponseEffectsOnly("Инвентарь", UtilText.parse(offspring(), "Управление инвентарем [npc.namePos].")) {
 							@Override
 							public void effects() {
 								Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile(getTextFilePath(), "OFFSPRING_ENCOUNTER_TALKING_INVENTORY", offspring()));
@@ -561,7 +560,7 @@ public class GenericOffspringDialogue {
 					}
 					
 				} else if (index == 0) {
-					return new Response("Leave", UtilText.parse(offspring(), "Tell [npc.name] that you'll catch up with [npc.herHim] some other time."), OFFSPRING_ENCOUNTER) {
+					return new Response("Уйти", UtilText.parse(offspring(), "Сказать [npc.name], что вы догоните [npc.herHim] в другой раз."), OFFSPRING_ENCOUNTER) {
 							@Override
 							public void effects() {
 								Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile(getTextFilePath(), "OFFSPRING_ENCOUNTER_TALKING_LEAVE", offspring()));
@@ -602,7 +601,7 @@ public class GenericOffspringDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1 && Main.game.getDialogueFlags().offspringDialogueTokens>0) {
-				return new Response("Background", "You've just talked about [npc.namePos] background.", null);
+				return new Response("Прошлое", "Вы только что поговорили о происхождении [npc.namePos].", null);
 				
 			} else {
 				return OFFSPRING_ENCOUNTER_TALKING.getResponse(0, index);
@@ -631,7 +630,7 @@ public class GenericOffspringDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 2 && Main.game.getDialogueFlags().offspringDialogueTokens>0) {
-				return new Response("Small talk", "You've just had some small talk with [npc.name].", null);
+				return new Response("Светская беседа", "Вы только что перекинулись парой слов с [npc.name].", null);
 				
 			} else {
 				return OFFSPRING_ENCOUNTER_TALKING.getResponse(0, index);
@@ -660,7 +659,7 @@ public class GenericOffspringDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 3 && Main.game.getDialogueFlags().offspringDialogueTokens>0) {
-				return new Response("Encourage", "You've just encouraged [npc.name].", null);
+				return new Response("Подбодрить", "Вы только что подбодрили [npc.name].", null);
 				
 			} else {
 				return OFFSPRING_ENCOUNTER_TALKING.getResponse(0, index);
@@ -689,7 +688,7 @@ public class GenericOffspringDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 4 && Main.game.getDialogueFlags().offspringDialogueTokens>0) {
-				return new Response("Scold", "You've just scolded [npc.name].", null);
+				return new Response("Отругать", "Вы только что отругали [npc.name].", null);
 				
 			} else {
 				return OFFSPRING_ENCOUNTER_TALKING.getResponse(0, index);
@@ -697,7 +696,7 @@ public class GenericOffspringDialogue {
 		}
 	};
 	
-	public static final DialogueNode OFFSPRING_OFFER_ROOM = new DialogueNode("Offer room", "", true, true) {
+	public static final DialogueNode OFFSPRING_OFFER_ROOM = new DialogueNode("Предложить комнату", "", true, true) {
 		
 		@Override
 		public String getContent() {
@@ -707,7 +706,7 @@ public class GenericOffspringDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Show to room", "Take [npc.name] to [npc.her] new room.", OFFSPRING_OFFER_ROOM_BACK_HOME) {
+				return new Response("Показать комнату", "Перенести [npc.name] в новую комнату [npc.her].", OFFSPRING_OFFER_ROOM_BACK_HOME) {
 					@Override
 					public void effects() {
 						Cell c = OccupancyUtil.getFreeRoomForOccupant();
@@ -724,7 +723,7 @@ public class GenericOffspringDialogue {
 		}
 	};
 	
-	public static final DialogueNode OFFSPRING_OFFER_ROOM_BACK_HOME = new DialogueNode("New Room", "", true, true) {
+	public static final DialogueNode OFFSPRING_OFFER_ROOM_BACK_HOME = new DialogueNode("Новая комната", "", true, true) {
 		
 		@Override
 		public String getContent() {
@@ -734,7 +733,7 @@ public class GenericOffspringDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Leave", "Give [npc.name] some time to get settled in [npc.her] new room. You can come back at any time to talk with [npc.herHim].", LilayaHomeGeneric.CORRIDOR) {
+				return new Response("Уйти", "Дайте [npc.name] немного времени, чтобы освоиться в [npc.her] новой комнате. Вы можете вернуться в любое время, чтобы поговорить с [npc.herHim].", LilayaHomeGeneric.CORRIDOR) {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setNearestLocation(Main.game.getPlayer().getWorldLocation(), PlaceType.LILAYA_HOME_CORRIDOR, false);
@@ -767,17 +766,7 @@ public class GenericOffspringDialogue {
 					+ "<div class='container-full-width' style='text-align:center;'>"
 						+ "<div style='position:relative; display: inline-block; padding:0 auto; margin:0 auto;vertical-align:middle;width:100%;'>"
 							+ "<p style='float:left; padding:0; margin:0; height:32px; line-height:32px;'>[npc.Name] will call you: </p>"
-							+ "<form style='float:left; padding:auto 0 auto 0;'><input type='text' id='offspringPetNameInput' value='"+ UtilText.parseForHTMLDisplay(offspring().getPetName(Main.game.getPlayer()))+ "'></form>"
-							+ " <div class='SM-button' id='"+offspring().getId()+"_PET_NAME' style='float:left; width:auto; height:28px;'>"
-								+ "Rename"
-							+ "</div>"
-						+ "</div>"
-						+ "<p>"
-						+ "<i>The names 'Mom'/'Dad' and 'Mommy'/'Daddy' are special, and will automatically switch to the appropriate femininity of your character.</i>"
-						+ "</p>"
-					+ "</div>"
-					
-					+ "<p id='hiddenFieldName' style='display:none;'></p>");
+							+ "<form style='float:left; padding:auto 0 auto 0;'><input type='text' id='offspringPetNameInput' value='"+ UtilText.parseForHTMLDisplay(offspring().getPetName(Main.game.getPlayer()))+ "'></form> <div class='SM-button' id='"+offspring().getId()+"_PET_NAME' style='float:left; width:auto; height:28px;'>Переименовать</div></div><p><i>Имена «Мама»/«Папа» и «Мамочка»/«Папочка» являются особенными и будут автоматически меняться в зависимости от пола вашего персонажа.</i></p></div><p id='hiddenFieldName' style='display:none;'></p>");
 			
 			UtilText.nodeContentSB.append(getStatus());
 			
@@ -787,7 +776,7 @@ public class GenericOffspringDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 5 && Main.game.getDialogueFlags().offspringDialogueTokens>0) {
-				return new Response("Pet name", "You're already asking [npc.name] to call you by a different name.", null);
+				return new Response("Ласковое имя", "Ты уже просишь [npc.name] называть тебя другим именем.", null);
 				
 			} else {
 				return OFFSPRING_ENCOUNTER_TALKING.getResponse(0, index);
@@ -816,7 +805,7 @@ public class GenericOffspringDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 7 && Main.game.getDialogueFlags().offspringDialogueTokens>0) {
-				return new Response("Give Present", "You're already giving [npc.name] a present.", null);
+				return new Response("Вручить подарок", "Ты уже даришь [npc.name] подарок.", null);
 				
 			} else {
 				return OFFSPRING_ENCOUNTER_TALKING.getResponse(0, index);
@@ -846,8 +835,8 @@ public class GenericOffspringDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(offspring().isAttractedTo(Main.game.getPlayer())) {
 				if (index == 1) {
-					return new ResponseSex("Incestuous sex",
-							"It's time to show your [npc.daughter] what [npc.her] [pc.mother] can do!",
+					return new ResponseSex("Инцестуозный секс",
+							"Пора показать своей [npc.daughter], на что способен [npc.her] [pc.mother]!",
 							true, true,
 							new SMGeneric(
 								Util.newArrayListOfValues(Main.game.getPlayer()),
@@ -858,8 +847,8 @@ public class GenericOffspringDialogue {
 							"");
 					
 				} else if (index == 2) {
-					return new ResponseSex("Submissive sex",
-							"It's time to let your [npc.daughter] show you what [npc.she] can do!",
+					return new ResponseSex("Субмиссивный секс",
+							"Пора позволить твоей [npc.daughter] показать тебе, на что способна [npc.she]!",
 							true, true,
 							new SMGeneric(
 									Util.newArrayListOfValues(offspring()),
@@ -876,8 +865,8 @@ public class GenericOffspringDialogue {
 			} else if(offspring().getHistory()==Occupation.NPC_PROSTITUTE){
 				if (index == 8) {
 					if(Main.game.getPlayer().getMoney()>=100) {
-						return new ResponseSex("Incestuous sex ("+UtilText.formatAsMoney(100, "span")+")",
-								"Pay your [npc.daughter] 100 flames to get what you want!",
+						return new ResponseSex("Инцестуозный секс ("+UtilText.formatAsMoney(100, "охват")+")",
+								"Заплати своей [npc.daughter] 100 огней, чтобы получить желаемое!",
 								true, false,
 								new SMGeneric(
 										Util.newArrayListOfValues(Main.game.getPlayer()),
@@ -894,13 +883,13 @@ public class GenericOffspringDialogue {
 								AFTER_SEX_CONSENSUAL,
 								"");
 					} else {
-						return new Response("Pay "+UtilText.formatAsMoneyUncoloured(100, "span"), "You don't have enough money...", null);
+						return new Response("Заплатить "+UtilText.formatAsMoneyUncoloured(100, "охват"), "У тебя недостаточно денег...", null);
 					}
 					
 				} else if (index == 9) {
 					if(Main.game.getPlayer().getMoney()>=100) {
-						return new ResponseSex("Submissive sex ("+UtilText.formatAsMoney(100, "span")+")",
-								"Pay your [npc.daughter] 100 flames to get what you want!",
+						return new ResponseSex("Сабмиссивный секс ("+UtilText.formatAsMoney(100, "охват")+")",
+								"Заплати своей [npc.daughter] 100 огней, чтобы получить желаемое!",
 								true, false,
 								new SMGeneric(
 										Util.newArrayListOfValues(offspring()),
@@ -917,7 +906,7 @@ public class GenericOffspringDialogue {
 								AFTER_SEX_CONSENSUAL,
 								"");
 					} else {
-						return new Response("Pay "+UtilText.formatAsMoneyUncoloured(100, "span"), "You don't have enough money...", null);
+						return new Response("Заплатить "+UtilText.formatAsMoneyUncoloured(100, "охват"), "У тебя недостаточно денег...", null);
 					}
 				} else {
 					return OFFSPRING_ENCOUNTER_TALKING.getResponse(0, index);
@@ -926,7 +915,7 @@ public class GenericOffspringDialogue {
 				
 			} else {
 				if (index == 8 && Main.game.getDialogueFlags().offspringDialogueTokens>0) {
-					return new Response("Sex", "You've just asked [npc.name] to have sex with you...", null);
+					return new Response("Секс", "Вы только что предложили [npc.name] заняться сексом...", null);
 					
 				} else {
 					return OFFSPRING_ENCOUNTER_TALKING.getResponse(0, index);
@@ -951,7 +940,7 @@ public class GenericOffspringDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new ResponseCombat("Fight", "You find yourself fighting your [npc.daughter]!", offspring());
+				return new ResponseCombat("Сразиться", "Вы обнаруживаете, что сражаетесь со своим [npc.daughter]!", offspring());
 				
 			} else {
 				return null;
@@ -959,11 +948,11 @@ public class GenericOffspringDialogue {
 		}
 	};
 	
-	public static final DialogueNode AFTER_COMBAT_VICTORY = new DialogueNode("Victory", "", true) {
+	public static final DialogueNode AFTER_COMBAT_VICTORY = new DialogueNode("Победа", "", true) {
 
 		@Override
 		public String getDescription() {
-			return "You have defeated [npc.name]!";
+			return "Вы победили [npc.name]!";
 		}
 		
 		@Override
@@ -975,7 +964,7 @@ public class GenericOffspringDialogue {
 		public Response getResponse(int responseTab, int index) {
 			
 			if (index == 1) {
-				return new Response("Apologise", "Maybe you went too far... Perhaps you should apologise?", null){
+				return new Response("Извиниться", "Может, вы зашли слишком далеко... Возможно, стоит извиниться?", null){
 					@Override
 					public DialogueNode getNextDialogue() {
 						return Main.game.getDefaultDialogue(false);
@@ -991,8 +980,8 @@ public class GenericOffspringDialogue {
 				
 			} else if (index == 2 && Main.game.isIncestEnabled()) {
 				if(offspring().isAttractedTo(Main.game.getPlayer()) || !Main.game.isNonConEnabled()) {
-					return new ResponseSex("Sex",
-							"Well, [npc.she] <i>is</i> asking for it!",
+					return new ResponseSex("Секс",
+							"Ну, [npc.she] <i>сам</i> напросился!",
 							Util.newArrayListOfValues(Fetish.FETISH_INCEST), null, Fetish.FETISH_INCEST.getAssociatedCorruptionLevel(), null, null, null,
 							true, false,
 							new SMGeneric(
@@ -1005,7 +994,7 @@ public class GenericOffspringDialogue {
 					
 				} else {
 					return new ResponseSex(
-							"Rape [npc.herHim]", "[npc.She] needs to be punished for attacking you like that...",
+							"Изнасиловать [npc.herHim]", "[npc.She] нужно наказать за то, что он так на тебя напал...",
 							Util.newArrayListOfValues(Fetish.FETISH_NON_CON_DOM, Fetish.FETISH_INCEST), null, CorruptionLevel.FIVE_CORRUPT, null, null, null,
 							false, false,
 							new SMGeneric(
@@ -1024,8 +1013,8 @@ public class GenericOffspringDialogue {
 				
 			} else if (index == 3 && Main.game.isIncestEnabled()) {
 				if(offspring().isAttractedTo(Main.game.getPlayer()) || !Main.game.isNonConEnabled()) {
-					return new ResponseSex("Gentle sex",
-							"Well, [npc.she] <i>is</i> asking for it!",
+					return new ResponseSex("Нежный секс",
+							"Ну, [npc.she] <i>сам</i> напросился!",
 							Util.newArrayListOfValues(Fetish.FETISH_INCEST), null, CorruptionLevel.FIVE_CORRUPT, null, null, null,
 							true, false,
 							new SMGeneric(
@@ -1038,8 +1027,8 @@ public class GenericOffspringDialogue {
 							UtilText.parseFromXMLFile(getTextFilePath(), "AFTER_COMBAT_VICTORY_SEX_GENTLE", offspring()));
 					
 				} else {
-					return new ResponseSex("Rape [npc.herHim] (gentle)",
-							"[npc.She] needs to be punished for attacking you like that...",
+					return new ResponseSex("Изнасиловать [npc.herHim] (нежно)",
+							"[npc.She] нужно наказать за то, что он так на тебя напал...",
 							Util.newArrayListOfValues(Fetish.FETISH_NON_CON_DOM, Fetish.FETISH_INCEST), null, CorruptionLevel.FIVE_CORRUPT, null, null, null,
 							false, false,
 							new SMGeneric(
@@ -1059,8 +1048,8 @@ public class GenericOffspringDialogue {
 				
 			} else if (index == 4 && Main.game.isIncestEnabled()) {
 				if(offspring().isAttractedTo(Main.game.getPlayer()) || !Main.game.isNonConEnabled()) {
-					return new ResponseSex("Rough sex",
-							"Well, [npc.she] <i>is</i> asking for it!",
+					return new ResponseSex("Грубый секс",
+							"Ну, [npc.she] <i>сам</i> напросился!",
 							Util.newArrayListOfValues(Fetish.FETISH_INCEST), null, CorruptionLevel.FIVE_CORRUPT, null, null, null,
 							true, false,
 							new SMGeneric(
@@ -1073,8 +1062,8 @@ public class GenericOffspringDialogue {
 							UtilText.parseFromXMLFile(getTextFilePath(), "AFTER_COMBAT_VICTORY_SEX_ROUGH", offspring()));
 					
 				} else {
-					return new ResponseSex("Rape [npc.herHim] (rough)",
-							"[npc.She] needs to be punished for attacking you like that...",
+					return new ResponseSex("Изнасиловать [npc.herHim] (грубо)",
+							"[npc.She] нужно наказать за то, что он так на тебя напал...",
 							Util.newArrayListOfValues(Fetish.FETISH_NON_CON_DOM, Fetish.FETISH_INCEST), null, CorruptionLevel.FIVE_CORRUPT, null, null, null,
 							false, false,
 							new SMGeneric(
@@ -1094,9 +1083,8 @@ public class GenericOffspringDialogue {
 				
 			} else if (index == 5 && Main.game.isIncestEnabled()) {
 				if(offspring().isAttractedTo(Main.game.getPlayer()) || !Main.game.isNonConEnabled()) {
-					return new ResponseSex("Submit",
-							"You're not really sure what to do now...<br/>"
-								+ "Perhaps it would be best to let [npc.name] choose what to do next?",
+					return new ResponseSex("Подчиниться",
+							"Вы не совсем понимаете, что делать дальше...<br/>Возможно, будет лучше позволить [npc.name] самой решить, что делать дальше?",
 							Util.newArrayListOfValues(Fetish.FETISH_SUBMISSIVE, Fetish.FETISH_INCEST), null, CorruptionLevel.FIVE_CORRUPT, null, null, null,
 							true, false,
 							new SMGeneric(
@@ -1113,13 +1101,13 @@ public class GenericOffspringDialogue {
 						}
 					};
 				} else {
-					return new Response("Submit",
-							"You can't submit to [npc.herHim], as [npc.sheHasFull] no interest in having sex with you!",
+					return new Response("Подчиниться",
+							"Ты не можешь поддаться [npc.herHim], ведь [npc.sheHasFull] не заинтересована в сексе с тобой!",
 							null);
 				}
 				
 			} else if (index == 6) {
-				return new ResponseEffectsOnly("Inventory", "Now that you've defeated [npc.name], there's nothing stopping you from helping yourself to [npc.her] clothing and items..."){
+				return new ResponseEffectsOnly("Инвентарь", "Теперь, когда ты одолел(а) [npc.name], ничто не мешает тебе полакомиться одеждой и вещами [npc.her]..."){
 					@Override
 					public void effects() {
 						Main.mainController.openInventory(offspring(), InventoryInteraction.FULL_MANAGEMENT);
@@ -1128,9 +1116,8 @@ public class GenericOffspringDialogue {
 				
 			} else if (index == 10) {
 				return new Response(
-						"Remove character",
-						UtilText.parse(offspring(), "Scare [npc.name] away."
-								+ "<br/>[style.italicsBad(This will permanently remove [npc.herHim] from the game!)]"),
+						"Удалить персонажа",
+						UtilText.parse(offspring(), "Напугать [npc.name].<br/>[style.italicsBad(Это навсегда удалит [npc.herHim] из игры!)]"),
 						AFTER_COMBAT_VICTORY){
 					@Override
 					public Colour getHighlightColour() {
@@ -1149,7 +1136,7 @@ public class GenericOffspringDialogue {
 				};
 				
 			} else if (index == 0) {
-				return new Response("Leave", "Now that you've taught [npc.name] a lesson, you can be on your way...", AFTER_COMBAT_VICTORY){
+				return new Response("Уйти", "Теперь, когда вы преподали [npc.name] урок, можно отправляться дальше...", AFTER_COMBAT_VICTORY){
 					@Override
 					public DialogueNode getNextDialogue() {
 						return Main.game.getDefaultDialogue(false);
@@ -1167,11 +1154,11 @@ public class GenericOffspringDialogue {
 		}
 	};
 
-	public static final DialogueNode AFTER_COMBAT_DEFEAT = new DialogueNode("Defeat", "", true) {
+	public static final DialogueNode AFTER_COMBAT_DEFEAT = new DialogueNode("Поражение", "", true) {
 
 		@Override
 		public String getDescription() {
-			return "You have been defeated by [npc.name]!";
+			return "Вы были повержены [npc.name]!";
 		}
 
 		@Override
@@ -1183,8 +1170,8 @@ public class GenericOffspringDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(offspring().isAttractedTo(Main.game.getPlayer()) && Main.game.isIncestEnabled()) {
 				if (index == 1) {
-					return new ResponseSex("Sex",
-							"[npc.Name] forces [npc.herself] on you...",
+					return new ResponseSex("Секс",
+							"[npc.Name] навязывает вам [npc.herself]...",
 							false, false,
 							new SMGeneric(
 									Util.newArrayListOfValues(offspring()),
@@ -1199,8 +1186,8 @@ public class GenericOffspringDialogue {
 					};
 					
 				} else if (index == 2) {
-					return new ResponseSex("Eager Sex",
-							"[npc.Name] forces [npc.herself] on you...",
+					return new ResponseSex("Жажда секса",
+							"[npc.Name] навязывает вам [npc.herself]...",
 							Util.newArrayListOfValues(Fetish.FETISH_INCEST), null, CorruptionLevel.FIVE_CORRUPT, null, null, null,
 							false, false,
 							new SMGeneric(
@@ -1218,8 +1205,8 @@ public class GenericOffspringDialogue {
 					};
 					
 				} else if (index == 3 && Main.game.isNonConEnabled()) {
-					return new ResponseSex("Resist Sex",
-							"[npc.Name] forces [npc.herself] on you...",
+					return new ResponseSex("Сопротивляться сексу",
+							"[npc.Name] навязывает вам [npc.herself]...",
 							false, false,
 							new SMGeneric(
 									Util.newArrayListOfValues(offspring()),
@@ -1241,7 +1228,7 @@ public class GenericOffspringDialogue {
 				
 			} else {
 				if (index == 1) {
-					return new Response("Continue", "You're left to continue on your way...", AFTER_COMBAT_DEFEAT){
+					return new Response("Продолжить", "Вы продолжаете свой путь...", AFTER_COMBAT_DEFEAT){
 						@Override
 						public DialogueNode getNextDialogue(){
 							return Main.game.getDefaultDialogue(false);
@@ -1260,11 +1247,11 @@ public class GenericOffspringDialogue {
 		}
 	};
 	
-	public static final DialogueNode AFTER_SEX_CONSENSUAL = new DialogueNode("Post-sex", "", true) {
+	public static final DialogueNode AFTER_SEX_CONSENSUAL = new DialogueNode("После секса", "", true) {
 		
 		@Override
 		public String getDescription(){
-			return "You've satisfied your lust for your [npc.daughter]... For now...";
+			return "Вы утолили свою похоть к своей [npc.daughter]... Пока что...";
 		}
 
 		@Override
@@ -1275,7 +1262,7 @@ public class GenericOffspringDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Continue", "Carry on your way.", AFTER_SEX_CONSENSUAL){
+				return new Response("Продолжить", "Продолжить путь.", AFTER_SEX_CONSENSUAL){
 					@Override
 					public DialogueNode getNextDialogue(){
 						return Main.game.getDefaultDialogue(false);
@@ -1292,11 +1279,11 @@ public class GenericOffspringDialogue {
 		}
 	};
 	
-	public static final DialogueNode AFTER_SEX_VICTORY = new DialogueNode("Step back", "", true) {
+	public static final DialogueNode AFTER_SEX_VICTORY = new DialogueNode("Отступить", "", true) {
 		
 		@Override
 		public String getDescription(){
-			return "Now that you've had your fun, you can step back and leave [npc.name] to recover.";
+			return "Теперь, когда ты вдоволь на楽しみлся, ты можешь отступить и оставить [npc.name] приходить в себя.";
 		}
 
 		@Override
@@ -1307,7 +1294,7 @@ public class GenericOffspringDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Continue", "Carry on your way.", AFTER_SEX_VICTORY){
+				return new Response("Продолжить", "Продолжить путь.", AFTER_SEX_VICTORY){
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile(getTextFilePath(), "AFTER_SEX_VICTORY_LEAVING", offspring()));
@@ -1320,7 +1307,7 @@ public class GenericOffspringDialogue {
 				};
 				
 			} else if (index == 6) {
-				return new ResponseEffectsOnly("Inventory", "There's nothing stopping you from helping yourself to [npc.namePos] clothing and items..."){
+				return new ResponseEffectsOnly("Инвентарь", "Ничто не мешает вам полакомиться одеждой и вещами [npc.namePos]..."){
 					@Override
 					public void effects() {
 						Main.mainController.openInventory(Main.game.getActiveNPC(), InventoryInteraction.FULL_MANAGEMENT);
@@ -1329,9 +1316,8 @@ public class GenericOffspringDialogue {
 				
 			} else if (index == 10 && Main.game.getPlayer().getLocationPlace().getPlaceType().equals(PlaceType.DOMINION_BACK_ALLEYS)) {
 				return new Response(
-						"Remove character",
-						UtilText.parse(offspring(), "Scare [npc.name] away."
-								+ "<br/>[style.italicsBad(This will permanently remove [npc.herHim] from the game!)]"),
+						"Удалить персонажа",
+						UtilText.parse(offspring(), "Напугать [npc.name].<br/>[style.italicsBad(Это навсегда удалит [npc.herHim] из игры!)]"),
 						AFTER_COMBAT_VICTORY){
 					@Override
 					public Colour getHighlightColour() {
@@ -1355,7 +1341,7 @@ public class GenericOffspringDialogue {
 		}
 	};
 	
-	public static final DialogueNode AFTER_SEX_DEFEAT = new DialogueNode("Collapse", "", true) {
+	public static final DialogueNode AFTER_SEX_DEFEAT = new DialogueNode("Свалиться", "", true) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -1364,7 +1350,7 @@ public class GenericOffspringDialogue {
 		
 		@Override
 		public String getDescription(){
-			return "You're completely worn out from [npc.namePos] dominant treatment, and need a while to recover.";
+			return "Вы совершенно измотаны доминирующим напором [npc.namePos] и нуждаетесь в отдыхе, чтобы прийти в себя.";
 		}
 
 		@Override
@@ -1375,7 +1361,7 @@ public class GenericOffspringDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Continue", "Carry on your way.", AFTER_SEX_VICTORY){
+				return new Response("Продолжить", "Продолжить путь.", AFTER_SEX_VICTORY){
 					@Override
 					public DialogueNode getNextDialogue(){
 						return Main.game.getDefaultDialogue(false);

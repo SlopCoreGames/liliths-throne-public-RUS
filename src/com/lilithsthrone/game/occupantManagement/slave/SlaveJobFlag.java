@@ -10,17 +10,17 @@ import com.lilithsthrone.utils.colours.PresetColour;
  */
 public enum SlaveJobFlag {
 
-	EXPERIENCE_GAINS(PresetColour.GENERIC_EXPERIENCE, "Experience gains", "Slaves have a 25% chance to gain 5 experience every hour."),
+	EXPERIENCE_GAINS(PresetColour.GENERIC_EXPERIENCE, "Прирост опыта", "У рабов есть 25% c шанс получать 5 единиц опыта каждый час."),
 	
-	INTERACTION_SEX(PresetColour.GENERIC_SEX, "Slave sex", "Slaves who are assigned to this job are able to have sex with other slaves."),
+	INTERACTION_SEX(PresetColour.GENERIC_SEX, "Секс рабов", "Рабы, назначенные на эту работу, могут заниматься сексом с другими рабами."),
 	
-	INTERACTION_BONDING(PresetColour.AFFECTION, "Slave bonding", "Slaves who are assigned to this job are able to socialise with other slaves."),
+	INTERACTION_BONDING(PresetColour.AFFECTION, "Связь рабов", "Рабы, назначенные на эту работу, могут общаться с другими рабами."),
 	
-	GUEST_CAN_WORK(PresetColour.GENERIC_NEUTRAL, "Guest worker", "Guests can be assigned to this job."),
+	GUEST_CAN_WORK(PresetColour.GENERIC_NEUTRAL, "Гость-работник", "Гостей можно назначать на эту работу."),
 
-	CLEANING_UNAVAILABLE(PresetColour.DIRTY, "Cleaning unavailable", "Slaves will be unable to clean themselves while working this job."),
+	CLEANING_UNAVAILABLE(PresetColour.DIRTY, "Уборка недоступна", "Во время выполнения этой работы рабы не смогут убирать себя сами."),
 
-	SPECIAL_UNIFORM(PresetColour.GENERIC_MINOR_BAD, "Special uniform", "Slaves cannot be outfitted via the dressing room while working this job.");
+	SPECIAL_UNIFORM(PresetColour.GENERIC_MINOR_BAD, "Особая униформа", "Во время выполнения этой работы рабов нельзя переодевать через гардеробную.");
 	
 	private Colour colour;
 	private String name;

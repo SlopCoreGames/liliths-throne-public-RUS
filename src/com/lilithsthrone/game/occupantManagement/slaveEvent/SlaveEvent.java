@@ -9,7 +9,7 @@ import com.lilithsthrone.game.character.GameCharacter;
  */
 public enum SlaveEvent {
 	
-	WASHED_BODY(SlaveEventType.MISCELLANEOUS, "Washed Body", "[npc.Name] had a wash and cleaned [npc.her] body.") {
+	WASHED_BODY(SlaveEventType.MISCELLANEOUS, "Чистое тело", "[npc.Name] умылся и очистил тело [npc.her].") {
 		public void applyEffects(GameCharacter character) {
 			character.washAllOrifices(true);
 			character.cleanAllDirtySlots(true);
@@ -17,7 +17,7 @@ public enum SlaveEvent {
 		}
 	},
 	
-	WASHED_CLOTHES(SlaveEventType.MISCELLANEOUS, "Washed Clothes", "[npc.Name] washed [npc.her] clothes.") {
+	WASHED_CLOTHES(SlaveEventType.MISCELLANEOUS, "Чистая одежда", "[npc.Name] постирал одежду [npc.her].") {
 		public void applyEffects(GameCharacter character) {
 			character.cleanAllDirtySlots(false); //TODO should they be cleaning slots?
 			character.cleanAllClothing(true, false);
@@ -25,23 +25,23 @@ public enum SlaveEvent {
 		}
 	},
 
-	MIDDAY_UPDATE(SlaveEventType.MISCELLANEOUS, "Midday Update", ""),
+	MIDDAY_UPDATE(SlaveEventType.MISCELLANEOUS, "Полуденные новости", ""),
 	
-	DAILY_UPDATE(SlaveEventType.MISCELLANEOUS, "Daily Update", ""),
+	DAILY_UPDATE(SlaveEventType.MISCELLANEOUS, "Ежедневные новости", ""),
 
-	SLAVE_SEX(SlaveEventType.SEX, "[style.boldSex(Sex)]", "[npc.Name] had sex with another slave..."),
+	SLAVE_SEX(SlaveEventType.SEX, "[style.boldSex(Секс)]", "[npc.Name] переспал с другой рабыней..."),
 	
-	SLAVE_BONDING(SlaveEventType.BONDING, "[style.boldAffection(Bonding)]", "[npc.Name] spent some time bonding with another slave..."),
+	SLAVE_BONDING(SlaveEventType.BONDING, "[style.boldAffection(Привязанность)]", "[npc.Name] провел время, укрепляя связь с другой рабыней..."),
 	
-	GAVE_BIRTH(SlaveEventType.SEX, "[style.boldExcellent(Gave birth)]", "Lilaya helped [npc.name] to give birth."),
+	GAVE_BIRTH(SlaveEventType.SEX, "[style.boldExcellent(Родила)]", "Lilaya помогла [npc.name] родить."),
 
-	GAVE_BIRTH_INCUBATION(SlaveEventType.SEX, "[style.boldExcellent(Laid eggs)]", "Lilaya helped [npc.name] to lay the eggs [npc.she] was incubating."),
+	GAVE_BIRTH_INCUBATION(SlaveEventType.SEX, "[style.boldExcellent(Отложила яйца)]", "Lilaya помогла [npc.name] отложить яйца, которые инкубировала [npc.she]."),
 	
 	
 	// Jobs:
 
 //	JOB_CUM_MILKED("Cum Milked", "[npc.NamePos] [npc.cum+] was milked."),
-	JOB_MILK_MILKED(SlaveEventType.JOB, "Milked", ""),
+	JOB_MILK_MILKED(SlaveEventType.JOB, "Доен", ""),
 //	JOB_MILK_CROTCH_MILKED("Udders Milked", "[npc.Name] was milked of [npc.her] [npc.crotchMilk+]."),
 //	JOB_GIRLCUM_MILKED("Girlcum Milked", "[npc.NamePos] [npc.girlcum+] was milked."),
 	
@@ -56,11 +56,11 @@ public enum SlaveEvent {
 //
 //	JOB_OFFICE("Office Fun", "<i>Placeholder event.</i>"),
 	
-	JOB_TEST_SUBJECT(SlaveEventType.JOB, "Test Subject", "[npc.Name] was subjected to Lilaya's transformative experiments..."),
+	JOB_TEST_SUBJECT(SlaveEventType.JOB, "Подопытный", "[npc.Name] подверглась трансформирующим экспериментам Lilaya..."),
 	
-	JOB_PUBLIC_STOCKS(SlaveEventType.JOB, "Locked in Stocks", "[npc.Name] was locked into the public stocks in Slaver Alley..."),
+	JOB_PUBLIC_STOCKS(SlaveEventType.JOB, "Закована в колодки", "[npc.Name] была закована в общественные колодки в Переулке Рабов..."),
 	
-	JOB_PROSTITUTE(SlaveEventType.JOB, "Prostitute", "[npc.Name] worked as a prostitute in Angel's Kiss."),
+	JOB_PROSTITUTE(SlaveEventType.JOB, "Проститутка", "[npc.Name] работала проституткой в Поцелуе Ангела."),
 
 //	JOB_IDLE("Resting", "<i>Placeholder event.</i>"),
 	;

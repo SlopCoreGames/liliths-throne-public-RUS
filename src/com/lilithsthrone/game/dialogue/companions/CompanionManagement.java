@@ -236,21 +236,7 @@ public class CompanionManagement {
 							+ "Location"
 						+ "</div>"
 						+ "<div style='float:left; width:20%; font-weight:bold; margin:0; padding:0;'>"
-							+ "<b style='color:"+PresetColour.AFFECTION.toWebHexString()+";'>Affection</b>"
-						+"</div>"
-						+ "<div style='float:left; width:20%; font-weight:bold; margin:0; padding:0;'>"
-							+ "<b style='color:"+PresetColour.OBEDIENCE.toWebHexString()+";'>Obedience</b>"
-						+"</div>"
-						+ "<div style='float:left; width:15%; font-weight:bold; margin:0; padding:0;'>"
-							+ "<b style='color:"+PresetColour.CURRENCY_GOLD.toWebHexString()+";'>Income</b>"
-						+"</div>"
-						+ "<div style='width:15%; float:left; font-weight:bold; margin:0; padding:0;'>"
-							+ "Value"
-						+ "</div>"
-					+ "</div>"
-					+"<div class='container-full-width inner' style='margin-top:0; border-radius: 0 5px 5px; 0'>"
-						+"<div style='width:30%; float:left; margin:0; padding:0;'>"
-							+ "<b style='color:"+character.getLocationPlace().getColour().toWebHexString()+";'>"+character.getLocationPlace().getName()+"</b>"
+							+ "<b style='color:"+PresetColour.AFFECTION.toWebHexString()+";'>Привязанность</b></div><div style='float:left; width:20%; font-weight:bold; margin:0; padding:0;'><b style='color:"+PresetColour.OBEDIENCE.toWebHexString()+";'>Покорность</b></div><div style='float:left; width:15%; font-weight:bold; margin:0; padding:0;'><b style='color:"+PresetColour.CURRENCY_GOLD.toWebHexString()+";'>Доход</b></div><div style='width:15%; float:left; font-weight:bold; margin:0; padding:0;'>Value</div></div><div class='container-full-width inner' style='margin-top:0; border-radius: 0 5px 5px; 0'><div style='width:30%; float:left; margin:0; padding:0;'><b style='color:"+character.getLocationPlace().getColour().toWebHexString()+";'>"+character.getLocationPlace().getName()+"</b>"
 							+",<br/>"
 							+ "<span style='color:"+character.getWorldLocation().getColour().toWebHexString()+";'>"+character.getWorldLocation().getName()+"</span>"
 						+ "</div>"
@@ -269,16 +255,14 @@ public class CompanionManagement {
 							+ "<span style='color:"+obedience.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(obedience.getName())+"</span>"
 						+"</div>"
 						+ "<div style='float:left; width:15%; margin:0; padding:0;'>"
-							+ UtilText.formatAsMoney(SlaveJob.getFinalDailyIncomeAfterModifiers(character))+"/day"
-						+"</div>"
-						+ "<div style='float:left; width:15%; margin:0; padding:0;'>"
+							+ UtilText.formatAsMoney(SlaveJob.getFinalDailyIncomeAfterModifiers(character))+"/день</div><div style='float:left; width:15%; margin:0; padding:0;'>"
 							+ UtilText.formatAsMoney(character.getValueAsSlave(true))
 						+"</div>"
 					+ "</div>");
 
 		
 		// Job:
-		headerSB.append("<div class='container-half-width' style='width:50%; margin:0;'>[style.boldExcellent(Job Settings:)]");
+		headerSB.append("<div class='container-half-width' style='width:50%; margin:0;'>[style.boldExcellent(Настройки работы:)]");
 		List<String> noPermissions = new ArrayList<>();
 		for(SlaveJob job : SlaveJob.values()) {
 			if(character.hasSlaveJobAssigned(job)) {
@@ -302,7 +286,7 @@ public class CompanionManagement {
 		
 		// Permissions:
 		if(characterSelected().isSlave()) {
-			headerSB.append("<div class='container-half-width' style='width:50%; margin:0;'>[style.boldArcane(General Permissions:)]<br/>");
+			headerSB.append("<div class='container-half-width' style='width:50%; margin:0;'>[style.boldArcane(Общие разрешения:)]<br/>");
 			int permissionCount=0;
 			for(SlavePermission permission : SlavePermission.values()) {
 				if(permission.isAvailableForCharacter(character)) {
@@ -326,7 +310,7 @@ public class CompanionManagement {
 	}
 	
 	private static String getBusyWarning() {
-		return "<br/>[style.italicsMinorBad(Can only be used when in a tile's default dialogue.)]";
+		return "<br/>[style.italicsMinorBad(Можно использовать только в стандартном диалоге локации.)]";
 	}
 	
 	public static Response getManagementResponses(int index) {
@@ -335,7 +319,7 @@ public class CompanionManagement {
 			Collections.sort(charactersPresent, (c1, c2) -> Main.game.getPlayer().hasCompanion(c1)?1:0);
 			
 			if (index == 0) {
-				return new ResponseEffectsOnly("Back", "Stop viewing the characters present and return to the main game."){
+				return new ResponseEffectsOnly("Назад", "Перестать осматривать присутствующих персонажей и вернуться к основной игре."){
 					@Override
 					public void effects() {
 						Main.game.getDialogueFlags().setManagementCompanion(null);
@@ -346,34 +330,34 @@ public class CompanionManagement {
 
 			} else if(index==1) {
 				if(Main.game.getCurrentDialogueNode()==SLAVE_MANAGEMENT_INSPECT) {
-					return new Response("Inspect", UtilText.parse(characterSelected(), "You are already taking a closer look at [npc.name]!"), null);
+					return new Response("Осмотреть", UtilText.parse(characterSelected(), "Вы уже внимательно изучаете [npc.name]!"), null);
 				}
-				return new Response("Inspect", UtilText.parse(characterSelected(), "Take a closer look at [npc.name]."), SLAVE_MANAGEMENT_INSPECT);
+				return new Response("Осмотреть", UtilText.parse(characterSelected(), "Рассмотреть [npc.name] поближе."), SLAVE_MANAGEMENT_INSPECT);
 
 			} else if(index==2) {
 				if(Main.game.getCurrentDialogueNode()==SLAVE_MANAGEMENT_JOBS) {
-					return new Response("Job", UtilText.parse(characterSelected(), "You are already setting [npc.namePos] job and work hours!"), null);
+					return new Response("Работа", UtilText.parse(characterSelected(), "Вы уже устанавливаете работу и часы работы для [npc.namePos]!"), null);
 				}
 				if(!characterSelected().hasJob()) {
-					return new Response("Job", "Set this character's job and work hours.", SLAVE_MANAGEMENT_JOBS);
+					return new Response("Работа", "Установить работу и часы работы этого персонажа.", SLAVE_MANAGEMENT_JOBS);
 				}
-				return new Response("Job", "You cannot manage the job of an employed resident. This option is only available for slaves & unemployed residents.", null);
+				return new Response("Работа", "Вы не можете управлять работой трудоустроенного жителя. Эта опция доступна только для рабов и безработных жителей.", null);
 
 			} else if(index==3) {
 				if(Main.game.getCurrentDialogueNode()==SLAVE_MANAGEMENT_PERMISSIONS) {
-					return new Response("Permissions", UtilText.parse(characterSelected(), "You are already setting [npc.namePos] permissions!"), null);
+					return new Response("Разрешения", UtilText.parse(characterSelected(), "Вы уже устанавливаете разрешения для [npc.namePos]!"), null);
 				}
 				if(characterSelected().isSlave()) {
-					return new Response("Permissions", "Set this slave's job and work hours.", SLAVE_MANAGEMENT_PERMISSIONS);
+					return new Response("Разрешения", "Установить работу и часы работы этого раба.", SLAVE_MANAGEMENT_PERMISSIONS);
 				}
-				return new Response("Permissions", "You cannot manage the permissions of a free-willed companion. This option is only available for slaves.", null);
+				return new Response("Разрешения", "Вы не можете управлять разрешениями свободного спутника. Эта опция доступна только для рабов.", null);
 				
 			} else if(index==4) {
 				if(!Main.game.isSavedDialogueNeutral()) {
-					return new Response("Inventory", "You're in the middle of something right now!"+getBusyWarning(), null);
+					return new Response("Инвентарь", "Вы сейчас заняты чем-то важным!"+getBusyWarning(), null);
 					
 				} else {
-					return new ResponseEffectsOnly("Inventory", UtilText.parse(characterSelected(), "Manage [npc.namePos] inventory.")) {
+					return new ResponseEffectsOnly("Инвентарь", UtilText.parse(characterSelected(), "Управление инвентарем [npc.namePos].")) {
 						@Override
 						public void effects() {
 							Main.mainController.openInventory((NPC) characterSelected(), InventoryInteraction.FULL_MANAGEMENT);
@@ -382,12 +366,12 @@ public class CompanionManagement {
 				}
 						
 			} else if(index==5) {
-				return new Response("Send to Kate", UtilText.parse(characterSelected(), "You cannot send your party companions to Kate! You'll need to send [npc.name] home first..."), null);
+				return new Response("Отправить Кейт", UtilText.parse(characterSelected(), "Вы не можете отправить спутников отряда к Кейт! Сначала вам нужно отправить [npc.name] домой..."), null);
 				
 			} else if (index == 6) {
 				if(Main.game.getCurrentDialogueNode()==SLAVE_MANAGEMENT_PERKS) {
-					return new Response("[style.colourMinorBad(Reset perks)]",
-							UtilText.parse(characterSelected(), "Reset all of [npc.namePos] perks and traits, refunding all points spent. (This is a temporary action while the perk tree is still under development.)"),
+					return new Response("[style.colourMinorBad(Сбросить перки)]",
+							UtilText.parse(characterSelected(), "Сбросить все перки и черты [npc.namePos], вернув все потраченные очки. (Это временная мера, так как древо перков всё еще находится в разработке.)"),
 							Main.game.getCurrentDialogueNode()) {
 						@Override
 						public void effects() {
@@ -395,11 +379,11 @@ public class CompanionManagement {
 						}
 					};
 				}
-				return new Response("Perks", UtilText.parse(characterSelected(), "Assign [npc.namePos] perk points."), SLAVE_MANAGEMENT_PERKS);
+				return new Response("Перки", UtilText.parse(characterSelected(), "Распределить очки перков [npc.namePos]."), SLAVE_MANAGEMENT_PERKS);
 				
 			} else if(index==7) {
 				if(characterSelected().isDoll() && (Main.game.getPlayer().hasItemType(ItemType.DOLL_CONSOLE) || characterSelected().hasItemType(ItemType.DOLL_CONSOLE))) {
-					return new ResponseEffectsOnly("Transformations", UtilText.parse(characterSelected(), "Use your D.E.C.K. to customise [npc.namePos] appearance.")) {
+					return new ResponseEffectsOnly("Трансформации", UtilText.parse(characterSelected(), "Используйте свой D.E.C.K., чтобы настроить внешность [npc.namePos].")) {
 						@Override
 						public void effects() {
 							ItemEffectType.DOLL_CONSOLE.itemEffectOverride(TFModifier.NONE, TFModifier.NONE, TFPotency.BOOST, 0, Main.game.getPlayer(), characterSelected(), new ItemEffectTimer());
@@ -407,14 +391,14 @@ public class CompanionManagement {
 					};
 					
 				} else if(!characterSelected().isAbleToSelfTransform()) {
-					return new Response("Transformations", characterSelected().getUnableToTransformDescription(), null);
+					return new Response("Трансформации", characterSelected().getUnableToTransformDescription(), null);
 					
 				} else if(!Main.game.isSavedDialogueNeutral()) {
-					return new Response("Transformations", "You're in the middle of something right now!"+getBusyWarning(), null);
+					return new Response("Трансформации", "Вы сейчас заняты чем-то важным!"+getBusyWarning(), null);
 					
 				} else {
-					return new Response("Transformations",
-							UtilText.parse(characterSelected(), "Take a very detailed look at what [npc.name] can transform [npc.herself] into..."),
+					return new Response("Трансформации",
+							UtilText.parse(characterSelected(), "Внимательно рассмотреть, в кого [npc.name] может превратить [npc.herself]..."),
 							BodyChanging.BODY_CHANGING_CORE){
 						@Override
 						public void effects() {
@@ -425,44 +409,44 @@ public class CompanionManagement {
 				
 			} else if(index==8) {
 				if(Main.game.getCurrentDialogueNode()==OCCUPANT_CHOOSE_NAME) {
-					return new Response("Set names", UtilText.parse(characterSelected(), "You are managing [npc.namePos] name!"), null);
+					return new Response("Установить имена", UtilText.parse(characterSelected(), "Вы управляете именем [npc.namePos]!"), null);
 				}
 				 if(!Main.game.isSavedDialogueNeutral()) {
-					return new Response("Set names", "You're in the middle of something right now!"+getBusyWarning(), null);
+					return new Response("Установить имена", "Вы сейчас заняты чем-то важным!"+getBusyWarning(), null);
 				}
-				return new Response("Set names",
+				return new Response("Установить имена",
 						characterSelected().isSlave()
-							?UtilText.parse(characterSelected(), "Change [npc.namePos] name or tell [npc.herHim] to call you by a different name.")
-							:UtilText.parse(characterSelected(), "Tell [npc.name] to call you by a different name."),
+							?UtilText.parse(characterSelected(), "Изменить имя [npc.namePos] или попросить [npc.herHim] называть вас другим именем.")
+							:UtilText.parse(characterSelected(), "Попросить [npc.name] называть вас другим именем."),
 						OCCUPANT_CHOOSE_NAME);
 				
 			} else if(index==10) {
 				if(Main.game.getPlayer().isCaptive()) {
 					return new Response(
 							characterSelected().isElemental()
-								?"Dispel"
-								:"Send home",
-							"As you are a captive, you cannot dismiss your companions!",
+								?"Рассеять"
+								:"Отправить домой",
+							"Так как вы находитесь в плену, вы не можете отпустить своих спутников!",
 							null);
 					
 				} else if(!Main.game.isSavedDialogueNeutral()) {
 					return new Response(
 							characterSelected().isElemental()
-								?"Dispel"
-								:"Send home",
-							"You're in the middle of something right now!"+getBusyWarning(),
+								?"Рассеять"
+								:"Отправить домой",
+							"Вы сейчас заняты чем-то важным!"+getBusyWarning(),
 							null);
 					
 				} else {
 					if(charactersPresent.size()==1 || (charactersPresent.size()==2 && characterSelected().isElementalSummoned() && !Main.game.getPlayer().isElementalSummoned())) {
 						return new ResponseEffectsOnly(
 								characterSelected().isElemental()
-									?"Dispel"
-									:"Send home",
+									?"Рассеять"
+									:"Отправить домой",
 									UtilText.parse(characterSelected(), 
 										characterSelected().isElemental()
-											?"Dispel [npc.namePos] physical form, and return [npc.herHim] to your arcane aura."
-											:"Tell [npc.name] to go home.")) {
+											?"Рассеять физическую форму [npc.namePos] и вернуть [npc.herHim] в вашу аркану ауру."
+											:"Сказать [npc.name], чтобы она шла домой.")) {
 							@Override
 							public void effects() {
 								if(characterSelected().isElementalSummoned()) {
@@ -479,12 +463,12 @@ public class CompanionManagement {
 					} else {
 						return new Response(
 								characterSelected().isElemental()
-									?"Dispel"
-									:"Send home",
+									?"Рассеять"
+									:"Отправить домой",
 									UtilText.parse(characterSelected(), 
 										characterSelected().isElemental()
-											?"Dispel [npc.namePos] physical form, and return [npc.herHim] to your arcane aura."
-											:"Tell [npc.name] to go home."),
+											?"Рассеять физическую форму [npc.namePos] и вернуть [npc.herHim] в вашу аркану ауру."
+											:"Сказать [npc.name], чтобы она шла домой."),
 								coreNode){
 							@Override
 							public void effects() {
@@ -504,19 +488,19 @@ public class CompanionManagement {
 				
 			} else if(index==11) {
 				if(Main.game.isSavedDialogueNeutral()) {
-					return new Response("Combat moves", UtilText.parse(characterSelected(), "Adjust the moves [npc.name] can perform in combat."), CombatMovesSetup.COMBAT_MOVES_CORE) {
+					return new Response("Боевые приемы", UtilText.parse(characterSelected(), "Настроить приемы, которые [npc.name] может использовать в бою."), CombatMovesSetup.COMBAT_MOVES_CORE) {
 						@Override
 						public void effects() {
 							CombatMovesSetup.setTarget(characterSelected(), coreNode);
 						}
 					};
 				} else {
-					return new Response("Combat moves", "You're in the middle of something right now!"+getBusyWarning(), null);
+					return new Response("Боевые приемы", "Вы сейчас заняты чем-то важным!"+getBusyWarning(), null);
 				}
 				
 			} else if(index==12) {
 				if(Main.game.isSavedDialogueNeutral()) {
-					return new Response("Spells", UtilText.parse(characterSelected(), "Manage [npc.namePos] spells."), SpellManagement.CHARACTER_SPELLS_EARTH) {
+					return new Response("Заклинания", UtilText.parse(characterSelected(), "Управление заклинаниями [npc.namePos]."), SpellManagement.CHARACTER_SPELLS_EARTH) {
 						@Override
 						public void effects() {
 							SpellManagement.setSpellOwner(characterSelected(), coreNode);
@@ -524,19 +508,19 @@ public class CompanionManagement {
 					};
 					
 				} else {
-					return new Response("Spells", "You're in the middle of something right now!"+getBusyWarning(), null);
+					return new Response("Заклинания", "Вы сейчас заняты чем-то важным!"+getBusyWarning(), null);
 				}
 				
 			} else if(index==13) {
 				if(!characterSelected().isElementalSummoned()) {
-					return new Response("Dispel elemental", UtilText.parse(characterSelected(), "[npc.Name] doesn't have an elemental summoned..."), null);
+					return new Response("Снятие стихийного существа", UtilText.parse(characterSelected(), "У [npc.Name] нет призванного стихийного существа..."), null);
 					
 				} else {
 					if(!Main.game.isSavedDialogueNeutral()) {
-						return new Response("Dispel elemental", "You're in the middle of something right now!"+getBusyWarning(), null);
+						return new Response("Снятие стихийного существа", "Вы сейчас заняты чем-то важным!"+getBusyWarning(), null);
 						
 					} else {
-						return new Response("Dispel elemental", UtilText.parse(characterSelected(), "Tell [npc.name] to dispel [npc.her] elemental."), coreNode){
+						return new Response("Снятие стихийного существа", UtilText.parse(characterSelected(), "Приказать [npc.name] развеять стихийную [npc.her]."), coreNode){
 							@Override
 							public void effects() {
 								characterSelected().getElemental().returnToHome();
@@ -550,51 +534,51 @@ public class CompanionManagement {
 		} else if(characterSelected()!=null && characterSelected().isSlave()) { // Slave not currently in the player's party:
 			if (index == 1) {
 				if(Main.game.getCurrentDialogueNode()==SLAVE_MANAGEMENT_INSPECT) {
-					return new Response("Inspect", UtilText.parse(characterSelected(), "You are already taking a closer look at [npc.name]!"), null);
+					return new Response("Осмотреть", UtilText.parse(characterSelected(), "Вы уже внимательно изучаете [npc.name]!"), null);
 				}
-				return new Response("Inspect", UtilText.parse(characterSelected(), "Take a closer look at [npc.name]!"), SLAVE_MANAGEMENT_INSPECT);
+				return new Response("Осмотреть", UtilText.parse(characterSelected(), "Рассмотреть [npc.name] повнимательнее!"), SLAVE_MANAGEMENT_INSPECT);
 				
 			} else if (index == 2) {
 				if(Main.game.getCurrentDialogueNode()==SLAVE_MANAGEMENT_JOBS) {
-					return new Response("Job", UtilText.parse(characterSelected(), "You are already setting [npc.namePos] job and work hours!"), null);
+					return new Response("Работа", UtilText.parse(characterSelected(), "Вы уже устанавливаете работу и часы работы для [npc.namePos]!"), null);
 				}
 				if(!characterSelected().getOwner().isPlayer()) {
-					return new Response("Job", "You cannot manage the job of a slave you do not own!", null);
+					return new Response("Работа", "Ты не можешь распоряжаться работой рабыни, которая тебе не принадлежит!", null);
 				}
-				return new Response("Job", "Set this slave's job and work hours.", SLAVE_MANAGEMENT_JOBS);
+				return new Response("Работа", "Установить работу и часы работы этого раба.", SLAVE_MANAGEMENT_JOBS);
 				
 			} else if (index == 3) {
 				if(Main.game.getCurrentDialogueNode()==SLAVE_MANAGEMENT_PERMISSIONS) {
-					return new Response("Permissions", UtilText.parse(characterSelected(), "You are already setting [npc.namePos] permissions!"), null);
+					return new Response("Разрешения", UtilText.parse(characterSelected(), "Вы уже устанавливаете разрешения для [npc.namePos]!"), null);
 				}
 				if(!characterSelected().getOwner().isPlayer()) {
-					return new Response("Permissions", "You cannot manage the permissions of a slave you do not own!", null);
+					return new Response("Разрешения", "Ты не можешь управлять правами рабыни, которая тебе не принадлежит!", null);
 				}
-				return new Response("Permissions", "Set this slave's permissions.", SLAVE_MANAGEMENT_PERMISSIONS);
+				return new Response("Разрешения", "Установить права этой рабыни.", SLAVE_MANAGEMENT_PERMISSIONS);
 				
 			} else if (index == 4) {
 				if(!characterSelected().getOwner().isPlayer()) {
-					return new Response("Inventory", "You cannot manage the inventory of a slave you do not own!", null);
+					return new Response("Инвентарь", "Ты не можешь управлять инвентарем рабыни, которая тебе не принадлежит!", null);
 				}
 				
 				if(characterSelected().getOwner().isPlayer()) {
-					return new ResponseEffectsOnly("Inventory", UtilText.parse(characterSelected(), "Manage [npc.namePos] inventory.")){
+					return new ResponseEffectsOnly("Инвентарь", UtilText.parse(characterSelected(), "Управление инвентарем [npc.namePos].")){
 						@Override
 						public void effects() {
 							Main.mainController.openInventory(characterSelected(), InventoryInteraction.FULL_MANAGEMENT);
 						}
 					};
 				} else {
-					return new Response("Inventory", UtilText.parse(characterSelected(), "You can't manage [npc.namePos] inventory, as you don't own [npc.herHim]!"), null);
+					return new Response("Инвентарь", UtilText.parse(characterSelected(), "Ты не можешь управлять инвентарем [npc.namePos], так как [npc.herHim] тебе не принадлежит!"), null);
 				}
 				
 			} else if(index == 5) {
 				if(!characterSelected().getOwner().isPlayer()) {
-					return new Response("Send to Kate", "You cannot send slaves which you do not own to Kate!", null);
+					return new Response("Отправить Кейт", "Ты не можешь отправлять Кейт рабынь, которые тебе не принадлежат!", null);
 					
 				} else if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.kateIntroduced)) {
-					return new Response("Send to Kate",
-							UtilText.parse(characterSelected(), "Send [npc.name] to Kate's beauty salon, 'Succubi's secrets', to get [npc.her] appearance changed."),
+					return new Response("Отправить Кейт",
+							UtilText.parse(characterSelected(), "Отправить [npc.name] в салон красоты Кейт «Секреты суккуба», чтобы изменить внешность [npc.her]."),
 							SLAVE_MANAGEMENT_COSMETICS_MAKEUP) {
 								@Override
 								public void effects() {
@@ -602,16 +586,16 @@ public class CompanionManagement {
 								}
 							};
 				} else {
-					return new Response("Send to Kate", "You haven't met Kate yet!", null);
+					return new Response("Отправить Кейт", "Вы еще не встречали Кейт!", null);
 				}
 				
 			} else if (index == 6) {
 				if(!characterSelected().getOwner().isPlayer()) {
-					return new Response("Perks", "You can't manage the perks of slaves that you do not own!", null);
+					return new Response("Перки", "Ты не можешь управлять перками рабынь, которые тебе не принадлежат!", null);
 				}
 				if(Main.game.getCurrentDialogueNode()==SLAVE_MANAGEMENT_PERKS) {
-					return new Response("[style.colourMinorBad(Reset perks)]",
-							UtilText.parse(characterSelected(), "Reset all of [npc.namePos] perks and traits, refunding all points spent. (This is a temporary action while the perk tree is still under development.)"),
+					return new Response("[style.colourMinorBad(Сбросить перки)]",
+							UtilText.parse(characterSelected(), "Сбросить все перки и черты [npc.namePos], вернув все потраченные очки. (Это временная мера, так как древо перков всё еще находится в разработке.)"),
 							Main.game.getCurrentDialogueNode()) {
 						@Override
 						public void effects() {
@@ -619,11 +603,11 @@ public class CompanionManagement {
 						}
 					};
 				}
-				return new Response("Perks", "Spend your slave's perk points.", SLAVE_MANAGEMENT_PERKS);
+				return new Response("Перки", "Потратить очки навыков вашей рабыни.", SLAVE_MANAGEMENT_PERKS);
 				
 			} else if(index==7) {
 				if(characterSelected().isDoll() && (Main.game.getPlayer().hasItemType(ItemType.DOLL_CONSOLE) || characterSelected().hasItemType(ItemType.DOLL_CONSOLE))) {
-					return new ResponseEffectsOnly("Transformations", UtilText.parse(characterSelected(), "Use your D.E.C.K. to customise [npc.namePos] appearance.")) {
+					return new ResponseEffectsOnly("Трансформации", UtilText.parse(characterSelected(), "Используйте свой D.E.C.K., чтобы настроить внешность [npc.namePos].")) {
 						@Override
 						public void effects() {
 							ItemEffectType.DOLL_CONSOLE.itemEffectOverride(TFModifier.NONE, TFModifier.NONE, TFPotency.BOOST, 0, Main.game.getPlayer(), characterSelected(), new ItemEffectTimer());
@@ -631,11 +615,11 @@ public class CompanionManagement {
 					};
 					
 				} else if(!characterSelected().isAbleToSelfTransform()) {
-					return new Response("Transformations", characterSelected().getUnableToTransformDescription(), null);
+					return new Response("Трансформации", characterSelected().getUnableToTransformDescription(), null);
 					
 				} else {
-					return new Response("Transformations",
-							UtilText.parse(characterSelected(), "Take a very detailed look at what [npc.name] can transform [npc.herself] into..."),
+					return new Response("Трансформации",
+							UtilText.parse(characterSelected(), "Внимательно рассмотреть, в кого [npc.name] может превратить [npc.herself]..."),
 							BodyChanging.BODY_CHANGING_CORE){
 						@Override
 						public void effects() {
@@ -646,21 +630,21 @@ public class CompanionManagement {
 				
 			} else if(index==8) {
 				if(Main.game.getCurrentDialogueNode()==OCCUPANT_CHOOSE_NAME) {
-					return new Response("Set names", UtilText.parse(characterSelected(), "You are managing [npc.namePos] name!"), null);
+					return new Response("Установить имена", UtilText.parse(characterSelected(), "Вы управляете именем [npc.namePos]!"), null);
 				}
 				if(characterSelected() == null) {
-					return new Response("Set names", "You haven't selected anyone...", null);
+					return new Response("Установить имена", "Вы еще никого не выбрали...", null);
 				}
-				return new Response("Set names", UtilText.parse(characterSelected(), "Change [npc.namePos] name or tell [npc.herHim] to call you by a different name."), OCCUPANT_CHOOSE_NAME);
+				return new Response("Установить имена", UtilText.parse(characterSelected(), "Изменить имя [npc.namePos] или попросить [npc.herHim] называть вас другим именем."), OCCUPANT_CHOOSE_NAME);
 				
 			} else if(index==10 && Main.getProperties().hasValue(PropertyValue.companionContent)) {
-				return new Response("Send home", UtilText.parse(characterSelected(), "[npc.Name] isn't in your party, so you can't send [npc.herHim] home..."), null);
+				return new Response("Отправить домой", UtilText.parse(characterSelected(), "[npc.Name] нет в вашем отряде, поэтому вы не можете отправить [npc.herHim] домой..."), null);
 				
 			} else if(index==11) {
 				if(!characterSelected().getOwner().isPlayer()) {
-					return new Response("Combat moves", "You can't manage the combat moves of slaves that you do not own!", null);
+					return new Response("Боевые приемы", "Вы не можете управлять боевыми приемами рабов, которыми не владеете!", null);
 				}
-				return new Response("Combat moves", UtilText.parse(characterSelected(), "Adjust the moves [npc.name] can perform in combat."), CombatMovesSetup.COMBAT_MOVES_CORE) {
+				return new Response("Боевые приемы", UtilText.parse(characterSelected(), "Настроить приемы, которые [npc.name] может использовать в бою."), CombatMovesSetup.COMBAT_MOVES_CORE) {
 					@Override
 					public void effects() {
 						CombatMovesSetup.setTarget(characterSelected(), coreNode);
@@ -668,7 +652,7 @@ public class CompanionManagement {
 				};
 				
 			} else if(index==12) {
-				return new Response("Spells", UtilText.parse(characterSelected(), "Manage [npc.namePos] spells."), SpellManagement.CHARACTER_SPELLS_EARTH) {
+				return new Response("Заклинания", UtilText.parse(characterSelected(), "Управление заклинаниями [npc.namePos]."), SpellManagement.CHARACTER_SPELLS_EARTH) {
 					@Override
 					public void effects() {
 						SpellManagement.setSpellOwner(characterSelected(), coreNode);
@@ -677,10 +661,10 @@ public class CompanionManagement {
 				
 			} else if(index==13) {
 				if(!characterSelected().isElementalSummoned()) {
-					return new Response("Dispel elemental", UtilText.parse(characterSelected(), "[npc.Name] doesn't have an elemental summoned..."), null);
+					return new Response("Снятие стихийного существа", UtilText.parse(characterSelected(), "У [npc.Name] нет призванного стихийного существа..."), null);
 					
 				} else {
-					return new Response("Dispel elemental", UtilText.parse(characterSelected(), "Tell [npc.name] to dispel [npc.her] elemental."), coreNode) {
+					return new Response("Снятие стихийного существа", UtilText.parse(characterSelected(), "Приказать [npc.name] развеять стихийную [npc.her]."), coreNode) {
 						@Override
 						public void effects() {
 							characterSelected().removeCompanion(characterSelected().getElemental());
@@ -691,51 +675,48 @@ public class CompanionManagement {
 				
 			} else if(index==14) {
 				if(characterSelected().isDoll()) {
-					return new Response("Set free",
-							UtilText.parse(characterSelected(), "Dolls cannot be set free..."),
+					return new Response("Освободить",
+							UtilText.parse(characterSelected(), "Кукол нельзя просто так освободить..."),
 							null);
 					
 				} else if(!Main.game.getPlayer().hasItemType("innoxia_slavery_freedom_certification")) {
-					return new Response("Set free",
+					return new Response("Освободить",
 							UtilText.parse(characterSelected(),
-									"You do not have a Freedom Certification, so you cannot set [npc.name] free..."
-									+ "<br/><i>Freedom Certifications can be purchased from Finch in Slaver Alley's Slaver Administration building.</i>"),
+									"У вас нет Сертификата Свободы, поэтому вы не можете освободить [npc.name]...<br/><i>Сертификаты Свободы можно купить у Финча в здании Администрации рабов в Переулке Рабов.</i>"),
 							null);
 					
 				} else {
 					if(characterSelected() instanceof Scarlett) {
-						return new Response("Set free",
+						return new Response("Освободить",
 								UtilText.parse(characterSelected(),
-										"Fill out a Freedom Certification and set [npc.name] free!"
-										+ "<br/>If you do this, [npc.she] will undoubtedly immediately leave and return to Helena's nest..."),
+										"Заполните Сертификат Свободы и освободите [npc.name]!<br/>Если вы сделаете это, [npc.she] несомненно тут же сбежит и вернется в гнездо Helena..."),
 								SET_SLAVE_FREE_SCARLETT);
 					}
 					if(characterSelected() instanceof Brax) {
-						return new Response("Set free",
+						return new Response("Освободить",
 								UtilText.parse(characterSelected(),
-										"You cannot set [npc.name] free...<br/><i>(This will be added later when I add more content for Brax!)</i>"),
+										"Вы не можете освободить [npc.name]...<br/><i>(Это будет добавлено позже, когда я добавлю больше контента для Brax!)</i>"),
 								null);
 					}
 					
 					String unavailableGuestDescription = "";
 					if(!Main.game.getPlayer().isQuestCompleted(QuestLine.SIDE_ACCOMMODATION)) {
-						unavailableGuestDescription = "[style.italicsMinorBad(As you do not have Lilaya's permission to house guests, you will be unable to invite [npc.name] to stay here in the mansion after freeing [npc.herHim]!)]";
+						unavailableGuestDescription = "[style.italicsMinorBad(Так как у вас нет разрешения от Lilaya принимать гостей, вы не сможете пригласить [npc.name] пожить здесь, в особняке, после освобождения [npc.herHim]!)]";
 						
 					} else if(!characterSelected().isAffectionHighEnoughToInviteHome()) {
-						unavailableGuestDescription = "[style.italicsBad([npc.Name] does not like you enough to consider staying with you after being set free!)]";
+						unavailableGuestDescription = "[style.italicsBad([npc.Name] любит вас недостаточно сильно, чтобы рассматривать возможность жизни с вами после обретения свободы!)]";
 						
 					} else if(!OccupancyUtil.isFreeRoomAvailableForOccupant()) {
-						unavailableGuestDescription = "[style.italicsMinorBad(As you do not have a free guest room for [npc.name] to move in to, you will be unable to invite [npc.herHim] to stay here in the mansion after freeing [npc.herHim]!)]";
+						unavailableGuestDescription = "[style.italicsMinorBad(Так как у вас нет свободной гостевой комнаты, в которую могла бы заселиться [npc.name], вы не сможете пригласить [npc.herHim] пожить здесь, в особняке, после освобождения [npc.herHim]!)]";
 					}
 					String thanksjava = unavailableGuestDescription;
 					
-					return new Response("Set free",
+					return new Response("Освободить",
 							UtilText.parse(characterSelected(),
-									"Fill out a Freedom Certification and set [npc.name] free!"
-									+ "<br/>"
+									"Заполните Сертификат Свободы и освободите [npc.name]!<br/>"
 									+ (thanksjava.isEmpty()
-										?"[style.italicsMinorGood([npc.Name] likes you enough to accept an offer of staying here to live with you, so after freeing [npc.herHim] you can offer to let [npc.herHim] stay in one of the free guest rooms!)]"
-										:thanksjava+"<br/>[style.italicsBad(This will permanently remove [npc.herHim] (and everything in [npc.her] inventory) from the game!)]")),
+										?"[style.italicsMinorGood([npc.Name] любит вас достаточно сильно, чтобы принять предложение поселиться здесь, так что после освобождения [npc.herHim] вы сможете предложить [npc.herHim] занять одну из свободных гостевых комнат!)]"
+										:thanksjava+"<br/>[style.italicsBad(Это навсегда удалит [npc.herHim] (и всё содержимое [npc.her] инвентаря) из игры!)]")),
 							SET_SLAVE_FREE) {
 						@Override
 						public Colour getHighlightColour() {
@@ -749,7 +730,7 @@ public class CompanionManagement {
 				
 			} else if(index == 0) {
 				if(coreNode==OccupantManagementDialogue.SLAVE_LIST) {
-					return new Response("Back", "Return to the occupant list overview.", coreNode) {
+					return new Response("Назад", "Вернуться к списку обитателей.", coreNode) {
 						@Override
 						public void effects() {
 							Main.game.getDialogueFlags().setManagementCompanion(null);
@@ -757,15 +738,15 @@ public class CompanionManagement {
 						}
 					};
 				}
-				return new Response("Leave",
+				return new Response("Уйти",
 						characterSelected()==null
-							?"Return to the previous dialogue."
+							?"Вернуться к предыдущему диалогу."
 							:UtilText.parse(characterSelected(),
 								characterSelected().isDollStatue()
-									?"Leave [npc.name] frozen in place and continue on your way."
+									?"Оставить [npc.name] застывшей на месте и продолжить свой путь."
 									:(characterSelected().isAsleep()
-										?"Leave [npc.name] to sleep..."
-										:"Tell [npc.name] that you'll catch up with [npc.herHim] some other time.")),
+										?"Оставить [npc.name] поспать..."
+										:"Сказать [npc.name], что вы догоните [npc.herHim] в другой раз.")),
 						Main.game.getDefaultDialogue(false)) {
 					@Override
 					public void effects() {
@@ -779,38 +760,38 @@ public class CompanionManagement {
 		} else { // Friendly occupant or null character not currently in the player's party:
 			if (index == 1) {
 				if(characterSelected() == null) {
-					return new Response("Inspect", "You haven't selected anyone...", null);
+					return new Response("Осмотреть", "Вы еще никого не выбрали...", null);
 				}
 				if(Main.game.getCurrentDialogueNode()==SLAVE_MANAGEMENT_INSPECT) {
-					return new Response("Inspect", UtilText.parse(characterSelected(), "You are already taking a closer look at [npc.name]!"), null);
+					return new Response("Осмотреть", UtilText.parse(characterSelected(), "Вы уже внимательно изучаете [npc.name]!"), null);
 				}
-				return new Response("Inspect", UtilText.parse(characterSelected(), "Take a closer look at [npc.name]."), SLAVE_MANAGEMENT_INSPECT);
+				return new Response("Осмотреть", UtilText.parse(characterSelected(), "Рассмотреть [npc.name] поближе."), SLAVE_MANAGEMENT_INSPECT);
 				
 			} else if (index == 2) {
 				if(Main.game.getCurrentDialogueNode()==SLAVE_MANAGEMENT_JOBS) {
-					return new Response("Job", UtilText.parse(characterSelected(), "You are already setting [npc.namePos] job and work hours!"), null);
+					return new Response("Работа", UtilText.parse(characterSelected(), "Вы уже устанавливаете работу и часы работы для [npc.namePos]!"), null);
 				}
 				if(characterSelected() == null) {
-					return new Response("Job", "You haven't selected anyone...", null);
+					return new Response("Работа", "Вы еще никого не выбрали...", null);
 				}
 				if(!characterSelected().hasJob()) {
-					return new Response("Job", "Set this occupant's temporary job and work hours.", SLAVE_MANAGEMENT_JOBS);
+					return new Response("Работа", "Установить временную работу и часы работы для этого обитателя.", SLAVE_MANAGEMENT_JOBS);
 				}
-				return new Response("Job", "This occupant already has a permanent job.", null);
+				return new Response("Работа", "У этого обитателя уже есть постоянная работа.", null);
 			} else if (index == 3) {
 				if(Main.game.getCurrentDialogueNode()==SLAVE_MANAGEMENT_PERMISSIONS) {
-					return new Response("Permissions", UtilText.parse(characterSelected(), "You are already setting [npc.namePos] permissions!"), null);
+					return new Response("Разрешения", UtilText.parse(characterSelected(), "Вы уже устанавливаете разрешения для [npc.namePos]!"), null);
 				}
 				if(characterSelected() == null) {
-					return new Response("Permissions", "You haven't selected anyone...", null);
+					return new Response("Разрешения", "Вы еще никого не выбрали...", null);
 				}
-				return new Response("Permissions", "You cannot manage the permissions of a free-willed occupant. This option is only available for slaves.", null);
+				return new Response("Разрешения", "Вы не можете управлять правами вольнодумного обитателя. Этот вариант доступен только для рабов.", null);
 				
 			} else if (index == 4) {
 				if(characterSelected() == null) {
-					return new Response("Inventory", "You haven't selected anyone...", null);
+					return new Response("Инвентарь", "Вы еще никого не выбрали...", null);
 				}
-				return new ResponseEffectsOnly("Inventory", UtilText.parse(characterSelected(), "Manage [npc.namePos] inventory.")){
+				return new ResponseEffectsOnly("Инвентарь", UtilText.parse(characterSelected(), "Управление инвентарем [npc.namePos].")){
 					@Override
 					public void effects() {
 						Main.mainController.openInventory(characterSelected(), InventoryInteraction.FULL_MANAGEMENT);
@@ -819,11 +800,11 @@ public class CompanionManagement {
 				
 			} else if(index == 5) {
 				if(characterSelected() == null) {
-					return new Response("Send to Kate", "You haven't selected anyone...", null);
+					return new Response("Отправить Кейт", "Вы еще никого не выбрали...", null);
 					
 				} else if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.kateIntroduced)) {
-					return new Response("Send to Kate",
-							UtilText.parse(characterSelected(), "Send [npc.name] to Kate's beauty salon, 'Succubi's secrets', to get [npc.her] appearance changed."),
+					return new Response("Отправить Кейт",
+							UtilText.parse(characterSelected(), "Отправить [npc.name] в салон красоты Кейт «Секреты суккуба», чтобы изменить внешность [npc.her]."),
 							SLAVE_MANAGEMENT_COSMETICS_MAKEUP) {
 								@Override
 								public void effects() {
@@ -831,16 +812,16 @@ public class CompanionManagement {
 								}
 							};
 				} else {
-					return new Response("Send to Kate", "You haven't met Kate yet!", null);
+					return new Response("Отправить Кейт", "Вы еще не встречали Кейт!", null);
 				}
 				
 			} else if (index == 6) {
 				if(characterSelected() == null) {
-					return new Response("Perks", "You haven't selected anyone...", null);
+					return new Response("Перки", "Вы еще никого не выбрали...", null);
 				}
 				if(Main.game.getCurrentDialogueNode()==SLAVE_MANAGEMENT_PERKS) {
-					return new Response("[style.colourMinorBad(Reset perks)]",
-							UtilText.parse(characterSelected(), "Reset all of [npc.namePos] perks and traits, refunding all points spent. (This is a temporary action while the perk tree is still under development.)"),
+					return new Response("[style.colourMinorBad(Сбросить перки)]",
+							UtilText.parse(characterSelected(), "Сбросить все перки и черты [npc.namePos], вернув все потраченные очки. (Это временная мера, так как древо перков всё еще находится в разработке.)"),
 							Main.game.getCurrentDialogueNode()) {
 						@Override
 						public void effects() {
@@ -848,14 +829,14 @@ public class CompanionManagement {
 						}
 					};
 				}
-				return new Response("Perks", UtilText.parse(characterSelected(), "Assign [npc.namePos] perk points."), SLAVE_MANAGEMENT_PERKS);
+				return new Response("Перки", UtilText.parse(characterSelected(), "Распределить очки перков [npc.namePos]."), SLAVE_MANAGEMENT_PERKS);
 				
 			} else if(index==7) {
 				if(characterSelected() == null) {
-					return new Response("Transformations", "You haven't selected anyone...", null);
+					return new Response("Трансформации", "Вы еще никого не выбрали...", null);
 				}
 				if(characterSelected().isDoll() && (Main.game.getPlayer().hasItemType(ItemType.DOLL_CONSOLE) || characterSelected().hasItemType(ItemType.DOLL_CONSOLE))) {
-					return new ResponseEffectsOnly("Transformations", UtilText.parse(characterSelected(), "Use your D.E.C.K. to customise [npc.namePos] appearance.")) {
+					return new ResponseEffectsOnly("Трансформации", UtilText.parse(characterSelected(), "Используйте свой D.E.C.K., чтобы настроить внешность [npc.namePos].")) {
 						@Override
 						public void effects() {
 							ItemEffectType.DOLL_CONSOLE.itemEffectOverride(TFModifier.NONE, TFModifier.NONE, TFPotency.BOOST, 0, Main.game.getPlayer(), characterSelected(), new ItemEffectTimer());
@@ -863,11 +844,11 @@ public class CompanionManagement {
 					};
 					
 				} else if(!characterSelected().isAbleToSelfTransform()) {
-					return new Response("Transformations", characterSelected().getUnableToTransformDescription(), null);
+					return new Response("Трансформации", characterSelected().getUnableToTransformDescription(), null);
 					
 				} else {
-					return new Response("Transformations",
-							UtilText.parse(characterSelected(), "Take a very detailed look at what [npc.name] can transform [npc.herself] into..."),
+					return new Response("Трансформации",
+							UtilText.parse(characterSelected(), "Внимательно рассмотреть, в кого [npc.name] может превратить [npc.herself]..."),
 							BodyChanging.BODY_CHANGING_CORE){
 						@Override
 						public void effects() {
@@ -878,24 +859,24 @@ public class CompanionManagement {
 				
 			} else if(index==8) {
 				if(Main.game.getCurrentDialogueNode()==OCCUPANT_CHOOSE_NAME) {
-					return new Response("Set names", UtilText.parse(characterSelected(), "You are managing [npc.namePos] name!"), null);
+					return new Response("Установить имена", UtilText.parse(characterSelected(), "Вы управляете именем [npc.namePos]!"), null);
 				}
 				if(characterSelected() == null) {
-					return new Response("Set names", "You haven't selected anyone...", null);
+					return new Response("Установить имена", "Вы еще никого не выбрали...", null);
 				}
-				return new Response("Set names", UtilText.parse(characterSelected(), "Tell [npc.name] to call you by a different name."), OCCUPANT_CHOOSE_NAME);
+				return new Response("Установить имена", UtilText.parse(characterSelected(), "Попросить [npc.name] называть вас другим именем."), OCCUPANT_CHOOSE_NAME);
 				
 			} else if(index==10 && Main.getProperties().hasValue(PropertyValue.companionContent)) {
 				if(characterSelected() == null) {
-					return new Response("Send home", "You haven't selected anyone...", null);
+					return new Response("Отправить домой", "Вы еще никого не выбрали...", null);
 				}
-				return new Response("Send home", UtilText.parse(characterSelected(), "[npc.Name] isn't in your party, so you can't send [npc.herHim] home..."), null);
+				return new Response("Отправить домой", UtilText.parse(characterSelected(), "[npc.Name] нет в вашем отряде, поэтому вы не можете отправить [npc.herHim] домой..."), null);
 				
 			} else if(index==11) {
 				if(characterSelected() == null) {
-					return new Response("Combat moves", "You haven't selected anyone...", null);
+					return new Response("Боевые приемы", "Вы еще никого не выбрали...", null);
 				}
-				return new Response("Combat moves", UtilText.parse(characterSelected(), "Adjust the moves [npc.name] can perform in combat."), CombatMovesSetup.COMBAT_MOVES_CORE) {
+				return new Response("Боевые приемы", UtilText.parse(characterSelected(), "Настроить приемы, которые [npc.name] может использовать в бою."), CombatMovesSetup.COMBAT_MOVES_CORE) {
 					@Override
 					public void effects() {
 						CombatMovesSetup.setTarget(characterSelected(), coreNode);
@@ -904,9 +885,9 @@ public class CompanionManagement {
 				
 			} else if(index==12) {
 				if(characterSelected() == null) {
-					return new Response("Spells", "You haven't selected anyone...", null);
+					return new Response("Заклинания", "Вы еще никого не выбрали...", null);
 				}
-				return new Response("Spells", UtilText.parse(characterSelected(), "Manage [npc.namePos] spells."), SpellManagement.CHARACTER_SPELLS_EARTH) {
+				return new Response("Заклинания", UtilText.parse(characterSelected(), "Управление заклинаниями [npc.namePos]."), SpellManagement.CHARACTER_SPELLS_EARTH) {
 					@Override
 					public void effects() {
 						SpellManagement.setSpellOwner(characterSelected(), coreNode);
@@ -915,13 +896,13 @@ public class CompanionManagement {
 				
 			} else if(index==13) {
 				if(characterSelected() == null) {
-					return new Response("Dispel elemental", "You haven't selected anyone...", null);
+					return new Response("Снятие стихийного существа", "Вы еще никого не выбрали...", null);
 				}
 				if(!characterSelected().isElementalSummoned()) {
-					return new Response("Dispel elemental", UtilText.parse(characterSelected(), "[npc.Name] doesn't have an elemental summoned..."), null);
+					return new Response("Снятие стихийного существа", UtilText.parse(characterSelected(), "У [npc.Name] нет призванного стихийного существа..."), null);
 					
 				} else {
-					return new Response("Dispel elemental", UtilText.parse(characterSelected(), "Tell [npc.name] to dispel [npc.her] elemental."), coreNode) {
+					return new Response("Снятие стихийного существа", UtilText.parse(characterSelected(), "Приказать [npc.name] развеять стихийную [npc.her]."), coreNode) {
 						@Override
 						public void effects() {
 							characterSelected().removeCompanion(characterSelected().getElemental());
@@ -932,7 +913,7 @@ public class CompanionManagement {
 				
 			} else if(index == 0) {
 				if(coreNode==OccupantManagementDialogue.SLAVE_LIST) {
-					return new Response("Back", "Return to the occupant list overview.", coreNode) {
+					return new Response("Назад", "Вернуться к списку обитателей.", coreNode) {
 						@Override
 						public void effects() {
 							Main.game.getDialogueFlags().setManagementCompanion(null);
@@ -940,15 +921,15 @@ public class CompanionManagement {
 						}
 					};
 				}
-				return new Response("Leave",
+				return new Response("Уйти",
 							characterSelected()==null
-								?"Return to the previous dialogue."
+								?"Вернуться к предыдущему диалогу."
 								:UtilText.parse(characterSelected(),
 										characterSelected().isDollStatue()
-											?"Leave [npc.name] frozen in place and continue on your way."
+											?"Оставить [npc.name] застывшей на месте и продолжить свой путь."
 											:(characterSelected().isAsleep()
-												?"Leave [npc.name] to sleep..."
-												:"Tell [npc.name] that you'll catch up with [npc.herHim] some other time.")),
+												?"Оставить [npc.name] поспать..."
+												:"Сказать [npc.name], что вы догоните [npc.herHim] в другой раз.")),
 							Main.game.getDefaultDialogue(false)) {
 					@Override
 					public void effects() {
@@ -966,7 +947,7 @@ public class CompanionManagement {
 	/**
 	 * <b>Use getSlaveryManagementDetailedDialogue(NPC slave) to initialise this!!!</b>
 	 */
-	public static final DialogueNode SLAVE_MANAGEMENT_INSPECT = new DialogueNode("Slave Management", ".", true) {
+	public static final DialogueNode SLAVE_MANAGEMENT_INSPECT = new DialogueNode("Управление рабами", ".", true) {
 
 		@Override
 		public DialogueNodeType getDialogueNodeType() {
@@ -975,7 +956,7 @@ public class CompanionManagement {
 		
 		@Override
 		public String getLabel() {
-			return UtilText.parse(characterSelected(), "Inspecting [npc.Name]");
+			return UtilText.parse(characterSelected(), "Осмотр [npc.Name]");
 		}
 		
 		@Override
@@ -990,8 +971,7 @@ public class CompanionManagement {
 			
 			UtilText.nodeContentSB.append(
 					"<div class='container-full-width'>"
-							+ "<h6 style='color:"+PresetColour.GENERIC_EXCELLENT.toWebHexString()+"; text-align:center;'>Inspection</h6>"
-							+ "<div class='container-full-width inner'>"
+							+ "<h6 style='color:"+PresetColour.GENERIC_EXCELLENT.toWebHexString()+"; text-align:center;'>Осмотр</h6><div class='container-full-width inner'>"
 								+character.getCharacterInformationScreen(false)
 							+"</div>"
 					+"</div>"
@@ -1016,7 +996,7 @@ public class CompanionManagement {
 		}
 	};
 	
-	public static final DialogueNode SLAVE_MANAGEMENT_JOBS = new DialogueNode("Slave Management", ".", true) {
+	public static final DialogueNode SLAVE_MANAGEMENT_JOBS = new DialogueNode("Управление рабами", ".", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			if(Main.game.getDialogueFlags().getSlaveryManagerJobSelected().isHidden(characterSelected())) {
@@ -1029,7 +1009,7 @@ public class CompanionManagement {
 		}
 		@Override
 		public String getLabel() {
-			return UtilText.parse(characterSelected(), "[npc.NamePos] Job");
+			return UtilText.parse(characterSelected(), "[npc.NamePos] Работа");
 		}
 		@Override
 		public String getContent() {
@@ -1044,36 +1024,35 @@ public class CompanionManagement {
 			
 			UtilText.nodeContentSB.append("<div class='container-full-width inner' style='text-align:center;padding-left:2px;padding-right:2px;'>");
 
-			UtilText.nodeContentSB.append("<div class='title-button "+(!isJobSchedulePasteAvailable()?"no-select":"")+"' id='pasteSlaveJobSchedule'"
-					+ " style='position:absolute; left:auto; right:8px; top:8px; padding:2px; margin:0; width:24px; height:24px; border:1px solid #999; "+(!isJobSchedulePasteAvailable()?"opacity:0.5;":"")+"'>"
+			UtilText.nodeContentSB.append("<div class='title-button "+(!isJobSchedulePasteAvailable()?"без выбора":"")+"' id='pasteSlaveJobSchedule' style='position:absolute; left:auto; right:8px; top:8px; padding:2px; margin:0; width:24px; height:24px; border:1px solid #999; "+(!isJobSchedulePasteAvailable()?"opacity:0.5;":"")+"'>"
 									+ SVGImages.SVG_IMAGE_PROVIDER.getPasteIcon()
 								+ "</div>");
 			UtilText.nodeContentSB.append("<div class='title-button' id='copySlaveJobSchedule' style='position:absolute; left:auto; right:48px; top:8px; padding:2px; margin:0; width:24px; height:24px; border:1px solid #999;'>"
 									+ SVGImages.SVG_IMAGE_PROVIDER.getCopyIcon()
 								+ "</div>");
 			
-			UtilText.nodeContentSB.append("<h6 style='color:"+PresetColour.GENERIC_EXPERIENCE.toWebHexString()+"; text-align:center;'>Job Schedule</h6>");
-			UtilText.nodeContentSB.append("<div style='width:100%;margin-top:8px;'><b>Available Jobs</b></div>");
+			UtilText.nodeContentSB.append("<h6 style='color:"+PresetColour.GENERIC_EXPERIENCE.toWebHexString()+"; text-align:center;'>График работ</h6>");
+			UtilText.nodeContentSB.append("<div style='width:100%;margin-top:8px;'><b>Доступные работы</b></div>");
 			
 			
 			for(SlaveJob job : SlaveJob.values()) {
 				if(!job.isHidden(character) && (character.isSlave() || job.hasFlag(SlaveJobFlag.GUEST_CAN_WORK))) {
 					UtilText.nodeContentSB.append(
-							"<div class='normal-button' id='"+job+"_ASSIGN' style='width:calc(16.6% - 2px); margin:1px;color:"
-									+job.getColour().toWebHexString()+";"+(Main.game.getDialogueFlags().getSlaveryManagerJobSelected()==job?"border-color:"+job.getColour().toWebHexString()+";":"")+"'>"
+							"<div class='normal-button' id='"+job+"_НАЗНАЧИТЬ' style='width:calc(16.6% - 2px); margin:1px;color:"
+									+job.getColour().toWebHexString()+";"+(Main.game.getDialogueFlags().getSlaveryManagerJobSelected()==job?"цвет-границы:"+job.getColour().toWebHexString()+";":"")+"'>"
 									+Util.capitaliseSentence(job.getName(character))
 									+"</div>");
 				}
 			}
 			
-			UtilText.nodeContentSB.append("<div style='width:100%;margin-top:8px;'><b>Time Slots</b></div>");
+			UtilText.nodeContentSB.append("<div style='width:100%;margin-top:8px;'><b>Временные интервалы</b></div>");
 			float stamina = character.getDailySlaveJobStamina();
 			SlaveJob jobSelected = Main.game.getDialogueFlags().getSlaveryManagerJobSelected();
 			for(int i=0 ; i< 24; i++) {
 				Colour colour = character.getSlaveJob(i).getColour();
 				Colour borderColour = colour;
 				Colour backgroundColour = colour;
-				String background = "background:"+backgroundColour.getShades()[0]+";";
+				String background = "фон:"+backgroundColour.getShades()[0]+";";
 //				if(character.isSleepingAtHour(i)) {
 ////					colour = PresetColour.BASE_PURPLE_DARK;
 ////					background = "background:"+PresetColour.BASE_PURPLE.getShades()[0]+";";
@@ -1086,26 +1065,20 @@ public class CompanionManagement {
 							|| (!character.isSlave() && character.isSleepingAtHour(i)))
 						&& !jobSelected.equals(SlaveJob.IDLE)) { // Always allow idle job
 					UtilText.nodeContentSB.append(
-							"<div class='normal-button hour disabled' style='"+background+"border-color:"+borderColour.toWebHexString()+";color:"+colour.getShades()[4]+";' id='"+i+"_WORK_DISABLED'>");
+							"<div class='normal-button hour disabled' style='"+background+"цвет-границы:"+borderColour.toWebHexString()+";color:"+colour.getShades()[4]+";' id='"+i+"_РАБОТА_ОТКЛЮЧЕНА'>");
 				} else {
 					UtilText.nodeContentSB.append(
-							"<div class='normal-button hour' style='"+background+"border-color:"+borderColour.toWebHexString()+";color:"+colour.getShades()[4]+";' id='"+i+"_WORK'>");
+							"<div class='normal-button hour' style='"+background+"цвет-границы:"+borderColour.toWebHexString()+";color:"+colour.getShades()[4]+";' id='"+i+"_WORK'>");
 				}
 				UtilText.nodeContentSB.append(String.format("%02d", i)+":00");
 				if(character.isSleepingAtHour(i)) { // Sleeping indication via 'zzZ'
-					String stroke = "text-shadow:"
-									+ "1px 1px 0 #000,"
-									+ "-1px -1px 0 #000, "
-									+ "1px -1px 0 #000,"
-									+ "-1px 1px 0 #000,"
-									+ "1px 1px 0 #000;";
+					String stroke = "text-shadow:1px 1px 0 #000,-1px -1px 0 #000, 1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;";
 					UtilText.nodeContentSB.append("<b class='hotkey-icon' style='color:"+PresetColour.SLEEP.toWebHexString()+";"+stroke+"'><span style='font-size:0.8em;'>z</span>zZ</b>");
 				}
 				UtilText.nodeContentSB.append("</div>");
 			}
 			UtilText.nodeContentSB.append(
-								"<div style='width:100%;margin-top:8px;'>"
-									+"<i>[style.colourStamina(Current daily stamina:)] "+(stamina>=0?"[style.colourGood(":"[style.colourBad(")+stamina+")]/"+character.getBaseStaminaForSlaveJobs()+"</i>"
+								"<div style='width:100%;margin-top:8px;'><i>[style.colourStamina(Текущая дневная выносливость:)] "+(stamina>=0?"[style.colourGood(":"[style.colourBad(")+stamina+")]/"+character.getBaseStaminaForSlaveJobs()+"</i>"
 								+ "</div>");
 								for(SlaveJobHours preset : SlaveJobHours.values()) {
 									boolean jobDisabled = false;
@@ -1143,33 +1116,14 @@ public class CompanionManagement {
 			UtilText.nodeContentSB.append(
 					"<div class='container-full-width' style='text-align:center;'>");
 
-			UtilText.nodeContentSB.append("<div class='title-button "+(!isJobSettingsPasteAvailable()?"no-select":"")+"' id='pasteSlaveJobSettings'"
-					+ " style='position:absolute; left:auto; right:8px; top:8px; padding:2px; margin:0; width:24px; height:24px; border:1px solid #999; "+(!isJobSettingsPasteAvailable()?"opacity:0.5;":"")+"'>"
+			UtilText.nodeContentSB.append("<div class='title-button "+(!isJobSettingsPasteAvailable()?"без выбора":"")+"' id='pasteSlaveJobSettings' style='position:absolute; left:auto; right:8px; top:8px; padding:2px; margin:0; width:24px; height:24px; border:1px solid #999; "+(!isJobSettingsPasteAvailable()?"opacity:0.5;":"")+"'>"
 									+ SVGImages.SVG_IMAGE_PROVIDER.getPasteIcon()
 								+ "</div>");
 			UtilText.nodeContentSB.append("<div class='title-button' id='copySlaveJobSettings' style='position:absolute; left:auto; right:48px; top:8px; padding:2px; margin:0; width:24px; height:24px; border:1px solid #999;'>"
 									+ SVGImages.SVG_IMAGE_PROVIDER.getCopyIcon()
 								+ "</div>");
 			
-			UtilText.nodeContentSB.append("<h6 style='color:"+PresetColour.GENERIC_EXPERIENCE.toWebHexString()+"; text-align:center;'>Job Settings & Related Information</h6>"
-						+"<div class='container-full-width' style='margin-bottom:0;'>"
-							+ "<div style='width:20%; float:left; font-weight:bold; margin:0 0 0 4%; padding:0;'>"
-								+ "Job"
-							+ "</div>"
-							+ "<div style='float:left; width:9%; font-weight:bold; margin:0; padding:0;'>"
-								+ "<b>Workers</b>"
-							+"</div>"
-							+ "<div style='float:left; width:14%; font-weight:bold; margin:0; padding:0;'>"
-								+ "<b style='color:"+PresetColour.AFFECTION.toWebHexString()+";'>Affection</b>"
-							+"</div>"
-							+ "<div style='float:left; width:14%; font-weight:bold; margin:0; padding:0;'>"
-								+ "<b style='color:"+PresetColour.OBEDIENCE.toWebHexString()+";'>Obedience</b>"
-							+"</div>"
-							+ "<div style='float:left; width:39%; font-weight:bold; margin:0; padding:0;'>"
-								+ "<b style='color:"+PresetColour.CURRENCY_GOLD.toWebHexString()+";'>Income</b>"
-										+ " (+<b style='color:"+PresetColour.OBEDIENCE.toWebHexString()+";'>Obedience Bonus</b>)"
-							+"</div>"
-						+ "</div>");
+			UtilText.nodeContentSB.append("<h6 style='color:"+PresetColour.GENERIC_EXPERIENCE.toWebHexString()+"; text-align:center;'>Настройки работы и доп. информация</h6><div class='container-full-width' style='margin-bottom:0;'><div style='width:20%; float:left; font-weight:bold; margin:0 0 0 4%; padding:0;'>Работа</div><div style='float:left; width:9%; font-weight:bold; margin:0; padding:0;'><b>Рабочие</b></div><div style='float:left; width:14%; font-weight:bold; margin:0; padding:0;'><b style='color:"+PresetColour.AFFECTION.toWebHexString()+";'>Привязанность</b></div><div style='float:left; width:14%; font-weight:bold; margin:0; padding:0;'><b style='color:"+PresetColour.OBEDIENCE.toWebHexString()+";'>Покорность</b></div><div style='float:left; width:39%; font-weight:bold; margin:0; padding:0;'><b style='color:"+PresetColour.CURRENCY_GOLD.toWebHexString()+";'>Доход</b> (+<b style='color:"+PresetColour.OBEDIENCE.toWebHexString()+";'>Бонус к покорности</b>)</div></div>");
 			
 			for(SlaveJob job : SlaveJob.values()) {
 				if(job.isHidden(character) || (!character.isSlave() && !job.hasFlag(SlaveJobFlag.GUEST_CAN_WORK))) {
@@ -1181,9 +1135,7 @@ public class CompanionManagement {
 				boolean isCurrentJob = character.hasSlaveJobAssigned(job);
 				
 				UtilText.nodeContentSB.append(
-						"<div class='container-full-width inner' "+(isCurrentJob?"style='background:"+PresetColour.BACKGROUND_ALT.toWebHexString()+";'":"")+">"
-							+ "<div style='width:4%; float:left; margin:0; padding:0;'>"
-								+ "<div class='title-button no-select' id='SLAVE_JOB_INFO_"+job+"' style='position:relative; top:0;'>"+SVGImages.SVG_IMAGE_PROVIDER.getInformationIcon()+"</div>"
+						"<div class='container-full-width inner' "+(isCurrentJob?"style='background:"+PresetColour.BACKGROUND_ALT.toWebHexString()+";'":"")+"><div style='width:4%; float:left; margin:0; padding:0;'><div class='title-button no-select' id='SLAVE_JOB_INFO_"+job+"' style='position:relative; top:0;'>"+SVGImages.SVG_IMAGE_PROVIDER.getInformationIcon()+"</div>"
 							+ "</div>"
 							+"<div style='width:20%; float:left; margin:0; padding:0;'>"
 								+ (isCurrentJob
@@ -1198,16 +1150,12 @@ public class CompanionManagement {
 										?"<b style='color:"+PresetColour.AFFECTION.toWebHexString()+";'>+"+decimalFormat.format(affectionChange)+ "</b>"
 										:(affectionChange<0
 												?"<b style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>"+decimalFormat.format(affectionChange)+ "</b>"
-												:"[style.colourDisabled(0)]"))+"/hour"
-							+"</div>"
-							+ "<div style='float:left; width:14%; margin:0; padding:0;'>"
+												:"[style.colourDisabled(0)]"))+"/час</div><div style='float:left; width:14%; margin:0; padding:0;'>"
 								+ (obedienceChange>0
 										?"<b style='color:"+PresetColour.OBEDIENCE.toWebHexString()+";'>+"+decimalFormat.format(obedienceChange)+ "</b>"
 										:(obedienceChange<0
 												?"<b style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>"+decimalFormat.format(obedienceChange)+ "</b>"
-												:"[style.colourDisabled(0)]"))+"/hour"
-							+"</div>"
-							+ "<div style='float:left; width:39%; margin:0; padding:0;'>"
+												:"[style.colourDisabled(0)]"))+"/час</div><div style='float:left; width:39%; margin:0; padding:0;'>"
 								+ UtilText.formatAsMoney(job.getIncome())
 								+ " + ("
 								+ (job.getObedienceIncomeModifier()>0
@@ -1218,8 +1166,7 @@ public class CompanionManagement {
 								+(income>0
 									?UtilText.formatAsMoney(income, "b")
 									:UtilText.formatAsMoney(income, "b", PresetColour.GENERIC_BAD))
-								+"/hour"
-							+"</div>"
+								+"/час</div>"
 							);
 				
 				// Job Settings:
@@ -1234,8 +1181,8 @@ public class CompanionManagement {
 							:job.toString()+setting.toString()+"_ADD";
 			
 					UtilText.nodeContentSB.append(
-							"<div id='"+id+"' class='normal-button"+(settingActive?" selected":"")+"' style='width:23%; margin:1%; text-align:center;"
-										+(settingActive?"border-color:"+job.getColour().toWebHexString()+";":"border-color:"+job.getColour().getShades()[0]+";")+"'>"
+							"<div id='"+id+"' class='normal-button"+(settingActive?" выбранный":"")+"' style='width:23%; margin:1%; text-align:center;"
+										+(settingActive?"цвет-границы:"+job.getColour().toWebHexString()+";":"цвет-границы:"+job.getColour().getShades()[0]+";")+"'>"
 								+ (settingActive
 										?"<span style='color:"+job.getColour().toWebHexString()+";margin:8px;'>"+setting.getName()+"</span>"
 										:"[style.colourDisabled("+setting.getName()+")]")
@@ -1243,8 +1190,7 @@ public class CompanionManagement {
 				}
 				// More Job Settings:
 				for(Entry<String, List<SlaveJobSetting>> entry : job.getMutuallyExclusiveSettings().entrySet()) {
-					UtilText.nodeContentSB.append("<div class='container-full-width inner' style='"+(!isCurrentJob?"background:#1B1B1B;":"")+"'>"
-													+ "<div style='width:100%; float:left; margin:0; padding:0;"+(isCurrentJob?"":"color:#777;")+"'>"
+					UtilText.nodeContentSB.append("<div class='container-full-width inner' style='"+(!isCurrentJob?"background:#1B1B1B;":"")+"'><div style='width:100%; float:left; margin:0; padding:0;"+(isCurrentJob?"":"color:#777;")+"'>"
 													+ "<b>"+Util.capitaliseSentence(entry.getKey())+"</b>"
 													+ "</div>");
 					
@@ -1259,8 +1205,8 @@ public class CompanionManagement {
 								:setting.toString()+"_TOGGLE_ADD";
 				
 						UtilText.nodeContentSB.append(
-								"<div id='"+id+"' class='normal-button"+(settingActive?" selected":"")+"' style='width:23%; margin:1%; text-align:center;"
-											+(settingActive?"border-color:"+job.getColour().toWebHexString()+";":"")+"'>"
+								"<div id='"+id+"' class='normal-button"+(settingActive?" выбранный":"")+"' style='width:23%; margin:1%; text-align:center;"
+											+(settingActive?"цвет-границы:"+job.getColour().toWebHexString()+";":"")+"'>"
 									+ (settingActive
 											?"<span style='color:"+job.getColour().toWebHexString()+";margin:8px;'>"+setting.getName()+"</span>"
 											:"[style.colourDisabled("+setting.getName()+")]")
@@ -1312,7 +1258,7 @@ public class CompanionManagement {
 		}
 	};
 	
-	public static final DialogueNode SLAVE_MANAGEMENT_PERMISSIONS = new DialogueNode("Slave Management", ".", true) {
+	public static final DialogueNode SLAVE_MANAGEMENT_PERMISSIONS = new DialogueNode("Управление рабами", ".", true) {
 
 		@Override
 		public DialogueNodeType getDialogueNodeType() {
@@ -1321,7 +1267,7 @@ public class CompanionManagement {
 		
 		@Override
 		public String getLabel() {
-			return UtilText.parse(characterSelected(), "[npc.Name] - Permissions");
+			return UtilText.parse(characterSelected(), "[npc.Name] — Права доступа");
 		}
 		
 		@Override
@@ -1335,15 +1281,14 @@ public class CompanionManagement {
 			// Permissions:
 			UtilText.nodeContentSB.append("<div class='container-full-width' style='text-align:center;'>");
 
-			UtilText.nodeContentSB.append("<div class='title-button "+(!isPermissionsPasteAvailable()?"no-select":"")+"' id='pastePermissions'"
-					+ " style='position:absolute; left:auto; right:8px; top:8px; padding:2px; margin:0; width:24px; height:24px; border:1px solid #999; "+(!isPermissionsPasteAvailable()?"opacity:0.5;":"")+"'>"
+			UtilText.nodeContentSB.append("<div class='title-button "+(!isPermissionsPasteAvailable()?"без выбора":"")+"' id='pastePermissions' style='position:absolute; left:auto; right:8px; top:8px; padding:2px; margin:0; width:24px; height:24px; border:1px solid #999; "+(!isPermissionsPasteAvailable()?"opacity:0.5;":"")+"'>"
 									+ SVGImages.SVG_IMAGE_PROVIDER.getPasteIcon()
 								+ "</div>");
 			UtilText.nodeContentSB.append("<div class='title-button' id='copyPermissions' style='position:absolute; left:auto; right:48px; top:8px; padding:2px; margin:0; width:24px; height:24px; border:1px solid #999;'>"
 									+ SVGImages.SVG_IMAGE_PROVIDER.getCopyIcon()
 								+ "</div>");
 			
-			UtilText.nodeContentSB.append("<h6 style='color:"+PresetColour.GENERIC_ARCANE.toWebHexString()+"; text-align:center;'>Permissions</h6>");
+			UtilText.nodeContentSB.append("<h6 style='color:"+PresetColour.GENERIC_ARCANE.toWebHexString()+"; text-align:center;'>Права</h6>");
 			
 			for(SlavePermission permission : SlavePermission.values()) {
 				if(permission.isAvailableForCharacter(character)) {
@@ -1357,18 +1302,18 @@ public class CompanionManagement {
 											?(settingActive?setting+"_REMOVE_ME":setting+"_ADD")
 											:(settingActive?setting+"_REMOVE":setting+"_ADD"));
 							
-							String style = "width:23%; margin:1%;";
+							String style = "ширина:23%; отступ:1%;";
 							if(permission.getSettings().size()==5) {
-								style = "width:18%; margin:1%;"; // These settings can fit 5 on a line
+								style = "ширина:18%; отступ:1%;"; // These settings can fit 5 on a line
 							}
 							
 							UtilText.nodeContentSB.append(
-									"<div id='"+id+"' class='normal-button"+(settingActive?" selected":"")+"' style='"+style+"text-align:center;"
+									"<div id='"+id+"' class='normal-button"+(settingActive?" выбранный":"")+"' style='"+style+"text-align:center;"
 												+(settingActive
-													?"border-color:"+permission.getColour().toWebHexString()+";"
+													?"цвет-границы:"+permission.getColour().toWebHexString()+";"
 													:(permission.isMutuallyExclusiveSettings()
 															?""
-															:"border-color:"+permission.getColour().getShades()[0]+";"))+"'>"
+															:"цвет-границы:"+permission.getColour().getShades()[0]+";"))+"'>"
 										+ (settingActive
 												?"<span style='color:"+permission.getColour().toWebHexString()+";margin:8px;'>"+setting.getName()+"</span>"
 												:"[style.colourDisabled("+setting.getName()+")]")
@@ -1403,39 +1348,37 @@ public class CompanionManagement {
 	private static Response getCosmeticsResponse(int responseTab, int index) {
 		if (index == 1) {
 			if(!BodyChanging.getTarget().isAbleToWearMakeup()) {
-				return new Response("Makeup", UtilText.parse(BodyChanging.getTarget(), "As [npc.namePos] body is made of "+Main.game.getPlayer().getBodyMaterial().getName()+", Kate is unable to apply any makeup!"), null);
+				return new Response("Макияж", UtilText.parse(BodyChanging.getTarget(), "Так как тело [npc.namePos] состоит из "+Main.game.getPlayer().getBodyMaterial().getName()+", Кейт не может нанести макияж!"), null);
 				
 			} else {
-				return new Response("Makeup",
-						"Kate offers a wide range of different cosmetic services, and several pages of the brochure are devoted to images displaying different styles and colours of lipstick, nail polish, and other forms of makeup.",
+				return new Response("Макияж",
+						"Кейт предлагает широкий спектр различных косметических услуг, и нескольким страницам брошюры посвящены изображения, демонстрирующие различные стили и цвета помады, лака для ногтей и других видов макияжа.",
 						SLAVE_MANAGEMENT_COSMETICS_MAKEUP);
 			}
 			
 		} else if (index == 2) {
-			return new Response("Hair",
-					"There's a double-page spread of all the different dyes, styles, and lengths of hair that Kate's able to work with.",
+			return new Response("Волосы",
+					"Разворот брошюры целиком посвящен всем различным видам красок, стилям и длинам волос, с которыми Кейт может работать.",
 					SLAVE_MANAGEMENT_COSMETICS_HAIR);
 
 		} else if (index == 3) {
-			return new Response("Piercings",
-					"Kate offers a wide range of different piercings.",
+			return new Response("Пирсинг",
+					"Кейт предлагает широкий выбор различных видов пирсинга.",
 					SLAVE_MANAGEMENT_COSMETICS_PIERCINGS);
 
 		}  else if (index == 4) {
 			if(BodyChanging.getTarget().isDoll()) {
-				return new Response("Eyes", "Kate isn't able to recolour arcane silicone, so this option isn't available...", null);
+				return new Response("Глаза", "Кейт не может перекрасить аркановый силикон, поэтому эта опция недоступна...", null);
 			}
-			return new Response("Eyes",
-					"There's a special page near the front of the brochure, advertising Kate's ability to recolour a person's eyes."
-					+ " Just like skin recolourings, this is quite demanding on her aura, and is therefore very expensive.", SLAVE_MANAGEMENT_COSMETICS_EYES);
+			return new Response("Глаза",
+					"В начале брошюры есть специальная страница, рекламирующая способность Кейт менять цвет глаз. Как и изменение цвета кожи, это требует немало её ауры, а потому стоит очень дорого.", SLAVE_MANAGEMENT_COSMETICS_EYES);
 
 		} else if (index == 5) {
 			if(BodyChanging.getTarget().isDoll()) {
-				return new Response("Coverings", "Kate isn't able to recolour arcane silicone, so this option isn't available...", null);
+				return new Response("Покрытия", "Кейт не может перекрасить аркановый силикон, поэтому эта опция недоступна...", null);
 			}
-			return new Response("Coverings",
-					"There's a special page in the middle of the brochure, advertising Kate's special ability to harness the arcane in order to recolour a person's skin or fur."
-					+ " Apparently, this is quite demanding on her aura, and is therefore very expensive.",
+			return new Response("Покрытия",
+					"В середине брошюры есть специальная страница, рекламирующая уникальный дар Кейт — использование арканы для изменения цвета кожи или меха. Судя по всему, это сильно истощает её ауру, поэтому услуга стоит очень дорого.",
 					SLAVE_MANAGEMENT_COSMETICS_COVERINGS){
 				@Override
 				public void effects() {
@@ -1444,15 +1387,14 @@ public class CompanionManagement {
 			};
 
 		} else if (index == 6) {
-			return new Response("Other", "Kate can offer other miscellaneous services, such as anal bleaching.", SLAVE_MANAGEMENT_COSMETICS_OTHER);
+			return new Response("Другое", "Кейт может предложить и другие разнообразные услуги, например, отбеливание ануса.", SLAVE_MANAGEMENT_COSMETICS_OTHER);
 
 		} else if (index == 7) {
-			return new Response("Tattoos", "Most of the brochure is taken up with drawings and photographs displaying Kate's considerable artistic talents."
-					+ " She's even able to apply arcane-enchanted tattoos, but they look to be very expensive...", SLAVE_MANAGEMENT_TATTOOS);
+			return new Response("Татуировки", "Большую часть брошюры занимают рисунки и фотографии, демонстрирующие немалые художественные таланты Кейт. Она даже способна наносить татуировки, зачарованные Арканой, но, похоже, они стоят очень дорого...", SLAVE_MANAGEMENT_TATTOOS);
 
 		} else if (index == 0) {
 			if(coreNode==OccupantManagementDialogue.SLAVE_LIST) {
-				return new Response("Back", "Return to the occupant list overview.", coreNode) {
+				return new Response("Назад", "Вернуться к списку обитателей.", coreNode) {
 					@Override
 					public void effects() {
 						Main.game.setResponseTab(defaultResponseTab);
@@ -1461,7 +1403,7 @@ public class CompanionManagement {
 					}
 				};
 			}
-			return new Response("Back", "Return to the slave management screen.", coreNode) {
+			return new Response("Назад", "Вернуться к экрану управления рабынями.", coreNode) {
 				@Override
 				public void effects() {
 					Main.game.setResponseTab(defaultResponseTab);
@@ -1473,7 +1415,7 @@ public class CompanionManagement {
 		}
 	}
 	
-	public static final DialogueNode SLAVE_MANAGEMENT_COSMETICS_MAKEUP = new DialogueNode("Slave Management", ".", true) {
+	public static final DialogueNode SLAVE_MANAGEMENT_COSMETICS_MAKEUP = new DialogueNode("Управление рабами", ".", true) {
 
 		@Override
 		public DialogueNodeType getDialogueNodeType() {
@@ -1482,33 +1424,32 @@ public class CompanionManagement {
 		
 		@Override
 		public String getLabel() {
-			return UtilText.parse(characterSelected(), "[npc.Name] - Makeup");
+			return UtilText.parse(characterSelected(), "[npc.Name] — Макияж");
 		}
 		
 		@Override
 		public String getHeaderContent() {
 			
 			return UtilText.parse(BodyChanging.getTarget(),
-					"<h6 style='text-align:center;'>"
-						+ "You currently have "+UtilText.formatAsMoney(Main.game.getPlayer().getMoney(), "span")
+					"<h6 style='text-align:center;'>У вас сейчас есть "+UtilText.formatAsMoney(Main.game.getPlayer().getMoney(), "охват")
 					+ "</h6>"
 					+CharacterModificationUtils.getKatesDivCoveringsNew(
-							true, Race.NONE, BodyCoveringType.MAKEUP_BLUSHER, "Blusher", "Blusher (also called rouge) is used to colour the cheeks so as to provide a more youthful appearance, and to emphasise the cheekbones.", true, true)
+							true, Race.NONE, BodyCoveringType.MAKEUP_BLUSHER, "Румяна", "Румяна (также называемые руж) используются для придания щекам цвета, чтобы придать лицу более юный вид и подчеркнуть скулы.", true, true)
 					
 					+CharacterModificationUtils.getKatesDivCoveringsNew(
-							true, Race.NONE, BodyCoveringType.MAKEUP_LIPSTICK, "Lipstick", "Lipstick is used to provide colour, texture, and protection to the wearer's lips.", true, true)
+							true, Race.NONE, BodyCoveringType.MAKEUP_LIPSTICK, "Помада", "Помада используется для придания губам цвета, текстуры и защиты.", true, true)
 
 					+CharacterModificationUtils.getKatesDivCoveringsNew(
-							true, Race.NONE, BodyCoveringType.MAKEUP_EYE_LINER, "Eyeliner", "Eyeliner is applied around the contours of the eyes to help to define shape or highlight different features.", true, true)
+							true, Race.NONE, BodyCoveringType.MAKEUP_EYE_LINER, "Подводка для глаз", "Подводка наносится по контуру глаз, чтобы подчеркнуть их форму или выделить отдельные черты.", true, true)
 
 					+CharacterModificationUtils.getKatesDivCoveringsNew(
-							true, Race.NONE, BodyCoveringType.MAKEUP_EYE_SHADOW, "Eye shadow", "Eye shadow is used to make the wearer's eyes stand out or look more attractive.", true, true)
+							true, Race.NONE, BodyCoveringType.MAKEUP_EYE_SHADOW, "Тени для век", "Тени для век используются для того, чтобы сделать глаза ярче или привлекательнее.", true, true)
 
 					+CharacterModificationUtils.getKatesDivCoveringsNew(
-							true, Race.NONE, BodyCoveringType.MAKEUP_NAIL_POLISH_HANDS, "Nail polish", "Nail polish is used to colour and protect the nails on [npc.namePos] [npc.hands].", true, true)
+							true, Race.NONE, BodyCoveringType.MAKEUP_NAIL_POLISH_HANDS, "Лак для ногтей", "Лак для ногтей используется для окрашивания и защиты ногтей на [npc.namePos] [npc.hands].", true, true)
 
 					+CharacterModificationUtils.getKatesDivCoveringsNew(
-							true, Race.NONE, BodyCoveringType.MAKEUP_NAIL_POLISH_FEET, "Toenail polish", "Toenail polish is used to colour and protect the nails on [npc.namePos] [npc.feet].", true, true)
+							true, Race.NONE, BodyCoveringType.MAKEUP_NAIL_POLISH_FEET, "Лак для ногтей на ногах", "Лак для ногтей на ногах используется для окрашивания и защиты ногтей на [npc.namePos] [npc.feet].", true, true)
 					);
 		}
 		
@@ -1520,8 +1461,8 @@ public class CompanionManagement {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Makeup",
-						UtilText.parse(BodyChanging.getTarget(), "You are already changing [npc.namePos] makeup!"),
+				return new Response("Макияж",
+						UtilText.parse(BodyChanging.getTarget(), "Вы уже меняете [npc.namePos] макияж!"),
 						null);
 				
 			} else {
@@ -1530,7 +1471,7 @@ public class CompanionManagement {
 		}
 	};
 	
-	public static final DialogueNode SLAVE_MANAGEMENT_COSMETICS_HAIR = new DialogueNode("Slave Management", ".", true) {
+	public static final DialogueNode SLAVE_MANAGEMENT_COSMETICS_HAIR = new DialogueNode("Управление рабами", ".", true) {
 
 		@Override
 		public DialogueNodeType getDialogueNodeType() {
@@ -1539,28 +1480,27 @@ public class CompanionManagement {
 		
 		@Override
 		public String getLabel() {
-			return UtilText.parse(characterSelected(), "[npc.Name] - Hair");
+			return UtilText.parse(characterSelected(), "[npc.Name] — Волосы");
 		}
 		
 		@Override
 		public String getHeaderContent() {
 			
 			return UtilText.parse(BodyChanging.getTarget(),
-					"<h6 style='text-align:center;'>"
-						+ "You currently have "+UtilText.formatAsMoney(Main.game.getPlayer().getMoney(), "span")
+					"<h6 style='text-align:center;'>У вас сейчас есть "+UtilText.formatAsMoney(Main.game.getPlayer().getMoney(), "охват")
 					+ "</h6>"
 					
 					+ (BodyChanging.getTarget().isDoll()
 							?""
-							:CharacterModificationUtils.getKatesDivHairLengths(true, "Hair Length", "Hair length determines what hair styles [npc.namePos] able to have. The longer [npc.her] [npc.hair(true)], the more styles are available."))
+							:CharacterModificationUtils.getKatesDivHairLengths(true, "Длина волос", "Длина волос определяет, какие прически [npc.namePos] смогут себе позволить. Чем длиннее [npc.her] [npc.hair(true)], тем больше стилей будет доступно."))
 
-					+CharacterModificationUtils.getKatesDivHairStyles(true, "Hair Style", "Hair style availability is determined by [npc.namePos] [npc.hair(true)] length.")
+					+CharacterModificationUtils.getKatesDivHairStyles(true, "Прическа", "Доступность причесок определяется длиной [npc.namePos] [npc.hair(true)].")
 					
 					+(BodyChanging.getTarget().getBodyMaterial()!=BodyMaterial.SLIME && !BodyChanging.getTarget().isDoll()
 						?CharacterModificationUtils.getKatesDivCoveringsNew(
 								true, BodyChanging.getTarget().getHairType().getRace(), BodyChanging.getTarget().getCovering(BodyChanging.getTarget().getHairCovering()).getType(),
-								UtilText.parse(BodyChanging.getTarget(), "[npc.Hair] Colour"),
-								"All hair recolourings are permanent, so if you want to change your colour again at a later time, you'll have to visit Kate again.", true, true)
+								UtilText.parse(BodyChanging.getTarget(), "Цвет [npc.Hair]"),
+								"Все изменения цвета волос постоянны, так что если вы захотите сменить цвет снова, вам придется снова навестить Кейт.", true, true)
 						:"")
 					);
 		}
@@ -1573,8 +1513,8 @@ public class CompanionManagement {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 2) {
-				return new Response("Hair",
-						UtilText.parse(BodyChanging.getTarget(), "You are already changing [npc.namePos] hair!"),
+				return new Response("Волосы",
+						UtilText.parse(BodyChanging.getTarget(), "Вы уже меняете волосы [npc.namePos]!"),
 						null);
 				
 			} else {
@@ -1583,7 +1523,7 @@ public class CompanionManagement {
 		}
 	};
 	
-	public static final DialogueNode SLAVE_MANAGEMENT_COSMETICS_PIERCINGS = new DialogueNode("Slave Management", ".", true) {
+	public static final DialogueNode SLAVE_MANAGEMENT_COSMETICS_PIERCINGS = new DialogueNode("Управление рабами", ".", true) {
 
 		@Override
 		public DialogueNodeType getDialogueNodeType() {
@@ -1592,14 +1532,13 @@ public class CompanionManagement {
 		
 		@Override
 		public String getLabel() {
-			return UtilText.parse(characterSelected(), "[npc.Name] - Piercings");
+			return UtilText.parse(characterSelected(), "[npc.Name] — Пирсинг");
 		}
 		
 		@Override
 		public String getHeaderContent() {
 			return UtilText.parse(BodyChanging.getTarget(),
-					"<h6 style='text-align:center;'>"
-						+ "You currently have "+UtilText.formatAsMoney(Main.game.getPlayer().getMoney(), "span")
+					"<h6 style='text-align:center;'>У вас сейчас есть "+UtilText.formatAsMoney(Main.game.getPlayer().getMoney(), "охват")
 					+ "</h6>"
 					
 				+CharacterModificationUtils.getKatesDivPiercings(false));
@@ -1613,8 +1552,8 @@ public class CompanionManagement {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 3) {
-				return new Response("Piercings",
-						UtilText.parse(BodyChanging.getTarget(), "You are already changing [npc.namePos] piercings!"),
+				return new Response("Пирсинг",
+						UtilText.parse(BodyChanging.getTarget(), "Вы уже меняете пирсинг [npc.namePos]!"),
 						null);
 				
 			} else {
@@ -1623,7 +1562,7 @@ public class CompanionManagement {
 		}
 	};
 	
-	public static final DialogueNode SLAVE_MANAGEMENT_COSMETICS_EYES = new DialogueNode("Slave Management", ".", true) {
+	public static final DialogueNode SLAVE_MANAGEMENT_COSMETICS_EYES = new DialogueNode("Управление рабами", ".", true) {
 
 		@Override
 		public DialogueNodeType getDialogueNodeType() {
@@ -1632,34 +1571,33 @@ public class CompanionManagement {
 		
 		@Override
 		public String getLabel() {
-			return UtilText.parse(characterSelected(), "[npc.Name] - Eyes");
+			return UtilText.parse(characterSelected(), "[npc.Name] — Глаза");
 		}
 		
 		@Override
 		public String getHeaderContent() {
 			
 			return UtilText.parse(BodyChanging.getTarget(),
-					"<h6 style='text-align:center;'>"
-						+ "You currently have "+UtilText.formatAsMoney(Main.game.getPlayer().getMoney(), "span")
+					"<h6 style='text-align:center;'>У вас сейчас есть "+UtilText.formatAsMoney(Main.game.getPlayer().getMoney(), "охват")
 					+ "</h6>"
 
 					+CharacterModificationUtils.getKatesDivCoveringsNew(
 							true, BodyChanging.getTarget().getEyeType().getRace(), BodyChanging.getTarget().getEyeCovering(),
-							"Irises", "The iris is the coloured part of the eye that's responsible for controlling the diameter and size of the pupil.", true, true)
+							"Радужка", "Радужка — это цветная часть глаза, отвечающая за контроль диаметра и размера зрачка.", true, true)
 
 					+CharacterModificationUtils.getKatesDivCoveringsNew(
 							true, Race.NONE,
 							BodyChanging.getTarget().getBodyMaterial()!=BodyMaterial.FLESH
 								?BodyCoveringType.getMaterialBodyCoveringType(BodyChanging.getTarget().getBodyMaterial(), BodyCoveringCategory.EYE_PUPIL)
 								:BodyCoveringType.EYE_PUPILS,
-							"Pupils", "The pupil is a hole located in the centre of the iris that allows light to strike the retina.", true, true)
+							"Зрачки", "Зрачок — это отверстие в центре радужки, через которое свет попадает на сетчатку.", true, true)
 
 					+CharacterModificationUtils.getKatesDivCoveringsNew(
 							true, Race.NONE,
 							BodyChanging.getTarget().getBodyMaterial()!=BodyMaterial.FLESH
 								?BodyCoveringType.getMaterialBodyCoveringType(BodyChanging.getTarget().getBodyMaterial(), BodyCoveringCategory.EYE_SCLERA)
 								:BodyCoveringType.EYE_SCLERA,
-							"Sclera", "The sclera is the (typically white) part of the eye that surrounds the iris.", true, true));
+							"Склера", "Склера — это (обычно белая) часть глаза, окружающая радужку.", true, true));
 		}
 		
 		@Override
@@ -1670,8 +1608,8 @@ public class CompanionManagement {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 4) {
-				return new Response("Eyes",
-						UtilText.parse(BodyChanging.getTarget(), "You are already changing [npc.namePos] eyes!"),
+				return new Response("Глаза",
+						UtilText.parse(BodyChanging.getTarget(), "Вы уже меняете [npc.namePos] глаз!"),
 						null);
 				
 			} else {
@@ -1680,7 +1618,7 @@ public class CompanionManagement {
 		}
 	};
 	
-	public static final DialogueNode SLAVE_MANAGEMENT_COSMETICS_COVERINGS = new DialogueNode("Slave Management", ".", true) {
+	public static final DialogueNode SLAVE_MANAGEMENT_COSMETICS_COVERINGS = new DialogueNode("Управление рабами", ".", true) {
 
 		@Override
 		public DialogueNodeType getDialogueNodeType() {
@@ -1689,14 +1627,13 @@ public class CompanionManagement {
 		
 		@Override
 		public String getLabel() {
-			return UtilText.parse(characterSelected(), "[npc.Name] - Coverings");
+			return UtilText.parse(characterSelected(), "[npc.Name] — Покровы");
 		}
 		
 		@Override
 		public String getHeaderContent() {
 			UtilText.nodeContentSB.setLength(0);
-			UtilText.nodeContentSB.append("<h6 style='text-align:center;'>"
-									+ "You currently have "+UtilText.formatAsMoney(Main.game.getPlayer().getMoney(), "span")
+			UtilText.nodeContentSB.append("<h6 style='text-align:center;'>У вас сейчас есть "+UtilText.formatAsMoney(Main.game.getPlayer().getMoney(), "охват")
 								+ "</h6>");
 			
 			for(Entry<AbstractBodyCoveringType, Value<AbstractRace, List<String>>> entry : SuccubisSecrets.coveringsNamesMap.entrySet()){
@@ -1727,8 +1664,8 @@ public class CompanionManagement {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 5) {
-				return new Response("Coverings",
-						UtilText.parse(BodyChanging.getTarget(), "You are already changing [npc.namePos] coverings!"),
+				return new Response("Покрытия",
+						UtilText.parse(BodyChanging.getTarget(), "Вы уже меняете [npc.namePos] покровов!"),
 						null);
 				
 			} else {
@@ -1737,7 +1674,7 @@ public class CompanionManagement {
 		}
 	};
 	
-	public static final DialogueNode SLAVE_MANAGEMENT_COSMETICS_OTHER = new DialogueNode("Slave Management", ".", true) {
+	public static final DialogueNode SLAVE_MANAGEMENT_COSMETICS_OTHER = new DialogueNode("Управление рабами", ".", true) {
 
 		@Override
 		public DialogueNodeType getDialogueNodeType() {
@@ -1746,34 +1683,33 @@ public class CompanionManagement {
 		
 		@Override
 		public String getLabel() {
-			return UtilText.parse(characterSelected(), "[npc.Name] - Other");
+			return UtilText.parse(characterSelected(), "[npc.Name] — Прочее");
 		}
 		
 		@Override
 		public String getHeaderContent() {
 			UtilText.nodeContentSB.setLength(0);
 			
-			UtilText.nodeContentSB.append("<h6 style='text-align:center;'>"
-						+ "You currently have "+UtilText.formatAsMoney(Main.game.getPlayer().getMoney(), "span")
+			UtilText.nodeContentSB.append("<h6 style='text-align:center;'>У вас сейчас есть "+UtilText.formatAsMoney(Main.game.getPlayer().getMoney(), "охват")
 					+ "</h6>"
 					+CharacterModificationUtils.getKatesDivAnalBleaching());
 			
 			if(!BodyChanging.getTarget().isDoll()) {
 				UtilText.nodeContentSB.append((Main.game.isFacialHairEnabled()
-								? CharacterModificationUtils.getKatesDivFacialHair(true, "Facial hair", "The body hair found on [npc.namePos] face." 
-										+ (Main.game.isFemaleFacialHairEnabled() ? "" : " Feminine characters cannot grow facial hair."))
+								? CharacterModificationUtils.getKatesDivFacialHair(true, "Растительность на лице", "Волосы на лице [npc.namePos]." 
+										+ (Main.game.isFemaleFacialHairEnabled() ? "" : " Женские персонажи не могут отращивать растительность на лице."))
 								:"")
 						
 						+(Main.game.isPubicHairEnabled()
-								?CharacterModificationUtils.getKatesDivPubicHair(true, "Pubic hair", "The body hair found in the genital area; located on and around [npc.namePos] sex organs and crotch.")
+								?CharacterModificationUtils.getKatesDivPubicHair(true, "Лобковые волосы", "Волосы в области гениталий; расположены на [npc.namePos] половых органах и вокруг них.")
 								:"")
 						
 						+(Main.game.isBodyHairEnabled()
-								?CharacterModificationUtils.getKatesDivUnderarmHair(true, "Underarm hair", "The body hair found in [npc.namePos] armpits.")
+								?CharacterModificationUtils.getKatesDivUnderarmHair(true, "Волосы под мышками", "Волосы в подмышках [npc.namePos].")
 								:"")
 						
 						+(Main.game.isAssHairEnabled()
-								?CharacterModificationUtils.getKatesDivAssHair(true, "Ass hair", "The body hair found around [npc.namePos] asshole.")
+								?CharacterModificationUtils.getKatesDivAssHair(true, "Волосы на заднице", "Волосы вокруг ануса [npc.namePos].")
 								:"")
 						);
 			
@@ -1783,7 +1719,7 @@ public class CompanionManagement {
 							|| (Main.game.isAssHairEnabled() && BodyChanging.getTarget().getAssHairType().getType()==bct)
 							|| (Main.game.isPubicHairEnabled() && BodyChanging.getTarget().getPubicHairType().getType()==bct)) {
 						UtilText.nodeContentSB.append(CharacterModificationUtils.getKatesDivCoveringsNew(
-								true, Race.NONE, bct, "Body hair", "Your body hair.", true, true));
+								true, Race.NONE, bct, "Волосы на теле", "Волосы на теле.", true, true));
 					}
 				}
 			}
@@ -1799,8 +1735,8 @@ public class CompanionManagement {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 6) {
-				return new Response("Other",
-						UtilText.parse(BodyChanging.getTarget(), "You are already changing [npc.namePos] other features!"),
+				return new Response("Другое",
+						UtilText.parse(BodyChanging.getTarget(), "Вы уже меняете [npc.namePos] других черт!"),
 						null);
 				
 			} else {
@@ -1809,7 +1745,7 @@ public class CompanionManagement {
 		}
 	};
 	
-	public static final DialogueNode SLAVE_MANAGEMENT_TATTOOS = new DialogueNode("Succubi's Secrets", "-", true) {
+	public static final DialogueNode SLAVE_MANAGEMENT_TATTOOS = new DialogueNode("Секреты Суккуба", "-", true) {
 
 		@Override
 		public String getContent() {
@@ -1819,21 +1755,19 @@ public class CompanionManagement {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 7) {
-				return new Response("Tattoos",
-						UtilText.parse(BodyChanging.getTarget(), "You are already managing [npc.namePos] tattoos!"),
+				return new Response("Татуировки",
+						UtilText.parse(BodyChanging.getTarget(), "Вы уже управляете [npc.namePos] татуировками!"),
 						null);
 				
 			} else if(index==11) {
-				return new Response("Confirmations: ",
-						"Toggle tattoo removal confirmations."
-							+ " When turned on, it will take two clicks to remove tattoos."
-							+ " When turned off, it will only take one click.",
+				return new Response("Подтверждения: ",
+						"Включить подтверждение удаления татуировок. Если включено, для удаления татуировки потребуется два клика. Если выключено — всего один.",
 							SLAVE_MANAGEMENT_TATTOOS) {
 					@Override
 					public String getTitle() {
-						return "Confirmations: "+(Main.getProperties().hasValue(PropertyValue.tattooRemovalConfirmations)
-									?"<span style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>ON</span>"
-									:"<span style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>OFF</span>");
+						return "Подтверждения: "+(Main.getProperties().hasValue(PropertyValue.tattooRemovalConfirmations)
+									?"<span style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>ВКЛ</span>"
+									:"<span style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>ВЫКЛ</span>");
 					}
 					
 					@Override
@@ -1854,11 +1788,11 @@ public class CompanionManagement {
 		}
 	};
 	
-	public static final DialogueNode SLAVE_MANAGEMENT_TATTOOS_ADD = new DialogueNode("Succubi's Secrets", "-", true) {
+	public static final DialogueNode SLAVE_MANAGEMENT_TATTOOS_ADD = new DialogueNode("Секреты Суккуба", "-", true) {
 
 		@Override
 		public String getLabel() {
-			return "Succubi's Secrets - "+Util.capitaliseSentence(CharacterModificationUtils.tattooInventorySlot.getName()) +" Tattoo";
+			return "Секреты суккубов — "+Util.capitaliseSentence(CharacterModificationUtils.tattooInventorySlot.getName()) +" Татуировка";
 		}
 		
 		@Override
@@ -1872,17 +1806,17 @@ public class CompanionManagement {
 			
 			if (index == 1) {
 				if(Main.game.getPlayer().getMoney()<value) {
-					return new Response("Apply ("+UtilText.formatAsMoneyUncoloured(value, "span")+")",
-							UtilText.parse(BodyChanging.getTarget(), "You don't have enough money to give [npc.name] a tattoo!"),  null);
+					return new Response("Применить ("+UtilText.formatAsMoneyUncoloured(value, "охват")+")",
+							UtilText.parse(BodyChanging.getTarget(), "У вас недостаточно денег, чтобы сделать татуировку [npc.name]!"),  null);
 					
 				} else if(CharacterModificationUtils.tattoo.getType().equals(TattooType.getTattooTypeFromId("innoxia_misc_none"))
 						&& CharacterModificationUtils.tattoo.getWriting().getText().isEmpty()
 						&& CharacterModificationUtils.tattoo.getCounter().getType()==TattooCounterType.NONE) {
-					return new Response("Apply ("+UtilText.formatAsMoneyUncoloured(value, "span")+")", "You need to select a tattoo type, add some writing, or add a counter in order to make a tattoo!", null);
+					return new Response("Применить ("+UtilText.formatAsMoneyUncoloured(value, "охват")+")", "Чтобы сделать татуировку, нужно выбрать тип тату, добавить надпись или счетчик!", null);
 					
 				} else {
-					return new Response("Apply ("+UtilText.formatAsMoney(value, "span")+")", 
-							UtilText.parse(BodyChanging.getTarget(), "Pay Kate to give [npc.name] this tattoo!"), SLAVE_MANAGEMENT_TATTOOS) {
+					return new Response("Применить ("+UtilText.formatAsMoney(value, "охват")+")", 
+							UtilText.parse(BodyChanging.getTarget(), "Заплатите Кейт, чтобы сделать [npc.name] эту татуировку!"), SLAVE_MANAGEMENT_TATTOOS) {
 						@Override
 						public void effects() {
 							Main.game.getTextStartStringBuilder().append(Main.game.getPlayer().incrementMoney(-value));
@@ -1896,7 +1830,7 @@ public class CompanionManagement {
 				}
 			
 			} else if(index==2) {
-				return new Response("Save/Load", "Save/Load tattoo presets.", CosmeticsDialogue.TATTOO_SAVE_LOAD) {
+				return new Response("Сохранить/Загрузить", "Сохранять/загружать пресеты татуировок.", CosmeticsDialogue.TATTOO_SAVE_LOAD) {
 					@Override
 					public void effects() {
 						CosmeticsDialogue.initTattooSaveLoadDialogue(SLAVE_MANAGEMENT_TATTOOS_ADD);
@@ -1904,7 +1838,7 @@ public class CompanionManagement {
 				};
 			
 			} else if(index==0) {
-				return new Response("Back", "Decide not to get this tattoo and return to the main selection screen.", SLAVE_MANAGEMENT_TATTOOS);
+				return new Response("Назад", "Решить не делать эту татуировку и вернуться к основному экрану выбора.", SLAVE_MANAGEMENT_TATTOOS);
 			}
 			
 			return null;
@@ -1925,7 +1859,7 @@ public class CompanionManagement {
 		
 		@Override
 		public String getLabel() {
-			return UtilText.parse(characterSelected(), "[npc.NamePos] Perks");
+			return UtilText.parse(characterSelected(), "Перки [npc.NamePos]");
 		}
 		
 		@Override
@@ -1933,23 +1867,14 @@ public class CompanionManagement {
 			UtilText.nodeContentSB.setLength(0);
 			
 			UtilText.nodeContentSB.append(UtilText.parse(characterSelected(),
-					"<details>"
-							+ "<summary>[style.boldPerk(Perk & Trait Information)]</summary>"
-							+ "[style.colourPerk(Perks)] (circular icons) apply permanent boosts to [npc.namePos] attributes.<br/>"
-							+ "[style.colourPerk(Traits)] (square icons) provide unique effects for [npc.name]."
-								+ " Unlike perks, <b>traits will have no effect on [npc.name] until they're slotted into [npc.her] 'Active Traits' bar</b>.<br/>"
-							+ "Perks require perk points to unlock. [npc.Name] earns one perk point each time [npc.she] levels up, and earns an extra two perk points every five levels.<br/><br/>"
-							+ "In addition to the perks that can be purchased via perk points, there are also several special, hidden perks that are unlocked via special events."
-					+ "</details>"));
+					"<details><summary>[style.boldPerk(Информация о Перках и Чертах)]</summary>[style.colourPerk(Перки)] (круглые иконки) дают постоянные бонусы к атрибутам [npc.namePos].<br/>[style.colourPerk(Черты)] (квадратные иконки) дают уникальные эффекты для [npc.name]. В отличие от перков, <b>черты не будут влиять на [npc.name], пока их не вставят в панель [npc.her] «Активные черты»</b>.<br/>Для разблокировки перков требуются очки перков. [npc.Name] получает одно очко перка каждый раз, когда [npc.she] повышает уровень, и получает дополнительные два очка перка каждые пять уровней.<br/><br/>В дополнение к перкам, которые можно купить за очки перков, существуют также несколько специальных скрытых перков, которые открываются через особые события.</details>"));
 			
 			UtilText.nodeContentSB.append(PerkManager.MANAGER.getPerkTreeDisplay(characterSelected(), true));
 			
 			UtilText.nodeContentSB.append("</div>");
 			
 			if(!characterSelected().isElemental() && !characterSelected().isDoll()) {
-				UtilText.nodeContentSB.append("<div class='container-full-width' style='padding:8px; text-align:center;'>"
-							+ "<i>Please note that this perk tree is a work-in-progress. This is not the final version, and is just a proof of concept!</i>"
-						+ "</div>");
+				UtilText.nodeContentSB.append("<div class='container-full-width' style='padding:8px; text-align:center;'><i>Пожалуйста, учтите, что это древо перков находится в процессе разработки. Это не финальная версия, а лишь проверка концепции!</i></div>");
 			}
 			
 			return UtilText.nodeContentSB.toString();
@@ -1984,104 +1909,34 @@ public class CompanionManagement {
 			if(characterSelected().isSlave()) {
 
 				UtilText.nodeContentSB.append(UtilText.parse(characterSelected(), 
-					"<p>"
-						+ "At the moment, [npc.nameIsFull] calling you '[npc.pcName]', and you wonder if you should get [npc.herHim] to call you by a different name or title."
-						+ " As [npc.sheIs] your slave, you could also change [npc.her] name to whatever you'd like it to be..."
-					+ "</p>"));
+					"<p>В данный момент [npc.nameIsFull] называет тебя «[npc.pcName]», и ты гадаешь, стоит ли попросить [npc.herHim] называть тебя как-то иначе или использовать другой титул. Будучи [npc.sheIs], ты также могла бы изменить [npc.her] имя на любое другое, какое пожелаешь...</p>"));
 				
 				UtilText.nodeContentSB.append(
-					"<div class='container-full-width' style='padding:8px 16px;'>"
-						+ "<div style='width:18%; float:left; font-weight:bold; margin:0 13% 0 0; padding:0; text-align:center;'>"
-							+ "Name"
-						+ "</div>"
-						+ "<div style='width:18%; float:left; font-weight:bold; margin:0 13% 0 0; padding:0; text-align:center;'>"
-							+ "Surname"
-						+ "</div>"
-						+ "<div style='width:20%; float:left; font-weight:bold; margin:0 18% 0 0; padding:0; text-align:center;'>"
-							+ UtilText.parse(characterSelected(), "What [npc.she] calls you")
+					"<div class='container-full-width' style='padding:8px 16px;'><div style='width:18%; float:left; font-weight:bold; margin:0 13% 0 0; padding:0; text-align:center;'>Имя</div><div style='width:18%; float:left; font-weight:bold; margin:0 13% 0 0; padding:0; text-align:center;'>Фамилия</div><div style='width:20%; float:left; font-weight:bold; margin:0 18% 0 0; padding:0; text-align:center;'>"
+							+ UtilText.parse(characterSelected(), "Как тебя называет [npc.she]")
 						+ "</div>"
 						
 						+ "<form style='float:left; width:18%; margin:0; padding:0;'><input type='text' id='slaveNameInput'"
-							+ " value='"+ UtilText.parseForHTMLDisplay(characterSelected().getName(false))+ "' style='width:100%; margin:0; padding:0;'></form>"
-						+ "<div class='normal-button' id='"+characterSelected().getId()+"_RENAME' style='float:left; width:5%; height:28px; line-height:28px; margin:0 0 0 0.5%; padding:0; text-align:center;'>"
-							+ "&#10003;"
-						+ "</div>"
-						+ "<div class='normal-button' id='"+characterSelected().getId()+"_RENAME_RANDOM' style='float:left; width:5%; height:28px; line-height:28px; margin:0 2% 0 0.5%; padding:0; text-align:center;'>"
-							+ "&#127922;"
-						+ "</div>"
-							
-						+ "<form style='float:left; width:18%; margin:0; padding:0;'><input type='text' id='slaveSurnameInput'"
-							+ " value='"+ UtilText.parseForHTMLDisplay(characterSelected().getSurname())+ "' style='width:100%; margin:0; padding:0;'></form>"
-						+ "<div class='normal-button' id='"+characterSelected().getId()+"_RENAME_SURNAME' style='float:left; width:5%; height:28px; line-height:28px; margin:0 0 0 0.5%; padding:0; text-align:center;'>"
-							+ "&#10003;"
-						+ "</div>"
-						+ "<div class='normal-button' id='"+characterSelected().getId()+"_RENAME_SURNAME_RANDOM' style='float:left; width:5%; height:28px; line-height:28px; margin:0 2% 0 0.5%; padding:0; text-align:center;'>"
-							+ "&#127922;"
-						+ "</div>"
-						
-						+ "<form style='float:left; width:20%; margin:0; padding:0;'><input type='text' id='slaveToPlayerNameInput' value='"+ UtilText.parseForHTMLDisplay(characterSelected().getPetName(Main.game.getPlayer()))
-							+ "' style='width:100%; margin:0; padding:0;'></form>"
-						+ "<div class='normal-button' id='"+characterSelected().getId()+"_CALLS_PLAYER' style='float:left; width:5%; height:28px; line-height:28px; margin:0 0 0 0.5%; padding:0; text-align:center;'>"
-							+ "&#10003;"
-						+ "</div>"
-						+ " <div class='normal-button' id='GLOBAL_CALLS_PLAYER' style='float:left; width:12%; height:28px; line-height:28px; margin:0 0 0 0.5%; padding:0; text-align:center;'>"
-							+ "All Slaves"
-						+ "</div>");
+							+ " value='"+ UtilText.parseForHTMLDisplay(characterSelected().getName(false))+ "' style='width:100%; margin:0; padding:0;'></form><div class='normal-button' id='"+characterSelected().getId()+"_RENAME' style='float:left; width:5%; height:28px; line-height:28px; margin:0 0 0 0.5%; padding:0; text-align:center;'>&#10003;</div><div class='normal-button' id='"+characterSelected().getId()+"_RENAME_RANDOM' style='float:left; width:5%; height:28px; line-height:28px; margin:0 2% 0 0.5%; padding:0; text-align:center;'>&#127922;</div><form style='float:left; width:18%; margin:0; padding:0;'><input type='text' id='slaveSurnameInput' value='"+ UtilText.parseForHTMLDisplay(characterSelected().getSurname())+ "' style='width:100%; margin:0; padding:0;'></form><div class='normal-button' id='"+characterSelected().getId()+"_RENAME_SURNAME' style='float:left; width:5%; height:28px; line-height:28px; margin:0 0 0 0.5%; padding:0; text-align:center;'>&#10003;</div><div class='normal-button' id='"+characterSelected().getId()+"_RENAME_SURNAME_RANDOM' style='float:left; width:5%; height:28px; line-height:28px; margin:0 2% 0 0.5%; padding:0; text-align:center;'>&#127922;</div><form style='float:left; width:20%; margin:0; padding:0;'><input type='text' id='slaveToPlayerNameInput' value='"+ UtilText.parseForHTMLDisplay(characterSelected().getPetName(Main.game.getPlayer()))
+							+ "' style='width:100%; margin:0; padding:0;'></form><div class='normal-button' id='"+characterSelected().getId()+"_CALLS_PLAYER' style='float:left; width:5%; height:28px; line-height:28px; margin:0 0 0 0.5%; padding:0; text-align:center;'>&#10003;</div> <div class='normal-button' id='GLOBAL_CALLS_PLAYER' style='float:left; width:12%; height:28px; line-height:28px; margin:0 0 0 0.5%; padding:0; text-align:center;'>Все рабыни</div>");
 				
 			} else {
 				UtilText.nodeContentSB.append(UtilText.parse(characterSelected(), 
-						"<p>"
-							+ "At the moment, [npc.nameIsFull] calling you '[npc.pcName]', and you wonder if you should get [npc.herHim] to call you by a different name or title."
-							+ " As [npc.sheIs] not your slave, you can't get [npc.herHim] to change [npc.her] name."
-						+ "</p>"));
+						"<p>В данный момент [npc.nameIsFull] называет тебя '[npc.pcName]', и ты гадаешь, стоит ли заставить [npc.herHim] называть тебя как-то иначе. Поскольку [npc.sheIs] не твоя рабыня, ты не можешь заставить [npc.herHim] изменить [npc.her] имя.</p>"));
 				
 
 				UtilText.nodeContentSB.append(
-					"<div class='container-full-width' style='padding:8px 16px;'>"
-						+ "<div style='width:18%; float:left; font-weight:bold; margin:0 13% 0 0; padding:0; text-align:center;'>"
-							+ "Name"
-						+ "</div>"
-						+ "<div style='width:18%; float:left; font-weight:bold; margin:0 13% 0 0; padding:0; text-align:center;'>"
-							+ "Surname"
-						+ "</div>"
-						+ "<div style='width:20%; float:left; font-weight:bold; margin:0 18% 0 0; padding:0; text-align:center;'>"
-							+ UtilText.parse(characterSelected(), "What [npc.she] calls you")
+					"<div class='container-full-width' style='padding:8px 16px;'><div style='width:18%; float:left; font-weight:bold; margin:0 13% 0 0; padding:0; text-align:center;'>Имя</div><div style='width:18%; float:left; font-weight:bold; margin:0 13% 0 0; padding:0; text-align:center;'>Фамилия</div><div style='width:20%; float:left; font-weight:bold; margin:0 18% 0 0; padding:0; text-align:center;'>"
+							+ UtilText.parse(characterSelected(), "Как тебя называет [npc.she]")
 						+ "</div>"
 						
 						+ "<form style='float:left; width:18%; margin:0; padding:0;'><input type='text' id='slaveNameInput'"
-							+ " value='"+ UtilText.parseForHTMLDisplay(characterSelected().getName(false))+ "' style='width:100%; margin:0; padding:0;' disabled></form>"
-						+ "<div class='normal-button disabled' style='float:left; width:5%; height:28px; line-height:28px; margin:0 0 0 0.5%; padding:0; text-align:center;'>"
-							+ "&#10003;"
-						+ "</div>"
-						+ "<div class='normal-button disabled' style='float:left; width:5%; height:28px; line-height:28px; margin:0 2% 0 0.5%; padding:0; text-align:center;'>"
-							+ "&#127922;"
-						+ "</div>"
-							
-						+ "<form style='float:left; width:18%; margin:0; padding:0;'><input type='text' id='slaveSurnameInput'"
-							+ " value='"+ UtilText.parseForHTMLDisplay(characterSelected().getSurname())+ "' style='width:100%; margin:0; padding:0;' disabled></form>"
-						+ "<div class='normal-button disabled' style='float:left; width:5%; height:28px; line-height:28px; margin:0 0 0 0.5%; padding:0; text-align:center;'>"
-							+ "&#10003;"
-						+ "</div>"
-						+ "<div class='normal-button disabled' style='float:left; width:5%; height:28px; line-height:28px; margin:0 2% 0 0.5%; padding:0; text-align:center;'>"
-							+ "&#127922;"
-						+ "</div>"
-						
-						+ "<form style='float:left; width:20%; margin:0; padding:0;'><input type='text' id='slaveToPlayerNameInput' value='"+ UtilText.parseForHTMLDisplay(characterSelected().getPetName(Main.game.getPlayer()))
-							+ "' style='width:100%; margin:0; padding:0;'></form>"
-						+ "<div class='normal-button' id='"+characterSelected().getId()+"_CALLS_PLAYER' style='float:left; width:5%; height:28px; line-height:28px; margin:0 0 0 0.5%; padding:0; text-align:center;'>"
-							+ "&#10003;"
-						+ "</div>"
-						+ " <div class='normal-button disabled' style='float:left; width:12%; height:28px; line-height:28px; margin:0 0 0 0.5%; padding:0; text-align:center;'>"
-							+ "All Slaves"
-						+ "</div>");
+							+ " value='"+ UtilText.parseForHTMLDisplay(characterSelected().getName(false))+ "' style='width:100%; margin:0; padding:0;' disabled></form><div class='normal-button disabled' style='float:left; width:5%; height:28px; line-height:28px; margin:0 0 0 0.5%; padding:0; text-align:center;'>&#10003;</div><div class='normal-button disabled' style='float:left; width:5%; height:28px; line-height:28px; margin:0 2% 0 0.5%; padding:0; text-align:center;'>&#127922;</div><form style='float:left; width:18%; margin:0; padding:0;'><input type='text' id='slaveSurnameInput' value='"+ UtilText.parseForHTMLDisplay(characterSelected().getSurname())+ "' style='width:100%; margin:0; padding:0;' disabled></form><div class='normal-button disabled' style='float:left; width:5%; height:28px; line-height:28px; margin:0 0 0 0.5%; padding:0; text-align:center;'>&#10003;</div><div class='normal-button disabled' style='float:left; width:5%; height:28px; line-height:28px; margin:0 2% 0 0.5%; padding:0; text-align:center;'>&#127922;</div><form style='float:left; width:20%; margin:0; padding:0;'><input type='text' id='slaveToPlayerNameInput' value='"+ UtilText.parseForHTMLDisplay(characterSelected().getPetName(Main.game.getPlayer()))
+							+ "' style='width:100%; margin:0; padding:0;'></form><div class='normal-button' id='"+characterSelected().getId()+"_CALLS_PLAYER' style='float:left; width:5%; height:28px; line-height:28px; margin:0 0 0 0.5%; padding:0; text-align:center;'>&#10003;</div> <div class='normal-button disabled' style='float:left; width:12%; height:28px; line-height:28px; margin:0 0 0 0.5%; padding:0; text-align:center;'>Все рабыни</div>");
 			}
 			
 			UtilText.nodeContentSB.append(UtilText.parse(characterSelected(), 
-						"<p style='text-align:center; margin-top:4px;'>"
-							+ "<i>If [npc.name] is told to call you 'Mom' or 'Dad', 'Mommy' or 'Daddy', 'Mistress' or 'Master', or 'Ma'am' or 'Sir',"
-							+ " then [npc.she] will automatically switch to the appropriate paired name depending on the femininity of your character.</i>"
-						+ "</p>"
-					+ "</div>"));
+						"<p style='text-align:center; margin-top:4px;'><i>Если сказать [npc.name] называть вас «Мамой» или «Папой», «Мамочкой» или «Папочкой», «Госпожой» или «Господином», либо «Мадам» или «Сэр», то [npc.she] автоматически переключится на соответствующее парное имя в зависимости от пола вашего персонажа.</i></p></div>"));
 			
 			UtilText.nodeContentSB.append("<p id='hiddenFieldName' style='display:none;'></p>");
 			
@@ -2131,8 +1986,8 @@ public class CompanionManagement {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Continue",
-						"With Scarlett having run off, there's nothing more for you to do except continue with your day...",
+				return new Response("Продолжить",
+						"Поскольку Scarlett убежала, вам остается только продолжать свой день...",
 						Main.game.getDefaultDialogue(false));
 			}
 			return null;
@@ -2178,8 +2033,8 @@ public class CompanionManagement {
 		public Response getResponse(int responseTab, int index) {
 			if(freedSlaveDeleted) {
 				if(index == 1) {
-					return new Response("Continue",
-							"Now that your slave has been freed and left your life for good, there's little else for you to do except continue with your other plans for the day...",
+					return new Response("Продолжить",
+							"Теперь, когда твоя рабыня освободилась и навсегда покинула твою жизнь, тебе остается лишь продолжать реализацию остальных планов на этот день...",
 							Main.game.getDefaultDialogue(false)) {
 						@Override
 						public void effects() {
@@ -2188,8 +2043,8 @@ public class CompanionManagement {
 				}
 			} else {
 				if(index == 1) {
-					return new Response("Offer room",
-							UtilText.parse(characterSelected(), "Ask [npc.name] if [npc.she] would like to stay in the mansion as a guest."),
+					return new Response("Предложить комнату",
+							UtilText.parse(characterSelected(), "Спросить [npc.name], хочет ли [npc.she] остаться в особняке в качестве гостя."),
 							SET_SLAVE_FREE_GUEST_ROOM) {
 						@Override
 						public void effects() {
@@ -2202,8 +2057,8 @@ public class CompanionManagement {
 					};
 					
 				} else if(index == 2) {
-					return new Response("Goodbye",
-							UtilText.parse(characterSelected(), "Say goodbye to [npc.name]...<br/>[style.italicsBad(This will permanently remove [npc.herHim] from the game!)]"),
+					return new Response("Прощай",
+							UtilText.parse(characterSelected(), "Попрощаться с [npc.name]...<br/>[style.italicsBad(Это навсегда удалит [npc.herHim] из игры!)]"),
 							SET_SLAVE_FREE_END_NO_CONTENT) {
 						@Override
 						public Colour getHighlightColour() {
@@ -2218,8 +2073,8 @@ public class CompanionManagement {
 					};
 					
 				} else if(index == 3) {
-					return new Response("Throw out",
-							UtilText.parse(characterSelected(), "Call for Rose to unceremoniously throw [npc.name] out of the mansion...<br/>[style.italicsBad(This will permanently remove [npc.herHim] from the game!)]"),
+					return new Response("Вышвырнуть",
+							UtilText.parse(characterSelected(), "Позвать Роуз, чтобы она бесцеремонно выставила [npc.name] из особняка...<br/>[style.italicsBad(Это навсегда удалит [npc.herHim] из игры!)]"),
 							SET_SLAVE_FREE_END_NO_CONTENT) {
 						@Override
 						public Colour getHighlightColour() {
@@ -2266,7 +2121,7 @@ public class CompanionManagement {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Continue", UtilText.parse(characterSelected(), "Having left [npc.name] to get settled into [npc.her] new room, you continue with your plans for the day..."), Main.game.getDefaultDialogue(false)) {
+				return new Response("Продолжить", UtilText.parse(characterSelected(), "Оставив [npc.name] обустраиваться в новой комнате [npc.her], ты продолжаешь следовать своим планам на день..."), Main.game.getDefaultDialogue(false)) {
 					@Override
 					public void effects() {
 						Main.game.getDialogueFlags().setManagementCompanion(null);

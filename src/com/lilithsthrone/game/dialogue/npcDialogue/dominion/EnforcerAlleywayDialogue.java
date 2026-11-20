@@ -758,34 +758,32 @@ public class EnforcerAlleywayDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(((NPC)getEnforcerLeader()).hasFlag(NPCFlagValue.playerEscapedLastCombat)) {
 				if(index==1) {
-					return new ResponseCombat("Defend yourself",
-							"The Enforcers are determined to beat you!"
-									+ "<br/>[style.italicsBad(Beating the Enforcers in combat will result in them being removed from the game!)]",
+					return new ResponseCombat("Защищаться",
+							"Enforcer полны решимости избить тебя!<br/>[style.italicsBad(Если ты победишь Enforcer в бою, они исчезнут из игры!)]",
 							(NPC)getEnforcerLeader(),
 							getEnforcers(),
 							Util.newHashMapOfValues(
-									new Value<>(getEnforcerLeader(), UtilText.parse(getEnforcerLeader(), "[npc.speech(You won't escape this time!)] [npc.name] shouts.")),
-									new Value<>(getEnforcerSubordinate(), UtilText.parse(getEnforcerSubordinate(), "[npc.speech(Now we've got you!)] [npc.name] exclaims."))));
+									new Value<>(getEnforcerLeader(), UtilText.parse(getEnforcerLeader(), "[npc.name] кричит: [npc.speech(В этот раз тебе не сбежать!)]")),
+									new Value<>(getEnforcerSubordinate(), UtilText.parse(getEnforcerSubordinate(), "[npc.name] восклицает: [npc.speech(Ну всё, ты попался!)]"))));
 				}
 				
 			} else if (Main.game.getPlayer().hasAnyEnforcerStatusEffect() && uniformPassable < 0 && !searched) {
 				if(index==1) {
-					return new ResponseCombat("Defend yourself",
-							"The Enforcers are determined to beat you!"
-									+ "<br/>[style.italicsBad(Beating the Enforcers in combat will result in them being removed from the game!)]",
+					return new ResponseCombat("Защищаться",
+							"Enforcer полны решимости избить тебя!<br/>[style.italicsBad(Если ты победишь Enforcer в бою, они исчезнут из игры!)]",
 							(NPC)getEnforcerLeader(),
 							getEnforcers(),
 							Util.newHashMapOfValues(
-									new Value<>(getEnforcerLeader(), UtilText.parse(getEnforcerLeader(), "[npc.speech(Try play us for fools, will you!)] [npc.name] shouts.")),
-									new Value<>(getEnforcerSubordinate(), UtilText.parse(getEnforcerSubordinate(), "[npc.speech(You just made a big mistake!)] [npc.name] exclaims."))));
+									new Value<>(getEnforcerLeader(), UtilText.parse(getEnforcerLeader(), "[npc.name] кричит: [npc.speech(Думаешь, нас за дураков можно держать?!)]")),
+									new Value<>(getEnforcerSubordinate(), UtilText.parse(getEnforcerSubordinate(), "[npc.name] восклицает: [npc.speech(Ты только что совершил огромную ошибку!)]"))));
 					
 				} else if(index==2) {
-					return new Response(UtilText.parse(getEnforcerLeader(), "Searched (<span style='color:"+getEnforcerLeader().getFemininity().getColour().toWebHexString()+";'>[npc.surname]</span>)"),
-							UtilText.parse(getEnforcerLeader(), "Do as [npc.name] says and surrender your disguise...")
+					return new Response(UtilText.parse(getEnforcerLeader(), "Обыскано (<span style='color:"+getEnforcerLeader().getFemininity().getColour().toWebHexString()+";'>[npc.surname]</span>)"),
+							UtilText.parse(getEnforcerLeader(), "Сделай, как говорит [npc.name], и сдай свой маскировочный костюм...")
 							+(playerContraband(ItemTag.CONTRABAND_HEAVY, true)
-								?"<br/>[style.italicsTerrible(Some of your items will be confiscated if you do this and you will be arrested!)]"
+								?"<br/>[style.italicsTerrible(Часть твоих вещей будет конфискована, а тебя арестуют!)]"
 								:(playerContraband(ItemTag.CONTRABAND_MEDIUM, true)
-									?"<br/>[style.italicsBad(Some of your items will be confiscated if you do this!)]"
+									?"<br/>[style.italicsBad(Часть твоих вещей будет конфискована!)]"
 									:"")),
 							ENFORCER_ALLEYWAY_SEARCHED) {
 							@Override
@@ -805,12 +803,12 @@ public class EnforcerAlleywayDialogue {
 						};
 						
 				} else if(index==3) {
-					return new Response(UtilText.parse(getEnforcerSubordinate(), "Searched (<span style='color:"+getEnforcerSubordinate().getFemininity().getColour().toWebHexString()+";'>[npc.surname]</span>)"),
-							UtilText.parse(getEnforcerSubordinate(),"Surrender your disguise but ask that [npc.name] to be the one to search you...")
+					return new Response(UtilText.parse(getEnforcerSubordinate(), "Обыскано (<span style='color:"+getEnforcerSubordinate().getFemininity().getColour().toWebHexString()+";'>[npc.surname]</span>)"),
+							UtilText.parse(getEnforcerSubordinate(),"Сбросить маскировку, но попросить, чтобы именно [npc.name] обыскал тебя...")
 								+(playerContraband(ItemTag.CONTRABAND_HEAVY, true)
-									?"<br/>[style.italicsTerrible(Some of your items will be confiscated if you do this and you will be arrested!)]"
+									?"<br/>[style.italicsTerrible(Часть твоих вещей будет конфискована, а тебя арестуют!)]"
 									:(playerContraband(ItemTag.CONTRABAND_MEDIUM, true)
-										?"<br/>[style.italicsBad(Some of your items will be confiscated if you do this!)]"
+										?"<br/>[style.italicsBad(Часть твоих вещей будет конфискована!)]"
 										:"")),
 							ENFORCER_ALLEYWAY_SEARCHED) {
 							@Override
@@ -841,9 +839,9 @@ public class EnforcerAlleywayDialogue {
 						&& !foughtBefore;
 				if(index==1) {
 					if(wantsToSearch) {
-						return new Response("Leave", "The Enforcers aren't going to let you go without searching you first...", null);
+						return new Response("Уйти", "Enforcer не отпустят тебя, не обыскав сначала...", null);
 					} else {
-						return new Response("Leave", "Tell the Enforcers that you don't have any criminal activity to report to them and continue on your way.", Main.game.getDefaultDialogue(false)) {
+						return new Response("Уйти", "Сказать Enforcer, что тебе нечего сообщить о преступной деятельности, и продолжить свой путь.", Main.game.getDefaultDialogue(false)) {
 							@Override
 							public void effects() {
 								if(hadSex) {
@@ -857,37 +855,37 @@ public class EnforcerAlleywayDialogue {
 					}
 					
 				} if(index==2) {
-					String title = UtilText.parse(getEnforcerLeader(), "Searched ([npc.surname])");
+					String title = UtilText.parse(getEnforcerLeader(), "Обыскан ([npc.surname])");
 					if(searched) {
 						return new Response(title,
-								"The Enforcers have already searched you, and so aren't interested in doing so again...", null);
+								"Enforcer уже обыскали тебя, так что повторно им это не интересно...", null);
 						
 					} else if(isThinksPlayerEnforcer()) {
 						return new Response(title,
-								"As the Enforcers think that you're one of them, they have absolutely no interest in searching you.", null);
+								"Поскольку Enforcer считают тебя одним из своих, у них нет ни малейшего желания тебя обыскивать.", null);
 						
 					} else if(hadSex) {
 						return new Response(title,
-								"As the Enforcers have already had sex with you, they have absolutely no interest in searching you.", null);
+								"Поскольку Enforcers уже переспали с тобой, им совершенно неинтересно тебя обыскивать.", null);
 						
 					} else if(foughtBefore) {
 						return new Response(title,
-								"The Enforcers aren't interested in getting involved with someone who's related to an Elder Lilin, and so have no interest in searching you...", null);
+								"Enforcers не хотят связываться с кем-то, кто состоит в родстве со Старшей лилин, поэтому им нет дела до твоего обыска...", null);
 						
 					} else if(bribed) {
 						return new Response(title,
-								"As you've bribed the Enforcers, they have no interest in searching you...", null);
+								"Так как ты подкупил Enforcers, им нет никакого интереса тебя обыскивать...", null);
 						
 					} else {
-						return new Response(UtilText.parse(getEnforcerLeader(), "Searched (<span style='color:"+getEnforcerLeader().getFemininity().getColour().toWebHexString()+";'>[npc.surname]</span>)"),
+						return new Response(UtilText.parse(getEnforcerLeader(), "Обыскано (<span style='color:"+getEnforcerLeader().getFemininity().getColour().toWebHexString()+";'>[npc.surname]</span>)"),
 								UtilText.parse(getEnforcerLeader(),
 									((Main.game.getPlayer().getRace()==Race.HUMAN || !Main.game.isDayTime()) && !isDemonRevealed())
-										?"Do as [npc.name] says and submit to a pat-down search so that they can confirm that you're not up to no good..."
-										:"Tell [npc.name] that you think that [npc.she] should do [npc.her] job and give you a pat-down search to make sure that you're not up to no good...")
+										?"Сделай, как говорит [npc.name], и подвергнись поверхностному обыску, чтобы они могли подтвердить, что ты не замышляешь ничего дурного..."
+										:"Скажи [npc.name], что, по твоему мнению, [npc.she] должен выполнять [npc.her] работу и провести тебе поверхностный обыск, чтобы убедиться, что ты не замышляешь ничего дурного...")
 								+(playerContraband(ItemTag.CONTRABAND_HEAVY, true)
-									?"<br/>[style.italicsTerrible(Some of your items will be confiscated if you do this and you will be arrested!)]"
+									?"<br/>[style.italicsTerrible(Часть твоих вещей будет конфискована, а тебя арестуют!)]"
 									:(playerContraband(ItemTag.CONTRABAND_MEDIUM, true)
-										?"<br/>[style.italicsBad(Some of your items will be confiscated if you do this!)]"
+										?"<br/>[style.italicsBad(Часть твоих вещей будет конфискована!)]"
 										:"")),
 								ENFORCER_ALLEYWAY_SEARCHED) {
 							@Override
@@ -908,37 +906,37 @@ public class EnforcerAlleywayDialogue {
 					}
 					
 				} if(index==3) {
-					String title = UtilText.parse(getEnforcerSubordinate(), "Searched ([npc.surname])");
+					String title = UtilText.parse(getEnforcerSubordinate(), "Обыскан ([npc.surname])");
 					if(searched) {
 						return new Response(title,
-								"The Enforcers have already searched you, and so aren't interested in doing so again...", null);
+								"Enforcer уже обыскали тебя, так что повторно им это не интересно...", null);
 						
 					} else if(isThinksPlayerEnforcer()) {
 						return new Response(title,
-								"As the Enforcers think that you're one of them, they have absolutely no interest in searching you.", null);
+								"Поскольку Enforcer считают тебя одним из своих, у них нет ни малейшего желания тебя обыскивать.", null);
 						
 					} else if(hadSex) {
 						return new Response(title,
-								"As the Enforcers have already had sex with you, they have absolutely no interest in searching you.", null);
+								"Поскольку Enforcers уже переспали с тобой, им совершенно неинтересно тебя обыскивать.", null);
 						
 					} else if(foughtBefore) {
 						return new Response(title,
-								"The Enforcers aren't interested in getting involved with someone who's related to an Elder Lilin, and so have no interest in searching you...", null);
+								"Enforcers не хотят связываться с кем-то, кто состоит в родстве со Старшей лилин, поэтому им нет дела до твоего обыска...", null);
 						
 					} else if(bribed) {
 						return new Response(title,
-								"As you've bribed the Enforcers, they have no interest in searching you...", null);
+								"Так как ты подкупил Enforcers, им нет никакого интереса тебя обыскивать...", null);
 						
 					} else {
-						return new Response(UtilText.parse(getEnforcerSubordinate(), "Searched (<span style='color:"+getEnforcerSubordinate().getFemininity().getColour().toWebHexString()+";'>[npc.surname]</span>)"),
+						return new Response(UtilText.parse(getEnforcerSubordinate(), "Обыскано (<span style='color:"+getEnforcerSubordinate().getFemininity().getColour().toWebHexString()+";'>[npc.surname]</span>)"),
 								UtilText.parse(getEnforcerSubordinate(),
 										((Main.game.getPlayer().getRace()==Race.HUMAN || !Main.game.isDayTime()) && !isDemonRevealed())
-											?"Submit to a pat-down search and ask for [npc.name] to be the one to search you..."
-											:"Tell [npc.name] that you think that [npc.she] should do [npc.her] job and give you a pat-down search to make sure that you're not up to no good...")
+											?"Подвергнись поверхностному обыску и попроси, чтобы тебя обыскал именно [npc.name]..."
+											:"Скажи [npc.name], что, по твоему мнению, [npc.she] должен выполнять [npc.her] работу и провести тебе поверхностный обыск, чтобы убедиться, что ты не замышляешь ничего дурного...")
 									+(playerContraband(ItemTag.CONTRABAND_HEAVY, true)
-										?"<br/>[style.italicsTerrible(Some of your items will be confiscated if you do this and you will be arrested!)]"
+										?"<br/>[style.italicsTerrible(Часть твоих вещей будет конфискована, а тебя арестуют!)]"
 										:(playerContraband(ItemTag.CONTRABAND_MEDIUM, true)
-											?"<br/>[style.italicsBad(Some of your items will be confiscated if you do this!)]"
+											?"<br/>[style.italicsBad(Часть твоих вещей будет конфискована!)]"
 											:"")),
 								ENFORCER_ALLEYWAY_SEARCHED) {
 							@Override
@@ -962,28 +960,28 @@ public class EnforcerAlleywayDialogue {
 					if(Main.game.getPlayer().getRace()!=Race.DEMON
 							&& Main.game.getPlayer().getSubspeciesOverrideRace()==Race.DEMON
 							&& !isDemonRevealed()) {
-						return new Response("Demonic reveal",
-								"Transform into a demon in front of the Enforcers...",
+						return new Response("Демоническое разоблачение",
+								"Трансформироваться в демона на глазах у Enforcer...",
 								ENFORCER_ALLEYWAY_DEMON_REVEAL);
 						
 					} else if(isDemonRevealed()) {
 						if(hadSex) {
 							return new Response(
-									"Demonic seduction",
-									UtilText.parse(getEnforcers(), "As [npc.name] has already had sex, [npc.sheIs] unwilling to spend any more time with you..."),
+									"Демоническое соблазнение",
+									UtilText.parse(getEnforcers(), "Так как [npc.name] уже занимался сексом, [npc.sheIs] не желает проводить с тобой больше времени..."),
 									null);
 							
 						} else if(!getEnforcerLeader().isAttractedTo(Main.game.getPlayer())) {
 							return new Response(
-									"Demonic seduction",
-									UtilText.parse(getEnforcers(), "As [npc.name] is not attracted to you, [npc.sheIs] unwilling to have sex with you..."),
+									"Демоническое соблазнение",
+									UtilText.parse(getEnforcers(), "Так как [npc.name] не испытывает к тебе влечения, [npc.sheIs] не хочет заниматься с тобой сексом..."),
 									null);
 						} else {
 							return new ResponseSex(
-									"Demonic seduction",
-									UtilText.parse(getEnforcers(), "Use the fact that you're a demon to seduce [npc.name]"
+									"Демоническое соблазнение",
+									UtilText.parse(getEnforcers(), "Использовать тот факт, что ты демон, чтобы соблазнить [npc.name]"
 										+(getEnforcerSubordinate().isAttractedTo(Main.game.getPlayer())
-											?" and [npc2.name]."
+											?" и [npc2.name]."
 											:"")),
 									false, false,
 									new SMGeneric(
@@ -1007,30 +1005,29 @@ public class EnforcerAlleywayDialogue {
 					}
 					
 				} else if(index==5) {
-					return new ResponseCombat("Attack",
-							"There's nobody around to come to their aid, so if you really wanted to, you could attack the Enforcers..."
-									+ "<br/>[style.italicsBad(Beating the Enforcers in combat will result in them being removed from the game!)]",
+					return new ResponseCombat("Атаковать",
+							"Поблизости никого нет, чтобы прийти им на помощь, так что если ты действительно захочешь, ты сможешь напасть на Enforcer...<br/>[style.italicsBad(Побиение Enforcer в бою приведет к тому, что они исчезнут из игры!)]",
 							(NPC)getEnforcerLeader(),
 							getEnforcers(),
 							Util.newHashMapOfValues(
-									new Value<>(Main.game.getPlayer(), "[pc.speech(I'm going to show you who's <i>really</i> in charge here!)] you declare, getting ready to attack the Enforcers."),
-									new Value<>(getEnforcerLeader(), UtilText.parse(getEnforcerLeader(), "[npc.speech(You're in for it now!)] [npc.name] shouts.")),
-									new Value<>(getEnforcerSubordinate(), UtilText.parse(getEnforcerSubordinate(), "[npc.speech(This is the last mistake you'll ever make!)] [npc.name] exclaims."))));
+									new Value<>(Main.game.getPlayer(), "[pc.speech(Сейчас я покажу вам, кто здесь <i>на самом деле</i> главный!)] — заявляете вы, готовясь к атаке на Enforcer."),
+									new Value<>(getEnforcerLeader(), UtilText.parse(getEnforcerLeader(), "[npc.speech(Ну, теперь тебе несдобровать!)] — кричит [npc.name].")),
+									new Value<>(getEnforcerSubordinate(), UtilText.parse(getEnforcerSubordinate(), "[npc.speech(Это будет твоя последняя ошибка в жизни!)] — восклицает [npc.name]."))));
 	
 					
 				} else if(index==6) {
 					if(!wantsToSearch) {
-						return new Response("Bribe ("+UtilText.formatAsMoneyUncoloured(BRIBE_AMOUNT, "span")+")",
-								"The Enforcers aren't demanding to search you, so there's no need to offer them a bribe...",
+						return new Response("Дать взятку ("+UtilText.formatAsMoneyUncoloured(BRIBE_AMOUNT, "охват")+")",
+								"Enforcer не требуют обыска, так что нет нужды предлагать им взятку...",
 								null);
 					}
 					if(Main.game.getPlayer().getMoney()<BRIBE_AMOUNT) {
-						return new Response("Bribe ("+UtilText.formatAsMoneyUncoloured(BRIBE_AMOUNT, "span")+")",
-								"You don't have enough money to offer the Enforcers a bribe...",
+						return new Response("Дать взятку ("+UtilText.formatAsMoneyUncoloured(BRIBE_AMOUNT, "охват")+")",
+								"У вас недостаточно денег, чтобы дать взятку Enforcer...",
 								null);
 					}
-					return new Response("Bribe ("+UtilText.formatAsMoney(BRIBE_AMOUNT, "span")+")",
-							"Ask the Enforcers if there's some sort of 'official fine' that you could pay instead of being subjected to a search.",
+					return new Response("Дать взятку ("+UtilText.formatAsMoney(BRIBE_AMOUNT, "охват")+")",
+							"Спросить у Enforcer, нет ли какого-нибудь «официального штрафа», который можно оплатить вместо обыска.",
 							ENFORCER_ALLEYWAY_BRIBE) {
 						@Override
 						public void effects() {
@@ -1042,44 +1039,43 @@ public class EnforcerAlleywayDialogue {
 				} else if(index==7 && Main.game.isSillyModeEnabled()) {
 					if(Main.game.getPlayer().getOccupation()==Occupation.TOURIST) {
 						if(!wantsToSearch) {
-							return new Response("American citizen",
-									"The Enforcers aren't demanding to search you, so there's no need to get angry...",
+							return new Response("Гражданин США",
+									"Enforcer не требуют обыска, так что нет нужды злиться...",
 									null);
 						}
-						return new Response("American citizen",
-								"You are an American citizen, and so these Enforcers have no authority over you!",
+						return new Response("Гражданин США",
+								"Ты — гражданин Америки, а значит, на этих Enforcer не распространяется их власть!",
 								ENFORCER_ALLEYWAY_SOVEREIGN_CITIZEN);
 					} else {
 						if(!wantsToSearch) {
-							return new Response("Sovereign citizen",
-									"The Enforcers aren't demanding to search you, so there's no need to get angry...",
+							return new Response("Суверенный гражданин",
+									"Enforcer не требуют обыска, так что нет нужды злиться...",
 									null);
 						}
-						return new Response("Sovereign citizen",
-								"You are a sovereign citizen, and so these Enforcers have no authority over you!",
+						return new Response("Суверенный гражданин",
+								"Ты — суверенный гражданин, а значит, на этих Enforcer не распространяется их власть!",
 								ENFORCER_ALLEYWAY_SOVEREIGN_CITIZEN);
 					}
 					
 				} else if(index==10) {
 					if(getCriminalInTile()==null) {
-						return new Response("Report",
-								"There are no criminals lurking in this area, so you have nothing to report to the Enforcers...",
+						return new Response("Доложить",
+								"В этом районе не таится никаких преступников, так что тебе нечего докладывать Enforcer...",
 								null);
 						
 					} else if(!getCriminalInTile().isAbleToBeEnslaved()) {
-						return new Response(UtilText.parse(getCriminalInTile(), "Report ([npc.Name])"),
-								UtilText.parse(getCriminalInTile(), "As [npc.name] is not a wanted criminal, you are unable to report them to the Enforcers..."),
+						return new Response(UtilText.parse(getCriminalInTile(), "Доложить ([npc.Name])"),
+								UtilText.parse(getCriminalInTile(), "Так как [npc.name] не является разыскиваемым преступником, ты не можешь доложить о нем Enforcer..."),
 								null);
 						
 					} else if(wantsToSearch) {
-						return new Response(UtilText.parse(getCriminalInTile(), "Report ([npc.Name])"),
-								"The Enforcers aren't interested in anything you have to report until after they've searched you...",
+						return new Response(UtilText.parse(getCriminalInTile(), "Доложить ([npc.Name])"),
+								"Enforcer-ов не будет волновать то, что ты хочешь сообщить, пока они тебя не обыщут...",
 								null);
 								
 					} else {
-						return new Response(UtilText.parse(getCriminalInTile(), "Report ([npc.Name])"),
-								UtilText.parse(getCriminalInTile(), "Tell the Enforcers that [npc.name] is lurking somewhere in this area."
-										+ "<br/>[style.italicsBad(This will permanently remove [npc.name] from the game!)]"),
+						return new Response(UtilText.parse(getCriminalInTile(), "Доложить ([npc.Name])"),
+								UtilText.parse(getCriminalInTile(), "Сказать Enforcer-ам, что где-то здесь затаился [npc.name].<br/>[style.italicsBad(Это навсегда удалит [npc.name] из игры!)]"),
 								ENFORCER_ALLEYWAY_REPORT) {
 							@Override
 							public Colour getHighlightColour() {
@@ -1239,33 +1235,32 @@ public class EnforcerAlleywayDialogue {
 			
 			if(heavyContrabandFound) {
 				if (index == 1) {
-					return new Response("Comply", "Comply with the Enforcers and let them take you off to the cells...", AFTER_CONTRABAND_CELLS);
+					return new Response("Повиноваться", "Повиноваться Enforcer-ам и позволить им увести тебя в камеры...", AFTER_CONTRABAND_CELLS);
 					
 				} else if(index==2) {
-					return new ResponseCombat("Resist",
-							"Resist arrest, which will cause the Enforcers to attempt to subdue you by force..."
-									+ "<br/>[style.italicsBad(Beating the Enforcers in combat will result in them being removed from the game!)]",
+					return new ResponseCombat("Сопротивляться",
+							"Оказать сопротивление при аресте, из-за чего Enforcer-ы попытаются подавить тебя силой...<br/>[style.italicsBad(Победа над Enforcer-ами в бою приведет к тому, что они исчезнут из игры!)]",
 							(NPC)getEnforcerLeader(),
 							getEnforcers(),
 							Util.newHashMapOfValues(
-									new Value<>(Main.game.getPlayer(), "[pc.speech(I'm not going quietly!)] you shout, getting ready to defend yourself against the Enforcers."),
-									new Value<>(getEnforcerLeader(), UtilText.parse(getEnforcerLeader(), "[npc.speech(Looks like we'll have to do this the hard way!)] [npc.name] shouts.")),
-									new Value<>(getEnforcerSubordinate(), UtilText.parse(getEnforcerSubordinate(), "[npc.speech(This is the last mistake you'll ever make!)] [npc.name] exclaims."))));
+									new Value<>(Main.game.getPlayer(), "[pc.speech(Я не сдамся без боя!)] — кричишь ты, готовясь защищаться от Enforcer-ов."),
+									new Value<>(getEnforcerLeader(), UtilText.parse(getEnforcerLeader(), "[npc.speech(Похоже, придется действовать жестко!)] — кричит [npc.name].")),
+									new Value<>(getEnforcerSubordinate(), UtilText.parse(getEnforcerSubordinate(), "[npc.speech(Это будет твоя последняя ошибка в жизни!)] — восклицает [npc.name]."))));
 				}
 				
 				
 			} else if((playerSexType!=null && enforcerWantsPlayerSex)) {
 				if(index==1) {
-					return getEnforcerSexResponse("Strip",
+					return getEnforcerSexResponse("Раздеться",
 							UtilText.parse(partner,
-								"Submit to [npc.namePos] 'strip search'..."
+								"Подчиниться «раздевающему обыску» [npc.namePos]..."
 								+(playerSexType.getPerformingSexArea()==SexAreaPenetration.PENIS
 									?(playerSexType.getTargetedSexArea()==SexAreaOrifice.VAGINA
-										?"<br/>[style.italicsSex(This will end with [npc.name] fucking your pussy!)]"
-										:"<br/>[style.italicsSex(This will end with [npc.name] fucking your ass!)]")
+										?"<br/>[style.italicsSex(Все закончится тем, что [npc.name] будет трахать твою киску!)]"
+										:"<br/>[style.italicsSex(Все закончится тем, что [npc.name] будет трахать твою задницу!)]")
 									:(playerSexType.getTargetedSexArea()==SexAreaOrifice.VAGINA
-										?"<br/>[style.italicsSex(This will end with [npc.name] fingering your pussy!)]"
-										:"<br/>[style.italicsSex(This will end with [npc.name] fingering your ass while jerking you off!)]"))),
+										?"<br/>[style.italicsSex(Все закончится тем, что [npc.name] будет ласкать твою киску пальцами!)]"
+										:"<br/>[style.italicsSex(Все закончится тем, что [npc.name] будет ебать твой зад, одновременно дроча тебе на член!)]"))),
 							partner,
 							spectator,
 							false,
@@ -1275,24 +1270,24 @@ public class EnforcerAlleywayDialogue {
 					
 				} else if(index==2) {
 					if(!spectator.isAttractedTo(Main.game.getPlayer())) {
-						return new Response("Strip (threesome)", UtilText.parse(spectator, "[npc.Name] isn't attracted to you, so would be unwilling to participate in a threesome..."), null);
+						return new Response("Раздеться (тройничок)", UtilText.parse(spectator, "[npc.Name] не испытывает к тебе влечения, так что вряд ли согласится на тройничок..."), null);
 					}
 					if(!Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.MOUTH, true)) {
-						return new Response("Strip (threesome)", UtilText.parse(spectator, "As you can't gain access to your mouth, [npc.name] is unable to participate in a threesome..."), null);
+						return new Response("Раздеться (тройничок)", UtilText.parse(spectator, "Так как ты не можешь разжать рот, [npc.name] не может участвовать в тройничке..."), null);
 					}
-					return getEnforcerSexResponse("Strip (threesome)",
+					return getEnforcerSexResponse("Раздеться (тройничок)",
 							UtilText.parse(partner, spectator,
-								"Submit to [npc.namePos] 'strip search' and get [npc2.name] to join in on the fun..."
+								"Подчиниться «обыску» [npc.namePos] и заставить [npc2.name] присоединиться к веселью..."
 								+(playerSexType.getPerformingSexArea()==SexAreaPenetration.PENIS
 									?(playerSexType.getTargetedSexArea()==SexAreaOrifice.VAGINA
-										?"<br/>[style.italicsSex(This will end with [npc.name] fucking your pussy"
-										:"<br/>[style.italicsSex(This will end with [npc.name] fucking your ass")
+										?"<br/>[style.italicsSex(Все закончится тем, что [npc.name] будет трахать твою киску"
+										:"<br/>[style.italicsSex(Все закончится тем, что [npc.name] будет ебать твой зад")
 									:(playerSexType.getTargetedSexArea()==SexAreaOrifice.VAGINA
-										?"<br/>[style.italicsSex(This will end with [npc.name] fingering your pussy"
-										:"<br/>[style.italicsSex(This will end with [npc.name] fingering your ass and jerking you off"))
+										?"<br/>[style.italicsSex(Все закончится тем, что [npc.name] будет пальцами ласкать твою киску,"
+										:"<br/>[style.italicsSex(Все закончится тем, что [npc.name] будет дрочить тебя, одновременно лаская твою задницу,"))
 								+(spectator.hasPenis()
-										?", while [npc2.name] gets you to suck [npc2.her] cock!)]"
-										:", while [npc2.name] gets you to eat [npc2.herHim] out!)]")),
+										?", пока [npc2.name] заставит тебя сосать [npc2.her] член!)]"
+										:", пока [npc2.name] заставит тебя отсосать [npc2.herHim]!)]")),
 							partner,
 							spectator,
 							true,
@@ -1305,21 +1300,20 @@ public class EnforcerAlleywayDialogue {
 							&& !isDemonRevealed()
 							&& !isKind()
 							&& partner.isWillingToRape()) {
-						return new ResponseCombat("Refuse",
-								"Your refusal to strip for the Enforcers will no doubt raise their suspicions and result in them attempting to subdue you by force..."
-										+ "<br/>[style.italicsBad(Beating the Enforcers in combat will result in them being removed from the game!)]",
+						return new ResponseCombat("Отказаться",
+								"Твой отказ раздеться перед Enforcer, несомненно, вызовет у них подозрения и приведет к тому, что они попытаются подчинить тебя силой...<br/>[style.italicsBad(Победа над Enforcer в бою приведет к тому, что они исчезнут из игры!)]",
 								(NPC)getEnforcerLeader(),
 								getEnforcers(),
 								Util.newHashMapOfValues(
-										new Value<>(Main.game.getPlayer(), "[pc.speech(Get away from me!)] you shout, getting ready to defend yourself against the Enforcers."),
-										new Value<>(getEnforcerLeader(), UtilText.parse(getEnforcerLeader(), "[npc.speech(I knew you were up to no good!)] [npc.name] shouts.")),
-										new Value<>(getEnforcerSubordinate(), UtilText.parse(getEnforcerSubordinate(), "[npc.speech(This is the last mistake you'll ever make!)] [npc.name] exclaims."))));
+										new Value<>(Main.game.getPlayer(), "[pc.speech(Прочь от меня!)] — кричишь ты, готовясь защищаться от Enforcer."),
+										new Value<>(getEnforcerLeader(), UtilText.parse(getEnforcerLeader(), "[npc.speech(Я так и знал, что ты замышляешь что-то недоброе!)] — кричит [npc.name].")),
+										new Value<>(getEnforcerSubordinate(), UtilText.parse(getEnforcerSubordinate(), "[npc.speech(Это будет твоя последняя ошибка в жизни!)] — восклицает [npc.name]."))));
 						
 					} else {
-						return new Response("Refuse",
+						return new Response("Отказаться",
 								isKind() || !partner.isWillingToRape()
-									?UtilText.parse(partner, "Although [npc.she] clearly wants to take advantage of you, [npc.name] isn't going to force you to strip...")
-									:"As you are [pc.a_race], the Enforcers won't force you to strip for them...",
+									?UtilText.parse(partner, "Хотя [npc.she] явно хочет воспользоваться тобой, [npc.name] не собирается заставлять тебя раздеваться...")
+									:"Поскольку ты [pc.a_race], Enforcer не будут заставлять тебя раздеваться перед ними...",
 								ENFORCER_ALLEYWAY_SEARCHED_STRIP_REFUSED);
 					}
 					
@@ -1327,8 +1321,8 @@ public class EnforcerAlleywayDialogue {
 						&& Main.game.getPlayer().getRace()!=Race.DEMON
 						&& Main.game.getPlayer().getSubspeciesOverrideRace()==Race.DEMON
 						&& !isDemonRevealed()) {
-					return new Response("Demonic reveal",
-							"Transform into a demon in front of the Enforcers, which will be sure to put a stop to their demands of you...",
+					return new Response("Демоническое разоблачение",
+							"Превратись в демона на глазах у Enforcer, что наверняка заставит их прекратить свои требования...",
 							ENFORCER_ALLEYWAY_DEMON_REVEAL);
 				}
 				
@@ -1354,10 +1348,10 @@ public class EnforcerAlleywayDialogue {
 		}
 	};
 	
-	public static final DialogueNode ENFORCER_ALLEYWAY_AFTER_CAVITY_SEARCH_SEX = new DialogueNode("Finished", "", true) {
+	public static final DialogueNode ENFORCER_ALLEYWAY_AFTER_CAVITY_SEARCH_SEX = new DialogueNode("Завершено", "", true) {
 		@Override
 		public String getDescription(){
-			return "Now that you've been 'searched', the Enforcers step back and prepare to let you go.";
+			return "Теперь, когда тебя «осмотрели», Enforcer отступают и готовятся тебя отпустить.";
 		}
 		@Override
 		public void applyPreParsingEffects() {
@@ -1430,24 +1424,24 @@ public class EnforcerAlleywayDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new ResponseCombat("Resist",
+				return new ResponseCombat("Сопротивляться",
 						(Main.game.getPlayer().getOccupation()==Occupation.TOURIST
-							?"Resist arrest and show these damn fascist assholes what freedom means!"
-							:"Resist arrest and assert your rights as a sovereign citizen!")
-						+ "<br/>[style.italicsBad(Beating the Enforcers in combat will result in them being removed from the game!)]",
+							?"Сопротивляйся аресту и покажи этим чертовым фашистским ублюдкам, что такое свобода!"
+							:"Сопротивляйся аресту и отстаивай свои права как суверенный гражданин!")
+						+ "<br/>[style.italicsBad(Если ты одолеешь Enforcer в бою, они навсегда исчезнут из игры!)]",
 						(NPC)getEnforcerLeader(),
 						getEnforcers(),
 						Util.newHashMapOfValues(
 								new Value<>(Main.game.getPlayer(),
 										Main.game.getPlayer().getOccupation()==Occupation.TOURIST
-											?"[pc.speech(U.S.A.! U.S.A.! U.S.A.!)] you loudly chant as you prepare to defend yourself against these commie bastards."
-											:"[pc.speech(I am a Sovereign Citizen! Am I being detained?! I do not consent!)] you screech as you prepare to defend yourself against these tyrants."),
-								new Value<>(getEnforcerLeader(), UtilText.parse(getEnforcerLeader(), "[npc.speech(You're in for it now!)] [npc.name] shouts.")),
-								new Value<>(getEnforcerSubordinate(), UtilText.parse(getEnforcerSubordinate(), "[npc.speech(This is the last mistake you'll ever make!)] [npc.name] exclaims."))));
+											?"[pc.speech(США! США! США!)] — громко скандируешь ты, готовясь защищаться от этих коммунистических тварей."
+											:"[pc.speech(Я — суверенный гражданин! Меня что, задерживают?! Я не давал согласия!)] — визжишь ты, готовясь дать отпор этим тиранам."),
+								new Value<>(getEnforcerLeader(), UtilText.parse(getEnforcerLeader(), "[npc.speech(Ну, теперь тебе несдобровать!)] — кричит [npc.name].")),
+								new Value<>(getEnforcerSubordinate(), UtilText.parse(getEnforcerSubordinate(), "[npc.speech(Это будет твоя последняя ошибка в жизни!)] — восклицает [npc.name]."))));
 				
 			} else if(index==2) {
-				return new Response(UtilText.parse(getEnforcerLeader(), "Searched (<span style='color:"+getEnforcerLeader().getFemininity().getColour().toWebHexString()+";'>[npc.surname]</span>)"),
-						UtilText.parse(getEnforcerLeader(), "Give up on arguing with the Enforcers and let [npc.name] search you..."),
+				return new Response(UtilText.parse(getEnforcerLeader(), "Обыскано (<span style='color:"+getEnforcerLeader().getFemininity().getColour().toWebHexString()+";'>[npc.surname]</span>)"),
+						UtilText.parse(getEnforcerLeader(), "Перестать спорить с Enforcer и позволить [npc.name] обыскать тебя..."),
 						ENFORCER_ALLEYWAY_SEARCHED) {
 					@Override
 					public void effects() {
@@ -1456,8 +1450,8 @@ public class EnforcerAlleywayDialogue {
 				};
 				
 			} else if(index==3) {
-				return new Response(UtilText.parse(getEnforcerSubordinate(), "Searched (<span style='color:"+getEnforcerSubordinate().getFemininity().getColour().toWebHexString()+";'>[npc.surname]</span>)"),
-						UtilText.parse(getEnforcerSubordinate(), "Give up on arguing with the Enforcers and let [npc.name] search you..."),
+				return new Response(UtilText.parse(getEnforcerSubordinate(), "Обыскано (<span style='color:"+getEnforcerSubordinate().getFemininity().getColour().toWebHexString()+";'>[npc.surname]</span>)"),
+						UtilText.parse(getEnforcerSubordinate(), "Перестать спорить с Enforcer и позволить [npc.name] обыскать тебя..."),
 						ENFORCER_ALLEYWAY_SEARCHED) {
 					@Override
 					public void effects() {
@@ -1483,12 +1477,12 @@ public class EnforcerAlleywayDialogue {
 			if(index==1) {
 				return new Response(
 						Main.game.getPlayer().isHasSlaverLicense()
-							?"Decline"
-							:"Continue",
+							?"Отклонить"
+							:"Продолжить",
 						UtilText.parse(getCriminalInTile(),
 							Main.game.getPlayer().isHasSlaverLicense()
-								?"Tell the Enforcers that you're not interested in gaining [npc.name] as your slave and leave them to go and enslave [npc.herHim] by themselves."
-								:"Leave the Enforcers to track down and enslave [npc.name] and continue on your way..."),
+								?"Заявить Enforcer, что тебе не интересно брать [npc.name] в рабство, и оставить их наедине с их задачей по порабощению [npc.herHim]."
+								:"Оставить Enforcer выслеживать и порабощать [npc.name] и продолжить свой путь..."),
 						Main.game.getDefaultDialogue(false)) {
 					@Override
 					public void effects() {
@@ -1500,12 +1494,12 @@ public class EnforcerAlleywayDialogue {
 				
 			} else if(index==2) {
 				if(!Main.game.getPlayer().isHasSlaverLicense()) {
-					return new Response("Help",
-							UtilText.parse(getCriminalInTile(), "As you don't have a slaver license, there's nothing to gain from helping the Enforcers track down and enslave [npc.name]..."),
+					return new Response("Помочь",
+							UtilText.parse(getCriminalInTile(), "Так как у тебя нет лицензии работорговца, от помощи Enforcer в поисках и порабощении [npc.name] тебе будет мало что перепадет..."),
 							null);
 				}
-				return new Response("Help",
-						UtilText.parse(getCriminalInTile(), "Help the Enforcers to track down and enslave [npc.name], thereby qualifying you to receive the [npc.race] criminal as your reward..."),
+				return new Response("Помочь",
+						UtilText.parse(getCriminalInTile(), "Помочь Enforcer выследить и поработить [npc.name], чтобы в награду получить преступницу [npc.race]..."),
 						ENFORCER_ALLEYWAY_REPORT_HELP) {
 					@Override
 					public void effects() {
@@ -1539,8 +1533,8 @@ public class EnforcerAlleywayDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Take ownership",
-						UtilText.parse(getCriminalInTile(), "Take ownership of [npc.name]..."),
+				return new Response("Завладеть собственностью",
+						UtilText.parse(getCriminalInTile(), "Завладеть [npc.name]..."),
 						ENFORCER_ALLEYWAY_REPORT_HELP_REWARD) {
 					@Override
 					public void effects() {
@@ -1583,7 +1577,7 @@ public class EnforcerAlleywayDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue", "As the Enforcers have left to file a report on this incident, you're free to continue on your way...", Main.game.getDefaultDialogue(false));
+				return new Response("Продолжить", "Поскольку Enforcer ушли составлять отчет об этом инциденте, ты можешь спокойно идти дальше...", Main.game.getDefaultDialogue(false));
 			}
 			return null;
 		}
@@ -1601,11 +1595,11 @@ public class EnforcerAlleywayDialogue {
 		@Override
 		public String getResponseTabTitle(int index) {
 			if(index==0) {
-				return "Interactions";
+				return "Взаимодействие";
 			} else if(index==1) {
-				return "Inventories";
+				return "Инвентарь";
 			} else if(index==2) {
-				return "Transformations";
+				return "Трансформации";
 			}
  			return null;
 		}
@@ -1613,9 +1607,8 @@ public class EnforcerAlleywayDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(responseTab == 0) {
 				if (index == 1) {
-					return new Response("Leave",
-							"Leave the Enforcers to recover and continue on your way..."
-									+ "<br/>[style.italicsBad(This will permanently remove the Enforcers from the game!)]",
+					return new Response("Уйти",
+							"Оставить Enforcer приходить в себя и продолжить свой путь...<br/>[style.italicsBad(Это навсегда уберет Enforcer из игры!)]",
 							Main.game.getDefaultDialogue(false)) {
 						@Override
 						public Colour getHighlightColour() {
@@ -1631,8 +1624,8 @@ public class EnforcerAlleywayDialogue {
 				} else if (index == 2) {
 					if(!getEnforcerLeader().isAttractedTo(Main.game.getPlayer()) && Main.game.isNonConEnabled()) {
 						return new ResponseSex(
-								UtilText.parse(getEnforcerLeader(), "Rape ([npc.Surname])"),
-								UtilText.parse(getEnforcerLeader(), "Although [npc.name] doesn't want to have sex with you, [npc.she] really has no say in the matter..."),
+								UtilText.parse(getEnforcerLeader(), "Изнасиловать ([npc.Surname])"),
+								UtilText.parse(getEnforcerLeader(), "Хотя [npc.name] и не хочет заниматься с тобой сексом, у [npc.she] на самом деле нет права голоса в этом вопросе..."),
 								Util.newArrayListOfValues(Fetish.FETISH_NON_CON_DOM), null, Fetish.FETISH_NON_CON_DOM.getAssociatedCorruptionLevel(), null, null, null,
 								false, false,
 								new SMGeneric(
@@ -1645,8 +1638,8 @@ public class EnforcerAlleywayDialogue {
 						
 					} else {
 						return new ResponseSex(
-								UtilText.parse(getEnforcerLeader(), "Sex ([npc.Surname])"),
-								UtilText.parse(getEnforcers(), "If it's sex that [npc.nameIs] after, then you're more than happy to give it to [npc.herHim]!"),
+								UtilText.parse(getEnforcerLeader(), "Секс ([npc.Surname])"),
+								UtilText.parse(getEnforcers(), "Если [npc.nameIs] жаждет секса, то ты с радостью отдашь его [npc.herHim]!"),
 								true, false,
 								new SMGeneric(
 										Util.newArrayListOfValues(Main.game.getPlayer()),
@@ -1660,8 +1653,8 @@ public class EnforcerAlleywayDialogue {
 				} else if (index == 3) {
 					if(!getEnforcerSubordinate().isAttractedTo(Main.game.getPlayer()) && Main.game.isNonConEnabled()) {
 						return new ResponseSex(
-								UtilText.parse(getEnforcerSubordinate(), "Rape ([npc.Surname])"),
-								UtilText.parse(getEnforcerSubordinate(), "Although [npc.name] doesn't want to have sex with you, [npc.she] really has no say in the matter..."),
+								UtilText.parse(getEnforcerSubordinate(), "Изнасиловать ([npc.Surname])"),
+								UtilText.parse(getEnforcerSubordinate(), "Хотя [npc.name] и не хочет заниматься с тобой сексом, у [npc.she] на самом деле нет права голоса в этом вопросе..."),
 								Util.newArrayListOfValues(Fetish.FETISH_NON_CON_DOM), null, Fetish.FETISH_NON_CON_DOM.getAssociatedCorruptionLevel(), null, null, null,
 								false, false,
 								new SMGeneric(
@@ -1674,8 +1667,8 @@ public class EnforcerAlleywayDialogue {
 						
 					} else {
 						return new ResponseSex(
-								UtilText.parse(getEnforcerSubordinate(), "Sex ([npc.Surname])"),
-								UtilText.parse(getEnforcerSubordinate(), "If it's sex that [npc.nameIs] after, then you're more than happy to give it to [npc.herHim]!"),
+								UtilText.parse(getEnforcerSubordinate(), "Секс ([npc.Surname])"),
+								UtilText.parse(getEnforcerSubordinate(), "Если [npc.nameIs] жаждет секса, то ты с радостью отдашь его [npc.herHim]!"),
 								true, false,
 								new SMGeneric(
 										Util.newArrayListOfValues(Main.game.getPlayer()),
@@ -1689,8 +1682,8 @@ public class EnforcerAlleywayDialogue {
 				} else if (index == 4) {
 					if((!getEnforcerLeader().isAttractedTo(Main.game.getPlayer()) || !getEnforcerSubordinate().isAttractedTo(Main.game.getPlayer())) && Main.game.isNonConEnabled()) {
 						return new ResponseSex(
-								"Threesome (rape)",
-								"Although they don't want to have sex with you, these Enforcers really has no say in the matter...",
+								"Тройничок (изнасилование)",
+								"Хотя они и не хотят заниматься с тобой сексом, у этих Enforcer почти нет выбора...",
 								Util.newArrayListOfValues(Fetish.FETISH_NON_CON_DOM), null, Fetish.FETISH_NON_CON_DOM.getAssociatedCorruptionLevel(), null, null, null,
 								false, false,
 								new SMGeneric(
@@ -1703,8 +1696,8 @@ public class EnforcerAlleywayDialogue {
 						
 					} else {
 						return new ResponseSex(
-								"Threesome",
-								"If it's sex that these two Enforcers are after, then you're more than happy to give it to them!",
+								"Трио",
+								"Если эти двое Enforcer жаждут секса, то ты с радостью отдашь его им!",
 								true, false,
 								new SMGeneric(
 										Util.newArrayListOfValues(Main.game.getPlayer()),
@@ -1717,18 +1710,18 @@ public class EnforcerAlleywayDialogue {
 					
 				} else if (index == 5) {
 					if(!getEnforcerLeader().isAttractedTo(Main.game.getPlayer()) && !getEnforcerSubordinate().isAttractedTo(Main.game.getPlayer())) {
-						return new Response("Submit",
-								"You can't submit to the Enforcers, as neither of them have any interest in having sex with you!",
+						return new Response("Подчиниться",
+								"Ты не можешь подчиниться Enforcer, так как ни одного из них не интересует секс с тобой!",
 								null);
 					} else {
-						return new ResponseSex("Submit",
-								"You're not really sure what to do now... Perhaps it would be best to let the Enforcers choose what to do next?"
+						return new ResponseSex("Подчиниться",
+								"Ты не совсем понимаешь, что делать... Возможно, лучше позволить Enforcer самим решить, что будет дальше?"
 								+ UtilText.parse(getEnforcers(),
 									(getEnforcerLeader().isAttractedTo(Main.game.getPlayer()) && getEnforcerSubordinate().isAttractedTo(Main.game.getPlayer())
-										?"<br/>[style.italicsSex(This will result in both [npc.name] and [npc2.name] dominantly fucking you!)]"
+										?"<br/>[style.italicsSex(Это приведет к тому, что и [npc.name], и [npc2.name] будут доминантно трахать тебя!)]"
 										:(getEnforcerLeader().isAttractedTo(Main.game.getPlayer())
-											?"<br/>[style.italicsSex(This will result in just [npc.name] dominantly fucking you!)]"
-											:"<br/>[style.italicsSex(This will result in just [npc2.name] dominantly fucking you!)]"))),
+											?"<br/>[style.italicsSex(Это приведет к тому, что [npc.name] будет просто доминантно трахать тебя!)]"
+											:"<br/>[style.italicsSex(Это приведет к тому, что [npc2.name] будет просто доминантно трахать тебя!)]"))),
 								Util.newArrayListOfValues(Fetish.FETISH_SUBMISSIVE),
 								null, CorruptionLevel.THREE_DIRTY, null, null, null,
 								true, false,
@@ -1762,7 +1755,7 @@ public class EnforcerAlleywayDialogue {
 					if(index==i) {
 						NPC enforcer = (NPC) getEnforcers().get(i-1);
 						return new ResponseEffectsOnly(UtilText.parse(enforcer, "[npc.Name]"),
-								UtilText.parse(enforcer, "Now that you've defeated [npc.name], there's nothing stopping you from helping yourself to [npc.her] clothing and items...")) {
+								UtilText.parse(enforcer, "Теперь, когда ты одолел(а) [npc.name], ничто не мешает тебе полакомиться одеждой и вещами [npc.her]...")) {
 							@Override
 							public void effects() {
 								Main.mainController.openInventory(enforcer, InventoryInteraction.FULL_MANAGEMENT);
@@ -1777,11 +1770,11 @@ public class EnforcerAlleywayDialogue {
 					if(index==i) {
 						NPC enforcer = (NPC) getEnforcers().get(i-1);
 						if(!enforcer.isAbleToSelfTransform()) {
-							return new Response(UtilText.parse(enforcer, "[npc.Name]"), UtilText.parse(enforcer, "[npc.Name] is unable to self-transform..."), null);
+							return new Response(UtilText.parse(enforcer, "[npc.Name]"), UtilText.parse(enforcer, "[npc.Name] не может трансформироваться самостоятельно..."), null);
 							
 						} else {
 							return new Response(UtilText.parse(enforcer, "[npc.Name]"),
-									UtilText.parse(enforcer, "Take a very detailed look at what [npc.name] can transform [npc.herself] into..."),
+									UtilText.parse(enforcer, "Внимательно рассмотреть, в кого [npc.name] может превратить [npc.herself]..."),
 									BodyChanging.BODY_CHANGING_CORE){
 								@Override
 								public void effects() {
@@ -1915,15 +1908,15 @@ public class EnforcerAlleywayDialogue {
 			
 			if(!enforcersWantingSex.isEmpty()) {
 				if (index == 1) {
-					return new ResponseSex("Sex",
+					return new ResponseSex("Секс",
 							UtilText.parse(enforcersWantingSex,
 									enforcersWantingSex.get(0).isWillingToRape()
 										?(enforcersWantingSex.size()==2
-											?"[npc.Name] and [npc2.name] force themselves on you..."
-											:"[npc.Name] forces [npc.herself] on you...")
+											?"[npc.Name] и [npc2.name] силой берут тебя..."
+											:"[npc.Name] навязывает вам [npc.herself]...")
 										:(enforcersWantingSex.size()==2
-											?"Surrender yourself to [npc.name] and [npc2.name] and let them fuck you."
-											:"Surrender yourself to [npc.name] and let [npc.herHim] fuck you.")),
+											?"Смирись перед [npc.name] и [npc2.name] и позволь им трахать тебя."
+											:"Смирись перед [npc.name] и позволь [npc.herHim] трахать тебя.")),
 							false, false,
 							new SMGeneric(
 									enforcersWantingSex,
@@ -1934,15 +1927,15 @@ public class EnforcerAlleywayDialogue {
 							UtilText.parseFromXMLFile("encounters/dominion/enforcerAlleyway", "START_DEFEATED_SEX", getEnforcers()));
 					
 				} else if (index == 2) {
-					return new ResponseSex("Eager Sex",
+					return new ResponseSex("Жажда секса",
 							UtilText.parse(enforcersWantingSex,
 								enforcersWantingSex.get(0).isWillingToRape()
 									?(enforcersWantingSex.size()==2
-										?"Eagerly encourage [npc.name] and [npc2.name] to force themselves on you..."
-										:"Eagerly encourage [npc.name] to force [npc.herself] on you...")
+										?"С жадностью подстрекай [npc.name] и [npc2.name] силой брать тебя..."
+										:"С жадностью подстрекай [npc.name] навязать тебе [npc.herself]...")
 									:(enforcersWantingSex.size()==2
-										?"Eagerly surrender yourself to [npc.name] and [npc2.name] and let them fuck you."
-										:"Eagerly surrender yourself to [npc.name] and let [npc.herHim] fuck you.")),
+										?"С жадностью отдайся на милость [npc.name] и [npc2.name] и позволь им трахать тебя."
+										:"С жадностью отдайся на милость [npc.name] и позволь [npc.herHim] трахать тебя.")),
 							false, false,
 							new SMGeneric(
 									enforcersWantingSex,
@@ -1954,11 +1947,11 @@ public class EnforcerAlleywayDialogue {
 							UtilText.parseFromXMLFile("encounters/dominion/enforcerAlleyway", "START_DEFEATED_SEX_EAGER", getEnforcers()));
 					
 				} else if (index == 3 && Main.game.isNonConEnabled() && enforcersWantingSex.get(0).isWillingToRape()) {
-					return new ResponseSex("Resist Sex",
+					return new ResponseSex("Сопротивляться сексу",
 							UtilText.parse(enforcersWantingSex,
 								(enforcersWantingSex.size()==2
-										?"Try and resist as [npc.name] and [npc2.name] to force themselves on you..."
-										:"Try and resist as [npc.name] forces [npc.herself] on you...")),
+										?"Попытаться сопротивляться, когда [npc.name] и [npc2.name] навязывают тебе себя..."
+										:"Попытаться сопротивляться, когда [npc.name] навязывает тебе [npc.herself]...")),
 							false, false,
 							new SMGeneric(
 									enforcersWantingSex,
@@ -1970,11 +1963,11 @@ public class EnforcerAlleywayDialogue {
 							UtilText.parseFromXMLFile("encounters/dominion/enforcerAlleyway", "START_DEFEATED_SEX_RESIST", getEnforcers()));
 					
 				} else if (index == 4 && !enforcersWantingSex.get(0).isWillingToRape()) {
-					return new Response("Refuse",
+					return new Response("Отказаться",
 							UtilText.parse(enforcersWantingSex, 
 								(enforcersWantingSex.size()==2
-									?"Refuse to have sex with [npc.name] and [npc2.name]."
-									:"Refuse to have sex with [npc.name].")),
+									?"Отказаться заниматься сексом с [npc.name] и [npc2.name]."
+									:"Отказаться заниматься сексом с [npc.name].")),
 							AFTER_COMBAT_DEFEAT_SEX_REFUSED);
 				}
 				
@@ -1982,7 +1975,7 @@ public class EnforcerAlleywayDialogue {
 				if(((NPC)getEnforcerLeader()).hasFlag(NPCFlagValue.knowsPlayerDemon)
 						|| getEnforcerLeader().getFoughtPlayerCount()>1) { // If demon, or know that Lilaya will bail you out, they leave you behind.
 					if (index == 1) {
-						return new Response("Continue", "Now that the Enforcers have left, you can recover and continue on your way...", Main.game.getDefaultDialogue(false)) {
+						return new Response("Продолжить", "Теперь, когда Enforcer ушли, ты можешь прийти в себя и продолжить свой путь...", Main.game.getDefaultDialogue(false)) {
 							@Override
 							public void effects() {
 								banishEnforcers(false);
@@ -1992,7 +1985,7 @@ public class EnforcerAlleywayDialogue {
 					
 				} else {
 					if (index == 1) {
-						return new Response("Dragged off", "The Enforcers drag you off to the cells...", AFTER_DEFEAT_CELLS);
+						return new Response("Утащили", "Enforcer утаскивают тебя в камеры...", AFTER_DEFEAT_CELLS);
 					}
 				}
 			}
@@ -2010,7 +2003,7 @@ public class EnforcerAlleywayDialogue {
 			if(((NPC)getEnforcerLeader()).hasFlag(NPCFlagValue.knowsPlayerDemon)
 					|| getEnforcerLeader().getFoughtPlayerCount()>1) { // If demon, or know that Lilaya will bail you out, they leave you behind.
 				if (index == 1) {
-					return new Response("Continue", "Now that the Enforcers have left, you can recover and continue on your way...", Main.game.getDefaultDialogue(false)) {
+					return new Response("Продолжить", "Теперь, когда Enforcer ушли, ты можешь прийти в себя и продолжить свой путь...", Main.game.getDefaultDialogue(false)) {
 						@Override
 						public void effects() {
 							banishEnforcers(false);
@@ -2020,17 +2013,17 @@ public class EnforcerAlleywayDialogue {
 				
 			} else {
 				if (index == 1) {
-					return new Response("Dragged off", "The Enforcers drag you off to the cells...", AFTER_DEFEAT_CELLS);
+					return new Response("Утащили", "Enforcer утаскивают тебя в камеры...", AFTER_DEFEAT_CELLS);
 				}
 			}
 			return null;
 		}
 	};
 	
-	public static final DialogueNode AFTER_SEX_DEMONIC_SEDUCTION = new DialogueNode("Step back", "", true) {
+	public static final DialogueNode AFTER_SEX_DEMONIC_SEDUCTION = new DialogueNode("Отступить", "", true) {
 		@Override
 		public String getDescription(){
-			return "Now that you've had your fun, you can step back and leave the Enforcers to recover.";
+			return "Теперь, когда ты вдоволь повеселился, можешь отступить и дать Enforcer прийти в себя.";
 		}
 		@Override
 		public String getContent() {
@@ -2042,10 +2035,10 @@ public class EnforcerAlleywayDialogue {
 		}
 	};
 	
-	public static final DialogueNode AFTER_SEX_VICTORY = new DialogueNode("Step back", "", true) {
+	public static final DialogueNode AFTER_SEX_VICTORY = new DialogueNode("Отступить", "", true) {
 		@Override
 		public String getDescription(){
-			return "Now that you've had your fun, you can step back and leave the Enforcers to recover from their defeat.";
+			return "Теперь, когда ты вдоволь повеселился, можешь отступить и дать Enforcer оправиться от поражения.";
 		}
 		@Override
 		public String getContent() {
@@ -2066,9 +2059,8 @@ public class EnforcerAlleywayDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(responseTab==0) {
 				if (index == 1) {
-					return new Response("Leave",
-							"Leave the Enforcers behind and continue on your way."
-									+ "<br/>[style.italicsBad(This will permanently remove the Enforcers from the game!)]",
+					return new Response("Уйти",
+							"Оставить Enforcer позади и продолжить свой путь.<br/>[style.italicsBad(Это навсегда уберет Enforcer из игры!)]",
 							Main.game.getDefaultDialogue(false)) {
 						@Override
 						public Colour getHighlightColour() {
@@ -2088,14 +2080,14 @@ public class EnforcerAlleywayDialogue {
 		}
 	};
 	
-	public static final DialogueNode AFTER_DEFEAT_SEX = new DialogueNode("Collapse", "", true) {
+	public static final DialogueNode AFTER_DEFEAT_SEX = new DialogueNode("Свалиться", "", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 5*60;
 		}
 		@Override
 		public String getDescription(){
-			return "You're completely worn out from [npc.namePos] dominant treatment, and need a while to recover.";
+			return "Вы совершенно измотаны доминирующим напором [npc.namePos] и нуждаетесь в отдыхе, чтобы прийти в себя.";
 		}
 		@Override
 		public String getContent() {
@@ -2115,7 +2107,7 @@ public class EnforcerAlleywayDialogue {
 			if(((NPC)getEnforcerLeader()).hasFlag(NPCFlagValue.knowsPlayerDemon)
 					|| getEnforcerLeader().getFoughtPlayerCount()>1) { // If demon, or know that Lilaya will bail you out, they leave you behind.
 				if (index == 1) {
-					return new Response("Continue", "Now that the Enforcers have left, you can recover and continue on your way...", Main.game.getDefaultDialogue(false)) {
+					return new Response("Продолжить", "Теперь, когда Enforcer ушли, ты можешь прийти в себя и продолжить свой путь...", Main.game.getDefaultDialogue(false)) {
 						@Override
 						public void effects() {
 							banishEnforcers(false);
@@ -2125,7 +2117,7 @@ public class EnforcerAlleywayDialogue {
 				
 			} else {
 				if (index == 1) {
-					return new Response("Dragged off", "The Enforcers drag you off to the cells...", AFTER_DEFEAT_CELLS);
+					return new Response("Утащили", "Enforcer утаскивают тебя в камеры...", AFTER_DEFEAT_CELLS);
 				}
 			}
 			return null;
@@ -2150,7 +2142,7 @@ public class EnforcerAlleywayDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Wait...", "There's really nothing that you can do except wait in your cell...", AFTER_DEFEAT_CELLS_WAITING);
+				return new Response("Погоди...", "Тебе остается только одно — ждать в своей камере...", AFTER_DEFEAT_CELLS_WAITING);
 			}
 			return null;
 		}
@@ -2174,7 +2166,7 @@ public class EnforcerAlleywayDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Wait...", "There's really nothing that you can do except wait in your cell...", AFTER_DEFEAT_CELLS_WAITING);
+				return new Response("Погоди...", "Тебе остается только одно — ждать в своей камере...", AFTER_DEFEAT_CELLS_WAITING);
 			}
 			return null;
 		}
@@ -2196,7 +2188,7 @@ public class EnforcerAlleywayDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Released", "You're free to continue on your way once again!", PlaceType.DOMINION_ENFORCER_HQ.getDialogue(false));
+				return new Response("Освобождение", "Теперь ты снова волен продолжать свой путь!", PlaceType.DOMINION_ENFORCER_HQ.getDialogue(false));
 			}
 			return null;
 		}

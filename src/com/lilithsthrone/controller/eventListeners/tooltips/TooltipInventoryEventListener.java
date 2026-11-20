@@ -150,11 +150,9 @@ public class TooltipInventoryEventListener implements EventListener {
 							+ Util.capitaliseSentence(colour.getName())
 							+" ("
 							+ (dyeClothing.getClothingType().getColourReplacement(colourIndex).getDefaultColours().contains(colour)
-								?"Standard Colour"
-								:"Non-standard Colour")
-							+")"
-						+ "</div>"
-						+ "<div class='picture full' style='position:relative; margin:8px; padding:0; width:calc("+TOOLTIP_WIDTH+"px - 24px); height:calc("+TOOLTIP_WIDTH+"px - 24px);'>"
+								?"Стандартный цвет"
+								:"Нестандартный цвет")
+							+")</div><div class='picture full' style='position:relative; margin:8px; padding:0; width:calc("+TOOLTIP_WIDTH+"px - 24px); height:calc("+TOOLTIP_WIDTH+"px - 24px);'>"
 						+ dyeClothing.getClothingType().getSVGImage(
 								slotEquippedTo,
 								dyeColours,
@@ -168,8 +166,7 @@ public class TooltipInventoryEventListener implements EventListener {
 				dyeColours.remove(colourIndex);
 				dyeColours.add(colourIndex, patternColour);
 				tooltipSB.append("<div class='title' style='color:" + subtitleColour.toWebHexString() + ";'>" + Util.capitaliseSentence(dyeClothing.getName()) + "</div>"
-						+ "<div class='subTitle'>" + Util.capitaliseSentence(Pattern.getPattern(isInventoryDialogue?InventoryDialogue.dyePreviewPattern:LilayaDressingRoomDialogue.getClothingSelected().getPattern()).getNiceName()) + "</div>"
-						+ "<div class='picture full' style='position:relative; margin:8px; padding:0; width:calc("+TOOLTIP_WIDTH+"px - 24px); height:calc("+TOOLTIP_WIDTH+"px - 24px);'>"
+						+ "<div class='subTitle'>" + Util.capitaliseSentence(Pattern.getPattern(isInventoryDialogue?InventoryDialogue.dyePreviewPattern:LilayaDressingRoomDialogue.getClothingSelected().getPattern()).getNiceName()) + "</div><div class='picture full' style='position:relative; margin:8px; padding:0; width:calc("+TOOLTIP_WIDTH+"px - 24px); height:calc("+TOOLTIP_WIDTH+"px - 24px);'>"
 						+ dyeClothing.getClothingType().getSVGImage(
 								slotEquippedTo,
 								isInventoryDialogue?InventoryDialogue.dyePreviews:LilayaDressingRoomDialogue.getClothingSelected().getColours(),
@@ -198,17 +195,14 @@ public class TooltipInventoryEventListener implements EventListener {
 							+ Util.capitaliseSentence(colour.getName()) 
 							+" ("
 							+ (dyeWeapon.getWeaponType().getColourReplacement(true, colourIndex).getDefaultColours().contains(colour)
-								?"Standard Colour"
-								:"Non-standard Colour")
-							+")"
-						+ "</div>"
-						+ "<div class='picture full' style='position:relative; margin:8px; padding:0; width:calc("+TOOLTIP_WIDTH+"px - 24px); height:calc("+TOOLTIP_WIDTH+"px - 24px);'>"
+								?"Стандартный цвет"
+								:"Нестандартный цвет")
+							+")</div><div class='picture full' style='position:relative; margin:8px; padding:0; width:calc("+TOOLTIP_WIDTH+"px - 24px); height:calc("+TOOLTIP_WIDTH+"px - 24px);'>"
 							+ dyeWeapon.getWeaponType().getSVGImage(dyeWeapon.getDamageType(), dyeColours)
 						+ "</div>");
 			
 			} else if(damageType!=null) {
-				tooltipSB.append("<div class='subTitle'>" + Util.capitaliseSentence(damageType.getName()) + "</div>"
-						+ "<div class='picture full' style='position:relative; margin:8px; padding:0; width:calc("+TOOLTIP_WIDTH+"px - 24px); height:calc("+TOOLTIP_WIDTH+"px - 24px);'>"
+				tooltipSB.append("<div class='subTitle'>" + Util.capitaliseSentence(damageType.getName()) + "</div><div class='picture full' style='position:relative; margin:8px; padding:0; width:calc("+TOOLTIP_WIDTH+"px - 24px); height:calc("+TOOLTIP_WIDTH+"px - 24px);'>"
 							+ dyeWeapon.getWeaponType().getSVGImage(damageType, isInventoryDialogue?InventoryDialogue.dyePreviews:LilayaDressingRoomDialogue.getWeaponSelected().getColours())
 						+ "</div>");
 			}
@@ -230,7 +224,7 @@ public class TooltipInventoryEventListener implements EventListener {
 					genericTattoo,
 					false,
 					new TattooWriting(
-							"The quick brown fox jumps over the lazy dog.",
+							"Шустрая бурая лисица прыгает через ленивую собаку.",
 							genericTattoo.getAvailablePrimaryColours().get(0),
 							false),
 					new TattooCounter(
@@ -248,14 +242,14 @@ public class TooltipInventoryEventListener implements EventListener {
 				if (equippedToCharacter != null) {
 					
 					if (equippedToCharacter.getMainWeapon(0) == null) {
-						setUnarmedWeaponSlotTooltip(InventorySlot.WEAPON_MAIN_1, "Primary Weapon");
+						setUnarmedWeaponSlotTooltip(InventorySlot.WEAPON_MAIN_1, "Основное оружие");
 						
 					} else {
 						weaponTooltip(equippedToCharacter.getMainWeapon(0));
 					}
 				} else {
 					Main.mainController.setTooltipSize(TOOLTIP_WIDTH, 60);
-					Main.mainController.setTooltipContent("<div class='title'>Primary Weapon</div>");
+					Main.mainController.setTooltipContent("<div class='title'>Основное оружие</div>");
 				}
 
 			} else if (invSlot == InventorySlot.WEAPON_MAIN_2) {
@@ -263,10 +257,10 @@ public class TooltipInventoryEventListener implements EventListener {
 					if (equippedToCharacter.getMainWeapon(1) == null) {
 						if(equippedToCharacter.getArmRows()<2) {
 							setBlockedTooltipContent(getTooltipText(equippedToCharacter,
-									"You do not have a second pair of arms with which to hold another primary weapon!",
-									"[npc.Name] [npc.does] not have a second pair of arms with which to hold another primary weapon!"));
+									"У вас нет второй пары рук, чтобы держать еще одно основное оружие!",
+									"[npc.Name] [npc.does] не хватает второй пары рук, чтобы держать еще одно основное оружие!"));
 						} else {
-							setUnarmedWeaponSlotTooltip(InventorySlot.WEAPON_MAIN_2, "Primary Weapon (2nd)");
+							setUnarmedWeaponSlotTooltip(InventorySlot.WEAPON_MAIN_2, "Основное оружие (2-е)");
 						}
 						
 					} else {
@@ -274,7 +268,7 @@ public class TooltipInventoryEventListener implements EventListener {
 					}
 				} else {
 					Main.mainController.setTooltipSize(TOOLTIP_WIDTH, 60);
-					Main.mainController.setTooltipContent("<div class='title'>Primary Weapon (2nd)</div>");
+					Main.mainController.setTooltipContent("<div class='title'>Основное оружие (2-е)</div>");
 				}
 
 			} else if (invSlot == InventorySlot.WEAPON_MAIN_3) {
@@ -282,10 +276,10 @@ public class TooltipInventoryEventListener implements EventListener {
 					if (equippedToCharacter.getMainWeapon(2) == null) {
 						if(equippedToCharacter.getArmRows()<3) {
 							setBlockedTooltipContent(getTooltipText(equippedToCharacter,
-									"You do not have a third pair of arms with which to hold another primary weapon!",
-									"[npc.Name] [npc.does] not have a third pair of arms with which to hold another primary weapon!"));
+									"У вас нет третьей пары рук, чтобы держать еще одно основное оружие!",
+									"[npc.Name] [npc.does] не хватает третьей пары рук, чтобы держать еще одно основное оружие!"));
 						} else {
-							setUnarmedWeaponSlotTooltip(InventorySlot.WEAPON_MAIN_3, "Primary Weapon (3rd)");
+							setUnarmedWeaponSlotTooltip(InventorySlot.WEAPON_MAIN_3, "Основное оружие (3-е)");
 						}
 						
 					} else {
@@ -293,7 +287,7 @@ public class TooltipInventoryEventListener implements EventListener {
 					}
 				} else {
 					Main.mainController.setTooltipSize(TOOLTIP_WIDTH, 60);
-					Main.mainController.setTooltipContent("<div class='title'>Primary Weapon (3rd)</div>");
+					Main.mainController.setTooltipContent("<div class='title'>Основное оружие (3-е)</div>");
 				}
 
 			} else if (invSlot == InventorySlot.WEAPON_OFFHAND_1) {
@@ -303,14 +297,14 @@ public class TooltipInventoryEventListener implements EventListener {
 						if(primary!=null && primary.getWeaponType().isTwoHanded()) {
 							setBlockedTooltipContent(getTooltipText(equippedToCharacter,
 									primary.getWeaponType().isPlural()
-										?"As your "+primary.getName()+" require two hands to wield correctly, you are unable to equip a weapon in your off-hand."
-										:"As your "+primary.getName()+" requires two hands to wield correctly, you are unable to equip a weapon in your off-hand",
+										?"Так как ваше "+primary.getName()+" требует двух рук для правильного использования, вы не можете экипировать оружие в левую руку."
+										:"Так как ваше "+primary.getName()+" требует обеих рук для правильного использования, вы не можете экипировать оружие во вторую руку",
 									primary.getWeaponType().isPlural()
-										?"As [npc.namePos] "+primary.getName()+" require two hands to wield correctly, [npc.sheIsFull] unable to equip a weapon in [npc.her] off-hand."
-										:"As [npc.namePos] "+primary.getName()+" requires two hands to wield correctly, [npc.sheIsFull] unable to equip a weapon in [npc.her] off-hand"));
+										?"Как [npc.namePos] "+primary.getName()+" требуют обеих рук для правильного использования, [npc.sheIsFull] не может экипировать оружие в [npc.her] вторую руку."
+										:"Как [npc.namePos] "+primary.getName()+" требует обеих рук для правильного использования, [npc.sheIsFull] не может экипировать оружие в [npc.her] вторую руку"));
 							
 						} else {
-							setUnarmedWeaponSlotTooltip(InventorySlot.WEAPON_OFFHAND_1, "Secondary Weapon");
+							setUnarmedWeaponSlotTooltip(InventorySlot.WEAPON_OFFHAND_1, "Вторичное оружие");
 						}
 
 					} else {
@@ -319,7 +313,7 @@ public class TooltipInventoryEventListener implements EventListener {
 					
 				} else {
 					Main.mainController.setTooltipSize(TOOLTIP_WIDTH, 60);
-					Main.mainController.setTooltipContent("<div class='title'>Secondary Weapon</div>");
+					Main.mainController.setTooltipContent("<div class='title'>Вторичное оружие</div>");
 				}
 
 			} else if (invSlot == InventorySlot.WEAPON_OFFHAND_2) {
@@ -329,18 +323,18 @@ public class TooltipInventoryEventListener implements EventListener {
 						if(primary!=null && primary.getWeaponType().isTwoHanded()) {
 							setBlockedTooltipContent(getTooltipText(equippedToCharacter,
 									primary.getWeaponType().isPlural()
-										?"As your "+primary.getName()+" require two hands to wield correctly, you are unable to equip a weapon in your off-hand."
-										:"As your "+primary.getName()+" requires two hands to wield correctly, you are unable to equip a weapon in your off-hand",
+										?"Так как ваше "+primary.getName()+" требует двух рук для правильного использования, вы не можете экипировать оружие в левую руку."
+										:"Так как ваше "+primary.getName()+" требует обеих рук для правильного использования, вы не можете экипировать оружие во вторую руку",
 									primary.getWeaponType().isPlural()
-										?"As [npc.namePos] "+primary.getName()+" require two hands to wield correctly, [npc.sheIsFull] unable to equip a weapon in [npc.her] off-hand."
-										:"As [npc.namePos] "+primary.getName()+" requires two hands to wield correctly, [npc.sheIsFull] unable to equip a weapon in [npc.her] off-hand"));
+										?"Как [npc.namePos] "+primary.getName()+" требуют обеих рук для правильного использования, [npc.sheIsFull] не может экипировать оружие в [npc.her] вторую руку."
+										:"Как [npc.namePos] "+primary.getName()+" требует обеих рук для правильного использования, [npc.sheIsFull] не может экипировать оружие в [npc.her] вторую руку"));
 							
 						} else if(equippedToCharacter.getArmRows()<2) {
 							setBlockedTooltipContent(getTooltipText(equippedToCharacter,
-									"You do not have a second pair of arms with which to hold another secondary weapon!",
-									"[npc.Name] [npc.does] not have a second pair of arms with which to hold another secondary weapon!"));
+									"У вас нет второй пары рук, чтобы держать еще одно дополнительное оружие!",
+									"[npc.Name] [npc.does] не хватает второй пары рук, чтобы держать еще одно дополнительное оружие!"));
 						} else {
-							setUnarmedWeaponSlotTooltip(InventorySlot.WEAPON_OFFHAND_2, "Secondary Weapon (2nd)");
+							setUnarmedWeaponSlotTooltip(InventorySlot.WEAPON_OFFHAND_2, "Дополнительное оружие (2-е)");
 						}
 						
 					} else {
@@ -348,7 +342,7 @@ public class TooltipInventoryEventListener implements EventListener {
 					}
 				} else {
 					Main.mainController.setTooltipSize(TOOLTIP_WIDTH, 60);
-					Main.mainController.setTooltipContent("<div class='title'>Secondary Weapon (2nd)</div>");
+					Main.mainController.setTooltipContent("<div class='title'>Дополнительное оружие (2-е)</div>");
 				}
 
 			} else if (invSlot == InventorySlot.WEAPON_OFFHAND_3) {
@@ -358,25 +352,25 @@ public class TooltipInventoryEventListener implements EventListener {
 						if(primary!=null && primary.getWeaponType().isTwoHanded()) {
 							setBlockedTooltipContent(getTooltipText(equippedToCharacter,
 									primary.getWeaponType().isPlural()
-										?"As your "+primary.getName()+" require two hands to wield correctly, you are unable to equip a weapon in your off-hand."
-										:"As your "+primary.getName()+" requires two hands to wield correctly, you are unable to equip a weapon in your off-hand",
+										?"Так как ваше "+primary.getName()+" требует двух рук для правильного использования, вы не можете экипировать оружие в левую руку."
+										:"Так как ваше "+primary.getName()+" требует обеих рук для правильного использования, вы не можете экипировать оружие во вторую руку",
 									primary.getWeaponType().isPlural()
-										?"As [npc.namePos] "+primary.getName()+" require two hands to wield correctly, [npc.sheIsFull] unable to equip a weapon in [npc.her] off-hand."
-										:"As [npc.namePos] "+primary.getName()+" requires two hands to wield correctly, [npc.sheIsFull] unable to equip a weapon in [npc.her] off-hand"));
+										?"Как [npc.namePos] "+primary.getName()+" требуют обеих рук для правильного использования, [npc.sheIsFull] не может экипировать оружие в [npc.her] вторую руку."
+										:"Как [npc.namePos] "+primary.getName()+" требует обеих рук для правильного использования, [npc.sheIsFull] не может экипировать оружие в [npc.her] вторую руку"));
 							
 						} else if(equippedToCharacter.getArmRows()<3) {
 							setBlockedTooltipContent(getTooltipText(equippedToCharacter,
-									"You do not have a third pair of arms with which to hold another secondary weapon!",
-									"[npc.Name] [npc.does] not have a third pair of arms with which to hold another secondary weapon!"));
+									"У вас нет третьей пары рук, чтобы держать еще одно дополнительное оружие!",
+									"[npc.Name] [npc.does] не хватает третьей пары рук, чтобы держать еще одно дополнительное оружие!"));
 						} else {
-							setUnarmedWeaponSlotTooltip(InventorySlot.WEAPON_OFFHAND_3, "Secondary Weapon (3rd)");
+							setUnarmedWeaponSlotTooltip(InventorySlot.WEAPON_OFFHAND_3, "Дополнительное оружие (3-е)");
 						}
 					} else {
 						weaponTooltip(equippedToCharacter.getOffhandWeapon(2));
 					}
 				} else {
 					Main.mainController.setTooltipSize(TOOLTIP_WIDTH, 60);
-					Main.mainController.setTooltipContent("<div class='title'>Secondary Weapon (3rd)</div>");
+					Main.mainController.setTooltipContent("<div class='title'>Дополнительное оружие (3-е)</div>");
 				}
 
 			} else {
@@ -401,11 +395,11 @@ public class TooltipInventoryEventListener implements EventListener {
 						BodyPartClothingBlock block = invSlot.getBodyPartClothingBlock(equippedToCharacter);
 						
 						if (!renderingTattoos && !clothingBlockingThisSlot.isEmpty()) {
-							setBlockedTooltipContent(UtilText.parse(equippedToCharacter, "This slot is currently <b style='color:" + PresetColour.SEALED.toWebHexString() + ";'>blocked</b> by [npc.namePos] ")
+							setBlockedTooltipContent(UtilText.parse(equippedToCharacter, "Этот слот сейчас <b style='color:" + PresetColour.SEALED.toWebHexString() + ";'>заблокирован</b> игроком [npc.namePos] ")
 									+ Util.stringsToStringList(clothingBlockingThisSlot, false) + ".");
 							
 						} else if (!renderingTattoos && block != null) {
-							setBlockedTooltipContent("<span style='color:" + PresetColour.GENERIC_BAD.toWebHexString() + ";'>Blocked!</span>", UtilText.parse(equippedToCharacter, block.getDescription()));
+							setBlockedTooltipContent("<span style='color:" + PresetColour.GENERIC_BAD.toWebHexString() + ";'>Заблокировано!</span>", UtilText.parse(equippedToCharacter, block.getDescription()));
 							
 						} else {
 							boolean piercingBlocked=false;
@@ -415,18 +409,18 @@ public class TooltipInventoryEventListener implements EventListener {
 								case PIERCING_VAGINA:
 									if(equippedToCharacter.getVaginaType()==VaginaType.NONE) {
 										setBlockedTooltipContent(getTooltipText(equippedToCharacter,
-													"You don't have a vagina.",
+													"У тебя нет влагалища.",
 													(equippedToCharacter.isAreaKnownByCharacter(CoverableArea.VAGINA, Main.game.getPlayer())
-														?"[npc.Name] doesn't have a vagina."
-														:"You don't know if [npc.name] has a vagina.")));
+														?"У [npc.Name] нет влагалища."
+														:"Ты не знаешь, есть ли у [npc.name] влагалище.")));
 										piercingBlocked=true;
 										
 									} else if(!bypassesPiercing && !equippedToCharacter.isPiercedVagina()) {
 										setBlockedTooltipContent(getTooltipText(equippedToCharacter,
-												"Your vagina has not been pierced.",
+												"Твое влагалище не проколото.",
 												(equippedToCharacter.isAreaKnownByCharacter(CoverableArea.VAGINA, Main.game.getPlayer())
-														?"[npc.NamePos] vagina has not been pierced."
-														:"You don't know if [npc.name] has a vagina.")));
+														?"Влагалище [npc.NamePos] не проколото."
+														:"Ты не знаешь, есть ли у [npc.name] влагалище.")));
 										piercingBlocked=true;
 									}
 									break;
@@ -435,8 +429,8 @@ public class TooltipInventoryEventListener implements EventListener {
 									if(!bypassesPiercing) {
 										if(!equippedToCharacter.isPiercedEar()) {
 											setBlockedTooltipContent(getTooltipText(equippedToCharacter,
-													"Your ears have not been pierced.",
-													"[npc.NamePos] ears have not been pierced."));
+													"Твои уши не проколоты.",
+													"Уши [npc.NamePos] не проколоты."));
 											piercingBlocked=true;
 										}
 									}
@@ -446,8 +440,8 @@ public class TooltipInventoryEventListener implements EventListener {
 									if(!bypassesPiercing) {
 										if(!equippedToCharacter.isPiercedLip()) {
 											setBlockedTooltipContent(getTooltipText(equippedToCharacter,
-													"Your lips have not been pierced.",
-													"[npc.NamePos] lips have not been pierced."));
+													"Твои губы не проколоты.",
+													"Губы [npc.NamePos] не проколоты."));
 											piercingBlocked=true;
 										}
 									}
@@ -457,10 +451,10 @@ public class TooltipInventoryEventListener implements EventListener {
 									if(!bypassesPiercing) {
 										if(!equippedToCharacter.isPiercedNipple()) {
 											setBlockedTooltipContent(getTooltipText(equippedToCharacter,
-													"Your nipples have not been pierced.",
+													"Ваши соски не проколоты.",
 													(equippedToCharacter.isAreaKnownByCharacter(CoverableArea.NIPPLES, Main.game.getPlayer())
-															?"[npc.NamePos] nipples have not been pierced."
-															:"You don't know if [npc.namePos] nipples have been pierced.")));
+															?"Соски [npc.NamePos] не проколоты."
+															:"Вы не знаете, проколоты ли соски у [npc.namePos].")));
 											piercingBlocked=true;
 										}
 									}
@@ -470,8 +464,8 @@ public class TooltipInventoryEventListener implements EventListener {
 									if(!bypassesPiercing) {
 										if(!equippedToCharacter.isPiercedNose()) {
 											setBlockedTooltipContent(getTooltipText(equippedToCharacter,
-													"Your nose has not been pierced.",
-													"[npc.NamePos] nose has not been pierced."));
+													"Ваш нос не проколот.",
+													"Нос [npc.NamePos] не проколот."));
 											piercingBlocked=true;
 										}
 									}
@@ -480,18 +474,18 @@ public class TooltipInventoryEventListener implements EventListener {
 								case PIERCING_PENIS:
 									if(equippedToCharacter.getPenisType()==PenisType.NONE) {
 										setBlockedTooltipContent(getTooltipText(equippedToCharacter,
-												"You don't have a penis.",
+												"У вас нет пениса.",
 												(equippedToCharacter.isAreaKnownByCharacter(CoverableArea.PENIS, Main.game.getPlayer())
-														?"[npc.Name] doesn't have a penis."
-														:"You don't know if [npc.name] has a penis.")));
+														?"У [npc.Name] нет пениса."
+														:"Вы не знаете, есть ли у [npc.name] пенис.")));
 										piercingBlocked=true;
 										
 									} else if(!bypassesPiercing && !equippedToCharacter.isPiercedPenis()) {
 										setBlockedTooltipContent(getTooltipText(equippedToCharacter,
-												"Your penis has not been pierced.",
+												"Ваш пенис не проколот.",
 												(equippedToCharacter.isAreaKnownByCharacter(CoverableArea.PENIS, Main.game.getPlayer())
-														?"[npc.NamePos] penis has not been pierced."
-														:"You don't know if [npc.name] has a penis.")));
+														?"[npc.NamePos] еще не проколол член."
+														:"Вы не знаете, есть ли у [npc.name] пенис.")));
 										piercingBlocked=true;
 									}
 									break;
@@ -500,8 +494,8 @@ public class TooltipInventoryEventListener implements EventListener {
 									if(!bypassesPiercing) {
 										if(!equippedToCharacter.isPiercedNavel()) {
 											setBlockedTooltipContent(getTooltipText(equippedToCharacter,
-													"Your navel has not been pierced.",
-													"[npc.NamePos] navel has not been pierced."));
+													"Ваш пупок еще не проколот.",
+													"Пупок [npc.NamePos] еще не проколот."));
 											piercingBlocked=true;
 										}
 									}
@@ -511,8 +505,8 @@ public class TooltipInventoryEventListener implements EventListener {
 									if(!bypassesPiercing) {
 										if(!equippedToCharacter.isPiercedTongue()) {
 											setBlockedTooltipContent(getTooltipText(equippedToCharacter,
-													"Your tongue has not been pierced.",
-													"[npc.NamePos] tongue has not been pierced."));
+													"Ваш язык еще не проколот.",
+													"Язык [npc.NamePos] еще не проколот."));
 											piercingBlocked=true;
 										}
 									}
@@ -521,8 +515,8 @@ public class TooltipInventoryEventListener implements EventListener {
 								case HORNS:
 									if(equippedToCharacter.getHornType().equals(HornType.NONE)) {
 										setBlockedTooltipContent(getTooltipText(equippedToCharacter,
-												"You don't have any horns.",
-												"[npc.Name] doesn't have any horns."));
+												"У вас нет рогов.",
+												"У [npc.Name] нет рогов."));
 										piercingBlocked=true;
 									}
 									break;
@@ -530,8 +524,8 @@ public class TooltipInventoryEventListener implements EventListener {
 								case PENIS:
 									if(!equippedToCharacter.hasPenisIgnoreDildo()) {
 										setBlockedTooltipContent(getTooltipText(equippedToCharacter,
-												"You don't have a penis.",
-												"[npc.Name] doesn't have a penis."));
+												"У вас нет пениса.",
+												"У [npc.Name] нет пениса."));
 										piercingBlocked=true;
 									}
 									break;
@@ -539,8 +533,8 @@ public class TooltipInventoryEventListener implements EventListener {
 								case TAIL:
 									if(equippedToCharacter.getTailType()==TailType.NONE) {
 										setBlockedTooltipContent(getTooltipText(equippedToCharacter,
-												"You don't have a tail.",
-												"[npc.Name] doesn't have a tail."));
+												"У вас нет хвоста.",
+												"У [npc.Name] нет хвоста."));
 										piercingBlocked=true;
 									}
 									break;
@@ -548,8 +542,8 @@ public class TooltipInventoryEventListener implements EventListener {
 								case VAGINA:
 									if(!equippedToCharacter.hasVagina()) {
 										setBlockedTooltipContent(getTooltipText(equippedToCharacter,
-												"You don't have a vagina.",
-												"[npc.Name] doesn't have a vagina."));
+												"У тебя нет влагалища.",
+												"У [npc.Name] нет влагалища."));
 										piercingBlocked=true;
 									}
 									break;
@@ -557,8 +551,8 @@ public class TooltipInventoryEventListener implements EventListener {
 								case WINGS:
 									if(equippedToCharacter.getWingType()==WingType.NONE) {
 										setBlockedTooltipContent(getTooltipText(equippedToCharacter,
-												"You don't have any wings.",
-												"[npc.Name] doesn't have any wings."));
+												"У вас нет крыльев.",
+												"У [npc.Name] нет крыльев."));
 										piercingBlocked=true;
 									}
 									break;
@@ -601,8 +595,8 @@ public class TooltipInventoryEventListener implements EventListener {
 					+ "</div>"
 					+ "<div class='subTitle'>"
 					+(EnchantmentDialogue.getIngredient() instanceof Tattoo
-							? UtilText.formatAsMoney(enchantmentModifier.getValue()*EnchantingUtils.FLAME_COST_MODIFER, "b")+" cost"
-							: UtilText.formatAsEssences(enchantmentModifier.getValue(), "b", false)+" essence cost")
+							? UtilText.formatAsMoney(enchantmentModifier.getValue()*EnchantingUtils.FLAME_COST_MODIFER, "b")+" стоимость"
+							: UtilText.formatAsEssences(enchantmentModifier.getValue(), "b", false)+" стоимость эссенции")
 					+ "</div>"));
 		
 		} else if(potency!=null) {
@@ -619,7 +613,7 @@ public class TooltipInventoryEventListener implements EventListener {
 
 
 	private void setBlockedTooltipContent(String description){
-		setBlockedTooltipContent("<span style='color:" + PresetColour.GENERIC_BAD.toWebHexString() + ";'>Blocked!</span>", description);
+		setBlockedTooltipContent("<span style='color:" + PresetColour.GENERIC_BAD.toWebHexString() + ";'>Заблокировано!</span>", description);
 	}
 	private void setBlockedTooltipContent(String title, String description){
 		setEmptyInventorySlotTooltipContent(title, description);
@@ -686,19 +680,19 @@ public class TooltipInventoryEventListener implements EventListener {
 			}
 			
 			if(dirty) {
-				sb.append("[npc.NamePos] "+invSlot.getName()+" "+(invSlot.isPlural(equippedToCharacter)?"have":"has")
-						+ " been [style.colourDirty(dirtied)]!");
+				sb.append("[npc.NamePos] "+invSlot.getName()+" "+(invSlot.isPlural(equippedToCharacter)?"имеют":"имеет")
+						+ " были [style.colourDirty(испачканы)]!");
 				if(Main.game.isInSex()) {
 					sb.append("<br/>");
 				}
 				if(!cummedOnInfo.isEmpty()) {
-					sb.append("[style.boldDirty(Sexual fluids present:)]");
+					sb.append("[style.boldDirty(Присутствуют сексуальные жидкости:)]");
 					for(Entry<GameCharacter, Integer> entry : cummedOnInfo.entrySet()) {
 						sb.append("<br/>");
 						sb.append(UtilText.parse(entry.getKey(), "[style.fluid("+entry.getValue()+")] of <span style='color:"+entry.getKey().getFemininity().getColour().toWebHexString()+";'>[npc.namePos]</span> [npc.cum+]!"));
 					}
 				} else if(Main.game.isInSex()) {
-					sb.append("[style.italicsDisabled(No fluid is available...)]");
+					sb.append("[style.italicsDisabled(Жидкостей нет...)]");
 				}
 			}
 			
@@ -876,13 +870,13 @@ public class TooltipInventoryEventListener implements EventListener {
 		// Use number info (full-width title):
 		tooltipSB.append("<div class='container-full-width titular' style='margin-bottom:2px;'>"
 				+ (absItem.isConsumedOnUse()
-						? "<span style='color:" + PresetColour.GENERIC_BAD.toWebHexString() + ";'>Consumed on use</span>"
-						: "<span style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>Infinite uses</span>")
+						? "<span style='color:" + PresetColour.GENERIC_BAD.toWebHexString() + ";'>Расходный предмет</span>"
+						: "<span style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>Бесконечное использование</span>")
 				+ "</div>"
 					);
 
 		// Value:
-		String valueDivClass = Main.game.isEnchantmentCapacityEnabled()?"container-half-width titular":"container-full-width titular";
+		String valueDivClass = Main.game.isEnchantmentCapacityEnabled()?"контейнер-половина-ширины титул":"контейнер-на-всю-ширину титульный";
 		String valueStyle = "style='margin:2px 2px 2px 8px; width:calc(50% - 10px);'";
 		if (InventoryDialogue.getInventoryNPC() != null && InventoryDialogue.getNPCInventoryInteraction() == InventoryInteraction.TRADING) {
 			if (owner.isPlayer()) {
@@ -890,8 +884,7 @@ public class TooltipInventoryEventListener implements EventListener {
 					int buyModifierPercentage = (int)(InventoryDialogue.getInventoryNPC().getBuyModifier()*100);
 					Colour buyColour = buyModifierPercentage<=50?PresetColour.GENERIC_BAD:(buyModifierPercentage<100?PresetColour.GENERIC_MINOR_BAD:PresetColour.GENERIC_MINOR_GOOD);
 					
-					tooltipSB.append("<div class='"+valueDivClass+"' "+valueStyle+">"
-										+ "Sell price: "+UtilText.formatAsMoney(absItem.getPrice(InventoryDialogue.getInventoryNPC().getBuyModifier()))
+					tooltipSB.append("<div class='"+valueDivClass+"' "+valueStyle+">Цена продажи: "+UtilText.formatAsMoney(absItem.getPrice(InventoryDialogue.getInventoryNPC().getBuyModifier()))
 										+ " (<span style='color:"+buyColour.toWebHexString()+";'>"+buyModifierPercentage+"%</span>)"
 									+ "</div>");
 				} else {
@@ -901,15 +894,13 @@ public class TooltipInventoryEventListener implements EventListener {
 				}
 			} else {
 				if (InventoryDialogue.isBuyback()) {
-					tooltipSB.append("<div class='"+valueDivClass+"' "+valueStyle+">"
-											+ "Buy-back price: "+UtilText.formatAsMoney(getBuybackPriceFor(absItem))
+					tooltipSB.append("<div class='"+valueDivClass+"' "+valueStyle+">Цена выкупа: "+UtilText.formatAsMoney(getBuybackPriceFor(absItem))
 									+ "</div>");
 				} else {
 					int sellModifierPercentage = (int)(InventoryDialogue.getInventoryNPC().getSellModifier(absItem)*100);
 					Colour sellColour = sellModifierPercentage>=200?PresetColour.GENERIC_BAD:(sellModifierPercentage>100?PresetColour.GENERIC_MINOR_BAD:PresetColour.GENERIC_MINOR_GOOD);
 					
-					tooltipSB.append("<div class='"+valueDivClass+"' "+valueStyle+">"
-											+ "Buy price: "+UtilText.formatAsMoney(absItem.getPrice(InventoryDialogue.getInventoryNPC().getSellModifier(absItem)))
+					tooltipSB.append("<div class='"+valueDivClass+"' "+valueStyle+">Цена покупки: "+UtilText.formatAsMoney(absItem.getPrice(InventoryDialogue.getInventoryNPC().getSellModifier(absItem)))
 											+ " (<span style='color:"+sellColour.toWebHexString()+";'>"+sellModifierPercentage+"%</span>)"
 									+ "</div>");
 				}
@@ -1016,7 +1007,7 @@ public class TooltipInventoryEventListener implements EventListener {
 		if(!author.isEmpty()) {
 			int authorDivHeight = 48;
 			specialYIncrease += 48 + 8;
-			tooltipSB.append("<div class='description' style='margin:4px 8px; min-height:"+authorDivHeight+"px; max-height:"+authorDivHeight+"px;'>" + author + "</div>");
+			tooltipSB.append("<div class='description' style='margin:4px 8px; min-height:"+authorDivHeight+"px; макс.-высота:"+authorDivHeight+"px;'>" + author + "</div>");
 		}
 		
 		tooltipSB.append("</body>");
@@ -1040,8 +1031,8 @@ public class TooltipInventoryEventListener implements EventListener {
 
 		// Ranged/melee box (half-width title):
 		tooltipSB.append("<div class='container-half-width titular' style='margin:2px 2px 2px 8px; width:calc(50% - 10px);'>"
-								+ (absWeapon.getWeaponType().isTwoHanded()? "Two-handed" : "One-handed")
-								+ (absWeapon.getWeaponType().isOneShot()?" [style.colourYellow(One-shot)]":"")
+								+ (absWeapon.getWeaponType().isTwoHanded()? "Двуручное" : "Одноручное")
+								+ (absWeapon.getWeaponType().isOneShot()?" [style.colourYellow(Одноразовый)]":"")
 						+ "</div>");
 
 		// Rarity box (half-width title):
@@ -1054,22 +1045,21 @@ public class TooltipInventoryEventListener implements EventListener {
 		// Damage type box (half-width title):
 		tooltipSB.append("<div class='container-half-width titular' style='margin:2px 2px 2px 8px; width:calc(50% - 10px); color:"+absWeapon.getDamageType().getMultiplierAttribute().getColour().toWebHexString()+";'>"
 					+ (absWeapon.getWeaponType().isUsingUnarmedCalculation()
-							?"[style.colourUnarmed(Unarmed)]"
+							?"[style.colourUnarmed(Без оружия)]"
 									:(absWeapon.getWeaponType().isMelee()
-										?"[style.colourMelee(Melee)]"
-										:"[style.colourRanged(Ranged)]"))
-					+ " "+ Util.capitaliseSentence(absWeapon.getDamageType().getName()) + " damage"
-				+ "</div>");
+										?"[style.colourMelee(Ближний бой)]"
+										:"[style.colourRanged(Дальний бой)]"))
+					+ " "+ Util.capitaliseSentence(absWeapon.getDamageType().getName()) + " урон</div>");
 		
 		// Set box (half-width title):
 		tooltipSB.append("<div class='container-half-width titular' style='margin:2px 8px 2px 2px; width:calc(50% - 10px);'>"
 							+ (absWeapon.getWeaponType().getClothingSet() == null
-								? "<span style='color:" + PresetColour.TEXT_GREY.toWebHexString() + ";'>Not part of a set</span>"
-								: "<span style='color:" + PresetColour.RARITY_EPIC.toWebHexString() + ";'>"+absWeapon.getWeaponType().getClothingSet().getName() + " set</span>")
+								? "<span style='color:" + PresetColour.TEXT_GREY.toWebHexString() + ";'>Не часть набора</span>"
+								: "<span style='color:" + PresetColour.RARITY_EPIC.toWebHexString() + ";'>"+absWeapon.getWeaponType().getClothingSet().getName() + " набор</span>")
 						+ "</div>");
 		
 		// Value:
-		String valueDivClass = Main.game.isEnchantmentCapacityEnabled()?"container-half-width titular":"container-full-width titular";
+		String valueDivClass = Main.game.isEnchantmentCapacityEnabled()?"контейнер-половина-ширины титул":"контейнер-на-всю-ширину титульный";
 		String valueStyle = Main.game.isEnchantmentCapacityEnabled()
 				?"style='margin:2px 2px 2px 8px; width:calc(50% - 10px);'"
 				:"";
@@ -1079,8 +1069,7 @@ public class TooltipInventoryEventListener implements EventListener {
 					int buyModifierPercentage = (int)(InventoryDialogue.getInventoryNPC().getBuyModifier()*100);
 					Colour buyColour = buyModifierPercentage<=50?PresetColour.GENERIC_BAD:(buyModifierPercentage<100?PresetColour.GENERIC_MINOR_BAD:PresetColour.GENERIC_MINOR_GOOD);
 					
-					tooltipSB.append("<div class='"+valueDivClass+"' "+valueStyle+">"
-										+ "Sell price: "+UtilText.formatAsMoney(absWeapon.getPrice(InventoryDialogue.getInventoryNPC().getBuyModifier()))
+					tooltipSB.append("<div class='"+valueDivClass+"' "+valueStyle+">Цена продажи: "+UtilText.formatAsMoney(absWeapon.getPrice(InventoryDialogue.getInventoryNPC().getBuyModifier()))
 										+ " (<span style='color:"+buyColour.toWebHexString()+";'>"+buyModifierPercentage+"%</span>)"
 									+ "</div>");
 				} else {
@@ -1090,15 +1079,13 @@ public class TooltipInventoryEventListener implements EventListener {
 				}
 			} else {
 				if (InventoryDialogue.isBuyback() && !owner.hasWeaponEquipped(absWeapon)) {
-					tooltipSB.append("<div class='"+valueDivClass+"' "+valueStyle+">"
-											+ "Buy-back price: "+UtilText.formatAsMoney(getBuybackPriceFor(absWeapon))
+					tooltipSB.append("<div class='"+valueDivClass+"' "+valueStyle+">Цена выкупа: "+UtilText.formatAsMoney(getBuybackPriceFor(absWeapon))
 									+ "</div>");
 				} else {
 					int sellModifierPercentage = (int)(InventoryDialogue.getInventoryNPC().getSellModifier(absWeapon)*100);
 					Colour sellColour = sellModifierPercentage>=200?PresetColour.GENERIC_BAD:(sellModifierPercentage>100?PresetColour.GENERIC_MINOR_BAD:PresetColour.GENERIC_MINOR_GOOD);
 					
-					tooltipSB.append("<div class='"+valueDivClass+"' "+valueStyle+">"
-											+ "Buy price: "+UtilText.formatAsMoney(absWeapon.getPrice(InventoryDialogue.getInventoryNPC().getSellModifier(absWeapon)))
+					tooltipSB.append("<div class='"+valueDivClass+"' "+valueStyle+">Цена покупки: "+UtilText.formatAsMoney(absWeapon.getPrice(InventoryDialogue.getInventoryNPC().getSellModifier(absWeapon)))
 											+ " (<span style='color:"+sellColour.toWebHexString()+";'>"+sellModifierPercentage+"%</span>)"
 									+ "</div>");
 				}
@@ -1139,9 +1126,7 @@ public class TooltipInventoryEventListener implements EventListener {
 
 		if(owner!=null && owner.getEssenceCount()<absWeapon.getWeaponType().getArcaneCost()) {
 			yIncrease+=2;
-			tooltipSB.append("<div class='container-full-width titular'>"
-								+ "[style.colourBad(Not enough essences to fire!)]"
-							+ "</div>");
+			tooltipSB.append("<div class='container-full-width titular'>[style.colourBad(Недостаточно эссенции для активации!)]</div>");
 		}
 		
 		
@@ -1150,21 +1135,21 @@ public class TooltipInventoryEventListener implements EventListener {
 		float res = absWeapon.getWeaponType().getPhysicalResistance();
 		if(res>0) {
 			yIncrease++;
-			effectsSB.append("[style.colourGood(+"+res+")] Natural [style.colourResPhysical("+Util.capitaliseSentence(Attribute.RESISTANCE_PHYSICAL.getName())+")]<br/>");
+			effectsSB.append("[style.colourGood(+"+res+")] Естественный [style.colourResPhysical("+Util.capitaliseSentence(Attribute.RESISTANCE_PHYSICAL.getName())+")]<br/>");
 		}
 		int cost = absWeapon.getWeaponType().getArcaneCost();
 		if(cost>0) {
 			yIncrease++;
-			effectsSB.append("Costs [style.boldArcane("+cost+" Arcane essence"+(cost>1?"s":"")+")] "+(absWeapon.getWeaponType().isMelee()?"per attack":"to fire")+"<br/>");
+			effectsSB.append("Стоимость использования: [style.boldArcane("+cost+" Arcane эссенции"+(cost>1?"s":"")+")] "+(absWeapon.getWeaponType().isMelee()?"за атаку":"чтобы выстрелить")+"<br/>");
 		}
 		if(equippedToCharacter != null) {
 			if(absWeapon.getWeaponType().isUsingUnarmedCalculation()) {
 				yIncrease++;
-				effectsSB.append("Includes [style.colourUnarmed("+equippedToCharacter.getUnarmedDamage()+" unarmed damage)]<br/>");
+				effectsSB.append("Включая [style.colourUnarmed("+equippedToCharacter.getUnarmedDamage()+" без оружия)]<br/>");
 			}
 			yIncrease++;
 			effectsSB.append("<span>"+ Attack.getMinimumDamage(equippedToCharacter, null, Attack.MAIN, absWeapon) + " - " + Attack.getMaximumDamage(equippedToCharacter, null, Attack.MAIN, absWeapon)+ "</span>"
-					+ " <span style='color:" + absWeapon.getDamageType().getMultiplierAttribute().getColour().toWebHexString() + ";'>Damage</span>");
+					+ " <span style='color:" + absWeapon.getDamageType().getMultiplierAttribute().getColour().toWebHexString() + ";'>Урон</span>");
 			
 			for(Value<Integer, Integer> aoe : absWeapon.getWeaponType().getAoeDamage()) {
 				yIncrease++;
@@ -1180,7 +1165,7 @@ public class TooltipInventoryEventListener implements EventListener {
 										:PresetColour.GENERIC_GOOD))).toWebHexString()+";'>"
 							+aoeChance+"%</span>): "
 						+ "<span>"+ Attack.getMinimumDamage(equippedToCharacter, null, Attack.MAIN, absWeapon, aoe.getValue()) + " - " + Attack.getMaximumDamage(equippedToCharacter, null, Attack.MAIN, absWeapon, aoe.getValue())+ "</span>"
-						+ " <span style='color:" + absWeapon.getDamageType().getMultiplierAttribute().getColour().toWebHexString() + ";'>Damage</span>");
+						+ " <span style='color:" + absWeapon.getDamageType().getMultiplierAttribute().getColour().toWebHexString() + ";'>Урон</span>");
 			}
 			
 		} else {
@@ -1190,7 +1175,7 @@ public class TooltipInventoryEventListener implements EventListener {
 					+"<span>"
 						+ Attack.getMinimumDamage(owner, null, Attack.MAIN, absWeapon) + " - " + Attack.getMaximumDamage(owner, null, Attack.MAIN, absWeapon)
 					+ "</span>"
-					+ " <span style='color:" + absWeapon.getDamageType().getMultiplierAttribute().getColour().toWebHexString() + ";'>Damage</span>");
+					+ " <span style='color:" + absWeapon.getDamageType().getMultiplierAttribute().getColour().toWebHexString() + ";'>Урон</span>");
 				for(Value<Integer, Integer> aoe : absWeapon.getWeaponType().getAoeDamage()) {
 					yIncrease++;
 					int aoeChance = aoe.getKey();
@@ -1205,13 +1190,13 @@ public class TooltipInventoryEventListener implements EventListener {
 											:PresetColour.GENERIC_GOOD))).toWebHexString()+";'>"
 								+aoeChance+"%</span>): "
 							+ "<span>"+ Attack.getMinimumDamage(owner, null, Attack.MAIN, absWeapon, aoe.getValue()) + " - " + Attack.getMaximumDamage(owner, null, Attack.MAIN, absWeapon, aoe.getValue())+ "</span>"
-							+ " <span style='color:" + absWeapon.getDamageType().getMultiplierAttribute().getColour().toWebHexString() + ";'>Damage</span>");
+							+ " <span style='color:" + absWeapon.getDamageType().getMultiplierAttribute().getColour().toWebHexString() + ";'>Урон</span>");
 				}
 				effectsSB.append("<br/>You: ");
 			}
 			yIncrease++;
 			effectsSB.append("<span>"+ Attack.getMinimumDamage(Main.game.getPlayer(), null, Attack.MAIN, absWeapon) + " - " + Attack.getMaximumDamage(Main.game.getPlayer(), null, Attack.MAIN, absWeapon)+ "</span>"
-							+ " <span style='color:" + absWeapon.getDamageType().getMultiplierAttribute().getColour().toWebHexString() + ";'>Damage</span>");
+							+ " <span style='color:" + absWeapon.getDamageType().getMultiplierAttribute().getColour().toWebHexString() + ";'>Урон</span>");
 			
 			for(Value<Integer, Integer> aoe : absWeapon.getWeaponType().getAoeDamage()) {
 				yIncrease++;
@@ -1227,7 +1212,7 @@ public class TooltipInventoryEventListener implements EventListener {
 										:PresetColour.GENERIC_GOOD))).toWebHexString()+";'>"
 							+aoeChance+"%</span>): "
 						+ "<span>"+ Attack.getMinimumDamage(Main.game.getPlayer(), null, Attack.MAIN, absWeapon, aoe.getValue()) + " - " + Attack.getMaximumDamage(Main.game.getPlayer(), null, Attack.MAIN, absWeapon, aoe.getValue())+ "</span>"
-						+ " <span style='color:" + absWeapon.getDamageType().getMultiplierAttribute().getColour().toWebHexString() + ";'>Damage</span>");
+						+ " <span style='color:" + absWeapon.getDamageType().getMultiplierAttribute().getColour().toWebHexString() + ";'>Урон</span>");
 			}
 		}
 		if(absWeapon.getWeaponType().isOneShot()) {
@@ -1238,11 +1223,11 @@ public class TooltipInventoryEventListener implements EventListener {
 
 			effectsSB.append("<br/><span style='color:"
 					+(chanceToRecoverTurn<=25?PresetColour.GENERIC_BAD:(chanceToRecoverTurn<=50?PresetColour.GENERIC_MINOR_BAD:(chanceToRecoverTurn<=75?PresetColour.GENERIC_MINOR_GOOD:PresetColour.GENERIC_GOOD))).toWebHexString()
-					+"'>"+chanceToRecoverTurn+"%</span> recovery [style.colourBlueLight(after use)]<br/>");
+					+"'>"+chanceToRecoverTurn+"%</span> восстановления [style.colourBlueLight(после использования)]<br/>");
 			
 			effectsSB.append("<span style='color:"
 					+(chanceToRecoverCombat<=25?PresetColour.GENERIC_BAD:(chanceToRecoverCombat<=50?PresetColour.GENERIC_MINOR_BAD:(chanceToRecoverCombat<=75?PresetColour.GENERIC_MINOR_GOOD:PresetColour.GENERIC_GOOD))).toWebHexString()
-					+";'>"+chanceToRecoverCombat+"%</span> recovery [style.colourCombat(after combat)]");
+					+";'>"+chanceToRecoverCombat+"%</span> восстановление [style.colourCombat(после боя)]");
 		}
 		for(String s : absWeapon.getWeaponType().getExtraEffects()) {
 			yIncrease++;
@@ -1292,7 +1277,7 @@ public class TooltipInventoryEventListener implements EventListener {
 		if(!author.isEmpty()) {
 			int authorDivHeight = 48;
 			specialYIncrease += 48 + 8;
-			tooltipSB.append("<div class='description' style='margin:4px 8px; min-height:"+authorDivHeight+"px; max-height:"+authorDivHeight+"px;'>" + author + "</div>");
+			tooltipSB.append("<div class='description' style='margin:4px 8px; min-height:"+authorDivHeight+"px; макс.-высота:"+authorDivHeight+"px;'>" + author + "</div>");
 		}
 		
 		tooltipSB.append("</body>");
@@ -1339,16 +1324,16 @@ public class TooltipInventoryEventListener implements EventListener {
 		Femininity femininityRestriction = absClothing.getClothingType().getFemininityRestriction();
 		tooltipSB.append("<div class='container-half-width titular' style='margin:2px 2px 2px 8px; width:calc(50% - 10px);'>"
 							+ (femininityRestriction==null || femininityRestriction==Femininity.ANDROGYNOUS
-									?"[style.colourAndrogynous(Unisex)]"
+									?"[style.colourAndrogynous(Унисекс)]"
 											:(femininityRestriction.isFeminine()
-												?"[style.colourFeminine(Feminine)]"
-												:"[style.colourMasculine(Masculine)]"))
+												?"[style.colourFeminine(Женский)]"
+												:"[style.colourMasculine(Мужской)]"))
 						+ "</div>");
 
 		// Rarity box (half-width title):
 		tooltipSB.append("<div class='container-half-width titular' style='margin:2px 8px 2px 2px; width:calc(50% - 10px);'>"
 							+ "<span style='color:" + (absClothing.isEnchantmentKnown()?absClothing.getRarity().getColour():PresetColour.TEXT_GREY).toWebHexString() + ";'>"
-									+Util.capitaliseSentence(absClothing.isEnchantmentKnown()?absClothing.getRarity().getName():"Unknown")
+									+Util.capitaliseSentence(absClothing.isEnchantmentKnown()?absClothing.getRarity().getName():"Неизвестно")
 									+"</span>"
 						+ "</div>");
 		
@@ -1384,7 +1369,7 @@ public class TooltipInventoryEventListener implements EventListener {
 									?"[style.colourDisabled(/)]"
 									:"/")));
 					if(i==possibleSlots.size()-1) {
-						tooltipSB.append(" piercing");
+						tooltipSB.append(" пронзающий");
 					}
 				}
 			}
@@ -1393,12 +1378,12 @@ public class TooltipInventoryEventListener implements EventListener {
 		// Set box (half-width title):
 		tooltipSB.append("<div class='container-half-width titular' style='margin:2px 8px 2px 2px; width:calc(50% - 10px);'>"
 							+ (absClothing.getClothingType().getClothingSet() == null
-								? "<span style='color:" + PresetColour.TEXT_GREY.toWebHexString() + ";'>Not part of a set</span>"
-								: "<span style='color:" + PresetColour.RARITY_EPIC.toWebHexString() + ";'>"+absClothing.getClothingType().getClothingSet().getName() + " set</span>")
+								? "<span style='color:" + PresetColour.TEXT_GREY.toWebHexString() + ";'>Не часть набора</span>"
+								: "<span style='color:" + PresetColour.RARITY_EPIC.toWebHexString() + ";'>"+absClothing.getClothingType().getClothingSet().getName() + " набор</span>")
 						+ "</div>");
 		
 		// Value:
-		String valueDivClass = Main.game.isEnchantmentCapacityEnabled()?"container-half-width titular":"container-full-width titular";
+		String valueDivClass = Main.game.isEnchantmentCapacityEnabled()?"контейнер-половина-ширины титул":"контейнер-на-всю-ширину титульный";
 		String valueStyle = Main.game.isEnchantmentCapacityEnabled()
 				?"style='margin:2px 2px 2px 8px; width:calc(50% - 10px);'"
 				:"";
@@ -1408,8 +1393,7 @@ public class TooltipInventoryEventListener implements EventListener {
 					int buyModifierPercentage = (int)(InventoryDialogue.getInventoryNPC().getBuyModifier()*100);
 					Colour buyColour = buyModifierPercentage<=50?PresetColour.GENERIC_BAD:(buyModifierPercentage<100?PresetColour.GENERIC_MINOR_BAD:PresetColour.GENERIC_MINOR_GOOD);
 					
-					tooltipSB.append("<div class='"+valueDivClass+"' "+valueStyle+">"
-										+ "Sell price: "+UtilText.formatAsMoney(absClothing.getPrice(InventoryDialogue.getInventoryNPC().getBuyModifier()))
+					tooltipSB.append("<div class='"+valueDivClass+"' "+valueStyle+">Цена продажи: "+UtilText.formatAsMoney(absClothing.getPrice(InventoryDialogue.getInventoryNPC().getBuyModifier()))
 										+ " (<span style='color:"+buyColour.toWebHexString()+";'>"+buyModifierPercentage+"%</span>)"
 									+ "</div>");
 				} else {
@@ -1419,15 +1403,13 @@ public class TooltipInventoryEventListener implements EventListener {
 				}
 			} else {
 				if (InventoryDialogue.isBuyback() && !owner.getClothingCurrentlyEquipped().contains(absClothing)) {
-					tooltipSB.append("<div class='"+valueDivClass+"' "+valueStyle+">"
-											+ "Buy-back price: "+(absClothing.isEnchantmentKnown() ? UtilText.formatAsMoney(getBuybackPriceFor(absClothing)) : UtilText.formatAsMoney("?", "b"))
+					tooltipSB.append("<div class='"+valueDivClass+"' "+valueStyle+">Цена выкупа: "+(absClothing.isEnchantmentKnown() ? UtilText.formatAsMoney(getBuybackPriceFor(absClothing)) : UtilText.formatAsMoney("?", "b"))
 									+ "</div>");
 				} else {
 					int sellModifierPercentage = (int)(InventoryDialogue.getInventoryNPC().getSellModifier(absClothing)*100);
 					Colour sellColour = sellModifierPercentage>=200?PresetColour.GENERIC_BAD:(sellModifierPercentage>100?PresetColour.GENERIC_MINOR_BAD:PresetColour.GENERIC_MINOR_GOOD);
 					
-					tooltipSB.append("<div class='"+valueDivClass+"' "+valueStyle+">"
-											+ "Buy price: "+UtilText.formatAsMoney(absClothing.getPrice(InventoryDialogue.getInventoryNPC().getSellModifier(absClothing)))
+					tooltipSB.append("<div class='"+valueDivClass+"' "+valueStyle+">Цена покупки: "+UtilText.formatAsMoney(absClothing.getPrice(InventoryDialogue.getInventoryNPC().getSellModifier(absClothing)))
 											+ " (<span style='color:"+sellColour.toWebHexString()+";'>"+sellModifierPercentage+"%</span>)"
 									+ "</div>");
 				}
@@ -1470,13 +1452,13 @@ public class TooltipInventoryEventListener implements EventListener {
 		StringBuilder effectsSB = new StringBuilder();
 		boolean brNeeded = false;
 		if(resistance>0) {
-			effectsSB.append("[style.colourGood(+"+resistance+")] Natural [style.colourResPhysical("+Util.capitaliseSentence(Attribute.RESISTANCE_PHYSICAL.getName())+")]");
+			effectsSB.append("[style.colourGood(+"+resistance+")] Естественный [style.colourResPhysical("+Util.capitaliseSentence(Attribute.RESISTANCE_PHYSICAL.getName())+")]");
 			brNeeded = true;
 		}
 		
 		if(!absClothing.getEffects().isEmpty()) {
 			if (!absClothing.isEnchantmentKnown()) {
-				effectsSB.append((brNeeded?"<br/>":"")+"[style.colourDisabled(Unidentified effects!)]");
+				effectsSB.append((brNeeded?"<br/>":"")+"[style.colourDisabled(Неизвестные эффекты!)]");
 				brNeeded = true;
 			} else {
 				for(Entry<AbstractAttribute, Integer> entry : absClothing.getAttributeModifiers().entrySet()) {
@@ -1508,7 +1490,7 @@ public class TooltipInventoryEventListener implements EventListener {
 				InventorySlot slot = absClothing.getClothingType().getEquipSlots().get(i);
 				
 				if(!absClothing.getExtraDescriptions(equippedToCharacter, slot, false).isEmpty()) {
-					extraDescriptions.add("<i>When equipped into '"+slot.getName()+"' slot:</i>");
+					extraDescriptions.add("<i>When equipped into '"+slot.getName()+"' слот:</i>");
 					yIncrease++;
 					for (String s : absClothing.getExtraDescriptions(equippedToCharacter, slot, false)) {
 						extraDescriptions.add(s);
@@ -1568,7 +1550,7 @@ public class TooltipInventoryEventListener implements EventListener {
 		if(!author.isEmpty()) {
 			int authorDivHeight = 48;
 			specialYIncrease += 48 + 8;
-			tooltipSB.append("<div class='description' style='margin:4px 8px; min-height:"+authorDivHeight+"px; max-height:"+authorDivHeight+"px;'>" + author + "</div>");
+			tooltipSB.append("<div class='description' style='margin:4px 8px; min-height:"+authorDivHeight+"px; макс.-высота:"+authorDivHeight+"px;'>" + author + "</div>");
 		}
 		
 		tooltipSB.append("</body>");
@@ -1588,14 +1570,13 @@ public class TooltipInventoryEventListener implements EventListener {
 		int yIncrease = 0;
 		// Title:
 		tooltipSB.setLength(0);
-		tooltipSB.append("<body>"
-			+ "<div class='container-full-width center'><h5>No tattoo</h5></div>");
+		tooltipSB.append("<body><div class='container-full-width center'><h5>Без татуировок</h5></div>");
 		
 		// Core info:
 		tooltipSB.append("<div class='container-half-width titular'>" + Util.capitaliseSentence(invSlot.getTattooSlotName()) + "</div>");
 		tooltipSB.append("<div class='container-half-width titular'>"
 							+ (scar==null
-									? "<span style='color:" + PresetColour.TEXT_GREY.toWebHexString() + ";'>No scars</span>"
+									? "<span style='color:" + PresetColour.TEXT_GREY.toWebHexString() + ";'>Без шрамов</span>"
 									: "<span style='color:" + PresetColour.SCAR.toWebHexString() + ";'>"+Util.capitaliseSentence(owner.getScarInSlot(invSlot).getName())+"</span>")
 						+ "</div>");
 		
@@ -1603,7 +1584,7 @@ public class TooltipInventoryEventListener implements EventListener {
 		if(lipsticks!=null) {
 			yIncrease = 24 + (1+lipsticks.size())*LINE_HEIGHT;
 			tooltipSB.append("<div class='container-full-width' style='text-align:center; padding:8px; height:"+(16+(1+lipsticks.size())*LINE_HEIGHT)+"px;'>");
-			tooltipSB.append(UtilText.parse(owner, "[npc.NamePos] ")+invSlot.getNameOfAssociatedPart(owner)+" "+(invSlot.isPlural(owner)?"have":"has")+" been marked by:");
+			tooltipSB.append(UtilText.parse(owner, "[npc.NamePos] ")+invSlot.getNameOfAssociatedPart(owner)+" "+(invSlot.isPlural(owner)?"имеют":"имеет")+" отмечен(а):");
 				for(int i=lipsticks.size()-1; i>=0; i--) {
 					tooltipSB.append("<br/>"+Util.capitaliseSentence(lipsticks.get(i).getFullDescription(owner, true)));
 				}
@@ -1649,7 +1630,7 @@ public class TooltipInventoryEventListener implements EventListener {
 		// Scars (half-width title):
 		tooltipSB.append("<div class='container-half-width titular' style='margin:2px 2px 2px 8px; width:calc(50% - 10px);'>"
 							+ (owner==null || owner.getScarInSlot(invSlot)==null
-									? "<span style='color:" + PresetColour.TEXT_GREY.toWebHexString() + ";'>No scars</span>"
+									? "<span style='color:" + PresetColour.TEXT_GREY.toWebHexString() + ";'>Без шрамов</span>"
 									: "<span style='color:" + PresetColour.SCAR.toWebHexString() + ";'>"+Util.capitaliseSentence(owner.getScarInSlot(invSlot).getName())+"</span>")
 						+ "</div>");
 
@@ -1664,9 +1645,9 @@ public class TooltipInventoryEventListener implements EventListener {
 		String slotStyle = Main.game.isEnchantmentCapacityEnabled()
 				?"style='margin:2px 2px 2px 8px; width:calc(50% - 10px);'"
 				:"";
-		tooltipSB.append("<div class='"+(Main.game.isEnchantmentCapacityEnabled()?"container-half-width titular":"container-full-width titular")+"' "+slotStyle+">" 
+		tooltipSB.append("<div class='"+(Main.game.isEnchantmentCapacityEnabled()?"контейнер-половина-ширины титул":"контейнер-на-всю-ширину титульный")+"' "+slotStyle+">" 
 					+ (invSlot.getTattooSlotName()==null
-						?"[style.colourDisabled(Cannot be tattooed)]"
+						?"[style.colourDisabled(Нельзя набить татуировку)]"
 						:Util.capitaliseSentence(invSlot.getTattooSlotName())) 
 				+ "</div>");
 
@@ -1699,7 +1680,7 @@ public class TooltipInventoryEventListener implements EventListener {
 				StringBuilder writingSB = new StringBuilder();
 				if (tattoo.getWriting()!=null && !tattoo.getWriting().getText().isEmpty()) {
 					if(tattoo.getWriting().getStyles().isEmpty()) {
-						writingSB.append("Normal,");
+						writingSB.append("Обычный,");
 					} else {
 						int i=0;
 						for(TattooWritingStyle style : tattoo.getWriting().getStyles()) {
@@ -1707,28 +1688,28 @@ public class TooltipInventoryEventListener implements EventListener {
 							i++;
 						}
 					}
-					writingSB.append(" "+tattoo.getWriting().getColour().getName()+" writing");
+					writingSB.append(" "+tattoo.getWriting().getColour().getName()+" надпись");
 				}
 				StringBuilder counterSB = new StringBuilder();
 				if (tattoo.getCounter()!=null && tattoo.getCounter().getType()!=TattooCounterType.NONE) {
-					counterSB.append("an enchanted, '"+tattoo.getCounter().getColour().getName()+" "+tattoo.getCounter().getType().getName()+"' counter");
+					counterSB.append("зачарованный «"+tattoo.getCounter().getColour().getName()+" "+tattoo.getCounter().getType().getName()+"» счетчик");
 				}
 				if(writingSB.length()>0) {
 					tooltipSB.append(" <i>");
 					tooltipSB.append(writingSB.toString());
 					if(counterSB.length()>0){
-						tooltipSB.append(" and ");
+						tooltipSB.append(" и ");
 						tooltipSB.append(counterSB.toString());
-						tooltipSB.append(" form part of this tattoo.");
+						tooltipSB.append(" является частью этой татуировки.");
 					} else {
-						tooltipSB.append(" forms part of this tattoo.");
+						tooltipSB.append(" является частью этой татуировки.");
 					}
 					tooltipSB.append("</i>");
 					
 				} else if(counterSB.length()>0){
 					tooltipSB.append(" <i>");
 						tooltipSB.append(Util.capitaliseSentence(writingSB.toString()));
-						tooltipSB.append(" forms part of this tattoo.");
+						tooltipSB.append(" является частью этой татуировки.");
 					tooltipSB.append("</i>");
 				}
 				
@@ -1775,7 +1756,7 @@ public class TooltipInventoryEventListener implements EventListener {
 			int writingHeight = tattoo.getWriting().getText().split("<br/>").length;
 			
 			tooltipSB.append("<div class='container-full-width' style='padding:4px; height:"+(28 + writingHeight*LINE_HEIGHT)+"px; text-align:center;'>");
-				tooltipSB.append("The writing reads:<br/>");
+				tooltipSB.append("Надпись гласит: <br/>");
 				tooltipSB.append(tattoo.getFormattedWritingOutput());
 			tooltipSB.append("</div>");
 		}
@@ -1792,9 +1773,7 @@ public class TooltipInventoryEventListener implements EventListener {
 			yIncrease++;
 			yIncrease++;
 			tooltipSB.append("<div class='container-full-width' style='padding:4px; height:42px; text-align:center;'>"
-								+ "The '"+tattoo.getCounter().getType().getName()+"' counter displays:"
-									+ "<br/>"
-									+ "<span style='color:"+tattoo.getCounter().getColour().toWebHexString()+";'>"
+								+ "The '"+tattoo.getCounter().getType().getName()+"«<br/>» показывает: <br/><span style='color:"+tattoo.getCounter().getColour().toWebHexString()+";'>"
 											+tattoo.getFormattedCounterOutput(
 													equippedToCharacter==null
 														?Main.game.getPlayer()
@@ -1818,7 +1797,7 @@ public class TooltipInventoryEventListener implements EventListener {
 				specialIncrease += 16;
 				yIncrease++;
 				tooltipSB.append("<div class='container-full-width' style='text-align:center; padding:8px; height:"+(16+(1+lipsticks.size())*LINE_HEIGHT)+"px;'>");
-				tooltipSB.append(UtilText.parse(owner, "[npc.NamePos] ")+invSlot.getTattooSlotName()+" "+(invSlot.isPlural(owner)?"have":"has")+" been marked by:");
+				tooltipSB.append(UtilText.parse(owner, "[npc.NamePos] ")+invSlot.getTattooSlotName()+" "+(invSlot.isPlural(owner)?"имеют":"имеет")+" отмечен(а):");
 					for(int i=lipsticks.size()-1; i>=0; i--) {
 						yIncrease++;
 						tooltipSB.append("<br/>"+Util.capitaliseSentence(lipsticks.get(i).getFullDescription(owner, true)));
@@ -1865,20 +1844,15 @@ public class TooltipInventoryEventListener implements EventListener {
 		StringBuilder sb = new StringBuilder();
 		
 		sb.append("<div class='title'>"
-						+title+" (Unarmed)"
-					+ "</div>"
-					+ "<div class='description' style='height:64px; text-align:center;'>"
+						+title+" (Без оружия)</div><div class='description' style='height:64px; text-align:center;'>"
 						+ UtilText.parse(equippedToCharacter,
-							"[npc.Name] [npc.has] a base unarmed damage value of "+baseDamage+", which is modified from attributes to deal:"
-							+ "<br/>[style.boldUnarmed("+modifiedDamage+" Unarmed damage)]")
+							"[npc.Name] [npc.has] базовое значение урона без оружия составляет "+baseDamage+", которое модифицируется атрибутами для нанесения:<br/>[style.boldUnarmed(\","+modifiedDamage+" урон без оружия)]")
 					+ "</div>");
 
 		if(block != null) {
 			sb.append(UtilText.parse(equippedToCharacter,
 					"<div class='title'>"
-						+ "<span style='color:" + PresetColour.GENERIC_BAD.toWebHexString() + ";'>Blocked!</span>"
-					+ "</div>"
-					+"<div class='description' style='height:72px; text-align:center;'>"
+						+ "<span style='color:" + PresetColour.GENERIC_BAD.toWebHexString() + ";'>Заблокировано!</span></div><div class='description' style='height:72px; text-align:center;'>"
 						+ UtilText.parse(equippedToCharacter, block.getDescription())
 					 +"</div>"));
 		}

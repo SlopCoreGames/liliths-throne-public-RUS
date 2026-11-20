@@ -16,7 +16,7 @@ public enum SlavePermission {
 
 
 	BEHAVIOUR(PresetColour.BASE_TEAL,
-			"Behaviour",
+			"Поведение",
 			Util.newArrayListOfValues(
 					SlavePermissionSetting.BEHAVIOUR_SLUTTY,
 					SlavePermissionSetting.BEHAVIOUR_SEDUCTIVE,
@@ -26,7 +26,7 @@ public enum SlavePermission {
 			true),
 	
 	GENERAL(PresetColour.TRANSFORMATION_GENERIC,
-			"General",
+			"Общее",
 			Util.newArrayListOfValues(
 					SlavePermissionSetting.GENERAL_SILENCE,
 					SlavePermissionSetting.GENERAL_CRAWLING,
@@ -35,7 +35,7 @@ public enum SlavePermission {
 			false),
 	
 	SEX(PresetColour.GENERIC_SEX,
-			"Sex",
+			"Секс",
 			Util.newArrayListOfValues(
 					SlavePermissionSetting.SEX_LUBE_PILL,
 					SlavePermissionSetting.SEX_MASTURBATE,
@@ -49,7 +49,7 @@ public enum SlavePermission {
 			false),
 
 	PILLS(PresetColour.BASE_PURPLE_LIGHT,
-			"Pills",
+			"Таблетки",
 			Util.newArrayListOfValues(
 					SlavePermissionSetting.PILLS_NO_PILLS,
 					SlavePermissionSetting.PILLS_PROMISCUITY_PILLS,
@@ -63,7 +63,7 @@ public enum SlavePermission {
 	},
 
 	PREGNANCY(PresetColour.BASE_PINK,
-			"Pregnancy",
+			"Беременность",
 			Util.newArrayListOfValues(
 					SlavePermissionSetting.PREGNANCY_MOTHERS_MILK,
 					SlavePermissionSetting.PREGNANCY_ALLOW_BIRTHING,
@@ -76,7 +76,7 @@ public enum SlavePermission {
 	},
 	
 	DIET(PresetColour.BODY_SIZE_TWO,
-			"Diet",
+			"Диета",
 			Util.newArrayListOfValues(
 					SlavePermissionSetting.FOOD_DIET_EXTREME,
 					SlavePermissionSetting.FOOD_DIET,
@@ -91,7 +91,7 @@ public enum SlavePermission {
 	},
 
 	EXERCISE(PresetColour.MUSCLE_TWO,
-			"Exercise",
+			"Упражнения",
 			Util.newArrayListOfValues(
 					SlavePermissionSetting.EXERCISE_FORBIDDEN,
 					SlavePermissionSetting.EXERCISE_REST,
@@ -106,7 +106,7 @@ public enum SlavePermission {
 	},
 	
 	CLEANLINESS(PresetColour.BASE_BLUE_LIGHT,
-			"Cleanliness",
+			"Чистота",
 			Util.newArrayListOfValues(
 					SlavePermissionSetting.CLEANLINESS_WASH_CLOTHES,
 					SlavePermissionSetting.CLEANLINESS_WASH_BODY,
@@ -114,7 +114,7 @@ public enum SlavePermission {
 			false),
 	
 	SLEEPING(PresetColour.BASE_PURPLE_LIGHT,
-			"Sleeping",
+			"Сон",
 			Util.newArrayListOfValues(
 					SlavePermissionSetting.SLEEPING_DEFAULT,
 					SlavePermissionSetting.SLEEPING_NIGHT,

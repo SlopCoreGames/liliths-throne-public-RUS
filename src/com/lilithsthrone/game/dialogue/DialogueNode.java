@@ -48,7 +48,7 @@ public abstract class DialogueNode {
 	}
 
 	public DialogueNode(String label, String description, boolean travelDisabled, boolean continuesDialogue) {
-		this.author = "Innoxia";
+		this.author = "Инноксия";
 		
 		this.label = label;
 		this.description = description;

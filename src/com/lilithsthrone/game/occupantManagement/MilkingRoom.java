@@ -426,9 +426,9 @@ public class MilkingRoom implements XMLSaving {
 	public String getRoomDescription() {
 		StringBuilder milkyMilknessSB = new StringBuilder();
 		
-		milkyMilknessSB.append(getFluidEntries(this.getMilkFluidsStored(), PresetColour.MILK, "Milk Stored"));
-		milkyMilknessSB.append(getFluidEntries(this.getCumFluidsStored(), PresetColour.CUM, "Cum Stored"));
-		milkyMilknessSB.append(getFluidEntries(this.getGirlcumFluidsStored(), PresetColour.GIRLCUM, "Girlcum Stored"));
+		milkyMilknessSB.append(getFluidEntries(this.getMilkFluidsStored(), PresetColour.MILK, "Запас молока"));
+		milkyMilknessSB.append(getFluidEntries(this.getCumFluidsStored(), PresetColour.CUM, "Запас конья"));
+		milkyMilknessSB.append(getFluidEntries(this.getGirlcumFluidsStored(), PresetColour.GIRLCUM, "Запас девичьей спермы"));
 		
 		return milkyMilknessSB.toString();
 	}
@@ -466,7 +466,7 @@ public class MilkingRoom implements XMLSaving {
 							"<div class='container-half-width' style='margin:0; padding:2px; width:15%; background:transparent;'>"
 								+ "[style.colourExcellent("+Units.fluid(fluid.getMillilitres())+")]");
 					if(fluid.isCum()) {
-						milkyMilknessSB.append("<br/><span style='color:"+Attribute.VIRILITY.getColour().toWebHexString()+";'>Virility:</span> "+Units.adaptiveRound(fluid.getVirility()));
+						milkyMilknessSB.append("<br/><span style='color:"+Attribute.VIRILITY.getColour().toWebHexString()+";'>Мужественность:</span> "+Units.adaptiveRound(fluid.getVirility()));
 					}
 					milkyMilknessSB.append("</div>");
 				
@@ -477,7 +477,7 @@ public class MilkingRoom implements XMLSaving {
 						milkyMilknessSB.append(UtilText.parse(fluidOwner, "<span style='color:"+fluidOwner.getFemininity().getColour().toWebHexString()+";'>[npc.NamePos]</span>"));
 						
 					} catch(Exception ex) {
-						milkyMilknessSB.append("[style.colourDisabled(Unknown's)]");
+						milkyMilknessSB.append("[style.colourDisabled(Неизвестного)]");
 					}
 					milkyMilknessSB.append("<br/>"
 								+ "<span style='color:"+type.getRace().getColour().toWebHexString()+";'>"
@@ -487,7 +487,7 @@ public class MilkingRoom implements XMLSaving {
 	
 					milkyMilknessSB.append("<div class='container-half-width' style='margin:0; padding:2px; width:35%; background:transparent;'>");
 					FluidFlavour flavour = fluid.getFluid().getFlavour();
-					milkyMilknessSB.append("<span style='color:"+flavour.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(flavour.getName())+(flavour==FluidFlavour.FLAVOURLESS?"":"-flavoured")+"</span>.<br/>");
+					milkyMilknessSB.append("<span style='color:"+flavour.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(flavour.getName())+(flavour==FluidFlavour.FLAVOURLESS?"":"-вкус")+"</span>.<br/>");
 						if(!fluid.getFluid().getFluidModifiers().isEmpty()) {
 							int i=0;
 							for(FluidModifier mod : fluid.getFluid().getFluidModifiers()) {
@@ -500,13 +500,13 @@ public class MilkingRoom implements XMLSaving {
 							milkyMilknessSB.append(".");
 							
 						} else {
-							milkyMilknessSB.append("[style.colourDisabled(No Modifiers)]");
+							milkyMilknessSB.append("[style.colourDisabled(Без модификаторов)]");
 						}
 					milkyMilknessSB.append("</div>");
 	
 					milkyMilknessSB.append(
 							"<div class='container-half-width' style='margin:0; padding:2px; width:10%; background:transparent;'>"
-								+ UtilText.formatAsMoney((int)(fluid.getMillilitres()*fluid.getFluid().getValuePerMl()), "span")
+								+ UtilText.formatAsMoney((int)(fluid.getMillilitres()*fluid.getFluid().getValuePerMl()), "охват")
 							+ "</div>");
 					
 					milkyMilknessSB.append("<div style='float:left; width:15%; margin:0 auto; padding:0; display:inline-block; text-align:center; background:transparent;'>"
@@ -528,8 +528,7 @@ public class MilkingRoom implements XMLSaving {
 											:"class='square-button big disabled'")+">"
 									+ "<div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaAnus()+"</div></div>");
 					
-					milkyMilknessSB.append("<div id='"+idModifier+"_SELL_"+fluid.hashCode()+"' class='square-button big'>"
-									+ "<div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getTransactionSell()+"</div></div>");
+					milkyMilknessSB.append("<div id='"+idModifier+"_SELL_"+fluid.hashCode()+"' class='square-button big'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getTransactionSell()+"</div></div>");
 					
 					milkyMilknessSB.append("</div>");
 					
@@ -537,7 +536,7 @@ public class MilkingRoom implements XMLSaving {
 			}
 			
 			if(!fluidsFound) {
-				milkyMilknessSB.append("<div class='container-full-width' style='margin-bottom:2px; text-align:center; background:"+PresetColour.BACKGROUND_ALT.toWebHexString()+";'>[style.colourDisabled(None...)]</div>");
+				milkyMilknessSB.append("<div class='container-full-width' style='margin-bottom:2px; text-align:center; background:"+PresetColour.BACKGROUND_ALT.toWebHexString()+";'>[style.colourDisabled(Нет...)]</div>");
 			}
 
 		milkyMilknessSB.append("</div>");
@@ -553,26 +552,26 @@ public class MilkingRoom implements XMLSaving {
 		StringBuilder sb = new StringBuilder();
 		
 		if(millilitres<5) {
-			sb.append("There needs to be at least "+Units.fluid(5)+" of fluid for [npc.name] to ingest it!<br/>");
+			sb.append("Нужно как минимум "+Units.fluid(5)+" жидкости, чтобы [npc.name] могла её поглотить!<br/>");
 		}
 		
 		switch(area) {
 			case ANUS:
 				if(!ingestingCharacter.isAbleToAccessCoverableArea(CoverableArea.ANUS, true)) {
-					sb.append("[npc.NameIsFull] not able to access [npc.her] asshole!");
+					sb.append("[npc.NameIsFull] не может добраться до ануса [npc.her]!");
 				}
 				break;
 			case MOUTH:
 				if(!ingestingCharacter.isAbleToAccessCoverableArea(CoverableArea.MOUTH, true)) {
-					sb.append("[npc.NameIsFull] not able to access [npc.her] mouth!");
+					sb.append("[npc.NameIsFull] не может добраться до рта [npc.her]!");
 				}
 				break;
 			case VAGINA:
 				if(!ingestingCharacter.hasVagina()) {
-					sb.append("[npc.Name] [npc.does] not have a vagina!");
+					sb.append("У [npc.Name] [npc.does] нет влагалища!");
 					
 				} else if(!ingestingCharacter.isAbleToAccessCoverableArea(CoverableArea.VAGINA, true)) {
-					sb.append("[npc.NameIsFull] not able to access [npc.her] pussy!");
+					sb.append("[npc.NameIsFull] не может добраться до киски [npc.her]!");
 				}
 				break;
 			default:
@@ -585,8 +584,7 @@ public class MilkingRoom implements XMLSaving {
 		if(!ingestingCharacter.isPlayer() && !ingestingCharacter.isSlave()) {
 			if(ingestingCharacter.getAffection(Main.game.getPlayer())<AffectionLevel.POSITIVE_FOUR_LOVE.getMinimumValue()) {
 				 sb.append(UtilText.parse(ingestingCharacter,
-							"As [npc.sheIs] not your slave, [npc.name] will only let you do this if [npc.she]"
-							+ " <span style='color:"+AffectionLevel.POSITIVE_FOUR_LOVE.getColour().toWebHexString()+";'>"+AffectionLevel.POSITIVE_FOUR_LOVE.getDescriptor()+"</span> you.<br/>"));
+							"Так как [npc.sheIs] не твоя рабыня, [npc.name] позволит тебе это сделать, только если [npc.she] <span style='color:"+AffectionLevel.POSITIVE_FOUR_LOVE.getColour().toWebHexString()+";'>"+AffectionLevel.POSITIVE_FOUR_LOVE.getDescriptor()+"</span> тебя.<br/>"));
 				
 			} else if(fluidType==FluidTypeBase.CUM
 					&& (area==CoverableArea.VAGINA
@@ -594,28 +592,28 @@ public class MilkingRoom implements XMLSaving {
 						:!ingestingCharacter.getFetishDesire(Fetish.FETISH_CUM_ADDICT).isPositive())) {
 				 sb.append(UtilText.parse(ingestingCharacter,
 						 area==CoverableArea.VAGINA
-						 	?"[npc.Name] requires a positive desire for the "+Fetish.FETISH_PREGNANCY.getName(ingestingCharacter)+" fetish.<br/>"
-							:"[npc.Name] requires a positive desire for the "+Fetish.FETISH_CUM_ADDICT.getName(ingestingCharacter)+" fetish.<br/>"));
+						 	?"[npc.Name] требуется наличие желания к "+Fetish.FETISH_PREGNANCY.getName(ingestingCharacter)+" фетишу.<br/>"
+							:"[npc.Name] требуется наличие желания к "+Fetish.FETISH_CUM_ADDICT.getName(ingestingCharacter)+" фетишу.<br/>"));
 				
 			} else if(fluidType==FluidTypeBase.MILK && !ingestingCharacter.getFetishDesire(Fetish.FETISH_LACTATION_OTHERS).isPositive()) {
 				 sb.append(UtilText.parse(ingestingCharacter,
-						"[npc.Name] requires a positive desire for the "+Fetish.FETISH_LACTATION_OTHERS.getName(ingestingCharacter)+" fetish.<br/>"));
+						"[npc.Name] требуется наличие желания к "+Fetish.FETISH_LACTATION_OTHERS.getName(ingestingCharacter)+" фетишу.<br/>"));
 				
 			} else if(fluidType==FluidTypeBase.GIRLCUM && !ingestingCharacter.getFetishDesire(Fetish.FETISH_VAGINAL_GIVING).isPositive()) {
 				 sb.append(UtilText.parse(ingestingCharacter,
-						"[npc.Name] requires a positive desire for the "+Fetish.FETISH_VAGINAL_GIVING.getName(ingestingCharacter)+" fetish.<br/>"));
+						"[npc.Name] требуется наличие желания к "+Fetish.FETISH_VAGINAL_GIVING.getName(ingestingCharacter)+" фетишу.<br/>"));
 			}
 			switch(area) {
 				case ANUS:
 					if(!ingestingCharacter.getFetishDesire(Fetish.FETISH_ANAL_RECEIVING).isPositive()) {
 						 sb.append(UtilText.parse(ingestingCharacter,
-									"[npc.Name] requires a positive desire for the "+Fetish.FETISH_ANAL_RECEIVING.getName(ingestingCharacter)+" fetish."));
+									"[npc.Name] требуется наличие желания к "+Fetish.FETISH_ANAL_RECEIVING.getName(ingestingCharacter)+" фетиш."));
 					}
 					break;
 				case VAGINA:
 					if(!ingestingCharacter.getFetishDesire(Fetish.FETISH_VAGINAL_RECEIVING).isPositive()) {
 						 sb.append(UtilText.parse(ingestingCharacter,
-									"[npc.Name] requires a non-negative desire for the "+Fetish.FETISH_VAGINAL_RECEIVING.getName(ingestingCharacter)+" fetish."));
+									"[npc.Name] requires a non-negative desire for the "+Fetish.FETISH_VAGINAL_RECEIVING.getName(ingestingCharacter)+" фетиш."));
 					}
 					break;
 				default:

@@ -12,15 +12,15 @@ import com.lilithsthrone.utils.colours.PresetColour;
 public enum SlaveJobSetting {
 	
 	// Sex as a sub settings:
-	SEX_ORAL(PresetColour.GENERIC_SEX, "Perform Oral", "Oral P", "Allow this slave to perform oral on others."),
-	SEX_VAGINAL(PresetColour.GENERIC_SEX, "Receive Vaginal", "Vaginal R", "Allow this slave to receive vaginal sex."),
-	SEX_ANAL(PresetColour.GENERIC_SEX, "Receive Anal", "Anal R", "Allow this slave to receive anal sex.") {
+	SEX_ORAL(PresetColour.GENERIC_SEX, "Оральный секс", "Орал П", "Позволить этой рабыне делать оральный секс другим."),
+	SEX_VAGINAL(PresetColour.GENERIC_SEX, "Вагинальный секс", "Ваг. Р", "Позволить этой рабыне принимать вагинальный секс."),
+	SEX_ANAL(PresetColour.GENERIC_SEX, "Анальный секс", "Анал Р", "Позволить этой рабыне принимать анальный секс.") {
 		@Override
 		public boolean isAvailable() {
 			return Main.game.isAnalContentEnabled();
 		}
 	},
-	SEX_NIPPLES(PresetColour.GENERIC_SEX, "Receive Nipples", "Nipples R", "Allow this slave to receive penetrative nipple sex.") {
+	SEX_NIPPLES(PresetColour.GENERIC_SEX, "Стимуляция сосков", "Соски (Р)", "Разрешить этой рабыне принимать проникающий секс сосками.") {
 		@Override
 		public boolean isAvailable() {
 			return Main.game.isNipplePenEnabled();
@@ -28,15 +28,15 @@ public enum SlaveJobSetting {
 	},
 
 	// Sex as a dom settings:
-	SEX_ORAL_DOM(PresetColour.GENERIC_SEX, "Receive Oral", "Oral R", "Allow this slave to receive oral sex from others."),
-	SEX_VAGINAL_DOM(PresetColour.GENERIC_SEX, "Perform Vaginal", "Vaginal P", "Allow this slave to perform vaginal sex on others."),
-	SEX_ANAL_DOM(PresetColour.GENERIC_SEX, "Perform Anal", "Anal P", "Allow this slave to perform anal sex on others.") {
+	SEX_ORAL_DOM(PresetColour.GENERIC_SEX, "Принимать оральный секс", "Оральный (Р)", "Разрешить этой рабыне принимать оральный секс от других."),
+	SEX_VAGINAL_DOM(PresetColour.GENERIC_SEX, "Выполнять вагинальный секс", "Вагинальный (П)", "Разрешить этой рабыне заниматься вагинальным сексом с другими."),
+	SEX_ANAL_DOM(PresetColour.GENERIC_SEX, "Выполнять анальный секс", "Анальный (П)", "Разрешить этой рабыне заниматься анальным сексом с другими.") {
 		@Override
 		public boolean isAvailable() {
 			return Main.game.isAnalContentEnabled();
 		}
 	},
-	SEX_NIPPLES_DOM(PresetColour.GENERIC_SEX, "Perform Nipples", "Nipples P", "Allow this slave to perform penetrative nipple sex on others.") {
+	SEX_NIPPLES_DOM(PresetColour.GENERIC_SEX, "Соски P", "Соски P", "Разрешить этой рабыне заниматься проникновением в соски других.") {
 		@Override
 		public boolean isAvailable() {
 			return Main.game.isNipplePenEnabled();
@@ -44,53 +44,52 @@ public enum SlaveJobSetting {
 	},
 
 	
-	MILKING_NO_PREFERENCE(PresetColour.BASE_GREY, "No Preference", "NP", "Set this slave to work in any available milking room."),
-	MILKING_INDUSTRIAL(PresetColour.GENERIC_MINOR_BAD, "Industrial Milking", "IN", "Set this slave to work in a milking room with industrial milkers."),
-	MILKING_REGULAR(PresetColour.BASE_YELLOW_LIGHT, "Regular Milking", "RG", "Set this slave to work in a milking room with regular milkers."),
-	MILKING_ARTISAN(PresetColour.GENERIC_MINOR_GOOD, "Artisan Milking", "AR", "Set this slave to work in a milking room with artisan milkers."),
-	MILKING_MILK(PresetColour.BASE_YELLOW_LIGHT, "Collect Milk", "CM", "Allow this slave's milk to be collected."),
-	MILKING_MILK_CROTCH(PresetColour.BASE_YELLOW_LIGHT, "Collect Udder-milk", "CU", "Allow this slave's udders to be milked."),
-	MILKING_CUM(PresetColour.BASE_BLUE_LIGHT, "Collect Cum", "CC", "Allow this slave's cum to be collected."),
-	MILKING_GIRLCUM(PresetColour.BASE_PINK_LIGHT, "Collect Girlcum", "CG", "Allow this slave's girlcum to be collected."),
-	MILKING_TEAR_HYMEN(PresetColour.BASE_PINK_DEEP, "Tear Hymen", "TH", "If this slave has an intact hymen, allow the 'pussy pump' to be inserted anyway (which will result in it being torn)."
-			+ " If this permission is disabled, slaves with intact hymens will not insert 'pussy pumps', and so will not have their girlcum collected."),
+	MILKING_NO_PREFERENCE(PresetColour.BASE_GREY, "Без предпочтений", "NP", "Назначить эту рабыню работать в любой доступной доильной комнате."),
+	MILKING_INDUSTRIAL(PresetColour.GENERIC_MINOR_BAD, "Промышленная дойка", "IN", "Назначить эту рабыню работать в доильной комнате с промышленными доильными аппаратами."),
+	MILKING_REGULAR(PresetColour.BASE_YELLOW_LIGHT, "Обычная дойка", "RG", "Назначить эту рабыню работать в доильной комнате с обычными доильными аппаратами."),
+	MILKING_ARTISAN(PresetColour.GENERIC_MINOR_GOOD, "Ремесленное доение", "AR", "Назначить эту рабыню работать в доильном зале вместе с ремесленницами."),
+	MILKING_MILK(PresetColour.BASE_YELLOW_LIGHT, "Сбор молока", "CM", "Разрешить сбор молока у этой рабыни."),
+	MILKING_MILK_CROTCH(PresetColour.BASE_YELLOW_LIGHT, "Доение вымени", "CU", "Разрешить доение вымени этой рабыни."),
+	MILKING_CUM(PresetColour.BASE_BLUE_LIGHT, "Сбор спермы", "CC", "Разрешить сбор спермы этой рабыни."),
+	MILKING_GIRLCUM(PresetColour.BASE_PINK_LIGHT, "Сбор девичьей спермы", "CG", "Разрешить сбор девичьей спермы этой рабыни."),
+	MILKING_TEAR_HYMEN(PresetColour.BASE_PINK_DEEP, "Разорвать девственную плеву", "TH", "Если у этой рабыни еще цела девственная плева, разрешить вставлять «насос для киски» (что приведет к её разрыву). Если эта опция отключена, рабыни с целой плевой не будут принимать «насосы», и их девичья сперма не будет собираться."),
 	
-	MILKING_MILK_AUTO_SELL(PresetColour.CURRENCY_GOLD, "Auto-sell Milk", "SM", "Set this slave's milk to be automatically sold instead of stored."),
-	MILKING_MILK_CROTCH_AUTO_SELL(PresetColour.CURRENCY_GOLD, "Auto-sell Udder-milk", "SCM", "Set this slave's crotch-milk to be automatically sold instead of stored."),
-	MILKING_CUM_AUTO_SELL(PresetColour.CURRENCY_GOLD, "Auto-sell Cum", "SC", "Set this slave's cum to be automatically sold instead of stored."),
-	MILKING_GIRLCUM_AUTO_SELL(PresetColour.CURRENCY_GOLD, "Auto-sell Girlcum", "SG", "Set this slave's girlcum to be automatically sold instead of stored."),
+	MILKING_MILK_AUTO_SELL(PresetColour.CURRENCY_GOLD, "Автопродажа молока", "SM", "Установить автоматическую продажу молока этой рабыни вместо его хранения."),
+	MILKING_MILK_CROTCH_AUTO_SELL(PresetColour.CURRENCY_GOLD, "Автопродажа вымени", "SCM", "Установить автоматическую продажу молока из промежности этой рабыни вместо его хранения."),
+	MILKING_CUM_AUTO_SELL(PresetColour.CURRENCY_GOLD, "Автопродажа спермы", "SC", "Установить автоматическую продажу спермы этой рабыни вместо её хранения."),
+	MILKING_GIRLCUM_AUTO_SELL(PresetColour.CURRENCY_GOLD, "Автопродажа девичьей спермы", "SG", "Установить автоматическую продажу девичьей спермы этой рабыни вместо её хранения."),
 	
 	
-	TEST_SUBJECT_ALLOW_TRANSFORMATIONS_FEMALE(PresetColour.FEMININE, "Feminine TF", "TF (F)", "Allow this slave to receive feminine transformations."),
-	TEST_SUBJECT_ALLOW_TRANSFORMATIONS_MALE(PresetColour.MASCULINE, "Masculine TF", "TF (M)", "Allow this slave to receive masculine transformations."),
+	TEST_SUBJECT_ALLOW_TRANSFORMATIONS_FEMALE(PresetColour.FEMININE, "Женская ТФ", "ТФ (Ж)", "Позволить этой рабыне подвергаться женским трансформациям."),
+	TEST_SUBJECT_ALLOW_TRANSFORMATIONS_MALE(PresetColour.MASCULINE, "Мужская ТФ", "ТФ (М)", "Позволить этой рабыне подвергаться мужским трансформациям."),
 
-	DOLL_STATUE_ARTISTIC(PresetColour.BASE_TAN, "Artistic", "DPAR", "Order this doll to strike an artistic pose when acting as a statue."),
-	DOLL_STATUE_ATTENTION(PresetColour.BASE_TAN, "At Attention", "DPAT", "Order this doll to stand at attention when acting as a statue."),
-	DOLL_STATUE_STANDING_SPLIT(PresetColour.BASE_TAN, "Standing Split", "DPSS", "Order this doll to perform a standing split when acting as a statue."),
-	DOLL_STATUE_MISSIONARY(PresetColour.BASE_TAN, "Missionary", "DPMI", "Order this doll to lie back in a missionary position when acting as a statue."),
-	DOLL_STATUE_ALL_FOURS(PresetColour.BASE_TAN, "All Fours", "DPAF", "Order this doll to get down on all fours when acting as a statue."),
-	DOLL_STATUE_SQUATTING(PresetColour.BASE_TAN, "Squatting", "DPSQ", "Order this doll to squat down with spread legs and hands behind their head when acting as a statue."),
-	DOLL_STATUE_BRIDGE(PresetColour.BASE_TAN, "Bridge", "DPBR", "Order this doll to perform an acrobatic bridge when acting as a statue."),
+	DOLL_STATUE_ARTISTIC(PresetColour.BASE_TAN, "Художественная", "DPAR", "Приказать этой кукле принимать художественную позу, когда она изображает статую."),
+	DOLL_STATUE_ATTENTION(PresetColour.BASE_TAN, "Смирно", "DPAT", "Приказать этой кукле стоять смирно, когда она изображает статую."),
+	DOLL_STATUE_STANDING_SPLIT(PresetColour.BASE_TAN, "Складка стоя", "DPSS", "Приказать этой кукле выполнять складку стоя, когда она изображает статую."),
+	DOLL_STATUE_MISSIONARY(PresetColour.BASE_TAN, "Миссионерская", "DPMI", "Приказать этой кукле лежать в миссионерской позе, когда она изображает статую."),
+	DOLL_STATUE_ALL_FOURS(PresetColour.BASE_TAN, "На четвереньках", "DPAF", "Приказать этой кукле встать на четвереньки, когда она изображает статую."),
+	DOLL_STATUE_SQUATTING(PresetColour.BASE_TAN, "На корточках", "DPSQ", "Приказать этой кукле сесть на корточки с разведенными ногами и руками за головой, когда она изображает статую."),
+	DOLL_STATUE_BRIDGE(PresetColour.BASE_TAN, "Мостик", "DPBR", "Приказать этой кукле выполнять акробатический мостик, когда она изображает статую."),
 
-	SECURITY_ENTRANCE_PRIORITY(PresetColour.BASE_GOLD, "Entrance Priority", "EP", "This slave will be chosen above others to be positioned at the entrance. (If multiple slaves have this permission, the one who gets there first will remain there.)"),
-	SECURITY_ANSWER_DOOR(PresetColour.BASE_GREEN_LIGHT, "Answer Door", "AD", "If this slave is located at the entrance, they will answer the door instead of Rose."),
+	SECURITY_ENTRANCE_PRIORITY(PresetColour.BASE_GOLD, "Приоритет у входа", "EP", "Эту рабыню будут выбирать чаще других, чтобы она стояла у входа. (Если это право есть у нескольких рабынь, там останется та, что придет первой.)"),
+	SECURITY_ANSWER_DOOR(PresetColour.BASE_GREEN_LIGHT, "Открывать дверь", "AD", "Если эта рабыня находится у входа, она будет открывать дверь вместо Роуз."),
 	
-	BEDROOM_GREETING(PresetColour.GENERIC_MINOR_GOOD, "Greeting", "BG", "Instruct this slave to greet you whenever you enter your room."),
-	BEDROOM_CLEAN(PresetColour.BASE_BLUE_LIGHT, "Cleaning", "BC", "Tell this slave to keep your room clean."),
-	BEDROOM_WAKE_UP(PresetColour.BASE_YELLOW_LIGHT, "Waking", "BK", "Allow this slave to serve as your alarm clock, allowing them to rouse you from your slumber at the instructed time."),
-	BEDROOM_HELP_WASH(PresetColour.BASE_BLUE, "Washing", "BW", "Have this slave assist you in the bathroom when you wash yourself. (This will override the slave's 'Cleanliness' permissions, as they will get washed with you.)"),
+	BEDROOM_GREETING(PresetColour.GENERIC_MINOR_GOOD, "Приветствие", "BG", "Приказать этой рабыне приветствовать вас каждый раз, когда вы входите в комнату."),
+	BEDROOM_CLEAN(PresetColour.BASE_BLUE_LIGHT, "Уборка", "BC", "Велеть этой рабыне поддерживать чистоту в вашей комнате."),
+	BEDROOM_WAKE_UP(PresetColour.BASE_YELLOW_LIGHT, "Пробуждение", "BK", "Позволить этой рабыне служить вашим будильником, чтобы она будила вас от глубокого сна в назначенное время."),
+	BEDROOM_HELP_WASH(PresetColour.BASE_BLUE, "Мытье", "BW", "Эта рабыня будет помогать вам в ванной, когда вы моетесь. (Это переопределит настройки «Чистоты» рабыни, так как её будут мыть вместе с вами.)"),
 	
-	BEDROOM_SLEEP_FLOOR(PresetColour.GENERIC_MINOR_BAD, "Sleep on Floor", "BSF", "Tell this slave that they must sleep on the floor of your room."),
-	BEDROOM_SLEEP_ON_BED(PresetColour.BASE_PURPLE_LIGHT, "Sleep on Bed", "BSO", "Permit this slave to sleep on your bed, but not under the covers."),
-	BEDROOM_SLEEP_IN_BED(PresetColour.BASE_PINK, "Sleep in Bed", "BSI", "Permit this slave to sleep in your bed beside you, under the covers."),
+	BEDROOM_SLEEP_FLOOR(PresetColour.GENERIC_MINOR_BAD, "Спать на полу", "BSF", "Приказать этой рабыне спать на полу в вашей комнате."),
+	BEDROOM_SLEEP_ON_BED(PresetColour.BASE_PURPLE_LIGHT, "Спать на кровати", "BSO", "Разрешить этой рабыне спать на вашей кровати, но не под одеялом."),
+	BEDROOM_SLEEP_IN_BED(PresetColour.BASE_PINK, "Спать в кровати", "BSI", "Разрешить этой рабыне спать в вашей кровати рядом с вами, под одеялом."),
 	
 	
-	SPA_SHOWERING(PresetColour.BASE_BLUE, "Showering", "SSH", "Have this slave assist you in the changing room's showers when you wash yourself. (This will override the slave's 'Cleanliness' permissions, as they will get washed with you.)"),
-	SPA_BATHING(PresetColour.BASE_AQUA, "Bathing", "SBA", "Have this slave join you in the spa when you bathe. (This will override the slave's 'Cleanliness' permissions, as they will get washed with you.)"),
-	SPA_STRIP_TO_BATHE(PresetColour.BASE_PERIWINKLE, "Bathe Naked", "SBN", "Have this slave strip off all of their clothes when joining you to bathe in the spa."),
-	SPA_MASSAGE(PresetColour.BASE_BROWN, "Massage", "SMA", "Have this slave available for giving you a massage."),
-	SPA_SAUNA(PresetColour.BASE_ROSE, "Sauna", "SSA", "Have this slave join you when you use the sauna (once you've constructed that extension)."),
-	SPA_POOL(PresetColour.BASE_BLUE_LIGHT, "Swimming", "SPA", "Have this slave join you for a swim when you use the pool (once you've constructed that extension)."),
+	SPA_SHOWERING(PresetColour.BASE_BLUE, "Принятие душа", "SSH", "Эта рабыня будет помогать вам в душевой комнате, когда вы моетесь. (Это переопределит настройки «Чистоты» рабыни, так как её будут мыть вместе с вами.)"),
+	SPA_BATHING(PresetColour.BASE_AQUA, "Купание", "SBA", "Эта рабыня будет сопровождать вас в спа, когда вы принимаете ванну. (Это переопределит настройки «Чистоты» рабыни, так как её будут мыть вместе с вами.)"),
+	SPA_STRIP_TO_BATHE(PresetColour.BASE_PERIWINKLE, "Купаться нагишом", "SBN", "Эта рабыня будет полностью раздеваться, когда присоединяется к вам для купания в спа."),
+	SPA_MASSAGE(PresetColour.BASE_BROWN, "Массаж", "SMA", "Эта рабыня будет доступна для массажа."),
+	SPA_SAUNA(PresetColour.BASE_ROSE, "Сауна", "SSA", "Эта рабыня будет сопровождать вас в сауне (после того, как вы построите это расширение)."),
+	SPA_POOL(PresetColour.BASE_BLUE_LIGHT, "Плавание", "SPA", "Эта рабыня будет плавать вместе с вами, когда вы пользуетесь бассейном (после того, как вы построите это расширение)."),
 
 //	SPA_RECEPTION(PresetColour.BASE_BROWN, "Receptionist", "SRA", "Assign this slave to work at the spa's reception."),
 //	SPA_ASSISTANT(PresetColour.BASE_GREEN_LIME, "Assistant", "SPA", "Assign this slave to work as one of the assistants within the spa proper."),

@@ -25,99 +25,99 @@ public enum SpellUpgrade {
 			1,
 			SpellSchool.FIRE,
 			"fireball_lingering_flames",
-			"Lingering Flames",
-			"Arcane flames continue to burn away at the target for some time after Fireball's impact.",
+			"Тлеющие Огни",
+			"Arcane огни продолжают выжигать цель еще некоторое время после попадания Огненного шара.",
 			null, Util.newArrayListOfValues(
-					"<b>5</b> [style.colourFire(Fire Damage)] per turn for [style.colourGood(2 turns)]")),
+					"<b>5</b> [style.colourFire(Огненный урон)] за ход в течение [style.colourGood(2 ходов)]")),
 	FIREBALL_2(2,
 			SpellSchool.FIRE,
 			"fireball_twin_comets",
-			"Twin Comets",
-			"Fireball splits into two comets immediately after being cast, and, seemingly with a mind of their own, prioritise different targets where at all possible.",
+			"Близнецы-кометы",
+			"Огненный шар сразу после сотворения разделяется на две кометы, которые, кажется, обретают собственный разум и стараются выбирать разные цели, если это возможно.",
 			null, Util.newArrayListOfValues(
-					"Fires [style.colourExcellent(two)] Fireballs, doing <b>15</b> [style.colourFire(Fire Damage)] each")),
+					"Выпускает [style.colourExcellent(два)] Огненных шара, каждый из которых наносит <b>15</b> [style.colourFire(Огненный урон)]")),
 	FIREBALL_3(5,
 			SpellSchool.FIRE,
 			"fireball_burning_fury",
-			"Burning Fury",
-			"Fireball's twin comets now burn with an intense fury, doing considerably more damage.",
+			"Пылающая ярость",
+			"Теперь кометы-близнецы Огненного шара пылают с неистовой яростью, нанося значительно больше урона.",
 			null, Util.newArrayListOfValues(
-					"Twin Comets now do <b>30</b> [style.colourFire(Fire Damage)] each")),
+					"Близнецы-кометы теперь наносят по <b>30</b> [style.colourFire(Огненный урон)] каждая")),
 	
 	
 	FLASH_1(true,
 			2,
 			SpellSchool.FIRE,
 			"flash_secondary_sparks",
-			"Secondary Sparks",
-			"After the initial flash, a series of dazzling sparks crackle and burst into life in front of the target's face.",
+			"Вторичные искры",
+			"После первой вспышки перед лицом цели с треском разлетается целая серия ослепительных искр.",
 			null, Util.newArrayListOfValues(
-					"Flash now [style.colourExcellent(dazzles)] the target for [style.colourTerrible(-2)] [style.colourActionPoints(action points)]")),
+					"Теперь [style.colourExcellent(ослепляет)] цель на [style.colourTerrible(-2)] [style.colourActionPoints(очков действия)]")),
 	FLASH_2(5,
 			SpellSchool.FIRE,
 			"flash_arcing_flash",
-			"Arcing Flash",
-			"A secondary Flash arcs off from the first, seeking out another target to dazzle.",
+			"Дуговой Всплеск",
+			"От первого всплеска отлетает дуга, ищущая другую цель, чтобы ослепить её.",
 			null, Util.newArrayListOfValues(
-					"Fires [style.colourExcellent(two)] Flashes")),
+					"Выпускает [style.colourExcellent(два)] Всплеска")),
 	FLASH_3(3,
 			SpellSchool.FIRE,
 			"flash_efficient_burn",
-			"Efficient Burn",
-			"By focusing its power into a smaller, more concentrated burst, the caster is able to reduce the cost of Flash, while losing none of its effectiveness.",
+			"Эффективное Выжигание",
+			"Концентрируя свою мощь в более узком и плотном импульсе, заклинатель способен снизить стоимость Всплеска, не теряя при этом его эффективности.",
 			null, Util.newArrayListOfValues(
-					"[style.colourExcellent(Reduces)] base cost to [style.boldMana(25)] aura")),
+					"[style.colourExcellent(Снижает)] базовую стоимость до [style.boldMana(25)] ауры")),
 	
 	
 	CLOAK_OF_FLAMES_1(true,
 			2,
 			SpellSchool.FIRE,
 			"cloak_of_flames_incendiary",
-			"Incendiary",
-			"With every strike, a jet of fire from the Cloak of Flames shoots forwards to burn the enemy. Damage done is affected by the wearer's fire damage, and the target's fire shielding.",
+			"Зажигательный",
+			"С каждым ударом струя огня из Плаща Огней вырывается вперед, чтобы сжечь врага. Наносимый урон зависит от урона огнем владельца и огненного щита цели.",
 			null, Util.newArrayListOfValues(
-					"Unarmed attacks deal +1 damage per caster level",
-					"Unarmed attacks deal [style.boldFire(fire damage)]")),
+					"Атаки без оружия наносят +1 ед. урона за каждый уровень заклинателя",
+					"Безоружные атаки наносят [style.boldFire(урон огнем)]")),
 	CLOAK_OF_FLAMES_2(1,
 			SpellSchool.FIRE,
 			"cloak_of_flames_inferno",
-			"Inferno",
-			"The Cloak of Flames imbues the wearer with the knowledge of how to deal the most fire damage possible.",
+			"Инферно",
+			"Плащ Огней наделяет владельца знанием того, как наносить максимально возможный урон огнем.",
 			null, Util.newArrayListOfValues(
-					"[style.colourExcellent(Gain)] +25 [style.boldFire(Fire Damage)]")),
+					"[style.colourExcellent(Получите)] +25 [style.boldFire(Урона огнем)]")),
 	CLOAK_OF_FLAMES_3(2,
 			SpellSchool.FIRE,
 			"cloak_of_flames_ring_of_fire",
-			"Ring of Fire",
-			"Any enemy that approaches the Cloak of Flames is now greeted by a retaliatory burst of fire. Damage done is affected by the wearer's fire damage, and the attacker's fire shielding.",
+			"Кольцо Огня",
+			"Любой враг, приближающийся к Плащу Огней, встречает ответную вспышку пламени. Наносимый урон зависит от урона огнем владельца и огненного щита атакующего.",
 			null, Util.newArrayListOfValues(
-					"<b>Melee</b> or <b>unarmed</b> attackers take <b>5</b> [style.colourFire(Fire Damage)]")),
+					"<b>Ближние</b> или <b>безоружные</b> атакующие получают <b>5</b> [style.colourFire(Урона огнем)]")),
 
 	
 	ELEMENTAL_FIRE_1(true,
 			5,
 			SpellSchool.FIRE,
 			"elemental_fire_wildfire",
-			"Wildfire",
-			"The summoned elemental imbues all allies with the knowledge of how best to harness arcane fire.",
+			"Стихийный огонь",
+			"Призванный элементаль наделяет всех союзников знанием того, как лучше всего обуздать арканное пламя.",
 			null, Util.newArrayListOfValues(
-					"[style.colourExcellent(All allies gain)] +20 [style.boldFire(Fire Damage)]")),
+					"[style.colourExcellent(Все союзники получают)] +20 [style.boldFire(Урона огнем)]")),
 	ELEMENTAL_FIRE_2(5,
 			SpellSchool.FIRE,
 			"elemental_fire_burning_desire",
-			"Burning Desire",
-			"The Fire elemental is able to harness the lustful properties of the arcane in order to ignite a burning desire for sex in the hearts and minds of their enemies.",
+			"Жгучее желание",
+			"Огненный элементаль способен использовать похотливые свойства арканы, чтобы разжечь жгучую жажду секса в сердцах и умах своих врагов.",
 			null, Util.newArrayListOfValues(
-					"[style.colourTerrible(All enemies suffer)] -25 [style.boldLust("+Attribute.RESISTANCE_LUST.getName()+")]")),
+					"[style.colourTerrible(Все враги получают)] -25 [style.boldLust(, "+Attribute.RESISTANCE_LUST.getName()+")]")),
 	ELEMENTAL_FIRE_3A(5,
 			SpellSchool.FIRE,
 			"elemental_fire_servant_of_fire",
-			"Servant of Fire",
-			"The summoner swears to be subservient to the school of Fire, and while their elemental is bound to this form, the elemental is able to draw as much energy from the summoner as they wish.",
+			"Слуга Огня",
+			"Призыватель клянется быть покорным школе Огня, и пока их элементаль привязан к этой форме, элементаль может черпать из призывателя столько энергии, сколько пожелает.",
 			null, Util.newArrayListOfValues(
-					"While summoned:",
-					"[style.colourFire(Elemental)]: +100% [style.colourExcellent(Non-Seduction Damage)]",
-					"[style.colourArcane(Caster)]: -50% [style.colourHealth(maximum "+Attribute.HEALTH_MAXIMUM.getName()+")]")) {
+					"Пока призван:",
+					"[style.colourFire(Элементаль)]: +100% [style.colourExcellent(Урон без соблазнения)]",
+					"[style.colourArcane(Заклинатель)]: -50% [style.colourHealth(макс. "+Attribute.HEALTH_MAXIMUM.getName()+")]")) {
 
 		public boolean isAvailable(GameCharacter caster) {
 			return !caster.hasSpellUpgrade(ELEMENTAL_FIRE_3B);
@@ -125,19 +125,19 @@ public enum SpellUpgrade {
 		
 		public String getUnavailableReason(GameCharacter caster) {
 			if(this.isAvailable(caster) && !caster.hasSpellUpgrade(this)) {
-				return "[style.boldMinorBad(Mutually exclusive with 'Binding of Fire'!)]";
+				return "[style.boldMinorBad(Взаимоисключает «Связь Огня»!)]";
 			} else {
-				return "[style.boldBad(Mutually exclusive with 'Binding of Fire'!)]";
+				return "[style.boldBad(Взаимоисключает «Связь Огня»!)]";
 			}
 		}
 	},
 	ELEMENTAL_FIRE_3B(10,
 			SpellSchool.FIRE,
 			"elemental_fire_binding_of_fire",
-			"Binding of Fire",
-			"The summoner assumes complete dominance over the school of Fire, and while their elemental is bound to this form, they are forced to share all of their secrets.",
+			"Связь Огня",
+			"Призыватель устанавливает полный контроль над школой Огня, и пока их элементаль привязан к этой форме, тот вынужден делиться всеми своими секретами.",
 			null, Util.newArrayListOfValues(
-					"While summoned:",
+					"Пока призван:",
 					"[style.colourArcane(Caster)]: +25 "+Attribute.DAMAGE_FIRE.getColouredName("b"),
 					"[style.colourArcane(Caster)]: +10 "+Attribute.RESISTANCE_FIRE.getColouredName("b"))) {
 
@@ -147,9 +147,9 @@ public enum SpellUpgrade {
 		
 		public String getUnavailableReason(GameCharacter caster) {
 			if(this.isAvailable(caster) && !caster.hasSpellUpgrade(this)) {
-				return "[style.boldMinorBad(Mutually exclusive with 'Servant of Fire'!)]";
+				return "[style.boldMinorBad(Взаимоисключает с «Слугой Огня»!)]";
 			} else {
-				return "[style.boldBad(Mutually exclusive with 'Servant of Fire'!)]";
+				return "[style.boldBad(Взаимоисключает с «Слугой Огня»!)]";
 			}
 		}
 	},
@@ -160,115 +160,115 @@ public enum SpellUpgrade {
 			1,
 			SpellSchool.WATER,
 			"ice_shard_freezing_fog",
-			"Freezing Fog",
-			"Ice Shard explodes on impact, saturating the air around the target with arcane crystals. These crystals then quickly condense into a freezing fog, which saps the target's ability to cast spells.",
+			"Ледяной туман",
+			"Ледяной осколок взрывается при попадании, насыщая воздух вокруг цели кристаллами Arcane. Эти кристаллы быстро конденсируются в ледяной туман, который лишает цель способности творить заклинания.",
 			null, Util.newArrayListOfValues(
-					"<b>-20</b> "+Attribute.SPELL_COST_MODIFIER.getColouredName("b")+" for [style.colourGood(3 turns)]")),
+					"<b>-20</b> "+Attribute.SPELL_COST_MODIFIER.getColouredName("b")+" на [style.colourGood(3 хода)]")),
 	ICE_SHARD_2(2,
 			SpellSchool.WATER,
 			"ice_shard_cold_snap",
-			"Cold Snap",
-			"As Ice Shard travels through the freezing layer of fog left behind by a previous impact, the crystals in the air will explode, dealing extra damage.",
+			"Ледяной порыв",
+			"Когда Ледяной осколок пролетает сквозь слой ледяного тумана, оставленного предыдущим попаданием, кристаллы в воздухе взрываются, нанося дополнительный урон.",
 			null, Util.newArrayListOfValues(
-					"Ice Shard [style.boldExcellent(critically hits)] targets affected by Freezing Fog")),
+					"Ледяной осколок [style.boldExcellent(критически поражает)] цели, находящиеся под воздействием Ледяного тумана")),
 	ICE_SHARD_3(5,
 			SpellSchool.WATER,
 			"ice_shard_deep_freeze",
-			"Deep Freeze",
-			"When the crystals in freezing fog detonate, they instantly entomb any objects nearby in a case of thin ice, momentarily locking them in place.",
+			"Глубокая заморозка",
+			"Когда кристаллы в морозном тумане детонируют, они мгновенно заключают любые объекты поблизости в корку тонкого льда, на мгновение обездвиживая их.",
 			null, Util.newArrayListOfValues(
-					"When Ice Shard [style.boldExcellent(critically hits)] a target affected by Freezing Fog,",
-					"that target suffers [style.colourTerrible(-1)] [style.colourActionPoints(action points)]")),
+					"Когда Ледяной осколок [style.boldExcellent(критически поражает)] цель под воздействием Морозного тумана,",
+					"эта цель теряет [style.colourTerrible(-1)] [style.colourActionPoints(очки действия)]")),
 
 	RAIN_CLOUD_1(true,
 			1,
 			SpellSchool.WATER,
 			"rain_cloud_deep_chill",
-			"Deep Chill",
-			"The arcane rain seeps into the target's bones, chilling them to the core.",
+			"Глубокий холод",
+			"Арканальный дождь просачивается в кости цели, пробирая её до самого мозга костей.",
 			null, Util.newArrayListOfValues(
-					"Adds <b>-25</b> "+Attribute.RESISTANCE_ICE.getColouredName("b")+" to Rain Cloud's effects")),
+					"Добавляет <b>-25</b> "+Attribute.RESISTANCE_ICE.getColouredName("b")+" к эффектам Дождевого облака")),
 	RAIN_CLOUD_2(3,
 			SpellSchool.WATER,
 			"rain_cloud_downpour",
-			"Downpour",
-			"Sheets of torrential arcane rain sweep into the target's eyes, causing them to miss the occasional attack.",
+			"Ливень",
+			"Потоки проливного арканального дождя бьют цели в глаза, заставляя её время от времени промахиваться при атаке.",
 			null, Util.newArrayListOfValues(
-					"Adds <b>-5</b> "+Attribute.ENERGY_SHIELDING.getColouredName("b")+" to Rain Cloud's effects")),
+					"Добавляет <b>-5</b> "+Attribute.ENERGY_SHIELDING.getColouredName("b")+" к эффектам Дождевого облака")),
 	RAIN_CLOUD_3(5,
 			SpellSchool.WATER,
 			"rain_cloud_cloud_burst",
-			"Cloud Burst",
-			"The anger and annoyance of the rain cloud's target is harnessed as energy, and each time they are hit by a critical attack, the cloud grows in strength and size.",
+			"Облачный взрыв",
+			"Гнев и раздражение цели дождевого облака преобразуются в энергию: каждый раз, когда цель получает критический удар, облако становится сильнее и больше.",
 			null, Util.newArrayListOfValues(
-					"If Rain Cloud's target is hit by any critical attack:",
-					"The duration is reset to [style.colourGood(6 turns)]",
-					"<b>and</b> "+Attribute.SPELL_COST_MODIFIER.getColouredName("b")+" debuff is increased to -50")),
+					"Если цель Дождевого облака получает любой критический удар:",
+					"Длительность сбрасывается до [style.colourGood(6 ходов)]",
+					"<b>и</b> "+Attribute.SPELL_COST_MODIFIER.getColouredName("b")+" дебафф увеличивается до -50")),
 
 	SOOTHING_WATERS_1_CLEAN(true,
 			2,
 			SpellSchool.WATER,
 			"soothing_waters_clean",
-			"Cleansing Waters",
-			"The power of Soothing Waters now spreads over the target's body and into their clothes, cleaning them of any dirty fluids.",
+			"Очищающие воды",
+			"Сила Успокаивающих вод теперь распространяется по телу цели и пропитывает её одежду, очищая её от любых грязных жидкостей.",
 			null, Util.newArrayListOfValues(
-					"Soothing Waters [style.boldAqua(cleans all worn clothing)]",
-					"Soothing Waters [style.boldAqua(cleans all fluids from body)]")),
+					"Успокаивающие воды [style.boldAqua(очищают всю надетую одежду)]",
+					"Успокаивающие воды [style.boldAqua(очищают тело от всех жидкостей)]")),
 	SOOTHING_WATERS_2_CLEAN(true,
 			5,
 			SpellSchool.WATER,
 			"soothing_waters_clean_orifices",
-			"Deep Clean",
-			"Soothing Waters now washes deep into the target's body, cleaning out all of their dirty orifices.",
+			"Глубокая очистка",
+			"«Успокаивающие воды» теперь проникают глубоко в тело цели, вымывая грязь из всех её отверстий.",
 			null, Util.newArrayListOfValues(
-					"Soothing Waters [style.boldAqua(drains [style.fluid(250)] of fluid from all orifices)]")),
+					"«Успокаивающие воды» [style.boldAqua(вымывают [style.fluid(250)] жидкости из всех отверстий)]")),
 	SOOTHING_WATERS_1(true,
 			5,
 			SpellSchool.WATER,
 			"soothing_waters_arcane_springs",
-			"Arcane Springs",
-			"The arcane power infused into Soothing Waters is massively increased, allowing the spell to additionally restore a target's aura.",
+			"Аркана Springs",
+			"Аркана-сила, вложенная в «Успокаивающие воды», значительно возрастает, позволяя заклинанию дополнительно восстанавливать ауру цели.",
 			null, Util.newArrayListOfValues(
-					"Soothing Waters [style.boldExcellent(additionally)] restores <b>20%</b> "+Attribute.MANA_MAXIMUM.getColouredName("b"))),
+					"«Успокаивающие воды» [style.boldExcellent(дополнительно)] восстанавливают <b>20%</b> "+Attribute.MANA_MAXIMUM.getColouredName("b"))),
 	SOOTHING_WATERS_2(10,
 			SpellSchool.WATER,
 			"soothing_waters_rejuvenation",
-			"Rejuvenation",
-			"The life-giving properties of water are fully harnessed by the arcane, restoring a huge amount of energy to the target of Soothing Water.",
+			"Омоложение",
+			"Живительные свойства воды полностью подчинены аркане, восстанавливая огромное количество энергии цели «Успокаивающих вод».",
 			null, Util.newArrayListOfValues(
-					"Soothing Waters' restoration [style.boldExcellent(increased)] to <b>40%</b> "+Attribute.HEALTH_MAXIMUM.getColouredName("b"))),
+					"Восстановление «Успокаивающих вод» [style.boldExcellent(увеличено)] до <b>40%</b> "+Attribute.HEALTH_MAXIMUM.getColouredName("b"))),
 	SOOTHING_WATERS_3(10,
 			SpellSchool.WATER,
 			"soothing_waters_bouncing_orb",
-			"Bouncing Orbs",
-			"Once cast, Soothing Waters now splits into several orbs, each one seeking out an ally to heal.",
+			"Прыгающие сферы",
+			"Теперь после сотворения Успокаивающие воды разделяются на несколько сфер, каждая из которых ищет союзника для исцеления.",
 			null, Util.newArrayListOfValues(
-					"Soothing Waters heals [style.boldExcellent(all allies)] for <b>10%</b> "+Attribute.HEALTH_MAXIMUM.getColouredName("b")+" and <b>10%</b> "+Attribute.MANA_MAXIMUM.getColouredName("b"))),
+					"Успокаивающие воды исцеляют [style.boldExcellent(всех союзников)] на <b>10%</b> "+Attribute.HEALTH_MAXIMUM.getColouredName("b")+" и <b>10%</b> "+Attribute.MANA_MAXIMUM.getColouredName("b"))),
 
 	ELEMENTAL_WATER_1(true,
 			5,
 			SpellSchool.WATER,
 			"elemental_water_crashing_waves",
-			"Crashing Waves",
-			"The Water elemental continuously sends forth waves of freezing water to crash upon their enemies, making them far more susceptible to ice attacks.",
+			"Штормовые волны",
+			"Водный элементаль непрерывно посылает волны ледяной воды, обрушивающиеся на врагов, что делает их гораздо более уязвимыми к атакам льдом.",
 			null, Util.newArrayListOfValues(
-					"[style.colourExcellent(All allies gain)] +20 [style.boldIce(Ice Damage)]")),
+					"[style.colourExcellent(Все союзники получают)] +20 [style.boldIce(Урон льдом)]")),
 	ELEMENTAL_WATER_2(5,
 			SpellSchool.WATER,
 			"elemental_water_calm_waters",
-			"Calm Waters",
-			"The Water elemental projects the image of calm, steady waters into the mind of any ally who starts to get turned on, helping them to control their lust.",
+			"Спокойные воды",
+			"Водный элементаль проецирует образ спокойных, ровных вод в разум любого союзника, который начинает возбуждаться, помогая ему контролировать свою похоть.",
 			null, Util.newArrayListOfValues(
-					"[style.colourExcellent(All allies gain)] +5 "+Attribute.RESISTANCE_LUST.getColouredName("b"))),
+					"[style.colourExcellent(Все союзники получают)] +5 "+Attribute.RESISTANCE_LUST.getColouredName("b"))),
 	ELEMENTAL_WATER_3A(5,
 			SpellSchool.WATER,
 			"elemental_water_servant_of_water",
-			"Servant of Water",
-			"The summoner swears to be subservient to the school of Water, and while their elemental is bound to this form, the elemental is able to draw as much energy from the summoner as they wish.",
+			"Слуга Воды",
+			"Призыватель клянется быть покорным стихии Воды, и пока его элементаль связан с этой формой, элементаль может черпать из призывателя столько энергии, сколько пожелает.",
 			null, Util.newArrayListOfValues(
-					"While summoned:",
-					"[style.colourIce(Elemental)]: +100% [style.colourExcellent(Non-Seduction Damage)]",
-					"[style.colourArcane(Caster)]: -50% [style.colourHealth(maximum "+Attribute.HEALTH_MAXIMUM.getName()+")]")) {
+					"Пока призван:",
+					"[style.colourIce(Элементаль)]: +100% [style.colourExcellent(Не-соблазняющий урон)]",
+					"[style.colourArcane(Заклинатель)]: -50% [style.colourHealth(макс. "+Attribute.HEALTH_MAXIMUM.getName()+")]")) {
 
 		public boolean isAvailable(GameCharacter caster) {
 			return !caster.hasSpellUpgrade(ELEMENTAL_WATER_3B);
@@ -276,21 +276,21 @@ public enum SpellUpgrade {
 		
 		public String getUnavailableReason(GameCharacter caster) {
 			if(this.isAvailable(caster) && !caster.hasSpellUpgrade(this)) {
-				return "[style.boldMinorBad(Mutually exclusive with 'Binding of Water'!)]";
+				return "[style.boldMinorBad(Взаимоисключает с «Узами Воды»!)]";
 			} else {
-				return "[style.boldBad(Mutually exclusive with 'Binding of Water'!)]";
+				return "[style.boldBad(Взаимоисключает с «Узами Воды»!)]";
 			}
 		}
 	},
 	ELEMENTAL_WATER_3B(10,
 			SpellSchool.WATER,
 			"elemental_water_binding_of_water",
-			"Binding of Water",
-			"The summoner assumes complete dominance over the school of Water, and while their elemental is bound to this form, they are forced to share all of their secrets.",
+			"Узы Воды",
+			"Призыватель обретает полное господство над школой Воды, и пока его элементаль привязан к этой форме, он вынужден делиться всеми своими секретами.",
 			null, Util.newArrayListOfValues(
-					"While summoned:",
-					"[style.colourArcane(Caster)]: +25 "+Attribute.DAMAGE_ICE.getColouredName("b"),
-					"[style.colourArcane(Caster)]: +10 "+Attribute.RESISTANCE_ICE.getColouredName("b"))) {
+					"Пока призван:",
+					"[style.colourArcane(Заклинатель)]: +25 "+Attribute.DAMAGE_ICE.getColouredName("b"),
+					"[style.colourArcane(Заклинатель)]: +10 "+Attribute.RESISTANCE_ICE.getColouredName("b"))) {
 
 		public boolean isAvailable(GameCharacter caster) {
 			return !caster.hasSpellUpgrade(ELEMENTAL_WATER_3A);
@@ -298,9 +298,9 @@ public enum SpellUpgrade {
 		
 		public String getUnavailableReason(GameCharacter caster) {
 			if(this.isAvailable(caster) && !caster.hasSpellUpgrade(this)) {
-				return "[style.boldMinorBad(Mutually exclusive with 'Servant of Water'!)]";
+				return "[style.boldMinorBad(Взаимоисключает с «Слугой Воды»!)]";
 			} else {
-				return "[style.boldBad(Mutually exclusive with 'Servant of Water'!)]";
+				return "[style.boldBad(Взаимоисключает с «Слугой Воды»!)]";
 			}
 		}
 	},
@@ -311,111 +311,109 @@ public enum SpellUpgrade {
 			2,
 			SpellSchool.AIR,
 			"poison_vapours_choking_haze",
-			"Choking Haze",
-			"The clouds of Poison Vapours become far thicker, becoming a stifling, choking haze that causes the target to occasionally miss their attacks.",
+			"Удушающая дымка",
+			"Облака ядовитых испарений становятся гораздо плотнее, превращаясь в удушающую, сжимающую горло дымку, из-за которой цель периодически промахивается при атаках.",
 			null, Util.newArrayListOfValues(
-					"Poison Vapours additionally applies <b>-5</b> "+Attribute.ENERGY_SHIELDING.getColouredName("b"))),
+					"Ядовитые пары дополнительно накладывают <b>-5</b> "+Attribute.ENERGY_SHIELDING.getColouredName("b"))),
 	POISON_VAPOURS_2(5,
 			SpellSchool.AIR,
 			"poison_vapours_arcane_sickness",
-			"Arcane Sickness",
-			"Poison Vapours become infused with a potent arcane sickness, which steadily drains the target's arcane aura.",
+			"Arcane Болезнь",
+			"Ядовитые пары наполняются мощной arcane болезнью, которая неуклонно истощает арканную ауру цели.",
 			null, Util.newArrayListOfValues(
-					"Poison Vapours additionally drains <b>10</b> "+Attribute.MANA_MAXIMUM.getColouredName("b")+" per turn")),
+					"Ядовитые пары дополнительно истощают <b>10</b> "+Attribute.MANA_MAXIMUM.getColouredName("b")+" за ход")),
 	POISON_VAPOURS_3(2,
 			SpellSchool.AIR,
 			"poison_vapours_weakening_cloud",
-			"Weakening Cloud",
-			"Poison Vapours starts to seep into the target's body, significantly weakening their attacks.",
+			"Ослабляющее облако",
+			"Ядовитые пары начинают просачиваться в тело цели, значительно ослабляя её атаки.",
 			null, Util.newArrayListOfValues(
-					"Poison Vapours additionally applies <b>-15</b> "+Attribute.DAMAGE_PHYSICAL.getColouredName("b"),
-					"Poison Vapours additionally applies <b>-25</b> "+Attribute.CRITICAL_DAMAGE.getColouredName("b"))),
+					"Ядовитые пары дополнительно накладывают <b>-15</b> "+Attribute.DAMAGE_PHYSICAL.getColouredName("b"),
+					"Ядовитые пары дополнительно накладывают <b>-25</b> "+Attribute.CRITICAL_DAMAGE.getColouredName("b"))),
 
 	VACUUM_1(true,
 			5,
 			SpellSchool.AIR,
 			"vacuum_secondary_voids",
-			"Secondary Voids",
-			"The Vacuum increases in strength, causing the target to stumble and struggle to land their attacks.",
+			"Вторичные пустоты",
+			"Вакуум становится сильнее, заставляя цель спотыкаться и с трудом нанося удары.",
 			null,
 			Util.newArrayListOfValues(
-					"Vacuum now applies:",
+					"Вакуум теперь накладывает:",
 					"<b>-15</b> "+Attribute.CRITICAL_DAMAGE.getColouredName("b"),
 					"<b>-10</b> "+Attribute.ENERGY_SHIELDING.getColouredName("b"))),
 	VACUUM_2(2,
 			SpellSchool.AIR,
 			"vacuum_suction",
-			"Suction",
-			"The Vacuum is now so powerful that there's a chance for the target to have a random outer layer of their clothing sucked off to the floor.<br/>"
-				+"[style.italicsMinorBad(Clothing stripping only affects non-unique NPCs.)]",
+			"Всасывание",
+			"Вакуум стал настолько мощным, что существует шанс, при котором случайный верхний слой одежды цели будет сдернут на пол.<br/>[style.italicsMinorBad(Срывание одежды влияет только на обычных NPC.)]",
 			null,
 			Util.newArrayListOfValues(
-					"Vacuum now applies:",
+					"Вакуум теперь накладывает:",
 					"<b>-25</b> "+Attribute.CRITICAL_DAMAGE.getColouredName("b"),
 					"<b>-20</b> "+Attribute.ENERGY_SHIELDING.getColouredName("b"),
-					"<b>10%</b> chance per turn of [style.boldExcellent(stripping)] clothing")),
+					"<b>10%</b> шанс [style.boldExcellent(срывания)] одежды каждый ход")),
 	VACUUM_3(4,
 			SpellSchool.AIR,
 			"vacuum_total_void",
-			"Total Void",
-			"The Vacuum's strength is overwhelming, and there's now a good chance for the target to have a random outer layer of their clothing sucked off to the floor.<br/>"
-				+"[style.italicsMinorBad(Clothing stripping only affects non-unique NPCs.)]",
+			"Полная пустота",
+			"Сила Вакуума становится сокрушительной, и теперь велик шанс, что случайный верхний слой одежды цели будет сдернут на пол.<br/>[style.italicsMinorBad(Срывание одежды влияет только на обычных NPC.)]",
 			null, Util.newArrayListOfValues(
-					"Vacuum now applies:",
+					"Вакуум теперь накладывает:",
 					"<b>-25</b> "+Attribute.CRITICAL_DAMAGE.getColouredName("b"),
 					"<b>-20</b> "+Attribute.ENERGY_SHIELDING.getColouredName("b"),
-					"Suction's strip chance [style.boldExcellent(increased)] to <b>25%</b>")),
+					"Шанс срывания при Всасывании [style.boldExcellent(увеличен)] до <b>25%</b>")),
 
 	PROTECTIVE_GUSTS_1(true,
 			1,
 			SpellSchool.AIR,
 			"protective_gusts_guiding_wind",
-			"Guiding Wind",
-			"Guided by the forces of the arcane, the summoned winds apply pressure to their target at key moments, helping them to avoid incoming attacks, as well as to land powerful strikes of their own.",
+			"Направляющий ветер",
+			"Ведомые силами арканы, призванные ветры в ключевые моменты оказывают давление на цель, помогая ей уклоняться от входящих атак, а также наносить мощные ответные удары.",
 			null, Util.newArrayListOfValues(
-					"Protective Gusts buff increased to <b>+2</b> "+Attribute.ENERGY_SHIELDING.getColouredName("b"),
-					"Protective Gusts additionally applies <b>+10</b> "+Attribute.DAMAGE_PHYSICAL.getColouredName("b"))),
+					"Бонус «Защитных порывов» увеличен до <b>+2</b> "+Attribute.ENERGY_SHIELDING.getColouredName("b"),
+					"«Защитные порывы» дополнительно накладывают <b>+10</b> "+Attribute.DAMAGE_PHYSICAL.getColouredName("b"))),
 	PROTECTIVE_GUSTS_2(1,
 			SpellSchool.AIR,
 			"protective_gusts_focused_blast",
-			"Focused Blast",
-			"With every strike, the arcane winds push forwards to help their target deal the most amount of damage possible.",
+			"Сосредоточенный взрыв",
+			"С каждым ударом арканные ветры толкают цель вперед, помогая ей наносить максимально возможный урон.",
 			null, Util.newArrayListOfValues(
-					"Protective Gusts buff increased to <b>+3</b> "+Attribute.ENERGY_SHIELDING.getColouredName("b"),
-					"Protective Gusts additionally applies <b>+25</b> "+Attribute.CRITICAL_DAMAGE.getColouredName("b"))),
+					"Бонус «Защитных порывов» увеличен до <b>+3</b> "+Attribute.ENERGY_SHIELDING.getColouredName("b"),
+					"«Защитные порывы» дополнительно накладывают <b>+25</b> "+Attribute.CRITICAL_DAMAGE.getColouredName("b"))),
 	PROTECTIVE_GUSTS_3(2,
 			SpellSchool.AIR,
 			"protective_gusts_lingering_presence",
-			"Lingering Presence",
-			"By conserving their energy for those times when most needed, the Protective Gusts are able to assist their target for a longer period of time.",
+			"Стойкое присутствие",
+			"Экономя энергию для тех моментов, когда она нужнее всего, «Защитные порывы» способны поддерживать цель в течение более длительного времени.",
 			null, Util.newArrayListOfValues(
-					"Protective Gusts now lasts for [style.boldGood(5 turns)]")),
+					"Защитные порывы теперь длятся [style.boldGood(5 ходов)]")),
 
 	ELEMENTAL_AIR_1(true,
 			5,
 			SpellSchool.AIR,
 			"elemental_air_whirlwind",
-			"Whirlwind",
-			"The Air elemental summons forth a swirling whirlwind, which disrupts and staggers all enemies.",
+			"Вихрь",
+			"Элементаль Воздуха призывает кружащийся вихрь, который сбивает с ног и оглушает всех врагов.",
 			null, Util.newArrayListOfValues(
-					"[style.colourTerrible(All enemies suffer)] -5 "+Attribute.ENERGY_SHIELDING.getColouredName("b"))),
+					"[style.colourTerrible(Все враги получают)] -5 "+Attribute.ENERGY_SHIELDING.getColouredName("b"))),
 	ELEMENTAL_AIR_2(5,
 			SpellSchool.AIR,
 			"elemental_air_vitalising_scents",
-			"Vitalising Scents",
-			"The Air elemental surrounds their allies with vitalising scents, imbuing them with the energy needed to dodge incoming attacks, as well as to land powerful strikes of their own.",
+			"Оживляющие ароматы",
+			"Элементаль Воздуха окружает союзников бодрящими ароматами, наделяя их энергией, необходимой для уклонения от атак и нанесения мощных ответных ударов.",
 			null, Util.newArrayListOfValues(
-					"[style.colourExcellent(All allies gain)] +10 "+Attribute.DAMAGE_PHYSICAL.getColouredName("b"),
-					"[style.colourExcellent(All allies gain)] +5 "+Attribute.ENERGY_SHIELDING.getColouredName("b"))),
+					"[style.colourExcellent(Все союзники получают)] +10 "+Attribute.DAMAGE_PHYSICAL.getColouredName("b"),
+					"[style.colourExcellent(Все союзники получают)] +5 "+Attribute.ENERGY_SHIELDING.getColouredName("b"))),
 	ELEMENTAL_AIR_3A(5,
 			SpellSchool.AIR,
 			"elemental_air_servant_of_air",
-			"Servant of Air",
-			"The summoner swears to be subservient to the school of Air, and while their elemental is bound to this form, the elemental is able to draw as much energy from the summoner as they wish.",
+			"Слуга Воздуха",
+			"Призыватель клянется быть преданным школе Воздуха, и пока его элементаль связан с этой формой, элементаль может черпать из призывателя столько энергии, сколько пожелает.",
 			null, Util.newArrayListOfValues(
-					"While summoned:",
-					"[style.colourAir(Elemental)]: +100% [style.colourExcellent(Non-Seduction Damage)]",
-					"[style.colourArcane(Caster)]: -50% [style.colourHealth(maximum "+Attribute.HEALTH_MAXIMUM.getName()+")]")) {
+					"Пока призван:",
+					"[style.colourAir(Элементаль)]: +100% [style.colourExcellent(Урон без соблазнения)]",
+					"[style.colourArcane(Заклинатель)]: -50% [style.colourHealth(макс. "+Attribute.HEALTH_MAXIMUM.getName()+")]")) {
 
 		public boolean isAvailable(GameCharacter caster) {
 			return !caster.hasSpellUpgrade(ELEMENTAL_AIR_3B);
@@ -423,21 +421,21 @@ public enum SpellUpgrade {
 		
 		public String getUnavailableReason(GameCharacter caster) {
 			if(this.isAvailable(caster) && !caster.hasSpellUpgrade(this)) {
-				return "[style.boldMinorBad(Mutually exclusive with 'Binding of Air'!)]";
+				return "[style.boldMinorBad(Взаимоисключает с «Узами Воздуха»!)]";
 			} else {
-				return "[style.boldBad(Mutually exclusive with 'Binding of Air'!)]";
+				return "[style.boldBad(Взаимоисключает с «Узами Воздуха»!)]";
 			}
 		}
 	},
 	ELEMENTAL_AIR_3B(10,
 			SpellSchool.AIR,
 			"elemental_air_binding_of_air",
-			"Binding of Air",
-			"The summoner assumes complete dominance over the school of Air, and while their elemental is bound to this form, they are forced to share all of their secrets.",
+			"Узы Воздуха",
+			"Призыватель обретает полный контроль над стихией Воздуха, и пока его элементаль привязан к этой форме, он вынужден раскрывать все свои секреты.",
 			null, Util.newArrayListOfValues(
-					"While summoned:",
-					"[style.colourArcane(Caster)]: +25 "+Attribute.DAMAGE_POISON.getColouredName("b"),
-					"[style.colourArcane(Caster)]: +10 "+Attribute.RESISTANCE_POISON.getColouredName("b"))) {
+					"Пока призван:",
+					"[style.colourArcane(Заклинатель)]: +25 "+Attribute.DAMAGE_POISON.getColouredName("b"),
+					"[style.colourArcane(Заклинатель)]: +10 "+Attribute.RESISTANCE_POISON.getColouredName("b"))) {
 
 		public boolean isAvailable(GameCharacter caster) {
 			return !caster.hasSpellUpgrade(ELEMENTAL_AIR_3A);
@@ -445,9 +443,9 @@ public enum SpellUpgrade {
 		
 		public String getUnavailableReason(GameCharacter caster) {
 			if(this.isAvailable(caster) && !caster.hasSpellUpgrade(this)) {
-				return "[style.boldMinorBad(Mutually exclusive with 'Servant of Air'!)]";
+				return "[style.boldMinorBad(Взаимоисключает с «Слугой Воздуха»!)]";
 			} else {
-				return "[style.boldBad(Mutually exclusive with 'Servant of Air'!)]";
+				return "[style.boldBad(Взаимоисключает с «Слугой Воздуха»!)]";
 			}
 		}
 	},
@@ -458,96 +456,96 @@ public enum SpellUpgrade {
 			2,
 			SpellSchool.EARTH,
 			"slam_ground_shake",
-			"Ground Shake",
-			"Slam continues on down into the earth after doing its damage, causing the ground beneath the target's feet to shake.",
+			"Дрожь земли",
+			"После нанесения урона удар продолжает уходить в землю, заставляя почву под ногами цели содрогаться.",
 			null, Util.newArrayListOfValues(
-					"<b>-10</b> "+Attribute.ENERGY_SHIELDING.getColouredName("b")+" for [style.colourGood(2 turns)]")),
+					"<b>-10</b> "+Attribute.ENERGY_SHIELDING.getColouredName("b")+" на [style.colourGood(2 хода)]")),
 	SLAM_2(2,
 			SpellSchool.EARTH,
 			"slam_aftershock",
-			"Aftershock",
-			"Just as the tremors start to die away, a huge surge of force rises up out of the ground to hit the target.",
+			"Отголосок",
+			"Как только дрожь начинает утихать, из земли вырывается мощный поток силы, поражающий цель.",
 			null, Util.newArrayListOfValues(
-					"Applies <b>5</b> "+Attribute.DAMAGE_PHYSICAL.getColouredName("b")+" as Ground Shake ends")),
+					"Применяет <b>5</b> "+Attribute.DAMAGE_PHYSICAL.getColouredName("b")+" когда заканчивается Дрожь земли")),
 	SLAM_3(5,
 			SpellSchool.EARTH,
 			"slam_earthquake",
-			"Earthquake",
-			"Slam impacts the ground so hard that all enemies suffer the effects of Ground Shake.",
+			"Землетрясение",
+			"Удар настолько сильно бьет по земле, что все враги испытывают эффект Дрожи земли.",
 			null, Util.newArrayListOfValues(
-					"[style.colourExcellent(All enemies)] are affected by Ground Shake")),
+					"[style.colourExcellent(Все враги)] подвергаются эффекту Дрожи земли")),
 
 	TELEKENETIC_SHOWER_1(true,
 			5,
 			SpellSchool.EARTH,
 			"telekinetic_shower_mind_over_matter",
-			"Mind Over Matter",
-			"By using their telekinetic force to pick up and recycle already-hurled objects, the caster can keep the Telekinetic Shower going for a considerable amount of time.",
+			"Сила мысли",
+			"Используя телекинетическую силу, чтобы подхватывать и повторно использовать уже запущенные объекты, заклинатель может поддерживать Телекинетический дождь в течение значительного времени.",
 			null, Util.newArrayListOfValues(
-					"Telekinetic Shower now lasts for [style.boldGood(6 turns)]")),
+					"Телекинетический дождь теперь длится [style.boldGood(6 ходов)]")),
 	TELEKENETIC_SHOWER_2(1,
 			SpellSchool.EARTH,
 			"telekinetic_shower_precision_strikes",
-			"Precision Strikes",
-			"Each strike from Telekinetic Shower is precisely aimed to bypass and degrade the target's physical defences.",
+			"Точные удары",
+			"Каждый удар Телекинетического дождя наносится с предельной точностью, позволяя обходить и ослаблять физическую защиту цели.",
 			null, Util.newArrayListOfValues(
-					"Telekinetic Shower additionally applies <b>-20</b> "+Attribute.RESISTANCE_PHYSICAL.getColouredName("b"))),
+					"Телекинетический дождь дополнительно накладывает <b>-20</b> "+Attribute.RESISTANCE_PHYSICAL.getColouredName("b"))),
 	TELEKENETIC_SHOWER_3(10,
 			SpellSchool.EARTH,
 			"telekinetic_shower_unseen_force",
-			"Unseen Force",
-			"Every time an object from Telekinetic Shower impacts the target, an explosive wave of force is unleashed, dealing considerable damage.",
+			"Невидимая сила",
+			"Каждый раз, когда объект из «Телекинетического дождя» поражает цель, высвобождается взрывная волна силы, наносящая значительный урон.",
 			null, Util.newArrayListOfValues(
-					"Telekinetic Shower damage [style.colourExcellent(doubled)] to <b>50</b> "+Attribute.DAMAGE_PHYSICAL.getColouredName("b")+" per turn")),
+					"Урон «Телекинетического дождя» [style.colourExcellent(удвоен)] для <b>50</b> "+Attribute.DAMAGE_PHYSICAL.getColouredName("b")+" за ход")),
 
 	STONE_SHELL_1(true,
 			1,
 			SpellSchool.EARTH,
 			"stone_shell_shifting_sands",
-			"Shifting Sands",
-			"The Stone Shell now occasionally shifts and disintegrates into flowing sand, before quickly reforming elsewhere in order to confuse any enemies.",
+			"Зыбучие пески",
+			"Теперь «Каменная оболочка» время от времени смещается и рассыпается в текучий песок, а затем быстро восстанавливается в другом месте, чтобы сбить врагов с толку.",
 			null, Util.newArrayListOfValues(
-					"Stone Shell additionally applies <b>+2</b> "+Attribute.ENERGY_SHIELDING.getColouredName("b"))),
+					"«Каменная оболочка» дополнительно дает <b>+2</b> "+Attribute.ENERGY_SHIELDING.getColouredName("b"))),
 	STONE_SHELL_2(2,
 			SpellSchool.EARTH,
 			"stone_shell_hardened_carapace",
-			"Hardened Carapace",
-			"A second layer of hardened stone is created behind Shone Shell, massively increasing the target's physical shielding.",
+			"Закаленный панцирь",
+			"За «Каменной оболочкой» создается второй слой закаленного камня, что колоссально увеличивает физическую защиту цели.",
 			null, Util.newArrayListOfValues(
-					"Stone Shell's buff is increased to <b>+10</b> "+Attribute.RESISTANCE_PHYSICAL.getColouredName("b"))),
+					"Бонус «Каменной оболочки» увеличен до <b>+10</b> "+Attribute.RESISTANCE_PHYSICAL.getColouredName("b"))),
 	STONE_SHELL_3(1,
 			SpellSchool.EARTH,
 			"stone_shell_explosive_finish",
-			"Explosive Finish",
-			"A reserve of telekinetic energy is stored within the Stone Shell, and when the effect finally comes to an end, this energy is released in an explosive burst.",
+			"Взрывной финал",
+			"Внутри «Каменной оболочки» накапливается запас телекинетической энергии, которая при окончании действия эффекта высвобождается мощным взрывом.",
 			null, Util.newArrayListOfValues(
-					"[style.colourExcellent(All enemies)] take <b>10</b> "+Attribute.DAMAGE_PHYSICAL.getColouredName("b")+" when Stone Shell ends")),
+					"[style.colourExcellent(Все враги)] получают <b>10</b> "+Attribute.DAMAGE_PHYSICAL.getColouredName("b")+" когда действие Каменной оболочки заканчивается")),
 
 	ELEMENTAL_EARTH_1(true,
 			5,
 			SpellSchool.EARTH,
 			"elemental_earth_rolling_stone",
-			"Rolling Stone",
-			"The Earth elemental sends out waves of force to amplify the damage done by their allies.",
+			"Катящийся камень",
+			"Земляной элементаль посылает волны силы, чтобы усилить урон, наносимый его союзниками.",
 			null, Util.newArrayListOfValues(
-					"[style.colourExcellent(All allies gain)] +15 "+Attribute.DAMAGE_PHYSICAL.getColouredName("b"),
-					"[style.colourExcellent(All allies gain)] +25 "+Attribute.CRITICAL_DAMAGE.getColouredName("b"))),
+					"[style.colourExcellent(Все союзники получают)] +15 "+Attribute.DAMAGE_PHYSICAL.getColouredName("b"),
+					"[style.colourExcellent(Все союзники получают)] +25 "+Attribute.CRITICAL_DAMAGE.getColouredName("b"))),
 	ELEMENTAL_EARTH_2(5,
 			SpellSchool.EARTH,
 			"elemental_earth_hardening",
-			"Hardening",
-			"The Earth elemental's telekinetic powers are used to surround all allies with protective fragments of rock.",
+			"Закалка",
+			"Телекинетические способности земляного элементаля используются для того, чтобы окружить всех союзников защитными осколками камня.",
 			null, Util.newArrayListOfValues(
-					"[style.colourExcellent(All allies gain)] +10 "+Attribute.RESISTANCE_PHYSICAL.getColouredName("b"))),
+					"[style.colourExcellent(Все союзники получают)] +10 "+Attribute.RESISTANCE_PHYSICAL.getColouredName("b"))),
 	ELEMENTAL_EARTH_3A(5,
 			SpellSchool.EARTH,
 			"elemental_earth_servant_of_earth",
-			"Servant of Earth",
-			"The summoner swears to be subservient to the school of Earth, and while their elemental is bound to this form, the elemental is able to draw as much energy from the summoner as they wish.",
+			"Слуга Земли",
+			"Призыватель клянется быть преданным школе Земли, и пока его элементаль связан с этой формой, элементаль может черпать из призывателя столько энергии, сколько пожелает.",
 			null, Util.newArrayListOfValues(
-					"While summoned:",
-					"[style.colourEarth(Elemental)]: +100% [style.colourExcellent(Non-Seduction Damage)]",
-					"[style.colourArcane(Caster)]: -50% [style.colourHealth(maximum "+Attribute.HEALTH_MAXIMUM.getName()+")]")) {
+					"Пока призван:",
+					"[style.colourEarth(Элементаль)]: +100% [style.colourExcellent(Не-соблазняющий урон)]",
+					"[style.colourArcane(Заклинатель)]: -50% [style.colourHealth(макс. "+Attribute.HEALTH_MAXIMUM.getName()+")]")) {
 
 		public boolean isAvailable(GameCharacter caster) {
 			return !caster.hasSpellUpgrade(ELEMENTAL_EARTH_3B);
@@ -555,21 +553,21 @@ public enum SpellUpgrade {
 		
 		public String getUnavailableReason(GameCharacter caster) {
 			if(this.isAvailable(caster) && !caster.hasSpellUpgrade(this)) {
-				return "[style.boldMinorBad(Mutually exclusive with 'Binding of Earth'!)]";
+				return "[style.boldMinorBad(Взаимоисключает с «Узами Земли»!)]";
 			} else {
-				return "[style.boldBad(Mutually exclusive with 'Binding of Earth'!)]";
+				return "[style.boldBad(Взаимоисключает с «Узами Земли»!)]";
 			}
 		}
 	},
 	ELEMENTAL_EARTH_3B(10,
 			SpellSchool.EARTH,
 			"elemental_earth_binding_of_earth",
-			"Binding of Earth",
-			"The summoner assumes complete dominance over the school of Earth, and while their elemental is bound to this form, they are forced to share all of their secrets.",
+			"Узы Земли",
+			"Призыватель обретает полный контроль над школой Земли, и пока их элементаль связан с этой формой, он вынужден делиться всеми своими секретами.",
 			null, Util.newArrayListOfValues(
-					"While summoned:",
-					"[style.colourArcane(Caster)]: +25 "+Attribute.DAMAGE_PHYSICAL.getColouredName("b"),
-					"[style.colourArcane(Caster)]: +10 "+Attribute.RESISTANCE_PHYSICAL.getColouredName("b"))) {
+					"Пока призван:",
+					"[style.colourArcane(Заклинатель)]: +25 "+Attribute.DAMAGE_PHYSICAL.getColouredName("b"),
+					"[style.colourArcane(Заклинатель)]: +10 "+Attribute.RESISTANCE_PHYSICAL.getColouredName("b"))) {
 
 		public boolean isAvailable(GameCharacter caster) {
 			return !caster.hasSpellUpgrade(ELEMENTAL_EARTH_3A);
@@ -577,9 +575,9 @@ public enum SpellUpgrade {
 		
 		public String getUnavailableReason(GameCharacter caster) {
 			if(this.isAvailable(caster) && !caster.hasSpellUpgrade(this)) {
-				return "[style.boldMinorBad(Mutually exclusive with 'Servant of Earth'!)]";
+				return "[style.boldMinorBad(Взаимоисключает с «Слугой Земли»!)]";
 			} else {
-				return "[style.boldBad(Mutually exclusive with 'Servant of Earth'!)]";
+				return "[style.boldBad(Взаимоисключает с «Слугой Земли»!)]";
 			}
 		}
 	},
@@ -590,205 +588,205 @@ public enum SpellUpgrade {
 			5,
 			SpellSchool.ARCANE,
 			"arcane_arousal_overwhelming_lust",
-			"Overwhelming Lust",
-			"The images that are projected into the target's mind become especially lewd and depraved.",
+			"Всепоглощающая Похоть",
+			"Образы, проецируемые в разум цели, становятся особенно похотливыми и порочными.",
 			null, Util.newArrayListOfValues(
-					"Arcane Arousal damage [style.colourExcellent(doubled)] to <b>30</b> "+Attribute.DAMAGE_LUST.getColouredName("b"))),
+					"Урон Arcane Возбуждением [style.colourExcellent(удвоен)] по <b>30</b> "+Attribute.DAMAGE_LUST.getColouredName("b"))),
 	ARCANE_AROUSAL_2(2,
 			SpellSchool.ARCANE,
 			"arcane_arousal_lustful_distraction",
-			"Lustful Distraction",
-			"The lewd images that are sent into the target's mind linger on for some time, causing them to become distracted.",
+			"Похотливое отвлечение",
+			"Похотливые образы, проникающие в разум цели, задерживаются там на некоторое время, заставляя её отвлекаться.",
 			null, Util.newArrayListOfValues(
-					"Target [style.boldBad(suffers)] -15 "+Attribute.ENERGY_SHIELDING.getColouredName("b")+" for [style.boldGood(2 turns)]")),
+					"Цель [style.boldBad(получает)] -15 "+Attribute.ENERGY_SHIELDING.getColouredName("b")+" на [style.boldGood(2 хода)]")),
 	ARCANE_AROUSAL_3(2,
 			SpellSchool.ARCANE,
 			"arcane_arousal_dirty_promises",
-			"Dirty Promises",
-			"Phantasmal whispers are projected alongside the lewd images, promising the target that they'll have a good time if they simply submit...",
+			"Грязные обещания",
+			"Вместе с похотливыми образами проносятся призрачные шепоты, обещающие цели, что ее ждет незабываемое удовольствие, стоит ей только подчиниться...",
 			null, Util.newArrayListOfValues(
-					"Target [style.boldBad(additionally suffers)] -25 "+Attribute.RESISTANCE_LUST.getColouredName("b"),
-					"Duration increased to [style.boldGood(3 turns)]")),
+					"Цель [style.boldBad(дополнительно получает)] -25 "+Attribute.RESISTANCE_LUST.getColouredName("b"),
+					"Длительность увеличена до [style.boldGood(3 ходов)]")),
 
 	TELEPATHIC_COMMUNICATION_1(true,
 			5,
 			SpellSchool.ARCANE,
 			"telepathic_communication_echoing_moans",
-			"Echoing Moans",
-			"The effects of Telepathic Communication can now be sustained for a significant amount of time. In addition, the caster is always ready to start using this at the first sign of trouble.",
+			"Эхо стонов",
+			"Эффект Телепатической связи теперь можно поддерживать в течение значительного времени. Кроме того, заклинатель всегда готов применить его при первых признаках опасности.",
 			null, Util.newArrayListOfValues(
-					"Start combat with Telepathic Communication [style.boldExcellent(already activated)]",
-					"Duration increased to [style.boldGood(10 turns)]")),
+					"Начинать бой с [style.boldExcellent(уже активированной)] Телепатической связью",
+					"Длительность увеличена до [style.boldGood(10 ходов)]")),
 	TELEPATHIC_COMMUNICATION_2(3,
 			SpellSchool.ARCANE,
 			"telepathic_communication_projected_touch",
-			"Projected Touch",
-			"The caster of Telepathic Communication is now able to project phantasmal forces, causing their target to be subjected to ghostly kisses even while their mind is filled with moans.",
+			"Проекция прикосновения",
+			"Заклинатель Телепатической связи теперь способен проецировать призрачные силы, заставляя цель ощущать призрачные поцелуи, пока ее разум наполнен стонами.",
 			null, Util.newArrayListOfValues(
-					"Buff [style.colourExcellent(doubled)] to <b>30</b> "+Attribute.DAMAGE_LUST.getColouredName("b"))),
+					"Усиление [style.colourExcellent(doubled)] для <b>30</b> "+Attribute.DAMAGE_LUST.getColouredName("b"))),
 	TELEPATHIC_COMMUNICATION_3(3,
 			SpellSchool.ARCANE,
 			"telepathic_communication_power_of_suggestion",
-			"Power of Suggestion",
-			"The caster of Telepathic Communication is able to project powerful words of suggestion into the mind of any person they wish to seduce, causing them to lower their guard.",
+			"Сила внушения",
+			"Заклинатель Телепатического общения способен проецировать мощные внушения в разум любого человека, которого он желает соблазнить, заставляя того ослабить бдительность.",
 			null, Util.newArrayListOfValues(
-					"[style.boldLust(Tease)] [style.boldExcellent(applies)] -25 "+Attribute.RESISTANCE_PHYSICAL.getColouredName("b")+" to the target for [style.boldGood(2 turns)]")),
+					"[style.boldLust(Дразнение)] [style.boldExcellent(накладывает)] -25 "+Attribute.RESISTANCE_PHYSICAL.getColouredName("b")+" на цель на [style.boldGood(2 хода)]")),
 
 	ARCANE_CLOUD_1(true,
 			3,
 			SpellSchool.ARCANE,
 			"arcane_cloud_lightning",
-			"Arcane Lightning",
-			"Flashes of pink and purple arcane lightning strike out from the arcane cloud, filling the target's mind with lustful thoughts.",
+			"Arcane молния",
+			"Вспышки розовых и пурпурных разрядов Arcane-молний вырываются из Arcane-облака, наполняя разум цели мыслями, полными похоти.",
 			null, Util.newArrayListOfValues(
-					"<b>5</b> "+Attribute.DAMAGE_LUST.getColouredName("b")+" per turn")),
+					"<b>5</b> "+Attribute.DAMAGE_LUST.getColouredName("b")+" за ход")),
 	ARCANE_CLOUD_2(5,
 			SpellSchool.ARCANE,
 			"arcane_cloud_thunder",
-			"Arcane Thunder",
-			"Small claps of arcane thunder sound in the target's ears, massively increasing the amount of lust damage they take.",
+			"Arcane-гром",
+			"В ушах цели звучат короткие раскаты Arcane-грома, значительно увеличивая получаемый ими урон похоти.",
 			null, Util.newArrayListOfValues(
-					Attribute.DAMAGE_LUST.getColouredName("b")+" [style.boldExcellent(increased)] to <b>15</b> per turn")),
+					Attribute.DAMAGE_LUST.getColouredName("b")+" [style.boldExcellent(увеличение)] до <b>15</b> за ход")),
 	ARCANE_CLOUD_3(10,
 			SpellSchool.ARCANE,
 			"arcane_cloud_localised_storm",
-			"Localised Storm",
-			"The arcane cloud grows into a localised storm, affecting all enemies with its lust damaging effects.",
+			"Локальный шторм",
+			"Arcane-облако разрастается в локальный шторм, поражая всех врагов эффектами, наносящими урон похоти.",
 			null, Util.newArrayListOfValues(
-					"[style.boldExcellent(All enemies)] suffer <b>15</b> "+Attribute.DAMAGE_LUST.getColouredName("b")+" per turn")),
+					"[style.boldExcellent(Все враги)] получают <b>15</b> "+Attribute.DAMAGE_LUST.getColouredName("b")+" за ход")),
 
 	CLEANSE_1(true,
 			5,
 			SpellSchool.ARCANE,
 			"cleanse_selective_cleanse",
-			"Selective Cleansing",
-			"The cleansing energy is now able to detect the nature of ongoing status effects, allowing it to remove only negative effects from allies, and only positive effects from enemies.",
+			"Избирательное очищение",
+			"Очищающая энергия теперь способна распознавать природу текущих эффектов состояния, позволяя снимать только отрицательные эффекты с союзников и только положительные — с врагов.",
 			null, Util.newArrayListOfValues(
-					"Only [style.boldTerrible(negative)] effects are removed from [style.boldExcellent(allies)]",
-					"Only [style.boldExcellent(positive)] effects are removed from [style.boldTerrible(enemies)]")),
+					"С [style.boldExcellent(союзников)] снимаются только [style.boldTerrible(отрицательные)] эффекты",
+					"С [style.boldTerrible(врагов)] снимаются только [style.boldExcellent(положительные)] эффекты")),
 	CLEANSE_2(5,
 			SpellSchool.ARCANE,
 			"cleanse_arcane_duality",
-			"Arcane Duality",
-			"A shimmering shield of arcane energy is summoned forth around the target of Cleanse. This energy is able to detect if the target is friend or foe, and chooses to either shield or weaken them, respectively.",
+			"Дуальность Arcane",
+			"Вокруг цели заклинания «Очищение» призывается мерцающий щит из энергии Arcane. Эта энергия способна определить, друг перед ней или враг, и выбирает либо защитить цель, либо ослабить её.",
 			null, Util.newArrayListOfValues(
 					"+/-5 "+Attribute.RESISTANCE_PHYSICAL.getColouredName("b"),
 					"+/-5 "+Attribute.RESISTANCE_LUST.getColouredName("b"),
 					"+/-5 "+Attribute.RESISTANCE_FIRE.getColouredName("b"),
 					"+/-5 "+Attribute.RESISTANCE_ICE.getColouredName("b"),
 					"+/-5 "+Attribute.RESISTANCE_POISON.getColouredName("b"),
-					"Lasts [style.boldGood(3 turns)]")),
+					"Длится [style.boldGood(3 хода)]")),
 	CLEANSE_3(2,
 			SpellSchool.ARCANE,
 			"cleanse_arcane_will",
-			"Arcane Will",
-			"The iron will of the caster is projected into the effect of Arcane Duality, significantly increasing the shield's duration.",
+			"Воля Arcane",
+			"Железная воля заклинателя проецируется на эффект «Дуальности Arcane», значительно увеличивая длительность щита.",
 			null, Util.newArrayListOfValues(
-					"Arcane Duality's duration increased to [style.boldGood(6 turns)]")),
+					"Длительность «Дуальности Arcane» увеличена до [style.boldGood(6 ходов)]")),
 
 	STEAL_1(true,
 			5,
 			SpellSchool.ARCANE,
 			"steal_stripper",
-			"Stripper",
-			"Steal's power is increased to the point where it can strip clothing that the target is currently wearing.",
+			"Стриптизерша",
+			"Мощь «Кражи» возросла настолько, что теперь она способна срывать одежду, надетую на цель.",
 			null, Util.newArrayListOfValues(
-					"Steal [style.boldExcellent(additionally)] can target outer layers of clothing")),
+					"«Кража» [style.boldExcellent(дополнительно)] может быть направлена на верхние слои одежды")),
 	STEAL_2(10,
 			SpellSchool.ARCANE,
 			"steal_disarm",
-			"Disarm",
-			"Steal is now powerful enough to teleport weapons right out of the target's hands.",
+			"Разоружение",
+			"«Кража» стала достаточно мощной, чтобы телепортировать оружие прямо из рук цели.",
 			null, Util.newArrayListOfValues(
-					"Steal [style.boldExcellent(additionally)] can target equipped weapons")),
+					"«Кража» [style.boldExcellent(дополнительно)] может быть направлена на экипированное оружие")),
 	STEAL_3A(5,
 			SpellSchool.ARCANE,
 			"steal_deep_reach",
-			"Deep Reach",
-			"The power of Steal is increased to the point where it can target any layer of clothing, even if it's not visible to the caster.",
+			"Глубокое проникновение",
+			"Мощь «Кражи» возросла до такой степени, что теперь она может поражать любой слой одежды, даже если он не виден заклинателю.",
 			null, Util.newArrayListOfValues(
-					"Steal [style.boldExcellent(additionally)] can target any layer of clothing")),
+					"«Кража» [style.boldExcellent(дополнительно)] может быть направлена на любой слой одежды")),
 	STEAL_3B(10,
 			SpellSchool.ARCANE,
 			"steal_panty_snatcher",
-			"Panty Snatcher",
-			"The caster has refined and perfected this spell so that it always prioritises stealing the target's underwear before anything else.",
+			"Похититель трусиков",
+			"Заклинатель отточил это заклинание до совершенства, так что теперь оно всегда отдает приоритет краже нижнего белья цели перед всем остальным.",
 			null, Util.newArrayListOfValues(
-					"Steal [style.boldExcellent(prioritises)] target's clothing in groin slot")),
+					"Украсть [style.boldExcellent(приоритетную)] одежду цели в слоте паха")),
 
 	TELEPORT_1(true,
 			10,
 			SpellSchool.ARCANE,
 			"teleport_arcane_arrival",
-			"Arcane Arrival",
-			"Upon arrival, the target of Teleport unleashes a burst of lust-inducing arcane energy.",
+			"Прибытие Arcane",
+			"По прибытии цель Телепорта выпускает всплеск вызывающей похоть энергии Arcane.",
 			null, Util.newArrayListOfValues(
-					"Deals <b>5</b> "+Attribute.DAMAGE_LUST.getColouredName("b")+" to a random enemy")),
+					"Наносит <b>5</b> "+Attribute.DAMAGE_LUST.getColouredName("b")+" случайному врагу")),
 	TELEPORT_2(15,
 			SpellSchool.ARCANE,
 			"teleport_mass_teleportation",
-			"Mass Teleportation",
-			"The caster is now able to apply Teleport to as many nearby people as they choose.",
+			"Массовая телепортация",
+			"Теперь заклинатель может применять Телепорт к любому количеству ближайших людей по своему выбору.",
 			null, Util.newArrayListOfValues(
-					"Teleport applied to [style.colourExcellent(all allies)] of target",
-					"Map teleport [style.colourExcellent(no longer blocked)] by companions")),
+					"Телепорт применен ко [style.colourExcellent(всем союзникам)] цели",
+					"Телепортация по карте [style.colourExcellent(больше не блокируется)] спутниками")),
 	TELEPORT_3(10,
 			SpellSchool.ARCANE,
 			"teleport_rebounding_teleportation",
-			"Rebounding Teleportation",
-			"By creating an arcane anchor before casting the spell, the targets of Teleport are able to return to their original position after a few seconds.",
+			"Рикошетная телепортация",
+			"Создание аркана-якоря перед чтением заклинания позволяет целям «Телепорта» вернуться на исходную позицию через несколько секунд.",
 			null, Util.newArrayListOfValues(
-					"Teleport duration increased to [style.boldGood(2 turns)]",
-					"Arcane Arrival's <b>5</b> "+Attribute.DAMAGE_LUST.getColouredName("b")+" applied each turn")),
+					"Длительность «Телепорта» увеличена до [style.boldGood(2 ходов)]",
+					"<b>5</b> «Аркана-прибытия» "+Attribute.DAMAGE_LUST.getColouredName("b")+" применяется каждый ход")),
 
 	LILITHS_COMMAND_1(true,
 			10,
 			SpellSchool.ARCANE,
 			"liliths_command_overpowering_presence",
-			"Overpowering Presence",
-			"The imposing vision of Lilith herself is cast into the mind of the target, greatly increasing the chance of this spell's effectiveness.",
+			"Подавляющее присутствие",
+			"В разум цели проецируется величественный образ самой Lilith, что значительно повышает шансы на эффективность этого заклинания.",
 			null, Util.newArrayListOfValues(
-					"Success chance [style.colourExcellent(increased)] to 50%")),
+					"Шанс успеха [style.colourExcellent(увеличен)] до 50%")),
 	LILITHS_COMMAND_2(15,
 			SpellSchool.ARCANE,
 			"liliths_command_demonic_servants",
-			"Demonic Servants",
-			"The target is subjected to a vision of Lilith herself commanding them to submit. The vision is so realistic that even demons are now viable to fall prey to this spell's effects.",
+			"Демонические слуги",
+			"Цель видит видение самой Lilith, повелевающей ей подчиниться. Видение настолько реалистично, что даже демоны теперь могут стать жертвами этого заклинания.",
 			null, Util.newArrayListOfValues(
-					"Lilith's Command now [style.colourExcellent(affects demons)]",
-					"Success chance [style.colourExcellent(increased)] to 75%")),
+					"«Команда Lilith» теперь [style.colourExcellent(поражает демонов)]",
+					"Шанс успеха [style.colourExcellent(увеличен)] до 75%")),
 	LILITHS_COMMAND_3(20,
 			SpellSchool.ARCANE,
 			"liliths_command_ultimate_power",
-			"Ultimate Power",
-			"The vision of Lilith that is projected into the target's mind is so realistic and so powerful, that they have no hope of resisting its effects.",
+			"Ультимативная мощь",
+			"Видение Lilith, проецируемое в разум цели, настолько реалистично и мощно, что у жертвы не остается надежды противостоять его воздействию.",
 			null, Util.newArrayListOfValues(
-					"Success chance [style.colourExcellent(increased)] to 100%")),
+					"Шанс успеха [style.colourExcellent(увеличен)] до 100%")),
 
 	ELEMENTAL_ARCANE_1(true,
 			5,
 			SpellSchool.ARCANE,
 			"elemental_arcane_lewd_encouragements",
-			"Lewd Encouragements",
-			"The Arcane elemental projects lewd encouragements into the minds of all their allies, inspiring them to perform deviant and seductive actions.",
+			"Похотливое подстрекательство",
+			"Arcane элементаль транслирует похотливые призывы в умы всех своих союзников, вдохновляя их на порочные и соблазнительные действия.",
 			null, Util.newArrayListOfValues(
-					"[style.colourExcellent(All allies gain)] +15 "+Attribute.DAMAGE_LUST.getColouredName("b"))),
+					"[style.colourExcellent(Все союзники получают)] +15 "+Attribute.DAMAGE_LUST.getColouredName("b"))),
 	ELEMENTAL_ARCANE_2(5,
 			SpellSchool.ARCANE,
 			"elemental_arcane_caressing_touch",
-			"Caressing Touch",
-			"The Arcane elemental sends out phantasmal tentacles to grope and molest all nearby enemies.",
+			"Ласкающее прикосновение",
+			"Arcane элементаль выпускает призрачные щупальца, чтобы ощупывать и ласкать всех ближайших врагов.",
 			null, Util.newArrayListOfValues(
-					"[style.boldTerrible(All enemies suffer)] -15 "+Attribute.RESISTANCE_LUST.getColouredName("b"))),
+					"[style.boldTerrible(Все враги получают)] -15 "+Attribute.RESISTANCE_LUST.getColouredName("b"))),
 	ELEMENTAL_ARCANE_3A(5,
 			SpellSchool.ARCANE,
 			"elemental_arcane_servant_of_arcane",
-			"Servant of Arcane",
-			"The summoner swears to be subservient to the school of Arcane, and while their elemental is bound to this form, the elemental is able to draw as much energy from the summoner as they wish.",
+			"Слуга Arcane",
+			"Призыватель клянется быть покорным школе Arcane, и пока их элементаль привязан к этой форме, элементаль может черпать из призывателя столько энергии, сколько пожелает.",
 			null, Util.newArrayListOfValues(
-					"While summoned:",
-					"[style.colourArcane(Elemental)]: +100% [style.colourExcellent(Non-Seduction Damage)]",
-					"[style.colourArcane(Caster)]: -50% [style.colourHealth(maximum "+Attribute.HEALTH_MAXIMUM.getName()+")]")) {
+					"Пока призван:",
+					"[style.colourArcane(Элементаль)]: +100% [style.colourExcellent(Не-соблазняющий урон)]",
+					"[style.colourArcane(Заклинатель)]: -50% [style.colourHealth(макс. "+Attribute.HEALTH_MAXIMUM.getName()+")]")) {
 
 		public boolean isAvailable(GameCharacter caster) {
 			return !caster.hasSpellUpgrade(ELEMENTAL_ARCANE_3B);
@@ -796,21 +794,21 @@ public enum SpellUpgrade {
 		
 		public String getUnavailableReason(GameCharacter caster) {
 			if(this.isAvailable(caster) && !caster.hasSpellUpgrade(this)) {
-				return "[style.boldMinorBad(Mutually exclusive with 'Binding of Arcane'!)]";
+				return "[style.boldMinorBad(Взаимоисключает с «Связью Arcane»!)]";
 			} else {
-				return "[style.boldBad(Mutually exclusive with 'Binding of Arcane'!)]";
+				return "[style.boldBad(Взаимоисключает с «Связью Arcane»!)]";
 			}
 		}
 	},
 	ELEMENTAL_ARCANE_3B(10,
 			SpellSchool.ARCANE,
 			"elemental_arcane_binding_of_arcane",
-			"Binding of Arcane",
-			"The summoner assumes complete dominance over the school of Arcane, and while their elemental is bound to this form, they are forced to share all of their secrets.",
+			"Связь Arcane",
+			"Призыватель обретает полный контроль над школой Arcane, но пока его элементаль привязан к этой форме, он вынужден делиться всеми своими секретами.",
 			null, Util.newArrayListOfValues(
-					"While summoned:",
-					"[style.colourArcane(Caster)]: +25 "+Attribute.DAMAGE_LUST.getColouredName("b"),
-					"[style.colourArcane(Caster)]: +10 "+Attribute.RESISTANCE_LUST.getColouredName("b"))) {
+					"Пока призван:",
+					"[style.colourArcane(Заклинатель)]: +25 "+Attribute.DAMAGE_LUST.getColouredName("b"),
+					"[style.colourArcane(Заклинатель)]: +10 "+Attribute.RESISTANCE_LUST.getColouredName("b"))) {
 
 		public boolean isAvailable(GameCharacter caster) {
 			return !caster.hasSpellUpgrade(ELEMENTAL_ARCANE_3A);
@@ -818,9 +816,9 @@ public enum SpellUpgrade {
 		
 		public String getUnavailableReason(GameCharacter caster) {
 			if(this.isAvailable(caster) && !caster.hasSpellUpgrade(this)) {
-				return "[style.boldMinorBad(Mutually exclusive with 'Servant of Arcane'!)]";
+				return "[style.boldMinorBad(Взаимоисключает с «Слугой Arcane»!)]";
 			} else {
-				return "[style.boldBad(Mutually exclusive with 'Servant of Arcane'!)]";
+				return "[style.boldBad(Взаимоисключает с «Слугой Arcane»!)]";
 			}
 		}
 	};

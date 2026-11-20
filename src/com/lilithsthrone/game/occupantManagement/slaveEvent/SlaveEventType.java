@@ -7,13 +7,13 @@ package com.lilithsthrone.game.occupantManagement.slaveEvent;
  */
 public enum SlaveEventType {
 	
-	BONDING("Bonding", "Events in which two slaves spend some time either getting to know one another or arguing about something."),
+	BONDING("Сближение", "События, в которых две рабыни проводят время, либо узнавая друг друга получше, либо споря о чем-то."),
 	
-	JOB("Job", "Events related to the slave's job. This includes sex events if the slave's job involves sex."),
+	JOB("Работа", "События, связанные с работой рабыни. Сюда входят сексуальные события, если работа рабыни подразумевает секс."),
 	
-	SEX("Sex", "Events in which the slave does something sexual or experiences an effect of having sex (such as giving birth)."),
+	SEX("Секс", "События, в которых рабыня совершает что-то сексуальное или испытывает последствия секса (например, роды)."),
 	
-	MISCELLANEOUS("Misc.", "Miscellaneous, mundane events, such as slaves washing themselves.");
+	MISCELLANEOUS("Разное", "Различные повседневные события, такие как то, как рабыни моются.");
 	
 	private String name;
 	private String description;
