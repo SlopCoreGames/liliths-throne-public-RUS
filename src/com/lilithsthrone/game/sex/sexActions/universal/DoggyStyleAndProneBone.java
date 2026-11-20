@@ -84,12 +84,12 @@ public class DoggyStyleAndProneBone {
 		
 		@Override
 		public String getActionTitle() {
-			return "Pull hair";
+			return "Тянуть за волосы";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Grab [npc2.namePos] hair and pull [npc2.her] head back.";
+			return "Схватить волосы [npc2.namePos] и оттянуть [npc2.her] голову назад.";
 		}
 		
 		@Override
@@ -156,56 +156,47 @@ public class DoggyStyleAndProneBone {
 				case DOM_GENTLE:
 					if(vaginalSex || analSex) {
 						return UtilText.returnStringAtRandom(
-								"Reaching forwards, [npc.name] gently [npc.verb(take)] hold of [npc2.namePos] [npc2.hair(true)], and, while continuing to rhythmically slide [npc.her] [npc.cock] in and out of [npc2.her] [npc2."+tag+"+],"
-										+ " [npc.she] slowly [npc.verb(pull)] back, causing [npc2.name] to lift [npc2.her] head and let out [npc2.a_moan+].",
-								"Taking a gentle hold of [npc2.namePos] [npc2.hair(true)] in one [npc.hand], [npc.name] simultaneously [npc.verb(pull)] [npc2.her] head back while burying [npc.her] [npc.cock+] deep into [npc2.her] [npc2."+tag+"],"
-										+(Main.sex.getCharacterPerformingAction().isFeminine()?" softly giggling":" smirking")+" to [npc.herself] as [npc2.name] [npc2.verb(let)] out [npc2.moan+].",
-								"Continuing to slowly sink [npc.her] [npc.cock+] in and out of [npc2.namePos] [npc2."+tag+"+], [npc.name] [npc.verb(reach)] forwards and [npc.verb(take)] a gentle hold of [npc2.her] [npc2.hair(true)],"
-										+ " before pulling [npc2.her] head back and causing [npc2.herHim] to let out [npc2.a_moan+].");
+								"Потянувшись вперед, [npc.name] осторожно [npc.verb(take)] берет [npc2.namePos] [npc2.hair(true)], и, продолжая ритмично вводить и выводить [npc.her] [npc.cock] в [npc2.her] [npc2."+tag+"+], [npc.she] медленно [npc.verb(pull)] назад, заставляя [npc2.name] закинуть [npc2.her] голову и издать [npc2.a_moan+].",
+								"Мягко обхватив волосы [npc2.namePos] [npc2.hair(true)] одной [npc.hand], [npc.name] одновременно [npc.verb(pull)] [npc2.her] голову назад, глубоко вбивая [npc.her] [npc.cock+] в [npc2.her] [npc2."+tag+"],"
+										+(Main.sex.getCharacterPerformingAction().isFeminine()?" тихо хихикая":" ухмыляясь")+" [npc.herself], пока [npc2.name] [npc2.verb(let)] извлекает [npc2.moan+].",
+								"Продолжая медленно вводить и выводить [npc.her] [npc.cock+] в [npc2.namePos] [npc2."+tag+"+], [npc.name] [npc.verb(reach)] вперед и [npc.verb(take)] мягко берет [npc2.her] [npc2.hair(true)], прежде чем оттянуть [npc2.her] голову назад, заставляя [npc2.herHim] издать [npc2.a_moan+].");
 						
 					} else {
 						return UtilText.returnStringAtRandom(
-								"Reaching forwards, [npc.name] gently [npc.verb(take)] hold of [npc2.namePos] [npc2.hair(true)], before slowly pulling [npc2.her] head back and causing [npc2.herHim] to let out [npc2.a_moan+].",
-								"Taking a gentle hold of [npc2.namePos] [npc2.hair(true)] in one [npc.hand], [npc.name] "+(Main.sex.getCharacterPerformingAction().isFeminine()?" softly [npc.verb(giggle)]":" [npc.verb(smirk)]")
-									+" to [npc.herself] as [npc.she] [npc.verb(pull)] [npc2.her] head back, causing [npc2.herHim] to let out [npc2.moan+].",
-								"Tracing [npc.her] [npc.fingers+] up the length of [npc2.namePos] back, [npc.name] [npc.verb(reach)] forwards and [npc.verb(take)] a gentle hold of [npc2.her] [npc2.hair(true)],"
-										+ " before pulling [npc2.her] head back and causing [npc2.herHim] to let out [npc2.a_moan+].");
+								"Потянувшись вперед, [npc.name] осторожно [npc.verb(take)] хватает [npc2.namePos] за [npc2.hair(true)], а затем медленно оттягивает [npc2.her] голову назад, заставляя [npc2.herHim] издать [npc2.a_moan+].",
+								"Аккуратно взяв [npc2.namePos] [npc2.hair(true)] в одну [npc.hand], [npc.name] "+(Main.sex.getCharacterPerformingAction().isFeminine()?" мягко [npc.verb(giggle)]":" [npc.verb(smirk)]")
+									+" к [npc.herself], пока [npc.she] [npc.verb(pull)] оттягивает [npc2.her] голову назад, заставляя [npc2.herHim] издать [npc2.moan+].",
+								"Проводя [npc.her] [npc.fingers+] вдоль всей спины [npc2.namePos], [npc.name] [npc.verb(reach)] вперед и [npc.verb(take)] нежно хватает [npc2.her] [npc2.hair(true)], прежде чем оттянуть [npc2.her] голову назад, заставляя [npc2.herHim] издать [npc2.a_moan+].");
 					}
 				case DOM_ROUGH:
 					if(vaginalSex || analSex) {
 						return UtilText.returnStringAtRandom(
-								"Reaching forwards, [npc.name] roughly [npc.verb(grab)] a handful of [npc2.namePos] [npc2.hair(true)], and, while continuing to forcefully slam [npc.her] [npc.cock] in and out of [npc2.her] [npc2."+tag+"+],"
-										+ " [npc.she] sharply [npc.verb(yank)] [npc2.her] head back, causing [npc2.herHim] to let out [npc2.a_moan+].",
-								"Grabbing a fistful of [npc2.namePos] [npc2.hair(true)], [npc.name] simultaneously [npc.verb(yank)] [npc2.her] head back while slamming [npc.her] [npc.cock+] deep into [npc2.her] [npc2."+tag+"],"
-										+(Main.sex.getCharacterPerformingAction().isFeminine()?" maniacally giggling":" deeply grunting")+" in pleasure as [npc2.name] [npc2.verb(let)] out [npc2.moan+].",
-								"Continuing to roughly slam [npc.her] [npc.cock+] in and out of [npc2.namePos] [npc2."+tag+"+], [npc.name] [npc.verb(reach)] forwards and [npc.verb(grab)] a fistful of [npc2.her] [npc2.hair(true)],"
-										+ " before violently yanking [npc2.her] head back and causing [npc2.herHim] to let out [npc2.a_moan+].");
+								"Потянувшись вперед, [npc.name] грубо [npc.verb(grab)] хватает горсть [npc2.namePos] [npc2.hair(true)], и, продолжая с силой вколачивать [npc.her] [npc.cock] туда-сюда в [npc2.her] [npc2."+tag+"+], [npc.she] резко [npc.verb(yank)] оттягивает [npc2.her] голову назад, заставляя [npc2.herHim] издать [npc2.a_moan+].",
+								"Схватив горсть [npc2.namePos] [npc2.hair(true)], [npc.name] одновременно [npc.verb(yank)] оттягивает [npc2.her] голову назад, с силой вбивая [npc.her] [npc.cock+] глубоко в [npc2.her] [npc2."+tag+"],"
+										+(Main.sex.getCharacterPerformingAction().isFeminine()?" маниакально хихикая":" глубоко рыча")+" в экстазе, пока [npc2.name] [npc2.verb(let)] [npc2.moan+].",
+								"Продолжая грубо вбивать [npc.her] [npc.cock+] туда-сюда в [npc2.namePos] [npc2."+tag+"+], [npc.name] [npc.verb(reach)] вперед и [npc.verb(grab)] пригоршню [npc2.her] [npc2.hair(true)], прежде чем с силой дернуть [npc2.her] голову назад, заставляя [npc2.herHim] издать [npc2.a_moan+].");
 						
 					} else {
 						return UtilText.returnStringAtRandom(
-								"Reaching forwards, [npc.name] roughly [npc.verb(grab)] a handful of [npc2.namePos] [npc2.hair(true)], before sharply yanking [npc2.her] head back and causing [npc2.herHim] to let out [npc2.a_moan+].",
-								"Grabbing a fistful of [npc2.namePos] [npc2.hair(true)], [npc.name] "+(Main.sex.getCharacterPerformingAction().isFeminine()?" maniacally [npc.verb(giggle)]":" deeply [npc.verb(grunt)]")
-									+" as [npc.she] violently [npc.verb(yank)] [npc2.her] head back, causing [npc2.herHim] to let out [npc2.moan+].",
-								"Groping and pawing [npc.her] way up the length of [npc2.namePos] back, [npc.name] [npc.verb(reach)] forwards and [npc.verb(grab)] a fistful of [npc2.her] [npc2.hair(true)],"
-										+ " before roughly tugging [npc2.her] head back and causing [npc2.herHim] to let out [npc2.a_moan+].");
+								"Потянувшись вперед, [npc.name] грубо [npc.verb(grab)] горсть [npc2.namePos] [npc2.hair(true)], после чего резко дернул [npc2.her] голову назад, заставив [npc2.herHim] издать [npc2.a_moan+].",
+								"Схватив пригоршню [npc2.namePos] [npc2.hair(true)], [npc.name] "+(Main.sex.getCharacterPerformingAction().isFeminine()?" маниакально [npc.verb(giggle)]":" глубоко [npc.verb(grunt)]")
+									+" когда [npc.she] яростно [npc.verb(yank)] голову [npc2.her] назад, заставляя [npc2.herHim] издать [npc2.moan+].",
+								"Ощупывая и поглаживая [npc.her] вдоль всей спины [npc2.namePos], [npc.name] [npc.verb(reach)] вперед и [npc.verb(grab)] пригоршню [npc2.her] [npc2.hair(true)], прежде чем грубо дернуть [npc2.her] голову назад, заставляя [npc2.herHim] издать [npc2.a_moan+].");
 					}
 				default: // For dom normal, sub normal, and sub eager:
 					if(vaginalSex || analSex) {
 						return UtilText.returnStringAtRandom(
-								"Reaching forwards, [npc.name] firmly [npc.verb(take)] hold of [npc2.namePos] [npc2.hair(true)], and, while continuing to rhythmically pump [npc.her] [npc.cock] in and out of [npc2.her] [npc2."+tag+"+],"
-										+ " [npc.she] steadily [npc.verb(pull)] back, causing [npc2.name] to lift [npc2.her] head and let out [npc2.a_moan+].",
-								"Taking a firm hold of [npc2.namePos] [npc2.hair(true)] in one [npc.hand], [npc.name] simultaneously [npc.verb(pull)] [npc2.her] head back while thrusting [npc.her] [npc.cock+] deep into [npc2.her] [npc2."+tag+"],"
-										+(Main.sex.getCharacterPerformingAction().isFeminine()?" happily giggling":" grunting")+" in pleasure as [npc2.name] [npc2.verb(let)] out [npc2.moan+].",
-								"Continuing to energetically thrust [npc.her] [npc.cock+] in and out of [npc2.namePos] [npc2."+tag+"+], [npc.name] [npc.verb(reach)] forwards and [npc.verb(take)] a firm hold of [npc2.her] [npc2.hair(true)],"
-										+ " before pulling [npc2.her] head back and causing [npc2.herHim] to let out [npc2.a_moan+].");
+								"Потянувшись вперед, [npc.name] крепко [npc.verb(take)] за [npc2.namePos] [npc2.hair(true)], и, продолжая ритмично вбивать [npc.her] [npc.cock] туда-сюда в [npc2.her] [npc2."+tag+"+], [npc.she] уверенно [npc.verb(pull)] назад, заставляя [npc2.name] закинуть [npc2.her] голову и издать [npc2.a_moan+].",
+								"Крепко сжимая [npc2.namePos] [npc2.hair(true)] в одной [npc.hand], [npc.name] одновременно [npc.verb(pull)] [npc2.her] голову назад, мощно вгоняя [npc.her] [npc.cock+] глубоко в [npc2.her] [npc2."+tag+"],"
+										+(Main.sex.getCharacterPerformingAction().isFeminine()?" счастливо хихикая":" кряхтя")+" в экстазе, пока [npc2.name] [npc2.verb(let)] [npc2.moan+].",
+								"Продолжая энергично вгонять и вынимать [npc.her] [npc.cock+] в [npc2.namePos] [npc2."+tag+"+], [npc.name] [npc.verb(reach)] вперед и [npc.verb(take)] крепко сжимает [npc2.her] [npc2.hair(true)], после чего оттягивает [npc2.her] голову назад, заставляя [npc2.herHim] издать [npc2.a_moan+].");
 						
 					} else {
 						return UtilText.returnStringAtRandom(
-								"Reaching forwards, [npc.name] firmly [npc.verb(take)] hold of [npc2.namePos] [npc2.hair(true)], before steadily pulling [npc2.her] head back and causing [npc2.herHim] to let out [npc2.a_moan+].",
-								"Taking a firm hold of [npc2.namePos] [npc2.hair(true)] in one [npc.hand], [npc.name] "+(Main.sex.getCharacterPerformingAction().isFeminine()?" happily [npc.verb(giggle)]":" [npc.verb(chuckle)]")
-									+" in pleasure as [npc.she] [npc.verb(pull)] [npc2.her] head back, causing [npc2.herHim] to let out [npc2.moan+].",
-								"Tracing [npc.her] [npc.fingers+] up the length of [npc2.namePos] back, [npc.name] [npc.verb(reach)] forwards and [npc.verb(take)] a firm hold of [npc2.her] [npc2.hair(true)],"
-										+ " before pulling [npc2.her] head back and causing [npc2.herHim] to let out [npc2.a_moan+].");
+								"Потянувшись вперед, [npc.name] крепко [npc.verb(take)] захватывает [npc2.namePos] [npc2.hair(true)], после чего уверенно тянет [npc2.her] голову назад, заставляя [npc2.herHim] издать [npc2.a_moan+].",
+								"Крепко сжимая [npc2.namePos] [npc2.hair(true)] в одной [npc.hand], [npc.name] "+(Main.sex.getCharacterPerformingAction().isFeminine()?" счастливо [npc.verb(giggle)]":" [npc.verb(chuckle)]")
+									+" от удовольствия, пока [npc.she] [npc.verb(pull)] [npc2.her] голову назад, заставляя [npc2.herHim] издать [npc2.moan+].",
+								"Проводя [npc.her] [npc.fingers+] вдоль [npc2.namePos] спины, [npc.name] [npc.verb(reach)] вперед и [npc.verb(take)] крепко сжимая [npc2.her] [npc2.hair(true)], прежде чем оттянуть [npc2.her] голову назад, заставляя [npc2.herHim] издать [npc2.a_moan+].");
 					}
 			}
 		}
@@ -222,12 +213,12 @@ public class DoggyStyleAndProneBone {
 		
 		@Override
 		public String getActionTitle() {
-			return "Pull ears";
+			return "Тянуть за уши";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Grab [npc2.namePos] [npc2.ears+] and pull [npc2.her] head back.";
+			return "Схватить [npc2.namePos] [npc2.ears+] и оттянуть [npc2.her] голову назад.";
 		}
 		
 		@Override
@@ -292,56 +283,47 @@ public class DoggyStyleAndProneBone {
 				case DOM_GENTLE:
 					if(vaginalSex || analSex) {
 						return UtilText.returnStringAtRandom(
-								"Reaching forwards, [npc.name] gently [npc.verb(take)] hold of [npc2.namePos] [npc2.ears+] in each [npc.hand], and, while continuing to rhythmically slide [npc.her] [npc.cock] in and out of [npc2.her] [npc2."+tag+"+],"
-										+ " [npc.she] slowly [npc.verb(pull)] back, causing [npc2.name] to lift [npc2.her] head and let out [npc2.a_moan+].",
-								"Taking a gentle hold of [npc2.namePos] [npc2.ears+] with both [npc.hands], [npc.name] simultaneously [npc.verb(pull)] [npc2.her] head back while burying [npc.her] [npc.cock+] deep into [npc2.her] [npc2."+tag+"],"
-										+(Main.sex.getCharacterPerformingAction().isFeminine()?" softly giggling":" smirking")+" to [npc.herself] as [npc2.name] [npc2.verb(let)] out [npc2.moan+].",
-								"Continuing to slowly sink [npc.her] [npc.cock+] in and out of [npc2.namePos] [npc2."+tag+"+], [npc.name] [npc.verb(reach)] forwards with two [npc.hands] and [npc.verb(take)] a gentle hold of [npc2.her] [npc2.ears+],"
-										+ " before pulling [npc2.her] head back and causing [npc2.herHim] to let out [npc2.a_moan+].");
+								"Потянувшись вперед, [npc.name] нежно [npc.verb(take)] берет [npc2.namePos] [npc2.ears+] за каждую [npc.hand], и, продолжая ритмично вводить и выводить [npc.her] [npc.cock] в [npc2.her] [npc2."+tag+"+], [npc.she] медленно [npc.verb(pull)] назад, заставляя [npc2.name] закинуть [npc2.her] голову и издать [npc2.a_moan+].",
+								"Мягко обхватив [npc2.namePos] [npc2.ears+] обеими [npc.hands], [npc.name] одновременно [npc.verb(pull)] [npc2.her] голову назад, глубоко вжимая [npc.her] [npc.cock+] в [npc2.her] [npc2."+tag+"],"
+										+(Main.sex.getCharacterPerformingAction().isFeminine()?" тихо хихикая":" ухмыляясь")+" [npc.herself], пока [npc2.name] [npc2.verb(let)] извлекает [npc2.moan+].",
+								"Продолжая медленно вводить и выводить [npc.her] [npc.cock+] в [npc2.namePos] [npc2."+tag+"+], [npc.name] [npc.verb(reach)] вперед двумя [npc.hands] и [npc.verb(take)] мягко сжимая [npc2.her] [npc2.ears+], прежде чем оттянуть [npc2.her] голову назад, заставляя [npc2.herHim] издать [npc2.a_moan+].");
 						
 					} else {
 						return UtilText.returnStringAtRandom(
-								"Reaching forwards, [npc.name] gently [npc.verb(take)] hold of [npc2.namePos] [npc2.ears+] in each [npc.hand], before slowly pulling [npc2.her] head back and causing [npc2.herHim] to let out [npc2.a_moan+].",
-								"Taking a gentle hold of [npc2.namePos] [npc2.ears+] with both [npc.hands], [npc.name] "+(Main.sex.getCharacterPerformingAction().isFeminine()?" softly [npc.verb(giggle)]":" [npc.verb(smirk)]")
-									+" to [npc.herself] as [npc.she] [npc.verb(pull)] [npc2.her] head back, causing [npc2.herHim] to let out [npc2.moan+].",
-								"Tracing [npc.her] [npc.fingers+] up the length of [npc2.namePos] back, [npc.name] [npc.verb(reach)] forwards with two [npc.hands] and [npc.verb(take)] a gentle hold of [npc2.her] [npc2.ears+],"
-										+ " before pulling [npc2.her] head back and causing [npc2.herHim] to let out [npc2.a_moan+].");
+								"Потянувшись вперед, [npc.name] осторожно [npc.verb(take)] берет [npc2.namePos] [npc2.ears+] в каждую [npc.hand], прежде чем медленно оттянуть [npc2.her] голову назад, заставляя [npc2.herHim] издать [npc2.a_moan+].",
+								"Мягко обхватив [npc2.namePos] [npc2.ears+] обеими [npc.hands], [npc.name] "+(Main.sex.getCharacterPerformingAction().isFeminine()?" мягко [npc.verb(giggle)]":" [npc.verb(smirk)]")
+									+" к [npc.herself], пока [npc.she] [npc.verb(pull)] оттягивает [npc2.her] голову назад, заставляя [npc2.herHim] издать [npc2.moan+].",
+								"Проводя [npc.her] [npc.fingers+] вдоль всей спины [npc2.namePos], [npc.name] [npc.verb(reach)] вперед с двумя [npc.hands] и [npc.verb(take)] нежным захватом [npc2.her] [npc2.ears+], а затем резко оттягивая [npc2.her] голову назад, заставляя [npc2.herHim] издать [npc2.a_moan+].");
 					}
 				case DOM_ROUGH:
 					if(vaginalSex || analSex) {
 						return UtilText.returnStringAtRandom(
-								"Reaching forwards, [npc.name] roughly [npc.verb(grab)] hold of [npc2.namePos] [npc2.ears+], and, while continuing to forcefully slam [npc.her] [npc.cock] in and out of [npc2.her] [npc2."+tag+"+],"
-										+ " [npc.she] sharply [npc.verb(yank)] [npc2.her] head back, causing [npc2.herHim] to let out [npc2.a_moan+].",
-								"Grabbing [npc2.namePos] [npc2.ears+] with both [npc.hands], [npc.name] simultaneously [npc.verb(yank)] [npc2.her] head back while slamming [npc.her] [npc.cock+] deep into [npc2.her] [npc2."+tag+"],"
-										+(Main.sex.getCharacterPerformingAction().isFeminine()?" maniacally giggling":" deeply grunting")+" in pleasure as [npc2.name] [npc2.verb(let)] out [npc2.moan+].",
-								"Continuing to roughly slam [npc.her] [npc.cock+] in and out of [npc2.namePos] [npc2."+tag+"+], [npc.name] [npc.verb(reach)] forwards with two [npc.hands] and [npc.verb(grab)] [npc2.her] [npc2.ears+],"
-										+ " before violently yanking [npc2.her] head back and causing [npc2.herHim] to let out [npc2.a_moan+].");
+								"Потянувшись вперед, [npc.name] грубо [npc.verb(grab)] хватает [npc2.namePos] [npc2.ears+] и, продолжая с силой вбивать [npc.her] [npc.cock] туда-сюда в [npc2.her] [npc2."+tag+"+], [npc.she] резко [npc.verb(yank)] оттягивает [npc2.her] голову назад, заставляя [npc2.herHim] издать [npc2.a_moan+].",
+								"Схватив [npc2.namePos] за [npc2.ears+] обеими [npc.hands], [npc.name] одновременно [npc.verb(yank)] [npc2.her] голову назад, с силой вгоняя [npc.her] [npc.cock+] глубоко в [npc2.her] [npc2."+tag+"],"
+										+(Main.sex.getCharacterPerformingAction().isFeminine()?" маниакально хихикая":" глубоко рыча")+" в экстазе, пока [npc2.name] [npc2.verb(let)] [npc2.moan+].",
+								"Продолжая грубо вбивать [npc.her] [npc.cock+] туда-сюда в [npc2.namePos] [npc2."+tag+"+], [npc.name] [npc.verb(reach)] вперед с двумя [npc.hands] и [npc.verb(grab)] [npc2.her] [npc2.ears+], после чего яростно дергает [npc2.her] за голову, заставляя [npc2.herHim] издать [npc2.a_moan+].");
 						
 					} else {
 						return UtilText.returnStringAtRandom(
-								"Reaching forwards, [npc.name] roughly [npc.verb(grab)] hold of [npc2.namePos] [npc2.ears+] in each [npc.hand], before sharply yanking [npc2.her] head back and causing [npc2.herHim] to let out [npc2.a_moan+].",
-								"Grabbing [npc2.namePos] [npc2.ears+] with both [npc.hands], [npc.name] "+(Main.sex.getCharacterPerformingAction().isFeminine()?" maniacally [npc.verb(giggle)]":" deeply [npc.verb(grunt)]")
-									+" as [npc.she] violently [npc.verb(yank)] [npc2.her] head back, causing [npc2.herHim] to let out [npc2.moan+].",
-								"Groping and pawing [npc.her] way up the length of [npc2.namePos] back, [npc.name] [npc.verb(reach)] forwards with two [npc.hands] and [npc.verb(grab)] [npc2.her] [npc2.ears+],"
-										+ " before roughly tugging [npc2.her] head back and causing [npc2.herHim] to let out [npc2.a_moan+].");
+								"Потянувшись вперед, [npc.name] грубо [npc.verb(grab)] хватает [npc2.namePos] [npc2.ears+] каждой своей [npc.hand], а затем резко дергает [npc2.her] за голову, заставляя [npc2.herHim] издать [npc2.a_moan+].",
+								"Схватив [npc2.namePos] [npc2.ears+] обеими [npc.hands], [npc.name] "+(Main.sex.getCharacterPerformingAction().isFeminine()?" маниакально [npc.verb(giggle)]":" глубоко [npc.verb(grunt)]")
+									+" когда [npc.she] яростно [npc.verb(yank)] голову [npc2.her] назад, заставляя [npc2.herHim] издать [npc2.moan+].",
+								"Грубые ласки и ощупывания [npc.her] вверх по всей длине [npc2.namePos] спины, [npc.name] [npc.verb(reach)] вперед двумя [npc.hands] и [npc.verb(grab)] [npc2.her] [npc2.ears+], после чего резким движением [npc2.her] голову назад, заставляя [npc2.herHim] издать [npc2.a_moan+].");
 					}
 				default: // For dom normal, sub normal, and sub eager:
 					if(vaginalSex || analSex) {
 						return UtilText.returnStringAtRandom(
-								"Reaching forwards, [npc.name] firmly [npc.verb(take)] hold of [npc2.namePos] [npc2.ears+] in each [npc.hand], and, while continuing to rhythmically pump [npc.her] [npc.cock] in and out of [npc2.her] [npc2."+tag+"+],"
-										+ " [npc.she] steadily [npc.verb(pull)] back, causing [npc2.name] to lift [npc2.her] head and let out [npc2.a_moan+].",
-								"Taking a firm hold of [npc2.namePos] [npc2.ears+] with both [npc.hands], [npc.name] simultaneously [npc.verb(pull)] [npc2.her] head back while thrusting [npc.her] [npc.cock+] deep into [npc2.her] [npc2."+tag+"],"
-										+(Main.sex.getCharacterPerformingAction().isFeminine()?" happily giggling":" grunting")+" in pleasure as [npc2.name] [npc2.verb(let)] out [npc2.moan+].",
-								"Continuing to energetically thrust [npc.her] [npc.cock+] in and out of [npc2.namePos] [npc2."+tag+"+], [npc.name] [npc.verb(reach)] forwards with two [npc.hands] and [npc.verb(take)] a firm hold of [npc2.her] [npc2.ears+],"
-										+ " before pulling [npc2.her] head back and causing [npc2.herHim] to let out [npc2.a_moan+].");
+								"Протянув руки вперед, [npc.name] крепко [npc.verb(take)] хватает [npc2.namePos] [npc2.ears+] каждой своей [npc.hand] и, продолжая ритмично вгонять [npc.her] [npc.cock] в [npc2.her] [npc2."+tag+"+], [npc.she] уверенно [npc.verb(pull)] назад, заставляя [npc2.name] закинуть [npc2.her] голову и издать [npc2.a_moan+].",
+								"Крепко обхватив [npc2.namePos] [npc2.ears+] обеими [npc.hands], [npc.name] одновременно [npc.verb(pull)] отклоняет [npc2.her] голову назад, глубоко вгоняя [npc.her] в [npc.cock+] [npc2.her] [npc2."+tag+"],"
+										+(Main.sex.getCharacterPerformingAction().isFeminine()?" счастливо хихикая":" кряхтя")+" в экстазе, пока [npc2.name] [npc2.verb(let)] [npc2.moan+].",
+								"Продолжая энергично вгонять и вынимать [npc.her] [npc.cock+] в [npc2.namePos] [npc2."+tag+"+], [npc.name] [npc.verb(reach)] вперед двумя [npc.hands] и [npc.verb(take)] крепко хватает [npc2.her] [npc2.ears+], прежде чем оттянуть [npc2.her] голову назад, заставляя [npc2.herHim] издать [npc2.a_moan+].");
 						
 					} else {
 						return UtilText.returnStringAtRandom(
-								"Reaching forwards, [npc.name] firmly [npc.verb(take)] hold of [npc2.namePos] [npc2.ears+] in each [npc.hand], before steadily pulling [npc2.her] head back and causing [npc2.herHim] to let out [npc2.a_moan+].",
-								"Taking a firm hold of [npc2.namePos] [npc2.ears+] with both [npc.hands], [npc.name] "+(Main.sex.getCharacterPerformingAction().isFeminine()?" happily [npc.verb(giggle)]":" [npc.verb(chuckle)]")
-									+" in pleasure as [npc.she] [npc.verb(pull)] [npc2.her] head back, causing [npc2.herHim] to let out [npc2.moan+].",
-								"Tracing [npc.her] [npc.fingers+] up the length of [npc2.namePos] back, [npc.name] [npc.verb(reach)] forwards with two [npc.hands] and [npc.verb(take)] a firm hold of [npc2.her] [npc2.ears+],"
-										+ " before pulling [npc2.her] head back and causing [npc2.herHim] to let out [npc2.a_moan+].");
+								"Протянув руки вперед, [npc.name] крепко [npc.verb(take)] хватает [npc2.namePos] [npc2.ears+] каждой своей [npc.hand], после чего уверенно тянет [npc2.her] голову назад, заставляя [npc2.herHim] издать [npc2.a_moan+].",
+								"Крепко обхватив [npc2.namePos] [npc2.ears+] обеими [npc.hands], [npc.name] "+(Main.sex.getCharacterPerformingAction().isFeminine()?" счастливо [npc.verb(giggle)]":" [npc.verb(chuckle)]")
+									+" от удовольствия, пока [npc.she] [npc.verb(pull)] [npc2.her] голову назад, заставляя [npc2.herHim] издать [npc2.moan+].",
+								"Проводя [npc.her] [npc.fingers+] вдоль [npc2.namePos] спины, [npc.name] [npc.verb(reach)] вперед с двумя [npc.hands] и [npc.verb(take)] крепко сжимая [npc2.her] [npc2.ears+], а затем оттягивая [npc2.her] голову назад, заставляя [npc2.herHim] издать [npc2.a_moan+].");
 					}
 			}
 		}
@@ -357,12 +339,12 @@ public class DoggyStyleAndProneBone {
 		
 		@Override
 		public String getActionTitle() {
-			return "Grab [npc2.horns]";
+			return "Схватить [npc2.horns]";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Grab [npc2.namePos] [npc2.horns+] and pull [npc2.her] head back.";
+			return "Схватить [npc2.namePos] [npc2.horns+] и оттянуть [npc2.her] голову назад.";
 		}
 		
 		@Override
@@ -427,56 +409,47 @@ public class DoggyStyleAndProneBone {
 				case DOM_GENTLE:
 					if(vaginalSex || analSex) {
 						return UtilText.returnStringAtRandom(
-								"Reaching forwards, [npc.name] gently [npc.verb(take)] hold of [npc2.namePos] [npc2.horns+] in each [npc.hand], and, while continuing to rhythmically slide [npc.her] [npc.cock] in and out of [npc2.her] [npc2."+tag+"+],"
-										+ " [npc.she] slowly [npc.verb(pull)] back, causing [npc2.name] to lift [npc2.her] head and let out [npc2.a_moan+].",
-								"Taking a gentle hold of [npc2.namePos] [npc2.horns+] with both [npc.hands], [npc.name] simultaneously [npc.verb(pull)] [npc2.her] head back while burying [npc.her] [npc.cock+] deep into [npc2.her] [npc2."+tag+"],"
-										+(Main.sex.getCharacterPerformingAction().isFeminine()?" softly giggling":" smirking")+" to [npc.herself] as [npc2.name] [npc2.verb(let)] out [npc2.moan+].",
-								"Continuing to slowly sink [npc.her] [npc.cock+] in and out of [npc2.namePos] [npc2."+tag+"+], [npc.name] [npc.verb(reach)] forwards with two [npc.hands] and [npc.verb(take)] a gentle hold of [npc2.her] [npc2.horns+],"
-										+ " before pulling [npc2.her] head back and causing [npc2.herHim] to let out [npc2.a_moan+].");
+								"Потянувшись вперед, [npc.name] нежно [npc.verb(take)] берет [npc2.namePos] [npc2.horns+] за каждую [npc.hand], и, продолжая ритмично вгонять [npc.her] [npc.cock] в [npc2.her] [npc2."+tag+"+], [npc.she] медленно [npc.verb(pull)] назад, заставляя [npc2.name] закинуть [npc2.her] голову и издать [npc2.a_moan+].",
+								"Мягко обхватив [npc2.namePos] [npc2.horns+] обеими [npc.hands], [npc.name] одновременно [npc.verb(pull)] [npc2.her] голову назад, глубоко вгоняя [npc.her] [npc.cock+] в [npc2.her] [npc2."+tag+"],"
+										+(Main.sex.getCharacterPerformingAction().isFeminine()?" тихо хихикая":" ухмыляясь")+" [npc.herself], пока [npc2.name] [npc2.verb(let)] извлекает [npc2.moan+].",
+								"Продолжая медленно вводить и выводить [npc.her] [npc.cock+] в [npc2.namePos] [npc2."+tag+"+], [npc.name] [npc.verb(reach)] вперед с двумя [npc.hands] и [npc.verb(take)] мягко сжимая [npc2.her] [npc2.horns+], прежде чем оттянуть [npc2.her] голову назад, заставляя [npc2.herHim] издать [npc2.a_moan+].");
 						
 					} else {
 						return UtilText.returnStringAtRandom(
-								"Reaching forwards, [npc.name] gently [npc.verb(take)] hold of [npc2.namePos] [npc2.horns+] in each [npc.hand], before slowly pulling [npc2.her] head back and causing [npc2.herHim] to let out [npc2.a_moan+].",
-								"Taking a gentle hold of [npc2.namePos] [npc2.horns+] with both [npc.hands], [npc.name] "+(Main.sex.getCharacterPerformingAction().isFeminine()?" softly [npc.verb(giggle)]":" [npc.verb(smirk)]")
-									+" to [npc.herself] as [npc.she] [npc.verb(pull)] [npc2.her] head back, causing [npc2.herHim] to let out [npc2.moan+].",
-								"Tracing [npc.her] [npc.fingers+] up the length of [npc2.namePos] back, [npc.name] [npc.verb(reach)] forwards with two [npc.hands] and [npc.verb(take)] a gentle hold of [npc2.her] [npc2.horns+],"
-										+ " before pulling [npc2.her] head back and causing [npc2.herHim] to let out [npc2.a_moan+].");
+								"Потянувшись вперед, [npc.name] осторожно [npc.verb(take)] берет [npc2.namePos] [npc2.horns+] в каждую [npc.hand], прежде чем медленно оттянуть [npc2.her] голову назад, заставляя [npc2.herHim] издать [npc2.a_moan+].",
+								"Мягко обхватив [npc2.namePos] [npc2.horns+] обеими [npc.hands], [npc.name] "+(Main.sex.getCharacterPerformingAction().isFeminine()?" мягко [npc.verb(giggle)]":" [npc.verb(smirk)]")
+									+" к [npc.herself], пока [npc.she] [npc.verb(pull)] оттягивает [npc2.her] голову назад, заставляя [npc2.herHim] издать [npc2.moan+].",
+								"Проводя [npc.her] [npc.fingers+] вдоль всей спины [npc2.namePos], [npc.name] [npc.verb(reach)] вперед с двумя [npc.hands] и [npc.verb(take)] нежным захватом [npc2.her] [npc2.horns+], а затем резко оттягивая [npc2.her] голову назад, заставляя [npc2.herHim] издать [npc2.a_moan+].");
 					}
 				case DOM_ROUGH:
 					if(vaginalSex || analSex) {
 						return UtilText.returnStringAtRandom(
-								"Reaching forwards, [npc.name] roughly [npc.verb(grab)] hold of [npc2.namePos] [npc2.horns+], and, while continuing to forcefully slam [npc.her] [npc.cock] in and out of [npc2.her] [npc2."+tag+"+],"
-										+ " [npc.she] sharply [npc.verb(yank)] [npc2.her] head back, causing [npc2.herHim] to let out [npc2.a_moan+].",
-								"Grabbing [npc2.namePos] [npc2.horns+] with both [npc.hands], [npc.name] simultaneously [npc.verb(yank)] [npc2.her] head back while slamming [npc.her] [npc.cock+] deep into [npc2.her] [npc2."+tag+"],"
-										+(Main.sex.getCharacterPerformingAction().isFeminine()?" maniacally giggling":" deeply grunting")+" in pleasure as [npc2.name] [npc2.verb(let)] out [npc2.moan+].",
-								"Continuing to roughly slam [npc.her] [npc.cock+] in and out of [npc2.namePos] [npc2."+tag+"+], [npc.name] [npc.verb(reach)] forwards with two [npc.hands] and [npc.verb(grab)] [npc2.her] [npc2.horns+],"
-										+ " before violently yanking [npc2.her] head back and causing [npc2.herHim] to let out [npc2.a_moan+].");
+								"Потянувшись вперед, [npc.name] грубо [npc.verb(grab)] хватает [npc2.namePos] за [npc2.horns+] и, продолжая с силой вбивать [npc.her] [npc.cock] туда-сюда в [npc2.her] [npc2."+tag+"+], [npc.she] резко [npc.verb(yank)] оттягивает [npc2.her] голову назад, заставляя [npc2.herHim] издать [npc2.a_moan+].",
+								"Схватив [npc2.namePos] за [npc2.horns+] обеими [npc.hands], [npc.name] одновременно [npc.verb(yank)] [npc2.her] голову назад, с силой вгоняя [npc.her] [npc.cock+] глубоко в [npc2.her] [npc2."+tag+"],"
+										+(Main.sex.getCharacterPerformingAction().isFeminine()?" маниакально хихикая":" глубоко рыча")+" в экстазе, пока [npc2.name] [npc2.verb(let)] [npc2.moan+].",
+								"Продолжая грубо вбивать [npc.her] [npc.cock+] туда-сюда в [npc2.namePos] [npc2."+tag+"+], [npc.name] [npc.verb(reach)] вперед с двумя [npc.hands] и [npc.verb(grab)] [npc2.her] [npc2.horns+], прежде чем яростно дернуть [npc2.her] голову назад, заставляя [npc2.herHim] издать [npc2.a_moan+].");
 						
 					} else {
 						return UtilText.returnStringAtRandom(
-								"Reaching forwards, [npc.name] roughly [npc.verb(grab)] hold of [npc2.namePos] [npc2.horns+] in each [npc.hand], before sharply yanking [npc2.her] head back and causing [npc2.herHim] to let out [npc2.a_moan+].",
-								"Grabbing [npc2.namePos] [npc2.horns+] with both [npc.hands], [npc.name] "+(Main.sex.getCharacterPerformingAction().isFeminine()?" maniacally [npc.verb(giggle)]":" deeply [npc.verb(grunt)]")
-									+" as [npc.she] violently [npc.verb(yank)] [npc2.her] head back, causing [npc2.herHim] to let out [npc2.moan+].",
-								"Groping and pawing [npc.her] way up the length of [npc2.namePos] back, [npc.name] [npc.verb(reach)] forwards with two [npc.hands] and [npc.verb(grab)] [npc2.her] [npc2.horns+],"
-										+ " before roughly tugging [npc2.her] head back and causing [npc2.herHim] to let out [npc2.a_moan+].");
+								"Потянувшись вперед, [npc.name] грубо [npc.verb(grab)] хватает [npc2.namePos] за [npc2.horns+] каждой своей [npc.hand], а затем резко дергает [npc2.her] голову назад, заставляя [npc2.herHim] издать [npc2.a_moan+].",
+								"Схватив [npc2.namePos] [npc2.horns+] обеими [npc.hands], [npc.name] "+(Main.sex.getCharacterPerformingAction().isFeminine()?" маниакально [npc.verb(giggle)]":" глубоко [npc.verb(grunt)]")
+									+" когда [npc.she] яростно [npc.verb(yank)] голову [npc2.her] назад, заставляя [npc2.herHim] издать [npc2.moan+].",
+								"Грубые ласки и ощупывания [npc.her] вверх по всей длине [npc2.namePos] спины, [npc.name] [npc.verb(reach)] вперед двумя [npc.hands] и [npc.verb(grab)] [npc2.her] [npc2.horns+], после чего резким движением [npc2.her] голову назад, заставляя [npc2.herHim] издать [npc2.a_moan+].");
 					}
 				default: // For dom normal, sub normal, and sub eager:
 					if(vaginalSex || analSex) {
 						return UtilText.returnStringAtRandom(
-								"Reaching forwards, [npc.name] firmly [npc.verb(take)] hold of [npc2.namePos] [npc2.horns+] in each [npc.hand], and, while continuing to rhythmically pump [npc.her] [npc.cock] in and out of [npc2.her] [npc2."+tag+"+],"
-										+ " [npc.she] steadily [npc.verb(pull)] back, causing [npc2.name] to lift [npc2.her] head and let out [npc2.a_moan+].",
-								"Taking a firm hold of [npc2.namePos] [npc2.horns+] with both [npc.hands], [npc.name] simultaneously [npc.verb(pull)] [npc2.her] head back while thrusting [npc.her] [npc.cock+] deep into [npc2.her] [npc2."+tag+"],"
-										+(Main.sex.getCharacterPerformingAction().isFeminine()?" happily giggling":" grunting")+" in pleasure as [npc2.name] [npc2.verb(let)] out [npc2.moan+].",
-								"Continuing to energetically thrust [npc.her] [npc.cock+] in and out of [npc2.namePos] [npc2."+tag+"+], [npc.name] [npc.verb(reach)] forwards with two [npc.hands] and [npc.verb(take)] a firm hold of [npc2.her] [npc2.horns+],"
-										+ " before pulling [npc2.her] head back and causing [npc2.herHim] to let out [npc2.a_moan+].");
+								"Протянув руки вперед, [npc.name] крепко [npc.verb(take)] хватает [npc2.namePos] [npc2.horns+] каждой [npc.hand] и, продолжая ритмично [npc.her] [npc.cock] туда-сюда в [npc2.her] [npc2."+tag+"+], [npc.she] уверенно [npc.verb(pull)] назад, заставляя [npc2.name] закинуть [npc2.her] голову и издать [npc2.a_moan+].",
+								"Крепко обхватив [npc2.namePos] [npc2.horns+] обеими [npc.hands], [npc.name] одновременно [npc.verb(pull)] [npc2.her] голову назад, с силой вгоняя [npc.her] [npc.cock+] глубоко в [npc2.her] [npc2."+tag+"],"
+										+(Main.sex.getCharacterPerformingAction().isFeminine()?" счастливо хихикая":" кряхтя")+" в экстазе, пока [npc2.name] [npc2.verb(let)] [npc2.moan+].",
+								"Продолжая энергично вгонять и вынимать [npc.her] [npc.cock+] в [npc2.namePos] [npc2."+tag+"+], [npc.name] [npc.verb(reach)] вперед двумя [npc.hands] и [npc.verb(take)] крепко хватает [npc2.her] [npc2.horns+], прежде чем оттянуть [npc2.her] голову назад, заставляя [npc2.herHim] издать [npc2.a_moan+].");
 						
 					} else {
 						return UtilText.returnStringAtRandom(
-								"Reaching forwards, [npc.name] firmly [npc.verb(take)] hold of [npc2.namePos] [npc2.horns+] in each [npc.hand], before steadily pulling [npc2.her] head back and causing [npc2.herHim] to let out [npc2.a_moan+].",
-								"Taking a firm hold of [npc2.namePos] [npc2.horns+] with both [npc.hands], [npc.name] "+(Main.sex.getCharacterPerformingAction().isFeminine()?" happily [npc.verb(giggle)]":" [npc.verb(chuckle)]")
-									+" in pleasure as [npc.she] [npc.verb(pull)] [npc2.her] head back, causing [npc2.herHim] to let out [npc2.moan+].",
-								"Tracing [npc.her] [npc.fingers+] up the length of [npc2.namePos] back, [npc.name] [npc.verb(reach)] forwards with two [npc.hands] and [npc.verb(take)] a firm hold of [npc2.her] [npc2.horns+],"
-										+ " before pulling [npc2.her] head back and causing [npc2.herHim] to let out [npc2.a_moan+].");
+								"Протянув руки вперед, [npc.name] крепко [npc.verb(take)] хватает [npc2.namePos] [npc2.horns+] каждой [npc.hand], а затем уверенно тянет [npc2.her] голову назад, заставляя [npc2.herHim] издать [npc2.a_moan+].",
+								"Крепко обхватив [npc2.namePos] [npc2.horns+] обеими [npc.hands], [npc.name] "+(Main.sex.getCharacterPerformingAction().isFeminine()?" счастливо [npc.verb(giggle)]":" [npc.verb(chuckle)]")
+									+" от удовольствия, пока [npc.she] [npc.verb(pull)] [npc2.her] голову назад, заставляя [npc2.herHim] издать [npc2.moan+].",
+								"Проводя [npc.her] [npc.fingers+] вдоль всей спины [npc2.namePos], [npc.name] [npc.verb(reach)] вперед с двумя [npc.hands] и [npc.verb(take)] крепко сжимая [npc2.her] [npc2.horns+], а затем оттягивая [npc2.her] голову назад, заставляя [npc2.herHim] издать [npc2.a_moan+].");
 					}
 			}
 		}
@@ -494,12 +467,12 @@ public class DoggyStyleAndProneBone {
 		
 		@Override
 		public String getActionTitle() {
-			return "Grab [npc2.antennae]";
+			return "Схватить [npc2.antennae]";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Grab [npc2.namePos] [npc2.antennae+] and pull [npc2.her] head back.";
+			return "Схватить [npc2.namePos] [npc2.antennae+] и оттянуть [npc2.her] голову назад.";
 		}
 		
 		@Override
@@ -564,56 +537,47 @@ public class DoggyStyleAndProneBone {
 				case DOM_GENTLE:
 					if(vaginalSex || analSex) {
 						return UtilText.returnStringAtRandom(
-								"Reaching forwards, [npc.name] gently [npc.verb(take)] hold of [npc2.namePos] [npc2.antennae+] in each [npc.hand], and, while continuing to rhythmically slide [npc.her] [npc.cock] in and out of [npc2.her] [npc2."+tag+"+],"
-										+ " [npc.she] slowly [npc.verb(pull)] back, causing [npc2.name] to lift [npc2.her] head and let out [npc2.a_moan+].",
-								"Taking a gentle hold of [npc2.namePos] [npc2.antennae+] with both [npc.hands], [npc.name] simultaneously [npc.verb(pull)] [npc2.her] head back while burying [npc.her] [npc.cock+] deep into [npc2.her] [npc2."+tag+"],"
-										+(Main.sex.getCharacterPerformingAction().isFeminine()?" softly giggling":" smirking")+" to [npc.herself] as [npc2.name] [npc2.verb(let)] out [npc2.moan+].",
-								"Continuing to slowly sink [npc.her] [npc.cock+] in and out of [npc2.namePos] [npc2."+tag+"+], [npc.name] [npc.verb(reach)] forwards with two [npc.hands] and [npc.verb(take)] a gentle hold of [npc2.her] [npc2.antennae+],"
-										+ " before pulling [npc2.her] head back and causing [npc2.herHim] to let out [npc2.a_moan+].");
+								"Потянувшись вперед, [npc.name] нежно [npc.verb(take)] берет [npc2.namePos] [npc2.antennae+] за каждую [npc.hand], и, продолжая ритмично вводить и выводить [npc.her] [npc.cock] в [npc2.her] [npc2."+tag+"+], [npc.she] медленно [npc.verb(pull)] назад, заставляя [npc2.name] закинуть [npc2.her] голову и издать [npc2.a_moan+].",
+								"Мягко обхватив [npc2.namePos] [npc2.antennae+] обеими [npc.hands], [npc.name] одновременно [npc.verb(pull)] [npc2.her] голову назад, глубоко вбивая [npc.her] [npc.cock+] в [npc2.her] [npc2."+tag+"],"
+										+(Main.sex.getCharacterPerformingAction().isFeminine()?" тихо хихикая":" ухмыляясь")+" [npc.herself], пока [npc2.name] [npc2.verb(let)] извлекает [npc2.moan+].",
+								"Продолжая медленно вводить и выводить [npc.her] [npc.cock+] в [npc2.namePos] [npc2."+tag+"+], [npc.name] [npc.verb(reach)] вперед с двумя [npc.hands] и [npc.verb(take)] мягко сжимая [npc2.her] [npc2.antennae+], прежде чем оттянуть [npc2.her] голову назад, заставляя [npc2.herHim] издать [npc2.a_moan+].");
 						
 					} else {
 						return UtilText.returnStringAtRandom(
-								"Reaching forwards, [npc.name] gently [npc.verb(take)] hold of [npc2.namePos] [npc2.antennae+] in each [npc.hand], before slowly pulling [npc2.her] head back and causing [npc2.herHim] to let out [npc2.a_moan+].",
-								"Taking a gentle hold of [npc2.namePos] [npc2.antennae+] with both [npc.hands], [npc.name] "+(Main.sex.getCharacterPerformingAction().isFeminine()?" softly [npc.verb(giggle)]":" [npc.verb(smirk)]")
-									+" to [npc.herself] as [npc.she] [npc.verb(pull)] [npc2.her] head back, causing [npc2.herHim] to let out [npc2.moan+].",
-								"Tracing [npc.her] [npc.fingers+] up the length of [npc2.namePos] back, [npc.name] [npc.verb(reach)] forwards with two [npc.hands] and [npc.verb(take)] a gentle hold of [npc2.her] [npc2.antennae+],"
-										+ " before pulling [npc2.her] head back and causing [npc2.herHim] to let out [npc2.a_moan+].");
+								"Потянувшись вперед, [npc.name] осторожно [npc.verb(take)] берет [npc2.namePos] [npc2.antennae+] в каждую [npc.hand], а затем медленно оттягивает [npc2.her] голову назад, заставляя [npc2.herHim] издать [npc2.a_moan+].",
+								"Мягко обхватив [npc2.namePos] [npc2.antennae+] обеими [npc.hands], [npc.name] "+(Main.sex.getCharacterPerformingAction().isFeminine()?" мягко [npc.verb(giggle)]":" [npc.verb(smirk)]")
+									+" к [npc.herself], пока [npc.she] [npc.verb(pull)] оттягивает [npc2.her] голову назад, заставляя [npc2.herHim] издать [npc2.moan+].",
+								"Проводя [npc.her] [npc.fingers+] вдоль всей спины [npc2.namePos], [npc.name] [npc.verb(reach)] вперед с двумя [npc.hands] и [npc.verb(take)] нежно сжимая [npc2.her] [npc2.antennae+], а затем резко оттягивая [npc2.her] голову назад, заставляя [npc2.herHim] издать [npc2.a_moan+].");
 					}
 				case DOM_ROUGH:
 					if(vaginalSex || analSex) {
 						return UtilText.returnStringAtRandom(
-								"Reaching forwards, [npc.name] roughly [npc.verb(grab)] hold of [npc2.namePos] [npc2.antennae+], and, while continuing to forcefully slam [npc.her] [npc.cock] in and out of [npc2.her] [npc2."+tag+"+],"
-										+ " [npc.she] sharply [npc.verb(yank)] [npc2.her] head back, causing [npc2.herHim] to let out [npc2.a_moan+].",
-								"Grabbing [npc2.namePos] [npc2.antennae+] with both [npc.hands], [npc.name] simultaneously [npc.verb(yank)] [npc2.her] head back while slamming [npc.her] [npc.cock+] deep into [npc2.her] [npc2."+tag+"],"
-										+(Main.sex.getCharacterPerformingAction().isFeminine()?" maniacally giggling":" deeply grunting")+" in pleasure as [npc2.name] [npc2.verb(let)] out [npc2.moan+].",
-								"Continuing to roughly slam [npc.her] [npc.cock+] in and out of [npc2.namePos] [npc2."+tag+"+], [npc.name] [npc.verb(reach)] forwards with two [npc.hands] and [npc.verb(grab)] [npc2.her] [npc2.antennae+],"
-										+ " before violently yanking [npc2.her] head back and causing [npc2.herHim] to let out [npc2.a_moan+].");
+								"Потянувшись вперед, [npc.name] грубо [npc.verb(grab)] хватает [npc2.namePos] за [npc2.antennae+] и, продолжая с силой вбивать [npc.her] [npc.cock] туда-сюда в [npc2.her] [npc2."+tag+"+], [npc.she] резко [npc.verb(yank)] оттягивает [npc2.her] голову назад, заставляя [npc2.herHim] издать [npc2.a_moan+].",
+								"Схватив [npc2.namePos] за [npc2.antennae+] обеими [npc.hands], [npc.name] одновременно [npc.verb(yank)] [npc2.her] голову назад, с силой вгоняя [npc.her] [npc.cock+] глубоко в [npc2.her] [npc2."+tag+"],"
+										+(Main.sex.getCharacterPerformingAction().isFeminine()?" маниакально хихикая":" глубоко рыча")+" в экстазе, пока [npc2.name] [npc2.verb(let)] [npc2.moan+].",
+								"Продолжая грубо вбивать [npc.her] [npc.cock+] туда-сюда в [npc2.namePos] [npc2."+tag+"+], [npc.name] [npc.verb(reach)] вперед с двумя [npc.hands] и [npc.verb(grab)] [npc2.her] [npc2.antennae+], прежде чем яростно дернуть [npc2.her] голову назад, заставляя [npc2.herHim] издать [npc2.a_moan+].");
 						
 					} else {
 						return UtilText.returnStringAtRandom(
-								"Reaching forwards, [npc.name] roughly [npc.verb(grab)] hold of [npc2.namePos] [npc2.antennae+] in each [npc.hand], before sharply yanking [npc2.her] head back and causing [npc2.herHim] to let out [npc2.a_moan+].",
-								"Grabbing [npc2.namePos] [npc2.antennae+] with both [npc.hands], [npc.name] "+(Main.sex.getCharacterPerformingAction().isFeminine()?" maniacally [npc.verb(giggle)]":" deeply [npc.verb(grunt)]")
-									+" as [npc.she] violently [npc.verb(yank)] [npc2.her] head back, causing [npc2.herHim] to let out [npc2.moan+].",
-								"Groping and pawing [npc.her] way up the length of [npc2.namePos] back, [npc.name] [npc.verb(reach)] forwards with two [npc.hands] and [npc.verb(grab)] [npc2.her] [npc2.antennae+],"
-										+ " before roughly tugging [npc2.her] head back and causing [npc2.herHim] to let out [npc2.a_moan+].");
+								"Потянувшись вперед, [npc.name] грубо [npc.verb(grab)] хватает [npc2.namePos] за [npc2.antennae+] каждой своей [npc.hand], а затем резко дергает [npc2.her] голову назад, заставляя [npc2.herHim] издать [npc2.a_moan+].",
+								"Схватив [npc2.namePos] [npc2.antennae+] обеими [npc.hands], [npc.name] "+(Main.sex.getCharacterPerformingAction().isFeminine()?" маниакально [npc.verb(giggle)]":" глубоко [npc.verb(grunt)]")
+									+" когда [npc.she] яростно [npc.verb(yank)] голову [npc2.her] назад, заставляя [npc2.herHim] издать [npc2.moan+].",
+								"Грубые ласки и ощупывания [npc.her] вверх по всей длине [npc2.namePos] спины, [npc.name] [npc.verb(reach)] вперед двумя [npc.hands] и [npc.verb(grab)] [npc2.her] [npc2.antennae+], после чего резким движением [npc2.her] голову назад, заставляя [npc2.herHim] издать [npc2.a_moan+].");
 					}
 				default: // For dom normal, sub normal, and sub eager:
 					if(vaginalSex || analSex) {
 						return UtilText.returnStringAtRandom(
-								"Reaching forwards, [npc.name] firmly [npc.verb(take)] hold of [npc2.namePos] [npc2.antennae+] in each [npc.hand], and, while continuing to rhythmically pump [npc.her] [npc.cock] in and out of [npc2.her] [npc2."+tag+"+],"
-										+ " [npc.she] steadily [npc.verb(pull)] back, causing [npc2.name] to lift [npc2.her] head and let out [npc2.a_moan+].",
-								"Taking a firm hold of [npc2.namePos] [npc2.antennae+] with both [npc.hands], [npc.name] simultaneously [npc.verb(pull)] [npc2.her] head back while thrusting [npc.her] [npc.cock+] deep into [npc2.her] [npc2."+tag+"],"
-										+(Main.sex.getCharacterPerformingAction().isFeminine()?" happily giggling":" grunting")+" in pleasure as [npc2.name] [npc2.verb(let)] out [npc2.moan+].",
-								"Continuing to energetically thrust [npc.her] [npc.cock+] in and out of [npc2.namePos] [npc2."+tag+"+], [npc.name] [npc.verb(reach)] forwards with two [npc.hands] and [npc.verb(take)] a firm hold of [npc2.her] [npc2.antennae+],"
-										+ " before pulling [npc2.her] head back and causing [npc2.herHim] to let out [npc2.a_moan+].");
+								"Протянув руки вперед, [npc.name] крепко [npc.verb(take)] хватает [npc2.namePos] [npc2.antennae+] каждой своей [npc.hand] и, продолжая ритмично [npc.her] [npc.cock] туда-сюда в [npc2.her] [npc2."+tag+"+], [npc.she] уверенно [npc.verb(pull)] назад, заставляя [npc2.name] закинуть [npc2.her] голову и издать [npc2.a_moan+].",
+								"Крепко обхватив [npc2.namePos] [npc2.antennae+] обеими [npc.hands], [npc.name] одновременно [npc.verb(pull)] [npc2.her] голову назад, мощно вгоняя [npc.her] [npc.cock+] глубоко в [npc2.her] [npc2."+tag+"],"
+										+(Main.sex.getCharacterPerformingAction().isFeminine()?" счастливо хихикая":" кряхтя")+" в экстазе, пока [npc2.name] [npc2.verb(let)] [npc2.moan+].",
+								"Продолжая энергично вгонять и вынимать [npc.her] [npc.cock+] в [npc2.namePos] [npc2."+tag+"+], [npc.name] [npc.verb(reach)] вперед двумя [npc.hands] и [npc.verb(take)] крепко сжимает [npc2.her] [npc2.antennae+], после чего оттягивает [npc2.her] голову назад, заставляя [npc2.herHim] издать [npc2.a_moan+].");
 						
 					} else {
 						return UtilText.returnStringAtRandom(
-								"Reaching forwards, [npc.name] firmly [npc.verb(take)] hold of [npc2.namePos] [npc2.antennae+] in each [npc.hand], before steadily pulling [npc2.her] head back and causing [npc2.herHim] to let out [npc2.a_moan+].",
-								"Taking a firm hold of [npc2.namePos] [npc2.antennae+] with both [npc.hands], [npc.name] "+(Main.sex.getCharacterPerformingAction().isFeminine()?" happily [npc.verb(giggle)]":" [npc.verb(chuckle)]")
-									+" in pleasure as [npc.she] [npc.verb(pull)] [npc2.her] head back, causing [npc2.herHim] to let out [npc2.moan+].",
-								"Tracing [npc.her] [npc.fingers+] up the length of [npc2.namePos] back, [npc.name] [npc.verb(reach)] forwards with two [npc.hands] and [npc.verb(take)] a firm hold of [npc2.her] [npc2.antennae+],"
-										+ " before pulling [npc2.her] head back and causing [npc2.herHim] to let out [npc2.a_moan+].");
+								"Протянув руки вперед, [npc.name] крепко [npc.verb(take)] хватает [npc2.namePos] [npc2.antennae+] каждой своей [npc.hand], после чего уверенно тянет [npc2.her] голову назад, заставляя [npc2.herHim] издать [npc2.a_moan+].",
+								"Крепко обхватив [npc2.namePos] [npc2.antennae+] обеими [npc.hands], [npc.name] "+(Main.sex.getCharacterPerformingAction().isFeminine()?" счастливо [npc.verb(giggle)]":" [npc.verb(chuckle)]")
+									+" от удовольствия, пока [npc.she] [npc.verb(pull)] [npc2.her] голову назад, заставляя [npc2.herHim] издать [npc2.moan+].",
+								"Проводя [npc.her] [npc.fingers+] вдоль всей спины [npc2.namePos], [npc.name] [npc.verb(reach)] вперед с двумя [npc.hands] и [npc.verb(take)] крепко сжимая [npc2.her] [npc2.antennae+], а затем оттягивая [npc2.her] голову назад, заставляя [npc2.herHim] издать [npc2.a_moan+].");
 					}
 			}
 		}
@@ -641,11 +605,11 @@ public class DoggyStyleAndProneBone {
 		
 		@Override
 		public String getActionTitle() {
-			return "Seductive look";
+			return "Соблазнительный взгляд";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Turn your head back and give [npc2.name] a seductive look.";
+			return "Поверни голову назад и брось на [npc2.name] соблазнительный взгляд.";
 		}
 		
 		@Override
@@ -658,21 +622,16 @@ public class DoggyStyleAndProneBone {
 			if(Main.sex.getCharacterPerformingAction().getSubspecies()==Subspecies.getSubspeciesFromId("innoxia_raptor_subspecies_owl")
 					&& Main.sex.getCharacterPerformingAction().getFaceType().getRace()==Race.getRaceFromId("innoxia_raptor")) {
 				return UtilText.returnStringAtRandom(
-						"In a rather creepy and alarming move, [npc.name] [npc.verb(use)] the mobility of [npc.her] owl-like neck to twist [npc.her] head a full one hundred and eighty degrees,"
-								+ " before looking up at [npc2.name] and putting on [npc.her] most seductive look as [npc.she] [npc.verb(entice)] [npc2.herHim] to use [npc.herHim].",
-						"Fully twisting [npc.her] owl-like neck around, [npc.name] [npc.verb(end)] up looking straight up at [npc2.name] as [npc2.she] [npc2.verb(tower)] over [npc.her] [npc.ass+]."
-								+ " Hoping that this alarming and slightly creepy move won't prove to be a turn-off, [npc.name] [npc.verb(put)] on a seductive look,"
-								+ " [npc.moaning] in delight as [npc.she] [npc.verb(entice)] [npc2.name] into using [npc.her] body.",
-						"Making use of the large range of movement which [npc.her] owl-like neck grants [npc.herHim], [npc.name] [npc.verb(turn)] [npc.her] head fully around so that [npc.sheIs] facing [npc2.name] without moving [npc.her] body,"
-								+ " before doing [npc.her] best to look as seductive as possible.");
+						"Довольно жутковатым и тревожным движением [npc.name] [npc.verb(use)] подвижность совиной шеи [npc.her], чтобы повернуть голову [npc.her] на целых сто восемьдесят градусов, после чего взглянуть на [npc2.name] и принять [npc.her] самый соблазнительный вид, пока [npc.she] [npc.verb(entice)] [npc2.herHim], чтобы использовать [npc.herHim].",
+						"Полностью вывернув совиную шею [npc.her], [npc.name] [npc.verb(end)] вверх, глядя прямо на [npc2.name], пока [npc2.she] [npc2.verb(tower)] над [npc.her] [npc.ass+]. Надеясь, что этот пугающий и слегка жуткий маневр не оттолкнет партнера, [npc.name] [npc.verb(put)] на соблазнительный взгляд, [npc.moaning] в восторге от того, как [npc.she] [npc.verb(entice)] [npc2.name], используя тело [npc.her].",
+						"Используя широкую амплитуду движений, которую [npc.her] совиная шея дарует [npc.herHim], [npc.name] [npc.verb(turn)] [npc.her] голову полностью вокруг, так что [npc.sheIs] смотрит на [npc2.name], не двигая [npc.her] телом, после чего стараясь [npc.her] изо всех сил выглядеть как можно более соблазнительно.");
 				
 			} else {
 				return UtilText.returnStringAtRandom(
-						"Turning [npc.her] head back, [npc.name] [npc.verb(look)] up at [npc2.name] and [npc.verb(bite)] [npc.her] [npc.lip], putting on [npc.her] most seductive look as [npc.she] [npc.verb(entice)] [npc2.herHim] to use [npc.herHim].",
-						"Looking back at [npc2.name] as [npc2.she] [npc2.verb(tower)] over [npc.her] [npc.ass+], [npc.name] [npc.verb(put)] on a seductive look,"
-								+ " [npc.moaning] in delight as [npc.she] [npc.verb(entice)] [npc2.herHim] into using [npc.her] body.",
-						"[npc.Name] [npc.verb(turn)] [npc.her] head and [npc.verb(bite)] [npc.her] [npc.lip] at [npc2.name], doing [npc.her] best to look as seductive as possible.",
-						"Looking back, [npc.name] [npc.verb(put)] on a seductive look for [npc2.name], feeling extremely pleased with [npc.herself] as [npc.she] [npc.verb(see)] [npc2.herHim] gazing hungrily down at [npc.herHim] in return.");
+						"Поворачивая [npc.her] голову назад, [npc.name] [npc.verb(look)] на [npc2.name] и [npc.verb(bite)] [npc.her] [npc.lip], она принимает [npc.her] самый соблазнительный вид, пока [npc.she] [npc.verb(entice)] [npc2.herHim], чтобы использовать [npc.herHim].",
+						"Оглядываясь на [npc2.name], пока [npc2.she] [npc2.verb(tower)] через [npc.her] [npc.ass+], [npc.name] [npc.verb(put)] соблазнительный взгляд, [npc.moaning] в восторге от того, как [npc.she] [npc.verb(entice)] [npc2.herHim], используя тело [npc.her].",
+						"[npc.Name] [npc.verb(turn)] [npc.her] головой и [npc.verb(bite)] [npc.her] [npc.lip] в [npc2.name], стараясь [npc.her] изо всех сил выглядеть как можно соблазнительнее.",
+						"Оглядываясь назад, [npc.name] [npc.verb(put)] соблазнительный взгляд для [npc2.name], чувствуя крайнее удовольствие от [npc.herself], пока [npc.she] [npc.verb(see)] [npc2.herHim], жадно смотря на [npc.herHim] в ответ.");
 			}
 		}
 	};
@@ -715,14 +674,14 @@ public class DoggyStyleAndProneBone {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Ass-to-mouth";
+			return "Задница в рот";
 		}
 		@Override
 		public String getActionDescription() {
 			if(Main.sex.getCharacterPerformingAction().isWearingCondom()) {
-				return "Roughly fuck [npc2.name] into the floor before filling your condom with your cum. Then slide it off and use [npc2.her] mouth to clean yourself off.";
+				return "Жестко трахай [npc2.name] в пол, прежде чем наполнить свой презерватив своей спермой. Затем сними его и используй рот [npc2.her], чтобы очиститься.";
 			}
-			return "Roughly fuck [npc2.name] into the floor before filling [npc2.her] [npc2.ass] with your cum. Then use [npc2.her] mouth to clean yourself off.";
+			return "Жестко трахай [npc2.name] в пол, прежде чем наполнить [npc2.her] [npc2.ass] своей спермой. Затем используй рот [npc2.her], чтобы очиститься.";
 		}
 		@Override
 		public String getDescription() {
@@ -731,115 +690,102 @@ public class DoggyStyleAndProneBone {
 
 			StringBuilder sb = new StringBuilder();
 			
-			sb.append("As [npc.name] [npc.verb(feel)] [npc2.namePos] [npc2.asshole+] squeezing down around [npc.her] [npc.cock+], [npc.she] [npc.verb(decide)] to show [npc2.herHim] how"
+			sb.append("Пока [npc.name] [npc.verb(feel)] [npc2.namePos] [npc2.asshole+] сжимается вокруг [npc.her] [npc.cock+], [npc.she] [npc.verb(decide)], чтобы показать [npc2.herHim], как"
 						+ (Main.sex.getCharacterPerformingAction().getRace()==Race.WOLF_MORPH || Main.sex.getCharacterPerformingAction().getRace()==Race.DOG_MORPH
-							?" an alpha treats their submissive little beta. "
-							:" a real dom treats their submissive bitch. "));
+							?" альфа обращается со своей покорной маленькой бетой. "
+							:" настоящий доминант обращается со своей покорной сучкой. "));
 			
 			if(immobileSleep) {
-				sb.append("Letting out [npc.a_moan+], [npc.name] [npc.verb(slam)] [npc.her] [npc.cock+] deep into [npc2.namePos] [npc2.ass+], grinning devilishly as [npc2.she] [npc2.verb(wake)] up and [npc2.verb(let)] out [npc2.a_moan+].");
+				sb.append("Издавая [npc.a_moan+], [npc.name] [npc.verb(slam)] [npc.her] [npc.cock+] глубоко в [npc2.namePos] [npc2.ass+], дьявольски ухмыляясь, пока [npc2.she] [npc2.verb(wake)] вверх и [npc2.verb(let)] наружу [npc2.a_moan+].");
 			} else if(immobile) {
-				sb.append("Letting out [npc.a_moan+], [npc.name] [npc.verb(slam)] [npc.her] [npc.cock+] deep into [npc2.namePos] [npc2.ass+], grinning devilishly as [npc2.she] [npc2.verb(continue)] acting like an inanimate sex doll.");
+				sb.append("Издавая [npc.a_moan+], [npc.name] [npc.verb(slam)] [npc.her] [npc.cock+] глубоко в [npc2.namePos] [npc2.ass+], дьявольски ухмыляясь, пока [npc2.she] [npc2.verb(continue)], ведя себя как неодушевленная секс-кукла.");
 			} else {
-				sb.append("Letting out [npc.a_moan+], [npc.name] [npc.verb(slam)] [npc.her] [npc.cock+] deep into [npc2.namePos] [npc2.ass+], grinning devilishly as [npc2.she] [npc2.verb(let)] out [npc2.a_moan+].");
+				sb.append("Издавая [npc.a_moan+], [npc.name] [npc.verb(slam)] [npc.her] [npc.cock+] глубоко в [npc2.namePos] [npc2.ass+], дьявольски ухмыляясь, пока [npc2.she] [npc2.verb(let)] наружу [npc2.a_moan+].");
 			}
 			
 			sb.append("<br/><br/>");
 
 			boolean isDoggyStyle = Main.sex.getSexPositionSlot(Main.sex.getCharacterPerformingAction()).hasTag(SexSlotTag.BEHIND_ALL_FOURS);
 			if(immobile) {
-				sb.append("Reaching down, [npc.she] then [npc.verb(grab)] [npc2.namePos] shoulders, before pushing [npc.her] weight down onto [npc2.her] back as [npc.she] roughly [npc.verb(mount)] [npc2.herHim]."
-						+ " With [npc.namePos] weight now on top of [npc2.herHim], [npc2.name]"
+				sb.append("Потянувшись вниз, [npc.she] затем [npc.verb(grab)] [npc2.namePos] плечи, прежде чем придавить [npc.her] весом на [npc2.her] спину, пока [npc.she] грубо [npc.verb(mount)] [npc2.herHim]. Теперь, когда [npc.namePos] вес на [npc2.herHim], [npc2.name]"
 						+ (isDoggyStyle
-								?" [npc2.verb(collapse)] down onto [npc2.her] front"
-								:" is squished beneath [npc.herHim]")
-						+ " and [npc2.verb(remain)] silent and unmoving as [npc2.sheIs] put in such a submissive position."
-						+ " Bending down, and with [npc.her] throbbing [npc.cock] still hilted in [npc2.namePos] [npc2.asshole+], [npc.name] [npc.verb(growl)] menacingly in [npc2.her] [npc2.ear], "
-								+ "[npc.speech(You dumb doll! All you're good for is being my sex toy cock-sleeve!)]");
+								?" [npc2.verb(collapse)] вниз на [npc2.her] переднюю часть"
+								:" была раздавлена под [npc.herHim]")
+						+ " и [npc2.verb(remain)] молчалива и неподвижна, оказавшись в столь покорном положении, как [npc2.sheIs]. Наклонившись, при этом [npc.her] пульсирующий [npc.cock] все еще торчит в [npc2.namePos] [npc2.asshole+], [npc.name] [npc.verb(growl)] угрожающе в [npc2.her] [npc2.ear], [npc.speech(Ты тупая кукла! Всё, на что ты годна — это быть моей секс-игрушкой, чехлом для члена!)]");
 			} else {
-				sb.append("Reaching down, [npc.she] then [npc.verb(grab)] [npc2.namePos] shoulders, before pushing [npc.her] weight down onto [npc2.her] back as [npc.she] roughly [npc.verb(mount)] [npc2.herHim]."
-						+ " With [npc.namePos] weight now on top of [npc2.herHim], [npc2.name]"
+				sb.append("Потянувшись вниз, [npc.she] затем [npc.verb(grab)] [npc2.namePos] плечи, прежде чем придавить [npc.her] весом на [npc2.her] спину, пока [npc.she] грубо [npc.verb(mount)] [npc2.herHim]. Теперь, когда [npc.namePos] вес на [npc2.herHim], [npc2.name]"
 						+ (isDoggyStyle
-								?" [npc2.verb(collapse)] down onto [npc2.her] front with [npc2.a_moan+]."
-								:" is squished beneath [npc.herHim] and [npc2.verb(let)] out [npc2.a_moan+].")
-						+ " Bending down, and with [npc.her] throbbing [npc.cock] still hilted in [npc2.namePos] [npc2.asshole+], [npc.name] [npc.verb(growl)] menacingly in [npc2.her] [npc2.ear], "
-								+ "[npc.speech(You little bitch! All you're good for is being my slutty cock-sleeve!)]");
+								?" [npc2.verb(collapse)] на [npc2.her] животом, с [npc2.a_moan+]."
+								:" прижат под [npc.herHim], пока [npc2.verb(let)] выплескивает [npc2.a_moan+].")
+						+ " Наклонившись, с [npc.her], чья пульсирующая [npc.cock] все еще торчит в [npc2.namePos] [npc2.asshole+], [npc.name] угрожающе [npc.verb(growl)] в [npc2.her] [npc2.ear], [npc.speech(Ах ты мелкая сучка! Всё, на что ты годна — это быть моей шлюхоподобной залупой!)]");
 			}
 			
 			sb.append("<br/><br/>");
 
 			if(immobile) {
-				sb.append("Even these degrading words aren't enough to break [npc2.namePos] performance, and [npc2.she] remains totally immobile as [npc.namePos] orgasm crashes over [npc.herHim].");
+				sb.append("Даже этих унизительных слов недостаточно, чтобы сбить [npc2.namePos] темп, и [npc2.she] остается совершенно неподвижной, пока волна оргазма от [npc.namePos] накрывает [npc.herHim].");
 			} else {
-				sb.append("Upon hearing those degrading words, [npc2.Name] [npc2.verb(let)] out another [npc2.moan+], which is enough to send [npc.name] over the edge.");
+				sb.append("Услышав эти унизительные слова, [npc2.Name] [npc2.verb(let)] еще одну порцию [npc2.moan+], чего достаточно, чтобы отправить [npc.name] в настоящий экстаз.");
 			}
-			sb.append(" As [npc.she] [npc.verb(grind)] [npc2.namePos] [npc2.face+] into the floor, [npc.name] [npc.verb(reach)] [npc.her] climax, and as [npc.her] [npc.balls+] tense up");
+			sb.append(" Пока [npc.she] [npc.verb(grind)] [npc2.namePos] [npc2.face+] в пол, [npc.name] [npc.verb(reach)] [npc.her] кульминацию, а [npc.her] [npc.balls+] напрягаются");
 			
 			switch (Main.sex.getCharacterPerformingAction().getPenisOrgasmCumQuantity()) {
 				case ZERO_NONE:
-					sb.append(", [npc.she] [npc.verb(realise)] that [npc.she] [npc.is]n't able to produce even one drop of cum, somewhat lessening the impact of [npc.her] dominant display.");
+					sb.append(", [npc.she] [npc.verb(realise)], что [npc.she] [npc.is] не может выдавить даже каплю спермы, что немного смягчает эффект от доминирующего напора [npc.her].");
 					break;
 				case ONE_TRICKLE:
-					sb.append(", a small trickle of [npc.cum+] squirts");
+					sb.append(", выплескивается тонкая струйка [npc.cum+]");
 					break;
 				case TWO_SMALL_AMOUNT:
-					sb.append(", a small amount of [npc.cum+] squirts");
+					sb.append(", выплескивается немного [npc.cum+]");
 					break;
 				case THREE_AVERAGE:
-					sb.append(", [npc.her] [npc.cum+] shoots");
+					sb.append(", [npc.cum+] выпускает струю [npc.her]");
 					break;
 				case FOUR_LARGE:
-					sb.append(", [npc.her] [npc.cum+] shoots");
+					sb.append(", [npc.cum+] выпускает струю [npc.her]");
 					break;
 				case FIVE_HUGE:
-					sb.append(", [npc.her] huge load of [npc.cum+] blasts out");
+					sb.append(", наружу вырывается [npc.her] огромная порция [npc.cum+]");
 					break;
 				case SIX_EXTREME:
-					sb.append(", [npc.her] massive load of [npc.cum+] blasts out");
+					sb.append(", наружу вырывается [npc.her] массивная порция [npc.cum+]");
 					break;
 				case SEVEN_MONSTROUS:
-					sb.append(", [npc.her] enormous load of [npc.cum+] explodes out");
+					sb.append(", наружу с брызгами вырывается [npc.her] колоссальная порция [npc.cum+]");
 					break;
 			}
 			
 			if(Main.sex.getCharacterPerformingAction().getPenisOrgasmCumQuantity()!=CumProduction.ZERO_NONE) {
 				if(Main.sex.getCharacterPerformingAction().isWearingCondom()) {
-					sb.append(" into the condom that [npc.sheIs] wearing.");
+					sb.append(" в презерватив, который [npc.sheIs] носит.");
 				} else {
-					sb.append(" deep into [npc2.namePos] [npc2.asshole+].");
+					sb.append(" глубоко в [npc2.namePos] [npc2.asshole+].");
 				}
 			}
 
 			if (Main.sex.getCharacterPerformingAction().getVaginaType() != VaginaType.NONE) {
 				sb.append("<br/><br/>");
-				sb.append("As [npc.name] [npc.verb(slide)] [npc.her] still-throbbing shaft out from [npc2.namePos] well-used [npc2.ass], [npc.she] [npc.verb(feel)] a second orgasm building deep in [npc.her] groin."
-						+ " Grabbing [npc2.namePos] hips to brace [npc.herself], [npc.name] [npc.verb(clench)] [npc.her] thighs together as [npc.her] [npc.pussy+] shudders and quivers."
-						+ " A mind-splitting orgasm washes through [npc.herHim], and [npc.name] [npc.moanVerb] in delight as [npc.her] feminine sex joins in on the fun.");
+				sb.append("Пока [npc.name] [npc.verb(slide)] [npc.her] все еще пульсирующий член из [npc2.namePos] изрядно поработанной [npc2.ass], [npc.she] [npc.verb(feel)] второй оргазм, зародившийся глубоко в [npc.her] паху. Схватив [npc2.namePos] за бедра, чтобы удержать [npc.herself], [npc.name] [npc.verb(clench)] [npc.her] бедра вместе, пока [npc.her] [npc.pussy+] содрогается и дрожит. Ослепляющий оргазм проносится сквозь [npc.herHim], и [npc.name] [npc.moanVerb] от восторга, когда [npc.her] женское лоно присоединяется к этому веселью.");
 				
 			} else {
 				sb.append("<br/><br/>");
-				sb.append("As [npc.name] [npc.verb(slide)] [npc.her] still-throbbing shaft out from [npc2.namePos] well-used [npc2.ass], [npc.she] [npc.verb(grin)] down at the mess [npc.sheHas] made of [npc2.herHim].");
+				sb.append("Пока [npc.name] [npc.verb(slide)] [npc.her] все еще пульсирующий член из [npc2.namePos] изрядно поработанной [npc2.ass], [npc.she] [npc.verb(grin)] в ту мешанину, что [npc.sheHas] наделал из [npc2.herHim].");
 			}
 
 			sb.append("<br/><br/>");
 			
-			sb.append("Panting heavily, [npc.name] suddenly [npc.verb(remember)] what [npc.she] had planned, and [npc.verb(shuffle)] around to where [npc2.namePos] face is still collapsed down against the floor."
+			sb.append("Тяжело дыша, [npc.name] внезапно [npc.verb(remember)] то, что [npc.she] планировал, и [npc.verb(shuffle)] туда, где лицо [npc2.namePos] все еще прижато к полу."
 					+ (Main.sex.getCharacterTargetedForSexAction(this).hasHair()
-							?" Reaching down, [npc.she] roughly [npc.verb(grab)] a fistful of [npc2.namePos] [npc2.hair+],"
-							:" Reaching down, [npc.she] roughly [npc.verb(grab)] [npc2.namePos] neck,")
-					+(immobile?" and ":" and before [npc2.she] [npc2.has] a chance to react, [npc.she]")
-					+" [npc.verb(shove)] [npc2.her] [npc2.face+] down onto [npc.her] [npc.cock+].");
+							?" Потянувшись вниз, [npc.she] грубо [npc.verb(grab)] горсть [npc2.namePos] [npc2.hair+],"
+							:" Потянувшись вниз, [npc.she] грубо [npc.verb(grab)] шею [npc2.namePos],")
+					+(immobile?" и ":" и прежде чем [npc2.she] [npc2.has] успеет среагировать, [npc.she]")
+					+" [npc.verb(shove)] [npc2.her] [npc2.face+] вниз на [npc.her] [npc.cock+].");
 			
 			if(immobile) {
-				sb.append(" [npc2.Name] [npc2.do]n't react in any way at all as "+(Main.sex.getCharacterPerformingAction().isPlayer()?"you":"[npc2.her] dominant partner")+" [npc.verb(give)] [npc2.herHim] a taste of [npc2.her] own [npc2.ass],"
-							+ " and, holding [npc2.herHim] tightly in position, [npc.she] [npc.moansVerb+] as [npc.she] [npc.verb(use)] [npc2.namePos] mouth to clean [npc.herself] off."
-						+ "<br/><br/>"
-						+ "After a minute of using [npc2.name] in this manner, [npc.name] finally [npc.verb(release)] [npc2.herHim], before smirking down at [npc2.herHim] and wondering what to do to [npc2.herHim] next...");
+				sb.append(" [npc2.Name] [npc2.do] даже не реагирует, пока "+(Main.sex.getCharacterPerformingAction().isPlayer()?"вы":"[npc2.her] доминантный партнер")+" [npc.verb(give)] [npc2.herHim] вкушает [npc2.her] собственной [npc2.ass], и, крепко удерживая [npc2.herHim] на месте, [npc.she] [npc.moansVerb+], пока [npc.she] [npc.verb(use)] [npc2.namePos] рот, чтобы слизать [npc.herself].<br/><br/>Спустя минуту использования [npc2.name] таким образом, [npc.name] наконец [npc.verb(release)] [npc2.herHim], прежде чем ухмыльнуться на [npc2.herHim], гадая, что же сделать с [npc2.herHim] дальше...");
 			} else {
-				sb.append(" [npc2.Name] [npc2.moansVerb] and [npc2.verb(squirm)] as "+(Main.sex.getCharacterPerformingAction().isPlayer()?"you":"[npc2.her] dominant partner")+" [npc.verb(give)] [npc2.herHim] a taste of [npc2.her] own [npc2.ass],"
-							+ " and, holding [npc2.herHim] tightly in position, [npc.she] [npc.moansVerb+] as [npc2.her] frantic [npc2.tongue] cleans [npc.herHim] off."
-						+ "<br/><br/>"
-						+ "After a minute of using [npc2.name] in this manner, [npc.name] finally [npc.verb(release)] [npc2.herHim], and with a deep gasp, [npc2.she] [npc2.verb(collapse)] to the floor, completely exhausted from the dominant treatment.");
+				sb.append(" [npc2.Name] [npc2.moansVerb] и [npc2.verb(squirm)], пока "+(Main.sex.getCharacterPerformingAction().isPlayer()?"вы":"[npc2.her] доминантный партнер")+" [npc.verb(give)] [npc2.herHim] вкушает вкус собственной [npc2.her] [npc2.ass], и, крепко удерживая [npc2.herHim] в нужном положении, [npc.she] [npc.moansVerb+], пока [npc2.her] неистово [npc2.tongue] счищает с [npc.herHim].<br/><br/>После минуты использования [npc2.name] подобным образом, [npc.name] наконец [npc.verb(release)] [npc2.herHim], и с глубоким вздохом [npc2.she] [npc2.verb(collapse)] на пол, совершенно измотанная от такого доминирующего обращения.");
 			}
 
 			return sb.toString();
@@ -895,14 +841,14 @@ public class DoggyStyleAndProneBone {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Pussy-to-mouth";
+			return "Из киски в рот";
 		}
 		@Override
 		public String getActionDescription() {
 			if(Main.sex.getCharacterPerformingAction().isWearingCondom()) {
-				return "Roughly fuck [npc2.name] into the floor before filling your condom with your cum. Then slide it off and use [npc2.her] mouth to clean yourself off.";
+				return "Жестко трахай [npc2.name] в пол, прежде чем наполнить свой презерватив своей спермой. Затем сними его и используй рот [npc2.her], чтобы очиститься.";
 			}
-			return "Roughly fuck [npc2.name] into the floor before filling [npc2.her] [npc2.pussy] with your cum. Then use [npc2.her] mouth to clean yourself off.";
+			return "Грубо трахни [npc2.name] в пол, прежде чем заполнить [npc2.her] [npc2.pussy] своей спермой. Затем используй [npc2.her] рот, чтобы очиститься.";
 		}
 		@Override
 		public String getDescription() {
@@ -911,115 +857,102 @@ public class DoggyStyleAndProneBone {
 
 			StringBuilder sb = new StringBuilder();
 			
-			sb.append("As [npc.name] [npc.verb(feel)] [npc2.namePos] [npc2.pussy+] squeezing down around [npc.her] [npc.cock+], [npc.she] [npc.verb(decide)] to show [npc2.herHim] how"
+			sb.append("Пока [npc.name] [npc.verb(feel)] [npc2.namePos] [npc2.pussy+] сжимается вокруг [npc.her] [npc.cock+], [npc.she] [npc.verb(decide)], чтобы показать [npc2.herHim], как"
 						+ (Main.sex.getCharacterPerformingAction().getRace()==Race.WOLF_MORPH || Main.sex.getCharacterPerformingAction().getRace()==Race.DOG_MORPH
-							?" an alpha treats their submissive little beta. "
-							:" a real dom treats their submissive bitch. "));
+							?" альфа обращается со своей покорной маленькой бетой. "
+							:" настоящий доминант обращается со своей покорной сучкой. "));
 			
 			if(immobileSleep) {
-				sb.append("Letting out [npc.a_moan+], [npc.name] [npc.verb(slam)] [npc.her] [npc.cock+] deep into [npc2.namePos] [npc2.pussy+], grinning devilishly as [npc2.she] [npc2.verb(wake)] up and [npc2.verb(let)] out [npc2.a_moan+].");
+				sb.append("Издавая [npc.a_moan+], [npc.name] [npc.verb(slam)] [npc.her] [npc.cock+] глубоко в [npc2.namePos] [npc2.pussy+], дьявольски ухмыляясь, пока [npc2.she] [npc2.verb(wake)] вверх и [npc2.verb(let)] наружу [npc2.a_moan+].");
 			} else if(immobile) {
-				sb.append("Letting out [npc.a_moan+], [npc.name] [npc.verb(slam)] [npc.her] [npc.cock+] deep into [npc2.namePos] [npc2.pussy+], grinning devilishly as [npc2.she] [npc2.verb(continue)] acting like an inanimate sex doll.");
+				sb.append("Издавая [npc.a_moan+], [npc.name] [npc.verb(slam)] [npc.her] [npc.cock+] глубоко в [npc2.namePos] [npc2.pussy+], дьявольски ухмыляясь, пока [npc2.she] [npc2.verb(continue)], словно неодушевленная секс-кукла.");
 			} else {
-				sb.append("Letting out [npc.a_moan+], [npc.name] [npc.verb(slam)] [npc.her] [npc.cock+] deep into [npc2.namePos] [npc2.pussy+], grinning devilishly as [npc2.she] [npc2.verb(let)] out [npc2.a_moan+].");
+				sb.append("Издавая [npc.a_moan+], [npc.name] [npc.verb(slam)] [npc.her] [npc.cock+] глубоко в [npc2.namePos] [npc2.pussy+], дьявольски ухмыляясь, пока [npc2.she] [npc2.verb(let)] наружу [npc2.a_moan+].");
 			}
 			
 			sb.append("<br/><br/>");
 
 			boolean isDoggyStyle = Main.sex.getSexPositionSlot(Main.sex.getCharacterPerformingAction()).hasTag(SexSlotTag.BEHIND_ALL_FOURS);
 			if(immobile) {
-				sb.append("Reaching down, [npc.she] then [npc.verb(grab)] [npc2.namePos] shoulders, before pushing [npc.her] weight down onto [npc2.her] back as [npc.she] roughly [npc.verb(mount)] [npc2.herHim]."
-						+ " With [npc.namePos] weight now on top of [npc2.herHim], [npc2.name]"
+				sb.append("Потянувшись вниз, [npc.she] затем [npc.verb(grab)] [npc2.namePos] плечи, прежде чем придавить [npc.her] весом на [npc2.her] спину, пока [npc.she] грубо [npc.verb(mount)] [npc2.herHim]. Теперь, когда [npc.namePos] вес на [npc2.herHim], [npc2.name]"
 						+ (isDoggyStyle
-								?" [npc2.verb(collapse)] down onto [npc2.her] front"
-								:" is squished beneath [npc.herHim]")
-						+" and [npc2.verb(remain)] silent and unmoving as [npc2.sheIs] put in such a submissive position."
-						+ " Bending down, and with [npc.her] throbbing [npc.cock] still hilted in [npc2.namePos] [npc2.pussy+], [npc.name] [npc.verb(growl)] menacingly in [npc2.her] [npc2.ear], "
-								+ "[npc.speech(You dumb doll! All you're good for is being my sex toy cock-sleeve!)]");
+								?" [npc2.verb(collapse)] вниз на [npc2.her] переднюю часть"
+								:" была раздавлена под [npc.herHim]")
+						+" и [npc2.verb(remain)] тихо и неподвижно, пока [npc2.sheIs] поместили в такую покорную позу. Наклонившись, при этом [npc.her] пульсирующий [npc.cock] все еще торчит в [npc2.namePos] [npc2.pussy+], [npc.name] [npc.verb(growl)] угрожающе в [npc2.her] [npc2.ear], [npc.speech(Тупая кукла! Всё, на что ты годна — это быть моей секс-игрушкой, разъёбом для члена!)]");
 			} else {
-				sb.append("Reaching down, [npc.she] then [npc.verb(grab)] [npc2.namePos] shoulders, before pushing [npc.her] weight down onto [npc2.her] back as [npc.she] roughly [npc.verb(mount)] [npc2.herHim]."
-						+ " With [npc.namePos] weight now on top of [npc2.herHim], [npc2.name] "
+				sb.append("Потянувшись вниз, [npc.she] затем [npc.verb(grab)] [npc2.namePos] плечи, прежде чем придавить [npc.her] весом на [npc2.her] спину, пока [npc.she] грубо [npc.verb(mount)] [npc2.herHim]. Теперь, когда [npc.namePos] вес на [npc2.herHim], [npc2.name] "
 						+ (isDoggyStyle
-								?" [npc2.verb(collapse)] down onto [npc2.her] front with [npc2.a_moan+]."
-								:" is squished beneath [npc.herHim] and [npc2.verb(let)] out [npc2.a_moan+].")
-						+ " Bending down, and with [npc.her] throbbing [npc.cock] still hilted in [npc2.namePos] [npc2.pussy+], [npc.name] [npc.verb(growl)] menacingly in [npc2.her] [npc2.ear], "
-								+ "[npc.speech(You little bitch! All you're good for is being my slutty cock-sleeve!)]");
+								?" [npc2.verb(collapse)] на [npc2.her] животом, с [npc2.a_moan+]."
+								:" прижат под [npc.herHim], пока [npc2.verb(let)] выплескивает [npc2.a_moan+].")
+						+ " Наклонившись, при этом [npc.her] пульсирующий [npc.cock] все еще торчит в [npc2.namePos] [npc2.pussy+], [npc.name] [npc.verb(growl)] угрожающе в [npc2.her] [npc2.ear], [npc.speech(Мелкая сучка! Всё, на что ты годна — это быть моей шлюхой-разъёбом для члена!)]");
 			}
 			
 			sb.append("<br/><br/>");
 
 			if(immobile) {
-				sb.append("Even these degrading words aren't enough to break [npc2.namePos] performance, and [npc2.she] remains totally immobile as [npc.namePos] orgasm crashes over [npc.herHim].");
+				sb.append("Даже этих унизительных слов недостаточно, чтобы сбить [npc2.namePos] темп, и [npc2.she] остается совершенно неподвижной, пока волна оргазма от [npc.namePos] накрывает [npc.herHim].");
 			} else {
-				sb.append("Upon hearing those degrading words, [npc2.Name] [npc2.verb(let)] out another [npc2.moan+], which is enough to send [npc.name] over the edge.");
+				sb.append("Услышав эти унизительные слова, [npc2.Name] [npc2.verb(let)] еще одну порцию [npc2.moan+], чего достаточно, чтобы отправить [npc.name] в настоящий экстаз.");
 			}
-			sb.append(" As [npc.she] [npc.verb(grind)] [npc2.namePos] [npc2.face+] into the floor, [npc.name] [npc.verb(reach)] [npc.her] climax, and as [npc.her] [npc.balls+] tense up");
+			sb.append(" Пока [npc.she] [npc.verb(grind)] [npc2.namePos] [npc2.face+] в пол, [npc.name] [npc.verb(reach)] [npc.her] кульминацию, а [npc.her] [npc.balls+] напрягаются");
 			
 			switch (Main.sex.getCharacterPerformingAction().getPenisOrgasmCumQuantity()) {
 				case ZERO_NONE:
-					sb.append(", [npc.she] [npc.verb(realise)] that [npc.she] [npc.is]n't able to produce even one drop of cum, somewhat lessening the impact of [npc.her] dominant display.");
+					sb.append(", [npc.she] [npc.verb(realise)], что [npc.she] [npc.is] не может выдавить даже каплю спермы, что немного смягчает эффект от доминирующего напора [npc.her].");
 					break;
 				case ONE_TRICKLE:
-					sb.append(", a small trickle of [npc.cum+] squirts");
+					sb.append(", выплескивается тонкая струйка [npc.cum+]");
 					break;
 				case TWO_SMALL_AMOUNT:
-					sb.append(", a small amount of [npc.cum+] squirts");
+					sb.append(", выплескивается немного [npc.cum+]");
 					break;
 				case THREE_AVERAGE:
-					sb.append(", [npc.her] [npc.cum+] shoots");
+					sb.append(", [npc.cum+] выпускает струю [npc.her]");
 					break;
 				case FOUR_LARGE:
-					sb.append(", [npc.her] [npc.cum+] shoots");
+					sb.append(", [npc.cum+] выпускает струю [npc.her]");
 					break;
 				case FIVE_HUGE:
-					sb.append(", [npc.her] huge load of [npc.cum+] blasts out");
+					sb.append(", наружу вырывается [npc.her] огромная порция [npc.cum+]");
 					break;
 				case SIX_EXTREME:
-					sb.append(", [npc.her] massive load of [npc.cum+] blasts out");
+					sb.append(", наружу вырывается [npc.her] массивная порция [npc.cum+]");
 					break;
 				case SEVEN_MONSTROUS:
-					sb.append(", [npc.her] enormous load of [npc.cum+] explodes out");
+					sb.append(", наружу с брызгами вырывается [npc.her] колоссальная порция [npc.cum+]");
 					break;
 			}
 			
 			if(Main.sex.getCharacterPerformingAction().getPenisOrgasmCumQuantity()!=CumProduction.ZERO_NONE) {
 				if(Main.sex.getCharacterPerformingAction().isWearingCondom()) {
-					sb.append(" into the condom that [npc.sheIs] wearing.");
+					sb.append(" в презерватив, который [npc.sheIs] носит.");
 				} else {
-					sb.append(" deep into [npc2.namePos] [npc2.pussy+].");
+					sb.append(" глубоко в [npc2.namePos] [npc2.pussy+].");
 				}
 			}
 
 			if (Main.sex.getCharacterPerformingAction().getVaginaType() != VaginaType.NONE) {
 				sb.append("<br/><br/>");
-				sb.append("As [npc.name] [npc.verb(slide)] [npc.her] still-throbbing shaft out from [npc2.namePos] well-used [npc2.pussy], [npc.she] [npc.verb(feel)] a second orgasm building deep in [npc.her] groin."
-						+ " Grabbing [npc2.namePos] hips to brace [npc.herself], [npc.name] [npc.verb(clench)] [npc.her] thighs together as [npc.her] [npc.pussy+] shudders and quivers."
-						+ " A mind-splitting orgasm washes through [npc.herHim], and [npc.name] [npc.moanVerb] in delight as [npc.her] feminine sex joins in on the fun.");
+				sb.append("Пока [npc.name] [npc.verb(slide)] [npc.her] все еще пульсирующий член из [npc2.namePos] заезженной [npc2.pussy], [npc.she] [npc.verb(feel)] второй оргазм, нарастающий глубоко в [npc.her] паху. Сжимая [npc2.namePos] бедра, чтобы удержать [npc.herself], [npc.name] [npc.verb(clench)] [npc.her] бедра вместе, пока [npc.her] [npc.pussy+] содрогается и дрожит. Раскалывающий разум оргазм накрывает [npc.herHim], и [npc.name] [npc.moanVerb] от восторга, когда [npc.her] женское лоно присоединяется к этому веселью.");
 				
 			} else {
 				sb.append("<br/><br/>");
-				sb.append("As [npc.name] [npc.verb(slide)] [npc.her] still-throbbing shaft out from [npc2.namePos] well-used [npc2.pussy], [npc.she] [npc.verb(grin)] down at the mess [npc.sheHas] made of [npc2.herHim].");
+				sb.append("Пока [npc.name] [npc.verb(slide)] [npc.her] все еще пульсирующий член из [npc2.namePos] заезженной [npc2.pussy], [npc.she] [npc.verb(grin)] на ту мешанину, что [npc.sheHas] сделала из [npc2.herHim].");
 			}
 
 			sb.append("<br/><br/>");
 			
-			sb.append("Panting heavily, [npc.name] suddenly [npc.verb(remember)] what [npc.she] had planned, and [npc.verb(shuffle)] around to where [npc2.namePos] face is still collapsed down against the floor."
+			sb.append("Тяжело дыша, [npc.name] внезапно [npc.verb(remember)] то, что [npc.she] планировал, и [npc.verb(shuffle)] туда, где лицо [npc2.namePos] все еще прижато к полу."
 					+ (Main.sex.getCharacterTargetedForSexAction(this).hasHair()
-							?" Reaching down, [npc.she] roughly [npc.verb(grab)] a fistful of [npc2.namePos] [npc2.hair+],"
-							:" Reaching down, [npc.she] roughly [npc.verb(grab)] [npc2.namePos] neck,")
-					+(immobile?" and ":" and before [npc2.she] [npc2.has] a chance to react, [npc.she]")
-					+" [npc.verb(shove)] [npc2.her] [npc2.face+] down onto [npc.her] [npc.cock+].");
+							?" Потянувшись вниз, [npc.she] грубо [npc.verb(grab)] горсть [npc2.namePos] [npc2.hair+],"
+							:" Потянувшись вниз, [npc.she] грубо [npc.verb(grab)] шею [npc2.namePos],")
+					+(immobile?" и ":" и прежде чем [npc2.she] [npc2.has] успеет среагировать, [npc.she]")
+					+" [npc.verb(shove)] [npc2.her] [npc2.face+] вниз на [npc.her] [npc.cock+].");
 			
 			if(immobile) {
-				sb.append(" [npc2.Name] [npc2.do]n't react in any way at all as "+(Main.sex.getCharacterPerformingAction().isPlayer()?"you":"[npc2.her] dominant partner")+" [npc.verb(give)] [npc2.herHim] a taste of [npc2.her] own [npc2.pussy],"
-							+ " and, holding [npc2.herHim] tightly in position, [npc.she] [npc.moansVerb+] as [npc.she] [npc.verb(use)] [npc2.namePos] mouth to clean [npc.herself] off."
-						+ "<br/><br/>"
-						+ "After a minute of using [npc2.name] in this manner, [npc.name] finally [npc.verb(release)] [npc2.herHim], before smirking down at [npc2.herHim] and wondering what to do to [npc2.herHim] next...");
+				sb.append(" [npc2.Name] [npc2.do] даже не реагирует, пока "+(Main.sex.getCharacterPerformingAction().isPlayer()?"вы":"[npc2.her] доминантный партнер")+" [npc.verb(give)] [npc2.herHim] вкус собственной [npc2.her] [npc2.pussy], и, крепко удерживая [npc2.herHim] на месте, [npc.she] [npc.moansVerb+], пока [npc.she] [npc.verb(use)] [npc2.namePos] рот, чтобы слизать [npc.herself].<br/><br/>После минуты использования [npc2.name] таким образом, [npc.name] наконец [npc.verb(release)] [npc2.herHim], прежде чем ухмыльнуться на [npc2.herHim] и задуматься, что сделать с [npc2.herHim] дальше...");
 			} else {
-				sb.append(" [npc2.Name] [npc2.moansVerb] and [npc2.verb(squirm)] as "+(Main.sex.getCharacterPerformingAction().isPlayer()?"you":"[npc2.her] dominant partner")+" [npc.verb(give)] [npc2.herHim] a taste of [npc2.her] own [npc2.pussy],"
-							+ " and, holding [npc2.herHim] tightly in position, [npc.she] [npc.moansVerb+] as [npc2.her] frantic [npc2.tongue] cleans [npc.herHim] off."
-						+ "<br/><br/>"
-						+ "After a minute of using [npc2.name] in this manner, [npc.name] finally [npc.verb(release)] [npc2.herHim], and with a deep gasp, [npc2.she] [npc2.verb(collapse)] to the floor, completely exhausted from the dominant treatment.");
+				sb.append(" [npc2.Name] [npc2.moansVerb] и [npc2.verb(squirm)], пока "+(Main.sex.getCharacterPerformingAction().isPlayer()?"вы":"[npc2.her] доминантный партнер")+" [npc.verb(give)] [npc2.herHim] вкушает вкус собственной [npc2.her] [npc2.pussy], и, крепко удерживая [npc2.herHim] в нужном положении, [npc.she] [npc.moansVerb+], пока [npc2.her] неистово [npc2.tongue] счищает с [npc.herHim].<br/><br/>Спустя минуту использования [npc2.name] таким образом, [npc.name] наконец [npc.verb(release)] [npc2.herHim], и с глубоким вздохом [npc2.she] [npc2.verb(collapse)] на пол, совершенно измотанная от доминирующего обращения.");
 			}
 			
 			return sb.toString();

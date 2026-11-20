@@ -33,12 +33,12 @@ public class CitadelYoukoSA {
 		
 		@Override
 		public String getActionTitle() {
-			return "Denied";
+			return "Отказ";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "As you prepare to reach your climax, [citadelArcanist.name] suddenly holds you in place, and forces you to calm down!";
+			return "Как только ты готовишься достичь пика, [citadelArcanist.name] внезапно удерживает тебя на месте, заставляя успокоиться!";
 		}
 
 		@Override
@@ -49,14 +49,7 @@ public class CitadelYoukoSA {
 
 		@Override
 		public String getDescription() {
-			return "[npc.Name] [npc.verb(feel)] a desperate heat rising in [npc.her] groin, and, as [npc.she] [npc.verb(prepare)] to orgasm, [npc.she] [npc.verb(cry)] out, [npc.speech(Yes! I'm going to cum!)]"
-						+ "<br/><br/>"
-					+ "Upon hearing this, [citadelArcanist.name] lets out an amused giggle, [citadelArcanist.speechNoEffects(You silly thing! Didn't I tell you that you're not allowed to orgasm?!)]"
-						+ "<br/><br/>"
-					+"Before [npc.name] can say anything, [citadelArcanist.name] uses her arcane power to telekinetically force [npc.herHim] to remain still."
-					+ " [npc.Name] [npc.verb(try)] to desperately rub [npc.her] crotch up against [citadelArcanist.namePos] leg, but the tricky youko simply steps back, and patiently waits until [npc.namePos] climax has ebbed away."
-					+ " Once it's clear that [npc.sheHas] calmed down, [citadelArcanist.name] releases [npc.herHim], and, pushing her pussy back up against [npc.her] face, she teases,"
-					+ " [citadelArcanist.speechNoEffects(Silly! This is all about my pleasure, not yours!)]";
+			return "[npc.Name] [npc.verb(feel)] отчаянный жар, поднимающийся в паху [npc.her], и, когда [npc.she] [npc.verb(prepare)] к оргазму, [npc.she] [npc.verb(cry)], [npc.speech(Да! Я сейчас кончу!)]<br/><br/>Услышав это, [citadelArcanist.name] издает забавный смешок, [citadelArcanist.speechNoEffects(Глупышка! Разве я не говорила, что тебе нельзя кончать?!)]<br/><br/>Прежде чем [npc.name] успевает что-либо сказать, [citadelArcanist.name] использует свою силу Арканы, чтобы телекинезом заставить [npc.herHim] замереть. [npc.Name] [npc.verb(try)], отчаянно притираясь [npc.her] к [citadelArcanist.namePos], но хитрая ёко просто отступает назад и терпеливо ждет, пока волна оргазма у [npc.namePos] не утихнет. Как только становится ясно, что [npc.sheHas] успокоилась, [citadelArcanist.name] отпускает [npc.herHim] и, прижимая свою киску обратно к [npc.her], дразнит: [citadelArcanist.speechNoEffects(Глупенький! Всё это ради моего удовольствия, а не твоего!)]";
 		}
 
 		@Override

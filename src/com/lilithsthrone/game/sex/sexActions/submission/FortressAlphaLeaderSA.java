@@ -72,12 +72,12 @@ public class FortressAlphaLeaderSA {
 		
 		@Override
 		public String getActionTitle() {
-			return "Round two";
+			return "Раунд второй";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Tell [npc2.name] that you aren't finished yet!";
+			return "Скажи [npc2.name], что ты еще не закончил!";
 		}
 
 		@Override
@@ -97,9 +97,7 @@ public class FortressAlphaLeaderSA {
 
 		@Override
 		public String getDescription() {
-			return "Grabbing the back of [npc2.namePos] head, [npc.name] roughly slams [npc.her] hips forwards and hilts [npc.her] [npc.cock+] fully down [npc2.her] throat."
-					+ " Letting out a deep groan as [npc.she] feels [npc2.namePos] lips bump up against the base of [npc.her] cock, [npc.she] growls,"
-					+ " [npc.speechNoEffects(I'm not finished yet, bitch! Hope you're ready for round two!)]";
+			return "Схватив [npc2.namePos] за затылок, [npc.name] грубо толкает [npc.her] бедрами вперед, забивая [npc.her] [npc.cock+] по самую рукоять в [npc2.her] горло. Издав глубокий стон, когда [npc.she] чувствует, как [npc2.namePos] губы упираются в основание [npc.her] члена, [npc.she] рычит: [npc.speechNoEffects(Я еще не закончил, сучка! Надеюсь, ты готова ко второму раунду!)]";
 		}
 	};
 	
@@ -113,12 +111,12 @@ public class FortressAlphaLeaderSA {
 		
 		@Override
 		public String getActionTitle() {
-			return "Round two (switch)";
+			return "Второй раунд (смена)";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return UtilText.parse(getOtherTarget(), "Switch to fucking [npc.namePos] face!");
+			return UtilText.parse(getOtherTarget(), "Переключиться на трах в [npc.namePos] лицо!");
 		}
 
 		@Override
@@ -139,11 +137,7 @@ public class FortressAlphaLeaderSA {
 		@Override
 		public String getDescription() {
 			return UtilText.parse(Util.newArrayListOfValues(Main.sex.getCharacterPerformingAction(), Main.sex.getCharacterTargetedForSexAction(this), getOtherTarget()),
-					"Grabbing the sides of [npc2.namePos] head, [npc.name] pushes [npc2.herHim] back, sliding [npc.her] [npc.cock+] out from [npc2.her] mouth and leaving a thick trail of cummy saliva drooling from [npc2.her] [npc2.lips].<br/>"
-					+ "Focusing [npc.her] attention on [npc3.name], [npc.name] pushes the cum-coated tip of [npc.her] [npc.cock+] up against [npc3.her] [npc3.lips+],"
-						+ " before roughly slamming [npc.her] hips forwards and hilting it fully down [npc3.her] throat."
-					+ " Letting out a deep groan as [npc.she] feels [npc3.namePos] [npc3.lips] bump up against the base of [npc.her] cock, [npc.she] growls,"
-					+ " [npc.speechNoEffects(It's your turn, bitch! Hope you're ready for my second load!)]");
+					"Grabbing the sides of [npc2.namePos] head, [npc.name] pushes [npc2.herHim] back, sliding [npc.her] [npc.cock+] out from [npc2.her] mouth and leaving a thick trail of cummy saliva drooling from [npc2.her] [npc2.lips].<br/>Focusing [npc.her] attention on [npc3.name], [npc.name] pushes the cum-coated tip of [npc.her] [npc.cock+] up against [npc3.her] [npc3.lips+], before roughly slamming [npc.her] hips forwards and hilting it fully down [npc3.her] throat. Letting out a deep groan as [npc.she] feels [npc3.namePos] [npc3.lips] bump up against the base of [npc.her] cock, [npc.she] growls, [npc.speechNoEffects(It's your turn, bitch! Hope you're ready for my second load!)]");
 		}
 		
 		@Override
@@ -190,12 +184,12 @@ public class FortressAlphaLeaderSA {
 		
 		@Override
 		public String getActionTitle() {
-			return "Round two";
+			return "Раунд второй";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Tell [npc2.name] that you aren't finished yet!";
+			return "Скажи [npc2.name], что ты еще не закончил!";
 		}
 
 		@Override
@@ -215,10 +209,7 @@ public class FortressAlphaLeaderSA {
 
 		@Override
 		public String getDescription() {
-			return "Grabbing the back of [npc2.namePos] head, [npc.name] pushes the cum-coated tip of [npc.her] [npc.cock+] up against [npc2.namePos] lips,"
-						+ " before roughly slamming [npc.her] hips forwards and hilting it fully down [npc2.her] throat."
-					+ " Letting out a deep groan as [npc.she] feels [npc2.namePos] lips bump up against the base of [npc.her] cock, [npc.she] growls,"
-					+ " [npc.speechNoEffects(I'm not finished yet, bitch! Hope you're ready for round two!)]";
+			return "Схватив [npc2.namePos] за затылок, [npc.name] прижимает покрытый спермой кончик [npc.her] [npc.cock+] к губам [npc2.namePos], а затем резко толкает [npc.her] бедрами вперед, до самого основания вонзая его в [npc2.her] горло. Издавая глубокий стон, когда [npc.she] чувствует, как [npc2.namePos] губы упираются в основание [npc.her] члена, [npc.she] рычит: [npc.speechNoEffects(Я еще не закончил, сучка! Надеюсь, ты готова ко второму раунду!)]";
 		}
 	};
 	
@@ -232,12 +223,12 @@ public class FortressAlphaLeaderSA {
 		
 		@Override
 		public String getActionTitle() {
-			return "Round two (switch)";
+			return "Второй раунд (смена)";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return UtilText.parse(getOtherTarget(), "Switch to fucking [npc.namePos] face!");
+			return UtilText.parse(getOtherTarget(), "Переключиться на трах в [npc.namePos] лицо!");
 		}
 
 		@Override
@@ -258,10 +249,7 @@ public class FortressAlphaLeaderSA {
 		@Override
 		public String getDescription() {
 			return UtilText.parse(Util.newArrayListOfValues(Main.sex.getCharacterPerformingAction(), Main.sex.getCharacterTargetedForSexAction(this), getOtherTarget()),
-					"Focusing [npc.her] attention on [npc3.name], [npc.name] pushes the cum-coated tip of [npc.her] [npc.cock+] up against [npc3.her] [npc3.lips+],"
-						+ " before roughly slamming [npc.her] hips forwards and hilting it fully down [npc3.her] throat."
-					+ " Letting out a deep groan as [npc.she] feels [npc3.namePos] [npc3.lips] bump up against the base of [npc.her] cock, [npc.she] growls,"
-					+ " [npc.speechNoEffects(It's your turn, bitch! Hope you're ready for my second load!)]");
+					"Focusing [npc.her] attention on [npc3.name], [npc.name] pushes the cum-coated tip of [npc.her] [npc.cock+] up against [npc3.her] [npc3.lips+], before roughly slamming [npc.her] hips forwards and hilting it fully down [npc3.her] throat. Letting out a deep groan as [npc.she] feels [npc3.namePos] [npc3.lips] bump up against the base of [npc.her] cock, [npc.she] growls, [npc.speechNoEffects(It's your turn, bitch! Hope you're ready for my second load!)]");
 		}
 		
 		@Override

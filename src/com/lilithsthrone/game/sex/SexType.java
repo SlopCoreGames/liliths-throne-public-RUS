@@ -63,7 +63,7 @@ public class SexType implements XMLSaving {
 	
 	@Override
 	public String toString() {
-		return "Participant: "+asParticipant.toString()+"  Performing/Target: "+(performingSexArea==null?"null":performingSexArea.toString())+"/"+(targetedSexArea==null?"null":targetedSexArea.toString());
+		return "Участник: "+asParticipant.toString()+"  Исполнитель/Объект: "+(performingSexArea==null?"null":performingSexArea.toString())+"/"+(targetedSexArea==null?"null":targetedSexArea.toString());
 	}
 	
 	@Override
@@ -133,19 +133,19 @@ public class SexType implements XMLSaving {
 		if(areaPerforming.isPenetration()) {
 			if(areaTargeted.isPenetration()) {
 				return UtilText.parse(performer, target,
-						"[npc.Name] rubbed [npc.her] "+areaPerforming.getName(performer)+" against [npc2.namePos] "+areaTargeted.getName(target)+".");
+						"[npc.Name] терзает [npc.her] "+areaPerforming.getName(performer)+" об [npc2.namePos] "+areaTargeted.getName(target)+".");
 			} else {
 				return UtilText.parse(performer, target,
-						"[npc.Name] used [npc.her] "+areaPerforming.getName(performer)+" "+(((SexAreaPenetration)areaPerforming).isTakesVirginity()?"to fuck":"on")+" [npc2.namePos] "+areaTargeted.getName(target)+".");
+						"[npc.Name] использует [npc.her] "+areaPerforming.getName(performer)+" "+(((SexAreaPenetration)areaPerforming).isTakesVirginity()?"чтобы трахать":"на")+" [npc2.namePos] "+areaTargeted.getName(target)+".");
 			}
 			
 		} else {
 			if(areaTargeted.isPenetration()) {
 				return UtilText.parse(performer, target,
-						"[npc.Name] had [npc.her] "+areaPerforming.getName(performer)+" "+(((SexAreaPenetration)areaTargeted).isTakesVirginity()?"fucked by":"used by")+" [npc2.namePos] "+areaTargeted.getName(target)+".");
+						"[npc.Name] имеет [npc.her] "+areaPerforming.getName(performer)+" "+(((SexAreaPenetration)areaTargeted).isTakesVirginity()?"трахаемый(ая) %@":"используемый(ая) %@")+" [npc2.namePos] "+areaTargeted.getName(target)+".");
 			} else {
 				return UtilText.parse(performer, target,
-						"[npc.Name] rubbed [npc.her] "+areaPerforming.getName(performer)+" against [npc2.namePos] "+areaTargeted.getName(target)+".");
+						"[npc.Name] терзает [npc.her] "+areaPerforming.getName(performer)+" об [npc2.namePos] "+areaTargeted.getName(target)+".");
 			}
 		}
 	}

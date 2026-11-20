@@ -85,27 +85,25 @@ public class GloryHole {
 		
 		@Override
 		public String getActionTitle() {
-			return "Kneel";
+			return "Встать на колени";
 		}
 
 		@Override
 		public String getActionDescription() {
 			if(Main.sex.getTotalParticipantCount(false)==3) {
-				return "Kneel down on the floor, ready to service the glory holes with your mouth.";
+				return "Опустись на колени на пол, готовая обслуживать «дыры славы» своим ртом.";
 			} else {
-				return "Kneel down on the floor, ready to service the glory hole with your mouth.";
+				return "Опустись на колени на пол, готовая обслуживать «дыру славы» своим ртом.";
 			}
 		}
 
 		@Override
 		public String getDescription() {
 			if(Main.sex.getTotalParticipantCount(false)==3) {
-				return "Pulling away from the glory holes, [npc.name] [npc.verb(take)] a step back, before kneeling down on the floor between them."
-						+ " Looking back and forth at the genitals on display, [npc.she] [npc.verb(let)] out [npc.a_moan+], before getting ready to use [npc.her] mouth.";
+				return "Отстранившись от отверстий, [npc.name] [npc.verb(take)] на шаг назад, а затем опустившись на колени на пол между ними. Переводя взгляд с одного выставленного напоказ мужского достоинства на другое, [npc.she] [npc.verb(let)] [npc.a_moan+], прежде чем приготовиться использовать [npc.her] рот.";
 				
 			} else {
-				return "Pulling away from the glory hole, [npc.name] [npc.verb(take)] a step back, before kneeling down on the floor before it."
-						+ " Grinning hungrily at the genitals on display, [npc.she] [npc.verb(let)] out [npc.a_moan+], before leaning forwards and getting ready to use [npc.her] mouth.";
+				return "Отстранившись от отверстия, [npc.name] [npc.verb(take)] на шаг назад, а затем опустившись на колени на пол перед ним. Голодно ухмыляясь выставленному напоказ мужскому достоинству, [npc.she] [npc.verb(let)] [npc.a_moan+], прежде чем наклониться вперед и приготовиться использовать [npc.her] рот.";
 			}
 		}
 
@@ -153,36 +151,30 @@ public class GloryHole {
 		
 		@Override
 		public String getActionTitle() {
-			return "Present asshole";
+			return "Показать задницу";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Push your [npc.ass+] up against [npc2.namePos] glory hole, ready for [npc2.herHim] to use your [npc.asshole+].";
+			return "Прижми свой [npc.ass+] к [npc2.namePos] отверстию, готовая к тому, что [npc2.herHim] будет использовать твой [npc.asshole+].";
 		}
 
 		@Override
 		public String getDescription() {
 			if(Main.sex.getTotalParticipantCount(false)==3) {
 				if(Main.sex.getSexPositionSlot(Main.sex.getCharacterPerformingAction())==SexSlotUnique.GLORY_HOLE_KNEELING) {
-					return "Standing up, [npc.name] #IF(npc.isPlayer())[npc.step]#ELSE[npc.steps]#ENDIF over towards [npc2.name], before bending down and pushing [npc.her] [npc.ass+] up against the glory hole."
-							+ " Leaning forwards, [npc.she] [npc.verb(position)] [npc.herself] so that [npc.her] mouth is just [unit.sizes] away from the hole on the opposite side of the stall,"
-								+ " and, letting out [npc.a_moan+], [npc.she] [npc.verb(prepare)] to have [npc.her] [npc.asshole+] and mouth used at the same time.";
+					return "Standing up, [npc.name] #IF(npc.isPlayer())[npc.step]#ELSE[npc.steps]#ENDIF over towards [npc2.name], before bending down and pushing [npc.her] [npc.ass+] up against the glory hole. Leaning forwards, [npc.she] [npc.verb(position)] [npc.herself] so that [npc.her] mouth is just [unit.sizes] away from the hole on the opposite side of the stall, and, letting out [npc.a_moan+], [npc.she] [npc.verb(prepare)] to have [npc.her] [npc.asshole+] and mouth used at the same time.";
 					
 				} else {
-					return "Pulling away from the glory holes, [npc.name] [npc.verb(reposition)] [npc.herself] so that [npc.sheIs] bending down and pushing [npc.her] [npc.ass+] up against [npc2.namePos] glory hole."
-							+ " Leaning forwards, [npc.she] [npc.verb(position)] [npc.herself] so that [npc.her] mouth is just [unit.sizes] away from the hole on the opposite side of the stall,"
-								+ " and, letting out [npc.a_moan+], [npc.she] [npc.verb(prepare)] to have [npc.her] [npc.asshole+] and mouth used at the same time.";
+					return "Отстранившись от отверстий, [npc.name] [npc.verb(reposition)] [npc.herself] так, что [npc.sheIs] наклоняется и прижимает [npc.her] [npc.ass+] к [npc2.namePos] отверстию. Наклонившись вперед, [npc.she] [npc.verb(position)] [npc.herself] так, что [npc.her] рот находится всего в [unit.sizes] от отверстия на противоположной стороне кабинки, и, издав [npc.a_moan+], [npc.she] [npc.verb(prepare)], чтобы [npc.her] [npc.asshole+] и рот использовались одновременно.";
 				}
 				
 			} else {
 				if(Main.sex.getSexPositionSlot(Main.sex.getCharacterPerformingAction())==SexSlotUnique.GLORY_HOLE_KNEELING) {
-					return "Standing up, [npc.name] #IF(npc.isPlayer())[npc.step]#ELSE[npc.steps]#ENDIF over towards [npc2.name], before bending down and pushing [npc.her] [npc.ass+] up against the glory hole."
-							+ " Letting out [npc.a_moan+], [npc.she] [npc.verb(press)] back against the wall, preparing to have [npc.her] [npc.asshole+] used.";
+					return "Вставая, [npc.name] #IF(npc.isPlayer())[npc.step]#ELSE[npc.steps]#ENDIF, наклоняется к [npc2.name], прежде чем согнуться и прижать [npc.her] [npc.ass+] к отверстию. Издав [npc.a_moan+], [npc.she] [npc.verb(press)] спиной к стене, готовясь к тому, что [npc.her] [npc.asshole+] будет использовано.";
 					
 				} else {
-					return "Pulling away from the glory holes, [npc.name] [npc.verb(reposition)] [npc.herself] so that [npc.sheIs] bending down and pushing [npc.her] [npc.ass+] up against the glory hole."
-							+ " Letting out [npc.a_moan+], [npc.she] [npc.verb(press)] back against the wall, preparing to have [npc.her] [npc.asshole+] used.";
+					return "Отстранившись от отверстий, [npc.name] [npc.verb(reposition)] [npc.herself] так, что [npc.sheIs] наклоняется и прижимает [npc.her] [npc.ass+] к отверстию. Издав [npc.a_moan+], [npc.she] [npc.verb(press)] спиной к стене, готовясь к тому, что [npc.her] [npc.asshole+] будет использовано.";
 				}
 			}
 		}
@@ -236,36 +228,30 @@ public class GloryHole {
 		
 		@Override
 		public String getActionTitle() {
-			return "Present pussy";
+			return "Показать киску";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Push your [npc.ass+] up against [npc2.namePos] glory hole, ready for [npc2.herHim] to use your [npc.pussy+].";
+			return "Прижми свой [npc.ass+] к [npc2.namePos] отверстию, готовая к тому, что [npc2.herHim] будет использовать твой [npc.pussy+].";
 		}
 
 		@Override
 		public String getDescription() {
 			if(Main.sex.getTotalParticipantCount(false)==3) {
 				if(Main.sex.getSexPositionSlot(Main.sex.getCharacterPerformingAction())==SexSlotUnique.GLORY_HOLE_KNEELING) {
-					return "Standing up, [npc.name] #IF(npc.isPlayer())[npc.step]#ELSE[npc.steps]#ENDIF over towards [npc2.name], before bending down and pushing [npc.her] [npc.ass+] up against the glory hole."
-							+ " Leaning forwards, [npc.she] [npc.verb(position)] [npc.herself] so that [npc.her] mouth is just [unit.sizes] away from the hole on the opposite side of the stall,"
-								+ " and, letting out [npc.a_moan+], [npc.she] [npc.verb(prepare)] to have [npc.her] [npc.pussy+] and mouth used at the same time.";
+					return "Standing up, [npc.name] #IF(npc.isPlayer())[npc.step]#ELSE[npc.steps]#ENDIF over towards [npc2.name], before bending down and pushing [npc.her] [npc.ass+] up against the glory hole. Leaning forwards, [npc.she] [npc.verb(position)] [npc.herself] so that [npc.her] mouth is just [unit.sizes] away from the hole on the opposite side of the stall, and, letting out [npc.a_moan+], [npc.she] [npc.verb(prepare)] to have [npc.her] [npc.pussy+] and mouth used at the same time.";
 					
 				} else {
-					return "Pulling away from the glory holes, [npc.name] [npc.verb(reposition)] [npc.herself] so that [npc.sheIs] bending down and pushing [npc.her] [npc.ass+] up against [npc2.namePos] glory hole."
-							+ " Leaning forwards, [npc.she] [npc.verb(position)] [npc.herself] so that [npc.her] mouth is just [unit.sizes] away from the hole on the opposite side of the stall,"
-								+ " and, letting out [npc.a_moan+], [npc.she] [npc.verb(prepare)] to have [npc.her] [npc.pussy+] and mouth used at the same time.";
+					return "Отстранившись от дырок в стене, [npc.name] [npc.verb(reposition)] [npc.herself] так, что [npc.sheIs] наклоняется и прижимает [npc.her] [npc.ass+] к [npc2.namePos] дырке в стене. Наклонившись вперед, [npc.she] [npc.verb(position)] [npc.herself] так, что рот [npc.her] находится всего в [unit.sizes] от отверстия на противоположной стороне кабинки, и, издав [npc.a_moan+], [npc.she] [npc.verb(prepare)], чтобы одновременно использовать [npc.her] [npc.pussy+] и рот.";
 				}
 				
 			} else {
 				if(Main.sex.getSexPositionSlot(Main.sex.getCharacterPerformingAction())==SexSlotUnique.GLORY_HOLE_KNEELING) {
-					return "Standing up, [npc.name] #IF(npc.isPlayer())[npc.step]#ELSE[npc.steps]#ENDIF over towards [npc2.name], before bending down and pushing [npc.her] [npc.ass+] up against the glory hole."
-							+ " Letting out [npc.a_moan+], [npc.she] [npc.verb(press)] back against the wall, preparing to have [npc.her] [npc.pussy+] used.";
+					return "Standing up, [npc.name] #IF(npc.isPlayer())[npc.step]#ELSE[npc.steps]#ENDIF over towards [npc2.name], before bending down and pushing [npc.her] [npc.ass+] up against the glory hole. Letting out [npc.a_moan+], [npc.she] [npc.verb(press)] back against the wall, preparing to have [npc.her] [npc.pussy+] used.";
 					
 				} else {
-					return "Pulling away from the glory holes, [npc.name] [npc.verb(reposition)] [npc.herself] so that [npc.sheIs] bending down and pushing [npc.her] [npc.ass+] up against the glory hole."
-							+ " Letting out [npc.a_moan+], [npc.she] [npc.verb(press)] back against the wall, preparing to have [npc.her] [npc.pussy+] used.";
+					return "Отходя от отверстий, [npc.name] [npc.verb(reposition)] [npc.herself] так, что [npc.sheIs] наклоняется и прижимает [npc.her] [npc.ass+] к отверстию. Издавая [npc.a_moan+], [npc.she] [npc.verb(press)] спиной к стене, готовясь к тому, что [npc.her] [npc.pussy+] будет использована.";
 				}
 			}
 		}
@@ -320,15 +306,15 @@ public class GloryHole {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Fuck pussy (R)";
+			return "Трахать киску (R)";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Ask [npc2.name] to push [npc2.her] pussy up against the glory hole so that you can fuck it.";
+			return "Попросить [npc2.name] прижать [npc2.her] киску к отверстию, чтобы ты мог её оттрахать.";
 		}
 		@Override
 		public String getDescription() {
-			return "Wanting to fuck [npc2.namePos] pussy, you call out loud enough for [npc2.herHim] to hear, [npc.speech(Push your pussy up against the hole! I want to fuck you!)]";
+			return "Желая оттрахать [npc2.namePos] в киску, ты кричишь достаточно громко, чтобы [npc2.herHim] услышала: [npc.speech(Прижми свою киску к отверстию! Я хочу трахнуть тебя!)]";
 		}
 		@Override
 		public void applyEffects() {
@@ -369,15 +355,15 @@ public class GloryHole {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Fuck ass (R)";
+			return "Трахать задницу (R)";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Ask [npc2.name] to push [npc2.her] ass up against the glory hole so that you can fuck it.";
+			return "Попросить [npc2.name] прижать [npc2.her] задницу к отверстию, чтобы ты мог её оттрахать.";
 		}
 		@Override
 		public String getDescription() {
-			return "Wanting to fuck [npc2.namePos] ass, you call out loud enough for [npc2.herHim] to hear, [npc.speech(Push your butt up against the hole! I want to fuck your ass!)]";
+			return "Желая оттрахать [npc2.namePos] в задницу, ты кричишь достаточно громко, чтобы [npc2.herHim] услышала: [npc.speech(Прижми свою жопу к отверстию! Я хочу оттрахать твою задницу!)]";
 		}
 		@Override
 		public void applyEffects() {
@@ -415,15 +401,15 @@ public class GloryHole {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Oral (R)";
+			return "Оральный секс (R)";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Ask [npc2.name] to kneel down in front of the glory hole so that [npc2.she] can perform oral.";
+			return "Попросить [npc2.name] опуститься на колени перед отверстием, чтобы [npc2.she] могла заняться оральным сексом.";
 		}
 		@Override
 		public String getDescription() {
-			return "Wanting [npc2.name] to perform oral, you call out loud enough for [npc2.herHim] to hear, [npc.speech(Kneel down and put your mouth to use!)]";
+			return "Желая, чтобы [npc2.name] сделала ей оральный секс, ты кричишь достаточно громко, чтобы [npc2.herHim] услышала: [npc.speech(Встань на колени и используй свой ротик!)]";
 		}
 		@Override
 		public void applyEffects() {
@@ -468,29 +454,25 @@ public class GloryHole {
 		public String getDescription() {
 			if(Main.sex.getPositionRequest().getPerformerSlots().get(0)==SexSlotUnique.GLORY_HOLE_FUCKED) {
 				if(!Main.sex.getCharacterPerformingAction().getFetishDesire(Fetish.FETISH_VAGINAL_RECEIVING).isNegative()) {
-					return "Standing up and moving back so as to push [npc.her] [npc.pussy+] against the glory hole, [npc.name] [npc.moansVerb],"
-							+ " [npc.speech(Come on then, fuck my pussy!)]";
+					return "Встав и отступив назад, чтобы прижать [npc.her] [npc.pussy+] к скважине, [npc.name] [npc.moansVerb], [npc.speech(Ну же, трахни мою киску!)]";
 					
 				} else {
-					return "Staying in [npc.her] current position, [npc.name] angrily calls out, "
-							+ "[npc.speech(I'm not going to let you fuck my pussy! Just be happy with what you've got!)]";
+					return "Оставаясь на [npc.her] текущем месте, [npc.name] гневно выкрикивает: [npc.speech(Я не дам тебе трахать мою киску! Просто довольствуйся тем, что есть!)]";
 				}
 				
 			} else if(Main.sex.getPositionRequest().getPerformerSlots().get(0)==SexSlotUnique.GLORY_HOLE_ANALLY_FUCKED) {
 				if(!Main.sex.getCharacterPerformingAction().getFetishDesire(Fetish.FETISH_ANAL_RECEIVING).isNegative()) {
-					return "Standing up and moving back so as to push [npc.her] [npc.asshole+] against the glory hole, [npc.name] [npc.moansVerb],"
-							+ " [npc.speech(Come on then, fuck my ass!)]";
+					return "Встав и отступив назад, чтобы прижать [npc.her] [npc.asshole+] к скважине, [npc.name] [npc.moansVerb], [npc.speech(Ну же, трахни мою задницу!)]";
 					
 				} else {
-					return "Staying in [npc.her] current position, [npc.name] angrily calls out, "
-							+ "[npc.speech(I'm not going to let you fuck my pussy! Just be happy with what you've got!)]";
+					return "Оставаясь на [npc.her] текущем месте, [npc.name] гневно выкрикивает: [npc.speech(Я не дам тебе трахать мою киску! Просто довольствуйся тем, что есть!)]";
 				}
 				
 			} else if(Main.sex.getPositionRequest().getPerformerSlots().get(0)==SexSlotUnique.GLORY_HOLE_KNEELING) {
-				return "Dropping down onto [npc.her] knees, [npc.name] [npc.moansVerb],"
+				return "Опустившись на [npc.her] колени, [npc.name] [npc.moansVerb],"
 							+ (Main.game.getPlayer().hasPenis()
-								?" [npc.speech(Let me suck your cock!)]"
-								:" [npc.speech(Let me use my mouth!)]");
+								?" [npc.speech(Дай мне отсосать твой член!)]"
+								:" [npc.speech(Дай мне использовать мой рот!)]");
 			}
 			
 			return "";

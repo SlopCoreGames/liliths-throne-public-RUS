@@ -33,12 +33,12 @@ public class SARoxySpecials {
 		
 		@Override
 		public String getActionTitle() {
-			return "Orgasm";
+			return "Оргазм";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "You've reached your climax, and can't hold back your orgasm any longer.";
+			return "Вы достигли климакса и больше не можете сдерживать оргазм.";
 		}
 
 		@Override
@@ -89,7 +89,7 @@ public class SARoxySpecials {
 		
 		@Override
 		public String getActionTitle() {
-			return "Smoke";
+			return "Дым";
 		}
 
 		@Override
@@ -123,7 +123,7 @@ public class SARoxySpecials {
 		
 		@Override
 		public String getActionTitle() {
-			return "Face-sitting tease";
+			return "Дразнящее сидение на лице";
 		}
 
 		@Override
@@ -170,7 +170,7 @@ public class SARoxySpecials {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Customer interruption";
+			return "Прерывание клиента";
 		}
 		@Override
 		public String getActionDescription() {

@@ -13,9 +13,9 @@ public enum SexPace {
 	SUB_NORMAL(false, "normal", BaseColour.PINK),
 	SUB_EAGER(false, "eager", BaseColour.PINK_DEEP),
 	
-	DOM_GENTLE(true, "gentle", BaseColour.PINK_LIGHT),
-	DOM_NORMAL(true, "normal", BaseColour.PINK),
-	DOM_ROUGH(true, "rough", BaseColour.CRIMSON);
+	DOM_GENTLE(true, "нежный", BaseColour.PINK_LIGHT),
+	DOM_NORMAL(true, "нормальный", BaseColour.PINK),
+	DOM_ROUGH(true, "грубый", BaseColour.CRIMSON);
 	
 	private boolean isDom;
 	private String name;

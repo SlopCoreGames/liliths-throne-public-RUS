@@ -41,52 +41,52 @@ public class SAMurkSpecials {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Encourage milker";
+			return "Подбодрить доярку";
 		}
 		@Override
 		public String getActionDescription() {
-			return "You can feel that [npc2.name] is fast approaching [npc2.her] orgasm. Encourage [npc2.herHim] to cum for you.";
+			return "Ты чувствуешь, что [npc2.name] стремительно приближается к [npc2.her] оргазму. Подбодри [npc2.herHim], чтобы она кончила для тебя.";
 		}
 		@Override
 		public String getDescription() {
 			if(Main.sex.getOrificesBeingPenetratedBy(Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS, Main.sex.getCharacterOrgasming()).contains(SexAreaOrifice.MOUTH)) {
 				return UtilText.returnStringAtRandom(
-						"Sensing that you're about to orgasm from having your face fucked by his fat, throbbing cock, Murk roughly slams his dark shaft fully down your throat and grunts,",
-						"Realising that you're about to cum just from giving him a blowjob, Murk picks up the pace and violently pounds his hot cock deep down your throat as he grunts,",
-						"Knowing that you're about to reach your climax, Murk continues relentlessly fucking your throat as he grunts,")
+						"Чувствуя, что ты вот-вот кончишь от того, как его толстый, пульсирующий член трахает тебе лицо, Мёрк грубо вонзает свой темный ствол глубоко тебе в глотку и хрипит,",
+						"Понимая, что ты вот-вот кончишь только от того, что сосёшь ему член, Мёрк ускоряется и яростно вколачивает свой горячий член глубоко тебе в глотку, хрипя,",
+						"Зная, что ты вот-вот достигнешь пика, Мёрк продолжает безжалостно трахать твою глотку, хрипя,")
 						+ " [murk.speechNoEffects("
 						+ UtilText.returnStringAtRandom(
-								"That's it, slut! ~Mmm!~ Cum from the feelin' of me fat, stinkin' cock fuckin' yer throat!",
-								"Go on, ya 'orny slut! ~Aah!~ Let the taste o' me fat, stinkin' cock give yer an' orgasm!",
-								"You's gonna cum just from suckin' me fat, stinkin' cock?! ~Mmm!~ Go on then, slut! Cum fer me!")
+								"Вот так, сучка! ~Ммм!~ Кончай от того, как мой толстый, вонючий член трахает твою глотку!",
+								"Давай же, похотливая сучка! ~Аах!~ Пусть вкус моего толстого, вонючего члена доставит тебе оргазм!",
+								"Ты что, собралась кончить просто от того, что сосёшь мой толстый, вонючий член?! ~Ммм!~ Ну же, сучка! Кончай для меня!")
 						+")]";
 				
 			} else if(Main.sex.getOrificesBeingPenetratedBy(Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS, Main.sex.getCharacterOrgasming()).contains(SexAreaOrifice.VAGINA)) {
 				return UtilText.returnStringAtRandom(
-						"Feeling your [pc.pussy+] start to uncontrollably squeeze down around his fat, throbbing cock, Murk roughly slams his dark shaft fully into your drooling hole and grunts,",
-						"Realising from your cunt's wild spasms that you're about to cum, Murk picks up the pace and violently pounds his hot cock deep into your [pc.pussy+] as he grunts,",
-						"As your [pc.pussy+] starts to wildly grip and squeeze down around Murk's fat, [murk.cockColour] cock, the chubby rat-boy realises that you're about to reach your climax and deeply grunts,")
+						"Чувствуя, как твоя [pc.pussy+] начинает неконтролируемо сжиматься вокруг его толстого, пульсирующего члена, Мёрк грубо вонзает свой темный ствол целиком в твою текущую дырочку и хрипит,",
+						"Понимая по диким спазмам твоей киски, что ты вот-вот кончишь, Мёрк ускоряется и яростно вколачивает свой горячий член глубоко в твою [pc.pussy+], хрипя,",
+						"Когда твоя [pc.pussy+] начинает неистово сжимать жирный, [murk.cockColour] член Мёрка, пухлый крысомальчик понимает, что ты вот-вот достигнешь оргазма, и глубоко рычит:")
 						+ " [murk.speechNoEffects("
 						+ UtilText.returnStringAtRandom(
-								"That's it, slut! ~Mmm!~ Cum from the feelin' of me fat, stinkin' cock makin' love ta yer ugly cunt!",
-								"Go on, ya 'orny slut! ~Aah!~ Let the feel o' me fat, stinkin' cock give yer ugly cunt an orgasm!",
-								"Yer ugly cunt's gonna cum from havin' me fat, stinkin' cock pound it?! ~Mmm!~ Go on then, slut! Cum fer me!")
+								"Вот так, сучка! ~Ммм!~ Кончай от того, как мой жирный, вонючий член трахает твою уродскую киску!",
+								"Давай же, похотливая сучка! ~Аах!~ Пусть ощущение моего жирного, вонючего члена доставит твоей уродской киске оргазм!",
+								"Твоя уродская киска сейчас кончит от того, что мой жирный, вонючий член долбит её?! ~Ммм!~ Ну же, сучка! Кончай для меня!")
 						+")]";
 				
 			} else if(Main.sex.getOrificesBeingPenetratedBy(Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS, Main.sex.getCharacterOrgasming()).contains(SexAreaOrifice.ANUS)) {
 				return UtilText.returnStringAtRandom(
-						"Feeling your [pc.asshole+] start to uncontrollably squeeze down around his fat, throbbing cock, Murk roughly slams his dark shaft fully into your wet hole and grunts,",
-						"Realising from your asshole's wild spasms that you're about to cum, Murk picks up the pace and violently pounds his hot cock deep into your [pc.asshole+] as he grunts,",
-						"As your [pc.asshole+] starts to wildly grip and squeeze down around Murk's fat, [murk.cockColour] cock, the chubby rat-boy realises that you're about to reach your climax and deeply grunts,")
+						"Чувствуя, как твоя [pc.asshole+] начинает бесконтрольно сжиматься вокруг его жирного, пульсирующего члена, Мёрк грубо вбивает свой темный ствол до упора в твою мокрую дырочку и рычит:",
+						"Понимая по диким спазмам твоего ануса, что ты вот-вот кончишь, Мёрк ускоряется и яростно вколачивает свой горячий член глубоко в твою [pc.asshole+], тяжело рыча:",
+						"Когда твоя [pc.asshole+] начинает неистово сжимать жирный, [murk.cockColour] член Мёрка, пухлый крысомальчик понимает, что ты вот-вот достигнешь оргазма, и глубоко рычит:")
 						+ " [murk.speechNoEffects("
 						+ UtilText.returnStringAtRandom(
-								"That's it, slut! ~Mmm!~ Cum from the feelin' of me fat, stinkin' cock makin' love ta yer ass!",
-								"Go on, ya 'orny butt-slut! ~Aah!~ Let the feel o' me fat, stinkin' cock give ya an' orgasm!",
-								"Ya gonna cum from havin' me fat, stinkin' cock pound yer ass?! ~Mmm!~ Go on then, butt-slut! Cum fer me!")
+								"Вот так, сучка! ~Ммм!~ Кончай от того, как мой жирный, вонючий член трахает твою задницу!",
+								"Давай же, похотливая заднице-сучка! ~Аах!~ Пусть ощущение моего жирного, вонючего члена доставит твоей попке оргазм!",
+								"Ты что, сейчас кончишь от того, что мой жирный, вонючий член долбит твою задницу?! ~Ммм!~ Ну же, заднице-сучка! Кончай для меня!")
 						+")]";
 				
 			} else {
-				return "As Murk realises that you're about to reach your climax, he roughly grinds himself against you and sneers, [murk.speechNoEffects(Come on then, slut! Fuckin' cum fer me!)]"; //This should never be reached.
+				return "Когда Мёрк понимает, что ты вот-вот достигнешь оргазма, он грубо вжимается в тебя и скалится: [murk.speechNoEffects(Ну же, сучка! Кончай для меня, блядь!)]"; //This should never be reached.
 			}
 		}
 	};

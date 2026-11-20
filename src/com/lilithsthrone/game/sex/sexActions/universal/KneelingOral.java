@@ -48,12 +48,12 @@ public class KneelingOral {
 		
 		@Override
 		public String getActionTitle() {
-			return "Thigh squeeze";
+			return "Сжимание бедер";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Squeeze your thighs around [npc2.namePos] head and collapse down onto [npc2.her] face as you orgasm.";
+			return "Сжать бедра вокруг головы [npc2.namePos] и рухнуть на лицо [npc2.her] в момент оргазма.";
 		}
 
 		@Override
@@ -61,11 +61,7 @@ public class KneelingOral {
 			UtilText.nodeContentSB.setLength(0);
 			
 			UtilText.nodeContentSB.append(
-					"[npc.Name] [npc.verb(feel)] an overwhelming wave of burning arousal start to build up deep within [npc.her] groin, and with [npc.a_moan+],"
-							+ " [npc.she] [npc.verb(clamp)] [npc.her] thighs down hard around [npc2.namePos] head."
-					+ " [npc.Her] [npc.legs] start to shake and give out from under [npc.herHim], and with another [npc.a_moan+], [npc.she] [npc.verb(start)] collapsing forwards."
-					+ " [npc2.NameIsFull] quickly slammed to the floor, and suddenly [npc2.verb(find)] [npc.name] sitting on [npc2.her] face,"
-						+ " screaming in ecstasy as [npc.her] [npc.pussy+] spasms and clenches down around the [npc2.tongue+] that's being forced deep into [npc.her] soft folds.");
+					"[npc.Name] [npc.verb(feel)] непреодолимая волна обжигающего возбуждения начинает нарастать глубоко внутри паха [npc.her], и с [npc.a_moan+], [npc.she] [npc.verb(clamp)] [npc.her] бедра, сильно сжимая голову [npc2.namePos]. [npc.Her] [npc.legs] начинают дрожать и подкашиваться под [npc.herHim], и с еще одним [npc.a_moan+], [npc.she] [npc.verb(start)] вперед. [npc2.NameIsFull] быстро прижимается к полу, и внезапно [npc2.verb(find)] [npc.name] сидит на [npc2.her], крича от экстаза, пока [npc.her] [npc.pussy+] спазмирует и сжимается вокруг [npc2.tongue+], который с силой втиснут в мягкие складки [npc.her].");
 			
 			if(Main.sex.getCharacterPerformingAction().hasPenis()) {
 				UtilText.nodeContentSB.append("<br/><br/>"
@@ -78,9 +74,7 @@ public class KneelingOral {
 							false));
 			}
 			
-			UtilText.nodeContentSB.append("<br/><br/>"
-					+ "After a few moments of grinding down on [npc2.namePos] face, [npc.namePos] overwhelming orgasm starts to fade, and [npc.she] [npc.verb(stand)] up on shaky [npc.legs],"
-							+ " grinning down at [npc2.name] as [npc.she] [npc.verb(feel)] a slick stream of saliva and [npc.girlCum] drooling down from [npc.her] [npc.pussy+].");
+			UtilText.nodeContentSB.append("<br/><br/>After a few moments of grinding down on [npc2.namePos] face, [npc.namePos] overwhelming orgasm starts to fade, and [npc.she] [npc.verb(stand)] up on shaky [npc.legs], grinning down at [npc2.name] as [npc.she] [npc.verb(feel)] a slick stream of saliva and [npc.girlCum] drooling down from [npc.her] [npc.pussy+].");
 			
 			return Main.sex.getCharacterPerformingAction().getSexActionOrgasmOverride(this, Main.sex.getAvailableCumTargets(Main.sex.getCharacterPerformingAction()).get(0), false, UtilText.nodeContentSB.toString()).getDescription();
 		}

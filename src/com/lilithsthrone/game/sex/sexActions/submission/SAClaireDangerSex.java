@@ -50,7 +50,7 @@ public class SAClaireDangerSex {
 		}
 		@Override
 		public String getActionTitle() {
-			return "The door opens!";
+			return "Дверь открывается!";
 		}
 		@Override
 		public String getActionDescription() {
@@ -85,11 +85,11 @@ public class SAClaireDangerSex {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Stay quiet";
+			return "Затаиться";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Do as Claire says and remain quiet until the Enforcer has left.";
+			return "Делай как говорит Клэр, и старайся не шуметь, пока Enforcer не уйдет.";
 		}
 		@Override
 		public String getDescription() {
@@ -104,67 +104,54 @@ public class SAClaireDangerSex {
 				if(area.isOrifice()) {
 					foundPenetration = true;
 					sb.append("<br/><br/>");
-					sb.append("Remaining completely still and silent as the Enforcer starts searching through the storeroom, you suddenly become aware of your [pc.cock+] ");
+					sb.append("Когда ты замираешь, не смея издать ни звука, пока Enforcer начинает обыскивать кладовую, ты внезапно чувствуешь, как твоя [pc.cock+] ");
 					switch((SexAreaOrifice)area) {
 						case ANUS:
-							sb.append("throbbing deep inside Claire's [claire.asshole]."
-									+ " Obviously madly turned-on by the situation which the two of you find yourselves in, the horny cat-girl slowly pushes her [claire.ass+] back against you, driving your cock even deeper into her [claire.asshole].");
+							sb.append("пульсирует глубоко внутри [claire.asshole] Клэр. Очевидно, эта ситуация привела кошку в дикое возбуждение, и похотливая кошкодевушка медленно прижимает свою [claire.ass+] к тебе, заставляя твой член проникать еще глубже в ее [claire.asshole].");
 							break;
 						case ASS:
-							sb.append("throbbing between Claire's [claire.assSize] ass cheeks."
-									+ " Obviously madly turned-on by the situation which the two of you find yourselves in, the horny cat-girl slowly bucks her [claire.hips+] back against you, driving your cock up and down over her [claire.asshole].");
+							sb.append("пульсирует между ягодицами [claire.assSize] Клэр. Очевидно, эта ситуация привела кошку в дикое возбуждение, и похотливая кошкодевушка медленно двигает своей [claire.hips+] тебе навстречу, заставляя твой член скользить вверх и вниз по ее [claire.asshole].");
 							break;
 						case BREAST:
-							sb.append("throbbing between Claire's [claire.breastSize] boobs."
-									+ " Obviously madly turned-on by the situation which the two of you find yourselves in, the horny cat-girl slowly pushes her [claire.breasts+] together, enveloping your cock in her cleavage.");
+							sb.append("пульсирует между грудей [claire.breastSize] Клэр. Очевидно, эта ситуация привела кошку в дикое возбуждение, и похотливая кошкодевушка медленно сжимает свои [claire.breasts+], заключая твой член в ложбинку.");
 							break;
 						case BREAST_CROTCH:
-							sb.append("throbbing between Claire's [claire.crotchBoobSize] [claire.crotchBoobs]."
-									+ " Obviously madly turned-on by the situation which the two of you find yourselves in, the horny cat-girl slowly pushes her [claire.crotchBoobs+] together, enveloping your cock in her cleavage.");
+							sb.append("пульсирует между [claire.crotchBoobs] [claire.crotchBoobSize] Клэр. Очевидно, эта ситуация привела кошку в дикое возбуждение, и похотливая кошкодевушка медленно сжимает свои [claire.crotchBoobs+], заключая твой член в ложбинку.");
 							break;
 						case MOUTH:
-							sb.append("throbbing inside Claire's mouth."
-									+ " Obviously madly turned-on by the situation which the two of you find yourselves in, the horny cat-girl slowly pushes her head forwards, driving your cock deep down her throat.");
+							sb.append("пульсирует во рту у Клэр. Очевидно, она безумно возбуждена ситуацией, в которой вы оказались; похотливая кошкодевочка медленно подается вперед, заглатывая твой член глубоко в глотку.");
 							break;
 						case NIPPLE:
-							sb.append("throbbing deep inside Claire's [claire.nipple(true)]."
-									+ " Obviously madly turned-on by the situation which the two of you find yourselves in, the horny cat-girl slowly pushes her chest out into you, driving your cock even deeper into her [claire.nipple+].");
+							sb.append("пульсирует глубоко внутри [claire.nipple(true)] Клэр. Очевидно, она безумно возбуждена ситуацией, в которой вы оказались; похотливая кошкодевочка медленно прижимается грудью к тебе, заставляя твой член проникать еще глубже в ее [claire.nipple+].");
 							break;
 						case NIPPLE_CROTCH:
-							sb.append("throbbing deep inside Claire's [claire.crotchNipple]."
-									+ " Obviously madly turned-on by the situation which the two of you find yourselves in, the horny cat-girl slowly pushes her stomach out into you, driving your cock even deeper into her [claire.crotchNipple+].");
+							sb.append("пульсирует глубоко внутри [claire.crotchNipple] Клэр. Очевидно, она безумно возбуждена ситуацией, в которой вы оказались; похотливая кошкодевочка медленно выпячивает живот тебе навстречу, заставляя твой член проникать еще глубже в ее [claire.crotchNipple+].");
 							break;
 						case THIGHS:
-							sb.append("throbbing between Claire's thick thighs."
-									+ " Obviously madly turned-on by the situation which the two of you find yourselves in, the horny cat-girl slowly bucks her [claire.hips+] back against you, driving your cock between her soft legs.");
+							sb.append("пульсирует между толстыми бедрами Клэр. Очевидно, она безумно возбуждена ситуацией, в которой вы оказались; похотливая кошкодевочка медленно подается [claire.hips+] назад, насаживаясь на твой член между своих мягких ног.");
 							break;
 						case URETHRA_PENIS:
 							break;
 						case URETHRA_VAGINA:
-							sb.append("throbbing deep inside Claire's [claire.urethraVagina]."
-									+ " Obviously madly turned-on by the situation which the two of you find yourselves in, the horny cat-girl slowly pushes her [claire.hips+] out into you, driving your cock even deeper into her [claire.urethraVagina].");
+							sb.append("пульсирует глубоко внутри [claire.urethraVagina] Клэр. Очевидно, она безумно возбуждена ситуацией, в которой вы оказались; похотливая кошкодевочка медленно выпячивает [claire.hips+] тебе навстречу, заставляя твой член проникать еще глубже в ее [claire.urethraVagina].");
 							break;
 						case VAGINA:
-							sb.append("throbbing deep inside Claire's [claire.pussy+]."
-									+ " Obviously madly turned-on by the situation which the two of you find yourselves in, the horny cat-girl slowly pushes her [claire.hips+] out into you, driving your cock even deeper into her [claire.pussy+].");
+							sb.append("пульсирует глубоко внутри [claire.pussy+] Клэр. Очевидно, эта ситуация привела ее в безумное возбуждение, и похотливая кошкодевочка медленно выталкивает свою [claire.hips+] тебе навстречу, вонзая твой член еще глубже в ее [claire.pussy+].");
 							break;
 						case ARMPITS:
-							sb.append("throbbing up against Claire's armpit."
-									+ " Obviously madly turned-on by the situation which the two of you find yourselves in, the horny cat-girl slowly grinds herself up and down against you, driving your cock over her [claire.armpit+].");
+							sb.append("пульсирует у подмышки Клэр. Очевидно, эта ситуация привела ее в безумное возбуждение, и похотливая кошкодевочка медленно вжимается в тебя, двигаясь вверх и вниз и насаживая твой член на ее [claire.armpit+].");
 							break;
 						case SPINNERET:
 							break;
 					}
-					sb.append("<br/><br/>"
-							+ "Just as you feel as though you can't take it any more, the Enforcer finds what they're looking for, and, without spotting the two of you locked in coitus, they leave just as quickly as they entered.");
+					sb.append("<br/><br/>Как раз в тот момент, когда тебе кажется, что ты уже на пределе, Enforcer находит то, что искал, и, не заметив вас, занятых совокуплением, уходит так же быстро, как и появился.");
 				}
 			}
 			
 			if(!foundPenetration) {
-				sb.append("<br/><br/>"
-						+ "After a nerve-wracking thirty or so seconds, the Enforcer finally finds what they're looking for, and, without spotting the two of you locked in coitus, they leave just as quickly as they entered.");
+				sb.append("<br/><br/>После нервного тридцатисекундного ожидания Enforcer наконец находит то, что искал, и, не заметив вас, занятых совокуплением, уходит так же быстро, как и появился.");
 			}
-			sb.append(" Letting out a sigh of relief, you and Claire move back into your previous position, before continuing from where you left off...");
+			sb.append(" С облегчением выдохнув, вы с Клэр возвращаетесь в прежнюю позу, чтобы продолжить с того места, на котором остановились...");
 
 			return sb.toString();
 		}
@@ -199,11 +186,11 @@ public class SAClaireDangerSex {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Keep going";
+			return "Иди дальше";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Ignore Claire's plea to remain quiet and keep on fucking her.";
+			return "Игнорировать мольбы Клэр соблюдать тишину и продолжать трахать ее.";
 		}
 		@Override
 		public String getDescription() {
@@ -214,64 +201,52 @@ public class SAClaireDangerSex {
 			SexAreaInterface area = map.get(SexAreaPenetration.PENIS).get(Main.game.getNpc(Claire.class)).iterator().next();
 			if(area.isOrifice()) {
 				sb.append("<br/><br/>");
-				sb.append("Seeing no reason to do as Claire asks, you ignore the fact that there's an Enforcer searching through the storeroom and continue to ");
+				sb.append("Не видя причин слушаться Клэр, ты игнорируешь тот факт, что в кладовой рыщет Enforcer, и продолжаешь ");
 				switch((SexAreaOrifice)area) {
 					case ANUS:
-						sb.append(" thrust your [pc.cock+] in and out of Claire's [claire.asshole+]."
-								+ " Not wanting to be discovered, the horny cat-girl covers her mouth with both hands and does her best to remain quiet as you continue to relentlessly fuck her ass.");
+						sb.append(" входишь своим [pc.cock+] в [claire.asshole+] Клэр и выходишь из неё. Не желая быть обнаруженной, похотливая кошкодевочка прикрывает рот обеими руками и изо всех сил старается не издавать ни звука, пока ты продолжаешь безжалостно трахать её задницу.");
 						break;
 					case ASS:
-						sb.append(" thrust your [pc.cock+] up and down between Claire's [claire.assSize] ass cheeks."
-								+ " Not wanting to be discovered, the horny cat-girl covers her mouth with both hands and does her best to remain quiet as you continue to relentlessly fuck her ass's cleavage.");
+						sb.append(" двигаешь своим [pc.cock+] вверх и вниз между ягодицами [claire.assSize] Клэр. Не желая быть обнаруженной, похотливая кошкодевочка прикрывает рот обеими руками и изо всех сил старается не издавать ни звука, пока ты продолжаешь безжалостно трахать ложбинку её задницы.");
 						break;
 					case BREAST:
-						sb.append(" thrust your [pc.cock+] up and down between Claire's [claire.breastSize] boobs."
-								+ " Not wanting to be discovered, the horny cat-girl covers her mouth with both hands and does her best to remain quiet as you continue to relentlessly fuck her ample cleavage.");
+						sb.append(" двигаешь своим [pc.cock+] вверх и вниз между [claire.breastSize] грудями Клэр. Не желая быть обнаруженной, похотливая кошкодевочка прикрывает рот обеими руками и изо всех сил старается не издавать ни звука, пока ты продолжаешь безжалостно трахать её пышную ложбинку.");
 						break;
 					case BREAST_CROTCH:
-						sb.append("thrust your [pc.cock+] up and down between Claire's [claire.crotchBoobSize] [claire.crotchBoobs]."
-								+ " Not wanting to be discovered, the horny cat-girl covers her mouth with both hands and does her best to remain quiet as you continue to relentlessly fuck her crotch-boob's cleavage.");
+						sb.append("двигаешь своим [pc.cock+] вверх и вниз между [claire.crotchBoobSize] [claire.crotchBoobs] Клэр. Не желая быть обнаруженной, похотливая кошкодевочка прикрывает рот обеими руками и изо всех сил старается не издавать ни звука, пока ты продолжаешь безжалостно трахать ложбинку между её грудями.");
 						break;
 					case MOUTH:
-						sb.append(" thrust your [pc.cock+] down Claire's throat."
-								+ " Not wanting to be discovered, the horny cat-girl does her best to remain quiet as you continue to relentlessly fuck her face.");
+						sb.append(" засовываешь свой [pc.cock+] глубоко в глотку Клэр. Не желая быть обнаруженной, похотливая кошкодевочка изо всех сил старается не издавать ни звука, пока ты продолжаешь безжалостно трахать её лицо.");
 						break;
 					case NIPPLE:
-						sb.append(" thrust your [pc.cock+] in and out of Claire's [claire.nipple(true)+]."
-								+ " Not wanting to be discovered, the horny cat-girl covers her mouth with both hands and does her best to remain quiet as you continue to relentlessly fuck her [claire.nipple(true)].");
+						sb.append(" входи и выходи своим [pc.cock+] в [claire.nipple(true)+] Клэр. Не желая быть обнаруженной, похотливая кошкодевочка прикрывает рот обеими руками и изо всех сил старается не издавать ни звука, пока ты продолжаешь безжалостно трахать её [claire.nipple(true)].");
 						break;
 					case NIPPLE_CROTCH:
-						sb.append(" thrust your [pc.cock+] in and out of Claire's [claire.crotchNipple(true)+]."
-								+ " Not wanting to be discovered, the horny cat-girl covers her mouth with both hands and does her best to remain quiet as you continue to relentlessly fuck her [claire.crotchNipple(true)].");
+						sb.append(" входи и выходи своим [pc.cock+] в [claire.crotchNipple(true)+] Клэр. Не желая быть обнаруженной, похотливая кошкодевочка прикрывает рот обеими руками и изо всех сил старается не издавать ни звука, пока ты продолжаешь безжалостно трахать её [claire.crotchNipple(true)].");
 						break;
 					case THIGHS:
-						sb.append(" thrust your [pc.cock+] in and out of Claire's thick thighs."
-								+ " Not wanting to be discovered, the horny cat-girl covers her mouth with both hands and does her best to remain quiet as you continue to relentlessly fuck her thighs.");
+						sb.append(" входи и выходи своим [pc.cock+] между толстых бёдер Клэр. Не желая быть обнаруженной, похотливая кошкодевочка прикрывает рот обеими руками и изо всех сил старается не издавать ни звука, пока ты продолжаешь безжалостно трахать её бёдра.");
 						break;
 					case URETHRA_PENIS:
 						break;
 					case URETHRA_VAGINA:
-						sb.append(" thrust your [pc.cock+] in and out of Claire's [claire.urethraVagina]."
-								+ " Not wanting to be discovered, the horny cat-girl covers her mouth with both hands and does her best to remain quiet as you continue to relentlessly fuck her [claire.urethraVagina].");
+						sb.append(" входи и выходи своим [pc.cock+] в [claire.urethraVagina] Клэр. Не желая быть обнаруженной, похотливая кошкодевочка прикрывает рот обеими руками и изо всех сил старается не издавать ни звука, пока ты продолжаешь безжалостно трахать её [claire.urethraVagina].");
 						break;
 					case VAGINA:
-						sb.append(" thrust your [pc.cock+] in and out of Claire's [claire.pussy+]."
-								+ " Not wanting to be discovered, the horny cat-girl covers her mouth with both hands and does her best to remain quiet as you continue to relentlessly fuck her [claire.pussy].");
+						sb.append(" входи и выходи своим [pc.cock+] в [claire.pussy+] Клэр. Не желая быть обнаруженной, похотливая кошкодевочка прикрывает рот обеими руками и изо всех сил старается не издавать ни звука, пока ты продолжаешь безжалостно трахать её [claire.pussy].");
 						break;
 					case ARMPITS:
-						sb.append(" thrust your [pc.cock+] up and down over Claire's [claire.armpit]."
-								+ " Not wanting to be discovered, the horny cat-girl covers her mouth with her free hand and does her best to remain quiet as you continue to relentlessly fuck her [claire.armpit+].");
+						sb.append(" ты двигаешь своим [pc.cock+] вверх и вниз над [claire.armpit] Клэр. Не желая быть обнаруженной, похотливая кошкодевочка прикрывает рот свободной рукой и изо всех сил старается не шуметь, пока ты безжалостно трахаешь её [claire.armpit+].");
 						break;
 					case SPINNERET:
 						break;
 				}
-				sb.append("<br/><br/>"
-						+ "Just as it seems as though the busty cat-girl can't take any more, the Enforcer finds what they're looking for, and, without spotting the two of you locked in coitus, they leave just as quickly as they entered.");
+				sb.append("<br/><br/>Как раз в тот момент, когда кажется, что пышногрудая кошкодевочка уже не может больше терпеть, Исполнитель находит то, что искал, и, не заметив вас двоих, занятых совокуплением, уходит так же быстро, как и вошел.");
 			}
 			
-			sb.append(" Finally able to break her silence, Claire lets out a particularly-erotic moan and exclaims, [claire.speechNoEffects(~Aah!~ [pc.Name]! ~Ooh!~ I-I told you to stop!)]");
+			sb.append(" Наконец сумев нарушить молчание, Клэр издает особенно эротичный стон и восклицает: [claire.speechNoEffects(~Аах!~ [pc.Name]! ~Ооох!~ Я... я же просила тебя остановиться!)]");
 			sb.append("<br/><br/>");
-			sb.append("Telling your horny partner that you were having too much fun to do as she asked, you flash her a cheeky smile before moving back into your previous position and quickly continuing from where you left off...");
+			sb.append("Говоря своей возбужденной партнерше, что тебе слишком весело, чтобы слушаться её просьб, ты дерзко улыбаешься ей, прежде чем вернуться в прежнюю позу и быстро продолжить с того места, на котором остановился...");
 			
 			return sb.toString();
 		}

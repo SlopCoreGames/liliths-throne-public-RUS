@@ -35,20 +35,18 @@ public class Masturbation {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Standing";
+			return "Стоя";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Decide to get to your [npc.feet] and continue masturbating while standing upright.";
+			return "Решить подойти к своей [npc.feet] и продолжить мастурбировать стоя во весь рост.";
 		}
 		@Override
 		public String getDescription() {
 			if(!Main.sex.getCharacterPerformingAction().isTaur()) {
-				return "Deciding that it would be better to continue masturbating while standing upright, [npc.name] [npc.verb(push)] [npc.herself] up onto [npc.her] [npc.feet],"
-						+ " before dropping [npc.her] [npc.hands] down between [npc.her] [npc.legs] and preparing to continue where [npc.she] left off...";
+				return "Решив, что будет лучше продолжить мастурбировать стоя, [npc.name] [npc.verb(push)] [npc.herself] на [npc.her] [npc.feet], прежде чем опустить [npc.her] [npc.hands] между [npc.her] [npc.legs] и приготовиться продолжить с того места, где [npc.she] остановилась...";
 			} else {
-				return "Deciding that it would be better to continue masturbating while standing upright, [npc.name] [npc.verb(push)] [npc.herself] up onto [npc.her] [npc.feet],"
-						+ " before looking back over [npc.her] shoulder at [npc.her] feral [npc.legRace]'s body and letting out a frustrated whine...";
+				return "Решив, что будет лучше продолжить мастурбировать стоя, [npc.name] [npc.verb(push)] [npc.herself] на [npc.her] [npc.feet], прежде чем оглянуться через [npc.her] плечо на дикое тело [npc.her] [npc.legRace] и издать разочарованный скулящий звук...";
 			}
 		}
 		@Override
@@ -81,16 +79,15 @@ public class Masturbation {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Sitting";
+			return "Сидя";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Decide to sit down on a nearby surface and continue masturbating in that position.";
+			return "Решить сесть на ближайшую поверхность и продолжить мастурбировать в таком положении.";
 		}
 		@Override
 		public String getDescription() {
-			return "Deciding that it would be better to continue masturbating in a seated position, [npc.name] [npc.verb(find)] a suitable surface nearby,"
-					+ " before sitting down and moving [npc.her] [npc.hands] between [npc.her] [npc.legs]...";
+			return "Решив, что будет лучше продолжить мастурбировать сидя, [npc.name] [npc.verb(find)] подходящую поверхность поблизости, прежде чем сесть и подвинуть [npc.her] [npc.hands] между [npc.her] [npc.legs]...";
 		}
 		@Override
 		public void applyEffects() {
@@ -122,20 +119,18 @@ public class Masturbation {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Kneeling";
+			return "На коленях";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Decide to drop down onto your knees and continue masturbating in a kneeling position.";
+			return "Решить опуститься на колени и продолжить мастурбировать в таком положении.";
 		}
 		@Override
 		public String getDescription() {
 			if(!Main.sex.getCharacterPerformingAction().isTaur()) {
-				return "Deciding that it would be better to continue masturbating while kneeling down on the ground, [npc.name] [npc.verb(drop)] down into such a position,"
-						+ " before sliding [npc.her] [npc.hands] down between [npc.her] [npc.legs] and preparing to continue where [npc.she] left off...";
+				return "Решив, что будет лучше продолжить мастурбировать, стоя на коленях на земле, [npc.name] [npc.verb(drop)] в такое положение, прежде чем скользнуть [npc.her] [npc.hands] между [npc.her] [npc.legs] и приготовиться продолжить с того места, где [npc.she] остановилась...";
 			} else {
-				return "Deciding that it would be better to continue masturbating while kneeling down on the ground, [npc.name] [npc.verb(drop)] down into such a position,"
-						+ " before looking back over [npc.her] shoulder at [npc.her] feral [npc.legRace]'s body and letting out a frustrated whine...";
+				return "Решив, что будет лучше продолжить мастурбацию, стоя на коленях на земле, [npc.name] [npc.verb(drop)] в такую позу, прежде чем оглянуться через [npc.her] плечо на дикое тело [npc.her] [npc.legRace] и издать разочарованный скулящий звук...";
 			}
 		}
 		@Override

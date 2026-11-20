@@ -89,17 +89,16 @@ public class MilkingStall {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Attach pumps";
+			return "Прикрепить насосы";
 		}
 		@Override
 		public String getActionDescription() {
 			List<InventorySlot> pumps = getPumpSlots();
 			if(pumps.isEmpty()) {
 				//"[npc2.Name] doesn't have any accessible areas for milking pumps to be attached to!"
-				return "<i>[style.italicsBad(Requires:)] One of the following slots to be freely available: 'nipple', 'penis', 'vagina', or 'stomach' (for udder milking)."
-						+ " Also for [npc2.namePos] milking job permissions to allow the equipping of pumps into that slot.</i>";
+				return "<i>[style.italicsBad(Требуется:)] Один из следующих слотов должен быть свободен: 'сосок', 'пенис', 'вагина' или 'живот' (для доения вымени). Также необходимы права [npc2.namePos] на доение, позволяющие экипировать насосы в этот слот.</i>";
 			}
-			return "Attach the milking machine's pumps to [npc2.namePos] "+Util.inventorySlotsToStringList(pumps)+".";
+			return "Прикрепить насосы доильного аппарата к [npc2.namePos] "+Util.inventorySlotsToStringList(pumps)+".";
 		}
 		@Override
 		public boolean isBaseRequirementsMet() {
@@ -116,10 +115,10 @@ public class MilkingStall {
 			List<InventorySlot> pumps = getPumpSlots();
 			
 			if(pumps.size()>1 || pumps.contains(InventorySlot.NIPPLE) || pumps.contains(InventorySlot.STOMACH)) {
-				return "Deciding to get [npc2.name] hooked up to the milking machine, [npc.name] [npc.verb(move)] around to one side of the stall and [npc.verb(grab)] the as-yet unused pumps...";
+				return "Решив подключить [npc2.name] к доильному аппарату, [npc.name] [npc.verb(move)] к одной стороне стойла и [npc.verb(grab)] еще не использованные насосы...";
 				
 			} else {
-				return "Deciding to get [npc2.name] hooked up to the milking machine, [npc.name] [npc.verb(move)] around to one side of the stall and [npc.verb(grab)] the as-yet unused pump...";
+				return "Решив подключить [npc2.name] к доильному аппарату, [npc.name] [npc.verb(move)] к одной стороне стойла и [npc.verb(grab)] еще не использованный насос...";
 			}
 		}
 
@@ -173,20 +172,17 @@ public class MilkingStall {
 		
 		@Override
 		public String getActionTitle() {
-			return "Move behind";
+			return "Обойти сзади";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Move around behind [npc2.name] and get ready to fuck [npc2.herHim].";
+			return "Обойти [npc2.name] сзади и приготовиться трахнуть [npc2.herHim].";
 		}
 
 		@Override
 		public String getDescription() {
-			return "Deciding that [npc.she] [npc.verb(want)] to fuck [npc2.name] while [npc2.sheIs] locked in the stocks,"
-						+ " [npc.name] #IF(npc.isPlayer())[npc.step]#ELSE[npc.steps]#ENDIF up behind [npc2.herHim] and [npc.verb(start)] grinding [npc.her] groin up against [npc2.her] [npc2.ass+]."
-					+ " Taking hold of [npc2.her] [npc2.hips+], [npc.she] [npc.moanVerb], "
-					+ "[npc.speech(Be a good [npc2.girl] and hold still while I fuck you!)]";
+			return "Решив, что [npc.she] [npc.verb(want)] трахнуть [npc2.name], пока [npc2.sheIs] зафиксирован в станке, [npc.name] #IF(npc.isPlayer())[npc.step]#ELSE[npc.steps]#ENDIF обходит [npc2.herHim] сзади и [npc.verb(start)] прижимая свой [npc.her] пах к [npc2.her] [npc2.ass+]. Схватив [npc2.her] [npc2.hips+], [npc.she] [npc.moanVerb], [npc.speech(Будь хорошей [npc2.girl] и не дергайся, пока я тебя трахаю!)]";
 		}
 
 		@Override
@@ -217,20 +213,17 @@ public class MilkingStall {
 		
 		@Override
 		public String getActionTitle() {
-			return "All fours";
+			return "На четвереньках";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Drop down on all fours beneath [npc2.name] and push your [npc.ass+] up against [npc2.her] groin, ready to be fucked by [npc2.herHim].";
+			return "Опуститься на четвереньки под [npc2.name] и прижать свой [npc.ass+] к паху [npc2.her], готовый к тому, чтобы [npc2.herHim] трахнул тебя.";
 		}
 
 		@Override
 		public String getDescription() {
-			return "Wanting to get fucked by [npc2.name], [npc.name] [npc.verb(drop)] down onto all fours and [npc.verb(crawl)] forwards beneath [npc2.her] stocks."
-					+ " Shuffling around to get into a comfortable position, [npc.she] [npc.verb(lift)] [npc.her] [npc.hips+] and [npc.verb(push)] [npc.her] [npc.ass+] back against [npc2.her] groin."
-					+ " With an excited [npc.moan], [npc.name] [npc.verb(call)] out,"
-					+ " [npc.speech(Lucky you! I'm going to let you fuck me!)]";
+			return "Желая, чтобы [npc2.name] оттрахал(а) её, [npc.name] [npc.verb(drop)] на четвереньки и [npc.verb(crawl)] вперед под [npc2.her]. Переминаясь с ноги на ногу, чтобы устроиться поудобнее, [npc.she] [npc.verb(lift)] [npc.her] [npc.hips+] и [npc.verb(push)] [npc.her] [npc.ass+] задом к [npc2.her] паху. С возбужденным [npc.moan], [npc.name] [npc.verb(call)], [npc.speech(Повезло тебе! Я позволю тебе оттрахать меня!)]";
 		}
 
 		@Override
@@ -259,19 +252,17 @@ public class MilkingStall {
 		
 		@Override
 		public String getActionTitle() {
-			return "Perform oral";
+			return "Сделать минет";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Kneel behind [npc2.name] and perform oral on [npc2.herHim].";
+			return "Встать на колени позади [npc2.name] и отсосать [npc2.herHim].";
 		}
 
 		@Override
 		public String getDescription() {
-			return "Deciding that [npc.she] [npc.verb(want)] to perform oral on [npc2.name], [npc.name] [npc.verb(kneel)]down behind [npc2.herHim]."
-					+ " Bringing [npc.her] mouth up to [npc2.her] groin, [npc.she] [npc.moanVerb],"
-					+ " [npc.speech(You're going to love this!)]";
+			return "Решив, что [npc.she] [npc.verb(want)] отсосать [npc2.name], [npc.name] [npc.verb(kneel)] позади [npc2.herHim]. Поднося рот [npc.her] к паху [npc2.her], [npc.she] [npc.moanVerb], [npc.speech(Тебе это понравится!)]";
 		}
 
 		@Override
@@ -301,19 +292,17 @@ public class MilkingStall {
 		
 		@Override
 		public String getActionTitle() {
-			return "Move to front";
+			return "Перейти вперед";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Decide to use [npc2.namePos] mouth.";
+			return "Решить использовать рот [npc2.namePos].";
 		}
 
 		@Override
 		public String getDescription() {
-			return "Deciding that [npc.she] [npc.verb(want)] to use [npc2.namePos] mouth, [npc.name] #IF(npc.isPlayer())[npc.step]#ELSE[npc.steps]#ENDIF back, before moving around in front of [npc2.her] [npc2.face]."
-					+ " Bringing [npc.her] groin up to [npc2.her] mouth, [npc.she] [npc.moanVerb],"
-					+ " [npc.speech(You're going to love this!)]";
+			return "Решив, что [npc.she] [npc.verb(want)] использовать рот [npc2.namePos], [npc.name] #IF(npc.isPlayer())[npc.step]#ELSE[npc.steps]#ENDIF задом, прежде чем переместиться перед [npc2.her] [npc2.face]. Поднося пах [npc.her] к рту [npc2.her], [npc.she] [npc.moanVerb], [npc.speech(Тебе это понравится!)]";
 		}
 
 		@Override

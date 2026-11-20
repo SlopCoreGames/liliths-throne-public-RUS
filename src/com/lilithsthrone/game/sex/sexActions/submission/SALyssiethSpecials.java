@@ -132,15 +132,14 @@ public class SALyssiethSpecials {
 		
 		@Override
 		public String getActionTitle() {
-			return "Get fucked";
+			return "Трахаться";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Allow Lyssieth to push you down onto your back over her desk, and let her fuck you.<br/>"
-								+ "[style.italicsFeminine(Lyssieth will feminise you and give you a demonic vagina!)]<br/>"
+			return "Позволить Lyssieth повалить вас на спину на её стол, чтобы она оттрахала вас.<br/>[style.italicsFeminine(Lyssieth феминизирует вас и подарит вам демоническую вагину!)]<br/>"
 								+ (Main.game.getPlayer().hasPenis()
-										?"[style.italicsTfSexual(Lyssieth will also temporarily remove your cock!)]"
+										?"[style.italicsTfSexual(Lyssieth также временно уберет ваш член!)]"
 										:"");
 		}
 
@@ -206,15 +205,14 @@ public class SALyssiethSpecials {
 		
 		@Override
 		public String getActionTitle() {
-			return "Ask for anal";
+			return "Попросить анал";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Allow Lyssieth to push you down onto your back over her desk, and request that she use your ass.<br/>"
-								+ "[style.italicsFeminine(Lyssieth will feminise you!)]<br/>"
+			return "Позволить Lyssieth повалить вас на спину на её стол и попросить её использовать ваш зад.<br/>[style.italicsFeminine(Lyssieth феминизирует вас!)]<br/>"
 								+ (Main.game.getPlayer().hasPenis()
-										?"[style.italicsFeminine(Lyssieth will sissify your cock!)]"
+										?"[style.italicsFeminine(Lyssieth превратит ваш член в сисси-член!)]"
 										:"");
 		}
 
@@ -296,17 +294,17 @@ public class SALyssiethSpecials {
 		
 		@Override
 		public String getActionTitle() {
-			return "Fuck her";
+			return "Трахать её";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "You never agreed to let Lyssieth fuck you. Push her down onto her desk and fuck her instead.<br/>"
+			return "Вы никогда не соглашались на то, чтобы Lyssieth трахала вас. Вместо этого повалите её на стол и оттрахайте сами.<br/>"
 								+ (!Main.game.getPlayer().isFeminine()
-										?"[style.italicsMasculine(Lyssieth will make you more masculine!)]"
-										:"[style.italicsDisabled(This will have no extra feminising effect.)]")
+										?"[style.italicsMasculine(Lyssieth сделает вас более мужественным!)]"
+										:"[style.italicsDisabled(Это не даст дополнительного эффекта феминизации.)]")
 								+ (!Main.game.getPlayer().hasPenis()
-										?"[style.italicsTfSexual(Lyssieth will give you a cock with which to fuck her!)]"
+										?"[style.italicsTfSexual(Lyssieth даст вам член, которым вы сможете её трахать!)]"
 										:"");
 		}
 
@@ -381,14 +379,13 @@ public class SALyssiethSpecials {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Scissoring (bottom)";
+			return "Ножницы (снизу)";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Allow Lyssieth to push you down onto your back on the office's sofa, and let her dominantly scissor you.<br/>"
-								+ "[style.italicsFeminine(Lyssieth will feminise you and give you a demonic vagina!)]<br/>"
+			return "Позволить Lyssieth повалить тебя на спину на офисном диване, чтобы она властно занялась с тобой ножницами.<br/>[style.italicsFeminine(Lyssieth феминизирует тебя и подарит тебе демоническую вагину!)]<br/>"
 								+ (Main.game.getPlayer().hasPenis()
-										?"[style.italicsTfSexual(Lyssieth will also temporarily remove your cock!)]"
+										?"[style.italicsTfSexual(Lyssieth также временно уберет ваш член!)]"
 										:"");
 		}
 		@Override
@@ -450,14 +447,13 @@ public class SALyssiethSpecials {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Scissoring (top)";
+			return "Ножницы (сверху)";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Push Lyssieth down onto the office's sofa and dominantly scissor her.<br/>"
-						+ " [style.italicsFeminine(Lyssieth will feminise you and give you a demonic vagina!)]<br/>"
+			return "Повалить Lyssieth на офисный диван и властно заняться с ней ножницами.<br/> [style.italicsFeminine(Lyssieth феминизирует тебя и подарит тебе демоническую вагину!)]<br/>"
 						+ (Main.game.getPlayer().hasPenis()
-								?"[style.italicsTfSexual(Lyssieth will also temporarily remove your cock!)]"
+								?"[style.italicsTfSexual(Lyssieth также временно уберет ваш член!)]"
 								:"");
 		}
 		@Override
@@ -526,15 +522,14 @@ public class SALyssiethSpecials {
 		
 		@Override
 		public String getActionTitle() {
-			return "Fuck her";
+			return "Трахать её";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Allow Lyssieth to get down on her hands and knees, and kneel down behind her to fuck her in the doggy-style position.<br/>"
-								+ "[style.italicsDisabled(This will have no extra feminising effect.)]<br/>"
+			return "Позволить Lyssieth встать на четвереньки, а затем опуститься позади неё, чтобы трахнуть её в позе догги-стайл.<br/>[style.italicsDisabled(Это не даст дополнительного эффекта феминизации.)]<br/>"
 								+ (!Main.game.getPlayer().hasPenis() || Main.game.getPlayer().getPenisType().getRace()!=Race.DEMON
-										?"[style.italicsTfSexual(Lyssieth will give you a demonic cock!)]"
+										?"[style.italicsTfSexual(Lyssieth подарит тебе демонический член!)]"
 										:"");
 		}
 
@@ -591,13 +586,12 @@ public class SALyssiethSpecials {
 		
 		@Override
 		public String getActionTitle() {
-			return "Ask for oral";
+			return "Попросить оральный секс";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Ask Lyssieth to service you with her mouth instead.<br/>"
-							+ "[style.italicsDisabled(This will have no extra feminising effect.)]";
+			return "Попросить Lyssieth вместо этого обслужить тебя ртом.<br/>[style.italicsDisabled(Это не даст дополнительного эффекта феминизации.)]";
 		}
 
 		@Override
@@ -654,22 +648,20 @@ public class SALyssiethSpecials {
 		@Override
 		public String getActionTitle() {
 			if(Main.game.getNpc(Lyssieth.class).getForeplayPreference(Main.game.getPlayer()).getTargetedSexArea()==SexAreaOrifice.ANUS) {
-				return "More anal";
+				return "Больше анального";
 			}
-			return "Ask for more";
+			return "Просить добавки";
 		}
 
 		@Override
 		public String getActionDescription() {
 			if(Main.game.getNpc(Lyssieth.class).getForeplayPreference(Main.game.getPlayer()).getTargetedSexArea()==SexAreaOrifice.ANUS) {
-				return "Ask Lyssieth to carry on fucking your ass instead.<br/>"
-							+ "[style.italicsFeminine(Lyssieth will fully feminise you!)]"
+				return "Попросить Lyssieth вместо этого продолжать трахать твою задницу.<br/>[style.italicsFeminine(Lyssieth полностью феминизирует тебя!)]"
 							+ (Main.game.getPlayer().hasPenis()
-									?"<br/>[style.italicsTfSexual(Lyssieth will also fully sissify your cock!)]"
+									?"<br/>[style.italicsTfSexual(Lyssieth также полностью превратит твой член в сисси-хуй!)]"
 									:"");
 			}
-			return "Ask Lyssieth to carry on fucking your pussy instead.<br/>"
-						+ "[style.italicsFeminine(Lyssieth will fully feminise you!)]";
+			return "Попросить Lyssieth вместо этого продолжить трахать твою киску.<br/>[style.italicsFeminine(Lyssieth полностью феминизирует тебя!)]";
 		}
 
 		@Override
@@ -711,7 +703,7 @@ public class SALyssiethSpecials {
 					pastie.addEffect(new ItemEffect(ItemEffectType.CLOTHING, TFModifier.TF_MOD_FETISH_BODY_PART, TFModifier.TF_MOD_FETISH_VAGINAL_RECEIVING, TFPotency.MAJOR_DRAIN, 0));
 					pastie.addEffect(new ItemEffect(ItemEffectType.CLOTHING, TFModifier.TF_MOD_FETISH_BEHAVIOUR, TFModifier.TF_MOD_FETISH_SUBMISSIVE, TFPotency.BOOST, 0));
 					pastie.addEffect(new ItemEffect(ItemEffectType.CLOTHING, TFModifier.TF_MOD_FETISH_BEHAVIOUR, TFModifier.TF_MOD_FETISH_DOMINANT, TFPotency.DRAIN, 0));
-					pastie.setName("Lyssieth's buttslut pastie");
+					pastie.setName("Накладка на сосок Lyssieth в стиле «попаslut»");
 					Main.game.getPlayer().equipClothingFromNowhere(pastie, true, Main.game.getNpc(Lyssieth.class));
 				}
 				if(Main.game.getPlayer().hasPenis()) {
@@ -727,7 +719,7 @@ public class SALyssiethSpecials {
 					cage.addEffect(new ItemEffect(ItemEffectType.CLOTHING, TFModifier.TF_PENIS, TFModifier.TF_MOD_SIZE_SECONDARY, TFPotency.MAJOR_DRAIN, 0));
 					cage.addEffect(new ItemEffect(ItemEffectType.CLOTHING, TFModifier.TF_MOD_FETISH_BEHAVIOUR, TFModifier.TF_MOD_FETISH_DENIAL_SELF, TFPotency.MAJOR_BOOST, 0));
 					
-					cage.setName("Lyssieth's sissy cage");
+					cage.setName("Сисси-клетка Lyssieth");
 					Main.game.getPlayer().equipClothingFromNowhere(cage, true, Main.game.getNpc(Lyssieth.class));
 				}
 			}
@@ -769,15 +761,14 @@ public class SALyssiethSpecials {
 		
 		@Override
 		public String getActionTitle() {
-			return "Get fucked";
+			return "Трахаться";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Allow Lyssieth to push you down onto your back over her desk, and let her give you a demonic pussy for her to fuck.<br/>"
-								+ "[style.italicsFeminine(Lyssieth will feminise you into a futa succubus!)]<br/>"
+			return "Позволить Lyssieth повалить тебя на спину на свой стол и дать ей демоническую киску, чтобы она могла в неё трахаться.<br/>[style.italicsFeminine(Lyssieth превратит тебя в фута-суккуба!)]<br/>"
 								+ (!Main.game.getPlayer().hasVagina()
-										?"[style.italicsTfSexual(Lyssieth will give you a demonic vagina!)]"
+										?"[style.italicsTfSexual(Lyssieth даст тебе демоническую вагину!)]"
 										:"");
 		}
 
@@ -840,13 +831,12 @@ public class SALyssiethSpecials {
 		
 		@Override
 		public String getActionTitle() {
-			return "Ask for anal";
+			return "Попросить анал";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Allow Lyssieth to push you down onto your back over her desk, and request that she use your ass.<br/>"
-						+ "[style.italicsFeminine(Lyssieth will feminise you!)]";
+			return "Позволить Lyssieth повалить тебя на спину на свой стол и попросить её использовать твою задницу.<br/>[style.italicsFeminine(Lyssieth полностью феминизирует тебя!)]";
 		}
 
 		@Override
@@ -924,15 +914,15 @@ public class SALyssiethSpecials {
 		
 		@Override
 		public String getActionTitle() {
-			return "Breed her";
+			return "Оплодотворить её";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "There's no way you're going to let Lyssieth fuck you. Wrestle her into the 'mating press' position and give Lilaya a new sister or two.<br/>"
+			return "Ты ни за что не позволишь Lyssieth трахать тебя. Скрути её в позу «mating press» и подари Lilaya одну или две новые сестрички.<br/>"
 								+ (!Main.game.getPlayer().isFeminine()
-										?"[style.italicsMasculine(Lyssieth will turn you into her ideal incubus!)]"
-										:"[style.italicsDisabled(This will have no extra feminising effect.)]");
+										?"[style.italicsMasculine(Lyssieth превратит тебя в своего идеального инкуба!)]"
+										:"[style.italicsDisabled(Это не даст дополнительного эффекта феминизации.)]");
 		}
 
 		@Override
@@ -990,12 +980,11 @@ public class SALyssiethSpecials {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Sixty-nine (bottom)";
+			return "Шестьдесят девять (снизу)";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Ask Lyssieth to take the dominant top position and sixty-nine with you.<br/>"
-							+ "[style.italicsDisabled(This will have no extra feminising effect.)]";
+			return "Попросить Lyssieth занять доминирующую позицию сверху и заняться с тобой шестьдесят девятым.<br/>[style.italicsDisabled(Это не даст дополнительного эффекта феминизации.)]";
 		}
 		@Override
 		public String getDescription() {
@@ -1041,12 +1030,11 @@ public class SALyssiethSpecials {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Sixty-nine (top)";
+			return "Шестьдесят девять (сверху)";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Ask Lyssieth to take the submissive bottom position and sixty-nine with her.<br/>"
-							+ "[style.italicsDisabled(This will have no extra feminising effect.)]";
+			return "Попросить Lyssieth занять подчиненную позицию снизу и заняться с ней шестьдесят девятым.<br/>[style.italicsDisabled(Это не даст дополнительного эффекта феминизации.)]";
 		}
 		@Override
 		public String getDescription() {

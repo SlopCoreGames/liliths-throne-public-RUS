@@ -38,61 +38,61 @@ public class PresetColour {
 		}
 	};
 	
-	public static Colour BASE_WHITE = new Colour(false, BaseColour.WHITE, "white", Util.newArrayListOfValues("white")) {};
+	public static Colour BASE_WHITE = new Colour(false, BaseColour.WHITE, "белый", Util.newArrayListOfValues("white")) {};
 
-	public static Colour BASE_GREY_LIGHT = new Colour(false, BaseColour.GREY_LIGHT, "light grey", Util.newArrayListOfValues("lightGrey")) {};
-	public static Colour BASE_GREY = new Colour(false, BaseColour.GREY, "grey", Util.newArrayListOfValues("grey")) {};
-	public static Colour BASE_GREY_DARK = new Colour(false, BaseColour.GREY_DARK, "dark grey", Util.newArrayListOfValues("darkGrey", "greyDark")) {};
+	public static Colour BASE_GREY_LIGHT = new Colour(false, BaseColour.GREY_LIGHT, "светло-серый", Util.newArrayListOfValues("lightGrey")) {};
+	public static Colour BASE_GREY = new Colour(false, BaseColour.GREY, "серый", Util.newArrayListOfValues("grey")) {};
+	public static Colour BASE_GREY_DARK = new Colour(false, BaseColour.GREY_DARK, "тёмно-серый", Util.newArrayListOfValues("darkGrey", "greyDark")) {};
 	
-	public static Colour BASE_ROSE = new Colour(false, BaseColour.ROSE, "rose", Util.newArrayListOfValues("rose")) {};
-	public static Colour BASE_LILAC = new Colour(false, BaseColour.LILAC, "lilac", Util.newArrayListOfValues("lilac")) {};
-	public static Colour BASE_LILAC_LIGHT = new Colour(false, BaseColour.LILAC_LIGHT, "light lilac", Util.newArrayListOfValues("lightLilac", "lilacLight")) {};
-	public static Colour BASE_INDIGO = new Colour(false, BaseColour.INDIGO, "indigo", Util.newArrayListOfValues("indigo")) {};
-	public static Colour BASE_PURPLE_DARK = new Colour(false, BaseColour.PURPLE_DARK, "violet", Util.newArrayListOfValues("darkPurple", "purpleDark", "violet")) {};
-	public static Colour BASE_PURPLE = new Colour(false, BaseColour.PURPLE, "purple", Util.newArrayListOfValues("purple")) {};
-	public static Colour BASE_PURPLE_LIGHT = new Colour(false, BaseColour.PURPLE_LIGHT, "light purple", Util.newArrayListOfValues("lightPurple", "purpleLight")) {};
+	public static Colour BASE_ROSE = new Colour(false, BaseColour.ROSE, "роза", Util.newArrayListOfValues("rose")) {};
+	public static Colour BASE_LILAC = new Colour(false, BaseColour.LILAC, "сиреневый", Util.newArrayListOfValues("lilac")) {};
+	public static Colour BASE_LILAC_LIGHT = new Colour(false, BaseColour.LILAC_LIGHT, "светло-сиреневый", Util.newArrayListOfValues("lightLilac", "lilacLight")) {};
+	public static Colour BASE_INDIGO = new Colour(false, BaseColour.INDIGO, "индиго", Util.newArrayListOfValues("indigo")) {};
+	public static Colour BASE_PURPLE_DARK = new Colour(false, BaseColour.PURPLE_DARK, "фиолетовый", Util.newArrayListOfValues("darkPurple", "purpleDark", "violet")) {};
+	public static Colour BASE_PURPLE = new Colour(false, BaseColour.PURPLE, "пурпурный", Util.newArrayListOfValues("purple")) {};
+	public static Colour BASE_PURPLE_LIGHT = new Colour(false, BaseColour.PURPLE_LIGHT, "светло-пурпурный", Util.newArrayListOfValues("lightPurple", "purpleLight")) {};
 	
-	public static Colour BASE_PINK_DEEP = new Colour(false, BaseColour.PINK_DEEP, "deep pink", Util.newArrayListOfValues("deepPink", "darkPink", "pinkDeep", "pinkDark")) {};
-	public static Colour BASE_PINK_SALMON = new Colour(false, BaseColour.PINK_SALMON, "salmon-pink", Util.newArrayListOfValues("pinkSalmon", "salmonPink")) {};
-	public static Colour BASE_PINK = new Colour(false, BaseColour.PINK, "pink", Util.newArrayListOfValues("pink")) {};
-	public static Colour BASE_PINK_LIGHT = new Colour(false, BaseColour.PINK_LIGHT, "light pink", Util.newArrayListOfValues("lightPink", "pinkLight")) {};
+	public static Colour BASE_PINK_DEEP = new Colour(false, BaseColour.PINK_DEEP, "ярко-розовый", Util.newArrayListOfValues("deepPink", "darkPink", "pinkDeep", "pinkDark")) {};
+	public static Colour BASE_PINK_SALMON = new Colour(false, BaseColour.PINK_SALMON, "лососево-розовый", Util.newArrayListOfValues("pinkSalmon", "salmonPink")) {};
+	public static Colour BASE_PINK = new Colour(false, BaseColour.PINK, "розовый", Util.newArrayListOfValues("pink")) {};
+	public static Colour BASE_PINK_LIGHT = new Colour(false, BaseColour.PINK_LIGHT, "светло-розовый", Util.newArrayListOfValues("lightPink", "pinkLight")) {};
 		
-	public static Colour BASE_MAGENTA = new Colour(false, BaseColour.MAGENTA, "magenta", Util.newArrayListOfValues("magenta")) {};
-	public static Colour BASE_CRIMSON = new Colour(false, BaseColour.CRIMSON, "crimson", Util.newArrayListOfValues("crimson")) {};
-	public static Colour BASE_RED_DARK = new Colour(false, BaseColour.RED_DARK, "dark red", Util.newArrayListOfValues("darkRed", "redDark")) {};
-	public static Colour BASE_RED = new Colour(false, BaseColour.RED, "red", Util.newArrayListOfValues("red")) {};
-	public static Colour BASE_RED_LIGHT = new Colour(false, BaseColour.RED_LIGHT, "light red", Util.newArrayListOfValues("lightRed", "redLight")) {};
+	public static Colour BASE_MAGENTA = new Colour(false, BaseColour.MAGENTA, "пурпурный", Util.newArrayListOfValues("magenta")) {};
+	public static Colour BASE_CRIMSON = new Colour(false, BaseColour.CRIMSON, "малиновый", Util.newArrayListOfValues("crimson")) {};
+	public static Colour BASE_RED_DARK = new Colour(false, BaseColour.RED_DARK, "темно-красный", Util.newArrayListOfValues("darkRed", "redDark")) {};
+	public static Colour BASE_RED = new Colour(false, BaseColour.RED, "красный", Util.newArrayListOfValues("red")) {};
+	public static Colour BASE_RED_LIGHT = new Colour(false, BaseColour.RED_LIGHT, "светло-красный", Util.newArrayListOfValues("lightRed", "redLight")) {};
 	
-	public static Colour BASE_TAN = new Colour(false, BaseColour.TAN, "tan", Util.newArrayListOfValues("tan")) {};
-	public static Colour BASE_BROWN = new Colour(false, BaseColour.BROWN, "brown", Util.newArrayListOfValues("brown")) {};
-	public static Colour BASE_BROWN_DARK = new Colour(false, BaseColour.BROWN_DARK, "dark brown", Util.newArrayListOfValues("darkBrown", "brownDark")) {};
-	public static Colour BASE_BROWN_LIGHT= new Colour(false, BaseColour.BROWN_LIGHT, "light brown", Util.newArrayListOfValues("lightBrown", "brownLight")) {};
+	public static Colour BASE_TAN = new Colour(false, BaseColour.TAN, "бежевый", Util.newArrayListOfValues("tan")) {};
+	public static Colour BASE_BROWN = new Colour(false, BaseColour.BROWN, "коричневый", Util.newArrayListOfValues("brown")) {};
+	public static Colour BASE_BROWN_DARK = new Colour(false, BaseColour.BROWN_DARK, "тёмно-коричневый", Util.newArrayListOfValues("darkBrown", "brownDark")) {};
+	public static Colour BASE_BROWN_LIGHT= new Colour(false, BaseColour.BROWN_LIGHT, "светло-коричневый", Util.newArrayListOfValues("lightBrown", "brownLight")) {};
 
-	public static Colour BASE_COPPER = new Colour(false, BaseColour.COPPER, "copper", Util.newArrayListOfValues("baseCopper")) {};
-	public static Colour BASE_ORANGE = new Colour(false, BaseColour.ORANGE, "orange", Util.newArrayListOfValues("orange")) {};
-	public static Colour BASE_ORANGE_LIGHT = new Colour(false, BaseColour.ORANGE_LIGHT, "light orange", Util.newArrayListOfValues("orangeLight", "lightOrange")) {};
-	public static Colour BASE_GINGER = new Colour(false, BaseColour.GINGER, "ginger", Util.newArrayListOfValues("ginger")) {};
+	public static Colour BASE_COPPER = new Colour(false, BaseColour.COPPER, "медный", Util.newArrayListOfValues("baseCopper")) {};
+	public static Colour BASE_ORANGE = new Colour(false, BaseColour.ORANGE, "оранжевый", Util.newArrayListOfValues("orange")) {};
+	public static Colour BASE_ORANGE_LIGHT = new Colour(false, BaseColour.ORANGE_LIGHT, "светло-оранжевый", Util.newArrayListOfValues("orangeLight", "lightOrange")) {};
+	public static Colour BASE_GINGER = new Colour(false, BaseColour.GINGER, "имбирный", Util.newArrayListOfValues("ginger")) {};
 	
-	public static Colour BASE_GOLD = new Colour(false, BaseColour.GOLD, "gold", Util.newArrayListOfValues("gold")) {};
-	public static Colour BASE_YELLOW_PALE = new Colour(false, BaseColour.YELLOW_PALE, "pale yellow", Util.newArrayListOfValues("paleYellow", "yellowPale")) {};
-	public static Colour BASE_YELLOW = new Colour(false, BaseColour.YELLOW, "yellow", Util.newArrayListOfValues("yellow")) {};
-	public static Colour BASE_YELLOW_LIGHT = new Colour(false, BaseColour.YELLOW_LIGHT, "light yellow", Util.newArrayListOfValues("lightYellow", "yellowLight")) {};
+	public static Colour BASE_GOLD = new Colour(false, BaseColour.GOLD, "золотой", Util.newArrayListOfValues("gold")) {};
+	public static Colour BASE_YELLOW_PALE = new Colour(false, BaseColour.YELLOW_PALE, "бледно-желтый", Util.newArrayListOfValues("paleYellow", "yellowPale")) {};
+	public static Colour BASE_YELLOW = new Colour(false, BaseColour.YELLOW, "желтый", Util.newArrayListOfValues("yellow")) {};
+	public static Colour BASE_YELLOW_LIGHT = new Colour(false, BaseColour.YELLOW_LIGHT, "светло-желтый", Util.newArrayListOfValues("lightYellow", "yellowLight")) {};
 	
-	public static Colour BASE_GREEN_LIME = new Colour(false, BaseColour.GREEN_LIME, "lime green", Util.newArrayListOfValues("limeGreen", "greenLime")) {};
-	public static Colour BASE_GREEN_LIGHT = new Colour(false, BaseColour.GREEN_LIGHT, "light green", Util.newArrayListOfValues("lightGreen", "greenLight")) {};
-	public static Colour BASE_GREEN = new Colour(false, BaseColour.GREEN, "green", Util.newArrayListOfValues("green")) {};
-	public static Colour BASE_GREEN_DARK = new Colour(false, BaseColour.GREEN_DARK, "dark green", Util.newArrayListOfValues("darkGreen", "greenDark")) {};
+	public static Colour BASE_GREEN_LIME = new Colour(false, BaseColour.GREEN_LIME, "лаймовый", Util.newArrayListOfValues("limeGreen", "greenLime")) {};
+	public static Colour BASE_GREEN_LIGHT = new Colour(false, BaseColour.GREEN_LIGHT, "светло-зеленый", Util.newArrayListOfValues("lightGreen", "greenLight")) {};
+	public static Colour BASE_GREEN = new Colour(false, BaseColour.GREEN, "зеленый", Util.newArrayListOfValues("green")) {};
+	public static Colour BASE_GREEN_DARK = new Colour(false, BaseColour.GREEN_DARK, "темно-зеленый", Util.newArrayListOfValues("darkGreen", "greenDark")) {};
 	
-	public static Colour BASE_AQUA = new Colour(false, BaseColour.AQUA, "aqua", Util.newArrayListOfValues("aqua")) {};
-	public static Colour BASE_TEAL = new Colour(false, BaseColour.TEAL, "teal", Util.newArrayListOfValues("teal")) {};
-	public static Colour BASE_PERIWINKLE = new Colour(false, BaseColour.PERIWINKLE, "periwinkle", Util.newArrayListOfValues("periwinkle")) {};
-	public static Colour BASE_BLUE_DARK = new Colour(false, BaseColour.BLUE_DARK, "dark blue", Util.newArrayListOfValues("darkBlue", "blueDark")) {};
-	public static Colour BASE_BLUE_LIGHT = new Colour(false, BaseColour.BLUE_LIGHT, "light blue", Util.newArrayListOfValues("lightBlue", "blueLight")) {};
-	public static Colour BASE_BLUE = new Colour(false, BaseColour.BLUE, "blue", Util.newArrayListOfValues("blue")) {};
-	public static Colour BASE_BLUE_STEEL = new Colour(false, BaseColour.BLUE_STEEL, "steely blue", Util.newArrayListOfValues("steelyBlue", "steelBlue", "blueSteel")) {};
+	public static Colour BASE_AQUA = new Colour(false, BaseColour.AQUA, "аква", Util.newArrayListOfValues("aqua")) {};
+	public static Colour BASE_TEAL = new Colour(false, BaseColour.TEAL, "бирюзовый", Util.newArrayListOfValues("teal")) {};
+	public static Colour BASE_PERIWINKLE = new Colour(false, BaseColour.PERIWINKLE, "барвинковый", Util.newArrayListOfValues("periwinkle")) {};
+	public static Colour BASE_BLUE_DARK = new Colour(false, BaseColour.BLUE_DARK, "тёмно-синий", Util.newArrayListOfValues("darkBlue", "blueDark")) {};
+	public static Colour BASE_BLUE_LIGHT = new Colour(false, BaseColour.BLUE_LIGHT, "светло-синий", Util.newArrayListOfValues("lightBlue", "blueLight")) {};
+	public static Colour BASE_BLUE = new Colour(false, BaseColour.BLUE, "синий", Util.newArrayListOfValues("blue")) {};
+	public static Colour BASE_BLUE_STEEL = new Colour(false, BaseColour.BLUE_STEEL, "стальной синий", Util.newArrayListOfValues("steelyBlue", "steelBlue", "blueSteel")) {};
 	
-	public static Colour BASE_BLACK = new Colour(false, BaseColour.BLACK, "black", Util.newArrayListOfValues("black")) {};
-	public static Colour BASE_PITCH_BLACK = new Colour(false, BaseColour.PITCH_BLACK, "black", Util.newArrayListOfValues("black")) {};
+	public static Colour BASE_BLACK = new Colour(false, BaseColour.BLACK, "чёрный", Util.newArrayListOfValues("black")) {};
+	public static Colour BASE_PITCH_BLACK = new Colour(false, BaseColour.PITCH_BLACK, "чёрный", Util.newArrayListOfValues("black")) {};
 	
 
 	// Game colours:
@@ -115,116 +115,116 @@ public class PresetColour {
 	public static Colour MAP_BACKGROUND_GREEN_DARK = new Colour(false,  Util.newColour(0x5E685E), Util.newColour(0x5E685E), "dark green") {};
 	public static Colour MAP_BACKGROUND_SHINRIN_HIGHLANDS = new Colour(false, Util.newColour(0x6ccc74), Util.newColour(0x6ccc74), "green") {};
 
-	public static Colour GENERIC_NPC_REMOVAL = new Colour(false, BaseColour.RED_LIGHT, "red") {};
-	public static Colour GENERIC_SEX = new Colour(false, BaseColour.PINK_LIGHT, "light pink", Util.newArrayListOfValues("sex", "sexSub", "subSex", "sub", "submissive")) {};
-	public static Colour GENERIC_SEX_AS_DOM = new Colour(false, Util.newColour(0xFF75BA), Util.newColour(0xD82C8B), "pink", Util.newArrayListOfValues("sexDom", "domSex", "dom", "dominant")) {};
+	public static Colour GENERIC_NPC_REMOVAL = new Colour(false, BaseColour.RED_LIGHT, "красный") {};
+	public static Colour GENERIC_SEX = new Colour(false, BaseColour.PINK_LIGHT, "светло-розовый", Util.newArrayListOfValues("sex", "sexSub", "subSex", "sub", "submissive")) {};
+	public static Colour GENERIC_SEX_AS_DOM = new Colour(false, Util.newColour(0xFF75BA), Util.newColour(0xD82C8B), "розовый", Util.newArrayListOfValues("sexDom", "domSex", "dom", "dominant")) {};
 //	public static AbstractColour DOMINANT = new AbstractColour(false, BaseColour.PINK_DEEP, "deep pink", Util.newArrayListOfValues("dom", "dominant")) {};
 //	public static AbstractColour SUBMISSIVE = new AbstractColour(false, BaseColour.PINK_LIGHT, "light pink", Util.newArrayListOfValues("sub", "submissive")) {};
-	public static Colour GENERIC_COMBAT = new Colour(false, BaseColour.CRIMSON, "crimson", Util.newArrayListOfValues("combat")) {};
-	public static Colour GENERIC_ARCANE = new Colour(false, BaseColour.PINK, "pink", Util.newArrayListOfValues("arcane")) {};
-	public static Colour GENERIC_TERRIBLE = new Colour(false, BaseColour.CRIMSON, "crimson", Util.newArrayListOfValues("terrible")) {};
-	public static Colour GENERIC_MINOR_BAD = new Colour(false, BaseColour.RED_LIGHT, "red", Util.newArrayListOfValues("minorBad", "badMinor")) {};
-	public static Colour GENERIC_MINOR_GOOD = new Colour(false, BaseColour.GREEN_LIGHT, "light green", Util.newArrayListOfValues("minorGood", "goodMinor")) {};
-	public static Colour GENERIC_BAD = new Colour(false, BaseColour.RED, "red", Util.newArrayListOfValues("bad")) {};
-	public static Colour GENERIC_NEUTRAL = new Colour(false, BaseColour.BLUE, "blue", Util.newArrayListOfValues("neutral")) {};
-	public static Colour GENERIC_GOOD = new Colour(false, BaseColour.GREEN, "green", Util.newArrayListOfValues("good")) {};
-	public static Colour GENERIC_EXCELLENT = new Colour(false, BaseColour.GOLD, "gold", Util.newArrayListOfValues("excellent")) {};
-	public static Colour GENERIC_ATTRIBUTE = new Colour(false, BaseColour.MAGENTA, "magenta") {};
-	public static Colour GENERIC_EXPERIENCE = new Colour(false, BaseColour.BLUE_LIGHT, "light blue", Util.newArrayListOfValues("experience", "xp")) {};
-	public static Colour GENERIC_ACTION_POINTS = new Colour(false, BaseColour.AQUA, "aqua", Util.newArrayListOfValues("actionPoint", "actionPoints", "ap")) {};
-	public static Colour GENERIC_ENCHANTMENT = new Colour(false, BaseColour.PINK, "pink", Util.newArrayListOfValues("enchantment", "enchanting")) {};
-	public static Colour COOLDOWN = new Colour(false, BaseColour.CRIMSON, "crimson", Util.newArrayListOfValues("cooldown")) {};
-	public static Colour CRIT = new Colour(false, BaseColour.GOLD, "gold", Util.newArrayListOfValues("crit")) {};
+	public static Colour GENERIC_COMBAT = new Colour(false, BaseColour.CRIMSON, "малиновый", Util.newArrayListOfValues("combat")) {};
+	public static Colour GENERIC_ARCANE = new Colour(false, BaseColour.PINK, "розовый", Util.newArrayListOfValues("arcane")) {};
+	public static Colour GENERIC_TERRIBLE = new Colour(false, BaseColour.CRIMSON, "малиновый", Util.newArrayListOfValues("terrible")) {};
+	public static Colour GENERIC_MINOR_BAD = new Colour(false, BaseColour.RED_LIGHT, "красный", Util.newArrayListOfValues("minorBad", "badMinor")) {};
+	public static Colour GENERIC_MINOR_GOOD = new Colour(false, BaseColour.GREEN_LIGHT, "светло-зеленый", Util.newArrayListOfValues("minorGood", "goodMinor")) {};
+	public static Colour GENERIC_BAD = new Colour(false, BaseColour.RED, "красный", Util.newArrayListOfValues("bad")) {};
+	public static Colour GENERIC_NEUTRAL = new Colour(false, BaseColour.BLUE, "синий", Util.newArrayListOfValues("neutral")) {};
+	public static Colour GENERIC_GOOD = new Colour(false, BaseColour.GREEN, "зеленый", Util.newArrayListOfValues("good")) {};
+	public static Colour GENERIC_EXCELLENT = new Colour(false, BaseColour.GOLD, "золотой", Util.newArrayListOfValues("excellent")) {};
+	public static Colour GENERIC_ATTRIBUTE = new Colour(false, BaseColour.MAGENTA, "пурпурный") {};
+	public static Colour GENERIC_EXPERIENCE = new Colour(false, BaseColour.BLUE_LIGHT, "светло-синий", Util.newArrayListOfValues("experience", "xp")) {};
+	public static Colour GENERIC_ACTION_POINTS = new Colour(false, BaseColour.AQUA, "аква", Util.newArrayListOfValues("actionPoint", "actionPoints", "ap")) {};
+	public static Colour GENERIC_ENCHANTMENT = new Colour(false, BaseColour.PINK, "розовый", Util.newArrayListOfValues("enchantment", "enchanting")) {};
+	public static Colour COOLDOWN = new Colour(false, BaseColour.CRIMSON, "малиновый", Util.newArrayListOfValues("cooldown")) {};
+	public static Colour CRIT = new Colour(false, BaseColour.GOLD, "золотой", Util.newArrayListOfValues("crit")) {};
 
-	public static Colour SCAR = new Colour(false, BaseColour.TAN, "tan", Util.newArrayListOfValues("scar")) {};
-	public static Colour TATTOO = new Colour(false, BaseColour.GREY, "grey", Util.newArrayListOfValues("tattoo")) {};
+	public static Colour SCAR = new Colour(false, BaseColour.TAN, "бежевый", Util.newArrayListOfValues("scar")) {};
+	public static Colour TATTOO = new Colour(false, BaseColour.GREY, "серый", Util.newArrayListOfValues("tattoo")) {};
 	
-	public static Colour PERK = new Colour(false, BaseColour.AQUA, "aqua", Util.newArrayListOfValues("perk")) {};
-	public static Colour TRAIT = new Colour(false, BaseColour.GREEN_LIGHT, "green", Util.newArrayListOfValues("trait")) {};
-	public static Colour FETISH = new Colour(false, BaseColour.PINK_LIGHT, "light pink", Util.newArrayListOfValues("fetish")) {};
-	public static Colour STATUS_EFFECT = new Colour(false, BaseColour.YELLOW, "yellow", Util.newArrayListOfValues("statusEffect", "statusEffects")) {};
-	public static Colour SPECIAL_ATTACK = new Colour(false, BaseColour.CRIMSON, "crimson") {};
-	public static Colour STATUS_EFFECT_TIME_OVERFLOW = new Colour(false, BaseColour.BLUE, "aqua") {};
-	public static Colour STATUS_EFFECT_TIME_HIGH = new Colour(false, BaseColour.GREEN_LIGHT, "green") {};
-	public static Colour STATUS_EFFECT_TIME_MEDIUM = new Colour(false, BaseColour.ORANGE, "orange") {};
-	public static Colour STATUS_EFFECT_TIME_LOW = new Colour(false, BaseColour.RED, "red") {};
+	public static Colour PERK = new Colour(false, BaseColour.AQUA, "аква", Util.newArrayListOfValues("perk")) {};
+	public static Colour TRAIT = new Colour(false, BaseColour.GREEN_LIGHT, "зеленый", Util.newArrayListOfValues("trait")) {};
+	public static Colour FETISH = new Colour(false, BaseColour.PINK_LIGHT, "светло-розовый", Util.newArrayListOfValues("fetish")) {};
+	public static Colour STATUS_EFFECT = new Colour(false, BaseColour.YELLOW, "желтый", Util.newArrayListOfValues("statusEffect", "statusEffects")) {};
+	public static Colour SPECIAL_ATTACK = new Colour(false, BaseColour.CRIMSON, "малиновый") {};
+	public static Colour STATUS_EFFECT_TIME_OVERFLOW = new Colour(false, BaseColour.BLUE, "аква") {};
+	public static Colour STATUS_EFFECT_TIME_HIGH = new Colour(false, BaseColour.GREEN_LIGHT, "зеленый") {};
+	public static Colour STATUS_EFFECT_TIME_MEDIUM = new Colour(false, BaseColour.ORANGE, "оранжевый") {};
+	public static Colour STATUS_EFFECT_TIME_LOW = new Colour(false, BaseColour.RED, "красный") {};
 
-	public static Colour RACE_BESTIAL = new Colour(false, BaseColour.TAN, "tan", Util.newArrayListOfValues("bestial", "animal", "feral")) {};
-	public static Colour RACE_UNKNOWN = new Colour(false, BaseColour.GREY, "grey", Util.newArrayListOfValues("unknown")) {};
-	public static Colour RACE_HUMAN = new Colour(false, BaseColour.BLUE_STEEL, "pale blue", Util.newArrayListOfValues("human")) {};
-	public static Colour RACE_HALF_DEMON = new Colour(false, BaseColour.INDIGO, "indigo", Util.newArrayListOfValues("halfDemon")) {};
-	public static Colour RACE_DEMON = new Colour(false, BaseColour.PURPLE_LIGHT, "light purple", Util.newArrayListOfValues("demon")) {};
-	public static Colour RACE_LILIN = new Colour(false, BaseColour.PURPLE, "purple", Util.newArrayListOfValues("lilin")) {};
-	public static Colour RACE_IMP = new Colour(false, BaseColour.PURPLE, "purple", Util.newArrayListOfValues("imp")) {};
-	public static Colour RACE_ANGEL = new Colour(false, BaseColour.BLUE_LIGHT, "light blue", Util.newArrayListOfValues("angel")) {};
-	public static Colour RACE_DOG_MORPH = new Colour(false, BaseColour.BROWN, "brown", Util.newArrayListOfValues("dogMorph", "dog")) {};
-	public static Colour RACE_CAT_MORPH = new Colour(false, BaseColour.PINK_SALMON, "salmon-pink", Util.newArrayListOfValues("catMorph", "cat")) {};
-	public static Colour RACE_CAT_MORPH_CARACAL = new Colour(false, BaseColour.PINK_SALMON, "salmon-pink", Util.newArrayListOfValues("ocelotMorph", "ocelot")) {};
-	public static Colour RACE_CAT_MORPH_LION = new Colour(false, BaseColour.YELLOW, "yellow", Util.newArrayListOfValues("lionMorph", "lion")) {};
-	public static Colour RACE_CAT_MORPH_LEOPARD = new Colour(false, BaseColour.GINGER, "ginger", Util.newArrayListOfValues("leopardMorph", "leopard")) {};
-	public static Colour RACE_CAT_MORPH_TIGER = new Colour(false, BaseColour.GINGER, "ginger", Util.newArrayListOfValues("tigerMorph", "tiger")) {};
-	public static Colour RACE_CAT_MORPH_CHEETAH = new Colour(false, BaseColour.YELLOW, "yellow", Util.newArrayListOfValues("cheetahMorph", "cheetah")) {};
-	public static Colour RACE_CAT_MORPH_LYNX = new Colour(false, BaseColour.SILVER, "silver", Util.newArrayListOfValues("lynxMorph", "lynx")) {};
-	public static Colour RACE_CAT_MORPH_LEOPARD_SNOW = new Colour(false, BaseColour.SILVER, "silver", Util.newArrayListOfValues("leopardSnowMorph", "snowLeopard", "snep", "leopardSnow", "snowLeopardMorph")) {};
-	public static Colour RACE_COW_MORPH = new Colour(false, BaseColour.TAN, "tan", Util.newArrayListOfValues("cowMorph", "cow")) {};
-	public static Colour RACE_HORSE_MORPH = new Colour(false, BaseColour.ORANGE, "orange", Util.newArrayListOfValues("horseMorph", "horse")) {};
-	public static Colour RACE_PEGASUS = new Colour(false, BaseColour.BLUE_LIGHT, "light blue", Util.newArrayListOfValues("pegasusMorph", "pegasus")) {};
-	public static Colour RACE_UNICORN = new Colour(false, BaseColour.WHITE, "white", Util.newArrayListOfValues("unicornMorph", "unicorn")) {};
-	public static Colour RACE_ALICORN = new Colour(false, BaseColour.YELLOW_LIGHT, "light yellow", Util.newArrayListOfValues("alicornMorph", "alicorn")) {};
-	public static Colour RACE_CENTAUR = new Colour(false, BaseColour.BROWN_DARK, "dark brown", Util.newArrayListOfValues("centaur")) {};
-	public static Colour RACE_PEGATAUR = new Colour(false, BaseColour.BLUE_LIGHT, "light blue", Util.newArrayListOfValues("pegataur")) {};
-	public static Colour RACE_REINDEER_MORPH = new Colour(false, BaseColour.BROWN_DARK, "dark brown", Util.newArrayListOfValues("reindeerMorph", "reindeer")) {};
-	public static Colour RACE_WOLF_MORPH = new Colour(false, BaseColour.BLACK, "black", Util.newArrayListOfValues("wolfMorph", "wolf")) {};
-	public static Colour RACE_FOX_MORPH = new Colour(false, BaseColour.GINGER, "ginger", Util.newArrayListOfValues("foxMorph", "fox")) {};
-	public static Colour RACE_FOX_MORPH_FENNEC = new Colour(false, Util.newColour(0xddc48b), Util.newColour(0xddc48b), "sandy", Util.newArrayListOfValues("fennecFoxMorph", "fennecFox")) {};
-	public static Colour RACE_FOX_MORPH_ARCTIC = new Colour(false, BaseColour.WHITE, "white", Util.newArrayListOfValues("arcticFoxMorph", "arcticFox")) {};
-	public static Colour RACE_HARPY = new Colour(false, BaseColour.PINK_LIGHT, "light pink", Util.newArrayListOfValues("harpy")) {};
-	public static Colour RACE_SLIME = new Colour(false, BaseColour.GREEN_LIGHT, "light green", Util.newArrayListOfValues("slime")) {};
-	public static Colour RACE_DOLL = new Colour(false, Util.newColour(0x555555), Util.newColour(0x555555), "black", Util.newArrayListOfValues("doll")) {};
-	public static Colour RACE_SQUIRREL_MORPH = new Colour(false, BaseColour.GINGER, "ginger", Util.newArrayListOfValues("squirrelMorph", "squirrel")) {};
-	public static Colour RACE_RAT_MORPH = new Colour(false, BaseColour.BROWN_DARK, "dark brown", Util.newArrayListOfValues("ratMorph", "rat")) {};
-	public static Colour RACE_RABBIT_MORPH = new Colour(false, BaseColour.BROWN_DARK, "dark brown", Util.newArrayListOfValues("rabbitMorph", "rabbit")) {};
-	public static Colour RACE_BAT_MORPH = new Colour(false, BaseColour.BLACK, "black", Util.newArrayListOfValues("batMorph", "bat")) {};
-	public static Colour RACE_ALLIGATOR_MORPH = new Colour(false, BaseColour.GREEN_DARK, "dark green", Util.newArrayListOfValues("alligatorMorph", "alligator", "gatorMorph", "gator")) {};
+	public static Colour RACE_BESTIAL = new Colour(false, BaseColour.TAN, "бежевый", Util.newArrayListOfValues("bestial", "animal", "feral")) {};
+	public static Colour RACE_UNKNOWN = new Colour(false, BaseColour.GREY, "серый", Util.newArrayListOfValues("unknown")) {};
+	public static Colour RACE_HUMAN = new Colour(false, BaseColour.BLUE_STEEL, "бледно-голубой", Util.newArrayListOfValues("human")) {};
+	public static Colour RACE_HALF_DEMON = new Colour(false, BaseColour.INDIGO, "индиго", Util.newArrayListOfValues("halfDemon")) {};
+	public static Colour RACE_DEMON = new Colour(false, BaseColour.PURPLE_LIGHT, "светло-пурпурный", Util.newArrayListOfValues("demon")) {};
+	public static Colour RACE_LILIN = new Colour(false, BaseColour.PURPLE, "пурпурный", Util.newArrayListOfValues("lilin")) {};
+	public static Colour RACE_IMP = new Colour(false, BaseColour.PURPLE, "пурпурный", Util.newArrayListOfValues("imp")) {};
+	public static Colour RACE_ANGEL = new Colour(false, BaseColour.BLUE_LIGHT, "светло-синий", Util.newArrayListOfValues("angel")) {};
+	public static Colour RACE_DOG_MORPH = new Colour(false, BaseColour.BROWN, "коричневый", Util.newArrayListOfValues("dogMorph", "dog")) {};
+	public static Colour RACE_CAT_MORPH = new Colour(false, BaseColour.PINK_SALMON, "лососево-розовый", Util.newArrayListOfValues("catMorph", "cat")) {};
+	public static Colour RACE_CAT_MORPH_CARACAL = new Colour(false, BaseColour.PINK_SALMON, "лососево-розовый", Util.newArrayListOfValues("ocelotMorph", "ocelot")) {};
+	public static Colour RACE_CAT_MORPH_LION = new Colour(false, BaseColour.YELLOW, "желтый", Util.newArrayListOfValues("lionMorph", "lion")) {};
+	public static Colour RACE_CAT_MORPH_LEOPARD = new Colour(false, BaseColour.GINGER, "имбирный", Util.newArrayListOfValues("leopardMorph", "leopard")) {};
+	public static Colour RACE_CAT_MORPH_TIGER = new Colour(false, BaseColour.GINGER, "имбирный", Util.newArrayListOfValues("tigerMorph", "tiger")) {};
+	public static Colour RACE_CAT_MORPH_CHEETAH = new Colour(false, BaseColour.YELLOW, "желтый", Util.newArrayListOfValues("cheetahMorph", "cheetah")) {};
+	public static Colour RACE_CAT_MORPH_LYNX = new Colour(false, BaseColour.SILVER, "серебристый", Util.newArrayListOfValues("lynxMorph", "lynx")) {};
+	public static Colour RACE_CAT_MORPH_LEOPARD_SNOW = new Colour(false, BaseColour.SILVER, "серебристый", Util.newArrayListOfValues("leopardSnowMorph", "snowLeopard", "snep", "leopardSnow", "snowLeopardMorph")) {};
+	public static Colour RACE_COW_MORPH = new Colour(false, BaseColour.TAN, "бежевый", Util.newArrayListOfValues("cowMorph", "cow")) {};
+	public static Colour RACE_HORSE_MORPH = new Colour(false, BaseColour.ORANGE, "оранжевый", Util.newArrayListOfValues("horseMorph", "horse")) {};
+	public static Colour RACE_PEGASUS = new Colour(false, BaseColour.BLUE_LIGHT, "светло-синий", Util.newArrayListOfValues("pegasusMorph", "pegasus")) {};
+	public static Colour RACE_UNICORN = new Colour(false, BaseColour.WHITE, "белый", Util.newArrayListOfValues("unicornMorph", "unicorn")) {};
+	public static Colour RACE_ALICORN = new Colour(false, BaseColour.YELLOW_LIGHT, "светло-желтый", Util.newArrayListOfValues("alicornMorph", "alicorn")) {};
+	public static Colour RACE_CENTAUR = new Colour(false, BaseColour.BROWN_DARK, "тёмно-коричневый", Util.newArrayListOfValues("centaur")) {};
+	public static Colour RACE_PEGATAUR = new Colour(false, BaseColour.BLUE_LIGHT, "светло-синий", Util.newArrayListOfValues("pegataur")) {};
+	public static Colour RACE_REINDEER_MORPH = new Colour(false, BaseColour.BROWN_DARK, "тёмно-коричневый", Util.newArrayListOfValues("reindeerMorph", "reindeer")) {};
+	public static Colour RACE_WOLF_MORPH = new Colour(false, BaseColour.BLACK, "чёрный", Util.newArrayListOfValues("wolfMorph", "wolf")) {};
+	public static Colour RACE_FOX_MORPH = new Colour(false, BaseColour.GINGER, "имбирный", Util.newArrayListOfValues("foxMorph", "fox")) {};
+	public static Colour RACE_FOX_MORPH_FENNEC = new Colour(false, Util.newColour(0xddc48b), Util.newColour(0xddc48b), "песочный", Util.newArrayListOfValues("fennecFoxMorph", "fennecFox")) {};
+	public static Colour RACE_FOX_MORPH_ARCTIC = new Colour(false, BaseColour.WHITE, "белый", Util.newArrayListOfValues("arcticFoxMorph", "arcticFox")) {};
+	public static Colour RACE_HARPY = new Colour(false, BaseColour.PINK_LIGHT, "светло-розовый", Util.newArrayListOfValues("harpy")) {};
+	public static Colour RACE_SLIME = new Colour(false, BaseColour.GREEN_LIGHT, "светло-зеленый", Util.newArrayListOfValues("slime")) {};
+	public static Colour RACE_DOLL = new Colour(false, Util.newColour(0x555555), Util.newColour(0x555555), "чёрный", Util.newArrayListOfValues("doll")) {};
+	public static Colour RACE_SQUIRREL_MORPH = new Colour(false, BaseColour.GINGER, "имбирный", Util.newArrayListOfValues("squirrelMorph", "squirrel")) {};
+	public static Colour RACE_RAT_MORPH = new Colour(false, BaseColour.BROWN_DARK, "тёмно-коричневый", Util.newArrayListOfValues("ratMorph", "rat")) {};
+	public static Colour RACE_RABBIT_MORPH = new Colour(false, BaseColour.BROWN_DARK, "тёмно-коричневый", Util.newArrayListOfValues("rabbitMorph", "rabbit")) {};
+	public static Colour RACE_BAT_MORPH = new Colour(false, BaseColour.BLACK, "чёрный", Util.newArrayListOfValues("batMorph", "bat")) {};
+	public static Colour RACE_ALLIGATOR_MORPH = new Colour(false, BaseColour.GREEN_DARK, "темно-зеленый", Util.newArrayListOfValues("alligatorMorph", "alligator", "gatorMorph", "gator")) {};
 
-	public static Colour GENERIC_BAD_END = new Colour(false, BaseColour.CRIMSON, "crimson", Util.newArrayListOfValues("badEnd")) {};
+	public static Colour GENERIC_BAD_END = new Colour(false, BaseColour.CRIMSON, "малиновый", Util.newArrayListOfValues("badEnd")) {};
 	
-	public static Colour QUEST_MAIN = new Colour(false, BaseColour.PINK, "pink", Util.newArrayListOfValues("questMain", "mainQuest")) {};
-	public static Colour QUEST_SIDE = new Colour(false, BaseColour.BLUE, "blue", Util.newArrayListOfValues("questSide", "sideQuest")) {};
-	public static Colour QUEST_RELATIONSHIP = new Colour(false, BaseColour.PINK_PALE, "pink", Util.newArrayListOfValues("questRelationship", "relationshipQuest", "questRomance", "romanceQuest")) {};
+	public static Colour QUEST_MAIN = new Colour(false, BaseColour.PINK, "розовый", Util.newArrayListOfValues("questMain", "mainQuest")) {};
+	public static Colour QUEST_SIDE = new Colour(false, BaseColour.BLUE, "синий", Util.newArrayListOfValues("questSide", "sideQuest")) {};
+	public static Colour QUEST_RELATIONSHIP = new Colour(false, BaseColour.PINK_PALE, "розовый", Util.newArrayListOfValues("questRelationship", "relationshipQuest", "questRomance", "romanceQuest")) {};
 
 	public static Colour MAP_MARKER = new Colour(false, Util.newColour(0x6163DB), Util.newColour(0x6163DB), "blue") {};
 
-	public static Colour ATTRIBUTE_HEALTH = new Colour(false, BaseColour.CRIMSON, "crimson", Util.newArrayListOfValues("health", "hp", "energy")) {};
-	public static Colour ATTRIBUTE_MANA = new Colour(false, BaseColour.PURPLE_LIGHT, "light purple", Util.newArrayListOfValues("willpower", "wp", "mana", "aura")) {};
+	public static Colour ATTRIBUTE_HEALTH = new Colour(false, BaseColour.CRIMSON, "малиновый", Util.newArrayListOfValues("health", "hp", "energy")) {};
+	public static Colour ATTRIBUTE_MANA = new Colour(false, BaseColour.PURPLE_LIGHT, "светло-пурпурный", Util.newArrayListOfValues("willpower", "wp", "mana", "aura")) {};
 
-	public static Colour ATTRIBUTE_PHYSIQUE = new Colour(false, BaseColour.MAGENTA, "magenta", Util.newArrayListOfValues("physique", "phys", "strength", "str")) {};
-	public static Colour ATTRIBUTE_ARCANE = new Colour(false, BaseColour.PURPLE, "purple", Util.newArrayListOfValues("intelligence", "int")) {};
-	public static Colour ATTRIBUTE_CORRUPTION = new Colour(false, BaseColour.PINK, "pink", Util.newArrayListOfValues("corruption", "cor", "corr")) {};
+	public static Colour ATTRIBUTE_PHYSIQUE = new Colour(false, BaseColour.MAGENTA, "пурпурный", Util.newArrayListOfValues("physique", "phys", "strength", "str")) {};
+	public static Colour ATTRIBUTE_ARCANE = new Colour(false, BaseColour.PURPLE, "пурпурный", Util.newArrayListOfValues("intelligence", "int")) {};
+	public static Colour ATTRIBUTE_CORRUPTION = new Colour(false, BaseColour.PINK, "розовый", Util.newArrayListOfValues("corruption", "cor", "corr")) {};
 
-	public static Colour ATTRIBUTE_AROUSAL = new Colour(false, BaseColour.PINK_DEEP, "pink", Util.newArrayListOfValues("arousal", "ars")) {};
-	public static Colour ATTRIBUTE_LUST = new Colour(false, BaseColour.MAGENTA, "magenta", Util.newArrayListOfValues("lust", "lst", "seduction")) {};
+	public static Colour ATTRIBUTE_AROUSAL = new Colour(false, BaseColour.PINK_DEEP, "розовый", Util.newArrayListOfValues("arousal", "ars")) {};
+	public static Colour ATTRIBUTE_LUST = new Colour(false, BaseColour.MAGENTA, "пурпурный", Util.newArrayListOfValues("lust", "lst", "seduction")) {};
 
-	public static Colour PHYSIQUE_STAGE_ZERO = new Colour(false, BaseColour.MAGENTA, "magenta") {};
-	public static Colour PHYSIQUE_STAGE_ONE = new Colour(false, BaseColour.MAGENTA, "magenta") {};
-	public static Colour PHYSIQUE_STAGE_TWO = new Colour(false, BaseColour.MAGENTA, "magenta") {};
-	public static Colour PHYSIQUE_STAGE_THREE = new Colour(false, BaseColour.MAGENTA, "magenta") {};
-	public static Colour PHYSIQUE_STAGE_FOUR = new Colour(false, BaseColour.MAGENTA, "magenta") {};
-	public static Colour PHYSIQUE_STAGE_FIVE = new Colour(false, BaseColour.GOLD, "gold") {};
+	public static Colour PHYSIQUE_STAGE_ZERO = new Colour(false, BaseColour.MAGENTA, "пурпурный") {};
+	public static Colour PHYSIQUE_STAGE_ONE = new Colour(false, BaseColour.MAGENTA, "пурпурный") {};
+	public static Colour PHYSIQUE_STAGE_TWO = new Colour(false, BaseColour.MAGENTA, "пурпурный") {};
+	public static Colour PHYSIQUE_STAGE_THREE = new Colour(false, BaseColour.MAGENTA, "пурпурный") {};
+	public static Colour PHYSIQUE_STAGE_FOUR = new Colour(false, BaseColour.MAGENTA, "пурпурный") {};
+	public static Colour PHYSIQUE_STAGE_FIVE = new Colour(false, BaseColour.GOLD, "золотой") {};
 	
-	public static Colour INTELLIGENCE_STAGE_ZERO = new Colour(false, BaseColour.PURPLE, "purple") {};
-	public static Colour INTELLIGENCE_STAGE_ONE = new Colour(false, BaseColour.PURPLE, "purple") {};
-	public static Colour INTELLIGENCE_STAGE_TWO = new Colour(false, BaseColour.PURPLE, "purple") {};
-	public static Colour INTELLIGENCE_STAGE_THREE = new Colour(false, BaseColour.PURPLE, "purple") {};
-	public static Colour INTELLIGENCE_STAGE_FOUR = new Colour(false, BaseColour.PURPLE, "purple") {};
-	public static Colour INTELLIGENCE_STAGE_FIVE = new Colour(false, BaseColour.GOLD, "gold") {};
+	public static Colour INTELLIGENCE_STAGE_ZERO = new Colour(false, BaseColour.PURPLE, "пурпурный") {};
+	public static Colour INTELLIGENCE_STAGE_ONE = new Colour(false, BaseColour.PURPLE, "пурпурный") {};
+	public static Colour INTELLIGENCE_STAGE_TWO = new Colour(false, BaseColour.PURPLE, "пурпурный") {};
+	public static Colour INTELLIGENCE_STAGE_THREE = new Colour(false, BaseColour.PURPLE, "пурпурный") {};
+	public static Colour INTELLIGENCE_STAGE_FOUR = new Colour(false, BaseColour.PURPLE, "пурпурный") {};
+	public static Colour INTELLIGENCE_STAGE_FIVE = new Colour(false, BaseColour.GOLD, "золотой") {};
 	
-	public static Colour FITNESS_STAGE_ZERO = new Colour(false, BaseColour.LILAC, "light purple") {};
-	public static Colour FITNESS_STAGE_ONE = new Colour(false, BaseColour.LILAC, "light purple") {};
-	public static Colour FITNESS_STAGE_TWO = new Colour(false, BaseColour.LILAC, "light purple") {};
-	public static Colour FITNESS_STAGE_THREE = new Colour(false, BaseColour.LILAC, "light purple") {};
-	public static Colour FITNESS_STAGE_FOUR = new Colour(false, BaseColour.LILAC, "light purple") {};
-	public static Colour FITNESS_STAGE_FIVE = new Colour(false, BaseColour.GOLD, "gold") {};
+	public static Colour FITNESS_STAGE_ZERO = new Colour(false, BaseColour.LILAC, "светло-пурпурный") {};
+	public static Colour FITNESS_STAGE_ONE = new Colour(false, BaseColour.LILAC, "светло-пурпурный") {};
+	public static Colour FITNESS_STAGE_TWO = new Colour(false, BaseColour.LILAC, "светло-пурпурный") {};
+	public static Colour FITNESS_STAGE_THREE = new Colour(false, BaseColour.LILAC, "светло-пурпурный") {};
+	public static Colour FITNESS_STAGE_FOUR = new Colour(false, BaseColour.LILAC, "светло-пурпурный") {};
+	public static Colour FITNESS_STAGE_FIVE = new Colour(false, BaseColour.GOLD, "золотой") {};
 	
 	public static Colour CORRUPTION_STAGE_ZERO = new Colour(false, Util.newColour(0xffdf80), Util.newColour(0xffdf80), "gold") {};
 	public static Colour CORRUPTION_STAGE_ONE = new Colour(false, Util.newColour(0xff80bf), Util.newColour(0xff80bf), "pink") {};
@@ -254,53 +254,53 @@ public class PresetColour {
 	public static Colour DESIRE_STAGE_FOUR = new Colour(false, Util.newColour(0xffdf80), Util.newColour(0xffdf80), "gold") {};
 
 
-	public static Colour COMPANION = new Colour(false, BaseColour.GREEN_LIGHT, "light green", Util.newArrayListOfValues("companion", "companions")) {};
+	public static Colour COMPANION = new Colour(false, BaseColour.GREEN_LIGHT, "светло-зеленый", Util.newArrayListOfValues("companion", "companions")) {};
 
-	public static Colour STAMINA = new Colour(false, BaseColour.BLUE_LIGHT, "light blue", Util.newArrayListOfValues("stamina")) {};
-	public static Colour SLEEP = new Colour(false, BaseColour.PURPLE_LIGHT, "light purple", Util.newArrayListOfValues("sleep", "sleeping")) {};
-	public static Colour SLEEP_HEAVY = new Colour(false, BaseColour.PURPLE, "purple", Util.newArrayListOfValues("sleepHeavy", "sleepingHeavy")) {};
+	public static Colour STAMINA = new Colour(false, BaseColour.BLUE_LIGHT, "светло-синий", Util.newArrayListOfValues("stamina")) {};
+	public static Colour SLEEP = new Colour(false, BaseColour.PURPLE_LIGHT, "светло-пурпурный", Util.newArrayListOfValues("sleep", "sleeping")) {};
+	public static Colour SLEEP_HEAVY = new Colour(false, BaseColour.PURPLE, "пурпурный", Util.newArrayListOfValues("sleepHeavy", "sleepingHeavy")) {};
 	
-	public static Colour AFFECTION = new Colour(false, BaseColour.PINK_LIGHT, "light pink", Util.newArrayListOfValues("affection")) {};
-	public static Colour OBEDIENCE = new Colour(false, BaseColour.PURPLE_LIGHT, "light purple", Util.newArrayListOfValues("obedience")) {};
+	public static Colour AFFECTION = new Colour(false, BaseColour.PINK_LIGHT, "светло-розовый", Util.newArrayListOfValues("affection")) {};
+	public static Colour OBEDIENCE = new Colour(false, BaseColour.PURPLE_LIGHT, "светло-пурпурный", Util.newArrayListOfValues("obedience")) {};
 	
-	public static Colour AFFECTION_NEGATIVE_FIVE = new Colour(false, Util.newColour(0xff0066), Util.newColour(0x8e011e), "magenta", Util.newArrayListOfValues("affectionN5")) {};
-	public static Colour AFFECTION_NEGATIVE_FOUR = new Colour(false, Util.newColour(0xff2a7f), Util.newColour(0xa40123), "magenta", Util.newArrayListOfValues("affectionN4")) {};
-	public static Colour AFFECTION_NEGATIVE_THREE = new Colour(false, Util.newColour(0xff5599), Util.newColour(0xb21e44), "pink", Util.newArrayListOfValues("affectionN3")) {};
-	public static Colour AFFECTION_NEGATIVE_TWO = new Colour(false, Util.newColour(0xff80b2), Util.newColour(0xbc325a), "pink", Util.newArrayListOfValues("affectionN2")) {};
-	public static Colour AFFECTION_NEGATIVE_ONE = new Colour(false, Util.newColour(0xffaacc), Util.newColour(0xc44670), "pink", Util.newArrayListOfValues("affectionN1")) {};
-	public static Colour AFFECTION_NEUTRAL = new Colour(false, Util.newColour(0xe3dedb), Util.newColour(0xcd5986), "grey", Util.newArrayListOfValues("affection0")) {};
-	public static Colour AFFECTION_POSITIVE_ONE = new Colour(false, Util.newColour(0xffeeaa), Util.newColour(0xd66e9d), "yellow", Util.newArrayListOfValues("affection1")) {};
-	public static Colour AFFECTION_POSITIVE_TWO = new Colour(false, Util.newColour(0xffe680), Util.newColour(0xe082b3), "yellow", Util.newArrayListOfValues("affection2")) {};
-	public static Colour AFFECTION_POSITIVE_THREE = new Colour(false, Util.newColour(0xffdd55), Util.newColour(0xe996c9), "yellow", Util.newArrayListOfValues("affection3")) {};
-	public static Colour AFFECTION_POSITIVE_FOUR = new Colour(false, Util.newColour(0xffd42a), Util.newColour(0xf2aadf), "gold", Util.newArrayListOfValues("affection4")) {};
-	public static Colour AFFECTION_POSITIVE_FIVE = new Colour(false, Util.newColour(0xffcc00), Util.newColour(0xfbbcf4), "gold", Util.newArrayListOfValues("affection5")) {};
+	public static Colour AFFECTION_NEGATIVE_FIVE = new Colour(false, Util.newColour(0xff0066), Util.newColour(0x8e011e), "пурпурный", Util.newArrayListOfValues("affectionN5")) {};
+	public static Colour AFFECTION_NEGATIVE_FOUR = new Colour(false, Util.newColour(0xff2a7f), Util.newColour(0xa40123), "пурпурный", Util.newArrayListOfValues("affectionN4")) {};
+	public static Colour AFFECTION_NEGATIVE_THREE = new Colour(false, Util.newColour(0xff5599), Util.newColour(0xb21e44), "розовый", Util.newArrayListOfValues("affectionN3")) {};
+	public static Colour AFFECTION_NEGATIVE_TWO = new Colour(false, Util.newColour(0xff80b2), Util.newColour(0xbc325a), "розовый", Util.newArrayListOfValues("affectionN2")) {};
+	public static Colour AFFECTION_NEGATIVE_ONE = new Colour(false, Util.newColour(0xffaacc), Util.newColour(0xc44670), "розовый", Util.newArrayListOfValues("affectionN1")) {};
+	public static Colour AFFECTION_NEUTRAL = new Colour(false, Util.newColour(0xe3dedb), Util.newColour(0xcd5986), "серый", Util.newArrayListOfValues("affection0")) {};
+	public static Colour AFFECTION_POSITIVE_ONE = new Colour(false, Util.newColour(0xffeeaa), Util.newColour(0xd66e9d), "желтый", Util.newArrayListOfValues("affection1")) {};
+	public static Colour AFFECTION_POSITIVE_TWO = new Colour(false, Util.newColour(0xffe680), Util.newColour(0xe082b3), "желтый", Util.newArrayListOfValues("affection2")) {};
+	public static Colour AFFECTION_POSITIVE_THREE = new Colour(false, Util.newColour(0xffdd55), Util.newColour(0xe996c9), "желтый", Util.newArrayListOfValues("affection3")) {};
+	public static Colour AFFECTION_POSITIVE_FOUR = new Colour(false, Util.newColour(0xffd42a), Util.newColour(0xf2aadf), "золотой", Util.newArrayListOfValues("affection4")) {};
+	public static Colour AFFECTION_POSITIVE_FIVE = new Colour(false, Util.newColour(0xffcc00), Util.newColour(0xfbbcf4), "золотой", Util.newArrayListOfValues("affection5")) {};
 
-	public static Colour MASCULINE_PLUS = new Colour(false, Util.newColour(0x649fe7), Util.newColour(0x649fe7), "dark blue", Util.newArrayListOfValues("masculineStrong", "masStr", "masculinePlus")) {};
-	public static Colour MASCULINE = new Colour(false, Util.newColour(0x8ABEFF), Util.newColour(0x8ABEFF), "blue", Util.newArrayListOfValues("masculine", "mas")) {};
-	public static Colour ANDROGYNOUS = new Colour(false, Util.newColour(0xB39EFF), Util.newColour(0xB39EFF), "purple", Util.newArrayListOfValues("androgynous", "andro")) {};
-	public static Colour FEMININE = new Colour(false, Util.newColour(0xFFBDFF), Util.newColour(0xFFFBDFF), "pink", Util.newArrayListOfValues("feminine", "fem")) {};
-	public static Colour FEMININE_PLUS = new Colour(false, Util.newColour(0xFF85FF), Util.newColour(0xFF85FF), "pink", Util.newArrayListOfValues("feminineStrong", "femStr", "femininePlus")) {};
+	public static Colour MASCULINE_PLUS = new Colour(false, Util.newColour(0x649fe7), Util.newColour(0x649fe7), "тёмно-синий", Util.newArrayListOfValues("masculineStrong", "masStr", "masculinePlus")) {};
+	public static Colour MASCULINE = new Colour(false, Util.newColour(0x8ABEFF), Util.newColour(0x8ABEFF), "синий", Util.newArrayListOfValues("masculine", "mas")) {};
+	public static Colour ANDROGYNOUS = new Colour(false, Util.newColour(0xB39EFF), Util.newColour(0xB39EFF), "пурпурный", Util.newArrayListOfValues("androgynous", "andro")) {};
+	public static Colour FEMININE = new Colour(false, Util.newColour(0xFFBDFF), Util.newColour(0xFFFBDFF), "розовый", Util.newArrayListOfValues("feminine", "fem")) {};
+	public static Colour FEMININE_PLUS = new Colour(false, Util.newColour(0xFF85FF), Util.newColour(0xFF85FF), "розовый", Util.newArrayListOfValues("feminineStrong", "femStr", "femininePlus")) {};
 	
-	public static Colour BODY_SIZE_ZERO = new Colour(false, Util.newColour(0xFFEBD6), Util.newColour(0x241D00), "tan", Util.newArrayListOfValues("bodySizeZero")) {};
-	public static Colour BODY_SIZE_ONE = new Colour(false, Util.newColour(0xFFE0BD), Util.newColour(0x3D3100), "tan", Util.newArrayListOfValues("bodySizeOne")) {};
-	public static Colour BODY_SIZE_TWO = new Colour(false, Util.newColour(0xFFC88A), Util.newColour(0x5C4900), "tan", Util.newArrayListOfValues("bodySizeTwo")) {};
-	public static Colour BODY_SIZE_THREE = new Colour(false, Util.newColour(0xFFAB57), Util.newColour(0x806600), "tan", Util.newArrayListOfValues("bodySizeThree")) {};
-	public static Colour BODY_SIZE_FOUR = new Colour(false, Util.newColour(0xFF9124), Util.newColour(0x9E7E00), "tan", Util.newArrayListOfValues("bodySizeFour")) {};
+	public static Colour BODY_SIZE_ZERO = new Colour(false, Util.newColour(0xFFEBD6), Util.newColour(0x241D00), "бежевый", Util.newArrayListOfValues("bodySizeZero")) {};
+	public static Colour BODY_SIZE_ONE = new Colour(false, Util.newColour(0xFFE0BD), Util.newColour(0x3D3100), "бежевый", Util.newArrayListOfValues("bodySizeOne")) {};
+	public static Colour BODY_SIZE_TWO = new Colour(false, Util.newColour(0xFFC88A), Util.newColour(0x5C4900), "бежевый", Util.newArrayListOfValues("bodySizeTwo")) {};
+	public static Colour BODY_SIZE_THREE = new Colour(false, Util.newColour(0xFFAB57), Util.newColour(0x806600), "бежевый", Util.newArrayListOfValues("bodySizeThree")) {};
+	public static Colour BODY_SIZE_FOUR = new Colour(false, Util.newColour(0xFF9124), Util.newColour(0x9E7E00), "бежевый", Util.newArrayListOfValues("bodySizeFour")) {};
 
-	public static Colour MUSCLE_ZERO = new Colour(false, Util.newColour(0xDBFFF6), Util.newColour(0x001F17), "teal", Util.newArrayListOfValues("muscleZero")) {};
-	public static Colour MUSCLE_ONE = new Colour(false, Util.newColour(0xBDFFED), Util.newColour(0x00382B), "teal", Util.newArrayListOfValues("muscleOne")) {};
-	public static Colour MUSCLE_TWO = new Colour(false, Util.newColour(0x8AFFE0), Util.newColour(0x00523F), "teal", Util.newArrayListOfValues("muscleTwo")) {};
-	public static Colour MUSCLE_THREE = new Colour(false, Util.newColour(0x57FFD2), Util.newColour(0x006B52), "teal", Util.newArrayListOfValues("muscleThree")) {};
-	public static Colour MUSCLE_FOUR = new Colour(false, Util.newColour(0x24FFC5), Util.newColour(0x008566), "teal", Util.newArrayListOfValues("muscleFour")) {};
+	public static Colour MUSCLE_ZERO = new Colour(false, Util.newColour(0xDBFFF6), Util.newColour(0x001F17), "бирюзовый", Util.newArrayListOfValues("muscleZero")) {};
+	public static Colour MUSCLE_ONE = new Colour(false, Util.newColour(0xBDFFED), Util.newColour(0x00382B), "бирюзовый", Util.newArrayListOfValues("muscleOne")) {};
+	public static Colour MUSCLE_TWO = new Colour(false, Util.newColour(0x8AFFE0), Util.newColour(0x00523F), "бирюзовый", Util.newArrayListOfValues("muscleTwo")) {};
+	public static Colour MUSCLE_THREE = new Colour(false, Util.newColour(0x57FFD2), Util.newColour(0x006B52), "бирюзовый", Util.newArrayListOfValues("muscleThree")) {};
+	public static Colour MUSCLE_FOUR = new Colour(false, Util.newColour(0x24FFC5), Util.newColour(0x008566), "бирюзовый", Util.newArrayListOfValues("muscleFour")) {};
 
-	public static Colour AGE_TEENS = new Colour(false, Util.newColour(0xE1F0C1), Util.newColour(0x73A112), "green", Util.newArrayListOfValues("ageTeens")) {};
-	public static Colour AGE_TWENTIES = new Colour(false, Util.newColour(0xCCE698), Util.newColour(0x638A0F), "green", Util.newArrayListOfValues("ageTwenties")) {};
-	public static Colour AGE_THIRTIES = new Colour(false, Util.newColour(0xB8DC6F), Util.newColour(0x52730D), "green", Util.newArrayListOfValues("age", "ageThirties")) {}; // This is the 'default' age colour
-	public static Colour AGE_FORTIES = new Colour(false, Util.newColour(0xA4D246), Util.newColour(0x41590D), "green", Util.newArrayListOfValues("ageForties")) {};
-	public static Colour AGE_FIFTIES = new Colour(false, Util.newColour(0x8AB92D), Util.newColour(0x334408), "green", Util.newArrayListOfValues("ageFifties")) {};
-	public static Colour AGE_SIXTIES = new Colour(false, Util.newColour(0x6B9023), Util.newColour(0x232E05), "green", Util.newArrayListOfValues("ageSixties")) {};
+	public static Colour AGE_TEENS = new Colour(false, Util.newColour(0xE1F0C1), Util.newColour(0x73A112), "зеленый", Util.newArrayListOfValues("ageTeens")) {};
+	public static Colour AGE_TWENTIES = new Colour(false, Util.newColour(0xCCE698), Util.newColour(0x638A0F), "зеленый", Util.newArrayListOfValues("ageTwenties")) {};
+	public static Colour AGE_THIRTIES = new Colour(false, Util.newColour(0xB8DC6F), Util.newColour(0x52730D), "зеленый", Util.newArrayListOfValues("age", "ageThirties")) {}; // This is the 'default' age colour
+	public static Colour AGE_FORTIES = new Colour(false, Util.newColour(0xA4D246), Util.newColour(0x41590D), "зеленый", Util.newArrayListOfValues("ageForties")) {};
+	public static Colour AGE_FIFTIES = new Colour(false, Util.newColour(0x8AB92D), Util.newColour(0x334408), "зеленый", Util.newArrayListOfValues("ageFifties")) {};
+	public static Colour AGE_SIXTIES = new Colour(false, Util.newColour(0x6B9023), Util.newColour(0x232E05), "зеленый", Util.newArrayListOfValues("ageSixties")) {};
 	
-	public static Colour ALCOHOL = new Colour(false, BaseColour.YELLOW_LIGHT, "light yellow", Util.newArrayListOfValues("alcohol")) {};
+	public static Colour ALCOHOL = new Colour(false, BaseColour.YELLOW_LIGHT, "светло-желтый", Util.newArrayListOfValues("alcohol")) {};
 	public static Colour ALCOHOL_LEVEL_ZERO = new Colour(false, Util.newColour(0xF2E8C0), Util.newColour(0x967F22), "light yellow") {};
 	public static Colour ALCOHOL_LEVEL_ONE = new Colour(false, Util.newColour(0xEDDFAB), Util.newColour(0x967F22), "light yellow") {};
 	public static Colour ALCOHOL_LEVEL_TWO = new Colour(false, Util.newColour(0xE8D696), Util.newColour(0x967F22), "yellow") {};
@@ -308,42 +308,42 @@ public class PresetColour {
 	public static Colour ALCOHOL_LEVEL_FOUR = new Colour(false, Util.newColour(0xDEC66E), Util.newColour(0x967F22), "yellow") {};
 	public static Colour ALCOHOL_LEVEL_FIVE = new Colour(false, Util.newColour(0xD9BD59), Util.newColour(0x967F22), "gold") {};
 	
-	public static Colour PSYCHOACTIVE = new Colour(false, BaseColour.MAGENTA, "magenta", Util.newArrayListOfValues("psychoactive")) {};
+	public static Colour PSYCHOACTIVE = new Colour(false, BaseColour.MAGENTA, "пурпурный", Util.newArrayListOfValues("psychoactive")) {};
 
-	public static Colour TRANSFORMATION_SHRINK = new Colour(false, BaseColour.RED, "red", Util.newArrayListOfValues("tfShrink", "shrink", "tfShrunk", "shrunk", "tfShrinking", "shrinking")) {};
-	public static Colour TRANSFORMATION_GROW = new Colour(false, BaseColour.GREEN, "green", Util.newArrayListOfValues("tfGrow", "grow", "tfGrown", "grown", "tfGrowth", "growth")) {};
+	public static Colour TRANSFORMATION_SHRINK = new Colour(false, BaseColour.RED, "красный", Util.newArrayListOfValues("tfShrink", "shrink", "tfShrunk", "shrunk", "tfShrinking", "shrinking")) {};
+	public static Colour TRANSFORMATION_GROW = new Colour(false, BaseColour.GREEN, "зеленый", Util.newArrayListOfValues("tfGrow", "grow", "tfGrown", "grown", "tfGrowth", "growth")) {};
 
-	public static Colour GENERIC_SIZE_ZERO = new Colour(false, Util.newColour(0xbdf1c1), Util.newColour(0x6da672), "green", Util.newArrayListOfValues("size0")) {};
-	public static Colour GENERIC_SIZE_ONE = new Colour(false, Util.newColour(0xAFE9B3), Util.newColour(0x6da672), "green", Util.newArrayListOfValues("size1")) {};
-	public static Colour GENERIC_SIZE_TWO = new Colour(false, Util.newColour(0xA0E4A3), Util.newColour(0x6dad72), "green", Util.newArrayListOfValues("size2")) {};
-	public static Colour GENERIC_SIZE_THREE = new Colour(false, Util.newColour(0x8FE096), Util.newColour(0x6db572), "green", Util.newArrayListOfValues("size3")) {};
-	public static Colour GENERIC_SIZE_FOUR = new Colour(false, Util.newColour(0x77DA7F), Util.newColour(0x6dbd72), "green", Util.newArrayListOfValues("size4")) {};
-	public static Colour GENERIC_SIZE_FIVE = new Colour(false, Util.newColour(0x67D570), Util.newColour(0x6dc472), "green", Util.newArrayListOfValues("size5")) {};
-	public static Colour GENERIC_SIZE_SIX = new Colour(false, Util.newColour(0x57D161), Util.newColour(0x6dcf72), "green", Util.newArrayListOfValues("size6")) {};
-	public static Colour GENERIC_SIZE_SEVEN = new Colour(false, Util.newColour(0x47CD52), Util.newColour(0x6dd672), "green", Util.newArrayListOfValues("size7")) {};
-	public static Colour GENERIC_SIZE_EIGHT = new Colour(false, Util.newColour(0x37C843), Util.newColour(0x6dde72), "green", Util.newArrayListOfValues("size8")) {};
-	public static Colour GENERIC_SIZE_NINE = new Colour(false, Util.newColour(0x19ba26), Util.newColour(0x6dde72), "green", Util.newArrayListOfValues("size9")) {};
-	public static Colour GENERIC_SIZE_TEN = new Colour(false, Util.newColour(0x0ba518), Util.newColour(0x6dde72), "green", Util.newArrayListOfValues("size10")) {};
+	public static Colour GENERIC_SIZE_ZERO = new Colour(false, Util.newColour(0xbdf1c1), Util.newColour(0x6da672), "зеленый", Util.newArrayListOfValues("size0")) {};
+	public static Colour GENERIC_SIZE_ONE = new Colour(false, Util.newColour(0xAFE9B3), Util.newColour(0x6da672), "зеленый", Util.newArrayListOfValues("size1")) {};
+	public static Colour GENERIC_SIZE_TWO = new Colour(false, Util.newColour(0xA0E4A3), Util.newColour(0x6dad72), "зеленый", Util.newArrayListOfValues("size2")) {};
+	public static Colour GENERIC_SIZE_THREE = new Colour(false, Util.newColour(0x8FE096), Util.newColour(0x6db572), "зеленый", Util.newArrayListOfValues("size3")) {};
+	public static Colour GENERIC_SIZE_FOUR = new Colour(false, Util.newColour(0x77DA7F), Util.newColour(0x6dbd72), "зеленый", Util.newArrayListOfValues("size4")) {};
+	public static Colour GENERIC_SIZE_FIVE = new Colour(false, Util.newColour(0x67D570), Util.newColour(0x6dc472), "зеленый", Util.newArrayListOfValues("size5")) {};
+	public static Colour GENERIC_SIZE_SIX = new Colour(false, Util.newColour(0x57D161), Util.newColour(0x6dcf72), "зеленый", Util.newArrayListOfValues("size6")) {};
+	public static Colour GENERIC_SIZE_SEVEN = new Colour(false, Util.newColour(0x47CD52), Util.newColour(0x6dd672), "зеленый", Util.newArrayListOfValues("size7")) {};
+	public static Colour GENERIC_SIZE_EIGHT = new Colour(false, Util.newColour(0x37C843), Util.newColour(0x6dde72), "зеленый", Util.newArrayListOfValues("size8")) {};
+	public static Colour GENERIC_SIZE_NINE = new Colour(false, Util.newColour(0x19ba26), Util.newColour(0x6dde72), "зеленый", Util.newArrayListOfValues("size9")) {};
+	public static Colour GENERIC_SIZE_TEN = new Colour(false, Util.newColour(0x0ba518), Util.newColour(0x6dde72), "зеленый", Util.newArrayListOfValues("size10")) {};
 	
-	public static Colour GENERIC_WETNESS_ONE = new Colour(false, Util.newColour(0xddd2bf), Util.newColour(0xddd2bf), "brown", Util.newArrayListOfValues("wetness1")) {};
-	public static Colour GENERIC_WETNESS_TWO = new Colour(false, Util.newColour(0xe3f8ff), Util.newColour(0xcbf5ff), "blue", Util.newArrayListOfValues("wetness2")) {};
-	public static Colour GENERIC_WETNESS_THREE = new Colour(false, Util.newColour(0xcbf1ff), Util.newColour(0xb3f0ff), "blue", Util.newArrayListOfValues("wetness3")) {};
-	public static Colour GENERIC_WETNESS_FOUR = new Colour(false, Util.newColour(0x99ebff), Util.newColour(0x99ebff), "blue", Util.newArrayListOfValues("wetness4")) {};
-	public static Colour GENERIC_WETNESS_FIVE = new Colour(false, Util.newColour(0x7cccff), Util.newColour(0x7cccff), "blue", Util.newArrayListOfValues("wetness5")) {};
-	public static Colour GENERIC_WETNESS_SIX = new Colour(false, Util.newColour(0x79acff), Util.newColour(0x79acff), "blue", Util.newArrayListOfValues("wetness6")) {};
-	public static Colour GENERIC_WETNESS_SEVEN = new Colour(false, Util.newColour(0x649fff), Util.newColour(0x649fff), "blue", Util.newArrayListOfValues("wetness7")) {};
-	public static Colour GENERIC_WETNESS_EIGHT = new Colour(false, Util.newColour(0x488eff), Util.newColour(0x488eff), "blue", Util.newArrayListOfValues("wetness8")) {};
+	public static Colour GENERIC_WETNESS_ONE = new Colour(false, Util.newColour(0xddd2bf), Util.newColour(0xddd2bf), "коричневый", Util.newArrayListOfValues("wetness1")) {};
+	public static Colour GENERIC_WETNESS_TWO = new Colour(false, Util.newColour(0xe3f8ff), Util.newColour(0xcbf5ff), "синий", Util.newArrayListOfValues("wetness2")) {};
+	public static Colour GENERIC_WETNESS_THREE = new Colour(false, Util.newColour(0xcbf1ff), Util.newColour(0xb3f0ff), "синий", Util.newArrayListOfValues("wetness3")) {};
+	public static Colour GENERIC_WETNESS_FOUR = new Colour(false, Util.newColour(0x99ebff), Util.newColour(0x99ebff), "синий", Util.newArrayListOfValues("wetness4")) {};
+	public static Colour GENERIC_WETNESS_FIVE = new Colour(false, Util.newColour(0x7cccff), Util.newColour(0x7cccff), "синий", Util.newArrayListOfValues("wetness5")) {};
+	public static Colour GENERIC_WETNESS_SIX = new Colour(false, Util.newColour(0x79acff), Util.newColour(0x79acff), "синий", Util.newArrayListOfValues("wetness6")) {};
+	public static Colour GENERIC_WETNESS_SEVEN = new Colour(false, Util.newColour(0x649fff), Util.newColour(0x649fff), "синий", Util.newArrayListOfValues("wetness7")) {};
+	public static Colour GENERIC_WETNESS_EIGHT = new Colour(false, Util.newColour(0x488eff), Util.newColour(0x488eff), "синий", Util.newArrayListOfValues("wetness8")) {};
 	
-	public static Colour WETNESS = new Colour(false, BaseColour.BLUE_LIGHT, "light blue", Util.newArrayListOfValues("wetness", "wet", "tfWetness", "tfWet")) {};
-	public static Colour PLASTICITY = new Colour(false, BaseColour.INDIGO, "lilac", Util.newArrayListOfValues("plasticity", "tfPlasticity")) {};
-	public static Colour ELASTICITY = new Colour(false, BaseColour.PURPLE_LIGHT, "light purple", Util.newArrayListOfValues("elasticity", "tfElasticity")) {};
-	public static Colour TRANSFORMATION_GENERIC = new Colour(false, BaseColour.GREEN_LIME, "lime", Util.newArrayListOfValues("tfGeneric", "tfBase", "genericTF")) {};
-	public static Colour TRANSFORMATION_SEXUAL = new Colour(false, BaseColour.PINK_LIGHT, "pink", Util.newArrayListOfValues("tfSex", "tfSexual", "sexualTF")) {};
-	public static Colour TRANSFORMATION_HUMAN = new Colour(false, BaseColour.BLUE_STEEL, "pale blue", Util.newArrayListOfValues("tfHuman")) {};
-	public static Colour TRANSFORMATION_PARTIAL = new Colour(false, Util.newColour(0xff80bf), Util.newColour(0xff80bf), "purple", Util.newArrayListOfValues("tfPartial")) {};
-	public static Colour TRANSFORMATION_PARTIAL_FULL = new Colour(false, Util.newColour(0xff1a8c), Util.newColour(0xff1a8c), "purple", Util.newArrayListOfValues("tfMinor")) {};
-	public static Colour TRANSFORMATION_LESSER = new Colour(false, Util.newColour(0xe600ac), Util.newColour(0xe600ac), "purple", Util.newArrayListOfValues("tfLesser")) {};
-	public static Colour TRANSFORMATION_GREATER = new Colour(false, Util.newColour(0xd411d4), Util.newColour(0xd411d4), "purple-pink", Util.newArrayListOfValues("tfGreater")) {};
+	public static Colour WETNESS = new Colour(false, BaseColour.BLUE_LIGHT, "светло-синий", Util.newArrayListOfValues("wetness", "wet", "tfWetness", "tfWet")) {};
+	public static Colour PLASTICITY = new Colour(false, BaseColour.INDIGO, "сиреневый", Util.newArrayListOfValues("plasticity", "tfPlasticity")) {};
+	public static Colour ELASTICITY = new Colour(false, BaseColour.PURPLE_LIGHT, "светло-пурпурный", Util.newArrayListOfValues("elasticity", "tfElasticity")) {};
+	public static Colour TRANSFORMATION_GENERIC = new Colour(false, BaseColour.GREEN_LIME, "лаймовый", Util.newArrayListOfValues("tfGeneric", "tfBase", "genericTF")) {};
+	public static Colour TRANSFORMATION_SEXUAL = new Colour(false, BaseColour.PINK_LIGHT, "розовый", Util.newArrayListOfValues("tfSex", "tfSexual", "sexualTF")) {};
+	public static Colour TRANSFORMATION_HUMAN = new Colour(false, BaseColour.BLUE_STEEL, "бледно-голубой", Util.newArrayListOfValues("tfHuman")) {};
+	public static Colour TRANSFORMATION_PARTIAL = new Colour(false, Util.newColour(0xff80bf), Util.newColour(0xff80bf), "пурпурный", Util.newArrayListOfValues("tfPartial")) {};
+	public static Colour TRANSFORMATION_PARTIAL_FULL = new Colour(false, Util.newColour(0xff1a8c), Util.newColour(0xff1a8c), "пурпурный", Util.newArrayListOfValues("tfMinor")) {};
+	public static Colour TRANSFORMATION_LESSER = new Colour(false, Util.newColour(0xe600ac), Util.newColour(0xe600ac), "пурпурный", Util.newArrayListOfValues("tfLesser")) {};
+	public static Colour TRANSFORMATION_GREATER = new Colour(false, Util.newColour(0xd411d4), Util.newColour(0xd411d4), "пурпурно-розовый", Util.newArrayListOfValues("tfGreater")) {};
 
 	// Speech colours:
 //	public static Colour MASCULINE_PLUS_NPC = new Colour(false, BaseColour.BLUE, "blue") {};
@@ -359,34 +359,34 @@ public class PresetColour {
 	public static Colour FEMININE_PLUS_NPC = new Colour(false, Util.newColour(0xFF85FF), Util.newColour(0xFF85FF), "pink") {};
 	
 	// Combat colours:
-	public static Colour DAMAGE_TYPE_UNARMED = new Colour(false, Util.newColour(0xedd6ba), Util.newColour(0xDC8D2E), "tan", Util.newArrayListOfValues("unarmed")) {};
-	public static Colour DAMAGE_TYPE_MELEE = new Colour(false, Util.newColour(0xea98a1), Util.newColour(0xDD1D40), "light red", Util.newArrayListOfValues("melee")) {};
-	public static Colour DAMAGE_TYPE_RANGED = new Colour(false, Util.newColour(0xd2f2ff), Util.newColour(0x00A7D1), "light blue", Util.newArrayListOfValues("ranged")) {};
+	public static Colour DAMAGE_TYPE_UNARMED = new Colour(false, Util.newColour(0xedd6ba), Util.newColour(0xDC8D2E), "бежевый", Util.newArrayListOfValues("unarmed")) {};
+	public static Colour DAMAGE_TYPE_MELEE = new Colour(false, Util.newColour(0xea98a1), Util.newColour(0xDD1D40), "светло-красный", Util.newArrayListOfValues("melee")) {};
+	public static Colour DAMAGE_TYPE_RANGED = new Colour(false, Util.newColour(0xd2f2ff), Util.newColour(0x00A7D1), "светло-синий", Util.newArrayListOfValues("ranged")) {};
 	
-	public static Colour DAMAGE_TYPE_PHYSICAL = new Colour(false, Util.newColour(0xA79E90), Util.newColour(0x5C4D42), "grey-brown", Util.newArrayListOfValues("dmgPhysical", "resPhysical", "physical")) {};
-	public static Colour DAMAGE_TYPE_MANA = new Colour(false, BaseColour.PURPLE_LIGHT, "purple", Util.newArrayListOfValues("dmgMana", "resMana")) {};
-	public static Colour DAMAGE_TYPE_LUST = new Colour(false, BaseColour.PINK_LIGHT, "light pink", Util.newArrayListOfValues("dmgLust", "resLust")) {};
-	public static Colour DAMAGE_TYPE_SPELL = new Colour(false, Util.newColour(0xFF6BDA), Util.newColour(0xFF6BDA), "pink", Util.newArrayListOfValues("dmgSpell", "resSpell", "spell", "spells")) {};
-	public static Colour DAMAGE_TYPE_FIRE = new Colour(false, Util.newColour(0xff9955), Util.newColour(0xff9955), "orange", Util.newArrayListOfValues("dmgFire", "resFire", "fire")) {};
-	public static Colour DAMAGE_TYPE_COLD = new Colour(false, Util.newColour(0x85C6FF), Util.newColour(0x85C6FF), "blue", Util.newArrayListOfValues("dmgCold", "resCold", "cold", "ice")) {};
-	public static Colour DAMAGE_TYPE_POISON = new Colour(false, Util.newColour(0x85FF8B), Util.newColour(0x85FF8B), "green", Util.newArrayListOfValues("dmgPoison", "resPoison", "poison")) {};
-	public static Colour DAMAGE_TYPE_PURE = new Colour(false, Util.newColour(0xFFCC00), Util.newColour(0xFFCC00), "gold", Util.newArrayListOfValues("dmgPure", "resPure", "pure")) {};
+	public static Colour DAMAGE_TYPE_PHYSICAL = new Colour(false, Util.newColour(0xA79E90), Util.newColour(0x5C4D42), "серо-коричневый", Util.newArrayListOfValues("dmgPhysical", "resPhysical", "physical")) {};
+	public static Colour DAMAGE_TYPE_MANA = new Colour(false, BaseColour.PURPLE_LIGHT, "пурпурный", Util.newArrayListOfValues("dmgMana", "resMana")) {};
+	public static Colour DAMAGE_TYPE_LUST = new Colour(false, BaseColour.PINK_LIGHT, "светло-розовый", Util.newArrayListOfValues("dmgLust", "resLust")) {};
+	public static Colour DAMAGE_TYPE_SPELL = new Colour(false, Util.newColour(0xFF6BDA), Util.newColour(0xFF6BDA), "розовый", Util.newArrayListOfValues("dmgSpell", "resSpell", "spell", "spells")) {};
+	public static Colour DAMAGE_TYPE_FIRE = new Colour(false, Util.newColour(0xff9955), Util.newColour(0xff9955), "оранжевый", Util.newArrayListOfValues("dmgFire", "resFire", "fire")) {};
+	public static Colour DAMAGE_TYPE_COLD = new Colour(false, Util.newColour(0x85C6FF), Util.newColour(0x85C6FF), "синий", Util.newArrayListOfValues("dmgCold", "resCold", "cold", "ice")) {};
+	public static Colour DAMAGE_TYPE_POISON = new Colour(false, Util.newColour(0x85FF8B), Util.newColour(0x85FF8B), "зеленый", Util.newArrayListOfValues("dmgPoison", "resPoison", "poison")) {};
+	public static Colour DAMAGE_TYPE_PURE = new Colour(false, Util.newColour(0xFFCC00), Util.newColour(0xFFCC00), "золотой", Util.newArrayListOfValues("dmgPure", "resPure", "pure")) {};
 
-	public static Colour SPELL_SCHOOL_FIRE = new Colour(false, BaseColour.ORANGE, "orange", Util.newArrayListOfValues("spellFire", "schoolFire")) {};
-	public static Colour SPELL_SCHOOL_WATER = new Colour(false, BaseColour.AQUA, "aqua", Util.newArrayListOfValues("water", "spellWater", "schoolWater")) {};
-	public static Colour SPELL_SCHOOL_EARTH = new Colour(false, BaseColour.BROWN, "brown", Util.newArrayListOfValues("earth", "spellEarth", "schoolEarth")) {};
-	public static Colour SPELL_SCHOOL_AIR = new Colour(false, BaseColour.BLUE_LIGHT, "light blue", Util.newArrayListOfValues("air", "spellAir", "schoolAir")) {};
-	public static Colour SPELL_SCHOOL_ARCANE = new Colour(false, BaseColour.PINK, "pink", Util.newArrayListOfValues("spellArcane", "schoolArcane")) {};
+	public static Colour SPELL_SCHOOL_FIRE = new Colour(false, BaseColour.ORANGE, "оранжевый", Util.newArrayListOfValues("spellFire", "schoolFire")) {};
+	public static Colour SPELL_SCHOOL_WATER = new Colour(false, BaseColour.AQUA, "аква", Util.newArrayListOfValues("water", "spellWater", "schoolWater")) {};
+	public static Colour SPELL_SCHOOL_EARTH = new Colour(false, BaseColour.BROWN, "коричневый", Util.newArrayListOfValues("earth", "spellEarth", "schoolEarth")) {};
+	public static Colour SPELL_SCHOOL_AIR = new Colour(false, BaseColour.BLUE_LIGHT, "светло-синий", Util.newArrayListOfValues("air", "spellAir", "schoolAir")) {};
+	public static Colour SPELL_SCHOOL_ARCANE = new Colour(false, BaseColour.PINK, "розовый", Util.newArrayListOfValues("spellArcane", "schoolArcane")) {};
 	
 	// Rarity colours:
-	public static Colour RARITY_UNKNOWN = new Colour(false, BaseColour.BLACK, "grey") {};
-	public static Colour RARITY_JINXED = new Colour(false, BaseColour.RED, "red", Util.newArrayListOfValues("jinx", "jinxed")) {};
-	public static Colour RARITY_COMMON = new Colour(false, Util.newColour(0xf2f2f2), Util.newColour(0xf2f2f2), "white", Util.newArrayListOfValues("common")) {};
-	public static Colour RARITY_UNCOMMON = new Colour(false, Util.newColour(0x57f17c), Util.newColour(0x108228), "green", Util.newArrayListOfValues("uncommon")) {};
-	public static Colour RARITY_RARE = new Colour(false, Util.newColour(0x47C2FF), Util.newColour(0x47C2FF), "blue", Util.newArrayListOfValues("rare")) {};
-	public static Colour RARITY_EPIC = new Colour(false, Util.newColour(0xFF4DFC), Util.newColour(0xFF4DFC), "purple", Util.newArrayListOfValues("epic")) {};
-	public static Colour RARITY_LEGENDARY = new Colour(false, Util.newColour(0xffcc00), Util.newColour(0xffcc00), "gold", Util.newArrayListOfValues("legendary")) {};
-	public static Colour RARITY_QUEST = new Colour(false, BaseColour.TEAL, "teal", Util.newArrayListOfValues("teal")) {};
+	public static Colour RARITY_UNKNOWN = new Colour(false, BaseColour.BLACK, "серый") {};
+	public static Colour RARITY_JINXED = new Colour(false, BaseColour.RED, "красный", Util.newArrayListOfValues("jinx", "jinxed")) {};
+	public static Colour RARITY_COMMON = new Colour(false, Util.newColour(0xf2f2f2), Util.newColour(0xf2f2f2), "белый", Util.newArrayListOfValues("common")) {};
+	public static Colour RARITY_UNCOMMON = new Colour(false, Util.newColour(0x57f17c), Util.newColour(0x108228), "зеленый", Util.newArrayListOfValues("uncommon")) {};
+	public static Colour RARITY_RARE = new Colour(false, Util.newColour(0x47C2FF), Util.newColour(0x47C2FF), "синий", Util.newArrayListOfValues("rare")) {};
+	public static Colour RARITY_EPIC = new Colour(false, Util.newColour(0xFF4DFC), Util.newColour(0xFF4DFC), "пурпурный", Util.newArrayListOfValues("epic")) {};
+	public static Colour RARITY_LEGENDARY = new Colour(false, Util.newColour(0xffcc00), Util.newColour(0xffcc00), "золотой", Util.newArrayListOfValues("legendary")) {};
+	public static Colour RARITY_QUEST = new Colour(false, BaseColour.TEAL, "бирюзовый", Util.newArrayListOfValues("teal")) {};
 
 	public static Colour RARITY_UNKNOWN_BACKGROUND = new Colour(false, Util.newColour(0x252527), Util.newColour(0xAFAFB6), "grey") {};
 	public static Colour RARITY_JINXED_BACKGROUND = new Colour(false, Util.newColour(0x694b4e), Util.newColour(0xE3B5B5), "red") {};
@@ -398,34 +398,34 @@ public class PresetColour {
 	public static Colour RARITY_QUEST_BACKGROUND = new Colour(false, Util.newColour(0x344C4B), Util.newColour(0xBEE4E4), "teal") {};
 
 	// Inventory colours:
-	public static Colour CURRENCY_GOLD = new Colour(true, BaseColour.GOLD, "gold", Util.newArrayListOfValues("money", "currency", "currencyGold")) {};
-	public static Colour CURRENCY_SILVER = new Colour(true, BaseColour.SILVER, "silver", Util.newArrayListOfValues("currencySilver")) {};
-	public static Colour CURRENCY_COPPER = new Colour(true, BaseColour.COPPER, "copper", Util.newArrayListOfValues("currencyCopper")) {};
+	public static Colour CURRENCY_GOLD = new Colour(true, BaseColour.GOLD, "золотой", Util.newArrayListOfValues("money", "currency", "currencyGold")) {};
+	public static Colour CURRENCY_SILVER = new Colour(true, BaseColour.SILVER, "серебристый", Util.newArrayListOfValues("currencySilver")) {};
+	public static Colour CURRENCY_COPPER = new Colour(true, BaseColour.COPPER, "медный", Util.newArrayListOfValues("currencyCopper")) {};
 
-	public static Colour MILK = new Colour(false, BaseColour.YELLOW_PALE, "pale yellow", Util.newArrayListOfValues("milk", "lactation")) {};
-	public static Colour CUM = new Colour(false, BaseColour.BLUE_PALE, "pale blue", Util.newArrayListOfValues("cum", "cummed")) {};
-	public static Colour GIRLCUM = new Colour(false, BaseColour.PINK_PALE, "pale pink", Util.newArrayListOfValues("girlcum", "gcum")) {};
+	public static Colour MILK = new Colour(false, BaseColour.YELLOW_PALE, "бледно-желтый", Util.newArrayListOfValues("milk", "lactation")) {};
+	public static Colour CUM = new Colour(false, BaseColour.BLUE_PALE, "бледно-голубой", Util.newArrayListOfValues("cum", "cummed")) {};
+	public static Colour GIRLCUM = new Colour(false, BaseColour.PINK_PALE, "бледно-розовый", Util.newArrayListOfValues("girlcum", "gcum")) {};
 
-	public static Colour EGG = new Colour(false, BaseColour.YELLOW_PALE, "pale yellow", Util.newArrayListOfValues("egg")) {};
+	public static Colour EGG = new Colour(false, BaseColour.YELLOW_PALE, "бледно-желтый", Util.newArrayListOfValues("egg")) {};
 	
-	public static Colour VAGINA = new Colour(false, BaseColour.PINK, "pink", Util.newArrayListOfValues("vagina", "pussy", "cunt")) {};
-	public static Colour ANUS = new Colour(false, BaseColour.PINK_DEEP, "deep pink", Util.newArrayListOfValues("asshole", "anus", "ass")) {};
-	public static Colour PENIS = new Colour(false, BaseColour.PURPLE, "purple", Util.newArrayListOfValues("penis", "cock")) {};
-	public static Colour NIPPLES = new Colour(false, BaseColour.PINK_LIGHT, "light pink", Util.newArrayListOfValues("nipples", "nipple")) {};
-	public static Colour NIPPLES_CROTCH = new Colour(false, BaseColour.PURPLE_LIGHT, "light purple", Util.newArrayListOfValues("nipplesCrotch", "crotchNipples", "nippleCrotch", "crotchNipple")) {};
-	public static Colour URETHRA_PENIS = new Colour(false, BaseColour.PINK_SALMON, "salmon-pink", Util.newArrayListOfValues("penisUrethra", "urethraPenis", "urethra")) {};
-	public static Colour UREHTRA_VAGINA = new Colour(false, BaseColour.LILAC, "lilac", Util.newArrayListOfValues("vaginaUrethra", "urethraVagina")) {};
-	public static Colour MOUTH = new Colour(false, BaseColour.LILAC_LIGHT, "pale lilac", Util.newArrayListOfValues("mouth", "throat")) {};
+	public static Colour VAGINA = new Colour(false, BaseColour.PINK, "розовый", Util.newArrayListOfValues("vagina", "pussy", "cunt")) {};
+	public static Colour ANUS = new Colour(false, BaseColour.PINK_DEEP, "ярко-розовый", Util.newArrayListOfValues("asshole", "anus", "ass")) {};
+	public static Colour PENIS = new Colour(false, BaseColour.PURPLE, "пурпурный", Util.newArrayListOfValues("penis", "cock")) {};
+	public static Colour NIPPLES = new Colour(false, BaseColour.PINK_LIGHT, "светло-розовый", Util.newArrayListOfValues("nipples", "nipple")) {};
+	public static Colour NIPPLES_CROTCH = new Colour(false, BaseColour.PURPLE_LIGHT, "светло-пурпурный", Util.newArrayListOfValues("nipplesCrotch", "crotchNipples", "nippleCrotch", "crotchNipple")) {};
+	public static Colour URETHRA_PENIS = new Colour(false, BaseColour.PINK_SALMON, "лососево-розовый", Util.newArrayListOfValues("penisUrethra", "urethraPenis", "urethra")) {};
+	public static Colour UREHTRA_VAGINA = new Colour(false, BaseColour.LILAC, "сиреневый", Util.newArrayListOfValues("vaginaUrethra", "urethraVagina")) {};
+	public static Colour MOUTH = new Colour(false, BaseColour.LILAC_LIGHT, "бледно-сиреневый", Util.newArrayListOfValues("mouth", "throat")) {};
 
-	public static Colour DIRTY = new Colour(false, BaseColour.YELLOW_LIGHT, "light yellow", Util.newArrayListOfValues("dirty")) {};
-	public static Colour SEALED = new Colour(false, BaseColour.PINK_DEEP, "pink", Util.newArrayListOfValues("seal", "sealed")) {};
-	public static Colour DISPLACED = new Colour(false, BaseColour.CRIMSON, "crimson", Util.newArrayListOfValues("displaced")) {};
+	public static Colour DIRTY = new Colour(false, BaseColour.YELLOW_LIGHT, "светло-желтый", Util.newArrayListOfValues("dirty")) {};
+	public static Colour SEALED = new Colour(false, BaseColour.PINK_DEEP, "розовый", Util.newArrayListOfValues("seal", "sealed")) {};
+	public static Colour DISPLACED = new Colour(false, BaseColour.CRIMSON, "малиновый", Util.newArrayListOfValues("displaced")) {};
 
 	// Text colours:
-	public static Colour TEXT = new Colour(false, Util.newColour(0xDDDDDD), Util.newColour(0x262626), "grey", Util.newArrayListOfValues("text")) {};
-	public static Colour TEXT_HALF_GREY = new Colour(false, Util.newColour(0xBBBBBB), Util.newColour(0x444444), "grey", Util.newArrayListOfValues("halfDisabled")) {};
-	public static Colour TEXT_GREY = new Colour(false, Util.newColour(0x777777), Util.newColour(0x777777), "grey", Util.newArrayListOfValues("disabled")) {};
-	public static Colour TEXT_GREY_DARK = new Colour(false, Util.newColour(0x444444), Util.newColour(0xcccccc), "grey", Util.newArrayListOfValues("disabledDark")) {};
+	public static Colour TEXT = new Colour(false, Util.newColour(0xDDDDDD), Util.newColour(0x262626), "серый", Util.newArrayListOfValues("text")) {};
+	public static Colour TEXT_HALF_GREY = new Colour(false, Util.newColour(0xBBBBBB), Util.newColour(0x444444), "серый", Util.newArrayListOfValues("halfDisabled")) {};
+	public static Colour TEXT_GREY = new Colour(false, Util.newColour(0x777777), Util.newColour(0x777777), "серый", Util.newArrayListOfValues("disabled")) {};
+	public static Colour TEXT_GREY_DARK = new Colour(false, Util.newColour(0x444444), Util.newColour(0xcccccc), "серый", Util.newArrayListOfValues("disabledDark")) {};
 
 	
 	// Standard colours used for clothing:
@@ -484,13 +484,13 @@ public class PresetColour {
 	public static Colour CLOTHING_GUNMETAL = new Colour(true, Util.newColour(0x555555), Util.newColour(0x555555), "gunmetal gray") {};
 	public static Colour CLOTHING_STEEL = new Colour(true, Util.newColour(0x969696), Util.newColour(0x969696), "steel") {};
 	public static Colour CLOTHING_IRON = new Colour(true, Util.newColour(0xa9a39b), Util.newColour(0xa9a39b), "iron") {};
-	public static Colour CLOTHING_BRASS = new Colour(true, BaseColour.BRASS, "brass") {};
-	public static Colour CLOTHING_COPPER = new Colour(true, Util.newColour(0xD46F2B), Util.newColour(0xD46F2B), "copper", Util.newArrayListOfValues("copper")) {};
-	public static Colour CLOTHING_SILVER = new Colour(true, Util.newColour(0xC4C4C4), Util.newColour(0xC4C4C4), "silver", Util.newArrayListOfValues("silver")) {};
-	public static Colour CLOTHING_BRONZE = new Colour(true, BaseColour.BRONZE, "bronze", Util.newArrayListOfValues("bronze")) {};
+	public static Colour CLOTHING_BRASS = new Colour(true, BaseColour.BRASS, "латунный") {};
+	public static Colour CLOTHING_COPPER = new Colour(true, Util.newColour(0xD46F2B), Util.newColour(0xD46F2B), "медный", Util.newArrayListOfValues("copper")) {};
+	public static Colour CLOTHING_SILVER = new Colour(true, Util.newColour(0xC4C4C4), Util.newColour(0xC4C4C4), "серебристый", Util.newArrayListOfValues("silver")) {};
+	public static Colour CLOTHING_BRONZE = new Colour(true, BaseColour.BRONZE, "бронзовый", Util.newArrayListOfValues("bronze")) {};
 	public static Colour CLOTHING_GOLD = new Colour(true, Util.newColour(0xEBC633), Util.newColour(0xEBC633), "gold") {};
-	public static Colour CLOTHING_ROSE_GOLD = new Colour(true, BaseColour.ROSE_GOLD, "rose gold") {};
-	public static Colour CLOTHING_PLATINUM = new Colour(true, BaseColour.PLATINUM, "platinum") {};
+	public static Colour CLOTHING_ROSE_GOLD = new Colour(true, BaseColour.ROSE_GOLD, "розовое золото") {};
+	public static Colour CLOTHING_PLATINUM = new Colour(true, BaseColour.PLATINUM, "платиновый") {};
 	
 	
 	// Body parts:
@@ -501,117 +501,117 @@ public class PresetColour {
 	public static Colour SKIN_LIGHT = new Colour(false, Util.newColour(0xEFDBD7), Util.newColour(0x534946), "light") {}.setLinkedColourLighter(SKIN_PALE);
 	public static Colour SKIN_PORCELAIN = new Colour(false, Util.newColour(0xDBCDB9), Util.newColour(0xDBCDB9), "porcelain") {}.setLinkedColourLighter(SKIN_LIGHT);
 	public static Colour SKIN_ROSY = new Colour(false, Util.newColour(0xDDAA93), Util.newColour(0xDDAA93), "rosy") {}.setLinkedColourLighter(SKIN_PORCELAIN);
-	public static Colour SKIN_OLIVE = new Colour(false, BaseColour.TAN, "olive") {}.setLinkedColourLighter(SKIN_ROSY);
+	public static Colour SKIN_OLIVE = new Colour(false, BaseColour.TAN, "оливковый") {}.setLinkedColourLighter(SKIN_ROSY);
 	public static Colour SKIN_TANNED = new Colour(false, Util.newColour(0xC39D6B), Util.newColour(0xC39D6B), "tanned") {}.setLinkedColourLighter(SKIN_OLIVE);
-	public static Colour SKIN_DARK = new Colour(false, BaseColour.BROWN_DARK, "dark") {}.setLinkedColourLighter(SKIN_TANNED);
+	public static Colour SKIN_DARK = new Colour(false, BaseColour.BROWN_DARK, "тёмный") {}.setLinkedColourLighter(SKIN_TANNED);
 	public static Colour SKIN_CHOCOLATE = new Colour(false, Util.newColour(0x59372D), Util.newColour(0x59372D), "chocolate") {}.setLinkedColourLighter(SKIN_DARK);
-	public static Colour SKIN_EBONY = new Colour(false, BaseColour.BLACK, "ebony") {}.setLinkedColourLighter(SKIN_CHOCOLATE);
+	public static Colour SKIN_EBONY = new Colour(false, BaseColour.BLACK, "эбеновый") {}.setLinkedColourLighter(SKIN_CHOCOLATE);
 	// Monochrome:
-	public static Colour SKIN_IVORY = new Colour(false, BaseColour.WHITE, "ivory") {};
-	public static Colour SKIN_GREY = new Colour(false, BaseColour.GREY, "grey") {}.setLinkedColourLighter(SKIN_IVORY);
-	public static Colour SKIN_JET_BLACK = new Colour(false, BaseColour.BLACK, "pitch black") { public String getCoveringIconColour() { return BaseColour.PITCH_BLACK.toWebHexString(); } }.setLinkedColourLighter(SKIN_GREY);
+	public static Colour SKIN_IVORY = new Colour(false, BaseColour.WHITE, "слоновая кость") {};
+	public static Colour SKIN_GREY = new Colour(false, BaseColour.GREY, "серый") {}.setLinkedColourLighter(SKIN_IVORY);
+	public static Colour SKIN_JET_BLACK = new Colour(false, BaseColour.BLACK, "угольно-чёрный") { public String getCoveringIconColour() { return BaseColour.PITCH_BLACK.toWebHexString(); } }.setLinkedColourLighter(SKIN_GREY);
 	// Pink:
-	public static Colour SKIN_PINK_PALE = new Colour(false, BaseColour.PINK_PALE, "pale pink") {};
-	public static Colour SKIN_PINK_LIGHT = new Colour(false, BaseColour.PINK_LIGHT, "light pink") {}.setLinkedColourLighter(SKIN_PINK_PALE);
-	public static Colour SKIN_PINK = new Colour(false, BaseColour.PINK, "pink") {}.setLinkedColourLighter(SKIN_PINK_LIGHT);
+	public static Colour SKIN_PINK_PALE = new Colour(false, BaseColour.PINK_PALE, "бледно-розовый") {};
+	public static Colour SKIN_PINK_LIGHT = new Colour(false, BaseColour.PINK_LIGHT, "светло-розовый") {}.setLinkedColourLighter(SKIN_PINK_PALE);
+	public static Colour SKIN_PINK = new Colour(false, BaseColour.PINK, "розовый") {}.setLinkedColourLighter(SKIN_PINK_LIGHT);
 	// Red:
-	public static Colour SKIN_RED = new Colour(false, BaseColour.CRIMSON, "scarlet") {};
-	public static Colour SKIN_RED_DARK = new Colour(false, BaseColour.RED_DARK, "dark red") {}.setLinkedColourLighter(SKIN_RED);
+	public static Colour SKIN_RED = new Colour(false, BaseColour.CRIMSON, "алый") {};
+	public static Colour SKIN_RED_DARK = new Colour(false, BaseColour.RED_DARK, "темно-красный") {}.setLinkedColourLighter(SKIN_RED);
 	// Brown:
-	public static Colour SKIN_BROWN = new Colour(false, BaseColour.BROWN, "brown") {};
+	public static Colour SKIN_BROWN = new Colour(false, BaseColour.BROWN, "коричневый") {};
 	// Orange:
-	public static Colour SKIN_ORANGE = new Colour(false, BaseColour.ORANGE, "orange") {};
+	public static Colour SKIN_ORANGE = new Colour(false, BaseColour.ORANGE, "оранжевый") {};
 	// Yellow:
-	public static Colour SKIN_YELLOW = new Colour(false, BaseColour.YELLOW, "yellow") {};
-	public static Colour SKIN_AMBER = new Colour(false, BaseColour.AMBER, "amber") {}.setLinkedColourLighter(SKIN_YELLOW);
+	public static Colour SKIN_YELLOW = new Colour(false, BaseColour.YELLOW, "желтый") {};
+	public static Colour SKIN_AMBER = new Colour(false, BaseColour.AMBER, "янтарный") {}.setLinkedColourLighter(SKIN_YELLOW);
 	// Green:
-	public static Colour SKIN_GREEN_LIGHT = new Colour(false, BaseColour.GREEN_LIGHT, "light green") {};
-	public static Colour SKIN_GREEN = new Colour(false, BaseColour.GREEN, "green") {}.setLinkedColourLighter(SKIN_GREEN_LIGHT);
-	public static Colour SKIN_GREEN_DARK = new Colour(false, BaseColour.GREEN_DARK, "dark green") {}.setLinkedColourLighter(SKIN_GREEN);
+	public static Colour SKIN_GREEN_LIGHT = new Colour(false, BaseColour.GREEN_LIGHT, "светло-зеленый") {};
+	public static Colour SKIN_GREEN = new Colour(false, BaseColour.GREEN, "зеленый") {}.setLinkedColourLighter(SKIN_GREEN_LIGHT);
+	public static Colour SKIN_GREEN_DARK = new Colour(false, BaseColour.GREEN_DARK, "темно-зеленый") {}.setLinkedColourLighter(SKIN_GREEN);
 	// Blue:
-	public static Colour SKIN_BLUE_LIGHT = new Colour(false, BaseColour.BLUE_LIGHT, "light blue") {};
-	public static Colour SKIN_BLUE = new Colour(false, BaseColour.BLUE, "blue") {}.setLinkedColourLighter(SKIN_BLUE_LIGHT);
-	public static Colour SKIN_BLUE_DARK = new Colour(false, BaseColour.BLUE_DARK, "dark blue") {}.setLinkedColourLighter(SKIN_BLUE);
+	public static Colour SKIN_BLUE_LIGHT = new Colour(false, BaseColour.BLUE_LIGHT, "светло-синий") {};
+	public static Colour SKIN_BLUE = new Colour(false, BaseColour.BLUE, "синий") {}.setLinkedColourLighter(SKIN_BLUE_LIGHT);
+	public static Colour SKIN_BLUE_DARK = new Colour(false, BaseColour.BLUE_DARK, "тёмно-синий") {}.setLinkedColourLighter(SKIN_BLUE);
 	// Purple:
-	public static Colour SKIN_PERIWINKLE = new Colour(false, BaseColour.PERIWINKLE, "periwinkle") {};
-	public static Colour SKIN_LILAC_LIGHT = new Colour(false, BaseColour.LILAC_LIGHT, "pale lilac") {}.setLinkedColourLighter(SKIN_PERIWINKLE);
-	public static Colour SKIN_LILAC = new Colour(false, BaseColour.LILAC, "lilac") {}.setLinkedColourLighter(SKIN_LILAC_LIGHT);
-	public static Colour SKIN_INDIGO = new Colour(false, BaseColour.INDIGO, "indigo") {}.setLinkedColourLighter(SKIN_LILAC);
-	public static Colour SKIN_PURPLE_LIGHT = new Colour(false, BaseColour.PURPLE_LIGHT, "light purple") {}.setLinkedColourLighter(SKIN_INDIGO);
-	public static Colour SKIN_PURPLE = new Colour(false, BaseColour.PURPLE, "purple") {}.setLinkedColourLighter(SKIN_PURPLE_LIGHT);
-	public static Colour SKIN_PURPLE_DARK = new Colour(false, BaseColour.PURPLE_DARK, "dark purple") {}.setLinkedColourLighter(SKIN_PURPLE);
+	public static Colour SKIN_PERIWINKLE = new Colour(false, BaseColour.PERIWINKLE, "барвинковый") {};
+	public static Colour SKIN_LILAC_LIGHT = new Colour(false, BaseColour.LILAC_LIGHT, "бледно-сиреневый") {}.setLinkedColourLighter(SKIN_PERIWINKLE);
+	public static Colour SKIN_LILAC = new Colour(false, BaseColour.LILAC, "сиреневый") {}.setLinkedColourLighter(SKIN_LILAC_LIGHT);
+	public static Colour SKIN_INDIGO = new Colour(false, BaseColour.INDIGO, "индиго") {}.setLinkedColourLighter(SKIN_LILAC);
+	public static Colour SKIN_PURPLE_LIGHT = new Colour(false, BaseColour.PURPLE_LIGHT, "светло-пурпурный") {}.setLinkedColourLighter(SKIN_INDIGO);
+	public static Colour SKIN_PURPLE = new Colour(false, BaseColour.PURPLE, "пурпурный") {}.setLinkedColourLighter(SKIN_PURPLE_LIGHT);
+	public static Colour SKIN_PURPLE_DARK = new Colour(false, BaseColour.PURPLE_DARK, "тёмно-фиолетовый") {}.setLinkedColourLighter(SKIN_PURPLE);
 	
 	// Orifices:
 	public static Colour ORIFICE_INTERIOR = new Colour(false, Util.newColour(0xfaa9ae), Util.newColour(0xfaa9ae), "flesh") {};
 
 	// Misc:
-	public static Colour TONGUE = new Colour(false, BaseColour.ROSE, "pink") {};
+	public static Colour TONGUE = new Colour(false, BaseColour.ROSE, "розовый") {};
 
 	// Generic colours:
 	
 	// Metallic:
-	public static Colour COVERING_BRONZE = new Colour(true, BaseColour.BRONZE, "metallic bronze") {};
-	public static Colour COVERING_SILVER = new Colour(true, BaseColour.GREY, "metallic silver") {};
-	public static Colour COVERING_GOLD = new Colour(true, BaseColour.GOLD, "metallic gold") {};
-	public static Colour COVERING_PLATINUM = new Colour(true, BaseColour.PLATINUM, "metallic platinum") {};
-	public static Colour COVERING_ROSE_GOLD = new Colour(true, BaseColour.ROSE_GOLD, "metallic rose gold") {};
-	public static Colour COVERING_COPPER = new Colour(true, BaseColour.COPPER, "metallic copper") {};
-	public static Colour COVERING_BRASS = new Colour(true, BaseColour.BRASS, "metallic brass") {};
+	public static Colour COVERING_BRONZE = new Colour(true, BaseColour.BRONZE, "металлический бронзовый") {};
+	public static Colour COVERING_SILVER = new Colour(true, BaseColour.GREY, "металлический серебряный") {};
+	public static Colour COVERING_GOLD = new Colour(true, BaseColour.GOLD, "металлический золотой") {};
+	public static Colour COVERING_PLATINUM = new Colour(true, BaseColour.PLATINUM, "металлический платиновый") {};
+	public static Colour COVERING_ROSE_GOLD = new Colour(true, BaseColour.ROSE_GOLD, "металлический розовое золото") {};
+	public static Colour COVERING_COPPER = new Colour(true, BaseColour.COPPER, "металлический медный") {};
+	public static Colour COVERING_BRASS = new Colour(true, BaseColour.BRASS, "металлический латунный") {};
 	public static Colour COVERING_STEEL = new Colour(true, Util.newColour(0x969696), Util.newColour(0x969696), "metallic steel") {};
 	public static Colour COVERING_BLACK_STEEL = new Colour(true, Util.newColour(0x555555), Util.newColour(0x111111), "metallic black steel") {};
 	// Monochrome:
-	public static Colour COVERING_WHITE = new Colour(false, BaseColour.WHITE, "white") {};
-	public static Colour COVERING_GREY = new Colour(false, BaseColour.GREY, "grey") {}.setLinkedColourLighter(COVERING_WHITE);
-	public static Colour COVERING_DARK_GREY = new Colour(false, BaseColour.GREY_DARK, "dark-grey") {}.setLinkedColourLighter(COVERING_GREY);
-	public static Colour COVERING_BLACK = new Colour(false, BaseColour.BLACK, "black") {}.setLinkedColourLighter(COVERING_DARK_GREY);
-	public static Colour COVERING_JET_BLACK = new Colour(false, BaseColour.BLACK, "pitch black") { public String getCoveringIconColour() { return BaseColour.PITCH_BLACK.toWebHexString(); } }.setLinkedColourLighter(COVERING_BLACK);
+	public static Colour COVERING_WHITE = new Colour(false, BaseColour.WHITE, "белый") {};
+	public static Colour COVERING_GREY = new Colour(false, BaseColour.GREY, "серый") {}.setLinkedColourLighter(COVERING_WHITE);
+	public static Colour COVERING_DARK_GREY = new Colour(false, BaseColour.GREY_DARK, "тёмно-серый") {}.setLinkedColourLighter(COVERING_GREY);
+	public static Colour COVERING_BLACK = new Colour(false, BaseColour.BLACK, "чёрный") {}.setLinkedColourLighter(COVERING_DARK_GREY);
+	public static Colour COVERING_JET_BLACK = new Colour(false, BaseColour.BLACK, "угольно-чёрный") { public String getCoveringIconColour() { return BaseColour.PITCH_BLACK.toWebHexString(); } }.setLinkedColourLighter(COVERING_BLACK);
 	// Pink:
-	public static Colour COVERING_PINK_LIGHT = new Colour(false, BaseColour.PINK_LIGHT, "light pink") {};
-	public static Colour COVERING_PINK = new Colour(false, BaseColour.PINK, "pink") {}.setLinkedColourLighter(COVERING_PINK_LIGHT);
-	public static Colour COVERING_PINK_DARK = new Colour(false, BaseColour.PINK_DEEP, "dark pink") {}.setLinkedColourLighter(COVERING_PINK);
+	public static Colour COVERING_PINK_LIGHT = new Colour(false, BaseColour.PINK_LIGHT, "светло-розовый") {};
+	public static Colour COVERING_PINK = new Colour(false, BaseColour.PINK, "розовый") {}.setLinkedColourLighter(COVERING_PINK_LIGHT);
+	public static Colour COVERING_PINK_DARK = new Colour(false, BaseColour.PINK_DEEP, "тёмно-розовый") {}.setLinkedColourLighter(COVERING_PINK);
 	// Red:
-	public static Colour COVERING_RED_LIGHT = new Colour(false, BaseColour.RED_LIGHT, "light red") {};
-	public static Colour COVERING_RED = new Colour(false, BaseColour.RED, "red") {}.setLinkedColourLighter(COVERING_RED_LIGHT);
-	public static Colour COVERING_RED_DARK = new Colour(false, BaseColour.RED_DARK, "dark red") {}.setLinkedColourLighter(COVERING_RED);
-	public static Colour COVERING_SCARLET = new Colour(false, BaseColour.CRIMSON, "scarlet") {}.setLinkedColourLighter(COVERING_RED_DARK);
+	public static Colour COVERING_RED_LIGHT = new Colour(false, BaseColour.RED_LIGHT, "светло-красный") {};
+	public static Colour COVERING_RED = new Colour(false, BaseColour.RED, "красный") {}.setLinkedColourLighter(COVERING_RED_LIGHT);
+	public static Colour COVERING_RED_DARK = new Colour(false, BaseColour.RED_DARK, "темно-красный") {}.setLinkedColourLighter(COVERING_RED);
+	public static Colour COVERING_SCARLET = new Colour(false, BaseColour.CRIMSON, "алый") {}.setLinkedColourLighter(COVERING_RED_DARK);
 	// Brown:
-	public static Colour COVERING_TAN = new Colour(false, BaseColour.TAN, "tan") {};
-	public static Colour COVERING_BROWN_LIGHT = new Colour(false, BaseColour.BROWN_LIGHT, "light brown") {}.setLinkedColourLighter(COVERING_TAN);
-	public static Colour COVERING_BROWN = new Colour(false, BaseColour.BROWN, "brown") {}.setLinkedColourLighter(COVERING_BROWN_LIGHT);
-	public static Colour COVERING_BROWN_DARK = new Colour(false, BaseColour.BROWN_DARK, "dark brown") {}.setLinkedColourLighter(COVERING_BROWN);
+	public static Colour COVERING_TAN = new Colour(false, BaseColour.TAN, "бежевый") {};
+	public static Colour COVERING_BROWN_LIGHT = new Colour(false, BaseColour.BROWN_LIGHT, "светло-коричневый") {}.setLinkedColourLighter(COVERING_TAN);
+	public static Colour COVERING_BROWN = new Colour(false, BaseColour.BROWN, "коричневый") {}.setLinkedColourLighter(COVERING_BROWN_LIGHT);
+	public static Colour COVERING_BROWN_DARK = new Colour(false, BaseColour.BROWN_DARK, "тёмно-коричневый") {}.setLinkedColourLighter(COVERING_BROWN);
 	// Orange:
-	public static Colour COVERING_ORANGE_LIGHT = new Colour(false, BaseColour.ORANGE_LIGHT, "light orange") {};
-	public static Colour COVERING_AMBER = new Colour(false, BaseColour.AMBER, "amber") {}.setLinkedColourLighter(COVERING_ORANGE_LIGHT);
-	public static Colour COVERING_ORANGE = new Colour(false, BaseColour.ORANGE, "orange") {}.setLinkedColourLighter(COVERING_AMBER);
-	public static Colour COVERING_GINGER = new Colour(false, BaseColour.GINGER, "ginger") {}.setLinkedColourLighter(COVERING_ORANGE);
-	public static Colour COVERING_ORANGE_DARK = new Colour(false, BaseColour.ORANGE_DARK, "dark orange") {}.setLinkedColourLighter(COVERING_GINGER);
-	public static Colour COVERING_AUBURN = new Colour(false, BaseColour.AUBURN, "auburn") {}.setLinkedColourLighter(COVERING_ORANGE_DARK);
+	public static Colour COVERING_ORANGE_LIGHT = new Colour(false, BaseColour.ORANGE_LIGHT, "светло-оранжевый") {};
+	public static Colour COVERING_AMBER = new Colour(false, BaseColour.AMBER, "янтарный") {}.setLinkedColourLighter(COVERING_ORANGE_LIGHT);
+	public static Colour COVERING_ORANGE = new Colour(false, BaseColour.ORANGE, "оранжевый") {}.setLinkedColourLighter(COVERING_AMBER);
+	public static Colour COVERING_GINGER = new Colour(false, BaseColour.GINGER, "имбирный") {}.setLinkedColourLighter(COVERING_ORANGE);
+	public static Colour COVERING_ORANGE_DARK = new Colour(false, BaseColour.ORANGE_DARK, "темно-оранжевый") {}.setLinkedColourLighter(COVERING_GINGER);
+	public static Colour COVERING_AUBURN = new Colour(false, BaseColour.AUBURN, "каштановый") {}.setLinkedColourLighter(COVERING_ORANGE_DARK);
 	// Yellow:
-	public static Colour COVERING_DIRTY_BLONDE = new Colour(false, BaseColour.TAN, "dirty-blonde") {};
+	public static Colour COVERING_DIRTY_BLONDE = new Colour(false, BaseColour.TAN, "грязный блонд") {};
 	public static Colour COVERING_SANDY = new Colour(false, Util.newColour(0xddc48b), Util.newColour(0xddc48b), "sandy") {}.setLinkedColourLighter(COVERING_DIRTY_BLONDE);
-	public static Colour COVERING_YELLOW = new Colour(false, BaseColour.YELLOW, "yellow") {}.setLinkedColourLighter(COVERING_SANDY);
-	public static Colour COVERING_BLONDE = new Colour(false, BaseColour.YELLOW_LIGHT, "blonde") {}.setLinkedColourLighter(COVERING_YELLOW);
-	public static Colour COVERING_BLEACH_BLONDE = new Colour(false, BaseColour.YELLOW_PALE, "bleach-blonde") {}.setLinkedColourLighter(COVERING_BLONDE);
+	public static Colour COVERING_YELLOW = new Colour(false, BaseColour.YELLOW, "желтый") {}.setLinkedColourLighter(COVERING_SANDY);
+	public static Colour COVERING_BLONDE = new Colour(false, BaseColour.YELLOW_LIGHT, "блонд") {}.setLinkedColourLighter(COVERING_YELLOW);
+	public static Colour COVERING_BLEACH_BLONDE = new Colour(false, BaseColour.YELLOW_PALE, "обесцвеченный блонд") {}.setLinkedColourLighter(COVERING_BLONDE);
 	// Green:
-	public static Colour COVERING_GREEN_LIGHT = new Colour(false, BaseColour.GREEN_LIGHT, "light green") {};
-	public static Colour COVERING_GREEN = new Colour(false, BaseColour.GREEN, "green") {}.setLinkedColourLighter(COVERING_GREEN_LIGHT);
-	public static Colour COVERING_GREEN_DARK = new Colour(false, BaseColour.GREEN_DARK, "dark green") {}.setLinkedColourLighter(COVERING_GREEN);
+	public static Colour COVERING_GREEN_LIGHT = new Colour(false, BaseColour.GREEN_LIGHT, "светло-зеленый") {};
+	public static Colour COVERING_GREEN = new Colour(false, BaseColour.GREEN, "зеленый") {}.setLinkedColourLighter(COVERING_GREEN_LIGHT);
+	public static Colour COVERING_GREEN_DARK = new Colour(false, BaseColour.GREEN_DARK, "темно-зеленый") {}.setLinkedColourLighter(COVERING_GREEN);
 	// Blue:
-	public static Colour COVERING_BLUE_LIGHT = new Colour(false, BaseColour.BLUE_LIGHT, "light blue") {};
-	public static Colour COVERING_BLUE = new Colour(false, BaseColour.BLUE, "blue") {}.setLinkedColourLighter(COVERING_BLUE_LIGHT);
-	public static Colour COVERING_BLUE_DARK = new Colour(false, BaseColour.BLUE_DARK, "dark blue") {}.setLinkedColourLighter(COVERING_BLUE);
+	public static Colour COVERING_BLUE_LIGHT = new Colour(false, BaseColour.BLUE_LIGHT, "светло-синий") {};
+	public static Colour COVERING_BLUE = new Colour(false, BaseColour.BLUE, "синий") {}.setLinkedColourLighter(COVERING_BLUE_LIGHT);
+	public static Colour COVERING_BLUE_DARK = new Colour(false, BaseColour.BLUE_DARK, "тёмно-синий") {}.setLinkedColourLighter(COVERING_BLUE);
 	// Purple:
-	public static Colour COVERING_PERIWINKLE = new Colour(false, BaseColour.PERIWINKLE, "periwinkle") {};
-	public static Colour COVERING_LILAC_LIGHT = new Colour(false, BaseColour.LILAC_LIGHT, "pale lilac") {}.setLinkedColourLighter(COVERING_PERIWINKLE);
-	public static Colour COVERING_LILAC = new Colour(false, BaseColour.LILAC, "lilac") {}.setLinkedColourLighter(COVERING_LILAC_LIGHT);
-	public static Colour COVERING_INDIGO = new Colour(false, BaseColour.INDIGO, "indigo") {}.setLinkedColourLighter(COVERING_LILAC);
-	public static Colour COVERING_PURPLE_LIGHT = new Colour(false, BaseColour.PURPLE_LIGHT, "light purple") {}.setLinkedColourLighter(COVERING_INDIGO);
-	public static Colour COVERING_PURPLE = new Colour(false, BaseColour.PURPLE, "purple") {}.setLinkedColourLighter(COVERING_PURPLE_LIGHT);
-	public static Colour COVERING_PURPLE_DARK = new Colour(false, BaseColour.PURPLE_DARK, "dark purple") {}.setLinkedColourLighter(COVERING_PURPLE);
+	public static Colour COVERING_PERIWINKLE = new Colour(false, BaseColour.PERIWINKLE, "барвинковый") {};
+	public static Colour COVERING_LILAC_LIGHT = new Colour(false, BaseColour.LILAC_LIGHT, "бледно-сиреневый") {}.setLinkedColourLighter(COVERING_PERIWINKLE);
+	public static Colour COVERING_LILAC = new Colour(false, BaseColour.LILAC, "сиреневый") {}.setLinkedColourLighter(COVERING_LILAC_LIGHT);
+	public static Colour COVERING_INDIGO = new Colour(false, BaseColour.INDIGO, "индиго") {}.setLinkedColourLighter(COVERING_LILAC);
+	public static Colour COVERING_PURPLE_LIGHT = new Colour(false, BaseColour.PURPLE_LIGHT, "светло-пурпурный") {}.setLinkedColourLighter(COVERING_INDIGO);
+	public static Colour COVERING_PURPLE = new Colour(false, BaseColour.PURPLE, "пурпурный") {}.setLinkedColourLighter(COVERING_PURPLE_LIGHT);
+	public static Colour COVERING_PURPLE_DARK = new Colour(false, BaseColour.PURPLE_DARK, "тёмно-фиолетовый") {}.setLinkedColourLighter(COVERING_PURPLE);
 	
 	
 	// Specials:
-	public static Colour COVERING_CLEAR = new Colour(false, BaseColour.WHITE, "transparent") {
+	public static Colour COVERING_CLEAR = new Colour(false, BaseColour.WHITE, "прозрачный") {
 		public String getCoveringIconColour() {
 			return "-webkit-radial-gradient(#ffffff00, #ffffff00, #ffffffff)";
 		}
@@ -662,47 +662,47 @@ public class PresetColour {
 					"#ecb6f9");
 		}
 	};
-	public static Colour COVERING_NONE = new Colour(false, BaseColour.GREY, "none") {};
+	public static Colour COVERING_NONE = new Colour(false, BaseColour.GREY, "нет") {};
 
 	// Eye colours:
 
 	// Special:
-	public static Colour EYE_GOLD = new Colour(false, BaseColour.GOLD, "golden") {};
-	public static Colour EYE_SILVER = new Colour(false, BaseColour.SILVER, "silver") {};
+	public static Colour EYE_GOLD = new Colour(false, BaseColour.GOLD, "золотистый") {};
+	public static Colour EYE_SILVER = new Colour(false, BaseColour.SILVER, "серебристый") {};
 	// Monochrome:
-	public static Colour EYE_WHITE = new Colour(false, BaseColour.WHITE, "white") {};
-	public static Colour EYE_GREY = new Colour(false, BaseColour.GREY, "grey") {}.setLinkedColourLighter(EYE_WHITE);
-	public static Colour EYE_BLACK = new Colour(false, BaseColour.BLACK, "black") {}.setLinkedColourLighter(EYE_GREY);
-	public static Colour EYE_PITCH_BLACK = new Colour(false, BaseColour.BLACK, "pitch black") { public String getCoveringIconColour() { return BaseColour.PITCH_BLACK.toWebHexString(); } }.setLinkedColourLighter(EYE_BLACK);
+	public static Colour EYE_WHITE = new Colour(false, BaseColour.WHITE, "белый") {};
+	public static Colour EYE_GREY = new Colour(false, BaseColour.GREY, "серый") {}.setLinkedColourLighter(EYE_WHITE);
+	public static Colour EYE_BLACK = new Colour(false, BaseColour.BLACK, "чёрный") {}.setLinkedColourLighter(EYE_GREY);
+	public static Colour EYE_PITCH_BLACK = new Colour(false, BaseColour.BLACK, "угольно-чёрный") { public String getCoveringIconColour() { return BaseColour.PITCH_BLACK.toWebHexString(); } }.setLinkedColourLighter(EYE_BLACK);
 	// Pink:
-	public static Colour EYE_PINK_SALMON = new Colour(false, BaseColour.PINK_SALMON, "salmon-pink") {};
-	public static Colour EYE_PINK = new Colour(false, BaseColour.PINK, "pink") {}.setLinkedColourLighter(EYE_PINK_SALMON);
+	public static Colour EYE_PINK_SALMON = new Colour(false, BaseColour.PINK_SALMON, "лососево-розовый") {};
+	public static Colour EYE_PINK = new Colour(false, BaseColour.PINK, "розовый") {}.setLinkedColourLighter(EYE_PINK_SALMON);
 	// Red:
-	public static Colour EYE_RED = new Colour(false, BaseColour.RED, "red") {};
-	public static Colour EYE_CRIMSON = new Colour(false, BaseColour.CRIMSON, "crimson") {}.setLinkedColourLighter(EYE_RED);
+	public static Colour EYE_RED = new Colour(false, BaseColour.RED, "красный") {};
+	public static Colour EYE_CRIMSON = new Colour(false, BaseColour.CRIMSON, "малиновый") {}.setLinkedColourLighter(EYE_RED);
 	// Brown:
-	public static Colour EYE_HAZEL = new Colour(false, BaseColour.TAN, "hazel") {};
-	public static Colour EYE_BROWN = new Colour(false, BaseColour.BROWN, "brown") {}.setLinkedColourLighter(EYE_HAZEL);
+	public static Colour EYE_HAZEL = new Colour(false, BaseColour.TAN, "ореховый") {};
+	public static Colour EYE_BROWN = new Colour(false, BaseColour.BROWN, "коричневый") {}.setLinkedColourLighter(EYE_HAZEL);
 	// Orange:
-	public static Colour EYE_AMBER = new Colour(false, BaseColour.AMBER, "amber") {};
-	public static Colour EYE_ORANGE = new Colour(false, BaseColour.ORANGE, "orange") {}.setLinkedColourLighter(EYE_AMBER);
+	public static Colour EYE_AMBER = new Colour(false, BaseColour.AMBER, "янтарный") {};
+	public static Colour EYE_ORANGE = new Colour(false, BaseColour.ORANGE, "оранжевый") {}.setLinkedColourLighter(EYE_AMBER);
 	// Yellow:
-	public static Colour EYE_YELLOW = new Colour(false, BaseColour.YELLOW, "yellow") {};
+	public static Colour EYE_YELLOW = new Colour(false, BaseColour.YELLOW, "желтый") {};
 	// Green:
 	public static Colour EYE_GREY_GREEN = new Colour(false, Util.newColour(0xA9BA9D), Util.newColour(0xA9BA9D), "grey-green") {};
-	public static Colour EYE_GREEN = new Colour(false, BaseColour.GREEN_DARK, "green") {}.setLinkedColourLighter(EYE_GREY_GREEN);
+	public static Colour EYE_GREEN = new Colour(false, BaseColour.GREEN_DARK, "зеленый") {}.setLinkedColourLighter(EYE_GREY_GREEN);
 	// Blue:
-	public static Colour EYE_BLUE_GREY = new Colour(false, BaseColour.BLUE_GREY, "blue-grey") {};
-	public static Colour EYE_BLUE_LIGHT = new Colour(false, BaseColour.BLUE_LIGHT, "light blue") {};
-	public static Colour EYE_BLUE = new Colour(false, BaseColour.BLUE, "blue") {}.setLinkedColourLighter(EYE_BLUE_LIGHT);
-	public static Colour EYE_AQUA = new Colour(false, BaseColour.AQUA, "aqua") {}.setLinkedColourLighter(EYE_BLUE);
-	public static Colour EYE_BLUE_DARK = new Colour(false, BaseColour.BLUE_DARK, "dark blue") {}.setLinkedColourLighter(EYE_AQUA);
+	public static Colour EYE_BLUE_GREY = new Colour(false, BaseColour.BLUE_GREY, "сине-серый") {};
+	public static Colour EYE_BLUE_LIGHT = new Colour(false, BaseColour.BLUE_LIGHT, "светло-синий") {};
+	public static Colour EYE_BLUE = new Colour(false, BaseColour.BLUE, "синий") {}.setLinkedColourLighter(EYE_BLUE_LIGHT);
+	public static Colour EYE_AQUA = new Colour(false, BaseColour.AQUA, "аква") {}.setLinkedColourLighter(EYE_BLUE);
+	public static Colour EYE_BLUE_DARK = new Colour(false, BaseColour.BLUE_DARK, "тёмно-синий") {}.setLinkedColourLighter(EYE_AQUA);
 	// Purple:
-	public static Colour EYE_PERIWINKLE = new Colour(false, BaseColour.PERIWINKLE, "periwinkle") {};
-	public static Colour EYE_LILAC = new Colour(false, BaseColour.LILAC, "lilac") {}.setLinkedColourLighter(EYE_PERIWINKLE);
-	public static Colour EYE_INDIGO = new Colour(false, BaseColour.INDIGO, "indigo") {}.setLinkedColourLighter(EYE_LILAC);
-	public static Colour EYE_PURPLE = new Colour(false, BaseColour.PURPLE, "purple") {}.setLinkedColourLighter(EYE_INDIGO);
-	public static Colour EYE_VIOLET = new Colour(false, BaseColour.PURPLE_DARK, "violet") {}.setLinkedColourLighter(EYE_PURPLE);
+	public static Colour EYE_PERIWINKLE = new Colour(false, BaseColour.PERIWINKLE, "барвинковый") {};
+	public static Colour EYE_LILAC = new Colour(false, BaseColour.LILAC, "сиреневый") {}.setLinkedColourLighter(EYE_PERIWINKLE);
+	public static Colour EYE_INDIGO = new Colour(false, BaseColour.INDIGO, "индиго") {}.setLinkedColourLighter(EYE_LILAC);
+	public static Colour EYE_PURPLE = new Colour(false, BaseColour.PURPLE, "пурпурный") {}.setLinkedColourLighter(EYE_INDIGO);
+	public static Colour EYE_VIOLET = new Colour(false, BaseColour.PURPLE_DARK, "фиолетовый") {}.setLinkedColourLighter(EYE_PURPLE);
 
 
 	
@@ -1312,7 +1312,7 @@ public class PresetColour {
 
 		// Modded colours:
 		
-		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/colours");
+		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/цвета");
 		for(Entry<String, Map<String, File>> entry : moddedFilesMap.entrySet()) {
 			for(Entry<String, File> innerEntry : entry.getValue().entrySet()) {
 				try {

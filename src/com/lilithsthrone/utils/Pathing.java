@@ -239,9 +239,7 @@ public class Pathing {
 						@Override
 						public void effects() {
 							Main.game.getTextStartStringBuilder().append(
-									"<p style='text-align:center;'>"
-											+ "[style.italicsBad(Your travel was interrupted!)]"
-									+ "</p>");
+									"<p style='text-align:center;'>[style.italicsBad(Ваше путешествие было прервано!)]</p>");
 						}
 					};
 				}

@@ -142,7 +142,7 @@ public enum RenderingEngine {
 			equippedPanelSB.append("<div class='inventory-equipped'>");
 
 			for (InventorySlot invSlot : mainInventorySlots) {
-				equippedPanelSB.append("<div class='inventory-item-slot' style='background-color:"+PresetColour.BACKGROUND.toWebHexString()+";' id='" + invSlot.toString() + "Slot'></div>");
+				equippedPanelSB.append("<div class='inventory-item-slot' style='background-color:"+PresetColour.BACKGROUND.toWebHexString()+";' id='" + invSlot.toString() + "Слот'></div>");
 			}
 
 			String weaponStyle = "width:46%; margin:2%; background-color:"+PresetColour.BACKGROUND.toWebHexString()+";";
@@ -151,12 +151,12 @@ public enum RenderingEngine {
 			equippedPanelSB.append("</div>"
 					+ "<div class='inventory-equipped accessories'>");
 			
-			equippedPanelSB.append("<div class='inventory-item-slot' style='"+weaponStyle+"' id='" + InventorySlot.WEAPON_MAIN_1.toString() + "Slot'></div>");
+			equippedPanelSB.append("<div class='inventory-item-slot' style='"+weaponStyle+"' id='" + InventorySlot.WEAPON_MAIN_1.toString() + "Слот'></div>");
 			
-			equippedPanelSB.append("<div class='inventory-item-slot' style='"+weaponStyle+"' id='" + InventorySlot.WEAPON_OFFHAND_1.toString() + "Slot'></div>");
+			equippedPanelSB.append("<div class='inventory-item-slot' style='"+weaponStyle+"' id='" + InventorySlot.WEAPON_OFFHAND_1.toString() + "Слот'></div>");
 			
 			for (InventorySlot invSlot : piercingSlots) {
-				equippedPanelSB.append("<div class='inventory-item-slot' style='"+piercingStyle+"'  id='" + invSlot.toString() + "Slot'></div>");
+				equippedPanelSB.append("<div class='inventory-item-slot' style='"+piercingStyle+"'  id='" + invSlot.toString() + "Слот'></div>");
 			}
 			equippedPanelSB.append("</div>");
 			
@@ -164,7 +164,7 @@ public enum RenderingEngine {
 			equippedPanelSB.append("<div class='inventory-equipped' style='width:100%;'>");
 			
 			for (InventorySlot invSlot : secondaryInventorySlots) {
-				equippedPanelSB.append("<div class='inventory-item-slot secondary' style='background-color:"+PresetColour.BACKGROUND.toWebHexString()+";' id='" + invSlot.toString() + "Slot'></div>");
+				equippedPanelSB.append("<div class='inventory-item-slot secondary' style='background-color:"+PresetColour.BACKGROUND.toWebHexString()+";' id='" + invSlot.toString() + "Слот'></div>");
 			}
 			
 			equippedPanelSB.append("<div class='inventory-item-slot secondary' style='background-color:"+PresetColour.BACKGROUND.toWebHexString()+";'>"
@@ -203,13 +203,13 @@ public enum RenderingEngine {
 		// Render weapons & piercings:
 		equippedPanelSB.append("<div class='inventory-equipped accessories'>");
 		
-		String weaponStyle = "width:46%; margin:2%;";
-		String weaponStyleNoEssences = "width:46%; margin:2%; border:2px solid "+PresetColour.GENERIC_BAD.toWebHexString()+";";
-		String piercingStyle = "width:40%; margin:5%;";
+		String weaponStyle = "ширина:46%; отступ:2%;";
+		String weaponStyleNoEssences = "ширина:46%; отступ:2%; граница:2px сплошная "+PresetColour.GENERIC_BAD.toWebHexString()+";";
+		String piercingStyle = "ширина:40%; отступ:5%;";
 		if(charactersInventoryToRender.getArmRows()>1) {
-			weaponStyle = "width:31%; margin:1%;";
+			weaponStyle = "ширина:31%; отступ:1%;";
 			weaponStyleNoEssences = "width:31%; margin:1%; border:1% solid "+PresetColour.GENERIC_BAD.toWebHexString()+";";
-			piercingStyle = "width:35%; margin:5.5% 7.5%;";
+			piercingStyle = "ширина:35%; отступ:5.5% 7.5%;";
 		}
 		
 		int essenceCount = charactersInventoryToRender.getEssenceCount();
@@ -221,7 +221,7 @@ public enum RenderingEngine {
 			equippedPanelSB.append(
 					"<div class='inventory-item-slot" + getClassRarityIdentifier(weaponInSlot.getRarity()) + "' style='"+(essenceCount<weaponInSlot.getWeaponType().getArcaneCost()?weaponStyleNoEssences:weaponStyle)+"'>"
 						+ "<div class='inventory-icon-content'>"+weaponInSlot.getSVGEquippedString(charactersInventoryToRender)+"</div>"
-						+ "<div class='overlay-inventory' id='" + InventorySlot.WEAPON_MAIN_1.toString() + "Slot'>"+weaponCount+"</div>"
+						+ "<div class='overlay-inventory' id='" + InventorySlot.WEAPON_MAIN_1.toString() + "Слот'>"+weaponCount+"</div>"
 					+ "</div>");
 			
 		} else if(Main.game.isInCombat() && Main.combat.getThrownWeaponsDepleted(charactersInventoryToRender, InventorySlot.WEAPON_MAIN_1)!=null) {
@@ -230,7 +230,7 @@ public enum RenderingEngine {
 			equippedPanelSB.append(
 					"<div class='inventory-item-slot" + getClassRarityIdentifier(depletedWeapon.getRarity()) + "' style='"+weaponStyle+"'>"
 						+ "<div class='inventory-icon-content' style='opacity:0.5;'>"+depletedWeapon.getSVGEquippedImageDesaturated(charactersInventoryToRender)+"</div>"
-						+ "<div class='overlay-inventory' id='" + InventorySlot.WEAPON_MAIN_1.toString() + "Slot'>"+weaponCount+"</div>"
+						+ "<div class='overlay-inventory' id='" + InventorySlot.WEAPON_MAIN_1.toString() + "Слот'>"+weaponCount+"</div>"
 					+ "</div>");
 			
 		} else {
@@ -246,7 +246,7 @@ public enum RenderingEngine {
 				equippedPanelSB.append(
 						"<div class='inventory-item-slot" + getClassRarityIdentifier(weaponInSlot.getRarity()) + "' style='"+(essenceCount<weaponInSlot.getWeaponType().getArcaneCost()?weaponStyleNoEssences:weaponStyle)+"'>"
 							+ "<div class='inventory-icon-content'>"+weaponInSlot.getSVGEquippedString(charactersInventoryToRender)+"</div>"
-							+ "<div class='overlay-inventory' id='" + InventorySlot.WEAPON_MAIN_2.toString() + "Slot'>"+weaponCount+"</div>"
+							+ "<div class='overlay-inventory' id='" + InventorySlot.WEAPON_MAIN_2.toString() + "Слот'>"+weaponCount+"</div>"
 						+ "</div>");
 				
 			} else if(Main.game.isInCombat() && Main.combat.getThrownWeaponsDepleted(charactersInventoryToRender, InventorySlot.WEAPON_MAIN_2)!=null) {
@@ -255,7 +255,7 @@ public enum RenderingEngine {
 				equippedPanelSB.append(
 						"<div class='inventory-item-slot" + getClassRarityIdentifier(depletedWeapon.getRarity()) + "' style='"+weaponStyle+"'>"
 							+ "<div class='inventory-icon-content' style='opacity:0.5;'>"+depletedWeapon.getSVGEquippedImageDesaturated(charactersInventoryToRender)+"</div>"
-							+ "<div class='overlay-inventory' id='" + InventorySlot.WEAPON_MAIN_2.toString() + "Slot'>"+weaponCount+"</div>"
+							+ "<div class='overlay-inventory' id='" + InventorySlot.WEAPON_MAIN_2.toString() + "Слот'>"+weaponCount+"</div>"
 						+ "</div>");
 				
 			} else {
@@ -269,7 +269,7 @@ public enum RenderingEngine {
 				equippedPanelSB.append(
 						"<div class='inventory-item-slot" + getClassRarityIdentifier(weaponInSlot.getRarity()) + "' style='"+(essenceCount<weaponInSlot.getWeaponType().getArcaneCost()?weaponStyleNoEssences:weaponStyle)+"'>"
 							+ "<div class='inventory-icon-content'>"+weaponInSlot.getSVGEquippedString(charactersInventoryToRender)+"</div>"
-							+ "<div class='overlay-inventory' id='" + InventorySlot.WEAPON_MAIN_3.toString() + "Slot'>"+weaponCount+"</div>"
+							+ "<div class='overlay-inventory' id='" + InventorySlot.WEAPON_MAIN_3.toString() + "Слот'>"+weaponCount+"</div>"
 						+ "</div>");
 				
 			} else if(Main.game.isInCombat() && Main.combat.getThrownWeaponsDepleted(charactersInventoryToRender, InventorySlot.WEAPON_MAIN_3)!=null) {
@@ -278,7 +278,7 @@ public enum RenderingEngine {
 				equippedPanelSB.append(
 						"<div class='inventory-item-slot" + getClassRarityIdentifier(depletedWeapon.getRarity()) + "' style='"+weaponStyle+"'>"
 							+ "<div class='inventory-icon-content' style='opacity:0.5;'>"+depletedWeapon.getSVGEquippedImageDesaturated(charactersInventoryToRender)+"</div>"
-							+ "<div class='overlay-inventory' id='" + InventorySlot.WEAPON_MAIN_3.toString() + "Slot'>"+weaponCount+"</div>"
+							+ "<div class='overlay-inventory' id='" + InventorySlot.WEAPON_MAIN_3.toString() + "Слот'>"+weaponCount+"</div>"
 						+ "</div>");
 				
 			} else if (charactersInventoryToRender.getArmRows()==2) {
@@ -295,7 +295,7 @@ public enum RenderingEngine {
 			String weaponCount = getThrownWeaponCountDiv(weaponInSlot.getWeaponType(), charactersInventoryToRender.getWeaponCount(weaponInSlot));
 			equippedPanelSB.append("<div class='inventory-item-slot" + getClassRarityIdentifier(weaponInSlot.getRarity()) + "' style='"+(essenceCount<weaponInSlot.getWeaponType().getArcaneCost()?weaponStyleNoEssences:weaponStyle)+"'>"
 						+ "<div class='inventory-icon-content'>"+weaponInSlot.getSVGEquippedString(charactersInventoryToRender)+"</div>"
-						+ "<div class='overlay-inventory' id='" + InventorySlot.WEAPON_OFFHAND_1.toString() + "Slot'>"+weaponCount+"</div>"
+						+ "<div class='overlay-inventory' id='" + InventorySlot.WEAPON_OFFHAND_1.toString() + "Слот'>"+weaponCount+"</div>"
 					+ "</div>");
 			
 		} else if(Main.game.isInCombat() && Main.combat.getThrownWeaponsDepleted(charactersInventoryToRender, InventorySlot.WEAPON_OFFHAND_1)!=null) {
@@ -304,7 +304,7 @@ public enum RenderingEngine {
 			equippedPanelSB.append(
 					"<div class='inventory-item-slot" + getClassRarityIdentifier(depletedWeapon.getRarity()) + "' style='"+weaponStyle+"'>"
 						+ "<div class='inventory-icon-content' style='opacity:0.5;'>"+depletedWeapon.getSVGEquippedImageDesaturated(charactersInventoryToRender)+"</div>"
-						+ "<div class='overlay-inventory' id='" + InventorySlot.WEAPON_OFFHAND_1.toString() + "Slot'>"+weaponCount+"</div>"
+						+ "<div class='overlay-inventory' id='" + InventorySlot.WEAPON_OFFHAND_1.toString() + "Слот'>"+weaponCount+"</div>"
 					+ "</div>");
 			
 		} else if (charactersInventoryToRender.getMainWeapon(0) != null && charactersInventoryToRender.getMainWeapon(0).getWeaponType().isTwoHanded()) {
@@ -322,7 +322,7 @@ public enum RenderingEngine {
 				String weaponCount = getThrownWeaponCountDiv(weaponInSlot.getWeaponType(), charactersInventoryToRender.getWeaponCount(weaponInSlot));
 				equippedPanelSB.append("<div class='inventory-item-slot" + getClassRarityIdentifier(weaponInSlot.getRarity()) + "' style='"+(essenceCount<weaponInSlot.getWeaponType().getArcaneCost()?weaponStyleNoEssences:weaponStyle)+"'>"
 							+ "<div class='inventory-icon-content'>"+weaponInSlot.getSVGEquippedString(charactersInventoryToRender)+"</div>"
-							+ "<div class='overlay-inventory' id='" + InventorySlot.WEAPON_OFFHAND_2.toString() + "Slot'>"+weaponCount+"</div>"
+							+ "<div class='overlay-inventory' id='" + InventorySlot.WEAPON_OFFHAND_2.toString() + "Слот'>"+weaponCount+"</div>"
 						+ "</div>");
 				
 			} else if(Main.game.isInCombat() && Main.combat.getThrownWeaponsDepleted(charactersInventoryToRender, InventorySlot.WEAPON_OFFHAND_2)!=null) {
@@ -331,7 +331,7 @@ public enum RenderingEngine {
 				equippedPanelSB.append(
 						"<div class='inventory-item-slot" + getClassRarityIdentifier(depletedWeapon.getRarity()) + "' style='"+weaponStyle+"'>"
 							+ "<div class='inventory-icon-content' style='opacity:0.5;'>"+depletedWeapon.getSVGEquippedImageDesaturated(charactersInventoryToRender)+"</div>"
-							+ "<div class='overlay-inventory' id='" + InventorySlot.WEAPON_OFFHAND_2.toString() + "Slot'>"+weaponCount+"</div>"
+							+ "<div class='overlay-inventory' id='" + InventorySlot.WEAPON_OFFHAND_2.toString() + "Слот'>"+weaponCount+"</div>"
 						+ "</div>");
 				
 			} else if (charactersInventoryToRender.getMainWeapon(1) != null && charactersInventoryToRender.getMainWeapon(1).getWeaponType().isTwoHanded()) {
@@ -347,7 +347,7 @@ public enum RenderingEngine {
 				String weaponCount = getThrownWeaponCountDiv(weaponInSlot.getWeaponType(), charactersInventoryToRender.getWeaponCount(weaponInSlot));
 				equippedPanelSB.append("<div class='inventory-item-slot" + getClassRarityIdentifier(weaponInSlot.getRarity()) + "' style='"+(essenceCount<weaponInSlot.getWeaponType().getArcaneCost()?weaponStyleNoEssences:weaponStyle)+"'>"
 							+ "<div class='inventory-icon-content'>"+weaponInSlot.getSVGEquippedString(charactersInventoryToRender)+"</div>"
-							+ "<div class='overlay-inventory' id='" + InventorySlot.WEAPON_OFFHAND_3.toString() + "Slot'>"+weaponCount+"</div>"
+							+ "<div class='overlay-inventory' id='" + InventorySlot.WEAPON_OFFHAND_3.toString() + "Слот'>"+weaponCount+"</div>"
 						+ "</div>");
 				
 			} else if(Main.game.isInCombat() && Main.combat.getThrownWeaponsDepleted(charactersInventoryToRender, InventorySlot.WEAPON_OFFHAND_3)!=null) {
@@ -356,7 +356,7 @@ public enum RenderingEngine {
 				equippedPanelSB.append(
 						"<div class='inventory-item-slot" + getClassRarityIdentifier(depletedWeapon.getRarity()) + "' style='"+weaponStyle+"'>"
 							+ "<div class='inventory-icon-content' style='opacity:0.5;'>"+depletedWeapon.getSVGEquippedImageDesaturated(charactersInventoryToRender)+"</div>"
-							+ "<div class='overlay-inventory' id='" + InventorySlot.WEAPON_OFFHAND_3.toString() + "Slot'>"+weaponCount+"</div>"
+							+ "<div class='overlay-inventory' id='" + InventorySlot.WEAPON_OFFHAND_3.toString() + "Слот'>"+weaponCount+"</div>"
 						+ "</div>");
 				
 			} else if (charactersInventoryToRender.getArmRows()==2 || (charactersInventoryToRender.getMainWeapon(2) != null && charactersInventoryToRender.getMainWeapon(2).getWeaponType().isTwoHanded())) {
@@ -374,8 +374,7 @@ public enum RenderingEngine {
 			AbstractClothing clothing = charactersInventoryToRender.getClothingInSlot(invSlot);
 			
 			if(!charactersInventoryToRender.isPlayer() && concealedSlots.keySet().contains(invSlot)) {
-				equippedPanelSB.append("<div class='inventory-item-slot concealed' style='"+piercingStyle+"' id='" + invSlot.toString() + "Slot'>"
-						+ "<div class='concealedIcon'>"+SVGImages.SVG_IMAGE_PROVIDER.getConcealedIcon()+"</div>"
+				equippedPanelSB.append("<div class='inventory-item-slot concealed' style='"+piercingStyle+"' id='" + invSlot.toString() + "Слот'><div class='concealedIcon'>"+SVGImages.SVG_IMAGE_PROVIDER.getConcealedIcon()+"</div>"
 					+ "</div>");
 				
 			} else {
@@ -404,7 +403,7 @@ public enum RenderingEngine {
 							equippedPanelSB.append("<div class='stretchIcon'>" + SVGImages.SVG_IMAGE_PROVIDER.getCombinationStretchRecoveryPrevented() + "</div>");
 						}
 						
-						equippedPanelSB.append("<div class='overlay-inventory' id='" + invSlot.toString() + "Slot'>" + "</div>");
+						equippedPanelSB.append("<div class='overlay-inventory' id='" + invSlot.toString() + "Слот'></div>");
 					
 					equippedPanelSB.append("</div>");
 					
@@ -413,7 +412,7 @@ public enum RenderingEngine {
 				} else {
 					// add to content:
 					if (blockedSlots.contains(invSlot)) {
-						equippedPanelSB.append("<div class='inventory-item-slot disabled' style='"+piercingStyle+"' id='" + invSlot.toString() + "Slot'>" + "</div>");
+						equippedPanelSB.append("<div class='inventory-item-slot disabled' style='"+piercingStyle+"' id='" + invSlot.toString() + "Слот'></div>");
 						
 					} else {
 						boolean bypassesPiercing = !charactersInventoryToRender.getBody().getBodyMaterial().isRequiresPiercing();
@@ -421,58 +420,58 @@ public enum RenderingEngine {
 						switch(invSlot){
 							case PIERCING_VAGINA:
 								if(!charactersInventoryToRender.hasVagina() || (!bypassesPiercing && !charactersInventoryToRender.isPiercedVagina())) {
-									equippedPanelSB.append("<div class='inventory-item-slot disabled' style='"+piercingStyle+"' id='" + invSlot.toString() + "Slot'>" + "</div>");
+									equippedPanelSB.append("<div class='inventory-item-slot disabled' style='"+piercingStyle+"' id='" + invSlot.toString() + "Слот'></div>");
 								} else {
-									equippedPanelSB.append("<div class='inventory-item-slot' style='"+piercingStyle+"' id='" + invSlot.toString() + "Slot'></div>");
+									equippedPanelSB.append("<div class='inventory-item-slot' style='"+piercingStyle+"' id='" + invSlot.toString() + "Слот'></div>");
 								}
 								break;
 							case PIERCING_EAR:
 								if(!bypassesPiercing && !charactersInventoryToRender.isPiercedEar()) {
-									equippedPanelSB.append("<div class='inventory-item-slot disabled' style='"+piercingStyle+"' id='" + invSlot.toString() + "Slot'>" + "</div>");
+									equippedPanelSB.append("<div class='inventory-item-slot disabled' style='"+piercingStyle+"' id='" + invSlot.toString() + "Слот'></div>");
 								} else {
-									equippedPanelSB.append("<div class='inventory-item-slot' style='"+piercingStyle+"' id='" + invSlot.toString() + "Slot'></div>");
+									equippedPanelSB.append("<div class='inventory-item-slot' style='"+piercingStyle+"' id='" + invSlot.toString() + "Слот'></div>");
 								}
 								break;
 							case PIERCING_LIP:
 								if(!bypassesPiercing && !charactersInventoryToRender.isPiercedLip()) {
-									equippedPanelSB.append("<div class='inventory-item-slot disabled' style='"+piercingStyle+"' id='" + invSlot.toString() + "Slot'>" + "</div>");
+									equippedPanelSB.append("<div class='inventory-item-slot disabled' style='"+piercingStyle+"' id='" + invSlot.toString() + "Слот'></div>");
 								} else {
-									equippedPanelSB.append("<div class='inventory-item-slot' style='"+piercingStyle+"' id='" + invSlot.toString() + "Slot'></div>");
+									equippedPanelSB.append("<div class='inventory-item-slot' style='"+piercingStyle+"' id='" + invSlot.toString() + "Слот'></div>");
 								}
 								break;
 							case PIERCING_NIPPLE:
 								if(!bypassesPiercing && !charactersInventoryToRender.isPiercedNipple()) {
-									equippedPanelSB.append("<div class='inventory-item-slot disabled' style='"+piercingStyle+"' id='" + invSlot.toString() + "Slot'>" + "</div>");
+									equippedPanelSB.append("<div class='inventory-item-slot disabled' style='"+piercingStyle+"' id='" + invSlot.toString() + "Слот'></div>");
 								} else {
-									equippedPanelSB.append("<div class='inventory-item-slot' style='"+piercingStyle+"' id='" + invSlot.toString() + "Slot'></div>");
+									equippedPanelSB.append("<div class='inventory-item-slot' style='"+piercingStyle+"' id='" + invSlot.toString() + "Слот'></div>");
 								}
 								break;
 							case PIERCING_NOSE:
 								if(!bypassesPiercing && !charactersInventoryToRender.isPiercedNose()) {
-									equippedPanelSB.append("<div class='inventory-item-slot disabled' style='"+piercingStyle+"' id='" + invSlot.toString() + "Slot'>" + "</div>");
+									equippedPanelSB.append("<div class='inventory-item-slot disabled' style='"+piercingStyle+"' id='" + invSlot.toString() + "Слот'></div>");
 								} else {
-									equippedPanelSB.append("<div class='inventory-item-slot' style='"+piercingStyle+"' id='" + invSlot.toString() + "Slot'></div>");
+									equippedPanelSB.append("<div class='inventory-item-slot' style='"+piercingStyle+"' id='" + invSlot.toString() + "Слот'></div>");
 								}
 								break;
 							case PIERCING_PENIS:
 								if(!charactersInventoryToRender.hasPenis() || (!bypassesPiercing && !charactersInventoryToRender.isPiercedPenis())) {
-									equippedPanelSB.append("<div class='inventory-item-slot disabled' style='"+piercingStyle+"' id='" + invSlot.toString() + "Slot'>" + "</div>");
+									equippedPanelSB.append("<div class='inventory-item-slot disabled' style='"+piercingStyle+"' id='" + invSlot.toString() + "Слот'></div>");
 								} else {
-									equippedPanelSB.append("<div class='inventory-item-slot' style='"+piercingStyle+"' id='" + invSlot.toString() + "Slot'></div>");
+									equippedPanelSB.append("<div class='inventory-item-slot' style='"+piercingStyle+"' id='" + invSlot.toString() + "Слот'></div>");
 								}
 								break;
 							case PIERCING_STOMACH:
 								if(!bypassesPiercing && !charactersInventoryToRender.isPiercedNavel()) {
-									equippedPanelSB.append("<div class='inventory-item-slot disabled' style='"+piercingStyle+"' id='" + invSlot.toString() + "Slot'>" + "</div>");
+									equippedPanelSB.append("<div class='inventory-item-slot disabled' style='"+piercingStyle+"' id='" + invSlot.toString() + "Слот'></div>");
 								} else {
-									equippedPanelSB.append("<div class='inventory-item-slot' style='"+piercingStyle+"' id='" + invSlot.toString() + "Slot'></div>");
+									equippedPanelSB.append("<div class='inventory-item-slot' style='"+piercingStyle+"' id='" + invSlot.toString() + "Слот'></div>");
 								}
 								break;
 							case PIERCING_TONGUE:
 								if(!bypassesPiercing && !charactersInventoryToRender.isPiercedTongue()) {
-									equippedPanelSB.append("<div class='inventory-item-slot disabled' style='"+piercingStyle+"' id='" + invSlot.toString() + "Slot'>" + "</div>");
+									equippedPanelSB.append("<div class='inventory-item-slot disabled' style='"+piercingStyle+"' id='" + invSlot.toString() + "Слот'></div>");
 								} else {
-									equippedPanelSB.append("<div class='inventory-item-slot' style='"+piercingStyle+"' id='" + invSlot.toString() + "Slot'></div>");
+									equippedPanelSB.append("<div class='inventory-item-slot' style='"+piercingStyle+"' id='" + invSlot.toString() + "Слот'></div>");
 								}
 								break;
 							default:
@@ -523,11 +522,10 @@ public enum RenderingEngine {
 						+ (block.getRace()!=null
 								?"<div class='raceBlockIcon'>" + AbstractSubspecies.getMainSubspeciesOfRace(block.getRace()).getSVGStringDesaturated(charactersInventoryToRender, PresetColour.BASE_BLACK) + "</div>"
 								:"")
-						+ "<div class='overlay-inventory' id='" + slot.toString() + "Slot' style='cursor:default;'></div>"
-					+ "</div>";
+						+ "<div class='overlay-inventory' id='" + slot.toString() + "Slot' style='cursor:default;'></div></div>";
 			
 		} else {
-			return "<div class='inventory-item-slot"+(disabled?" disabled":"")+"' "+(disabled?"id='" + slot.toString() + "Slot'":"")+" style='"+weaponStyle+"'>"
+			return "<div class='inventory-item-slot"+(disabled?" disabled":"")+"' "+(disabled?"id='" + slot.toString() + "Слот":"")+" style='"+weaponStyle+"'>"
 							+ (!disabled
 								?"<div class='inventory-icon-content' style='width:75%; margin:12.5%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getFist()+"</div>"
 									+ "<div class='overlay-inventory' id='" + slot.toString() + "Slot' style='cursor:default;'></div>"
@@ -539,12 +537,11 @@ public enum RenderingEngine {
 	private void appendEquippedClothingSlot(GameCharacter charactersInventoryToRender, InventorySlot invSlot, Set<InventorySlot> blockedSlots, Map<InventorySlot, List<AbstractClothing>> concealedSlots, boolean isSecondary) {
 		String inventorySlotId = "inventory-item-slot";
 		if(isSecondary) {
-			inventorySlotId = "inventory-item-slot secondary";
+			inventorySlotId = "ячейка инвентаря (второстепенная)";
 		}
 		
 		if(!charactersInventoryToRender.isPlayer() && concealedSlots.keySet().contains(invSlot)) {
-			equippedPanelSB.append("<div class='"+inventorySlotId+" concealed' id='" + invSlot.toString() + "Slot'>"
-					+ "<div class='concealedIcon'>"+SVGImages.SVG_IMAGE_PROVIDER.getConcealedIcon()+"</div>"
+			equippedPanelSB.append("<div class='"+inventorySlotId+" 'скрытый' id='" + invSlot.toString() + "Слот'><div class='concealedIcon'>"+SVGImages.SVG_IMAGE_PROVIDER.getConcealedIcon()+"</div>"
 				+ "</div>");
 			
 		} else {
@@ -577,7 +574,7 @@ public enum RenderingEngine {
 							equippedPanelSB.append("<div class='stretchIcon'>" + SVGImages.SVG_IMAGE_PROVIDER.getCombinationStretchRecoveryPrevented() + "</div>");
 						}
 									
-						equippedPanelSB.append("<div class='overlay-inventory' id='" + invSlot.toString() + "Slot'>" + "</div>");
+						equippedPanelSB.append("<div class='overlay-inventory' id='" + invSlot.toString() + "Слот'></div>");
 					equippedPanelSB.append("</div>");
 					
 				} else {
@@ -585,14 +582,13 @@ public enum RenderingEngine {
 					if (blockedSlots.contains(invSlot)) {
 						equippedPanelSB.append("<div class='"+inventorySlotId+" disabled'>"
 													+ (charactersInventoryToRender.isDirtySlot(invSlot) ? "<div class='cummedIcon'>" + SVGImages.SVG_IMAGE_PROVIDER.getDirtyIcon() + "</div>" : "")
-													+ "<div class='overlay' id='" + invSlot.toString() + "Slot'></div>"
-												+ "</div>");
+													+ "<div class='overlay' id='" + invSlot.toString() + "Слот'></div></div>");
 						
 					} else if (block != null) {
 						equippedPanelSB.append(
-								"<div class='"+inventorySlotId+" disabled'>"
+								"<div class='"+inventorySlotId+" отключен'>"
 									+ (charactersInventoryToRender.isDirtySlot(invSlot) ? "<div class='cummedIcon'>" + SVGImages.SVG_IMAGE_PROVIDER.getDirtyIcon() + "</div>" : "")
-									+ "<div class='overlay' id='" + invSlot.toString() + "Slot'></div>"
+									+ "<div class='overlay' id='" + invSlot.toString() + "Слот'></div>"
 									+ (block.getRace()!=null
 											?"<div class='raceBlockIcon'>" + AbstractSubspecies.getMainSubspeciesOfRace(block.getRace()).getSVGStringDesaturated(charactersInventoryToRender, PresetColour.BASE_BLACK) + "</div>"
 											:"")
@@ -601,7 +597,7 @@ public enum RenderingEngine {
 					} else {
 						boolean disabled = !invSlot.isPhysicallyAvailable(charactersInventoryToRender);
 						
-						equippedPanelSB.append("<div class='"+inventorySlotId+""+(disabled?" disabled":"")+"' id='" + invSlot.toString() + "Slot'>"
+						equippedPanelSB.append("<div class='"+inventorySlotId+""+(disabled?" отключено":"")+"' id='" + invSlot.toString() + "Слот'>"
 								+ (charactersInventoryToRender.isDirtySlot(invSlot) ? "<div class='cummedIcon'>" + SVGImages.SVG_IMAGE_PROVIDER.getDirtyIcon() + "</div>" : "")
 								+ "</div>");
 					}
@@ -611,13 +607,13 @@ public enum RenderingEngine {
 				boolean disabled = !invSlot.isPhysicallyAvailable(charactersInventoryToRender) && invSlot!=InventorySlot.HAIR; // Exception for hair as this slot corresponds to the 'ears' slot for tattoos
 				
 				if(disabled) {
-					equippedPanelSB.append("<div class='"+inventorySlotId+" disabled' id='" + invSlot.toString() + "Slot'></div>");
+					equippedPanelSB.append("<div class='"+inventorySlotId+" отключен' id='" + invSlot.toString() + "Слот'></div>");
 					
 				} else {
 					Tattoo tattoo = charactersInventoryToRender.getTattooInSlot(invSlot);
-					inventorySlotId = "inventory-item-slot dark";
+					inventorySlotId = "слот-предмета-инвентаря темный";
 					if(isSecondary) {
-						inventorySlotId = "inventory-item-slot secondary dark";
+						inventorySlotId = "слот-предмета-инвентаря вторичный темный";
 					}
 					
 					//TODO Attempted to make tattoo background the same as skin colour, but skin colours are defined mainly for ease of reasing as text, and look bad as blocks of colour
@@ -640,21 +636,21 @@ public enum RenderingEngine {
 							equippedPanelSB.append("<div class='scarIcon'>" + SVGImages.SVG_IMAGE_PROVIDER.getScarIcon() + "</div>");
 						}
 						equippedPanelSB.append(lipstickMarkingsString(charactersInventoryToRender, invSlot));
-						equippedPanelSB.append("<div class='overlay-inventory no-pointer' id='" + invSlot.toString() + "Slot'></div>");
+						equippedPanelSB.append("<div class='overlay-inventory no-pointer' id='" + invSlot.toString() + "Слот'></div>");
 						equippedPanelSB.append("</div>");
 						
 					} else {
 						if(blockedSlots.contains(invSlot)) {
-							equippedPanelSB.append("<div class='"+inventorySlotId+" disabled'>");
+							equippedPanelSB.append("<div class='"+inventorySlotId+" отключен'>");
 							if(charactersInventoryToRender.getScarInSlot(invSlot)!=null) {
 								equippedPanelSB.append("<div class='scarIcon'>" + SVGImages.SVG_IMAGE_PROVIDER.getScarIcon() + "</div>");
 							}
 							equippedPanelSB.append(lipstickMarkingsString(charactersInventoryToRender, invSlot));
-							equippedPanelSB.append("<div class='overlay' id='" + invSlot.toString() + "Slot'></div>");
+							equippedPanelSB.append("<div class='overlay' id='" + invSlot.toString() + "Слот'></div>");
 							equippedPanelSB.append("</div>");
 							
 						} else {
-							equippedPanelSB.append("<div class='"+inventorySlotId+"' id='" + invSlot.toString() + "Slot' "+style+">");
+							equippedPanelSB.append("<div class='"+inventorySlotId+"' id='" + invSlot.toString() + "Слот "+style+">");
 							if(charactersInventoryToRender.getScarInSlot(invSlot)!=null) {
 								equippedPanelSB.append("<div class='scarIcon'>" + SVGImages.SVG_IMAGE_PROVIDER.getScarIcon() + "</div>");
 							}
@@ -674,7 +670,7 @@ public enum RenderingEngine {
 		if(lipstickMarkings!=null) {
 			int lipstickMarkingCount = lipstickMarkings.size();
 			for(int i=0; i<lipstickMarkingCount; i++) {
-				sb.append("<div class='lipstickIcon' style='width:calc(40 - "+(lipstickMarkingCount*10)+")%; height:calc(40 - "+(lipstickMarkingCount*10)+")%; right:"+(i*10)+"%;'>");
+				sb.append("<div class='lipstickIcon' style='width:calc(40 - "+(lipstickMarkingCount*10)+")%; высота:calc(40 - "+(lipstickMarkingCount*10)+")%; справа:"+(i*10)+"%;'>");
 				sb.append(SVGImages.SVG_IMAGE_PROVIDER.getLipstickIcon(lipstickMarkings.get(i)));
 				sb.append("</div>");
 			}
@@ -696,17 +692,17 @@ public enum RenderingEngine {
 					"<p style='width:100%; text-align:center; padding:0; margin:0;'>"
 					+ "<b style='color:"+Femininity.valueOf(charactersInventoryToRender.getFemininityValue()).getColour().toWebHexString()+";'>"
 						+(charactersInventoryToRender.isPlayer()
-							?"Your</b> <b>Inventory | Page "+(pageLeft+1)+"</b>"
-							:(UtilText.parse(charactersInventoryToRender, "[npc.NamePos]"))+"</b> <b>Inventory | "+(buyback?"[style.colourCurrency(Buyback)]":"Page "+(pageRight+1))+"</b>")
+							?"Ваш</b> <b>Инвентарь | Страница "+(pageLeft+1)+"</b>"
+							:(UtilText.parse(charactersInventoryToRender, "[npc.NamePos]"))+"</b> <b>Инвентарь | "+(buyback?"[style.colourCurrency(Buyback)]":"Пейдж "+(pageRight+1))+"</b>")
 					+"</p>");
 			
 		} else {
 			inventorySB.append(
 					"<p style='width:100%; text-align:center; padding:0; margin:0;'>"
 						+(InventoryDialogue.getNPCInventoryInteraction() ==  InventoryInteraction.CHARACTER_CREATION
-								?"<b style='color:"+PresetColour.BASE_TAN.toWebHexString()+";'>Your wardrobe</b>"
-								:"<b style='color:"+PresetColour.BASE_TAN.toWebHexString()+";'>In this Area</b>")
-						+"<b> | Page "+(pageRight+1)+"</b>"
+								?"<b style='color:"+PresetColour.BASE_TAN.toWebHexString()+";'>Ваш гардероб</b>"
+								:"<b style='color:"+PresetColour.BASE_TAN.toWebHexString()+";'>В этой области</b>")
+						+"<b> | Страница "+(pageRight+1)+"</b>"
 					+"</p>");
 		}
 		
@@ -738,7 +734,7 @@ public enum RenderingEngine {
 			float buttonWidth = 10.2857f;
 			float marginSides = 2f;
 			float centreDivWidth = 100 - 4*(buttonWidth+marginSides+marginSides);
-			String buttonStyle = "width:"+buttonWidth+"%; padding:0; margin:"+(14.161-buttonWidth)/2+"% "+marginSides+"%; float:left; display:flex;";
+			String buttonStyle = "ширина:"+buttonWidth+"%; padding:0; margin:"+(14.161-buttonWidth)/2+"% "+marginSides+"%; float:left; display:flex;";
 			String contentStyle = "display:flex; justify-content:center; align-items:center;pointer-events:none;";
 			
 			int maxPages = getMaximumFloorPageIndex(); // TODO check
@@ -748,21 +744,21 @@ public enum RenderingEngine {
 			
 			inventorySB.append("<div class='container-full-width' style='width:100%; padding:0; margin:0; display:flex;'>");
 				// << and < buttons:
-				inventorySB.append("<div class='inventory-item-slot-button"+(leftButtonDisabled?" disabled":"")+"' id='"+idModifier+"SCROLL_LEFT_DOUBLE"+(leftButtonDisabled?"_DISABLED":"")+"' style='"+buttonStyle+" margin-left:1%;'>");
+				inventorySB.append("<div class='inventory-item-slot-button"+(leftButtonDisabled?" отключено":"")+"' id='"+idModifier+"SCROLL_LEFT_DOUBLE"+(leftButtonDisabled?"_DISABLED":"")+"' style='"+buttonStyle+" margin-left:1%;'>");
 					inventorySB.append("<div class='inventory-icon-content' style='"+contentStyle+"'>[style."+(leftButtonDisabled?"colourDisabled":"colourGood")+"(&lt;&lt;)]</div>");
 				inventorySB.append("</div>");
-				inventorySB.append("<div class='inventory-item-slot-button"+(leftButtonDisabled?" disabled":"")+"' id='"+idModifier+"SCROLL_LEFT"+(leftButtonDisabled?"_DISABLED":"")+"' style='"+buttonStyle+"'>");
+				inventorySB.append("<div class='inventory-item-slot-button"+(leftButtonDisabled?" отключено":"")+"' id='"+idModifier+"SCROLL_LEFT"+(leftButtonDisabled?"_DISABLED":"")+"' style='"+buttonStyle+"'>");
 					inventorySB.append("<div class='inventory-icon-content' style='"+contentStyle+"'>[style."+(leftButtonDisabled?"colourDisabled":"colourMinorGood")+"(&lt;)]</div>");
 				inventorySB.append("</div>");
 
 				inventorySB.append("<div style='width:"+centreDivWidth+"%; padding:0; margin:0; float:left; display:flex; justify-content:center; align-items:center;'>");
-					inventorySB.append("Page "+(pageRight+1)+" [style.colourDisabled((of "+(maxPages+1)+"))]");
+					inventorySB.append("Пейдж "+(pageRight+1)+" [style.colourDisabled((of "+(maxPages+1)+"))]");
 				inventorySB.append("</div>");
 				
-				inventorySB.append("<div class='inventory-item-slot-button"+(rightButtonDisabled?" disabled":"")+"' id='"+idModifier+"SCROLL_RIGHT"+(rightButtonDisabled?"_DISABLED":"")+"' style='"+buttonStyle+"'>");
+				inventorySB.append("<div class='inventory-item-slot-button"+(rightButtonDisabled?" отключено":"")+"' id='"+idModifier+"SCROLL_RIGHT"+(rightButtonDisabled?"_DISABLED":"")+"' style='"+buttonStyle+"'>");
 					inventorySB.append("<div class='inventory-icon-content' style='"+contentStyle+"'>[style."+(rightButtonDisabled?"colourDisabled":"colourMinorGood")+"(&gt;)]</div>");
 				inventorySB.append("</div>");
-				inventorySB.append("<div class='inventory-item-slot-button"+(rightButtonDisabled?" disabled":"")+"' id='"+idModifier+"SCROLL_RIGHT_DOUBLE"+(rightButtonDisabled?"_DISABLED":"")+"' style='"+buttonStyle+"'>");
+				inventorySB.append("<div class='inventory-item-slot-button"+(rightButtonDisabled?" отключено":"")+"' id='"+idModifier+"SCROLL_RIGHT_DOUBLE"+(rightButtonDisabled?"_DISABLED":"")+"' style='"+buttonStyle+"'>");
 					inventorySB.append("<div class='inventory-icon-content' style='"+contentStyle+"'>[style."+(rightButtonDisabled?"colourDisabled":"colourGood")+"(&gt;&gt;)]</div>");
 				inventorySB.append("</div>");
 			inventorySB.append("</div>");
@@ -789,16 +785,12 @@ public enum RenderingEngine {
 			currentPage = (charactersInventoryToRender.isPlayer()?pageLeft:pageRight);
 		
 			inventorySB.append(
-					"<div class='container-full-width' style='width:15%; margin:0; text-align:center;'>"
-						+ "<div class='square-button max"+(currentPage==0?" selected":"")+"'>"
+					"<div class='container-full-width' style='width:15%; margin:0; text-align:center;'><div class='square-button max"+(currentPage==0?" выбранный":"")+"'>"
 								+ "<div style='width:80%;height:80%;position:absolute;left:0; bottom:0;'>"+SVGImages.SVG_IMAGE_PROVIDER.getInventoryIcon()+"</div>"
 								+ "<div style='width:50%;height:50%;position:absolute;right:4px; top:0;'>"+(currentPage==0?SVGImages.SVG_IMAGE_PROVIDER.getCounterOne():SVGImages.SVG_IMAGE_PROVIDER.getCounterOneDisabled())+"</div>"
 	//							+ (!buyback
 	//									?
-												+ "<div class='overlay' "+(currentPage==0?"":"id='"+pageIdMod+"0'")+"></div>"
-	//									:"<div class='overlay disabled'></div>")
-						+ "</div>"
-						+ "<div class='square-button max"+(currentPage==1?" selected":"")+"'>"
+												+ "<div class='overlay' "+(currentPage==0?"":"id='"+pageIdMod+"0'")+"></div></div><div class='square-button max"+(currentPage==1?" выбранный":"")+"'>"
 								+ "<div style='width:80%;height:80%;position:absolute;left:0; bottom:0;'>"
 									+(totalUniques>1*ITEMS_PER_PAGE && !buyback?SVGImages.SVG_IMAGE_PROVIDER.getInventoryIcon():SVGImages.SVG_IMAGE_PROVIDER.getInventoryIconDisabled())
 								+"</div>"
@@ -806,8 +798,7 @@ public enum RenderingEngine {
 								+ (totalUniques>1*ITEMS_PER_PAGE && !buyback
 										?"<div class='overlay' "+(currentPage==1?"":"id='"+pageIdMod+"1'")+"></div>"
 										:"<div class='overlay disabled'></div>")
-						+ "</div>"
-						+ "<div class='square-button max"+(currentPage==2?" selected":"")+"'>"
+						+ "</div><div class='square-button max"+(currentPage==2?" выбранный":"")+"'>"
 								+ "<div style='width:80%;height:80%;position:absolute;left:0; bottom:0;'>"
 									+(totalUniques>2*ITEMS_PER_PAGE && !buyback?SVGImages.SVG_IMAGE_PROVIDER.getInventoryIcon():SVGImages.SVG_IMAGE_PROVIDER.getInventoryIconDisabled())
 								+"</div>"
@@ -815,8 +806,7 @@ public enum RenderingEngine {
 								+ (totalUniques>2*ITEMS_PER_PAGE && !buyback
 										?"<div class='overlay' "+(currentPage==2?"":"id='"+pageIdMod+"2'")+"></div>"
 										:"<div class='overlay disabled'></div>")
-						+ "</div>"
-						+ "<div class='square-button max"+(currentPage==3?" selected":"")+"'>"
+						+ "</div><div class='square-button max"+(currentPage==3?" выбранный":"")+"'>"
 								+ "<div style='width:80%;height:80%;position:absolute;left:0; bottom:0;'>"
 									+(totalUniques>3*ITEMS_PER_PAGE && !buyback?SVGImages.SVG_IMAGE_PROVIDER.getInventoryIcon():SVGImages.SVG_IMAGE_PROVIDER.getInventoryIconDisabled())
 								+"</div>"
@@ -824,8 +814,7 @@ public enum RenderingEngine {
 								+ (totalUniques>3*ITEMS_PER_PAGE && !buyback
 										?"<div class='overlay' "+(currentPage==3?"":"id='"+pageIdMod+"3'")+"></div>"
 										:"<div class='overlay disabled'></div>")
-						+ "</div>"
-						+ "<div class='square-button max"+(currentPage==4?" selected":"")+"'>"
+						+ "</div><div class='square-button max"+(currentPage==4?" выбранный":"")+"'>"
 								+ "<div style='width:80%;height:80%;position:absolute;left:0; bottom:0;'>"
 									+(totalUniques>4*ITEMS_PER_PAGE && !buyback?SVGImages.SVG_IMAGE_PROVIDER.getInventoryIcon():SVGImages.SVG_IMAGE_PROVIDER.getInventoryIconDisabled())
 								+"</div>"
@@ -835,7 +824,7 @@ public enum RenderingEngine {
 										:"<div class='overlay disabled'></div>")
 						+ "</div>"
 						+ (renderQuestTab
-								?"<div class='square-button max"+(currentPage==5?" selected":"")+"'>"
+								?"<div class='square-button max"+(currentPage==5?" выбранный":"")+"'>"
 									+ "<div style='width:100%;height:100%;position:absolute;left:0; bottom:0;'>"+(hasQuestItems?SVGImages.SVG_IMAGE_PROVIDER.getQuestInventoryIcon():SVGImages.SVG_IMAGE_PROVIDER.getQuestInventoryIconDisabled())+"</div>"
 									+ (hasQuestItems && !buyback
 										?"<div class='overlay' id='"+pageIdMod+"5'></div>"
@@ -886,27 +875,18 @@ public enum RenderingEngine {
 			// Changed to 100% in 0.4.2 | Old values: width:26.3%; width:33.416%;
 			if(charactersInventoryToRender.isPlayer()) {
 				inventorySB.append(
-						"<div style='"+style+" width:"+styleWidth+";'>"+ UtilText.formatAsEssences(charactersInventoryToRender.getEssenceCount(), "b", true) +"</div>"
-						+ "<div style='"+style+" width:"+styleWidth+";'>"+ UtilText.formatAsMoney(charactersInventoryToRender.getMoney(), "b") +"</div>"
-						+ "<div class='normal-button"+(transferDisabled?" disabled":"")+"' id='"+idModifier+"MONEY_TRANSFER_SMALL' style='"+buttonStyle+"'>[style."+(transferDisabled?"colourDisabled":"colourMinorGood")+"(&gt;)]</div>"
-						+ "<div class='normal-button"+(transferDisabled?" disabled":"")+"' id='"+idModifier+"MONEY_TRANSFER_AVERAGE' style='"+buttonStyle+"'>[style."+(transferDisabled?"colourDisabled":"colourGood")+"(&gt;)]</div>"
-						+ "<div class='normal-button"+(transferDisabled?" disabled":"")+"' id='"+idModifier+"MONEY_TRANSFER_BIG' style='"+buttonStyle+"'>[style."+(transferDisabled?"colourDisabled":"colourExcellent")+"(&gt;)]</div>");
+						"<div style='"+style+" ширина:"+styleWidth+";'>"+ UtilText.formatAsEssences(charactersInventoryToRender.getEssenceCount(), "b", true) +"</div>"
+						+ "<div style='"+style+" ширина:"+styleWidth+";'>"+ UtilText.formatAsMoney(charactersInventoryToRender.getMoney(), "b") +"</div><div class='normal-button"+(transferDisabled?" отключено":"")+"' id='"+idModifier+"MONEY_TRANSFER_SMALL' style='"+buttonStyle+"'>[style."+(transferDisabled?"colourDisabled":"colourMinorGood")+"(&gt;)]</div><div class='normal-button"+(transferDisabled?" отключено":"")+"' id='"+idModifier+"MONEY_TRANSFER_AVERAGE' стиль='"+buttonStyle+"'>[style."+(transferDisabled?"colourDisabled":"colourGood")+"(&gt;)]</div><div class='normal-button"+(transferDisabled?" отключено":"")+"' id='"+idModifier+"MONEY_TRANSFER_BIG' style='"+buttonStyle+"'>[style."+(transferDisabled?"colourDisabled":"colourExcellent")+"(&gt;)]</div>");
 				
 			} else {
 				inventorySB.append(
-						"<div class='normal-button"+(transferDisabled?" disabled":"")+"' id='"+idModifier+"MONEY_TRANSFER_BIG' style='"+buttonStyle+"'>[style."+(transferDisabled?"colourDisabled":"colourExcellent")+"(&lt;)]</div>"
-						+ "<div class='normal-button"+(transferDisabled?" disabled":"")+"' id='"+idModifier+"MONEY_TRANSFER_AVERAGE' style='"+buttonStyle+"'>[style."+(transferDisabled?"colourDisabled":"colourGood")+"(&lt;)]</div>"
-						+ "<div class='normal-button"+(transferDisabled?" disabled":"")+"' id='"+idModifier+"MONEY_TRANSFER_SMALL' style='"+buttonStyle+"'>[style."+(transferDisabled?"colourDisabled":"colourMinorGood")+"(&lt;)]</div>"
-						+ "<div style='"+style+" width:"+styleWidth+";'>"+ (transferDisabled?UtilText.formatAsMoney("[style.colourUnknown(Unknown)]", "b"):UtilText.formatAsMoney(charactersInventoryToRender.getMoney(), "b")) +"</div>"
-						+ "<div style='"+style+" width:"+styleWidth+";'>"+ UtilText.formatAsEssences(charactersInventoryToRender.getEssenceCount(), "b", true) +"</div>");
+						"<div class='normal-button"+(transferDisabled?" отключено":"")+"' id='"+idModifier+"MONEY_TRANSFER_BIG' style='"+buttonStyle+"'>[style."+(transferDisabled?"colourDisabled":"colourExcellent")+"(&lt;)]</div><div class='normal-button"+(transferDisabled?" отключено":"")+"' id='"+idModifier+"MONEY_TRANSFER_AVERAGE' стиль='"+buttonStyle+"'>[style."+(transferDisabled?"colourDisabled":"colourGood")+"(&lt;)]</div><div class='normal-button"+(transferDisabled?" отключено":"")+"' id='"+idModifier+"MONEY_TRANSFER_SMALL' style='"+buttonStyle+"'>[style."+(transferDisabled?"colourDisabled":"colourMinorGood")+"(&lt;)]</div><div style='"+style+" ширина:"+styleWidth+";'>"+ (transferDisabled?UtilText.formatAsMoney("[style.colourUnknown(Неизвестно)]", "b"):UtilText.formatAsMoney(charactersInventoryToRender.getMoney(), "b")) +"</div>"
+						+ "<div style='"+style+" ширина:"+styleWidth+";'>"+ UtilText.formatAsEssences(charactersInventoryToRender.getEssenceCount(), "b", true) +"</div>");
 			}
 			
 		} else {
 			inventorySB.append(
-					"<div class='normal-button"+(transferDisabled?" disabled":"")+"' id='"+idModifier+"MONEY_TRANSFER_BIG' style='"+buttonStyle+" margin:0 0.75% 0 1%;'>[style."+(transferDisabled?"colourDisabled":"colourExcellent")+"(&lt;)]</div>"
-					+ "<div class='normal-button"+(transferDisabled?" disabled":"")+"' id='"+idModifier+"MONEY_TRANSFER_AVERAGE' style='"+buttonStyle+"'>[style."+(transferDisabled?"colourDisabled":"colourGood")+"(&lt;)]</div>"
-					+ "<div class='normal-button"+(transferDisabled?" disabled":"")+"' id='"+idModifier+"MONEY_TRANSFER_SMALL' style='"+buttonStyle+"'>[style."+(transferDisabled?"colourDisabled":"colourMinorGood")+"(&lt;)]</div>"
-					+ "<div style='"+style+" width:"+styleWidthDouble+"; margin-right:0;'>"+ UtilText.formatAsMoney(Main.game.getPlayerCell().getInventory().getMoney(), "b") +"</div>");
+					"<div class='normal-button"+(transferDisabled?" отключено":"")+"' id='"+idModifier+"MONEY_TRANSFER_BIG' style='"+buttonStyle+" margin:0 0.75% 0 1%;'>[style."+(transferDisabled?"colourDisabled":"colourExcellent")+"(&lt;)]</div><div class='normal-button"+(transferDisabled?" отключено":"")+"' id='"+idModifier+"MONEY_TRANSFER_AVERAGE' стиль='"+buttonStyle+"'>[style."+(transferDisabled?"colourDisabled":"colourGood")+"(&lt;)]</div><div class='normal-button"+(transferDisabled?" отключено":"")+"' id='"+idModifier+"MONEY_TRANSFER_SMALL' style='"+buttonStyle+"'>[style."+(transferDisabled?"colourDisabled":"colourMinorGood")+"(&lt;)]</div><div style='"+style+" ширина:"+styleWidthDouble+"; margin-right:0;'>"+ UtilText.formatAsMoney(Main.game.getPlayerCell().getInventory().getMoney(), "b") +"</div>");
 		}
 		
 		inventorySB.append("</div>");
@@ -937,15 +917,11 @@ public enum RenderingEngine {
 		if(giftsAvailable.isEmpty()) {
 			inventorySB.append("<div class='container-full-width'>"
 					+ "<p style='width:100%; text-align:center; padding:0 margin:0;'>"
-						+"<b style='color:"+PresetColour.GENERIC_MINOR_BAD.toWebHexString()+";'>No Suitable Gifts In Inventory</b>"
-					+"</p>"
-					+ "</div>");
+						+"<b style='color:"+PresetColour.GENERIC_MINOR_BAD.toWebHexString()+";'>В инвентаре нет подходящих подарков</b></p></div>");
 		} else {
 			inventorySB.append("<div class='container-full-width'>"
 					+ "<p style='width:100%; text-align:center; padding:0 margin:0;'>"
-						+"<b style='color:"+PresetColour.GENERIC_MINOR_GOOD.toWebHexString()+";'>Available Gifts</b>"
-					+"</p>"
-					+ "<div class='inventory-not-equipped'>");
+						+"<b style='color:"+PresetColour.GENERIC_MINOR_GOOD.toWebHexString()+";'>Доступные подарки</b></p><div class='inventory-not-equipped'>");
 			
 			appendDivsForGiftsToInventory(inventorySB, giftsAvailable, "GIFT_");
 			
@@ -1174,7 +1150,7 @@ public enum RenderingEngine {
 		if(item instanceof AbstractClothing) {
 			known = ((AbstractClothing)item).isEnchantmentKnown();
 		}
-		itemSB.append("<div class='inventory-item-slot"+(inventory.isFloorInventory()?" floor":"")+"' style='background-color:"+(known?item.getRarity().getBackgroundColour():PresetColour.RARITY_UNKNOWN_BACKGROUND).toWebHexString()+";'>"
+		itemSB.append("<div class='inventory-item-slot"+(inventory.isFloorInventory()?" пол":"")+"' style='background-color:"+(known?item.getRarity().getBackgroundColour():PresetColour.RARITY_UNKNOWN_BACKGROUND).toWebHexString()+";'>"
 						+ "<div class='inventory-icon-content'>"+item.getSVGString()+"</div>");
 
 		if (item instanceof AbstractClothing && ((AbstractClothing)item).isDirty()) {
@@ -1264,13 +1240,7 @@ public enum RenderingEngine {
 		if(rightColumn) {
 			if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.badEnd)) {
 				return "<div class='full-width-container'>"
-							+ "<p class='character-name' style='color:"+ PresetColour.GENERIC_BAD_END.toWebHexString() + ";'>"
-								+ "Bad End"
-							+ "</p>"
-						+ "</div>"
-						+ "<div class='full-width-container' style='margin:0;padding:0;'>"
-							+ "<p style='text-align:center;'>"
-								+ "<i>"+Main.getProperties().badEndTitle+"</i>"
+							+ "<p class='character-name' style='color:"+ PresetColour.GENERIC_BAD_END.toWebHexString() + ";'>Плохая концовка</p></div><div class='full-width-container' style='margin:0;padding:0;'><p style='text-align:center;'><i>"+Main.getProperties().badEndTitle+"</i>"
 							+"</p>"
 						+ "</div>";
 				
@@ -1284,16 +1254,16 @@ public enum RenderingEngine {
 				String mainTitle = "";
 				if(place.isLand()) {
 					if(place.isWater()) {
-						mainTitle = "[style.colourTan(Land)] &amp; [style.colourBlueLight(Water)]";
+						mainTitle = "[style.colourTan(Земля)] &amp; [style.colourBlueLight(Вода)]";
 					} else {
-						mainTitle = "[style.colourTan(Land)]";
+						mainTitle = "[style.colourTan(Земля)]";
 					}
 					
 				} else {
-					mainTitle = "[style.colourBlueLight(Water)]";
+					mainTitle = "[style.colourBlueLight(Вода)]";
 				}
 
-				String placeTitle = place.isDangerous()?"[style.colourBad(Dangerous)]":"[style.colourGood(Safe)]";
+				String placeTitle = place.isDangerous()?"[style.colourBad(Опасный)]":"[style.colourGood(Безопасно)]";
 				
 				return "<div class='full-width-container'>"
 							+ "<p class='character-name'>"
@@ -1334,7 +1304,7 @@ public enum RenderingEngine {
 						+ "</p>"
 					+ "</div>"
 					+ "<div class='full-width-container' style='margin:0;padding:0;'>"
-						+ "<p style='text-align:center;"+ (placeColour.isEmpty()?"":" color:"+placeColour+";")+ "'>"
+						+ "<p style='text-align:center;"+ (placeColour.isEmpty()?"":" цвет:"+placeColour+";")+ "'>"
 							+ Util.capitaliseSentence(UtilText.parse(placeTitle))
 						+"</p>"
 					+ "</div>";
@@ -1350,15 +1320,10 @@ public enum RenderingEngine {
 		if(Main.game.isInSex()) {
 			// Name box:
 			uiAttributeSB.append(
-				"<div class='full-width-container' style='background-color:"+PresetColour.BACKGROUND_DARK.toWebHexString()+"; border-radius:5px; margin-bottom:8px;'>"
-					+ "<div class='full-width-container'>"
-						+ "<p class='character-name' style='color:"+ (Main.sex.isDom(Main.game.getPlayer())
-								?PresetColour.GENERIC_SEX_AS_DOM.toWebHexString()+";'>Dominant"+(Main.sex.getDominantParticipants(true).size()>1?"s":"")+"</b>"
-								:PresetColour.GENERIC_SEX.toWebHexString()+";'>Submissive"+(Main.sex.getSubmissiveParticipants(true).size()>1?"s":"")+"</b>")
-						+"</p>"
-					+ "</div>"
-				+ "</div>"
-				+ "<div class='full-width-container' style='height: calc(100% - "
+				"<div class='full-width-container' style='background-color:"+PresetColour.BACKGROUND_DARK.toWebHexString()+"; border-radius:5px; margin-bottom:8px;'><div class='full-width-container'><p class='character-name' style='color:"+ (Main.sex.isDom(Main.game.getPlayer())
+								?PresetColour.GENERIC_SEX_AS_DOM.toWebHexString()+";'>Доминант"+(Main.sex.getDominantParticipants(true).size()>1?"s":"")+"</b>"
+								:PresetColour.GENERIC_SEX.toWebHexString()+";'>Сабмиссив"+(Main.sex.getSubmissiveParticipants(true).size()>1?"s":"")+"</b>")
+						+"</p></div></div><div class='full-width-container' style='height: calc(100% - "
 									+(Main.game.getCurrentDialogueNode().getDialogueNodeType()==DialogueNodeType.INVENTORY && Main.game.isEnchantmentCapacityEnabled()
 										?"128"
 										:"134")
@@ -1380,14 +1345,7 @@ public enum RenderingEngine {
 		} else if(Main.game.isInCombat()) {
 			// Name box:
 			uiAttributeSB.append(
-				"<div class='full-width-container' style='background-color:"+PresetColour.BACKGROUND_DARK.toWebHexString()+"; border-radius:5px; margin-bottom:8px;'>"
-					+ "<div class='full-width-container'>"
-						+ "<p class='character-name' style='color:"+ PresetColour.BASE_GREEN.toWebHexString()+";'>"
-								+ "Allies"
-						+"</p>"
-					+ "</div>"
-				+ "</div>"
-				+ "<div class='full-width-container' style='height: calc(100% - "
+				"<div class='full-width-container' style='background-color:"+PresetColour.BACKGROUND_DARK.toWebHexString()+"; border-radius:5px; margin-bottom:8px;'><div class='full-width-container'><p class='character-name' style='color:"+ PresetColour.BASE_GREEN.toWebHexString()+";'>Союзники</p></div></div><div class='full-width-container' style='height: calc(100% - "
 									+(Main.game.getCurrentDialogueNode().getDialogueNodeType()==DialogueNodeType.INVENTORY && Main.game.isEnchantmentCapacityEnabled()
 										?"128"
 										:"134")
@@ -1405,8 +1363,7 @@ public enum RenderingEngine {
 			// Default place name box:
 			uiAttributeSB.append("<div class='full-width-container' style='background-color:"+PresetColour.BACKGROUND_DARK.toWebHexString()+"; border-radius:5px; margin-bottom:8px;'>"
 									+ getDefaultAttributeColumnHeader(false)
-									+"</div>"
-							+ "<div class='full-width-container' style='height:calc(100% - "
+									+"</div><div class='full-width-container' style='height:calc(100% - "
 									+(Main.game.getCurrentDialogueNode().getDialogueNodeType()==DialogueNodeType.INVENTORY && Main.game.isEnchantmentCapacityEnabled()
 										?"136"
 										:"142")
@@ -1468,15 +1425,14 @@ public enum RenderingEngine {
 					
 					uiAttributeSB.append((Main.getProperties().hasValue(PropertyValue.calendarDisplay)
 													? Main.game.getDisplayDate(false)
-													:"Day "+Main.game.getDayNumber()));
+													:"День "+Main.game.getDayNumber()));
 
 					// Day-of-week indicator:
 					uiAttributeSB.append("<div class='full-width-container' style='text-align:center; float:left; margin:0; padding:0; width:100%;'>");
 						String[] weekDays = new String[] {"M", "T", "W", "T", "F", "S", "S"};
 						for(int i=0; i<7; i++) {
 							if(!Main.game.isBadEnd() && Main.game.getDateNow().getDayOfWeek().getValue()==i+1) {
-								uiAttributeSB.append("<div class='full-width-container' style='height:12px; box-sizing:border-box; text-align:center; border-radius:5px; font-size:10px;"
-										+ " border:1px solid "+PresetColour.TEXT.toWebHexString()+"; float:left; margin:0; padding:0; width:14.28%;'>");
+								uiAttributeSB.append("<div class='full-width-container' style='height:12px; box-sizing:border-box; text-align:center; border-radius:5px; font-size:10px; border:1px solid "+PresetColour.TEXT.toWebHexString()+"; float:left; margin:0; padding:0; width:14.28%;'>");
 							} else {
 								uiAttributeSB.append("<div class='full-width-container' style='height:12px; text-align:center; font-size:10px; float:left; margin:0; padding:0; width:14.28%; color:"+PresetColour.TEXT_GREY.toWebHexString()+";'>");
 							}
@@ -1521,16 +1477,14 @@ public enum RenderingEngine {
 						String nightString = "494873";
 						float fadeWidth = 2;
 						
-						uiAttributeSB.append("<div style='position:relative; width:90%; margin:2px 5% 0 5%; padding:0; height:4px; border-radius:1px; background-image:"
-								+ " linear-gradient(90deg, #"+nightString+" "+(sunrisePercentage-fadeWidth)+"%, #"+dayString+" "+(sunrisePercentage+fadeWidth)+"%,"
+						uiAttributeSB.append("<div style='position:relative; width:90%; margin:2px 5% 0 5%; padding:0; height:4px; border-radius:1px; background-image: linear-gradient(90deg, #"+nightString+" "+(sunrisePercentage-fadeWidth)+"%, #"+dayString+" "+(sunrisePercentage+fadeWidth)+"%,"
 										+ " #"+dayString+" "+(sunsetPercentage-fadeWidth)+"%, #"+nightString+" "+(sunsetPercentage+fadeWidth)+"%);'>");
 							// Arrow:
 	//						uiAttributeSB.append("<div style='position:absolute; width:0; height:0; border-left:2px solid transparent; border-right:2px solid transparent; border-bottom:4px solid #ffffff;"
 	//								+ " margin-left:calc("+(secondPercentage)+"% - 1px); padding:0 0 0 0;'>");
 	//						uiAttributeSB.append("</div>");
 							// Line:
-							uiAttributeSB.append("<div style='box-sizing:border-box; position:absolute; width:3px; margin-left:calc("+(secondPercentage)+"% - 1px); padding:0; height:4px; border-radius:1px;"
-									+ " border-left:1px solid #000000; border-right:1px solid #000000; background-color:#ffffff;'>");
+							uiAttributeSB.append("<div style='box-sizing:border-box; position:absolute; width:3px; margin-left:calc("+(secondPercentage)+"% - 1px); padding:0; height:4px; border-radius:1px; border-left:1px solid #000000; border-right:1px solid #000000; background-color:#ffffff;'>");
 							uiAttributeSB.append("</div>");
 						uiAttributeSB.append("</div>");
 						
@@ -1614,20 +1568,15 @@ public enum RenderingEngine {
 		uiAttributeSB.setLength(0);
 		
 		uiAttributeSB.append(
-				"<body onLoad='scrollEventLogToBottom()' style='"+Main.game.getBodyStyle()+"'>"
-					+ " <script>"
-						+"function scrollEventLogToBottom() {document.getElementById('event-log-inner-id').scrollTop = document.getElementById('event-log-inner-id').scrollHeight;}"
-					+ "</script>");
+				"<body onLoad='scrollEventLogToBottom()' style='"+Main.game.getBodyStyle()+"'> <script>function scrollEventLogToBottom() {document.getElementById('event-log-inner-id').scrollTop = document.getElementById('event-log-inner-id').scrollHeight;}</script>");
 			
 		if(isRenderingCharactersRightPanel()) {
 			if(Main.game.isInSex()) {
 				// Name box:
 				uiAttributeSB.append(
-						"<div class='full-width-container' style='background-color:"+PresetColour.BACKGROUND_DARK.toWebHexString()+"; border-radius:5px; margin-bottom:8px;'>"
-						+ "<div class='full-width-container'>"
-							+ "<p class='character-name' style='color:"+ (!Main.sex.isDom(Main.game.getPlayer())
-									?PresetColour.GENERIC_SEX_AS_DOM.toWebHexString()+";'>Dominant"+(Main.sex.getDominantParticipants(true).size()>1?"s":"")
-									:PresetColour.GENERIC_SEX.toWebHexString()+";'>Submissive"+(Main.sex.getSubmissiveParticipants(true).size()>1?"s":""))
+						"<div class='full-width-container' style='background-color:"+PresetColour.BACKGROUND_DARK.toWebHexString()+"; border-radius:5px; margin-bottom:8px;'><div class='full-width-container'><p class='character-name' style='color:"+ (!Main.sex.isDom(Main.game.getPlayer())
+									?PresetColour.GENERIC_SEX_AS_DOM.toWebHexString()+";'>Доминант"+(Main.sex.getDominantParticipants(true).size()>1?"s":"")
+									:PresetColour.GENERIC_SEX.toWebHexString()+";'>Сабмиссив"+(Main.sex.getSubmissiveParticipants(true).size()>1?"s":""))
 							+"</p>"
 						+ "</div>"
 					+ "</div>"
@@ -1650,10 +1599,8 @@ public enum RenderingEngine {
 				
 				// Name box:
 				uiAttributeSB.append(
-					"<div class='full-width-container' style='background-color:"+PresetColour.BACKGROUND_DARK.toWebHexString()+"; border-radius:5px; margin-bottom:8px;'>"
-						+ "<div class='full-width-container'>"
-							+ "<p class='character-name' style='color:"+ PresetColour.BASE_CRIMSON.toWebHexString()+";'>"
-								+ (Main.combat.getEnemies(Main.game.getPlayer()).size()>1?"Enemies":"Enemy")
+					"<div class='full-width-container' style='background-color:"+PresetColour.BACKGROUND_DARK.toWebHexString()+"; border-radius:5px; margin-bottom:8px;'><div class='full-width-container'><p class='character-name' style='color:"+ PresetColour.BASE_CRIMSON.toWebHexString()+";'>"
+								+ (Main.combat.getEnemies(Main.game.getPlayer()).size()>1?"Враги":"Враг")
 							+"</p>"
 						+ "</div>"
 					+ "</div>"
@@ -1702,8 +1649,8 @@ public enum RenderingEngine {
 								"<div class='full-width-container' style='text-align:center;'>"
 										+ "<p style='white-space: nowrap;  overflow: hidden;  text-overflow: ellipsis;'>"
 											+ (getCharacterToRender()==null
-												?"No Character"
-												:UtilText.parse(getCharacterToRender(), "[npc.NamePos] "+(isRenderingTattoosRight()?"Markings":"Inventory")))
+												?"Нет персонажа"
+												:UtilText.parse(getCharacterToRender(), "[npc.NamePos] "+(isRenderingTattoosRight()?"Отметки":"Инвентарь")))
 										+ "</p>"
 								+ "</div>");
 			}
@@ -1725,8 +1672,7 @@ public enum RenderingEngine {
 					+ "</div>");
 			
 			// Characters Present:
-			uiAttributeSB.append("<div class='attribute-container effects'>"
-								+ "<p style='text-align:center;padding:0;margin:0;'><b>Characters Present</b></p>");
+			uiAttributeSB.append("<div class='attribute-container effects'><p style='text-align:center;padding:0;margin:0;'><b>Присутствующие персонажи</b></p>");
 			List <NPC> charactersPresent = Main.game.getCharactersPresent();
 			for(GameCharacter c : Main.game.getCharactersPresent()) {
 				if(c.isElementalSummoned() && !c.getElemental().isActive()) {
@@ -1740,7 +1686,7 @@ public enum RenderingEngine {
 				}
 			}
 			if(charactersPresent.isEmpty() && (place.getPopulation()==null || place.getPopulation().isEmpty() || subspeciesSet.isEmpty())) {
-				uiAttributeSB.append("<p style='text-align:center;padding:0;margin:0;'><span style='color:"+PresetColour.TEXT_GREY.toWebHexString()+";'>None...</span></p>");
+				uiAttributeSB.append("<p style='text-align:center;padding:0;margin:0;'><span style='color:"+PresetColour.TEXT_GREY.toWebHexString()+";'>Нет...</span></p>");
 				
 			} else {
 				int count = 0;
@@ -1756,10 +1702,7 @@ public enum RenderingEngine {
 									+" <div style='color:"+character.getFemininity().getColour().toWebHexString()+";'>"
 										+(!character.getArtworkList().isEmpty() && Main.getProperties().hasValue(PropertyValue.artwork)?"&#128247; ":"")
 											+UtilText.parse(character, "[npc.Name(A)]")
-										+ "<div class='overlay-inventory' id='NPC_" + character.getId() + "_" + Attribute.EXPERIENCE.getName() + "' style='width:calc(11% + 8px);'></div>"
-										+ "<div class='overlay-inventory' id='NPC_"+character.getId()+"_ATTRIBUTES' style='width:calc(89% - 8px); left:calc(11% + 8px);'></div>"
-									+"</div>"
-								+ "</div>");
+										+ "<div class='overlay-inventory' id='NPC_" + character.getId() + "_" + Attribute.EXPERIENCE.getName() + "' style='width:calc(11% + 8px);'></div><div class='overlay-inventory' id='NPC_"+character.getId()+"_АТРИБУТЫ' style='width:calc(89% - 8px); left:calc(11% + 8px);'></div></div></div>");
 //					} else {
 //						uiAttributeSB.append(
 //								"<div class='event-log-entry' style='background:"+getEntryBackgroundColour(count%2==0)+";'>"
@@ -1794,9 +1737,7 @@ public enum RenderingEngine {
 											+ "</div>"
 											+" <div style='color:"+PresetColour.BASE_GREY.toWebHexString()+";'>"
 												+Util.capitaliseSentence(pop.getDescription(true))
-												+ "<div class='overlay-inventory' id='PLACE_POPULATION_"+i+"' style='width:100%;'></div>"
-											+"</div>"
-										+ "</div>");
+												+ "<div class='overlay-inventory' id='PLACE_POPULATION_"+i+"' style='width:100%;'></div></div></div>");
 						}
 						i++;
 					}
@@ -1806,8 +1747,7 @@ public enum RenderingEngine {
 			
 			
 			// Items Present:
-			uiAttributeSB.append("<div class='attribute-container effects'>"
-								+ "<p style='text-align:center;padding:0;margin:0;'><b>Items Present</b></p>");
+			uiAttributeSB.append("<div class='attribute-container effects'><p style='text-align:center;padding:0;margin:0;'><b>Предметы на земле</b></p>");
 			
 			int count = 0;
 			if(Main.game.isInNewWorld()) {
@@ -1819,9 +1759,8 @@ public enum RenderingEngine {
 				if(Main.game.getPlayerCell().getInventory().getMoney()>0) {
 					uiAttributeSB.append(
 							"<div class='event-log-entry' style='background:"+getEntryBackgroundColour(false)+";'>"
-									+ UtilText.formatAsMoney(Main.game.getPlayerCell().getInventory().getMoney(), "span")
-									+ "<div class='overlay-inventory"+extraClasses+"' id='MONEY_ON_FLOOR'></div>"
-							+"</div>");
+									+ UtilText.formatAsMoney(Main.game.getPlayerCell().getInventory().getMoney(), "охват")
+									+ "<div class='overlay-inventory"+extraClasses+"' id='MONEY_ON_FLOOR'></div></div>");
 					count++;
 				}
 				
@@ -1883,7 +1822,7 @@ public enum RenderingEngine {
 				}
 			}
 			if(count==0) {
-				uiAttributeSB.append("<p style='text-align:center;padding:0;margin:0;'><span style='color:"+PresetColour.TEXT_GREY.toWebHexString()+";'>None...</span></p>");
+				uiAttributeSB.append("<p style='text-align:center;padding:0;margin:0;'><span style='color:"+PresetColour.TEXT_GREY.toWebHexString()+";'>Нет...</span></p>");
 			}
 			uiAttributeSB.append(
 					"</div>");
@@ -1891,13 +1830,10 @@ public enum RenderingEngine {
 			
 			// Event log:
 			uiAttributeSB.append(
-					"</div>"
-						+ "<div class='event-log'>"
-							+ "<p style='text-align:center;padding:0;margin:0;'><b>Event Log</b></p>"
-							+ "<div class='event-log-inner' id='event-log-inner-id'>");
+					"</div><div class='event-log'><p style='text-align:center;padding:0;margin:0;'><b>Журнал событий</b></p><div class='event-log-inner' id='event-log-inner-id'>");
 			
 			if(Main.game.getEventLog().isEmpty()) {
-				uiAttributeSB.append("<p style='text-align:center;padding:0;margin:0;'><span style='color:"+PresetColour.TEXT_GREY.toWebHexString()+";'>No events yet...</span></p>");
+				uiAttributeSB.append("<p style='text-align:center;padding:0;margin:0;'><span style='color:"+PresetColour.TEXT_GREY.toWebHexString()+";'>Событий пока нет...</span></p>");
 			}
 			
 			count = 0;
@@ -1996,15 +1932,10 @@ public enum RenderingEngine {
 					
 				} else {
 					String border = (c.getPlace()!=null && placeType.getColour()!=null
-										?"border:1px solid "+placeType.getColour().getShadesRgbaFormat(0.5f)[2]+";"
+										?"граница:1px сплошная "+placeType.getColour().getShadesRgbaFormat(0.5f)[2]+";"
 										:"border:1px solid #ffffff;")
 									+ (grid.length>25
-											?"width:"+(width)+"%; margin:0; border-radius:0; border-width:0.5px 0.5px 0.5px 0.5px; border-style:solid; border-color:"
-//												+(dangerousTile
-//														?BaseColour.RED_DARK.toWebHexString()
-//														:PresetColour.GENERIC_GOOD.toWebHexString())
-													+"#222"
-												+";"
+											?"ширина:"+(width)+"%; margin:0; border-radius:0; border-width:0.5px 0.5px 0.5px 0.5px; border-style:solid; border-color:#222;"
 											:"");
 					
 					boolean playerOnTile = Main.game.getPlayer().getWorldLocation()==world && Main.game.getPlayer().getLocation().getX()==j && Main.game.getPlayer().getLocation().getY()==i;
@@ -2029,7 +1960,7 @@ public enum RenderingEngine {
 										:"")
 								+ (c.getPlace()!=null && c.getPlace().getSVGString()!=null
 									? "<div class='map-icon-content' style='background-color:"+placeType.getColour().toWebHexString()+"; width:75%; height:75%; margin:12.5%; border-radius:50%;"
-										+(playerOnTile?" border:2px solid "+getPlayerIconColour(dangerousTile).toWebHexString()+";":"")+"'>"
+										+(playerOnTile?" граница:2px сплошная "+getPlayerIconColour(dangerousTile).toWebHexString()+";":"")+"'>"
 											+c.getPlace().getSVGString()+"</div>"
 									: "")
 								+(playerOnTile && (c.getPlace() == null || c.getPlace().getSVGString()==null)
@@ -2049,10 +1980,8 @@ public enum RenderingEngine {
 		}
 
 		if(withFastTravel) {
-			String buttonStyle= "width:60%; min-width:0; margin:0 20% 4px 20%;";
-			mapSB.append("</div>"
-						+ "<div class='container-full-width' style='width:28%; margin:0 0 0 2%; padding:0; float:left;'>"
-							+ "<p style='text-align:center;'>[style.bold(Fast Travel)]</p>");
+			String buttonStyle= "ширина:60%; мин-ширина:0; отступ:0 20% 4px 20%;";
+			mapSB.append("</div><div class='container-full-width' style='width:28%; margin:0 0 0 2%; padding:0; float:left;'><p style='text-align:center;'>[style.bold(Быстрое перемещение)]</p>");
 			
 			for(MapTravelType type : MapTravelType.values()) {
 				if(!type.isAvailable(null, Main.game.getPlayer())) {
@@ -2061,13 +1990,11 @@ public enum RenderingEngine {
 						+ "</div>");
 					
 				} else if(Pathing.getMapTravelType()==type){
-					mapSB.append("<div id='"+type.toString()+"' class='cosmetics-button active' style='"+buttonStyle+"'>"
-							+ "<span style='color:"+type.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(type.getName())+"</span>"
+					mapSB.append("<div id='"+type.toString()+"' class='cosmetics-button active' style='"+buttonStyle+"'><span style='color:"+type.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(type.getName())+"</span>"
 						+ "</div>");
 					
 				} else {
-					mapSB.append("<div id='"+type.toString()+"' class='cosmetics-button' style='"+buttonStyle+"'>"
-							+ "<span style='color:"+type.getColour().getShades()[0]+";'>"+Util.capitaliseSentence(type.getName())+"</span>"
+					mapSB.append("<div id='"+type.toString()+"' class='cosmetics-button' style='"+buttonStyle+"'><span style='color:"+type.getColour().getShades()[0]+";'>"+Util.capitaliseSentence(type.getName())+"</span>"
 						+ "</div>");
 				}
 			}
@@ -2081,10 +2008,10 @@ public enum RenderingEngine {
 			
 			if(!travelDestinationSelected) {
 				if(!world.equals(Main.game.getPlayer().getWorldLocation()) && Pathing.getMapTravelType()!=MapTravelType.TELEPORT) {
-					mapSB.append("[style.italicsBad(You cannot use this fast travel method to travel between different maps.)]");
+					mapSB.append("[style.italicsBad(Вы не можете использовать этот способ быстрого перемещения между разными картами.)]");
 					
 				} else if(Main.game.getSavedDialogueNode()!=null && Main.game.getSavedDialogueNode().isTravelDisabled()) {
-					mapSB.append("[style.italicsBad(You cannot fast travel while in the middle of a scene!)]");
+					mapSB.append("[style.italicsBad(Вы не можете использовать быстрое перемещение прямо во время сцены!)]");
 					
 				} else if(!Pathing.getMapTravelType().isAvailable(null, Main.game.getPlayer())){
 					mapSB.append("[style.italicsBad("+Pathing.getMapTravelType().getUnavailablilityDescription(null, Main.game.getPlayer())+")]");
@@ -2103,30 +2030,29 @@ public enum RenderingEngine {
 									?""
 									:", "+Util.intToString(minutes%60)+" minute"+(minutes==1?"":"s"))
 							:(minutes==0
-								?"Less than a minute"
+								?"Меньше минуты"
 								:Util.capitaliseSentence(Util.intToString(minutes%60))+" minute"+(minutes==1?"":"s"));
 								
 				int dangerousTiles = Pathing.getDangerousTilesCrossed();
 				
 				switch(Pathing.getMapTravelType()) {
 					case FLYING:
-						mapSB.append("Estimated travel time:<br/>"+(hours>0?"[style.boldMinorBad(":"[style.boldMinorGood(")+time+")]"
+						mapSB.append("Примерное время в пути:<br/>"+(hours>0?"[style.boldMinorBad(":"[style.boldMinorGood(")+time+")]"
 								+"<br/><br/>"
 								+ (dangerousTiles==0
-									?"[style.colourGood(Zero)] dangerous tiles will be encountered, as you fly over any in your way!"
-									:"[style.colourBad(One)] dangerous tile will be encountered (that being your destination)."));
+									?"[style.colourGood(Ноль)] опасных клеток встретится на вашем пути, пока вы пролетаете над ними!"
+									:"[style.colourBad(One)] вас ждет опасная клетка (она и будет вашей целью)."));
 						break;
 					case TELEPORT:
-						mapSB.append("Estimated travel time:<br/>[style.boldExcellent(Five seconds)]"
-								+ "<br/><br/>"
+						mapSB.append("Приблизительное время в пути: <br/>[style.boldExcellent(пять секунд)]<br/><br/>"
 								+ (dangerousTiles==0
-									?"[style.colourGood(Zero)] dangerous tiles will be encountered, as you teleport past them all!"
-									:"[style.colourBad(One)] dangerous tile will be encountered (that being your destination)."));
+									?"[style.colourGood(Zero)] вы телепортируетесь мимо всех опасных клеток!"
+									:"[style.colourBad(One)] вас ждет опасная клетка (она и будет вашей целью)."));
 						break;
 					case WALK_DANGEROUS:
 					case WALK_SAFE:
-						mapSB.append("Estimated travel time:<br/>"+(hours>0?"[style.boldMinorBad(":"[style.boldMinorGood(")+time+")]"
-								+"<br/><br/>"+(dangerousTiles>0?"[style.colourBad(":"[style.colourGood(")+Util.capitaliseSentence(Util.intToString(dangerousTiles))+")] dangerous tile"+(dangerousTiles==1?"":"s")+" will be encountered!");
+						mapSB.append("Примерное время в пути:<br/>"+(hours>0?"[style.boldMinorBad(":"[style.boldMinorGood(")+time+")]"
+								+"<br/><br/>"+(dangerousTiles>0?"[style.colourBad(":"[style.colourGood(")+Util.capitaliseSentence(Util.intToString(dangerousTiles))+")] опасная клетка"+(dangerousTiles==1?"":"s")+" встречается!");
 						break;
 				}
 			}
@@ -2172,7 +2098,7 @@ public enum RenderingEngine {
 	
 	private static String getDangerousBackground(AbstractPlaceType placeType) {
 		if(placeType instanceof AbstractGlobalPlaceType) {
-			return "background:"+placeType.getBackgroundColour().toWebHexString()+";";
+			return "фон:"+placeType.getBackgroundColour().toWebHexString()+";";
 		}
 		
 		String backgroundColour1;
@@ -2185,8 +2111,7 @@ public enum RenderingEngine {
 			backgroundColour2 = placeType.getBackgroundColour().toWebHexString();
 		}
 		
-		return "background: repeating-linear-gradient("
-				+"135deg,"
+		return "background: repeating-linear-gradient(135deg,"
 				+backgroundColour1+","
 				+backgroundColour1+" 20%,"
 				
@@ -2234,7 +2159,7 @@ public enum RenderingEngine {
 		int mapSize = isZoomedIn() ? 2 : 3;
 		float unit = isZoomedIn() ? 18f : 13.25f;
 		
-		String tileWidthStyle = "width:" + unit + "%; border-width:1%; margin:"+(isZoomedIn()?1:0.5)+"%;";
+		String tileWidthStyle = "ширина:" + unit + "%; border-width:1%; margin:"+(isZoomedIn()?1:0.5)+"%;";
 		String tileMovementDisabledStyle = "border-color:#111;";
 		Vector2i playerPosition = Main.game.getPlayer().getLocation();
 		
@@ -2258,10 +2183,10 @@ public enum RenderingEngine {
 									mapSB.append("<div class='map-tile movement dangerous' id='upButton' style='"+(cellTravelDisabled?tileMovementDisabledStyle:"")+tileWidthStyle+getDangerousBackground(placeType)+"'>");
 									
 								} else {
-									mapSB.append("<div class='map-tile movement' id='upButton' style='"+tileWidthStyle+" background:"+placeType.getBackgroundColour().toWebHexString()+";"
+									mapSB.append("<div class='map-tile movement' id='upButton' style='"+tileWidthStyle+" фон:"+placeType.getBackgroundColour().toWebHexString()+";"
 											+(cellTravelDisabled
 												?tileMovementDisabledStyle
-												:" border-color:"+
+												:" цвет-границы:"+
 													(Main.game.getPlayer().getFemininityValue()<=Femininity.MASCULINE.getMaximumFemininity()
 															?PresetColour.MASCULINE_PLUS
 															:(Main.game.getPlayer().getFemininityValue()<=Femininity.ANDROGYNOUS.getMaximumFemininity()
@@ -2275,7 +2200,7 @@ public enum RenderingEngine {
 									mapSB.append("<div class='place-icon'><div class='map-tile-content'>" + cellFocused.getPlace().getSVGString() + "</div></div>");
 								}
 								
-								mapSB.append("<b class='hotkey-icon" + (cellFocused.getPlace().isDangerous() ? " dangerous" : "") + "'>"
+								mapSB.append("<b class='hotkey-icon" + (cellFocused.getPlace().isDangerous() ? " опасный" : "") + "'>"
 										+ (Main.getProperties().hotkeyMapPrimary.get(KeyboardAction.MOVE_NORTH) == null ? "" : Main.getProperties().hotkeyMapPrimary.get(KeyboardAction.MOVE_NORTH).getFullName()) + "</b>");
 								
 								appendNPCIcon(Main.game.getActiveWorld(), x, y, unit);
@@ -2291,10 +2216,10 @@ public enum RenderingEngine {
 									mapSB.append("<div class='map-tile movement dangerous' id='downButton' style='"+(cellTravelDisabled?tileMovementDisabledStyle:"")+tileWidthStyle+getDangerousBackground(placeType)+"'>");
 									
 								} else {
-									mapSB.append("<div class='map-tile movement' id='downButton' style='"+tileWidthStyle+" background:"+placeType.getBackgroundColour().toWebHexString()+";"
+									mapSB.append("<div class='map-tile movement' id='downButton' style='"+tileWidthStyle+" фон:"+placeType.getBackgroundColour().toWebHexString()+";"
 											+(cellTravelDisabled
 												?tileMovementDisabledStyle
-												:" border-color:"+
+												:" цвет-границы:"+
 													(Main.game.getPlayer().getFemininityValue()<=Femininity.MASCULINE.getMaximumFemininity()
 															?PresetColour.MASCULINE_PLUS
 															:(Main.game.getPlayer().getFemininityValue()<=Femininity.ANDROGYNOUS.getMaximumFemininity()
@@ -2308,7 +2233,7 @@ public enum RenderingEngine {
 									mapSB.append("<div class='place-icon'><div class='map-tile-content'>" + cellFocused.getPlace().getSVGString() + "</div></div>");
 								}
 								
-								mapSB.append("<b class='hotkey-icon" + (cellFocused.getPlace().isDangerous() ? " dangerous" : "") + "'>"
+								mapSB.append("<b class='hotkey-icon" + (cellFocused.getPlace().isDangerous() ? " опасная" : "") + "'>"
 										+ (Main.getProperties().hotkeyMapPrimary.get(KeyboardAction.MOVE_SOUTH) == null ? "" : Main.getProperties().hotkeyMapPrimary.get(KeyboardAction.MOVE_SOUTH).getFullName()) + "</b>");
 
 								appendNPCIcon(Main.game.getActiveWorld(), x, y, unit);
@@ -2324,10 +2249,10 @@ public enum RenderingEngine {
 									mapSB.append("<div class='map-tile movement dangerous' id='leftButton' style='"+(cellTravelDisabled?tileMovementDisabledStyle:"")+tileWidthStyle+getDangerousBackground(placeType)+"'>");
 									
 								} else {
-									mapSB.append("<div class='map-tile movement' id='leftButton' style='"+tileWidthStyle+" background:"+placeType.getBackgroundColour().toWebHexString()+";"
+									mapSB.append("<div class='map-tile movement' id='leftButton' style='"+tileWidthStyle+" фон:"+placeType.getBackgroundColour().toWebHexString()+";"
 											+(cellTravelDisabled
 												?tileMovementDisabledStyle
-												:" border-color:"+
+												:" цвет-границы:"+
 													(Main.game.getPlayer().getFemininityValue()<=Femininity.MASCULINE.getMaximumFemininity()
 															?PresetColour.MASCULINE_PLUS
 															:(Main.game.getPlayer().getFemininityValue()<=Femininity.ANDROGYNOUS.getMaximumFemininity()
@@ -2341,7 +2266,7 @@ public enum RenderingEngine {
 									mapSB.append("<div class='place-icon'><div class='map-tile-content'>" + cellFocused.getPlace().getSVGString() + "</div></div>");
 								}
 								
-								mapSB.append("<b class='hotkey-icon" + (cellFocused.getPlace().isDangerous() ? " dangerous" : "") + "'>"
+								mapSB.append("<b class='hotkey-icon" + (cellFocused.getPlace().isDangerous() ? " опасное" : "") + "'>"
 										+ (Main.getProperties().hotkeyMapPrimary.get(KeyboardAction.MOVE_WEST) == null ? "" : Main.getProperties().hotkeyMapPrimary.get(KeyboardAction.MOVE_WEST).getFullName()) + "</b>");
 
 								appendNPCIcon(Main.game.getActiveWorld(), x, y, unit);
@@ -2357,10 +2282,10 @@ public enum RenderingEngine {
 									mapSB.append("<div class='map-tile movement dangerous' id='rightButton' style='"+(cellTravelDisabled?tileMovementDisabledStyle:"")+tileWidthStyle+getDangerousBackground(placeType)+"'>");
 									
 								} else {
-									mapSB.append("<div class='map-tile movement' id='rightButton' style='"+tileWidthStyle+" background:"+placeType.getBackgroundColour().toWebHexString()+";"
+									mapSB.append("<div class='map-tile movement' id='rightButton' style='"+tileWidthStyle+" фон:"+placeType.getBackgroundColour().toWebHexString()+";"
 											+(cellTravelDisabled
 												?tileMovementDisabledStyle
-												:" border-color:"+
+												:" цвет-границы:"+
 													(Main.game.getPlayer().getFemininityValue()<=Femininity.MASCULINE.getMaximumFemininity()
 															?PresetColour.MASCULINE_PLUS
 															:(Main.game.getPlayer().getFemininityValue()<=Femininity.ANDROGYNOUS.getMaximumFemininity()
@@ -2374,7 +2299,7 @@ public enum RenderingEngine {
 									mapSB.append("<div class='place-icon'><div class='map-tile-content'>" + cellFocused.getPlace().getSVGString() + "</div></div>");
 								}
 
-								mapSB.append("<b class='hotkey-icon" + (cellFocused.getPlace().isDangerous() ? " dangerous" : "") + "'>"
+								mapSB.append("<b class='hotkey-icon" + (cellFocused.getPlace().isDangerous() ? " опасные" : "") + "'>"
 										+ (Main.getProperties().hotkeyMapPrimary.get(KeyboardAction.MOVE_EAST) == null ? "" : Main.getProperties().hotkeyMapPrimary.get(KeyboardAction.MOVE_EAST).getFullName()) + "</b>");
 
 								appendNPCIcon(Main.game.getActiveWorld(), x, y, unit);
@@ -2386,10 +2311,10 @@ public enum RenderingEngine {
 
 							} else {
 								if(cellFocused.getPlace().isDangerous()) {
-									mapSB.append("<div class='map-tile" + (y == playerPosition.getY() && x == playerPosition.getX() ? " player dangerous" : " dangerous") + "' style='"+tileWidthStyle+getDangerousBackground(placeType)+"'>");
+									mapSB.append("<div class='map-tile" + (y == playerPosition.getY() && x == playerPosition.getX() ? " игрок опасен" : " опасность") + "' style='"+tileWidthStyle+getDangerousBackground(placeType)+"'>");
 									
 								} else {
-									mapSB.append("<div class='map-tile" + (y == playerPosition.getY() && x == playerPosition.getX() ? " player" : "") + "' style='"+tileWidthStyle+" background:"+placeType.getBackgroundColour().toWebHexString()+";'>");
+									mapSB.append("<div class='map-tile" + (y == playerPosition.getY() && x == playerPosition.getX() ? " игрок" : "") + "' style='"+tileWidthStyle+" фон:"+placeType.getBackgroundColour().toWebHexString()+";'>");
 									
 								}
 
@@ -2397,8 +2322,7 @@ public enum RenderingEngine {
 								if (cellFocused.getPlace().getSVGString() != null) {
 									if (y == playerPosition.getY() && x == playerPosition.getX()) {
 										mapSB.append("<div class='place-icon' style='margin:calc(18% - 1px); width:64%;'>"
-												+ "<div class='map-tile-content' style='background-color:"+getPlayerIconColour(cellFocused.getPlace().isDangerous()).toWebHexString()+";"
-														+ "border:1px solid "
+												+ "<div class='map-tile-content' style='background-color:"+getPlayerIconColour(cellFocused.getPlace().isDangerous()).toWebHexString()+";border:1px solid "
 															+getPlayerIconColour(cellFocused.getPlace().isDangerous()).getShades()[1]
 														+"; border-radius:50%;'>"
 												+ cellFocused.getPlace().getSVGString() + "</div></div>");
@@ -2517,11 +2441,7 @@ public enum RenderingEngine {
 				"<div class='quarterContainer'>"
 					+ "<div class='button' id='mainMenu'>"
 						+ SVGImages.SVG_IMAGE_PROVIDER.getMenuIcon()
-					+ "</div>"
-				+ "</div>"
-
-				+ "<div class='quarterContainer'>"
-					+ "<div class='button" + (
+					+ "</div></div><div class='quarterContainer'><div class='button" + (
 							(Main.mainController.isPhoneDisabled())
 								?" disabled"
 								:(Main.game.getPlayer().isMainQuestUpdated()
@@ -2536,26 +2456,14 @@ public enum RenderingEngine {
 										:""))
 						+ "' id='journal'>" + SVGImages.SVG_IMAGE_PROVIDER.getJournalIcon()
 						+ (Main.mainController.isPhoneDisabled() ? "<div class='disabledLayer'></div>" : "")
-					+ "</div>"
-				+ "</div>"
-
-				+ "<div class='quarterContainer'>"
-					+ "<div class='button" + (!Main.game.getActiveWorld().getCell(Main.game.getPlayer().getLocation()).getInventory().isEmpty() ? " highlight" : "")
-					+ (Main.mainController.isInventoryDisabled() ? " disabled" : "") + "' id='inventory'>"
+					+ "</div></div><div class='quarterContainer'><div class='button" + (!Main.game.getActiveWorld().getCell(Main.game.getPlayer().getLocation()).getInventory().isEmpty() ? " highlight" : "")
+					+ (Main.mainController.isInventoryDisabled() ? " disabled" : "") + "' id='инвентарь'>"
 						+ SVGImages.SVG_IMAGE_PROVIDER.getInventoryIcon()
 						+ (Main.mainController.isInventoryDisabled() ? "<div class='disabledLayer'></div>" : "")
-					+ "</div>"
-				+ "</div>"
-
-				+ "<div class='quarterContainer'>"
-					+ "<div class='button" + (Main.game.getCharactersPresent().isEmpty() && Main.game.getCurrentDialogueNode().getDialogueNodeType() != DialogueNodeType.CHARACTERS_PRESENT ? " disabled" : "")
+					+ "</div></div><div class='quarterContainer'><div class='button" + (Main.game.getCharactersPresent().isEmpty() && Main.game.getCurrentDialogueNode().getDialogueNodeType() != DialogueNodeType.CHARACTERS_PRESENT ? " disabled" : "")
 					+ "' id='charactersPresent'>" + SVGImages.SVG_IMAGE_PROVIDER.getPeopleIcon()
 						+ (Main.game.getCharactersPresent().isEmpty() && Main.game.getCurrentDialogueNode().getDialogueNodeType() != DialogueNodeType.CHARACTERS_PRESENT ? "<div class='disabledLayer'></div>" : "")
-					+ "</div>"
-				+ "</div>"
-
-				+ "<div class='quarterContainer'>"
-					+ "<div class='button" + (Main.game.getCurrentDialogueNode().isTravelDisabled() ? " disabled" : "") + "' id='mapZoom'>"
+					+ "</div></div><div class='quarterContainer'><div class='button" + (Main.game.getCurrentDialogueNode().isTravelDisabled() ? " disabled" : "") + "' id='mapZoom'>"
 						+ (RenderingEngine.isZoomedIn() ? SVGImages.SVG_IMAGE_PROVIDER.getZoomOutIcon() : SVGImages.SVG_IMAGE_PROVIDER.getZoomInIcon())
 							+ (Main.game.getCurrentDialogueNode().isTravelDisabled() ? "<div class='disabledLayer'></div>" : "")
 					+ "</div>"
@@ -2569,26 +2477,17 @@ public enum RenderingEngine {
 										|| Main.game.getCurrentDialogueNode().equals(PhoneDialogue.CONTACTS_CHARACTER));
 		
 		Main.mainController.setButtonsRightContent(
-				 "<div class='quarterContainer' style='width:25%; float:right;'>"
-					+ "<div class='button" + (Main.isLoadGameAvailable(Main.getQuickSaveName())?"":" disabled")+ "' id='quickLoad'>"
+				 "<div class='quarterContainer' style='width:25%; float:right;'><div class='button" + (Main.isLoadGameAvailable(Main.getQuickSaveName())?"":" disabled")+ "' id='быстраяЗагрузка'>"
 						+ (Main.isLoadGameAvailable(Main.getQuickSaveName())
 								?SVGImages.SVG_IMAGE_PROVIDER.getDiskLoadQuick()
 								:SVGImages.SVG_IMAGE_PROVIDER.getDiskLoadDisabled())
 						+ (!Main.isLoadGameAvailable(Main.getQuickSaveName()) ? "<div class='disabledLayer'></div>" : "")
-					+ "</div>"
-				+ "</div>"
-					
-				+ "<div class='quarterContainer' style='width:25%; float:right;'>"
-					+ "<div class='button" + (Main.isQuickSaveAvailable()?"":" disabled")+ "' id='quickSave'>"
+					+ "</div></div><div class='quarterContainer' style='width:25%; float:right;'><div class='button" + (Main.isQuickSaveAvailable()?"":" disabled")+ "' id='quickSave'>"
 						+ (Main.isQuickSaveAvailable()
 								?SVGImages.SVG_IMAGE_PROVIDER.getDiskSaveQuick()
 								:SVGImages.SVG_IMAGE_PROVIDER.getDiskSaveDisabled())
 						+ (!Main.isQuickSaveAvailable() ? "<div class='disabledLayer'></div>" : "")
-					+ "</div>"
-				+ "</div>"
-					
-				+ "<div class='quarterContainer' style='width:25%; float:left;'>"
-					+ "<div class='button"+(exportAvailable?"":" disabled")+"' id='exportCharacter'>"
+					+ "</div></div><div class='quarterContainer' style='width:25%; float:left;'><div class='button"+(exportAvailable?"":" disabled")+"' id='exportCharacter'>"
 						+ SVGImages.SVG_IMAGE_PROVIDER.getExportIcon()
 						+ (!exportAvailable ? "<div class='disabledLayer'></div>" : "")
 					+ "</div>"
@@ -2648,9 +2547,7 @@ public enum RenderingEngine {
 						+ "</div>"
 					+ "</div>"
 					+ "<div class='barBackgroundAtt'>"
-						+ "<div style='width:" + width + "%; height:5vw; background:" + barColour.toWebHexString() + "; float:left; border-radius: 2px;'></div>"
-					+ "</div>"
-					+ "<p style='text-align:center; margin:0; padding:0; line-height:12vw;'>"
+						+ "<div style='width:" + width + "%; height:5vw; background:" + barColour.toWebHexString() + "; float:left; border-radius: 2px;'></div></div><p style='text-align:center; margin:0; padding:0; line-height:12vw;'>"
 						+ (int) Math.ceil(attributeValue)
 					+ "</p>"
 					+ "<div class='overlay' id='" + id + "'></div>"
@@ -2671,9 +2568,7 @@ public enum RenderingEngine {
 						+ "</div>"
 					+ "</div>"
 					+ "<div class='barBackgroundAtt' style='width:50%;'>"
-						+ "<div style='width:" + width + "%; height:5vw; background:" + barColour.toWebHexString() + "; float:left; border-radius: 2px;'></div>"
-					+ "</div>"
-					+ "<p style='text-align:center; margin:0; padding:0; line-height:12vw; color:" + barColour.toWebHexString() + ";'>"
+						+ "<div style='width:" + width + "%; height:5vw; background:" + barColour.toWebHexString() + "; float:left; border-radius: 2px;'></div></div><p style='text-align:center; margin:0; padding:0; line-height:12vw; color:" + barColour.toWebHexString() + ";'>"
 						+ (int) Math.ceil(attributeValue)
 					+ "</p>"
 					+ "<div class='overlay' id='" + id + "'></div>"
@@ -2694,9 +2589,7 @@ public enum RenderingEngine {
 						+ "</div>"
 					+ "</div>"
 					+ "<div class='barBackgroundAtt' style='width:30%;'>"
-						+ "<div style='width:" + width + "%; height:5vw; background:" + barColour.toWebHexString() + "; float:left; border-radius: 2px;'></div>"
-					+ "</div>"
-					+ "<p style='text-align:center; margin:0; padding:0; line-height:12vw; color:" + barColour.toWebHexString() + ";'>"
+						+ "<div style='width:" + width + "%; height:5vw; background:" + barColour.toWebHexString() + "; float:left; border-radius: 2px;'></div></div><p style='text-align:center; margin:0; padding:0; line-height:12vw; color:" + barColour.toWebHexString() + ";'>"
 						+ (int) Math.ceil(attributeValue)
 					+ "</p>"
 					+ "<div class='overlay' id='" + id + "'></div>"
@@ -2710,11 +2603,11 @@ public enum RenderingEngine {
 				"<div class='attribute-container' style='"
 						+ (Main.game.isInCombat()
 								?(Main.combat.getTargetedCombatant().equals(character)
-										?"border:2px solid "+PresetColour.GENERIC_COMBAT.toWebHexString()+";"
+										?"граница:2px сплошная "+PresetColour.GENERIC_COMBAT.toWebHexString()+";"
 										:(Main.combat.getTargetedAlliedCombatant().equals(character)
-												?"border:2px solid "+PresetColour.GENERIC_MINOR_GOOD.toWebHexString()+";"
-												:"border:1px solid "+PresetColour.TEXT_GREY_DARK.toWebHexString()+";"))
-								:"border:1px solid "+PresetColour.TEXT_GREY_DARK.toWebHexString()+";")
+												?"граница:2px сплошная "+PresetColour.GENERIC_MINOR_GOOD.toWebHexString()+";"
+												:"граница:1px сплошная "+PresetColour.TEXT_GREY_DARK.toWebHexString()+";"))
+								:"граница:1px сплошная "+PresetColour.TEXT_GREY_DARK.toWebHexString()+";")
 							+ "'>"
 					+ (character.getHistory()==Occupation.TOURIST
 						?"<div class='full-width-container' style='position:absolute; width:12%; padding:0; right:2%; opacity:0.75;'>"
@@ -2726,18 +2619,13 @@ public enum RenderingEngine {
 							+ "<div class='icon-content'>"
 								+ (character.isRaceConcealed()?SVGImages.SVG_IMAGE_PROVIDER.getRaceUnknown():character.getMapIcon())
 							+ "</div>"
-							+"<div class='overlay' id='" + idPrefix + Attribute.EXPERIENCE.getName() + "' style='cursor:pointer;'></div>"
-						+ "</div>"
-						+ "<div class='full-width-container' style='text-align:center;padding:0;margin:0;float:left;width:86%;'>"
-							+ "<div class='full-width-container' style='text-align:center;padding:0;margin:0;'>"
-								+ "<b style='color:"+ Femininity.valueOf(character.getFemininityValue()).getColour().toWebHexString() + ";'>"
+							+"<div class='overlay' id='" + idPrefix + Attribute.EXPERIENCE.getName() + "' style='cursor:pointer;'></div></div><div class='full-width-container' style='text-align:center;padding:0;margin:0;float:left;width:86%;'><div class='full-width-container' style='text-align:center;padding:0;margin:0;'><b style='color:"+ Femininity.valueOf(character.getFemininityValue()).getColour().toWebHexString() + ";'>"
 									+ (character.getName(true).length() == 0
 											? Util.capitaliseSentence(character.isFeminine()?character.getSubspecies().getSingularFemaleName(character.getBody()):character.getSubspecies().getSingularMaleName(character.getBody()))
 											: (character.isPlayer()
 													?character.getName(true)
 													:UtilText.parse(character, "[npc.Name]")))
-								+"</b>"
-								+ " - Level "+ character.getLevel()
+								+"</b> - Уровень "+ character.getLevel()
 							+"</div>"
 							+ "<div class='full-width-container' style='text-align:center;padding:0;margin:0;background:"+PresetColour.BACKGROUND_ALT.toWebHexString()+"; border-radius: 2px;'>"
 								+ (character.getLevel() != GameCharacter.LEVEL_CAP
@@ -2745,8 +2633,7 @@ public enum RenderingEngine {
 											+ "; float:left; border-radius: 2px;'></div>"
 									: "<div style=' mix-blend-mode: difference; width:100%; height:2vw; background:" + PresetColour.GENERIC_EXCELLENT.toWebHexString() + "; float:left; border-radius: 2px;'></div>")
 							+"</div>"
-							+"<div class='overlay' id='"+idPrefix+"ATTRIBUTES' style='cursor:pointer;'></div>"
-						+"</div>"
+							+"<div class='overlay' id='"+idPrefix+"ХАРАКТЕРИСТИКИ' style='cursor:pointer;'></div></div>"
 						+ (character.isPlayer()
 								?"<div class='full-width-container' style='text-align:center;'>"
 									+ "<div class='half-width-container' style='padding:0 8px;'>"+ UtilText.formatAsMoney(character.getMoney(), "b") +"</div>"
@@ -2857,7 +2744,7 @@ public enum RenderingEngine {
 					
 					panelSB.append(
 							"<div class='icon effect'>"
-									+ "<div class='timer-background' style='width:"+timerHeight+"%; background:"+ timerColour.toWebHexString() + ";'></div>"
+									+ "<div class='timer-background' style='width:"+timerHeight+"%; фон:"+ timerColour.toWebHexString() + ";'></div>"
 									+ "<div class='icon-content'>"
 										+ se.getSVGString(character)
 										+ "<div class='overlay' id='SE_" + idPrefix + se + "'></div>"
@@ -2907,8 +2794,7 @@ public enum RenderingEngine {
 					}
 					
 					panelSB.append(
-							"<div class='icon effect' style='border:1px solid "+se.getBeneficialStatus().getColour().toWebHexString()+";'>"
-									+ "<div class='timer-background' style='width:"+timerHeight+"%; background:"+ timerColour.toWebHexString() + ";'></div>"
+							"<div class='icon effect' style='border:1px solid "+se.getBeneficialStatus().getColour().toWebHexString()+";'><div class='timer-background' style='width:"+timerHeight+"%; фон:"+ timerColour.toWebHexString() + ";'></div>"
 									+ "<div class='icon-content'>"
 										+ se.getSVGString(character)
 										+ "<div class='overlay' id='SE_" + idPrefix + se + "'></div>"
@@ -2934,13 +2820,10 @@ public enum RenderingEngine {
 					}
 					
 					panelSB.append(
-							"<div class='icon effect' style='border:2px solid "+PresetColour.GENERIC_TERRIBLE.toWebHexString()+"'>"
-									+ "<div class='timer-background' style='width:"+timerHeight+"%; background:"+ timerColour.toWebHexString() + ";'></div>"
+							"<div class='icon effect' style='border:2px solid "+PresetColour.GENERIC_TERRIBLE.toWebHexString()+"'><div class='timer-background' style='width:"+timerHeight+"%; фон:"+ timerColour.toWebHexString() + ";'></div>"
 									+ "<div class='icon-content'>"
 										+ combatMove.getSVGString()
-									+ "</div>"
-//									+ "<div style='width:100%;height:100%;position:absolute;right:0; top:0;'>"+SVGImages.SVG_IMAGE_PROVIDER.getStopwatch()+"</div>"
-									+ "<div class='overlay' id='CM_" + idPrefix + combatMove.getIdentifier() + "'></div>"
+									+ "</div><div class='overlay' id='CM_" + idPrefix + combatMove.getIdentifier() + "'></div>"
 							+ "</div>");
 					
 				}
@@ -2958,11 +2841,7 @@ public enum RenderingEngine {
 									+ "<div class='icon-content'>"
 										+ (elemental.getMapIcon())
 									+ "</div>"
-									+"<div class='overlay' id='"+idPrefix+"ELEMENTAL_"+Attribute.EXPERIENCE.getName()+"' style='cursor:pointer;'></div>"
-								+ "</div>"
-								+ "<div class='full-width-container' style='text-align:center;padding:0;margin:0;float:left;width:86%;'>"
-									+ "<div class='full-width-container' style='text-align:center;padding:0;margin:0;'>"
-										+ "<b style='color:"+ Femininity.valueOf(elemental.getFemininityValue()).getColour().toWebHexString() + ";'>"
+									+"<div class='overlay' id='"+idPrefix+"ELEMENTAL_"+Attribute.EXPERIENCE.getName()+"' style='cursor:pointer;'></div></div><div class='full-width-container' style='text-align:center;padding:0;margin:0;float:left;width:86%;'><div class='full-width-container' style='text-align:center;padding:0;margin:0;'><b style='color:"+ Femininity.valueOf(elemental.getFemininityValue()).getColour().toWebHexString() + ";'>"
 											+ (elemental.getName(true).length() == 0
 													? Util.capitaliseSentence(elemental.isFeminine()?elemental.getSubspecies().getSingularFemaleName(elemental.getBody()):elemental.getSubspecies().getSingularMaleName(elemental.getBody()))
 													: (elemental.isPlayer()
@@ -2977,9 +2856,7 @@ public enum RenderingEngine {
 													+ "; float:left; border-radius: 2px;'></div>"
 											: "<div style=' mix-blend-mode: difference; width:100%; height:2vw; background:" + PresetColour.GENERIC_EXCELLENT.toWebHexString() + "; float:left; border-radius: 2px;'></div>")
 									+"</div>"
-									+"<div class='overlay' id='"+idPrefix+"ELEMENTAL_ATTRIBUTES' style='cursor:pointer;'></div>"
-								+"</div>"
-							+"</div>");
+									+"<div class='overlay' id='"+idPrefix+"ELEMENTAL_ATTRIBUTES' style='cursor:pointer;'></div></div></div>");
 			
 			// Effects:
 //			panelSB.append("<hr style='border:1px solid "+PresetColour.BASE_PITCH_BLACK.toWebHexString()+"; margin:2px 0;'/>");
@@ -3015,8 +2892,7 @@ public enum RenderingEngine {
 					}
 					
 					panelSB.append(
-							"<div class='icon effect' style='width:"+iconWidth+"%;'>"
-									+ "<div class='timer-background' style='width:"+timerHeight+"%; background:"+ timerColour.toWebHexString() + ";'></div>"
+							"<div class='icon effect' style='width:"+iconWidth+"%;'><div class='timer-background' style='width:"+timerHeight+"%; фон:"+ timerColour.toWebHexString() + ";'></div>"
 									+ "<div class='icon-content'>"
 										+ se.getSVGString(elemental)
 										+ "<div class='overlay' id='SE_ELEMENTAL_" + idPrefix + se + "'></div>"
@@ -3044,19 +2920,15 @@ public enum RenderingEngine {
 		panelSB.append(
 				"<div class='attribute-container' style='overflow: auto;"
 						+ (Main.sex.getTargetedPartner(Main.game.getPlayer())!=null && Main.sex.getTargetedPartner(Main.game.getPlayer()).equals(character)
-							?"border:2px solid "+PresetColour.GENERIC_ARCANE.toWebHexString()+";"
-							:"border:1px solid "+PresetColour.TEXT_GREY_DARK.toWebHexString()+";")
+							?"граница:2px сплошная "+PresetColour.GENERIC_ARCANE.toWebHexString()+";"
+							:"граница:1px сплошная "+PresetColour.TEXT_GREY_DARK.toWebHexString()+";")
 						+ "'>"
 					+ "<div class='full-width-container' style='margin-bottom:4px;'>"
 						+ "<div class='icon' style='width:12%'>"
 							+ "<div class='icon-content'>"
 							+ (character.isRaceConcealed()?SVGImages.SVG_IMAGE_PROVIDER.getRaceUnknown():character.getMapIcon())
 							+ "</div>"
-							+"<div class='overlay' id='" + idPrefix + Attribute.EXPERIENCE.getName() + "' style='cursor:pointer;'></div>"
-						+ "</div>"
-						+ "<div class='full-width-container' style='text-align:center;padding:0;margin:0;float:left;width:86%;'>"
-							+ "<div class='full-width-container' style='text-align:center;padding:0;margin:0;'>"
-								+ "<b style='color:"+ Femininity.valueOf(character.getFemininityValue()).getColour().toWebHexString() + ";'>"
+							+"<div class='overlay' id='" + idPrefix + Attribute.EXPERIENCE.getName() + "' style='cursor:pointer;'></div></div><div class='full-width-container' style='text-align:center;padding:0;margin:0;float:left;width:86%;'><div class='full-width-container' style='text-align:center;padding:0;margin:0;'><b style='color:"+ Femininity.valueOf(character.getFemininityValue()).getColour().toWebHexString() + ";'>"
 									+ (character.getName(true).length() == 0
 											? Util.capitaliseSentence(character.isFeminine()?character.getSubspecies().getSingularFemaleName(character.getBody()):character.getSubspecies().getSingularMaleName(character.getBody()))
 											: (character.isPlayer()
@@ -3073,8 +2945,7 @@ public enum RenderingEngine {
 											+ "; float:left; border-radius: 2px;'></div>"
 									: "<div style=' mix-blend-mode: difference; width:100%; height:2vw; background:" + PresetColour.GENERIC_EXCELLENT.toWebHexString() + "; float:left; border-radius: 2px;'></div>")
 							+"</div>"
-							+"<div class='overlay' id='"+idPrefix+"ATTRIBUTES' style='cursor:pointer;'></div>"
-						+"</div>"
+							+"<div class='overlay' id='"+idPrefix+"ХАРАКТЕРИСТИКИ' style='cursor:pointer;'></div></div>"
 						+(isLimitedSpectatorPanel(character)
 							?""
 							:"<div class='full-width-container' style='text-align:center;'>"
@@ -3119,8 +2990,7 @@ public enum RenderingEngine {
 	
 			
 			// Status effects:
-			panelSB.append("<hr style='border:1px solid "+PresetColour.TEXT_GREY_DARK.toWebHexString()+"; margin: 2px 0;'/>"
-					+"<div class='attribute-container' style='padding:0; overflow-y: auto;'>");
+			panelSB.append("<hr style='border:1px solid "+PresetColour.TEXT_GREY_DARK.toWebHexString()+"; margin: 2px 0;'/><div class='attribute-container' style='padding:0; overflow-y: auto;'>");
 	
 	//		// Traits:
 	//		for (Perk trait : character.getTraits()) {
@@ -3192,7 +3062,7 @@ public enum RenderingEngine {
 					
 					panelSB.append(
 							"<div class='icon effect'>"
-									+ "<div class='timer-background' style='width:"+timerHeight+"%; background:"+ timerColour.toWebHexString() + ";'></div>"
+									+ "<div class='timer-background' style='width:"+timerHeight+"%; фон:"+ timerColour.toWebHexString() + ";'></div>"
 									+ "<div class='icon-content'>"
 										+ se.getSVGString(character)
 										+ "<div class='overlay' id='SE_" + idPrefix + se + "'></div>"

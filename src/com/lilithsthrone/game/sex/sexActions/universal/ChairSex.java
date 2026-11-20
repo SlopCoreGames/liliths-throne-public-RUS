@@ -108,17 +108,15 @@ public class ChairSex {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Switch to standing";
+			return "Перейти в положение стоя";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Get [npc2.name] to join you in standing up, ready to move to a different sex position.";
+			return "Заставить [npc2.name] встать вместе с вами, готовясь к смене позы.";
 		}
 		@Override
 		public String getDescription() {
-			return "Deciding that [npc.she] [npc.verb(want)] to switch into a different position, [npc.name] [npc.verb(get)] [npc2.name] to stand up with [npc.herHim]."
-					+ " Now face-to-face with [npc.her] partner, [npc.name] [npc.moansVerb], "
-					+ "[npc.speech(Let's try something else...)]";
+			return "Решив, что [npc.she] [npc.verb(want)] сменить позу, [npc.name] [npc.verb(get)] [npc2.name], чтобы встать вместе с [npc.herHim]. Теперь вы лицом к лицу с [npc.her] партнером, [npc.name] [npc.moansVerb], [npc.speech(Давай попробуем что-нибудь другое...)]";
 		}
 		@Override
 		public void applyEffects() {
@@ -146,17 +144,15 @@ public class ChairSex {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Perform oral";
+			return "Сделать минет";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Kneel down in front of [npc2.name] and perform oral on [npc2.herHim].";
+			return "Опуститься на колени перед [npc2.name] и отсосать [npc2.herHim].";
 		}
 		@Override
 		public String getDescription() {
-			return "Deciding that [npc.she] [npc.verb(want)] to perform oral on [npc2.name], [npc.name] [npc.verb(kneel)] down in front of [npc2.herHim]."
-					+ " Bringing [npc.her] mouth up to [npc2.namePos] groin, [npc.she] [npc.moansVerb], "
-					+ "[npc.speech(You just sit back and enjoy this!)]";
+			return "Решив, что [npc.she] [npc.verb(want)] отсосать [npc2.name], [npc.name] [npc.verb(kneel)] перед [npc2.herHim]. Поднося [npc.her] рот к [npc2.namePos] паху, [npc.she] [npc.moansVerb], [npc.speech(Просто расслабься и наслаждайся!)]";
 		}
 		@Override
 		public void applyEffects() {
@@ -189,15 +185,15 @@ public class ChairSex {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Perform oral (R)";
+			return "Заняться оралом (R)";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Try to kneel down in front of [npc2.name] in order to perform oral on [npc2.herHim].";
+			return "Попытаться опуститься на колени перед [npc2.name], чтобы отсосать [npc2.herHim].";
 		}
 		@Override
 		public String getDescription() {
-			return "You try to manoeuvre around in such a way that you'll be able to kneel in front of [npc2.name]. As you do this, you [npc.moan], [npc.speech(Please, I want to use my mouth...)]";
+			return "Вы пытаетесь маневрировать так, чтобы иметь возможность опуститься на колени перед [npc2.name]. Делая это, вы [npc.moan], [npc.speech(Пожалуйста, я хочу использовать свой рот...)]";
 		}
 		@Override
 		public void applyEffects() {
@@ -225,17 +221,15 @@ public class ChairSex {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Perform oral";
+			return "Сделать минет";
 		}
 		@Override
 		public String getActionDescription() {
-			return "While sitting down, get [npc2.name] to turn around and back up towards you, presenting [npc.her] animalistic genitals to you so that you can perform oral on [npc2.herHim].";
+			return "Сидя на месте, заставить [npc2.name] повернуться спиной к вам, демонстрируя свои [npc.her] животные гениталии, чтобы вы могли отсосать [npc2.herHim].";
 		}
 		@Override
 		public String getDescription() {
-			return "Deciding that [npc.she] [npc.verb(want)] to perform oral on [npc2.name], [npc.name] [npc.verb(sit)] down, before getting [npc2.name] to turn around and back up so that [npc2.her] animalistic genitals are in front of [npc.her] [npc.face]."
-					+ " Bringing [npc.her] mouth up to [npc2.namePos] groin, [npc.she] [npc.moansVerb], "
-					+ "[npc.speech(I can't wait to get a taste of you!)]";
+			return "Решив, что [npc.she] [npc.verb(want)] отсосать у [npc2.name], [npc.name] [npc.verb(sit)] вниз, заставив [npc2.name] развернуться задом наперед так, чтобы [npc2.her] звериные гениталии оказались прямо перед [npc.her] [npc.face]. Поднося [npc.her] рот к [npc2.namePos] паху, [npc.she] [npc.moansVerb], [npc.speech(Не терпится попробовать тебя на вкус!)]";
 		}
 		@Override
 		public void applyEffects() {
@@ -268,16 +262,15 @@ public class ChairSex {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Perform oral (R)";
+			return "Заняться оралом (R)";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Try to sit down and get [npc2.name] to turn around and back up towards you, presenting [npc.her] animalistic genitals to you so that you can perform oral on [npc2.herHim].";
+			return "Попытаться сесть и заставить [npc2.name] развернуться к тебе задом, подставив [npc.her] звериные гениталии, чтобы ты мог отсосать [npc2.herHim].";
 		}
 		@Override
 		public String getDescription() {
-			return "You try to manoeuvre around in such a way that you'll be able to sit down and get [npc2.name] to present [npc2.her] animalistic genitals to you."
-					+ " As you do this, you [npc.moan], [npc.speech(Please, I want to use my mouth...)]";
+			return "Ты пытаешься маневрировать так, чтобы иметь возможность сесть и заставить [npc2.name] подставить тебе [npc2.her] звериные гениталии. Пока ты это делаешь, ты [npc.moan], [npc.speech(Пожалуйста, я хочу использовать свой рот...)]";
 		}
 		@Override
 		public void applyEffects() {
@@ -305,17 +298,15 @@ public class ChairSex {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Receive oral";
+			return "Принять минет";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Get [npc2.name] to kneel down in front of you and perform oral.";
+			return "Заставить [npc2.name] опуститься на колени перед тобой и отсосать.";
 		}
 		@Override
 		public String getDescription() {
-			return "Deciding that [npc.she] [npc.verb(want)] to get some oral sex, [npc.name] [npc.verb(get)] [npc2.name] to kneel down in front of [npc.herHim]."
-					+ " Looking down into [npc2.her] [npc2.eyes], [npc.name] [npc.moansVerb], "
-					+ "[npc.speech(Time to put your mouth to use!)]";
+			return "Решив, что [npc.she] [npc.verb(want)] получить минет, [npc.name] [npc.verb(get)] [npc2.name] опуститься на колени перед [npc.herHim]. Глядя вниз на [npc2.her] [npc2.eyes], [npc.name] [npc.moansVerb], [npc.speech(Пора пустить рот в дело!)]";
 		}
 		@Override
 		public void applyEffects() {
@@ -348,15 +339,15 @@ public class ChairSex {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Receive oral (R)";
+			return "Получить минет (R)";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Try to get [npc2.name] to kneel down in front of you so that [npc2.she] can perform oral on you.";
+			return "Попытаться заставить [npc2.name] опуститься на колени перед тобой, чтобы [npc2.she] мог отсосать тебе.";
 		}
 		@Override
 		public String getDescription() {
-			return "You try to manoeuvre around in such a way that you'll be able to get [npc2.name] to kneel down in front of you. As you do this, you [npc.moan], [npc.speech(Please, I want you to use your mouth...)]";
+			return "Ты пытаешься маневрировать так, чтобы иметь возможность заставить [npc2.name] опуститься на колени перед тобой. Пока ты это делаешь, ты [npc.moan], [npc.speech(Пожалуйста, я хочу, чтобы ты использовал свой рот...)]";
 		}
 		@Override
 		public void applyEffects() {
@@ -384,17 +375,15 @@ public class ChairSex {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Receive oral";
+			return "Принять минет";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Turn around and present your animalistic genitals to [npc2.name] so that [npc2.she] can perform oral on you.";
+			return "Развернись и выставь свои звериные гениталии перед [npc2.name], чтобы [npc2.she] могла заняться с тобой оральным сексом.";
 		}
 		@Override
 		public String getDescription() {
-			return "Deciding that [npc.she] [npc.verb(want)] to get some oral sex, [npc.name] [npc.verb(stand)] up [npc.verb(turn)] around, before stepping back and presenting [npc.her] animalistic genitals to [npc2.name]."
-					+ " Looking back down over [npc.her] shoulder, [npc.name] [npc.moansVerb], "
-					+ "[npc.speech(Time to put your mouth to use!)]";
+			return "Решив, что [npc.she] [npc.verb(want)] получить немного орального секса, [npc.name] [npc.verb(stand)] [npc.verb(turn)] вокруг, прежде чем отступить назад и продемонстрировать [npc.her] животные гениталии [npc2.name]. Оглянувшись через [npc.her] плечо, [npc.name] [npc.moansVerb], [npc.speech(Пора пустить ротик в дело!)]";
 		}
 		@Override
 		public void applyEffects() {
@@ -427,16 +416,15 @@ public class ChairSex {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Receive oral (R)";
+			return "Получить минет (R)";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Try to turn around and present your animalistic genitals to [npc2.name] so that [npc2.she] can perform oral on you.";
+			return "Попытаться развернуться и выставить свои звериные гениталии перед [npc2.name], чтобы [npc2.she] могла заняться с тобой оральным сексом.";
 		}
 		@Override
 		public String getDescription() {
-			return "[npc.Name] [npc.verb(try)] to stand up and turn around in order to present [npc.her] animalistic genitals to [npc2.namePos] mouth."
-					+ " As [npc.she] [npc.does] this, [npc.she] [npc.moans], [npc.speech(Please, I want you to use your mouth...)]";
+			return "[npc.Name] [npc.verb(try)], чтобы встать и развернуться, подставляя свои [npc.her] животные гениталии к [npc2.namePos] рту. Пока [npc.she] [npc.does] это, [npc.she] [npc.moans], [npc.speech(Пожалуйста, я хочу, чтобы ты использовала свой рот...)]";
 		}
 		@Override
 		public void applyEffects() {
@@ -464,17 +452,15 @@ public class ChairSex {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Sit (bottom)";
+			return "Сесть (снизу)";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Switch position so that you're the one sitting down, with [npc2.name] sitting in your lap.";
+			return "Смените позицию так, чтобы сидели вы, а [npc2.name] сидела у вас на коленях.";
 		}
 		@Override
 		public String getDescription() {
-			return "[npc.Name] [npc.verb(decide)] to switch positions, and, getting [npc2.name] to stand up, [npc.she] [npc.verb(sit)] down, before pulling [npc2.herHim] down onto [npc.her] lap."
-					+ " Looking up into [npc2.her] [npc2.eyes], [npc.she] [npc.moansVerb], "
-					+ "[npc.speech(Good [npc2.girl]!)]";
+			return "[npc.Name] [npc.verb(decide)], чтобы сменить позы: заставив [npc2.name] встать, [npc.she] [npc.verb(sit)] вниз, а затем потянув [npc2.herHim] на [npc.her] колени. Глядя снизу вверх в [npc2.her] [npc2.eyes], [npc.she] [npc.moansVerb], [npc.speech(Хороший [npc2.girl]!)]";
 		}
 		@Override
 		public void applyEffects() {
@@ -507,15 +493,15 @@ public class ChairSex {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Sit (bottom) (R)";
+			return "Сесть (снизу) (R)";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Try to get [npc2.name] to sit down in your lap.";
+			return "Попытаться заставить [npc2.name] сесть к вам на колени.";
 		}
 		@Override
 		public String getDescription() {
-			return "You try to manoeuvre around in such a way that you'll be able to get [npc2.name] to sit in your lap. As you do this, you [npc.moan], [npc.speech(Please, I want to be on the bottom...)]";
+			return "Вы пытаетесь маневрировать так, чтобы усадить [npc2.name] к себе на колени. Пока вы это делаете, вы [npc.moan], [npc.speech(Пожалуйста, я хочу быть снизу...)]";
 		}
 		@Override
 		public void applyEffects() {
@@ -542,26 +528,22 @@ public class ChairSex {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Sit (top)";
+			return "Сесть (сверху)";
 		}
 		@Override
 		public String getActionDescription() {
 			if(!Main.sex.getCharacterPerformingAction().isTaur()) {
-				return "Switch positions so that [npc2.name] is the one sitting down, with you sitting in [npc2.her] lap.";
+				return "Поменяться местами так, чтобы [npc2.name] сидела, а ты сидел(а) у нее на [npc2.her]";
 			} else {
-				return "Switch positions so that [npc2.name] is the one sitting down, with you having turned around and lowered your animalistic genitals down into [npc2.her] lap";
+				return "Поменяться местами так, чтобы [npc2.name] сидела, а ты развернулся (развернулась) и опустил(а) свои звериные гениталии ей на [npc2.her]";
 			}
 		}
 		@Override
 		public String getDescription() {
 			if(!Main.sex.getCharacterPerformingAction().isTaur()) {
-				return "[npc.Name] [npc.verb(decide)] to switch positions, and, getting [npc2.name] to sit down, [npc.she] [npc.verb(sit)] down on [npc2.her] lap."
-						+ " Looking down into [npc2.her] [npc2.eyes], [npc.she] [npc.moansVerb], "
-						+ "[npc.speech(Good [npc2.girl]!)]";
+				return "[npc.Name] [npc.verb(decide)] поменяться местами: заставив [npc2.name] сесть, [npc.she] [npc.verb(sit)] на [npc2.her]. Глядя в [npc2.her] [npc2.eyes], [npc.she] [npc.moansVerb], [npc.speech(Хороший [npc2.girl]!)]";
 			} else {
-				return "[npc.Name] [npc.verb(decide)] to switch positions, and, getting [npc2.name] to sit down, [npc.she] [npc.verb(stand)] up, [npc.verb(turn)] around, and [npc.verb(lower)] [npc.her] animalistic rear end down into [npc2.namePos] lap."
-						+ " Looking back down over [npc.her] shoulder, [npc.name] then [npc.moansVerb], "
-						+ "[npc.speech(Time to give you a ride!)]";
+				return "[npc.Name] [npc.verb(decide)] to switch positions, and, getting [npc2.name] to sit down, [npc.she] [npc.verb(stand)] up, [npc.verb(turn)] around, and [npc.verb(lower)] [npc.her] animalistic rear end down into [npc2.namePos] lap. Looking back down over [npc.her] shoulder, [npc.name] then [npc.moansVerb], [npc.speech(Time to give you a ride!)]";
 			}
 		}
 		@Override
@@ -594,15 +576,15 @@ public class ChairSex {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Sit (top) (R)";
+			return "Сесть (сверху) (R)";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Try to sit down in [npc2.namePos] lap.";
+			return "Попытаться сесть на [npc2.namePos]";
 		}
 		@Override
 		public String getDescription() {
-			return "You try to manoeuvre around in such a way that you'll be able to sit down in [npc2.namePos] lap. As you do this, you [npc.moan], [npc.speech(Please, I want to be on the top...)]";
+			return "Ты пытаешься маневрировать так, чтобы сесть на [npc2.namePos]. В процессе ты [npc.moan], [npc.speech(Пожалуйста, я хочу быть сверху...)]";
 		}
 		@Override
 		public void applyEffects() {
@@ -630,19 +612,17 @@ public class ChairSex {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Between legs";
+			return "Между ног";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Switch position so that [npc2.name] is the one sitting down, with you "
-					+(SexSlotSitting.SITTING_BETWEEN_LEGS.isStanding(Main.sex.getCharacterPerformingAction())?"standing":"kneeling")+" between [npc2.her] [npc2.legs], ready to fuck [npc2.herHim].";
+			return "Поменяться местами так, чтобы [npc2.name] сидела, а ты "
+					+(SexSlotSitting.SITTING_BETWEEN_LEGS.isStanding(Main.sex.getCharacterPerformingAction())?"standing":"kneeling")+" между [npc2.her] [npc2.legs], готовый трахать [npc2.herHim].";
 		}
 		@Override
 		public String getDescription() {
-			return "[npc.Name] [npc.verb(decide)] to switch positions, and, with [npc2.name] sitting down, [npc.she] [npc.verb(move)] to "
-						+(SexSlotSitting.SITTING_BETWEEN_LEGS.isStanding(Main.sex.getCharacterPerformingAction())?"stand":"kneel")+" between [npc2.her] [npc2.legs]."
-					+ " Looking down into [npc2.her] [npc2.eyes], [npc.she] [npc.moansVerb], "
-					+ "[npc.speech(Time to give you a good fuck!)]";
+			return "[npc.Name] [npc.verb(decide)] сменить позицию, и, когда [npc2.name] сядет, [npc.she] [npc.verb(move)], чтобы "
+						+(SexSlotSitting.SITTING_BETWEEN_LEGS.isStanding(Main.sex.getCharacterPerformingAction())?"stand":"kneel")+" между [npc2.her] [npc2.legs]. Глядя в [npc2.her] [npc2.eyes], [npc.she] [npc.moansVerb], [npc.speech(Пора хорошенько тебя оттрахать!)]";
 		}
 		@Override
 		public void applyEffects() {
@@ -675,18 +655,17 @@ public class ChairSex {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Between legs (R)";
+			return "Между ног (П)";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Try to switch position so that [npc2.name] is the one sitting down, with you "
-						+(SexSlotSitting.SITTING_BETWEEN_LEGS.isStanding(Main.sex.getCharacterPerformingAction())?"standing":"kneeling")+" between [npc2.her] [npc2.legs], ready to fuck [npc2.herHim].";
+			return "Попытаться сменить позицию так, чтобы [npc2.name] сидела, а ты был "
+						+(SexSlotSitting.SITTING_BETWEEN_LEGS.isStanding(Main.sex.getCharacterPerformingAction())?"standing":"kneeling")+" между [npc2.her] [npc2.legs], готовый трахать [npc2.herHim].";
 		}
 		@Override
 		public String getDescription() {
-			return "You try to manoeuvre around in such a way that [npc2.nameIsFull] sitting down, with you "
-						+(SexSlotSitting.SITTING_BETWEEN_LEGS.isStanding(Main.sex.getCharacterPerformingAction())?"standing":"kneeling")+" between [npc2.her] [npc2.legs]."
-						+ " As you do this, you [npc.moan], [npc.speech(Please, I want to fuck you like this...)]";
+			return "Ты пытаешься маневрировать так, чтобы [npc2.nameIsFull] сидела, а ты был "
+						+(SexSlotSitting.SITTING_BETWEEN_LEGS.isStanding(Main.sex.getCharacterPerformingAction())?"standing":"kneeling")+" между [npc2.her] [npc2.legs]. Пока ты это делаешь, ты [npc.moan], [npc.speech(Пожалуйста, я хочу трахаться с тобой вот так...)]";
 		}
 		@Override
 		public void applyEffects() {
@@ -735,16 +714,13 @@ public class ChairSex {
 				if(isHappy) {
 					switch(Main.sex.getSexPace(Main.sex.getCharacterPerformingAction())) {
 						case DOM_ROUGH:
-							return "Roughly pushing [npc2.name] down, [npc.name] [npc.verb(straddle)] [npc2.her] lap, leaning forwards to glare into [npc2.her] eyes as [npc.she] [npc.moansVerb],"
-									+ " [npc.speech(Alright, slut, I'll take you for a ride!)]";
+							return "Грубо толкнув [npc2.name] вниз, [npc.name] [npc.verb(straddle)] на [npc2.her], наклоняясь вперед, чтобы свирепо смотреть в [npc2.her] глаза, пока [npc.she] [npc.moansVerb], [npc.speech(Ладно, сучка, сейчас я тебя прокачу!)]";
 						default:
-							return "Pushing [npc2.name] down, [npc.name] [npc.steps] forwards and [npc.verb(straddle)] [npc2.her] lap, leaning forwards to gaze into [npc2.her] eyes as [npc.she] [npc.moansVerb],"
-									+ " [npc.speech(Sure, I'll take you for a ride...)]";
+							return "Прижимая [npc2.name], [npc.name] наклоняется вперед на [npc.steps] и [npc.verb(straddle)] на [npc2.her], пристально глядя в [npc2.her] глаза, пока [npc.she] [npc.moansVerb], [npc.speech(Конечно, я тебя прокачу...)]";
 					}
 					
 				} else {
-					return "Reaching down to grab [npc2.name] by the [npc2.arm], [npc.name] [npc.verb(pull)] [npc2.herHim] back into [npc2.her] old position as [npc.she] angrily scolds [npc2.herHim], "
-							+ "[npc.speech(What do you think you're doing?! Don't you <i>dare</i> try that again!)]";
+					return "Потянувшись вниз, чтобы схватить [npc2.name] за [npc2.arm], [npc.name] [npc.verb(pull)] [npc2.herHim] обратно в прежнее положение [npc2.her], пока [npc.she] гневно отчитывает [npc2.herHim], [npc.speech(Ты что творишь?! Только <i>посмей</i> еще раз так сделать!)]";
 				}
 				
 			} else if(Main.sex.getPositionRequest().getPartnerSlots().get(0)==SexSlotSitting.SITTING) {
@@ -752,36 +728,26 @@ public class ChairSex {
 					if(isHappy) {
 						switch(Main.sex.getSexPace(Main.sex.getCharacterPerformingAction())) {
 							case DOM_ROUGH:
-								return "Sitting down, [npc.name] [npc.verb(grab)] hold of [npc2.namePos] [npc2.arm], and with a sharp tug,"
-											+ " [npc.she] [npc.verb(pull)] [npc2.herHim] down so that [npc2.sheIs] straddling [npc.her] lap. Leaning forwards to glare into [npc2.her] eyes, [npc.name] [npc.moansVerb],"
-										+ " [npc.speech(Alright, slut, you'd better make this good!)]";
+								return "Садясь, [npc.name] [npc.verb(grab)] хватает [npc2.namePos] за [npc2.arm] и резким рывком [npc.she] [npc.verb(pull)] [npc2.herHim] вниз, так что [npc2.sheIs] оказывается верхом на [npc.her]. Наклонившись вперед, чтобы впиться взглядом в глаза [npc2.her], [npc.name] [npc.moansVerb], [npc.speech(Ладно, шлюха, лучше сделай это хорошо!)]";
 							default:
-								return "Sitting down, [npc.name] [npc.verb(take)] hold of [npc2.namePos] [npc2.arm], and with a firm tug,"
-											+ " [npc.she] [npc.verb(pull)] [npc2.herHim] down so that [npc2.sheIs] straddling [npc.her] lap. Leaning forwards to gaze into [npc2.her] eyes, [npc.name] [npc.moansVerb],"
-										+ " [npc.speech(Good [npc2.girl]...)]";
+								return "Садясь, [npc.name] [npc.verb(take)] хватает [npc2.namePos] за [npc2.arm] и уверенным рывком [npc.she] [npc.verb(pull)] [npc2.herHim] вниз, так что [npc2.sheIs] оказывается верхом на [npc.her]. Наклонившись вперед, чтобы заглянуть в глаза [npc2.her], [npc.name] [npc.moansVerb], [npc.speech(Хорошая [npc2.girl]...)]";
 						}
 						
 					} else {
-						return "Reaching down to grab [npc2.name] by the [npc2.arm], [npc.name] [npc.verb(pull)] [npc2.herHim] back into [npc2.her] old position as [npc.she] angrily scolds [npc2.herHim], "
-								+ "[npc.speech(What do you think you're doing?! Don't you <i>dare</i> try that again!)]";
+						return "Потянувшись вниз, чтобы схватить [npc2.name] за [npc2.arm], [npc.name] [npc.verb(pull)] [npc2.herHim] обратно в прежнее положение [npc2.her], пока [npc.she] гневно отчитывает [npc2.herHim], [npc.speech(Ты что творишь?! Только <i>посмей</i> еще раз так сделать!)]";
 					}
 					
 				} else if(Main.sex.getPositionRequest().getPerformerSlots().get(0)==SexSlotSitting.SITTING_TAUR_PRESENTING_ORAL) {
 					if(isHappy) {
 						switch(Main.sex.getSexPace(Main.sex.getCharacterPerformingAction())) {
 							case DOM_ROUGH:
-								return "Letting [npc2.name] finish [npc2.her] manoeuvre, [npc.name] reaches out to grab [npc2.her] hind-legs, before pulling [npc2.her] animalistic groin up to [npc.her] face."
-										+ " Giving [npc2.her] rump a sharp slap, [npc.name] then [npc.moansVerb],"
-										+ " [npc.speech(Alright, slut, you'd better make this good!)]";
+								return "Позволив [npc2.name] завершить [npc2.her] маневр, [npc.name] тянется, чтобы схватить [npc2.her] за задние лапы, а затем подтягивает [npc2.her] животное пах к [npc.her] лицу. Дав [npc2.her] звонкую пощечину по заднице, [npc.name] затем [npc.moansVerb], [npc.speech(Ладно, шлюшка, постарайся, чтобы всё было на высшем уровне!)]";
 							default:
-								return "Letting [npc2.name] finish [npc2.her] manoeuvre, [npc.name] reaches out to grab [npc2.her] hind-legs, before pulling [npc2.her] animalistic groin up to [npc.her] face."
-										+ " Giving [npc2.her] rump a playful slap, [npc.name] then [npc.moansVerb],"
-										+ " [npc.speech(Good [npc2.girl]...)]";
+								return "Позволив [npc2.name] завершить [npc2.her] маневр, [npc.name] тянется, чтобы схватить [npc2.her] за задние лапы, а затем подтягивает [npc2.her] животное пах к [npc.her] лицу. Игриво шлепнув [npc2.her] по заднице, [npc.name] затем [npc.moansVerb], [npc.speech(Хорошая [npc2.girl]...)]";
 						}
 						
 					} else {
-						return "Reaching down to grab [npc2.name] by the [npc2.arm], [npc.name] [npc.verb(pull)] [npc2.herHim] back into [npc2.her] old position as [npc.she] angrily scolds [npc2.herHim], "
-								+ "[npc.speech(What do you think you're doing?! Don't you <i>dare</i> try that again!)]";
+						return "Потянувшись вниз, чтобы схватить [npc2.name] за [npc2.arm], [npc.name] [npc.verb(pull)] [npc2.herHim] обратно в прежнее положение [npc2.her], пока [npc.she] гневно отчитывает [npc2.herHim], [npc.speech(Ты что творишь?! Только <i>посмей</i> еще раз так сделать!)]";
 					}
 					
 				} else if(Main.sex.getPositionRequest().getPerformerSlots().get(0)==SexSlotSitting.SITTING_BETWEEN_LEGS) {
@@ -789,47 +755,33 @@ public class ChairSex {
 						switch(Main.sex.getSexPace(Main.sex.getCharacterPerformingAction())) {
 							case DOM_ROUGH:
 								if(Main.sex.getCharacterPerformingAction().hasLegs()) {
-									return "Letting [npc2.name] finish [npc2.her] manoeuvre, [npc.name] sits down, before lifting [npc.her] [npc.legs], wrapping them around [npc2.namePos] lower back, and roughly forcing [npc2.herHim] forwards."
-											+ " Glaring up at [npc2.herHim], [npc.name] then spreads [npc.her] [npc.legs] and [npc.moansVerb],"
-											+ " [npc.speech(Alright, slut, you'd better make this good!)]";
+									return "Позволив [npc2.name] завершить [npc2.her] маневр, [npc.name] садится, прежде чем поднять [npc.her] [npc.legs], обхватывая ими [npc2.namePos] поясницу и грубо толкая [npc2.herHim] вперед. Глядя исподлобья на [npc2.herHim], [npc.name] затем разводит [npc.her] [npc.legs] и [npc.moansVerb], [npc.speech(Ладно, шлюшка, постарайся, чтобы всё было на высшем уровне!)]";
 								} else {
-									return "Letting [npc2.name] finish [npc2.her] manoeuvre, [npc.name] sits down, before presenting [npc.her] groin to [npc2.name]."
-											+ " Glaring up at [npc2.herHim], [npc.she] [npc.moansVerb],"
-											+ " [npc.speech(Alright, slut, you'd better make this good!)]";
+									return "Позволив [npc2.name] завершить [npc2.her] маневр, [npc.name] садится, подставляя [npc.her] пах [npc2.name]. Глядя исподлобья на [npc2.herHim], [npc.she] [npc.moansVerb], [npc.speech(Ладно, шлюшка, постарайся, чтобы всё было на высшем уровне!)]";
 								}
 							default:
 								if(Main.sex.getCharacterPerformingAction().hasLegs()) {
-									return "Letting [npc2.name] finish [npc2.her] manoeuvre, [npc.name] sits down, before lifting [npc.her] [npc.legs], wrapping them around [npc2.namePos] lower back, and forcing [npc2.herHim] forwards."
-											+ " Smiling up at [npc2.herHim], [npc.name] then spreads [npc.her] [npc.legs] and [npc.moansVerb],"
-											+ " [npc.speech(Come on then, fuck me!)]";
+									return "Позволив [npc2.name] завершить [npc2.her] маневр, [npc.name] садится, после чего приподнимает [npc.her] [npc.legs], обвивая ими [npc2.namePos] поясницу и заставляя [npc2.herHim] податься вперед. Улыбаясь [npc2.herHim] снизу вверх, [npc.name] широко разводит [npc.her] [npc.legs] и [npc.moansVerb], [npc.speech(Ну же, трахни меня!)]";
 								} else {
-									return "Letting [npc2.name] finish [npc2.her] manoeuvre, [npc.name] sits down, before presenting [npc.her] groin to [npc2.name]."
-											+ " Smiling up at [npc2.herHim], [npc.she] [npc.moansVerb],"
-											+ " [npc.speech(Come on then, fuck me!)]";
+									return "Позволив [npc2.name] завершить [npc2.her] маневр, [npc.name] садится, после чего подставляет [npc.her] пах [npc2.name]. Улыбаясь [npc2.herHim] снизу вверх, [npc.she] [npc.moansVerb], [npc.speech(Ну же, трахни меня!)]";
 								}
 						}
 						
 					} else {
-						return "Reaching down to grab [npc2.name] by the [npc2.arm], [npc.name] [npc.verb(pull)] [npc2.herHim] back into [npc2.her] old position as [npc.she] angrily scolds [npc2.herHim], "
-								+ "[npc.speech(What do you think you're doing?! Don't you <i>dare</i> try that again!)]";
+						return "Потянувшись вниз, чтобы схватить [npc2.name] за [npc2.arm], [npc.name] [npc.verb(pull)] [npc2.herHim] обратно в прежнее положение [npc2.her], пока [npc.she] гневно отчитывает [npc2.herHim], [npc.speech(Ты что творишь?! Только <i>посмей</i> еще раз так сделать!)]";
 					}
 					
 				} else {
 					if(isHappy) {
 						switch(Main.sex.getSexPace(Main.sex.getCharacterPerformingAction())) {
 							case DOM_ROUGH:
-								return "Sitting down, [npc.name] [npc.verb(grab)] hold of [npc2.namePos] [npc2.arm], and with a sharp tug, [npc.she] [npc.verb(pull)] [npc2.herHim] down onto [npc2.her] knees before [npc.herHim]."
-										+ " Leaning forwards to glare down into [npc2.her] eyes, [npc.name] [npc.moansVerb],"
-										+ " [npc.speech(Alright, slut, put that mouth of yours to use!)]";
+								return "Сев, [npc.name] [npc.verb(grab)] хватает [npc2.namePos] за [npc2.arm] и резким рывком [npc.she] [npc.verb(pull)] опускает [npc2.herHim] на [npc2.her] колени перед [npc.herHim]. Наклонившись вперед, чтобы впиться взглядом в [npc2.her] глаза, [npc.name] [npc.moansVerb], [npc.speech(Ну же, шлюшка, используй свой ротик!)]";
 							default:
-								return "Sitting down, [npc.name] [npc.verb(take)] hold of [npc2.namePos] [npc2.arm], and with a firm tug, [npc.she] [npc.verb(pull)] [npc2.herHim] down onto [npc2.her] knees before [npc.herHim]."
-										+ " Leaning forwards to gaze into [npc2.her] eyes, [npc.name] [npc.moansVerb],"
-										+ " [npc.speech(Good [npc2.girl]. Let's put your mouth to use...)]";
+								return "Sitting down, [npc.name] [npc.verb(take)] hold of [npc2.namePos] [npc2.arm], and with a firm tug, [npc.she] [npc.verb(pull)] [npc2.herHim] down onto [npc2.her] knees before [npc.herHim]. Leaning forwards to gaze into [npc2.her] eyes, [npc.name] [npc.moansVerb], [npc.speech(Good [npc2.girl]. Let's put your mouth to use...)]";
 						}
 						
 					} else {
-						return "Reaching down to grab [npc2.name] by the [npc2.arm], [npc.name] [npc.verb(pull)] [npc2.herHim] back into [npc2.her] old position as [npc.she] angrily scolds [npc2.herHim], "
-								+ "[npc.speech(What do you think you're doing?! Don't you <i>dare</i> try that again!)]";
+						return "Потянувшись вниз, чтобы схватить [npc2.name] за [npc2.arm], [npc.name] [npc.verb(pull)] [npc2.herHim] обратно в прежнее положение [npc2.her], пока [npc.she] гневно отчитывает [npc2.herHim], [npc.speech(Ты что творишь?! Только <i>посмей</i> еще раз так сделать!)]";
 					}
 				}
 				
@@ -837,16 +789,13 @@ public class ChairSex {
 				if(isHappy) {
 					switch(Main.sex.getSexPace(Main.sex.getCharacterPerformingAction())) {
 						case DOM_ROUGH:
-							return "Roughly pushing [npc2.name] down, [npc.name] kneels before [npc2.herHim], leaning forwards to glare up into [npc2.her] eyes as [npc.she] [npc.moansVerb],"
-									+ " [npc.speech(Alright, slut, you'd better be glad that I like performing oral!)]";
+							return "Грубо толкнув [npc2.name] вниз, [npc.name] опускается на колени перед [npc2.herHim] и, подавшись вперед, свирепо смотрит [npc2.her] прямо в глаза, пока [npc.she] [npc.moansVerb], [npc.speech(Ладно, шлюха, тебе лучше радоваться тому, что мне нравится делать минет!)]";
 						default:
-							return "Pushing [npc2.name] down, [npc.name] kneels before [npc2.herHim], leaning forwards to gaze up into [npc2.her] eyes as [npc.she] [npc.moansVerb],"
-									+ " [npc.speech(I love performing oral...)]";
+							return "Прижав [npc2.name] к сиденью, [npc.name] опускается на колени перед [npc2.herHim] и, подавшись вперед, заглядывает [npc2.her] в глаза, пока [npc.she] [npc.moansVerb], [npc.speech(Обожаю делать минет...)]";
 					}
 					
 				} else {
-					return "Reaching down to grab [npc2.name] by the [npc2.arm], [npc.name] [npc.verb(pull)] [npc2.herHim] back into [npc2.her] old position as [npc.she] angrily scolds [npc2.herHim], "
-							+ "[npc.speech(What do you think you're doing?! Don't you <i>dare</i> try that again!)]";
+					return "Потянувшись вниз, чтобы схватить [npc2.name] за [npc2.arm], [npc.name] [npc.verb(pull)] [npc2.herHim] обратно в прежнее положение [npc2.her], пока [npc.she] гневно отчитывает [npc2.herHim], [npc.speech(Ты что творишь?! Только <i>посмей</i> еще раз так сделать!)]";
 				}
 			}
 			

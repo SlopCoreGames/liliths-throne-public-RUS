@@ -42,7 +42,7 @@ public class NumberMap<K, V extends Number> extends AbstractMap<K, V> implements
 			V corrected = (V) Integer.valueOf(value.intValue());
 			return map.put(key, corrected);
 		} else {
-			throw new UnsupportedOperationException("NumberMap not implemented for " + cls.getName());
+			throw new UnsupportedOperationException("NumberMap не реализован для " + cls.getName());
 		}
 	}
 }

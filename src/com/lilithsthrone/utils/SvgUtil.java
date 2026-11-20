@@ -268,8 +268,7 @@ public class SvgUtil {
 			} else {
 				newPattern = newPattern
 						+ loadedPattern.substring(currentShapeStartIndex, currentShapeEndIndex)
-						+ "clip-path=\"url(#internalPatternClip)\""
-						+ "/>";
+						+ "clip-path=\"url(#internalPatternClip)\"/>";
 				lastPatternShapeEndIndex = currentShapeEndIndex;
 			}
 		}

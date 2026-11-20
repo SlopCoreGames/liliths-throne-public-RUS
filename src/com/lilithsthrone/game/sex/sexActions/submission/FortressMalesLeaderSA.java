@@ -81,12 +81,12 @@ public class FortressMalesLeaderSA {
 		
 		@Override
 		public String getActionTitle() {
-			return "Round two";
+			return "Раунд второй";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Tell [npc2.name] that you aren't finished yet!";
+			return "Скажи [npc2.name], что ты еще не закончил!";
 		}
 
 		@Override
@@ -106,15 +106,7 @@ public class FortressMalesLeaderSA {
 
 		@Override
 		public String getDescription() {
-			return "Grabbing [npc2.namePos] [npc2.hips+], [npc.name] thrusts forwards and sinks [npc.her] [npc.cock+] deep into [npc2.her] cum-stuffed cunt."
-					+ " Letting out a deep groan as [npc.she] feels [npc2.namePos] [npc2.labia+] bump against the base of [npc.her] cock, [npc.she] growls,"
-					+ " [npc.speechNoEffects(Let's give you a double stuffing! I want to be sure I'm going to knock you up!)]</br>"
-					+ "Keeping [npc.her] [npc.cock+] hilted in [npc2.namePos] [npc2.pussy], [npc.name] produces a small bottle filled with a light blue liquid."
-					+ " Pulling out the stopper with [npc.her] teeth, [npc.she] quickly downs the potion, before throwing the now-empty vial to one side.</br>"
-					+ "Pulling [npc.her] [npc.hips] back, [npc.name] then starts to rhythmically fuck [npc2.name] once more,"
-						+ " with each of [npc.her] thrusts being accompanied by a lewd squelching sound as the cum filling [npc2.namePos] pussy drools out around [npc.her] thick shaft.</br>"
-					+ "[npc2.Name] soon [npc2.verb(realise)] what the potion [npc.name] just drank was for, as each time the [npc.race]'s balls slap against [npc2.her] [npc2.assSkin], they feel noticeably heavier and heavier."
-					+ " To confirm [npc2.her] suspicions, [npc.name] grunts, [npc.speech(Fuck, my balls feel so full again! Your womb's going to be pumped full of my seed!)]";
+			return "Схватив [npc2.namePos] [npc2.hips+], [npc.name] мощно толкается вперед, погружая [npc.her] [npc.cock+] глубоко в [npc2.her] набитую спермой киску. Издав глубокий стон, когда [npc.she] чувствует, как [npc2.namePos] [npc2.labia+] бьется у самого основания [npc.her] члена, [npc.she] рычит: [npc.speechNoEffects(Сейчас мы устроим тебе двойную заправку! Хочу быть уверенным, что точно тебя оплодотворю!)]</br>Удерживая [npc.her] [npc.cock+] в рукояти [npc2.namePos] [npc2.pussy], [npc.name] достает маленький флакон с голубоватой жидкостью. Вытащив пробку [npc.her] зубами, [npc.she] быстро выпивает зелье, после чего отбрасывает пустой флакон в сторону.</br>Откинув [npc.her] [npc.hips] назад, [npc.name] снова начинает ритмично трахать [npc2.name], и каждый [npc.her] толчок сопровождается похотливым хлюпаньем, пока сперма, наполняющая [npc2.namePos] киску, вытекает вокруг [npc.her] толстого члена.</br>[npc2.Name] вскоре [npc2.verb(realise)], для чего предназначалось зелье, которое только что выпил [npc.name], так как каждый раз, когда яички [npc.race] хлопают по [npc2.her] [npc2.assSkin], они становятся заметно тяжелее и тяжелее. Чтобы подтвердить подозрения [npc2.her], [npc.name] хрипит: [npc.speech(Блядь, мои яйца снова такие тяжелые! Твою утробу сейчас зальет моим семенем!)]";
 		}
 
 		@Override
@@ -133,12 +125,12 @@ public class FortressMalesLeaderSA {
 		
 		@Override
 		public String getActionTitle() {
-			return "Round two (switch)";
+			return "Второй раунд (смена)";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return UtilText.parse(getOtherTarget(), "Switch to fucking [npc.name].");
+			return UtilText.parse(getOtherTarget(), "Переключиться на трах [npc.name].");
 		}
 
 		@Override
@@ -159,18 +151,11 @@ public class FortressMalesLeaderSA {
 		@Override
 		public String getDescription() {
 			return UtilText.parse(Util.newArrayListOfValues(Main.sex.getCharacterPerformingAction(), Main.sex.getCharacterTargetedForSexAction(this), getOtherTarget()),
-					"Grabbing [npc2.namePos] [npc2.hips+], [npc.name] pulls back and slides [npc.her] [npc.cock+] out of [npc2.her] cum-stuffed cunt."
+					"Схватив [npc2.namePos] [npc2.hips+], [npc.name] отстраняется и вытягивает [npc.her] [npc.cock+] из [npc2.her] набитой спермой киски."
 					+(getOtherTarget().isAbleToAccessCoverableArea(CoverableArea.VAGINA, false)
-							?" Shuffling to one side, [npc.she] then quickly removes the clothing blocking [npc3.namePos] [npc3.pussy], before starting to rub the head of [npc.her] cock up and down between [npc3.her] [npc3.labia+]."
-							:" Shuffling to one side, [npc.she] then quickly lines [npc.her] [npc.cock+] up to [npc3.namePos] [npc3.pussy], before starting to rub the head up and down between [npc3.her] [npc3.labia+].")
-					+" Suddenly thrusting [npc.her] [npc.hips] forwards, [npc.she] sinks [npc.her] [npc.cock+] deep into [npc3.namePos] [npc2.pussy+], letting out a deep growl as [npc.she] penetrates [npc3.herHim],"
-					+ " [npc.speechNoEffects(Don't think I forgot about you!)]</br></br>"
-					+ "Keeping [npc.her] [npc.cock+] hilted in [npc3.namePos] [npc3.pussy], [npc.name] then produces a small bottle filled with a light blue liquid."
-					+ " Pulling out the stopper with [npc.her] teeth, [npc.she] quickly downs the potion, before throwing the now-empty vial to one side.</br></br>"
-					+ "Pulling [npc.her] [npc.hips] back, [npc.name] then starts to rhythmically fuck [npc3.name],"
-						+ " with each of [npc.her] thrusts easily sliding in and out, thanks to the cum and juices from [npc2.namePos] pussy lubricating [npc.her] thick shaft.</br>"
-					+ "[npc3.Name] soon [npc3.verb(realise)] what the potion [npc.name] just drank was for, as each time the [npc.race]'s balls slap against [npc3.her] [npc3.assSkin], they feel noticeably heavier and heavier."
-					+ " To confirm [npc3.her] suspicions, [npc.name] grunts, [npc.speech(Fuck, my balls feel so full again! Your womb's going to be pumped full of my seed!)]");
+							?" Сдвинувшись в сторону, [npc.she] быстро срывает одежду, мешающую [npc3.namePos] [npc3.pussy], а затем начинает водить головкой [npc.her] члена вверх и вниз между [npc3.her] [npc3.labia+]."
+							:" Сдвинувшись в сторону, [npc.she] быстро приставляет [npc.her] [npc.cock+] к [npc3.namePos] [npc3.pussy], а затем начинает водить головкой вверх и вниз между [npc3.her] [npc3.labia+].")
+					+" Внезапно толкнув [npc.her] [npc.hips] вперед, [npc.she] глубоко погружает [npc.her] [npc.cock+] в [npc3.namePos] [npc2.pussy+], издавая утробный рык, когда [npc.she] проникает в [npc3.herHim], [npc.speechNoEffects(Не думай, что я про тебя забыл!)]</br></br>Держа [npc.her] [npc.cock+] рукоятью в [npc3.namePos] [npc3.pussy], [npc.name] затем достает маленький флакон, наполненный светло-голубой жидкостью. Вытащив пробку [npc.her] зубами, [npc.she] быстро осушает зелье, после чего отбрасывает пустой флакон в сторону.</br></br>Оттягивая [npc.her] [npc.hips] назад, [npc.name] начинает ритмично трахать [npc3.name], и каждый из [npc.her] толчков легко входит и выходит благодаря сперме и сокам из [npc2.namePos] киски, смазывающим [npc.her] толстый член.</br>[npc3.Name] вскоре [npc3.verb(realise)], для чего предназначалось зелье, которое только что выпил [npc.name], так как каждый раз, когда яички [npc.race] хлопают по [npc3.her] [npc3.assSkin], они ощущаются заметно все тяжелее и тяжелее. Чтобы подтвердить подозрения [npc3.her], [npc.name] хрипит: [npc.speech(Блядь, мои яйца снова такие тяжелые! Твою утробу сейчас зальет моим семенем!)]");
 		}
 		
 		@Override
@@ -218,12 +203,12 @@ public class FortressMalesLeaderSA {
 		
 		@Override
 		public String getActionTitle() {
-			return "Round two";
+			return "Раунд второй";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Tell [npc2.name] that you aren't finished yet!";
+			return "Скажи [npc2.name], что ты еще не закончил!";
 		}
 
 		@Override
@@ -243,15 +228,7 @@ public class FortressMalesLeaderSA {
 
 		@Override
 		public String getDescription() {
-			return "Grabbing [npc2.namePos] [npc2.hips+], [npc.name] lines [npc.her] [npc.cock+] up to [npc2.her] [npc2.pussy+], before thrusting forwards and sinking [npc.her] [npc.cock+] deep into [npc2.her] cum-stuffed cunt."
-					+ " Letting out a deep groan as [npc.she] feels [npc2.namePos] [npc2.labia+] bump against the base of [npc.her] cock, [npc.she] growls,"
-					+ " [npc.speechNoEffects(Let's give you a double stuffing! I want to be sure I'm going to knock you up!)]</br>"
-					+ "Keeping [npc.her] [npc.cock+] hilted in [npc2.namePos] [npc2.pussy], [npc.name] produces a small bottle filled with a light blue liquid."
-					+ " Pulling out the stopper with [npc.her] teeth, [npc.she] quickly downs the potion, before throwing the now-empty vial to one side.</br>"
-					+ "Pulling [npc.her] [npc.hips] back, [npc.name] then starts to rhythmically fuck [npc2.name] once more,"
-						+ " with each of [npc.her] thrusts being accompanied by a lewd squelching sound as the cum filling [npc2.namePos] pussy drools out around [npc.her] thick shaft.</br>"
-					+ "[npc2.Name] soon [npc2.verb(realise)] what the potion [npc.name] just drank was for, as each time the [npc.race]'s balls slap against [npc2.her] [npc2.assSkin], they feel noticeably heavier and heavier."
-					+ " To confirm [npc2.her] suspicions, [npc.name] grunts, [npc.speech(Fuck, my balls feel so full again! Your womb's going to be pumped full of my seed!)]";
+			return "Схватив [npc2.namePos] [npc2.hips+], [npc.name] выравнивает [npc.her] [npc.cock+] по отношению к [npc2.her] [npc2.pussy+], после чего резко подается вперед, погружая [npc.her] [npc.cock+] глубоко в набитую спермой киску [npc2.her]. Издавая глубокий стон, когда [npc.she] чувствует, как [npc2.namePos] [npc2.labia+] бьется у основания [npc.her] члена, [npc.she] рычит: [npc.speechNoEffects(Сейчас мы устроим тебе двойную заправку! Хочу быть уверенным, что точно тебя оплодотворю!)]</br>Держа [npc.her] [npc.cock+] за рукоять в [npc2.namePos] [npc2.pussy], [npc.name] достает маленький флакон, наполненный светло-голубой жидкостью. Вытащив пробку [npc.her] зубами, [npc.she] быстро осушает зелье, после чего отбрасывает пустой флакон в сторону.</br>Откинув [npc.her] [npc.hips] назад, [npc.name] снова начинает ритмично трахать [npc2.name], и каждый из [npc.her] толчков сопровождается похотливым хлюпаньем, пока сперма, наполняющая [npc2.namePos] киску, вытекает вокруг [npc.her] толстого члена.</br>[npc2.Name] вскоре [npc2.verb(realise)], для чего предназначалось зелье, которое только что выпила [npc.name], так как каждый раз, когда яички [npc.race] хлопают по [npc2.her] [npc2.assSkin], они становятся заметно тяжелее и тяжелее. Чтобы подтвердить [npc2.her] подозрения, [npc.name] кряхтит: [npc.speech(Блядь, мои яйца снова такие тяжелые! Твою утробу сейчас зальет моим семенем!)]";
 		}
 
 		@Override
@@ -270,12 +247,12 @@ public class FortressMalesLeaderSA {
 		
 		@Override
 		public String getActionTitle() {
-			return "Round two (switch)";
+			return "Второй раунд (смена)";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return UtilText.parse(getOtherTarget(), "Switch to fucking [npc.name].");
+			return UtilText.parse(getOtherTarget(), "Переключиться на трах [npc.name].");
 		}
 
 		@Override
@@ -297,16 +274,9 @@ public class FortressMalesLeaderSA {
 		public String getDescription() {
 			return UtilText.parse(Util.newArrayListOfValues(Main.sex.getCharacterPerformingAction(), Main.sex.getCharacterTargetedForSexAction(this), getOtherTarget()),
 					(getOtherTarget().isAbleToAccessCoverableArea(CoverableArea.VAGINA, false)
-							?" Shuffling to one side, [npc.she] quickly removes the clothing blocking [npc3.namePos] [npc3.pussy], before starting to rub the head of [npc.her] cock up and down between [npc3.her] [npc3.labia+]."
-							:" Shuffling to one side, [npc.she] quickly lines [npc.her] [npc.cock+] up to [npc3.namePos] [npc3.pussy], before starting to rub the head up and down between [npc3.her] [npc3.labia+].")
-					+" Suddenly thrusting [npc.her] [npc.hips] forwards, [npc.she] sinks [npc.her] [npc.cock+] deep into [npc3.namePos] [npc2.pussy+], letting out a deep growl as [npc.she] penetrates [npc3.herHim],"
-					+ " [npc.speechNoEffects(Don't think I forgot about you!)]</br></br>"
-					+ "Keeping [npc.her] [npc.cock+] hilted in [npc3.namePos] [npc3.pussy], [npc.name] then produces a small bottle filled with a light blue liquid."
-					+ " Pulling out the stopper with [npc.her] teeth, [npc.she] quickly downs the potion, before throwing the now-empty vial to one side.</br></br>"
-					+ "Pulling [npc.her] [npc.hips] back, [npc.name] then starts to rhythmically fuck [npc3.name],"
-						+ " with each of [npc.her] thrusts easily sliding in and out of [npc3.her] [npc3.pussy+], thanks to the cum and juices from [npc2.namePos] pussy lubricating [npc.her] thick shaft.</br>"
-					+ "[npc3.Name] soon [npc3.verb(realise)] what the potion [npc.name] just drank was for, as each time the [npc.race]'s balls slap against [npc3.her] [npc3.assSkin], they feel noticeably heavier and heavier."
-					+ " To confirm [npc3.her] suspicions, [npc.name] grunts, [npc.speech(Fuck, my balls feel so full again! Your womb's going to be pumped full of my seed!)]");
+							?" Отступив в сторону, [npc.she] быстро срывает одежду, мешающую [npc3.namePos] [npc3.pussy], а затем начинает водить головкой [npc.her] cock вверх и вниз между [npc3.her] [npc3.labia+]."
+							:" Сдвинувшись в сторону, [npc.she] быстро пристраивает [npc.her] [npc.cock+] к [npc3.namePos] [npc3.pussy], а затем начинает водить головкой вверх и вниз между [npc3.her] [npc3.labia+].")
+					+" Внезапно толкнув [npc.her] [npc.hips] вперед, [npc.she] глубоко погружает [npc.her] [npc.cock+] в [npc3.namePos] [npc2.pussy+], издавая низкий рык, когда [npc.she] проникает в [npc3.herHim], [npc.speechNoEffects(Не думай, что я о тебе забыл!)]</br></br>Держа [npc.her] [npc.cock+] в [npc3.namePos] [npc3.pussy], [npc.name] затем достает маленький флакон, наполненный светло-голубой жидкостью. Вытащив пробку [npc.her] зубами, [npc.she] быстро выпивает зелье, после чего отбрасывает пустой флакон в сторону.</br></br>Откинув [npc.her] [npc.hips] назад, [npc.name] начинает ритмично трахать [npc3.name], при этом каждый из [npc.her] толчков легко входит и выходит из [npc3.her] [npc3.pussy+] благодаря сперме и сокам из [npc2.namePos] киски, смазывающим [npc.her] толстый член.</br>[npc3.Name] вскоре [npc3.verb(realise)], для чего предназначалось зелье, которое только что выпил [npc.name], так как каждый раз, когда яички [npc.race] хлопают по [npc3.her] [npc3.assSkin], они ощущаются заметно всё тяжелее и тяжелее. Чтобы подтвердить подозрения [npc3.her], [npc.name] хрипит: [npc.speech(Блядь, мои яйца снова такие тяжелые! Твою утробу сейчас зальет моим семенем!)]");
 		}
 		
 		@Override
