@@ -30,7 +30,7 @@ public class SelfTailAnus {
 
 		@Override
 		public String getActionTitle() {
-			return "Tail-peg (self)";
+			return "Хвостом в анус (самой себе)";
 		}
 
 		@Override
@@ -41,10 +41,10 @@ public class SelfTailAnus {
 		@Override
 		public String getDescription() {
 			return UtilText.returnStringAtRandom(
-					"Snaking [npc.her] [npc.tail] up to [npc.her] [npc.ass], [npc.name] [npc.verb(tease)] the tip over [npc.her] [npc.asshole+], [npc.moaning] in delight before thrusting it deep inside.",
-					"[npc.Name] [npc.verb(snake)] [npc.her] [npc.tail] up to [npc.her] [npc.ass], [npc.moaning] in delight as [npc.she] [npc.verb(force)] it deep into [npc.her] inviting [npc.asshole].",
-					"Sliding the tip of [npc.her] [npc.tail+] up to [npc.her] neglected [npc.asshole], [npc.name] suddenly [npc.verb(thrust)] it deep inside, letting out [npc.a_moan+] as [npc.she] [npc.verb(start)] tail-fucking [npc.her] own [npc.ass].",
-					"[npc.Name] eagerly [npc.verb(thrust)] [npc.her] [npc.tail+] deep into [npc.her] needy [npc.asshole], letting out a series of [npc.moans+] as [npc.she] [npc.verb(start)] tail-fucking [npc.her] own [npc.ass].");
+					"Проскальзывая [npc.tail] [npc.her] вверх к [npc.her] [npc.ass], [npc.name] [npc.verb(tease)] кончик над [npc.her] [npc.asshole+], [npc.moaning] в восторге, прежде чем вонзить его глубоко внутрь.",
+					"[npc.Name] [npc.verb(snake)] [npc.her] [npc.tail] вверх к [npc.her] [npc.ass], [npc.moaning] в восторге, пока [npc.she] [npc.verb(force)] его глубоко в [npc.her], приглашая [npc.asshole].",
+					"Скользя кончиком [npc.her] [npc.tail+] к заброшенному [npc.her] [npc.asshole], [npc.name] внезапно [npc.verb(thrust)] его глубоко внутрь, издавая [npc.a_moan+], пока [npc.she] [npc.verb(start)] трахает хвостом собственный [npc.ass] [npc.her].",
+					"[npc.Name] жадно [npc.verb(thrust)] [npc.her] [npc.tail+] глубоко в неистовые [npc.asshole] [npc.her], издавая серию [npc.moans+], пока [npc.she] [npc.verb(start)] трахает хвостом собственный [npc.ass] [npc.her].");
 		}
 	};
 	
@@ -59,7 +59,7 @@ public class SelfTailAnus {
 		
 		@Override
 		public String getActionTitle() {
-			return "Gentle tail-pegging (self)";
+			return "Нежный само-пеггинг хвостом";
 		}
 
 		@Override
@@ -70,13 +70,13 @@ public class SelfTailAnus {
 		@Override
 		public String getDescription() {
 			return UtilText.returnStringAtRandom(
-					"[npc.A_moan+] escapes from between [npc.namePos] [npc.lips+] as [npc.she] slowly [npc.verb(push)] [npc.her] [npc.tail] deep inside [npc.her] [npc.asshole+].",
-					"Gently pumping [npc.her] [npc.tail] in and out of [npc.her] [npc.asshole+], [npc.name] [npc.verb(start)] letting out a series of delighted [npc.moans] as [npc.she] slowly [npc.verb(fuck)] [npc.her] own [npc.ass].",
-					"Slowly driving [npc.her] [npc.tail] deep inside [npc.her] [npc.asshole], [npc.name] [npc.verb(let)] out a little whimper as [npc.she] "
+					"[npc.A_moan+] выскальзывает из между [npc.namePos] [npc.lips+], когда [npc.she] медленно [npc.verb(push)] [npc.her] [npc.tail] глубоко внутри [npc.her] [npc.asshole+].",
+					"Мягко покачивая [npc.her] [npc.tail] туда-сюда в [npc.her] [npc.asshole+], [npc.name] [npc.verb(start)] издавая серию восторженных [npc.moans], пока [npc.she] медленно [npc.verb(fuck)] собственный [npc.ass] [npc.her].",
+					"Медленно вонзая [npc.her] [npc.tail] глубоко в [npc.her] [npc.asshole], [npc.name] [npc.verb(let)] тихий всхлип, когда [npc.she] "
 							+(Main.sex.getCharacterPerformingAction().hasPenis() && !Main.sex.getCharacterPerformingAction().hasVagina()
-							? "[npc.verb(use)] it to gently start massaging [npc.her] prostate."
-							: "gently [npc.verb(fuck)] [npc.her] own [npc.ass+]."),
-					"Focusing on pleasuring [npc.her] [npc.ass+], [npc.name] [npc.verb(start)] gently pumping [npc.her] [npc.tail] in and out of [npc.her] [npc.asshole+].");
+							? "[npc.verb(use)] это, чтобы начать нежно массировать простату [npc.her]."
+							: "нежно [npc.verb(fuck)] собственный [npc.her] [npc.ass+]."),
+					"Сосредоточившись на удовольствии [npc.her] [npc.ass+], [npc.name] [npc.verb(start)] плавно качая [npc.her] [npc.tail] туда-сюда в [npc.her] [npc.asshole+].");
 		}
 		
 	};
@@ -92,24 +92,24 @@ public class SelfTailAnus {
 		
 		@Override
 		public String getActionTitle() {
-			return "Tail-pegging (self)";
+			return "Тейл-пеггинг (самоудовлетворение)";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Concentrate on fucking [npc.her] own [npc.ass] with [npc.her] [npc.tail+].";
+			return "Сосредоточиться на траханьи [npc.her] собственного [npc.ass] с помощью [npc.her] [npc.tail+].";
 		}
 
 		@Override
 		public String getDescription() {
 			return UtilText.returnStringAtRandom(
-					"[npc.A_moan+] escapes from between [npc.namePos] [npc.lips+] as [npc.she] greedily [npc.verb(push)] [npc.her] [npc.tail] deep inside [npc.her] [npc.asshole+].",
-					"Pumping [npc.her] [npc.tail] in and out of [npc.her] [npc.asshole+], [npc.name] [npc.verb(start)] letting out a series of delighted [npc.moans] as [npc.she] rhythmically [npc.verb(fuck)] [npc.her] own [npc.ass].",
-					"Driving [npc.her] [npc.tail] deep inside [npc.her] [npc.asshole], [npc.name] [npc.verb(let)] out [npc.a_moan] as [npc.she] "
+					"[npc.A_moan+] вырывается из между [npc.namePos] [npc.lips+], пока [npc.she] жадно [npc.verb(push)] [npc.her] [npc.tail] глубоко внутри [npc.her] [npc.asshole+].",
+					"Вгоняя [npc.her] [npc.tail] туда-сюда в [npc.her] [npc.asshole+], [npc.name] [npc.verb(start)] издавая серию восторженных [npc.moans], пока [npc.she] ритмично [npc.verb(fuck)] [npc.her] собственный [npc.ass].",
+					"Вгоняя [npc.her] [npc.tail] глубоко в [npc.her] [npc.asshole], [npc.name] [npc.verb(let)] [npc.a_moan], как [npc.she] "
 							+(Main.sex.getCharacterPerformingAction().hasPenis() && !Main.sex.getCharacterPerformingAction().hasVagina()
-							? "[npc.verb(use)] it to start massaging [npc.her] prostate."
-							: "steadily [npc.verb(fuck)] [npc.her] own [npc.ass+]."),
-					"Focusing on pleasuring [npc.her] [npc.ass+], [npc.name] [npc.verb(start)] pumping [npc.her] [npc.tail] in and out of [npc.her] [npc.asshole+].");
+							? "[npc.verb(use)] это, чтобы начать массировать простату [npc.her]."
+							: "размеренно [npc.verb(fuck)] [npc.her] собственный [npc.ass+]."),
+					"Сосредоточившись на ласках [npc.her] [npc.ass+], [npc.name] [npc.verb(start)] ритмично [npc.her] [npc.tail] туда-сюда в [npc.her] [npc.asshole+].");
 		}
 	};
 	
@@ -124,24 +124,24 @@ public class SelfTailAnus {
 		
 		@Override
 		public String getActionTitle() {
-			return "Rough tail-pegging (self)";
+			return "Грубый само-хвостопеггинг";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Roughly fuck [npc.her] own [npc.ass] with [npc.her] [npc.tail+].";
+			return "Грубо трахать [npc.her] собственный [npc.ass] с помощью [npc.her] [npc.tail+].";
 		}
 
 		@Override
 		public String getDescription() {
 			return UtilText.returnStringAtRandom(
-					"[npc.A_moan+] escapes from between [npc.namePos] [npc.lips+] as [npc.she] roughly [npc.verb(slam)] [npc.her] [npc.tail] deep inside [npc.her] [npc.asshole+], before starting to roughly fuck [npc.her] own [npc.ass].",
-					"Roughly pumping [npc.her] [npc.tail] in and out of [npc.her] [npc.asshole+], [npc.name] [npc.verb(start)] letting out a series of delighted [npc.moans] as [npc.she] ruthlessly [npc.verb(fuck)] [npc.her] own [npc.ass].",
-					"Forcefully driving [npc.her] [npc.tail] deep inside [npc.her] [npc.asshole], [npc.name] [npc.verb(let)] out [npc.a_moan] as [npc.she] "
+					"[npc.A_moan+] выскальзывает из между [npc.namePos] [npc.lips+], пока [npc.she] грубо [npc.verb(slam)] [npc.her] [npc.tail] глубоко внутри [npc.her] [npc.asshole+], после чего начинает грубо трахать собственный [npc.ass] [npc.her].",
+					"Грубо двигая [npc.her] [npc.tail] туда-сюда в [npc.her] [npc.asshole+], [npc.name] [npc.verb(start)] издавая серию восторженных [npc.moans], пока [npc.she] безжалостно [npc.verb(fuck)] [npc.her] собственный [npc.ass].",
+					"Силовым движением вгоняя [npc.her] [npc.tail] глубоко в [npc.her] [npc.asshole], [npc.name] [npc.verb(let)] наружу [npc.a_moan] как [npc.she] "
 							+(Main.sex.getCharacterPerformingAction().hasPenis() && !Main.sex.getCharacterPerformingAction().hasVagina()
-							? "[npc.verb(start)] roughly grinding it up against [npc.her] prostate."
-							: "roughly [npc.verb(fuck)] [npc.her] own [npc.ass+]."),
-					"Focusing on pleasuring [npc.her] [npc.ass+], [npc.name] [npc.verb(start)] roughly slamming [npc.her] [npc.tail] in and out of [npc.her] [npc.asshole+].");
+							? "[npc.verb(start)] грубо втирая его в [npc.her] простату."
+							: "грубо [npc.verb(fuck)] [npc.her] собственный [npc.ass+]."),
+					"Сосредоточившись на ласках [npc.her] [npc.ass+], [npc.name] [npc.verb(start)] грубо вколачивая [npc.her] [npc.tail] туда-сюда в [npc.her] [npc.asshole+].");
 		}
 
 	};
@@ -157,24 +157,24 @@ public class SelfTailAnus {
 		
 		@Override
 		public String getActionTitle() {
-			return "Tail-pegging (self)";
+			return "Тейл-пеггинг (самоудовлетворение)";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Concentrate on fucking [npc.her] own [npc.ass] with [npc.her] [npc.tail+].";
+			return "Сосредоточиться на траханьи [npc.her] собственного [npc.ass] с помощью [npc.her] [npc.tail+].";
 		}
 
 		@Override
 		public String getDescription() {
 			return UtilText.returnStringAtRandom(
-					"[npc.A_moan+] escapes from between [npc.namePos] [npc.lips+] as [npc.she] greedily [npc.verb(push)] [npc.her] [npc.tail] deep inside [npc.her] [npc.asshole+].",
-					"Pumping [npc.her] [npc.tail] in and out of [npc.her] [npc.asshole+], [npc.name] [npc.verb(start)] letting out a series of delighted [npc.moans] as [npc.she] rhythmically [npc.verb(fuck)] [npc.her] own [npc.ass].",
-					"Driving [npc.her] [npc.tail] deep inside [npc.her] [npc.asshole], [npc.name] [npc.verb(let)] out [npc.a_moan] as [npc.she] "
+					"[npc.A_moan+] вырывается из между [npc.namePos] [npc.lips+], пока [npc.she] жадно [npc.verb(push)] [npc.her] [npc.tail] глубоко внутри [npc.her] [npc.asshole+].",
+					"Вгоняя [npc.her] [npc.tail] туда-сюда в [npc.her] [npc.asshole+], [npc.name] [npc.verb(start)] издавая серию восторженных [npc.moans], пока [npc.she] ритмично [npc.verb(fuck)] [npc.her] собственный [npc.ass].",
+					"Вгоняя [npc.her] [npc.tail] глубоко в [npc.her] [npc.asshole], [npc.name] [npc.verb(let)] [npc.a_moan], как [npc.she] "
 							+(Main.sex.getCharacterPerformingAction().hasPenis() && !Main.sex.getCharacterPerformingAction().hasVagina()
-							? "[npc.verb(use)] it to start massaging [npc.her] prostate."
-							: "steadily [npc.verb(fuck)] [npc.her] own [npc.ass+]."),
-					"Focusing on pleasuring [npc.her] [npc.ass+], [npc.name] [npc.verb(start)] pumping [npc.her] [npc.tail] in and out of [npc.her] [npc.asshole+].");
+							? "[npc.verb(use)] это, чтобы начать массировать простату [npc.her]."
+							: "размеренно [npc.verb(fuck)] [npc.her] собственный [npc.ass+]."),
+					"Сосредоточившись на ласках [npc.her] [npc.ass+], [npc.name] [npc.verb(start)] ритмично [npc.her] [npc.tail] туда-сюда в [npc.her] [npc.asshole+].");
 		}
 	};
 	
@@ -189,7 +189,7 @@ public class SelfTailAnus {
 		
 		@Override
 		public String getActionTitle() {
-			return "Eager tail-pegging (self)";
+			return "Жадное само-тейлпеггинг";
 		}
 
 		@Override
@@ -200,13 +200,13 @@ public class SelfTailAnus {
 		@Override
 		public String getDescription() {
 			return UtilText.returnStringAtRandom(
-					"[npc.A_moan+] escapes from between [npc.namePos] [npc.lips+] as [npc.she] eagerly [npc.verb(slam)] [npc.her] [npc.tail] deep inside [npc.her] [npc.asshole+], before starting to desperately fuck [npc.her] own [npc.ass].",
-					"Enthusiastically pumping [npc.her] [npc.tail] in and out of [npc.her] [npc.asshole+], [npc.name] [npc.verb(start)] letting out a series of delighted [npc.moans] as [npc.she] frantically [npc.verb(fuck)] [npc.her] own [npc.ass].",
-					"Desperately driving [npc.her] [npc.tail] deep inside [npc.her] [npc.asshole], [npc.name] [npc.verb(let)] out [npc.a_moan] as [npc.she] "
+					"[npc.A_moan+] выскальзывает из между [npc.namePos] [npc.lips+], пока [npc.she] жадно [npc.verb(slam)] [npc.her] [npc.tail] глубоко внутри [npc.her] [npc.asshole+], прежде чем начать отчаянно трахать собственный [npc.ass] [npc.her].",
+					"Энтузиастично вгоняя и выгоняя [npc.her] [npc.tail] в [npc.her] [npc.asshole+], [npc.name] [npc.verb(start)] издает серию восторженных [npc.moans], пока [npc.she] неистово [npc.verb(fuck)] свои собственные [npc.ass] [npc.her].",
+					"Отчаянно вбивая [npc.her] [npc.tail] глубоко в [npc.her] [npc.asshole], [npc.name] [npc.verb(let)] издавая [npc.a_moan] как [npc.she] "
 							+(Main.sex.getCharacterPerformingAction().hasPenis() && !Main.sex.getCharacterPerformingAction().hasVagina()
-							? "[npc.verb(start)] eagerly grinding it up against [npc.her] prostate."
-							: "eagerly [npc.verb(fuck)] [npc.her] own [npc.ass+]."),
-					"Focusing on pleasuring [npc.her] [npc.ass+], [npc.name] eagerly [npc.verb(start)] slamming [npc.her] [npc.tail] in and out of [npc.her] [npc.asshole+].");
+							? "[npc.verb(start)] с жадностью втирая его в простату [npc.her]."
+							: "жадно [npc.verb(fuck)] собственный [npc.her] [npc.ass+]."),
+					"Сосредоточившись на ласках [npc.her] [npc.ass+], [npc.name] с жадностью [npc.verb(start)] вколачивает [npc.her] [npc.tail] туда-сюда в [npc.her] [npc.asshole+].");
 		}
 	};
 	
@@ -220,17 +220,17 @@ public class SelfTailAnus {
 
 		@Override
 		public String getActionTitle() {
-			return "Stop tail-peg (self)";
+			return "Прекратить тейлпеггинг (самостоятельно)";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Stop fucking [npc.her]self with [npc.her] [npc.tail].";
+			return "Хватит трахать [npc.her]саму себя [npc.her] [npc.tail].";
 		}
 
 		@Override
 		public String getDescription() {
-			return "With [npc.a_groan+], [npc.name] [npc.verb(slide)] [npc.her] [npc.tail+] out of [npc.her] [npc.asshole+].";
+			return "С [npc.a_groan+], [npc.name] [npc.verb(slide)] [npc.her] [npc.tail+] из [npc.her] [npc.asshole+].";
 		}
 	};
 }

@@ -39,7 +39,7 @@ public class DaddySexActions {
 		
 		@Override
 		public String getActionTitle() {
-			return "Waitress approaching";
+			return "Подходящая официантка";
 		}
 
 		@Override
@@ -62,14 +62,9 @@ public class DaddySexActions {
 		@Override
 		public String getDescription() {
 			boolean lilayaPresent = Main.game.getCharactersPresent().contains(Main.game.getNpc(Lilaya.class));
-			return "Now that [daddy.nameHasFull] been satisfied, [daddy.she] suddenly seems a lot more aware of [npc.her] surroundings, and, leaning down a little so as to speak to you"
-					+ (lilayaPresent?" and Lilaya":"")
-					+" under the table, [npc.she] hisses,"
-					+ " [daddy.speechNoEffects(I think one of the waitresses knows what's going on! Sit back up!)]"
-					+ "<br/><br/>"
-					+ "Disappointed that [daddy.name] wants to end this so soon, "+(lilayaPresent?"the two of":"")+" you sulkily slide back up into your "+(lilayaPresent?"seats":"seat")+" from under the table,"
-							+ " before making a little show of licking your lips and grinning mischievously at [daddy.herHim]."
-					+ " Sure enough, just as you've finished making this slutty display, you see one of the waitresses walking over towards you...";
+			return "Теперь, когда [daddy.nameHasFull] был удовлетворен, [daddy.she] внезапно кажется гораздо более внимательной к [npc.her] окружению, и, слегка наклонившись, чтобы поговорить с тобой,"
+					+ (lilayaPresent?" и Lilaya":"")
+					+" под столом, [npc.she] шипит, [daddy.speechNoEffects(Мне кажется, одна из официанток понимает, что происходит! Сядь ровно!)]<br/><br/>Разочарованный тем, что [daddy.name] хочет закончить это так скоро, "+(lilayaPresent?"вы двое":"")+" ты угрюмо выпрямляешься в своем "+(lilayaPresent?"seats":"seat")+" из-под стола, после чего напоказ облизываешь губы и озорно ухмыляешься [daddy.herHim]. И действительно, как только ты заканчиваешь это развратное представление, ты видишь, что одна из официанток идет к вам...";
 		}
 
 		@Override
@@ -105,16 +100,16 @@ public class DaddySexActions {
 		public String getActionTitle() {
 			if(!Main.sex.getCharactersHavingOngoingActionWith(Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS).isEmpty()) {
 				if(!Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS, SexAreaPenetration.FINGER).isEmpty()) {
-					return "Handjob onto back";
+					return "Мастурбация на спину";
 				}
-				return "Pull out (back)";
+				return "Вытащить (спина)";
 			}
-			return "Cum on back";
+			return "Кончить на спину";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "You've reached your climax, and can't hold back your orgasm any longer. Direct your cum onto [npc2.namePos] back.";
+			return "Вы достигли пика и больше не можете сдерживать оргазм. Направьте свою сперму на [npc2.namePos] спину.";
 		}
 
 		@Override
@@ -161,16 +156,16 @@ public class DaddySexActions {
 		public String getActionTitle() {
 			if(!Main.sex.getCharactersHavingOngoingActionWith(Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS).isEmpty()) {
 				if(!Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS, SexAreaPenetration.FINGER).isEmpty()) {
-					return "Handjob onto own stomach";
+					return "Дрочить на собственный живот";
 				}
-				return "Pull out (own stomach)";
+				return "Вытащить (на свой живот)";
 			}
-			return "Cum on your stomach";
+			return "Кончить на живот";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "You've reached your climax, and can't hold back your orgasm any longer. Direct your cum onto your stomach.";
+			return "Вы достигли пика и больше не можете сдерживать оргазм. Направьте свою струю на свой живот.";
 		}
 
 		@Override

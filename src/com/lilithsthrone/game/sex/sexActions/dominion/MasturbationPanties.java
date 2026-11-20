@@ -45,30 +45,28 @@ public class MasturbationPanties {
 		
 		@Override
 		public String getActionTitle() {
-			return "Panty-pussy rub";
+			return "Тереть член трусиками";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Rub Lilaya's panties over your pussy.";
+			return "Тереть трусики Lilaya о свою киску.";
 		}
 
 		@Override
 		public String getDescription() {
 			return UtilText.returnStringAtRandom(
-					"You press the soft fabric of Lilaya's panties down between your [pc.legs+], letting out a deep sigh as you rub them up and down over your exposed [pc.pussy].",
-					"Pressing Lilaya's panties up against your [pc.pussy+], you close your [pc.eyes] and imagine your demonic [lilaya.relation(pc)]'s pussy rubbing against the soft fabric.",
-					"Sliding Lilaya's panties over your [pc.pussy+], you let out [pc.a_moan+] as you imagine your demonic [lilaya.relation(pc)] wearing them as she works away in her lab.",
-					"You eagerly slide Lilaya's panties over your needy [pc.pussy], moaning and sighing as you gently press the fabric against your outer labia.");
+					"Ты прижимаешь мягкую ткань трусиков Lilaya к своим [pc.legs+], издавая глубокий вздох и водя ими вверх-вниз по своей обнаженной [pc.pussy].",
+					"Прижимая трусики Lilaya к своим [pc.pussy+], ты закрываешь [pc.eyes] и представляешь, как киска твоей демонической [lilaya.relation(pc)] трется о мягкую ткань.",
+					"Скользя трусиками Lilaya по своим [pc.pussy+], ты издаешь [pc.a_moan+], представляя, как твоя демоническая [lilaya.relation(pc)] носит их, работая в своей лаборатории.",
+					"Ты жадно натягиваешь трусики Lilaya на свои нетерпеливые [pc.pussy], стоная и вздыхая, когда осторожно прижимаешь ткань к своим внешним половым губам.");
 		}
 		
 		@Override
 		public String applyEffectsString() {
 			if(!LilayasRoom.lilayasPanties.isDirty() && Main.sex.hasLubricationTypeFromAnyone(Main.game.getPlayer(), SexAreaOrifice.VAGINA)) {
 				LilayasRoom.lilayasPanties.setDirty(null, true);
-				return "<p style='text-align:center'>"
-							+ "[style.italicsDirty(Lilaya's panties are quickly dirtied as you rub them against your wet pussy.)]"
-						+ "</p>";
+				return "<p style='text-align:center'>[style.italicsDirty(Трусики Lilaya быстро пачкаются, пока ты трешь их о свою мокрую киску.)]</p>";
 				
 			} else {
 				return "";
@@ -101,30 +99,28 @@ public class MasturbationPanties {
 		
 		@Override
 		public String getActionTitle() {
-			return "Panty-cock rub";
+			return "Тереть член трусиками";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Rub Lilaya's panties over your [pc.cock].";
+			return "Тереть трусики Lilaya о свой [pc.cock].";
 		}
 
 		@Override
 		public String getDescription() {
 			return UtilText.returnStringAtRandom(
-					"Wrapping Lilaya's panties around your [pc.cock+], you start stroking up and down your length, [pc.moaning+] as you picture your demonic [lilaya.relation(pc)]'s pussy rubbing against the soft fabric.",
-					"You place Lilaya's panties over the [pc.cockHead+] of your [pc.cock+], before letting out [pc.a_moan+] as you start jerking off with them.",
-					"Taking hold of your [pc.cock+], you wrap Lilaya's panties around your shaft, before closing your [pc.eyes] and imagining your demonic [lilaya.relation(pc)]'s pussy as you masturbate.",
-					"Rubbing Lilaya's panties up and down around your [pc.cock+], you let out [pc.a_moan+] as you imagine your demonic [lilaya.relation(pc)] wearing them as she works away in her lab.");
+					"Обернув трусики Lilaya вокруг своего [pc.cock+], ты начинаешь совершать движения вверх-вниз по всей длине, [pc.moaning+], представляя, как киска твоей демонической [lilaya.relation(pc)] трется о мягкую ткань.",
+					"Вы накрываете [pc.cockHead+] своего [pc.cock+] трусиками Lilaya, издавая [pc.a_moan+], когда начинаете ласкать себя через ткань.",
+					"Обхватив свой [pc.cock+], вы оборачиваете трусики Lilaya вокруг члена, после чего закрываете [pc.eyes] и воображаете киску своей демонической [lilaya.relation(pc)], мастурбируя.",
+					"Водя трусиками Lilaya вверх и вниз по своему [pc.cock+], вы издаете [pc.a_moan+], представляя, как ваша демоническая [lilaya.relation(pc)] носит их, усердно работая в своей лаборатории.");
 		}
 
 		@Override
 		public String applyEffectsString() {
 			if(!LilayasRoom.lilayasPanties.isDirty() && Main.sex.hasLubricationTypeFromAnyone(Main.game.getPlayer(), SexAreaPenetration.PENIS)) {
 				LilayasRoom.lilayasPanties.setDirty(null, true);
-				return "<p style='text-align:center'>"
-							+ "[style.italicsDirty(Lilaya's panties are quickly dirtied as you rub them over your cock.)]"
-						+ "</p>";
+				return "<p style='text-align:center'>[style.italicsDirty(Трусики Lilaya быстро пачкаются, пока вы трете их о свой член.)]</p>";
 				
 			} else {
 				return "";
@@ -158,21 +154,21 @@ public class MasturbationPanties {
 		
 		@Override
 		public String getActionTitle() {
-			return "Panty-mound rub";
+			return "Трение трусиками по лобку";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Rub Lilaya's panties over your genderless mound.";
+			return "Потрите трусики Lilaya о свой безполовой лобок.";
 		}
 
 		@Override
 		public String getDescription() {
 			return UtilText.returnStringAtRandom(
-					"Reaching down between your legs, you rub Lilaya's panties over your doll-like mound, moaning and sighing as you picture your demonic [lilaya.relation(pc)]'s pussy rubbing against the soft fabric.",
-					"You rub Lilaya's panties over the sensitive doll-like mound between your legs, sighing and whining as you imagine your demonic [lilaya.relation(pc)] wearing them as she works away in her lab.",
-					"Pressing Lilaya's panties up against your sensitive genderless mound, you close your [pc.eyes] and imagine your demonic [lilaya.relation(pc)]'s pussy as you masturbate.",
-					"You eagerly slide Lilaya's panties over your doll-like mound, moaning and sighing as you gently press the fabric against your sensitive [pc.skin].");
+					"Просунув руку между ног, вы трете трусики Lilaya о свой кукольный лобок, стоная и вздыхая и представляя, как киска вашей демонической [lilaya.relation(pc)] прижимается к мягкой ткани.",
+					"Вы трете трусики Lilaya о чувствительный кукольный лобок между ног, вздыхая и поскуливая, представляя, как ваша демоническая [lilaya.relation(pc)] носит их, усердно работая в своей лаборатории.",
+					"Прижимая трусики Lilaya к своему чувствительному безполовому лобку, вы закрываете [pc.eyes] и воображаете киску своей демонической [lilaya.relation(pc)], мастурбируя.",
+					"Вы жадно натягиваете трусики Lilaya на свой кукольный лобок, стоная и вздыхая, когда осторожно прижимаете ткань к своему чувствительному [pc.skin].");
 		}
 		
 		@Override
@@ -200,21 +196,21 @@ public class MasturbationPanties {
 
 		@Override
 		public String getActionTitle() {
-			return "Sniff panties";
+			return "Нюхать трусики";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Sniff Lilaya's used panties.";
+			return "Нюхать использованные трусики Lilaya.";
 		}
 
 		@Override
 		public String getDescription() {
 			return UtilText.returnStringAtRandom(
-					"Bringing Lilaya's panties up to your [pc.face], you press the soft fabric over your nose and take a deep breath, relishing the slightly-musky scent of your demonic [lilaya.relation(pc)]'s underwear.",
-					"You press Lilaya's panties against your face, breathing in the heady, slightly-musky scent of your demonic [lilaya.relation(pc)]'s used underwear.",
-					"Pressing Lilaya's panties up against your nose, you close your [pc.eyes] and imagine your demonic [lilaya.relation(pc)]'s pussy as you breathe in her musky, perfume-laced scent.",
-					"You eagerly press Lilaya's panties over your nose, moaning and sighing as you breathe in the musky, perfume-laced scent of the fabric.");
+					"Поднеся трусики Lilaya к своему [pc.face], вы прижимаете мягкую ткань к носу и глубоко вдыхаете, наслаждаясь слегка мускусным запахом нижнего белья вашей демонической [lilaya.relation(pc)].",
+					"Вы прижимаете трусики Lilaya к лицу, вдыхая дурманящий, слегка мускусный аромат использованного белья вашей демонической [lilaya.relation(pc)].",
+					"Прижимая трусики Lilaya к носу, вы закрываете свои [pc.eyes] и представляете киску вашей демонической [lilaya.relation(pc)], вдыхая её мускусный, смешанный с духами запах.",
+					"Вы с жадностью прижимаете трусики Lilaya к носу, стоная и вздыхая, вдыхая мускусный, пропитанный духами аромат ткани.");
 		}
 		
 		@Override
@@ -240,17 +236,17 @@ public class MasturbationPanties {
 		@Override
 		public String getActionTitle() {
 			if(Main.game.getPlayer().hasPenisIgnoreDildo()) {
-				return "Cum in panties";
+				return "Кончить в трусики";
 			}
-			return "Panties focus";
+			return "Сосредоточиться на трусиках";
 		}
 
 		@Override
 		public String getActionDescription() {
 			if(Main.game.getPlayer().hasPenisIgnoreDildo()) {
-				return "You've reached your climax, and can't hold back your orgasm any longer. Cum straight into Lilaya's panties.";
+				return "Вы достигли пика и больше не можете сдерживать оргазм. Кончите прямо в трусики Lilaya.";
 			}
-			return "You've reached your climax, and can't hold back your orgasm any longer. Focus on Lilaya's panties and sniff them as you climax.";
+			return "Вы достигли пика и больше не можете сдерживать оргазм. Сосредоточьтесь на трусиках Lilaya и нюхайте их во время оргазма.";
 		}
 
 		@Override

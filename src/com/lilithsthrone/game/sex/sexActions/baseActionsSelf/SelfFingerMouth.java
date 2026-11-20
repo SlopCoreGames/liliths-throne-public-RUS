@@ -37,18 +37,17 @@ public class SelfFingerMouth {
 		
 		@Override
 		public String getActionTitle() {
-			return "Lubricate fingers";
+			return "Смазать пальцы";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Lubricate your fingers with your saliva.";
+			return "Смазать свои пальцы слюной.";
 		}
 
 		@Override
 		public String getDescription() {
-			return "Lifting [npc.her] [npc.hand] up to [npc.her] mouth, [npc.name] [npc.verb(slide)] [npc.her] [npc.fingers] past [npc.her] [npc.lips+],"
-					+ " before lewdly sucking on them for a moment in order to get them well lubricated with [npc.her] saliva.";
+			return "Подняв [npc.her] [npc.hand] к [npc.her] рту, [npc.name] [npc.verb(slide)] [npc.her] [npc.fingers] мимо [npc.her] [npc.lips+], а затем похотливо посасывая их некоторое время, чтобы хорошенько смазать их [npc.her] слюной.";
 		}
 		
 		@Override
@@ -71,17 +70,17 @@ public class SelfFingerMouth {
 
 		@Override
 		public String getActionTitle() {
-			return "Suck fingers (self)";
+			return "Сосать пальцы (самой себе)";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Put your [npc.fingers] in your [npc.mouth] and start sucking them.";
+			return "Засунь свои [npc.fingers] в [npc.mouth] и начни их сосать.";
 		}
 
 		@Override
 		public String getDescription() {
-			return "Lifting [npc.her] [npc.hand] up to [npc.her] [npc.mouth], [npc.name] [npc.verb(slide)] [npc.her] [npc.fingers] past [npc.her] [npc.lips+] before starting to lewdly suck on [npc.her] intruding digits.";
+			return "Подняв [npc.her] [npc.hand] к [npc.her] [npc.mouth], [npc.name] [npc.verb(slide)] [npc.her] [npc.fingers] мимо [npc.her] [npc.lips+], прежде чем начать похотливо посасывать [npc.her] вошедшие пальцы.";
 		}
 	};
 	
@@ -95,17 +94,17 @@ public class SelfFingerMouth {
 
 		@Override
 		public String getActionTitle() {
-			return "Stop sucking fingers (self)";
+			return "Перестать сосать пальцы (самой себе)";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Stop sucking your [npc.fingers].";
+			return "Перестать сосать свои [npc.fingers].";
 		}
 
 		@Override
 		public String getDescription() {
-			return "With a little sigh, [npc.name] [npc.verb(slide)] [npc.her] saliva-coated [npc.fingers] out of [npc.her] [npc.mouth].";
+			return "С легким вздохом, [npc.name] [npc.verb(slide)] [npc.her] покрытые слюной [npc.fingers] из [npc.her] [npc.mouth].";
 		}
 	};
 	

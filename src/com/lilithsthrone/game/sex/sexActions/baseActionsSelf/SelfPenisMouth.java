@@ -36,54 +36,46 @@ public class SelfPenisMouth {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Start autofellatio";
+			return "Начать автофелляцию";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Bend over and take your [npc.cock+] into your mouth, before starting to give yourself a blowjob.";
+			return "Наклониться и взять свой [npc.cock+] в рот, прежде чем начать отсасывать самому себе.";
 		}
 		@Override
 		public String getDescription() {
 			UtilText.nodeContentSB.setLength(0);
 
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"In a display of impressive flexibility, [npc.name] [npc.verb(bend)] down and ",
-					"Showing off how flexibile [npc.sheIsFull], [npc.name] [npc.verb(double)] over and ",
-					"Putting [npc.her] flexibility to the test, [npc.name] [npc.verb(bend)] down and "));
+					"Демонстрируя впечатляющую гибкость, [npc.name] [npc.verb(bend)] вниз и ",
+					"Показывая, насколько гибким является [npc.sheIsFull], [npc.name] [npc.verb(double)] наклон и ",
+					"Испытывая гибкость [npc.her] на прочность, [npc.name] [npc.verb(bend)] вниз и "));
 			
 			switch(Main.sex.getSexPace(Main.sex.getCharacterPerformingAction())) {
 				case DOM_GENTLE:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"[npc.verb(bring)] [npc.her] [npc.lips+] to the [npc.cockHead+] of [npc.her] [npc.cock]."
-									+ " Slowly taking [npc.her] [npc.cock] into [npc.her] mouth, [npc.she] [npc.verb(let)] out a muffled [npc.moan] as [npc.she] [npc.verb(start)] giving [npc.herself] a blowjob.",
+							"[npc.verb(bring)] [npc.her] [npc.lips+] к [npc.cockHead+] [npc.her] [npc.cock]. Медленно принимая [npc.her] [npc.cock] в [npc.her] рот, [npc.she] [npc.verb(let)] приглушенный [npc.moan], пока [npc.she] [npc.verb(start)] делает себе [npc.herself].",
 
-							"[npc.verb(wrap)] [npc.her] [npc.lips+] around the [npc.cockHead+] of [npc.her] [npc.cock]."
-									+ " Letting out a muffled [npc.moan], [npc.she] [npc.verb(start)] giving [npc.herself] a gentle blowjob."));
+							"[npc.verb(wrap)] [npc.her] [npc.lips+] вокруг [npc.cockHead+] [npc.her] [npc.cock]. Издавая приглушенный [npc.moan], [npc.she] [npc.verb(start)] нежно отсасывает [npc.herself]."));
 					break;
 				case DOM_NORMAL:
 				case SUB_EAGER:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"[npc.verb(bring)] [npc.her] [npc.lips+] to the [npc.cockHead+] of [npc.her] [npc.cock]."
-									+ " Eagerly taking [npc.her] [npc.cock] into [npc.her] mouth, [npc.she] [npc.verb(let)] out a muffled [npc.moan] as [npc.she] happily [npc.verb(start)] giving [npc.herself] a blowjob.",
+							"[npc.verb(bring)] [npc.her] [npc.lips+] к [npc.cockHead+] [npc.her] [npc.cock]. Жадно принимая [npc.her] [npc.cock] в [npc.her] рот, [npc.she] [npc.verb(let)] приглушенный [npc.moan], пока [npc.she] счастливо [npc.verb(start)] делает себе [npc.herself].",
 
-							"[npc.verb(wrap)] [npc.her] [npc.lips+] around the [npc.cockHead+] of [npc.her] [npc.cock]."
-									+ " Letting out a muffled [npc.moan], [npc.she] eagerly [npc.verb(start)] giving [npc.herself] an enthusiastic blowjob."));
+							"[npc.verb(wrap)] [npc.her] [npc.lips+] вокруг [npc.cockHead+] [npc.her] [npc.cock]. Издавая приглушенный [npc.moan], [npc.she] с нетерпением [npc.verb(start)], с энтузиазмом делая [npc.herself] минет."));
 					break;
 				case DOM_ROUGH:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"[npc.verb(bring)] [npc.her] [npc.lips+] to the [npc.cockHead+] of [npc.her] [npc.cock]."
-									+ " Hungrily taking [npc.her] [npc.cock] into [npc.her] mouth, [npc.she] [npc.verb(let)] out a muffled [npc.moan] as [npc.she] [npc.verb(start)] giving [npc.herself] a blowjob.",
+							"[npc.verb(bring)] [npc.her] [npc.lips+] к [npc.cockHead+] [npc.her] [npc.cock]. Жадно заглатывая [npc.her] [npc.cock] в [npc.her] рот, [npc.she] [npc.verb(let)] приглушенный [npc.moan], пока [npc.she] [npc.verb(start)] делает [npc.herself] минет.",
 
-							"[npc.verb(wrap)] [npc.her] [npc.lips+] around the [npc.cockHead+] of [npc.her] [npc.cock]."
-									+ " Letting out a muffled [npc.moan], [npc.she] greedily [npc.verb(start)] giving [npc.herself] a rough blowjob."));
+							"[npc.verb(wrap)] [npc.her] [npc.lips+] вокруг [npc.cockHead+] [npc.her] [npc.cock]. Издавая приглушенный [npc.moan], [npc.she] жадно [npc.verb(start)], влажно и грубо отсасывая [npc.herself]."));
 					break;
 				case SUB_NORMAL:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"[npc.verb(bring)] [npc.her] [npc.lips+] to the [npc.cockHead+] of [npc.her] [npc.cock]."
-									+ " Taking [npc.her] [npc.cock] into [npc.her] mouth, [npc.she] [npc.verb(let)] out a muffled [npc.moan] as [npc.she] [npc.verb(start)] giving [npc.herself] a blowjob.",
+							"[npc.verb(bring)] [npc.her] [npc.lips+] к [npc.cockHead+] [npc.her] [npc.cock]. Заглатывая [npc.her] [npc.cock] в [npc.her] рот, [npc.she] [npc.verb(let)] приглушенный [npc.moan], пока [npc.she] [npc.verb(start)] делает [npc.herself] минет.",
 
-							"[npc.verb(wrap)] [npc.her] [npc.lips+] around the [npc.cockHead+] of [npc.her] [npc.cock]."
-									+ " Letting out a muffled [npc.moan], [npc.she] [npc.verb(start)] giving [npc.herself] a blowjob."));
+							"[npc.verb(wrap)] [npc.her] [npc.lips+] вокруг [npc.cockHead+] [npc.her] [npc.cock]. Издавая приглушенный [npc.moan], [npc.she] [npc.verb(start)] делает [npc.herself] минет."));
 					break;
 				default:
 					break;
@@ -104,11 +96,11 @@ public class SelfPenisMouth {
 			SexParticipantType.SELF) {
 		@Override
 		public String getActionTitle() {
-			return "Deep throat";
+			return "Глубокий горловой";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Take your [npc.cock+] as deep as possible down your throat.";
+			return "Заглоти свой [npc.cock+] как можно глубже в глотку.";
 		}
 		@Override
 		public String getDescription() {
@@ -117,44 +109,36 @@ public class SelfPenisMouth {
 			switch(Main.sex.getSexPace(Main.sex.getCharacterPerformingAction())) {
 				case DOM_GENTLE:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"Gently wrapping [npc.her] [npc.lips+] around [npc.her] own [npc.cock], [npc.name] [npc.verb(push)] [npc.her] head forwards,"
-									+ " taking it as deep down [npc.her] throat as [npc.she] possibly can.",
+							"Мягко обхватив [npc.her] [npc.lips+] вокруг собственного [npc.cock] [npc.her], [npc.name] [npc.verb(push)] [npc.her] вперед, заглатывая его так глубоко в [npc.her], насколько только может [npc.she].",
 
-							"With a soft, muffled [npc.moan], [npc.name] gently [npc.verb(bend)] down as far as [npc.she] can,"
-									+ " parting [npc.her] [npc.lips+] as [npc.she] [npc.verb(take)] as much of [npc.her] [npc.cock+] down [npc.her] throat as possible.",
+							"С мягким, приглушенным [npc.moan], [npc.name] осторожно [npc.verb(bend)] вниз настолько глубоко, насколько позволяет [npc.she], раздвигая [npc.her] [npc.lips+], чтобы [npc.she] [npc.verb(take)] как можно больше [npc.her] [npc.cock+] в [npc.her] глотку.",
 
-							"Slowly sliding [npc.her] head forwards, [npc.name] gently [npc.verb(part)] [npc.her] [npc.lips+], before taking [npc.her] [npc.cock+] deep down [npc.her] throat."));
+							"Медленно продвигая головку [npc.her] вперед, [npc.name] нежно [npc.verb(part)] [npc.her] [npc.lips+], прежде чем заглотить [npc.her] [npc.cock+] глубоко в [npc.her] горло."));
 					break;
 				case DOM_NORMAL:
 				case SUB_EAGER:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"Eagerly wrapping [npc.her] [npc.lips+] around [npc.her] own [npc.cock], [npc.name] quickly [npc.verb(push)] [npc.her] head forwards,"
-									+ " greedily taking it as deep down [npc.her] throat as [npc.she] possibly can.",
+							"С жадностью обхватив [npc.her] [npc.lips+] вокруг собственного [npc.cock] [npc.her], [npc.name] быстро [npc.verb(push)] [npc.her] вперед, жадно заглатывая его так глубоко в [npc.her], насколько только может [npc.she].",
 
-							"With a muffled, [npc.moan+], [npc.name] eagerly [npc.verb(bend)] down as far as [npc.she] can,"
-									+ " parting [npc.her] [npc.lips+] as [npc.she] desperately [npc.verb(take)] as much of [npc.her] [npc.cock+] down [npc.her] throat as possible.",
+							"С приглушенным, [npc.moan+] звуком, [npc.name] жадно [npc.verb(bend)] вниз настолько глубоко, насколько позволяет [npc.she], раздвигая [npc.her] [npc.lips+], пока [npc.she] отчаянно [npc.verb(take)] как можно больше [npc.her] [npc.cock+] в [npc.her] горло.",
 
-							"Greedily sliding [npc.her] head forwards, [npc.name] readily [npc.verb(part)] [npc.her] [npc.lips+] as [npc.she] [npc.verb(take)] [npc.her] [npc.cock+] deep down [npc.her] throat."));
+							"Жадно продвигая головку [npc.her] вперед, [npc.name] охотно [npc.verb(part)] [npc.her] [npc.lips+], пока [npc.she] [npc.verb(take)] [npc.her] [npc.cock+] глубоко в [npc.her] горло."));
 					break;
 				case DOM_ROUGH:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"Forcefully wrapping [npc.her] [npc.lips+] around [npc.her] own [npc.cock], [npc.name] roughly [npc.verb(slam)] [npc.her] head forwards,"
-									+ " forcing it as deep down [npc.her] throat as [npc.she] possibly can.",
+							"Сильно обхватив [npc.her] [npc.lips+] вокруг собственного [npc.cock] [npc.her], [npc.name] грубо [npc.verb(slam)] [npc.her] вперед, заталкивая его так глубоко в [npc.her], насколько только может [npc.she].",
 
-							"With a muffled, [npc.moan+], [npc.name] quickly [npc.verb(bend)] down as far as [npc.she] can,"
-									+ " parting [npc.her] [npc.lips+] as [npc.she] roughly [npc.verb(force)] as much of [npc.her] [npc.cock+] down [npc.her] throat as possible.",
+							"С приглушенным, [npc.moan+] звуком, [npc.name] быстро [npc.verb(bend)] вниз настолько глубоко, насколько позволяет [npc.she], раздвигая [npc.her] [npc.lips+], пока [npc.she] грубо [npc.verb(force)] как можно больше [npc.her] [npc.cock+] в [npc.her] горло.",
 
-							"Aggressively pushing [npc.her] head forwards, [npc.name] [npc.verb(part)] [npc.her] [npc.lips+] as [npc.she] [npc.verb(force)] [npc.her] [npc.cock+] deep down [npc.her] throat."));
+							"Агрессивно толкая головку [npc.her] вперед, [npc.name] [npc.verb(part)] [npc.her] [npc.lips+], пока [npc.she] [npc.verb(force)] [npc.her] [npc.cock+] глубоко в [npc.her] горло."));
 					break;
 				case SUB_NORMAL:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"Wrapping [npc.her] [npc.lips+] around [npc.her] own [npc.cock], [npc.name] quickly [npc.verb(push)] [npc.her] head forwards,"
-									+ " taking it as deep down [npc.her] throat as [npc.she] possibly can.",
+							"Облепив [npc.her] [npc.lips+] вокруг собственного [npc.her] [npc.cock], [npc.name] быстро [npc.verb(push)] [npc.her] вперед, заглатывая его так глубоко в [npc.her], насколько [npc.she] только может.",
 
-							"With a muffled, [npc.moan+], [npc.name] [npc.verb(bend)] down as far as [npc.she] can,"
-									+ " parting [npc.her] [npc.lips+] as [npc.she] [npc.verb(take)] as much of [npc.her] [npc.cock+] down [npc.her] throat as possible.",
+							"С приглушенным, [npc.moan+] звуком, [npc.name] [npc.verb(bend)] так глубоко, как только позволяет [npc.she], раздвигая [npc.her] [npc.lips+], пока [npc.she] [npc.verb(take)] как можно больше [npc.her] [npc.cock+] в [npc.her] горло.",
 
-							"Sliding [npc.her] head forwards, [npc.name] [npc.verb(part)] [npc.her] [npc.lips+] as [npc.she] [npc.verb(take)] [npc.her] [npc.cock+] deep down [npc.her] throat."));
+							"Проталкивая [npc.her] головку вперед, [npc.name] [npc.verb(part)] [npc.her] [npc.lips+], пока [npc.she] [npc.verb(take)] [npc.her] [npc.cock+] глубоко в [npc.her] горло."));
 					break;
 				default:
 					break;
@@ -174,21 +158,20 @@ public class SelfPenisMouth {
 			SexPace.DOM_GENTLE) {
 		@Override
 		public String getActionTitle() {
-			return "Gentle autofellatio";
+			return "Нежное аутофелляцио";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Gently suck your [npc.cock+].";
+			return "Нежно посасывай свой [npc.cock+].";
 		}
 		@Override
 		public String getDescription() {
 			UtilText.nodeContentSB.setLength(0);
 
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"Gently wrapping [npc.her] [npc.lips+] around [npc.her] own [npc.cock+], [npc.name] [npc.verb(start)] bobbing [npc.her] head up and down as [npc.she] [npc.verb(give)] [npc.herself] a loving blowjob.",
-					"With a soft, muffled [npc.moan], [npc.name] gently [npc.verb(start)] bobbing [npc.her] head up and down,"
-							+ " wrapping [npc.her] [npc.lips+] around [npc.her] [npc.cock+] as [npc.she] [npc.verb(give)] [npc.herself] head.",
-					"Slowly bobbing [npc.her] head up and down, [npc.name] gently [npc.verb(wrap)] [npc.her] [npc.lips+] around [npc.her] [npc.cock+] as [npc.she] [npc.verb(give)] [npc.herself] a blowjob."));
+					"Мягко обхватив [npc.her] [npc.lips+] вокруг собственного [npc.her] [npc.cock+], [npc.name] [npc.verb(start)] покачивает [npc.her] головой вверх и вниз, пока [npc.she] [npc.verb(give)] [npc.herself] с любовью.",
+					"С мягким, приглушенным [npc.moan], [npc.name] осторожно [npc.verb(start)] покачивает [npc.her] головкой вверх и вниз, обхватывая [npc.her] [npc.lips+] вокруг [npc.her] [npc.cock+], пока [npc.she] [npc.verb(give)] [npc.herself] головку.",
+					"Медленно покачивая [npc.her] головкой вверх и вниз, [npc.name] осторожно [npc.verb(wrap)] [npc.her] [npc.lips+] вокруг [npc.her] [npc.cock+], пока [npc.she] [npc.verb(give)] [npc.herself] минет."));
 			
 			return UtilText.nodeContentSB.toString();
 		}
@@ -205,21 +188,20 @@ public class SelfPenisMouth {
 			SexPace.DOM_NORMAL) {
 		@Override
 		public String getActionTitle() {
-			return "Autofellatio";
+			return "Аутофелляцио";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Eagerly suck your [npc.cock+].";
+			return "Жадно посасывай свой [npc.cock+].";
 		}
 		@Override
 		public String getDescription() {
 			UtilText.nodeContentSB.setLength(0);
 
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"Eagerly wrapping [npc.her] [npc.lips+] around [npc.her] [npc.cock+], [npc.name] [npc.verb(start)] rapidly bobbing [npc.her] head up and down as [npc.she] [npc.verb(give)] [npc.herself] an enthusiastic blowjob.",
-					"With a muffled, [npc.moan+], [npc.name] quickly [npc.verb(start)] bobbing [npc.her] head up and down,"
-							+ " greedily wrapping [npc.her] [npc.lips+] around [npc.her] [npc.cock+] as [npc.she] [npc.verb(give)] [npc.herself] head.",
-					"Rapidly bobbing [npc.her] head up and down, [npc.name] desperately [npc.verb(wrap)] [npc.her] [npc.lips+] around [npc.her] [npc.cock+] as [npc.she] [npc.verb(give)] [npc.herself] an eager blowjob."));
+					"Жадно обхватив [npc.her] [npc.lips+] вокруг [npc.her] [npc.cock+], [npc.name] [npc.verb(start)] стремительно двигает [npc.her] головой вверх-вниз, пока [npc.she] [npc.verb(give)] [npc.herself] страстный минет.",
+					"С приглушенным, [npc.moan+], [npc.name] быстро [npc.verb(start)] двигает [npc.her] головой вверх-вниз, жадно обхватывая [npc.her] [npc.lips+] вокруг [npc.her] [npc.cock+], пока [npc.she] [npc.verb(give)] [npc.herself] голову.",
+					"Стремительно двигая [npc.her] головой вверх-вниз, [npc.name] отчаянно [npc.verb(wrap)] [npc.her] [npc.lips+] вокруг [npc.her] [npc.cock+], пока [npc.she] [npc.verb(give)] [npc.herself] нетерпеливый минет."));
 		
 			return UtilText.nodeContentSB.toString();
 		}
@@ -236,21 +218,20 @@ public class SelfPenisMouth {
 			SexPace.DOM_ROUGH) {
 		@Override
 		public String getActionTitle() {
-			return "Rough autofellatio";
+			return "Грубое аутофелляцио";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Roughly suck your [npc.cock+].";
+			return "Грубо сосать твой [npc.cock+].";
 		}
 		@Override
 		public String getDescription() {
 			UtilText.nodeContentSB.setLength(0);
 
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"Forcefully gripping [npc.her] [npc.lips+] down around [npc.her] [npc.cock+], [npc.name] [npc.verb(start)] aggressively bobbing [npc.her] head up and down as [npc.she] [npc.verb(give)] [npc.herself] a rough blowjob.",
-					"With a muffled, [npc.moan+], [npc.name] violently [npc.verb(start)] bobbing [npc.her] head up and down,"
-							+ " roughly wrapping [npc.her] [npc.lips+] around [npc.her] [npc.cock+] as [npc.she] [npc.verb(give)] [npc.herself] head.",
-					"Roughly bobbing [npc.her] head up and down, [npc.name] dominantly [npc.verb(wrap)] [npc.her] [npc.lips+] around [npc.her] [npc.cock+] as [npc.she] [npc.verb(give)] [npc.herself] a forceful blowjob."));
+					"Сильно сжимая [npc.her] [npc.lips+] вокруг [npc.her] [npc.cock+], [npc.name] агрессивно [npc.verb(start)] двигает [npc.her] головой вверх-вниз, пока [npc.she] [npc.verb(give)] [npc.herself] грубый минет.",
+					"С приглушенным, [npc.moan+], [npc.name] неистово [npc.verb(start)] двигает [npc.her] головой вверх-вниз, грубо обхватывая [npc.her] [npc.lips+] вокруг [npc.her] [npc.cock+], пока [npc.she] [npc.verb(give)] [npc.herself] голову.",
+					"Грубо двигая [npc.her] головой вверх-вниз, [npc.name] доминантно [npc.verb(wrap)] [npc.her] [npc.lips+] вокруг [npc.her] [npc.cock+], пока [npc.she] [npc.verb(give)] [npc.herself] напористый минет."));
 		
 			return UtilText.nodeContentSB.toString();
 		}
@@ -267,21 +248,20 @@ public class SelfPenisMouth {
 			SexPace.SUB_NORMAL) {
 		@Override
 		public String getActionTitle() {
-			return "Autofellatio";
+			return "Аутофелляцио";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Continue sucking your [npc.cock+].";
+			return "Продолжить сосать твой [npc.cock+].";
 		}
 		@Override
 		public String getDescription() {
 			UtilText.nodeContentSB.setLength(0);
 
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"Wrapping [npc.her] [npc.lips+] around [npc.her] [npc.cock+], [npc.name] [npc.verb(start)] rapidly bobbing [npc.her] head up and down as [npc.she] [npc.verb(give)] [npc.herself] a blowjob.",
-					"With a muffled, [npc.moan+], [npc.name] quickly [npc.verb(start)] bobbing [npc.her] head up and down,"
-							+ " wrapping [npc.her] [npc.lips+] around [npc.her] [npc.cock+] as [npc.she] [npc.verb(give)] [npc.herself] head.",
-					"Rapidly bobbing [npc.her] head up and down, [npc.name] [npc.verb(wrap)] [npc.her] [npc.lips+] around [npc.her] [npc.cock+] as [npc.she] [npc.verb(give)] [npc.herself] a blowjob."));
+					"Оборачивая [npc.her] [npc.lips+] вокруг [npc.her] [npc.cock+], [npc.name] [npc.verb(start)] быстро двигает [npc.her] головой вверх-вниз, пока [npc.she] [npc.verb(give)] [npc.herself].",
+					"Приглушенно, [npc.moan+], [npc.name] быстро [npc.verb(start)] покачивает [npc.her] головой вверх-вниз, обхватывая [npc.her] [npc.lips+] вокруг [npc.her] [npc.cock+], пока [npc.she] [npc.verb(give)] [npc.herself] голову.",
+					"Быстро двигая [npc.her] головой вверх-вниз, [npc.name] [npc.verb(wrap)] [npc.her] [npc.lips+] вокруг [npc.her] [npc.cock+], пока [npc.she] [npc.verb(give)] [npc.herself]."));
 			
 			return UtilText.nodeContentSB.toString();
 		}
@@ -298,21 +278,20 @@ public class SelfPenisMouth {
 			SexPace.SUB_EAGER) {
 		@Override
 		public String getActionTitle() {
-			return "Eager autofellatio";
+			return "Жадное аутофелляцио";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Eagerly suck your [npc.cock+].";
+			return "Жадно посасывай свой [npc.cock+].";
 		}
 		@Override
 		public String getDescription() {
 			UtilText.nodeContentSB.setLength(0);
 
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"Eagerly wrapping [npc.her] [npc.lips+] around [npc.her] [npc.cock+], [npc.name] [npc.verb(start)] rapidly bobbing [npc.her] head up and down as [npc.she] [npc.verb(give)] [npc.herself] an enthusiastic blowjob.",
-					"With a muffled, [npc.moan+], [npc.name] quickly [npc.verb(start)] bobbing [npc.her] head up and down,"
-							+ " greedily wrapping [npc.her] [npc.lips+] around [npc.her] [npc.cock+] as [npc.she] [npc.verb(give)] [npc.herself] head.",
-					"Rapidly bobbing [npc.her] head up and down, [npc.name] desperately [npc.verb(wrap)] [npc.her] [npc.lips+] around [npc.her] [npc.cock+] as [npc.she] [npc.verb(give)] [npc.herself] an eager blowjob."));
+					"Жадно обхватив [npc.her] [npc.lips+] вокруг [npc.her] [npc.cock+], [npc.name] [npc.verb(start)] стремительно двигает [npc.her] головой вверх-вниз, пока [npc.she] [npc.verb(give)] [npc.herself] страстный минет.",
+					"С приглушенным, [npc.moan+], [npc.name] быстро [npc.verb(start)] двигает [npc.her] головой вверх-вниз, жадно обхватывая [npc.her] [npc.lips+] вокруг [npc.her] [npc.cock+], пока [npc.she] [npc.verb(give)] [npc.herself] голову.",
+					"Стремительно двигая [npc.her] головой вверх-вниз, [npc.name] отчаянно [npc.verb(wrap)] [npc.her] [npc.lips+] вокруг [npc.her] [npc.cock+], пока [npc.she] [npc.verb(give)] [npc.herself] нетерпеливый минет."));
 			
 			return UtilText.nodeContentSB.toString();
 		}
@@ -328,11 +307,11 @@ public class SelfPenisMouth {
 			SexParticipantType.SELF) {
 		@Override
 		public String getActionTitle() {
-			return "Stop autofellatio";
+			return "Прекратить аутофелляцио";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Take your [npc.cock+] out of your mouth and stop giving yourself a blowjob.";
+			return "Вынь свой [npc.cock+] изо рта и перестань отсасывать самому себе.";
 		}
 		@Override
 		public String getDescription() {
@@ -341,16 +320,15 @@ public class SelfPenisMouth {
 			switch(Main.sex.getSexPace(Main.sex.getCharacterPerformingAction())) {
 				case DOM_ROUGH:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"Roughly forcing [npc.her] [npc.cock+] down [npc.her] throat one last time, [npc.name] then [npc.verb(pull)] [npc.her] head back, putting a quick end to [npc.her] autofellatio.",
+							"Грубо протолкнув [npc.her] [npc.cock+] в [npc.her] горло в последний раз, [npc.name] затем [npc.verb(pull)] [npc.her] голову назад, быстро завершая [npc.her] аутофелляцио.",
 
-							"Slamming [npc.her] [npc.face] into [npc.her] own groin, [npc.name] [npc.verb(force)] [npc.her] [npc.cock+] deep down [npc.her] throat,"
-									+ " before pulling completely back and putting an end to [npc.her] autofellatio."));
+							"Slamming [npc.her] [npc.face] into [npc.her] own groin, [npc.name] [npc.verb(force)] [npc.her] [npc.cock+] deep down [npc.her] throat, before pulling completely back and putting an end to [npc.her] autofellatio."));
 					break;
 				default:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"Sliding [npc.her] [npc.cock+] out of [npc.her] mouth, [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(put)] an end to [npc.her] autofellatio.",
+							"Высунув [npc.her] [npc.cock+] изо рта [npc.her], [npc.name] [npc.verb(let)] [npc.a_moan+], словно [npc.she] [npc.verb(put)] завершение [npc.her].",
 
-							"With [npc.a_moan+], [npc.name] [npc.verb(pull)] [npc.her] head back, sliding [npc.her] [npc.cock+] fully out of [npc.her] mouth."));
+							"С [npc.a_moan+], [npc.name] [npc.verb(pull)] [npc.her] голову назад, полностью вытягивая [npc.her] [npc.cock+] изо рта [npc.her]."));
 					break;
 			}
 			

@@ -34,11 +34,11 @@ public class RoseHandHolding {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Hand massage";
+			return "Массаж рук";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Massage Rose's hands.";
+			return "Массировать руки Роуз.";
 		}
 		@Override
 		public boolean isBaseRequirementsMet() {
@@ -47,10 +47,10 @@ public class RoseHandHolding {
 		@Override
 		public String getDescription() {
 			return UtilText.returnStringAtRandom(
-					"Taking Rose's hand in one of yours, you gently press the [pc.fingers+] of your other hand down against the back of hers, rubbing and massaging her delicate skin.",
-					"You take hold of Rose's hand, and with slow, deliberate movements, start massaging giving her a gentle massage.",
-					"Holding Rose's hand in yours, you start to apply a gentle pressure, revelling in the feeling of her perfect, unblemished skin as you give her a loving massage.",
-					"With a soft, tender care, you start massaging Rose's hands, letting out little [pc.moans] as you feel the softness of her angelic skin.");
+					"Взяв руку Роуз в одну свою ладонь, вы осторожно прижимаете [pc.fingers+] другой руки к тыльной стороне её ладони, растирая и массируя её нежную кожу.",
+					"Вы берете Роуз за руку и медленными, размеренными движениями начинаете делать ей нежный массаж.",
+					"Сжимая руку Роуз в своей, вы начинаете слегка надавливать, наслаждаясь ощущением её идеальной, безупречной кожи во время ласкового массажа.",
+					"С мягкой, нежной заботой вы начинаете массировать руки Роуз, издавая тихие [pc.moans], когда чувствуете мягкость её ангельской кожи.");
 		}
 		@Override
 		public void applyEffects() {
@@ -70,11 +70,11 @@ public class RoseHandHolding {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Interlock fingers";
+			return "Переплести пальцы";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Interlock your fingers with Rose's.";
+			return "Переплетите свои пальцы с пальцами Роуз.";
 		}
 		@Override
 		public boolean isBaseRequirementsMet() {
@@ -83,10 +83,10 @@ public class RoseHandHolding {
 		@Override
 		public String getDescription() {
 			return UtilText.returnStringAtRandom(
-					"Taking Rose's hand in yours, you intertwine your fingers between hers, and with a gentle pressure, you lewdly hold her hand.",
-					"In a single, deliberate movement, you grasp Rose's hand in yours, sliding your fingers between hers as you fully penetrate the inviting gaps between her digits.",
-					"Letting out a determined [pc.moan], you slide your fingers between Rose's, squeezing down on her hand as you show her just how naughty you are.",
-					"With a lewd thrust of your [pc.arm], you grasp Rose's perfect hand in yours, quickly interlocking your fingers with hers as you struggle to contain a desperate gasp.");
+					"Взяв руку Роуз в свою, вы переплетаете свои пальцы с её, и с легким нажимом похотливо сжимаете её ладонь.",
+					"Одним уверенным движением вы захватываете руку Роуз, просовывая свои пальцы между её пальцами и полностью заполняя манящие промежутки между ними.",
+					"Издав решительный [pc.moan], ты просовываешь свои пальцы между пальцами Роуз, сжимая её ладонь и показывая ей, насколько ты развратен.",
+					"С похотливым [pc.arm] ты обхватываешь идеальную руку Роуз своей, быстро переплетая свои пальцы с её, изо всех сил стараясь сдержать отчаянный вздох.");
 		}
 		@Override
 		public void applyEffects() {
@@ -106,11 +106,11 @@ public class RoseHandHolding {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Nail rub";
+			return "Почесывание ногтями";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Gently rub Rose's nails.";
+			return "Мягко погладь ногти Роуз.";
 		}
 		@Override
 		public boolean isBaseRequirementsMet() {
@@ -119,10 +119,10 @@ public class RoseHandHolding {
 		@Override
 		public String getDescription() {
 			return UtilText.returnStringAtRandom(
-					"Rose's nails are painted a very soft shade of pink, and you find yourself unable to resist sliding your fingertips up over their flawless surface.",
-					"In an incredible display of lewdness, you slide each of your fingertips over the corresponding fingernail on Rose's hand, sighing contentedly to yourself as you feel her perfect manicure.",
-					"Rose wasn't lying when she said she takes good care of her hands, and as you slide your fingertips over her perfectly-manicured nails, you wonder just how long it took her to get them looking so good.",
-					"The soft shade of pink that Rose has painted her fingernails perfectly compliments the pale tone of her skin, and as you rub your fingers up and down their smooth lengths, you marvel at just how perfect they are.");
+					"Ногти Роуз накрашены нежно-розовым цветом, и ты не можешь устоять перед желанием провести кончиками пальцев по их безупречной поверхности.",
+					"С невероятным развратом ты проводишь каждым своим пальцем по соответствующему ногтю на руке Роуз, довольно вздыхая и наслаждаясь её идеальным маникюром.",
+					"Роуз не лгала, когда говорила, что тщательно ухаживает за руками, и, проводя кончиками пальцев по её безупречному маникюру, ты гадаешь, сколько же времени у неё ушло на то, чтобы они стали такими красивыми.",
+					"Нежно-розовый цвет, которым Роуз накрасила ногти, идеально дополняет бледный тон её кожи, и когда ты проводишь пальцами вверх и вниз по их гладкой поверхности, ты поражаешься тому, насколько они совершенны.");
 		}
 		@Override
 		public void applyEffects() {
@@ -142,11 +142,11 @@ public class RoseHandHolding {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Stroke fingers";
+			return "Поглаживание пальцев";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Gently stroke Rose's fingers.";
+			return "Мягко погладь пальцы Роуз.";
 		}
 		@Override
 		public boolean isBaseRequirementsMet() {
@@ -155,10 +155,10 @@ public class RoseHandHolding {
 		@Override
 		public String getDescription() {
 			return UtilText.returnStringAtRandom(
-					"Grasping one of Rose's slender, feminine fingers in your hand, you slowly slide your fingertips up and down its length, marvelling at how soft her perfect, unblemished skin is.",
-					"With a determined thrust of your hand, you grasp Rose's fingers, sliding your own digits up and down over their lengths as you fail to contain an ecstatic [pc.moan].",
-					"Sliding your fingers over Rose's, you let out a little whimper in excitement as you start stroking her soft, angelic skin.",
-					"Running your fingertips up and down the length of each of Rose's slender, feminine fingers, you struggle to comprehend just how perfectly formed her hands truly are.");
+					"Сжимая в руке один из тонких женских пальцев Роуз, вы медленно ведете кончиками пальцев вверх и вниз по его длине, поражаясь тому, насколько мягкая у нее идеальная, безупречная кожа.",
+					"Решительным движением руки вы обхватываете пальцы Роуз, проводя своими пальцами вверх и вниз по их длине и не в силах сдержать экстатический [pc.moan].",
+					"Скользя своими пальцами по пальцам Роуз, вы издаете тихий скулящий стон от возбуждения, начиная ласкать ее мягкую, ангельскую кожу.",
+					"Проводя кончиками пальцев вверх и вниз по каждому из тонких женских пальцев Роуз, вы пытаетесь осознать, насколько же идеально сформированы ее руки.");
 		}
 		@Override
 		public void applyEffects() {
@@ -178,11 +178,11 @@ public class RoseHandHolding {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Lick palms";
+			return "Лизать ладони";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Lick Rose's palms.";
+			return "Лизать ладони Роуз.";
 		}
 		@Override
 		public boolean isBaseRequirementsMet() {
@@ -191,10 +191,10 @@ public class RoseHandHolding {
 		@Override
 		public String getDescription() {
 			return UtilText.returnStringAtRandom(
-					"Lifting one of Rose's hands up to your mouth, you press your [pc.lips+] against the delicate skin of her palm, before sliding your [pc.tongue] up over her soft skin.",
-					"Raising Rose's hand to your mouth, you deliver a long, slow lick to her soft palm, letting out a lewd [pc.moan] as you get a faint taste of salty sweat mixed in with her feminine scent.",
-					"Taking hold of Rose's hand, you lift it up to your mouth before softly licking and lapping at her delicate palm. The gentle taste of sweat and feminine perfume hits your [pc.tongue], and you fail to contain a shuddering [pc.moan].",
-					"With a little [pc.moan], you raise Rose's angelic hand to your [pc.lips+], before delivering a slow, loving lick to her soft palm.");
+					"Поднеся одну из рук Роуз к своему рту, вы прижимаете свой [pc.lips+] к нежной коже ее ладони, а затем ведете своим [pc.tongue] по ее мягкой коже.",
+					"Поднеся руку Роуз к губам, вы проводите долгим, медленным языком по ее мягкой ладони, издавая похотливый [pc.moan], когда ощущаете слабый вкус соленого пота, смешанного с ее женским ароматом.",
+					"Взяв руку Роуз, вы подносите ее к своему рту, а затем мягко слизываете влагу с ее нежной ладони. Легкий вкус пота и женских духов бьет вам в [pc.tongue], и вы не можете сдержать дрожащий [pc.moan].",
+					"С легким [pc.moan] вы подносите ангельскую руку Роуз к своему [pc.lips+], а затем нежно и с любовью слизываете влагу с ее мягкой ладони.");
 		}
 		@Override
 		public void applyEffects() {
@@ -214,22 +214,15 @@ public class RoseHandHolding {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Suck fingers";
+			return "Сосать пальцы";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Start sucking Rose's fingers.";
+			return "Начать сосать пальцы Роуз.";
 		}
 		@Override
 		public String getDescription() {
-			return "In an incredible display of the sort of extreme lewdness usually confined to only the most outrageous of online-publications, you resolutely commit to taking things to the next level."
-					+ " Grasping Rose's angelic, feminine hand in yours, you slowly lift it to your mouth."
-					+ " Sensing what you're about to do, and in sheer anticipation of witnessing the result of the outrageous course of action you've embarked upon, Rose collapses against the wall for support,"
-						+ " moaning and panting as her fingers draw ever nearer to your cavernous maw."
-					+ "<br/><br/>"
-					+ "As your hot breath falls on her sensitive fingertips, you briefly ponder if perhaps you've taken this a little too far, but there seems to be no easy way out now,"
-						+ " and you resolutely thrust Rose's fingers past your lips and into your mouth."
-					+ " Thus relegating yourself to the ranks of the lewdest of sexual deviants, and knowing that you'll never quite be the same person as you once were, you proceed to then start sucking on Rose's fingers.";
+			return "Проявляя невероятную степень похоти, обычно присущую лишь самым скандальным онлайн-изданиям, вы решительно переходите на новый уровень. Сжав в своей руке ангельскую женскую ладонь Роуз, вы медленно подносите её к своему рту. Предчувствуя ваши намерения и в нетерпении ожидая результата этого безумного поступка, Роуз прислоняется к стене, чтобы не упасть, стоная и тяжело дыша, пока её пальцы всё ближе подбираются к вашей необъятной пасти.<br/><br/>Когда ваше горячее дыхание касается её чувствительных кончиков пальцев, вы на мгновение задумываетесь, не зашли ли вы слишком далеко, но легкого пути назад уже нет, и вы решительно проталкиваете пальцы Роуз сквозь губы себе в рот. Тем самым вы окончательно причисляете себя к рядам самых развратных сексуальных девиантов, понимая, что уже никогда не будете прежним, и начинаете жадно сосать пальцы Роуз.";
 		}
 	};
 	
@@ -246,19 +239,19 @@ public class RoseHandHolding {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Gentle suck";
+			return "Нежно сосать";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Gently suck Rose's fingers.";
+			return "Нежно сосать пальцы Роуз.";
 		}
 		@Override
 		public String getDescription() {
 			return UtilText.returnStringAtRandom(
-					"You gently suck and kiss Rose's feminine digits, desperately running your tongue over her slender fingers as you taste her gentle combination of sweat and feminine perfume.",
-					"Sucking gently on Rose's perfect fingers, you run your tongue around each of her digits in turn, letting out [pc.moans+] as you orally pleasure her hand.",
-					"Determined to give Rose a good time, you gently suck and kiss at each of her feminine fingers, revelling in the feeling of being able to experience such a devious pleasure.",
-					"Wrapping your [pc.lips+] around Rose's angelic fingers, you gently suck and kiss at her perfectly-formed digits, making little [pc.moaning] noises as you notice the faint taste of her sweat hitting the back of your tongue.");
+					"Вы нежно посасываете и целуете женские пальчики Роуз, отчаянно проводя языком по её тонким пальцам и наслаждаясь их мягким вкусом, в котором смешались пот и женский парфюм.",
+					"Нежно посасывая идеальные пальцы Роуз, вы по очереди обводите языком каждый из её пальчиков, издавая [pc.moans+], пока доставляете оральное удовольствие её руке.",
+					"Решив устроить Роуз незабываемое времяпрепровождение, ты нежно посасываешь и целуешь каждый её женственный пальчик, наслаждаясь ощущением столь порочного удовольствия.",
+					"Облепив [pc.lips+] вокруг ангельских пальцев Роуз, ты нежно посасываешь и целуешь её безупречные пальчики, издавая тихие [pc.moaning] звуки, когда ощущаешь на языке едва уловимый вкус её пота.");
 		}
 	};
 	
@@ -275,19 +268,19 @@ public class RoseHandHolding {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Intense suck";
+			return "Интенсивно сосать";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Intensely suck Rose's fingers.";
+			return "Интенсивно посасывать пальцы Роуз.";
 		}
 		@Override
 		public String getDescription() {
 			return UtilText.returnStringAtRandom(
-					"Before you know what you're doing, you've lost yourself to the devious pleasure of sucking Rose's fingers, and with a lewd cry, you desperately pick up the pace of your intense digit-sucking.",
-					"With an intense sucking motion, you press your [pc.lips+] down around Rose's fingers before starting to frantically kiss and lick at her delicate digits.",
-					"You decide to pick up the pace of your lewd finger-sucking, and with a desperate cry, you greedily swirl your tongue around each of her digits in turn.",
-					"Rose's fingers are soft and warm in your mouth, and, not being able to hold yourself back any longer, you frantically start sucking and kissing her perfectly-formed digits.");
+					"Прежде чем ты успеваешь опомниться, ты полностью растворяешься в порочном удовольствии от посасывания пальцев Роуз и с похотливым криком отчаянно ускоряешь темп своего интенсивного сосания.",
+					"Интенсивным сосательным движением ты сжимаешь свой [pc.lips+] вокруг пальцев Роуз, после чего начинаешь неистово целовать и лизать её нежные пальчики.",
+					"Ты решаешь ускорить темп своего похотливого сосания пальцев и с отчаянным криком жадно обводишь языком каждый её пальчик по очереди.",
+					"Пальцы Роуз мягкие и теплые у тебя во рту, и, больше не в силах сдерживаться, ты неистово начинаешь посасывать и целовать её безупречные пальчики.");
 		}
 	};
 	
@@ -304,17 +297,16 @@ public class RoseHandHolding {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Stop sucking";
+			return "Перестать сосать";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Stop sucking Rose's fingers.";
+			return "Перестать посасывать пальцы Роуз.";
 		}
 		@Override
 		public String getDescription() {
 			return UtilText.returnStringAtRandom(
-					"Not being able to cope with just how lewd your finger-sucking has become, you slide Rose's soft, feminine digits out of your mouth."
-					+ " A solitary strand of slimy saliva slowly slides out from your mouth, connecting your lips to Rose's fingertips for brief moment before breaking and falling to the floor beneath you.");
+					"Не в силах больше справляться с тем, насколько похотливым стало твое посасывание пальцев, ты вытягиваешь из рта мягкие, женственные пальчики Роуз. Одинокая нить вязкой слюны медленно тянется из твоего рта, на мгновение соединяя твои губы с кончиками пальцев Роуз, прежде чем порваться и упасть на пол под вами.");
 		}
 	};
 	
@@ -333,7 +325,7 @@ public class RoseHandHolding {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Moans";
+			return "Стоны";
 		}
 		@Override
 		public String getActionDescription() {
@@ -344,18 +336,18 @@ public class RoseHandHolding {
 			UtilText.nodeContentSB.setLength(0);
 			
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"Rose lets out a desperate cry, ",
-					"With an extremely lewd moan, Rose cries out, ",
-					"Desperately moaning, Rose locks her [rose.eyes+] with yours, ",
-					"With a desperate, shuddering moan, Rose cries out, "));
+					"Роуз издает отчаянный крик, ",
+					"С невероятно похотливым стоном Роуз вскрикивает, ",
+					"Отчаянно стоная, Роуз сцепляет свои [rose.eyes+] с твоими, ",
+					"С отчаянным, дрожащим стоном Роуз вскрикивает, "));
 			
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"[rose.speech(~Aah!~ Yes! Don't stop!)]",
-					"[rose.speech(Yes! Yes! ~Aah!~ Take me!)]",
-					"[rose.speech(Oh yes! ~Aah!~ Keep going!)]",
-					"[rose.speech(Oh! ~Aah!~ Keep going! Yes!)]",
-					"[rose.speech(~Aah!~ Yes, Yes, Yes!!!)]",
-					"[rose.speech(~Aah!~ Oh yes! Keep going! ~Aah!~)]"));
+					"[rose.speech(~Аах!~ Да! Не останавливайся!)]",
+					"[rose.speech(Да! Да! ~Аах!~ Возьми меня!)]",
+					"[rose.speech(О да! ~Аах!~ Продолжай!)]",
+					"[rose.speech(О! ~Аах!~ Продолжай! Да!)]",
+					"[rose.speech(~Аах!~ Да, да, да!!!)]",
+					"[rose.speech(~Аах!~ О да! Продолжай! ~Аах!~)]"));
 			
 			return UtilText.nodeContentSB.toString();
 		}
@@ -374,7 +366,7 @@ public class RoseHandHolding {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Panting";
+			return "Тяжелое дыхание";
 		}
 		@Override
 		public String getActionDescription() {
@@ -383,10 +375,10 @@ public class RoseHandHolding {
 		@Override
 		public String getDescription() {
 			return UtilText.returnStringAtRandom(
-					"Rose seems unable to do anything but pant and [rose.moan] as you carry on stimulating her hands.",
-					"Your expert hand-holding skills prove to be too much for Rose, who's unable to do anything but pant from sheer arousal.",
-					"Rose's eyes roll up into the back of her head for a moment, and as her tongue lolls out of her mouth, she lets out a long, desperate moan.",
-					"With a desperate [rose.moan], Rose starts panting and sighing, and you see her [rose.tongue+] lolling out of her mouth as she struggles to deal with the amount of pleasure you're giving to her.");
+					"Кажется, Роуз не может делать ничего, кроме как тяжело дышать и [rose.moan], пока ты продолжаешь ласкать её ладони.",
+					"Твоё мастерство в удержании её рук оказывается слишком сильным для Роуз, которая не может ничего делать, кроме как прерывисто дышать от дикого возбуждения.",
+					"Глаза Роуз на мгновение закатываются, и, когда её язык вываливается изо рта, она издает долгий, отчаянный стон.",
+					"С отчаянным [rose.moan] Роуз начинает тяжело дышать и вздыхать, и ты видишь, как её [rose.tongue+] вываливается изо рта, пока она пытается справиться с тем количеством удовольствия, которое ты ей даришь.");
 		}
 	};
 	
@@ -403,7 +395,7 @@ public class RoseHandHolding {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Brace";
+			return "Опереться";
 		}
 		@Override
 		public String getActionDescription() {
@@ -412,10 +404,10 @@ public class RoseHandHolding {
 		@Override
 		public String getDescription() {
 			return UtilText.returnStringAtRandom(
-					"Rose partially collapses against the table-top next to her, desperately bracing herself as she starts to go weak at the knees.",
-					"With a little [rose.moan], Rose leans against the wall next to her, bracing herself as she struggles to cope with her intense arousal.",
-					"Rose rests her back against the wall next to her, clearly unable to stand of her own volition as she lets out a shuddering [rose.moan].",
-					"Leaning against the nearby table-top, Rose uses the piece of furniture for support, clearly struggling to remain upright due to the overwhelming pleasure she's receiving from your expert hand-holding skills.");
+					"Роуз частично оседает на стол рядом с собой, отчаянно опираясь на него, когда её колени начинают подкашиваться.",
+					"С легким [rose.moan] Роуз прислоняется к стене рядом, стараясь удержать равновесие и справиться с интенсивным возбуждением.",
+					"Роза прислоняется спиной к стене рядом с собой, явно не в силах стоять самостоятельно, и издает дрожащий [rose.moan].",
+					"Опираясь на стоящий рядом стол, Роза использует мебель как опору; она явно с трудом удерживает равновесие из-за всепоглощающего наслаждения, которое дарят ей твои мастерские навыки игры пальцами.");
 		}
 	};
 	
@@ -432,7 +424,7 @@ public class RoseHandHolding {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Slide fingers";
+			return "Скользить пальцами";
 		}
 		@Override
 		public String getActionDescription() {
@@ -441,10 +433,10 @@ public class RoseHandHolding {
 		@Override
 		public String getDescription() {
 			return UtilText.returnStringAtRandom(
-					"With a lewd [rose.moan], Rose starts sliding her fingering in and out of your mouth, causing you to experience levels of lewdness you couldn't imagine even in your wildest dreams.",
-					"Rose starts slowly sliding her fingers in and out of your mouth, and you let out a desperate whine as you feel her soft skin rubbing over your [pc.lips+].",
-					"Sliding her fingers in and out of your mouth, Rose swirls them around your tongue a little before letting out a desperate [rose.moan].",
-					"In an unparallelled display of outrageous sexual deviancy, Rose starts slowly sliding her fingers in and out of your mouth, allowing you to feel her unbelievably soft skin rubbing back and forth past your [pc.lips+].");
+					"С похотливым [rose.moan] Роза начинает вводить и выводить пальцы в твоем рту, заставляя тебя испытывать такой уровень разврата, который ты не мог вообразить даже в самых смелых мечтах.",
+					"Роза начинает медленно вводить и выводить пальцы в твоем рту, и ты издаешь отчаянный скулящий звук, чувствуя, как ее мягкая кожа трется о твой [pc.lips+].",
+					"Вводя и выводя пальцы в твоем рту, Роза слегка закручивает их вокруг твоего языка, после чего издает отчаянный [rose.moan].",
+					"В беспрецедентном проявлении вопиющей сексуальной девиации Роза начинает медленно вводить и выводить пальцы в твоем рту, позволяя тебе чувствовать, как ее невероятно мягкая кожа скользит туда-сюда по твоему [pc.lips+].");
 		}
 	};
 	
@@ -482,8 +474,7 @@ public class RoseHandHolding {
 
 		@Override
 		public String getDescription() {
-			return "With a satisfied sigh, Rose disentangles herself from your clutches, and, staring lovingly into your eyes, excuses herself,"
-					+ " [rose.speech(I don't think I can take any more right now! I need to get some rest, but we definitely need to do this again some time!)]";
+			return "С удовлетворенным вздохом Роза высвобождается из твоих объятий и, нежно глядя тебе в глаза, извиняется: [rose.speech(Думаю, я больше не выдержу! Мне нужно немного отдохнуть, но нам определенно нужно повторить это как-нибудь еще!)]";
 		}
 
 		@Override
@@ -507,21 +498,20 @@ public class RoseHandHolding {
 		@Override
 		public String getActionTitle() {
 			if(Main.sex.isSpectator(Main.game.getPlayer()) && Main.sex.getInitialSexManager().isHidden(Main.game.getPlayer())) {
-				return "Stop watching";
+				return "Перестать смотреть";
 			}
 			return Main.sex.isMasturbation()
-					?"Stop masturbating"
-					:"Stop sex";
+					?"Прекратить мастурбацию"
+					:"Прекратить секс";
 		}
 		@Override
 		public String getActionDescription() {
 			if(Main.sex.isSpectator(Main.game.getPlayer()) && Main.sex.getInitialSexManager().isHidden(Main.game.getPlayer())) {
-				return "Back out and stop watching the sex scene unfold before you."
-						+ "<br/>This will still [style.boldSex(apply all applicable effects)] to the other sex participants as though the sex scene had fully taken place.";
+				return "Отступить и перестать наблюдать за разворачивающейся перед тобой сценой секса.<br/>Это все равно [style.boldSex(применит все соответствующие эффекты)] к остальным участникам, как если бы сцена секса произошла полностью.";
 			}
 			return Main.sex.isMasturbation()
-					?"Put an end to your masturbation session."
-					:"Stop having sex with [npc2.name].";
+					?"Закончить сеанс мастурбации."
+					:"Перестать заниматься сексом с [npc2.name].";
 		}
 		@Override
 		public boolean isBaseRequirementsMet() {
@@ -530,7 +520,7 @@ public class RoseHandHolding {
 		}
 		@Override
 		public String getDescription() {
-			return "Having had enough, you [pc.step] back and stop having sex...";
+			return "Насладившись сполна, ты [pc.step] назад и прекращаешь секс...";
 		}
 		@Override
 		public SexParticipantType getParticipantType() {

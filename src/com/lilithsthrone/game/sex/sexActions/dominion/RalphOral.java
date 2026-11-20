@@ -56,12 +56,12 @@ public class RalphOral {
 		
 		@Override
 		public String getActionTitle() {
-			return "Start sucking";
+			return "Начать сосать";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Take the head of Ralph's gigantic horse-cock into your mouth.";
+			return "Взять головку гигантского конского члена Ralph в рот.";
 		}
 
 		@Override
@@ -74,22 +74,17 @@ public class RalphOral {
 		public String getDescription() {
 			UtilText.nodeContentSB.setLength(0);
 			
-			UtilText.nodeContentSB.append("With Ralph's cock being as large as it is, you don't even need to lean forwards in order to start earning your discount."
-					+ " Opening your mouth, you simply move your lips down to kiss the flared head of his horse-like shaft.");
+			UtilText.nodeContentSB.append("Поскольку член Ralph настолько огромен, тебе даже не нужно наклоняться вперед, чтобы начать получать свою скидку. Просто открыв рот, ты опускаешь губы, чтобы поцеловать расширенную головку его лошадиного ствола.");
 			
 			if(Main.sex.hasLubricationTypeFromAnyone(Main.sex.getCharacterPerformingAction(), SexAreaPenetration.PENIS, LubricationType.PRECUM))
-				UtilText.nodeContentSB.append(" As the tip of your tongue slides over his bumpy equine urethra, a dollop of salty precum leaks into your mouth."
-						+ " You let out a surprised moan as the salty liquid drips past your lips");
+				UtilText.nodeContentSB.append(" Когда кончик твоего языка скользит по его бугристой лошадиной уретре, в рот попадает капля соленой предэякулята. Ты издаешь удивленный стон, когда соленая жидкость стекает по твоим губам.");
 			else
-				UtilText.nodeContentSB.append(" As the tip of your tongue slides over his bumpy equine urethra, you feel the heat of his bestial cock radiating across your face."
-						+ " You let out a little moan as you anticipate sucking his delicious cock");
+				UtilText.nodeContentSB.append(" Когда кончик твоего языка скользит по его бугристой лошадиной уретре, ты чувствуешь жар его звериного члена, исходящий прямо в лицо. Ты издаешь тихий стон в предвкушении того, как будешь сосать его восхитительный член.");
 			
 			if(SexFlags.customerAtCounter)
-				UtilText.nodeContentSB.append(", only too late remembering that there's a customer on the other side of the counter!<br/>"
-						+ "Eager to make up for your mistake, you quickly rock forwards, stretching your jaw open wide as you take the hot, throbbing cock into your mouth."
-						+ " In your haste, you end up making even more noise, and you hear Ralph hurriedly offering the customer a portion of your discount to keep this a secret.");
+				UtilText.nodeContentSB.append(", лишь слишком поздно вспомнив, что по ту сторону прилавка стоит покупатель!<br/>Стремясь искупить свою ошибку, ты быстро подаешься вперед, широко раскрывая челюсть и принимая горячий, пульсирующий член в рот. В спешке ты издаешь еще больше шума, и слышишь, как Ralph поспешно предлагает покупателю часть твоей скидки, чтобы сохранить это в секрете.");
 			else
-				UtilText.nodeContentSB.append(", which is quickly muffled as you stretch your jaw open wide and take the hot, throbbing cock into your mouth.");
+				UtilText.nodeContentSB.append(", который быстро приглушается, когда ты широко раскрываешь челюсть и берешь горячий, пульсирующий член в рот.");
 			
 			
 			return UtilText.nodeContentSB.toString();
@@ -116,12 +111,12 @@ public class RalphOral {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Stay quiet";
+			return "Затаиться";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Sit perfectly still and don't make a sound. This will prevent the customer at the counter from knowing that you're here.";
+			return "Сиди совершенно неподвижно и не издавай ни звука. Это не даст покупателю за прилавком понять, что ты здесь.";
 		}
 
 		@Override
@@ -131,8 +126,7 @@ public class RalphOral {
 
 		@Override
 		public String getDescription() {
-			return "You sit perfectly still, trying your best not to make a sound as Ralph finishes dealing with the customer above you."
-					+ " A slimy stream of saliva and precum drools down from your stretched lips, and you silently slide forwards a little more as you try to use Ralph's cock to push the liquid back down your throat.";
+			return "Ты сидишь совершенно неподвижно, изо всех сил стараясь не издавать ни звука, пока Ralph заканчивает возиться с клиентом над тобой. С твоих растянутых губ стекает склизкая струйка слюны и предэякулята, и ты бесшумно подаешься вперед чуть сильнее, пытаясь протолкнуть эту жидкость обратно в глотку с помощью члена Ralph.";
 		}
 	};
 	
@@ -149,12 +143,12 @@ public class RalphOral {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Silently tease";
+			return "Тихо дразнить";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Tease Ralph's cock as you try to get him to break his composure in front of the customer.";
+			return "Дразнить член Ralph, пытаясь заставить его потерять самообладание на глазах у клиента.";
 		}
 
 		@Override
@@ -164,11 +158,7 @@ public class RalphOral {
 
 		@Override
 		public String getDescription() {
-			return "As Ralph finishes dealing with the customer above you, you decide to have a little fun."
-					+ " Pulling back, you gently run your tongue around the flared head of his equine cock, teasing the tip over his bumpy urethra."
-					+ " A slimy stream of saliva and precum drools down from your stretched lips, and you reach up to smear the natural lubricant up and down his shaft, gently stroking his balls as you carry on teasing his head with your tongue."
-					+ " You grin mischievously as you hear Ralph struggling to maintain his composure in front of the customer, and as you hear him tactfully directing the customer to look at the other side of the shop,"
-					+ " he slams his cock forwards down your throat, letting you know that he's clearly not amused by your little game...";
+			return "Когда Ralph заканчивает возиться с клиентом над тобой, ты решаешь немного развлечься. Отстранившись, ты нежно проводишь языком вокруг расширенной головки его лошадиного члена, дразня кончик уретры. С твоих растянутых губ стекает склизкая струйка слюны и предэякулята, и ты тянешься вверх, чтобы размазать естественную смазку вверх и вниз по его стволу, мягко поглаживая яички, пока продолжаешь дразнить головку языком. Ты озорно ухмыляешься, слыша, как Ralph изо всех сил старается сохранить невозмутимость перед клиентом, и когда он тактично просит клиента посмотреть на другую сторону лавки, он с силой вгоняет свой член тебе в глотку, давая понять, что твоя маленькая игра его явно не забавляет...";
 		}
 	};
 	
@@ -185,30 +175,24 @@ public class RalphOral {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Suck cock";
+			return "Сосать член";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Keep sucking Ralph's cock.";
+			return "Продолжать сосать член Ralph.";
 		}
 
 		@Override
 		public String getDescription() {
 			UtilText.nodeContentSB.setLength(0);
 			
-			UtilText.nodeContentSB.append("You keep bobbing your head back and forth as you ram the wide, flared head of Ralph's equine member down your throat."
-					+ " His thick black shaft shines and glistens under the shop's lighting as your lips spread a slimy mixture of precum and saliva up and down its length.");
+			UtilText.nodeContentSB.append("Ты продолжаешь ритмично кивать головой вперед-назад, заталкивая широкую, расширенную головку лошадиного члена Ralph глубоко себе в глотку. Его толстый черный ствол блестит и лоснится под светом лавки, пока твои губы размазывают скользкую смесь предэякулята и слюны по всей его длине.");
 			
 			if(SexFlags.customerAtCounter)
-				UtilText.nodeContentSB.append(" A lewd squelching noise echoes around you in your little cramped box, which, combined with the creaking of the floorboards as you rock back and forth,"
-						+ " is making a surprising amount of noise."
-						+ " You got so carried away with sucking the delicious, fat cock in front of you that you completely forgot there was a customer above you, and you hear Ralph desperately offering him a portion of your discount"
-						+ " as he bribes him to keep quiet.");
+				UtilText.nodeContentSB.append(" В твоей тесной каморке эхом отдаются похотливые хлюпающие звуки, которые в сочетании со скрипом половиц под твоими раскачивающимися движениями создают удивительно много шума. Ты так увлеклась сосанием этого восхитительного, жирного члена перед собой, что совершенно забыла о покупателе наверху, и слышишь, как Ralph отчаянно предлагает ему часть твоей скидки, пытаясь подкупить его, чтобы тот не шумел.");
 			else
-				UtilText.nodeContentSB.append(" Every time you push forwards, you feel Ralph gently bucking his hips as he helps to drive his gigantic rod into your facial fuck-hole."
-						+ " A lewd squelching noise echoes around you in your little cramped box, which, combined with the creaking of the floorboards as you rock back and forth,"
-						+ " is making a surprising amount of noise, and you're glad that there are no customers nearby to hear you.");
+				UtilText.nodeContentSB.append(" Каждый раз, когда ты подаешься вперед, ты чувствуешь, как Ralph слегка подбрасывает бедрами, помогая вбивать свой гигантский ствол в твое отверстие для минета. В твоей тесной каморке эхом отдаются похотливые хлюпающие звуки, которые в сочетании со скрипом половиц под твоими раскачивающимися движениями создают удивительно много шума, и ты рада, что поблизости нет покупателей, которые могли бы тебя услышать.");
 			
 			return UtilText.nodeContentSB.toString();
 		}
@@ -234,28 +218,24 @@ public class RalphOral {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Fondle balls";
+			return "Ласкать яички";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Pay some attention to Ralph's balls.";
+			return "Удели немного внимания яичкам Ralph.";
 		}
 
 		@Override
 		public String getDescription() {
 			UtilText.nodeContentSB.setLength(0);
 			
-			UtilText.nodeContentSB.append("As you suck Ralph's hot black horse-cock, you remember what he said earlier about giving his balls some attention."
-					+ " Not wanting to disappoint him, you somewhat awkwardly, considering you have almost no room to move, reach up to the heavy sack hanging at the base of his throbbing shaft."
-					+ " You gently rub and squeeze his huge, cum-filled testicles, and you find yourself letting out an involuntary muffled moan as you imagine them emptying themselves down your throat.");
+			UtilText.nodeContentSB.append("Пока ты сосешь горячий черный конский член Ralph, ты вспоминаешь его недавние слова о том, что стоит уделить внимание его яйцам. Не желая его разочаровывать, ты — довольно неуклюже, учитывая почти полное отсутствие места для маневра — тянешься вверх к тяжелому мешочку, свисающему у основания его пульсирующего ствола. Ты нежно растираешь и сжимаешь его огромные, полные спермы яички, и ловишь себя на том, что невольно издаешь приглушенный стон, представляя, как они опустошаются прямо тебе в глотку.");
 			
 			if(SexFlags.customerAtCounter)
-				UtilText.nodeContentSB.append("<br/>"
-						+ "The combination of your cramped, shuffling movements, and the not-so-quiet moan you just let out, is enough to alert the customer standing on just the other side of the counter."
-						+ " You feel a bit deflated as you hear Ralph giving away a portion of your discount to keep them quiet.");
+				UtilText.nodeContentSB.append("<br/>Сочетания твоих скованных, шаркающих движений и не самого тихого стона, который ты только что издала, оказывается достаточно, чтобы привлечь внимание клиента, стоящего прямо по ту сторону прилавка. Ты чувствуешь легкий укол разочарования, слыша, как Ralph отдает часть твоей скидки, лишь бы заставить их замолчать.");
 			else
-				UtilText.nodeContentSB.append(" You hear Ralph start to groan encouragingly above you, and you carry on fondling and stroking his nice heavy balls as their accompanying, similarly-proportioned cock slides in and out of your mouth.");
+				UtilText.nodeContentSB.append(" Ты слышишь, как Ralph начинает ободряюще стонать над тобой, и продолжаешь ласкать и поглаживать его приятные тяжелые яйца, пока его соразмерный им член скользит в твоем рту и обратно.");
 			
 			return UtilText.nodeContentSB.toString();
 		}
@@ -281,29 +261,22 @@ public class RalphOral {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Deepthroat";
+			return "Глубокий минет";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "See how good your throat is at taking horse-cock.";
+			return "Посмотри, как хорошо твоя глотка принимает конский член.";
 		}
 
 		@Override
 		public String getDescription() {
 			UtilText.nodeContentSB.setLength(0);
 			
-			UtilText.nodeContentSB.append("Summoning up your nerve, you decide to try and take as much of Ralph's cock down your throat as possible."
-					+ " Shuffling forwards, you lean into his groin, relaxing your throat and opening your esophagus as you try to gulp down the thick, hot length of Ralph's equine member."
-					+ " With nerves of steel, you push your head forwards, slamming the entire length of his gigantic dick straight down your throat."
-					+ " As you start to pull back, a thick layer of slimy saliva drools down your chin, and as you see over half of its length leaving your mouth, you decide to do it all over again, and push forwards once more into Ralph's crotch."
-					+ " Thanks to your excessive saliva production, his bestial horse-like shaft slides easily into your mouth yet again, and you hilt it fully down your throat,"
-					+ " keeping it there for as long as possible before you start to run out of breath and are forced to back up, recovering for only a moment before quickly returning to sucking it at a normal pace.");
+			UtilText.nodeContentSB.append("Собрав всю свою смелость, вы решаете попытаться заглотить как можно большую часть члена Ralph. Подавшись вперед, вы прижимаетесь к его паху, расслабляя горло и раскрывая пищевод, пытаясь проглотить толстую, горячую плоть его лошадиного достоинства. Обладая стальными нервами, вы толкаете голову вперед, с силой заталкивая всю длину его гигантского члена себе в глотку. Когда вы начинаете отстраняться, густая струйка вязкой слюны стекает по вашему подбородку, и, видя, что более половины его длины уже покидает ваш рот, вы решаете повторить всё заново и снова устремляетесь вперед, в пах Ralph. Благодаря обильному выделению слюны, его звериный, похожий на лошадиный ствол снова легко входит в ваш рот, и вы заглатываете его до самого основания, удерживая внутри так долго, как только можете, пока не начинаете задыхаться и не вынуждены отстраниться, чтобы лишь на мгновение перевести дух, прежде чем быстро вернуться к сосанию в обычном темпе.");
 			
 			if(SexFlags.customerAtCounter)
-				UtilText.nodeContentSB.append("<br/>"
-						+ "The loud squelching sounds, combined with the creaking of floorboards as you rocked back and forth deep-throating the huge horse-cock, ended up making quite a bit of noise."
-						+ " You hear Ralph offering a part of your discount to the customer who just overheard your zealous display, and you let out a muffled sigh as you realise that you forgot they were there.");
+				UtilText.nodeContentSB.append("<br/>Громкие хлюпающие звуки в сочетании со скрипом половиц, когда вы раскачивались взад-вперед, глубоко заглатывая огромный лошадиный член, в итоге подняли немало шума. Вы слышите, как Ralph предлагает скидку вашему «дисконту» клиенту, который только что подслушал ваше пылкое действо, и издаете приглушенный вздох, осознавая, что совсем забыли об их присутствии.");
 			
 			return UtilText.nodeContentSB.toString();
 		}
@@ -329,11 +302,11 @@ public class RalphOral {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Big discount";
+			return "Большая скидка";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Ask Ralph if there's a way to earn an even bigger discount. <i style='color:"+PresetColour.GENERIC_SEX.toWebHexString()+";'>This is an offer for Ralph to fuck your pussy!</i>";
+			return "Спросить у Ralph, можно ли получить еще большую скидку. <i style='color:"+PresetColour.GENERIC_SEX.toWebHexString()+";'>Это предложение для Ralph оттрахать твою киску!</i>";
 		}
 		@Override
 		public boolean isBaseRequirementsMet() {
@@ -345,15 +318,11 @@ public class RalphOral {
 		public String getDescription() {
 			UtilText.nodeContentSB.setLength(0);
 			
-			UtilText.nodeContentSB.append("As you've been sucking Ralph's cock, you've started to feel a desperate craving deep in your loins."
-					+ " You want to feel him inside of you. His fat, animalistic cock pumping away at your pussy, before filling you with his potent seed..."
-					+ " You can't hold back any longer, and, sliding his cock fully out of your mouth, you shuffle forwards to look up at him with big, innocent eyes."
-					+ "<br/>"
-					+ UtilText.parseSpeechNoEffects("Perhaps there's a way I could earn even more of a discount?", Main.game.getPlayer())+" you ask in your most convincingly seductive tone.");
+			UtilText.nodeContentSB.append("Пока ты сосала член Ralph, глубоко внизу живота у тебя начало разгораться отчаянное желание. Тебе хочется почувствовать его внутри себя. Его толстый, звериный член, вколачивающийся в твою киску, прежде чем наполнить тебя своим мощным семенем... Ты больше не можешь сдерживаться и, полностью выскользнув из твоего рта, его член, ты подаешься вперед, чтобы посмотреть на него своими большими невинными глазами.<br/>"
+					+ UtilText.parseSpeechNoEffects("«Может быть, есть способ получить еще большую скидку?»", Main.game.getPlayer())+" — спрашиваешь ты своим самым убедительным соблазнительным тоном.");
 			
 			if(SexFlags.customerAtCounter)
-				UtilText.nodeContentSB.append("<br/>"
-						+ "You hear the customer on the other side of the counter let out an amused cry of surprise, and Ralph quickly offers him some of your discount to stay quiet.");
+				UtilText.nodeContentSB.append("<br/>Ты слышишь, как покупатель по другую сторону прилавка издает веселый возглас удивления, и Ralph поспешно предлагает ему часть твоей скидки, чтобы тот не шумел.");
 			
 			return UtilText.nodeContentSB.toString();
 		}
@@ -394,11 +363,11 @@ public class RalphOral {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Big discount";
+			return "Большая скидка";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Ask Ralph if there's a way to earn an even bigger discount. <i style='color:"+PresetColour.GENERIC_SEX.toWebHexString()+";'>This is an offer for Ralph to fuck your ass!</i>";
+			return "Спросить у Ralph, можно ли получить еще большую скидку. <i style='color:"+PresetColour.GENERIC_SEX.toWebHexString()+";'>Это предложение для Ralph оттрахать твою задницу!</i>";
 		}
 		@Override
 		public boolean isBaseRequirementsMet() {
@@ -410,15 +379,11 @@ public class RalphOral {
 		public String getDescription() {
 			UtilText.nodeContentSB.setLength(0);
 			
-			UtilText.nodeContentSB.append("As you've been sucking Ralph's cock, you've started to feel a desperate craving deep in your loins."
-					+ " You want to feel him inside of you. His fat, animalistic cock pumping away at your ass, before filling you with his potent seed..."
-					+ " You can't hold back any longer, and, sliding his cock fully out of your mouth, you shuffle forwards to look up at him with big, innocent eyes."
-					+ "<br/>"
-					+ UtilText.parseSpeechNoEffects("Perhaps there's a way I could earn even more of a discount?", Main.game.getPlayer())+" you ask in your most convincingly seductive tone.");
+			UtilText.nodeContentSB.append("Пока ты сосала член Ralph, глубоко внизу живота у тебя начало разгораться отчаянное желание. Тебе хочется почувствовать его внутри себя. Его толстый, звериный член, вколачивающийся в твою задницу, прежде чем наполнить тебя своим мощным семенем... Ты больше не можешь сдерживаться и, полностью выскользнув из твоего рта, его член, ты подаешься вперед, чтобы посмотреть на него своими большими невинными глазами.<br/>"
+					+ UtilText.parseSpeechNoEffects("«Может быть, есть способ получить еще большую скидку?»", Main.game.getPlayer())+" — спрашиваешь ты своим самым убедительным соблазнительным тоном.");
 			
 			if(SexFlags.customerAtCounter)
-				UtilText.nodeContentSB.append("<br/>"
-						+ "You hear the customer on the other side of the counter let out an amused cry of surprise, and Ralph quickly offers him some of your discount to stay quiet.");
+				UtilText.nodeContentSB.append("<br/>Ты слышишь, как покупатель по другую сторону прилавка издает веселый возглас удивления, и Ralph поспешно предлагает ему часть твоей скидки, чтобы тот не шумел.");
 			
 			return UtilText.nodeContentSB.toString();
 		}
@@ -460,18 +425,17 @@ public class RalphOral {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Take it";
+			return "Принимай";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "You're in no position to do anything other than lie there and let Ralph's massive horse-cock pound your pussy.";
+			return "Ты не в том положении, чтобы делать что-то еще, кроме как лежать и позволять массивному конскому члену Ralph вколачиваться в твою киску.";
 		}
 
 		@Override
 		public String getDescription() {
-				return "Ralph's strong hands keep a firm grip on your "+Main.game.getPlayer().getHipSize().getDescriptor()+" hips as he pounds away at your pussy, and you find yourself with little to do other than lie still and take it."
-					+ " Letting out lewd moans, you fold your arms beneath your head, using them as a pillow as your cunt earns you your extra discount.";
+				return "Сильные руки Ralph крепко сжимают твои "+Main.game.getPlayer().getHipSize().getDescriptor()+" бедра, пока он долбит в твою киску, и ты понимаешь, что тебе остается лишь лежать смирно и принимать это. Издавая похотливые стоны, ты подкладываешь руки под голову, используя их вместо подушки, пока твоя киска приносит тебе дополнительную скидку.";
 		}
 		
 	};
@@ -489,18 +453,17 @@ public class RalphOral {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Take it";
+			return "Принимай";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "You're in no position to do anything other than lie there and let Ralph's massive horse-cock pound your ass.";
+			return "Ты не в том положении, чтобы делать что-то еще, кроме как лежать и позволять массивному конскому члену Ralph вколачиваться в твою задницу.";
 		}
 
 		@Override
 		public String getDescription() {
-			return "Ralph's strong hands keep a firm grip on your "+Main.game.getPlayer().getHipSize().getDescriptor()+" hips as he pounds away at your ass, and you find yourself with little to do other than lie still and take it."
-				+ " Letting out lewd groans, you fold your arms beneath your head, using them as a pillow as your backdoor earns you your extra discount.";
+			return "Сильные руки Ralph крепко сжимают твои "+Main.game.getPlayer().getHipSize().getDescriptor()+" бедра, пока он долбит в твою задницу, и ты понимаешь, что тебе остается лишь лежать смирно и принимать это. Издавая похотливые стоны, ты подкладываешь руки под голову, используя их вместо подушки, пока твоя задница приносит тебе дополнительную скидку.";
 		}
 		
 	};
@@ -518,33 +481,32 @@ public class RalphOral {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Dirty talk";
+			return "Грязные разговоры";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Now that Ralph's cock is using a different hole, you're able to give him some words of encouragement.";
+			return "Теперь, когда член Ralph использует другое отверстие, ты можешь подбодрить его парой слов.";
 		}
 
 		@Override
 		public String getDescription() {
 			UtilText.nodeContentSB.setLength(0);
 			
-			UtilText.nodeContentSB.append("With Ralph's dominant grip preventing you from making any bold moves, you're left with little option other than to give him some encouraging words."
-					+ " Turning your head back and making a show of biting your lip, you plead, ");
+			UtilText.nodeContentSB.append("Поскольку доминирующая хватка Ralph не дает тебе возможности предпринять какие-либо смелые действия, тебе остается лишь подбодрить его словами. Повернув голову назад и демонстративно прикусив губу, ты умоляешь: ");
 			
 			switch(Util.random.nextInt(4)){
 				case 0:
-					UtilText.nodeContentSB.append(UtilText.parsePlayerSpeech("Mmm! My little pussy's all yours!"));
+					UtilText.nodeContentSB.append(UtilText.parsePlayerSpeech("Ммм! Моя киска вся твоя!"));
 					break;
 				case 1:
-					UtilText.nodeContentSB.append(UtilText.parsePlayerSpeech("Ah yeah! Breed me like your little mare!"));
+					UtilText.nodeContentSB.append(UtilText.parsePlayerSpeech("Ах, да! Оплодоверяй меня, как свою маленькую кобылку!"));
 					break;
 				case 2:
-					UtilText.nodeContentSB.append(UtilText.parsePlayerSpeech("Ah! Ralph! Y-your cock's so big!"));
+					UtilText.nodeContentSB.append(UtilText.parsePlayerSpeech("Ах! Ralph! Т-твой член такой огромный!"));
 					break;
 				default: 
-					UtilText.nodeContentSB.append(UtilText.parsePlayerSpeech("A-Ahh! Yeah! Fuck me!"));
+					UtilText.nodeContentSB.append(UtilText.parsePlayerSpeech("А-ах! Да! Трахни меня!"));
 					break;
 			}
 			
@@ -566,33 +528,32 @@ public class RalphOral {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Dirty talk";
+			return "Грязные разговоры";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Now that Ralph's cock is using a different hole, you're able to give him some words of encouragement.";
+			return "Теперь, когда член Ralph использует другое отверстие, ты можешь подбодрить его парой слов.";
 		}
 
 		@Override
 		public String getDescription() {
 			UtilText.nodeContentSB.setLength(0);
 			
-			UtilText.nodeContentSB.append("With Ralph's dominant grip preventing you from making any bold moves, you're left with little option other than to give him some encouraging words."
-					+ " Turning your head back and making a show of biting your lip, you plead, ");
+			UtilText.nodeContentSB.append("Поскольку доминирующая хватка Ralph не дает тебе возможности предпринять какие-либо смелые действия, тебе остается лишь подбодрить его словами. Повернув голову назад и демонстративно прикусив губу, ты умоляешь: ");
 			
 			switch(Util.random.nextInt(4)){
 				case 0:
-					UtilText.nodeContentSB.append(UtilText.parsePlayerSpeech("Mmm! My little ass is all yours!"));
+					UtilText.nodeContentSB.append(UtilText.parsePlayerSpeech("Ммм! Моя попка вся твоя!"));
 					break;
 				case 1:
-					UtilText.nodeContentSB.append(UtilText.parsePlayerSpeech("Ah yeah! I'm your little mare!"));
+					UtilText.nodeContentSB.append(UtilText.parsePlayerSpeech("Ах, да! Я твоя маленькая кобылка!"));
 					break;
 				case 2:
-					UtilText.nodeContentSB.append(UtilText.parsePlayerSpeech("Ah! Ralph! Y-your cock's so big!"));
+					UtilText.nodeContentSB.append(UtilText.parsePlayerSpeech("Ах! Ralph! Т-твой член такой огромный!"));
 					break;
 				default: 
-					UtilText.nodeContentSB.append(UtilText.parsePlayerSpeech("A-Ahh! Yeah! Fuck me!"));
+					UtilText.nodeContentSB.append(UtilText.parsePlayerSpeech("А-ах! Да! Трахни меня!"));
 					break;
 			}
 			
@@ -622,7 +583,7 @@ public class RalphOral {
 		}
 		@Override
 		public String getActionTitle() {
-			return "A customer!";
+			return "Покупатель!";
 		}
 		@Override
 		public String getActionDescription() {
@@ -630,10 +591,7 @@ public class RalphOral {
 		}
 		@Override
 		public String getDescription() {
-			return "Ralph suddenly stops the gentle bucking of his hips, and before you have time to wonder what's wrong, you hear him greeting a customer."
-					+ " You hear the customer's heavy steps as they move up to just the other side of the counter, and you realise that if you don't stay quiet, they're going to find out that you're under here!"
-					+ "<br/><br/>"
-					+ "<b>There is</b> <b style='color:" + PresetColour.GENERIC_BAD.toWebHexString() + ";'>a customer</b> <b>on the other side of the counter!</b>";
+			return "Ralph внезапно перестает плавно двигать бедрами, и прежде чем ты успеваешь понять, что случилось, ты слышишь, как он приветствует покупателя. Ты слышишь тяжелые шаги клиента, который подходит почти к самому краю прилавка, и понимаешь: если ты не будешь вести себя тихо, он обнаружит, что ты здесь прячешься!<br/><br/><b>Там</b> <b style='color:" + PresetColour.GENERIC_BAD.toWebHexString() + ";'>покупатель</b> <b>на другой стороне прилавка!</b>";
 		}
 
 		@Override
@@ -656,7 +614,7 @@ public class RalphOral {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Dirty talk";
+			return "Грязные разговоры";
 		}
 
 		@Override
@@ -674,24 +632,21 @@ public class RalphOral {
 			UtilText.nodeContentSB.setLength(0);
 			
 			if(SexFlags.customerAtCounter)
-				UtilText.nodeContentSB.append("Ralph quickly finishes up with the customer, and as you hear them start to walk away, you realise that by staying quiet, they didn't find out that you were here!"
-						+ "<br/><br/>"
-						+ "<b>There are now</b> <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>no customers</b> <b>near the counter.</b>"
-								+ "<br/><br/>");
+				UtilText.nodeContentSB.append("Ralph быстро заканчивает с покупателем, и когда ты слышишь, как тот начинает уходить, ты понимаешь, что благодаря твоей тишине они не заметили твоего присутствия!<br/><br/><b>Теперь рядом</b> <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>нет покупателей</b> <b>у прилавка.</b><br/><br/>");
 			
-			UtilText.nodeContentSB.append("You feel Ralph's cock slide back a little as he bends down towards you, ");
+			UtilText.nodeContentSB.append("Ты чувствуешь, как член Ralph слегка отходит назад, когда он наклоняется к тебе, ");
 			switch(Util.random.nextInt(4)){
 				case 0:
-					UtilText.nodeContentSB.append(UtilText.parseSpeech("That's right, keep earning your discount!", Main.game.getNpc(Ralph.class)));
+					UtilText.nodeContentSB.append(UtilText.parseSpeech("Вот так, продолжай заслуживать свою скидку!", Main.game.getNpc(Ralph.class)));
 					break;
 				case 1:
-					UtilText.nodeContentSB.append(UtilText.parseSpeech("Ah... You're good at this!", Main.game.getNpc(Ralph.class)));
+					UtilText.nodeContentSB.append(UtilText.parseSpeech("Ах... У тебя это отлично получается!", Main.game.getNpc(Ralph.class)));
 					break;
 				case 2:
-					UtilText.nodeContentSB.append(UtilText.parseSpeech("Just remember to keep the noise down!", Main.game.getNpc(Ralph.class)));
+					UtilText.nodeContentSB.append(UtilText.parseSpeech("Только не забывай вести себя потише!", Main.game.getNpc(Ralph.class)));
 					break;
 				default: 
-					UtilText.nodeContentSB.append(UtilText.parseSpeech("Keep going, you're ~mmm~ doing a great job!", Main.game.getNpc(Ralph.class)));
+					UtilText.nodeContentSB.append(UtilText.parseSpeech("Продолжай, ты ~ммм~ просто великолепно справляешься!", Main.game.getNpc(Ralph.class)));
 					break;
 			}
 			
@@ -717,7 +672,7 @@ public class RalphOral {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Dirty talk";
+			return "Грязные разговоры";
 		}
 
 		@Override
@@ -730,24 +685,21 @@ public class RalphOral {
 			UtilText.nodeContentSB.setLength(0);
 			
 			if(SexFlags.customerAtCounter)
-				UtilText.nodeContentSB.append("Ralph quickly finishes up with the customer, and as you hear them start to walk away, you realise that by staying quiet, they didn't find out that you were here!"
-						+ "<br/><br/>"
-						+ "<b>There are now</b> <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>no customers</b> <b>near the counter.</b>"
-								+ "<br/><br/>");
+				UtilText.nodeContentSB.append("Ralph быстро заканчивает с покупателем, и когда ты слышишь, как тот начинает уходить, ты понимаешь, что благодаря твоей тишине они не заметили твоего присутствия!<br/><br/><b>Теперь рядом</b> <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>нет покупателей</b> <b>у прилавка.</b><br/><br/>");
 			
-			UtilText.nodeContentSB.append("You feel Ralph's grip move down to grope and squeeze your "+Main.game.getPlayer().getAssSize().getDescriptor()+" ass as he groans down to you, ");
+			UtilText.nodeContentSB.append("Ты чувствуешь, как рука Ralph спускается ниже, чтобы ухватить и сжать твою "+Main.game.getPlayer().getAssSize().getDescriptor()+" задницу, пока он стонет тебе в пах: ");
 				switch(Util.random.nextInt(4)){
 					case 0:
-						UtilText.nodeContentSB.append(UtilText.parseSpeech("I can't believe you asked for this!", Main.game.getNpc(Ralph.class)));
+						UtilText.nodeContentSB.append(UtilText.parseSpeech("Поверить не могу, что ты сама об этом попросила!", Main.game.getNpc(Ralph.class)));
 						break;
 					case 1:
-						UtilText.nodeContentSB.append(UtilText.parseSpeech("Ah yeah! Fuck...", Main.game.getNpc(Ralph.class)));
+						UtilText.nodeContentSB.append(UtilText.parseSpeech("Ах, да! Блядь...", Main.game.getNpc(Ralph.class)));
 						break;
 					case 2:
-						UtilText.nodeContentSB.append(UtilText.parseSpeech("Ah, fuck! Your pussy's so fucking good!", Main.game.getNpc(Ralph.class)));
+						UtilText.nodeContentSB.append(UtilText.parseSpeech("Ах, сука! Твоя киска просто охеренная!", Main.game.getNpc(Ralph.class)));
 						break;
 					default: 
-						UtilText.nodeContentSB.append(UtilText.parseSpeech("Fuck! You're really earning this discount, huh?", Main.game.getNpc(Ralph.class)));
+						UtilText.nodeContentSB.append(UtilText.parseSpeech("Бля! Ты реально заслужила эту скидку, а?", Main.game.getNpc(Ralph.class)));
 						break;
 				}
 			
@@ -773,7 +725,7 @@ public class RalphOral {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Dirty talk";
+			return "Грязные разговоры";
 		}
 
 		@Override
@@ -791,24 +743,21 @@ public class RalphOral {
 			UtilText.nodeContentSB.setLength(0);
 			
 			if(SexFlags.customerAtCounter)
-				UtilText.nodeContentSB.append("Ralph quickly finishes up with the customer, and as you hear them start to walk away, you realise that by staying quiet, they didn't find out that you were here!"
-						+ "<br/><br/>"
-						+ "<b>There are now</b> <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>no customers</b> <b>near the counter.</b>"
-								+ "<br/><br/>");
+				UtilText.nodeContentSB.append("Ralph быстро заканчивает с покупателем, и когда ты слышишь, как тот начинает уходить, ты понимаешь, что благодаря твоей тишине они не заметили твоего присутствия!<br/><br/><b>Теперь рядом</b> <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>нет покупателей</b> <b>у прилавка.</b><br/><br/>");
 			
-			UtilText.nodeContentSB.append("You feel Ralph's grip move down to grope and squeeze your "+Main.game.getPlayer().getAssSize().getDescriptor()+" ass as he groans down to you, ");
+			UtilText.nodeContentSB.append("Ты чувствуешь, как рука Ralph спускается ниже, чтобы ухватить и сжать твою "+Main.game.getPlayer().getAssSize().getDescriptor()+" задницу, пока он стонет тебе в пах: ");
 			switch(Util.random.nextInt(4)){
 				case 0:
-					UtilText.nodeContentSB.append(UtilText.parseSpeech("I can't believe you talked me into this!", Main.game.getNpc(Ralph.class)));
+					UtilText.nodeContentSB.append(UtilText.parseSpeech("Поверить не могу, что ты меня на это уговорила!", Main.game.getNpc(Ralph.class)));
 					break;
 				case 1:
-					UtilText.nodeContentSB.append(UtilText.parseSpeech("Ah yeah! Fuck...", Main.game.getNpc(Ralph.class)));
+					UtilText.nodeContentSB.append(UtilText.parseSpeech("Ах, да! Блядь...", Main.game.getNpc(Ralph.class)));
 					break;
 				case 2:
-					UtilText.nodeContentSB.append(UtilText.parseSpeech("Ah, fuck! This is pretty fucking good!", Main.game.getNpc(Ralph.class)));
+					UtilText.nodeContentSB.append(UtilText.parseSpeech("Ах, бля! Это чертовски хорошо!", Main.game.getNpc(Ralph.class)));
 					break;
 				default: 
-					UtilText.nodeContentSB.append(UtilText.parseSpeech("You're really earning this discount, huh?", Main.game.getNpc(Ralph.class)));
+					UtilText.nodeContentSB.append(UtilText.parseSpeech("Ты реально заслуживаешь эту скидку, а?", Main.game.getNpc(Ralph.class)));
 					break;
 			}
 			
@@ -834,7 +783,7 @@ public class RalphOral {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Demand oral";
+			return "Потребовать оральный секс";
 		}
 
 		@Override
@@ -861,13 +810,10 @@ public class RalphOral {
 			UtilText.nodeContentSB.setLength(0);
 			
 			if(SexFlags.customerAtCounter)
-				UtilText.nodeContentSB.append("Ralph quickly finishes up with the customer, and as you hear them start to walk away, you realise that by staying quiet, they didn't find out that you were here!"
-						+ "<br/><br/>"
-						+ "<b>There are now</b> <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>no customers</b> <b>near the counter.</b>"
-								+ "<br/><br/>");
+				UtilText.nodeContentSB.append("Ralph быстро заканчивает с покупателем, и когда ты слышишь, как тот начинает уходить, ты понимаешь, что благодаря твоей тишине они не заметили твоего присутствия!<br/><br/><b>Теперь рядом</b> <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>нет покупателей</b> <b>у прилавка.</b><br/><br/>");
 			
-			UtilText.nodeContentSB.append("You hear Ralph let out an impatient grunt as he bends down towards you, "
-					+ UtilText.parseSpeech("What are you doing? You agreed to do this, so don't keep me waiting!", Main.game.getNpc(Ralph.class)));
+			UtilText.nodeContentSB.append("Вы слышите нетерпеливое ворчание Ralph, когда он наклоняется к вам, "
+					+ UtilText.parseSpeech("Что ты делаешь? Ты согласилась на это, так что не заставляй меня ждать!", Main.game.getNpc(Ralph.class)));
 			
 			
 			return UtilText.nodeContentSB.toString();
@@ -893,7 +839,7 @@ public class RalphOral {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Start blowjob";
+			return "Начать минет";
 		}
 
 		@Override
@@ -915,18 +861,11 @@ public class RalphOral {
 			UtilText.nodeContentSB.setLength(0);
 			
 			if(SexFlags.customerAtCounter)
-				UtilText.nodeContentSB.append("Ralph quickly finishes up with the customer, and as you hear them start to walk away, you realise that by staying quiet, they didn't find out that you were here!"
-						+ "<br/><br/>"
-						+ "<b>There are now</b> <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>no customers</b> <b>near the counter.</b>"
-								+ "<br/><br/>");
+				UtilText.nodeContentSB.append("Ralph быстро заканчивает с покупателем, и когда ты слышишь, как тот начинает уходить, ты понимаешь, что благодаря твоей тишине они не заметили твоего присутствия!<br/><br/><b>Теперь рядом</b> <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>нет покупателей</b> <b>у прилавка.</b><br/><br/>");
 			
-			UtilText.nodeContentSB.append("You hear Ralph let out a very annoyed grunt as he bends down towards you, "
-					+ UtilText.parseSpeech("I'll show you how to get started!", Main.game.getNpc(Ralph.class))
-					+"<br/>"
-					+ "Before you have any time to respond, he suddenly pushes his hips forwards."
-					+ " His hard shaft quickly pushes your head back against the counter behind you, and before you know what's happening, the flared head of his equine member is rubbing forcefully over your face."
-					+ " With a quick reposition and another determined thrust, you feel your lips parting as Ralph rams his eager horse-cock past your lips and into your mouth."
-					+ " As you realise that this is, in fact, happening, you finally start to do what you agreed to, and begin sucking Ralph's cock.");
+			UtilText.nodeContentSB.append("Вы слышите очень раздраженное ворчание Ralph, когда он наклоняется к вам, "
+					+ UtilText.parseSpeech("Я покажу тебе, с чего нужно начинать!", Main.game.getNpc(Ralph.class))
+					+"<br/>Прежде чем вы успеваете что-либо ответить, он внезапно подается бедрами вперед. Его твердый член быстро отбрасывает вашу голову назад, на столешницу позади вас, и прежде чем вы успеваете осознать происходящее, расширенная головка его лошачьего органа с силой втирается в ваше лицо. Быстро сменив положение и сделав еще один решительный толчок, вы чувствуете, как ваши губы размыкаются, когда Ralph вбивает свой жаждущий конский член вам в рот. Осознав, что это происходит на самом деле, вы наконец начинаете делать то, о чем договорились, и принимаетесь сосать член Ralph.");
 			
 			return UtilText.nodeContentSB.toString();
 		}
@@ -952,9 +891,9 @@ public class RalphOral {
 		@Override
 		public String getActionTitle() {
 			if(SexFlags.customerAtCounter) {
-				return "Deal with customer (Receive blowjob)";
+				return "Ублажить клиента (Получить минет)";
 			}
-			return "Receive blowjob";
+			return "Получить минет";
 		}
 
 		@Override
@@ -967,14 +906,10 @@ public class RalphOral {
 			UtilText.nodeContentSB.setLength(0);
 			
 			if(SexFlags.customerAtCounter) {
-				UtilText.nodeContentSB.append("Ralph quickly finishes up with the customer, and as you hear them start to walk away, you realise that by staying quiet, they didn't find out that you were here!"
-						+ "<br/><br/>"
-						+ "<b>There are now</b> <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>no customers</b> <b>near the counter.</b>"
-								+ "<br/><br/>");
+				UtilText.nodeContentSB.append("Ralph быстро заканчивает с покупателем, и когда ты слышишь, как тот начинает уходить, ты понимаешь, что благодаря твоей тишине они не заметили твоего присутствия!<br/><br/><b>Теперь рядом</b> <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>нет покупателей</b> <b>у прилавка.</b><br/><br/>");
 			}
 			
-			UtilText.nodeContentSB.append("Ralph remains all but motionless, watching over the shop as you diligently continue sucking his cock."
-						+ " Now and then, he gently pushes his hips forwards, helping you to take his massive shaft down your throat, but other than that, you're left with little assistance as you work on pleasing his cock.");
+			UtilText.nodeContentSB.append("Ralph остается почти неподвижным, приглядывая за лавкой, пока ты усердно сосешь его член. Время от времени он слегка подается бедрами вперед, помогая тебе заглатывать его массивный ствол, но в остальном тебе приходится справляться почти без помощи, стараясь доставить его члену удовольствие.");
 			
 			return UtilText.nodeContentSB.toString();
 		}
@@ -999,7 +934,7 @@ public class RalphOral {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Sheathe cock";
+			return "Вставить член";
 		}
 
 		@Override
@@ -1011,13 +946,7 @@ public class RalphOral {
 		public String getDescription() {
 			UtilText.nodeContentSB.setLength(0);
 			
-			UtilText.nodeContentSB.append("The constant pounding between your legs starts to slow down, and you turn your head slightly as you look back to see what's wrong."
-					+ " As Ralph smiles back at you, you notice that his chest is heaving, and you realise that he's simply slowed down for a moment to catch his breath."
-					+ " Sinking his cock fully into your greedy little cunt, he squeezes and gropes your "+Main.game.getPlayer().getAssSize().getDescriptor()+" ass, and you rest your head back in your arms,"
-							+ " moaning and sighing as you both take a moment to recover."
-					+ "<br/><br/>"
-					+ "After less than a minute, you feel the wide, flared head of his horse-cock sliding back out of your pussy, and as you let out a pathetic little whine at the feeling of emptiness,"
-					+ " Ralph tightens his grip on your hips before thrusting forwards, turning your whine into a high-pitched squeal of pleasure as he starts fucking you at full pace once more.");
+			UtilText.nodeContentSB.append("Постоянные толчки между твоих ног начинают замедляться, и ты слегка поворачиваешь голову, оглядываясь, чтобы понять, что не так. Когда Ralph улыбается тебе в ответ, ты замечаешь, что его грудь тяжело вздымается, и понимаешь, что он просто на мгновение замедлился, чтобы перевести дух. Полностью погрузив свой член в твою жадную маленькую киску, он сжимает и ощупывает твою "+Main.game.getPlayer().getAssSize().getDescriptor()+" задницу, и ты откидываешь голову на руки, стоная и вздыхая, пока вы оба пытаетесь прийти в себя.<br/><br/>Не прошло и минуты, как ты чувствуешь, как широкая, раздутая головка его лошачьего члена выскальзывает из твоей щели, и когда ты издаешь жалкий скулящий звук от ощущения пустоты, Ralph крепче сжимает твои бедра и резко толкается вперед, превращая твой скулеж в высокий визг удовольствия, когда он снова начинает трахать тебя на полной скорости.");
 			
 			return UtilText.nodeContentSB.toString();
 		}
@@ -1042,7 +971,7 @@ public class RalphOral {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Sheathe cock";
+			return "Вставить член";
 		}
 
 		@Override
@@ -1054,13 +983,7 @@ public class RalphOral {
 		public String getDescription() {
 			UtilText.nodeContentSB.setLength(0);
 			
-			UtilText.nodeContentSB.append("The constant pounding of your rear entrance starts to slow down, and you turn your head slightly as you look back to see what's wrong."
-					+ " As Ralph smiles back at you, you notice that his chest is heaving, and you realise that he's simply slowed down for a moment to catch his breath."
-					+ " Sinking his cock fully into your greedy asshole, he squeezes and gropes your "+Main.game.getPlayer().getAssSize().getDescriptor()+" ass, and you rest your head back in your arms,"
-							+ " groaning and sighing as you both take a moment to recover."
-					+ "<br/><br/>"
-					+ "After less than a minute, you feel the wide, flared head of his horse-cock sliding out of your back door, and as you let out a pathetic little whine at the feeling of emptiness,"
-					+ " Ralph tightens his grip on your hips before thrusting forwards, turning your whine into a desperate cry of pleasure as he starts fucking you at full pace once more.");
+			UtilText.nodeContentSB.append("Постоянные толчки в твой задний проход начинают замедляться, и ты слегка поворачиваешь голову, чтобы оглянуться и понять, в чем дело. Когда Ralph улыбается тебе в ответ, ты замечаешь, что его грудь тяжело вздымается, и понимаешь, что он просто на мгновение замедлился, чтобы перевести дух. Полностью погрузив свой член в твою жадную дырочку, он сжимает и ощупывает твою "+Main.game.getPlayer().getAssSize().getDescriptor()+" задницу, и ты откидываешь голову на руки, стоная и вздыхая, пока вы оба пытаетесь прийти в себя.<br/><br/>Не проходит и минуты, как ты чувствуешь, как широкая, раздутая головка его лошачьего члена выскальзывает из твоего заднего входа, и когда ты издаешь жалкий тонкий скулеж от ощущения пустоты, Ralph крепче сжимает твои бедра и делает мощный толчок вперед, превращая твой скулеж в отчаянный крик наслаждения, когда он снова начинает трахать тебя на полной скорости.");
 
 			return UtilText.nodeContentSB.toString();
 		}
@@ -1086,9 +1009,9 @@ public class RalphOral {
 		@Override
 		public String getActionTitle() {
 			if(SexFlags.customerAtCounter) {
-				return "Deal with customer (Deepthroat)";
+				return "Обслужить клиента (Глубокий горловой)";
 			}
-			return "Deepthroat";
+			return "Глубокий минет";
 		}
 
 		@Override
@@ -1101,18 +1024,9 @@ public class RalphOral {
 			UtilText.nodeContentSB.setLength(0);
 			
 			if(SexFlags.customerAtCounter)
-				UtilText.nodeContentSB.append("Ralph quickly finishes up with the customer, and as you hear them start to walk away, you realise that by staying quiet, they didn't find out that you were here!"
-						+ "<br/><br/>"
-						+ "<b>There are now</b> <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>no customers</b> <b>near the counter.</b>"
-								+ "<br/><br/>");
+				UtilText.nodeContentSB.append("Ralph быстро заканчивает с покупателем, и когда ты слышишь, как тот начинает уходить, ты понимаешь, что благодаря твоей тишине они не заметили твоего присутствия!<br/><br/><b>Теперь рядом</b> <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>нет покупателей</b> <b>у прилавка.</b><br/><br/>");
 			
-			UtilText.nodeContentSB.append("A little ringing noise echoes in your ears, signalling that the only customer in the shop has just left, leaving you alone with Ralph for the moment."
-					+ " The consequences of this are immediately made clear as you suddenly feel a strong pressure on each side of your head."
-					+ " Looking up, you see that Ralph has grabbed you with both hands, and before you can react, he steps forwards, pulling you into his crotch as he hilts his huge horse-cock deep down your throat."
-					+ " Everything goes blurry as tears start streaming from your eyes, but just as you think that you're about to pass out from a lack of oxygen, Ralph releases you."
-					+ " Sinking down onto your knees, you let the huge shaft slip out of your mouth for a moment as you're left coughing and spluttering,"
-					+ " a thick stream of saliva and precum running down your chin as you take a moment to recover."
-					+ " Just at that moment, the bell rings once more, and Ralph steps forwards, concealing his lower half behind the counter as he pushes his cock into your mouth once again.");
+			UtilText.nodeContentSB.append("В ушах отдается легкий звон — единственный покупатель в лавке только что ушел, оставив вас наедине с Ralph. Последствия этого становятся очевидны мгновенно: вы внезапно чувствуете сильное давление по обе стороны головы. Подняв взгляд, вы видите, что Ralph обхватил вашу голову обеими руками, и прежде чем вы успеваете среагировать, он делает шаг вперед, прижимая вас к своему паху и с силой вонзая свой огромный конский член глубоко вам в глотку. В глазах все плывет, из глаз катятся слезы, и как раз в тот момент, когда вам кажется, что вы вот-вот потеряете сознание от нехватки кислорода, Ralph отпускает вас. Опустившись на колени, вы на мгновение выпускаете огромный ствол изо рта, кашляя и захлебываясь; густая струйка слюны и предэякулята стекает по вашему подбородку, пока вы пытаетесь прийти в себя. И именно в этот момент колокольчик звенит снова, и Ralph делает шаг вперед, скрывая нижнюю часть тела за прилавком и вновь втискивая свой член вам в рот.");
 			
 			return UtilText.nodeContentSB.toString();
 		}
@@ -1137,7 +1051,7 @@ public class RalphOral {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Reduce discount";
+			return "Уменьшить скидку";
 		}
 
 		@Override
@@ -1152,14 +1066,13 @@ public class RalphOral {
 
 		@Override
 		public String getDescription() {
-			return "You feel Ralph's cock slide back a little as he bends down towards you, "
-					+ UtilText.parseSpeech("What did I tell you about this being a respectable establishment?! I made it quite clear what would happen if you made too much noise!"
-							+ " I'm knocking five percent off our deal, no complaints!", Main.game.getNpc(Ralph.class))
+			return "Ты чувствуешь, как член Ralph слегка отходит назад, когда он наклоняется к тебе, "
+					+ UtilText.parseSpeech("Что я тебе говорил об этом приличном заведении?! Я ясно дал понять, что будет, если ты будешь слишком сильно шуметь! Скидка пять процентов, и никаких возражений!", Main.game.getNpc(Ralph.class))
 					+"<br/>"
 					+ "Despite his usual polite and friendly temperament, he sounds quite angry as he scolds you, and you feel a little bad for putting the reputation of his shop on the line."
 					+ " Then again, he was the one to suggest this, so it's not as though you're entirely the one at fault here..."
 					+ "<br/><br/>"
-					+ "<b>You will now earn a</b> <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>"+(SexFlags.ralphDiscount>0?SexFlags.ralphDiscount-5:0)+"%</b> <b>discount.</b>";
+					+ "<b>You will now earn a</b> <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>"+(SexFlags.ralphDiscount>0?SexFlags.ralphDiscount-5:0)+"%</b> <b>скидка.</b>";
 		}
 
 		@Override
@@ -1185,9 +1098,9 @@ public class RalphOral {
 		@Override
 		public String getActionTitle() {
 			if(Main.game.getPlayer().isVisiblyPregnant()) {
-				return "Fuck [pc.herHim]";
+				return "Трахнуть [pc.herHim]";
 			}
-			return "Breed [pc.herHim]";
+			return "Оплодотворить [pc.herHim]";
 		}
 
 		@Override
@@ -1210,64 +1123,50 @@ public class RalphOral {
 			UtilText.nodeContentSB.setLength(0);
 			
 			if(SexFlags.alertedCustomer){
-				UtilText.nodeContentSB.append("Ralph bends down towards you, "
-						+ UtilText.parseSpeech("What did I tell you about this being a respectable establishment?! I made it quite clear what would happen if you made too much noise!"
-								+ " I'm knocking five percent off our deal, no complaints!", Main.game.getNpc(Ralph.class))
+				UtilText.nodeContentSB.append("Ralph наклоняется к вам, "
+						+ UtilText.parseSpeech("Что я тебе говорил об этом приличном заведении?! Я ясно дал понять, что будет, если ты будешь слишком сильно шуметь! Скидка пять процентов, и никаких возражений!", Main.game.getNpc(Ralph.class))
 						+"<br/>"
 						+ "Despite his usual polite and friendly temperament, he sounds quite angry as he scolds you, and you feel a little bad for putting the reputation of his shop on the line."
 						+ " Then again, he was the one to suggest this, so it's not as though you're entirely the one at fault here..."
 						+ "<br/><br/>"
-						+ "<b>You will now earn a</b> <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>"+(SexFlags.ralphDiscount>0?SexFlags.ralphDiscount-5:0)+"%</b> <b>discount.</b>"
-						+ "<br/><br/>");
+						+ "<b>You will now earn a</b> <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>"+(SexFlags.ralphDiscount>0?SexFlags.ralphDiscount-5:0)+"%</b> <b>скидка.</b><br/><br/>");
 			}
 				
-			UtilText.nodeContentSB.append("Ralph steps back, and after kicking off his trousers, walks over to the front of the shop."
-					+ " As you hear him locking the front door and pulling down the shop's blinds, you realise that the last customer must have left some time ago."
-					+ " Wanting to see what's going on, you shuffle your way out from beneath the counter and try to stand up."
-					+ "<br/><br/>"
-					+ "Almost instantly, a huge jolt of cramp shoots up through your legs, and you let out a little cry as you bend over and grab the edge of the counter."
-					+ " Suddenly, you feel a strong pair of hands grab your hips, and before you can react, "
+			UtilText.nodeContentSB.append("Ralph отступает назад, сбрасывает штаны и идет к входу в лавку. Когда ты слышишь, как он запирает входную дверь и опускает жалюзи, до тебя доходит, что последний покупатель ушел уже довольно давно. Желая разузнать, что происходит, ты выбираешься из-под прилавка и пытаешься встать.<br/><br/>Почти мгновенно по ногам пронзает резкая судорога, и ты невольно вскрикиваешь, сгибаясь пополам и хватаясь за край прилавка. Внезапно ты чувствуешь, как сильные руки обхватывают твои бедра, и прежде чем ты успеваешь среагировать, "
 					+(Main.game.getPlayer().isTaur()
-						?"Ralph firmly guides you forwards, forcing you to mount the counter-top."
-						:"Ralph pushes you down, face first, onto the counter-top.")
-					+ " You let out a little moan at his dominant treatment of you, and as he roughly gropes and squeezes your "+Main.game.getPlayer().getAssSize().getDescriptor()+" ass, he growls into your ear, "
+						?"Ralph решительно толкает тебя вперед, заставляя взобраться на прилавок."
+						:"Ralph прижимает тебя лицом вниз к поверхности прилавка.")
+					+ " Ты издаешь тихий стон от его властного обращения, и пока он грубо ощупывает и сжимает твою "+Main.game.getPlayer().getAssSize().getDescriptor()+" задницу, он рычит тебе в самое ухо: "
 					+ UtilText.parseSpeech(
 						(Main.sex.getCharacterPerformingAction().isWearingCondom()
-							?"So you want a bigger discount, huh?! You know, it's a shame you insisted on the condom, but I'll still give you another twenty percent if you let me fuck you."
+							?"Значит, хочешь скидку побольше, а?! Знаешь, жаль, конечно, что ты настояла на презервативе, но я все равно дам тебе еще двадцать процентов, если позволишь мне тебя оттрахать."
 							:(Main.game.getPlayer().isVisiblyPregnant()
-									?"So you want a bigger discount, huh?! You know, it's a shame you're already pregnant, but I'll still give you another twenty percent if you let me fuck you."
-									:"So you want a bigger discount, huh?! Well, you let me put a few foals in your belly, and I'll give you another twenty five percent!")
+									?"Значит, хочешь скидку побольше, а?! Знаешь, жаль, конечно, что ты уже беременна, но я все равно дам тебе еще двадцать процентов, если позволишь мне тебя оттрахать."
+									:"Значит, хочешь скидку побольше, а?! Ну так дай мне наполнить твой живот парой жеребят, и тогда я дам тебе еще двадцать пять процентов!")
 						), Main.game.getNpc(Ralph.class))
-					+"<br/><br/>"
-					+ "By now, you don't really care about the discount, all you want is to feel that delicious cock sliding in between your legs."
-					+ " Even before Ralph's finished giving you his offer, you're moaning in agreement, and he lets out a little laugh as he reaches down to grope your "
-					+ (Main.game.getPlayer().getVaginaType()==VaginaType.HORSE_MORPH?"needy horse-pussy.":"hot little pussy."));
+					+"<br/><br/>К этому моменту тебя уже не волнует никакая скидка, всё, чего ты хочешь — это почувствовать, как этот восхитительный член скользит между твоих ног. Еще до того, как Ralph успевает закончить свое предложение, ты уже стонешь в знак согласия, и он издает короткий смешок, протягивая руку, чтобы сжать твою "
+					+ (Main.game.getPlayer().getVaginaType()==VaginaType.HORSE_MORPH?"жаждущую лошадиную киску.":"горячую маленькую киску."));
 			
 			UtilText.nodeContentSB.append("<br/><br/>");
 			if(Main.game.getPlayer().isVisiblyPregnant()) {
 				if(Main.game.getPlayer().isTaur()) {
-					UtilText.nodeContentSB.append("Being very careful not to bump your pregnant belly against the counter, Ralph pushes your upper-torso down onto the counter top.");
+					UtilText.nodeContentSB.append("Стараясь не задеть стойку своим беременным животом, Ralph прижимает твой торс к столешнице.");
 				} else {
-					UtilText.nodeContentSB.append("Being very careful not to bump your pregnant belly against the counter, Ralph guides you forwards and makes you mount the top of the counter.");
+					UtilText.nodeContentSB.append("Стараясь не задеть стойку своим беременным животом, Ralph направляет тебя вперед, заставляя взобраться на столешницу.");
 				}
-				UtilText.nodeContentSB.append(" Grabbing your hips, he wastes no time in lining his massive cock up to your waiting cunt, and as he starts to push forwards, you let out a desperate squeal.");
+				UtilText.nodeContentSB.append(" Схватив тебя за бедра, он не теряет времени и приставляет свой массивный член к твоей ждущей щели, и когда он начинает входить, ты издаешь отчаянный визг.");
 				
 			} else {
 				if(Main.game.getPlayer().isTaur()) {
-					UtilText.nodeContentSB.append("After guiding you forwards and making you mount the top of the counter,"
-							+ " Ralph wastes no time in lining his massive cock up to your waiting cunt, and as he starts to push forwards, you let out a desperate squeal.");
+					UtilText.nodeContentSB.append("Направив тебя вперед и заставив взобраться на столешницу, Ralph не теряет времени и приставляет свой массивный член к твоей ждущей щели, и когда он начинает входить, ты издаешь отчаянный визг.");
 				} else {
-					UtilText.nodeContentSB.append("Pushing your top-half down onto the counter top, Ralph wastes no time in lining his massive cock up to your waiting cunt, and as he starts to push forwards, you let out a desperate squeal.");
+					UtilText.nodeContentSB.append("Прижав твою верхнюю часть тела к столешнице, Ralph не теряет времени и приставляет свой массивный член к твоей ждущей щели, и когда он начинает входить, ты издаешь отчаянный визг.");
 				}
 			}
 			UtilText.nodeContentSB.append(
-					" His wide, flared head slowly pushes its way into you, and you pant and squirm as your folds lewdly spread around his animalistic horse-cock."
-					+ " With a quick step forwards, Ralph suddenly rams his impatient member deep into your hungry snatch, and you gasp and moan as he starts fucking you on the shop's counter-top."
-					+ "</p>"
-					+ "<p style='text-align:center;'>"
-					+ "<b>You will now earn a</b> <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>"
+					" Его широкая, раздутая головка медленно проталкивается внутрь, и ты тяжело дышишь и извиваешься, пока твои складки похотливо обволакивают его животный лошадиный член. С резким шагом вперед Ralph внезапно вонзает свой нетерпеливый орган глубоко в твою голодную киску; ты ахаешь и стонешь, когда он начинает трахать тебя прямо на прилавке лавки.</p><p style='text-align:center;'><b>Теперь ты будешь получать</b> <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>"
 							+(SexFlags.ralphDiscount+(Main.sex.getCharacterPerformingAction().isWearingCondom()||Main.game.getPlayer().isVisiblyPregnant()?20:25)-(SexFlags.alertedCustomer?5:0))
-					+"%</b> <b>discount.</b>");
+					+"%</b> <b>скидка.</b>");
 			
 			return UtilText.nodeContentSB.toString();
 		}
@@ -1318,7 +1217,7 @@ public class RalphOral {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Fuck [pc.her] ass";
+			return "Трахать жопу [pc.her]";
 		}
 
 		@Override
@@ -1341,32 +1240,20 @@ public class RalphOral {
 			UtilText.nodeContentSB.setLength(0);
 			
 			if(SexFlags.alertedCustomer){
-				UtilText.nodeContentSB.append("Ralph bends down towards you, "
-						+ UtilText.parseSpeech("What did I tell you about this being a respectable establishment?! I made it quite clear what would happen if you made too much noise!"
-								+ " I'm knocking five percent off our deal, no complaints!", Main.game.getNpc(Ralph.class))
+				UtilText.nodeContentSB.append("Ralph наклоняется к вам, "
+						+ UtilText.parseSpeech("Что я тебе говорил об этом приличном заведении?! Я ясно дал понять, что будет, если ты будешь слишком сильно шуметь! Скидка пять процентов, и никаких возражений!", Main.game.getNpc(Ralph.class))
 						+"<br/>"
 						+ "Despite his usual polite and friendly temperament, he sounds quite angry as he scolds you, and you feel a little bad for putting the reputation of his shop on the line."
 						+ " Then again, he was the one to suggest this, so it's not as though you're entirely the one at fault here..."
 						+ "<br/><br/>"
-						+ "<b>You will now earn a</b> <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>"+(SexFlags.ralphDiscount>0?SexFlags.ralphDiscount-5:0)+"%</b> <b>discount.</b>"
-						+ "<br/><br/>");
+						+ "<b>You will now earn a</b> <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>"+(SexFlags.ralphDiscount>0?SexFlags.ralphDiscount-5:0)+"%</b> <b>скидка.</b><br/><br/>");
 			}
 			
-			UtilText.nodeContentSB.append("Ralph steps back, and after kicking off his trousers, walks over to the front of the shop."
-					+ " As you hear him locking the front door and pulling down the shop's blinds, you realise that the last customer must have left some time ago."
-					+ " Before you have time to get out from under the counter, however, the imposing figure of Ralph moves back into view, blocking your way."
-					+ "<br/><br/>"
-					+ UtilText.parseSpeech("So you want a bigger discount, huh?! And how exactly do you intend to earn it?", Main.game.getNpc(Ralph.class))
-					+" He asks, crossing his arms and frowning down at you."
-					+ "<br/><br/>"
-					+ "You realise that although he was perfectly happy with having you suck his cock, he's going to need some convincing if you're to get him to use your other hole."
-					+ " Shifting aside your clothing, you awkwardly shuffle around on the spot, bending over to present your "+Main.game.getPlayer().getAssCapacity().getDescriptor()+" asshole."
-					+ " You hear Ralph struggling to suppress an eager groan, and as you shake your "+Main.game.getPlayer().getHipSize().getDescriptor()+" hips from side to side, he breaks his composure."
-					+ "<br/><br/>"
-					+ "Suddenly, you feel a strong pair of hands grab your hips, and before you can react, Ralph pulls you back out from under the counter, and in one swift movement, pushes you down, face first, onto the counter-top."
-					+ " You let out a happy little cry at his dominant treatment of you, and as he roughly gropes and squeezes your "+Main.game.getPlayer().getAssSize().getDescriptor()+" ass, he leans down and growls in your ear, "
+			UtilText.nodeContentSB.append("Ralph отступает назад и, скинув брюки, идет к входу в лавку. Когда ты слышишь, как он запирает входную дверь и опускает жалюзи, до тебя доходит, что последний покупатель ушел уже довольно давно. Однако прежде чем ты успеваешь выбраться из-под прилавка, внушительная фигура Ralph снова возникает перед тобой, преграждая путь.<br/><br/>"
+					+ UtilText.parseSpeech("Значит, хочешь скидку побольше, а?! И как именно ты намерена её заслужить?", Main.game.getNpc(Ralph.class))
+					+" Спрашивает он, скрестив руки на груди и хмуро глядя на тебя сверху вниз.<br/><br/>Ты понимаешь, что, хотя он был вполне доволен тем, что ты сосешь его член, тебе придется его убедить, если ты хочешь, чтобы он использовал твое другое отверстие. Отодвинув одежду, ты неловко переминаешься с ноги на ногу, наклоняясь, чтобы продемонстрировать свое "+Main.game.getPlayer().getAssCapacity().getDescriptor()+" анус. Ты слышишь, как Ralph изо всех сил пытается подавить предвкушающий стон, и пока ты трясешь своей "+Main.game.getPlayer().getHipSize().getDescriptor()+" бедрами из стороны в сторону, он теряет самообладание.<br/><br/>Внезапно ты чувствуешь, как сильные руки хватают тебя за бедра, и прежде чем ты успеваешь среагировать, Ralph вытягивает тебя из-под прилавка и одним резким движением вжимает лицом в столешницу. Ты издаешь радостный вскрик от его властного обращения, и пока он грубо ощупывает и сжимает твою "+Main.game.getPlayer().getAssSize().getDescriptor()+" задницу, он наклоняется и рычит тебе на ухо: "
 					+ UtilText.parseSpeech(
-							"You know, I don't usually do this sort of thing... But damn, you've got a nice-looking ass! I'll give you another twenty percent if you let me take it for a spin.", Main.game.getNpc(Ralph.class))
+							"Знаешь, я обычно не занимаюсь подобным... Но черт возьми, какая у тебя шикарная задница! Дам тебе еще двадцать процентов, если позволишь мне ее немного поразмять.", Main.game.getNpc(Ralph.class))
 					+"<br/><br/>"
 					+ "By now, you don't really care about the discount, all you want is to feel that delicious cock ramming its way into your rear entrance."
 					+ " Even before Ralph's finished giving you his offer, you're crying out in agreement, and he wastes no time in lining his massive cock up to your waiting asshole."
@@ -1376,7 +1263,7 @@ public class RalphOral {
 					+ "<p style='text-align:center;'>"
 					+ "<b>You will now earn a</b> <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>"
 						+(SexFlags.ralphDiscount+20-(SexFlags.alertedCustomer?5:0))
-						+"%</b> <b>discount.</b>");
+						+"%</b> <b>скидка.</b>");
 			
 			return UtilText.nodeContentSB.toString();
 		}
@@ -1427,7 +1314,7 @@ public class RalphOral {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Pound [pc.herHim]";
+			return "Трахнуть [pc.herHim]";
 		}
 
 		@Override
@@ -1441,23 +1328,19 @@ public class RalphOral {
 			
 			if(Main.game.getPlayer().isVisiblyPregnant()) {
 				if(Main.game.getPlayer().isTaur()) {
-					sb.append("Grabbing your "+Main.game.getPlayer().getHipSize().getDescriptor()+" hips, Ralph pulls you back slightly, and as you step back with your hind legs,"
-							+ " he suddenly slams his massive cock fully into you, causing you to rock forwards and let out a desperate wail.");
+					sb.append("Схватив твои "+Main.game.getPlayer().getHipSize().getDescriptor()+" бедра, Ralph слегка оттягивает тебя назад, и когда ты отступаешь на задних ногах, он внезапно с силой вгоняет свой массивный член в тебя целиком, отчего ты подаешься вперед с отчаянным воплем.");
 				} else {
-					sb.append("Grabbing your "+Main.game.getPlayer().getHipSize().getDescriptor()+" hips, Ralph pulls you back slightly, moving your pregnant belly safely away from the counter's edge."
-							+ " Making sure that he's given you enough room, he suddenly slams his massive cock fully into you, causing you to rock forwards and let out a desperate wail.");
+					sb.append("Схватив твои "+Main.game.getPlayer().getHipSize().getDescriptor()+" бедра, Ralph слегка оттягивает тебя назад, уводя твой беременный живот подальше от края прилавка. Убедившись, что освободил достаточно места, он внезапно с силой вгоняет свой массивный член в тебя целиком, отчего ты подаешься вперед с отчаянным воплем.");
 				}
-				sb.append(" Encouraged by your lewd reaction, Ralph starts rapidly thrusting his hips forwards and back, relentlessly pounding away at your slutty cunt."
-								+ " With his legs in position on either side of yours, he focuses his movements solely in his hips, and your screams of ecstasy come out in little bursts as he jackhammers his huge horse-cock into your slit.");
+				sb.append(" Воодушевленный твоей похотливой реакцией, Ralph начинает стремительно двигать бедрами вперед и назад, неустанно вколачиваясь в твою шлюшью киску. Расположив ноги по обе стороны от твоих, он концентрирует все движения только в бедрах, и твои экстатические крики вырываются короткими вспышками, пока он вбивает свой огромный конский член в твою щель, словно отбойный молоток.");
 				
 			} else {
-				sb.append("Grabbing your "+Main.game.getPlayer().getHipSize().getDescriptor()+" hips, Ralph pushes you hard into the counter, leaning down heavily on top of you as he starts relentlessly pounding away at your slutty cunt."
-							+ " Using your body as a cushion, he focuses his movements solely in his hips, and your screams of ecstasy come out in little bursts as he jackhammers his huge horse-cock between your legs.");
+				sb.append("Схватив твои "+Main.game.getPlayer().getHipSize().getDescriptor()+" бедрах, Ralph сильно прижимает тебя к стойке, тяжело наваливаясь на тебя сверху и начиная неустанно вколачиваться в твою шлюшью киску. Используя твое тело как подушку, он концентрирует все движения только в бедрах, и твои экстатические крики вырываются короткими вспышками, пока он вбивает свой огромный конский член между твоих ног, словно отбойный молоток.");
 			}
 			
 			sb.append((Main.sex.getCharacterPerformingAction().isWearingCondom()
-						?" Every time he bottoms out, the momentum in his heavy sack causes his balls to swing up and slap against you, oblivious to the fact that their contents are going to be caught in the condom you made their owner wear."
-						:" Every time he bottoms out, the momentum in his heavy sack causes his balls to swing up and slap against you, giving you a little reminder as to the origin of your impending creampie's filling."));
+						?" Каждый раз, когда он входит до самого основания, инерция его тяжелого мешка заставляет яички подпрыгивать и шлепаться о тебя, и ему плевать на то, что всё их содержимое окажется запертым в презервативе, который он заставил надеть хозяина."
+						:" Каждый раз, когда он входит до самого основания, инерция его тяжелого мешка заставляет яички подпрыгивать и шлепаться о тебя, напоминая тебе о том, чем именно будет наполнена твоя грядущая конча внутри."));
 			
 			return sb.toString();
 		}
@@ -1477,7 +1360,7 @@ public class RalphOral {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Pound [pc.herHim]";
+			return "Трахнуть [pc.herHim]";
 		}
 
 		@Override
@@ -1487,11 +1370,10 @@ public class RalphOral {
 
 		@Override
 		public String getDescription() {
-			return "Grabbing your "+Main.game.getPlayer().getHipSize().getDescriptor()+" hips, Ralph pushes you hard into the counter, leaning down heavily on top of you as he starts relentlessly pounding away at your slutty ass."
-				+ " Using your body as a cushion, he focuses his movements solely in his hips, and your screams of ecstasy come out in little bursts as he jackhammers his huge horse-cock into your back door."
+			return "Схватив твои "+Main.game.getPlayer().getHipSize().getDescriptor()+" бедра — Ralph с силой прижимает тебя к столешнице, тяжело наваливаясь сверху и начиная безжалостно вколачивать свой член в твою шлюшью задницу. Используя твое тело как подушку, он концентрирует все движения только в бедрах, и твои восторженные крики вырываются короткими всплесками, пока он вбивает свой огромный конский член в твой задний проход, словно отбойный молоток."
 				+ (Main.sex.getCharacterPerformingAction().isWearingCondom()
-					?" Every time he bottoms out, the momentum in his heavy sack causes his balls to swing up and slap against you, oblivious to the fact that their contents are going to be caught in the condom you made their owner wear."
-					:" Every time he bottoms out, the momentum in his heavy sack causes his balls to swing up and slap against you, giving you a little reminder as to the origin of your impending creampie's filling.");
+					?" Каждый раз, когда он входит до самого основания, инерция его тяжелого мешка заставляет яички подпрыгивать и шлепаться о тебя, и ему плевать на то, что всё их содержимое окажется запертым в презервативе, который он заставил надеть хозяина."
+					:" Каждый раз, когда он входит до самого основания, инерция его тяжелого мешка заставляет яички подпрыгивать и шлепаться о тебя, напоминая тебе о том, чем именно будет наполнена твоя грядущая конча внутри.");
 		}
 		
 	};
@@ -1509,7 +1391,7 @@ public class RalphOral {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Fuck [pc.herHim]";
+			return "Трахнуть [pc.herHim]";
 		}
 
 		@Override
@@ -1520,12 +1402,12 @@ public class RalphOral {
 		@Override
 		public String getDescription() {
 			return (Main.game.getPlayer().isVisiblyPregnant()
-						?"Ralph continues holding your hips tightly, rocking you forwards and back as he fills you with his huge, black horse-cock."
-						:"Ralph continues holding your hips tightly, rocking you into the counter as he fills you with his huge, black horse-cock.")
-					+ " His heavy balls swing to and fro, impatient to deposit their potent load "
+						?"Ralph продолжает крепко сжимать твои бедра, раскачивая тебя вперед и назад, пока наполняет тебя своим огромным черным конским членом."
+						:"Ralph продолжает крепко сжимать твои бедра, вжимая тебя в столешницу, пока наполняет тебя своим огромным черным конским членом.")
+					+ " Его тяжелые яички раскачиваются взад-вперед, нетерпеливо желая извергнуть свой мощный заряд "
 					+ (Main.sex.getCharacterPerformingAction().isWearingCondom()
-						?"into the condom that you've provided."
-						:(Main.game.getPlayer().isVisiblyPregnant()?"deep into your hungry cunt.":"deep in your waiting womb."));
+						?"в презерватив, который ты подготовила."
+						:(Main.game.getPlayer().isVisiblyPregnant()?"глубоко в твою голодную киску.":"глубоко в твою ждущую матку."));
 		}
 		
 	};
@@ -1543,7 +1425,7 @@ public class RalphOral {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Fuck [pc.herHim]";
+			return "Трахнуть [pc.herHim]";
 		}
 
 		@Override
@@ -1553,11 +1435,10 @@ public class RalphOral {
 
 		@Override
 		public String getDescription() {
-				return "Ralph continues holding your hips tightly, rocking you into the counter as he fills you with his huge, black horse-cock."
-					+ " His heavy balls swing to and fro, impatient to deposit their potent load "
+				return "Ralph продолжает крепко сжимать твои бедра, вжимая тебя в столешницу, пока наполняет тебя своим огромным черным конским членом. Его тяжелые яички раскачиваются взад-вперед, нетерпеливо желая извергнуть свой мощный заряд "
 					+ (Main.sex.getCharacterPerformingAction().isWearingCondom()
-						?"into the condom that you've provided."
-						:"deep in your waiting ass.");
+						?"в презерватив, который ты подготовила,"
+						:"глубоко в твой ждущий зад.");
 		}
 		
 	};
@@ -1577,29 +1458,29 @@ public class RalphOral {
 		
 		@Override
 		public String getActionTitle() {
-			return "Prepare";
+			return "Приготовиться";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "You can feel that [npc2.name] is fast approaching [npc2.her] orgasm. Prepare yourself for it.";
+			return "Вы чувствуете, что [npc2.name] стремительно приближается к [npc2.her] оргазму. Приготовьтесь к нему.";
 		}
 		
 		@Override
 		public String getDescription() {
 			switch(Main.sex.getSexPace(Main.game.getPlayer())) {
 				case DOM_GENTLE:
-					return "You let out a soft [pc.moan] of encouragement as you prepare for [npc.name] to reach [npc.her] orgasm.";
+					return "Ты издаешь мягкий [pc.moan] ободрения, готовясь к тому, чтобы [npc.name] достиг(ла) [npc.her] оргазма.";
 				case DOM_NORMAL:
-					return "You let out [pc.a_moan+] of encouragement as you prepare for [npc.name] to reach [npc.her] orgasm.";
+					return "Ты издаешь [pc.a_moan+] ободрения, готовясь к тому, чтобы [npc.name] достиг(ла) [npc.her] оргазма.";
 				case DOM_ROUGH:
-					return "You let out [pc.a_moan+] of encouragement as you prepare for [npc.name] to reach [npc.her] orgasm.";
+					return "Ты издаешь [pc.a_moan+] ободрения, готовясь к тому, чтобы [npc.name] достиг(ла) [npc.her] оргазма.";
 				case SUB_EAGER:
-					return "You let out [pc.a_moan+] of encouragement as you prepare for [npc.name] to reach [npc.her] orgasm.";
+					return "Ты издаешь [pc.a_moan+] ободрения, готовясь к тому, чтобы [npc.name] достиг(ла) [npc.her] оргазма.";
 				case SUB_NORMAL:
-					return "You let out [pc.a_moan] of encouragement as you prepare for [npc.name] to reach [npc.her] orgasm.";
+					return "Ты издаешь [pc.a_moan] ободрения, готовясь к тому, чтобы [npc.name] достиг(ла) [npc.her] оргазма.";
 				case SUB_RESISTING:
-					return "You let out [pc.a_moan+] as you desperately try to pull away from [npc.name] before [npc.she] orgasms.";
+					return "Ты издаешь [pc.a_moan+], отчаянно пытаясь отстраниться от [npc.name] перед тем, как [npc.she] достигнет(ет) оргазма.";
 			}
 			
 			return "";
@@ -1619,12 +1500,12 @@ public class RalphOral {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Orgasm";
+			return "Оргазм";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "You've reached your climax, and can't hold back your orgasm any longer.";
+			return "Вы достигли климакса и больше не можете сдерживать оргазм.";
 		}
 
 		@Override
@@ -1637,16 +1518,16 @@ public class RalphOral {
 			UtilText.nodeContentSB.setLength(0);
 			
 			if(Main.sex.getAllOngoingSexAreas(Main.game.getPlayer(), SexAreaOrifice.MOUTH).contains(SexAreaPenetration.PENIS)) {
-				UtilText.nodeContentSB.append("As Ralph's huge black cock thrusts deep down your throat, you feel yourself reaching your climax, and before you know what's happening, you're letting out a desperate, muffled [pc.moan].");
+				UtilText.nodeContentSB.append("Когда огромный черный член Ralph глубоко врывается в твое горло, ты чувствуешь, как приближается твой пик, и прежде чем ты успеваешь что-то понять, из тебя вырывается отчаянный, приглушенный [pc.moan].");
 				
 			} else if(Main.sex.getAllOngoingSexAreas(Main.game.getPlayer(), SexAreaOrifice.VAGINA).contains(SexAreaPenetration.PENIS)) {
-				UtilText.nodeContentSB.append("As Ralph's huge black cock thrusts deep into your [pc.pussy+], you feel yourself reaching your climax, and before you know what's happening, you're letting out [pc.a_moan+].");
+				UtilText.nodeContentSB.append("Когда огромный черный член Ralph глубоко входит в твою [pc.pussy+], ты чувствуешь, как приближается твой пик, и прежде чем ты успеваешь что-то понять, ты издаешь [pc.a_moan+].");
 				
 			} else if(Main.sex.getAllOngoingSexAreas(Main.game.getPlayer(), SexAreaOrifice.ANUS).contains(SexAreaPenetration.PENIS)) {
-				UtilText.nodeContentSB.append("As Ralph's huge black cock thrusts deep into your [pc.asshole+], you feel yourself reaching your climax, and before you know what's happening, you're letting out [pc.a_moan+].");
+				UtilText.nodeContentSB.append("Когда огромный черный член Ralph глубоко входит в твою [pc.asshole+], ты чувствуешь, как приближается твой пик, и прежде чем ты успеваешь что-то понять, ты издаешь [pc.a_moan+].");
 				
 			} else {
-				UtilText.nodeContentSB.append("You feel a desperate heat building in your groin, and with [pc.a_moan+], you reach your climax.");
+				UtilText.nodeContentSB.append("Ты чувствуешь, как в паху нарастает отчаянный жар, и с [pc.a_moan+] ты достигаешь своего пика.");
 			}
 			
 			// PENIS ORGASM:
@@ -1656,42 +1537,42 @@ public class RalphOral {
 				UtilText.nodeContentSB.append("<br/><br/>");
 				
 				if(Main.game.getPlayer().hasPenisModifier(PenetrationModifier.KNOTTED)) {
-					UtilText.nodeContentSB.append("You let out a deep groan as you feel the knot at the base of your [pc.cock+] swelling up as you prepare to cum.");
+					UtilText.nodeContentSB.append("Ты издаешь глубокий стон, чувствуя, как у основания твоего [pc.cock+] набухает узел, когда ты готовишься кончить.");
 					
 				} else if(Main.game.getPlayer().hasPenisModifier(PenetrationModifier.FLARED)) {
-					UtilText.nodeContentSB.append("You let out a deep groan as you feel the wide head of your [pc.cock+] swelling up as you prepare to cum.");
+					UtilText.nodeContentSB.append("Ты издаешь глубокий стон, чувствуя, как широкая головка твоего [pc.cock+] набухает, когда ты готовишься кончить.");
 					
 				} else {
-					UtilText.nodeContentSB.append("You let out a deep groan as you feel your [pc.cock+] twitch and throb as you prepare to cum.");
+					UtilText.nodeContentSB.append("Ты издаешь глубокий стон, чувствуя, как твой [pc.cock+] дергается и пульсирует в предвкушении оргазма.");
 					
 				}
 				
 				// Describe cum amount:
-				UtilText.nodeContentSB.append(" As your "+Main.game.getPlayer().getTesticleSize().getDescriptor()+" balls tense up");
+				UtilText.nodeContentSB.append(" Так как ваше "+Main.game.getPlayer().getTesticleSize().getDescriptor()+" яички напрягаются");
 				switch (Main.game.getPlayer().getPenisOrgasmCumQuantity()) {
 					case ZERO_NONE:
-						UtilText.nodeContentSB.append(", you realise that you're not able to produce even one drop of cum.");
+						UtilText.nodeContentSB.append(", ты понимаешь, что не можешь выдавить из себя даже капли спермы.");
 						break;
 					case ONE_TRICKLE:
-						UtilText.nodeContentSB.append(", you feel a small trickle of your [pc.cum] squirting");
+						UtilText.nodeContentSB.append(", ты чувствуешь, как из твоего [pc.cum] вырывается тонкая струйка");
 						break;
 					case TWO_SMALL_AMOUNT:
-						UtilText.nodeContentSB.append(", you feel a small amount of your [pc.cum] squirting");
+						UtilText.nodeContentSB.append(", ты чувствуешь, как из твоего [pc.cum] выплескивается небольшое количество смазки");
 						break;
 					case THREE_AVERAGE:
-						UtilText.nodeContentSB.append(", you feel your [pc.cum] squirting");
+						UtilText.nodeContentSB.append(", ты чувствуешь, как твой [pc.cum] брызжет");
 						break;
 					case FOUR_LARGE:
-						UtilText.nodeContentSB.append(", you feel your [pc.cum] shooting");
+						UtilText.nodeContentSB.append(", ты чувствуешь, как твой [pc.cum] извергается");
 						break;
 					case FIVE_HUGE:
-						UtilText.nodeContentSB.append(", you feel your [pc.cum] pouring");
+						UtilText.nodeContentSB.append(", ты чувствуешь, как твой [pc.cum] хлещет");
 						break;
 					case SIX_EXTREME:
-						UtilText.nodeContentSB.append(", you feel your [pc.cum] pouring");
+						UtilText.nodeContentSB.append(", ты чувствуешь, как твой [pc.cum] хлещет");
 						break;
 					case SEVEN_MONSTROUS:
-						UtilText.nodeContentSB.append(", you feel your [pc.cum] pouring");
+						UtilText.nodeContentSB.append(", ты чувствуешь, как твой [pc.cum] хлещет");
 						break;
 					default:
 						break;
@@ -1700,13 +1581,13 @@ public class RalphOral {
 				// Describe where cum is going:
 				if(Main.game.getPlayer().getPenisOrgasmCumQuantity()!=CumProduction.ZERO_NONE){
 					if(Main.game.getPlayer().isWearingCondom()) {
-						UtilText.nodeContentSB.append("out into the condom that you're wearing.");
+						UtilText.nodeContentSB.append("наружу, прямо в твой презерватив.");
 						
 					} else if (!Main.game.getPlayer().isCoverableAreaExposed(CoverableArea.PENIS)) {
-						UtilText.nodeContentSB.append(" into your [pc.lowClothing(PENIS)].");
+						UtilText.nodeContentSB.append(" в твой [pc.lowClothing(PENIS)].");
 						
 					} else {
-						UtilText.nodeContentSB.append(" out all over the floor beneath you.");
+						UtilText.nodeContentSB.append(" наружу, прямо на пол под тобой.");
 					}
 				}
 			}
@@ -1715,45 +1596,37 @@ public class RalphOral {
 			
 			if (Main.game.getPlayer().getVaginaType()!=VaginaType.NONE) {
 				
-				UtilText.nodeContentSB.append("<br/><br/>"
-						+ "A desperate, shuddering heat suddenly crashes up from your [pc.pussy+], and you let out a manic squeal as a blinding wave of pure ecstasy washes over you.");
+				UtilText.nodeContentSB.append("<br/><br/>Отчаянный, дрожащий жар внезапно поднимается от твоей [pc.pussy+], и ты издаешь маниакальный визг, когда ослепительная волна чистого экстаза накрывает тебя.");
 				
 				if (!Main.sex.getCharacterOngoingSexArea(Main.game.getPlayer(), SexAreaOrifice.VAGINA).isEmpty()) {
 					GameCharacter characterPenetrating = Main.sex.getCharacterOngoingSexArea(Main.game.getPlayer(), SexAreaOrifice.VAGINA).get(0);
 					switch(Main.sex.getFirstOngoingSexAreaPenetration(Main.game.getPlayer(), SexAreaOrifice.VAGINA)) {
 						case FINGER:
 							if(characterPenetrating.isPlayer()) {
-								UtilText.nodeContentSB.append(" You curl your fingers up deep inside your [pc.pussy+]"
-										+", and, while desperately stroking in a 'come-hither' motion, you let out a series of high-pitched moans as your vaginal muscles grip and squeeze around your intruding digits.");
+								UtilText.nodeContentSB.append(" Ты глубоко запускаешь пальцы в свою [pc.pussy+] и, отчаянно совершая манящие движения, издаешь серию высоких стонов, пока мышцы влагалища сжимают и обхватывают твои вошедшие пальцы.");
 							} else {
-								UtilText.nodeContentSB.append(" [npc.NamePos] fingers carry on pumping away at your [pc.pussy+]"
-										+", and you let out a series of high-pitched moans as your vaginal muscles grip and squeeze around the intruding digits.");
+								UtilText.nodeContentSB.append(" Пальцы [npc.NamePos] продолжают качать твою [pc.pussy+], и ты издаешь серию высоких стонов, пока мышцы влагалища сжимают и обхватывают вошедшие пальцы.");
 							}
 							break;
 						case PENIS:
 							if(characterPenetrating.isPlayer()) {
-								UtilText.nodeContentSB.append(" You carry on fucking yourself through your orgasm, and you let out a series of high-pitched moans as your vaginal muscles grip and squeeze around your [pc.cock+].");
+								UtilText.nodeContentSB.append(" Ты продолжаешь трахать саму себя во время оргазма, издавая серию высоких стонов, пока мышцы влагалища сжимают и обхватывают твою [pc.cock+].");
 							} else {
-								UtilText.nodeContentSB.append(" Ralph carries on fucking your [pc.pussy+] through your orgasm, and you let out a series of high-pitched moans as your vaginal muscles grip and squeeze around his meaty equine shaft."
-										+ " Encouraged by the squeezing, milking sensation of your vagina, Ralph buries his thick black horse-cock deep into your [pc.pussy+] and leans down heavily on top of you."
-										+ " You feel the heat of his strong, masculine body pressing down on your back, and you let out a defeated moan as his equine shaft claims you as his most recent sexual conquest.");
+								UtilText.nodeContentSB.append(" Ralph продолжает трахать твою [pc.pussy+] на протяжении всего твоего оргазма, и ты издаешь серию высоких стонов, пока мышцы влагалища сжимают и обхватывают его мясистый лошадиный член. Воодушевленный сжимающим, доящим ощущением твоего влагалища, Ralph глубоко вгоняет свой толстый черный конский член в твою [pc.pussy+] и тяжело наваливается на тебя сверху. Ты чувствуешь жар его сильного мужского тела, прижимающегося к твоей спине, и издаешь побежденный стон, когда его лошачий член заявляет права на тебя как на свою очередную сексуальную добычу.");
 							}
 							break;
 						case TAIL:
 							if(characterPenetrating.isPlayer()) {
-								UtilText.nodeContentSB.append(" You carry on using your tail to fuck yourself through your orgasm, and you let out a series of high-pitched moans as your vaginal muscles grip and squeeze around the intruding object.");
+								UtilText.nodeContentSB.append(" Ты продолжаешь пользоваться хвостом, чтобы трахать саму себя во время оргазма, и издаешь серию пронзительных стонов, когда мышцы влагалища сжимаются и обхватывают инородный объект.");
 							} else {
-								UtilText.nodeContentSB.append(" [npc.NamePos] tail carries on fucking your [pc.pussy+]"
-										+" through your orgasm, and you let out a series of high-pitched moans as your vaginal muscles grip and squeeze around the intruding object.");
+								UtilText.nodeContentSB.append(" [npc.NamePos] продолжает трахать твою [pc.pussy+] во время оргазма, и ты издаешь серию пронзительных стонов, когда мышцы влагалища сжимаются и обхватывают инородный объект.");
 							}
 							break;
 						case TONGUE:
 							if(characterPenetrating.isPlayer()) {
-								UtilText.nodeContentSB.append(" You carry on thrusting your tongue deep into your [pc.pussy+]"
-										+" as you orgasm, and you let out a series of high-pitched moans as your vaginal muscles grip and squeeze around the intruding muscle.");
+								UtilText.nodeContentSB.append(" Ты продолжаешь глубоко засовывать язык в свою [pc.pussy+] во время оргазма, и издаешь серию пронзительных стонов, когда мышцы влагалища сжимаются и обхватывают инородный мускул.");
 							} else {
-								UtilText.nodeContentSB.append(" [npc.Name] carries on eating you out, licking and kissing at your [pc.pussy+]"
-										+" while you orgasm, and you let out a series of high-pitched moans as your vaginal muscles grip and squeeze around the intruding muscle.");
+								UtilText.nodeContentSB.append(" [npc.Name] продолжает ласкать тебя, вылизывая и целуя твою [pc.pussy+], пока ты испытываешь оргазм, и ты издаешь серию пронзительных стонов, когда мышцы влагалища сжимаются и обхватывают инородный мускул.");
 							}
 							break;
 						default:
@@ -1761,25 +1634,19 @@ public class RalphOral {
 					}
 					
 				} else { // No penetration:
-					UtilText.nodeContentSB.append(" Your [pc.pussy+] clenches down hard, and the wave of disappointment upon finding itself empty almost overwhelms the pleasure that radiates up through your groin.");
+					UtilText.nodeContentSB.append(" Твоя [pc.pussy+] сильно сжимается, и волна разочарования от осознания собственной пустоты почти заглушает удовольствие, разливающееся по всей паховой области.");
 				}
 
-				UtilText.nodeContentSB.append(" With a final, ear-splitting scream of pure arousal, your climax crashes over you, and after a few moments, leaves you as a panting, thoroughly-satisfied wreck.");
+				UtilText.nodeContentSB.append(" С последним, оглушительным криком чистого возбуждения на тебя обрушивается кульминация, которая через несколько мгновений оставляет тебя тяжело дышащей, полностью удовлетворенной развалиной.");
 			}
 			
 			// MOUND ORGASM:
 			if (Main.game.getPlayer().getPenisType()==PenisType.NONE && Main.game.getPlayer().getVaginaType()==VaginaType.NONE) {
-				UtilText.nodeContentSB.append("<br/><br/>"
-									+ "Despite your lack of sexual organs, you feel a desperate warmth spreading quickly through your lower abdomen, and before you know what's happening,"
-									+ " the feeling has concentrated itself in your groin, and you're suddenly hit by a blinding orgasm."
-									+ " Your legs clench together and you let out a desperate cry as the climax deep within your horny doll-like mound takes you by surprise."
-									+ " A wave of hot pleasure radiates up throughout your whole body, and you shudder and quiver as the overwhelming wave of ecstasy washes through you.");
+				UtilText.nodeContentSB.append("<br/><br/>Несмотря на отсутствие половых органов, ты чувствуешь, как отчаянное тепло стремительно разливается по нижней части живота, и прежде чем ты успеваешь что-то осознать, это ощущение концентрируется в паху, и тебя внезапно накрывает ослепительный оргазм. Твои ноги сжимаются, и ты издаешь отчаянный крик, когда кульминация глубоко внутри твоего возбужденного кукольного холмика застает тебя врасплох. Волна жаркого наслаждения расходится по всему телу, и ты содрогаешься и дрожишь, когда тебя захлестывает всепоглощающая волна экстаза.");
 			}
 			
 			if(SexFlags.customerAtCounter) {
-				UtilText.nodeContentSB.append("<br/><br/>"
-						+ "As you start to come down from your climax, you hear Ralph offering a part of your discount to the customer who just overheard your not-so-quiet orgasm"
-						+ ", and you let out a defeated sigh as you realise that you forgot they were there.");
+				UtilText.nodeContentSB.append("<br/><br/>Когда ты начинаешь приходить в себя после оргазма, ты слышишь, как Ralph предлагает часть твоей скидки клиенту, который только что подслушал твой не самый тихий оргазм, и ты издаешь побежденный вздох, осознавая, что совсем забыла об их присутствии.");
 			}
 			
 			return UtilText.parse(Main.sex.getCharacterTargetedForSexAction(this), UtilText.nodeContentSB.toString());
@@ -1816,29 +1683,29 @@ public class RalphOral {
 		
 		@Override
 		public String getActionTitle() {
-			return "Prepare";
+			return "Приготовиться";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "You can feel that [pc.name] is fast approaching [pc.her] orgasm. Prepare yourself for it.";
+			return "Ты чувствуешь, что [pc.name] стремительно приближается к [pc.her] оргазму. Приготовься к этому.";
 		}
 		
 		@Override
 		public String getDescription() {
 			switch(Main.sex.getSexPace(Main.game.getPlayer())) {
 				case DOM_GENTLE:
-					return "[npc.Name] lets out a soft [npc.moan] of encouragement as [npc.she] prepares for you to reach your orgasm.";
+					return "[npc.Name] издает мягкий [npc.moan] ободрения, пока [npc.she] готовится к твоему оргазму.";
 				case DOM_NORMAL:
-					return "[npc.Name] lets out [npc.a_moan+] of encouragement as [npc.she] prepares for you to reach your orgasm.";
+					return "[npc.Name] издает [npc.a_moan+] ободрения, пока [npc.she] готовится к твоему оргазму.";
 				case DOM_ROUGH:
-					return "[npc.Name] lets out [npc.a_moan+] of encouragement as [npc.she] prepares for you to reach your orgasm.";
+					return "[npc.Name] издает [npc.a_moan+] ободрения, пока [npc.she] готовится к твоему оргазму.";
 				case SUB_EAGER:
-					return "[npc.Name] lets out [npc.a_moan+] of encouragement as [npc.she] prepares for you to reach your orgasm.";
+					return "[npc.Name] издает [npc.a_moan+] ободрения, пока [npc.she] готовится к твоему оргазму.";
 				case SUB_NORMAL:
-					return "[npc.Name] lets out [npc.a_moan+] of encouragement as [npc.she] prepares for you to reach your orgasm.";
+					return "[npc.Name] издает [npc.a_moan+] ободрения, пока [npc.she] готовится к твоему оргазму.";
 				case SUB_RESISTING:
-					return "[npc.Name] lets out [npc.a_moan+] as [npc.she] desperately tries to pull away from you before you orgasm.";
+					return "[npc.Name] издает [npc.a_moan+], пока [npc.she] отчаянно пытается вырваться из твоих рук перед тем, как ты кончишь.";
 			}
 			
 			return "";
@@ -1858,12 +1725,12 @@ public class RalphOral {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Stay in position";
+			return "Не двигаться";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "You've reached your climax, and can't hold back your orgasm any longer.";
+			return "Вы достигли климакса и больше не можете сдерживать оргазм.";
 		}
 		
 		@Override
@@ -1881,110 +1748,53 @@ public class RalphOral {
 			UtilText.nodeContentSB.setLength(0);
 			
 			if(!Main.sex.getAllOngoingSexAreas(Main.game.getPlayer(), SexAreaOrifice.VAGINA).isEmpty()){
-				UtilText.nodeContentSB.append("Ralph starts letting out a series of low, heavy grunts, and you gasp as you feel his member start to twitch inside of you."
-						+ " With a roar, he slams his massive horse-cock deep into your cunt, and you let out a squeal as you feel his powerful shaft ride up inside of you as it prepares for its master's orgasm."
-						+ "<br/>"
-						+ " Grinding the base of his cock against your outer folds, his massive balls tense up as Ralph starts to cum.");
+				UtilText.nodeContentSB.append("Ralph начинает издавать серию низких, тяжелых стонов, и ты ахаешь, чувствуя, как его член начинает дергаться внутри тебя. С ревом он вонзает свой массивный лошадиный член глубоко в твою киску, и ты взвизгиваешь, чувствуя, как его мощный ствол поднимается внутри тебя, готовясь к оргазму своего хозяина.<br/> Растирая основание члена о твои внешние складки, его массивные яйца напрягаются, когда Ralph начинает кончать.");
 				
 				if(Main.sex.getCharacterPerformingAction().isWearingCondom()) {
-					UtilText.nodeContentSB.append(" With a powerful rocking motion, his gigantic dick spurts out its potent load directly into the condom, and as you feel the hot seed ballooning out the rubber inside of you, you let out a satisfied sigh."
-							+ " His cock continues to pump a few more times, the huge, black equine shaft quickly depositing its seed harmlessly into the protection you've provided."
-							+ "<br/><br/>"
-							+ "As Ralph's balls finish emptying themselves, he steps back, sliding his rapidly-softening member from your well-used pussy."
-							+ " You let out a little sigh as you're suddenly left feeling extremely empty, and you roll over onto your back and playfully wrap your legs around Ralph,"
-							+ " pulling him forwards and rubbing your pussy against his now-flaccid equine cock as he finishes tying up the used condom."
-							+ " He places the little seed-filled package down next to you, and you pout at him as he takes hold of your legs and disentangles himself, laughing as he sees your reaction,"
-							+ " [ralph.speechNoEffects(Hey! I've got a shop to run here, remember? Anyway, I think you've more than earned that discount...)]");
+					UtilText.nodeContentSB.append(" Мощным толчком его гигантский член извергает мощную порцию семени прямо в презерватив, и когда ты чувствуешь, как горячее семя раздувает резину внутри тебя, ты удовлетворенно вздыхаешь. Его член продолжает качать еще несколько раз, и огромный черный конский ствол быстро и безболезненно оставляет свое семя в защитной оболочке, которую ты обеспечила.<br/><br/>Когда яички Ralph окончательно опустошаются, он отстраняется, вынимая свой стремительно размягчающийся член из твоей изрядно использованной киски. Ты тихо вздыхаешь от внезапного чувства пустоты, затем переворачиваешься на спину и игриво обвиваешь ногами Ralph, притягивая его к себе и потирая киску о его теперь уже вялый конский член, пока он завязывает использованный презерватив. Он кладет этот маленький, наполненный семенем сверток рядом с тобой, и ты дуешь на него губы, когда он берется за твои ноги и высвобождается, смеясь при виде твоей реакции, [ralph.speechNoEffects(Эй! Мне тут еще лавкой управлять, помнишь? В любом случае, думаю, ты более чем заслужила эту скидку...)]");
 				} else {
-					UtilText.nodeContentSB.append(" With a powerful rocking motion, his gigantic dick spurts out its potent load"
+					UtilText.nodeContentSB.append(" Мощным раскачивающимся движением его гигантский член извергает мощный заряд"
 							+ (Main.game.getPlayer().isVisiblyPregnant()
-								?", and as you feel the hot cum filling you up, you let out a satisfied moan."
-								:" directly into your womb, and as you feel the hot cum filling you up, you let out a satisfied moan.")
-							+ " His cock continues to pump a few more times, the huge, black equine shaft making sure to deposit its seed deep into your hungry cunt."
+								?", и когда ты чувствуешь, как горячая сперма наполняет тебя, ты удовлетворенно стонешь."
+								:" прямо в твою матку, и когда ты чувствуешь, как горячая сперма наполняет тебя, ты удовлетворенно стонешь.")
+							+ " Его член делает еще несколько толчков, и этот огромный черный конь, уверенно вбивая свое семя глубоко в твою голодную киску."
 							+ (Main.game.getPlayer().isVisiblyPregnant()
-								?" Once your pussy is completely saturated with sticky white horse-jizz, you feel Ralph's strong grip on your hips start to relax as he finishes his orgasm."
-								:" Once your womb is completely saturated with sticky white horse-jizz, you feel Ralph's strong grip on your hips start to relax as he finishes his orgasm.")
-							+ "<br/><br/>"
-							+ "As Ralph's balls finish emptying themselves, he steps back, and with a wet sucking sound, slips his rapidly-softening member out of your well-used slit."
-							+ " You let out a little sigh as you're suddenly left feeling extremely empty, and you feel a little trickle of his warm, wet seed escaping from your entrance."
+								?" Когда твоя киска полностью пропитывается липкой белой лошадиной спермой, ты чувствуешь, как крепкая хватка Ralph на твоих бедрах ослабевает — он заканчивает свой оргазм."
+								:" Когда твоя матка полностью пропитывается липкой белой лошадиной спермой, ты чувствуешь, как крепкая хватка Ralph на твоих бедрах ослабевает — он заканчивает свой оргазм.")
+							+ "<br/><br/>Когда яйца Ralph окончательно опустошаются, он отстраняется и с влажным причмокивающим звуком вынимает свой стремительно обмякающий член из твоей раздолбанной щели. Ты издаешь тихий вздох, внезапно ощущая пугающую пустоту, и чувствуешь, как тонкая струйка его теплой влажной спермы вытекает из твоего входа."
 							+(Main.game.getPlayer().isTaur()
-								?" Looking back over your shoulder, you playfully push back against Ralph, rubbing your cum-filled pussy against his now-flaccid equine cock."
-										+ " It seems as though he's not up for round two, however, and you pout at him as he laughs,"
-								:" Rolling over onto your back, you playfully wrap your legs around Ralph, pulling him forwards and rubbing your cum-filled pussy against his now-flaccid equine cock."
-									+ " It seems as though he's not up for round two, however, and you pout at him as he takes hold of your legs and disentangles himself, laughing as he sees your reaction,")
-							+ " [ralph.speechNoEffects(Hey! I've got a shop to run here, remember? Anyway, I think you've more than earned that discount...)]");
+								?" Оглянувшись через плечо, ты игриво подаешься назад навстречу Ralph, потирая свою наполненную спермой киску о его теперь уже вялый конский член. Однако, кажется, он не настроен на второй раунд, и ты обиженно дуешь губы, пока он смеется."
+								:" Перевернувшись на спину, ты игриво обвиваешь ногами Ralph, притягивая его к себе и потирая свою наполненную спермой киску о его теперь уже вялый конский член. Однако, кажется, он не настроен на второй раунд, и ты обиженно дуешь губы, когда он берется за твои ноги и высвобождается, смеясь при виде твоей реакции.")
+							+ " [ralph.speechNoEffects(Эй! У меня тут вообще-то магазин, помнишь? В любом случае, думаю, ты заслужила эту скидку...)]");
 				}
 				
 			}else if(!Main.sex.getAllOngoingSexAreas(Main.game.getPlayer(), SexAreaOrifice.ANUS).isEmpty()){
-				UtilText.nodeContentSB.append("Ralph starts letting out a series of low, heavy grunts, and you gasp as you feel his member start to twitch inside of you."
-						+ " With a roar, he slams his massive horse-cock deep into your ass, and you let out a cry as you feel his powerful shaft ride up inside of you as it prepares for its master's orgasm."
-						+ "<br/>"
-						+ " Grinding the base of his cock against your asshole, his massive balls tense up as Ralph starts to cum.");
+				UtilText.nodeContentSB.append("Ralph начинает издавать серию низких, тяжелых стонов, и ты ахаешь, чувствуя, как его член начинает дергаться внутри тебя. С ревом он вбивает свой массивный конский член глубоко в твою задницу, и ты вскрикиваешь, ощущая, как его мощный ствол ходит внутри тебя, готовясь к оргазму своего хозяина.<br/> Растирая основание члена о твой анус, его огромные яйца напрягаются, когда Ralph начинает кончать.");
 				 
 				if(Main.sex.getCharacterPerformingAction().isWearingCondom()) {
-					UtilText.nodeContentSB.append(" With a powerful rocking motion, his gigantic dick spurts out its potent load directly into the condom, and as you feel the hot seed ballooning out the rubber inside of you, you let out a satisfied sigh."
-							+ " His cock continues to pump a few more times, the huge, black equine shaft quickly depositing its seed harmlessly into the protection you've provided."
-							+ "<br/><br/>"
-							+ "As Ralph's balls finish emptying themselves, he steps back, sliding his rapidly-softening member from your well-used back door."
-							+ " You let out a little sigh as you're suddenly left feeling extremely empty, and you roll over onto your back and playfully wrap your legs around Ralph,"
-							+ " pulling him forwards and rubbing your groin against his now-flaccid equine cock as he finishes tying up the used condom."
-							+ " He places the little seed-filled package down next to you, and you pout at him as he takes hold of your legs and disentangles himself, laughing as he sees your reaction,"
-							+ " [ralph.speechNoEffects(Hey! I've got a shop to run here, remember? Anyway, I think you've more than earned that discount...)]");
+					UtilText.nodeContentSB.append(" Мощным толчком его гигантский член извергает мощную порцию семени прямо в презерватив, и когда ты чувствуешь, как горячее семя раздувает резину внутри тебя, ты удовлетворенно вздыхаешь. Его член продолжает качать еще несколько раз, и огромный черный конский ствол быстро и безболезненно оставляет свое семя в защитном слое, который ты обеспечила.<br/><br/>Когда яички Ralph окончательно опустошаются, он отстраняется, вынимая свой стремительно размягчающийся член из твоего изрядно использованного заднего прохода. Ты тихо вздыхаешь, внезапно почувствовав себя ужасно пустой, затем переворачиваешься на спину и игриво обвиваешь ногами Ralph, притягивая его к себе и потирая пах о его теперь уже вялый конский член, пока он завязывает использованный презерватив. Он кладет маленький наполненный семенем сверток рядом с тобой, и ты дуешь на него губы, когда он берется за твои ноги и высвобождается, смеясь при виде твоей реакции, [ralph.speechNoEffects(Эй! У меня тут магазин, помнишь? В любом случае, думаю, ты более чем заслужила эту скидку...)]");
 				} else {
-					UtilText.nodeContentSB.append(" With a powerful rocking motion, his gigantic dick spurts out its potent load directly into your ass, and as you feel the hot seed filling you up, you let out a satisfied groan."
-							+ " His cock continues to pump a few more times, the huge, black equine shaft making sure to deposit its seed deep into your hungry back door."
-							+ " Once your rear entrance is completely saturated with sticky white horse-jizz, you feel Ralph's strong grip on your hips start to relax as he finishes his orgasm."
-							+ "<br/><br/>"
-							+ "As Ralph's balls finish emptying themselves, he steps back, and with a wet sucking sound, slips his rapidly-softening member out of your well-used fuck hole."
-							+ " You let out a little sigh as you're suddenly left feeling extremely empty, and you feel a little trickle of his warm, wet seed escaping from your rear entrance."
+					UtilText.nodeContentSB.append(" Мощным толчком его гигантский член извергает порцию концентрированной спермы прямо тебе в задницу, и когда ты чувствуешь, как горячее семя наполняет тебя, ты издаешь удовлетворенный стон. Его член продолжает качать еще несколько раз, огромный черный конский ствол старательно заталкивает семя глубоко в твой голодный задний проход. Как только твое заднее отверстие полностью насыщается липкой белой лошадиной спермой, ты чувствуешь, как крепкая хватка Ralph на твоих бедрах начинает ослабевать — он заканчивает оргазм.<br/><br/>Когда яйца Ralph окончательно опустошаются, он отстраняется и с влажным причмокивающим звуком вынимает свой стремительно размягчающийся член из твоего изрядно использованного дырочного отверстия. Ты издаешь тихий вздох, внезапно ощущая сильную пустоту, и чувствуешь, как тонкая струйка его теплого влажного семени вытекает из твоего заднего прохода."
 							+(Main.game.getPlayer().isTaur()
-								?" Looking back over your shoulder, you playfully push back against Ralph, rubbing your cum-filled asshole against his now-flaccid equine cock."
-										+ " It seems as though he's not up for round two, however, and you pout at him as he laughs,"
-								:" Rolling over onto your back, you playfully wrap your legs around Ralph, pulling him forwards and rubbing your cum-filled asshole against his now-flaccid equine cock."
-									+ " It seems as though he's not up for round two, however, and you pout at him as he takes hold of your legs and disentangles himself, laughing as he sees your reaction,")
-							+ " [ralph.speechNoEffects(Hey! I've got a shop to run here, remember? Anyway, I think you've more than earned that discount...)]");
+								?" Оглянувшись через плечо, ты игриво подаешься назад навстречу Ralph, потирая свой наполненный спермой анус о его теперь уже вялый конский член. Однако, кажется, он не настроен на второй раунд, и ты дуешь на него, пока он смеется,"
+								:" Перевернувшись на спину, ты игриво обвиваешь ногами Ralph, притягивая его вперед и потирая свой наполненный спермой анус о его теперь уже вялый конский член. Однако, кажется, он не настроен на второй раунд, и ты дуешь на него, пока он берется за твои ноги и высвобождается, смеясь при виде твоей реакции,")
+							+ " [ralph.speechNoEffects(Эй! У меня тут вообще-то магазин, помнишь? В любом случае, думаю, ты заслужила эту скидку...)]");
 				}
 				
 			} else {
 				if(SexFlags.customerAtCounter){
 					if(SexFlags.alertedCustomer)
-						UtilText.nodeContentSB.append("Ralph quickly finishes up with the customer, who's still chuckling at the knowledge of what's going on under the counter."
-								+ " Ralph just seems to want to get rid of them as soon as possible, and forgets to knock off the portion of your discount he just gave away!"
-								+ " The reason for his oversight is soon made clear..."
-								+ "<br/><br/>"
-								+ "<b>There are now</b> <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>no customers</b> <b>near the counter.</b>"
-										+ "<br/><br/>");
+						UtilText.nodeContentSB.append("Ralph быстро заканчивает с клиентом, который всё еще посмеивается, зная, что происходит под прилавком. Кажется, Ralph просто хочет поскорее от него избавиться, и даже забывает вычесть ту часть твоей скидки, которую он только что раздал! Причина его оплошности вскоре проясняется...<br/><br/><b>Теперь здесь</b> <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>нет покупателей</b> <b>у прилавка.</b><br/><br/>");
 					else
-						UtilText.nodeContentSB.append("Ralph quickly finishes up with the customer, and as you hear them start to walk away, you realise that by staying quiet, they didn't find out that you were here!"
-								+ "<br/><br/>"
-								+ "<b>There are now</b> <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>no customers</b> <b>near the counter.</b>"
-										+ "<br/><br/>");
+						UtilText.nodeContentSB.append("Ralph быстро заканчивает с покупателем, и когда ты слышишь, как тот начинает уходить, ты понимаешь, что благодаря твоей тишине они не заметили твоего присутствия!<br/><br/><b>Теперь рядом</b> <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>нет покупателей</b> <b>у прилавка.</b><br/><br/>");
 				}
 				
-				UtilText.nodeContentSB.append("Ralph starts letting out a series of low, heavy grunts, and you gasp as you feel his member start to twitch in your mouth."
-						+ " With a suppressed groan, he slams his massive horse-cock deep down your throat, and, squirming about under the counter, you feel his powerful shaft trying to ride up as it prepares for its master's orgasm."
-						+ "<br/><br/>"
-						+ "Grinding the base of his cock against your lips, his massive balls tense up as Ralph starts to cum.");
+				UtilText.nodeContentSB.append("Ralph начинает издавать серию низких, тяжелых стонов, и ты ахаешь, чувствуя, как его член начинает дергаться у тебя во рту. С подавленным рыком он вонзает свой массивный конский член глубоко тебе в глотку, и, извиваясь под прилавком, ты чувствуешь, как его мощный ствол пытается подняться выше, готовясь к оргазму своего хозяина.<br/><br/>Втирая основание своего члена в твои губы, он напрягает свои огромные яйца, когда Ralph начинает кончать.");
 				
 				if(Main.sex.getCharacterPerformingAction().isWearingCondom()) {
-					UtilText.nodeContentSB.append(" With a powerful rocking motion, his gigantic dick spurts out its potent load directly into the condom, and as you feel the hot seed ballooning out the tip of the protection you've provided,"
-								+ " you let out a very muffled moan."
-							+ " The huge, black equine shaft continues to pump and twitch a few more times as it deposits its seed harmlessly into the protection you've provided."
-							+ "<br/><br/>"
-							+ "As Ralph's balls finish emptying themselves, he steps back, sliding his rapidly-softening member from your well-used throat."
-							+ " You let out a little sigh as you're suddenly left feeling extremely empty, and you shuffle forwards and playfully bite your lip at Ralph, watching as he finishes tying up the used condom."
-							+ " He places the little seed-filled package down next to you, and, after making sure that nobody's watching, he takes hold of one of your [pc.arms+] and pulls you to your feet,"
-							+ " motioning for you to continue shopping as he fulfils his end of the bargain, "
-							+ "[ralph.speechNoEffects(Well, I think you've more than earned that discount...)]");
+					UtilText.nodeContentSB.append(" Мощным толчком его гигантский член извергает мощную порцию семени прямо в презерватив, и когда вы чувствуете, как горячее семя раздувает кончик защиты, которую вы обеспечили, вы издаете приглушенный стон. Огромный черный конский ствол продолжает пульсировать и дергаться еще несколько раз, безболезненно выгружая свое семя в подготовленную вами защиту.<br/><br/>Когда яички Ralph окончательно опустошаются, он отстраняется, вынимая свой стремительно размягчающийся член из вашего изнуренного горла. Вы тихо вздыхаете, внезапно почувствовав себя совершенно пустой, затем подаетесь вперед и игриво прикусываете губу, глядя на Ralph, пока он завязывает использованный презерватив. Он кладет маленький наполненный семенем сверток рядом с вами и, убедившись, что никто не смотрит, берет вас за одну из ваших [pc.arms+] и поднимает на ноги, жестом предлагая продолжить покупки, пока он выполняет свою часть сделки, [ralph.speechNoEffects(Ну, думаю, ты более чем заслужила эту скидку...)]");
 				} else {
-					UtilText.nodeContentSB.append(" With a powerful rocking motion, his gigantic dick spurts out its potent load directly into your stomach, and as you feel the hot seed filling you up, you let out a very muffled moan."
-							+ " The huge, black equine shaft continues to pump and twitch a few more times as it deposits its seed deep down your facial fuck hole."
-							+ " Only once your stomach is completely full of sticky white horse-jizz, does Ralph finally come to the end of his orgasm."
-							+ "<br/><br/>"
-							+ "As his balls finish emptying themselves, he steps back, sliding his rapidly-softening member from your well-used throat."
-							+ " A thick, slimy strand of cummy saliva drools down to form a little stream beneath your mouth, and you shuffle forwards, wiping yourself clean as you playfully smile up at Ralph."
-							+ " After making sure that nobody's watching, he takes hold of one of your [pc.arms+] and pulls you up, motioning for you to continue shopping as he fulfils his end of the bargain, "
-							+ "[ralph.speechNoEffects(Well, I think you've more than earned that discount...)]");
+					UtilText.nodeContentSB.append(" Мощным толчком его гигантский член извергает густую порцию прямо тебе в желудок, и когда ты чувствуешь, как горячее семя наполняет тебя, из твоего горла вырывается приглушенный стон. Огромный черный конский ствол продолжает пульсировать и дергаться еще несколько раз, закидывая сперму глубоко в твое отверстие для орального секса. Только когда твой желудок полностью наполняется липкой белой лошадиной спермой, Ralph наконец заканчивает свой оргазм.<br/><br/>Когда его яички опустошаются, он отстраняется, вынимая свой стремительно размягчающийся член из твоего измученного горла. Густая, слизистая нить спермной слюны стекает тонкой струйкой из твоего рта, и ты подаешься вперед, вытираясь и игриво улыбаясь Ralph. Убедившись, что никто не смотрит, он берет тебя за одну из твоих [pc.arms+] и поднимает, жестом предлагая продолжить покупки, так как он выполнил свою часть сделки: [ralph.speechNoEffects(Ну, думаю, ты заслужила эту скидку сполна...)]");
 				}
 			}
 			
@@ -1993,13 +1803,11 @@ public class RalphOral {
 			if(((Ralph)Main.game.getNpc(Ralph.class)).isDiscountActive() && (SexFlags.ralphDiscount<Main.game.getDialogueFlags().ralphDiscount)){
 				UtilText.nodeContentSB.append(
 						"<br/><br/>"
-						+ "<b style='color:" + PresetColour.TEXT_GREY.toWebHexString() + ";'>You have earned a "+SexFlags.ralphDiscount+"% discount for the next three days!</b>"
-						+ "<br/><br/>"
-						+ "<b>Because Ralph was already giving you the bigger discount of </b> <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>"
-							+Main.game.getDialogueFlags().ralphDiscount+"%</b><b>, he instead agrees to refresh that for the next three days!</b>");
+						+ "<b style='color:" + PresetColour.TEXT_GREY.toWebHexString() + ";'>Ты заслужила "+SexFlags.ralphDiscount+"% dдку на следующие три дня!</b><br/><br/><b>Поскольку Ralph и так давал тебе большую скидку в </b> <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>"
+							+Main.game.getDialogueFlags().ralphDiscount+"%</b><b>, вместо этого он соглашается продлить её на следующие три дня!</b>");
 				
 			} else {
-				UtilText.nodeContentSB.append("<br/><br/><b>You have earned a</b> <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>"+SexFlags.ralphDiscount+"%</b> <b>discount for the next three days!</b>");
+				UtilText.nodeContentSB.append("<br/><br/><b>You have earned a</b> <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>"+SexFlags.ralphDiscount+"%</b> <b>дку на следующие три дня!</b>");
 			}
 			
 			return UtilText.nodeContentSB.toString();

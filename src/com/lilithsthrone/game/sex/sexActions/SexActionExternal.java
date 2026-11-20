@@ -324,7 +324,7 @@ public class SexActionExternal extends SexAction {
 				return UtilText.parse(Main.sex.getCharacterPerformingAction(), Main.sex.getCharacterTargetedForSexAction(this), Util.randomItemFrom(descriptionContainer.descriptions));
 			}
 		}
-		return "[style.italicsRed(Error: No suitable description found for this action!)]";
+		return "[style.italicsRed(Ошибка: для этого действия не найдено подходящего описания!)]";
 	}
 	
 	@Override

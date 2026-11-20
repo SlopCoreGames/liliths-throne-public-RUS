@@ -33,7 +33,7 @@ public class EnforcerPatrolSA {
 		}
 		@Override
 		public String getActionTitle() {
-			return "React to Demon";
+			return "Реакция на демона";
 		}
 		@Override
 		public String getActionDescription() {
@@ -45,12 +45,7 @@ public class EnforcerPatrolSA {
 		}
 		@Override
 		public String getDescription() {
-			return "Upon seeing you self-transform into your demonic form, [npc.name] lets out a shocked gasp and exclaims,"
-					+ " [npc.speechNoExtraEffects(You're a demon?! I'm sorry, [pc.maam], I-I didn't know!)]"
-					+ "<br/><br/>"
-					+ "Pushing back against the [npc.race], you moan, [pc.speech(Come on, don't stop now! Carry on treating me like I'm a dirty little human!)]"
-					+ "<br/><br/>"
-					+ "Doing as [npc.sheIs] told, the Enforcer continues with your 'cavity search', [npc.moaning], [npc.speech(If that's what you want, then that's fine with me...)]";
+			return "Увидев, как ты самопроизвольно превращаешься в свою демоническую форму, [npc.name] в шоке ахает и восклицает: [npc.speechNoExtraEffects(Ты демон?! Прости, [pc.maam], я... я не знала!)]<br/><br/>Отталкиваясь от [npc.race], ты стонешь: [pc.speech(Давай, не останавливайся! Продолжай обращаться со мной как с грязным маленьким человеком!)]<br/><br/>Следуя указаниям [npc.sheIs], Enforcer продолжает твой «досмотр полостей», [npc.moaning], [npc.speech(Если ты этого хочешь, то пусть будет так...)]";
 		}
 		@Override
 		public void applyEffects() {

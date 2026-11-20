@@ -29,31 +29,31 @@ public class SelfFingerPenis {
 			SexParticipantType.SELF) {
 		@Override
 		public String getActionTitle() {
-			return "Tease cock (self)";
+			return "Ласкать член (самой)";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Get some pleasure from stroking and teasing your [npc.cock].";
+			return "Получать удовольствие, поглаживая и дразня свой [npc.cock].";
 		}
 		@Override
 		public String getDescription() {
 			if(Main.sex.getCharacterPerformingAction().isCoverableAreaExposed(CoverableArea.PENIS)) {
 				return UtilText.returnStringAtRandom(
-						"Reaching down between [npc.her] [npc.legs], [npc.name] [npc.verb(slide)] [npc.her] [npc.fingers+] up and down the length of [npc.her] [npc.cock+] and [npc.verb(let)] out [npc.a_moan+].",
-						"[npc.Name] [npc.groansVerb+] as [npc.she] [npc.verb(tease)] [npc.her] [npc.fingers] over the [npc.cockHead+] of [npc.her] [npc.cock+].",
-						"Stroking and teasing [npc.her] [npc.fingers+] up and down the length of [npc.her] [npc.cock+], [npc.name] can't help but let out a series of [npc.moans+].",
-						"Sliding [npc.her] [npc.fingers] up and down over [npc.her] [npc.cock+], [npc.name] [npc.verb(let)] out a series of [npc.groans+].");
+						"Просунув руку между [npc.her] [npc.legs], [npc.name] [npc.verb(slide)] [npc.her] [npc.fingers+] вверх и вниз по всей длине [npc.her] [npc.cock+] и [npc.verb(let)] [npc.a_moan+].",
+						"[npc.Name] [npc.groansVerb+], пока [npc.she] [npc.verb(tease)] [npc.her] [npc.fingers] по [npc.cockHead+] [npc.her] [npc.cock+].",
+						"Поглаживая и дразня [npc.her], [npc.fingers+] вверх и вниз по всей длине [npc.her] [npc.cock+], [npc.name] не может удержаться от серии [npc.moans+].",
+						"Скользя [npc.her] [npc.fingers] вверх и вниз по [npc.her] [npc.cock+], [npc.name] [npc.verb(let)] серию [npc.groans+].");
 				
 			} else {
 				return UtilText.returnStringAtRandom(
-						"[npc.Name] [npc.verb(run)] [npc.her] [npc.hand] over [npc.her] groin, before pressing [npc.her] "+Main.sex.getCharacterPerformingAction().getLowestZLayerCoverableArea(CoverableArea.PENIS).getName()
-							+" down against [npc.her] [npc.cock+] and letting out [npc.a_moan+].",
-						"[npc.Name] [npc.verb(slide)] [npc.her] [npc.fingers+] down between [npc.her] [npc.legs], before letting out [npc.a_moan+] as [npc.she] [npc.verb(press)] [npc.her] "
-							+Main.sex.getCharacterPerformingAction().getLowestZLayerCoverableArea(CoverableArea.PENIS).getName()+" down against [npc.her] [npc.cock+].",
-						"[npc.Name] [npc.verb(slide)] [npc.her] [npc.fingers] over [npc.her] "+Main.sex.getCharacterPerformingAction().getHighestZLayerCoverableArea(CoverableArea.PENIS).getName()
-							+", before pressing down and trying to stimulate [npc.her] [npc.cock+] through [npc.her] clothing.",
-						"Pushing down between [npc.her] [npc.legs] with the palm of [npc.her] [npc.hand], [npc.name] [npc.verb(rub)] [npc.her] "+Main.sex.getCharacterPerformingAction().getLowestZLayerCoverableArea(CoverableArea.PENIS).getName()
-							+" down against [npc.her] concealed [npc.cock+].");
+						"[npc.Name] [npc.verb(run)] [npc.her] [npc.hand] по [npc.her] паху, прежде чем прижать [npc.her] "+Main.sex.getCharacterPerformingAction().getLowestZLayerCoverableArea(CoverableArea.PENIS).getName()
+							+" плотно к [npc.her] [npc.cock+] и издать [npc.a_moan+].",
+						"[npc.Name] [npc.verb(slide)] [npc.her] [npc.fingers+] вниз между [npc.her] [npc.legs], прежде чем издать [npc.a_moan+], когда [npc.she] [npc.verb(press)] [npc.her] "
+							+Main.sex.getCharacterPerformingAction().getLowestZLayerCoverableArea(CoverableArea.PENIS).getName()+" плотно к [npc.her] [npc.cock+].",
+						"[npc.Name] [npc.verb(slide)] [npc.her] [npc.fingers] поверх [npc.her] "+Main.sex.getCharacterPerformingAction().getHighestZLayerCoverableArea(CoverableArea.PENIS).getName()
+							+", прежде чем надавить и попытаться стимулировать [npc.her] [npc.cock+] сквозь [npc.her] одежду.",
+						"Нажимая ладонью [npc.her] между [npc.her] и [npc.legs], [npc.name] [npc.verb(rub)] [npc.her] [npc.hand] "+Main.sex.getCharacterPerformingAction().getLowestZLayerCoverableArea(CoverableArea.PENIS).getName()
+							+" вниз на скрытый [npc.her] [npc.cock+].");
 			}
 		}
 		@Override
@@ -73,18 +73,18 @@ public class SelfFingerPenis {
 			SexParticipantType.SELF) {
 		@Override
 		public String getActionTitle() {
-			return "Start stroking cock";
+			return "Начать ласкать член";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Take hold of your [npc.cock+] and start jerking yourself off.";
+			return "Обхвати свой [npc.cock+] и начни дрочить.";
 		}
 		@Override
 		public String getDescription() {
 			return (UtilText.returnStringAtRandom(
-					"Reaching down between [npc.her] [npc.legs], [npc.name] [npc.verb(grab)] hold of [npc.her] [npc.cock+] and [npc.verb(start)] to masturbate.",
-					"Taking hold of [npc.her] [npc.cock+], [npc.name] [npc.verb(start)] repeatedly stroking up and down.",
-					"Reaching down and taking hold of [npc.her] [npc.cock+], [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(start)] jerking [npc.herself] off."));
+					"Просунув руку между [npc.her] [npc.legs], [npc.name] [npc.verb(grab)] берет [npc.her] [npc.cock+] и [npc.verb(start)], чтобы мастурбировать.",
+					"Сжимая [npc.her] [npc.cock+], [npc.name] [npc.verb(start)] раз за разом водит рукой вверх и вниз.",
+					"Протянув руку и обхватив [npc.her] [npc.cock+], [npc.name] [npc.verb(let)] вытаскивает [npc.a_moan+], пока [npc.she] [npc.verb(start)] дрочит [npc.herself]."));
 		}
 	};
 	
@@ -98,19 +98,19 @@ public class SelfFingerPenis {
 			SexPace.DOM_GENTLE) {
 		@Override
 		public String getActionTitle() {
-			return "Gentle cock stroking";
+			return "Нежные ласки члена";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Focus on gently stroking your [npc.cock+].";
+			return "Сосредоточьтесь на нежных ласках своего [npc.cock+].";
 		}
 		@Override
 		public String getDescription() {
 			return UtilText.returnStringAtRandom(
-					"[npc.A_moan+] escapes from between [npc.namePos] [npc.lips+] as [npc.she] slowly [npc.verb(slide)] [npc.her] [npc.fingers] up and down the length of [npc.her] [npc.cock+].",
-					"Gently sliding [npc.her] [npc.fingers+] up and down around [npc.her] [npc.cock+], [npc.name] [npc.verb(start)] letting out a series of delighted [npc.moans] as [npc.she] rhythmically [npc.verb(jerk)] [npc.herself] off.",
-					"Wrapping [npc.her] [npc.fingers] around [npc.her] [npc.cock+], [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] gently [npc.verb(stroke)] up and down.",
-					"Focusing on the pleasure [npc.sheIs] giving to [npc.herself], [npc.name] [npc.verb(focus)] on gently stroking [npc.her] [npc.fingers] up and down around [npc.her] [npc.cock+].");
+					"[npc.A_moan+] вырывается из между [npc.namePos] [npc.lips+], пока [npc.she] медленно [npc.verb(slide)] [npc.her] [npc.fingers] вверх и вниз по всей длине [npc.her] [npc.cock+].",
+					"Мягко скользя [npc.her] [npc.fingers+] вверх и вниз вокруг [npc.her] [npc.cock+], [npc.name] [npc.verb(start)] издает серию восторженных [npc.moans], пока [npc.she] ритмично [npc.verb(jerk)] [npc.herself].",
+					"Окутывая [npc.her] [npc.fingers] вокруг [npc.her] [npc.cock+], [npc.name] [npc.verb(let)] вырывается [npc.a_moan+], пока [npc.she] мягко [npc.verb(stroke)] вверх и вниз.",
+					"Сосредоточившись на удовольствии, которое [npc.sheIs] приносит [npc.herself], [npc.name] [npc.verb(focus)] на нежных ласках [npc.her] [npc.fingers] вверх и вниз вокруг [npc.her] [npc.cock+].");
 		}
 	};
 	
@@ -124,19 +124,19 @@ public class SelfFingerPenis {
 			SexPace.DOM_NORMAL) {
 		@Override
 		public String getActionTitle() {
-			return "Cock stroking";
+			return "Ласки члена";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Focus on stroking your [npc.cock+].";
+			return "Сосредоточьтесь на ласках своего [npc.cock+].";
 		}
 		@Override
 		public String getDescription() {
 			return UtilText.returnStringAtRandom(
-					"[npc.A_moan+] escapes from between [npc.namePos] [npc.lips+] as [npc.she] eagerly [npc.verb(slide)] [npc.her] [npc.fingers] up and down the length of [npc.her] [npc.cock+].",
-					"Desperately sliding [npc.her] [npc.fingers+] up and down around [npc.her] [npc.cock+], [npc.name] [npc.verb(start)] letting out a series of [npc.moans+] as [npc.she] rhythmically [npc.verb(jerk)] [npc.herself] off.",
-					"Wrapping [npc.her] [npc.fingers] around [npc.her] [npc.cock+], [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] frantically [npc.verb(stroke)] up and down.",
-					"Focusing on the pleasure [npc.sheIs] giving to [npc.herself], [npc.name] [npc.verb(focus)] on eagerly stroking [npc.her] [npc.fingers] up and down around [npc.her] [npc.cock+].");
+					"[npc.A_moan+] вырывается из между [npc.namePos] [npc.lips+], пока [npc.she] жадно [npc.verb(slide)] [npc.her] [npc.fingers] вверх и вниз по всей длине [npc.her] [npc.cock+].",
+					"Отчаянно скользя [npc.her] [npc.fingers+] вверх и вниз вокруг [npc.her] [npc.cock+], [npc.name] [npc.verb(start)] издает серию [npc.moans+], пока [npc.she] ритмично [npc.verb(jerk)] [npc.herself].",
+					"Окутывая [npc.her] [npc.fingers] вокруг [npc.her] [npc.cock+], [npc.name] [npc.verb(let)] вырывается [npc.a_moan+], пока [npc.she] неистово [npc.verb(stroke)] вверх и вниз.",
+					"Сосредоточившись на удовольствии, которое [npc.sheIs] доставляет [npc.herself], [npc.name] [npc.verb(focus)] на неистовом поглаживании [npc.her] [npc.fingers] вверх и вниз вокруг [npc.her] [npc.cock+].");
 		}
 	};
 	
@@ -150,19 +150,19 @@ public class SelfFingerPenis {
 			SexPace.DOM_ROUGH) {
 		@Override
 		public String getActionTitle() {
-			return "Rough cock stroking";
+			return "Грубые движения по члену";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Focus on roughly stroking your [npc.cock+].";
+			return "Сосредоточься на грубых движениях по своему [npc.cock+].";
 		}
 		@Override
 		public String getDescription() {
 			return UtilText.returnStringAtRandom(
-					"[npc.A_moan+] escapes from between [npc.namePos] [npc.lips+] as [npc.she] violently [npc.verb(jerk)] [npc.her] [npc.fingers] up and down the length of [npc.her] [npc.cock+].",
-					"Roughly pumping [npc.her] [npc.fingers+] up and down around [npc.her] [npc.cock+], [npc.name] [npc.verb(start)] letting out a series of [npc.moans+] as [npc.she] rhythmically [npc.verb(jerk)] [npc.herself] off.",
-					"Wrapping [npc.her] [npc.fingers] around [npc.her] [npc.cock+], [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] frantically [npc.verb(stroke)] up and down.",
-					"Focusing on the pleasure [npc.sheIs] giving to [npc.herself], [npc.name] [npc.verb(focus)] on frantically stroking [npc.her] [npc.fingers] up and down around [npc.her] [npc.cock+].");
+					"[npc.A_moan+] выскальзывает из между [npc.namePos] [npc.lips+], пока [npc.she] яростно [npc.verb(jerk)] [npc.her] [npc.fingers] вверх и вниз по всей длине [npc.her] [npc.cock+].",
+					"Грубо двигая [npc.her] [npc.fingers+] вверх и вниз вокруг [npc.her] [npc.cock+], [npc.name] [npc.verb(start)] издавая серию [npc.moans+], пока [npc.she] ритмично [npc.verb(jerk)] [npc.herself].",
+					"Окутывая [npc.her] [npc.fingers] вокруг [npc.her] [npc.cock+], [npc.name] [npc.verb(let)] вырывается [npc.a_moan+], пока [npc.she] неистово [npc.verb(stroke)] вверх и вниз.",
+					"Сосредоточившись на удовольствии, которое [npc.sheIs] доставляет [npc.herself], [npc.name] [npc.verb(focus)] на бешеном поглаживании [npc.her] [npc.fingers] вверх и вниз вокруг [npc.her] [npc.cock+].");
 		}
 	};
 	
@@ -176,19 +176,19 @@ public class SelfFingerPenis {
 			SexPace.SUB_NORMAL) {
 		@Override
 		public String getActionTitle() {
-			return "Cock stroking";
+			return "Ласки члена";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Focus on gently stroking your [npc.cock+].";
+			return "Сосредоточьтесь на нежных ласках своего [npc.cock+].";
 		}
 		@Override
 		public String getDescription() {
 			return UtilText.returnStringAtRandom(
-					"[npc.A_moan+] escapes from between [npc.namePos] [npc.lips+] as [npc.she] [npc.verb(slide)] [npc.her] [npc.fingers] up and down the length of [npc.her] [npc.cock+].",
-					"Sliding [npc.her] [npc.fingers+] up and down around [npc.her] [npc.cock+], [npc.name] [npc.verb(start)] letting out a series of [npc.moans+] as [npc.she] rhythmically [npc.verb(jerk)] [npc.herself] off.",
-					"Wrapping [npc.her] [npc.fingers] around [npc.her] [npc.cock+], [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(stroke)] up and down.",
-					"Focusing on the pleasure [npc.sheIs] giving to [npc.herself], [npc.name] [npc.verb(focus)] on stroking [npc.her] [npc.fingers] up and down around [npc.her] [npc.cock+].");
+					"[npc.A_moan+] выскальзывает из между [npc.namePos] [npc.lips+], пока [npc.she] [npc.verb(slide)] [npc.her] [npc.fingers] вверх и вниз по всей длине [npc.her] [npc.cock+].",
+					"Скользя [npc.her] [npc.fingers+] вверх и вниз вокруг [npc.her] [npc.cock+], [npc.name] [npc.verb(start)] издавая серию [npc.moans+], пока [npc.she] ритмично [npc.verb(jerk)] [npc.herself].",
+					"Обернув [npc.her] [npc.fingers] вокруг [npc.her] [npc.cock+], [npc.name] [npc.verb(let)] издавая [npc.a_moan+], пока [npc.she] [npc.verb(stroke)] вверх и вниз.",
+					"Сосредоточившись на удовольствии, которое [npc.sheIs] доставляет [npc.herself], [npc.name] [npc.verb(focus)] на поглаживании [npc.her] [npc.fingers] вверх и вниз вокруг [npc.her] [npc.cock+].");
 		}
 		
 	};
@@ -203,19 +203,19 @@ public class SelfFingerPenis {
 			SexPace.SUB_EAGER) {
 		@Override
 		public String getActionTitle() {
-			return "Eager cock stroking";
+			return "Нетерпеливое ласкание члена";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Focus on eagerly stroking your [npc.cock+].";
+			return "Сосредоточься на нетерпеливом ласкании своего [npc.cock+].";
 		}
 		@Override
 		public String getDescription() {
 			return UtilText.returnStringAtRandom(
-					"[npc.A_moan+] escapes from between [npc.namePos] [npc.lips+] as [npc.she] eagerly [npc.verb(slide)] [npc.her] [npc.fingers] up and down the length of [npc.her] [npc.cock+].",
-					"Desperately sliding [npc.her] [npc.fingers+] up and down around [npc.her] [npc.cock+], [npc.name] [npc.verb(start)] letting out a series of [npc.moans+] as [npc.she] rhythmically [npc.verb(jerk)] [npc.herself] off.",
-					"Wrapping [npc.her] [npc.fingers] around [npc.her] [npc.cock+], [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] frantically [npc.verb(stroke)] up and down.",
-					"Focusing on the pleasure [npc.sheIs] giving to [npc.herself], [npc.name] [npc.verb(focus)] on eagerly stroking [npc.her] [npc.fingers] up and down around [npc.her] [npc.cock+].");
+					"[npc.A_moan+] вырывается из между [npc.namePos] [npc.lips+], пока [npc.she] жадно [npc.verb(slide)] [npc.her] [npc.fingers] вверх и вниз по всей длине [npc.her] [npc.cock+].",
+					"Отчаянно скользя [npc.her] [npc.fingers+] вверх и вниз вокруг [npc.her] [npc.cock+], [npc.name] [npc.verb(start)] издает серию [npc.moans+], пока [npc.she] ритмично [npc.verb(jerk)] [npc.herself].",
+					"Окутывая [npc.her] [npc.fingers] вокруг [npc.her] [npc.cock+], [npc.name] [npc.verb(let)] вырывается [npc.a_moan+], пока [npc.she] неистово [npc.verb(stroke)] вверх и вниз.",
+					"Сосредоточившись на удовольствии, которое [npc.sheIs] доставляет [npc.herself], [npc.name] [npc.verb(focus)] на неистовом поглаживании [npc.her] [npc.fingers] вверх и вниз вокруг [npc.her] [npc.cock+].");
 		}
 	};
 	
@@ -228,15 +228,15 @@ public class SelfFingerPenis {
 			SexParticipantType.SELF) {
 		@Override
 		public String getActionTitle() {
-			return "Stop cock stroking";
+			return "Прекратить ласкать член";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Stop stroking your [npc.cock+].";
+			return "Перестать ласкать свой [npc.cock+].";
 		}
 		@Override
 		public String getDescription() {
-			return "With [npc.a_moan+], [npc.name] [npc.verb(take)] [npc.her] [npc.hand] away from [npc.her] [npc.cock+] and [npc.verb(stop)] jerking off.";
+			return "С [npc.a_moan+], [npc.name] [npc.verb(take)] [npc.her] [npc.hand] в сторону от [npc.her] [npc.cock+] и [npc.verb(stop)] дрочит.";
 		}
 	};
 }

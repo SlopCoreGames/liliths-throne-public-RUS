@@ -36,18 +36,17 @@ public class SelfTailMouth {
 		
 		@Override
 		public String getActionTitle() {
-			return "Lubricate tail";
+			return "Смазать хвост";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Lubricate your tail with your saliva.";
+			return "Смазать свой хвост слюной.";
 		}
 
 		@Override
 		public String getDescription() {
-			return "Lifting [npc.her] [npc.tail+] up to [npc.her] mouth, [npc.name] [npc.verb(slide)] [npc.her] [npc.tail+] past [npc.her] [npc.lips+],"
-					+ " before lewdly sucking on it for a moment in order to get it well lubricated with [npc.her] saliva.";
+			return "Подняв [npc.her] [npc.tail+] к [npc.her] рту, [npc.name] [npc.verb(slide)] [npc.her] [npc.tail+] сквозь [npc.her] [npc.lips+], а затем похотливо посасывая его мгновение, чтобы хорошенько смазать [npc.her] слюной.";
 		}
 		
 		@Override
@@ -66,17 +65,17 @@ public class SelfTailMouth {
 		
 		@Override
 		public String getActionTitle() {
-			return "Suck tail (self)";
+			return "Сосать хвост (самой)";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Put your [pc.tail] in your mouth and start sucking it.";
+			return "Засунуть свой [pc.tail] в рот и начать сосать его.";
 		}
 
 		@Override
 		public String getDescription() {
-			return "Snaking [npc.her] [npc.tail] up to [npc.her] mouth, [npc.name] [npc.verb(slide)] the tip past [npc.her] [npc.lips+] before starting to lewdly suck on it.";
+			return "Просовывая [npc.her] [npc.tail] к [npc.her] рту, [npc.name] [npc.verb(slide)] кончик за [npc.her] [npc.lips+], прежде чем начать похотливо его посасывать.";
 		}
 	};
 	
@@ -90,17 +89,17 @@ public class SelfTailMouth {
 		
 		@Override
 		public String getActionTitle() {
-			return "Stop sucking tail (self)";
+			return "Перестать сосать хвост (самой)";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Stop sucking your [pc.tail].";
+			return "Перестать сосать свой [pc.tail].";
 		}
 
 		@Override
 		public String getDescription() {
-			return "With a little sigh, [npc.name] [npc.verb(slide)] [npc.her] saliva-coated [npc.tail] out of [npc.her] mouth.";
+			return "С легким вздохом, [npc.name] [npc.verb(slide)] [npc.her] покрытый слюной [npc.tail] из [npc.her] рта.";
 		}
 	};
 }

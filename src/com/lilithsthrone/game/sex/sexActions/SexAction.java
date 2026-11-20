@@ -50,7 +50,7 @@ public abstract class SexAction implements SexActionInterface {
 	
 	protected boolean mod = false;
 	protected boolean fromExternalFile = false;
-	protected String author = "Innoxia";
+	protected String author = "Инноксия";
 	
 	public SexAction(SexActionInterface sexActionToCopy) {
 		this.sexActionType = sexActionToCopy.getActionType();
@@ -220,8 +220,8 @@ public abstract class SexAction implements SexActionInterface {
 				if(flavour!=FluidFlavour.GIRL_CUM && flavour!=FluidFlavour.FLAVOURLESS) {
 					return formatFlavour(UtilText.parse(receiving,
 										UtilText.returnStringAtRandom(
-												"[npc.NamePos] [npc.pussy] tastes like <span style='color:"+flavour.getColour().toWebHexString()+";'> "+flavour.getName()+"</span>!",
-												"The taste of <span style='color:"+flavour.getColour().toWebHexString()+";'> "+flavour.getName()+"</span> fills your mouth!")));
+												"[npc.NamePos] [npc.pussy] на вкус как <span style='color:"+flavour.getColour().toWebHexString()+";'> "+flavour.getName()+"</span>!",
+												"Вкус <span style='color:"+flavour.getColour().toWebHexString()+";'> "+flavour.getName()+"</span> наполняет твой рот!")));
 				}
 				
 			} else if(this.getTargetedCharacterAreas().contains(SexAreaPenetration.PENIS)) {
@@ -229,8 +229,8 @@ public abstract class SexAction implements SexActionInterface {
 				if(flavour!=FluidFlavour.CUM && flavour!=FluidFlavour.FLAVOURLESS) {
 					return formatFlavour(UtilText.parse(receiving,
 										UtilText.returnStringAtRandom(
-												"[npc.NamePos] [npc.cock] tastes like <span style='color:"+flavour.getColour().toWebHexString()+";'> "+flavour.getName()+"</span>!",
-												"The taste of <span style='color:"+flavour.getColour().toWebHexString()+";'> "+flavour.getName()+"</span> fills your mouth!")));
+												"[npc.NamePos] [npc.cock] на вкус как <span style='color:"+flavour.getColour().toWebHexString()+";'> "+flavour.getName()+"</span>!",
+												"Вкус <span style='color:"+flavour.getColour().toWebHexString()+";'> "+flavour.getName()+"</span> наполняет твой рот!")));
 				}
 				
 			} else if(this.getTargetedCharacterAreas().contains(SexAreaOrifice.NIPPLE)) {
@@ -238,8 +238,8 @@ public abstract class SexAction implements SexActionInterface {
 				if(flavour!=FluidFlavour.MILK && flavour!=FluidFlavour.FLAVOURLESS) {
 					return formatFlavour(UtilText.parse(receiving,
 										UtilText.returnStringAtRandom(
-												"[npc.NamePos] [npc.nipples] taste like <span style='color:"+flavour.getColour().toWebHexString()+";'> "+flavour.getName()+"</span>!",
-												"The taste of <span style='color:"+flavour.getColour().toWebHexString()+";'> "+flavour.getName()+"</span> fills your mouth!")));
+												"[npc.NamePos] [npc.nipples] на вкус как <span style='color:"+flavour.getColour().toWebHexString()+";'> "+flavour.getName()+"</span>!",
+												"Вкус <span style='color:"+flavour.getColour().toWebHexString()+";'> "+flavour.getName()+"</span> наполняет твой рот!")));
 				}
 				
 			} else if(this.getTargetedCharacterAreas().contains(SexAreaOrifice.NIPPLE_CROTCH)) {
@@ -247,8 +247,8 @@ public abstract class SexAction implements SexActionInterface {
 				if(flavour!=FluidFlavour.MILK && flavour!=FluidFlavour.FLAVOURLESS) {
 					return formatFlavour(UtilText.parse(receiving,
 										UtilText.returnStringAtRandom(
-												"[npc.NamePos] [npc.crotchNipples] taste like <span style='color:"+flavour.getColour().toWebHexString()+";'> "+flavour.getName()+"</span>!",
-												"The taste of <span style='color:"+flavour.getColour().toWebHexString()+";'> "+flavour.getName()+"</span> fills your mouth!")));
+												"[npc.NamePos] [npc.crotchNipples] на вкус как <span style='color:"+flavour.getColour().toWebHexString()+";'> "+flavour.getName()+"</span>!",
+												"Вкус <span style='color:"+flavour.getColour().toWebHexString()+";'> "+flavour.getName()+"</span> наполняет твой рот!")));
 				}
 			}
 			
@@ -259,8 +259,8 @@ public abstract class SexAction implements SexActionInterface {
 				if(flavour!=FluidFlavour.GIRL_CUM && flavour!=FluidFlavour.FLAVOURLESS) {
 					return formatFlavour(UtilText.parse(performing,
 										UtilText.returnStringAtRandom(
-												"[npc.NamePos] [npc.pussy] tastes like <span style='color:"+flavour.getColour().toWebHexString()+";'> "+flavour.getName()+"</span>!",
-												"The taste of <span style='color:"+flavour.getColour().toWebHexString()+";'> "+flavour.getName()+"</span> fills your mouth!")));
+												"[npc.NamePos] [npc.pussy] на вкус как <span style='color:"+flavour.getColour().toWebHexString()+";'> "+flavour.getName()+"</span>!",
+												"Вкус <span style='color:"+flavour.getColour().toWebHexString()+";'> "+flavour.getName()+"</span> наполняет твой рот!")));
 				}
 				
 			} else if(this.getPerformingCharacterAreas().contains(SexAreaPenetration.PENIS)) {
@@ -268,8 +268,8 @@ public abstract class SexAction implements SexActionInterface {
 				if(flavour!=FluidFlavour.CUM && flavour!=FluidFlavour.FLAVOURLESS) {
 					return formatFlavour(UtilText.parse(performing,
 										UtilText.returnStringAtRandom(
-												"[npc.NamePos] [npc.cock] tastes like <span style='color:"+flavour.getColour().toWebHexString()+";'> "+flavour.getName()+"</span>!",
-												"The taste of <span style='color:"+flavour.getColour().toWebHexString()+";'> "+flavour.getName()+"</span> fills your mouth!")));
+												"[npc.NamePos] [npc.cock] на вкус как <span style='color:"+flavour.getColour().toWebHexString()+";'> "+flavour.getName()+"</span>!",
+												"Вкус <span style='color:"+flavour.getColour().toWebHexString()+";'> "+flavour.getName()+"</span> наполняет твой рот!")));
 				}
 				
 			} else if(this.getPerformingCharacterAreas().contains(SexAreaOrifice.NIPPLE)) {
@@ -277,8 +277,8 @@ public abstract class SexAction implements SexActionInterface {
 				if(flavour!=FluidFlavour.MILK && flavour!=FluidFlavour.FLAVOURLESS) {
 					return formatFlavour(UtilText.parse(performing,
 										UtilText.returnStringAtRandom(
-												"[npc.NamePos] [npc.nipples] taste like <span style='color:"+flavour.getColour().toWebHexString()+";'> "+flavour.getName()+"</span>!",
-												"The taste of <span style='color:"+flavour.getColour().toWebHexString()+";'> "+flavour.getName()+"</span> fills your mouth!")));
+												"[npc.NamePos] [npc.nipples] на вкус как <span style='color:"+flavour.getColour().toWebHexString()+";'> "+flavour.getName()+"</span>!",
+												"Вкус <span style='color:"+flavour.getColour().toWebHexString()+";'> "+flavour.getName()+"</span> наполняет твой рот!")));
 				}
 				
 			} else if(this.getPerformingCharacterAreas().contains(SexAreaOrifice.NIPPLE_CROTCH)) {
@@ -286,8 +286,8 @@ public abstract class SexAction implements SexActionInterface {
 				if(flavour!=FluidFlavour.MILK && flavour!=FluidFlavour.FLAVOURLESS) {
 					return formatFlavour(UtilText.parse(performing,
 										UtilText.returnStringAtRandom(
-												"[npc.NamePos] [npc.crotchNipples] taste like <span style='color:"+flavour.getColour().toWebHexString()+";'> "+flavour.getName()+"</span>!",
-												"The taste of <span style='color:"+flavour.getColour().toWebHexString()+";'> "+flavour.getName()+"</span> fills your mouth!")));
+												"[npc.NamePos] [npc.crotchNipples] на вкус как <span style='color:"+flavour.getColour().toWebHexString()+";'> "+flavour.getName()+"</span>!",
+												"Вкус <span style='color:"+flavour.getColour().toWebHexString()+";'> "+flavour.getName()+"</span> наполняет твой рот!")));
 				}
 			}
 		}

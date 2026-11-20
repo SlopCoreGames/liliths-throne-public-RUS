@@ -40,32 +40,32 @@ public class SelfNoPen {
 
 		@Override
 		public String getActionTitle() {
-			return "Touch self";
+			return "Ласкать себя";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Get some pleasure from touching yourself.";
+			return "Получить немного удовольствия от ласк самой себя.";
 		}
 
 		@Override
 		public String getDescription() {
 			if(Main.sex.getCharacterPerformingAction().isCoverableAreaExposed(CoverableArea.VAGINA)) {
 				return UtilText.returnStringAtRandom(
-						"Reaching down between [npc.her] legs, [npc.name] [npc.verb(tease)] [npc.her] fingers over the entrance to [npc.her] [npc.pussy+], letting out [npc.a_moan+] as [npc.she] [npc.verb(stimulate)] [npc.her] outer folds.",
-						"[npc.Name] [npc.verb(probe)] [npc.her] fingers down between [npc.her] legs, [npc.moaning] softly as [npc.she] [npc.verb(tease)] [npc.her] fingers over the entrance to [npc.her] inviting [npc.pussy].",
-						"Sliding [npc.her] fingertips over [npc.her] neglected [npc.pussy+], [npc.name] [npc.verb(let)] out a [npc.moan] as [npc.she] [npc.verb(stimulate)] [npc.her] outer labia.",
-						"[npc.Name] eagerly [npc.verb(slide)] [npc.her] fingers over [npc.her] needy [npc.pussy], [npc.moaning+] as [npc.she] gently [npc.verb(press)] down on [npc.her] outer labia.");
+						"Просунув руку между [npc.her] ног, [npc.name] [npc.verb(tease)] [npc.her] пальцами по входу в [npc.her] [npc.pussy+], издавая [npc.a_moan+], пока [npc.she] [npc.verb(stimulate)] [npc.her] внешние складки.",
+						"[npc.Name] [npc.verb(probe)] [npc.her] пальцы между [npc.her] ног, [npc.moaning] нежно, пока [npc.she] [npc.verb(tease)] [npc.her] пальцы над входом в [npc.her], манящую [npc.pussy].",
+						"Скользя кончиками [npc.her] пальцев по забытым [npc.her] [npc.pussy+], [npc.name] [npc.verb(let)] негромкий [npc.moan], пока [npc.she] [npc.verb(stimulate)] [npc.her] внешние половые губы.",
+						"[npc.Name] с нетерпением [npc.verb(slide)] [npc.her] пальцами по [npc.her] жаждущей [npc.pussy], [npc.moaning+], пока [npc.she] нежно [npc.verb(press)] по [npc.her] внешним половым губам.");
 			} else {
 				return UtilText.returnStringAtRandom(
-						"[npc.Name] [npc.verb(run)] [npc.her] hand down over [npc.her] groin, pressing [npc.her] "+Main.sex.getCharacterPerformingAction().getLowestZLayerCoverableArea(CoverableArea.VAGINA).getName()
-							+" down hard against [npc.her] needy [npc.pussy] as [npc.she] [npc.verb(let)] out a little whimper.",
-						"[npc.Name] [npc.verb(push)] [npc.her] fingers down between [npc.her] legs, [npc.moaning+] as [npc.she] [npc.verb(rub)] [npc.her] "+Main.sex.getCharacterPerformingAction().getLowestZLayerCoverableArea(CoverableArea.VAGINA).getName()
-							+" against [npc.her] pussy lips.",
-						"[npc.Name] [npc.verb(slide)] [npc.her] fingertips over [npc.her] "+Main.sex.getCharacterPerformingAction().getHighestZLayerCoverableArea(CoverableArea.VAGINA).getName()
-							+", letting out [npc.a_moan+] as [npc.she] [npc.verb(press)] down and [npc.verb(try)] to stimulate [npc.her] [npc.pussy+] through [npc.her] clothing.",
-						"Pushing down between [npc.her] legs with the palm of [npc.her] hand, [npc.name] [npc.verb(squeeze)] [npc.her] thighs together as [npc.she] [npc.verb(press)] [npc.her] "
-								+Main.sex.getCharacterPerformingAction().getLowestZLayerCoverableArea(CoverableArea.VAGINA).getName() +" tightly against [npc.her] neglected [npc.pussy].");
+						"[npc.Name] [npc.verb(run)] [npc.her] рукой вниз, к паху [npc.her], нажимая на [npc.her] "+Main.sex.getCharacterPerformingAction().getLowestZLayerCoverableArea(CoverableArea.VAGINA).getName()
+							+" сильно на [npc.her] жаждущую [npc.pussy], пока [npc.she] [npc.verb(let)] тихий всхлип.",
+						"[npc.Name] [npc.verb(push)] [npc.her] пальцами между [npc.her] ног, [npc.moaning+], пока [npc.she] [npc.verb(rub)] [npc.her] "+Main.sex.getCharacterPerformingAction().getLowestZLayerCoverableArea(CoverableArea.VAGINA).getName()
+							+" по губам [npc.her] киски.",
+						"[npc.Name] [npc.verb(slide)] [npc.her] кончиками пальцев по [npc.her] "+Main.sex.getCharacterPerformingAction().getHighestZLayerCoverableArea(CoverableArea.VAGINA).getName()
+							+", издавая [npc.a_moan+], пока [npc.she] [npc.verb(press)] вниз и [npc.verb(try)], чтобы стимулировать [npc.her] [npc.pussy+] сквозь [npc.her] одежду.",
+						"Прижимая ладонью [npc.her] к пространству между [npc.her] ног, [npc.name] [npc.verb(squeeze)] [npc.her] бедра вместе, пока [npc.she] [npc.verb(press)] [npc.her] "
+								+Main.sex.getCharacterPerformingAction().getLowestZLayerCoverableArea(CoverableArea.VAGINA).getName() +" плотно к ее заброшенной [npc.pussy] [npc.her].");
 			}
 		}
 		
@@ -95,32 +95,32 @@ public class SelfNoPen {
 		
 		@Override
 		public String getActionTitle() {
-			return "Stroke mound";
+			return "Ласкать лоно";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Get some pleasure from touching your genderless mound.";
+			return "Получить удовольствие, касаясь своего бесполого лона.";
 		}
 
 		@Override
 		public String getDescription() {
 			if(Main.sex.getCharacterPerformingAction().isCoverableAreaExposed(CoverableArea.PENIS)) {
 				return UtilText.returnStringAtRandom(
-						"Reaching down between [npc.her] [npc.legs], [npc.name] [npc.verb(run)] [npc.her] fingertips over [npc.her] doll-like mound, [npc.moaning+] as [npc.she] [npc.verb(tease)] the sensitive area.",
-						"[npc.Name] [npc.verb(tease)] [npc.her] fingers over the sensitive doll-like mound between [npc.her] legs, [npc.moaning+] as [npc.she] [npc.verb(stimulate)] [npc.herself].",
-						"With probing fingers, [npc.name] [npc.verb(reach)] down and [npc.verb(start)] to pinch and rub at [npc.her] delicate genderless crotch.",
-						"Despite lacking genitalia, [npc.namePos] crotch remains a highly sensitive erogenous zone, and [npc.she] eagerly [npc.verb(start)] rubbing and pressing down on it with greedy fingers.");
+						"Протянув руку между [npc.her] [npc.legs], [npc.name] [npc.verb(run)] [npc.her] кончиками пальцев по кукольному бугорку [npc.her], [npc.moaning+], пока [npc.she] [npc.verb(tease)] чувствительную зону.",
+						"[npc.Name] [npc.verb(tease)] пальцами [npc.her] по чувствительному кукольному лону между [npc.her] ног, [npc.moaning+], пока [npc.she] [npc.verb(stimulate)] [npc.herself].",
+						"Исследуя ее пальцами, [npc.name] [npc.verb(reach)] вниз и [npc.verb(start)], чтобы щипать и растирать нежную бесполую промежность [npc.her].",
+						"Несмотря на отсутствие гениталий, промежность [npc.namePos] остается крайне чувствительной эрогенной зоной, и [npc.she] с жадностью [npc.verb(start)] растирает и прижимает к ней свои ненасытные пальцы.");
 			} else {
 				return UtilText.returnStringAtRandom(
-						"[npc.Name] [npc.verb(run)] [npc.her] [npc.hand] over [npc.her] groin, pressing [npc.her] "+Main.sex.getCharacterPerformingAction().getLowestZLayerCoverableArea(CoverableArea.VAGINA).getName()
-							+" down against [npc.her] doll-like mound as [npc.she] [npc.verb(let)] out a little sigh.",
-						"[npc.Name] [npc.verb(push)] [npc.her] fingers down between [npc.her] legs, [npc.moaning+] as [npc.she] [npc.verb(rub)] [npc.her] "+Main.sex.getCharacterPerformingAction().getLowestZLayerCoverableArea(CoverableArea.VAGINA).getName()
-								+" against [npc.her] genderless crotch.",
-						"[npc.Name] [npc.verb(slide)] [npc.her] fingertips over [npc.her] "+Main.sex.getCharacterPerformingAction().getHighestZLayerCoverableArea(CoverableArea.VAGINA).getName()
-								+", before pressing down and trying to stimulate [npc.her] doll-like mound through [npc.her] clothing.",
-						"Pushing down between [npc.her] [npc.legs] with the palm of [npc.her] [npc.hand], [npc.name] [npc.verb(squeeze)] [npc.her] thighs together as [npc.she] [npc.verb(press)] [npc.her] "
-								+Main.sex.getCharacterPerformingAction().getLowestZLayerCoverableArea(CoverableArea.VAGINA).getName()+" tightly down against [npc.her] genderless mound.");
+						"[npc.Name] [npc.verb(run)] [npc.her] [npc.hand] над [npc.her] пахом, прижимая [npc.her] "+Main.sex.getCharacterPerformingAction().getLowestZLayerCoverableArea(CoverableArea.VAGINA).getName()
+							+" плотно к кукольному бугорку [npc.her], пока [npc.she] [npc.verb(let)] тихий вздох.",
+						"[npc.Name] [npc.verb(push)] [npc.her] пальцами между [npc.her] ног, [npc.moaning+], пока [npc.she] [npc.verb(rub)] [npc.her] "+Main.sex.getCharacterPerformingAction().getLowestZLayerCoverableArea(CoverableArea.VAGINA).getName()
+								+" к бесполому паху [npc.her].",
+						"[npc.Name] [npc.verb(slide)] [npc.her] кончиками пальцев по [npc.her] "+Main.sex.getCharacterPerformingAction().getHighestZLayerCoverableArea(CoverableArea.VAGINA).getName()
+								+", прежде чем надавить и попытаться стимулировать кукольный бугорок [npc.her] сквозь [npc.her] одежду.",
+						"Нажимая ладонью [npc.her] между [npc.her] [npc.legs] [npc.hand], [npc.name] [npc.verb(squeeze)] [npc.her] бедра, пока [npc.she] [npc.verb(press)] [npc.her] "
+								+Main.sex.getCharacterPerformingAction().getLowestZLayerCoverableArea(CoverableArea.VAGINA).getName()+" плотно к бесполому бугорку [npc.her].");
 			}
 		}
 		

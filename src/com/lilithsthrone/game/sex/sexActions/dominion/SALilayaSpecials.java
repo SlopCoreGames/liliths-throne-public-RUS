@@ -52,12 +52,12 @@ public class SALilayaSpecials {
 		@Override
 		public String getActionTitle() {
 			if(isAmazonsSecretActive(Main.sex.getCharacterTargetedForSexAction(this))) {
-				return "Pull back reminder";
+				return "Напоминание об отстранении";
 			}
 			if(Main.sex.getCharacterTargetedForSexAction(this).isWearingCondom()) {
-				return "Condom check";
+				return "Проверка презерватива";
 			}
-			return "Pull out reminder";
+			return "Напоминание о прерванном акте";
 		}
 		@Override
 		public String getActionDescription() {
@@ -82,26 +82,21 @@ public class SALilayaSpecials {
 		public String getDescription() {
 			if(isAmazonsSecretActive(Main.sex.getCharacterTargetedForSexAction(this))) {
 				if(Main.sex.getCharacterPerformingAction().isSpeechMuffled()) {
-					return "While letting out desperate moans and lewd cries, [npc.name] [npc.verb(try)] to push [npc2.namePos] [npc2.hips] away from [npc.her] [npc.pussy],"
-							+ " making it clear that [npc.she] doesn't want [npc2.herHim] orgasming in this position due to the effects gained from drinking a bottle of 'Amazon's Secret'.";
+					return "Издавая отчаянные стоны и похотливые крики, [npc.name] [npc.verb(try)], чтобы оттолкнуть [npc2.namePos] [npc2.hips] от [npc.her] [npc.pussy], давая понять, что [npc.she] не хочет, чтобы [npc2.herHim] кончил в этой позе из-за эффекта от выпитой бутылки «Секрета Амазонки».";
 					
 				} else {
-					return "Through [npc.her] desperate moans and lewd cries, [npc.name] somehow manages to formulate a sentence as [npc.she] cries out to [npc2.name],"
-							+" [npc.speech(Pull away before you orgasm! I know that you've drunk a bottle of Amazon's Secret, and I'm <b>not</b> getting pregnant!)]";
+					return "Сквозь отчаянные стоны и похотливые крики [npc.her], [npc.name] каким-то образом удается выдавить из себя фразу, когда [npc.she] кричит [npc2.name]: [npc.speech(Отстраняйся, пока ты не кончил! Я знаю, что ты выпил бутылку «Секрета Амазонки», и я <b>не</b> забеременею!)]";
 				}
 				
 			} else {
 				if(Main.sex.getCharacterPerformingAction().isSpeechMuffled()) {
-					return "While letting out desperate moans and lewd cries, [npc.name] [npc.verb(try)] to push [npc2.namePos] [npc2.hips] away from [npc.her] [npc.pussy],"
-							+ " making it clear that [npc.she] doesn't want [npc2.herHim] cumming inside of [npc.herHim].";
+					return "Издавая отчаянные стоны и похотливые крики, [npc.name] [npc.verb(try)], чтобы оттолкнуть [npc2.namePos] [npc2.hips] от [npc.her] [npc.pussy], давая понять, что [npc.she] не хочет, чтобы [npc2.herHim] кончил внутрь [npc.herHim].";
 					
 				} else {
 					if(Main.sex.getCharacterTargetedForSexAction(this).isWearingCondom()) {
-						return "Through [npc.her] desperate moans and lewd cries, [npc.name] somehow manages to formulate a sentence as [npc.she] cries out to [npc2.name],"
-								+" [npc.speech(Your condom's on properly, isn't it? I'm <b>not</b> getting pregnant!)]";
+						return "Сквозь отчаянные стоны и похотливые крики [npc.her], [npc.name] каким-то образом удается выдавить из себя фразу, когда [npc.she] кричит [npc2.name]: [npc.speech(Презерватив надет правильно, да? Я <b>не</b> забеременею!)]";
 					}
-					return "Through [npc.her] desperate moans and lewd cries, [npc.name] somehow manages to formulate a sentence as [npc.she] cries out to [npc2.name],"
-							+" [npc.speech(Just remember to pull out! I'm <b>not</b> getting pregnant!)]";
+					return "Сквозь отчаянные стоны и похотливые крики [npc.her], [npc.name] каким-то образом удается выдавить из себя фразу, когда [npc.she] кричит [npc2.name]: [npc.speech(Просто не забудь вовремя вытащить! Я <b>не</b> забеременею!)]";
 				}
 			}
 				
@@ -135,29 +130,29 @@ public class SALilayaSpecials {
 		
 		@Override
 		public String getActionTitle() {
-			return "Prepare";
+			return "Приготовиться";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "You can feel that [npc2.name] is fast approaching [npc2.her] orgasm. Prepare yourself for it.";
+			return "Вы чувствуете, что [npc2.name] стремительно приближается к [npc2.her] оргазму. Приготовьтесь к нему.";
 		}
 		
 		@Override
 		public String getDescription() {
 			switch(Main.sex.getSexPace(Main.sex.getCharacterTargetedForSexAction(this))) {
 				case DOM_GENTLE:
-					return "[npc.Name] lets out a soft [npc.moan] of encouragement as [npc.she] prepares for [npc2.name] to reach [npc2.her] orgasm.";
+					return "[npc.Name] издает мягкий [npc.moan] ободрения, пока [npc.she] готовится к тому, чтобы [npc2.name] достиг(ла) [npc2.her] оргазма.";
 				case DOM_NORMAL:
-					return "[npc.Name] lets out [npc.a_moan+] of encouragement as [npc.she] prepares for [npc2.name] to reach [npc2.her] orgasm.";
+					return "[npc.Name] издает [npc.a_moan+] ободрения, пока [npc.she] готовится к тому, чтобы [npc2.name] достиг(ла) [npc2.her] оргазма.";
 				case DOM_ROUGH:
-					return "[npc.Name] lets out [npc.a_moan+] of encouragement as [npc.she] prepares for [npc2.name] to reach [npc2.her] orgasm.";
+					return "[npc.Name] издает [npc.a_moan+] ободрения, пока [npc.she] готовится к тому, чтобы [npc2.name] достиг(ла) [npc2.her] оргазма.";
 				case SUB_EAGER:
-					return "[npc.Name] lets out [npc.a_moan+] of encouragement as [npc.she] prepares for [npc2.name] to reach [npc2.her] orgasm.";
+					return "[npc.Name] издает [npc.a_moan+] ободрения, пока [npc.she] готовится к тому, чтобы [npc2.name] достиг(ла) [npc2.her] оргазма.";
 				case SUB_NORMAL:
-					return "[npc.Name] lets out [npc.a_moan+] of encouragement as [npc.she] prepares for [npc2.name] to reach [npc2.her] orgasm.";
+					return "[npc.Name] издает [npc.a_moan+] ободрения, пока [npc.she] готовится к тому, чтобы [npc2.name] достиг(ла) [npc2.her] оргазма.";
 				case SUB_RESISTING:
-					return "[npc.Name] lets out [npc.a_moan+] as [npc.she] desperately tries to pull away from [npc2.name] before [npc2.she] [npc2.verb(orgasm)].";
+					return "[npc.Name] издает [npc.a_moan+], пока [npc.she] отчаянно пытается отстраниться от [npc2.name] перед тем, как [npc2.she] [npc2.verb(orgasm)].";
 			}
 			
 			return "";
@@ -175,12 +170,12 @@ public class SALilayaSpecials {
 		@Override
 		public String getActionTitle() {
 			if(isAmazonsSecretActive(Main.sex.getCharacterTargetedForSexAction(this))) {
-				return "Demand pull back";
+				return "Требовать отстраниться";
 			}
 			if(Main.sex.getCharacterTargetedForSexAction(this).isWearingCondom()) {
-				return "Condom reassurance";
+				return "Успокоить насчет презерватива";
 			}
-			return "Demand pull out";
+			return "Требовать кончить внутрь";
 		}
 
 		@Override
@@ -207,26 +202,21 @@ public class SALilayaSpecials {
 		public String getDescription() {
 			if(isAmazonsSecretActive(Main.sex.getCharacterTargetedForSexAction(this))) {
 				if(Main.sex.getCharacterPerformingAction().isSpeechMuffled()) {
-					return "While letting out desperate moans and lewd cries, [npc.name] [npc.verb(try)] to push [npc2.namePos] [npc2.hips] away from [npc.her] [npc.pussy],"
-							+ " making it clear that [npc.she] doesn't want [npc2.herHim] orgasming in this position due to the effects gained from drinking a bottle of 'Amazon's Secret'.";
+					return "Издавая отчаянные стоны и похотливые крики, [npc.name] [npc.verb(try)], чтобы оттолкнуть [npc2.namePos] [npc2.hips] от [npc.her] [npc.pussy], давая понять, что [npc.she] не хочет, чтобы [npc2.herHim] кончил в этой позе из-за эффекта от выпитой бутылки «Секрета Амазонки».";
 					
 				} else {
-					return "Through [npc.her] desperate moans and lewd cries, [npc.name] somehow manages to formulate a sentence as [npc.she] cries out to [npc2.name], "
-							+" [npc.speech(Hey, wait! If you orgasm like this, I could get pregnant!)]";
+					return "Сквозь [npc.her] отчаянные стоны и похотливые крики, [npc.name] каким-то образом умудряется выдавить из себя фразу, когда [npc.she] вскрикивает, обращаясь к [npc2.name], [npc.speech(Эй, подожди! Если ты будешь кончать вот так, я же могу забеременеть!)]";
 				}
 				
 			} else {
 				if(Main.sex.getCharacterPerformingAction().isSpeechMuffled()) {
-					return "While letting out desperate moans and lewd cries, [npc.name] [npc.verb(try)] to push [npc2.namePos] [npc2.hips] away from [npc.her] [npc.pussy],"
-							+ " making it clear that [npc.she] doesn't want [npc2.herHim] cumming inside of [npc.herHim].";
+					return "Издавая отчаянные стоны и похотливые крики, [npc.name] [npc.verb(try)], чтобы оттолкнуть [npc2.namePos] [npc2.hips] от [npc.her] [npc.pussy], давая понять, что [npc.she] не хочет, чтобы [npc2.herHim] кончил внутрь [npc.herHim].";
 					
 				} else {
 					if(Main.sex.getCharacterTargetedForSexAction(this).isWearingCondom()) {
-						return "Through [npc.her] desperate moans and lewd cries, [npc.name] somehow manages to formulate a sentence as [npc.she] cries out to [npc2.name],"
-								+" [npc.speech(That condom had better not break! I'm <b>not</b> getting pregnant!)]";
+						return "Сквозь [npc.her] отчаянные стоны и похотливые крики, [npc.name] каким-то образом умудряется выдавить фразу, когда [npc.she] кричит [npc2.name], [npc.speech(Надеюсь, этот презерватив не порвется! Я <b>не</b> хочу забеременеть!)]";
 					}
-					return "Through [npc.her] desperate moans and lewd cries, [npc.name] somehow manages to formulate a sentence as [npc.she] cries out to [npc2.name], "
-							+ "[npc.speech(Pull out! I'm <b>not</b> getting pregnant!)]";
+					return "Сквозь [npc.her] отчаянные стоны и похотливые крики, [npc.name] каким-то образом умудряется выдавить фразу, когда [npc.she] кричит [npc2.name], [npc.speech(Кончай в себя! Я <b>не</b> хочу забеременеть!)]";
 				}
 			}
 		}
@@ -252,9 +242,9 @@ public class SALilayaSpecials {
 		@Override
 		public String getActionTitle() {
 			if(isAmazonsSecretActive(Main.sex.getCharacterTargetedForSexAction(this)) || !Main.sex.getCharacterTargetedForSexAction(this).hasPenisIgnoreDildo()) {
-				return "Impregnated?!";
+				return "Забеременела?!";
 			}
-			return "Creampied?!";
+			return "Кончил внутрь?!";
 		}
 
 		@Override
@@ -277,15 +267,12 @@ public class SALilayaSpecials {
 		@Override
 		public String getDescription() {
 			if(isAmazonsSecretActive(Main.sex.getCharacterTargetedForSexAction(this)) || !Main.sex.getCharacterTargetedForSexAction(this).hasPenisIgnoreDildo()) {
-				return "[npc.Name] feels a deep, penetrating warmth spreading through her [lilaya.pussy+] and up into her womb. Violently shoving [npc2.name] away from her, she angrily screams, "
-						+ "[npc.speechNoEffects(What the fuck?! I told you to pull back!)]";
+				return "[npc.Name] чувствует глубокое, пронзительное тепло, разливающееся по её [lilaya.pussy+] и поднимающееся к самой матке. Яростно отталкивая [npc2.name] от себя, она гневно кричит: [npc.speechNoEffects(Какого хера?! Я же говорила тебе кончать до!)]";
 			}
 			if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.lilayaCondomBroke)) {
-				return "[npc.Name] feels [npc2.namePos] [npc2.cum] dripping out of her [lilaya.pussy+], and, frantically shoving [npc2.herHim] away from her, she cries out in distress, "
-						+" [npc.speechNoEffects(The condom broke! No! Fuck! I could get pregnant from this!)]";
+				return "[npc.Name] чувствует, как [npc2.namePos] [npc2.cum] вытекает из её [lilaya.pussy+], и, в панике отталкивая [npc2.herHim], она в отчаянии вскрикивает: [npc.speechNoEffects(Презерватив порвался! Нет! Блять! Я же могу от этого забеременеть!)]";
 			}
-			return "[npc.Name] feels [npc2.namePos] [npc2.cum] dripping out of her [lilaya.pussy+], and, violently shoving [npc2.herHim] away from her, she angrily screams, "
-					+ "[npc.speechNoEffects(What the fuck?! I told you to pull out!)]";
+			return "[npc.Name] чувствует, как [npc2.namePos] [npc2.cum] вытекает из её [lilaya.pussy+], и, яростно отталкивая [npc2.herHim] от себя, она гневно кричит: [npc.speechNoEffects(Какого хера?! Я же говорила тебе кончать до!)]";
 		}
 
 		@Override

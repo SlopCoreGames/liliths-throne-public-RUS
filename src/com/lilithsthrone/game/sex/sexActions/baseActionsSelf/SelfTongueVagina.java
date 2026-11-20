@@ -37,61 +37,51 @@ public class SelfTongueVagina {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Start autocunnilingus";
+			return "Начать автокуннилингус";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Slide your [npc.tongue] into your [npc.pussy+] and start performing cunnilingus on yourself.";
+			return "Просунь свой [npc.tongue] в [npc.pussy+] и начни ласкать себя языком.";
 		}
 		@Override
 		public String getDescription() {
 			UtilText.nodeContentSB.setLength(0);
 
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"In a display of impressive flexibility, [npc.name] [npc.verb(bend)] down and ",
-					"Showing off how flexibile [npc.sheIsFull], [npc.name] [npc.verb(double)] over and ",
-					"Putting [npc.her] flexibility to the test, [npc.name] [npc.verb(bend)] down and "));
+					"Демонстрируя впечатляющую гибкость, [npc.name] [npc.verb(bend)] вниз и ",
+					"Показывая, насколько гибким является [npc.sheIsFull], [npc.name] [npc.verb(double)] наклон и ",
+					"Испытывая гибкость [npc.her] на прочность, [npc.name] [npc.verb(bend)] вниз и "));
 			
 			switch(Main.sex.getSexPace(Main.sex.getCharacterPerformingAction())) {
 				case DOM_GENTLE:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"[npc.verb(press)] [npc.her] [npc.lips+] against [npc.her] own [npc.pussy]."
-							+ " Planting a series of soft kisses on [npc.her] [npc.labia+], [npc.she] slowly, but firmly, [npc.verb(slide)] [npc.her] [npc.tongue+] into [npc.her] [npc.pussy+].",
+							"[npc.verb(press)] [npc.her] [npc.lips+] об [npc.pussy] самой [npc.her]. Осыпая [npc.her] [npc.labia+] нежными поцелуями, [npc.she] медленно, но уверенно, [npc.verb(slide)] [npc.her] [npc.tongue+] в [npc.her] [npc.pussy+].",
 
-							"[npc.verb(plant)] a series of soft kisses on [npc.her] [npc.labia+]."
-							+ " [npc.She] then [npc.verb(give)] [npc.her] [npc.pussy+] a long, wet lick, before gently pushing [npc.her] [npc.tongue+] deep inside."));
+							"[npc.verb(plant)] серию нежных поцелуев в [npc.her] [npc.labia+]. Затем [npc.She] [npc.verb(give)] [npc.her] [npc.pussy+] долгим влажным мазком, прежде чем осторожно протолкнуть [npc.her] [npc.tongue+] глубоко внутрь."));
 					break;
 				case DOM_NORMAL:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"eagerly [npc.verb(press)] [npc.her] [npc.lips+] against [npc.her] own [npc.pussy]."
-							+ " Planting a series of passionate kisses on [npc.her] [npc.labia+], [npc.she] desperately [npc.verb(slide)] [npc.her] [npc.tongue+] into [npc.her] [npc.pussy+].",
+							"жадно [npc.verb(press)] [npc.her] [npc.lips+] об [npc.pussy] самой [npc.her]. Осыпая [npc.her] [npc.labia+] страстными поцелуями, [npc.she] отчаянно [npc.verb(slide)] [npc.her] [npc.tongue+] в [npc.her] [npc.pussy+].",
 
-							"[npc.verb(plant)] a series of passionate kisses on [npc.her] [npc.labia+]."
-							+ " [npc.She] then [npc.verb(give)] [npc.her] [npc.pussy+] a hungry lick, before greedily pushing [npc.her] [npc.tongue+] deep inside."));
+							"[npc.verb(plant)] серию страстных поцелуев в [npc.her] [npc.labia+]. Затем [npc.She] [npc.verb(give)] [npc.her] [npc.pussy+] голодным мазком, прежде чем жадно протолкнуть [npc.her] [npc.tongue+] глубоко внутрь."));
 					break;
 				case DOM_ROUGH:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"roughly [npc.verb(grind)] [npc.her] [npc.lips+] against [npc.her] own [npc.pussy]."
-							+ " Planting a series of forceful kisses on [npc.her] [npc.labia+], [npc.she] greedily [npc.verb(slide)] [npc.her] [npc.tongue+] into [npc.her] [npc.pussy+].",
+							"грубо [npc.verb(grind)] [npc.her] [npc.lips+] об [npc.pussy] самой [npc.her]. Осыпая [npc.her] [npc.labia+] напористыми поцелуями, [npc.she] жадно [npc.verb(slide)] [npc.her] [npc.tongue+] в [npc.her] [npc.pussy+].",
 
-							"[npc.verb(plant)] a series of forceful kisses on [npc.her] [npc.labia+]."
-							+ " [npc.She] then [npc.verb(give)] [npc.her] [npc.pussy+] a rough lick, before greedily pushing [npc.her] [npc.tongue+] deep inside."));
+							"[npc.verb(plant)] серия властных поцелуев в [npc.her] [npc.labia+]. Затем [npc.She] [npc.verb(give)] [npc.her] [npc.pussy+] грубым языком, прежде чем жадно протолкнуть [npc.her] [npc.tongue+] глубоко внутрь."));
 					break;
 				case SUB_EAGER:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"eagerly [npc.verb(press)] [npc.her] [npc.lips+] against [npc.her] own [npc.pussy]."
-							+ " Planting a series of passionate kisses on [npc.her] [npc.labia+], [npc.she] desperately [npc.verb(slide)] [npc.her] [npc.tongue+] into [npc.her] [npc.pussy+].",
+							"жадно [npc.verb(press)] [npc.her] [npc.lips+] об [npc.pussy] самой [npc.her]. Осыпая [npc.her] [npc.labia+] страстными поцелуями, [npc.she] отчаянно [npc.verb(slide)] [npc.her] [npc.tongue+] в [npc.her] [npc.pussy+].",
 
-							"[npc.verb(plant)] a series of passionate kisses on [npc.her] [npc.labia+]."
-							+ " [npc.She] then [npc.verb(give)] [npc.her] [npc.pussy+] a hungry lick, before greedily pushing [npc.her] [npc.tongue+] deep inside."));
+							"[npc.verb(plant)] серию страстных поцелуев в [npc.her] [npc.labia+]. Затем [npc.She] [npc.verb(give)] [npc.her] [npc.pussy+] голодным мазком, прежде чем жадно протолкнуть [npc.her] [npc.tongue+] глубоко внутрь."));
 					break;
 				case SUB_NORMAL:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"[npc.verb(press)] [npc.her] [npc.lips+] against [npc.her] own [npc.pussy]."
-							+ " Planting a series of kisses on [npc.her] [npc.labia+], [npc.she] [npc.verb(slide)] [npc.her] [npc.tongue+] into [npc.her] [npc.pussy+].",
+							"[npc.verb(press)] [npc.her] [npc.lips+] против собственной [npc.her] [npc.pussy]. Осыпая поцелуями [npc.her] [npc.labia+], [npc.she] [npc.verb(slide)] [npc.her] [npc.tongue+] в [npc.her] [npc.pussy+].",
 
-							"[npc.verb(plant)] a series of kisses on [npc.her] [npc.labia+]."
-							+ " [npc.She] then [npc.verb(give)] [npc.her] [npc.pussy+] a wet lick, before pushing [npc.her] [npc.tongue+] deep inside."));
+							"[npc.verb(plant)] серия поцелуев в [npc.her] [npc.labia+]. Затем [npc.She] [npc.verb(give)] [npc.her] [npc.pussy+] влажным языком, прежде чем протолкнуть [npc.her] [npc.tongue+] глубоко внутрь."));
 					break;
 				default:
 					break;
@@ -111,23 +101,20 @@ public class SelfTongueVagina {
 			SexPace.DOM_GENTLE) {
 		@Override
 		public String getActionTitle() {
-			return "Gentle autocunnilingus";
+			return "Нежный аутокуннилингус";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Gently lick your own [npc.pussy+].";
+			return "Нежно лижи свою [npc.pussy+].";
 		}
 		@Override
 		public String getDescription() {
 			UtilText.nodeContentSB.setLength(0);
 
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"Gently driving [npc.her] [npc.tongue+] as deep as possible into [npc.her] [npc.pussy+],"
-							+ " [npc.name] [npc.verb(press)] [npc.her] [npc.lips+] against [npc.her] [npc.labia+] and [npc.verb(let)] out a muffled [npc.moan].",
-					"Withdrawing [npc.her] [npc.tongue+] from [npc.her] [npc.pussy+], [npc.name] [npc.verb(start)] to gently kiss and lick [npc.her] [npc.labia+],"
-							+ " before pressing forwards and slowly sliding [npc.her] [npc.tongue] into [npc.her] [npc.pussy+] once more.",
-					"Drawing [npc.her] [npc.tongue+] out from [npc.her] [npc.pussy+], [npc.name] [npc.verb(start)] slowly kissing and nuzzling against [npc.her] [npc.labia+],"
-							+ " before once again gently thrusting [npc.her] [npc.tongue] deep into [npc.her] [npc.pussy+]."));
+					"Мягко вгоняя [npc.her] [npc.tongue+] как можно глубже в [npc.her] [npc.pussy+], [npc.name] [npc.verb(press)] [npc.her] [npc.lips+] против [npc.her] [npc.labia+] и [npc.verb(let)] приглушенный [npc.moan].",
+					"Вынимая [npc.her] [npc.tongue+] из [npc.her] [npc.pussy+], [npc.name] [npc.verb(start)], чтобы нежно поцеловать и облизать [npc.her] [npc.labia+], прежде чем снова податься вперед и медленно скользнуть [npc.her] [npc.tongue] в [npc.her] [npc.pussy+].",
+					"Вытягивая [npc.her] [npc.tongue+] из [npc.her] [npc.pussy+], [npc.name] [npc.verb(start)], медленно целуя и прижимаясь к [npc.her] [npc.labia+], прежде чем снова мягко вонзить [npc.her] [npc.tongue] глубоко в [npc.her] [npc.pussy+]."));
 			
 			return UtilText.nodeContentSB.toString();
 		}
@@ -143,23 +130,20 @@ public class SelfTongueVagina {
 			SexPace.DOM_NORMAL) {
 		@Override
 		public String getActionTitle() {
-			return "Autocunnilingus";
+			return "Аутокуннилингус";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Continue thrusting your [npc.tongue] into your [npc.pussy+].";
+			return "Продолжать вгонять свой [npc.tongue] в свою [npc.pussy+].";
 		}
 		@Override
 		public String getDescription() {
 			UtilText.nodeContentSB.setLength(0);
 
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"Eagerly driving [npc.her] [npc.tongue+] as deep as possible into [npc.her] [npc.pussy+],"
-							+ " [npc.name] [npc.verb(press)] [npc.her] [npc.lips+] against [npc.her] [npc.labia+] and [npc.verb(let)] out a muffled [npc.moan].",
-					"Withdrawing [npc.her] [npc.tongue+] from [npc.her] [npc.pussy+], [npc.name] [npc.verb(start)] to eagerly kiss and lick [npc.her] [npc.labia+],"
-							+ " before pressing forwards and greedily sliding [npc.her] [npc.tongue] into [npc.her] [npc.pussy+] once more.",
-					"Drawing [npc.her] [npc.tongue+] out from [npc.her] [npc.pussy+], [npc.name] [npc.verb(start)] happily kissing and nuzzling against [npc.her] [npc.labia+],"
-							+ " before once again enthusiastically thrusting [npc.her] [npc.tongue] deep into [npc.her] [npc.pussy+]."));
+					"С жадностью вонзая [npc.her] [npc.tongue+] как можно глубже в [npc.her] [npc.pussy+], при этом [npc.name] [npc.verb(press)] [npc.her] [npc.lips+] о [npc.her] [npc.labia+] и [npc.verb(let)] приглушенный [npc.moan].",
+					"Вынимая [npc.her] [npc.tongue+] из [npc.her] [npc.pussy+], [npc.name] [npc.verb(start)], чтобы жадно целовать и лизать [npc.her] [npc.labia+], а затем снова податься вперед и алчно втиснуть [npc.her] [npc.tongue] в [npc.her] [npc.pussy+].",
+					"Вытягивая [npc.her] [npc.tongue+] из [npc.her] [npc.pussy+], [npc.name] [npc.verb(start)], счастливо целуя и прижимаясь к [npc.her] [npc.labia+], после чего снова с энтузиазмом вонзая [npc.her] [npc.tongue] глубоко в [npc.her] [npc.pussy+]."));
 			
 			return UtilText.nodeContentSB.toString();
 		}
@@ -175,23 +159,20 @@ public class SelfTongueVagina {
 			SexPace.DOM_ROUGH) {
 		@Override
 		public String getActionTitle() {
-			return "Rough autocunnilingus";
+			return "Грубый автокуннилингус";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Roughly thrust your tongue into your own [npc.pussy+].";
+			return "Грубо вонзить язык в свою [npc.pussy+].";
 		}
 		@Override
 		public String getDescription() {
 			UtilText.nodeContentSB.setLength(0);
 			
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"Roughly thrusting [npc.her] [npc.tongue+] as deep as possible into [npc.her] [npc.pussy+],"
-							+ " [npc.name] [npc.verb(grind)] [npc.her] [npc.lips+] against [npc.her] [npc.labia+] and [npc.verb(let)] out a muffled [npc.moan].",
-					"Withdrawing [npc.her] [npc.tongue+] from [npc.her] [npc.pussy+], [npc.name] [npc.verb(start)] to roughly kiss and lick [npc.her] [npc.labia+],"
-							+ " before pressing forwards and violently thrusting [npc.her] [npc.tongue] into [npc.her] [npc.pussy+] once more.",
-					"Drawing [npc.her] [npc.tongue+] out from [npc.her] [npc.pussy+], [npc.name] [npc.verb(start)] forcefully kissing and licking [npc.her] [npc.labia+],"
-							+ " before once again roughly thrusting [npc.her] [npc.tongue] deep into [npc.her] [npc.pussy+]."));
+					"Грубо вонзая [npc.her] [npc.tongue+] как можно глубже в [npc.her] [npc.pussy+], при этом [npc.name] [npc.verb(grind)] [npc.her] [npc.lips+] о [npc.her] [npc.labia+] и [npc.verb(let)] приглушенный [npc.moan].",
+					"Вынимая [npc.her] [npc.tongue+] из [npc.her] [npc.pussy+], [npc.name] [npc.verb(start)], чтобы грубо целовать и лизать [npc.her] [npc.labia+], а затем снова податься вперед и яростно вонзить [npc.her] [npc.tongue] в [npc.her] [npc.pussy+].",
+					"Вытягивая [npc.her] [npc.tongue+] из [npc.her] [npc.pussy+], [npc.name] [npc.verb(start)] с силой целуя и облизывая [npc.her] [npc.labia+], а затем снова грубо вонзая [npc.her] [npc.tongue] глубоко в [npc.her] [npc.pussy+]."));
 		
 			return UtilText.nodeContentSB.toString();
 		}
@@ -207,23 +188,20 @@ public class SelfTongueVagina {
 			SexPace.SUB_NORMAL) {
 		@Override
 		public String getActionTitle() {
-			return "Autocunnilingus";
+			return "Аутокуннилингус";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Continue thrusting your [npc.tongue] into your own [npc.pussy+].";
+			return "Продолжать вгонять свой [npc.tongue] в собственную [npc.pussy+].";
 		}
 		@Override
 		public String getDescription() {
 			UtilText.nodeContentSB.setLength(0);
 
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"Driving [npc.her] [npc.tongue+] as deep as possible into [npc.her] [npc.pussy+],"
-							+ " [npc.name] [npc.verb(press)] [npc.her] [npc.lips+] against [npc.her] [npc.labia+] and [npc.verb(let)] out a muffled [npc.moan].",
-					"Withdrawing [npc.her] [npc.tongue+] from [npc.her] [npc.pussy+], [npc.name] [npc.verb(start)] to kiss and lick [npc.her] [npc.labia+],"
-							+ " before pressing forwards and sliding [npc.her] [npc.tongue] into [npc.her] [npc.pussy+] once more.",
-					"Drawing [npc.her] [npc.tongue+] out from [npc.her] [npc.pussy+], [npc.name] [npc.verb(start)] kissing and nuzzling against [npc.her] [npc.labia+],"
-							+ " before once again thrusting [npc.her] [npc.tongue] deep into [npc.her] [npc.pussy+]."));
+					"Вгоняя [npc.her] [npc.tongue+] как можно глубже в [npc.her] [npc.pussy+], [npc.name] [npc.verb(press)] [npc.her] [npc.lips+] в [npc.her] [npc.labia+] и [npc.verb(let)] приглушенный [npc.moan].",
+					"Вынимая [npc.her] [npc.tongue+] из [npc.her] [npc.pussy+], [npc.name] [npc.verb(start)] чтобы поцеловать и облизать [npc.her] [npc.labia+], а затем снова подаваясь вперед и скользя [npc.her] [npc.tongue] в [npc.her] [npc.pussy+].",
+					"Вытягивая [npc.her] [npc.tongue+] из [npc.her] [npc.pussy+], [npc.name] [npc.verb(start)] целуя и прижимаясь к [npc.her] [npc.labia+], а затем снова грубо вонзая [npc.her] [npc.tongue] глубоко в [npc.her] [npc.pussy+]."));
 			
 			return UtilText.nodeContentSB.toString();
 		}
@@ -239,23 +217,20 @@ public class SelfTongueVagina {
 			SexPace.SUB_EAGER) {
 		@Override
 		public String getActionTitle() {
-			return "Eager autocunnilingus";
+			return "Жадный аутокуннилингус";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Eagerly thrust your [npc.tongue] into your own [npc.pussy+].";
+			return "Энергично вгоняйте свой [npc.tongue] в собственную [npc.pussy+].";
 		}
 		@Override
 		public String getDescription() {
 			UtilText.nodeContentSB.setLength(0);
 
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"Eagerly driving [npc.her] [npc.tongue+] as deep as possible into [npc.her] [npc.pussy+],"
-							+ " [npc.name] [npc.verb(press)] [npc.her] [npc.lips+] against [npc.her] [npc.labia+] and [npc.verb(let)] out a muffled [npc.moan].",
-					"Withdrawing [npc.her] [npc.tongue+] from [npc.her] [npc.pussy+], [npc.name] [npc.verb(start)] to eagerly kiss and lick [npc.her] [npc.labia+],"
-							+ " before pressing forwards and greedily sliding [npc.her] [npc.tongue] into [npc.her] [npc.pussy+] once more.",
-					"Drawing [npc.her] [npc.tongue+] out from [npc.her] [npc.pussy+], [npc.name] [npc.verb(start)] happily kissing and nuzzling against [npc.her] [npc.labia+],"
-							+ " before once again enthusiastically thrusting [npc.her] [npc.tongue] deep into [npc.her] [npc.pussy+]."));
+					"С жадностью вонзая [npc.her] [npc.tongue+] как можно глубже в [npc.her] [npc.pussy+], при этом [npc.name] [npc.verb(press)] [npc.her] [npc.lips+] о [npc.her] [npc.labia+] и [npc.verb(let)] приглушенный [npc.moan].",
+					"Вынимая [npc.her] [npc.tongue+] из [npc.her] [npc.pussy+], [npc.name] [npc.verb(start)], чтобы жадно целовать и лизать [npc.her] [npc.labia+], а затем снова податься вперед и алчно втиснуть [npc.her] [npc.tongue] в [npc.her] [npc.pussy+].",
+					"Вытягивая [npc.her] [npc.tongue+] из [npc.her] [npc.pussy+], [npc.name] [npc.verb(start)], счастливо целуя и прижимаясь к [npc.her] [npc.labia+], после чего снова с энтузиазмом вонзая [npc.her] [npc.tongue] глубоко в [npc.her] [npc.pussy+]."));
 			
 			return UtilText.nodeContentSB.toString();
 		}
@@ -270,11 +245,11 @@ public class SelfTongueVagina {
 			SexParticipantType.SELF) {
 		@Override
 		public String getActionTitle() {
-			return "Stop autocunnilingus";
+			return "Прекратить аутокуннилингус";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Pull your [npc.tongue] out of your [npc.pussy+] and stop performing autocunnilingus.";
+			return "Вытащите свой [npc.tongue] из [npc.pussy+] и прекратите аутокуннилингус.";
 		}
 		@Override
 		public String getDescription() {
@@ -283,15 +258,15 @@ public class SelfTongueVagina {
 			switch(Main.sex.getSexPace(Main.sex.getCharacterPerformingAction())) {
 				case DOM_ROUGH:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"With one last rough lick, [npc.name] [npc.verb(pull)] [npc.her] [npc.face] away from [npc.her] [npc.pussy+].",
+							"Последним грубым лизком [npc.name] [npc.verb(pull)] [npc.her] [npc.face] от [npc.her] [npc.pussy+].",
 	
-							"Giving [npc.her] [npc.labia+] a final, rough kiss, [npc.name] [npc.verb(pull)] [npc.her] [npc.face] away from [npc.her] [npc.pussy+]."));
+							"Одарив [npc.her] [npc.labia+] последним грубым поцелуем, [npc.name] [npc.verb(pull)] [npc.her] [npc.face] подальше от [npc.her] [npc.pussy+]."));
 					break;
 				default:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"With one last lick, [npc.name] [npc.verb(pull)] [npc.her] [npc.face] away from [npc.her] [npc.pussy+].",
+							"Последним движением языка [npc.name] [npc.verb(pull)] [npc.her] [npc.face] прочь от [npc.her] [npc.pussy+].",
 	
-							"Giving [npc.her] [npc.labia+] a final, wet kiss, [npc.name] [npc.verb(pull)] [npc.her] [npc.face] away from [npc.her] [npc.pussy+]."));
+							"Одарив [npc.her] [npc.labia+] последним влажным поцелуем, [npc.name] [npc.verb(pull)] [npc.her] [npc.face] подальше от [npc.her] [npc.pussy+]."));
 					break;
 			}
 			

@@ -33,12 +33,12 @@ public class SelfFingerNipple {
 
         @Override
         public String getActionTitle() {
-            return "Pinch nipples (self)";
+            return "Сжимать соски (самой себе)";
         }
 
         @Override
         public String getActionDescription() {
-            return "Play with your nipples.";
+            return "Поиграть со своими сосками.";
         }
 
         @Override
@@ -46,32 +46,32 @@ public class SelfFingerNipple {
             UtilText.nodeContentSB.setLength(0);
 
             UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-                    "[npc.Name] [npc.verb(reach)] up and [npc.verb(start)] playing with [npc.her] hard [npc.nipples], pinching and rubbing them as [npc.she] [npc.moans] with arousal.",
-                    "[npc.NamePos] fingertips tease over [npc.her] [npc.breasts+], stopping to pinch and tug at [npc.her] [npc.nipples+] as [npc.she] [npc.moan] and sighs in delight.",
-                    "[npc.Name] reaches up to [npc.her] [npc.breasts+], and, with eager fingers, [npc.verb(start)] to pinch and rub at [npc.her] exposed [npc.nipples].",
-                    "With [npc.a_moan+], [npc.name] [npc.verb(reach)] up to [npc.her] [npc.nipples+], pinching and flicking them as [npc.she] continues to cry out in delight."));
+                    "[npc.Name] [npc.verb(reach)] вверх и [npc.verb(start)], играя с [npc.her] твердыми [npc.nipples], сжимая и потирая их, пока [npc.she] [npc.moans] от возбуждения.",
+                    "[npc.NamePos] кончики пальцев дразнят [npc.her] [npc.breasts+], останавливаясь, чтобы сжать и потянуть за [npc.her] [npc.nipples+], пока [npc.she] [npc.moan] и вздыхает от удовольствия.",
+                    "[npc.Name] тянется к [npc.her] [npc.breasts+] и нетерпеливыми пальцами [npc.verb(start)] сжимать и теребить обнаженные [npc.nipples] [npc.her].",
+                    "С [npc.a_moan+], [npc.name] [npc.verb(reach)] вверх к [npc.her] [npc.nipples+], сжимая и щелкая ими, пока [npc.she] продолжает вскрикивать от удовольствия."));
 
             switch (Main.sex.getCharacterPerformingAction().getBreastStoredMilk()) {
                 case ONE_TRICKLE:
-                    UtilText.nodeContentSB.append(" A small trickle of [npc.milk] leaks out around [npc.her] fingertips.");
+                    UtilText.nodeContentSB.append(" Тонкая струйка [npc.milk] просачивается сквозь [npc.her] кончики пальцев.");
                     break;
                 case TWO_SMALL_AMOUNT:
-                    UtilText.nodeContentSB.append(" A small squirt of [npc.milk] leaks out around [npc.her] fingertips.");
+                    UtilText.nodeContentSB.append(" Маленькая струйка [npc.milk] вырывается сквозь [npc.her] кончики пальцев.");
                     break;
                 case THREE_DECENT_AMOUNT:
-                    UtilText.nodeContentSB.append(" A trickle of [npc.milk] runs out around [npc.her] fingertips.");
+                    UtilText.nodeContentSB.append(" Струйка [npc.milk] стекает сквозь [npc.her] кончики пальцев.");
                     break;
                 case FOUR_LARGE_AMOUNT:
-                    UtilText.nodeContentSB.append(" [npc.Her] [npc.milk] starts to flow out around [npc.her] fingers and run down [npc.her] [npc.breasts+].");
+                    UtilText.nodeContentSB.append(" [npc.Her] [npc.milk] начинает вытекать сквозь [npc.her] пальцы и стекать по [npc.her] [npc.breasts+].");
                     break;
                 case FIVE_VERY_LARGE_DROOLING:
-                    UtilText.nodeContentSB.append(" [npc.Milk] starts drooling out in a little stream around [npc.her] fingers.");
+                    UtilText.nodeContentSB.append(" [npc.Milk] начинает пускать слюни тонкой струйкой вокруг пальцев [npc.her].");
                     break;
                 case SIX_EXTREME_AMOUNT_DRIPPING:
-                    UtilText.nodeContentSB.append(" [npc.Milk] starts pouring out in a constant stream to run down [npc.her] [npc.breasts+].");
+                    UtilText.nodeContentSB.append(" [npc.Milk] начинает изливаться непрерывной струей, стекающей по [npc.her] [npc.breasts+].");
                     break;
                 case SEVEN_MONSTROUS_AMOUNT_POURING:
-                    UtilText.nodeContentSB.append(" [npc.Milk] starts pouring out in a heavy flow to quickly soak [npc.her] [npc.breasts+].");
+                    UtilText.nodeContentSB.append(" [npc.Milk] начинает изливаться мощным потоком, быстро пропитывая [npc.her] [npc.breasts+].");
                     break;
                 default:
                     break;
@@ -102,12 +102,12 @@ public class SelfFingerNipple {
 
         @Override
         public String getActionTitle() {
-            return "Finger nipples (self)";
+            return "Ласкать соски (самой себе)";
         }
 
         @Override
         public String getActionDescription() {
-            return "Sink [npc.her] fingers into [npc.her] [npc.nipples+].";
+            return "Погрузить пальцы [npc.her] в [npc.her] [npc.nipples+].";
         }
 
         @Override
@@ -115,31 +115,31 @@ public class SelfFingerNipple {
             UtilText.nodeContentSB.setLength(0);
 
             UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-                    "[npc.Name] [npc.verb(reach)] up, letting out a lewd [npc.moan] as [npc.she] eagerly [npc.verb(sink)] [npc.her] fingers into [npc.her] fuckable [npc.nipples].",
-                    "[npc.NamePos] fingertips tease over [npc.her] breasts, circling around [npc.her] [npc.nipples] before greedily sinking inside.",
-                    "[npc.Name] [npc.moans] and [npc.verb(squeal)] as [npc.she] [npc.verb(start)] eagerly fingering [npc.her] nipple-cunts.",
-                    "With a lewd cry, [npc.name] [npc.verb(sink)] [npc.her] digits into [npc.her] inviting nipple-cunts, panting heavily as [npc.she] [npc.verb(start)] eagerly fingering [npc.herself]."));
+                    "[npc.Name] [npc.verb(reach)], издавая похотливый [npc.moan], пока [npc.she] жадно [npc.verb(sink)] [npc.her] пальцы в [npc.her] похотливые [npc.nipples].",
+                    "Кончики пальцев [npc.NamePos] дразнят [npc.her] грудь, описывая круги вокруг [npc.her] [npc.nipples], прежде чем жадно погрузиться внутрь.",
+                    "[npc.Name] [npc.moans] и [npc.verb(squeal)], пока [npc.she] жадно [npc.verb(start)] соски-киски [npc.her].",
+                    "С похотливым криком, [npc.name] [npc.verb(sink)] [npc.her] пальцами в манящие соски-киски [npc.her], тяжело дыша, пока [npc.she] жадно [npc.verb(start)] [npc.herself]."));
             switch (Main.sex.getCharacterPerformingAction().getBreastStoredMilk()) {
                 case ONE_TRICKLE:
-                    UtilText.nodeContentSB.append(" A small trickle of [npc.milk] leaks out around [npc.her] fingertips.");
+                    UtilText.nodeContentSB.append(" Тонкая струйка [npc.milk] просачивается сквозь [npc.her] кончики пальцев.");
                     break;
                 case TWO_SMALL_AMOUNT:
-                    UtilText.nodeContentSB.append(" A small squirt of [npc.milk] leaks out around [npc.her] fingertips.");
+                    UtilText.nodeContentSB.append(" Маленькая струйка [npc.milk] вырывается сквозь [npc.her] кончики пальцев.");
                     break;
                 case THREE_DECENT_AMOUNT:
-                    UtilText.nodeContentSB.append(" A trickle of [npc.milk] runs out around [npc.her] fingertips.");
+                    UtilText.nodeContentSB.append(" Струйка [npc.milk] стекает сквозь [npc.her] кончики пальцев.");
                     break;
                 case FOUR_LARGE_AMOUNT:
-                    UtilText.nodeContentSB.append(" [npc.Her] [npc.milk] starts to flow out around [npc.her] fingers and run down [npc.her] [npc.breasts+].");
+                    UtilText.nodeContentSB.append(" [npc.Her] [npc.milk] начинает вытекать сквозь [npc.her] пальцы и стекать по [npc.her] [npc.breasts+].");
                     break;
                 case FIVE_VERY_LARGE_DROOLING:
-                    UtilText.nodeContentSB.append(" [npc.Her] [npc.milk] starts drooling out in a little stream around [npc.her] fingers.");
+                    UtilText.nodeContentSB.append(" [npc.Her] [npc.milk] начинает пускать слюни тонкой струйкой вокруг пальцев [npc.her].");
                     break;
                 case SIX_EXTREME_AMOUNT_DRIPPING:
-                    UtilText.nodeContentSB.append(" [npc.Her] [npc.milk] starts pouring out in a constant stream to run down [npc.her] [npc.breasts+].");
+                    UtilText.nodeContentSB.append(" [npc.Her] [npc.milk] начинает непрерывным потоком стекать по [npc.her] [npc.breasts+].");
                     break;
                 case SEVEN_MONSTROUS_AMOUNT_POURING:
-                    UtilText.nodeContentSB.append(" [npc.Her] [npc.milk] starts pouring out in a heavy flow to quickly soak [npc.her] [npc.breasts+].");
+                    UtilText.nodeContentSB.append(" [npc.Her] [npc.milk] начинает хлестать густым потоком, быстро пропитывая [npc.her] [npc.breasts+].");
                     break;
                 default:
                     break;
@@ -165,21 +165,21 @@ public class SelfFingerNipple {
 
         @Override
         public String getActionTitle() {
-            return "Gentle nipple fingering (self)";
+            return "Нежное ласкание сосков пальцами (самой)";
         }
 
         @Override
         public String getActionDescription() {
-            return "Gently finger [npc.her] [npc.nipples+].";
+            return "Нежно ласкать пальцами [npc.her] [npc.nipples+].";
         }
 
         @Override
         public String getDescription() {
             return UtilText.returnStringAtRandom(
-                    "[npc.A_moan+] escapes from between [npc.namePos] [npc.lips+] as [npc.she] slowly [npc.verb(push)] [npc.her] [npc.fingers] deep inside [npc.her] [npc.nipple+].",
-                    "Gently pumping [npc.her] [npc.fingers] in and out of [npc.her] [npc.nipple+], [npc.name] [npc.verb(start)] letting out a series of delighted [npc.moans] as [npc.she] rhythmically [npc.verb(finger)] [npc.her] [npc.breast+].",
-                    "Curling [npc.her] [npc.fingers] up inside [npc.her] [npc.nipple(true)], [npc.name] [npc.verb(let)] out a little whimper as [npc.she] [npc.verb(start)] pumping [npc.her] digits in and out of [npc.her] [npc.breast+].",
-                    "Focusing on pleasuring [npc.her] fuckable [npc.breasts], [npc.name] [npc.verb(start)] gently pumping [npc.her] [npc.fingers] in and out of one of [npc.her] [npc.nipples+].");
+                    "[npc.A_moan+] вытекает сквозь [npc.namePos] [npc.lips+], пока [npc.she] медленно [npc.verb(push)] [npc.her] [npc.fingers] глубоко внутри [npc.her] [npc.nipple+].",
+                    "Мягко вводя и выводя [npc.her] [npc.fingers] из [npc.her] [npc.nipple+], [npc.name] [npc.verb(start)] издавая серию восторженных [npc.moans], пока [npc.she] ритмично [npc.verb(finger)] [npc.her] [npc.breast+].",
+                    "Сворачивая [npc.her] [npc.fingers] внутри [npc.her] [npc.nipple(true)], [npc.name] [npc.verb(let)] издает тихий скулеж, пока [npc.she] [npc.verb(start)] водит [npc.her] пальцами туда-сюда в [npc.her] [npc.breast+].",
+                    "Сосредоточившись на доставлении удовольствия [npc.her] похотливой [npc.breasts], [npc.name] [npc.verb(start)] мягко водит [npc.her] [npc.fingers] туда-сюда в одном из [npc.her] [npc.nipples+].");
         }
 
     };
@@ -195,21 +195,21 @@ public class SelfFingerNipple {
 
         @Override
         public String getActionTitle() {
-            return "Nipple fingering (self)";
+            return "Ласкание сосков пальцами (самой)";
         }
 
         @Override
         public String getActionDescription() {
-            return "Concentrate on fingering [npc.her] [npc.nipples+].";
+            return "Сосредоточиться на ласках пальцами [npc.her] [npc.nipples+].";
         }
 
         @Override
         public String getDescription() {
             return UtilText.returnStringAtRandom(
-                    "[npc.A_moan+] escapes from between [npc.namePos] [npc.lips+] as [npc.she] greedily [npc.verb(push)] [npc.her] [npc.fingers] deep inside [npc.her] [npc.nipple+].",
-                    "Pumping [npc.her] [npc.fingers] in and out of [npc.her] [npc.nipple+], [npc.name] [npc.verb(start)] letting out a series of delighted [npc.moans] as [npc.she] rhythmically [npc.verb(finger)] [npc.her] [npc.breast+].",
-                    "Curling [npc.her] [npc.fingers] up inside [npc.her] fuckable [npc.nipple(true)], [npc.name] [npc.verb(let)] out [npc.a_moan] as [npc.she] [npc.verb(start)] pumping [npc.her] digits in and out of [npc.her] [npc.breast+].",
-                    "Focusing on pleasuring [npc.her] [npc.breasts+], [npc.name] [npc.verb(start)] pumping [npc.her] [npc.fingers] in and out of one of [npc.her] [npc.nipples+].");
+                    "[npc.A_moan+] вытекает сквозь [npc.namePos] [npc.lips+], пока [npc.she] жадно [npc.verb(push)] [npc.her] [npc.fingers] глубоко внутри [npc.her] [npc.nipple+].",
+                    "[npc.her] [npc.fingers] ритмично входят и выходят из [npc.her] [npc.nipple+], при этом [npc.name] [npc.verb(start)] издает серию восторженных [npc.moans], пока [npc.she] ритмично [npc.verb(finger)] [npc.her] [npc.breast+].",
+                    "Подкручивая [npc.her] [npc.fingers] внутри [npc.her] охренительного [npc.nipple(true)], [npc.name] [npc.verb(let)] наружу, [npc.a_moan], пока [npc.she] [npc.verb(start)] ритмично водит [npc.her] пальцами туда-сюда в [npc.her] [npc.breast+].",
+                    "Сосредоточившись на доставлении удовольствия [npc.her] [npc.breasts+], [npc.name] [npc.verb(start)] качает [npc.her] [npc.fingers] в одном из [npc.her] [npc.nipples+].");
         }
 
     };
@@ -225,21 +225,21 @@ public class SelfFingerNipple {
 
         @Override
         public String getActionTitle() {
-            return "Rough nipple-fingering (self)";
+            return "Грубые ласки сосков (самостоятельно)";
         }
 
         @Override
         public String getActionDescription() {
-            return "Roughly finger [npc.her] [npc.nipples+].";
+            return "Грубо перебирая пальцами [npc.her] [npc.nipples+].";
         }
 
         @Override
         public String getDescription() {
             return UtilText.returnStringAtRandom(
-                    "[npc.A_moan+] escapes from between [npc.namePos] [npc.lips+] as [npc.she] roughly [npc.verb(slam)] [npc.her] [npc.fingers] deep inside [npc.her] [npc.nipple+], before starting to rapidly finger [npc.her] [npc.breast(true)].",
-                    "Roughly pumping [npc.her] [npc.fingers] in and out of [npc.her] [npc.nipple+], [npc.name] [npc.verb(start)] letting out a series of delighted [npc.moans] as [npc.she] rhythmically [npc.verb(finger)] [npc.her] [npc.breast+].",
-                    "Forcefully curling [npc.her] [npc.fingers] up inside [npc.her] fuckable [npc.nipple(true)], [npc.name] [npc.verb(let)] out [npc.a_moan] as [npc.she] [npc.verb(start)] roughly grinding [npc.her] digits in and out of [npc.her] [npc.breast+].",
-                    "Focusing on pleasuring [npc.her] fuckable [npc.breasts+], [npc.name] [npc.verb(start)] roughly slamming [npc.her] [npc.fingers] in and out of one of [npc.her] [npc.nipples+].");
+                    "[npc.A_moan+] вырывается из между [npc.namePos] [npc.lips+], пока [npc.she] грубо [npc.verb(slam)] [npc.her] [npc.fingers] глубоко внутри [npc.her] [npc.nipple+], после чего начинает стремительно ласкать пальцами [npc.her] [npc.breast(true)].",
+                    "Грубо качая [npc.her] [npc.fingers] туда-сюда в [npc.her] [npc.nipple+], [npc.name] [npc.verb(start)] издает серию восторженных [npc.moans], пока [npc.she] ритмично [npc.verb(finger)] [npc.her] [npc.breast+].",
+                    "Сильно подкручивая [npc.her] [npc.fingers] внутри [npc.her] охренительного [npc.nipple(true)], [npc.name] [npc.verb(let)] наружу, [npc.a_moan], пока [npc.she] [npc.verb(start)] грубо втирает [npc.her] пальцы туда-сюда в [npc.her] [npc.breast+].",
+                    "Сосредоточившись на ласках похотливой [npc.breasts+], [npc.name] [npc.verb(start)] грубо вколачивает [npc.her] [npc.fingers] туда-сюда в один из [npc.her] [npc.nipples+] [npc.her].");
         }
 
     };
@@ -255,21 +255,21 @@ public class SelfFingerNipple {
 
         @Override
         public String getActionTitle() {
-            return "Nipple-fingering (self)";
+            return "Ласка сосков пальцами (самостоятельно)";
         }
 
         @Override
         public String getActionDescription() {
-            return "Concentrate on fingering [npc.her] [npc.nipples+].";
+            return "Сосредоточиться на ласках пальцами [npc.her] [npc.nipples+].";
         }
 
         @Override
         public String getDescription() {
             return UtilText.returnStringAtRandom(
-                    "[npc.A_moan+] escapes from between [npc.namePos] [npc.lips+] as [npc.she] greedily [npc.verb(push)] [npc.her] [npc.fingers] deep inside [npc.her] [npc.nipple+].",
-                    "Pumping [npc.her] [npc.fingers] in and out of [npc.her] [npc.nipple+], [npc.name] [npc.verb(start)] letting out a series of delighted [npc.moans] as [npc.she] rhythmically [npc.verb(finger)] [npc.her] [npc.breast+].",
-                    "Curling [npc.her] [npc.fingers] up inside [npc.her] fuckable [npc.nipple(true)], [npc.name] [npc.verb(let)] out [npc.a_moan] as [npc.she] [npc.verb(start)] pumping [npc.her] digits in and out of [npc.her] [npc.breast+].",
-                    "Focusing on pleasuring [npc.her] [npc.breasts+], [npc.name] [npc.verb(start)] pumping [npc.her] [npc.fingers] in and out of one of [npc.her] [npc.nipples+].");
+                    "[npc.A_moan+] вытекает сквозь [npc.namePos] [npc.lips+], пока [npc.she] жадно [npc.verb(push)] [npc.her] [npc.fingers] глубоко внутри [npc.her] [npc.nipple+].",
+                    "[npc.her] [npc.fingers] ритмично входят и выходят из [npc.her] [npc.nipple+], при этом [npc.name] [npc.verb(start)] издает серию восторженных [npc.moans], пока [npc.she] ритмично [npc.verb(finger)] [npc.her] [npc.breast+].",
+                    "Подкручивая [npc.her] [npc.fingers] внутри [npc.her] охренительного [npc.nipple(true)], [npc.name] [npc.verb(let)] наружу, [npc.a_moan], пока [npc.she] [npc.verb(start)] ритмично водит [npc.her] пальцами туда-сюда в [npc.her] [npc.breast+].",
+                    "Сосредоточившись на доставлении удовольствия [npc.her] [npc.breasts+], [npc.name] [npc.verb(start)] качает [npc.her] [npc.fingers] в одном из [npc.her] [npc.nipples+].");
         }
 
     };
@@ -285,21 +285,21 @@ public class SelfFingerNipple {
 
         @Override
         public String getActionTitle() {
-            return "Eager nipple-fingering (self)";
+            return "Нетерпеливая ласка сосков пальцами (самостоятельно)";
         }
 
         @Override
         public String getActionDescription() {
-            return "Eagerly finger [npc.her] [npc.nipples+].";
+            return "С жадностью перебирая пальцами [npc.her] [npc.nipples+].";
         }
 
         @Override
         public String getDescription() {
             return UtilText.returnStringAtRandom(
-                    "[npc.A_moan+] escapes from between [npc.namePos] [npc.lips+] as [npc.she] eagerly [npc.verb(slam)] [npc.her] [npc.fingers] deep inside [npc.her] [npc.nipple+], before starting to desperately finger [npc.her] [npc.breast(true)].",
-                    "Enthusiastically pumping [npc.her] [npc.fingers] in and out of [npc.her] [npc.nipple+], [npc.name] [npc.verb(start)] letting out a series of delighted [npc.moans] as [npc.she] frantically [npc.verb(finger)] [npc.her] [npc.breast+].",
-                    "Desperately curling [npc.her] [npc.fingers] up inside [npc.her] fuckable [npc.nipple(true)], [npc.name] [npc.verb(let)] out [npc.a_moan] as [npc.she] [npc.verb(start)] eagerly grinding [npc.her] digits in and out of [npc.her] [npc.breast+].",
-                    "Focusing on pleasuring [npc.her] fuckable [npc.breasts+], [npc.name] eagerly [npc.verb(start)] slamming [npc.her] [npc.fingers] in and out of one of [npc.her] [npc.nipples+].");
+                    "[npc.A_moan+] выскальзывает из между [npc.namePos] [npc.lips+], пока [npc.she] с нетерпением [npc.verb(slam)] [npc.her] [npc.fingers] глубоко внутри [npc.her] [npc.nipple+], прежде чем начать отчаянно перебирать пальцами [npc.her] [npc.breast(true)].",
+                    "С энтузиазмом заставляя [npc.her] [npc.fingers] двигаться туда-сюда в [npc.her] [npc.nipple+], [npc.name] [npc.verb(start)] издает серию восторженных [npc.moans], пока [npc.she] неистово [npc.verb(finger)] [npc.her] [npc.breast+].",
+                    "Отчаянно сжимая [npc.her] [npc.fingers] внутри [npc.her] податливого [npc.nipple(true)], [npc.name] [npc.verb(let)] наружу [npc.a_moan], пока [npc.she] [npc.verb(start)] с жадностью водит [npc.her] пальцами туда-сюда в [npc.her] [npc.breast+].",
+                    "Сосредоточившись на ласках похотливой [npc.breasts+], [npc.name] с энтузиазмом [npc.verb(start)] вколачивает [npc.her] [npc.fingers] туда-сюда в один из [npc.her] [npc.nipples+] [npc.her].");
         }
 
     };
@@ -314,17 +314,17 @@ public class SelfFingerNipple {
 
         @Override
         public String getActionTitle() {
-            return "Stop fingering nipples (self)";
+            return "Перестать ласкать соски (самой)";
         }
 
         @Override
         public String getActionDescription() {
-            return "Stop fingering [npc.her] [npc.nipples+].";
+            return "Перестать ласкать [npc.her] [npc.nipples+] пальцами.";
         }
 
         @Override
         public String getDescription() {
-            return "Letting out a satisfied [npc.moan], [npc.name] [npc.verb(slide)] [npc.her] fingers out of [npc.her] [npc.nipples+].";
+            return "Издавая удовлетворенный [npc.moan], [npc.name] [npc.verb(slide)] вынимает [npc.her] пальцы из [npc.her] [npc.nipples+].";
         }
     };
 }

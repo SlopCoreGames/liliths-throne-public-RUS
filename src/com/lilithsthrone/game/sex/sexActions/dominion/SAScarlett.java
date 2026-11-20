@@ -44,7 +44,7 @@ public class SAScarlett {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Buttslut tease";
+			return "Дразнилка для жопошлюхи";
 		}
 		@Override
 		public String getActionDescription() {
@@ -52,8 +52,7 @@ public class SAScarlett {
 		}
 		@Override
 		public String getDescription() {
-			return "Realising that you're close to reaching your climax, [scarlett.name] slams [scarlett.her] [scarlett.cock+] deep into your [pc.asshole+] and teases,"
-					+ " [scarlett.speechNoEffects(Come on, bitch! ~Mmm!~ Prove to me that you're a dirty buttslut and cum from the feeling of my cock in your ass!)]";
+			return "Осознав, что ты близок к оргазму, [scarlett.name] с силой вгоняет [scarlett.her] [scarlett.cock+] глубоко в твою [pc.asshole+] и дразнит: [scarlett.speechNoEffects(Давай, сучка! ~Ммм!~ Докажи мне, что ты грязная жопошлюха, и кончи от одного ощущения моего члена в твоей заднице!)]";
 		}
 	};
 	
@@ -80,7 +79,7 @@ public class SAScarlett {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Customer interruption";
+			return "Прерывание клиента";
 		}
 		@Override
 		public String getActionDescription() {
@@ -118,7 +117,7 @@ public class SAScarlett {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Helena interruption";
+			return "Прерывание Helena";
 		}
 		@Override
 		public String getActionDescription() {

@@ -37,7 +37,7 @@ public class NatalyaSpecials {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Demand facial";
+			return "Требовать минет на лицо";
 		}
 		@Override
 		public String getActionDescription() {
@@ -49,8 +49,7 @@ public class NatalyaSpecials {
 		}
 		@Override
 		public String getDescription() {
-			return "Natalya's breathing starts to get faster and heavier, and as her [natalya.cockGirth], bestial cock starts wildly throbbing in your [pc.hands], she desperately paws on the ground with one of her front hoofs and calls out,"
-					+ " [natalya.speechNoEffects(Yes! ~Ooh!~ I am getting close! ~Aah!~ As your reward, you are to... ~Ooh!~ ...you are to take my load all over your face! ~Mmm!~)]";
+			return "Дыхание Натальи становится всё чаще и тяжелее, и пока её [natalya.cockGirth], звериный член дико пульсирует в твоём [pc.hands], она отчаянно скребёт землю одной из передних копыт и вскрикивает: [natalya.speechNoEffects(Да! ~Ох!~ Я уже близко! ~Аах!~ В награду ты должен... ~Ох!~ ...ты должен принять мою загрузку прямо на своё лицо! ~Ммм!~)]";
 		}
 		@Override
 		public void applyEffects() {
@@ -77,18 +76,15 @@ public class NatalyaSpecials {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Prepare ([style.colourMinorGood(facial)])";
+			return "Приготовиться ([style.colourMinorGood(минет на лицо)])";
 		}
 		@Override
 		public String getActionDescription() {
-			return "[style.colourMinorGood(Do as Natalya commands)] and position your [pc.face] in front of her horse-like cock, thereby preparing to receive a facial from her.";
+			return "[style.colourMinorGood(Исполнить приказ Натальи)] и подставить свой [pc.face] под её лошадиный член, готовясь принять минет на лицо.";
 		}
 		@Override
 		public String getDescription() {
-			return "Letting out a lewd moan, Natalya cries out, [natalya.speechNoEffects(Yes! I am about... ~Ooh!~ ...about to cum! Do as I command and take my load on your face!)]"
-					+ "<br/><br/>"
-					+ "With the [natalya.race]'s [natalya.cockGirth] cock wildly throbbing in your [pc.hands], you do as you're told and shuffle around in front of it."
-					+ " Continuing to rub your Mistress's musky precum up and down the length of her hot shaft, you point the flared head directly at your face and prepare to receive your reward...";
+			return "Издавая похотливый стон, Наталья вскрикивает: [natalya.speechNoEffects(Да! Я почти... ~Ох!~ ...почти кончаю! Делай, как я велю, и прими мою загрузку на лицо!)]<br/><br/>Пока [natalya.cockGirth] член [natalya.race] дико пульсирует в твоём [pc.hands], ты делаешь то, что тебе велели, и ерзаешь прямо перед ним. Продолжая растирать мускусистую предэякуляцию своей Госпожи вверх и вниз по всей длине её горячего ствола, ты направляешь раздутую головку прямо себе в лицо, готовясь получить свою награду...";
 		}
 		@Override
 		public void applyEffects() {
@@ -119,18 +115,15 @@ public class NatalyaSpecials {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Prepare ([style.colourMinorBad(floor)])";
+			return "Приготовиться ([style.colourMinorBad(пол)])";
 		}
 		@Override
 		public String getActionDescription() {
-			return "[style.colourMinorBad(Refuse to do as Natalya commands)], and instead of receiving a facial from her, aim her cock away from you, causing her to cum all over the floor.";
+			return "[style.colourMinorBad(Отказаться исполнять приказ Натальи)] и вместо того, чтобы принять минет на лицо, направить её член в сторону, заставляя её кончить прямо на пол.";
 		}
 		@Override
 		public String getDescription() {
-			return "Letting out a lewd moan, Natalya cries out, [natalya.speechNoEffects(Slave! I am about... ~Ooh!~ ...about to cum! Do as I command and take my load on your face!)]"
-					+ "<br/><br/>"
-					+ "With the [natalya.race]'s [natalya.cockGirth] cock wildly throbbing in your [pc.hands], you decide that you'd rather not do as you're told and instead shuffle around to the side of it."
-					+ " Continuing to rub your Mistress's musky precum up and down the length of her hot shaft, you point the flared head away from you and prepare for it to unload all over the floor...";
+			return "Издавая похотливый стон, Наталья вскрикивает: [natalya.speechNoEffects(Рабыня! Я почти... ~Ох!~ ...почти кончаю! Делай, как я велю, и прими мою порцию на свое лицо!)]<br/><br/>Пока [natalya.cockGirth] член [natalya.race] дико пульсирует в твоей [pc.hands], ты решаешь, что не хочешь беспрекословно подчиняться, и вместо этого смещаешься в сторону. Продолжая растирать мускусистую предэякуляцию своей Госпожи вверх и вниз по всей длине ее горячего ствола, ты направляешь расширенную головку прочь от себя, готовясь к тому, что она выплеснет всю свою порцию прямо на пол...";
 		}
 		@Override
 		public void applyEffects() {

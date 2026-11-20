@@ -40,12 +40,12 @@ public class PixShower {
 			SexParticipantType.NORMAL) {
 		@Override
 		public String getActionTitle() {
-			return "Kiss";
+			return "Поцеловать";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Turn your head back and kiss Pix.";
+			return "Поверни голову назад и поцелуй Пикс.";
 		}
 
 		@Override
@@ -57,10 +57,10 @@ public class PixShower {
 		@Override
 		public String getDescription() {
 			return UtilText.returnStringAtRandom(
-					"You turn your head to one side and try to kiss Pix. For a brief moment, you manage to press your [pc.lips] against hers, but with a little giggle, she pulls back, leaving you kissing mid-air.",
-					"Looking back at Pix, you let out a desperate whine as you lean back to try to kiss her, but she pulls back just out of your reach, leaving you flushed and frustrated as your [pc.lips] meet nothing but empty air.",
-					"Leaning back into Pix, you turn your head to try and kiss her. Seeing what you're trying to do, she lets out a little laugh as she leans away from you, preventing your [pc.lips] from even coming close to hers.",
-					"Turning your head back to look at Pix, you try to kiss her, but as she sees what you're doing, she dodges away, laughing and leaving you feeling extremely foolish.");
+					"Ты поворачиваешь голову в сторону, пытаясь поцеловать Пикс. На мгновение тебе удается прижать свои [pc.lips] к её губам, но, тихонько хихикнув, она отстраняется, оставляя тебя целовать пустоту.",
+					"Оглядываясь на Пикс, ты издаешь отчаянный стон и подаешься назад, чтобы поцеловать её, но она ускользает в самый последний момент, оставляя тебя раскрасневшейся и разочарованной, когда твои [pc.lips] натыкаются лишь на пустоту.",
+					"Прильнув к Пикс, ты поворачиваешь голову, чтобы поцеловать её. Заметив твои намерения, она издает смешок и отстраняется, не давая твоим [pc.lips] даже приблизиться к её губам.",
+					"Повернув голову назад, чтобы посмотреть на Пикс, ты пытаешься её поцеловать, но, увидев, что ты задумала, она уворачивается с хохотом, заставляя тебя чувствовать себя невероятно глупо.");
 		}
 
 		@Override
@@ -78,12 +78,12 @@ public class PixShower {
 			SexParticipantType.NORMAL) {
 		@Override
 		public String getActionTitle() {
-			return "Pinch nipples";
+			return "Сжимать соски";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Reach up and pinch your [npc.nipples+].";
+			return "Протяни руку вверх и ущипни свои [npc.nipples+].";
 		}
 
 		@Override
@@ -95,14 +95,13 @@ public class PixShower {
 		@Override
 		public String getDescription() {
 			return UtilText.returnStringAtRandom(
-					"Feeling extremely frustrated, you start to reach up to your chest, hoping to give your [pc.nipples+] some attention."
-							+ " Pix sees what you're doing, however, and angrily swats your hands away from your breasts, causing you to let out a desperate whine.",
+					"Чувствуя жгучее разочарование, ты тянешься к груди в надежде уделить внимание своим [pc.nipples+]. Однако Пикс замечает это и сердито отшвыривает твои руки от груди, заставляя тебя издать отчаянный стон.",
 							
-					"You try to reach up to play with your [pc.nipples+], but, due to how tired you are, your movements are extremely sluggish, and Pix quickly pulls your hands away from your chest before you're even half-way there.",
+					"Ты пытаешься дотянуться до своих [pc.nipples+], чтобы поиграть с ними, но из-за сильной усталости твои движения крайне вялые, и Пикс быстро убирает твои руки от груди, прежде чем ты успеваешь до них добраться.",
 					
-					"Letting out a desperate whine, you try to reach up and grope your [pc.breasts], but Pix has other plans, and firmly yanks your hands away from your chest.",
+					"Издавая отчаянный скулеж, ты пытаешься дотянуться до своих [pc.breasts], но у Пикс другие планы: она решительно отрывает твои руки от груди.",
 					
-					"Desperately reaching up to try and play with your [pc.nipples+], your [pc.hands] don't even make it half-way to your chest before Pix firmly pulls your [pc.arms] back down to your sides.");
+					"В отчаянной попытке поиграть со своими [pc.nipples+], твои [pc.hands] не успевают дойти даже до середины пути, как Пикс властно оттягивает твои [pc.arms] вниз, к бокам.");
 		}
 		
 		@Override
@@ -126,26 +125,24 @@ public class PixShower {
 		
 		@Override
 		public String getActionTitle() {
-			return "Masturbate";
+			return "Мастурбировать";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Reach down between your legs and start masturbating.";
+			return "Просунуть руку между ног и начать мастурбировать.";
 		}
 
 		@Override
 		public String getDescription() {
 			return UtilText.returnStringAtRandom(
-					"Flushed and frustrated, you try to dart your [pc.hands] down between your [pc.legs], but Pix is far too quick for you in your current state,"
-							+ " and instantly pulls your arms behind your back, preventing you from stimulating yourself.",
+					"Покраснев от досады, ты пытаешься спрятать свои [pc.hands] между [pc.legs], но в твоем нынешнем состоянии Пикс оказывается куда быстрее: она мгновенно заводит твои руки за спину, не давая тебе ласкать себя.",
 							
-					"You try to reach down between your legs in order to masturbate, but Pix quickly grabs your wrists and pulls your arms behind your back.",
+					"Ты пытаешься просунуть руку между ног, чтобы заняться мастурбацией, но Пикс быстро хватает тебя за запястья и уводит руки за спину.",
 					
-					"With a desperate whine, you attempt to move your hands down between your legs."
-							+ " Letting out a little giggle as she sees what you're trying to do, Pix roughly grabs your wrists, yanking your hands away from your crotch before growling menacingly into your ear.",
+					"С отчаянным скулежом ты пытаешься опустить руки между ног. Заметив твои намерения, Пикс издает короткий смешок, грубо хватает тебя за запястья, отрывая руки от паха, и угрожающе рычит тебе в самое ухо.",
 					
-					"Desperately reaching down to try and stimulate yourself, your hands don't even get half-way to your crotch before Pix is pulling them away and giggling into your ear.");
+					"В отчаянной попытке достать до себя, твои руки не успевают дойти даже до середины паха, как Пикс уже оттягивает их в сторону, хихикая тебе в ухо.");
 		}
 		
 		@Override
@@ -169,24 +166,24 @@ public class PixShower {
 		
 		@Override
 		public String getActionTitle() {
-			return "Dirty talk";
+			return "Грязные разговоры";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Talk dirty to Pix.";
+			return "Грязные разговоры с Пикс.";
 		}
 
 		@Override
 		public String getDescription() {
 			return UtilText.returnStringAtRandom(
-					"As you open your mouth to try and say something to Pix, she darts one of her [pix.hands+] up and presses it over your mouth, giggling into your ear as she tells you to stay quiet.",
+					"Стоит тебе открыть рот, чтобы что-то сказать, как Пикс прижимает один из своих [pix.hands+] к твоим губам, хихикая тебе в ухо и веля молчать.",
 							
-					"You try to say something to Pix, but your words are instantly muffled as she darts a hand up to cover your mouth. Laughing over your shoulder, she tells you to stay quiet and be a good [pc.girl].",
+					"Ты пытаешься что-то сказать Пикс, но слова мгновенно глохнут, когда она резко вскидывает руку, закрывая тебе рот. Смеясь тебе через плечо, она велит тебе помалкивать и быть хорошим [pc.girl].",
 					
-					"Opening your mouth, you don't even get the chance to say a single word before Pix clasps one of her [pix.hands+] over your [pc.lips+].",
+					"Стоило тебе приоткрыть рот, как ты даже не успел вымолвить ни слова — Пикс прижала одну из своих [pix.hands+] к твоему [pc.lips+].",
 					
-					"As you try to speak back to Pix, she quickly clasps [pix.a_hand+] over your mouth, laughing into your ear as she prevents you from talking.");
+					"Когда ты пытаешься что-то возразить Пикс, она быстро зажимает [pix.a_hand+] твой рот, смеясь тебе в ухо и не давая возможности заговорить.");
 		}
 
 		@Override
@@ -210,29 +207,24 @@ public class PixShower {
 		
 		@Override
 		public String getActionTitle() {
-			return "Struggle";
+			return "Барахтаться";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Try to struggle out of Pix's grasp.";
+			return "Попытаться вырваться из хватки Пикс.";
 		}
 
 		@Override
 		public String getDescription() {
 			return UtilText.returnStringAtRandom(
-					"Having had enough of Pix's 'fun', you desperately try to wriggle out of her grasp."
-							+ " Unfortunately, you're still completely exhausted from her workout, and she easily slams you back up against the wall of the shower,"
-							+ " playfully growling into your ear as you find your escape attempt coming to an abrupt end.",
+					"Насладившись «весельем» Пикс сполна, ты отчаянно пытаешься выскользнуть из её объятий. К сожалению, ты всё ещё совершенно измотан её тренировкой, и она с лёгкостью вжимает тебя обратно в стенку душевой, игриво рыча тебе в ухо, пока твоя попытка побега резко не обрывается.",
 							
-					"Summoning what little energy you have left, you desperately try to push Pix away from you."
-							+ " Letting out a little giggle, she easily overpowers you, pressing you up against the wall of the shower before softly growling into your ear.",
+					"Собрав остатки своей энергии, ты отчаянно пытаешься оттолкнуть Пикс. Издав короткий смешок, она с лёгкостью одолевает тебя, прижимая к стенке душевой и мягко рыча тебе в ухо.",
 					
-					"Twisting this way and that, you desperately try to push Pix away from you."
-							+ " Laughing at your somewhat feeble attempt, she easily slams you back up against the wall of the shower, softly growling over your shoulder as you pant from exertion.",
+					"Извиваясь то так, то эдак, ты отчаянно пытаешься оттолкнуть Пикс. Смеясь над твоей довольно слабой попыткой, она с лёгкостью вжимает тебя обратно в стенку душевой, мягко рыча тебе через плечо, пока ты тяжело дышишь от напряжения.",
 					
-					"Pushing yourself off of the wall in front of you, you try to throw Pix off your back."
-							+ " With the state you're in, all you're able to do is make her stagger back a little, and with a threatening growl, she quickly slams you back up against the wall.");
+					"Оттолкнувшись от стены перед собой, ты пытаешься сбросить Пикс со спины. Но в твоем состоянии тебе удается лишь заставить ее слегка пошатнуться, и она, угрожающе зарычав, тут же с силой прижимает тебя обратно к стене.");
 		}
 		
 		@Override
@@ -260,24 +252,24 @@ public class PixShower {
 		
 		@Override
 		public String getActionTitle() {
-			return "Submit";
+			return "Подчиниться";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Let Pix do what she wants with you.";
+			return "Позволить Пикс делать с тобой всё, что ей вздумается.";
 		}
 
 		@Override
 		public String getDescription() {
 			return UtilText.returnStringAtRandom(
-					"Realising that you're in no state to resist Pix's 'fun', you gently lean back into the dominant dog-girl, allowing her to use you as she sees fit.",
+					"Понимая, что ты не в состоянии сопротивляться «забавам» Пикс, ты мягко откидываешься на доминантную собачонку, позволяя ей использовать тебя так, как она пожелает.",
 							
-					"You decide to just let Pix use you however she wants, and gently lean back against her as she lets out an approving growl.",
+					"Ты решаешь просто позволить Пикс использовать тебя как угодно, и мягко прижимаешься к ней спиной, на что она отвечает одобрительным рычанием.",
 					
-					"Leaning forwards against the wall of the shower, you surrender yourself to Pix, allowing her to do whatever she wants with you.",
+					"Прислонившись к стене душевой кабины, ты полностью сдаешься на милость Пикс, позволяя ей творить с тобой всё, что ей вздумается.",
 					
-					"Coming to the realisation that Pix is in full control of the situation, you lean forwards against the wall of the shower, deciding to let her do whatever she wants with you.");
+					"Осознав, что Пикс полностью контролирует ситуацию, ты прислоняешься к стене душевой, решив позволить ей делать с тобой всё, что она захочет.");
 		}
 		
 		@Override
@@ -305,25 +297,24 @@ public class PixShower {
 		
 		@Override
 		public String getActionTitle() {
-			return "Grind down";
+			return "Тереться ниже";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Grind your [npc.pussy] down against Pix's hand.";
+			return "Тереться своим [npc.pussy] о руку Пикс.";
 		}
 
 		@Override
 		public String getDescription() {
 			return UtilText.returnStringAtRandom(
-					"Pushing your hips down against Pix's [pix.hand+], the dominant dog-girl lets out an enthusiastic [pix.moan], digging her [pix.fingers+] deep into your [pc.pussy+] as you gasp and shudder under the shower's running water.",
+					"Прижимая таз к [pix.hand+] Пикс, доминантная собачонка издает восторженный [pix.moan], глубоко вонзая свои [pix.fingers+] в твой [pc.pussy+], пока ты ахаешь и содрогаешься под струями душа.",
 					
-					"Leaning back into Pix for support, you grind your [pc.pussy+] down against her [pix.hand+], squealing in delight as she responds by digging her [pix.fingers+] deep into your [pc.pussy].",
+					"Опираясь на Пикс, ты начинаешь тереться своим [pc.pussy+] о её [pix.hand+], радостно взвизгивая, когда она в ответ глубоко вонзает свои [pix.fingers+] в твой [pc.pussy].",
 					
-					"Gently dropping your hips down onto Pix's hand, you try to encourage her to push a little deeper, and, much to your delight, you feel her respond by curling her [pix.fingers+] up before eagerly stroking your vaginal walls.",
+					"Мягко опуская бедра на руку Пикс, ты пытаешься побудить её проталкиваться чуть глубже, и, к твоему огромному удовольствию, чувствуешь, как она отвечает, поджимая свои [pix.fingers+] и с жадностью лаская стенки твоей вагины.",
 					
-					"Pushing your [pc.pussy] down against Pix's hand, she responds by letting out an eager growl before curling her [pix.fingers] up inside of you."
-							+ " As she starts eagerly stroking in a 'come-hither' fashion, you lean back into the dominant dog-girl, moaning and shuddering as the hot water from the shower cascades all around you.");
+					"Прижимая твою [pc.pussy] к руке Пикс, она отвечает предвкушающим рычанием и поджимает свои [pix.fingers] внутри тебя. Когда она начинает увлеченно двигаться манящими движениями, ты откидываешься назад, на доминантную собачонку, стоная и содрогаясь под потоками горячей воды из душа.");
 		}
 	};
 	
@@ -344,7 +335,7 @@ public class PixShower {
 		
 		@Override
 		public String getActionTitle() {
-			return "Kiss";
+			return "Поцеловать";
 		}
 
 		@Override
@@ -355,13 +346,13 @@ public class PixShower {
 		@Override
 		public String getDescription() {
 			return UtilText.returnStringAtRandom(
-					"Pix lets out a little giggle as she leans in over your shoulder, playfully biting down and nibbling at your ear as she continues to press you firmly against the wall of the shower.",
+					"Пикс тихо хихикает, наклоняясь к твоему плечу; она игриво прикусывает и покусывает твое ухо, продолжая крепко прижимать тебя к стенке душа.",
 					
-					"With a playful laugh, Pix roughly pushes you up against the wall before leaning in over your shoulder to bite and nibble on your ear.",
+					"С игривым смехом Пикс грубо прижимает тебя к стене, а затем наклоняется к твоему плечу, чтобы начать кусать и покусывать твое ухо.",
 					
-					"As the hot water continues to rain down on both of you, Pix presses her [pix.face+] up against your neck, and, with a little [pix.moan], she starts using her [pix.tongue+] to playfully lick all over your shoulder.",
+					"Пока горячая вода продолжает лить на вас обеих, Пикс прижимается своей [pix.face+] к твоей шее и с легким [pix.moan] начинает игриво вылизывать всё твоё плечо своим [pix.tongue+].",
 					
-					"Leaning in over your shoulder, Pix starts using her [pix.tongue+] to playfully lick and lap at your neck and ears.");
+					"Наклонившись к твоему плечу, Пикс начинает игриво вылизывать и слизывать капли с твоей шеи и ушей своим [pix.tongue+].");
 		}
 	};
 	
@@ -380,7 +371,7 @@ public class PixShower {
 		
 		@Override
 		public String getActionTitle() {
-			return "Dirty talk";
+			return "Грязные разговоры";
 		}
 
 		@Override
@@ -393,14 +384,14 @@ public class PixShower {
 			UtilText.nodeContentSB.setLength(0);
 				
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"Pressing you up against the wall, Pix softly growls into your ear, ",
-					"Firmly pressing into your back, Pix leans in over your shoulder and growls, "));
+					"Прижимая тебя к стене, Пикс тихо рычит тебе в ухо, ",
+					"Крепко прижимаясь к твоей спине, Пикс наклоняется к твоему плечу и рычит, "));
 			
 			UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-					"[npc.speech(Good [pc.girl]! I hope you're enjoying your reward as much as I am!)]",
-					"[npc.speech(Aww, you seem pretty tired! Funny the way that kinda worked itself out, y'know?)]",
-					"[npc.speech(Y'know, you're struggling far less than some of the guys I've rewarded in the past!)]",
-					"[npc.speech(Isn't this, like, super fun and stuff?! Well, it is for me!)]"));
+					"[npc.speech(Отличный [pc.girl]! Надеюсь, ты наслаждаешься наградой так же сильно, как и я!)]",
+					"[npc.speech(Оу, ты, кажется, изрядно вымотался! Забавно, как всё само собой сложилось, а?)]",
+					"[npc.speech(Знаешь, ты справляешься куда лучше, чем некоторые парни, которых я награждала раньше!)]",
+					"[npc.speech(Разве это не супер весело?! Ну, по крайней мере, для меня — точно!)]"));
 			
 			return UtilText.nodeContentSB.toString();
 		}
@@ -422,7 +413,7 @@ public class PixShower {
 		
 		@Override
 		public String getActionTitle() {
-			return "Grope breasts";
+			return "Тискать грудь";
 		}
 
 		@Override
@@ -436,36 +427,35 @@ public class PixShower {
 			
 			UtilText.nodeContentSB.append(
 					UtilText.returnStringAtRandom(
-					"Pix lifts [pix.a_hand+] up to your chest, and as she squeezes down on one of your [pc.breasts+], you hear her letting out a soft little giggle.",
+					"Пикс подносит [pix.a_hand+] к твоей груди, и когда она сжимает одну из твоих [pc.breasts+], ты слышишь её тихий, нежный смешок.",
 					
-					"As water from the still-running shower falls down onto your naked body, Pix lifts [pix.a_hand+] up to your chest, and with a delighted growl, she starts roughly groping and squeezing at your [pc.breastRows] [pc.breasts].",
+					"Пока струи воды из всё ещё работающего душа стекают по твоему обнажённому телу, Пикс подносит [pix.a_hand+] к твоей груди и с восторженным рычанием начинает грубо ощупывать и сжимать твои [pc.breastRows] [pc.breasts].",
 					
-					"Your [pc.breasts+], wet from the still-running shower, are the sudden focus of Pix's attention."
-					+ " Reaching one of her [pix.hands+] up to your chest, she eagerly starts squeezing and groping your mounds of flesh, growling softly into your ear as you fail to contain [pc.a_moan+].",
+					"Твои [pc.breasts+], намокшие под струями душа, внезапно становятся центром внимания Пикс. Подняв одну из своих [pix.hands+] к твоей груди, она с жадностью начинает сжимать и мять твои мясные холмики, тихо рыча тебе в ухо, пока ты пытаешься сдержать [pc.a_moan+].",
 					
-					"You let out [pc.a_moan+] as Pix reaches around and starts to grope and squeeze each of your [pc.breasts+] in turn."));
+					"Ты издаёшь [pc.a_moan+], когда Пикс обхватывает тебя сзади и начинает по очереди ощупывать и сжимать каждую из твоих [pc.breasts+]."));
 			
 			switch (Main.game.getPlayer().getBreastStoredMilk()) {
 				case ONE_TRICKLE:
-					UtilText.nodeContentSB.append(" A small trickle of [pc.milk] leaks out onto her fingertips as she squeezes down on your [pc.nipples+].");
+					UtilText.nodeContentSB.append(" Тонкая струйка [pc.milk] вытекает ей на кончики пальцев, когда она сжимает твою [pc.nipples+].");
 					break;
 				case TWO_SMALL_AMOUNT:
-					UtilText.nodeContentSB.append(" A small squirt of [pc.milk] leaks out onto her fingertips as she squeezes down on your [pc.nipples+].");
+					UtilText.nodeContentSB.append(" Небольшая порция [pc.milk] выплескивается ей на кончики пальцев, когда она сжимает твою [pc.nipples+].");
 					break;
 				case THREE_DECENT_AMOUNT:
-					UtilText.nodeContentSB.append(" A trickle of [pc.milk] runs out over her fingertips as she squeezes down on your [pc.nipples+].");
+					UtilText.nodeContentSB.append(" Тонкая струйка [pc.milk] стекает по её пальцам, пока она сжимает твой [pc.nipples+].");
 					break;
 				case FOUR_LARGE_AMOUNT:
-					UtilText.nodeContentSB.append(" Your [pc.milk] starts to flow out over her [pix.fingers+], mixing with the shower's still-running water to run down over your [pc.breasts+].");
+					UtilText.nodeContentSB.append(" Твоя [pc.milk] начинает вытекать на её [pix.fingers+], смешиваясь с бегущей водой из душа и стекая по твоему [pc.breasts+].");
 					break;
 				case FIVE_VERY_LARGE_DROOLING:
-					UtilText.nodeContentSB.append(" Your [pc.milk] starts drooling out over her [pix.fingers+], mixing with the shower's still-running water to run down over your [pc.breasts+].");
+					UtilText.nodeContentSB.append(" Твоя [pc.milk] начинает сочиться на её [pix.fingers+], смешиваясь с бегущей водой из душа и стекая по твоему [pc.breasts+].");
 					break;
 				case SIX_EXTREME_AMOUNT_DRIPPING:
-					UtilText.nodeContentSB.append(" Your [pc.milk] starts pouring out over her [pix.fingers+], mixing with the shower's still-running water to run down over your [pc.breasts+]");
+					UtilText.nodeContentSB.append(" Твоя [pc.milk] начинает литься на её [pix.fingers+], смешиваясь с бегущей водой из душа и стекая по твоему [pc.breasts+].");
 					break;
 				case SEVEN_MONSTROUS_AMOUNT_POURING:
-					UtilText.nodeContentSB.append(" Your [pc.milk] starts pouring out in a heavy flow over her [pix.fingers+], mixing with the shower's still-running water to run down over your [pc.breasts+].");
+					UtilText.nodeContentSB.append(" Твоя [pc.milk] начинает хлестать густым потоком на её [pix.fingers+], смешиваясь с бегущей водой из душа и стекая по твоему [pc.breasts+].");
 					break;
 				default:
 					break;
@@ -506,7 +496,7 @@ public class PixShower {
 		
 		@Override
 		public String getActionTitle() {
-			return "Stroke player's cock";
+			return "Ласкать член игрока";
 		}
 
 		@Override
@@ -518,14 +508,13 @@ public class PixShower {
 		public String getDescription() {
 			return UtilText.parse(Main.sex.getCharacterPerformingAction(),
 					UtilText.returnStringAtRandom(
-					"Reaching around between your legs, Pix suddenly grabs your [pc.cock+], and as she starts stroking up and down its length, you find yourself letting out [pc.a_moan+] and leaning back into her.",
+					"Просунув руку между твоих ног, Пикс внезапно хватает твой [pc.cock+], и когда она начинает водить рукой вверх и вниз по его длине, ты невольно издаешь [pc.a_moan+] и откидываешься на неё.",
 					
-					"With one of her [pix.hands+], Pix reaches around between your [pc.legs+], and, taking hold of your [pc.cock+], she starts rapidly jerking you off under the running water of the shower.",
+					"Одной своей [pix.hands+] Пикс пробирается между твоих [pc.legs+] и, обхватив твой [pc.cock+], начинает быстро дрочить тебе под струями воды в душе.",
 					
-					"You can't help but let out [pc.a_moan+] and lean back into Pix as she reaches around to grab your [pc.cock+], and, with long, deliberate strokes, starts jerking you off.",
+					"Ты не можешь удержаться от [pc.a_moan+] и откидываешься на Пикс, когда она просовывает руку, чтобы схватить твой [pc.cock+], и начинает долгими, размеренными движениями дрочить тебе.",
 					
-					"You let out a series of [pc.moans+] as Pix reaches around and grabs hold of your [pc.cock+]."
-							+ " As she growls softly into your ear, she starts eagerly jerking you off, causing your [pc.moans] to steadily increase in volume and intensity."));
+					"Ты издаешь серию [pc.moans+], когда Пикс обхватывает твою [pc.cock+]. Тихо рыча тебе на ухо, она с нетерпением начинает ласкать тебя, отчего твой [pc.moans] неуклонно растет в объеме и интенсивности."));
 		}
 	};
 	
@@ -544,7 +533,7 @@ public class PixShower {
 		
 		@Override
 		public String getActionTitle() {
-			return "Start fingering";
+			return "Начать пальцевать";
 		}
 
 		@Override
@@ -560,8 +549,7 @@ public class PixShower {
 		@Override
 		public String getDescription() {
 			return UtilText.parse(Main.sex.getCharacterPerformingAction(),
-					"You feel Pix press heavily into your back, and as she growls menacingly into your ear, she reaches around with [pix.a_hand+] to start stroking and probing at your outer labia."
-						+ " With [pc.a_moan+], you lean back into her, and as the sound of falling water echoes off the walls all around you, she suddenly thrusts her [pix.fingers+] up, penetrating your [pc.pussy+] in one swift strike.");
+					"Ты чувствуешь, как Пикс тяжело прижимается к твоей спине, и, угрожающе рыча тебе в ухо, она тянется вперед с [pix.a_hand+], чтобы начать поглаживать и исследовать твои внешние половые губы. С помощью [pc.a_moan+] ты откидываешься на нее, и пока звук падающей воды эхом разносится по стенам вокруг вас, она внезапно вгоняет свою [pix.fingers+], одним резким движением проникая в твою [pc.pussy+].");
 		}
 	};
 	
@@ -580,7 +568,7 @@ public class PixShower {
 		
 		@Override
 		public String getActionTitle() {
-			return "Gentle fingering";
+			return "Нежное проникновение пальцами";
 		}
 
 		@Override
@@ -591,15 +579,13 @@ public class PixShower {
 		@Override
 		public String getDescription() {
 			return UtilText.returnStringAtRandom(
-					"Pix pushes her [pix.fingers+] up into your [pc.pussy+], curling them back and stroking gently in a 'come-hither' motion as you softly moan and pant against the wall.",
+					"Пикс вгоняет свою [pix.fingers+] в твою [pc.pussy+], подгибая их и нежно поглаживая манящими движениями, пока ты тихо стонешь и тяжело дышишь, прижавшись к стене.",
 					
-					"Pushing her [pix.fingers+] up into your [pc.pussy+], Pix starts to gently pump back and forth, eliciting a series of soft moans from your [pc.lips] as you lean back into her for support.",
+					"Вгоняя свою [pix.fingers+] в твою [pc.pussy+], Пикс начинает плавно двигаться вперед-назад, вызывая серию мягких стонов из твоей [pc.lips], пока ты откидываешься на нее, ища опору.",
 					
-					"You let out [pc.a_moan+] as Pix gently pushes her [pix.fingers+] deep into your [pc.pussy+]."
-							+ " As you feel her palm push up against your outer labia, she curls her [pix.fingers] up, stroking your vaginal walls and causing you to let out another [pc.moan+].",
+					"Ты издаешь [pc.a_moan+], когда Пикс мягко вталкивает свою [pix.fingers+] глубоко в твою [pc.pussy+]. Когда ты чувствуешь, как ее ладонь надавливает на твои внешние половые губы, она подгибает свои [pix.fingers], лаская стенки твоей вагины и заставляя тебя издать еще один [pc.moan+].",
 					
-					"You let out [pc.a_moan+] and lean back into Pix for support as she starts to focus her efforts on fingering your [pc.pussy+]."
-							+ " As the sound of cascading water echoes all around, Pix curls her [pix.fingers+] up inside of you and starts eagerly stroking your vaginal walls.");
+					"Ты издаешь [pc.a_moan+] и откидываешься на Пикс, ища у нее опору, пока она сосредоточенно начинает перебирать твои [pc.pussy+]. Под эхо падающей воды Пикс подгибает свои [pix.fingers+] внутри тебя и с нетерпением начинает ласкать стенки твоей вагины.");
 		}
 
 		@Override
@@ -622,7 +608,7 @@ public class PixShower {
 		
 		@Override
 		public String getActionTitle() {
-			return "Rough fingering";
+			return "Грубые пальцы";
 		}
 
 		@Override
@@ -633,15 +619,13 @@ public class PixShower {
 		@Override
 		public String getDescription() {
 			return UtilText.returnStringAtRandom(
-					"Pix violently thrusts her [pix.fingers+] up into your [pc.pussy+], curling them back and roughly stroking in a 'come-hither' motion as you let out a series of [pc.moans+].",
+					"Пикс с силой вгоняет свои [pix.fingers+] в твою [pc.pussy+], подгибая их и грубо совершая манящие движения, пока ты издаешь серию [pc.moans+].",
 					
-					"Roughly pushing her [pix.fingers+] up into your [pc.pussy+], Pix starts to violently pump back and forth, eliciting a series of [pc.moans+] from your [pc.lips] as you collapse back into her for support.",
+					"Грубо втискивая свои [pix.fingers+] в твою [pc.pussy+], Пикс начинает яростно двигаться вперед-назад, вызывая серию [pc.moans+] из твоей [pc.lips], пока ты бессильно откидываешься на нее, ища опору.",
 					
-					"You let out [pc.a_moan+] as Pix roughly thrusts her [pix.fingers+] deep into your [pc.pussy+]."
-							+ " As you feel her palm slam up against your outer labia, she curls her [pix.fingers] up, desperately stroking your vaginal walls and causing you to let out another [pc.moan+].",
+					"Ты издаешь [pc.a_moan+], когда Пикс грубо вгоняет свои [pix.fingers+] глубоко в твою [pc.pussy+]. Когда ты чувствуешь, как ее ладонь с силой прижимается к твоим внешним половым губам, она подгибает свои [pix.fingers], отчаянно лаская стенки твоей вагины и заставляя тебя издать еще один [pc.moan+].",
 					
-					"You let out [pc.a_moan+] and collapse back into Pix for support as she slams her [pix.fingers] deep inside your [pc.pussy+]."
-							+ " As the sound of cascading water echoes all around, Pix roughly curls her [pix.fingers+] up inside of you and starts rapidly stroking your vaginal walls.");
+					"Ты издаешь [pc.a_moan+] и откидываешься на Пикс, ища у нее опору, пока она с силой вбивает свои [pix.fingers] глубоко в твою [pc.pussy+]. Под эхо падающей воды Пикс грубо подгибает свои [pix.fingers+] внутри тебя и начинает стремительно ласкать стенки твоей вагины.");
 		}
 		
 		@Override
@@ -669,7 +653,7 @@ public class PixShower {
 		
 		@Override
 		public String getActionTitle() {
-			return "Clit play";
+			return "Игры с клитором";
 		}
 
 		@Override
@@ -680,17 +664,13 @@ public class PixShower {
 		@Override
 		public String getDescription() {
 			return UtilText.returnStringAtRandom(
-					"Sinking her fingers into your [pc.pussy+], Pix lifts her thumb up to your clit."
-							+ " As she presses down and start rubbing your sensitive little button, you let out [pc.a_moan+] and lean back against her for support.",
+					"Погружая пальцы в твою [pc.pussy+], Пикс подносит большой палец к твоему клитору. Когда она надавливает на него и начинает тереть твою чувствительную маленькую пуговку, ты издаешь [pc.a_moan+] и откидываешься на нее, ища опору.",
 					
-					"Lifting her thumb up to your delicate clit, Pix presses down and starts rubbing at your little button."
-							+ " With a desperate cry, you lean back into her, your [pc.moans+] almost being drowned out by the sound of running water as she carries on playing with your feminine nub.",
+					"Поднимая большой палец к твоему нежному клитору, Пикс надавливает на него и начинает растирать твою маленькую пуговку. С отчаянным криком ты откидываешься на неё, и твой [pc.moans+] почти заглушается шумом льющейся воды, пока она продолжает ласкать твой женский бугорок.",
 					
-					"You gasp and buck back against Pix's hand as you feel her thumb press down on your clit."
-							+ " Leaning back into the dominant dog-girl, you grind yourself down against her hand, letting out [pc.moans+] as she carries on playing with your sensitive button.",
+					"Ты ахаешь и выгибаешься навстречу руке Пикс, чувствуя, как её большой палец давит на твой клитор. Откинувшись на доминантную собачонку, ты вжимаешься в её ладонь, издавая [pc.moans+], пока она продолжает играть с твоей чувствительной пуговкой.",
 					
-					"You squeal and lean back against Pix as she presses her thumb up against your sensitive little clit."
-							+ " As she carries on pumping her fingers in and out of your [pc.pussy+], you feel her focusing her efforts on rubbing at your sensitive button, and within moments, you're letting out a series of [pc.moans+].");
+					"Ты взвизгиваешь и откидываешься на Пикс, когда она прижимает большой палец к твоему чувствительному маленькому клитору. Пока она продолжает вводить и выводить пальцы в твою [pc.pussy+], ты чувствуешь, как она сосредотачивает все усилия на растирании твоей чувствительной пуговки, и через мгновение ты уже издаешь серию [pc.moans+].");
 		}
 
 		@Override
@@ -715,7 +695,7 @@ public class PixShower {
 		
 		@Override
 		public String getActionTitle() {
-			return "Demand promise";
+			return "Потребовать обещание";
 		}
 
 		@Override
@@ -730,17 +710,7 @@ public class PixShower {
 
 		@Override
 		public String getDescription() {
-			return "Pix suddenly slams you up against the wall, and, leaning in over your shoulder, she starts softly growling into your ear, "
-						+"[npc.speechNoEffects(Y'know, I've got a little deal for you, so hear me out, ok?"
-						+ " So, like, what's going to happen here, is that when you feel close to getting off, you're gonna promise me that you're gonna come back and do more training in the future, ok?"
-						+ " And I mean a <i>real</i> promise!)]"
-					+ "<br/><br/>"
-					+ "You aren't really in any position to interrupt, so as Pix continues to press you up against the wall, you listen to her as she offers you her 'deal', "
-					+"[npc.speechNoEffects(Y'know, I can keep doing this all day, so when you're ready to cum for me, you're gonna promise that you're gonna come back to train, ok?!"
-					+ " And if you don't promise, I'm not gonna let you get off!"
-					+ " I sure hope you're listening, 'cause I'm like, totally serious here!)]"
-					+ "<br/><br/>"
-					+ "You try to respond, but Pix quickly slams one of her [pix.hands+] over your mouth, reminding you that you're only allowed to speak when you're about to orgasm.";
+			return "Пикс внезапно прижимает тебя к стене и, наклонившись к твоему плечу, начинает тихо рычать тебе в ухо, [npc.speechNoEffects(Знаешь, у меня есть для тебя небольшое предложение, так что послушай меня, ладно? В общем, вот что будет: когда ты почувствуешь, что вот-вот кончишь, ты пообещаешь мне, что вернешься на новые тренировки в будущем, идет? И я имею в виду <i>настоящее</i> обещание!)]<br/><br/>Ты не в том положении, чтобы перебивать, поэтому, пока Пикс продолжает прижимать тебя к стене, ты слушаешь её «сделку», [npc.speechNoEffects(Знаешь, я могу заниматься этим весь день, так что когда будешь готов кончить для меня, ты пообещаешь, что вернешься тренироваться, ясно?! И если не пообещаешь, я не дам тебе кончить! Надеюсь, ты меня внимательно слушаешь, потому что я, типа, совершенно серьезно!)]<br/><br/>Ты пытаешься ответить, но Пикс быстро прижимает одну из своих [pix.hands+] к твоему рту, напоминая, что тебе позволено говорить только тогда, когда ты вот-вот испытаешь оргазм.";
 		}
 
 		@Override
@@ -780,7 +750,7 @@ public class PixShower {
 
 		@Override
 		public String getDescription() {
-			return "With a satisfied sigh, Pix finally releases you, and you find yourself collapsing back into her arms, totally exhausted.";
+			return "С удовлетворенным вздохом Пикс наконец отпускает тебя, и ты обнаруживаешь, что бессильно падаешь ей в объятия, совершенно измотанный.";
 		}
 
 		@Override
@@ -811,17 +781,17 @@ public class PixShower {
 		
 		@Override
 		public String getActionTitle() {
-			return "Prepare";
+			return "Приготовиться";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "You can feel that [npc2.name] is fast approaching [npc2.her] orgasm. Prepare yourself for it.";
+			return "Вы чувствуете, что [npc2.name] стремительно приближается к [npc2.her] оргазму. Приготовьтесь к нему.";
 		}
 		
 		@Override
 		public String getDescription() {
-			return "You find yourself unable to make a move as Pix presses herself against your back; pinning you to the wall of the shower as she prepares to orgasm.";
+			return "Ты не можешь пошевелиться, пока Пикс прижимается к твоей спине, вжимая тебя в стенку душевой и готовясь к оргазму.";
 		}
 	};
 	
@@ -840,57 +810,53 @@ public class PixShower {
 		
 		@Override
 		public String getActionTitle() {
-			return "Promise";
+			return "Пообещать";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Promise Pix that you'll come back again.";
+			return "Пообещай Пикс, что вернешься снова.";
 		}
 
 		@Override
 		public String getDescription() {
 			UtilText.nodeContentSB.setLength(0);
 			
-			UtilText.nodeContentSB.append("You can't take any more of Pix's teasing, and as a desperate heat starts to build in your groin, you let out [pc.a_moan+] and do as she asks, "
-										+ "[pc.speech(Ok! I promise to come back and train again! Please, just let me get off!)]."
-										+ "<br/><br/>"
-										+ "Pix lets out a delighted cry in response, and before you know what's happening, she's darting both of her hands down between your legs and softly growling into your ear, "
-										+ "[pix.speech(Good [pc.girl]! Y'know, I think you deserve a little reward for being such a good little thing!)]");
+			UtilText.nodeContentSB.append("Ты больше не можешь выносить дразнилки Пикс, и когда в паху начинает нарастать отчаянная жажда, ты [pc.a_moan+] и делаешь то, о чем она просит: [pc.speech(Ладно! Обещаю, что вернусь и потренируюсь снова! Пожалуйста, просто дай мне кончить!)].<br/><br/>В ответ Пикс издает восторженный крик, и прежде чем ты успеваешь что-то понять, она запускает обе руки тебе между ног и мягко рычит тебе в ухо: [pix.speech(Хороший [pc.girl]! Знаешь, я думаю, ты заслужил небольшую награду за то, что был таким послушным малышом!)]");
 			
 			UtilText.nodeContentSB.append("<br/><br/>");
 			// PENIS ORGASM:
 			
 			if(Main.game.getPlayer().hasPenisIgnoreDildo()){
 				
-				UtilText.nodeContentSB.append("You feel one of Pix's [pix.hands+] wrap around your [pc.cock+], and as she starts furiously jerking you off, she carries on telling you what a good [pc.girl] you've been.");
+				UtilText.nodeContentSB.append("Ты чувствуешь, как одна из [pix.hands+] Пикс обхватывает твой [pc.cock+], и пока она начинает яростно дрочить тебя, она продолжает твердить о том, каким хорошим [pc.girl] ты был.");
 				
 				// Describe cum amount:
-				UtilText.nodeContentSB.append(" You don't last more than a few seconds under her expert touch, and as you feel your [pc.balls+] tense up");
+				UtilText.nodeContentSB.append(" Ты не выдерживаешь и нескольких секунд под ее умелыми руками, и когда ты чувствуешь, как твой [pc.balls+] напрягается");
 				switch (Main.game.getPlayer().getPenisOrgasmCumQuantity()) {
 					case ZERO_NONE:
-						UtilText.nodeContentSB.append(", you let out [pc.a_moan+] as you realise that you're not able to produce even one drop of cum.");
+						UtilText.nodeContentSB.append(", ты [pc.a_moan+], осознавая, что не можешь выдавить из себя ни единой капли спермы.");
 						break;
 					case ONE_TRICKLE:
-						UtilText.nodeContentSB.append(", you feel a small trickle of [pc.cum+] squirting");
+						UtilText.nodeContentSB.append(", ты чувствуешь, как тонкая струйка [pc.cum+] брызжет");
 						break;
 					case TWO_SMALL_AMOUNT:
-						UtilText.nodeContentSB.append(", you feel a small amount of [pc.cum+] squirting");
+						UtilText.nodeContentSB.append(", ты чувствуешь, как небольшое количество [pc.cum+] брызжет");
 						break;
 					case THREE_AVERAGE:
-						UtilText.nodeContentSB.append(", you feel your [pc.cum+] squirting");
+						UtilText.nodeContentSB.append(", ты чувствуешь, как твой [pc.cum+] брызжет");
 						break;
 					case FOUR_LARGE:
-						UtilText.nodeContentSB.append(", you feel your [pc.cum+] shooting");
+						UtilText.nodeContentSB.append(", ты чувствуешь, как твой [pc.cum+] брызжет струями");
 						break;
 					case FIVE_HUGE:
-						UtilText.nodeContentSB.append(", you feel your [pc.cum+] pouring");
+						UtilText.nodeContentSB.append(", ты чувствуешь, как твой [pc.cum+] извергается");
 						break;
 					case SIX_EXTREME:
-						UtilText.nodeContentSB.append(", you feel your [pc.cum+] pouring");
+						UtilText.nodeContentSB.append(", ты чувствуешь, как твой [pc.cum+] льется");
 						break;
 					case SEVEN_MONSTROUS:
-						UtilText.nodeContentSB.append(", you feel your [pc.cum+] pouring");
+						UtilText.nodeContentSB.append(", ты чувствуешь, как твой [pc.cum+] льется");
 						break;
 					default:
 						break;
@@ -898,7 +864,7 @@ public class PixShower {
 				
 				// Describe where cum is going:
 				if(Main.game.getPlayer().getPenisOrgasmCumQuantity()!=CumProduction.ZERO_NONE){
-					UtilText.nodeContentSB.append(" out all over the wall in front of you. ");
+					UtilText.nodeContentSB.append(" разлетается по стене прямо перед тобой. ");
 				}
 				
 				UtilText.nodeContentSB.append("<br/><br/>");
@@ -908,16 +874,12 @@ public class PixShower {
 			
 			if (Main.game.getPlayer().getVaginaType()!=VaginaType.NONE) {
 				
-				UtilText.nodeContentSB.append("As Pix presses her [pix.breastRows] [pix.breasts+] into your back, you feel a desperate, shuddering heat crashing up from your [pc.pussy+]."
-						+ " With a little giggle, Pix suddenly thrusts two of her [pix.fingers+] deep into your [pc.pussy+], and you cry out in ecstasy as she uses her other hand to press down and rub against your sensitive little clit."
-						+ " With a final, ear-splitting scream, your climax crashes over you, and you find yourself collapsing back into Pix as you feel your legs giving out from under you.");
+				UtilText.nodeContentSB.append("Когда Пикс прижимает свои [pix.breastRows] [pix.breasts+] к твоей спине, ты чувствуешь, как отчаянный, дрожащий жар поднимается из твоих [pc.pussy+]. С легким хихиканьем Пикс внезапно вонзает два своих [pix.fingers+] глубоко в твою [pc.pussy+], и ты вскрикиваешь от экстаза, пока она другой рукой надавливает и трет твой чувствительный маленький клитор. С финальным, оглушительным криком на тебя обрушивается оргазм, и ты чувствуешь, как подкашиваются ноги, и бессильно валишься на Пикс.");
 			}
 			
 			// MOUND ORGASM:
 			if (!Main.game.getPlayer().hasPenisIgnoreDildo() && Main.game.getPlayer().getVaginaType()==VaginaType.NONE) {
-				UtilText.nodeContentSB.append("With an ear-splitting scream and trembling legs, a crashing wave of pure ecstasy suddenly washes through you."
-						+ " The muscles within your genderless mound start to spasm and contract, and you let out a desperate scream as Pix reaches down and starts rubbing and flicking at your extremely sensitive crotch."
-						+ " With a final, ear-splitting scream, your climax crashes over you, and you find yourself collapsing back into Pix as you feel your legs giving out from under you.");
+				UtilText.nodeContentSB.append("С оглушительным криком и дрожащими ногами, внезапная волна чистого экстаза проносится сквозь тебя. Мышцы внутри твоего бесполого лона начинают спазмировать и сокращаться, и ты издаешь отчаянный крик, когда Пикс тянется вниз и начинает тереть и щекотать твою невероятно чувствительную промежность. С финальным, оглушительным криком на тебя обрушивается оргазм, и ты чувствуешь, как подкашиваются ноги, и бессильно валишься на Пикс.");
 			}
 
 			return UtilText.nodeContentSB.toString();
@@ -948,25 +910,17 @@ public class PixShower {
 		
 		@Override
 		public String getActionTitle() {
-			return "Refuse";
+			return "Отказаться";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Stay quiet in the hopes that Pix doesn't notice you're about to reach your climax.";
+			return "Старайся не шуметь в надежде, что Пикс не заметит, что ты вот-вот достигнешь пика.";
 		}
 
 		@Override
 		public String getDescription() {
-			return "You feel a desperate heat rising in your groin, but, not wanting to promise Pix that you'll come back and see her again, you decide to keep quiet and orgasm without her help."
-					+ " As your climax builds and builds, you suddenly find yourself letting out a little [pc.moan]."
-					+ "<br/><br/>"
-					+ "Betrayed by your inability to keep quiet, Pix realises what's going on, and with an angry growl, she grabs your [pc.arms], pinning them behind your back as she slams you into the wall, "
-					+ "[pix.speech(What did I say?! You're <i>not</i> orgasming until you promise to come back! Y'know, I can do this all day!)]"
-					+ "<br/><br/>"
-					+"She holds you there, pinned up against the wall, for several minutes, and try as you might, you're completely unable to break free."
-					+ " You even try desperately rubbing your crotch up against the wall of the shower, but it's no use, and you feel your climax slowly ebbing away, leaving you incredibly frustrated and horny."
-					+ " Only once it's clear that you've calmed down, does Pix finally release you, and, sliding her hands down over your body, she prepares to bring you to the edge once more...";
+			return "Ты чувствуешь, как в паху нарастает отчаянный жар, но, не желая обещать Пикс, что вернешься к ней снова, ты решаешь промолчать и кончить без ее помощи. По мере того как оргазм все сильнее накрывает тебя, ты внезапно ловишь себя на том, что издаешь тихий [pc.moan].<br/><br/> Преданная твоей неспособностью сохранять молчание, Пикс понимает, что происходит, и с сердитым рычанием хватает твои [pc.arms], прижимая их к спине, пока сама впечатывает тебя в стену, [pix.speech(Что я сказала?! Ты <i>не</i> кончишь, пока не пообещаешь вернуться! Знаешь, я могу так весь день!)]<br/><br/> Она держит тебя так, прижатым к стене, несколько минут, и как бы ты ни старался, тебе никак не удается вырваться. Ты даже отчаянно пытаешься тереться пахом о стенку душевой, но все бесполезно, и ты чувствуешь, как пик удовольствия медленно уходит, оставляя тебя невероятно разочарованным и возбужденным. Только когда становится ясно, что ты успокоился, Пикс наконец отпускает тебя и, скользя руками по твоему телу, готовится снова довести тебя до самого края...";
 		}
 
 		@Override
@@ -1000,18 +954,17 @@ public class PixShower {
 		
 		@Override
 		public String getActionTitle() {
-			return "Prepare";
+			return "Приготовиться";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "You can feel that [npc2.name] is fast approaching [npc2.her] orgasm. Prepare yourself for it.";
+			return "Вы чувствуете, что [npc2.name] стремительно приближается к [npc2.her] оргазму. Приготовьтесь к нему.";
 		}
 		
 		@Override
 		public String getDescription() {
-			return "Pix suddenly presses you up against the wall, and, leaning in over your shoulder, she growls into your ear, "
-					+"[npc.speech(Aww, you ready to cum? Promise that you're gonna come back to train, or else you're never gonna get off!)]";
+			return "Пикс внезапно прижимает тебя к стене и, наклонившись к твоему плечу, рычит прямо в ухо: [npc.speech(О-о, уже готов кончить? Пообещай, что вернешься на тренировку, иначе ты больше никогда не кончишь!)]";
 		}
 	};
 	
@@ -1030,7 +983,7 @@ public class PixShower {
 		
 		@Override
 		public String getActionTitle() {
-			return "Orgasm";
+			return "Оргазм";
 		}
 
 		@Override
@@ -1040,12 +993,7 @@ public class PixShower {
 
 		@Override
 		public String getDescription() {
-			return "You hear Pix letting out desperate little whines, and you realise that she's getting off on preventing you from orgasming."
-					+ " Sensing your chance to break free, you try pushing her off of you, but that only seems to increase the intensity of her moans,"
-					+ " and with an ear-splitting scream, she slams you forwards against the wall, grinding her naked [pix.pussy] up against your [pc.ass] as her orgasm washes over her."
-					+ "<br/><br/>"
-					+ "After a few moments, she finally recovers, and, straightening up, she happily sighs into your ear, "
-					+ "[pix.speech(Fuck... That was good!)]";
+			return "Вы слышите отчаянные тонкие поскуливания Пикс и понимаете, что она получает удовольствие от того, что не дает вам кончить. Почувствовав шанс вырваться, вы пытаетесь оттолкнуть её, но это лишь усиливает её стоны, и с оглушительным криком она с силой вжимает вас в стену, втирая свою обнаженную [pix.pussy] в ваши [pc.ass] в момент, когда её накрывает оргазм.<br/><br/>Спустя несколько мгновений она наконец приходит в себя и, выпрямившись, довольно вздыхает вам в ухо: [pix.speech(Бля... Как же хорошо было!)]";
 		}
 
 		@Override

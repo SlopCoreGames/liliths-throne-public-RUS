@@ -537,8 +537,7 @@ public interface SexActionInterface {
 		GameCharacter characterTargeted = Main.sex.getCharacterTargetedForSexAction(this);
 		if(this.isSadisticAction()) {
 			if(!characterTargeted.getFetishDesire(Fetish.FETISH_MASOCHIST).isPositive() && !characterTargeted.hasPerkAnywhereInTree(Perk.DOLL_LUST_1)) {
-				sb.append("<p style='text-align:center'>"
-							+ "[style.colourBad([npc2.Name] [npc2.verb(find)] this sadistic action to be a huge turn-off!)]"
+				sb.append("<p style='text-align:center'>[style.colourBad([npc2.Name] [npc2.verb(find)] это садистское действие может сильно оттолкнуть!)]"
 							+ characterTargeted.incrementLust(-15, false)
 						+"</p>");
 			}
@@ -1349,9 +1348,9 @@ public interface SexActionInterface {
 	default String getArousalHitWarning() {
 		if(this.isSadisticAction()) {
 			if(!Main.sex.getCharacterTargetedForSexAction(this).getFetishDesire(Fetish.FETISH_MASOCHIST).isPositive()) {
-				return "<br/>[style.colourBad(As [npc2.name] doesn't have a positive desire towards the '"+Fetish.FETISH_MASOCHIST.getName(Main.sex.getCharacterTargetedForSexAction(this))+"' fetish, [npc2.she] will find this action to be a huge turn-off!)]";
+				return "<br/>[style.colourBad(As [npc2.name] doesn't have a positive desire towards the '"+Fetish.FETISH_MASOCHIST.getName(Main.sex.getCharacterTargetedForSexAction(this))+"' фетиш, [npc2.she] сочтет это действие крайне отталкивающим!)]";
 			} else {
-				return "<br/>[style.colourSex(As [npc2.name] has a positive desire towards the '"+Fetish.FETISH_MASOCHIST.getName(Main.sex.getCharacterTargetedForSexAction(this))+"' fetish, [npc2.she] finds such sadistic actions to be a turn-on!)]";
+				return "<br/>[style.colourSex(As [npc2.name] has a positive desire towards the '"+Fetish.FETISH_MASOCHIST.getName(Main.sex.getCharacterTargetedForSexAction(this))+"' фетиш, [npc2.she] находит такие садистские действия возбуждающими!)]";
 			}
 		}
 		return "";
@@ -1607,14 +1606,12 @@ public interface SexActionInterface {
 						for(AbstractFetish f : fetishesRequired){
 							if(Main.game.getPlayer().hasFetish(f)) {
 								SB.append("<br/>"
-										+"<span style='color:"+PresetColour.GENERIC_SEX.toWebHexString()+";'>Associated Fetish</span>"
-										+ " (<span style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>owned</span>): "
+										+"<span style='color:"+PresetColour.GENERIC_SEX.toWebHexString()+";'>Связанный фетиш</span> (<span style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>владеет</span>): "
 										+ Util.capitaliseSentence(f.getName(Main.game.getPlayer())));
 								
 							} else {
 								SB.append("<br/>"
-										+"<span style='color:"+PresetColour.GENERIC_SEX.toWebHexString()+";'>Associated Fetish</span>"
-										+ " (<span style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>not owned</span>): "
+										+"<span style='color:"+PresetColour.GENERIC_SEX.toWebHexString()+";'>Связанный фетиш</span> (<span style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>не принадлежит</span>): "
 										+ Util.capitaliseSentence(f.getName(Main.game.getPlayer())));
 							}
 						}
@@ -1623,13 +1620,11 @@ public interface SexActionInterface {
 					if(corruptionBypass!=null) {
 						if(isCorruptionWithinRange()) {
 							SB.append("<br/>"
-									+"<span style='color:"+PresetColour.GENERIC_ARCANE.toWebHexString()+";'>Associated Corruption</span>"
-									+ " (<span style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>within range</span>): "
+									+"<span style='color:"+PresetColour.GENERIC_ARCANE.toWebHexString()+";'>Связанная Порочность</span> (<span style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>в пределах диапазона</span>): "
 									+ Util.capitaliseSentence(corruptionBypass.getName()));
 						} else {
 							SB.append("<br/>"
-									+"<span style='color:"+PresetColour.GENERIC_ARCANE.toWebHexString()+";'>Associated Corruption</span>"
-									+ " (<span style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>out of range</span>): "
+									+"<span style='color:"+PresetColour.GENERIC_ARCANE.toWebHexString()+";'>Связанная Порочность</span> (<span style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>вне диапазона</span>): "
 									+ Util.capitaliseSentence(corruptionBypass.getName()));
 						}
 					}
@@ -1638,7 +1633,7 @@ public interface SexActionInterface {
 						if(Main.sex.getCharacterTargetedForSexAction(SexActionInterface.this).isSizeDifferenceShorterThan(Main.sex.getCharacterPerformingAction())
 								|| Main.sex.getCharacterTargetedForSexAction(SexActionInterface.this).isSizeDifferenceTallerThan(Main.sex.getCharacterPerformingAction())) {
 							SB.append("<br/>"
-									+"<span style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>Size-difference is blocking swap!</span>");
+									+"<span style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>Разница в размерах мешает смене позиции!</span>");
 						}
 					}
 					

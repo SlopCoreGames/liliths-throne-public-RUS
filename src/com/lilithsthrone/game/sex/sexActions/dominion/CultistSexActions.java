@@ -38,19 +38,17 @@ public class CultistSexActions {
 		
 		@Override
 		public String getActionTitle() {
-			return "Missionary";
+			return "Миссионерская";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Stand up so that you're positioned between [npc2.namePos] [npc2.legs].";
+			return "Встань так, чтобы оказаться между [npc2.namePos] и [npc2.legs].";
 		}
 
 		@Override
 		public String getDescription() {
-			return "Having had enough of pleasuring [npc2.name] with [npc.her] mouth, [npc.name] [npc.verb(stand)] up and #IF(npc.isPlayer())[npc.step]#ELSE[npc.steps]#ENDIF forwards, bringing [npc.her] groin up against [npc2.hers]."
-					+ " Grabbing hold of [npc2.her] [npc2.legs+], [npc.she] [npc.verb(push)] them apart, grinning as [npc.she] [npc.moanVerb],"
-					+ " [npc.speech(Time to have some real fun!)]";
+			return "Насладившись [npc2.name] своим [npc.her] ртом, [npc.name] [npc.verb(stand)] и #IF(npc.isPlayer())[npc.step]#ELSE[npc.steps]#ENDIF вперед, прижимая [npc.her] к [npc2.hers]. Схватив [npc2.her] [npc2.legs+], [npc.she] [npc.verb(push)] их, ухмыляясь, пока [npc.she] [npc.moanVerb], [npc.speech(Пора по-настоящему повеселиться!)]";
 		}
 
 		@Override
@@ -90,19 +88,17 @@ public class CultistSexActions {
 		
 		@Override
 		public String getActionTitle() {
-			return "Missionary Oral";
+			return "Миссионерский оральный секс";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Drop down onto your knees and position your face between [npc2.namePos] legs.";
+			return "Опустись на колени и расположись лицом между ног [npc2.namePos].";
 		}
 
 		@Override
 		public String getDescription() {
-			return "Dropping down to [npc.her] knees, [npc.name] [npc.verb(position)] [npc.her] head between [npc2.namePos] [npc2.legs], ready to pleasure [npc2.herHim] with [npc.her] mouth."
-					+ " As [npc2.namePos] [npc2.scent+] washes over [npc.herHim], [npc.name] [npc.moanVerb],"
-					+ " [npc.speech(Oh, this is going to be <i>so</i> much fun!)]";
+			return "Опустившись на [npc.her] колени, [npc.name] [npc.verb(position)] [npc.her] голову между [npc2.namePos] [npc2.legs], готовая доставить [npc2.herHim] удовольствие своим [npc.her] ртом. Когда [npc2.namePos] [npc2.scent+] накрывает [npc.herHim], [npc.name] [npc.moanVerb], [npc.speech(О, это будет <i>так</i> весело!)]";
 		}
 
 		@Override

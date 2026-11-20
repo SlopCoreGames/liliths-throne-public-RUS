@@ -70,18 +70,17 @@ public class ToiletStall {
 		
 		@Override
 		public String getActionTitle() {
-			return "Swap with [npc2.name]";
+			return "Поменяться местами с [npc2.name]";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Swap position with [npc2.name].";
+			return "Поменяться позицией с [npc2.name].";
 		}
 
 		@Override
 		public String getDescription() {
-			return "Taking hold of [npc2.name], you move [npc2.herHim] around and swap position with [npc2.herHim], before [npc.moaning],"
-					+ " [npc.speech(It'll be more fun like this!)]";
+			return "Обхватив [npc2.name], вы перемещаете [npc2.herHim] и меняетесь местами с [npc2.herHim], после чего [npc.moaning] [npc.speech(Так будет куда веселее!)]";
 		}
 
 		@Override
@@ -109,17 +108,15 @@ public class ToiletStall {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Face-to-wall";
+			return "Лицом к стене";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Push [npc2.name] up against a nearby wall.";
+			return "Прижать [npc2.name] к ближайшей стене.";
 		}
 		@Override
 		public String getDescription() {
-			return "Taking hold of [npc2.namePos] shoulders, [npc.name] [npc.verb(push)] [npc2.herHim] up against the wall of the toilet stall."
-					+ " Grinding [npc.her] body up against [npc2.her] back, [npc.she] [npc.moansVerb] into [npc2.her] [npc2.ear],"
-					+ " [npc.speech(Good [npc2.girl]! Now hold still while I fuck you!)]";
+			return "Схватив [npc2.namePos] за плечи, [npc.name] [npc.verb(push)] [npc2.herHim] к стене кабинки туалета. Втирая [npc.her] тело в [npc2.her] со спины, [npc.she] [npc.moansVerb] в [npc2.her] [npc2.ear], [npc.speech(Хороший [npc2.girl]! А теперь не дергайся, пока я тебя трахаю!)]";
 		}
 		@Override
 		public void applyEffects() {
@@ -146,16 +143,15 @@ public class ToiletStall {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Face-to-wall";
+			return "Лицом к стене";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Try and move into a position so that you're facing a wall of the toilet stall.";
+			return "Попытаться занять положение лицом к стене туалетной кабинки.";
 		}
 		@Override
 		public String getDescription() {
-			return "Before [npc2.name] can react, you quickly move up against one wall of the toilet stall."
-					+ " Placing your hands up against the graffiti-covered surface that's now in front of you, you push your [npc.ass+] out, shaking it at [npc2.name] as you try to encourage [npc2.herHim] to fuck you like this.";
+			return "Прежде чем [npc2.name] успеет среагировать, вы быстро прижимаетесь к одной из стен туалетной кабинки. Упершись руками в покрытую граффити поверхность перед собой, вы выставляете свой [npc.ass+], покачивая им перед [npc2.name], пытаясь подтолкнуть [npc2.herHim] к тому, чтобы она трахала вас в такой позе.";
 		}
 		@Override
 		public void applyEffects() {
@@ -182,17 +178,15 @@ public class ToiletStall {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Back-to-wall";
+			return "Спиной к стене";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Push [npc2.name] back against one of the toilet stall's walls.";
+			return "Прижать [npc2.name] спиной к одной из стен туалетной кабинки.";
 		}
 		@Override
 		public String getDescription() {
-			return "Taking hold of [npc2.namePos] shoulders, [npc.name] [npc.verb(push)] [npc2.herHim] back against one of the toilet stall's walls."
-					+ " Grinding [npc.her] body up against [npc2.hers], [npc.she] [npc.moansVerb] into [npc2.her] [npc2.ear], "
-					+ "[npc.speech(Good [npc2.girl]! Now hold still while I fuck you!)]";
+			return "Схватив [npc2.namePos] за плечи, [npc.name] [npc.verb(push)] [npc2.herHim] спиной к одной из стенок кабинки. Втираясь [npc.her] телом в [npc2.hers], [npc.she] [npc.moansVerb] в [npc2.her] [npc2.ear], [npc.speech(Хороший [npc2.girl]! А теперь не дергайся, пока я тебя трахаю!)]";
 		}
 		@Override
 		public void applyEffects() {
@@ -219,16 +213,15 @@ public class ToiletStall {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Back-to-wall";
+			return "Спиной к стене";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Try and move into a position so that your back is up against one of the toilet stall's walls.";
+			return "Попробуй встать так, чтобы твоя спина прижалась к одной из стенок кабинки.";
 		}
 		@Override
 		public String getDescription() {
-			return "Before [npc2.name] can react, you quickly move up against the wall of the toilet stall."
-					+ " Leaning back against the graffiti-covered surface that's now behind you, you give [npc2.name] your most seductive look, trying to encourage [npc2.herHim] to fuck you like this.";
+			return "Прежде чем [npc2.name] успеет среагировать, ты быстро прижимаешься к стенке кабинки. Опершись спиной о покрытую граффити поверхность, ты бросаешь на [npc2.name] самый соблазнительный взгляд, пытаясь побудить [npc2.herHim] трахать тебя в таком положении.";
 		}
 		@Override
 		public void applyEffects() {
@@ -255,17 +248,15 @@ public class ToiletStall {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Kneel (receive oral)";
+			return "Встать на колени (принять оральный секс)";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Force [npc2.name] to [npc2.her] knees.";
+			return "Заставить [npc2.name] [npc2.her] на колени.";
 		}
 		@Override
 		public String getDescription() {
-			return "Taking hold of [npc2.namePos] shoulders, [npc.name] quickly [npc.verb(force)] [npc2.herHim] to [npc2.her] knees before [npc.herHim]."
-					+ " Looking up, [npc2.name] [npc2.verb(see)] [npc.herHim] grinning down at [npc2.her] submissive form, and with a little laugh, [npc.name] [npc.moansVerb],"
-					+ " [npc.speech(Time to put your mouth to use!)]";
+			return "Схватив [npc2.namePos] за плечи, [npc.name] быстро [npc.verb(force)] [npc2.herHim] на [npc2.her] колени перед [npc.herHim]. Подняв взгляд, [npc2.name] [npc2.verb(see)] [npc.herHim], ухмыляющегося над [npc2.her] покорной фигуркой, и с легким смешком [npc.name] [npc.moansVerb], [npc.speech(Пора пустить ротик в дело!)]";
 		}
 		@Override
 		public void applyEffects() {
@@ -292,15 +283,15 @@ public class ToiletStall {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Kneel";
+			return "Встать на колени";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Drop down onto your knees in the hope that [npc2.name] wants you to perform oral on [npc2.herHim].";
+			return "Рухнуть на колени в надежде, что [npc2.name] захочет, чтобы ты отсосал(а) [npc2.herHim].";
 		}
 		@Override
 		public String getDescription() {
-			return "You quickly drop down to your knees in front of [npc2.name], shuffling forwards a little to bring your face closer to [npc2.her] groin.";
+			return "Ты быстро опускаешься на колени перед [npc2.name], немного подаваясь вперед, чтобы поднести свое лицо ближе к паху [npc2.her].";
 		}
 		@Override
 		public void applyEffects() {
@@ -327,17 +318,15 @@ public class ToiletStall {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Kneel (give oral)";
+			return "Встать на колени (отдать оральный секс)";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Get on your knees before [npc2.name], ready to service [npc2.herHim] with your mouth or [npc.hands].";
+			return "Встать на колени перед [npc2.name], готовый(ая) обслужить [npc2.herHim] своим ртом или [npc.hands].";
 		}
 		@Override
 		public String getDescription() {
-			return "Running [npc.her] [npc.hands] down [npc2.namePos] body, [npc.name] [npc.verb(drop)] to [npc.her] knees before [npc2.herHim], before looking up and flashing [npc2.herHim] a seductive smile."
-					+ " With a little laugh, [npc.she] then [npc.moansVerb],"
-					+ " [npc.speech(Stay still and enjoy this!)]";
+			return "Проводя [npc.her] [npc.hands] по телу [npc2.namePos], [npc.name] [npc.verb(drop)] на [npc.her] колени перед [npc2.herHim], после чего поднимает взгляд и одаривает [npc2.herHim] соблазнительной улыбкой. С легким смешком [npc.she] затем [npc.moansVerb], [npc.speech(Замри и наслаждайся!)]";
 		}
 		@Override
 		public void applyEffects() {
@@ -364,15 +353,15 @@ public class ToiletStall {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Receive kneeling oral";
+			return "Принять минет на коленях";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Try and push [npc2.name] down onto [npc2.her] knees so that [npc2.she]'ll perform oral on you.";
+			return "Попытаться прижать [npc2.name] к [npc2.her] на колени, чтобы [npc2.she] отсосала тебе.";
 		}
 		@Override
 		public String getDescription() {
-			return "Lifting your [npc.arms], you take hold of [npc2.namePos] shoulders, and, with a little pressure, try to get [npc2.herHim] to kneel before you.";
+			return "Приподняв твою [npc.arms], ты берешь [npc2.namePos] за плечи и с небольшим усилием пытаешься заставить [npc2.herHim] опуститься перед тобой на колени.";
 		}
 		@Override
 		public void applyEffects() {
@@ -421,69 +410,51 @@ public class ToiletStall {
 				if(isHappy) {
 					switch(Main.sex.getSexPace(Main.sex.getCharacterPerformingAction())) {
 						case DOM_ROUGH:
-							return "Much to your delight, you feel [npc.name] reach down and roughly grab your hips, and, grinding [npc.herself] into your back, [npc.she] growls into your ear, "
-									+ "[npc.speech(I love fucking bitches like you from behind! Now <i>stay still</i> like a good slut!)]";
+							return "К твоему огромному восторгу, ты чувствуешь, как [npc.name] тянется вниз и грубо хватает тебя за бедра, и, втираясь [npc.herself] в твою спину, [npc.she] рычит тебе в ухо: [npc.speech(Обожаю трахать таких сучек, как ты, сзади! А теперь <i>не двигайся</i>, как хорошая шлюха!)]";
 						default:
-							return "Much to your delight, you feel [npc.name] reach down to take hold of your hips, and as [npc.she] leans in over your shoulder, [npc.she] [npc.moans] into your ear, "
-									+ "[npc.speech(Good [pc.girl]! This is gonna be fun!)]";
+							return "К твоему огромному восторгу, ты чувствуешь, как [npc.name] тянется вниз, чтобы обхватить твои бедра, и когда [npc.she] наклоняется над твоим плечом, [npc.she] [npc.moans] тебе в ухо: [npc.speech(Хорошая [pc.girl]! Это будет весело!)]";
 					}
 				} else {
-					return "Grabbing you by the shoulders, [npc.name] pulls you away from the wall, pushing you back into your old position as [npc.she] angrily scolds you, "
-							+ "[npc.speech(What do you think you're doing?! Don't you <i>dare</i> try that again!)]";
+					return "Схватив тебя за плечи, [npc.name] оттаскивает тебя от стены, возвращая в прежнее положение, пока [npc.she] гневно отчитывает тебя: [npc.speech(Ты что, совсем страх потеряла?! Только <i>смей</i> еще раз так сделать!)]";
 				}
 				
 			} else if(Main.sex.getPositionRequest().getPartnerSlots().get(0)==SexSlotAgainstWall.STANDING_WALL) {
 				if(isHappy) {
 					switch(Main.sex.getSexPace(Main.sex.getCharacterPerformingAction())) {
 						case DOM_ROUGH:
-							return "[npc.Name] grins as you try to entice [npc.herHim] to come over and fuck you against the wall."
-									+ " Moving up to roughly grind [npc.her] body against yours, [npc.she] leans in over your shoulder and growls into your ear, "
-									+ "[npc.speech(Good slut! Now <i>stay still</i> so I can give you a proper fucking!)]";
+							return "[npc.Name] ухмыляется, когда ты пытаешься соблазнить [npc.herHim] подойти и трахнуть тебя у стены. Подойдя ближе, чтобы грубо прижаться [npc.her] телом к твоему, [npc.she] наклоняется к твоему плечу и рычит тебе в ухо: [npc.speech(Хорошая сучка! А теперь <i>не шевелись</i>, и я хорошенько тебя оттрахаю!)]";
 						default:
-							return "[npc.Name] grins as you try to entice [npc.herHim] to come over and fuck you against the wall."
-									+ " Moving up to press [npc.her] body against yours, [npc.she] leans in over your shoulder and [npc.moans] into your ear, "
-									+ "[npc.speech(Good [pc.girl]! This is gonna be fun!)]";
+							return "[npc.Name] ухмыляется, когда ты пытаешься соблазнить [npc.herHim] подойти и трахнуть тебя у стены. Подойдя ближе, чтобы прижать [npc.her] телом к твоему, [npc.she] наклоняется к твоему плечу и [npc.moans] тебе в ухо: [npc.speech(Хорошая [pc.girl]! Это будет весело!)]";
 					}
 					
 				} else {
-					return "Grabbing you by the shoulders, [npc.name] pulls you away from the wall, pushing you back into your old position as [npc.she] angrily scolds you, "
-							+ "[npc.speech(What do you think you're doing?! Don't you <i>dare</i> try that again!)]";
+					return "Схватив тебя за плечи, [npc.name] оттаскивает тебя от стены, возвращая в прежнее положение, пока [npc.she] гневно отчитывает тебя: [npc.speech(Ты что, совсем страх потеряла?! Только <i>смей</i> еще раз так сделать!)]";
 				}
 				
 			} else if(Main.sex.getPositionRequest().getPartnerSlots().get(0)==SexSlotStanding.STANDING_DOMINANT) {
 				if(isHappy) {
 					switch(Main.sex.getSexPace(Main.sex.getCharacterPerformingAction())) {
 						case DOM_ROUGH:
-							return "[npc.Name] grins down at your submissive, kneeling form."
-									+ " With a little laugh, [npc.she] grabs hold of your head with one [npc.hand], yanking you forwards into [npc.her] crotch as [npc.she] growls down at you, "
-									+ "[npc.speech(You'd better be good at this, bitch! Now <i>stay still</i> while I use your mouth!)]";
+							return "[npc.Name] ухмыляется, глядя сверху вниз на твою покорную, стоящую на коленях фигуру. С легким смешком [npc.she] хватает тебя за голову одной [npc.hand], дергая вперед, прямо в [npc.her] промежность, пока [npc.she] рычит на тебя: [npc.speech(Тебе лучше постараться, сучка! А теперь <i>не двигайся</i>, пока я использую твой рот!)]";
 						default:
-							return "[npc.Name] grins down at your submissive, kneeling form."
-									+ " With [npc.a_moan+], [npc.she] takes hold of your head with one [npc.hand], pulling you forwards into [npc.her] crotch as [npc.she] [npc.moansVerb] down at you, "
-									+ "[npc.speech(Good [pc.girl]! This is gonna be fun!)]";
+							return "[npc.Name] ухмыляется, глядя сверху вниз на твою покорную, стоящую на коленях фигуру. С помощью [npc.a_moan+], [npc.she] хватает тебя за голову одной [npc.hand], притягивая тебя вперед к [npc.her] промежности, пока [npc.she] [npc.moansVerb] на тебя: [npc.speech(Хорошая [pc.girl]! Это будет весело!)]";
 					}
 					
 				} else {
-					return "Reaching down to grab you by the [pc.arm], [npc.name] pulls you back into your old position as [npc.she] angrily scolds you, "
-							+ "[npc.speech(What do you think you're doing?! Don't you <i>dare</i> try that again!)]";
+					return "Потянувшись вниз, чтобы схватить тебя за [pc.arm], [npc.name] тянет тебя назад в прежнее положение, пока [npc.she] гневно отчитывает тебя: [npc.speech(Ты что, блять, творишь?! Не <i>смей</i> больше так делать!)]";
 				}
 				
 			} else if(Main.sex.getPositionRequest().getPartnerSlots().get(0)==SexSlotStanding.PERFORMING_ORAL) {
 				if(isHappy) {
 					switch(Main.sex.getSexPace(Main.sex.getCharacterPerformingAction())) {
 						case DOM_ROUGH:
-							return "Reaching up and throwing your [pc.arms] off of [npc.her], [npc.name] lets out an angry snarl."
-									+ " Surprisingly, [npc.she] then suddenly drops to [npc.her] knees, and you look down to see [npc.herHim] grinning up at you,"
-									+ " [npc.speech(Luckily for you, this is what I planning all along! Now stay still bitch, you'd better appreciate this!)]";
+							return "Протянув руки и сбрасывая твой [pc.arms] с [npc.her], [npc.name] издает яростный рык. К твоему удивлению, [npc.she] внезапно опускается на [npc.her] колени, и ты видишь, как [npc.herHim] ухмыляется тебе снизу вверх: [npc.speech(К счастью для тебя, именно это я и планировала всё это время! А теперь не двигайся, сучка, и не вздумай не оценить это!)]";
 						default:
-							return "Reaching up to take hold of your [pc.arms], [npc.name] lets out a little laugh as [npc.she] allows you to push [npc.herHim] down onto [npc.her] knees."
-									+ " Looking down, you see [npc.herHim] grinning up at you,"
-									+ " [npc.speech(This is your lucky day! I love giving oral! You'd better appreciate this!)]";
+							return "Протянув руку, чтобы схватить твой [pc.arms], [npc.name] издает короткий смешок, пока [npc.she] позволяет тебе прижать [npc.herHim] к [npc.her] коленям. Посмотрев вниз, ты видишь, как [npc.herHim] ухмыляется тебе, [npc.speech(Это твой счастливый день! Обожаю делать минет! Тебе стоит это ценить!)]";
 					}
 					
 				} else {
-					return "Reaching up and throwing your [pc.arms] off of [npc.her], [npc.name] angrily scolds you, "
-							+ "[npc.speech(What do you think you're doing?! Do you really expect me to go down on you?! Don't you <i>dare</i> try that again!)]";
+					return "Протянув руку и стягивая с [npc.her] твою [pc.arms], [npc.name] гневно отчитывает тебя: [npc.speech(Ты что творишь?! Ты реально думаешь, что я буду делать тебе минет?! Только <i>посмей</i> попробовать еще раз!)]";
 				}
 				
 			} 
