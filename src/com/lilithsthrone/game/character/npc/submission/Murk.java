@@ -88,7 +88,7 @@ public class Murk extends NPC {
 	}
 	
 	public Murk(boolean isImported) {
-		super(isImported, new NameTriplet("Murk"), "Triche",
+		super(isImported, new NameTriplet("Мерк"), "Триче",
 				"",
 				36, Month.JANUARY, 12,
 				10, Gender.M_P_MALE, Subspecies.RAT_MORPH, RaceStage.GREATER,
@@ -103,7 +103,7 @@ public class Murk extends NPC {
 	public void loadFromXML(Element parentElement, Document doc, CharacterImportSetting... settings) {
 		loadNPCVariablesFromXML(this, null, parentElement, doc, settings);
 		if(Main.isVersionOlderThan(Game.loadingVersion, "0.3.5.7")) {  // Reset character
-			this.setName(new NameTriplet("Murk", "Missy", "Missy"));
+			this.setName(new NameTriplet("Мерк", "Мисси", "Мисси"));
 			setupPerks(true);
 			equipClothing(EquipClothingSetting.getAllClothingSettings());
 			setStartingBody(true);
@@ -134,7 +134,7 @@ public class Murk extends NPC {
 			this.setPenisGirth(PenetrationGirth.SEVEN_FAT);
 		}
 		if(Main.isVersionOlderThan(Game.loadingVersion, "0.3.9.4")) {
-			this.setName(new NameTriplet("Murk"));
+			this.setName(new NameTriplet("Мерк"));
 		}
 		if(Main.isVersionOlderThan(Game.loadingVersion, "0.3.17")) {
 			this.setPenisGirth(PenetrationGirth.SEVEN_FAT);
@@ -301,22 +301,16 @@ public class Murk extends NPC {
 		
 		if(this.getHomeLocationPlace().getPlaceType()==PlaceType.GAMBLING_DEN_PREGNANCY_ROULETTE) {
 			if(this.isFeminine()) {
-				sb.append("Having convinced Epona to punish Murk in a manner fitting his crimes, the once rat-'boy' is now a rat-'girl'."
-						+ " 'Missy', as she's now known, is still responsible for cleaning up the pregnancy roulette stalls, although Epona seems to be a little more lenient towards her now.");
+				sb.append("Убедив Эпону наказать Мерка так, как подобает за его преступления, некогда крысиный «мальчик» превратился в крысиную «девочку». Теперь её зовут «Мисси», и она всё так же отвечает за уборку лавок с беременной рулеткой, хотя Эпона, кажется, стала относиться к ней чуть более снисходительно.");
 				
 			} else {
-				sb.append("Having been enslaved as punishment for his crimes of rape and kidnap, Murk has ended up being given to [axel.name] as a form of compensation for the protection money he was made to pay in the past."
-						+ " Not at all interested in owning such a depraved creature, [axel.name] was quick to give him to Epona, who, furious at discovering the facts about Murk's past, has put him to hard work cleaning up the pregnancy roulette stalls.");
+				sb.append("Став рабом в наказание за изнасилования и похищения, Мерк в итоге достался [axel.name] в качестве компенсации за деньги, которые он был вынужден платить за защиту в прошлом. Совсем не желая владеть столь порочным существом, [axel.name] без раздумий отдала его Эпоне, которая, придя в ярость от правды о прошлом Мерка, заставила его вкалывать, убирая лавки с беременной рулеткой.");
 			}
 			
 		} else {
-			sb.append("Short, chubby, and with a love for openly displaying his disproportionately huge cock, the rat-boy known as Murk is not exactly known for either his looks or modesty."
-					+ " Instead, his undesirable reputation throughout the Rat Warrens has been gained from the open knowledge that he's selfish, cowardly, and has a cruel streak bordering on sadism.");
+			sb.append("Низкорослый, пухлый и обожающий напоказ свой непропорционально огромный член, крысиный мальчишка по имени Мерк не отличается ни красотой, ни скромностью. Напротив, дурная слава во всех Крысиных Дебрях досталась ему из-за общеизвестного факта, что он эгоистичен, труслив и обладает жестокостью, граничащей с садизмом.");
 
-			sb.append("<br/>"
-					+ "Although anyone else would have been subjected to relentless bullying for continuously displaying these less-than-admirable qualities,"
-						+ " Murk's fellow gang members tolerate him due to the fact that he runs what he calls the 'Milking Room'."
-					+ " This aptly-named area is home to several kidnapped humans, who have been transformed so as to provide both a steady supply of milk and a welcome source of sexual release to Vengar's gang members.");
+			sb.append("<br/>Хотя любого другого за подобные сомнительные качества подвергли бы беспощадным издевательствам, соратники Мёрка терпят его лишь потому, что он заведует местом, которое называет «Дойной комнатой». В этой метко названной зоне содержатся несколько похищенных людей, которых превратили в источник постоянного притока молока и желанного сексуального разрядки для членов банды Венгара.");
 		}
 		
 		return sb.toString();
@@ -500,34 +494,34 @@ public class Murk extends NPC {
 							if(Capacity.isPenetrationDiameterTooBig(
 									target.getAssElasticity(), target.getAssStretchedCapacity(), this.getPenisDiameter(), true)) {
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Ya feel me fat cock stretchin' yer ass out?! Yer gonna end up as nothin' but me slutty cock-sleeve!",
-										"Ya horny bitch! I'm gonna make ya into me filthy little butt-slut!",
-										"Ya feel that, fuck toy?! Ya feel me fat cock plungin' deep into ya slutty little ass an' stretchin' ya out?!",
-										"Yer slutty asshole is gonna be ruined by the time I'm done with ya!",
-										"Ain't nothin' betta than the feel o' stretchin' fresh butts out an' turnin' 'em into ruined gapin' 'oles!",
-										"Yer slutty asshole is stretchin' out nicely! Ya gonna be well an' truly ruined soon enough!"));
+										"Чувствуешь, как мой жирный член растягивает твою задницу?! Ты закончишь как обычная шлюшка для моего члена!",
+										"Похотливая сучка! Я сделаю из тебя свою грязную маленькую дырочную шлюху!",
+										"Чувствуешь это, секс-игрушка?! Чувствуешь, как мой жирный член врывается глубоко в твою шлюшью жопку и растягивает её?!",
+										"Твоя шлюшья дырка будет окончательно испорчена к тому времени, как я с тобой закончу!",
+										"Нет ничего лучше, чем растягивать свежие задницы, превращая их в разбитые, зияющие дыры!",
+										"Твоя шлюшья дырка отлично растягивается! Скоро ты будешь по-настоящему испорчена!"));
 							} else {
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Ya feel me fat cock sinkin' deep into yer ruined asshole?! Ain't nothin' but me fat cock that can satisfy ya now!",
-										"Ya horny bitch! Take me fat cock deep into yer gapin' butt!",
-										"Ya feel that, fuck toy?! Ya feel me fat cock plungin' deep into ya ruined ass?!"));
+										"Чувствуешь, как мой жирный член погружается глубоко в твою испорченную задницу?! Теперь только мой жирный член сможет тебя удовлетворить!",
+										"Похотливая сучка! Принимай мой жирный член глубоко в свою зияющую жопу!",
+										"Чувствуешь это, секс-игрушка?! Чувствуешь, как мой жирный член врывается глубоко в твою испорченную задницу?!"));
 							}
 							break;
 						case VAGINA:
 							if(Capacity.isPenetrationDiameterTooBig(
 									target.getVaginaElasticity(), target.getVaginaStretchedCapacity(), this.getPenisDiameter(), true)) {
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Ya feel me fat cock stretchin' yer filthy cunt out?! Yer gonna end up as nothin' but me slutty gapin' cock-sleeve!",
-										"Ya horny bitch! I'm gonna ruin yer pussy an turn it into a gapin' hole that'll only fit me fat cock!",
-										"Ya feel that, fuck toy?! Ya feel me fat cock plungin' deep into ya slutty cunt an' stretchin' ya out?!",
-										"Yer filthy cunt is gonna be ruined by the time I'm done with ya!",
-										"Ain't nothin' betta than the feel o' stretchin' fresh pussies out an' turnin' 'em into ruined gapin' 'oles!",
-										"Yer dirty cunt is stretchin' out nicely! Ya gonna be well an' truly ruined soon enough!"));
+										"Чувствуешь, как мой толстый член растягивает твою грязную щелку?! Ты станешь не кем иным, как моей шлюшьей дыркой для члена!",
+										"Ты, похотливая сучка! Я испорчу твою киску и превращу её в зияющее отверстие, в которое будет входить только мой толстый член!",
+										"Чувствуешь это, секс-игрушка?! Чувствуешь, как мой толстый член глубоко врывается в твою шлюшью щелку и растягивает тебя?!",
+										"Твоя грязная щелка будет окончательно испорчена к тому времени, как я с тобой закончу!",
+										"Нет ничего лучше, чем растягивать свежие киски и превращать их в испорченные, зияющие дыры!",
+										"Твоя грязная щелка отлично растягивается! Скоро ты будешь по-настоящему и окончательно испорчена!"));
 							} else {
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Ya feel me fat cock sinkin' deep into yer ruined cunt?! Ain't nothin' but me fat cock that can satisfy ya now!",
-										"Ya horny bitch! Take me fat cock deep into yer gapin' pussy!",
-										"Ya feel that, fuck toy?! Ya feel me fat cock plungin' deep into ya ruined pussy?!"));
+										"Чувствуешь, как мой толстый член глубоко погружается в твою испорченную щелку?! Теперь только мой толстый член сможет тебя удовлетворить!",
+										"Ты, похотливая сучка! Принимай мой толстый член глубоко в свою зияющую киску!",
+										"Чувствуешь это, секс-игрушка?! Чувствуешь, как мой толстый член глубоко врывается в твою испорченную киску?!"));
 							}
 							break;
 						default:
@@ -538,15 +532,15 @@ public class Murk extends NPC {
 					switch(orifice) {
 						case ANUS:
 							availableLines.add(UtilText.returnStringAtRandom(
-									"Ya feel me fat cock sinkin' deep into yer ass?! Yer nothin' but me slutty cock-sleeve!",
-									"Ya horny bitch! I'm gonna make ya into me filthy little butt-slut!",
-									"Ya feel that, fuck toy?! Ya feel me fat cock plungin' deep into ya slutty little ass?!"));
+									"Чувствуешь, как мой толстый член глубоко входит в твою задницу?! Ты всего лишь моя шлюшья дырка для члена!",
+									"Похотливая сучка! Я сделаю из тебя свою грязную маленькую дырочную шлюху!",
+									"Чувствуешь это, шлюшка?! Чувствуешь, как мой толстый член вколачивается глубоко в твою грязную жопку?!"));
 							break;
 						case VAGINA:
 							availableLines.add(UtilText.returnStringAtRandom(
-									"Ya feel me fat cock sinkin' deep into yer slutty cunt?! Yer nothin' but me dirty little cock-sleeve!",
-									"Ya horny bitch! Take me fat cock deep into yer dirty cunt!",
-									"Ya feel that, fuck toy?! Ya feel me fat cock plungin' deep into ya slutty pussy?!"));
+									"Чувствуешь, как мой толстый член погружается глубоко в твою грязную киску?! Ты всего лишь моя маленькая грязная залупа!",
+									"Ах ты, похотливая сучка! Принимай мой толстый член глубоко в свою грязную киску!",
+									"Чувствуешь это, шлюшка?! Чувствуешь, как мой толстый член вколачивается глубоко в твою грязную киску?!"));
 							break;
 						default:
 							break;
@@ -579,27 +573,6 @@ public class Murk extends NPC {
 	@Override
 	public String getSpecialPlayerPureVirginityLoss(GameCharacter penetratingCharacter, SexAreaPenetration penetrating) {
 		return "<p style='text-align:center;'>"
-					+ "<b style='color:"+PresetColour.GENERIC_TERRIBLE.toWebHexString()+";'>Broken Virgin</b>"
-				+ "</p>"
-				+ "<p>"
-					+ "As Murk's fat cock continues thrusting in and out of your ugly cunt, the sudden realisation of what's just happened hits you like a sledgehammer."
-				+ "</p>"
-				+ "<p style='text-align:center;'>"
-					+ "[pc.thought(I've lost my virginity?!"
-						+ "<br/>Like... <b>this</b>?!)]"
-				+ "</p>"
-				+ "<p>"
-					+ "You don't know what's worse; losing the virginity that you prized so highly, or the fact that you're actually enjoying it."
-					+ " As your massive, dangling labia lewdly spread to accommodate the rat-boy's fat, throbbing dick, you start to think of yourself as nothing more than just another one of his milker sluts..."
-				+ "</p>"
-				+ "<p style='text-align:center;'>"
-					+ "[pc.thought(As I've given my virginity to Murk, that makes me his slut...<br/>"
-						+ "Yes...<br/>"
-						+ "I'll be his good milker slut...)]"
-				+ "</p>"
-				+ "<p>"
-					+ "Completely surrendering to Murk, you let out a horny moan and start desperately bucking your hips back against him, resigning yourself to the fact that now you're nothing more than a"
-					+ " <b style='color:"+StatusEffect.FETISH_BROKEN_VIRGIN.getColour().toWebHexString()+";'>broken virgin</b>..."
-				+ "</p>";
+					+ "<b style='color:"+PresetColour.GENERIC_TERRIBLE.toWebHexString()+";'>Сломанная девственница</b></p><p>Пока толстый член Мёрка продолжает входить и выходить из твоей уродливой киски, внезапное осознание произошедшего бьет тебя, словно кувалда.</p><p style='text-align:center;'>[pc.thought(Я потеряла девственность?!<br/>Типа... <b>вот так</b>?!)]</p><p>Ты сама не знаешь, что хуже: потеря девственности, которой так дорожила, или тот факт, что тебе это чертовски нравится. Пока твои массивные, свисающие половые губы похотливо раздвигаются, чтобы принять толстый, пульсирующий член крысопарня, ты начинаешь думать о себе как о просто очередной его дойной шлюхе...</p><p style='text-align:center;'>[pc.thought(Раз я отдала девственность Мёрку, значит, я его шлюха...<br/>Да...<br/>Я буду его послушной дойной шлюхой...)]</p><p>Полностью сдавшись Мёрку, ты издаешь похотливый стон и начинаешь отчаянно подавать бедра навстречу его толчкам, смиряясь с тем, что теперь ты всего лишь <b style='color:"+StatusEffect.FETISH_BROKEN_VIRGIN.getColour().toWebHexString()+";'>сломанная девственница</b>...</p>";
 	}
 }

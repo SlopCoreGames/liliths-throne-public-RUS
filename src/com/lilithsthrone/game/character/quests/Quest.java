@@ -66,7 +66,7 @@ public enum Quest {
 	MAIN_1_A_LILAYAS_TESTS(QuestType.MAIN, 1, 10) {
 		@Override
 		public String getName() {
-			return "Lilaya's Tests";
+			return "Испытания Lilaya";
 		}
 		@Override
 		public String getDescription() {
@@ -307,7 +307,7 @@ public enum Quest {
 	MAIN_2_A_INTO_THE_DEPTHS(QuestType.MAIN, 1, 10) {
 		@Override
 		public String getName() {
-			return "Into Submission";
+			return "На пути к Submission";
 		}
 		@Override
 		public String getDescription() {
@@ -371,7 +371,7 @@ public enum Quest {
 	MAIN_2_C_SIRENS_FALL(QuestType.MAIN, 1, 10) {
 		@Override
 		public String getName() {
-			return "The Siren's Fall";
+			return "Падение Сирены";
 		}
 
 		@Override
@@ -398,7 +398,7 @@ public enum Quest {
 	MAIN_2_D_MEETING_A_LILIN(QuestType.MAIN, 1, 100) {
 		@Override
 		public String getName() {
-			return "Meeting a Lilin";
+			return "Встреча с лилин";
 		}
 
 		@Override
@@ -428,7 +428,7 @@ public enum Quest {
 	MAIN_3_ELIS(QuestType.MAIN, 1, 25) {
 		@Override
 		public String getName() {
-			return "Destination Elis";
+			return "Путь в Элис";
 		}
 
 		@Override
@@ -472,7 +472,7 @@ public enum Quest {
 	MAIN_3_C_MEETING_MINOTALLYS(QuestType.MAIN, 1, 25) {
 		@Override
 		public String getName() {
-			return "Meeting Minotallys";
+			return "Встреча с Миноталисом";
 		}
 
 		@Override
@@ -495,7 +495,7 @@ public enum Quest {
 	MAIN_3_D_TO_THEMISCYRA(QuestType.MAIN, 1, 25) {
 		@Override
 		public String getName() {
-			return "To Themiscyra";
+			return "В Фемискиру";
 		}
 
 		@Override
@@ -565,7 +565,7 @@ public enum Quest {
 	MAIN_3_G_SWORD_SCAPEGOAT(QuestType.MAIN, 1, 25) {
 		@Override
 		public String getName() {
-			return "SWORD's Scapegoat";
+			return "Козел отпущения SWORD";
 		}
 		@Override
 		public String getDescription() {
@@ -622,7 +622,7 @@ public enum Quest {
 	MAIN_3_J_FINDING_TAKAHASHI(QuestType.MAIN, 30, 25) {
 		@Override
 		public String getName() {
-			return "Finding Takahashi";
+			return "Поиски Такахаши";
 		}
 		@Override
 		public String getDescription() {
@@ -726,24 +726,24 @@ public enum Quest {
 	SIDE_UTIL_COMPLETE(QuestType.SIDE, 1, 0) {
 		@Override
 		public String getName() {
-			return "Quest Complete!";
+			return "Квест выполнен!";
 		}
 
 		@Override
 		public String getDescription() {
-			return "Quest complete!";
+			return "Квест выполнен!";
 		}
 
 		@Override
 		public String getCompletedDescription() {
-			return "Quest complete!";
+			return "Квест выполнен!";
 		}
 	},
 	
 	SIDE_DISCOVER_ALL_ITEMS(QuestType.SIDE, 1, 100) {
 		@Override
 		public String getName() {
-			return "Completionist";
+			return "Перфекционист";
 		}
 
 		@Override
@@ -760,7 +760,7 @@ public enum Quest {
 	SIDE_DISCOVER_ALL_RACES(QuestType.SIDE, 1, 100) {
 		@Override
 		public String getName() {
-			return "Completionist";
+			return "Перфекционист";
 		}
 
 		@Override
@@ -837,7 +837,7 @@ public enum Quest {
 	SIDE_INCUBATION_WAITING(QuestType.SIDE, 1, 10) {
 		@Override
 		public String getName() {
-			return "Living Incubator";
+			return "Живой инкубатор";
 		}
 		@Override
 		public String getDescription() {
@@ -890,7 +890,7 @@ public enum Quest {
 	SIDE_SLAVER_RECOMMENDATION_OBTAINED(QuestType.SIDE, 1, 10) {
 		@Override
 		public String getName() {
-			return "Present letter";
+			return "Преподнести письмо";
 		}
 
 		@Override
@@ -968,7 +968,7 @@ public enum Quest {
 	SIDE_HYPNO_WATCH_TEST_SUBJECT(QuestType.SIDE, 1, 10) {
 		@Override
 		public String getName() {
-			return "Test subject";
+			return "Подопытный";
 		}
 
 		@Override
@@ -1007,7 +1007,7 @@ public enum Quest {
 	LIGHTNING_SPELL_2_WAITING(QuestType.SIDE, 1, 10) {
 		@Override
 		public String getName() {
-			return "Lightning Extraction";
+			return "Извлечение молнии";
 		}
 		@Override
 		public String getDescription() {
@@ -1077,7 +1077,7 @@ public enum Quest {
 	HARPY_PACIFICATION_REWARD(QuestType.SIDE, 6, 50) {
 		@Override
 		public String getName() {
-			return "Harpy "+(Main.game.getPlayer().isFeminine()?"queen":"king");
+			return "Гарпия "+(Main.game.getPlayer().isFeminine()?"queen":"king");
 		}
 
 		@Override
@@ -1098,7 +1098,7 @@ public enum Quest {
 	SLIME_QUEEN_ONE(QuestType.SIDE, 10, 25) {
 		@Override
 		public String getName() {
-			return "Troublesome Slimes";
+			return "Проблемные слаймы";
 		}
 
 		@Override
@@ -1119,7 +1119,7 @@ public enum Quest {
 	SLIME_QUEEN_TWO(QuestType.SIDE, 1, 10) {
 		@Override
 		public String getName() {
-			return "Report Back";
+			return "Доложить назад";
 		}
 
 		@Override
@@ -1188,7 +1188,7 @@ public enum Quest {
 	SLIME_QUEEN_SIX_SUBMIT(QuestType.SIDE, 1, 200) {
 		@Override
 		public String getName() {
-			return "Final Report";
+			return "Финальный отчет";
 		}
 
 		@Override
@@ -1223,7 +1223,7 @@ public enum Quest {
 	SLIME_QUEEN_SIX_CONVINCE(QuestType.SIDE, 1, 200) {
 		@Override
 		public String getName() {
-			return "Final Report";
+			return "Финальный отчет";
 		}
 
 		@Override
@@ -1257,7 +1257,7 @@ public enum Quest {
 	SLIME_QUEEN_SIX_FORCE(QuestType.SIDE, 1, 200) {
 		@Override
 		public String getName() {
-			return "Final Report";
+			return "Финальный отчет";
 		}
 
 		@Override
@@ -1391,7 +1391,7 @@ public enum Quest {
 	DADDY_ACCEPTED(QuestType.SIDE, 1, 5) {
 		@Override
 		public String getName() {
-			return "Convincing Lilaya";
+			return "Убеждение Lilaya";
 		}
 
 		@Override
@@ -1428,7 +1428,7 @@ public enum Quest {
 	BUYING_BRAX_START(QuestType.SIDE, 1, 5) {
 		@Override
 		public String getName() {
-			return "Perfume collection";
+			return "Коллекция духов";
 		}
 
 		@Override
@@ -1445,7 +1445,7 @@ public enum Quest {
 	BUYING_BRAX_DELIVER_PERFUME(QuestType.SIDE, 1, 5) {
 		@Override
 		public String getName() {
-			return "Perfume delivery";
+			return "Доставка духов";
 		}
 
 		@Override
@@ -1462,7 +1462,7 @@ public enum Quest {
 	BUYING_BRAX_LOLLIPOPS(QuestType.SIDE, 1, 5) {
 		@Override
 		public String getName() {
-			return "Lollipop contraband";
+			return "Контрабандные леденцы";
 		}
 
 		@Override
@@ -1535,7 +1535,7 @@ public enum Quest {
 	VENGAR_START(QuestType.SIDE, 1, 5) {
 		@Override
 		public String getName() {
-			return "Rat Warrens";
+			return "Крысиные Норы";
 		}
 		@Override
 		public String getDescription() {
@@ -1550,7 +1550,7 @@ public enum Quest {
 	VENGAR_ONE(QuestType.SIDE, 1, 5) {
 		@Override
 		public String getName() {
-			return "Meeting Vengar";
+			return "Встреча с Венгаром";
 		}
 		@Override
 		public String getDescription() {
@@ -1565,7 +1565,7 @@ public enum Quest {
 	VENGAR_TWO_CONFLICT(QuestType.SIDE, 1, 5) {
 		@Override
 		public String getName() {
-			return "Conflict";
+			return "Конфликт";
 		}
 		@Override
 		public String getDescription() {
@@ -1580,7 +1580,7 @@ public enum Quest {
 	VENGAR_TWO_COOPERATION(QuestType.SIDE, 1, 5) {
 		@Override
 		public String getName() {
-			return "Axel's submission";
+			return "Подчинение Акселя";
 		}
 		@Override
 		public String getDescription() {
@@ -1589,66 +1589,63 @@ public enum Quest {
 		}
 		@Override
 		public String getCompletedDescription() {
-			return "Ты смог убедить Акселя отправиться в Крысиные Норы и показать свое подчинение Венгару."
-					+ "Accompanying him there, you were able to provide some input and influence what happened to the alligator-boy.";
+			return "Ты смог убедить Акселя отправиться в Крысиные Норы и показать свое подчинение Венгару. Сопровождая его, ты смог повлиять на то, что случилось с мальчишкой-аллигатором.";
 		}
 	},
 	
 	VENGAR_TWO_ENFORCERS(QuestType.SIDE, 1, 5) {
 		@Override
 		public String getName() {
-			return "Raid";
+			return "Рейд";
 		}
 		@Override
 		public String getDescription() {
-			return "Having confirmed that Vengar is in the Rat Warrens, you've activated the resonance stone, signalling to the waiting SWORD Enforcers to start their raid.";
+			return "Подтвердив, что Венгар находится в Крысиных Норах, вы активировали резонансный камень, подав сигнал ждущим карателям SWORD начать рейд.";
 		}
 		@Override
 		public String getCompletedDescription() {
-			return "The SWORD Enforcers successfully raided the Rat Warrens, and were able to apprehend Vengar.";
+			return "Каратели SWORD успешно провели рейд в Крысиных Норах и смогли схватить Венгара.";
 		}
 	},
 	
 	VENGAR_THREE_COOPERATION_END(QuestType.SIDE, 1, 5) {
 		@Override
 		public String getName() {
-			return "Vengar's End";
+			return "Конец Венгара";
 		}
 		@Override
 		public String getDescription() {
-			return "Now that [axel.name] has shown [axel.her] submission to Vengar, all that's left to do is head back to the Gambling Den...";
+			return "Теперь, когда [axel.name] проявил(а) [axel.her] покорность перед Венгаром, остается только вернуться в Игорный Дом...";
 		}
 		@Override
 		public String getCompletedDescription() {
-			return "After [axel.name] had shown [axel.her] submission to Vengar, a group of SWORD Enforcers turned up to raid the Rat Warrens and arrest the rat-boy!";
+			return "После того как [axel.name] проявил(а) [axel.her] покорность перед Венгаром, группа карателей SWORD явилась, чтобы нагрянуть в Крысиные Норы и арестовать крысопарня!";
 		}
 	},
 
 	VENGAR_THREE_END(QuestType.SIDE, 1, 5) {
 		@Override
 		public String getName() {
-			return "Return to Axel";
+			return "Вернуться к Акселю";
 		}
 		@Override
 		public String getDescription() {
-			return "Now that Vengar has been dealt with, you need to return to Axel and let him know what happened.";
+			return "Теперь, когда с Венгаром покончено, вам нужно вернуться к Акселю и сообщить ему о случившемся.";
 		}
 		@Override
 		public String getCompletedDescription() {
-			return "You returned to Axel and told him what the situation will be from now on.";
+			return "Вы вернулись к Акселю и рассказали ему, как всё будет обстоять отныне.";
 		}
 	},
 	
 	VENGAR_OPTIONAL_CLAIRE(QuestType.SIDE, 1, 5) {
 		@Override
 		public String getName() {
-			return "Claire's Help";
+			return "Помощь Клэр";
 		}
 		@Override
 		public String getDescription() {
-			return "Deciding that it would be best to let Claire know of the situation, you asked her if there was anything the Enforcers could do to help."
-					+ " Apparently, a SWORD team is already prepared to raid the Rat Warrens, but they need to know Vengar is inside before launching their assault."
-					+ " Клэр дала тебе камень резонанса, чтобы активировать его, если ты хочешь, чтобы они поддержали тебя, когда окажешься внутри.";
+			return "Решив, что лучше всего будет сообщить Клэр о ситуации, вы спросили её, может ли что-то сделать карательный отряд, чтобы помочь. Судя по всему, команда SWORD уже готова к рейду в Крысиные Норы, но им нужно знать, что Венгар внутри, прежде чем начинать штурм. Клэр дала тебе камень резонанса, чтобы активировать его, если ты хочешь, чтобы они поддержали тебя, когда окажешься внутри.";
 		}
 		@Override
 		public String getCompletedDescription() {
@@ -1663,7 +1660,7 @@ public enum Quest {
 	WES_FAIL(QuestType.SIDE, 1, 0) {
 		@Override
 		public String getName() {
-			return "Opportunity Missed";
+			return "Упущенная возможность";
 		}
 		@Override
 		public String getDescription() {
@@ -1678,7 +1675,7 @@ public enum Quest {
 	WES_START(QuestType.SIDE, 1, 5) {
 		@Override
 		public String getName() {
-			return "Help Needed";
+			return "Нужна помощь";
 		}
 		@Override
 		public String getDescription() {
@@ -1694,7 +1691,7 @@ public enum Quest {
 	WES_1(QuestType.SIDE, 1, 5) {
 		@Override
 		public String getName() {
-			return "Finding Elle";
+			return "В поисках Элль";
 		}
 		@Override
 		public String getDescription() {
@@ -1824,7 +1821,7 @@ public enum Quest {
 			5) {
 		@Override
 		public String getName() {
-			return "Open Says Me";
+			return "Как скажешь";
 		}
 		@Override
 		public String getDescription() {
@@ -1841,7 +1838,7 @@ public enum Quest {
 			5) {
 		@Override
 		public String getName() {
-			return "Going Spelunking";
+			return "Спуск в пещеры";
 		}
 		@Override
 		public String getDescription() {
@@ -1858,7 +1855,7 @@ public enum Quest {
 			100) {
 		@Override
 		public String getName() {
-			return "Getting Away With It";
+			return "Сойти с рук";
 		}
 		@Override
 		public String getDescription() {
@@ -1875,7 +1872,7 @@ public enum Quest {
 			0) {
 		@Override
 		public String getName() {
-			return "Cold Feet";
+			return "Мало храбрости";
 		}
 		@Override
 		public String getDescription() {
@@ -1892,7 +1889,7 @@ public enum Quest {
 			5) {
 		@Override
 		public String getName() {
-			return "Breaking Bombs";
+			return "Разминирование";
 		}
 		@Override
 		public String getDescription() {
@@ -1926,7 +1923,7 @@ public enum Quest {
 			0) {
 		@Override
 		public String getName() {
-			return "Roxy's Reluctance";
+			return "Неохота Рокси";
 		}
 		@Override
 		public String getDescription() {
@@ -1945,7 +1942,7 @@ public enum Quest {
 			10) {
 		@Override
 		public String getName() {
-			return "Gathering Materials";
+			return "Сбор материалов";
 		}
 		@Override
 		public String getDescription() {
@@ -2062,7 +2059,7 @@ public enum Quest {
 			0) {
 		@Override
 		public String getName() {
-			return "Tossed Out";
+			return "Вышвырнутый";
 		}
 		@Override
 		public String getDescription() {
@@ -2079,7 +2076,7 @@ public enum Quest {
 			0) {
 		@Override
 		public String getName() {
-			return "Bad News";
+			return "Плохие новости";
 		}
 		@Override
 		public String getDescription() {
@@ -2096,7 +2093,7 @@ public enum Quest {
 			250) {
 		@Override
 		public String getName() {
-			return "Good News";
+			return "Хорошие новости";
 		}
 		@Override
 		public String getDescription() {
@@ -2113,7 +2110,7 @@ public enum Quest {
 			10) {
 		@Override
 		public String getName() {
-			return "Strange Crowd";
+			return "Странная толпа";
 		}
 		@Override
 		public String getDescription() {
@@ -2130,7 +2127,7 @@ public enum Quest {
 			10) {
 		@Override
 		public String getName() {
-			return "Darkest Dungeon";
+			return "Темнейшее подземелье";
 		}
 		@Override
 		public String getDescription() {
@@ -2147,7 +2144,7 @@ public enum Quest {
 			10) {
 		@Override
 		public String getName() {
-			return "Dungeon Cleared";
+			return "Подземелье зачищено";
 		}
 		@Override
 		public String getDescription() {
@@ -2164,7 +2161,7 @@ public enum Quest {
 	OGLIX_BEER_BARRELS_1(QuestType.SIDE, 1, 10) {
 		@Override
 		public String getName() {
-			return "Kheiron's Barrels";
+			return "Бочки Хейрона";
 		}
 		@Override
 		public String getDescription() {
@@ -2200,7 +2197,7 @@ public enum Quest {
 	LUNEXIS_ESCAPE(QuestType.SIDE, 1, 10) {
 		@Override
 		public String getName() {
-			return "Free Lunexis";
+			return "Освободить Лунексиса";
 		}
 		@Override
 		public String getDescription() {
@@ -2218,7 +2215,7 @@ public enum Quest {
 	LUNEXIS_ESCAPE_FAILED(QuestType.SIDE, 1, 0) {
 		@Override
 		public String getName() {
-			return "Lunexis Betrayed";
+			return "Предательство Лунексиса";
 		}
 		@Override
 		public String getDescription() {
@@ -2284,7 +2281,7 @@ public enum Quest {
 	DOLL_FACTORY_4(QuestType.SIDE, 30, 10) {
 		@Override
 		public String getName() {
-			return "Gather Evidence";
+			return "Сбор улик";
 		}
 		@Override
 		public String getDescription() {
@@ -2315,7 +2312,7 @@ public enum Quest {
 	DOLL_FACTORY_5_DOLLIFIED(QuestType.SIDE, 30, 250) {
 		@Override
 		public String getName() {
-			return "Dollified!";
+			return "Окуклена!";
 		}
 		@Override
 		public String getDescription() {
@@ -2331,7 +2328,7 @@ public enum Quest {
 	DOLL_FACTORY_6(QuestType.SIDE, 30, 500) {
 		@Override
 		public String getName() {
-			return "Fiammetta's Message";
+			return "Послание Фьяметты";
 		}
 		@Override
 		public String getDescription() {
@@ -2393,7 +2390,7 @@ public enum Quest {
 	RELATIONSHIP_NYAN_1_STOCK_ISSUES(QuestType.RELATIONSHIP, 1, 0) {
 		@Override
 		public String getName() {
-			return "Helping Nyan";
+			return "Помощь Nyan";
 		}
 		@Override
 		public String getDescription() {
@@ -2410,7 +2407,7 @@ public enum Quest {
 	RELATIONSHIP_NYAN_2_STOCK_ISSUES_AGREED_TO_HELP(QuestType.RELATIONSHIP, 1, 25) {
 		@Override
 		public String getName() {
-			return "Saving Kay";
+			return "Спасение Kay";
 		}
 		@Override
 		public String getDescription() {
@@ -2443,7 +2440,7 @@ public enum Quest {
 	RELATIONSHIP_NYAN_4_STOCK_ISSUES_SUPPLIERS_BEATEN(QuestType.RELATIONSHIP, 1, 25) {
 		@Override
 		public String getName() {
-			return "Nyan's Reward";
+			return "Награда Nyan";
 		}
 		@Override
 		public String getDescription() {
@@ -2461,7 +2458,7 @@ public enum Quest {
 	ROMANCE_HELENA_FAILED(QuestType.RELATIONSHIP, 1, 0) {
 		@Override
 		public String getName() {
-			return "Furious Matriarch";
+			return "Разгневанная Матриарх";
 		}
 
 		@Override
@@ -2498,86 +2495,82 @@ public enum Quest {
 	ROMANCE_HELENA_2_PURCHASE_PAINT(QuestType.RELATIONSHIP, 1, 25) {
 		@Override
 		public String getName() {
-			return "Purchase Paint";
+			return "Купить краску";
 		}
 
 		@Override
 		public String getDescription() {
-			return "Хелена рассказала, что первое, что она хочет сделать, - это покрасить весь фасад своего магазина."
-					+ "Не предоставив тебе денег на расходы, гарпия ожидает, что ты отправишься в 'Магазин DIY Аргуса' и купишь банку золотой краски 'Purple-star'."
-					+ "После того, как ты купишь ее, тебе нужно вернуться к Хелене."
-					+ "<br/><i>('Argus's DIY Depot' can be found a fair way to the south of Slaver Alley, next to the canal.)</i>";
+			return "Хелена рассказала, что первое, что она хочет сделать, — это покрасить весь фасад своего магазина. Не предоставив тебе денег на расходы, гарпия ожидает, что ты отправишься в 'Магазин DIY Аргуса' и купишь банку золотой краски 'Purple-star'. После того как ты купишь ее, тебе нужно вернуться к Хелене.<br/><i>('Магазин DIY Аргуса' находится довольно далеко к югу от Переулка Рабов, рядом с каналом.)</i>";
 		}
 
 		@Override
 		public String getCompletedDescription() {
-			return "You purchased the required paint from 'Argus's DIY Depot' and returned to Helena.";
+			return "Ты купил нужную краску в 'Магазине DIY Аргуса' и вернулся к Хелене.";
 		}
 	},
 
 	ROMANCE_HELENA_3_A_EXTERIOR_DECORATOR(QuestType.RELATIONSHIP, 1, 10) {
 		@Override
 		public String getName() {
-			return "Exterior Decorator (1/3)";
+			return "Декоратор экстерьера (1/3)";
 		}
 
 		@Override
 		public String getDescription() {
-			return "Having purchased the golden paint, you returned to Helena only to have her demand that you get started on repainting the exterior of her shop as soon as possible...";
+			return "Купив золотую краску, вы вернулись к Helena, но она тут же потребовала, чтобы вы как можно скорее приступили к перекраске фасада её лавки...";
 		}
 
 		@Override
 		public String getCompletedDescription() {
-			return "You stripped off all of the old paint from the front of Helena's store.";
+			return "Вы содрали всю старую краску с передней части лавки Helena.";
 		}
 	},
 
 	ROMANCE_HELENA_3_B_EXTERIOR_DECORATOR(QuestType.RELATIONSHIP, 1, 10) {
 		@Override
 		public String getName() {
-			return "Exterior Decorator (2/3)";
+			return "Декоратор экстерьера (2/3)";
 		}
 
 		@Override
 		public String getDescription() {
-			return "You need to return to Helena's store during opening hours to see what your next task will be...";
+			return "Вам нужно вернуться в лавку Helena в часы работы, чтобы узнать, каким будет ваше следующее задание...";
 		}
 
 		@Override
 		public String getCompletedDescription() {
-			return "You repainted the entire frontage of Helena's store, and additionally received a delivery of furniture from a succutaur named 'Natalya'.";
+			return "Вы перекрасили весь фасад лавки Helena и дополнительно получили поставку мебели от суккуба по имени Natalya.";
 		}
 	},
 
 	ROMANCE_HELENA_3_C_EXTERIOR_DECORATOR(QuestType.RELATIONSHIP, 1, 10) {
 		@Override
 		public String getName() {
-			return "Exterior Decorator (3/3)";
+			return "Декоратор экстерьера (3/3)";
 		}
 
 		@Override
 		public String getDescription() {
-			return "You need to return to Helena's store during opening hours to see what your next task will be...";
+			return "Вам нужно вернуться в лавку Helena в часы работы, чтобы узнать, каким будет ваше следующее задание...";
 		}
 
 		@Override
 		public String getCompletedDescription() {
-			return "Under the harpy matriarch's supervision, you painted the words 'Helena's Boutique' in golden lettering above the door to her store.";
+			return "Под присмотром матриарха гарпий вы вывели золотыми буквами над дверью её лавки надпись «Бутик Helena».";
 		}
 	},
 
 	ROMANCE_HELENA_4_SCARLETTS_RETURN(QuestType.RELATIONSHIP, 1, 100) {
 		@Override
 		public String getName() {
-			return "Scarlett's Return";
+			return "Возвращение Scarlett";
 		}
 
 		@Override
 		public String getDescription() {
 			boolean slave = Main.game.getNpc(Scarlett.class).isSlave() || Main.game.getNpc(Scarlett.class).getHomeWorldLocation()==WorldType.EMPTY;
 			boolean playerOwner = Main.game.getNpc(Scarlett.class).isSlave() && Main.game.getNpc(Scarlett.class).getOwner().isPlayer();
-			return "Helena revealed to you her plan to rebrand her slave shop as a place where clients could order custom slaves."
-					+ " The person she has in mind to train these custom slaves is her old etiquette coach, who apparently is none other than Scarlett's sister."
+			return "Helena раскрыла вам свой план: она хочет провести ребрендинг своего магазина рабов, превратив его в место, где клиенты смогут заказывать рабов на заказ. Человеком, которого она хочет нанять для обучения таких рабов, является её старый учитель этикета, который, судя по всему, приходится сестрой самой Scarlett."
 					+ (slave
 						?"Условие, которое она поставила Хелене, заключается в том, что она должна освободить свою непослушную сестру от рабства, пообещать никогда больше не порабощать её, а затем продолжать её использовать..."
 							+ "<br/>"
@@ -2598,7 +2591,7 @@ public enum Quest {
 	ROMANCE_HELENA_5_SCARLETT_TRAINER(QuestType.RELATIONSHIP, 1, 5) {
 		@Override
 		public String getName() {
-			return "Harpy Helper";
+			return "Помощница гарпии";
 		}
 
 		@Override
@@ -2615,7 +2608,7 @@ public enum Quest {
 	ROMANCE_HELENA_6_ADVERTISING(QuestType.RELATIONSHIP, 1, 15) {
 		@Override
 		public String getName() {
-			return "Advertising";
+			return "Реклама";
 		}
 
 		@Override
@@ -2650,7 +2643,7 @@ public enum Quest {
 	ROMANCE_HELENA_8_FINISH(QuestType.RELATIONSHIP, 1, 100) {
 		@Override
 		public String getName() {
-			return "Preparing Drinks";
+			return "Приготовление напитков";
 		}
 
 		@Override
@@ -2670,7 +2663,7 @@ public enum Quest {
 	ROMANCE_NATALYA_FAILED_INTERVIEW(QuestType.RELATIONSHIP, 1, 0) {
 		@Override
 		public String getName() {
-			return "Interview Failed";
+			return "Интервью провалено";
 		}
 		@Override
 		public String getDescription() {
@@ -2685,7 +2678,7 @@ public enum Quest {
 	ROMANCE_NATALYA_FAILED_CONTRACT(QuestType.RELATIONSHIP, 1, 0) {
 		@Override
 		public String getName() {
-			return "Contract Refused";
+			return "Контракт отклонен";
 		}
 		@Override
 		public String getDescription() {
@@ -2700,7 +2693,7 @@ public enum Quest {
 	ROMANCE_NATALYA_1_INTERVIEW_START(QuestType.RELATIONSHIP, 1, 5) {
 		@Override
 		public String getName() {
-			return "Interviewed";
+			return "Прошедшее интервью";
 		}
 		@Override
 		public String getDescription() {
@@ -2745,7 +2738,7 @@ public enum Quest {
 	ROMANCE_NATALYA_4_TRAINING_2(QuestType.RELATIONSHIP, 1, 5) {
 		@Override
 		public String getName() {
-			return "More Training";
+			return "Дополнительное обучение";
 		}
 		@Override
 		public String getDescription() {
@@ -2760,7 +2753,7 @@ public enum Quest {
 	ROMANCE_NATALYA_5_TRAINING_3(QuestType.RELATIONSHIP, 1, 5) {
 		@Override
 		public String getName() {
-			return "Final Training";
+			return "Финальное обучение";
 		}
 		@Override
 		public String getDescription() {

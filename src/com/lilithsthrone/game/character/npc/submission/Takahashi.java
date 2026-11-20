@@ -85,7 +85,7 @@ public class Takahashi extends NPC {
 	}
 	
 	public Takahashi(boolean isImported) {
-		super(isImported, new NameTriplet("Hitomi", "Hitomi", "Hitomi"), "Takahashi",
+		super(isImported, new NameTriplet("Хитоми", "Хитоми", "Хитоми"), "Такахаши",
 				"",
 				23, Month.NOVEMBER, 27,
 				20, Gender.F_V_B_FEMALE, Subspecies.FOX_ASCENDANT, RaceStage.PARTIAL_FULL,
@@ -298,26 +298,21 @@ public class Takahashi extends NPC {
 	public String getDescription() {
 		if(Main.game.getPlayer().isQuestProgressGreaterThan(QuestLine.MAIN, Quest.MAIN_3_J_FINDING_TAKAHASHI)) {
 			return UtilText.parse(this,
-					"[npc.Name] is a rude, three-tailed youko, who treats others with very little respect."
-							+ " After disappearing from the citadel in Submission, she was captured by Shiranui and held in Meraxis's hideout until you and Meraxis rescued her."
-							+ " Now she spends her time making potions in the hideout.");
+					"[npc.Name] — грубая треххвостая ёкая, которая относится к окружающим с крайне малым уважением. После исчезновения из цитадели в Submission её пленила Ширануи и держала в убежище Мераксиса, пока вы с Мераксисом не спасли её. Теперь она проводит время в убежище, готовя зелья.");
 		}
 		
 		if(ImpCitadelDialogue.isDefeated() || ImpCitadelDialogue.isImpsDefeated()) {
 			return UtilText.parse(this,
-					"[npc.Name] is a rude, three-tailed youko, who treats others with very little respect."
-							+ " At the first sign of trouble in the citadel, she vanished, leaving nothing but an empty laboratory behind."
-							+ " You get the feeling that someday your paths will cross again...");
+					"[npc.Name] — грубая треххвостая ёкая, которая относится к окружающим с крайне малым уважением. При первых же признаках беды в цитадели она исчезла, оставив после себя лишь пустую лабораторию. У вас есть предчувствие, что когда-нибудь ваши пути пересекутся снова...");
 		}
 		
 		return UtilText.parse(this,
-				"[npc.Name] is a rude, three-tailed youko, who treats others with very little respect."
-						+ " Placed in charge of the Dark Siren's laboratory, she oversees the production of transformative potions.");
+				"[npc.Name] — грубая треххвостая ёкая, которая относится к окружающим с крайне малым уважением. Возложенная на неё обязанность по управлению лабораторией Темной Сирены подразумевает контроль над производством трансформирующих зелий.");
 	}
 
 	@Override
 	public String getArtworkFolderName() {
-		return "Takahashi";
+		return "Такахаши";
 	}
 	
 	@Override

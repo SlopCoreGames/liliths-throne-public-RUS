@@ -118,7 +118,7 @@ public class Lyssieth extends NPC {
 	public Lyssieth(boolean isImported) {
 		super(isImported,
 				new NameTriplet("Lyssieth"), "Lilithmartuilani",
-				"One of the seven elder Lilin, Lyssieth is one of the most powerful beings in existence.",
+				"Одна из семи старших лилин, Lyssieth — одно из самых могущественных существ в мироздании.",
 				7734, Month.OCTOBER, 13,
 				1000,
 				Gender.F_V_B_FEMALE, Subspecies.HUMAN, RaceStage.GREATER,
@@ -388,10 +388,10 @@ public class Lyssieth extends NPC {
 	@Override
 	public String getArtworkFolderName() {
 		if(this.getTorsoType().getRace()==Race.HUMAN) {
-			return "LyssiethHuman";
+			return "LyssiethЧеловек";
 			
 		} else {
-			return "LyssiethDemon";
+			return "Lyssiethдемон";
 		}
 	}
 	
@@ -1109,33 +1109,33 @@ public class Lyssieth extends NPC {
 				switch(Main.sex.getFirstOngoingSexAreaPenetration(this, SexAreaOrifice.VAGINA)) {
 					case FINGER:
 						returnedLine = UtilText.returnStringAtRandom(
-								"Yes! Good [npc2.girl]! Keep fingering mommy!",
-								"Keep going! Mommy's pussy loves your attention!",
-								"Oh yes! Mommy loves being fingered!");
+								"Да! Хороший [npc2.girl]! Продолжай ласкать мамочку пальцами!",
+								"Так держать! Киска мамочки обожает твое внимание!",
+								"О да! Мамочке так нравится, когда ей перебирают пальцами!");
 						break;
 					case PENIS:
 						returnedLine = UtilText.returnStringAtRandom(
-								"Yes! Fuck me! Give mommy your cock! Don't stop!",
-								"Don't stop! Harder! Keep fucking mommy! Yes, yes, yes!",
-								"Oh yes! Fuck me! Mommy loves your [npc2.cock]!");
+								"Да! Трахни меня! Всади мамочке свой член! Не останавливайся!",
+								"Не останавливайся! Сильнее! Продолжай трахать мамочку! Да, да, да!",
+								"О да! Трахни меня! Мамочке так нравится твой [npc2.cock]!");
 						break;
 					case TAIL:
 						returnedLine = UtilText.returnStringAtRandom(
-								"Yes! Fuck me! Give mommy your tail! Don't stop!",
-								"Don't stop! Harder! Keep fucking mommy! Yes, yes, yes!",
-								"Oh yes! Fuck me! Mommy loves your [npc2.tail]!");
+								"Да! Трахни меня! Дай мамочке свой хвост! Не останавливайся!",
+								"Не останавливайся! Сильнее! Продолжай трахать мамочку! Да, да, да!",
+								"О да! Трахни меня! Мамочка обожает твой [npc2.tail]!");
 						break;
 					case TONGUE:
 						returnedLine = UtilText.returnStringAtRandom(
-								"Yes! Mommy loves your [npc2.tongue]! Don't stop!",
-								"Don't stop! Get that tongue deep in mommy's pussy! Yes, yes, yes!",
-								"Oh yes! Taste mommy's pussy! Get it deeper! Good [npc2.girl]!");
+								"Да, мамочке нравится твой [npc2.tongue]! Не останавливайся!",
+								"Не останавливайся! Засунь этот язык поглубже в мамочкину киску! Да, да, да!",
+								"О да! Попробуй мамочкину киску на вкус! Глубже! Хороший [npc2.girl]!");
 						break;
 					default:
 						returnedLine =  UtilText.returnStringAtRandom(
-								"Fuck!",
-								"Yeah!",
-								"Oh yeah!");
+								"Блядь!",
+								"Да!",
+								"О да!");
 						break;
 				}
 			}
@@ -1159,33 +1159,33 @@ public class Lyssieth extends NPC {
 			switch(Main.sex.getFirstOngoingSexAreaPenetration(this, SexAreaOrifice.MOUTH)) {
 				case FINGER:
 					returnedLine = UtilText.returnStringAtRandom(
-							"Mommy loves the taste of your [npc2.fingers]! Don't stop!",
-							"Keep going! Mommy loves sucking on your [npc2.fingers]!",
-							"Oh yes! Mommy loves the taste of your [npc2.fingers]!");
+							"Мамочке нравится вкус твоего [npc2.fingers]! Не останавливайся!",
+							"Продолжай! Мамочке так нравится сосать твой [npc2.fingers]!",
+							"О да! Мамочке так нравится вкус твоего [npc2.fingers]!");
 					break;
 				case PENIS:
 					returnedLine = UtilText.returnStringAtRandom(
-							"Oh yes! Mommy loves your [npc2.cock]! Fuck her face like a good [npc2.girl]!",
-							"Don't stop! Harder! Fuck mommy's throat! Yes, yes, yes!",
-							"Oh yes! Mommy loves your [npc2.cock]! You taste so good!");
+							"О да! Мамочке так нравится твой [npc2.cock]! Трахни ей в рот, как хороший [npc2.girl]!",
+							"Не останавливайся! Сильнее! Трахни мамочке в глотку! Да, да, да!",
+							"О да! Мамочке так нравится твой [npc2.cock]! Ты такой вкусный!");
 					break;
 				case TAIL:
 					returnedLine = UtilText.returnStringAtRandom(
-							"Oh yes! Mommy loves your [npc2.tail]! Fuck her face like a good [npc2.girl]!",
-							"Don't stop! Harder! Fuck mommy's throat! Yes, yes, yes!",
-							"Oh yes! Mommy loves your [npc2.tail]! You taste so good!");
+							"О да! Мамочке так нравится твой [npc2.tail]! Трахни ей в рот, как хороший [npc2.girl]!",
+							"Не останавливайся! Сильнее! Трахни мамочке в глотку! Да, да, да!",
+							"О да! Мамочке так нравится твой [npc2.tail]! Ты такой вкусный!");
 					break;
 				case TONGUE:
 					returnedLine = UtilText.returnStringAtRandom(
-							"Good [npc2.girl]! Show mommy how much you love her!",
-							"Yes! Good [npc2.girl]!",
-							"Good [npc2.girl]! Mommy loves your [npc2.lips]!");
+							"Хороший [npc2.girl]! Покажи мамочке, как сильно ты её любишь!",
+							"Да! Хороший [npc2.girl]!",
+							"Молодец, [npc2.girl]! Мамочке так нравится твоя [npc2.lips]!");
 					break;
 				default:
 					returnedLine = UtilText.returnStringAtRandom(
-							"Fuck!",
-							"Yeah!",
-							"Oh yeah!");
+							"Блядь!",
+							"Да!",
+							"О да!");
 					break;
 			}
 		}
@@ -1210,9 +1210,9 @@ public class Lyssieth extends NPC {
 				switch(orifice) {
 					case ANUS:
 						availableLines.add(UtilText.returnStringAtRandom(
-								"Yes! Mommy loves your ass! Take her cock like a good [npc2.girl]!",
-								"Oh yes, let mommy fuck your cute little butt! Yes, yes, yes!",
-								"Oh yes! Good [npc2.girl]! Mommy loves your ass!"));
+								"Да! Мамочке так нравится твоя задница! Принимай её член, как послушная [npc2.girl]!",
+								"О да, пусть мамочка оттрахает твою милую маленькую попку! Да, да, да!",
+								"О да! Хорошая [npc2.girl]! Мамочке так нравится твоя задница!"));
 						break;
 					case ARMPITS:
 					case ASS:
@@ -1221,21 +1221,21 @@ public class Lyssieth extends NPC {
 						break;
 					case BREAST:
 						availableLines.add(UtilText.returnStringAtRandom(
-								"Yes! Mommy loves your [npc2.breasts]! Service her cock like a good [npc2.girl]!",
-								"Oh yes, let mommy fuck your tits! Yes, yes, yes!",
-								"Oh yes! Good [npc2.girl]! Mommy loves your tits!"));
+								"Да! Мамочке так нравится твоя [npc2.breasts]! Обслуживай её член, как послушная [npc2.girl]!",
+								"О да, пусть мамочка оттрахает твои сиськи! Да, да, да!",
+								"О да! Хорошая [npc2.girl]! Мамочке так нравятся твои сиськи!"));
 						break;
 					case MOUTH:
 						availableLines.add(UtilText.returnStringAtRandom(
-								"Yes! Keep sucking mommy's cock, like a good [npc2.girl]! Just like that!",
-								"Oh yes! Wrap those lips of yours around mommy's cock! Keep going!",
-								"Keep sucking mommy's cock! Yes! Good [npc2.girl]!"));
+								"Да! Соси мамочкин член, как хорошая [npc2.girl]! Вот так!",
+								"О да! Облепи этими губками мамочкин член! Не останавливайся!",
+								"Соси мамочкин член! Да! Хорошая [npc2.girl]!"));
 						break;
 					case NIPPLE:
 						availableLines.add(UtilText.returnStringAtRandom(
-								"Yes! Take mommy's cock! Good [npc2.girl]!",
-								"Mommy loves fucking your tits! Take my cock like a good [npc2.girl]!",
-								"Oh yes! Take mommy's cock! Your tits feel so good to fuck!"));
+								"Да! Принимай мамочкино хуй! Хорошая [npc2.girl]!",
+								"Мамочке так нравится трахать твои сиськи! Принимай мой хуй, хорошая [npc2.girl]!",
+								"О да! Принимай мамочкино хуй! Твои сиськи так приятно трахать!"));
 						break;
 					case NIPPLE_CROTCH:
 						break;
@@ -1247,15 +1247,15 @@ public class Lyssieth extends NPC {
 						break;
 					case VAGINA:
 						availableLines.add(UtilText.returnStringAtRandom(
-								"Yes! Take mommy's cock! Your pussy belongs to me!",
-								"Good [npc2.girl]! Take mommy's cock deep in your little pussy!",
-								"Oh yes! Let mommy fill your pussy with her cock! Good [npc2.girl]!"));
+								"Да! Принимай мамочкино хуй! Твоя киска принадлежит мне!",
+								"Хорошая [npc2.girl]! Принимай мамочкино хуй глубоко в свою маленькую киску!",
+								"О да! Позволь мамочке наполнить твою киску своим хуем! Хорошая [npc2.girl]!"));
 						break;
 					case SPINNERET:
 						availableLines.add(UtilText.returnStringAtRandom(
-								"Yes! Take mommy's cock! Your spinneret belongs to me!",
-								"Good [npc2.girl]! Take mommy's cock deep in your little spinneret!",
-								"Oh yes! Let mommy fill your spinneret with her cock! Good [npc2.girl]!"));
+								"Да! Принимай мамочкино хуй! Твой паучий аппарат принадлежит мне!",
+								"Хорошая [npc2.girl]! Принимай мамочкино хуй глубоко в свой маленький паучий аппарат!",
+								"О да! Позволь мамочке наполнить твой паучий аппарат своим хуем! Хорошая [npc2.girl]!"));
 						break;
 				}
 			}
@@ -1281,9 +1281,9 @@ public class Lyssieth extends NPC {
 				switch(orifice) {
 					case ANUS:
 						availableLines.add(UtilText.returnStringAtRandom(
-								"Yes! Mommy loves your ass! Feel my [npc1.tongue] pushing deep!",
-								"Oh yes! Let mommy lick your ass! Yes, yes, yes!",
-								"Oh yes! I love licking ass! Let mommy get her [npc1.tongue] nice and deep!"));
+								"Да! Мамочке нравится твоя жопка! Чувствуй, как мой [npc1.tongue] входит глубоко!",
+								"О да! Пусть мамочка лизнет твою попку! Да, да, да!",
+								"О да! Обожаю лизать зад! Дай мамочке [npc1.tongue] хорошенько и поглубже!"));
 						break;
 					case ARMPITS:
 					case ASS:
@@ -1292,21 +1292,21 @@ public class Lyssieth extends NPC {
 						break;
 					case BREAST:
 						availableLines.add(UtilText.returnStringAtRandom(
-								"Yes! Mommy loves your tits! Let her suck on your nipples!",
-								"Oh yes! Let mommy suck on your nipples! Yes, yes, yes!",
-								"Oh yes! Mommy loves your tits!"));
+								"Да! Мамочке так нравятся твои сиськи! Дай ей пососать твои соски!",
+								"О да! Пусть мамочка пососет твои соски! Да, да, да!",
+								"О да! Мамочка обожает твои сиськи!"));
 						break;
 					case MOUTH:
 						availableLines.add(UtilText.returnStringAtRandom(
-								"Oh yes! Your lips taste so good! Mommy needs more!",
-								"Mommy loves kissing you! Yes, yes, yes!",
-								"Oh yes! Your lips taste so good!"));
+								"О да! Твои губки такие вкусные! Мамочке нужно еще!",
+								"Мамочка обожает целовать тебя! Да, да, да!",
+								"О да! Твои губки такие вкусные!"));
 						break;
 					case NIPPLE:
 						availableLines.add(UtilText.returnStringAtRandom(
-								"Yes! Mommy loves your tits! Let her suck on your nipples!",
-								"Oh yes! Let mommy suck on your nipples! Yes, yes, yes!",
-								"Oh yes! Mommy loves your nipples! Let her get her [npc1.tongue] nice and deep!"));
+								"Да! Мамочке так нравятся твои сиськи! Дай ей пососать твои соски!",
+								"О да! Пусть мамочка пососет твои соски! Да, да, да!",
+								"О да! Мамочке так нравятся твои соски! Позволь ей [npc1.tongue] как следует глубоко!"));
 						break;
 					case NIPPLE_CROTCH:
 						break;
@@ -1318,15 +1318,15 @@ public class Lyssieth extends NPC {
 						break;
 					case VAGINA:
 						availableLines.add(UtilText.returnStringAtRandom(
-								"Yes! Mommy loves servicing your pussy! Good [npc2.girl]!",
-								"Oh yes! Let mommy eat you out! Yes, yes, yes!",
-								"Oh yes! Mommy loves the taste of your pussy! Feel her [npc1.tongue] getting in nice and deep!"));
+								"Да! Мамочке так нравится обслуживать твою киску! Хороший [npc2.girl]!",
+								"О да! Позволь мамочке отсосать тебе! Да, да, да!",
+								"О да! Мамочке так нравится вкус твоей киски! Почувствуй, как её [npc1.tongue] входит глубоко-глубоко!"));
 						break;
 					case SPINNERET:
 						availableLines.add(UtilText.returnStringAtRandom(
-								"Yes! Mommy loves servicing your spinneret! Good [npc2.girl]!",
-								"Oh yes! Let mommy eat out your spinneret! Yes, yes, yes!",
-								"Oh yes! Mommy loves the taste of your spinneret! Feel her [npc1.tongue] getting in nice and deep!"));
+								"Да! Мамочке так нравится обслуживать твой паутинный аппарат! Хороший [npc2.girl]!",
+								"О да! Позволь мамочке облизать твой паутинный аппарат! Да, да, да!",
+								"О да! Мамочке так нравится вкус твоего паутинного аппарата! Почувствуй, как её [npc1.tongue] входит глубоко-глубоко!"));
 						break;
 				}
 			}
@@ -1352,118 +1352,73 @@ public class Lyssieth extends NPC {
 			if(Main.game.getPlayer().hasHymen()) {
 				sb.append("<p>");
 					if(Main.game.getPlayer().hasFetish(Fetish.FETISH_PURE_VIRGIN)) {
-						sb.append("As [npc.name] thrusts [npc.her] [npc.cock+] into your [pc.pussy+], you can't help but let out a desperate, shuddering wail."
-									+ " Being so enamoured with the idea of being a pure virgin, you can scarcely believe that you're allowing an elder lilin to take it from you,"
-										+ " but as [npc.namePos] [npc.cock+] claims your precious virginity, you don't have any time to reflect on your choice."
-									+ " The only thing that's on your mind is the agonising pain of having your hymen torn by the [npc.cockGirth] demonic-cock that's been pushed into your now-despoiled cunt.");
+						sb.append("Когда [npc.name] [npc.her] [npc.cock+] в твою [pc.pussy+], ты не можешь сдержать отчаянного, дрожащего вопля. Будучи столь очарованной идеей оставаться чистой девой, ты едва можешь поверить, что позволяешь старшей лилин забрать её у тебя, но пока [npc.namePos] [npc.cock+] забирает твою драгоценную девственность, у тебя нет времени на раздумья о сделанном выборе. Единственное, что занимает твои мысли — это мучительная боль от того, что твоя плева разрывается [npc.cockGirth] демоническим членом, втиснутым в твою теперь уже оскверненную киску.");
 					} else if(Main.game.getPlayer().hasFetish(Fetish.FETISH_MASOCHIST)) {
-						sb.append("As [npc.name] thrusts [npc.her] [npc.cock+] into your [pc.pussy+] to tear your hymen and claim your virginity, you can't help but let out a lewd, masochistic scream."
-								+ " The agonising pain of having your hymen torn by [npc.namePos] [npc.cockGirth] demonic-cock completely overwhelms you, and you can't help but squeal and moan in a delightful haze of overwhelming ecstasy.");
+						sb.append("Когда [npc.name] [npc.her] [npc.cock+] в твою [pc.pussy+], чтобы разорвать твою плеву и забрать девственность, ты невольно издаешь похотливый, мазохистский крик. Мучительная боль от того, что твою плеву разрывает [npc.namePos] [npc.cockGirth] демонический член, полностью овладевает тобой, и ты не можешь не визжать и стонать в восхитительном тумане всепоглощающего экстаза.");
 					} else {
-						sb.append("As [npc.name] thrusts [npc.her] [npc.cock+] into your [pc.pussy+] to claim your virginity, you can't help but let out a desperate, shuddering wail."
-								+ " The agonising pain of having your hymen torn by [npc.namePos] [npc.cockGirth] demonic-cock completely overwhelms you, and you squirm about in discomfort as you try to endure this painful experience.");
+						sb.append("Когда [npc.name] вонзает [npc.her] [npc.cock+] в твою [pc.pussy+], чтобы забрать твою девственность, ты невольно издаешь отчаянный, дрожащий вопль. Мучительная боль от того, что твоя девственная плева разрывается [npc.namePos] [npc.cockGirth] демоническим членом, полностью овладевает тобой, и ты ерзаешь от дискомфорта, пытаясь вытерпеть этот болезненный опыт.");
 					}
 				sb.append("</p>");
 				
 			} else {
 				sb.append("<p>");
 					if(Main.game.getPlayer().hasFetish(Fetish.FETISH_PURE_VIRGIN)) {
-						sb.append("As [npc.name] thrusts [npc.her] [npc.cock+] into your [pc.pussy+], you can't help but let out a desperate, shuddering wail."
-								+ " Being so enamoured with the idea of being a pure virgin, you can scarcely believe that you're allowing an elder lilin to take it from you,"
-									+ " but as [npc.namePos] [npc.cock+] claims your precious virginity, you don't have any time to reflect on your choice."
-								+ " The only thing that's on your mind is the fact that you've being broken in by the [npc.cockGirth] demonic-cock that's been pushed into your now-despoiled cunt.");
+						sb.append("Когда [npc.name] вонзает [npc.her] [npc.cock+] в твою [pc.pussy+], ты невольно издаешь отчаянный, дрожащий вопль. Будучи столь очарованной идеей чистоты, ты едва можешь поверить, что позволяешь старшей лилин забрать её у тебя, но пока [npc.namePos] [npc.cock+] забирает твою драгоценную девственность, у тебя нет времени на раздумья о своем выборе. Единственное, о чем ты можешь думать, — это то, что тебя овладевает [npc.cockGirth] демонический член, втиснутый в твою теперь уже оскверненную киску.");
 					} else {
-						sb.append("As [npc.namePos] [npc.cock+] thrusts into your [pc.pussy+] to claim your virginity, you can't help but let out a desperately lewd [pc.moan]."
-								+ " [npc.NamePos] [npc.cockGirth] demonic-cock is giving you an intense pleasure unlike any you've felt before, and you can't help but continue to scream and [pc.moan] in a delightful haze of overwhelming ecstasy.");
+						sb.append("Когда [npc.namePos] [npc.cock+] вонзает в твою [pc.pussy+], чтобы забрать твою девственность, ты невольно издаешь отчаянно похотливый [pc.moan]. [npc.NamePos] [npc.cockGirth] демонический член дарит тебе столь интенсивное наслаждение, какого ты никогда прежде не чувствовала, и ты не можешь перестать кричать и [pc.moan] в восхитительном тумане всепоглощающего экстаза.");
 					}
 				sb.append("</p>");
 			}
 			
 			if(Main.sex.getInitialSexManager() instanceof SMLyssiethDemonTF) {
-				sb.append("<p>"
-						+ "Upon hearing your ear-splitting wail, [npc.name] stops thrusting forwards, and with her hot, throbbing cock still stuffed in your quivering cunt, [npc.she] teases,"
-						+ " [npc.speechNoExtraEffects(You're a very lucky [pc.girl], [pc.name]... ~Mmm!~ Not everyone gets to lose their virginity to an elder lilin, you know, especially not while being transformed into a demon..."
-							+ " ~Ooh!~ Now beg for my cock, like a good little succubus slut, and I'll give you the rest of it.)]"
-					+ "</p>");
+				sb.append("<p>Услышав твой оглушительный вопль, [npc.name] перестает двигаться вперед, и, пока ее горячий, пульсирующий член все еще забит в твою дрожащую киску, [npc.she] дразнит тебя, [npc.speechNoExtraEffects(Ты очень везучая [pc.girl], [pc.name]... ~Ммм!~ Знаешь, не каждому выпадает такая честь — лишиться девственности с древним лилин, особенно во время превращения в демона... ~Ооо!~ А теперь умоляй о моем члене, как послушная маленькая суккуб-шлюшка, и тогда я отдам тебе всё остальное.)]</p>");
 			
 				sb.append("<p>");
 					if(Main.game.getPlayer().hasFetish(Fetish.FETISH_PURE_VIRGIN)) {
-						sb.append("Although you can't help but shed a tear as you realise that you've lost your precious, pure virginity, you're also madly turned on.");
+						sb.append("Хотя ты не можешь сдержать слезы, осознавая, что потеряла свою драгоценную, чистую девственность, ты также безумно возбуждена.");
 					} else {
-						sb.append("Although you can't help but wince as a pang of pain shoots up from your cock-filled pussy, you're also madly turned on.");
+						sb.append("Хотя ты невольно морщишься от резкой боли, пронзающей твою набитую членом киску, ты также безумно возбуждена.");
 					}
-					sb.append(" Doing as [npc.name] says, you desperately pant, [pc.speechNoExtraEffects(Please, [npc.name]... ~Aah!~ Give me your cock and turn me into a succubus!)]");
+					sb.append(" Повинуясь словам [npc.name], ты отчаянно тяжело дышишь: [pc.speechNoExtraEffects(Пожалуйста, [npc.name]... ~Ааах!~ Дай мне свой член и преврати меня в суккуба!)]");
 				sb.append("</p>");
 				
 			} else {
-				sb.append("<p>"
-							+ "Upon hearing your ear-splitting wail, [npc.name] stops thrusting forwards, and with her hot, throbbing cock still stuffed in your quivering cunt, [npc.she] teases,"
-							+ " [npc.speechNoExtraEffects(You're a very lucky [pc.girl], [pc.name]... ~Mmm!~ Not everyone gets to lose their virginity to an elder lilin, you know... Now beg for my cock, and I'll give you the rest of it.)]"
-						+ "</p>");
+				sb.append("<p>Услышав твой оглушительный вопль, [npc.name] перестает двигаться вперед, и, пока ее горячий, пульсирующий член все еще забит в твою дрожащую киску, [npc.she] дразнит тебя, [npc.speechNoExtraEffects(Ты очень везучая [pc.girl], [pc.name]... ~Ммм!~ Знаешь, не каждому выпадает такая честь — лишиться девственности с древним лилин... А теперь умоляй о моем члене, и тогда я отдам тебе всё остальное.)]</p>");
 				
 				sb.append("<p>");
 					if(Main.game.getPlayer().hasFetish(Fetish.FETISH_PURE_VIRGIN)) {
-						sb.append("Although you can't help but shed a tear as you realise that you've lost your precious, pure virginity, you're also madly turned on.");
+						sb.append("Хотя ты не можешь сдержать слезы, осознавая, что потеряла свою драгоценную, чистую девственность, ты также безумно возбуждена.");
 					} else {
-						sb.append("Although you can't help but wince as a pang of pain shoots up from your cock-filled pussy, you're also madly turned on.");
+						sb.append("Хотя ты невольно морщишься от резкой боли, пронзающей твою набитую членом киску, ты также безумно возбуждена.");
 					}
-					sb.append(" Doing as [npc.name] says, you desperately pant, [pc.speechNoExtraEffects(Please, [npc.name]... ~Aah!~ Give me your cock!)]");
+					sb.append(" Выполняя приказы [npc.name], вы отчаянно тяжело дышите, [pc.speechNoExtraEffects(Пожалуйста, [npc.name]... ~Аах!~ Дай мне свой член!)]");
 				sb.append("</p>");
 			}
 			
-			sb.append("<p>"
-						+ "[npc.speechNoExtraEffects(That's a good [pc.girl],)] [npc.name] responds,"
-							+ " and you try to suppress your whimpers as [npc.she] resumes where [npc.she] left off and thrusts the remaining length of [npc.her] huge demonic-cock into your cunt."
-						+ " As [npc.she] fills your freshly popped cherry with [npc.her] hot, throbbing shaft, [npc.name] softly moans,"
-						+ " [npc.speechNoExtraEffects(That's it... ~Mmm!~ Take my cock nice and deep... It'll start feeling good for you soon enough...)]"
-					+ "</p>"
-					+ "<p>"
-						+ "Sure enough, after [npc.nameHas] pulled [npc.her] cock back out of your pussy, the pain starts to fade away,"
-							+ " and you find yourself letting out a lewd moan as you concentrate on the feeling of [npc.her] [npc.cockHead+] pushing its way into your broken-in pussy as [npc.she] gently thrusts forwards once again..."
-					+ "</p>");
+			sb.append("<p>[npc.speechNoExtraEffects(Хорошая [pc.girl],)] [npc.name] отвечает, и вы пытаетесь подавить свои всхлипы, пока [npc.she] продолжает с того места, где [npc.she] остановился, вонзая оставшуюся часть своего огромного демонического члена [npc.her] в вашу киску. Пока [npc.she] наполняет вашу только что раскрывшуюся девственность своим горячим, пульсирующим [npc.her] стволом, [npc.name] тихо стонет: [npc.speechNoExtraEffects(Вот так... ~Ммм!~ Принимай мой член поглубже... Скоро тебе станет хорошо...)]</p><p>И действительно, после того как [npc.nameHas] вытащил свой [npc.her] член из вашей киски, боль начинает утихать, и вы ловите себя на том, что издаете похотливый стон, сосредоточившись на ощущении того, как [npc.her] [npc.cockHead+] проталкивается в вашу размякшую киску, когда [npc.she] снова начинает мягко двигаться вперед...</p>");
 			
 		} else if(penetrated == SexAreaOrifice.ANUS) {
 			sb.append("<p>");
-				sb.append("As [npc.name] slowly pushes [npc.her] [npc.cock+] into your [pc.asshole+] to claim your virginity, you can't help but let out a desperate, shuddering wail."
-						+ " The uncomfortable sensation of having [npc.namePos] [npc.cockGirth] demonic-cock forcing its way inside of you causes you to squirm about in discomfort.");
+				sb.append("Пока [npc.name] медленно втискивает [npc.her] [npc.cock+] в вашу [pc.asshole+], чтобы забрать вашу девственность, вы не можете не издать отчаянный, дрожащий вопль. Неприятное ощущение от того, что огромный демонический член [npc.namePos] [npc.cockGirth] силой проникает внутрь вас, заставляет вас ерзать от дискомфорта.");
 			sb.append("</p>");
 			
 
 			if(Main.sex.getInitialSexManager() instanceof SMLyssiethDemonTF) {
-				sb.append("<p>"
-						+ "Upon hearing your ear-splitting wail, [npc.name] stops thrusting forwards, and with her hot, throbbing cock still stuffed in your asshole, [npc.she] teases,"
-						+ " [npc.speechNoExtraEffects(~Mmm!~ You know, no matter what they say, all succubi are horny little buttsluts... You'll be no different..."
-							+ " ~Ooh!~ Now beg for my cock, like a good little anal-loving slut, and I'll give you the rest of it.)]"
-					+ "</p>");
+				sb.append("<p>Услышав твой оглушительный вопль, [npc.name] перестает двигаться вперед, и, пока ее горячий, пульсирующий член все еще забит в твою анус, [npc.she] дразнит тебя: [npc.speechNoExtraEffects(~Ммм!~ Знаешь, что бы там ни говорили, все суккубы — те еще похотливые зады... И ты не станешь исключением... ~Ооо!~ А теперь умоляй о моем члене, как хорошая маленькая анал-любительница, и тогда я отдам тебе всё остальное.)]</p>");
 			
 				sb.append("<p>");
-					sb.append("Finding yourself feeling extremely horny as [npc.name] says this, you do your best to endure the discomfort and desperately moan,"
-							+ " [pc.speechNoExtraEffects(Please, [npc.name]... ~Aah!~ I'll be a good buttslut succubus! Give me your cock!)]");
+					sb.append("Понимая, что слова [npc.name] вызывают у тебя дикое возбуждение, ты изо всех сил стараешься терпеть дискомфорт и отчаянно стонешь: [pc.speechNoExtraEffects(Пожалуйста, [npc.name]... ~Ааах!~ Я буду хорошей суккубшей-задышкой! Дай мне свой член!)]");
 				sb.append("</p>");
 				
 			} else {
-				sb.append("<p>"
-							+ "Upon hearing your ear-splitting wail, [npc.name] stops thrusting forwards, and with her hot, throbbing cock still stuffed in your asshole, [npc.she] teases,"
-							+ " [npc.speechNoExtraEffects(~Mmm!~ It's nice knowing that my cock's the first one that's been up your ass... You're going to become a horny little buttslut, I can just tell..."
-							+ " ~Ooh!~ Now beg for my cock, like a good little anal-loving slut, and I'll give you the rest of it.)]"
-						+ "</p>");
+				sb.append("<p>Услышав твой оглушительный вопль, [npc.name] перестает двигаться вперед, и, пока ее горячий, пульсирующий член все еще забит в твою анус, [npc.she] дразнит тебя: [npc.speechNoExtraEffects(~Ммм!~ Приятно знать, что мой член — первый, кто оказался в твоей заднице... Я прямо чувствую, что ты станешь похотливой маленькой задышкой... ~Ооо!~ А теперь умоляй о моем члене, как хорошая маленькая анал-любительница, и тогда я отдам тебе всё остальное.)]</p>");
 
 				sb.append("<p>");
-					sb.append("Finding yourself feeling extremely horny as [npc.name] says this, you do your best to endure the discomfort and desperately moan,"
-							+ " [pc.speechNoExtraEffects(Please, [npc.name]... ~Aah!~ Give me your cock!)]");
+					sb.append("Понимая, что слова [npc.name] вызывают у тебя дикое возбуждение, ты изо всех сил стараешься терпеть дискомфорт и отчаянно стонешь: [pc.speechNoExtraEffects(Пожалуйста, [npc.name]... ~Ааах!~ Дай мне свой член!)]");
 				sb.append("</p>");
 			}
 
-			sb.append("<p>"
-						+ "[npc.speechNoExtraEffects(That's a good [pc.girl],)] [npc.name] responds,"
-							+ " and you try to suppress your whimpers as [npc.she] resumes where [npc.she] left off and thrusts the remaining length of [npc.her] huge demonic-cock into your asshole."
-						+ " As [npc.she] fills you with [npc.her] hot, throbbing shaft, [npc.name] softly moans,"
-						+ " [npc.speechNoExtraEffects(That's it... ~Mmm!~ Take my cock nice and deep... It'll start feeling good for you soon enough...)]"
-					+ "</p>"
-					+ "<p>"
-						+ "Sure enough, after [npc.nameHas] pulled [npc.her] cock back out of your asshole, the discomfort starts to fade away,"
-							+ " and you find yourself letting out a lewd moan as you concentrate on the feeling of [npc.her] [npc.cockHead+] pushing its way into your broken-in butt as [npc.she] gently thrusts forwards once again..."
-					+ "</p>");
+			sb.append("<p>[npc.speechNoExtraEffects(That's a good [pc.girl],)] [npc.name] responds, and you try to suppress your whimpers as [npc.she] resumes where [npc.she] left off and thrusts the remaining length of [npc.her] huge demonic-cock into your asshole. As [npc.she] fills you with [npc.her] hot, throbbing shaft, [npc.name] softly moans, [npc.speechNoExtraEffects(That's it... ~Mmm!~ Take my cock nice and deep... It'll start feeling good for you soon enough...)]</p><p>Sure enough, after [npc.nameHas] pulled [npc.her] cock back out of your asshole, the discomfort starts to fade away, and you find yourself letting out a lewd moan as you concentrate on the feeling of [npc.her] [npc.cockHead+] pushing its way into your broken-in butt as [npc.she] gently thrusts forwards once again...</p>");
 		}
 		
 		return UtilText.parse(this,  sb.toString());
@@ -1472,32 +1427,10 @@ public class Lyssieth extends NPC {
 	@Override
 	public String getSpecialPlayerPureVirginityLoss(GameCharacter penetratingCharacter, SexAreaPenetration penetrating) {
 		return "<p style='text-align:center;'>"
-					+ "<b style='color:"+PresetColour.GENERIC_TERRIBLE.toWebHexString()+";'>Broken Virgin</b>"
-				+ "</p>"
-				+ "<p>"
-					+ "As [npc.name] once again begins to stuff your cunt with [npc.her] hot demonic-cock, the sudden realisation of what's just happened hits you like a sledgehammer."
-				+ "</p>"
-				+ "<p style='text-align:center;'>"
-					+"[pc.thought(I-I've lost my virginity?!"
-					+ "<br/>To <b>an elder lilin</b>?!)]"
-				+ "</p>"
-				+ "<p>"
-					+ "You don't know what's worse, losing the virginity that you prized so highly, or the fact that you're actually enjoying it."
-					+ " As your [pc.labia+] spread lewdly around the hot, thick [npc.cock] thrusting in and out of you, you start convincing yourself that this is all you're good for."
-				+ "</p>"
-				+ "<p style='text-align:center;'>"
-					+ "[pc.thought(If I'm not a virgin, that makes me a slut..."
-					+ "<br/>Just a slut to be fucked and pumped full of cum..."
-					+ "<br/>I wonder if all cocks are as good as [npc.namePos]...)]"
-				+ "</p>"
-				+ "<p>"
-					+ "You're vaguely aware of the fact that [npc.name] is telling you how good your pussy feels as [npc.she] starts to focus [npc.her] attention on filling it with her throbbing demonic shaft."
-					+ " With a desperate moan,"
+					+ "<b style='color:"+PresetColour.GENERIC_TERRIBLE.toWebHexString()+";'>Сломленная девственница</b></p><p>Когда [npc.name] снова начинает набивать твою киску [npc.her] горячим демоническим членом, внезапное осознание произошедшего бьет тебя, словно кувалда.</p><p style='text-align:center;'>[pc.thought(Я... я лишилась девственности?!<br/>У <b> старшей лилин</b>?!)]</p><p>Ты не знаешь, что хуже: потеря девственности, которой так дорожила, или тот факт, что тебе это на самом деле нравится. Пока твои [pc.labia+] похотливо раздвинуты вокруг горячего, толстого [npc.cock], входящего и выходящего из тебя, ты начинаешь убеждать себя, что только на это ты и годна.</p><p style='text-align:center;'>[pc.thought(Если я больше не девственница, значит, я шлюха...<br/>Просто шлюха, которую трахают и наполняют спермой...<br/>Интересно, все ли члены такие же классные, как [npc.namePos]...)]</p><p>Ты смутно осознаешь, что [npc.name] шепчет тебе, как хороша твоя киска, пока [npc.she] начинает сосредотачивать [npc.her] внимание на том, чтобы заполнить ее своим пульсирующим демоническим стволом. С отчаянным стоном,"
 					+ (Main.game.getPlayer().hasLegs()
-						?" you spread your legs and"
+						?" ты раздвигаешь ноги и"
 						:" you")
-					+ " resign yourself to the fact that you're now nothing more than a"
-					+ " <b style='color:"+StatusEffect.FETISH_BROKEN_VIRGIN.getColour().toWebHexString()+";'>broken virgin</b>..."
-				+ "</p>";
+					+ " смиряешься с тем фактом, что теперь ты не более чем <b style='color:"+StatusEffect.FETISH_BROKEN_VIRGIN.getColour().toWebHexString()+";'>сломанная девственница</b>...</p>";
 	}
 }

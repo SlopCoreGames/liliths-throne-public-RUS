@@ -15,25 +15,25 @@ public enum TattooCountType {
 			return String.valueOf(input);
 		}
 	},
-	TALLY("tally markings") {
+	TALLY("зарубки") {
 		@Override
 		public String convertInt(int input) {
 			return Util.intToTally(input, 50);
 		}
 	},
-	NUMERALS("Roman numerals") {
+	NUMERALS("римские цифры") {
 		@Override
 		public String convertInt(int input) {
 			return Util.intToNumerals(input);
 		}
 	},
-	WRITTEN("written out") {
+	WRITTEN("прописью") {
 		@Override
 		public String convertInt(int input) {
 			return Util.capitaliseSentence(Util.intToString(input));
 		}
 	},
-	CHINESE("Chinese characters tally") {
+	CHINESE("китайские иероглифы") {
 		public String convertInt(int input) {
 			return Util.intToZheng(input, 50);
 		}

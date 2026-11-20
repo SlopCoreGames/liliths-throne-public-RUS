@@ -11,23 +11,23 @@ public enum DisplacementType {
 	
 	OPEN("open", "opens", "opened", "close", "closes"),
 	
-	PULLS_UP("pull up", "pulls up", "pulled up", "pull down", "pulls down"),
+	PULLS_UP("подтянуть", "подтягивает", "подтянула", "стянуть", "стягивает"),
 	
-	PULLS_DOWN("pull down", "pulls down", "pulled down", "pull up", "pulls up"),
+	PULLS_DOWN("стянуть", "стягивает", "стянула", "подтянуть", "подтягивает"),
 	
-	PULLS_OUT("pull out", "pulls out", "pulled out", "push in", "pushes in"),
+	PULLS_OUT("вытянуть", "вытягивает", "вытянул", "затолкнуть", "заталкивает"),
 	
-	PULLS_OFF("pull off", "pulls off", "pulled off", "pull back on", "pulls back on"),
+	PULLS_OFF("стянуть", "стягивает", "стянул", "натянуть обратно", "натягивает обратно"),
 	
-	SHIFTS_ASIDE("shift aside", "shifts aside", "shifted aside", "replace", "replaces"),
+	SHIFTS_ASIDE("сдвинуть в сторону", "сдвигает в сторону", "сдвинул(а) в сторону", "replace", "заменяет"),
 	
-	UNZIPS("unzip", "unzips", "unzipped", "zip up", "zips up"),
+	UNZIPS("unzip", "unzips", "unzipped", "застегнуть молнию", "застегивает молнию"),
 	
-	UNTIE("untie", "unties", "untied", "tie-up", "ties-up"),
+	UNTIE("развязать", "unties", "untied", "tie-up", "ties-up"),
 	
-	UNBUCKLE("unbuckle", "unbuckles", "unbuckled", "buckle up", "buckles up"),
+	UNBUCKLE("unbuckle", "unbuckles", "расстегнул(а) пряжку", "застегнуть пряжку", "застегивает пряжку"),
 	
-	UNBUTTONS("unbutton", "unbuttons", "unbuttoned", "button up", "buttons up");
+	UNBUTTONS("unbutton", "расстегивает", "unbuttoned", "застегнуть", "застегивает");
 
 	private String description, descriptionThirdPerson, descriptionPast, oppositeDescription, oppositeDescriptionThirdPerson;
 

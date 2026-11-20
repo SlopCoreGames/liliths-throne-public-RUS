@@ -19,7 +19,7 @@ public enum DamageType {
 
 	HEALTH("health",
 			PresetColour.ATTRIBUTE_HEALTH,
-			"health damaging",
+			"наносящий урон здоровью",
 			Attribute.ENERGY_SHIELDING,
 			Attribute.HEALTH_MAXIMUM,
 			SpellSchool.EARTH,

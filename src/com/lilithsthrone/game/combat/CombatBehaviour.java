@@ -11,28 +11,28 @@ import com.lilithsthrone.game.dialogue.utils.UtilText;
 public enum CombatBehaviour {
 	
 	BALANCED("balanced",
-			"Tell [npc.name] to use whatever combat moves [npc.she] feels are most appropriate.",
-			"[npc.NameIsFull] using whichever combat move [npc.she] feels is most appropriate."),
+			"Прикажите [npc.name] использовать любые боевые приемы, которые [npc.she] сочтет наиболее подходящими.",
+			"[npc.NameIsFull] использует любые боевые приемы, которые [npc.she] сочтет наиболее подходящими."),
 	
 	ATTACK("attack",
-			"Tell [npc.name] to be more aggressive, and to favour main weapon attacks and offensive spells over any defensive abilities.",
-			"Wherever possible, [npc.name] will choose to go on the offensive, preferring to use damaging attacks over defensive abilities."),
+			"Прикажите [npc.name] действовать агрессивнее, отдавая предпочтение атакам основным оружием и наступательным заклинаниям перед любыми защитными способностями.",
+			"Везде, где это возможно, [npc.name] будет переходить в наступление, предпочитая наносящие урон атаки защитным способностям."),
 	
 	DEFEND("defend",
-			"Tell [npc.name] to be more defensive, and to favour abilities which prevent incoming damage.",
-			"Wherever possible, [npc.name] will choose to go on the defensive, and will favour the usage of abilities which prevent incoming damage."),
+			"Прикажите [npc.name] действовать более оборонительно, отдавая предпочтение способностям, предотвращающим входящий урон.",
+			"Везде, где это возможно, [npc.name] будет переходить к обороне, отдавая предпочтение использованию способностей, предотвращающих входящий урон."),
 	
 	SEDUCE("seduce",
-			"Tell [npc.name] to start seducing [npc.her] opponents instead of using damaging spells or weapon attacks.",
-			"Wherever possible, [npc.name] will focus on seducing [npc.her] opponents instead of using damaging or defensive abilities."),
+			"Прикажите [npc.name] вместо использования наносящих урон заклинаний или атак оружием начать соблазнять [npc.her] противников.",
+			"Везде, где это возможно, [npc.name] будет сосредоточена на соблазнении [npc.her] противников вместо использования атакующих или защитных способностей."),
 	
 	SPELLS("spells",
-			"Tell [npc.name] to focus on using all the spells which [npc.sheHasFull] at [npc.her] disposal.",
-			"Wherever possible, [npc.name] will focus on using spells which [npc.sheHasFull] at [npc.her] disposal."),
+			"Прикажите [npc.name] сосредоточиться на использовании всех заклинаний, которые [npc.sheHasFull] [npc.her] распоряжении.",
+			"Везде, где это возможно, [npc.name] будет сосредоточена на использовании заклинаний, которые [npc.sheHasFull] [npc.her] распоряжении."),
 	
 	SUPPORT("support",
-			"Tell [npc.name] to focus on using spells or other abilities which support [npc.her] allies.",
-			"Wherever possible, [npc.name] will focus on using spells or other abilities which support [npc.her] allies.");
+			"Прикажите [npc.name] сосредоточиться на использовании заклинаний или других способностей, поддерживающих [npc.her] союзников.",
+			"По возможности, [npc.name] будет стараться использовать заклинания или другие способности, поддерживающие [npc.her] союзников.");
 
 	String name;
 	String orderDescription;

@@ -130,7 +130,7 @@ public class Cell implements XMLSaving {
 	
 	@Override
 	public String toString() {
-		return "Cell ("+this.getLocation().toString()+"): Place: "+this.getPlace().getPlaceType().getName();
+		return "Клетка ("+this.getLocation().toString()+"): Место: "+this.getPlace().getPlaceType().getName();
 	}
 	
 	public String getId() {

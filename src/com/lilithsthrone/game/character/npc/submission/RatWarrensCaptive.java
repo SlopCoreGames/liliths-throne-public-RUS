@@ -259,26 +259,15 @@ public class RatWarrensCaptive extends NPC {
 	public String getDescription() {
 		StringBuilder sb = new StringBuilder();
 		if(this.getHomeWorldLocation()==WorldType.RAT_WARRENS) {
-			sb.append("This woman is one of Murk's 'milkers', and is whored out to anyone who can afford her."
-					+ " While not being fucked by Murk or some stranger, this 'milker' earns her name by having her breasts milked by an arcane-powered machine.");
+			sb.append("Эта женщина — одна из «доярок» Мёрка, и её отдают на панель любому, кто может себе это позволить. Пока Мёрк или какой-нибудь незнакомец не трахают её, эта «доярка» оправдывает своё прозвище тем, что её грудь доят с помощью машины, работающей на силе Арканы.");
 			
 			if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.ratWarrensMilkersBackground)) {
-				sb.append("<br/>"
-						+ "After asking Murk about the milkers, you discovered that they were originally kidnapped and forced to be milked against their will."
-						+ " Over time, however, the rat-boy totally broke their will to resist, to the point where they now desperately plead to get fucked by him...");
+				sb.append("<br/>Расспросив Мёрка о доярках, вы выяснили, что изначально их похитили и заставили отдавать молоко против их воли. Однако со временем крысопацан полностью сломил их волю к сопротивлению — до такой степени, что теперь они отчаянно умоляют его трахнуть их...");
 			}
 			
 		} else {
 			sb.append(UtilText.parse(this,
-					"This [npc.race] used to be one of Murk's 'milkers', and was whored out to anyone who can afford [npc.herHim]."
-						+ " While not being fucked by Murk or some stranger, this 'milker' used to earn [npc.her] name by having [npc.her] breasts milked by an arcane-powered machine."
-						+ "<br/>"
-						+ "Claire informed you that [npc.she] was originally kidnapped by Murk and forced to be milked against [npc.her] will."
-						+ " Over time, however, the rat-boy totally broke [npc.her] will to resist,"
-							+ " to the point where [npc.she] was so desperate to continue being milked and fucked that the Enforcers had no other choice but to enslave [npc.herHim] to give [npc.herHim] the life [npc.she] craved."
-						+ "<br/>"
-						+ "Having agreed to take care of [npc.herHim], Claire signed possession of this slave over to you."
-						+ " It's now completely up to you whether you subject [npc.herHim] to the abusive treatment [npc.she] craves, or to instead choose to give [npc.herHim] a different type of life..."));
+					"Эта [npc.race] когда-то была одной из «доек» Мёрка, и её отдавали любой шлюхе, способной оплатить [npc.herHim]. Пока её не трахали Мёрк или случайные незнакомцы, эта «дойная корова» зарабатывала себе имя [npc.her] тем, что её [npc.her] груди доили машиной на энергии Арканы.<br/>Клэр сообщила тебе, что [npc.she] изначально похитил Мёрк и заставил отдавать молоко вопреки [npc.her] воле. Однако со временем крысопацан полностью сломил [npc.her] волю к сопротивлению, до такой степени, что [npc.she] так отчаянно желала продолжать дойку и трах, что у Enforcer не осталось иного выбора, кроме как поработить [npc.herHim], чтобы дать [npc.herHim] ту жизнь, которой [npc.she] так жаждала.<br/>Согласившись заботиться о [npc.herHim], Клэр передала право владения этой рабыней тебе. Теперь целиком и полностью зависит от тебя, подвергнешь ли ты [npc.herHim] тому жестокому обращению, которого [npc.she] так жаждет, или же решишь подарить [npc.herHim] совсем иной образ жизни..."));
 		}
 		return sb.toString();
 	}

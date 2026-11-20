@@ -160,19 +160,19 @@ public class EnchantingUtils {
 		
 		if(((AbstractItem)ingredient).getItemType().getId().equals(ItemType.ORIENTATION_HYPNO_WATCH.getId())) {
 			if(effects.isEmpty() || effects.get(0).getPrimaryModifier()==TFModifier.REMOVAL) {
-				return "Hypno-Watch";
+				return "Гипно-часы";
 			}
 			if(effects.get(0).getPrimaryModifier()==TFModifier.ORIENTATION_GYNEPHILIC) {
-				return "Gynephilic Hypno-Watch";
+				return "Гинефильный гипно-часы";
 				
 			} else if(effects.get(0).getPrimaryModifier()==TFModifier.ORIENTATION_AMBIPHILIC) {
-				return "Ambiphilic Hypno-Watch";
+				return "Амбифильный гипно-часы";
 				
 			} else if(effects.get(0).getPrimaryModifier()==TFModifier.ORIENTATION_ANDROPHILIC) {
-				return "Androphilic Hypno-Watch";
+				return "Андрофильный гипно-часы";
 				
 			} else {
-				return "Speech-modifying Hypno-Watch";
+				return "Гипно-часы модификации речи";
 			}
 		}
 		

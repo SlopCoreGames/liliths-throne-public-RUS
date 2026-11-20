@@ -170,8 +170,8 @@ public abstract class AbstractCombatMove {
     	
     	this.category = category;
         this.name = name;
-        this.description = "This action does nothing.";
-        this.performingText = "The move is performed.";
+        this.description = "Это действие ничего не дает.";
+        this.performingText = "Прием выполнен.";
         
         this.cooldown = cooldown;
         this.APcost = APcost;
@@ -480,7 +480,7 @@ public abstract class AbstractCombatMove {
 		
 		if(criticalText!=null) {
 			sb.append("<p>"
-							+ "<span style='color:"+PresetColour.CRIT.toWebHexString()+";'>Critical</span>: <i>"+criticalEffectText+"</i>"
+							+ "<span style='color:"+PresetColour.CRIT.toWebHexString()+";'>Критический</span>: <i>"+criticalEffectText+"</i>"
 						+ "</p>");
 		}
 		
@@ -703,7 +703,7 @@ public abstract class AbstractCombatMove {
             sb.append(formatAttackOutcome(source, target,
             		parseText,
             		damageValue.getValue()>0
-            			?"[npc2.Name] took " + getFormattedDamage(damageType, damageValue.getValue(), target, true, maxLust) + " damage!"
+            			?"[npc2.Name] получил " + getFormattedDamage(damageType, damageValue.getValue(), target, true, maxLust) + " урон!"
             			:"",
             		crit
 	            		?performingCritDescText
@@ -727,7 +727,7 @@ public abstract class AbstractCombatMove {
 	    	            sb.append(formatAttackOutcome(source, aoeTarget,
 	    	            		"",
 	    	            		damageValue.getValue()>0
-	    	            			?"[style.colourAqua(AoE)]: [npc2.Name] took " + getFormattedDamage(aoeDamageType, damageValue.getValue(), target, true, maxLust) + " damage!"
+	    	            			?"[style.colourAqua(AoE)]: [npc2.Name] получил " + getFormattedDamage(aoeDamageType, damageValue.getValue(), target, true, maxLust) + " урон!"
 	    	            			:"",
 	    	            		null,
 	    	            		null));
@@ -739,8 +739,7 @@ public abstract class AbstractCombatMove {
 							}
 							Main.combat.addStatusEffectToApply(aoeTarget, entry.getKey(), duration);
 							sb.append(UtilText.parse(aoeTarget,
-									"<br/>[npc.NameIsFull] now affected by <b style='color:"+entry.getKey().getColour().toWebHexString()+";'>"+Util.capitaliseSentence(entry.getKey().getName(aoeTarget))+"</b>"
-											+ " for <b>"+Util.intToString(duration)+(duration==1?" turn":" turns")+"</b>!"));
+									"<br/>[npc.NameIsFull] now affected by <b style='color:"+entry.getKey().getColour().toWebHexString()+";'>"+Util.capitaliseSentence(entry.getKey().getName(aoeTarget))+"</b> для <b>"+Util.intToString(duration)+(duration==1?" ход":" ходов")+"</b>!"));
 						}
 	    	            
 						aoeAvailableTargets.remove(aoeTarget);
@@ -832,24 +831,24 @@ public abstract class AbstractCombatMove {
     public String isUsable(int turnIndex, GameCharacter source, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
         if(target != null) {
             if(!canTargetSelf && source == target) {
-                return "This action can't be used on yourself!";
+                return "Это действие нельзя использовать на себе!";
             }
 
             if(!canTargetAllies && allies.contains(target) && source != target) {
-                return "This action can't be used on your allies!";
+                return "Это действие нельзя использовать на союзниках!";
             }
 
             if(!canTargetEnemies && enemies.contains(target)) {
-                return "This action can't be used on your enemies!";
+                return "Это действие нельзя использовать на врагах!";
             }
         }
 
         if(source.getMoveCooldown(this.getIdentifier()) > 0) {
-            return "This action can't be used since it is still on cooldown! "+String.valueOf(source.getMoveCooldown(this.getIdentifier()))+" turns remaining.";
+            return "Это действие нельзя использовать, так как оно еще на перезарядке! "+String.valueOf(source.getMoveCooldown(this.getIdentifier()))+" осталось ходов.";
         }
 
         if(source.getRemainingAP() < this.getAPcost(source)) {
-            return "This action can't be used since you don't have enough AP!";
+            return "Это действие нельзя использовать, так как у вас недостаточно ОД!";
         }
 
         return null;
@@ -1033,7 +1032,7 @@ public abstract class AbstractCombatMove {
     	if(fromExternalFile) {
         	return Util.newArrayListOfValues(criticalDescription);
     	}
-        return Util.newArrayListOfValues("It's the third time being used this turn.");
+        return Util.newArrayListOfValues("Это уже третье использование за этот ход.");
     }
     
     public boolean canCrit(int turnIndex, GameCharacter source, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {

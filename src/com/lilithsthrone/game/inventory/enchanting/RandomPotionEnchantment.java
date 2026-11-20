@@ -212,7 +212,7 @@ public class RandomPotionEnchantment {
 
 	public String getName(GameCharacter target) {
 		if(name==null || name.isEmpty()) {
-			return "Youko's Mystery Potion";
+			return "Таинственное зелье Йоко";
 		}
 		if(defaultPrepend) {
 			return "Youko's Potion of "+UtilText.parse(target, name);
@@ -279,9 +279,9 @@ public class RandomPotionEnchantment {
 			} else {
 				sb.append("<p>");
 					if(target.isPlayer()) {
-						sb.append("As you swallow down the last of the potion, you hear a ghostly, female voice speaking inside your head, ");
+						sb.append("Когда вы допиваете последние остатки зелья, в вашей голове раздается призрачный женский голос, ");
 					} else {
-						sb.append(UtilText.parse(target, "As [npc.name] swallows down the last of the potion, [npc.she] hears a ghostly, female voice speaking inside [npc.her] head, "));
+						sb.append(UtilText.parse(target, "Когда [npc.name] допивает последние остатки зелья, [npc.she] слышит призрачный женский голос, звучащий прямо в голове у [npc.her], "));
 					}
 					sb.append(UtilText.parse(target, "[style.thoughtFeminineStrong("+this.getApplicationSpeech()+")]"));
 				sb.append("</p>");
@@ -301,12 +301,12 @@ public class RandomPotionEnchantment {
 			} else {
 				sb.append("<p>");
 					if(target.isPlayer()) {
-						sb.append("As the potion's effects come to an end, you hear "+(initialSpeechApplied?"the ethereal feminine voice speaking to you once again,":"a ghostly, female voice speaking inside your head,"));
+						sb.append("Когда действие зелья подходит к концу, вы снова слышите "+(initialSpeechApplied?"эфирный женский голос, обращающийся к вам,":"призрачный женский голос, звучащий в вашей голове,"));
 					} else {
-						sb.append(UtilText.parse(target, "As the potion's effects come to an end, [npc.name] hears "
+						sb.append(UtilText.parse(target, "Когда действие зелья подходит к концу, [npc.name] слышит "
 								+(initialSpeechApplied
-										?"the ethereal feminine voice speaking to [npc.herHim] once again,"
-										:"a ghostly, female voice speaking inside [npc.her] head,")));
+										?"эфирный женский голос, вновь обращающийся к [npc.herHim],"
+										:"призрачный женский голос, звучащий в голове у [npc.her],")));
 					}
 					sb.append(UtilText.parse(target, "[style.thoughtFeminineStrong("+this.getApplicationSpeechEnd()+")]"));
 				sb.append("</p>");

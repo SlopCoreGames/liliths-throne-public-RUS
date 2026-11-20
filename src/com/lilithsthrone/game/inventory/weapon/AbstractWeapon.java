@@ -181,7 +181,7 @@ public abstract class AbstractWeapon extends AbstractCoreItem implements XMLSavi
 		}
 		
 		sb.append(this.getDamageType().toString());
-		sb.append(this.getCoreEnchantment()==null?"ne":this.getCoreEnchantment().toString());
+		sb.append(this.getCoreEnchantment()==null?"нет":this.getCoreEnchantment().toString());
 		
 		for(Spell s : this.getSpells()) {
 			sb.append(s.toString());
@@ -404,38 +404,36 @@ public abstract class AbstractWeapon extends AbstractCoreItem implements XMLSavi
 		}
 		
 		int essenceCost = this.getWeaponType().getArcaneCost();
-		String damageName = "<span style='color:"+ damageType.getMultiplierAttribute().getColour().toWebHexString() + ";'>Damage</span>";
+		String damageName = "<span style='color:"+ damageType.getMultiplierAttribute().getColour().toWebHexString() + ";'>Урон</span>";
 		
 		descriptionSB.append("<p>");
 			descriptionSB.append("<span style='color:" + this.getRarity().getColour().toWebHexString() + ";'>"+Util.capitaliseSentence(this.getRarity().getName())+"</span>"
 								+" | "
 								+(this.getWeaponType().isUsingUnarmedCalculation()
-									?"[style.colourUnarmed(Unarmed)]"
+									?"[style.colourUnarmed(Без оружия)]"
 									:(this.getWeaponType().isMelee()
-										?"[style.colourMelee(Melee)]"
-										:"[style.colourRanged(Ranged)]"))
+										?"[style.colourMelee(Ближний бой)]"
+										:"[style.colourRanged(Дальний бой)]"))
 								+"<br/>");
-			descriptionSB.append((this.getWeaponType().isTwoHanded()?"Two-handed":"One-handed"));
+			descriptionSB.append((this.getWeaponType().isTwoHanded()?"Двуручное":"Одноручное"));
 			if(this.getWeaponType().isOneShot()) {
-				descriptionSB.append(" - [style.colourYellow(One-shot)]");
+				descriptionSB.append(" - [style.colourYellow(Смертельный удар)]");
 			}
 			descriptionSB.append("<br/>");
 			if(essenceCost>0) {
-				descriptionSB.append("Costs [style.colourArcane("+essenceCost+" arcane essence"+(essenceCost==1?"":"s")+")] "+(this.getWeaponType().isMelee()?"per attack":"to fire")+"<br/>");
+				descriptionSB.append("Стоимость [style.colourArcane("+essenceCost+" арканная эссенция"+(essenceCost==1?"":"s")+")] "+(this.getWeaponType().isMelee()?"за атаку":"чтобы выстрелить")+"<br/>");
 			}
 			if(this.getWeaponType().isUsingUnarmedCalculation()) {
-				descriptionSB.append("Includes [style.boldUnarmed("+character.getUnarmedDamage()+" unarmed damage)]<br/>");
+				descriptionSB.append("[style.boldUnarmed(Включая урон"+character.getUnarmedDamage()+" без оружия)]<br/>");
 			}
 			descriptionSB.append(Attack.getMinimumDamage(character, null, Attack.MAIN, this) + "-" + Attack.getMaximumDamage(character, null, Attack.MAIN, this)+" "+ damageName+"<br/>");
 			int targetNumber=2;
 			for(Value<Integer, Integer> aoe : this.getWeaponType().getAoeDamage()) {
 				int aoeChance = aoe.getKey();
 				String position = Util.intToPosition(targetNumber);
-				descriptionSB.append("[style.boldAqua(AoE)]: "
-						+ "<span style='color:"+(aoeChance<=25?PresetColour.GENERIC_BAD:(aoeChance<=50?PresetColour.GENERIC_MINOR_BAD:(aoeChance<=75?PresetColour.GENERIC_MINOR_GOOD:PresetColour.GENERIC_GOOD))).toWebHexString()+";'>"+aoeChance+"%</span>"
-						+ " chance to deal "
+				descriptionSB.append("[style.boldAqua(AoE)]: <span style='color:"+(aoeChance<=25?PresetColour.GENERIC_BAD:(aoeChance<=50?PresetColour.GENERIC_MINOR_BAD:(aoeChance<=75?PresetColour.GENERIC_MINOR_GOOD:PresetColour.GENERIC_GOOD))).toWebHexString()+";'>"+aoeChance+"%</span> шанс нанести "
 						+  Attack.getMinimumDamage(character, null, Attack.MAIN, this, aoe.getValue())+" - "+Attack.getMaximumDamage(character, null, Attack.MAIN, this, aoe.getValue())+ " "
-						+ damageName+" to "+UtilText.generateSingularDeterminer(position)+" "+position+" enemy!<br/>");
+						+ damageName+" к "+UtilText.generateSingularDeterminer(position)+" "+position+" врагу!<br/>");
 				targetNumber++;
 			}
 			if(this.getWeaponType().isOneShot()) {
@@ -444,25 +442,25 @@ public abstract class AbstractWeapon extends AbstractCoreItem implements XMLSavi
 
 				descriptionSB.append("<span style='color:"
 						+(chanceToRecoverTurn<=25?PresetColour.GENERIC_BAD:(chanceToRecoverTurn<=50?PresetColour.GENERIC_MINOR_BAD:(chanceToRecoverTurn<=75?PresetColour.GENERIC_MINOR_GOOD:PresetColour.GENERIC_GOOD))).toWebHexString()
-						+"'>"+chanceToRecoverTurn+"%</span> chance to recover [style.colourBlueLight(after use)]<br/>");
+						+"'>"+chanceToRecoverTurn+"%</span> шанс восстановить [style.colourBlueLight(после использования)]<br/>");
 				
 				descriptionSB.append("<span style='color:"
 						+(chanceToRecoverCombat<=25?PresetColour.GENERIC_BAD:(chanceToRecoverCombat<=50?PresetColour.GENERIC_MINOR_BAD:(chanceToRecoverCombat<=75?PresetColour.GENERIC_MINOR_GOOD:PresetColour.GENERIC_GOOD))).toWebHexString()
-						+";'>"+chanceToRecoverCombat+"%</span> chance to recover [style.colourCombat(after combat)]<br/>");
+						+";'>"+chanceToRecoverCombat+"%</span> шанс восстановить [style.colourCombat(после боя)]<br/>");
 			}
 		descriptionSB.append("</p>");
 
 		descriptionSB.append("<p>");
 			descriptionSB.append(getTypeDescription(character));
 			descriptionSB.append("<br/>");
-			descriptionSB.append((getWeaponType().isPlural()?"They have":"It has")+" a value of: "+UtilText.formatAsMoney(getValue()));
+			descriptionSB.append((getWeaponType().isPlural()?"У них есть":"У него есть")+" значение: "+UtilText.formatAsMoney(getValue()));
 			if(Main.game.isEnchantmentCapacityEnabled()) {
 				descriptionSB.append("<br/>");
-				descriptionSB.append((getWeaponType().isPlural()?"They have":"It has")+" "+UtilText.addDeterminer(Attribute.ENCHANTMENT_LIMIT.getName())+" of: ");
+				descriptionSB.append((getWeaponType().isPlural()?"У них есть":"У него есть")+" "+UtilText.addDeterminer(Attribute.ENCHANTMENT_LIMIT.getName())+" значение: ");
 				if(this.getEnchantmentCapacityCost()==0) {
-					descriptionSB.append("[style.colourDisabled("+UtilText.formatAsEnchantmentCapacityUncoloured(this.getEnchantmentCapacityCost(), "span")+")]");
+					descriptionSB.append("[style.colourDisabled("+UtilText.formatAsEnchantmentCapacityUncoloured(this.getEnchantmentCapacityCost(), "охват")+")]");
 				} else {
-					descriptionSB.append(UtilText.formatAsEnchantmentCapacity(this.getEnchantmentCapacityCost(), "span"));
+					descriptionSB.append(UtilText.formatAsEnchantmentCapacity(this.getEnchantmentCapacityCost(), "охват"));
 				}
 			}
 		descriptionSB.append("</p>");
@@ -472,8 +470,8 @@ public abstract class AbstractWeapon extends AbstractCoreItem implements XMLSavi
 		if(getWeaponType().getPhysicalResistance()>0) {
 			descriptionSB.append("<p>"
 							+ (getWeaponType().isPlural()
-									? "They are armoured, and provide "
-									: "It is armoured, and provides ")
+									? "Они защищают и дают "
+									: "Это броня, которая дает ")
 								+ " " + getWeaponType().getPhysicalResistance() + " [style.colourResPhysical(" + Attribute.RESISTANCE_PHYSICAL.getName() + ")]."
 							+ "</p>");
 		}
@@ -499,12 +497,12 @@ public abstract class AbstractWeapon extends AbstractCoreItem implements XMLSavi
 		}
 
 		if (!spells.isEmpty()) {
-			descriptionSB.append("<p>"+(getWeaponType().isPlural()?"Their":"Its")+" arcane power grants you the ability to cast ");
+			descriptionSB.append("<p>"+(getWeaponType().isPlural()?"Их":"Его")+" аркана дает вам возможность творить ");
 			int i = 0;
 			for (Spell s : spells) {
 				if (i != 0) {
 					if (i + 1 == spells.size())
-						descriptionSB.append(" and ");
+						descriptionSB.append(" и ");
 					else
 						descriptionSB.append(", ");
 				}
@@ -517,7 +515,7 @@ public abstract class AbstractWeapon extends AbstractCoreItem implements XMLSavi
 
 
 		if(!combatMoves.isEmpty()) {
-			descriptionSB.append("<p>When equipped, "+(getWeaponType().isPlural()?"they unlock":"it unlocks")+" the move"+(combatMoves.size()==1?"":"s")+": ");
+			descriptionSB.append("<p>Когда экипировано, "+(getWeaponType().isPlural()?"они открывают":"оно открывает")+" прием"+(combatMoves.size()==1?"":"s")+": ");
 			List<String> combatMoveNames = new ArrayList<>();
 			descriptionSB.append("[style.italicsCombat(");
 			for(AbstractCombatMove cm : combatMoves) {
@@ -528,8 +526,8 @@ public abstract class AbstractWeapon extends AbstractCoreItem implements XMLSavi
 		}
 
 		if (getWeaponType().getClothingSet() != null) {
-			descriptionSB.append("<p>" + (getWeaponType().isPlural() ? "They are" : "It is") + " part of the <span style='color:" + PresetColour.RARITY_EPIC.toWebHexString() + ";'>"
-					+ getWeaponType().getClothingSet().getName() + "</span> set." + "</p>");
+			descriptionSB.append("<p>" + (getWeaponType().isPlural() ? "Это" : "Оно") + " часть <span style='color:" + PresetColour.RARITY_EPIC.toWebHexString() + ";'>"
+					+ getWeaponType().getClothingSet().getName() + "</span> сета.</p>");
 		}
 
 		return UtilText.parse(this, descriptionSB.toString());
@@ -772,7 +770,7 @@ public abstract class AbstractWeapon extends AbstractCoreItem implements XMLSavi
 		Set<ItemTag> tags = this.getItemTags();
 		
 		if(this.getWeaponType().getItemTags().contains(ItemTag.UNIQUE_NO_NPC_EQUIP) && !clothingOwner.isPlayer()) {
-			return new Value<>(false, UtilText.parse("[style.colourBad(Only you can equip this weapon!)]"));
+			return new Value<>(false, UtilText.parse("[style.colourBad(Только вы можете экипировать это оружие!)]"));
 		}
 		
 		if(block!=null && Collections.disjoint(block.getRequiredTags(), tags)) {

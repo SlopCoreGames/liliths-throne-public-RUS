@@ -222,12 +222,11 @@ public abstract class AbstractItem extends AbstractCoreItem implements XMLSaving
 						}
 					}
 					sb.append(UtilText.parse(target,
-							"<p style='text-align:center; padding-top:0; margin-top:0;'>"
-							+ "[npc.NameIsFull] now "
-							+(se.getBeneficialStatus()==EffectBenefit.DETRIMENTAL?"suffering from [style.italicsBad(":(se.getBeneficialStatus()==EffectBenefit.BENEFICIAL?"benefitting from [style.italicsGood(":"affected by "))
+							"<p style='text-align:center; padding-top:0; margin-top:0;'>[npc.NameIsFull] сейчас "
+							+(se.getBeneficialStatus()==EffectBenefit.DETRIMENTAL?"страдает от [style.italicsBad(":(se.getBeneficialStatus()==EffectBenefit.BENEFICIAL?"получает выгоду от [style.italicsGood(":"подвержен "))
 							+se.getName(target)
 							+(se.getBeneficialStatus()==EffectBenefit.NEUTRAL?"":")]")
-							+ " for "+timeDesc+"!"
+							+ " на "+timeDesc+"!"
 							+ "</p>"));
 				}
 			}
@@ -271,9 +270,7 @@ public abstract class AbstractItem extends AbstractCoreItem implements XMLSaving
 			}
 			if(intoxicationLevel>0 && target.getRace()==Race.getRaceFromId("charisma_spider")) {
 				sb.append(UtilText.parse(target,
-						"<p style='text-align:center;'>"
-							+ "Due to [npc.her] spider physiology, the caffeine in the "+this.getName()+" acts in a similar manner to alcohol, and as a result [npc.she] [npc.verb(feel)] [npc.herself] getting [style.boldAlcohol(drunk)]..."
-						+ "</p>"));
+						"<p style='text-align:center;'>Из-за особенностей физиологии [npc.her] пауков, кофеин в "+this.getName()+" действует схожим с алкоголем образом, и в результате [npc.she] [npc.verb(feel)] [npc.herself] становится [style.boldAlcohol(пьяным)]...</p>"));
 				sb.append(target.incrementAlcoholLevel(intoxicationLevel/100f));
 				break;
 			}
@@ -284,7 +281,7 @@ public abstract class AbstractItem extends AbstractCoreItem implements XMLSaving
 				&& !Main.game.isInCombat()) { // Items which break out of inventory should be unavailable in combat, but just in case add a check here
 			if(Main.game.isInSex()) {
 				Main.game.setContent(new Response(
-						Util.capitaliseSentence(this.getItemType().getUseName()) +(user.equals(target)?" (Self)":" ("+targetNameBeforeEffects+")"),
+						Util.capitaliseSentence(this.getItemType().getUseName()) +(user.equals(target)?" (Себя)":" ("+targetNameBeforeEffects+")"),
 						"",
 						Main.sex.SEX_DIALOGUE) {
 					@Override
@@ -322,7 +319,7 @@ public abstract class AbstractItem extends AbstractCoreItem implements XMLSaving
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 					@Override
 					public String getTitle() {
-						return Util.capitaliseSentence(AbstractItem.this.getName()+": "+Util.capitaliseSentence(AbstractItem.this.getItemType().getUseName())) +(user.equals(target)?" (Self)":" ("+targetNameBeforeEffects+")");
+						return Util.capitaliseSentence(AbstractItem.this.getName()+": "+Util.capitaliseSentence(AbstractItem.this.getItemType().getUseName())) +(user.equals(target)?" (Себя)":" ("+targetNameBeforeEffects+")");
 					}
 					@Override
 					public boolean isStripContent() {
@@ -448,8 +445,7 @@ public abstract class AbstractItem extends AbstractCoreItem implements XMLSaving
 	public String getExtraDescription(GameCharacter user, GameCharacter target) {
 		StringBuilder sb = new StringBuilder();
 		
-		sb.append("<p>"
-					+ "<b>Effects:</b>");
+		sb.append("<p><b>Эффекты:</b>");
 		
 		for(ItemEffect ie : getEffects()) {
 			for(String s : ie.getEffectsDescription(user, target)) {
@@ -467,7 +463,7 @@ public abstract class AbstractItem extends AbstractCoreItem implements XMLSaving
 
 		sb.append("</p>"
 				+ "<p>"
-					+ (this.getItemType().isPlural()?"They have":"It has")+" a value of " + UtilText.formatAsMoney(getValue()) + "."
+					+ (this.getItemType().isPlural()?"У них есть":"У него есть")+" значение " + UtilText.formatAsMoney(getValue()) + "."
 				+ "</p>");
 		
 		return sb.toString();

@@ -10,54 +10,54 @@ package com.lilithsthrone.game.inventory.clothing;
 public enum ClothingAccess {
 
 	/** Placing something onto your eyes, like glasses. */
-	EYES("place onto eyes"),
+	EYES("надеть на глаза"),
 
 	/** Placing something into your mouth, like a ball-gag. */
-	MOUTH("place onto mouth"),
+	MOUTH("надеть на рот"),
 
 	/** Pulling something down over your head, like a t-shirt. */
-	HEAD("pull down over head"),
+	HEAD("натянуть через голову"),
 
 	/**
 	 * Sliding something up your arms to rest on your shoulders, like the loops in a bra.
 	 */
-	ARMS_UP_TO_SHOULDER("slide over arms"),
+	ARMS_UP_TO_SHOULDER("продеть в рукава"),
 
 	/** Sliding something up your wrists, like elbow-length gloves. */
-	WRISTS("slide up wrists"),
+	WRISTS("натянуть на запястья"),
 
 	/** Sliding something down your fingers, like a ring. */
-	FINGERS("slide down fingers"),
+	FINGERS("натянуть на пальцы"),
 
 	/** Sliding something over your chest, like the cups of a bra. */
-	CHEST("slide over chest"),
+	CHEST("надеть на грудь"),
 
 	/** Sliding something over your waist, like a corset or swimsuit. */
-	WAIST("slide over waist"),
+	WAIST("надеть на талию"),
 
 	/** Pulling something up your legs, like a pair of panties. */
-	LEGS_UP_TO_GROIN_LOW_LEVEL("pull up between legs"),
+	LEGS_UP_TO_GROIN_LOW_LEVEL("натянуть между ног"),
 
 	/** Sliding something up your legs, like the holes in a pair of trousers. */
-	LEGS_UP_TO_GROIN("slide up legs"),
+	LEGS_UP_TO_GROIN("натянуть на ноги"),
 
 	/** Sliding something over your groin, like a pair of panties.*/
-	GROIN("slide over groin"),
+	GROIN("натянуть на пах"),
 
 	/** Sliding something onto your penis, like a condom. */
-	PENIS("slide onto penis"), // This gets automatically added to 'clothingAccessBlocked' values if clothing has 'PENIS' in 'blockedBodyParts'.
+	PENIS("натянуть на член"), // This gets automatically added to 'clothingAccessBlocked' values if clothing has 'PENIS' in 'blockedBodyParts'.
 
 	/** Inserting something into your vagina, like a dildo. */
-	VAGINA("insert into vagina"), // This gets automatically added to 'clothingAccessBlocked' values if clothing has 'VAGINA' in 'blockedBodyParts'.
+	VAGINA("вставить во влагалище"), // This gets automatically added to 'clothingAccessBlocked' values if clothing has 'VAGINA' in 'blockedBodyParts'.
 
 	/** Inserting something into your anus, like a butt-plug. */
-	ANUS("insert into anus"),
+	ANUS("вставить в анус"),
 
 	/** Sliding something over your calves, like a pair of knee-high socks. */
-	CALVES("slide over calves"),
+	CALVES("натянуть на икры"),
 
 	/** Sliding something over your feet, like a pair of socks. */
-	FEET("slide over feet");
+	FEET("натянуть на стопы");
 
 	String descriptor;
 

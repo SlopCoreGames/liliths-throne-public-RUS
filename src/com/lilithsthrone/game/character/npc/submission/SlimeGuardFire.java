@@ -79,8 +79,8 @@ public class SlimeGuardFire extends NPC {
 	}
 	
 	public SlimeGuardFire(boolean isImported) {
-		super(isImported, new NameTriplet("Blaze"), "Triggs",
-				"[npc.Name] is one of the Slime Queen's guards, tasked to challenge anyone who dares to enter [npc.her] Queen's territory.",
+		super(isImported, new NameTriplet("Блейз"), "Триггс",
+				"[npc.Name] — один из стражей Королевы Слаймов, задача которого — бросать вызов любому, кто осмелится войти на территорию Королевы [npc.her].",
 				22, Month.JANUARY, 13,
 				15, Gender.M_P_MALE, Subspecies.SLIME, RaceStage.HUMAN,
 				new CharacterInventory(false, 10), WorldType.SLIME_QUEENS_LAIR_GROUND_FLOOR, PlaceType.SLIME_QUEENS_LAIR_ENTRANCE_GUARDS, true);
@@ -341,14 +341,14 @@ public class SlimeGuardFire extends NPC {
 	@Override
 	public Response endCombat(boolean applyEffects, boolean victory) {
 		if (victory) {
-			return new Response("Victorious", "[slimeFire.Name] and [slimeIce.name] are defeated!", SlimeQueensLair.SLIME_GUARDS_COMBAT_PLAYER_VICTORY) {
+			return new Response("Победа", "[slimeFire.Name] и [slimeIce.name] повержены!", SlimeQueensLair.SLIME_GUARDS_COMBAT_PLAYER_VICTORY) {
 				@Override
 				public void effects() {
 					Main.game.getDialogueFlags().setFlag(DialogueFlagValue.slimeGuardsDefeated, true);
 				}
 			};
 		} else {
-			return new Response ("Defeated", "[slimeFire.Name] and [slimeIce.name] have defeated you!", SlimeQueensLair.SLIME_GUARDS_COMBAT_PLAYER_DEFEAT);
+			return new Response ("Повержена", "[slimeFire.Name] и [slimeIce.name] одолели тебя!", SlimeQueensLair.SLIME_GUARDS_COMBAT_PLAYER_DEFEAT);
 		}
 	}
 }

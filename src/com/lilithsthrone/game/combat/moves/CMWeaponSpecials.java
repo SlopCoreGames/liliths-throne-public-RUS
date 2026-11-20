@@ -21,7 +21,7 @@ import com.lilithsthrone.utils.colours.PresetColour;
 public class CMWeaponSpecials {
 	
 	public static AbstractCombatMove MKAR_MAG_DUMP = new AbstractCombatMove(CombatMoveCategory.SPECIAL,
-            "mag dump",
+            "очередь",
             2,
             2,
             CombatMoveType.ATTACK,
@@ -37,21 +37,19 @@ public class CMWeaponSpecials {
 		}
         @Override
         public Value<Boolean, String> isAvailableFromSpecialCase(GameCharacter source) {
-            return new Value<>(source.hasWeaponEquipped(WeaponType.getWeaponTypeFromId("innoxia_gun_mkar")), "Available to characters who have an equipped MKAR.");
+            return new Value<>(source.hasWeaponEquipped(WeaponType.getWeaponTypeFromId("innoxia_gun_mkar")), "Доступно персонажам, у которых экипирован MKAR.");
         }
         @Override
         public String getPrediction(int turnIndex, GameCharacter source, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
             DamageType damageType = getDamageType(turnIndex, source);
             return UtilText.parse(source, target,
-            		"Empty an entire 30-round magazine in full-auto, dealing "+getFormattedDamage(damageType, getBulletDamage(), target, false, isTargetAtMaximumLust(target))+" damage for each bullet that hits."
-            				+ "<br/>[style.italicsGood(Targets every enemy!)]");
+            		"Выпустить весь 30-зарядный магазин в режиме автоматического огня, нанося "+getFormattedDamage(damageType, getBulletDamage(), target, false, isTargetAtMaximumLust(target))+" урона за каждую попавшую пулю.<br/>[style.italicsGood(Бьет по всем врагам!)]");
         }
         @Override
         public String getDescription(int turnIndex, GameCharacter source) {
             DamageType damageType = getDamageType(turnIndex, source);
             return UtilText.parse(source, 
-            		"[npc.Name] can switch to full-auto and empty an entire 30-round magazine at [npc.her] enemies, dealing "+getFormattedDamage(damageType, getBulletDamage(), null, false, false)+" damage for each bullet that hits."
-            				+ "<br/>[style.italicsGood(Targets every enemy!)]");
+            		"[npc.Name] может переключиться на автоматический режим и выпустить весь 30-зарядный магазин по [npc.her] врагам, нанося "+getFormattedDamage(damageType, getBulletDamage(), null, false, false)+" урона за каждую попавшую пулю.<br/>[style.italicsGood(Бьет по всем врагам!)]");
         }
         @Override
         public String perform(int turnIndex, GameCharacter source, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
@@ -83,19 +81,19 @@ public class CMWeaponSpecials {
     		}
             
         	attackDesc.append(UtilText.parse(source,
-        			"Pushing the fire selector on [npc.her] "+weaponName+" up into fully automatic, [npc.name] [npc.verb(take)] aim and [npc.verb(pull)] the trigger, unleashing a deafening, deadly hail of bullets at "
-        				+(enemies.size()==1?UtilText.parse(target, "[npc.name]"):"[npc.her] enemies")+"!"));
+        			"Переключив селектор огня на [npc.her] "+weaponName+" в режим автоматического огня, [npc.name] [npc.verb(take)] и [npc.verb(pull)] спусковой крючок, он обрушивает оглушительный, смертоносный град пуль на "
+        				+(enemies.size()==1?UtilText.parse(target, "[npc.name]"):"[npc.her] врагов")+"!"));
             for(int i=0; i<enemies.size(); i++) {
             	GameCharacter enemy = enemies.get(i);
             	int finalBullets = Math.max(1, bulletsPerEnemy-Util.random.nextInt(3));
             	boolean maxLust = isTargetAtMaximumLust(target);
                 Value<String, Integer> damageValue = damageType.damageTarget(source, enemy, getBulletDamage()*finalBullets);
             	attackDesc.append(UtilText.parse(enemy,
-            			"<br/>[npc.NameIsFull] hit by [style.boldTerrible("+finalBullets+")] bullet"+(finalBullets==1?"":"s")+"!"+damageValue.getKey()));
+            			"<br/>[npc.NameIsFull], пораженных [style.boldTerrible(\""+finalBullets+")] пуль"+(finalBullets==1?"":"s")+"!"+damageValue.getKey()));
             	if(i>0) {
             		attackEffects.append("<br/>");
             	}
-            	attackEffects.append(UtilText.parse(enemy, "[npc.Name] took "+getFormattedDamage(damageType, damageValue.getValue(), enemy, true, maxLust)+" damage!"));
+            	attackEffects.append(UtilText.parse(enemy, "[npc.Name] получил "+getFormattedDamage(damageType, damageValue.getValue(), enemy, true, maxLust)+" урон!"));
             }
             
             return formatAttackOutcome(source, target,
@@ -108,7 +106,7 @@ public class CMWeaponSpecials {
     
 
 	public static AbstractCombatMove BR14_MAG_DUMP = new AbstractCombatMove(CombatMoveCategory.SPECIAL,
-            "mag dump",
+            "очередь",
             2,
             2,
             CombatMoveType.ATTACK,
@@ -124,21 +122,19 @@ public class CMWeaponSpecials {
 		}
         @Override
         public Value<Boolean, String> isAvailableFromSpecialCase(GameCharacter source) {
-            return new Value<>(source.hasWeaponEquipped(WeaponType.getWeaponTypeFromId("innoxia_gun_br14")), "Available to characters who have an equipped BR14.");
+            return new Value<>(source.hasWeaponEquipped(WeaponType.getWeaponTypeFromId("innoxia_gun_br14")), "Доступно персонажам с экипированным BR14.");
         }
         @Override
         public String getPrediction(int turnIndex, GameCharacter source, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
             DamageType damageType = getDamageType(turnIndex, source);
             return UtilText.parse(source, target,
-            		"Empty an entire 20-round magazine in full-auto, dealing "+getFormattedDamage(damageType, getBulletDamage(), target, false, isTargetAtMaximumLust(target))+" damage for each bullet that hits."
-            				+ "<br/>[style.italicsGood(Targets every enemy!)]");
+            		"Опустошает весь 20-зарядный магазин в режиме автоматического огня, нанося "+getFormattedDamage(damageType, getBulletDamage(), target, false, isTargetAtMaximumLust(target))+" урона за каждую попавшую пулю.<br/>[style.italicsGood(Бьет по всем врагам!)]");
         }
         @Override
         public String getDescription(int turnIndex, GameCharacter source) {
             DamageType damageType = getDamageType(turnIndex, source);
             return UtilText.parse(source, 
-            		"[npc.Name] can switch to full-auto and empty an entire 20-round magazine at [npc.her] enemies, dealing "+getFormattedDamage(damageType, getBulletDamage(), null, false, false)+" damage for each bullet that hits."
-            				+ "<br/>[style.italicsGood(Targets every enemy!)]");
+            		"[npc.Name] может переключиться на автоматический режим и опустошить весь 20-зарядный магазин по [npc.her] врагам, нанося "+getFormattedDamage(damageType, getBulletDamage(), null, false, false)+" урона за каждую попавшую пулю.<br/>[style.italicsGood(Бьет по всем врагам!)]");
         }
         @Override
         public String perform(int turnIndex, GameCharacter source, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
@@ -170,19 +166,19 @@ public class CMWeaponSpecials {
     		}
     		
         	attackDesc.append(UtilText.parse(source,
-        			"Flicking the fire selector on [npc.her] "+weaponName+" into fully automatic, [npc.name] [npc.verb(take)] aim and [npc.verb(pull)] the trigger, unleashing a deafening, deadly hail of bullets at "
-        				+(enemies.size()==1?UtilText.parse(target, "[npc.name]"):"[npc.her] enemies")+"!"));
+        			"Переключая селектор огня на [npc.her] "+weaponName+" в полностью автоматический режим, [npc.name] [npc.verb(take)] прицеливается и [npc.verb(pull)] спусковой крючок, обрушивая оглушительный, смертоносный град пуль по "
+        				+(enemies.size()==1?UtilText.parse(target, "[npc.name]"):"[npc.her] врагов")+"!"));
             for(int i=0; i<enemies.size(); i++) {
             	GameCharacter enemy = enemies.get(i);
             	int finalBullets = Math.max(1, bulletsPerEnemy-Util.random.nextInt(3));
             	boolean maxLust = isTargetAtMaximumLust(target);
                 Value<String, Integer> damageValue = damageType.damageTarget(source, enemy, getBulletDamage()*finalBullets);
             	attackDesc.append(UtilText.parse(enemy,
-            			"<br/>[npc.NameIsFull] hit by [style.boldTerrible("+finalBullets+")] bullet"+(finalBullets==1?"":"s")+"!"+damageValue.getKey()));
+            			"<br/>[npc.NameIsFull], пораженных [style.boldTerrible(\""+finalBullets+")] пуль"+(finalBullets==1?"":"s")+"!"+damageValue.getKey()));
             	if(i>0) {
             		attackEffects.append("<br/>");
             	}
-            	attackEffects.append(UtilText.parse(enemy, "[npc.Name] took "+getFormattedDamage(damageType, damageValue.getValue(), enemy, true, maxLust)+" damage!"));
+            	attackEffects.append(UtilText.parse(enemy, "[npc.Name] получил "+getFormattedDamage(damageType, damageValue.getValue(), enemy, true, maxLust)+" урон!"));
             }
             
             return formatAttackOutcome(source, target,
@@ -194,7 +190,7 @@ public class CMWeaponSpecials {
     };
     
     public static AbstractCombatMove FAUXMAS_MAG_DUMP = new AbstractCombatMove(CombatMoveCategory.SPECIAL,
-            "mag dump",
+            "очередь",
             2,
             2,
             CombatMoveType.ATTACK,
@@ -210,21 +206,19 @@ public class CMWeaponSpecials {
 		}
         @Override
         public Value<Boolean, String> isAvailableFromSpecialCase(GameCharacter source) {
-            return new Value<>(source.hasWeaponEquipped(WeaponType.getWeaponTypeFromId("innoxia_gun_famase")), "Available to characters who have an equipped FAUXMAS.");
+            return new Value<>(source.hasWeaponEquipped(WeaponType.getWeaponTypeFromId("innoxia_gun_famase")), "Доступно персонажам с экипированным FAUXMAS.");
         }
         @Override
         public String getPrediction(int turnIndex, GameCharacter source, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
             DamageType damageType = getDamageType(turnIndex, source);
             return UtilText.parse(source, target,
-            		"Empty an entire 25-round magazine in full-auto, dealing "+getFormattedDamage(damageType, getBulletDamage(), target, false, isTargetAtMaximumLust(target))+" damage for each bullet that hits."
-            				+ "<br/>[style.italicsGood(Targets every enemy!)]");
+            		"Опустошает весь 25-зарядный магазин в режиме автоматического огня, нанося "+getFormattedDamage(damageType, getBulletDamage(), target, false, isTargetAtMaximumLust(target))+" урона за каждую попавшую пулю.<br/>[style.italicsGood(Бьет по всем врагам!)]");
         }
         @Override
         public String getDescription(int turnIndex, GameCharacter source) {
             DamageType damageType = getDamageType(turnIndex, source);
             return UtilText.parse(source, 
-            		"[npc.Name] can switch to full-auto and empty an entire 25-round magazine at [npc.her] enemies, dealing "+getFormattedDamage(damageType, getBulletDamage(), null, false, false)+" damage for each bullet that hits."
-            				+ "<br/>[style.italicsGood(Targets every enemy!)]");
+            		"[npc.Name] может переключиться на автоматический режим и опустошить весь 25-зарядный магазин по [npc.her] врагам, нанося "+getFormattedDamage(damageType, getBulletDamage(), null, false, false)+" урона за каждую попавшую пулю.<br/>[style.italicsGood(Бьет по всем врагам!)]");
         }
         @Override
         public String perform(int turnIndex, GameCharacter source, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
@@ -256,19 +250,19 @@ public class CMWeaponSpecials {
     		}
             
         	attackDesc.append(UtilText.parse(source,
-        			"Pushing the fire selector on [npc.her] "+weaponName+" into fully automatic, [npc.name] [npc.verb(take)] aim and [npc.verb(pull)] the trigger, unleashing a deafening, deadly hail of bullets at "
-        				+(enemies.size()==1?UtilText.parse(target, "[npc.name]"):"[npc.her] enemies")+"!"));
+        			"Переключив селектор огня на [npc.her] "+weaponName+" в полностью автоматический режим, [npc.name] [npc.verb(take)] прицеливается и [npc.verb(pull)] спусковой крючок, обрушивая оглушительный, смертоносный град пуль по "
+        				+(enemies.size()==1?UtilText.parse(target, "[npc.name]"):"[npc.her] врагов")+"!"));
             for(int i=0; i<enemies.size(); i++) {
             	GameCharacter enemy = enemies.get(i);
             	int finalBullets = Math.max(1, bulletsPerEnemy-Util.random.nextInt(3));
             	boolean maxLust = isTargetAtMaximumLust(target);
                 Value<String, Integer> damageValue = damageType.damageTarget(source, enemy, getBulletDamage()*finalBullets);
             	attackDesc.append(UtilText.parse(enemy,
-            			"<br/>[npc.NameIsFull] hit by [style.boldTerrible("+finalBullets+")] bullet"+(finalBullets==1?"":"s")+"!"+damageValue.getKey()));
+            			"<br/>[npc.NameIsFull], пораженных [style.boldTerrible(\""+finalBullets+")] пуль"+(finalBullets==1?"":"s")+"!"+damageValue.getKey()));
             	if(i>0) {
             		attackEffects.append("<br/>");
             	}
-            	attackEffects.append(UtilText.parse(enemy, "[npc.Name] took "+getFormattedDamage(damageType, damageValue.getValue(), enemy, true, maxLust)+" damage!"));
+            	attackEffects.append(UtilText.parse(enemy, "[npc.Name] получил "+getFormattedDamage(damageType, damageValue.getValue(), enemy, true, maxLust)+" урон!"));
             }
             
             return formatAttackOutcome(source, target,
@@ -280,7 +274,7 @@ public class CMWeaponSpecials {
     };
 
     public static AbstractCombatMove INKY_SUMMON = new AbstractCombatMove(CombatMoveCategory.SPECIAL,
-            "summon Inky",
+            "призвать Инки",
             100,
             1,
             CombatMoveType.ATTACK,
@@ -293,33 +287,24 @@ public class CMWeaponSpecials {
 			Util.newHashMapOfValues(new Value<AbstractStatusEffect, Integer>(StatusEffect.INKY_ATTACK, 6))) {
         @Override
         public Value<Boolean, String> isAvailableFromSpecialCase(GameCharacter source) {
-            return new Value<>(source.hasWeaponEquipped(WeaponType.getWeaponTypeFromId("innoxia_pen_inky")), "Available to characters who have Inky's pen.");
+            return new Value<>(source.hasWeaponEquipped(WeaponType.getWeaponTypeFromId("innoxia_pen_inky")), "Доступно персонажам, у которых есть перо Инки.");
         }
         @Override
         public String getPrediction(int turnIndex, GameCharacter source, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
             return UtilText.parse(source, target,
-            		"Unleash Inky on [npc2.name]. The little arcane entity will happily inflict "+getFormattedDamage(DamageType.LUST, 15, null, false, false)+" damage every turn and reduce [npc2.her] actions points by 1!");
+            		"Выпустить Инки на [npc2.name]. Маленькая аркана-сущность будет с радостью наносить "+getFormattedDamage(DamageType.LUST, 15, null, false, false)+" урон каждый ход и уменьшать очки действия [npc2.her] на 1!");
         }
         @Override
         public String getDescription(int turnIndex, GameCharacter source) {
             return UtilText.parse(source,
-            		"Unleash Inky on your target. The little arcane entity will happily inflict "+getFormattedDamage(DamageType.LUST, 15, null, false, false)+" damage every turn and reduce their actions points by 1!");
+            		"Выпустить Инки на вашу цель. Маленькая аркана-сущность будет с радостью наносить "+getFormattedDamage(DamageType.LUST, 15, null, false, false)+" урон каждый ход и уменьшать их очки действия на 1!");
         }
         @Override
         public String perform(int turnIndex, GameCharacter source, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
             
             return formatAttackOutcome(source, target,
-            		"Twisting the cap of [npc.her] pen three times, [npc.name] [npc.verb(pull)] it off to reveal something very special."
-            				+ " Dripping off the exposed nib, a blob of purple liquid rapidly swells and forms into a small, octopus-like creature."
-            				+ " This arcane being, known only as Inky, levitates up into the air, and with hearts in is eyes, it looks at [npc2.name] and makes a happy little moaning noise."
-            				+ "<br/><br/>"
-            				+ "Flying directly towards [npc2.name], Inky wraps its tentacles around [npc2.herHim], and with more joyous little squishing noises, it starts lewdly humping and groping [npc2.herHim]."
-            				+ " It very quickly becomes apparent that any attempt of [npc2.namePos] to pull this arcane creature off of [npc2.herHim] are doomed to failure."
-            				+ " Each time [npc2.she] [npc2.verb(try)] to grab the small octopus, [npc2.her] [npc.hands] simply slip through its liquid body, which elicits cute, gurgling laughter from the horny creature."
-            				+ "<br/><br/>"
-            				+ "Although Inky's tentacles are both extremely distracting and arousing, there's nothing [npc2.name] can do to stop it,"
-            					+ " and so [npc2.she] [npc2.verb(try)] to ignore it as [npc2.she] [npc.verb(wait)] for its arcane power to run out...",
-            		"Inky is now giving [npc2.name] its intimate attention!",
+            		"Трижды провернув колпачок [npc.her], [npc.name] [npc.verb(pull)] его, открывая нечто поистине особенное. С обнаженного пера капает сгусток фиолетовой жидкости, который стремительно разбухает и принимает форму маленького существа, похожего на осьминога. Это арканное создание, известное лишь как Инки, левитирует в воздух и, глядя на [npc2.name] глазами, полными обожания, издает радостный тихий стон.<br/><br/>Летит прямиком к [npc2.name], обвивает щупальцами [npc2.herHim] и под радостное хлюпанье начинает похотливо трахать и ласкать [npc2.herHim]. Очень быстро становится ясно, что любая попытка [npc2.namePos] оторвать это арканное создание от [npc2.herHim] обречена на провал. Каждый раз, когда [npc2.she] [npc2.verb(try)] схватить маленького осьминога, [npc2.her] [npc.hands] просто соскальзывают сквозь его жидкое тело, что вызывает милый булькающий смех у похотливого существа.<br/><br/>Хотя щупальца Инки одновременно и отвлекают, и возбуждают, [npc2.name] ничего не может с этим поделать, и поэтому [npc2.she] [npc2.verb(try)] игнорировать это, пока [npc2.she] [npc.verb(wait)] ждать, когда его арканная сила иссякнет...",
+            		"Инки теперь уделяет [npc2.name] всё своё интимное внимание!",
             		null,
                 	null);
         }

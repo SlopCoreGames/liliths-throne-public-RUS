@@ -199,10 +199,10 @@ public class RatGangMember extends NPC {
 	public String getDescription() {
 		if(this.isSlave()) {
 			return (UtilText.parse(this,
-					"Having run afoul of the law while being a member of Vengar's gang, [npc.name] has ended up being enslaved, and is now no more than [npc.her] owner's property."));
+					"Находясь в банде Венгара, [npc.name] навлекла на себя гнев закона и в итоге оказалась в рабстве, став не более чем собственностью [npc.her]."));
 		} else {
 			return (UtilText.parse(this,
-					"[npc.Name] is a member of Vengar's gang, and has undoubtedly committed a large number of crimes against the residents of Submission."));
+					"[npc.Name] состоит в банде Венгара и, без сомнения, совершила немало преступлений против жителей Submission."));
 		}
 	}
 	

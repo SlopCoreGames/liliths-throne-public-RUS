@@ -82,7 +82,7 @@ public class Shadow extends NPC {
 	}
 	
 	public Shadow(boolean isImported) {
-		super(isImported, new NameTriplet("Shadow"), "Werlock",
+		super(isImported, new NameTriplet("Тень"), "Верлок",
 				"",
 				23, Month.DECEMBER, 29,
 				15, Gender.F_V_B_FEMALE, Subspecies.RAT_MORPH, RaceStage.GREATER,
@@ -291,7 +291,7 @@ public class Shadow extends NPC {
 		ring.addEffect(new ItemEffect(ItemEffectType.CLOTHING, TFModifier.CLOTHING_ATTRIBUTE, TFModifier.CRITICAL_DAMAGE, TFPotency.MAJOR_BOOST, 0));
 		ring.addEffect(new ItemEffect(ItemEffectType.CLOTHING, TFModifier.CLOTHING_ATTRIBUTE, TFModifier.CRITICAL_DAMAGE, TFPotency.BOOST, 0));
 		
-		ring.setName("Shadow's Kiss");
+		ring.setName("Поцелуй Тени");
 		
 		this.equipClothingFromNowhere(ring, true, this);
 		
@@ -308,22 +308,14 @@ public class Shadow extends NPC {
 	public String getDescription() {
 		StringBuilder sb = new StringBuilder();
 		
-		sb.append("As her adopted name, 'Shadow', suggests, this sneaky rat-girl is an unrivalled expert at sneaking around and remaining unseen when moving by cover of darkness."
-				+ " Her considerable stealth skills are greatly enhanced by the fact that she has pitch-black fur and ebony skin, making her nigh impossible to spot when in a poorly-illuminated area.");
+		sb.append("Как и подсказывает её приемное имя «Тень», эта пронырливая девчонка-крыса — непревзойденный эксперт в скрытном перемещении и умении оставаться незамеченной под покровом темноты. Её выдающиеся навыки скрытности значительно усиливаются тем, что у неё угольно-черный мех и иссиня-черная кожа, из-за чего её почти невозможно заметить в плохо освещенных местах.");
 
-		sb.append("<br/>"
-				+ "While her lust is not quite as insatiable as her companion, Silence, Shadow does often find herself feeling extremely horny,"
-					+ " and thinks nothing of using her finely-honed stealth abilities to ambush innocent people and force herself upon them at blade-point."
-				+ " From this indiscriminate targeting of those around her, combined with rumours of her previous employers being stabbed in the back, Shadow has a reputation for being underhanded and treacherous.");
+		sb.append("<br/>Хотя её Похоть не столь ненасытна, как у её спутницы Сайленс, Тень часто ловит себя на чувстве дикого возбуждения и без раздумий использует свои отточенные навыки скрытности, чтобы устраивать засады на невинных людей и навязывать им себя, приставив клинок к горлу. Из-за такой без разбора выбранной цели, в сочетании со слухами о том, что её прежние наниматели были зарезаны в спину, за Тенью закрепилась репутация беспринципной и коварной особы.");
 		
 		if(this.getHomeWorldLocation()==WorldType.BOUNTY_HUNTER_LODGE_UPSTAIRS) {
-			sb.append("<br/>"
-					+ "No longer a personal bodyguard for Vengar, Shadow is now a professional bounty hunter."
-					+ " Joined by her long-time companion, Silence, she can be found in Slaver Alley's 'Bounty Hunter Lodge'.");
+			sb.append("<br/>Больше не являясь личным телохранителем Венгара, Тень теперь работает профессиональной охотницей за головами. Вместе со своей давней спутницей Сайленс её можно найти в «Гильдии охотников за головами» в Переулке Рабов.");
 		} else {
-			sb.append("<br/>"
-					+"Despite her ill repute, she has earned a place as a personal bodyguard for the dangerous gang leader, 'Vengar'."
-					+ " Joined by Silence, the one person she is unshakably loyal to, she is sworn to protect Vengar from any harm that might befall him.");
+			sb.append("<br/>Несмотря на дурную славу, она сумела занять место личного телохранителя опасного главаря банды Венгара. В сопровождении Сайленс — единственного человека, которому она непоколебимо предана, — она поклялась защищать Венгара от любой опасности, которая может его постигнуть.");
 		}
 		
 		return sb.toString();
@@ -336,7 +328,7 @@ public class Shadow extends NPC {
 	
 	@Override
 	public String getArtworkFolderName() {
-		return "Shadow";
+		return "Тень";
 	}
 	
 	@Override
@@ -399,8 +391,8 @@ public class Shadow extends NPC {
 				&& Main.combat.getAllCombatants(false).contains(Main.game.getNpc(Silence.class))
 				&& Main.combat.isCombatantDefeated(this)
 				&& !Main.combat.isCombatantDefeated(Main.game.getNpc(Silence.class))) {
-			return new Response("Silence",
-					"As she sees Shadow fall to the floor, Silence stumbles back, looking as though she's about to faint.",
+			return new Response("Сайленс",
+					"Видя, как Тень падает на пол, Сайленс отшатывается назад, выглядя так, будто вот-вот упадет в обморок.",
 					RatWarrensDialogue.BODYGUARDS_COMBAT_SHADOW_DEFEATED){
 				@Override
 				public void effects() {
@@ -412,8 +404,8 @@ public class Shadow extends NPC {
 				&& Main.combat.getAllCombatants(false).contains(Main.game.getNpc(Silence.class))
 				&& !Main.combat.isCombatantDefeated(this)
 				&& Main.combat.isCombatantDefeated(Main.game.getNpc(Silence.class))) {
-			return new Response("Shadow",
-					"As she sees Silence fall to the floor, Shadow lets out a furious scream, looking as though she's about to completely lose her mind.",
+			return new Response("Тень",
+					"Видя, как Безмолвная падает на пол, Тень издает яростный крик; кажется, она вот-вот окончательно сойдет с ума.",
 					RatWarrensDialogue.BODYGUARDS_COMBAT_SILENCE_DEFEATED){
 				@Override
 				public void effects() {

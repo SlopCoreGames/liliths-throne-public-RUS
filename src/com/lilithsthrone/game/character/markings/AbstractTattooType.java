@@ -438,14 +438,7 @@ public class AbstractTattooType extends AbstractCoreType {
 						}
 						int sizeOffset = (100-info.getImageSize())/2;
 						svgBuilder.append("<div style='"
-								+ "width:"+info.getImageSize()+"%;"
-								+ "height:"+info.getImageSize()+"%;"
-								+ "transform:rotate("+info.getImageRotation()+"deg);"
-								+ "position:absolute;"
-								+ "left:"+sizeOffset+"%;"
-								+ "bottom:"+sizeOffset+"%;"
-								+ "padding:0;"
-								+ "margin:0;'>");
+								+ "width:"+info.getImageSize()+"%;высота:"+info.getImageSize()+"%;transform:rotate("+info.getImageRotation()+"градусов);position:absolute;left:"+sizeOffset+"%;bottom:"+sizeOffset+"%;padding:0;margin:0;'>");
 						String finalSvg = sb.toString();
 						for(Entry<String, String> entry : info.getReplacements().entrySet()) {
 							finalSvg = finalSvg.replaceAll(entry.getKey(), entry.getValue());

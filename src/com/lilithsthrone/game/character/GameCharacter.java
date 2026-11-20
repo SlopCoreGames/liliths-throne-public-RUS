@@ -322,10 +322,10 @@ import com.lilithsthrone.world.places.PlaceUpgrade;
 public abstract class GameCharacter implements XMLSaving {
 
 	/** Calculations description as used in getAttributeValue() */
-	public static final String HEALTH_CALCULATION = "10 + (5*level) + (2*Physique) + Bonus Energy";
-	public static final String MANA_CALCULATION = "5 + (2*level) + (5*Arcane) + Bonus Aura";
-	public static final String RESTING_LUST_CALCULATION = "(Corruption/2) + Bonuses";
-	public static final String PREGNANCY_CALCULATION = "10% + (Cum-character's Virility% / 2) + (Womb-character's Fertility% / 2)";
+	public static final String HEALTH_CALCULATION = "10 + (5*уровень) + (2*Телосложение) + Бонусная Энергия";
+	public static final String MANA_CALCULATION = "5 + (2*уровень) + (5*Arcane) + Бонусная Аура";
+	public static final String RESTING_LUST_CALCULATION = "(Порочность/2) + Бонусы";
+	public static final String PREGNANCY_CALCULATION = "10% + (Cum-персонажа Вирильность% / 2) + (Womb-персонажа Фертильность% / 2)";
 
 	public static final int LEVEL_CAP = 50;
 	public static final int MAX_TRAITS = 6;
@@ -818,7 +818,7 @@ public abstract class GameCharacter implements XMLSaving {
 		// ************** Core information **************//
 		
 		Element characterCoreInfo = doc.createElement("core");
-		Comment comment = doc.createComment("If you want to edit any of these values, just be warned that it might break the game...");
+		Comment comment = doc.createComment("Если вы решите изменить любое из этих значений, имейте в виду, что это может сломать игру...");
 		properties.appendChild(characterCoreInfo);
 		
 		XMLUtil.createXMLElementWithValue(doc, characterCoreInfo, "id", this.getId());
@@ -1674,7 +1674,7 @@ public abstract class GameCharacter implements XMLSaving {
 
 		if(element.getElementsByTagName("description").getLength()!=0) {
 			character.setDescription(((Element)element.getElementsByTagName("description").item(0)).getAttribute("value"));
-			Main.game.getCharacterUtils().appendToImportLog(log, "<br/>Set description");
+			Main.game.getCharacterUtils().appendToImportLog(log, "<br/>Установить описание");
 		}
 
 		if(element.getElementsByTagName("petNames").getLength()!=0) {
@@ -2475,7 +2475,7 @@ public abstract class GameCharacter implements XMLSaving {
 						try {
 							if(e.getAttribute("type").equals("FETISH_NON_CON")) { // Support for old non-con fetish:
 								character.incrementEssenceCount(5, false);
-								Main.game.getCharacterUtils().appendToImportLog(log, "<br/>Added refund for old non-con fetish. (+5 arcane essences)");
+								Main.game.getCharacterUtils().appendToImportLog(log, "<br/>Добавлен возврат за старый фетиш non-con. (+5 arcane эссенций)");
 								
 							} else if(Fetish.getFetishFromId(e.getAttribute("type")) != null) {
 								if(Boolean.valueOf(e.getAttribute("value"))) {
@@ -2494,7 +2494,7 @@ public abstract class GameCharacter implements XMLSaving {
 						try {
 							if(e.getAttribute("type").equals("FETISH_NON_CON")) { // Support for old non-con fetish:
 								character.incrementEssenceCount(5, false);
-								Main.game.getCharacterUtils().appendToImportLog(log, "<br/>Added refund for old non-con fetish. (+5 arcane essences)");
+								Main.game.getCharacterUtils().appendToImportLog(log, "<br/>Добавлен возврат за старый фетиш non-con. (+5 arcane эссенций)");
 								
 							} else if(Fetish.getFetishFromId(e.getAttribute("type")) != null) {
 								character.addFetish(Fetish.getFetishFromId(e.getAttribute("type")));
@@ -2701,7 +2701,7 @@ public abstract class GameCharacter implements XMLSaving {
 							Element e = ((Element)motherPregPossibilities.item(i));
 							
 							character.getPotentialPartnersAsMother().add(PregnancyPossibility.loadFromXML(e, doc));
-							Main.game.getCharacterUtils().appendToImportLog(log, "<br/>Added Pregnancy Possibility as mother.");
+							Main.game.getCharacterUtils().appendToImportLog(log, "<br/>Добавлена вероятность беременности для матери.");
 						}
 					}
 				}
@@ -2715,7 +2715,7 @@ public abstract class GameCharacter implements XMLSaving {
 							Element e = ((Element)fatherPregPossibilities.item(i));
 							
 							character.getPotentialPartnersAsFather().add(PregnancyPossibility.loadFromXML(e, doc));
-							Main.game.getCharacterUtils().appendToImportLog(log, "<br/>Added Pregnancy Possibility as father.");
+							Main.game.getCharacterUtils().appendToImportLog(log, "<br/>Добавлена вероятность беременности для отца.");
 						}
 					}
 				}
@@ -2725,7 +2725,7 @@ public abstract class GameCharacter implements XMLSaving {
 					element = (Element) ((Element) nodes.item(0)).getElementsByTagName("litter").item(0);
 					if(element!=null) {
 						character.setPregnantLitter(Litter.loadFromXML(element, doc));
-						Main.game.getCharacterUtils().appendToImportLog(log, "<br/>Added Pregnant litter.");
+						Main.game.getCharacterUtils().appendToImportLog(log, "<br/>Добавлено беременное потомство.");
 					}
 				}
 				
@@ -2752,7 +2752,7 @@ public abstract class GameCharacter implements XMLSaving {
 							Element e = ((Element)litterElements.item(i));
 							
 							character.getLittersBirthed().add(Litter.loadFromXML(e, doc));
-							Main.game.getCharacterUtils().appendToImportLog(log, "<br/>Added litter birthed.");
+							Main.game.getCharacterUtils().appendToImportLog(log, "<br/>Добавлено рожденное потомство.");
 						}
 					}
 				}
@@ -2766,7 +2766,7 @@ public abstract class GameCharacter implements XMLSaving {
 							Element e = ((Element)litterElements.item(i));
 							
 							character.getLittersFathered().add(Litter.loadFromXML(e, doc));
-							Main.game.getCharacterUtils().appendToImportLog(log, "<br/>Added litter fathered.");
+							Main.game.getCharacterUtils().appendToImportLog(log, "<br/>Добавлено отцовское потомство.");
 						}
 					}
 				}
@@ -2780,7 +2780,7 @@ public abstract class GameCharacter implements XMLSaving {
 							Element e = ((Element)litterElements.item(i));
 							
 							character.getLittersIncubated().add(Litter.loadFromXML(e, doc));
-							Main.game.getCharacterUtils().appendToImportLog(log, "<br/>Added litter incubated.");
+							Main.game.getCharacterUtils().appendToImportLog(log, "<br/>Добавлено инкубируемое потомство.");
 						}
 					}
 				}
@@ -2794,7 +2794,7 @@ public abstract class GameCharacter implements XMLSaving {
 							Element e = ((Element)litterElements.item(i));
 							
 							character.getLittersImplanted().add(Litter.loadFromXML(e, doc));
-							Main.game.getCharacterUtils().appendToImportLog(log, "<br/>Added litter implanted.");
+							Main.game.getCharacterUtils().appendToImportLog(log, "<br/>Добавлено имплантированное потомство.");
 						}
 					}
 				}
@@ -2991,7 +2991,7 @@ public abstract class GameCharacter implements XMLSaving {
 									} else {
 										SlaveJobSetting setting = SlaveJobSetting.valueOf(id);
 										character.addSlaveJobSettings(job, setting);
-										Main.game.getCharacterUtils().appendToImportLog(log, "<br/>Added slave job ("+job+") setting: "+setting);
+										Main.game.getCharacterUtils().appendToImportLog(log, "<br/>Добавлена работа раба ("+job+") настройка: "+setting);
 									}
 								}
 								
@@ -3312,7 +3312,7 @@ public abstract class GameCharacter implements XMLSaving {
 									"",//Main.game.getUniqueNPCId(GenericAndrogynousNPC.class),
 									e.getAttribute("takenBy"));
 							
-							Main.game.getCharacterUtils().appendToImportLog(log, "<br/>Added virginity loss:"+e.getAttribute("penetrationType")+" "+e.getAttribute("orificeType")+" (taken by:"+e.getAttribute("takenBy")+")");
+							Main.game.getCharacterUtils().appendToImportLog(log, "<br/>Added virginity loss:"+e.getAttribute("penetrationType")+" "+e.getAttribute("orificeType")+" (занято:"+e.getAttribute("takenBy")+")");
 						}catch(Exception ex){
 						}
 					}
@@ -3332,7 +3332,7 @@ public abstract class GameCharacter implements XMLSaving {
 									e.getAttribute("takenBy"),
 									e.getAttribute("takenDescription"));
 							
-							Main.game.getCharacterUtils().appendToImportLog(log, "<br/>Added virginity loss:"+e.getAttribute("penetrationType")+" "+e.getAttribute("orificeType")+" (taken by:"+e.getAttribute("takenBy")+")");
+							Main.game.getCharacterUtils().appendToImportLog(log, "<br/>Added virginity loss:"+e.getAttribute("penetrationType")+" "+e.getAttribute("orificeType")+" (занято:"+e.getAttribute("takenBy")+")");
 						}catch(Exception ex){
 						}
 					}
@@ -3350,7 +3350,7 @@ public abstract class GameCharacter implements XMLSaving {
 									e.getAttribute("takenBy"),
 									e.getAttribute("takenDescription"));
 							
-							Main.game.getCharacterUtils().appendToImportLog(log, "<br/>Added virginity loss:"+e.getAttribute("orificeType")+" "+e.getAttribute("penetrationType")+" (taken by:"+e.getAttribute("takenBy")+")");
+							Main.game.getCharacterUtils().appendToImportLog(log, "<br/>Added virginity loss:"+e.getAttribute("orificeType")+" "+e.getAttribute("penetrationType")+" (занято:"+e.getAttribute("takenBy")+")");
 						}catch(Exception ex){
 						}
 					}
@@ -3603,12 +3603,12 @@ public abstract class GameCharacter implements XMLSaving {
 
 			// Reload the character's images
 			loadImages(true);
-			Main.game.addEvent(new EventLogEntry("[style.colourGood(Images imported)]",
-					imageFiles.size() + (imageFiles.size() > 1 ? " images were" : " image was") + " added"), false);
+			Main.game.addEvent(new EventLogEntry("[style.colourGood(Изображения импортированы)]",
+					imageFiles.size() + (imageFiles.size() > 1 ? " изображения были" : " изображение было") + " added"), false);
 		} catch (IOException e1) {
 			e1.printStackTrace();
-			Main.game.addEvent(new EventLogEntry("[style.colourBad(Image import failed)]",
-					"See error.log for details"), false);
+			Main.game.addEvent(new EventLogEntry("[style.colourBad(Ошибка импорта изображения)]",
+					"Подробности см. в error.log"), false);
 		}
 	}
 
@@ -3744,28 +3744,18 @@ public abstract class GameCharacter implements XMLSaving {
 				boolean revealed = isImageRevealed();
 
 				infoScreenSB.append(
-						"<div style='position:relative; float:right; width:"+percentageWidth+"%; max-width:"+width+"; object-fit:scale-down;'>"
-							+ "<div style='width:100%; margin:0;'>"
+						"<div style='position:relative; float:right; width:"+percentageWidth+"%; max-width:"+width+"; object-fit:scale-down;'><div style='width:100%; margin:0;'>"
 								+(imageString.isEmpty()
-									?"<div style='width:100%; margin:0; text-align:center;'>No image!</div>"
+									?"<div style='width:100%; margin:0; text-align:center;'>Нет изображения!</div>"
 									:"<img id='CHARACTER_IMAGE' style='"+(revealed ? "" : "-webkit-filter: brightness(0%);")+" width:100%;' src='"+imageString+"'/>")
 								+ "<div class='overlay no-pointer no-highlight' style='text-align:center;'>" // Add overlay div to stop javaFX's insane image drag+drop
 									+ (revealed || imageString.isEmpty()
 										? ""
-										: "<p style='margin-top:50%; font-weight:bold; color:"+PresetColour.BASE_GREY.toWebHexString()+";'>Unlocked through sex!</p>")
+										: "<p style='margin-top:50%; font-weight:bold; color:"+PresetColour.BASE_GREY.toWebHexString()+";'>Открывается через секс!</p>")
 								+ "</div>"
                                 + (artwork.getArtist().getName().equals("Custom")?"<div class='title-button' id='ARTWORK_DELETE' style='background:transparent; left:auto; right:52px;'>"+SVGImages.SVG_IMAGE_PROVIDER.getDiskDelete()+"</div>":"")
 								+ "<div class='title-button' id='ARTWORK_ADD' style='background:transparent; left:auto; right:28px;'>"+SVGImages.SVG_IMAGE_PROVIDER.getAddIcon()+"</div>"
-								+ "<div class='title-button' id='ARTWORK_INFO' style='background:transparent; left:auto; right:4px;'>"+SVGImages.SVG_IMAGE_PROVIDER.getInformationIcon()+"</div>"
-							+ "</div>"
-							+ "<div class='normal-button"+(artwork.getTotalArtworkCount()==1?" disabled":"")+"' id='ARTWORK_PREVIOUS' style='float:left; width:10%; margin:0; padding:0; text-align:center;'>&lt;</div>"
-							+ "<div style='float:left; width:80%; margin:0; text-align:center;'>"+(artwork.getIndex()+1)+"/"+artwork.getTotalArtworkCount()+"</div>"
-							+ "<div class='normal-button"+(artwork.getTotalArtworkCount()==1?" disabled":"")+"' id='ARTWORK_NEXT' style='float:left; width:10%; margin:0; padding:0; text-align:center;'>&gt;</div>"
-							
-							+ "<div class='normal-button"+(this.getArtworkList().size()==1?" disabled":"")+"' id='ARTWORK_ARTIST_PREVIOUS' style='float:left; width:10%; margin:0; padding:0; text-align:center;'>&lt;</div>"
-							+ "<div style='float:left; width:80%; margin:0; text-align:center;'>"+this.getArtworkList().get(artworkIndex).getArtist().getName()+"</div>"
-							+ "<div class='normal-button"+(this.getArtworkList().size()==1?" disabled":"")+"' id='ARTWORK_ARTIST_NEXT' style='float:left; width:10%; margin:0; padding:0; text-align:center;'>&gt;</div>"
-						+ "</div>");
+								+ "<div class='title-button' id='ARTWORK_INFO' style='background:transparent; left:auto; right:4px;'>"+SVGImages.SVG_IMAGE_PROVIDER.getInformationIcon()+"</div></div><div class='normal-button"+(artwork.getTotalArtworkCount()==1?" отключено":"")+"' id='ARTWORK_PREVIOUS' style='float:left; width:10%; margin:0; padding:0; text-align:center;'>&lt;</div><div style='float:left; width:80%; margin:0; text-align:center;'>"+(artwork.getIndex()+1)+"/"+artwork.getTotalArtworkCount()+"</div><div class='normal-button"+(artwork.getTotalArtworkCount()==1?" отключено":"")+"' id='ARTWORK_NEXT' style='float:left; width:10%; margin:0; padding:0; text-align:center;'>&gt;</div><div class='normal-button"+(this.getArtworkList().size()==1?" отключено":"")+"' id='ARTWORK_ARTIST_PREVIOUS' style='float:left; width:10%; margin:0; padding:0; text-align:center;'>&lt;</div><div style='float:left; width:80%; margin:0; text-align:center;'>"+this.getArtworkList().get(artworkIndex).getArtist().getName()+"</div><div class='normal-button"+(this.getArtworkList().size()==1?" отключено":"")+"' id='ARTWORK_ARTIST_NEXT' style='float:left; width:10%; margin:0; padding:0; text-align:center;'>&gt;</div></div>");
 			} else {
 				infoScreenSB.append("<div class='title-button' id='ARTWORK_ADD' style='position:relative; float:right; background:transparent; left:auto; right:4px;'>"+SVGImages.SVG_IMAGE_PROVIDER.getAddIcon()+"</div>");
 			}
@@ -3787,21 +3777,21 @@ public abstract class GameCharacter implements XMLSaving {
 			append = true;
 			infoScreenSB.append(UtilText.parse(this,
 					(incubated
-						?" After being incubated by "+(this.getIncubator().isPlayer()?"yourself":this.getIncubator().getName())+", [npc.she] [npc.was] born"
-						:" You gave birth to [npc.herHim]")
-					+" on the "+this.getBirthdayString()));
+						?" После инкубации у "+(this.getIncubator().isPlayer()?"саму(ую)":this.getIncubator().getName())+", [npc.she] [npc.was] родился(лась)"
+						:" Вы родили [npc.herHim]")
+					+" на "+this.getBirthdayString()));
 			
 		} else if(this.isPlayer() || (this.isPlayerKnowsName() && (this.getAffection(Main.game.getPlayer())>=AffectionLevel.POSITIVE_ONE_FRIENDLY.getMinimumValue() || this.isSlave()))) {
 			append = true;
 			if(this.isDoll()) {
-				infoScreenSB.append(UtilText.parse(this, " [npc.She] [npc.was] created on the "+this.getBirthdayString()));
+				infoScreenSB.append(UtilText.parse(this, " [npc.She] [npc.was] был(а) создан(а) на "+this.getBirthdayString()));
 				
 			} else {
 				infoScreenSB.append(UtilText.parse(this,
 						(incubated
-							?" After being incubated by "+(this.getIncubator().isPlayer()?"yourself":this.getIncubator().getName())+", [npc.she]"
+							?" После инкубации у "+(this.getIncubator().isPlayer()?"саму(ую)":this.getIncubator().getName())+", [npc.she]"
 							:" [npc.She]")
-						+" [npc.was] born on the "+this.getBirthdayString()));
+						+" [npc.was] родился(лась) на "+this.getBirthdayString()));
 			}
 
 		}
@@ -3809,14 +3799,14 @@ public abstract class GameCharacter implements XMLSaving {
 			if(Main.getProperties().hasValue(PropertyValue.ageContent)) {
 				if(this.isDoll()) {
 					infoScreenSB.append(UtilText.parse(this,
-							", and [npc.she] [npc.is] considered to be <span style='color:"+this.getAge().getColour().toWebHexString()+";'>"+Util.intToString(this.getAgeValue())+"</span> years old."));
+							", и [npc.she] [npc.is] считается <span style='color:"+this.getAge().getColour().toWebHexString()+";'>"+Util.intToString(this.getAgeValue())+"</span> лет."));
 				} else {
 					infoScreenSB.append(UtilText.parse(this,
-							", which"
+							", которая"
 							+ (!this.isPlayer()
-								?", due to the fact that everyone in this world starts out as being 18 from the date of their birth,"
+								?", из-за того, что все в этом мире начинают свой путь в возрасте 18 лет с даты своего рождения,"
 								:"")
-							+ " makes [npc.herHim] <span style='color:"+this.getAge().getColour().toWebHexString()+";'>"+Util.intToString(this.getAgeValue())+"</span> years old."));
+							+ " делает [npc.herHim] <span style='color:"+this.getAge().getColour().toWebHexString()+";'>"+Util.intToString(this.getAgeValue())+"</span> лет."));
 				}
 				
 			} else {
@@ -3826,22 +3816,21 @@ public abstract class GameCharacter implements XMLSaving {
 
 		infoScreenSB.append("</p>");
 		
-		infoScreenSB.append("<h6>Relationships</h6>"
-				+ "<p>");
+		infoScreenSB.append("<h6>Отношения</h6><p>");
 		String relationships = this.getRelationshipStrTo(Main.game.getPlayer());
 		
 		if(!this.isRaceConcealed()) {
 			if(!this.isPlayer()) {
 				StringBuilder relationshipsSB = new StringBuilder();
 				if(this.getPartyLeader()!=null) {
-					relationshipsSB.append(UtilText.parse(this, this.getPartyLeader(), "[npc.She] [npc.is] currently following [npc2.name] around as [npc2.her] [style.colourCompanion(companion)]. "));
+					relationshipsSB.append(UtilText.parse(this, this.getPartyLeader(), "[npc.She] [npc.is] сейчас следует за [npc2.name] как [npc2.her] [style.colourCompanion(спутник)]. "));
 				}
 
 				if(!relationships.isEmpty()) {
 					if(relationshipsSB.length()>0) {
 						relationshipsSB.append("<br/>");
 					}
-					relationshipsSB.append(UtilText.parse(this, "[npc.She] is your <span style='color:"+this.getFemininity().getColour().toWebHexString()+"'>"+relationships+"</span>. "));
+					relationshipsSB.append(UtilText.parse(this, "[npc.She] — твой <span style='color:"+this.getFemininity().getColour().toWebHexString()+"'>"+relationships+"</span>. "));
 				}
 
 				List<GameCharacter> charactersPlayerHasEncountered = Main.game.getPlayer().getCharactersEncounteredAsGameCharacters(true);
@@ -3854,7 +3843,7 @@ public abstract class GameCharacter implements XMLSaving {
 								if(relationshipsSB.length()>0) {
 									relationshipsSB.append("<br/>");
 								}
-								relationshipsSB.append(UtilText.parse(this, npc, "[npc.She] is [npc2.namePos] <span style='color:"+this.getFemininity().getColour().toWebHexString()+"'>"+relationshipToOtherNpc+"</span>. "));
+								relationshipsSB.append(UtilText.parse(this, npc, "[npc.She] — это [npc2.namePos] <span style='color:"+this.getFemininity().getColour().toWebHexString()+"'>"+relationshipToOtherNpc+"</span>. "));
 							}
 						}
 					}
@@ -3890,23 +3879,23 @@ public abstract class GameCharacter implements XMLSaving {
 			if(this.isSlave()) {
 				infoScreenSB.append(
 							"<br/>"
-							+ UtilText.parse(this, "[npc.She] [npc.is] a [style.colourArcane(slave)]")
+							+ UtilText.parse(this, "[npc.She] [npc.is] [style.colourArcane(раб)]")
 							+(getOwner() instanceof Finch
 								?"."
-								:", owned by "+(UtilText.parse(getOwner(), "[npc.name].")))
+								:", владелец "+(UtilText.parse(getOwner(), "[npc.name].")))
 							+ " "
 							+ ObedienceLevel.getDescription(this, ObedienceLevel.getObedienceLevelFromValue(this.getObedienceValue()), true, true));
 			}
 			if(!this.isPlayer()) {
 				if(!this.getSlavesOwned().isEmpty() && !(this instanceof Finch)) {
 					infoScreenSB.append("<br/>"
-							+ UtilText.parse(this, "[npc.She] owns "+Util.intToString(this.getSlavesOwned().size())+" "+(this.getSlavesOwned().size()==1?"slave":"slaves")+": "));
+							+ UtilText.parse(this, "[npc.She] владеет "+Util.intToString(this.getSlavesOwned().size())+" "+(this.getSlavesOwned().size()==1?"рабыня":"рабыни")+": "));
 					List<String> slaveNames = new ArrayList<>();
 					for(String id : this.getSlavesOwned()) {
 						try {
 							slaveNames.add(UtilText.parse(Main.game.getNPCById(id), "[npc.name]"));
 						} catch (Exception e) {
-							slaveNames.add("Unknown (id:"+id+")");
+							slaveNames.add("Неизвестно (id:"+id+")");
 						}
 					}
 					infoScreenSB.append(Util.stringsToStringList(slaveNames, false)+".");
@@ -3914,8 +3903,7 @@ public abstract class GameCharacter implements XMLSaving {
 			}
 			infoScreenSB.append("</p>");
 			
-			infoScreenSB.append("<h6>Personality</h6>"
-					+ "<p>");
+			infoScreenSB.append("<h6>Личность</h6><p>");
 			int i=0;
 			for(PersonalityTrait trait : this.getPersonalityTraits()) {
 				if(i!=0) {
@@ -3926,42 +3914,34 @@ public abstract class GameCharacter implements XMLSaving {
 			}
 			if(i==0) {
 				if(this.isDoll()) {
-					infoScreenSB.append(UtilText.parse(this, "[npc.NameIsFull] a sex doll, and as such [npc.has] no personality traits."));
+					infoScreenSB.append(UtilText.parse(this, "[npc.NameIsFull] секс-кукла, и поэтому у неё [npc.has] нет черт личности."));
 				} else {
-					infoScreenSB.append(UtilText.parse(this, "[npc.NameHasFull] a well-rounded personality, with no exceptionally good nor bad traits."));
+					infoScreenSB.append(UtilText.parse(this, "[npc.NameHasFull] разносторонняя личность, без каких-либо выдающихся хороших или плохих черт."));
 				}
 			}
 			infoScreenSB.append("</p>");
 			
-			infoScreenSB.append("<h6>Appearance</h6>"
-					+ "<p>"
+			infoScreenSB.append("<h6>Внешность</h6><p>"
 						+ this.getBodyDescription()
 					+ "</p>");
 
 			infoScreenSB.append(
-							"<div class='container-full-width'>"
-								+ "<details>"
-									+ "<summary class='quest-title'>Stats</summary>"
+							"<div class='container-full-width'><details><summary class='quest-title'>Характеристики</summary>"
 									+PhoneDialogue.getBodyStatsPanel(this)
 								+ "</details>"
 							+"</div>");
 
 			if(includePerkTree) {
 				infoScreenSB.append(
-							"<div class='container-full-width'>"
-								+ "<details>"
-									+ "<summary class='quest-title'>Perk tree</summary>"
+							"<div class='container-full-width'><details><summary class='quest-title'>Древо навыков</summary>"
 									+ PerkManager.MANAGER.getPerkTreeDisplay(this, false)
 								+ "</details>"
 							+"</div>");
 			}
 			
 		} else {
-			infoScreenSB.append("</p>"
-					+ "<br/>"
-						+ "<h6>Appearance</h6>"
-					+ "<p>"
-						+ UtilText.parse(this, "As [npc.namePos] body is mostly concealed, your knowledge of [npc.her] appearance is severely limited...")
+			infoScreenSB.append("</p><br/><h6>Внешность</h6><p>"
+						+ UtilText.parse(this, "Поскольку тело [npc.namePos] в основном скрыто, ваши знания о внешности [npc.her] весьма ограничены...")
 					+ "</p>"
 					+ (Main.game.getPlayer().isKnowsCharacterArea(CoverableArea.ANUS, this)
 							?"<p>"
@@ -4508,17 +4488,17 @@ public abstract class GameCharacter implements XMLSaving {
 				return target.isFeminine()?"mommy":"daddy";
 				
 			} else if (petName.equalsIgnoreCase("Mistress") || petName.equalsIgnoreCase("Master")) {
-				return target.isFeminine()?"Mistress":"Master";
+				return target.isFeminine()?"Госпожа":"Хозяин";
 				
 			} else if (petName.equalsIgnoreCase("Ma'am") || petName.equalsIgnoreCase("Sir")) {
-				return target.isFeminine()?"Ma'am":"Sir";
+				return target.isFeminine()?"Мэм":"Сэр";
 				
 			} else if (petName.equalsIgnoreCase("Mr. "+target.getSurname()) || petName.equalsIgnoreCase("Mrs. "+target.getSurname()) || petName.equalsIgnoreCase("Miss "+target.getSurname())) {
 				return target.isFeminine()
 						?(petName.equalsIgnoreCase("Mrs. "+target.getSurname())
-							?"Mrs. "+target.getSurname()
-							:"Miss "+target.getSurname())
-						:"Mr. "+target.getSurname();
+							?"Миссис "+target.getSurname()
+							:"Мисс "+target.getSurname())
+						:"Мистер "+target.getSurname();
 			}
 			return petName;
 		}
@@ -4793,9 +4773,7 @@ public abstract class GameCharacter implements XMLSaving {
 	public String addPersonalityTrait(PersonalityTrait trait) {
 		if(this.hasPerkAnywhereInTree(Perk.DOLL_ARCANE_2)) {
 			return UtilText.parse(this,
-					"<p style='text-align:center;'>"
-							+ "[style.colourDisabled(As a sex doll, [npc.name] cannot gain any personality traits...)]"
-						+ "</p>");
+					"<p style='text-align:center;'>[style.colourDisabled(Как секс-кукла, [npc.name] не может обрести никаких черт личности...)]</p>");
 		}
 		StringBuilder sb = new StringBuilder();
 		for(PersonalityTrait pt : new ArrayList<>(this.getPersonalityTraits())) {
@@ -4994,15 +4972,12 @@ public abstract class GameCharacter implements XMLSaving {
 	public String setObedience(float obedience) {
 		if(this.hasPerkAnywhereInTree(Perk.DOLL_LUST_2)) {
 			return UtilText.parse(this,
-					"<p style='text-align:center'>"
-						+ "[style.colourDisabled(As a sex doll, [npc.nameIs] always completely obedient...)]"
-					+ "</p>");
+					"<p style='text-align:center'>[style.colourDisabled(Как секс-кукла, [npc.nameIs] всегда абсолютно покорна...)]</p>");
 		}
 		this.obedience = Math.max(-100, Math.min(100, obedience));
 		
 		return UtilText.parse(this,
-				"<p style='text-align:center'>"
-						+ "[npc.She] now [npc.has] <b>"+(obedience>0?"+":"")+Units.round(obedience, 1)+"</b> [style.boldObedience(obedience)].<br/>"
+				"<p style='text-align:center'>[npc.She] теперь [npc.has] <b>"+(obedience>0?"+":"")+Units.round(obedience, 1)+"</b> [style.boldObedience(покорность)].<br/>"
 						+ ObedienceLevel.getDescription(this, ObedienceLevel.getObedienceLevelFromValue(obedience), true, false)
 					+ "</p>");
 	}
@@ -5014,9 +4989,7 @@ public abstract class GameCharacter implements XMLSaving {
 	public String incrementObedience(float increment, boolean applyJobPerkGains) {
 		if(this.hasPerkAnywhereInTree(Perk.DOLL_LUST_2)) {
 			return UtilText.parse(this,
-					"<p style='text-align:center'>"
-						+ "[style.colourDisabled(As a sex doll, [npc.nameIs] always completely obedient...)]"
-					+ "</p>");
+					"<p style='text-align:center'>[style.colourDisabled(Как секс-кукла, [npc.nameIs] всегда абсолютно покорна...)]</p>");
 		}
 		boolean teacherPerkGain = false;
 		if(applyJobPerkGains && increment>0 && this.isSlave() && this.getOwner().hasTrait(Perk.JOB_TEACHER, true)) {
@@ -5029,21 +5002,19 @@ public abstract class GameCharacter implements XMLSaving {
 		if(this.isPlayer()) {
 			return UtilText.parse(this,
 					"<p style='text-align:center'>"
-							+ "[npc.Name] "+(increment>0?"[style.boldGrow(gain)]":"[style.boldShrink(lose)]")+" <b>"+Math.abs(increment)+"</b> [style.boldObedience(obedience)]!<br/>"
-							+ "[npc.She] now [npc.has] <b>"+(obedience>0?"+":"")+Units.round(obedience, 1)+"</b> [style.boldObedience(obedience)],"
+							+ "[npc.Name] "+(increment>0?"[style.boldGrow(gain)]":"[style.boldShrink(lose)]")+" <b>"+Math.abs(increment)+"</b> [style.boldObedience(покорность)]!<br/>[npc.She] теперь [npc.has] <b>"+(obedience>0?"+":"")+Units.round(obedience, 1)+"</b> [style.boldObedience(obedience)],"
 									+ " and feel <b style='color:"+this.getObedience().getColour().toWebHexString()+";'>"+this.getObedience().getName()+"</b>!"
 						+ "</p>");
 			
 		} else {
 			return UtilText.parse(this,
 					"<p style='text-align:center'>"
-							+ "[npc.Name] "+(increment>0?"[style.boldGrow(gains)]":"[style.boldShrink(loses)]")+" <b>"+Math.abs(increment)+"</b> [style.boldObedience(obedience)]!<br/>"
-							+ "[npc.She] now [npc.has] <b>"+(obedience>0?"+":"")+Units.round(obedience, 1)+"</b> [style.boldObedience(obedience)].<br/>"
+							+ "[npc.Name] "+(increment>0?"[style.boldGrow(gains)]":"[style.boldShrink(теряет)]")+" <b>"+Math.abs(increment)+"</b> [style.boldObedience(покорность)]!<br/>[npc.She] теперь [npc.has] <b>"+(obedience>0?"+":"")+Units.round(obedience, 1)+"</b> [style.boldObedience(покорность)].<br/>"
 							+ ObedienceLevel.getDescription(this, ObedienceLevel.getObedienceLevelFromValue(obedience), true, false)
 						+ "</p>"
 						+ (teacherPerkGain
 							?"<p style='text-align:center'>"
-								+ UtilText.parse(this.getOwner(), "<i>Obedience gain was [style.colourExcellent(tripled)], as [npc.nameHas] the '"+Perk.JOB_TEACHER.getName(this.getOwner())+"' trait.</i>")
+								+ UtilText.parse(this.getOwner(), "<i>Obedience gain was [style.colourExcellent(tripled)], as [npc.nameHas] the '"+Perk.JOB_TEACHER.getName(this.getOwner())+" черта.</i>")
 							+ "</p>"
 							:""));
 		}
@@ -5484,16 +5455,12 @@ public abstract class GameCharacter implements XMLSaving {
 	public String setAffection(GameCharacter character, float affection) {
 		if(this.isDoll()) {
 			return UtilText.parse(this,
-					"<p style='text-align:center'>"
-						+ "[style.colourDisabled(As a sex doll, [npc.name] cannot gain or lose affection towards anyone...)]"
-					+ "</p>");
+					"<p style='text-align:center'>[style.colourDisabled(Как секс-кукла, [npc.name] не может испытывать привязанность к кому-либо или терять её...)]</p>");
 		}
 		setAffection(character.getId(), affection);
 		
 		return UtilText.parse(this, character,
-				"<p style='text-align:center'>"
-					+ "[npc.Name] now [npc.has] <b>"+(affection>0?"+":"")+Units.round(affection, 1)+"</b> [style.boldAffection(affection)] towards [npc2.name]."
-					+ "<br/>"
+				"<p style='text-align:center'>[npc.Name] теперь [npc.has] <b>"+(affection>0?"+":"")+Units.round(affection, 1)+"</b> [style.boldAffection(привязанность)] к [npc2.name].<br/>"
 					+ AffectionLevel.getDescription(this, character, true)
 				+ "</p>");
 	}
@@ -5517,16 +5484,14 @@ public abstract class GameCharacter implements XMLSaving {
 	public String incrementAffection(GameCharacter character, float affectionIncrement, String affectionChangeDescription) {
 		if(this.isDoll()) {
 			return UtilText.parse(this,
-					"<p style='text-align:center'>"
-						+ "[style.colourDisabled(As a sex doll, [npc.name] cannot gain or lose affection towards anyone...)]"
-					+ "</p>");
+					"<p style='text-align:center'>[style.colourDisabled(Как секс-кукла, [npc.name] не может испытывать привязанность к кому-либо или терять её...)]</p>");
 		}
 		setAffection(character, getAffection(character) + affectionIncrement);
 		
 		return UtilText.parse(this, character,
 				"<p style='text-align:center'>"
 					+ (affectionChangeDescription!=null && !affectionChangeDescription.isEmpty()?"<i>"+affectionChangeDescription+"</i><br/>":"")
-					+ "[npc.Name] "+(affectionIncrement>0?"[style.boldGood(gains)]":"[style.boldBad(loses)]")+" <b>"+Math.abs(affectionIncrement)+"</b> [style.boldAffection(affection)] towards [npc2.name]!<br/>"
+					+ "[npc.Name] "+(affectionIncrement>0?"[style.boldGood(gains)]":"[style.boldBad(loses)]")+" <b>"+Math.abs(affectionIncrement)+"</b> [style.boldAffection(привязанность)] к [npc2.name]!<br/>"
 					+ AffectionLevel.getDescription(this, character, true)
 				+ "</p>");
 	}
@@ -6136,12 +6101,10 @@ public abstract class GameCharacter implements XMLSaving {
 				&& Main.game.getPlayer().getFriendlyOccupants().contains(this.getId())
 				&& this.getHistory().isAtWork(Main.game.getHourOfDay())) {
 			return UtilText.parse(this,
-					"<p>"
-						+ "[npc.speech(Ah! I need to get to work! Sorry, [pc.name], I'll see you later! Bye!)] [npc.name] suddenly says, before turning and running off..."
-					+ "</p>");
+					"<p>[npc.speech(Ах! Мне пора за работу! Прости, [pc.name], увидимся позже! Пока!)] [npc.name] внезапно произносит, прежде чем развернуться и убежать...</p>");
 		}
 		
-		return this.getName(true)+" leaves your party for unknown reasons.";
+		return this.getName(true)+" покидает вашу группу по неизвестным причинам.";
 	}
 	
 	public final boolean isCompanionAvailableForSex(boolean companionIsSub) {
@@ -6165,7 +6128,7 @@ public abstract class GameCharacter implements XMLSaving {
 		if(this.getLocationPlace().getPlaceType().isSexBlockedFromCharacterPresent()) {
 			for(GameCharacter character : Main.game.getCharactersPresent()) {
 				if(!character.isSlave() && !(character.isElemental()) && (this.getPartyLeader()==null || !this.getPartyLeader().getCompanions().contains(character))) {
-					return new Value<>(false, UtilText.parse(character, "You can't have sex in front of [npc.name]!"));
+					return new Value<>(false, UtilText.parse(character, "Вы не можете заниматься сексом на глазах у [npc.name]!"));
 				}
 			}
 		}
@@ -6178,23 +6141,23 @@ public abstract class GameCharacter implements XMLSaving {
 	 */
 	public String getCompanionSexRejectionReason(boolean companionIsSub) {
 		if(Main.game.getSavedDialogueNode() != null && !Main.game.getSavedDialogueNode().equals(Main.game.getPlayerCell().getDialogue(false))) {
-			return "You're in the middle of something right now!";
+			return "Вы сейчас заняты чем-то важным!";
 		}
 		if(this.isElemental()) {
 			switch(this.getBodyMaterial()) {
 				case AIR:
 					if(((Elemental)this).getSummoner().hasSpellUpgrade(SpellUpgrade.ELEMENTAL_AIR_3A) && companionIsSub) {
-						return UtilText.parse(this, "As you have sworn subservience to the school of Air, while [npc.name] is bound in this form, [npc.she] refuses to let you act as the dominant partner in sex!");
+						return UtilText.parse(this, "Так как вы поклялись в верности школе Воздуха, пока [npc.name] скована в этой форме, [npc.she] отказывается позволить вам быть доминирующим партнером в сексе!");
 					}
 					break;
 				case ARCANE:
 					if(((Elemental)this).getSummoner().hasSpellUpgrade(SpellUpgrade.ELEMENTAL_ARCANE_3A) && companionIsSub) {
-						return UtilText.parse(this, "As you have sworn subservience to the school of Arcane, while [npc.name] is bound in this form, [npc.she] refuses to let you act as the dominant partner in sex!");
+						return UtilText.parse(this, "Так как вы поклялись в верности школе Arcane, пока [npc.name] скована в этой форме, [npc.she] отказывается позволить вам быть доминирующим партнером в сексе!");
 					}
 					break;
 				case FIRE:
 					if(((Elemental)this).getSummoner().hasSpellUpgrade(SpellUpgrade.ELEMENTAL_FIRE_3A) && companionIsSub) {
-						return UtilText.parse(this, "As you have sworn subservience to the school of Fire, while [npc.name] is bound in this form, [npc.she] refuses to let you act as the dominant partner in sex!");
+						return UtilText.parse(this, "Так как вы поклялись в верности школе Огня, пока [npc.name] скована в этой форме, [npc.she] отказывается позволить вам быть доминирующим партнером в сексе!");
 					}
 					break;
 				case FLESH:
@@ -6204,13 +6167,13 @@ public abstract class GameCharacter implements XMLSaving {
 				case RUBBER:
 				case STONE:
 					if(((Elemental)this).getSummoner().hasSpellUpgrade(SpellUpgrade.ELEMENTAL_EARTH_3A) && companionIsSub) {
-						return UtilText.parse(this, "As you have sworn subservience to the school of Earth, while [npc.name] is bound in this form, [npc.she] refuses to let you act as the dominant partner in sex!");
+						return UtilText.parse(this, "Так как вы поклялись в верности школе Земли, пока [npc.name] скована в этой форме, [npc.she] отказывается позволить вам быть доминирующим партнером в сексе!");
 					}
 					break;
 				case ICE:
 				case WATER:
 					if(((Elemental)this).getSummoner().hasSpellUpgrade(SpellUpgrade.ELEMENTAL_WATER_3A) && companionIsSub) {
-						return UtilText.parse(this, "As you have sworn subservience to the school of Water, while [npc.name] is bound in this form, [npc.she] refuses to let you act as the dominant partner in sex!");
+						return UtilText.parse(this, "Так как вы поклялись в верности школе Воды, пока [npc.name] скована в этой форме, [npc.she] отказывается позволить вам быть доминирующим партнером в сексе!");
 					}
 					break;
 			}
@@ -6218,10 +6181,10 @@ public abstract class GameCharacter implements XMLSaving {
 		
 		if(!this.isSlave()) {
 			if(!this.isAttractedTo(getPartyLeader())) {
-				return UtilText.parse(this, getPartyLeader(), "[npc.Name] doesn't want to have sex with [npc2.name]!");
+				return UtilText.parse(this, getPartyLeader(), "[npc.Name] не хочет заниматься сексом с [npc2.name]!");
 			}
 			if(!this.getFetishDesire(Fetish.FETISH_EXHIBITIONIST).isPositive() && this.getLocationPlace().getPlaceType().isPopulated()) {
-				return UtilText.parse(this, "As [npc.she] isn't an exhibitionist, [npc.name] is not going to agree to have sex in public!");
+				return UtilText.parse(this, "Поскольку [npc.she] не склонна к эксгибиционизму, [npc.name] не согласится на секс на публике!");
 			}
 		}
 		
@@ -6578,9 +6541,7 @@ public abstract class GameCharacter implements XMLSaving {
 		}
 		if(this.hasPerkAnywhereInTree(Perk.DOLL_ARCANE_2)) {
 			return UtilText.parse(this, 
-					"<p style='text-align:center; padding:0; margin:0;'>"
-							+ "As [npc.nameIsFull] a sex doll, [npc.she] cannot gain experience..."
-						+"</p>");
+					"<p style='text-align:center; padding:0; margin:0;'>Будучи [npc.nameIsFull] секс-куклой, [npc.she] не может получать опыт...</p>");
 		}
 		
 		int xpIncrement = (int) Math.max(0, increment * (withExtraModifiers&&this.hasTrait(Perk.JOB_WRITER, true)?1.25f:1));
@@ -6593,16 +6554,16 @@ public abstract class GameCharacter implements XMLSaving {
 		experience += xpIncrement;
 
 		if(Main.game.isStarted() && this.isPlayer()) {
-			Main.game.addEvent(new EventLogEntry("[style.colourGood(Gained)]", increment+" [style.colourExperience(experience)]"), false);
+			Main.game.addEvent(new EventLogEntry("[style.colourGood(Получено)]", increment+" [style.colourExperience(опыта)]"), false);
 		}
 		
 		String levelUpDescription = "";
 		if (experience >= getExperienceNeededForNextLevel()) {
 			levelUpDescription = levelUp();
 			if(Main.game.isStarted() && this.isPlayer()) {
-				Main.game.addEvent(new EventLogEntry("[style.colourExcellent(Level up)]", "To level "+this.getLevel()), false);
+				Main.game.addEvent(new EventLogEntry("[style.colourExcellent(Повышение уровня)]", "уровня "+this.getLevel()), false);
 				if(LEVEL_CAP == this.getLevel()) {
-					Main.game.addEvent(new EventLogEntry("[style.colourExcellent(Maximum level)]", "You have reached the level cap!"), false);
+					Main.game.addEvent(new EventLogEntry("[style.colourExcellent(Максимальный уровень)]", "Вы достигли предела уровней!"), false);
 				}
 			}
 		}
@@ -6611,10 +6572,9 @@ public abstract class GameCharacter implements XMLSaving {
 		}
 		
 		return UtilText.parse(this, 
-				"<p style='text-align:center; padding:0; margin:0;'>"
-					+ "[npc.Name] [style.italicsGood(gained)] [style.boldExperience("+xpIncrement+" xp)]!"
+				"<p style='text-align:center; padding:0; margin:0;'>[npc.Name] [style.italicsGood(получила)] [style.boldExperience("+xpIncrement+" опыта)]!"
 					+(withExtraModifiers && this.hasTrait(Perk.ORGASMIC_LEVEL_DRAIN, true)
-							?"<br/>[style.italicsBad(Experience gain was reduced by 95% due to having the '"+Perk.ORGASMIC_LEVEL_DRAIN.getName(this)+"' trait!)]"
+							?"<br/>[style.italicsBad(Experience gain was reduced by 95% due to having the '"+Perk.ORGASMIC_LEVEL_DRAIN.getName(this)+"' черта!)]"
 							:"")
 				+"</p>")
 				+ levelUpDescription;
@@ -6630,7 +6590,7 @@ public abstract class GameCharacter implements XMLSaving {
 		StringBuilder sb = new StringBuilder();
 		
 		sb.append("<p style='text-align:center; padding:0; margin:0;'>");
-			sb.append("[npc.Name] [style.italicsTerrible(lost)] [style.italicsExperience("+levels+" level"+(levels==1?"":"s")+")]!");
+			sb.append("[npc.Name] [style.italicsTerrible(потерял)] [style.italicsExperience(опыт,"+levels+" уровня"+(levels==1?"":"s")+")]!");
 			// Get list of perks which are at the end of the tree's branches, and remove a random one, preferring to remove non-traits first
 			while(this.getPerkPoints()<0) {
 				Map<Integer, Set<AbstractPerk>> removalPerks = new HashMap<>();
@@ -6655,14 +6615,14 @@ public abstract class GameCharacter implements XMLSaving {
 					int rndKey = Util.randomItemFrom(removalPerks.keySet());
 					AbstractPerk rndPerk = Util.randomItemFrom(removalPerks.get(rndKey));
 					this.removePerk(rndKey, rndPerk);
-					sb.append("<br/>[npc.She] [style.italicsTerrible(lost)] [npc.her] '<i style='color:"+rndPerk.getColour().toWebHexString()+";'>"+rndPerk.getName(this)+"</i>' [style.italicsPerk(perk)]!");
+					sb.append("<br/>[npc.She] [style.italicsTerrible(lost)] [npc.her] '<i style='color:"+rndPerk.getColour().toWebHexString()+";'>"+rndPerk.getName(this)+"</i>' [style.italicsPerk(перк)]!");
 					
 				} else if(!removalTraits.isEmpty()) {
 					int rndKey = Util.randomItemFrom(removalTraits.keySet());
 					AbstractPerk rndPerk = Util.randomItemFrom(removalTraits.get(rndKey));
 					this.removeTrait(rndPerk);
 					this.removePerk(rndKey, rndPerk);
-					sb.append("<br/>[npc.She] [style.italicsTerrible(lost)] [npc.her] '<i style='color:"+rndPerk.getColour().toWebHexString()+";'>"+rndPerk.getName(this)+"</i>' [style.italicsTrait(trait)]!");
+					sb.append("<br/>[npc.She] [style.italicsTerrible(lost)] [npc.her] '<i style='color:"+rndPerk.getColour().toWebHexString()+";'>"+rndPerk.getName(this)+"</i>' [style.italicsTrait(черта)]!");
 					
 				} else {
 					break;
@@ -6693,7 +6653,7 @@ public abstract class GameCharacter implements XMLSaving {
 		setMana(getAttributeValue(Attribute.MANA_MAXIMUM) * manaPercentage);
 
 		sb.append("<p style='text-align:center; padding:0; margin:0;'>");
-			sb.append("[npc.Name] [style.italicsGood(gained)] [style.italicsExperience("+levelsGained+" level"+(levelsGained==1?"":"s")+")]!");
+			sb.append("[npc.Name] [style.italicsGood(получил)] [style.italicsExperience(опыт,"+levelsGained+" уровня"+(levelsGained==1?"":"s")+")]!");
 			if(isPlayer()) {
 				Main.getProperties().setValue(PropertyValue.levelUpHightlight, true);
 				
@@ -6705,8 +6665,8 @@ public abstract class GameCharacter implements XMLSaving {
 				for(AbstractPerk perk : perksAdded) {
 					sb.append("<br/>[npc.She] [style.italicsExcellent(gained)] the '<i style='color:"+perk.getColour().toWebHexString()+";'>"+perk.getName(this)+"</i>'"
 							+ (perk.isEquippableTrait()
-									?" [style.italicsTrait(trait)]!"
-									:" [style.italicsPerk(perk)]!"));
+									?" [style.italicsTrait(черта)]!"
+									:" [style.italicsPerk(перк)]!"));
 				}
 			}
 			
@@ -6940,8 +6900,7 @@ public abstract class GameCharacter implements XMLSaving {
 		} else {
 			return UtilText.parse(this,
 					"<p style='text-align:center;'>"
-						+ "[npc.NamePos] <b style='color:" + att.getColour().toWebHexString() + ";'>" + att.getName() + "</b> remains unchanged..."
-					+ "</p>");
+						+ "[npc.NamePos] <b style='color:" + att.getColour().toWebHexString() + ";'>" + att.getName() + "</b> остается без изменений...</p>");
 		}
 	}
 
@@ -7037,27 +6996,27 @@ public abstract class GameCharacter implements XMLSaving {
 		if(potionAttributes.get(att)==null) {
 			return "<p style='text-align:center;'>"
 					+ UtilText.parse(this,
-						"[npc.NameIsFull] no longer experiencing a modifier to [npc.her] <b style='color:"+att.getColour().toWebHexString()+";'>"+att.getName()+"</b> from any potion effects!")
+						"[npc.NameIsFull] больше не получает модификатор к [npc.her] <b style='color:"+att.getColour().toWebHexString()+";'>"+att.getName()+"</b> от любых эффектов зелий!")
 				+ "</p>";
 			
 		} else if(potionAttributes.get(att)<0) {
 			return "<p style='text-align:center;'>"
 						+ UtilText.parse(this,
-							"[npc.Name] now [npc.has] [style.boldBad("+potionAttributes.get(att)+")] <b style='color:"+att.getColour().toWebHexString()+";'>"+att.getName()+"</b>"
+							"[npc.Name] теперь [npc.has] [style.boldBad(, "+potionAttributes.get(att)+")] <b style='color:"+att.getColour().toWebHexString()+";'>"+att.getName()+"</b>"
 							+(this.hasTrait(Perk.JOB_CHEF, true)
-									?" ([style.boldExcellent(doubled)] from <b style='color:"+Perk.JOB_CHEF.getColour().toWebHexString()+";'>"+Perk.JOB_CHEF.getName(this)+"</b>)"
+									?" ([style.boldExcellent(удвоенный)] от <b style='color:"+Perk.JOB_CHEF.getColour().toWebHexString()+";'>"+Perk.JOB_CHEF.getName(this)+"</b>)"
 									:"")
-							+" for as long as [npc.she] can maintain [npc.her] potion effects!")
+							+" пока [npc.she] может поддерживать [npc.her] эффекты зелий!")
 					+ "</p>";
 			
 		} else {
 			return "<p style='text-align:center;'>"
 						+ UtilText.parse(this,
-							"[npc.Name] now [npc.has] [style.boldGood(+"+potionAttributes.get(att)+")] <b style='color:"+att.getColour().toWebHexString()+";'>"+att.getName()+"</b>"
+							"[npc.Name] теперь [npc.has] [style.boldGood(+"+potionAttributes.get(att)+")] <b style='color:"+att.getColour().toWebHexString()+";'>"+att.getName()+"</b>"
 							+(this.hasTrait(Perk.JOB_CHEF, true)
-									?" ([style.boldExcellent(doubled)] from <b style='color:"+Perk.JOB_CHEF.getColour().toWebHexString()+";'>"+Perk.JOB_CHEF.getName(this)+"</b>)"
+									?" ([style.boldExcellent(удвоенный)] от <b style='color:"+Perk.JOB_CHEF.getColour().toWebHexString()+";'>"+Perk.JOB_CHEF.getName(this)+"</b>)"
 									:"")
-							+" for as long as [npc.she] can maintain [npc.her] potion effects!")
+							+" пока [npc.she] может поддерживать [npc.her] эффекты зелий!")
 					+ "</p>";
 		}
 	}
@@ -7329,7 +7288,7 @@ public abstract class GameCharacter implements XMLSaving {
 				return "";
 			}
 			return "<p style='text-align:center;'><b>"
-						+ UtilText.parse(this, "[npc.Name] [style.colourGood(gained)] the special perk, [style.colourExcellent("+perk.getName(this)+")]!")
+						+ UtilText.parse(this, "[npc.Name] [style.colourGood(получил(а))] особый перк, [style.colourExcellent("+perk.getName(this)+")]!")
 					+ "</b></p>";
 		}
 		return "";
@@ -7427,12 +7386,12 @@ public abstract class GameCharacter implements XMLSaving {
 				return "";
 			}
 			return "<p style='text-align:center;'>"
-						+ UtilText.parse(this, "[style.colourDisabled(Nothing happens, as [npc.name] already [npc.has] the "+fetish.getName(this)+" fetish...)]")
+						+ UtilText.parse(this, "[style.colourDisabled(Ничего не происходит, так как [npc.name] уже [npc.has] "+fetish.getName(this)+" фетиш...)]")
 					+"</p>";
 		}
 		if(this.isDoll()) {
 			return "<p style='text-align:center;'>"
-					+ UtilText.parse(this, "[style.colourDisabled(As a sex doll, [npc.nameIsFull] unable to gain fetishes...)]")
+					+ UtilText.parse(this, "[style.colourDisabled(Как секс-кукла, [npc.nameIsFull] не может получать фетиши...)]")
 				+"</p>";
 		}
 		
@@ -7445,10 +7404,9 @@ public abstract class GameCharacter implements XMLSaving {
 		return "<p style='text-align:center;'>"
 					+ (shortDescription
 						?UtilText.parse(this,
-							"[npc.NameHasFull] [style.boldGood(gained)] the [style.boldFetish("+fetish.getName(this)+" fetish)]!")
+							"[npc.NameHasFull] [style.boldGood(получил(а))] [style.boldFetish("+fetish.getName(this)+" фетиш)]!")
 						:UtilText.parse(this,
-							"A staggering wave of arcane energy crashes over [npc.name], the sheer strength of which almost causes [npc.herHim] to black out."
-									+ " As [npc.she] [npc.verb(stagger)] back from the brink of unconsciousness, [npc.she] [npc.verb(discover)] that [npc.sheHasFull] [style.boldGood(gained)] the [style.boldFetish("+fetish.getName(this)+" fetish)]!"))
+							"Ошеломляющая волна арканной энергии обрушивается на [npc.name], мощь которой почти заставляет [npc.herHim] потерять сознание. Когда [npc.she] [npc.verb(stagger)] от грани обморока, [npc.she] [npc.verb(discover)], что [npc.sheHasFull] [style.boldGood(получил(а))] [style.boldFetish("+fetish.getName(this)+" фетиш)]!"))
 				+"</p>";
 	}
 	
@@ -7475,7 +7433,7 @@ public abstract class GameCharacter implements XMLSaving {
 				return "";
 			}
 			return "<p style='text-align:center;'>"
-						+UtilText.parse(this, "[style.colourDisabled(Nothing happens, as [npc.name] already [npc.verb(lack)] the "+fetish.getName(this)+" fetish...)]")
+						+UtilText.parse(this, "[style.colourDisabled(Ничего не происходит, так как [npc.name] уже [npc.verb(lack)] "+fetish.getName(this)+" фетиш...)]")
 					+"</p>";
 		}
 		
@@ -7489,10 +7447,9 @@ public abstract class GameCharacter implements XMLSaving {
 		return "<p style='text-align:center;'>"
 					+ (shortDescription
 						?UtilText.parse(this,
-								"[npc.NameHasFull] [style.boldBad(lost)] [npc.her] [style.boldFetish("+fetish.getName(this)+" fetish)]!")
+								"[npc.NameHasFull] [style.boldBad(lost)] [npc.her] [style.boldFetish("+fetish.getName(this)+" фетиш)]!")
 						:UtilText.parse(this,
-							"A staggering wave of arcane energy crashes over [npc.name], the sheer strength of which almost causes [npc.herHim] to black out."
-							+ " As [npc.she] [npc.verb(stagger)] back from the brink of unconsciousness, [npc.she] [npc.verb(discover)] that [npc.sheHasFull] [style.boldBad(lost)] [npc.her] [style.boldFetish("+fetish.getName(this)+" fetish)]!"))
+							"Ошеломляющая волна арканной энергии обрушивается на [npc.name], чья мощь едва не заставляет [npc.herHim] потерять сознание. Когда [npc.she] [npc.verb(stagger)] от грани обморока, [npc.she] [npc.verb(discover)], что [npc.sheHasFull] [style.boldBad(lost)] [npc.her] [style.boldFetish("+fetish.getName(this)+" фетиш)]!"))
 				+"</p>";
 	}
 	
@@ -7568,20 +7525,19 @@ public abstract class GameCharacter implements XMLSaving {
 			}
 			if(this.isDoll()) {
 				return "<p style='text-align:center;'>"
-							+ UtilText.parse(this, "[style.colourDisabled(As a sex doll, [npc.nameIsFull] unable to have an opinion on any fetish...)]")
+							+ UtilText.parse(this, "[style.colourDisabled(Как секс-кукла, [npc.nameIsFull] не может иметь собственного мнения о каком-либо фетише...)]")
 						+"</p>";
 			}
 			if(this.hasFetish(fetish)) {
 				return "<p style='text-align:center;'>"
-							+ UtilText.parse(this, "[style.colourDisabled(As [npc.she] [npc.has] the "+fetish.getName(this)+" fetish, [npc.her] love of it can't decrease...)]")
+							+ UtilText.parse(this, "[style.colourDisabled(Поскольку [npc.she] [npc.has] это "+fetish.getName(this)+" фетиш, [npc.her] любовь к нему не может уменьшиться...)]")
 						+"</p>";
 			}
 			return "<p style='text-align:center;'>"
 					+ (shortDescription
-							?UtilText.parse(this, "[npc.Name] now <b style='color:"+desire.getColour().toWebHexString()+";'>"+(this.isPlayer()?desire.getNameAsPlayerVerb():desire.getNameAsVerb())
+							?UtilText.parse(this, "[npc.Name] теперь <b style='color:"+desire.getColour().toWebHexString()+";'>"+(this.isPlayer()?desire.getNameAsPlayerVerb():desire.getNameAsVerb())
 									+"</b> [style.boldLust("+fetish.getShortDescriptor(this)+")]!")
-							:UtilText.parse(this, "A warm wave of arcane energy rises up within [npc.name], and as [npc.she] [npc.verb(feel)] its influential power seeping into [npc.her] mind,"
-								+ " [npc.she] [npc.verb(realise)] that [npc.she] now <b style='color:"+desire.getColour().toWebHexString()+";'>"+
+							:UtilText.parse(this, "Теплая волна арканной энергии поднимается внутри [npc.name], и когда [npc.she] [npc.verb(feel)], чувствуя, как ее властная сила просачивается в разум [npc.her], [npc.she] [npc.verb(realise)], что [npc.she] теперь <b style='color:"+desire.getColour().toWebHexString()+";'>"+
 									(this.isPlayer()?desire.getNameAsPlayerVerb():desire.getNameAsVerb())
 								+"</b> [style.boldLust("+fetish.getShortDescriptor(this)+")]!"))
 				+"</p>";
@@ -7591,7 +7547,7 @@ public abstract class GameCharacter implements XMLSaving {
 				return "";
 			}
 			return "<p style='text-align:center;'>"
-						+UtilText.parse(this, "[style.colourDisabled(Nothing happens, as [npc.she] already "+(this.isPlayer()?desire.getNameAsPlayerVerb():desire.getNameAsVerb())+" "+fetish.getShortDescriptor(this)+"...)]")
+						+UtilText.parse(this, "[style.colourDisabled(Ничего не происходит, так как [npc.she] уже "+(this.isPlayer()?desire.getNameAsPlayerVerb():desire.getNameAsVerb())+" "+fetish.getShortDescriptor(this)+"...)]")
 					+"</p>";
 		}
 	}
@@ -7744,7 +7700,7 @@ public abstract class GameCharacter implements XMLSaving {
 				String tattooEffectDescription = ie.applyEffect(this, this, secondsPassed);
 				if (!tattooEffectDescription.isEmpty()) {
 					addStatusEffectDescription(StatusEffect.CLOTHING_EFFECT,
-							"<p style='margin:0 auto;padding:0 auto;'><b>"+ Util.capitaliseSentence(tattoo.getName())+" tattoo:</b></p>"
+							"<p style='margin:0 auto;padding:0 auto;'><b>"+ Util.capitaliseSentence(tattoo.getName())+" татуировка:</b></p>"
 							+ tattooEffectDescription);
 				}
 			}
@@ -7951,7 +7907,7 @@ public abstract class GameCharacter implements XMLSaving {
 		statusEffectDescriptions.putIfAbsent(seconds, new HashMap<>());
 		statusEffectDescriptions.get(seconds).putIfAbsent(statusEffect, "");
 		statusEffectDescriptions.get(seconds).put(statusEffect, statusEffectDescriptions.get(seconds).get(statusEffect)+description);
-		Main.game.addEvent(new EventLogEntry("[style.colourStatusEffect(Status effect)]", statusEffect==null?"Miscellaneous Effects":Util.capitaliseSentence(statusEffect.getName(this))), false);
+		Main.game.addEvent(new EventLogEntry("[style.colourStatusEffect(Эффект статуса)]", statusEffect==null?"Разные эффекты":Util.capitaliseSentence(statusEffect.getName(this))), false);
 	}
 
 	public void removeStatusEffectDescription(AbstractStatusEffect statusEffect) {
@@ -8025,9 +7981,9 @@ public abstract class GameCharacter implements XMLSaving {
 		return "<p>"
 				+ UtilText.parse(this,
 						UtilText.returnStringAtRandom(
-						"Letting out a wild scream, [npc.name] thrusts [npc.her] arm into mid air as [npc.she] casts a spell!",
-						"Spitting curses, [npc.name] locks [npc.her] eyes onto yours, before casting a spell!",
-						"With an angry curse, [npc.name] steps forwards and casts a spell!"))
+						"Издавая дикий крик, [npc.name] выбрасывает [npc.her] руку в воздух, когда [npc.she] произносит заклинание!",
+						"Выплевывая проклятия, [npc.name] впивается взглядом [npc.her] в твои глаза, прежде чем сотворить заклинание!",
+						"С яростным проклятием [npc.name] делает шаг вперед и произносит заклинание!"))
 			+ "</p>";
 	}
 	
@@ -8047,62 +8003,60 @@ public abstract class GameCharacter implements XMLSaving {
 				if(this.isFeminine()) {
 					return UtilText.parse(this, target,
 							UtilText.returnStringAtRandom(
-									"[npc.Name] puts on a smouldering look, and as her eyes meet yours, you hear an extremely lewd moan echoing around in your head, [npc.thought(~Aaah!~ "
+									"[npc.Name] бросает на тебя томный взгляд, и когда её глаза встречаются с твоими, в твоей голове эхом отдается крайне похотливый стон, [npc.thought(~Ааах!~ "
 											+(this.hasVagina()
-													?"You're making me so wet!"
+													?"Ты так меня возбуждаешь, я вся промокла!"
 													:this.hasPenis()
-														?"You're getting me so hard!"
-														:"You're turning me on so much!")+")]",
-									"[npc.Name] locks her big, innocent-looking eyes with yours, and as she pouts, you hear an echoing moan deep within your mind, [npc.thought("+
+														?"У меня уже так встает от тебя!"
+														:"Ты так сильно меня заводишь!")+")]",
+									"[npc.Name] впивается в тебя своими огромными, невинными глазами, и пока она дует губки, в твоем сознании эхом отдается стон, [npc.thought("+
 											(this.hasVagina()
-													?"~Mmm!~ Fuck me! ~Aaa!~ My pussy's wet and ready for you!"
+													?"~Ммм!~ Трахни меня! ~Ааа!~ Моя киска мокрая и готова к тебе!"
 													:this.hasPenis()
-														?"~Mmm!~ I can't wait to fuck you! ~Aaa!~ You're going to love my cock!"
-														:"~Mmm!~ Fuck me! ~Aaa!~ I need you so badly!")+")]",
+														?"~Ммм!~ Не терпится трахнуть тебя! ~Ааа!~ Ты будешь в восторге от моего члена!"
+														:"~Ммм!~ Трахни меня! ~Ааа!~ Ты мне так нужна!")+")]",
 									(this.hasStatusEffect(StatusEffect.TELEPATHIC_COMMUNICATION_POWER_OF_SUGGESTION)
 											|| this.hasStatusEffect(StatusEffect.TELEPATHIC_COMMUNICATION_PROJECTED_TOUCH)
-											?"[npc.Name] pouts innocently at you, before blowing you a wet kiss. As she straightens back up, you feel a ghostly pair of wet lips press against your cheek."
+											?"[npc.Name] невинно дует губки, а затем посылает тебе влажный воздушный поцелуй. Когда она выпрямляется, ты чувствуешь, как призрачная пара влажных губ прижимается к твоей щеке."
 											:"")));
 				} else {
 					return UtilText.parse(this, target,
 							UtilText.returnStringAtRandom(
-									"[npc.Name] puts on a confident look, and as his eyes meet yours, you hear an extremely lewd groan echoing around in your head, [npc.thought(~Mmm!~ "
+									"[npc.Name] принимает уверенный вид, и когда его глаза встречаются с твоими, ты слышишь в голове эхом отдающийся крайне похотливый стон, [npc.thought(~Ммм!~ "
 											+(this.hasVagina()
-													?"You're making me so wet!"
+													?"Ты так меня возбуждаешь, я вся промокла!"
 													:this.hasPenis()
-														?"You're getting me so hard!"
-														:"You're turning me on so much!")+")]",
-									"[npc.Name] locks his eyes with yours, and as he throws you a charming smile, you hear an echoing groan deep within your mind, [npc.thought("+
+														?"У меня уже так встает от тебя!"
+														:"Ты так сильно меня заводишь!")+")]",
+									"[npc.Name] впивается взглядом в твои глаза, и когда он одаривает тебя очаровательной улыбкой, ты слышишь в глубине своего разума эхом отдающийся стон, [npc.thought("+
 											(this.hasVagina()
-													?"~Mmm!~ Fuck me! ~Aaa!~ My pussy's wet and ready for you!"
+													?"~Ммм!~ Трахни меня! ~Ааа!~ Моя киска мокрая и готова к тебе!"
 													:this.hasPenis()
-														?"~Mmm!~ I can't wait to fuck you! You're going to love my cock!"
-														:"~Mmm!~ I can't wait to have some fun with you!")+")]",
+														?"~Ммм!~ Не терпится трахнуть тебя! Ты будешь в восторге от моего члена!"
+														:"~Ммм!~ Не терпится немного развлечься с тобой!")+")]",
 									(this.hasStatusEffect(StatusEffect.TELEPATHIC_COMMUNICATION_POWER_OF_SUGGESTION)
 											|| this.hasStatusEffect(StatusEffect.TELEPATHIC_COMMUNICATION_PROJECTED_TOUCH)
-											?"[npc.Name] throws you a charming smile, before winking at you and striking a heroic pose. As he straightens back up, you feel a ghostly pair of arms pulling you into a strong, confident embrace."
+											?"[npc.Name] одаривает тебя очаровательной улыбкой, после чего подмигивает и принимает героическую позу. Когда он выпрямляется, ты чувствуешь, как призрачная пара рук притягивает тебя в крепкие, уверенные объятия."
 											:"")));
 				}
 			} else {
 				if(this.isFeminine()) {
 					return UtilText.parse(this, target,
 							UtilText.returnStringAtRandom(
-									"[npc.Name] puts on a smouldering look, before projecting a series of lewd moans and dirty suggestions directly into [npc2.namePos] mind!",
-									"[npc.Name] locks her big, innocent-looking eyes onto [npc2.nameHers], and as she pouts, [npc.she] projects a lewd moan directly into [npc2.her] mind!",
+									"[npc.Name] бросает на [npc2.namePos] томный взгляд, а затем транслирует череду похотливых стонов и грязных намеков прямо ей в разум!",
+									"[npc.Name] устремляет свои большие, невинные глазки на [npc2.nameHers], и когда она надувает губки, [npc.she] транслирует похотливый стон прямо в разум [npc2.her]!",
 									(this.hasStatusEffect(StatusEffect.TELEPATHIC_COMMUNICATION_POWER_OF_SUGGESTION)
 											|| this.hasStatusEffect(StatusEffect.TELEPATHIC_COMMUNICATION_PROJECTED_TOUCH)
-											?"[npc.Name] pouts innocently at [npc2.name], before blowing [npc2.herHim] a wet kiss."
-													+ " As she straightens back up, [npc2.name] feels a ghostly pair of wet lips press against [npc2.her] cheek."
+											?"[npc.Name] невинно дует губки, глядя на [npc2.name], а затем посылает [npc2.herHim] влажный воздушный поцелуй. Когда она выпрямляется, [npc2.name] чувствует, как призрачная пара влажных губ прижимается к щеке [npc2.her]."
 											:"")));
 				} else {
 					return UtilText.parse(this, target,
 							UtilText.returnStringAtRandom(
-									"[npc.Name] puts on a confident look, before projecting a series of lewd groans and dirty suggestions directly into [npc2.namePos] mind!",
-									"[npc.Name] locks his eyes onto [npc2.nameHers], and as he puts on a charming smile, [npc.she] projects a series of lewd suggestions directly into [npc2.her] mind!",
+									"[npc.Name] принимает уверенный вид, а затем транслирует серию похотливых стонов и грязных предложений прямо в разум [npc2.namePos]!",
+									"[npc.Name] впивается взглядом в [npc2.nameHers], и, ослепительно улыбаясь, [npc.she] транслирует серию похотливых предложений прямо в разум [npc2.her]!",
 									(this.hasStatusEffect(StatusEffect.TELEPATHIC_COMMUNICATION_POWER_OF_SUGGESTION)
 											|| this.hasStatusEffect(StatusEffect.TELEPATHIC_COMMUNICATION_PROJECTED_TOUCH)
-											?"[npc.Name] throws [npc2.name] a charming smile, before winking at [npc2.herHim] and striking a heroic pose."
-													+ " As he straightens back up, [npc2.name] feels a ghostly pair of arms pulling [npc2.herHim] into a strong, confident embrace."
+											?"[npc.Name] одаривает [npc2.name] очаровательной улыбкой, после чего подмигивает [npc2.herHim] и принимает героическую позу. Когда он выпрямляется, [npc2.name] чувствует, как призрачная пара рук затягивает [npc2.herHim] в крепкие, уверенные объятия."
 											:"")));
 				}
 			}
@@ -8112,52 +8066,46 @@ public abstract class GameCharacter implements XMLSaving {
 			if(target.isPlayer()) {
 				description = UtilText.parse(this, target,
 						UtilText.returnStringAtRandom(
-						"[npc.Name] erotically runs [npc.her] hands down [npc.her] legs and bends forwards as [npc.she] teases you, "
-								+ "[npc.speech(Come on baby, I can show you a good time!)]",
-						"[npc.Name] pushes out [npc.her] chest and lets out an erotic moan, "
-								+ "[npc.speech(Come play with me!)]",
-						"[npc.Name] slowly runs [npc.her] hands down between [npc.her] thighs, "
-								+ "[npc.speech(You know you want it!)]",
-						"[npc.Name] blows a kiss at you, before winking suggestively in your direction.",
-						"Biting [npc.her] lip and putting on [npc.her] most smouldering look, [npc.name] runs [npc.her] hands slowly up [npc.her] inner thighs.",
+						"[npc.Name] эротично ведет [npc.her] руками по ногам [npc.her] и наклоняется вперед, пока [npc.she] дразнит тебя, [npc.speech(Давай, детка, я устрою тебе незабываемое время!)]",
+						"[npc.Name] выпячивает [npc.her] грудь и издает эротичный стон, [npc.speech(Пойдем поиграем со мной!)]",
+						"[npc.Name] медленно ведет [npc.her] руками между бедер [npc.her], [npc.speech(Ты же знаешь, что хочешь этого!)]",
+						"[npc.Name] посылает тебе воздушный поцелуй, а затем многозначительно подмигивает в твою сторону.",
+						"Прикусив [npc.her] губу и бросив на [npc.her] самый томный взгляд, [npc.name] медленно ведет [npc.her] руками по внутренней стороне бедер [npc.her].",
 						"[npc.Name] gives you [npc.her] most innocent look and blows you a kiss.",
-						"Turning around, [npc.name] lets out a playful giggle as [npc.she] gives [npc.her] [npc.ass+] a slap.",
-						"[npc.Name] slowly runs [npc.her] [npc.hands] up the length of [npc.her] body, before pouting at you."));
+						"Развернувшись, [npc.name] игриво хихикает, пока [npc.she] дает [npc.her] [npc.ass+] звонкую пощечину.",
+						"[npc.Name] медленно ведет [npc.her] [npc.hands] вдоль всего тела [npc.her], а затем капризно надувает губы, глядя на тебя."));
 				
 			} else {
 				description = UtilText.parse(this, target,
 						UtilText.returnStringAtRandom(
-						"[npc.Name] blows a kiss at [npc2.name], before winking suggestively in [npc2.her] direction.",
-						"Biting [npc.her] lip and putting on [npc.her] most smouldering look, [npc.name] runs [npc.her] hands slowly up [npc.her] inner thighs.",
-						"As [npc.name] gives [npc2.name] [npc.her] most innocent look, [npc.she] blows [npc2.herHim] a little kiss.",
-						"Turning around, [npc.name] lets out a playful giggle as [npc.she] gives [npc.her] [npc.ass+] a slap.",
-						"[npc.Name] slowly runs [npc.her] [npc.hands] up the length of [npc.her] body, before pouting at [npc2.name]."));
+						"[npc.Name] посылает воздушный поцелуй [npc2.name], а затем многозначительно подмигивает в сторону [npc2.her].",
+						"Прикусив [npc.her] губу и бросив на [npc.her] самый томный взгляд, [npc.name] медленно ведет [npc.her] руками по внутренней стороне бедер [npc.her].",
+						"Пока [npc.name] дарит [npc2.name] [npc.her] самый невинный взгляд, [npc.she] посылает [npc2.herHim] воздушный поцелуй.",
+						"Развернувшись, [npc.name] игриво хихикает, пока [npc.she] дает [npc.her] [npc.ass+] звонкую пощечину.",
+						"[npc.Name] медленно ведет [npc.her] [npc.hands] вдоль всего тела [npc.her], а затем капризно надувает губы перед [npc2.name]."));
 			}
 			
 		} else {
 			if(target.isPlayer()) {
 				description = UtilText.parse(this, target,
 						UtilText.returnStringAtRandom(
-						"[npc.Name] winks at you and flexes [npc.his] muscles, "
-								+ "[npc.speech(My body's aching for your touch!)]",
-						"[npc.Name] strikes a heroic pose before blowing a kiss your way, "
-								+ "[npc.speech(Come on, I can show you a good time!)]",
-						"[npc.Name] grins at you as [npc.he] reaches down and grabs [npc.his] crotch, "
-								+ "[npc.speech(You know you want a taste of this!)]",
-						"[npc.Name] blows a kiss at you, before winking suggestively in your direction.",
-						"Smiling confidently at you, [npc.name] slowly runs [npc.her] hands up [npc.her] inner thighs.",
+						"[npc.Name] подмигивает тебе и напрягает [npc.his] мышцы, [npc.speech(Мое тело так и просит твоих прикосновений!)]",
+						"[npc.Name] принимает героическую позу, прежде чем послать тебе воздушный поцелуй, [npc.speech(Давай же, я устрою тебе незабываемое время!)]",
+						"[npc.Name] ухмыляется тебе, опуская [npc.he] руку и сжимая [npc.his] промежность, [npc.speech(Ты же знаешь, что хочешь попробовать это на вкус!)]",
+						"[npc.Name] посылает тебе воздушный поцелуй, а затем многозначительно подмигивает в твою сторону.",
+						"Уверенно улыбаясь тебе, [npc.name] медленно ведет [npc.her] руками по внутренней стороне бедер [npc.her].",
 						"[npc.Name] gives you [npc.her] most seductive look and blows you a kiss.",
-						"Turning around, [npc.name] lets out a playful laugh as [npc.she] gives [npc.her] [npc.ass+] a slap.",
-						"[npc.Name] tries to look as commanding as possible as [npc.she] smirks playfully at you."));
+						"Развернувшись, [npc.name] игриво смеется, когда [npc.she] дает [npc.her] [npc.ass+] звонкую пощечину.",
+						"[npc.Name] старается выглядеть как можно властнее, пока [npc.she] игриво ухмыляется тебе."));
 				
 			} else {
 				description = UtilText.parse(this, target,
 						UtilText.returnStringAtRandom(
-						"[npc.Name] blows a kiss at [npc2.name], before winking suggestively in [npc2.her] direction.",
-						"Smiling confidently at [npc2.name], [npc.name] slowly runs [npc.her] hands up [npc.her] inner thighs.",
-						"As [npc.name] gives [npc2.name] [npc.her] most seductive look, [npc.she] blows [npc2.herHim] a kiss.",
-						"Turning around, [npc.name] lets out a playful laugh as [npc.she] gives [npc.her] [npc.ass+] a slap.",
-						"[npc.Name] tries to look as commanding as possible as [npc.she] smirks playfully at [npc2.name]."));
+						"[npc.Name] посылает воздушный поцелуй [npc2.name], а затем многозначительно подмигивает в сторону [npc2.her].",
+						"Уверенно улыбаясь [npc2.name], [npc.name] медленно ведет [npc.her] руками по внутренней стороне [npc.her] бедер.",
+						"Когда [npc.name] бросает на [npc2.name] [npc.her] самый соблазнительный взгляд, [npc.she] посылает [npc2.herHim] воздушный поцелуй.",
+						"Развернувшись, [npc.name] игриво смеется, когда [npc.she] дает [npc.her] [npc.ass+] звонкую пощечину.",
+						"[npc.Name] старается выглядеть как можно властнее, пока [npc.she] игриво ухмыляется [npc2.name]."));
 			}
 		}
 		
@@ -9101,14 +9049,13 @@ public abstract class GameCharacter implements XMLSaving {
 								partner.setVirginityLoss(partnerSexType, this, this.getLostVirginityDescriptor());
 								partner.setPenisVirgin(false);
 								if(descriptionNeeded) {
-									sexDescriptionSB.append(UtilText.parse(partner, "<p class='centre noPad'>[style.italicsTerrible([npc.Name] lost [npc.her] penile virginity!)]</p>"));
+									sexDescriptionSB.append(UtilText.parse(partner, "<p class='centre noPad'>[style.italicsTerrible([npc.Name] лишился [npc.her] пенисной девственности!)]</p>"));
 								}
 								if(this.hasFetish(Fetish.FETISH_DEFLOWERING)) {
 									this.incrementExperience(AbstractFetish.getExperienceGainFromTakingOtherVirginity(this), true);
 									this.incrementFetishExperience(Fetish.FETISH_DEFLOWERING, Fetish.FETISH_DEFLOWERING.getExperienceGainFromSexAction());
 									if(descriptionNeeded) {
-										sexDescriptionSB.append(UtilText.parse(this, "<p class='centre noPad'>[style.italicsArcane(Due to [npc.namePos] deflowering fetish, [npc.she] [npc.verb(gain)])]"
-											+ " [style.italicsExperience("+AbstractFetish.getExperienceGainFromTakingOtherVirginity(this)+")] [style.italicsArcane(experience!)]</p>"));
+										sexDescriptionSB.append(UtilText.parse(this, "<p class='centre noPad'>[style.italicsArcane(Из-за фетиша [npc.namePos] на лишение девственности, [npc.she] [npc.verb(gain)])] [style.italicsExperience("+AbstractFetish.getExperienceGainFromTakingOtherVirginity(this)+")] [style.italicsArcane(опыт!)]</p>"));
 									}
 								}
 							}
@@ -9118,10 +9065,10 @@ public abstract class GameCharacter implements XMLSaving {
 							if(partnerCummed) { // If the partner came, apply relevant effects
 								if(partnerCondom) { // Handle the partner wearing a condom:
 									if(GenericOrgasms.GENERIC_ORGASM_CREAMPIE.getCondomFailure(partner, this)!=CondomFailure.NONE) {
-										ingestFluidSB.append(UtilText.parse(partner, "<p class='centre noPad'>[npc.NamePos] [style.italicsTerrible(condom broke)] as [npc.she] [npc.was] cumming!</p>"));
+										ingestFluidSB.append(UtilText.parse(partner, "<p class='centre noPad'>[npc.NamePos] [style.italicsTerrible(презерватив порвался)], пока [npc.she] [npc.was] кончает!</p>"));
 										partnerCondom = false;
 									} else {
-										ingestFluidSB.append(UtilText.parse(partner, "<p class='centre noPad'>[npc.NamePos] [npc.cum] was [style.boldGood(caught in [npc.her] condom)]!</p>"));
+										ingestFluidSB.append(UtilText.parse(partner, "<p class='centre noPad'>[npc.NamePos] [npc.cum] был [style.boldGood(пойман в [npc.her] презерватив)]!</p>"));
 										if(condomAbleToBeAdded) {
 											ingestFluidSB.append(Main.game.getPlayer().addItem(
 													Main.game.getItemGen().generateFilledCondom(
@@ -9147,20 +9094,15 @@ public abstract class GameCharacter implements XMLSaving {
 										if(extendedDescription) {
 											if(partner.isInternalTesticles()) {
 												orgasmSB.append(UtilText.parse(this, partner,
-														"<p class='centre noPad'>"
-															+ "Driving [npc2.her] [npc2.cock+] deep into [npc.namePos] "+performingArea.getName(this)
-															+", [npc2.namePos] [npc2.balls+] tensed up and [style.colourCum(unloaded their cum)] inside of [npc.herHim]!"
-														+ "</p>"));
+														"<p class='centre noPad'>Вколачивая [npc2.her] [npc2.cock+] глубоко в [npc.namePos] "+performingArea.getName(this)
+															+", [npc2.namePos] [npc2.balls+] напрягся и [style.colourCum(изверг свою сперму)] внутрь [npc.herHim]!</p>"));
 											} else {
 												orgasmSB.append(UtilText.parse(this, partner,
-														"<p class='centre noPad'>"
-															+ "Driving [npc2.her] [npc2.cock+] deep into [npc.namePos] "+performingArea.getName(this)+", [npc2.name] let out [npc2.a_moan+] and [style.colourCum(came inside)] of [npc.herHim]!"
-														+ "</p>"));
+														"<p class='centre noPad'>Вколачивая [npc2.her] [npc2.cock+] глубоко в [npc.namePos] "+performingArea.getName(this)+", [npc2.name] издал [npc2.a_moan+] и [style.colourCum(кончил внутрь)] [npc.herHim]!</p>"));
 											}
 										} else {
 											orgasmSB.append(UtilText.parse(this, partner,
-															"<p class='centre noPad'>"
-																+ "[npc2.Name] [style.colourCum(came inside)] of [npc.namePos] "+performingArea.getName(this)+"!"
+															"<p class='centre noPad'>[npc2.Name] [style.colourCum(кончил внутрь)] [npc.namePos] "+performingArea.getName(this)+"!"
 															+ "</p>"));
 										}
 									}
@@ -9168,9 +9110,7 @@ public abstract class GameCharacter implements XMLSaving {
 								} else {
 									if(descriptionNeeded) {
 										orgasmSB.append(UtilText.parse(this, partner,
-												"<p class='centre noPad'>"
-													+ "[npc2.Name] [style.colourCum(pulled out)] of [npc.namePos] "+performingArea.getName(this)+" just before [npc2.she] started cumming!"
-												+ "</p>"));
+												"<p class='centre noPad'>[npc2.Name] [style.colourCum(вытащил из)] [npc.namePos] "+performingArea.getName(this)+" прямо перед тем, как [npc2.she] начал кончать!</p>"));
 									}
 								}
 							}
@@ -9205,11 +9145,11 @@ public abstract class GameCharacter implements XMLSaving {
 							if(descriptionNeeded) {
 								if(extendedDescription) {
 									ingestFluidSB.append(UtilText.parse(partner, this,
-											"<p class='centre noPad'>Due to performing oral on [npc2.namePos] wet [npc2.pussy], [npc.name] ended up [style.colourGirlcum(drinking [npc2.her] [npc2.girlcum])]!</p>"));
+											"<p class='centre noPad'>Из-за того, что <p class='centre noPad'> занимался оральным сексом с мокрой [npc2.namePos] [npc2.pussy], [npc.name] в итоге [style.colourGirlcum(выпил [npc2.her] [npc2.girlcum])]!</p>"));
 									
 								} else {
 									ingestFluidSB.append(UtilText.parse(partner, this,
-													"<p class='centre noPad'>[npc.Name] [style.colourGirlcum(drank [npc2.namePos] [npc2.girlcum])]!</p>"));
+													"<p class='centre noPad'>[npc.Name] [style.colourGirlcum(выпила [npc2.namePos] [npc2.girlcum])]!</p>"));
 								}
 							}
 							
@@ -9230,11 +9170,11 @@ public abstract class GameCharacter implements XMLSaving {
 							if(descriptionNeeded) {
 								if(extendedDescription) {
 									ingestFluidSB.append(UtilText.parse(partner, this,
-											"<p class='centre noPad'>Due to suckling on [npc2.namePos] milky [npc2.nipples], [npc.name] ended up [style.colourMilk(drinking [npc2.her] [npc2.milk])]!</p>"));
+											"<p class='centre noPad'>Из-за того, что <p class='centre noPad'> сосал молочную [npc2.namePos] [npc2.nipples], [npc.name] в итоге стал [style.colourMilk(пить [npc2.her] [npc2.milk])]!</p>"));
 									
 								} else {
 									ingestFluidSB.append(UtilText.parse(partner, this,
-													"<p class='centre noPad'>[npc.Name] [style.colourMilk(drank [npc2.namePos] [npc2.milk])]!</p>"));
+													"<p class='centre noPad'>[npc.Name] [style.colourMilk(выпила [npc2.namePos] [npc2.milk])]!</p>"));
 								}
 							}
 							
@@ -9256,11 +9196,11 @@ public abstract class GameCharacter implements XMLSaving {
 							if(descriptionNeeded) {
 								if(extendedDescription) {
 									ingestFluidSB.append(UtilText.parse(partner, this,
-											"<p class='centre noPad'>Due to suckling on [npc2.namePos] milky [npc2.crotchNipples], [npc.name] ended up [style.colourMilk(drinking [npc2.her] [npc2.crotchMilk])]!</p>"));
+											"<p class='centre noPad'>Из-за того, что <p class='centre noPad'> сосал молочную [npc2.namePos] [npc2.crotchNipples], [npc.name] в итоге стал [style.colourMilk(пить [npc2.her] [npc2.crotchMilk])]!</p>"));
 									
 								} else {
 									ingestFluidSB.append(UtilText.parse(partner, this,
-													"<p class='centre noPad'>[npc.Name] [style.colourMilk(drank [npc2.namePos] [npc2.crotchMilk])]!</p>"));
+													"<p class='centre noPad'>[npc.Name] [style.colourMilk(выпил(а) [npc2.namePos] [npc2.crotchMilk])]!</p>"));
 								}
 							}
 							ingestFluidSB.append(partner.ingestFluid(
@@ -9287,7 +9227,7 @@ public abstract class GameCharacter implements XMLSaving {
 							if(this.isAssVirgin()) {
 								this.setAssVirgin(false);
 								if(descriptionNeeded) {
-									sexDescriptionSB.append(UtilText.parse(this, "<p class='centre noPad'>[style.italicsTerrible([npc.Name] lost [npc.her] anal virginity!)]</p>"));
+									sexDescriptionSB.append(UtilText.parse(this, "<p class='centre noPad'>[style.italicsTerrible([npc.Name] лишился(ась) [npc.her] анальной девственности!)]</p>"));
 								}
 								if(partnerPresent) {
 									this.setVirginityLoss(sexType, partner, partner.getLostVirginityDescriptor());
@@ -9295,8 +9235,7 @@ public abstract class GameCharacter implements XMLSaving {
 										partner.incrementExperience(AbstractFetish.getExperienceGainFromTakingOtherVirginity(partner), true);
 										partner.incrementFetishExperience(Fetish.FETISH_DEFLOWERING, Fetish.FETISH_DEFLOWERING.getExperienceGainFromSexAction());
 										if(descriptionNeeded) {
-											sexDescriptionSB.append(UtilText.parse(partner, "<p class='centre noPad'>[style.italicsArcane(Due to [npc.namePos] deflowering fetish, [npc.she] [npc.verb(gain)])]"
-												+ " [style.italicsExperience("+AbstractFetish.getExperienceGainFromTakingOtherVirginity(partner)+")] [style.italicsArcane(experience!)]</p>"));
+											sexDescriptionSB.append(UtilText.parse(partner, "<p class='centre noPad'>[style.italicsArcane(Из-за фетиша [npc.namePos] на лишение девственности, [npc.she] [npc.verb(gain)])] [style.italicsExperience("+AbstractFetish.getExperienceGainFromTakingOtherVirginity(partner)+")] [style.italicsArcane(опыт!)]</p>"));
 										}
 									}
 								} else {
@@ -9314,7 +9253,7 @@ public abstract class GameCharacter implements XMLSaving {
 							if(this.isFaceVirgin()) {
 								this.setFaceVirgin(false);
 								if(descriptionNeeded) {
-									sexDescriptionSB.append(UtilText.parse(this, "<p class='centre noPad'>[style.italicsTerrible([npc.Name] lost [npc.her] oral virginity!)]</p>"));
+									sexDescriptionSB.append(UtilText.parse(this, "<p class='centre noPad'>[style.italicsTerrible([npc.Name] лишился(ась) [npc.her] оральной девственности!)]</p>"));
 								}
 								if(partnerPresent) {
 									this.setVirginityLoss(sexType, partner, partner.getLostVirginityDescriptor());
@@ -9322,8 +9261,7 @@ public abstract class GameCharacter implements XMLSaving {
 										partner.incrementExperience(AbstractFetish.getExperienceGainFromTakingOtherVirginity(partner), true);
 										partner.incrementFetishExperience(Fetish.FETISH_DEFLOWERING, Fetish.FETISH_DEFLOWERING.getExperienceGainFromSexAction());
 										if(descriptionNeeded) {
-											sexDescriptionSB.append(UtilText.parse(partner, "<p class='centre noPad'>[style.italicsArcane(Due to [npc.namePos] deflowering fetish, [npc.she] [npc.verb(gain)])]"
-												+ " [style.italicsExperience("+AbstractFetish.getExperienceGainFromTakingOtherVirginity(partner)+")] [style.italicsArcane(experience!)]</p>"));
+											sexDescriptionSB.append(UtilText.parse(partner, "<p class='centre noPad'>[style.italicsArcane(Из-за фетиша [npc.namePos] на лишение девственности, [npc.she] [npc.verb(gain)])] [style.italicsExperience("+AbstractFetish.getExperienceGainFromTakingOtherVirginity(partner)+")] [style.italicsArcane(опыт!)]</p>"));
 										}
 									}
 								} else {
@@ -9335,7 +9273,7 @@ public abstract class GameCharacter implements XMLSaving {
 							if(this.isNippleVirgin()) {
 								this.setNippleVirgin(false);
 								if(descriptionNeeded) {
-									sexDescriptionSB.append(UtilText.parse(this, "<p class='centre noPad'>[style.italicsTerrible([npc.Name] lost [npc.her] nipple virginity!)]</p>"));
+									sexDescriptionSB.append(UtilText.parse(this, "<p class='centre noPad'>[style.italicsTerrible([npc.Name] лишился(ась) [npc.her] девственности сосков!)]</p>"));
 								}
 								if(partnerPresent) {
 									this.setVirginityLoss(sexType, partner, partner.getLostVirginityDescriptor());
@@ -9343,8 +9281,7 @@ public abstract class GameCharacter implements XMLSaving {
 										partner.incrementExperience(AbstractFetish.getExperienceGainFromTakingOtherVirginity(partner), true);
 										partner.incrementFetishExperience(Fetish.FETISH_DEFLOWERING, Fetish.FETISH_DEFLOWERING.getExperienceGainFromSexAction());
 										if(descriptionNeeded) {
-											sexDescriptionSB.append(UtilText.parse(partner, "<p class='centre noPad'>[style.italicsArcane(Due to [npc.namePos] deflowering fetish, [npc.she] [npc.verb(gain)])]"
-												+ " [style.italicsExperience("+AbstractFetish.getExperienceGainFromTakingOtherVirginity(partner)+")] [style.italicsArcane(experience!)]</p>"));
+											sexDescriptionSB.append(UtilText.parse(partner, "<p class='centre noPad'>[style.italicsArcane(Из-за фетиша [npc.namePos] на лишение девственности, [npc.she] [npc.verb(gain)])] [style.italicsExperience("+AbstractFetish.getExperienceGainFromTakingOtherVirginity(partner)+")] [style.italicsArcane(опыт!)]</p>"));
 										}
 									}
 								} else {
@@ -9356,7 +9293,7 @@ public abstract class GameCharacter implements XMLSaving {
 							if(this.isNippleCrotchVirgin()) {
 								this.setNippleCrotchVirgin(false);
 								if(descriptionNeeded) {
-									sexDescriptionSB.append(UtilText.parse(this, "<p class='centre noPad'>[style.italicsTerrible([npc.Name] lost [npc.her] crotch-nipple virginity!)]</p>"));
+									sexDescriptionSB.append(UtilText.parse(this, "<p class='centre noPad'>[style.italicsTerrible([npc.Name] лишился(ась) [npc.her] девственности паховых сосков!)]</p>"));
 								}
 								if(partnerPresent) {
 									this.setVirginityLoss(sexType, partner, partner.getLostVirginityDescriptor());
@@ -9364,8 +9301,7 @@ public abstract class GameCharacter implements XMLSaving {
 										partner.incrementExperience(AbstractFetish.getExperienceGainFromTakingOtherVirginity(partner), true);
 										partner.incrementFetishExperience(Fetish.FETISH_DEFLOWERING, Fetish.FETISH_DEFLOWERING.getExperienceGainFromSexAction());
 										if(descriptionNeeded) {
-											sexDescriptionSB.append(UtilText.parse(partner, "<p class='centre noPad'>[style.italicsArcane(Due to [npc.namePos] deflowering fetish, [npc.she] [npc.verb(gain)])]"
-												+ " [style.italicsExperience("+AbstractFetish.getExperienceGainFromTakingOtherVirginity(partner)+")] [style.italicsArcane(experience!)]</p>"));
+											sexDescriptionSB.append(UtilText.parse(partner, "<p class='centre noPad'>[style.italicsArcane(Из-за фетиша [npc.namePos] на лишение девственности, [npc.she] [npc.verb(gain)])] [style.italicsExperience("+AbstractFetish.getExperienceGainFromTakingOtherVirginity(partner)+")] [style.italicsArcane(опыт!)]</p>"));
 										}
 									}
 								} else {
@@ -9379,7 +9315,7 @@ public abstract class GameCharacter implements XMLSaving {
 							if(this.isUrethraVirgin()) {
 								this.setUrethraVirgin(false);
 								if(descriptionNeeded) {
-									sexDescriptionSB.append(UtilText.parse(this, "<p class='centre noPad'>[style.italicsTerrible([npc.Name] lost [npc.her] penile urethra virginity!)]</p>"));
+									sexDescriptionSB.append(UtilText.parse(this, "<p class='centre noPad'>[style.italicsTerrible([npc.Name] лишился(ась) [npc.her] девственности мочеиспускательного канала пениса!)]</p>"));
 								}
 								if(partnerPresent) {
 									this.setVirginityLoss(sexType, partner, partner.getLostVirginityDescriptor());
@@ -9387,8 +9323,7 @@ public abstract class GameCharacter implements XMLSaving {
 										partner.incrementExperience(AbstractFetish.getExperienceGainFromTakingOtherVirginity(partner), true);
 										partner.incrementFetishExperience(Fetish.FETISH_DEFLOWERING, Fetish.FETISH_DEFLOWERING.getExperienceGainFromSexAction());
 										if(descriptionNeeded) {
-											sexDescriptionSB.append(UtilText.parse(partner, "<p class='centre noPad'>[style.italicsArcane(Due to [npc.namePos] deflowering fetish, [npc.she] [npc.verb(gain)])]"
-												+ " [style.italicsExperience("+AbstractFetish.getExperienceGainFromTakingOtherVirginity(partner)+")] [style.italicsArcane(experience!)]</p>"));
+											sexDescriptionSB.append(UtilText.parse(partner, "<p class='centre noPad'>[style.italicsArcane(Из-за фетиша [npc.namePos] на лишение девственности, [npc.she] [npc.verb(gain)])] [style.italicsExperience("+AbstractFetish.getExperienceGainFromTakingOtherVirginity(partner)+")] [style.italicsArcane(опыт!)]</p>"));
 										}
 									}
 								} else {
@@ -9400,7 +9335,7 @@ public abstract class GameCharacter implements XMLSaving {
 							if(this.isVaginaUrethraVirgin()) {
 								this.setVaginaUrethraVirgin(false);
 								if(descriptionNeeded) {
-									sexDescriptionSB.append(UtilText.parse(this, "<p class='centre noPad'>[style.italicsTerrible([npc.Name] lost [npc.her] vaginal urethra virginity!)]</p>"));
+									sexDescriptionSB.append(UtilText.parse(this, "<p class='centre noPad'>[style.italicsTerrible([npc.Name] лишился(ась) [npc.her] девственности мочеиспускательного канала влагалища!)]</p>"));
 								}
 								if(partnerPresent) {
 									this.setVirginityLoss(sexType, partner, partner.getLostVirginityDescriptor());
@@ -9408,8 +9343,7 @@ public abstract class GameCharacter implements XMLSaving {
 										partner.incrementExperience(AbstractFetish.getExperienceGainFromTakingOtherVirginity(partner), true);
 										partner.incrementFetishExperience(Fetish.FETISH_DEFLOWERING, Fetish.FETISH_DEFLOWERING.getExperienceGainFromSexAction());
 										if(descriptionNeeded) {
-											sexDescriptionSB.append(UtilText.parse(partner, "<p class='centre noPad'>[style.italicsArcane(Due to [npc.namePos] deflowering fetish, [npc.she] [npc.verb(gain)])]"
-												+ " [style.italicsExperience("+AbstractFetish.getExperienceGainFromTakingOtherVirginity(partner)+")] [style.italicsArcane(experience!)]</p>"));
+											sexDescriptionSB.append(UtilText.parse(partner, "<p class='centre noPad'>[style.italicsArcane(Из-за фетиша [npc.namePos] на лишение девственности, [npc.she] [npc.verb(gain)])] [style.italicsExperience("+AbstractFetish.getExperienceGainFromTakingOtherVirginity(partner)+")] [style.italicsArcane(опыт!)]</p>"));
 										}
 									}
 								} else {
@@ -9421,7 +9355,7 @@ public abstract class GameCharacter implements XMLSaving {
 							if(this.isVaginaVirgin()) {
 								this.setVaginaVirgin(false);
 								if(descriptionNeeded) {
-									sexDescriptionSB.append(UtilText.parse(this, "<p class='centre noPad'>[style.italicsTerrible([npc.Name] lost [npc.her] virginity!)]</p>"));
+									sexDescriptionSB.append(UtilText.parse(this, "<p class='centre noPad'>[style.italicsTerrible([npc.Name] лишился(ась) [npc.her] девственности!)]</p>"));
 								}
 								if(partnerPresent) {
 									this.setVirginityLoss(sexType, partner, partner.getLostVirginityDescriptor());
@@ -9429,8 +9363,7 @@ public abstract class GameCharacter implements XMLSaving {
 										partner.incrementExperience(AbstractFetish.getExperienceGainFromTakingOtherVirginity(partner), true);
 										partner.incrementFetishExperience(Fetish.FETISH_DEFLOWERING, Fetish.FETISH_DEFLOWERING.getExperienceGainFromSexAction());
 										if(descriptionNeeded) {
-											sexDescriptionSB.append(UtilText.parse(partner, "<p class='centre noPad'>[style.italicsArcane(Due to [npc.namePos] deflowering fetish, [npc.she] [npc.verb(gain)])]"
-												+ " [style.italicsExperience("+AbstractFetish.getExperienceGainFromTakingOtherVirginity(partner)+")] [style.italicsArcane(experience!)]</p>"));
+											sexDescriptionSB.append(UtilText.parse(partner, "<p class='centre noPad'>[style.italicsArcane(Из-за фетиша [npc.namePos] на лишение девственности, [npc.she] [npc.verb(gain)])] [style.italicsExperience("+AbstractFetish.getExperienceGainFromTakingOtherVirginity(partner)+")] [style.italicsArcane(опыт!)]</p>"));
 										}
 									}
 								} else {
@@ -9439,7 +9372,7 @@ public abstract class GameCharacter implements XMLSaving {
 							} else if(this.hasHymen()) {
 								this.setHymen(false);
 								if(descriptionNeeded) {
-									sexDescriptionSB.append(UtilText.parse(this, "<p class='centre noPad'>[style.italicsTerrible([npc.NamePos] hymen was torn!)]</p>"));
+									sexDescriptionSB.append(UtilText.parse(this, "<p class='centre noPad'>[style.italicsTerrible([npc.NamePos] девственная плева была разорвана!)]</p>"));
 								}
 							}
 							break;
@@ -9447,7 +9380,7 @@ public abstract class GameCharacter implements XMLSaving {
 							if(this.isSpinneretVirgin()) {
 								this.setSpinneretVirgin(false);
 								if(descriptionNeeded) {
-									sexDescriptionSB.append(UtilText.parse(this, "<p class='centre noPad'>[style.italicsTerrible([npc.Name] lost [npc.her] spinneret virginity!)]</p>"));
+									sexDescriptionSB.append(UtilText.parse(this, "<p class='centre noPad'>[style.italicsTerrible([npc.Name] лишился(ась) [npc.her] девственности паутинного выхода!)]</p>"));
 								}
 								if(partnerPresent) {
 									this.setVirginityLoss(sexType, partner, partner.getLostVirginityDescriptor());
@@ -9455,8 +9388,7 @@ public abstract class GameCharacter implements XMLSaving {
 										partner.incrementExperience(AbstractFetish.getExperienceGainFromTakingOtherVirginity(partner), true);
 										partner.incrementFetishExperience(Fetish.FETISH_DEFLOWERING, Fetish.FETISH_DEFLOWERING.getExperienceGainFromSexAction());
 										if(descriptionNeeded) {
-											sexDescriptionSB.append(UtilText.parse(partner, "<p class='centre noPad'>[style.italicsArcane(Due to [npc.namePos] deflowering fetish, [npc.she] [npc.verb(gain)])]"
-												+ " [style.italicsExperience("+AbstractFetish.getExperienceGainFromTakingOtherVirginity(partner)+")] [style.italicsArcane(experience!)]</p>"));
+											sexDescriptionSB.append(UtilText.parse(partner, "<p class='centre noPad'>[style.italicsArcane(Из-за фетиша [npc.namePos] на лишение девственности, [npc.she] [npc.verb(gain)])] [style.italicsExperience("+AbstractFetish.getExperienceGainFromTakingOtherVirginity(partner)+")] [style.italicsArcane(опыт!)]</p>"));
 										}
 									}
 								} else {
@@ -9499,7 +9431,7 @@ public abstract class GameCharacter implements XMLSaving {
 						if(this.isPenisVirgin() && this.hasPenisIgnoreDildo()) {
 							this.setPenisVirgin(false);
 							if(descriptionNeeded) {
-								sexDescriptionSB.append(UtilText.parse(this, "<p class='centre noPad'>[style.italicsTerrible([npc.Name] lost [npc.her] penile virginity!)]</p>"));
+								sexDescriptionSB.append(UtilText.parse(this, "<p class='centre noPad'>[style.italicsTerrible([npc.Name] лишился [npc.her] пенисной девственности!)]</p>"));
 							}
 							if(partnerPresent) {
 								this.setVirginityLoss(sexType, partner, partner.getLostVirginityDescriptor());
@@ -9507,8 +9439,7 @@ public abstract class GameCharacter implements XMLSaving {
 									partner.incrementExperience(AbstractFetish.getExperienceGainFromTakingOtherVirginity(partner), true);
 									partner.incrementFetishExperience(Fetish.FETISH_DEFLOWERING, Fetish.FETISH_DEFLOWERING.getExperienceGainFromSexAction());
 									if(descriptionNeeded) {
-										sexDescriptionSB.append(UtilText.parse(partner, "<p class='centre noPad'>[style.italicsArcane(Due to [npc.namePos] deflowering fetish, [npc.she] [npc.verb(gain)])]"
-											+ " [style.italicsExperience("+AbstractFetish.getExperienceGainFromTakingOtherVirginity(partner)+")] [style.italicsArcane(experience!)]</p>"));
+										sexDescriptionSB.append(UtilText.parse(partner, "<p class='centre noPad'>[style.italicsArcane(Из-за фетиша [npc.namePos] на лишение девственности, [npc.she] [npc.verb(gain)])] [style.italicsExperience("+AbstractFetish.getExperienceGainFromTakingOtherVirginity(partner)+")] [style.italicsArcane(опыт!)]</p>"));
 									}
 								}
 							} else {
@@ -9522,10 +9453,10 @@ public abstract class GameCharacter implements XMLSaving {
 							if(thisCummed) { // If this character came, apply relevant effects
 								if(thisCondom) { // Handle this character wearing a condom:
 									if(GenericOrgasms.GENERIC_ORGASM_CREAMPIE.getCondomFailure(this, partner)!=CondomFailure.NONE) {
-										ingestFluidSB.append(UtilText.parse(this, "<p class='centre noPad'>[npc.NamePos] [style.italicsTerrible(condom broke)] as [npc.she] [npc.was] cumming!</p>"));
+										ingestFluidSB.append(UtilText.parse(this, "<p class='centre noPad'>[npc.NamePos] [style.italicsTerrible(презерватив порвался)], пока [npc.she] [npc.was] кончает!</p>"));
 										thisCondom = false;
 									} else {
-										ingestFluidSB.append(UtilText.parse(this, "<p class='centre noPad'>[npc.NamePos] [npc.cum] was [style.boldGood(caught in [npc.her] condom)]!</p>"));
+										ingestFluidSB.append(UtilText.parse(this, "<p class='centre noPad'>[npc.NamePos] [npc.cum] был [style.boldGood(пойман в [npc.her] презерватив)]!</p>"));
 										if(condomAbleToBeAdded) {
 											ingestFluidSB.append(Main.game.getPlayer().addItem(
 													Main.game.getItemGen().generateFilledCondom(
@@ -9551,29 +9482,22 @@ public abstract class GameCharacter implements XMLSaving {
 										if(extendedDescription) {
 											if(this.isInternalTesticles()) {
 												orgasmSB.append(UtilText.parse(partner, this,
-														"<p class='centre noPad'>"
-															+ "Driving [npc2.her] [npc2.cock+] deep into [npc.namePos] "+targetedArea.getName(partner)
-															+", [npc2.namePos] [npc2.balls+] tensed up and [style.colourCum(unloaded their cum)] inside of [npc.herHim]!"
-														+ "</p>"));
+														"<p class='centre noPad'>Вколачивая [npc2.her] [npc2.cock+] глубоко в [npc.namePos] "+targetedArea.getName(partner)
+															+", [npc2.namePos] [npc2.balls+] напрягся и [style.colourCum(изверг свою сперму)] внутрь [npc.herHim]!</p>"));
 											} else {
 												orgasmSB.append(UtilText.parse(partner, this,
-														"<p class='centre noPad'>"
-															+ "Driving [npc2.her] [npc2.cock+] deep into [npc.namePos] "+targetedArea.getName(partner)+", [npc2.name] let out [npc2.a_moan+] and [style.colourCum(came inside)] of [npc.herHim]!"
-														+ "</p>"));
+														"<p class='centre noPad'>Вколачивая [npc2.her] [npc2.cock+] глубоко в [npc.namePos] "+targetedArea.getName(partner)+", [npc2.name] издал [npc2.a_moan+] и [style.colourCum(кончил внутрь)] [npc.herHim]!</p>"));
 											}
 										} else {
 											orgasmSB.append(UtilText.parse(partner, this,
-															"<p class='centre noPad'>"
-																+ "[npc2.Name] [style.colourCum(came inside)] of [npc.namePos] "+targetedArea.getName(partner)+"!"
+															"<p class='centre noPad'>[npc2.Name] [style.colourCum(кончил внутрь)] [npc.namePos] "+targetedArea.getName(partner)+"!"
 															+ "</p>"));
 										}
 									}
 								} else {
 									if(descriptionNeeded) {
 										orgasmSB.append(UtilText.parse(partner, this,
-												"<p class='centre noPad'>"
-													+ "[npc2.Name] [style.colourCum(pulled out)] of [npc.namePos] "+targetedArea.getName(partner)+" just before [npc2.she] started cumming!"
-												+ "</p>"));
+												"<p class='centre noPad'>[npc2.Name] [style.colourCum(вытащил из)] [npc.namePos] "+targetedArea.getName(partner)+" прямо перед тем, как [npc2.she] начал кончать!</p>"));
 									}
 								}
 							}
@@ -9597,11 +9521,11 @@ public abstract class GameCharacter implements XMLSaving {
 							if(descriptionNeeded) {
 								if(extendedDescription) {
 									ingestFluidSB.append(UtilText.parse(this, partner,
-											"<p class='centre noPad'>Due to performing oral on [npc2.namePos] wet [npc2.pussy], [npc.name] ended up [style.colourGirlcum(drinking [npc2.her] [npc2.girlcum])]!</p>"));
+											"<p class='centre noPad'>Из-за того, что <p class='centre noPad'> занимался оральным сексом с мокрой [npc2.namePos] [npc2.pussy], [npc.name] в итоге [style.colourGirlcum(выпил [npc2.her] [npc2.girlcum])]!</p>"));
 									
 								} else {
 									ingestFluidSB.append(UtilText.parse(this, partner,
-													"<p class='centre noPad'>[npc.Name] [style.colourGirlcum(drank [npc2.namePos] [npc2.girlcum])]!</p>"));
+													"<p class='centre noPad'>[npc.Name] [style.colourGirlcum(выпила [npc2.namePos] [npc2.girlcum])]!</p>"));
 								}
 							}
 							
@@ -9633,11 +9557,11 @@ public abstract class GameCharacter implements XMLSaving {
 							if(descriptionNeeded) {
 								if(extendedDescription) {
 									ingestFluidSB.append(UtilText.parse(this, partner,
-											"<p class='centre noPad'>Due to suckling on [npc2.namePos] milky [npc2.nipples], [npc.name] ended up [style.colourMilk(drinking [npc2.her] [npc2.milk])]!</p>"));
+											"<p class='centre noPad'>Из-за того, что <p class='centre noPad'> сосал молочную [npc2.namePos] [npc2.nipples], [npc.name] в итоге стал [style.colourMilk(пить [npc2.her] [npc2.milk])]!</p>"));
 									
 								} else {
 									ingestFluidSB.append(UtilText.parse(this, partner,
-													"<p class='centre noPad'>[npc.Name] [style.colourMilk(drank [npc2.namePos] [npc2.milk])]!</p>"));
+													"<p class='centre noPad'>[npc.Name] [style.colourMilk(выпила [npc2.namePos] [npc2.milk])]!</p>"));
 								}
 							}
 							
@@ -9670,11 +9594,11 @@ public abstract class GameCharacter implements XMLSaving {
 							if(descriptionNeeded) {
 								if(extendedDescription) {
 									ingestFluidSB.append(UtilText.parse(this, partner,
-											"<p class='centre noPad'>Due to suckling on [npc2.namePos] milky [npc2.crotchNipples], [npc.name] ended up [style.colourMilk(drinking [npc2.her] [npc2.crotchMilk])]!</p>"));
+											"<p class='centre noPad'>Из-за того, что <p class='centre noPad'> сосал молочную [npc2.namePos] [npc2.crotchNipples], [npc.name] в итоге стал [style.colourMilk(пить [npc2.her] [npc2.crotchMilk])]!</p>"));
 									
 								} else {
 									ingestFluidSB.append(UtilText.parse(this, partner,
-													"<p class='centre noPad'>[npc.Name] [style.colourMilk(drank [npc2.namePos] [npc2.crotchMilk])]!</p>"));
+													"<p class='centre noPad'>[npc.Name] [style.colourMilk(выпил(а) [npc2.namePos] [npc2.crotchMilk])]!</p>"));
 								}
 							}
 							
@@ -9715,14 +9639,13 @@ public abstract class GameCharacter implements XMLSaving {
 									partner.setAssVirgin(false);
 									partner.setVirginityLoss(partnerSexType, this, this.getLostVirginityDescriptor());
 									if(descriptionNeeded) {
-										sexDescriptionSB.append(UtilText.parse(partner, "<p class='centre noPad'>[style.italicsTerrible([npc.Name] lost [npc.her] anal virginity!)]</p>"));
+										sexDescriptionSB.append(UtilText.parse(partner, "<p class='centre noPad'>[style.italicsTerrible([npc.Name] лишился(ась) [npc.her] анальной девственности!)]</p>"));
 									}
 									if(this.hasFetish(Fetish.FETISH_DEFLOWERING)) {
 										this.incrementExperience(AbstractFetish.getExperienceGainFromTakingOtherVirginity(this), true);
 										this.incrementFetishExperience(Fetish.FETISH_DEFLOWERING, Fetish.FETISH_DEFLOWERING.getExperienceGainFromSexAction());
 										if(descriptionNeeded) {
-											sexDescriptionSB.append(UtilText.parse(this, "<p class='centre noPad'>[style.italicsArcane(Due to [npc.namePos] deflowering fetish, [npc.she] [npc.verb(gain)])]"
-												+ " [style.italicsExperience("+AbstractFetish.getExperienceGainFromTakingOtherVirginity(this)+")] [style.italicsArcane(experience!)]</p>"));
+											sexDescriptionSB.append(UtilText.parse(this, "<p class='centre noPad'>[style.italicsArcane(Из-за фетиша [npc.namePos] на лишение девственности, [npc.she] [npc.verb(gain)])] [style.italicsExperience("+AbstractFetish.getExperienceGainFromTakingOtherVirginity(this)+")] [style.italicsArcane(опыт!)]</p>"));
 										}
 									}
 								}
@@ -9738,14 +9661,13 @@ public abstract class GameCharacter implements XMLSaving {
 									partner.setFaceVirgin(false);
 									partner.setVirginityLoss(partnerSexType, this, this.getLostVirginityDescriptor());
 									if(descriptionNeeded) {
-										sexDescriptionSB.append(UtilText.parse(partner, "<p class='centre noPad'>[style.italicsTerrible([npc.Name] lost [npc.her] oral virginity!)]</p>"));
+										sexDescriptionSB.append(UtilText.parse(partner, "<p class='centre noPad'>[style.italicsTerrible([npc.Name] лишился(ась) [npc.her] оральной девственности!)]</p>"));
 									}
 									if(this.hasFetish(Fetish.FETISH_DEFLOWERING)) {
 										this.incrementExperience(AbstractFetish.getExperienceGainFromTakingOtherVirginity(this), true);
 										this.incrementFetishExperience(Fetish.FETISH_DEFLOWERING, Fetish.FETISH_DEFLOWERING.getExperienceGainFromSexAction());
 										if(descriptionNeeded) {
-											sexDescriptionSB.append(UtilText.parse(this, "<p class='centre noPad'>[style.italicsArcane(Due to [npc.namePos] deflowering fetish, [npc.she] [npc.verb(gain)])]"
-												+ " [style.italicsExperience("+AbstractFetish.getExperienceGainFromTakingOtherVirginity(this)+")] [style.italicsArcane(experience!)]</p>"));
+											sexDescriptionSB.append(UtilText.parse(this, "<p class='centre noPad'>[style.italicsArcane(Из-за фетиша [npc.namePos] на лишение девственности, [npc.she] [npc.verb(gain)])] [style.italicsExperience("+AbstractFetish.getExperienceGainFromTakingOtherVirginity(this)+")] [style.italicsArcane(опыт!)]</p>"));
 										}
 									}
 								}
@@ -9755,14 +9677,13 @@ public abstract class GameCharacter implements XMLSaving {
 									partner.setNippleVirgin(false);
 									partner.setVirginityLoss(partnerSexType, this, this.getLostVirginityDescriptor());
 									if(descriptionNeeded) {
-										sexDescriptionSB.append(UtilText.parse(partner, "<p class='centre noPad'>[style.italicsTerrible([npc.Name] lost [npc.her] nipple virginity!)]</p>"));
+										sexDescriptionSB.append(UtilText.parse(partner, "<p class='centre noPad'>[style.italicsTerrible([npc.Name] лишился(ась) [npc.her] девственности сосков!)]</p>"));
 									}
 									if(this.hasFetish(Fetish.FETISH_DEFLOWERING)) {
 										this.incrementExperience(AbstractFetish.getExperienceGainFromTakingOtherVirginity(this), true);
 										this.incrementFetishExperience(Fetish.FETISH_DEFLOWERING, Fetish.FETISH_DEFLOWERING.getExperienceGainFromSexAction());
 										if(descriptionNeeded) {
-											sexDescriptionSB.append(UtilText.parse(this, "<p class='centre noPad'>[style.italicsArcane(Due to [npc.namePos] deflowering fetish, [npc.she] [npc.verb(gain)])]"
-												+ " [style.italicsExperience("+AbstractFetish.getExperienceGainFromTakingOtherVirginity(this)+")] [style.italicsArcane(experience!)]</p>"));
+											sexDescriptionSB.append(UtilText.parse(this, "<p class='centre noPad'>[style.italicsArcane(Из-за фетиша [npc.namePos] на лишение девственности, [npc.she] [npc.verb(gain)])] [style.italicsExperience("+AbstractFetish.getExperienceGainFromTakingOtherVirginity(this)+")] [style.italicsArcane(опыт!)]</p>"));
 										}
 									}
 								}
@@ -9772,14 +9693,13 @@ public abstract class GameCharacter implements XMLSaving {
 									partner.setNippleCrotchVirgin(false);
 									partner.setVirginityLoss(partnerSexType, this, this.getLostVirginityDescriptor());
 									if(descriptionNeeded) {
-										sexDescriptionSB.append(UtilText.parse(partner, "<p class='centre noPad'>[style.italicsTerrible([npc.Name] lost [npc.her] crotch-nipple virginity!)]</p>"));
+										sexDescriptionSB.append(UtilText.parse(partner, "<p class='centre noPad'>[style.italicsTerrible([npc.Name] лишился(ась) [npc.her] девственности паховых сосков!)]</p>"));
 									}
 									if(this.hasFetish(Fetish.FETISH_DEFLOWERING)) {
 										this.incrementExperience(AbstractFetish.getExperienceGainFromTakingOtherVirginity(this), true);
 										this.incrementFetishExperience(Fetish.FETISH_DEFLOWERING, Fetish.FETISH_DEFLOWERING.getExperienceGainFromSexAction());
 										if(descriptionNeeded) {
-											sexDescriptionSB.append(UtilText.parse(this, "<p class='centre noPad'>[style.italicsArcane(Due to [npc.namePos] deflowering fetish, [npc.she] [npc.verb(gain)])]"
-												+ " [style.italicsExperience("+AbstractFetish.getExperienceGainFromTakingOtherVirginity(this)+")] [style.italicsArcane(experience!)]</p>"));
+											sexDescriptionSB.append(UtilText.parse(this, "<p class='centre noPad'>[style.italicsArcane(Из-за фетиша [npc.namePos] на лишение девственности, [npc.she] [npc.verb(gain)])] [style.italicsExperience("+AbstractFetish.getExperienceGainFromTakingOtherVirginity(this)+")] [style.italicsArcane(опыт!)]</p>"));
 										}
 									}
 								}
@@ -9791,14 +9711,13 @@ public abstract class GameCharacter implements XMLSaving {
 									partner.setUrethraVirgin(false);
 									partner.setVirginityLoss(partnerSexType, this, this.getLostVirginityDescriptor());
 									if(descriptionNeeded) {
-										sexDescriptionSB.append(UtilText.parse(partner, "<p class='centre noPad'>[style.italicsTerrible([npc.Name] lost [npc.her] penile urethra virginity!)]</p>"));
+										sexDescriptionSB.append(UtilText.parse(partner, "<p class='centre noPad'>[style.italicsTerrible([npc.Name] лишился(ась) [npc.her] девственности мочеиспускательного канала пениса!)]</p>"));
 									}
 									if(this.hasFetish(Fetish.FETISH_DEFLOWERING)) {
 										this.incrementExperience(AbstractFetish.getExperienceGainFromTakingOtherVirginity(this), true);
 										this.incrementFetishExperience(Fetish.FETISH_DEFLOWERING, Fetish.FETISH_DEFLOWERING.getExperienceGainFromSexAction());
 										if(descriptionNeeded) {
-											sexDescriptionSB.append(UtilText.parse(this, "<p class='centre noPad'>[style.italicsArcane(Due to [npc.namePos] deflowering fetish, [npc.she] [npc.verb(gain)])]"
-												+ " [style.italicsExperience("+AbstractFetish.getExperienceGainFromTakingOtherVirginity(this)+")] [style.italicsArcane(experience!)]</p>"));
+											sexDescriptionSB.append(UtilText.parse(this, "<p class='centre noPad'>[style.italicsArcane(Из-за фетиша [npc.namePos] на лишение девственности, [npc.she] [npc.verb(gain)])] [style.italicsExperience("+AbstractFetish.getExperienceGainFromTakingOtherVirginity(this)+")] [style.italicsArcane(опыт!)]</p>"));
 										}
 									}
 								}
@@ -9808,14 +9727,13 @@ public abstract class GameCharacter implements XMLSaving {
 									partner.setVaginaUrethraVirgin(false);
 									partner.setVirginityLoss(partnerSexType, this, this.getLostVirginityDescriptor());
 									if(descriptionNeeded) {
-										sexDescriptionSB.append(UtilText.parse(partner, "<p class='centre noPad'>[style.italicsTerrible([npc.Name] lost [npc.her] vaginal urethra virginity!)]</p>"));
+										sexDescriptionSB.append(UtilText.parse(partner, "<p class='centre noPad'>[style.italicsTerrible([npc.Name] лишился(ась) [npc.her] девственности мочеиспускательного канала влагалища!)]</p>"));
 									}
 									if(this.hasFetish(Fetish.FETISH_DEFLOWERING)) {
 										this.incrementExperience(AbstractFetish.getExperienceGainFromTakingOtherVirginity(this), true);
 										this.incrementFetishExperience(Fetish.FETISH_DEFLOWERING, Fetish.FETISH_DEFLOWERING.getExperienceGainFromSexAction());
 										if(descriptionNeeded) {
-											sexDescriptionSB.append(UtilText.parse(this, "<p class='centre noPad'>[style.italicsArcane(Due to [npc.namePos] deflowering fetish, [npc.she] [npc.verb(gain)])]"
-												+ " [style.italicsExperience("+AbstractFetish.getExperienceGainFromTakingOtherVirginity(this)+")] [style.italicsArcane(experience!)]</p>"));
+											sexDescriptionSB.append(UtilText.parse(this, "<p class='centre noPad'>[style.italicsArcane(Из-за фетиша [npc.namePos] на лишение девственности, [npc.she] [npc.verb(gain)])] [style.italicsExperience("+AbstractFetish.getExperienceGainFromTakingOtherVirginity(this)+")] [style.italicsArcane(опыт!)]</p>"));
 										}
 									}
 								}
@@ -9825,20 +9743,19 @@ public abstract class GameCharacter implements XMLSaving {
 									partner.setVaginaVirgin(false);
 									partner.setVirginityLoss(partnerSexType, this, this.getLostVirginityDescriptor());
 									if(descriptionNeeded) {
-										sexDescriptionSB.append(UtilText.parse(partner, "<p class='centre noPad'>[style.italicsTerrible([npc.Name] lost [npc.her] virginity!)]</p>"));
+										sexDescriptionSB.append(UtilText.parse(partner, "<p class='centre noPad'>[style.italicsTerrible([npc.Name] лишился(ась) [npc.her] девственности!)]</p>"));
 									}
 									if(this.hasFetish(Fetish.FETISH_DEFLOWERING)) {
 										this.incrementExperience(AbstractFetish.getExperienceGainFromTakingOtherVirginity(this), true);
 										this.incrementFetishExperience(Fetish.FETISH_DEFLOWERING, Fetish.FETISH_DEFLOWERING.getExperienceGainFromSexAction());
 										if(descriptionNeeded) {
-											sexDescriptionSB.append(UtilText.parse(this, "<p class='centre noPad'>[style.italicsArcane(Due to [npc.namePos] deflowering fetish, [npc.she] [npc.verb(gain)])]"
-												+ " [style.italicsExperience("+AbstractFetish.getExperienceGainFromTakingOtherVirginity(this)+")] [style.italicsArcane(experience!)]</p>"));
+											sexDescriptionSB.append(UtilText.parse(this, "<p class='centre noPad'>[style.italicsArcane(Из-за фетиша [npc.namePos] на лишение девственности, [npc.she] [npc.verb(gain)])] [style.italicsExperience("+AbstractFetish.getExperienceGainFromTakingOtherVirginity(this)+")] [style.italicsArcane(опыт!)]</p>"));
 										}
 									}
 								} else if(partner.hasHymen()) {
 									partner.setHymen(false);
 									if(descriptionNeeded) {
-										sexDescriptionSB.append(UtilText.parse(partner, "<p class='centre noPad'>[style.italicsTerrible([npc.NamePos] hymen was torn!)]</p>"));
+										sexDescriptionSB.append(UtilText.parse(partner, "<p class='centre noPad'>[style.italicsTerrible([npc.NamePos] девственная плева была разорвана!)]</p>"));
 									}
 								}
 								break;
@@ -9847,14 +9764,13 @@ public abstract class GameCharacter implements XMLSaving {
 									partner.setSpinneretVirgin(false);
 									partner.setVirginityLoss(partnerSexType, this, this.getLostVirginityDescriptor());
 									if(descriptionNeeded) {
-										sexDescriptionSB.append(UtilText.parse(partner, "<p class='centre noPad'>[style.italicsTerrible([npc.Name] lost [npc.her] spinneret virginity!)]</p>"));
+										sexDescriptionSB.append(UtilText.parse(partner, "<p class='centre noPad'>[style.italicsTerrible([npc.Name] лишился(ась) [npc.her] девственности паутинного выхода!)]</p>"));
 									}
 									if(this.hasFetish(Fetish.FETISH_DEFLOWERING)) {
 										this.incrementExperience(AbstractFetish.getExperienceGainFromTakingOtherVirginity(this), true);
 										this.incrementFetishExperience(Fetish.FETISH_DEFLOWERING, Fetish.FETISH_DEFLOWERING.getExperienceGainFromSexAction());
 										if(descriptionNeeded) {
-											sexDescriptionSB.append(UtilText.parse(this, "<p class='centre noPad'>[style.italicsArcane(Due to [npc.namePos] deflowering fetish, [npc.she] [npc.verb(gain)])]"
-												+ " [style.italicsExperience("+AbstractFetish.getExperienceGainFromTakingOtherVirginity(this)+")] [style.italicsArcane(experience!)]</p>"));
+											sexDescriptionSB.append(UtilText.parse(this, "<p class='centre noPad'>[style.italicsArcane(Из-за фетиша [npc.namePos] на лишение девственности, [npc.she] [npc.verb(gain)])] [style.italicsExperience("+AbstractFetish.getExperienceGainFromTakingOtherVirginity(this)+")] [style.italicsArcane(опыт!)]</p>"));
 										}
 									}
 								}
@@ -9895,7 +9811,7 @@ public abstract class GameCharacter implements XMLSaving {
 			if(partnerPresent && partner.isAbleToOrgasm() && partner.hasPenisIgnoreDildo() && partner.getPenisRawCumStorageValue()>0) {
 				if(partner.isWearingCondom()) { // Handle this character wearing a condom:
 					if(GenericOrgasms.GENERIC_ORGASM_CREAMPIE.getCondomFailure(partner, this)==CondomFailure.NONE) {
-						ingestFluidSB.append(UtilText.parse(partner, "<p class='centre noPad'>[npc.NamePos] [npc.cum] was [style.boldGood(caught in [npc.her] condom)]!</p>"));
+						ingestFluidSB.append(UtilText.parse(partner, "<p class='centre noPad'>[npc.NamePos] [npc.cum] был [style.boldGood(пойман в [npc.her] презерватив)]!</p>"));
 						if(condomAbleToBeAdded) {
 							ingestFluidSB.append(Main.game.getPlayer().addItem(
 									Main.game.getItemGen().generateFilledCondom(
@@ -9917,7 +9833,7 @@ public abstract class GameCharacter implements XMLSaving {
 			if(this.isAbleToOrgasm() && this.hasPenisIgnoreDildo() && this.getPenisRawCumStorageValue()>0) {
 				if(this.isWearingCondom()) { // Handle this character wearing a condom:
 					if(GenericOrgasms.GENERIC_ORGASM_CREAMPIE.getCondomFailure(this, partner)==CondomFailure.NONE) {
-						ingestFluidSB.append(UtilText.parse(this, "<p class='centre noPad'>[npc.NamePos] [npc.cum] was [style.boldGood(caught in [npc.her] condom)]!</p>"));
+						ingestFluidSB.append(UtilText.parse(this, "<p class='centre noPad'>[npc.NamePos] [npc.cum] был [style.boldGood(пойман в [npc.her] презерватив)]!</p>"));
 						if(condomAbleToBeAdded) {
 							ingestFluidSB.append(Main.game.getPlayer().addItem(
 									Main.game.getItemGen().generateFilledCondom(
@@ -9954,7 +9870,7 @@ public abstract class GameCharacter implements XMLSaving {
 				if(cummedOnArea!=CoverableArea.NONE) {
 					if(partnerPresent) {
 						ingestFluidSB.append(UtilText.parse(partner, this,
-								"<p class='centre noPad'>[style.colourCum([npc.Name] came on [npc2.namePos] "+(cumTargetArea!=null && cumTargetArea.isRequiresPartner()?cumTargetArea.getSimpleName():cummedOnArea.getName())+")]!</p>"));
+								"<p class='centre noPad'>[style.colourCum([npc.Name] кончил на [npc2.namePos] "+(cumTargetArea!=null && cumTargetArea.isRequiresPartner()?cumTargetArea.getSimpleName():cummedOnArea.getName())+")]!</p>"));
 						ingestFluidSB.append(UtilText.parse(Main.sex.applyCummedOnEffects(cummedOnArea, partner, this, true)));
 
 						// Extra cum:
@@ -9963,15 +9879,15 @@ public abstract class GameCharacter implements XMLSaving {
 						List<CoverableArea> extraCoverableAreasHit = new ArrayList<>();
 						if(extraDirtySlots>0) {
 							ingestFluidSB.append("<p class='centre noPad'><i>[style.boldSex(");
-								ingestFluidSB.append(UtilText.parse(partner, this, "[npc.Name] came so much that [npc2.name] [npc2.was]"));
+								ingestFluidSB.append(UtilText.parse(partner, this, "[npc.Name] выплеснулось так много, что [npc2.name] [npc2.was]"));
 								switch(cumProduction) {
 									case FOUR_LARGE:
 									case FIVE_HUGE:
 									case SIX_EXTREME:
-										ingestFluidSB.append(UtilText.parse(partner, " covered in [npc.her] [npc.cum+]!"));
+										ingestFluidSB.append(UtilText.parse(partner, " весь в [npc.her] [npc.cum+]!"));
 										break;
 									case SEVEN_MONSTROUS:
-										ingestFluidSB.append(UtilText.parse(partner, " absolutely drenched in [npc.her] [npc.cum+]!"));
+										ingestFluidSB.append(UtilText.parse(partner, " абсолютно пропитан [npc.her] [npc.cum+]!"));
 										break;
 									case THREE_AVERAGE:
 									case TWO_SMALL_AMOUNT:
@@ -10002,7 +9918,7 @@ public abstract class GameCharacter implements XMLSaving {
 								this.addDirtySlot(slot);
 								slotNames.add(slot.getName());
 							}
-							ingestFluidSB.append(UtilText.parse(this, "<p class='centre noPad'>[npc.Name] had [npc.her] "+Util.stringsToStringList(slotNames, false)+" [style.colourCum(covered in cum)]!</p>"));
+							ingestFluidSB.append(UtilText.parse(this, "<p class='centre noPad'>[npc.Name] имел(а) [npc.her] "+Util.stringsToStringList(slotNames, false)+" [style.colourCum(весь в сперме)]!</p>"));
 						}
 					}
 				}
@@ -10021,7 +9937,7 @@ public abstract class GameCharacter implements XMLSaving {
 					
 					if(cummedOnArea!=CoverableArea.NONE) {
 						ingestFluidSB.append(UtilText.parse(this, partner,
-								"<p class='centre noPad'>[style.colourCum([npc.Name] came on [npc2.namePos] "+(cumTargetArea!=null && cumTargetArea.isRequiresPartner()?cumTargetArea.getSimpleName():cummedOnArea.getName())+")]!</p>"));
+								"<p class='centre noPad'>[style.colourCum([npc.Name] кончил на [npc2.namePos] "+(cumTargetArea!=null && cumTargetArea.isRequiresPartner()?cumTargetArea.getSimpleName():cummedOnArea.getName())+")]!</p>"));
 						ingestFluidSB.append(UtilText.parse(Main.sex.applyCummedOnEffects(cummedOnArea, this, partner, true)));
 
 						// Extra cum:
@@ -10030,15 +9946,15 @@ public abstract class GameCharacter implements XMLSaving {
 						List<CoverableArea> extraCoverableAreasHit = new ArrayList<>();
 						if(extraDirtySlots>0) {
 							ingestFluidSB.append("<p class='centre noPad'><i>[style.boldSex(");
-								ingestFluidSB.append(UtilText.parse(this, partner, "[npc.Name] came so much that [npc2.name] [npc2.was]"));
+								ingestFluidSB.append(UtilText.parse(this, partner, "[npc.Name] выплеснулось так много, что [npc2.name] [npc2.was]"));
 								switch(cumProduction) {
 									case FOUR_LARGE:
 									case FIVE_HUGE:
 									case SIX_EXTREME:
-										ingestFluidSB.append(UtilText.parse(this, " covered in [npc.her] [npc.cum+]!"));
+										ingestFluidSB.append(UtilText.parse(this, " весь в [npc.her] [npc.cum+]!"));
 										break;
 									case SEVEN_MONSTROUS:
-										ingestFluidSB.append(UtilText.parse(this, " absolutely drenched in [npc.her] [npc.cum+]!"));
+										ingestFluidSB.append(UtilText.parse(this, " абсолютно пропитан [npc.her] [npc.cum+]!"));
 										break;
 									case THREE_AVERAGE:
 									case TWO_SMALL_AMOUNT:
@@ -10768,86 +10684,86 @@ public abstract class GameCharacter implements XMLSaving {
 	
 	public String getVirginityLossDescription(SexType sexType) {
 		if(this.getVirginityLoss(sexType)==null || this.getVirginityLoss(sexType).getKey()==null) {
-			return UtilText.parse(this, "[npc.Name] lost [npc.her] virginity to someone [npc.she] can't remember."); // Catch bugged virginity loss save.
+			return UtilText.parse(this, "[npc.Name] лишилась [npc.her] девственности с кем-то, кого [npc.she] не может вспомнить."); // Catch bugged virginity loss save.
 		}
 		
 		if(this.getVirginityLoss(sexType).getKey()!=null && this.getVirginityLoss(sexType).getKey().isEmpty()) { // Support for versions prior to 0.2.10
 			if(virginityLossMap.get(sexType).getValue().isEmpty()) { // Catch for if there's no description
-				return UtilText.parse(this, "[npc.Name] lost [npc.her] virginity to someone [npc.she] can't remember.");
+				return UtilText.parse(this, "[npc.Name] лишилась [npc.her] девственности с кем-то, кого [npc.she] не может вспомнить.");
 			} else {
-				return UtilText.parse(this, "[npc.Name] lost [npc.her] virginity to "+virginityLossMap.get(sexType).getValue()+".");
+				return UtilText.parse(this, "[npc.Name] лишилась [npc.her] девственности с "+virginityLossMap.get(sexType).getValue()+".");
 			}
 			
 		} else {
 			try {
 				if(Main.game.getNPCById(this.getVirginityLoss(sexType).getKey()).equals(this)) {
-					return UtilText.parse(this, "[npc.Name] took [npc.her] own virginity "+virginityLossMap.get(sexType).getValue()+".");
+					return UtilText.parse(this, "[npc.Name] [npc.her] отдал/а свою девственность "+virginityLossMap.get(sexType).getValue()+".");
 				}
 				String virginityLossPrefix = "";
 				if(sexType.getPerformingSexArea().isOrifice()) {
 					switch((SexAreaOrifice)sexType.getPerformingSexArea()) {
 						case ARMPITS:
-							virginityLossPrefix = "[npc2.NamePos] armpits were first used by [npc.name(a)] ";
+							virginityLossPrefix = "Подмышки [npc2.NamePos] впервые использовал(а) [npc.name(a)] ";
 							break;
 						case ANUS:
-							virginityLossPrefix = "[npc2.Name] lost [npc2.her] anal virginity to [npc.name(a)] ";
+							virginityLossPrefix = "[npc2.Name] лишился(ась) [npc2.her] анальной девственности с [npc.name(a)] ";
 							break;
 						case ASS:
-							virginityLossPrefix = "[npc2.NamePos] ass cheeks were first used by [npc.name(a)] ";
+							virginityLossPrefix = "Ягодицы [npc2.NamePos] впервые использовал(а) [npc.name(a)] ";
 							break;
 						case BREAST:
-							virginityLossPrefix = "[npc2.Name] first gave paizuri to [npc.name(a)] ";
+							virginityLossPrefix = "[npc2.Name] впервые сделал(а) пайзури [npc.name(a)] ";
 							break;
 						case BREAST_CROTCH:
-							virginityLossPrefix = "[npc2.Name] first gave [npc2.crotchBoob]-paizuri to [npc.name(a)] ";
+							virginityLossPrefix = "[npc2.Name] впервые сделал(а) [npc2.crotchBoob]-пайзури [npc.name(a)] ";
 							break;
 						case MOUTH:
-							virginityLossPrefix = "[npc2.Name] first performed oral sex on [npc.name(a)] ";
+							virginityLossPrefix = "[npc2.Name] впервые сделал(а) минет [npc.name(a)] ";
 							break;
 						case NIPPLE:
-							virginityLossPrefix = "[npc2.Name] lost [npc2.her] nipple virginity to [npc.name(a)] ";
+							virginityLossPrefix = "[npc2.Name] лишился(ась) [npc2.her] девственности соска с [npc.name(a)] ";
 							break;
 						case NIPPLE_CROTCH:
-							virginityLossPrefix = "[npc2.Name] lost [npc2.her] [npc2.crotchNipple] virginity to [npc.name(a)] ";
+							virginityLossPrefix = "[npc2.Name] лишился(ась) [npc2.her] [npc2.crotchNipple] девственности с [npc.name(a)] ";
 							break;
 						case THIGHS:
-							virginityLossPrefix = "[npc2.Name] first gave intercrural sex to [npc.name(a)] ";
+							virginityLossPrefix = "[npc2.Name] впервые занялся(ась) межбедерным сексом с [npc.name(a)] ";
 							break;
 						case URETHRA_PENIS:
-							virginityLossPrefix = "[npc2.Name] lost [npc2.her] penile urethra virginity to [npc.name(a)] ";
+							virginityLossPrefix = "[npc2.Name] лишился(ась) [npc2.her] девственности мочеиспускательного канала пениса с [npc.name(a)] ";
 							break;
 						case URETHRA_VAGINA:
-							virginityLossPrefix = "[npc2.Name] lost [npc2.her] vaginal urethra virginity to [npc.name(a)] ";
+							virginityLossPrefix = "[npc2.Name] лишился(ась) [npc2.her] девственности мочеиспускательного канала влагалища с [npc.name(a)] ";
 							break;
 						case VAGINA:
-							virginityLossPrefix = "[npc2.Name] lost [npc2.her] virginity to [npc.name(a)] ";
+							virginityLossPrefix = "[npc2.Name] лишился(ась) [npc2.her] девственности с [npc.name(a)] ";
 							break;
 						case SPINNERET:
-							virginityLossPrefix = "[npc2.Name] lost [npc2.her] spinneret virginity to [npc.name(a)] ";
+							virginityLossPrefix = "[npc2.Name] лишился(ась) [npc2.her] девственности паутинного железа с [npc.name(a)] ";
 							break;
 					}
 				} else {
 					switch((SexAreaPenetration)sexType.getPerformingSexArea()) {
 						case CLIT:
-							virginityLossPrefix = "[npc2.Name] lost [npc2.her] clit virginity to [npc.name(a)] ";
+							virginityLossPrefix = "[npc2.Name] лишился(ась) [npc2.her] девственности клитора с [npc.name(a)] ";
 							break;
 						case FINGER:
-							virginityLossPrefix = "[npc2.NamePos] first experience fingering someone was with [npc.name(a)] ";
+							virginityLossPrefix = "[npc2.NamePos] впервые попробовал(а) фингерринг с [npc.name(a)] ";
 							break;
 						case FOOT:
-							virginityLossPrefix = "[npc2.NamePos] first experience giving a footjob was to [npc.name(a)] ";
+							virginityLossPrefix = "[npc2.NamePos] впервые попробовал(а) сделать футджоб для [npc.name(a)] ";
 							break;
 						case PENIS:
-							virginityLossPrefix = "[npc2.Name] lost [npc2.her] penile virginity to [npc.name(a)] ";
+							virginityLossPrefix = "[npc2.Name] лишился(ась) [npc2.her] пенильной девственности с [npc.name(a)] ";
 							break;
 						case TAIL:
-							virginityLossPrefix = "[npc2.Name] lost [npc2.her] tail virginity to [npc.name(a)] ";
+							virginityLossPrefix = "[npc2.Name] потеряла [npc2.her] девственность хвоста [npc.name(a)] ";
 							break;
 						case TENTACLE:
-							virginityLossPrefix = "[npc2.Name] lost [npc2.her] tentacle virginity to [npc.name(a)] ";
+							virginityLossPrefix = "[npc2.Name] лишилась девственности [npc2.her] щупальцем с [npc.name(a)] ";
 							break;
 						case TONGUE:
-							virginityLossPrefix = "[npc2.Name] first performed penetrative oral sex on [npc.name(a)] ";
+							virginityLossPrefix = "[npc2.Name] впервые совершил(а) проникающий оральный секс для [npc.name(a)] ";
 							break;
 					}
 				}
@@ -10860,7 +10776,7 @@ public abstract class GameCharacter implements XMLSaving {
 					return getBackupVirginityLossMap().get(sexType);
 				}
 				Util.logGetNpcByIdError("getVirginityLossDescription()", this.getVirginityLoss(sexType).getKey());
-				return UtilText.parse(this, "[npc.Name] lost [npc.her] virginity to someone [npc.she] can't remember."); // Catch bugged virginity loss save.
+				return UtilText.parse(this, "[npc.Name] лишилась [npc.her] девственности с кем-то, кого [npc.she] не может вспомнить."); // Catch bugged virginity loss save.
 			}
 		}
 	}
@@ -10875,9 +10791,7 @@ public abstract class GameCharacter implements XMLSaving {
 						return null;
 					}
 					return UtilText.parse(equipper, target,
-							"Holding out a condom to [npc2.name], [npc.name] [npc.verb(force)] [npc2.herHim] to take it and put it on."
-							+ " Quickly ripping it out of its little foil wrapper, [npc2.she] [npc2.verb(roll)] it down the length of [npc2.her] [npc2.cock+] as [npc2.she] [npc2.verb(whine)],"
-							+ " [npc2.speech(Do I really have to? It feels so much better without one...)]");
+							"Протягивая презерватив [npc2.name], [npc.name] [npc.verb(force)] [npc2.herHim], чтобы тот взял его и надел. Быстро сорвав его с маленькой фольгированной упаковки, [npc2.she] [npc2.verb(roll)] его по всей длине [npc2.her] [npc2.cock+], пока [npc2.she] [npc2.verb(whine)], [npc2.speech(Мне правда обязательно это делать? Без него куда приятнее...)]");
 					
 				} else {
 					if(((target.getFetishDesire(Fetish.FETISH_IMPREGNATION).isPositive() && equipper.hasVagina()) || target.getFetishDesire(Fetish.FETISH_CUM_STUD).isPositive())
@@ -10889,26 +10803,18 @@ public abstract class GameCharacter implements XMLSaving {
 						}
 						if(condomClothingType.equals(ClothingType.getClothingTypeFromId("innoxia_penis_condom_webbing"))) {
 							return UtilText.parse(equipper, target,
-									"[npc.Name] [npc.verb(direct)] [npc.her] spinneret at [npc2.namePos] [npc2.cock], but, sensing what [npc.sheIs] about to do, [npc2.name] [npc2.verb(slap)] it away and [npc2.verb(growl)],"
-									+ " [npc2.speech(I'm not wearing a condom for this!)]");
+									"[npc.Name] [npc.verb(direct)] [npc.her] паутинку на [npc2.namePos] [npc2.cock], но, предчувствуя, что [npc.sheIs] собирается сделать, [npc2.name] [npc2.verb(slap)] её прочь и [npc2.verb(growl)], [npc2.speech(Я не собираюсь надевать презерватив для этого!)]");
 						}
 						return UtilText.parse(equipper, target,
-								"[npc.Name] [npc.verb(hold)] out a condom to [npc2.name], but instead of setting about rolling it down over [npc2.her] [npc2.cock] as [npc.she]'d hoped,"
-										+ " [npc2.name] [npc2.verb(let)] out an annoyed growl and [npc2.verb(tear)] the packet in two!"
-								+ " With yet another growl, [npc2.she] states,"
-								+ " [npc2.speech(I'm not wearing a condom for this!)]");
+								"[npc.Name] [npc.verb(hold)] достает презерватив для [npc2.name], но вместо того, чтобы, как надеялся [npc.she], натянуть его на [npc2.her] [npc2.cock], [npc2.name] [npc2.verb(let)] раздраженное рычание и [npc2.verb(tear)] пакетик пополам! С очередным рыком [npc2.she] заявляет: [npc2.speech(Я не собираюсь надевать презерватив ради этого!)]");
 						
 					} else {
 						if(condomClothingType.equals(ClothingType.getClothingTypeFromId("innoxia_penis_condom_webbing"))) {
 							return UtilText.parse(equipper, target,
-									"[npc.Name] [npc.verb(direct)] [npc.her] spinneret at [npc2.namePos] [npc2.cock], and after hearing [npc2.herHim] let out an approving growl, [npc.she] [npc.verb(shoot)] out a thick string of sticky silk."
-									+ " Within moments, [npc2.namePos] [npc2.cock+] is covered in a thick binding of spider-webbing, and [npc2.she] [npc2.verb(state)],"
-									+ " [npc2.speech(You'd better be glad that I'm in a good mood!)]");
+									"[npc.Name] [npc.verb(direct)] [npc.her] паучьим веретеном на [npc2.namePos] [npc2.cock], и, услышав, как [npc2.herHim] издал(а) одобрительное рычание, [npc.she] [npc.verb(shoot)] густую нить липкого шелка. Мгновение спустя [npc2.namePos] [npc2.cock+] покрыт(а) плотными путами паутины, и [npc2.she] [npc2.verb(state)], [npc2.speech(Тебе лучше радоваться, что у меня сегодня хорошее настроение!)]");
 						}
 						return UtilText.parse(equipper, target,
-								"Holding out a condom to [npc2.name], [npc.name] [npc.verb(let)] out a sigh of relief as [npc2.she] reluctantly [npc2.verb(take)] it."
-								+ " Quickly ripping it out of its little foil wrapper, [npc2.she] [npc2.verb(roll)] it down the length of [npc2.her] [npc2.cock+] as [npc2.she] [npc2.verb(growl)],"
-								+ " [npc2.speech(You'd better be glad that I'm in a good mood!)]");
+								"Протягивая презерватив [npc2.name], [npc.name] [npc.verb(let)] вздох облегчения, когда [npc2.she] неохотно [npc2.verb(take)] его. Быстро сорвав его с маленькой фольгированной упаковки, [npc2.she] [npc2.verb(roll)] его по всей длине [npc2.her] [npc2.cock+], пока [npc2.she] [npc2.verb(growl)], [npc2.speech(Тебе лучше радоваться, что у меня сегодня хорошее настроение!)]");
 					}
 				}
 			}
@@ -10946,18 +10852,17 @@ public abstract class GameCharacter implements XMLSaving {
 			return UtilText.parse(target, this,
 					"<p style='text-align:center; margin:0;'>"
 						+ this.getLevelDrainDescription(target)
-						+ "<br/>[style.italicsBad(As [npc.she] [npc.verb(orgasm)], [npc.name] [npc.verb(feel)] [npc.herself] getting weaker...)]"
-					+ "</p>"
+						+ "<br/>[style.italicsBad(Пока [npc.she] [npc.verb(orgasm)], [npc.name] [npc.verb(feel)] [npc.herself] слабеет...)]</p>"
 					+ target.levelDown(1)
 					+ this.incrementExperience(exp, false));
 			
 		} else {
 			return UtilText.parse(target, this,
 					"<p style='text-align:center'>"
-						+ "Although [npc2.nameHasFull] the '"+Perk.ORGASMIC_LEVEL_DRAIN.getName(this)+"' perk, [npc.nameIsFull] already at the minimum level, so [npc.her] experience cannot be drained..."
+						+ "Although [npc2.nameHasFull] the '"+Perk.ORGASMIC_LEVEL_DRAIN.getName(this)+"' перк, [npc.nameIsFull] уже на минимальном уровне, так что [npc.her] опыт нельзя выкачать..."
 						+ (target.getLevel()<=1
 							?""
-							:"<br/><i>Although [npc.her] level appears to be greater than 1, this is only due to your difficulty setting!</i>")
+							:"<br/><i>Хотя уровень [npc.her] кажется выше 1, это лишь из-за выбранной сложности!</i>")
 					+ "</p>");
 		}
 	}
@@ -10970,22 +10875,22 @@ public abstract class GameCharacter implements XMLSaving {
 		
 		if(Main.game.isInSex() && Main.sex.getInitialSexManager().isHidden(this)) { // For if this character is hidden during the sex scene:
 			sb.append(UtilText.returnStringAtRandom(
-					"Licking [npc.her] [npc.lips], [npc.name] [npc.verb(let)] out a quiet [npc.moan] and [npc.verb(concentrate)] on absorbing [npc2.namePos] power.",
-					"[npc.Name] [npc.verb(let)] out a quiet, horny [npc.moan] as [npc.she] greedily [npc.verb(absorb)] [npc2.namePos] energy.",
-					"Letting out a quiet, erotic [npc.moan], [npc.name] eagerly [npc.verb(absorb)] [npc2.namePos] energy."
+					"Облизывая [npc.her] [npc.lips], [npc.name] [npc.verb(let)] тихое [npc.moan] и [npc.verb(concentrate)], поглощая силу [npc2.namePos].",
+					"[npc.Name] тихо и похотливо [npc.verb(let)] [npc.moan], пока [npc.she] жадно [npc.verb(absorb)] энергию [npc2.namePos].",
+					"Издавая тихое, эротичное [npc.moan], [npc.name] жадно [npc.verb(absorb)] энергию [npc2.namePos]."
 					));
 			
 		} else {
 			sb.append(UtilText.returnStringAtRandom(
-					"Licking [npc.her] [npc.lips], [npc.name] [npc.verb(let)] out a hungry [npc.moan] and [npc.verb(tease)], ",
-					"Greedily absorbing [npc2.namePos] energy, [npc.name] [npc.verb(let)] out an erotic [npc.moan] and [npc.verb(cry)] out, ",
-					"Letting out a deeply erotic [npc.moan], [npc.name] eagerly [npc.verb(absorb)] [npc2.namePos] energy and [npc.verb(tease)], "
+					"Облизывая [npc.her] [npc.lips], [npc.name] [npc.verb(let)] голодное [npc.moan] и [npc.verb(tease)], ",
+					"Жадно поглощая энергию [npc2.namePos], [npc.name] [npc.verb(let)] эротичное [npc.moan] и [npc.verb(cry)], ",
+					"Издавая глубоко эротичное [npc.moan], [npc.name] жадно [npc.verb(absorb)] энергию [npc2.namePos] и [npc.verb(tease)], "
 					));
 			
 			sb.append(UtilText.returnStringAtRandom(
-					"[npc.speech(That's right... You don't need to be this powerful anymore!)]",
-					"[npc.speech(Oh yes... Give me all your power!)]",
-					"[npc.speech(You'll be completely powerless once I'm done with you!)]"));
+					"[npc.speech(Верно... Тебе больше не нужно быть настолько могущественной!)]",
+					"[npc.speech(О да... Отдай мне всю свою силу!)]",
+					"[npc.speech(Когда я закончу с тобой, ты будешь совершенно беспомощным!)]"));
 		}
 		
 		return UtilText.parse(this, target, sb.toString());
@@ -10996,10 +10901,10 @@ public abstract class GameCharacter implements XMLSaving {
 	 */
 	public String getSubmissiveTalk() { //TODO expand to be based on penetration type:
 		return UtilText.returnStringAtRandom(
-				"[npc.speech(Yes! I'm your little slut! Take me however you want!)]",
-				"[npc.speech(Yes! I'm yours! Use me! Do what you want with me!)]",
-				"[npc.speech(Yeah! I'm your worthless little bitch! Fuck me!)]",
-				"[npc.speech(Yes, I'm your worthless slut! Use me like your little fuck-toy!)]");
+				"[npc.speech(Да! Я твоя маленькая шлюшка! Бери меня так, как захочешь!)]",
+				"[npc.speech(Да! Я твоя! Используй меня! Делай со мной всё, что пожелаешь!)]",
+				"[npc.speech(Да! Я твоя никчемная сучка! Трахни меня!)]",
+				"[npc.speech(Да, я твоя никчемная шлюшка! Используй меня как свою маленькую игрушку для секса!)]");
 	}
 
 	/**
@@ -11007,10 +10912,10 @@ public abstract class GameCharacter implements XMLSaving {
 	 */
 	public String getLovingTalk() { //TODO expand to be based on penetration type:
 		return UtilText.returnStringAtRandom(
-				"[npc.speech(I love you...)]",
-				"[npc.speech(Yes... I love you so much...)]",
-				"[npc.speech(I really do love you, you know...)]",
-				"[npc.speech(I love this... I love <i>you</i>...)]");
+				"[npc.speech(Я люблю тебя...)]",
+				"[npc.speech(Да... Я так сильно тебя люблю...)]",
+				"[npc.speech(Я ведь правда люблю тебя, знаешь ли...)]",
+				"[npc.speech(Мне это так нравится... Я люблю <i>тебя</i>...)]");
 	}
 
 	/**
@@ -11018,10 +10923,10 @@ public abstract class GameCharacter implements XMLSaving {
 	 */
 	public String getLovingResponseTalk() { //TODO expand to be based on penetration type:
 		return UtilText.returnStringAtRandom(
-				"[npc.speech(I love you too!)]",
-				"[npc.speech(You know that I love you too!)]",
-				"[npc.speech(I really do love you too!)]",
-				"[npc.speech(I love you more!)]");
+				"[npc.speech(И я тебя люблю!)]",
+				"[npc.speech(Ты же знаешь, что я тоже тебя люблю!)]",
+				"[npc.speech(Я и правда тебя люблю!)]",
+				"[npc.speech(А я люблю тебя сильнее!)]");
 	}
 	
 	/**
@@ -11030,17 +10935,17 @@ public abstract class GameCharacter implements XMLSaving {
 	public String getRoughTalk() { //TODO expand to be based on penetration type:
 		if(Main.game.isInSex() && Main.sex.isCharacterEngagedInOngoingAction(this, Main.sex.getTargetedPartner(this))) {
 			return UtilText.returnStringAtRandom(
-					"[npc.speech(That's right, bitch, you're just my slutty little fuck-toy!)]",
-					"[npc.speech(Hah! I love fucking pathetic, submissive sluts like you!)]",
-					"[npc.speech(You're nothing but my worthless fuck-toy, understand?! You belong to me!)]",
-					"[npc.speech(That's right! You love being my worthless little fuck-toy, don't you slut?!)]");
+					"[npc.speech(Всё верно, сучка, ты всего лишь моя маленькая шлюхоподобная игрушка для траха!)]",
+					"[npc.speech(Ха! Обожаю трахать таких жалких, покорных шлюх, как ты!)]",
+					"[npc.speech(Ты всего лишь моя никчемная игрушка для траха, поняла?! Ты принадлежишь мне!)]",
+					"[npc.speech(Именно так! Тебе ведь нравится быть моей никчемной маленькой игрушкой для траха, а, сучка?!)]");
 			
 		} else {
 			return UtilText.returnStringAtRandom(
-					"[npc.speech(I bet you can't wait for me to give you a good, hard fuck, can you, you worthless slut?)]",
-					"[npc.speech(All you're good for is being my worthless fuck-toy!)]",
-					"[npc.speech(You're just my pathetic little fuck-toy now, understand?! You belong to me!)]",
-					"[npc.speech(I love fucking worthless sluts like you!)]");
+					"[npc.speech(Спорим, ты уже вся извелась в ожидании, когда я хорошенько тебя оттрахаю, а, никчемная шлюха?)]",
+					"[npc.speech(Всё, на что ты годна — это быть моей никчемной игрушкой для траха!)]",
+					"[npc.speech(Теперь ты всего лишь моя жалкая маленькая подстилка, поняла?! Ты принадлежишь мне!)]",
+					"[npc.speech(Обожаю трахать таких никчемных шлюх, как ты!)]");
 		}
 	}
 	
@@ -11146,15 +11051,15 @@ public abstract class GameCharacter implements XMLSaving {
 			} else if(Main.sex.isCharacterEngagedInOngoingAction(this)) {
 				if(Main.sex.getSexPace(this)==SexPace.SUB_RESISTING) {
 					s = UtilText.returnStringAtRandom(
-							"Stop, please!",
-							"Leave me alone!",
-							"Stop it! Leave me alone!");
+							"Прекрати, пожалуйста!",
+							"Оставь меня в покое!",
+							"Хватит! Оставь меня в покое!");
 					
 				} else {
 					s = UtilText.returnStringAtRandom(
-							"Fuck!",
-							"Yeah!",
-							"Oh yeah!");
+							"Блядь!",
+							"Да!",
+							"О да!");
 				}
 				s = UtilText.parse(this, "[npc.speech("+s+")]");
 				
@@ -11175,91 +11080,91 @@ public abstract class GameCharacter implements XMLSaving {
 		switch(Main.sex.getSexPace(this)) {
 			case DOM_GENTLE:
 				returnedLine = UtilText.returnStringAtRandom(
-						"I'll be gentle, don't worry!",
-						"You're going to be a good [npc2.girl] now, aren't you?",
-						"Let's have some fun!",
-						"You're going to love this!");
+						"Я буду нежным, не волнуйся!",
+						"Теперь ты будешь послушной [npc2.girl], правда?",
+						"Давай повеселимся!",
+						"Тебе это очень понравится!");
 				break;
 			case DOM_NORMAL:
 				returnedLine = UtilText.returnStringAtRandom(
-						"This is going to be good!",
-						"How best to use you, I wonder...",
-						"You're going to be a good [npc2.girl]!",
-						"Ready for some fun?");
+						"Это будет круто!",
+						"Интересно, как бы лучше тебя использовать...",
+						"Ты будешь хорошей [npc2.girl]!",
+						"Готова повеселиться?");
 				break;
 			case DOM_ROUGH:
 				returnedLine = UtilText.returnStringAtRandom(
-						"You ready to get fucked, slut?",
-						"I'm going to fuck you senseless!",
-						"You're my bitch now, understand?!",
-						"I'm going to use you however I want, you fucking slut!");
+						"Готова, сучка, чтобы тебя оттрахали?",
+						"Я оттрахаю тебя так, что ты с ума сойдешь!",
+						"Теперь ты моя сучка, поняла?!",
+						"Я буду использовать тебя как захочу, чертова шлюха!");
 				break;
 			case SUB_EAGER:
 				if((this.isVaginaVirgin() || this.hasHymen()) && this.hasVagina()) {
 					if(this.hasFetish(Fetish.FETISH_PURE_VIRGIN)) {
 						returnedLine = UtilText.returnStringAtRandom(
-								"Come on, fuck me already! But don't penetrate my pussy; I don't want to lose my virginity!",
-								"Please, fuck me! Don't penetrate my pussy, though; I want to remain a virgin!",
-								"Fuck me! But don't penetrate my pussy; I want to keep my virginity!");
+								"Давай же, трахни меня уже! Но не входи в киску; я не хочу терять девственность!",
+								"Пожалуйста, трахни меня! Только не входи в киску; я хочу остаться девственницей!",
+								"Трахни меня! Но не входи в киску; я хочу сохранить девственность!");
 						
 					} else {
 						returnedLine = UtilText.returnStringAtRandom(
-								"Come on, fuck me already! Take my virginity!",
-								"I'm still a virgin! Please, break me in already!",
-								"What are you waiting for?! Fuck my virgin pussy already!",
-								"I'm so horny! Please, fuck my pussy! Take my virginity!");
+								"Давай же, трахни меня уже! Забери мою девственность!",
+								"Я всё ещё девственница! Пожалуйста, разбей меня уже!",
+								"Чего ты ждёшь?! Трахни мою девственную киску уже!",
+								"Я такая возбуждённая! Пожалуйста, трахни мою киску! Забери мою девственность!");
 					}
 				} else {
 					returnedLine = UtilText.returnStringAtRandom(
-							"Come on, fuck me already! Please!",
-							"Fuck me! Please!",
-							"What are you waiting for?! Come on, fuck me!",
-							"I'm so horny! Please, fuck me!");
+							"Давай же, трахни меня уже! Пожалуйста!",
+							"Трахни меня! Пожалуйста!",
+							"Чего ты ждёшь?! Давай же, трахни меня!",
+							"Я такая возбуждённая! Пожалуйста, трахни меня!");
 				}
 				break;
 			case SUB_NORMAL:
 				if((this.isVaginaVirgin() || this.hasHymen()) && this.hasVagina()) {
 					if(this.hasFetish(Fetish.FETISH_PURE_VIRGIN)) {
 						returnedLine = UtilText.returnStringAtRandom(
-								"I'll be a good [npc1.girl]! Please don't penetrate my pussy; I don't want to lose my virginity!",
-								"I'll do whatever you want! Please don't penetrate my pussy, though; I want to remain a virgin!",
-								"Let's have some fun! But please don't penetrate my pussy; I want to keep my virginity!");
+								"Я буду хорошей [npc1.girl]! Пожалуйста, не проникай в мою киску; я не хочу терять девственность!",
+								"Я сделаю всё, что захочешь! Но, пожалуйста, не проникай в мою киску; я хочу остаться девственницей!",
+								"Давай повеселимся! Но, пожалуйста, не проникай в мою киску; я хочу сохранить девственность!");
 						
 					} else {
 						returnedLine = UtilText.returnStringAtRandom(
-								"I'll be a good [npc1.girl]! Just... I'm still a virgin, ok?",
-								"I'll do whatever you want! I'm still a virgin though...",
-								"Let's get started! But... I'm still a virgin...",
-								"Let's have some fun! But... I'm still a virgin, ok?");
+								"Я буду хорошей [npc1.girl]! Просто... я всё ещё девственница, ясно?",
+								"Я сделаю всё, что пожелаешь! Правда, я всё ещё девственница...",
+								"Давай начнём! Но... я всё ещё девственница...",
+								"Давай повеселимся! Но... я всё ещё девственница, ладно?");
 					}
 				} else {
 					returnedLine = UtilText.returnStringAtRandom(
-							"I'll be a good [npc.girl]!",
-							"I'll do whatever you want!",
-							"Let's get started!",
-							"Let's have some fun!");
+							"Я буду хорошей [npc.girl]!",
+							"Я сделаю всё, что пожелаешь!",
+							"Давай начнём!",
+							"Давай повеселимся!");
 				}
 				break;
 			case SUB_RESISTING:
 				if((this.isVaginaVirgin() || this.hasHymen()) && this.hasVagina()) {
 					returnedLine = UtilText.returnStringAtRandom(
-							"Go away! I-I'm still a virgin! Leave me alone!",
-							"Stop it! Just go away! I-I'm still a virgin!",
-							"Please stop! I don't want to lose my virginity!",
-							"Don't do this! I'm still a virgin!");
+							"Уходи! Я... я всё ещё девственница! Оставь меня в покое!",
+							"Прекрати! Просто уходи! Я... я всё ещё девственница!",
+							"Пожалуйста, остановись! Я не хочу терять девственность!",
+							"Не надо! Я еще девственница!");
 				} else {
 					returnedLine = UtilText.returnStringAtRandom(
-							"Go away! Leave me alone!",
-							"Stop it! Just go away!",
-							"Please stop! Don't do this!");
+							"Уходи! Оставь меня в покое!",
+							"Прекрати! Просто уйди!",
+							"Пожалуйста, остановись! Не делай этого!");
 				}
 				break;
 			default:
 				returnedLine = UtilText.returnStringAtRandom(
-						"This is going to be good!",
-						"Time for some fun!",
-						"Let's get started!",
-						"Let's have some fun!");
+						"Это будет круто!",
+						"Время повеселиться!",
+						"Давай начнём!",
+						"Давай повеселимся!");
 		}
 		
 		if(returnedLine.isEmpty()) {
@@ -11282,45 +11187,45 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								returnedLine = UtilText.returnStringAtRandom(
-										"That's right, be a good [npc2.girl] now and push your [npc2.fingers] in deeper!",
-										"Good [npc2.girl]! Keep those [npc2.fingers] of yours busy!",
-										"What a good [npc2.girl]! My pussy loves the feeling of your [npc2.fingers]!");
+										"Вот так, будь хорошей [npc2.girl] и засаживай свой [npc2.fingers] поглубже!",
+										"Хорошая [npc2.girl]! Не давай своим [npc2.fingers] скучать!",
+										"Какая послушная [npc2.girl]! Моя киска обожает твои [npc2.fingers]!");
 								break;
 							case DOM_NORMAL:
 								returnedLine = UtilText.returnStringAtRandom(
-										"That's right, push your [npc2.fingers] in deep!",
-										"Good [npc2.girl]! Get those [npc2.fingers] in deep!",
-										"Keep going! Curl your [npc2.fingers] up a bit!");
+										"Вот так, вгоняй свой [npc2.fingers] поглубже!",
+										"Молодец, [npc2.girl]! Засаживай свои [npc2.fingers] поглубже!",
+										"Продолжай! Сверни свои [npc2.fingers] чуть сильнее!");
 								break;
 							case DOM_ROUGH:
 								returnedLine = UtilText.returnStringAtRandom(
-										"Come on slut, you can get your [npc2.fingers] in deeper than that!",
-										"Keep it up bitch! Get those [npc2.fingers] in deep!",
-										"Keep going slut! Curl your [npc2.fingers] up and put in a little more effort!");
+										"Давай, шлюшка, ты можешь засунуть свои [npc2.fingers] еще глубже!",
+										"Так держать, сучка! Засаживай свои [npc2.fingers] поглубже!",
+										"Продолжай, шлюшка! Сверни свои [npc2.fingers] и постарайся получше!");
 								break;
 							case SUB_EAGER:
 								returnedLine = UtilText.returnStringAtRandom(
-										"Yes! Keep fingering me!",
-										"Keep going! My pussy loves your attention!",
-										"Oh yes! I love being fingered!");
+										"Да! Продолжай ласкать меня пальцами!",
+										"Давай! Моя киска обожает твои ласки!",
+										"О да! Обожаю, когда меня перебирают пальцами!");
 								break;
 							case SUB_NORMAL:
 								returnedLine = UtilText.returnStringAtRandom(
-										"Keep fingering me!",
-										"Keep going! I love this!",
-										"Oh yes!");
+										"Продолжай ласкать меня пальцами!",
+										"Давай! Мне это безумно нравится!",
+										"О да!");
 								break;
 							case SUB_RESISTING:
 								returnedLine = UtilText.returnStringAtRandom(
-										"Get your [npc2.fingers] out of me! Stop! Please!",
-										"Stop fingering me! Please, no more!",
-										"Stop it! Stop! Please!");
+										"Вытащи свой [npc2.fingers] из меня! Стой! Пожалуйста!",
+										"Хватит ласкать меня пальцами! Пожалуйста, еще нет!",
+										"Прекрати! Стой! Пожалуйста!");
 								break;
 							default:
 								returnedLine = UtilText.returnStringAtRandom(
-										"Fuck!",
-										"Yeah!",
-										"Oh yeah!");
+										"Блядь!",
+										"Да!",
+										"О да!");
 								break;
 						}
 						break;
@@ -11328,45 +11233,45 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								returnedLine = UtilText.returnStringAtRandom(
-										"My pussy loves your [npc2.cock]!",
-										"Good [npc2.girl]! Keep sliding that delicious cock of yours in and out of me!",
-										"What a good [npc2.girl]! Enjoy my pussy as your reward now!");
+										"Моя киска обожает твой [npc2.cock]!",
+										"Хороший [npc2.girl]! Продолжай входить и выходить своим вкусным членом!",
+										"Какой послушный [npc2.girl]! А теперь наслаждайся моей киской в награду!");
 								break;
 							case DOM_NORMAL:
 								returnedLine = UtilText.returnStringAtRandom(
-										"You like feeling my pussy gripping down on your cock?!",
-										"Good [npc2.girl]! Push your [npc2.cock] in deep!",
-										"Keep going! Get that [npc2.cock] in deep like a good [npc2.girl]!");
+										"Тебе нравится чувствовать, как моя киска сжимает твой член?!",
+										"Хороший [npc2.girl]! Засаживай свой [npc2.cock] поглубже!",
+										"Продолжай! Засаживай этот [npc2.cock] глубоко, как хороший [npc2.girl]!");
 								break;
 							case DOM_ROUGH:
 								returnedLine = UtilText.returnStringAtRandom(
-										"That's right slut, you're my little fuck toy now!",
-										"Come on bitch! You can get your worthless [npc2.cock] in deeper than that!",
-										"Fucking slut, put some more effort in! My pussy deserves better than your worthless [npc2.cock]!");
+										"Вот так, шлюшка, теперь ты моя маленькая секс-игрушка!",
+										"Давай, сучка! Ты можешь засунуть свой никчемный [npc2.cock] куда глубже!",
+										"Чертова шлюха, поднажми! Моя киска заслуживает большего, чем твой бесполезный [npc2.cock]!");
 								break;
 							case SUB_EAGER:
 								returnedLine = UtilText.returnStringAtRandom(
-										"Yes! Fuck me! Fuck me harder! Don't stop!",
-										"Don't stop! Harder! Fuck me! Yes, yes, yes!",
-										"Oh yes! Fuck me! I love your [npc2.cock]!");
+										"Да! Трахни меня! Трахни меня сильнее! Не останавливайся!",
+										"Не останавливайся! Сильнее! Трахни меня! Да, да, да!",
+										"О да! Трахни меня! Обожаю твой [npc2.cock]!");
 								break;
 							case SUB_NORMAL:
 								returnedLine = UtilText.returnStringAtRandom(
-										"Yes! Fuck me!",
-										"Don't stop! Fuck me!",
-										"Oh yes! Fuck me!");
+										"Да! Трахни меня!",
+										"Не останавливайся! Трахни меня!",
+										"О да! Трахни меня!");
 								break;
 							case SUB_RESISTING:
 								returnedLine = UtilText.returnStringAtRandom(
-										"Get out of me! Stop! Please!",
-										"Please, no more! Take your cock out!",
-										"Get out of me! Stop! Please!");
+										"Вытащи из меня! Стой! Пожалуйста!",
+										"Пожалуйста, хватит! Вытащи свой член!",
+										"Вытащи из меня! Стой! Пожалуйста!");
 								break;
 							default:
 								returnedLine = UtilText.returnStringAtRandom(
-										"Fuck me! Yes! Harder!",
-										"Oh yeah! Fuck me!",
-										"Harder! Don't stop!");
+										"Трахни меня! Да! Сильнее!",
+										"О да! Трахни меня!",
+										"Сильнее! Не останавливайся!");
 								break;
 						}
 						break;
@@ -11374,45 +11279,45 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								returnedLine = UtilText.returnStringAtRandom(
-										"My pussy loves your [npc2.tail]! Keep going!",
-										"Good [npc2.girl]! Keep fucking me with that [npc2.tail] of yours!",
-										"What a good [npc2.girl]! Enjoy my pussy as your reward now!");
+										"Моя киска обожает твой [npc2.tail]! Продолжай!",
+										"Хороший [npc2.girl]! Продолжай трахать меня своим [npc2.tail]!",
+										"Какой послушный [npc2.girl]! А теперь наслаждайся моей киской в награду!");
 								break;
 							case DOM_NORMAL:
 								returnedLine = UtilText.returnStringAtRandom(
-										"Oh yes! Your [npc2.tail] feels so good!",
-										"Good [npc2.girl]! Push your [npc2.tail] in deep!",
-										"Keep going! Get that [npc2.tail] in deep like a good [npc2.girl]!");
+										"О да! Твой [npc2.tail] такой классный!",
+										"Хороший [npc2.girl]! Засаживай свой [npc2.tail] поглубже!",
+										"Продолжай! Засаживай этот [npc2.tail] глубоко, как послушный [npc2.girl]!");
 								break;
 							case DOM_ROUGH:
 								returnedLine = UtilText.returnStringAtRandom(
-										"That's right slut, get that [npc2.tail] in deep like a good little fuck toy!",
-										"Come on bitch! You can get your [npc2.tail] in deeper than that!",
-										"Fucking bitch, put some more effort in! My pussy deserves better than some slut's [npc2.tail]!");
+										"Вот так, шлюшка, засаживай этот [npc2.tail] глубоко, как хорошая маленькая секс-игрушка!",
+										"Давай, сучка! Ты можешь засадить свой [npc2.tail] еще глубже!",
+										"Грёбаная сука, поднажми! Моя киска заслуживает лучшего, чем какой-то шлюшьей [npc2.tail]!");
 								break;
 							case SUB_EAGER:
 								returnedLine = UtilText.returnStringAtRandom(
-										"Yes! Fuck me! Fuck me harder! Don't stop!",
-										"Don't stop! Harder! Fuck me! Yes, yes, yes!",
-										"Oh yes! Fuck me! I love your [npc2.tail]! Get it deeper!");
+										"Да! Трахни меня! Трахни меня сильнее! Не останавливайся!",
+										"Не останавливайся! Сильнее! Трахни меня! Да, да, да!",
+										"О да! Трахни меня! Обожаю твой [npc2.tail]! Глубже!");
 								break;
 							case SUB_NORMAL:
 								returnedLine = UtilText.returnStringAtRandom(
-										"Yes! Fuck me!",
-										"Don't stop! Fuck me!",
-										"Oh yes! Fuck me!");
+										"Да! Трахни меня!",
+										"Не останавливайся! Трахни меня!",
+										"О да! Трахни меня!");
 								break;
 							case SUB_RESISTING:
 								returnedLine = UtilText.returnStringAtRandom(
-										"Get out of me! Stop! Please!",
-										"Please, no more! Take your tail out!",
-										"Get out of me! Stop! Please!");
+										"Вытащи из меня! Стой! Пожалуйста!",
+										"Пожалуйста, хватит! Вытащи свой хвост!",
+										"Вытащи из меня! Стой! Пожалуйста!");
 								break;
 							default:
 								returnedLine = UtilText.returnStringAtRandom(
-										"Fuck me! Yes! Harder!",
-										"Oh yeah! Fuck me!",
-										"Harder! Don't stop!");
+										"Трахни меня! Да! Сильнее!",
+										"О да! Трахни меня!",
+										"Сильнее! Не останавливайся!");
 								break;
 						}
 						break;
@@ -11420,60 +11325,60 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								returnedLine = UtilText.returnStringAtRandom(
-										"That's right, keep eating me out!",
-										"Good [npc2.girl]! Keep that [npc2.tongue] of yours busy!",
-										"What a good [npc2.girl]! You love the taste of my pussy, don't you?!");
+										"Вот так, продолжай лизать меня!",
+										"Хороший [npc2.girl]! Не давай своему [npc2.tongue] скучать!",
+										"Какой славный [npc2.girl]! Тебе ведь нравится вкус моей киски, а?!");
 								break;
 							case DOM_NORMAL:
 								returnedLine = UtilText.returnStringAtRandom(
-										"Oh yes! Get that [npc2.tongue] in deep!",
-										"Good [npc2.girl]! Get that [npc2.tongue] of yours in deep!",
-										"Keep going! My pussy loves your [npc2.tongue]!");
+										"О да! Засунь этот [npc2.tongue] поглубже!",
+										"Хороший [npc2.girl]! Засунь свой [npc2.tongue] поглубже!",
+										"Продолжай! Моя киска обожает твой [npc2.tongue]!");
 								break;
 							case DOM_ROUGH:
 								returnedLine = UtilText.returnStringAtRandom(
-										"That's right slut, keep eating me out like the worthless little fuck toy you are!",
-										"Come on bitch! Get that [npc2.tongue] of yours in deeper!",
-										"Fucking bitch, put some more effort in! You know how lucky you are, being allowed to taste my pussy like this?!");
+										"Вот так, шлюшка, продолжай сосать меня, как твоя никчемная маленькая секс-игрушка!",
+										"Давай, сучка! Засунь свой [npc2.tongue] поглубже!",
+										"Чертова сучка, поднажми! Ты хоть понимаешь, как тебе повезло, что тебе позволили так лакать мою киску?!");
 								break;
 							case SUB_EAGER:
 								returnedLine = UtilText.returnStringAtRandom(
-										"Yes! I love your [npc2.tongue]! Don't stop!",
-										"Don't stop! Deeper! Eat me out! Yes, yes, yes!",
-										"Oh yes! Taste my pussy! I love your [npc2.tongue]! Get it deeper!");
+										"Да! Обожаю твой [npc2.tongue]! Не останавливайся!",
+										"Не останавливайся! Глубже! Лижи меня! Да, да, да!",
+										"О да! Лакай мою киску! Обожаю твой [npc2.tongue]! Глубже!");
 								break;
 							case SUB_NORMAL:
 								returnedLine = UtilText.returnStringAtRandom(
-										"Yes! Don't stop!",
-										"Don't stop! I love your [npc2.tongue]!",
-										"Oh yes! Eat me out!");
+										"Да! Не останавливайся!",
+										"Не останавливайся! Обожаю твой [npc2.tongue]!",
+										"О да! Лижи меня!");
 								break;
 							case SUB_RESISTING:
 								returnedLine = UtilText.returnStringAtRandom(
-										"Get out of me! Stop! Please!",
-										"Please, no more! Take your tongue out!",
-										"Get out of me! Stop! Please!");
+										"Вытащи из меня! Стой! Пожалуйста!",
+										"Пожалуйста, хватит! Высунь язык!",
+										"Вытащи из меня! Стой! Пожалуйста!");
 								break;
 							default:
 								returnedLine = UtilText.returnStringAtRandom(
-										"Yes! Get that tongue deeper!",
-										"Oh yeah! Keep going!",
-										"Deeper! Don't stop!");
+										"Да! Засунь язык поглубже!",
+										"О да! Продолжай!",
+										"Глубже! Не останавливайся!");
 						}
 						break;
 					default:
 						switch(Main.sex.getSexPace(this)) {
 							case SUB_RESISTING:
 								returnedLine = UtilText.returnStringAtRandom(
-										"Go away! Leave me alone!",
-										"Stop it! Just go away!",
-										"Please stop! Don't do this!");
+										"Уходи! Оставь меня в покое!",
+										"Прекрати! Просто уйди!",
+										"Пожалуйста, остановись! Не делай этого!");
 								break;
 							default:
 								returnedLine =  UtilText.returnStringAtRandom(
-										"Fuck!",
-										"Yeah!",
-										"Oh yeah!");
+										"Блядь!",
+										"Да!",
+										"О да!");
 								break;
 						}
 				}
@@ -11501,44 +11406,44 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								returnedLine = UtilText.returnStringAtRandom(
-										"That's right, be a good [npc2.girl] now and push your [npc2.fingers] in deeper!",
-										"Good [npc2.girl]! Keep those [npc2.fingers] of yours busy!");
+										"Вот так, будь хорошей [npc2.girl] и засаживай свой [npc2.fingers] поглубже!",
+										"Хорошая [npc2.girl]! Не давай своим [npc2.fingers] скучать!");
 								break;
 							case DOM_NORMAL:
 								returnedLine = UtilText.returnStringAtRandom(
-										"That's right, push your [npc2.fingers] in deep!",
-										"Good [npc2.girl]! Get those [npc2.fingers] in deep!",
-										"Keep going! Curl your [npc2.fingers] up a bit!");
+										"Вот так, вгоняй свой [npc2.fingers] поглубже!",
+										"Молодец, [npc2.girl]! Засаживай свои [npc2.fingers] поглубже!",
+										"Продолжай! Сверни свои [npc2.fingers] чуть сильнее!");
 								break;
 							case DOM_ROUGH:
 								returnedLine = UtilText.returnStringAtRandom(
-										"Come on slut, you can get your [npc2.fingers] in deeper than that!",
-										"Keep it up bitch! Get those [npc2.fingers] in deep!",
-										"Keep going slut! Curl your [npc2.fingers] up and put in a little more effort!");
+										"Давай, шлюшка, ты можешь засунуть свои [npc2.fingers] еще глубже!",
+										"Так держать, сучка! Засаживай свои [npc2.fingers] поглубже!",
+										"Продолжай, шлюшка! Сверни свои [npc2.fingers] и постарайся получше!");
 								break;
 							case SUB_EAGER:
 								returnedLine = UtilText.returnStringAtRandom(
-										"Yes! Keep fingering me!",
-										"Keep going! Get those [npc2.fingers] in deep!",
-										"Oh yes! I love being fingered!");
+										"Да! Продолжай ласкать меня пальцами!",
+										"Давай! Загоняй свои [npc2.fingers] поглубже!",
+										"О да! Обожаю, когда меня перебирают пальцами!");
 								break;
 							case SUB_NORMAL:
 								returnedLine = UtilText.returnStringAtRandom(
-										"Keep fingering me!",
-										"Keep going! I love this!",
-										"Oh yes!");
+										"Продолжай ласкать меня пальцами!",
+										"Давай! Мне это безумно нравится!",
+										"О да!");
 								break;
 							case SUB_RESISTING:
 								returnedLine = UtilText.returnStringAtRandom(
-										"Get your [npc2.fingers] out of me! Stop! Please!",
-										"Stop fingering me! Please, no more!",
-										"Stop it! Stop! Please!");
+										"Вытащи свой [npc2.fingers] из меня! Стой! Пожалуйста!",
+										"Хватит ласкать меня пальцами! Пожалуйста, еще нет!",
+										"Прекрати! Стой! Пожалуйста!");
 								break;
 							default:
 								returnedLine = UtilText.returnStringAtRandom(
-										"Fuck!",
-										"Yeah!",
-										"Oh yeah!");
+										"Блядь!",
+										"Да!",
+										"О да!");
 								break;
 						}
 						break;
@@ -11546,45 +11451,45 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								returnedLine = UtilText.returnStringAtRandom(
-										"I love the feeling of your [npc2.cock]!",
-										"Good [npc2.girl]! Keep sliding that delicious cock of yours in and out of me!",
-										"What a good [npc2.girl]! Enjoy my spinneret as your reward now!");
+										"Обожаю ощущение твоих [npc2.cock]!",
+										"Хороший [npc2.girl]! Продолжай входить и выходить своим вкусным членом!",
+										"Какой хороший [npc2.girl]! А теперь получай мою паутинную прялку в награду!");
 								break;
 							case DOM_NORMAL:
 								returnedLine = UtilText.returnStringAtRandom(
-										"You like feeling my spinneret gripping down on your cock?!",
-										"Good [npc2.girl]! Push your [npc2.cock] in deep!",
-										"Keep going! Get that [npc2.cock] in deep like a good [npc2.girl]!");
+										"Тебе нравится, как моя прялка сжимает твой член?!",
+										"Хороший [npc2.girl]! Засаживай свой [npc2.cock] поглубже!",
+										"Продолжай! Засаживай этот [npc2.cock] глубоко, как хороший [npc2.girl]!");
 								break;
 							case DOM_ROUGH:
 								returnedLine = UtilText.returnStringAtRandom(
-										"That's right slut, you're my little fuck toy now!",
-										"Come on bitch! You can get your worthless [npc2.cock] in deeper than that!",
-										"Fucking slut, put some more effort in! My spinneret deserves better than your worthless [npc2.cock]!");
+										"Вот так, шлюшка, теперь ты моя маленькая секс-игрушка!",
+										"Давай, сучка! Ты можешь засунуть свой никчемный [npc2.cock] куда глубже!",
+										"Чертова шлюха, поднажми! Моя прялка заслуживает большего, чем твой никчемный [npc2.cock]!");
 								break;
 							case SUB_EAGER:
 								returnedLine = UtilText.returnStringAtRandom(
-										"Yes! Fuck me! Fuck me harder! Don't stop!",
-										"Don't stop! Harder! Fuck me! Yes, yes, yes!",
-										"Oh yes! Fuck me! I love your [npc2.cock]!");
+										"Да! Трахни меня! Трахни меня сильнее! Не останавливайся!",
+										"Не останавливайся! Сильнее! Трахни меня! Да, да, да!",
+										"О да! Трахни меня! Обожаю твой [npc2.cock]!");
 								break;
 							case SUB_NORMAL:
 								returnedLine = UtilText.returnStringAtRandom(
-										"Yes! Fuck me!",
-										"Don't stop! Fuck me!",
-										"Oh yes! Fuck me!");
+										"Да! Трахни меня!",
+										"Не останавливайся! Трахни меня!",
+										"О да! Трахни меня!");
 								break;
 							case SUB_RESISTING:
 								returnedLine = UtilText.returnStringAtRandom(
-										"Get out of me! Stop! Please!",
-										"Please, no more! Take your cock out!",
-										"Get out of me! Stop! Please!");
+										"Вытащи из меня! Стой! Пожалуйста!",
+										"Пожалуйста, хватит! Вытащи свой член!",
+										"Вытащи из меня! Стой! Пожалуйста!");
 								break;
 							default:
 								returnedLine = UtilText.returnStringAtRandom(
-										"Fuck me! Yes! Harder!",
-										"Oh yeah! Fuck me!",
-										"Harder! Don't stop!");
+										"Трахни меня! Да! Сильнее!",
+										"О да! Трахни меня!",
+										"Сильнее! Не останавливайся!");
 								break;
 						}
 						break;
@@ -11592,45 +11497,45 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								returnedLine = UtilText.returnStringAtRandom(
-										"I love the feeling of your [npc2.cock]!",
-										"Good [npc2.girl]! Keep fucking me with that [npc2.tail] of yours!",
-										"What a good [npc2.girl]! Enjoy my spinneret as your reward now!");
+										"Обожаю ощущение твоих [npc2.cock]!",
+										"Хороший [npc2.girl]! Продолжай трахать меня своим [npc2.tail]!",
+										"Какой хороший [npc2.girl]! А теперь получай мою паутинную прялку в награду!");
 								break;
 							case DOM_NORMAL:
 								returnedLine = UtilText.returnStringAtRandom(
-										"Oh yes! Your [npc2.tail] feels so good!",
-										"Good [npc2.girl]! Push your [npc2.tail] in deep!",
-										"Keep going! Get that [npc2.tail] in deep like a good [npc2.girl]!");
+										"О да! Твой [npc2.tail] такой классный!",
+										"Хороший [npc2.girl]! Засаживай свой [npc2.tail] поглубже!",
+										"Продолжай! Засаживай этот [npc2.tail] глубоко, как послушный [npc2.girl]!");
 								break;
 							case DOM_ROUGH:
 								returnedLine = UtilText.returnStringAtRandom(
-										"That's right slut, get that [npc2.tail] in deep like a good little fuck toy!",
-										"Come on bitch! You can get your [npc2.tail] in deeper than that!",
-										"Fucking bitch, put some more effort in! My spinneret deserves better than some slut's [npc2.tail]!");
+										"Вот так, шлюшка, засаживай этот [npc2.tail] глубоко, как хорошая маленькая секс-игрушка!",
+										"Давай, сучка! Ты можешь засадить свой [npc2.tail] еще глубже!",
+										"Чертова сучка, постарайся получше! Моя прялка заслуживает большего, чем [npc2.tail] какой-то шлюхи!");
 								break;
 							case SUB_EAGER:
 								returnedLine = UtilText.returnStringAtRandom(
-										"Yes! Fuck me! Fuck me harder! Don't stop!",
-										"Don't stop! Harder! Fuck me! Yes, yes, yes!",
-										"Oh yes! Fuck me! I love your [npc2.tail]! Get it deeper!");
+										"Да! Трахни меня! Трахни меня сильнее! Не останавливайся!",
+										"Не останавливайся! Сильнее! Трахни меня! Да, да, да!",
+										"О да! Трахни меня! Обожаю твой [npc2.tail]! Глубже!");
 								break;
 							case SUB_NORMAL:
 								returnedLine = UtilText.returnStringAtRandom(
-										"Yes! Fuck me!",
-										"Don't stop! Fuck me!",
-										"Oh yes! Fuck me!");
+										"Да! Трахни меня!",
+										"Не останавливайся! Трахни меня!",
+										"О да! Трахни меня!");
 								break;
 							case SUB_RESISTING:
 								returnedLine = UtilText.returnStringAtRandom(
-										"Get out of me! Stop! Please!",
-										"Please, no more! Take your tail out!",
-										"Get out of me! Stop! Please!");
+										"Вытащи из меня! Стой! Пожалуйста!",
+										"Пожалуйста, хватит! Вытащи свой хвост!",
+										"Вытащи из меня! Стой! Пожалуйста!");
 								break;
 							default:
 								returnedLine = UtilText.returnStringAtRandom(
-										"Fuck me! Yes! Harder!",
-										"Oh yeah! Fuck me!",
-										"Harder! Don't stop!");
+										"Трахни меня! Да! Сильнее!",
+										"О да! Трахни меня!",
+										"Сильнее! Не останавливайся!");
 								break;
 						}
 						break;
@@ -11638,60 +11543,60 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								returnedLine = UtilText.returnStringAtRandom(
-										"That's right, keep eating my spinneret out!",
-										"Good [npc2.girl]! Keep that [npc2.tongue] of yours busy!",
-										"What a good [npc2.girl]! You love the taste of my spinneret, don't you?!");
+										"Вот так, продолжай вылизывать мой паучий аппарат!",
+										"Хороший [npc2.girl]! Не давай своему [npc2.tongue] скучать!",
+										"Какая хорошая [npc2.girl]! Тебе ведь нравится вкус моего паучьего аппарата, да?!");
 								break;
 							case DOM_NORMAL:
 								returnedLine = UtilText.returnStringAtRandom(
-										"Oh yes! Get that [npc2.tongue] in deep!",
-										"Good [npc2.girl]! Get that [npc2.tongue] of yours in deep!",
-										"Keep going! My spinneret loves your [npc2.tongue]!");
+										"О да! Засунь этот [npc2.tongue] поглубже!",
+										"Хороший [npc2.girl]! Засунь свой [npc2.tongue] поглубже!",
+										"Так держать! Моему паучьему аппарату нравится твой [npc2.tongue]!");
 								break;
 							case DOM_ROUGH:
 								returnedLine = UtilText.returnStringAtRandom(
-										"That's right slut, keep eating my spinneret out like the worthless little fuck toy you are!",
-										"Come on bitch! Get that [npc2.tongue] of yours in deeper!",
-										"Fucking bitch, put some more effort in! You know how lucky you are, being allowed to taste my spinneret like this?!");
+										"Вот так, шлюха, продолжай сосать мой паучий аппарат, как никчемная маленькая секс-игрушка!",
+										"Давай, сучка! Засунь свой [npc2.tongue] поглубже!",
+										"Чертова сучка, старайся лучше! Ты хоть понимаешь, как тебе повезло, что тебе позволили вот так пробовать мой паучий аппарат?!");
 								break;
 							case SUB_EAGER:
 								returnedLine = UtilText.returnStringAtRandom(
-										"Yes! I love your [npc2.tongue]! Don't stop!",
-										"Don't stop! Deeper! Eat me out! Yes, yes, yes!",
-										"Oh yes! Taste my spinneret! I love your [npc2.tongue]! Get it deeper!");
+										"Да! Обожаю твой [npc2.tongue]! Не останавливайся!",
+										"Не останавливайся! Глубже! Лижи меня! Да, да, да!",
+										"О да! Попробуй мой паучий аппарат на вкус! Обожаю твой [npc2.tongue]! Засунь его поглубже!");
 								break;
 							case SUB_NORMAL:
 								returnedLine = UtilText.returnStringAtRandom(
-										"Yes! Don't stop!",
-										"Don't stop! I love your [npc2.tongue]!",
-										"Oh yes! Eat me out!");
+										"Да! Не останавливайся!",
+										"Не останавливайся! Обожаю твой [npc2.tongue]!",
+										"О да! Лижи меня!");
 								break;
 							case SUB_RESISTING:
 								returnedLine = UtilText.returnStringAtRandom(
-										"Get out of me! Stop! Please!",
-										"Please, no more! Take your tongue out!",
-										"Get out of me! Stop! Please!");
+										"Вытащи из меня! Стой! Пожалуйста!",
+										"Пожалуйста, хватит! Высунь язык!",
+										"Вытащи из меня! Стой! Пожалуйста!");
 								break;
 							default:
 								returnedLine = UtilText.returnStringAtRandom(
-										"Yes! Get that tongue deeper!",
-										"Oh yeah! Keep going!",
-										"Deeper! Don't stop!");
+										"Да! Засунь язык поглубже!",
+										"О да! Продолжай!",
+										"Глубже! Не останавливайся!");
 						}
 						break;
 					default:
 						switch(Main.sex.getSexPace(this)) {
 							case SUB_RESISTING:
 								returnedLine = UtilText.returnStringAtRandom(
-										"Go away! Leave me alone!",
-										"Stop it! Just go away!",
-										"Please stop! Don't do this!");
+										"Уходи! Оставь меня в покое!",
+										"Прекрати! Просто уйди!",
+										"Пожалуйста, остановись! Не делай этого!");
 								break;
 							default:
 								returnedLine =  UtilText.returnStringAtRandom(
-										"Fuck!",
-										"Yeah!",
-										"Oh yeah!");
+										"Блядь!",
+										"Да!",
+										"О да!");
 								break;
 						}
 				}
@@ -11717,45 +11622,45 @@ public abstract class GameCharacter implements XMLSaving {
 					switch(Main.sex.getSexPace(this)) {
 						case DOM_GENTLE:
 							returnedLine = UtilText.returnStringAtRandom(
-									"That's right, be a good [npc2.girl] now and push your [npc2.fingers] in deeper!",
-									"Good [npc2.girl]! Keep those [npc2.fingers] of yours busy!",
-									"What a good [npc2.girl]! Keep fingering my ass!");
+									"Вот так, будь хорошей [npc2.girl] и засаживай свой [npc2.fingers] поглубже!",
+									"Хорошая [npc2.girl]! Не давай своим [npc2.fingers] скучать!",
+									"Какая хорошая [npc2.girl]! Продолжай пальцевать мою задницу!");
 							break;
 						case DOM_NORMAL:
 							returnedLine = UtilText.returnStringAtRandom(
-									"That's right, push your [npc2.fingers] in deep!",
-									"Good [npc2.girl]! Get those [npc2.fingers] in deep!",
-									"Keep going! My ass loves the attention!");
+									"Вот так, вгоняй свой [npc2.fingers] поглубже!",
+									"Молодец, [npc2.girl]! Засаживай свои [npc2.fingers] поглубже!",
+									"Не останавливайся! Моей заднице нравится это внимание!");
 							break;
 						case DOM_ROUGH:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Come on slut, you can get your [npc2.fingers] in deeper than that!",
-									"Keep it up bitch! Get those [npc2.fingers] in deep!",
-									"Keep going slut! Get your [npc2.fingers] in deep and put in a little more effort!");
+									"Давай, шлюшка, ты можешь засунуть свои [npc2.fingers] еще глубже!",
+									"Так держать, сучка! Засаживай свои [npc2.fingers] поглубже!",
+									"Продолжай, шлюха! Засунь свой [npc2.fingers] поглубже и приложи чуть больше усилий!");
 							break;
 						case SUB_EAGER:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Yes! Keep fingering my ass! Don't stop!",
-									"Keep going! My ass loves the attention!",
-									"Oh yes! My ass loves being fingered!");
+									"Да! Продолжай пальцевать мою задницу! Не останавливайся!",
+									"Не останавливайся! Моей заднице нравится это внимание!",
+									"О да! Моя задница обожает, когда её пальцами ласкают!");
 							break;
 						case SUB_NORMAL:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Keep fingering my ass!",
-									"Keep going! I love this!",
-									"Oh yes!");
+									"Продолжай трахать мою задницу пальцами!",
+									"Давай! Мне это безумно нравится!",
+									"О да!");
 							break;
 						case SUB_RESISTING:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Stop fingering my ass! Stop! Please!",
-									"Please, no more! Take your fingers out of my ass!",
-									"Get out of my ass! Stop! Please!");
+									"Хватит лезть мне в задницу! Прекрати! Пожалуйста!",
+									"Пожалуйста, хватит! Вытащи свои пальцы из моей задницы!",
+									"Вылезай из моей задницы! Стой! Пожалуйста!");
 							break;
 						default:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Fuck!",
-									"Yeah!",
-									"Oh yeah!");
+									"Блядь!",
+									"Да!",
+									"О да!");
 							break;
 					}
 					break;
@@ -11763,45 +11668,45 @@ public abstract class GameCharacter implements XMLSaving {
 					switch(Main.sex.getSexPace(this)) {
 						case DOM_GENTLE:
 							returnedLine = UtilText.returnStringAtRandom(
-									"My ass loves your [npc2.cock]!",
-									"Good [npc2.girl]! Keep sliding that delicious cock of yours in and out of my ass!",
-									"What a good [npc2.girl]! Enjoy my ass as your reward now!");
+									"Моя задница обожает твой [npc2.cock]!",
+									"Хороший [npc2.girl]! Продолжай входить и выходить своим вкусным членом в мою задницу!",
+									"Какой отличный [npc2.girl]! А теперь наслаждайся моей задницей в награду!");
 							break;
 						case DOM_NORMAL:
 							returnedLine = UtilText.returnStringAtRandom(
-									"You like feeling my slutty little asshole gripping down on your cock?!",
-									"Good [npc2.girl]! Push your [npc2.cock] deep into my ass!",
-									"Keep going! Get that [npc2.cock] deep in my ass like a good [npc2.girl]!");
+									"Тебе нравится чувствовать, как моя шлюшья дырочка сжимает твой член?!",
+									"Хороший [npc2.girl]! Запихивай свой [npc2.cock] поглубже в мою задницу!",
+									"Продолжай! Засунь свой [npc2.cock] поглубже в мою задницу, как послушная [npc2.girl]!");
 							break;
 						case DOM_ROUGH:
 							returnedLine = UtilText.returnStringAtRandom(
-									"That's right slut, you're my little anal fuck toy now!",
-									"Come on bitch! You can get your worthless [npc2.cock] deeper into my ass than that!",
-									"Fucking slut, put some more effort in! My ass deserves better than your worthless [npc2.cock]!");
+									"Вот так, шлюшка, теперь ты моя маленькая игрушка для анального секса!",
+									"Давай, сучка! Ты можешь засадить свой никчемный [npc2.cock] в мою задницу еще глубже!",
+									"Чертова шлюха, поднажми! Моя задница заслуживает большего, чем твой бесполезный [npc2.cock]!");
 							break;
 						case SUB_EAGER:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Yes! Fuck my ass! Fuck me harder! Don't stop!",
-									"Don't stop! Harder! Fuck my ass! Yes, yes, yes!",
-									"Oh yes! Fuck my ass! I love your [npc2.cock]!");
+									"Да! Трахни мою задницу! Трахни меня сильнее! Не останавливайся!",
+									"Не останавливайся! Сильнее! Трахни мою задницу! Да, да, да!",
+									"О да! Трахни мою задницу! Обожаю твой [npc2.cock]!");
 							break;
 						case SUB_NORMAL:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Yes! Fuck my ass!",
-									"Don't stop! Fuck my ass!",
-									"Oh yes! Fuck my ass!");
+									"Да! Трахни мою задницу!",
+									"Не останавливайся! Трахни мою задницу!",
+									"О да! Трахни мою задницу!");
 							break;
 						case SUB_RESISTING:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Stop it! Stop! Please!",
-									"Please, no more! Take your cock out of my ass!",
-									"Get out of my ass! Stop! Please!");
+									"Прекрати! Стой! Пожалуйста!",
+									"Пожалуйста, хватит! Вытащи свой член из моей задницы!",
+									"Вылезай из моей задницы! Стой! Пожалуйста!");
 							break;
 						default:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Fuck my ass! Yes! Harder!",
-									"Oh yeah! Fuck my ass!",
-									"Harder! Don't stop!");
+									"Трахни мою задницу! Да! Сильнее!",
+									"О да! Трахни мою задницу!",
+									"Сильнее! Не останавливайся!");
 							break;
 					}
 					break;
@@ -11809,45 +11714,45 @@ public abstract class GameCharacter implements XMLSaving {
 					switch(Main.sex.getSexPace(this)) {
 						case DOM_GENTLE:
 							returnedLine = UtilText.returnStringAtRandom(
-									"My ass loves your [npc2.tail]! Keep going!",
-									"Good [npc2.girl]! Keep fucking my ass with that [npc2.tail] of yours!",
-									"What a good [npc2.girl]! Enjoy my ass as your reward now!");
+									"Моя задница обожает твой [npc2.tail]! Продолжай!",
+									"Хороший [npc2.girl]! Продолжай трахать мою задницу своим [npc2.tail]!",
+									"Какой отличный [npc2.girl]! А теперь наслаждайся моей задницей в награду!");
 							break;
 						case DOM_NORMAL:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Oh yes! Your [npc2.tail] feels so good!",
-									"Good [npc2.girl]! Push your [npc2.tail] in deep!",
-									"Keep going! Get that [npc2.tail] in deep like a good [npc2.girl]!");
+									"О да! Твой [npc2.tail] такой классный!",
+									"Хороший [npc2.girl]! Засаживай свой [npc2.tail] поглубже!",
+									"Продолжай! Засаживай этот [npc2.tail] глубоко, как послушный [npc2.girl]!");
 							break;
 						case DOM_ROUGH:
 							returnedLine = UtilText.returnStringAtRandom(
-									"That's right slut, get that [npc2.tail] in deep like a good little fuck toy!",
-									"Come on bitch! You can get your [npc2.tail] in deeper than that!",
-									"Fucking bitch, put some more effort in! My ass deserves better than some slut's [npc2.tail]!");
+									"Вот так, шлюшка, засаживай этот [npc2.tail] глубоко, как хорошая маленькая секс-игрушка!",
+									"Давай, сучка! Ты можешь засадить свой [npc2.tail] еще глубже!",
+									"Чертова сучка, поднажми! Моя задница заслуживает большего, чем [npc2.tail] какой-то шлюхи!");
 							break;
 						case SUB_EAGER:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Yes! Fuck me! Fuck me harder! Don't stop!",
-									"Don't stop! Harder! Fuck me! Yes, yes, yes!",
-									"Oh yes! Fuck me! I love your [npc2.tail]! Get it deeper!");
+									"Да! Трахни меня! Трахни меня сильнее! Не останавливайся!",
+									"Не останавливайся! Сильнее! Трахни меня! Да, да, да!",
+									"О да! Трахни меня! Обожаю твой [npc2.tail]! Глубже!");
 							break;
 						case SUB_NORMAL:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Yes! Fuck me!",
-									"Don't stop! Fuck me!",
-									"Oh yes! Fuck me!");
+									"Да! Трахни меня!",
+									"Не останавливайся! Трахни меня!",
+									"О да! Трахни меня!");
 							break;
 						case SUB_RESISTING:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Stop it! Stop! Please!",
-									"Please, no more! Take your tail out of my ass!",
-									"Get out of my ass! Stop! Please!");
+									"Прекрати! Стой! Пожалуйста!",
+									"Пожалуйста, хватит! Вытащи свой хвост из моей задницы!",
+									"Вылезай из моей задницы! Стой! Пожалуйста!");
 							break;
 						default:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Fuck me! Yes! Harder!",
-									"Oh yeah! Fuck me!",
-									"Harder! Don't stop!");
+									"Трахни меня! Да! Сильнее!",
+									"О да! Трахни меня!",
+									"Сильнее! Не останавливайся!");
 							break;
 					}
 					break;
@@ -11855,45 +11760,45 @@ public abstract class GameCharacter implements XMLSaving {
 					switch(Main.sex.getSexPace(this)) {
 						case DOM_GENTLE:
 							returnedLine = UtilText.returnStringAtRandom(
-									"That's right, keep that rimjob going like a good [npc2.girl]!",
-									"Good [npc2.girl]! Keep that [npc2.tongue] of yours busy in my ass!",
-									"What a good [npc2.girl]! You love the taste of my ass, don't you?!");
+									"Вот так, продолжай лизать мне анус, как послушная [npc2.girl]!",
+									"Хороший [npc2.girl]! Не давай своему [npc2.tongue] скучать в моей заднице!",
+									"Ну что за отличная [npc2.girl]! Тебе ведь нравится вкус моей задницы, да?!");
 							break;
 						case DOM_NORMAL:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Oh yes! Get that [npc2.tongue] in deep!",
-									"Good [npc2.girl]! Get that [npc2.tongue] of yours in deep!",
-									"Keep going! My ass loves your [npc2.tongue]!");
+									"О да! Засунь этот [npc2.tongue] поглубже!",
+									"Хороший [npc2.girl]! Засунь свой [npc2.tongue] поглубже!",
+									"Продолжай! Моя задница обожает твой [npc2.tongue]!");
 							break;
 						case DOM_ROUGH:
 							returnedLine = UtilText.returnStringAtRandom(
-									"That's right slut, keep that rimjob going like the worthless little fuck toy you are!",
-									"Come on bitch! Get that [npc2.tongue] of yours deeper into my ass!",
-									"Fucking bitch, put some more effort in! You know how lucky you are, being allowed to lick my ass like this?!");
+									"Вот так, шлюха, продолжай этот римджоб, как и подобает твоей никчемной маленькой секс-игрушке!",
+									"Давай, сучка! Засунь свой [npc2.tongue] поглубже в мою задницу!",
+									"Чертова сучка, поднажми! Ты же знаешь, как тебе повезло, что тебе позволили так лизать мою задницу?!");
 							break;
 						case SUB_EAGER:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Yes! I love your [npc2.tongue]! Don't stop!",
-									"Don't stop! Deeper! Get your [npc2.tongue] into my ass! Yes, yes, yes!",
-									"Oh yes! Taste my ass! I love your [npc2.tongue]! Get it deeper!");
+									"Да! Обожаю твой [npc2.tongue]! Не останавливайся!",
+									"Не останавливайся! Глубже! Засунь свой [npc2.tongue] в мою задницу! Да, да, да!",
+									"О да! Попробуй мою задницу на вкус! Обожаю твой [npc2.tongue]! Глубже!");
 							break;
 						case SUB_NORMAL:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Yes! Don't stop!",
-									"Don't stop! I love your [npc2.tongue]!",
-									"Oh yes! Taste my ass!");
+									"Да! Не останавливайся!",
+									"Не останавливайся! Обожаю твой [npc2.tongue]!",
+									"О да! Попробуй мою задницу на вкус!");
 							break;
 						case SUB_RESISTING:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Stop it! Stop! Please!",
-									"Please, no more! Take your tongue out of my ass!",
-									"Get your tongue out of my ass! Stop! Please!");
+									"Прекрати! Стой! Пожалуйста!",
+									"Пожалуйста, хватит! Вынь язык из моей задницы!",
+									"Вынь язык из моей задницы! Стой! Пожалуйста!");
 							break;
 						default:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Yes! Get that tongue deeper!",
-									"Oh yeah! Keep going!",
-									"Deeper! Don't stop!");
+									"Да! Засунь язык поглубже!",
+									"О да! Продолжай!",
+									"Глубже! Не останавливайся!");
 							break;
 					}
 					break;
@@ -11901,15 +11806,15 @@ public abstract class GameCharacter implements XMLSaving {
 					switch(Main.sex.getSexPace(this)) {
 						case SUB_RESISTING:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Go away! Leave me alone!",
-									"Stop it! Just go away!",
-									"Please stop! Don't do this!");
+									"Уходи! Оставь меня в покое!",
+									"Прекрати! Просто уйди!",
+									"Пожалуйста, остановись! Не делай этого!");
 							break;
 						default:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Fuck!",
-									"Yeah!",
-									"Oh yeah!");
+									"Блядь!",
+									"Да!",
+									"О да!");
 							break;
 					}
 			}
@@ -11934,44 +11839,44 @@ public abstract class GameCharacter implements XMLSaving {
 					switch(Main.sex.getSexPace(this)) {
 						case DOM_GENTLE:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Your fingers taste good!",
-									"Good [npc2.girl]! Your [npc2.fingers] taste so good!",
-									"What a good [npc2.girl]!");
+									"Твои пальцы вкусные!",
+									"Вкусная [npc2.girl]! Твоя [npc2.fingers] такая сладкая!",
+									"Какая хорошая [npc2.girl]!");
 							break;
 						case DOM_NORMAL:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Your fingers taste good!",
-									"Good [npc2.girl]! Your [npc2.fingers] taste so good!",
-									"What a good [npc2.girl]!");
+									"Твои пальцы вкусные!",
+									"Вкусная [npc2.girl]! Твоя [npc2.fingers] такая сладкая!",
+									"Какая хорошая [npc2.girl]!");
 							break;
 						case DOM_ROUGH:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Fucking slut, let's get your [npc2.fingers] all nice and wet now!",
-									"That's right bitch! Let's get your [npc2.fingers] nice and wet!",
-									"Hold still slut! I need your [npc2.fingers] all nice and lubed up!");
+									"Чертова шлюха, давай сделаем твою [npc2.fingers] совсем мокрой!",
+									"Вот так, сучка! Давай сделаем твою [npc2.fingers] хорошенько смазанной!",
+									"Не дергайся, шлюха! Мне нужно, чтобы твоя [npc2.fingers] была совсем скользкой!");
 							break;
 						case SUB_EAGER:
 							returnedLine = UtilText.returnStringAtRandom(
-									"I love the taste of your [npc2.fingers]! Don't stop!",
-									"Keep going! I love sucking on your [npc2.fingers]!",
-									"Oh yes! I love the taste of your [npc2.fingers]!");
+									"Обожаю вкус твоей [npc2.fingers]! Не останавливайся!",
+									"Продолжай! Обожаю сосать твою [npc2.fingers]!",
+									"О да! Обожаю вкус твоей [npc2.fingers]!");
 							break;
 						case SUB_NORMAL:
 							returnedLine = UtilText.returnStringAtRandom(
-									"I love the taste of your [npc2.fingers]!",
-									"I love sucking on your [npc2.fingers]!");
+									"Обожаю вкус твоего [npc2.fingers]!",
+									"Обожаю сосать твой [npc2.fingers]!");
 							break;
 						case SUB_RESISTING:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Stop it! Stop! Please!",
-									"Please, no more! Take your fingers out of my mouth!",
-									"Get out of my mouth! Stop! Please!");
+									"Прекрати! Стой! Пожалуйста!",
+									"Пожалуйста, хватит! Вынь пальцы из моего рта!",
+									"Убери их из моего рта! Стой! Пожалуйста!");
 							break;
 						default:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Fuck!",
-									"Yeah!",
-									"Oh yeah!");
+									"Блядь!",
+									"Да!",
+									"О да!");
 							break;
 					}
 					break;
@@ -11979,45 +11884,45 @@ public abstract class GameCharacter implements XMLSaving {
 					switch(Main.sex.getSexPace(this)) {
 						case DOM_GENTLE:
 							returnedLine = UtilText.returnStringAtRandom(
-									"I love your [npc2.cock]!",
-									"Good [npc2.girl]! Your delicious cock deserves this nice reward!",
-									"What a good [npc2.girl]! I hope you're enjoying your reward!");
+									"Обожаю твой [npc2.cock]!",
+									"Хороший [npc2.girl]! Твой вкусный член заслуживает такой награды!",
+									"Какой послушный [npc2.girl]! Надеюсь, тебе нравится твоя награда!");
 							break;
 						case DOM_NORMAL:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Your cock tastes so good!",
-									"I love sucking your [npc2.cock]!",
-									"Oh yes! Your [npc2.cock] tastes so good!");
+									"Твой член такой вкусный!",
+									"Обожаю сосать твой [npc2.cock]!",
+									"О да! Твой [npc2.cock] такой вкусный!");
 							break;
 						case DOM_ROUGH:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Hold still slut, be a good little fuck toy and just be thankful that I love sucking cock!",
-									"Stay still bitch! You'd better be happy that your worthless [npc2.cock] is the only thing for me to suck right now!",
-									"Fucking slut, hold still! I need to practice my oral skills on your worthless [npc2.cock]!");
+									"Не дергайся, шлюшка, будь хорошей маленькой секс-игрушкой и просто радуйся тому, что я обожаю сосать член!",
+									"Замри, сучка! Тебе стоит радоваться, что твой никчемный [npc2.cock] — единственное, что мне сейчас осталось сосать!",
+									"Чертова шлюха, не двигайся! Мне нужно потренировать оральные навыки на твоем никчемном [npc2.cock]!");
 							break;
 						case SUB_EAGER:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Oh yes! I love your [npc2.cock]! I need it! Use my throat!",
-									"Don't stop! Harder! Fuck my throat! Yes, yes, yes!",
-									"Oh yes! I love your [npc2.cock]! You taste so good!");
+									"О да! Обожаю твой [npc2.cock]! Он мне нужен! Забей его мне в глотку!",
+									"Не останавливайся! Сильнее! Трахни мне глотку! Да, да, да!",
+									"О да! Обожаю твой [npc2.cock]! У тебя такой вкусный вкус!");
 							break;
 						case SUB_NORMAL:
 							returnedLine = UtilText.returnStringAtRandom(
-									"I love your [npc2.cock]! Use my throat!",
-									"Fuck my throat! Oh yes!",
-									"I love your [npc2.cock]! You taste so good!");
+									"Обожаю твой [npc2.cock]! Забей его мне в глотку!",
+									"Трахни мне глотку! О да!",
+									"Обожаю твой [npc2.cock]! Ты такой вкусный!");
 							break;
 						case SUB_RESISTING:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Stop it! Stop! Please!",
-									"Please, no more! Take your cock out of my mouth!",
-									"Get your cock away from me! Stop! Please!");
+									"Прекрати! Стой! Пожалуйста!",
+									"Пожалуйста, хватит! Вытащи свой член из моего рта!",
+									"Убери свой член от меня! Стой! Пожалуйста!");
 							break;
 						default:
 							returnedLine = UtilText.returnStringAtRandom(
-									"I love sucking cock!",
-									"Oh yeah! I love your cock!",
-									"Don't stop!");
+									"Обожаю сосать член!",
+									"О да! Обожаю твой член!",
+									"Не останавливайся!");
 							break;
 					}
 					break;
@@ -12025,45 +11930,45 @@ public abstract class GameCharacter implements XMLSaving {
 					switch(Main.sex.getSexPace(this)) {
 						case DOM_GENTLE:
 							returnedLine = UtilText.returnStringAtRandom(
-									"I love sucking your [npc2.tail]!",
-									"Good [npc2.girl]! Get this delicious [npc2.tail] of yours deep down my throat!",
-									"What a good [npc2.girl]! I hope you're enjoying your reward!");
+									"Обожаю сосать твой [npc2.tail]!",
+									"Хороший [npc2.girl]! Засунь свой вкусный [npc2.tail] поглубже мне в глотку!",
+									"Какой послушный [npc2.girl]! Надеюсь, тебе нравится твоя награда!");
 							break;
 						case DOM_NORMAL:
 							returnedLine = UtilText.returnStringAtRandom(
-									"I love sucking your [npc2.tail]!",
-									"Good [npc2.girl]! Get this delicious [npc2.tail] of yours deep down my throat!",
-									"What a good [npc2.girl]! I hope you're enjoying your reward!");
+									"Обожаю сосать твой [npc2.tail]!",
+									"Хороший [npc2.girl]! Засунь свой вкусный [npc2.tail] поглубже мне в глотку!",
+									"Какой послушный [npc2.girl]! Надеюсь, тебе нравится твоя награда!");
 							break;
 						case DOM_ROUGH:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Hold still slut, be a good little fuck toy and just be thankful that I decided to practice oral on your [npc2.tail]!",
-									"Stay still bitch! You'd better be happy that I decided to practice my cock-sucking on your [npc2.tail]!",
-									"Fucking slut, hold still! I need to practice my oral skills on your [npc2.tail]!");
+									"Не дергайся, шлюшка, будь послушной секс-игрушкой и просто радуйся тому, что я решила попрактиковаться в орале на твоем [npc2.tail]!",
+									"Замри, сучка! Тебе лучше радоваться тому, что я решила попрактиковаться в сосании на твоем [npc2.tail]!",
+									"Чертова сучка, не дергайся! Мне нужно потренировать оральные навыки на твоем [npc2.tail]!");
 							break;
 						case SUB_EAGER:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Oh yes! I love your [npc2.tail]! I need it! Use my throat!",
-									"Don't stop! Harder! Fuck my throat! Yes, yes, yes!",
-									"Oh yes! I love your [npc2.tail]! You taste so good!");
+									"О да! Обожаю твой [npc2.tail]! Он мне нужен! Используй мое горло!",
+									"Не останавливайся! Сильнее! Трахни мне глотку! Да, да, да!",
+									"О да! Обожаю твой [npc2.tail]! У тебя такой вкусный вкус!");
 							break;
 						case SUB_NORMAL:
 							returnedLine = UtilText.returnStringAtRandom(
-									"I love your [npc2.tail]! Use my throat!",
-									"Fuck my throat! Oh yes!",
-									"I love your [npc2.tail]! You taste so good!");
+									"Обожаю твой [npc2.tail]! Используй мое горло!",
+									"Трахни мне глотку! О да!",
+									"Обожаю твой [npc2.tail]! Ты такой вкусный!");
 							break;
 						case SUB_RESISTING:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Stop it! Stop! Please!",
-									"Please, no more! Take your tail out of my mouth!",
-									"Get your tail away from me! Stop! Please!");
+									"Прекрати! Стой! Пожалуйста!",
+									"Пожалуйста, хватит! Вытащи свой хвост у меня изо рта!",
+									"Убери свой хвост от меня! Стой! Пожалуйста!");
 							break;
 						default:
 							returnedLine = UtilText.returnStringAtRandom(
-									"I love sucking your [npc2.tail]!",
-									"Oh yeah! I love your [npc2.tail]!",
-									"Don't stop!");
+									"Обожаю сосать твой [npc2.tail]!",
+									"О да! Обожаю твой [npc2.tail]!",
+									"Не останавливайся!");
 							break;
 					}
 					break;
@@ -12071,40 +11976,40 @@ public abstract class GameCharacter implements XMLSaving {
 					switch(Main.sex.getSexPace(this)) {
 						case DOM_GENTLE:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Yes! Good [npc2.girl]!",
-									"Good [npc2.girl]! I love your [npc2.lips]!");
+									"Да! Хороший [npc2.girl]!",
+									"Хороший [npc2.girl]! Обожаю твой [npc2.lips]!");
 							break;
 						case DOM_NORMAL:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Yes! Good [npc2.girl]!",
-									"Good [npc2.girl]! I love your [npc2.lips]!");
+									"Да! Хороший [npc2.girl]!",
+									"Хороший [npc2.girl]! Обожаю твой [npc2.lips]!");
 							break;
 						case DOM_ROUGH:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Yes! Good bitch!",
-									"Good slut! I love your [npc2.lips]!");
+									"Да! Хорошая сучка!",
+									"Молодец, шлюшка! Обожаю твой [npc2.lips]!");
 							break;
 						case SUB_EAGER:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Yes! Good [npc2.girl]!",
-									"Good [npc2.girl]! I love your [npc2.lips]!");
+									"Да! Хороший [npc2.girl]!",
+									"Хороший [npc2.girl]! Обожаю твой [npc2.lips]!");
 							break;
 						case SUB_NORMAL:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Yes! Good [npc2.girl]!",
-									"Good [npc2.girl]! I love your [npc2.lips]!");
+									"Да! Хороший [npc2.girl]!",
+									"Хороший [npc2.girl]! Обожаю твой [npc2.lips]!");
 							break;
 						case SUB_RESISTING:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Stop it! Stop! Please!",
-									"Please, no more! Stop kissing me like this!",
-									"Get away from me! Stop! Please!");
+									"Прекрати! Стой! Пожалуйста!",
+									"Пожалуйста, хватит! Перестань так меня целовать!",
+									"Уйди от меня! Стой! Пожалуйста!");
 							break;
 						default:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Yes! Good [npc2.girl]!",
-									"Good [npc2.girl]! I love your [npc2.lips]!",
-									"Don't stop!");
+									"Да! Хороший [npc2.girl]!",
+									"Хороший [npc2.girl]! Обожаю твой [npc2.lips]!",
+									"Не останавливайся!");
 							break;
 					}
 					break;
@@ -12112,15 +12017,15 @@ public abstract class GameCharacter implements XMLSaving {
 					switch(Main.sex.getSexPace(this)) {
 						case SUB_RESISTING:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Go away! Leave me alone!",
-									"Stop it! Just go away!",
-									"Please stop! Don't do this!");
+									"Уходи! Оставь меня в покое!",
+									"Прекрати! Просто уйди!",
+									"Пожалуйста, остановись! Не делай этого!");
 							break;
 						default:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Fuck!",
-									"Yeah!",
-									"Oh yeah!");
+									"Блядь!",
+									"Да!",
+									"О да!");
 							break;
 					}
 			}
@@ -12145,45 +12050,45 @@ public abstract class GameCharacter implements XMLSaving {
 					switch(Main.sex.getSexPace(this)) {
 						case DOM_GENTLE:
 							returnedLine = UtilText.returnStringAtRandom(
-									"That's right, be a good [npc2.girl] now and push your [npc2.fingers] deeper into my nipple!",
-									"Good [npc2.girl]! Keep those [npc2.fingers] of yours busy in my breast!",
-									"What a good [npc2.girl]! My nipples love the feeling of your [npc2.fingers]!");
+									"Вот так, будь хорошей [npc2.girl] и засунь свой [npc2.fingers] поглубже в мой сосок!",
+									"Хорошая [npc2.girl]! Занимай свои [npc2.fingers] моими грудями!",
+									"Какая послушная [npc2.girl]! Мои соски обожают ощущение твоих [npc2.fingers]!");
 							break;
 						case DOM_NORMAL:
 							returnedLine = UtilText.returnStringAtRandom(
-									"That's right, push your [npc2.fingers] deep into my breast!",
-									"Good [npc2.girl]! Get those [npc2.fingers] deep into my nipple!",
-									"Keep going! Curl your [npc2.fingers] up a bit!");
+									"Вот так, втискай свой [npc2.fingers] поглубже в мою грудь!",
+									"Умница, [npc2.girl]! Загоняй свои [npc2.fingers] поглубже в мой сосок!",
+									"Продолжай! Сверни свои [npc2.fingers] чуть сильнее!");
 							break;
 						case DOM_ROUGH:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Come on slut, you can get your [npc2.fingers] deeper into my breast than that!",
-									"Keep it up bitch! Get those [npc2.fingers] deep into my nipple!",
-									"Keep going slut! Curl your [npc2.fingers] up and put in a little more effort!");
+									"Давай, шлюшка, ты можешь засунуть свой [npc2.fingers] в мою грудь еще глубже!",
+									"Так держать, сучка! Запихивай свой [npc2.fingers] поглубже в мой сосок!",
+									"Продолжай, шлюшка! Сверни свои [npc2.fingers] и постарайся получше!");
 							break;
 						case SUB_EAGER:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Yes! Keep fingering my nipple!",
-									"Keep going! My nipples love your attention!",
-									"Oh yes! I love getting my nipples fingered!");
+									"Да! Продолжай ласкать мой сосок пальцами!",
+									"Не останавливайся! Мои соски обожают твои ласки!",
+									"О да! Обожаю, когда пальцами играют с моими сосками!");
 							break;
 						case SUB_NORMAL:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Keep fingering my nipple!",
-									"Keep going! I love this!",
-									"Oh yes!");
+									"Продолжай теребить мой сосок!",
+									"Давай! Мне это безумно нравится!",
+									"О да!");
 							break;
 						case SUB_RESISTING:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Stop it! Stop! Please!",
-									"Please, no more! Take your fingers out of my nipple!",
-									"Get out of my nipple! Stop! Please!");
+									"Прекрати! Стой! Пожалуйста!",
+									"Пожалуйста, хватит! Вытащи пальцы из моего соска!",
+									"Вынь пальцы из моего соска! Стой! Пожалуйста!");
 							break;
 						default:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Fuck!",
-									"Yeah!",
-									"Oh yeah!");
+									"Блядь!",
+									"Да!",
+									"О да!");
 							break;
 					}
 					break;
@@ -12191,45 +12096,45 @@ public abstract class GameCharacter implements XMLSaving {
 					switch(Main.sex.getSexPace(this)) {
 						case DOM_GENTLE:
 							returnedLine = UtilText.returnStringAtRandom(
-									"My nipples love your [npc2.cock]!",
-									"Good [npc2.girl]! Keep sliding that delicious cock of yours in and out of my tits!",
-									"What a good [npc2.girl]! Enjoy my tits as your reward now!");
+									"Мои соски обожают твой [npc2.cock]!",
+									"Хороший [npc2.girl]! Продолжай входить и выходить своим вкусным членом в мою грудь!",
+									"Какой отличный [npc2.girl]! А теперь наслаждайся моей грудью в награду!");
 							break;
 						case DOM_NORMAL:
 							returnedLine = UtilText.returnStringAtRandom(
-									"You like feeling my nipple gripping down on your cock?!",
-									"Good [npc2.girl]! Push your [npc2.cock] deep into my breast!",
-									"Keep going! Get that [npc2.cock] in deep like a good [npc2.girl]!");
+									"Тебе нравится, как мой сосок сжимает твой член?!",
+									"Хороший [npc2.girl]! Заталкивай свой [npc2.cock] поглубже в мою грудь!",
+									"Продолжай! Засаживай этот [npc2.cock] глубоко, как хороший [npc2.girl]!");
 							break;
 						case DOM_ROUGH:
 							returnedLine = UtilText.returnStringAtRandom(
-									"That's right slut, my tits could use some attention from a little fuck toy like you!",
-									"Come on bitch! You can get your worthless [npc2.cock] deeper into my tits than that!",
-									"Fucking slut, put some more effort in! My breasts deserve better than your worthless [npc2.cock]!");
+									"Вот так, шлюшка, моей груди не помешает немного внимания от такой маленькой секс-игрушки, как ты!",
+									"Давай, сучка! Ты можешь засунуть свой никчемный [npc2.cock] в мои титьки еще глубже!",
+									"Чертова шлюха, поднажми! Мои груди заслуживают большего, чем твой бесполезный [npc2.cock]!");
 							break;
 						case SUB_EAGER:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Yes! Fuck my tits! Fuck them harder! Don't stop!",
-									"Don't stop! Harder! Fuck my nipples! Yes, yes, yes!",
-									"Oh yes! Fuck my tits! I love your [npc2.cock]!");
+									"Да! Трахни мои титьки! Трахни их сильнее! Не останавливайся!",
+									"Не останавливайся! Сильнее! Трахни мои соски! Да, да, да!",
+									"О да! Трахни мои титьки! Обожаю твой [npc2.cock]!");
 							break;
 						case SUB_NORMAL:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Yes! Fuck my tits!",
-									"Don't stop! Fuck my nipples!",
-									"Oh yes! Fuck me!");
+									"Да! Трахни мои титьки!",
+									"Не останавливайся! Трахни мои соски!",
+									"О да! Трахни меня!");
 							break;
 						case SUB_RESISTING:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Stop it! Stop! Please!",
-									"Please, no more! Take your cock out of my breast!",
-									"Get out of my nipple! Stop! Please!");
+									"Прекрати! Стой! Пожалуйста!",
+									"Пожалуйста, хватит! Вынь свой член из моей груди!",
+									"Вынь пальцы из моего соска! Стой! Пожалуйста!");
 							break;
 						default:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Fuck me! Yes! Harder!",
-									"Oh yeah! Fuck me!",
-									"Harder! Don't stop!");
+									"Трахни меня! Да! Сильнее!",
+									"О да! Трахни меня!",
+									"Сильнее! Не останавливайся!");
 							break;
 					}
 					break;
@@ -12237,45 +12142,45 @@ public abstract class GameCharacter implements XMLSaving {
 					switch(Main.sex.getSexPace(this)) {
 						case DOM_GENTLE:
 							returnedLine = UtilText.returnStringAtRandom(
-									"My tits love your [npc2.tail]! Keep going!",
-									"Good [npc2.girl]! Keep fucking my nipples with that [npc2.tail] of yours!",
-									"What a good [npc2.girl]! Enjoy my tits as your reward now!");
+									"Мои сиськи обожают твой [npc2.tail]! Продолжай!",
+									"Хороший [npc2.girl]! Продолжай трахать мои соски своим [npc2.tail]!",
+									"Какой отличный [npc2.girl]! А теперь наслаждайся моей грудью в награду!");
 							break;
 						case DOM_NORMAL:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Oh yes! Your [npc2.tail] feels so good!",
-									"Good [npc2.girl]! Push your [npc2.tail] deep into my breast!",
-									"Keep going! Get that [npc2.tail] deep into my tits like a good [npc2.girl]!");
+									"О да! Твой [npc2.tail] такой классный!",
+									"Отличный [npc2.girl]! Втисни свой [npc2.tail] поглубже в мою грудь!",
+									"Так держать! Засунь этот [npc2.tail] поглубже в мои сиськи, как послушный [npc2.girl]!");
 							break;
 						case DOM_ROUGH:
 							returnedLine = UtilText.returnStringAtRandom(
-									"That's right slut, get that [npc2.tail] deep into my nipple like a good little fuck toy!",
-									"Come on bitch! You can get your [npc2.tail] deeper into my tits than that!",
-									"Fucking bitch, put some more effort in! My breasts deserve better than some slut's [npc2.tail]!");
+									"Вот так, шлюшка, засунь этот [npc2.tail] поглубже в мой сосок, как хорошая маленькая секс-игрушка!",
+									"Давай, сучка! Ты можешь засунуть свой [npc2.tail] в мои сиськи еще глубже!",
+									"Чертова сучка, поднажми! Мои груди заслуживают большего, чем [npc2.tail] какой-то шлюхи!");
 							break;
 						case SUB_EAGER:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Yes! Fuck my tits! Fuck them harder! Don't stop!",
-									"Don't stop! Harder! Fuck my nipples! Yes, yes, yes!",
-									"Oh yes! Fuck my tits! I love your [npc2.tail]!");
+									"Да! Трахни мои титьки! Трахни их сильнее! Не останавливайся!",
+									"Не останавливайся! Сильнее! Трахни мои соски! Да, да, да!",
+									"О да! Трахай мои сиськи! Обожаю твой [npc2.tail]!");
 							break;
 						case SUB_NORMAL:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Yes! Fuck my tits!",
-									"Don't stop! Fuck my nipples!",
-									"Oh yes! Fuck me!");
+									"Да! Трахни мои титьки!",
+									"Не останавливайся! Трахни мои соски!",
+									"О да! Трахни меня!");
 							break;
 						case SUB_RESISTING:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Stop it! Stop! Please!",
-									"Please, no more! Take your tail out of my nipple!",
-									"Get out of my nipple! Stop! Please!");
+									"Прекрати! Стой! Пожалуйста!",
+									"Пожалуйста, хватит! Вынь свой хвост из моего соска!",
+									"Вынь пальцы из моего соска! Стой! Пожалуйста!");
 							break;
 						default:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Fuck me! Yes! Harder!",
-									"Oh yeah! Fuck me!",
-									"Harder! Don't stop!");
+									"Трахни меня! Да! Сильнее!",
+									"О да! Трахни меня!",
+									"Сильнее! Не останавливайся!");
 							break;
 					}
 					break;
@@ -12283,45 +12188,45 @@ public abstract class GameCharacter implements XMLSaving {
 					switch(Main.sex.getSexPace(this)) {
 						case DOM_GENTLE:
 							returnedLine = UtilText.returnStringAtRandom(
-									"That's right, keep sucking on my nipples like a good [npc2.girl]!",
-									"Good [npc2.girl]! Keep that [npc2.tongue] of yours busy!",
-									"What a good [npc2.girl]! You love my tits, don't you?!");
+									"Вот так, соси мои соски, как послушная [npc2.girl]!",
+									"Хороший [npc2.girl]! Не давай своему [npc2.tongue] скучать!",
+									"Какая хорошая [npc2.girl]! Тебе ведь нравятся мои сиськи, да?!");
 							break;
 						case DOM_NORMAL:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Oh yes! Keep sucking on my nipples!",
-									"Good [npc2.girl]! Keep that [npc2.tongue] of yours busy!",
-									"Keep going! My tits love the feel of your [npc2.tongue]!");
+									"О да! Продолжай сосать мои соски!",
+									"Хороший [npc2.girl]! Не давай своему [npc2.tongue] скучать!",
+									"Так держать! Мои сиськи обожают прикосновения твоего [npc2.tongue]!");
 							break;
 						case DOM_ROUGH:
 							returnedLine = UtilText.returnStringAtRandom(
-									"That's right slut, keep sucking on my tits like the worthless little fuck toy you are!",
-									"Come on bitch! Keep that [npc2.tongue] of yours busy!",
-									"Fucking bitch, put some more effort in! You know how lucky you are, being allowed to suck on my tits like this?!");
+									"Верно, шлюха, соси мои сиськи, как никчемная маленькая секс-игрушка!",
+									"Давай, сучка! Не давай своему [npc2.tongue] скучать!",
+									"Чертова сучка, поднажми! Ты хоть понимаешь, как тебе повезло, что тебе позволили вот так сосать мои сиськи?!");
 							break;
 						case SUB_EAGER:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Yes! I love the feeling of your lips on my tits! Don't stop!",
-									"Don't stop! Suck on my tits! Yes, yes, yes!",
-									"Oh yes! Lick my nipples! I love the feel of your [npc2.tongue]!");
+									"Да! Обожаю ощущение твоих губ на моих сиськах! Не останавливайся!",
+									"Не останавливайся! Соси мои сиськи! Да, да, да!",
+									"О да! Лижи мои соски! Мне так нравится ощущение твоего [npc2.tongue]!");
 							break;
 						case SUB_NORMAL:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Yes! Don't stop!",
-									"Don't stop! I love your [npc2.tongue]!",
-									"Oh yes! Suck on my tits!");
+									"Да! Не останавливайся!",
+									"Не останавливайся! Обожаю твой [npc2.tongue]!",
+									"О да! Соси мои сиськи!");
 							break;
 						case SUB_RESISTING:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Stop it! Stop! Please!",
-									"Please, no more! Get away from me!",
-									"Leave me alone! Stop! Please!");
+									"Прекрати! Стой! Пожалуйста!",
+									"Пожалуйста, хватит! Уйди от меня!",
+									"Оставь меня в покое! Стой! Пожалуйста!");
 							break;
 						default:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Yes! Keep that [npc2.tongue] of yours busy!",
-									"Oh yeah! Keep going!",
-									"Deeper! Don't stop!");
+									"Да! Займи свой [npc2.tongue] делом!",
+									"О да! Продолжай!",
+									"Глубже! Не останавливайся!");
 							break;
 					}
 					break;
@@ -12329,15 +12234,15 @@ public abstract class GameCharacter implements XMLSaving {
 					switch(Main.sex.getSexPace(this)) {
 						case SUB_RESISTING:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Go away! Leave me alone!",
-									"Stop it! Just go away!",
-									"Please stop! Don't do this!");
+									"Уходи! Оставь меня в покое!",
+									"Прекрати! Просто уйди!",
+									"Пожалуйста, остановись! Не делай этого!");
 							break;
 						default:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Fuck!",
-									"Yeah!",
-									"Oh yeah!");
+									"Блядь!",
+									"Да!",
+									"О да!");
 							break;
 					}
 			}
@@ -12362,45 +12267,45 @@ public abstract class GameCharacter implements XMLSaving {
 					switch(Main.sex.getSexPace(this)) {
 						case DOM_GENTLE:
 							returnedLine = UtilText.returnStringAtRandom(
-									"That's right, be a good [npc2.girl] now and push your [npc2.fingers] deeper into my [npc.crotchNipple]!",
-									"Good [npc2.girl]! Keep those [npc2.fingers] of yours busy in my [npc.crotchNipple]!",
-									"What a good [npc2.girl]! My [npc.crotchNipples] love the feeling of your [npc2.fingers]!");
+									"Вот так, будь хорошей [npc2.girl] и засаживай свой [npc2.fingers] поглубже в мою [npc.crotchNipple]!",
+									"Хорошая [npc2.girl]! Занимай свои [npc2.fingers] в моей [npc.crotchNipple]!",
+									"Какая послушная [npc2.girl]! Мои [npc.crotchNipples] обожают ощущения от твоего [npc2.fingers]!");
 							break;
 						case DOM_NORMAL:
 							returnedLine = UtilText.returnStringAtRandom(
-									"That's right, push your [npc2.fingers] deep into my [npc.crotchNipple]!",
-									"Good [npc2.girl]! Get those [npc2.fingers] deep into my [npc.crotchNipple]!",
-									"Keep going! Curl your [npc2.fingers] up a bit!");
+									"Вот так, засаживай свой [npc2.fingers] глубоко в мою [npc.crotchNipple]!",
+									"Молодец, [npc2.girl]! Загоняй свои [npc2.fingers] поглубже в мою [npc.crotchNipple]!",
+									"Продолжай! Сверни свои [npc2.fingers] чуть сильнее!");
 							break;
 						case DOM_ROUGH:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Come on slut, you can get your [npc2.fingers] deeper into my [npc.crotchNipple] than that!",
-									"Keep it up bitch! Get those [npc2.fingers] deep into my [npc.crotchNipple]!",
-									"Keep going slut! Curl your [npc2.fingers] up and put in a little more effort!");
+									"Давай, шлюшка, ты можешь засадить свой [npc2.fingers] в мою [npc.crotchNipple] еще глубже!",
+									"Так держать, сучка! Запихивай свои [npc2.fingers] поглубже в мою [npc.crotchNipple]!",
+									"Продолжай, шлюшка! Сверни свои [npc2.fingers] и постарайся получше!");
 							break;
 						case SUB_EAGER:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Yes! Keep fingering my [npc.crotchNipple]!",
-									"Keep going! My [npc.crotchNipples] love your attention!",
-									"Oh yes! I love getting my [npc.crotchNipples] fingered!");
+									"Да! Продолжай ласкать мои [npc.crotchNipple] пальцами!",
+									"Не останавливайся! Мои [npc.crotchNipples] обожают твоё внимание!",
+									"О да! Обожаю, когда в мои [npc.crotchNipples] тычет пальцами!");
 							break;
 						case SUB_NORMAL:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Keep fingering my [npc.crotchNipple]!",
-									"Keep going! I love this!",
-									"Oh yes!");
+									"Продолжай ласкать мои [npc.crotchNipple]!",
+									"Давай! Мне это безумно нравится!",
+									"О да!");
 							break;
 						case SUB_RESISTING:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Stop it! Stop! Please!",
-									"Please, no more! Take your fingers out of my [npc.crotchNipple]!",
-									"Get out of my [npc.crotchNipple]! Stop! Please!");
+									"Прекрати! Стой! Пожалуйста!",
+									"Пожалуйста, хватит! Вытащи пальцы из моей [npc.crotchNipple]!",
+									"Вынь их из моей [npc.crotchNipple]! Стой! Пожалуйста!");
 							break;
 						default:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Fuck!",
-									"Yeah!",
-									"Oh yeah!");
+									"Блядь!",
+									"Да!",
+									"О да!");
 							break;
 					}
 					break;
@@ -12408,45 +12313,45 @@ public abstract class GameCharacter implements XMLSaving {
 					switch(Main.sex.getSexPace(this)) {
 						case DOM_GENTLE:
 							returnedLine = UtilText.returnStringAtRandom(
-									"My [npc.crotchNipples] love your [npc2.cock]!",
-									"Good [npc2.girl]! Keep sliding that delicious cock of yours in and out of my [npc.crotchNipples]!",
-									"What a good [npc2.girl]! Enjoy my [npc.crotchNipples] as your reward now!");
+									"Мои [npc.crotchNipples] обожают твои [npc2.cock]!",
+									"Хороший [npc2.girl]! Продолжай входить и выходить своим вкусным членом из моей [npc.crotchNipples]!",
+									"Какой послушный [npc2.girl]! А теперь наслаждайся моей [npc.crotchNipples] в награду!");
 							break;
 						case DOM_NORMAL:
 							returnedLine = UtilText.returnStringAtRandom(
-									"You like feeling my [npc.crotchNipple] gripping down on your cock?!",
-									"Good [npc2.girl]! Push your [npc2.cock] deep into my [npc.crotchNipple]!",
-									"Keep going! Get that [npc2.cock] in deep like a good [npc2.girl]!");
+									"Тебе нравится чувствовать, как моя [npc.crotchNipple] сжимает твой член?!",
+									"Хорошая [npc2.girl]! Заталкивай свой [npc2.cock] поглубже в мою [npc.crotchNipple]!",
+									"Продолжай! Засаживай этот [npc2.cock] глубоко, как хороший [npc2.girl]!");
 							break;
 						case DOM_ROUGH:
 							returnedLine = UtilText.returnStringAtRandom(
-									"That's right slut, my [npc.crotchNipples] could use some attention from a little fuck toy like you!",
-									"Come on bitch! You can get your worthless [npc2.cock] deeper into my [npc.crotchNipples] than that!",
-									"Fucking slut, put some more effort in! My [npc.crotchNipple]s deserve better than your worthless [npc2.cock]!");
+									"Вот так, шлюшка, моей [npc.crotchNipples] не помешает немного внимания от такой маленькой секс-игрушки, как ты!",
+									"Давай, сучка! Ты можешь засунуть свой никчемный [npc2.cock] в мою [npc.crotchNipples] еще глубже!",
+									"Чертова шлюха, поднажми! Мои [npc.crotchNipple] заслуживают большего, чем твой никчемный [npc2.cock]!");
 							break;
 						case SUB_EAGER:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Yes! Fuck my [npc.crotchNipples]! Fuck them harder! Don't stop!",
-									"Don't stop! Harder! Fuck my [npc.crotchNipples]! Yes, yes, yes!",
-									"Oh yes! Fuck my [npc.crotchNipples]! I love your [npc2.cock]!");
+									"Да! Трахни мою [npc.crotchNipples]! Трахни их сильнее! Не останавливайся!",
+									"Не останавливайся! Сильнее! Трахни мою [npc.crotchNipples]! Да, да, да!",
+									"О да! Трахни мою [npc.crotchNipples]! Обожаю твой [npc2.cock]!");
 							break;
 						case SUB_NORMAL:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Yes! Fuck my [npc.crotchNipples]!",
-									"Don't stop! Fuck my [npc.crotchNipples]!",
-									"Oh yes! Fuck me!");
+									"Да! Трахни мою [npc.crotchNipples]!",
+									"Не останавливайся! Трахни мою [npc.crotchNipples]!",
+									"О да! Трахни меня!");
 							break;
 						case SUB_RESISTING:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Stop it! Stop! Please!",
-									"Please, no more! Take your cock out of my [npc.crotchNipple]!",
-									"Get out of my [npc.crotchNipple]! Stop! Please!");
+									"Прекрати! Стой! Пожалуйста!",
+									"Пожалуйста, хватит! Вытащи свой член из моей [npc.crotchNipple]!",
+									"Вынь их из моей [npc.crotchNipple]! Стой! Пожалуйста!");
 							break;
 						default:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Fuck me! Yes! Harder!",
-									"Oh yeah! Fuck me!",
-									"Harder! Don't stop!");
+									"Трахни меня! Да! Сильнее!",
+									"О да! Трахни меня!",
+									"Сильнее! Не останавливайся!");
 							break;
 					}
 					break;
@@ -12454,45 +12359,45 @@ public abstract class GameCharacter implements XMLSaving {
 					switch(Main.sex.getSexPace(this)) {
 						case DOM_GENTLE:
 							returnedLine = UtilText.returnStringAtRandom(
-									"My [npc.crotchNipples] love your [npc2.tail]! Keep going!",
-									"Good [npc2.girl]! Keep fucking my [npc.crotchNipples] with that [npc2.tail] of yours!",
-									"What a good [npc2.girl]! Enjoy my [npc.crotchNipples] as your reward now!");
+									"Моя [npc.crotchNipples] обожает твой [npc2.tail]! Продолжай!",
+									"Хорошая [npc2.girl]! Продолжай трахать мою [npc.crotchNipples] своим [npc2.tail]!",
+									"Какой послушный [npc2.girl]! А теперь наслаждайся моей [npc.crotchNipples] в награду!");
 							break;
 						case DOM_NORMAL:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Oh yes! Your [npc2.tail] feels so good!",
-									"Good [npc2.girl]! Push your [npc2.tail] deep into my [npc.crotchNipple]!",
-									"Keep going! Get that [npc2.tail] deep into my [npc.crotchNipples] like a good [npc2.girl]!");
+									"О да! Твой [npc2.tail] такой классный!",
+									"Отличная [npc2.girl]! Вгоняй свой [npc2.tail] поглубже в мою [npc.crotchNipple]!",
+									"Так держать! Загоняй этот [npc2.tail] глубоко в мою [npc.crotchNipples], как послушная [npc2.girl]!");
 							break;
 						case DOM_ROUGH:
 							returnedLine = UtilText.returnStringAtRandom(
-									"That's right slut, get that [npc2.tail] deep into my [npc.crotchNipple] like a good little fuck toy!",
-									"Come on bitch! You can get your [npc2.tail] deeper into my [npc.crotchNipples] than that!",
-									"Fucking bitch, put some more effort in! My [npc.crotchNipple]s deserve better than some slut's [npc2.tail]!");
+									"Вот так, шлюшка, засаживай этот [npc2.tail] глубоко в мою [npc.crotchNipple], как хорошая маленькая секс-игрушка!",
+									"Давай, сучка! Ты можешь засунуть свой [npc2.tail] в мою [npc.crotchNipples] еще глубже!",
+									"Чертова сучка, поднажми! Мои [npc.crotchNipple] заслуживают большего, чем [npc2.tail] какой-то шлюхи!");
 							break;
 						case SUB_EAGER:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Yes! Fuck my [npc.crotchNipples]! Fuck them harder! Don't stop!",
-									"Don't stop! Harder! Fuck my [npc.crotchNipples]! Yes, yes, yes!",
-									"Oh yes! Fuck my [npc.crotchNipples]! I love your [npc2.tail]!");
+									"Да! Трахни мою [npc.crotchNipples]! Трахни их сильнее! Не останавливайся!",
+									"Не останавливайся! Сильнее! Трахни мою [npc.crotchNipples]! Да, да, да!",
+									"О да! Трахни мою [npc.crotchNipples]! Обожаю твой [npc2.tail]!");
 							break;
 						case SUB_NORMAL:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Yes! Fuck my [npc.crotchNipples]!",
-									"Don't stop! Fuck my [npc.crotchNipples]!",
-									"Oh yes! Fuck me!");
+									"Да! Трахни мою [npc.crotchNipples]!",
+									"Не останавливайся! Трахни мою [npc.crotchNipples]!",
+									"О да! Трахни меня!");
 							break;
 						case SUB_RESISTING:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Stop it! Stop! Please!",
-									"Please, no more! Take your tail out of my [npc.crotchNipple]!",
-									"Get out of my [npc.crotchNipple]! Stop! Please!");
+									"Прекрати! Стой! Пожалуйста!",
+									"Пожалуйста, хватит! Вытащи свой хвост из моей [npc.crotchNipple]!",
+									"Вынь их из моей [npc.crotchNipple]! Стой! Пожалуйста!");
 							break;
 						default:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Fuck me! Yes! Harder!",
-									"Oh yeah! Fuck me!",
-									"Harder! Don't stop!");
+									"Трахни меня! Да! Сильнее!",
+									"О да! Трахни меня!",
+									"Сильнее! Не останавливайся!");
 							break;
 					}
 					break;
@@ -12500,45 +12405,45 @@ public abstract class GameCharacter implements XMLSaving {
 					switch(Main.sex.getSexPace(this)) {
 						case DOM_GENTLE:
 							returnedLine = UtilText.returnStringAtRandom(
-									"That's right, keep sucking on my [npc.crotchNipples] like a good [npc2.girl]!",
-									"Good [npc2.girl]! Keep that [npc2.tongue] of yours busy!",
-									"What a good [npc2.girl]! You love my [npc.crotchNipples], don't you?!");
+									"Вот так, соси мой [npc.crotchNipples], как послушная [npc2.girl]!",
+									"Хороший [npc2.girl]! Не давай своему [npc2.tongue] скучать!",
+									"Какая хорошая [npc2.girl]! Тебе ведь нравится мой [npc.crotchNipples], правда?!");
 							break;
 						case DOM_NORMAL:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Oh yes! Keep sucking on my [npc.crotchNipples]!",
-									"Good [npc2.girl]! Get that [npc2.tongue] of yours deep into my [npc.crotchNipples]!",
-									"Keep going! My [npc.crotchNipples] love the feel of your [npc2.tongue]!");
+									"О да! Продолжай сосать мой [npc.crotchNipples]!",
+									"Хорошая [npc2.girl]! Засунь свой [npc2.tongue] поглубже в мою [npc.crotchNipples]!",
+									"Так держать! Мои [npc.crotchNipples] обожают ощущения от твоего [npc2.tongue]!");
 							break;
 						case DOM_ROUGH:
 							returnedLine = UtilText.returnStringAtRandom(
-									"That's right slut, keep sucking on my [npc.crotchNipples] like the worthless little fuck toy you are!",
-									"Come on bitch! Get that [npc2.tongue] of yours deeper into my [npc.crotchNipples]!",
-									"Fucking bitch, put some more effort in! You know how lucky you are, being allowed to suck on my [npc.crotchNipples] like this?!");
+									"Вот так, шлюха, соси мой [npc.crotchNipples], как никчемная маленькая секс-игрушка, коей ты и являешься!",
+									"Давай, сучка! Запихивай свой [npc2.tongue] поглубже в мою [npc.crotchNipples]!",
+									"Чертова сука, поднажми! Ты хоть понимаешь, как тебе повезло, что тебе позволили вот так сосать мой [npc.crotchNipples]?!");
 							break;
 						case SUB_EAGER:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Yes! I love the feeling of your lips on my [npc.crotchNipples]! Don't stop!",
-									"Don't stop! Suck on my [npc.crotchNipples]! Yes, yes, yes!",
-									"Oh yes! Lick my [npc.crotchNipples]! I love your [npc2.tongue]! Get it deeper!");
+									"Да! Обожаю прикосновение твоих губ к моему [npc.crotchNipples]! Не останавливайся!",
+									"Не останавливайся! Соси мой [npc.crotchNipples]! Да, да, да!",
+									"О да! Лижи мой [npc.crotchNipples]! Обожаю твой [npc2.tongue]! Глубже, еще глубже!");
 							break;
 						case SUB_NORMAL:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Yes! Don't stop!",
-									"Don't stop! I love your [npc2.tongue]!",
-									"Oh yes! Suck on my [npc.crotchNipples]!");
+									"Да! Не останавливайся!",
+									"Не останавливайся! Обожаю твой [npc2.tongue]!",
+									"О да! Соси мой [npc.crotchNipples]!");
 							break;
 						case SUB_RESISTING:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Stop it! Stop! Please!",
-									"Please, no more! Take your tongue out of my [npc.crotchNipple]!",
-									"Leave me alone! Stop! Please!");
+									"Прекрати! Стой! Пожалуйста!",
+									"Пожалуйста, хватит! Вынь язык из моего [npc.crotchNipple]!",
+									"Оставь меня в покое! Стой! Пожалуйста!");
 							break;
 						default:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Yes! Get that tongue deeper!",
-									"Oh yeah! Keep going!",
-									"Deeper! Don't stop!");
+									"Да! Засунь язык поглубже!",
+									"О да! Продолжай!",
+									"Глубже! Не останавливайся!");
 							break;
 					}
 					break;
@@ -12546,15 +12451,15 @@ public abstract class GameCharacter implements XMLSaving {
 					switch(Main.sex.getSexPace(this)) {
 						case SUB_RESISTING:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Go away! Leave me alone!",
-									"Stop it! Just go away!",
-									"Please stop! Don't do this!");
+									"Уходи! Оставь меня в покое!",
+									"Прекрати! Просто уйди!",
+									"Пожалуйста, остановись! Не делай этого!");
 							break;
 						default:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Fuck!",
-									"Yeah!",
-									"Oh yeah!");
+									"Блядь!",
+									"Да!",
+									"О да!");
 							break;
 					}
 			}
@@ -12579,45 +12484,45 @@ public abstract class GameCharacter implements XMLSaving {
 					switch(Main.sex.getSexPace(this)) {
 						case DOM_GENTLE:
 							returnedLine = UtilText.returnStringAtRandom(
-									"That's right, be a good [npc2.girl] and keep fondling my breasts!",
-									"Good [npc2.girl]! Keep those [npc2.hands] of yours busy with my breasts!",
-									"What a good [npc2.girl]! My tits love all of this attention!");
+									"Вот так, будь хорошим [npc2.girl] и продолжай ласкать мою грудь!",
+									"Молодец, [npc2.girl]! Займи свои [npc2.hands] моей грудью!",
+									"Какой послушный [npc2.girl]! Мои сиськи просто обожают такое внимание!");
 							break;
 						case DOM_NORMAL:
 							returnedLine = UtilText.returnStringAtRandom(
-									"That's right, keep fondling my breasts!",
-									"Good [npc2.girl]! Keep those [npc2.hands] of yours busy with my breasts!",
-									"Keep going! My tits love all of this attention!");
+									"Вот так, продолжай ласкать мою грудь!",
+									"Хороший [npc2.girl]! Займи свои [npc2.hands] моей грудью!",
+									"Так держать! Мои сиськи обожают это внимание!");
 							break;
 						case DOM_ROUGH:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Come on slut, keep fondling my breasts!",
-									"Keep it up bitch! Keep those [npc2.hands] of yours busy with my breasts!",
-									"Keep going slut! My tits need more attention!");
+									"Давай, шлюшка, продолжай ласкать мою грудь!",
+									"Так держать, сучка! Занимай свои [npc2.hands] моими сиськами!",
+									"Продолжай, шлюха! Моим титам нужно больше внимания!");
 							break;
 						case SUB_EAGER:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Yes! Keep fondling my breasts!",
-									"Keep going! My tits love all this attention!",
-									"Oh yes! I love getting my breasts fondled!");
+									"Да! Продолжай ласкать мою грудь!",
+									"Давай еще! Мои тити обожают такое внимание!",
+									"О да! Обожаю, когда ласкают мою грудь!");
 							break;
 						case SUB_NORMAL:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Keep fondling my breasts!",
-									"Keep going! I love this!",
-									"Oh yes!");
+									"Продолжай тискать мои сиськи!",
+									"Давай! Мне это безумно нравится!",
+									"О да!");
 							break;
 						case SUB_RESISTING:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Stop it! Stop! Please!",
-									"Please, no more! Get away from my breasts!",
-									"Get away from my breasts! Stop! Please!");
+									"Прекрати! Стой! Пожалуйста!",
+									"Пожалуйста, хватит! Убери руки от моей груди!",
+									"Прочь от моих сисек! Стой! Пожалуйста!");
 							break;
 						default:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Fuck!",
-									"Yeah!",
-									"Oh yeah!");
+									"Блядь!",
+									"Да!",
+									"О да!");
 							break;
 					}
 					break;
@@ -12625,45 +12530,45 @@ public abstract class GameCharacter implements XMLSaving {
 					switch(Main.sex.getSexPace(this)) {
 						case DOM_GENTLE:
 							returnedLine = UtilText.returnStringAtRandom(
-									"My tits love your [npc2.cock]!",
-									"Good [npc2.girl]! Keep sliding that delicious cock of yours between my tits!",
-									"What a good [npc2.girl]! Enjoy my tits as your reward now!");
+									"Мои тити в восторге от твоего [npc2.cock]!",
+									"Хороший [npc2.girl]! Продолжай просовывать свой вкусный член между моих сисек!",
+									"Какой отличный [npc2.girl]! А теперь наслаждайся моей грудью в награду!");
 							break;
 						case DOM_NORMAL:
 							returnedLine = UtilText.returnStringAtRandom(
-									"You like feeling my tits gripping down around your cock?!",
-									"Good [npc2.girl]! Push your [npc2.cock] deep between my breasts!",
-									"Keep going! Get that [npc2.cock] between my tits like a good [npc2.girl]!");
+									"Тебе нравится, как мои тити сжимают твой член?!",
+									"Хороший [npc2.girl]! Пропихивай свой [npc2.cock] поглубже между моих грудей!",
+									"Так держать! Засунь свой [npc2.cock] между моих сисек, как послушный [npc2.girl]!");
 							break;
 						case DOM_ROUGH:
 							returnedLine = UtilText.returnStringAtRandom(
-									"That's right slut, my tits could use some attention from a little fuck toy like you!",
-									"Come on bitch! You can get your worthless [npc2.cock] deeper between my tits than that!",
-									"Fucking slut, put some more effort in! My breasts deserve better than your worthless [npc2.cock]!");
+									"Вот так, шлюшка, моей груди не помешает немного внимания от такой маленькой секс-игрушки, как ты!",
+									"Давай, сучка! Ты можешь засунуть свой никчемный [npc2.cock] между моих сисек еще глубже!",
+									"Чертова шлюха, поднажми! Мои груди заслуживают большего, чем твой бесполезный [npc2.cock]!");
 							break;
 						case SUB_EAGER:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Yes! Fuck my tits! Fuck them harder! Don't stop!",
-									"Don't stop! Harder! Fuck my tits! Yes, yes, yes!",
-									"Oh yes! Fuck my tits! I love your [npc2.cock]!");
+									"Да! Трахни мои титьки! Трахни их сильнее! Не останавливайся!",
+									"Не останавливайся! Сильнее! Трахни мои тити! Да, да, да!",
+									"О да! Трахни мои титьки! Обожаю твой [npc2.cock]!");
 							break;
 						case SUB_NORMAL:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Yes! Fuck my tits!",
-									"Don't stop! Fuck my breasts!",
-									"Oh yes! Fuck me!");
+									"Да! Трахни мои титьки!",
+									"Не останавливайся! Трахни мою грудь!",
+									"О да! Трахни меня!");
 							break;
 						case SUB_RESISTING:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Stop it! Stop! Please!",
-									"Please, no more! Get your cock away from my breasts!",
-									"Get away from me! Stop! Please!");
+									"Прекрати! Стой! Пожалуйста!",
+									"Пожалуйста, хватит! Убери свой член от моих грудей!",
+									"Уйди от меня! Стой! Пожалуйста!");
 							break;
 						default:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Fuck me! Yes! Harder!",
-									"Oh yeah! Fuck me!",
-									"Harder! Don't stop!");
+									"Трахни меня! Да! Сильнее!",
+									"О да! Трахни меня!",
+									"Сильнее! Не останавливайся!");
 							break;
 					}
 					break;
@@ -12671,45 +12576,45 @@ public abstract class GameCharacter implements XMLSaving {
 					switch(Main.sex.getSexPace(this)) {
 						case DOM_GENTLE:
 							returnedLine = UtilText.returnStringAtRandom(
-									"My tits love your [npc2.tail]!",
-									"Good [npc2.girl]! Keep sliding that delicious tail of yours between my tits!",
-									"What a good [npc2.girl]! Enjoy my tits as your reward now!");
+									"Мои тити обожают твой [npc2.tail]!",
+									"Отличный [npc2.girl]! Продолжай скользить своим восхитительным хвостом между моих грудей!",
+									"Какой отличный [npc2.girl]! А теперь наслаждайся моей грудью в награду!");
 							break;
 						case DOM_NORMAL:
 							returnedLine = UtilText.returnStringAtRandom(
-									"You like feeling my tits gripping down around your tail?!",
-									"Good [npc2.girl]! Push your [npc2.tail] deep between my breasts!",
-									"Keep going! Get that [npc2.tail] between my tits like a good [npc2.girl]!");
+									"Тебе нравится, как мои тити сжимают твой хвост?!",
+									"Молодец, [npc2.girl]! Запихивай свой [npc2.tail] поглубже между моих сисек!",
+									"Так держать! Засунь этот [npc2.tail] между моих титек, как послушный [npc2.girl]!");
 							break;
 						case DOM_ROUGH:
 							returnedLine = UtilText.returnStringAtRandom(
-									"That's right slut, my tits could use some attention from a little fuck toy like you!",
-									"Come on bitch! You can get your worthless [npc2.tail] deeper between my tits than that!",
-									"Fucking slut, put some more effort in! My breasts deserve better than your worthless [npc2.tail]!");
+									"Вот так, шлюшка, моей груди не помешает немного внимания от такой маленькой секс-игрушки, как ты!",
+									"Давай, сучка! Ты можешь засунуть свой никчемный [npc2.tail] между моих сисек и поглубже!",
+									"Чертова шлюха, поднажми! Мои груди заслуживают большего, чем твой бесполезный [npc2.tail]!");
 							break;
 						case SUB_EAGER:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Yes! Fuck my tits! Fuck them harder! Don't stop!",
-									"Don't stop! Harder! Fuck my tits! Yes, yes, yes!",
-									"Oh yes! Fuck my tits! I love your [npc2.tail]!");
+									"Да! Трахни мои титьки! Трахни их сильнее! Не останавливайся!",
+									"Не останавливайся! Сильнее! Трахни мои тити! Да, да, да!",
+									"О да! Трахай мои сиськи! Обожаю твой [npc2.tail]!");
 							break;
 						case SUB_NORMAL:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Yes! Fuck my tits!",
-									"Don't stop! Fuck my breasts!",
-									"Oh yes! Fuck me!");
+									"Да! Трахни мои титьки!",
+									"Не останавливайся! Трахни мою грудь!",
+									"О да! Трахни меня!");
 							break;
 						case SUB_RESISTING:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Stop it! Stop! Please!",
-									"Please, no more! Get your tail away from my breasts!",
-									"Get away from me! Stop! Please!");
+									"Прекрати! Стой! Пожалуйста!",
+									"Пожалуйста, хватит! Убери свой хвост от моих сисек!",
+									"Уйди от меня! Стой! Пожалуйста!");
 							break;
 						default:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Fuck me! Yes! Harder!",
-									"Oh yeah! Fuck me!",
-									"Harder! Don't stop!");
+									"Трахни меня! Да! Сильнее!",
+									"О да! Трахни меня!",
+									"Сильнее! Не останавливайся!");
 							break;
 					}
 					break;
@@ -12717,45 +12622,45 @@ public abstract class GameCharacter implements XMLSaving {
 					switch(Main.sex.getSexPace(this)) {
 						case DOM_GENTLE:
 							returnedLine = UtilText.returnStringAtRandom(
-									"That's right, keep sucking on my tits like a good [npc2.girl]!",
-									"Good [npc2.girl]! Keep that [npc2.tongue] of yours busy on my tits!",
-									"What a good [npc2.girl]! You love my breasts, don't you?!");
+									"Вот так, соси мои титек, как хороший [npc2.girl]!",
+									"Умница, [npc2.girl]! Занимай свой [npc2.tongue] моими сиськами!",
+									"Какой хороший [npc2.girl]! Тебе ведь нравятся мои груди, да?!");
 							break;
 						case DOM_NORMAL:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Oh yes! Keep sucking on my tits!",
-									"Good [npc2.girl]! Keep that [npc2.tongue] of yours busy on my tits!",
-									"Keep going! My tits love the feel of your [npc2.tongue]!");
+									"О да! Продолжай сосать мои титек!",
+									"Молодец, [npc2.girl]! Занимай свой [npc2.tongue] моими сиськами!",
+									"Так держать! Мои сиськи обожают прикосновения твоего [npc2.tongue]!");
 							break;
 						case DOM_ROUGH:
 							returnedLine = UtilText.returnStringAtRandom(
-									"That's right slut, keep sucking on my tits like the worthless little fuck toy you are!",
-									"Come on bitch! Keep that [npc2.tongue] of yours busy on my tits!",
-									"Fucking bitch, put some more effort in! You know how lucky you are, being allowed to suck on my tits like this?!");
+									"Верно, шлюха, соси мои сиськи, как никчемная маленькая секс-игрушка!",
+									"Давай, сучка! Займи свой [npc2.tongue] моими сиськами!",
+									"Чертова сучка, поднажми! Ты хоть понимаешь, как тебе повезло, что тебе позволили вот так сосать мои сиськи?!");
 							break;
 						case SUB_EAGER:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Yes! I love the feeling of your lips on my tits! Don't stop!",
-									"Don't stop! Suck on my tits! Yes, yes, yes!",
-									"Oh yes! Lick my nipples! I love your [npc2.tongue]!");
+									"Да! Обожаю ощущение твоих губ на моих сиськах! Не останавливайся!",
+									"Не останавливайся! Соси мои сиськи! Да, да, да!",
+									"О да! Лижи мои соски! Обожаю твой [npc2.tongue]!");
 							break;
 						case SUB_NORMAL:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Yes! Don't stop!",
-									"Don't stop! I love your [npc2.tongue]!",
-									"Oh yes! Suck on my tits!");
+									"Да! Не останавливайся!",
+									"Не останавливайся! Обожаю твой [npc2.tongue]!",
+									"О да! Соси мои сиськи!");
 							break;
 						case SUB_RESISTING:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Stop it! Stop! Please!",
-									"Please, no more! Get away from me!",
-									"Leave me alone! Stop! Please!");
+									"Прекрати! Стой! Пожалуйста!",
+									"Пожалуйста, хватит! Уйди от меня!",
+									"Оставь меня в покое! Стой! Пожалуйста!");
 							break;
 						default:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Yes! Keep going!",
-									"Oh yeah! Keep going!",
-									"Deeper! Don't stop!");
+									"Да! Продолжай!",
+									"О да! Продолжай!",
+									"Глубже! Не останавливайся!");
 							break;
 					}
 					break;
@@ -12763,15 +12668,15 @@ public abstract class GameCharacter implements XMLSaving {
 					switch(Main.sex.getSexPace(this)) {
 						case SUB_RESISTING:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Go away! Leave me alone!",
-									"Stop it! Just go away!",
-									"Please stop! Don't do this!");
+									"Уходи! Оставь меня в покое!",
+									"Прекрати! Просто уйди!",
+									"Пожалуйста, остановись! Не делай этого!");
 							break;
 						default:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Fuck!",
-									"Yeah!",
-									"Oh yeah!");
+									"Блядь!",
+									"Да!",
+									"О да!");
 							break;
 					}
 			}
@@ -12797,45 +12702,45 @@ public abstract class GameCharacter implements XMLSaving {
 					switch(Main.sex.getSexPace(this)) {
 						case DOM_GENTLE:
 							returnedLine = UtilText.returnStringAtRandom(
-									"That's right, be a good [npc2.girl] and keep fondling my [npc.crotchBoobs]!",
-									"Good [npc2.girl]! Keep those [npc2.hands] of yours busy with my [npc.crotchBoobs]!",
-									"What a good [npc2.girl]! My [npc.crotchBoobs] love all of this attention!");
+									"Вот так, будь хорошей [npc2.girl] и не переставай ласкать мои [npc.crotchBoobs]!",
+									"Хорошая [npc2.girl]! Займи свои [npc2.hands] моими [npc.crotchBoobs]!",
+									"Какая послушная [npc2.girl]! Мои [npc.crotchBoobs] обожают такое внимание!");
 							break;
 						case DOM_NORMAL:
 							returnedLine = UtilText.returnStringAtRandom(
-									"That's right, keep fondling my [npc.crotchBoobs]!",
-									"Good [npc2.girl]! Keep those [npc2.hands] of yours busy with my [npc.crotchBoobs]!",
-									"Keep going! My [npc.crotchBoobs] love all of this attention!");
+									"Вот так, продолжай ласкать мои [npc.crotchBoobs]!",
+									"Молодец, [npc2.girl]! Займи свои [npc2.hands] моими [npc.crotchBoobs]!",
+									"Не останавливайся! Мои [npc.crotchBoobs] просто в восторге от такого внимания!");
 							break;
 						case DOM_ROUGH:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Come on slut, keep fondling my [npc.crotchBoobs]!",
-									"Keep it up bitch! Keep those [npc2.hands] of yours busy with my [npc.crotchBoobs]!",
-									"Keep going slut! My [npc.crotchBoobs] need more attention!");
+									"Давай, шлюшка, ласкай мои [npc.crotchBoobs]!",
+									"Так держать, сучка! Занимай свои [npc2.hands] моим [npc.crotchBoobs]!",
+									"Продолжай, шлюха! Моим [npc.crotchBoobs] нужно больше внимания!");
 							break;
 						case SUB_EAGER:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Yes! Keep fondling my [npc.crotchBoobs]!",
-									"Keep going! My [npc.crotchBoobs] love all this attention!",
-									"Oh yes! I love getting my [npc.crotchBoobs] fondled!");
+									"Да! Продолжай ласкать мои [npc.crotchBoobs]!",
+									"Так держать! Мои [npc.crotchBoobs] обожают такое внимание!",
+									"О да! Обожаю, когда ласкают мои [npc.crotchBoobs]!");
 							break;
 						case SUB_NORMAL:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Keep fondling my [npc.crotchBoobs]!",
-									"Keep going! I love this!",
-									"Oh yes!");
+									"Продолжай ласкать мои [npc.crotchBoobs]!",
+									"Давай! Мне это безумно нравится!",
+									"О да!");
 							break;
 						case SUB_RESISTING:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Stop it! Stop! Please!",
-									"Please, no more! Get away from my [npc.crotchBoobs]!",
-									"Get away from my [npc.crotchBoobs]! Stop! Please!");
+									"Прекрати! Стой! Пожалуйста!",
+									"Пожалуйста, хватит! Убери руки от моих [npc.crotchBoobs]!",
+									"Прочь от моих [npc.crotchBoobs]! Стой! Пожалуйста!");
 							break;
 						default:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Fuck!",
-									"Yeah!",
-									"Oh yeah!");
+									"Блядь!",
+									"Да!",
+									"О да!");
 							break;
 					}
 					break;
@@ -12843,45 +12748,45 @@ public abstract class GameCharacter implements XMLSaving {
 					switch(Main.sex.getSexPace(this)) {
 						case DOM_GENTLE:
 							returnedLine = UtilText.returnStringAtRandom(
-									"My [npc.crotchBoobs] love your [npc2.cock]!",
-									"Good [npc2.girl]! Keep sliding that delicious cock of yours between my [npc.crotchBoobs]!",
-									"What a good [npc2.girl]! Enjoy my [npc.crotchBoobs] as your reward now!");
+									"Мои [npc.crotchBoobs] в восторге от твоего [npc2.cock]!",
+									"Хорошая [npc2.girl]! Продолжай втирать свой вкусный член между моих [npc.crotchBoobs]!",
+									"Какой хороший [npc2.girl]! Теперь наслаждайся моей [npc.crotchBoobs] в награду!");
 							break;
 						case DOM_NORMAL:
 							returnedLine = UtilText.returnStringAtRandom(
-									"You like feeling my [npc.crotchBoobs] gripping down around your cock?!",
-									"Good [npc2.girl]! Push your [npc2.cock] deep between my [npc.crotchBoobs]!",
-									"Keep going! Get that [npc2.cock] between my [npc.crotchBoobs] like a good [npc2.girl]!");
+									"Тебе нравится чувствовать, как моя [npc.crotchBoobs] сжимается вокруг твоего члена?!",
+									"Хороший [npc2.girl]! Запихивай свой [npc2.cock] поглубже между моих [npc.crotchBoobs]!",
+									"Так держать! Просунь этот [npc2.cock] между моих [npc.crotchBoobs], как послушный [npc2.girl]!");
 							break;
 						case DOM_ROUGH:
 							returnedLine = UtilText.returnStringAtRandom(
-									"That's right slut, my [npc.crotchBoobs] could use some attention from a little fuck toy like you!",
-									"Come on bitch! You can get your worthless [npc2.cock] deeper between my [npc.crotchBoobs] than that!",
-									"Fucking slut, put some more effort in! My [npc.crotchBoobs] deserve better than your worthless [npc2.cock]!");
+									"Верно, шлюшка, моей [npc.crotchBoobs] не помешает немного внимания от такой маленькой игрушки для траха, как ты!",
+									"Давай, сучка! Ты можешь засунуть свой никчемный [npc2.cock] между моих [npc.crotchBoobs] еще глубже!",
+									"Чертова шлюха, поднажми! Мои [npc.crotchBoobs] заслуживают большего, чем твой никчемный [npc2.cock]!");
 							break;
 						case SUB_EAGER:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Yes! Fuck my [npc.crotchBoobs]! Fuck them harder! Don't stop!",
-									"Don't stop! Harder! Fuck my [npc.crotchBoobs]! Yes, yes, yes!",
-									"Oh yes! Fuck my [npc.crotchBoobs]! I love your [npc2.cock]!");
+									"Да! Трахни мою [npc.crotchBoobs]! Трахни их сильнее! Не останавливайся!",
+									"Не останавливайся! Сильнее! Трахни мою [npc.crotchBoobs]! Да, да, да!",
+									"О да! Трахни мою [npc.crotchBoobs]! Обожаю твой [npc2.cock]!");
 							break;
 						case SUB_NORMAL:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Yes! Fuck my [npc.crotchBoobs]!",
-									"Don't stop! Fuck my [npc.crotchBoobs]!",
-									"Oh yes! Fuck me!");
+									"Да! Трахни мою [npc.crotchBoobs]!",
+									"Не останавливайся! Трахни мою [npc.crotchBoobs]!",
+									"О да! Трахни меня!");
 							break;
 						case SUB_RESISTING:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Stop it! Stop! Please!",
-									"Please, no more! Get your cock away from my [npc.crotchBoobs]!",
-									"Get away from me! Stop! Please!");
+									"Прекрати! Стой! Пожалуйста!",
+									"Пожалуйста, хватит! Убери свой член от моей [npc.crotchBoobs]!",
+									"Уйди от меня! Стой! Пожалуйста!");
 							break;
 						default:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Fuck me! Yes! Harder!",
-									"Oh yeah! Fuck me!",
-									"Harder! Don't stop!");
+									"Трахни меня! Да! Сильнее!",
+									"О да! Трахни меня!",
+									"Сильнее! Не останавливайся!");
 							break;
 					}
 					break;
@@ -12889,45 +12794,45 @@ public abstract class GameCharacter implements XMLSaving {
 					switch(Main.sex.getSexPace(this)) {
 						case DOM_GENTLE:
 							returnedLine = UtilText.returnStringAtRandom(
-									"My [npc.crotchBoobs] love your [npc2.tail]!",
-									"Good [npc2.girl]! Keep sliding that delicious tail of yours between my [npc.crotchBoobs]!",
-									"What a good [npc2.girl]! Enjoy my [npc.crotchBoobs] as your reward now!");
+									"Моя [npc.crotchBoobs] обожает твой [npc2.tail]!",
+									"Хорошая [npc2.girl]! Продолжай просовывать свой вкусный хвост между моих [npc.crotchBoobs]!",
+									"Какой хороший [npc2.girl]! Теперь наслаждайся моей [npc.crotchBoobs] в награду!");
 							break;
 						case DOM_NORMAL:
 							returnedLine = UtilText.returnStringAtRandom(
-									"You like feeling my [npc.crotchBoobs] gripping down around your tail?!",
-									"Good [npc2.girl]! Push your [npc2.tail] deep between my [npc.crotchBoobs]!",
-									"Keep going! Get that [npc2.tail] between my [npc.crotchBoobs] like a good [npc2.girl]!");
+									"Тебе нравится чувствовать, как моя [npc.crotchBoobs] сжимает твой хвост?!",
+									"Хорошая [npc2.girl]! Запихивай свой [npc2.tail] поглубже между моих [npc.crotchBoobs]!",
+									"Продолжай! Засовывай этот [npc2.tail] между моих [npc.crotchBoobs], как послушная [npc2.girl]!");
 							break;
 						case DOM_ROUGH:
 							returnedLine = UtilText.returnStringAtRandom(
-									"That's right slut, my [npc.crotchBoobs] could use some attention from a little fuck toy like you!",
-									"Come on bitch! You can get your worthless [npc2.tail] deeper between my [npc.crotchBoobs] than that!",
-									"Fucking slut, put some more effort in! My [npc.crotchBoobs] deserve better than your worthless [npc2.tail]!");
+									"Верно, шлюшка, моей [npc.crotchBoobs] не помешает немного внимания от такой маленькой игрушки для траха, как ты!",
+									"Давай, сучка! Ты можешь засунуть свой никчемный [npc2.tail] между моих [npc.crotchBoobs] еще глубже!",
+									"Чертова шлюха, постарайся получше! Мои [npc.crotchBoobs] заслуживают большего, чем твой бесполезный [npc2.tail]!");
 							break;
 						case SUB_EAGER:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Yes! Fuck my [npc.crotchBoobs]! Fuck them harder! Don't stop!",
-									"Don't stop! Harder! Fuck my [npc.crotchBoobs]! Yes, yes, yes!",
-									"Oh yes! Fuck my [npc.crotchBoobs]! I love your [npc2.tail]!");
+									"Да! Трахни мою [npc.crotchBoobs]! Трахни их сильнее! Не останавливайся!",
+									"Не останавливайся! Сильнее! Трахни мою [npc.crotchBoobs]! Да, да, да!",
+									"О да! Трахни мою [npc.crotchBoobs]! Обожаю твой [npc2.tail]!");
 							break;
 						case SUB_NORMAL:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Yes! Fuck my [npc.crotchBoobs]!",
-									"Don't stop! Fuck my [npc.crotchBoobs]!",
-									"Oh yes! Fuck me!");
+									"Да! Трахни мою [npc.crotchBoobs]!",
+									"Не останавливайся! Трахни мою [npc.crotchBoobs]!",
+									"О да! Трахни меня!");
 							break;
 						case SUB_RESISTING:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Stop it! Stop! Please!",
-									"Please, no more! Get your tail away from my [npc.crotchBoobs]!",
-									"Get away from me! Stop! Please!");
+									"Прекрати! Стой! Пожалуйста!",
+									"Пожалуйста, хватит! Убери свой хвост от моей [npc.crotchBoobs]!",
+									"Уйди от меня! Стой! Пожалуйста!");
 							break;
 						default:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Fuck me! Yes! Harder!",
-									"Oh yeah! Fuck me!",
-									"Harder! Don't stop!");
+									"Трахни меня! Да! Сильнее!",
+									"О да! Трахни меня!",
+									"Сильнее! Не останавливайся!");
 							break;
 					}
 					break;
@@ -12935,45 +12840,45 @@ public abstract class GameCharacter implements XMLSaving {
 					switch(Main.sex.getSexPace(this)) {
 						case DOM_GENTLE:
 							returnedLine = UtilText.returnStringAtRandom(
-									"That's right, keep sucking on my [npc.crotchBoobs] like a good [npc2.girl]!",
-									"Good [npc2.girl]! Keep that [npc2.tongue] of yours busy on my [npc.crotchBoobs]!",
-									"What a good [npc2.girl]! You love my [npc.crotchBoobs], don't you?!");
+									"Вот так, соси мою [npc.crotchBoobs], как послушная [npc2.girl]!",
+									"Хорошая [npc2.girl]! Занимай свою [npc2.tongue] моей [npc.crotchBoobs]!",
+									"Какая хорошая [npc2.girl]! Тебе ведь нравится моя [npc.crotchBoobs], да?!");
 							break;
 						case DOM_NORMAL:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Oh yes! Keep sucking on my [npc.crotchBoobs]!",
-									"Good [npc2.girl]! Keep that [npc2.tongue] of yours busy on my [npc.crotchBoobs]!",
-									"Keep going! My [npc.crotchBoobs] love the feel of your [npc2.tongue]!");
+									"О да! Продолжай сосать мою [npc.crotchBoobs]!",
+									"Хорошая [npc2.girl]! Занимай свою [npc2.tongue] моей [npc.crotchBoobs]!",
+									"Продолжай! Мои [npc.crotchBoobs] обожают ощущения от твоего [npc2.tongue]!");
 							break;
 						case DOM_ROUGH:
 							returnedLine = UtilText.returnStringAtRandom(
-									"That's right slut, keep sucking on my [npc.crotchBoobs] like the worthless little fuck toy you are!",
-									"Come on bitch! Keep that [npc2.tongue] of yours busy on my [npc.crotchBoobs]!",
-									"Fucking bitch, put some more effort in! You know how lucky you are, being allowed to suck on my [npc.crotchBoobs] like this?!");
+									"Вот так, шлюха, соси мою [npc.crotchBoobs], как никчемная маленькая игрушка для траха!",
+									"Давай, сучка! Занимай свою [npc2.tongue] моей [npc.crotchBoobs]!",
+									"Гребаная сучка, старайся лучше! Ты хоть понимаешь, как тебе повезло, что тебе позволяют так сосать мой [npc.crotchBoobs]?!");
 							break;
 						case SUB_EAGER:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Yes! I love the feeling of your lips on my [npc.crotchBoobs]! Don't stop!",
-									"Don't stop! Suck on my [npc.crotchBoobs]! Yes, yes, yes!",
-									"Oh yes! Lick my nipples! I love your [npc2.tongue]!");
+									"Да! Обожаю, когда твои губы касаются моего [npc.crotchBoobs]! Не останавливайся!",
+									"Не останавливайся! Соси мой [npc.crotchBoobs]! Да, да, да!",
+									"О да! Лижи мои соски! Обожаю твой [npc2.tongue]!");
 							break;
 						case SUB_NORMAL:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Yes! Don't stop!",
-									"Don't stop! I love your [npc2.tongue]!",
-									"Oh yes! Suck on my [npc.crotchBoobs]!");
+									"Да! Не останавливайся!",
+									"Не останавливайся! Обожаю твой [npc2.tongue]!",
+									"О да! Соси мой [npc.crotchBoobs]!");
 							break;
 						case SUB_RESISTING:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Stop it! Stop! Please!",
-									"Please, no more! Get away from me!",
-									"Leave me alone! Stop! Please!");
+									"Прекрати! Стой! Пожалуйста!",
+									"Пожалуйста, хватит! Уйди от меня!",
+									"Оставь меня в покое! Стой! Пожалуйста!");
 							break;
 						default:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Yes! Keep going!",
-									"Oh yeah! Keep going!",
-									"Deeper! Don't stop!");
+									"Да! Продолжай!",
+									"О да! Продолжай!",
+									"Глубже! Не останавливайся!");
 							break;
 					}
 					break;
@@ -12981,15 +12886,15 @@ public abstract class GameCharacter implements XMLSaving {
 					switch(Main.sex.getSexPace(this)) {
 						case SUB_RESISTING:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Go away! Leave me alone!",
-									"Stop it! Just go away!",
-									"Please stop! Don't do this!");
+									"Уходи! Оставь меня в покое!",
+									"Прекрати! Просто уйди!",
+									"Пожалуйста, остановись! Не делай этого!");
 							break;
 						default:
 							returnedLine = UtilText.returnStringAtRandom(
-									"Fuck!",
-									"Yeah!",
-									"Oh yeah!");
+									"Блядь!",
+									"Да!",
+									"О да!");
 							break;
 					}
 			}
@@ -13021,45 +12926,45 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Good [npc2.girl], you love feeling my [npc1.fingers] deep in your ass, don't you?",
-										"I love fingering cute little asses like yours!",
-										"What a good [npc2.girl]! Your ass loves the feeling of my [npc1.fingers], doesn't it?"));
+										"Хорошая [npc2.girl], тебе ведь нравится чувствовать мой [npc1.fingers] глубоко в своей заднице, правда?",
+										"Обожаю ласкать пальцами такие милые маленькие жопки, как твоя!",
+										"Какая послушная [npc2.girl]! Твоя задница просто обожает мои [npc1.fingers], не так ли?"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"You love the feeling of my [npc1.fingers] deep in your ass, don't you?!",
-										"I love fingering cute little asses like yours!",
-										"You like it when I curl my [npc1.fingers] up inside your ass, like <i>this</i>?!"));
+										"Тебе ведь нравится чувствовать мой [npc1.fingers] глубоко в своей заднице, а?!",
+										"Обожаю ласкать пальцами такие милые маленькие жопки, как твоя!",
+										"Тебе нравится, когда я сворачиваю свой [npc1.fingers] внутри твоей задницы, вот <i>так</i>?!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"What a dirty slut! I can feel your horny little ass clenching down on my [npc1.fingers]!",
-										"You love this, don't you bitch?! Feeling my [npc1.fingers] pushing deep into your slutty little asshole!",
-										"That's right slut! You love having my [npc1.fingers] stuffed deep in your slutty ass!"));
+										"Какая грязная шлюшка! Я чувствую, как твоя похотливая задница сжимает мой [npc1.fingers]!",
+										"Тебе ведь это нравится, сучка?! Чувствовать, как мой [npc1.fingers] вжимается глубоко в твою шлюшью дырочку!",
+										"Вот так, шлюха! Тебе нравится, когда мой [npc1.fingers] забит глубоко в твою шлюшью задницу!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Let me get my fingers deep inside your ass!",
-										"I love giving your ass the attention it deserves!",
-										"I love fingering your ass!"));
+										"Да! Позволь мне засунуть пальцы глубоко в твою задницу!",
+										"Обожаю уделять твоей заднице должное внимание!",
+										"Обожаю ласкать твою задницу пальцами!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I love fingering your ass!",
-										"I love giving your ass the attention it deserves!",
-										"I love fingering your ass!"));
+										"Обожаю ласкать твою задницу пальцами!",
+										"Обожаю уделять твоей заднице должное внимание!",
+										"Обожаю ласкать твою задницу пальцами!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! I don't want to do this!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Я не хочу этого делать!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 							default:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck!",
-										"Yeah!",
-										"Oh yeah!"));
+										"Блядь!",
+										"Да!",
+										"О да!"));
 								break;
 						}
 						break;
@@ -13071,45 +12976,45 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Good [npc2.girl], you love having your "+name+" fondled like this, don't you?",
-										"I love your "+name+"!",
-										"What a good [npc2.girl]! Your "+name+" love the feeling of my [npc1.fingers], don't they?"));
+										"Хороший [npc2.girl], тебе ведь нравится, когда твои "+name+" так ласкают, правда?",
+										"Обожаю твои "+name+"!",
+										"Какой послушный [npc2.girl]! Твои "+name+" обожают ощущения от моих [npc1.fingers], не так ли?"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"You love the feeling of having your "+name+" fondled, don't you?!",
-										"I love your "+namePlus+"!",
-										"You like it when I press my [npc1.fingers] into your "+name+", like <i>this</i>?!"));
+										"Тебе ведь нравится это чувство, когда твои "+name+" ласкают, а?!",
+										"Обожаю твои "+namePlus+"!",
+										"Тебе нравится, когда я вжимаю свои [npc1.fingers] в твои "+name+", прямо вот <i>так</i>?!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"What a dirty slut! Moaning as I grope your "+namePlus+"!",
-										"You love this, don't you bitch?! Having your "+name+" groped and fondled like <i>this</i>!",
-										"That's right slut! Your "+namePlus+" are mine to use however I want!"));
+										"Ну и грязная шлюха! Стонешь, пока я лапаю твои "+namePlus+"!",
+										"Тебе ведь это нравится, сучка?! Когда твои "+name+" щупают и ласкают вот <i>так</i>!",
+										"Верно, шлюшка! Твои "+namePlus+" принадлежат мне, и я буду использовать их как захочу!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! I love the feel of your "+name+"!",
-										"I love giving your "+name+" the attention they deserve!",
-										"I love your "+name+"!"));
+										"Да! Обожаю ощущение твоих "+name+"!",
+										"Обожаю уделять твоим "+name+" внимания столько, сколько они заслуживают!",
+										"Обожаю твои "+name+"!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! I love the feel of your "+name+"!",
-										"I love giving your "+name+" the attention they deserve!",
-										"I love your "+name+"!"));
+										"Да! Обожаю ощущение твоих "+name+"!",
+										"Обожаю уделять твоим "+name+" внимания столько, сколько они заслуживают!",
+										"Обожаю твои "+name+"!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! I don't want to do this!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Я не хочу этого делать!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 							default:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck!",
-										"Yeah!",
-										"Oh yeah!"));
+										"Блядь!",
+										"Да!",
+										"О да!"));
 								break;
 						}
 						break;
@@ -13117,45 +13022,45 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Good [npc2.girl], keep sucking on my [npc1.fingers]!",
-										"That's right, keep swirling your [npc2.tongue] around my [npc1.fingers]!",
-										"What a good [npc2.girl]! You love sucking on my [npc1.fingers], don't you?"));
+										"Умница [npc2.girl], продолжай сосать мой [npc1.fingers]!",
+										"Вот так, продолжай водить своим [npc2.tongue] вокруг моего [npc1.fingers]!",
+										"Какая хорошая [npc2.girl]! Ты обожаешь сосать мой [npc1.fingers], правда?"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"You love sucking on my [npc1.fingers], don't you?!",
-										"That's right, keep sucking on my [npc1.fingers]!",
-										"Keep sucking on my [npc1.fingers], just like that!"));
+										"Тебе ведь нравится сосать мой [npc1.fingers], а?!",
+										"Вот так, продолжай сосать мой [npc1.fingers]!",
+										"Соси мой [npc1.fingers], вот так, именно так!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"That's right slut! Suck on my [npc1.fingers] like you would on a nice thick cock!",
-										"You love this, don't you bitch?! Having my [npc1.fingers] sliding in and out of your mouth!",
-										"That's right slut! Suck on my [npc1.fingers] as I stuff them deep down your throat!"));
+										"Верно, шлюшка! Соси мой [npc1.fingers] так, будто это сочный толстый член!",
+										"Тебе ведь это нравится, сучка?! Когда мой [npc1.fingers] входит и выходит из твоего рта!",
+										"Вот так, шлюшка! Соси мой [npc1.fingers], пока я заталкиваю их глубоко тебе в глотку!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Suck on my [npc1.fingers]! Just like that!",
-										"I love having my [npc1.fingers] sucked! Keep going!",
-										"Keep sucking my [npc1.fingers]! Yes! Just like that!"));
+										"Да! Соси мой [npc1.fingers]! Вот так!",
+										"Обожаю, когда сосут мой [npc1.fingers]! Продолжай!",
+										"Соси мой [npc1.fingers]! Да! Вот так!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Keep sucking on my [npc1.fingers]!",
-										"I love having my [npc1.fingers] sucked!",
-										"Keep sucking my [npc1.fingers]! Yes!"));
+										"Да! Продолжай сосать мой [npc1.fingers]!",
+										"Обожаю, когда сосут мой [npc1.fingers]!",
+										"Соси мой [npc1.fingers]! Да!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! I don't want to do this!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Я не хочу этого делать!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 							default:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck!",
-										"Yeah!",
-										"Oh yeah!"));
+										"Блядь!",
+										"Да!",
+										"О да!"));
 						}
 						break;
 					case NIPPLE: case NIPPLE_CROTCH:
@@ -13164,45 +13069,45 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Good [npc2.girl], you love feeling my [npc1.fingers] deep in your "+nameNipple+", don't you?",
-										"I love fingering cute little "+nameNipple+" like yours!",
-										"What a good [npc2.girl]! Your "+nameNipplePlus+" love the feeling of my [npc1.fingers], don't they?"));
+										"Хороший [npc2.girl], тебе ведь нравится чувствовать мой [npc1.fingers] глубоко в твоей "+nameNipple+", правда?",
+										"Обожаю перебирать пальцами милых крошек "+nameNipple+" вроде тебя!",
+										"Какой послушный [npc2.girl]! Твои "+nameNipplePlus+" обожают ощущения от моих [npc1.fingers], не так ли?"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"You love the feeling of my [npc1.fingers] deep in your "+nameNipple+", don't you?!",
-										"I love fingering cute little "+nameNipple+" like yours!",
-										"You like it when I curl my [npc1.fingers] up inside your "+nameNipplePlus+", like <i>this</i>?!"));
+										"Тебе нравится ощущение моего [npc1.fingers] глубоко в твоей "+nameNipple+", не так ли?!",
+										"Обожаю перебирать пальцами милых крошек "+nameNipple+" вроде тебя!",
+										"Тебе нравится, когда я сворачиваю свой [npc1.fingers] внутри твоей "+nameNipplePlus+", прямо вот <i>так</i>?!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"What a dirty slut! Moaning as I stuff my [npc1.fingers] deep into your "+nameNipple+"!",
-										"You love this, don't you bitch?! Feeling my [npc1.fingers] pushing deep into your "+nameNipplePlus+"!",
-										"That's right slut! You love having my [npc1.fingers] stuffed deep in your slutty "+nameNipple+"!"));
+										"Какая грязная шлюшка! Стонешь, пока я засовываю свой [npc1.fingers] глубоко в твою "+nameNipple+"!",
+										"Ты обожаешь это, сучка, правда?! Чувствуешь, как мой [npc1.fingers] вжимается глубоко в твою "+nameNipplePlus+"!",
+										"Верно, шлюшка! Тебе нравится, когда мой [npc1.fingers] забит глубоко в твою шлюшью "+nameNipple+"!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Let me get my fingers deep inside your "+nameNipple+"!",
-										"I love giving your "+nameNipplePlus+" the attention they deserve!",
-										"I love fingering your "+nameNipple+"!"));
+										"Да! Позволь мне засунуть пальцы глубоко в твою "+nameNipple+"!",
+										"Обожаю уделять твоим "+nameNipplePlus+" внимания столько, сколько они заслуживают!",
+										"Обожаю ласкать пальцами твою "+nameNipple+"!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I love fingering your "+nameNipple+"!",
-										"I love giving your "+nameNipplePlus+" the attention they deserve!",
-										"I love fingering your "+nameNipple+"!"));
+										"Обожаю ласкать пальцами твою "+nameNipple+"!",
+										"Обожаю уделять твоим "+nameNipplePlus+" внимания столько, сколько они заслуживают!",
+										"Обожаю ласкать пальцами твою "+nameNipple+"!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! I don't want to do this!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Я не хочу этого делать!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 							default:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck!",
-										"Yeah!",
-										"Oh yeah!"));
+										"Блядь!",
+										"Да!",
+										"О да!"));
 								break;
 						}
 						break;
@@ -13216,45 +13121,45 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Good [npc2.girl], you love feeling my [npc1.fingers] deep in your pussy, don't you?",
-										"I love fingering cute little things like you!",
-										"What a good [npc2.girl]! Your pussy loves the feeling of my [npc1.fingers], doesn't it?"));
+										"Хорошая [npc2.girl], тебе ведь нравится чувствовать мой [npc1.fingers] глубоко в своей киске, а?",
+										"Обожаю ласкать пальцами таких милашек, как ты!",
+										"Какая хорошая [npc2.girl]! Твоей киске так нравится ощущение моего [npc1.fingers], правда?"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"You love the feeling of my [npc1.fingers] deep in your pussy, don't you?!",
-										"I love fingering cute [npc2.girls] like you!",
-										"You like it when I curl my [npc1.fingers] up inside you, like <i>this</i>?!"));
+										"Тебе ведь нравится чувство моего [npc1.fingers] глубоко в твоей киске, а?!",
+										"Обожаю ласкать пальцами таких милых [npc2.girls], как ты!",
+										"Тебе нравится, когда я сворачиваю свой [npc1.fingers] внутри тебя, вот <i>так</i>?!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"What a dirty slut! I can feel your horny pussy clenching down on my [npc1.fingers]!",
-										"You love this, don't you bitch?! Feeling my [npc1.fingers] pushing deep into your slutty cunt!",
-										"That's right slut! You love having my [npc1.fingers] stuffed deep in your slutty pussy!"));
+										"Какая грязная шлюшка! Я чувствую, как твоя возбужденная киска сжимается вокруг моего [npc1.fingers]!",
+										"Тебе ведь это нравится, сучка?! Чувствовать, как мой [npc1.fingers] глубоко входит в твою шлюшью щелку!",
+										"Вот так, шлюшка! Тебе нравится, когда мой [npc1.fingers] забит глубоко в твою шлюшью киску!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Let me get my fingers deep inside your little pussy!",
-										"I love giving your pussy the attention it deserves!",
-										"I love fingering you!"));
+										"Да! Позволь мне засунуть пальцы поглубже в твою маленькую киску!",
+										"Обожаю уделять твоей киске должное внимание!",
+										"Обожаю пальцами тебя ласкать!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I love fingering your pussy!",
-										"I love giving your pussy the attention it deserves!",
-										"I love fingering you!"));
+										"Обожаю пальцами твою киску ласкать!",
+										"Обожаю уделять твоей киске должное внимание!",
+										"Обожаю пальцами тебя ласкать!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! I don't want to do this!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Я не хочу этого делать!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 							default:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck!",
-										"Yeah!",
-										"Oh yeah!"));
+										"Блядь!",
+										"Да!",
+										"О да!"));
 								break;
 						}
 						break;
@@ -13262,45 +13167,45 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Good [npc2.girl], you love feeling my [npc1.fingers] deep in your spinneret, don't you?",
-										"I love fingering cute little things like you!",
-										"What a good [npc2.girl]! Your spinneret loves the feeling of my [npc1.fingers], doesn't it?"));
+										"Умница, [npc2.girl], тебе ведь нравится чувствовать мою [npc1.fingers] глубоко в своем паутинном аппарате, правда?",
+										"Обожаю ласкать пальцами таких милашек, как ты!",
+										"Какая хорошая [npc2.girl]! Твой паутинный аппарат просто обожает мои [npc1.fingers], не так ли?"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"You love the feeling of my [npc1.fingers] deep in your spinneret, don't you?!",
-										"I love fingering cute [npc2.girls] like you!",
-										"You like it when I curl my [npc1.fingers] up inside you, like <i>this</i>?!"));
+										"Тебе ведь безумно нравится ощущение моей [npc1.fingers] глубоко в твоем паутинном аппарате, а?!",
+										"Обожаю ласкать пальцами таких милых [npc2.girls], как ты!",
+										"Тебе нравится, когда я сворачиваю свой [npc1.fingers] внутри тебя, вот <i>так</i>?!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"What a dirty slut! I can feel your horny spinneret clenching down on my [npc1.fingers]!",
-										"You love this, don't you bitch?! Feeling my [npc1.fingers] pushing deep into your slutty spinneret!",
-										"That's right slut! You love having my [npc1.fingers] stuffed deep in your slutty spinneret!"));
+										"Что за грязная шлюшка! Я чувствую, как твой возбужденный паутинный аппарат сжимается вокруг моей [npc1.fingers]!",
+										"Тебе ведь это нравится, сучка?! Чувствовать, как моя [npc1.fingers] глубоко входит в твой шлюшковатый паутинный аппарат!",
+										"Вот так, шлюшка! Тебе нравится, когда моя [npc1.fingers] забита глубоко в твой шлюшковатый паутинный аппарат!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Let me get my fingers deep inside your little spinneret!",
-										"I love giving your spinneret the attention it deserves!",
-										"I love fingering you!"));
+										"Да! Позволь мне засунуть пальцы поглубже в твой крошечный паутинный аппарат!",
+										"Обожаю уделять внимание твоему паутинному аппарату!",
+										"Обожаю пальцами тебя ласкать!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I love fingering your spinneret!",
-										"I love giving your spinneret the attention it deserves!",
-										"I love fingering you!"));
+										"Обожаю ласкать пальцами твой паутинный аппарат!",
+										"Обожаю уделять внимание твоему паутинному аппарату!",
+										"Обожаю пальцами тебя ласкать!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! I don't want to do this!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Я не хочу этого делать!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 							default:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck!",
-										"Yeah!",
-										"Oh yeah!"));
+										"Блядь!",
+										"Да!",
+										"О да!"));
 								break;
 						}
 						break;
@@ -13329,40 +13234,40 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Good [npc2.girl]! Feel my cock slide over your [npc2.armpit+]!",
-										"That's right, be a good [npc2.girl] and moan for me! Feel my [npc1.cock] sliding over your [npc2.armpit+]!",
-										"Your [npc2.armpit+] feels so good against my [npc1.cock]!"));
+										"Хорошая [npc2.girl]! Чувствуй, как мой член скользит по твоей [npc2.armpit+]!",
+										"Вот так, будь послушной [npc2.girl] и стони для меня! Чувствуй, как мой [npc1.cock] скользит по твоей [npc2.armpit+]!",
+										"Твой [npc2.armpit+] так приятно прижимается к моему [npc1.cock]!"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck! Your armpit feels so good to fuck!",
-										"Oh yes! Push your armpit against my cock!",
-										"Your armpit was made for my cock!"));
+										"Блядь! Твоя подмышка так чертовски хороша для траха!",
+										"О да! Прижимай подмышку к моему члену!",
+										"Твоя подмышка была создана для моего члена!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"That's right slut, pleasure my cock! Push your armpit out and make this good for me!",
-										"What a horny bitch! Using your armpit to please my cock like a desperate slut!",
-										"You like this, fuck toy?! Pushing your [npc2.armpit+] against my cock and pleasing me like the slut you are?!"));
+										"Вот так, шлюшка, доставляй удовольствие моему члену! Выставь подмышку вперед и сделай мне приятно!",
+										"Ну и похотливая сучка! Используешь свою подмышку, чтобы ласкать мой член, как отчаянная шлюха!",
+										"Тебе нравится, секс-игрушка?! Прижимаешь свою [npc2.armpit+] к моему члену и ублажаешь меня, как настоящая шлюха?!"));
 								break;
 							case SUB_EAGER:
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Use my cock! I love your armpit!",
-										"Don't stop! More! Yes, yes, yes!",
-										"Oh yes! Use me! I love your armpit!"));
+										"Да! Используй мой член! Обожаю твою подмышку!",
+										"Не останавливайся! Еще! Да, да, да!",
+										"О да! Используй меня! Обожаю твою подмышку!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! Get off my cock!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Слезь с моего члена!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 							default:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck me! Yes! Harder!",
-										"Oh yeah! Fuck me!",
-										"Harder! Don't stop!"));
+										"Трахни меня! Да! Сильнее!",
+										"О да! Трахни меня!",
+										"Сильнее! Не останавливайся!"));
 								break;
 						}
 						break;
@@ -13370,45 +13275,45 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Good [npc2.girl]! Feel my [npc1.cock] slide deep into your ass!",
-										"That's right, be a good [npc2.girl] and moan for me! Feel my [npc1.cock] sliding deep into your hot ass!",
-										"Your ass feels so good squeezing down around my [npc1.cock]!"));
+										"Хорошая [npc2.girl]! Чувствуй, как мой [npc1.cock] входит глубоко в твою задницу!",
+										"Вот так, будь послушной [npc2.girl] и стони для меня! Чувствуй, как мой [npc1.cock] входит глубоко в твою горячую задницу!",
+										"Твоя задница так сладко сжимает мой [npc1.cock]!"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck! Your ass feels so good!",
-										"Oh yes! Take my cock! Take it deep!",
-										"Your ass was made for my cock!"));
+										"Блять! Твоя задница просто охрененная!",
+										"О да! Принимай мой член! Глотай его поглубже!",
+										"Твоя задница была создана для моего члена!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"That's right slut, take my cock! Your ass belongs to me!",
-										"What a horny bitch! Take my cock you filthy little butt-slut!",
-										"You feel that, fuck toy?! Do you feel my cock sinking deep into your slutty little ass?!"));
+										"Вот так, шлюшка, принимай мой член! Твоя жопа принадлежит мне!",
+										"Какая похотливая сучка! Принимай мой член, грязная маленькая жопошлюшка!",
+										"Чувствуешь это, секс-игрушка?! Чувствуешь, как мой член глубоко входит в твою шлюшью задницу?!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Use my cock! I love your ass!",
-										"Don't stop! Harder! Use my cock! Yes, yes, yes!",
-										"Oh yes! Use me! I love your ass!"));
+										"Да! Используй мой член! Обожаю твою задницу!",
+										"Не останавливайся! Сильнее! Используй мой член! Да, да, да!",
+										"О да! Используй меня! Обожаю твою задницу!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Fuck me!",
-										"Don't stop! Fuck me!",
-										"Oh yes! Fuck me!"));
+										"Да! Трахни меня!",
+										"Не останавливайся! Трахни меня!",
+										"О да! Трахни меня!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! I don't want to do this!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Я не хочу этого делать!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 							default:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck me! Yes! Harder!",
-										"Oh yeah! Fuck me!",
-										"Harder! Don't stop!"));
+										"Трахни меня! Да! Сильнее!",
+										"О да! Трахни меня!",
+										"Сильнее! Не останавливайся!"));
 								break;
 						}
 						break;
@@ -13419,90 +13324,90 @@ public abstract class GameCharacter implements XMLSaving {
 							switch(Main.sex.getSexPace(this)) {
 								case DOM_GENTLE:
 									availableLines.add(UtilText.returnStringAtRandom(
-											"Good [npc2.girl]! Feel my cock slide up between your [npc2.breasts]!",
-											"That's right, be a good [npc2.girl] and moan for me! Feel my [npc1.cock] sliding up between your [npc2.breasts+]!",
-											"Your [npc2.breasts] feel so good squeezing down around my [npc1.cock]!"));
+											"Хорошая [npc2.girl]! Чувствуй, как мой член скользит между твоих [npc2.breasts]!",
+											"Вот так, будь хорошей [npc2.girl] и стони для меня! Чувствуй, как мой [npc1.cock] скользит между твоих [npc2.breasts+]!",
+											"Твои [npc2.breasts] так приятно сжимают мой [npc1.cock]!"));
 									break;
 								case DOM_NORMAL:
 									availableLines.add(UtilText.returnStringAtRandom(
-											"Fuck! Your tits feel so good to fuck!",
-											"Oh yes! Wrap your tits around my cock!",
-											"Your tits were made for my cock!"));
+											"Блять! Твои сиськи так охеренно трахать!",
+											"О да! Окутай мой член своими сиськами!",
+											"Твои сиськи были созданы для моего члена!"));
 									break;
 								case DOM_ROUGH:
 									availableLines.add(UtilText.returnStringAtRandom(
-											"That's right slut, pleasure my cock! Push your tits together and make this good for me!",
-											"What a horny bitch! Using your tits to please my cock like a desperate slut!",
-											"You like this, fuck toy?! Squeezing your [npc2.breasts] around my cock and pleasing me like the slut you are?!"));
+											"Вот так, шлюшка, ублажай мой член! Сжимай сиськи вместе, чтобы мне было еще приятнее!",
+											"Ну и похотливая сучка! Используешь свои сиськи, чтобы тешить мой член, как отчаянная шлюха!",
+											"Тебе это нравится, секс-игрушка?! Сжимать твои [npc2.breasts] вокруг моего члена и доставлять мне удовольствие, как настоящей шлюхе?!"));
 									break;
 								case SUB_EAGER:
 									availableLines.add(UtilText.returnStringAtRandom(
-											"Yes! Use my cock! I love your tits!",
-											"Don't stop! Harder! Fuck me! Yes, yes, yes!",
-											"Oh yes! Use me! I love your tits!"));
+											"Да! Используй мой член! Обожаю твои сиськи!",
+											"Не останавливайся! Сильнее! Трахни меня! Да, да, да!",
+											"О да! Используй меня! Обожаю твои сиськи!"));
 									break;
 								case SUB_NORMAL:
 									availableLines.add(UtilText.returnStringAtRandom(
-											"Yes! Fuck me!",
-											"Don't stop! Fuck me!",
-											"Oh yes! Fuck me!"));
+											"Да! Трахни меня!",
+											"Не останавливайся! Трахни меня!",
+											"О да! Трахни меня!"));
 									break;
 								case SUB_RESISTING:
 									availableLines.add(UtilText.returnStringAtRandom(
-											"I don't want to do this! Please let me stop!",
-											"Let me go! Get off my cock!",
-											"Please! Stop! I don't want this!"));
+											"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+											"Отпусти меня! Слезь с моего члена!",
+											"Пожалуйста! Остановись! Я этого не хочу!"));
 									break;
 								default:
 									availableLines.add(UtilText.returnStringAtRandom(
-											"Fuck me! Yes! Harder!",
-											"Oh yeah! Fuck me!",
-											"Harder! Don't stop!"));
+											"Трахни меня! Да! Сильнее!",
+											"О да! Трахни меня!",
+											"Сильнее! Не останавливайся!"));
 									break;
 							}
 						} else {
 							switch(Main.sex.getSexPace(this)) {
 								case DOM_GENTLE:
 									availableLines.add(UtilText.returnStringAtRandom(
-											"Good [npc2.girl]! Feel my cock slide over your [npc2.breasts]!",
-											"That's right, be a good [npc2.girl] and moan for me! Feel my [npc1.cock] sliding over your [npc2.breasts+]!",
-											"Your [npc2.breasts] feel so good squeezing down around my [npc1.cock]!"));
+											"Хорошие [npc2.girl]! Чувствуй, как мой член скользит по твоим [npc2.breasts]!",
+											"Вот так, будь хорошей [npc2.girl] и стони для меня! Чувствуй, как мой [npc1.cock] скользит по твоим [npc2.breasts+]!",
+											"Твои [npc2.breasts] так приятно сжимают мой [npc1.cock]!"));
 									break;
 								case DOM_NORMAL:
 									availableLines.add(UtilText.returnStringAtRandom(
-											"Fuck! Your [npc2.breasts] feel so good to fuck!",
-											"Oh yes! Feel my [npc1.cock] sliding over your [npc2.breasts]!",
-											"Your [npc2.breasts] were made for my cock!"));
+											"Блядь! Твои [npc2.breasts] так охеренно трахать!",
+											"О да! Чувствуй, как мой [npc1.cock] скользит по твоим [npc2.breasts]!",
+											"Твои [npc2.breasts] были созданы для моего члена!"));
 									break;
 								case DOM_ROUGH:
 									availableLines.add(UtilText.returnStringAtRandom(
-											"That's right slut, pleasure my cock! Push your [npc2.breasts] together and make this good for me!",
-											"What a horny bitch! Using your [npc2.breasts] to please my cock like a desperate slut!",
-											"You like this, fuck toy?! Squeezing your [npc2.breasts] around my cock and pleasing me like the slut you are?!"));
+											"Вот так, шлюшка, ублажай мой член! Сжимай свои [npc2.breasts] вместе, чтобы мне было еще лучше!",
+											"Ну и похотливая сучка! Используешь свои [npc2.breasts] так, будто ты отчаянная шлюха, жаждущая моего члена!",
+											"Тебе это нравится, секс-игрушка?! Сжимать твои [npc2.breasts] вокруг моего члена и доставлять мне удовольствие, как настоящей шлюхе?!"));
 									break;
 								case SUB_EAGER:
 									availableLines.add(UtilText.returnStringAtRandom(
-											"Yes! Use my cock! I love your [npc2.breasts]!",
-											"Don't stop! Yes, yes, yes!",
-											"Oh yes! Use me! I love your [npc2.breasts]!"));
+											"Да! Используй мой член! Обожаю твои [npc2.breasts]!",
+											"Не останавливайся! Да, да, да!",
+											"О да! Используй меня! Обожаю твои [npc2.breasts]!"));
 									break;
 								case SUB_NORMAL:
 									availableLines.add(UtilText.returnStringAtRandom(
-											"Yes! Let me fuck your [npc2.breasts]!",
-											"Don't stop! Oh yes!",
-											"Oh yes! I love your [npc2.breasts]!"));
+											"Да! Дай мне оттрахать твои [npc2.breasts]!",
+											"Не останавливайся! О да!",
+											"О да! Обожаю твои [npc2.breasts]!"));
 									break;
 								case SUB_RESISTING:
 									availableLines.add(UtilText.returnStringAtRandom(
-											"I don't want to do this! Please let me stop!",
-											"Let me go! Get off my cock!",
-											"Please! Stop! I don't want this!"));
+											"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+											"Отпусти меня! Слезь с моего члена!",
+											"Пожалуйста! Остановись! Я этого не хочу!"));
 									break;
 								default:
 									availableLines.add(UtilText.returnStringAtRandom(
-											"Fuck me! Yes! Harder!",
-											"Oh yeah! Fuck me!",
-											"Harder! Don't stop!"));
+											"Трахни меня! Да! Сильнее!",
+											"О да! Трахни меня!",
+											"Сильнее! Не останавливайся!"));
 									break;
 							}
 						}
@@ -13511,45 +13416,45 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Good [npc2.girl]! Feel my cock slide up between your [npc2.crotchBoobs]!",
-										"That's right, be a good [npc2.girl] and moan for me! Feel my [npc1.cock] sliding up between your [npc2.crotchBoobs+]!",
-										"Your [npc2.crotchBoobs] feel so good squeezing down around my [npc1.cock]!"));
+										"Хорошие [npc2.girl]! Чувствуй, как мой член скользит между твоими [npc2.crotchBoobs]!",
+										"Вот так, будь хорошей [npc2.girl] и стони для меня! Чувствуй, как мой [npc1.cock] скользит между твоими [npc2.crotchBoobs+]!",
+										"Твои [npc2.crotchBoobs] так приятно сжимают мой [npc1.cock]!"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck! Your [npc2.crotchBoobs+] feel so good to fuck!",
-										"Oh yes! Wrap your [npc2.crotchBoobs+] around my cock!",
-										"Your [npc2.crotchBoobs+] were made for my cock!"));
+										"Блядь! Твоими [npc2.crotchBoobs+] так охеренно трахаться!",
+										"О да! Облепи мой член своими [npc2.crotchBoobs+]!",
+										"Твои [npc2.crotchBoobs+] были созданы для моего члена!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"That's right slut, pleasure my cock! Push your [npc2.crotchBoobs+] together and make this good for me!",
-										"What a horny bitch! Using your [npc2.crotchBoobs+] to please my cock like a desperate slut!",
-										"You like this, fuck toy?! Squeezing your [npc2.crotchBoobs] around my cock and pleasing me like the slut you are?!"));
+										"Вот так, шлюшка, доставляй удовольствие моему члену! Сжимай свои [npc2.crotchBoobs+] вместе, чтобы мне было еще лучше!",
+										"Ну и похотливая сучка! Используешь свои [npc2.crotchBoobs+], чтобы ублажать мой член, словно отчаянная шлюха!",
+										"Тебе нравится, сучка-игрушка?! Сжимать свою [npc2.crotchBoobs] вокруг моего члена и ублажать меня, как настоящая шлюха?!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Use my cock! I love your [npc2.crotchBoobs+]!",
-										"Don't stop! Harder! Fuck me! Yes, yes, yes!",
-										"Oh yes! Use me! I love your [npc2.crotchBoobs+]!"));
+										"Да! Используй мой член! Обожаю твою [npc2.crotchBoobs+]!",
+										"Не останавливайся! Сильнее! Трахни меня! Да, да, да!",
+										"О да! Используй меня! Обожаю твой [npc2.crotchBoobs+]!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Fuck me!",
-										"Don't stop! Fuck me!",
-										"Oh yes! Fuck me!"));
+										"Да! Трахни меня!",
+										"Не останавливайся! Трахни меня!",
+										"О да! Трахни меня!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! Get off my cock!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Слезь с моего члена!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 							default:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck me! Yes! Harder!",
-										"Oh yeah! Fuck me!",
-										"Harder! Don't stop!"));
+										"Трахни меня! Да! Сильнее!",
+										"О да! Трахни меня!",
+										"Сильнее! Не останавливайся!"));
 								break;
 						}
 						break;
@@ -13557,45 +13462,45 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Good [npc2.girl], keep sucking my cock!",
-										"That's right, use your [npc2.tongue] as well! You're good at sucking cock!",
-										"What a good [npc2.girl]! You love sucking my cock, don't you?"));
+										"Хорошая [npc2.girl], соси мой член дальше!",
+										"Вот так, используй и свой [npc2.tongue] тоже! Ты отлично сосёшь!",
+										"Какая послушная [npc2.girl]! Ты ведь обожаешь сосать мой член, а?"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"You're good at sucking cock!",
-										"Oh yeah! Keep sucking my cock!",
-										"Use your tongue as well! Yeah, like that!"));
+										"Ты отлично сосёшь!",
+										"О да! Соси мой член, не останавливайся!",
+										"И языком тоже пользуйся! Да, вот так!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Come on you slut! You can suck cock better than that!",
-										"That's right bitch! Take my cock deep down your throat!",
-										"Put some effort into it slut! You can suck cock better than that!"));
+										"Давай же, шлюха! Ты можешь сосать куда лучше!",
+										"Вот так, сучка! Заглатывай мой член по самые гланды!",
+										"Постарайся, шлюха! Ты можешь сосать лучше!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Keep sucking my cock! Just like that!",
-										"Oh yes! Wrap those lips of yours around my cock! Keep going!",
-										"Keep sucking my cock! Yes! Just like that!"));
+										"Да! Соси мой член! Вот так!",
+										"О да! Обхвати мои яйца своими губками! Продолжай!",
+										"Соси мой член! Да! Вот так!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Keep sucking my cock!",
-										"Wrap those lips of yours around my cock! Keep going!",
-										"Keep sucking my cock! Yes!"));
+										"Да! Продолжай сосать мой член!",
+										"Обхвати мои яйца своими губками! Не останавливайся!",
+										"Соси мой член! Да!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! Get off my cock!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Слезь с моего члена!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 							default:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck me! Yes! Harder!",
-										"Oh yeah! Fuck me!",
-										"Harder! Don't stop!"));
+										"Трахни меня! Да! Сильнее!",
+										"О да! Трахни меня!",
+										"Сильнее! Не останавливайся!"));
 								break;
 						}
 						break;
@@ -13603,45 +13508,45 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Good [npc2.girl]! Feel my cock slide deep into your breast!",
-										"That's right, be a good [npc2.girl] and moan for me! Feel my [npc1.cock] sliding deep into your cute little nipple!",
-										"Your cute little nipple feels so good squeezing down around my [npc1.cock]!"));
+										"Хорошая [npc2.girl]! Чувствуй, как мой член глубоко входит в твою грудь!",
+										"Вот так, будь послушной [npc2.girl] и стони для меня! Чувствуй, как мой [npc1.cock] скользит прямо к твоему милому соску!",
+										"Твой милый маленький сосок так приятно сжимает мой [npc1.cock]!"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck! Your tits feel so good to fuck!",
-										"Oh yes! Take my cock! Take it deep!",
-										"Your tits were made for my cock!"));
+										"Блять! Твои сиськи так охеренно трахать!",
+										"О да! Принимай мой член! Глотай его поглубже!",
+										"Твои сиськи были созданы для моего члена!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"That's right slut, take my cock! Feel it pushing deep into your nipple!",
-										"What a horny bitch! Taking my cock deep into your tit like a slut!",
-										"You feel that, fuck toy?! Do you feel my cock sinking deep into your slutty little nipple?!"));
+										"Вот так, шлюшка, принимай мой член! Чувствуй, как он глубоко входит в твой сосок!",
+										"Какая похотливая сучка! Заглатываешь мой член глубоко в свою грудь, как настоящая шлюха!",
+										"Чувствуешь это, секс-игрушка?! Чувствуешь, как мой член глубоко погружается в твой шлюшкин сосок?!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Use my cock! I love your tits!",
-										"Don't stop! Harder! Fuck me! Yes, yes, yes!",
-										"Oh yes! Use me! I love your tits!"));
+										"Да! Используй мой член! Обожаю твои сиськи!",
+										"Не останавливайся! Сильнее! Трахни меня! Да, да, да!",
+										"О да! Используй меня! Обожаю твои сиськи!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Fuck me!",
-										"Don't stop! Fuck me!",
-										"Oh yes! Fuck me!"));
+										"Да! Трахни меня!",
+										"Не останавливайся! Трахни меня!",
+										"О да! Трахни меня!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! Get off my cock!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Слезь с моего члена!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 							default:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck me! Yes! Harder!",
-										"Oh yeah! Fuck me!",
-										"Harder! Don't stop!"));
+										"Трахни меня! Да! Сильнее!",
+										"О да! Трахни меня!",
+										"Сильнее! Не останавливайся!"));
 								break;
 						}
 						break;
@@ -13649,45 +13554,45 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Good [npc2.girl]! Feel my cock slide deep into your [npc2.crotchNipple]!",
-										"That's right, be a good [npc2.girl] and moan for me! Feel my [npc1.cock] sliding deep into your cute little [npc2.crotchNipple]!",
-										"Your cute little [npc2.crotchNipple] feels so good squeezing down around my [npc1.cock]!"));
+										"Отличный [npc2.girl]! Чувствуй, как мой член скользит глубоко в твой [npc2.crotchNipple]!",
+										"Вот так, будь хорошей [npc2.girl] и стони для меня! Чувствуй, как мой [npc1.cock] глубоко скользит в твой милый маленький [npc2.crotchNipple]!",
+										"Твой милый маленький [npc2.crotchNipple] так приятно сжимает мой [npc1.cock]!"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck! Your [npc2.crotchNipple] feels so good to fuck!",
-										"Oh yes! Take my cock! Take it deep!",
-										"Your [npc2.crotchNipples] were made for my cock!"));
+										"Блядь! Твой [npc2.crotchNipple] так охеренно трахать!",
+										"О да! Принимай мой член! Глотай его поглубже!",
+										"Твои [npc2.crotchNipples] были созданы для моего члена!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"That's right slut, take my cock! Feel it pushing deep into your [npc2.crotchNipple]!",
-										"What a horny bitch! Taking my cock deep into your [npc2.crotchNipple] like a slut!",
-										"You feel that, fuck toy?! Do you feel my cock sinking deep into your slutty little [npc2.crotchNipple]?!"));
+										"Вот так, шлюшка, принимай мой член! Чувствуй, как он глубоко входит в твой [npc2.crotchNipple]!",
+										"Какая похотливая сучка! Заглатываешь мой член глубоко в свою [npc2.crotchNipple], как настоящая шлюха!",
+										"Чувствуешь это, живая игрушка?! Чувствуешь, как мой член уходит глубоко в твою шлюшью [npc2.crotchNipple]?!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Use my cock! I love your [npc2.crotchNipples]!",
-										"Don't stop! Harder! Fuck me! Yes, yes, yes!",
-										"Oh yes! Use me! I love your [npc2.crotchNipples]!"));
+										"Да! Используй мой член! Обожаю твою [npc2.crotchNipples]!",
+										"Не останавливайся! Сильнее! Трахни меня! Да, да, да!",
+										"О да! Используй меня! Обожаю твою [npc2.crotchNipples]!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Fuck me!",
-										"Don't stop! Fuck me!",
-										"Oh yes! Fuck me!"));
+										"Да! Трахни меня!",
+										"Не останавливайся! Трахни меня!",
+										"О да! Трахни меня!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! Get off my cock!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Слезь с моего члена!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 							default:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck me! Yes! Harder!",
-										"Oh yeah! Fuck me!",
-										"Harder! Don't stop!"));
+										"Трахни меня! Да! Сильнее!",
+										"О да! Трахни меня!",
+										"Сильнее! Не останавливайся!"));
 								break;
 						}
 						break;
@@ -13701,51 +13606,51 @@ public abstract class GameCharacter implements XMLSaving {
 						if(Main.game.isSillyMode()
 								&& Main.sex.getSexPace(this)!=SexPace.SUB_RESISTING
 								&& Math.random()<0.01f) {
-							availableLines.add("Your pussy is so poggers!");
+							availableLines.add("Твоя киска просто охрененная!");
 							
 						} else {
 							switch(Main.sex.getSexPace(this)) {
 								case DOM_GENTLE:
 									availableLines.add(UtilText.returnStringAtRandom(
-											"Good [npc2.girl]! Feel my [npc1.cock] slide deep into your little pussy!",
-											"That's right, be a good [npc2.girl] and moan for me! Feel my [npc1.cock] sliding deep into your cute little cunt!",
-											"Your cute little cunt feels so good squeezing down around my [npc1.cock]!"));
+											"Хорошая [npc2.girl]! Чувствуй, как мой [npc1.cock] входит глубоко в твою малую киску!",
+											"Вот так, будь послушной [npc2.girl] и стони для меня! Чувствуй, как мой [npc1.cock] скользит глубоко в твою милую киску!",
+											"Твоя милая киска так сладко сжимает мой [npc1.cock]!"));
 									break;
 								case DOM_NORMAL:
 									availableLines.add(UtilText.returnStringAtRandom(
-											"Fuck! Your pussy feels so good!",
-											"Oh yes! Take my cock! Take it deep!",
-											"Your pussy was made for my cock!"));
+											"Блядь! Твоя киска чертовски хороша!",
+											"О да! Принимай мой член! Глотай его поглубже!",
+											"Твоя киска была создана для моего члена!"));
 									break;
 								case DOM_ROUGH:
 									availableLines.add(UtilText.returnStringAtRandom(
-											"That's right slut, take my cock! Your pussy belongs to me!",
-											"What a horny bitch! Take my cock you slut!",
-											"You feel that, fuck toy?! Do you feel my cock sinking deep into your slutty little cunt?!"));
+											"Вот так, шлюшка, принимай мой член! Твоя киска принадлежит мне!",
+											"Ну и похотливая сучка! На, соси мой член, шлюха!",
+											"Чувствуешь это, секс-игрушка?! Чувствуешь, как мой член глубоко входит в твою маленькую шлюшью щелку?!"));
 									break;
 								case SUB_EAGER:
 									availableLines.add(UtilText.returnStringAtRandom(
-											"Yes! Use my cock! I love your pussy!",
-											"Don't stop! Harder! Fuck me! Yes, yes, yes!",
-											"Oh yes! Use me! I love your pussy!"));
+											"Да! Используй мой член! Обожаю твою киску!",
+											"Не останавливайся! Сильнее! Трахни меня! Да, да, да!",
+											"О да! Используй меня! Обожаю твою киску!"));
 									break;
 								case SUB_NORMAL:
 									availableLines.add(UtilText.returnStringAtRandom(
-											"Yes! Fuck me!",
-											"Don't stop! Fuck me!",
-											"Oh yes! Fuck me!"));
+											"Да! Трахни меня!",
+											"Не останавливайся! Трахни меня!",
+											"О да! Трахни меня!"));
 									break;
 								case SUB_RESISTING:
 									availableLines.add(UtilText.returnStringAtRandom(
-											"I don't want to do this! Please let me stop!",
-											"Let me go! I don't want to do this!",
-											"Please! Stop! I don't want this!"));
+											"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+											"Отпусти меня! Я не хочу этого делать!",
+											"Пожалуйста! Остановись! Я этого не хочу!"));
 									break;
 								default:
 									availableLines.add(UtilText.returnStringAtRandom(
-											"Fuck me! Yes! Harder!",
-											"Oh yeah! Fuck me!",
-											"Harder! Don't stop!"));
+											"Трахни меня! Да! Сильнее!",
+											"О да! Трахни меня!",
+											"Сильнее! Не останавливайся!"));
 									break;
 							}
 						}
@@ -13754,45 +13659,45 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Good [npc2.girl]! Feel my [npc1.cock] slide deep into your little spinneret!",
-										"That's right, be a good [npc2.girl] and moan for me! Feel my [npc1.cock] sliding deep into your cute little spinneret!",
-										"Your cute little spinneret feels so good squeezing down around my [npc1.cock]!"));
+										"Хорошая [npc2.girl]! Чувствуй, как мой [npc1.cock] входит глубоко в твой маленький паутинный орган!",
+										"Вот так, будь хорошей [npc2.girl] и стони для меня! Чувствуй, как мой [npc1.cock] глубоко скользит в твой милый маленький паутинный орган!",
+										"Твой милый маленький паутинный орган так сладко сжимает мой [npc1.cock]!"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck! Your spinneret feels so good!",
-										"Oh yes! Take my cock! Take it deep!",
-										"Your spinneret was made for my cock!"));
+										"Блядь! Твой паутинный орган — это просто кайф!",
+										"О да! Принимай мой член! Глотай его поглубже!",
+										"Твой паутинный орган был создан для моего члена!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"That's right slut, take my cock! Your spinneret belongs to me!",
-										"What a horny bitch! Take my cock you slut!",
-										"You feel that, fuck toy?! Do you feel my cock sinking deep into your slutty little spinneret?!"));
+										"Вот так, шлюшка, принимай мой член! Твоё паучье брюшко принадлежит мне!",
+										"Ну и похотливая сучка! На, соси мой член, шлюха!",
+										"Чувствуешь это, секс-игрушка?! Чувствуешь, как мой член глубоко входит в твоё шлюшье брюшко?!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Use my cock! I love your spinneret!",
-										"Don't stop! Harder! Fuck me! Yes, yes, yes!",
-										"Oh yes! Use me! I love your spinneret!"));
+										"Да! Используй мой член! Обожаю твоё брюшко!",
+										"Не останавливайся! Сильнее! Трахни меня! Да, да, да!",
+										"О да! Используй меня! Обожаю твоё брюшко!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Fuck me!",
-										"Don't stop! Fuck me!",
-										"Oh yes! Fuck me!"));
+										"Да! Трахни меня!",
+										"Не останавливайся! Трахни меня!",
+										"О да! Трахни меня!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! I don't want to do this!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Я не хочу этого делать!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 							default:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck me! Yes! Harder!",
-										"Oh yeah! Fuck me!",
-										"Harder! Don't stop!"));
+										"Трахни меня! Да! Сильнее!",
+										"О да! Трахни меня!",
+										"Сильнее! Не останавливайся!"));
 								break;
 						}
 						break;
@@ -13823,45 +13728,45 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Good [npc2.girl]! Feel my [npc1.tail] slide deep into your cute little ass!",
-										"That's right, be a good [npc2.girl] and moan for me! Feel my [npc1.tail] sliding deep into your cute little ass!",
-										"Your cute little ass feels so good squeezing down around my [npc1.tail]!"));
+										"Хорошая [npc2.girl]! Чувствуй, как мой [npc1.tail] глубоко скользит в твою милую маленькую попку!",
+										"Вот так, будь хорошей [npc2.girl] и стони для меня! Чувствуй, как мой [npc1.tail] глубоко скользит в твою милую маленькую попку!",
+										"Твоя милая маленькая попка так сладко сжимает мой [npc1.tail]!"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck! Your ass feels so good!",
-										"Oh yes! Take my [npc1.tail]! Take it deep into your ass!",
-										"Your ass was made for a good tail-fucking!"));
+										"Блять! Твоя задница просто охрененная!",
+										"О да! Принимай мой [npc1.tail]! Заглатывай его глубоко в задницу!",
+										"Твоя задница просто создана для того, чтобы её трахал хвостатый!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"That's right bitch, feel my [npc1.tail] pushing deep into your slutty ass!",
-										"What a horny slut! Now moan for me as I fuck your ass with my tail!",
-										"You feel that, fuck toy?! Do you feel my [npc1.tail] sinking deep into your slutty little ass?!"));
+										"Вот так, сучка, чувствуй, как мой [npc1.tail] глубоко вжимается в твою шлюшью задницу!",
+										"Какая похотливая шлюха! А теперь стони для меня, пока я трахаю твою задницу своим хвостом!",
+										"Чувствуешь это, живая игрушка?! Чувствуешь, как мой [npc1.tail] глубоко входит в твою шлюшью задницу?!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Use my [npc1.tail]! I love your ass!",
-										"Don't stop! Harder! Use my [npc1.tail]! Yes, yes, yes!",
-										"Oh yes! Use me! I love your ass!"));
+										"Да! Используй мой [npc1.tail]! Обожаю твою задницу!",
+										"Не останавливайся! Сильнее! Используй мой [npc1.tail]! Да, да, да!",
+										"О да! Используй меня! Обожаю твою задницу!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Fuck me!",
-										"Don't stop! Fuck me!",
-										"Oh yes! Fuck me!"));
+										"Да! Трахни меня!",
+										"Не останавливайся! Трахни меня!",
+										"О да! Трахни меня!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! I don't want to do this!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Я не хочу этого делать!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 							default:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck me! Yes! Harder!",
-										"Oh yeah! Fuck me!",
-										"Harder! Don't stop!"));
+										"Трахни меня! Да! Сильнее!",
+										"О да! Трахни меня!",
+										"Сильнее! Не останавливайся!"));
 								break;
 						}
 						break;
@@ -13871,45 +13776,45 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Good [npc2.girl]! Feel my [npc1.tail] slide up between your [npc2.breasts]!",
-										"That's right, be a good [npc2.girl] and moan for me! Feel my [npc1.tail] sliding up between your [npc2.breasts+]!",
-										"Your [npc2.breasts] feel so good squeezing down around my [npc1.tail]!"));
+										"Хороший [npc2.girl]! Чувствуй, как мой [npc1.tail] скользит между твоими [npc2.breasts]!",
+										"Вот так, будь хорошей [npc2.girl] и стони для меня! Чувствуй, как мой [npc1.tail] скользит между твоими [npc2.breasts+]!",
+										"Твоя [npc2.breasts] так приятно сжимает мой [npc1.tail]!"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck! Your tits feel so good to fuck!",
-										"Oh yes! Wrap your tits around my [npc1.tail]!",
-										"Your tits were made for my [npc1.tail]!"));
+										"Блять! Твои сиськи так охеренно трахать!",
+										"О да! Окружи мои [npc1.tail] своими сиськами!",
+										"Твои сиськи были созданы для моего [npc1.tail]!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"That's right slut, pleasure my [npc1.tail]! Push your tits together and make this good for me!",
-										"What a horny bitch! Using your tits to please my [npc1.tail] like a desperate slut!",
-										"You like this, fuck toy?! Squeezing your [npc2.breasts] around my [npc1.tail] and pleasing me like the slut you are?!"));
+										"Вот так, шлюшка, доставляй удовольствие моему [npc1.tail]! Сжимай сиськи вместе, чтобы мне было еще лучше!",
+										"Какая похотливая сучка! Используешь свои сиськи, чтобы ублажать мой [npc1.tail], словно отчаянная шлюха!",
+										"Тебе нравится, секс-игрушка?! Сжимать свои [npc2.breasts] вокруг моего [npc1.tail] и доставлять мне удовольствие, как настоящая шлюха?!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Use my [npc1.tail]! I love your tits!",
-										"Don't stop! Harder! Fuck me! Yes, yes, yes!",
-										"Oh yes! Use me! I love your tits!"));
+										"Да! Используй мои [npc1.tail]! Обожаю твои сиськи!",
+										"Не останавливайся! Сильнее! Трахни меня! Да, да, да!",
+										"О да! Используй меня! Обожаю твои сиськи!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Fuck me!",
-										"Don't stop! Fuck me!",
-										"Oh yes! Fuck me!"));
+										"Да! Трахни меня!",
+										"Не останавливайся! Трахни меня!",
+										"О да! Трахни меня!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! Get off my [npc1.tail]!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Слезь с моей [npc1.tail]!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 							default:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck me! Yes! Harder!",
-										"Oh yeah! Fuck me!",
-										"Harder! Don't stop!"));
+										"Трахни меня! Да! Сильнее!",
+										"О да! Трахни меня!",
+										"Сильнее! Не останавливайся!"));
 								break;
 						}
 						break;
@@ -13917,45 +13822,45 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Good [npc2.girl]! Feel my [npc1.tail] slide up between your [npc2.crotchBoobs]!",
-										"That's right, be a good [npc2.girl] and moan for me! Feel my [npc1.tail] sliding up between your [npc2.crotchBoobs+]!",
-										"Your [npc2.crotchBoobs] feel so good squeezing down around my [npc1.tail]!"));
+										"Хорошая [npc2.girl]! Чувствуй, как мой [npc1.tail] скользит между твоих [npc2.crotchBoobs]!",
+										"Вот так, будь послушной [npc2.girl] и стони для меня! Чувствуй, как мой [npc1.tail] скользит между твоих [npc2.crotchBoobs+]!",
+										"Твои [npc2.crotchBoobs] так приятно сжимают мой [npc1.tail]!"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck! Your [npc2.crotchBoobs] feel so good to fuck!",
-										"Oh yes! Wrap your [npc2.crotchBoobs] around my [npc1.tail]!",
-										"Your [npc2.crotchBoobs] were made for my [npc1.tail]!"));
+										"Блядь! Твоими [npc2.crotchBoobs] так охеренно трахаться!",
+										"О да! Облепи мои [npc1.tail] своими [npc2.crotchBoobs]!",
+										"Твои [npc2.crotchBoobs] были созданы для моего [npc1.tail]!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"That's right slut, pleasure my [npc1.tail]! Push your [npc2.crotchBoobs] together and make this good for me!",
-										"What a horny bitch! Using your [npc2.crotchBoobs] to please my [npc1.tail] like a desperate slut!",
-										"You like this, fuck toy?! Squeezing your [npc2.crotchBoobs] around my [npc1.tail] and pleasing me like the slut you are?!"));
+										"Вот так, шлюшка, ласкай мой [npc1.tail]! Сжимай свои [npc2.crotchBoobs] вместе и доставь мне удовольствие!",
+										"Какая похотливая сучка! Используешь свой [npc2.crotchBoobs], чтобы ублажать мой [npc1.tail], словно отчаянная шлюха!",
+										"Тебе нравится, секс-игрушка?! Сжимаешь свой [npc2.crotchBoobs] вокруг моего [npc1.tail] и доставляешь мне кайф, как настоящая шлюха?!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Use my [npc1.tail]! I love your [npc2.crotchBoobs]!",
-										"Don't stop! Harder! Fuck me! Yes, yes, yes!",
-										"Oh yes! Use me! I love your [npc2.crotchBoobs]!"));
+										"Да! Используй мой [npc1.tail]! Обожаю твой [npc2.crotchBoobs]!",
+										"Не останавливайся! Сильнее! Трахни меня! Да, да, да!",
+										"О да! Используй меня! Обожаю твой [npc2.crotchBoobs]!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Fuck me!",
-										"Don't stop! Fuck me!",
-										"Oh yes! Fuck me!"));
+										"Да! Трахни меня!",
+										"Не останавливайся! Трахни меня!",
+										"О да! Трахни меня!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! Get off my [npc1.tail]!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Слезь с моей [npc1.tail]!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 							default:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck me! Yes! Harder!",
-										"Oh yeah! Fuck me!",
-										"Harder! Don't stop!"));
+										"Трахни меня! Да! Сильнее!",
+										"О да! Трахни меня!",
+										"Сильнее! Не останавливайся!"));
 								break;
 						}
 						break;
@@ -13963,45 +13868,45 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Good [npc2.girl], keep sucking my [npc1.tail]!",
-										"That's right, use your [npc2.tongue] as well! You're good at this!",
-										"What a good [npc2.girl]! You love sucking my [npc1.tail], don't you?"));
+										"Хороший [npc2.girl], продолжай сосать мой [npc1.tail]!",
+										"Верно, используй и свой [npc2.tongue] тоже! У тебя отлично получается!",
+										"Какой хороший [npc2.girl]! Ты обожаешь сосать мой [npc1.tail], не так ли?"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Take my [npc1.tail] deep down your throat!",
-										"Oh yeah! Keep sucking my [npc1.tail]!",
-										"Use your tongue as well! Yeah, like that!"));
+										"Заглатывай мой [npc1.tail] поглубже в глотку!",
+										"О да! Продолжай сосать мой [npc1.tail]!",
+										"И языком тоже пользуйся! Да, вот так!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Come on you slut! Take my [npc1.tail] deep down your throat!",
-										"That's right bitch! Take my [npc1.tail] deep down your throat!",
-										"Put some effort into it slut! You can suck my [npc1.tail] better than that!"));
+										"Давай, шлюха! Заглоти мой [npc1.tail] по самые гланды!",
+										"Вот так, сучка! Заглатывай мой [npc1.tail] по самые гланды!",
+										"Приложи побольше усилий, шлюха! Ты можешь сосать мой [npc1.tail] куда лучше!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Keep sucking my [npc1.tail]! Just like that!",
-										"Oh yes! Wrap those lips of yours around my [npc1.tail]! Keep going!",
-										"Keep sucking my [npc1.tail]! Yes! Just like that!"));
+										"Да! Соси мой [npc1.tail]! Вот так!",
+										"О да! Обхвати мои [npc1.tail] своими губками! Продолжай!",
+										"Соси мой [npc1.tail]! Да! Вот так!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Keep sucking my [npc1.tail]!",
-										"Wrap those lips of yours around my [npc1.tail]! Keep going!",
-										"Keep sucking my [npc1.tail]! Yes!"));
+										"Да! Соси мой [npc1.tail]!",
+										"Обхвати мои [npc1.tail] своими губками! Не останавливайся!",
+										"Соси мой [npc1.tail]! Да!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! I don't want to do this!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Я не хочу этого делать!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 							default:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck me! Yes! Harder!",
-										"Oh yeah! Fuck me!",
-										"Harder! Don't stop!"));
+										"Трахни меня! Да! Сильнее!",
+										"О да! Трахни меня!",
+										"Сильнее! Не останавливайся!"));
 								break;
 						}
 						break;
@@ -14009,45 +13914,45 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Good [npc2.girl]! Feel my [npc1.tail] slide deep into your breast!",
-										"That's right, be a good [npc2.girl] and moan for me! Feel my [npc1.tail] sliding deep into your cute little nipple!",
-										"Your cute little nipple feels so good squeezing down around my [npc1.tail]!"));
+										"Хороший [npc2.girl]! Чувствуй, как мой [npc1.tail] скользит глубоко в твою грудь!",
+										"Вот так, будь хорошей [npc2.girl] и стони для меня! Чувствуй, как мой [npc1.tail] глубоко входит в твой милый сосок!",
+										"Твой милый сосок так приятно сжимает мой [npc1.tail]!"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck! Your tits feel so good to fuck!",
-										"Oh yes! Take my [npc1.tail] deep into your nipple!",
-										"Your tits were made for my [npc1.tail]!"));
+										"Блять! Твои сиськи так охеренно трахать!",
+										"О да! Принимай мой [npc1.tail] глубоко в свой сосок!",
+										"Твои сиськи были созданы для моего [npc1.tail]!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"That's right slut, take my [npc1.tail]! Feel it pushing deep into your nipple!",
-										"What a horny bitch! Taking my [npc1.tail] deep into your tit like a slut!",
-										"You feel that, fuck toy?! Do you feel my [npc1.tail] sinking deep into your slutty little nipple?!"));
+										"Вот так, шлюшка, принимай мой [npc1.tail]! Чувствуй, как он вжимается глубоко в твой сосок!",
+										"Какая похотливая сучка! Заглатываешь мой [npc1.tail] глубоко в грудь, прямо как настоящая шлюха!",
+										"Чувствуешь это, секс-игрушка?! Чувствуешь, как мой [npc1.tail] глубоко погружается в твой шлюшковатый сосок?!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Use my [npc1.tail]! I love your tits!",
-										"Don't stop! Harder! Fuck me! Yes, yes, yes!",
-										"Oh yes! Use me! I love your tits!"));
+										"Да! Используй мои [npc1.tail]! Обожаю твои сиськи!",
+										"Не останавливайся! Сильнее! Трахни меня! Да, да, да!",
+										"О да! Используй меня! Обожаю твои сиськи!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Fuck me!",
-										"Don't stop! Fuck me!",
-										"Oh yes! Fuck me!"));
+										"Да! Трахни меня!",
+										"Не останавливайся! Трахни меня!",
+										"О да! Трахни меня!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! I don't want to do this!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Я не хочу этого делать!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 							default:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck me! Yes! Harder!",
-										"Oh yeah! Fuck me!",
-										"Harder! Don't stop!"));
+										"Трахни меня! Да! Сильнее!",
+										"О да! Трахни меня!",
+										"Сильнее! Не останавливайся!"));
 								break;
 						}
 						break;
@@ -14055,45 +13960,45 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Good [npc2.girl]! Feel my [npc1.tail] slide deep into your [npc2.crotchNipple]!",
-										"That's right, be a good [npc2.girl] and moan for me! Feel my [npc1.tail] sliding deep into your cute little [npc2.crotchNipple]!",
-										"Your cute little [npc2.crotchNipple] feels so good squeezing down around my [npc1.tail]!"));
+										"Хорошая [npc2.girl]! Чувствуй, как мой [npc1.tail] скользит глубоко в твою [npc2.crotchNipple]!",
+										"Вот так, будь хорошей [npc2.girl] и стони для меня! Чувствуй, как мой [npc1.tail] глубоко входит в твою милую [npc2.crotchNipple]!",
+										"Твоя милая [npc2.crotchNipple] так приятно сжимает мой [npc1.tail]!"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck! Your [npc2.crotchNipple] feels so good to fuck!",
-										"Oh yes! Take my [npc1.tail] deep into your [npc2.crotchNipple]!",
-										"Your [npc2.crotchNipples] were made for my [npc1.tail]!"));
+										"Блядь! Твой [npc2.crotchNipple] так охеренно трахать!",
+										"О да! Принимай мой [npc1.tail] глубоко в свою [npc2.crotchNipple]!",
+										"Твои [npc1.tail] были созданы для моего [npc2.crotchNipples]!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"That's right slut, take my [npc1.tail]! Feel it pushing deep into your [npc2.crotchNipple]!",
-										"What a horny bitch! Taking my [npc1.tail] deep into your [npc2.crotchNipple] like a slut!",
-										"You feel that, fuck toy?! Do you feel my [npc1.tail] sinking deep into your slutty little [npc2.crotchNipple]?!"));
+										"Верно, шлюшка, принимай мой [npc1.tail]! Чувствуй, как он входит глубоко в твою [npc2.crotchNipple]!",
+										"Какая похотливая сучка! Заглатываешь мой [npc1.tail] глубоко в свою [npc2.crotchNipple], словно настоящая шлюха!",
+										"Чувствуешь это, секс-игрушка?! Чувствуешь, как мой [npc1.tail] погружается глубоко в твою маленькую шлюшью [npc2.crotchNipple]?!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Use my [npc1.tail]! I love your [npc2.crotchNipples]!",
-										"Don't stop! Harder! Fuck me! Yes, yes, yes!",
-										"Oh yes! Use me! I love your [npc2.crotchNipples]!"));
+										"Да! Используй мой [npc1.tail]! Обожаю твою [npc2.crotchNipples]!",
+										"Не останавливайся! Сильнее! Трахни меня! Да, да, да!",
+										"О да! Используй меня! Обожаю твою [npc2.crotchNipples]!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Fuck me!",
-										"Don't stop! Fuck me!",
-										"Oh yes! Fuck me!"));
+										"Да! Трахни меня!",
+										"Не останавливайся! Трахни меня!",
+										"О да! Трахни меня!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! I don't want to do this!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Я не хочу этого делать!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 							default:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck me! Yes! Harder!",
-										"Oh yeah! Fuck me!",
-										"Harder! Don't stop!"));
+										"Трахни меня! Да! Сильнее!",
+										"О да! Трахни меня!",
+										"Сильнее! Не останавливайся!"));
 								break;
 						}
 						break;
@@ -14107,45 +14012,45 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Good [npc2.girl]! Feel my [npc1.tail] slide deep into your little pussy!",
-										"That's right, be a good [npc2.girl] and moan for me! Feel my [npc1.tail] sliding deep into your cute little cunt!",
-										"Your cute little cunt feels so good squeezing down around my [npc1.tail]!"));
+										"Хорошая [npc2.girl]! Чувствуй, как мой [npc1.tail] скользит глубоко в твою киску!",
+										"Вот так, будь послушной [npc2.girl] и стони для меня! Чувствуй, как мой [npc1.tail] входит глубоко в твою милую маленькую щелочку!",
+										"Твоя милая маленькая щелочка так сладко сжимает мой [npc1.tail]!"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck! Your pussy feels so good!",
-										"Oh yes! Take my [npc1.tail]! Take it deep!",
-										"Your pussy was made for a good tail-fucking!"));
+										"Блядь! Твоя киска чертовски хороша!",
+										"О да! Принимай мой [npc1.tail]! Глотай его глубоко!",
+										"Твоя киска просто создана для того, чтобы её трахали сзади!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"That's right slut, feel my [npc1.tail] pushing deep into your worthless little cunt! Your pussy belongs to me!",
-										"What a horny bitch! Now moan for me as I fuck you with my tail!",
-										"You feel that, fuck toy?! Do you feel my [npc1.tail] sinking deep into your slutty little cunt?!"));
+										"Вот так, шлюшка, чувствуй, как мой [npc1.tail] глубоко вжимается в твою никчемную киску! Твоя щелка принадлежит мне!",
+										"Ну и похотливая сучка! А теперь стони для меня, пока я трахаю тебя своим хвостом!",
+										"Чувствуешь это, секс-игрушка?! Чувствуешь, как мой [npc1.tail] глубоко погружается в твою шлюшью щелку?!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Use my [npc1.tail]! I love your pussy!",
-										"Don't stop! Harder! Fuck me! Yes, yes, yes!",
-										"Oh yes! Use me! I love your pussy!"));
+										"Да! Используй мой [npc1.tail]! Обожаю твою киску!",
+										"Не останавливайся! Сильнее! Трахни меня! Да, да, да!",
+										"О да! Используй меня! Обожаю твою киску!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Fuck me!",
-										"Don't stop! Fuck me!",
-										"Oh yes! Fuck me!"));
+										"Да! Трахни меня!",
+										"Не останавливайся! Трахни меня!",
+										"О да! Трахни меня!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! I don't want to do this!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Я не хочу этого делать!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 							default:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck me! Yes! Harder!",
-										"Oh yeah! Fuck me!",
-										"Harder! Don't stop!"));
+										"Трахни меня! Да! Сильнее!",
+										"О да! Трахни меня!",
+										"Сильнее! Не останавливайся!"));
 								break;
 						}
 						break;
@@ -14153,45 +14058,45 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Good [npc2.girl]! Feel my [npc1.tail] slide deep into your little spinneret!",
-										"That's right, be a good [npc2.girl] and moan for me! Feel my [npc1.tail] sliding deep into your cute little spinneret!",
-										"Your cute little spinneret feels so good squeezing down around my [npc1.tail]!"));
+										"Отличный [npc2.girl]! Чувствуй, как мой [npc1.tail] скользит глубоко в твое маленькое паутинное отверстие!",
+										"Вот так, будь хорошей [npc2.girl] и стони для меня! Чувствуй, как мой [npc1.tail] глубоко скользит в твое милое паутинное отверстие!",
+										"Твое милое паутинное отверстие так сладко сжимает мой [npc1.tail]!"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck! Your spinneret feels so good!",
-										"Oh yes! Take my [npc1.tail]! Take it deep!",
-										"Your spinneret was made for a good tail-fucking!"));
+										"Блядь! Твой паутинный орган — это просто кайф!",
+										"О да! Принимай мой [npc1.tail]! Глотай его глубоко!",
+										"Твое паутинное отверстие было создано для того, чтобы его трахали хвостом!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"That's right slut, feel my [npc1.tail] pushing deep into your worthless little spinneret! You belong to me!",
-										"What a horny bitch! Now moan for me as I fuck you with my tail!",
-										"You feel that, fuck toy?! Do you feel my [npc1.tail] sinking deep into your slutty little spinneret?!"));
+										"Вот так, шлюшка, чувствуй, как мой [npc1.tail] глубоко вжимается в твое никчемное паутинное отверстие! Ты принадлежишь мне!",
+										"Ну и похотливая сучка! А теперь стони для меня, пока я трахаю тебя своим хвостом!",
+										"Чувствуешь это, шлюшка?! Чувствуешь, как мой [npc1.tail] глубоко входит в твою похотливую дырочку?!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Use my [npc1.tail]! I love your spinneret!",
-										"Don't stop! Harder! Fuck me! Yes, yes, yes!",
-										"Oh yes! Use me! I love your spinneret!"));
+										"Да! Используй мой [npc1.tail]! Обожаю твой щупалец!",
+										"Не останавливайся! Сильнее! Трахни меня! Да, да, да!",
+										"О да! Используй меня! Обожаю твоё брюшко!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Fuck me!",
-										"Don't stop! Fuck me!",
-										"Oh yes! Fuck me!"));
+										"Да! Трахни меня!",
+										"Не останавливайся! Трахни меня!",
+										"О да! Трахни меня!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! I don't want to do this!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Я не хочу этого делать!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 							default:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck me! Yes! Harder!",
-										"Oh yeah! Fuck me!",
-										"Harder! Don't stop!"));
+										"Трахни меня! Да! Сильнее!",
+										"О да! Трахни меня!",
+										"Сильнее! Не останавливайся!"));
 								break;
 						}
 						break;
@@ -14222,45 +14127,45 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Good [npc2.girl]! Feel my [npc1.tentacle] slide deep into your cute little ass!",
-										"That's right, be a good [npc2.girl] and moan for me! Feel my [npc1.tentacle] sliding deep into your cute little ass!",
-										"Your cute little ass feels so good squeezing down around my [npc1.tentacle]!"));
+										"Хороший [npc2.girl]! Чувствуй, как мой [npc1.tentacle] глубоко скользит в твою милую жопку!",
+										"Вот так, будь хорошей [npc2.girl] и стони для меня! Чувствуй, как мой [npc1.tentacle] глубоко скользит в твою милую жопку!",
+										"Твоя милая жопка так сладко сжимает мой [npc1.tentacle]!"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck! Your ass feels so good!",
-										"Oh yes! Take my [npc1.tentacle]! Take it deep into your ass!",
-										"Your ass was made for a good tentacle-fucking!"));
+										"Блять! Твоя задница просто охрененная!",
+										"О да! Принимай мой [npc1.tentacle]! Заглатывай его глубоко в задницу!",
+										"Твоя задница просто создана для того, чтобы её трахали щупальцами!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"That's right bitch, feel my [npc1.tentacle] pushing deep into your slutty ass!",
-										"What a horny slut! Now moan for me as I fuck your ass with my tentacle!",
-										"You feel that, fuck toy?! Do you feel my [npc1.tentacle] sinking deep into your slutty little ass?!"));
+										"Вот так, сучка, чувствуй, как мой [npc1.tentacle] глубоко вжимается в твою похотливую дырку!",
+										"Какая же ты похотливая шлюшка! А теперь стони, пока я трахаю твою задницу своим щупальцем!",
+										"Чувствуешь это, шлюшка?! Чувствуешь, как мой [npc1.tentacle] глубоко входит в твою похотливую дырочку?!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Use my [npc1.tentacle]! I love your ass!",
-										"Don't stop! Harder! Use my [npc1.tentacle]! Yes, yes, yes!",
-										"Oh yes! Use me! I love your ass!"));
+										"Да! Используй мою [npc1.tentacle]! Обожаю твою задницу!",
+										"Не останавливайся! Сильнее! Используй мою [npc1.tentacle]! Да, да, да!",
+										"О да! Используй меня! Обожаю твою задницу!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Fuck me!",
-										"Don't stop! Fuck me!",
-										"Oh yes! Fuck me!"));
+										"Да! Трахни меня!",
+										"Не останавливайся! Трахни меня!",
+										"О да! Трахни меня!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! I don't want to do this!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Я не хочу этого делать!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 							default:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck me! Yes! Harder!",
-										"Oh yeah! Fuck me!",
-										"Harder! Don't stop!"));
+										"Трахни меня! Да! Сильнее!",
+										"О да! Трахни меня!",
+										"Сильнее! Не останавливайся!"));
 								break;
 						}
 						break;
@@ -14270,45 +14175,45 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Good [npc2.girl]! Feel my [npc1.tentacle] slide up between your [npc2.breasts]!",
-										"That's right, be a good [npc2.girl] and moan for me! Feel my [npc1.tentacle] sliding up between your [npc2.breasts+]!",
-										"Your [npc2.breasts] feel so good squeezing down around my [npc1.tentacle]!"));
+										"Хорошая [npc2.girl]! Чувствуй, как моя [npc1.tentacle] скользит между твоих [npc2.breasts]!",
+										"Вот так, будь послушной [npc2.girl] и стони для меня! Чувствуй, как моя [npc1.tentacle] скользит между твоих [npc2.breasts+]!",
+										"Твоя [npc2.breasts] так приятно сжимает мою [npc1.tentacle]!"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck! Your tits feel so good to fuck!",
-										"Oh yes! Wrap your tits around my [npc1.tentacle]!",
-										"Your tits were made for my [npc1.tentacle]!"));
+										"Блять! Твои сиськи так охеренно трахать!",
+										"О да! Облепи мою [npc1.tentacle] своими сиськами!",
+										"Твои сиськи были созданы для моей [npc1.tentacle]!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"That's right slut, pleasure my [npc1.tentacle]! Push your tits together and make this good for me!",
-										"What a horny bitch! Using your tits to please my [npc1.tentacle] like a desperate slut!",
-										"You like this, fuck toy?! Squeezing your [npc2.breasts] around my [npc1.tentacle] and pleasing me like the slut you are?!"));
+										"Вот так, шлюшка, доставляй удовольствие моей [npc1.tentacle]! Сжимай сиськи вместе, чтобы мне было еще лучше!",
+										"Какая похотливая сучка! Используешь свои сиськи, чтобы ублажать мою [npc1.tentacle], словно отчаянная шлюха!",
+										"Тебе это нравится, секс-игрушка?! Сжимать твою [npc2.breasts] вокруг моей [npc1.tentacle] и ублажать меня, как настоящую шлюху?!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Use my [npc1.tentacle]! I love your tits!",
-										"Don't stop! Harder! Fuck me! Yes, yes, yes!",
-										"Oh yes! Use me! I love your tits!"));
+										"Да! Используй мою [npc1.tentacle]! Обожаю твои сиськи!",
+										"Не останавливайся! Сильнее! Трахни меня! Да, да, да!",
+										"О да! Используй меня! Обожаю твои сиськи!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Fuck me!",
-										"Don't stop! Fuck me!",
-										"Oh yes! Fuck me!"));
+										"Да! Трахни меня!",
+										"Не останавливайся! Трахни меня!",
+										"О да! Трахни меня!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! Get off my [npc1.tentacle]!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Слезай с моей [npc1.tentacle]!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 							default:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck me! Yes! Harder!",
-										"Oh yeah! Fuck me!",
-										"Harder! Don't stop!"));
+										"Трахни меня! Да! Сильнее!",
+										"О да! Трахни меня!",
+										"Сильнее! Не останавливайся!"));
 								break;
 						}
 						break;
@@ -14316,45 +14221,45 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Good [npc2.girl]! Feel my [npc1.tentacle] slide up between your [npc2.crotchBoobs]!",
-										"That's right, be a good [npc2.girl] and moan for me! Feel my [npc1.tentacle] sliding up between your [npc2.crotchBoobs+]!",
-										"Your [npc2.crotchBoobs] feel so good squeezing down around my [npc1.tentacle]!"));
+										"Хорошая [npc2.girl]! Чувствуй, как моя [npc1.tentacle] скользит между твоих [npc2.crotchBoobs]!",
+										"Вот так, будь послушной [npc2.girl] и стони для меня! Чувствуй, как моя [npc1.tentacle] скользит между твоих [npc2.crotchBoobs+]!",
+										"Твои [npc2.crotchBoobs] так приятно сжимают мою [npc1.tentacle]!"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck! Your [npc2.crotchBoobs] feel so good to fuck!",
-										"Oh yes! Wrap your [npc2.crotchBoobs] around my [npc1.tentacle]!",
-										"Your [npc2.crotchBoobs] were made for my [npc1.tentacle]!"));
+										"Блядь! Твоими [npc2.crotchBoobs] так охеренно трахаться!",
+										"О да! Окутай мою [npc1.tentacle] своими [npc2.crotchBoobs]!",
+										"Твои [npc2.crotchBoobs] были созданы для моей [npc1.tentacle]!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"That's right slut, pleasure my [npc1.tentacle]! Push your [npc2.crotchBoobs] together and make this good for me!",
-										"What a horny bitch! Using your [npc2.crotchBoobs] to please my [npc1.tentacle] like a desperate slut!",
-										"You like this, fuck toy?! Squeezing your [npc2.crotchBoobs] around my [npc1.tentacle] and pleasing me like the slut you are?!"));
+										"Вот так, шлюшка, доставляй удовольствие моей [npc1.tentacle]! Сжимай свои [npc2.crotchBoobs] вместе, чтобы мне было хорошо!",
+										"Какая похотливая сучка! Используешь свои [npc2.crotchBoobs], чтобы ублажать мою [npc1.tentacle], словно отчаянная шлюха!",
+										"Тебе нравится это, секс-игрушка?! Сжимать твои [npc2.crotchBoobs] вокруг моей [npc1.tentacle] и ублажать меня, как настоящую шлюху?!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Use my [npc1.tentacle]! I love your [npc2.crotchBoobs]!",
-										"Don't stop! Harder! Fuck me! Yes, yes, yes!",
-										"Oh yes! Use me! I love your [npc2.crotchBoobs]!"));
+										"Да! Используй мой [npc1.tentacle]! Обожаю твой [npc2.crotchBoobs]!",
+										"Не останавливайся! Сильнее! Трахни меня! Да, да, да!",
+										"О да! Используй меня! Обожаю твой [npc2.crotchBoobs]!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Fuck me!",
-										"Don't stop! Fuck me!",
-										"Oh yes! Fuck me!"));
+										"Да! Трахни меня!",
+										"Не останавливайся! Трахни меня!",
+										"О да! Трахни меня!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! Get off my [npc1.tentacle]!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Слезай с моей [npc1.tentacle]!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 							default:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck me! Yes! Harder!",
-										"Oh yeah! Fuck me!",
-										"Harder! Don't stop!"));
+										"Трахни меня! Да! Сильнее!",
+										"О да! Трахни меня!",
+										"Сильнее! Не останавливайся!"));
 								break;
 						}
 						break;
@@ -14362,45 +14267,45 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Good [npc2.girl], keep sucking my [npc1.tentacle]!",
-										"That's right, use your [npc2.tongue] as well! You're good at this!",
-										"What a good [npc2.girl]! You love sucking my [npc1.tentacle], don't you?"));
+										"Хороший [npc2.girl], продолжай сосать мой [npc1.tentacle]!",
+										"Верно, используй и свой [npc2.tongue] тоже! У тебя отлично получается!",
+										"Какой отличный [npc2.girl]! Тебе ведь нравится сосать мой [npc1.tentacle], правда?"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Take my [npc1.tentacle] deep down your throat!",
-										"Oh yeah! Keep sucking my [npc1.tentacle]!",
-										"Use your tongue as well! Yeah, like that!"));
+										"Заглатывай мой [npc1.tentacle] по самые гланды!",
+										"О да! Продолжай сосать мой [npc1.tentacle]!",
+										"И языком тоже пользуйся! Да, вот так!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Come on you slut! Take my [npc1.tentacle] deep down your throat!",
-										"That's right bitch! Take my [npc1.tentacle] deep down your throat!",
-										"Put some effort into it slut! You can suck my [npc1.tentacle] better than that!"));
+										"Давай же, шлюшка! Заглатывай мой [npc1.tentacle] по самые гланды!",
+										"Вот так, сучка! Заглатывай мой [npc1.tentacle] по самые гланды!",
+										"Постарайся получше, шлюшка! Ты можешь сосать мой [npc1.tentacle] куда лучше!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Keep sucking my [npc1.tentacle]! Just like that!",
-										"Oh yes! Wrap those lips of yours around my [npc1.tentacle]! Keep going!",
-										"Keep sucking my [npc1.tentacle]! Yes! Just like that!"));
+										"Да! Продолжай сосать мой [npc1.tentacle]! Вот так!",
+										"О да! Обхвати мои [npc1.tentacle] своими губками! Не останавливайся!",
+										"Соси мой [npc1.tentacle] дальше! Да! Вот так!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Keep sucking my [npc1.tentacle]!",
-										"Wrap those lips of yours around my [npc1.tentacle]! Keep going!",
-										"Keep sucking my [npc1.tentacle]! Yes!"));
+										"Да! Продолжай сосать мой [npc1.tentacle]!",
+										"Окутай мои [npc1.tentacle] своими губками! Не останавливайся!",
+										"Соси мой [npc1.tentacle]! Да!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! I don't want to do this!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Я не хочу этого делать!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 							default:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck me! Yes! Harder!",
-										"Oh yeah! Fuck me!",
-										"Harder! Don't stop!"));
+										"Трахни меня! Да! Сильнее!",
+										"О да! Трахни меня!",
+										"Сильнее! Не останавливайся!"));
 								break;
 						}
 						break;
@@ -14408,45 +14313,45 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Good [npc2.girl]! Feel my [npc1.tentacle] slide deep into your breast!",
-										"That's right, be a good [npc2.girl] and moan for me! Feel my [npc1.tentacle] sliding deep into your cute little nipple!",
-										"Your cute little nipple feels so good squeezing down around my [npc1.tentacle]!"));
+										"Хороший [npc2.girl]! Чувствуй, как мой [npc1.tentacle] глубоко входит в твою грудь!",
+										"Вот так, будь послушной [npc2.girl] и стони для меня! Чувствуй, как мой [npc1.tentacle] глубоко скользит в твой милый сосок!",
+										"Твой милый сосок так приятно сжимает мой [npc1.tentacle]!"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck! Your tits feel so good to fuck!",
-										"Oh yes! Take my [npc1.tentacle] deep into your nipple!",
-										"Your tits were made for my [npc1.tentacle]!"));
+										"Блять! Твои сиськи так охеренно трахать!",
+										"О да! Заглатывай мой [npc1.tentacle] глубоко в сосок!",
+										"Твои сиськи были созданы для моей [npc1.tentacle]!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"That's right slut, take my [npc1.tentacle]! Feel it pushing deep into your nipple!",
-										"What a horny bitch! Taking my [npc1.tentacle] deep into your tit like a slut!",
-										"You feel that, fuck toy?! Do you feel my [npc1.tentacle] sinking deep into your slutty little nipple?!"));
+										"Вот так, шлюшка, принимай мой [npc1.tentacle]! Чувствуй, как он вжимается глубоко в твой сосок!",
+										"Какая похотливая сучка! Заглатываешь мой [npc1.tentacle] глубоко в грудь, прямо как настоящая шлюха!",
+										"Чувствуешь это, шлюшка?! Чувствуешь, как мой [npc1.tentacle] глубоко входит в твой сучий сосок?!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Use my [npc1.tentacle]! I love your tits!",
-										"Don't stop! Harder! Fuck me! Yes, yes, yes!",
-										"Oh yes! Use me! I love your tits!"));
+										"Да! Используй мою [npc1.tentacle]! Обожаю твои сиськи!",
+										"Не останавливайся! Сильнее! Трахни меня! Да, да, да!",
+										"О да! Используй меня! Обожаю твои сиськи!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Fuck me!",
-										"Don't stop! Fuck me!",
-										"Oh yes! Fuck me!"));
+										"Да! Трахни меня!",
+										"Не останавливайся! Трахни меня!",
+										"О да! Трахни меня!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! I don't want to do this!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Я не хочу этого делать!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 							default:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck me! Yes! Harder!",
-										"Oh yeah! Fuck me!",
-										"Harder! Don't stop!"));
+										"Трахни меня! Да! Сильнее!",
+										"О да! Трахни меня!",
+										"Сильнее! Не останавливайся!"));
 								break;
 						}
 						break;
@@ -14454,45 +14359,45 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Good [npc2.girl]! Feel my [npc1.tentacle] slide deep into your [npc2.crotchNipple]!",
-										"That's right, be a good [npc2.girl] and moan for me! Feel my [npc1.tentacle] sliding deep into your cute little [npc2.crotchNipple]!",
-										"Your cute little [npc2.crotchNipple] feels so good squeezing down around my [npc1.tentacle]!"));
+										"Отличный [npc2.girl]! Чувствуй, как мой [npc1.tentacle] скользит глубоко в твою [npc2.crotchNipple]!",
+										"Вот так, будь хорошей [npc2.girl] и стони для меня! Чувствуй, как мой [npc1.tentacle] глубоко входит в твою милую маленькую [npc2.crotchNipple]!",
+										"Твоя милая маленькая [npc2.crotchNipple] так приятно сжимает мой [npc1.tentacle]!"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck! Your [npc2.crotchNipple] feels so good to fuck!",
-										"Oh yes! Take my [npc1.tentacle] deep into your [npc2.crotchNipple]!",
-										"Your [npc2.crotchNipples] were made for my [npc1.tentacle]!"));
+										"Блядь! Твой [npc2.crotchNipple] так охеренно трахать!",
+										"О да! Принимай мой [npc1.tentacle] глубоко в свою [npc2.crotchNipple]!",
+										"Твои [npc2.crotchNipples] были созданы для моего [npc1.tentacle]!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"That's right slut, take my [npc1.tentacle]! Feel it pushing deep into your [npc2.crotchNipple]!",
-										"What a horny bitch! Taking my [npc1.tentacle] deep into your [npc2.crotchNipple] like a slut!",
-										"You feel that, fuck toy?! Do you feel my [npc1.tentacle] sinking deep into your slutty little [npc2.crotchNipple]?!"));
+										"Вот так, шлюха, принимай мой [npc1.tentacle]! Чувствуй, как он глубоко входит в твою [npc2.crotchNipple]!",
+										"Какая похотливая сучка! Заглатываешь мой [npc1.tentacle] глубоко в свою [npc2.crotchNipple], прямо как настоящая шлюха!",
+										"Чувствуешь это, шлюшка?! Чувствуешь, как мой [npc1.tentacle] глубоко входит в твою сучью маленькую [npc2.crotchNipple]?!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Use my [npc1.tentacle]! I love your [npc2.crotchNipples]!",
-										"Don't stop! Harder! Fuck me! Yes, yes, yes!",
-										"Oh yes! Use me! I love your [npc2.crotchNipples]!"));
+										"Да! Используй мой [npc1.tentacle]! Обожаю твою [npc2.crotchNipples]!",
+										"Не останавливайся! Сильнее! Трахни меня! Да, да, да!",
+										"О да! Используй меня! Обожаю твою [npc2.crotchNipples]!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Fuck me!",
-										"Don't stop! Fuck me!",
-										"Oh yes! Fuck me!"));
+										"Да! Трахни меня!",
+										"Не останавливайся! Трахни меня!",
+										"О да! Трахни меня!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! I don't want to do this!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Я не хочу этого делать!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 							default:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck me! Yes! Harder!",
-										"Oh yeah! Fuck me!",
-										"Harder! Don't stop!"));
+										"Трахни меня! Да! Сильнее!",
+										"О да! Трахни меня!",
+										"Сильнее! Не останавливайся!"));
 								break;
 						}
 						break;
@@ -14506,45 +14411,45 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Good [npc2.girl]! Feel my [npc1.tentacle] slide deep into your little pussy!",
-										"That's right, be a good [npc2.girl] and moan for me! Feel my [npc1.tentacle] sliding deep into your cute little cunt!",
-										"Your cute little cunt feels so good squeezing down around my [npc1.tentacle]!"));
+										"Молодец, [npc2.girl]! Чувствуй, как мой [npc1.tentacle] глубоко входит в твою киску!",
+										"Вот так, будь хорошей [npc2.girl] и стони для меня! Чувствуй, как мой [npc1.tentacle] скользит глубоко в твою милую крошечную щелку!",
+										"Твоя милая щелка так сладко сжимает мой [npc1.tentacle]!"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck! Your pussy feels so good!",
-										"Oh yes! Take my [npc1.tentacle]! Take it deep!",
-										"Your pussy was made for a good tentacle-fucking!"));
+										"Блядь! Твоя киска чертовски хороша!",
+										"О да! Принимай мой [npc1.tentacle]! Глотай его глубоко!",
+										"Твоя киска была создана для того, чтобы ее трахали щупальца!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"That's right slut, feel my [npc1.tentacle] pushing deep into your worthless little cunt! Your pussy belongs to me!",
-										"What a horny bitch! Now moan for me as I fuck you with my tentacle!",
-										"You feel that, fuck toy?! Do you feel my [npc1.tentacle] sinking deep into your slutty little cunt?!"));
+										"Вот так, шлюшка, чувствуй, как мой [npc1.tentacle] вжимается глубоко в твою никчемную щелку! Твоя киска принадлежит мне!",
+										"Какая похотливая сучка! А теперь стони для меня, пока я трахаю тебя своим щупальцем!",
+										"Чувствуешь это, секс-игрушка?! Чувствуешь, как мой [npc1.tentacle] погружается глубоко в твою шлюшью щелку?!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Use my [npc1.tentacle]! I love your pussy!",
-										"Don't stop! Harder! Fuck me! Yes, yes, yes!",
-										"Oh yes! Use me! I love your pussy!"));
+										"Да! Используй мой [npc1.tentacle]! Обожаю твою киску!",
+										"Не останавливайся! Сильнее! Трахни меня! Да, да, да!",
+										"О да! Используй меня! Обожаю твою киску!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Fuck me!",
-										"Don't stop! Fuck me!",
-										"Oh yes! Fuck me!"));
+										"Да! Трахни меня!",
+										"Не останавливайся! Трахни меня!",
+										"О да! Трахни меня!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! I don't want to do this!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Я не хочу этого делать!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 							default:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck me! Yes! Harder!",
-										"Oh yeah! Fuck me!",
-										"Harder! Don't stop!"));
+										"Трахни меня! Да! Сильнее!",
+										"О да! Трахни меня!",
+										"Сильнее! Не останавливайся!"));
 								break;
 						}
 						break;
@@ -14552,45 +14457,45 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Good [npc2.girl]! Feel my [npc1.tentacle] slide deep into your little spinneret!",
-										"That's right, be a good [npc2.girl] and moan for me! Feel my [npc1.tentacle] sliding deep into your cute little spinneret!",
-										"Your cute little spinneret feels so good squeezing down around my [npc1.tentacle]!"));
+										"Молодец, [npc2.girl]! Чувствуй, как мой [npc1.tentacle] глубоко входит в твой крошечный паучий аппарат!",
+										"Вот так, будь хорошей [npc2.girl] и стони для меня! Чувствуй, как мой [npc1.tentacle] скользит глубоко в твой милый маленький паутинный аппарат!",
+										"Твой милый маленький паутинный аппарат так приятно сжимает мой [npc1.tentacle]!"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck! Your spinneret feels so good!",
-										"Oh yes! Take my [npc1.tentacle]! Take it deep!",
-										"Your spinneret was made for a good tentacle-fucking!"));
+										"Блядь! Твой паутинный орган — это просто кайф!",
+										"О да! Принимай мой [npc1.tentacle]! Глотай его глубоко!",
+										"Твой паутинный аппарат был создан для качественного траха через щупальца!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"That's right slut, feel my [npc1.tentacle] pushing deep into your worthless little spinneret! You belong to me!",
-										"What a horny bitch! Now moan for me as I fuck you with my tentacle!",
-										"You feel that, fuck toy?! Do you feel my [npc1.tentacle] sinking deep into your slutty little spinneret?!"));
+										"Вот так, шлюшка, чувствуй, как мой [npc1.tentacle] вжимается глубоко в твой никчемный паутинный аппарат! Ты принадлежишь мне!",
+										"Какая похотливая сучка! А теперь стони для меня, пока я трахаю тебя своим щупальцем!",
+										"Чувствуешь это, секс-игрушка?! Чувствуешь, как мой [npc1.tentacle] погружается глубоко в твой шлюшковатый паутинный аппарат?!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Use my [npc1.tentacle]! I love your spinneret!",
-										"Don't stop! Harder! Fuck me! Yes, yes, yes!",
-										"Oh yes! Use me! I love your spinneret!"));
+										"Да! Используй мой [npc1.tentacle]! Обожаю твой паутинный аппарат!",
+										"Не останавливайся! Сильнее! Трахни меня! Да, да, да!",
+										"О да! Используй меня! Обожаю твоё брюшко!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Fuck me!",
-										"Don't stop! Fuck me!",
-										"Oh yes! Fuck me!"));
+										"Да! Трахни меня!",
+										"Не останавливайся! Трахни меня!",
+										"О да! Трахни меня!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! I don't want to do this!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Я не хочу этого делать!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 							default:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck me! Yes! Harder!",
-										"Oh yeah! Fuck me!",
-										"Harder! Don't stop!"));
+										"Трахни меня! Да! Сильнее!",
+										"О да! Трахни меня!",
+										"Сильнее! Не останавливайся!"));
 								break;
 						}
 						break;
@@ -14620,21 +14525,21 @@ public abstract class GameCharacter implements XMLSaving {
 				case SUB_EAGER:
 				case SUB_NORMAL:
 					availableLines.add(UtilText.returnStringAtRandom(
-							"Your pussy feels so good!",
-							"You like the feel of my pussy rubbing over yours?",
-							"That's it, push your pussy back against mine!"));
+							"Твоя киска — это просто блаженство!",
+							"Тебе нравится, как моя киска трется о твою?",
+							"Вот так, прижимай свою киску к моей!"));
 					break;
 				case DOM_ROUGH:
 					availableLines.add(UtilText.returnStringAtRandom(
-							"Your dirty little cunt feels so good!",
-							"You like the feel of my pussy rubbing over your slutty cunt?",
-							"That's it, bitch, push your pussy back against mine!"));
+							"Твоя грязная маленькая щелка так хороша!",
+							"Тебе нравится, как моя киска трется о твою шлюшью щелку?",
+							"Вот так, сучка, прижимай свою киску к моей!"));
 					break;
 				case SUB_RESISTING:
 					availableLines.add(UtilText.returnStringAtRandom(
-							"I don't want to do this! Please let me stop!",
-							"Let me go! I don't want to do this!",
-							"Please! Stop! I don't want this!"));
+							"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+							"Отпусти меня! Я не хочу этого делать!",
+							"Пожалуйста! Остановись! Я этого не хочу!"));
 					break;
 			}
 		}
@@ -14648,45 +14553,45 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Good [npc2.girl]! Feel my [npc1.clit] slide deep into your ass!",
-										"That's right, be a good [npc2.girl] and moan for me! Feel my [npc1.clit] sliding deep into your hot ass!",
-										"Your ass feels so good squeezing down around my [npc1.clit]!"));
+										"Хорошая [npc2.girl]! Чувствуй, как мой [npc1.clit] глубоко входит в твою задницу!",
+										"Верно, будь хорошей [npc2.girl] и стони для меня! Чувствуй, как мой [npc1.clit] глубоко скользит в твою горячую задницу!",
+										"Твоя задница так сладко сжимает мой [npc1.clit]!"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck! Your ass feels so good!",
-										"Oh yes! Take my clit! Take it deep!",
-										"Your ass was made for my clit!"));
+										"Блять! Твоя задница просто охрененная!",
+										"О да! Принимай мой клитор! Глотай его глубоко!",
+										"Твоя задница была создана для моего клитора!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"That's right slut, take my clit! Your ass belongs to me!",
-										"What a horny bitch! Take my clit you filthy little butt-slut!",
-										"You feel that, fuck toy?! Do you feel my clit sinking deep into your slutty little ass?!"));
+										"Вот так, шлюшка, принимай мой клитор! Твоя задница принадлежит мне!",
+										"Какая похотливая сучка! Принимай мой клитор, грязная маленькая жопошлюшка!",
+										"Чувствуешь это, секс-игрушка?! Чувствуешь, как мой клитор глубоко впивается в твою шлюшью задницу?!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Use my clit! I love your ass!",
-										"Don't stop! Harder! Use my clit! Yes, yes, yes!",
-										"Oh yes! Use me! I love your ass!"));
+										"Да! Трой мой клитор! Обожаю твою задницу!",
+										"Не останавливайся! Сильнее! Трой мой клитор! Да, да, да!",
+										"О да! Используй меня! Обожаю твою задницу!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Fuck me!",
-										"Don't stop! Fuck me!",
-										"Oh yes! Fuck me!"));
+										"Да! Трахни меня!",
+										"Не останавливайся! Трахни меня!",
+										"О да! Трахни меня!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! I don't want to do this!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Я не хочу этого делать!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 							default:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck me! Yes! Harder!",
-										"Oh yeah! Fuck me!",
-										"Harder! Don't stop!"));
+										"Трахни меня! Да! Сильнее!",
+										"О да! Трахни меня!",
+										"Сильнее! Не останавливайся!"));
 								break;
 						}
 						break;
@@ -14696,45 +14601,45 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Good [npc2.girl]! Feel my clit slide up between your [npc2.breasts]!",
-										"That's right, be a good [npc2.girl] and moan for me! Feel my [npc1.clit] sliding up between your [npc2.breasts+]!",
-										"Your [npc2.breasts] feel so good squeezing down around my [npc1.clit]!"));
+										"Хороший [npc2.girl]! Чувствуй, как мой клитор скользит между твоих [npc2.breasts]!",
+										"Вот так, будь хорошим [npc2.girl] и стони для меня! Чувствуй, как мой [npc1.clit] скользит между твоих [npc2.breasts+]!",
+										"Твои [npc2.breasts] так приятно сжимают мой [npc1.clit]!"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck! Your tits feel so good to fuck!",
-										"Oh yes! Wrap your tits around my clit!",
-										"Your tits were made for my clit!"));
+										"Блять! Твои сиськи так охеренно трахать!",
+										"О да! Окутай мой клитор своими сиськами!",
+										"Твои сиськи были созданы для моего клитора!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"That's right slut, pleasure my clit! Push your tits together and make this good for me!",
-										"What a horny bitch! Using your tits to please my clit like a desperate slut!",
-										"You like this, fuck toy?! Squeezing your [npc2.breasts] around my clit and pleasing me like the slut you are?!"));
+										"Вот так, шлюшка, доставляй удовольствие моему клитору! Сжимай сиськи вместе, чтобы мне было еще лучше!",
+										"Ну и похотливая сучка! Используешь свои сиськи, чтобы ласкать мой клитор, как отчаянная шлюха!",
+										"Тебе это нравится, секс-игрушка?! Сжимать твои [npc2.breasts] вокруг моего клитора и ублажать меня, как настоящую шлюху?!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Use my clit! I love your tits!",
-										"Don't stop! Harder! Fuck me! Yes, yes, yes!",
-										"Oh yes! Use me! I love your tits!"));
+										"Да! Трахни мой клитор! Обожаю твои сиськи!",
+										"Не останавливайся! Сильнее! Трахни меня! Да, да, да!",
+										"О да! Используй меня! Обожаю твои сиськи!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Fuck me!",
-										"Don't stop! Fuck me!",
-										"Oh yes! Fuck me!"));
+										"Да! Трахни меня!",
+										"Не останавливайся! Трахни меня!",
+										"О да! Трахни меня!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! Get off my clit!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Убери от моего клитора!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 							default:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck me! Yes! Harder!",
-										"Oh yeah! Fuck me!",
-										"Harder! Don't stop!"));
+										"Трахни меня! Да! Сильнее!",
+										"О да! Трахни меня!",
+										"Сильнее! Не останавливайся!"));
 								break;
 						}
 						break;
@@ -14742,45 +14647,45 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Good [npc2.girl]! Feel my [npc1.clit] slide up between your [npc2.crotchBoobs]!",
-										"That's right, be a good [npc2.girl] and moan for me! Feel my [npc1.clit] sliding up between your [npc2.crotchBoobs+]!",
-										"Your [npc2.crotchBoobs] feel so good squeezing down around my [npc1.clit]!"));
+										"Хороший [npc2.girl]! Чувствуй, как мой [npc1.clit] скользит между твоих [npc2.crotchBoobs]!",
+										"Вот так, будь хорошей [npc2.girl] и стони для меня! Чувствуй, как мой [npc1.clit] скользит между твоих [npc2.crotchBoobs+]!",
+										"Твои [npc2.crotchBoobs] так приятно сжимаются вокруг моего [npc1.clit]!"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck! Your [npc2.crotchBoobs] feel so good to fuck!",
-										"Oh yes! Wrap your [npc2.crotchBoobs] around my [npc1.clit]!",
-										"Your [npc2.crotchBoobs] were made for my [npc1.clit]!"));
+										"Блядь! Твоими [npc2.crotchBoobs] так охеренно трахаться!",
+										"О да! Окутай мой [npc1.clit] своими [npc2.crotchBoobs]!",
+										"Твои [npc2.crotchBoobs] были созданы для моего [npc1.clit]!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"That's right slut, pleasure my [npc1.clit]! Push your [npc2.crotchBoobs] together and make this good for me!",
-										"What a horny bitch! Using your [npc2.crotchBoobs] to please my [npc1.clit] like a desperate slut!",
-										"You like this, fuck toy?! Squeezing your [npc2.crotchBoobs] around my [npc1.clit] and pleasing me like the slut you are?!"));
+										"Вот так, шлюшка, доставляй удовольствие моему [npc1.clit]! Сжимай свои [npc2.crotchBoobs] вместе, чтобы мне было хорошо!",
+										"Какая похотливая сучка! Используешь свои [npc2.crotchBoobs], чтобы ублажать мой [npc1.clit], словно отчаянная шлюха!",
+										"Тебе нравится это, секс-игрушка?! Сжимать твои [npc2.crotchBoobs] вокруг моего [npc1.clit] и ублажать тебя, как настоящую шлюху?!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Use my [npc1.clit]! I love your [npc2.crotchBoobs]!",
-										"Don't stop! Harder! Fuck me! Yes, yes, yes!",
-										"Oh yes! Use me! I love your [npc2.crotchBoobs]!"));
+										"Да! Используй мой [npc1.clit]! Обожаю твой [npc2.crotchBoobs]!",
+										"Не останавливайся! Сильнее! Трахни меня! Да, да, да!",
+										"О да! Используй меня! Обожаю твой [npc2.crotchBoobs]!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Fuck me!",
-										"Don't stop! Fuck me!",
-										"Oh yes! Fuck me!"));
+										"Да! Трахни меня!",
+										"Не останавливайся! Трахни меня!",
+										"О да! Трахни меня!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! Get off my [npc1.clit]!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Слезь с моего [npc1.clit]!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 							default:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck me! Yes! Harder!",
-										"Oh yeah! Fuck me!",
-										"Harder! Don't stop!"));
+										"Трахни меня! Да! Сильнее!",
+										"О да! Трахни меня!",
+										"Сильнее! Не останавливайся!"));
 								break;
 						}
 						break;
@@ -14788,45 +14693,45 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Good [npc2.girl], keep sucking my clit!",
-										"That's right, use your [npc2.tongue] as well! You're good at sucking clit!",
-										"What a good [npc2.girl]! You love sucking my clit, don't you?"));
+										"Хороший [npc2.girl], продолжай сосать мой клитор!",
+										"Вот так, используй и свой [npc2.tongue] тоже! Ты отлично сосёшь клитор!",
+										"Какой хороший [npc2.girl]! Тебе ведь нравится сосать мой клитор, правда?"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"You're good at sucking clit!",
-										"Oh yeah! Keep sucking my clit!",
-										"Use your tongue as well! Yeah, like that!"));
+										"Ты отлично сосёшь клитор!",
+										"О да! Продолжай сосать мой клитор!",
+										"И языком тоже пользуйся! Да, вот так!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Come on you slut! You can suck clit better than that!",
-										"That's right bitch! Take my clit deep down your throat!",
-										"Put some effort into it slut! You can suck clit better than that!"));
+										"Давай же, шлюшка! Ты можешь сосать клитор лучше!",
+										"Вот так, сучка! Заглатывай мой клитор поглубже в глотку!",
+										"Приложи побольше усилий, шлюшка! Ты можешь сосать клитор лучше!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Keep sucking my clit! Just like that!",
-										"Oh yes! Wrap those lips of yours around my clit! Keep going!",
-										"Keep sucking my clit! Yes! Just like that!"));
+										"Да! Соси мой клитор! Вот так!",
+										"О да! Обхвати мой клитор своими губками! Продолжай!",
+										"Соси мой клитор! Да! Вот так!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Keep sucking my clit!",
-										"Wrap those lips of yours around my clit! Keep going!",
-										"Keep sucking my clit! Yes!"));
+										"Да! Продолжай сосать мой клитор!",
+										"Обхвати мой клитор своими губками! Не останавливайся!",
+										"Соси мой клитор! Да!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! Get off my clit!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Убери от моего клитора!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 							default:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck me! Yes! Harder!",
-										"Oh yeah! Fuck me!",
-										"Harder! Don't stop!"));
+										"Трахни меня! Да! Сильнее!",
+										"О да! Трахни меня!",
+										"Сильнее! Не останавливайся!"));
 								break;
 						}
 						break;
@@ -14834,45 +14739,45 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Good [npc2.girl]! Feel my clit slide deep into your breast!",
-										"That's right, be a good [npc2.girl] and moan for me! Feel my [npc1.clit] sliding deep into your cute little nipple!",
-										"Your cute little nipple feels so good squeezing down around my [npc1.clit]!"));
+										"Хорошая [npc2.girl]! Чувствуй, как мой клитор глубоко заходит тебе в грудь!",
+										"Вот так, будь послушной [npc2.girl] и стони для меня! Чувствуй, как мой [npc1.clit] глубоко заходит тебе в милый сосок!",
+										"Твой милый сосок так приятно сжимает мой [npc1.clit]!"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck! Your tits feel so good to fuck!",
-										"Oh yes! Take my clit! Take it deep!",
-										"Your tits were made for my clit!"));
+										"Блять! Твои сиськи так охеренно трахать!",
+										"О да! Принимай мой клитор! Глотай его глубоко!",
+										"Твои сиськи были созданы для моего клитора!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"That's right slut, take my clit! Feel it pushing deep into your nipple!",
-										"What a horny bitch! Taking my clit deep into your tit like a slut!",
-										"You feel that, fuck toy?! Do you feel my clit sinking deep into your slutty little nipple?!"));
+										"Вот так, шлюшка, принимай мой клитор! Чувствуй, как он глубоко вжимается в твой сосок!",
+										"Какая же похотливая сучка! Заглатываешь мой клитор глубоко в грудь, как настоящая шлюха!",
+										"Чувствуешь это, секс-игрушка?! Чувствуешь, как мой клитор глубоко уходит в твой шлюшевый сосок?!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Use my clit! I love your tits!",
-										"Don't stop! Harder! Fuck me! Yes, yes, yes!",
-										"Oh yes! Use me! I love your tits!"));
+										"Да! Трахни мой клитор! Обожаю твои сиськи!",
+										"Не останавливайся! Сильнее! Трахни меня! Да, да, да!",
+										"О да! Используй меня! Обожаю твои сиськи!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Fuck me!",
-										"Don't stop! Fuck me!",
-										"Oh yes! Fuck me!"));
+										"Да! Трахни меня!",
+										"Не останавливайся! Трахни меня!",
+										"О да! Трахни меня!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! Get off my clit!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Убери от моего клитора!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 							default:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck me! Yes! Harder!",
-										"Oh yeah! Fuck me!",
-										"Harder! Don't stop!"));
+										"Трахни меня! Да! Сильнее!",
+										"О да! Трахни меня!",
+										"Сильнее! Не останавливайся!"));
 								break;
 						}
 						break;
@@ -14880,45 +14785,45 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Good [npc2.girl]! Feel my [npc1.clit] slide deep into your [npc2.crotchNipple]!",
-										"That's right, be a good [npc2.girl] and moan for me! Feel my [npc1.clit] sliding deep into your cute little [npc2.crotchNipple]!",
-										"Your cute little [npc2.crotchNipple] feels so good squeezing down around my [npc1.clit]!"));
+										"Хорошая [npc2.girl]! Чувствуй, как мой [npc1.clit] глубоко скользит в твою [npc2.crotchNipple]!",
+										"Вот так, будь хорошей [npc2.girl] и стони для меня! Чувствуй, как мой [npc1.clit] глубоко скользит в твою милую маленькую [npc2.crotchNipple]!",
+										"Твоя милая маленькая [npc2.crotchNipple] так приятно сжимает мой [npc1.clit]!"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck! Your [npc2.crotchNipple] feels so good to fuck!",
-										"Oh yes! Take my [npc1.clit] deep into your [npc2.crotchNipple]!",
-										"Your [npc2.crotchNipples] were made for my [npc1.clit]!"));
+										"Блядь! Твой [npc2.crotchNipple] так охеренно трахать!",
+										"О да! Принимай мой [npc1.clit] глубоко в свою [npc2.crotchNipple]!",
+										"Твои [npc2.crotchNipples] были созданы для моего [npc1.clit]!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"That's right slut, take my [npc1.clit]! Feel it pushing deep into your [npc2.crotchNipple]!",
-										"What a horny bitch! Taking my [npc1.clit] deep into your [npc2.crotchNipple] like a slut!",
-										"You feel that, fuck toy?! Do you feel my [npc1.clit] sinking deep into your slutty little [npc2.crotchNipple]?!"));
+										"Вот так, шлюшка, принимай мой [npc1.clit]! Чувствуй, как он глубоко вжимается в твою [npc2.crotchNipple]!",
+										"Какая же похотливая сучка! Заглатываешь мой [npc1.clit] глубоко в свою [npc2.crotchNipple], словно шлюха!",
+										"Чувствуешь это, секс-игрушка?! Чувствуешь, как мой [npc1.clit] глубоко погружается в твою шлюшеву маленькую [npc2.crotchNipple]?!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Use my [npc1.clit]! I love your [npc2.crotchNipples]!",
-										"Don't stop! Harder! Fuck me! Yes, yes, yes!",
-										"Oh yes! Use me! I love your [npc2.crotchNipples]!"));
+										"Да! Используй мой [npc1.clit]! Обожаю твою [npc2.crotchNipples]!",
+										"Не останавливайся! Сильнее! Трахни меня! Да, да, да!",
+										"О да! Используй меня! Обожаю твою [npc2.crotchNipples]!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Fuck me!",
-										"Don't stop! Fuck me!",
-										"Oh yes! Fuck me!"));
+										"Да! Трахни меня!",
+										"Не останавливайся! Трахни меня!",
+										"О да! Трахни меня!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! I don't want to do this!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Я не хочу этого делать!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 							default:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck me! Yes! Harder!",
-										"Oh yeah! Fuck me!",
-										"Harder! Don't stop!"));
+										"Трахни меня! Да! Сильнее!",
+										"О да! Трахни меня!",
+										"Сильнее! Не останавливайся!"));
 								break;
 						}
 						break;
@@ -14932,45 +14837,45 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Good [npc2.girl]! Feel my [npc1.clit] slide deep into your little pussy!",
-										"That's right, be a good [npc2.girl] and moan for me! Feel my [npc1.clit] sliding deep into your cute little cunt!",
-										"Your cute little cunt feels so good squeezing down around my [npc1.clit]!"));
+										"Хорошая [npc2.girl]! Чувствуй, как моя [npc1.clit] глубоко входит в твою киску!",
+										"Вот так, будь послушной [npc2.girl] и стони для меня! Чувствуй, как моя [npc1.clit] глубоко скользит в твою милую крошечную щелку!",
+										"Твоя милая щелка так сладко сжимает мой [npc1.clit]!"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck! Your pussy feels so good!",
-										"Oh yes! Take my clit! Take it deep!",
-										"Your pussy was made for my clit!"));
+										"Блядь! Твоя киска чертовски хороша!",
+										"О да! Принимай мой клитор! Глотай его глубоко!",
+										"Твоя киска была создана для моего клитора!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"That's right slut, take my clit! Your pussy belongs to me!",
-										"What a horny bitch! Take my clit you slut!",
-										"You feel that, fuck toy?! Do you feel my clit sinking deep into your slutty little cunt?!"));
+										"Вот так, шлюшка, принимай мой клитор! Твоя киска принадлежит мне!",
+										"Ну и похотливая сучка! Хватай мой клитор, шлюха!",
+										"Чувствуешь это, секс-игрушка?! Чувствуешь, как мой клитор глубоко погружается в твою шлюшью щелку?!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Use my clit! I love your pussy!",
-										"Don't stop! Harder! Fuck me! Yes, yes, yes!",
-										"Oh yes! Use me! I love your pussy!"));
+										"Да! Используй мой клитор! Обожаю твою киску!",
+										"Не останавливайся! Сильнее! Трахни меня! Да, да, да!",
+										"О да! Используй меня! Обожаю твою киску!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Fuck me!",
-										"Don't stop! Fuck me!",
-										"Oh yes! Fuck me!"));
+										"Да! Трахни меня!",
+										"Не останавливайся! Трахни меня!",
+										"О да! Трахни меня!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! I don't want to do this!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Я не хочу этого делать!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 							default:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck me! Yes! Harder!",
-										"Oh yeah! Fuck me!",
-										"Harder! Don't stop!"));
+										"Трахни меня! Да! Сильнее!",
+										"О да! Трахни меня!",
+										"Сильнее! Не останавливайся!"));
 								break;
 						}
 						break;
@@ -14978,45 +14883,45 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Good [npc2.girl]! Feel my [npc1.clit] slide deep into your little spinneret!",
-										"That's right, be a good [npc2.girl] and moan for me! Feel my [npc1.clit] sliding deep into your cute little spinneret!",
-										"Your cute little spinneret feels so good squeezing down around my [npc1.clit]!"));
+										"Хорошая [npc2.girl]! Чувствуй, как моя [npc1.clit] глубоко входит в твой крошечный паутинный аппарат!",
+										"Вот так, будь хорошей [npc2.girl] и стони для меня! Чувствуй, как мой [npc1.clit] входит глубоко в твой милый маленький паутинный орган!",
+										"Твой милый маленький паутинный орган так сладко сжимает мой [npc1.clit]!"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck! Your spinneret feels so good!",
-										"Oh yes! Take my clit! Take it deep!",
-										"Your spinneret was made for my clit!"));
+										"Блядь! Твой паутинный орган — это просто кайф!",
+										"О да! Принимай мой клитор! Глотай его глубоко!",
+										"Твой паутинный орган был создан для моего клитора!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"That's right slut, take my clit! Your spinneret belongs to me!",
-										"What a horny bitch! Take my clit you slut!",
-										"You feel that, fuck toy?! Do you feel my clit sinking deep into your slutty little spinneret?!"));
+										"Вот так, шлюшка, принимай мой клитор! Твой паутинный орган принадлежит мне!",
+										"Ну и похотливая сучка! Хватай мой клитор, шлюха!",
+										"Чувствуешь это, секс-игрушка?! Чувствуешь, как мой клитор погружается глубоко в твой шлюшковатый паутинный орган?!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Use my clit! I love your spinneret!",
-										"Don't stop! Harder! Fuck me! Yes, yes, yes!",
-										"Oh yes! Use me! I love your spinneret!"));
+										"Да! Используй мой клитор! Обожаю твой паутинный орган!",
+										"Не останавливайся! Сильнее! Трахни меня! Да, да, да!",
+										"О да! Используй меня! Обожаю твоё брюшко!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Fuck me!",
-										"Don't stop! Fuck me!",
-										"Oh yes! Fuck me!"));
+										"Да! Трахни меня!",
+										"Не останавливайся! Трахни меня!",
+										"О да! Трахни меня!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! I don't want to do this!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Я не хочу этого делать!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 							default:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck me! Yes! Harder!",
-										"Oh yeah! Fuck me!",
-										"Harder! Don't stop!"));
+										"Трахни меня! Да! Сильнее!",
+										"О да! Трахни меня!",
+										"Сильнее! Не останавливайся!"));
 								break;
 						}
 						break;
@@ -15047,45 +14952,45 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Good [npc2.girl], you love feeling my [npc1.toes] deep in your ass, don't you?",
-										"I love foot-fucking cute little asses like yours!",
-										"What a good [npc2.girl]! Your ass loves the feeling of my [npc1.toes], doesn't it?"));
+										"Хорошая [npc2.girl], тебе ведь нравится чувствовать мой [npc1.toes] глубоко в своей заднице, правда?",
+										"Обожаю футфидинг таких милых маленьких попок, как твоя!",
+										"Какая послушная [npc2.girl]! Твоя задница обожает ощущения от моего [npc1.toes], не так ли?"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"You love the feeling of my [npc1.toes] deep in your ass, don't you?!",
-										"I love foot-fucking cute little asses like yours!",
-										"You like it when I curl my [npc1.toes] up inside your ass, like <i>this</i>?!"));
+										"Тебе ведь нравится чувствовать мой [npc1.toes] глубоко в своей заднице, правда?!",
+										"Обожаю футфидинг таких милых маленьких попок, как твоя!",
+										"Тебе нравится, когда мой [npc1.toes] сворачивается у тебя в заднице, вот так, <i>вот</i>?!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"What a dirty slut! I can feel your horny little ass clenching down on my [npc1.toes]!",
-										"You love this, don't you bitch?! Feeling my [npc1.toes] pushing deep into your slutty little asshole!",
-										"That's right slut! You love having my [npc1.toes] stuffed deep in your slutty ass!"));
+										"Какая грязная шлюшка! Я чувствую, как твоя похотливая дырочка сжимается вокруг моего [npc1.toes]!",
+										"Тебе ведь это нравится, сучка?! Чувствовать, как мой [npc1.toes] глубоко вжимается в твой шлюшковатый анус!",
+										"Именно так, шлюшка! Тебе обожаемо, когда мой [npc1.toes] забит глубоко в твою шлюшковатую задницу!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Let me get my toes deep inside your ass!",
-										"I love giving your ass the attention it deserves!",
-										"I love foot-fucking your ass!"));
+										"Да! Позволь мне засунуть пальцы ног поглубже в твою задницу!",
+										"Обожаю уделять твоей заднице должное внимание!",
+										"Обожаю трахать твою задницу ногами!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I love foot-fucking your ass!",
-										"I love giving your ass the attention it deserves!",
-										"I love foot-fucking your ass!"));
+										"Обожаю трахать твою задницу ногами!",
+										"Обожаю уделять твоей заднице должное внимание!",
+										"Обожаю трахать твою задницу ногами!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! I don't want to do this!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Я не хочу этого делать!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 							default:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck!",
-										"Yeah!",
-										"Oh yeah!"));
+										"Блядь!",
+										"Да!",
+										"О да!"));
 								break;
 						}
 						break;
@@ -15095,45 +15000,45 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Good [npc2.girl], you love having your [npc2.breasts] fondled like this, don't you?",
-										"I love your [npc2.breasts]!",
-										"What a good [npc2.girl]! Your tits love the feeling of my [npc1.toes], don't they?"));
+										"Хороший [npc2.girl], тебе ведь нравится, когда твой [npc2.breasts] так ласкают, правда?",
+										"Обожаю твой [npc2.breasts]!",
+										"Какая отличная [npc2.girl]! Твоим сиськам так нравится ощущение моей [npc1.toes], правда?"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"You love the feeling of having your [npc2.breasts] fondled, don't you?!",
-										"I love your [npc2.breasts+]!",
-										"You like it when I press my [npc1.toes] into your [npc2.breasts], like <i>this</i>?!"));
+										"Тебе ведь нравится, когда твоими [npc2.breasts] ласкают, а?!",
+										"Обожаю твои [npc2.breasts+]!",
+										"Тебе нравится, когда я вжимаю свою [npc1.toes] в твои [npc2.breasts], вот <i>так</i>?!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"What a dirty slut! Moaning as I grope your [npc2.breasts+]!",
-										"You love this, don't you bitch?! Having your [npc2.breasts] groped and fondled like <i>this</i>!",
-										"That's right slut! Your [npc2.breasts+] are mine to use however I want!"));
+										"Что за грязная шлюшка! Стонешь, пока я тискаю твои [npc2.breasts+]!",
+										"Тебе ведь это нравится, сучка?! Когда твои [npc2.breasts] ласкают и тискают вот <i>так</i>!",
+										"Вот так, шлюшка! Твои [npc2.breasts+] принадлежат мне, и я буду делать с ними всё, что захочу!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! I love the feel of your [npc2.breasts]!",
-										"I love giving your tits the attention they deserve!",
-										"I love your [npc2.breasts]!"));
+										"Да! Обожаю ощущение твоих [npc2.breasts]!",
+										"Обожаю уделять твоим сиськам должное внимание!",
+										"Обожаю твой [npc2.breasts]!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! I love the feel of your [npc2.breasts]!",
-										"I love giving your tits the attention they deserve!",
-										"I love your [npc2.breasts]!"));
+										"Да! Обожаю ощущение твоих [npc2.breasts]!",
+										"Обожаю уделять твоим сиськам должное внимание!",
+										"Обожаю твой [npc2.breasts]!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! I don't want to do this!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Я не хочу этого делать!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 							default:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck!",
-										"Yeah!",
-										"Oh yeah!"));
+										"Блядь!",
+										"Да!",
+										"О да!"));
 								break;
 						}
 						break;
@@ -15141,45 +15046,45 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Good [npc2.girl], you love having your [npc2.crotchBoobs] fondled like this, don't you?",
-										"I love your [npc2.crotchBoobs]!",
-										"What a good [npc2.girl]! Your [npc2.crotchBoobs] love the feeling of my [npc1.toes], don't they?"));
+										"Хорошая [npc2.girl], тебе ведь нравится, когда твоими [npc2.crotchBoobs] так ласкают, правда?",
+										"Обожаю твои [npc2.crotchBoobs]!",
+										"Какая послушная [npc2.girl]! Твоим [npc2.crotchBoobs] ведь нравится ощущение моих [npc1.toes], да?"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"You love the feeling of having your [npc2.crotchBoobs] fondled, don't you?!",
-										"I love your [npc2.crotchBoobs+]!",
-										"You like it when I press my [npc1.toes] into your [npc2.crotchBoobs], like <i>this</i>?!"));
+										"Тебе ведь безумно нравится, когда твоими [npc2.crotchBoobs] ласкают, а?!",
+										"Обожаю твои [npc2.crotchBoobs+]!",
+										"Тебе нравится, когда я вжимаю свои [npc1.toes] в твои [npc2.crotchBoobs], вот <i>так</i>?!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"What a dirty slut! Moaning as I grope your [npc2.crotchBoobs+]!",
-										"You love this, don't you bitch?! Having your [npc2.crotchBoobs] groped and fondled like <i>this</i>!",
-										"That's right slut! Your [npc2.crotchBoobs+] are mine to use however I want!"));
+										"Грязная шлюшка! Стонешь, пока я тискаю твои [npc2.crotchBoobs+]!",
+										"Тебе ведь это нравится, сучка?! Когда твоими [npc2.crotchBoobs] тискают и ласкают вот <i>так</i>!",
+										"Вот так, шлюха! Твои [npc2.crotchBoobs+] принадлежат мне, и я буду делать с ними всё, что захочу!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! I love the feel of your [npc2.crotchBoobs]!",
-										"I love giving your [npc2.crotchBoobs] the attention they deserve!",
-										"I love your [npc2.crotchBoobs]!"));
+										"Да! Обожаю ощущение твоих [npc2.crotchBoobs]!",
+										"Обожаю уделять твоему [npc2.crotchBoobs] столько внимания, сколько он заслуживает!",
+										"Обожаю твои [npc2.crotchBoobs]!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! I love the feel of your [npc2.crotchBoobs]!",
-										"I love giving your [npc2.crotchBoobs] the attention they deserve!",
-										"I love your [npc2.crotchBoobs]!"));
+										"Да! Обожаю ощущение твоих [npc2.crotchBoobs]!",
+										"Обожаю уделять твоему [npc2.crotchBoobs] столько внимания, сколько он заслуживает!",
+										"Обожаю твои [npc2.crotchBoobs]!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! I don't want to do this!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Я не хочу этого делать!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 							default:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck!",
-										"Yeah!",
-										"Oh yeah!"));
+										"Блядь!",
+										"Да!",
+										"О да!"));
 								break;
 						}
 						break;
@@ -15187,90 +15092,90 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Good [npc2.girl], keep sucking on my [npc1.toes]!",
-										"That's right, keep swirling your [npc2.tongue] around my [npc1.toes]!",
-										"What a good [npc2.girl]! You love sucking on my [npc1.toes], don't you?"));
+										"Хороший [npc2.girl], продолжай сосать мой [npc1.toes]!",
+										"Вот так, продолжай водить своим [npc2.tongue] вокруг моего [npc1.toes]!",
+										"Какой послушный [npc2.girl]! Ты ведь обожаешь сосать мой [npc1.toes], правда?"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"You love sucking on my [npc1.toes], don't you?!",
-										"That's right, keep sucking on my [npc1.toes]!",
-										"Keep sucking on my [npc1.toes], just like that!"));
+										"Ты ведь обожаешь сосать мой [npc1.toes], а?!",
+										"Вот так, продолжай сосать мой [npc1.toes]!",
+										"Соси мой [npc1.toes], именно так!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"That's right slut! Suck on my [npc1.toes] like you would on a nice thick cock!",
-										"You love this, don't you bitch?! Having my [npc1.toes] sliding in and out of your mouth!",
-										"That's right slut! Suck on my [npc1.toes] as I stuff them deep down your throat!"));
+										"Вот так, шлюшка! Соси мой [npc1.toes] так, будто это сочный толстый член!",
+										"Тебе ведь это нравится, сучка?! Когда мой [npc1.toes] входит и выходит из твоего рта!",
+										"Всё верно, шлюшка! Соси мои [npc1.toes], пока я заталкиваю их тебе глубоко в глотку!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Suck on my [npc1.toes]! Just like that!",
-										"I love having my [npc1.toes] sucked! Keep going!",
-										"Keep sucking my [npc1.toes]! Yes! Just like that!"));
+										"Да! Соси мои [npc1.toes]! Вот так!",
+										"Обожаю, когда сосут мои [npc1.toes]! Продолжай!",
+										"Соси мои [npc1.toes]! Да! Вот так!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Keep sucking on my [npc1.toes]!",
-										"I love having my [npc1.toes] sucked!",
-										"Keep sucking my [npc1.toes]! Yes!"));
+										"Да! Продолжай сосать мои [npc1.toes]!",
+										"Обожаю, когда сосут мои [npc1.toes]!",
+										"Соси мои [npc1.toes]! Да!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! I don't want to do this!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Я не хочу этого делать!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 							default:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck!",
-										"Yeah!",
-										"Oh yeah!"));
+										"Блядь!",
+										"Да!",
+										"О да!"));
 						}
 						break;
 					case NIPPLE:
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Good [npc2.girl], you love feeling my [npc1.toes] deep in your nipples, don't you?",
-										"I love foot-fucking cute little nipples like yours!",
-										"What a good [npc2.girl]! Your tits love the feeling of my [npc1.toes], don't they?"));
+										"Хорошие [npc2.girl], тебе ведь нравится чувствовать мои [npc1.toes] глубоко в сосках, правда?",
+										"Обожаю трахать ногами такие милые маленькие соски, как твои!",
+										"Какая отличная [npc2.girl]! Твоим сиськам так нравится ощущение моей [npc1.toes], правда?"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"You love the feeling of my [npc1.toes] deep in your nipples, don't you?!",
-										"I love foot-fucking cute little nipples like yours!",
-										"You like it when I curl my [npc1.toes] up inside your tits, like <i>this</i>?!"));
+										"Тебе ведь нравится ощущение моих [npc1.toes] глубоко в сосках, а?!",
+										"Обожаю трахать ногами такие милые маленькие соски, как твои!",
+										"Тебе нравится, когда я [npc1.toes] сворачиваюсь внутри твоих сисек, вот так, <i>вот</i>?!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"What a dirty slut! Moaning as I stuff my [npc1.toes] deep into your nipples!",
-										"You love this, don't you bitch?! Feeling my [npc1.toes] pushing deep into your tits!",
-										"That's right slut! You love having my [npc1.toes] stuffed deep in your slutty nipples!"));
+										"Какая грязная шлюшка! Стонешь, пока я заталкиваю свой [npc1.toes] глубоко в твои соски!",
+										"Тебе ведь это нравится, сучка?! Чувствуешь, как мой [npc1.toes] глубоко вжимается в твои сиськи!",
+										"Вот так, шлюха! Тебе обожаемо, когда мой [npc1.toes] забит глубоко в твои шлюшковатые соски!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Let me get my toes deep inside your nipples!",
-										"I love giving your tits the attention they deserve!",
-										"I love foot-fucking your nipples!"));
+										"Да! Позволь мне засунуть пальцы ног поглубже в твои соски!",
+										"Обожаю уделять твоим сиськам должное внимание!",
+										"Обожаю футфинки твоих сосков!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I love foot-fucking your nipples!",
-										"I love giving your tits the attention they deserve!",
-										"I love foot-fucking your nipples!"));
+										"Обожаю футфинки твоих сосков!",
+										"Обожаю уделять твоим сиськам должное внимание!",
+										"Обожаю футфинки твоих сосков!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! I don't want to do this!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Я не хочу этого делать!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 							default:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck!",
-										"Yeah!",
-										"Oh yeah!"));
+										"Блядь!",
+										"Да!",
+										"О да!"));
 								break;
 						}
 						break;
@@ -15278,45 +15183,45 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Good [npc2.girl], you love feeling my [npc1.toes] deep in your [npc2.crotchNipples], don't you?",
-										"I love foot-fucking cute little [npc2.crotchNipples] like yours!",
-										"What a good [npc2.girl]! Your [npc2.crotchNipples] love the feeling of my [npc1.toes], don't they?"));
+										"Хороший [npc2.girl], тебе ведь нравится чувствовать мой [npc1.toes] глубоко в твоих [npc2.crotchNipples], правда?",
+										"Обожаю футфикать такие милые маленькие [npc2.crotchNipples], как твои!",
+										"Какая хорошая [npc2.girl]! Твои [npc2.crotchNipples] обожают ощущения от моего [npc1.toes], не так ли?"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"You love the feeling of my [npc1.toes] deep in your [npc2.crotchNipple], don't you?!",
-										"I love foot-fucking cute little [npc2.crotchNipples] like yours!",
-										"You like it when I curl my [npc1.toes] up inside your [npc2.crotchNipples], like <i>this</i>?!"));
+										"Тебе нравится ощущение моего [npc1.toes] глубоко в твоей [npc2.crotchNipple], правда?!",
+										"Обожаю футфикать такие милые маленькие [npc2.crotchNipples], как твои!",
+										"Тебе нравится, когда я сворачиваю свой [npc1.toes] внутри твоей [npc2.crotchNipples], вот <i>так</i>?!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"What a dirty slut! Moaning as I stuff my [npc1.toes] deep into your [npc2.crotchNipples]!",
-										"You love this, don't you bitch?! Feeling my [npc1.toes] pushing deep into your [npc2.crotchNipples]!",
-										"That's right slut! You love having my [npc1.toes] stuffed deep in your slutty [npc2.crotchNipples]!"));
+										"Что за грязная шлюшка! Стонешь, пока я заталкиваю свой [npc1.toes] глубоко в твою [npc2.crotchNipples]!",
+										"Тебе это нравится, сучка, а?! Чувствовать, как мой [npc1.toes] вжимается глубоко в твою [npc2.crotchNipples]!",
+										"Именно так, шлюха! Тебе нравится, когда мой [npc1.toes] забит глубоко в твою шлюшью [npc2.crotchNipples]!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Let me get my toes deep inside your [npc2.crotchNipples]!",
-										"I love giving your [npc2.crotchNipples] the attention they deserve!",
-										"I love foot-fucking your [npc2.crotchNipples]!"));
+										"Да! Позволь мне засунуть пальцы ног поглубже в твою [npc2.crotchNipples]!",
+										"Обожаю уделять твоим [npc2.crotchNipples] столько внимания, сколько они заслуживают!",
+										"Обожаю футфинки твоей [npc2.crotchNipples]!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I love foot-fucking your [npc2.crotchNipples]!",
-										"I love giving your [npc2.crotchNipples] the attention they deserve!",
-										"I love foot-fucking your [npc2.crotchNipples]!"));
+										"Обожаю футфинки твоей [npc2.crotchNipples]!",
+										"Обожаю уделять твоим [npc2.crotchNipples] столько внимания, сколько они заслуживают!",
+										"Обожаю футфинки твоей [npc2.crotchNipples]!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! I don't want to do this!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Я не хочу этого делать!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 							default:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck!",
-										"Yeah!",
-										"Oh yeah!"));
+										"Блядь!",
+										"Да!",
+										"О да!"));
 								break;
 						}
 						break;
@@ -15330,45 +15235,45 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Good [npc2.girl], you love feeling my [npc1.toes] deep in your pussy, don't you?",
-										"I love foot-fucking cute little things like you!",
-										"What a good [npc2.girl]! Your pussy loves the feeling of my [npc1.toes], doesn't it?"));
+										"Хорошая [npc2.girl], тебе ведь нравится чувствовать мой [npc1.toes] глубоко в твоей киске, правда?",
+										"Обожаю трахать ступнями таких милашек, как ты!",
+										"Какая послушная [npc2.girl]! Твоя киска просто обожает мои [npc1.toes], не так ли?"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"You love the feeling of my [npc1.toes] deep in your pussy, don't you?!",
-										"I love foot-fucking cute [npc2.girls] like you!",
-										"You like it when I curl my [npc1.toes] up inside you, like <i>this</i>?!"));
+										"Тебе ведь нравится ощущение моего [npc1.toes] глубоко в твоей киске, а?!",
+										"Обожаю трахать ступнями таких милых [npc2.girls], как ты!",
+										"Тебе нравится, когда я сворачиваю свои [npc1.toes] внутри тебя, вот <i>так</i>?!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"What a dirty slut! I can feel your horny pussy clenching down on my [npc1.toes]!",
-										"You love this, don't you bitch?! Feeling my [npc1.toes] pushing deep into your slutty cunt!",
-										"That's right slut! You love having my [npc1.toes] stuffed deep in your slutty pussy!"));
+										"Грязная сучка! Я чувствую, как твоя возбужденная киска сжимается вокруг моего [npc1.toes]!",
+										"Тебе ведь это нравится, сучка?! Чувствовать, как мой [npc1.toes] вжимается глубоко в твою шлюшью щель!",
+										"Вот так, сучка! Тебе нравится, когда мой [npc1.toes] забит глубоко в твою шлюшью киску!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Let me get my toes deep inside your little pussy!",
-										"I love giving your pussy the attention it deserves!",
-										"I love foot-fucking you!"));
+										"Да! Позволь мне засунуть пальцы ног поглубже в твою маленькую киску!",
+										"Обожаю уделять твоей киске должное внимание!",
+										"Обожаю трахать тебя ногами!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I love foot-fucking your pussy!",
-										"I love giving your pussy the attention it deserves!",
-										"I love foot-fucking you!"));
+										"Обожаю трахать твою киску ногами!",
+										"Обожаю уделять твоей киске должное внимание!",
+										"Обожаю трахать тебя ногами!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! I don't want to do this!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Я не хочу этого делать!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 							default:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck!",
-										"Yeah!",
-										"Oh yeah!"));
+										"Блядь!",
+										"Да!",
+										"О да!"));
 								break;
 						}
 						break;
@@ -15376,45 +15281,45 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Good [npc2.girl], you love feeling my [npc1.toes] deep in your spinneret, don't you?",
-										"I love foot-fucking cute little things like you!",
-										"What a good [npc2.girl]! Your spinneret loves the feeling of my [npc1.toes], doesn't it?"));
+										"Молодец, [npc2.girl], тебе ведь нравится чувствовать мой [npc1.toes] глубоко в своем паутинном аппарате, верно?",
+										"Обожаю трахать ступнями таких милашек, как ты!",
+										"Какая хорошая [npc2.girl]! Твой паутинный аппарат обожает ощущение моего [npc1.toes], правда?"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"You love the feeling of my [npc1.toes] deep in your spinneret, don't you?!",
-										"I love foot-fucking cute [npc2.girls] like you!",
-										"You like it when I curl my [npc1.toes] up inside you, like <i>this</i>?!"));
+										"Тебе ведь нравится ощущение моего [npc1.toes] глубоко в твоем паутинном аппарате, а?!",
+										"Обожаю трахать ступнями таких милых [npc2.girls], как ты!",
+										"Тебе нравится, когда я сворачиваю свои [npc1.toes] внутри тебя, вот <i>так</i>?!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"What a dirty slut! I can feel your horny spinneret clenching down on my [npc1.toes]!",
-										"You love this, don't you bitch?! Feeling my [npc1.toes] pushing deep into your slutty spinneret!",
-										"That's right slut! You love having my [npc1.toes] stuffed deep in your slutty spinneret!"));
+										"Грязная шлюшка! Я чувствую, как твой возбужденный паутинный аппарат сжимается вокруг моего [npc1.toes]!",
+										"Тебе ведь это нравится, сучка?! Чувствовать, как мой [npc1.toes] вжимается глубоко в твой шлюшный паутинный аппарат!",
+										"Вот так, шлюха! Тебе нравится, когда мой [npc1.toes] забит глубоко в твой шлюшный паутинный аппарат!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! Let me get my toes deep inside your little spinneret!",
-										"I love giving your spinneret the attention it deserves!",
-										"I love foot-fucking you!"));
+										"Да! Позволь моим пальцам залезть поглубже в твой малюсенький паутинный аппарат!",
+										"Обожаю уделять внимание твоему паутинному аппарату!",
+										"Обожаю трахать тебя ногами!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I love foot-fucking your spinneret!",
-										"I love giving your spinneret the attention it deserves!",
-										"I love foot-fucking you!"));
+										"Обожаю оттрахивать твою паутинку ногами!",
+										"Обожаю уделять внимание твоему паутинному аппарату!",
+										"Обожаю трахать тебя ногами!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! I don't want to do this!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Я не хочу этого делать!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 							default:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Fuck!",
-										"Yeah!",
-										"Oh yeah!"));
+										"Блядь!",
+										"Да!",
+										"О да!"));
 								break;
 						}
 						break;
@@ -15443,34 +15348,34 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Your armpit tastes so good!",
-										"Good [npc2.girl]! I love the taste of your armpit!",
-										"What a good [npc2.girl]! You love having your armpit kissed like this, don't you?"));
+										"Твоя подмышка такая вкусная!",
+										"Хорошая [npc2.girl]! Обожаю вкус твоей подмышки!",
+										"Какая послушная [npc2.girl]! Тебе ведь нравится, когда тебя вот так целуют в подмышку, правда?"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Oh yes! Your armpit tastes so good!",
-										"You like this? Feeling my tongue running over your armpit?!",
-										"I love the taste of your armpit!"));
+										"О да! Твоя подмышка такая вкусная!",
+										"Тебе нравится? Чувствуешь, как мой язык скользит по твоей подмышке?!",
+										"Обожаю вкус твоей подмышки!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Keep still slut, and be thankful that I'm giving your armpit some attention!",
-										"Stay still bitch! Just keep moaning and enjoying this while it lasts!",
-										"You'd better appreciate this bitch! You know how lucky you are, having me lick your armpit?!"));
+										"Не дергайся, шлюха, и будь благодарна, что я уделяю внимание твоей подмышке!",
+										"Замри, сучка! Просто стони и наслаждайся, пока это не закончилось!",
+										"Тебе стоит ценить это, сучка! Ты хоть понимаешь, как тебе повезло, что я лижу твою подмышку?!"));
 								break;
 							case SUB_EAGER:
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! I love your armpit!",
-										"Oh yes! Let me lick your armpit! Yes, yes, yes!",
-										"Oh yes! I love your armpit!"));
+										"Да! Обожаю твою подмышку!",
+										"О да! Дай мне облизать твою подмышку! Да, да, да!",
+										"О да! Обожаю твою подмышку!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! I don't want to do this!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Я не хочу этого делать!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 						}
 						break;
@@ -15478,39 +15383,39 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"That's right, moan for me as I pleasure your ass!",
-										"Good [npc2.girl]! I love licking cute little asses like yours!",
-										"What a good [npc2.girl]! You love my tongue in your ass, don't you?"));
+										"Вот так, стони для меня, пока я ласкаю твою задницу!",
+										"Хорошая [npc2.girl]! Обожаю облизать такие милые маленькие жопки, как твоя!",
+										"Какая послушная [npc2.girl]! Тебе ведь нравится мой язык в твоей заднице, правда?"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"That's right, moan for me as I lick your ass!",
-										"Feel my tongue deep in your ass! Moan for me!",
-										"You love my tongue in your ass, don't you?"));
+										"Вот так, стони для меня, пока я лижу твою задницу!",
+										"Почувствуй мой язык глубоко в своей заднице! Стони для меня!",
+										"Тебе ведь нравится мой язык в твоей заднице, а?"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Keep still slut, I need to practice my oral skills on your worthless ass!",
-										"Stay still bitch! Just keep moaning and enjoying this while it lasts!",
-										"You'd better appreciate this bitch! You know how lucky you are, being used as oral practice?!"));
+										"Не дергайся, шлюшка, мне нужно потренировать оральные навыки на твоей никчемной жопке!",
+										"Замри, сучка! Просто стони и наслаждайся, пока это не закончилось!",
+										"Тебе лучше ценить эту сучку! Ты хоть понимаешь, как тебе повезло, что тебя используют для орального тренажа?!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! I love your ass! Feel my [npc1.tongue] pushing deep!",
-										"Oh yes! Let me lick your ass! Yes, yes, yes!",
-										"Oh yes! I love licking ass! Let me get my [npc1.tongue] nice and deep!"));
+										"Да! Обожаю твою задницу! Чувствуй, как мой [npc1.tongue] входит глубоко!",
+										"О да! Дай мне лизнуть твою жопку! Да, да, да!",
+										"О да! Обожаю лизать задницу! Дай мне засунуть [npc1.tongue] поглубже!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I love licking your ass!",
-										"Let me lick your ass! I love this!",
-										"I love licking your ass!"));
+										"Обожаю лизать твою задницу!",
+										"Дай мне лизнуть твою жопку! Мне это так нравится!",
+										"Обожаю лизать твою задницу!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! Get your ass away from my face!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отвали! Убери свою задницу от моего лица!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 						}
 						break;
@@ -15520,39 +15425,39 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Your tits taste so good!",
-										"Good [npc2.girl]! I love the taste of your tits!",
-										"What a good [npc2.girl]! You love having your tits kissed like this, don't you?"));
+										"Твои сиськи такие вкусные!",
+										"Хороший [npc2.girl]! Обожаю вкус твоих сисек!",
+										"Какая хорошая [npc2.girl]! Тебе ведь нравится, когда твои сиськи вот так целуют, правда?"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Oh yes! Your tits taste so good!",
-										"You like this? Feeling my tongue running over your breasts?!",
-										"I love the taste of your tits!"));
+										"О да! Твои сиськи такие вкусные!",
+										"Тебе нравится? Чувствуешь, как мой язык скользит по твоей груди?!",
+										"Обожаю вкус твоих сисек!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Keep still slut, and be thankful that I'm giving your tits some attention!",
-										"Stay still bitch! Just keep moaning and enjoying this while it lasts!",
-										"You'd better appreciate this bitch! You know how lucky you are, having me lick your tits?!"));
+										"Не дергайся, шлюшка, и будь благодарна, что я уделяю внимание твоей груди!",
+										"Замри, сучка! Просто стони и наслаждайся, пока это не закончилось!",
+										"Тебе лучше ценить это, сучка! Ты хоть понимаешь, как тебе повезло, что я лижу твои сиськи?!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! I love your tits! Let me suck on your nipples!",
-										"Oh yes! Let me suck on your nipples! Yes, yes, yes!",
-										"Oh yes! I love your tits!"));
+										"Да! Обожаю твои сиськи! Дай мне пососать твои соски!",
+										"О да! Дай мне пососать твои соски! Да, да, да!",
+										"О да! Обожаю твои сиськи!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I love your tits! Let me suck on your nipples!",
-										"Oh yes! Let me suck on your nipples!",
-										"I love your tits!"));
+										"Обожаю твои сиськи! Дай мне пососать твои соски!",
+										"О да! Дай мне пососать твои соски!",
+										"Обожаю твою тить!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! I don't want to do this!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Я не хочу этого делать!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 						}
 						break;
@@ -15560,39 +15465,39 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Your [npc2.crotchBoobs] taste so good!",
-										"Good [npc2.girl]! I love the taste of your [npc2.crotchBoobs]!",
-										"What a good [npc2.girl]! You love having your [npc2.crotchBoobs] kissed like this, don't you?"));
+										"Твои [npc2.crotchBoobs] такие вкусные!",
+										"Хорошая [npc2.girl]! Обожаю вкус твоих [npc2.crotchBoobs]!",
+										"Какая послушная [npc2.girl]! Тебе ведь нравится, когда твои [npc2.crotchBoobs] так целуют, правда?"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Oh yes! Your [npc2.crotchBoobs] taste so good!",
-										"You like this? Feeling my tongue running over your [npc2.crotchBoobs]?!",
-										"I love the taste of your [npc2.crotchBoobs]!"));
+										"О да! Твои [npc2.crotchBoobs] такие вкусные!",
+										"Тебе нравится? Чувствуешь, как мой язык скользит по твоим [npc2.crotchBoobs]?!",
+										"Обожаю вкус твоих [npc2.crotchBoobs]!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Keep still slut, and be thankful that I'm giving your [npc2.crotchBoobs] some attention!",
-										"Stay still bitch! Just keep moaning and enjoying this while it lasts!",
-										"You'd better appreciate this bitch! You know how lucky you are, having me lick your [npc2.crotchBoobs]?!"));
+										"Не дергайся, шлюшка, и будь благодарна, что я уделяю внимание твоим [npc2.crotchBoobs]!",
+										"Замри, сучка! Просто стони и наслаждайся, пока это не закончилось!",
+										"Тебе лучше ценить это, сучка! Ты хоть понимаешь, как тебе повезло, что я лижу твои [npc2.crotchBoobs]?!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! I love your [npc2.crotchBoobs]! Let me suck on your [npc2.crotchNipples]!",
-										"Oh yes! Let me kiss your [npc2.crotchBoobs]! Yes, yes, yes!",
-										"Oh yes! I love your [npc2.crotchBoobs]!"));
+										"Да! Обожаю твой [npc2.crotchBoobs]! Дай мне отсосать твой [npc2.crotchNipples]!",
+										"О да! Дай мне поцеловать твой [npc2.crotchBoobs]! Да, да, да!",
+										"О да! Обожаю твой [npc2.crotchBoobs]!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I love your [npc2.crotchBoobs]! Let me suck on your [npc2.crotchNipples]!",
-										"Oh yes! Let me kiss your [npc2.crotchBoobs]!",
-										"I love your tits!"));
+										"Обожаю твой [npc2.crotchBoobs]! Дай мне отсосать твой [npc2.crotchNipples]!",
+										"О да! Дай мне поцеловать твой [npc2.crotchBoobs]!",
+										"Обожаю твою тить!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! I don't want to do this!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Я не хочу этого делать!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 						}
 						break;
@@ -15600,39 +15505,39 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Your lips taste so good!",
-										"Good [npc2.girl]! Don't stop!",
-										"What a good [npc2.girl]!"));
+										"Твои губы такие вкусные!",
+										"Хороший [npc2.girl]! Не останавливайся!",
+										"Какая хорошая [npc2.girl]!"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Your lips taste so good!",
-										"Good [npc2.girl]! Don't stop!",
-										"What a good [npc2.girl]!"));
+										"Твои губы такие вкусные!",
+										"Хороший [npc2.girl]! Не останавливайся!",
+										"Какая хорошая [npc2.girl]!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Come on slut, you can kiss better than that!",
-										"Put some more effort into this bitch! Kiss me like you mean it!",
-										"Fucking slut, you can kiss me better than this! Put some more effort into it!"));
+										"Давай, шлюшка, ты можешь целоваться и лучше!",
+										"Приложи побольше стараний, сучка! Целуй меня так, будто действительно этого хочешь!",
+										"Чертова шлюха, ты можешь целовать меня куда лучше! Постарайся получше!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Oh yes! Your lips taste so good! I need more!",
-										"I love kissing you! Yes, yes, yes!",
-										"Oh yes! Your lips taste so good!"));
+										"О да! Твои губы такие вкусные! Мне нужно больше!",
+										"Обожаю целовать тебя! Да, да, да!",
+										"О да! Твои губки такие вкусные!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Your lips taste so good! I need more!",
-										"I love kissing you!",
-										"Your lips taste so good!"));
+										"Твои губы такие вкусные! Мне нужно больше!",
+										"Обожаю целовать тебя!",
+										"Твои губы такие вкусные!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please stop!",
-										"Let me go! I don't want to do this!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, остановись!",
+										"Отпусти меня! Я не хочу этого делать!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 						}
 						break;
@@ -15640,49 +15545,49 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Your nipples taste so good!",
-										"Good [npc2.girl]! I love the taste of your tits!",
+										"Твои соски такие вкусные!",
+										"Хороший [npc2.girl]! Обожаю вкус твоих сисек!",
 										!target.isBreastFuckableNipplePenetration()
 											?""
-											:"What a good [npc2.girl]! You love having my tongue in your nipple, don't you?"));
+											:"Какая хорошая [npc2.girl]! Тебе ведь нравится, когда мой язык ласкает твой сосок, а?"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Oh yes! Your tits taste so good!",
+										"О да! Твои сиськи такие вкусные!",
 										!target.isBreastFuckableNipplePenetration()
 											?""
-											:"You like this? Feeling my tongue deep in your hot little nipple?!",
-										"I love the taste of your tits!"));
+											:"Тебе нравится? Чувствуешь мой язык глубоко в твоем горячем соске?!",
+										"Обожаю вкус твоих сисек!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
 										!target.isBreastFuckableNipplePenetration()
 											?""
-											:"Keep still slut, I need to practice my skills on fuckable nipples like yours!",
-										"Stay still bitch! Just keep moaning and enjoying this while it lasts!",
-										"You'd better appreciate this bitch! You know how lucky you are, having me lick your nipples?!"));
+											:"Не дергайся, шлюшка, мне нужно потренировать свои навыки на таких ебабельных сосках, как твои!",
+										"Замри, сучка! Просто стони и наслаждайся, пока это не закончилось!",
+										"Тебе стоит ценить это, сучка! Ты хоть понимаешь, как тебе повезло, что я лижу твои соски?!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! I love your tits! Let me suck on your nipples!",
-										"Oh yes! Let me suck on your nipples! Yes, yes, yes!",
+										"Да! Обожаю твои сиськи! Дай мне пососать твои соски!",
+										"О да! Дай мне пососать твои соски! Да, да, да!",
 										!target.isBreastFuckableNipplePenetration()
 											?""
-											:"Oh yes! I love your nipples! Let me get my [npc1.tongue] nice and deep!"));
+											:"О да! Обожаю твои соски! Дай мне засунуть мой [npc1.tongue] поглубже!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I love your tits! Let me suck on your nipples!",
-										"Oh yes! Let me suck on your nipples!",
+										"Обожаю твои сиськи! Дай мне пососать твои соски!",
+										"О да! Дай мне пососать твои соски!",
 										!target.isBreastFuckableNipplePenetration()
 											?""
-											:"I love your nipples! Let me get my [npc1.tongue] nice and deep!"));
+											:"Обожаю твои соски! Дай мне засунуть мой [npc1.tongue] поглубже!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! I don't want to do this!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Я не хочу этого делать!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 						}
 						break;
@@ -15690,39 +15595,39 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Your [npc2.crotchNipples] taste so good!",
-										"Good [npc2.girl]! I love the taste of your [npc2.crotchNipples]!",
-										"What a good [npc2.girl]! You love having my tongue in your [npc2.crotchNipples], don't you?"));
+										"Твои [npc2.crotchNipples] такие вкусные!",
+										"Хороший [npc2.girl]! Обожаю вкус твоих [npc2.crotchNipples]!",
+										"Какой славный [npc2.girl]! Тебе ведь нравится, когда мой язык во рту твоих [npc2.crotchNipples], а?"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Oh yes! Your [npc2.crotchNipples] taste so good!",
-										"You like this? Feeling my tongue deep in your hot little [npc2.crotchNipples]?!",
-										"I love the taste of your [npc2.crotchNipples]!"));
+										"О да! Твои [npc2.crotchNipples] такие вкусные!",
+										"Тебе нравится? Чувствуешь мой язык глубоко в твоей горячей маленькой [npc2.crotchNipples]?!",
+										"Обожаю вкус твоих [npc2.crotchNipples]!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Keep still slut, I need to practice my skills on fuckable [npc2.crotchNipples] like yours!",
-										"Stay still bitch! Just keep moaning and enjoying this while it lasts!",
-										"You'd better appreciate this bitch! You know how lucky you are, having me lick your [npc2.crotchNipples]?!"));
+										"Не дергайся, шлюшка, мне нужно потренировать свои навыки на такой ебабельной [npc2.crotchNipples], как ты!",
+										"Замри, сучка! Просто стони и наслаждайся, пока это не закончилось!",
+										"Тебе лучше ценить это, сучка! Ты хоть понимаешь, как тебе повезло, что я лижу твою [npc2.crotchNipples]?!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! I love your [npc2.crotchBoobs]! Let me suck on your [npc2.crotchNipples]!",
-										"Oh yes! Let me suck on your [npc2.crotchNipples]! Yes, yes, yes!",
-										"Oh yes! I love your [npc2.crotchNipples]! Let me get my [npc1.tongue] nice and deep!"));
+										"Да! Обожаю твой [npc2.crotchBoobs]! Дай мне отсосать твой [npc2.crotchNipples]!",
+										"О да! Дай мне пососать твою [npc2.crotchNipples]! Да, да, да!",
+										"О да! Обожаю твою [npc2.crotchNipples]! Дай мне засунуть мой [npc1.tongue] поглубже!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I love your [npc2.crotchBoobs]! Let me suck on your [npc2.crotchNipples]!",
-										"Oh yes! Let me suck on your [npc2.crotchNipples]!",
-										"I love your [npc2.crotchNipples]! Let me get my [npc1.tongue] nice and deep!"));
+										"Обожаю твой [npc2.crotchBoobs]! Дай мне отсосать твой [npc2.crotchNipples]!",
+										"О да! Дай мне пососать твою [npc2.crotchNipples]!",
+										"Обожаю твою [npc2.crotchNipples]! Дай мне засунуть мой [npc1.tongue] поглубже!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please let me stop!",
-										"Let me go! I don't want to do this!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, дай мне остановиться!",
+										"Отпусти меня! Я не хочу этого делать!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 						}
 						break;
@@ -15736,39 +15641,39 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Your pussy tastes so good!",
-										"Good [npc2.girl]! I love the taste of your pussy!",
-										"What a good [npc2.girl]! You love my tongue in your pussy, don't you?"));
+										"Твоя киска такая вкусная!",
+										"Хорошая [npc2.girl]! Обожаю вкус твоей киски!",
+										"Какая послушная [npc2.girl]! Тебе ведь нравится мой язык в твоей киске, правда?"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Oh yes! Your pussy tastes so good!",
-										"You like this? Feeling my tongue deep in your hot little cunt?!",
-										"I love the taste of your pussy!"));
+										"О да! Твоя киска такая вкусная!",
+										"Тебе нравится? Чувствуешь мой язык глубоко в своей горячей киске?!",
+										"Обожаю вкус твоей киски!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Keep still slut, I need to practice my oral skills on you!",
-										"Stay still bitch! Just keep moaning and enjoying this while it lasts!",
-										"You'd better appreciate this bitch! You know how lucky you are, being used as oral practice?!"));
+										"Не дергайся, шлюшка, мне нужно потренировать навыки орального секса на тебе!",
+										"Замри, сучка! Просто стони и наслаждайся, пока это не закончилось!",
+										"Тебе лучше ценить эту сучку! Ты хоть понимаешь, как тебе повезло, что тебя используют для орального тренажа?!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! I love your pussy! You taste so good!",
-										"Oh yes! Let me eat you out! Yes, yes, yes!",
-										"Oh yes! I love the taste of your pussy! Let me get my [npc1.tongue] nice and deep!"));
+										"Да! Обожаю твою киску! Ты такая вкусная!",
+										"О да! Дай мне отсосать тебе! Да, да, да!",
+										"О да! Обожаю вкус твоей киски! Дай мне засунуть мой [npc1.tongue] поглубже!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I love your pussy! You taste so good!",
-										"Let me eat you out! You taste good!",
-										"I love the taste of your pussy!"));
+										"Обожаю твою киску! Ты такая вкусная!",
+										"Дай мне отсосать тебе! Ты вкусная!",
+										"Обожаю вкус твоей киски!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please stop!",
-										"Let me go! Get your pussy away from my face!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, остановись!",
+										"Отпусти меня! Убери свою киску от моего лица!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 						}
 						break;
@@ -15776,39 +15681,39 @@ public abstract class GameCharacter implements XMLSaving {
 						switch(Main.sex.getSexPace(this)) {
 							case DOM_GENTLE:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Your spinneret tastes so good!",
-										"Good [npc2.girl]! I love the taste of your spinneret!",
-										"What a good [npc2.girl]! You love my tongue in your spinneret, don't you?"));
+										"Твоя паутинка такая вкусная!",
+										"Хороший [npc2.girl]! Обожаю вкус твоей паутинки!",
+										"Какой славный [npc2.girl]! Тебе ведь нравится мой язык в твоей паутинке, правда?"));
 								break;
 							case DOM_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Oh yes! Your spinneret tastes so good!",
-										"You like this? Feeling my tongue deep in your hot little spinneret?!",
-										"I love the taste of your spinneret!"));
+										"О да! Твоя паутинка такая вкусная!",
+										"Тебе нравится? Чувствуешь мой язык глубоко в своей горячей маленькой паутинке?!",
+										"Обожаю вкус твоей паутинки!"));
 								break;
 							case DOM_ROUGH:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Keep still slut, I need to practice my oral skills on you!",
-										"Stay still bitch! Just keep moaning and enjoying this while it lasts!",
-										"You'd better appreciate this bitch! You know how lucky you are, being used as oral practice?!"));
+										"Не дергайся, шлюшка, мне нужно потренировать навыки орального секса на тебе!",
+										"Замри, сучка! Просто стони и наслаждайся, пока это не закончилось!",
+										"Тебе лучше ценить эту сучку! Ты хоть понимаешь, как тебе повезло, что тебя используют для орального тренажа?!"));
 								break;
 							case SUB_EAGER:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"Yes! I love your spinneret! You taste so good!",
-										"Oh yes! Let me eat you out! Yes, yes, yes!",
-										"Oh yes! I love the taste of your spinneret! Let me get my [npc1.tongue] nice and deep!"));
+										"Да! Обожаю твою паутинку! Ты такая вкусная!",
+										"О да! Дай мне отсосать тебе! Да, да, да!",
+										"О да! Обожаю вкус твоей паутинки! Дай мне засунуть мой [npc1.tongue] поглубже!"));
 								break;
 							case SUB_NORMAL:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I love your spinneret! You taste so good!",
-										"Let me eat you out! You taste good!",
-										"I love the taste of your spinneret!"));
+										"Обожаю твою паутинку! Ты такая вкусная!",
+										"Дай мне отсосать тебе! Ты вкусная!",
+										"Обожаю вкус твоей паутинки!"));
 								break;
 							case SUB_RESISTING:
 								availableLines.add(UtilText.returnStringAtRandom(
-										"I don't want to do this! Please stop!",
-										"Let me go! Get your spinneret away from my face!",
-										"Please! Stop! I don't want this!"));
+										"Я не хочу этого делать! Пожалуйста, остановись!",
+										"Отпусти меня! Убери свое веретено от моего лица!",
+										"Пожалуйста! Остановись! Я этого не хочу!"));
 								break;
 						}
 						break;
@@ -15833,40 +15738,40 @@ public abstract class GameCharacter implements XMLSaving {
 		Map<ImmobilisationType, GameCharacter> immobilisation = Main.sex.getImmobilisationTypes(characterReacting);
 		// Prioritise sleeping, then command, then any other:
 		if(immobilisation.containsKey(ImmobilisationType.SLEEP)) {
-			sb.append("[npc.Name] [npc.verb(remain)] asleep and thus unable to react as [npc2.namePos] "+areaString+" "+(plural?"are":"is")+" revealed.");
+			sb.append("[npc.Name] [npc.verb(remain)] спит и поэтому не может среагировать, когда [npc2.namePos] "+areaString+" "+(plural?"являются":"есть")+" обнажается.");
 			
 		} else if(immobilisation.containsKey(ImmobilisationType.COMMAND)) {
-			sb.append("[npc.Name] [npc.verb(remain)] completely motionless and [npc.do]n't react as [npc2.namePos] "+areaString+" "+(plural?"are":"is")+" revealed.");
+			sb.append("[npc.Name] [npc.verb(remain)] совершенно неподвижен и [npc.do] не может среагировать так, как [npc2.namePos] "+areaString+" "+(plural?"являются":"есть")+" обнажается.");
 			
 		} else {
 			Entry<ImmobilisationType, GameCharacter> entry = immobilisation.entrySet().iterator().next();
 			switch(entry.getKey()) {
 				case CHAINS:
-					sb.append("[npc.Name] [npc.verb(try)] to make a move as [npc2.namePos] "+areaString+" "+(plural?"are":"is")+" revealed, but the chains binding [npc.her] body in place keep [npc.herHim] immobilised.");
+					sb.append("[npc.Name] [npc.verb(try)] попытаться пошевелиться, когда [npc2.namePos] "+areaString+" "+(plural?"являются":"есть")+" обнажается, но цепи, сковывающие тело [npc.her], удерживают [npc.herHim] в неподвижности.");
 					break;
 				case ROPE:
-					sb.append("[npc.Name] [npc.verb(try)] to make a move as [npc2.namePos] "+areaString+" "+(plural?"are":"is")+" revealed, but the ropes binding [npc.her] body in place keep [npc.herHim] immobilised.");
+					sb.append("[npc.Name] [npc.verb(try)] попытаться пошевелиться, когда [npc2.namePos] "+areaString+" "+(plural?"являются":"есть")+" обнажается, но веревки, сковывающие тело [npc.her], удерживают [npc.herHim] в неподвижности.");
 					break;
 				case STOCKS:
-					sb.append("[npc.Name] [npc.verb(try)] to make a move as [npc2.namePos] "+areaString+" "+(plural?"are":"is")+" revealed, but as [npc.sheIs] locked into a set of stocks [npc.sheIs] completely immobilised.");
+					sb.append("[npc.Name] [npc.verb(try)] попытаться пошевелиться, когда [npc2.namePos] "+areaString+" "+(plural?"являются":"есть")+" обнажены, но когда [npc.sheIs] закована в колодки, [npc.sheIs] оказывается полностью обездвижена.");
 					break;
 				case COCOON:
-					sb.append("[npc.Name] [npc.verb(try)] to make a move as [npc2.namePos] "+areaString+" "+(plural?"are":"is")+" revealed, but [npc.her] cocoon's strong webbing keeps [npc.herHim] locked in place.");
+					sb.append("[npc.Name] [npc.verb(try)] попытаться пошевелиться, когда [npc2.namePos] "+areaString+" "+(plural?"являются":"есть")+" обнажены, но прочная паутина кокона [npc.her] удерживает [npc.herHim] на месте.");
 					break;
 				case TAIL_CONSTRICTION:
 					immobiliser = entry.getValue();
-					sb.append("[npc.Name] [npc.verb(try)] to make a move as [npc2.namePos] "+areaString+" "+(plural?"are":"is")+" revealed, but [npc3.name] [npc3.verb(use)] [npc3.her] long tail to keep [npc.herHim] constricted and firmly locked in place.");
+					sb.append("[npc.Name] [npc.verb(try)] попытаться пошевелиться, когда [npc2.namePos] "+areaString+" "+(plural?"являются":"есть")+" обнажены, но [npc3.name] [npc3.verb(use)] [npc3.her] длинным хвостом, чтобы [npc.herHim] оставался сжатым и крепко зафиксированным.");
 					break;
 				case TENTACLE_RESTRICTION:
 					immobiliser = entry.getValue();
-					sb.append("[npc.Name] [npc.verb(try)] to make a move as [npc2.namePos] "+areaString+" "+(plural?"are":"is")+" revealed, but [npc3.name] [npc3.verb(use)] [npc3.her] [npc3.tentacles] to keep [npc.herHim] firmly held in place.");
+					sb.append("[npc.Name] [npc.verb(try)] попытаться пошевелиться, когда [npc2.namePos] "+areaString+" "+(plural?"являются":"есть")+" обнажены, но [npc3.name] [npc3.verb(use)] [npc3.her] [npc3.tentacles], чтобы [npc.herHim] надежно удерживался на месте.");
 					break;
 				case WITCH_SEAL:
-					sb.append("[npc.Name] [npc.verb(try)] to make a move as [npc2.namePos] "+areaString+" "+(plural?"are":"is")+" revealed, but the Witch's Seal keeps [npc.herHim] locked in place.");
+					sb.append("[npc.Name] [npc.verb(try)] попытаться пошевелиться, когда [npc2.namePos] "+areaString+" "+(plural?"являются":"есть")+" обнажены, но Печать Ведьмы удерживает [npc.herHim] на месте.");
 					break;
 				case SLEEP:
 				case COMMAND:
-					sb.append("[npc.Name] [npc.do]n't react as [npc2.namePos] "+areaString+" "+(plural?"are":"is")+" revealed.");
+					sb.append("[npc.Name] даже не [npc.do], когда [npc2.namePos] "+areaString+" "+(plural?"являются":"есть")+" обнажается.");
 					break;
 			}
 		}
@@ -15903,19 +15808,19 @@ public abstract class GameCharacter implements XMLSaving {
 		if(characterBeingRevealed.isPlayer()) {
 			switch(reactingPace) {
 				case DOM_GENTLE:
-					return UtilText.parse(characterReacting, "[npc.Name] lets out a soft [npc.moan] as your [pc.asshole+] is revealed.");
+					return UtilText.parse(characterReacting, "[npc.Name] издает тихий [npc.moan], когда твои [pc.asshole+] обнажаются.");
 				case DOM_NORMAL:
-					return UtilText.parse(characterReacting, "[npc.Name] lets out [npc.a_moan+] as your [pc.asshole+] is revealed.");
+					return UtilText.parse(characterReacting, "[npc.Name] издает [npc.a_moan+], когда твои [pc.asshole+] обнажаются.");
 				case DOM_ROUGH:
-					return UtilText.parse(characterReacting, "[npc.Name] lets out a hungry growl as your [pc.asshole+] is revealed.");
+					return UtilText.parse(characterReacting, "[npc.Name] издает голодный рык, когда твои [pc.asshole+] обнажаются.");
 				case SUB_EAGER:
-					return UtilText.parse(characterReacting, "[npc.Name] lets out [npc.a_moan+] as your [pc.asshole+] is revealed.");
+					return UtilText.parse(characterReacting, "[npc.Name] издает [npc.a_moan+], когда твои [pc.asshole+] обнажаются.");
 				case SUB_NORMAL:
-					return UtilText.parse(characterReacting, "[npc.Name] lets out [npc.a_moan] as your [pc.asshole+] is revealed.");
+					return UtilText.parse(characterReacting, "[npc.Name] издает [npc.a_moan], когда открываются твои [pc.asshole+].");
 				case SUB_RESISTING:
-					return UtilText.parse(characterReacting, "[npc.Name] lets out [npc.a_sob+] as your [pc.asshole+] is revealed.");
+					return UtilText.parse(characterReacting, "[npc.Name] издает [npc.a_sob+], когда открываются твои [pc.asshole+].");
 				default:
-					return UtilText.parse(characterReacting, "[npc.Name] lets out [npc.a_moan] as your [pc.asshole+] is revealed.");
+					return UtilText.parse(characterReacting, "[npc.Name] издает [npc.a_moan], когда открываются твои [pc.asshole+].");
 			}
 		}
 		return "";
@@ -15946,22 +15851,18 @@ public abstract class GameCharacter implements XMLSaving {
 					if(npcReacting.isFeminine()) {
 						if (characterBeingRevealed.isFeminine()) {
 							if (!characterBeingRevealed.hasBreasts()) {
-								sb.append("[npc2.Name] struggles to stifle a mocking laugh as [npc.namePos] flat chest is revealed, "
-										+ "[npc2.speech(Pfft-hahaha!)]");
+								sb.append("[npc2.Name] изо всех сил пытается подавить насмешливый смех, когда открывается плоская грудь [npc.namePos], [npc2.speech(Пфф-ха-ха-ха!)]");
 								
 							} else if (characterBeingRevealed.getBreastRawSizeValue() <= CupSize.JJ.getMeasurement()) {
 								if(this.getBreastSize().getMeasurement() >= characterBeingRevealed.getBreastSize().getMeasurement()) {
-									sb.append("[npc2.Name] [npc2.verb(put)] on a patronising smile as [npc.namePos] [pc.breastSize] breasts are revealed, "
-											+ "[npc2.speech(Aww... They're pretty cute!)]");
+									sb.append("[npc2.Name] [npc2.verb(put)] с покровительственной улыбкой, когда открываются [pc.breastSize] груди [npc.namePos], [npc2.speech(Оу... Они такие миленькие!)]");
 									
 								} else {
-									sb.append("[npc2.Name] [npc2.verb(shuffle)] about in embarrassment as [npc.namePos] [npc.breastSize] breasts are revealed, "
-											+ "[npc2.speech(They're so much bigger than mine...)]");
+									sb.append("[npc2.Name] [npc2.verb(shuffle)] от смущения, когда открываются [npc.breastSize] груди [npc.namePos], [npc2.speech(Они намного больше моих...)]");
 								}
 								
 							} else {
-								sb.append("[npc2.NamePos] jaw drops as [npc.namePos] [npc.breastSize] breasts are revealed, "
-										+ "[npc2.speech(How did you manage to get your tits to be that huge?!)]");
+								sb.append("У [npc2.NamePos] отвисает челюсть, когда открываются [npc.breastSize] груди [npc.namePos], [npc2.speech(Как тебе удалось раздуть такие сиськи?!)]");
 							}
 							
 						} else {
@@ -15969,22 +15870,18 @@ public abstract class GameCharacter implements XMLSaving {
 								sb.append("");
 								
 							} else if (characterBeingRevealed.getBreastRawSizeValue() <= CupSize.C.getMeasurement()) {
-								sb.append("In a very patronising voice, [npc2.name] [npc2.verb(react)] to [npc.namePos] breasts being revealed, "
-										+ "[npc2.speech(Aww, you trying to become a girl?)]");
+								sb.append("Очень покровительственным голосом, [npc2.name] [npc2.verb(react)] на то, что грудь [npc.namePos] обнажена, [npc2.speech(Оу, ты что, решил стать девочкой?)]");
 			
 							} else if (characterBeingRevealed.getBreastRawSizeValue() <= CupSize.JJ.getMeasurement()) {
 								if(this.getBreastSize().getMeasurement() >= characterBeingRevealed.getBreastSize().getMeasurement()) {
-									sb.append("[npc2.Name] [npc2.verb(gasp)] in surprise as [npc.namePos] [npc.breastSize] breasts are revealed, "
-											+ "[npc2.speech(Why would a guy have tits like that?)]");
+									sb.append("[npc2.Name] [npc2.verb(gasp)] от неожиданности, когда открываются [npc.breastSize] груди [npc.namePos], [npc2.speech(С чего бы у парня были такие сиськи?)]");
 									
 								} else {
-									sb.append("[npc2.Name] [npc2.verb(fail)] to contain [npc2.her] surprise as [npc.namePos] [npc.breastSize] breasts are revealed, "
-											+ "[npc2.speech(A <i>guy</i> has bigger tits than me?!)]");
+									sb.append("[npc2.Name] [npc2.verb(fail)], пытаясь скрыть [npc2.her] удивление, когда открываются [npc.breastSize] груди [npc.namePos], [npc2.speech(У <i>парня</i> сиськи больше, чем у меня?!)]");
 								}
 			
 							} else {
-								sb.append("[npc2.NamePos] jaw drops as [npc.namePos] [npc.breastSize] breasts are revealed, "
-										+ "[npc2.speech(How did you manage to get your tits to be that huge?!)]");
+								sb.append("У [npc2.NamePos] отвисает челюсть, когда открываются [npc.breastSize] груди [npc.namePos], [npc2.speech(Как тебе удалось раздуть такие сиськи?!)]");
 							}
 							
 						}
@@ -15993,20 +15890,16 @@ public abstract class GameCharacter implements XMLSaving {
 					} else {
 						if (characterBeingRevealed.isFeminine()) {
 							if (!characterBeingRevealed.hasBreasts()) {
-								sb.append("[npc2.Name] [npc2.verb(struggle)] to stifle a mocking laugh as [npc.namePos] flat chest is revealed, "
-										+ "[npc2.speech(Pfft-hahaha!)]");
+								sb.append("[npc2.Name] [npc2.verb(struggle)], подавляя насмешливый смешок, когда открывается плоская грудь [npc.namePos], [npc2.speech(Пфф-ха-ха-ха!)]");
 								
 							} else if (characterBeingRevealed.getBreastRawSizeValue() <= CupSize.C.getMeasurement()) {
-								sb.append("[npc2.Name] [npc2.verb(let)] out a disappointed hum as [npc.namePos] [npc.breastSize] breasts are revealed, "
-										+ "[npc2.speech(Huh... They're pretty small you know...)]");
+								sb.append("[npc2.Name] [npc2.verb(let)] разочарованно хмыкнув, когда открываются [npc.breastSize] груди [npc.namePos], [npc2.speech(Хм... Они довольно маленькие, знаешь ли...)]");
 								
 							} else if (characterBeingRevealed.getBreastRawSizeValue() <= CupSize.JJ.getMeasurement()) {
-								sb.append("[npc2.NamePos] eyes light up as [npc.namePos] [npc.breastSize] breasts are revealed, "
-											+ "[npc2.speech(Oh fuck yeah... Look at the size of those tits!)]");
+								sb.append("[npc2.NamePos] глаза загораются, когда открываются [npc.breastSize] груди [npc.namePos], [npc2.speech(О, черт возьми, да... Посмотри на размер этих сисек!)]");
 								
 							} else {
-								sb.append("[npc2.NamePos] jaw drops as [npc.namePos] [npc.breastSize] breasts are revealed, "
-											+ "[npc2.speech(How did you manage to get your tits to be that huge?!)]");
+								sb.append("У [npc2.NamePos] отвисает челюсть, когда открываются [npc.breastSize] груди [npc.namePos], [npc2.speech(Как тебе удалось раздуть такие сиськи?!)]");
 							}
 							
 						} else {
@@ -16014,20 +15907,16 @@ public abstract class GameCharacter implements XMLSaving {
 								sb.append("");
 								
 							} else if (characterBeingRevealed.getBreastRawSizeValue() <= CupSize.C.getMeasurement()) {
-								sb.append("In a mocking tone, [npc2.name] [npc2.verb(question)] [npc.name] as [npc.her] tiny breasts are revealed, "
-											+ "[npc2.speech(Hah, you trying to become a girl?)]");
+								sb.append("Насмешливым тоном [npc2.name] [npc2.verb(question)] [npc.name], когда открываются крошечные [npc.her] груди, [npc2.speech(Ха, ты что, пытаешься стать девчонкой?)]");
 								
 							} else if (characterBeingRevealed.getBreastRawSizeValue() <= CupSize.FF.getMeasurement()) {
-								sb.append("[npc2.Name] [npc2.verb(let)] out a surprised gasp as [npc.namePos] [npc.breastSize] breasts are revealed, "
-											+ "[npc2.speech(Why would a guy have tits like that?)]");
+								sb.append("[npc2.Name] [npc2.verb(let)] от удивления, когда открываются [npc.breastSize] груди [npc.namePos], [npc2.speech(С чего бы у парня были такие сиськи?)]");
 								
 							} else if (characterBeingRevealed.getBreastRawSizeValue() <= CupSize.JJ.getMeasurement()) {
-								sb.append("[npc2.Name] [npc2.verb(fail)] to contain [npc2.her] surprise as [npc.namePos] [npc.breastSize] breasts are revealed, "
-											+ "[npc2.speech(What's a <i>guy</i> doing with such massive tits?!)]");
+								sb.append("[npc2.Name] [npc2.verb(fail)], пытаясь скрыть [npc2.her] удивление, когда открываются [npc.breastSize] груди [npc.namePos], [npc2.speech(Что это за <i>парень</i> с такими огромными сиськами?!)]");
 								
 							} else {
-								sb.append("[npc2.NamePos] jaw drops as [npc.namePos] [npc.breastSize] breasts are revealed, "
-											+ "[npc2.speech(How did you manage to get your tits to be that huge?!)]");
+								sb.append("У [npc2.NamePos] отвисает челюсть, когда открываются [npc.breastSize] груди [npc.namePos], [npc2.speech(Как тебе удалось раздуть такие сиськи?!)]");
 							}
 							
 						}
@@ -16038,22 +15927,18 @@ public abstract class GameCharacter implements XMLSaving {
 					if(this.isFeminine()) {
 						if (characterBeingRevealed.isFeminine()) {
 							if (!characterBeingRevealed.hasBreasts()) {
-								sb.append("[npc2.Name] [npc2.verb(let)] out a mocking laugh as [npc.namePos] flat chest is revealed, "
-										+ "[npc2.speech(Hahaha, I don't think I've ever seen a girl with a chest <i>that</i> flat before!)]");
+								sb.append("[npc2.Name] [npc2.verb(let)], издав насмешливый смешок, когда открывается плоская грудь [npc.namePos], [npc2.speech(Ха-ха-ха, не думаю, что когда-либо видел девушку с настолько <i>плоской</i> грудью!)]");
 			
 							} else if (characterBeingRevealed.getBreastRawSizeValue() <= CupSize.JJ.getMeasurement()) {
 								if(this.getBreastSize().getMeasurement() >= characterBeingRevealed.getBreastSize().getMeasurement()) {
-									sb.append("[npc2.Name] [npc2.verb(grin)] down at [npc.name] as [npc.her] [npc.breastSize] breasts are revealed, "
-											+ "[npc2.speech(Hah! They aren't as big as mine!)]");
+									sb.append("[npc2.Name] [npc2.verb(grin)] на [npc.name], когда открываются [npc.her] [npc.breastSize] груди, [npc2.speech(Ха! Они не такие большие, как мои!)]");
 									
 								} else {
-									sb.append("[npc2.Name] [npc2.verb(let)] out an annoyed huff as [npc.namePos] [npc.breastSize] breasts are revealed, "
-											+ "[npc2.speech(Are you trying to put me to shame or something?!)]");
+									sb.append("[npc2.Name] [npc2.verb(let)] раздраженно фыркает, когда [npc.namePos] обнажает [npc.breastSize] грудь, [npc2.speech(Ты что, пытаешься меня опозорить?!)]");
 								}
 			
 							} else {
-								sb.append("[npc2.NamePos] jaw drops as [npc.namePos] [npc.breastSize] breasts are revealed, "
-										+ "[npc2.speech(How did you manage to get your tits to be that huge?!)]");
+								sb.append("У [npc2.NamePos] отвисает челюсть, когда открываются [npc.breastSize] груди [npc.namePos], [npc2.speech(Как тебе удалось раздуть такие сиськи?!)]");
 							}
 			
 						} else {
@@ -16061,22 +15946,18 @@ public abstract class GameCharacter implements XMLSaving {
 								sb.append("");
 								
 							} else if (characterBeingRevealed.getBreastRawSizeValue() <= CupSize.C.getMeasurement()) {
-								sb.append("[npc2.Name] [npc2.verb(grin)] at [npc.name] as [npc.her] [npc.breastSize] breasts are revealed, "
-										+ "[npc2.speech(Aww, you trying to become a girl?)]");
+								sb.append("[npc2.Name] [npc2.verb(grin)] на [npc.name], когда [npc.her] обнажает [npc.breastSize] грудь, [npc2.speech(Оу, ты что, хочешь стать девчонкой?)]");
 			
 							} else if (characterBeingRevealed.getBreastRawSizeValue() <= CupSize.JJ.getMeasurement()) {
 								if(this.getBreastSize().getMeasurement() >= characterBeingRevealed.getBreastSize().getMeasurement()) {
-									sb.append("[npc2.Name] [npc2.verb(let)] out a surprised gasp as [npc.namePos] [npc.breastSize] breasts are revealed, "
-											+ "[npc2.speech(Why would a guy have tits like that?)]");
+									sb.append("[npc2.Name] [npc2.verb(let)] от удивления, когда открываются [npc.breastSize] груди [npc.namePos], [npc2.speech(С чего бы у парня были такие сиськи?)]");
 									
 								} else {
-									sb.append("[npc2.Name] [npc2.verb(let)] out an annoyed huff as [npc.namePos] [npc.breastSize] breasts are revealed, "
-											+ "[npc2.speech(Are you kidding me?! A <i>guy</i> has bigger tits than me?!)]");
+									sb.append("[npc2.Name] [npc2.verb(let)] раздраженно фыркает, когда [npc.namePos] обнажает [npc.breastSize] грудь, [npc2.speech(Ты издеваешься?! У <i>парня</i> сиськи больше, чем у меня?!)]");
 								}
 			
 							} else {
-								sb.append("[npc2.NamePos] jaw drops as [npc.namePos] [npc.breastSize] breasts are revealed, "
-										+ "[npc2.speech(How did you manage to get your tits to be that huge?!)]");
+								sb.append("У [npc2.NamePos] отвисает челюсть, когда открываются [npc.breastSize] груди [npc.namePos], [npc2.speech(Как тебе удалось раздуть такие сиськи?!)]");
 							}
 							
 						}
@@ -16085,24 +15966,19 @@ public abstract class GameCharacter implements XMLSaving {
 					} else {
 						if (characterBeingRevealed.isFeminine()) {
 							if (!characterBeingRevealed.hasBreasts()) {
-								sb.append("[npc2.Name] [npc2.verb(let)] out a mocking laugh as [npc.namePos] flat chest is revealed, "
-											+ "[npc2.speech(Hahaha, I don't think I've ever seen a girl with a chest <i>that</i> flat before!)]");
+								sb.append("[npc2.Name] [npc2.verb(let)], издав насмешливый смешок, когда открывается плоская грудь [npc.namePos], [npc2.speech(Ха-ха-ха, не думаю, что когда-либо видел девушку с настолько <i>плоской</i> грудью!)]");
 								
 							} else if (characterBeingRevealed.getBreastRawSizeValue() <= CupSize.C.getMeasurement()) {
-								sb.append("[npc2.Name] [npc2.verb(growl)] at [npc.name] as [npc.her] [npc.breastSize] breasts are revealed, "
-											+ "[npc2.speech(I like my girls with bigger tits than that!)]");
+								sb.append("[npc2.Name] [npc2.verb(growl)] на [npc.name], когда [npc.her] обнажает [npc.breastSize] грудь, [npc2.speech(Мне нравятся девушки с грудью побольше!)]");
 								
 							} else if (characterBeingRevealed.getBreastRawSizeValue() <= CupSize.FF.getMeasurement()) {
-								sb.append("[npc2.Name] [npc2.verb(grin)] as [npc.namePos] [npc.breastSize] breasts are revealed, "
-											+ "[npc2.speech(Mmm yeah, those are some nice tits!)]");
+								sb.append("[npc2.Name] [npc2.verb(grin)], когда [npc.namePos] обнажает [npc.breastSize] грудь, [npc2.speech(Ммм да, отличные сиськи!)]");
 								
 							} else if (characterBeingRevealed.getBreastRawSizeValue() <= CupSize.JJ.getMeasurement()) {
-								sb.append("[npc2.Name] [npc2.verb(let)] out a delighted hum as [npc.namePos] [npc.breastSize] breasts are revealed, "
-											+ "[npc2.speech(Oh fuck yeah! Look at the size of those things!)]");
+								sb.append("[npc2.Name] [npc2.verb(let)] довольно мурлычет, когда [npc.namePos] обнажает [npc.breastSize] грудь, [npc2.speech(Ох, черт возьми, да! Посмотри на их размер!)]");
 								
 							} else {
-								sb.append("[npc2.NamePos] jaw drops as [npc.namePos] [npc.breastSize] breasts are revealed, "
-											+ "[npc2.speech(How did you manage to get your tits to be that huge?! What a fucking tit-cow!)]");
+								sb.append("[npc2.NamePos] челюсть отвисает, когда [npc.namePos] обнажает [npc.breastSize] грудь, [npc2.speech(Как тебе удалось раздуть такие огромные сиськи?! Ну и гребаная корова с молоком!)]");
 							}
 							
 						} else {
@@ -16110,20 +15986,16 @@ public abstract class GameCharacter implements XMLSaving {
 								sb.append("");
 								
 							} else if (characterBeingRevealed.getBreastRawSizeValue() <= CupSize.C.getMeasurement()) {
-								sb.append("[npc2.Name] [npc2.verb(burst)] out laughing as [npc.namePos] [npc.breastSize] breasts are revealed, "
-											+ "[npc2.speech(Hahaha, you trying to become a girl?!)]");
+								sb.append("[npc2.Name] [npc2.verb(burst)] со смехом, когда [npc.namePos] обнажает [npc.breastSize] грудь, [npc2.speech(Ха-ха-ха, ты что, хочешь стать девчонкой?!)]");
 								
 							} else if (characterBeingRevealed.getBreastRawSizeValue() <= CupSize.FF.getMeasurement()) {
-								sb.append("[npc2.Name] [npc2.verb(let)] out a surprised gasp as [npc.namePos] [npc.breastSize] breasts are revealed, "
-											+ "[npc2.speech(Why would a guy have tits like that?!)]");
+								sb.append("[npc2.Name] [npc2.verb(let)] от удивленного вздоха, когда открываются [npc.breastSize] [npc.namePos] груди, [npc2.speech(Почему у парня такая сиська?!)]");
 								
 							} else if (characterBeingRevealed.getBreastRawSizeValue() <= CupSize.JJ.getMeasurement()) {
-								sb.append("[npc2.Name] [npc2.verb(let)] out a mocking laugh as [npc.namePos] [npc.breastSize] breasts are revealed, "
-											+ "[npc2.speech(Are you kidding me?! Why does a <i>guy</i> have tits like that?!)]");
+								sb.append("[npc2.Name] [npc2.verb(let)] насмешливо хохочет, когда открываются [npc.breastSize] [npc.namePos] груди, [npc2.speech(Ты шутишь?! Почему у <i>парня</i> такая сиська?!)]");
 								
 							} else {
-								sb.append("[npc2.NamePos] jaw drops as [npc.namePos] [npc.breastSize] breasts are revealed, "
-											+ "[npc2.speech(How did you manage to get your tits to be that huge?!)]");
+								sb.append("У [npc2.NamePos] отвисает челюсть, когда открываются [npc.breastSize] груди [npc.namePos], [npc2.speech(Как тебе удалось раздуть такие сиськи?!)]");
 							}
 						}
 					}
@@ -16132,22 +16004,22 @@ public abstract class GameCharacter implements XMLSaving {
 			} else {
 				switch(reactingPace) {
 					case DOM_GENTLE:
-						sb.append("[npc2.Name] [npc2.verb(let)] out a soft [npc2.moan] as [npc.namePos] [npc.breasts+] are revealed.");
+						sb.append("[npc2.Name] [npc2.verb(let)] тихонько [npc2.moan], когда открываются [npc.namePos] [npc.breasts+].");
 						break;
 					case DOM_NORMAL:
-						sb.append("[npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc.namePos] [npc.breasts+] are revealed.");
+						sb.append("[npc2.Name] [npc2.verb(let)] [npc2.a_moan+], когда открываются [npc.namePos] [npc.breasts+].");
 						break;
 					case DOM_ROUGH:
-						sb.append("[npc2.Name] [npc2.verb(let)] out a hungry growl as [npc.namePos] [npc.breasts+] are revealed.");
+						sb.append("[npc2.Name] [npc2.verb(let)] голодное рычание, когда открываются [npc.namePos] [npc.breasts+].");
 						break;
 					case SUB_EAGER:
-						sb.append("[npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc.namePos] [npc.breasts+] are revealed.");
+						sb.append("[npc2.Name] [npc2.verb(let)] [npc2.a_moan+], когда открываются [npc.namePos] [npc.breasts+].");
 						break;
 					case SUB_NORMAL:
-						sb.append("[npc2.Name] [npc2.verb(let)] out [npc2.a_moan] as [npc.namePos] [npc.breasts+] are revealed.");
+						sb.append("[npc2.Name] [npc2.verb(let)] [npc2.a_moan], когда открываются [npc.namePos] [npc.breasts+].");
 						break;
 					case SUB_RESISTING:
-						sb.append("[npc2.Name] [npc2.verb(let)] out [npc2.a_sob+] as [npc.namePos] [npc.breasts+] are revealed.");
+						sb.append("[npc2.Name] [npc2.verb(let)] [npc2.a_sob+], когда открываются [npc.namePos] [npc.breasts+].");
 						break;
 				}
 			}
@@ -16182,22 +16054,22 @@ public abstract class GameCharacter implements XMLSaving {
 			
 			switch(reactingPace) {
 				case DOM_GENTLE:
-					sb.append("[npc.Name] [npc.verb(let)] out a soft [npc.moan] as [npc.her] [npc.crotchBoobs+] are revealed.");
+					sb.append("[npc.Name] [npc.verb(let)] мягкий [npc.moan], когда открываются [npc.her] [npc.crotchBoobs+].");
 					break;
 				case DOM_NORMAL:
-					sb.append("[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.her] [npc.crotchBoobs+] are revealed.");
+					sb.append("[npc.Name] [npc.verb(let)] [npc.a_moan+], когда открываются [npc.her] [npc.crotchBoobs+].");
 					break;
 				case DOM_ROUGH:
-					sb.append("[npc.Name] [npc.verb(let)] out a hungry growl as [npc.her] [npc.crotchBoobs+] are revealed.");
+					sb.append("[npc.Name] [npc.verb(let)] голодное рычание, когда открываются [npc.her] [npc.crotchBoobs+].");
 					break;
 				case SUB_EAGER:
-					sb.append("[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.her] [npc.crotchBoobs+] are revealed.");
+					sb.append("[npc.Name] [npc.verb(let)] [npc.a_moan+], когда открываются [npc.her] [npc.crotchBoobs+].");
 					break;
 				case SUB_NORMAL:
-					sb.append("[npc.Name] [npc.verb(let)] out [npc.a_moan] as [npc.her] [npc.crotchBoobs+] are revealed.");
+					sb.append("[npc.Name] [npc.verb(let)] [npc.a_moan], когда открываются [npc.her] [npc.crotchBoobs+].");
 					break;
 				case SUB_RESISTING:
-					sb.append("[npc.Name] [npc.verb(let)] out [npc.a_sob+] as [npc.her] [npc.crotchBoobs+] are revealed.");
+					sb.append("[npc.Name] [npc.verb(let)] [npc.a_sob+], когда открываются [npc.her] [npc.crotchBoobs+].");
 					break;
 			}
 			
@@ -16208,22 +16080,22 @@ public abstract class GameCharacter implements XMLSaving {
 			
 			switch(reactingPace) {
 				case DOM_GENTLE:
-					sb.append("[npc2.Name] [npc2.verb(let)] out a soft [npc2.moan] as [npc.namePos] [npc.crotchBoobs+] are revealed.");
+					sb.append("[npc2.Name] [npc2.verb(let)] тихий [npc2.moan], когда открываются [npc.namePos] [npc.crotchBoobs+].");
 					break;
 				case DOM_NORMAL:
-					sb.append("[npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc.namePos] [npc.crotchBoobs+] are revealed.");
+					sb.append("[npc2.Name] [npc2.verb(let)] [npc2.a_moan+], когда открываются [npc.namePos] [npc.crotchBoobs+].");
 					break;
 				case DOM_ROUGH:
-					sb.append("[npc2.Name] [npc2.verb(let)] out a hungry growl as [npc.namePos] [npc.crotchBoobs+] are revealed.");
+					sb.append("[npc2.Name] [npc2.verb(let)] голодное рычание, когда открываются [npc.namePos] [npc.crotchBoobs+].");
 					break;
 				case SUB_EAGER:
-					sb.append("[npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc.namePos] [npc.crotchBoobs+] are revealed.");
+					sb.append("[npc2.Name] [npc2.verb(let)] [npc2.a_moan+], когда открываются [npc.namePos] [npc.crotchBoobs+].");
 					break;
 				case SUB_NORMAL:
-					sb.append("[npc2.Name] [npc2.verb(let)] out [npc2.a_moan] as [npc.namePos] [npc.crotchBoobs+] are revealed.");
+					sb.append("[npc2.Name] [npc2.verb(let)] [npc2.a_moan], когда открываются [npc.namePos] [npc.crotchBoobs+].");
 					break;
 				case SUB_RESISTING:
-					sb.append("[npc2.Name] [npc2.verb(let)] out [npc2.a_sob+] as [npc.namePos] [npc.crotchBoobs+] are revealed.");
+					sb.append("[npc2.Name] [npc2.verb(let)] [npc2.a_sob+], когда открываются [npc.namePos] [npc.crotchBoobs+].");
 					break;
 			}
 		}
@@ -16256,22 +16128,20 @@ public abstract class GameCharacter implements XMLSaving {
 		if(!characterBeingRevealed.equals(characterReacting) && !characterReacting.isPlayer()) {
 			if(reactingPace==SexPace.SUB_RESISTING) {
 				sb.append(UtilText.returnStringAtRandom(
-								"[npc.Name] [npc.verb(let)] out [npc.a_sob+] as [npc2.namePos] [npc2.penis+] is revealed.",
-								"[npc.speech(No! Please! Get away from me!)] [npc.name] [npc.sobsVerb] as [npc2.namePos] [npc2.penis+] is revealed."));
+								"[npc.Name] [npc.verb(let)] [npc.a_sob+], когда открывается [npc2.namePos] [npc2.penis+].",
+								"[npc.speech(Нет! Пожалуйста! Уйди от меня!)] [npc.name] [npc.sobsVerb], когда обнаруживается, что [npc2.namePos] [npc2.penis+]."));
 				
 			} else {
 				if(characterBeingRevealed.getPenisType()==PenisType.DILDO) {
-					sb.append("[npc.Name] [npc.verb(grin)] as [npc.she] [npc.verb(see)] that [npc2.nameIs] wearing a strap-on. "
-							+ "[npc.speech(Looking to have a little extra fun, huh?)]"
-						+ "</p>");
+					sb.append("[npc.Name] [npc.verb(grin)], становясь [npc.she], [npc.verb(see)], что на [npc2.nameIs] надет страпон. [npc.speech(Решила добавить немного веселья, а?)]</p>");
 					
 				} else if(characterReacting.getFetishDesire(Fetish.FETISH_PENIS_RECEIVING).isNegative()) {
 					sb.append(UtilText.returnStringAtRandom(
-							"[npc.Name] tuts in disappointment as [npc2.namePos] [npc2.cockSize] [npc2.cock] is revealed, ",
-							"[npc.Name] [npc.verb(let)] out an annoyed whine as [npc2.namePos] [npc2.cockSize] [npc2.cock] is revealed, "));
+							"[npc.Name] разочарованно цокает языком, когда обнаруживается, что [npc2.namePos] [npc2.cockSize] [npc2.cock], ",
+							"[npc.Name] [npc.verb(let)] раздраженно скулит, когда обнаруживается, что [npc2.namePos] [npc2.cockSize] [npc2.cock], "));
 					sb.append(UtilText.returnStringAtRandom(
-							"[npc.speech(I hate cocks!)]",
-							"[npc.speech(Get that thing away from me!)]"));
+							"[npc.speech(Ненавижу члены!)]",
+							"[npc.speech(Убери от меня эту штуку!)]"));
 					
 				} else {
 					SexAreaOrifice orifice = characterReacting.hasVagina()?SexAreaOrifice.VAGINA:SexAreaOrifice.ANUS;
@@ -16281,20 +16151,20 @@ public abstract class GameCharacter implements XMLSaving {
 						if(characterReacting.isFeminine()) {
 							if(characterReacting.isKnowsCharacterArea(CoverableArea.PENIS, characterBeingRevealed)) {
 								sb.append(UtilText.returnStringAtRandom(
-										"[npc.Name] [npc.verb(fail)] to suppress a mocking giggle as [npc2.namePos] [npc2.cockSize] [npc2.cock] is revealed",
-										"[npc.Name] [npc.verb(let)] out a little giggle as [npc2.namePos] [npc2.cockSize] [npc2.cock] is revealed",
-										"[npc.Name] [npc.verb(let)] out a derisive sneer as [npc2.namePos] [npc2.cockSize] [npc2.cock] is revealed"));
+										"[npc.Name] [npc.verb(fail)], подавляя насмешливый смешок, когда обнаруживается, что [npc2.namePos] [npc2.cockSize] [npc2.cock]",
+										"[npc.Name] [npc.verb(let)], тихонько хихикая, когда обнаруживается, что [npc2.namePos] [npc2.cockSize] [npc2.cock]",
+										"[npc.Name] [npc.verb(let)], издавая презрительную усмешку, когда обнаруживается, что [npc2.namePos] [npc2.cockSize] [npc2.cock]"));
 								if(!characterReacting.isMute() && !characterReacting.isSpeechMuffled()) {
 									if(characterBeingRevealed.getPenisRawSizeValue()<PenisLength.ONE_TINY.getMaximumValue()) {
 										sb.append(UtilText.returnStringAtRandom(
-												", [npc.speech(Your little clitty dick is so cute!)]",
-												", [npc.speech(That's just so unbelievably pathetic!)]",
-												", [npc.speech(What a pathetic little cock! I mean, can I even call it a cock?! It's more like a little clit!)]"));
+												", [npc.speech(Твой крошечный клитор-член такой миленький!)]",
+												", [npc.speech(Это просто невероятно жалко!)]",
+												", [npc.speech(Какой жалкий крошечный член! В смысле, можно ли его вообще называть членом?! Это больше похоже на маленькую клитор!)]"));
 									} else {
 										sb.append(UtilText.returnStringAtRandom(
-												", [npc.speech(You're far too small to satisfy me!)]",
-												", [npc.speech(That pathetic little thing is never going to satisfy me!)]",
-												", [npc.speech(~Eugh!~ How disappointing! I'm not going to have much fun with something so pathetically small!)]"));
+												", [npc.speech(Ты слишком мал, чтобы удовлетворить меня!)]",
+												", [npc.speech(Эта жалкая штучка никогда меня не удовлетворит!)]",
+												", [npc.speech(~Фу!~ Какое разочарование! С чем-то настолько жалко маленьким мне будет не особо весело!)]"));
 									}
 								} else {
 									sb.append(".");
@@ -16302,31 +16172,31 @@ public abstract class GameCharacter implements XMLSaving {
 								
 							} else {
 								sb.append(UtilText.returnStringAtRandom(
-										"[npc.Name] [npc.verb(fail)] to suppress a mocking giggle as [npc.she] sees that [npc2.nameHas] got [npc2.a_cockSize] [npc2.cock]",
-										"[npc.Name] [npc.verb(let)] out a surprised laugh as [npc2.namePos] [npc2.cockSize] [npc2.cock] is revealed",
-										"[npc.Name] [npc.verb(let)] out a derisive laugh as [npc.she] sees [npc2.namePos] [npc2.cockSize] [npc2.cock]"));
+										"[npc.Name] [npc.verb(fail)] подавить насмешливый смешок, когда [npc.she] видит, что [npc2.nameHas] получил [npc2.a_cockSize] [npc2.cock]",
+										"[npc.Name] [npc.verb(let)] удивленный смех, когда [npc2.namePos] [npc2.cockSize] [npc2.cock] обнаруживается",
+										"[npc.Name] [npc.verb(let)] насмешливый смех, когда [npc.she] видит, что [npc2.namePos] [npc2.cockSize] [npc2.cock]"));
 								if(!characterReacting.isMute() && !characterReacting.isSpeechMuffled()) {
 									if(characterBeingRevealed.getPenisRawSizeValue()<PenisLength.ONE_TINY.getMaximumValue()) {
 										if(!characterBeingRevealed.getAppearsAsGender(true).getGenderName().isHasPenis()) {
 											sb.append(UtilText.returnStringAtRandom(
-													", [npc.speech(I didn't realise you were [npc2.a_gender]! What a cute little clitty dick you've got!)]",
-													", [npc.speech(Wait, you're [npc2.a_gender]?! What a pathetic little clitty dick you've got!)]"));
+													", [npc.speech(Я и не знала, что ты [npc2.a_gender]! Какой милый маленький клитороподобный член у тебя есть!)]",
+													", [npc.speech(Погоди, ты [npc2.a_gender]?! Какой же у тебя жалкий маленький клитороподобный член!)]"));
 										} else {
 											sb.append(UtilText.returnStringAtRandom(
-													", [npc.speech(What a cute little clitty dick! A shame that it's never going to be enough to satisfy me!)]",
-													", [npc.speech(Hah! Look at that pathetic little thing! You're far too small to satisfy me!)]"));
+													", [npc.speech(Какой миленький клитороподобный член! Жаль, что его никогда не хватит, чтобы удовлетворить меня!)]",
+													", [npc.speech(Ха! Поглядите на эту жалкую крошку! Ты слишком мал, чтобы удовлетворить меня!)]"));
 										}
 									} else {
 										if(characterBeingRevealed.getPenisRawSizeValue()<PenisLength.ONE_TINY.getMaximumValue()) {
 											sb.append(UtilText.returnStringAtRandom(
-													", [npc.speech(What a cute little clitty dick! A shame that it's never going to satisfy me!)]",
-													", [npc.speech(That's just so unbelievably pathetic!)]",
-													", [npc.speech(What a pathetic little cock! I mean, can I even call it a cock?! It's more like a little clit!)]"));
+													", [npc.speech(Какой миленький клитороподобный член! Жаль, что он никогда не удовлетворит меня!)]",
+													", [npc.speech(Это просто невероятно жалко!)]",
+													", [npc.speech(Какой жалкий крошечный член! В смысле, можно ли его вообще называть членом?! Это больше похоже на маленькую клитор!)]"));
 										} else {
 											sb.append(UtilText.returnStringAtRandom(
-													", [npc.speech(You're far too small to satisfy me!)]",
-													", [npc.speech(That pathetic little thing is never going to satisfy me!)]",
-													", [npc.speech(~Eugh!~ How disappointing! I'm not going to have much fun with something so pathetically small!)]"));
+													", [npc.speech(Ты слишком мал, чтобы удовлетворить меня!)]",
+													", [npc.speech(Эта жалкая штучка никогда меня не удовлетворит!)]",
+													", [npc.speech(~Фу!~ Какое разочарование! С чем-то настолько жалко маленьким мне будет не особо весело!)]"));
 										}
 									}
 								} else {
@@ -16337,20 +16207,20 @@ public abstract class GameCharacter implements XMLSaving {
 						} else {
 							if(characterReacting.isKnowsCharacterArea(CoverableArea.PENIS, characterBeingRevealed)) {
 								sb.append(UtilText.returnStringAtRandom(
-										"[npc.Name] [npc.verb(fail)] to suppress a booming, mocking laugh as [npc2.namePos] [npc2.cockSize] [npc2.cock] is revealed",
-										"[npc.Name] [npc.verb(let)] out a grunt as [npc2.namePos] [npc2.cockSize] [npc2.cock] is revealed",
-										"[npc.Name] [npc.verb(let)] out a derisive grunt as [npc2.namePos] [npc2.cockSize] [npc2.cock] is revealed"));
+										"[npc.Name] [npc.verb(fail)], подавляя громогласный издевательский смех, когда [npc2.namePos] [npc2.cockSize] [npc2.cock] предстает миру",
+										"[npc.Name] [npc.verb(let)], издав ворчание, когда [npc2.namePos] [npc2.cockSize] [npc2.cock] предстает миру",
+										"[npc.Name] [npc.verb(let)], издав презрительное ворчание, когда [npc2.namePos] [npc2.cockSize] [npc2.cock] предстает миру"));
 								if(!characterReacting.isMute() && !characterReacting.isSpeechMuffled()) {
 									if(characterBeingRevealed.getPenisRawSizeValue()<PenisLength.ONE_TINY.getMaximumValue()) {
 										sb.append(UtilText.returnStringAtRandom(
-												", [npc.speech(That thing's more like a clit than a real cock!)]",
-												", [npc.speech(That's just so unbelievably pathetic!)]",
-												", [npc.speech(Your cock is just so pathetic! Hah!)]"));
+												", [npc.speech(Эта штука больше похожа на клитор, чем на настоящий член!)]",
+												", [npc.speech(Это просто невероятно жалко!)]",
+												", [npc.speech(Твой член просто такой жалкий! Ха!)]"));
 									} else {
 										sb.append(UtilText.returnStringAtRandom(
-												", [npc.speech(You can't expect me to take that little thing seriously!)]",
-												", [npc.speech(That's just so unbelievably pathetic!)]",
-												", [npc.speech(Your cock is just so pathetic! Hah!)]"));
+												", [npc.speech(Ты не можешь ожидать, что я буду воспринимать эту крошку всерьез!)]",
+												", [npc.speech(Это просто невероятно жалко!)]",
+												", [npc.speech(Твой член просто такой жалкий! Ха!)]"));
 									}
 								} else {
 									sb.append(".");
@@ -16358,24 +16228,24 @@ public abstract class GameCharacter implements XMLSaving {
 								
 							} else {
 								sb.append(UtilText.returnStringAtRandom(
-										"[npc.Name] [npc.verb(let)] out a booming, mocking laugh as [npc2.namePos] [npc2.cockSize] [npc2.cock] is revealed",
-										"[npc.Name] [npc.verb(let)] out an unamused grunt as [npc2.namePos] [npc2.cockSize] [npc2.cock] is revealed",
-										"[npc.Name] [npc.verb(let)] out a derisive grunt as [npc.she] sees that [npc2.nameHas] got [npc2.a_cockSize] [npc2.cock]"));
+										"[npc.Name] [npc.verb(let)] громким, издевательским смехом, когда [npc2.namePos] [npc2.cockSize] [npc2.cock] предстает во всей красе",
+										"[npc.Name] [npc.verb(let)] недовольным ворчанием, когда [npc2.namePos] [npc2.cockSize] [npc2.cock] предстает во всей красе",
+										"[npc.Name] [npc.verb(let)] издает насмешливое хмыканье, когда [npc.she] видит, что [npc2.nameHas] получил [npc2.a_cockSize] [npc2.cock]"));
 								if(!characterReacting.isMute() && !characterReacting.isSpeechMuffled()) {
 									if(!characterBeingRevealed.getAppearsAsGender(true).getGenderName().isHasPenis()) {
 										sb.append(UtilText.returnStringAtRandom(
-												", [npc.speech(Is that pathetic little thing your cock?! I didn't realise you were [npc2.a_gender]!)]",
-												", [npc.speech(Wait, you're [npc2.a_gender]?! What a pathetic excuse for a cock you've got!)]"));
+												", [npc.speech(Это и есть твой жалкий крошечный член?! Не знала, что ты [npc2.a_gender]!)]",
+												", [npc.speech(Погоди, ты [npc2.a_gender]?! Ну и жалкое же у тебя члено!)]"));
 									} else {
 										if(characterBeingRevealed.getPenisRawSizeValue()<PenisLength.ONE_TINY.getMaximumValue()) {
 											sb.append(UtilText.returnStringAtRandom(
-													", [npc.speech(What a pathetic little thing!)]",
-													", [npc.speech(That's just so unbelievably pathetic!)]",
-													", [npc.speech(What a pathetic little cock! I mean, can I even call it a cock?!)]"));
+													", [npc.speech(Какая жалкая крошка!)]",
+													", [npc.speech(Это просто невероятно жалко!)]",
+													", [npc.speech(Какой жалкий член! В смысле, его вообще можно назвать членом?!)]"));
 										} else {
 											sb.append(UtilText.returnStringAtRandom(
-													", [npc.speech(That thing's got to be too small to satisfy anyone!)]",
-													", [npc.speech(That pathetic little thing is never going to satisfy anyone!)]"));
+													", [npc.speech(Эта штука слишком мала, чтобы кого-то удовлетворить!)]",
+													", [npc.speech(Эта жалкая крошка никогда никого не удовлетворит!)]"));
 										}
 									}
 								} else {
@@ -16387,76 +16257,76 @@ public abstract class GameCharacter implements XMLSaving {
 					} else if(characterBeingRevealed.isFullPenetrationTooShort(SexAreaPenetration.PENIS, characterReacting, orifice, false)) {
 						if(characterReacting.isKnowsCharacterArea(CoverableArea.PENIS, characterBeingRevealed)) {
 							sb.append(UtilText.returnStringAtRandom(
-									"[npc.Name] [npc.verb(let)] out a hungry [npc.moan] as [npc2.namePos] [npc2.cockSize] [npc2.cock] is revealed",
-									"[npc.Name] [npc.verb(let)] out a delighted [npc.moan] as [npc2.namePos] [npc2.cockSize] [npc2.cock] is revealed",
-									"[npc.Name] [npc.verb(let)] out a happy [npc.moan] as [npc2.namePos] [npc2.cockSize] [npc2.cock] is revealed"));
+									"[npc.Name] [npc.verb(let)] голодным [npc.moan], когда [npc2.namePos] [npc2.cockSize] [npc2.cock] предстает во всей красе",
+									"[npc.Name] [npc.verb(let)] из восторженного [npc.moan], когда открывается [npc2.namePos] [npc2.cockSize] [npc2.cock]",
+									"[npc.Name] [npc.verb(let)] из радостного [npc.moan], когда открывается [npc2.namePos] [npc2.cockSize] [npc2.cock]"));
 							sb.append(UtilText.returnStringAtRandom(
-									", [npc.speech(Your cock's looking good!)]",
-									", [npc.speech(Oh yeah, your cock's looking real good!)]",
-									", [npc.speech(Come on, put that cock of yours to use!)]"));
+									", [npc.speech(Твой член выглядит отлично!)]",
+									", [npc.speech(О да, твой член выглядит просто супер!)]",
+									", [npc.speech(Давай же, используй свой член по назначению!)]"));
 							
 						} else {
 							sb.append(UtilText.returnStringAtRandom(
-									"[npc.Name] [npc.verb(fail)] to suppress a flustered [npc.moan] as [npc.she] sees that [npc2.nameHas] got [npc2.a_cockSize] [npc2.cock]",
-									"[npc.Name] [npc.verb(let)] out a surprised [npc.moan] as [npc2.namePos] [npc2.cockSize] [npc2.cock] is revealed",
-									"[npc.Name] [npc.verb(let)] out a startled [npc.moan] as [npc.she] sees [npc2.namePos] [npc2.cockSize] [npc2.cock]"));
+									"[npc.Name] [npc.verb(fail)], подавляя смущенный [npc.moan], когда [npc.she] видит, что [npc2.nameHas] получил [npc2.a_cockSize] [npc2.cock]",
+									"[npc.Name] [npc.verb(let)] из удивленного [npc.moan], когда открывается [npc2.namePos] [npc2.cockSize] [npc2.cock]",
+									"[npc.Name] [npc.verb(let)] из испуганного [npc.moan], когда [npc.she] видит [npc2.namePos] [npc2.cockSize] [npc2.cock]"));
 							if(!characterBeingRevealed.getAppearsAsGender(true).getGenderName().isHasPenis()) {
 								sb.append(UtilText.returnStringAtRandom(
-										", [npc.speech(Hey! I didn't realise you were [npc2.a_gender]! Well, whatever...)]",
-										", [npc.speech(Wait, you're [npc2.a_gender]?! Well, whatever...)]"));
+										", [npc.speech(Эй! Я и не знала, что ты [npc2.a_gender]! Ну, да ладно...)]",
+										", [npc.speech(Погоди, ты [npc2.a_gender]?! Ну, неважно...)]"));
 							} else {
 								sb.append(UtilText.returnStringAtRandom(
-										", [npc.speech(That's a nice cock you've got...)]",
-										", [npc.speech(~Mmm!~ That's a nice-looking cock...)]"));
+										", [npc.speech(А у тебя славный член...)]",
+										", [npc.speech(~Ммм!~ Какой симпатичный член...)]"));
 							}
 						}
 						
 					} else if(characterBeingRevealed.isFullPenetrationTooLong(SexAreaPenetration.PENIS, characterReacting, orifice, false)) {
 						if(characterReacting.isKnowsCharacterArea(CoverableArea.PENIS, characterBeingRevealed)) {
 							sb.append(UtilText.returnStringAtRandom(
-									"[npc.Name] [npc.verb(let)] out a hungry [npc.moan] as [npc2.namePos] [npc2.cockSize] [npc2.cock] is revealed",
-									"[npc.Name] [npc.verb(let)] out a delighted [npc.moan] as [npc2.namePos] [npc2.cockSize] [npc2.cock] is revealed",
-									"[npc.Name] [npc.verb(let)] out a happy [npc.moan] as [npc2.namePos] [npc2.cockSize] [npc2.cock] is revealed"));
+									"[npc.Name] [npc.verb(let)] голодным [npc.moan], когда [npc2.namePos] [npc2.cockSize] [npc2.cock] предстает во всей красе",
+									"[npc.Name] [npc.verb(let)] из восторженного [npc.moan], когда открывается [npc2.namePos] [npc2.cockSize] [npc2.cock]",
+									"[npc.Name] [npc.verb(let)] из радостного [npc.moan], когда открывается [npc2.namePos] [npc2.cockSize] [npc2.cock]"));
 							if(Main.game.isPenetrationLimitationsEnabled()) {
 								if(characterReacting.hasFetish(Fetish.FETISH_SIZE_QUEEN)) {
 									sb.append(UtilText.returnStringAtRandom(
-											", [npc.speech(Oh, fuck yes! I want your huge cock <i>deep</i> inside of me!)]",
-											", [npc.speech(~Ooh!~ I want your huge cock pushing <i>deep</i> inside of me!)]",
-											", [npc.speech(Oh yeah! I want your huge cock hilted <i>deep</i> inside of me!)]"));
+											", [npc.speech(О, черт возьми, да! Я хочу, чтобы твой огромный член <i>глубоко</i> был внутри меня!)]",
+											", [npc.speech(~О-о!~ Я хочу чувствовать, как твой огромный член <i>глубоко</i> входит в меня!)]",
+											", [npc.speech(О да! Я хочу, чтобы твой огромный член вошел <i>глубоко</i> в меня!)]"));
 								} else {
 									sb.append(UtilText.returnStringAtRandom(
-											", [npc.speech(Your cock's so huge! It might be too big for me...)]",
-											", [npc.speech(Your cock's massive... There's no way it's all going to fit...)]",
-											", [npc.speech(Wow! Your cock's just so huge! It might be <i>too</i> huge...)]"));
+											", [npc.speech(Твой член такой огромный! Он может оказаться слишком большим для меня...)]",
+											", [npc.speech(Твой член просто массивный... Он вряд ли поместится целиком...)]",
+											", [npc.speech(Вау! Твой член такой огромный! Он может быть <i>слишком</i> большим...)]"));
 								}
 								
 							} else {
 								sb.append(UtilText.returnStringAtRandom(
-										", [npc.speech(Your cock's so huge!)]",
-										", [npc.speech(Your cock's massive!)]",
-										", [npc.speech(Your cock really is so huge!)]"));
+										", [npc.speech(Твой член такой огромный!)]",
+										", [npc.speech(Твой член просто массивный!)]",
+										", [npc.speech(Твой член и правда такой огромный!)]"));
 							}
 							
 						} else {
 							sb.append(UtilText.returnStringAtRandom(
-									"[npc.Name] [npc.verb(fail)] to suppress [npc.a_moan] as [npc.she] sees that [npc2.nameHas] got [npc2.a_cockSize] [npc2.cock]",
-									"[npc.Name] [npc.verb(let)] out [npc.a_moan] as [npc2.namePos] [npc2.cockSize] [npc2.cock] is revealed",
-									"[npc.Name] [npc.verb(let)] out [npc.a_moan] as [npc.she] sees [npc2.namePos] [npc2.cockSize] [npc2.cock]"));
+									"[npc.Name] [npc.verb(fail)] подавить [npc.a_moan], так как [npc.she] видит, что [npc2.nameHas] получил [npc2.a_cockSize] [npc2.cock]",
+									"[npc.Name] [npc.verb(let)] наружу [npc.a_moan], когда [npc2.namePos] [npc2.cockSize] [npc2.cock] открывается",
+									"[npc.Name] [npc.verb(let)] наружу [npc.a_moan], когда [npc.she] видит, что [npc2.namePos] [npc2.cockSize] [npc2.cock]"));
 							if(Main.game.isPenetrationLimitationsEnabled()) {
 								if(characterReacting.hasFetish(Fetish.FETISH_SIZE_QUEEN)) {
 									sb.append(UtilText.returnStringAtRandom(
-											", [npc.speech(Oh, fuck yes! Your cock's so huge! I want it <i>deep</i> inside of me!)]",
-											", [npc.speech(~Ooh!~ Your cock's so massive! That's going to feel <i>amazing</i>!)]",
-											", [npc.speech(Wow! Your cock's so huge! I want it hilted <i>deep</i> inside of me!)]"));
+											", [npc.speech(О, черт возьми, да! Твой член такой огромный! Я хочу, чтобы он был <i>глубоко</i> внутри меня!)]",
+											", [npc.speech(~О-о-ох!~~ Твой член такой массивный! Это будет <i>потрясающе</i>!)]",
+											", [npc.speech(Вау! Твой член такой огромный! Я хочу, чтобы он вошел в меня <i>по самую рукоять</i>!)]"));
 								} else {
 									sb.append(UtilText.returnStringAtRandom(
-											", [npc.speech(That thing's huge! There's no way it's all going to fit!)]",
-											", [npc.speech(No way! Your cock's far too big for me!)]"));
+											", [npc.speech(Эта штука просто огромная! Не верится, что всё это влезет!)]",
+											", [npc.speech(Да ладно! Твой член слишком велик для меня!)]"));
 								}
 							} else {
 								sb.append(UtilText.returnStringAtRandom(
-										", [npc.speech(That thing's huge! This is going to be good!)]",
-										", [npc.speech(No way! Your cock's so huge!)]"));
+										", [npc.speech(Эта штука просто огромная! Это будет круто!)]",
+										", [npc.speech(Да ладно! Твой член просто огромный!)]"));
 							}
 						}
 						
@@ -16464,40 +16334,40 @@ public abstract class GameCharacter implements XMLSaving {
 						if(Main.game.isPenetrationLimitationsEnabled()) {
 							if(characterReacting.hasFetish(Fetish.FETISH_SIZE_QUEEN)) {
 								sb.append(UtilText.returnStringAtRandom(
-										"[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc2.namePos] [npc2.cockSize] [npc2.cock] is revealed"));
+										"[npc.Name] [npc.verb(let)] [npc.a_moan+] как [npc2.namePos] [npc2.cockSize] [npc2.cock] становится явным"));
 								sb.append(UtilText.returnStringAtRandom(
-										", [npc.speech(Oh, fuck yes! I want your massive cock pushed as <i>deep</i> as possible inside of me!)]",
-										", [npc.speech(~Ooh!~ Yes! I want your massive cock thrusting as <i>deep</i> as possible inside of me!)]",
-										", [npc.speech(Oh yeah! I want your massive cock rammed as <i>deep</i> as it'll go inside of me!)]"));
+										", [npc.speech(О, черт возьми, да! Я хочу, чтобы твой массивный член входил в меня как можно <i>глубже</i>!)]",
+										", [npc.speech(~О-о-о!~ Да! Я хочу, чтобы твой массивный член входил в меня как можно <i>глубже</i>!)]",
+										", [npc.speech(О да! Я хочу, чтобы твой массивный член входил в меня так <i>глубоко</i>, насколько это вообще возможно!)]"));
 							} else {
 								sb.append(UtilText.returnStringAtRandom(
-										"[npc.Name] [npc.verb(let)] out nervous [npc.moan] as [npc2.namePos] [npc2.cockSize] [npc2.cock] is revealed",
-										"[npc.Name] [npc.verb(let)] out a worried-sounding [npc.moan] as [npc2.namePos] [npc2.cockSize] [npc2.cock] is revealed",
-										"[npc.Name] [npc.verb(let)] out a nervous [npc.moan] as [npc2.namePos] [npc2.cockSize] [npc2.cock] is revealed"));
+										"[npc.Name] [npc.verb(let)] [npc.moan] нервный, когда [npc2.namePos] [npc2.cockSize] [npc2.cock] становится явным",
+										"[npc.Name] [npc.verb(let)] тревожный [npc.moan], когда [npc2.namePos] [npc2.cockSize] [npc2.cock] становится явным",
+										"[npc.Name] [npc.verb(let)] нервный [npc.moan], когда [npc2.namePos] [npc2.cockSize] [npc2.cock] становится явным"));
 								sb.append(UtilText.returnStringAtRandom(
-										", [npc.speech(That thing is never going to fit inside of me! You're far too big!)]",
-										", [npc.speech(Your cock's far too big! There's no way it's ever going to fit!)]",
-										", [npc.speech(There's no way I can fit something that huge inside of me!)]"));
+										", [npc.speech(Эта штука никогда не влезет в меня! Ты слишком большой!)]",
+										", [npc.speech(Твой член слишком велик! Он просто никак не влезет!)]",
+										", [npc.speech(Да во что бы то ни стало, я не смогу вместить в себя нечто настолько огромное!)]"));
 							}
 							
 						} else {
 							if(characterReacting.isKnowsCharacterArea(CoverableArea.PENIS, characterBeingRevealed)) {
 								sb.append(UtilText.returnStringAtRandom(
-										"[npc.Name] [npc.verb(let)] out a hungry [npc.moan] as [npc2.namePos] [npc2.cockSize] [npc2.cock] is revealed",
-										"[npc.Name] [npc.verb(let)] out a delighted [npc.moan] as [npc2.namePos] [npc2.cockSize] [npc2.cock] is revealed",
-										"[npc.Name] [npc.verb(let)] out a happy [npc.moan] as [npc2.namePos] [npc2.cockSize] [npc2.cock] is revealed"));
+										"[npc.Name] [npc.verb(let)] голодным [npc.moan], когда [npc2.namePos] [npc2.cockSize] [npc2.cock] предстает во всей красе",
+										"[npc.Name] [npc.verb(let)] из восторженного [npc.moan], когда открывается [npc2.namePos] [npc2.cockSize] [npc2.cock]",
+										"[npc.Name] [npc.verb(let)] из радостного [npc.moan], когда открывается [npc2.namePos] [npc2.cockSize] [npc2.cock]"));
 								sb.append(UtilText.returnStringAtRandom(
-										", [npc.speech(I can't believe how massive your cock is! I doubt anyone's got a bigger one than you...)]",
-										", [npc.speech(Oh yeah, bring that gigantic cock of yours over to me!)]",
-										", [npc.speech(Your cock's so huge! I don't think I'll ever get tired of it!)]"));
+										", [npc.speech(Поверить не могу, какой у тебя массивный член! Сомневаюсь, что у кого-то он больше твоего...)]",
+										", [npc.speech(О да, направь свой гигантский член прямо на меня!)]",
+										", [npc.speech(Твой член такой огромный! Не думаю, что я когда-нибудь им насыщусь!)]"));
 							} else {
 								sb.append(UtilText.returnStringAtRandom(
-										"[npc.Name] [npc.verb(fail)] to suppress [npc.a_moan+] as [npc.she] sees that [npc2.nameHas] got [npc2.a_cockSize] [npc2.cock]",
-										"[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc2.namePos] [npc2.cockSize] [npc2.cock] is revealed",
-										"[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] sees [npc2.namePos] [npc2.cockSize] [npc2.cock]"));
+										"[npc.Name] [npc.verb(fail)], чтобы подавить [npc.a_moan+], пока [npc.she] видит, что [npc2.nameHas] получил [npc2.a_cockSize] [npc2.cock]",
+										"[npc.Name] [npc.verb(let)] [npc.a_moan+] как [npc2.namePos] [npc2.cockSize] [npc2.cock] становится явным",
+										"[npc.Name] [npc.verb(let)] [npc.a_moan+], пока [npc.she] видит, что [npc2.namePos] [npc2.cockSize] [npc2.cock]"));
 								sb.append(UtilText.returnStringAtRandom(
-										", [npc.speech(What?! Holy shit! Your cock's <i>huge</i>!)]",
-										", [npc.speech(Holy shit! I could see it was huge from your bulge, but... well... it's <i>massive</i>!)]"));
+										", [npc.speech(Что?! Матерь божья! Твой член <i>огромный</i>!)]",
+										", [npc.speech(Охренеть! По твоему бугру было видно, что он большой, но... ну... он просто <i>массивный</i>!)]"));
 							}
 						}
 					}
@@ -16506,57 +16376,50 @@ public abstract class GameCharacter implements XMLSaving {
 			
 		} else {
 			if(characterBeingRevealed.getPenisType()==PenisType.DILDO) {
-				sb.append("[npc.Name] grins as [npc.she] reveals the fact that [npc.sheIs] wearing a strap-on. "
-						+ "[npc.speech(Time for a little extra fun!)]");
+				sb.append("[npc.Name] ухмыляется, когда [npc.she] обнаруживает, что на [npc.sheIs] надет страпон. [npc.speech(Время для небольшого дополнительного веселья!)]");
 				
 			} else {
 				if(characterReacting.isAreaKnownByCharacter(CoverableArea.PENIS, characterBeingRevealed) || !isFeminine()) {
 					switch(selfPace) {
 						case DOM_GENTLE:
-							sb.append("[npc.Name] lets out a soft [npc.moan] as [npc.her] [npc.cock+] is revealed.");
+							sb.append("[npc.Name] издает тихий [npc.moan], когда обнаруживается, что [npc.her] [npc.cock+].");
 							break;
 						case DOM_NORMAL:
-							sb.append("[npc.Name] lets out an excited [npc.moan] as [npc.her] [npc.cock+] is revealed.");
+							sb.append("[npc.Name] издает возбужденный [npc.moan], когда [npc.her] [npc.cock+] предстает перед взором.");
 							break;
 						case DOM_ROUGH:
-							sb.append("[npc.Name] grins as [npc.her] [npc.cock+] is revealed.");
+							sb.append("[npc.Name] ухмыляется, когда [npc.her] [npc.cock+] предстает перед взором.");
 							break;
 						case SUB_EAGER:
-							sb.append("[npc.Name] lets out an excited [npc.moan] as [npc.her] [npc.cock+] is revealed.");
+							sb.append("[npc.Name] издает возбужденный [npc.moan], когда [npc.her] [npc.cock+] предстает перед взором.");
 							break;
 						case SUB_NORMAL:
-							sb.append("[npc.Name] lets out [npc.a_moan] as [npc.her] [npc.cock+] is revealed.");
+							sb.append("[npc.Name] издает [npc.a_moan], когда [npc.her] [npc.cock+] предстает перед взором.");
 							break;
 						case SUB_RESISTING:
-							sb.append("[npc.Name] lets out [npc.a_sob+] and tries to pull away as [npc.her] [npc.cock+] is revealed.");
+							sb.append("[npc.Name] издает [npc.a_sob+] и пытается вырваться, когда [npc.her] [npc.cock+] предстает перед взором.");
 							break;
 					}
 				
 				} else {
 					switch(selfPace) {
 						case DOM_GENTLE:
-							sb.append("[npc.Name] lets out a soft giggle as [npc.her] [npc.cock+] is revealed,"
-										+ " [npc.speech(Let's have some fun!)]");
+							sb.append("[npc.Name] тихо хихикает, когда [npc.her] [npc.cock+] предстает перед взором, [npc.speech(Давай повеселимся!)]");
 							break;
 						case DOM_NORMAL:
-							sb.append("[npc.Name] lets out a playful giggle as [npc.her] [npc.cock+] is revealed,"
-										+ " [npc.speech(That look on your face is priceless! Now let's have some fun!)]");
+							sb.append("[npc.Name] игриво хихикает, когда [npc.her] [npc.cock+] предстает перед взором, [npc.speech(Твое лицо сейчас — просто бесценно! А теперь давай повеселимся!)]");
 							break;
 						case DOM_ROUGH:
-							sb.append("[npc.Name] lets out a laugh as [npc.her] [npc.cock+] is revealed,"
-										+ " [npc.speech(Hah! I bet you didn't expect this!)]");
+							sb.append("[npc.Name] смеется, когда [npc.her] [npc.cock+] предстает перед взором, [npc.speech(Ха! Бьюсь об заклад, ты этого не ожидал!)]");
 							break;
 						case SUB_EAGER:
-							sb.append("[npc.Name] lets out a playful giggle as [npc.her] [npc.cock+] is revealed,"
-										+ " [npc.speech(That look on your face is priceless! Now let's have some fun!)]");
+							sb.append("[npc.Name] игриво хихикает, когда [npc.her] [npc.cock+] предстает перед взором, [npc.speech(Твое лицо сейчас — просто бесценно! А теперь давай повеселимся!)]");
 							break;
 						case SUB_NORMAL:
-							sb.append("[npc.Name] lets out [npc.a_moan] as [npc.her] [npc.cock+] is revealed,"
-										+ " [npc.speech(Let's have some fun!)]");
+							sb.append("[npc.Name] издает [npc.a_moan], когда [npc.her] [npc.cock+] предстает перед взором, [npc.speech(Давай повеселимся!)]");
 							break;
 						case SUB_RESISTING:
-							sb.append("[npc.Name] lets out [npc.a_sob] and tries to pull away as [npc.her] [npc.cock+] is revealed,"
-										+ " [npc.speech(Leave me alone!)]");
+							sb.append("[npc.Name] издает [npc.a_sob] и пытается отстраниться, когда открывается [npc.her] [npc.cock+], [npc.speech(Оставь меня в покое!)]");
 							break;
 					}
 				}
@@ -16590,62 +16453,62 @@ public abstract class GameCharacter implements XMLSaving {
 			if(reactingPace!=SexPace.SUB_RESISTING
 					&& characterReacting.getFetishDesire(Fetish.FETISH_VAGINAL_GIVING).isNegative()) {
 				sb.append(UtilText.returnStringAtRandom(
-						"[npc.Name] [npc.verb(tut)] in disappointment as [npc2.namePos] [npc2.pussy+] is revealed, ",
-						"[npc.Name] [npc.verb(let)] out an annoyed whine as [npc2.namePos] [npc2.pussy+] is revealed, "));
+						"[npc.Name] [npc.verb(tut)] с разочарованием, когда открывается [npc2.namePos] [npc2.pussy+], ",
+						"[npc.Name] [npc.verb(let)] раздраженное поскуливание, когда открывается [npc2.namePos] [npc2.pussy+], "));
 				sb.append(UtilText.returnStringAtRandom(
-						"[npc.speech(I hate pussies!)]",
-						"[npc.speech(I'm not touching that!)]"));
+						"[npc.speech(Ненавижу кисок!)]",
+						"[npc.speech(Я к этому не прикоснусь!)]"));
 					
 			} else {
 				if(reactingPace!=SexPace.SUB_RESISTING && !characterBeingRevealed.getAppearsAsGender(true).getGenderName().isHasVagina() && !characterReacting.isKnowsCharacterArea(CoverableArea.VAGINA, characterBeingRevealed)) {
-					sb.append("[npc.Name] [npc.verb(look)] surprised as [npc.she]  [npc.verb(exclaim)], ");
+					sb.append("[npc.Name] [npc.verb(look)] от неожиданности, когда [npc.she] [npc.verb(exclaim)], ");
 					sb.append(UtilText.returnStringAtRandom(
-							"[npc.speech(Hey! I didn't realise you were [npc2.a_gender]! Well, whatever...)]",
-							"[npc.speech(Wait, you're [npc2.a_gender]?! Well, whatever...)]"));
+							"[npc.speech(Эй! Я и не знал, что ты [npc2.a_gender]! Ну да ладно...)]",
+							"[npc.speech(Погоди, ты [npc2.a_gender]?! Ну да ладно...)]"));
 					sb.append("<br/>");
 				}
 				switch(reactingPace) {
 					case DOM_GENTLE:
-						sb.append("[npc.Name] [npc.verb(let)] out a soft [npc.moan] as [npc.she] [npc.verb(see)] ");
+						sb.append("[npc.Name] [npc.verb(let)] тихий [npc.moan], пока [npc.she] [npc.verb(see)] ");
 						sb.append(Main.sex.hasLubricationTypeFromAnyone(characterBeingRevealed, SexAreaOrifice.VAGINA, LubricationType.GIRLCUM)
-                                ? "[npc2.namePos] wet [npc2.pussy] betraying [npc2.her] arousal, "
+                                ? "влажное [npc2.pussy] [npc2.namePos], выдающее [npc2.her] возбуждение, "
                                 : "[npc2.namePos] [npc2.pussy+], ");
 						sb.append(this.hasPenis()
-                                ? "[npc.speech(You're going to love this, I promise...)]"
-                                : "[npc.speech(I'll make this feel good, I promise...)]");
+                                ? "[npc.speech(Тебе понравится, обещаю...)]"
+                                : "[npc.speech(Я сделаю так, чтобы тебе было хорошо, обещаю...)]");
 						break;
 					case DOM_NORMAL:
-						sb.append("[npc.Name] [npc.verb(let)] out a soft [npc.moan] as [npc.she] [npc.verb(see)] ");
+						sb.append("[npc.Name] [npc.verb(let)] тихий [npc.moan], пока [npc.she] [npc.verb(see)] ");
 						sb.append(Main.sex.hasLubricationTypeFromAnyone(characterBeingRevealed, SexAreaOrifice.VAGINA, LubricationType.GIRLCUM)
-								? "[npc2.namePos] wet [npc2.pussy] betraying [npc2.her] arousal, "
+								? "влажное [npc2.pussy] [npc2.namePos], выдающее [npc2.her] возбуждение, "
 								: "[npc2.namePos] [npc2.pussy+], ");
 						sb.append(this.hasPenis()
-								?"[npc.speech(You're going to be a good fuck!)]"
-								:"[npc.speech(This is going to be fun!)]");
+								?"[npc.speech(Из тебя получится отличная трахалка!)]"
+								:"[npc.speech(Это будет весело!)]");
 						break;
 					case DOM_ROUGH:
-						sb.append("[npc.Name] [npc.verb(smirk)] when [npc.she] [npc.verb(see)] ");
+						sb.append("[npc.Name] [npc.verb(smirk)], когда [npc.she] [npc.verb(see)] ");
 						sb.append(Main.sex.hasLubricationTypeFromAnyone(characterBeingRevealed, SexAreaOrifice.VAGINA, LubricationType.GIRLCUM)
-								? "[npc2.namePos] wet [npc2.pussy] betraying [npc2.her] arousal, "
+								? "влажное [npc2.pussy] [npc2.namePos], выдающее [npc2.her] возбуждение, "
 								: "[npc2.namePos] [npc2.pussy+], ");
 						sb.append(this.hasPenis()
-								?"[npc.speech(Ready for a good hard fucking, slut?)]"
-								:"[npc.speech(Looking good, slut!)]");
+								?"[npc.speech(Готова к хорошему жесткому траху, шлюшка?)]"
+								:"[npc.speech(Выглядишь отлично, шлюшка!)]");
 						break;
 					case SUB_EAGER:
-						sb.append("[npc.NamePos] eyes light up when [npc.she] [npc.verb(see)] ");
+						sb.append("[npc.NamePos] глаза загораются, когда [npc.she] [npc.verb(see)] ");
 						sb.append(Main.sex.hasLubricationTypeFromAnyone(characterBeingRevealed, SexAreaOrifice.VAGINA, LubricationType.GIRLCUM)
-								? "[npc2.namePos] wet [npc2.pussy] betraying [npc2.her] arousal."
+								? "[npc2.namePos] влажные [npc2.pussy] выдают [npc2.her] возбуждение."
 								: "[npc2.namePos] [npc2.pussy].");
 						break;
 					case SUB_NORMAL:
-						sb.append("[npc.Name] [npc.verb(let)] out [npc.a_moan] as [npc2.namePos] [npc2.pussy+] is revealed.");
+						sb.append("[npc.Name] [npc.verb(let)] наружу [npc.a_moan], когда открывается [npc2.namePos] [npc2.pussy+].");
 						break;
 					case SUB_RESISTING:
-						sb.append("[npc.Name] [npc.verb(try)] to pull away from [npc2.name] as ");
+						sb.append("[npc.Name] [npc.verb(try)], пытаясь отстраниться от [npc2.name], когда ");
 						sb.append(Main.sex.hasLubricationTypeFromAnyone(characterBeingRevealed, SexAreaOrifice.VAGINA, LubricationType.GIRLCUM)
-								? "[npc2.namePos] wet [npc2.pussy] is revealed."
-								: "[npc2.namePos] [npc2.pussy+] is revealed.");
+								? "обнажается мокрая [npc2.namePos] [npc2.pussy]."
+								: "Обнажается [npc2.namePos] [npc2.pussy+].");
 						break;
 				}
 			}
@@ -16653,22 +16516,22 @@ public abstract class GameCharacter implements XMLSaving {
 		} else if(this.isAreaKnownByCharacter(CoverableArea.VAGINA, Main.game.getPlayer()) || !characterReacting.equals(Main.game.getPlayer()) || isFeminine()) {
 			switch(selfPace) {
 				case DOM_GENTLE:
-					sb.append(UtilText.parse(characterBeingRevealed, "[npc.Name] lets out a soft [npc.moan] as [npc.her] [npc.pussy+] is revealed."));
+					sb.append(UtilText.parse(characterBeingRevealed, "[npc.Name] издает тихий [npc.moan], когда обнажается [npc.her] [npc.pussy+]."));
 					break;
 				case DOM_NORMAL:
-					sb.append(UtilText.parse(characterBeingRevealed, "[npc.Name] lets out an excited [npc.moan] as [npc.her] [npc.pussy+] is revealed."));
+					sb.append(UtilText.parse(characterBeingRevealed, "[npc.Name] издает возбужденный [npc.moan], когда обнажается [npc.her] [npc.pussy+]."));
 					break;
 				case DOM_ROUGH:
-					sb.append(UtilText.parse(characterBeingRevealed, "[npc.Name] grins as [npc.her] [npc.pussy+] is revealed."));
+					sb.append(UtilText.parse(characterBeingRevealed, "[npc.Name] ухмыляется, когда обнажается [npc.her] [npc.pussy+]."));
 					break;
 				case SUB_EAGER:
-					sb.append(UtilText.parse(characterBeingRevealed, "[npc.Name] lets out an excited [npc.moan] as [npc.her] [npc.pussy+] is revealed."));
+					sb.append(UtilText.parse(characterBeingRevealed, "[npc.Name] издает возбужденный [npc.moan], когда обнажается [npc.her] [npc.pussy+]."));
 					break;
 				case SUB_NORMAL:
-					sb.append(UtilText.parse(characterBeingRevealed, "[npc.Name] lets out [npc.a_moan] as [npc.her] [npc.pussy+] is revealed."));
+					sb.append(UtilText.parse(characterBeingRevealed, "[npc.Name] издает [npc.a_moan], когда обнажается [npc.her] [npc.pussy+]."));
 					break;
 				case SUB_RESISTING:
-					sb.append(UtilText.parse(characterBeingRevealed, "[npc.Name] lets out [npc.a_sob] and tries to pull away from you as [npc.her] [npc.pussy+] is revealed."));
+					sb.append(UtilText.parse(characterBeingRevealed, "[npc.Name] издает [npc.a_sob] и пытается отстраниться от тебя, когда обнажается [npc.her] [npc.pussy+]."));
 					break;
 			}
 
@@ -16676,33 +16539,27 @@ public abstract class GameCharacter implements XMLSaving {
 			switch(selfPace) {
 				case DOM_GENTLE:
 					sb.append(UtilText.parse(characterBeingRevealed,
-							"[npc.Name] [npc.verb(let)] out a soft [npc.moan] as [npc.her] [npc.pussy+] is revealed,"
-								+ " [npc.speech(~Mmm!~ Like what you see?)]"));
+							"[npc.Name] [npc.verb(let)] тихий [npc.moan], когда обнажается [npc.her] [npc.pussy+], [npc.speech(~Ммм!~ Нравится то, что видишь?)]"));
 					break;
 				case DOM_NORMAL:
 					sb.append(UtilText.parse(characterBeingRevealed,
-							"[npc.Name] [npc.verb(let)] out an excited [npc.moan] as [npc.she] sees you staring at [npc.her] [npc.pussy+],"
-								+ " [npc.speech(This is going to be good!)]"));
+							"[npc.Name] [npc.verb(let)] возбужденный [npc.moan], когда [npc.she] замечает, что ты пялишься на ее [npc.her] [npc.pussy+], [npc.speech(Это будет весело!)]"));
 					break;
 				case DOM_ROUGH:
 					sb.append(UtilText.parse(characterBeingRevealed,
-							"[npc.Name] [npc.verb(grin)] as [npc.she] sees you staring at [npc.her] [npc.pussy+],"
-								+ " [npc.speech(Time to see what a bitch like you can do!)]"));
+							"[npc.Name] [npc.verb(grin)], когда [npc.she] видит, как ты пялишься на ее [npc.her] [npc.pussy+], [npc.speech(Пора посмотреть, на что способна такая сучка, как ты!)]"));
 					break;
 				case SUB_EAGER:
 					sb.append(UtilText.parse(characterBeingRevealed,
-							"[npc.Name] [npc.verb(let)] out an excited [npc.moan] as [npc.she] sees you staring at [npc.her] [npc.pussy+],"
-								+ " [npc.speech(~Ahh!~ Yes! My pussy's aching for your touch!)]"));
+							"[npc.Name] [npc.verb(let)] возбужденный [npc.moan], когда [npc.she] замечает, что ты пялишься на ее [npc.her] [npc.pussy+], [npc.speech(~Ах!~ Да! Моя киска прямо ноет от желания почувствовать твои прикосновения!)]"));
 					break;
 				case SUB_NORMAL:
 					sb.append(UtilText.parse(characterBeingRevealed,
-							"[npc.Name] [npc.verb(let)] out [npc.a_moan] as [npc.she] sees you staring at [npc.her] [npc.pussy+],"
-								+ " [npc.speech(~Mmm!~ Come on, use my pussy!)]"));
+							"[npc.Name] [npc.verb(let)] [npc.a_moan], когда [npc.she] замечает, что ты пялишься на ее [npc.her] [npc.pussy+], [npc.speech(~Ммм!~ Давай же, используй мою киску!)]"));
 					break;
 				case SUB_RESISTING:
 					sb.append(UtilText.parse(characterBeingRevealed,
-							"[npc.Name] [npc.verb(let)] out [npc.a_sob] and tries to pull away from you as [npc.her] [npc.pussy+] is revealed,"
-								+ " [npc.speech(No! Leave me alone!)]"));
+							"[npc.Name] [npc.verb(let)] [npc.a_sob] и пытается отстраниться от тебя, когда открывается ее [npc.her] [npc.pussy+], [npc.speech(Нет! Оставь меня в покое!)]"));
 					break;
 			}
 		}
@@ -16721,7 +16578,7 @@ public abstract class GameCharacter implements XMLSaving {
 		}
 
 		if(Main.game.isInSex() && Main.sex.isCharacterImmobilised(characterReacting)) {
-			return getAreaRevealWhileImmobilised(characterBeingRevealed, characterReacting, "genderless mound", false);
+			return getAreaRevealWhileImmobilised(characterBeingRevealed, characterReacting, "бесполое возвышение", false);
 		}
 		
 		StringBuilder sb = new StringBuilder();
@@ -16731,27 +16588,23 @@ public abstract class GameCharacter implements XMLSaving {
 			if(reactingPace!=SexPace.SUB_RESISTING) {
 				if(isFeminine()) {
 					if (!Main.sex.isDom(this)) {
-						sb.append("[npc2.Name] looks confused for a moment before letting out a patronising sigh, "
-								+ "[npc2.speech(Awww... You're like a little doll down there! That's so cute!)]");
+						sb.append("[npc2.Name] на мгновение выглядит растерянной, а затем издает снисходительный вздох, [npc2.speech(Оооу... Ты там внизу как маленькая куколка! Это так мило!)]");
 					} else {
-						sb.append("[npc2.Name] looks confused for a moment before breaking out into a mocking laugh, "
-								+ "[npc2.speech(Hahaha! You're like a little doll down there!)]");
+						sb.append("[npc2.Name] на мгновение выглядит растерянной, а затем разражается издевательским смехом, [npc2.speech(Ха-ха-ха! Ты там внизу как маленькая куколка!)]");
 					}
 				// Masculine NPC:
 				} else {
 					if(!Main.sex.isDom(this)) {
-						sb.append("[npc2.Name] looks confused for a moment before letting out a patronising sneer, "
-								+ "[npc2.speech(Awww... You're like a little doll down there! That's so cute!)]");
+						sb.append("[npc2.Name] на мгновение выглядит растерянной, а затем издает снисходительную усмешку, [npc2.speech(Оооу... Ты там внизу как маленькая куколка! Это так мило!)]");
 					} else {
-						sb.append("[npc2.Name] looks confused for a moment before breaking out into a mocking laugh, "
-									+ "[npc2.speech(Hahaha! You're like a little doll down there!)]");
+						sb.append("[npc2.Name] на мгновение выглядит растерянной, а затем разражается издевательским смехом, [npc2.speech(Ха-ха-ха! Ты там внизу как маленькая куколка!)]");
 					}
 				}
 				
 			} else {
 				sb.append(UtilText.returnStringAtRandom(
-								"[npc2.Name] [npc2.verb(let)] out [npc2.a_sob+] as [npc.namePos] genderless mound is revealed.",
-								"[npc2.speech(Stop! Please! Get away from me!)] [npc2.name] [npc2.verb(scream)] as [npc.name] [npc.verb(reveal)] [npc.her] genderless mound."));
+								"[npc2.Name] [npc2.verb(let)] извлекается, и [npc2.a_sob+] предстает в виде [npc.namePos] бесполого холмика.",
+								"[npc2.speech(Стой! Пожалуйста! Уйди от меня!)] [npc2.name] [npc2.verb(scream)] как [npc.name] [npc.verb(reveal)] [npc.her] бесполый холмик."));
 			}
 			sb.append("</p>");
 			
@@ -16773,15 +16626,15 @@ public abstract class GameCharacter implements XMLSaving {
 				if(characterPenetrating.isAsleep()) {
 					return UtilText.parse(characterPenetrating, characterPenetrated,
 							UtilText.returnStringAtRandom(
-							"[npc.NamePos] [npc.verb(remain)] asleep as [npc.her] [npc.lips+] press against [npc2.namePos] mouth.",
-							"[npc.NamePos] [npc.do]n't show any sign of waking up as [npc.her] mouth presses against [npc2.namePos] [npc2.lips+].",
-							"Remaining deeply asleep, [npc.name] [npc.verb(press)] [npc.her] [npc.lips+] against [npc2.nameHers]."));
+							"[npc.NamePos] [npc.verb(remain)] спит, пока [npc.her] [npc.lips+] прижимаются к [npc2.namePos] рту.",
+							"[npc.NamePos] [npc.do] даже не думает просыпаться, пока рот [npc.her] прижимается к [npc2.namePos] [npc2.lips+].",
+							"Все еще глубоко спящий, [npc.name] [npc.verb(press)] [npc.her] [npc.lips+] против [npc2.nameHers]."));
 				} else {
 					return UtilText.parse(characterPenetrating, characterPenetrated,
 							UtilText.returnStringAtRandom(
-							"[npc.NamePos] [npc.verb(remain)] completely immobile as [npc.her] [npc.lips+] press against [npc2.namePos] mouth.",
-							"[npc.NamePos] [npc.do]n't move at all as [npc.her] mouth presses against [npc2.namePos] [npc2.lips+].",
-							"Acting like an inanimate sex doll, [npc.name] [npc.verb(stay)] totally still and silent as [npc.she] [npc.verb(press)] [npc.her] [npc.lips+] against [npc2.nameHers]."));
+							"[npc.NamePos] [npc.verb(remain)] совершенно неподвижен, пока [npc.her] [npc.lips+] прижимаются к [npc2.namePos] рту.",
+							"[npc.NamePos] [npc.do] совсем не шевелится, пока рот [npc.her] прижимается к [npc2.namePos] [npc2.lips+].",
+							"Ведя себя как неодушевленная секс-кукла, [npc.name] [npc.verb(stay)] абсолютно неподвижен и безмолвен, пока [npc.she] [npc.verb(press)] [npc.her] [npc.lips+] против [npc2.nameHers]."));
 				}
 				
 			} else {
@@ -16789,39 +16642,39 @@ public abstract class GameCharacter implements XMLSaving {
 					case DOM_GENTLE:
 						return UtilText.parse(characterPenetrating, characterPenetrated,
 								UtilText.returnStringAtRandom(
-								"[npc.NamePos] soft [npc.moans] are muffled into [npc2.namePos] mouth as [npc.she] [npc.verb(continue)] kissing [npc2.herHim].",
-								"[npc.Name] gently [npc.verb(press)] [npc.her] [npc.lips+] against [npc2.namePos] as [npc.she] [npc.verb(continue)] kissing [npc2.herHim].",
-								"Gently pressing [npc.her] [npc.lips+] against [npc2.nameHers], [npc.name] [npc.verb(continue)] making out with [npc2.herHim]."));
+								"[npc.NamePos] мягкие [npc.moans] заглушаются в [npc2.namePos] рту, пока [npc.she] [npc.verb(continue)] целует [npc2.herHim].",
+								"[npc.Name] нежно [npc.verb(press)] [npc.her] [npc.lips+] против [npc2.namePos], пока [npc.she] [npc.verb(continue)] целует [npc2.herHim].",
+								"[npc.name] нежно [npc.verb(continue)] прижимая [npc.her] [npc.lips+] к [npc2.nameHers], страстно целуясь с [npc2.herHim]."));
 					case DOM_NORMAL:
 						return UtilText.parse(characterPenetrating, characterPenetrated,
 								UtilText.returnStringAtRandom(
-								"[npc.NamePos] [npc.moans+] are muffled into [npc2.namePos] mouth as [npc.she] [npc.verb(continue)] passionately kissing [npc2.herHim].",
-								"[npc.Name] eagerly [npc.verb(press)] [npc.her] [npc.lips+] against [npc2.namePos] as [npc.she] [npc.verb(continue)] passionately kissing [npc2.herHim].",
-								"Passionately pressing [npc.her] [npc.lips+] against [npc2.nameHers], [npc.name] [npc.verb(continue)] making out with [npc2.herHim]."));
+								"[npc.NamePos] [npc.moans+] прижаты к рту [npc2.namePos], пока [npc.she] [npc.verb(continue)] страстно целует [npc2.herHim].",
+								"[npc.Name] с нетерпением [npc.verb(press)] [npc.her] [npc.lips+] на [npc2.namePos], пока [npc.she] [npc.verb(continue)] страстно целует [npc2.herHim].",
+								"Страстно прижимая [npc.her] [npc.lips+] к [npc2.nameHers], [npc.name] [npc.verb(continue)] страстно целуется с [npc2.herHim]."));
 					case DOM_ROUGH:
 						return UtilText.parse(characterPenetrating, characterPenetrated,
 								UtilText.returnStringAtRandom(
-								"[npc.NamePos] [npc.moans+] are muffled into [npc2.namePos] mouth as [npc.she] [npc.verb(continue)] forcefully snogging [npc2.herHim].",
-								"[npc.Name] roughly [npc.verb(grind)] [npc.her] [npc.lips+] against [npc2.namePos] as [npc.she] [npc.verb(continue)] forcefully snogging [npc2.herHim].",
-								"Roughly grinding [npc.her] [npc.lips+] against [npc2.nameHers], [npc.name] [npc.verb(continue)] making out with [npc2.herHim]."));
+								"[npc.NamePos] [npc.moans+] прижаты к рту [npc2.namePos], пока [npc.she] [npc.verb(continue)] напористо целуется с [npc2.herHim].",
+								"[npc.Name] грубо [npc.verb(grind)] [npc.her] [npc.lips+] против [npc2.namePos], пока [npc.she] [npc.verb(continue)] с силой засосал(а) [npc2.herHim].",
+								"Грубо вжимая [npc.her] [npc.lips+] в [npc2.nameHers], [npc.name] [npc.verb(continue)] страстно целуется с [npc2.herHim]."));
 					case SUB_EAGER:
 						return UtilText.parse(characterPenetrating, characterPenetrated,
 								UtilText.returnStringAtRandom(
-								"[npc.NamePos] [npc.moans+] are muffled into [npc2.namePos] mouth as [npc.she] [npc.verb(continue)] passionately kissing [npc2.herHim].",
-								"[npc.Name] eagerly [npc.verb(press)] [npc.her] [npc.lips+] against [npc2.namePos] as [npc.she] [npc.verb(continue)] passionately kissing [npc2.herHim].",
-								"Passionately pressing [npc.her] [npc.lips+] against [npc2.nameHers], [npc.name] [npc.verb(continue)] making out with [npc2.herHim]."));
+								"[npc.NamePos] [npc.moans+] прижаты к рту [npc2.namePos], пока [npc.she] [npc.verb(continue)] страстно целует [npc2.herHim].",
+								"[npc.Name] с нетерпением [npc.verb(press)] [npc.her] [npc.lips+] на [npc2.namePos], пока [npc.she] [npc.verb(continue)] страстно целует [npc2.herHim].",
+								"Страстно прижимая [npc.her] [npc.lips+] к [npc2.nameHers], [npc.name] [npc.verb(continue)] страстно целуется с [npc2.herHim]."));
 					case SUB_NORMAL:
 						return UtilText.parse(characterPenetrating, characterPenetrated,
 								UtilText.returnStringAtRandom(
-								"[npc.NamePos] [npc.moans] are muffled into [npc2.namePos] mouth as [npc.she] [npc.verb(continue)] kissing [npc2.herHim].",
-								"[npc.Name] [npc.verb(press)] [npc.her] [npc.lips+] against [npc2.namePos] as [npc.she] [npc.verb(continue)] kissing [npc2.herHim].",
-								"Pressing [npc.her] [npc.lips+] against [npc2.nameHers], [npc.name] [npc.verb(continue)] making out with [npc2.herHim]."));
+								"[npc.NamePos] [npc.moans] приглушенно входят в [npc2.namePos] рот, пока [npc.she] [npc.verb(continue)] целует [npc2.herHim].",
+								"[npc.Name] [npc.verb(press)] [npc.her] [npc.lips+] против [npc2.namePos], пока [npc.she] [npc.verb(continue)] целует [npc2.herHim].",
+								"Прижимая [npc.her] [npc.lips+] к [npc2.nameHers], [npc.name] [npc.verb(continue)] страстно целуется с [npc2.herHim]."));
 					case SUB_RESISTING:
 						return UtilText.parse(characterPenetrating, characterPenetrated,
 								UtilText.returnStringAtRandom(
-								"[npc.NamePos] [npc.sobs+] are muffled into [npc2.namePos] mouth as [npc.she] desperately [npc.verb(try)] to push away from [npc2.herHim].",
-								"[npc.Name] [npc.verb(try)] to pull [npc.her] [npc.lips+] away from [npc2.namePos] as [npc.she] struggles against [npc2.herHim].",
-								"Trying to pull [npc.her] [npc.lips+] away from [npc2.nameHers], [npc.name] [npc.verb(continue)] struggling against [npc2.namePos] unwanted kiss."));
+								"[npc.NamePos] [npc.sobs+] приглушенно входят в [npc2.namePos] рот, пока [npc.she] отчаянно [npc.verb(try)] пытается отстраниться от [npc2.herHim].",
+								"[npc.Name] [npc.verb(try)] пытается оттянуть [npc.her] [npc.lips+] от [npc2.namePos], пока [npc.she] борется с [npc2.herHim].",
+								"Пытаясь оттянуть [npc.her] [npc.lips+] от [npc2.nameHers], [npc.name] [npc.verb(continue)] борется с нежеланным поцелуем [npc2.namePos]."));
 				}
 			}
 		}
@@ -16832,15 +16685,15 @@ public abstract class GameCharacter implements XMLSaving {
 				if(characterPenetrating.isAsleep()) {
 					return UtilText.parse(characterPenetrating, characterPenetrated,
 							UtilText.returnStringAtRandom(
-							"[npc.NamePos] [npc.verb(remain)] asleep with [npc.her] [npc.fingers+] wrapped around [npc2.namePos] [npc2.hand+].",
-							"[npc.NamePos] [npc.do]n't show any sign of waking up as [npc.she] [npc.verb(continue)] holding [npc2.namePos] [npc2.hand+].",
-							"Remaining deeply asleep, [npc.name] [npc.verb(hold)] [npc2.namePos] [npc2.hand+]."));
+							"[npc.NamePos] [npc.verb(remain)] спит, а [npc.her] [npc.fingers+] обвивают [npc2.namePos] [npc2.hand+].",
+							"[npc.NamePos] [npc.do] даже не подает признаков пробуждения, пока [npc.she] [npc.verb(continue)] обнимает [npc2.namePos] [npc2.hand+].",
+							"Оставаясь в глубоком сне, [npc.name] [npc.verb(hold)] [npc2.namePos] [npc2.hand+]."));
 				} else {
 					return UtilText.parse(characterPenetrating, characterPenetrated,
 							UtilText.returnStringAtRandom(
-							"[npc.NamePos] [npc.verb(remain)] completely immobile with [npc.her] [npc.fingers+] wrapped around [npc2.namePos] [npc2.hand+].",
-							"[npc.NamePos] [npc.do]n't move at all as [npc.she] [npc.verb(continue)] holding [npc2.namePos] [npc2.hand+].",
-							"Acting like an inanimate sex doll, [npc.name] [npc.verb(hold)] [npc2.namePos] [npc2.hand+] while staying totally still and silent."));
+							"[npc.NamePos] [npc.verb(remain)] совершенно неподвижен, а [npc.her] [npc.fingers+] обвивают [npc2.namePos] [npc2.hand+].",
+							"[npc.NamePos] совсем [npc.do] не двигается, пока [npc.she] [npc.verb(continue)] держит [npc2.namePos] [npc2.hand+].",
+							"Притворяясь неодушевленной секс-куклой, [npc.name] [npc.verb(hold)] [npc2.namePos] [npc2.hand+], оставаясь при этом совершенно неподвижной и безмолвной."));
 				}
 				
 			} else {
@@ -16848,34 +16701,34 @@ public abstract class GameCharacter implements XMLSaving {
 					case DOM_GENTLE:
 						return UtilText.parse(characterPenetrating, characterPenetrated,
 								UtilText.returnStringAtRandom(
-								"[npc.NamePos] softly [npc.moansVerb] as [npc.she] [npc.verb(continue)] holding [npc2.namePos] [npc2.hand+].",
-								"[npc.Name] gently [npc.moansVerb] as [npc.she] [npc.verb(wrap)] [npc.her] [npc.fingers+] around [npc2.namePos] [npc2.hand+].",
-								"Gently holding [npc2.namePos] [npc2.hand+], [npc.name] [npc.verb(let)] out [npc.a_moan+]."));
+								"[npc.NamePos] тихо [npc.moansVerb], пока [npc.she] [npc.verb(continue)] держит [npc2.namePos] [npc2.hand+].",
+								"[npc.Name] нежно [npc.moansVerb], пока [npc.she] [npc.verb(wrap)] [npc.her] [npc.fingers+] вокруг [npc2.namePos] [npc2.hand+].",
+								"Нежно сжимая [npc2.namePos] [npc2.hand+], [npc.name] [npc.verb(let)] наружу [npc.a_moan+]."));
 					case DOM_NORMAL:
 					case SUB_EAGER:
 						return UtilText.parse(characterPenetrating, characterPenetrated,
 								UtilText.returnStringAtRandom(
-									"[npc.NamePos] eagerly [npc.moansVerb] as [npc.she] [npc.verb(continue)] holding [npc2.namePos] [npc2.hand+].",
-									"[npc.Name] passionately [npc.moansVerb] as [npc.she] [npc.verb(wrap)] [npc.her] [npc.fingers+] around [npc2.namePos] [npc2.hand+].",
-									"Lustfully holding [npc2.namePos] [npc2.hand+], [npc.name] [npc.verb(let)] out [npc.a_moan+]."));
+									"[npc.NamePos] жадно [npc.moansVerb], пока [npc.she] [npc.verb(continue)] держит [npc2.namePos] [npc2.hand+].",
+									"[npc.Name] страстно [npc.moansVerb], пока [npc.she] [npc.verb(wrap)] [npc.her] [npc.fingers+] вокруг [npc2.namePos] [npc2.hand+].",
+									"Похотливо сжимая [npc2.namePos] [npc2.hand+], [npc.name] [npc.verb(let)] наружу [npc.a_moan+]."));
 					case DOM_ROUGH:
 						return UtilText.parse(characterPenetrating, characterPenetrated,
 								UtilText.returnStringAtRandom(
-									"[npc.NamePos] roughly [npc.moansVerb] as [npc.she] [npc.verb(continue)] forcefully gripping [npc2.namePos] [npc2.hand+].",
-									"[npc.Name] roughly [npc.moansVerb] as [npc.she] tightly [npc.verb(wrap)] [npc.her] [npc.fingers+] around [npc2.namePos] [npc2.hand+].",
-									"Forcefully gripping [npc2.namePos] [npc2.hand+], [npc.name] [npc.verb(let)] out [npc.a_moan+]."));
+									"[npc.NamePos] примерно [npc.moansVerb] как [npc.she] [npc.verb(continue)] с силой сжимает [npc2.namePos] [npc2.hand+].",
+									"[npc.Name] грубо [npc.moansVerb], пока [npc.she] крепко [npc.verb(wrap)] [npc.her] [npc.fingers+] вокруг [npc2.namePos] [npc2.hand+].",
+									"Сильно сжимая [npc2.namePos] [npc2.hand+], [npc.name] [npc.verb(let)] наружу [npc.a_moan+]."));
 					case SUB_NORMAL:
 						return UtilText.parse(characterPenetrating, characterPenetrated,
 								UtilText.returnStringAtRandom(
-									"[npc.NamePos] [npc.moansVerb] as [npc.she] [npc.verb(continue)] holding [npc2.namePos] [npc2.hand+].",
-									"[npc.Name] [npc.moansVerb] as [npc.she] [npc.verb(wrap)] [npc.her] [npc.fingers+] around [npc2.namePos] [npc2.hand+].",
-									"Holding [npc2.namePos] [npc2.hand+], [npc.name] [npc.verb(let)] out [npc.a_moan+]."));
+									"[npc.NamePos] [npc.moansVerb], пока [npc.she] [npc.verb(continue)] держит [npc2.namePos] [npc2.hand+].",
+									"[npc.Name] [npc.moansVerb], пока [npc.she] [npc.verb(wrap)] [npc.her] [npc.fingers+] вокруг [npc2.namePos] [npc2.hand+].",
+									"Держа [npc2.namePos] [npc2.hand+], [npc.name] [npc.verb(let)] наружу [npc.a_moan+]."));
 					case SUB_RESISTING:
 						return UtilText.parse(characterPenetrating, characterPenetrated,
 								UtilText.returnStringAtRandom(
-								"[npc.NamePos] [npc.sobsVerb+] as [npc.she] desperately [npc.verb(try)] to pull [npc.her] [npc.hand] away from [npc2.nameHers].",
-								"[npc.Name] [npc.verb(try)] to pull [npc.her] [npc.hand+] away from [npc2.namePos] as [npc.she] struggles against [npc2.herHim].",
-								"Trying to pull [npc.her] [npc.hand+] away from [npc2.nameHers], [npc.name] [npc.verb(continue)] struggling against [npc2.name]."));
+								"[npc.NamePos] [npc.sobsVerb+], пока [npc.she] отчаянно [npc.verb(try)], чтобы оттянуть [npc.her] [npc.hand] от [npc2.nameHers].",
+								"[npc.Name] [npc.verb(try)], чтобы оттянуть [npc.her] [npc.hand+] от [npc2.namePos], пока [npc.she] сопротивляется [npc2.herHim].",
+								"Пытаясь оттянуть [npc.her] [npc.hand+] от [npc2.nameHers], [npc.name] [npc.verb(continue)] сопротивляется [npc2.name]."));
 				}
 			}
 		}
@@ -16887,7 +16740,7 @@ public abstract class GameCharacter implements XMLSaving {
 			case FINGER:
 				penetratorName = "[npc.fingers]";
 				if(orifice == SexAreaPenetration.PENIS) {
-					penetratorName = UtilText.returnStringAtRandom("[npc.fingers]", "hand");
+					penetratorName = UtilText.returnStringAtRandom("[npc.fingers]", "кисть");
 				}
 				if(orifice == SexAreaPenetration.FINGER) {
 					penetratorName = UtilText.returnStringAtRandom("[npc.hand]");
@@ -16900,7 +16753,7 @@ public abstract class GameCharacter implements XMLSaving {
 				penetratorName = "[npc.tail+(true)]";
 				break;
 			case TENTACLE:
-				penetratorName = "[npc.tentacle+(true)]";
+				penetratorName = "[npc.щупальце+(true)]";
 				break;
 			case TONGUE:
 				penetratorName = "[npc.tongue]";
@@ -16972,7 +16825,7 @@ public abstract class GameCharacter implements XMLSaving {
 					orificeName = "[npc2.tail+(true)]";
 					break;
 				case TENTACLE:
-					orificeName = "[npc2.tentacle+(true)]";
+					orificeName = "[npc2.щупальце+(true)]";
 					break;
 				case FOOT:
 					if(Main.sex.getSexPositionSlot(characterPenetrating).isStanding(characterPenetrating)) {
@@ -16996,126 +16849,126 @@ public abstract class GameCharacter implements XMLSaving {
 		
 		switch(Main.sex.getSexPace(characterPenetrating)) {
 			case DOM_GENTLE:
-				penetratingQualifier = UtilText.returnStringAtRandom("gently", "slowly", "steadily");
+				penetratingQualifier = UtilText.returnStringAtRandom("нежно", "медленно", "размеренно");
 				penetratingAction = characterPenetrating.isPlayer()
-						?UtilText.returnStringAtRandom("slide", "pump", "thrust")
-						:UtilText.returnStringAtRandom("slides", "pumps", "thrusts");
+						?UtilText.returnStringAtRandom("скользить", "качать", "толкая")
+						:UtilText.returnStringAtRandom("скользит", "качает", "толкая");
 				penetratingPrefix = characterPenetrating.isPlayer()
-						?UtilText.returnStringAtRandom("You let out [pc.a_moan+]", "[pc.A_moan+] drifts out from between your [pc.lips+]")
-						:UtilText.returnStringAtRandom("[npc.Name] lets out [npc.a_moan+]", "[npc.A_moan+] drifts out from between [npc.namePos] [npc.lips+]");
+						?UtilText.returnStringAtRandom("Вы издаете [pc.a_moan+]", "[pc.A_moan+] вырывается из ваших [pc.lips+]")
+						:UtilText.returnStringAtRandom("[npc.Name] издает [npc.a_moan+]", "[npc.A_moan+] струится из-за [npc.namePos] [npc.lips+]");
 			break;
 			case DOM_NORMAL:
-				penetratingQualifier = UtilText.returnStringAtRandom("eagerly", "enthusiastically", "readily", "happily");
+				penetratingQualifier = UtilText.returnStringAtRandom("жадно", "с энтузиазмом", "охотно", "счастливо");
 				penetratingAction = characterPenetrating.isPlayer()
-						?UtilText.returnStringAtRandom("slide", "push", "drive", "thrust", "pump")
-						:UtilText.returnStringAtRandom("slides", "pushes", "drives", "thrusts", "pumps");
+						?UtilText.returnStringAtRandom("скользить", "толкать", "гнать", "толкая", "качать")
+						:UtilText.returnStringAtRandom("скользит", "толкает", "гонит", "толкая", "качает");
 				penetratingPrefix = characterPenetrating.isPlayer()
-						?UtilText.returnStringAtRandom("You let out [pc.a_moan+]", "[pc.A_moan+] bursts out from between your [pc.lips+]")
-						:UtilText.returnStringAtRandom("[npc.Name] lets out [npc.a_moan+]", "[npc.A_moan+] bursts out from between [npc.namePos] [npc.lips+]");
+						?UtilText.returnStringAtRandom("Вы издаете [pc.a_moan+]", "[pc.A_moan+] вырывается из-за твоих [pc.lips+]")
+						:UtilText.returnStringAtRandom("[npc.Name] издает [npc.a_moan+]", "[npc.A_moan+] вырывается из-за [npc.namePos] [npc.lips+]");
 			break;
 			case DOM_ROUGH:
-				penetratingQualifier = UtilText.returnStringAtRandom("roughly", "forcefully", "mercilessly");
+				penetratingQualifier = UtilText.returnStringAtRandom("грубо", "сильно", "безжалостно");
 				penetratingAction = characterPenetrating.isPlayer()
-						?UtilText.returnStringAtRandom("slam", "hammer", "thrust", "pump", "piston")
-						:UtilText.returnStringAtRandom("slams", "hammers", "thrusts", "pumps", "pistons");
+						?UtilText.returnStringAtRandom("впечатывать", "долбить", "толкая", "качать", "поршень")
+						:UtilText.returnStringAtRandom("впечатывает", "долбит", "толкая", "качает", "поршни");
 				penetratingPrefix = characterPenetrating.isPlayer()
-						?UtilText.returnStringAtRandom("You let out [pc.a_moan+]", "[pc.A_moan+] bursts out from between your [pc.lips+]")
-						:UtilText.returnStringAtRandom("[npc.Name] lets out [npc.a_moan+]", "[npc.A_moan+] bursts out from between [npc.namePos] [npc.lips+]");
+						?UtilText.returnStringAtRandom("Вы издаете [pc.a_moan+]", "[pc.A_moan+] вырывается из-за твоих [pc.lips+]")
+						:UtilText.returnStringAtRandom("[npc.Name] издает [npc.a_moan+]", "[npc.A_moan+] вырывается из-за [npc.namePos] [npc.lips+]");
 			break;
 			case SUB_EAGER:
-				penetratingQualifier = UtilText.returnStringAtRandom("desperately", "frantically", "eagerly", "enthusiastically");
+				penetratingQualifier = UtilText.returnStringAtRandom("отчаянно", "лихорадочно", "жадно", "с энтузиазмом");
 				penetratingAction = characterPenetrating.isPlayer()
-						?UtilText.returnStringAtRandom("slam", "hammer", "thrust", "pump")
-						:UtilText.returnStringAtRandom("slams", "hammers", "thrusts", "pumps");
+						?UtilText.returnStringAtRandom("впечатывать", "долбить", "толкая", "качать")
+						:UtilText.returnStringAtRandom("впечатывает", "долбит", "толкая", "качает");
 				penetratingPrefix = characterPenetrating.isPlayer()
-						?UtilText.returnStringAtRandom("You let out [pc.a_moan+]", "[pc.A_moan+] bursts out from between your [pc.lips+]")
-						:UtilText.returnStringAtRandom("[npc.Name] lets out [npc.a_moan+]", "[npc.A_moan+] bursts out from between [npc.namePos] [npc.lips+]");
+						?UtilText.returnStringAtRandom("Вы издаете [pc.a_moan+]", "[pc.A_moan+] вырывается из-за твоих [pc.lips+]")
+						:UtilText.returnStringAtRandom("[npc.Name] издает [npc.a_moan+]", "[npc.A_moan+] вырывается из-за [npc.namePos] [npc.lips+]");
 			break;
 			case SUB_NORMAL:
-				penetratingQualifier = UtilText.returnStringAtRandom("happily", "willingly");
+				penetratingQualifier = UtilText.returnStringAtRandom("счастливо", "с готовностью");
 				penetratingAction = characterPenetrating.isPlayer()
-						?UtilText.returnStringAtRandom("slide", "push", "drive", "thrust", "pump")
-						:UtilText.returnStringAtRandom("slides", "pushes", "drives", "thrusts", "pumps");
+						?UtilText.returnStringAtRandom("скользить", "толкать", "гнать", "толкая", "качать")
+						:UtilText.returnStringAtRandom("скользит", "толкает", "гонит", "толкая", "качает");
 				penetratingPrefix = characterPenetrating.isPlayer()
-						?UtilText.returnStringAtRandom("You let out [pc.a_moan+]", "[pc.A_moan+] drifts out from between your [pc.lips+]")
-						:UtilText.returnStringAtRandom("[npc.Name] lets out [npc.a_moan+]", "[npc.A_moan+] drifts out from between [npc.namePos] [npc.lips+]");
+						?UtilText.returnStringAtRandom("Вы издаете [pc.a_moan+]", "[pc.A_moan+] вырывается из ваших [pc.lips+]")
+						:UtilText.returnStringAtRandom("[npc.Name] издает [npc.a_moan+]", "[npc.A_moan+] струится из-за [npc.namePos] [npc.lips+]");
 			break;
 			case SUB_RESISTING:
-				penetratingQualifier = UtilText.returnStringAtRandom("reluctantly", "half-heartedly", "hesitantly");
+				penetratingQualifier = UtilText.returnStringAtRandom("неохотно", "вяло", "нерешительно");
 				penetratingAction = characterPenetrating.isPlayer()
-						?UtilText.returnStringAtRandom("slide", "push", "drive")
-						:UtilText.returnStringAtRandom("slides", "pushes", "drives");
+						?UtilText.returnStringAtRandom("скользить", "толкать", "гнать")
+						:UtilText.returnStringAtRandom("скользит", "толкает", "гонит");
 				penetratingPrefix = characterPenetrating.isPlayer()
-						?UtilText.returnStringAtRandom("You let out [pc.a_moan+]", "[pc.A_moan+] bursts out from between your [pc.lips+]")
-						:UtilText.returnStringAtRandom("[npc.Name] lets out [npc.a_moan+]", "[npc.A_moan+] bursts out from between [npc.namePos] [npc.lips+]");
+						?UtilText.returnStringAtRandom("Вы издаете [pc.a_moan+]", "[pc.A_moan+] вырывается из-за твоих [pc.lips+]")
+						:UtilText.returnStringAtRandom("[npc.Name] издает [npc.a_moan+]", "[npc.A_moan+] вырывается из-за [npc.namePos] [npc.lips+]");
 			break;
 		}
 		
 		switch(Main.sex.getSexPace(characterPenetrated)) {
 			case DOM_GENTLE:
 				penetratedPrefix = characterPenetrated.isPlayer()
-						?UtilText.returnStringAtRandom("You let out [pc.a_moan+]", "[pc.A_moan+] drifts out from between your [pc.lips+]")
-						:UtilText.returnStringAtRandom("[npc2.Name] lets out [npc2.a_moan+]", "[npc2.A_moan+] drifts out from between [npc2.namePos] [npc2.lips+]");
+						?UtilText.returnStringAtRandom("Вы издаете [pc.a_moan+]", "[pc.A_moan+] вырывается из ваших [pc.lips+]")
+						:UtilText.returnStringAtRandom("[npc2.Name] издает [npc2.a_moan+]", "[npc2.A_moan+] вытекает из между [npc2.namePos] [npc2.lips+]");
 				penetratedPostfix = characterPenetrated.isPlayer()
-						?UtilText.returnStringAtRandom("causing you to let out [pc.a_moan+]", "causing [pc.a_moan+] to drift out from between your [pc.lips+]")
-						:UtilText.returnStringAtRandom("causing [npc2.herHim] to let out [npc2.a_moan+]", "causing [npc2.a_moan+] to drift out from between [npc2.her] [npc2.lips+]");
+						?UtilText.returnStringAtRandom("заставляя тебя издать [pc.a_moan+]", "отчего [pc.a_moan+] начинает соскальзывать из твоих [pc.lips+]")
+						:UtilText.returnStringAtRandom("заставляя [npc2.herHim] издать [npc2.a_moan+]", "отчего [npc2.a_moan+] начинает соскальзывать из [npc2.her] [npc2.lips+]");
 				break;
 			case DOM_NORMAL:
 				penetratedPrefix = characterPenetrated.isPlayer()
-						?UtilText.returnStringAtRandom("You let out [pc.a_moan+]", "[pc.A_moan+] bursts out from between your [pc.lips+]")
-						:UtilText.returnStringAtRandom("[npc2.Name] lets out [npc2.a_moan+]", "[npc2.A_moan+] bursts out from between [npc2.namePos] [npc2.lips+]");
+						?UtilText.returnStringAtRandom("Вы издаете [pc.a_moan+]", "[pc.A_moan+] вырывается из-за твоих [pc.lips+]")
+						:UtilText.returnStringAtRandom("[npc2.Name] издает [npc2.a_moan+]", "[npc2.A_moan+] вырывается из между [npc2.namePos] [npc2.lips+]");
 				penetratedPostfix = characterPenetrated.isPlayer()
-						?UtilText.returnStringAtRandom("causing you to let out [pc.a_moan+]", "causing [pc.a_moan+] to burst out from between your [pc.lips+]")
-						:UtilText.returnStringAtRandom("causing [npc2.herHim] to let out [npc2.a_moan+]", "causing [npc2.a_moan+] to burst out from between [npc2.her] [npc2.lips+]");
+						?UtilText.returnStringAtRandom("заставляя тебя издать [pc.a_moan+]", "отчего [pc.a_moan+] начинает вырываться из твоих [pc.lips+]")
+						:UtilText.returnStringAtRandom("заставляя [npc2.herHim] издать [npc2.a_moan+]", "отчего [npc2.a_moan+] начинает вырываться из между [npc2.her] [npc2.lips+]");
 				break;
 			case DOM_ROUGH:
 				penetratedPrefix = characterPenetrated.isPlayer()
-						?UtilText.returnStringAtRandom("You let out [pc.a_moan+]", "[pc.A_moan+] bursts out from between your [pc.lips+]")
-						:UtilText.returnStringAtRandom("[npc2.Name] lets out [npc2.a_moan+]", "[npc2.A_moan+] bursts out from between [npc2.namePos] [npc2.lips+]");
+						?UtilText.returnStringAtRandom("Вы издаете [pc.a_moan+]", "[pc.A_moan+] вырывается из-за твоих [pc.lips+]")
+						:UtilText.returnStringAtRandom("[npc2.Name] издает [npc2.a_moan+]", "[npc2.A_moan+] вырывается из между [npc2.namePos] [npc2.lips+]");
 				penetratedPostfix = characterPenetrated.isPlayer()
-						?UtilText.returnStringAtRandom("causing you to let out [pc.a_moan+]", "causing [pc.a_moan+] to burst out from between your [pc.lips+]")
-						:UtilText.returnStringAtRandom("causing [npc2.herHim] to let out [npc2.a_moan+]", "causing [npc2.a_moan+] to burst out from between [npc2.her] [npc2.lips+]");
+						?UtilText.returnStringAtRandom("заставляя тебя издать [pc.a_moan+]", "отчего [pc.a_moan+] начинает вырываться из твоих [pc.lips+]")
+						:UtilText.returnStringAtRandom("заставляя [npc2.herHim] издать [npc2.a_moan+]", "отчего [npc2.a_moan+] начинает вырываться из между [npc2.her] [npc2.lips+]");
 				break;
 			case SUB_EAGER:
 				penetratedPrefix = characterPenetrated.isPlayer()
-						?UtilText.returnStringAtRandom("You let out [pc.a_moan+]", "[pc.A_moan+] bursts out from between your [pc.lips+]")
-						:UtilText.returnStringAtRandom("[npc2.Name] lets out [npc2.a_moan+]", "[npc2.A_moan+] bursts out from between [npc2.namePos] [npc2.lips+]");
+						?UtilText.returnStringAtRandom("Вы издаете [pc.a_moan+]", "[pc.A_moan+] вырывается из-за твоих [pc.lips+]")
+						:UtilText.returnStringAtRandom("[npc2.Name] издает [npc2.a_moan+]", "[npc2.A_moan+] вырывается из между [npc2.namePos] [npc2.lips+]");
 				penetratedPostfix = characterPenetrated.isPlayer()
-						?UtilText.returnStringAtRandom("causing you to let out [pc.a_moan+]", "causing [pc.a_moan+] to burst out from between your [pc.lips+]")
-						:UtilText.returnStringAtRandom("causing [npc2.herHim] to let out [npc2.a_moan+]", "causing [npc2.a_moan+] to burst out from between [npc2.her] [npc2.lips+]");
+						?UtilText.returnStringAtRandom("заставляя тебя издать [pc.a_moan+]", "отчего [pc.a_moan+] начинает вырываться из твоих [pc.lips+]")
+						:UtilText.returnStringAtRandom("заставляя [npc2.herHim] издать [npc2.a_moan+]", "отчего [npc2.a_moan+] начинает вырываться из между [npc2.her] [npc2.lips+]");
 				break;
 			case SUB_NORMAL:
 				penetratedPrefix = characterPenetrated.isPlayer()
-						?UtilText.returnStringAtRandom("You let out [pc.a_moan+]", "[pc.A_moan+] drifts out from between your [pc.lips+]")
-						:UtilText.returnStringAtRandom("[npc2.Name] lets out [npc2.a_moan+]", "[npc2.A_moan+] drifts out from between [npc2.namePos] [npc2.lips+]");
+						?UtilText.returnStringAtRandom("Вы издаете [pc.a_moan+]", "[pc.A_moan+] вырывается из ваших [pc.lips+]")
+						:UtilText.returnStringAtRandom("[npc2.Name] издает [npc2.a_moan+]", "[npc2.A_moan+] вытекает из между [npc2.namePos] [npc2.lips+]");
 				penetratedPostfix = characterPenetrated.isPlayer()
-						?UtilText.returnStringAtRandom("causing you to let out [pc.a_moan+]", "causing [pc.a_moan+] to drift out from between your [pc.lips+]")
-						:UtilText.returnStringAtRandom("causing [npc2.herHim] to let out [npc2.a_moan+]", "causing [npc2.a_moan+] to drift out from between [npc2.her] [npc2.lips+]");
+						?UtilText.returnStringAtRandom("заставляя тебя издать [pc.a_moan+]", "отчего [pc.a_moan+] начинает соскальзывать из твоих [pc.lips+]")
+						:UtilText.returnStringAtRandom("заставляя [npc2.herHim] издать [npc2.a_moan+]", "отчего [npc2.a_moan+] начинает соскальзывать из [npc2.her] [npc2.lips+]");
 				break;
 			case SUB_RESISTING:
 				penetratedPrefix = characterPenetrated.isPlayer()
-						?UtilText.returnStringAtRandom("You struggle and try to protest", "You attempt to push [npc2.name] away", "You let out a protesting whine")
-						:UtilText.returnStringAtRandom("[npc2.Name] struggles and tries to protest", "[npc2.Name] attempts to push you away", "[npc2.Name] lets out a protesting whine");
+						?UtilText.returnStringAtRandom("Вы бьетесь и пытаетесь протестовать", "Вы пытаетесь оттолкнуть [npc2.name]", "Вы издаете протестующий скулеж")
+						:UtilText.returnStringAtRandom("[npc2.Name] бьется и пытается протестовать", "[npc2.Name] пытается оттолкнуть вас", "[npc2.Name] издает протестующий скулеж");
 				penetratedPostfix = characterPenetrated.isPlayer()
-						?UtilText.returnStringAtRandom("causing you to let out [pc.a_moan+]", "causing [pc.a_moan+] to burst out from between your [pc.lips+]")
-						:UtilText.returnStringAtRandom("causing [npc2.herHim] to let out [npc2.a_moan+]", "causing [npc2.a_moan+] to burst out from between [npc2.her] [npc2.lips+]");
+						?UtilText.returnStringAtRandom("заставляя тебя издать [pc.a_moan+]", "отчего [pc.a_moan+] начинает вырываться из твоих [pc.lips+]")
+						:UtilText.returnStringAtRandom("заставляя [npc2.herHim] издать [npc2.a_moan+]", "отчего [npc2.a_moan+] начинает вырываться из между [npc2.her] [npc2.lips+]");
 				break;
 		}
 
 		String penetrationDescription = UtilText.returnStringAtRandom(
-				"in and out of",
-				"deep into");
+				"туда-сюда в",
+				"глубоко в");
 		if(orifice.isOrifice() && ((SexAreaOrifice)orifice).isInternalOrifice()) {
 			if(characterPenetrating.isFullPenetrationFarTooShort(penetrationType, characterPenetrated, (SexAreaOrifice)orifice)) {
 				penetrationDescription = UtilText.returnStringAtRandom(
-						"in and out of",
-						"a disappointingly short way into");
+						"туда-сюда в",
+						"всего лишь на разочаровывающе малую глубину в");
 				
 			} else if(characterPenetrating.isWantingToFullyPenetrate(characterPenetrated, penetrationType)
 					&& characterPenetrating.isFullPenetrationTooLongToFit(penetrationType, characterPenetrated, (SexAreaOrifice)orifice)) {
 				penetrationDescription = UtilText.returnStringAtRandom(
-						"deep in and out of",
-						"as deep as is comfortable into");
+						"глубоко туда-сюда в",
+						"на такую глубину в, чтобы было комфортно");
 			}
 		}
 		
@@ -17123,28 +16976,28 @@ public abstract class GameCharacter implements XMLSaving {
 			switch((SexAreaOrifice)orifice) {
 				case ARMPITS:
 					penetrationDescription = UtilText.returnStringAtRandom(
-							"over",
-							"up and down over");
+							"поверх",
+							"вверх-вниз по");
 					break;
 				case ASS:
 					penetrationDescription = UtilText.returnStringAtRandom(
-							"between the cheeks of",
-							"in and out between the cheeks of");
+							"между ягодицами",
+							"туда-сюда между ягодицами");
 					break;
 				case BREAST:
 				case BREAST_CROTCH:
 				case THIGHS:
 					penetrationDescription = UtilText.returnStringAtRandom(
-							"between",
-							"in and out between");
+							"между",
+							"туда-сюда между");
 					break;
 				case NIPPLE:
 					if(penetrationType == SexAreaPenetration.TONGUE) {
 						penetratorName = "[npc.lips]";
 						penetratingAction = characterPenetrating.isPlayer()
-								?UtilText.returnStringAtRandom("press")
-								:UtilText.returnStringAtRandom("presses");
-						penetrationDescription = UtilText.returnStringAtRandom("against");
+								?UtilText.returnStringAtRandom("прижимать")
+								:UtilText.returnStringAtRandom("прижимает");
+						penetrationDescription = UtilText.returnStringAtRandom("на");
 					}
 					break;
 				case ANUS:
@@ -17161,23 +17014,23 @@ public abstract class GameCharacter implements XMLSaving {
 				case PENIS:
 					if(penetrationType==SexAreaPenetration.FINGER) {
 						penetrationDescription = UtilText.returnStringAtRandom(
-								"up and down around",
-								"up and down");
+								"вверх-вниз вокруг",
+								"вверх-вниз");
 						
 					} else if(penetrationType==SexAreaPenetration.FOOT) {
 						if(Main.sex.getSexPositionSlot(characterPenetrating).isStanding(characterPenetrating)) {
 							penetrationDescription = UtilText.returnStringAtRandom(
-									"up and down against",
-									"against");
+									"вверх-вниз на",
+									"на");
 						} else {
 							penetrationDescription = UtilText.returnStringAtRandom(
-									"up and down around");
+									"вверх-вниз вокруг");
 						}
 						
 					} else if(penetrationType==SexAreaPenetration.PENIS) {
 						penetrationDescription = UtilText.returnStringAtRandom(
-								"up and down against",
-								"against");
+								"вверх-вниз на",
+								"на");
 					}
 					break;
 				case FINGER:
@@ -17187,7 +17040,7 @@ public abstract class GameCharacter implements XMLSaving {
 				case FOOT:
 				case TONGUE:
 					penetrationDescription = UtilText.returnStringAtRandom(
-							"over");
+							"поверх");
 					break;
 			}
 		}
@@ -17198,37 +17051,37 @@ public abstract class GameCharacter implements XMLSaving {
 		}
 		
 		if(immobile) {
-			String insertion = " stuffed deep in ";
+			String insertion = " глубоко засунутый в ";
 			if(!orifice.isOrifice()) {
-				insertion = " pressed against ";
+				insertion = " прижатый к ";
 			}
 			if(characterPenetrating.isAsleep()) {
 				return UtilText.parse(characterPenetrating, characterPenetrated,
 						UtilText.returnStringAtRandom(
-								"[npc.Name] [npc.verb(remain)] deeply asleep with [npc.her] "+penetratorName+insertion+target+orificeName+".",
-								"Continuing to sleep, [npc.name] [npc.do]n't show any sign of waking up as [npc.her] "+penetratorName+" "+(orifice.isPlural()?"are":"is")+" "+insertion+target+orificeName+".",
-								"Remaining asleep, [npc.name] [npc.verb(keep)] [npc.her] "+penetratorName+insertion+target+orificeName+"."));
+								"[npc.Name] [npc.verb(remain)] крепко спит вместе с [npc.her] "+penetratorName+insertion+target+orificeName+".",
+								"Продолжая спать, [npc.name] [npc.do] даже не пытается проснуться, пока [npc.her] "+penetratorName+" "+(orifice.isPlural()?"являются":"есть")+" "+insertion+target+orificeName+".",
+								"Оставаясь во сне, [npc.name] [npc.verb(keep)] [npc.her] "+penetratorName+insertion+target+orificeName+"."));
 			} else {
 				return UtilText.parse(characterPenetrating, characterPenetrated,
 						UtilText.returnStringAtRandom(
-								"[npc.Name] [npc.verb(remain)] totally motionless with [npc.her] "+penetratorName+insertion+target+orificeName+".",
-								"Acting like an inanimate sex doll, [npc.name] [npc.do]n't make a move even as [npc.her] "+penetratorName+" "+(orifice.isPlural()?"are":"is")+" "+insertion+target+orificeName+".",
-								"Remaining still and silent, [npc.name] [npc.do]n't react to anything while keeping [npc.her] "+penetratorName+insertion+target+orificeName+"."));
+								"[npc.Name] [npc.verb(remain)] совершенно неподвижна вместе с [npc.her] "+penetratorName+insertion+target+orificeName+".",
+								"Ведя себя как неодушевленная секс-кукла, [npc.name] [npc.do] не шевелится, даже когда [npc.her] "+penetratorName+" "+(orifice.isPlural()?"являются":"есть")+" "+insertion+target+orificeName+".",
+								"Оставаясь неподвижной и безмолвной, [npc.name] [npc.do] никак не реагирует, сохраняя [npc.her] "+penetratorName+insertion+target+orificeName+"."));
 			}
 			
 		} else {
 			if(Math.random()<0.5f) {
 				return UtilText.parse(characterPenetrating, characterPenetrated,
 						UtilText.returnStringAtRandom(
-						penetratedPrefix+" as [npc.name] "+penetratingQualifier+" "+penetratingAction+" [npc.her] "+penetratorName+" "+penetrationDescription+target+orificeName+".",
-						penetratedPrefix+" as [npc.name] "+penetratingQualifier+" "+penetratingAction+" [npc.her] "+penetratorName+" "+penetrationDescription+target+orificeName+".",
+						penetratedPrefix+" как [npc.name] "+penetratingQualifier+" "+penetratingAction+" [npc.her] "+penetratorName+" "+penetrationDescription+target+orificeName+".",
+						penetratedPrefix+" как [npc.name] "+penetratingQualifier+" "+penetratingAction+" [npc.her] "+penetratorName+" "+penetrationDescription+target+orificeName+".",
 						"[npc.Name] "+penetratingQualifier+" "+penetratingAction+" [npc.her] "+penetratorName+" "+penetrationDescription+target+orificeName+", "+penetratedPostfix+".",
 						"[npc.Name] "+penetratingQualifier+" "+penetratingAction+" [npc.her] "+penetratorName+" "+penetrationDescription+target+orificeName+", "+penetratedPostfix+"."));	
 			} else {
 				return UtilText.parse(characterPenetrating, characterPenetrated,
 						UtilText.returnStringAtRandom(
-						penetratingPrefix+" as [npc.she] "+penetratingQualifier+" "+penetratingAction+" [npc.her] "+penetratorName+" "+penetrationDescription+target+orificeName+".",
-						penetratingPrefix+" as [npc.she] "+penetratingQualifier+" "+penetratingAction+" [npc.her] "+penetratorName+" "+penetrationDescription+target+orificeName+".",
+						penetratingPrefix+" как [npc.she] "+penetratingQualifier+" "+penetratingAction+" [npc.her] "+penetratorName+" "+penetrationDescription+target+orificeName+".",
+						penetratingPrefix+" как [npc.she] "+penetratingQualifier+" "+penetratingAction+" [npc.her] "+penetratorName+" "+penetrationDescription+target+orificeName+".",
 						"[npc.Name] "+penetratingQualifier+" "+penetratingAction+" [npc.her] "+penetratorName+" "+penetrationDescription+target+orificeName+", "+penetratedPostfix+".",
 						"[npc.Name] "+penetratingQualifier+" "+penetratingAction+" [npc.her] "+penetratorName+" "+penetrationDescription+target+orificeName+", "+penetratedPostfix+"."));
 			}
@@ -17242,28 +17095,28 @@ public abstract class GameCharacter implements XMLSaving {
 		
 		switch(Main.sex.getSexPace(characterPenetrating)) {
 			case DOM_GENTLE:
-				penetrationAdverb = UtilText.returnStringAtRandom("slowly", "gently");
-				penetrationVerb = UtilText.returnStringAtRandom("slide", "push", "glide");
+				penetrationAdverb = UtilText.returnStringAtRandom("медленно", "нежно");
+				penetrationVerb = UtilText.returnStringAtRandom("скользить", "толкать", "скользить");
 				break;
 			case DOM_NORMAL:
 				penetrationAdverb = "";
-				penetrationVerb = UtilText.returnStringAtRandom("push");
+				penetrationVerb = UtilText.returnStringAtRandom("толкать");
 				break;
 			case DOM_ROUGH:
-				penetrationAdverb = UtilText.returnStringAtRandom("roughly", "violently", "forcefully");
-				penetrationVerb = UtilText.returnStringAtRandom("slam", "grind");
+				penetrationAdverb = UtilText.returnStringAtRandom("грубо", "яростно", "сильно");
+				penetrationVerb = UtilText.returnStringAtRandom("впечатывать", "тереться");
 				break;
 			case SUB_EAGER:
-				penetrationAdverb = UtilText.returnStringAtRandom("eagerly", "desperately", "enthusiastically");
-				penetrationVerb = UtilText.returnStringAtRandom("slam", "grind");
+				penetrationAdverb = UtilText.returnStringAtRandom("жадно", "отчаянно", "с энтузиазмом");
+				penetrationVerb = UtilText.returnStringAtRandom("впечатывать", "втираться");
 				break;
 			case SUB_NORMAL:
 				penetrationAdverb = "";
-				penetrationVerb = UtilText.returnStringAtRandom("push");
+				penetrationVerb = UtilText.returnStringAtRandom("толкать");
 				break;
 			case SUB_RESISTING:
-				penetrationAdverb = UtilText.returnStringAtRandom("reluctantly", "hesitantly");
-				penetrationVerb = UtilText.returnStringAtRandom("push");
+				penetrationAdverb = UtilText.returnStringAtRandom("неохотно", "нерешительно");
+				penetrationVerb = UtilText.returnStringAtRandom("толкать");
 				break;
 		}
 		
@@ -17285,7 +17138,7 @@ public abstract class GameCharacter implements XMLSaving {
 				penetrationName = "[npc.tail+(true)]";
 				break;
 			case TENTACLE:
-				penetrationName = "[npc.tentacle+(true)]";
+				penetrationName = "[npc.щупальце+(true)]";
 				break;
 			case TONGUE:
 				penetrationName = "[npc.tongue+]";
@@ -17335,15 +17188,15 @@ public abstract class GameCharacter implements XMLSaving {
 		if(immobile) {
 			if(characterPenetrating.isAsleep()) {
 				return UtilText.parse(characterPenetrating, characterPenetrated,
-						"[npc.Name] [npc.verb(remain)] deeply asleep as [npc.her] "+penetrationName+" pushes "+penetrationAdjective+" "+ownerName+" "+orifice.getName(characterPenetrated)+".");
+						"[npc.Name] [npc.verb(remain)] крепко спит, пока [npc.her] "+penetrationName+" толкает "+penetrationAdjective+" "+ownerName+" "+orifice.getName(characterPenetrated)+".");
 			} else {
 				return UtilText.parse(characterPenetrating, characterPenetrated,
-						"[npc.Name] [npc.verb(remain)] totally motionless as [npc.her] "+penetrationName+" pushes "+penetrationAdjective+" "+ownerName+" "+orifice.getName(characterPenetrated)+".");
+						"[npc.Name] [npc.verb(remain)] совершенно неподвижен, пока [npc.her] "+penetrationName+" толкает "+penetrationAdjective+" "+ownerName+" "+orifice.getName(characterPenetrated)+".");
 			}
 			
 		} else {
 			return UtilText.parse(characterPenetrating, characterPenetrated,
-					"[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb("+penetrationAdverb+" "+penetrationVerb+")] [npc.her] "+penetrationName+" "+penetrationAdjective+" "+ownerName+" "+orifice.getName(characterPenetrated)+".");
+					"[npc.Name] [npc.verb(let)] из [npc.a_moan+], пока [npc.she] [npc.verb(\""+penetrationAdverb+" "+penetrationVerb+")] [npc.her] "+penetrationName+" "+penetrationAdjective+" "+ownerName+" "+orifice.getName(characterPenetrated)+".");
 		}
 	}
 	
@@ -17580,19 +17433,19 @@ public abstract class GameCharacter implements XMLSaving {
 			if(initialPenetration) {
 				if(characterPenetrating.equals(characterPenetrated)) {
 					return UtilText.parse(characterPenetrated, characterPenetrating,
-							"[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(wrap)] [npc.her] [npc.fingers+] around [npc.her] [npc.cock+], before starting to give [npc.herself] a handjob.");
+							"[npc.Name] [npc.verb(let)] из [npc.a_moan+], пока [npc.she] [npc.verb(wrap)] [npc.her] [npc.fingers+] вокруг [npc.her] [npc.cock+], прежде чем начать делать [npc.herself] хенджобом.");
 				} else {
 					if(immobilePenetrating) {
 						if(sleepingPenetrating) {
 							return UtilText.parse(characterPenetrated, characterPenetrating,
-									"[npc2.Name] [npc2.verb(continue)] to sleep as [npc2.her] [npc2.fingers+] are wrapped around [npc.namePos] [npc.cock+].");
+									"[npc2.Name] [npc2.verb(continue)] уснуть, пока [npc2.her] [npc2.fingers+] обвивают [npc.namePos] [npc.cock+].");
 						} else {
 							return UtilText.parse(characterPenetrated, characterPenetrating,
-									"[npc2.Name] [npc2.verb(stay)] totally still as [npc2.her] [npc2.fingers+] are wrapped around [npc.namePos] [npc.cock+].");
+									"[npc2.Name] [npc2.verb(stay)] совершенно неподвижно, пока [npc2.her] [npc2.fingers+] обвивают [npc.namePos] [npc.cock+].");
 						}
 					} else {
 						return UtilText.parse(characterPenetrated, characterPenetrating,
-								"[npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(wrap)] [npc2.her] [npc2.fingers+] around [npc.namePos] [npc.cock+], before starting to give [npc.herHim] a handjob.");
+								"[npc2.Name] [npc2.verb(let)] извлекает [npc2.a_moan+], пока [npc2.she] [npc2.verb(wrap)] [npc2.her] [npc2.fingers+] вокруг [npc.namePos] [npc.cock+], прежде чем начать делать [npc.herHim] мастурбацию рукой.");
 					}
 				}
 				
@@ -17605,10 +17458,10 @@ public abstract class GameCharacter implements XMLSaving {
 			if(initialPenetration) {
 				if(immobilePenetrating) {
 					return UtilText.parse(characterPenetrated, characterPenetrating,
-							"[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(wrap)] [npc2.namePos] [npc2.fingers+] around [npc.her] [npc.cock+].");
+							"[npc.Name] [npc.verb(let)] извлекает [npc.a_moan+], пока [npc.she] [npc.verb(wrap)] [npc2.namePos] [npc2.fingers+] вокруг [npc.her] [npc.cock+].");
 				} else {
 					return UtilText.parse(characterPenetrated, characterPenetrating,
-							"[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(get)] [npc2.name] to wrap [npc2.her] [npc2.fingers+] around [npc.her] [npc.cock+], before starting to receive a handjob from [npc.herHim].");
+							"[npc.Name] [npc.verb(let)] извлекает [npc.a_moan+], пока [npc.she] [npc.verb(get)] [npc2.name], чтобы обернуть [npc2.her] [npc2.fingers+] вокруг [npc.her] [npc.cock+], прежде чем начать получать мастурбацию рукой от [npc.herHim].");
 				}
 				
 			} else {
@@ -17623,34 +17476,34 @@ public abstract class GameCharacter implements XMLSaving {
 					if(immobilePenetrating) {
 						if(sleepingPenetrating) {
 							return UtilText.parse(characterPenetrated, characterPenetrating,
-									"[npc2.Name] [npc2.verb(remain)] deeply asleep as [npc2.her] [npc2.foot+] is pushed onto [npc.namePos] [npc.cock+].",
+									"[npc2.Name] [npc2.verb(remain)] крепко спит, пока [npc2.her] [npc2.foot+] прижимают к [npc.namePos] [npc.cock+].",
 									ParserTag.SEX_DESCRIPTION);
 						} else {
 							return UtilText.parse(characterPenetrated, characterPenetrating,
-									"Silent and unmoving, [npc2.name] [npc2.verb(continue)] to act like an inanimate sex doll as [npc2.her] [npc2.foot+] is pushed onto [npc.namePos] [npc.cock+].",
+									"Тихая и неподвижная, [npc2.name] [npc2.verb(continue)] притворяться неодушевленной секс-куклой, пока [npc2.her] [npc2.foot+] прижимают к [npc.namePos] [npc.cock+].",
 									ParserTag.SEX_DESCRIPTION);
 						}
 						
 					} else {
 						return UtilText.parse(characterPenetrated, characterPenetrating,
-								"[npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(push)] [npc2.her] [npc2.foot+] into [npc.namePos] groin, before starting to rub and press down on [npc.her] [npc.cock+].",
+								"[npc2.Name] [npc2.verb(let)] извлекает [npc2.a_moan+], пока [npc2.she] [npc2.verb(push)] [npc2.her] [npc2.foot+] в пах [npc.namePos], прежде чем начать растирать и прижимать [npc.her] [npc.cock+].",
 								ParserTag.SEX_DESCRIPTION);
 					}
 				} else {
 					if(immobilePenetrating) {
 						if(sleepingPenetrating) {
 							return UtilText.parse(characterPenetrated, characterPenetrating,
-									"[npc2.Name] [npc2.verb(remain)] deeply asleep as [npc2.her] [npc2.feet+] are pushed onto [npc.namePos] [npc.cock+].",
+									"[npc2.Name] [npc2.verb(remain)] крепко спит, пока [npc2.her] [npc2.feet+] прижимают к [npc.namePos] [npc.cock+].",
 									ParserTag.SEX_DESCRIPTION);
 						} else {
 							return UtilText.parse(characterPenetrated, characterPenetrating,
-									"Silent and unmoving, [npc2.name] [npc2.verb(continue)] to act like an inanimate sex doll as [npc2.her] [npc2.feet+] are pushed onto [npc.namePos] [npc.cock+].",
+									"Безмолвная и неподвижная, [npc2.name] [npc2.verb(continue)] на безжизненную секс-куклу, пока [npc2.her] [npc2.feet+] прижимают к [npc.namePos] [npc.cock+].",
 									ParserTag.SEX_DESCRIPTION);
 						}
 						
 					} else {
 						return UtilText.parse(characterPenetrated, characterPenetrating,
-								"[npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(wrap)] [npc2.her] [npc2.feet+] around [npc.namePos] [npc.cock+], before starting to give [npc.herHim] [npc2.a_footjob].",
+								"[npc2.Name] [npc2.verb(let)] [npc2.a_moan+], пока [npc2.she] [npc2.verb(wrap)] [npc2.her] [npc2.feet+] вокруг [npc.namePos] [npc.cock+], прежде чем начать получать [npc.herHim] [npc2.a_footjob].",
 								ParserTag.SEX_DESCRIPTION);
 					}
 				}
@@ -17666,33 +17519,32 @@ public abstract class GameCharacter implements XMLSaving {
 					if(immobilePenetrating) {
 						if(sleepingPenetrating) {
 							return UtilText.parse(characterPenetrated, characterPenetrating,
-									"[npc2.Name] [npc2.verb(show)] no sign of waking up as [npc2.her] [npc2.cock+] is pushed up against [npc.namePos] [npc.foot+].",
+									"[npc2.Name] [npc2.verb(show)] никаких признаков пробуждения, пока [npc2.her] [npc2.cock+] прижимают к [npc.namePos] [npc.foot+].",
 											ParserTag.SEX_DESCRIPTION);
 						} else {
 							return UtilText.parse(characterPenetrated, characterPenetrating,
-									"[npc2.Name] [npc2.do]n't react in any way as [npc2.her] [npc2.cock+] is pushed up against [npc.namePos] [npc.foot+].",
+									"[npc2.Name] [npc2.do] не реагирует никак, пока [npc2.her] [npc2.cock+] прижимают к [npc.namePos] [npc.foot+].",
 											ParserTag.SEX_DESCRIPTION);
 						}
 					} else {
 						return UtilText.parse(characterPenetrated, characterPenetrating,
-								"[npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(push)] [npc2.her] [npc2.cock+] up against [npc.namePos] [npc.foot+],"
-										+ " before getting [npc.herHim] to start giving [npc2.herHim] [npc.a_footjob].",
+								"[npc2.Name] [npc2.verb(let)] [npc2.a_moan+], пока [npc2.she] [npc2.verb(push)] [npc2.her] [npc2.cock+] к [npc.namePos] [npc.foot+], прежде чем заставить [npc.herHim] начать давать [npc2.herHim] [npc.a_footjob].",
 										ParserTag.SEX_DESCRIPTION);
 					}
 				} else {
 					if(immobilePenetrating) {
 						if(sleepingPenetrating) {
 							return UtilText.parse(characterPenetrated, characterPenetrating,
-									"[npc2.Name] [npc2.verb(show)] no sign of waking up as [npc2.her] [npc2.cock+] is pushed up against [npc.namePos] [npc.feet+].",
+									"[npc2.Name] [npc2.verb(show)] никаких признаков пробуждения, пока [npc2.her] [npc2.cock+] прижимают к [npc.namePos] [npc.feet+].",
 											ParserTag.SEX_DESCRIPTION);
 						} else {
 							return UtilText.parse(characterPenetrated, characterPenetrating,
-									"[npc2.Name] [npc2.do]n't react in any way as [npc2.her] [npc2.cock+] is pushed up against [npc.namePos] [npc.feet+].",
+									"[npc2.Name] [npc2.do] не реагирует никак, пока [npc2.her] [npc2.cock+] прижимают к [npc.namePos] [npc.feet+].",
 											ParserTag.SEX_DESCRIPTION);
 						}
 					} else {
 						return UtilText.parse(characterPenetrated, characterPenetrating,
-								"[npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(push)] [npc.namePos] [npc.feet+] together, before sliding [npc2.her] [npc2.cock+] between them and starting to receive [npc.a_footjob].",
+								"[npc2.Name] [npc2.verb(let)] [npc2.a_moan+], пока [npc2.she] [npc2.verb(push)] [npc.namePos] [npc.feet+] вместе, прежде чем просунуть [npc2.her] [npc2.cock+] между ними и начать получать [npc.a_footjob].",
 								ParserTag.SEX_DESCRIPTION);
 					}
 				}
@@ -17706,19 +17558,19 @@ public abstract class GameCharacter implements XMLSaving {
 			if(initialPenetration) {
 				if(characterPenetrating.equals(characterPenetrated)) {
 					return UtilText.parse(characterPenetrated, characterPenetrating,
-							"[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(wrap)] [npc.her] [npc.fingers+] around [npc.her] own [npc.hand].");
+							"[npc.Name] [npc.verb(let)] [npc.a_moan+], пока [npc.she] [npc.verb(wrap)] [npc.her] [npc.fingers+] вокруг собственных [npc.her] [npc.hand].");
 				} else {
 					if(immobilePenetrating) {
 						if(sleepingPenetrating) {
 							return UtilText.parse(characterPenetrated, characterPenetrating,
-									"[npc2.Name] [npc2.verb(remain)] deeply asleep as [npc2.her] [npc2.fingers+] are wrapped around [npc.namePos] [npc.hand+].");
+									"[npc2.Name] [npc2.verb(remain)] крепко спит, пока [npc2.her] [npc2.fingers+] обвивают [npc.namePos] [npc.hand+].");
 						} else {
 							return UtilText.parse(characterPenetrated, characterPenetrating,
-									"[npc2.Name] [npc2.verb(remain)] still and silent as [npc2.her] [npc2.fingers+] are wrapped around [npc.namePos] [npc.hand+].");
+									"[npc2.Name] [npc2.verb(remain)] неподвижна и безмолвна, пока [npc2.her] [npc2.fingers+] обвивают [npc.namePos] [npc.hand+].");
 						}
 					} else {
 						return UtilText.parse(characterPenetrated, characterPenetrating,
-								"[npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(wrap)] [npc2.her] [npc2.fingers+] around [npc.namePos] [npc.hand+].");
+								"[npc2.Name] [npc2.verb(let)] наружу [npc2.a_moan+], пока [npc2.she] [npc2.verb(wrap)] [npc2.her] [npc2.fingers+] вокруг [npc.namePos] [npc.hand+].");
 					}
 				}
 				
@@ -17766,44 +17618,42 @@ public abstract class GameCharacter implements XMLSaving {
 						if(immobilePenetrated) {
 							if(sleepingPenetrated) {
 								return UtilText.parse(characterPenetrating, characterPenetrated,
-										"[npc2.Name] [npc2.verb(continue)] to sleep, showing no sign of waking up as [npc.namePos] [npc.cock+] pushes into [npc2.her] [npc2.asshole+].");
+										"[npc2.Name] [npc2.verb(continue)] в сон, не подавая признаков пробуждения, пока [npc.namePos] [npc.cock+] втискивается в [npc2.her] [npc2.asshole+].");
 							} else {
 								return UtilText.parse(characterPenetrating, characterPenetrated,
-										"[npc2.Name] [npc2.verb(continue)] acting like an inanimate sex doll, remaining frozen in place as [npc.namePos] [npc.cock+] pushes into [npc2.her] [npc2.asshole+].");
+										"[npc2.Name] [npc2.verb(continue)] словно неодушевленная секс-кукла, оставаясь неподвижной, пока [npc.namePos] [npc.cock+] втискивается в [npc2.her] [npc2.asshole+].");
 							}
 						}
-						initialDescriptions.add("[npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(feel)] [npc.namePos] [npc.cock+] push into [npc2.her] [npc2.asshole+].");
+						initialDescriptions.add("[npc2.Name] [npc2.verb(let)] наружу [npc2.a_moan+], пока [npc2.she] [npc2.verb(feel)] [npc.namePos] [npc.cock+] втискиваются в [npc2.her] [npc2.asshole+].");
 						for(PenetrationModifier mod : characterPenetrating.getPenisModifiers()) {
 							switch(mod) {
 								case BARBED:
-									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(feel)] the little barbs lining [npc.namePos] [npc.cock] rake the insides of [npc2.her] [npc2.asshole+].");
+									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] наружу [npc2.a_moan+], пока [npc2.she] [npc2.verb(feel)] маленькие шипы вдоль [npc.namePos] [npc.cock] скребут внутренности [npc2.her] [npc2.asshole+].");
 									break;
 								case BLUNT:
-									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(feel)] the blunt head of [npc.namePos] [npc.cock] push inside [npc2.her] [npc2.asshole+].");
+									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] наружу [npc2.a_moan+], пока [npc2.she] [npc2.verb(feel)] тупой наконечник [npc.namePos] [npc.cock] втискивается внутрь [npc2.her] [npc2.asshole+].");
 									break;
 								case FLARED:
-									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(feel)] the flared head of [npc.namePos] [npc.cock] push inside [npc2.her] [npc2.asshole+].");
+									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] наружу [npc2.a_moan+], пока [npc2.she] [npc2.verb(feel)] расширяющийся наконечник [npc.namePos] [npc.cock] втискивается внутрь [npc2.her] [npc2.asshole+].");
 									break;
 								case KNOTTED:
 									if(feelsKnot) {
-										initialDescriptions.add("[npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(feel)]"
-												+ " the fat knot at the base of [npc.namePos] [npc.cock] bump up against [npc2.her] [npc2.asshole+] as [npc.she] fully [npc.verb(penetrate)] [npc2.herHim] in one thrust.");
+										initialDescriptions.add("[npc2.Name] [npc2.verb(let)] наружу, так что [npc2.a_moan+] как [npc2.she] [npc2.verb(feel)] жирный узел у основания [npc.namePos], [npc.cock] упирается в [npc2.her] [npc2.asshole+], когда [npc.she] полностью [npc.verb(penetrate)] [npc2.herHim] одним мощным толчком.");
 									}
 									break;
 								case PREHENSILE:
-									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(feel)] [npc.namePos] prehensile [npc.cock] exploring the insides of [npc2.her] [npc2.asshole+].");
+									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] наружу [npc2.a_moan+] как [npc2.she] [npc2.verb(feel)] [npc.namePos] цепкий [npc.cock], исследующий нутро [npc2.her] [npc2.asshole+].");
 									break;
 								case RIBBED:
-									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(feel)] [npc.namePos] ribbed [npc.cock] push into [npc2.her] [npc2.asshole+].");
+									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] из [npc2.a_moan+] как [npc2.she] [npc2.verb(feel)] [npc.namePos] ребристый [npc.cock] вталкивается в [npc2.her] [npc2.asshole+].");
 									break;
 								case SHEATHED:
 									break;
 								case TAPERED:
-									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(feel)] the tapered head of [npc.namePos] [npc.cock] push inside [npc2.her] [npc2.asshole+].");
+									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] наружу [npc2.a_moan+] как [npc2.she] [npc2.verb(feel)] сужающаяся головка [npc.namePos] [npc.cock] втискивается внутрь [npc2.her] [npc2.asshole+].");
 									break;
 								case TENTACLED:
-									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(feel)]"
-											+ " the little tentacles lining [npc.namePos] [npc.cock] squirm and wriggle against the insides of [npc2.her] [npc2.asshole+].");
+									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] наружу [npc2.a_moan+] в виде [npc2.she] [npc2.verb(feel)] маленькие щупальца, выстилающие [npc.namePos], [npc.cock] извиваются и ерзают внутри [npc2.her] [npc2.asshole+].");
 									break;
 								case VEINY:
 								case OVIPOSITOR:
@@ -17813,22 +17663,19 @@ public abstract class GameCharacter implements XMLSaving {
 						penetrationSB.append(initialDescriptions.get(Util.random.nextInt(initialDescriptions.size())));
 						
 						initialDescriptions.clear();
-						initialDescriptions.add(" [npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc2.namePos] [npc2.asshole+] squeezes down around [npc.her] [npc.cock+].");
+						initialDescriptions.add(" [npc.Name] [npc.verb(let)] наружу [npc.a_moan+] в виде [npc2.namePos], пока [npc2.asshole+] сжимается вокруг [npc.her] [npc.cock+].");
 						for(OrificeModifier mod : characterPenetrated.getAssOrificeModifiers()) {
 							switch(mod) {
 								case MUSCLE_CONTROL:
-									initialDescriptions.add(" As the [npc.cockHead+] of [npc.namePos] [npc.cock+] pushes its way into [npc2.namePos] [npc2.asshole+],"
-											+ " [npc.she] [npc.verb(feel)] a series of internal muscles instantly start to grip and squeeze down on [npc.her] throbbing length.");
+									initialDescriptions.add(" Когда [npc.cockHead+] от [npc.namePos] [npc.cock+] проталкивается в [npc2.namePos] [npc2.asshole+], [npc.she] [npc.verb(feel)] ряд внутренних мышц мгновенно начинает обхватывать и сжимать пульсирующую длину [npc.her].");
 									break;
 								case PUFFY:
 									break;
 								case RIBBED:
-									initialDescriptions.add(" As the [npc.cockHead+] of [npc.namePos] [npc.cock+] pushes its way into [npc2.namePos] [npc2.asshole+],"
-											+ " [npc.she] [npc.verb(feel)] the ribbed interior bumping down against [npc.her] throbbing length.");
+									initialDescriptions.add(" Когда [npc.cockHead+] [npc.namePos] [npc.cock+] проталкивается в [npc2.namePos] [npc2.asshole+], [npc.she] [npc.verb(feel)] ребристый внутренний слой, бьющийся о [npc.her] пульсирующую длину.");
 									break;
 								case TENTACLED:
-									initialDescriptions.add(" As the [npc.cockHead+] of [npc.namePos] [npc.cock+] pushes its way into [npc2.namePos] [npc2.asshole+],"
-											+ " [npc.she] [npc.verb(feel)] a series of little writhing tentacles start to massage and stroke [npc.her] throbbing length.");
+									initialDescriptions.add(" Когда [npc.cockHead+] [npc.namePos] [npc.cock+] проталкивается в [npc2.namePos] [npc2.asshole+], [npc.she] [npc.verb(feel)] ряд маленьких извивающихся щупалец начинает массировать и ласкать [npc.her] пульсирующую длину.");
 									break;
 							}
 						}
@@ -17851,44 +17698,42 @@ public abstract class GameCharacter implements XMLSaving {
 						if(immobilePenetrated) {
 							if(sleepingPenetrated) {
 								return UtilText.parse(characterPenetrating, characterPenetrated,
-										"[npc2.Name] [npc2.verb(continue)] to sleep, showing no sign of waking up as [npc.namePos] [npc.cock+] pushes into [npc2.her] [npc2.vagina+].");
+										"[npc2.Name] [npc2.verb(continue)] спать, не подавая признаков пробуждения, пока [npc.namePos] [npc.cock+] втискивается в [npc2.her] [npc2.vagina+].");
 							} else {
 								return UtilText.parse(characterPenetrating, characterPenetrated,
-										"[npc2.Name] [npc2.verb(continue)] acting like an inanimate sex doll, remaining frozen in place as [npc.namePos] [npc.cock+] pushes into [npc2.her] [npc2.vagina+].");
+										"[npc2.Name] [npc2.verb(continue)], ведя себя как неодушевленная секс-кукла и оставаясь неподвижной, пока [npc.namePos] [npc.cock+] втискивается в [npc2.her] [npc2.vagina+].");
 							}
 						}
-						initialDescriptions.add("[npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(feel)] [npc.namePos] [npc.cock+] push into [npc2.her] [npc2.vagina+].");
+						initialDescriptions.add("[npc2.Name] [npc2.verb(let)] [npc2.a_moan+], пока [npc2.she] [npc2.verb(feel)] [npc.namePos] [npc.cock+] вжимаются в [npc2.her] [npc2.vagina+].");
 						for(PenetrationModifier mod : characterPenetrating.getPenisModifiers()) {
 							switch(mod) {
 								case BARBED:
-									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(feel)] the little barbs lining [npc.namePos] [npc.cock] rake the insides of [npc2.her] [npc2.vagina+].");
+									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] [npc2.a_moan+], пока [npc2.she] [npc2.verb(feel)] маленькие шипы, покрывающие [npc.namePos] [npc.cock], скребут внутренности [npc2.her] [npc2.vagina+].");
 									break;
 								case BLUNT:
-									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(feel)] the blunt head of [npc.namePos] [npc.cock] push inside [npc2.her] [npc2.vagina+].");
+									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] [npc2.a_moan+], пока [npc2.she] [npc2.verb(feel)] тупой наконечник [npc.namePos] [npc.cock] вжимается в [npc2.her] [npc2.vagina+].");
 									break;
 								case FLARED:
-									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(feel)] the flared head of [npc.namePos] [npc.cock] push inside [npc2.her] [npc2.vagina+].");
+									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] [npc2.a_moan+], пока [npc2.she] [npc2.verb(feel)] расширяющаяся головка [npc.namePos] [npc.cock] вжимается в [npc2.her] [npc2.vagina+].");
 									break;
 								case KNOTTED:
 									if(feelsKnot) {
-										initialDescriptions.add("[npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(feel)]"
-												+ " the fat knot at the base of [npc.namePos] [npc.cock] bump up against [npc2.her] [npc2.vagina+] as [npc.she] fully [npc.verb(penetrate)] [npc2.herHim] in one thrust.");
+										initialDescriptions.add("[npc2.Name] [npc2.verb(let)] выходит из [npc2.a_moan+] как [npc2.she] [npc2.verb(feel)] жирный узел у основания [npc.namePos], [npc.cock] упираясь в [npc2.her], [npc2.vagina+] пока [npc.she] полностью не [npc.verb(penetrate)] [npc2.herHim] одним мощным толчком.");
 									}
 									break;
 								case PREHENSILE:
-									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(feel)] [npc.namePos] prehensile [npc.cock] exploring the insides of [npc2.her] [npc2.vagina+].");
+									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] наружу [npc2.a_moan+] как [npc2.she] [npc2.verb(feel)] [npc.namePos] цепкий [npc.cock], исследующий нутро [npc2.her] [npc2.vagina+].");
 									break;
 								case RIBBED:
-									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(feel)] [npc.namePos] ribbed [npc.cock] push into [npc2.her] [npc2.vagina+].");
+									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] наружу, пока [npc2.a_moan+] в виде [npc2.she] [npc2.verb(feel)] [npc.namePos] ребристый [npc.cock] втискивается в [npc2.her] [npc2.vagina+].");
 									break;
 								case SHEATHED:
 									break;
 								case TAPERED:
-									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(feel)] the tapered head of [npc.namePos] [npc.cock] push inside [npc2.her] [npc2.vagina+].");
+									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] наружу [npc2.a_moan+] как [npc2.she] [npc2.verb(feel)] сужающаяся головка [npc.namePos] [npc.cock] вталкивается внутрь [npc2.her] [npc2.vagina+].");
 									break;
 								case TENTACLED:
-									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(feel)]"
-											+ " the little tentacles lining [npc.namePos] [npc.cock] squirm and wriggle against the insides of [npc2.her] [npc2.vagina+].");
+									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] наружу [npc2.a_moan+] в виде [npc2.she] [npc2.verb(feel)] маленькие щупальца, выстилающие [npc.namePos], [npc.cock] извиваются и ерзают внутри [npc2.her] [npc2.vagina+].");
 									break;
 								case VEINY:
 								case OVIPOSITOR:
@@ -17898,22 +17743,19 @@ public abstract class GameCharacter implements XMLSaving {
 						penetrationSB.append(initialDescriptions.get(Util.random.nextInt(initialDescriptions.size())));
 						
 						initialDescriptions.clear();
-						initialDescriptions.add(" [npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc2.namePos] [npc2.vagina+] squeezes down around [npc.her] [npc.cock+].");
+						initialDescriptions.add(" [npc.Name] [npc.verb(let)] наружу [npc.a_moan+] в виде [npc2.namePos], пока [npc2.vagina+] сжимается вокруг [npc.her] [npc.cock+].");
 						for(OrificeModifier mod : characterPenetrated.getVaginaOrificeModifiers()) {
 							switch(mod) {
 								case MUSCLE_CONTROL:
-									initialDescriptions.add(" As the [npc.cockHead+] of [npc.namePos] [npc.cock+] pushes its way into [npc2.namePos] [npc2.vagina+],"
-											+ " [npc.she] [npc.verb(feel)] a series of internal muscles instantly start to grip and squeeze down on [npc.her] throbbing length.");
+									initialDescriptions.add(" Когда [npc.cockHead+] [npc.namePos] [npc.cock+] проталкивается в [npc2.namePos] [npc2.vagina+], [npc.she] [npc.verb(feel)] ряд внутренних мышц мгновенно начинает обхватывать и сжимать пульсирующую длину [npc.her].");
 									break;
 								case PUFFY:
 									break;
 								case RIBBED:
-									initialDescriptions.add(" As the [npc.cockHead+] of [npc.namePos] [npc.cock+] pushes its way into [npc2.namePos] [npc2.vagina+],"
-											+ " [npc.she] [npc.verb(feel)] the ribbed interior bumping down against [npc.her] throbbing length.");
+									initialDescriptions.add(" Когда [npc.cockHead+] [npc.namePos] [npc.cock+] проталкивается в [npc2.namePos] [npc2.vagina+], [npc.she] [npc.verb(feel)] ребристый внутренний слой, бьющийся о [npc.her] пульсирующую длину.");
 									break;
 								case TENTACLED:
-									initialDescriptions.add(" As the [npc.cockHead+] of [npc.namePos] [npc.cock+] pushes its way into [npc2.namePos] [npc2.vagina+],"
-											+ " [npc.she] [npc.verb(feel)] a series of little writhing tentacles start to massage and stroke [npc.her] throbbing length.");
+									initialDescriptions.add(" Когда [npc.cockHead+] [npc.namePos] [npc.cock+] проталкивается в [npc2.namePos] [npc2.vagina+], [npc.she] [npc.verb(feel)] ряд маленьких извивающихся щупалец начинает массировать и ласкать [npc.her] пульсирующую длину.");
 									break;
 							}
 						}
@@ -17935,44 +17777,42 @@ public abstract class GameCharacter implements XMLSaving {
 						if(immobilePenetrated) {
 							if(sleepingPenetrated) {
 								return UtilText.parse(characterPenetrating, characterPenetrated,
-										"[npc2.Name] [npc2.verb(continue)] to sleep, showing no sign of waking up as [npc.namePos] [npc.cock+] pushes into [npc2.her] [npc2.nipple+].");
+										"[npc2.Name] [npc2.verb(continue)] спать, не подавая признаков пробуждения, пока [npc.namePos] [npc.cock+] втискивается в [npc2.her] [npc2.nipple+].");
 							} else {
 								return UtilText.parse(characterPenetrating, characterPenetrated,
-										"[npc2.Name] [npc2.verb(continue)] acting like an inanimate sex doll, remaining frozen in place as [npc.namePos] [npc.cock+] pushes into [npc2.her] [npc2.nipple+].");
+										"[npc2.Name] [npc2.verb(continue)], словно неодушевленная секс-кукла, замирая на месте, пока [npc.namePos] [npc.cock+] втискивается в [npc2.her] [npc2.nipple+].");
 							}
 						}
-						initialDescriptions.add("[npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(feel)] [npc.namePos] [npc.cock+] push into [npc2.her] [npc2.nipple+].");
+						initialDescriptions.add("[npc2.Name] [npc2.verb(let)] [npc2.a_moan+], пока [npc2.she] [npc2.verb(feel)] [npc.namePos] [npc.cock+] втискиваются в [npc2.her] [npc2.nipple+].");
 						for(PenetrationModifier mod : characterPenetrating.getPenisModifiers()) {
 							switch(mod) {
 								case BARBED:
-									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(feel)] the little barbs lining [npc.namePos] [npc.cock] rake the insides of [npc2.her] [npc2.nipple+].");
+									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] [npc2.a_moan+], пока [npc2.she] [npc2.verb(feel)] маленькие шипы, покрывающие [npc.namePos] [npc.cock], скребут внутренности [npc2.her] [npc2.nipple+].");
 									break;
 								case BLUNT:
-									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(feel)] the blunt head of [npc.namePos] [npc.cock] push inside [npc2.her] [npc2.nipple+].");
+									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] [npc2.a_moan+], пока [npc2.she] [npc2.verb(feel)] тупой наконечник [npc.namePos] [npc.cock] втискивается внутрь [npc2.her] [npc2.nipple+].");
 									break;
 								case FLARED:
-									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(feel)] the flared head of [npc.namePos] [npc.cock] push inside [npc2.her] [npc2.nipple+].");
+									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] [npc2.a_moan+], пока [npc2.she] [npc2.verb(feel)] расширяющаяся головка [npc.namePos] [npc.cock] втискивается внутрь [npc2.her] [npc2.nipple+].");
 									break;
 								case KNOTTED:
 									if(feelsKnot) {
-										initialDescriptions.add("[npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(feel)]"
-												+ " the fat knot at the base of [npc.namePos] [npc.cock] bump up against [npc2.her] [npc2.nipple+] as [npc.she] fully [npc.verb(penetrate)] [npc2.herHim] in one thrust.");
+										initialDescriptions.add("[npc2.Name] [npc2.verb(let)] наружу, когда [npc2.a_moan+] как [npc2.she] [npc2.verb(feel)] жирный узел у основания [npc.namePos] [npc.cock] упирается в [npc2.her] [npc2.nipple+], когда [npc.she] полностью [npc.verb(penetrate)] [npc2.herHim] одним мощным толчком.");
 									}
 									break;
 								case PREHENSILE:
-									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(feel)] [npc.namePos] prehensile [npc.cock] exploring the insides of [npc2.her] [npc2.nipple+].");
+									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] наружу [npc2.a_moan+] как [npc2.she] [npc2.verb(feel)] [npc.namePos] цепкий [npc.cock], исследующий нутро [npc2.her] [npc2.nipple+].");
 									break;
 								case RIBBED:
-									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(feel)] [npc.namePos] ribbed [npc.cock] push into [npc2.her] [npc2.nipple+].");
+									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] наружу, пока [npc2.a_moan+] в виде [npc2.she] [npc2.verb(feel)] [npc.namePos] ребристый [npc.cock] втискивается в [npc2.her] [npc2.nipple+].");
 									break;
 								case SHEATHED:
 									break;
 								case TAPERED:
-									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(feel)] the tapered head of [npc.namePos] [npc.cock] push inside [npc2.her] [npc2.nipple+].");
+									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] наружу из [npc2.a_moan+], как [npc2.she] [npc2.verb(feel)] сужающаяся головка [npc.namePos], [npc.cock] втискивается внутрь [npc2.her] [npc2.nipple+].");
 									break;
 								case TENTACLED:
-									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(feel)]"
-											+ " the little tentacles lining [npc.namePos] [npc.cock] squirm and wriggle against the insides of [npc2.her] [npc2.nipple+].");
+									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] наружу [npc2.a_moan+] в виде [npc2.she] [npc2.verb(feel)] маленькие щупальца, выстилающие [npc.namePos], [npc.cock] извиваются и ерзают внутри [npc2.her] [npc2.nipple+].");
 									break;
 								case VEINY:
 								case OVIPOSITOR:
@@ -17982,22 +17822,19 @@ public abstract class GameCharacter implements XMLSaving {
 						penetrationSB.append(initialDescriptions.get(Util.random.nextInt(initialDescriptions.size())));
 						
 						initialDescriptions.clear();
-						initialDescriptions.add(" [npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc2.namePos] [npc2.nipple+] squeezes down around [npc.her] [npc.cock+].");
+						initialDescriptions.add(" [npc.Name] [npc.verb(let)] наружу [npc.a_moan+] как [npc2.namePos], пока [npc2.nipple+] сжимается вокруг [npc.her] [npc.cock+].");
 						for(OrificeModifier mod : characterPenetrated.getNippleOrificeModifiers()) {
 							switch(mod) {
 								case MUSCLE_CONTROL:
-									initialDescriptions.add(" As the [npc.cockHead+] of [npc.namePos] [npc.cock+] pushes its way into [npc2.namePos] [npc2.nipple+],"
-											+ " [npc.she] [npc.verb(feel)] a series of internal muscles instantly start to grip and squeeze down on [npc.her] throbbing length.");
+									initialDescriptions.add(" Когда [npc.cockHead+] от [npc.namePos] [npc.cock+] проталкивается в [npc2.namePos] [npc2.nipple+], [npc.she] [npc.verb(feel)] ряд внутренних мышц мгновенно начинает обхватывать и сжимать пульсирующую длину [npc.her].");
 									break;
 								case PUFFY:
 									break;
 								case RIBBED:
-									initialDescriptions.add(" As the [npc.cockHead+] of [npc.namePos] [npc.cock+] pushes its way into [npc2.namePos] [npc2.nipple+],"
-											+ " [npc.she] [npc.verb(feel)] the ribbed interior bumping down against [npc.her] throbbing length.");
+									initialDescriptions.add(" Когда [npc.cockHead+] [npc.namePos] [npc.cock+] проталкивается в [npc2.namePos] [npc2.nipple+], [npc.she] [npc.verb(feel)] ребристая внутренняя поверхность, толчками ударяющая по [npc.her] пульсирующей длине.");
 									break;
 								case TENTACLED:
-									initialDescriptions.add(" As the [npc.cockHead+] of [npc.namePos] [npc.cock+] pushes its way into [npc2.namePos] [npc2.nipple+],"
-											+ " [npc.she] [npc.verb(feel)] a series of little writhing tentacles start to massage and stroke [npc.her] throbbing length.");
+									initialDescriptions.add(" Когда [npc.cockHead+] [npc.namePos] [npc.cock+] проталкивается в [npc2.namePos] [npc2.nipple+], [npc.she] [npc.verb(feel)] ряд маленьких извивающихся щупалец начинает массировать и ласкать [npc.her] пульсирующую длину.");
 									break;
 							}
 						}
@@ -18014,39 +17851,39 @@ public abstract class GameCharacter implements XMLSaving {
 								case LIPS:
 									if(immobilePenetrating) {
 										if(sleepingPenetrating) {
-											return UtilText.parse(characterPenetrating, characterPenetrated, "[npc.Name] [npc.verb(continue)] to sleep as [npc.her] [npc.lips+] are pressed against [npc2.namePos] mouth-like lipples.");
+											return UtilText.parse(characterPenetrating, characterPenetrated, "[npc.Name] [npc.verb(continue)] в сон, пока [npc.her] [npc.lips+] прижаты к [npc2.namePos] похожим на рот складкам.");
 										} else {
-											return UtilText.parse(characterPenetrating, characterPenetrated, "[npc.Name] [npc.verb(stay)] still as [npc.her] [npc.lips+] are pressed against [npc2.namePos] mouth-like lipples.");
+											return UtilText.parse(characterPenetrating, characterPenetrated, "[npc.Name] [npc.verb(stay)] неподвижно, пока [npc.her] [npc.lips+] прижаты к [npc2.namePos] похожим на рот складкам.");
 										}
 									}
-									return UtilText.parse(characterPenetrating, characterPenetrated, "[npc.Name] [npc.verb(let)] out a muffled [npc.moan] as [npc.she] [npc.verb(start)] kissing [npc2.namePos] mouth-like lipples.");
+									return UtilText.parse(characterPenetrating, characterPenetrated, "[npc.Name] [npc.verb(let)] приглушенный [npc.moan], пока [npc.she] [npc.verb(start)] целует [npc2.namePos] похожие на рот складки.");
 								case INVERTED:
 									if(immobilePenetrating) {
 										if(sleepingPenetrating) {
-											return UtilText.parse(characterPenetrating, characterPenetrated, "[npc.Name] [npc.verb(continue)] to sleep as [npc.her] [npc.lips+] are pressed against [npc2.namePos] inverted nipples.");
+											return UtilText.parse(characterPenetrating, characterPenetrated, "[npc.Name] [npc.verb(continue)] в сон, пока [npc.her] [npc.lips+] прижаты к [npc2.namePos] втянутым соскам.");
 										} else {
-											return UtilText.parse(characterPenetrating, characterPenetrated, "[npc.Name] [npc.verb(stay)] still as [npc.her] [npc.lips+] are pressed against [npc2.namePos] inverted nipples.");
+											return UtilText.parse(characterPenetrating, characterPenetrated, "[npc.Name] [npc.verb(stay)] неподвижно, пока [npc.her] [npc.lips+] прижаты к [npc2.namePos] втянутым соскам.");
 										}
 									}
-									return UtilText.parse(characterPenetrating, characterPenetrated, "[npc.Name] [npc.verb(let)] out a muffled [npc.moan] as [npc.she] [npc.verb(start)] sucking on [npc2.namePos] inverted nipples.");
+									return UtilText.parse(characterPenetrating, characterPenetrated, "[npc.Name] [npc.verb(let)] приглушенный [npc.moan], пока [npc.she] [npc.verb(start)] сосет [npc2.namePos] втянутые соски.");
 								case NORMAL:
 									if(immobilePenetrating) {
 										if(sleepingPenetrating) {
-											return UtilText.parse(characterPenetrating, characterPenetrated, "[npc.Name] [npc.verb(continue)] to sleep as [npc.her] [npc.lips+] are pressed against [npc2.namePos] nipples.");
+											return UtilText.parse(characterPenetrating, characterPenetrated, "[npc.Name] [npc.verb(continue)] в сон, пока [npc.her] [npc.lips+] прижаты к [npc2.namePos] соскам.");
 										} else {
-											return UtilText.parse(characterPenetrating, characterPenetrated, "[npc.Name] [npc.verb(stay)] still as [npc.her] [npc.lips+] are pressed against [npc2.namePos] nipples.");
+											return UtilText.parse(characterPenetrating, characterPenetrated, "[npc.Name] [npc.verb(stay)] неподвижно, пока [npc.her] [npc.lips+] прижаты к [npc2.namePos] соскам.");
 										}
 									}
-									return UtilText.parse(characterPenetrating, characterPenetrated, "[npc.Name] [npc.verb(let)] out a muffled [npc.moan] as [npc.she] [npc.verb(start)] sucking on [npc2.namePos] nipples.");
+									return UtilText.parse(characterPenetrating, characterPenetrated, "[npc.Name] [npc.verb(let)] приглушенный [npc.moan], пока [npc.she] [npc.verb(start)] сосет [npc2.namePos] соски.");
 								case VAGINA:
 									if(immobilePenetrating) {
 										if(sleepingPenetrating) {
-											return UtilText.parse(characterPenetrating, characterPenetrated, "[npc.Name] [npc.verb(continue)] to sleep as [npc.her] [npc.lips+] are pressed against [npc2.namePos] nipple-cunts.");
+											return UtilText.parse(characterPenetrating, characterPenetrated, "[npc.Name] [npc.verb(continue)] в сон, пока [npc.her] [npc.lips+] прижаты к [npc2.namePos] соско-кискам.");
 										} else {
-											return UtilText.parse(characterPenetrating, characterPenetrated, "[npc.Name] [npc.verb(stay)] still as [npc.her] [npc.lips+] are pressed against [npc2.namePos] nipple-cunts.");
+											return UtilText.parse(characterPenetrating, characterPenetrated, "[npc.Name] [npc.verb(stay)] неподвижно, пока [npc.her] [npc.lips+] прижаты к [npc2.namePos] соско-кискам.");
 										}
 									}
-									return UtilText.parse(characterPenetrating, characterPenetrated, "[npc.Name] [npc.verb(let)] out a muffled [npc.moan] as [npc.she] [npc.verb(start)] licking [npc2.namePos] nipple-cunts.");
+									return UtilText.parse(characterPenetrating, characterPenetrated, "[npc.Name] [npc.verb(let)] приглушенный [npc.moan], пока [npc.she] [npc.verb(start)] лижет [npc2.namePos] соско-киски.");
 							}
 						}
 						break;
@@ -18066,56 +17903,54 @@ public abstract class GameCharacter implements XMLSaving {
 						if(immobilePenetrated) {
 							if(sleepingPenetrated) {
 								return UtilText.parse(characterPenetrating, characterPenetrated,
-										"[npc2.Name] [npc2.verb(remain)] deeply asleep as [npc.name] [npc.verb(start)] kissing [npc2.herHim].");
+										"[npc2.Name] [npc2.verb(remain)] крепко спит, пока [npc.name] [npc.verb(start)] целует [npc2.herHim].");
 							} else {
 								return UtilText.parse(characterPenetrating, characterPenetrated,
-										"[npc2.Name] obediently [npc2.verb(remain)] silent and motionless as [npc.name] [npc.verb(start)] kissing [npc2.herHim].");
+										"[npc2.Name] послушно [npc2.verb(remain)] тихо и неподвижно, пока [npc.name] [npc.verb(start)] целует [npc2.herHim].");
 							}
 						}
-						initialDescriptions.add("[npc2.Name] [npc2.verb(let)] out a muffled [npc2.moan+] as [npc.name] [npc.verb(start)] kissing [npc2.herHim].");
+						initialDescriptions.add("[npc2.Name] [npc2.verb(let)] приглушенный [npc2.moan+], пока [npc.name] [npc.verb(start)] целует [npc2.herHim].");
 						break;
 					case PENIS:
 						if(immobilePenetrated) {
 							if(sleepingPenetrated) {
 								return UtilText.parse(characterPenetrating, characterPenetrated,
-										"[npc2.Name] [npc2.verb(start)] to choke and squirm about as [npc.namePos] [npc.cock+] slides down into [npc2.her] throat.");
+										"[npc2.Name] [npc2.verb(start)], задыхаясь и извиваясь, пока [npc.namePos] [npc.cock+] скользит в [npc2.her] горло.");
 							} else {
 								return UtilText.parse(characterPenetrating, characterPenetrated,
-										"[npc2.Name] obediently [npc2.verb(remain)] silent and motionless as [npc.namePos] [npc.cock+] slides down into [npc2.her] throat.");
+										"[npc2.Name] послушно [npc2.verb(remain)] тихо и неподвижно, пока [npc.namePos] [npc.cock+] скользит в [npc2.her] горло.");
 							}
 						}
-						initialDescriptions.add("[npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(feel)] [npc.namePos] [npc.cock+] slide down into [npc2.her] throat.");
+						initialDescriptions.add("[npc2.Name] [npc2.verb(let)] [npc2.a_moan+], пока [npc2.she] [npc2.verb(feel)] [npc.namePos] [npc.cock+] скользят в [npc2.her] горло.");
 						for(PenetrationModifier mod : characterPenetrating.getPenisModifiers()) {
 							switch(mod) {
 								case BARBED:
-									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(feel)] the little barbs lining [npc.namePos] [npc.cock] rake the insides of [npc2.her] throat.");
+									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] наружу [npc2.a_moan+] как [npc2.she] [npc2.verb(feel)] крошечные шипы, выстилающие [npc.namePos], [npc.cock] скребут внутреннюю часть [npc2.her] горла.");
 									break;
 								case BLUNT:
-									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(feel)] the blunt head of [npc.namePos] [npc.cock] push deep down [npc2.her] throat.");
+									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] торчит из [npc2.a_moan+], словно [npc2.she] [npc2.verb(feel)] тупой наконечник [npc.namePos], глубоко заталкивая его в [npc.cock] [npc2.her] горло.");
 									break;
 								case FLARED:
-									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(feel)] the flared head of [npc.namePos] [npc.cock] push deep down [npc2.her] throat.");
+									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] выходит из [npc2.a_moan+] как [npc2.she] [npc2.verb(feel)] расширенная головка [npc.namePos], глубоко проталкиваясь в [npc.cock] [npc2.her] горло.");
 									break;
 								case KNOTTED:
 									if(feelsKnot) {
-										initialDescriptions.add("[npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(feel)]"
-												+ " the fat knot at the base of [npc.namePos] [npc.cock] bump against [npc2.her] [npc2.lips+] as [npc.she] fully [npc.verb(hilt)] [npc.herself] down [npc2.her] throat in one thrust.");
+										initialDescriptions.add("[npc2.Name] [npc2.verb(let)] вытащил [npc2.a_moan+] как [npc2.she] [npc2.verb(feel)] жирный узел у основания [npc.namePos], [npc.cock] толкнув [npc2.her] [npc2.lips+], когда [npc.she] полностью [npc.verb(hilt)] [npc.herself] вниз по [npc2.her] горлу одним мощным толчком.");
 									}
 									break;
 								case PREHENSILE:
-									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(feel)] [npc.namePos] prehensile [npc.cock] exploring the insides of [npc2.her] throat.");
+									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] наружу [npc2.a_moan+] как [npc2.she] [npc2.verb(feel)] цепкий [npc.namePos] [npc.cock] исследует нутро [npc2.her] горла.");
 									break;
 								case RIBBED:
-									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(feel)] [npc.namePos] ribbed [npc.cock] push deep down [npc2.her] throat.");
+									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] вырывается из [npc2.a_moan+], как [npc2.she] [npc2.verb(feel)], [npc.namePos] ребристый [npc.cock] глубоко проталкивается в [npc2.her].");
 									break;
 								case SHEATHED:
 									break;
 								case TAPERED:
-									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(feel)] the tapered head of [npc.namePos] [npc.cock] push deep down [npc2.her] throat.");
+									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] выходит из [npc2.a_moan+], словно [npc2.she] [npc2.verb(feel)] сужающаяся головка [npc.namePos], которая глубоко проталкивается в [npc.cock] [npc2.her].");
 									break;
 								case TENTACLED:
-									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(feel)]"
-											+ " the little tentacles lining [npc.namePos] [npc.cock] squirm and wriggle against the insides of [npc2.her] throat.");
+									initialDescriptions.add("[npc2.Name] [npc2.verb(let)] наружу [npc2.a_moan+] в виде [npc2.she] [npc2.verb(feel)] маленькие щупальца, выстилающие [npc.namePos] [npc.cock] извиваются и ерзают внутри [npc2.her] горла.");
 									break;
 								case VEINY:
 								case OVIPOSITOR:
@@ -18125,24 +17960,20 @@ public abstract class GameCharacter implements XMLSaving {
 						penetrationSB.append(initialDescriptions.get(Util.random.nextInt(initialDescriptions.size())));
 						
 						initialDescriptions.clear();
-						initialDescriptions.add(" [npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc2.namePos] throat squeezes down around [npc.her] [npc.cock+].");
+						initialDescriptions.add(" [npc.Name] [npc.verb(let)] из [npc.a_moan+] как [npc2.namePos], сжимающийся вокруг [npc.her] [npc.cock+].");
 						for(OrificeModifier mod : characterPenetrated.getFaceOrificeModifiers()) {
 							switch(mod) {
 								case MUSCLE_CONTROL:
-									initialDescriptions.add(" As the [npc.cockHead+] of [npc.namePos] [npc.cock+] pushes its way into [npc2.namePos] throat,"
-											+ " [npc.she] [npc.verb(feel)] a series of internal muscles instantly start to grip and squeeze down on [npc.her] throbbing length.");
+									initialDescriptions.add(" Когда [npc.cockHead+] [npc.namePos] [npc.cock+] проталкивается в [npc2.namePos] горло, [npc.she] [npc.verb(feel)] ряд внутренних мышц мгновенно начинает обхватывать и сжимать [npc.her] пульсирующую длину.");
 									break;
 								case PUFFY:
-									initialDescriptions.add(" As the [npc.cockHead+] of [npc.namePos] [npc.cock+] pushes its way into [npc2.namePos] throat,"
-											+ " [npc.she] [npc.verb(feel)] [npc2.namePos] extra-puffy [npc2.lips] wrap around [npc.her] throbbing length.");
+									initialDescriptions.add(" Когда [npc.cockHead+] [npc.namePos] [npc.cock+] втискивается в [npc2.namePos] горло, [npc.she] [npc.verb(feel)] [npc2.namePos] невероятно раздутые [npc2.lips] обхватывают [npc.her] пульсирующую длину.");
 									break;
 								case RIBBED:
-									initialDescriptions.add(" As the [npc.cockHead+] of [npc.namePos] [npc.cock+] pushes its way into [npc2.namePos] throat,"
-											+ " [npc.she] [npc.verb(feel)] the ribbed interior bumping down against [npc.her] throbbing length.");
+									initialDescriptions.add(" Когда [npc.cockHead+] [npc.namePos] [npc.cock+] проталкивается в [npc2.namePos] горло, [npc.she] [npc.verb(feel)] ребристая внутренняя поверхность настойчиво давит на [npc.her] пульсирующую длину.");
 									break;
 								case TENTACLED:
-									initialDescriptions.add(" As the [npc.cockHead+] of [npc.namePos] [npc.cock+] pushes its way into [npc2.namePos] throat,"
-											+ " [npc.she] [npc.verb(feel)] a series of little writhing tentacles start to massage and stroke [npc.her] throbbing length.");
+									initialDescriptions.add(" Когда [npc.cockHead+] [npc.namePos] [npc.cock+] проталкивается в [npc2.namePos] горло, [npc.she] [npc.verb(feel)] ряд маленьких извивающихся щупалец начинает массировать и ласкать [npc.her] пульсирующую длину.");
 									break;
 							}
 						}
@@ -18197,7 +18028,7 @@ public abstract class GameCharacter implements XMLSaving {
 									characterPenetrating.getVaginaRawClitorisSizeValue(),
 									characterPenetrated,
 									orifice,
-									"clit",
+									"клитор",
 									"[npc.clit+]",
 									"[npc.clitSize] [npc.clit]"));
 							break;
@@ -18208,7 +18039,7 @@ public abstract class GameCharacter implements XMLSaving {
 									characterPenetrating.getPenisRawSizeValue(),
 									characterPenetrated,
 									orifice,
-									"cock",
+									"член",
 									"[npc.cock+]",
 									"[npc.cockSize] [npc.cock]"));
 							break;
@@ -18233,7 +18064,7 @@ public abstract class GameCharacter implements XMLSaving {
 									characterPenetrated,
 									orifice,
 									"[npc.tentacle(true)]",
-									"[npc.tentacle+(true)]",
+									"[npc.щупальце+(true)]",
 									"[npc.tentacle(true)]"));
 							break;
 					}
@@ -18252,7 +18083,7 @@ public abstract class GameCharacter implements XMLSaving {
 								characterPenetrating.getVaginaRawClitorisSizeValue(),
 								characterPenetrated,
 								orifice,
-								"clit",
+								"клитор",
 								"[npc.clit+]",
 								"[npc.clitSize] [npc.clit]"));
 						break;
@@ -18263,7 +18094,7 @@ public abstract class GameCharacter implements XMLSaving {
 								characterPenetrating.getPenisRawSizeValue(),
 								characterPenetrated,
 								orifice,
-								"cock",
+								"член",
 								"[npc.cock+]",
 								"[npc.cockSize] [npc.cock]"));
 						break;
@@ -18288,7 +18119,7 @@ public abstract class GameCharacter implements XMLSaving {
 								characterPenetrated,
 								orifice,
 								"[npc.tentacle(true)]",
-								"[npc.tentacle+(true)]",
+								"[npc.щупальце+(true)]",
 								"[npc.tentacle(true)]"));
 						break;
 				}
@@ -18336,9 +18167,9 @@ public abstract class GameCharacter implements XMLSaving {
 		if(!Main.game.isInSex() || Main.sex.isDom(characterPenetrating)) { // The character doing the penetrating is the dom:
 			if(length<=comfortable) {
 				if(internalOrifice==SexAreaOrifice.MOUTH) {
-					sb.append("[npc.NameIsFull] able to sink [npc.her] "+nameDesc+" [style.italicsMinorGood(fully down [npc2.namePos] throat)] without going so deep as to cause [npc2.herHim] discomfort!");
+					sb.append("[npc.NameIsFull] может заглотить [npc.her] "+nameDesc+" [style.italicsMinorGood(полностью в глотку [npc2.namePos])] , не заходя так глубоко, чтобы вызвать дискомфорт у [npc2.herHim]!");
 				} else {
-					sb.append("[npc.NameIsFull] able to sink [npc.her] "+nameDesc+" [style.italicsMinorGood(fully into [npc2.namePos] "+orificeName+")] without going so deep as to cause [npc2.herHim] discomfort!");
+					sb.append("[npc.NameIsFull] может заглотить [npc.her] "+nameDesc+" [style.italicsMinorGood(полностью в [npc2.namePos] "+orificeName+")] не заходя так далеко, чтобы вызвать у [npc2.herHim] дискомфорт!");
 				}
 				
 				if(characterPenetrating.isFullPenetrationFarTooShort(penetrationType, characterPenetrated, internalOrifice)) {
@@ -18346,35 +18177,35 @@ public abstract class GameCharacter implements XMLSaving {
 						sb.append("<br/>");
 						if(immobile2) {
 							if(sleeping2) {
-								sb.append("[npc2.Name] [npc2.verb(remain)] deeply asleep, unaware that");
+								sb.append("[npc2.Name] [npc2.verb(remain)] глубоким сном, не подозревая, что");
 							} else {
-								sb.append("[npc2.Name] [npc2.do]n't react as [npc2.she] [npc2.verb(feel)] that");
+								sb.append("[npc2.Name] [npc2.do] не среагирует на то, как [npc2.she] [npc2.verb(feel)] что");
 							}
 						} else {
-							sb.append("[npc2.Name] [npc2.verb(let)] out a disappointed sigh as [npc2.she] [npc2.verb(feel)] that");
+							sb.append("[npc2.Name] [npc2.verb(let)] разочарованно вздохнул(а), когда [npc2.she] [npc2.verb(feel)] что");
 						}
 						sb.append("[style.italicsBad(");
-							sb.append(" [npc.namePos] "+name+" isn't long enough");
+							sb.append(" [npc.namePos] "+name+" недостаточно долго,");
 						sb.append(")]");
 						if(internalOrifice==SexAreaOrifice.MOUTH) {
-							sb.append(" to reach even halfway down [npc2.her] throat.");
+							sb.append(" чтобы достичь даже середины [npc2.her] горла.");
 						} else {
-							sb.append(" to reach even halfway into [npc2.her] "+orificeNameStandard);
+							sb.append(" чтобы достичь даже середины [npc2.her] "+orificeNameStandard);
 							if(penetrationType==SexAreaPenetration.PENIS && !immobile2) {
 								if(characterPenetrated.hasFetish(Fetish.FETISH_SADIST)) {
 									sb.append(", [npc2.speechNoEffects(");
 									sb.append(UtilText.returnStringAtRandom(
-											"How pathetic...",
-											"You're so pathetic...",
-											"Is it even in yet?"));
+											"Как жалко...",
+											"Ты так жалок(а)...",
+											"Оно вообще уже внутри?"));
 									sb.append(")]");
 									
 								} else {
 									sb.append(", [npc2.speechNoEffects(");
 									sb.append(UtilText.returnStringAtRandom(
-											"Is that really it?",
-											"You're so small...",
-											"Is it even in yet?"));
+											"Это правда всё?",
+											"Ты такая крошечная...",
+											"Оно вообще уже внутри?"));
 									sb.append(")]");
 								}
 							} else {
@@ -18383,142 +18214,138 @@ public abstract class GameCharacter implements XMLSaving {
 						}
 						
 						// Core penetration information is displayed last:
-						sb.append("<br/>[style.italicsBad(Being only [style.sizeShort("+length+")] long, [npc.namePos] "+nameDesc+" is too short, limiting [npc2.namePos] pleasure!)]");
+						sb.append("<br/>[style.italicsBad(При длине всего лишь [style.sizeShort("+length+")] длинный, [npc.namePos] "+nameDesc+" слишком короток, что ограничивает удовольствие [npc2.namePos]!)]");
 						
 					} else {
 						if(internalOrifice==SexAreaOrifice.MOUTH) {
-							sb.append("<br/>[style.italicsBad(Being only [style.sizeShort("+length+")] long, [npc.namePos] "+nameDesc+" is too short to reach even halfway down [npc2.namePos] throat.)]");
+							sb.append("<br/>[style.italicsBad(При длине всего лишь [style.sizeShort("+length+")] длинный, [npc.namePos] "+nameDesc+" слишком короток, чтобы достать даже до середины горла [npc2.namePos].)]");
 						} else {
-							sb.append("<br/>[style.italicsBad(Being only [style.sizeShort("+length+")] long, [npc.namePos] "+nameDesc+" is too short to reach even halfway into [npc2.namePos] "+orificeNameStandard+".)]");
+							sb.append("<br/>[style.italicsBad(При длине всего лишь [style.sizeShort("+length+")] длинный, [npc.namePos] "+nameDesc+" слишком короток, чтобы проникнуть даже на половину [npc2.namePos] "+orificeNameStandard+".)]");
 						}
 					}
 					
 				} else {
 					// Core penetration information is displayed last:
-					sb.append("<br/>[style.italicsSex([npc.Name] [npc.is] hilting the entire [style.sizeShort("+length+")] length of [npc.her] "+name+" in [npc2.namePos] "+orificeName+"!)]");
+					sb.append("<br/>[style.italicsSex([npc.Name] [npc.is], пронзающий всю [style.sizeShort(\""+length+")] длину [npc.her] "+name+" в [npc2.namePos] "+orificeName+"!)]");
 				}
 				
 			} else if(!penetratingDeep) {
 				if(Main.sex.getSexPace(characterPenetrated)!=SexPace.SUB_RESISTING) {
 					if(immobile) {
 						if(sleeping) {
-							sb.append("[npc.Name] [npc.verb(remain)] deeply asleep, blissfully unaware that");
+							sb.append("[npc.Name] [npc.verb(remain)] глубоким сном, блаженно не подозревая, что");
 						} else {
-							sb.append("[npc.Name] [npc.verb(remain)] silent and unmoving as [npc.she] [npc.verb(feel)] that");
+							sb.append("[npc.Name] [npc.verb(remain)] тихо и неподвижно, словно [npc.she] [npc.verb(feel)], что");
 						}
 					} else {
-						sb.append("[npc.Name] [npc.verb(let)] out a disappointed [npc.moan] as [npc.she] [npc.verb(feel)] that");
+						sb.append("[npc.Name] [npc.verb(let)] разочарованный [npc.moan], пока [npc.she] [npc.verb(feel)], что");
 					}
 					sb.append("[style.italicsBad(");
-						sb.append((selfPenetration?" [npc.her] ":" [npc2.namePos] ")+orificeName+" "+(orificePlural?"aren't":"isn't")+" deep enough");
+						sb.append((selfPenetration?" [npc.her] ":" [npc2.namePos] ")+orificeName+" "+(orificePlural?"не являются":"не является")+" достаточно глубоким");
 					sb.append(")]");
-					sb.append(" to comfortably accommodate the full length of [npc.her] "+nameLength+".");
+					sb.append(" чтобы с комфортом вместить всю длину [npc.her] "+nameLength+".");
 				}
 				// Core penetration information is displayed last:
-				sb.append("<br/>[style.italicsBad([npc.Name] [npc.is] holding back and only inserting [style.sizeShort("+comfortable+")] of [npc.her] "+name);
+				sb.append("<br/>[style.italicsBad([npc.Name] [npc.is] сдерживается и вводит лишь [style.sizeShort(\", "+comfortable+")] of [npc.her] "+name);
 				if(sleeping2) {
-					sb.append(" so as not to wake [npc2.name] up!)]");
+					sb.append(" чтобы не разбудить [npc2.name]!)]");
 				} else {
-					sb.append(" so as not to cause [npc2.name] discomfort!)]");
+					sb.append(" чтобы не причинить [npc2.name] дискомфорт!)]");
 				}
 				
 				
 			} else {
 				if(immobile) {
 					if(sleeping) {
-						sb.append("Although [npc.name] [npc.verb(remain)] deeply asleep, [npc2.namePos] momentum forces [npc.name] to fully hilt [npc.her] "+nameDesc+" [style.italicsMinorGood(as deep as physically possible)] "
-								+(internalOrifice==SexAreaOrifice.MOUTH?"down":"into")+" [npc2.her] "+orificeName+"!");
+						sb.append("Хотя [npc.name] [npc.verb(remain)] глубоко спит, инерция [npc2.namePos] заставляет [npc.name] вогнать [npc.her] до самого основания "+nameDesc+" [style.italicsMinorGood(насколько это физически возможно)] "
+								+(internalOrifice==SexAreaOrifice.MOUTH?"вниз":"в")+" [npc2.her] "+orificeName+"!");
 					} else {
-						sb.append("Although [npc.name] [npc.verb(remain)] completely still, [npc2.namePos] momentum forces [npc.name] to fully hilt [npc.her] "+nameDesc+" [style.italicsMinorGood(as deep as physically possible)] "
-								+(internalOrifice==SexAreaOrifice.MOUTH?"down":"into")+" [npc2.her] "+orificeName+"!");
+						sb.append("Хотя [npc.name] [npc.verb(remain)] совершенно неподвижен, инерция [npc2.namePos] заставляет [npc.name] вогнать [npc.her] до самого основания "+nameDesc+" [style.italicsMinorGood(насколько это физически возможно)] "
+								+(internalOrifice==SexAreaOrifice.MOUTH?"вниз":"в")+" [npc2.her] "+orificeName+"!");
 					}
 					
 				} else if(knotting) {
-					sb.append("Desperate to push [npc.her] fat knot inside of [npc2.name], [npc.name] fully [npc.verb(hilt)] [npc.her] "+nameDesc+" [style.italicsMinorGood(as deep as physically possible)] "
-							+(internalOrifice==SexAreaOrifice.MOUTH?"down":"into")+" [npc2.her] "+orificeName+"!");
+					sb.append("В отчаянии толкая жирный узел [npc.her] внутрь [npc2.name], [npc.name] полностью [npc.verb(hilt)] [npc.her] "+nameDesc+" [style.italicsMinorGood(насколько это физически возможно)] "
+							+(internalOrifice==SexAreaOrifice.MOUTH?"вниз":"в")+" [npc2.her] "+orificeName+"!");
 					
 					
 				} else if(characterPenetrated.hasFetish(Fetish.FETISH_SIZE_QUEEN)
 						&& Main.sex.getSexPace(characterPenetrated)!=SexPace.SUB_RESISTING
 						&& !immobile2) {
 					if(internalOrifice==SexAreaOrifice.MOUTH) {
-						sb.append("Encouraged by [npc2.namePos] eager [npc2.moans] betraying the fact that [npc2.sheIsFull] a "+Fetish.FETISH_SIZE_QUEEN.getName(characterPenetrated)
-									+ ", [npc.name] [npc.verb(thrust)] [npc.her] "+name+" [style.italicsMinorGood(as deep as physically possible)] down [npc2.her] "+orificeName+"!");
+						sb.append("Воодушевленный нетерпеливым [npc2.moans] [npc2.namePos], выдающим тот факт, что [npc2.sheIsFull] "+Fetish.FETISH_SIZE_QUEEN.getName(characterPenetrated)
+									+ ", [npc.name] [npc.verb(thrust)] [npc.her] "+name+" [style.italicsMinorGood(как можно глубже физически)] вниз по [npc2.her] "+orificeName+"!");
 					} else {
-						sb.append("Encouraged by [npc2.namePos] eager [npc2.moans] betraying the fact that [npc2.sheIsFull] a "+Fetish.FETISH_SIZE_QUEEN.getName(characterPenetrated)
-									+ ", [npc.name] [npc.verb(thrust)] [npc.her] "+name+" [style.italicsMinorGood(as deep as physically possible)] into [npc2.her] "+orificeName+"!");
+						sb.append("Воодушевленный нетерпеливым [npc2.moans] [npc2.namePos], выдающим тот факт, что [npc2.sheIsFull] "+Fetish.FETISH_SIZE_QUEEN.getName(characterPenetrated)
+									+ ", [npc.name] [npc.verb(thrust)] [npc.her] "+name+" [style.italicsMinorGood(как можно глубже физически)] в [npc2.her] "+orificeName+"!");
 					}
 					
 				} else {
 					if(internalOrifice==SexAreaOrifice.MOUTH) {
 						if(characterPenetrating.hasFetish(Fetish.FETISH_SADIST)) {
-							sb.append("Only interested in [npc.her] own pleasure,"
-									+ " [npc.name] sadistically [npc.verb(thrust)] [npc.her] "+nameLength+"  [style.italicsTerrible(as deep as physically possible)] down [npc2.namePos] "+orificeName);
+							sb.append("Заинтересованный лишь в собственном удовольствии [npc.her], [npc.name] садистски [npc.verb(thrust)] [npc.her] "+nameLength+"  [style.italicsTerrible(как можно глубже физически)] вниз по [npc2.namePos] "+orificeName);
 							
 						} else {
-							sb.append("Only interested in [npc.her] own pleasure,"
-									+ " [npc.name] [npc.verb(thrust)] [npc.her] "+nameLength+" [style.italicsTerrible(as deep as physically possible)] down [npc2.namePos] "+orificeName);
+							sb.append("Заинтересованный лишь в собственном удовольствии [npc.her], [npc.name] [npc.verb(thrust)] [npc.her] "+nameLength+" [style.italicsTerrible(как можно глубже физически)] вниз по [npc2.namePos] "+orificeName);
 						}
 						if(immobile2) {
 							sb.append(".");
 							
 						} else if(characterPenetrated.hasFetish(Fetish.FETISH_MASOCHIST)) {
-							sb.append(", causing [npc2.herHim] to let out a gargled, masochistic scream of pleasure!");
+							sb.append(", заставляя [npc2.herHim] издать булькающий, мазохистский крик удовольствия!");
 							
 						} else {
 							if(Main.game.isSadisticSexContent()) {
-								sb.append(", causing [npc2.herHim] to let out a gargled, distressed scream!");
+								sb.append(", отчего [npc2.herHim] издает булькающий, полный муки крик!");
 							} else {
-								sb.append(", causing [npc2.herHim] to let out a gargled, uncomfortable wail!");
+								sb.append(", отчего [npc2.herHim] издает булькающий, полный дискомфорта вопль!");
 							}
 						}
 						
 					} else {
 						if(characterPenetrating.hasFetish(Fetish.FETISH_SADIST)) {
-							sb.append("Only interested in [npc.her] own pleasure,"
-									+ " [npc.name] sadistically [npc.verb(thrust)] [npc.her] "+nameLength+"  [style.italicsTerrible(as deep as physically possible)] into [npc2.namePos] "+orificeName);
+							sb.append("Заинтересованный лишь в собственном удовольствии [npc.her], [npc.name] садистски [npc.verb(thrust)] [npc.her] "+nameLength+"  [style.italicsTerrible(настолько глубоко, насколько это физически возможно)] в [npc2.namePos] "+orificeName);
 							
 						} else {
-							sb.append("Only interested in [npc.her] own pleasure,"
-									+ " [npc.name] [npc.verb(thrust)] [npc.her] "+nameLength+"  [style.italicsTerrible(as deep as physically possible)] into [npc2.namePos] "+orificeName);
+							sb.append("Заинтересованный лишь в собственном удовольствии [npc.her], [npc.name] [npc.verb(thrust)] [npc.her] "+nameLength+"  [style.italicsTerrible(настолько глубоко, насколько это физически возможно)] в [npc2.namePos] "+orificeName);
 						}
 						if(immobile2) {
 							if(isStomachBulging(characterPenetrating, penetrationType, characterPenetrated, orifice)) {
-								sb.append(", which causes [npc2.her] stomach to visibly bulge out.");
+								sb.append(", из-за чего живот [npc2.her] заметно раздувается.");
 							} else {
 								sb.append(".");
 							}
 							
 						} else {
 							if(characterPenetrated.hasFetish(Fetish.FETISH_MASOCHIST)) {
-								sb.append(", causing [npc2.herHim] to let out a masochistic scream of pleasure");
+								sb.append(", отчего [npc2.herHim] издает мазохистский крик удовольствия");
 								
 							} else {
 								if(Main.game.isSadisticSexContent()) {
-									sb.append(", causing [npc2.herHim] to let out a distressed scream");
+									sb.append(", отчего [npc2.herHim] издает полный муки крик");
 								} else {
-									sb.append(", causing [npc2.herHim] to let out an uncomfortable wail");
+									sb.append(", отчего [npc2.herHim] издает полный дискомфорта вопль");
 								}
 							}
 							if(isStomachBulging(characterPenetrating, penetrationType, characterPenetrated, orifice)) {
-								sb.append(" as [npc2.her] stomach visibly bulges out");
+								sb.append(" пока живот [npc2.her] заметно раздувается");
 							}
 							
 							if(penetrationType==SexAreaPenetration.PENIS && Main.sex.getSexPace(characterPenetrated)!=SexPace.SUB_RESISTING) {
 								if(characterPenetrated.hasFetish(Fetish.FETISH_MASOCHIST)) {
 									sb.append(", [npc2.speechNoEffects(");
 									sb.append(UtilText.returnStringAtRandom(
-											"~Aah!~ Yes! ~Ow!~ It hurts so good!",
-											"~Ow!~ You're so big! ~Ooh!~ Fuck!",
-											"~Ooh!~ Fuck! ~Ow!~ You're so big!"));
+											"~Аах!~ Да! ~Ой!~ Как же приятно, когда больно!",
+											"~Ай!~ Ты такой огромный! ~О-ох!~ Блядь!",
+											"~О-ох!~ Блядь! ~Ай!~ Ты такой огромный!"));
 									sb.append(")]");
 									
 								} else {
 									sb.append(", [npc2.speechNoEffects(");
 									sb.append(UtilText.returnStringAtRandom(
-											"~Aah!~ You're too big!",
-											"Fuck! ~Ooh!~ That's too much!",
-											"~Aah!~ That's too deep!"));
+											"~Аах!~ Ты слишком большой!",
+											"Блядь! ~О-ох!~ Это слишком!",
+											"~Аах!~ Слишком глубоко!"));
 									sb.append(")]");
 								}
 							} else {
@@ -18532,68 +18359,68 @@ public abstract class GameCharacter implements XMLSaving {
 					sb.append("<br/>");
 					if(immobile) {
 						if(sleeping) {
-							sb.append("[npc.Name] [npc.verb(show)] no sign of waking up, remaining totally unaware that");
+							sb.append("[npc.Name] [npc.verb(show)] нет признаков пробуждения, совершенно не подозревая, что");
 						} else {
-							sb.append("[npc.Name] [npc.do]n't react as [npc.she] [npc.verb(feel)] that");
+							sb.append("[npc.Name] [npc.do] не реагируют на [npc.she] [npc.verb(feel)] что");
 						}
 					} else {
-						sb.append("[npc.Name] [npc.verb(let)] out a disappointed "+(characterPenetrating.isFeminine()?"whine":"growl")+" as [npc.she] [npc.verb(feel)] that");
+						sb.append("[npc.Name] [npc.verb(let)] выдает разочарованный "+(characterPenetrating.isFeminine()?"скулеж":"рык")+" как [npc.she] [npc.verb(feel)], что");
 					}
 					sb.append("[style.italicsBad(");
-						sb.append((selfPenetration?" [npc.her] ":" [npc2.namePos] ")+orificeName+" "+(orificePlural?"aren't":"isn't")+" deep enough");
+						sb.append((selfPenetration?" [npc.her] ":" [npc2.namePos] ")+orificeName+" "+(orificePlural?"не являются":"не является")+" достаточно глубоким");
 					sb.append(")]");
-					sb.append(" to accommodate the full length of [npc.her] "+nameLength+".");
+					sb.append(" чтобы вместить всю длину [npc.her] "+nameLength+".");
 					
 					// Core penetration information is displayed last:
-					sb.append("<br/>[style.italicsSex([npc.NamePos] "+name+(penetrationType.isPlural()?" are":" is")+" reaching the limit of [npc2.namePos] "+orificeName+", at [style.sizeShort("+uncomfortable+")] deep!)]");
+					sb.append("<br/>[style.italicsSex([npc.NamePos] "+name+(penetrationType.isPlural()?" являются":" есть")+" достигая предела [npc2.namePos] "+orificeName+", на глубине [style.sizeShort("+uncomfortable+")] глубоко!)]");
 					
 				} else {
 					// Core penetration information is displayed last:
-					sb.append("<br/>[style.italicsSex([npc.Name] [npc.is] hilting the entire [style.sizeShort("+length+")] length of [npc.her] "+name+" in [npc2.namePos] "+orificeName+"!)]");
+					sb.append("<br/>[style.italicsSex([npc.Name] [npc.is], пронзающий всю [style.sizeShort(\""+length+")] длину [npc.her] "+name+" в [npc2.namePos] "+orificeName+"!)]");
 				}
 			}
 			
 		} else { // The character being penetrated is the dom:
 			if(length<=comfortable) {
 				if(internalOrifice==SexAreaOrifice.MOUTH) {
-					sb.append("[npc2.NameIsFull] able to take "+(selfPenetration?" [npc.her] ":" [npc.namePos] ")+" "+nameDesc+" [style.italicsMinorGood(fully down [npc2.her] throat)] without it going deep enough to cause any discomfort!");
+					sb.append("[npc2.NameIsFull] может принять "+(selfPenetration?" [npc.her] ":" [npc.namePos] ")+" "+nameDesc+" [style.italicsMinorGood(полностью проглотить [npc2.her])] так, что это не вызывает никакого дискомфорта!");
 				} else {
-					sb.append("[npc2.NameIsFull] able to take "+(selfPenetration?" [npc.her] ":" [npc.namePos] ")+" "+nameDesc+" [style.italicsMinorGood(fully into [npc2.her] "+orificeName+")] without it going deep enough to cause any discomfort!");
+					sb.append("[npc2.NameIsFull] может принять "+(selfPenetration?" [npc.her] ":" [npc.namePos] ")+" "+nameDesc+" [style.italicsMinorGood(полностью внутри [npc2.her] "+orificeName+")] так, что это не вызывает никакого дискомфорта!");
 				}
 				
 				if(characterPenetrating.isFullPenetrationFarTooShort(penetrationType, characterPenetrated, internalOrifice)) {
 					sb.append("<br/>");
 					if(immobile2) {
 						if(sleeping2) {
-							sb.append("[npc2.Name] [npc2.verb(remain)] deeply asleep, unaware that");
+							sb.append("[npc2.Name] [npc2.verb(remain)] глубоким сном, не подозревая, что");
 						} else {
-							sb.append("[npc2.Name] [npc2.verb(remain)] silent and unmoving as [npc2.she] [npc2.verb(feel)] that");
+							sb.append("[npc2.Name] [npc2.verb(remain)] безмолвный и неподвижный, словно [npc2.she] [npc2.verb(feel)], что");
 						}
 					} else {
-						sb.append("[npc2.Name] [npc2.verb(let)] out a disappointed sigh as [npc2.she] [npc2.verb(feel)] that");
+						sb.append("[npc2.Name] [npc2.verb(let)] разочарованно вздохнул(а), когда [npc2.she] [npc2.verb(feel)] что");
 					}
 					sb.append("[style.italicsBad(");
-						sb.append(" [npc.namePos] "+name+" isn't long enough");
+						sb.append(" [npc.namePos] "+name+" недостаточно долго,");
 					sb.append(")]");
 					if(internalOrifice==SexAreaOrifice.MOUTH) {
-						sb.append(" to reach even halfway down [npc2.her] throat.");
+						sb.append(" чтобы достичь даже середины [npc2.her] горла.");
 					} else {
-						sb.append(" to reach even halfway into [npc2.her] "+orificeNameStandard);
+						sb.append(" чтобы достичь даже середины [npc2.her] "+orificeNameStandard);
 						if(penetrationType==SexAreaPenetration.PENIS && !immobile2) {
 							if(characterPenetrated.hasFetish(Fetish.FETISH_SADIST)) {
 								sb.append(", [npc2.speechNoEffects(");
 								sb.append(UtilText.returnStringAtRandom(
-										"How pathetic...",
-										"You're so pathetic...",
-										"Is it even in yet?"));
+										"Как жалко...",
+										"Ты так жалок(а)...",
+										"Оно вообще уже внутри?"));
 								sb.append(")]");
 								
 							} else {
 								sb.append(", [npc2.speechNoEffects(");
 								sb.append(UtilText.returnStringAtRandom(
-										"Is that really it?",
-										"You're so small...",
-										"Is it even in yet?"));
+										"Это правда всё?",
+										"Ты такая крошечная...",
+										"Оно вообще уже внутри?"));
 								sb.append(")]");
 							}
 						} else {
@@ -18602,56 +18429,56 @@ public abstract class GameCharacter implements XMLSaving {
 					}
 
 					// Core penetration information is displayed last:
-					sb.append("<br/>[style.italicsBad(Being only [style.sizeShort("+length+")] long, [npc.namePos] "+nameDesc+" is too short, limiting [npc2.namePos] pleasure!)]");
+					sb.append("<br/>[style.italicsBad(При длине всего лишь [style.sizeShort("+length+")] длинный, [npc.namePos] "+nameDesc+" слишком короток, что ограничивает удовольствие [npc2.namePos]!)]");
 					
 				} else {
 					// Core penetration information is displayed last:
-					sb.append("<br/>[style.italicsSex([npc2.Name] [npc2.is] taking the entire [style.sizeShort("+length+")] length of "+(selfPenetration?" [npc.her] ":" [npc.namePos] ")+" "+name+" in [npc2.her] "+orificeName+"!)]");
+					sb.append("<br/>[style.italicsSex([npc2.Name] [npc2.is], занимающий всю [style.sizeShort(, "+length+")] длину "+(selfPenetration?" [npc.her] ":" [npc.namePos] ")+" "+name+" в [npc2.her] "+orificeName+"!)]");
 				}
 				
 			} else if(!penetratingDeep) {
 				if(immobile) {
 					if(sleeping) {
-						sb.append("[npc.Name] [npc.verb(show)] no sign of waking up, remaining totally unaware that");
+						sb.append("[npc.Name] [npc.verb(show)] нет признаков пробуждения, совершенно не подозревая, что");
 					} else {
-						sb.append("[npc.Name] [npc.do]n't react as [npc.she] [npc.verb(feel)] that");
+						sb.append("[npc.Name] [npc.do] не реагируют на [npc.she] [npc.verb(feel)] что");
 					}
 				} else {
-					sb.append("[npc.Name] [npc.verb(let)] out a disappointed [npc.moan] as [npc.she] [npc.verb(feel)] that");
+					sb.append("[npc.Name] [npc.verb(let)] разочарованный [npc.moan], пока [npc.she] [npc.verb(feel)], что");
 				}
 				sb.append("[style.italicsBad(");
-					sb.append((selfPenetration?" [npc.her] ":" [npc2.namePos] ")+orificeName+" "+(orificePlural?"aren't":"isn't")+" deep enough");
+					sb.append((selfPenetration?" [npc.her] ":" [npc2.namePos] ")+orificeName+" "+(orificePlural?"не являются":"не является")+" достаточно глубоким");
 				sb.append(")]");
-				sb.append(" to comfortably accommodate the full length of [npc.her] "+nameLength+".");
+				sb.append(" чтобы с комфортом вместить всю длину [npc.her] "+nameLength+".");
 
 				// Core penetration information is displayed last:
-				sb.append("<br/>[style.italicsBad([npc2.Name] [npc2.is] only taking [style.sizeShort("+comfortable+")] of "+(selfPenetration?" [npc.her] ":" [npc.namePos] ")+" "+name+" so as not to experience any discomfort!)]");
+				sb.append("<br/>[style.italicsBad([npc2.Name] [npc2.is], занимающий лишь [style.sizeShort(, "+comfortable+")] от, "+(selfPenetration?" [npc.her] ":" [npc.namePos] ")+" "+name+" чтобы не испытывать дискомфорта!)]");
 				
 				
 			} else {
 				if(immobile2) {
 					if(sleeping2) {
-						sb.append("Although [npc2.name] [npc2.verb(remain)] deeply asleep, [npc.namePos] momentum forces [npc2.name] to take [npc.her] "+nameDesc+" [style.italicsMinorGood(as deep as physically possible)] "
-								+(internalOrifice==SexAreaOrifice.MOUTH?"down":"into")+" [npc2.her] "+orificeName+"!");
+						sb.append("Хотя [npc2.name] [npc2.verb(remain)] глубоко спит, инерция [npc.namePos] заставляет [npc2.name] принять [npc.her] "+nameDesc+" [style.italicsMinorGood(насколько это физически возможно)] "
+								+(internalOrifice==SexAreaOrifice.MOUTH?"вниз":"в")+" [npc2.her] "+orificeName+"!");
 					} else {
-						sb.append("Although [npc2.name] [npc2.verb(remain)] completely still, [npc.namePos] momentum forces [npc2.name] to take [npc.her] "+nameDesc+" [style.italicsMinorGood(as deep as physically possible)] "
-								+(internalOrifice==SexAreaOrifice.MOUTH?"down":"into")+" [npc2.her] "+orificeName+"!");
+						sb.append("Хотя [npc2.name] [npc2.verb(remain)] совершенно неподвижен, инерция [npc.namePos] заставляет [npc2.name] принять [npc.her] "+nameDesc+" [style.italicsMinorGood(насколько это физически возможно)] "
+								+(internalOrifice==SexAreaOrifice.MOUTH?"вниз":"в")+" [npc2.her] "+orificeName+"!");
 					}
 					
 				} else if(knotting) {
 					if(internalOrifice==SexAreaOrifice.MOUTH) {
-						sb.append("Desperate to take [npc.namePos] fat knot inside of [npc2.herHim], [npc2.name] [npc2.verb(take)] [npc.her] "+nameDesc+" [style.italicsMinorGood(as deep as physically possible)] down [npc2.her] "+orificeName+"!");
+						sb.append("Отчаянно желая поглотить жирный узел [npc.namePos] внутри [npc2.herHim], [npc2.name] [npc2.verb(take)] [npc.her] "+nameDesc+" [style.italicsMinorGood(как можно глубже физически)] вниз по [npc2.her] "+orificeName+"!");
 					} else {
-						sb.append("Desperate to take [npc.namePos] fat knot inside of [npc2.herHim], [npc2.name] [npc2.verb(take)] [npc.her] "+nameDesc+" [style.italicsMinorGood(as deep as physically possible)] into [npc2.her] "+orificeName+"!");
+						sb.append("Отчаянно желая поглотить жирный узел [npc.namePos] внутри [npc2.herHim], [npc2.name] [npc2.verb(take)] [npc.her] "+nameDesc+" [style.italicsMinorGood(как можно глубже физически)] в [npc2.her] "+orificeName+"!");
 					}
 					
 				} else if(characterPenetrated.hasFetish(Fetish.FETISH_SIZE_QUEEN)) {
 					if(internalOrifice==SexAreaOrifice.MOUTH) {
-						sb.append("Being a "+Fetish.FETISH_SIZE_QUEEN.getName(characterPenetrated)
-									+ ", [npc2.name] eagerly [npc2.verb(take)] [npc.namePos] "+name+" [style.italicsMinorGood(as deep as physically possible)] down [npc2.her] "+orificeName+"!");
+						sb.append("Будучи "+Fetish.FETISH_SIZE_QUEEN.getName(characterPenetrated)
+									+ ", [npc2.name] с нетерпением [npc2.verb(take)] [npc.namePos] "+name+" [style.italicsMinorGood(как можно глубже физически)] вниз по [npc2.her] "+orificeName+"!");
 					} else {
-						sb.append("Being a "+Fetish.FETISH_SIZE_QUEEN.getName(characterPenetrated)
-						+ ", [npc2.name] eagerly [npc2.verb(take)] [npc.namePos] "+name+" [style.italicsMinorGood(as deep as physically possible)] into [npc2.her] "+orificeName+"!");
+						sb.append("Будучи "+Fetish.FETISH_SIZE_QUEEN.getName(characterPenetrated)
+						+ ", [npc2.name] с жадностью [npc2.verb(take)] [npc.namePos] "+name+" [style.italicsMinorGood(как можно глубже физически)] в [npc2.her] "+orificeName+"!");
 					}
 //					if(characterPenetrating.isFullPenetrationTooLongToFit(penetrationType, characterPenetrated, internalOrifice)
 //							&& !characterPenetrated.isVisiblyPregnant()
@@ -18664,25 +18491,25 @@ public abstract class GameCharacter implements XMLSaving {
 				} else if(characterPenetrated.hasFetish(Fetish.FETISH_MASOCHIST)) {
 					String targetParsing = "[npc.namePos]";
 					if(selfPenetration) {
-						targetParsing = "[npc.her] own";
+						targetParsing = "собственный [npc.her]";
 					}
 					if(internalOrifice==SexAreaOrifice.MOUTH) {
-						sb.append("Wanting to feel as though [npc2.sheIs] being abused, [npc2.name] willingly [npc2.verb(take)] "+targetParsing+" "+nameLength+" [style.italicsTerrible(as deep as physically possible)] down [npc2.her] "+orificeName);
-						sb.append(", letting out a gargled, masochistic scream of pleasure in the process!");
+						sb.append("Желая почувствовать себя так, словно [npc2.sheIs] подвергается насилию, [npc2.name] покорно [npc2.verb(take)] "+targetParsing+" "+nameLength+" [style.italicsTerrible(как можно глубже физически)] вниз в [npc2.her] "+orificeName);
+						sb.append(", издавая при этом булькающий мазохистский крик удовольствия!");
 							
 					} else {
-						sb.append("Wanting to feel as though [npc2.sheIs] being abused, [npc2.name] willingly [npc2.verb(take)] "+targetParsing+" "+nameLength+" [style.italicsTerrible(as deep as physically possible)] into [npc2.her] "+orificeName);
+						sb.append("Желая почувствовать себя так, словно [npc2.sheIs] подвергается насилию, [npc2.name] покорно [npc2.verb(take)] "+targetParsing+" "+nameLength+" [style.italicsTerrible(как можно глубже физически)] в [npc2.her] "+orificeName);
 						if(isStomachBulging(characterPenetrating, penetrationType, characterPenetrated, orifice)) {
-							sb.append(", letting out a masochistic scream of pleasure as [npc2.her] stomach visibly bulges out");
+							sb.append(", издавая мазохистский крик удовольствия, пока живот [npc2.her] заметно раздувается");
 						} else {
-							sb.append(", letting out a masochistic scream of pleasure in the process");
+							sb.append(", при этом издавая мазохистский крик удовольствия");
 						}
 						if(penetrationType==SexAreaPenetration.PENIS) {
 							sb.append(", [npc2.speechNoEffects(");
 							sb.append(UtilText.returnStringAtRandom(
-									"~Aah!~ Yes! ~Ow!~ It hurts so good!",
-									"~Ow!~ You're so big! ~Ooh!~ Fuck!",
-									"~Ooh!~ Fuck! ~Ow!~ You're so big!"));
+									"~Аах!~ Да! ~Ой!~ Как же приятно, когда больно!",
+									"~Ай!~ Ты такой огромный! ~О-ох!~ Блядь!",
+									"~О-ох!~ Блядь! ~Ай!~ Ты такой огромный!"));
 							sb.append(")]");
 						}
 					}
@@ -18693,25 +18520,25 @@ public abstract class GameCharacter implements XMLSaving {
 						sb.append("<br/>");
 						if(immobile) {
 							if(sleeping) {
-								sb.append("[npc.Name] [npc.verb(show)] no sign of waking up, remaining totally unaware that");
+								sb.append("[npc.Name] [npc.verb(show)] нет признаков пробуждения, совершенно не подозревая, что");
 							} else {
-								sb.append("[npc.Name] [npc.verb(remain)] frozen in place as [npc.she] [npc.verb(feel)] that");
+								sb.append("[npc.Name] [npc.verb(remain)] на месте, пока [npc.she] [npc.verb(feel)] это");
 							}
 						} else {
-							sb.append("[npc.Name] [npc.verb(let)] out a disappointed "+(characterPenetrating.isFeminine()?"whine":"growl")+" as [npc.she] [npc.verb(feel)] that");
+							sb.append("[npc.Name] [npc.verb(let)] выдает разочарованный "+(characterPenetrating.isFeminine()?"скулеж":"рык")+" как [npc.she] [npc.verb(feel)], что");
 						}
 						sb.append("[style.italicsBad(");
-							sb.append((selfPenetration?" [npc.her] ":" [npc2.namePos] ")+orificeName+" "+(orificePlural?"aren't":"isn't")+" deep enough");
+							sb.append((selfPenetration?" [npc.her] ":" [npc2.namePos] ")+orificeName+" "+(orificePlural?"не являются":"не является")+" достаточно глубоким");
 						sb.append(")]");
-						sb.append(" to accommodate the full length of [npc.her] "+nameLength+".");
+						sb.append(" чтобы вместить всю длину [npc.her] "+nameLength+".");
 					}
 					
 					// Core penetration information is displayed last:
-					sb.append("<br/>[style.italicsSex([npc2.NamePos] [npc2.is] taking "+(selfPenetration?" [npc.her] ":" [npc.namePos] ")+" "+name+" to the full, [style.sizeShort("+uncomfortable+")] limit of [npc2.her] "+orificeName+"!)]");
+					sb.append("<br/>[style.italicsSex([npc2.NamePos] [npc2.is] во всю "+(selfPenetration?" [npc.her] ":" [npc.namePos] ")+" "+name+" мощь, [style.sizeShort("+uncomfortable+")] предел [npc2.her] "+orificeName+"!)]");
 					
 				} else {
 					// Core penetration information is displayed last:
-					sb.append("<br/>[style.italicsSex([npc2.Name] [npc2.is] taking the entire [style.sizeShort("+length+")] length of "+(selfPenetration?" [npc.her] ":" [npc.namePos] ")+" "+name+" in [npc2.her] "+orificeName+"!)]");
+					sb.append("<br/>[style.italicsSex([npc2.Name] [npc2.is], занимающий всю [style.sizeShort(, "+length+")] длину "+(selfPenetration?" [npc.her] ":" [npc.namePos] ")+" "+name+" в [npc2.her] "+orificeName+"!)]");
 				}
 			}
 		}
@@ -18719,7 +18546,7 @@ public abstract class GameCharacter implements XMLSaving {
 			if(sb.length()>0) {
 				sb.append("</br>");
 			}
-			sb.append("[style.italicsPinkDeep(The size of [npc.namePos] "+name+" is causing [npc2.namePos] stomach to bulge!)]");
+			sb.append("[style.italicsPinkDeep(Размер [npc.namePos] "+name+" заставляет живот [npc2.namePos] раздуваться!)]");
 		}
 		
 		return UtilText.parse(characterPenetrating, characterPenetrated, sb.toString());
@@ -18752,31 +18579,31 @@ public abstract class GameCharacter implements XMLSaving {
 		if(length<=comfortable) {
 			if(characterPenetrating.isFullPenetrationFarTooShort(penetrationType, characterPenetrated, internalOrifice)) { // Too small:
 				sb.append("[style.italicsBad(");
-					sb.append("[npc.NamePos] "+name+" is too short to give [npc2.name] much pleasure!");
+					sb.append("[npc.NamePos] "+name+" слишком мал, чтобы принести [npc2.name] много удовольствия!");
 				sb.append(")]");
 			}
 			
 		} else if(penetratingDeep) { // Too deep:
 			if(characterPenetrated.hasFetish(Fetish.FETISH_SIZE_QUEEN)) {
 				sb.append("[style.italicsSex(");
-					sb.append("[npc.NamePos] "+name+" is thrusting too deeply into [npc2.namePos] "+orificeName+", but as [npc2.sheIsFull] a size queen, [npc2.she] [npc2.verb(love)] it!");
+					sb.append("[npc.NamePos] "+name+" входит слишком глубоко в [npc2.namePos] "+orificeName+", но как [npc2.sheIsFull] помешанная на размерах, [npc2.she] [npc2.verb(love)] это!");
 				sb.append(")]");
 				
 			} else if(characterPenetrated.hasFetish(Fetish.FETISH_MASOCHIST)) {
 				sb.append("[style.italicsSex(");
-					sb.append("[npc.NamePos] "+name+" is thrusting too deeply into [npc2.namePos] "+orificeName+", but as [npc2.sheIsFull] a masochist, [npc2.she] [npc2.verb(love)] it!");
+					sb.append("[npc.NamePos] "+name+" входит слишком глубоко в [npc2.namePos] "+orificeName+", но как [npc2.sheIsFull] мазохистка, [npc2.she] [npc2.verb(love)] это!");
 				sb.append(")]");
 				
 			} else {
 				sb.append("[style.italicsTerrible(");
 					if(internalOrifice==SexAreaOrifice.MOUTH) {
 						if(immobilePenetrated) {
-							sb.append("[npc.NamePos] "+name+" is thrusting too deeply down [npc2.namePos] "+orificeName+"!");
+							sb.append("[npc.NamePos] "+name+" слишком глубоко вколачивается в [npc2.namePos] "+orificeName+"!");
 						} else {
-							sb.append("[npc2.Name] [npc2.is] choking and spluttering on [npc.namePos] "+name+"!");
+							sb.append("[npc2.Name] [npc2.is] задыхается и захлебывается [npc.namePos] "+name+"!");
 						}
 					} else {
-						sb.append("[npc.NamePos] "+name+" is thrusting too deeply into [npc2.namePos] "+orificeName+"!");
+						sb.append("[npc.NamePos] "+name+" входит слишком глубоко в [npc2.namePos] "+orificeName+"!");
 					}
 				sb.append(")]");
 			}
@@ -18785,7 +18612,7 @@ public abstract class GameCharacter implements XMLSaving {
 			if(sb.length()>0) {
 				sb.append("</br>");
 			}
-			sb.append("[style.italicsPinkDeep(The size of [npc.namePos] "+name+" is causing [npc2.namePos] stomach to bulge!)]");
+			sb.append("[style.italicsPinkDeep(Размер [npc.namePos] "+name+" заставляет живот [npc2.namePos] раздуваться!)]");
 		}
 		
 		if(sb.length()!=0) {
@@ -18816,7 +18643,7 @@ public abstract class GameCharacter implements XMLSaving {
 					performerAreaName = "[npc.tail+(true)]";
 					break;
 				case TENTACLE:
-					performerAreaName = "[npc.tentacle+(true)]";
+					performerAreaName = "[npc.щупальце+(true)]";
 					break;
 				case TONGUE:
 					performerAreaName = "[npc.tongue+]";
@@ -18842,7 +18669,7 @@ public abstract class GameCharacter implements XMLSaving {
 					targetAreaName = "[npc.tail+(true)]";
 					break;
 				case TENTACLE:
-					targetAreaName = "[npc.tentacle+(true)]";
+					targetAreaName = "[npc.щупальце+(true)]";
 					break;
 				case TONGUE:
 					targetAreaName = "[npc.tongue+]";
@@ -18861,18 +18688,18 @@ public abstract class GameCharacter implements XMLSaving {
 				if(targetArea.isPenetration()
                         || (!nipplePenetrationDescription && (targetArea==SexAreaOrifice.NIPPLE || targetArea==SexAreaOrifice.NIPPLE_CROTCH))) {
 					return UtilText.parse(characterPerformer,
-							"[npc.Name] [npc.verb(take)] [npc.her] "+performerAreaName+" away from [npc.her] "+targetAreaName+".");
+							"[npc.Name] [npc.verb(take)] [npc.her] "+performerAreaName+" прочь от [npc.her] "+targetAreaName+".");
 				} else {
 					return UtilText.parse(characterPerformer,
-							"[npc.Name] [npc.verb(slide)] [npc.her] "+performerAreaName+" out of [npc.her] "+targetAreaName+".");
+							"[npc.Name] [npc.verb(slide)] [npc.her] "+performerAreaName+" из [npc.her] "+targetAreaName+".");
 				}
 			} else {
 				if(targetArea.isPenetration()) {
 					return UtilText.parse(characterPerformer,
-							"[npc.Name] [npc.verb(slide)] [npc.her] "+targetAreaName+" out of [npc.her] "+performerAreaName+".");
+							"[npc.Name] [npc.verb(slide)] [npc.her] "+targetAreaName+" из [npc.her] "+performerAreaName+".");
 				} else {
 					return UtilText.parse(characterPerformer,
-							"[npc.Name] [npc.verb(take)] [npc.her] "+performerAreaName+" away from [npc.her] "+targetAreaName+".");
+							"[npc.Name] [npc.verb(take)] [npc.her] "+performerAreaName+" прочь от [npc.her] "+targetAreaName+".");
 				}
 			}
 			
@@ -18881,18 +18708,18 @@ public abstract class GameCharacter implements XMLSaving {
 				if(targetArea.isPenetration()
 				    || (!nipplePenetrationDescription && (targetArea==SexAreaOrifice.NIPPLE || targetArea==SexAreaOrifice.NIPPLE_CROTCH))){
 					return UtilText.parse(characterPerformer, characterTarget,
-							"[npc.Name] [npc.verb(take)] [npc.her] "+performerAreaName+" away from [npc2.namePos] "+targetAreaName+".");
+							"[npc.Name] [npc.verb(take)] [npc.her] "+performerAreaName+" вдали от [npc2.namePos] "+targetAreaName+".");
 				} else {
 					return UtilText.parse(characterPerformer, characterTarget,
-							"[npc.Name] [npc.verb(slide)] [npc.her] "+performerAreaName+" out of [npc2.namePos] "+targetAreaName+".");
+							"[npc.Name] [npc.verb(slide)] [npc.her] "+performerAreaName+" вне [npc2.namePos] "+targetAreaName+".");
 				}
 			} else {
 				if(targetArea.isPenetration()) {
 					return UtilText.parse(characterPerformer, characterTarget,
-							"[npc.Name] [npc.verb(slide)] [npc2.namePos] "+targetAreaName+" out of [npc.her] "+performerAreaName+".");
+							"[npc.Name] [npc.verb(slide)] [npc2.namePos] "+targetAreaName+" из [npc.her] "+performerAreaName+".");
 				} else {
 					return UtilText.parse(characterPerformer, characterTarget,
-							"[npc.Name] [npc.verb(take)] [npc.her] "+performerAreaName+" away from [npc2.namePos] "+targetAreaName+".");
+							"[npc.Name] [npc.verb(take)] [npc.her] "+performerAreaName+" вдали от [npc2.namePos] "+targetAreaName+".");
 				}
 			}
 		}
@@ -18958,9 +18785,8 @@ public abstract class GameCharacter implements XMLSaving {
 	protected String getVirginityExperienceDescription(GameCharacter character) {
 		if(character.hasFetish(Fetish.FETISH_DEFLOWERING)) {
 			return "<p style='text-align:center;'>"
-						+ UtilText.parse(character, "[style.italicsArcane(Due to [npc.namePos] deflowering fetish, [npc.she] [npc.verb(gain)])]")
-							+ " [style.italicsExperience("+AbstractFetish.getExperienceGainFromTakingOtherVirginity(character)+")] [style.italicsArcane(experience!)]"
-					+ "</p>";
+						+ UtilText.parse(character, "[style.italicsArcane(Из-за фетиша [npc.namePos] на лишение девственности, [npc.she] [npc.verb(gain)])]")
+							+ " [style.italicsExperience("+AbstractFetish.getExperienceGainFromTakingOtherVirginity(character)+")] [style.italicsArcane(опыт!)]</p>";
 		}
 		return "";
 	}
@@ -18968,72 +18794,72 @@ public abstract class GameCharacter implements XMLSaving {
 	protected String getPenileVirginityLossDescription(GameCharacter characterPenetrated, SexAreaOrifice orifice){
 		return UtilText.parse(characterPenetrated, this,
 				(characterPenetrated.equals(this)
-						?UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] taken [npc2.her] own penile virginity!")
-						:UtilText.formatVirginityLoss("[npc.Name] [npc.has] taken [npc2.namePos] penile virginity!"))
+						?UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] лишил(а) [npc2.her] собственной пенильной девственности!")
+						:UtilText.formatVirginityLoss("[npc.Name] [npc.has] лишил(а) [npc2.namePos] пенильной девственности!"))
 				+getVirginityExperienceDescription(characterPenetrated));
 	}
 	
 	protected String getAnalVirginityLossDescription(GameCharacter characterPenetrating, SexAreaPenetration penetration){
 		return UtilText.parse(this, characterPenetrating,
 				(this.equals(characterPenetrating)
-						?UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] taken [npc2.her] own anal virginity!")
-						:UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] taken [npc.namePos] anal virginity!"))
+						?UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] лишил(а) [npc2.her] собственной анальной девственности!")
+						:UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] лишил(а) [npc.namePos] анальной девственности!"))
 				+getVirginityExperienceDescription(characterPenetrating));
 	}
 	
 	protected String getVaginaVirginityLossDescription(GameCharacter characterPenetrating, SexAreaPenetration penetration){
 		return UtilText.parse(this, characterPenetrating,
 				(this.equals(characterPenetrating)
-						?UtilText.formatVirginityLoss((this.hasHymen()?"[npc.NamePos] hymen has been torn; [npc2.she] [npc2.has] taken [npc2.her] own virginity!":"[npc2.Name] [npc2.has] taken [npc2.her] own virginity!"))
-						:UtilText.formatVirginityLoss((this.hasHymen()?"[npc.NamePos] hymen has been torn; [npc2.name] [npc2.has] taken [npc.her] virginity!":"[npc2.Name] [npc2.has] taken [npc.namePos] virginity!")))
+						?UtilText.formatVirginityLoss((this.hasHymen()?"Девственная плева [npc.NamePos] разорвана; [npc2.she] [npc2.has] лишил(а) [npc2.her] собственной девственности!":"[npc2.Name] [npc2.has] лишил(а) [npc2.her] собственной девственности!"))
+						:UtilText.formatVirginityLoss((this.hasHymen()?"Девственная плева [npc.NamePos] разорвана; [npc2.name] [npc2.has] лишили [npc.her] девственности!":"[npc2.Name] [npc2.has] лишились [npc.namePos] девственности!")))
 				+getVirginityExperienceDescription(characterPenetrating));
 	}
 	
 	protected String getSpinneretVirginityLossDescription(GameCharacter characterPenetrating, SexAreaPenetration penetration){
 		return UtilText.parse(this, characterPenetrating,
 				(this.equals(characterPenetrating)
-						?UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] taken [npc2.her] own spinneret virginity!")
-						:UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] taken [npc.namePos] spinneret virginity!"))
+						?UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] лишились девственности в собственных [npc2.her]!")
+						:UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] лишились девственности в [npc.namePos]!"))
 				+getVirginityExperienceDescription(characterPenetrating));
 	}
 	
 	protected String getNippleVirginityLossDescription(GameCharacter characterPenetrating, SexAreaPenetration penetration){
 		return UtilText.parse(this, characterPenetrating,
 				(this.equals(characterPenetrating)
-						?UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] taken [npc2.her] own nipple virginity!")
-						:UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] taken [npc.namePos] nipple virginity!"))
+						?UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] лишились девственности в собственных [npc2.her]!")
+						:UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] лишились девственности в [npc.namePos]!"))
 				+getVirginityExperienceDescription(characterPenetrating));
 	}
 	
 	protected String getNippleCrotchVirginityLossDescription(GameCharacter characterPenetrating, SexAreaPenetration penetration){
 		return UtilText.parse(this, characterPenetrating,
 				(this.equals(characterPenetrating)
-						?UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] taken [npc2.her] own [npc2.crotchNipple] virginity!")
-						:UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] taken [npc.namePos] [npc.crotchNipple] virginity!"))
+						?UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] отняли [npc2.her] собственную [npc2.crotchNipple] девственность!")
+						:UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] лишились [npc.namePos] [npc.crotchNipple] девственности!"))
 				+getVirginityExperienceDescription(characterPenetrating));
 	}
 	
 	protected String getUrethraVirginityLossDescription(GameCharacter characterPenetrating, SexAreaPenetration penetration){
 		return UtilText.parse(this, characterPenetrating,
 				(this.equals(characterPenetrating)
-						?UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] taken [npc2.her] own urethral virginity!")
-						:UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] taken [npc.namePos] urethral virginity!"))
+						?UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] лишились девственности в собственном [npc2.her]!")
+						:UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] лишились девственности в [npc.namePos]!"))
 				+getVirginityExperienceDescription(characterPenetrating));
 	}
 	
 	protected String getVaginalUrethraVirginityLossDescription(GameCharacter characterPenetrating, SexAreaPenetration penetration){
 		return UtilText.parse(this, characterPenetrating,
 				(this.equals(characterPenetrating)
-						?UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] taken [npc2.her] own urethral virginity!")
-						:UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] taken [npc.namePos] urethral virginity!"))
+						?UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] лишились девственности в собственном [npc2.her]!")
+						:UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] лишились девственности в [npc.namePos]!"))
 				+getVirginityExperienceDescription(characterPenetrating));
 	}
 	
 	protected String getMouthVirginityLossDescription(GameCharacter characterPenetrating, SexAreaPenetration penetration){
 		return UtilText.parse(this, characterPenetrating,
 				(this.equals(characterPenetrating)
-						?UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] given [npc2.herself] [npc.her] first oral experience!")
-						:UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] given [npc.name] [npc.her] first oral experience!"))
+						?UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] дарит [npc2.herself] [npc.her] первый оральный опыт!")
+						:UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] дарит [npc.name] [npc.her] первый оральный опыт!"))
 				+getVirginityExperienceDescription(characterPenetrating));
 	}
 	
@@ -19045,23 +18871,23 @@ public abstract class GameCharacter implements XMLSaving {
 			String plurality = orifice.isPlural()?"are":"is";
 			if(penetrationType==SexAreaPenetration.PENIS && Objects.equals(Main.sex.getCharacterKnotting(partner), this)) { // Knotted:
 				if(partner.equals(this)) {
-					return UtilText.parse(this, "[npc.NamePos] "+orifice.getName(this)+" "+plurality+" too tight for the fat knot at the base of [npc.her] "+penetrationType.getName(partner)+", and "+plurality+" being stretched out as a result!");
+					return UtilText.parse(this, "[npc.NamePos] "+orifice.getName(this)+" "+plurality+" слишком тесно для толстого узла у основания [npc.her], "+penetrationType.getName(partner)+", и "+plurality+" из-за чего он растягивается!");
 				}
-				return UtilText.parse(this, partner, "[npc.NamePos] "+orifice.getName(this)+" "+plurality+" too tight for the fat knot at the base of [npc2.namePos] "+penetrationType.getName(partner)+", and "+plurality+" being stretched out as a result!");
+				return UtilText.parse(this, partner, "[npc.NamePos] "+orifice.getName(this)+" "+plurality+" слишком тесно для толстого узла у основания [npc2.namePos], "+penetrationType.getName(partner)+", и "+plurality+" из-за чего он растягивается!");
 			}
 			if(partner.equals(this)) {
-				return UtilText.parse(this, "[npc.NamePos] "+orifice.getName(this)+" "+plurality+" too tight for [npc.her] "+penetrationType.getName(partner)+", and "+plurality+" being stretched out as a result!");
+				return UtilText.parse(this, "[npc.NamePos] "+orifice.getName(this)+" "+plurality+" слишком тесно для [npc.her], "+penetrationType.getName(partner)+", и "+plurality+" из-за чего он растягивается!");
 			}
-			return UtilText.parse(this, partner, "[npc.NamePos] "+orifice.getName(this)+" "+plurality+" too tight for [npc2.namePos] "+penetrationType.getName(partner)+", and "+plurality+" being stretched out as a result!");
+			return UtilText.parse(this, partner, "[npc.NamePos] "+orifice.getName(this)+" "+plurality+" слишком тесно для [npc2.namePos], "+penetrationType.getName(partner)+", и "+plurality+" из-за чего он растягивается!");
 		}
 		switch(orifice) {
 			case ANUS:
 				switch(penetrationType) {
 					case FINGER: case PENIS: case TONGUE: case TAIL: case TENTACLE: case FOOT: case CLIT:
 						if(pastTense) {
-							return UtilText.parse(this, "[npc.NamePos] [npc.asshole+] was stretched out.");
+							return UtilText.parse(this, "[npc.NamePos] [npc.asshole+] растянулся/растянулась.");
 						} else {
-							return UtilText.parse(this, "[npc.NamePos] [npc.asshole+] is being stretched.");
+							return UtilText.parse(this, "[npc.NamePos] [npc.asshole+] растягивается.");
 						}
 				}
 				break;
@@ -19073,70 +18899,70 @@ public abstract class GameCharacter implements XMLSaving {
 			case MOUTH:
 				if(partner==null) {
 					if(pastTense) {
-						return UtilText.parse(this, "[npc.Name] improved [npc.her] deep-throating skills.");
+						return UtilText.parse(this, "[npc.Name] улучшил навыки глубокого горлового минета [npc.her].");
 					} else {
-						return UtilText.parse(this, "[npc.NamePos] throat is being stretched out.");
+						return UtilText.parse(this, "горло [npc.NamePos] растягивается.");
 					}
 				}
 				if(pastTense) {
 					switch(penetrationType) {
 						case FINGER:
 							if(partner.equals(this)) {
-								return UtilText.parse(this, "[npc.Name] struggled to fit [npc.her] fingers down [npc.her] throat.");
+								return UtilText.parse(this, "[npc.Name] с трудом проталкивал(а) [npc.her] пальцы в горло [npc.her].");
 							}
-							return UtilText.parse(this, partner, "[npc.Name] struggled to fit [npc2.namePos] fingers down [npc.her] throat.");
+							return UtilText.parse(this, partner, "[npc.Name] с трудом проталкивал(а) [npc2.namePos] пальцы в горло [npc.her].");
 						case PENIS:
 							if(partner.equals(this)) {
-								return UtilText.parse(this, "[npc.Name] struggled to fit [npc.her] [npc.cock+] down [npc.her] throat.");
+								return UtilText.parse(this, "[npc.Name] с трудом проталкивал(а) [npc.her] [npc.cock+] в горло [npc.her].");
 							}
-							return UtilText.parse(this, partner, "[npc.Name] struggled to fit [npc2.namePos] [npc2.cock+] down [npc.her] throat.");
+							return UtilText.parse(this, partner, "[npc.Name] с трудом проталкивал(а) [npc2.namePos] [npc2.cock+] в горло [npc.her].");
 						case TAIL:
 							if(partner.equals(this)) {
-								return UtilText.parse(this, "[npc.Name] struggled to fit [npc.her] [npc.tail+] down [npc.her] throat.");
+								return UtilText.parse(this, "[npc.Name] с трудом проталкивал(а) [npc.her] [npc.tail+] в горло [npc.her].");
 							}
-							return UtilText.parse(this, partner, "[npc.Name] struggled to fit [npc2.namePos] [npc2.tail+] down [npc.her] throat.");
+							return UtilText.parse(this, partner, "[npc.Name] с трудом проталкивал(а) [npc2.namePos] [npc2.tail+] в горло [npc.her].");
 						case TENTACLE:
 							if(partner.equals(this)) {
-								return UtilText.parse(this, "[npc.Name] struggled to fit [npc.her] [npc.tentacle+] down [npc.her] throat.");
+								return UtilText.parse(this, "[npc.Name] с трудом пыталась проглотить [npc.her] [npc.tentacle+] через [npc.her] горло.");
 							}
-							return UtilText.parse(this, partner, "[npc.Name] struggled to fit [npc2.namePos] [npc2.tentacle+] down [npc.her] throat.");
+							return UtilText.parse(this, partner, "[npc.Name] с трудом пытался проглотить [npc2.namePos] [npc2.tentacle+] через [npc.her] горло.");
 						default:
-							return UtilText.parse(this, "[npc.NamePos] throat was being stretched out.");
+							return UtilText.parse(this, "[npc.NamePos] горло растягивалось.");
 					}
 					
 				} else {
 					switch(penetrationType) {
 						case FINGER:
 							if(partner.equals(this)) {
-								return UtilText.parse(this, "[npc.NameIsFull] struggling to fit [npc.her] fingers down [npc.her] throat.");
+								return UtilText.parse(this, "[npc.NameIsFull] пытается просунуть [npc.her] пальцы в [npc.her] горло.");
 							}
-							return UtilText.parse(this, partner, "[npc.NameIsFull] struggling to fit [npc2.namePos] fingers down [npc.her] throat.");
+							return UtilText.parse(this, partner, "[npc.NameIsFull] пытается просунуть [npc2.namePos] пальцы в [npc.her] горло.");
 						case PENIS:
 							if(partner.equals(this)) {
-								return UtilText.parse(this, "[npc.NameIsFull] struggling to fit [npc.her] [npc.cock+] down [npc.her] throat.");
+								return UtilText.parse(this, "[npc.NameIsFull] пытается проглотить [npc.her] [npc.cock+] через [npc.her] горло.");
 							}
-							return UtilText.parse(this, partner, "[npc.NameIsFull] struggling to fit [npc2.namePos] [npc2.cock+] down [npc.her] throat.");
+							return UtilText.parse(this, partner, "[npc.NameIsFull] пытается проглотить [npc2.namePos] [npc2.cock+] через [npc.her] горло.");
 						case TAIL:
 							if(partner.equals(this)) {
-								return UtilText.parse(this, "[npc.NameIsFull] struggling to fit [npc.her] [npc.tail+(true)] down [npc.her] throat.");
+								return UtilText.parse(this, "[npc.NameIsFull] пытается проглотить [npc.her] [npc.tail+(true)] через [npc.her] горло.");
 							}
-							return UtilText.parse(this, partner, "[npc.NameIsFull] struggling to fit [npc2.namePos] [npc2.tail+(true)] down [npc.her] throat.");
+							return UtilText.parse(this, partner, "[npc.NameIsFull] пытается проглотить [npc2.namePos] [npc2.tail+(true)] через [npc.her] горло.");
 						case TENTACLE:
 							if(partner.equals(this)) {
-								return UtilText.parse(this, "[npc.NameIsFull] struggling to fit [npc.her] [npc.tentacle+(true)] down [npc.her] throat.");
+								return UtilText.parse(this, "[npc.NameIsFull] пытается проглотить [npc.her] [npc.tentacle+(true)] через [npc.her] горло.");
 							}
-							return UtilText.parse(this, partner, "[npc.NameIsFull] struggling to fit [npc2.namePos] [npc2.tentacle+(true)] down [npc.her] throat.");
+							return UtilText.parse(this, partner, "[npc.NameIsFull] изо всех сил пытается проглотить [npc2.namePos] [npc2.tentacle+(true)] через [npc.her] горло.");
 						default:
-							return UtilText.parse(this, "[npc.NamePos] throat is being stretched out.");
+							return UtilText.parse(this, "горло [npc.NamePos] растягивается.");
 					}
 				}
 			case NIPPLE:
 				switch(penetrationType) {
 					case FINGER: case PENIS: case TONGUE: case TAIL: case TENTACLE: case FOOT: case CLIT:
 						if(pastTense) {
-							return UtilText.parse(this, "[npc.NamePos] [npc.nipples+] were stretched out.");
+							return UtilText.parse(this, "[npc.NamePos] [npc.nipples+] были растянуты.");
 						} else {
-							return UtilText.parse(this, "[npc.NamePos] [npc.nipples+] are being stretched.");
+							return UtilText.parse(this, "[npc.NamePos] [npc.nipples+] растягиваются.");
 						}
 				}
 				break;
@@ -19144,9 +18970,9 @@ public abstract class GameCharacter implements XMLSaving {
 				switch(penetrationType) {
 					case FINGER: case PENIS: case TONGUE: case TAIL: case TENTACLE: case FOOT: case CLIT:
 						if(pastTense) {
-							return UtilText.parse(this, "[npc.NamePos] [npc.crotchNipples+] were stretched out.");
+							return UtilText.parse(this, "[npc.NamePos] [npc.crotchNipples+] были растянуты.");
 						} else {
-							return UtilText.parse(this, "[npc.NamePos] [npc.crotchNipples+] are being stretched.");
+							return UtilText.parse(this, "[npc.NamePos] [npc.crotchNipples+] растягиваются.");
 						}
 				}
 				break;
@@ -19156,9 +18982,9 @@ public abstract class GameCharacter implements XMLSaving {
 				switch(penetrationType) {
 					case FINGER: case PENIS: case TONGUE: case TAIL: case TENTACLE: case FOOT: case CLIT:
 						if(pastTense) {
-							return UtilText.parse(this, "[npc.NamePos] penile urethra was stretched out.");
+							return UtilText.parse(this, "[npc.NamePos] мочеиспускательный канал пениса был растянут.");
 						} else {
-							return UtilText.parse(this, "[npc.NamePos] penile urethra is being stretched.");
+							return UtilText.parse(this, "[npc.NamePos] мочеиспускательный канал пениса растягивается.");
 						}
 				}
 				break;
@@ -19166,9 +18992,9 @@ public abstract class GameCharacter implements XMLSaving {
 				switch(penetrationType) {
 					case FINGER: case PENIS: case TONGUE: case TAIL: case TENTACLE: case FOOT: case CLIT:
 						if(pastTense) {
-							return UtilText.parse(this, "[npc.NamePos] vaginal urethra was stretched out.");
+							return UtilText.parse(this, "[npc.NamePos] мочеиспускательный канал влагалища был растянут.");
 						} else {
-							return UtilText.parse(this, "[npc.NamePos] vaginal urethra is being stretched.");
+							return UtilText.parse(this, "[npc.NamePos] мочеиспускательный канал влагалища растягивается.");
 						}
 				}
 				break;
@@ -19176,9 +19002,9 @@ public abstract class GameCharacter implements XMLSaving {
 				switch(penetrationType) {
 					case FINGER: case PENIS: case TONGUE: case TAIL: case TENTACLE: case FOOT: case CLIT:
 						if(pastTense) {
-							return UtilText.parse(this, "[npc.NamePos] [npc.pussy+] was stretched out.");
+							return UtilText.parse(this, "[npc.NamePos] [npc.pussy+] был растянут.");
 						} else {
-							return UtilText.parse(this, "[npc.NamePos] [npc.pussy+] is being stretched.");
+							return UtilText.parse(this, "[npc.NamePos] [npc.pussy+] растягивается.");
 						}
 				}
 				break;
@@ -19186,9 +19012,9 @@ public abstract class GameCharacter implements XMLSaving {
 				switch(penetrationType) {
 					case FINGER: case PENIS: case TONGUE: case TAIL: case TENTACLE: case FOOT: case CLIT:
 						if(pastTense) {
-							return UtilText.parse(this, "[npc.NamePos] spinneret was stretched out.");
+							return UtilText.parse(this, "паутинка [npc.NamePos] была растянута.");
 						} else {
-							return UtilText.parse(this, "[npc.NamePos] spinneret is being stretched.");
+							return UtilText.parse(this, "[npc.NamePos] паутинка растягивается.");
 						}
 				}
 				break;
@@ -19201,22 +19027,22 @@ public abstract class GameCharacter implements XMLSaving {
 				&& Main.sex.isCharacterImmobilised(this)
 				&& (Main.sex.getImmobilisationTypes(this).containsKey(ImmobilisationType.COMMAND) || Main.sex.getImmobilisationTypes(this).containsKey(ImmobilisationType.SLEEP));
 		
-		String prefix = "[npc.Name] [npc.verb(let)] out [npc.a_moan+]";
+		String prefix = "[npc.Name] [npc.verb(let)] из [npc.a_moan+]";
 		if(immobile) {
 			if(this.isAsleep()) {
-				prefix = "[npc.Name] [npc.verb(remain)] deeply asleep";
+				prefix = "[npc.Name] [npc.verb(remain)] крепко спит";
 			} else {
-				prefix = "[npc.Name] [npc.verb(remain)] totally silent and unmoving";
+				prefix = "[npc.Name] [npc.verb(remain)] совершенно неподвижна и безмолвна";
 			}
 		} else if(orifice==SexAreaOrifice.MOUTH) {
-			prefix = "[npc.Name] [npc.verb(let)] out a muffled [npc.moan]";
+			prefix = "[npc.Name] [npc.verb(let)] приглушенный [npc.moan]";
 		}
 		
 		switch(orifice) {
 			case ARMPITS:
 				break;
 			case ANUS:
-				return UtilText.parse(this, prefix+" as [npc.her] [npc.asshole+] finishes stretching out to a comfortable size.");
+				return UtilText.parse(this, prefix+" по мере того как [npc.her] [npc.asshole+] растягивается до комфортного размера.");
 			case ASS:
 				break;
 			case BREAST:
@@ -19224,19 +19050,19 @@ public abstract class GameCharacter implements XMLSaving {
 			case BREAST_CROTCH:
 				break;
 			case MOUTH:
-				return UtilText.parse(this, prefix+" as [npc.her] throat finishes stretching out to a comfortable size.");
+				return UtilText.parse(this, prefix+" по мере того как горло [npc.her] растягивается до комфортного размера.");
 			case NIPPLE:
-				return UtilText.parse(this, prefix+" as [npc.her] [npc.nipples+] finish stretching out to a comfortable size.");
+				return UtilText.parse(this, prefix+" по мере того как [npc.her] [npc.nipples+] растягиваются до комфортного размера.");
 			case NIPPLE_CROTCH:
-				return UtilText.parse(this, prefix+" as [npc.her] [npc.crotchNipples+] finish stretching out to a comfortable size.");
+				return UtilText.parse(this, prefix+" когда [npc.her] [npc.crotchNipples+] наконец растягивается до комфортного размера.");
 			case THIGHS:
 				break;
 			case URETHRA_PENIS: case URETHRA_VAGINA:
-				return UtilText.parse(this, prefix+" as [npc.her] urethra finishes stretching out to a comfortable size.");
+				return UtilText.parse(this, prefix+" когда уретра [npc.her] наконец растягивается до комфортного размера.");
 			case VAGINA:
-				return UtilText.parse(this, prefix+" as [npc.her] [npc.pussy+] finishes stretching out to a comfortable size.");
+				return UtilText.parse(this, prefix+" когда [npc.her] [npc.pussy+] наконец растягивается до комфортного размера.");
 			case SPINNERET:
-				return UtilText.parse(this, prefix+" as [npc.her] spinneret finishes stretching out to a comfortable size.");
+				return UtilText.parse(this, prefix+" когда паутинная железа [npc.her] наконец растягивается до комфортного размера.");
 		}
 		return "";
 	}
@@ -19254,7 +19080,7 @@ public abstract class GameCharacter implements XMLSaving {
 			case ARMPITS:
 				break;
 			case ANUS:
-				return formatTooLoose(UtilText.parse(this, "[npc.Her] asshole is too loose to provide much pleasure..."));
+				return formatTooLoose(UtilText.parse(this, "анус [npc.Her] слишком расслаблен, чтобы приносить много удовольствия..."));
 			case ASS:
 				break;
 			case BREAST:
@@ -19264,17 +19090,17 @@ public abstract class GameCharacter implements XMLSaving {
 			case MOUTH:
 				break;
 			case NIPPLE:
-				return formatTooLoose(UtilText.parse(this, "[npc.Her] nipples are too loose to provide much pleasure..."));
+				return formatTooLoose(UtilText.parse(this, "соски [npc.Her] слишком расслаблены, чтобы приносить много удовольствия..."));
 			case NIPPLE_CROTCH:
-				return formatTooLoose(UtilText.parse(this, "[npc.Her] [npc.crotchNipples] are too loose to provide much pleasure..."));
+				return formatTooLoose(UtilText.parse(this, "[npc.Her] [npc.crotchNipples] слишком расслаблены, чтобы приносить много удовольствия..."));
 			case THIGHS:
 				break;
 			case URETHRA_PENIS: case URETHRA_VAGINA:
-				return formatTooLoose(UtilText.parse(this, "[npc.Her] urethra is too loose to provide much pleasure..."));
+				return formatTooLoose(UtilText.parse(this, "уретра [npc.Her] слишком расслаблена, чтобы приносить много удовольствия..."));
 			case VAGINA:
-				return formatTooLoose(UtilText.parse(this, "[npc.Her] pussy is too loose to provide much pleasure..."));
+				return formatTooLoose(UtilText.parse(this, "киска [npc.Her] слишком расслаблена, чтобы приносить много удовольствия..."));
 			case SPINNERET:
-				return formatTooLoose(UtilText.parse(this, "[npc.Her] spinneret is too loose to provide much pleasure..."));
+				return formatTooLoose(UtilText.parse(this, "паутинная железа [npc.Her] слишком расслаблена, чтобы приносить много удовольствия..."));
 		}
 		
 		return "";
@@ -19436,58 +19262,58 @@ public abstract class GameCharacter implements XMLSaving {
 			switch(orificeIngestedThrough) {
 				case ANUS:
 					if(charactersFluid!=null) {
-						fluidIngestionSB.append(UtilText.parse(this, charactersFluid, Units.fluid(millilitres)+" of [npc2.namePos] "+fluid.getName(charactersFluid)+" is pumped into [npc.namePos] [npc.asshole+]!"));
+						fluidIngestionSB.append(UtilText.parse(this, charactersFluid, Units.fluid(millilitres)+" из [npc2.namePos] "+fluid.getName(charactersFluid)+" впрыскивается в [npc.namePos] [npc.asshole+]!"));
 					} else {
-						fluidIngestionSB.append(UtilText.parse(this, Units.fluid(millilitres)+" of "+fluid.getName(charactersFluid)+" is pumped into [npc.namePos] [npc.asshole+]!"));
+						fluidIngestionSB.append(UtilText.parse(this, Units.fluid(millilitres)+" из "+fluid.getName(charactersFluid)+" впрыскивается в [npc.namePos] [npc.asshole+]!"));
 					}
 					break;
 				case MOUTH:
 					if(charactersFluid!=null) {
-						fluidIngestionSB.append(UtilText.parse(this, charactersFluid, "[npc.Name] [npc.verb(swallow)] down "+Units.fluid(millilitres)+" of [npc2.namePos] "+fluid.getName(charactersFluid)+"!"));
+						fluidIngestionSB.append(UtilText.parse(this, charactersFluid, "[npc.Name] [npc.verb(swallow)] вниз "+Units.fluid(millilitres)+" из [npc2.namePos] "+fluid.getName(charactersFluid)+"!"));
 					} else {
-						fluidIngestionSB.append(UtilText.parse(this, "[npc.Name] [npc.verb(swallow)] down "+Units.fluid(millilitres)+" of "+fluid.getName(charactersFluid)+"!"));
+						fluidIngestionSB.append(UtilText.parse(this, "[npc.Name] [npc.verb(swallow)] вниз "+Units.fluid(millilitres)+" из "+fluid.getName(charactersFluid)+"!"));
 					}
 					break;
 				case NIPPLE:
 					if(charactersFluid!=null) {
-						fluidIngestionSB.append(UtilText.parse(this, charactersFluid, Units.fluid(millilitres)+" of [npc2.namePos] "+fluid.getName(charactersFluid)+" is pumped into [npc.namePos] [npc.nipples+]!"));
+						fluidIngestionSB.append(UtilText.parse(this, charactersFluid, Units.fluid(millilitres)+" из [npc2.namePos] "+fluid.getName(charactersFluid)+" впрыскивается в [npc.namePos] [npc.nipples+]!"));
 					} else {
-						fluidIngestionSB.append(UtilText.parse(this, Units.fluid(millilitres)+" of "+fluid.getName(charactersFluid)+" is pumped into [npc.namePos] [npc.nipples+]!"));
+						fluidIngestionSB.append(UtilText.parse(this, Units.fluid(millilitres)+" из "+fluid.getName(charactersFluid)+" впрыскивается в [npc.namePos] [npc.nipples+]!"));
 					}
 					break;
 				case NIPPLE_CROTCH:
 					if(charactersFluid!=null) {
-						fluidIngestionSB.append(UtilText.parse(this, charactersFluid, Units.fluid(millilitres)+" of [npc2.namePos] "+fluid.getName(charactersFluid)+" is pumped into [npc.namePos] [npc.crotchNipples+]!"));
+						fluidIngestionSB.append(UtilText.parse(this, charactersFluid, Units.fluid(millilitres)+" из [npc2.namePos] "+fluid.getName(charactersFluid)+" вкачивается в [npc.namePos] [npc.crotchNipples+]!"));
 					} else {
-						fluidIngestionSB.append(UtilText.parse(this, Units.fluid(millilitres)+" of "+fluid.getName(charactersFluid)+" is pumped into [npc.namePos] [npc.crotchNipples+]!"));
+						fluidIngestionSB.append(UtilText.parse(this, Units.fluid(millilitres)+" из "+fluid.getName(charactersFluid)+" вкачивается в [npc.namePos] [npc.crotchNipples+]!"));
 					}
 					break;
 				case URETHRA_PENIS:
 					if(charactersFluid!=null) {
-						fluidIngestionSB.append(UtilText.parse(this, charactersFluid, Units.fluid(millilitres)+" of [npc2.namePos] "+fluid.getName(charactersFluid)+" is pumped into [npc.namePos] [npc.cockUrethra+]!"));
+						fluidIngestionSB.append(UtilText.parse(this, charactersFluid, Units.fluid(millilitres)+" из [npc2.namePos] "+fluid.getName(charactersFluid)+" вкачивается в [npc.namePos] [npc.cockUrethra+]!"));
 					} else {
-						fluidIngestionSB.append(UtilText.parse(this, Units.fluid(millilitres)+" of "+fluid.getName(charactersFluid)+" is pumped into [npc.namePos] [npc.cockUrethra+]!"));
+						fluidIngestionSB.append(UtilText.parse(this, Units.fluid(millilitres)+" из "+fluid.getName(charactersFluid)+" вкачивается в [npc.namePos] [npc.cockUrethra+]!"));
 					}
 					break;
 				case URETHRA_VAGINA:
 					if(charactersFluid!=null) {
-						fluidIngestionSB.append(UtilText.parse(this, charactersFluid, Units.fluid(millilitres)+" of [npc2.namePos] "+fluid.getName(charactersFluid)+" is pumped into [npc.namePos] [npc.pussyUrethra+]!"));
+						fluidIngestionSB.append(UtilText.parse(this, charactersFluid, Units.fluid(millilitres)+" из [npc2.namePos] "+fluid.getName(charactersFluid)+" вкачивается в [npc.namePos] [npc.pussyUrethra+]!"));
 					} else {
-						fluidIngestionSB.append(UtilText.parse(this, Units.fluid(millilitres)+" of "+fluid.getName(charactersFluid)+" is pumped into [npc.namePos] [npc.pussyUrethra+]!"));
+						fluidIngestionSB.append(UtilText.parse(this, Units.fluid(millilitres)+" из "+fluid.getName(charactersFluid)+" вкачивается в [npc.namePos] [npc.pussyUrethra+]!"));
 					}
 					break;
 				case VAGINA:
 					if(charactersFluid!=null) {
-						fluidIngestionSB.append(UtilText.parse(this, charactersFluid, Units.fluid(millilitres)+" of [npc2.namePos] "+fluid.getName(charactersFluid)+" is pumped into [npc.namePos] [npc.pussy+]!"));
+						fluidIngestionSB.append(UtilText.parse(this, charactersFluid, Units.fluid(millilitres)+" из [npc2.namePos] "+fluid.getName(charactersFluid)+" вкачивается в [npc.namePos] [npc.pussy+]!"));
 					} else {
-						fluidIngestionSB.append(UtilText.parse(this, Units.fluid(millilitres)+" of "+fluid.getName(charactersFluid)+" is pumped into [npc.namePos] [npc.pussy+]!"));
+						fluidIngestionSB.append(UtilText.parse(this, Units.fluid(millilitres)+" из "+fluid.getName(charactersFluid)+" вкачивается в [npc.namePos] [npc.pussy+]!"));
 					}
 					break;
 				case SPINNERET:
 					if(charactersFluid!=null) {
-						fluidIngestionSB.append(UtilText.parse(this, charactersFluid, Units.fluid(millilitres)+" of [npc2.namePos] "+fluid.getName(charactersFluid)+" is pumped into [npc.namePos] spinneret!"));
+						fluidIngestionSB.append(UtilText.parse(this, charactersFluid, Units.fluid(millilitres)+" из [npc2.namePos] "+fluid.getName(charactersFluid)+" вкачивается в паучий аппарат [npc.namePos]!"));
 					} else {
-						fluidIngestionSB.append(UtilText.parse(this, Units.fluid(millilitres)+" of "+fluid.getName(charactersFluid)+" is pumped into [npc.namePos] spinneret!"));
+						fluidIngestionSB.append(UtilText.parse(this, Units.fluid(millilitres)+" из "+fluid.getName(charactersFluid)+" вкачивается в паучий аппарат [npc.namePos]!"));
 					}
 					break;
 				case ARMPITS:
@@ -19541,24 +19367,23 @@ public abstract class GameCharacter implements XMLSaving {
 	public String setAlcoholLevel(float alcoholLevel) {
 		if(this.hasPerkAnywhereInTree(Perk.DOLL_PHYSICAL_3)) {
 			return "<p style='text-align:center;'>"
-						+ UtilText.parse(this, "As a sex doll, [npc.nameIsFull] not affected by alcohol...")
+						+ UtilText.parse(this, "Как секс-кукла, [npc.nameIsFull] не подвержена влиянию алкоголя...")
 					+ "</p>";
 		}
 		this.alcoholLevel = Math.max(0, Math.min(1, alcoholLevel));
 		return "<p style='text-align:center;'>"
 				+UtilText.parse(this,
-				"[npc.Name] [npc.verb(start)] to feel "
+				"[npc.Name] [npc.verb(start)] чувствовать "
 					+(this.alcoholLevel>=0.75f
-					?"immensely dizzy and light headed as the alcohol quickly enters [npc.her] system."
+					?"сильнейшее головокружение и легкость в голове, так как алкоголь быстро проникает в систему [npc.her]."
 					:this.alcoholLevel>=0.5f
-					?"incredibly dizzy and light headed as the alcohol quickly enters [npc.her] system."
+					?"невероятное головокружение и легкость в голове, так как алкоголь быстро проникает в систему [npc.her]."
 					:this.alcoholLevel>=0.3f
-					?"very dizzy and light headed as the alcohol quickly enters [npc.her] system."
+					?"сильное головокружение и легкость в голове, так как алкоголь быстро проникает в систему [npc.her]."
 					:this.alcoholLevel>=0.15f
-					?"dizzy and light headed as the alcohol quickly enters [npc.her] system."
-					:"a little dizzy and light headed as the alcohol quickly enters [npc.her] system.")
-				+"<br/>"
-				+ "[npc.NamePos] [style.boldAlcohol(intoxication level)] is now at "+((int)getIntoxicationPercentage())+"%")
+					?"головокружение и легкость в голове, так как алкоголь быстро проникает в систему [npc.her]."
+					:"легкое головокружение и легкость в голове, так как алкоголь быстро проникает в систему [npc.her].")
+				+"<br/>[npc.NamePos] [style.boldAlcohol(уровень опьянения)] сейчас на уровне "+((int)getIntoxicationPercentage())+"%")
 			+ "</p>";
 	}
 	
@@ -19814,7 +19639,7 @@ public abstract class GameCharacter implements XMLSaving {
 			sb.setLength(0);
 			sb.append(move.getValue().getPrediction(index, this, move.getKey(), enemies, allies));
 			if(selectedMovesDisruption.get(index) == true) {
-				sb.append("<b style='color: " + PresetColour.GENERIC_MINOR_BAD.toWebHexString() + "'>" + " (Disrupted!)</b>");
+				sb.append("<b style='color: " + PresetColour.GENERIC_MINOR_BAD.toWebHexString() + "'> (Нарушено!)</b>");
 			}
 			predictions.add(sb.toString());
 			index++;
@@ -19854,8 +19679,7 @@ public abstract class GameCharacter implements XMLSaving {
 								target.incrementMana(-manaAbsorbed);
 								sb.append("<br/>"
 										+ UtilText.parse(this, target,
-												"Thanks to [npc.her] '<span style='color:"+Perk.LUSTPYRE.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(Perk.LUSTPYRE.getName(this))+"</span>' perk,"
-														+ " [npc.name] [npc.verb(absorb)] [style.colourMana("+manaAbsorbed+")] "+Attribute.MANA_MAXIMUM.getName()+" from [npc2.name]!"));
+												"Благодаря [npc.her] '<span style='color:"+Perk.LUSTPYRE.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(Perk.LUSTPYRE.getName(this))+"перк </span>, [npc.name] [npc.verb(absorb)] [style.colourMana("+manaAbsorbed+")] "+Attribute.MANA_MAXIMUM.getName()+" от [npc2.name]!"));
 							}
 						}
 						if(target.hasPerkAnywhereInTree(Perk.PURE_MIND)) {
@@ -19863,8 +19687,7 @@ public abstract class GameCharacter implements XMLSaving {
 							target.incrementMana(manaRestored);
 							sb.append("<br/>"
 									+ UtilText.parse(target,
-											"Thanks to [npc.namePos] '<span style='color:"+Perk.PURE_MIND.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(Perk.PURE_MIND.getName(this))+"</span>' perk,"
-													+ " [npc.she] [npc.verb(recover)] [style.colourMana("+manaRestored+")] "+Attribute.MANA_MAXIMUM.getName()+" in response to taking "+Attribute.DAMAGE_LUST.getName()+"!"));
+											"Благодаря [npc.namePos]'<span style='color:"+Perk.PURE_MIND.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(Perk.PURE_MIND.getName(this))+"перк </span>, [npc.she] [npc.verb(recover)] [style.colourMana("+manaRestored+")] "+Attribute.MANA_MAXIMUM.getName()+" в ответ на получение "+Attribute.DAMAGE_LUST.getName()+"!"));
 						}
 					}
 					
@@ -19879,14 +19702,12 @@ public abstract class GameCharacter implements XMLSaving {
 							}
 							Main.combat.addStatusEffectToApply(target, entry.getKey(), duration);
 							sb.append(UtilText.parse(target,
-									"<br/>[npc.NameIsFull] now affected by <b style='color:"+entry.getKey().getColour().toWebHexString()+";'>"+Util.capitaliseSentence(entry.getKey().getName(target))+"</b>"
-											+ " for <b>"+Util.intToString(duration)+(duration==1?" turn":" turns")+"</b>!"));
+									"<br/>[npc.NameIsFull] now affected by <b style='color:"+entry.getKey().getColour().toWebHexString()+";'>"+Util.capitaliseSentence(entry.getKey().getName(target))+"</b> для <b>"+Util.intToString(duration)+(duration==1?" ход":" ходов")+"</b>!"));
 						}
 					}
 					
 				} else {
-					sb.append("<b style='text-align:center; color: " + move.getColourByDamageType(index, this).toWebHexString() + "'>" + Util.capitaliseSentence(move.getType().getName()) + ":</b><br/>"
-								+ "<b style='color: " + PresetColour.GENERIC_MINOR_BAD.toWebHexString() + "'>" + "The action was disrupted!</b>");
+					sb.append("<b style='text-align:center; color: " + move.getColourByDamageType(index, this).toWebHexString() + "'>" + Util.capitaliseSentence(move.getType().getName()) + ":</b><br/><b style='color: " + PresetColour.GENERIC_MINOR_BAD.toWebHexString() + "'>Действие было прервано!</b>");
 				}
 				descriptionList.add(index, sb.toString());
 			} else {
@@ -19898,9 +19719,9 @@ public abstract class GameCharacter implements XMLSaving {
 		if(typeToPerform==null || typeToPerform==CombatMoveType.ATTACK) {
 			if(selectedMoves.isEmpty()) {
 				if(this.getAttributeValue(Attribute.ACTION_POINTS)<=0) {
-					descriptionList.add(UtilText.parse(this, "[npc.NameIsFull] [style.colourTerrible(unable)] to make a single move this turn!"));
+					descriptionList.add(UtilText.parse(this, "[npc.NameIsFull] [style.colourTerrible(не в силах)] сделать ни одного движения в этом ходу!"));
 				} else {
-					descriptionList.add(UtilText.parse(this, "[npc.Name] [npc.verb(decide)] not to make a move, and instead [npc.verb(try)] to brace [npc.herself] as best as possible against any incoming attacks."));
+					descriptionList.add(UtilText.parse(this, "[npc.Name] [npc.verb(decide)] не делать ход, а вместо этого [npc.verb(try)] изо всех сил [npc.herself], чтобы защититься от любых входящих атак."));
 				}
 			}
 			
@@ -19908,8 +19729,7 @@ public abstract class GameCharacter implements XMLSaving {
 				int healthRecovery = Math.round(this.getAttributeValue(Attribute.HEALTH_MAXIMUM)*0.05f);
 				this.setHealth(this.getHealth()+healthRecovery);
 				descriptionList.add(descriptionList.size(), UtilText.parse(this,
-						"Thanks to [npc.her] '<span style='color:"+Perk.COMBAT_REGENERATION.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(Perk.COMBAT_REGENERATION.getName(this))+"</span>' trait,"
-								+ " [npc.name] [npc.verb(recover)] [style.colourHealth("+healthRecovery+")] "+Attribute.HEALTH_MAXIMUM.getName()+"!"));
+						"Благодаря [npc.her] '<span style='color:"+Perk.COMBAT_REGENERATION.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(Perk.COMBAT_REGENERATION.getName(this))+"черта </span>, [npc.name] [npc.verb(recover)] [style.colourHealth("+healthRecovery+")] "+Attribute.HEALTH_MAXIMUM.getName()+"!"));
 			}
 		}
 	}
@@ -20109,7 +19929,7 @@ public abstract class GameCharacter implements XMLSaving {
 	public Value<Boolean, String> isMoveAvailable(String identifier) {
 		for(AbstractCombatMove move : knownMoves) {
 			if(move.getIdentifier().equals(identifier)) {
-				return new Value<>(true, "You have learned how to use this move during your adventures.");
+				return new Value<>(true, "За время своих приключений вы научились использовать этот прием.");
 			}
 		}
 		// Moves from weapons:
@@ -20117,7 +19937,7 @@ public abstract class GameCharacter implements XMLSaving {
 			if(weapon!=null) {
 				for(AbstractCombatMove move : weapon.getCombatMoves()) {
 					if(move.getIdentifier().equals(identifier)) {
-						return new Value<>(true, "You have obtained this move from your "+weapon.getName()+".");
+						return new Value<>(true, "Вы получили этот прием от вашего "+weapon.getName()+".");
 					}	
 				}
 			}
@@ -20126,7 +19946,7 @@ public abstract class GameCharacter implements XMLSaving {
 			if(weapon!=null) {
 				for(AbstractCombatMove move : weapon.getCombatMoves()) {
 					if(move.getIdentifier().equals(identifier)) {
-						return new Value<>(true, "You have obtained this move from your "+weapon.getName()+".");
+						return new Value<>(true, "Вы получили этот прием от вашего "+weapon.getName()+".");
 					}	
 				}
 			}
@@ -20331,15 +20151,15 @@ public abstract class GameCharacter implements XMLSaving {
 	public String getUnableToEscapeDescription() {
 		for(AbstractClothing clothing : this.getClothingCurrentlyEquipped()) {
 			if(clothing.isHindersLegMovement(clothing.getSlotEquippedTo()) && !this.isAbleToFly()) {
-				return UtilText.parse(this, "Escape is blocked due to [npc.namePos] "+clothing.getName()+" hindering [npc.her] movement!");
+				return UtilText.parse(this, "Побег заблокирован из-за [npc.namePos] "+clothing.getName()+" препятствующего движению [npc.her]!");
 			}
 			if(clothing.getItemTags().contains(ItemTag.PREVENTS_COMBAT_ESCAPE)) {
-				return UtilText.parse(this, "Escape is blocked due to the effect of [npc.namePos] "+clothing.getName()+"!");
+				return UtilText.parse(this, "Побег заблокирован эффектом [npc.namePos] "+clothing.getName()+"!");
 			}
 		}
 		for(AbstractStatusEffect se : this.getStatusEffects()) {
 			if(se.getTags().contains(ItemTag.PREVENTS_COMBAT_ESCAPE)) {
-				return UtilText.parse(this, "The effect <i>'"+se.getName(this)+"'</i> is preventing [npc.name] from escaping!");
+				return UtilText.parse(this, "Эффект <i>'"+se.getName(this)+"'</i> мешает [npc.name] сбежать!");
 			}
 		}
 		return "";
@@ -20495,9 +20315,9 @@ public abstract class GameCharacter implements XMLSaving {
 	
 	public String getUnableToTeleportDescription() {
 		if(!this.hasSpell(Spell.TELEPORT)) {
-			return UtilText.parse(this, "[npc.Name] [npc.do] not know the teleport spell!");
+			return UtilText.parse(this, "[npc.Name] [npc.do] не знает заклинания телепортации!");
 		}
-		return UtilText.parse(this, "[npc.Name] cannot teleport [npc.her] companions without the '"+SpellUpgrade.TELEPORT_2.getName()+"' spell upgrade!");
+		return UtilText.parse(this, "[npc.Name] не может телепортировать спутников [npc.her] без "+SpellUpgrade.TELEPORT_2.getName()+"' улучшений заклинания!");
 	}
 	
 	public float getRegenerationRate() {
@@ -20572,9 +20392,7 @@ public abstract class GameCharacter implements XMLSaving {
 				
 				StringBuilder sb = new StringBuilder();
 				sb.append(UtilText.parse(this,
-						"<p style='padding-bottom:0; margin-bottom:0;'>"
-							+ "Due to [npc.namePos] [style.boldFetish(masochist fetish)], incoming damage is reduced by 25%, but [npc.she] [npc.verb(take)] [style.boldLust(lust damage)] as [npc.she] [npc.verb(get)] turned on from being hurt!"
-						+ "</p>"));
+						"<p style='padding-bottom:0; margin-bottom:0;'>Из-за [npc.namePos] [style.boldFetish(мазохистский фетиш)], входящий урон снижен на 25%, b, но [npc.she] [npc.verb(take)] [style.boldLust(урон похоти)], так как [npc.she] [npc.verb(get)] возбуждается от боли!</p>"));
 				sb.append(incrementLust(manaLoss, true));
 				return sb.toString();
 				
@@ -20597,9 +20415,7 @@ public abstract class GameCharacter implements XMLSaving {
 
 				StringBuilder sb = new StringBuilder();
 				sb.append(UtilText.parse(attacker,
-						"<p style='padding-bottom:0; margin-bottom:0;'>"
-							+ "Due to [npc.namePos] [style.boldFetish(sadist fetish)], [npc.name] [npc.verb(take)] [style.boldLust(lust damage)] as [npc.she] [npc.verb(see)] [npc.her] enemies being hurt!"
-						+ "</p>"));
+						"<p style='padding-bottom:0; margin-bottom:0;'>Из-за [npc.namePos] [style.boldFetish(садистского фетиша)], [npc.name] [npc.verb(take)] [style.boldLust(урон похоти)] как [npc.she] [npc.verb(see)] [npc.her] враги ранены!</p>"));
 				sb.append(attacker.incrementLust(manaLoss, true));
 				return sb.toString();
 				
@@ -20786,8 +20602,7 @@ public abstract class GameCharacter implements XMLSaving {
 		setLustNoText(lust);
 		
 		return "<p style='text-align:center;'>"
-				+ UtilText.parse(this, "[npc.Name] "+(increment>0?"[style.colourLust(gained)]":"[style.colourMinorBad(lost)]")+" [style.boldDmgLust("+Math.abs(increment)+" lust)], and [npc.is] now feeling"
-						+ " <b style='color:"+this.getLustLevel().getColour().toWebHexString()+";'>"+this.getLustLevel().getName()+"</b>.")
+				+ UtilText.parse(this, "[npc.Name] "+(increment>0?"[style.colourLust(получено)]":"[style.colourMinorBad(потеряно)]")+" [style.boldDmgLust("+Math.abs(increment)+" похоти)], и [npc.is] теперь чувствует <b style='color:"+this.getLustLevel().getColour().toWebHexString()+";'>"+this.getLustLevel().getName()+"</b>.")
 			+ "</p>";
 	}
 
@@ -20807,10 +20622,7 @@ public abstract class GameCharacter implements XMLSaving {
 			sb.append(UtilText.parse(this,
 						"<p>"
 							+ "<b>[npc.Name] [npc.verb(take)]"
-								+ " <b>" + (increment*2) + "</b> <b style='color:" + PresetColour.ATTRIBUTE_HEALTH.toWebHexString() + ";'>"+Attribute.HEALTH_MAXIMUM.getName()+" damage</b>"
-								+ " and <b>"+increment+"</b> <b style='color:" + PresetColour.ATTRIBUTE_MANA.toWebHexString() + ";'>aura damage</b>"
-								+ " as [npc.she] [npc.verb(struggle)] to control [npc.her] burning desire for sex!</b>"
-						+ "</p>"));
+								+ " <b>" + (increment*2) + "</b> <b style='color:" + PresetColour.ATTRIBUTE_HEALTH.toWebHexString() + ";'>"+Attribute.HEALTH_MAXIMUM.getName()+" урон</b> и <b>"+increment+"</b> <b style='color:" + PresetColour.ATTRIBUTE_MANA.toWebHexString() + ";'>урон Аурой</b>, когда [npc.she] [npc.verb(struggle)] пытается обуздать [npc.her] жгучую похоть!</b></p>"));
 			
 			this.setHealth(this.getHealth() - (increment*2));
 			this.setMana(this.getMana() - (increment));
@@ -21018,10 +20830,10 @@ public abstract class GameCharacter implements XMLSaving {
 	
 	public String getInfertilityDescription() {
 		if(this.hasStatusEffect(StatusEffect.MENOPAUSE)) {
-			return  UtilText.parse(this, "[npc.NameHasFull] undergone menopause, so cannot get pregnant!");
+			return  UtilText.parse(this, "[npc.NameHasFull] прошла через менопаузу, поэтому не может забеременеть!");
 			
 		} else if(this.getAttributeValue(Attribute.FERTILITY) <=0 && this.hasTraitActivated(Perk.BARREN)) {
-			return  UtilText.parse(this, "[npc.NameIsFull] barren, so cannot get pregnant!");
+			return  UtilText.parse(this, "[npc.NameIsFull] бесплодна, поэтому не может забеременеть!");
 		}
 		return "";
 	}
@@ -21035,7 +20847,7 @@ public abstract class GameCharacter implements XMLSaving {
 	
 	public String getNonVirileDescription(AbstractAttribute virilityAttribute) {
 		if(this.getAttributeValue(virilityAttribute) <=0 && this.hasTraitActivated(Perk.FIRING_BLANKS)) {
-			return  UtilText.parse(this, "[npc.NameIsFull] sterile, so cannot get anyone pregnant!");
+			return  UtilText.parse(this, "[npc.NameIsFull] стерильна, поэтому не может никого зачать!");
 		}
 		return "";
 	}
@@ -21074,29 +20886,21 @@ public abstract class GameCharacter implements XMLSaving {
 		// Elemental handling:
 		if(this.isElemental()) {
 			return PregnancyDescriptor.NO_CHANCE.getDescriptor(this, partner, directSexInsemination)
-					+"<p style='text-align:center;'>"
-						+ "[style.italicsTerrible(Elementals cannot get pregnant!)]"
-					+ "</p>";
+					+"<p style='text-align:center;'>[style.italicsTerrible(Элементалы не могут забеременеть!)]</p>";
 		}
 		if(partnerBody.getRace()==Race.ELEMENTAL) {
 			return PregnancyDescriptor.NO_CHANCE.getDescriptor(this, partner, directSexInsemination)
-					+"<p style='text-align:center;'>"
-						+ "[style.italicsTerrible(Elementals cannot impregnate anyone!)]"
-					+ "</p>";
+					+"<p style='text-align:center;'>[style.italicsTerrible(Элементалы не могут никого оплодотворить!)]</p>";
 		}
 		
 		// Doll handling:
 		if(this.hasPerkAnywhereInTree(Perk.DOLL_PHYSICAL_2)) {
 			return PregnancyDescriptor.NO_CHANCE.getDescriptor(this, partner, directSexInsemination)
-					+"<p style='text-align:center;'>"
-						+ "[style.italicsTerrible(Dolls cannot get pregnant!)]"
-					+ "</p>";
+					+"<p style='text-align:center;'>[style.italicsTerrible(Куклы не могут забеременеть!)]</p>";
 		}
 		if(partnerBody.isDoll()) {
 			return PregnancyDescriptor.NO_CHANCE.getDescriptor(this, partner, directSexInsemination)
-					+"<p style='text-align:center;'>"
-						+ "[style.italicsTerrible(Dolls cannot impregnate anyone!)]"
-					+ "</p>";
+					+"<p style='text-align:center;'>[style.italicsTerrible(Куклы не могут никого оплодотворить!)]</p>";
 		}
 
 //		// Feral handling:
@@ -21314,7 +21118,7 @@ public abstract class GameCharacter implements XMLSaving {
 							npc.setConceptionDate(birthedLitter.getConceptionDate());
 							npc.setBirthday(LocalDateTime.of(Main.game.getDateNow().getYear(), Main.game.getDateNow().getMonth(), Main.game.getDateNow().getDayOfMonth(), Main.game.getDateNow().getHour(), Main.game.getDateNow().getMinute()));
 						} catch(Exception e) {
-							Util.logGetNpcByIdError("endPregnancy() 1", id);
+							Util.logGetNpcByIdError("завершитьБеременность() 1", id);
 						}
 						
 					} else {
@@ -21324,7 +21128,7 @@ public abstract class GameCharacter implements XMLSaving {
 							os.setBorn(true);
 							os.setBirthday(LocalDateTime.of(Main.game.getDateNow().getYear(), Main.game.getDateNow().getMonth(), Main.game.getDateNow().getDayOfMonth(), Main.game.getDateNow().getHour(), Main.game.getDateNow().getMinute()));
 						} catch(Exception e) {
-							Util.logGetNpcByIdError("endPregnancy() 2", id);
+							Util.logGetNpcByIdError("завершитьБеременность() 2", id);
 						}
 					}
 				}
@@ -22106,18 +21910,18 @@ public abstract class GameCharacter implements XMLSaving {
 					if(orifice.isInternalOrifice()) {
 						if(this.getTotalFluidInArea(orifice)>0) {
 							washingSB.append(formatWashingArea(false,
-									"[npc.Name] [npc.verb(wash)] as much of the cum out of [npc.her] "+orifice.getName(this)+" as [npc.she] can, but there's so much in there that [npc.sheIs] unable to fully clean it all out!"));
+									"[npc.Name] [npc.verb(wash)] столько спермы из [npc.her] "+orifice.getName(this)+" сколько может [npc.she], но там так много, что [npc.sheIs] не в силах вычистить всё до конца!"));
 						} else {
 							washingSB.append(formatWashingArea(true,
-									"[npc.Name] [npc.verb(wash)] all of the cum out of [npc.her] "+orifice.getName(this)+"."));
+									"[npc.Name] [npc.verb(wash)] всю сперму из [npc.her] "+orifice.getName(this)+"."));
 						}
 					} else {
 						if(this.getTotalFluidInArea(orifice)>0) {
 							washingSB.append(formatWashingArea(false,
-									"[npc.Name] [npc.verb(wash)] as much of the cum off of [npc.her] "+orifice.getName(this)+" as [npc.she] can, but there's just so much that [npc.sheIs] unable to fully clean it all off!"));
+									"[npc.Name] [npc.verb(wash)] столько спермы с [npc.her] "+orifice.getName(this)+" сколько может [npc.she], но её так много, что [npc.sheIs] не в силах полностью её стереть!"));
 						} else {
 							washingSB.append(formatWashingArea(true,
-									"[npc.Name] [npc.verb(wash)] all of the cum off of [npc.her] "+orifice.getName(this)+"."));
+									"[npc.Name] [npc.verb(wash)] всю сперму с [npc.her] "+orifice.getName(this)+"."));
 						}
 					}
 				}
@@ -22126,7 +21930,7 @@ public abstract class GameCharacter implements XMLSaving {
 		
 		if(washingSB.length()==0) {
 			washingSB.append(formatWashingArea(true,
-					"[npc.NamePos] body is now clean!"));
+					"тело [npc.NamePos] теперь чистое!"));
 		}
 		
 		return UtilText.parse(this, washingSB.toString());
@@ -22533,28 +22337,28 @@ public abstract class GameCharacter implements XMLSaving {
 	 */
 	public String getDescriptionSelfImmuneToDarkness() {
 		if(this.getBodyMaterial()==BodyMaterial.FIRE) {
-			return UtilText.parse(this, "thanks to the fact that [npc.her] body is made out of fire, and is therefore giving off a significant amount of light");
+			return UtilText.parse(this, "благодаря тому, что тело [npc.her] состоит из огня и, следовательно, излучает много света");
 		}
 		for(BodyPartInterface bpi : this.getAllBodyParts()) {
 			if(bpi.getType().getTags().contains(BodyPartTag.NIGHT_VISION)) {
-				return UtilText.parse(this, "thanks to the fact that [npc.her] "+bpi.getType().getRace().getName(true)+" "+bpi.getName(this)+" "+(bpi.getType().isDefaultPlural(this)?"grant":"grants")+" [npc.herHim] excellent night vision");
+				return UtilText.parse(this, "благодаря тому, что [npc.her] "+bpi.getType().getRace().getName(true)+" "+bpi.getName(this)+" "+(bpi.getType().isDefaultPlural(this)?"дает":"дает")+" [npc.herHim] отличное ночное зрение");
 			}
 			if(bpi.getType().getTags().contains(BodyPartTag.ECHO_LOCATION)) {
-				return UtilText.parse(this, "thanks to the echo-location ability which [npc.her] "+bpi.getType().getRace().getName(false)+" "+bpi.getName(this)+" grant [npc.herHim]");
+				return UtilText.parse(this, "благодаря способности к эхолокации, которая [npc.her] "+bpi.getType().getRace().getName(false)+" "+bpi.getName(this)+" дает [npc.herHim]");
 			}
 			if(bpi.getType().getTags().contains(BodyPartTag.THERMAL_VISION)) {
-				return UtilText.parse(this, "thanks to the fact that [npc.her] "+bpi.getType().getRace().getName(true)+" "+bpi.getName(this)+" "+(bpi.getType().isDefaultPlural(this)?"grant":"grants")+" [npc.herHim] thermal vision");
+				return UtilText.parse(this, "благодаря тому, что [npc.her] "+bpi.getType().getRace().getName(true)+" "+bpi.getName(this)+" "+(bpi.getType().isDefaultPlural(this)?"дает":"дает")+" [npc.herHim] тепловое зрение");
 			}
 		}
 		for(AbstractStatusEffect se : this.getStatusEffects()) {
 			if(se.getTags().contains(ItemTag.NIGHT_VISION_SELF) || se.getTags().contains(ItemTag.NIGHT_VISION_AREA)) {
-				return UtilText.parse(this, "thanks to the <i>'"+se.getName(this)+"'</i> effect that [npc.sheIsFull] currently experiencing");
+				return UtilText.parse(this, "благодаря эффекту <i>"+se.getName(this)+"эффекту </i>, который [npc.sheIsFull] испытывает в данный момент");
 			}
 		}
 		for(AbstractClothing clothing : this.getClothingCurrentlyEquipped()) {
 			if(clothing.getClothingType().getItemTags(clothing.getSlotEquippedTo()).contains(ItemTag.NIGHT_VISION_SELF)
 					|| clothing.getClothingType().getItemTags(clothing.getSlotEquippedTo()).contains(ItemTag.NIGHT_VISION_AREA)) {
-				return UtilText.parse(this, "thanks to the "+clothing.getName()+" [npc.sheIsFull] wearing");
+				return UtilText.parse(this, "благодаря "+clothing.getName()+" [npc.sheIsFull], носящему");
 			}
 		}
 		for(int i=0; i<Arm.MAXIMUM_ROWS; i++) {
@@ -22562,17 +22366,17 @@ public abstract class GameCharacter implements XMLSaving {
 			if(weapon!=null
 					&& (weapon.getWeaponType().getItemTags().contains(ItemTag.NIGHT_VISION_SELF)
 							|| weapon.getWeaponType().getItemTags().contains(ItemTag.NIGHT_VISION_AREA))) {
-				return UtilText.parse(this, "thanks to the "+weapon.getName()+" [npc.sheHasFull] equipped");
+				return UtilText.parse(this, "благодаря "+weapon.getName()+" [npc.sheHasFull], экипировавшему");
 			}
 			weapon = this.getOffhandWeapon(i);
 			if(weapon!=null
 					&& (weapon.getWeaponType().getItemTags().contains(ItemTag.NIGHT_VISION_SELF)
 							|| weapon.getWeaponType().getItemTags().contains(ItemTag.NIGHT_VISION_AREA))) {
-				return UtilText.parse(this, "thanks to the "+weapon.getName()+" [npc.sheHasFull] equipped");
+				return UtilText.parse(this, "благодаря "+weapon.getName()+" [npc.sheHasFull], экипировавшему");
 			}
 		}
 		if(this.isSpellSchoolSpecialAbilityUnlocked(SpellSchool.FIRE)) {
-			return UtilText.parse(this, "thanks to the fact that [npc.she] [npc.has] mastered the arcane school of fire, and [npc.is] therefore able to indefinitely maintain an illuminating flame");
+			return UtilText.parse(this, "благодаря тому, что [npc.she] [npc.has] освоил(а) школу Арканы огня, и [npc.is] поэтому может бесконечно поддерживать освещающее пламя");
 		}
 		return null;
 	}
@@ -22588,27 +22392,27 @@ public abstract class GameCharacter implements XMLSaving {
 	 */
 	public String getDescriptionProvidingAreaImmunityToDarkness() {
 		if(this.getBodyMaterial()==BodyMaterial.FIRE) {
-			return UtilText.parse(this, "thanks to the fact that [npc.namePos] body is made out of fire, and is therefore giving off a significant amount of light");
+			return UtilText.parse(this, "благодаря тому, что тело [npc.namePos] состоит из огня и поэтому излучает значительное количество света");
 		}
 		for(AbstractStatusEffect se : this.getStatusEffects()) {
 			if(se.getTags().contains(ItemTag.NIGHT_VISION_AREA)) {
-				return UtilText.parse(this, "thanks to the <i>'"+se.getName(this)+"'</i> effect that [npc.nameIsFull] currently experiencing");
+				return UtilText.parse(this, "благодаря эффекту <i>"+se.getName(this)+"эффект '</i>', который [npc.nameIsFull] испытывает в данный момент");
 			}
 		}
 		for(int i=0; i<Arm.MAXIMUM_ROWS; i++) {
 			AbstractWeapon weapon = this.getMainWeapon(i);
 			if(weapon!=null
 					&& weapon.getWeaponType().getItemTags().contains(ItemTag.NIGHT_VISION_AREA)) {
-				return UtilText.parse(this, "thanks to the "+weapon.getName()+" which [npc.name] [npc.has] equipped");
+				return UtilText.parse(this, "благодаря "+weapon.getName()+" какой [npc.name] [npc.has] экипирован");
 			}
 			weapon = this.getOffhandWeapon(i);
 			if(weapon!=null
 					&& weapon.getWeaponType().getItemTags().contains(ItemTag.NIGHT_VISION_AREA)) {
-				return UtilText.parse(this, "thanks to the "+weapon.getName()+" which [npc.name] [npc.has] equipped");
+				return UtilText.parse(this, "благодаря "+weapon.getName()+" какой [npc.name] [npc.has] экипирован");
 			}
 		}
 		if(this.isSpellSchoolSpecialAbilityUnlocked(SpellSchool.FIRE)) {
-			return UtilText.parse(this, "thanks to the fact that [npc.name] [npc.has] mastered the arcane school of fire, and [npc.is] therefore able to indefinitely maintain an illuminating flame");
+			return UtilText.parse(this, "благодаря тому, что [npc.name] [npc.has] освоил(а) школу арканы огня, и [npc.is] поэтому может бесконечно поддерживать освещающее пламя");
 		}
 		return null;
 	}
@@ -22718,18 +22522,12 @@ public abstract class GameCharacter implements XMLSaving {
 		if(this.getLocationPlace().isItemsDisappear()) {
 			return UtilText.parse(this,
 				"<p style='text-align:center;'>"
-					+ "[npc.Name] [npc.verb(drop)] [npc.her] " + (count>1?count+" "+item.getNamePlural():item.getName()) + " on the floor."
-					+ "<br/>"
-					+ "<span style='color:" + PresetColour.GENERIC_TERRIBLE.toWebHexString() + ";'>The " + (count>1?count+" "+item.getNamePlural():item.getName()) + " will be lost if you leave this location!</span>"
-				+ "</p>");
+					+ "[npc.Name] [npc.verb(drop)] [npc.her] " + (count>1?count+" "+item.getNamePlural():item.getName()) + " на полу.<br/><span style='color:" + PresetColour.GENERIC_TERRIBLE.toWebHexString() + ";'>Все " + (count>1?count+" "+item.getNamePlural():item.getName()) + " будут потеряны, если вы покинете это место!</span></p>");
 			
 		} else {
 			return UtilText.parse(this,
 				"<p style='text-align:center;'>"
-					+ "[npc.Name] [npc.verb(drop)] [npc.her] " + (count>1?count+" "+item.getNamePlural():item.getName()) + " on the floor."
-					+ "<br/>"
-					+ "<span style='color:" + PresetColour.GENERIC_EXCELLENT.toWebHexString() + ";'>The " + (count>1?count+" "+item.getNamePlural():item.getName()) + " will be stored safely in this location!</span>"
-				+ "</p>");
+					+ "[npc.Name] [npc.verb(drop)] [npc.her] " + (count>1?count+" "+item.getNamePlural():item.getName()) + " на полу.<br/><span style='color:" + PresetColour.GENERIC_EXCELLENT.toWebHexString() + ";'>Все " + (count>1?count+" "+item.getNamePlural():item.getName()) + " будут надежно сохранены в этом месте!</span></p>");
 		}
 	}
 
@@ -22743,19 +22541,19 @@ public abstract class GameCharacter implements XMLSaving {
 			countText="";
 		}
 		
-		String returnString = "<b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>Item added to [npc.namePos] inventory:</b> "
+		String returnString = "<b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>Предмет добавлен в инвентарь [npc.namePos]:</b> "
 				+countText+"<b>" + (count>1?item.getNamePlural():item.getName()) + "</b>";
 		
 		if(item instanceof AbstractItem) {
-			returnString = "<b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>Item added to [npc.namePos] inventory:</b> "
+			returnString = "<b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>Предмет добавлен в инвентарь [npc.namePos]:</b> "
 					+countText+"<b>" + (count>1?((AbstractItem)item).getDisplayNamePlural(true):((AbstractItem)item).getDisplayName(true)) + "</b>";
 			
 		} else if(item instanceof AbstractClothing) {
-			returnString = "<b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>Clothing added to [npc.namePos] inventory:</b> "
+			returnString = "<b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>В инвентарь [npc.namePos] добавлена одежда: </b> "
 					+countText+"<b>" + ((AbstractClothing)item).getDisplayName(true) + "</b>";
 			
 		} else if(item instanceof AbstractWeapon) {
-			returnString = "<b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>Weapon added to [npc.namePos] inventory:</b> "
+			returnString = "<b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>В инвентарь [npc.namePos] добавлено оружие: </b> "
 					+countText+"<b>" + ((AbstractWeapon)item).getDisplayName(true) + "</b>";
 		}
 		
@@ -22763,11 +22561,11 @@ public abstract class GameCharacter implements XMLSaving {
 	}
 
 	public String removedItemFromInventoryText(AbstractItemType item) {
-		return "<p style='text-align:center;'>" + "<span style='color:" + PresetColour.GENERIC_BAD.toWebHexString() + ";'>You have lost '" + item.getName(false) + "'.</span>" + "</p>";
+		return "<p style='text-align:center;'>" + "<span style='color:" + PresetColour.GENERIC_BAD.toWebHexString() + ";'>Вы потеряли '" + item.getName(false) + "'.</span>" + "</p>";
 	}
 
 	public String inventoryFullText() {
-		return "<p style='text-align:center;'>" + "<b style='color:" + PresetColour.GENERIC_BAD.toWebHexString() + ";'>Your inventory is full!</b>" + "</p>";
+		return "<p style='text-align:center;'>" + "<b style='color:" + PresetColour.GENERIC_BAD.toWebHexString() + ";'>Ваш инвентарь полон!</b></p>";
 	}
 	
 	/**
@@ -22851,16 +22649,16 @@ public abstract class GameCharacter implements XMLSaving {
 		
 		if(this.isPlayer()) {
 			if(money>0) {
-				Main.game.addEvent(new EventLogEntry("[style.colourGood(Gained)]", UtilText.formatAsMoney(money)), false);
+				Main.game.addEvent(new EventLogEntry("[style.colourGood(Получено)]", UtilText.formatAsMoney(money)), false);
 			} else {
-				Main.game.addEvent(new EventLogEntry("[style.colourBad(Lost)]", UtilText.formatAsMoney(Math.abs(money))), false);
+				Main.game.addEvent(new EventLogEntry("[style.colourBad(Потеряно)]", UtilText.formatAsMoney(Math.abs(money))), false);
 			}
 		}
 		
 		if(money>0) {
-			return "<p style='text-align:center; padding:0; margin:0;'>"+UtilText.parse(this, "[npc.Name]")+" [style.colourGood(gained)] " + UtilText.formatAsMoney(money) + "!</p>";
+			return "<p style='text-align:center; padding:0; margin:0;'>"+UtilText.parse(this, "[npc.Name]")+" [style.colourGood(получено)] " + UtilText.formatAsMoney(money) + "!</p>";
 		} else {
-			return "<p style='text-align:center; padding:0; margin:0;'>"+UtilText.parse(this, "[npc.Name]")+" [style.colourBad(lost)] " + UtilText.formatAsMoney(moneyLoss) + "!</p>";
+			return "<p style='text-align:center; padding:0; margin:0;'>"+UtilText.parse(this, "[npc.Name]")+" [style.colourBad(потеряно)] " + UtilText.formatAsMoney(moneyLoss) + "!</p>";
 		}
 	}
 	
@@ -22881,16 +22679,14 @@ public abstract class GameCharacter implements XMLSaving {
 		
 		if(this.hasPerkAnywhereInTree(Perk.DOLL_ARCANE_1)) {
 			return UtilText.parse(this,
-						"<p style='text-align:center;'>"
-							+ "[style.colourDisabled(As [npc.sheIsFull] a sex doll, [npc.nameIsFull] unable to absorb essences...)]"
-						+ "</p>");
+						"<p style='text-align:center;'>[style.colourDisabled(Как [npc.sheIsFull] секс-кукла, [npc.nameIsFull] не способна поглощать эссенции...)]</p>");
 		}
 		
 		String additional = "";
 		if(withGainModifiers && increment>0) {
 			if(this.hasStatusEffect(StatusEffect.WEATHER_STORM) || this.hasStatusEffect(StatusEffect.WEATHER_STORM_VULNERABLE)) {
 				increment *= 2;
-				additional = "<br/>Essence gain was [style.boldExcellent(doubled)] due to the ongoing arcane storm!";
+				additional = "<br/>Прирост эссенции был [style.boldExcellent(удвоен)] из-за бушующего арканного шторма!";
 			}
 		}
 		
@@ -22898,23 +22694,21 @@ public abstract class GameCharacter implements XMLSaving {
 		
 		if(increment>0) {
 			if(Main.game.isStarted() && this.isPlayer()) {
-				Main.game.addEvent(new EventLogEntry("[style.colourMinorGood(Gained)]", increment+" <span style='color:"+PresetColour.GENERIC_ARCANE.toWebHexString()+";'>arcane essence"+(increment>1?"s":"")+"</span>"),
+				Main.game.addEvent(new EventLogEntry("[style.colourMinorGood(Получено)]", increment+" <span style='color:"+PresetColour.GENERIC_ARCANE.toWebHexString()+";'>арканная эссенция"+(increment>1?"s":"")+"</span>"),
 						false);
 			}
 			return UtilText.parse(this,
-					"<div style='text-align:center; padding:0; margin:0;'>"
-						+ "[npc.Name] [style.colourGood(gained)] "+UtilText.formatAsEssences(increment, "b", false)+" <b style='color:"+PresetColour.GENERIC_ARCANE.toWebHexString()+";'>arcane essence"+(increment>1?"s":"")+"</b>!"
+					"<div style='text-align:center; padding:0; margin:0;'>[npc.Name] [style.colourGood(получено)] "+UtilText.formatAsEssences(increment, "b", false)+" <b style='color:"+PresetColour.GENERIC_ARCANE.toWebHexString()+";'>арканная эссенция"+(increment>1?"s":"")+"</b>!"
 						+ additional
 					+"</div>");
 			
 		} else {
 			if(Main.game.isStarted() && this.isPlayer()) {
-				Main.game.addEvent(new EventLogEntry("[style.colourMinorBad(Spent)]", Math.abs(increment)+" <span style='color:"+PresetColour.GENERIC_ARCANE.toWebHexString()+";'>arcane essence"+(increment<-1?"s":"")+"</span>"),
+				Main.game.addEvent(new EventLogEntry("[style.colourMinorBad(Потрачено)]", Math.abs(increment)+" <span style='color:"+PresetColour.GENERIC_ARCANE.toWebHexString()+";'>арканная эссенция"+(increment<-1?"s":"")+"</span>"),
 						false);
 			}
 			return UtilText.parse(this,
-					"<div style='text-align:center; padding:0; margin:0;'>"
-						+ "[npc.Name] [style.colourBad(lost)] "+UtilText.formatAsEssences(-increment, "b", false)+" <b style='color:"+PresetColour.GENERIC_ARCANE.toWebHexString()+";'>arcane essence"+(increment<-1?"s":"")+"</b>!"
+					"<div style='text-align:center; padding:0; margin:0;'>[npc.Name] [style.colourBad(потеряно)] "+UtilText.formatAsEssences(-increment, "b", false)+" <b style='color:"+PresetColour.GENERIC_ARCANE.toWebHexString()+";'>арканная эссенция"+(increment<-1?"s":"")+"</b>!"
 					+ "</div>");
 		}
 	}
@@ -23266,7 +23060,7 @@ public abstract class GameCharacter implements XMLSaving {
 				updateInventoryListeners();
 				Main.game.getWorlds().get(getWorldLocation()).getCell(getLocation()).getInventory().removeItem(item, count);
 				if(appendTextToEventLog) {
-					Main.game.addEvent(new EventLogEntry("Gained", "<span style='color:"+item.getRarity().getColour().toWebHexString()+";'>"+item.getName()+"</span>"), false);
+					Main.game.addEvent(new EventLogEntry("Получено", "<span style='color:"+item.getRarity().getColour().toWebHexString()+";'>"+item.getName()+"</span>"), false);
 				}
 				return "<p style='text-align:center;'>"+ addedItemToInventoryText(item, count)+"</p>";
 			} else {
@@ -23277,7 +23071,7 @@ public abstract class GameCharacter implements XMLSaving {
 			if (inventory.addItem(item, count)) {
 				updateInventoryListeners();
 				if(appendTextToEventLog) {
-					Main.game.addEvent(new EventLogEntry("Gained", "<span style='color:"+item.getRarity().getColour().toWebHexString()+";'>"+item.getName()+"</span>"), false);
+					Main.game.addEvent(new EventLogEntry("Получено", "<span style='color:"+item.getRarity().getColour().toWebHexString()+";'>"+item.getName()+"</span>"), false);
 				}
 				return "<p style='text-align:center;'>"+ addedItemToInventoryText(item, count)+"</p>";
 			} else {
@@ -23297,7 +23091,7 @@ public abstract class GameCharacter implements XMLSaving {
 
 	public void removeItem(AbstractItem item, int count, boolean appendTextToEventLog) {
 		if(appendTextToEventLog) {
-			Main.game.addEvent(new EventLogEntry("Lost", count+"x <span style='color:"+item.getRarity().getColour().toWebHexString()+";'>"+item.getName()+"</span>"), false);
+			Main.game.addEvent(new EventLogEntry("Потеряно", count+"x <span style='color:"+item.getRarity().getColour().toWebHexString()+";'>"+item.getName()+"</span>"), false);
 		}
 		inventory.removeItem(item, count);
 		updateInventoryListeners();
@@ -23336,7 +23130,7 @@ public abstract class GameCharacter implements XMLSaving {
 	 */
 	public boolean removeItemByType(AbstractItemType item, int count, boolean appendTextToEventLog) {
 		if(appendTextToEventLog) {
-			Main.game.addEvent(new EventLogEntry("Lost", count+"x <span style='color:"+item.getRarity().getColour().toWebHexString()+";'>"+item.getName(false)+"</span>"), false);
+			Main.game.addEvent(new EventLogEntry("Потеряно", count+"x <span style='color:"+item.getRarity().getColour().toWebHexString()+";'>"+item.getName(false)+"</span>"), false);
 		}
 		
 		boolean removed = inventory.removeItemByType(item, count);
@@ -23357,7 +23151,7 @@ public abstract class GameCharacter implements XMLSaving {
 	public String dropItem(AbstractItem item, int count, boolean appendTextToEventLog) {
 		if(inventory.dropItem(item, count, Main.game.getWorlds().get(this.worldLocation), location)) {
 			if(appendTextToEventLog) {
-				Main.game.addEvent(new EventLogEntry("Dropped", count+"x <span style='color:"+item.getRarity().getColour().toWebHexString()+";'>"+item.getName()+"</span>"), false);
+				Main.game.addEvent(new EventLogEntry("Выброшено", count+"x <span style='color:"+item.getRarity().getColour().toWebHexString()+";'>"+item.getName()+"</span>"), false);
 			}
 			updateInventoryListeners();
 			return droppedItemText(item, count);
@@ -23387,8 +23181,8 @@ public abstract class GameCharacter implements XMLSaving {
 
 	public String useItem(AbstractItem item, GameCharacter target, boolean removingFromFloor, boolean onlyReturnEffects, boolean removeItem) {
 		if(ItemType.getAllItems().contains(item.getItemType()) && (isPlayer() || target.isPlayer())) {
-			Main.game.addEvent(new EventLogEntry("Used",
-							"<span style='color:"+item.getRarity().getColour().toWebHexString()+";'>"+item.getName()+"</span>"+(target==null || target.equals(this)?"":UtilText.parse(target, " on [npc.name]"))),
+			Main.game.addEvent(new EventLogEntry("Использовано",
+							"<span style='color:"+item.getRarity().getColour().toWebHexString()+";'>"+item.getName()+"</span>"+(target==null || target.equals(this)?"":UtilText.parse(target, " на [npc.name]"))),
 					false);
 			
 			if(Main.getProperties().addItemDiscovered(item.getItemType())) {
@@ -23441,7 +23235,7 @@ public abstract class GameCharacter implements XMLSaving {
 				Main.game.getWorlds().get(getWorldLocation()).getCell(getLocation()).getInventory().removeWeapon(weapon, count);
 			}
 			if(appendTextToEventLog) {
-				Main.game.addEvent(new EventLogEntry("Gained", "<span style='color:"+weapon.getRarity().getColour().toWebHexString()+";'>"+weapon.getName()+"</span>"), false);
+				Main.game.addEvent(new EventLogEntry("Получено", "<span style='color:"+weapon.getRarity().getColour().toWebHexString()+";'>"+weapon.getName()+"</span>"), false);
 			}
 			return "<p style='text-align:center;'>" + addedItemToInventoryText(weapon, count)+"</p>";
 			
@@ -23450,7 +23244,7 @@ public abstract class GameCharacter implements XMLSaving {
 				Main.game.getWorlds().get(getWorldLocation()).getCell(getLocation()).getInventory().addWeapon(weapon, count);
 			}
 			if(appendTextToEventLog) {
-				Main.game.addEvent(new EventLogEntry("Gained", "<span style='color:"+weapon.getRarity().getColour().toWebHexString()+";'>"+weapon.getName()+"</span>"), false);
+				Main.game.addEvent(new EventLogEntry("Получено", "<span style='color:"+weapon.getRarity().getColour().toWebHexString()+";'>"+weapon.getName()+"</span>"), false);
 			}
 			return inventoryFullText() + "<br/>" + droppedItemText(weapon, count);
 		}
@@ -23622,7 +23416,7 @@ public abstract class GameCharacter implements XMLSaving {
 		}
 		
 		if(appendTextToEventLog && weaponRemoved) {
-			Main.game.addEvent(new EventLogEntry("[style.colourMinorBad(Lost)]",
+			Main.game.addEvent(new EventLogEntry("[style.colourMinorBad(Потеряно)]",
 					"<span style='color:"+weaponType.getRarity().getColour().toWebHexString()+";'>"+weaponType.getName()+"</span>"),
 					false);
 		}
@@ -23633,7 +23427,7 @@ public abstract class GameCharacter implements XMLSaving {
 	public String unequipWeapon(InventorySlot slot, AbstractWeapon weapon, boolean dropToFloor, boolean appendTextToEventLog) {
 		if(weapon==null) {
 			System.err.println("Attempted to unequip null weapon! "+UtilText.parse(this, "[npc.Name]"));
-			return "[style.italicsBad(Attempted to unequip null weapon!)]";
+			return "[style.italicsBad(Попытка снять пустое оружие!)]";
 		}
 		
 		AbstractWeapon w = null;
@@ -23679,7 +23473,7 @@ public abstract class GameCharacter implements XMLSaving {
 		}
 		
 		System.err.println("Attempted to unequip weapon that wasn't equipped! "+UtilText.parse(this, "[npc.Name]")+", "+weapon.getName());
-		return "[style.italicsBad(Attempted to unequip weapon that wasn't equipped!)]";
+		return "[style.italicsBad(Попытка снять неодетую вещь!)]";
 	}
 
 	public void unequipWeaponIntoVoid(InventorySlot slot, AbstractWeapon weapon, boolean includeUniqueWeapons) {
@@ -23745,7 +23539,7 @@ public abstract class GameCharacter implements XMLSaving {
 	public String dropWeapon(AbstractWeapon weapon, int count, boolean appendTextToEventLog) {
 		if (inventory.dropWeapon(weapon, count, Main.game.getWorlds().get(this.worldLocation), location)) {
 			if(appendTextToEventLog) {
-				Main.game.addEvent(new EventLogEntry("Dropped", count+"x <span style='color:"+weapon.getRarity().getColour().toWebHexString()+";'>"+weapon.getName()+"</span>"), false);
+				Main.game.addEvent(new EventLogEntry("Выброшено", count+"x <span style='color:"+weapon.getRarity().getColour().toWebHexString()+";'>"+weapon.getName()+"</span>"), false);
 			}
 			updateInventoryListeners();
 			return droppedItemText(weapon, count);
@@ -23871,7 +23665,7 @@ public abstract class GameCharacter implements XMLSaving {
 		}
 
 		if(appendTextToEventLog) {
-			Main.game.addEvent(new EventLogEntry("Equipped", "<span style='color:"+weapon.getRarity().getColour().toWebHexString()+";'>"+weapon.getName()+"</span>"), false);
+			Main.game.addEvent(new EventLogEntry("Надето", "<span style='color:"+weapon.getRarity().getColour().toWebHexString()+";'>"+weapon.getName()+"</span>"), false);
 		}
 		inventory.equipMainWeapon(armRowToEquipTo, weapon);
 		updateInventoryListeners();
@@ -23902,7 +23696,7 @@ public abstract class GameCharacter implements XMLSaving {
 			}
 
 			if(appendTextToEventLog) {
-				Main.game.addEvent(new EventLogEntry("Unequipped", "<span style='color:"+getMainWeapon(armRow).getRarity().getColour().toWebHexString()+";'>"+getMainWeapon(armRow).getName()+"</span>"), false);
+				Main.game.addEvent(new EventLogEntry("Снято", "<span style='color:"+getMainWeapon(armRow).getRarity().getColour().toWebHexString()+";'>"+getMainWeapon(armRow).getName()+"</span>"), false);
 			}
 			inventory.unequipMainWeapon(armRow);
 			
@@ -24039,7 +23833,7 @@ public abstract class GameCharacter implements XMLSaving {
 		}
 
 		if(appendTextToEventLog) {
-			Main.game.addEvent(new EventLogEntry("Equipped", "<span style='color:"+weapon.getRarity().getColour().toWebHexString()+";'>"+weapon.getName()+"</span>"), false);
+			Main.game.addEvent(new EventLogEntry("Надето", "<span style='color:"+weapon.getRarity().getColour().toWebHexString()+";'>"+weapon.getName()+"</span>"), false);
 		}
 		inventory.equipOffhandWeapon(armRowToEquipTo, weapon);
 		
@@ -24069,7 +23863,7 @@ public abstract class GameCharacter implements XMLSaving {
 			}
 
 			if(appendTextToEventLog) {
-				Main.game.addEvent(new EventLogEntry("Unequipped", "<span style='color:"+getOffhandWeapon(armRow).getRarity().getColour().toWebHexString()+";'>"+getOffhandWeapon(armRow).getName()+"</span>"), false);
+				Main.game.addEvent(new EventLogEntry("Снято", "<span style='color:"+getOffhandWeapon(armRow).getRarity().getColour().toWebHexString()+";'>"+getOffhandWeapon(armRow).getName()+"</span>"), false);
 			}
 			inventory.unequipOffhandWeapon(armRow);
 			
@@ -24133,8 +23927,8 @@ public abstract class GameCharacter implements XMLSaving {
 		return "<p style='text-align:center;'>"
 					+ UtilText.parse(this,
 							includeNotEquippedClothing
-								?"[style.italicsExcellent(All of the clothes in [npc.namePos] inventory have been cleaned!)]"
-								:"[style.italicsGood([npc.NamePos] equipped clothes have been cleaned!)]")
+								?"[style.italicsExcellent(Вся одежда в инвентаре [npc.namePos] очищена!)]"
+								:"[style.italicsGood(Надетая одежда [npc.NamePos] очищена!)]")
 				+ "</p>";
 	}
 
@@ -24154,7 +23948,7 @@ public abstract class GameCharacter implements XMLSaving {
 				Main.game.getWorlds().get(getWorldLocation()).getCell(getLocation()).getInventory().removeClothing(clothing, count);
 			}
 			if(appendTextToEventLog) {
-				Main.game.addEvent(new EventLogEntry("Gained", "<span style='color:"+clothing.getRarity().getColour().toWebHexString()+";'>"+clothing.getName()+"</span>"), false);
+				Main.game.addEvent(new EventLogEntry("Получено", "<span style='color:"+clothing.getRarity().getColour().toWebHexString()+";'>"+clothing.getName()+"</span>"), false);
 			}
 			return "<p style='text-align:center;'>" + addedItemToInventoryText(clothing, count)+"</p>";
 			
@@ -24163,7 +23957,7 @@ public abstract class GameCharacter implements XMLSaving {
 				Main.game.getWorlds().get(getWorldLocation()).getCell(getLocation()).getInventory().addClothing(clothing, count);
 			}
 			if(appendTextToEventLog) {
-				Main.game.addEvent(new EventLogEntry("Gained", "<span style='color:"+clothing.getRarity().getColour().toWebHexString()+";'>"+clothing.getName()+"</span>"), false);
+				Main.game.addEvent(new EventLogEntry("Получено", "<span style='color:"+clothing.getRarity().getColour().toWebHexString()+";'>"+clothing.getName()+"</span>"), false);
 			}
 			return inventoryFullText() + droppedItemText(clothing, count);
 		}
@@ -24195,7 +23989,7 @@ public abstract class GameCharacter implements XMLSaving {
 		if (inventory.dropClothing(clothing, count, Main.game.getWorlds().get(this.worldLocation),location)) {
 			updateInventoryListeners();
 			if(appendTextToEventLog) {
-				Main.game.addEvent(new EventLogEntry("Dropped", count+"x <span style='color:"+clothing.getRarity().getColour().toWebHexString()+";'>"+clothing.getName()+"</span>"), false);
+				Main.game.addEvent(new EventLogEntry("Выброшено", count+"x <span style='color:"+clothing.getRarity().getColour().toWebHexString()+";'>"+clothing.getName()+"</span>"), false);
 			}
 
 			return droppedItemText(clothing, count);
@@ -24356,7 +24150,7 @@ public abstract class GameCharacter implements XMLSaving {
 						foundAny = true;
 						if(!found) {
 							found= true;
-							sb.append(UtilText.parse(target, "Clothing worn by <b style='color:"+target.getFemininity().getColour().toWebHexString()+";'>[npc.name]</b>:"));
+							sb.append(UtilText.parse(target, "Одежда, которую носит <b style='color:"+target.getFemininity().getColour().toWebHexString()+";'>[npc.name]</b>:"));
 						}
 						sb.append("<br/>- "+target.getClothingInSlot(slot).getDisplayName(true));
 					}
@@ -24368,7 +24162,7 @@ public abstract class GameCharacter implements XMLSaving {
 		}
 		
 		if(!foundAny) {
-			sb.append("[style.italicsDisabled(You don't own any clothing keys...)]");
+			sb.append("[style.italicsDisabled(У вас нет ключей от одежды...)]");
 		}
 		
 		return sb.toString();
@@ -24376,7 +24170,7 @@ public abstract class GameCharacter implements XMLSaving {
 	
 	private void applyEquipClothingEffects(AbstractClothing newClothing, InventorySlot slot, GameCharacter characterClothingEquipper, boolean appendTextToEventLog) {
 		if(appendTextToEventLog) {
-			Main.game.addEvent(new EventLogEntry("Equipped", newClothing.getDisplayName(true)), false);
+			Main.game.addEvent(new EventLogEntry("Надето", newClothing.getDisplayName(true)), false);
 		}
 		
 		if (characterClothingEquipper!=null) { // If no equipper do not reset the seal status
@@ -24514,7 +24308,7 @@ public abstract class GameCharacter implements XMLSaving {
 	
 	private void applyUnequipClothingEffects(AbstractClothing clothing, InventorySlot slot, boolean appendTextToEventLog) {
 		if(appendTextToEventLog) {
-			Main.game.addEvent(new EventLogEntry("Unequipped", clothing.getDisplayName(true)), false);
+			Main.game.addEvent(new EventLogEntry("Снято", clothing.getDisplayName(true)), false);
 		}
 		
 		// Making sure the key is no longer in anyone's possession:
@@ -25851,8 +25645,8 @@ public abstract class GameCharacter implements XMLSaving {
 					// Exposed penis and vagina:
 					return new GenderAppearance(
 							isPlayer()
-							?"Due to the fact that both your [pc.vagina] and [pc.penis] are exposed, as well as the fact that you have [pc.breastSize] breasts, everyone can tell that you're [pc.a_gender("+colouredGender+")] on first glance."
-							:"Due to the fact that both [npc.her] [npc.vagina] and [npc.penis] are exposed, as well as the fact that [npc.sheHasFull] [npc.breastSize] breasts, everyone can tell that [npc.sheIs] [npc.a_gender("+colouredGender+")] on first glance.",
+							?"Из-за того, что и твои [pc.vagina], и [pc.penis] выставлены напоказ, а также из-за того, что у тебя [pc.breastSize] груди, все сразу видят, что ты [pc.a_gender("+colouredGender+")] на первый взгляд."
+							:"В силу того, что и [npc.her] [npc.vagina], и [npc.penis] выставлены напоказ, а также из-за того, что [npc.sheHasFull] [npc.breastSize] груди, каждый может понять, что [npc.sheIs] [npc.a_gender("+colouredGender+")] на первый взгляд.",
 							Gender.F_P_V_B_FUTANARI);
 						
 				} else if(visibleVagina) {
@@ -25860,15 +25654,15 @@ public abstract class GameCharacter implements XMLSaving {
 					if(isPenisBulgeVisible()) {
 						return new GenderAppearance(
 								isPlayer()
-								?"The [pc.cockSize] bulge between your legs, combined with your exposed [pc.vagina] and [pc.breastSize] breasts, reveals to everyone that you're [pc.a_gender("+colouredGender+")]."
-								:"The [npc.cockSize] bulge between [npc.her] legs, combined with [npc.her] exposed [npc.vagina] and [npc.breastSize] breasts, reveals to everyone that [npc.sheIs] [npc.a_gender("+colouredGender+")].",
+								?"[pc.cockSize] бугор между ног в сочетании с обнаженными [pc.vagina] и [pc.breastSize] грудями открывает каждому, что ты [pc.a_gender("+colouredGender+")]."
+								:"[npc.cockSize] выпуклость между ногами [npc.her] в сочетании с обнаженными [npc.her] [npc.vagina] и [npc.breastSize] грудями открывает каждому, что [npc.sheIs] [npc.a_gender("+colouredGender+")].",
 								Gender.F_P_V_B_FUTANARI);
 						
 					} else if (isTesticleBulgeVisible()) {
 						return new GenderAppearance(
 								isPlayer()
-								?"The [pc.ballSize] bulge of your [pc.balls] between your legs, combined with your exposed [pc.vagina] and [pc.breastSize] breasts, reveals to everyone that you're [pc.a_gender("+colouredGender+")]."
-								:"The [npc.ballSize] bulge between [npc.her] legs, combined with [npc.her] exposed [npc.vagina] and [npc.breastSize] breasts, reveals to everyone that [npc.sheIs] [npc.a_gender("+colouredGender+")].",
+								?"Выпирающий [pc.ballSize] между ног в сочетании с обнаженными [pc.vagina] и [pc.breastSize] грудями открывает каждому, что вы [pc.a_gender([pc.balls])"+colouredGender+")]."
+								:"[npc.ballSize] выпуклость между ногами [npc.her], вкупе с обнаженными [npc.her] [npc.vagina] и [npc.breastSize] грудями, открывает каждому, что [npc.sheIs] [npc.a_gender("+colouredGender+")].",
 								Gender.F_P_V_B_FUTANARI);
 					}
 					
@@ -25876,16 +25670,16 @@ public abstract class GameCharacter implements XMLSaving {
 						// Assume female, as penis is not visible:
 						return new GenderAppearance(
 								isPlayer()
-								?"Due to your exposed [pc.vagina] and [pc.breastSize] breasts, and the fact that your [pc.penis] remains concealed, everyone assumes that you're [pc.a_appearsAsGender("+colouredGender+")] on first glance."
-								:"Due to [npc.her] exposed [npc.vagina] and [npc.breastSize] breasts, everyone assumes that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")] on first glance.",
+								?"Из-за твоей обнаженной [pc.vagina] и [pc.breastSize] груди, а также того факта, что твои [pc.penis] остаются скрытыми, все полагают, что ты [pc.a_appearsAsGender("+colouredGender+")] на первый взгляд."
+								:"Из-за обнаженных [npc.her] [npc.vagina] и [npc.breastSize] груди все полагают, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")] на первый взгляд.",
 								Gender.F_V_B_FEMALE);
 						
 					} else {
 						// Correctly assume female:
 						return new GenderAppearance(
 								isPlayer()
-								?"Due to your exposed [pc.vagina] and [pc.breastSize] breasts, everyone correctly assumes that you're [pc.a_appearsAsGender("+colouredGender+")] on first glance."
-								:"Due to [npc.her] exposed [npc.vagina] and [npc.breastSize] breasts, everyone assumes that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")] on first glance.",
+								?"Из-за твоих обнаженных [pc.vagina] и [pc.breastSize] груди все справедливо полагают, что ты [pc.a_appearsAsGender("+colouredGender+")] на первый взгляд."
+								:"Из-за обнаженных [npc.her] [npc.vagina] и [npc.breastSize] груди все полагают, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")] на первый взгляд.",
 								Gender.F_V_B_FEMALE);
 					}
 					
@@ -25893,8 +25687,8 @@ public abstract class GameCharacter implements XMLSaving {
 					// Exposed penis:
 					return new GenderAppearance(
 							isPlayer()
-							?"Due to your exposed [pc.penis] and [pc.breastSize] breasts, everyone assumes that you're [pc.a_appearsAsGender("+colouredGender+")] on first glance."
-							:"Due to [npc.her] exposed [npc.penis] and [npc.breastSize] breasts, everyone assumes that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")] on first glance.",
+							?"Из-за твоих обнаженных [pc.penis] и [pc.breastSize] груди все полагают, что ты [pc.a_appearsAsGender("+colouredGender+")] на первый взгляд."
+							:"Из-за обнаженных [npc.her] [npc.penis] и [npc.breastSize] груди все полагают, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")] на первый взгляд.",
 							Gender.F_P_B_SHEMALE);
 					
 				} else {
@@ -25902,15 +25696,15 @@ public abstract class GameCharacter implements XMLSaving {
 					if(isPenisBulgeVisible()) {
 						return new GenderAppearance(
 								isPlayer()
-								?"The [pc.cockSize] bulge between your legs, combined with your feminine appearance and [pc.breastSize] breasts, leads everyone to believe that you're [pc.a_appearsAsGender("+colouredGender+")]."
-								:"The [npc.cockSize] bulge between [npc.her] legs, combined with [npc.her] feminine appearance and [npc.breastSize] breasts, leads everyone to believe that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
+								?"[pc.cockSize] выпуклость между твоих ног в сочетании с женственной внешностью и [pc.breastSize] грудью заставляет всех верить, что ты [pc.a_appearsAsGender("+colouredGender+")]."
+								:"[npc.cockSize] выпуклость между [npc.her] ног в сочетании с [npc.her] женственной внешностью и [npc.breastSize] грудью заставляет всех верить, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
 								Gender.F_P_B_SHEMALE);
 						
 					} else if (isTesticleBulgeVisible()) {
 						return new GenderAppearance(
 								isPlayer()
-								?"The [pc.ballSize] bulge of your [pc.balls] between your legs, combined with your feminine appearance and [pc.breastSize] breasts, leads everyone to believe that you're [pc.a_appearsAsGender("+colouredGender+")]."
-								:"The [npc.ballSize] bulge between [npc.her] legs, combined with [npc.her] feminine appearance and [npc.breastSize] breasts, leads everyone to believe that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
+								?"[pc.ballSize] выпуклость твоих [pc.balls] между ног в сочетании с женственной внешностью и [pc.breastSize] грудью заставляет всех верить, что ты [pc.a_appearsAsGender("+colouredGender+")]."
+								:"[npc.ballSize] выпуклость между [npc.her] ног в сочетании с [npc.her] женственной внешностью и [npc.breastSize] грудью заставляет всех верить, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
 								Gender.F_P_B_SHEMALE);
 					}
 					
@@ -25918,31 +25712,31 @@ public abstract class GameCharacter implements XMLSaving {
 						// Assume female, as penis is not visible:
 						return new GenderAppearance(
 								isPlayer()
-								?"Your [pc.penis] is concealed, so, due to your feminine appearance and [pc.breastSize] breasts, everyone assumes that you're [pc.a_appearsAsGender("+colouredGender+")] on first glance."
-								:"Due to [npc.her] feminine appearance and [npc.breastSize] breasts, everyone assumes that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")] on first glance.",
+								?"Ваш [pc.penis] скрыт, поэтому из-за вашей женственной внешности и [pc.breastSize] груди все полагают, что вы [pc.a_appearsAsGender("+colouredGender+")] на первый взгляд."
+								:"Из-за [npc.her] женственной внешности и [npc.breastSize] груди все полагают, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")] на первый взгляд.",
 								Gender.F_V_B_FEMALE);
 						
 					} else if(hasVagina()) {
 						// Correctly assume female:
 						return new GenderAppearance(
 								isPlayer()
-								?"Your feminine appearance and [pc.breastSize] breasts leads everyone to correctly assume that you're [pc.a_appearsAsGender("+colouredGender+")]."
-								:"Due to [npc.her] feminine appearance and [npc.breastSize] breasts, everyone assumes that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
+								?"Ваша женственная внешность и [pc.breastSize] грудь заставляют всех правильно полагать, что вы [pc.a_appearsAsGender("+colouredGender+")]."
+								:"Из-за [npc.her] женственной внешности и [npc.breastSize] груди все полагают, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
 								Gender.F_V_B_FEMALE);
 						
 					} else {
 						if(isCoverableAreaVisible(CoverableArea.VAGINA) && isCoverableAreaVisible(CoverableArea.PENIS)) {
 							return new GenderAppearance(
 									isPlayer()
-									?"Your genderless mound is exposed, so, due to your feminine appearance and [pc.breastSize] breasts, strangers treat you as [pc.a_appearsAsGender("+colouredGender+")]."
-									:	"Due to [npc.her] genderless mound being exposed, combined with [npc.her] feminine appearance and [npc.breastSize] breasts, everyone can tell that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
+									?"Ваш бесполый холмик обнажен, поэтому из-за вашей женственной внешности и [pc.breastSize] груди незнакомцы относятся к вам как к [pc.a_appearsAsGender("+colouredGender+")]."
+									:	"Из-за того, что [npc.her] безгендерный холмик обнажен, в сочетании с [npc.her] женственной внешностью и [npc.breastSize] грудью, каждый может понять, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
 									Gender.F_B_DOLL);
 							
 						} else {
 							return new GenderAppearance(
 									isPlayer()
-									?"Your genderless mound is concealed, so, due to your feminine appearance and [pc.breastSize] breasts, strangers treat you as [pc.a_appearsAsGender("+colouredGender+")]."
-									:	"Due to [npc.her] feminine appearance and [npc.breastSize] breasts, everyone assumes that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
+									?"Ваш бесполый холмик скрыт, поэтому из-за вашей женственной внешности и [pc.breastSize] груди незнакомцы относятся к вам как к [pc.a_appearsAsGender("+colouredGender+")]."
+									:	"Из-за [npc.her] женственной внешности и [npc.breastSize] груди все полагают, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
 									Gender.F_V_B_FEMALE);
 						}
 					}
@@ -25954,8 +25748,8 @@ public abstract class GameCharacter implements XMLSaving {
 					// Exposed penis and vagina:
 					return new GenderAppearance(
 							isPlayer()
-							?"Due to the fact that both your [pc.vagina] and [pc.penis] are exposed, everyone can tell that you're [pc.a_gender("+colouredGender+")] on first glance."
-							:"Due to the fact that both [npc.her] [npc.vagina] and [npc.penis] are exposed, everyone can tell that [npc.sheIs] [npc.a_gender("+colouredGender+")] on first glance.",
+							?"Из-за того, что и ваш [pc.vagina], и [pc.penis] обнажены, все могут понять, что вы [pc.a_gender("+colouredGender+")] на первый взгляд."
+							:"Из-за того, что и [npc.her] [npc.vagina], и [npc.penis] обнажены, все могут понять, что [npc.sheIs] [npc.a_gender("+colouredGender+")] на первый взгляд.",
 							Gender.F_P_V_FUTANARI);
 						
 				} else if(visibleVagina) {
@@ -25963,15 +25757,15 @@ public abstract class GameCharacter implements XMLSaving {
 					if(isPenisBulgeVisible()) {
 						return new GenderAppearance(
 								isPlayer()
-								?"The [pc.cockSize] bulge between your legs, combined with your exposed [pc.vagina], reveals to everyone that you're [pc.a_gender("+colouredGender+")]."
-								:"The [npc.cockSize] bulge between [npc.her] legs, combined with [npc.her] exposed [npc.vagina], reveals to everyone that [npc.sheIs] [npc.a_gender("+colouredGender+")].",
+								?"[pc.cockSize] выпуклость между твоих ног в сочетании с обнаженным [pc.vagina] открывает всем, что ты [pc.a_gender("+colouredGender+")]."
+								:"[npc.cockSize] выпуклость между ногами [npc.her] в сочетании с обнаженными [npc.her] [npc.vagina] открывает всем, что [npc.sheIs] [npc.a_gender("+colouredGender+")].",
 								Gender.F_P_V_FUTANARI);
 						
 					} else if (isTesticleBulgeVisible()) {
 						return new GenderAppearance(
 								isPlayer()
-								?"The [pc.ballSize] bulge of your [pc.balls] between your legs, combined with your exposed [pc.vagina], reveals to everyone that you're [pc.a_gender("+colouredGender+")]."
-								:"The [npc.ballSize] bulge between [npc.her] legs, combined with [npc.her] exposed [npc.vagina], reveals to everyone that [npc.sheIs] [npc.a_gender("+colouredGender+")].",
+								?"[pc.ballSize] выпуклость твоего [pc.balls] между ног в сочетании с обнаженным [pc.vagina] открывает всем, что ты [pc.a_gender("+colouredGender+")]."
+								:"[npc.ballSize] выпуклость между ногами [npc.her] в сочетании с обнаженными [npc.her] [npc.vagina] открывает всем, что [npc.sheIs] [npc.a_gender("+colouredGender+")].",
 								Gender.F_P_V_FUTANARI);
 					}
 					
@@ -25979,16 +25773,16 @@ public abstract class GameCharacter implements XMLSaving {
 						// Assume female, as penis is not visible:
 						return new GenderAppearance(
 								isPlayer()
-								?"Due to your exposed [pc.vagina], and the fact that your [pc.penis] remains concealed, everyone assumes that you're [pc.a_appearsAsGender("+colouredGender+")] on first glance."
-								:"Due to [npc.her] exposed [npc.vagina], everyone assumes that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")] on first glance.",
+								?"Из-за твоих обнаженных [pc.vagina] и того факта, что твои [pc.penis] остаются скрытыми, все полагают, что ты [pc.a_appearsAsGender("+colouredGender+")] на первый взгляд."
+								:"Из-за обнаженных [npc.her] [npc.vagina] все полагают, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")] на первый взгляд.",
 								Gender.F_V_FEMALE);
 						
 					} else {
 						// Correctly assume female:
 						return new GenderAppearance(
 								isPlayer()
-								?"Due to your exposed [pc.vagina], everyone correctly assumes that you're [pc.a_appearsAsGender("+colouredGender+")] on first glance."
-								:"Due to [npc.her] exposed [npc.vagina], everyone assumes that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")] on first glance.",
+								?"Из-за твоих обнаженных [pc.vagina] все справедливо полагают, что ты [pc.a_appearsAsGender("+colouredGender+")] на первый взгляд."
+								:"Из-за обнаженных [npc.her] [npc.vagina] все полагают, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")] на первый взгляд.",
 								Gender.F_V_FEMALE);
 					}
 					
@@ -25996,8 +25790,8 @@ public abstract class GameCharacter implements XMLSaving {
 					// Exposed penis:
 					return new GenderAppearance(
 							isPlayer()
-							?"Due to your exposed [pc.penis], everyone assumes that you're [pc.a_appearsAsGender("+colouredGender+")] on first glance."
-							:"Due to [npc.her] exposed [npc.penis], everyone assumes that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")] on first glance.",
+							?"Из-за твоих обнаженных [pc.penis] все полагают, что ты [pc.a_appearsAsGender("+colouredGender+")] на первый взгляд."
+							:"Из-за обнаженных [npc.her] [npc.penis] все полагают, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")] на первый взгляд.",
 							Gender.F_P_TRAP);
 					
 				} else {
@@ -26005,15 +25799,15 @@ public abstract class GameCharacter implements XMLSaving {
 					if(isPenisBulgeVisible()) {
 						return new GenderAppearance(
 								isPlayer()
-								?"The [pc.cockSize] bulge between your legs, combined with your feminine appearance, leads everyone to believe that you're [pc.a_appearsAsGender("+colouredGender+")]."
-								:"The [npc.cockSize] bulge between [npc.her] legs, combined with [npc.her] feminine appearance, leads everyone to believe that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
+								?"[pc.cockSize] выпуклость между твоих ног в сочетании с твоей женственной внешностью заставляет всех верить, что ты [pc.a_appearsAsGender("+colouredGender+")]."
+								:"[npc.cockSize] выпуклость между [npc.her] ног в сочетании с [npc.her] женственной внешностью заставляет всех верить, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
 								Gender.F_P_TRAP);
 						
 					} else if (isTesticleBulgeVisible()) {
 						return new GenderAppearance(
 								isPlayer()
-								?"The [pc.ballSize] bulge of your [pc.balls] between your legs, combined with your feminine appearance, leads everyone to believe that you're [pc.a_appearsAsGender("+colouredGender+")]."
-								:"The [npc.ballSize] bulge between [npc.her] legs, combined with [npc.her] feminine appearance, leads everyone to believe that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
+								?"[pc.ballSize] выпуклость твоих [pc.balls] между ног в сочетании с твоей женственной внешностью заставляет всех верить, что ты [pc.a_appearsAsGender("+colouredGender+")]."
+								:"[npc.ballSize] выпуклость между [npc.her] ног в сочетании с [npc.her] женственной внешностью заставляет всех верить, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
 								Gender.F_P_TRAP);
 					}
 					
@@ -26021,31 +25815,31 @@ public abstract class GameCharacter implements XMLSaving {
 						// Assume female, as penis is not visible:
 						return new GenderAppearance(
 								isPlayer()
-								?"Your [pc.penis] is concealed, so, due to your feminine appearance, everyone assumes that you're [pc.a_appearsAsGender("+colouredGender+")] on first glance."
-								:"Due to [npc.her] feminine appearance, everyone assumes that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")] on first glance.",
+								?"Твоя [pc.penis] скрыта, поэтому из-за твоей женственной внешности все полагают, что ты [pc.a_appearsAsGender("+colouredGender+")] на первый взгляд."
+								:"Из-за [npc.her] женственной внешности все полагают, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")] на первый взгляд.",
 								Gender.F_V_FEMALE);
 						
 					} else if(hasVagina()) {
 						// Correctly assume female:
 						return new GenderAppearance(
 								isPlayer()
-								?"Your feminine appearance leads everyone to correctly assume that you're [pc.a_appearsAsGender("+colouredGender+")]."
-								:"Due to [npc.her] feminine appearance, everyone assumes that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
+								?"Твоя женственная внешность заставляет всех правильно полагать, что ты [pc.a_appearsAsGender("+colouredGender+")]."
+								:"Из-за [npc.her] женственной внешности все полагают, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
 								Gender.F_V_FEMALE);
 						
 					} else {
 						if(isCoverableAreaVisible(CoverableArea.VAGINA) && isCoverableAreaVisible(CoverableArea.PENIS)) {
 							return new GenderAppearance(
 									isPlayer()
-									?"Your genderless mound is exposed, so, due to your feminine appearance, strangers treat you as [pc.a_appearsAsGender("+colouredGender+")]."
-									:	"Due to [npc.her] genderless mound being exposed, combined with [npc.her] feminine appearance, everyone can tell that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
+									?"Твоя бесполая выпуклость обнажена, поэтому из-за твоей женственной внешности незнакомцы относятся к тебе как к [pc.a_appearsAsGender("+colouredGender+")]."
+									:	"Из-за того, что [npc.her] бесполая выпуклость обнажена, в сочетании с [npc.her] женственной внешностью, все могут сказать, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
 									Gender.F_DOLL);
 							
 						} else {
 							return new GenderAppearance(
 									isPlayer()
-									?"Your genderless mound is concealed, so, due to your feminine appearance, strangers treat you as [pc.a_appearsAsGender("+colouredGender+")]."
-									:	"Due to [npc.her] feminine appearance, everyone assumes that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
+									?"Твоя бесполая выпуклость скрыта, поэтому из-за твоей женственной внешности незнакомцы принимают тебя за [pc.a_appearsAsGender("+colouredGender+")]."
+									:	"Из-за [npc.her] женственной внешности все полагают, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
 									Gender.F_V_FEMALE);
 						}
 					}
@@ -26059,8 +25853,8 @@ public abstract class GameCharacter implements XMLSaving {
 					// Exposed penis and vagina:
 					return new GenderAppearance(
 							isPlayer()
-							?"Due to the fact that both your [pc.vagina] and [pc.penis] are exposed, as well as the fact that you have [pc.breastSize] breasts, everyone can tell that you're [pc.a_gender("+colouredGender+")] on first glance."
-							:"Due to the fact that both [npc.her] [npc.vagina] and [npc.penis] are exposed, as well as the fact that [npc.sheHasFull] [npc.breastSize] breasts, everyone can tell that [npc.sheIs] [npc.a_gender("+colouredGender+")] on first glance.",
+							?"Из-за того, что и твои [pc.vagina], и [pc.penis] выставлены напоказ, а также из-за того, что у тебя [pc.breastSize] груди, все сразу видят, что ты [pc.a_gender("+colouredGender+")] на первый взгляд."
+							:"В силу того, что и [npc.her] [npc.vagina], и [npc.penis] выставлены напоказ, а также из-за того, что [npc.sheHasFull] [npc.breastSize] груди, каждый может понять, что [npc.sheIs] [npc.a_gender("+colouredGender+")] на первый взгляд.",
 							Gender.N_P_V_B_HERMAPHRODITE);
 						
 				} else if(visibleVagina) {
@@ -26068,15 +25862,15 @@ public abstract class GameCharacter implements XMLSaving {
 					if(isPenisBulgeVisible()) {
 						return new GenderAppearance(
 								isPlayer()
-								?"The [pc.cockSize] bulge between your legs, combined with your exposed [pc.vagina] and [pc.breastSize] breasts, reveals to everyone that you're [pc.a_gender("+colouredGender+")]."
-								:"The [npc.cockSize] bulge between [npc.her] legs, combined with [npc.her] exposed [npc.vagina] and [npc.breastSize] breasts, reveals to everyone that [npc.sheIs] [npc.a_gender("+colouredGender+")].",
+								?"[pc.cockSize] бугор между ног в сочетании с обнаженными [pc.vagina] и [pc.breastSize] грудями открывает каждому, что ты [pc.a_gender("+colouredGender+")]."
+								:"[npc.cockSize] выпуклость между ногами [npc.her] в сочетании с обнаженными [npc.her] [npc.vagina] и [npc.breastSize] грудями открывает каждому, что [npc.sheIs] [npc.a_gender("+colouredGender+")].",
 								Gender.N_P_V_B_HERMAPHRODITE);
 						
 					} else if (isTesticleBulgeVisible()) {
 						return new GenderAppearance(
 								isPlayer()
-								?"The [pc.ballSize] bulge of your [pc.balls] between your legs, combined with your exposed [pc.vagina] and [pc.breastSize] breasts, reveals to everyone that you're [pc.a_gender("+colouredGender+")]."
-								:"The [npc.ballSize] bulge between [npc.her] legs, combined with [npc.her] exposed [npc.vagina] and [npc.breastSize] breasts, reveals to everyone that [npc.sheIs] [npc.a_gender("+colouredGender+")].",
+								?"Выпирающий [pc.ballSize] между ног в сочетании с обнаженными [pc.vagina] и [pc.breastSize] грудями открывает каждому, что вы [pc.a_gender([pc.balls])"+colouredGender+")]."
+								:"[npc.ballSize] выпуклость между ногами [npc.her], вкупе с обнаженными [npc.her] [npc.vagina] и [npc.breastSize] грудями, открывает каждому, что [npc.sheIs] [npc.a_gender("+colouredGender+")].",
 								Gender.N_P_V_B_HERMAPHRODITE);
 					}
 					
@@ -26084,16 +25878,16 @@ public abstract class GameCharacter implements XMLSaving {
 						// Assume female, as penis is not visible:
 						return new GenderAppearance(
 								isPlayer()
-								?"Due to your exposed [pc.vagina] and [pc.breastSize] breasts, and the fact that your [pc.penis] remains concealed, everyone assumes that you're [pc.a_appearsAsGender("+colouredGender+")] on first glance."
-								:"Due to [npc.her] exposed [npc.vagina] and [npc.breastSize] breasts, everyone assumes that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")] on first glance.",
+								?"Из-за твоей обнаженной [pc.vagina] и [pc.breastSize] груди, а также того факта, что твои [pc.penis] остаются скрытыми, все полагают, что ты [pc.a_appearsAsGender("+colouredGender+")] на первый взгляд."
+								:"Из-за обнаженных [npc.her] [npc.vagina] и [npc.breastSize] груди все полагают, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")] на первый взгляд.",
 								Gender.N_V_B_TOMBOY);
 						
 					} else {
 						// Correctly assume female:
 						return new GenderAppearance(
 								isPlayer()
-								?"Due to your exposed [pc.vagina] and [pc.breastSize] breasts, everyone correctly assumes that you're [pc.a_appearsAsGender("+colouredGender+")] on first glance."
-								:"Due to [npc.her] exposed [npc.vagina] and [npc.breastSize] breasts, everyone assumes that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")] on first glance.",
+								?"Из-за твоих обнаженных [pc.vagina] и [pc.breastSize] груди все справедливо полагают, что ты [pc.a_appearsAsGender("+colouredGender+")] на первый взгляд."
+								:"Из-за обнаженных [npc.her] [npc.vagina] и [npc.breastSize] груди все полагают, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")] на первый взгляд.",
 								Gender.N_V_B_TOMBOY);
 					}
 					
@@ -26101,8 +25895,8 @@ public abstract class GameCharacter implements XMLSaving {
 					// Exposed penis:
 					return new GenderAppearance(
 							isPlayer()
-							?"Due to your exposed [pc.penis] and [pc.breastSize] breasts, everyone assumes that you're [pc.a_appearsAsGender("+colouredGender+")] on first glance."
-							:"Due to [npc.her] exposed [npc.penis] and [npc.breastSize] breasts, everyone assumes that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")] on first glance.",
+							?"Из-за твоих обнаженных [pc.penis] и [pc.breastSize] груди все полагают, что ты [pc.a_appearsAsGender("+colouredGender+")] на первый взгляд."
+							:"Из-за обнаженных [npc.her] [npc.penis] и [npc.breastSize] груди все полагают, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")] на первый взгляд.",
 							Gender.N_P_B_SHEMALE);
 					
 				} else {
@@ -26110,15 +25904,15 @@ public abstract class GameCharacter implements XMLSaving {
 					if(isPenisBulgeVisible()) {
 						return new GenderAppearance(
 								isPlayer()
-								?"The [pc.cockSize] bulge between your legs, combined with your androgynous appearance and [pc.breastSize] breasts, leads everyone to believe that you're [pc.a_appearsAsGender("+colouredGender+")]."
-								:"The [npc.cockSize] bulge between [npc.her] legs, combined with [npc.her] androgynous appearance and [npc.breastSize] breasts, leads everyone to believe that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
+								?"[pc.cockSize] выпуклость между твоих ног в сочетании с твоей андрогинной внешностью и [pc.breastSize] грудью заставляет всех верить, что ты [pc.a_appearsAsGender("+colouredGender+")]."
+								:"[npc.cockSize] выпуклость между [npc.her] ног в сочетании с [npc.her] андрогинной внешностью и [npc.breastSize] грудью заставляет всех верить, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
 								Gender.N_P_B_SHEMALE);
 						
 					} else if (isTesticleBulgeVisible()) {
 						return new GenderAppearance(
 								isPlayer()
-								?"The [pc.ballSize] bulge of your [pc.balls] between your legs, combined with your androgynous appearance and [pc.breastSize] breasts, leads everyone to believe that you're [pc.a_appearsAsGender("+colouredGender+")]."
-								:"The [npc.ballSize] bulge between [npc.her] legs, combined with [npc.her] androgynous appearance and [npc.breastSize] breasts, leads everyone to believe that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
+								?"[pc.ballSize] выпуклость твоих [pc.balls] между ног в сочетании с твоей андрогинной внешностью и [pc.breastSize] грудью заставляет всех верить, что ты [pc.a_appearsAsGender("+colouredGender+")]."
+								:"[npc.ballSize] выпуклость между [npc.her] ног в сочетании с [npc.her] андрогинной внешностью и [npc.breastSize] грудью заставляет всех верить, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
 								Gender.N_P_B_SHEMALE);
 					}
 					
@@ -26126,31 +25920,31 @@ public abstract class GameCharacter implements XMLSaving {
 						// Assume female, as penis is not visible:
 						return new GenderAppearance(
 								isPlayer()
-								?"Your [pc.penis] is concealed, so, due to your androgynous appearance and [pc.breastSize] breasts, everyone assumes that you're [pc.a_appearsAsGender("+colouredGender+")] on first glance."
-								:"Due to [npc.her] androgynous appearance and [npc.breastSize] breasts, everyone assumes that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")] on first glance.",
+								?"Твоя [pc.penis] скрыта, поэтому из-за твоей андрогинной внешности и [pc.breastSize] груди все полагают, что ты [pc.a_appearsAsGender("+colouredGender+")] на первый взгляд."
+								:"Из-за [npc.her] андрогинной внешности и [npc.breastSize] груди все полагают, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")] на первый взгляд.",
 								Gender.N_V_B_TOMBOY);
 						
 					} else if(hasVagina()) {
 						// Correctly assume female:
 						return new GenderAppearance(
 								isPlayer()
-								?"Your androgynous appearance and [pc.breastSize] breasts leads everyone to correctly assume that you're [pc.a_appearsAsGender("+colouredGender+")]."
-								:"Due to [npc.her] androgynous appearance and [npc.breastSize] breasts, everyone assumes that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
+								?"Твоя андрогинная внешность и [pc.breastSize] грудь заставляют всех правильно полагать, что ты [pc.a_appearsAsGender("+colouredGender+")]."
+								:"Из-за [npc.her] андрогинной внешности и [npc.breastSize] груди все полагают, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
 								Gender.N_V_B_TOMBOY);
 						
 					} else {
 						if(isCoverableAreaVisible(CoverableArea.VAGINA) && isCoverableAreaVisible(CoverableArea.PENIS)) {
 							return new GenderAppearance(
 									isPlayer()
-									?"Your genderless mound is exposed, so, due to your androgynous appearance and [pc.breastSize] breasts, strangers treat you as [pc.a_appearsAsGender("+colouredGender+")]."
-									:	"Due to [npc.her] genderless mound being exposed, combined with [npc.her] androgynous appearance and [npc.breastSize] breasts, everyone can tell that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
+									?"Твоя бесполая выпуклость обнажена, поэтому из-за твоей андрогинной внешности и [pc.breastSize] груди незнакомцы воспринимают тебя как [pc.a_appearsAsGender("+colouredGender+")]."
+									:	"Из-за того, что [npc.her] бесполая выпуклость обнажена, в сочетании с [npc.her] андрогинной внешностью и [npc.breastSize] грудью, все понимают, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
 									Gender.N_B_DOLL);
 							
 						} else {
 							return new GenderAppearance(
 									isPlayer()
-									?"Your genderless mound is concealed, so, due to your androgynous appearance and [pc.breastSize] breasts, strangers treat you as [pc.a_appearsAsGender("+colouredGender+")]."
-									:	"Due to [npc.her] androgynous appearance and [npc.breastSize] breasts, everyone assumes that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
+									?"Твоя бесполая выпуклость скрыта, поэтому из-за твоей андрогинной внешности и [pc.breastSize] груди незнакомцы воспринимают тебя как [pc.a_appearsAsGender("+colouredGender+")]."
+									:	"Из-за [npc.her] андрогинной внешности и [npc.breastSize] груди все полагают, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
 									Gender.N_V_B_TOMBOY);
 						}
 					}
@@ -26162,8 +25956,8 @@ public abstract class GameCharacter implements XMLSaving {
 					// Exposed penis and vagina:
 					return new GenderAppearance(
 							isPlayer()
-							?"Due to the fact that both your [pc.vagina] and [pc.penis] are exposed, everyone can tell that you're [pc.a_gender("+colouredGender+")] on first glance."
-							:"Due to the fact that both [npc.her] [npc.vagina] and [npc.penis] are exposed, everyone can tell that [npc.sheIs] [npc.a_gender("+colouredGender+")] on first glance.",
+							?"Из-за того, что и ваш [pc.vagina], и [pc.penis] обнажены, все могут понять, что вы [pc.a_gender("+colouredGender+")] на первый взгляд."
+							:"Из-за того, что и [npc.her] [npc.vagina], и [npc.penis] обнажены, все могут понять, что [npc.sheIs] [npc.a_gender("+colouredGender+")] на первый взгляд.",
 							Gender.N_P_V_HERMAPHRODITE);
 						
 				} else if(visibleVagina) {
@@ -26171,15 +25965,15 @@ public abstract class GameCharacter implements XMLSaving {
 					if(isPenisBulgeVisible()) {
 						return new GenderAppearance(
 								isPlayer()
-								?"The [pc.cockSize] bulge between your legs, combined with your exposed [pc.vagina], reveals to everyone that you're [pc.a_gender("+colouredGender+")]."
-								:"The [npc.cockSize] bulge between [npc.her] legs, combined with [npc.her] exposed [npc.vagina], reveals to everyone that [npc.sheIs] [npc.a_gender("+colouredGender+")].",
+								?"[pc.cockSize] выпуклость между твоих ног в сочетании с обнаженным [pc.vagina] открывает всем, что ты [pc.a_gender("+colouredGender+")]."
+								:"[npc.cockSize] выпуклость между ногами [npc.her] в сочетании с обнаженными [npc.her] [npc.vagina] открывает всем, что [npc.sheIs] [npc.a_gender("+colouredGender+")].",
 								Gender.N_P_V_HERMAPHRODITE);
 						
 					} else if (isTesticleBulgeVisible()) {
 						return new GenderAppearance(
 								isPlayer()
-								?"The [pc.ballSize] bulge of your [pc.balls] between your legs, combined with your exposed [pc.vagina], reveals to everyone that you're [pc.a_gender("+colouredGender+")]."
-								:"The [npc.ballSize] bulge between [npc.her] legs, combined with [npc.her] exposed [npc.vagina], reveals to everyone that [npc.sheIs] [npc.a_gender("+colouredGender+")].",
+								?"[pc.ballSize] выпуклость твоего [pc.balls] между ног в сочетании с обнаженным [pc.vagina] открывает всем, что ты [pc.a_gender("+colouredGender+")]."
+								:"[npc.ballSize] выпуклость между ногами [npc.her] в сочетании с обнаженными [npc.her] [npc.vagina] открывает всем, что [npc.sheIs] [npc.a_gender("+colouredGender+")].",
 								Gender.N_P_V_HERMAPHRODITE);
 					}
 					
@@ -26187,16 +25981,16 @@ public abstract class GameCharacter implements XMLSaving {
 						// Assume female, as penis is not visible:
 						return new GenderAppearance(
 								isPlayer()
-								?"Due to your exposed [pc.vagina], and the fact that your [pc.penis] remains concealed, everyone assumes that you're [pc.a_appearsAsGender("+colouredGender+")] on first glance."
-								:"Due to [npc.her] exposed [npc.vagina], everyone assumes that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")] on first glance.",
+								?"Из-за твоих обнаженных [pc.vagina] и того факта, что твои [pc.penis] остаются скрытыми, все полагают, что ты [pc.a_appearsAsGender("+colouredGender+")] на первый взгляд."
+								:"Из-за обнаженных [npc.her] [npc.vagina] все полагают, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")] на первый взгляд.",
 								Gender.N_V_TOMBOY);
 						
 					} else {
 						// Correctly assume female:
 						return new GenderAppearance(
 								isPlayer()
-								?"Due to your exposed [pc.vagina], everyone correctly assumes that you're [pc.a_appearsAsGender("+colouredGender+")] on first glance."
-								:"Due to [npc.her] exposed [npc.vagina], everyone assumes that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")] on first glance.",
+								?"Из-за твоих обнаженных [pc.vagina] все справедливо полагают, что ты [pc.a_appearsAsGender("+colouredGender+")] на первый взгляд."
+								:"Из-за обнаженных [npc.her] [npc.vagina] все полагают, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")] на первый взгляд.",
 								Gender.N_V_TOMBOY);
 					}
 					
@@ -26204,8 +25998,8 @@ public abstract class GameCharacter implements XMLSaving {
 					// Exposed penis:
 					return new GenderAppearance(
 							isPlayer()
-							?"Due to your exposed [pc.penis], everyone assumes that you're [pc.a_appearsAsGender("+colouredGender+")] on first glance."
-							:"Due to [npc.her] exposed [npc.penis], everyone assumes that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")] on first glance.",
+							?"Из-за твоих обнаженных [pc.penis] все полагают, что ты [pc.a_appearsAsGender("+colouredGender+")] на первый взгляд."
+							:"Из-за обнаженных [npc.her] [npc.penis] все полагают, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")] на первый взгляд.",
 							Gender.N_P_TRAP);
 					
 				} else {
@@ -26213,15 +26007,15 @@ public abstract class GameCharacter implements XMLSaving {
 					if(isPenisBulgeVisible()) {
 						return new GenderAppearance(
 								isPlayer()
-								?"The [pc.cockSize] bulge between your legs, combined with your androgynous appearance, leads everyone to believe that you're [pc.a_appearsAsGender("+colouredGender+")]."
-								:"The [npc.cockSize] bulge between [npc.her] legs, combined with [npc.her] androgynous appearance, leads everyone to believe that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
+								?"[pc.cockSize] выпуклость между твоих ног в сочетании с твоей андрогинной внешностью заставляет всех верить, что ты [pc.a_appearsAsGender("+colouredGender+")]."
+								:"[npc.cockSize] выпуклость между [npc.her] ног в сочетании с [npc.her] андрогинной внешностью заставляет всех верить, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
 								Gender.N_P_TRAP);
 						
 					} else if (isTesticleBulgeVisible()) {
 						return new GenderAppearance(
 								isPlayer()
-								?"The [pc.ballSize] bulge of your [pc.balls] between your legs, combined with your androgynous appearance, leads everyone to believe that you're [pc.a_appearsAsGender("+colouredGender+")]."
-								:"The [npc.ballSize] bulge between [npc.her] legs, combined with [npc.her] androgynous appearance, leads everyone to believe that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
+								?"[pc.ballSize] выпуклость твоих [pc.balls] между ног в сочетании с твоей андрогинной внешностью заставляет всех верить, что ты [pc.a_appearsAsGender("+colouredGender+")]."
+								:"[npc.ballSize] выпуклость между [npc.her] ног в сочетании с [npc.her] андрогинной внешностью заставляет всех верить, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
 								Gender.N_P_TRAP);
 					}
 					
@@ -26229,31 +26023,31 @@ public abstract class GameCharacter implements XMLSaving {
 						// Assume female, as penis is not visible:
 						return new GenderAppearance(
 								isPlayer()
-								?"Your [pc.penis] is concealed, so, due to your androgynous appearance, everyone assumes that you're [pc.a_appearsAsGender("+colouredGender+")] on first glance."
-								:"Due to [npc.her] androgynous appearance, everyone assumes that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")] on first glance.",
+								?"Твоя [pc.penis] скрыта, поэтому из-за твоей андрогинной внешности все полагают, что ты [pc.a_appearsAsGender("+colouredGender+")] на первый взгляд."
+								:"Из-за [npc.her] андрогинной внешности все полагают, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")] на первый взгляд.",
 								Gender.N_V_TOMBOY);
 						
 					} else if(hasVagina()) {
 						// Correctly assume female:
 						return new GenderAppearance(
 								isPlayer()
-								?"Your androgynous appearance leads everyone to correctly assume that you're [pc.a_appearsAsGender("+colouredGender+")]."
-								:"Due to [npc.her] androgynous appearance, everyone assumes that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
+								?"Твоя андрогинная внешность заставляет всех правильно полагать, что ты [pc.a_appearsAsGender("+colouredGender+")]."
+								:"Из-за [npc.her] андрогинной внешности все полагают, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
 								Gender.N_V_TOMBOY);
 						
 					} else {
 						if(isCoverableAreaVisible(CoverableArea.VAGINA) && isCoverableAreaVisible(CoverableArea.PENIS)) {
 							return new GenderAppearance(
 									isPlayer()
-									?"Your genderless mound is exposed, so, due to your androgynous appearance, strangers treat you as [pc.a_appearsAsGender("+colouredGender+")]"
-									:	"Due to [npc.her] genderless mound being exposed, combined with [npc.her] androgynous appearance, everyone can tell that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
+									?"Твоя бесполая плоть обнажена, поэтому из-за твоей андрогинной внешности незнакомцы относятся к тебе как к [pc.a_appearsAsGender("+colouredGender+")]"
+									:	"Из-за того, что [npc.her] бесполая плоть обнажена, в сочетании с [npc.her] андрогинной внешностью, все могут понять, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
 									Gender.N_NEUTER);
 							
 						} else {
 							return new GenderAppearance(
 									isPlayer()
-									?"Your genderless mound is concealed, so, due to your androgynous appearance, strangers treat you as [pc.a_appearsAsGender("+colouredGender+")]."
-									:	"Due to [npc.her] androgynous appearance, everyone assumes that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
+									?"Твоя бесполая плоть скрыта, поэтому из-за твоей андрогинной внешности незнакомцы относятся к тебе как к [pc.a_appearsAsGender("+colouredGender+")]."
+									:	"Из-за [npc.her] андрогинной внешности все полагают, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
 									Gender.N_V_TOMBOY);
 						}
 					}
@@ -26267,8 +26061,8 @@ public abstract class GameCharacter implements XMLSaving {
 					// Exposed penis and vagina:
 					return new GenderAppearance(
 							isPlayer()
-							?"Due to the fact that both your [pc.vagina] and [pc.penis] are exposed, as well as the fact that you have [pc.breastSize] breasts, everyone can tell that you're [pc.a_gender("+colouredGender+")] on first glance."
-							:"Due to the fact that both [npc.her] [npc.vagina] and [npc.penis] are exposed, as well as the fact that [npc.sheHasFull] [npc.breastSize] breasts, everyone can tell that [npc.sheIs] [npc.a_gender("+colouredGender+")] on first glance.",
+							?"Из-за того, что и твои [pc.vagina], и [pc.penis] выставлены напоказ, а также из-за того, что у тебя [pc.breastSize] груди, все сразу видят, что ты [pc.a_gender("+colouredGender+")] на первый взгляд."
+							:"В силу того, что и [npc.her] [npc.vagina], и [npc.penis] выставлены напоказ, а также из-за того, что [npc.sheHasFull] [npc.breastSize] груди, каждый может понять, что [npc.sheIs] [npc.a_gender("+colouredGender+")] на первый взгляд.",
 							Gender.M_P_V_B_HERMAPHRODITE);
 						
 				} else if(visibleVagina) {
@@ -26276,15 +26070,15 @@ public abstract class GameCharacter implements XMLSaving {
 					if(isPenisBulgeVisible()) {
 						return new GenderAppearance(
 								isPlayer()
-								?"The [pc.cockSize] bulge between your legs, combined with your exposed [pc.vagina] and [pc.breastSize] breasts, reveals to everyone that you're [pc.a_gender("+colouredGender+")]."
-								:"The [npc.cockSize] bulge between [npc.her] legs, combined with [npc.her] exposed [npc.vagina] and [npc.breastSize] breasts, reveals to everyone that [npc.sheIs] [npc.a_gender("+colouredGender+")].",
+								?"[pc.cockSize] бугор между ног в сочетании с обнаженными [pc.vagina] и [pc.breastSize] грудями открывает каждому, что ты [pc.a_gender("+colouredGender+")]."
+								:"[npc.cockSize] выпуклость между ногами [npc.her] в сочетании с обнаженными [npc.her] [npc.vagina] и [npc.breastSize] грудями открывает каждому, что [npc.sheIs] [npc.a_gender("+colouredGender+")].",
 								Gender.M_P_V_B_HERMAPHRODITE);
 						
 					} else if (isTesticleBulgeVisible()) {
 						return new GenderAppearance(
 								isPlayer()
-								?"The [pc.ballSize] bulge of your [pc.balls] between your legs, combined with your exposed [pc.vagina] and [pc.breastSize] breasts, reveals to everyone that you're [pc.a_gender("+colouredGender+")]."
-								:"The [npc.ballSize] bulge between [npc.her] legs, combined with [npc.her] exposed [npc.vagina] and [npc.breastSize] breasts, reveals to everyone that [npc.sheIs] [npc.a_gender("+colouredGender+")].",
+								?"Выпирающий [pc.ballSize] между ног в сочетании с обнаженными [pc.vagina] и [pc.breastSize] грудями открывает каждому, что вы [pc.a_gender([pc.balls])"+colouredGender+")]."
+								:"[npc.ballSize] выпуклость между ногами [npc.her], вкупе с обнаженными [npc.her] [npc.vagina] и [npc.breastSize] грудями, открывает каждому, что [npc.sheIs] [npc.a_gender("+colouredGender+")].",
 								Gender.M_P_V_B_HERMAPHRODITE);
 					}
 					
@@ -26292,16 +26086,16 @@ public abstract class GameCharacter implements XMLSaving {
 						// Assume female, as penis is not visible:
 						return new GenderAppearance(
 								isPlayer()
-								?"Due to your exposed [pc.vagina] and [pc.breastSize] breasts, and the fact that your [pc.penis] remains concealed, everyone assumes that you're [pc.a_appearsAsGender("+colouredGender+")] on first glance."
-								:"Due to [npc.her] exposed [npc.vagina] and [npc.breastSize] breasts, everyone assumes that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")] on first glance.",
+								?"Из-за твоей обнаженной [pc.vagina] и [pc.breastSize] груди, а также того факта, что твои [pc.penis] остаются скрытыми, все полагают, что ты [pc.a_appearsAsGender("+colouredGender+")] на первый взгляд."
+								:"Из-за обнаженных [npc.her] [npc.vagina] и [npc.breastSize] груди все полагают, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")] на первый взгляд.",
 								Gender.M_V_B_BUTCH);
 						
 					} else {
 						// Correctly assume female:
 						return new GenderAppearance(
 								isPlayer()
-								?"Due to your exposed [pc.vagina] and [pc.breastSize] breasts, everyone correctly assumes that you're [pc.a_appearsAsGender("+colouredGender+")] on first glance."
-								:"Due to [npc.her] exposed [npc.vagina] and [npc.breastSize] breasts, everyone assumes that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")] on first glance.",
+								?"Из-за твоих обнаженных [pc.vagina] и [pc.breastSize] груди все справедливо полагают, что ты [pc.a_appearsAsGender("+colouredGender+")] на первый взгляд."
+								:"Из-за обнаженных [npc.her] [npc.vagina] и [npc.breastSize] груди все полагают, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")] на первый взгляд.",
 								Gender.M_V_B_BUTCH);
 					}
 					
@@ -26309,8 +26103,8 @@ public abstract class GameCharacter implements XMLSaving {
 					// Exposed penis:
 					return new GenderAppearance(
 							isPlayer()
-							?"Due to your exposed [pc.penis] and [pc.breastSize] breasts, everyone assumes that you're [pc.a_appearsAsGender("+colouredGender+")] on first glance."
-							:"Due to [npc.her] exposed [npc.penis] and [npc.breastSize] breasts, everyone assumes that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")] on first glance.",
+							?"Из-за твоих обнаженных [pc.penis] и [pc.breastSize] груди все полагают, что ты [pc.a_appearsAsGender("+colouredGender+")] на первый взгляд."
+							:"Из-за обнаженных [npc.her] [npc.penis] и [npc.breastSize] груди все полагают, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")] на первый взгляд.",
 							Gender.M_P_B_BUSTYBOY);
 					
 				} else {
@@ -26318,15 +26112,15 @@ public abstract class GameCharacter implements XMLSaving {
 					if(isPenisBulgeVisible()) {
 						return new GenderAppearance(
 								isPlayer()
-								?"The [pc.cockSize] bulge between your legs, combined with your masculine appearance and [pc.breastSize] breasts, leads everyone to believe that you're [pc.a_appearsAsGender("+colouredGender+")]."
-								:"The [npc.cockSize] bulge between [npc.her] legs, combined with [npc.her] masculine appearance and [npc.breastSize] breasts, leads everyone to believe that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
+								?"[pc.cockSize] выпуклость между твоих ног в сочетании с твоей мужественной внешностью и [pc.breastSize] грудью заставляет всех верить, что ты [pc.a_appearsAsGender("+colouredGender+")]."
+								:"[npc.cockSize] выпуклость между [npc.her] ног в сочетании с [npc.her] мужественной внешностью и [npc.breastSize] грудью заставляет всех верить, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
 								Gender.M_P_B_BUSTYBOY);
 						
 					} else if (isTesticleBulgeVisible()) {
 						return new GenderAppearance(
 								isPlayer()
-								?"The [pc.ballSize] bulge of your [pc.balls] between your legs, combined with your masculine appearance and [pc.breastSize] breasts, leads everyone to believe that you're [pc.a_appearsAsGender("+colouredGender+")]."
-								:"The [npc.ballSize] bulge between [npc.her] legs, combined with [npc.her] masculine appearance and [npc.breastSize] breasts, leads everyone to believe that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
+								?"[pc.ballSize] выпуклость твоих [pc.balls] между ног в сочетании с твоей мужественной внешностью и [pc.breastSize] грудью заставляет всех верить, что ты [pc.a_appearsAsGender("+colouredGender+")]."
+								:"[npc.ballSize] выпуклость между [npc.her] ног в сочетании с [npc.her] мужественной внешностью и [npc.breastSize] грудью заставляет всех верить, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
 								Gender.M_P_B_BUSTYBOY);
 					}
 					
@@ -26334,31 +26128,31 @@ public abstract class GameCharacter implements XMLSaving {
 						// Correctly assume busty boy:
 						return new GenderAppearance(
 								isPlayer()
-								?"Your [pc.penis] is concealed, so, due to your masculine appearance and [pc.breastSize] breasts, everyone correctly assumes that you're [pc.a_appearsAsGender("+colouredGender+")] on first glance."
-								:"Due to [npc.her] masculine appearance and [npc.breastSize] breasts, everyone assumes that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")] on first glance.",
+								?"Твоя [pc.penis] скрыта, поэтому из-за твоей мужественной внешности и [pc.breastSize] груди все правильно полагают, что ты [pc.a_appearsAsGender("+colouredGender+")] на первый взгляд."
+								:"Из-за [npc.her] мужественной внешности и [npc.breastSize] груди все полагают, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")] на первый взгляд.",
 								Gender.M_P_B_BUSTYBOY);
 						
 					} else if(hasVagina()) {
 						// Assume bustyboy:
 						return new GenderAppearance(
 								isPlayer()
-								?"Your masculine appearance and [pc.breastSize] breasts leads everyone to assume that you're [pc.a_appearsAsGender("+colouredGender+")]."
-								:"Due to [npc.her] masculine appearance and [npc.breastSize] breasts, everyone assumes that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
+								?"Твоя мужественная внешность и [pc.breastSize] грудь заставляют всех думать, что ты [pc.a_appearsAsGender("+colouredGender+")]."
+								:"Из-за [npc.her] мужественной внешности и [npc.breastSize] груди все полагают, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
 								Gender.M_P_B_BUSTYBOY);
 						
 					} else {
 						if(isCoverableAreaVisible(CoverableArea.VAGINA) && isCoverableAreaVisible(CoverableArea.PENIS)) {
 							return new GenderAppearance(
 									isPlayer()
-									?"Your genderless mound is exposed, so, due to your masculine appearance and [pc.breastSize] breasts, strangers treat you as [pc.a_appearsAsGender("+colouredGender+")]."
-									:	"Due to [npc.her] genderless mound being exposed, combined with [npc.her] masculine appearance and [npc.breastSize] breasts, everyone can tell that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
+									?"Твоя безполовая паховая область обнажена, поэтому из-за твоей мужественной внешности и [pc.breastSize] груди незнакомцы принимают тебя за [pc.a_appearsAsGender("+colouredGender+")]."
+									:	"Из-за того, что [npc.her] обнаженная бесполая плоть выставлена напоказ, в сочетании с [npc.her] маскулинной внешностью и [npc.breastSize] грудью, каждый может понять, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
 									Gender.M_B_MANNEQUIN);
 							
 						} else {
 							return new GenderAppearance(
 									isPlayer()
-									?"Your genderless mound is concealed, so, due to your masculine appearance and [pc.breastSize] breasts, strangers treat you as [pc.a_appearsAsGender("+colouredGender+")]."
-									:	"Due to [npc.her] masculine appearance and [npc.breastSize] breasts, everyone assumes that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
+									?"Твоя безполовая паховая область скрыта, поэтому из-за твоей мужественной внешности и [pc.breastSize] груди незнакомцы принимают тебя за [pc.a_appearsAsGender("+colouredGender+")]."
+									:	"Из-за [npc.her] мужественной внешности и [npc.breastSize] груди все полагают, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
 									Gender.M_V_B_BUTCH);
 						}
 					}
@@ -26370,8 +26164,8 @@ public abstract class GameCharacter implements XMLSaving {
 					// Exposed penis and vagina:
 					return new GenderAppearance(
 							isPlayer()
-							?"Due to the fact that both your [pc.vagina] and [pc.penis] are exposed, everyone can tell that you're [pc.a_gender("+colouredGender+")] on first glance."
-							:"Due to the fact that both [npc.her] [npc.vagina] and [npc.penis] are exposed, everyone can tell that [npc.sheIs] [npc.a_gender("+colouredGender+")] on first glance.",
+							?"Из-за того, что и ваш [pc.vagina], и [pc.penis] обнажены, все могут понять, что вы [pc.a_gender("+colouredGender+")] на первый взгляд."
+							:"Из-за того, что и [npc.her] [npc.vagina], и [npc.penis] обнажены, все могут понять, что [npc.sheIs] [npc.a_gender("+colouredGender+")] на первый взгляд.",
 							Gender.M_P_V_HERMAPHRODITE);
 						
 				} else if(visibleVagina) {
@@ -26379,15 +26173,15 @@ public abstract class GameCharacter implements XMLSaving {
 					if(isPenisBulgeVisible()) {
 						return new GenderAppearance(
 								isPlayer()
-								?"The [pc.cockSize] bulge between your legs, combined with your exposed [pc.vagina], reveals to everyone that you're [pc.a_gender("+colouredGender+")]."
-								:"The [npc.cockSize] bulge between [npc.her] legs, combined with [npc.her] exposed [npc.vagina], reveals to everyone that [npc.sheIs] [npc.a_gender("+colouredGender+")].",
+								?"[pc.cockSize] выпуклость между твоих ног в сочетании с обнаженным [pc.vagina] открывает всем, что ты [pc.a_gender("+colouredGender+")]."
+								:"[npc.cockSize] выпуклость между ногами [npc.her] в сочетании с обнаженными [npc.her] [npc.vagina] открывает всем, что [npc.sheIs] [npc.a_gender("+colouredGender+")].",
 								Gender.M_P_V_HERMAPHRODITE);
 						
 					} else if (isTesticleBulgeVisible()) {
 						return new GenderAppearance(
 								isPlayer()
-								?"The [pc.ballSize] bulge of your [pc.balls] between your legs, combined with your exposed [pc.vagina], reveals to everyone that you're [pc.a_gender("+colouredGender+")]."
-								:"The [npc.ballSize] bulge between [npc.her] legs, combined with [npc.her] exposed [npc.vagina], reveals to everyone that [npc.sheIs] [npc.a_gender("+colouredGender+")].",
+								?"[pc.ballSize] выпуклость твоего [pc.balls] между ног в сочетании с обнаженным [pc.vagina] открывает всем, что ты [pc.a_gender("+colouredGender+")]."
+								:"[npc.ballSize] выпуклость между ногами [npc.her] в сочетании с обнаженными [npc.her] [npc.vagina] открывает всем, что [npc.sheIs] [npc.a_gender("+colouredGender+")].",
 								Gender.M_P_V_HERMAPHRODITE);
 					}
 					
@@ -26395,16 +26189,16 @@ public abstract class GameCharacter implements XMLSaving {
 						// Assume cuntboy, as penis is not visible:
 						return new GenderAppearance(
 								isPlayer()
-								?"Due to your exposed [pc.vagina], and the fact that your [pc.penis] remains concealed, everyone assumes that you're [pc.a_appearsAsGender("+colouredGender+")] on first glance."
-								:"Due to [npc.her] exposed [npc.vagina], everyone assumes that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")] on first glance.",
+								?"Из-за твоих обнаженных [pc.vagina] и того факта, что твои [pc.penis] остаются скрытыми, все полагают, что ты [pc.a_appearsAsGender("+colouredGender+")] на первый взгляд."
+								:"Из-за обнаженных [npc.her] [npc.vagina] все полагают, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")] на первый взгляд.",
 								Gender.M_V_CUNTBOY);
 						
 					} else {
 						// Correctly assume cuntboy:
 						return new GenderAppearance(
 								isPlayer()
-								?"Due to your exposed [pc.vagina], everyone correctly assumes that you're [pc.a_appearsAsGender("+colouredGender+")] on first glance."
-								:"Due to [npc.her] exposed [npc.vagina], everyone assumes that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")] on first glance.",
+								?"Из-за твоих обнаженных [pc.vagina] все справедливо полагают, что ты [pc.a_appearsAsGender("+colouredGender+")] на первый взгляд."
+								:"Из-за обнаженных [npc.her] [npc.vagina] все полагают, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")] на первый взгляд.",
 								Gender.M_V_CUNTBOY);
 					}
 					
@@ -26412,8 +26206,8 @@ public abstract class GameCharacter implements XMLSaving {
 					// Exposed penis:
 					return new GenderAppearance(
 							isPlayer()
-							?"Due to your exposed [pc.penis], everyone assumes that you're [pc.a_appearsAsGender("+colouredGender+")] on first glance."
-							:"Due to [npc.her] exposed [npc.penis], everyone assumes that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")] on first glance.",
+							?"Из-за твоих обнаженных [pc.penis] все полагают, что ты [pc.a_appearsAsGender("+colouredGender+")] на первый взгляд."
+							:"Из-за обнаженных [npc.her] [npc.penis] все полагают, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")] на первый взгляд.",
 							Gender.M_P_MALE);
 					
 				} else {
@@ -26421,15 +26215,15 @@ public abstract class GameCharacter implements XMLSaving {
 					if(isPenisBulgeVisible()) {
 						return new GenderAppearance(
 								isPlayer()
-								?"The [pc.cockSize] bulge between your legs, combined with your masculine appearance, leads everyone to believe that you're [pc.a_appearsAsGender("+colouredGender+")]."
-								:"The [npc.cockSize] bulge between [npc.her] legs, combined with [npc.her] masculine appearance, leads everyone to believe that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
+								?"[pc.cockSize] выпуклость между твоих ног в сочетании с твоей мужественной внешностью заставляет всех верить, что ты [pc.a_appearsAsGender("+colouredGender+")]."
+								:"[npc.cockSize] выпуклость между [npc.her] ног в сочетании с [npc.her] мужественной внешностью заставляет всех верить, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
 								Gender.M_P_MALE);
 						
 					} else if (isTesticleBulgeVisible()) {
 						return new GenderAppearance(
 								isPlayer()
-								?"The [pc.ballSize] bulge of your [pc.balls] between your legs, combined with your masculine appearance, leads everyone to believe that you're [pc.a_appearsAsGender("+colouredGender+")]."
-								:"The [npc.ballSize] bulge between [npc.her] legs, combined with [npc.her] masculine appearance, leads everyone to believe that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
+								?"[pc.ballSize] выпуклость между твоими [pc.balls] ногами в сочетании с твоей мужественной внешностью заставляет всех верить, что ты [pc.a_appearsAsGender(\", \"1\": "+colouredGender+")]."
+								:"[npc.ballSize] выпуклость между ногами [npc.her] в сочетании с [npc.her] маскулинным видом заставляет всех верить, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
 								Gender.M_P_MALE);
 					}
 					
@@ -26437,31 +26231,31 @@ public abstract class GameCharacter implements XMLSaving {
 						// Assume male:
 						return new GenderAppearance(
 								isPlayer()
-								?"Your [pc.penis] is concealed, so, due to your masculine appearance, everyone assumes that you're [pc.a_appearsAsGender("+colouredGender+")] on first glance."
-								:"Due to [npc.her] masculine appearance, everyone assumes that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")] on first glance.",
+								?"Ваш [pc.penis] скрыт, поэтому из-за вашей мужской внешности все полагают, что вы [pc.a_appearsAsGender("+colouredGender+")] на первый взгляд."
+								:"Из-за [npc.her] маскулинной внешности все полагают, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")] на первый взгляд.",
 								Gender.M_P_MALE);
 						
 					} else if(hasVagina()) {
 						// Assume male:
 						return new GenderAppearance(
 								isPlayer()
-								?"Your masculine appearance leads everyone to assume that you're [pc.a_appearsAsGender("+colouredGender+")]."
-								:"Due to [npc.her] masculine appearance, everyone assumes that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
+								?"Ваша мужественная внешность заставляет всех полагать, что вы [pc.a_appearsAsGender("+colouredGender+")]."
+								:"Из-за [npc.her] маскулинной внешности все полагают, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
 								Gender.M_P_MALE);
 						
 					} else {
 						if(isCoverableAreaVisible(CoverableArea.VAGINA) && isCoverableAreaVisible(CoverableArea.PENIS)) {
 							return new GenderAppearance(
 									isPlayer()
-									?"Your genderless mound is exposed, so, due to your masculine appearance, strangers treat you as [pc.a_appearsAsGender("+colouredGender+")]."
-									:	"Due to [npc.her] genderless mound being exposed, combined with [npc.her] masculine appearance, everyone can tell that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
+									?"Ваша бесполая плоть обнажена, и из-за вашего маскулинного облика незнакомцы принимают вас за [pc.a_appearsAsGender("+colouredGender+")]."
+									:	"Из-за того, что [npc.her] обнаженная бесполая плоть выставлена напоказ, в сочетании с [npc.her] маскулинной внешностью, каждый может понять, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
 									Gender.M_MANNEQUIN);
 							
 						} else {
 							return new GenderAppearance(
 									isPlayer()
-									?"Your genderless mound is concealed, so, due to your masculine appearance, strangers treat you as [pc.a_appearsAsGender("+colouredGender+")]."
-									:	"Due to [npc.her] masculine appearance, everyone assumes that [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
+									?"Ваша бесполая выпуклость скрыта, поэтому из-за вашей маскулинной внешности незнакомцы принимают вас за [pc.a_appearsAsGender("+colouredGender+")]."
+									:	"Из-за [npc.her] маскулинной внешности все полагают, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
 									Gender.M_P_MALE);
 						}
 					}
@@ -26574,19 +26368,19 @@ public abstract class GameCharacter implements XMLSaving {
 	 */
 	public String getUnableToTransformDescription() {
 		if(!getTrueSubspecies().isAbleToSelfTransform() || this.isDoll()) {
-			return UtilText.parse(this, "As [npc.sheIsFull] [npc.a_race], [npc.name] cannot transform [npc.her] body at will!");
+			return UtilText.parse(this, "Будучи [npc.sheIsFull] [npc.a_race], [npc.name] не может по своему желанию менять форму [npc.her] тела!");
 		}
 		if(this.isFeral()) {
 			return UtilText.parse(this, "As [npc.sheIsFull] a feral [npc.race], [npc.name] cannot have [npc.her] body transformed!");
 		}
 		if(this.getClothingCurrentlyEquipped().stream().anyMatch(c -> c.isSelfTransformationInhibiting())) {
-			return UtilText.parse(this, "Although [npc.nameIsFull] normally able to self-transform, [npc.she] cannot do so due to an enchantment on [npc.her] clothing prohibiting the use of [npc.her] self-transformative powers!");
+			return UtilText.parse(this, "Хотя [npc.nameIsFull] обычно способна к самотрансформации, [npc.she] не может этого сделать из-за чар на одежде [npc.her], запрещающих использование [npc.her] способностей к самотрансформации!");
 		}
 		if(this.getTattoos().values().stream().anyMatch(c -> c.isSelfTransformationInhibiting())) {
-			return UtilText.parse(this, "Although [npc.nameIsFull] normally able to self-transform, [npc.she] cannot do so due to an enchantment on [npc.her] tattoos prohibiting the use of [npc.her] self-transformative powers!");
+			return UtilText.parse(this, "Хотя [npc.nameIsFull] обычно способна к самотрансформации, [npc.she] не может этого сделать из-за чар на татуировках [npc.her], запрещающих использование [npc.her] способностей к самотрансформации!");
 		}
 		if(Main.game.isInSex() && Main.sex.isSelfTransformDisabled(this)) {
-			return UtilText.parse(this, "Although [npc.nameIsFull] normally able to self-transform, [npc.she] cannot do so during this sex scene!");
+			return UtilText.parse(this, "Хотя [npc.nameIsFull] обычно способна к самотрансформации, [npc.she] не может этого сделать во время этой секс-сцены!");
 		}
 		return "";
 	}
@@ -26766,7 +26560,7 @@ public abstract class GameCharacter implements XMLSaving {
 					
 					if(displayColourDiscovered) {
 						postTFSB.append(UtilText.parse(this,
-								"<b>[npc.Name] [npc.has] discovered that the natural colour of [npc.her] "+bctName+" is "+getCovering(bct).getColourDescriptor(this, true, false)+"!</b>"));
+								"<b>[npc.Name] [npc.has] обнаружила, что естественный цвет [npc.her] "+bctName+" есть "+getCovering(bct).getColourDescriptor(this, true, false)+"!</b>"));
 					}
 				}
 			}
@@ -26815,7 +26609,7 @@ public abstract class GameCharacter implements XMLSaving {
 			}
 		}
 		if(!this.hasTail()) {
-			String s = getMarkingLossText(InventorySlot.TAIL, "a tail");
+			String s = getMarkingLossText(InventorySlot.TAIL, "хвост");
 			if(!s.isEmpty()) {
 				if(sb.length()>0) {
 					sb.append("<br/>");
@@ -26824,7 +26618,7 @@ public abstract class GameCharacter implements XMLSaving {
 			}
 		}
 		if(!this.hasPenisIgnoreDildo()) {
-			String s = getMarkingLossText(InventorySlot.PENIS, "a penis");
+			String s = getMarkingLossText(InventorySlot.PENIS, "пенис");
 			if(!s.isEmpty()) {
 				if(sb.length()>0) {
 					sb.append("<br/>");
@@ -26833,7 +26627,7 @@ public abstract class GameCharacter implements XMLSaving {
 			}
 		}
 		if(!this.hasVagina()) {
-			String s = getMarkingLossText(InventorySlot.VAGINA, "a vagina");
+			String s = getMarkingLossText(InventorySlot.VAGINA, "вагина");
 			if(!s.isEmpty()) {
 				if(sb.length()>0) {
 					sb.append("<br/>");
@@ -26843,9 +26637,7 @@ public abstract class GameCharacter implements XMLSaving {
 		}
 		
 		if(sb.length()>0) {
-			return "<p style='text-align:center;'>"
-						+ "[style.boldTerrible(Additional Loss Effects)]"
-						+ "<br/>"
+			return "<p style='text-align:center;'>[style.boldTerrible(Дополнительные эффекты потери)]<br/>"
 						+ UtilText.parse(this, sb.toString())
 					+ "</p>";
 		}
@@ -26867,7 +26659,7 @@ public abstract class GameCharacter implements XMLSaving {
 			this.removeTattoo(slot);
 		}
 		if(innerSb.length()>0) {
-			return "[npc.Name] no longer [npc.has] "+partLoss+", and as such:"
+			return "[npc.Name] больше не [npc.has] "+partLoss+", и поэтому:"
 					+ innerSb.toString();
 		}
 		
@@ -26967,20 +26759,20 @@ public abstract class GameCharacter implements XMLSaving {
 				if(partner.equals(this)) {
 					return UtilText.parse(this, partner,
 							"<p style='text-align:center;'><i>"
-								+ "[npc.NamePos] "+invSlot.getNameOfAssociatedPart(this)+" "+(invSlot.isPlural(this)?"are":"is")+" [style.italicsPinkDeep(marked)] by [npc.her] "+lipstickToAdd.getFullDescription(partner, true)+"!"
+								+ "[npc.NamePos] "+invSlot.getNameOfAssociatedPart(this)+" "+(invSlot.isPlural(this)?"являются":"есть")+" [style.italicsPinkDeep(marked)] by [npc.her] "+lipstickToAdd.getFullDescription(partner, true)+"!"
 							+ "</i></p>");
 					
 				} else {
 					return UtilText.parse(this, partner,
 							"<p style='text-align:center;'><i>"
-								+ "[npc.NamePos] "+invSlot.getNameOfAssociatedPart(this)+" "+(invSlot.isPlural(this)?"are":"is")+" [style.italicsPinkDeep(marked)] by [npc2.namePos] "+lipstickToAdd.getFullDescription(partner, true)+"!"
+								+ "[npc.NamePos] "+invSlot.getNameOfAssociatedPart(this)+" "+(invSlot.isPlural(this)?"являются":"есть")+" [style.italicsPinkDeep(marked)] by [npc2.namePos] "+lipstickToAdd.getFullDescription(partner, true)+"!"
 							+ "</i></p>");
 				}
 				
 			} else {
 				return UtilText.parse(this,
 						"<p style='text-align:center;'><i>"
-							+ "[npc.NamePos] "+invSlot.getNameOfAssociatedPart(this)+" "+(invSlot.isPlural(this)?"are":"is")+" [style.italicsPinkDeep(marked)] by "+lipstickToAdd.getFullDescription(this, true)+"!"
+							+ "[npc.NamePos] "+invSlot.getNameOfAssociatedPart(this)+" "+(invSlot.isPlural(this)?"являются":"есть")+" [style.italicsPinkDeep(marked)] от "+lipstickToAdd.getFullDescription(this, true)+"!"
 						+ "</i></p>");
 			}
 		}
@@ -27217,9 +27009,7 @@ public abstract class GameCharacter implements XMLSaving {
 		String beardLoss = "";
 		
 		if(femininity>=Femininity.ANDROGYNOUS.getMinimumFemininity() && this.getFacialHair()!=BodyHair.ZERO_NONE && !Main.getProperties().hasValue(PropertyValue.feminineBeardsContent)) {
-			beardLoss = "<p style='text-align:center;'>"
-							+ "As [npc.her] body shifts into a more feminine form, [npc.her] facial hair falls out; evidence that [npc.sheIs] no longer able to grow a beard."
-						+ "</p>";
+			beardLoss = "<p style='text-align:center;'>По мере того как тело [npc.her] принимает более женственный облик, растительность на лице [npc.her] выпадает; свидетельство того, что [npc.sheIs] больше не может отращивать бороду.</p>";
 		}
 		
 		boolean isFem = body.getFemininity() < femininity;
@@ -27227,19 +27017,16 @@ public abstract class GameCharacter implements XMLSaving {
 		if(body.setFemininity(femininity)) {
 			loadImages(true);
 			return UtilText.parse(this,
-					"<p style='text-align:center;'>"
-						+ "[npc.NamePos] body subtly shifts to become "
+					"<p style='text-align:center;'>Тело [npc.NamePos] незаметно меняется, становясь "
 							+(isFem
-								?"[style.italicsFeminine(more feminine)]"
-								:"[style.italicsMasculine(more masculine)]")
-							+".<br/>"
-						+ "[npc.She] now [npc.has] <b style='color:"+ Femininity.valueOf(getFemininityValue()).getColour().toWebHexString() + ";'>" + Femininity.getFemininityName(getFemininityValue(), true) + "</b> body."
-					+ "</p>"
+								?"[style.italicsFeminine(более женственным)]"
+								:"[style.italicsMasculine(более мужественным)]")
+							+".<br/>[npc.She] теперь [npc.has] <b style='color:"+ Femininity.valueOf(getFemininityValue()).getColour().toWebHexString() + ";'>" + Femininity.getFemininityName(getFemininityValue(), true) + "тело </b>.</p>"
 					+beardLoss);
 		}
 		
 		return "<p style='text-align:center;'>"
-				+ UtilText.parse(this, "<span style='color:" + PresetColour.TEXT_GREY.toWebHexString() + ";'>[npc.NamePos] femininity doesn't change...</span>")
+				+ UtilText.parse(this, "<span style='color:" + PresetColour.TEXT_GREY.toWebHexString() + ";'>[npc.NamePos] женственность не меняется...</span>")
 			+ "</p>";
 	}
 
@@ -27262,52 +27049,43 @@ public abstract class GameCharacter implements XMLSaving {
 			if (body.setBodySize(bodySize)) {
 				if(isPlayer()) {
 					return "<p class='center'>"
-								+ "You feel your body shifting and expanding as <b style='color:" + PresetColour.BODY_SIZE_THREE.toWebHexString() + ";'>you grow larger</b>.<br/>"
-								+ "You now have <b style='color:"+ BodySize.valueOf(getBodySizeValue()).getColour().toWebHexString() + ";'>" + BodySize.valueOf(getBodySizeValue()).getName(true)+ "</b>, "
-									+ Muscle.valueOf(getMuscleValue()).getName(false) + " body, giving you "+BodyShape.valueOf(Muscle.valueOf(getMuscleValue()), BodySize.valueOf(getBodySizeValue())).getName(true)+" appearance."
-							+ "</p>";
+								+ "You feel your body shifting and expanding as <b style='color:" + PresetColour.BODY_SIZE_THREE.toWebHexString() + ";'>ты становишься крупнее</b>.<br/>Теперь у тебя <b style='color:"+ BodySize.valueOf(getBodySizeValue()).getColour().toWebHexString() + ";'>" + BodySize.valueOf(getBodySizeValue()).getName(true)+ "</b>, "
+									+ Muscle.valueOf(getMuscleValue()).getName(false) + " тело, придающее тебе "+BodyShape.valueOf(Muscle.valueOf(getMuscleValue()), BodySize.valueOf(getBodySizeValue())).getName(true)+" внешность.</p>";
 				} else {
 					return UtilText.parse(this,
 							"<p class='center'>"
-								+ "[npc.NamePos] body shifts and expands as <b style='color:" + PresetColour.BODY_SIZE_THREE.toWebHexString() + ";'>[npc.she] grows larger</b>.<br/>"
-								+ "[npc.She] now has <b style='color:"+ BodySize.valueOf(getBodySizeValue()).getColour().toWebHexString() + ";'>" + BodySize.valueOf(getBodySizeValue()).getName(true) + "</b>, "
-										+ Muscle.valueOf(getMuscleValue()).getName(false) + " body, giving [npc.herHim] "+BodyShape.valueOf(Muscle.valueOf(getMuscleValue()), BodySize.valueOf(getBodySizeValue())).getName(true)+" appearance."
-							+ "</p>");
+								+ "[npc.NamePos] body shifts and expands as <b style='color:" + PresetColour.BODY_SIZE_THREE.toWebHexString() + ";'>[npc.she] становится крупнее</b>.<br/>[npc.She] теперь обладает <b style='color:"+ BodySize.valueOf(getBodySizeValue()).getColour().toWebHexString() + ";'>" + BodySize.valueOf(getBodySizeValue()).getName(true) + "</b>, "
+										+ Muscle.valueOf(getMuscleValue()).getName(false) + " телом, придающим [npc.herHim] "+BodyShape.valueOf(Muscle.valueOf(getMuscleValue()), BodySize.valueOf(getBodySizeValue())).getName(true)+" внешность.</p>");
 				}
 			}
 		} else {
 			if (body.setBodySize(bodySize)) {
 				if(isPlayer()) {
 					return "<p class='center'>"
-							+ "You feel your body shifting and narrowing down as <b style='color:" + PresetColour.BODY_SIZE_ONE.toWebHexString() + ";'>you get slimmer</b>.<br/>"
-							+ "You now have <b style='color:"+ BodySize.valueOf(getBodySizeValue()).getColour().toWebHexString() + ";'>" + BodySize.valueOf(getBodySizeValue()).getName(true) + "</b>, "
-									+ Muscle.valueOf(getMuscleValue()).getName(false) + " body, giving you "+BodyShape.valueOf(Muscle.valueOf(getMuscleValue()), BodySize.valueOf(getBodySizeValue())).getName(true)+" appearance."
-						+ "</p>";
+							+ "You feel your body shifting and narrowing down as <b style='color:" + PresetColour.BODY_SIZE_ONE.toWebHexString() + ";'>ты стройнеешь</b>.<br/>Теперь у тебя <b style='color:"+ BodySize.valueOf(getBodySizeValue()).getColour().toWebHexString() + ";'>" + BodySize.valueOf(getBodySizeValue()).getName(true) + "</b>, "
+									+ Muscle.valueOf(getMuscleValue()).getName(false) + " тело, придающее тебе "+BodyShape.valueOf(Muscle.valueOf(getMuscleValue()), BodySize.valueOf(getBodySizeValue())).getName(true)+" внешность.</p>";
 				} else {
 					return UtilText.parse(this,
 							"<p class='center'>"
-								+ "[npc.NamePos] body shifts and narrows down as <b style='color:" + PresetColour.BODY_SIZE_ONE.toWebHexString() + ";'>[npc.she] gets slimmer</b>.<br/>"
-								+ "[npc.She] now has <b style='color:"+ BodySize.valueOf(getBodySizeValue()).getColour().toWebHexString() + ";'>" + BodySize.valueOf(getBodySizeValue()).getName(true) + "</b>, "
-										+ Muscle.valueOf(getMuscleValue()).getName(false) + " body, giving [npc.herHim] "+BodyShape.valueOf(Muscle.valueOf(getMuscleValue()), BodySize.valueOf(getBodySizeValue())).getName(true)+" appearance."
-							+ "</p>");
+								+ "[npc.NamePos] body shifts and narrows down as <b style='color:" + PresetColour.BODY_SIZE_ONE.toWebHexString() + ";'>[npc.she] становится стройнее</b>.<br/>У [npc.She] теперь есть <b style='color:"+ BodySize.valueOf(getBodySizeValue()).getColour().toWebHexString() + ";'>" + BodySize.valueOf(getBodySizeValue()).getName(true) + "</b>, "
+										+ Muscle.valueOf(getMuscleValue()).getName(false) + " телом, придающим [npc.herHim] "+BodyShape.valueOf(Muscle.valueOf(getMuscleValue()), BodySize.valueOf(getBodySizeValue())).getName(true)+" внешность.</p>");
 				}
 			}
 		}
 		
 		if(isPlayer()) {
 			return "<p class='center'>"
-					+ "<span style='color:" + PresetColour.TEXT_GREY.toWebHexString() + ";'>Your body's size doesn't change...</span>"
-				+ "</p>";
+					+ "<span style='color:" + PresetColour.TEXT_GREY.toWebHexString() + ";'>Размер вашего тела не меняется...</span></p>";
 		} else {
 			return "<p class='center'>"
-					+ UtilText.parse(this, "<span style='color:" + PresetColour.TEXT_GREY.toWebHexString() + ";'>[npc.NamePos] body doesn't change...</span>")
+					+ UtilText.parse(this, "<span style='color:" + PresetColour.TEXT_GREY.toWebHexString() + ";'>Тело [npc.NamePos] не меняется...</span>")
 				+ "</p>";
 		}
 	}
 
 	public String incrementBodySize(int increment) {
 		StringBuilder sb = new StringBuilder();
-		sb.append("<p style='text-align:center'>[style.bold"+(increment<0?"Bad":"Good")+"("+(increment>0?"+":"")+increment+")] <b style='color:"+PresetColour.BODY_SIZE_THREE.toWebHexString()+";'>Body Size</b></p>");
+		sb.append("<p style='text-align:center'>[style.bold"+(increment<0?"Плохая":"Хорошая")+"("+(increment>0?"+":"")+increment+")] <b style='color:"+PresetColour.BODY_SIZE_THREE.toWebHexString()+";'>Размер тела</b></p>");
 		sb.append(setBodySize(getBodySizeValue() + increment));
 		return sb.toString();
 	}
@@ -27327,52 +27105,43 @@ public abstract class GameCharacter implements XMLSaving {
 			if (body.setMuscle(muscle)) {
 				if(isPlayer()) {
 					return "<p class='center'>"
-								+ "You feel your body shifting as <b style='color:" + PresetColour.MUSCLE_THREE.toWebHexString() + ";'>you get more muscular</b>.<br/>"
-								+ "You now have <b style='color:"+ Muscle.valueOf(getMuscleValue()).getColour().toWebHexString() + ";'>" + Muscle.valueOf(getMuscleValue()).getName(true) + "</b>, "
-										+ BodySize.valueOf(getBodySizeValue()).getName(false) + " body, giving you "+BodyShape.valueOf(Muscle.valueOf(getMuscleValue()), BodySize.valueOf(getBodySizeValue())).getName(true)+" appearance."
-							+ "</p>";
+								+ "You feel your body shifting as <b style='color:" + PresetColour.MUSCLE_THREE.toWebHexString() + ";'>вы становитесь мускулистее</b>.<br/>Теперь у вас есть <b style='color:"+ Muscle.valueOf(getMuscleValue()).getColour().toWebHexString() + ";'>" + Muscle.valueOf(getMuscleValue()).getName(true) + "</b>, "
+										+ BodySize.valueOf(getBodySizeValue()).getName(false) + " тело, придающее тебе "+BodyShape.valueOf(Muscle.valueOf(getMuscleValue()), BodySize.valueOf(getBodySizeValue())).getName(true)+" внешность.</p>";
 				} else {
 					return UtilText.parse(this,
 							"<p class='center'>"
-								+ "[npc.NamePos] body shifts as <b style='color:" + PresetColour.MUSCLE_THREE.toWebHexString() + ";'>[npc.she] gets more muscular</b>.<br/>"
-								+ "[npc.She] now has <b style='color:"+ Muscle.valueOf(getMuscleValue()).getColour().toWebHexString() + ";'>" + Muscle.valueOf(getMuscleValue()).getName(true) + "</b>, "
-										+ BodySize.valueOf(getBodySizeValue()).getName(false) + " body, giving [npc.her] "+BodyShape.valueOf(Muscle.valueOf(getMuscleValue()), BodySize.valueOf(getBodySizeValue())).getName(true)+" appearance."
-							+ "</p>");
+								+ "[npc.NamePos] body shifts as <b style='color:" + PresetColour.MUSCLE_THREE.toWebHexString() + ";'>[npc.she] становится мускулистее</b>.<br/>У [npc.She] теперь есть <b style='color:"+ Muscle.valueOf(getMuscleValue()).getColour().toWebHexString() + ";'>" + Muscle.valueOf(getMuscleValue()).getName(true) + "</b>, "
+										+ BodySize.valueOf(getBodySizeValue()).getName(false) + " тело, дающее [npc.her] "+BodyShape.valueOf(Muscle.valueOf(getMuscleValue()), BodySize.valueOf(getBodySizeValue())).getName(true)+" внешность.</p>");
 				}
 			}
 		} else {
 			if (body.setMuscle(muscle)) {
 				if(isPlayer()) {
 					return "<p class='center'>"
-							+ "You feel your body shifting as <b style='color:" + PresetColour.MUSCLE_ONE.toWebHexString() + ";'>you lose some of your muscle</b>.<br/>"
-							+ "You now have <b style='color:"+ Muscle.valueOf(getMuscleValue()).getColour().toWebHexString() + ";'>" + Muscle.valueOf(getMuscleValue()).getName(true) + "</b>, "
-									+ BodySize.valueOf(getBodySizeValue()).getName(false) + " body, giving you "+BodyShape.valueOf(Muscle.valueOf(getMuscleValue()), BodySize.valueOf(getBodySizeValue())).getName(true)+" appearance."
-						+ "</p>";
+							+ "You feel your body shifting as <b style='color:" + PresetColour.MUSCLE_ONE.toWebHexString() + ";'>вы теряете часть своих мышц</b>.<br/>Теперь у вас есть <b style='color:"+ Muscle.valueOf(getMuscleValue()).getColour().toWebHexString() + ";'>" + Muscle.valueOf(getMuscleValue()).getName(true) + "</b>, "
+									+ BodySize.valueOf(getBodySizeValue()).getName(false) + " тело, придающее тебе "+BodyShape.valueOf(Muscle.valueOf(getMuscleValue()), BodySize.valueOf(getBodySizeValue())).getName(true)+" внешность.</p>";
 				} else {
 					return UtilText.parse(this,
 							"<p class='center'>"
-								+ "[npc.NamePos] body shifts as <b style='color:" + PresetColour.MUSCLE_ONE.toWebHexString() + ";'>[npc.she] loses some of [npc.her] muscle</b>.<br/>"
-								+ "[npc.She] now has <b style='color:"+ Muscle.valueOf(getMuscleValue()).getColour().toWebHexString() + ";'>" + Muscle.valueOf(getMuscleValue()).getName(true) + "</b>, "
-										+ BodySize.valueOf(getBodySizeValue()).getName(false) + " body, giving [npc.her] "+BodyShape.valueOf(Muscle.valueOf(getMuscleValue()), BodySize.valueOf(getBodySizeValue())).getName(true)+" appearance."
-							+ "</p>");
+								+ "[npc.NamePos] body shifts as <b style='color:" + PresetColour.MUSCLE_ONE.toWebHexString() + ";'>[npc.she] теряет часть [npc.her]мышц</b>.<br/>У [npc.She] теперь есть <b style='color:"+ Muscle.valueOf(getMuscleValue()).getColour().toWebHexString() + ";'>" + Muscle.valueOf(getMuscleValue()).getName(true) + "</b>, "
+										+ BodySize.valueOf(getBodySizeValue()).getName(false) + " тело, дающее [npc.her] "+BodyShape.valueOf(Muscle.valueOf(getMuscleValue()), BodySize.valueOf(getBodySizeValue())).getName(true)+" внешность.</p>");
 				}
 			}
 		}
 		
 		if(isPlayer()) {
 			return "<p class='center'>"
-					+ "<span style='color:" + PresetColour.TEXT_GREY.toWebHexString() + ";'>Your body's muscles don't change...</span>"
-				+ "</p>";
+					+ "<span style='color:" + PresetColour.TEXT_GREY.toWebHexString() + ";'>Мышцы твоего тела не меняются...</span></p>";
 		} else {
 			return "<p class='center'>"
-					+ UtilText.parse(this, "<span style='color:" + PresetColour.TEXT_GREY.toWebHexString() + ";'>[npc.NamePos] muscles don't change...</span>")
+					+ UtilText.parse(this, "<span style='color:" + PresetColour.TEXT_GREY.toWebHexString() + ";'>Мышцы [npc.NamePos] не меняются...</span>")
 				+ "</p>";
 		}
 	}
 
 	public String incrementMuscle(int increment) {
 		StringBuilder sb = new StringBuilder();
-		sb.append("<p style='text-align:center'>[style.bold"+(increment<0?"Bad":"Good")+"("+(increment>0?"+":"")+increment+")] <b style='color:"+PresetColour.MUSCLE_THREE.toWebHexString()+";'>Muscle Definition</b></p>");
+		sb.append("<p style='text-align:center'>[style.bold"+(increment<0?"Плохая":"Хорошая")+"("+(increment>0?"+":"")+increment+")] <b style='color:"+PresetColour.MUSCLE_THREE.toWebHexString()+";'>Рельеф мышц</b></p>");
 		sb.append(setMuscle(getMuscleValue() + increment));
 		return sb.toString();
 	}
@@ -27443,38 +27212,29 @@ public abstract class GameCharacter implements XMLSaving {
 			if (body.setHeight(height)) {
 				return isPlayer()
 						? "<p class='center'>"
-							+ "The world around you seems slightly further away than it used to be, but after a moment you realise that you've just <b style='color:" + PresetColour.TRANSFORMATION_GENERIC.toWebHexString() + ";'>grown taller</b>."
-							+ "<br/>"
-							+ "You are now <b>" + Units.size(getHeightValue(), Units.UnitType.LONG) + "</b> tall."
-						+ "</p>"
+							+ "The world around you seems slightly further away than it used to be, but after a moment you realise that you've just <b style='color:" + PresetColour.TRANSFORMATION_GENERIC.toWebHexString() + ";'>вырос(ла)</b>.<br/>Теперь твой рост <b>" + Units.size(getHeightValue(), Units.UnitType.LONG) + "</b> см.</p>"
 						: UtilText.parse(this,
 							"<p class='center'>"
-								+ "[npc.She] sways from side to side a little, [npc.her] balance suddenly thrown off by the fact that [npc.sheIs] just <b style='color:" + PresetColour.TRANSFORMATION_GENERIC.toWebHexString() + ";'>grown taller</b>."
-							+ "</p>");
+								+ "[npc.She] sways from side to side a little, [npc.her] balance suddenly thrown off by the fact that [npc.sheIs] just <b style='color:" + PresetColour.TRANSFORMATION_GENERIC.toWebHexString() + ";'>вырос(ла)</b>.</p>");
 			}
 			
 		} else if (body.getHeightValue() > height) {
 			if (body.setHeight(height)) {
 				return isPlayer()
 						? "<p class='center'>"
-							+ "The world around you suddenly seems slightly closer than it used to be, but after a moment you realise that you've just <b style='color:" + PresetColour.TRANSFORMATION_GENERIC.toWebHexString() + ";'>become shorter</b>."
-							+ "<br/>"
-							+ "You are now <b>" + Units.size(getHeightValue(), Units.UnitType.LONG) + "</b> tall."
-						+ "</p>"
+							+ "The world around you suddenly seems slightly closer than it used to be, but after a moment you realise that you've just <b style='color:" + PresetColour.TRANSFORMATION_GENERIC.toWebHexString() + ";'>стал(а) ниже</b>.<br/>Теперь твой рост <b>" + Units.size(getHeightValue(), Units.UnitType.LONG) + "</b> см.</p>"
 						: UtilText.parse(this,
 							"<p class='center'>"
-								+ "[npc.She] shrinks down, <b style='color:" + PresetColour.TRANSFORMATION_GENERIC.toWebHexString() + ";'>becoming noticeably shorter</b>."
-							+ "</p>");
+								+ "[npc.She] shrinks down, <b style='color:" + PresetColour.TRANSFORMATION_GENERIC.toWebHexString() + ";'>заметно становится ниже</b>.</p>");
 			}
 		}
 		
 		if(isPlayer()) {
 			return "<p class='center'>"
-					+ "<span style='color:" + PresetColour.TEXT_GREY.toWebHexString() + ";'>Your height doesn't change...</span>"
-				+ "</p>";
+					+ "<span style='color:" + PresetColour.TEXT_GREY.toWebHexString() + ";'>Ваш рост не меняется...</span></p>";
 		} else {
 			return "<p class='center'>"
-					+ UtilText.parse(this, "<span style='color:" + PresetColour.TEXT_GREY.toWebHexString() + ";'>[npc.NamePos] height doesn't change...</span>")
+					+ UtilText.parse(this, "<span style='color:" + PresetColour.TEXT_GREY.toWebHexString() + ";'>[npc.NamePos] рост не меняется...</span>")
 				+ "</p>";
 		}
 	}
@@ -27543,43 +27303,43 @@ public abstract class GameCharacter implements XMLSaving {
 	public String setPubicHair(BodyHair pubicHair) {
 		if(!isPubicHairAvailable()) {
 			if(this.hasPenis() && !getPenisType().isPubicHairAllowed()) {
-				return UtilText.parse(this, "<p style='text-align:center;'>[style.colourDisabled(As [npc.namePos] penis type prevents [npc.herHim] from growing any pubic hair, nothing happens...)]</p>");
+				return UtilText.parse(this, "<p style='text-align:center;'>[style.colourDisabled(Так как тип пениса [npc.namePos] не позволяет [npc.herHim] отращивать волосы в паху, ничего не происходит...)]</p>");
 			} else if(this.hasVagina() && !getVaginaType().isPubicHairAllowed()) {
-				return UtilText.parse(this, "<p style='text-align:center;'>[style.colourDisabled(As [npc.namePos] vagina type prevents [npc.herHim] from growing any pubic hair, nothing happens...)]</p>");
+				return UtilText.parse(this, "<p style='text-align:center;'>[style.colourDisabled(Так как тип влагалища [npc.namePos] не позволяет [npc.herHim] отращивать волосы в паху, ничего не происходит...)]</p>");
 			} else {
-				return UtilText.parse(this, "<p style='text-align:center;'>[style.colourDisabled(As [npc.namePos] lack of genitalia prevents [npc.herHim] from growing any pubic hair, nothing happens...)]</p>");
+				return UtilText.parse(this, "<p style='text-align:center;'>[style.colourDisabled(Так как отсутствие гениталий у [npc.namePos] не позволяет [npc.herHim] отращивать волосы в паху, ничего не происходит...)]</p>");
 			}
 		}
 		if(getPubicHair() == pubicHair) {
-			return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+			return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 			
 		} else {
 			StringBuilder sb = new StringBuilder();
 			
 			switch(pubicHair) {
 				case ZERO_NONE:
-					sb.append(UtilText.parse(this, "<p>There is no longer any trace of "+getPubicHairType().getFullDescription(this, true)+" in [npc.her] pubic region.</p>"));
+					sb.append(UtilText.parse(this, "<p>От <p> больше не осталось и следа "+getPubicHairType().getFullDescription(this, true)+" в области лобка [npc.her].</p>"));
 					break;
 				case ONE_STUBBLE:
-					sb.append(UtilText.parse(this, "<p>[npc.Name] now [npc.has] a stubbly patch of "+getPubicHairType().getFullDescription(this, true)+" in [npc.her] pubic region.</p>"));
+					sb.append(UtilText.parse(this, "<p>[npc.Name] теперь [npc.has] покрыт колючей щетиной "+getPubicHairType().getFullDescription(this, true)+" в области лобка [npc.her].</p>"));
 					break;
 				case TWO_MANICURED:
-					sb.append(UtilText.parse(this, "<p>[npc.Name] now [npc.has] a well-manicured patch of "+getPubicHairType().getFullDescription(this, true)+" in [npc.her] pubic region.</p>"));
+					sb.append(UtilText.parse(this, "<p>[npc.Name] теперь [npc.has] обладает ухоженной полоской волос "+getPubicHairType().getFullDescription(this, true)+" в области лобка [npc.her].</p>"));
 					break;
 				case THREE_TRIMMED:
-					sb.append(UtilText.parse(this, "<p>[npc.Name] now [npc.has] a trimmed patch of "+getPubicHairType().getFullDescription(this, true)+" in [npc.her] pubic region.</p>"));
+					sb.append(UtilText.parse(this, "<p>[npc.Name] теперь [npc.has] покрыт аккуратно подстриженной полоской волос "+getPubicHairType().getFullDescription(this, true)+" в области лобка [npc.her].</p>"));
 					break;
 				case FOUR_NATURAL:
-					sb.append(UtilText.parse(this, "<p>[npc.Name] now [npc.has] a natural bush of "+getPubicHairType().getFullDescription(this, true)+" in [npc.her] pubic region.</p>"));
+					sb.append(UtilText.parse(this, "<p>[npc.Name] теперь [npc.has] естественные заросли "+getPubicHairType().getFullDescription(this, true)+" в области лобка [npc.her].</p>"));
 					break;
 				case FIVE_UNKEMPT:
-					sb.append(UtilText.parse(this, "<p>[npc.Name] now [npc.has] an unkempt mass of "+getPubicHairType().getFullDescription(this, true)+" in [npc.her] pubic region.</p>"));
+					sb.append(UtilText.parse(this, "<p>[npc.Name] теперь [npc.has] неопрятная масса "+getPubicHairType().getFullDescription(this, true)+" в области лобка [npc.her].</p>"));
 					break;
 				case SIX_BUSHY:
-					sb.append(UtilText.parse(this, "<p>[npc.Name] now [npc.has] a thick mass of "+getPubicHairType().getFullDescription(this, true)+" in [npc.her] pubic region.</p>"));
+					sb.append(UtilText.parse(this, "<p>[npc.Name] теперь [npc.has] густая масса "+getPubicHairType().getFullDescription(this, true)+" в области лобка [npc.her].</p>"));
 					break;
 				case SEVEN_WILD:
-					sb.append(UtilText.parse(this, "<p>[npc.Name] now [npc.has] a wild, bushy mass of "+getPubicHairType().getFullDescription(this, true)+" in [npc.her] pubic region.</p>"));
+					sb.append(UtilText.parse(this, "<p>[npc.Name] теперь [npc.has] дикая, пушистая масса "+getPubicHairType().getFullDescription(this, true)+" в области лобка [npc.her].</p>"));
 					break;
 			}
 			
@@ -27617,13 +27377,11 @@ public abstract class GameCharacter implements XMLSaving {
 			body.setPiercedStomach(true);
 			if(isPlayer()) {
 				return "<p>"
-							+ "Your navel is now <b style='color:" + PresetColour.TRANSFORMATION_GENERIC.toWebHexString() + ";'>pierced</b>."
-						+ "</p>";
+							+ "Your navel is now <b style='color:" + PresetColour.TRANSFORMATION_GENERIC.toWebHexString() + ";'>проколотые</b>.</p>";
 			}else {
 				return UtilText.parse(this,
 						"<p>"
-							+ "[npc.Her] navel is now <b style='color:" + PresetColour.TRANSFORMATION_GENERIC.toWebHexString() + ";'>pierced</b>."
-						+ "</p>");
+							+ "[npc.Her] navel is now <b style='color:" + PresetColour.TRANSFORMATION_GENERIC.toWebHexString() + ";'>проколотые</b>.</p>");
 			}
 			
 		} else if (isPiercedNavel() && !pierced) {
@@ -27638,21 +27396,18 @@ public abstract class GameCharacter implements XMLSaving {
 			
 			if(isPlayer()) {
 				return "<p>"
-							+ "Your navel is <b style='color:" + PresetColour.TRANSFORMATION_GENERIC.toWebHexString() + ";'>no longer pierced</b>."
-						+ "</p>"
+							+ "Your navel is <b style='color:" + PresetColour.TRANSFORMATION_GENERIC.toWebHexString() + ";'>больше не проколотые</b>.</p>"
 						+piercingUnequip;
 			}else {
 				return UtilText.parse(this,
 						"<p>"
-							+ "[npc.Her] navel is <b style='color:" + PresetColour.TRANSFORMATION_GENERIC.toWebHexString() + ";'>no longer pierced</b>."
-						+ "</p>"
+							+ "[npc.Her] navel is <b style='color:" + PresetColour.TRANSFORMATION_GENERIC.toWebHexString() + ";'>больше не проколотые</b>.</p>"
 						+piercingUnequip);
 			}
 			
 		} else {
 			return "<p>"
-						+ "<span style='color:" + PresetColour.TEXT_GREY.toWebHexString() + ";'>Nothing seems to happen.</span>"
-					+ "</p>";
+						+ "<span style='color:" + PresetColour.TEXT_GREY.toWebHexString() + ";'>Кажется, ничего не происходит.</span></p>";
 		}
 	}
 
@@ -27809,24 +27564,16 @@ public abstract class GameCharacter implements XMLSaving {
 		
 		if(isPlayer()) {
 			if(nailPolish.getPattern()==CoveringPattern.NONE) {
-				return "<p>"
-							+ "You are [style.boldShrink(not wearing)] any nail polish."
-						+ "</p>";
+				return "<p>На вас [style.boldShrink(нет)] лака для ногтей.</p>";
 			} else {
-				return "<p>"
-							+ "You are [style.boldGrow(now wearing)] "+nailPolish.getColourDescriptor(this, true, false)+" nail polish."
-						+ "</p>";
+				return "<p>На вас [style.boldGrow(теперь нанесен)] "+nailPolish.getColourDescriptor(this, true, false)+" лак для ногтей.</p>";
 			}
 			
 		} else {
 			if(nailPolish.getPattern()==CoveringPattern.NONE) {
-				return UtilText.parse(this,"<p>"
-							+ "[npc.Name] is [style.boldShrink(not wearing)] any nail polish."
-						+ "</p>");
+				return UtilText.parse(this,"<p>[npc.Name] [style.boldShrink(не носит)] лак для ногтей.</p>");
 			} else {
-				return UtilText.parse(this,"<p>"
-							+ "[npc.Name] is [style.boldGrow(now wearing)] "+nailPolish.getColourDescriptor(this, true, false)+" nail polish."
-						+ "</p>");
+				return UtilText.parse(this,"<p>[npc.Name] [style.boldGrow(теперь носит)] "+nailPolish.getColourDescriptor(this, true, false)+" лак для ногтей.</p>");
 			}
 		}
 	}
@@ -28132,28 +27879,13 @@ public abstract class GameCharacter implements XMLSaving {
 				|| this.getSubspeciesOverride()==Subspecies.LILIN
 				|| this.getSubspeciesOverride()==Subspecies.ELDER_LILIN
 				|| (this.getBodyMaterial()==BodyMaterial.SILICONE && !forceChange)) { // Doll TF cannot be undone
-			return "<p>"
-						+ "[style.colourDisabled(Nothing happens...)]"
-					+ "</p>";
+			return "<p>[style.colourDisabled(Ничего не происходит...)]</p>";
 		}
 
         // Pregnant slimes are stuck until the pregnancy is resolved
         if(type==BodyMaterial.FLESH && this.getBodyMaterial()==BodyMaterial.SLIME && this.isPregnant()) {
            return UtilText.parse(this,
-        		   "<p>"
-						+ "[npc.NamePos] slimy body starts to tingle all over, and as [npc.she] [npc.verb(look)] down at [npc.her] [npc.arms], [npc.she] [npc.verb(see)] the slime that they're made up of starting to get more and more opaque."
-						+ " As [npc.her] slime starts to solidify, the little glowing core in the place where [npc.her] heart should be suddenly glows brightly while a strange warmth starts to permeate all of [npc.her] body."
-					+ "</p>"
-					+ "<p>"
-						+ "[npc.She] [npc.verb(feel)] the transformation slow down and then reverse until [npc.her] entire body has reverted to being made entirely out of slime!"
-					+ "</p>"
-					+ "<p>"
-						+ "It seems that the ongoing pregnancy is [style.italicsBad(preventing)] [npc.him] from turning into anything other than a slime,"
-							+ " and it looks like [npc.she] will have to give birth before it will be possible to transform into having a body made of flesh."
-					+ "</p>"
-					+ "<p>"
-						+ "[npc.NamePos] body is still made out of [style.boldTfGeneric(slime)]!"
-					+ "</p>");
+        		   "<p>[npc.NamePos] слизистое тело начинает покалывать по всей поверхности, и когда [npc.she] [npc.verb(look)] на [npc.her] [npc.arms], [npc.she] [npc.verb(see)] слизь, из которой они состоят, становится всё более и более непрозрачной. По мере того как [npc.her] слизь начинает затвердевать, маленькое светящееся ядро на месте, где должно быть [npc.her] сердце, внезапно вспыхивает ярким светом, а странное тепло начинает пронизывать всё [npc.her] тело.</p><p>[npc.She] [npc.verb(feel)] трансформация замедляется, а затем обращается вспять, пока [npc.her] всё тело снова не станет полностью состоять из слизи!</p><p> Похоже, что текущая беременность [style.italicsBad(препятствует)] превращению [npc.him] во что-либо, кроме слизи, и, судя по всему, [npc.she] придется рожать, прежде чем станет возможным обрести тело из плоти.</p><p>[npc.NamePos] тело всё еще состоит из [style.boldTfGeneric(слизи)]!</p>");
         }
         
 		if(type == BodyMaterial.SLIME) {
@@ -28179,97 +27911,17 @@ public abstract class GameCharacter implements XMLSaving {
 			}
 			
 			if(this.isPlayer()) {
-				tfDescription = "<p>"
-							+ "Despite the fact that there's no sudden change in the weather, you feel as though the air around you is rapidly getting warmer and warmer,"
-								+ " and within the space of just a few seconds, it's as though you're standing in the middle of a sauna."
-							+ " Droplets of sweat quickly begin to bead on your [pc.skin], forming little rivulets of cool, "
-								+this.getCovering(baseSlimeCoveringType).getPrimaryColour().getName()+" liquid, which quickly run down over your burning body to drip onto the floor beneath you."
-						+ "</p>"
-						+ "<p>"
-							+ "Despite your body's best efforts at cooling you down, you still find yourself getting hotter and hotter, and, with a heavy sigh, you feel your [pc.legs] collapse out from under you as the heavy heat beats you down."
-							+ " Lifting [pc.a_hand] to your face to wipe the sweat from your [pc.eyes], your heat-addled mind suddenly realises that something's very wrong,"
-							+ " [pc.thought(Wait... Why is my sweat "+colourBasic+"?!"
-									+ " And why is there so much of it?!)]"
-						+ "</p>"
-						+ "<p>"
-							+ "You open your mouth to scream, only to discover that your throat is rapidly being filled with liquid, and all you can manage is a garbled cry,"
-							+ " [pc.speechNoEffects(~Bllgh!~ ~Blllgggh!~)]"
-						+ "</p>"
-						+ "<p>"
-							+ "Thrashing around in a frenzied state of panic, your efforts to escape this mysterious goo prove to be completely fruitless, and within a matter of seconds your entire body is covered in slime."
-							+ " What's more, you suddenly realise that you've gotten a lot smaller, and, looking down, you see that your [pc.legs] have completely melted away to form more of the goo that's quickly overtaking you."
-							+ " Your struggles only seem to speed this alarming process up, and after just a minute more, your [pc.arms] have suffered the same fate as your [pc.legs], having melted away into yet more of the "
-								+this.getCovering(baseSlimeCoveringType).getPrimaryColour().getName()+" liquid."
-						+ "</p>"
-						+ "<p>"
-							+ "As the rest of your body proceeds to turn into slime, the intense heat that started this whole process starts to fade away, quickly being replaced by the sense of a still, calm coolness all around you."
-							+ " Sinking down into the ever-increasing quantity of slime that's enveloping you, you're aware of the fact that the final solid parts of your body have now condensed down into a small sphere,"
-								+ " which is what's now housing your senses and consciousness."
-							+ " As this final stage of your transformation presents itself, you find yourself remarkably relaxed, considering that your entire being is now just a little core floating around in a sea of "
-								+colourBasic+"."
-						+ "</p>"
-						+ "<p>"
-							+ "The calm coolness that's surrounding you steadily starts to come under your control, and, having now undergone your complete transformation into a slime core,"
-								+ " you find that you can manipulate the liquid surrounding you in any way you like."
-							+ " Quickly reforming a slimy version of your old body around yourself, you discover that you can project your senses into the areas where they used to reside."
-							+ " Your vision travels up out of your core and into your slimy eyes, finally allowing you escape the world of "
-								+this.getCovering(baseSlimeCoveringType).getPrimaryColour().getName()+" goo and see clearly out into your surroundings once again."
-							+ " Similarly, you restore your senses of hearing, taste, touch, and smell to their original homes, leaving you as very much the person you were before this alarming transformation, albeit now being composed entirely of slime."
-						+ "</p>"
-						+ "<p>"
-							+ "Your entire being is now condensed into a [style.boldSlime(slime core)]!<i>"
-							+ "<br/>- You have complete control over all of the slime which surrounds you, allowing you to morph your body parts at will!"
-								+ " [style.italicsMinorBad(You can only self-transform into races which you've previously encountered.)]" // Also referenced in BodyChanging
-							+ "<br/>- The wetness of your pussy and asshole can never be anything less than "+Wetness.SEVEN_DROOLING.getDescriptor()+"!"
-							+ "<br/>- You are unable to apply any makeup to your slimy body!"
-							+ "<br/>- You can now be impregnated through any orifice, even if you lack a vagina!"
-							+ "<br/>- Your orifices are able to accommodate significantly longer penetrations than before!"
-							+ "</i>"
-						+ "</p>";
+				tfDescription = "<p>Хотя погода и не изменилась внезапно, вам кажется, будто воздух вокруг стремительно теплеет, и всего за несколько секунд вы словно оказываетесь посреди сауны. Капли пота быстро начинают выступать на вашей [pc.skin], образуя маленькие ручейки прохладной, "
+								+this.getCovering(baseSlimeCoveringType).getPrimaryColour().getName()+" жидкость, которая быстро стекает по твоему пылающему телу, капая на пол под тобой.</p><p>Несмотря на все усилия твоего тела охладиться, ты чувствуешь, как жар становится всё сильнее, и с тяжелым вздохом ощущаешь, как твои [pc.legs] подкашиваются под тобой под натиском удушающей жары. Поднеся [pc.a_hand] к лицу, чтобы вытереть пот со [pc.eyes], твой затуманенный жаром разум внезапно осознает, что что-то идет совсем не так, [pc.thought(Погоди... Почему мой пот... "+colourBasic+"?! И почему его так много?!)]</p><p>Вы открываете рот, чтобы закричать, но обнаруживаете, что ваше горло стремительно заполняется жидкостью, и всё, что вам удается издать — это невнятный хрип, [pc.speechNoEffects(~Блльг!~ ~Блльгггх!~)]</p><p>В неистовой панике вы бьетесь в конвульсиях, но ваши попытки выбраться из этой таинственной жижи оказываются совершенно тщетными, и в считанные секунды всё ваше тело покрывается слаймом. Более того, вы внезапно осознаете, что стали намного меньше, и, взглянув вниз, видите, что ваши [pc.legs] полностью расплавились, превратившись в очередную порцию жижи, которая стремительно поглощает вас. Ваши попытки вырваться, кажется, лишь ускоряют этот пугающий процесс, и всего через минуту ваши [pc.arms] постигает та же участь, что и ваши [pc.legs] — они тоже расплавились, став частью этой... "
+								+this.getCovering(baseSlimeCoveringType).getPrimaryColour().getName()+" жидкости.</p><p>По мере того как остальная часть вашего тела превращается в слайм, сильный жар, запустивший весь этот процесс, начинает утихать, быстро сменяясь ощущением неподвижной, спокойной прохлады вокруг вас. Погружаясь в постоянно увеличивающееся количество окутывающего вас слайма, вы осознаете, что последние твердые части вашего тела теперь сжались в маленькую сферу, в которой теперь сосредоточены ваши чувства и сознание. На этой финальной стадии трансформации вы чувствуете удивительное расслабление, учитывая, что всё ваше существо теперь — лишь крошечное ядро, плавающее в море "
+								+colourBasic+".</p><p>Спокойная прохлада, окружающая вас, постепенно начинает подчиняться вашей воле, и, пройдя полную трансформацию в ядро слайма, вы обнаруживаете, что можете манипулировать окружающей вас жидкостью любым удобным способом. Быстро воссоздавая вокруг себя слизистую версию своего прежнего тела, вы понимаете, что можете проецировать свои чувства в те области, где они находились раньше. Ваше зрение устремляется из ядра к вашим слизистым глазам, позволяя вам, наконец, вырваться из мира "
+								+this.getCovering(baseSlimeCoveringType).getPrimaryColour().getName()+" вязкость и снова отчетливо видишь всё вокруг. Точно так же к тебе возвращаются слух, вкус, осязание и обоняние, возвращая тебе прежнюю личность, пусть теперь ты и полностью состоишь из слизи.</p><p>Все твое существо теперь сжато в [style.boldSlime(ядро слизи)]!<i><br/>- Ты полностью контролируешь всю окружающую тебя слизь, что позволяет тебе по своему желанию менять форму частей тела! [style.italicsMinorBad(Ты можешь самотрансформироваться только в те расы, с которыми уже сталкивалась.)]<br/>- Влажность твоей киски и ануса никогда не будет меньше, чем "+Wetness.SEVEN_DROOLING.getDescriptor()+"!<br/>- Ты не можешь наносить макияж на свое слизистое тело!<br/>- Теперь тебя можно оплодотворить через любое отверстие, даже если у тебя нет влагалища!<br/>- Твои отверстия способны выдержать гораздо более глубокое проникновение, чем раньше!</i></p>";
 				
 			} else {
 				tfDescription = UtilText.parse(this,
-						"<p>"
-							+ "[npc.NamePos] cheeks instantly flush, and [npc.she] starts panting and sighing as though [npc.sheIs] suffering from an intense heat stroke."
-							+ " Droplets of sweat quickly begin to bead on [npc.her] [npc.skin], forming little rivulets of cool, "
-								+this.getCovering(baseSlimeCoveringType).getPrimaryColour().getName()+" liquid, which quickly run down over [npc.her] burning body to drip onto the floor beneath [npc.herHim]."
-						+ "</p>"
-						+ "<p>"
-							+ "Despite [npc.her] body's best efforts at cooling [npc.her] down, [npc.she] lets out a heavy sigh, and [npc.her] [npc.legs] collapse out from under [npc.herHim] as [npc.sheIs] beaten down by the intense heat [npc.sheIs] feeling."
-							+ " Lifting [npc.a_hand] to [npc.her] face to wipe the sweat from [npc.her] [npc.eyes], [npc.her] heat-addled mind suddenly realises that something's very wrong, and [npc.she] exclaims,"
-							+ " [npc.speech(Wait... Why is my sweat "+colourBasic+"?!"
-									+ " What's happening?!)]"
-						+ "</p>"
-						+ "<p>"
-							+ "[npc.She] tries to scream, but [npc.her] throat is rapidly being filled with liquid, and all [npc.she] can manage is a garbled cry,"
-							+ " [npc.speechNoEffects(~Bllgh!~ ~Blllgggh!~)]"
-						+ "</p>"
-						+ "<p>"
-							+ "Thrashing around in a frenzied state of panic, [npc.her] efforts to escape this mysterious goo prove to be completely fruitless, and within a matter of seconds [npc.her] entire body is covered in slime."
-							+ " What's more, [npc.she] suddenly realises that [npc.sheIs] gotten a lot smaller, and, looking down,"
-								+ " [npc.she] sees that [npc.her] [npc.legs] have completely melted away to form more of the goo that's quickly overtaking [npc.herHim]."
-							+ " [npc.Her] struggles only seem to speed this alarming process up, and after just a minute more, [npc.her] [npc.arms] have suffered the same fate as [npc.her] [npc.legs], having melted away into yet more of the "
-								+this.getCovering(baseSlimeCoveringType).getPrimaryColour().getName()+" liquid."
-						+ "</p>"
-						+ "<p>"
-							+ "As [npc.name] proceeds to turn into a slime, the final solid parts of [npc.her] body condense down into a small sphere, which is what now houses [npc.her] senses and consciousness."
-							+ " Transformed into a little core that's now floating around in a sea of " +colourBasic+", [npc.name] soon finds that [npc.she] can manipulate the liquid surrounding [npc.herHim] in any way [npc.she] likes."
-						+"</p>"
-						+ "<p>"
-							+ "Quickly reforming a slimy version of [npc.her] old body around [npc.herself], [npc.she] discovers that [npc.she] can project [npc.her] senses into the areas where they used to reside."
-							+ " [npc.Her] slimy eyes slowly blink as [npc.she] escapes the world of "+this.getCovering(baseSlimeCoveringType).getPrimaryColour().getName()+" goo and sees clearly out into [npc.her] surroundings once again."
-							+ " Similarly, [npc.she] restores [npc.her] senses of hearing, taste, touch, and smell to their original homes, leaving [npc.herHim] as very much the person [npc.she] was before this alarming transformation,"
-								+ " albeit now being composed entirely of slime."
-						+ "</p>"
-						+ "<p>"
-							+ "[npc.NamePos] entire being is now condensed into a [style.boldSlime(slime core)]!<br/><i>"
-							+ "- [npc.She] has complete control over all of the slime which surrounds [npc.herHim], allowing [npc.herHim] to morph [npc.her] body parts at will!<br/>"
-							+ "- The wetness of [npc.her] pussy and asshole can never be anything less than "+Wetness.SEVEN_DROOLING.getDescriptor()+"!<br/>"
-							+ "- [npc.She] is unable to apply any makeup to [npc.her] slimy body!<br/>"
-							+ "- [npc.She] can now be impregnated through any orifice, even if [npc.she] lacks a vagina!<br/>"
-							+ "- [npc.Her] orifices are able to accommodate significantly longer penetrations than before!"
-							+ "</i>"
-						+ "</p>");
+						"<p>[npc.NamePos] щеки мгновенно вспыхивают румянцем, а [npc.she] начинает тяжело дышать и вздыхать, словно [npc.sheIs] страдает от сильного теплового удара. Капли пота быстро начинают выступать на [npc.her] [npc.skin], образуя маленькие ручейки прохладной, "
+								+this.getCovering(baseSlimeCoveringType).getPrimaryColour().getName()+" жидкость, которая быстро стекает по горячему телу [npc.her], капая на пол под [npc.herHim].</p><p>Несмотря на все усилия тела [npc.her] охладить [npc.her], [npc.she] тяжело вздыхает, и [npc.her] [npc.legs] обмякают под [npc.herHim], когда [npc.sheIs] поддается изнуряющему чувству жара [npc.sheIs]. Подняв [npc.a_hand] к [npc.her] лицу, чтобы вытереть пот с [npc.her] [npc.eyes], [npc.her] затуманенный жарой разум внезапно осознает, что что-то очень не так, и [npc.she] восклицает: [npc.speech(Погоди... Почему мой пот "+colourBasic+"?! Что происходит?!)]</p><p>[npc.She] пытается закричать, но горло [npc.her] стремительно заполняется жидкостью, и всё, на что [npc.she] способна — это невнятный хрип, [npc.speechNoEffects(~Блльг!~ ~Блльггг!~)]</p><p>В неистовой панике метаясь из стороны в сторону, [npc.her] тщетно пытается вырваться из этой таинственной жижи, но уже через несколько секунд всё тело [npc.her] покрыто слаймом. Более того, [npc.she] внезапно осознаёт, что [npc.sheIs] стала намного меньше, и, посмотрев вниз, [npc.she] видит, что [npc.her] [npc.legs] полностью расплавились, превратившись в ту самую жижу, что стремительно поглощает [npc.herHim]. Похоже, попытки [npc.Her] вырваться лишь ускоряют этот пугающий процесс, и спустя всего минуту [npc.her] [npc.arms] постигает та же участь, что и [npc.her] [npc.legs], — они расплавились, став частью новой порции "
+								+this.getCovering(baseSlimeCoveringType).getPrimaryColour().getName()+" жидкости.</p><p>По мере того как [npc.name] превращается в слайма, последние твердые части [npc.her] тела сжимаются в маленькую сферу, в которой теперь сосредоточены чувства и сознание [npc.her]. Превратившись в крошечное ядро, которое теперь плавает в море " +colourBasic+", [npc.name] вскоре обнаруживает, что [npc.she] может манипулировать жидкостью вокруг [npc.herHim] любым способом, каким [npc.she] пожелает.</p><p>Быстро воссоздав вокруг [npc.herself] слизистую версию старого тела [npc.her], [npc.she] понимает, что [npc.she] может проецировать [npc.her] чувства в те области, где они раньше находились. [npc.Her] слизистые глаза медленно моргают, пока [npc.she] выбирается из мира "+this.getCovering(baseSlimeCoveringType).getPrimaryColour().getName()+" слизи и снова отчетливо видит [npc.her] окружение. Подобным образом, [npc.she] возвращает [npc.her] чувства слуха, вкуса, осязания и обоняния в их прежние места, благодаря чему [npc.herHim] остается практически тем же человеком, каким [npc.she] был до этой пугающей трансформации, хотя теперь и состоит целиком из слайма.</p><p>Все существоство [npc.NamePos] теперь сжато в [style.boldSlime(слизистое ядро)]!<br/><i>- [npc.She] имеет полный контроль над всем слаймом, окружающим [npc.herHim], что позволяет [npc.herHim] по своему желанию менять форму [npc.her] частей тела!<br/>- Влажность [npc.her] киски и ануса никогда не может быть меньше, чем "+Wetness.SEVEN_DROOLING.getDescriptor()+"!<br/>- [npc.She] не может нанести макияж на слизистое тело [npc.her]!<br/>- [npc.She] теперь можно оплодотворить через любое отверстие, даже если у [npc.she] нет влагалища!<br/>- Отверстия [npc.Her] способны выдерживать значительно более глубокие проникновения, чем раньше!</i></p>");
 			}
 		}
 		
@@ -28312,19 +27964,7 @@ public abstract class GameCharacter implements XMLSaving {
 			}
 			
 			tfDescription = UtilText.parse(this,
-					"<p>"
-						+ "[npc.NameIsFull] now an extremely high-quality sex doll, made entirely out of "+colourBasic+" silicone!"
-					+ "</p>"
-					+ "<p>"
-						+ "- [npc.She] cannot gain experience and [npc.is] stuck at level 1!<br/>"
-						+ "- [npc.She] now [npc.has] a limited, doll-specific perk tree and occupational perk!<br/>"
-						+ "- [npc.Her] arcane-infused silicone body is extremely durable!<br/>"
-						+ "- [npc.She] [npc.has] no aura, so cannot harness the arcane nor generate essences from orgasming!<br/>"
-						+ "- [npc.She] can never be impregnated, nor impregnate others!<br/>"
-						+ "- As an object, normal transformation potions do not work on [npc.herHim]!<br/>"
-						+ "- [npc.Her] orifices are able to accommodate extremely long penetrations!"
-						+ "</i>"
-					+ "</p>");
+					"<p>[npc.NameIsFull] теперь представляет собой высококачественную секс-куклу, сделанную целиком из "+colourBasic+" силикон!</p><p>- [npc.She] не может получать опыт, а [npc.is] застревает на 1 уровне!<br/>- [npc.She] теперь [npc.has] имеет ограниченное, специфичное для кукол дерево перков и профессиональный перк!<br/>- [npc.Her] пропитанное арканой силиконовое тело чрезвычайно прочное!<br/>- [npc.She] [npc.has] не имеет ауры, поэтому не может использовать аркану или генерировать эссенции во время оргазма!<br/>- [npc.She] невозможно забеременеть или зачать других!<br/>- Как объект, на [npc.herHim] не действуют обычные зелья трансформации!<br/>- [npc.Her] отверстия способны выдержать экстремально глубокие проникновения!</i></p>");
 			
 			return tfDescription;
 		}
@@ -28333,24 +27973,13 @@ public abstract class GameCharacter implements XMLSaving {
 			StringBuilder sb = new StringBuilder();
 			
 			if(this.getBodyMaterial()==BodyMaterial.SILICONE) {
-				sb.append("<p>"
-						+ "[npc.NamePos] silicone body starts to tingle all over, and as [npc.she] [npc.verb(look)] down at [npc.her] [npc.arms], [npc.she] [npc.verb(see)] [npc.her] smooth skin starting to take on a natural texture."
-						+ " As [npc.she] [npc.verb(begin)] to transform, the little core in the place where [npc.her] heart should be starts to break up and disperse throughout [npc.her] torso."
-					+ "</p>");
+				sb.append("<p>[npc.NamePos] всё силиконовое тело начинает покалывать, и когда [npc.she] [npc.verb(look)] вниз к [npc.her] [npc.arms], [npc.she] [npc.verb(see)] гладкая кожа [npc.her] начинает приобретать естественную текстуру. По мере того как [npc.she] [npc.verb(begin)] трансформироваться, маленькое ядро на месте, где должно быть [npc.her] сердце, начинает распадаться и рассеиваться по всему [npc.her] торсу.</p>");
 				
 			} else {
-				sb.append("<p>"
-						+ "[npc.NamePos] slimy body starts to tingle all over, and as [npc.she] [npc.verb(look)] down at [npc.her] [npc.arms], [npc.she] [npc.verb(see)] the slime that they're made up of starting to get more and more opaque."
-						+ " As [npc.her] slime starts to solidify, the little glowing core in the place where [npc.her] heart should be starts to break up and disperse throughout [npc.her] torso."
-					+ "</p>");
+				sb.append("<p>[npc.NamePos] всё слизистое тело начинает покалывать, и когда [npc.she] [npc.verb(look)] вниз к [npc.her] [npc.arms], [npc.she] [npc.verb(see)] слизь, из которой они состоят, становится всё более и более непрозрачной. По мере того как [npc.her] слизь начинает затвердевать, маленькое светящееся ядро на месте, где должно быть [npc.her] сердце, начинает распадаться и рассеиваться по всему [npc.her] торсу.</p>");
 			}
 			
-			sb.append("<p>"
-						+ "With a sharp gasp, [npc.she] [npc.verb(feel)] the transformation speed up, and within just a few moments, [npc.her] entire body has reverted to being made out of flesh and blood."
-					+ "</p>"
-					+ "<p>"
-						+ "[npc.NamePos] body is now made out of [style.boldTfGeneric(flesh)]!"
-					+ "</p>");
+			sb.append("<p>С резким вдохом [npc.she] [npc.verb(feel)] процесс трансформации ускоряется, и всего через несколько мгновений [npc.her] всё тело снова становится плотью и кровью.</p><p>[npc.NamePos] тело теперь состоит из [style.boldTfGeneric(плоти)]!</p>");
 			
 			tfDescription = UtilText.parse(this, sb.toString());
 			
@@ -28423,9 +28052,7 @@ public abstract class GameCharacter implements XMLSaving {
 				if(resetAreas) {
 					this.getBody().calculateRace(this);
 					tfDescription += UtilText.parse(this,
-							"<p>"
-								+ "[npc.NamePos] body parts all shift back into their [style.colourDemon(demonic counterparts)] as [npc.her] body returns to being made of flesh."
-							+ "</p>");
+							"<p>Части тела [npc.NamePos] возвращаются в свои [style.colourDemon(демонические формы)], пока тело [npc.her] вновь становится плотским.</p>");
 				}
 				
 			} else if(this.getSubspeciesOverride()==Subspecies.HALF_DEMON) {
@@ -28530,9 +28157,7 @@ public abstract class GameCharacter implements XMLSaving {
 				if(resetAreas) {
 					this.getBody().calculateRace(this);
 					tfDescription += UtilText.parse(this,
-							"<p>"
-								+ "[npc.NamePos] body parts all shift back into their [style.colourDemon(half-demonic counterparts)] as [npc.her] body returns to being made of flesh."
-							+ "</p>");
+							"<p>Части тела [npc.NamePos] возвращаются в свои [style.colourDemon(полудемонические формы)], пока тело [npc.her] вновь становится плотским.</p>");
 				}
 				
 			} else {
@@ -28605,9 +28230,7 @@ public abstract class GameCharacter implements XMLSaving {
 					if(resetAreas) {
 						this.getBody().calculateRace(this);
 						tfDescription += UtilText.parse(this,
-								"<p>"
-									+ "[npc.NamePos] [style.colourDemon(demonic)] body parts all shift into [style.colourHuman(human counterparts)] as [npc.her] body returns to being made of flesh."
-								+ "</p>");
+								"<p>[npc.NamePos] [style.colourDemon(демонические)] части тела сменяются [style.colourHuman(человеческими)] по мере того, как тело [npc.her] вновь обретает плоть.</p>");
 					}
 
 				}
@@ -28680,9 +28303,7 @@ public abstract class GameCharacter implements XMLSaving {
 					if(resetAreas) {
 						this.getBody().calculateRace(this);
 						tfDescription += UtilText.parse(this,
-								"<p>"
-									+ "[npc.NamePos] [style.colourAngel(angelic)] body parts all shift into [style.colourHuman(human counterparts)] as [npc.her] body returns to being made of flesh."
-								+ "</p>");
+								"<p>[npc.NamePos] [style.colourAngel(ангельские)] части тела сменяются [style.colourHuman(человеческими)] по мере того, как тело [npc.her] вновь становится плотью.</p>");
 					}
 				}
 			}
@@ -28848,7 +28469,7 @@ public abstract class GameCharacter implements XMLSaving {
 			MilkingRoom room = Main.game.getOccupancyUtil().getMilkingRoom(c.getType(), c.getLocation());
 			room.incrementFluidStored(new FluidStored(this.getId(), this.getMilk(), -increment), -increment);
 			milked = "<p style='text-align:center; padding:0; margin:0;'>"
-						+ UtilText.parse(this, "[style.italicsMilk([npc.NamePos] [npc.milk] is sucked down into the milking machine's storage vat!)]")
+						+ UtilText.parse(this, "[style.italicsMilk([npc.NamePos] [npc.milk] засасывает в накопительный бак доильного аппарата!)]")
 					+ "</p>";
 		}
 		return setBreastStoredMilk(getBreastRawStoredMilkValue() + increment)
@@ -29228,7 +28849,7 @@ public abstract class GameCharacter implements XMLSaving {
 			MilkingRoom room = Main.game.getOccupancyUtil().getMilkingRoom(c.getType(), c.getLocation());
 			room.incrementFluidStored(new FluidStored(this.getId(), this.getMilkCrotch(), -increment), -increment);
 			milked = "<p style='text-align:center; padding:0; margin:0;'>"
-						+ UtilText.parse(this, "[style.italicsMilk([npc.NamePos] [npc.crotchMilk] is sucked down into the milking machine's storage vat!)]")
+						+ UtilText.parse(this, "[style.italicsMilk([npc.NamePos] [npc.crotchMilk] засасывает в накопительный бак доильного аппарата!)]")
 					+ "</p>";
 		}
 		return setBreastCrotchStoredMilk(getBreastCrotchRawStoredMilkValue() + increment)
@@ -29579,24 +29200,16 @@ public abstract class GameCharacter implements XMLSaving {
 		
 		if(isPlayer()) {
 			if(eyeLiner.getPattern()==CoveringPattern.NONE) {
-				return "<p>"
-							+ "You are [style.boldShrink(not wearing)] any eye liner."
-						+ "</p>";
+				return "<p>На вас [style.boldShrink(нет)] подводки для глаз.</p>";
 			} else {
-				return "<p>"
-							+ "You are [style.boldGrow(now wearing)] "+eyeLiner.getColourDescriptor(this, true, false)+" eye liner."
-						+ "</p>";
+				return "<p>На вас [style.boldGrow(теперь нанесен)] "+eyeLiner.getColourDescriptor(this, true, false)+" подводка для глаз.</p>";
 			}
 			
 		} else {
 			if(eyeLiner.getPattern()==CoveringPattern.NONE) {
-				return UtilText.parse(this,"<p>"
-							+ "[npc.Name] is [style.boldShrink(not wearing)] any eye liner."
-						+ "</p>");
+				return UtilText.parse(this,"<p>На [npc.Name] [style.boldShrink(нет)] подводки для глаз.</p>");
 			} else {
-				return UtilText.parse(this,"<p>"
-							+ "[npc.Name] is [style.boldGrow(now wearing)] "+eyeLiner.getColourDescriptor(this, true, false)+" eye liner."
-						+ "</p>");
+				return UtilText.parse(this,"<p>[npc.Name] [style.boldGrow(теперь носит)] "+eyeLiner.getColourDescriptor(this, true, false)+" подводка для глаз.</p>");
 			}
 		}
 	}
@@ -29609,24 +29222,16 @@ public abstract class GameCharacter implements XMLSaving {
 		
 		if(isPlayer()) {
 			if(eyeShadow.getPattern()==CoveringPattern.NONE) {
-				return "<p>"
-							+ "You are [style.boldShrink(not wearing)] any eye shadow."
-						+ "</p>";
+				return "<p>На тебе [style.boldShrink(нет)] теней для глаз.</p>";
 			} else {
-				return "<p>"
-							+ "You are [style.boldGrow(now wearing)] "+eyeShadow.getColourDescriptor(this, true, false)+" eye shadow."
-						+ "</p>";
+				return "<p>На вас [style.boldGrow(теперь нанесен)] "+eyeShadow.getColourDescriptor(this, true, false)+" теней для глаз.</p>";
 			}
 			
 		} else {
 			if(eyeShadow.getPattern()==CoveringPattern.NONE) {
-				return UtilText.parse(this,"<p>"
-							+ "[npc.Name] is [style.boldShrink(not wearing)] any eye shadow."
-						+ "</p>");
+				return UtilText.parse(this,"<p>На [npc.Name] [style.boldShrink(нет)] теней для глаз.</p>");
 			} else {
-				return UtilText.parse(this,"<p>"
-							+ "[npc.Name] is [style.boldGrow(now wearing)] "+eyeShadow.getColourDescriptor(this, true, false)+" eye shadow."
-						+ "</p>");
+				return UtilText.parse(this,"<p>[npc.Name] [style.boldGrow(теперь носит)] "+eyeShadow.getColourDescriptor(this, true, false)+" теней для глаз.</p>");
 			}
 		}
 	}
@@ -29796,24 +29401,16 @@ public abstract class GameCharacter implements XMLSaving {
 		
 		if(isPlayer()) {
 			if(lipstick.getPattern()==CoveringPattern.NONE) {
-				return "<p>"
-							+ "You are [style.boldShrink(not wearing)] any lipstick."
-						+ "</p>";
+				return "<p>На тебе [style.boldShrink(нет)] помады.</p>";
 			} else {
-				return "<p>"
-							+ "You are [style.boldGrow(now wearing)] "+lipstick.getColourDescriptor(this, true, false)+" lipstick."
-						+ "</p>";
+				return "<p>На вас [style.boldGrow(теперь нанесен)] "+lipstick.getColourDescriptor(this, true, false)+" помады.</p>";
 			}
 			
 		} else {
 			if(lipstick.getPattern()==CoveringPattern.NONE) {
-				return UtilText.parse(this,"<p>"
-							+ "[npc.Name] is [style.boldShrink(not wearing)] any lipstick."
-						+ "</p>");
+				return UtilText.parse(this,"<p>На [npc.Name] [style.boldShrink(нет)] помады.</p>");
 			} else {
-				return UtilText.parse(this,"<p>"
-							+ "[npc.Name] is [style.boldGrow(now wearing)] "+lipstick.getColourDescriptor(this, true, false)+" lipstick."
-						+ "</p>");
+				return UtilText.parse(this,"<p>[npc.Name] [style.boldGrow(теперь носит)] "+lipstick.getColourDescriptor(this, true, false)+" помады.</p>");
 			}
 		}
 	}
@@ -29826,24 +29423,16 @@ public abstract class GameCharacter implements XMLSaving {
 		
 		if(isPlayer()) {
 			if(blusher.getPattern()==CoveringPattern.NONE) {
-				return "<p>"
-							+ "You are [style.boldShrink(not wearing)] any blusher."
-						+ "</p>";
+				return "<p>На тебе [style.boldShrink(нет)] румян.</p>";
 			} else {
-				return "<p>"
-							+ "You are [style.boldGrow(now wearing)] "+blusher.getColourDescriptor(this, true, false)+" blusher."
-						+ "</p>";
+				return "<p>На вас [style.boldGrow(теперь нанесен)] "+blusher.getColourDescriptor(this, true, false)+" румян.</p>";
 			}
 			
 		} else {
 			if(blusher.getPattern()==CoveringPattern.NONE) {
-				return UtilText.parse(this,"<p>"
-							+ "[npc.Name] is [style.boldShrink(not wearing)] any blusher."
-						+ "</p>");
+				return UtilText.parse(this,"<p>[npc.Name] [style.boldShrink(не наносит)] румян.</p>");
 			} else {
-				return UtilText.parse(this,"<p>"
-							+ "[npc.Name] is [style.boldGrow(now wearing)] "+blusher.getColourDescriptor(this, true, false)+" blusher."
-						+ "</p>");
+				return UtilText.parse(this,"<p>[npc.Name] [style.boldGrow(теперь носит)] "+blusher.getColourDescriptor(this, true, false)+" румян.</p>");
 			}
 		}
 	}
@@ -29996,12 +29585,12 @@ public abstract class GameCharacter implements XMLSaving {
 	public String setGenitalArrangement(GenitalArrangement type) {
 		if(this.getGenitalArrangement() == type) {
 			return "<p>"
-						+ UtilText.parse(this, "[style.italicsDisabled(Nothing happens, as [npc.namePos] genitals are already in this configuration...)]")
+						+ UtilText.parse(this, "[style.italicsDisabled(Ничего не происходит, так как гениталии [npc.namePos] уже находятся в такой конфигурации...)]")
 					+ "</p>";
 		}
 		if(!this.getLegConfiguration().getAvailableGenitalConfigurations().contains(type)) {
 			return "<p>"
-						+ UtilText.parse(this, "[style.italicsDisabled(Nothing happens, as [npc.namePos] genital configuration cannot be transformed into '"+type.getName()+"' while [npc.her] lower body is of type '[npc.legConfiguration]'...)]")
+						+ UtilText.parse(this, "[style.italicsDisabled(Ничего не происходит, так как конфигурацию гениталий [npc.namePos] невозможно превратить в '"+type.getName()+"' , пока нижняя часть тела [npc.her] относится к типу '[npc.legConfiguration]'...)]")
 					+ "</p>";
 		}
 		
@@ -30009,29 +29598,26 @@ public abstract class GameCharacter implements XMLSaving {
 		sb.append("<p>");
 		switch(this.getGenitalArrangement()) {
 			case CLOACA:
-				sb.append(UtilText.parse(this, "[npc.Name] [npc.verb(let)] out a surprised gasp as an intense, tingling sensation runs down into [npc.her] cloaca."));
+				sb.append(UtilText.parse(this, "[npc.Name] [npc.verb(let)] от удивленного вздоха, когда интенсивное, покалывающее ощущение пробегает вниз, в клоаку [npc.her]."));
 				break;
 			case CLOACA_BEHIND:
-				sb.append(UtilText.parse(this, "[npc.Name] [npc.verb(let)] out a surprised gasp as an intense, tingling sensation runs down into [npc.her] rear-facing cloaca."));
+				sb.append(UtilText.parse(this, "[npc.Name] [npc.verb(let)] от удивленного вздоха, когда интенсивное, покалывающее ощущение пробегает вниз, в обращенную назад клоаку [npc.her]."));
 				break;
 			case NORMAL:
-				sb.append(UtilText.parse(this, "[npc.Name] [npc.verb(let)] out a surprised gasp as an intense, tingling sensation runs down into [npc.her] crotch and ass."));
+				sb.append(UtilText.parse(this, "[npc.Name] [npc.verb(let)] от удивленного вздоха, когда интенсивное, покалывающее ощущение пробегает вниз, в промежность и задницу [npc.her]."));
 				break;
 		}
 
 		body.setGenitalArrangement(type);
 		switch(type) {
 			case CLOACA:
-				sb.append(UtilText.parse(this, " Before [npc.sheHasFull] a chance to react, [npc.her] internal organs shift and transform;"
-						+ " [npc.her] genitals and asshole reposition themselves to be located within a [style.boldTfSex(front-facing, slit-like cloaca, in the place where [npc.her] genitals should normally be)]."));
+				sb.append(UtilText.parse(this, " Прежде чем [npc.sheHasFull] успевает среагировать, внутренние органы [npc.her] смещаются и трансформируются; гениталии и анус [npc.her] перемещаются и располагаются в виде [style.boldTfSex(обращенной вперед, щелевидной клоаки на том месте, где обычно должны находиться гениталии [npc.her])]."));
 				break;
 			case CLOACA_BEHIND:
-				sb.append(UtilText.parse(this, " Before [npc.sheHasFull] a chance to react, [npc.her] internal organs shift and transform;"
-						+ " [npc.her] genitals and asshole reposition themselves to be located within a [style.boldTfSex(rear-facing, slit-like cloaca, in the place where [npc.her] asshole should normally be)]."));
+				sb.append(UtilText.parse(this, " Прежде чем [npc.sheHasFull] успевает среагировать, внутренние органы [npc.her] смещаются и трансформируются; гениталии и анус [npc.her] перемещаются и располагаются в виде [style.boldTfSex(обращенной назад, щелевидной клоаки на том месте, где обычно должен находиться анус [npc.her])]."));
 				break;
 			case NORMAL:
-				sb.append(UtilText.parse(this, " Before [npc.sheHasFull] a chance to react, [npc.her] internal organs shift and transform;"
-						+ " [npc.her] cloaca quickly disappears, leaving [npc.her] [style.boldTfSex(genitals and asshole to be located in the places where they would normally be)]."));
+				sb.append(UtilText.parse(this, " Прежде чем [npc.sheHasFull] успеет среагировать, внутренние органы [npc.her] смещаются и трансформируются; [npc.her] клоака быстро исчезает, оставляя [npc.her] [style.boldTfSex(пенис и анус на тех местах, где они должны находиться в обычном состоянии)]."));
 				break;
 		}
 		sb.append("</p>");
@@ -30117,24 +29703,18 @@ public abstract class GameCharacter implements XMLSaving {
 			body.updateCoverings(false, false, updateBodyHair, false);
 			
 			if (isPlayer()) {
-				return "<p>"
-							+ "You let out a little gasp as your [pc.hair(true)] "+(getHairType().isDefaultPlural(this)?"change":"changes")+" colour.<br/>"
-							+ "You now have [style.boldTfGeneric([pc.hairFullDescription])]."
-						+ "</p>"
+				return "<p>Вы издаете легкий вздох, когда ваш [pc.hair(true)] "+(getHairType().isDefaultPlural(this)?"change":"changes")+" цвет.<br/>Теперь у вас есть [style.boldTfGeneric([pc.hairFullDescription])].</p>"
 						+ postTransformationCalculation();
 			} else {
 				return UtilText.parse(this,
-						"<p>"
-							+ "[npc.Name] lets out a little gasp as [npc.her] [npc.hair(true)] "+(getHairType().isDefaultPlural(this)?"change":"changes")+" colour.<br/>"
-							+ "[npc.She] now has [style.boldTfGeneric([npc.hairFullDescription])]."
-						+ "</p>"
+						"<p>[npc.Name] издает легкий вздох, когда [npc.hair(true)] [npc.her] "+(getHairType().isDefaultPlural(this)?"меняют":"меняет")+" цвет.<br/>Теперь у [npc.She] есть [style.boldTfGeneric([npc.hairFullDescription])].</p>"
 						+ postTransformationCalculation());
 			}
 		}
 
 		body.updateCoverings(false, false, updateBodyHair, false);
 		
-		return "<p>" + "<span style='color:" + PresetColour.TEXT_GREY.toWebHexString() + ";'>Nothing seems to happen.</span>" + "</p>";
+		return "<p>" + "<span style='color:" + PresetColour.TEXT_GREY.toWebHexString() + ";'>Кажется, ничего не происходит.</span></p>";
 	}
 	
 	
@@ -30316,9 +29896,7 @@ public abstract class GameCharacter implements XMLSaving {
 	 */
 	public String setLegConfiguration(AbstractLegType legType, LegConfiguration legConfiguration, boolean applyFullEffects) {
 		if(this.isFeral()) {
-			return "<p style='text-align:center;'>"
-						+ "[style.italicsDisabled(As [npc.sheIsFull] a feral [npc.race], [npc.name] cannot have [npc.her] leg configuration transformed!)]"
-					+ "</p>";
+			return "<p style='text-align:center;'>[style.italicsDisabled(Так как [npc.sheIsFull] — дикий [npc.race], [npc.name] не может иметь трансформированную конфигурацию [npc.her]!)]</p>";
 		}
 		if(legType.isLegConfigurationAvailable(legConfiguration)) {
 			StringBuilder sb = new StringBuilder();
@@ -30403,24 +29981,16 @@ public abstract class GameCharacter implements XMLSaving {
 		
 		if(isPlayer()) {
 			if(nailPolish.getPattern()==CoveringPattern.NONE) {
-				return "<p>"
-							+ "You are [style.boldShrink(not wearing)] any toenail polish."
-						+ "</p>";
+				return "<p>На вас [style.boldShrink(нет)] лака для ногтей.</p>";
 			} else {
-				return "<p>"
-							+ "You are [style.boldGrow(now wearing)] "+nailPolish.getColourDescriptor(this, true, false)+" toenail polish."
-						+ "</p>";
+				return "<p>На вас [style.boldGrow(теперь нанесен)] "+nailPolish.getColourDescriptor(this, true, false)+" лака для ногтей.</p>";
 			}
 			
 		} else {
 			if(nailPolish.getPattern()==CoveringPattern.NONE) {
-				return UtilText.parse(this,"<p>"
-							+ "[npc.Name] is [style.boldShrink(not wearing)] any toenail polish."
-						+ "</p>");
+				return UtilText.parse(this,"<p>На [npc.Name] [style.boldShrink(нет)] лака для ногтей.</p>");
 			} else {
-				return UtilText.parse(this,"<p>"
-							+ "[npc.Name] is [style.boldGrow(now wearing)] "+nailPolish.getColourDescriptor(this, true, false)+" toenail polish."
-						+ "</p>");
+				return UtilText.parse(this,"<p>[npc.Name] [style.boldGrow(теперь носит)] "+nailPolish.getColourDescriptor(this, true, false)+" лака для ногтей.</p>");
 			}
 		}
 	}
@@ -30877,7 +30447,7 @@ public abstract class GameCharacter implements XMLSaving {
 			milkedSB.append((Main.getProperties().hasValue(PropertyValue.cumRegenerationContent)
 									?"[npc.NamePos]"
 									:Units.fluid(Math.abs(increment))+" of [npc.namePos]")
-								+ " [npc.cum] is sucked down into the milking machine's storage vat!");
+								+ " [npc.cum] засасывает в резервуар доильного аппарата!");
 			if(withFormatting) {
 				milkedSB.append(")]</p>");
 			}
@@ -31138,8 +30708,7 @@ public abstract class GameCharacter implements XMLSaving {
 	 */
 	public String setSkinCovering(Covering covering, boolean updateAllSkinColours) {
 		if(!this.isAbleToWearMakeup() && BodyCoveringType.getAllMakeupTypes().contains(covering.getType())) {
-			return "<p>"
-					+ "[style.colourDisabled(Makeup cannot be applied to "+this.getBodyMaterial().getName()+"...)]"
+			return "<p>[style.colourDisabled(Макияж нельзя наносить на "+this.getBodyMaterial().getName()+"...)]"
 				+ "</p>";
 		}
 		
@@ -31163,10 +30732,8 @@ public abstract class GameCharacter implements XMLSaving {
 			
 			if (!affectedParts.isEmpty()) {
 				if (isPlayer()) {
-					return "<p>"
-								+ "The " + coveringType.getName(this) + " on your " + Util.stringsToStringList(affectedParts, false) + " suddenly start" + (coveringType.isDefaultPlural() ? "" : "s") + " to itch, and you let out a startled cry as "
-								+ (coveringType.isDefaultPlural() ? "they begin" : "it begins") + " to change colour.<br/>"
-								+ "You now have "+covering.getFullDescription(this, true)+"."
+					return "<p>Тот " + coveringType.getName(this) + " на ваших " + Util.stringsToStringList(affectedParts, false) + " внезапно начинают" + (coveringType.isDefaultPlural() ? "" : "s") + " чесаться, и вы испуганно вскрикиваете, когда "
+								+ (coveringType.isDefaultPlural() ? "они начинают" : "начинается") + " менять цвет.<br/>Теперь у вас есть "+covering.getFullDescription(this, true)+"."
 							+ "</p>"
 							+ postTransformationCalculation();
 				} else {
@@ -31175,10 +30742,8 @@ public abstract class GameCharacter implements XMLSaving {
 						return "";
 					}
 					return UtilText.parse(this,
-							"<p>"
-								+ "[npc.Name] feels the " + coveringType.getName(this) + " on [npc.her] " + Util.stringsToStringList(affectedParts, false) + " suddenly start to itch, and [npc.she] lets out a startled cry as "
-								+ (coveringType.isDefaultPlural() ? "they begin" : "it begins") + " to change colour.<br/>"
-								+ "[npc.She] now has "+covering.getFullDescription(this, true)+"."
+							"<p>[npc.Name] чувствует, как " + coveringType.getName(this) + " на [npc.her] " + Util.stringsToStringList(affectedParts, false) + " внезапно начинает зудеть, и [npc.she] издает испуганный вскрик, когда "
+								+ (coveringType.isDefaultPlural() ? "они начинают" : "начинается") + " начинает менять цвет. У <br/>[npc.She] теперь есть "+covering.getFullDescription(this, true)+"."
 							+ "</p>"
 							+ postTransformationCalculation());
 				}
@@ -31191,7 +30756,7 @@ public abstract class GameCharacter implements XMLSaving {
 			body.updateCoverings(false, false, false, updateAllSkinColours);
 		}
 
-		return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+		return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 	}
 	
 	

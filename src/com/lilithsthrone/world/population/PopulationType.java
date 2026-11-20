@@ -16,84 +16,84 @@ import com.lilithsthrone.utils.Util;
  */
 public class PopulationType {
 
-	public static AbstractPopulationType PERSON = new AbstractPopulationType("person", "people") {};
+	public static AbstractPopulationType PERSON = new AbstractPopulationType("человек", "люди") {};
 	
-	public static AbstractPopulationType FAN = new AbstractPopulationType("fan", "fans") {};
+	public static AbstractPopulationType FAN = new AbstractPopulationType("фанат", "фанаты") {};
 	
-	public static AbstractPopulationType HARPY = new AbstractPopulationType("harpy", "harpies") {
+	public static AbstractPopulationType HARPY = new AbstractPopulationType("гарпия", "гарпии") {
 		@Override
 		public String getName() {
 			if(Main.game.isSillyModeEnabled()) {
-				return "birb";
+				return "птица";
 			}
-			return "harpy";
+			return "гарпия";
 		}
 		@Override
 		public String getNamePlural() {
 			if(Main.game.isSillyModeEnabled()) {
-				return "birbs";
+				return "птицы";
 			}
-			return "harpies";
+			return "гарпии";
 		}
 	};
 	
-	public static AbstractPopulationType CROWD = new AbstractPopulationType("crowd", "crowds") {};
+	public static AbstractPopulationType CROWD = new AbstractPopulationType("толпа", "толпы") {};
 
-	public static AbstractPopulationType PRIVATE_SECURITY_GUARD = new AbstractPopulationType("private security guard", "private security guards") {};
+	public static AbstractPopulationType PRIVATE_SECURITY_GUARD = new AbstractPopulationType("частный охранник", "частные охранники") {};
 	
 	public static AbstractPopulationType ENFORCER = new AbstractPopulationType("Enforcer", "Enforcers") {};
 	
-	public static AbstractPopulationType SWORD = new AbstractPopulationType("SWORD Enforcer", "SWORD Enforcers") {};
+	public static AbstractPopulationType SWORD = new AbstractPopulationType("МЕЧ Enforcer", "Enforcer из SWORD") {};
 
-	public static AbstractPopulationType CENTAUR_CARTS = new AbstractPopulationType("centaur-pulled cart", "centaur-pulled carts") {};
+	public static AbstractPopulationType CENTAUR_CARTS = new AbstractPopulationType("телега, запряженная кентаврами", "телеги, запряженные кентаврами") {};
 	
-	public static AbstractPopulationType SHOPPER = new AbstractPopulationType("shopper", "shoppers") {};
+	public static AbstractPopulationType SHOPPER = new AbstractPopulationType("покупатель", "покупатели") {};
 	
-	public static AbstractPopulationType DINER = new AbstractPopulationType("diner", "diners") {};
+	public static AbstractPopulationType DINER = new AbstractPopulationType("посетитель", "посетители") {};
 
-	public static AbstractPopulationType VIP = new AbstractPopulationType("VIP", "VIPs") {};
+	public static AbstractPopulationType VIP = new AbstractPopulationType("VIP", "VIP-персоны") {};
 	
-	public static AbstractPopulationType GUARD = new AbstractPopulationType("guard", "guards") {};
+	public static AbstractPopulationType GUARD = new AbstractPopulationType("стражник", "стражники") {};
 	
-	public static AbstractPopulationType SECURITY_GUARD = new AbstractPopulationType("security guard", "security guards") {};
+	public static AbstractPopulationType SECURITY_GUARD = new AbstractPopulationType("охранник", "охранники") {};
 
-	public static AbstractPopulationType MAID = new AbstractPopulationType("maid", "maids") {};
+	public static AbstractPopulationType MAID = new AbstractPopulationType("горничная", "горничные") {};
 
-	public static AbstractPopulationType CHEF = new AbstractPopulationType("chef", "chefs") {};
+	public static AbstractPopulationType CHEF = new AbstractPopulationType("повар", "повара") {};
 
-	public static AbstractPopulationType SLAVE = new AbstractPopulationType("slave", "slaves") {};
+	public static AbstractPopulationType SLAVE = new AbstractPopulationType("рабыня", "рабыни") {};
 	
-	public static AbstractPopulationType OFFICE_WORKER = new AbstractPopulationType("office worker", "office workers") {};
+	public static AbstractPopulationType OFFICE_WORKER = new AbstractPopulationType("офисный работник", "офисные работники") {};
 	
-	public static AbstractPopulationType TEXTILE_WORKER = new AbstractPopulationType("textile worker", "textile workers") {};
+	public static AbstractPopulationType TEXTILE_WORKER = new AbstractPopulationType("рабочий текстильной промышленности", "рабочие текстильной промышленности") {};
 	
-	public static AbstractPopulationType CONSTRUCTION_WORKER = new AbstractPopulationType("construction worker", "construction workers") {};
+	public static AbstractPopulationType CONSTRUCTION_WORKER = new AbstractPopulationType("строитель", "строители") {};
 	
-	public static AbstractPopulationType RECEPTIONIST = new AbstractPopulationType("receptionist", "receptionists") {};
+	public static AbstractPopulationType RECEPTIONIST = new AbstractPopulationType("администратор", "регистраторши") {};
 
-	public static AbstractPopulationType GANG_MEMBER = new AbstractPopulationType("gang member", "gang members") {};
+	public static AbstractPopulationType GANG_MEMBER = new AbstractPopulationType("член банды", "члены банд") {};
 
-	public static AbstractPopulationType STALL_HOLDER = new AbstractPopulationType("stallholder", "stallholders") {};
+	public static AbstractPopulationType STALL_HOLDER = new AbstractPopulationType("торговец", "торговцы") {};
 
-	public static AbstractPopulationType MILKER = new AbstractPopulationType("milker", "milkers") {};
+	public static AbstractPopulationType MILKER = new AbstractPopulationType("дояр", "доярки") {};
 	
-	public static AbstractPopulationType CASHIER = new AbstractPopulationType("cashier", "cashiers") {};
+	public static AbstractPopulationType CASHIER = new AbstractPopulationType("кассир", "кассирши") {};
 	
-	public static AbstractPopulationType CLERK = new AbstractPopulationType("clerk", "clerks") {};
+	public static AbstractPopulationType CLERK = new AbstractPopulationType("клерк", "клерки") {};
 	
-	public static AbstractPopulationType MASSEUSE = new AbstractPopulationType("masseuse", "masseuses") {};
+	public static AbstractPopulationType MASSEUSE = new AbstractPopulationType("массажистка", "массажистки") {};
 	
-	public static AbstractPopulationType AMAZON = new AbstractPopulationType("Amazon", "Amazons") {};
+	public static AbstractPopulationType AMAZON = new AbstractPopulationType("Амазонка", "Амазонки") {};
 	
-	public static AbstractPopulationType AMAZON_GUARD = new AbstractPopulationType("Amazon guard", "Amazon guards") {};
+	public static AbstractPopulationType AMAZON_GUARD = new AbstractPopulationType("стражница Амазонок", "стражницы Амазонок") {};
 	
-	public static AbstractPopulationType LUNETTE_DAUGTHER = new AbstractPopulationType("Lunette's daughter", "Lunette's daughters") {};
+	public static AbstractPopulationType LUNETTE_DAUGTHER = new AbstractPopulationType("дочь Лунетт", "дочери Лунетт") {};
 	
-	public static AbstractPopulationType COCK_SLEEVE = new AbstractPopulationType("cock-sleeve", "cock-sleeves") {};
+	public static AbstractPopulationType COCK_SLEEVE = new AbstractPopulationType("куколка", "куколки") {};
 
-	public static AbstractPopulationType DOLL = new AbstractPopulationType("doll", "dolls") {};
+	public static AbstractPopulationType DOLL = new AbstractPopulationType("кукла", "куклы") {};
 
-	public static AbstractPopulationType OVERSEER = new AbstractPopulationType("overseer", "overseers") {};
+	public static AbstractPopulationType OVERSEER = new AbstractPopulationType("надсмотрщик", "надзирательницы") {};
 	
 	
 	private static List<AbstractPopulationType> allPopulationTypes = new ArrayList<>();

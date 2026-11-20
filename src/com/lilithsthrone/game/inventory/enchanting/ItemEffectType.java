@@ -81,7 +81,7 @@ import com.lilithsthrone.utils.colours.PresetColour;
 public class ItemEffectType {
 	
 	public static AbstractItemEffectType TESTING = new AbstractItemEffectType(Util.newArrayListOfValues(
-			"Test item."),
+			"Тестовый предмет."),
 		PresetColour.GENERIC_ARCANE) {
 		
 		@Override
@@ -93,31 +93,27 @@ public class ItemEffectType {
 	};
 	
 	public static AbstractItemEffectType DYE_BRUSH = new AbstractItemEffectType(Util.newArrayListOfValues(
-				"Recolours a piece of clothing."),
+				"Перекрашивает предмет одежды."),
 			PresetColour.GENERIC_ARCANE) {
 		
 		@Override
 		public String itemEffectOverride(TFModifier primaryModifier, TFModifier secondaryModifier, TFPotency potency, int limit, GameCharacter user, GameCharacter target, ItemEffectTimer timer) {
-			return "<p>"
-					+ "You use the dye brush."
-					+ "</p>";
+			return "<p>Вы используете кисть для окрашивания.</p>";
 		}
 	};
 	
 	public static AbstractItemEffectType REFORGE_HAMMER = new AbstractItemEffectType(Util.newArrayListOfValues(
-				"Changes a weapon's damage type."),
+				"Изменяет тип урона оружия."),
 			PresetColour.GENERIC_ARCANE) {
 		
 		@Override
 		public String itemEffectOverride(TFModifier primaryModifier, TFModifier secondaryModifier, TFPotency potency, int limit, GameCharacter user, GameCharacter target, ItemEffectTimer timer) {
-			return "<p>"
-					+ "You use the reforge hammer."
-					+ "</p>";
+			return "<p>Вы используете молот для перековки.</p>";
 		}
 	};
 	
 	public static AbstractItemEffectType USED_CONDOM_DRINK = new AbstractItemEffectType(Util.newArrayListOfValues(
-			"Provides a dose of stored cum."),
+			"Дает порцию накопленной спермы."),
 			PresetColour.GENERIC_SEX) {
 		@Override
 		public boolean isBreakOutOfInventory() {
@@ -130,7 +126,7 @@ public class ItemEffectType {
 	};
 
 	public static AbstractItemEffectType FILLED_MOO_MILKER_DRINK = new AbstractItemEffectType(Util.newArrayListOfValues(
-			"Provides a milky drink."),
+			"Дает молочный напиток."),
 			PresetColour.GENERIC_SEX) {
 		
 		@Override
@@ -142,7 +138,7 @@ public class ItemEffectType {
 	
 	
 	public static AbstractItemEffectType ORIENTATION_CHANGE = new AbstractItemEffectType(Util.newArrayListOfValues(
-			"Sets orientation to gynephilic.",
+			"Устанавливает ориентацию на гинефилию.",
 			Attribute.MAJOR_CORRUPTION.getFormattedValue(50)),
 			PresetColour.FEMININE_PLUS) {
 		
@@ -182,44 +178,44 @@ public class ItemEffectType {
 			
 			if(primaryModifier!=null && primaryModifier!=TFModifier.NONE) {
 				if(primaryModifier==TFModifier.REMOVAL) {
-					descriptions.add("No effect.");
+					descriptions.add("Нет эффекта.");
 					
 				} else if(primaryModifier==TFModifier.ORIENTATION_GYNEPHILIC) {
-					descriptions.add("Sets orientation to [style.colourFeminineStrong(gynephilic)]");
+					descriptions.add("Устанавливает ориентацию на [style.colourFeminineStrong(гинефилию)]");
 					descriptions.add(Attribute.MAJOR_CORRUPTION.getFormattedValue(5));
 					
 				} else if(primaryModifier==TFModifier.ORIENTATION_AMBIPHILIC) {
-					descriptions.add("Sets orientation to [style.colourAndrogynous(ambiphilic)]");
+					descriptions.add("Устанавливает ориентацию на [style.colourAndrogynous(амбифильный)]");
 					descriptions.add(Attribute.MAJOR_CORRUPTION.getFormattedValue(5));
 					
 				} else if(primaryModifier==TFModifier.ORIENTATION_ANDROPHILIC) {
-					descriptions.add("Sets orientation to [style.colourMasculineStrong(androphilic)]");
+					descriptions.add("Устанавливает ориентацию на [style.colourMasculineStrong(андрофильный)]");
 					descriptions.add(Attribute.MAJOR_CORRUPTION.getFormattedValue(5));
 					
 				} else if(primaryModifier==TFModifier.PERSONALITY_TRAIT_SPEECH_LISP) {
 					if(potency==TFPotency.MINOR_DRAIN) {
-						descriptions.add("Removes <b style='color:"+TFModifier.PERSONALITY_TRAIT_SPEECH_LISP.getColour().toWebHexString()+";'>lisp</b>");
+						descriptions.add("Убирает <b style='color:"+TFModifier.PERSONALITY_TRAIT_SPEECH_LISP.getColour().toWebHexString()+";'>шепелявость</b>");
 					} else {
-						descriptions.add("Adds <b style='color:"+TFModifier.PERSONALITY_TRAIT_SPEECH_LISP.getColour().toWebHexString()+";'>lisp</b>");
+						descriptions.add("Добавляет <b style='color:"+TFModifier.PERSONALITY_TRAIT_SPEECH_LISP.getColour().toWebHexString()+";'>шепелявость</b>");
 					}
 					
 				} else if(primaryModifier==TFModifier.PERSONALITY_TRAIT_SPEECH_STUTTER) {
 					if(potency==TFPotency.MINOR_DRAIN) {
-						descriptions.add("Removes <b style='color:"+TFModifier.PERSONALITY_TRAIT_SPEECH_STUTTER.getColour().toWebHexString()+";'>stutter</b>");
+						descriptions.add("Убирает <b style='color:"+TFModifier.PERSONALITY_TRAIT_SPEECH_STUTTER.getColour().toWebHexString()+";'>заикание</b>");
 					} else {
-						descriptions.add("Adds <b style='color:"+TFModifier.PERSONALITY_TRAIT_SPEECH_STUTTER.getColour().toWebHexString()+";'>stutter</b>");
+						descriptions.add("Добавляет <b style='color:"+TFModifier.PERSONALITY_TRAIT_SPEECH_STUTTER.getColour().toWebHexString()+";'>заикание</b>");
 					}
 					
 				} else if(primaryModifier==TFModifier.PERSONALITY_TRAIT_SPEECH_SLOVENLY) {
 					if(potency==TFPotency.MINOR_DRAIN) {
-						descriptions.add("Removes <b style='color:"+TFModifier.PERSONALITY_TRAIT_SPEECH_SLOVENLY.getColour().toWebHexString()+";'>slovenly speech</b>");
+						descriptions.add("Убирает <b style='color:"+TFModifier.PERSONALITY_TRAIT_SPEECH_SLOVENLY.getColour().toWebHexString()+";'>небрежная речь</b>");
 					} else {
-						descriptions.add("Adds <b style='color:"+TFModifier.PERSONALITY_TRAIT_SPEECH_SLOVENLY.getColour().toWebHexString()+";'>slovenly speech</b>");
+						descriptions.add("Добавляет <b style='color:"+TFModifier.PERSONALITY_TRAIT_SPEECH_SLOVENLY.getColour().toWebHexString()+";'>небрежная речь</b>");
 					}
 				}
 				
 			} else {
-				descriptions.add("Enchantable.");
+				descriptions.add("Можно зачаровать.");
 			}
 			
 			return descriptions;
@@ -236,9 +232,7 @@ public class ItemEffectType {
 							|| primaryModifier==TFModifier.ORIENTATION_AMBIPHILIC
 							|| primaryModifier==TFModifier.ORIENTATION_ANDROPHILIC)) {
 					return UtilText.parse(target,
-							"<p style='text-align:center;'>"
-									+ "[style.colourDisabled(As a sex doll, [npc.name] can never be anything other than ambiphilic...)]"
-								+ "</p>");
+							"<p style='text-align:center;'>[style.colourDisabled(Как секс-кукла, [npc.name] никогда не сможет быть кем-то иным, кроме как амбифилом...)]</p>");
 				}
 				
 				if(primaryModifier==TFModifier.ORIENTATION_GYNEPHILIC) {
@@ -247,8 +241,8 @@ public class ItemEffectType {
 					return UtilText.parse(target,
 							"<p style='text-align:center;'>"
 									+ (alreadyGynephilic
-											?"[style.colourDisabled([npc.NameIsFull] already gynephilic, so nothing happens...)]"
-											:"[npc.NameIsFull] now [style.colourFemininePlus(gynephilic)]!")
+											?"[style.colourDisabled([npc.NameIsFull] уже гинефил, так что ничего не происходит...)]"
+											:"[npc.NameIsFull] теперь [style.colourFemininePlus(гинефил)]!")
 								+ "</p>");
 					
 				} else if(primaryModifier==TFModifier.ORIENTATION_AMBIPHILIC) {
@@ -257,8 +251,8 @@ public class ItemEffectType {
 					return UtilText.parse(target,
 							"<p style='text-align:center;'>"
 									+ (alreadyAmbiphilic
-											?"[style.colourDisabled([npc.NameIsFull] already ambiphilic, so nothing happens...)]"
-											:"[npc.NameIsFull] now [style.colourAndrogynous(ambiphilic)]!")
+											?"[style.colourDisabled([npc.NameIsFull] уже амбифил, так что ничего не происходит...)]"
+											:"[npc.NameIsFull] теперь [style.colourAndrogynous(амбифил)]!")
 								+ "</p>");
 					
 					
@@ -268,8 +262,8 @@ public class ItemEffectType {
 					return UtilText.parse(target,
 							"<p style='text-align:center;'>"
 									+ (alreadyAndrophilic
-											?"[style.colourDisabled([npc.NameIsFull] already androphilic, so nothing happens...)]"
-											:"[npc.NameIsFull] now [style.colourMasculinePlus(androphilic)]!")
+											?"[style.colourDisabled([npc.NameIsFull] уже андрофил, так что ничего не происходит...)]"
+											:"[npc.NameIsFull] теперь [style.colourMasculinePlus(андрофил)]!")
 								+ "</p>");
 					
 				} else if(primaryModifier==TFModifier.PERSONALITY_TRAIT_SPEECH_LISP) {
@@ -296,10 +290,7 @@ public class ItemEffectType {
 				
 			} 
 			
-			return "<p>"
-						+ "Nothing happens, as the Hypno-Watch has had its enchantment removed."
-						+ " You'll need to enchant it if you want to put it to use."
-					+ "</p>";
+			return "<p>Ничего не происходит, так как с Гипно-часов снято зачарование. Чтобы использовать их снова, вам придется наложить чары заново.</p>";
 		}
 	};
 	
@@ -361,7 +352,7 @@ public class ItemEffectType {
 	
 
 	public static AbstractItemEffectType MOO_MILKER = new AbstractItemEffectType(Util.newArrayListOfValues(
-			"Milks breasts."),
+			"Доит грудь."),
 			PresetColour.GENERIC_SEX) {
 		
 		@Override
@@ -369,16 +360,12 @@ public class ItemEffectType {
 			int milkPumped = (int) Math.min(target.getBreastRawStoredMilkValue(), ItemType.getMooMilkerMaxMilk());
 			target.incrementBreastStoredMilk(-milkPumped);
 			if(target.isPlayer()) {
-				return "<p>"
-							+ "It only takes a moment before the beaker is filled with "+ Units.fluid(milkPumped, Units.UnitType.LONG)+" of your [pc.milk]."
-						+ "</p>"
+				return "<p>Проходит всего мгновение, и мензурка наполняется "+ Units.fluid(milkPumped, Units.UnitType.LONG)+" вашей [pc.milk].</p>"
 						+ user.addItem(Main.game.getItemGen().generateFilledBreastPump(ItemType.MOO_MILKER_EMPTY.getColourShades().get(0), target, target.getMilk(), milkPumped), false, true);
 			
 			} else {
 				return UtilText.parse(target,
-						"<p>"
-							+ "It only takes a moment before the beaker is filled with "+Units.fluid(milkPumped, Units.UnitType.LONG)+" of [npc.her] [npc.milk]."
-						+ "</p>"
+						"<p>Проходит всего мгновение, и мензурка наполняется "+Units.fluid(milkPumped, Units.UnitType.LONG)+" of [npc.her] [npc.milk].</p>"
 						+ user.addItem(Main.game.getItemGen().generateFilledBreastPump(ItemType.MOO_MILKER_EMPTY.getColourShades().get(0), target, target.getMilk(), milkPumped), false, true));
 			}
 		}
@@ -386,7 +373,7 @@ public class ItemEffectType {
 	
 
 	public static AbstractItemEffectType PREGNANCY_TEST = new AbstractItemEffectType(Util.newArrayListOfValues(
-			"Reveals pregnancy info."),
+			"Показывает информацию о беременности."),
 			PresetColour.GENERIC_SEX) {
 		
 		@Override
@@ -406,7 +393,7 @@ public class ItemEffectType {
 				target.getPotentialPartnersAsMother().removeIf((pp) -> !pp.getFatherId().equals(target.getPregnantLitter().getFatherId()));
 				
 				GameCharacter father = target.getPregnantLitter().getFather();
-				String unknownFatherName = "Unknown!";
+				String unknownFatherName = "Неизвестно!";
 				if(father==null) {
 					try {
 						OffspringSeed offspring0 = target.getPregnantLitter().getOffspringSeed().iterator().next();
@@ -434,17 +421,14 @@ public class ItemEffectType {
 					+ "</p>";
 				
 			} else {
-				return "<p style='text-align:center;'>"
-					+ "The digital readout lights up with a single red line, with solid black text next to that displaying:"
-					+ "<br/><b>'<i>Not Pregnant.</i>'</b>"
-				+ "</p>";
+				return "<p style='text-align:center;'>Цифровой дисплей загорается одной красной линией, а рядом с ней виден сплошной черный текст:<br/><b>'<i>Не беременна.</i>'</b></p>";
 			}
 		}
 	};
 	
 	
 	public static AbstractItemEffectType MOTHERS_MILK = new AbstractItemEffectType(Util.newArrayListOfValues(
-			"Advances pregnancy and incubations."),
+			"Продвигает беременность и инкубацию."),
 			PresetColour.GENERIC_SEX) {
 		
 		@Override
@@ -453,7 +437,7 @@ public class ItemEffectType {
 			boolean effectsObserved = false;
 			
 			sb.append("<p>");
-			sb.append("[npc.Name] eagerly [npc.verb(gulp)] down the rich, creamy liquid; its delicious taste spurs [npc.herHim] on into quickly draining the entire bottle.");
+			sb.append("[npc.Name] с жадностью [npc.verb(gulp)] густую, кремовую жидкость; её восхитительный вкус подстегивает [npc.herHim], заставляя её быстро осушить всю бутылку.");
 
 			Map<SexAreaOrifice, List<AbstractStatusEffect>> incubationEffectMap = Util.newHashMapOfValues(
 					new Value<>(SexAreaOrifice.VAGINA, Util.newArrayListOfValues(StatusEffect.INCUBATING_EGGS_WOMB_1, StatusEffect.INCUBATING_EGGS_WOMB_2, StatusEffect.INCUBATING_EGGS_WOMB_3)),
@@ -484,14 +468,14 @@ public class ItemEffectType {
 						}
 						sb.append("</br>");
 						if(eggs>1) {
-							sb.append("The eggs being incubated in [npc.namePos] <b>"+areaName+"</b> rapidly mature and get noticeably heavier, letting [npc.herHim] know that they're ");
+							sb.append("Яйца, инкубируемые в [npc.namePos] <b>"+areaName+"</b> стремительно созревают и заметно тяжелеют, давая [npc.herHim] понять, что они ");
 						} else {
-							sb.append("The egg being incubated in [npc.namePos] <b>"+areaName+"</b> rapidly matures and gets noticeably heavier, letting [npc.herHim] know that it's ");
+							sb.append("Яйцо, инкубируемое в [npc.namePos] <b>"+areaName+"</b> стремительно созревает и заметно тяжелеет, давая [npc.herHim] понять, что оно ");
 						}
 						if(target.hasStatusEffect(entry.getValue().get(1))) {
-							sb.append("[style.colourYellowLight(advanced to the next stage of incubation)]!");
+							sb.append("[style.colourYellowLight(перешло на следующую стадию инкубации)]!");
 						} else {
-							sb.append("now [style.colourYellowLight(ready to be laid)]!");
+							sb.append("теперь [style.colourYellowLight(готово к откладыванию)]!");
 						}
 					}
 				}
@@ -507,9 +491,7 @@ public class ItemEffectType {
 						target.removeStatusEffect(StatusEffect.PREGNANT_2);
 					}
 					sb.append("</br>");
-					sb.append("Immediately, [npc.her] belly rapidly swells and grows in size, and [npc.she] can't help but let out a deep [npc.moan] as a rush of energy flows up throughout [npc.her] body."
-								+ " After just a moment, the effects come a halt, and [npc.name] [npc.verb(smile)] happily to [npc.herself] as"
-									+ " [npc.she] [npc.verb(reflect)] on the fact that the expansion of [npc.her] pregnant bump has taken [npc.herHim] into the next stage of [npc.her] pregnancy...");
+					sb.append("Тут же живот [npc.her] стремительно раздувается и увеличивается в размерах, и [npc.she] не может сдержать глубокий [npc.moan], когда поток энергии разливается по всему телу [npc.her]. Спустя мгновение действие прекращается, и [npc.name] счастливо [npc.verb(smile)] к [npc.herself], осознавая [npc.she] [npc.verb(reflect)] тот факт, что расширение [npc.her] беременного живота перевело [npc.herHim] на следующую стадию [npc.her] беременности...");
 				}
 				
 			} else if(target.hasStatusEffect(StatusEffect.PREGNANT_0)) {
@@ -518,18 +500,16 @@ public class ItemEffectType {
 				
 				if(target.isPregnant()) {
 					sb.append("</br>");
-					sb.append("A soothing warmth quickly spreads throughout [npc.her] lower abdomen, and as [npc.she] [npc.verb(let)] out an involuntary gasp,"
-									+ " [npc.her] belly suddenly swells up into an unmistakably [style.boldMinorGood(pregnant bump)]!");
+					sb.append("Успокаивающее тепло быстро разливается по нижней части живота [npc.her], и когда [npc.she] [npc.verb(let)] непроизвольный вздох, живот [npc.her] внезапно раздувается, превращаясь в безошибочно узнаваемый [style.boldMinorGood(беременный живот)]!");
 					
 				} else {
 					sb.append("</br>");
-					sb.append("Although a soothing warmth spreads throughout [npc.her] lower abdomen, no sign of any pregnancy manifests itself in [npc.her] belly."
-								+ " It looks like [npc.sheIs] [style.boldMinorBad(not pregnant)] after all...");
+					sb.append("Хотя по нижней части живота [npc.her] разливается успокаивающее тепло, в животе [npc.her] не проявляется никаких признаков беременности. Похоже, [npc.sheIs] всё-таки [style.boldMinorBad(не беременна)]...");
 				}
 			}
 			
 			if(!effectsObserved) {
-				sb.append("Aside from quenching [npc.her] thirst, the liquid doesn't have any effect on [npc.name]...");
+				sb.append("Помимо утоления [npc.her] жажды, жидкость не оказывает никакого влияния на [npc.name]...");
 			}
 			
 			sb.append("</p>");
@@ -545,13 +525,13 @@ public class ItemEffectType {
 		public List<String> getEffectsDescription(TFModifier primaryModifier, TFModifier secondaryModifier, TFPotency potency, int limit, GameCharacter user, GameCharacter target) {
 			List<String> effects = new ArrayList<>();
 			
-			effects.add("[style.colourExcellent(Instantly recovers)] [style.colourSex(stretched orifices)]");
+			effects.add("[style.colourExcellent(Мгновенно восстанавливает)] [style.colourSex(растянутые отверстия)]");
 			
 			if(Main.game.isLactationContentEnabled()) {
-				effects.add("[style.colourGood(Fully refills)] [style.colourMilk(milk storage)]");
+				effects.add("[style.colourGood(Полностью наполняет)] [style.colourMilk(запас молока)]");
 			}
 			if(Main.game.isCumRegenerationEnabled()) {
-				effects.add("[style.colourGood(Fully refills)] [style.colourCum(cum storage)]");
+				effects.add("[style.colourGood(Полностью наполняет)] [style.colourCum(запас спермы)]");
 			}
 			
 			return effects;
@@ -579,48 +559,46 @@ public class ItemEffectType {
 				target.setNippleCrotchStretchedCapacity(target.getNippleCrotchRawCapacityValue());
 			}
 			if (target.hasPenis() && target.getPenisRawCapacityValue()!=target.getPenisStretchedCapacity()){
-				areasTightened.add("penile urethra");
+				areasTightened.add("мужская уретра");
 				target.setPenisStretchedCapacity(target.getPenisRawCapacityValue());
 			}
 			if (target.hasVagina() && target.getVaginaUrethraRawCapacityValue()!=target.getVaginaUrethraStretchedCapacity()){
-				areasTightened.add("vaginal urethra");
+				areasTightened.add("женская уретра");
 				target.setVaginaUrethraStretchedCapacity(target.getVaginaUrethraRawCapacityValue());
 			}
 			
 			if(!areasTightened.isEmpty()) {
 				sb.append(UtilText.parse(target,
-							"<br/>[npc.Her] stretched-out [style.colourSex("+Util.stringsToStringList(areasTightened, false)+")]"
+							"<br/>[npc.Her] растянутый [style.colourSex("+Util.stringsToStringList(areasTightened, false)+")]"
 							+ (areasTightened.size()>1
-								?" [style.colourGood(tighten back up)]!"
-								:" [style.colourGood(tightens back up)]!")));
+								?" [style.colourGood(снова сужается)]!"
+								:" [style.colourGood(снова сужается)]!")));
 			}
 			
 			if(Main.game.isLactationContentEnabled()) {
 				if(target.getBreastRawMilkStorageValue()>0 && target.getBreastRawStoredMilkValue()<target.getBreastRawMilkStorageValue()) {
 					target.setBreastStoredMilk(target.getBreastRawMilkStorageValue());
-					sb.append(UtilText.parse(target, "<br/>[npc.NamePos] [npc.breasts+] [style.colourGood(fill up)] with [npc.milk]!"));
+					sb.append(UtilText.parse(target, "<br/>[npc.NamePos] [npc.breasts+] [style.colourGood(наполняется)] [npc.milk]!"));
 				}
 				if(target.hasBreastsCrotch() && target.getBreastCrotchRawMilkStorageValue()>0 && target.getBreastCrotchRawStoredMilkValue()<target.getBreastCrotchRawMilkStorageValue()) {
 					target.setBreastCrotchStoredMilk(target.getBreastCrotchRawMilkStorageValue());
-					sb.append(UtilText.parse(target, "<br/>[npc.NamePos] [npc.crotchBoobs+] [style.colourGood(fill up)] with [npc.crotchMilk]!"));
+					sb.append(UtilText.parse(target, "<br/>[npc.NamePos] [npc.crotchBoobs+] [style.colourGood(наполняется)] благодаря [npc.crotchMilk]!"));
 				}
 			}
 
 			if(Main.game.isCumRegenerationEnabled()) {
 				if(target.hasPenis() && target.getPenisRawCumStorageValue()>0 && target.getPenisRawStoredCumValue()<target.getPenisRawCumStorageValue()) {
 					target.setPenisStoredCum(target.getPenisRawCumStorageValue());
-					sb.append(UtilText.parse(target, "<br/>[npc.NamePos] [npc.balls+] [style.colourGood(fill up)] with [npc.cum]!"));
+					sb.append(UtilText.parse(target, "<br/>[npc.NamePos] [npc.balls+] [style.colourGood(наполняется)] благодаря [npc.cum]!"));
 				}
 			}
 			
 			if(sb.length()==0) {
 				sb.append(UtilText.parse(target,
-							"<br/>Apart from experiencing this comforting feeling, nothing else happens to [npc.herHim]..."));
+							"<br/>Помимо этого приятного ощущения, с [npc.herHim] больше ничего не происходит..."));
 			}
 			
-			return "<p style='text-align:center;'>"
-						+"[npc.Name] [npc.verb(let)] out a deep sigh as a cool, soothing sensation starts to wash over [npc.herHim]."
-						+ "<i>"
+			return "<p style='text-align:center;'>[npc.Name] [npc.verb(let)] глубокий вздох, когда прохладное, успокаивающее чувство начинает омывать [npc.herHim].<i>"
 							+ sb.toString()
 						+"</i>"
 					+ "</p>";
@@ -628,7 +606,7 @@ public class ItemEffectType {
 	};
 	
 	public static AbstractItemEffectType CIGARETTE_PACK = new AbstractItemEffectType(Util.newArrayListOfValues(
-			"Provides 20 Starr Cigarettes."),
+			"Дает 20 сигарет «Стар»."),
 			PresetColour.BASE_PURPLE) {
 		
 		@Override
@@ -651,16 +629,13 @@ public class ItemEffectType {
 		@Override
 		public String itemEffectOverride(TFModifier primaryModifier, TFModifier secondaryModifier, TFPotency potency, int limit, GameCharacter user, GameCharacter target, ItemEffectTimer timer) {
 			return UtilText.parse(target,
-					"<p>"
-						+ "[npc.Name] immediately [npc.verb(feel)] the positive effects of the aura-boosting supplements added to the Starr Cigarette."
-						+ " As the smoke fills [npc.her] lungs, however, [npc.she] also [npc.verb(feel)] slightly less healthy..."
-					+ "</p>");
+					"<p>[npc.Name] немедленно [npc.verb(feel)] положительный эффект добавок, усиливающих ауру, в сигаретах «Стар». Однако, когда дым наполняет легкие [npc.her], [npc.she] также [npc.verb(feel)] становится чуть менее здоровым...</p>");
 		}
 	};
 
 	public static AbstractItemEffectType MAKEUP_SET = new AbstractItemEffectType(Util.newArrayListOfValues(
-			"[style.colourPink(Opens cosmetics screen)]",
-			"[style.colourSex(Automatically re-applies heavy lipstick after sex)]"),
+			"[style.colourPink(Открыть экран косметики)]",
+			"[style.colourSex(Автоматически наносить густую помаду после секса)]"),
 			PresetColour.BASE_PURPLE) {
 		@Override
 		public boolean isBreakOutOfInventory() {
@@ -674,14 +649,14 @@ public class ItemEffectType {
 					"",
 					MiscDialogue.getMakeupDialogue(false,
 							(BodyChanging.getTarget().isPlayer()
-								?"You open the arcane makeup set and prepare to get started..."
-								:"You open the arcane makeup set and prepare to get started on applying makeup to [npc.name]..."))));
+								?"Вы открываете набор арканной косметики и готовитесь приступить..."
+								:"Вы открываете набор арканной косметики и готовитесь нанести макияж на [npc.name]..."))));
 			return "";
 		}
 	};
 
 	public static AbstractItemEffectType DOLL_CONSOLE = new AbstractItemEffectType(Util.newArrayListOfValues(
-			"[style.colourPink(Opens doll customisation screen)]"),
+			"[style.colourPink(Открыть экран настройки куклы)]"),
 			PresetColour.BASE_PURPLE) {
 		@Override
 		public boolean isBreakOutOfInventory() {
@@ -702,8 +677,8 @@ public class ItemEffectType {
 	// Ingredients and potions:
 	
 	public static AbstractItemEffectType MYSTERY_KINK = new AbstractItemEffectType(Util.newArrayListOfValues(
-			"[style.italicsSex(+50)] [style.italicsLust(Lust)]",
-			"[style.italicsSex(+50)] [style.italicsArousal(Arousal)] during sex"
+			"[style.italicsSex(+50)] [style.italicsLust(Похоть)]",
+			"[style.italicsSex(+50)] [style.italicsArousal(Возбуждение)] во время секса"
 			//"[style.colourFetish(Random fetish addition or removal)]"
 			),
 			PresetColour.FETISH) {
@@ -715,7 +690,7 @@ public class ItemEffectType {
 			if(Main.game.isInSex()) {
 				target.incrementArousal(50);
 				sb.append("<p style='text-align:center;'>"
-							+ UtilText.parse(target, "[npc.Name] [style.colourSex(gained)] [style.boldSex(50 arousal)]!")
+							+ UtilText.parse(target, "[npc.Name] [style.colourSex(получено)] [style.boldSex(50 возбуждения)]!")
 						+ "</p>");
 			}
 			return sb.toString();
@@ -723,9 +698,9 @@ public class ItemEffectType {
 	};
 	
 	public static AbstractItemEffectType ADDICTION_REMOVAL = new AbstractItemEffectType(Util.newArrayListOfValues(
-			"[style.colourMinorGood(Removes)] [style.colourExcellent(all)] [style.colourBad(addictions)]",
-			"[style.colourMinorGood(Removes)] [style.colourAlcohol(alcohol intoxication)]",
-			"[style.colourMinorGood(Removes)] [style.colourPsychoactive(psychoactive effects)]"),
+			"[style.colourMinorGood(Снимает)] [style.colourExcellent(все)] [style.colourBad(зависимости)]",
+			"[style.colourMinorGood(Снимает)] [style.colourAlcohol(алкогольное опьянение)]",
+			"[style.colourMinorGood(Снимает)] [style.colourPsychoactive(психоактивные эффекты)]"),
 			PresetColour.BASE_GOLD) {
 		
 		@Override
@@ -742,18 +717,18 @@ public class ItemEffectType {
 			StringBuilder sb = new StringBuilder();
 			
 			sb.append("<p style='text-align:center;'>");
-				sb.append("[npc.Name] [npc.verb(feel)] a blissful sense of inner-peace wash over [npc.herHim]...");
+				sb.append("[npc.Name] [npc.verb(feel)] блаженное чувство внутреннего покоя накрывает [npc.herHim]...");
 				if(hadAddictions) {
-					sb.append("<br/><i>[npc.SheIsFull] no longer addicted to any substances!</i>");
+					sb.append("<br/><i>[npc.SheIsFull] больше не зависит ни от каких веществ!</i>");
 				}
 				if(drunk) {
-					sb.append("<br/><i>The alcohol still in [npc.her] system instantly metabolises!</i>");
+					sb.append("<br/><i>Алкоголь в организме [npc.her] мгновенно перерабатывается!</i>");
 				}
 				if(psychoactive) {
-					sb.append("<br/><i>The psychoactive trip which [npc.she] [npc.was] experiencing suddenly comes to an end!</i>");
+					sb.append("<br/><i>Психоделический трип, который [npc.she] [npc.was] испытывает, внезапно заканчивается!</i>");
 				}
 				if(!hadAddictions && !drunk && !psychoactive) {
-					sb.append("<br/>[style.italicsDisabled(Other than experiencing this pleasant feeling, nothing happens...)]");
+					sb.append("<br/>[style.italicsDisabled(Помимо этого приятного ощущения, больше ничего не происходит...)]");
 				}
 			sb.append("</p>");
 			
@@ -762,7 +737,7 @@ public class ItemEffectType {
 	};
 	
 	public static AbstractItemEffectType MUSHROOMS = new AbstractItemEffectType(Util.newArrayListOfValues(
-			"[style.colourTfGeneric(Makes slime and orifice interiors glow)]"),
+			"[style.colourTfGeneric(Заставляет слайма и внутренности отверстий светиться)]"),
 			PresetColour.ATTRIBUTE_CORRUPTION) {
 		@Override
 		public Map<AbstractStatusEffect, Integer> getAppliedStatusEffects() {
@@ -774,16 +749,16 @@ public class ItemEffectType {
 
 			if(target.isDoll()) {
 				return "<p style='text-align:center;'>"
-							+ UtilText.parse(target, "[style.colourDisabled(As [npc.sheIs] a sex doll, [npc.nameIsFull] completely unaffected by the mushrooms...)]")
+							+ UtilText.parse(target, "[style.colourDisabled(Как [npc.sheIs] секс-кукла, [npc.nameIsFull] совершенно невосприимчива к грибам...)]")
 						+"</p>";
 			}
 			
 			sb.append("<p style='text-align:center;'>");
 				if(target.getBodyMaterial()==BodyMaterial.SLIME) {
 					if(target.isPlayer()) {
-						sb.append("Your slimy body starts [style.boldTfGeneric(glowing)]!");
+						sb.append("Твое слизистое тело начинает [style.boldTfGeneric(светиться)]!");
 					} else {
-						sb.append(UtilText.parse(target, "[npc.NamePos] slimy body starts [style.boldTfGeneric(glowing)]!"));
+						sb.append(UtilText.parse(target, "Слизистое тело [npc.NamePos] начинает [style.boldTfGeneric(светиться)]!"));
 					}
 					
 					for(AbstractBodyCoveringType bct : BodyCoveringType.getAllSlimeTypes()) {
@@ -793,9 +768,9 @@ public class ItemEffectType {
 					sb.append("<br/>");
 				}
 				if(target.isPlayer()) {
-					sb.append("The interiors of all of your orifices start to [style.boldTfGeneric(glow)]!");
+					sb.append("Внутренности всех твоих отверстий начинают [style.boldTfGeneric(светиться)]!");
 				} else {
-					sb.append(UtilText.parse(target, "The interiors of all of [npc.namePos] orifices start to [style.boldTfGeneric(glow)]!"));
+					sb.append(UtilText.parse(target, "Внутренности всех отверстий [npc.namePos] начинают [style.boldTfGeneric(светиться)]!"));
 				}
 
 				target.getCovering(BodyCoveringType.MOUTH).setSecondaryGlowing(true);
@@ -808,9 +783,9 @@ public class ItemEffectType {
 
 			sb.append("<p>");
 				if(target.isPlayer()) {
-					sb.append("Multi-coloured stars and spots start to fade in and out of your vision, and you feel your head spinning as you start to [style.boldPsychoactive(trip out)]!");
+					sb.append("Разноцветные звезды и пятна начинают то появляться, то исчезать перед глазами, и ты чувствуешь, как голова идет кругом, когда ты начинаешь [style.boldPsychoactive(ловить трип)]!");
 				} else {
-					sb.append(UtilText.parse(target, "Multi-coloured stars and spots start to fade in and out of [npc.namePos] vision, and [npc.she] feels [npc.her] head spinning as [npc.she] starts to [style.boldPsychoactive(trip out)]!"));
+					sb.append(UtilText.parse(target, "Разноцветные звезды и пятна начинают то появляться, то исчезать перед глазами [npc.namePos], и [npc.she] чувствует, как у [npc.her] идет голова кругом, когда [npc.she] начинает [style.boldPsychoactive(ловить трип)]!"));
 				}
 			sb.append("</p>");
 			
@@ -819,8 +794,8 @@ public class ItemEffectType {
 	};
 	
 	public static AbstractItemEffectType EGGPLANT = new AbstractItemEffectType(Util.newArrayListOfValues(
-			"[style.colourGood(Restores)] 5% [style.colourHealth("+Attribute.HEALTH_MAXIMUM.getName()+")]",
-			"[style.colourGood(Restores)] 5% [style.colourAura(aura)]"),
+			"[style.colourGood(Восстанавливает)] 5% [style.colourHealth(, "+Attribute.HEALTH_MAXIMUM.getName()+")]",
+			"[style.colourGood(Восстанавливает)] 5% [style.colourAura(ауры)]"),
 			PresetColour.ATTRIBUTE_CORRUPTION) {
 		
 		@Override
@@ -829,9 +804,7 @@ public class ItemEffectType {
 			target.incrementMana(target.getAttributeValue(Attribute.MANA_MAXIMUM)/20);
 			
 			if(target.isPlayer()) {
-				return "<p style='text-align:center;'>"
-							+"It's kind of tasty."
-						+"</p>";
+				return "<p style='text-align:center;'>Вполне вкусно.</p>";
 			} else {
 				return "";
 			}
@@ -901,11 +874,11 @@ public class ItemEffectType {
 			if(primaryModifier==TFModifier.CORRUPTION) {
 				switch(potency) {
 					case MINOR_BOOST:
-						return Util.newArrayListOfValues("[style.colourMinorGood(-5)] [style.colourCorruption(Corruption)]");
+						return Util.newArrayListOfValues("[style.colourMinorGood(-5)] [style.colourCorruption(Порочность)]");
 					case BOOST:
-						return Util.newArrayListOfValues("[style.colourGood(-10)] [style.colourCorruption(Corruption)]");
+						return Util.newArrayListOfValues("[style.colourGood(-10)] [style.colourCorruption(Порочность)]");
 					case MAJOR_BOOST:
-						return Util.newArrayListOfValues("[style.colourExcellent(-15)] [style.colourCorruption(Corruption)]");
+						return Util.newArrayListOfValues("[style.colourExcellent(-15)] [style.colourCorruption(Порочность)]");
 					case MINOR_DRAIN:
 					case DRAIN:
 					case MAJOR_DRAIN:
@@ -916,9 +889,9 @@ public class ItemEffectType {
 				
 			} else {
 				if(potency.isNegative()) {
-					return Util.newArrayListOfValues("[style.colourMinorBad(Removes)] [style.colourSex(hymen)]");
+					return Util.newArrayListOfValues("[style.colourMinorBad(Удаляет)] [style.colourSex(девственную плеву)]");
 				} else {
-					return Util.newArrayListOfValues("[style.colourMinorGood(Regenerates)] [style.colourSex(hymen)]");
+					return Util.newArrayListOfValues("[style.colourMinorGood(Регенерирует)] [style.colourSex(девственную плеву)]");
 				}
 			}
 		}
@@ -927,12 +900,7 @@ public class ItemEffectType {
 		public String itemEffectOverride(TFModifier primaryModifier, TFModifier secondaryModifier, TFPotency potency, int limit, GameCharacter user, GameCharacter target, ItemEffectTimer timer) {
 			if(primaryModifier==TFModifier.CORRUPTION) {
 				String purifyingDescription =
-						"<p style='text-align:center;'>"
-								+ "For a moment, it looks as though nothing is going to happen,"
-								+ " but as [npc.name] [npc.verb(swallow)] down the last couple of drops remaining in [npc.her] mouth, a sudden, cascading wave of purifying energy rushes through [npc.herHim]."
-							+ " Accompanied by a faint, light-blue flash which seems to radiate from every visible part of [npc.her] body, this energy rises up into [npc.her] head,"
-								+ " where it quickly gets to work purifying [npc.her] thoughts and calming [npc.her] libido..."
-						+"</p>";
+						"<p style='text-align:center;'>На мгновение кажется, будто ничего не произойдет, но когда [npc.name] [npc.verb(swallow)] последние капли, оставшиеся во рту [npc.her], внезапная каскадная волна очищающей энергии проносится сквозь [npc.herHim]. Сопровождаемая слабой светло-голубой вспышкой, которая, кажется, исходит от каждой видимой части тела [npc.her], эта энергия поднимается в голову [npc.her], где она быстро принимается за очищение мыслей [npc.her] и успокоение либидо [npc.her]...</p>";
 				switch(potency) {
 					case MINOR_BOOST:
 						return purifyingDescription
@@ -962,7 +930,7 @@ public class ItemEffectType {
 	};
 	
 	public static AbstractItemEffectType GIFT_CHOCOLATES = new AbstractItemEffectType(Util.newArrayListOfValues(
-			"[style.colourGood(Restores)] 30% [style.colourHealth("+Attribute.HEALTH_MAXIMUM.getName()+")]"),
+			"[style.colourGood(Восстанавливает)] 30% [style.colourHealth("+Attribute.HEALTH_MAXIMUM.getName()+")]"),
 			PresetColour.ATTRIBUTE_HEALTH) {
 		
 		@Override
@@ -970,9 +938,7 @@ public class ItemEffectType {
 			target.incrementHealth((target.getAttributeValue(Attribute.HEALTH_MAXIMUM)/100)*30);
 			
 			if(target.isPlayer()) {
-				return "<p style='text-align:center;'>"
-						+"They're absolutely delicious, and it only takes you a few moments to finish off the entire box."
-						+"</p>";
+				return "<p style='text-align:center;'>Они просто восхитительны, и у тебя уйдет всего пара мгновений, чтобы опустошить всю коробку.</p>";
 			} else {
 				return "";
 			}
@@ -980,15 +946,15 @@ public class ItemEffectType {
 	};
 	
 	public static AbstractItemEffectType GIFT_PERFUME = new AbstractItemEffectType(Util.newArrayListOfValues(
-			Attribute.DAMAGE_LUST.getFormattedValue(5)+" to 'potion effects'"),
+			Attribute.DAMAGE_LUST.getFormattedValue(5)+" к «эффектам зелий»"),
 			PresetColour.ATTRIBUTE_LUST) {
 		
 		@Override
 		public String itemEffectOverride(TFModifier primaryModifier, TFModifier secondaryModifier, TFPotency potency, int limit, GameCharacter user, GameCharacter target, ItemEffectTimer timer) {
 			return "<p style='text-align:center;'>"
 					+(target.isPlayer()
-						?"You smell a lot nicer now..."
-						:UtilText.parse(target, "[npc.Name] smells a lot nicer now..."))
+						?"Теперь от тебя пахнет гораздо приятнее..."
+						:UtilText.parse(target, "[npc.Name] теперь пахнет гораздо приятнее..."))
 					+ "<br/>"
 					+ target.addPotionEffect(Attribute.DAMAGE_LUST, 5)
 					+"</p>";
@@ -997,7 +963,7 @@ public class ItemEffectType {
 	
 	
 	public static AbstractItemEffectType PRESENT = new AbstractItemEffectType(Util.newArrayListOfValues(
-			"Contains a random item."),
+			"Содержит случайный предмет."),
 			PresetColour.GENERIC_EXCELLENT) {
 		
 		@Override
@@ -1034,8 +1000,7 @@ public class ItemEffectType {
 			if(Math.random()<0.5f) {
 				AbstractItemType itemType = items.get(Util.random.nextInt(items.size()));
 				
-				return "<p>"
-							+ "The present contained: <b>"+itemType.getDisplayName(true)+"</b>!"
+				return "<p>В подарке оказалось: <b>"+itemType.getDisplayName(true)+"</b>!"
 						+ "</p>"
 						+ user.addItem(Main.game.getItemGen().generateItem(itemType), false);
 				
@@ -1045,14 +1010,12 @@ public class ItemEffectType {
 				
 				if(!Main.game.getPlayerCell().getInventory().isInventoryFull()) {
 					Main.game.getPlayerCell().getInventory().addClothing(clothing);
-					return "<p>"
-								+ "The present contained: <b>"+clothing.getDisplayName(true)+"</b>!"
+					return "<p>В подарке оказалось: <b>"+clothing.getDisplayName(true)+"</b>!"
 							+ "</p>"
 							+ user.addClothing(clothing, true);
 					
 				} else {
-					return "<p>"
-								+ "The present contained: <b>"+clothing.getDisplayName(true)+"</b>!"
+					return "<p>В подарке оказалось: <b>"+clothing.getDisplayName(true)+"</b>!"
 							+ "</p>"
 							+ user.addClothing(clothing, false);
 				}
@@ -1063,20 +1026,19 @@ public class ItemEffectType {
 	// Racial:
 	
 	public static AbstractItemEffectType RACE_INNOXIAS_GIFT = new AbstractItemEffectType(Util.newArrayListOfValues(
-			Attribute.MAJOR_PHYSIQUE.getFormattedValue(2)+" to 'potion effects'",
-			Attribute.MAJOR_ARCANE.getFormattedValue(2)+" to 'potion effects'",
-			Attribute.MAJOR_CORRUPTION.getFormattedValue(5)+" to 'potion effects'"),
+			Attribute.MAJOR_PHYSIQUE.getFormattedValue(2)+" к «эффектам зелий»",
+			Attribute.MAJOR_ARCANE.getFormattedValue(2)+" к «эффектам зелий»",
+			Attribute.MAJOR_CORRUPTION.getFormattedValue(5)+" к «эффектам зелий»"),
 			PresetColour.RACE_HUMAN) {
 		
 		@Override
 		public String getPotionDescriptor() {
-			return "demonic";
+			return "демонический";
 		}
 		
 		@Override
 		public String itemEffectOverride(TFModifier primaryModifier, TFModifier secondaryModifier, TFPotency potency, int limit, GameCharacter user, GameCharacter target, ItemEffectTimer timer) {
-			return "You start to feel like this item is just for testing purposes..."
-					+ "<br/>"
+			return "У тебя начинает закрадываться ощущение, что этот предмет предназначен лишь для тестов...<br/>"
 					+ target.addPotionEffect(Attribute.MAJOR_PHYSIQUE, 2)
 					+ "<br/>"
 					+ target.addPotionEffect(Attribute.MAJOR_ARCANE, 2)
@@ -1089,11 +1051,11 @@ public class ItemEffectType {
 	 * This is just to provide a hard-coded hook to the biojuice canister's effects, for use in NPC.generateTransformativePotion()
 	 */
 	public static AbstractItemEffectType RACE_SLIME_TF_UTIL_EFFECT = new AbstractItemEffectType(Util.newArrayListOfValues(
-			"Transforms the consumer into a slime!"),
+			"Превращает потребителя в слайма!"),
 			PresetColour.RACE_HUMAN) {
 		@Override
 		public String getPotionDescriptor() {
-			return "slime";
+			return "слайм";
 		}
 		@Override
 		public String itemEffectOverride(TFModifier primaryModifier, TFModifier secondaryModifier, TFPotency potency, int limit, GameCharacter user, GameCharacter target, ItemEffectTimer timer) {
@@ -1398,7 +1360,7 @@ public class ItemEffectType {
 	// Essences:
 	
 	public static AbstractItemEffectType BOTTLED_ESSENCE_ARCANE = new AbstractItemEffectType(Util.newArrayListOfValues(
-			"[style.colourGood(+1)] [style.colourArcane(Arcane essence)]"),
+			"[style.colourGood(+1)] [style.colourArcane(Эссенция Arcane)]"),
 			PresetColour.GENERIC_ARCANE) {
 		
 		@Override
@@ -1411,8 +1373,8 @@ public class ItemEffectType {
 	// Specials:
 	
 	public static AbstractItemEffectType BIMBO_LOLLIPOP = new AbstractItemEffectType(Util.newArrayListOfValues(
-			"<b style='color:"+PresetColour.GENERIC_SEX.toWebHexString()+";'>Bimbo</b> <b style='color:"+PresetColour.RACE_HARPY.toWebHexString()+";'>harpy</b> <b style='color:"+PresetColour.GENERIC_SEX.toWebHexString()+";'>transformation</b>",
-			"Applies [style.colourSex('Sucking lollipop')] status effect"),
+			"<b style='color:"+PresetColour.GENERIC_SEX.toWebHexString()+";'>Бимбо</b> <b style='color:"+PresetColour.RACE_HARPY.toWebHexString()+";'>гарпия</b> <b style='color:"+PresetColour.GENERIC_SEX.toWebHexString()+";'>трансформация</b>",
+			"Применяет статус [style.colourSex('Сосание леденца')]"),
 			PresetColour.RACE_HARPY) {
 		
 		@Override
@@ -1421,7 +1383,7 @@ public class ItemEffectType {
 			
 			if(target.isDoll()) {
 				return "<p>"
-							+ UtilText.parse(target, "As [npc.sheIsFull] a sex doll, the lollipop's transformative effects do nothing to [npc.name]...")
+							+ UtilText.parse(target, "Поскольку [npc.sheIsFull] — секс-кукла, трансформирующие эффекты леденца никак не действуют на [npc.name]...")
 						+ "</p>";
 			}
 			
@@ -1429,7 +1391,7 @@ public class ItemEffectType {
 			StringBuilder sb = new StringBuilder();
 			
 			sb.append("<p>"
-						+ UtilText.parse(target, "As the lollipop's transformative effects start to make themselves known, [npc.name] [npc.verb(start)] to feel very light-headed...")
+						+ UtilText.parse(target, "Когда трансформирующие эффекты леденца начинают проявляться, [npc.name] [npc.verb(start)] чувствует сильное головокружение...")
 					+ "</p>");
 			
 			if(!target.hasFetish(Fetish.FETISH_BIMBO)) {
@@ -1438,14 +1400,12 @@ public class ItemEffectType {
 					sb.append("<br/>"
 							+ "<p>"
 								+ "A giggle escapes from between your [pc.lips], and you suddenly find yourself unable to think of anything other than how, like, super awesome bimbos are and stuff!"
-								+ "<br/><b style='color:"+PresetColour.GENERIC_SEX.toWebHexString()+";'>You have gained the bimbo fetish!</b>"
-							+ "</p>");
+								+ "<br/><b style='color:"+PresetColour.GENERIC_SEX.toWebHexString()+";'>Вы обрели фетиш бимбо!</b></p>");
 				} else {
 					sb.append(UtilText.parse(target, "<br/>"
 							+ "<p>"
 								+ "A giggle escapes from between [npc.namePos] [npc.lips], and [npc.she] suddenly finds [npc.herself] unable to think of anything other than how, like, super awesome bimbos are and stuff!"
-								+ "<br/><b style='color:"+PresetColour.GENERIC_SEX.toWebHexString()+";'>[npc.Name] has gained the bimbo fetish!</b>"
-							+ "</p>"));
+								+ "<br/><b style='color:"+PresetColour.GENERIC_SEX.toWebHexString()+";'>[npc.Name] обрела фетиш бимбо!</b></p>"));
 				}
 			}
 			
@@ -1466,7 +1426,7 @@ public class ItemEffectType {
 			
 			if(!target.isAbleToHaveRaceTransformed()) {
 				sb.append("<br/>");
-				sb.append(UtilText.parse(target, "As [npc.nameIsFull] immune to racial transformations, the lollipop has no further effect!"));
+				sb.append(UtilText.parse(target, "Так как [npc.nameIsFull] невосприимчива к расовым трансформациям, леденец больше не оказывает никакого эффекта!"));
 				
 			} else {
 				if(target.getHairType()!=HairType.HARPY) {
@@ -1523,8 +1483,8 @@ public class ItemEffectType {
 	};
 	
 	public static AbstractItemEffectType NYMPHO_LOLLIPOP = new AbstractItemEffectType(Util.newArrayListOfValues(
-			"<b style='color:"+PresetColour.GENERIC_SEX.toWebHexString()+";'>Nympho</b> <b style='color:"+PresetColour.RACE_HARPY.toWebHexString()+";'>harpy</b> <b style='color:"+PresetColour.GENERIC_SEX.toWebHexString()+";'>transformation</b>",
-			"Applies [style.colourSex('Sucking lollipop')] status effect"),
+			"<b style='color:"+PresetColour.GENERIC_SEX.toWebHexString()+";'>Нимфо</b> <b style='color:"+PresetColour.RACE_HARPY.toWebHexString()+";'>гарпия</b> <b style='color:"+PresetColour.GENERIC_SEX.toWebHexString()+";'>трансформация</b>",
+			"Применяет статус [style.colourSex('Сосание леденца')]"),
 			PresetColour.RACE_HARPY) {
 		
 		@Override
@@ -1533,14 +1493,14 @@ public class ItemEffectType {
 
 			if(target.isDoll()) {
 				return "<p>"
-							+ UtilText.parse(target, "As [npc.sheIsFull] a sex doll, the lollipop's transformative effects do nothing to [npc.name]...")
+							+ UtilText.parse(target, "Поскольку [npc.sheIsFull] — секс-кукла, трансформирующие эффекты леденца никак не действуют на [npc.name]...")
 						+ "</p>";
 			}
 			
 			StringBuilder sb = new StringBuilder();
 			
 			sb.append("<p>"
-						+ UtilText.parse(target, "As the lollipop's transformative effects start to make themselves known, [npc.name] [npc.verb(start)] to feel very light-headed...")
+						+ UtilText.parse(target, "Когда трансформирующие эффекты леденца начинают проявляться, [npc.name] [npc.verb(start)] чувствует сильное головокружение...")
 					+ "</p>");
 			
 			if(!target.hasTrait(Perk.NYMPHOMANIAC, false)) {
@@ -1549,14 +1509,12 @@ public class ItemEffectType {
 					sb.append("<br/>"
 							+ "<p>"
 								+ "A desperate moan escapes from between your [pc.lips], and you suddenly find yourself unable to think of anything other than sex, sex, and more sex!"
-								+ "<br/><b style='color:"+PresetColour.GENERIC_SEX.toWebHexString()+";'>You have gained the nymphomaniac perk!</b>"
-							+ "</p>");
+								+ "<br/><b style='color:"+PresetColour.GENERIC_SEX.toWebHexString()+";'>Вы получили перк нимфоманки!</b></p>");
 				} else {
 					sb.append(UtilText.parse(target, "<br/>"
 							+ "<p>"
 								+ "A desperate moan escapes from between [npc.namePos] [npc.lips], and [npc.she] suddenly finds [npc.herself] unable to think of anything other than sex, sex, and more sex!"
-								+ "<br/><b style='color:"+PresetColour.GENERIC_SEX.toWebHexString()+";'>[npc.Name] has gained the nymphomaniac perk!</b>"
-							+ "</p>"));
+								+ "<br/><b style='color:"+PresetColour.GENERIC_SEX.toWebHexString()+";'>[npc.Name] получила перк нимфоманки!</b></p>"));
 				}
 			}
 			
@@ -1576,7 +1534,7 @@ public class ItemEffectType {
 
 			if(!target.isAbleToHaveRaceTransformed()) {
 				sb.append("<br/>");
-				sb.append(UtilText.parse(target, "As [npc.nameIsFull] immune to racial transformations, the lollipop has no further effect!"));
+				sb.append(UtilText.parse(target, "Так как [npc.nameIsFull] невосприимчива к расовым трансформациям, леденец больше не оказывает никакого эффекта!"));
 				
 			} else {
 				if(target.getHairType()!=HairType.HARPY) {
@@ -1639,7 +1597,7 @@ public class ItemEffectType {
 	};
 	
 	public static AbstractItemEffectType DOMINANT_PERFUME = new AbstractItemEffectType(Util.newArrayListOfValues(
-			"<b style='color:"+PresetColour.GENERIC_SEX.toWebHexString()+";'>Dominant</b> <b style='color:"+PresetColour.RACE_HARPY.toWebHexString()+";'>harpy</b> <b style='color:"+PresetColour.GENERIC_SEX.toWebHexString()+";'>transformation</b>"),
+			"<b style='color:"+PresetColour.GENERIC_SEX.toWebHexString()+";'>Доминант</b> <b style='color:"+PresetColour.RACE_HARPY.toWebHexString()+";'>гарпия</b> <b style='color:"+PresetColour.GENERIC_SEX.toWebHexString()+";'>трансформация</b>"),
 			PresetColour.RACE_HARPY) {
 		
 		@Override
@@ -1648,12 +1606,12 @@ public class ItemEffectType {
 
 			if(target.isDoll()) {
 				return "<p>"
-							+ UtilText.parse(target, "As [npc.sheIsFull] a sex doll, the perfume's transformative effects do nothing to [npc.name]...")
+							+ UtilText.parse(target, "Поскольку [npc.sheIsFull] — секс-кукла, преображающий эффект духов никак не действует на [npc.name]...")
 						+ "</p>";
 			}
 			
 			sb.append("<p>"
-						+ UtilText.parse(target, "As the perfume's transformative effects start to make themselves known, [npc.name] [npc.verb(start)] to feel very light-headed...")
+						+ UtilText.parse(target, "Когда преображающий эффект духов начинает проявляться, [npc.name] [npc.verb(start)] чувствует сильное головокружение...")
 					+ "</p>");
 			
 			if(!target.hasFetish(Fetish.FETISH_DOMINANT)) {
@@ -1662,14 +1620,12 @@ public class ItemEffectType {
 					sb.append("<br/>"
 							+ "<p>"
 								+ "A deep groan escapes from between your [pc.lips], and you suddenly find yourself thinking of how much you want to dominate the next person you come across!"
-								+ "<br/><b style='color:"+PresetColour.GENERIC_SEX.toWebHexString()+";'>You have gained the dominant fetish!</b>"
-							+ "</p>");
+								+ "<br/><b style='color:"+PresetColour.GENERIC_SEX.toWebHexString()+";'>Вы получили фетиш доминанта!</b></p>");
 				} else {
 					sb.append(UtilText.parse(target, "<br/>"
 							+ "<p>"
 								+ "A deep groan escapes from between [npc.namePos] [npc.lips], and [npc.she] suddenly finds [npc.herself] thinking of how much [npc.she] wants to dominate the next person [npc.she] meets!"
-								+ "<br/><b style='color:"+PresetColour.GENERIC_SEX.toWebHexString()+";'>[npc.Name] has gained the dominant fetish!</b>"
-							+ "</p>"));
+								+ "<br/><b style='color:"+PresetColour.GENERIC_SEX.toWebHexString()+";'>[npc.Name] получил фетиш доминанта!</b></p>"));
 				}
 			}
 			
@@ -1689,7 +1645,7 @@ public class ItemEffectType {
 
 			if(!target.isAbleToHaveRaceTransformed()) {
 				sb.append("<br/>");
-				sb.append(UtilText.parse(target, "As [npc.nameIsFull] immune to racial transformations, the perfume has no further effect!"));
+				sb.append(UtilText.parse(target, "Так как [npc.nameIsFull] невосприимчив(а) к расовым трансформациям, духи больше не действуют!"));
 				
 			} else {
 				if(target.getHairType()!=HairType.HARPY) {
@@ -1754,7 +1710,7 @@ public class ItemEffectType {
 
 		@Override
 		public String getPotionDescriptor() {
-			return "vivid";
+			return "яркий";
 		}
 		
 		@Override
@@ -1792,7 +1748,7 @@ public class ItemEffectType {
 
 		@Override
 		public String getPotionDescriptor() {
-			return "soothing";
+			return "успокаивающий";
 		}
 		
 		@Override
@@ -1830,7 +1786,7 @@ public class ItemEffectType {
 
 		@Override
 		public String getPotionDescriptor() {
-			return "arousing";
+			return "возбуждающий";
 		}
 		
 		@Override
@@ -1868,7 +1824,7 @@ public class ItemEffectType {
 
 		@Override
 		public String getPotionDescriptor() {
-			return "viscous";
+			return "вязкий";
 		}
 		
 		@Override
@@ -1942,7 +1898,7 @@ public class ItemEffectType {
 		public List<String> getEffectsDescription(TFModifier primaryModifier, TFModifier secondaryModifier, TFPotency potency, int limit, GameCharacter user, GameCharacter target) {
 
 			if(primaryModifier==TFModifier.NONE) {
-				return Util.newArrayListOfValues("Adds or removes a [style.colourFetish(random fetish)].");
+				return Util.newArrayListOfValues("Добавляет или убирает [style.colourFetish(случайный фетиш)].");
 			}
 			
 			String descriptor = "";
@@ -1955,30 +1911,30 @@ public class ItemEffectType {
 			
 			if(potency==TFPotency.BOOST) {
 				if(secondaryModifier == TFModifier.NONE) {
-					return Util.newArrayListOfValues("Adds a [style.colourFetish(random"+descriptor+" fetish)].");
+					return Util.newArrayListOfValues("Добавляет [style.colourFetish(случайный"+descriptor+" фетиш)].");
 				} else {
-					return Util.newArrayListOfValues("Adds the [style.colourFetish("+secondaryModifier.getName()+" fetish)].");
+					return Util.newArrayListOfValues("Добавляет [style.colourFetish("+secondaryModifier.getName()+" фетиш)].");
 				}
 				
 			} else if(potency==TFPotency.MINOR_BOOST) {
 				if(secondaryModifier == TFModifier.NONE) {
-					return Util.newArrayListOfValues("Boosts [style.colourLust(desire)] for a [style.colourFetish(random"+descriptor+" fetish)].");
+					return Util.newArrayListOfValues("Усиливает [style.colourLust(желание)] на [style.colourFetish(случайный"+descriptor+" фетиш)].");
 				} else {
-					return Util.newArrayListOfValues("Boosts [style.colourLust(desire)] for the [style.colourFetish("+secondaryModifier.getName()+" fetish)].");
+					return Util.newArrayListOfValues("Усиливает [style.colourLust(желание)] для [style.colourFetish("+secondaryModifier.getName()+" фетиш)].");
 				}
 				
 			} else if(potency==TFPotency.MINOR_DRAIN) {
 				if(secondaryModifier == TFModifier.NONE) {
-					return Util.newArrayListOfValues("Lowers [style.colourLust(desire)] for a [style.colourFetish(random"+descriptor+" fetish)] (if that fetish is not already owned).");
+					return Util.newArrayListOfValues("Снижает [style.colourLust(желание)] для [style.colourFetish(случайного"+descriptor+" фетиша)] (если этот фетиш еще не освоен).");
 				} else {
-					return Util.newArrayListOfValues("Lowers [style.colourLust(desire)] for the [style.colourFetish("+secondaryModifier.getName()+" fetish)] (if that fetish is not already owned).");
+					return Util.newArrayListOfValues("Снижает [style.colourLust(желание)] для [style.colourFetish("+secondaryModifier.getName()+" фетиша)] (если этот фетиш еще не освоен).");
 				}
 				
 			} else {
 				if(secondaryModifier == TFModifier.NONE) {
-					return Util.newArrayListOfValues("Removes a [style.colourFetish(random"+descriptor+" fetish)].");
+					return Util.newArrayListOfValues("Убирает [style.colourFetish(случайный"+descriptor+" фетиш)].");
 				} else {
-					return Util.newArrayListOfValues("Removes the [style.colourFetish("+secondaryModifier.getName()+" fetish)].");
+					return Util.newArrayListOfValues("убирает [style.colourFetish(конкретный"+secondaryModifier.getName()+" фетиш)].");
 				}
 			}
 		}
@@ -2048,9 +2004,7 @@ public class ItemEffectType {
 						return target.addFetish(f);
 						
 					} else {
-						return "<p>"
-									+"[style.colourDisabled(Nothing happens...)]"
-								+"</p>";
+						return "<p>[style.colourDisabled(Ничего не происходит...)]</p>";
 					}
 					
 				} else {
@@ -2077,9 +2031,7 @@ public class ItemEffectType {
 						return target.setFetishDesire(f, newDesire);
 						
 					} else {
-						return "<p>"
-									+"[style.colourDisabled(Nothing happens...)]"
-								+"</p>";
+						return "<p>[style.colourDisabled(Ничего не происходит...)]</p>";
 					}
 					
 				} else {
@@ -2107,9 +2059,7 @@ public class ItemEffectType {
 						return target.setFetishDesire(f, newDesire);
 						
 					} else {
-						return "<p>"
-									+"[style.colourDisabled(Nothing happens...)]"
-								+"</p>";
+						return "<p>[style.colourDisabled(Ничего не происходит...)]</p>";
 					}
 					
 				} else {
@@ -2135,9 +2085,7 @@ public class ItemEffectType {
 						return target.removeFetish(f);
 						
 					} else {
-						return "<p>"
-									+"[style.colourDisabled(Nothing happens...)]"
-								+"</p>";
+						return "<p>[style.colourDisabled(Ничего не происходит...)]</p>";
 					}
 					
 				} else {
@@ -2158,11 +2106,11 @@ public class ItemEffectType {
 		public List<String> getEffectsDescription(TFModifier primaryModifier, TFModifier secondaryModifier, TFPotency potency, int limit, GameCharacter user, GameCharacter target) {
 			List<String> effectsDescription = new ArrayList<>();
 			
-			effectsDescription.add("[style.colourBad(Does not affect unique characters)]");
+			effectsDescription.add("[style.colourBad(Не влияет на уникальных персонажей, не являющихся рабами)]");
 			
-			effectsDescription.add("[style.colourTfGeneric(Transforms)] non-demons into [style.colourDemon(half-demons)]");
+			effectsDescription.add("[style.colourTfGeneric(Превращает)] не-демонов в [style.colourDemon(полудемонов)]");
 
-			effectsDescription.add("[style.colourTfGeneric(Transforms)] half-demons into [style.colourDemon(demons)]");
+			effectsDescription.add("[style.colourTfGeneric(Превращает)] полудемонов в [style.colourDemon(демонов)]");
 			
 			return effectsDescription;
 		}
@@ -2173,17 +2121,17 @@ public class ItemEffectType {
 //				return "<p style='text-align:center'>[style.italicsDisabled(This item does not work on you...)]</p>";
 //			}
 			if(!target.isPlayer() && target.isUnique() && (!target.isSlave() || target.getOwner().isPlayer())) {
-				return "<p style='text-align:center'>[style.italicsDisabled(This item does not work on non-slave unique characters...)]</p>";
+				return "<p style='text-align:center'>[style.italicsDisabled(Этот предмет не действует на уникальных персонажей, не являющихся рабами...)]</p>";
 			}
 			
 			AbstractSubspecies sub = target.getBody().getFleshSubspecies();
 			if(sub.getRace()!=Race.DEMON) {
 				target.setBody(Main.game.getCharacterUtils().generateHalfDemonBody(target, target.getGender(), sub, true), false);
-				return UtilText.parse(target, "<p style='text-align:center; color:"+PresetColour.RACE_DEMON.toWebHexString()+";'><i>[npc.Name] is now [npc.a_race]!</i></p>");
+				return UtilText.parse(target, "<p style='text-align:center; color:"+PresetColour.RACE_DEMON.toWebHexString()+";'><i>[npc.Name] теперь [npc.a_race]!</i></p>");
 			} else {
 				target.setBody(target.getGender(), Subspecies.DEMON, RaceStage.GREATER, false);
 				target.setSubspeciesOverride(Subspecies.DEMON);
-				return UtilText.parse(target, "<p style='text-align:center; color:"+PresetColour.RACE_DEMON.toWebHexString()+";'><i>[npc.Name] is now [npc.a_race]!</i></p>");
+				return UtilText.parse(target, "<p style='text-align:center; color:"+PresetColour.RACE_DEMON.toWebHexString()+";'><i>[npc.Name] теперь [npc.a_race]!</i></p>");
 			}
 		}
 	};
@@ -2288,80 +2236,80 @@ public class ItemEffectType {
 				
 			} else if(secondaryModifier == TFModifier.CLOTHING_SEALING) {
 				if(potency==TFPotency.SPECIAL) {
-					effectsList.add("[style.colourCrimson(Seals onto wearer)] <b>([style.colourTerrible(Cannot be unsealed!)])</b>");
+					effectsList.add("[style.colourCrimson(Прирастает к носителю)] <b>([style.colourTerrible(Нельзя снять!)])</b>");
 					
 				} else if(potency==TFPotency.MINOR_DRAIN) {
-					effectsList.add("[style.colourCrimson(Seals onto wearer)] <b>(Unseal: [style.colourArcane(" + ItemEffect.SEALED_COST_MINOR_DRAIN + ")])</b>");
+					effectsList.add("[style.colourCrimson(Прирастает к носителю)] <b>(Снятие: [style.colourArcane(" + ItemEffect.SEALED_COST_MINOR_DRAIN + ")])</b>");
 					
 				} else if(potency==TFPotency.DRAIN) {
-					effectsList.add("[style.colourCrimson(Seals onto wearer)] <b>(Unseal: [style.colourArcane(" + ItemEffect.SEALED_COST_DRAIN + ")])</b>");
+					effectsList.add("[style.colourCrimson(Прирастает к носителю)] <b>(Снятие: [style.colourArcane(" + ItemEffect.SEALED_COST_DRAIN + ")])</b>");
 					
 				} else if(potency==TFPotency.MAJOR_DRAIN) {
-					effectsList.add("[style.colourCrimson(Seals onto wearer)] <b>(Unseal: [style.colourArcane(" + ItemEffect.SEALED_COST_MAJOR_DRAIN + ")])</b>");
+					effectsList.add("[style.colourCrimson(Прирастает к носителю)] <b>(Снятие: [style.colourArcane(" + ItemEffect.SEALED_COST_MAJOR_DRAIN + ")])</b>");
 					
 				} else {
-					effectsList.add("[style.colourCrimson(Seals onto wearer)] <b>(Unseal: [style.colourArcane(" + ItemEffect.SEALED_COST_MINOR_BOOST + ")])</b>");
+					effectsList.add("[style.colourCrimson(Прирастает к носителю)] <b>(Снятие: [style.colourArcane(" + ItemEffect.SEALED_COST_MINOR_BOOST + ")])</b>");
 				}
 				
 			} else if(secondaryModifier == TFModifier.CLOTHING_SERVITUDE) {
-				effectsList.add("[style.colourBad(Inhibits)] [style.colourTfGeneric(self-transformations)]");
-				effectsList.add("[style.colourBad(Prevents)] [style.colourArcane(removal of seals)]");
+				effectsList.add("[style.colourBad(Подавляет)] [style.colourTfGeneric(самотрансформации)]");
+				effectsList.add("[style.colourBad(Предотвращает)] [style.colourArcane(снятие печатей)]");
 				
 			} else if(secondaryModifier == TFModifier.CLOTHING_ENSLAVEMENT) {
-				effectsList.add("[style.colourCrimson(Enslaves the wearer)]");
+				effectsList.add("[style.colourCrimson(Порабощает носителя)]");
 				
 			} else if(secondaryModifier == TFModifier.CLOTHING_ORGASM_PREVENTION) {
-				effectsList.add("[style.colourCrimson(Prevents wearer from orgasming)]");
+				effectsList.add("[style.colourCrimson(Предотвращает оргазм у носителя)]");
 				
 			} else if(primaryModifier == TFModifier.TF_MOD_FETISH_BEHAVIOUR
 					|| primaryModifier == TFModifier.TF_MOD_FETISH_BODY_PART) {
 				if(potency==TFPotency.MAJOR_BOOST) {
-					effectsList.add("[style.colourExcellent(Grants)] [style.colourFetish("+secondaryModifier.getName()+" fetish)]");
+					effectsList.add("[style.colourExcellent(Дарует)] [style.colourFetish(, "+secondaryModifier.getName()+" фетиш)]");
 					
 				} else if(potency==TFPotency.BOOST) {
-					effectsList.add("[style.colourGood(+2)] [style.colourLust(desire)] for [style.colourFetish("+secondaryModifier.getName()+" fetish)]");
+					effectsList.add("[style.colourGood(+2)] [style.colourLust(похоть)] к [style.colourFetish(, "+secondaryModifier.getName()+" фетиш)]");
 					
 				} else if(potency==TFPotency.MINOR_BOOST) {
-					effectsList.add("[style.colourMinorGood(+1)] [style.colourLust(desire)] for [style.colourFetish("+secondaryModifier.getName()+" fetish)]");
+					effectsList.add("[style.colourMinorGood(+1)] [style.colourLust(похоть)] к [style.colourFetish(, "+secondaryModifier.getName()+" фетиш)]");
 					
 				} else if(potency==TFPotency.MAJOR_DRAIN) {
-					effectsList.add("<b style='color:"+FetishDesire.ZERO_HATE.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(FetishDesire.ZERO_HATE.getNameAsVerb())+"</b> [style.colourFetish("+secondaryModifier.getName()+" fetish)]");
+					effectsList.add("<b style='color:"+FetishDesire.ZERO_HATE.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(FetishDesire.ZERO_HATE.getNameAsVerb())+"</b> [style.colourFetish("+secondaryModifier.getName()+" фетиш)]");
 					
 				} else if(potency==TFPotency.DRAIN) {
-					effectsList.add("[style.colourBad(-2)] [style.colourLust(desire)] for [style.colourFetish("+secondaryModifier.getName()+" fetish)]");
+					effectsList.add("[style.colourBad(-2)] [style.colourLust(похоть)] к [style.colourFetish(, "+secondaryModifier.getName()+" фетиш)]");
 					
 				} else if(potency==TFPotency.MINOR_DRAIN) {
-					effectsList.add("[style.colourMinorBad(-1)] [style.colourLust(desire)] for [style.colourFetish("+secondaryModifier.getName()+" fetish)]");
+					effectsList.add("[style.colourMinorBad(-1)] [style.colourLust(желание)] для [style.colourFetish(\", "+secondaryModifier.getName()+" фетиш)]");
 				}
 				
 			} else if(primaryModifier == TFModifier.CLOTHING_CONDOM) {
 				if(potency==TFPotency.MAJOR_BOOST) {
-					effectsList.add("[style.colourExcellent(Infinite)] safe cum capacity.");
+					effectsList.add("[style.colourExcellent(Бесконечный)] безопасный объем спермы.");
 					
 				} else if(potency==TFPotency.BOOST) {
-					effectsList.add("[style.colourGood("+Units.fluid(CumProduction.SIX_EXTREME.getMaximumValue())+")] safe cum capacity.");
+					effectsList.add("[style.colourGood("+Units.fluid(CumProduction.SIX_EXTREME.getMaximumValue())+")] безопасный объем спермы.");
 					
 				} else if(potency==TFPotency.MINOR_BOOST) {
-					effectsList.add("[style.colourMinorGood("+Units.fluid(CumProduction.FIVE_HUGE.getMaximumValue())+")] safe cum capacity.");
+					effectsList.add("[style.colourMinorGood("+Units.fluid(CumProduction.FIVE_HUGE.getMaximumValue())+")] безопасный объем спермы.");
 					
 				} else if(potency==TFPotency.MAJOR_DRAIN
 						|| potency==TFPotency.DRAIN
 						|| potency==TFPotency.MINOR_DRAIN) {
-					effectsList.add("[style.colourTerrible(Sabotaged)] to always break!");
+					effectsList.add("[style.colourTerrible(Испорчено)] всегда ломается!");
 				}
 				
 			} else if(secondaryModifier == TFModifier.CLOTHING_VIBRATION) {
 				if(potency==TFPotency.MAJOR_BOOST) {
-					effectsList.add("[style.colourSex(+20)] [style.colourLust(Resting lust)]");
-					effectsList.add("[style.colourSex(+2)] [style.colourArousal(arousal/turn)] [style.colourSex(in sex)]");
+					effectsList.add("[style.colourSex(+20)] [style.colourLust(Базовая похоть)]");
+					effectsList.add("[style.colourSex(+2)] [style.colourArousal(возбуждение/ход)] [style.colourSex(во время секса)]");
 					
 				} else if(potency==TFPotency.BOOST) {
-					effectsList.add("[style.colourSex(+10)] [style.colourLust(Resting lust)]");
-					effectsList.add("[style.colourSex(+1)] [style.colourArousal(arousal/turn)] [style.colourSex(in sex)]");
+					effectsList.add("[style.colourSex(+10)] [style.colourLust(Базовая похоть)]");
+					effectsList.add("[style.colourSex(+1)] [style.colourArousal(возбуждение/ход)] [style.colourSex(во время секса)]");
 					
 				} else {
-					effectsList.add("[style.colourSex(+5)] [style.colourLust(Resting lust)]");
-					effectsList.add("[style.colourSex(+0.5)] [style.colourArousal(arousal/turn)] [style.colourSex(in sex)]");
+					effectsList.add("[style.colourSex(+5)] [style.colourLust(Базовая похоть)]");
+					effectsList.add("[style.colourSex(+0.5)] [style.colourArousal(возбуждение/ход)] [style.colourSex(во время секса)]");
 				}
 				
 			} else if(primaryModifier == TFModifier.CLOTHING_CREAMPIE_RETENTION) {
@@ -2377,16 +2325,16 @@ public class ItemEffectType {
 						area = "pussy";
 						break;
 					case TF_VAGINA_URETHRA:
-						area = "vaginal urethra";
+						area = "женская уретра";
 						break;
 					case TF_PENIS_URETHRA:
-						area = "penile urethra";
+						area = "мужская уретра";
 						break;
 					case TF_BREASTS:
 						area = "breasts";
 						break;
 					case TF_BREASTS_CROTCH:
-						area = target!=null && target.getBreastCrotchShape()==BreastShape.UDDERS?"udders":"crotch boobs";
+						area = target!=null && target.getBreastCrotchShape()==BreastShape.UDDERS?"udders":"между ног и грудь";
 						break;
 					case TF_SPINNERET:
 						area = "spinneret";
@@ -2394,7 +2342,7 @@ public class ItemEffectType {
 					default:
 						break;
 				}
-				effectsList.add("[style.colourExcellent(Retains)] "+area+" creampies");
+				effectsList.add("[style.colourExcellent(Сохраняет)] "+area+" creampies");
 				
 			} else {
 				return getClothingTFDescriptions(primaryModifier, secondaryModifier, potency, limit, user, target);
@@ -2487,22 +2435,22 @@ public class ItemEffectType {
 			} else if(primaryModifier == TFModifier.TF_MOD_FETISH_BEHAVIOUR
 					|| primaryModifier == TFModifier.TF_MOD_FETISH_BODY_PART) {
 				if(potency==TFPotency.MAJOR_BOOST) {
-					effectsList.add("[style.colourExcellent(Grants)] [style.colourFetish("+secondaryModifier.getName()+" fetish)]");
+					effectsList.add("[style.colourExcellent(Дарует)] [style.colourFetish(, "+secondaryModifier.getName()+" фетиш)]");
 					
 				} else if(potency==TFPotency.BOOST) {
-					effectsList.add("[style.colourGood(Increases)] [style.colourLust(desire)] for [style.colourFetish("+secondaryModifier.getName()+" fetish)]");
+					effectsList.add("[style.colourGood(Увеличивает)] [style.colourLust(похоть)] к [style.colourFetish("+secondaryModifier.getName()+" фетиш)]");
 					
 				} else if(potency==TFPotency.MINOR_BOOST) {
-					effectsList.add("[style.colourMinorGood(Slightly increases)] [style.colourLust(desire)] for [style.colourFetish("+secondaryModifier.getName()+" fetish)]");
+					effectsList.add("[style.colourMinorGood(Немного увеличивает)] [style.colourLust(похоть)] к [style.colourFetish("+secondaryModifier.getName()+" фетиш)]");
 					
 				} else if(potency==TFPotency.MAJOR_DRAIN) {
-					effectsList.add("<b style='color:"+FetishDesire.ZERO_HATE.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(FetishDesire.ZERO_HATE.getNameAsVerb())+"</b> [style.colourFetish("+secondaryModifier.getName()+" fetish)]");
+					effectsList.add("<b style='color:"+FetishDesire.ZERO_HATE.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(FetishDesire.ZERO_HATE.getNameAsVerb())+"</b> [style.colourFetish("+secondaryModifier.getName()+" фетиш)]");
 					
 				} else if(potency==TFPotency.DRAIN) {
-					effectsList.add("[style.colourBad(Decreases)] [style.colourLust(desire)] for [style.colourFetish("+secondaryModifier.getName()+" fetish)]");
+					effectsList.add("[style.colourBad(Уменьшает)] [style.colourLust(похоть)] к [style.colourFetish("+secondaryModifier.getName()+" фетиш)]");
 					
 				} else if(potency==TFPotency.MINOR_DRAIN) {
-					effectsList.add("[style.colourMinorBad(Slightly decreases)] [style.colourLust(desire)] for [style.colourFetish("+secondaryModifier.getName()+" fetish)]");
+					effectsList.add("[style.colourMinorBad(Немного уменьшает)] [style.colourLust(похоть)] к [style.colourFetish("+secondaryModifier.getName()+" фетиш)]");
 				}
 				
 			} else if(primaryModifier == TFModifier.CLOTHING_CREAMPIE_RETENTION) {
@@ -2518,16 +2466,16 @@ public class ItemEffectType {
 						area = "pussy";
 						break;
 					case TF_VAGINA_URETHRA:
-						area = "vaginal urethra";
+						area = "женская уретра";
 						break;
 					case TF_PENIS_URETHRA:
-						area = "penile urethra";
+						area = "мужская уретра";
 						break;
 					case TF_BREASTS:
 						area = "breasts";
 						break;
 					case TF_BREASTS_CROTCH:
-						area = target.getBreastCrotchShape()==BreastShape.UDDERS?"udders":"crotch boobs";
+						area = target.getBreastCrotchShape()==BreastShape.UDDERS?"udders":"между ног и грудь";
 						break;
 					case TF_SPINNERET:
 						area = "spinneret";
@@ -2535,7 +2483,7 @@ public class ItemEffectType {
 					default:
 						break;
 				}
-				effectsList.add("[style.colourExcellent(Retains)] "+area+" creampies");
+				effectsList.add("[style.colourExcellent(Сохраняет)] "+area+" creampies");
 				
 			} else {
 				return getClothingTFDescriptions(primaryModifier, secondaryModifier, potency, limit, user, target);
@@ -2595,7 +2543,7 @@ public class ItemEffectType {
 				effectsList.add(secondaryModifier.getAssociatedAttribute().getFormattedValue(potency.getClothingBonusValue()));
 				
 			} else {
-				effectsList.add("[style.colourBad(Unrecognised effect:)] "+primaryModifier.getName());
+				effectsList.add("[style.colourBad(Неизвестный эффект:)] "+primaryModifier.getName());
 			}
 			
 			return effectsList;
@@ -2608,7 +2556,7 @@ public class ItemEffectType {
 	};
 	
 	public static AbstractItemEffectType OFFSPRING_MAP = new AbstractItemEffectType(Util.newArrayListOfValues(
-			"Facilitates the discovery of offspring."),
+			"Облегчает зачатие потомства."),
 			PresetColour.RARITY_LEGENDARY) {
 		@Override
 		public boolean isBreakOutOfInventory() {
@@ -2702,14 +2650,12 @@ public class ItemEffectType {
 							}
 							@Override
 							public List<String> getEffectsDescription(TFModifier primaryModifier, TFModifier secondaryModifier, TFPotency potency, int limit, GameCharacter user, GameCharacter target) {
-								return Util.newArrayListOfValues("Changes the target's body material to flesh.");
+								return Util.newArrayListOfValues("Превращает тело цели в плоть.");
 							}
 							@Override
 							public String itemEffectOverride(TFModifier primaryModifier, TFModifier secondaryModifier, TFPotency potency, int limit, GameCharacter user, GameCharacter target, ItemEffectTimer timer) {
 								return target.isElemental()
-										? "<p style='margin-bottom:0; padding-bottom:0;'>" +
-												"[style.colourDisabled([npc.NameIsFull] an elemental, so nothing happens...)]" +
-											"</p>"
+										? "<p style='margin-bottom:0; padding-bottom:0;'>[style.colourDisabled([npc.NameIsFull] стихия, так что ничего не происходит...)]</p>"
 										: target.setBodyMaterial(BodyMaterial.FLESH);
 							}
 						});

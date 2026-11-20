@@ -45,10 +45,10 @@ public class PlaceUpgrade {
 	
 	public static final AbstractPlaceUpgrade SLAVERY_ADMINISTRATION_CELLS = new AbstractPlaceUpgrade(true,
 			PresetColour.GENERIC_ARCANE,
-			"Dingy Cells",
+			"Мрачные камеры",
 			"-",
 			"",
-			"Finch doesn't put any effort into the maintenance of the cells beneath Slavery Administration, and as a result, any slaves kept here will quickly lose whatever affection and obedience they have.",
+			"Финч совсем не заботится о содержании камер под Администрацией рабства, и в результате любые рабы, содержащиеся здесь, быстро теряют всю свою привязанность и покорность.",
 			200,
 			0,
 			0,
@@ -60,10 +60,10 @@ public class PlaceUpgrade {
 	
 	public static final AbstractPlaceUpgrade LILAYA_EMPTY_ROOM = new AbstractPlaceUpgrade(true,
 			PresetColour.BASE_GREY,
-			"Empty Room",
-			"Rose will return this room to its original state, which will render it unsuitable for housing any of your slaves.",
-			"This room is empty, and would need conversion work to be done if you'd like to house any of your slaves here.",
-			"This room is unoccupied, and although Rose seems to be doing an excellent job of keeping it clean and well-dusted, it seems a shame that it's not being used to its full potential...",
+			"Пустая комната",
+			"Роуз вернет эту комнату в ее первоначальное состояние, из-за чего она станет непригодной для содержания кого-либо из ваших рабов.",
+			"Эта комната пуста, и если вы захотите поселить здесь своих рабов, потребуется провести перепланировку.",
+			"Эта комната не занята, и хотя Роуз, кажется, отлично справляется с уборкой и натиранием пыли, кажется обидным, что она не используется в полную силу...",
 			2000,
 			0,
 			0,
@@ -106,7 +106,7 @@ public class PlaceUpgrade {
 				}
 			}
 			if(!Main.game.getCharactersTreatingCellAsHome(cell).isEmpty() || nonCompanionCharactersPresent) {
-				return new Value<>(false, "This room needs to be unoccupied and not currently in use in order to purchase this modification.");
+				return new Value<>(false, "Чтобы купить это улучшение, комната должна быть свободна и не использоваться в данный момент.");
 			}
 			return super.getExtraConditionalAvailability(cell);
 		}
@@ -114,10 +114,10 @@ public class PlaceUpgrade {
 	
 	public static final AbstractPlaceUpgrade LILAYA_ARTHUR_ROOM = new AbstractPlaceUpgrade(true,
 			PresetColour.RACE_HUMAN,
-			"Arthur's Room",
-			"Help Rose to move arcane instrumentation into this room in order to make it suitable for Arthur to stay in. <b>This is a permanent modification, and can never be undone!</b>",
-			"This room now belongs to Arthur, who uses it as his personal lab-cum-bedroom.",
-			"This room is unoccupied, and although Rose seems to be doing an excellent job of keeping it clean and well-dusted, it seems a shame that it's not being used to its full potential...",
+			"Комната Arthur",
+			"Помогите Роуз перенести в эту комнату арканные инструменты, чтобы сделать ее подходящей для проживания Arthur. <b>Это постоянное изменение, которое невозможно отменить!</b>",
+			"Теперь эта комната принадлежит Arthur, который использует ее как личную лабораторию, совмещенную со спальней.",
+			"Эта комната не занята, и хотя Роуз, кажется, отлично справляется с уборкой и натиранием пыли, кажется обидным, что она не используется в полную силу...",
 			0,
 			0,
 			0,
@@ -138,7 +138,7 @@ public class PlaceUpgrade {
 					place.removePlaceUpgrade(c, upgrade);
 				}
 			}
-			c.getPlace().setName("Arthur's Room");
+			c.getPlace().setName("Комната Arthur");
 			if(Main.game.isStarted()) {
 				Main.game.getNpc(Arthur.class).setLocation(c.getType(), c.getLocation(), true);
 			}
@@ -152,7 +152,7 @@ public class PlaceUpgrade {
 				return new Value<>(false, "");
 			}
 			if(!Main.game.getCharactersTreatingCellAsHome(cell).isEmpty()) {
-				return new Value<>(false, "This room needs to be unoccupied in order to purchase this modification.");
+				return new Value<>(false, "Чтобы приобрести это улучшение, комната должна быть свободна.");
 			}
 			return super.getExtraConditionalAvailability(cell);
 		}
@@ -163,11 +163,10 @@ public class PlaceUpgrade {
 
 	public static final AbstractPlaceUpgrade LILAYA_PLAYER_ROOM_BED = new AbstractPlaceUpgrade(false,
 			PresetColour.BASE_GOLD,
-			"Emperor-Size Bed",
-			"Have your current, king-size bed replaced by a huge, 'emperor-size' one. [style.italicsGood(This will improve the 'well rested' bonus gained from resting in your room.)]",
-			"Your old, king-size bed has been replaced by a huge, 'emperor-size' one. [style.italicsGood(The 'well rested' bonus gained from resting in your room has been improved!)]",
-			"Your old, king-size bed has been replaced by a huge, 'emperor-size' one, which sits in a dominant position against one wall of your room."
-					+ " Its comfortable mattress, fluffy pillows, and warm duvet ensure that you always feel extremely well rested after sleeping in it.",
+			"Кровать императорского размера",
+			"Замените вашу нынешнюю королевскую кровать на огромную кровать «императорского размера». [style.italicsGood(Это улучшит бонус «хорошо отдохнувший», получаемый во время отдыха в вашей комнате.)]",
+			"Ваша старая королевская кровать была заменена на огромную кровать «императорского размера». [style.italicsGood(Бонус «хорошо отдохнувший», получаемый во время отдыха в вашей комнате, был улучшен!)]",
+			"Ваша старая королевская кровать была заменена на огромную кровать «императорского размера», которая занимает доминирующее положение у одной из стен вашей комнаты. Ее удобный матрас, пушистые подушки и теплое одеяло гарантируют, что после сна вы всегда будете чувствовать себя превосходно отдохнувшим.",
 			10000,
 			-5000,
 			0,
@@ -184,10 +183,10 @@ public class PlaceUpgrade {
 	
 	public static final AbstractPlaceUpgrade LILAYA_DOLL_CLOSET = new AbstractPlaceUpgrade(true,
 			PresetColour.GENERIC_ARCANE,
-			"Doll Closet",
-			"Rose will clear all of the furniture out this room, allowing it to be used as a storage room for any sex dolls you own.",
-			"This room has been converted into a suitable place for storing your sex dolls.",
-			"You've had this room completely cleared, thereby enabling it to act as a storage room for any sex dolls you own.",
+			"Шкаф для кукол",
+			"Роуз вынесет из этой комнаты всю мебель, что позволит использовать ее как хранилище для всех ваших секс-кукол.",
+			"Эта комната была переоборудована в подходящее место для хранения ваших секс-кукол.",
+			"Вы полностью освободили эту комнату, превратив ее в хранилище для всех ваших секс-кукол.",
 			250,
 			0,
 			0,
@@ -210,10 +209,10 @@ public class PlaceUpgrade {
 				return new Value<>(false, "");
 			}
 			if(!Main.game.getPlayer().isQuestCompleted(QuestLine.SIDE_DOLL_STORAGE)) {
-				return new Value<>(false, "To install a doll closet, you'd need to first get Lilaya's permission to make the upgrade.");
+				return new Value<>(false, "Чтобы установить шкаф для кукол, вам сначала нужно получить разрешение Lilaya на это улучшение.");
 			}
 			if(!Main.game.getCharactersTreatingCellAsHome(cell).isEmpty()) {
-				return new Value<>(false, "This room needs to be unoccupied in order to purchase this modification.");
+				return new Value<>(false, "Чтобы приобрести это улучшение, комната должна быть свободна.");
 			}
 			return super.getExtraConditionalAvailability(cell);
 		}
@@ -233,14 +232,10 @@ public class PlaceUpgrade {
 	
 	public static final AbstractPlaceUpgrade LILAYA_GUEST_ROOM = new AbstractPlaceUpgrade(true,
 			PresetColour.GENERIC_ARCANE,
-			"Guest Room",
-			"Rose will prepare this room for one of your guests, making it suitable for housing one person."
-					+ " While not the most economical option, the occupant of this room will no doubt appreciate having their own personal space.",
-			"This room has been converted into a suitable place for housing one of your guests.",
-			"You've paid to have this room converted into a basic guest room."
-					+ " A single-size bed, covered in a plain white duvet, sits against one wall."
-					+ " Beside it, there's a simple bedside cabinet, complete with arcane-powered lamp."
-					+ " Other than that, the only other pieces of furniture in here are a wooden wardrobe and chest of drawers.",
+			"Гостевая комната",
+			"Роуз подготовит эту комнату для одного из ваших гостей, сделав её подходящей для проживания одного человека. Пусть это и не самый экономный вариант, но обитатель этой комнаты, без сомнения, оценит наличие собственного личного пространства.",
+			"Эта комната была переоборудована в подходящее место для проживания одного из ваших гостей.",
+			"Вы заплатили за то, чтобы превратить эту комнату в простую гостевую спальню. У одной из стен стоит односпальная кровать, застеленная простым белым одеялом. Рядом находится скромная прикроватная тумбочка с лампой на аркане. Помимо этого, единственная другая мебель здесь — это деревянный Гардероб и комод.",
 			2000,
 			0,
 			100,
@@ -262,10 +257,10 @@ public class PlaceUpgrade {
 				return new Value<>(false, "");
 			}
 			if(!Main.game.getPlayer().isQuestCompleted(QuestLine.SIDE_ACCOMMODATION)) {
-				return new Value<>(false, "To install a guest bedroom, you'd need to first find someone to invite to live with you, and then get Lilaya's permission to make the upgrade.");
+				return new Value<>(false, "Чтобы обустроить гостевую спальню, вам сначала нужно найти кого-то, кого вы пригласите жить с вами, а затем получить разрешение Lilaya на это улучшение.");
 			}
 			if(!Main.game.getCharactersTreatingCellAsHome(cell).isEmpty()) {
-				return new Value<>(false, "This room needs to be unoccupied in order to purchase this modification.");
+				return new Value<>(false, "Чтобы приобрести это улучшение, комната должна быть свободна.");
 			}
 			return super.getExtraConditionalAvailability(cell);
 		}
@@ -286,14 +281,10 @@ public class PlaceUpgrade {
 	
 	public static final AbstractPlaceUpgrade LILAYA_SLAVE_ROOM = new AbstractPlaceUpgrade(true,
 			PresetColour.GENERIC_ARCANE,
-			"Slave's Room",
-			"Rose will prepare this room just like she would for any other guest, making it suitable for housing just one of your slaves."
-					+ " While not the most economical choice if you plan on owning a large number of slaves, the occupant of this room will no doubt appreciate having their own personal space.",
-			"This room has been converted into a suitable place for housing one of your slaves.",
-			"You've paid to have this room converted into basic slave's quarters."
-					+ " A single-size bed, covered in a plain white duvet, sits against one wall."
-					+ " Beside it, there's a simple bedside cabinet, complete with arcane-powered lamp."
-					+ " Other than that, the only other pieces of furniture in here are a wooden wardrobe and chest of drawers.",
+			"Комната рабыни",
+			"Роуз подготовит эту комнату так же, как и для любого другого гостя, сделав её подходящей для проживания всего одной вашей рабыни. Хотя это не самый выгодный выбор, если вы планируете владеть большим количеством рабов, обитательница этой комнаты, без сомнения, оценит наличие собственного личного пространства.",
+			"Эта комната была переоборудована в подходящее место для проживания одной из ваших рабынь.",
+			"Вы заплатили за переоборудование этой комнаты в простые рабские покои. У одной из стен стоит односпальная кровать, застеленная простым белым одеялом. Рядом находится простая прикроватная тумбочка с лампой на аркане. Помимо этого, единственная другая мебель здесь — это деревянный гардероб и комод.",
 			2000,
 			0,
 			100,
@@ -310,22 +301,13 @@ public class PlaceUpgrade {
 			GenericPlace place = c.getPlace();
 			
 			if(place.getPlaceUpgrades().contains(PlaceUpgrade.LILAYA_SLAVE_ROOM_UPGRADE_BED)) {
-				return "You've paid to have this room converted into basic slave's quarters."
-						+ " A comfortable double size bed, covered in a warm, fluffy duvet, sits against one wall."
-						+ " Beside it, there's a simple bedside cabinet, complete with arcane-powered lamp."
-						+ " Other than that, the only other pieces of furniture in here are a wooden wardrobe and chest of drawers.";
+				return "Вы заплатили за переоборудование этой комнаты в простые рабские покои. У одной из стен стоит уютная двуспальная кровать, застеленная теплым пушистым одеялом. Рядом находится простая прикроватная тумбочка с лампой на аркане. Помимо этого, единственная другая мебель здесь — это деревянный гардероб и комод.";
 				
 			} else if(place.getPlaceUpgrades().contains(PlaceUpgrade.LILAYA_SLAVE_ROOM_DOWNGRADE_BED)) {
-				return "You've paid to have this room converted into basic slave's quarters."
-						+ " An uncomfortable single-size bed, covered in a thin blanket, sits against one wall."
-						+ " Beside it, there's a simple bedside cabinet, complete with arcane-powered lamp."
-						+ " Other than that, the only other pieces of furniture in here are a wooden wardrobe and chest of drawers.";
+				return "Вы заплатили за переоборудование этой комнаты в простые рабские покои. У одной из стен стоит неудобная односпальная кровать, накрытая тонким одеялом. Рядом находится простая прикроватная тумбочка с лампой на аркане. Помимо этого, единственная другая мебель здесь — это деревянный гардероб и комод.";
 		
 			}else {
-				return "You've paid to have this room converted into basic slave's quarters."
-						+ " A single-size bed, covered in a plain white duvet, sits against one wall."
-						+ " Beside it, there's a simple bedside cabinet, complete with arcane-powered lamp."
-						+ " Other than that, the only other pieces of furniture in here are a wooden wardrobe and chest of drawers.";
+				return "Вы заплатили за переоборудование этой комнаты в простые рабские покои. У одной из стен стоит односпальная кровать, застеленная простым белым одеялом. Рядом находится простая прикроватная тумбочка с лампой на аркане. Помимо этого, единственная другая мебель здесь — это деревянный гардероб и комод.";
 			}
 		}
 		
@@ -335,7 +317,7 @@ public class PlaceUpgrade {
 				return new Value<>(false, "");
 			}
 			if(!Main.game.getCharactersTreatingCellAsHome(cell).isEmpty()) {
-				return new Value<>(false, "This room needs to be unoccupied in order to purchase this modification.");
+				return new Value<>(false, "Чтобы приобрести это улучшение, комната должна быть свободна.");
 			}
 			return super.getExtraConditionalAvailability(cell);
 		}
@@ -353,15 +335,10 @@ public class PlaceUpgrade {
 	
 	public static final AbstractPlaceUpgrade LILAYA_SLAVE_ROOM_DOUBLE = new AbstractPlaceUpgrade(true,
 			PresetColour.BASE_MAGENTA,
-			"Double Slave Room",
-			"Rose will prepare this room just like she would for any other guest, making it suitable for housing two of your slaves."
-					+ " While more cost-effective than giving each slave their own room, the occupants will no doubt be a little frustrated at having to share their personal space with another slave,"
-						+ " and will also get the opportunity to conspire with one another against you.",
-			"This room has been converted into a suitable place for housing two of your slaves.",
-			"You've paid to have this room converted so that it's suitable for housing two of your slaves."
-					+ " A pair of single-size beds, covered in a plain white duvets, sit against opposite walls."
-					+ " Beside each one, there's a simple bedside cabinet, complete with arcane-powered lamp."
-					+ " Other than that, the only other pieces of furniture in here are a single wooden wardrobe and solitary chest of drawers.",
+			"Двуспальная рабская комната",
+			"Роуз подготовит эту комнату так же, как и для любого другого гостя, сделав её подходящей для размещения двух ваших рабов. Хотя это обходится дешевле, чем выделять каждому рабу отдельную комнату, обитатели, без сомнения, будут немного раздосадованы тем, что им приходится делить личное пространство с другим рабом, а также получат возможность сговариваться друг с другом против вас.",
+			"Эта комната была переоборудована в подходящее место для размещения двух ваших рабов.",
+			"Вы заплатили за переоборудование этой комнаты, чтобы она подходила для размещения двух ваших рабов. У противоположных стен стоят две односпальные кровати, застеленные простыми белыми одеялами. Рядом с каждой из них стоит простая тумбочка, укомплектованная лампой на аркане. Помимо этого, единственная другая мебель здесь — это один деревянный гардероб и одинокий комод.",
 			3500,
 			0,
 			100,
@@ -378,22 +355,13 @@ public class PlaceUpgrade {
 			GenericPlace place = c.getPlace();
 			
 			if(place.getPlaceUpgrades().contains(PlaceUpgrade.LILAYA_SLAVE_ROOM_UPGRADE_BED)) {
-				return "You've paid to have this room converted so that it's suitable for housing two of your slaves."
-							+ " Two double size beds, covered in warm, fluffy duvets, sit against opposite walls."
-							+ " On either side of them, there are simple bedside cabinets, each complete with its own arcane-powered lamp."
-							+ " Other than those, the only other pieces of furniture in here are a pair of wooden wardrobes and two chests of drawers.";
+				return "Вы заплатили за переоборудование этой комнаты, чтобы она подходила для размещения двух ваших рабов. У противоположных стен стоят две двуспальные кровати, застеленные теплыми пушистыми одеялами. По обе стороны от них стоят простые прикроватные тумбочки, каждая со своей лампой на аркане. Помимо этого, единственная другая мебель здесь — это пара деревянных гардеробов и два комода.";
 				
 			} else if(place.getPlaceUpgrades().contains(PlaceUpgrade.LILAYA_SLAVE_ROOM_DOWNGRADE_BED)) {
-				return "You've paid to have this room converted so that it's suitable for housing two of your slaves."
-						+ " A pair of uncomfortable single-size beds, covered in thin blankets, sit against opposite walls."
-						+ " Beside each one, there's a simple bedside cabinet, complete with arcane-powered lamp."
-						+ " Other than that, the only other pieces of furniture in here are a single wooden wardrobe and solitary chest of drawers.";
+				return "Вы заплатили за переделку этой комнаты, чтобы она подходила для размещения двух ваших рабынь. У противоположных стен стоят две неудобные односпальные кровати, застеленные тонкими одеялами. Рядом с каждой стоит простая тумбочка, укомплектованная лампой на аркане. Помимо этого, единственная другая мебель здесь — это один деревянный гардероб и одинокий комод.";
 		
 			}else {
-				return "You've paid to have this room converted so that it's suitable for housing two of your slaves."
-					+ " A pair of single-size beds, covered in a plain white duvets, sit against opposite walls."
-					+ " Beside each one, there's a simple bedside cabinet, complete with arcane-powered lamp."
-					+ " Other than that, the only other pieces of furniture in here are a single wooden wardrobe and solitary chest of drawers.";
+				return "Вы заплатили за переоборудование этой комнаты, чтобы она подходила для размещения двух ваших рабов. У противоположных стен стоят две односпальные кровати, застеленные простыми белыми одеялами. Рядом с каждой из них стоит простая тумбочка, укомплектованная лампой на аркане. Помимо этого, единственная другая мебель здесь — это один деревянный гардероб и одинокий комод.";
 			}
 		}
 		
@@ -403,7 +371,7 @@ public class PlaceUpgrade {
 				return new Value<>(false, "");
 			}
 			if(!Main.game.getCharactersTreatingCellAsHome(cell).isEmpty() && !cell.getPlace().getPlaceUpgrades().contains(LILAYA_SLAVE_ROOM)) {
-				return new Value<>(false, "This room needs to be unoccupied in order to purchase this modification.");
+				return new Value<>(false, "Чтобы приобрести это улучшение, комната должна быть свободна.");
 			}
 			return super.getExtraConditionalAvailability(cell);
 		}
@@ -426,15 +394,10 @@ public class PlaceUpgrade {
 	
 	public static final AbstractPlaceUpgrade LILAYA_SLAVE_ROOM_QUADRUPLE = new AbstractPlaceUpgrade(true,
 			PresetColour.BASE_MAGENTA,
-			"Quadruple Slave Room",
-			"Rose will prepare this room just like she would for any other guest, making it suitable for housing four of your slaves."
-					+ " While a lot more cost-effective than giving each slave their own room, the occupants will no doubt be a little frustrated at having to share their personal space with another slave,"
-						+ " and will also get plenty of opportunities to conspire with one another against you.",
-			"This room has been converted into a suitable place for housing four of your slaves.",
-			"You've paid to have this room converted so that it's suitable for housing four of your slaves."
-					+ " Four single-size beds, covered in a plain white duvets, sit against the walls."
-					+ " Beside each one, there's a simple bedside cabinet, complete with arcane-powered lamp."
-					+ " Other than that, the only other pieces of furniture in here are a pair of wooden wardrobes and two chests of drawers.",
+			"Четверная комната для рабынь",
+			"Роза подготовит эту комнату так же, как и для любого другого гостя, сделав её подходящей для размещения четырех ваших рабынь. Хотя это гораздо выгоднее, чем выделять каждой рабыне отдельную комнату, обитательницы, без сомнения, будут немного раздосадованы тем, что им приходится делить личное пространство с другой рабыней, а также получат массу возможностей для заговоров против вас.",
+			"Эта комната была переделана в подходящее место для размещения четырех ваших рабынь.",
+			"Вы заплатили за переделку этой комнаты, чтобы она подходила для размещения четырех ваших рабынь. Четыре односпальные кровати, застеленные простыми белыми одеялами, стоят вдоль стен. Рядом с каждой — простая тумбочка, укомплектованная лампой на аркане. Помимо этого, единственная другая мебель здесь — это пара деревянных гардеробов и два комода.",
 			6000,
 			0,
 			100,
@@ -451,22 +414,13 @@ public class PlaceUpgrade {
 			GenericPlace place = c.getPlace();
 			
 			if(place.getPlaceUpgrades().contains(PlaceUpgrade.LILAYA_SLAVE_ROOM_UPGRADE_BED)) {
-				return "You've paid to have this room converted so that it's suitable for housing four of your slaves."
-						+ " Four double size beds, covered in warm, fluffy duvets, sit against the walls."
-						+ " On either side of each one, there are simple bedside cabinets, upon which there are arcane-powered lamps."
-						+ " Other than those, the only other pieces of furniture in here are four wooden wardrobes and four chests of drawers.";
+				return "Вы заплатили за переделку этой комнаты, чтобы она подходила для размещения четырех ваших рабынь. Вдоль стен стоят четыре двуспальные кровати, укрытые теплыми пушистыми одеялами. По обе стороны от каждой кровати стоят простые прикроватные тумбочки с лампами, работающими на энергии Арканы. Помимо них, единственная другая мебель здесь — это четыре деревянных Гардероба и четыре комода.";
 				
 			} else if(place.getPlaceUpgrades().contains(PlaceUpgrade.LILAYA_SLAVE_ROOM_DOWNGRADE_BED)) {
-				return "You've paid to have this room converted so that it's suitable for housing four of your slaves."
-						+ " Four uncomfortable, single-size beds, covered in thin blankets, sit against the walls."
-						+ " Beside each one, there's a simple bedside cabinet, complete with arcane-powered lamp."
-						+ " Other than those, the only other pieces of furniture in here are a pair of wooden wardrobes and two chests of drawers.";
+				return "Вы заплатили за переделку этой комнаты, чтобы она подходила для размещения четырех ваших рабынь. Вдоль стен стоят четыре неудобные односпальные кровати, накрытые тонкими одеялами. Рядом с каждой стоит простая прикроватная тумбочка с лампой на энергии Арканы. Помимо них, единственная другая мебель здесь — это пара деревянных Гардеробов и два комода.";
 		
 			}else {
-				return "You've paid to have this room converted so that it's suitable for housing four of your slaves."
-					+ " Four single-size beds, covered in plain white duvets, sit against the walls."
-					+ " Beside each one, there's a simple bedside cabinet, complete with arcane-powered lamp."
-					+ " Other than that, the only other pieces of furniture in here are a single wooden wardrobe and solitary chest of drawers.";
+				return "Вы заплатили за переделку этой комнаты, чтобы она подходила для размещения четырех ваших рабынь. Вдоль стен стоят четыре односпальные кровати, застеленные простыми белыми одеялами. Рядом с каждой стоит простая прикроватная тумбочка с лампой на энергии Арканы. Помимо них, единственная другая мебель здесь — это один деревянный Гардероб и одинокий комод.";
 			}
 		}
 		
@@ -478,7 +432,7 @@ public class PlaceUpgrade {
 			if(!Main.game.getCharactersTreatingCellAsHome(cell).isEmpty()
 					 && !cell.getPlace().getPlaceUpgrades().contains(LILAYA_SLAVE_ROOM)
 					 && !cell.getPlace().getPlaceUpgrades().contains(LILAYA_SLAVE_ROOM_DOUBLE)) {
-				return new Value<>(false, "This room needs to be unoccupied in order to purchase this modification.");
+				return new Value<>(false, "Чтобы приобрести это улучшение, комната должна быть свободна.");
 			}
 			return super.getExtraConditionalAvailability(cell);
 		}
@@ -504,12 +458,10 @@ public class PlaceUpgrade {
 	
 	public static final AbstractPlaceUpgrade LILAYA_SLAVE_ROOM_DOWNGRADE_BED = new AbstractPlaceUpgrade(false,
 			PresetColour.GENERIC_BAD,
-			"Small Steel Bed",
-			"Replace the bed in this room with a steel-framed one, complete with an uncomfortable mattress, a hard pillow, and a thin blanket."
-					+ " These changes will leave no doubt in the occupant's mind that they're a slave.",
-			"A small, single size bed, complete with an uncomfortable mattress, a hard pillow, and a thin blanket, has been installed in this room.",
-			"A small, single size bed, complete with an uncomfortable mattress, a hard pillow, and a thin blanket, sits against one side of the room."
-					+ " Providing this room's occupant with such an uncomfortable place to sleep will definitely reinforce the fact that they're a slave, but at the same time, they're bound to dislike you more...",
+			"Маленькая стальная кровать",
+			"Замените кровать в этой комнате на стальную раму с неудобным матрасом, жесткой подушкой и тонким одеялом. Эти изменения не оставят обитательницам сомнений в том, что они — рабыни.",
+			"В этой комнате установили маленькую односпальную кровать с неудобным матрасом, жесткой подушкой и тонким одеялом.",
+			"Маленькая односпальная кровать с неудобным матрасом, жесткой подушкой и тонким одеялом стоит у одной из стен. То, что обитателю комнаты приходится спать в таких неудобствах, определенно закрепит в его сознании мысль о том, что он раб, но в то же время он наверняка станет еще сильнее тебя недолюбливать...",
 			250,
 			100,
 			-10,
@@ -522,22 +474,19 @@ public class PlaceUpgrade {
 			GenericPlace place = c.getPlace();
 			
 			if(place.getPlaceUpgrades().contains(LILAYA_SLAVE_ROOM_QUADRUPLE)) {
-				return "The four single-sized beds in this room have all been replaced with basic, steel-framed ones, and are equipped with uncomfortable mattress, hard pillows, and thin blankets."
-						+ " Providing this room's occupants with such uncomfortable places to sleep will definitely help them to accept the fact that they're slaves, but at the same time, they're bound to dislike you more...";
+				return "Все четыре односпальные кровати в этой комнате заменили на простые модели в стальных рамах, оснащенные неудобными матрасами, жесткими подушками и тонкими одеялами. Такие неудобные спальные места определенно помогут обитателям комнаты смириться с тем, что они рабы, но в то же время они наверняка станут еще сильнее тебя недолюбливать...";
 				
 			} else if(place.getPlaceUpgrades().contains(LILAYA_SLAVE_ROOM_DOUBLE)) {
-				return "This room's pair of single-sized beds have been replaced with basic, steel-framed ones, and are equipped with uncomfortable mattress, hard pillows, and thin blankets."
-						+ " Providing this room's occupants with such uncomfortable places to sleep will definitely help them to accept the fact that they're slaves, but at the same time, they're bound to dislike you more...";
+				return "Пара односпальных кроватей в этой комнате заменили на простые модели в стальных рамах, оснащенные неудобными матрасами, жесткими подушками и тонкими одеялами. Такие неудобные спальные места определенно помогут обитателям комнаты смириться с тем, что они рабы, но в то же время они наверняка станут еще сильнее тебя недолюбливать...";
 				
 			} else {
-				return "The small, single size bed in this room has been replaced with a basic, steel-framed one, and is equipped with an uncomfortable mattress, a hard pillow, and a thin blanket."
-						+ " Providing this room's occupant with such an uncomfortable place to sleep will definitely help them to accept the fact that they're a slave, but at the same time, they're bound to dislike you more...";
+				return "Маленькая односпальная кровать в этой комнате была заменена на простую кровать со стальным каркасом, укомплектованную неудобным матрасом, жесткой подушкой и тонким одеялом. Предоставление обитателю этой комнаты столь неудобного места для сна определенно поможет ему смириться с тем, что он раб, но в то же время это неизбежно заставит его любить вас еще меньше...";
 			}
 		}
 		@Override
 		protected Value<Boolean, String> getExtraConditionalAvailability(Cell cell) {
 			if(cell.getPlace().getPlaceUpgrades().contains(LILAYA_SLAVE_ROOM_UPGRADE_BED)) {
-				return new Value<>(false, "The 'Double Size Bed' upgrade must be removed before the 'Small Steel Bed' can be installed.");
+				return new Value<>(false, "Чтобы установить «Маленькую стальную кровать», необходимо сначала убрать «Двуспальную кровать».");
 			}
 			return super.getExtraConditionalAvailability(cell);
 		}
@@ -545,12 +494,10 @@ public class PlaceUpgrade {
 	
 	public static final AbstractPlaceUpgrade LILAYA_SLAVE_ROOM_UPGRADE_BED = new AbstractPlaceUpgrade(false,
 			PresetColour.GENERIC_GOOD,
-			"Double Size Bed",
-			"Install a double size bed in this room, along with a more comfortable mattress, fluffy pillows, and a warm duvet."
-					+ " The occupant of this room is sure to appreciate these upgrades.",
-			"A double size bed, complete with a comfortable mattress, fluffy pillows, and a warm duvet, has been installed in this room.",
-			"A double size bed, complete with a comfortable mattress, fluffy pillows, and a warm duvet, sits against one side of the room."
-					+ " Providing this room's occupant with such a delightful place to sleep will definitely get them to like you more, although such luxury might make them forget their place...",
+			"Двуспальная кровать",
+			"Установить в этой комнате двуспальную кровать с более удобным матрасом, пушистыми подушками и теплым одеялом. Обитатель этой комнаты наверняка оценит такие улучшения.",
+			"В этой комнате установлена двуспальная кровать с удобным матрасом, пушистыми подушками и теплым одеялом.",
+			"Вдоль одной из стен комнаты стоит двуспальная кровать с удобным матрасом, пушистыми подушками и теплым одеялом. Предоставление обитателю этой комнаты столь восхитительного места для сна определенно заставит его любить вас больше, хотя такая роскошь может заставить его забыть о своем месте...",
 			500,
 			200,
 			25,
@@ -563,22 +510,19 @@ public class PlaceUpgrade {
 			GenericPlace place = c.getPlace();
 			
 			if(place.getPlaceUpgrades().contains(LILAYA_SLAVE_ROOM_QUADRUPLE)) {
-				return "The four single-sized beds in this room have all been replaced with double-sized ones, and come complete with comfortable mattresses, fluffy pillows, and warm duvets."
-						+ " Providing this room's occupants with such comfortable places to sleep will definitely get them to like you more, although such luxury might make them forget their place...";
+				return "Четыре односпальные кровати в этой комнате были заменены на двуспальные, укомплектованные удобными матрасами, пушистыми подушками и теплыми одеялами. Предоставление обитателям комнаты таких комфортных спальных мест определенно заставит их любить вас больше, хотя подобная роскошь может заставить их забыть свое место...";
 				
 			} else if(place.getPlaceUpgrades().contains(LILAYA_SLAVE_ROOM_DOUBLE)) {
-				return "This room's pair of single-sized beds have been replaced with double-sized ones, and come complete with comfortable mattresses, fluffy pillows, and warm duvets."
-						+ " Providing this room's occupants with such comfortable places to sleep will definitely get them to like you more, although such luxury might make them forget their place...";
+				return "Пара односпальных кроватей в этой комнате была заменена на двуспальные, укомплектованные удобными матрасами, пушистыми подушками и теплыми одеялами. Предоставление обитателям комнаты таких комфортных спальных мест определенно заставит их любить вас больше, хотя подобная роскошь может заставить их забыть свое место...";
 				
 			} else {
-				return "A double size bed, complete with a comfortable mattress, fluffy pillows, and a warm duvet, sits against one side of the room."
-						+ " Providing this room's occupant with such a delightful place to sleep will definitely get them to like you more, although such luxury might make them forget their place...";
+				return "Вдоль одной из стен комнаты стоит двуспальная кровать с удобным матрасом, пушистыми подушками и теплым одеялом. Предоставление обитателю этой комнаты столь восхитительного места для сна определенно заставит его любить вас больше, хотя такая роскошь может заставить его забыть о своем месте...";
 			}
 		}
 		@Override
 		protected Value<Boolean, String> getExtraConditionalAvailability(Cell cell) {
 			if(cell.getPlace().getPlaceUpgrades().contains(LILAYA_SLAVE_ROOM_DOWNGRADE_BED)) {
-				return new Value<>(false, "The 'Small Steel Bed' upgrade must be removed before the 'Double Size Bed' can be installed.");
+				return new Value<>(false, "Прежде чем можно будет установить «Двуспальную кровать», необходимо убрать улучшение «Маленькая стальная кровать».");
 			}
 			return super.getExtraConditionalAvailability(cell);
 		}
@@ -586,16 +530,10 @@ public class PlaceUpgrade {
 	
 	public static final AbstractPlaceUpgrade LILAYA_SLAVE_ROOM_OBEDIENCE_TRAINER = new AbstractPlaceUpgrade(false,
 			PresetColour.GENERIC_ARCANE,
-			"Obedience Trainer",
-			"Lilaya has asked you if you'd consider installing one of her experimental devices in this room; a so-called 'obedience trainer'."
-					+ " This particular addition takes the form of a large, glowing crystal that is to be placed in the centre of the room."
-					+ " Whenever the room's occupant thinks a disobedient thought, the crystal will shoot out a shocking bolt of arcane energy, thereby training a slave's obedience in the most intrusive fashion imaginable.",
-			"You've installed one of Lilaya's experimental devices in this room; a so-called 'obedience trainer'."
-					+ " This particular addition takes the form of a large, glowing crystal that has been placed in the centre of the room."
-					+ " Whenever the room's occupant thinks a disobedient thought, the crystal shoots out a shocking bolt of arcane energy, thereby training a slave's obedience in the most intrusive fashion imaginable.",
-			"One of Lilaya's experimental devices, a so-called 'obedience trainer', has been installed in the middle of this room."
-					+ " Taking the form of a large, glowing crystal, the obedience trainer will shoot a shocking bolt of arcane energy at any slave nearby that dares to think a disobedient thought."
-					+ " Although highly effective at training obedience, any slaves subjected to this intrusive training method will be sure to loathe you before long...",
+			"Тренажер покорности",
+			"Lilaya спросила вас, не согласились бы вы установить в этой комнате одно из ее экспериментальных устройств — так называемый «тренажер покорности». Это дополнение представляет собой огромный светящийся кристалл, который помещается в центре комнаты. Всякий раз, когда обитатель комнаты допускает непослушную мысль, кристалл выпускает шокирующий разряд арканой энергии, тренируя покорность рабыни самым навязчивым образом, какой только можно вообразить.",
+			"Вы установили в этой комнате одно из экспериментальных устройств Lilaya — так называемый «тренажер покорности». Это дополнение представляет собой огромный светящийся кристалл, помещенный в центре комнаты. Всякий раз, когда обитатель комнаты допускает непослушную мысль, кристалл выпускает шокирующий разряд арканой энергии, тренируя покорность рабыни самым бесцеремонным образом, какой только можно вообразить.",
+			"В центре этой комнаты установлено одно из экспериментальных устройств Lilaya — так называемый «тренажер покорности». Представляя собой огромный светящийся кристалл, тренажер будет выпускать шокирующий разряд арканой энергии в любую находящуюся рядом рабыню, которая осмелится подумать о непослушании. Хотя этот метод крайне эффективен для тренировки покорности, любая рабыня, подвергшаяся такому бесцеремонному обучению, вскоре обязательно возненавидит вас...",
 			10000,
 			500,
 			250,
@@ -607,13 +545,10 @@ public class PlaceUpgrade {
 	
 	public static final AbstractPlaceUpgrade LILAYA_SLAVE_ROOM_DOG_BOWLS = new AbstractPlaceUpgrade(false,
 			PresetColour.GENERIC_BAD,
-			"Dog Bowls",
-			"Have meals served to this room's occupants in dog bowls placed upon the floor."
-					+ " Being forced to eat in such a humiliating fashion is sure to make your slaves dislike you, but it will also serve to emphasise the fact that they're nothing more than your property.",
-			"Metal dog bowls have been placed upon the floor in this room, and it's from out of these that this room's occupants are made to eat their meals."
-					+ " Being forced to eat in such a humiliating fashion is making your slaves dislike you, but it is also serving to emphasise the fact that they're nothing more than your property.",
-			"A series of metal dog bowls have been placed in one corner of the room, and it's from out of these that this room's occupants are expected to eat and drink."
-					+ " Being forced to get down on all fours and eat their meals like a dog is making your slaves dislike you, but at the same time, it's hammering home the fact that they're nothing more than your property...",
+			"Миски для собак",
+			"Подавать еду обитателям этой комнаты в мисках для собак, расставленных на полу. Вынужденное питание в столь унизительной манере наверняка заставит ваших рабынь недолюбливать вас, но это также подчеркнет тот факт, что они — не более чем ваша собственность.",
+			"На полу в этой комнате расставлены металлические миски для собак, и именно из них обитатели комнаты вынуждены принимать пищу. То, что их заставляют есть столь унизительным способом, заставляет твоих рабынь недолюбливать тебя, но в то же время это лишь подчеркивает тот факт, что они — не более чем твоя собственность.",
+			"В одном из углов комнаты расставлена серия металлических мисок для собак, и именно из них обитатели комнаты должны есть и пить. То, что их заставляют вставать на четвереньки и жрать как псов, заставляет твоих рабынь недолюбливать тебя, но в то же время это вбивает им в головы мысль, что они — не более чем твоя собственность...",
 			100,
 			0,
 			10,
@@ -624,7 +559,7 @@ public class PlaceUpgrade {
 		@Override
 		protected Value<Boolean, String> getExtraConditionalAvailability(Cell cell) {
 			if(cell.getPlace().getPlaceUpgrades().contains(LILAYA_SLAVE_ROOM_ROOM_SERVICE)) {
-				return new Value<>(false, "The 'Room Service' upgrade must be removed before the 'Dog Bowls' can be used.");
+				return new Value<>(false, "Прежде чем можно будет использовать «Миски для собак», необходимо убрать улучшение «Обслуживание номеров».");
 			}
 			return super.getExtraConditionalAvailability(cell);
 		}
@@ -632,13 +567,10 @@ public class PlaceUpgrade {
 	
 	public static final AbstractPlaceUpgrade LILAYA_SLAVE_ROOM_ROOM_SERVICE = new AbstractPlaceUpgrade(false,
 			PresetColour.GENERIC_ARCANE,
-			"Room Service",
-			"You could offer this room's occupant unlimited room service."
-					+ " This isn't exactly how most owners treat their slaves, and while it's sure to make the occupant like you more, it's also going to cost quite a bit in upkeep, as well as have some negative effects on their obedience...",
-			"You've offered unlimited room service to the occupants of this room."
-					+ " It's definitely making them like you more, but it's also costing a fair amount in upkeep, and is having a negative effect on your slaves' obedience...",
-			"A little push-trolley with a few empty silver plates and glasses stacked on top of it is evidence that the slaves who live here are taking full advantage of the unlimited room service you've offered to them."
-					+ " It's definitely making them like you more, but having such a luxury available to them is also having a negative impact on their obedience, not to mention the damage it's doing to your finances...",
+			"Обслуживание номеров",
+			"Ты можешь предложить обитателям этой комнаты безлимитное обслуживание. Не совсем так большинство хозяев обращаются со своими рабынями, и хотя это наверняка заставит их любить тебя больше, это потребует немалых затрат на содержание, а также окажет негативное влияние на их покорность...",
+			"Ты предложил обитателям этой комнаты безлимитное обслуживание. Это определенно заставляет их любить тебя больше, но обходится довольно дорого, а также отрицательно сказывается на покорности твоих рабынь...",
+			"Небольшая тележка с несколькими пустыми серебряными тарелками и стопками стаканов на ней — явное свидетельство того, что живущие здесь рабы вовсю пользуются предложенным вами безлимитным обслуживанием номеров. Это определенно заставляет их любить вас сильнее, но наличие такой роскоши также негативно сказывается на их покорности, не говоря уже о том ущербе, который это наносит вашим финансам...",
 			500,
 			0,
 			250,
@@ -649,7 +581,7 @@ public class PlaceUpgrade {
 		@Override
 		protected Value<Boolean, String> getExtraConditionalAvailability(Cell cell) {
 			if(cell.getPlace().getPlaceUpgrades().contains(LILAYA_SLAVE_ROOM_DOG_BOWLS)) {
-				return new Value<>(false, "The 'Dog Bowls' upgrade must be removed before the 'Room Service' can be used.");
+				return new Value<>(false, "Прежде чем можно будет использовать улучшение «Обслуживание номеров», необходимо убрать «Собачьи миски».");
 			}
 			return super.getExtraConditionalAvailability(cell);
 		}
@@ -657,13 +589,10 @@ public class PlaceUpgrade {
 	
 	public static final AbstractPlaceUpgrade LILAYA_SLAVE_ROOM_ARCANE_INSTRUMENTS = new AbstractPlaceUpgrade(false,
 			PresetColour.GENERIC_ARCANE,
-			"Arcane Instruments",
-			"Allow Lilaya to install arcane sensors in this room, so that she can gather useful data on your slave's aura."
-					+ " Your slaves will find this to be an intrusion on what little personal space they have, and their affection towards you will suffer as a result.",
-			"A series of arcane sensors have been set up around this room, allowing Lilaya to gather useful data on your slave's aura."
-					+ " Your slaves find this to be an intrusion on what little personal space they have, and their affection towards you will suffer as a result.",
-			"In exchange for lowering this room's upkeep, Lilaya has installed several arcane instruments around the room, which allow her to gather data about any slave being housed in here."
-					+ " A couple of them give off a very quiet humming noise, which, combined with their faint purple glow, makes them quite intrusive, and will negatively impact the occupant's affection towards you.",
+			"Arcane инструменты",
+			"Позволить Lilaya установить в этой комнате arcane сенсоры, чтобы она могла собирать полезные данные об ауре ваших рабов. Ваши рабы сочтут это вторжением в то немногое личное пространство, которое у них есть, и в результате их привязанность к вам пострадает.",
+			"В этой комнате установлена серия arcane сенсоров, позволяющая Lilaya собирать полезные данные об ауре ваших рабов. Ваши рабы считают это вторжением в то немногое личное пространство, которое у них есть, и в результате их привязанность к вам пострадает.",
+			"В обмен на снижение расходов на содержание этой комнаты, Lilaya установила в помещении несколько arcane инструментов, которые позволяют ей собирать данные о любом рабе, проживающем здесь. Некоторые из них издают едва слышное гудение, которое в сочетании со слабым фиолетовым свечением делает их весьма навязчивыми, что негативно скажется на привязанности обитателей к вам.",
 			500,
 			100,
 			-25,
@@ -677,9 +606,9 @@ public class PlaceUpgrade {
 	
 	public static final AbstractPlaceUpgrade LILAYA_DUNGEON_CELL = new AbstractPlaceUpgrade(true,
 			PresetColour.BASE_MAGENTA,
-			"Dungeon Cell",
+			"Камера в подземелье",
 			"-",
-			"This cell is just about large enough to hold four of your unlucky slaves.",
+			"Эта камера едва достаточно велика, чтобы вместить четверых ваших несчастных рабов.",
 			"-",
 			0,
 			0,
@@ -698,16 +627,10 @@ public class PlaceUpgrade {
 			
 			StringBuilder sb = new StringBuilder();
 			
-			sb.append("With the walls, floor, and ceiling being constructed out of large, grey stones, this cell has a gloomy, oppressive feel to it."
-					+ " A couple of metal sconces are fixed into opposite walls of the cell, with each one holding an arcane torch."
-					+ " Their perpetually-burning flames occasionally splutter and flicker, casting dancing shadows across the cell's interior."
-					+ " A small, barred window is set into the cell's heavy wooden door, allowing any unlucky slaves who are being held within to be monitored from the safety of the corridor.");
+			sb.append("Стены, пол и потолок здесь сложены из крупных серых камней, из-за чего в камере царит мрачная, гнетущая атмосфера. На противоположных стенах закреплены металлические подсвечники, в каждом из которых горит аркана-факел. Их вечно пылающие огни время от времени трещат и мерцают, отбрасывая пляшущие тени на стены. В тяжелой деревянной двери прорезано небольшое окно с решеткой, позволяющее наблюдать за несчастными рабами из безопасности коридора.");
 			
 			if(!place.getPlaceUpgrades().contains(PlaceUpgrade.LILAYA_DUNGEON_CELL_UPGRADE_BED) && !place.getPlaceUpgrades().contains(PlaceUpgrade.LILAYA_DUNGEON_CELL_DOWNGRADE_BED)) {
-				sb.append("<br/><br/>"
-						+ "Four small, steel-framed beds are located within this cell, each of which holds a thin mattress, a couple of deflated pillows, and a ragged blanket."
-						+ " Old, wooden boxes positioned beside these beds serve as crude substitutes for bedside cabinets."
-						+ " Other than these beds and crates, there are no other pieces of furniture within the cell.");
+				sb.append("<br/><br/>В этой камере стоят четыре маленькие кровати в стальных рамах; в каждой — тонкий матрас, пара сдувшихся подушек и рваное одеяло. Старые деревянные ящики, стоящие рядом с кроватями, служат примитивной заменой прикроватным тумбам. Помимо этих кроватей и ящиков, в камере нет никакой другой мебели.");
 			}
 			
 			return sb.toString();
@@ -717,12 +640,10 @@ public class PlaceUpgrade {
 
 	public static final AbstractPlaceUpgrade LILAYA_DUNGEON_CELL_DOWNGRADE_BED = new AbstractPlaceUpgrade(false,
 			PresetColour.GENERIC_BAD,
-			"Straw Bedding",
-			"Remove the steel-framed beds in this cell and replace them with piles of straw."
-					+ " Providing this cell's slaves with such uncomfortable places to sleep will definitely reinforce the fact that they're nothing but your property, but at the same time, they're bound to dislike you more...",
-			"The beds in this room have been removed and replaced with piles of straw.",
-			"A small, single size bed, complete with an uncomfortable mattress, a hard pillow, and a thin blanket, sits against one side of the room."
-					+ " Providing this cell's slaves with such uncomfortable places to sleep is definitely reinforcing the fact that they're nothing but your property, but at the same time, they're starting to dislike you more...",
+			"Соломенная подстилка",
+			"Уберите из этой камеры стальные кровати и замените их кучами соломы. Предоставление рабам столь неудобных мест для сна определенно укрепит их осознание того, что они — всего лишь ваша собственность, но в то же время они неизбежно станут ненавидеть вас еще сильнее...",
+			"Кровати в этой комнате убрали и заменили кучами соломы.",
+			"У одной из стен комнаты стоит маленькая односпальная кровать с неудобным матрасом, жесткой подушкой и тонким одеялом. Предоставление рабам столь неудобных мест для сна определенно подчеркивает тот факт, что они всего лишь ваша собственность, но в то же время они начинают испытывать к вам всё больше неприязни...",
 			100,
 			25,
 			0,
@@ -732,15 +653,13 @@ public class PlaceUpgrade {
 			null) {
 		@Override
 		public String getRoomDescription(Cell c) {
-			return "The four steel-framed beds in this room have all been removed and replaced with piles of straw."
-					+ " The old, wooden boxes which served as crude substitutes for bedside cabinets have also been replaced by the simple wooden frames which the straw was packaged in."
-					+ " Providing this cell's slaves with such uncomfortable places to sleep will definitely reinforce the fact that they're nothing but your property, but at the same time, they're bound to dislike you more...";
+			return "Четыре стальные кровати в этой комнате были убраны и заменены кучами соломы. Старые деревянные ящики, служившие примитивными тумбочками, также заменили простыми деревянными каркасами, в которых упаковывали солому. Предоставление рабам столь неудобных мест для сна определенно подчеркнет тот факт, что они всего лишь ваша собственность, но в то же время они неизбежно станут относиться к вам с еще большей неприязнью...";
 				
 		}
 		@Override
 		protected Value<Boolean, String> getExtraConditionalAvailability(Cell cell) {
 			if(cell.getPlace().getPlaceUpgrades().contains(LILAYA_DUNGEON_CELL_UPGRADE_BED)) {
-				return new Value<>(false, "The 'Improved Bedding' upgrade must be removed before the 'Straw Bedding' can be installed.");
+				return new Value<>(false, "Прежде чем установить «Соломенные постели», необходимо убрать «Улучшенные постели».");
 			}
 			return super.getExtraConditionalAvailability(cell);
 		}
@@ -748,12 +667,10 @@ public class PlaceUpgrade {
 	
 	public static final AbstractPlaceUpgrade LILAYA_DUNGEON_CELL_UPGRADE_BED = new AbstractPlaceUpgrade(false,
 			PresetColour.GENERIC_GOOD,
-			"Improved Bedding",
-			"Remove the beds' thin mattresses, deflated pillows, and ragged blankets, and replace them with more comfortable alternatives."
-					+ " Providing this cell's slaves with a higher level of comfort will definitely get them to like you more, although such relative luxury might make them forget their place...",
-			"The four beds in this cell have had their mattresses, pillows, and blankets replaced with more comfortable alternatives.",
-			"The four beds in this cell have had their mattresses, pillows, and blankets replaced with more comfortable alternatives."
-					+ " Providing this cell's slaves with a higher level of comfort is definitely getting them to like you more, although such relative luxury is making them forget their place...",
+			"Улучшенные постели",
+			"Уберите тонкие матрасы, сдувшиеся подушки и рваные одеяла, заменив их более комфортными вариантами. Обеспечение рабам более высокого уровня комфорта определенно заставит их больше любить вас, хотя подобная относительная роскошь может заставить их забыть свое место...",
+			"Матрасы, подушки и одеяла на четырех кроватях в этой камере были заменены на более комфортные варианты.",
+			"Матрасы, подушки и одеяла на четырех кроватях в этой камере были заменены на более комфортные варианты. Обеспечение рабыням этой камеры более высокого уровня комфорта определенно заставляет их любить вас сильнее, хотя подобная относительная роскошь заставляет их забывать свое место...",
 			250,
 			50,
 			5,
@@ -763,13 +680,12 @@ public class PlaceUpgrade {
 			null) {
 		@Override
 		public String getRoomDescription(Cell c) {
-			return "The four beds in this cell have had their mattresses, pillows, and blankets replaced with more comfortable alternatives."
-					+ " Providing this cell's slaves with a higher level of comfort will definitely get them to like you more, although such relative luxury might make them forget their place...";
+			return "Матрасы, подушки и одеяла на четырех кроватях в этой камере были заменены на более комфортные варианты. Обеспечение рабыням этой камеры более высокого уровня комфорта определенно заставит их любить вас сильнее, хотя подобная относительная роскошь может заставить их забыть свое место...";
 		}
 		@Override
 		protected Value<Boolean, String> getExtraConditionalAvailability(Cell cell) {
 			if(cell.getPlace().getPlaceUpgrades().contains(LILAYA_DUNGEON_CELL_DOWNGRADE_BED)) {
-				return new Value<>(false, "The 'Straw Bedding' upgrade must be removed before the 'Improved Bedding' can be installed.");
+				return new Value<>(false, "Прежде чем можно будет установить улучшение «Улучшенная постель», необходимо убрать «Соломенную постель».");
 			}
 			return super.getExtraConditionalAvailability(cell);
 		}
@@ -777,12 +693,10 @@ public class PlaceUpgrade {
 
 	public static final AbstractPlaceUpgrade LILAYA_DUNGEON_CELL_DOG_BOWLS = new AbstractPlaceUpgrade(false,
 			PresetColour.GENERIC_BAD,
-			"Dog Bowls",
-			"Have meals served to this cell's slaves in dog bowls placed upon the floor."
-					+ " Being forced to eat in such a humiliating fashion is sure to make your slaves dislike you, but it will also serve to emphasise the fact that they're nothing more than your property.",
-			"Metal dog bowls have been placed upon the floor, and it's from out of these that this cell's slaves are made to eat their meals.",
-			"Four pairs of metal dog bowls have been placed upon the floor, and it's from out of these that the cell's slaves are expected to eat and drink."
-					+ " Being forced to get down on all fours and eat their meals like a dog is making your slaves dislike you, but at the same time, it's hammering home the fact that they're nothing more than your property...",
+			"Миски для собак",
+			"Подавать еду рабыням этой камеры следует в собачьих мисках, расставленных на полу. Вынужденное питание в столь унизительной манере наверняка заставит ваших рабынь недолюбливать вас, но это также послужит напоминанием о том, что они — не более чем ваша собственность.",
+			"На пол были расставлены металлические собачьи миски, из которых рабыни этой камеры вынуждены есть.",
+			"На полу расставлены четыре пары металлических мисок для собак — именно из них рабы должны есть и пить. То, что их заставляют вставать на четвереньки и жрать как псов, заставляет их недолюбливать тебя, но в то же время это наглядно вбивает им в головы мысль, что они — всего лишь твоя собственность...",
 			100,
 			0,
 			10,
@@ -793,7 +707,7 @@ public class PlaceUpgrade {
 		@Override
 		protected Value<Boolean, String> getExtraConditionalAvailability(Cell cell) {
 			if(cell.getPlace().getPlaceUpgrades().contains(LILAYA_DUNGEON_CELL_DECENT_FOOD)) {
-				return new Value<>(false, "The 'Decent Food' upgrade must be removed before the 'Dog Bowls' can be used.");
+				return new Value<>(false, "Чтобы использовать улучшение «Миски для собак», необходимо сначала убрать «Приличную еду».");
 			}
 			return super.getExtraConditionalAvailability(cell);
 		}
@@ -801,12 +715,10 @@ public class PlaceUpgrade {
 	
 	public static final AbstractPlaceUpgrade LILAYA_DUNGEON_CELL_DECENT_FOOD = new AbstractPlaceUpgrade(false,
 			PresetColour.GENERIC_GOOD,
-			"Decent Food",
-			"Replace the cold, bland meals served to this cell's slaves with decent, hot food."
-					+ " Providing this cell's slaves with nicer food will definitely get them to like you more, although such relative luxury might make them forget their place...",
-			"You've replaced the cold, bland meals served to this cell's slaves with decent, hot food.",
-			"You've replaced the cold, bland meals served to this cell's slaves with decent, hot food."
-					+ " Providing this cell's slaves with nicer food is definitely getting them to like you more, although such relative luxury is making them forget their place...",
+			"Приличная еда",
+			"Замените холодную и безвкусную еду, которую подают рабам в этой камере, на достойную горячую пищу. Более качественная еда определенно заставит рабов симпатизировать вам больше, хотя подобная относительная роскошь может заставить их забыть свое место...",
+			"Вы заменили холодную и безвкусную еду, которую подают рабам в этой камере, на достойную горячую пищу.",
+			"Вы заменили холодную и безвкусную еду, которую подают рабам в этой камере, на достойную горячую пищу. Более качественная еда определенно заставляет рабов симпатизировать вам больше, хотя подобная относительная роскошь заставляет их забывать свое место...",
 			250,
 			0,
 			100,
@@ -817,7 +729,7 @@ public class PlaceUpgrade {
 		@Override
 		protected Value<Boolean, String> getExtraConditionalAvailability(Cell cell) {
 			if(cell.getPlace().getPlaceUpgrades().contains(LILAYA_DUNGEON_CELL_DOG_BOWLS)) {
-				return new Value<>(false, "The 'Dog Bowls' upgrade must be removed before the 'Decent Food' can be used.");
+				return new Value<>(false, "Чтобы использовать улучшение «Приличная еда», необходимо сначала убрать «Миски для собак».");
 			}
 			return super.getExtraConditionalAvailability(cell);
 		}
@@ -825,12 +737,10 @@ public class PlaceUpgrade {
 
 	public static final AbstractPlaceUpgrade LILAYA_DUNGEON_CELL_ROPES = new AbstractPlaceUpgrade(false,
 			PresetColour.GENERIC_TERRIBLE,
-			"Rope Restraints",
-			"Attach sturdy ropes to the walls of this cell and use them to bind your slaves in place."
-					+ " This will prevent your slaves from interacting with one another, and if in a submissive slot, they will start sex scenes with the 'Bound in rope' immobilising effect.",
-			"Sturdy ropes have been attached to the walls of this cell, and are being used to bind the occupying slaves in place.",
-			"Sturdy ropes have been attached to the walls of this cell, and are being used to bind the occupying slaves in place."
-					+ " This is preventing your slaves from interacting with one another, and is making them more obedient at the cost of disliking you more...",
+			"Веревочные путы",
+			"Прикрепите прочные веревки к стенам этой камеры и используйте их, чтобы привязывать рабов на месте. Это помешает им взаимодействовать друг с другом, а если раб находится в подчиненном слоте, он будет начинать секс-сцены с эффектом обездвиживания «Связана веревками».",
+			"К стенам этой камеры прикреплены прочные веревки, которые используются для того, чтобы удерживать находящихся здесь рабов на месте.",
+			"К стенам этой камеры прикреплены прочные веревки, которые используются для того, чтобы удерживать находящихся здесь рабов на месте. Это мешает вашим рабам взаимодействовать друг с другом и делает их более послушными, но при этом они начинают относиться к вам с большим неприятием...",
 			250,
 			100,
 			10,
@@ -841,7 +751,7 @@ public class PlaceUpgrade {
 		@Override
 		protected Value<Boolean, String> getExtraConditionalAvailability(Cell cell) {
 			if(cell.getPlace().getPlaceUpgrades().contains(LILAYA_DUNGEON_CELL_CHAINS)) {
-				return new Value<>(false, "The 'Chain Restraints' upgrade must be removed before the 'Rope Restraints' can be used.");
+				return new Value<>(false, "Прежде чем можно будет использовать «Веревочные путы», необходимо снять улучшение «Цепные путы».");
 			}
 			return super.getExtraConditionalAvailability(cell);
 		}
@@ -853,12 +763,10 @@ public class PlaceUpgrade {
 	
 	public static final AbstractPlaceUpgrade LILAYA_DUNGEON_CELL_CHAINS = new AbstractPlaceUpgrade(false,
 			PresetColour.GENERIC_TERRIBLE,
-			"Chain Restraints",
-			"Attach metal chains to the walls of this cell and use them to bind your slaves in place."
-					+ " This will prevent your slaves from interacting with one another, and if in a submissive slot, they will start sex scenes with the 'Bound in chains' immobilising effect.",
-			"Metal chains have been attached to the walls of this cell, and are being used to bind the occupying slaves in place.",
-			"Metal chains have been attached to the walls of this cell, and are being used to bind the occupying slaves in place."
-					+ " This is preventing your slaves from interacting with one another, and is making them more obedient at the cost of disliking you more...",
+			"Цепные путы",
+			"Прикрепите к стенам этой камеры металлические цепи и используйте их, чтобы удерживать ваших рабов на месте. Это помешает им взаимодействовать друг с другом, а если раб находится в подчиненном слоте, то секс-сцены будут начинаться с эффектом обездвиживания «Связанные цепями».",
+			"К стенам этой камеры прикреплены металлические цепи, которые используются для того, чтобы удерживать находящихся здесь рабов на месте.",
+			"К стенам этой камеры прикреплены металлические цепи, которые используются для того, чтобы удерживать находящихся здесь рабов на месте. Это мешает вашим рабам взаимодействовать друг с другом и делает их более послушными, но при этом они начинают относиться к вам с большим неприятием...",
 			500,
 			250,
 			25,
@@ -869,7 +777,7 @@ public class PlaceUpgrade {
 		@Override
 		protected Value<Boolean, String> getExtraConditionalAvailability(Cell cell) {
 			if(cell.getPlace().getPlaceUpgrades().contains(LILAYA_DUNGEON_CELL_ROPES)) {
-				return new Value<>(false, "The 'Rope Restraints' upgrade must be removed before the 'Chain Restraints' can be used.");
+				return new Value<>(false, "Прежде чем можно будет использовать «Цепные путы», необходимо снять улучшение «Веревочные путы».");
 			}
 			return super.getExtraConditionalAvailability(cell);
 		}
@@ -884,14 +792,10 @@ public class PlaceUpgrade {
 	
 	public static final AbstractPlaceUpgrade LILAYA_MILKING_ROOM = new AbstractPlaceUpgrade(true,
 			PresetColour.BASE_ORANGE,
-			"Milking Room",
-			"Install milking machines in this room, allowing [style.colourGood(eight)] of your slaves to be assigned to work in here, each of which will be milked of their milk and cum.<br/>"
-					+ "<i>Milk: "+Units.fluid(MilkingRoom.BASE_MILKING_AMOUNT)+" per hour<br/>"
-					+ "Cum: "+Units.fluid(MilkingRoom.BASE_CUM_MILKING_AMOUNT)+" per hour<br/>"
-					+ "Girlcum: "+Units.fluid(MilkingRoom.BASE_GIRLCUM_MILKING_AMOUNT)+" per hour</i>",
-			"This room has been converted into a suitable place for milking [style.colourGood(eight)] of your slaves' milk and cum.",
-			"This room has been converted into a special milking room, in which eight of your slaves can be milked of their various fluids."
-					+ " Four machines are set along the left-hand side of the wall, with the other four being placed on the opposite side of the room.",
+			"Доильный зал",
+			"Установите в этой комнате доильные аппараты, что позволит назначить сюда [style.colourGood(восемь)] ваших рабов; каждую из них будут доить — и молоко, и сперму.<br/><i>Молоко: "+Units.fluid(MilkingRoom.BASE_MILKING_AMOUNT)+" в час<br/>Сперма: "+Units.fluid(MilkingRoom.BASE_CUM_MILKING_AMOUNT)+" в час<br/>Девичья сперма: "+Units.fluid(MilkingRoom.BASE_GIRLCUM_MILKING_AMOUNT)+" в час</i>",
+			"Эта комната была переоборудована в подходящее место для [style.colourGood(дойки)] молока и спермы ваших рабынь.",
+			"Эта комната была переоборудована в специальный доильный зал, в котором можно доить различные жидкости у восьми ваших рабынь. Четыре машины установлены вдоль левой стены, а остальные четыре — на противоположной стороне комнаты.",
 			10000,
 			0,
 			500,
@@ -932,7 +836,7 @@ public class PlaceUpgrade {
 				return new Value<>(false, "");
 			}
 			if(!Main.game.getCharactersTreatingCellAsHome(cell).isEmpty()) {
-				return new Value<>(false, "This room needs to be unoccupied in order to purchase this modification.");
+				return new Value<>(false, "Чтобы приобрести это улучшение, комната должна быть свободна.");
 			}
 			return super.getExtraConditionalAvailability(cell);
 		}
@@ -940,19 +844,10 @@ public class PlaceUpgrade {
 	
 	public static final AbstractPlaceUpgrade LILAYA_MILKING_ROOM_ARTISAN_MILKERS = new AbstractPlaceUpgrade(false,
 			PresetColour.GENERIC_ARCANE,
-			"Artisan Milkers",
-			"You could replace the standard milking machines in this room with very expensive artisan ones."
-					+ " While being far more comfortable for the slaves that use them, these milking machines seem to be designed more for show than practicality, and deliver a slightly lower milk output than the regular machines.<br/>"
-					+ "<i>Milk: "+Units.fluid(MilkingRoom.ARTISAN_MILKING_AMOUNT)+" per hour<br/>"
-					+ "Cum: "+Units.fluid(MilkingRoom.ARTISAN_CUM_MILKING_AMOUNT)+" per hour<br/>"
-					+ "Girlcum: "+Units.fluid(MilkingRoom.ARTISAN_GIRLCUM_MILKING_AMOUNT)+" per hour</i>",
-			"You've installed artisan milking machines in this room."
-					+ " The slaves that have the good fortune to be locked into these machines are sure to appreciate you for it.<br/>"
-					+ "<i>Milk: "+Units.fluid(MilkingRoom.ARTISAN_MILKING_AMOUNT)+" per hour<br/>"
-					+ "Cum: "+Units.fluid(MilkingRoom.ARTISAN_CUM_MILKING_AMOUNT)+" per hour<br/>"
-					+ "Girlcum: "+Units.fluid(MilkingRoom.ARTISAN_GIRLCUM_MILKING_AMOUNT)+" per hour</i>",
-			"The artisan, arcane-powered milking machines that have been placed in this room fill the air with a very soft, almost melodic, humming noise."
-					+ " Although they're far more comfortable than regular milking machines, they appear to be designed more for show than practicality, and while your slaves are sure to be happy, milk output is a lot lower than normal.",
+			"Ремесленные доильные аппараты",
+			"Вы могли бы заменить стандартные доильные аппараты в этой комнате на очень дорогие ремесленные модели. Хотя они гораздо комфортнее для использующих их рабынь, эти аппараты кажутся скорее декоративными, чем практичными, и дают чуть меньший выход молока, чем обычные машины.<br/><i>Молоко: "+Units.fluid(MilkingRoom.ARTISAN_MILKING_AMOUNT)+" в час<br/>Сперма: "+Units.fluid(MilkingRoom.ARTISAN_CUM_MILKING_AMOUNT)+" в час<br/>Девичья сперма: "+Units.fluid(MilkingRoom.ARTISAN_GIRLCUM_MILKING_AMOUNT)+" в час</i>",
+			"Вы установили в этой комнате ремесленные доильные аппараты. Рабыни, которым посчастливится оказаться прикованными к этим машинам, наверняка будут вам за это благодарны.<br/><i>Молоко: "+Units.fluid(MilkingRoom.ARTISAN_MILKING_AMOUNT)+" в час<br/>Сперма: "+Units.fluid(MilkingRoom.ARTISAN_CUM_MILKING_AMOUNT)+" в час<br/>Девичья сперма: "+Units.fluid(MilkingRoom.ARTISAN_GIRLCUM_MILKING_AMOUNT)+" в час</i>",
+			"Ремесленные доильные аппараты, работающие на энергии Арканы, наполняют комнату мягким, почти мелодичным гулом. Хотя они куда комфортнее обычных машин, кажется, что они созданы скорее для красоты, чем для дела: ваши рабыни наверняка будут в восторге, но объемы молока будут заметно ниже обычного.",
 			2500,
 			500,
 			500,
@@ -963,7 +858,7 @@ public class PlaceUpgrade {
 		@Override
 		protected Value<Boolean, String> getExtraConditionalAvailability(Cell cell) {
 			if(cell.getPlace().getPlaceUpgrades().contains(LILAYA_MILKING_ROOM_INDUSTRIAL_MILKERS)) {
-				return new Value<>(false, "The 'Industrial Milkers' upgrade must be removed before the 'Artisan Milkers' can be installed.");
+				return new Value<>(false, "Прежде чем установить улучшение «Ремесленные доильные аппараты», необходимо снять «Промышленные доильные аппараты».");
 			}
 			return super.getExtraConditionalAvailability(cell);
 		}
@@ -971,19 +866,10 @@ public class PlaceUpgrade {
 	
 	public static final AbstractPlaceUpgrade LILAYA_MILKING_ROOM_INDUSTRIAL_MILKERS = new AbstractPlaceUpgrade(false,
 			PresetColour.GENERIC_ARCANE,
-			"Industrial Milkers",
-			"You could replace the standard milking machines in this room with industrial-grade ones."
-					+ " While being far less comfortable for the slaves that use them, these milking machines maximise both milk output and profit.<br/>"
-					+ "<i>Milk: "+Units.fluid(MilkingRoom.INDUSTRIAL_MILKING_AMOUNT)+" per hour<br/>"
-					+ "Cum: "+Units.fluid(MilkingRoom.INDUSTRIAL_CUM_MILKING_AMOUNT)+" per hour<br/>"
-					+ "Girlcum: "+Units.fluid(MilkingRoom.INDUSTRIAL_GIRLCUM_MILKING_AMOUNT)+" per hour</i>",
-			"You've installed industrial milking machines in this room."
-					+ " The slaves that have the misfortune to be locked into these machines are sure to hate you for it.<br/>"
-					+ "<i>Milk: "+Units.fluid(MilkingRoom.INDUSTRIAL_MILKING_AMOUNT)+" per hour<br/>"
-					+ "Cum: "+Units.fluid(MilkingRoom.INDUSTRIAL_CUM_MILKING_AMOUNT)+" per hour<br/>"
-					+ "Girlcum: "+Units.fluid(MilkingRoom.INDUSTRIAL_GIRLCUM_MILKING_AMOUNT)+" per hour</i>",
-			"The industrial, arcane-powered milking machines that have been placed in this room fill the air with a steady background humming noise."
-					+ " Although they're sure to maximise milk output, and profits, these machines aren't exactly the most comfortable of devices to be strapped in to, and any slaves assigned to be milked in here are sure to hate you for it...",
+			"Промышленные доильные аппараты",
+			"Вы могли бы заменить стандартные доильные аппараты в этой комнате на промышленные модели. Хотя рабыням будет куда менее комфортно, эти машины максимизируют и выход молока, и прибыль.<br/><i>Молоко: "+Units.fluid(MilkingRoom.INDUSTRIAL_MILKING_AMOUNT)+" в час<br/>Сперма: "+Units.fluid(MilkingRoom.INDUSTRIAL_CUM_MILKING_AMOUNT)+" в час<br/>Девичья сперма: "+Units.fluid(MilkingRoom.INDUSTRIAL_GIRLCUM_MILKING_AMOUNT)+" в час</i>",
+			"Вы установили в этой комнате промышленные доильные аппараты. Рабыни, которым выпадет несчастье оказаться пристегнутыми к этим машинам, наверняка возненавидят вас за это.<br/><i>Молоко: "+Units.fluid(MilkingRoom.INDUSTRIAL_MILKING_AMOUNT)+" в час<br/>Сперма: "+Units.fluid(MilkingRoom.INDUSTRIAL_CUM_MILKING_AMOUNT)+" в час<br/>Девичья сперма: "+Units.fluid(MilkingRoom.INDUSTRIAL_GIRLCUM_MILKING_AMOUNT)+" в час</i>",
+			"Промышленные доильные аппараты, работающие на энергии Арканы, наполняют воздух ровным фоновым гулом. Хотя они гарантированно максимизируют выход молока и прибыль, эти устройства не назовешь самыми удобными для фиксации тела, так что любая рабыня, назначенная на дойку здесь, наверняка будет вас ненавидеть...",
 			1500,
 			500,
 			1000,
@@ -995,7 +881,7 @@ public class PlaceUpgrade {
 		@Override
 		protected Value<Boolean, String> getExtraConditionalAvailability(Cell cell) {
 			if(cell.getPlace().getPlaceUpgrades().contains(LILAYA_MILKING_ROOM_ARTISAN_MILKERS)) {
-				return new Value<>(false, "The 'Artisan Milkers' upgrade must be removed before the 'Industrial Milkers' can be installed.");
+				return new Value<>(false, "Прежде чем установить «Промышленные доильные аппараты», необходимо снять «Ремесленные доильные аппараты».");
 			}
 			return super.getExtraConditionalAvailability(cell);
 		}
@@ -1003,10 +889,10 @@ public class PlaceUpgrade {
 	
 	public static final AbstractPlaceUpgrade LILAYA_MILKING_ROOM_MILK_EFFICIENCY = new AbstractPlaceUpgrade(false,
 			PresetColour.MILK,
-			"Lact-o-Cups",
-			"The company that makes the milking machines also offers a selection of aftermarket upgrades. One of these is 'Lact-o-Cups', which promises to double the machine's maximum hourly milking efficiency.",
-			"You've added the optional 'Lact-o-Cups' to the milking machines in this room, doubling their maximum hourly milking efficiency.",
-			"The standard suction cups on each machine have been replaced with aftermarket 'Lact-o-Cups', which are doubling the maximum amount of milk extracted per hour.",
+			"Лакто-чаши",
+			"Компания, производящая доильные аппараты, также предлагает набор дополнительных улучшений. Одно из них — «Lact-o-Cups», которое обещает удвоить максимальную часовую эффективность доения.",
+			"Вы установили дополнительную опцию «Lact-o-Cups» на доильные аппараты в этой комнате, удвоив их максимальную часовую эффективность доения.",
+			"Стандартные присоски на каждом аппарате были заменены на тюнингованные «Lact-o-Cups», которые удваивают максимальное количество молока, извлекаемого за час.",
 			500,
 			100,
 			200,
@@ -1018,10 +904,10 @@ public class PlaceUpgrade {
 	
 	public static final AbstractPlaceUpgrade LILAYA_MILKING_ROOM_CUM_EFFICIENCY = new AbstractPlaceUpgrade(false,
 			PresetColour.CUM,
-			"Succ-u-Buses",
-			"The company that makes the milking machines also offers a selection of aftermarket upgrades. One of these is 'Succ-u-Buses', which promises to double the machine's maximum hourly cum-milking efficiency.",
-			"You've added the optional 'Succ-u-Buses' to the milking machines in this room, doubling their maximum hourly cum-milking efficiency.",
-			"The standard cock-milking tubes on each machine have been replaced with aftermarket 'Succ-u-Buses', which are doubling the maximum amount of cum extracted per hour.",
+			"Суккубы",
+			"Компания, производящая доильные аппараты, также предлагает набор дополнительных улучшений. Одно из них — «Succ-u-Buses», которое обещает удвоить максимальную часовую эффективность сцеживания спермы.",
+			"Вы установили дополнительную опцию «Succ-u-Buses» на доильные аппараты в этой комнате, удвоив их максимальную часовую эффективность сцеживания спермы.",
+			"Стандартные трубки для сцеживания на каждом аппарате были заменены на тюнингованные «Succ-u-Buses», которые удваивают максимальное количество спермы, извлекаемого за час.",
 			500,
 			100,
 			200,
@@ -1033,10 +919,10 @@ public class PlaceUpgrade {
 
 	public static final AbstractPlaceUpgrade LILAYA_MILKING_ROOM_GIRLCUM_EFFICIENCY = new AbstractPlaceUpgrade(false,
 			PresetColour.GIRLCUM,
-			"Vibro-Pumps",
-			"The company that makes the milking machines also offers a selection of aftermarket upgrades. One of these is 'Vibro-Pumps', which promises to double the machine's maximum hourly girlcum-milking efficiency.",
-			"You've added the optional 'Vibro-Pumps' to the milking machines in this room, doubling their maximum hourly girlcum-milking efficiency.",
-			"The standard vaginal pumps on each machine have been replaced with aftermarket 'Vibro-Pumps', which are doubling the maximum amount of girlcum extracted per hour.",
+			"Вибронасосы",
+			"Компания, производящая доильные аппараты, также предлагает набор дополнительных улучшений. Одно из них — «Vibro-Pumps», которое обещает удвоить максимальную часовую эффективность сцеживания девичьей спермы.",
+			"Вы установили дополнительную опцию «Vibro-Pumps» на доильные аппараты в этой комнате, удвоив их максимальную часовую эффективность сцеживания девичьей спермы.",
+			"Стандартные вагинальные помпа на каждой машине были заменены на тюнингованные «Вибро-помпы», которые вдвое увеличивают максимальное количество девичьей смазки, извлекаемой за час.",
 			500,
 			100,
 			200,
@@ -1051,14 +937,10 @@ public class PlaceUpgrade {
 	
 	public static final AbstractPlaceUpgrade LILAYA_OFFICE = new AbstractPlaceUpgrade(true,
 			PresetColour.BASE_TEAL,
-			"Office",
-			"Due to the heavily-regulated exotic materials which Lilaya regularly orders for use in her laboratory, she has a significant amount of paperwork which needs to be completed each month."
-					+ " By having Rose replace this room's furniture with desks, chairs, and filing cabinets, you could have it turned into an office space in which [style.colourGood(four)] of your slaves could be paid to complete this work for her."
-					+ " [style.italicsGood(You will also gain access to the 'Occupancy ledger' when in the office!)]",
-			"This room has been converted into an office, with enough desks and room to comfortably accommodate [style.colourGood(four)] workers."
-					+ " [style.italicsGood(You have also gained access to the 'Occupancy ledger' when in the office!)]",
-			"In order to help Lilaya with her copious amounts of paperwork related to exotic material acquisition, you've had this room converted into a four-person-capacity office."
-					+ " Along with the forms related to Lilaya's heavily-regulated purchases, the workers assigned here are tasked with keeping records in a general 'Occupancy ledger', which you can access here at any time.",
+			"Кабинет",
+			"Из-за жесткого регулирования экзотических материалов, которые Lilaya регулярно заказывает для своей лаборатории, ей приходится ежемесячно заполнять огромное количество бумаг. Если заставить Роуз заменить мебель в этой комнате на столы, стулья и картотечные шкафы, её можно превратить в офис, где [style.colourGood(четырем)] твоим рабыням можно будет платить за выполнение этой работы. [style.italicsGood(Также, находясь в офисе, вы получите доступ к «Журналу занятости»!)]",
+			"Эта комната была переоборудована в офис с достаточным количеством столов и места, чтобы с комфортом разместить [style.colourGood(четыре)] работницы. [style.italicsGood(Также, находясь в офисе, вы получили доступ к «Журналу занятости»!)]",
+			"Чтобы помочь Lilaya с горой бумаг, связанных с закупкой экзотических материалов, вы превратили эту комнату в офис на четыре персоны. Помимо заполнения бланков для строго регламентированных закупок Lilaya, на назначенных сюда работниц возложена задача вести общий «Журнал занятости», к которому вы можете обратиться здесь в любое время.",
 			8000,
 			500,
 			250,
@@ -1081,10 +963,10 @@ public class PlaceUpgrade {
 			}
 			if(!Main.game.getWorlds().get(WorldType.LILAYAS_HOUSE_GROUND_FLOOR).getCells(LILAYA_OFFICE).isEmpty()
 					|| !Main.game.getWorlds().get(WorldType.LILAYAS_HOUSE_FIRST_FLOOR).getCells(LILAYA_OFFICE).isEmpty()) {
-				return new Value<>(false, "There isn't enough paperwork to justify having more than one office.");
+				return new Value<>(false, "Бумажной работы недостаточно, чтобы оправдать наличие более чем одного офиса.");
 			}
 			if(!Main.game.getCharactersTreatingCellAsHome(cell).isEmpty()) {
-				return new Value<>(false, "This room needs to be unoccupied in order to purchase this modification.");
+				return new Value<>(false, "Чтобы приобрести это улучшение, комната должна быть свободна.");
 			}
 			return super.getExtraConditionalAvailability(cell);
 		}
@@ -1102,12 +984,10 @@ public class PlaceUpgrade {
 	
 	public static final AbstractPlaceUpgrade LILAYA_OFFICE_EXECUTIVE_UPGRADE = new AbstractPlaceUpgrade(false,
 			PresetColour.BASE_GOLD,
-			"Executive Office",
-			"Tell Rose to outfit this office with the most luxurious and extravagant furnishings she can get her hands on."
-					+ " Although sure to instill a sense of respect in any worker who's assigned to this office, the finest furniture in Dominion doesn't exactly come cheap...",
-			"You've had this office fitted out with the most upmarket furnishings available, which are sure to instill a sense of respect for you in anyone who's assigned to work here.",
-			"You've had this office outfitted with the most luxurious and extravagantly opulent furnishings which money can buy."
-					+ " Each of the four work stations have their own masterfully carved mahogany desk, and fixed to the walls behind them are shelves filled with artisanal leather-bound record books.",
+			"Кабинет руководителя",
+			"Скажи Роуз обставить этот кабинет самой роскошной и экстравагантной мебелью, которую она только сможет раздобыть. Хотя такая обстановка наверняка внушит уважение любому работнику, назначенному в этот кабинет, лучшая мебель в Dominion стоит немалых денег...",
+			"Ты обставил этот кабинет самой элитной мебелью, которая способна внушить глубокое уважение к тебе любому, кто будет здесь работать.",
+			"Ты обставил этот кабинет самой роскошной и вызывающе богатой мебелью, которую только можно купить за деньги. На каждом из четырех рабочих мест стоит мастерски вырезанный стол из красного дерева, а на стенах за ними закреплены полки, уставленные ремесленными книгами учета в кожаных переплетах.",
 			500_000,
 			-200_000,
 			50,
@@ -1119,11 +999,10 @@ public class PlaceUpgrade {
 	
 	public static final AbstractPlaceUpgrade LILAYA_OFFICE_COFFEE_MACHINE = new AbstractPlaceUpgrade(false,
 			PresetColour.BASE_BROWN_DARK,
-			"Coffee Machine",
-			"Rose has informed you that she knows of an excellent arcane-powered coffee machine available for purchase."
-					+ " Capable of dispensing a wide range of both hot and cold caffeinated beverages, such a machine is sure to be appreciated by the workers assigned to this office.",
-			"You've purchased an arcane-powered coffee machine for this office, which is very much appreciated by the slaves assigned to work here.",
-			"An arcane-powered coffee machine, capable of dispensing a wide range of both hot and cold caffeinated beverages, sits in one corner of the room.",
+			"Кофемашина",
+			"Роуз сообщила тебе, что знает об отличной кофемашине на базе Арканы, которую можно приобрести. Способная выдавать широкий ассортимент как горячих, так и холодных кофеиновых напитков, такая машина наверняка придется по душе работникам, назначенным в этот кабинет.",
+			"Ты купил для этого кабинета кофемашину на базе Арканы, которую очень ценят рабы, работающие здесь.",
+			"В углу комнаты стоит кофемашина на базе Арканы, способная выдавать широкий ассортимент как горячих, так и холодных кофеиновых напитков.",
 			5000,
 			100,
 			250,
@@ -1135,10 +1014,10 @@ public class PlaceUpgrade {
 	
 	public static final AbstractPlaceUpgrade LILAYA_OFFICE_PARTITIONING_WALLS = new AbstractPlaceUpgrade(false,
 			PresetColour.BASE_TAN,
-			"Partitioning Walls",
-			"You could have some partitioning walls set up in this office, which would give each of the four potential workers assigned here their own personal space in which to get on with their work.",
-			"You've had several partitioning walls set up in this office, which afford each worker a little more privacy and peace in which to get on with the work that's assigned to them.",
-			"Each of the four work stations in this office have been separated from one another by means of partitioning walls, affording the workers some privacy and peace in which to get on with the tasks assigned to them.",
+			"Перегородки",
+			"В этом кабинете можно установить перегородки, что даст каждому из четырех потенциальных работников личное пространство для выполнения своих задач.",
+			"Вы установили в этом кабинете перегородки, которые обеспечивают каждому работнику чуть больше уединения и спокойствия для выполнения возложенных на них дел.",
+			"Все четыре рабочих места в этом кабинете разделены перегородками, что дает работникам возможность спокойно и уединенно заниматься своими задачами.",
 			2500,
 			500,
 			0,
@@ -1153,11 +1032,10 @@ public class PlaceUpgrade {
 	
 	public static final AbstractPlaceUpgrade LILAYA_DRESSING_ROOM = new AbstractPlaceUpgrade(true,
 			PresetColour.BASE_GOLD,
-			"Dressing Room",
-			"Although there's more than enough space in every bedroom for a wardrobe or two, it might be nice to have an entire room dedicated to storing clothes.",
-			"This particular room has been converted into a dressing room, and has enough wardrobe space to hold hundreds of items of clothing.",
-			"You've had this particular room converted into a dedicated dressing room."
-					+ " Dozens of wardrobes provide storage space for hundreds of items of clothing.",
+			"Гардеробная",
+			"Хотя в каждой спальне достаточно места для одного или двух гардеробов, было бы здорово иметь целую комнату, предназначенную исключительно для хранения одежды.",
+			"Эта комната была переоборудована в гардеробную, и в ней достаточно места, чтобы вместить сотни предметов одежды.",
+			"Вы превратили эту комнату в полноценную гардеробную. Десятки гардеробов позволяют хранить сотни предметов одежды.",
 			5000,
 			250,
 			50,
@@ -1173,8 +1051,7 @@ public class PlaceUpgrade {
 			sb.append(super.getRoomDescription(c));
 			
 			if(!place.getPlaceUpgrades().contains(LILAYA_DRESSING_ROOM_LYSSIETH_WARDROBE)) {
-				sb.append(" Lyssieth's wardrobe, carved from ivory and decorated with gold, takes pride of place in this room."
-						+ " Its unique enchantment would grant you the ability to create items from nothing more than your imagination, but at the moment it isn't functional, and it would be extremely expensive to get Lilaya to fix it.");
+				sb.append(" Гардероб Lyssieth, вырезанный из слоновой кости и украшенный золотом, занимает почетное место в этой комнате. Его уникальное зачарование даровало бы вам способность создавать предметы буквально из воображения, но на данный момент оно не работает, а починить его силами Lilaya будет стоить баснословных денег.");
 			}
 			
 			return sb.toString();
@@ -1201,10 +1078,10 @@ public class PlaceUpgrade {
 			}
 			if(!Main.game.getWorlds().get(WorldType.LILAYAS_HOUSE_GROUND_FLOOR).getCells(LILAYA_DRESSING_ROOM).isEmpty()
 					|| !Main.game.getWorlds().get(WorldType.LILAYAS_HOUSE_FIRST_FLOOR).getCells(LILAYA_DRESSING_ROOM).isEmpty()) {
-				return new Value<>(false, "You can only have one dressing room.");
+				return new Value<>(false, "У вас может быть только одна гардеробная.");
 			}
 			if(!Main.game.getCharactersTreatingCellAsHome(cell).isEmpty()) {
-				return new Value<>(false, "This room needs to be unoccupied in order to purchase this modification.");
+				return new Value<>(false, "Чтобы приобрести это улучшение, комната должна быть свободна.");
 			}
 			return super.getExtraConditionalAvailability(cell);
 		}
@@ -1224,14 +1101,10 @@ public class PlaceUpgrade {
 
 	public static final AbstractPlaceUpgrade LILAYA_DRESSING_ROOM_LYSSIETH_WARDROBE = new AbstractPlaceUpgrade(false,
 			PresetColour.GENERIC_ARCANE,
-			"Lyssieth's Wardrobe",
-			"Have Lilaya re-enchant Lyssieth's unique wardrobe, which will grant you the incredible power of being able to create almost any weapon or item of clothing which you can imagine."
-					+ "<br/>[style.italicsGood(This will grant you access to the 'Outfits' feature for both yourself and your slaves.)]",
-			"Carved from ivory and decorated with gold, a most extraordinary wardrobe takes pride of place in your dressing room."
-					+ " Commissioned by the elder lilin, Lyssieth, this unique piece of furniture holds the incredible power to create almost any weapon or item of clothing which you can imagine."
-					+ "<br/>[style.italicsGood(Lyssieth's wardrobe grants you access to the 'Outfits' feature for both yourself and your slaves.)]",
-			"Carved from ivory and decorated with gold, a most extraordinary wardrobe takes pride of place in your dressing room."
-					+ " Commissioned by the elder lilin, Lyssieth, this unique piece of furniture holds the incredible power to create almost any weapon or item of clothing which you can imagine.",
+			"Гардероб Lyssieth",
+			"Попросите Лилайю заново зачаровать уникальный гардероб Лиссиет, что даст вам невероятную силу — возможность создавать почти любое оружие или предмет одежды, какой только сможете вообразить.<br/>[style.italicsGood(Это откроет вам доступ к функции «Наряды» как для вас самих, так и для ваших рабынь.)]",
+			"Вырезанный из слоновой кости и украшенный золотом, необычайный гардероб занимает почетное место в вашей гардеробной. Этот уникальный предмет мебели, заказанный старейшей лилин, Лиссиет, обладает невероятной силой — способностью создавать почти любое оружие или предмет одежды, какой только сможете вообразить.<br/>[style.italicsGood(Гардероб Лиссиет дает вам доступ к функции «Наряды» как для вас самих, так и для ваших рабынь.)]",
+			"Вырезанный из слоновой кости и украшенный золотом, необычайный гардероб занимает почетное место в вашей гардеробной. Этот уникальный предмет мебели, заказанный старейшей лилин, Лиссиет, обладает невероятной силой — способностью создавать почти любое оружие или предмет одежды, какой только сможете вообразить.",
 			250_000,
 			0,
 			0,
@@ -1245,7 +1118,7 @@ public class PlaceUpgrade {
 		}
 		@Override
 		public Value<Boolean, String> getRemovalAvailability(Cell cell) {
-			return new Value<>(false, "You cannot remove Lyssieth's wardrobe.");
+			return new Value<>(false, "Вы не можете убрать гардероб Лиссиет.");
 		}
 	};
 	
@@ -1254,15 +1127,10 @@ public class PlaceUpgrade {
 	
 	public static final AbstractPlaceUpgrade LILAYA_SPA = new AbstractPlaceUpgrade(true,
 			PresetColour.BASE_AQUA,
-			"Spa",
-			"By completely stripping and repurposing this room, it would be possible to transform it into a private spa."
-					+ " While it would no doubt make an excellent addition to the mansion, the rerouting of geothermal springs to make an indoor pool is going to be extremely expensive..."
-					+ "<br/>[style.italicsbad(Only one spa can be installed, and it cannot be removed, so make sure that you want it in this tile before installing it!)]",
-			"This room has been completely renovated and transformed into a luxurious, private spa."
-					+ " In the middle of the marble floor, there are a series of large pools, each of which is filled with warm water drawn from geothermal springs.",
-			"This room has been completely renovated and transformed into a luxurious, private spa, complete with private showers and changing rooms."
-					+ " In the middle of the marble floor, there are a series of large pools, each of which is filled with warm water drawn from geothermal springs."
-					+ " Scattered about the room, there are numerous comfortable loungers, offering places to relax and recuperate for if you don't feel like taking a dip in one of the pools.",
+			"Спа",
+			"Если полностью очистить эту комнату и перестроить её, то из неё можно будет сделать частный спа-салон. Без сомнения, это станет отличным дополнением к особняку, но перенаправление геотермальных источников для создания крытого бассейна обойдется чрезвычайно дорого...<br/>[style.italicsbad(Можно установить только один спа-салон, и его нельзя будет убрать, так что убедитесь, что вы действительно хотите его именно в этой клетке, прежде чем приступать к установке!)]",
+			"Эта комната была полностью отремонтирована и превращена в роскошный частный спа-салон. Посреди мраморного пола расположилась серия больших бассейнов, каждый из которых наполнен теплой водой из геотермальных источников.",
+			"Эта комната была полностью отремонтирована и превращена в роскошный частный спа-салон, дополненный отдельными душевыми и раздевалками. Посреди мраморного пола расположилась серия больших бассейнов, каждый из которых наполнен теплой водой из геотермальных источников. По всей комнате расставлено множество удобных шезлонгов, предлагающих место для отдыха и восстановления сил, если вам не хочется окунаться в один из бассейнов.",
 			1_500_000,
 			250_000,
 			500,
@@ -1291,26 +1159,26 @@ public class PlaceUpgrade {
 		protected Value<Boolean, String> getExtraConditionalAvailability(Cell cell) {
 			if(!Main.game.getWorlds().get(WorldType.LILAYAS_HOUSE_GROUND_FLOOR).getCells(LILAYA_SPA).isEmpty()
 					|| !Main.game.getWorlds().get(WorldType.LILAYAS_HOUSE_FIRST_FLOOR).getCells(LILAYA_SPA).isEmpty()) {
-				return new Value<>(false, "You can only have one spa!");
+				return new Value<>(false, "У вас может быть только один спа-салон!");
 			}
 			int size = Main.game.getWorlds().get(WorldType.LILAYAS_HOUSE_GROUND_FLOOR).WORLD_WIDTH;
 			if(cell.getType()!=WorldType.LILAYAS_HOUSE_GROUND_FLOOR
 					|| cell.getLocation().getY()<2
 					|| (Math.abs(cell.getLocation().getY()-size)>2 && Math.min(cell.getLocation().getX(), Math.abs(size-cell.getLocation().getX()))>2)) {
-				return new Value<>(false, "The spa can only be built on the North, East, or West sides of the ground floor!");
+				return new Value<>(false, "Спа-салон можно построить только на северной, восточной или западной стороне первого этажа!");
 			}
 			if(Main.game.getNpc(Lilaya.class).getBaseFetishDesire(Fetish.FETISH_PREGNANCY).isNegative()
 					&& (Main.game.getNpc(Lilaya.class).hasStatusEffect(StatusEffect.PREGNANT_0) || Main.game.getNpc(Lilaya.class).isPregnant())) {
-				return new Value<>(false, "Lilaya needs to resolve her pregnancy first!");
+				return new Value<>(false, "Сначала Lilaya должна разобраться со своей беременностью!");
 			}
 			if(Lab.isLilayaAngryAtPlayerDemonTF() && !Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.lilayaReactedToPlayerAsDemon)) {
-				return new Value<>(false, "You need to confront Lilaya about your demonic form first!");
+				return new Value<>(false, "Сначала вам нужно поговорить с Lilaya о вашей демонической форме!");
 			}
 			if(!Main.game.isExtendedWorkTime()) {
-				return new Value<>(false, "You can only install the spa while Lilaya is awake!");
+				return new Value<>(false, "Вы можете установить спа-салон только тогда, когда Lilaya бодрствует!");
 			}
 			if(!Main.game.getCharactersTreatingCellAsHome(cell).isEmpty()) {
-				return new Value<>(false, "This room needs to be unoccupied in order to purchase this modification.");
+				return new Value<>(false, "Чтобы приобрести это улучшение, комната должна быть свободна.");
 			}
 			
 			return super.getExtraConditionalAvailability(cell);
@@ -1328,9 +1196,8 @@ public class PlaceUpgrade {
 	
 	public static final AbstractPlaceUpgrade LILAYA_SPA_SAUNA = new AbstractPlaceUpgrade(false,
 			PresetColour.BASE_ROSE,
-			"Sauna (extension)",
-			"There's still a considerable amount of space in which a further extension to the spa could be built..."
-				+ "<br/>If you wanted to, you could suggest to Lilaya that a sauna would be a valuable addition to the spa.",
+			"Сауна (расширение)",
+			"Здесь всё ещё достаточно места для дальнейшего расширения спа...<br/>Если захотите, вы могли бы предложить Lilaya, что сауна станет ценным дополнением к спа.",
 			"",
 			"",
 			150_000,
@@ -1347,34 +1214,33 @@ public class PlaceUpgrade {
 		@Override
 		protected Value<Boolean, String> getExtraConditionalAvailability(Cell cell) {
 			if(Main.game.getWorlds().get(WorldType.LILAYAS_HOUSE_GROUND_FLOOR).getCell(PlaceType.LILAYA_HOME_SPA)==null) {
-				return new Value<>(false, "The main spa extension needs to be finished before you can extend it further!");
+				return new Value<>(false, "Сначала нужно завершить основное расширение спа, прежде чем приступать к дальнейшему!");
 			}
 			if(Main.game.getWorlds().get(WorldType.LILAYAS_HOUSE_GROUND_FLOOR).getCell(PlaceType.LILAYA_HOME_UNDER_CONSTRUCTION)!=null) {
-				return new Value<>(false, "You need to wait for the swimming pool extension to be finished before starting this one!");
+				return new Value<>(false, "Нужно дождаться завершения расширения плавательного бассейна, прежде чем начинать это!");
 			}
 			if(Main.game.getNpc(Lilaya.class).getBaseFetishDesire(Fetish.FETISH_PREGNANCY).isNegative()
 					&& (Main.game.getNpc(Lilaya.class).hasStatusEffect(StatusEffect.PREGNANT_0) || Main.game.getNpc(Lilaya.class).isPregnant())) {
-				return new Value<>(false, "Lilaya needs to resolve her pregnancy first!");
+				return new Value<>(false, "Сначала Lilaya должна разобраться со своей беременностью!");
 			}
 			if(Lab.isLilayaAngryAtPlayerDemonTF() && !Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.lilayaReactedToPlayerAsDemon)) {
-				return new Value<>(false, "You need to confront Lilaya about your demonic form first!");
+				return new Value<>(false, "Сначала вам нужно поговорить с Lilaya о вашей демонической форме!");
 			}
 			if(!Main.game.isExtendedWorkTime()) {
-				return new Value<>(false, "You can only install the sauna extension while Lilaya is awake!");
+				return new Value<>(false, "Установить расширение сауны можно только тогда, когда Lilaya не спит!");
 			}
 			return super.getExtraConditionalAvailability(cell);
 		}
 		@Override
 		public Value<Boolean, String> getRemovalAvailability(Cell cell) {
-			return new Value<>(false, "This upgrade can not be removed!");
+			return new Value<>(false, "Это улучшение нельзя убрать!");
 		}
 	};
 	
 	public static final AbstractPlaceUpgrade LILAYA_SPA_POOL = new AbstractPlaceUpgrade(false,
 			PresetColour.BASE_BLUE_LIGHT,
-			"Swimming pool (extension)",
-			"There's still a considerable amount of space in which a further extension to the spa could be built..."
-				+ "<br/>If you wanted to, you could suggest to Lilaya that an indoor swimming pool would be a valuable addition to the spa.",
+			"Плавательный бассейн (расширение)",
+			"Здесь всё ещё достаточно места для дальнейшего расширения спа...<br/>Если захотите, вы могли бы предложить Lilaya, что крытый плавательный бассейн станет ценным дополнением к спа.",
 			"",
 			"",
 			300_000,
@@ -1391,36 +1257,34 @@ public class PlaceUpgrade {
 		@Override
 		protected Value<Boolean, String> getExtraConditionalAvailability(Cell cell) {
 			if(Main.game.getWorlds().get(WorldType.LILAYAS_HOUSE_GROUND_FLOOR).getCell(PlaceType.LILAYA_HOME_SPA)==null) {
-				return new Value<>(false, "The main spa extension needs to be finished before you can extend it further!");
+				return new Value<>(false, "Сначала нужно завершить основное расширение спа, прежде чем приступать к дальнейшему!");
 			}
 			if(Main.game.getWorlds().get(WorldType.LILAYAS_HOUSE_GROUND_FLOOR).getCell(PlaceType.LILAYA_HOME_UNDER_CONSTRUCTION)!=null) {
-				return new Value<>(false, "You need to wait for the sauna extension to be finished before starting this one!");
+				return new Value<>(false, "Нужно дождаться завершения расширения сауны, прежде чем начинать это!");
 			}
 			if(Main.game.getNpc(Lilaya.class).getBaseFetishDesire(Fetish.FETISH_PREGNANCY).isNegative()
 					&& (Main.game.getNpc(Lilaya.class).hasStatusEffect(StatusEffect.PREGNANT_0) || Main.game.getNpc(Lilaya.class).isPregnant())) {
-				return new Value<>(false, "Lilaya needs to resolve her pregnancy first!");
+				return new Value<>(false, "Сначала Lilaya должна разобраться со своей беременностью!");
 			}
 			if(Lab.isLilayaAngryAtPlayerDemonTF() && !Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.lilayaReactedToPlayerAsDemon)) {
-				return new Value<>(false, "You need to confront Lilaya about your demonic form first!");
+				return new Value<>(false, "Сначала вам нужно поговорить с Lilaya о вашей демонической форме!");
 			}
 			if(!Main.game.isExtendedWorkTime()) {
-				return new Value<>(false, "You can only install the sauna extension while Lilaya is awake!");
+				return new Value<>(false, "Установить расширение сауны можно только тогда, когда Lilaya не спит!");
 			}
 			return super.getExtraConditionalAvailability(cell);
 		}
 		@Override
 		public Value<Boolean, String> getRemovalAvailability(Cell cell) {
-			return new Value<>(false, "This upgrade can not be removed!");
+			return new Value<>(false, "Это улучшение нельзя убрать!");
 		}
 	};
 	
 	public static final AbstractPlaceUpgrade LILAYA_SPA_BAR = new AbstractPlaceUpgrade(false,
 			PresetColour.BASE_ORANGE,
-			"Bar",
-			"Have a bar constructed within the pool area of the spa, which will be kept stocked full of both hard and soft drinks."
-					+ " Refrigeration and restocking costs mean that it won't be cheap to maintain, however...",
-			"You've had a bar constructed within the pool area of the spa, which will be kept stocked full of both hard and soft drinks."
-					+ " Refrigeration and restocking costs mean that it isn't cheap to maintain, however...",
+			"Бар",
+			"Постройте бар в зоне бассейна спа-центра, который будет постоянно пополняться крепкими и безалкогольными напитками. Однако расходы на охлаждение и пополнение запасов означают, что содержать его будет не дешево...",
+			"Вы построили бар в зоне бассейна спа-центра, который будет постоянно пополняться крепкими и безалкогольными напитками. Однако расходы на охлаждение и пополнение запасов означают, что содержать его будет не дешево...",
 			"",
 			15_000,
 			5_000,
@@ -1432,7 +1296,7 @@ public class PlaceUpgrade {
 		@Override
 		protected Value<Boolean, String> getExtraConditionalAvailability(Cell cell) {
 			if(Main.game.getWorlds().get(WorldType.LILAYAS_HOUSE_GROUND_FLOOR).getCell(PlaceType.LILAYA_HOME_SPA)==null) {
-				return new Value<>(false, "The main spa extension needs to be finished before you can upgrade it!");
+				return new Value<>(false, "Прежде чем вы сможете улучшить это помещение, необходимо завершить основное расширение спа!");
 			}
 			return super.getExtraConditionalAvailability(cell);
 		}
@@ -1442,12 +1306,10 @@ public class PlaceUpgrade {
 	
 	public static final AbstractPlaceUpgrade LILAYA_DINING_HALL = new AbstractPlaceUpgrade(true,
 			PresetColour.BASE_ORANGE_LIGHT,
-			"Dining Hall",
-			"Lilaya and Rose eat their meals in the lab, and as such the mansion lacks a dedicated dining hall."
-					+ " A suitably grand table and a dozen or so chairs would fix that...",
-			"This room has been converted into a dining hall, complete with a long, wooden table and a dozen chairs.",
-			"This room has been converted into a dining hall, complete with a long, wooden table and a dozen chairs."
-					+ " Although Lilaya and Rose are likely going to continue with their habit of eating in the lab, there's nothing stopping you from making use of this room.",
+			"Столовая",
+			"Lilaya и Rose привыкли обедать в лаборатории, поэтому в особняке нет отдельной столовой. Достаточно будет поставить величественный стол и около дюжины стульев, чтобы исправить это...",
+			"Эта комната была переоборудована в столовую, укомплектованную длинным деревянным столом и дюжиной стульев.",
+			"Эта комната была переоборудована в столовую, укомплектованную длинным деревянным столом и дюжиной стульев. Хотя Lilaya и Rose, скорее всего, продолжат обедать в лаборатории, ничто не мешает вам пользоваться этой комнатой.",
 			6000,
 			250,
 			50,
@@ -1473,7 +1335,7 @@ public class PlaceUpgrade {
 //				return new Value<>(false, "There's no need for more than one dining hall.");
 //			}
 			if(!Main.game.getCharactersTreatingCellAsHome(cell).isEmpty()) {
-				return new Value<>(false, "This room needs to be unoccupied in order to purchase this modification.");
+				return new Value<>(false, "Чтобы приобрести это улучшение, комната должна быть свободна.");
 			}
 			return super.getExtraConditionalAvailability(cell);
 		}
@@ -1493,13 +1355,10 @@ public class PlaceUpgrade {
 	
 	public static final AbstractPlaceUpgrade LILAYA_SLAVE_LOUNGE = new AbstractPlaceUpgrade(true,
 			PresetColour.BASE_GREEN_LIME,
-			"Slave lounge",
-			"As well as using their individual rooms, your slaves will also sometimes choose to go to a slave lounge to relax."
-					+ " Converting this room into a slave lounge will allow your slaves to come here during their time off.",
-			"This room has been converted into a lounge for your slaves."
-					+ " When not sleeping or at work, and provided that they have the '"+SlavePermissionSetting.GENERAL_HOUSE_FREEDOM.getName()+"' permission, they might choose to come here to relax for an hour or so.",
-			"This room has been converted into a lounge for your slaves."
-					+ " When not sleeping or at work, and provided that they have the '"+SlavePermissionSetting.GENERAL_HOUSE_FREEDOM.getName()+"' permission, they might choose to come here to relax for an hour or so.",
+			"Рай для рабов",
+			"Помимо своих личных комнат, ваши рабы иногда будут выбирать отдых в специальной комнате отдыха. Превращение этой комнаты в рай для рабов позволит им приходить сюда в свободное время.",
+			"Эта комната была переоборудована в комнату отдыха для ваших рабов. Когда они не спят и не работают, и при условии, что у них есть '"+SlavePermissionSetting.GENERAL_HOUSE_FREEDOM.getName()+"' разрешение, они могут решить прийти сюда, чтобы отдохнуть часок или около того.",
+			"Эта комната была переоборудована в комнату отдыха для ваших рабов. Когда они не спят и не работают, и при условии, что у них есть '"+SlavePermissionSetting.GENERAL_HOUSE_FREEDOM.getName()+"' разрешение, они могут решить прийти сюда, чтобы отдохнуть часок или около того.",
 			5000,
 			250,
 			50,
@@ -1525,7 +1384,7 @@ public class PlaceUpgrade {
 //				return new Value<>(false, "There's no need for more than one slave lounge.");
 //			}
 			if(!Main.game.getCharactersTreatingCellAsHome(cell).isEmpty()) {
-				return new Value<>(false, "This room needs to be unoccupied in order to purchase this modification.");
+				return new Value<>(false, "Чтобы приобрести это улучшение, комната должна быть свободна.");
 			}
 			return super.getExtraConditionalAvailability(cell);
 		}

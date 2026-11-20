@@ -85,7 +85,7 @@ public class Silence extends NPC {
 	}
 	
 	public Silence(boolean isImported) {
-		super(isImported, new NameTriplet("Silence"), "Wildeyes",
+		super(isImported, new NameTriplet("Сайленс"), "Дикоглазка",
 				"",
 				21, Month.MAY, 16,
 				15, Gender.F_V_B_FEMALE, Subspecies.RAT_MORPH, RaceStage.GREATER,
@@ -310,7 +310,7 @@ public class Silence extends NPC {
 		demonStoneNecklace.addEffect(new ItemEffect(ItemEffectType.CLOTHING, TFModifier.CLOTHING_ATTRIBUTE, TFModifier.CRITICAL_DAMAGE, TFPotency.MAJOR_BOOST, 0));
 		demonStoneNecklace.addEffect(new ItemEffect(ItemEffectType.CLOTHING, TFModifier.CLOTHING_ATTRIBUTE, TFModifier.CRITICAL_DAMAGE, TFPotency.BOOST, 0));
 		
-		demonStoneNecklace.setName("Shard of Lyxias");
+		demonStoneNecklace.setName("Осколок Ликсиаса");
 		
 		this.equipClothingFromNowhere(demonStoneNecklace, true, this);
 	}
@@ -319,21 +319,14 @@ public class Silence extends NPC {
 	public String getDescription() {
 		StringBuilder sb = new StringBuilder();
 		
-		sb.append("Having fur as white as snow, and skin as pale as a ghost, this albino rat-girl would strike an eye-catching figure even if not for the fact that her pink eyes emit a fierce luminescent glow."
-				+ " While her unusual eyes allude to the fact that she possesses exceptional arcane abilities, nobody has much of a chance of getting her to reveal the secrets of her past, for she is completely mute.");
+		sb.append("С мехом белым как снег и кожей бледной как у призрака, эта девица-альбинос из крыс приковывала бы взгляды, если бы не её розовые глаза, излучающие яростное люминесцентное сияние. Хотя её необычные глаза намекают на то, что она обладает исключительными способностями Арканы, мало кому удастся заставить её раскрыть секреты своего прошлого, ведь она совершенно нема.");
 
-		sb.append("<br/>"
-				+ "Thanks to this inability of hers to talk, she's been given the name 'Silence', but what she lacks in verbal communication she more than compensates for in her sexual appetite."
-				+ " Seemingly in a perpetual state of horniness, this lewd rat-girl can often be found riding a stranger's cock, or even more commonly, forcing them to perform oral on her.");
+		sb.append("<br/>Из-за неспособности говорить ей дали имя «Тишина», но то, чего ей не хватает в вербальном общении, она с лихвой компенсирует своим сексуальным аппетитом. Кажется, пребывая в состоянии вечного возбуждения, эту похотливую крысодевочку часто можно застать верхом на чьём-нибудь члене или, что случается ещё чаще, заставляющей незнакомца делать ей минет.");
 
 		if(this.getHomeWorldLocation()==WorldType.BOUNTY_HUNTER_LODGE_UPSTAIRS) {
-			sb.append("<br/>"
-					+ "No longer a personal bodyguard for Vengar, Silence is now a professional bounty hunter."
-					+ " Joined by her long-time companion, Shadow, she can be found in Slaver Alley's 'Bounty Hunter Lodge'.");
+			sb.append("<br/>Больше не являясь личным телохранителем Венгара, Тишина теперь профессиональная охотница за головами. Вместе со своей давней спутницей, Тенью, её можно найти в «Лодже охотников за головами» в Переулке Рабов.");
 		} else {
-			sb.append("<br/>"
-					+"Silence is a personal bodyguard for the dangerous gang leader, 'Vengar'."
-					+ " Joined by her long-time companion, Shadow, she is sworn to protect the rat-boy from any harm that might befall him.");
+			sb.append("<br/>Тишина — личный телохранитель опасного главаря банды Венгара. Вместе со своей давней спутницей, Тенью, она поклялась защищать крысопарня от любой опасности, которая может его постигнуть.");
 		}
 		
 		return sb.toString();
@@ -346,7 +339,7 @@ public class Silence extends NPC {
 	
 	@Override
 	public String getArtworkFolderName() {
-		return "Silence";
+		return "Сайленс";
 	}
 	
 	@Override

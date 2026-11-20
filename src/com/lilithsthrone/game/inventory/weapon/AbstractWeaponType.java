@@ -186,7 +186,7 @@ public abstract class AbstractWeaponType extends AbstractCoreType {
 				} else if(coreAttributes.getOptionalFirstOf("authorTag").isPresent()) {
 					this.authorDescription = coreAttributes.getMandatoryFirstOf("authorTag").getTextContent();
 				} else if(!author.equalsIgnoreCase("innoxia")){
-					this.authorDescription = "A discreet inscription on the surface of the "+(plural?namePlural:name)+" informs you that "+(plural?"they were":"it was")+" made by a certain '"+Util.capitaliseSentence(author)+"'.";
+					this.authorDescription = "Едва заметная надпись на поверхности "+(plural?namePlural:name)+" сообщает вам, что "+(plural?"были сделаны":"было сделано")+" изготовлено неким «"+Util.capitaliseSentence(author)+"'.";
 				} else {
 					this.authorDescription = "";
 				}
@@ -350,7 +350,7 @@ public abstract class AbstractWeaponType extends AbstractCoreType {
 						}
 					} catch (Exception e) {
 						printHelpfulErrorForEnumValueMismatches(e);
-						throw new IllegalStateException("Colour tag reading failure: "+colorsElement.getTagName()+" " + e.getMessage(), e);
+						throw new IllegalStateException("Ошибка чтения тега цвета: "+colorsElement.getTagName()+" " + e.getMessage(), e);
 					}
 				};
 				
@@ -444,7 +444,7 @@ public abstract class AbstractWeaponType extends AbstractCoreType {
 				}
 				
 				if(this.colourReplacements.isEmpty()) {
-					throw new Exception("AbstractWeaponType (" + weaponXMLFile.getName() + "): colourReplacements is empty!");
+					throw new Exception("AbstractWeaponType (" + weaponXMLFile.getName() + "): colourReplacements пуст!");
 				}
 				
 				this.SVGStringMap = new HashMap<>();
@@ -619,24 +619,24 @@ public abstract class AbstractWeaponType extends AbstractCoreType {
 			if(character.isFeral()) {
 				return UtilText.parse(character, target,
 						UtilText.returnStringAtRandom(
-							"Darting forwards, [npc.name] [npc.verb(rear)] up [npc.verb(deliver)] a solid kick to [npc2.namePos] torso.",
-							"Striking out at [npc2.name], [npc.name] [npc.verb(manage)] to land a solid kick on [npc2.her] [npc2.leg]!",
-							"[npc.Name] [npc.verb(strike)] out at [npc2.name] in unarmed combat, and [npc.verb(manage)] to land a solid kick on [npc2.her] torso."));
+							"Стремительно бросившись вперед, [npc.name] [npc.verb(rear)] наносит [npc.verb(deliver)] мощный удар ногой в торс [npc2.namePos].",
+							"Атакуя [npc2.name], [npc.name] [npc.verb(manage)], чтобы нанести мощный удар ногой в [npc2.her] [npc2.leg]!",
+							"[npc.Name] [npc.verb(strike)] на [npc2.name] в рукопашном бою и [npc.verb(manage)], чтобы нанести мощный удар ногой в [npc2.her] торс."));
 				
 			} else {
 				return UtilText.parse(character, target,
 						UtilText.returnStringAtRandom(
-							"Darting forwards, [npc.name] [npc.verb(deliver)] a solid punch to [npc2.namePos] [npc2.arm].",
-							"Striking out at [npc2.name], [npc.name] [npc.verb(manage)] to land a solid punch on [npc2.her] [npc2.arm]!",
-							"[npc.Name] [npc.verb(strike)] out at [npc2.name] in unarmed combat, and [npc.verb(manage)] to land a solid hit on [npc2.her] torso."));
+							"Стремительно бросаясь вперед, [npc.name] [npc.verb(deliver)] мощный удар кулаком в [npc2.namePos] [npc2.arm].",
+							"Атакуя [npc2.name], [npc.name] [npc.verb(manage)], чтобы нанести мощный удар кулаком в [npc2.her] [npc2.arm]!",
+							"[npc.Name] [npc.verb(strike)] на [npc2.name] в рукопашном бою и [npc.verb(manage)], чтобы нанести мощный удар в [npc2.her] торс."));
 			}
 			
 		} else {
 			return UtilText.parse(character, target,
 					UtilText.returnStringAtRandom(
-						"Darting forwards, [npc.name] [npc.verb(try)] to deliver a punch to [npc2.namePos] [npc2.arm], but [npc2.she] [npc2.verb(manage)] to step out of the way in time.",
-						"[npc.Name] [npc.verb(throw)] a punch at [npc2.name], but fails to make contact with any part of [npc2.her] body.",
-						"[npc.Name] [npc.verb(strike)] out at [npc2.name] in unarmed combat, but [npc.she] [npc.verb(end)] up missing."));
+						"Стремительно бросаясь вперед, [npc.name] [npc.verb(try)], чтобы нанести удар кулаком в [npc2.namePos] [npc2.arm], но [npc2.she] [npc2.verb(manage)], успев вовремя уклониться.",
+						"[npc.Name] [npc.verb(throw)] кулаком в [npc2.name], но не достигает ни одной части тела [npc2.her].",
+						"[npc.Name] [npc.verb(strike)] на [npc2.name] в рукопашном бою, но [npc.she] [npc.verb(end)] при нехватке ресурсов."));
 		}
 	}
 
@@ -651,7 +651,7 @@ public abstract class AbstractWeaponType extends AbstractCoreType {
 
 	public String getUnableToBeUsedDescription() {
 		if(this.getArcaneCost()>0) {
-			return "You need at least [style.boldBad(one)] [style.boldArcane(arcane essence)] in order to use this weapon!";
+			return "Чтобы использовать это оружие, вам нужно как минимум [style.boldBad(одна)] [style.boldArcane(arcane essence)]!";
 		} else {
 			return "";
 		}
@@ -662,7 +662,7 @@ public abstract class AbstractWeaponType extends AbstractCoreType {
 		
 		if(this.getArcaneCost()>0) {
 			user.incrementEssenceCount(-this.getArcaneCost(), false);
-			sb.append(UtilText.parse(user, (this.isMelee()?"Using":"Firing")+" the "+this.getName()+" drains [style.boldBad("+Util.intToString(this.getArcaneCost())+")] [style.boldArcane(arcane essence)] from [npc.namePos] aura!"));
+			sb.append(UtilText.parse(user, (this.isMelee()?"Использование":"Стрельба")+""+this.getName()+" высасывает [style.boldBad("+Util.intToString(this.getArcaneCost())+")] [style.boldArcane(arcane essence)] из ауры [npc.namePos]!"));
 		}
 		if(isHit) {
 			String hitText = isCritical?this.criticalHitEffect:this.hitEffect;
@@ -1005,7 +1005,7 @@ public abstract class AbstractWeaponType extends AbstractCoreType {
 			
 			List<Colour> coloursPlusDT = Util.newArrayListOfValues(dt.getColour());
 			coloursPlusDT.addAll(colours);
-			s = SvgUtil.colourReplacement(this.getId()+"Equipped", coloursPlusDT, this.getColourReplacements(true), s);
+			s = SvgUtil.colourReplacement(this.getId()+"Надето", coloursPlusDT, this.getColourReplacements(true), s);
 
 			// Don't save icon as it can vary based on character changes...
 //			addSVGStringEquippedMapping(characterEquipped, dt, colours, s);
@@ -1034,7 +1034,7 @@ public abstract class AbstractWeaponType extends AbstractCoreType {
 			}
 			s = sb.toString();
 			
-			s = SvgUtil.colourReplacement(this.getId()+"EquippedDS", Util.newArrayListOfValues(PresetColour.BASE_GREY, PresetColour.BASE_GREY, PresetColour.BASE_GREY), this.getColourReplacements(true), s);
+			s = SvgUtil.colourReplacement(this.getId()+"ЭкипированоDS", Util.newArrayListOfValues(PresetColour.BASE_GREY, PresetColour.BASE_GREY, PresetColour.BASE_GREY), this.getColourReplacements(true), s);
 			
 			SVGStringEquippedDesaturated = s;
 			

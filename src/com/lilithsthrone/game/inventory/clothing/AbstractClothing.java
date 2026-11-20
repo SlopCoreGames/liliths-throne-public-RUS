@@ -1000,7 +1000,7 @@ public abstract class AbstractClothing extends AbstractCoreItem implements XMLSa
 	 */
 	public String getPattern() {
 		if(pattern == null) {
-			return "none";
+			return "нет";
 		}
 		return pattern;
 	}
@@ -1128,18 +1128,18 @@ public abstract class AbstractClothing extends AbstractCoreItem implements XMLSa
 			descriptionSB.append(getTypeDescription(characterEquippedOn));
 			descriptionSB.append("<br/>");
 			if(enchantmentKnown) {
-				descriptionSB.append((getClothingType().isPlural()?"They have":"It has")+" a value of: "+UtilText.formatAsMoney(getValue()));
+				descriptionSB.append((getClothingType().isPlural()?"У них есть":"У него есть")+" значение: "+UtilText.formatAsMoney(getValue()));
 				if(Main.game.isEnchantmentCapacityEnabled()) {
 					descriptionSB.append("<br/>");
-					descriptionSB.append((getClothingType().isPlural()?"They have":"It has")+" "+UtilText.addDeterminer(Attribute.ENCHANTMENT_LIMIT.getName())+" of: ");
+					descriptionSB.append((getClothingType().isPlural()?"У них есть":"У него есть")+" "+UtilText.addDeterminer(Attribute.ENCHANTMENT_LIMIT.getName())+" значение: ");
 					if(this.getEnchantmentCapacityCost()==0) {
-						descriptionSB.append("[style.colourDisabled("+UtilText.formatAsEnchantmentCapacityUncoloured(this.getEnchantmentCapacityCost(), "span")+")]");
+						descriptionSB.append("[style.colourDisabled("+UtilText.formatAsEnchantmentCapacityUncoloured(this.getEnchantmentCapacityCost(), "охват")+")]");
 					} else {
-						descriptionSB.append(UtilText.formatAsEnchantmentCapacity(this.getEnchantmentCapacityCost(), "span"));
+						descriptionSB.append(UtilText.formatAsEnchantmentCapacity(this.getEnchantmentCapacityCost(), "охват"));
 					}
 				}
 			} else {
-				descriptionSB.append((getClothingType().isPlural()?"They have":"It has")+" an <b>unknown value</b>!");
+				descriptionSB.append((getClothingType().isPlural()?"У них есть":"У него есть")+" <b>неизвестное значение</b>!");
 			}
 		descriptionSB.append("</p>");
 		
@@ -1147,8 +1147,8 @@ public abstract class AbstractClothing extends AbstractCoreItem implements XMLSa
 		if(getClothingType().getPhysicalResistance()>0) {
 			descriptionSB.append("<p>"
 							+ (getClothingType().isPlural()
-									? "They are armoured, and provide "
-									: "It is armoured, and provides ")
+									? "Они защищают и дают "
+									: "Это броня, которая дает ")
 								+ " <b>" + getClothingType().getPhysicalResistance() + "</b> [style.colourResPhysical(" + Attribute.RESISTANCE_PHYSICAL.getName() + ")]."
 							+ "</p>");
 		}
@@ -1171,8 +1171,8 @@ public abstract class AbstractClothing extends AbstractCoreItem implements XMLSa
 		}
 
 		if(getClothingType().getClothingSet() != null) {
-			descriptionSB.append("<p>" + (getClothingType().isPlural() ? "They are" : "It is") + " part of the <b style='color:" + PresetColour.RARITY_EPIC.toWebHexString() + ";'>"
-					+ getClothingType().getClothingSet().getName() + "</b> set." + "</p>");
+			descriptionSB.append("<p>" + (getClothingType().isPlural() ? "Это" : "Оно") + " часть <b style='color:" + PresetColour.RARITY_EPIC.toWebHexString() + ";'>"
+					+ getClothingType().getClothingSet().getName() + "набора.</p></b>");
 		}
 
 		return UtilText.parse(characterEquippedOn, this, descriptionSB.toString());
@@ -1463,8 +1463,8 @@ public abstract class AbstractClothing extends AbstractCoreItem implements XMLSa
 						:"")
 					+ (!this.getPattern().equalsIgnoreCase("none")?" "+Pattern.getPattern(this.getPattern()).getNiceName():"")
 					+ (withRarityColour
-						? (" <span style='color: " + c.toWebHexString() + "; "+(this.isVibrator()?"text-shadow: 2px 2px "+c.getShades()[0]+";":"")+"'>" + (this.isVibrator()?"vibrating ":"")+getName() + "</span>")
-						: " "+(this.isVibrator()?UtilText.applyVibration("vibrating "+getName(), c):getName()))
+						? (" <span style='color: " + c.toWebHexString() + "; "+(this.isVibrator()?"text-shadow: 2px 2px "+c.getShades()[0]+";":"")+"'>" + (this.isVibrator()?"вибрирующий ":"")+getName() + "</span>")
+						: " "+(this.isVibrator()?UtilText.applyVibration("вибрирующий "+getName(), c):getName()))
 					+ ((withEnchantmentPostFix
 							&& !this.getEffects().isEmpty()
 							&& this.getClothingType().isAppendEnchantmentPostfix()
@@ -1472,7 +1472,7 @@ public abstract class AbstractClothing extends AbstractCoreItem implements XMLSa
 							&& this.getRarity()!=Rarity.QUEST
 							&& this.getRarity()!=Rarity.LEGENDARY
 							&& this.getRarity()!=Rarity.EPIC)
-								? " "+getEnchantmentPostfix(withRarityColour, "span")
+								? " "+getEnchantmentPostfix(withRarityColour, "охват")
 								: "")
 				));
 	}
@@ -1545,16 +1545,16 @@ public abstract class AbstractClothing extends AbstractCoreItem implements XMLSa
 			if(this.getSlotEquippedTo()==InventorySlot.VAGINA) {
 				if(clothingOwner.hasHymen()) {
 					sb.append(UtilText.parse(clothingOwner,
-							"As the "+formattedName+" "+(plural?"push":"pushes")+" inside of [npc.namePos] [npc.pussy], "+(plural?"they":"it")+" [style.colourTerrible("+(plural?"tear":"tears")+" [npc.her] hymen)]!"));
+							"По мере того как "+formattedName+" "+(plural?"толкать":"толкает")+" внутри [npc.namePos] [npc.pussy], "+(plural?"они":"это")+" [style.colourTerrible("+(plural?"рвется":"разрывает")+" [npc.her] девственная плева)]!"));
 					
 					if(clothingOwner.hasFetish(Fetish.FETISH_PURE_VIRGIN)) {
 						sb.append("<br/>");
 						if(clothingOwner.isVaginaVirgin()) {
 							sb.append(UtilText.parse(clothingOwner,
-									"Although [npc.her] pussy can no longer be considered completely 'pure', [npc.nameIsFull] still considered to be a virgin, as [npc.sheHasFull] never been penetrated by another person before..."));
+									"Хотя [npc.her] киску уже нельзя считать полностью «чистой», [npc.nameIsFull] всё ещё считается девственницей, так как [npc.sheHasFull] никогда раньше не проникал в неё другой человек..."));
 						} else {
 							sb.append(UtilText.parse(clothingOwner,
-									"Having already had sex with someone in the past, the loss of [npc.namePos] hymen causes [npc.herHim] to now consider [npc.herself] a [style.colourTerrible(broken virgin)]!"));
+									"Поскольку секс с кем-то в прошлом уже был, потеря [npc.namePos] девственной плевы заставляет [npc.herHim] теперь считать [npc.herself] [style.colourTerrible(испорченной девственницей)]!"));
 						}
 					}
 				}
@@ -1567,15 +1567,15 @@ public abstract class AbstractClothing extends AbstractCoreItem implements XMLSa
 					}
 					if(length<=clothingOwner.getVaginaMaximumPenetrationDepthComfortable() || clothingOwner.hasFetish(Fetish.FETISH_SIZE_QUEEN)) {
 						sb.append(UtilText.parse(clothingOwner,
-								"The full length of the "+formattedName+" [style.colourMinorGood(comfortably fits)] inside of [npc.namePos] [npc.pussy]!"));
+								"Вся длина "+formattedName+" [style.colourMinorGood(удобно входит)] внутрь [npc.namePos] [npc.pussy]!"));
 						
 					} else {
 						if(clothingOwner.hasFetish(Fetish.FETISH_MASOCHIST)) {
 							sb.append(UtilText.parse(clothingOwner,
-									"The "+formattedName+" is [style.colourBad(too long)] to fit comfortably inside of [npc.namePos] [npc.pussy], but as [npc.sheIs] a masochist, [style.colourMinorGood([npc.she] [npc.do]n't mind the discomfort)]!"));
+									""+formattedName+" слишком [style.colourBad(длинная)], чтобы удобно поместиться внутри [npc.namePos] [npc.pussy], но так как [npc.sheIs] мазохистка, [style.colourMinorGood([npc.she] [npc.do] её не беспокоит этот дискомфорт)]!"));
 						} else {
 							sb.append(UtilText.parse(clothingOwner,
-									"The "+formattedName+" is [style.colourBad(too long)] to fit comfortably inside of [npc.namePos] [npc.pussy], and is causing [npc.herHim] [style.colourBad(discomfort)]!"));
+									""+formattedName+" слишком [style.colourBad(длинная)], чтобы удобно поместиться внутри [npc.namePos] [npc.pussy], и это вызывает у [npc.herHim] [style.colourBad(дискомфорт)]!"));
 						}
 					}
 				}
@@ -1585,8 +1585,7 @@ public abstract class AbstractClothing extends AbstractCoreItem implements XMLSa
 						sb.append("<br/>");
 					}
 					sb.append(UtilText.parse(clothingOwner,
-							(plural?"Their":"Its")+" <span style='color:"+girth.getColour().toWebHexString()+";'>[style.sizeShort("+diameter+")]</span>"
-									+ " diameter is [style.colourMinorBad(too wide)] for [npc.namePos] [npc.pussy], and is [style.colourBad(stretching)] [npc.herHim] out!"));
+							(plural?"Их":"Его")+" <span style='color:"+girth.getColour().toWebHexString()+";'>[style.sizeShort("+diameter+")]</span> диаметр [style.colourMinorBad(слишком велик)] для [npc.namePos] [npc.pussy], и он [style.colourBad(растягивает)] [npc.herHim]!"));
 				}
 				
 				clothingOwner.setHymen(false);
@@ -1597,15 +1596,15 @@ public abstract class AbstractClothing extends AbstractCoreItem implements XMLSa
 				if(Main.game.isPenetrationLimitationsEnabled()) {
 					if(length<=clothingOwner.getAssMaximumPenetrationDepthComfortable() || clothingOwner.hasFetish(Fetish.FETISH_SIZE_QUEEN)) {
 						sb.append(UtilText.parse(clothingOwner,
-								"The full length of the "+formattedName+" [style.colourMinorGood(comfortably fits)] inside of [npc.namePos] [npc.asshole]!"));
+								"Вся длина "+formattedName+" [style.colourMinorGood(удобно сидит)] внутри [npc.namePos] [npc.asshole]!"));
 						
 					} else {
 						if(clothingOwner.hasFetish(Fetish.FETISH_MASOCHIST)) {
 							sb.append(UtilText.parse(clothingOwner,
-									"The "+formattedName+" is [style.colourBad(too long)] to fit comfortably inside of [npc.namePos] [npc.asshole], but as [npc.sheIs] a masochist, [style.colourGood([npc.she] [npc.do]n't mind the discomfort)]!"));
+									""+formattedName+" [style.colourBad(слишком длинный)], чтобы удобно поместиться внутри [npc.namePos] [npc.asshole], но так как [npc.sheIs] мазохистка, [style.colourGood([npc.she] [npc.do] не будет смущать этот дискомфорт)]!"));
 						} else {
 							sb.append(UtilText.parse(clothingOwner,
-									"The "+formattedName+" is [style.colourBad(too long)] to fit comfortably inside of [npc.namePos] [npc.asshole], and is causing [npc.herHim] [style.colourBad(discomfort)]!"));
+									""+formattedName+" [style.colourBad(слишком длинный)], чтобы удобно поместиться внутри [npc.namePos] [npc.asshole], и это вызывает у [npc.herHim] [style.colourBad(дискомфорт)]!"));
 						}
 					}
 				}
@@ -1615,8 +1614,7 @@ public abstract class AbstractClothing extends AbstractCoreItem implements XMLSa
 						sb.append("<br/>");
 					}
 					sb.append(UtilText.parse(clothingOwner,
-							(plural?"Their":"Its")+" <span style='color:"+girth.getColour().toWebHexString()+";'>[style.sizeShort("+diameter+")]</span>"
-									+ " diameter is [style.colourMinorBad(too wide)] for [npc.namePos] [npc.asshole], and is [style.colourBad(stretching)] [npc.herHim] out!"));
+							(plural?"Их":"Его")+" <span style='color:"+girth.getColour().toWebHexString()+";'>[style.sizeShort("+diameter+")]</span> диаметр [style.colourMinorBad(слишком велик)] для [npc.namePos] [npc.asshole], и он [style.colourBad(растягивает)] [npc.herHim]!"));
 				}
 				
 			} else if(this.getSlotEquippedTo()==InventorySlot.NIPPLE) {
@@ -1625,15 +1623,15 @@ public abstract class AbstractClothing extends AbstractCoreItem implements XMLSa
 				if(Main.game.isPenetrationLimitationsEnabled()) {
 					if(length<=clothingOwner.getNippleMaximumPenetrationDepthComfortable() || clothingOwner.hasFetish(Fetish.FETISH_SIZE_QUEEN)) {
 						sb.append(UtilText.parse(clothingOwner,
-								"The full length of the "+formattedName+" [style.colourMinorGood(comfortably fits)] inside of [npc.namePos] [npc.nipple(true)]!"));
+								"Вся длина "+formattedName+" [style.colourMinorGood(удобно сидит)] внутри [npc.namePos] [npc.nipple(true)]!"));
 						
 					} else {
 						if(clothingOwner.hasFetish(Fetish.FETISH_MASOCHIST)) {
 							sb.append(UtilText.parse(clothingOwner,
-									"The "+formattedName+" is [style.colourBad(too long)] to fit comfortably inside of [npc.namePos] [npc.nipple(true)], but as [npc.sheIs] a masochist, [style.colourGood([npc.she] [npc.do]n't mind the discomfort)]!"));
+									""+formattedName+" [style.colourBad(слишком длинный)], чтобы удобно поместиться внутри [npc.namePos] [npc.nipple(true)], но так как [npc.sheIs] мазохистка, [style.colourGood([npc.she] [npc.do] не будет смущать этот дискомфорт)]!"));
 						} else {
 							sb.append(UtilText.parse(clothingOwner,
-									"The "+formattedName+" is [style.colourBad(too long)] to fit comfortably inside of [npc.namePos] [npc.nipple(true)], and is causing [npc.herHim] [style.colourBad(discomfort)]!"));
+									""+formattedName+" [style.colourBad(слишком длинный)], чтобы удобно поместиться внутри [npc.namePos] [npc.nipple(true)], и это вызывает у [npc.herHim] [style.colourBad(дискомфорт)]!"));
 						}
 					}
 				}
@@ -1643,8 +1641,7 @@ public abstract class AbstractClothing extends AbstractCoreItem implements XMLSa
 						sb.append("<br/>");
 					}
 					sb.append(UtilText.parse(clothingOwner,
-							(plural?"Their":"Its")+" <span style='color:"+girth.getColour().toWebHexString()+";'>[style.sizeShort("+diameter+")]</span>"
-									+ " diameter is [style.colourMinorBad(too wide)] for [npc.namePos] [npc.nipple(true)], and is [style.colourBad(stretching)] [npc.herHim] out!"));
+							(plural?"Их":"Его")+" <span style='color:"+girth.getColour().toWebHexString()+";'>[style.sizeShort("+diameter+")]</span> диаметр [style.colourMinorBad(слишком велик)] для [npc.namePos] [npc.nipple(true)], и он [style.colourBad(растягивает)] [npc.herHim]!"));
 				}
 				
 			} else if(this.getSlotEquippedTo()==InventorySlot.MOUTH) {
@@ -1653,15 +1650,15 @@ public abstract class AbstractClothing extends AbstractCoreItem implements XMLSa
 				if(Main.game.isPenetrationLimitationsEnabled()) {
 					if(length<=clothingOwner.getFaceMaximumPenetrationDepthComfortable() || clothingOwner.hasFetish(Fetish.FETISH_SIZE_QUEEN)) {
 						sb.append(UtilText.parse(clothingOwner,
-								"The full length of the "+formattedName+" [style.colourMinorGood(comfortably fits)] down [npc.namePos] throat!"));
+								"Вся длина "+formattedName+" [style.colourMinorGood(удобно проходит)] по [npc.namePos] горлу!"));
 						
 					} else {
 						if(clothingOwner.hasFetish(Fetish.FETISH_MASOCHIST)) {
 							sb.append(UtilText.parse(clothingOwner,
-									"The "+formattedName+" is [style.colourBad(too long)] to fit comfortably down [npc.namePos] throat, but as [npc.sheIs] a masochist, [style.colourGood([npc.she] [npc.do]n't mind the discomfort)]!"));
+									""+formattedName+" [style.colourBad(слишком длинный)], чтобы удобно проскользнуть в [npc.namePos] горло, но так как [npc.sheIs] мазохистка, [style.colourGood([npc.she] [npc.do] не будет возражать против дискомфорта)]!"));
 						} else {
 							sb.append(UtilText.parse(clothingOwner,
-									"The "+formattedName+" is [style.colourBad(too long)] to fit comfortably down [npc.namePos] throat, and is causing [npc.herHim] [style.colourBad(discomfort)]!"));
+									""+formattedName+" [style.colourBad(слишком длинный)], чтобы удобно проскользнуть в [npc.namePos] горло, и это вызывает у [npc.herHim] [style.colourBad(дискомфорт)]!"));
 						}
 					}
 				}
@@ -1671,8 +1668,7 @@ public abstract class AbstractClothing extends AbstractCoreItem implements XMLSa
 						sb.append("<br/>");
 					}
 					sb.append(UtilText.parse(clothingOwner,
-							(plural?"Their":"Its")+" <span style='color:"+girth.getColour().toWebHexString()+";'>[style.sizeShort("+diameter+")]</span>"
-									+ " diameter is [style.colourMinorBad(too wide)] for [npc.namePos] throat, and is [style.colourBad(stretching)] [npc.herHim] out!"));
+							(plural?"Их":"Его")+" <span style='color:"+girth.getColour().toWebHexString()+";'>[style.sizeShort("+diameter+")]</span> диаметр [style.colourMinorBad(слишком широкий)] для [npc.namePos] горла, и он [style.colourBad(растягивает)] [npc.herHim]!"));
 				}
 			}
 			
@@ -1684,8 +1680,8 @@ public abstract class AbstractClothing extends AbstractCoreItem implements XMLSa
 			PenetrationGirth girth = PenetrationGirth.getGirthFromInt(this.getClothingType().getPenetrationOtherGirth());
 			sb.append("<p style='text-align:center;'>");
 				sb.append(UtilText.parse(clothingOwner,
-						"[npc.NameIsFull] now able to use [npc.her] <span style='color:"+girth.getColour().toWebHexString()+";'>"+girth.getName()+"</span>,"
-								+ " <span style='color:"+penisLength.getColour().toWebHexString()+";'>[style.sizeShort("+length+")]</span> "+this.getClothingType().getName()+" as a [style.colourSex(penetrative object during sex)]!"));
+						"[npc.NameIsFull] теперь может использовать [npc.her] <span style='color:"+girth.getColour().toWebHexString()+";'>"+girth.getName()+"</span>,"
+								+ " <span style='color:"+penisLength.getColour().toWebHexString()+";'>[style.sizeShort("+length+")]</span> "+this.getClothingType().getName()+" как [style.colourSex(предмет для проникновения во время секса)]!"));
 			sb.append("</p>");
 		}
 		
@@ -1720,20 +1716,20 @@ public abstract class AbstractClothing extends AbstractCoreItem implements XMLSa
 	private static List<String> incompatibleClothing = new ArrayList<>();
 	
 	public String getDisplacementBlockingDescriptions(GameCharacter equippedToCharacter){
-		descriptionSB = new StringBuilder("<p><b>Displacement types:</b>");
+		descriptionSB = new StringBuilder("<p><b>Типы смещения:</b>");
 		for(BlockedParts bp : getBlockedPartsMap(equippedToCharacter, this.getSlotEquippedTo())){
 			descriptionSB.append("<br/><b>"+Util.capitaliseSentence(bp.displacementType.getDescription())+":</b> ");
 			if(bp.displacementType==DisplacementType.REMOVE_OR_EQUIP) {
 				if(equippedToCharacter.isAbleToUnequip(this, false, equippedToCharacter)) {
-					descriptionSB.append("<b style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>Available</b>");
+					descriptionSB.append("<b style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>Доступно</b>");
 				} else {
-					descriptionSB.append("<b style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>Blocked</b> by "+equippedToCharacter.getBlockingClothing().getName()+"");
+					descriptionSB.append("<b style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>Заблокировано</b> чем "+equippedToCharacter.getBlockingClothing().getName()+"");
 				}
 			} else {
 				if(equippedToCharacter.isAbleToBeDisplaced(this, bp.displacementType, false, false, equippedToCharacter)) {
-					descriptionSB.append("<b style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>Available</b>");
+					descriptionSB.append("<b style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>Доступно</b>");
 				} else {
-					descriptionSB.append("<b style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>Blocked</b> by "+equippedToCharacter.getBlockingClothing().getName()+"");
+					descriptionSB.append("<b style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>Заблокировано</b> чем "+equippedToCharacter.getBlockingClothing().getName()+"");
 				}
 			}
 		}
@@ -1758,20 +1754,20 @@ public abstract class AbstractClothing extends AbstractCoreItem implements XMLSa
 		if(slotToBeEquippedTo==null) {
 			if(this.isSealed() && enchantmentKnown) {
 				if(verbose) {
-					descriptionsList.add((plural?"They have":"It has")+" been enchanted so as to [style.boldSealed(seal "+(plural?"themselves":"itself")+")] onto the wearer!");
+					descriptionsList.add((plural?"У них есть":"У него есть")+" было зачаровано, чтобы [style.boldSealed(печать "+(plural?"themselves":"itself")+")] наложилась на владельца!");
 				} else {
 					if(equippedToCharacter!=null) {
-						descriptionsList.add("[style.boldSealed(Sealed)]");
+						descriptionsList.add("[style.boldSealed(Запечатано)]");
 					} else {
-						descriptionsList.add("[style.boldSealed(Seals onto wearer)]");
+						descriptionsList.add("[style.boldSealed(Наложено на владельца)]");
 					}
 				}
 			}
 			if(dirty) {
 				if(verbose) {
-					descriptionsList.add((plural?"They have":"It has")+" been [style.boldDirty(dirtied)] by sexual fluids!");
+					descriptionsList.add((plural?"У них есть":"У него есть")+" было [style.boldDirty(запятнано)] сексуальными жидкостями!");
 				} else {
-					descriptionsList.add("[style.boldDirty(Dirty)]");
+					descriptionsList.add("[style.boldDirty(Грязное)]");
 				}
 			}
 		}
@@ -1786,12 +1782,12 @@ public abstract class AbstractClothing extends AbstractCoreItem implements XMLSa
 				}
 			}
 			if(!cummedOnInfo.isEmpty()) {
-				descriptionsList.add("[style.boldDirty(Fluids present:)]");
+				descriptionsList.add("[style.boldDirty(Жидкости:)]");
 				for(Entry<GameCharacter, Integer> entry : cummedOnInfo.entrySet()) {
 					descriptionsList.add(UtilText.parse(entry.getKey(), "[style.fluid("+entry.getValue()+")] of <span style='color:"+entry.getKey().getFemininity().getColour().toWebHexString()+";'>[npc.namePos]</span> [npc.cum+]!"));
 				}
 			} else {
-				descriptionsList.add("[style.italicsDisabled(No fluid is available...)]");
+				descriptionsList.add("[style.italicsDisabled(Жидкостей нет...)]");
 			}
 		}
 
@@ -1817,10 +1813,10 @@ public abstract class AbstractClothing extends AbstractCoreItem implements XMLSa
 				List<InventorySlot> incompSlots = getIncompatibleSlots(null, slotToBeEquippedTo);
 				if(!incompSlots.isEmpty()) {
 					if(verbose) {
-						descriptionsList.add((plural?"They [style.boldBad(block":"It [style.boldBad(blocks")+")] the "+Util.inventorySlotsToStringList(incompSlots)+" slot"+(incompSlots.size()!=1?"s":"")+"!");
+						descriptionsList.add((plural?"Они [style.boldBad(блокируют\"}":"[style.boldBad(Это ")+")] слишком  "+Util.inventorySlotsToStringList(incompSlots)+" slot"+(incompSlots.size()!=1?"s":"")+"!");
 					} else {
 						for(InventorySlot slot : incompSlots) {
-							descriptionsList.add("[style.boldBad(Blocks " + Util.capitaliseSentence(slot.getName()) + ")]");
+							descriptionsList.add("[style.boldBad(Не подходит к)  " + Util.capitaliseSentence(slot.getName()) + ")]");
 						}
 					}
 				}
@@ -1828,23 +1824,23 @@ public abstract class AbstractClothing extends AbstractCoreItem implements XMLSa
 			if(slotToBeEquippedTo==null) {
 				if(getClothingType().getFemininityMaximum()<Main.game.getPlayer().getFemininityValue() && !Main.game.getPlayer().hasFetish(Fetish.FETISH_CROSS_DRESSER)) {
 					if(verbose) {
-						descriptionsList.add((plural?"They are":"It is")+" [style.boldMasculine(too masculine)] for you to wear without feeling embarrassed!");
+						descriptionsList.add((plural?"Это":"Оно")+" [style.boldMasculine(слишком мужественно)] для тебя, ты будешь чувствовать себя неловко!");
 					} else {
-						descriptionsList.add("[style.boldMasculine(Too masculine)]");
+						descriptionsList.add("[style.boldMasculine(Слишком мужественно)]");
 					}
 				}
 				if(getClothingType().getFemininityMinimum()>Main.game.getPlayer().getFemininityValue() && !Main.game.getPlayer().hasFetish(Fetish.FETISH_CROSS_DRESSER)) {
 					if(verbose) {
-						descriptionsList.add((plural?"They are":"It is")+" [style.boldFeminine(Too feminine)] for you to wear without feeling embarrassed!");
+						descriptionsList.add((plural?"Это":"Оно")+" [style.boldFeminine(Слишком женственно)] для тебя, ты будешь чувствовать себя неловко!");
 					} else {
-						descriptionsList.add("[style.boldFeminine(Too feminine)]");
+						descriptionsList.add("[style.boldFeminine(Слишком женственно)]");
 					}
 				}
 				if(!incompatibleClothing.isEmpty()) {
 					if(verbose) {
-						descriptionsList.add((plural?"They are":"It is")+" [style.boldBad(incompatible with)] your "+Util.stringsToStringList(incompatibleClothing, false)+"!");
+						descriptionsList.add((plural?"Это":"Оно")+" [style.boldBad(не подходит к)] твоим "+Util.stringsToStringList(incompatibleClothing, false)+"!");
 					} else {
-						descriptionsList.add("[style.boldBad(Incompatible with:)]");
+						descriptionsList.add("[style.boldBad(Не подходит к:)]");
 						descriptionsList.addAll(incompatibleClothing);
 					}
 				}
@@ -1854,16 +1850,16 @@ public abstract class AbstractClothing extends AbstractCoreItem implements XMLSa
 			if(slotToBeEquippedTo==null) {
 				if(getClothingType().getFemininityMaximum()<equippedToCharacter.getFemininityValue() && !equippedToCharacter.hasFetish(Fetish.FETISH_CROSS_DRESSER)) {
 					if(verbose) {
-						descriptionsList.add(UtilText.parse(equippedToCharacter, (plural?"They are":"It is")+" [style.boldMasculine(too masculine)] for [npc.name] to wear without feeling embarrassed!"));
+						descriptionsList.add(UtilText.parse(equippedToCharacter, (plural?"Это":"Оно")+" [style.boldMasculine(слишком мужественно)] для [npc.name], чтобы носить это без смущения!"));
 					} else {
-						descriptionsList.add("[style.boldMasculine(Too masculine)]");
+						descriptionsList.add("[style.boldMasculine(Слишком мужественно)]");
 					}
 				}
 				if(getClothingType().getFemininityMinimum() > equippedToCharacter.getFemininityValue() && !Main.game.getPlayer().hasFetish(Fetish.FETISH_CROSS_DRESSER)) {
 					if(verbose) {
-						descriptionsList.add(UtilText.parse(equippedToCharacter, (plural?"They are":"It is")+" [style.boldFeminine(too feminine)] for [npc.name] to wear without feeling embarrassed!"));
+						descriptionsList.add(UtilText.parse(equippedToCharacter, (plural?"Это":"Оно")+" [style.boldFeminine(слишком женственно)] для [npc.name], чтобы носить это и не смущаться!"));
 					} else {
-						descriptionsList.add("[style.boldFeminine(Too feminine)]");
+						descriptionsList.add("[style.boldFeminine(Слишком женственно)]");
 					}
 				}
 			}
@@ -1871,10 +1867,10 @@ public abstract class AbstractClothing extends AbstractCoreItem implements XMLSa
 				List<InventorySlot> incompSlots = getIncompatibleSlots(equippedToCharacter, slotToBeEquippedTo);
 				if(!incompSlots.isEmpty()) {
 					if(verbose) {
-						descriptionsList.add((plural?"They [style.boldBad(block":"It [style.boldBad(blocks")+")] the "+Util.inventorySlotsToStringList(incompSlots)+" slot"+(incompSlots.size()!=1?"s":"")+"!");
+						descriptionsList.add((plural?"Они [style.boldBad(блокируют\"}":"[style.boldBad(Это ")+")] слишком  "+Util.inventorySlotsToStringList(incompSlots)+" slot"+(incompSlots.size()!=1?"s":"")+"!");
 					} else {
 						for(InventorySlot slot : incompSlots) {
-							descriptionsList.add("[style.boldBad(Blocks " + Util.capitaliseSentence(slot.getName()) + ")]");
+							descriptionsList.add("[style.boldBad(Не подходит к)  " + Util.capitaliseSentence(slot.getName()) + ")]");
 						}
 					}
 				}
@@ -1882,7 +1878,7 @@ public abstract class AbstractClothing extends AbstractCoreItem implements XMLSa
 			if(slotToBeEquippedTo==null) {
 				if(!displacedList.isEmpty()) {
 					if(verbose) {
-						descriptionsList.add((plural?"They have":"It has")+" been [style.boldDisplaced("+Util.displacementTypesToStringList(displacedList)+")]!");
+						descriptionsList.add((plural?"У них есть":"У него есть")+" было [style.boldDisplaced(слишком)"+Util.displacementTypesToStringList(displacedList)+")]!");
 					} else {
 						for(DisplacementType dt : displacedList) {
 							descriptionsList.add("[style.boldDisplaced(" + Util.capitaliseSentence(dt.getDescriptionPast()) + ")]");
@@ -1922,31 +1918,31 @@ public abstract class AbstractClothing extends AbstractCoreItem implements XMLSa
 						
 						if(slotToBeEquippedTo==null) {
 							descriptionsList.add(description
-									+ ": Length: <span style='color:"+pl.getColour().toWebHexString()+";'>"+Units.size(length)+"</span>"
+									+ ": Длина: <span style='color:"+pl.getColour().toWebHexString()+";'>"+Units.size(length)+"</span>"
 									+ " Diameter: <span style='color:"+cap.getColour().toWebHexString()+";'>"+Units.size(diameter)+"</span>");
 						}
 						
 						boolean lubed = false;
 						if(slotToBeEquippedTo!=null) {
-							String startString = plural?"They are":"It is";
+							String startString = plural?"Это":"Оно";
 							if(equippedToCharacter==null) {
 								switch(slotToBeEquippedTo) {
 									case ANUS:
 										if(Main.game.isPenetrationLimitationsEnabled() && !Main.game.getPlayer().hasFetish(Fetish.FETISH_SIZE_QUEEN)) {
 											if(length>Main.game.getPlayer().getAssMaximumPenetrationDepthComfortable()) {
 												if(verbose) {
-													descriptionsList.add(startString+" [style.colourBad(too long)] to be able to fit comfortably into your ass!");
+													descriptionsList.add(startString+" [style.colourBad(слишком длинным)], чтобы оно могло с комфортом поместиться в твою задницу!");
 												} else {
-													descriptionsList.add("[style.colourTerrible(Too long)] for comfortable insertion");
+													descriptionsList.add("[style.colourTerrible(Слишком длинно)] для комфортного введения");
 												}
 											}
 										}
 										lubed = Main.game.getPlayer().getLust() >= Main.game.getPlayer().getAssWetness().getArousalNeededToGetAssWet();
 										if(Capacity.isPenetrationDiameterTooBig(Main.game.getPlayer().getAssElasticity(), Main.game.getPlayer().getAssStretchedCapacity(), diameter, lubed)) {
 											if(verbose) {
-												descriptionsList.add(startString+" [style.colourBad(too thick)] for your [pc.assCapacity] asshole, and would stretch it out if inserted!");
+												descriptionsList.add(startString+" [style.colourBad(слишком толстым)] для твоего [pc.assCapacity] ануса, и оно бы растянуло его при введении!");
 											} else {
-												descriptionsList.add("[style.colourBad(Too thick)], will cause [style.colourBad(stretching)]");
+												descriptionsList.add("[style.colourBad(Слишком толсто)], вызовет [style.colourBad(растяжение)]");
 											}
 										}
 										break;
@@ -1954,18 +1950,18 @@ public abstract class AbstractClothing extends AbstractCoreItem implements XMLSa
 										if(Main.game.isPenetrationLimitationsEnabled() && !Main.game.getPlayer().hasFetish(Fetish.FETISH_SIZE_QUEEN)) {
 											if(length>Main.game.getPlayer().getFaceMaximumPenetrationDepthComfortable()) {
 												if(verbose) {
-													descriptionsList.add(startString+" [style.colourBad(too long)] to be able to fit comfortably down your throat!");
+													descriptionsList.add(startString+" [style.colourBad(слишком длинным)], чтобы оно могло с комфортом пролезть тебе в глотку!");
 												} else {
-													descriptionsList.add("[style.colourTerrible(Too long)] for comfortable insertion");
+													descriptionsList.add("[style.colourTerrible(Слишком длинно)] для комфортного введения");
 												}
 											}
 										}
 										lubed = true;
 										if(Capacity.isPenetrationDiameterTooBig(Main.game.getPlayer().getFaceElasticity(), Main.game.getPlayer().getFaceStretchedCapacity(), diameter, lubed)) {
 											if(verbose) {
-												descriptionsList.add(startString+" [style.colourBad(too thick)] for your throat, and would stretch it out if inserted!");
+												descriptionsList.add(startString+" [style.colourBad(слишком толстым)] для твоего горла, и оно бы растянуло его при введении!");
 											} else {
-												descriptionsList.add("[style.colourBad(Too thick)], will cause [style.colourBad(stretching)]");
+												descriptionsList.add("[style.colourBad(Слишком толсто)], вызовет [style.colourBad(растяжение)]");
 											}
 										}
 										break;
@@ -1973,42 +1969,42 @@ public abstract class AbstractClothing extends AbstractCoreItem implements XMLSa
 										if(Main.game.isPenetrationLimitationsEnabled() && !Main.game.getPlayer().hasFetish(Fetish.FETISH_SIZE_QUEEN)) {
 											if(length>Main.game.getPlayer().getNippleMaximumPenetrationDepthComfortable()) {
 												if(verbose) {
-													descriptionsList.add(startString+" [style.colourBad(too long)] to be able to fit comfortably into your fuckable nipples!");
+													descriptionsList.add(startString+" [style.colourBad(слишком длинный)], чтобы он мог с комфортом поместиться в твои ебабельные соски!");
 												} else {
-													descriptionsList.add("[style.colourTerrible(Too long)] for comfortable insertion");
+													descriptionsList.add("[style.colourTerrible(Слишком длинно)] для комфортного введения");
 												}
 											}
 										}
 										lubed = Main.game.getPlayer().getBreastRawStoredMilkValue()>0;
 										if(Capacity.isPenetrationDiameterTooBig(Main.game.getPlayer().getNippleElasticity(), Main.game.getPlayer().getNippleStretchedCapacity(), diameter, lubed)) {
 											if(verbose) {
-												descriptionsList.add(startString+" [style.colourBad(too thick)] for your [pc.breastCapacity] nipples, and would stretch them out if inserted!");
+												descriptionsList.add(startString+" [style.colourBad(слишком толстый)] для твоих [pc.breastCapacity] сосков, и он бы просто растянул их, если бы его вставили!");
 											} else {
-												descriptionsList.add("[style.colourBad(Too thick)], will cause [style.colourBad(stretching)]");
+												descriptionsList.add("[style.colourBad(Слишком толсто)], вызовет [style.colourBad(растяжение)]");
 											}
 										}
 										break;
 									case VAGINA:
 										if(verbose) {
-											descriptionsList.add((plural?"They":"It")+" will [style.colourTerrible(tear the hymen)] of any pussy "+(plural?"they are":"it is")+" inserted into!");
+											descriptionsList.add((plural?"Они":"Он")+" будет [style.colourTerrible(рвать девственную плеву)] любой пизды, "+(plural?"их":"это")+" в которую его вставят!");
 										} else {
-											descriptionsList.add("[style.colourTerrible(Tears hymen)] of virgin pussies");
+											descriptionsList.add("[style.colourTerrible(Рвет девственную плеву)] девственных пизд");
 										}
 										if(Main.game.isPenetrationLimitationsEnabled() && !Main.game.getPlayer().hasFetish(Fetish.FETISH_SIZE_QUEEN)) {
 											if(Main.game.getPlayer().hasVagina() && length>Main.game.getPlayer().getVaginaMaximumPenetrationDepthComfortable()) {
 												if(verbose) {
-													descriptionsList.add(startString+" [style.colourBad(too long)] to be able to fit comfortably into your pussy!");
+													descriptionsList.add(startString+" [style.colourBad(слишком длинный)], чтобы он мог с комфортом поместиться в твою пизду!");
 												} else {
-													descriptionsList.add("[style.colourTerrible(Too long)] for comfortable insertion");
+													descriptionsList.add("[style.colourTerrible(Слишком длинно)] для комфортного введения");
 												}
 											}
 										}
 										lubed = Main.game.getPlayer().getLust() >= Main.game.getPlayer().getVaginaWetness().getArousalNeededToGetAssWet();
 										if(Capacity.isPenetrationDiameterTooBig(Main.game.getPlayer().getVaginaElasticity(), Main.game.getPlayer().getVaginaStretchedCapacity(), diameter, lubed)) {
 											if(verbose) {
-												descriptionsList.add(startString+" [style.colourBad(too thick)] for your [pc.pussyCapacity] pussy, and would stretch it out if inserted!");
+												descriptionsList.add(startString+" [style.colourBad(слишком толстый)] для твоей [pc.pussyCapacity] пизды, и он бы просто растянул ее, если бы его вставили!");
 											} else {
-												descriptionsList.add("[style.colourBad(Too thick)], will cause [style.colourBad(stretching)]");
+												descriptionsList.add("[style.colourBad(Слишком толсто)], вызовет [style.colourBad(растяжение)]");
 											}
 										}
 										break;
@@ -2017,9 +2013,9 @@ public abstract class AbstractClothing extends AbstractCoreItem implements XMLSa
 								}
 								
 							} else {
-								String discomfort = "[style.colourBad(discomfort)]";
+								String discomfort = "[style.colourBad(дискомфорт)]";
 								if(equippedToCharacter.hasFetish(Fetish.FETISH_MASOCHIST)) {
-									discomfort = "[style.colourMinorGood(masochistic pleasure)]";
+									discomfort = "[style.colourMinorGood(мазохистское удовольствие)]";
 								}
 								switch(slotToBeEquippedTo) {
 									case ANUS:
@@ -2027,12 +2023,12 @@ public abstract class AbstractClothing extends AbstractCoreItem implements XMLSa
 											if(length>equippedToCharacter.getAssMaximumPenetrationDepthComfortable()) {
 												if(verbose) {
 													descriptionsList.add(UtilText.parse(equippedToCharacter,
-															startString+" [style.colourBad(too deep)] in [npc.namePos] ass, and "+(plural?"are":"is")+" causing [npc.herHim] "+discomfort+"!"));
+															startString+" [style.colourBad(слишком глубоко)] в задницу [npc.namePos], и "+(plural?"являются":"есть")+" заставляя [npc.herHim] "+discomfort+"!"));
 												} else {
 													if(equippedToCharacter.hasFetish(Fetish.FETISH_MASOCHIST)) {
-														descriptionsList.add("[style.colourTerrible(Too deep)], giving [style.colourMinorGood(masochistic pleasure)]");
+														descriptionsList.add("[style.colourTerrible(Слишком глубоко)], принося [style.colourMinorGood(мазохистское удовольствие)]");
 													} else {
-														descriptionsList.add("[style.colourTerrible(Too deep)], causing [style.colourBad(discomfort)]");
+														descriptionsList.add("[style.colourTerrible(Слишком глубоко)], вызывая [style.colourBad(дискомфорт)]");
 													}
 												}
 											}
@@ -2041,9 +2037,9 @@ public abstract class AbstractClothing extends AbstractCoreItem implements XMLSa
 										if(Capacity.isPenetrationDiameterTooBig(equippedToCharacter.getAssElasticity(), equippedToCharacter.getAssStretchedCapacity(), diameter, lubed)) {
 											if(verbose) {
 												descriptionsList.add(UtilText.parse(equippedToCharacter,
-														startString+" [style.colourBad(too thick)] for [npc.namePos] [npc.assCapacity] asshole, and "+(plural?"are":"is")+" [style.colourBad(stretching)] it out!"));
+														startString+" [style.colourBad(слишком толстый)] для [npc.namePos] [npc.assCapacity] задницы, и "+(plural?"являются":"есть")+" [style.colourBad(растягивая)] его!"));
 											} else {
-												descriptionsList.add("[style.colourBad(Too thick)], causing [style.colourBad(asshole to stretch)]");
+												descriptionsList.add("[style.colourBad(Слишком толсто)], заставляя [style.colourBad(анус растягиваться)]");
 											}
 										}
 										break;
@@ -2052,12 +2048,12 @@ public abstract class AbstractClothing extends AbstractCoreItem implements XMLSa
 											if(length>equippedToCharacter.getFaceMaximumPenetrationDepthComfortable()) {
 												if(verbose) {
 													descriptionsList.add(UtilText.parse(equippedToCharacter,
-															startString+" [style.colourBad(too deep)] down [npc.namePos] throat, and "+(plural?"are":"is")+" causing [npc.herHim] "+discomfort+"!"));
+															startString+" [style.colourBad(слишком глубоко)] в глотку [npc.namePos], и "+(plural?"являются":"есть")+" заставляя [npc.herHim] "+discomfort+"!"));
 												} else {
 													if(equippedToCharacter.hasFetish(Fetish.FETISH_MASOCHIST)) {
-														descriptionsList.add("[style.colourTerrible(Too deep)], giving [style.colourMinorGood(masochistic pleasure)]");
+														descriptionsList.add("[style.colourTerrible(Слишком глубоко)], принося [style.colourMinorGood(мазохистское удовольствие)]");
 													} else {
-														descriptionsList.add("[style.colourTerrible(Too deep)], causing [style.colourBad(discomfort)]");
+														descriptionsList.add("[style.colourTerrible(Слишком глубоко)], вызывая [style.colourBad(дискомфорт)]");
 													}
 												}
 											}
@@ -2066,9 +2062,9 @@ public abstract class AbstractClothing extends AbstractCoreItem implements XMLSa
 										if(Capacity.isPenetrationDiameterTooBig(equippedToCharacter.getFaceElasticity(), equippedToCharacter.getFaceStretchedCapacity(), diameter, lubed)) {
 											if(verbose) {
 												descriptionsList.add(UtilText.parse(equippedToCharacter,
-														startString+" [style.colourBad(too thick)] for [npc.namePos] throat, and "+(plural?"are":"is")+" [style.colourBad(stretching)] it out!"));
+														startString+" [style.colourBad(слишком толстый)] для горла [npc.namePos], и "+(plural?"являются":"есть")+" [style.colourBad(растягивая)] его!"));
 											} else {
-												descriptionsList.add("[style.colourBad(Too thick)], causing [style.colourBad(throat to stretch)]");
+												descriptionsList.add("[style.colourBad(Слишком толстый)], заставляющий [style.colourBad(горло растягиваться)]");
 											}
 										}
 										break;
@@ -2077,12 +2073,12 @@ public abstract class AbstractClothing extends AbstractCoreItem implements XMLSa
 											if(length>equippedToCharacter.getNippleMaximumPenetrationDepthComfortable()) {
 												if(verbose) {
 													descriptionsList.add(UtilText.parse(equippedToCharacter,
-															startString+" [style.colourBad(too deep)] in [npc.namePos] fuckable nipples, and "+(plural?"are":"is")+" causing [npc.herHim] "+discomfort+"!"));
+															startString+" [style.colourBad(слишком глубоко)] в отзывчивые соски [npc.namePos], и "+(plural?"являются":"есть")+" заставляя [npc.herHim] "+discomfort+"!"));
 												} else {
 													if(equippedToCharacter.hasFetish(Fetish.FETISH_MASOCHIST)) {
-														descriptionsList.add("[style.colourTerrible(Too deep)], giving [style.colourMinorGood(masochistic pleasure)]");
+														descriptionsList.add("[style.colourTerrible(Слишком глубоко)], принося [style.colourMinorGood(мазохистское удовольствие)]");
 													} else {
-														descriptionsList.add("[style.colourTerrible(Too deep)], causing [style.colourBad(discomfort)]");
+														descriptionsList.add("[style.colourTerrible(Слишком глубоко)], вызывая [style.colourBad(дискомфорт)]");
 													}
 												}
 											}
@@ -2091,9 +2087,9 @@ public abstract class AbstractClothing extends AbstractCoreItem implements XMLSa
 										if(Capacity.isPenetrationDiameterTooBig(equippedToCharacter.getNippleElasticity(), equippedToCharacter.getNippleStretchedCapacity(), diameter, lubed)) {
 											if(verbose) {
 												descriptionsList.add(UtilText.parse(equippedToCharacter,
-														startString+" [style.colourBad(too thick)] for [npc.namePos] [npc.breastCapacity] nipples, and "+(plural?"are":"is")+" [style.colourBad(stretching)] them out!"));
+														startString+" [style.colourBad(слишком толстый)] для [npc.namePos] [npc.breastCapacity] сосков, и "+(plural?"являются":"есть")+" [style.colourBad(растягивая)] их!"));
 											} else {
-												descriptionsList.add("[style.colourBad(Too thick)], causing [style.colourBad(nipples to stretch)]");
+												descriptionsList.add("[style.colourBad(Слишком толстый)], заставляющий [style.colourBad(соски растягиваться)]");
 											}
 										}
 										break;
@@ -2102,12 +2098,12 @@ public abstract class AbstractClothing extends AbstractCoreItem implements XMLSa
 											if(equippedToCharacter.hasVagina() && length>equippedToCharacter.getVaginaMaximumPenetrationDepthComfortable()) {
 												if(verbose) {
 													descriptionsList.add(UtilText.parse(equippedToCharacter,
-															startString+" [style.colourBad(too deep)] in [npc.namePos] pussy, and "+(plural?"are":"is")+" causing [npc.herHim] "+discomfort+"!"));
+															startString+" [style.colourBad(слишком глубоко)] в киску [npc.namePos], и "+(plural?"являются":"есть")+" заставляя [npc.herHim] "+discomfort+"!"));
 												} else {
 													if(equippedToCharacter.hasFetish(Fetish.FETISH_MASOCHIST)) {
-														descriptionsList.add("[style.colourTerrible(Too deep)], giving [style.colourMinorGood(masochistic pleasure)]");
+														descriptionsList.add("[style.colourTerrible(Слишком глубоко)], принося [style.colourMinorGood(мазохистское удовольствие)]");
 													} else {
-														descriptionsList.add("[style.colourTerrible(Too deep)], causing [style.colourBad(discomfort)]");
+														descriptionsList.add("[style.colourTerrible(Слишком глубоко)], вызывая [style.colourBad(дискомфорт)]");
 													}
 												}
 											}
@@ -2116,9 +2112,9 @@ public abstract class AbstractClothing extends AbstractCoreItem implements XMLSa
 										if(Capacity.isPenetrationDiameterTooBig(equippedToCharacter.getVaginaElasticity(), equippedToCharacter.getVaginaStretchedCapacity(), diameter, lubed)) {
 											if(verbose) {
 												descriptionsList.add(UtilText.parse(equippedToCharacter,
-														startString+" [style.colourBad(too thick)] for [npc.namePos] [npc.pussyCapacity] pussy, and "+(plural?"are":"is")+" [style.colourBad(stretching)] it out!"));
+														startString+" [style.colourBad(слишком толстый)] для [npc.namePos] [npc.pussyCapacity] киски, и "+(plural?"являются":"есть")+" [style.colourBad(растягивая)] его!"));
 											} else {
-												descriptionsList.add("[style.colourBad(Too thick)], causing [style.colourBad(pussy to stretch)]");
+												descriptionsList.add("[style.colourBad(Слишком толстый)], заставляющий [style.colourBad(киску растягиваться)]");
 											}
 										}
 										break;
@@ -2139,7 +2135,7 @@ public abstract class AbstractClothing extends AbstractCoreItem implements XMLSa
 						Capacity cap = Capacity.getCapacityFromValue(diameter);
 						
 						descriptionsList.add(description
-								+ ": Length: <span style='color:"+pl.getColour().toWebHexString()+";'>"+Units.size(length)+"</span>"
+								+ ": Длина: <span style='color:"+pl.getColour().toWebHexString()+";'>"+Units.size(length)+"</span>"
 								+ " Diameter: <span style='color:"+cap.getColour().toWebHexString()+";'>"+Units.size(diameter)+"</span>");
 						
 					} else if(tag==ItemTag.ONAHOLE_SELF) {//TODO requires testing
@@ -2147,10 +2143,10 @@ public abstract class AbstractClothing extends AbstractCoreItem implements XMLSa
 						OrificePlasticity plasticity = OrificePlasticity.getElasticityFromInt(this.getClothingType().getOrificeSelfPlasticity());
 						Wetness wetness = Wetness.valueOf(this.getClothingType().getOrificeSelfWetness());
 						descriptionsList.add(description
-								+ ": Capacity: "+Units.size(this.getClothingType().getPenetrationOtherLength())
-								+ " Depth: "+Units.size(this.getClothingType().getOrificeSelfDepth()));
+								+ ": Вместимость: "+Units.size(this.getClothingType().getPenetrationOtherLength())
+								+ " Глубина: "+Units.size(this.getClothingType().getOrificeSelfDepth()));
 						descriptionsList.add(
-								"Elasticity: <span style='color:"+elasticity.getColour().toWebHexString()+";'>"+elasticity.getDescriptor()+"</span>"
+								"Эластичность: <span style='color:"+elasticity.getColour().toWebHexString()+";'>"+elasticity.getDescriptor()+"</span>"
 								+ " Plasticity: <span style='color:"+plasticity.getColour().toWebHexString()+";'>"+plasticity.getDescriptor()+"</span>"
 								+ " Wetness: <span style='color:"+wetness.getColour().toWebHexString()+";'>"+wetness.getDescriptor()+"</span>"
 								);
@@ -2160,10 +2156,10 @@ public abstract class AbstractClothing extends AbstractCoreItem implements XMLSa
 						OrificePlasticity plasticity = OrificePlasticity.getElasticityFromInt(this.getClothingType().getOrificeOtherPlasticity());
 						Wetness wetness = Wetness.valueOf(this.getClothingType().getOrificeOtherWetness());
 						descriptionsList.add(description
-								+ ": Capacity: "+Units.size(this.getClothingType().getPenetrationOtherLength())
-								+ " Depth: "+Units.size(this.getClothingType().getOrificeOtherDepth()));
+								+ ": Вместимость: "+Units.size(this.getClothingType().getPenetrationOtherLength())
+								+ " Глубина: "+Units.size(this.getClothingType().getOrificeOtherDepth()));
 						descriptionsList.add(
-								"Elasticity: <span style='color:"+elasticity.getColour().toWebHexString()+";'>"+elasticity.getDescriptor()+"</span>"
+								"Эластичность: <span style='color:"+elasticity.getColour().toWebHexString()+";'>"+elasticity.getDescriptor()+"</span>"
 								+ " Plasticity: <span style='color:"+plasticity.getColour().toWebHexString()+";'>"+plasticity.getDescriptor()+"</span>"
 								+ " Wetness: <span style='color:"+wetness.getColour().toWebHexString()+";'>"+wetness.getDescriptor()+"</span>"
 								);
@@ -2387,14 +2383,12 @@ public abstract class AbstractClothing extends AbstractCoreItem implements XMLSa
 			if(isBadEnchantment()) {
 				sb.append(
 						"<p style='text-align:center;'>"
-								+ "<b style='color:" + PresetColour.GENERIC_BAD.toWebHexString() + ";'>Negative Enchantment Revealed:</b><br/>"
-										+ "<b>"+Util.capitaliseSentence(getDisplayName(true))+"</b>");
+								+ "<b style='color:" + PresetColour.GENERIC_BAD.toWebHexString() + ";'>Выявлено отрицательное зачарование:</b><br/><b>"+Util.capitaliseSentence(getDisplayName(true))+"</b>");
 				
 			} else {
 				sb.append(
 						"<p style='text-align:center;'>"
-								+ "<b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>Enchantment Revealed:</b><br/>"
-										+ "<b>"+Util.capitaliseSentence(getDisplayName(true))+"</b>");
+								+ "<b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>Выявлено зачарование:</b><br/><b>"+Util.capitaliseSentence(getDisplayName(true))+"</b>");
 			}
 			
 //			for(ItemEffect ie : this.getEffects()) {
@@ -2451,32 +2445,32 @@ public abstract class AbstractClothing extends AbstractCoreItem implements XMLSa
 	public String getEnchantmentPostfix(boolean coloured, String tag) {
 		if(!this.getEffects().isEmpty() && !this.isCondom(this.getClothingType().getEquipSlots().get(0))) {
 			if(this.getEffects().stream().anyMatch(ie->ie.getSecondaryModifier() == TFModifier.CLOTHING_ENSLAVEMENT)) {
-				return "of "+(coloured?"<"+tag+" style='color:"+TFModifier.CLOTHING_ENSLAVEMENT.getColour().toWebHexString()+";'>enslavement</"+tag+">":"enslavement");
+				return "из "+(coloured?"<"+tag+" style='color:"+TFModifier.CLOTHING_ENSLAVEMENT.getColour().toWebHexString()+";'>рабство</"+tag+">":"enslavement");
 				
 			} else if(this.getEffects().stream().anyMatch(ie->ie.getSecondaryModifier() == TFModifier.CLOTHING_SERVITUDE)) {
-				return "of "+(coloured?"<"+tag+" style='color:"+TFModifier.CLOTHING_SERVITUDE.getColour().toWebHexString()+";'>servitude</"+tag+">":"servitude");
+				return "из "+(coloured?"<"+tag+" style='color:"+TFModifier.CLOTHING_SERVITUDE.getColour().toWebHexString()+";'>служение</"+tag+">":"servitude");
 				
 			} else if(this.getEffects().stream().anyMatch(ie->ie.getSecondaryModifier() == TFModifier.CLOTHING_ORGASM_PREVENTION)) {
-				return "of "+(coloured?"<"+tag+" style='color:"+TFModifier.CLOTHING_ORGASM_PREVENTION.getColour().toWebHexString()+";'>orgasm denial</"+tag+">":"orgasm denial");
+				return "из "+(coloured?"<"+tag+" style='color:"+TFModifier.CLOTHING_ORGASM_PREVENTION.getColour().toWebHexString()+";'>запрет оргазма</"+tag+">":"запрет оргазма");
 				
 			} else if(this.getEffects().stream().anyMatch(ie->ie.getPrimaryModifier() == TFModifier.TF_MOD_FETISH_BEHAVIOUR || ie.getPrimaryModifier() == TFModifier.TF_MOD_FETISH_BODY_PART)) {
 				ItemEffect itemEffect = this.getEffects().stream().filter(ie->ie.getPrimaryModifier() == TFModifier.TF_MOD_FETISH_BEHAVIOUR || ie.getPrimaryModifier() == TFModifier.TF_MOD_FETISH_BODY_PART).findFirst().get();
 				return "of the "+(coloured?"<"+tag+" style='color:"+PresetColour.FETISH.toWebHexString()+";'>"+itemEffect.getSecondaryModifier().getDescriptor()+"</"+tag+">":itemEffect.getSecondaryModifier().getDescriptor());
 				
 			} else if(this.getEffects().stream().anyMatch(ie->ie.getSecondaryModifier() == TFModifier.CLOTHING_SEALING)) {
-				return "of "+(coloured?"<"+tag+" style='color:"+PresetColour.SEALED.toWebHexString()+";'>sealing</"+tag+">":"sealing");
+				return "из "+(coloured?"<"+tag+" style='color:"+PresetColour.SEALED.toWebHexString()+";'>запечатывание</"+tag+">":"sealing");
 				
 			} else if(this.getEffects().stream().anyMatch(ie->ie.getPrimaryModifier() == TFModifier.CLOTHING_ATTRIBUTE || ie.getPrimaryModifier() == TFModifier.CLOTHING_MAJOR_ATTRIBUTE)) {
 				String name = this.isBadEnchantment() && this.getCoreEnchantment()!=Attribute.MAJOR_CORRUPTION
 						?this.getCoreEnchantment().getNegativeEnchantment()
 						:this.getCoreEnchantment().getPositiveEnchantment();
-				return "of "+(coloured?"<"+tag+" style='color:"+this.getCoreEnchantment().getColour().toWebHexString()+";'>"+name+"</"+tag+">":name);
+				return "из "+(coloured?"<"+tag+" style='color:"+this.getCoreEnchantment().getColour().toWebHexString()+";'>"+name+"</"+tag+">":name);
 				
 			} else if(this.getEffects().stream().anyMatch(ie->ie.getPrimaryModifier() == TFModifier.CLOTHING_CREAMPIE_RETENTION)) {
-				return "of "+(coloured?"<"+tag+" style='color:"+PresetColour.CUM.toWebHexString()+";'>plugging</"+tag+">":"plugging");
+				return "из "+(coloured?"<"+tag+" style='color:"+PresetColour.CUM.toWebHexString()+";'>пробка</"+tag+">":"plugging");
 				
 			} else if(this.getEffects().stream().anyMatch(ie->ie.getSecondaryModifier() != TFModifier.CLOTHING_VIBRATION)) {
-				return "of "+(coloured?"<"+tag+" style='color:"+PresetColour.TRANSFORMATION_GENERIC.toWebHexString()+";'>transformation</"+tag+">":"transformation");
+				return "из "+(coloured?"<"+tag+" style='color:"+PresetColour.TRANSFORMATION_GENERIC.toWebHexString()+";'>превращение</"+tag+">":"transformation");
 				
 			}
 		}
@@ -2511,23 +2505,23 @@ public abstract class AbstractClothing extends AbstractCoreItem implements XMLSa
 	public Value<Boolean, String> isAbleToBeEquippedDuringSex(InventorySlot slotEquippedTo) {
 		if(getItemTags(slotEquippedTo).contains(ItemTag.ENABLE_SEX_EQUIP)) {
 			if(isEnslavementClothing()) {
-				return new Value<>(false, "Clothing with enslavement enchantments cannot be equipped during sex!");
+				return new Value<>(false, "Одежду с чарами порабощения нельзя надевать во время секса!");
 			}
 			return new Value<>(true, "");
 		}
-		return new Value<>(false, "This item of clothing cannot be equipped during sex!");
+		return new Value<>(false, "Этот предмет одежды нельзя надевать во время секса!");
 	}
 	
 	public Value<Boolean, String> isAbleToBeEquippedDuringSexInAnySlot() {
 		for(InventorySlot slot : this.getClothingType().getEquipSlots()) {
 			if(getItemTags(slot).contains(ItemTag.ENABLE_SEX_EQUIP)) {
 				if(isEnslavementClothing()) {
-					return new Value<>(false, "Clothing with enslavement enchantments cannot be equipped during sex!");
+					return new Value<>(false, "Одежду с чарами порабощения нельзя надевать во время секса!");
 				}
 				return new Value<>(true, "");
 			}
 		}
-		return new Value<>(false, "This item of clothing cannot be equipped during sex!");
+		return new Value<>(false, "Этот предмет одежды нельзя надевать во время секса!");
 	}
 	
 	
@@ -2724,142 +2718,142 @@ public abstract class AbstractClothing extends AbstractCoreItem implements XMLSa
 		boolean plural = this.getClothingType().isPlural();
 		
 		if(this.getClothingType().getItemTags(slot).contains(ItemTag.UNIQUE_NO_NPC_EQUIP) && !clothingOwner.isPlayer()) {
-			return new Value<>(false, UtilText.parse("[style.colourBad(Only you can equip this item of clothing!)]"));
+			return new Value<>(false, UtilText.parse("[style.colourBad(Только вы можете надеть этот предмет одежды!)]"));
 		}
 		
 		if(!this.getClothingType().getEquipSlots().contains(slot)) {
-			return new Value<>(false, UtilText.parse("[style.colourBad(The "+this.getName()+" cannot be equipped into this slot!)]"));
+			return new Value<>(false, UtilText.parse("[style.colourBad(Этот "+this.getName()+" нельзя надеть в этот слот!)]"));
 		}
 		if(block!=null && Collections.disjoint(block.getRequiredTags(), tags)) {
 			return new Value<>(false, UtilText.parse("[style.colourBad(" + UtilText.parse(clothingOwner, block.getDescription()) + ")]"));
 		}
 
 		if(tags.contains(ItemTag.FITS_MUZZLES_EXCLUSIVE) && !clothingOwner.isFaceMuzzle()) {
-			return new Value<>(false, UtilText.parse(clothingOwner,"The "+this.getName()+" "+(plural?"are":"is")+" only suitable for muzzles, and as such, [npc.name] cannot wear "+(plural?"them":"it")+"."));
+			return new Value<>(false, UtilText.parse(clothingOwner,""+this.getName()+" "+(plural?"являются":"есть")+" подходит только для мордочек, поэтому [npc.name] не может носить "+(plural?"их":"это")+"."));
 		}
 		if(tags.contains(ItemTag.FITS_BEAKS_EXCLUSIVE) && !clothingOwner.isFaceBeak()) {
-			return new Value<>(false, UtilText.parse(clothingOwner,"The "+this.getName()+" "+(plural?"are":"is")+" only suitable for beaks, and as such, [npc.name] cannot wear "+(plural?"them":"it")+"."));
+			return new Value<>(false, UtilText.parse(clothingOwner,""+this.getName()+" "+(plural?"являются":"есть")+" подходит только для клювов, поэтому [npc.name] не может носить "+(plural?"их":"это")+"."));
 		}
 		
 		
 		if(tags.contains(ItemTag.FITS_BIPEDS) && clothingOwner.getLegConfiguration()!=LegConfiguration.BIPEDAL) {
-			return new Value<>(false, UtilText.parse(clothingOwner,"The "+this.getName()+" "+(plural?"are":"is")+" only suitable for bipedal bodies, and as such, [npc.name] cannot wear "+(plural?"them":"it")+"."));
+			return new Value<>(false, UtilText.parse(clothingOwner,""+this.getName()+" "+(plural?"являются":"есть")+" подходит только для двуногих тел, поэтому [npc.name] не может носить "+(plural?"их":"это")+"."));
 		}
 		if(tags.contains(ItemTag.FITS_TAUR_BODY) && clothingOwner.getLegConfiguration()!=LegConfiguration.QUADRUPEDAL) {
-			return new Value<>(false, UtilText.parse(clothingOwner,"The "+this.getName()+" "+(plural?"are":"is")+" only suitable for taur bodies, and as such, [npc.name] cannot wear "+(plural?"them":"it")+"."));
+			return new Value<>(false, UtilText.parse(clothingOwner,""+this.getName()+" "+(plural?"являются":"есть")+" подходит только для тауров, поэтому [npc.name] не может носить "+(plural?"их":"это")+"."));
 		}
 		if(tags.contains(ItemTag.FITS_LONG_TAIL_BODY) && clothingOwner.getLegConfiguration()!=LegConfiguration.TAIL_LONG) {
-			return new Value<>(false, UtilText.parse(clothingOwner,"The "+this.getName()+" "+(plural?"are":"is")+" only suitable for long-tailed bodies, and as such, [npc.name] cannot wear "+(plural?"them":"it")+"."));
+			return new Value<>(false, UtilText.parse(clothingOwner,""+this.getName()+" "+(plural?"являются":"есть")+" подходит только для длиннохвостых тел, поэтому [npc.name] не может носить "+(plural?"их":"это")+"."));
 		}
 		if(tags.contains(ItemTag.FITS_TAIL_BODY) && clothingOwner.getLegConfiguration()!=LegConfiguration.TAIL) {
-			return new Value<>(false, UtilText.parse(clothingOwner,"The "+this.getName()+" "+(plural?"are":"is")+" only suitable for tailed bodies, and as such, [npc.name] cannot wear "+(plural?"them":"it")+"."));
+			return new Value<>(false, UtilText.parse(clothingOwner,""+this.getName()+" "+(plural?"являются":"есть")+" подходит только для тел с хвостом, поэтому [npc.name] не может носить "+(plural?"их":"это")+"."));
 		}
 		if(tags.contains(ItemTag.FITS_ARACHNID_BODY) && clothingOwner.getLegConfiguration()!=LegConfiguration.ARACHNID) {
-			return new Value<>(false, UtilText.parse(clothingOwner,"The "+this.getName()+" "+(plural?"are":"is")+" only suitable for arachnid bodies, and as such, [npc.name] cannot wear "+(plural?"them":"it")+"."));
+			return new Value<>(false, UtilText.parse(clothingOwner,""+this.getName()+" "+(plural?"являются":"есть")+" подходит только для паукообразных тел, поэтому [npc.name] не может носить "+(plural?"их":"это")+"."));
 		}
 		if(tags.contains(ItemTag.FITS_CEPHALOPOD_BODY) && clothingOwner.getLegConfiguration()!=LegConfiguration.CEPHALOPOD) {
-			return new Value<>(false, UtilText.parse(clothingOwner,"The "+this.getName()+" "+(plural?"are":"is")+" only suitable for cephalopod bodies, and as such, [npc.name] cannot wear "+(plural?"them":"it")+"."));
+			return new Value<>(false, UtilText.parse(clothingOwner,""+this.getName()+" "+(plural?"являются":"есть")+" подходит только для тел головоногих, поэтому [npc.name] не может носить "+(plural?"их":"это")+"."));
 		}
 		if(tags.contains(ItemTag.FITS_AVIAN_BODY) && clothingOwner.getLegConfiguration()!=LegConfiguration.AVIAN) {
-			return new Value<>(false, UtilText.parse(clothingOwner,"The "+this.getName()+" "+(plural?"are":"is")+" only suitable for avian bodies, and as such, [npc.name] cannot wear "+(plural?"them":"it")+"."));
+			return new Value<>(false, UtilText.parse(clothingOwner,""+this.getName()+" "+(plural?"являются":"есть")+" подходит только для тел птицеподобных, поэтому [npc.name] не может носить "+(plural?"их":"это")+"."));
 		}
 
 		if(tags.contains(ItemTag.ONLY_FITS_FERAL_ALL_BODY) && !clothingOwner.isFeral()) {
-			return new Value<>(false, UtilText.parse(clothingOwner,"The "+this.getName()+" "+(plural?"are":"is")+" only suitable for feral bodies, and as such, [npc.name] cannot wear "+(plural?"them":"it")+"."));
+			return new Value<>(false, UtilText.parse(clothingOwner,""+this.getName()+" "+(plural?"являются":"есть")+" подходит только для диких тел, поэтому [npc.name] не может носить "+(plural?"их":"это")+"."));
 		}
 		if(tags.contains(ItemTag.ONLY_FITS_FERAL_QUADRUPED_BODY) && (!clothingOwner.isFeral() || clothingOwner.getLegConfiguration()!=LegConfiguration.QUADRUPEDAL)) {
-			return new Value<>(false, UtilText.parse(clothingOwner,"The "+this.getName()+" "+(plural?"are":"is")+" only suitable for feral quadrupedal bodies, and as such, [npc.name] cannot wear "+(plural?"them":"it")+"."));
+			return new Value<>(false, UtilText.parse(clothingOwner,""+this.getName()+" "+(plural?"являются":"есть")+" подходит только для диких четвероногих тел, поэтому [npc.name] не может носить "+(plural?"их":"это")+"."));
 		}
 		if(tags.contains(ItemTag.ONLY_FITS_FERAL_ARACHNID_BODY) && (!clothingOwner.isFeral() || clothingOwner.getLegConfiguration()!=LegConfiguration.ARACHNID)) {
-			return new Value<>(false, UtilText.parse(clothingOwner,"The "+this.getName()+" "+(plural?"are":"is")+" only suitable for feral arachnid bodies, and as such, [npc.name] cannot wear "+(plural?"them":"it")+"."));
+			return new Value<>(false, UtilText.parse(clothingOwner,""+this.getName()+" "+(plural?"являются":"есть")+" подходит только для диких тел паукообразных, поэтому [npc.name] не может носить "+(plural?"их":"это")+"."));
 		}
 		if(tags.contains(ItemTag.ONLY_FITS_FERAL_AVIAN_BODY) && (!clothingOwner.isFeral() || clothingOwner.getLegConfiguration()!=LegConfiguration.AVIAN)) {
-			return new Value<>(false, UtilText.parse(clothingOwner,"The "+this.getName()+" "+(plural?"are":"is")+" only suitable for feral avian bodies, and as such, [npc.name] cannot wear "+(plural?"them":"it")+"."));
+			return new Value<>(false, UtilText.parse(clothingOwner,""+this.getName()+" "+(plural?"являются":"есть")+" подходит только для диких тел птицеподобных, поэтому [npc.name] не может носить "+(plural?"их":"это")+"."));
 		}
 		if(tags.contains(ItemTag.ONLY_FITS_FERAL_CEPHALOPOD_BODY) && (!clothingOwner.isFeral() || clothingOwner.getLegConfiguration()!=LegConfiguration.CEPHALOPOD)) {
-			return new Value<>(false, UtilText.parse(clothingOwner,"The "+this.getName()+" "+(plural?"are":"is")+" only suitable for feral cephalopod bodies, and as such, [npc.name] cannot wear "+(plural?"them":"it")+"."));
+			return new Value<>(false, UtilText.parse(clothingOwner,""+this.getName()+" "+(plural?"являются":"есть")+" подходит только для диких тел головоногих, поэтому [npc.name] не может носить "+(plural?"их":"это")+"."));
 		}
 		if(tags.contains(ItemTag.ONLY_FITS_FERAL_TAIL_BODY) && (!clothingOwner.isFeral() || clothingOwner.getLegConfiguration()!=LegConfiguration.TAIL)) {
-			return new Value<>(false, UtilText.parse(clothingOwner,"The "+this.getName()+" "+(plural?"are":"is")+" only suitable for feral tailed bodies, and as such, [npc.name] cannot wear "+(plural?"them":"it")+"."));
+			return new Value<>(false, UtilText.parse(clothingOwner,""+this.getName()+" "+(plural?"являются":"есть")+" подходит только для диких хвостатых тел, поэтому [npc.name] не может носить "+(plural?"их":"это")+"."));
 		}
 		if(tags.contains(ItemTag.ONLY_FITS_FERAL_LONG_TAIL_BODY) && (!clothingOwner.isFeral() || clothingOwner.getLegConfiguration()!=LegConfiguration.TAIL_LONG)) {
-			return new Value<>(false, UtilText.parse(clothingOwner,"The "+this.getName()+" "+(plural?"are":"is")+" only suitable for feral long-tailed bodies, and as such, [npc.name] cannot wear "+(plural?"them":"it")+"."));
+			return new Value<>(false, UtilText.parse(clothingOwner,""+this.getName()+" "+(plural?"являются":"есть")+" подходит только для диких длиннохвостых тел, поэтому [npc.name] не может носить "+(plural?"их":"это")+"."));
 		}
 		
 		if(tags.contains(ItemTag.FITS_ARM_WINGS_EXCLUSIVE) && !clothingOwner.getArmTypeTags().contains(BodyPartTag.ARM_WINGS)) {
-			return new Value<>(false, UtilText.parse(clothingOwner,"The "+this.getName()+" "+(plural?"are":"is")+" only suitable for arm-wings, and as such, [npc.name] cannot wear "+(plural?"them":"it")+"."));
+			return new Value<>(false, UtilText.parse(clothingOwner,""+this.getName()+" "+(plural?"являются":"есть")+" подходит только для крыло-рук, поэтому [npc.name] не может носить "+(plural?"их":"это")+"."));
 		}
 		if(tags.contains(ItemTag.FITS_FEATHERED_ARM_WINGS_EXCLUSIVE) && !clothingOwner.getArmTypeTags().contains(BodyPartTag.ARM_WINGS_FEATHERED)) {
-			return new Value<>(false, UtilText.parse(clothingOwner,"The "+this.getName()+" "+(plural?"are":"is")+" only suitable for feathered arm-wings, and as such, [npc.name] cannot wear "+(plural?"them":"it")+"."));
+			return new Value<>(false, UtilText.parse(clothingOwner,""+this.getName()+" "+(plural?"являются":"есть")+" подходит только для пернатых крыльев, поэтому [npc.name] не может надеть "+(plural?"их":"это")+"."));
 		}
 		if(tags.contains(ItemTag.FITS_LEATHERY_ARM_WINGS_EXCLUSIVE) && !clothingOwner.getArmTypeTags().contains(BodyPartTag.ARM_WINGS_LEATHERY)) {
-			return new Value<>(false, UtilText.parse(clothingOwner,"The "+this.getName()+" "+(plural?"are":"is")+" only suitable for leathery arm-wings, and as such, [npc.name] cannot wear "+(plural?"them":"it")+"."));
+			return new Value<>(false, UtilText.parse(clothingOwner,""+this.getName()+" "+(plural?"являются":"есть")+" подходит только для кожаных крыльев, поэтому [npc.name] не может надеть "+(plural?"их":"это")+"."));
 		}
 		if(tags.contains(ItemTag.FITS_HOOFS_EXCLUSIVE) && clothingOwner.getLegType().getFootType()!=FootType.HOOFS) {
-			return new Value<>(false, UtilText.parse(clothingOwner,"The "+this.getName()+" "+(plural?"are":"is")+" only suitable for hoofs, and as such, [npc.name] cannot wear "+(plural?"them":"it")+"."));
+			return new Value<>(false, UtilText.parse(clothingOwner,""+this.getName()+" "+(plural?"являются":"есть")+" подходит только для копыт, поэтому [npc.name] не может надеть "+(plural?"их":"это")+"."));
 		}
 		if(tags.contains(ItemTag.FITS_TALONS_EXCLUSIVE) && clothingOwner.getLegType().getFootType()!=FootType.TALONS) {
-			return new Value<>(false, UtilText.parse(clothingOwner,"The "+this.getName()+" "+(plural?"are":"is")+" only suitable for talons, and as such, [npc.name] cannot wear "+(plural?"them":"it")+"."));
+			return new Value<>(false, UtilText.parse(clothingOwner,""+this.getName()+" "+(plural?"являются":"есть")+" подходит только для когтей, поэтому [npc.name] не может надеть "+(plural?"их":"это")+"."));
 		}
 		if(clothingOwner.hasPenisIgnoreDildo() && tags.contains(ItemTag.REQUIRES_NO_PENIS)) {
-			return new Value<>(false, UtilText.parse(clothingOwner, "[npc.NameHasFull] a penis, which is blocking [npc.herHim] from wearing the "+this.getName()+"!"));
+			return new Value<>(false, UtilText.parse(clothingOwner, "у [npc.NameHasFull] есть пенис, который мешает [npc.herHim] надеть "+this.getName()+"!"));
 		}
 		if(clothingOwner.hasDildo() && tags.contains(ItemTag.REQUIRES_NO_PENIS)) {
-			return new Value<>(false, UtilText.parse(clothingOwner, "[npc.NameHasFull] equipped a dildo, which is blocking [npc.herHim] from wearing the "+this.getName()+"!"));
+			return new Value<>(false, UtilText.parse(clothingOwner, "[npc.NameHasFull] использует дилдо, что мешает [npc.herHim] надеть "+this.getName()+"!"));
 		}
 		if(!clothingOwner.hasPenisIgnoreDildo() && tags.contains(ItemTag.REQUIRES_PENIS)) {
-			return new Value<>(false, UtilText.parse(clothingOwner, "[npc.Name] [npc.do]n't have a penis, so [npc.she] can't wear the "+this.getName()+"!"));
+			return new Value<>(false, UtilText.parse(clothingOwner, "у [npc.Name] [npc.do] нет пениса, так что [npc.she] не может надеть "+this.getName()+"!"));
 		}
 		if(clothingOwner.hasVagina() && tags.contains(ItemTag.REQUIRES_NO_VAGINA)) {
-			return new Value<>(false, UtilText.parse(clothingOwner, "[npc.NameHasFull] a vagina, which is blocking [npc.herHim] from wearing the "+this.getName()+"!"));
+			return new Value<>(false, UtilText.parse(clothingOwner, "у [npc.NameHasFull] есть вагина, которая мешает [npc.herHim] надеть "+this.getName()+"!"));
 		}
 		if(!clothingOwner.hasVagina() && tags.contains(ItemTag.REQUIRES_VAGINA)) {
-			return new Value<>(false, UtilText.parse(clothingOwner, "[npc.Name] [npc.do]n't have a vagina, so [npc.she] can't wear the "+this.getName()+"!"));
+			return new Value<>(false, UtilText.parse(clothingOwner, "у [npc.Name] [npc.do] нет вагины, так что [npc.she] не может надеть "+this.getName()+"!"));
 		}
 		if(!clothingOwner.isBreastFuckableNipplePenetration() && tags.contains(ItemTag.REQUIRES_FUCKABLE_NIPPLES)) {
-			return new Value<>(false, UtilText.parse(clothingOwner, "[npc.NamePos] nipples are not fuckable, so [npc.she] can't wear the "+this.getName()+"!"));
+			return new Value<>(false, UtilText.parse(clothingOwner, "соски [npc.NamePos] непригодны для секса, поэтому [npc.she] не может надеть "+this.getName()+"!"));
 		}
 		if(clothingOwner.getBody().getBodyMaterial().isRequiresPiercing()) {
 			if(slot==InventorySlot.PIERCING_EAR && !clothingOwner.isPiercedEar()){
-				return new Value<>(false, UtilText.parse(clothingOwner, "[npc.NamePos] ears are not pierced, so [npc.she] can't wear the "+this.getName()+"!"));
+				return new Value<>(false, UtilText.parse(clothingOwner, "У [npc.NamePos] не проколоты уши, поэтому [npc.she] не может надеть "+this.getName()+"!"));
 		
 			} else if(slot==InventorySlot.PIERCING_LIP && !clothingOwner.isPiercedLip()){
-				return new Value<>(false, UtilText.parse(clothingOwner, "[npc.NamePos] lips are not pierced, so [npc.she] can't wear the "+this.getName()+"!"));
+				return new Value<>(false, UtilText.parse(clothingOwner, "У [npc.NamePos] не проколоты губы, поэтому [npc.she] не может надеть "+this.getName()+"!"));
 				
 			} else if(slot==InventorySlot.PIERCING_NIPPLE && !clothingOwner.isPiercedNipple()){
-				return new Value<>(false, UtilText.parse(clothingOwner, "[npc.NamePos] nipples are not pierced, so [npc.she] can't wear the "+this.getName()+"!"));
+				return new Value<>(false, UtilText.parse(clothingOwner, "У [npc.NamePos] не проколоты соски, поэтому [npc.she] не может надеть "+this.getName()+"!"));
 				
 			} else if(slot==InventorySlot.PIERCING_NOSE && !clothingOwner.isPiercedNose()){
-				return new Value<>(false, UtilText.parse(clothingOwner, "[npc.NamePos] nose is not pierced, so [npc.she] can't wear the "+this.getName()+"!"));
+				return new Value<>(false, UtilText.parse(clothingOwner, "У [npc.NamePos] не проколот нос, поэтому [npc.she] не может надеть "+this.getName()+"!"));
 				
 			} else if(slot==InventorySlot.PIERCING_PENIS && !clothingOwner.isPiercedPenis()){
-				return new Value<>(false, UtilText.parse(clothingOwner, "[npc.NamePos] penis is not pierced, so [npc.she] can't wear the "+this.getName()+"!"));
+				return new Value<>(false, UtilText.parse(clothingOwner, "У [npc.NamePos] не проколот член, поэтому [npc.she] не может надеть "+this.getName()+"!"));
 				
 			} else if(slot==InventorySlot.PIERCING_STOMACH && !clothingOwner.isPiercedNavel()){
-				return new Value<>(false, UtilText.parse(clothingOwner, "[npc.NamePos] navel is not pierced, so [npc.she] can't wear the "+this.getName()+"!"));
+				return new Value<>(false, UtilText.parse(clothingOwner, "У [npc.NamePos] не проколот пупок, поэтому [npc.she] не может надеть "+this.getName()+"!"));
 				
 			} else if(slot==InventorySlot.PIERCING_TONGUE && !clothingOwner.isPiercedTongue()){
-				return new Value<>(false, UtilText.parse(clothingOwner, "[npc.NamePos] tongue is not pierced, so [npc.she] can't wear the "+this.getName()+"!"));
+				return new Value<>(false, UtilText.parse(clothingOwner, "У [npc.NamePos] не проколот язык, поэтому [npc.she] не может надеть "+this.getName()+"!"));
 				
 			} else if(slot==InventorySlot.PIERCING_VAGINA && !clothingOwner.isPiercedVagina()){
-				return new Value<>(false, UtilText.parse(clothingOwner, "[npc.NamePos] vagina is not pierced, so [npc.she] can't wear the "+this.getName()+"!"));
+				return new Value<>(false, UtilText.parse(clothingOwner, "У [npc.NamePos] не проколота вагина, поэтому [npc.she] не может надеть "+this.getName()+"!"));
 			}
 		}
 		if(slot==InventorySlot.PIERCING_PENIS && !clothingOwner.hasPenisIgnoreDildo()){
-			return new Value<>(false, UtilText.parse(clothingOwner, "[npc.Name] [npc.do] not have a penis, so [npc.she] can't wear the "+this.getName()+"!"));
+			return new Value<>(false, UtilText.parse(clothingOwner, "У [npc.Name] [npc.do] нет члена, поэтому [npc.she] не может надеть "+this.getName()+"!"));
 			
 		} else if(slot==InventorySlot.PIERCING_VAGINA && !clothingOwner.hasVagina()){
-			return new Value<>(false, UtilText.parse(clothingOwner, "[npc.Name] [npc.do] not have a vagina, so [npc.she] can't wear the "+this.getName()+"!"));
+			return new Value<>(false, UtilText.parse(clothingOwner, "У [npc.Name] [npc.do] нет вагины, поэтому [npc.she] не может надеть "+this.getName()+"!"));
 		}
 		
 		if (slot == InventorySlot.WINGS && clothingOwner.getWingType()==WingType.NONE) {
-			return new Value<>(false, UtilText.parse(clothingOwner, "[npc.Name] [npc.do] not have any wings, so [npc.she] can't wear the "+this.getName()+"!"));
+			return new Value<>(false, UtilText.parse(clothingOwner, "У [npc.Name] [npc.do] нет крыльев, поэтому [npc.she] не может надеть "+this.getName()+"!"));
 		}
 		if (slot == InventorySlot.HORNS && clothingOwner.getHornType().equals(HornType.NONE)) {
-			return new Value<>(false, UtilText.parse(clothingOwner, "[npc.Name] [npc.do] not have any horns, so [npc.she] can't wear the "+this.getName()+"!"));
+			return new Value<>(false, UtilText.parse(clothingOwner, "У [npc.Name] [npc.do] нет рогов, поэтому [npc.she] не может надеть "+this.getName()+"!"));
 		}
 		if (slot == InventorySlot.TAIL && clothingOwner.getTailType()==TailType.NONE) {
-			return new Value<>(false, UtilText.parse(clothingOwner, "[npc.Name] [npc.do] not have a tail, so [npc.she] can't wear the "+this.getName()+"!"));
+			return new Value<>(false, UtilText.parse(clothingOwner, "У [npc.Name] [npc.do] нет хвоста, поэтому [npc.she] не может надеть "+this.getName()+"!"));
 		}
 		return new Value<>(true, "");
 	}

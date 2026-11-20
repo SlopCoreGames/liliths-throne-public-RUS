@@ -31,7 +31,7 @@ import com.lilithsthrone.utils.colours.PresetColour;
 public class CombatMove {
 
     public static final AbstractCombatMove ITEM_USAGE = new AbstractCombatMove(CombatMoveCategory.SPECIAL,
-            "use item",
+            "использовать предмет",
             0,
             1,
             CombatMoveType.DEFEND,
@@ -62,7 +62,7 @@ public class CombatMove {
     	public String getName(int turnIndex, GameCharacter source) {
         	Value<GameCharacter, AbstractItem> itemValue = getItem(turnIndex, source);
         	
-    		return Util.capitaliseSentence(itemValue.getValue().getItemType().getUseName()+" the "+itemValue.getValue().getName());
+    		return Util.capitaliseSentence(itemValue.getValue().getItemType().getUseName()+""+itemValue.getValue().getName());
     	}
     	
     	@Override
@@ -72,19 +72,19 @@ public class CombatMove {
 
         @Override
         public Value<Boolean, String> isAvailableFromSpecialCase(GameCharacter source) {
-            return new Value<>(true, "Available to everyone as a basic move.");
+            return new Value<>(true, "Доступно всем как базовая атака.");
         }
 
         @Override
         public String getPrediction(int turnIndex, GameCharacter source, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
         	Value<GameCharacter, AbstractItem> itemValue = getItem(turnIndex, source);
             
-            return "[style.colourMinorGood("+Util.capitaliseSentence(UtilText.parse(itemValue.getValue().getItemType().getUseName()))+")] the "+itemValue.getValue().getName()+".";
+            return "[style.colourMinorGood("+Util.capitaliseSentence(UtilText.parse(itemValue.getValue().getItemType().getUseName()))+")] слишком  "+itemValue.getValue().getName()+".";
         }
 
         @Override
         public String getDescription(int turnIndex, GameCharacter source) {
-            return "Use an item from your inventory.";
+            return "Использовать предмет из вашего инвентаря.";
         }
 
         @Override
@@ -112,7 +112,7 @@ public class CombatMove {
         
         @Override
     	public List<String> getCritRequirements(GameCharacter source, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
-        	return Util.newArrayListOfValues("This move can never crit.");
+        	return Util.newArrayListOfValues("Этот прием никогда не наносит критический удар.");
         }
 
         @Override
@@ -233,10 +233,10 @@ public class CombatMove {
 	            @Override
 	            public Value<Boolean, String> isAvailableFromSpecialCase(GameCharacter source) {
 	                if(source.hasSpell(this.getAssociatedSpell())) {
-	                    return new Value<>(true, "This is a spell available to those who have learned it.");
+	                    return new Value<>(true, "Это заклинание, доступное тем, кто его выучил.");
 	                    
 	                } else if(source.getExtraSpells().contains(this.getAssociatedSpell())) {
-	                    return new Value<>(true, "This spell is available because of your equipped weapon.");
+	                    return new Value<>(true, "Это заклинание доступно благодаря вашему экипированному оружию.");
 	                    
 	                } else {
 	                    return null;
@@ -298,7 +298,7 @@ public class CombatMove {
 	                String reason = super.isUsable(turnIndex, source, target, enemies, allies);
 	                if(reason == null) {
 	                    if((getAssociatedSpell().getSpellSchool()!=SpellSchool.FIRE || !source.hasStatusEffect(StatusEffect.FIRE_MANA_BURN)) && source.getMana()<getAssociatedSpell().getModifiedCost(source)) {
-	                        reason = "Not enough aura to cast this spell!";
+	                        reason = "Недостаточно ауры, чтобы сотворить это заклинание!";
 	                    }
 	                }
 	                return reason;

@@ -16,13 +16,13 @@ import com.lilithsthrone.utils.colours.PresetColour;
  */
 public enum CombatMoveType {
 
-    ATTACK("Attack", PresetColour.DAMAGE_TYPE_PHYSICAL),
-    DEFEND("Defend", PresetColour.SPELL_SCHOOL_WATER),
-    TEASE("Tease", PresetColour.GENERIC_SEX),
-    SPELL("Spell", PresetColour.GENERIC_ARCANE),
-	POWER("Power", PresetColour.GENERIC_ARCANE),
+    ATTACK("Атаковать", PresetColour.DAMAGE_TYPE_PHYSICAL),
+    DEFEND("Защита", PresetColour.SPELL_SCHOOL_WATER),
+    TEASE("Дразнить", PresetColour.GENERIC_SEX),
+    SPELL("Заклинание", PresetColour.GENERIC_ARCANE),
+	POWER("Власть", PresetColour.GENERIC_ARCANE),
 //    SKILL("Skill", PresetColour.GENERIC_GOOD),
-    ATTACK_DEFEND("Defensive Attack", PresetColour.SPELL_SCHOOL_WATER, new ArrayList<>(Arrays.asList(CombatMoveType.ATTACK, CombatMoveType.DEFEND)));
+    ATTACK_DEFEND("Оборонительная атака", PresetColour.SPELL_SCHOOL_WATER, new ArrayList<>(Arrays.asList(CombatMoveType.ATTACK, CombatMoveType.DEFEND)));
 
     private String name;
     private List<CombatMoveType> countsAsList;

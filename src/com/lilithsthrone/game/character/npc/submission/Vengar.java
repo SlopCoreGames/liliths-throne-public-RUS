@@ -81,7 +81,7 @@ public class Vengar extends NPC {
 	}
 	
 	public Vengar(boolean isImported) {
-		super(isImported, new NameTriplet("Vengar"), "Ironfist",
+		super(isImported, new NameTriplet("Венгар"), "Железный Кулак",
 				"",
 				27, Month.JUNE, 2,
 				25, Gender.M_P_MALE, Subspecies.RAT_MORPH, RaceStage.GREATER,
@@ -351,12 +351,10 @@ public class Vengar extends NPC {
 		StringBuilder sb = new StringBuilder();
 		
 		if(this.getHomeLocationPlace().getPlaceType()==PlaceType.GAMBLING_DEN_TRADER) {
-			sb.append("While at one time he was the leader of a ruthless criminal gang, Vengar now finds himself at the mercy of his ex-girlfriend, Roxy."
-					+ " Thoroughly subdued and hopelessly addicted to her pussy, this once-proud rat-boy now finds himself doing anything his abusive ex demands of him.");
+			sb.append("Если когда-то он был предводителем беспощадной преступной банды, то теперь Венгар оказался во власти своей бывшей девушки, Рокси. Полностью покоренный и безнадежно зависимый от её киски, этот некогда гордый крыс-морф теперь готов на всё, чего потребует от него деспотичная бывшая.");
 			
 		} else {
-			sb.append("Strong, scarred, and with an almost-perpetual snarl on his face, Vengar strikes the very sort of figure that's needed to ensure the unwavering loyalty of several dozen criminal rat-morphs."
-					+ " Always ready to back up his words with action, this rat-boy is considered to be one of the most dangerous inhabitants of Submission.");
+			sb.append("Сильный, покрытый шрамами и с почти вечной оскалом на лице, Венгар — именно тот тип личности, который способен обеспечить непоколебимую верность нескольких десятков преступных крыс-морфов. Всегда готовый подкрепить свои слова делом, этот крыс-морф считается одним из самых опасных обитателей Submission.");
 		}
 		
 		return sb.toString();

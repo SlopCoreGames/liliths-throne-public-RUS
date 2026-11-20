@@ -137,7 +137,7 @@ public class PlayerCharacter extends GameCharacter implements XMLSaving {
 
 		this.setSexualOrientation(SexualOrientation.AMBIPHILIC);
 		
-		title = "The Human";
+		title = "Человек";
 		
 		karma = 0;
 		
@@ -782,7 +782,7 @@ public class PlayerCharacter extends GameCharacter implements XMLSaving {
 	
 	@Override
 	public String getId() {
-		return "PlayerCharacter";//-"+Main.game.getNpcTally();
+		return "Игрок";//-"+Main.game.getNpcTally();
 	}
 	
 	@Override
@@ -801,9 +801,7 @@ public class PlayerCharacter extends GameCharacter implements XMLSaving {
 			return ""; // This isn't displayed anywhere before the game starts for real.
 		} else {
 			if(description==null || description.isEmpty()) {
-				return "Having been pulled into an enchanted mirror in your aunt Lily's museum, you woke up to find yourself in another world."
-					+ " By a stroke of good fortune, one of the first people you met was Lilaya; this world's version of your aunt."
-					+ " Having convinced her that your story is true, you're now working towards finding a way to get back to your old world.";
+				return "Попав в зачарованное зеркало в музее вашей тети Лилайи, вы очнулись в совершенно ином мире. По счастливой случайности одним из первых людей, которых вы встретили, оказалась Лилайя — местная версия вашей тети. Убедив её в правдивости вашей истории, теперь вы ищете способ вернуться в свой прежний мир.";
 			} else {
 				return UtilText.parse(this, description);
 			}
@@ -815,12 +813,12 @@ public class PlayerCharacter extends GameCharacter implements XMLSaving {
 		if(this.getWorldsVisited()!=null && !this.getWorldsVisited().contains(worldLocation)) {
 			this.getWorldsVisited().add(worldLocation);
 			if(Main.game.isStarted()) {
-				Main.game.addEvent(new EventLogEntry("[style.colourExcellent(Discovered)]", Util.capitaliseSentence(worldLocation.getName())), false);
+				Main.game.addEvent(new EventLogEntry("[style.colourExcellent(Обнаружено)]", Util.capitaliseSentence(worldLocation.getName())), false);
 			}
 		}
 		
 		if(Main.game.isStarted() && worldLocation!=this.getWorldLocation()) {
-			Main.game.addEvent(new EventLogEntry("[style.colourMinorGood(Entered)]", Util.capitaliseSentence(worldLocation.getName())), false);
+			Main.game.addEvent(new EventLogEntry("[style.colourMinorGood(Вошел)]", Util.capitaliseSentence(worldLocation.getName())), false);
 		}
 
 		if(Main.game.isStarted() && Main.game.getActiveWorld().getCell(this.getLocation()).getPlace().isItemsDisappear()) {
@@ -878,9 +876,9 @@ public class PlayerCharacter extends GameCharacter implements XMLSaving {
 	public String getPetName(GameCharacter target) {
 		if(target instanceof Lyssieth && this.getRace()==Race.DEMON) {
 			if(this.hasFetish(Fetish.FETISH_INCEST)) {
-				return "mommy";
+				return "мамочка";
 			} else {
-				return "mother";
+				return "мать";
 			}
 		}
 		return super.getPetName(target);
@@ -1007,8 +1005,7 @@ public class PlayerCharacter extends GameCharacter implements XMLSaving {
 //		removeQuest(questLine);
 		questsFailed.put(questLine, questFail);
 
-		return "<p style='text-align:center;'>"
-					+ "[style.boldBad(Quest Failed - " + questLine.getName() + ")]"
+		return "<p style='text-align:center;'>[style.boldBad(Квест провален - " + questLine.getName() + ")]"
 				+ "</p>";
 	}
 
@@ -1036,10 +1033,10 @@ public class PlayerCharacter extends GameCharacter implements XMLSaving {
 		
 		quests.get(questLine).add(0, quest);
 		
-		Main.game.addEvent(new EventLogEntry("[style.colourGood(Optional Task Complete)]", quest.getName()), false);
+		Main.game.addEvent(new EventLogEntry("[style.colourGood(Дополнительное задание выполнено)]", quest.getName()), false);
 		return "<p style='text-align:center;'>"
-				+ "<b style='color:" + questLine.getType().getColour().toWebHexString() + ";'>Quest - " + questLine.getName() + "</b><br/>"
-				+ "<b style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>Optional Task Completed: " + quest.getName() + "</b><br/>"
+				+ "<b style='color:" + questLine.getType().getColour().toWebHexString() + ";'>Квест - " + questLine.getName() + "</b><br/>"
+				+ "<b style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>Выполнено дополнительное задание: " + quest.getName() + "</b><br/>"
 				+ experienceUpdate;
 	}
 	
@@ -1068,19 +1065,17 @@ public class PlayerCharacter extends GameCharacter implements XMLSaving {
 			quests.get(questLine).add(quest);
 			
 			if (questLine.getQuestTree().getFirstNodeWithData(quest).getChildren().isEmpty()) { // QuestLine complete (No more children in the tree)
-				Main.game.addEvent(new EventLogEntry("[style.colourExcellent(Quest Complete)]", questLine.getName()), false);
+				Main.game.addEvent(new EventLogEntry("[style.colourExcellent(Квест завершен)]", questLine.getName()), false);
 				return "<p style='text-align:center;'>"
-						+ "<b style='color:" + questLine.getType().getColour().toWebHexString() + ";'>Quest - " + questLine.getName() + "</b><br/>"
-						+ "<b style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>Task Completed</b><b> - "+currentQuest.getName()+"</b><br/>"
-						+ "<b>All Tasks Completed!</b></p>"
+						+ "<b style='color:" + questLine.getType().getColour().toWebHexString() + ";'>Квест - " + questLine.getName() + "</b><br/>"
+						+ "<b style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>Задание выполнено</b><b> - "+currentQuest.getName()+"</b><br/><b>Все задания выполнены!</b></p>"
 						+ experienceUpdate;
 				
 			} else {
-				Main.game.addEvent(new EventLogEntry("[style.colourMinorGood(New Task)]", quest.getName()), false);
+				Main.game.addEvent(new EventLogEntry("[style.colourMinorGood(Новое задание)]", quest.getName()), false);
 				return "<p style='text-align:center;'>"
-						+ "<b style='color:" + questLine.getType().getColour().toWebHexString() + ";'>Quest - " + questLine.getName() + "</b><br/>"
-						+ "<b style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>Task Completed - "+currentQuest.getName()+"</b><br/>"
-						+ "<b>New Task - " + quest.getName() + "</b></p>"
+						+ "<b style='color:" + questLine.getType().getColour().toWebHexString() + ";'>Квест - " + questLine.getName() + "</b><br/>"
+						+ "<b style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>Задание выполнено - "+currentQuest.getName()+"</b><br/><b>Новое задание - " + quest.getName() + "</b></p>"
 						+ experienceUpdate;
 			}
 			
@@ -1088,11 +1083,10 @@ public class PlayerCharacter extends GameCharacter implements XMLSaving {
 			quests.put(questLine, new ArrayList<>());
 			quests.get(questLine).add(quest);
 			
-			Main.game.addEvent(new EventLogEntry("[style.colourGood(Quest Started)]", questLine.getName()), false);
+			Main.game.addEvent(new EventLogEntry("[style.colourGood(Квест начат)]", questLine.getName()), false);
 			
 			return "<p style='text-align:center;'>"
-					+ "<b style='color:" + questLine.getType().getColour().toWebHexString() + ";'>New Quest - " + questLine.getName() + "</b><br/>"
-					+ "<b>New Task - " + quest.getName() + "</b></p>";
+					+ "<b style='color:" + questLine.getType().getColour().toWebHexString() + ";'>Новый квест - " + questLine.getName() + "</b><br/><b>Новое задание - " + quest.getName() + "</b></p>";
 		}
 		
 	}
@@ -1404,7 +1398,7 @@ public class PlayerCharacter extends GameCharacter implements XMLSaving {
 		return "<p>"
 				+ UtilText.parse(this,
 						UtilText.returnStringAtRandom(
-						"Concentrating on harnessing the power of your arcane aura, you thrust your [pc.arm] into mid air and cast a spell!"))
+						"Сосредоточившись на обуздании силы своей арканной ауры, вы выбрасываете [pc.arm] в воздух и произносите заклинание!"))
 			+ "</p>";
 	}
 
@@ -1417,46 +1411,40 @@ public class PlayerCharacter extends GameCharacter implements XMLSaving {
 			if(this.isFeminine()) {
 				return UtilText.parse(target,
 						UtilText.returnStringAtRandom(
-								"You put on a smouldering look, and as your [pc.eyes] meet [npc.namePos], you project an extremely lewd moan into [npc.her] head,"
-										+ " [pc.thought(~Aaah!~ "
+								"Вы бросаете томный взгляд, и когда ваши [pc.eyes] встречаются с [npc.namePos], вы посылаете крайне похотливый стон прямо в голову [npc.her], [pc.thought(~Ааах!~ "
 											+(this.hasVagina()
-													?"You're making me so wet!"
+													?"Ты так меня возбуждаешь, я вся промокла!"
 													:this.hasPenis()
-														?"You're getting me so hard!"
-														:"You're turning me on so much!")+")]",
-								"You lock your [pc.eyes] with [npc.namePos], and, putting on your most innocent look as you pout at [npc.herHim], you project an echoing moan deep into [npc.her] mind,"
-									+ " [pc.thought("+
+														?"У меня уже так встает от тебя!"
+														:"Ты так сильно меня заводишь!")+")]",
+								"Вы замыкаете свой [pc.eyes] взглядом с [npc.namePos], и, нацепив самый невинный вид и надув губки перед [npc.herHim], вы посылаете эхом отдающийся стон глубоко в разум [npc.her], [pc.thought("+
 											(this.hasVagina()
-													?"~Mmm!~ Fuck me! ~Aaa!~ My pussy's wet and ready for you!"
+													?"~Ммм!~ Трахни меня! ~Ааа!~ Моя киска мокрая и готова к тебе!"
 													:this.hasPenis()
-														?"~Mmm!~ I can't wait to fuck you! ~Aaa!~ You're going to love my cock!"
-														:"~Mmm!~ Fuck me! ~Aaa!~ I need you so badly!")+")]",
+														?"~Ммм!~ Не терпится трахнуть тебя! ~Ааа!~ Ты будешь в восторге от моего члена!"
+														:"~Ммм!~ Трахни меня! ~Ааа!~ Ты мне так нужна!")+")]",
 								(this.hasStatusEffect(StatusEffect.TELEPATHIC_COMMUNICATION_POWER_OF_SUGGESTION)
 										|| this.hasStatusEffect(StatusEffect.TELEPATHIC_COMMUNICATION_PROJECTED_TOUCH)
-										?"You pout innocently at [npc.name], before blowing [npc.herHim] a wet kiss."
-												+ " As you straighten back up, you project the feeling of a ghostly pair of wet lips pressing against [npc.her] cheek."
+										?"Вы невинно дуете губки, глядя на [npc.name], а затем посылаете [npc.herHim] влажный воздушный поцелуй. Выпрямившись, вы заставляете [npc.her] почувствовать прикосновение призрачных влажных губ к своей щеке."
 										:"")));
 			} else {
 				return UtilText.parse(target,
 						UtilText.returnStringAtRandom(
-								"You put on a confident look, and as your [pc.eyes] meet [npc.namePos], you project an extremely lewd groan into [npc.her] head,"
-									+ " [pc.thought(~Mmm!~ "
+								"Вы принимаете уверенный вид, и когда ваши [pc.eyes] встречаются с [npc.namePos], вы посылаете крайне похотливый стон прямо в голову [npc.her], [pc.thought(~Ммм!~ "
 											+(this.hasVagina()
-													?"You're making me so wet!"
+													?"Ты так меня возбуждаешь, я вся промокла!"
 													:this.hasPenis()
-														?"You're getting me so hard!"
-														:"You're turning me on so much!")+")]",
-								"You lock your [pc.eyes] with [npc.namePos], and, throwing [npc.herHim] a charming smile, you project an echoing groan deep into [npc.her] mind,"
-									+ " [pc.thought("+
+														?"У меня уже так встает от тебя!"
+														:"Ты так сильно меня заводишь!")+")]",
+								"Вы впиваетесь взглядом [pc.eyes] в [npc.namePos] и, одарив [npc.herHim] очаровательной улыбкой, направляете эхом отдающийся стон глубоко в разум [npc.her], [pc.thought("+
 											(this.hasVagina()
-													?"~Mmm!~ Fuck me! ~Aaa!~ My pussy's wet and ready for you!"
+													?"~Ммм!~ Трахни меня! ~Ааа!~ Моя киска мокрая и готова к тебе!"
 													:this.hasPenis()
-														?"~Mmm!~ I can't wait to fuck you! You're going to love my cock!"
-														:"~Mmm!~ I can't wait to have some fun with you!")+")]",
+														?"~Ммм!~ Не терпится трахнуть тебя! Ты будешь в восторге от моего члена!"
+														:"~Ммм!~ Не терпится немного развлечься с тобой!")+")]",
 								(this.hasStatusEffect(StatusEffect.TELEPATHIC_COMMUNICATION_POWER_OF_SUGGESTION)
 										|| this.hasStatusEffect(StatusEffect.TELEPATHIC_COMMUNICATION_PROJECTED_TOUCH)
-										?"You throw [npc.name] a charming smile, before winking at [npc.herHim] and striking a heroic pose."
-												+ " As you straighten back up, you project the feeling of a ghostly pair of arms pulling [npc.herHim] into a strong, confident embrace."
+										?"Вы одариваете [npc.name] очаровательной улыбкой, подмигиваете [npc.herHim] и принимаете героическую позу. Выпрямившись, вы заставляете [npc.herHim] почувствовать, как призрачные руки вовлекают их в крепкие, уверенные объятия."
 										:"")));
 			}
 		}
@@ -1464,20 +1452,20 @@ public class PlayerCharacter extends GameCharacter implements XMLSaving {
 		if(this.isFeminine()) {
 			description = UtilText.parse(target,
 					UtilText.returnStringAtRandom(
-					"You blow a kiss at [npc.name] and wink suggestively at [npc.herHim].",
-					"Biting your lip and putting on your most smouldering look, you run your hands slowly up your inner thighs.",
-					"As you give [npc.name] your most innocent look, you blow [npc.herHim] a little kiss.",
-					"Turning around, you let out a playful giggle as you give your [pc.ass+] a slap.",
-					"You slowly run your hands up the length of your body, before pouting at [npc.name]."));
+					"Вы посылаете [npc.name] воздушный поцелуй и многозначительно подмигиваете [npc.herHim].",
+					"Прикусив губу и бросив на него самый томный взгляд, ты медленно ведешь руками по внутренней стороне своих бедер.",
+					"Одарив [npc.name] самым невинным взглядом, ты посылаешь [npc.herHim] воздушный поцелуй.",
+					"Развернувшись, ты игриво хихикаешь и отвешиваешь своему [pc.ass+] звонкую пощечину.",
+					"Ты медленно ведешь руками вверх по своему телу, а затем капризно дуешь губками, глядя на [npc.name]."));
 			
 		} else {
 			description = UtilText.parse(target,
 					UtilText.returnStringAtRandom(
-					"You blow a kiss at [npc.name] and wink suggestively at [npc.herHim].",
-					"Smiling confidently at [npc.name], you slowly run your hands up your inner thighs.",
-					"As you give [npc.name] your most seductive look, you blow [npc.herHim] a little kiss.",
-					"Turning around, you let out a playful laugh as you give your [pc.ass+] a slap.",
-					"You try to look as commanding as possible as you smirk playfully at [npc.name]."));
+					"Вы посылаете [npc.name] воздушный поцелуй и многозначительно подмигиваете [npc.herHim].",
+					"Уверенно улыбаясь [npc.name], ты медленно ведешь руками по внутренней стороне своих бедер.",
+					"Одарив [npc.name] самым соблазнительным взглядом, ты посылаешь [npc.herHim] воздушный поцелуй.",
+					"Развернувшись, ты игриво смеешься и отвешиваешь своему [pc.ass+] звонкую пощечину.",
+					"Ты стараешься выглядеть как можно властнее, игриво ухмыляясь [npc.name]."));
 		}
 
 		return description;
@@ -2037,8 +2025,8 @@ public class PlayerCharacter extends GameCharacter implements XMLSaving {
 		
 		return UtilText.parse(characterPenetrated, this,
 				(characterPenetrated.equals(this)
-						?UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] taken [npc2.her] own penile virginity!")
-						:UtilText.formatVirginityLoss("[npc.Name] [npc.has] taken [npc2.namePos] penile virginity!"))
+						?UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] лишил(а) [npc2.her] собственной пенильной девственности!")
+						:UtilText.formatVirginityLoss("[npc.Name] [npc.has] лишил(а) [npc2.namePos] пенильной девственности!"))
 				+getVirginityExperienceDescription(characterPenetrated));
 	}
 
@@ -2050,8 +2038,8 @@ public class PlayerCharacter extends GameCharacter implements XMLSaving {
 		
 		return UtilText.parse(this, characterPenetrating,
 				(this.equals(characterPenetrating)
-						?UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] taken [npc2.her] own nipple virginity!")
-						:UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] taken [npc.namePos] nipple virginity!"))
+						?UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] лишились девственности в собственных [npc2.her]!")
+						:UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] лишились девственности в [npc.namePos]!"))
 				+getVirginityExperienceDescription(characterPenetrating));
 	}
 
@@ -2063,8 +2051,8 @@ public class PlayerCharacter extends GameCharacter implements XMLSaving {
 		
 		return UtilText.parse(this, characterPenetrating,
 				(this.equals(characterPenetrating)
-						?UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] taken [npc2.her] own [npc2.crotchNipple] virginity!")
-						:UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] taken [npc.namePos] [npc.crotchNipple] virginity!"))
+						?UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] отняли [npc2.her] собственную [npc2.crotchNipple] девственность!")
+						:UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] лишились [npc.namePos] [npc.crotchNipple] девственности!"))
 				+getVirginityExperienceDescription(characterPenetrating));
 	}
 
@@ -2076,8 +2064,8 @@ public class PlayerCharacter extends GameCharacter implements XMLSaving {
 		
 		return UtilText.parse(this, characterPenetrating,
 				(this.equals(characterPenetrating)
-						?UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] taken [npc2.her] own urethral virginity!")
-						:UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] taken [npc.namePos] urethral virginity!"))
+						?UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] лишились девственности в собственном [npc2.her]!")
+						:UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] лишились девственности в [npc.namePos]!"))
 				+getVirginityExperienceDescription(characterPenetrating));
 	}
 
@@ -2089,8 +2077,8 @@ public class PlayerCharacter extends GameCharacter implements XMLSaving {
 		
 		return UtilText.parse(this, characterPenetrating,
 				(this.equals(characterPenetrating)
-						?UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] taken [npc2.her] own urethral virginity!")
-						:UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] taken [npc.namePos] urethral virginity!"))
+						?UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] лишились девственности в собственном [npc2.her]!")
+						:UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] лишились девственности в [npc.namePos]!"))
 				+getVirginityExperienceDescription(characterPenetrating));
 	}
 
@@ -2102,8 +2090,8 @@ public class PlayerCharacter extends GameCharacter implements XMLSaving {
 		
 		return UtilText.parse(this, characterPenetrating,
 				(this.equals(characterPenetrating)
-						?UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] given [npc2.herself] [npc.her] first oral experience!")
-						:UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] given [npc.name] [npc.her] first oral experience!"))
+						?UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] дарит [npc2.herself] [npc.her] первый оральный опыт!")
+						:UtilText.formatVirginityLoss("[npc2.Name] [npc2.has] дарит [npc.name] [npc.her] первый оральный опыт!"))
 				+getVirginityExperienceDescription(characterPenetrating));
 	}
 }

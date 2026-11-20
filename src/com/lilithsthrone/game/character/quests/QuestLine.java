@@ -11,7 +11,7 @@ public enum QuestLine {
 
 	// Main quests:
 
-	MAIN("Lilith's Throne", "Вы завершили все основные квесты в этой версии!",
+	MAIN("Трон Лилит", "Вы завершили все основные квесты в этой версии!",
 			QuestType.MAIN,
 			QuestTree.mainQuestTree),
 
@@ -29,39 +29,39 @@ public enum QuestLine {
 			QuestType.SIDE,
 			QuestTree.enchantmentTree),
 
-	SIDE_FIRST_TIME_PREGNANCY("Knocked Up", "С помощью Лилайи вы смогли завершить свою первую беременность. Возможно, первую из многих...",
+	SIDE_FIRST_TIME_PREGNANCY("Беременная", "С помощью Лилайи вы смогли завершить свою первую беременность. Возможно, первую из многих...",
 			QuestType.SIDE,
 			QuestTree.pregnancyTree),
 
-	SIDE_FIRST_TIME_INCUBATION("Egged", "Вы успешно инкубировали, отложили и вылупили яйца, которые были посажены внутри вас!",
+	SIDE_FIRST_TIME_INCUBATION("Закиданная яйцами", "Вы успешно инкубировали, отложили и вылупили яйца, которые были посажены внутри вас!",
 			QuestType.SIDE,
 			QuestTree.incubationTree),
 
-	SIDE_SLAVERY("Slaver", "Благодаря рекомендательному письму Лилайи, вам удалось получить желанную лицензию на рабство!",
+	SIDE_SLAVERY("Работорговец", "Благодаря рекомендательному письму Лилайи, вам удалось получить желанную лицензию на рабство!",
 			QuestType.SIDE,
 			QuestTree.slaveryTree),
 
-	SIDE_ACCOMMODATION("Bed & Board", "Лилая с радостью дала вам разрешение использовать свободные комнаты для размещения ваших друзей и семьи, при условии, что вы оплатите расходы, которые они повлекут...",
+	SIDE_ACCOMMODATION("Ночлег и еда", "Лилая с радостью дала вам разрешение использовать свободные комнаты для размещения ваших друзей и семьи, при условии, что вы оплатите расходы, которые они повлекут...",
 			QuestType.SIDE,
 			QuestTree.accommodationTree),
 
-	SIDE_DOLL_STORAGE("Doll Storage", "Лилая сказала вам, что вы можете использовать любую свободную комнату для хранения любых кукол, которые вы покупаете...",
+	SIDE_DOLL_STORAGE("Хранилище кукол", "Лилая сказала вам, что вы можете использовать любую свободную комнату для хранения любых кукол, которые вы покупаете...",
 			QuestType.SIDE,
 			QuestTree.dollStorageTree),
 
-	SIDE_HYPNO_WATCH("Arthur's Experiment", "Вы помогли Артуру завершить его исследования по созданию гипно-часов, которые теперь находятся в вашем распоряжении!",
+	SIDE_HYPNO_WATCH("Эксперимент Arthur", "Вы помогли Артуру завершить его исследования по созданию гипно-часов, которые теперь находятся в вашем распоряжении!",
 			QuestType.SIDE,
 			QuestTree.hypnoWatchTree),
 
-	SIDE_ARCANE_LIGHTNING("Arcane Lightning", "Артур смог извлечь секреты арканической молнии из глобуса, который вы ему дали, что позволило вам выучить два невероятно мощных заклинания.",
+	SIDE_ARCANE_LIGHTNING("Arcane молния", "Артур смог извлечь секреты арканической молнии из глобуса, который вы ему дали, что позволило вам выучить два невероятно мощных заклинания.",
 			QuestType.SIDE,
 			QuestTree.arcaneLightningTree),
 	
-	SIDE_HARPY_PACIFICATION("Angry Harpies", "Вам удалось успокоить всех трех матерей гарпий, в результате чего гарпийские гнезда стали безопасными для путешествий!",
+	SIDE_HARPY_PACIFICATION("Разгневанные гарпии", "Вам удалось успокоить всех трех матерей гарпий, в результате чего гарпийские гнезда стали безопасными для путешествий!",
 			QuestType.SIDE,
 			QuestTree.angryHarpyTree),
 
-	SIDE_SLIME_QUEEN("Slime Queen", "Вы справились с Королевой Слайма!",
+	SIDE_SLIME_QUEEN("Slime королева", "Вы справились с Королевой Слайма!",
 			QuestType.SIDE,
 			QuestTree.slimeQueenTree),
 
@@ -73,11 +73,11 @@ public enum QuestLine {
 			QuestType.SIDE,
 			QuestTree.daddyTree),
 
-	SIDE_BUYING_BRAX("Acquiring a Wolf", "После того, как она заставила вас выполнить для нее ряд скучных задач, Кэнди наконец продала вам [brax.name].",
+	SIDE_BUYING_BRAX("Приручение волка", "После того, как она заставила вас выполнить для нее ряд скучных задач, Кэнди наконец продала вам [brax.name].",
 			QuestType.SIDE,
 			QuestTree.buyingBraxTree),
 
-	SIDE_VENGAR("Vengar's Tyranny", "Вы справились с Венгаром и убедились, что Аксель больше не должен беспокоиться о нем.",
+	SIDE_VENGAR("Тирания Венгара", "Вы справились с Венгаром и убедились, что Аксель больше не должен беспокоиться о нем.",
 			QuestType.SIDE,
 			QuestTree.vengarTree),
 
@@ -86,11 +86,11 @@ public enum QuestLine {
 			QuestType.SIDE,
 			QuestTree.wesTree),
         
-	SIDE_REBEL_BASE("Grave Robbing", "Вам удалось сбежать из заброшенного убежища повстанцев.",
+	SIDE_REBEL_BASE("Разграбление могил", "Вам удалось сбежать из заброшенного убежища повстанцев.",
 		QuestType.SIDE,
 		QuestTree.rebelBaseTree),
 
-	SIDE_REBEL_BASE_FIREBOMBS("Spicy Meatballs", "Вы получили стабильный запас Арканальных зажигательных бомб. По обычной цене, конечно.",
+	SIDE_REBEL_BASE_FIREBOMBS("Острые тефтели", "Вы получили стабильный запас Арканальных зажигательных бомб. По обычной цене, конечно.",
 		QuestType.SIDE,
 		QuestTree.rebelBaseFirebombTree),
 	
@@ -98,11 +98,11 @@ public enum QuestLine {
 		    QuestType.SIDE,
 		    QuestTree.eisekStallTree),
 	
-	SIDE_EISEK_MOB("Mob Mentality", "Вы убедили банду, которая преследовала Эйсека, оставить его в покое.",
+	SIDE_EISEK_MOB("Стадное чувство", "Вы убедили банду, которая преследовала Эйсека, оставить его в покое.",
 		    QuestType.SIDE,
 		    QuestTree.eisekMobTree),
 	
-	SIDE_EISEK_SILLYMODE("Dragon Enthusiasts", "Вы столкнулись с странной группой людей, одержимых драконами, и очистили их подземелье.",
+	SIDE_EISEK_SILLYMODE("Любители драконов", "Вы столкнулись с странной группой людей, одержимых драконами, и очистили их подземелье.",
 		    QuestType.SIDE,
 		    QuestTree.eisekSillyModeTree),
 
@@ -110,7 +110,7 @@ public enum QuestLine {
 			QuestType.SIDE,
 			QuestTree.beerBarrelTree),
 
-	SIDE_LUNEXIS_ESCAPE("Serving Lunexis", "Вы повиновались приказам вашей госпожи и обеспечили ей возможность сбежать, тем самым запечатав свою судьбу стать одной из ее личных кок-сук...",
+	SIDE_LUNEXIS_ESCAPE("Служение Лунексису", "Вы повиновались приказам вашей госпожи и обеспечили ей возможность сбежать, тем самым запечатав свою судьбу стать одной из ее личных кок-сук...",
 			QuestType.SIDE,
 			QuestTree.lunexisEscapeTree),
 
@@ -120,7 +120,7 @@ public enum QuestLine {
 	
 	// Romance quests:
 	
-	RELATIONSHIP_NYAN_HELP("Supplier Issues", "Вы помогли Нян решить проблему, которую она имела с поставщиками.",
+	RELATIONSHIP_NYAN_HELP("Проблемы с поставщиками", "Вы помогли Нян решить проблему, которую она имела с поставщиками.",
 			QuestType.RELATIONSHIP,
 			QuestTree.nyanTree),
 
@@ -132,7 +132,7 @@ public enum QuestLine {
 			QuestType.RELATIONSHIP,
 			QuestTree.natalyaTree),
 
-	ROMANCE_MONICA("Monica's Milker", "Вы успешно вернули персонализированный Moo Milker Моники, и в результате она очень благодарна вам.",
+	ROMANCE_MONICA("Доилка Моники", "Вы успешно вернули персонализированный Moo Milker Моники, и в результате она очень благодарна вам.",
 			QuestType.RELATIONSHIP,
 			QuestTree.monicaTree),
 	;

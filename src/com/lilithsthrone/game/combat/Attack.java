@@ -21,11 +21,11 @@ public enum Attack {
 	NONE("none"),
 	MAIN("main"),
 	OFFHAND("offhand"),
-	DUAL("dual strike"),
+	DUAL("двойной удар"),
 	SEDUCTION("seduction"),
 	SPELL("spell"),
-	SPECIAL_ATTACK("special attack"),
-	USE_ITEM("use item"),
+	SPECIAL_ATTACK("особая атака"),
+	USE_ITEM("использовать предмет"),
 	ESCAPE("escape"),
 	WAIT("wait");
 

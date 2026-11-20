@@ -100,7 +100,7 @@ public enum OutfitType {
 
 		moddedOutfits = new ArrayList<>();
 		
-		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/outfits");
+		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/наряды");
 		for(Entry<String, Map<String, File>> entry : moddedFilesMap.entrySet()) {
 			for(Entry<String, File> innerEntry : entry.getValue().entrySet()) {
 				try {

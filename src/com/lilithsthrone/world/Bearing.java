@@ -14,7 +14,7 @@ public enum Bearing {
 	SOUTH_WEST("south-west"),
 	WEST("west"),
 	NORTH_WEST("north-west"),
-	RANDOM("random");
+	RANDOM("случайный");
 	
 	private String name;
 	

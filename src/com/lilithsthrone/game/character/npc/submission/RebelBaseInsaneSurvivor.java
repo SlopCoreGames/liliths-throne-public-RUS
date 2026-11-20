@@ -84,9 +84,9 @@ public class RebelBaseInsaneSurvivor extends NPC {
             
             setName(Name.getRandomTriplet(this.getSubspecies()));
             this.setPlayerKnowsName(false);
-            this.setGenericName("insane survivor");
+            this.setGenericName("безумный выживший");
             this.setEssenceCount(500);
-            setDescription(UtilText.parse(this, "While apparently mostly human, [npc.name] has evidently spent a long time underground and has lost [npc.her] mind."));
+            setDescription(UtilText.parse(this, "Хотя внешне [npc.name] кажется почти человеком, очевидно, что он провел под землей слишком много времени и окончательно [npc.her] потерял рассудок."));
             
             Main.game.getCharacterUtils().generateItemsInInventory(this, false, false, false);
             this.addItem(Main.game.getItemGen().generateItem(ItemType.MUSHROOM), 10, false, false);

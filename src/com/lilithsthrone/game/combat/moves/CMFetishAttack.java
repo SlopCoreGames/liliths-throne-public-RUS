@@ -31,7 +31,7 @@ public class CMFetishAttack {
 	}
 	
 	public static AbstractCombatMove TEASE_ANAL_RECEIVING = new AbstractCombatMove(CombatMoveCategory.SPECIAL,
-            "buttslut tease",
+            "дразнилка для попатой",
             0,
             1,
             CombatMoveType.TEASE,
@@ -66,7 +66,7 @@ public class CMFetishAttack {
         
         @Override
         public Value<Boolean, String> isAvailableFromSpecialCase(GameCharacter source) {
-            return new Value<>(source.hasFetish(associatedFetish), "Available to characters who have the "+associatedFetish.getName(source)+" fetish.");
+            return new Value<>(source.hasFetish(associatedFetish), "Доступно персонажам, у которых есть "+associatedFetish.getName(source)+" фетиш.");
         }
 
         @Override
@@ -75,17 +75,16 @@ public class CMFetishAttack {
             boolean isCrit = canCrit(turnIndex, source, target, enemies, allies);
             
             return UtilText.parse(source, target,
-            		(isCrit?"[style.colourExcellent(Critical)]: ":"")
-            		+ "[npc.Name] [npc.verb(offer)] [npc2.name] the use of [npc.her] ass, dealing "+getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target))+" damage."
-    				+ (target.getFetishDesire(oppositeFetish).isNegative()?" [style.italicsMinorBad(Damage is reduced to 1 as [npc2.name] [npc2.verb(dislike)] the "+oppositeFetish.getName(source)+" fetish!)]":""));
+            		(isCrit?"[style.colourExcellent(Критический)]: ":"")
+            		+ "[npc.Name] [npc.verb(offer)] [npc2.name] использование [npc.her] задницы, нанося "+getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target))+" урон."
+    				+ (target.getFetishDesire(oppositeFetish).isNegative()?" [style.italicsMinorBad(Урон снижается до 1, если [npc2.name] [npc2.verb(dislike)] этот "+oppositeFetish.getName(source)+" фетиш!)]":""));
         }
 
         @Override
         public String getDescription(int turnIndex, GameCharacter source) {
             DamageType damageType = getDamageType(turnIndex, source);
             return UtilText.parse(source, 
-            		"[npc.Name] can use [npc.her] "+associatedFetish.getName(source)+" fetish to tease [npc.her] target, dealing base " + getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " damage."
-            				+ " [style.italicsMinorBad(Damage is reduced to 1 if the target dislikes the "+oppositeFetish.getName(null)+" fetish.)]");
+            		"[npc.Name] может использовать [npc.her] "+associatedFetish.getName(source)+" фетиш, чтобы дразнить [npc.her] цель, нанося базовый " + getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " урон. [style.italicsMinorBad(Урон снижается до 1, если цель не любит этот "+oppositeFetish.getName(null)+" фетиш.)]");
         }
 
         @Override
@@ -103,33 +102,33 @@ public class CMFetishAttack {
             
             return formatAttackOutcome(source, target,
 					(UtilText.returnStringAtRandom(
-						"[npc.Name] [npc.verb(turn)] around, presenting [npc.her] [npc.ass+] to [npc2.name] before giving it a slap and [npc.moaning], "
+						"[npc.Name] [npc.verb(turn)] вокруг, демонстрируя [npc.her] [npc.ass+] перед [npc2.name], после чего отвешивает шлепок и [npc.moaning],  "
 								+ (target.getAppearsAsGender().isFeminine()
-									?"[npc.speech(You want to come have a squeeze?)]"
-									:"[npc.speech(I feel so empty! My asshole's crying out for your cock!)]"),
-						"[npc.Name] [npc.verb(turn)] around, squeezing and groping [npc.her] [npc.ass+] as [npc.she] [npc.moansVerb], "
+									?"[npc.speech(Хочешь подойти и сжать меня?)]"
+									:"[npc.speech(Я чувствую такую пустоту! Моя задница буквально молит о твоем члене!)]"),
+						"[npc.Name] [npc.verb(turn)] вокруг, сжимая и ощупывая [npc.her] [npc.ass+], пока [npc.she] [npc.moansVerb], "
 								+ (target.getAppearsAsGender().isFeminine()
-									?"[npc.speech(Why don't you come and have a go?)]"
-									:"[npc.speech(My asshole needs cock!)]"),
-						"[npc.Name] [npc.verb(turn)] around, using both hands to grope and spread apart [npc.her] ass cheeks as [npc.she] [npc.moansVerb], "
+									?"[npc.speech(Почему бы тебе не подойти и не попробовать?)]"
+									:"[npc.speech(Моей заднице нужен член!)]"),
+						"[npc.Name] [npc.verb(turn)] вокруг, обеими руками ощупывая и раздвигая [npc.her] ягодицы, пока [npc.she] [npc.moansVerb], "
 								+ (target.getAppearsAsGender().isFeminine()
-									?"[npc.speech(Come and play!)]"
-									:"[npc.speech(Please, I want your cock in my ass!)]"),
-						"[npc.Name] [npc.verb(turn)] around, spreading apart [npc.her] ass cheeks with both hands as [npc.she] [npc.moansVerb], "
+									?"[npc.speech(Иди поиграй со мной!)]"
+									:"[npc.speech(Пожалуйста, я хочу твой член в своей заднице!)]"),
+						"[npc.Name] [npc.verb(turn)] вокруг, обеими руками раздвигая [npc.her] ягодицы, пока [npc.she] [npc.moansVerb], "
 								+ (target.getAppearsAsGender().isFeminine()
-									?"[npc.speech(You know you want a go!)]"
-									:"[npc.speech(My slutty asshole <i>needs</i> your cock!)]")))+dealtDamage.getKey(),
-            		"[npc2.Name] took " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " damage!",
+									?"[npc.speech(Ты же знаешь, что хочешь попробовать!)]"
+									:"[npc.speech(Моей шлюшковатой попке <i>нужен</i> твой член!)]")))+dealtDamage.getKey(),
+            		"[npc2.Name] получил " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " урон!",
             		(isCrit
-            			?"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!"
+            			?"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!"
             			:null),
-                	"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!");
+                	"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!");
         }
 
         @Override
         public List<String> getCritRequirements(GameCharacter source, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
         	return Util.newArrayListOfValues(
-        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"The target has")+" the "+oppositeFetish.getName(target)+" fetish.");
+        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"У цели есть")+""+oppositeFetish.getName(target)+" фетиш.");
         }
         
         @Override
@@ -139,7 +138,7 @@ public class CMFetishAttack {
     };
     
     public static AbstractCombatMove TEASE_ANAL_GIVING = new AbstractCombatMove(CombatMoveCategory.SPECIAL,
-            "anal tease",
+            "анальная дразнилка",
             0,
             1,
             CombatMoveType.TEASE,
@@ -174,7 +173,7 @@ public class CMFetishAttack {
         
         @Override
         public Value<Boolean, String> isAvailableFromSpecialCase(GameCharacter source) {
-            return new Value<>(source.hasFetish(associatedFetish), "Available to characters who have the "+associatedFetish.getName(source)+" fetish.");
+            return new Value<>(source.hasFetish(associatedFetish), "Доступно персонажам, у которых есть "+associatedFetish.getName(source)+" фетиш.");
         }
 
         @Override
@@ -183,17 +182,16 @@ public class CMFetishAttack {
             boolean isCrit = canCrit(turnIndex, source, target, enemies, allies);
             
             return UtilText.parse(source, target,
-            		(isCrit?"[style.colourExcellent(Critical)]: ":"")
-            			+ "[npc.Name] [npc.verb(tell)] [npc2.name] that [npc.sheIs] going to use [npc2.her] ass, dealing "+getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target))+" damage."
-            			+ (target.getFetishDesire(oppositeFetish).isNegative()?" [style.italicsMinorBad(Damage is reduced to 1 as [npc2.name] [npc2.verb(dislike)] the "+oppositeFetish.getName(source)+" fetish!)]":""));
+            		(isCrit?"[style.colourExcellent(Критический)]: ":"")
+            			+ "[npc.Name] [npc.verb(tell)] [npc2.name], которая [npc.sheIs] собирается использовать [npc2.her] задницу, нанося "+getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target))+" урон."
+            			+ (target.getFetishDesire(oppositeFetish).isNegative()?" [style.italicsMinorBad(Урон снижается до 1, если [npc2.name] [npc2.verb(dislike)] этот "+oppositeFetish.getName(source)+" фетиш!)]":""));
         }
 
         @Override
         public String getDescription(int turnIndex, GameCharacter source) {
             DamageType damageType = getDamageType(turnIndex, source);
             return UtilText.parse(source, 
-            		"[npc.Name] can use [npc.her] "+associatedFetish.getName(source)+" fetish to tease [npc.her] target, dealing base " + getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " damage."
-            				+ " [style.italicsMinorBad(Damage is reduced to 1 if the target dislikes the "+oppositeFetish.getName(null)+" fetish.)]");
+            		"[npc.Name] может использовать [npc.her] "+associatedFetish.getName(source)+" фетиш, чтобы дразнить [npc.her] цель, нанося базовый " + getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " урон. [style.italicsMinorBad(Урон снижается до 1, если цель не любит этот "+oppositeFetish.getName(null)+" фетиш.)]");
         }
 
         @Override
@@ -211,23 +209,20 @@ public class CMFetishAttack {
             
             return formatAttackOutcome(source, target,
             		(UtilText.returnStringAtRandom(
-    						"[npc.Name] [npc.verb(grin)] at [npc2.name], before moving [npc.her] gaze down to [npc2.her] [npc2.ass+] and [npc.moaning],"
-    							+" [npc.speech(Your ass looks like it needs a good fuck!)]",
-    						"[npc.Name] hungrily [npc.verb(stare)] at [npc2.namePos] [npc2.ass+], [npc.moaning],"
-    							+" [npc.speech(I'm going to fuck that ass so hard!)]",
-    						"Gazing lustfully at [npc2.namePos] [npc2.ass+], [npc.name] [npc.verb(let)] out [npc.a_moan+],"
-    							+" [npc.speech(I'm going to pound that sweet ass into the ground!)]"))+dealtDamage.getKey(),
-            		"[npc2.Name] took " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " damage!",
+    						"[npc.Name] [npc.verb(grin)] на [npc2.name], прежде чем [npc.her] опустит взгляд на [npc2.her] [npc2.ass+] и [npc.moaning], [npc.speech(Твоя задница так и просит хорошего траха!)]",
+    						"[npc.Name] жадно [npc.verb(stare)] на [npc2.namePos] [npc2.ass+], [npc.moaning], [npc.speech(Я оттрахаю эту задницу так сильно!)]",
+    						"Похотливо глядя на [npc2.namePos] [npc2.ass+], [npc.name] [npc.verb(let)] [npc.a_moan+], [npc.speech(Я вдолблю эту сладкую попку прямо в землю!)]"))+dealtDamage.getKey(),
+            		"[npc2.Name] получил " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " урон!",
             		(isCrit
-            			?"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!"
+            			?"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!"
             			:null),
-                	"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!");
+                	"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!");
         }
 
         @Override
         public List<String> getCritRequirements(GameCharacter source, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
         	return Util.newArrayListOfValues(
-        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"The target has")+" the "+oppositeFetish.getName(target)+" fetish.");
+        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"У цели есть")+""+oppositeFetish.getName(target)+" фетиш.");
         }
         
         @Override
@@ -237,7 +232,7 @@ public class CMFetishAttack {
     };
 
     public static AbstractCombatMove TEASE_VAGINAL_RECEIVING = new AbstractCombatMove(CombatMoveCategory.SPECIAL,
-            "pussy slut tease",
+            "раззаживание киски",
             0,
             1,
             CombatMoveType.TEASE,
@@ -272,7 +267,7 @@ public class CMFetishAttack {
         
         @Override
         public Value<Boolean, String> isAvailableFromSpecialCase(GameCharacter source) {
-            return new Value<>(source.hasFetish(associatedFetish) && source.hasVagina(), "Available to characters who both have a vagina and have the "+associatedFetish.getName(source)+" fetish.");
+            return new Value<>(source.hasFetish(associatedFetish) && source.hasVagina(), "Доступно персонажам, у которых есть влагалище и навык "+associatedFetish.getName(source)+" фетиш.");
         }
 
         @Override
@@ -281,18 +276,17 @@ public class CMFetishAttack {
             boolean isCrit = canCrit(turnIndex, source, target, enemies, allies);
             
             return UtilText.parse(source, target,
-            		(isCrit?"[style.colourExcellent(Critical)]: ":"")
-            			+ "[npc.Name] [npc.verb(offer)] [npc2.name] the use of [npc.her] pussy, dealing "+ getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " damage."
-            			+ (target.getFetishDesire(oppositeFetish).isNegative()?" [style.italicsMinorBad(Damage is reduced to 1 as [npc2.name] [npc2.verb(dislike)] the "+oppositeFetish.getName(source)+" fetish!)]":""));
+            		(isCrit?"[style.colourExcellent(Критический)]: ":"")
+            			+ "[npc.Name] [npc.verb(offer)] [npc2.name] использование [npc.her] киски, нанося "+ getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " урон."
+            			+ (target.getFetishDesire(oppositeFetish).isNegative()?" [style.italicsMinorBad(Урон снижается до 1, если [npc2.name] [npc2.verb(dislike)] этот "+oppositeFetish.getName(source)+" фетиш!)]":""));
         }
         
         @Override
         public String getDescription(int turnIndex, GameCharacter source) {
             DamageType damageType = getDamageType(turnIndex, source);
             return UtilText.parse(source, 
-            		"[npc.Name] can use [npc.her] "+associatedFetish.getName(source)+" fetish to tease [npc.her] target, dealing base "
-            				+ getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " damage."
-            				+ " [style.italicsMinorBad(Damage is reduced to 1 if the target dislikes the "+oppositeFetish.getName(null)+" fetish.)]");
+            		"[npc.Name] может использовать [npc.her] "+associatedFetish.getName(source)+" фетиш, чтобы дразнить [npc.her] цель, нанося базовый "
+            				+ getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " урон. [style.italicsMinorBad(Урон снижается до 1, если цель не любит этот "+oppositeFetish.getName(null)+" фетиш.)]");
         }
 
         @Override
@@ -310,25 +304,21 @@ public class CMFetishAttack {
             
             return formatAttackOutcome(source, target,
             		(UtilText.returnStringAtRandom(
-						"[npc.Name] [npc.verb(slide)] [npc.her] [npc.hands] down between [npc.her] [npc.legs] and [npc.moansVerb], "
-								+ "[npc.speech(My pussy's aching for your touch!)]",
-						"[npc.Name] [npc.verb(slip)] one [npc.hand] down between [npc.her] [npc.legs] and [npc.moansVerb], "
-								+ "[npc.speech(Come fuck my pussy!)]",
-						"[npc.Name] [npc.verb(thrust)] [npc.her] [npc.hips+] out a little and [npc.moansVerb], "
-								+ "[npc.speech(I'm getting wet already! Come fuck my little pussy!)]",
-						"[npc.Name] [npc.verb(wink)] at [npc2.name] and [npc.moansVerb], "
-								+ "[npc.speech(My slutty pussy <i>needs</i> some attention!)]"))+dealtDamage.getKey(),
-            		"[npc2.Name] took " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " damage!",
+						"[npc.Name] [npc.verb(slide)] [npc.her] [npc.hands] от [npc.her] [npc.legs] до [npc.moansVerb], [npc.speech(Моя киска ноет от желания почувствовать тебя!)]",
+						"[npc.Name] [npc.verb(slip)] один [npc.hand] от [npc.her] [npc.legs] до [npc.moansVerb], [npc.speech(Иди трахни мою киску!)]",
+						"[npc.Name] [npc.verb(thrust)] [npc.her] [npc.hips+] немного и [npc.moansVerb], [npc.speech(Я уже вся промокла! Иди трахни мою маленькую киску!)]",
+						"[npc.Name] [npc.verb(wink)] на [npc2.name] и [npc.moansVerb], [npc.speech(Моей шлюшьей киске <i>нужно</i> немного внимания!)]"))+dealtDamage.getKey(),
+            		"[npc2.Name] получил " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " урон!",
             		(isCrit
-            			?"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!"
+            			?"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!"
             			:null),
-                	"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!");
+                	"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!");
         }
 
         @Override
         public List<String> getCritRequirements(GameCharacter source, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
         	return Util.newArrayListOfValues(
-        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"The target has")+" the "+oppositeFetish.getName(target)+" fetish.");
+        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"У цели есть")+""+oppositeFetish.getName(target)+" фетиш.");
         }
         
         @Override
@@ -338,7 +328,7 @@ public class CMFetishAttack {
     };
 
     public static AbstractCombatMove TEASE_VAGINAL_GIVING = new AbstractCombatMove(CombatMoveCategory.SPECIAL,
-            "vaginal tease",
+            "вагинальное дразнение",
             0,
             1,
             CombatMoveType.TEASE,
@@ -373,7 +363,7 @@ public class CMFetishAttack {
         
         @Override
         public Value<Boolean, String> isAvailableFromSpecialCase(GameCharacter source) {
-            return new Value<>(source.hasFetish(associatedFetish), "Available to characters who have the "+associatedFetish.getName(source)+" fetish.");
+            return new Value<>(source.hasFetish(associatedFetish), "Доступно персонажам, у которых есть "+associatedFetish.getName(source)+" фетиш.");
         }
 
         @Override
@@ -382,12 +372,12 @@ public class CMFetishAttack {
             boolean isCrit = canCrit(turnIndex, source, target, enemies, allies);
             
             return UtilText.parse(source, target,
-	            		(isCrit?"[style.colourExcellent(Critical)]: ":"")
-		            		+ "[npc.Name] [npc.verb(tell)] [npc2.name] that [npc.sheIs] going to use [npc2.her] pussy, dealing "+ getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " damage."
+	            		(isCrit?"[style.colourExcellent(Критический)]: ":"")
+		            		+ "[npc.Name] [npc.verb(tell)] [npc2.name], что [npc.sheIs] собирается использовать [npc2.her] киску, нанося "+ getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " урон."
 	            			+ (!target.hasVagina()
-            					?" [style.italicsMinorBad(Damage is reduced to 1 as [npc2.name] does not have a vagina!)]"
+            					?" [style.italicsMinorBad(Урон снижен до 1, так как у [npc2.name] нет влагалища!)]"
             					:(target.getFetishDesire(oppositeFetish).isNegative()
-                    					?" [style.italicsMinorBad(Damage is reduced to 1 as [npc2.name] [npc2.verb(dislike)] the "+oppositeFetish.getName(source)+" fetish!)]"
+                    					?" [style.italicsMinorBad(Урон снижается до 1, если [npc2.name] [npc2.verb(dislike)] этот "+oppositeFetish.getName(source)+" фетиш!)]"
                             			:"")));
         }
 
@@ -395,8 +385,7 @@ public class CMFetishAttack {
         public String getDescription(int turnIndex, GameCharacter source) {
             DamageType damageType = getDamageType(turnIndex, source);
             return UtilText.parse(source, 
-            		"[npc.Name] can use [npc.her] "+associatedFetish.getName(source)+" fetish to tease [npc.her] target, dealing base " + getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " damage."
-            				+ " [style.italicsMinorBad(Damage is reduced to 1 if the target doesn't have a vagina or they dislike the "+oppositeFetish.getName(null)+" fetish.)]");
+            		"[npc.Name] может использовать [npc.her] "+associatedFetish.getName(source)+" фетиш, чтобы дразнить [npc.her] цель, нанося базовый " + getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " урон. [style.italicsMinorBad(Урон снижен до 1, если у цели нет влагалища или она не любит "+oppositeFetish.getName(null)+" фетиш.)]");
         }
 
         @Override
@@ -414,23 +403,20 @@ public class CMFetishAttack {
             
             return formatAttackOutcome(source, target,
             		(UtilText.returnStringAtRandom(
-						"[npc.Name] [npc.verb(grin)] at [npc2.name], before moving [npc.her] gaze down to between [npc2.her] [npc2.legs] and [npc.moaning],"
-							+" [npc.speech(Your pussy looks like it needs a good fuck!)]",
-						"[npc.Name] hungrily [npc.verb(stare)] between [npc2.namePos] [npc2.legs], [npc.moaning],"
-							+" [npc.speech(I'm going to fuck that pussy so hard!)]",
-						"Gazing lustfully between [npc2.namePos] [npc2.legs], [npc.name] [npc.verb(let)] out [npc.a_moan+],"
-							+" [npc.speech(I'm going to pound that sweet pussy into the ground!)]"))+dealtDamage.getKey(),
-            		"[npc2.Name] took " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " damage!",
+						"[npc.Name] [npc.verb(grin)] на [npc2.name], прежде чем опустить [npc.her] взгляд между [npc2.her] [npc2.legs] и [npc.moaning], [npc.speech(Твоя киска так и просит хорошего оттраха!)]",
+						"[npc.Name] жадно [npc.verb(stare)] между [npc2.namePos] [npc2.legs], [npc.moaning], [npc.speech(Я оттрахаю эту киску так сильно!)]",
+						"Похотливо глядя между [npc2.namePos] [npc2.legs], [npc.name] [npc.verb(let)] [npc.a_moan+], [npc.speech(Я вдолблю эту сладкую киску прямо в землю!)]"))+dealtDamage.getKey(),
+            		"[npc2.Name] получил " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " урон!",
             		(isCrit
-            			?"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!"
+            			?"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!"
             			:null),
-            		"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!");
+            		"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!");
         }
 
         @Override
         public List<String> getCritRequirements(GameCharacter source, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
         	return Util.newArrayListOfValues(
-        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"The target has")+" the "+oppositeFetish.getName(target)+" fetish.");
+        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"У цели есть")+""+oppositeFetish.getName(target)+" фетиш.");
         }
         
         @Override
@@ -440,7 +426,7 @@ public class CMFetishAttack {
     };
 
     public static AbstractCombatMove TEASE_INCEST = new AbstractCombatMove(CombatMoveCategory.SPECIAL,
-            "incest tease",
+            "инцестуозное дразнение",
             0,
             1,
             CombatMoveType.TEASE,
@@ -475,7 +461,7 @@ public class CMFetishAttack {
         
         @Override
         public Value<Boolean, String> isAvailableFromSpecialCase(GameCharacter source) {
-            return new Value<>(source.hasFetish(associatedFetish), "Available to characters who have the "+associatedFetish.getName(source)+" fetish.");
+            return new Value<>(source.hasFetish(associatedFetish), "Доступно персонажам, у которых есть "+associatedFetish.getName(source)+" фетиш.");
         }
 
         @Override
@@ -485,16 +471,15 @@ public class CMFetishAttack {
             
             if(target.isRelatedTo(source)) {
 	            return UtilText.parse(source, target,
-	            		(isCrit?"[style.colourExcellent(Critical)]: ":"")
-	            			+ "[npc.Name] [npc.verb(tell)] [npc2.name] that [npc.sheIs] going to have incestuous sex with [npc2.herHim], dealing "
-	            				+ getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " damage."
-	            			+ (target.getFetishDesire(oppositeFetish).isNegative()?" [style.italicsMinorBad(Damage is reduced to 1 as [npc2.name] [npc2.verb(dislike)] the "+oppositeFetish.getName(source)+" fetish!)]":""));
+	            		(isCrit?"[style.colourExcellent(Критический)]: ":"")
+	            			+ "[npc.Name] [npc.verb(tell)] [npc2.name], что [npc.sheIs] собирается заняться инцестом с [npc2.herHim], нанося "
+	            				+ getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " урон."
+	            			+ (target.getFetishDesire(oppositeFetish).isNegative()?" [style.italicsMinorBad(Урон снижается до 1, если [npc2.name] [npc2.verb(dislike)] этот "+oppositeFetish.getName(source)+" фетиш!)]":""));
             } else {
 	            return UtilText.parse(source, target,
-	            		(isCrit?"[style.colourExcellent(Critical)]: ":"")
-	            			+ "[npc.Name] [npc.verb(tell)] [npc2.name] that [npc.she] [npc.verb(love)] having incestuous sex, dealing "
-	            				+ getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " damage."
-            				+ " [style.italicsMinorBad(Damage is reduced to 1 as [npc2.name] is not related to you!)]");
+	            		(isCrit?"[style.colourExcellent(Критический)]: ":"")
+	            			+ "[npc.Name] [npc.verb(tell)] [npc2.name], что [npc.she] [npc.verb(love)] заниматься инцестом, нанося "
+	            				+ getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " урон. [style.italicsMinorBad(Урон снижен до 1, так как [npc2.name] не является вашим родственником!)]");
             }
         }
 
@@ -502,8 +487,7 @@ public class CMFetishAttack {
         public String getDescription(int turnIndex, GameCharacter source) {
             DamageType damageType = getDamageType(turnIndex, source);
             return UtilText.parse(source, 
-            		"[npc.Name] can use [npc.her] "+associatedFetish.getName(source)+" fetish to tease [npc.her] target, dealing base " + getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " damage."
-            				+ " [style.italicsMinorBad(Damage is reduced to 1 if the target is not related to you or they dislike the "+oppositeFetish.getName(null)+" fetish.)]");
+            		"[npc.Name] может использовать [npc.her] "+associatedFetish.getName(source)+" фетиш, чтобы дразнить [npc.her] цель, нанося базовый " + getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " урон. [style.italicsMinorBad(Урон снижен до 1, если цель не является вашим родственником или она не любит "+oppositeFetish.getName(null)+" фетиш.)]");
         }
 
         @Override
@@ -524,62 +508,56 @@ public class CMFetishAttack {
     			Set<Relationship> rel = source.getRelationshipsTo(target);
     			if(rel.contains(Relationship.Child)) {
     				dialogue = UtilText.returnStringAtRandom(
-    						"Let me take care of you, [npc.mommy]!",
-    						"Come on, [npc2.mommy]! I just want to take <i>real</i> good care of you!",
-    						"[npc2.Mommy]! I just want to show you how much I love you!");
+    						"Позволь мне позаботиться о тебе, [npc.mommy]!",
+    						"Давай же, [npc2.mommy]! Я просто хочу <i>по-настоящему</i> хорошо о тебе позаботиться!",
+    						"[npc2.Mommy]! Я просто хочу показать тебе, как сильно я тебя люблю!");
     			} else if(rel.contains(Relationship.Parent)) {
     				dialogue = UtilText.returnStringAtRandom(
-    						"Let [npc.mommy] take care of you!",
-    						"Don't worry sweetie, [npc.mommy]'s going to take good care of you!",
-    						"[npc.Mommy] just wants to show you how much [npc.she] loves you!");
+    						"Пусть [npc.mommy] позаботится о тебе!",
+    						"Не волнуйся, милая, [npc.mommy] позаботится о тебе как следует!",
+    						"[npc.Mommy] просто хочет показать, как сильно [npc.she] тебя любит!");
     			} else if(rel.contains(Relationship.Sibling)) {
     				dialogue = UtilText.returnStringAtRandom(
-    						"Let your [npc.sis] take care of you!",
-    						"Don't worry [npc2.sis], I'm going to take good care of you!",
-    						"Come on, [npc2.sis]! I just want to show you how much I love you!");
+    						"Позволь своей [npc.sis] позаботиться о тебе!",
+    						"Не бойся, [npc2.sis], я позабочусь о тебе как следует!",
+    						"Ну же, [npc2.sis]! Я просто хочу показать, как сильно я тебя люблю!");
     			} else {
     				dialogue = UtilText.returnStringAtRandom(
-    						"Let [npc.mommy] take care of you!",
-    						"Don't worry sweetie, [npc.mommy]'s going to take good care of you!",
-    						"[npc.Mommy] just wants to show you how much [npc.she] loves you!");
+    						"Пусть [npc.mommy] позаботится о тебе!",
+    						"Не волнуйся, милая, [npc.mommy] позаботится о тебе как следует!",
+    						"[npc.Mommy] просто хочет показать, как сильно [npc.she] тебя любит!");
     			}
             	
                 return formatAttackOutcome(source, target,
                 		(UtilText.returnStringAtRandom(
-        						"[npc1.Name] [npc.verb(grin)] at [npc2.name], before thrusting [npc1.her] [npc1.hips] forwards and calling out, "
-        								+ "[npc1.speech("+dialogue+")]",
-        						"Running [npc1.her] [npc1.hands] down over [npc1.her] groin, [npc1.name] [npc.verb(call)] out to [npc2.name], "
-        								+ "[npc1.speech("+dialogue+")]",
-        						"[npc1.Name] [npc.verb(let)] out an eager groan as [npc1.she] [npc.verb(thrust)] [npc1.her] [npc1.hips] at [npc2.name], "
-        								+ "[npc1.speech("+dialogue+")]"))+dealtDamage.getKey(),
-                		"[npc2.Name] took " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " damage!",
+        						"[npc1.Name] [npc.verb(grin)] в [npc2.name], прежде чем мощно толкнуть [npc1.her] [npc1.hips] вперед и выкрикнуть, [npc1.speech("+dialogue+")]",
+        						"Проводя [npc1.her] [npc1.hands] по [npc1.her] паху, [npc1.name] [npc.verb(call)] до [npc2.name], [npc1.speech("+dialogue+")]",
+        						"[npc1.Name] [npc.verb(let)] с нетерпеливым стоном, пока [npc1.she] [npc.verb(thrust)] [npc1.her] [npc1.hips] на [npc2.name], [npc1.speech("+dialogue+")]"))+dealtDamage.getKey(),
+                		"[npc2.Name] получил " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " урон!",
                 		(isCrit
-                			?"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!"
+                			?"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!"
                 			:null),
-                		"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!");
+                		"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!");
             	
             	
             } else {
                 return formatAttackOutcome(source, target,
                 		(UtilText.returnStringAtRandom(
-        						"[npc1.Name] [npc.verb(grin)] at [npc2.name], before thrusting [npc1.her] [npc1.hips] forwards and calling out, "
-        								+ "[npc1.speech(I'm so dirty that I love nothing more than fucking my relatives! Imagine what I'll do with you!)]",
-        						"Running [npc1.her] [npc1.hands] down over [npc1.her] groin, [npc1.name] [npc.verb(call)] out to [npc2.name], "
-        								+ "[npc1.speech(It's a shame you aren't my [npc2.sister] or something; there's nothing hotter than siblings fucking!)]",
-        						"[npc1.Name] [npc.verb(let)] out an eager groan as [npc1.she] [npc.verb(thrust)] [npc1.her] [npc1.hips] at [npc2.name], "
-        								+ "[npc1.speech(I wish you were my relative; I love incestuous sex!)]"))+dealtDamage.getKey(),
-                		"[npc2.Name] took " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " damage!",
+        						"[npc1.Name] [npc.verb(grin)] на [npc2.name], прежде чем резко толкнуть [npc1.her] [npc1.hips] вперед и выкрикнуть, [npc1.speech(Я такая грязная, что обожаю трахать своих родственников! Представь, что я сделаю с тобой!)]",
+        						"Проводя [npc1.her] [npc1.hands] по [npc1.her] паху, [npc1.name] [npc.verb(call)] до [npc2.name], [npc1.speech(Жаль, что ты не мой [npc2.sister] или кто-то еще; нет ничего горячее, чем секс между братом и сестрой!)]",
+        						"[npc1.Name] [npc.verb(let)] с нетерпеливым стоном, пока [npc1.she] [npc.verb(thrust)] [npc1.her] [npc1.hips] на [npc2.name], [npc1.speech(Жаль, что ты не мой родственник; я обожаю инцест!)]"))+dealtDamage.getKey(),
+                		"[npc2.Name] получил " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " урон!",
                 		(isCrit
-                			?"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!"
+                			?"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!"
                 			:null),
-                		"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!");
+                		"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!");
             }
         }
 
         @Override
         public List<String> getCritRequirements(GameCharacter source, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
         	return Util.newArrayListOfValues(
-        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"The target has")+" the "+oppositeFetish.getName(target)+" fetish and is related to you.");
+        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"У цели есть")+""+oppositeFetish.getName(target)+" фетиш и является твоим родственником.");
         }
         
         @Override
@@ -589,7 +567,7 @@ public class CMFetishAttack {
     };
     
     public static AbstractCombatMove TEASE_CUM_STUD = new AbstractCombatMove(CombatMoveCategory.SPECIAL,
-            "cum stud tease",
+            "дразнение кончиком-жеребцом",
             0,
             1,
             CombatMoveType.TEASE,
@@ -624,7 +602,7 @@ public class CMFetishAttack {
         
         @Override
         public Value<Boolean, String> isAvailableFromSpecialCase(GameCharacter source) {
-            return new Value<>(source.hasFetish(associatedFetish), "Available to characters who have the "+associatedFetish.getName(source)+" fetish.");
+            return new Value<>(source.hasFetish(associatedFetish), "Доступно персонажам, у которых есть "+associatedFetish.getName(source)+" фетиш.");
         }
 
         @Override
@@ -633,18 +611,17 @@ public class CMFetishAttack {
             boolean isCrit = canCrit(turnIndex, source, target, enemies, allies);
             
             return UtilText.parse(source, target,
-            			(isCrit?"[style.colourExcellent(Critical)]: ":"")
-            				+ "[npc.Name] [npc.verb(tell)] [npc2.name] that [npc.sheIs] going to give [npc2.herHim] a taste of [npc.her] cum, dealing "
-            					+ getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " damage."
-            				+ (target.getFetishDesire(oppositeFetish).isNegative()?" [style.italicsMinorBad(Damage is reduced to 1 as [npc2.name] [npc2.verb(dislike)] the "+oppositeFetish.getName(source)+" fetish!)]":""));
+            			(isCrit?"[style.colourExcellent(Критический)]: ":"")
+            				+ "[npc.Name] [npc.verb(tell)] [npc2.name], что [npc.sheIs] даст [npc2.herHim] попробовать [npc.her] сперму, нанося "
+            					+ getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " урон."
+            				+ (target.getFetishDesire(oppositeFetish).isNegative()?" [style.italicsMinorBad(Урон снижается до 1, если [npc2.name] [npc2.verb(dislike)] этот "+oppositeFetish.getName(source)+" фетиш!)]":""));
         }
 
         @Override
         public String getDescription(int turnIndex, GameCharacter source) {
             DamageType damageType = getDamageType(turnIndex, source);
             return UtilText.parse(source, 
-            		"[npc.Name] can use [npc.her] "+associatedFetish.getName(source)+" fetish to tease [npc.her] target, dealing base " + getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " damage."
-            				+ " [style.italicsMinorBad(Damage is reduced to 1 if the target dislikes the "+oppositeFetish.getName(null)+" fetish.)]");
+            		"[npc.Name] может использовать [npc.her] "+associatedFetish.getName(source)+" фетиш, чтобы дразнить [npc.her] цель, нанося базовый " + getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " урон. [style.italicsMinorBad(Урон снижается до 1, если цель не любит этот "+oppositeFetish.getName(null)+" фетиш.)]");
         }
 
         @Override
@@ -662,23 +639,20 @@ public class CMFetishAttack {
             
             return formatAttackOutcome(source, target,
             		(UtilText.returnStringAtRandom(
-    						"[npc.Name] [npc.verb(grin)] at [npc2.name], before thrusting [npc.her] [npc.hips] and calling out, "
-    								+ "[npc.speech(I can't wait to fill you with my [npc.cum]!)]",
-    						"Running [npc.her] [npc.hands] down over [npc.her] groin, [npc.name] [npc.verb(call)] out to [npc2.name], "
-    								+ "[npc.speech(I bet you can't wait to taste my [npc.cum]!)]",
-    						"[npc.Name] [npc.verb(let)] out an eager groan as [npc.she] [npc.verb(thrust)] [npc.her] [npc.hips] at [npc2.name], "
-    								+ "[npc.speech(I can't wait to fill you with my [npc.cum]!)]"))+dealtDamage.getKey(),
-            		"[npc2.Name] took " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " damage!",
+    						"[npc.Name] [npc.verb(grin)] на [npc2.name], прежде чем резко толкнуть [npc.her] [npc.hips] и выкрикнуть, [npc.speech(Мне не терпится наполнить тебя моей [npc.cum]!)]",
+    						"Проводя [npc.her] [npc.hands] по [npc.her] паху, [npc.name] [npc.verb(call)] до [npc2.name], [npc.speech(Спорим, тебе не терпится попробовать мою [npc.cum]!)]",
+    						"[npc.Name] [npc.verb(let)] с нетерпеливым стоном, пока [npc.she] [npc.verb(thrust)] [npc.her] [npc.hips] на [npc2.name], [npc.speech(Не могу дождаться, когда наполню тебя своей [npc.cum]!)]"))+dealtDamage.getKey(),
+            		"[npc2.Name] получил " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " урон!",
             		(isCrit
-            			?"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!"
+            			?"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!"
             			:null),
-            		"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!");
+            		"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!");
         }
 
         @Override
         public List<String> getCritRequirements(GameCharacter source, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
         	return Util.newArrayListOfValues(
-        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"The target has")+" the "+oppositeFetish.getName(target)+" fetish.");
+        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"У цели есть")+""+oppositeFetish.getName(target)+" фетиш.");
         }
         
         @Override
@@ -688,7 +662,7 @@ public class CMFetishAttack {
     };
     
     public static AbstractCombatMove TEASE_CUM_ADDICT = new AbstractCombatMove(CombatMoveCategory.SPECIAL,
-            "cum addict tease",
+            "зависимая от спермы дразнилка",
             0,
             1,
             CombatMoveType.TEASE,
@@ -724,7 +698,7 @@ public class CMFetishAttack {
         
         @Override
         public Value<Boolean, String> isAvailableFromSpecialCase(GameCharacter source) {
-            return new Value<>(source.hasFetish(associatedFetish), "Available to characters who have the "+associatedFetish.getName(source)+" fetish.");
+            return new Value<>(source.hasFetish(associatedFetish), "Доступно персонажам, у которых есть "+associatedFetish.getName(source)+" фетиш.");
         }
 
         @Override
@@ -733,13 +707,13 @@ public class CMFetishAttack {
             boolean isCrit = canCrit(turnIndex, source, target, enemies, allies);
             
             return UtilText.parse(source, target,
-            			(isCrit?"[style.colourExcellent(Critical)]: ":"")
-    	            		+ "[npc.Name] [npc.verb(tell)] [npc2.name] that [npc.she] [npc.verb(want)] [npc2.her] cum, dealing "
-            					+ getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " damage."
+            			(isCrit?"[style.colourExcellent(Критический)]: ":"")
+    	            		+ "[npc.Name] [npc.verb(tell)] [npc2.name], что [npc.she] [npc.verb(want)] [npc2.her] спермы, нанося "
+            					+ getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " урон."
             				+ (!target.hasPenisIgnoreDildo()
-            						?" [style.italicsMinorBad(Damage is reduced to 1 as [npc2.name] does not have a penis!)]"
+            						?" [style.italicsMinorBad(Урон снижен до 1, так как у [npc2.name] нет пениса!)]"
             						:(target.getFetishDesire(oppositeFetish).isNegative()
-                    						?" [style.italicsMinorBad(Damage is reduced to 1 as [npc2.name] [npc2.verb(dislike)] the "+oppositeFetish.getName(source)+" fetish!)]"
+                    						?" [style.italicsMinorBad(Урон снижается до 1, если [npc2.name] [npc2.verb(dislike)] этот "+oppositeFetish.getName(source)+" фетиш!)]"
                             				:"")));
         }
 
@@ -747,8 +721,7 @@ public class CMFetishAttack {
         public String getDescription(int turnIndex, GameCharacter source) {
             DamageType damageType = getDamageType(turnIndex, source);
             return UtilText.parse(source, 
-            		"[npc.Name] can use [npc.her] "+associatedFetish.getName(source)+" fetish to tease [npc.her] target, dealing base " + getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " damage."
-            				+ " [style.italicsMinorBad(Damage is reduced to 1 if the target has no penis or if they dislike the "+oppositeFetish.getName(null)+" fetish.)]");
+            		"[npc.Name] может использовать [npc.her] "+associatedFetish.getName(source)+" фетиш, чтобы дразнить [npc.her] цель, нанося базовый " + getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " урон. [style.italicsMinorBad(Урон снижен до 1, если у цели нет пениса или если она не любит "+oppositeFetish.getName(null)+" фетиш.)]");
         }
 
         @Override
@@ -766,25 +739,21 @@ public class CMFetishAttack {
             
             return formatAttackOutcome(source, target,
             		(UtilText.returnStringAtRandom(
-    						"[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(reveal)] [npc.her] cum-lust, "
-    								+ "[npc.speech(Aah! I need cum! I haven't had a meal in ages!)]",
-    						"First letting out a hungry whine, [npc.name] [npc.verb(plead)], "
-    								+ "[npc.speech(Mmm! I need cum!)]",
-    						"[npc.Name] [npc.verb(let)] out a pathetic whine as [npc.she] [npc.verb(beg)], "
-    								+ "[npc.speech(I'm so hungry! I need your cum!)]",
-    						"[npc.Name] [npc.verb(let)] out a pathetic whine as [npc.she] [npc.verb(beg)] for a meal, "
-    								+ "[npc.speech(Please! I need some cum!)]"))+dealtDamage.getKey(),
-            		"[npc2.Name] took " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " damage!",
+    						"[npc.Name] [npc.verb(let)] с [npc.a_moan+], пока [npc.she] [npc.verb(reveal)] [npc.her] похоть спермы, [npc.speech(Аах! Мне нужна сперма! Я целую вечность не ела!)]",
+    						"Сначала издав голодный скулеж, [npc.name] [npc.verb(plead)], [npc.speech(Ммм! Мне нужна сперма!)]",
+    						"[npc.Name] [npc.verb(let)] с жалким скулежом, пока [npc.she] [npc.verb(beg)], [npc.speech(Я так голодна! Мне нужна твоя сперма!)]",
+    						"[npc.Name] [npc.verb(let)] с жалким скулежом, пока [npc.she] [npc.verb(beg)] в поисках трапезы, [npc.speech(Пожалуйста! Мне нужно немного спермы!)]"))+dealtDamage.getKey(),
+            		"[npc2.Name] получил " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " урон!",
             		(isCrit
-            			?"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!"
+            			?"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!"
             			:null),
-            		"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!");
+            		"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!");
         }
 
         @Override
         public List<String> getCritRequirements(GameCharacter source, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
         	return Util.newArrayListOfValues(
-        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"The target has")+" the "+oppositeFetish.getName(target)+" fetish.");
+        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"У цели есть")+""+oppositeFetish.getName(target)+" фетиш.");
         }
         
         @Override
@@ -794,7 +763,7 @@ public class CMFetishAttack {
     };
     
     public static AbstractCombatMove TEASE_PENIS_RECEIVING = new AbstractCombatMove(CombatMoveCategory.SPECIAL,
-            "cock addict tease",
+            "задрот-любитель членов",
             0,
             1,
             CombatMoveType.TEASE,
@@ -829,7 +798,7 @@ public class CMFetishAttack {
         
         @Override
         public Value<Boolean, String> isAvailableFromSpecialCase(GameCharacter source) {
-            return new Value<>(source.hasFetish(associatedFetish), "Available to characters who have the "+associatedFetish.getName(source)+" fetish.");
+            return new Value<>(source.hasFetish(associatedFetish), "Доступно персонажам, у которых есть "+associatedFetish.getName(source)+" фетиш.");
         }
 
         @Override
@@ -838,13 +807,13 @@ public class CMFetishAttack {
             boolean isCrit = canCrit(turnIndex, source, target, enemies, allies);
             
             return UtilText.parse(source, target,
-            			(isCrit?"[style.colourExcellent(Critical)]: ":"")
-    	            		+ "[npc.Name] [npc.verb(beg)] for [npc2.namePos] cock, dealing "
-            					+ getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " damage."
+            			(isCrit?"[style.colourExcellent(Критический)]: ":"")
+    	            		+ "[npc.Name] [npc.verb(beg)] ради [npc2.namePos] члена, нанося "
+            					+ getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " урон."
             				+ (!target.hasPenisIgnoreDildo()
-            						?" [style.italicsMinorBad(Damage is reduced to 1 as [npc2.name] does not have a penis!)]"
+            						?" [style.italicsMinorBad(Урон снижен до 1, так как у [npc2.name] нет пениса!)]"
             						:(target.getFetishDesire(oppositeFetish).isNegative()
-                    						?" [style.italicsMinorBad(Damage is reduced to 1 as [npc2.name] [npc2.verb(dislike)] the "+oppositeFetish.getName(source)+" fetish!)]"
+                    						?" [style.italicsMinorBad(Урон снижается до 1, если [npc2.name] [npc2.verb(dislike)] этот "+oppositeFetish.getName(source)+" фетиш!)]"
                             				:"")));
         }
 
@@ -852,8 +821,7 @@ public class CMFetishAttack {
         public String getDescription(int turnIndex, GameCharacter source) {
             DamageType damageType = getDamageType(turnIndex, source);
             return UtilText.parse(source, 
-            		"[npc.Name] can use [npc.her] "+associatedFetish.getName(source)+" fetish to tease [npc.her] target, dealing base " + getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " damage."
-            				+ " [style.italicsMinorBad(Damage is reduced to 1 if the target has no penis or if they dislike the "+oppositeFetish.getName(null)+" fetish.)]");
+            		"[npc.Name] может использовать [npc.her] "+associatedFetish.getName(source)+" фетиш, чтобы дразнить [npc.her] цель, нанося базовый " + getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " урон. [style.italicsMinorBad(Урон снижен до 1, если у цели нет пениса или если она не любит "+oppositeFetish.getName(null)+" фетиш.)]");
         }
 
         @Override
@@ -871,21 +839,21 @@ public class CMFetishAttack {
             
             return formatAttackOutcome(source, target,
             		(UtilText.returnStringAtRandom(
-						"[npc.Name] [npc.verb(stare)] down between [npc2.namePos] [npc2.legs] as [npc.she] [npc.moanVerb], [npc.speech(I'll be getting a taste of your [npc2.cock] soon enough!)]",
-						"[npc.Name] hungrily [npc.verb(gaze)] down between [npc2.namePos] [npc2.legs] and [npc.moanVerb], [npc.speech(I want to feel your cock throbbing inside of me!)]",
-						"[npc.Name] [npc.verb(grin)] at [npc2.name], licking [npc.her] [npc.lips+] and flicking [npc.her] gaze down to rest on [npc2.namePos] crotch as [npc.she] [npc.moanVerb], [npc.speech(I'll take good care of your cock!)]"))
+						"[npc.Name] [npc.verb(stare)] между [npc2.namePos] [npc2.legs], пока [npc.she] [npc.moanVerb], [npc.speech(Скоро я попробую твой [npc2.cock] на вкус!)]",
+						"[npc.Name] жадно [npc.verb(gaze)] между [npc2.namePos] [npc2.legs] и [npc.moanVerb], [npc.speech(Я хочу чувствовать, как твой член пульсирует внутри меня!)]",
+						"[npc.Name] [npc.verb(grin)] на [npc2.name], облизывая [npc.her] [npc.lips+] и опуская [npc.her] взгляд на [npc2.namePos] пах, пока [npc.she] [npc.moanVerb], [npc.speech(Я позабочусь о твоем члене!)]"))
             			+dealtDamage.getKey(),
-            		"[npc2.Name] took " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " damage!",
+            		"[npc2.Name] получил " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " урон!",
             		(isCrit
-            			?"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!"
+            			?"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!"
             			:null),
-            		"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!");
+            		"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!");
         }
 
         @Override
         public List<String> getCritRequirements(GameCharacter source, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
         	return Util.newArrayListOfValues(
-        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"The target has")+" the "+oppositeFetish.getName(target)+" fetish.");
+        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"У цели есть")+""+oppositeFetish.getName(target)+" фетиш.");
         }
         
         @Override
@@ -895,7 +863,7 @@ public class CMFetishAttack {
     };
     
     public static AbstractCombatMove TEASE_PENIS_GIVING = new AbstractCombatMove(CombatMoveCategory.SPECIAL,
-            "cock stud tease",
+            "дразнение кок-стада",
             0,
             1,
             CombatMoveType.TEASE,
@@ -930,7 +898,7 @@ public class CMFetishAttack {
         
         @Override
         public Value<Boolean, String> isAvailableFromSpecialCase(GameCharacter source) {
-            return new Value<>(source.hasFetish(associatedFetish) && source.hasPenisIgnoreDildo(), "Available to characters who both have a penis and have the "+associatedFetish.getName(source)+" fetish.");
+            return new Value<>(source.hasFetish(associatedFetish) && source.hasPenisIgnoreDildo(), "Доступно персонажам, у которых есть пенис и "+associatedFetish.getName(source)+" фетиш.");
         }
 
         @Override
@@ -939,18 +907,17 @@ public class CMFetishAttack {
             boolean isCrit = canCrit(turnIndex, source, target, enemies, allies);
             
             return UtilText.parse(source, target,
-	            		(isCrit?"[style.colourExcellent(Critical)]: ":"")
-	            			+ "[npc.Name] [npc.verb(tell)] [npc2.name] that [npc.sheIs] going to give [npc2.herHim] a taste of [npc.her] [npc.cock+], dealing "
-	            				+ getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " damage."
-            				+ (target.getFetishDesire(oppositeFetish).isNegative()?" [style.italicsMinorBad(Damage is reduced to 1 as [npc2.name] [npc2.verb(dislike)] the "+oppositeFetish.getName(source)+" fetish!)]":""));
+	            		(isCrit?"[style.colourExcellent(Критический)]: ":"")
+	            			+ "[npc.Name] [npc.verb(tell)] [npc2.name], что [npc.sheIs] собирается дать [npc2.herHim] попробовать [npc.her] [npc.cock+], нанося "
+	            				+ getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " урон."
+            				+ (target.getFetishDesire(oppositeFetish).isNegative()?" [style.italicsMinorBad(Урон снижается до 1, если [npc2.name] [npc2.verb(dislike)] этот "+oppositeFetish.getName(source)+" фетиш!)]":""));
         }
 
         @Override
         public String getDescription(int turnIndex, GameCharacter source) {
             DamageType damageType = getDamageType(turnIndex, source);
             return UtilText.parse(source, 
-            		"[npc.Name] can use [npc.her] "+associatedFetish.getName(source)+" fetish to tease [npc.her] target, dealing base " + getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " damage."
-            				+ " [style.italicsMinorBad(Damage is reduced to 1 if the target dislikes the "+oppositeFetish.getName(null)+" fetish.)]");
+            		"[npc.Name] может использовать [npc.her] "+associatedFetish.getName(source)+" фетиш, чтобы дразнить [npc.her] цель, нанося базовый " + getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " урон. [style.italicsMinorBad(Урон снижается до 1, если цель не любит этот "+oppositeFetish.getName(null)+" фетиш.)]");
         }
 
         @Override
@@ -968,20 +935,20 @@ public class CMFetishAttack {
             
             return formatAttackOutcome(source, target,
             		(UtilText.returnStringAtRandom(
-						"[npc.Name] [npc.verb(slide)] [npc.a_hand] down between [npc.her] [npc.legs], before grabbing [npc.her] crotch and [npc.moaning] at [npc2.name], [npc.speech(I can't wait to stuff my cock inside you!)]",
-						"[npc.Name] [npc.verb(thrust)] [npc.her] [npc.hips+] forward and [npc.moanVerb] at [npc2.name], [npc.speech(Come get a taste of my cock!)]",
-						"[npc.Name] [npc.verb(grin)] at [npc2.name] as [npc.she] [npc.moanVerb], [npc.speech(You're going to love the feeling of my cock!)]"))+dealtDamage.getKey(),
-            		"[npc2.Name] took " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " damage!",
+						"[npc.Name] [npc.verb(slide)] [npc.a_hand] между [npc.her] [npc.legs], прежде чем схватить [npc.her] за пах и [npc.moaning] на [npc2.name], [npc.speech(Не могу дождаться, когда запихаю свой член в тебя!)]",
+						"[npc.Name] [npc.verb(thrust)] [npc.her] [npc.hips+] вперед и [npc.moanVerb] на [npc2.name], [npc.speech(Иди и попробуй мой член на вкус!)]",
+						"[npc.Name] [npc.verb(grin)] на [npc2.name], пока [npc.she] [npc.moanVerb], [npc.speech(Тебе понравится ощущение моего члена!)]"))+dealtDamage.getKey(),
+            		"[npc2.Name] получил " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " урон!",
             		(isCrit
-            			?"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!"
+            			?"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!"
             			:null),
-            		"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!");
+            		"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!");
         }
 
         @Override
         public List<String> getCritRequirements(GameCharacter source, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
         	return Util.newArrayListOfValues(
-        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"The target has")+" the "+oppositeFetish.getName(target)+" fetish.");
+        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"У цели есть")+""+oppositeFetish.getName(target)+" фетиш.");
         }
         
         @Override
@@ -991,7 +958,7 @@ public class CMFetishAttack {
     };
     
     public static AbstractCombatMove TEASE_LEG_RECEIVING = new AbstractCombatMove(CombatMoveCategory.SPECIAL,
-            "strutter tease",
+            "дразнилка щеголя",
             0,
             1,
             CombatMoveType.TEASE,
@@ -1026,7 +993,7 @@ public class CMFetishAttack {
         
         @Override
         public Value<Boolean, String> isAvailableFromSpecialCase(GameCharacter source) {
-            return new Value<>(source.hasFetish(associatedFetish) && source.hasLegs(), "Available to characters who have legs and who have the "+associatedFetish.getName(source)+" fetish.");
+            return new Value<>(source.hasFetish(associatedFetish) && source.hasLegs(), "Доступно персонажам, у которых есть ноги и "+associatedFetish.getName(source)+" фетиш.");
         }
 
         @Override
@@ -1035,18 +1002,17 @@ public class CMFetishAttack {
             boolean isCrit = canCrit(turnIndex, source, target, enemies, allies);
             
             return UtilText.parse(source, target,
-            		(isCrit?"[style.colourExcellent(Critical)]: ":"")
-            			+ "[npc.Name] [npc.verb(offer)] [npc2.name] the use of [npc.her] legs, dealing "+ getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " damage."
-            			+ (target.getFetishDesire(oppositeFetish).isNegative()?" [style.italicsMinorBad(Damage is reduced to 1 as [npc2.name] [npc2.verb(dislike)] the "+oppositeFetish.getName(source)+" fetish!)]":""));
+            		(isCrit?"[style.colourExcellent(Критический)]: ":"")
+            			+ "[npc.Name] [npc.verb(offer)] [npc2.name], используя [npc.her] ноги, нанося "+ getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " урон."
+            			+ (target.getFetishDesire(oppositeFetish).isNegative()?" [style.italicsMinorBad(Урон снижается до 1, если [npc2.name] [npc2.verb(dislike)] этот "+oppositeFetish.getName(source)+" фетиш!)]":""));
         }
         
         @Override
         public String getDescription(int turnIndex, GameCharacter source) {
             DamageType damageType = getDamageType(turnIndex, source);
             return UtilText.parse(source, 
-            		"[npc.Name] can use [npc.her] "+associatedFetish.getName(source)+" fetish to tease [npc.her] target, dealing base "
-            				+ getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " damage."
-            				+ " [style.italicsMinorBad(Damage is reduced to 1 if the target dislikes the "+oppositeFetish.getName(null)+" fetish.)]");
+            		"[npc.Name] может использовать [npc.her] "+associatedFetish.getName(source)+" фетиш, чтобы дразнить [npc.her] цель, нанося базовый "
+            				+ getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " урон. [style.italicsMinorBad(Урон снижается до 1, если цель не любит этот "+oppositeFetish.getName(null)+" фетиш.)]");
         }
 
         @Override
@@ -1064,25 +1030,21 @@ public class CMFetishAttack {
             
             return formatAttackOutcome(source, target,
             		(UtilText.returnStringAtRandom(
-						"[npc.Name] [npc.verb(slide)] [npc.her] [npc.hands] down between [npc.her] [npc.legs] and [npc.moansVerb], "
-								+ "[npc.speech(My legs are aching for your touch!)]",
-						"[npc.Name] [npc.verb(slip)] one [npc.hand] down to stroke [npc.her] [npc.legs] and [npc.moansVerb], "
-								+ "[npc.speech(Come fuck my thighs!)]",
-						"[npc.Name] [npc.verb(lift)] one of [npc.her] [npc.legs+] and [npc.moansVerb], "
-								+ "[npc.speech(Come fuck my legs and thighs!)]",
-						"[npc.Name] [npc.verb(wink)] at [npc2.name] and [npc.moansVerb], "
-								+ "[npc.speech(My thighs <i>need</i> some attention!)]"))+dealtDamage.getKey(),
-            		"[npc2.Name] took " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " damage!",
+						"[npc.Name] [npc.verb(slide)] [npc.her] [npc.hands] между [npc.her] [npc.legs] и [npc.moansVerb], [npc.speech(Мои ножки так и просят твоих прикосновений!)]",
+						"[npc.Name] [npc.verb(slip)] одну [npc.hand] вниз, чтобы ласкать [npc.her] [npc.legs] и [npc.moansVerb], [npc.speech(Иди и оттрахай мои бёдра!)]",
+						"[npc.Name] [npc.verb(lift)] одну из [npc.her] [npc.legs+] и [npc.moansVerb], [npc.speech(Иди и оттрахай мои ноги и бёдра!)]",
+						"[npc.Name] [npc.verb(wink)] на [npc2.name] и [npc.moansVerb], [npc.speech(Моим бёдрам <i>нужно</i> немного внимания!)]"))+dealtDamage.getKey(),
+            		"[npc2.Name] получил " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " урон!",
             		(isCrit
-            			?"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!"
+            			?"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!"
             			:null),
-                	"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!");
+                	"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!");
         }
 
         @Override
         public List<String> getCritRequirements(GameCharacter source, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
         	return Util.newArrayListOfValues(
-        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"The target has")+" the "+oppositeFetish.getName(target)+" fetish.");
+        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"У цели есть")+""+oppositeFetish.getName(target)+" фетиш.");
         }
         
         @Override
@@ -1092,7 +1054,7 @@ public class CMFetishAttack {
     };
     
     public static AbstractCombatMove TEASE_LEG_GIVING = new AbstractCombatMove(CombatMoveCategory.SPECIAL,
-            "leg lover tease",
+            "дразнилка ногами",
             0,
             1,
             CombatMoveType.TEASE,
@@ -1127,7 +1089,7 @@ public class CMFetishAttack {
         
         @Override
         public Value<Boolean, String> isAvailableFromSpecialCase(GameCharacter source) {
-            return new Value<>(source.hasFetish(associatedFetish), "Available to characters who have the "+associatedFetish.getName(source)+" fetish.");
+            return new Value<>(source.hasFetish(associatedFetish), "Доступно персонажам, у которых есть "+associatedFetish.getName(source)+" фетиш.");
         }
 
         @Override
@@ -1136,13 +1098,12 @@ public class CMFetishAttack {
             boolean isCrit = canCrit(turnIndex, source, target, enemies, allies);
             
             return UtilText.parse(source, target,
-	            		(isCrit?"[style.colourExcellent(Critical)]: ":"")
-		            		+ "[npc.Name] [npc.verb(tell)] [npc2.name] that [npc.sheIs] going to use [npc2.her] [npc2.legs],"
-		            		+ " dealing "+ getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " damage."
+	            		(isCrit?"[style.colourExcellent(Критический)]: ":"")
+		            		+ "[npc.Name] [npc.verb(tell)] [npc2.name], которая [npc.sheIs] собирается использовать [npc2.her] [npc2.legs], нанося "+ getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " урон."
 	            			+ (!target.hasLegs()
-            					?" [style.italicsMinorBad(Damage is reduced to 1 as [npc2.name] does not have legs!)]"
+            					?" [style.italicsMinorBad(Урон снижен до 1, так как у [npc2.name] нет ног!)]"
             					:(target.getFetishDesire(oppositeFetish).isNegative()
-                    					?" [style.italicsMinorBad(Damage is reduced to 1 as [npc2.name] [npc2.verb(dislike)] the "+oppositeFetish.getName(source)+" fetish!)]"
+                    					?" [style.italicsMinorBad(Урон снижается до 1, если [npc2.name] [npc2.verb(dislike)] этот "+oppositeFetish.getName(source)+" фетиш!)]"
                             			:"")));
         }
 
@@ -1150,8 +1111,7 @@ public class CMFetishAttack {
         public String getDescription(int turnIndex, GameCharacter source) {
             DamageType damageType = getDamageType(turnIndex, source);
             return UtilText.parse(source, 
-            		"[npc.Name] can use [npc.her] "+associatedFetish.getName(source)+" fetish to tease [npc.her] target, dealing base " + getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " damage."
-            				+ " [style.italicsMinorBad(Damage is reduced to 1 if the target doesn't have legs or they dislike the "+oppositeFetish.getName(null)+" fetish.)]");
+            		"[npc.Name] может использовать [npc.her] "+associatedFetish.getName(source)+" фетиш, чтобы дразнить [npc.her] цель, нанося базовый " + getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " урон. [style.italicsMinorBad(Урон снижен до 1, если у цели нет ног или они не любят "+oppositeFetish.getName(null)+" фетиш.)]");
         }
 
         @Override
@@ -1169,23 +1129,20 @@ public class CMFetishAttack {
             
             return formatAttackOutcome(source, target,
             		(UtilText.returnStringAtRandom(
-						"[npc.Name] [npc.verb(grin)] at [npc2.name], before moving [npc.her] gaze down to [npc2.her] [npc2.legs] and [npc.moaning],"
-							+" [npc.speech(Your thighs look like they need a good fuck!)]",
-						"[npc.Name] hungrily [npc.verb(stare)] at [npc2.namePos] [npc2.legs], [npc.moaning],"
-							+" [npc.speech(I'm going to fuck those legs so hard!)]",
-						"Gazing lustfully at [npc2.namePos] [npc2.legs], [npc.name] [npc.verb(let)] out [npc.a_moan+],"
-							+" [npc.speech(I'm going to pound those sweet thighs into the ground!)]"))+dealtDamage.getKey(),
-            		"[npc2.Name] took " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " damage!",
+						"[npc.Name] [npc.verb(grin)] на [npc2.name], прежде чем опустить [npc.her] взгляд на [npc2.her] [npc2.legs] и [npc.moaning], [npc.speech(Твои бёдра так и просятся, чтобы их хорошенько оттрахали!)]",
+						"[npc.Name] жадно [npc.verb(stare)] на [npc2.namePos] [npc2.legs], [npc.moaning], [npc.speech(Я так сильно оттрахаю эти ножки!)]",
+						"Похотливо глядя на [npc2.namePos] [npc2.legs], [npc.name] [npc.verb(let)] [npc.a_moan+], [npc.speech(Я впечатаю эти сладкие бёдра в землю!)]"))+dealtDamage.getKey(),
+            		"[npc2.Name] получил " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " урон!",
             		(isCrit
-            			?"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!"
+            			?"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!"
             			:null),
-            		"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!");
+            		"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!");
         }
 
         @Override
         public List<String> getCritRequirements(GameCharacter source, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
         	return Util.newArrayListOfValues(
-        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"The target has")+" the "+oppositeFetish.getName(target)+" fetish.");
+        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"У цели есть")+""+oppositeFetish.getName(target)+" фетиш.");
         }
         
         @Override
@@ -1195,7 +1152,7 @@ public class CMFetishAttack {
     };
     
 	public static AbstractCombatMove TEASE_FOOT_RECEIVING = new AbstractCombatMove(CombatMoveCategory.SPECIAL,
-            "submissive foot tease",
+            "покорное дразнение ступнями",
             0,
             1,
             CombatMoveType.TEASE,
@@ -1230,7 +1187,7 @@ public class CMFetishAttack {
         
         @Override
         public Value<Boolean, String> isAvailableFromSpecialCase(GameCharacter source) {
-            return new Value<>(source.hasFetish(associatedFetish), "Available to characters who have the "+associatedFetish.getName(source)+" fetish.");
+            return new Value<>(source.hasFetish(associatedFetish), "Доступно персонажам, у которых есть "+associatedFetish.getName(source)+" фетиш.");
         }
 
         @Override
@@ -1239,18 +1196,17 @@ public class CMFetishAttack {
             boolean isCrit = canCrit(turnIndex, source, target, enemies, allies);
             
             return UtilText.parse(source, target,
-            			(isCrit?"[style.colourExcellent(Critical)]: ":"")
-            				+ "[npc.Name] [npc.verb(beg)] for [npc2.name] to use [npc2.her] feet, dealing "
-            					+ getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " damage."
-            				+ (target.getFetishDesire(oppositeFetish).isNegative()?" [style.italicsMinorBad(Damage is reduced to 1 as [npc2.name] [npc2.verb(dislike)] the "+oppositeFetish.getName(source)+" fetish!)]":""));
+            			(isCrit?"[style.colourExcellent(Критический)]: ":"")
+            				+ "[npc.Name] [npc.verb(beg)], чтобы [npc2.name] использовал(а) [npc2.her], нанося "
+            					+ getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " урон."
+            				+ (target.getFetishDesire(oppositeFetish).isNegative()?" [style.italicsMinorBad(Урон снижается до 1, если [npc2.name] [npc2.verb(dislike)] этот "+oppositeFetish.getName(source)+" фетиш!)]":""));
         }
 
         @Override
         public String getDescription(int turnIndex, GameCharacter source) {
             DamageType damageType = getDamageType(turnIndex, source);
             return UtilText.parse(source, 
-            		"[npc.Name] can use [npc.her] "+associatedFetish.getName(source)+" fetish to tease [npc.her] target, dealing base " + getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " damage."
-            				+ " [style.italicsMinorBad(Damage is reduced to 1 if the target dislikes the "+oppositeFetish.getName(null)+" fetish.)]");
+            		"[npc.Name] может использовать [npc.her] "+associatedFetish.getName(source)+" фетиш, чтобы дразнить [npc.her] цель, нанося базовый " + getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " урон. [style.italicsMinorBad(Урон снижается до 1, если цель не любит этот "+oppositeFetish.getName(null)+" фетиш.)]");
         }
 
         @Override
@@ -1268,21 +1224,20 @@ public class CMFetishAttack {
             
             return formatAttackOutcome(source, target,
             		(UtilText.returnStringAtRandom(
-    						"[npc.Name] [npc.verb(gaze)] hungrily down at [npc2.namePos] [npc2.feet] as [npc.she] [npc.moanVerb], [npc.speech(I can't wait to feel your [npc2.feet] all over me!)]",
-    						"[npc.Name] [npc.verb(bite)] [npc.her] [npc.lip] as [npc.she] [npc.verb(gaze)] down at [npc2.namePos] [npc2.feet]. [npc.speech(Let me worship your [npc2.feet]!)]",
-    						"[npc.Name] [npc.verb(grin)] at [npc2.name], licking [npc.her] [npc.lips+] and flicking [npc.her] gaze down to rest on [npc2.namePos] [npc2.feet] as [npc.she] [npc.moanVerb],"
-    								+ " [npc.speech(I just want to worship your [npc2.feet]!)]"))+dealtDamage.getKey(),
-            		"[npc2.Name] took " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " damage!",
+    						"[npc.Name] [npc.verb(gaze)] жадно вниз на [npc2.namePos] [npc2.feet], пока [npc.she] [npc.moanVerb], [npc.speech(Не могу дождаться, когда почувствую твои [npc2.feet] на себе!)]",
+    						"[npc.Name] [npc.verb(bite)] [npc.her] [npc.lip], пока [npc.she] [npc.verb(gaze)] вниз на [npc2.namePos] [npc2.feet]. [npc.speech(Позволь мне поклоняться твоим [npc2.feet]!)]",
+    						"[npc.Name] [npc.verb(grin)] на [npc2.name], облизывая [npc.her] [npc.lips+] и опуская [npc.her] взгляд на [npc2.namePos] [npc2.feet], пока [npc.she] [npc.moanVerb], [npc.speech(Я просто хочу поклоняться твоим [npc2.feet]!)]"))+dealtDamage.getKey(),
+            		"[npc2.Name] получил " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " урон!",
             		(isCrit
-            			?"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!"
+            			?"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!"
             			:null),
-            		"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!");
+            		"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!");
         }
 
         @Override
         public List<String> getCritRequirements(GameCharacter source, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
         	return Util.newArrayListOfValues(
-        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"The target has")+" the "+oppositeFetish.getName(target)+" fetish.");
+        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"У цели есть")+""+oppositeFetish.getName(target)+" фетиш.");
         }
         
         @Override
@@ -1292,7 +1247,7 @@ public class CMFetishAttack {
     };
     
     public static AbstractCombatMove TEASE_FOOT_GIVING = new AbstractCombatMove(CombatMoveCategory.SPECIAL,
-            "dominant foot tease",
+            "дразнить доминантной стопой",
             0,
             1,
             CombatMoveType.TEASE,
@@ -1327,7 +1282,7 @@ public class CMFetishAttack {
         
         @Override
         public Value<Boolean, String> isAvailableFromSpecialCase(GameCharacter source) {
-            return new Value<>(source.hasFetish(associatedFetish), "Available to characters who have the "+associatedFetish.getName(source)+" fetish.");
+            return new Value<>(source.hasFetish(associatedFetish), "Доступно персонажам, у которых есть "+associatedFetish.getName(source)+" фетиш.");
         }
 
         @Override
@@ -1336,18 +1291,17 @@ public class CMFetishAttack {
             boolean isCrit = canCrit(turnIndex, source, target, enemies, allies);
             
             return UtilText.parse(source, target,
-	            		(isCrit?"[style.colourExcellent(Critical)]: ":"")
-	            			+ "[npc.Name] [npc.verb(tell)] [npc2.name] that [npc.sheIs] going to use [npc.her] [npc.feet] on [npc2.herHim], dealing "
-            					+ getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " damage."
-            				+ (target.getFetishDesire(oppositeFetish).isNegative()?" [style.italicsMinorBad(Damage is reduced to 1 as [npc2.name] [npc2.verb(dislike)] the "+oppositeFetish.getName(source)+" fetish!)]":""));
+	            		(isCrit?"[style.colourExcellent(Критический)]: ":"")
+	            			+ "[npc.Name] [npc.verb(tell)] [npc2.name], что [npc.sheIs] собирается использовать [npc.her] [npc.feet] на [npc2.herHim], нанося "
+            					+ getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " урон."
+            				+ (target.getFetishDesire(oppositeFetish).isNegative()?" [style.italicsMinorBad(Урон снижается до 1, если [npc2.name] [npc2.verb(dislike)] этот "+oppositeFetish.getName(source)+" фетиш!)]":""));
         }
 
         @Override
         public String getDescription(int turnIndex, GameCharacter source) {
             DamageType damageType = getDamageType(turnIndex, source);
             return UtilText.parse(source, 
-            		"[npc.Name] can use [npc.her] "+associatedFetish.getName(source)+" fetish to tease [npc.her] target, dealing base " + getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " damage."
-            				+ " [style.italicsMinorBad(Damage is reduced to 1 if the target dislikes the "+oppositeFetish.getName(null)+" fetish.)]");
+            		"[npc.Name] может использовать [npc.her] "+associatedFetish.getName(source)+" фетиш, чтобы дразнить [npc.her] цель, нанося базовый " + getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " урон. [style.italicsMinorBad(Урон снижается до 1, если цель не любит этот "+oppositeFetish.getName(null)+" фетиш.)]");
         }
 
         @Override
@@ -1365,20 +1319,20 @@ public class CMFetishAttack {
             
             return formatAttackOutcome(source, target,
             		(UtilText.returnStringAtRandom(
-    						"[npc.Name] [npc.verb(lift)] one of [npc.her] [npc.legs], before pointing [npc.her] [npc.foot] at [npc2.name]. [npc.speech(Get down on your knees and kiss my [npc.feet]!)]",
-    						"[npc.Name] [npc.verb(thrust)] one of [npc.her] [npc.feet+] forwards and [npc.moanVerb] at [npc2.name], [npc.speech(You'll be licking my toes soon enough!)]",
-    						"[npc.Name] [npc.verb(grin)] at [npc2.name] as [npc.she] [npc.moanVerb], [npc.speech(Crawl over here and kiss my feet!)]"))+dealtDamage.getKey(),
-            		"[npc2.Name] took " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " damage!",
+    						"[npc.Name] [npc.verb(lift)] одну из [npc.her] [npc.legs], прежде чем направить [npc.her] [npc.foot] на [npc2.name]. [npc.speech(Встань на колени и поцелуй мои [npc.feet]!)]",
+    						"[npc.Name] [npc.verb(thrust)] одну из [npc.her] [npc.feet+] вперед и [npc.moanVerb] на [npc2.name], [npc.speech(Скоро ты будешь лизать мои пальцы ног!)]",
+    						"[npc.Name] [npc.verb(grin)] на [npc2.name], пока [npc.she] [npc.moanVerb], [npc.speech(Ползи сюда и поцелуй мои ноги!)]"))+dealtDamage.getKey(),
+            		"[npc2.Name] получил " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " урон!",
             		(isCrit
-            			?"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!"
+            			?"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!"
             			:null),
-            		"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!");
+            		"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!");
         }
 
         @Override
         public List<String> getCritRequirements(GameCharacter source, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
         	return Util.newArrayListOfValues(
-        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"The target has")+" the "+oppositeFetish.getName(target)+" fetish.");
+        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"У цели есть")+""+oppositeFetish.getName(target)+" фетиш.");
         }
         
         @Override
@@ -1388,7 +1342,7 @@ public class CMFetishAttack {
     };
     
 	public static AbstractCombatMove TEASE_ARMPIT_RECEIVING = new AbstractCombatMove(CombatMoveCategory.SPECIAL,
-            "armpit slut tease",
+            "дразнящая подмышечная шлюшка",
             0,
             1,
             CombatMoveType.TEASE,
@@ -1423,7 +1377,7 @@ public class CMFetishAttack {
         
         @Override
         public Value<Boolean, String> isAvailableFromSpecialCase(GameCharacter source) {
-            return new Value<>(source.hasFetish(associatedFetish), "Available to characters who have the "+associatedFetish.getName(source)+" fetish.");
+            return new Value<>(source.hasFetish(associatedFetish), "Доступно персонажам, у которых есть "+associatedFetish.getName(source)+" фетиш.");
         }
 
         @Override
@@ -1432,18 +1386,17 @@ public class CMFetishAttack {
             boolean isCrit = canCrit(turnIndex, source, target, enemies, allies);
             
             return UtilText.parse(source, target,
-            			(isCrit?"[style.colourExcellent(Critical)]: ":"")
-            				+ "[npc.Name] [npc.verb(beg)] for [npc2.name] to use [npc2.her] armpits, dealing "
-            					+ getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " damage."
-            				+ (target.getFetishDesire(oppositeFetish).isNegative()?" [style.italicsMinorBad(Damage is reduced to 1 as [npc2.name] [npc2.verb(dislike)] the "+oppositeFetish.getName(source)+" fetish!)]":""));
+            			(isCrit?"[style.colourExcellent(Критический)]: ":"")
+            				+ "[npc.Name] [npc.verb(beg)], чтобы [npc2.name] использовал(а) [npc2.her] подмышки, нанося "
+            					+ getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " урон."
+            				+ (target.getFetishDesire(oppositeFetish).isNegative()?" [style.italicsMinorBad(Урон снижается до 1, если [npc2.name] [npc2.verb(dislike)] этот "+oppositeFetish.getName(source)+" фетиш!)]":""));
         }
 
         @Override
         public String getDescription(int turnIndex, GameCharacter source) {
             DamageType damageType = getDamageType(turnIndex, source);
             return UtilText.parse(source, 
-            		"[npc.Name] can use [npc.her] "+associatedFetish.getName(source)+" fetish to tease [npc.her] target, dealing base " + getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " damage."
-            				+ " [style.italicsMinorBad(Damage is reduced to 1 if the target dislikes the "+oppositeFetish.getName(null)+" fetish.)]");
+            		"[npc.Name] может использовать [npc.her] "+associatedFetish.getName(source)+" фетиш, чтобы дразнить [npc.her] цель, нанося базовый " + getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " урон. [style.italicsMinorBad(Урон снижается до 1, если цель не любит этот "+oppositeFetish.getName(null)+" фетиш.)]");
         }
 
         @Override
@@ -1461,22 +1414,21 @@ public class CMFetishAttack {
             
             return formatAttackOutcome(source, target,
             		(UtilText.returnStringAtRandom(
-    						"[npc.Name] [npc.verb(lift)] [npc.her] [npc.arms] and [npc.moanVerb], [npc.speech(I can't wait for you to be using my armpits!)]",
-    						"[npc.Name] [npc.verb(bite)] [npc.her] [npc.lip] as [npc.she] [npc.verb(lift)] [npc.her] [npc.arm] and [npc.verb(show)] off [npc.her] [npc.armpits+], [npc.speech(You're going to love my armpits!)]",
-    						"[npc.Name] [npc.verb(grin)] at [npc2.name], licking [npc.her] [npc.lips+] and lifting [npc.her] [npc.arm] to show off [npc.her] [npc.armpit+] as [npc.she] [npc.moanVerb],"
-    								+ " [npc.speech(I just want you to be worshipping my pits!)]")
+    						"[npc.Name] [npc.verb(lift)] [npc.her] [npc.arms] и [npc.moanVerb], [npc.speech(Не могу дождаться, когда ты начнешь использовать мои подмышки!)]",
+    						"[npc.Name] [npc.verb(bite)] [npc.her] [npc.lip] как [npc.she] [npc.verb(lift)] [npc.her] [npc.arm] и [npc.verb(show)] с [npc.her] [npc.armpits+], [npc.speech(Тебе понравятся мои подмышки!)]",
+    						"[npc.Name] [npc.verb(grin)] на [npc2.name], облизывая [npc.her] [npc.lips+] и задирая [npc.her] [npc.arm], чтобы продемонстрировать [npc.her] [npc.armpit+] как [npc.she] [npc.moanVerb], [npc.speech(Я просто хочу, чтобы ты поклонялся моим подмышкам!)]")
             		)+dealtDamage.getKey(),
-            		"[npc2.Name] took " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " damage!",
+            		"[npc2.Name] получил " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " урон!",
             		(isCrit
-            			?"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!"
+            			?"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!"
             			:null),
-            		"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!");
+            		"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!");
         }
 
         @Override
         public List<String> getCritRequirements(GameCharacter source, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
         	return Util.newArrayListOfValues(
-        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"The target has")+" the "+oppositeFetish.getName(target)+" fetish.");
+        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"У цели есть")+""+oppositeFetish.getName(target)+" фетиш.");
         }
         
         @Override
@@ -1486,7 +1438,7 @@ public class CMFetishAttack {
     };
     
     public static AbstractCombatMove TEASE_ARMPIT_GIVING = new AbstractCombatMove(CombatMoveCategory.SPECIAL,
-            "armpit lover tease",
+            "дразнящая любительница подмышек",
             0,
             1,
             CombatMoveType.TEASE,
@@ -1521,7 +1473,7 @@ public class CMFetishAttack {
         
         @Override
         public Value<Boolean, String> isAvailableFromSpecialCase(GameCharacter source) {
-            return new Value<>(source.hasFetish(associatedFetish), "Available to characters who have the "+associatedFetish.getName(source)+" fetish.");
+            return new Value<>(source.hasFetish(associatedFetish), "Доступно персонажам, у которых есть "+associatedFetish.getName(source)+" фетиш.");
         }
 
         @Override
@@ -1530,18 +1482,17 @@ public class CMFetishAttack {
             boolean isCrit = canCrit(turnIndex, source, target, enemies, allies);
             
             return UtilText.parse(source, target,
-	            		(isCrit?"[style.colourExcellent(Critical)]: ":"")
-	            			+ "[npc.Name] [npc.verb(tell)] [npc2.name] that [npc.sheIs] going to use [npc.her] [npc.armpits] on [npc2.herHim], dealing "
-            					+ getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " damage."
-            				+ (target.getFetishDesire(oppositeFetish).isNegative()?" [style.italicsMinorBad(Damage is reduced to 1 as [npc2.name] [npc2.verb(dislike)] the "+oppositeFetish.getName(source)+" fetish!)]":""));
+	            		(isCrit?"[style.colourExcellent(Критический)]: ":"")
+	            			+ "[npc.Name] [npc.verb(tell)] [npc2.name], что [npc.sheIs] собирается использовать [npc.her] [npc.armpits] на [npc2.herHim], нанося "
+            					+ getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " урон."
+            				+ (target.getFetishDesire(oppositeFetish).isNegative()?" [style.italicsMinorBad(Урон снижается до 1, если [npc2.name] [npc2.verb(dislike)] этот "+oppositeFetish.getName(source)+" фетиш!)]":""));
         }
 
         @Override
         public String getDescription(int turnIndex, GameCharacter source) {
             DamageType damageType = getDamageType(turnIndex, source);
             return UtilText.parse(source, 
-            		"[npc.Name] can use [npc.her] "+associatedFetish.getName(source)+" fetish to tease [npc.her] target, dealing base " + getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " damage."
-            				+ " [style.italicsMinorBad(Damage is reduced to 1 if the target dislikes the "+oppositeFetish.getName(null)+" fetish.)]");
+            		"[npc.Name] может использовать [npc.her] "+associatedFetish.getName(source)+" фетиш, чтобы дразнить [npc.her] цель, нанося базовый " + getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " урон. [style.italicsMinorBad(Урон снижается до 1, если цель не любит этот "+oppositeFetish.getName(null)+" фетиш.)]");
         }
 
         @Override
@@ -1559,24 +1510,21 @@ public class CMFetishAttack {
             
             return formatAttackOutcome(source, target,
             		(UtilText.returnStringAtRandom(
-    						"[npc.Name] [npc.verb(grin)] at [npc2.name], before moving [npc.her] gaze down to [npc2.her] [npc2.arms] and [npc.moaning],"
-    								+" [npc.speech(Your armpits look like they need a good fuck!)]",
-							"[npc.Name] hungrily [npc.verb(stare)] at [npc2.namePos] [npc2.armpits], [npc.moaning],"
-								+" [npc.speech(I'm going to use your pits!)]",
-							"Gazing lustfully at [npc2.namePos] [npc2.arms], [npc.name] [npc.verb(let)] out [npc.a_moan+],"
-								+" [npc.speech(I can't wait to be having fun with your sexy pits!)]")
+    						"[npc.Name] [npc.verb(grin)] на [npc2.name], прежде чем опустить [npc.her] взгляд на [npc2.her] [npc2.arms] и [npc.moaning], [npc.speech(Твои подмышки так и просят, чтобы их хорошенько оттрахали!)]",
+							"[npc.Name] жадно [npc.verb(stare)] на [npc2.namePos] [npc2.armpits], [npc.moaning], [npc.speech(Я собираюсь использовать твои подмышки!)]",
+							"Похотливо глядя на [npc2.namePos] [npc2.arms], [npc.name] [npc.verb(let)] [npc.a_moan+], [npc.speech(Не могу дождаться, когда повеселюсь с твоими сексуальными подмышками!)]")
             		)+dealtDamage.getKey(),
-            		"[npc2.Name] took " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " damage!",
+            		"[npc2.Name] получил " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " урон!",
             		(isCrit
-            			?"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!"
+            			?"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!"
             			:null),
-            		"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!");
+            		"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!");
         }
 
         @Override
         public List<String> getCritRequirements(GameCharacter source, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
         	return Util.newArrayListOfValues(
-        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"The target has")+" the "+oppositeFetish.getName(target)+" fetish.");
+        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"У цели есть")+""+oppositeFetish.getName(target)+" фетиш.");
         }
         
         @Override
@@ -1586,7 +1534,7 @@ public class CMFetishAttack {
     };
     
     public static AbstractCombatMove TEASE_ORAL_RECEIVING = new AbstractCombatMove(CombatMoveCategory.SPECIAL,
-            "oral tease",
+            "оральный дразнинг",
             0,
             1,
             CombatMoveType.TEASE,
@@ -1621,7 +1569,7 @@ public class CMFetishAttack {
         
         @Override
         public Value<Boolean, String> isAvailableFromSpecialCase(GameCharacter source) {
-            return new Value<>(source.hasFetish(associatedFetish), "Available to characters who have the "+associatedFetish.getName(source)+" fetish.");
+            return new Value<>(source.hasFetish(associatedFetish), "Доступно персонажам, у которых есть "+associatedFetish.getName(source)+" фетиш.");
         }
 
         @Override
@@ -1630,18 +1578,17 @@ public class CMFetishAttack {
             boolean isCrit = canCrit(turnIndex, source, target, enemies, allies);
             
             return UtilText.parse(source, target,
-            			(isCrit?"[style.colourExcellent(Critical)]: ":"")
-                    		+ "[npc.Name] [npc.verb(beg)] for [npc2.name] to perform oral on [npc.herHim], dealing "
-                    			+ getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " damage."
-            				+ (target.getFetishDesire(oppositeFetish).isNegative()?" [style.italicsMinorBad(Damage is reduced to 1 as [npc2.name] [npc2.verb(dislike)] the "+oppositeFetish.getName(source)+" fetish!)]":""));
+            			(isCrit?"[style.colourExcellent(Критический)]: ":"")
+                    		+ "[npc.Name] [npc.verb(beg)], чтобы [npc2.name] совершила оральный секс над [npc.herHim], нанося "
+                    			+ getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " урон."
+            				+ (target.getFetishDesire(oppositeFetish).isNegative()?" [style.italicsMinorBad(Урон снижается до 1, если [npc2.name] [npc2.verb(dislike)] этот "+oppositeFetish.getName(source)+" фетиш!)]":""));
         }
 
         @Override
         public String getDescription(int turnIndex, GameCharacter source) {
             DamageType damageType = getDamageType(turnIndex, source);
             return UtilText.parse(source, 
-            		"[npc.Name] can use [npc.her] "+associatedFetish.getName(source)+" fetish to tease [npc.her] target, dealing base " + getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " damage."
-            				+ " [style.italicsMinorBad(Damage is reduced to 1 if the target dislikes the "+oppositeFetish.getName(null)+" fetish.)]");
+            		"[npc.Name] может использовать [npc.her] "+associatedFetish.getName(source)+" фетиш, чтобы дразнить [npc.her] цель, нанося базовый " + getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " урон. [style.italicsMinorBad(Урон снижается до 1, если цель не любит этот "+oppositeFetish.getName(null)+" фетиш.)]");
         }
 
         @Override
@@ -1659,23 +1606,20 @@ public class CMFetishAttack {
             
             return formatAttackOutcome(source, target,
             		(UtilText.returnStringAtRandom(
-    						"[npc.Name] [npc.verb(grin)] at [npc2.name], gazing at [npc2.her] [npc2.lips+] as [npc.she] [npc.moansVerb],"
-    							+" [npc.speech(I can't wait to put your [npc2.lips] to use!)]",
-    						"[npc.Name] hungrily [npc.verb(stare)] at [npc2.namePos] [npc2.lips+], [npc.moaning],"
-    							+" [npc.speech(Your tongue belongs between my [npc.legs]!)]",
-    						"Gazing lustfully at [npc2.namePos] [npc2.lips+], [npc.name] [npc.verb(let)] out [npc.a_moan+],"
-    							+" [npc.speech(I'm going to put your [npc2.lips] to good use!)]"))+dealtDamage.getKey(),
-            		"[npc2.Name] took " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " damage!",
+    						"[npc.Name] [npc.verb(grin)] на [npc2.name], глядя на [npc2.her] [npc2.lips+] как на [npc.she] [npc.moansVerb], [npc.speech(Не терпится пустить твои [npc2.lips] в дело!)]",
+    						"[npc.Name] жадно [npc.verb(stare)] в [npc2.namePos] [npc2.lips+], [npc.moaning], [npc.speech(Твой язык должен быть между моих [npc.legs]!)]",
+    						"Похотливо глядя на [npc2.namePos] [npc2.lips+], [npc.name] [npc.verb(let)] [npc.a_moan+], [npc.speech(Я собираюсь с пользой использовать твой [npc2.lips]!)]"))+dealtDamage.getKey(),
+            		"[npc2.Name] получил " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " урон!",
             		(isCrit
-            			?"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!"
+            			?"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!"
             			:null),
-            		"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!");
+            		"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!");
         }
 
         @Override
         public List<String> getCritRequirements(GameCharacter source, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
         	return Util.newArrayListOfValues(
-        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"The target has")+" the "+oppositeFetish.getName(target)+" fetish.");
+        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"У цели есть")+""+oppositeFetish.getName(target)+" фетиш.");
         }
         
         @Override
@@ -1685,7 +1629,7 @@ public class CMFetishAttack {
     };
     
     public static AbstractCombatMove TEASE_ORAL_GIVING = new AbstractCombatMove(CombatMoveCategory.SPECIAL,
-            "oral performer tease",
+            "дразнить любителя орального секса",
             0,
             1,
             CombatMoveType.TEASE,
@@ -1720,7 +1664,7 @@ public class CMFetishAttack {
         
         @Override
         public Value<Boolean, String> isAvailableFromSpecialCase(GameCharacter source) {
-            return new Value<>(source.hasFetish(associatedFetish), "Available to characters who have the "+associatedFetish.getName(source)+" fetish.");
+            return new Value<>(source.hasFetish(associatedFetish), "Доступно персонажам, у которых есть "+associatedFetish.getName(source)+" фетиш.");
         }
 
         @Override
@@ -1729,18 +1673,17 @@ public class CMFetishAttack {
             boolean isCrit = canCrit(turnIndex, source, target, enemies, allies);
             
             return UtilText.parse(source, target,
-            			(isCrit?"[style.colourExcellent(Critical)]: ":"")
-    	            		+ "[npc.Name] [npc.verb(tell)] [npc2.name] that [npc.sheIs] going to perform oral on [npc2.herHim], dealing "
-            					+ getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " damage."
-            				+ (target.getFetishDesire(oppositeFetish).isNegative()?" [style.italicsMinorBad(Damage is reduced to 1 as [npc2.name] [npc2.verb(dislike)] the "+oppositeFetish.getName(source)+" fetish!)]":""));
+            			(isCrit?"[style.colourExcellent(Критический)]: ":"")
+    	            		+ "[npc.Name] [npc.verb(tell)] [npc2.name], что [npc.sheIs] собирается отсосать [npc2.herHim], нанося "
+            					+ getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " урон."
+            				+ (target.getFetishDesire(oppositeFetish).isNegative()?" [style.italicsMinorBad(Урон снижается до 1, если [npc2.name] [npc2.verb(dislike)] этот "+oppositeFetish.getName(source)+" фетиш!)]":""));
         }
 
         @Override
         public String getDescription(int turnIndex, GameCharacter source) {
             DamageType damageType = getDamageType(turnIndex, source);
             return UtilText.parse(source, 
-            		"[npc.Name] can use [npc.her] "+associatedFetish.getName(source)+" fetish to tease [npc.her] target, dealing base " + getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " damage."
-            				+ " [style.italicsMinorBad(Damage is reduced to 1 if the target dislikes the "+oppositeFetish.getName(null)+" fetish.)]");
+            		"[npc.Name] может использовать [npc.her] "+associatedFetish.getName(source)+" фетиш, чтобы дразнить [npc.her] цель, нанося базовый " + getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " урон. [style.italicsMinorBad(Урон снижается до 1, если цель не любит этот "+oppositeFetish.getName(null)+" фетиш.)]");
         }
 
         @Override
@@ -1758,33 +1701,33 @@ public class CMFetishAttack {
             
             return formatAttackOutcome(source, target,
             		(UtilText.returnStringAtRandom(
-    						"[npc.Name] [npc.verb(open)] [npc.her] mouth, sticking out [npc.her] [npc.tongue] and making a suggestive gesture with one of [npc.her] [npc.hands], "
+    						"[npc.Name] [npc.verb(open)] [npc.her] рот, высунув [npc.her] [npc.tongue] и многозначительно поманив одним из [npc.her] [npc.hands], "
     								+ (target.getAppearsAsGender().isFeminine()
-    									?"[npc.speech(You know, I'm pretty skilled with my tongue!)]"
-    									:"[npc.speech(Want to find out how deep I can take it?)]"),
-    						"[npc.Name] [npc.verb(open)] [npc.her] mouth, sticking out [npc.her] [npc.tongue] and making a suggestive gesture with one of [npc.her] [npc.hands], "
+    									?"[npc.speech(Знаешь, я довольно искусно владею языком!)]"
+    									:"[npc.speech(Хочешь узнать, как глубоко я смогу его принять?)]"),
+    						"[npc.Name] [npc.verb(open)] [npc.her] рот, высунув [npc.her] [npc.tongue] и многозначительно поманив одним из [npc.her] [npc.hands], "
     								+ (target.getAppearsAsGender().isFeminine()
-    									?"[npc.speech(You'd love the feeling of my tongue!)]"
-    									:"[npc.speech(Want to stick your cock down my throat?)]"),
-    						"[npc.Name] [npc.verb(open)] [npc.her] mouth, sticking out [npc.her] [npc.tongue] and making a suggestive gesture with one of [npc.her] [npc.hands], "
+    									?"[npc.speech(Тебе бы очень понравилось ощущение моего языка!)]"
+    									:"[npc.speech(Хочешь засунуть свой член мне в глотку?)]"),
+    						"[npc.Name] [npc.verb(open)] [npc.her] рот, высунув [npc.her] [npc.tongue] и многозначительно поманив одним из [npc.her] [npc.hands], "
     								+ (target.getAppearsAsGender().isFeminine()
-    									?"[npc.speech(I'm the best at eating girls out! Want to see?)]"
-    									:"[npc.speech(I'm the best at blowjobs! Want to see?)]"),
-    						"[npc.Name] [npc.verb(open)] [npc.her] mouth, sticking out [npc.her] [npc.tongue] and making a suggestive gesture with one of [npc.her] [npc.hands], "
+    									?"[npc.speech(Я лучше всех умею ласкать девчонок языком! Хочешь посмотреть?)]"
+    									:"[npc.speech(Я лучшая в минете! Хочешь посмотреть?)]"),
+    						"[npc.Name] [npc.verb(open)] [npc.her] рот, высунув [npc.her] [npc.tongue] и многозначительно поманив одним из [npc.her] [npc.hands], "
     								+ (target.getAppearsAsGender().isFeminine()
-    									?"[npc.speech(You know you want to feel my tongue!)]"
-    									:"[npc.speech(You know you want me to suck your cock!)]")))+dealtDamage.getKey(),
-            		"[npc2.Name] took " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " damage!",
+    									?"[npc.speech(Ты же знаешь, что хочешь почувствовать мой язык!)]"
+    									:"[npc.speech(Ты же знаешь, что хочешь, чтобы я отсосала твой член!)]")))+dealtDamage.getKey(),
+            		"[npc2.Name] получил " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " урон!",
             		(isCrit
-            			?"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!"
+            			?"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!"
             			:null),
-            		"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!");
+            		"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!");
         }
 
         @Override
         public List<String> getCritRequirements(GameCharacter source, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
         	return Util.newArrayListOfValues(
-        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"The target has")+" the "+oppositeFetish.getName(target)+" fetish.");
+        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"У цели есть")+""+oppositeFetish.getName(target)+" фетиш.");
         }
         
         @Override
@@ -1794,7 +1737,7 @@ public class CMFetishAttack {
     };
     
     public static AbstractCombatMove TEASE_BREASTS_OTHERS = new AbstractCombatMove(CombatMoveCategory.SPECIAL,
-            "breasts lover tease",
+            "дразнить любителя груди",
             0,
             1,
             CombatMoveType.TEASE,
@@ -1829,7 +1772,7 @@ public class CMFetishAttack {
         
         @Override
         public Value<Boolean, String> isAvailableFromSpecialCase(GameCharacter source) {
-            return new Value<>(source.hasFetish(associatedFetish), "Available to characters who have the "+associatedFetish.getName(source)+" fetish.");
+            return new Value<>(source.hasFetish(associatedFetish), "Доступно персонажам, у которых есть "+associatedFetish.getName(source)+" фетиш.");
         }
 
         @Override
@@ -1838,13 +1781,13 @@ public class CMFetishAttack {
             boolean isCrit = canCrit(turnIndex, source, target, enemies, allies);
             
             return UtilText.parse(source, target,
-            			(isCrit?"[style.colourExcellent(Critical)]: ":"")
-                    		+ "[npc.Name] [npc.verb(beg)] to have a feel of [npc2.namePos] [npc2.breasts+], dealing "
-            					+ getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " damage."
+            			(isCrit?"[style.colourExcellent(Критический)]: ":"")
+                    		+ "[npc.Name] [npc.verb(beg)], чтобы прочувствовать [npc2.namePos] [npc2.breasts+], нанося "
+            					+ getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " урон."
             				+ (!target.hasBreasts()
-            						?" [style.italicsMinorBad(Damage is reduced to 1 as [npc2.name] does not have breasts!)]"
+            						?" [style.italicsMinorBad(Урон снижен до 1, так как у [npc2.name] нет груди!)]"
             						:(target.getFetishDesire(oppositeFetish).isNegative()
-                    						?" [style.italicsMinorBad(Damage is reduced to 1 as [npc2.name] [npc2.verb(dislike)] the "+oppositeFetish.getName(source)+" fetish!)]"
+                    						?" [style.italicsMinorBad(Урон снижается до 1, если [npc2.name] [npc2.verb(dislike)] этот "+oppositeFetish.getName(source)+" фетиш!)]"
                             				:"")));
         }
 
@@ -1852,8 +1795,7 @@ public class CMFetishAttack {
         public String getDescription(int turnIndex, GameCharacter source) {
             DamageType damageType = getDamageType(turnIndex, source);
             return UtilText.parse(source, 
-            		"[npc.Name] can use [npc.her] "+associatedFetish.getName(source)+" fetish to tease [npc.her] target, dealing base " + getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " damage."
-            				+ " [style.italicsMinorBad(Damage is reduced to 1 if the target has no breasts or if they dislike the "+oppositeFetish.getName(null)+" fetish.)]");
+            		"[npc.Name] может использовать [npc.her] "+associatedFetish.getName(source)+" фетиш, чтобы дразнить [npc.her] цель, нанося базовый " + getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " урона. [style.italicsMinorBad(Урон снижен до 1, если у цели нет груди или если ей не нравится "+oppositeFetish.getName(null)+" фетиш.)]");
         }
 
         @Override
@@ -1873,35 +1815,30 @@ public class CMFetishAttack {
             if(target.hasBreasts()) {
 				attackText = UtilText.parse(source, target,
 						(UtilText.returnStringAtRandom(
-						"[npc.Name] [npc.verb(grin)] at [npc2.name], gazing at [npc2.her] [npc2.breasts+] as [npc.she] [npc.moansVerb],"
-							+" [npc.speech(I can't wait to get my [npc.hands] on your [npc2.breasts]!)]",
-						"[npc.Name] hungrily [npc.verb(stare)] at [npc2.namePos] [npc2.breasts+], [npc.moaning],"
-							+" [npc.speech(I'm going to have fun playing with those!)]",
-						"Gazing lustfully at [npc2.namePos] [npc2.breasts+], [npc.name] [npc.verb(let)] out [npc.a_moan+],"
-								+" [npc.speech(I'm going to have fun with those [npc2.breasts+] of yours!)]")));
+						"[npc.Name] [npc.verb(grin)] на [npc2.name], пристально глядя на [npc2.her] [npc2.breasts+], пока [npc.she] [npc.moansVerb], [npc.speech(Мне не терпится добраться своими [npc.hands] до твоих [npc2.breasts]!)]",
+						"[npc.Name] жадно [npc.verb(stare)] у [npc2.namePos] [npc2.breasts+], [npc.moaning], [npc.speech(Я повеселюсь, играя с ними!)]",
+						"Похотливо глядя на [npc2.namePos] [npc2.breasts+], [npc.name] [npc.verb(let)] из [npc.a_moan+], [npc.speech(Я повеселюсь с твоими [npc2.breasts+]!)]")));
 				
 			} else {
 				attackText = UtilText.parse(source, target,
 						(UtilText.returnStringAtRandom(
-							"Gazing at [npc2.namePos] chest, [npc.name] [npc.verb(let)] out an annoyed huff,"
-									+ " [npc.speech(I wish you had a nice pair of tits that I could use!)]",
-							"[npc.Name] [npc.verb(pout)] at [npc2.namePos] [npc2.breasts+], before whining,"
-									+ " [npc.speech(Aww... I wish you had some nice tits for me to play with!)]")));
+							"Глядя на грудь [npc2.namePos], [npc.name] [npc.verb(let)] раздраженно фыркнув, [npc.speech(Вот если бы у тебя была нормальная пара сисек, чтобы я могла ими заняться!)]",
+							"[npc.Name] [npc.verb(pout)] на [npc2.namePos] [npc2.breasts+], после чего заныла: [npc.speech(О-о-о... вот если бы у тебя были классные сиськи, чтобы я могла с ними поиграть!)]")));
 			}
             
             return formatAttackOutcome(source, target,
             		attackText+dealtDamage.getKey(),
-            		"[npc2.Name] took " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " damage!",
+            		"[npc2.Name] получил " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " урон!",
             		(isCrit
-            			?"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!"
+            			?"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!"
             			:null),
-            		"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!");
+            		"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!");
         }
 
         @Override
         public List<String> getCritRequirements(GameCharacter source, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
         	return Util.newArrayListOfValues(
-        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"The target has")+" the "+oppositeFetish.getName(target)+" fetish.");
+        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"У цели есть")+""+oppositeFetish.getName(target)+" фетиш.");
         }
         
         @Override
@@ -1911,7 +1848,7 @@ public class CMFetishAttack {
     };
     
     public static AbstractCombatMove TEASE_BREASTS = new AbstractCombatMove(CombatMoveCategory.SPECIAL,
-            "breasts tease",
+            "дразнить грудью",
             0,
             1,
             CombatMoveType.TEASE,
@@ -1946,7 +1883,7 @@ public class CMFetishAttack {
         
         @Override
         public Value<Boolean, String> isAvailableFromSpecialCase(GameCharacter source) {
-            return new Value<>(source.hasFetish(associatedFetish) && source.hasBreasts(), "Available to characters who both have breasts and who have the "+associatedFetish.getName(source)+" fetish.");
+            return new Value<>(source.hasFetish(associatedFetish) && source.hasBreasts(), "Доступно персонажам, у которых есть грудь и навык "+associatedFetish.getName(source)+" фетиш.");
         }
 
         @Override
@@ -1955,18 +1892,17 @@ public class CMFetishAttack {
             boolean isCrit = canCrit(turnIndex, source, target, enemies, allies);
             
             return UtilText.parse(source, target,
-            			(isCrit?"[style.colourExcellent(Critical)]: ":"")
-            				+ "[npc.Name] [npc.verb(tease)] [npc2.name] with the promise of getting to have a feel of [npc.her] tits, dealing "
-            					+ getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " damage."
-            				+ (target.getFetishDesire(oppositeFetish).isNegative()?" [style.italicsMinorBad(Damage is reduced to 1 as [npc2.name] [npc2.verb(dislike)] the "+oppositeFetish.getName(source)+" fetish!)]":""));
+            			(isCrit?"[style.colourExcellent(Критический)]: ":"")
+            				+ "[npc.Name] [npc.verb(tease)] [npc2.name], обещая пощупать [npc.her] грудь, нанося "
+            					+ getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " урон."
+            				+ (target.getFetishDesire(oppositeFetish).isNegative()?" [style.italicsMinorBad(Урон снижается до 1, если [npc2.name] [npc2.verb(dislike)] этот "+oppositeFetish.getName(source)+" фетиш!)]":""));
         }
 
         @Override
         public String getDescription(int turnIndex, GameCharacter source) {
             DamageType damageType = getDamageType(turnIndex, source);
             return UtilText.parse(source, 
-            		"[npc.Name] can use [npc.her] "+associatedFetish.getName(source)+" fetish to tease [npc.her] target, dealing base " + getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " damage."
-            				+ " [style.italicsMinorBad(Damage is reduced to 1 if the target dislikes the "+oppositeFetish.getName(null)+" fetish.)]");
+            		"[npc.Name] может использовать [npc.her] "+associatedFetish.getName(source)+" фетиш, чтобы дразнить [npc.her] цель, нанося базовый " + getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " урон. [style.italicsMinorBad(Урон снижается до 1, если цель не любит этот "+oppositeFetish.getName(null)+" фетиш.)]");
         }
 
         @Override
@@ -1984,33 +1920,33 @@ public class CMFetishAttack {
             
             return formatAttackOutcome(source, target,
             		(UtilText.returnStringAtRandom(
-    						"Pushing [npc.her] [npc.breasts+] together, [npc.name] [npc.verb(lean)] forwards and [npc.verb(wink)] at [npc2.name], "
+    						"Сжимая [npc.her] [npc.breasts+] вместе, [npc.name] [npc.verb(lean)] вперед и [npc.verb(wink)] на [npc2.name], "
     								+ (target.getAppearsAsGender().isFeminine()
-    									?"[npc.speech(Let's play together!)]"
-    									:"[npc.speech(Come on, I'll let you have a squeeze!)]"),
-    						"Pushing [npc.her] [npc.breasts+] together, [npc.name] [npc.verb(lean)] forwards and [npc.verb(wink)] at [npc2.name], "
+    									?"[npc.speech(Давай поиграем вместе!)]"
+    									:"[npc.speech(Ну же, я позволю тебе их сжать!)]"),
+    						"Сжимая [npc.her] [npc.breasts+] вместе, [npc.name] [npc.verb(lean)] вперед и [npc.verb(wink)] на [npc2.name], "
     								+ (target.getAppearsAsGender().isFeminine()
-    									?"[npc.speech(Want to have some fun?)]"
-    									:"[npc.speech(Come on, you know you want a feel!)]"),
-    						"Running [npc.her] [npc.hands] suggestively over [npc.her] [npc.breasts+], [npc.name] [npc.verb(bite)] [npc.her] lip before pouting at [npc2.name], "
+    									?"[npc.speech(Хочешь повеселиться?)]"
+    									:"[npc.speech(Да ладно тебе, ты же сама хочешь их пощупать!)]"),
+    						"Кокетливо проводя [npc.her] [npc.hands] по [npc.her] [npc.breasts+], [npc.name] [npc.verb(bite)] [npc.her] губы и капризно глядя на [npc2.name], "
     								+ (target.getAppearsAsGender().isFeminine()
-    									?"[npc.speech(Don't you want to come and play?)]"
-    									:"[npc.speech(I bet you're dying for a touch!)]"),
-    						"Running [npc.her] [npc.hands] suggestively over [npc.her] [npc.breasts+], [npc.name] [npc.verb(bite)] [npc.her] lip before pouting at [npc2.name], "
+    									?"[npc.speech(Разве ты не хочешь прийти и поиграть?)]"
+    									:"[npc.speech(Бьюсь об заклад, ты просто жаждешь прикосновения!)]"),
+    						"Кокетливо проводя [npc.her] [npc.hands] по [npc.her] [npc.breasts+], [npc.name] [npc.verb(bite)] [npc.her] губы и капризно глядя на [npc2.name], "
     								+ (target.getAppearsAsGender().isFeminine()
-    									?"[npc.speech(Come on! Let's have some fun!)]"
-    									:"[npc.speech(~Aah!~ My nipples are so hard!)]")))+dealtDamage.getKey(),
-            		"[npc2.Name] took " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " damage!",
+    									?"[npc.speech(Да ладно тебе! Давай повеселимся!)]"
+    									:"[npc.speech(~Аах!~ Мои соски такие твердые!)]")))+dealtDamage.getKey(),
+            		"[npc2.Name] получил " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " урон!",
             		(isCrit
-            			?"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!"
+            			?"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!"
             			:null),
-            		"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!");
+            		"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!");
         }
 
         @Override
         public List<String> getCritRequirements(GameCharacter source, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
         	return Util.newArrayListOfValues(
-        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"The target has")+" the "+oppositeFetish.getName(target)+" fetish.");
+        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"У цели есть")+""+oppositeFetish.getName(target)+" фетиш.");
         }
         
         @Override
@@ -2020,7 +1956,7 @@ public class CMFetishAttack {
     };
     
     public static AbstractCombatMove TEASE_LACTATION_OTHERS = new AbstractCombatMove(CombatMoveCategory.SPECIAL,
-            "milk lover tease",
+            "дразнение любительницы молока",
             0,
             1,
             CombatMoveType.TEASE,
@@ -2056,7 +1992,7 @@ public class CMFetishAttack {
         
         @Override
         public Value<Boolean, String> isAvailableFromSpecialCase(GameCharacter source) {
-            return new Value<>(source.hasFetish(associatedFetish), "Available to characters who have the "+associatedFetish.getName(source)+" fetish.");
+            return new Value<>(source.hasFetish(associatedFetish), "Доступно персонажам, у которых есть "+associatedFetish.getName(source)+" фетиш.");
         }
 
         @Override
@@ -2065,13 +2001,13 @@ public class CMFetishAttack {
             boolean isCrit = canCrit(turnIndex, source, target, enemies, allies);
             
             return UtilText.parse(source, target,
-            			(isCrit?"[style.colourExcellent(Critical)]: ":"")
-            				+ "[npc.Name] [npc.verb(beg)] to milk [npc2.namePos] [npc2.breasts+], dealing "
-            					+ getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " damage."
+            			(isCrit?"[style.colourExcellent(Критический)]: ":"")
+            				+ "[npc.Name] [npc.verb(beg)], чтобы подоить [npc2.namePos] [npc2.breasts+], нанося "
+            					+ getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " урон."
             				+ (target.getBreastRawMilkStorageValue()==0 && (!target.hasBreastsCrotch() || target.getBreastCrotchRawMilkStorageValue()==0)
-            						?" [style.italicsMinorBad(Damage is reduced to 1 as [npc2.name] is not lactating!)]"
+            						?" [style.italicsMinorBad(Урон снижен до 1, так как [npc2.name] не кормит грудью!)]"
             						:(target.getFetishDesire(oppositeFetish).isNegative()
-                    						?" [style.italicsMinorBad(Damage is reduced to 1 as [npc2.name] [npc2.verb(dislike)] the "+oppositeFetish.getName(source)+" fetish!)]"
+                    						?" [style.italicsMinorBad(Урон снижается до 1, если [npc2.name] [npc2.verb(dislike)] этот "+oppositeFetish.getName(source)+" фетиш!)]"
                             				:"")));
         }
 
@@ -2079,8 +2015,7 @@ public class CMFetishAttack {
         public String getDescription(int turnIndex, GameCharacter source) {
             DamageType damageType = getDamageType(turnIndex, source);
             return UtilText.parse(source, 
-            		"[npc.Name] can use [npc.her] "+associatedFetish.getName(source)+" fetish to tease [npc.her] target, dealing base " + getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " damage."
-            				+ " [style.italicsMinorBad(Damage is reduced to 1 if the target is not lactating or if they dislike the "+oppositeFetish.getName(null)+" fetish.)]");
+            		"[npc.Name] может использовать [npc.her] "+associatedFetish.getName(source)+" фетиш, чтобы дразнить [npc.her] цель, нанося базовый " + getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " урон. [style.italicsMinorBad(Урон снижен до 1, если цель не кормит грудью или если ей не нравится "+oppositeFetish.getName(null)+" фетиш.)]");
         }
 
         @Override
@@ -2100,45 +2035,37 @@ public class CMFetishAttack {
             if(target.hasBreasts()) {
 				attackText = UtilText.parse(source, target,
 						(UtilText.returnStringAtRandom(
-							"[npc.Name] [npc.verb(grin)] at [npc2.name], gazing at [npc2.her] [npc2.breasts+] as [npc.she] [npc.moansVerb],"
-								+" [npc.speech(I'm going to have fun milking your tits!)]",
-							"[npc.Name] hungrily [npc.verb(stare)] at [npc2.namePos] [npc2.breasts+], [npc.moaning],"
-								+" [npc.speech(I can't wait to give you a good milking!)]",
-							"Gazing lustfully at [npc2.namePos] [npc2.breasts+], [npc.name] [npc.verb(let)] out [npc.a_moan+],"
-									+" [npc.speech(I'm going to have fun milking those [npc2.breasts+] of yours!)]")));
+							"[npc.Name] [npc.verb(grin)] на [npc2.name], вожделенно глядя на [npc2.her] [npc2.breasts+], пока [npc.she] [npc.moansVerb], [npc.speech(Сейчас я с удовольствием подою твои сиськи!)]",
+							"[npc.Name] жадно [npc.verb(stare)] на [npc2.namePos] [npc2.breasts+], [npc.moaning], [npc.speech(Не терпится хорошенько тебя подоить!)]",
+							"Вожделенно глядя на [npc2.namePos] [npc2.breasts+], [npc.name] [npc.verb(let)] [npc.a_moan+], [npc.speech(Я с удовольствием подою твои [npc2.breasts+]!)]")));
 				
             } else if(target.hasBreastsCrotch() && target.getBreastCrotchRawMilkStorageValue()>0) {
 				attackText = UtilText.parse(source, target,
 						(UtilText.returnStringAtRandom(
-							"[npc.Name] [npc.verb(grin)] at [npc2.name], gazing at [npc2.her] [npc2.crotchBoobs+] as [npc.she] [npc.moansVerb],"
-								+" [npc.speech(I'm going to have fun milking your udders!)]",
-							"[npc.Name] hungrily [npc.verb(stare)] at [npc2.namePos] [npc2.crotchBoobs+], [npc.moaning],"
-								+" [npc.speech(I can't wait to give you a good milking!)]",
-							"Gazing lustfully at [npc2.namePos] [npc2.crotchBoobs+], [npc.name] [npc.verb(let)] out [npc.a_moan+],"
-									+" [npc.speech(I'm going to have fun milking those [npc2.breasts+] of yours!)]")));
+							"[npc.Name] [npc.verb(grin)] на [npc2.name], вожделенно глядя на [npc2.her] [npc2.crotchBoobs+], пока [npc.she] [npc.moansVerb], [npc.speech(Сейчас я с удовольствием подою твои вымени!)]",
+							"[npc.Name] жадно [npc.verb(stare)] на [npc2.namePos] [npc2.crotchBoobs+], [npc.moaning], [npc.speech(Не терпится хорошенько тебя подоить!)]",
+							"Вожделенно глядя на [npc2.namePos] [npc2.crotchBoobs+], [npc.name] [npc.verb(let)] [npc.a_moan+], [npc.speech(Я с удовольствием подою твои [npc2.breasts+]!)]")));
             	
 			} else {
 				attackText = UtilText.parse(source, target,
 						(UtilText.returnStringAtRandom(
-							"Gazing at [npc2.namePos] chest, [npc.name] [npc.verb(let)] out an annoyed huff,"
-									+ " [npc.speech(I wish you had a nice pair of tits that I could milk!)]",
-							"[npc.Name] [npc.verb(pout)] at [npc2.namePos] [npc2.breasts+], before whining,"
-									+ " [npc.speech(Aww... I wish you had some nice tits for me to milk!)]")));
+							"Глядя на грудь [npc2.namePos], [npc.name] [npc.verb(let)] раздраженно фыркнув, [npc.speech(Жаль, у тебя нет нормальной пары сисек, чтобы я могла их подоить!)]",
+							"[npc.Name] [npc.verb(pout)] на [npc2.namePos] [npc2.breasts+], после чего заныв, [npc.speech(О-о-о... Жаль, у тебя нет классных сисек, чтобы я могла их подоить!)]")));
 			}
             
             return formatAttackOutcome(source, target,
             		attackText+dealtDamage.getKey(),
-            		"[npc2.Name] took " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " damage!",
+            		"[npc2.Name] получил " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " урон!",
             		(isCrit
-            			?"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!"
+            			?"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!"
             			:null),
-            		"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!");
+            		"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!");
         }
 
         @Override
         public List<String> getCritRequirements(GameCharacter source, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
         	return Util.newArrayListOfValues(
-        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"The target has")+" the "+oppositeFetish.getName(target)+" fetish.");
+        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"У цели есть")+""+oppositeFetish.getName(target)+" фетиш.");
         }
         
         @Override
@@ -2148,7 +2075,7 @@ public class CMFetishAttack {
     };
     
     public static AbstractCombatMove TEASE_LACTATION = new AbstractCombatMove(CombatMoveCategory.SPECIAL,
-            "lactation tease",
+            "лактационное дразнение",
             0,
             1,
             CombatMoveType.TEASE,
@@ -2185,7 +2112,7 @@ public class CMFetishAttack {
         @Override
         public Value<Boolean, String> isAvailableFromSpecialCase(GameCharacter source) {
             return new Value<>(source.hasFetish(associatedFetish) && (source.hasBreasts() || source.hasBreastsCrotch()),
-            		"Available to characters who have breasts and who also have the "+associatedFetish.getName(source)+" fetish.");
+            		"Доступно персонажам, у которых есть грудь и у которых также есть "+associatedFetish.getName(source)+" фетиш.");
         }
 
         @Override
@@ -2194,13 +2121,13 @@ public class CMFetishAttack {
             boolean isCrit = canCrit(turnIndex, source, target, enemies, allies);
             
             return UtilText.parse(source, target,
-            			(isCrit?"[style.colourExcellent(Critical)]: ":"")
-            				+ "[npc.Name] [npc.verb(tell)] [npc2.name] that [npc.sheIs] going to get [npc2.herHim] to milk [npc.her] tits, dealing "
-            					+ getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " damage."
+            			(isCrit?"[style.colourExcellent(Критический)]: ":"")
+            				+ "[npc.Name] [npc.verb(tell)] [npc2.name], так что [npc.sheIs] собирается заставить [npc2.herHim] доить [npc.her], нанося "
+            					+ getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " урон."
             				+ (target.getFetishDesire(oppositeFetish).isNegative()
-            						?" [style.italicsMinorBad(Damage is reduced to 1 as [npc2.name] [npc2.verb(dislike)] the "+oppositeFetish.getName(source)+" fetish!)]"
+            						?" [style.italicsMinorBad(Урон снижается до 1, если [npc2.name] [npc2.verb(dislike)] этот "+oppositeFetish.getName(source)+" фетиш!)]"
             						:(source.getBreastRawMilkStorageValue()==0 && (!source.hasBreastsCrotch() || source.getBreastCrotchRawMilkStorageValue()==0)
-            							?" [style.italicsMinorBad(Damage is reduced to 1 as [npc.nameIsFull] not lactating!)]"
+            							?" [style.italicsMinorBad(Урон снижен до 1, так как [npc.nameIsFull] не кормит грудью!)]"
             							:"")));
         }
 
@@ -2208,8 +2135,7 @@ public class CMFetishAttack {
         public String getDescription(int turnIndex, GameCharacter source) {
             DamageType damageType = getDamageType(turnIndex, source);
             return UtilText.parse(source, 
-            		"[npc.Name] can use [npc.her] "+associatedFetish.getName(source)+" fetish to tease [npc.her] target, dealing base " + getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " damage."
-            				+ " [style.italicsMinorBad(Damage is reduced to 1 if the target dislikes the "+oppositeFetish.getName(null)+" fetish, or if [npc.nameIsFull] not lactating.)]");
+            		"[npc.Name] может использовать [npc.her] "+associatedFetish.getName(source)+" фетиш, чтобы дразнить [npc.her] цель, нанося базовый " + getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " урон. [style.italicsMinorBad(Урон снижается до 1, если цель не любит этот "+oppositeFetish.getName(null)+" фетиш, или если [npc.nameIsFull] не кормит грудью.)]");
         }
 
         @Override
@@ -2228,41 +2154,33 @@ public class CMFetishAttack {
             if(source.hasBreasts()) {
                 return formatAttackOutcome(source, target,
                 		(UtilText.returnStringAtRandom(
-        						"Pushing [npc.her] [npc.breasts+] together, [npc.name] [npc.verb(pout)] at [npc2.name], "
-        								+ "[npc.speech(My breasts are so sore! Please, I need milking!)]",
-        						"Pushing [npc.her] [npc.breasts+] together, [npc.name] [npc.verb(let)] out a whine as [npc.she] [npc.verb(bat)] [npc.her] eyelids at [npc2.name], "
-        								+ "[npc.speech(I'm so full of milk! I need help!)]",
-        						"Running [npc.her] [npc.hands] suggestively over [npc.her] [npc.breasts+], [npc.name] [npc.verb(bite)] [npc.her] lip before pouting at [npc2.name], "
-        								+ "[npc.speech(Please, I need milking!)]",
-        						"Running [npc.her] [npc.hands] suggestively over [npc.her] [npc.breasts+], [npc.name] [npc.verb(bite)] [npc.her] lip before pouting at [npc2.name], "
-        								+ "[npc.speech(~Aah!~ I'm so full of milk! Please, I need your help!)]"))+dealtDamage.getKey(),
-                		"[npc2.Name] took " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " damage!",
+        						"Сжимая [npc.her] [npc.breasts+] вместе, [npc.name] [npc.verb(pout)] на [npc2.name], [npc.speech(Мои груди так болят! Пожалуйста, мне нужно доение!)]",
+        						"Сжимая [npc.her] [npc.breasts+] вместе, [npc.name] [npc.verb(let)] с тихим стоном, пока [npc.she] [npc.verb(bat)] [npc.her] веками на [npc2.name], [npc.speech(Я так полна молока! Мне нужна помощь!)]",
+        						"Проводя [npc.her] [npc.hands] соблазнительно по [npc.her] [npc.breasts+], [npc.name] [npc.verb(bite)] [npc.her] губу, прежде чем надуться на [npc2.name], [npc.speech(Пожалуйста, мне нужно доение!)]",
+        						"Проводя [npc.her] [npc.hands] соблазнительно по [npc.her] [npc.breasts+], [npc.name] [npc.verb(bite)] [npc.her] губу, прежде чем надуться на [npc2.name], [npc.speech(~Аах!~ Я так полна молока! Пожалуйста, мне нужна твоя помощь!)]"))+dealtDamage.getKey(),
+                		"[npc2.Name] получил " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " урон!",
                 		(isCrit
-                			?"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!"
+                			?"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!"
                 			:null),
-                		"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!");
+                		"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!");
             	
             } else { // Crotch boobs:
                 return formatAttackOutcome(source, target,
                 		(UtilText.returnStringAtRandom(
-        						"Presenting [npc.her] [npc.crotchBoobs+] to [npc2.name], [npc.name] [npc.verb(pout)] and [npc.verb(whine)], "
-        								+ "[npc.speech(My teats are so sore! Please, I need milking!)]",
-        						"Presenting [npc.her] [npc.crotchBoobs+] to [npc2.name], [npc.name] [npc.verb(bat)] [npc.her] eyelids and [npc.verb(whine)], "
-        								+ "[npc.speech(I'm so full of milk! I need help!)]",
+        						"Представляя [npc.her] [npc.crotchBoobs+] для [npc2.name], [npc.name] [npc.verb(pout)] и [npc.verb(whine)], [npc.speech(Мои соски так болят! Пожалуйста, мне нужно доение!)]",
+        						"Представляя [npc.her] [npc.crotchBoobs+] для [npc2.name], [npc.name] [npc.verb(bat)] [npc.her] веками и [npc.verb(whine)], [npc.speech(Я так полна молока! Мне нужна помощь!)]",
         						(source.isTaur()
         							?null
-        							:"Running [npc.her] [npc.hands] suggestively over [npc.her] [npc.breasts+], [npc.name] [npc.verb(bite)] [npc.her] lip before pouting at [npc2.name], "
-        								+ "[npc.speech(Please, I need milking!)]"),
+        							:"Проводя [npc.her] [npc.hands] соблазнительно по [npc.her] [npc.breasts+], [npc.name] [npc.verb(bite)] [npc.her] губу, прежде чем надуться на [npc2.name], [npc.speech(Пожалуйста, мне нужно доение!)]"),
         						(source.isTaur()
         							?null
-        							:"Running [npc.her] [npc.hands] suggestively over [npc.her] [npc.breasts+], [npc.name] [npc.verb(bite)] [npc.her] lip before pouting at [npc2.name], "
-    									+ "[npc.speech(~Aah!~ I'm so full of milk! Please, I need your help!)]")))
+        							:"Проводя [npc.her] [npc.hands] соблазнительно по [npc.her] [npc.breasts+], [npc.name] [npc.verb(bite)] [npc.her] губу, прежде чем надуться на [npc2.name], [npc.speech(~Аах!~ Я так полна молока! Пожалуйста, мне нужна твоя помощь!)]")))
                 				+dealtDamage.getKey(),
-                		"[npc2.Name] took " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " damage!",
+                		"[npc2.Name] получил " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " урон!",
                 		(isCrit
-                			?"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!"
+                			?"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!"
                 			:null),
-                		"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!");
+                		"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!");
             	
             }
         }
@@ -2270,7 +2188,7 @@ public class CMFetishAttack {
         @Override
         public List<String> getCritRequirements(GameCharacter source, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
         	return Util.newArrayListOfValues(
-        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"The target has")+" the "+oppositeFetish.getName(target)+" fetish.");
+        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"У цели есть")+""+oppositeFetish.getName(target)+" фетиш.");
         }
         
         @Override
@@ -2280,7 +2198,7 @@ public class CMFetishAttack {
     };
     
     public static AbstractCombatMove TEASE_FERTILITY = new AbstractCombatMove(CombatMoveCategory.SPECIAL,
-            "fertility tease",
+            "дразнение фертильности",
             0,
             1,
             CombatMoveType.TEASE,
@@ -2315,7 +2233,7 @@ public class CMFetishAttack {
         
         @Override
         public Value<Boolean, String> isAvailableFromSpecialCase(GameCharacter source) {
-            return new Value<>(source.hasFetish(associatedFetish) && source.hasVagina(), "Available to characters who both have a vagina and who have the "+associatedFetish.getName(source)+" fetish.");
+            return new Value<>(source.hasFetish(associatedFetish) && source.hasVagina(), "Доступно персонажам, у которых есть вагина и "+associatedFetish.getName(source)+" фетиш.");
         }
 
         @Override
@@ -2324,18 +2242,17 @@ public class CMFetishAttack {
             boolean isCrit = canCrit(turnIndex, source, target, enemies, allies);
             
             return UtilText.parse(source, target,
-            			(isCrit?"[style.colourExcellent(Critical)]: ":"")
-                    		+ "[npc.Name] [npc.verb(tell)] [npc2.name] how fertile [npc.sheIsFull], dealing "
-            					+ getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " damage."
-            				+ (target.getFetishDesire(oppositeFetish).isNegative()?" [style.italicsMinorBad(Damage is reduced to 1 as [npc2.name] [npc2.verb(dislike)] the "+oppositeFetish.getName(source)+" fetish!)]":""));
+            			(isCrit?"[style.colourExcellent(Критический)]: ":"")
+                    		+ "[npc.Name] [npc.verb(tell)] [npc2.name] насколько фертильна [npc.sheIsFull], нанося "
+            					+ getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " урон."
+            				+ (target.getFetishDesire(oppositeFetish).isNegative()?" [style.italicsMinorBad(Урон снижается до 1, если [npc2.name] [npc2.verb(dislike)] этот "+oppositeFetish.getName(source)+" фетиш!)]":""));
         }
 
         @Override
         public String getDescription(int turnIndex, GameCharacter source) {
             DamageType damageType = getDamageType(turnIndex, source);
             return UtilText.parse(source, 
-            		"[npc.Name] can use [npc.her] "+associatedFetish.getName(source)+" fetish to tease [npc.her] target, dealing base " + getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " damage."
-            				+ " [style.italicsMinorBad(Damage is reduced to 1 if the target dislikes the "+oppositeFetish.getName(null)+" fetish.)]");
+            		"[npc.Name] может использовать [npc.her] "+associatedFetish.getName(source)+" фетиш, чтобы дразнить [npc.her] цель, нанося базовый " + getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " урон. [style.italicsMinorBad(Урон снижается до 1, если цель не любит этот "+oppositeFetish.getName(null)+" фетиш.)]");
         }
 
         @Override
@@ -2356,73 +2273,73 @@ public class CMFetishAttack {
 				attackText = UtilText.parse(source, target,
 						(UtilText.returnStringAtRandom(
 							(source.isTaur()
-								?"Turning to one side to show off the swollen, pregnant bump in [npc.her] [npc.legRace]'s body,"
-								:"Running [npc.her] [npc.hands] over [npc.her] pregnant belly,")
-							+" [npc.name] [npc.verb(wink)] at [npc2.name] and [npc.moansVerb], "
+								?"Повернувшись на бок, чтобы продемонстрировать раздувшийся, беременный живот в теле [npc.her] [npc.legRace],"
+								:"Проводя [npc.her] [npc.hands] по [npc.her] беременному животу,")
+							+" [npc.name] [npc.verb(wink)] на [npc2.name] и [npc.moansVerb], "
 								+ (target.getAppearsAsGender().isFeminine()
-									?"[npc.speech(Let me tell you the best ways to get knocked up!)]"
-									:"[npc.speech(Ever wanted to fuck a pregnant [npc.girl]?)]"),
-						"[npc.Name] [npc.verb(push)] out [npc.her] pregnant belly and [npc.verb(giggle)] at [npc2.name], "
+									?"[npc.speech(Позволь мне рассказать тебе лучшие способы забеременеть!)]"
+									:"[npc.speech(Всегда хотел трахнуть беременную [npc.girl]?)]"),
+						"[npc.Name] [npc.verb(push)] по [npc.her] беременному животу и [npc.verb(giggle)] на [npc2.name], "
 								+ (target.getAppearsAsGender().isFeminine()
-									?"[npc.speech(I'll tell you all about how I got knocked up!)]"
-									:"[npc.speech(Fucking pregnant [npc.girls] is the best thing ever! Come on, I'll show you!)]"),
+									?"[npc.speech(Я расскажу тебе всё о том, как сама забеременела!)]"
+									:"[npc.speech(Трахать беременную [npc.girls] — это лучшее, что может быть! Давай, я тебе покажу!)]"),
 						(source.isTaur()
-								?"Presenting [npc.her] lower [npc.legRace]'s body to [npc2.name], [npc.name] [npc.verb(show)] off [npc.her] pregnant belly and [npc.moansVerb], "
-								:"Sliding [npc.her] [npc.hands] over [npc.her] pregnant bump,  [npc.name] [npc.verb(pout)] at [npc2.name] and [npc.verb(giggle)], ")
+								?"Демонстрируя [npc.her] нижнюю часть тела [npc.legRace] перед [npc2.name], [npc.name] [npc.verb(show)] [npc.her] беременного живота и [npc.moansVerb], "
+								:"Скользя [npc.her] по [npc.hands] поверх [npc.her] беременного живота, [npc.name] [npc.verb(pout)] на [npc2.name] и [npc.verb(giggle)], ")
 								+ (target.getAppearsAsGender().isFeminine()
-									?"[npc.speech(Come have a feel!)]"
-									:"[npc.speech(Pregnant [npc.girls] are the best fucks around!)]"),
-						"Posturing so as to draw attention to [npc.her] pregnant bump, [npc.name] [npc.verb(bite)] [npc.her] lip at [npc2.name] and [npc.moansVerb], "
+									?"[npc.speech(Подойди, потрогай!)]"
+									:"[npc.speech(Беременные [npc.girls] — самые лучшие для траха!)]"),
+						"Принимая позы, чтобы привлечь внимание к [npc.her] беременному животу, [npc.name] [npc.verb(bite)] [npc.her] губами к [npc2.name] и [npc.moansVerb], "
 								+ (target.getAppearsAsGender().isFeminine()
-									?"[npc.speech(Come on, why don't we have some fun?!)]"
-									:"[npc.speech(Want to find out how good it feels to fuck a pregnant [npc.girl]?)]"))));
+									?"[npc.speech(Ну же, почему бы нам не повеселиться?!)]"
+									:"[npc.speech(Хочешь узнать, как охрененно трахать беременную [npc.girl]?)]"))));
 				
 			} else {
 				attackText = UtilText.parse(source, target,
 						(UtilText.returnStringAtRandom(
 						(source.isTaur()
-							?"Showing off how flat [npc.her] stomach is,"
-							:"Rubbing [npc.her] [npc.hands] over [npc.her] flat stomach,")
-							+" [npc.name] [npc.verb(bite)] [npc.her] [npc.lip] at [npc2.name] and [npc.verb(whine)], "
+							?"Выставляя напоказ, насколько плоский живот у [npc.her],"
+							:"Потирая [npc.her] [npc.hands] по плоскому животу [npc.her],")
+							+" [npc.name] [npc.verb(bite)] [npc.her] [npc.lip] на [npc2.name] и [npc.verb(whine)], "
 								+ (target.getAppearsAsGender().isFeminine()
-									?"[npc.speech(Aww... I wish I were pregnant so bad!)]"
-									:"[npc.speech(I need to get pregnant so bad! Come fill me your cum already!)]"),
+									?"[npc.speech(Ох... Как же сильно я хочу забеременеть!)]"
+									:"[npc.speech(Мне так нужно забеременеть! Давай, заполни меня своим спермой уже сейчас!)]"),
 						(source.isTaur()
-							?"Drawing attention to [npc.her] flat stomach,"
-							:"Sliding [npc.her] [npc.hands] over [npc.her] flat stomach,")
-							+ " [npc.name] [npc.verb(pout)] at [npc2.name] and [npc.moansVerb], "
+							?"Привлекая внимание к плоскому животу [npc.her],"
+							:"Скользя [npc.her] [npc.hands] по плоскому животу [npc.her],")
+							+ " [npc.name] [npc.verb(pout)] на [npc2.name] и [npc.moansVerb], "
 								+ (target.getAppearsAsGender().isFeminine()
-									?"[npc.speech(Aww... I wish I were pregnant...)]"
-									:"[npc.speech(Come put some kids in my belly already!)]"),
+									?"[npc.speech(Ох... Как же сильно я хочу забеременеть...)]"
+									:"[npc.speech(Давай, засели мой живот детками уже сейчас!)]"),
 						(source.isTaur()
-							?"Showing off how flat [npc.her] stomach is,"
-							:"Sliding [npc.her] [npc.hands] over [npc.her] flat stomach,")
-							+" [npc.name] [npc.verb(pout)] at [npc2.name] and [npc.moansVerb], "
+							?"Выставляя напоказ, насколько плоский живот у [npc.her],"
+							:"Скользя [npc.her] [npc.hands] по плоскому животу [npc.her],")
+							+" [npc.name] [npc.verb(pout)] на [npc2.name] и [npc.moansVerb], "
 								+ (target.getAppearsAsGender().isFeminine()
-									?"[npc.speech(I wish I were pregnant...)]"
-									:"[npc.speech(Come fill my womb your yummy cum! I want to get pregnant already!)]"),
+									?"[npc.speech(Как же сильно я хочу забеременеть...)]"
+									:"[npc.speech(Наполни мою утробу своей вкусной спермой! Я уже хочу забеременеть!)]"),
 						(source.isTaur()
-								?"Drawing attention to [npc.her] flat stomach,"
-								:"Rubbing [npc.her] [npc.hands] over [npc.her] flat stomach,")
-							+" [npc.name] [npc.verb(bite)] [npc.her] [npc.lip] at [npc2.name] and [npc.verb(whine)], "
+								?"Привлекая внимание к плоскому животу [npc.her],"
+								:"Потирая [npc.her] [npc.hands] по плоскому животу [npc.her],")
+							+" [npc.name] [npc.verb(bite)] [npc.her] [npc.lip] на [npc2.name] и [npc.verb(whine)], "
 								+ (target.getAppearsAsGender().isFeminine()
-									?"[npc.speech(I wish I were pregnant...)]"
-									:"[npc.speech(Come breed me already! My womb's waiting for your seed!)]"))));
+									?"[npc.speech(Как же сильно я хочу забеременеть...)]"
+									:"[npc.speech(Ну же, оплодотвори меня! Моя утроба ждет твоего семени!)]"))));
 			}
             
             return formatAttackOutcome(source, target,
             		attackText+dealtDamage.getKey(),
-            		"[npc2.Name] took " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " damage!",
+            		"[npc2.Name] получил " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " урон!",
             		(isCrit
-            			?"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!"
+            			?"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!"
             			:null),
-            		"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!");
+            		"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!");
         }
 
         @Override
         public List<String> getCritRequirements(GameCharacter source, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
         	return Util.newArrayListOfValues(
-        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"The target has")+" the "+oppositeFetish.getName(target)+" fetish.");
+        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"У цели есть")+""+oppositeFetish.getName(target)+" фетиш.");
         }
         
         @Override
@@ -2432,7 +2349,7 @@ public class CMFetishAttack {
     };
     
     public static AbstractCombatMove TEASE_VIRILITY = new AbstractCombatMove(CombatMoveCategory.SPECIAL,
-            "virility tease",
+            "дразнение мужественностью",
             0,
             1,
             CombatMoveType.TEASE,
@@ -2467,7 +2384,7 @@ public class CMFetishAttack {
         
         @Override
         public Value<Boolean, String> isAvailableFromSpecialCase(GameCharacter source) {
-            return new Value<>(source.hasFetish(associatedFetish) && source.hasPenisIgnoreDildo(), "Available to characters who both have a penis and who have the "+associatedFetish.getName(source)+" fetish.");
+            return new Value<>(source.hasFetish(associatedFetish) && source.hasPenisIgnoreDildo(), "Доступно персонажам, у которых есть пенис и у которых есть "+associatedFetish.getName(source)+" фетиш.");
         }
 
         @Override
@@ -2476,18 +2393,17 @@ public class CMFetishAttack {
             boolean isCrit = canCrit(turnIndex, source, target, enemies, allies);
             
             return UtilText.parse(source, target,
-            			(isCrit?"[style.colourExcellent(Critical)]: ":"")
-                    		+ "[npc.Name] [npc.verb(tell)] [npc2.name] that [npc.sheIs] going to breed [npc2.herHim], dealing "
-            					+ getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " damage."
-            				+ (target.getFetishDesire(oppositeFetish).isNegative()?" [style.italicsMinorBad(Damage is reduced to 1 as [npc2.name] [npc2.verb(dislike)] the "+oppositeFetish.getName(source)+" fetish!)]":""));
+            			(isCrit?"[style.colourExcellent(Критический)]: ":"")
+                    		+ "[npc.Name] [npc.verb(tell)] [npc2.name], когда [npc.sheIs] собирается оплодотворить [npc2.herHim], нанося "
+            					+ getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " урон."
+            				+ (target.getFetishDesire(oppositeFetish).isNegative()?" [style.italicsMinorBad(Урон снижается до 1, если [npc2.name] [npc2.verb(dislike)] этот "+oppositeFetish.getName(source)+" фетиш!)]":""));
         }
 
         @Override
         public String getDescription(int turnIndex, GameCharacter source) {
             DamageType damageType = getDamageType(turnIndex, source);
             return UtilText.parse(source, 
-            		"[npc.Name] can use [npc.her] "+associatedFetish.getName(source)+" fetish to tease [npc.her] target, dealing base " + getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " damage."
-            				+ " [style.italicsMinorBad(Damage is reduced to 1 if the target dislikes the "+oppositeFetish.getName(null)+" fetish.)]");
+            		"[npc.Name] может использовать [npc.her] "+associatedFetish.getName(source)+" фетиш, чтобы дразнить [npc.her] цель, нанося базовый " + getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " урон. [style.italicsMinorBad(Урон снижается до 1, если цель не любит этот "+oppositeFetish.getName(null)+" фетиш.)]");
         }
 
         @Override
@@ -2507,49 +2423,45 @@ public class CMFetishAttack {
 			if(target.isVisiblyPregnant()) {
 				attackText = UtilText.parse(source, target,
 						(UtilText.returnStringAtRandom(
-						"Reaching down to grab [npc.her] crotch, [npc.name] [npc.verb(wink)] at [npc2.name], "
-								+ "[npc.speech(Shame you're already pregnant... But that won't stop me from filling your pussy with my [npc.cum+]!)]",
-						"Running [npc.her] [npc.hands] down over [npc.her] crotch, [npc.name] [npc.verb(wink)] at [npc2.name], "
-								+ "[npc.speech(You may already be pregnant, but that won't stop me from giving you a nice creampie!)]",
-						"Sliding [npc.her] [npc.hands] down to draw attention to [npc.her] crotch, [npc.name] [npc.verb(grin)] at [npc2.name], "
-								+ "[npc.speech(Don't think that being pregnant will stop me from filling your cunt with my [npc.cum+]!)]",
-						"Reaching down to grab [npc.her] crotch, [npc.name] [npc.verb(grin)] at [npc2.name], "
-								+ "[npc.speech(It's a shame you're already pregnant... But I'm still going to fill you up with my [npc.cum+]!)]")));
+						"Протянув руку, чтобы схватить [npc.her] за пах, [npc.name] [npc.verb(wink)] на [npc2.name], [npc.speech(Жаль, что ты уже беременна... Но это не помешает мне наполнить твою киску моей [npc.cum+]!)]",
+						"Проводя [npc.her] [npc.hands] по [npc.her] паху, [npc.name] [npc.verb(wink)] на [npc2.name], [npc.speech(Может, ты уже и беременна, но это не помешает мне устроить тебе отличный кремпи!)]",
+						"Спуская [npc.her] [npc.hands], чтобы привлечь внимание к [npc.her] паху, [npc.name] [npc.verb(grin)] на [npc2.name], [npc.speech(Не думай, что беременность помешает мне залить твою щель моей [npc.cum+]!)]",
+						"Протянув руку, чтобы схватить [npc.her] за пах, [npc.name] [npc.verb(grin)] на [npc2.name], [npc.speech(Жаль, что ты уже беременна... Но я все равно наполню тебя своей [npc.cum+]!)]")));
 				
 			} else {
 				attackText = UtilText.parse(source, target,
 						(UtilText.returnStringAtRandom(
-						"Reaching down to grab [npc.her] crotch, [npc.name] [npc.verb(wink)] at [npc2.name], "
+						"Протянув руку, чтобы схватить [npc.her] за пах, [npc.name] [npc.verb(wink)] на [npc2.name], "
 								+ (target.getAppearsAsGender().isFeminine() || (target.isAreaKnownByCharacter(CoverableArea.VAGINA, source) && target.hasVagina())
-									?"[npc.speech(Want to get knocked up? My cum's crying out to fill your womb!)]"
-									:"[npc.speech(Maybe I should give you a pussy, then knock you up!)]"),
-						"Running [npc.her] [npc.hands] down over [npc.her] crotch, [npc.name] [npc.verb(wink)] at [npc2.name], "
+									?"[npc.speech(Хочешь залететь? Моя сперма так и молит о том, чтобы наполнить твою утробу!)]"
+									:"[npc.speech(Может, мне стоит дать тебе киску, а потом оплодотворить тебя!)]"),
+						"Спуская [npc.her] [npc.hands] по [npc.her] паху, [npc.name] [npc.verb(wink)] на [npc2.name], "
 								+ (target.getAppearsAsGender().isFeminine() || (target.isAreaKnownByCharacter(CoverableArea.VAGINA, source) && target.hasVagina())
-									?"[npc.speech(My seed's so potent, I'm going to knock you up on the first fuck!)]"
-									:"[npc.speech(If only you had a pussy, I'd breed you real good!)]"),
-						"Sliding [npc.her] [npc.hands] down to draw attention to [npc.her] crotch, [npc.name] [npc.verb(grin)] at [npc2.name], "
+									?"[npc.speech(Мое семя такое мощное, что ты забеременеешь с первого же траха!)]"
+									:"[npc.speech(Если бы у тебя была киска, я бы тебя как следует осеменил!)]"),
+						"Спуская [npc.her] [npc.hands] ниже, чтобы привлечь внимание к [npc.her] паху, [npc.name] [npc.verb(grin)] на [npc2.name], "
 								+ (target.getAppearsAsGender().isFeminine() || (target.isAreaKnownByCharacter(CoverableArea.VAGINA, source) && target.hasVagina())
-									?"[npc.speech(My seed's so potent, you're going to get knocked up from our first fuck!)]"
-									:"[npc.speech(Perhaps I'll give you a nice tight cunt, then knock you up on your first fuck!)]"),
-						"Reaching down to grab [npc.her] crotch, [npc.name] [npc.verb(grin)] at [npc2.name], "
+									?"[npc.speech(Мое семя настолько сильное, что ты залетаешь с первого же секса!)]"
+									:"[npc.speech(Возможно, я подарю тебе тугую киску, а потом оплодотворю тебя с первого же траха!)]"),
+						"Протягивая руку, чтобы схватить за [npc.her] пах, [npc.name] [npc.verb(grin)] на [npc2.name], "
 								+ (target.getAppearsAsGender().isFeminine() || (target.isAreaKnownByCharacter(CoverableArea.VAGINA, source) && target.hasVagina())
-									?"[npc.speech(I'm going to fuck you pregnant!)]"
-									:"[npc.speech(You need a nice tight pussy, so I can fuck you pregnant!)]"))));
+									?"[npc.speech(Я трахну тебя так, что ты забеременеешь!)]"
+									:"[npc.speech(Тебе нужна хорошая тугая киска, чтобы я мог трахнуть тебя до беременности!)]"))));
 			}
             
             return formatAttackOutcome(source, target,
             		attackText+dealtDamage.getKey(),
-            		"[npc2.Name] took " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " damage!",
+            		"[npc2.Name] получил " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " урон!",
             		(isCrit
-            			?"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!"
+            			?"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!"
             			:null),
-            		"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!");
+            		"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!");
         }
 
         @Override
         public List<String> getCritRequirements(GameCharacter source, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
         	return Util.newArrayListOfValues(
-        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"The target has")+" the "+oppositeFetish.getName(target)+" fetish.");
+        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"У цели есть")+""+oppositeFetish.getName(target)+" фетиш.");
         }
         
         @Override
@@ -2559,7 +2471,7 @@ public class CMFetishAttack {
     };
     
     public static AbstractCombatMove TEASE_DOMINANT = new AbstractCombatMove(CombatMoveCategory.SPECIAL,
-            "dominant tease",
+            "доминантный дразнилка",
             0,
             1,
             CombatMoveType.TEASE,
@@ -2594,7 +2506,7 @@ public class CMFetishAttack {
         
         @Override
         public Value<Boolean, String> isAvailableFromSpecialCase(GameCharacter source) {
-            return new Value<>(source.hasFetish(associatedFetish), "Available to characters who have the "+associatedFetish.getName(source)+" fetish.");
+            return new Value<>(source.hasFetish(associatedFetish), "Доступно персонажам, у которых есть "+associatedFetish.getName(source)+" фетиш.");
         }
 
         @Override
@@ -2603,18 +2515,17 @@ public class CMFetishAttack {
             boolean isCrit = canCrit(turnIndex, source, target, enemies, allies);
             
             return UtilText.parse(source, target,
-            			(isCrit?"[style.colourExcellent(Critical)]: ":"")
-            				+ "[npc.Name] [npc.verb(tell)] [npc2.name] that [npc.sheIs] going to dominate [npc2.herHim], dealing "
-            					+ getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " damage."
-            				+ (target.getFetishDesire(oppositeFetish).isNegative()?" [style.italicsMinorBad(Damage is reduced to 1 as [npc2.name] [npc2.verb(dislike)] the "+oppositeFetish.getName(source)+" fetish!)]":""));
+            			(isCrit?"[style.colourExcellent(Критический)]: ":"")
+            				+ "[npc.Name] [npc.verb(tell)] [npc2.name], что [npc.sheIs] собирается доминировать над [npc2.herHim], нанося "
+            					+ getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " урон."
+            				+ (target.getFetishDesire(oppositeFetish).isNegative()?" [style.italicsMinorBad(Урон снижается до 1, если [npc2.name] [npc2.verb(dislike)] этот "+oppositeFetish.getName(source)+" фетиш!)]":""));
         }
 
         @Override
         public String getDescription(int turnIndex, GameCharacter source) {
             DamageType damageType = getDamageType(turnIndex, source);
             return UtilText.parse(source, 
-            		"[npc.Name] can use [npc.her] "+associatedFetish.getName(source)+" fetish to tease [npc.her] target, dealing base " + getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " damage."
-            				+ " [style.italicsMinorBad(Damage is reduced to 1 if the target dislikes the "+oppositeFetish.getName(null)+" fetish.)]");
+            		"[npc.Name] может использовать [npc.her] "+associatedFetish.getName(source)+" фетиш, чтобы дразнить [npc.her] цель, нанося базовый " + getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " урон. [style.italicsMinorBad(Урон снижается до 1, если цель не любит этот "+oppositeFetish.getName(null)+" фетиш.)]");
         }
 
         @Override
@@ -2632,33 +2543,33 @@ public class CMFetishAttack {
             
             StringBuilder sb = new StringBuilder();
             sb.append(UtilText.returnStringAtRandom(
-						"Grinning lustfully at [npc2.name], [npc.name] [npc.verb(growl)], ",
-						"With an evil grin on [npc.her] face, [npc.name] [npc.verb(growl)] at [npc2.name], ",
-						"Glaring imposingly at [npc2.name], [npc.name] [npc.verb(growl)], ",
-						"[npc.Name] [npc.verb(let)] out a menacing growl as [npc.she] [npc.verb(stare)] lustfully at [npc2.name], "));
+						"Похотливо ухмыляясь [npc2.name], [npc.name] [npc.verb(growl)], ",
+						"Со зловещей ухмылкой на лице [npc.her], [npc.name] [npc.verb(growl)] на [npc2.name], ",
+						"Внушительно глядя на [npc2.name], [npc.name] [npc.verb(growl)], ",
+						"[npc.Name] [npc.verb(let)] угрожающее рычание, пока [npc.she] похотливо [npc.verb(stare)] на [npc2.name], "));
         	 sb.append(UtilText.returnStringAtRandom(
-				"[npc.speech(I'm going to give you a good, hard fuck, bitch!)]",
-				"[npc.speech(You're going to get the fucking of a lifetime!)]",
-				"[npc.speech(You're going to be a good little submissive slut for me!)]",
-				"[npc.speech(I'm going to make you my bitch!)]",
-				"[npc.speech(You're going to be my bitch soon enough!)]",
-				"[npc.speech(You're going to be a mewling little bitch by the time I'm done with you!)]",
-				"[npc.speech(I'm going to fuck you so hard, you'll be squealing like a little bitch!)]"));
+				"[npc.speech(Я сейчас так жестко тебя оттрахаю, сучка!)]",
+				"[npc.speech(Ты познаешь лучший трах в своей жизни!)]",
+				"[npc.speech(Ты будешь моей послушной маленькой шлюшкой!)]",
+				"[npc.speech(Я сделаю тебя своей сучкой!)]",
+				"[npc.speech(Скоро ты станешь моей сучкой!)]",
+				"[npc.speech(К тому времени, как я с тобой закончу, ты превратишься в скулящую маленькую сучку!)]",
+				"[npc.speech(Я оттрахаю тебя так сильно, что ты будешь визжать, как маленькая сучка!)]"));
             sb.append(dealtDamage.getKey());
             
             return formatAttackOutcome(source, target,
             		sb.toString(),
-            		"[npc2.Name] took " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " damage!",
+            		"[npc2.Name] получил " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " урон!",
             		(isCrit
-            			?"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!"
+            			?"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!"
             			:null),
-            		"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!");
+            		"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!");
         }
 
         @Override
         public List<String> getCritRequirements(GameCharacter source, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
         	return Util.newArrayListOfValues(
-        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"The target has")+" the "+oppositeFetish.getName(target)+" fetish.");
+        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"У цели есть")+""+oppositeFetish.getName(target)+" фетиш.");
         }
         
         @Override
@@ -2668,7 +2579,7 @@ public class CMFetishAttack {
     };
     
     public static AbstractCombatMove TEASE_SUBMISSIVE = new AbstractCombatMove(CombatMoveCategory.SPECIAL,
-            "submissive tease",
+            "покорная дразнилка",
             0,
             1,
             CombatMoveType.TEASE,
@@ -2703,7 +2614,7 @@ public class CMFetishAttack {
         
         @Override
         public Value<Boolean, String> isAvailableFromSpecialCase(GameCharacter source) {
-            return new Value<>(source.hasFetish(associatedFetish), "Available to characters who have the "+associatedFetish.getName(source)+" fetish.");
+            return new Value<>(source.hasFetish(associatedFetish), "Доступно персонажам, у которых есть "+associatedFetish.getName(source)+" фетиш.");
         }
 
         @Override
@@ -2712,18 +2623,17 @@ public class CMFetishAttack {
             boolean isCrit = canCrit(turnIndex, source, target, enemies, allies);
             
             return UtilText.parse(source, target,
-            			(isCrit?"[style.colourExcellent(Critical)]: ":"")
-                    		+ "[npc.Name] [npc.verb(tell)] [npc2.name] how [npc.she] [npc.verb(love)] to be dominated, dealing "
-            					+ getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " damage."
-            				+ (target.getFetishDesire(oppositeFetish).isNegative()?" [style.italicsMinorBad(Damage is reduced to 1 as [npc2.name] [npc2.verb(dislike)] the "+oppositeFetish.getName(source)+" fetish!)]":""));
+            			(isCrit?"[style.colourExcellent(Критический)]: ":"")
+                    		+ "[npc.Name] [npc.verb(tell)] [npc2.name], стараясь [npc.she] [npc.verb(love)] подчинение, нанося "
+            					+ getFormattedDamage(damageType, getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " урон."
+            				+ (target.getFetishDesire(oppositeFetish).isNegative()?" [style.italicsMinorBad(Урон снижается до 1, если [npc2.name] [npc2.verb(dislike)] этот "+oppositeFetish.getName(source)+" фетиш!)]":""));
         }
 
         @Override
         public String getDescription(int turnIndex, GameCharacter source) {
             DamageType damageType = getDamageType(turnIndex, source);
             return UtilText.parse(source, 
-            		"[npc.Name] can use [npc.her] "+associatedFetish.getName(source)+" fetish to tease [npc.her] target, dealing base " + getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " damage."
-            				+ " [style.italicsMinorBad(Damage is reduced to 1 if the target dislikes the "+oppositeFetish.getName(null)+" fetish.)]");
+            		"[npc.Name] может использовать [npc.her] "+associatedFetish.getName(source)+" фетиш, чтобы дразнить [npc.her] цель, нанося базовый " + getFormattedDamage(damageType, getBaseDamage(source, false), null, false, false) + " урон. [style.italicsMinorBad(Урон снижается до 1, если цель не любит этот "+oppositeFetish.getName(null)+" фетиш.)]");
         }
 
         @Override
@@ -2741,29 +2651,27 @@ public class CMFetishAttack {
             
             return formatAttackOutcome(source, target,
             		(UtilText.returnStringAtRandom(
-    						"[npc.Name] [npc.verb(tilt)] [npc.her] head down in a sign of submission, before looking up with big, innocent eyes, "
-    								+ "[npc.speech(I'll be a good [npc.girl]! I promise!)]",
-    						"[npc.Name] [npc.verb(bite)] [npc.her] [npc.lip] and [npc.verb(shuffle)] [npc.her] [npc.feet] as [npc.she] [npc.do] [npc.her] best to look as weak as possible, "
-    								+ "[npc.speech(I'll do anything you want!)]",
-    						"[npc.Name] [npc.verb(shuffle)] [npc.her] [npc.feet] and [npc.verb(make)] [npc.herself] as small as possible, before lustfully gazing up at [npc2.name], "
+    						"[npc.Name] [npc.verb(tilt)] [npc.her], склонив голову в знак покорности, а затем подняв на тебя большие невинные глаза, [npc.speech(Я буду хорошей [npc.girl]! Обещаю!)]",
+    						"[npc.Name] [npc.verb(bite)] [npc.her] [npc.lip] и [npc.verb(shuffle)] [npc.her] [npc.feet], стараясь как [npc.she] [npc.do] [npc.her] выглядеть как можно слабее, [npc.speech(Я сделаю всё, что ты захочешь!)]",
+    						"[npc.Name] [npc.verb(shuffle)] [npc.her] [npc.feet] и [npc.verb(make)] [npc.herself], стараясь казаться как можно меньше, прежде чем с похотью взглянуть на [npc2.name], "
     								+ (target.getAppearsAsGender().isFeminine()
-    									?"[npc.speech(Please! Treat me like your little bitch!)]"
-    									:"[npc.speech(Please! Make me your little fuck-toy!)]"),
-    						"[npc.Name] [npc.verb(put)] on [npc.her] most innocent look as [npc.she] [npc.verb(gaze)] lustfully into [npc2.namePos] [npc2.eyes], "
+    									?"[npc.speech(Пожалуйста! Обращайся со мной как со своей маленькой сучкой!)]"
+    									:"[npc.speech(Пожалуйста! Сделай меня своей маленькой игрушкой для секса!)]"),
+    						"[npc.Name] [npc.verb(put)] на [npc.her] с самым невинным видом, пока [npc.she] [npc.verb(gaze)] похотливо взирает на [npc2.namePos] [npc2.eyes], "
     								+ (target.getAppearsAsGender().isFeminine()
-    									?"[npc.speech(I'll be your little slave!)]"
-    									:"[npc.speech(I'll be a good little cock-sleeve! I promise)]")))+dealtDamage.getKey(),
-            		"[npc2.Name] took " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " damage!",
+    									?"[npc.speech(Я буду твоей маленькой рабыней!)]"
+    									:"[npc.speech(Я буду послушной маленькой залупой! Обещаю!)]")))+dealtDamage.getKey(),
+            		"[npc2.Name] получил " + getFormattedDamage(damageType, dealtDamage.getValue(), target, true, maxLust) + " урон!",
             		(isCrit
-            			?"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!"
+            			?"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!"
             			:null),
-            		"[npc2.NameIsFull] incredibly turned on, and [npc2.verb(take)] triple damage!");
+            		"[npc2.NameIsFull] невероятно возбуждена, и [npc2.verb(take)] тройной урон!");
         }
 
         @Override
         public List<String> getCritRequirements(GameCharacter source, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
         	return Util.newArrayListOfValues(
-        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"The target has")+" the "+oppositeFetish.getName(target)+" fetish.");
+        			 (target!=null?UtilText.parse(target,"[npc.NamehasFull]"):"У цели есть")+""+oppositeFetish.getName(target)+" фетиш.");
         }
         
         @Override

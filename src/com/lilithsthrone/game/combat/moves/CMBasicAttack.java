@@ -31,7 +31,7 @@ import com.lilithsthrone.utils.colours.PresetColour;
 public class CMBasicAttack {
 
     public static AbstractCombatMove BASIC_STRIKE = new AbstractCombatMove(CombatMoveCategory.BASIC,
-            "strike",
+            "удар",
             0,
             1,
             CombatMoveType.ATTACK,
@@ -118,7 +118,7 @@ public class CMBasicAttack {
     				if(weapon!=null) {
     					sb.append(Util.capitaliseSentence(weapon.getWeaponType().getAttackDescriptionPrefix(source, target)));
     				} else {
-    					sb.append("Hit");
+    					sb.append("Попадание");
     				}
     			}
     		}
@@ -146,7 +146,7 @@ public class CMBasicAttack {
     				if(weapon!=null) {
     					sb.append(Util.capitaliseSentence(weapon.getWeaponType().getAttackDescriptor()));
     				} else {
-    					sb.append("Hit");
+    					sb.append("Попадание");
     				}
     			}
     		}
@@ -171,7 +171,7 @@ public class CMBasicAttack {
         
         @Override
         public Value<Boolean, String> isAvailableFromSpecialCase(GameCharacter source) {
-            return new Value<>(true, "Available to everyone as a basic move.");
+            return new Value<>(true, "Доступно всем как базовая атака.");
         }
 
         @Override
@@ -179,21 +179,21 @@ public class CMBasicAttack {
         	String costText="";
         	int essenceCost = getArcaneCost(turnIndex, source);
     		if(essenceCost>0) {
-    			costText = " Weapon usage costs [style.boldArcane("+essenceCost+" Arcane essence"+(essenceCost>1?"s":"")+")]!";
+    			costText = " Использование оружия стоит [style.boldArcane("+essenceCost+" Arcane эссенции"+(essenceCost>1?"s":"")+")]!";
     		}
             boolean isCrit = canCrit(turnIndex, source, target, enemies, allies);
 
             return UtilText.parse(source, target,
-            		(isCrit?"[style.colourExcellent(Critical)]: ":"")
+            		(isCrit?"[style.colourExcellent(Критический)]: ":"")
             		+ "<span style='color:"+this.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(getPredictionPrefix(turnIndex, source, target))+"</span> "
-        				+ (target==null?"[npc.her] target":"[npc2.name]")
-        				+ " with [npc.her] "
+        				+ (target==null?"[npc.her] цель":"[npc2.name]")
+        				+ " с [npc.her] "
         				+(source.getArmRows()==1
-	        				?(getMainWeapon(turnIndex, source, 0)==null?"fists":getMainWeapon(turnIndex, source, 0).getName())
-	        				:"main weapons")
-        				+ " for "
+	        				?(getMainWeapon(turnIndex, source, 0)==null?"кулаками":getMainWeapon(turnIndex, source, 0).getName())
+	        				:"основное оружие")
+        				+ " на "
         				+ Util.stringsToStringList(getDamageRanges(turnIndex, source, target, isCrit), false)
-        				+ " damage."
+        				+ " урона."
         				+ costText);
         }
 
@@ -213,18 +213,18 @@ public class CMBasicAttack {
     			}
     		}
     		if(essenceCost>0) {
-    			costText = " Weapon usage costs [style.boldArcane("+essenceCost+" Arcane essence"+(essenceCost>1?"s":"")+")]!";
+    			costText = " Использование оружия стоит [style.boldArcane("+essenceCost+" Arcane эссенции"+(essenceCost>1?"s":"")+")]!";
     		}
             return UtilText.parse(source,
-            		"Strike [npc.her] target with [npc.her] "
+            		"Нанести удар [npc.her] с помощью [npc.her] "
             			+(weaponNames.isEmpty()
-            					?"fists"
+            					?"кулаками"
             					:weaponNames.size()==1
             						?weaponNames.get(0)
-            						:"primary weapons")
-            			+", dealing base "
+            						:"основное оружие")
+            			+", нанося базовый "
         				+ Util.stringsToStringList(getFormattedDamage(turnIndex, source, null, false), false)
-            			+ " damage."
+            			+ " урон."
             			+ costText);
         }
 
@@ -290,13 +290,13 @@ public class CMBasicAttack {
     					(entry.getKey().equals(target)
     							?""
     							:"[style.boldAqua(AoE)]: ")
-    						+"[npc.Name] took "+Util.stringsToStringList(entry.getValue(), false)+" damage!"));
+    						+"[npc.Name] получил "+Util.stringsToStringList(entry.getValue(), false)+" урон!"));
     		}
     		attackStringBuilder.append(formatAttackOutcome(source, target,
     				weaponAttacksStringBuilder.toString(),
     				damageApplied.toString(),
     				isCrit?"":null,
-    				isCrit?"Extra damage applied!":""));
+    				isCrit?"Дополнительный урон нанесен!":""));
     		
     		source.incrementEssenceCount(getArcaneCost(turnIndex, source), false); // Hack to restore essences from loss in performOnSelection() method, as they are also subtracted in applyExtraAttackEffects.
     		
@@ -335,7 +335,7 @@ public class CMBasicAttack {
     		}
     		
         	if(source.getEssenceCount()<essenceCost) {
-        		return "You don't have enough arcane essences to use your weapon"+(weaponCount>1?"s":"")+"! ("+Util.capitaliseSentence(Util.intToString(essenceCost))+" "+(essenceCost==1?"is":"are")+" required.)";
+        		return "У вас недостаточно арканной эссенции, чтобы использовать оружие"+(weaponCount>1?"s":"")+"! ("+Util.capitaliseSentence(Util.intToString(essenceCost))+" "+(essenceCost==1?"is":"are")+" необходимо.)";
         	}
         	return super.isUsable(turnIndex, source, target, enemies, allies);
         }
@@ -391,7 +391,7 @@ public class CMBasicAttack {
     };
     
     public static AbstractCombatMove BASIC_OFFHAND_STRIKE = new AbstractCombatMove(CombatMoveCategory.BASIC,
-            "offhand strike",
+            "удар левой рукой",
             0,
             1,
             CombatMoveType.ATTACK,
@@ -478,7 +478,7 @@ public class CMBasicAttack {
     				if(weapon!=null) {
     					sb.append(Util.capitaliseSentence(weapon.getWeaponType().getAttackDescriptionPrefix(source, target)));
     				} else {
-    					sb.append("Hit");
+    					sb.append("Попадание");
     				}
     			}
     		}
@@ -518,7 +518,7 @@ public class CMBasicAttack {
     				if(weapon!=null) {
     					sb.append(Util.capitaliseSentence(weapon.getWeaponType().getAttackDescriptor()));
     				} else {
-    					sb.append("Hit");
+    					sb.append("Попадание");
     				}
     			}
     		}
@@ -543,7 +543,7 @@ public class CMBasicAttack {
         
         @Override
         public Value<Boolean, String> isAvailableFromSpecialCase(GameCharacter source) {
-            return new Value<>(true, "Available to everyone as a basic move.");
+            return new Value<>(true, "Доступно всем как базовая атака.");
         }
 
         @Override
@@ -551,21 +551,21 @@ public class CMBasicAttack {
         	String costText="";
         	int essenceCost = getArcaneCost(turnIndex, source);
     		if(essenceCost>0) {
-    			costText = " Weapon usage costs [style.boldArcane("+essenceCost+" Arcane essence"+(essenceCost>1?"s":"")+")]!";
+    			costText = " Использование оружия стоит [style.boldArcane("+essenceCost+" Arcane эссенции"+(essenceCost>1?"s":"")+")]!";
     		}
             boolean isCrit = canCrit(turnIndex, source, target, enemies, allies);
             
             return UtilText.parse(source, target,
-            		(isCrit?"[style.colourExcellent(Critical)]: ":"")
+            		(isCrit?"[style.colourExcellent(Критический)]: ":"")
             		+ "<span style='color:"+this.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(getPredictionPrefix(turnIndex, source, target))+"</span> "
-        				+ (target==null?"[npc.her] target":"[npc2.name]")
-        				+ " with [npc.her] "
+        				+ (target==null?"[npc.her] цель":"[npc2.name]")
+        				+ " с [npc.her] "
         				+ (source.getArmRows()==1
-	        				?(getOffhandWeapon(turnIndex, source, 0)==null?"fists":getOffhandWeapon(turnIndex, source, 0).getName())
-	        				:"offhand weapons")
-        				+ " for "
+	        				?(getOffhandWeapon(turnIndex, source, 0)==null?"кулаками":getOffhandWeapon(turnIndex, source, 0).getName())
+	        				:"оружие в левой руке")
+        				+ " на "
         				+ Util.stringsToStringList(getDamageRanges(turnIndex, source, target, isCrit), false)
-        				+ " damage."
+        				+ " урон."
         				+ costText);
         }
 
@@ -585,18 +585,18 @@ public class CMBasicAttack {
     			}
     		}
     		if(essenceCost>0) {
-    			costText = " Weapon usage costs [style.boldArcane("+essenceCost+" Arcane essence"+(essenceCost>1?"s":"")+")]!";
+    			costText = " Использование оружия стоит [style.boldArcane("+essenceCost+" Arcane эссенции"+(essenceCost>1?"s":"")+")]!";
     		}
             return UtilText.parse(source,
-            		"Strike [npc.her] target with [npc.her] "
+            		"Нанести удар [npc.her] с помощью [npc.her] "
             			+(weaponNames.isEmpty()
-            					?"fists"
+            					?"кулаками"
             					:weaponNames.size()==1
             						?weaponNames.get(0)
-            						:"offhand weapons")
-            			+", dealing base "
+            						:"оружие в левой руке")
+            			+", нанося базовый "
         				+ Util.stringsToStringList(getFormattedDamage(turnIndex, source, null, false), false)
-            			+ " damage."
+            			+ " урон."
             			+ costText);
         }
 
@@ -662,13 +662,13 @@ public class CMBasicAttack {
     					(entry.getKey().equals(target)
     							?""
     							:"[style.boldAqua(AoE)]: ")
-    						+"[npc.Name] took "+Util.stringsToStringList(entry.getValue(), false)+" damage!"));
+    						+"[npc.Name] получил "+Util.stringsToStringList(entry.getValue(), false)+" урон!"));
     		}
     		attackStringBuilder.append(formatAttackOutcome(source, target,
     				weaponAttacksStringBuilder.toString(),
     				damageApplied.toString(),
     				isCrit?"":null,
-    				isCrit?"Extra damage applied!":""));
+    				isCrit?"Дополнительный урон нанесен!":""));
     		
     		source.incrementEssenceCount(getArcaneCost(turnIndex, source), false); // Hack to restore essences from loss in performOnSelection() method, as they are also subtracted in applyExtraAttackEffects.
     		
@@ -707,7 +707,7 @@ public class CMBasicAttack {
     		}
     		
         	if(source.getEssenceCount()<essenceCost) {
-        		return "You don't have enough arcane essences to use your weapon"+(weaponCount>1?"s":"")+"! ("+Util.capitaliseSentence(Util.intToString(essenceCost))+" "+(essenceCost==1?"is":"are")+" required.)";
+        		return "У вас недостаточно арканной эссенции, чтобы использовать оружие"+(weaponCount>1?"s":"")+"! ("+Util.capitaliseSentence(Util.intToString(essenceCost))+" "+(essenceCost==1?"is":"are")+" необходимо.)";
         	}
         	return super.isUsable(turnIndex, source, target, enemies, allies);
         }
@@ -763,7 +763,7 @@ public class CMBasicAttack {
     };
     
     public static AbstractCombatMove BASIC_TWIN_STRIKE = new AbstractCombatMove(CombatMoveCategory.BASIC,
-            "all-out strike",
+            "сокрушительный удар",
             2,
             2,
             CombatMoveType.ATTACK,
@@ -913,7 +913,7 @@ public class CMBasicAttack {
 
         @Override
         public Value<Boolean, String> isAvailableFromSpecialCase(GameCharacter source) {
-            return new Value<>(true, "Available to everyone as a basic move.");
+            return new Value<>(true, "Доступно всем как базовая атака.");
         }
 
         @Override
@@ -921,16 +921,16 @@ public class CMBasicAttack {
         	String costText="";
         	int cost = getArcaneCost(turnIndex, source);
         	if(cost>0) {
-        		costText = " Costs [style.boldArcane("+cost+" Arcane essence"+(cost>1?"s":"")+")] to use this attack.";
+        		costText = " Стоимость использования: [style.boldArcane("+cost+" Arcane эссенции"+(cost>1?"s":"")+")] чтобы использовать эту атаку.";
         	}
             boolean isCrit = canCrit(turnIndex, source, target, enemies, allies);
             return UtilText.parse(source, target,
-            		(isCrit?"[style.colourExcellent(Critical)]: ":"")
-            		+ "<span style='color:"+this.getColour().toWebHexString()+";'>All-out strike</span> "
-            		+ (target==null?"[npc.her] target":"[npc2.name]")
-    				+ " with all of [npc.her] weapons for "
+            		(isCrit?"[style.colourExcellent(Критический)]: ":"")
+            		+ "<span style='color:"+this.getColour().toWebHexString()+";'>Сокрушительный удар</span> "
+            		+ (target==null?"[npc.her] цель":"[npc2.name]")
+    				+ " всеми [npc.her] видами оружия на "
             		+ Util.stringsToStringList(getDamageRanges(turnIndex, source, target, isCrit), false)
-            		+ " damage."
+            		+ " урон."
             		+ costText);
         }
 
@@ -939,12 +939,12 @@ public class CMBasicAttack {
         	String costText="";
         	int essenceCost = getArcaneCost(turnIndex, source);
         	if(essenceCost>0) {
-    			costText = " Weapon usage costs [style.boldArcane("+essenceCost+" Arcane essence"+(essenceCost>1?"s":"")+")]!";
+    			costText = " Использование оружия стоит [style.boldArcane("+essenceCost+" Arcane эссенции"+(essenceCost>1?"s":"")+")]!";
         	}
             return UtilText.parse(source,
-            		"Strike [npc.her] target with all of [npc.her] weapons, dealing "
+            		"Нанести [npc.her] удар(ы) по цели всеми [npc.her] видами оружия, нанося "
             			+ Util.stringsToStringList(getFormattedDamage(turnIndex, source, null, false), false)
-            		+ " damage."
+            		+ " урон."
             		+ costText);
         }
         
@@ -1051,13 +1051,13 @@ public class CMBasicAttack {
     					(entry.getKey().equals(target)
     							?""
     							:"[style.boldAqua(AoE)]: ")
-    						+"[npc.Name] took "+Util.stringsToStringList(entry.getValue(), false)+" damage!"));
+    						+"[npc.Name] получил "+Util.stringsToStringList(entry.getValue(), false)+" урон!"));
     		}
     		attackStringBuilder.append(formatAttackOutcome(source, target,
     				weaponAttacksStringBuilder.toString(),
     				damageApplied.toString(),
     				isCrit?"":null,
-    				isCrit?"Extra damage applied!":""));
+    				isCrit?"Дополнительный урон нанесен!":""));
 
     		source.incrementEssenceCount(getArcaneCost(turnIndex, source), false); // Hack to restore essences from loss in performOnSelection() method, as they are also subtracted in applyExtraAttackEffects.
     		
@@ -1108,15 +1108,15 @@ public class CMBasicAttack {
 
     		if(freeSlots==0){
     			if(source.getArmRows()>1) {
-					return "You are using only two-handed weapons, so have no free hand with which to use an all-out strike!";
+					return "Вы используете только двуручное оружие, поэтому у вас нет свободной руки для сокрушительного удара!";
 				} else {
-					return "You are using a two-handed weapon, so have no free hand with which to use an all-out strike!";
+					return "Вы используете двуручное оружие, поэтому у вас нет свободной руки для сокрушительного удара!";
 				}
 			}
     		
     		int cost = getArcaneCost(turnIndex, source);
         	if(source.getEssenceCount()<cost) {
-        		return "You don't have enough arcane essences to use your weapon! ("+Util.capitaliseSentence(Util.intToString(cost))+" "+(cost==1?"is":"are")+" required.)";
+        		return "У вас недостаточно арканной эссенции, чтобы использовать оружие! ("+Util.capitaliseSentence(Util.intToString(cost))+" "+(cost==1?"is":"are")+" необходимо.)";
         	}
         	
         	return super.isUsable(turnIndex, source, target, enemies, allies);
@@ -1214,7 +1214,7 @@ public class CMBasicAttack {
 
         @Override
         public List<String> getCritRequirements(GameCharacter source, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
-        	return Util.newArrayListOfValues("This is the only move that's being used.");
+        	return Util.newArrayListOfValues("Это единственная используемая атака.");
         }
         
         @Override
@@ -1224,7 +1224,7 @@ public class CMBasicAttack {
     };
     
     public static AbstractCombatMove BASIC_BLOCK = new AbstractCombatMove(CombatMoveCategory.BASIC,
-            "block",
+            "блокирует",
             0,
             1,
             CombatMoveType.DEFEND,
@@ -1243,25 +1243,21 @@ public class CMBasicAttack {
 
         @Override
         public Value<Boolean, String> isAvailableFromSpecialCase(GameCharacter source) {
-            return new Value<>(true, "Available to everyone as a basic move.");
+            return new Value<>(true, "Доступно всем как базовая атака.");
         }
 
         @Override
         public String getPrediction(int turnIndex, GameCharacter source, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
             boolean isCrit = canCrit(turnIndex, source, target, enemies, allies);
             DamageType damageType = getDamageType(turnIndex, source);
-            return (isCrit?"[style.colourExcellent(Critical)]: ":"")
-            		+ "<span style='color:"+this.getColour().toWebHexString()+";'>Block</span> "
-                    + "<span style='color:" + damageType.getMultiplierAttribute().getColour().toWebHexString() + ";'>" + String.valueOf(getBlock(source, isCrit))+ " " + damageType.getName() + " </span>"
-                    + " damage.";
+            return (isCrit?"[style.colourExcellent(Критический)]: ":"")
+            		+ "<span style='color:"+this.getColour().toWebHexString()+";'>Блок</span> <span style='color:" + damageType.getMultiplierAttribute().getColour().toWebHexString() + ";'>" + String.valueOf(getBlock(source, isCrit))+ " " + damageType.getName() + " </span> ед. урона.";
         }
 
         @Override
         public String getDescription(int turnIndex, GameCharacter source) {
             DamageType damageType = getDamageType(turnIndex, source);
-            return "Focus on defending yourself, gaining protection against "
-                    + "<span style='color:" + damageType.getMultiplierAttribute().getColour().toWebHexString() + ";'>" + String.valueOf(getBlock(source, false)) + "</span>"
-                    + " damage.";
+            return "Сосредоточьтесь на защите, получая защиту от <span style='color:" + damageType.getMultiplierAttribute().getColour().toWebHexString() + ";'>" + String.valueOf(getBlock(source, false)) + "</span> ед. урона.";
         }
 
         @Override
@@ -1269,10 +1265,10 @@ public class CMBasicAttack {
             boolean isCrit = canCrit(turnIndex, source, target, enemies, allies);
             
             return (formatAttackOutcome(source, target,
-    				"[npc.Name] focused on defending [npc.herself].",
-    				"[npc.SheIs] now protected against " + getFormattedDamage(getDamageType(turnIndex, source), getBlock(source, isCrit), target, true, false) + " damage!",
+    				"[npc.Name] сосредоточился на защите [npc.herself].",
+    				"[npc.SheIs] теперь защищен от " + getFormattedDamage(getDamageType(turnIndex, source), getBlock(source, isCrit), target, true, false) + " урон!",
     				isCrit?"":null,
-    				isCrit?"[npc.Name] [npc.verb(double)] [npc.her] block!":""));
+    				isCrit?"[npc.Name] [npc.verb(double)] блок [npc.her]!":""));
             
         }
 
@@ -1292,7 +1288,7 @@ public class CMBasicAttack {
     };
     
     public static AbstractCombatMove BASIC_TEASE = new AbstractCombatMove(CombatMoveCategory.BASIC,
-            "tease",
+            "дразнить",
             0,
             1,
             CombatMoveType.TEASE,
@@ -1314,23 +1310,22 @@ public class CMBasicAttack {
         
         @Override
         public Value<Boolean, String> isAvailableFromSpecialCase(GameCharacter source) {
-            return new Value<>(true, "Available to everyone as a basic move.");
+            return new Value<>(true, "Доступно всем как базовая атака.");
         }
 
         @Override
         public String getPrediction(int turnIndex, GameCharacter source, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
             boolean isCrit = canCrit(turnIndex, source, target, enemies, allies);
             return UtilText.parse(source, target,
-                    (isCrit?"[style.colourExcellent(Critical)]: ":"")
-            		+ "<span style='color:"+this.getColour().toWebHexString()+";'>Tease</span> "
-            				+" [npc2.name] for " + getFormattedDamage(getDamageType(turnIndex, source), getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " damage.");
+                    (isCrit?"[style.colourExcellent(Критический)]: ":"")
+            		+ "<span style='color:"+this.getColour().toWebHexString()+";'>Дразнить</span>  [npc2.name] за " + getFormattedDamage(getDamageType(turnIndex, source), getDamage(source, target, isCrit), target, false, isTargetAtMaximumLust(target)) + " урон.");
         }
 
         @Override
         public String getDescription(int turnIndex, GameCharacter source) {
-            return "Tease your enemy, dealing base "
+            return "Дразните своего врага, нанося базовый "
                     + getFormattedDamage(getDamageType(turnIndex, source), getBaseDamage(source), null, false, false)
-                    + " damage to them.";
+                    + " урон им.";
         }
 
         @Override
@@ -1346,9 +1341,9 @@ public class CMBasicAttack {
 			
             sb.append(formatAttackOutcome(source, target,
             		source.getSeductionDescription(target)+damageValue.getKey(),
-    				"[npc2.Name] took " + getFormattedDamage(finalDt, lustDamage, target, true, maxLust) + " damage!",
+    				"[npc2.Name] получил " + getFormattedDamage(finalDt, lustDamage, target, true, maxLust) + " урон!",
     				isCrit?"":null,
-    				isCrit?"[npc2.Name] [npc2.verb(feel)] incredibly turned-on!":""));
+    				isCrit?"[npc2.Name] [npc2.verb(feel)] невероятно возбужден(а)!":""));
             
     		if(source.hasStatusEffect(StatusEffect.TELEPATHIC_COMMUNICATION_POWER_OF_SUGGESTION)) {
     			Main.combat.addStatusEffectToApply(target, StatusEffect.TELEPATHIC_COMMUNICATION_POWER_OF_SUGGESTION_TARGETED, 2);
@@ -1360,7 +1355,7 @@ public class CMBasicAttack {
     };
     
     public static AbstractCombatMove BASIC_TEASE_BLOCK = new AbstractCombatMove(CombatMoveCategory.BASIC,
-            "resist",
+            "сопротивление",
             0,
             1,
             CombatMoveType.DEFEND,
@@ -1378,7 +1373,7 @@ public class CMBasicAttack {
 
         @Override
         public Value<Boolean, String> isAvailableFromSpecialCase(GameCharacter source) {
-            return new Value<>(true, "Available to everyone as a basic move.");
+            return new Value<>(true, "Доступно всем как базовая атака.");
         }
         
         @Override
@@ -1386,18 +1381,14 @@ public class CMBasicAttack {
             boolean isCrit = canCrit(turnIndex, source, target, enemies, allies);
             DamageType damageType = getDamageType(turnIndex, source);
             return UtilText.parse(source,  target,
-            		(isCrit?"[style.colourExcellent(Critical)]: ":"")
-            		+ "<span style='color:"+this.getColour().toWebHexString()+";'>Resist</span> "
-	                + "<span style='color:" + damageType.getMultiplierAttribute().getColour().toWebHexString() + ";'>" + String.valueOf(getBlock(source, isCrit))+ " " + damageType.getName() + " </span>"
-	                + " damage.");
+            		(isCrit?"[style.colourExcellent(Критический)]: ":"")
+            		+ "<span style='color:"+this.getColour().toWebHexString()+";'>Сопротивление</span> <span style='color:" + damageType.getMultiplierAttribute().getColour().toWebHexString() + ";'>" + String.valueOf(getBlock(source, isCrit))+ " " + damageType.getName() + " </span> ед. урона.");
         }
 
         @Override
         public String getDescription(int turnIndex, GameCharacter source) {
             DamageType damageType = getDamageType(turnIndex, source);
-            return "Resist temptation, gaining protection against "
-            		+ "<span style='color:" + damageType.getMultiplierAttribute().getColour().toWebHexString() + ";'>" + String.valueOf(getBlock(source, false)) + "</span>"
-            		+ " damage.";
+            return "Сопротивляйтесь искушению, получая защиту против <span style='color:" + damageType.getMultiplierAttribute().getColour().toWebHexString() + ";'>" + String.valueOf(getBlock(source, false)) + "</span> ед. урона.";
         }
 
         @Override
@@ -1405,10 +1396,10 @@ public class CMBasicAttack {
             boolean isCrit = canCrit(turnIndex, source, target, enemies, allies);
             
             return formatAttackOutcome(source, target,
-    				"[npc.Name] focused on resisting any attempts at seduction.",
-    				"[npc.SheIs] now protected against " + getFormattedDamage(getDamageType(turnIndex, source), getBlock(source, isCrit), target, true, false) + " damage!",
+    				"[npc.Name] сосредоточен на том, чтобы противостоять любым попыткам соблазнения.",
+    				"[npc.SheIs] теперь защищен от " + getFormattedDamage(getDamageType(turnIndex, source), getBlock(source, isCrit), target, true, false) + " урон!",
     				isCrit?"":null,
-    				isCrit?"[npc.Name] [npc.verb(double)] [npc.her] shielding!":"");
+    				isCrit?"[npc.Name] [npc.verb(double)] [npc.her] щит!":"");
         }
 
         @Override
@@ -1441,7 +1432,7 @@ public class CMBasicAttack {
     };
     
     public static AbstractCombatMove BASIC_ARCANE_STRIKE = new AbstractCombatMove(CombatMoveCategory.BASIC,
-            "arcane strike",
+            "арканный удар",
             0,
             1,
             CombatMoveType.ATTACK,
@@ -1473,28 +1464,26 @@ public class CMBasicAttack {
 
         @Override
         public Value<Boolean, String> isAvailableFromSpecialCase(GameCharacter source) {
-            return new Value<>(source.getSpells().size() > 0, "Requires knowledge of at least one spell.");
+            return new Value<>(source.getSpells().size() > 0, "Требуется знание хотя бы одного заклинания.");
         }
 
         @Override
         public String getPrediction(int turnIndex, GameCharacter source, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
             boolean isCrit = canCrit(turnIndex, source, target, enemies, allies);
             return UtilText.parse(source, target,
-            		(isCrit?"[style.colourExcellent(Critical)]: ":"")
-            		+ "<span style='color:"+this.getColour().toWebHexString()+";'>Arcane strike</span> "
-            				+ (target==null?"[npc.her] target":"[npc2.name]")
-            				+ " to deal "
+            		(isCrit?"[style.colourExcellent(Критический)]: ":"")
+            		+ "<span style='color:"+this.getColour().toWebHexString()+";'>Арканный удар</span> "
+            				+ (target==null?"[npc.her] цель":"[npc2.name]")
+            				+ " чтобы нанести "
             				+ getFormattedDamage(getDamageType(turnIndex, source), getDamage(source, target), null, false, isTargetAtMaximumLust(target))
-            				+ " damage"
-            				+ " and gain <span style='color:" + PresetColour.ATTRIBUTE_MANA.toWebHexString() + ";'>"+(getManaGain(source)*(isCrit?2:1))+" "+Attribute.MANA_MAXIMUM.getName()+"</span>.");
+            				+ " урон и получить <span style='color:" + PresetColour.ATTRIBUTE_MANA.toWebHexString() + ";'>"+(getManaGain(source)*(isCrit?2:1))+" "+Attribute.MANA_MAXIMUM.getName()+"</span>.");
         }
 
         @Override
         public String getDescription(int turnIndex, GameCharacter source) {
             return UtilText.parse(source,
-            		"Strike [npc.her] target with a bolt of pure arcane energy, dealing base "
-            				+ getFormattedDamage(getDamageType(turnIndex, source), getBaseDamage(source), null, false, false) + " damage"
-            				+ " and recovering base <span style='color:" + PresetColour.ATTRIBUTE_MANA.toWebHexString() + ";'>"+getManaGain(source)+" "+Attribute.MANA_MAXIMUM.getName()+"</span>.");
+            		"Ударьте [npc.her] цель разрядом чистой арканной энергии, нанося базовый "
+            				+ getFormattedDamage(getDamageType(turnIndex, source), getBaseDamage(source), null, false, false) + " урон и восстановление базовых <span style='color:" + PresetColour.ATTRIBUTE_MANA.toWebHexString() + ";'>"+getManaGain(source)+" "+Attribute.MANA_MAXIMUM.getName()+"</span>.");
         }
 
         @Override
@@ -1519,11 +1508,10 @@ public class CMBasicAttack {
     		}
     		
     		attackStringBuilder.append(formatAttackOutcome(source, target,
-    				"Harnessing [npc.her] knowledge of the arcane, [npc.name] [npc.verb(focus)] on replenishing [npc.her] aura as [npc.she] [npc.verb(launch)] a bolt of pure arcane energy at [npc2.name]!"+damageValue.getKey(),
-    				"[npc2.Name] took " + getFormattedDamage(getDamageType(turnIndex, source), dealtDamage, target, true, maxLust) + " damage, while [npc.name] recovered"
-    						+ " <span style='color:" + PresetColour.ATTRIBUTE_MANA.toWebHexString() + ";'>"+manaGain+" "+Attribute.MANA_MAXIMUM.getName()+"</span>!",
+    				"Черпая [npc.her] знания арканы, [npc.name] [npc.verb(focus)], восполняя [npc.her] ауру, пока [npc.she] [npc.verb(launch)] сгусток чистой арканной энергии в [npc2.name]!"+damageValue.getKey(),
+    				"[npc2.Name] получил " + getFormattedDamage(getDamageType(turnIndex, source), dealtDamage, target, true, maxLust) + " урон, в то время как [npc.name] восстановил(а) <span style='color:" + PresetColour.ATTRIBUTE_MANA.toWebHexString() + ";'>"+manaGain+" "+Attribute.MANA_MAXIMUM.getName()+"</span>!",
     				isCrit?"":null,
-    				isCrit?"Aura gain was doubled!":""));
+    				isCrit?"Прирост ауры удвоен!":""));
     		
     		List<String> extraEffects = Main.combat.applyExtraAttackEffects(source, target, Attack.SEDUCTION, null, true, isCrit);
     		if(!extraEffects.isEmpty()) {
@@ -1540,7 +1528,7 @@ public class CMBasicAttack {
         @Override
         public List<String> getCritRequirements(GameCharacter source, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
         	return Util.newArrayListOfValues(
-        			UtilText.parse(source, "[npc.NameIsFull] casting no spells."));
+        			UtilText.parse(source, "[npc.NameIsFull] не произносит(ет) заклинаний."));
         }
         
         @Override

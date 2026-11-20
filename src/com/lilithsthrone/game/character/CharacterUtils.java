@@ -203,13 +203,13 @@ public class CharacterUtils {
 			dirCharacter.mkdir();
 			
 			int saveNumber = 0;
-			String saveLocation = "data/characters/"+character.getName(false)+"_day"+Main.game.getDayNumber()+".xml";
+			String saveLocation = "data/characters/"+character.getName(false)+"_день"+Main.game.getDayNumber()+".xml";
 			if(new File("data/characters/"+character.getName(false)+"_day"+Main.game.getDayNumber()+".xml").exists())
-				saveLocation = "data/characters/"+character.getName(false)+"_day"+Main.game.getDayNumber()+"("+saveNumber+").xml";
+				saveLocation = "data/characters/"+character.getName(false)+"_день"+Main.game.getDayNumber()+"("+saveNumber+").xml";
 
 			while(new File("data/characters/"+character.getName(false)+"_day"+Main.game.getDayNumber()+"("+saveNumber+").xml").exists()) {
 				saveNumber++;
-				saveLocation = "data/characters/"+character.getName(false)+"_day"+Main.game.getDayNumber()+"("+saveNumber+").xml";
+				saveLocation = "data/characters/"+character.getName(false)+"_день"+Main.game.getDayNumber()+"("+saveNumber+").xml";
 			}
 			
 			StreamResult result = new StreamResult(saveLocation);
@@ -233,7 +233,7 @@ public class CharacterUtils {
 	}
 	
 	public PlayerCharacter startLoadingCharacterFromXML(){
-		return new PlayerCharacter(true, new NameTriplet("Player"), 1, null, Gender.M_P_MALE, Subspecies.HUMAN, RaceStage.HUMAN, WorldType.DOMINION, PlaceType.DOMINION_AUNTS_HOME);
+		return new PlayerCharacter(true, new NameTriplet("Игрок"), 1, null, Gender.M_P_MALE, Subspecies.HUMAN, RaceStage.HUMAN, WorldType.DOMINION, PlaceType.DOMINION_AUNTS_HOME);
 	}
 	
 	public PlayerCharacter loadCharacterFromXML(File xmlFile, PlayerCharacter importedCharacter, CharacterImportSetting... settings){
@@ -3491,16 +3491,16 @@ public class CharacterUtils {
 				if(Math.random()<0.1f && lewdTattoos) {
 					if(slot==InventorySlot.GROIN && character.hasVagina()) {
 						writing = Util.randomItemFrom(Util.newArrayListOfValues(
-								character.getFetishDesire(Fetish.FETISH_PREGNANCY).isPositive()?"Breed me!":null,
-								"Fuck me!",
-								"Hot Pussy"));
+								character.getFetishDesire(Fetish.FETISH_PREGNANCY).isPositive()?"Оплодотвори меня!":null,
+								"Трахни меня!",
+								"Горячая киска"));
 						
 					} else {
 						writing = Util.randomItemFrom(Util.newArrayListOfValues(
-								character.getFetishDesire(Fetish.FETISH_SUBMISSIVE).isPositive()?"Dominate me":null,
-								character.getFetishDesire(Fetish.FETISH_SUBMISSIVE).isPositive()?"Good pet":null,
-								character.getFetishDesire(Fetish.FETISH_DOMINANT).isPositive()?"Bow down":null,
-								character.getFetishDesire(Fetish.FETISH_DOMINANT).isPositive()?"Submit to me":null));
+								character.getFetishDesire(Fetish.FETISH_SUBMISSIVE).isPositive()?"Доминируй надо мной":null,
+								character.getFetishDesire(Fetish.FETISH_SUBMISSIVE).isPositive()?"Хороший питомец":null,
+								character.getFetishDesire(Fetish.FETISH_DOMINANT).isPositive()?"Склониться":null,
+								character.getFetishDesire(Fetish.FETISH_DOMINANT).isPositive()?"Покорись мне":null));
 					}
 				}
 				TattooWriting tattooWriting = null;

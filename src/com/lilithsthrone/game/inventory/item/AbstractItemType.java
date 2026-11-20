@@ -157,8 +157,8 @@ public abstract class AbstractItemType extends AbstractCoreType {
 		
 		this.effectTooltipLines = new ArrayList<>();
 		
-		this.useDescriptionsSelf = Util.newArrayListOfValues("[npc.Name] [npc.verb(use)] the item.");
-		this.useDescriptionsOther = Util.newArrayListOfValues("[npc.Name] [npc.verb(use)] the item on [npc2.name].");
+		this.useDescriptionsSelf = Util.newArrayListOfValues("[npc.Name] [npc.verb(use)] предмет.");
+		this.useDescriptionsOther = Util.newArrayListOfValues("[npc.Name] [npc.verb(use)] предмет на [npc2.name].");
 		
 		specialEffect = "";
 		
@@ -230,7 +230,7 @@ public abstract class AbstractItemType extends AbstractCoreType {
 			if(coreAttributes.getOptionalFirstOf("authorTag").isPresent()) {
 				this.authorDescription = coreAttributes.getMandatoryFirstOf("authorTag").getTextContent();
 			} else if(!author.equalsIgnoreCase("innoxia")){
-				this.authorDescription = "A tag discreetly attached to the "+(plural?namePlural:name)+" informs you that "+(plural?"they were":"it was")+" made by a certain '"+Util.capitaliseSentence(author)+"'.";
+				this.authorDescription = "Скромная бирка, прикрепленная к "+(plural?namePlural:name)+" сообщает вам, что "+(plural?"были сделаны":"было сделано")+" изготовлено неким «"+Util.capitaliseSentence(author)+"'.";
 			} else {
 				this.authorDescription = "";
 			}
@@ -382,7 +382,7 @@ public abstract class AbstractItemType extends AbstractCoreType {
 						.map(o -> o.getTextContent())
 						.collect(Collectors.toList());
 				if(useDescriptionsSelf.isEmpty()) {
-					this.useDescriptionsSelf = Util.newArrayListOfValues("[npc.Name] [npc.verb(use)] the item.");
+					this.useDescriptionsSelf = Util.newArrayListOfValues("[npc.Name] [npc.verb(use)] предмет.");
 				}
 				
 				this.useDescriptionsOther = itemElement
@@ -391,12 +391,12 @@ public abstract class AbstractItemType extends AbstractCoreType {
 						.map(o -> o.getTextContent())
 						.collect(Collectors.toList());
 				if(useDescriptionsOther.isEmpty()) {
-					this.useDescriptionsOther = Util.newArrayListOfValues("[npc.Name] [npc.verb(use)] the item on [npc2.name].");
+					this.useDescriptionsOther = Util.newArrayListOfValues("[npc.Name] [npc.verb(use)] предмет на [npc2.name].");
 				}
 				
 			} else {
-				this.useDescriptionsSelf = Util.newArrayListOfValues("[npc.Name] [npc.verb(use)] the item.");
-				this.useDescriptionsOther = Util.newArrayListOfValues("[npc.Name] [npc.verb(use)] the item on [npc2.name].");
+				this.useDescriptionsSelf = Util.newArrayListOfValues("[npc.Name] [npc.verb(use)] предмет.");
+				this.useDescriptionsOther = Util.newArrayListOfValues("[npc.Name] [npc.verb(use)] предмет на [npc2.name].");
 			}
 			
 		}
@@ -576,7 +576,7 @@ public abstract class AbstractItemType extends AbstractCoreType {
 					timeDesc = "days";
 				}
 				for(Entry<AbstractAttribute, Float> attEntry : se.getAttributeModifiers(null).entrySet()) {
-					parsed.add("<i>"+attEntry.getKey().getFormattedValue(attEntry.getValue())+"</i> for [style.italicsOrange("+timeDisplay+" "+timeDesc+")]");
+					parsed.add("<i>"+attEntry.getKey().getFormattedValue(attEntry.getValue())+"</i> для [style.italicsOrange("+timeDisplay+" "+timeDesc+")]");
 				}
 			}
 			
@@ -600,7 +600,7 @@ public abstract class AbstractItemType extends AbstractCoreType {
 						timeDesc = "days";
 					}
 					for(Entry<AbstractAttribute, Float> attEntry : se.getAttributeModifiers(null).entrySet()) {
-						parsed.add("<i>"+attEntry.getKey().getFormattedValue(attEntry.getValue())+"</i> for [style.italicsOrange("+timeDisplay+" "+timeDesc+")]");
+						parsed.add("<i>"+attEntry.getKey().getFormattedValue(attEntry.getValue())+"</i> для [style.italicsOrange("+timeDisplay+" "+timeDesc+")]");
 					}
 				}
 			}
@@ -646,14 +646,7 @@ public abstract class AbstractItemType extends AbstractCoreType {
 							}
 							int sizeOffset = (100-info.getImageSize())/2;
 							svgBuilder.append("<div style='"
-									+ "width:"+info.getImageSize()+"%;"
-									+ "height:"+info.getImageSize()+"%;"
-									+ "transform:rotate("+info.getImageRotation()+"deg);"
-									+ "position:absolute;"
-									+ "left:"+sizeOffset+"%;"
-									+ "bottom:"+sizeOffset+"%;"
-									+ "padding:0;"
-									+ "margin:0;'>");
+									+ "width:"+info.getImageSize()+"%;высота:"+info.getImageSize()+"%;transform:rotate("+info.getImageRotation()+"градусов);position:absolute;left:"+sizeOffset+"%;bottom:"+sizeOffset+"%;padding:0;margin:0;'>");
 							String finalSvg = sb.toString();
 							for(Entry<String, String> entry : info.getReplacements().entrySet()) {
 								finalSvg = finalSvg.replaceAll(entry.getKey(), entry.getValue());
@@ -715,9 +708,9 @@ public abstract class AbstractItemType extends AbstractCoreType {
 	
 	public String getUseTooltipDescription(GameCharacter user, GameCharacter target) {
 		if(user==null || target==null || user.equals(target)) {
-			return Util.capitaliseSentence(getUseName()) + " the " + getName(false) + ".";
+			return Util.capitaliseSentence(getUseName()) + "" + getName(false) + ".";
 		} else {
-			return UtilText.parse(target, "Get [npc.name] to " + getUseName() + " the " + getName(false) + ".");
+			return UtilText.parse(target, "Получите [npc.name], чтобы " + getUseName() + "" + getName(false) + ".");
 		}
 	}
 	
@@ -738,7 +731,7 @@ public abstract class AbstractItemType extends AbstractCoreType {
 	}
 	
 	public String getUnableToBeUsedFromInventoryDescription() {
-		return "This item cannot be used in this way!";
+		return "Этот предмет нельзя использовать таким образом!";
 	}
 
 	public boolean isAbleToBeUsedWhileTrading() {
@@ -746,7 +739,7 @@ public abstract class AbstractItemType extends AbstractCoreType {
 	}
 	
 	public String getUnableToBeUsedWhileTradingDescription() {
-		return "You cannot use this item while trading!";
+		return "Вы не можете использовать этот предмет во время торговли!";
 	}
 	
 	
@@ -755,7 +748,7 @@ public abstract class AbstractItemType extends AbstractCoreType {
 	}
 	
 	public String getUnableToBeUsedDescription(GameCharacter user, GameCharacter target) {
-		return "This item cannot be used in this way!";
+		return "Этот предмет нельзя использовать таким образом!";
 	}
 	
 	public boolean isAbleToBeUsedInSex() {

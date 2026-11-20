@@ -368,7 +368,7 @@ public class Litter implements XMLSaving {
 	
 	public String getFatherName() {
 		if(getFather()==null) {
-			return "someone";
+			return "кто-то";
 		}
 		return getFather().getName();
 	}

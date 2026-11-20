@@ -359,26 +359,26 @@ public class Tattoo extends AbstractCoreItem implements XMLSaving {
 		if(!this.getEffects().isEmpty()) {
 			for(ItemEffect ie : this.getEffects()) {
 				if(ie.getSecondaryModifier() == TFModifier.CLOTHING_ENSLAVEMENT) {
-					return "of "+(coloured?"<"+tag+" style='color:"+TFModifier.CLOTHING_ENSLAVEMENT.getColour().toWebHexString()+";'>enslavement</"+tag+">":"enslavement");
+					return "из "+(coloured?"<"+tag+" style='color:"+TFModifier.CLOTHING_ENSLAVEMENT.getColour().toWebHexString()+";'>рабство</"+tag+">":"enslavement");
 					
 				} else if(ie.getSecondaryModifier() == TFModifier.CLOTHING_SERVITUDE) {
-					return "of "+(coloured?"<"+tag+" style='color:"+TFModifier.CLOTHING_SERVITUDE.getColour().toWebHexString()+";'>servitude</"+tag+">":"servitude");
+					return "из "+(coloured?"<"+tag+" style='color:"+TFModifier.CLOTHING_SERVITUDE.getColour().toWebHexString()+";'>служение</"+tag+">":"servitude");
 					
 				} else if(ie.getPrimaryModifier() == TFModifier.TF_MOD_FETISH_BEHAVIOUR || ie.getPrimaryModifier() == TFModifier.TF_MOD_FETISH_BODY_PART) {
-					return "of "+(coloured?"<"+tag+" style='color:"+PresetColour.FETISH.toWebHexString()+";'>"+ie.getSecondaryModifier().getDescriptor()+"</"+tag+">":ie.getSecondaryModifier().getDescriptor());
+					return "из "+(coloured?"<"+tag+" style='color:"+PresetColour.FETISH.toWebHexString()+";'>"+ie.getSecondaryModifier().getDescriptor()+"</"+tag+">":ie.getSecondaryModifier().getDescriptor());
 					
 				} else if(ie.getPrimaryModifier() == TFModifier.CLOTHING_ATTRIBUTE) {
 					String name = (this.isBadEnchantment()?this.getCoreEnchantment().getNegativeEnchantment():this.getCoreEnchantment().getPositiveEnchantment());
-					return "of "+(coloured?"<"+tag+" style='color:"+this.getCoreEnchantment().getColour().toWebHexString()+";'>"+name+"</"+tag+">":name);
+					return "из "+(coloured?"<"+tag+" style='color:"+this.getCoreEnchantment().getColour().toWebHexString()+";'>"+name+"</"+tag+">":name);
 					
 				} else if(ie.getSecondaryModifier() == TFModifier.CLOTHING_SEALING) {
-					return "of "+(coloured?"<"+tag+" style='color:"+PresetColour.SEALED.toWebHexString()+";'>sealing</"+tag+">":"sealing");
+					return "из "+(coloured?"<"+tag+" style='color:"+PresetColour.SEALED.toWebHexString()+";'>запечатывание</"+tag+">":"sealing");
 					
 				} else if(ie.getPrimaryModifier() == TFModifier.CLOTHING_CREAMPIE_RETENTION) {
-					return "of "+(coloured?"<"+tag+" style='color:"+PresetColour.CUM.toWebHexString()+";'>plugging</"+tag+">":"plugging");
+					return "из "+(coloured?"<"+tag+" style='color:"+PresetColour.CUM.toWebHexString()+";'>пробка</"+tag+">":"plugging");
 					
 				} else {
-					return "of "+(coloured?"<"+tag+" style='color:"+PresetColour.TRANSFORMATION_GENERIC.toWebHexString()+";'>transformation</"+tag+">":"transformation");
+					return "из "+(coloured?"<"+tag+" style='color:"+PresetColour.TRANSFORMATION_GENERIC.toWebHexString()+";'>превращение</"+tag+">":"transformation");
 				}
 			}
 		}

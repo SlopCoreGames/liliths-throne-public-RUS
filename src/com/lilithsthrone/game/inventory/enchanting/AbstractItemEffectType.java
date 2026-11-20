@@ -146,12 +146,11 @@ public abstract class AbstractItemEffectType {
 				}
 			}
 			sb.append(UtilText.parse(target,
-					"<p style='text-align:center; padding-top:0; margin-top:0;'>"
-					+ "[npc.NameIsFull] now "
-					+(se.getBeneficialStatus()==EffectBenefit.DETRIMENTAL?"suffering from [style.italicsBad(":(se.getBeneficialStatus()==EffectBenefit.BENEFICIAL?"benefitting from [style.italicsGood(":"affected by "))
+					"<p style='text-align:center; padding-top:0; margin-top:0;'>[npc.NameIsFull] сейчас "
+					+(se.getBeneficialStatus()==EffectBenefit.DETRIMENTAL?"страдает от [style.italicsBad(":(se.getBeneficialStatus()==EffectBenefit.BENEFICIAL?"получает выгоду от [style.italicsGood(":"подвержен "))
 					+se.getName(target)
 					+(se.getBeneficialStatus()==EffectBenefit.NEUTRAL?"":")]")
-					+ " for "+timeDesc+"!"
+					+ " на "+timeDesc+"!"
 					+ "</p>"));
 		}
 		
@@ -231,7 +230,7 @@ public abstract class AbstractItemEffectType {
 		if(!reader.isPlayer() || ((PlayerCharacter) reader).addRaceDiscoveredFromBook(mainSubspecies) || !reader.hasPerkAnywhereInTree(perk)) {
 			descriptionToReturn = (withDescription
 						?("<p style='text-align:center; font-size:110%;margin-bottom:0;padding-bottom:0;'><b>"+mainSubspecies.getBookName()+"</b></p>"
-							+ (mainSubspecies.getBookAuthor().isEmpty()?"":"<p style='text-align:center;margin-top:0;padding-top:0;'><b><i>by "+mainSubspecies.getBookAuthor()+"</i></b></p>")
+							+ (mainSubspecies.getBookAuthor().isEmpty()?"":"<p style='text-align:center;margin-top:0;padding-top:0;'><b><i> от "+mainSubspecies.getBookAuthor()+"</i></b></p>")
 							+ mainSubspecies.getBasicDescription(null)
 							+ mainSubspecies.getAdvancedDescription(null))
 						:"")
@@ -239,12 +238,10 @@ public abstract class AbstractItemEffectType {
 			
 		} else {
 			descriptionToReturn = "<p style='text-align:center; font-size:110%;margin-bottom:0;padding-bottom:0;'><b>"+mainSubspecies.getBookName()+"</b></p>"
-					+ (mainSubspecies.getBookAuthor().isEmpty()?"":"<p style='text-align:center;margin-top:0;padding-top:0;'><b><i>by "+mainSubspecies.getBookAuthor()+"</i></b></p>")
+					+ (mainSubspecies.getBookAuthor().isEmpty()?"":"<p style='text-align:center;margin-top:0;padding-top:0;'><b><i> от "+mainSubspecies.getBookAuthor()+"</i></b></p>")
 					+ mainSubspecies.getBasicDescription(null)
 					+ mainSubspecies.getAdvancedDescription(null)
-					+"<p style='text-align:center; color:"+PresetColour.TEXT_GREY.toWebHexString()+";'>"
-						+ "Nothing further can be gained from re-reading this book..."
-					+ "</p>";
+					+"<p style='text-align:center; color:"+PresetColour.TEXT_GREY.toWebHexString()+";'>Больше из этой книги ничего не извлечь...</p>";
 		}
 		
 		for(AbstractSubspecies subspecies : subsPlusMain) {
@@ -580,7 +577,7 @@ public abstract class AbstractItemEffectType {
 		} else if(primaryModifier==TFModifier.TF_BREASTS) {
 			orificeName = "nipple";
 		} else if(primaryModifier==TFModifier.TF_BREASTS_CROTCH) {
-			orificeName = "teat (crotch)";
+			orificeName = "теат (промежность)";
 		} else if(primaryModifier==TFModifier.TF_ASS) {
 			orificeName = "anus";
 		} else if(primaryModifier==TFModifier.TF_FACE) {
@@ -601,16 +598,16 @@ public abstract class AbstractItemEffectType {
 				descriptions.add(getClothingTFChangeDescriptionEntry(potency, orificeName+" plasticity", OrificePlasticity.getElasticityFromInt(limit).getDescriptor()));
 				break;
 			case TF_MOD_CAPACITY_2:
-				descriptions.add(getClothingTFChangeDescriptionEntry(potency, orificeName+"l urethra capacity", Units.size(limit, Units.ValueType.PRECISE, Units.UnitType.SHORT)));
+				descriptions.add(getClothingTFChangeDescriptionEntry(potency, orificeName+"вместимость уретры", Units.size(limit, Units.ValueType.PRECISE, Units.UnitType.SHORT)));
 				break;
 			case TF_MOD_DEPTH_2:
-				descriptions.add(getClothingTFChangeDescriptionEntry(potency, orificeName+"l urethra depth", OrificeDepth.getDepthFromInt(limit).getDescriptor()));
+				descriptions.add(getClothingTFChangeDescriptionEntry(potency, orificeName+"глубина уретры", OrificeDepth.getDepthFromInt(limit).getDescriptor()));
 				break;
 			case TF_MOD_ELASTICITY_2:
-				descriptions.add(getClothingTFChangeDescriptionEntry(potency, orificeName+"l urethra elasticity", OrificeElasticity.getElasticityFromInt(limit).getDescriptor()));
+				descriptions.add(getClothingTFChangeDescriptionEntry(potency, orificeName+"эластичность уретры", OrificeElasticity.getElasticityFromInt(limit).getDescriptor()));
 				break;
 			case TF_MOD_PLASTICITY_2:
-				descriptions.add(getClothingTFChangeDescriptionEntry(potency, orificeName+"l urethra plasticity", OrificePlasticity.getElasticityFromInt(limit).getDescriptor()));
+				descriptions.add(getClothingTFChangeDescriptionEntry(potency, orificeName+"пластичность уретры", OrificePlasticity.getElasticityFromInt(limit).getDescriptor()));
 				break;
 			case TF_MOD_WETNESS:
 				if(primaryModifier!=TFModifier.TF_PENIS
@@ -627,25 +624,25 @@ public abstract class AbstractItemEffectType {
 			case TF_ASS:
 				switch(secondaryModifier) {
 					case TF_MOD_SIZE:
-						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "ass size", AssSize.getAssSizeFromInt(limit).getDescriptor()));
+						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "размер задницы", AssSize.getAssSizeFromInt(limit).getDescriptor()));
 						break;
 					case TF_MOD_SIZE_SECONDARY:
-						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "hip size", HipSize.getHipSizeFromInt(limit).getDescriptor()));
+						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "размер бедер", HipSize.getHipSizeFromInt(limit).getDescriptor()));
 						break;
 					case TF_MOD_ORIFICE_PUFFY:
-						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "anus puffy", "anal puffyness"));
+						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "пухлость ануса", "размер ануса"));
 						break;
 					case TF_MOD_ORIFICE_RIBBED:
-						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "anus ribbed",  "anal ribbing"));
+						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "рельеф ануса",  "анальные складки"));
 						break;
 					case TF_MOD_ORIFICE_MUSCLED:
-						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "anus muscled", "extra anal muscles"));
+						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "мускулистость ануса", "дополнительные мышцы ануса"));
 						break;
 					case TF_MOD_ORIFICE_TENTACLED:
-						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "anus tentacled", "anal tentacles"));
+						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "анус с щупальцами", "анальные щупальца"));
 						break;
 					case TF_MOD_BODY_HAIR:
-						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "ass hairiness", BodyHair.getBodyHairFromValue(limit).getName()));
+						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "волосатость задницы", BodyHair.getBodyHairFromValue(limit).getName()));
 						break;
 					default:
 						break;
@@ -654,7 +651,7 @@ public abstract class AbstractItemEffectType {
 			case TF_ARMS:
 				switch(secondaryModifier) {
 					case TF_MOD_BODY_HAIR:
-						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "underarm hairiness", BodyHair.getBodyHairFromValue(limit).getName()));
+						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "волосатость подмышек", BodyHair.getBodyHairFromValue(limit).getName()));
 						break;
 					default:
 						break;
@@ -664,31 +661,31 @@ public abstract class AbstractItemEffectType {
 				switch(secondaryModifier) {
 					case TF_MOD_SIZE:
 						CupSize cupSize = CupSize.getCupSizeFromInt(limit);
-						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "cup size", cupSize.getCupSizeName()+(cupSize==CupSize.FLAT?"":"-cup")));
+						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "размер груди", cupSize.getCupSizeName()+(cupSize==CupSize.FLAT?"":"-cup")));
 						break;
 					case TF_MOD_SIZE_SECONDARY:
-						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "nipple size", NippleSize.getNippleSizeFromInt(limit).getName()));
+						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "размер сосков", NippleSize.getNippleSizeFromInt(limit).getName()));
 						break;
 					case TF_MOD_SIZE_TERTIARY:
-						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "areolae size", AreolaeSize.getAreolaeSizeFromInt(limit).getName()));
+						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "размер ареол", AreolaeSize.getAreolaeSizeFromInt(limit).getName()));
 						break;
 					case TF_MOD_WETNESS:
 						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "lactation", Units.fluid(limit, Units.ValueType.PRECISE, Units.UnitType.SHORT)));
 						break;
 					case TF_MOD_REGENERATION:
-						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "milk regeneration", Units.fluid(limit, Units.ValueType.PRECISE, Units.UnitType.SHORT)+" per day"));
+						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "регенерация молока", Units.fluid(limit, Units.ValueType.PRECISE, Units.UnitType.SHORT)+" в день"));
 						break;
 					case TF_MOD_ORIFICE_PUFFY:
-						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "nipples puffy", "nipple puffyness"));
+						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "вздутые соски", "вздутость сосков"));
 						break;
 					case TF_MOD_ORIFICE_RIBBED:
-						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "nipples internally ribbed",  "nipple ribbing"));
+						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "соски с внутренними ребрами",  "рельеф сосков"));
 						break;
 					case TF_MOD_ORIFICE_MUSCLED:
-						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "nipples internally muscled", "internal nipple muscles"));
+						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "соски с внутренними мышцами", "внутренние мышцы сосков"));
 						break;
 					case TF_MOD_ORIFICE_TENTACLED:
-						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "nipples internally tentacled", "nipple tentacles"));
+						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "соски с внутренними щупальцами", "щупальца сосков"));
 						break;
 					default:
 						break;
@@ -697,31 +694,31 @@ public abstract class AbstractItemEffectType {
 			case TF_BREASTS_CROTCH:
 				switch(secondaryModifier) {
 					case TF_MOD_SIZE:
-						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "cup size (crotch)", CupSize.getCupSizeFromInt(limit).getCupSizeName()+"-cup"));
+						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "размер чашечки (промежность)", CupSize.getCupSizeFromInt(limit).getCupSizeName()+"-cup"));
 						break;
 					case TF_MOD_SIZE_SECONDARY:
-						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "nipple size (crotch)", NippleSize.getNippleSizeFromInt(limit).getName()));
+						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "размер сосков (промежность)", NippleSize.getNippleSizeFromInt(limit).getName()));
 						break;
 					case TF_MOD_SIZE_TERTIARY:
-						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "areolae size (crotch)", AreolaeSize.getAreolaeSizeFromInt(limit).getName()));
+						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "размер ареол (промежность)", AreolaeSize.getAreolaeSizeFromInt(limit).getName()));
 						break;
 					case TF_MOD_WETNESS:
-						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "lactation (crotch)", Units.fluid(limit, Units.ValueType.PRECISE, Units.UnitType.SHORT)));
+						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "лактация (промежность)", Units.fluid(limit, Units.ValueType.PRECISE, Units.UnitType.SHORT)));
 						break;
 					case TF_MOD_REGENERATION:
-						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "milk regeneration (crotch)", Units.fluid(limit, Units.ValueType.PRECISE, Units.UnitType.SHORT)+" per day"));
+						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "регенерация молока (промежность)", Units.fluid(limit, Units.ValueType.PRECISE, Units.UnitType.SHORT)+" в день"));
 						break;
 					case TF_MOD_ORIFICE_PUFFY:
-						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "nipples puffy (crotch)", "nipple puffyness"));
+						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "вздутые соски (промежность)", "вздутость сосков"));
 						break;
 					case TF_MOD_ORIFICE_RIBBED:
-						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "nipples internally ribbed (crotch)",  "nipple ribbing"));
+						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "ребристые соски внутри (промежность)",  "рельеф сосков"));
 						break;
 					case TF_MOD_ORIFICE_MUSCLED:
-						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "nipples internally muscled (crotch)", "internal nipple muscles"));
+						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "мускулистые соски внутри (промежность)", "внутренние мышцы сосков"));
 						break;
 					case TF_MOD_ORIFICE_TENTACLED:
-						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "nipples internally tentacled (crotch)", "nipple tentacles"));
+						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "щупальцевидные соски внутри (промежность)", "щупальца сосков"));
 						break;
 					default:
 						break;
@@ -733,16 +730,16 @@ public abstract class AbstractItemEffectType {
 						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "height", Units.size(Height.ZERO_TINY.getMinimumValue() + limit, Units.ValueType.PRECISE, Units.UnitType.SHORT)));
 						break;
 					case TF_MOD_SIZE_SECONDARY:
-						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "muscle size", String.valueOf(limit)));
+						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "размер мышц", String.valueOf(limit)));
 						break;
 					case TF_MOD_SIZE_TERTIARY:
-						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "body size", String.valueOf(limit)));
+						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "размер тела", String.valueOf(limit)));
 						break;
 					case TF_MOD_FEMININITY:
 						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "femininity", String.valueOf(limit)));
 						break;
 					case TF_MOD_BODY_HAIR:
-						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "pubic hairiness", BodyHair.getBodyHairFromValue(limit).getName()));
+						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "волосатость в паху", BodyHair.getBodyHairFromValue(limit).getName()));
 						break;
 					default:
 						break;
@@ -751,43 +748,43 @@ public abstract class AbstractItemEffectType {
 			case TF_FACE:
 				switch(secondaryModifier) {
 					case TF_MOD_SIZE:
-						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "lip size", LipSize.getLipSizeFromInt(limit).getName()));
+						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "размер губ", LipSize.getLipSizeFromInt(limit).getName()));
 						break;
 					case TF_MOD_SIZE_SECONDARY:
-						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "tongue length", Units.size(limit)));
+						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "длина языка", Units.size(limit)));
 						break;
 					case TF_MOD_ORIFICE_PUFFY:
-						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "lips puffy", "puffy lips"));
+						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "припухшие губы", "пухлые губы"));
 						break;
 					case TF_MOD_ORIFICE_RIBBED:
-						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "throat internally ribbed",  "throat ribbing"));
+						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "внутренняя ребристость горла",  "ребристость горла"));
 						break;
 					case TF_MOD_ORIFICE_MUSCLED:
-						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "throat internally muscled", "extra throat muscles"));
+						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "внутренняя мускулистость горла", "дополнительные мышцы горла"));
 						break;
 					case TF_MOD_ORIFICE_TENTACLED:
-						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "throat internally tentacled", "throat tentacles"));
+						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "внутренние щупальца в горле", "щупальца в горле"));
 						break;
 					case TF_MOD_TONGUE_RIBBED:
-						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "ribbed tongue",  "tongue ribbing"));
+						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "ребристый язык",  "ребристость языка"));
 						break;
 					case TF_MOD_TONGUE_TENTACLED:
-						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "tentacled tongue", "tongue tentacles"));
+						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "язык с щупальцами", "щупальца на языке"));
 						break;
 					case TF_MOD_TONGUE_BIFURCATED:
-						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "bifurcated tongue", "tongue bifurcation"));
+						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "раздвоенный язык", "раздвоение языка"));
 						break;
 					case TF_MOD_TONGUE_WIDE:
-						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "wide tongue", "tongue widening"));
+						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "широкий язык", "расширение языка"));
 						break;
 					case TF_MOD_TONGUE_FLAT:
-						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "flat tongue", "tongue flattening"));
+						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "плоский язык", "уплощение языка"));
 						break;
 					case TF_MOD_TONGUE_STRONG:
-						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "strong tongue", "tongue strengthening"));
+						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "сильный язык", "укрепление языка"));
 						break;
 					case TF_MOD_BODY_HAIR:
-						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "beard length", BodyHair.getBodyHairFromValue(limit).getName()));
+						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "длина бороды", BodyHair.getBodyHairFromValue(limit).getName()));
 						break;
 					default:
 						break;
@@ -796,27 +793,27 @@ public abstract class AbstractItemEffectType {
 			case TF_HAIR:
 				switch(secondaryModifier) {
 					case TF_MOD_SIZE:
-						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "hair length", Units.size(limit, Units.ValueType.PRECISE, Units.UnitType.SHORT)));
+						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "длина волос", Units.size(limit, Units.ValueType.PRECISE, Units.UnitType.SHORT)));
 						break;
 					case TF_MOD_SIZE_SECONDARY:
 						switch(potency) {
 							case MINOR_BOOST:
-								descriptions.add("In a week, grows neck fluff.");
+								descriptions.add("Через неделю вырастает пушок на шее.");
 								break;
 							case BOOST:
-								descriptions.add("In a day, grows neck fluff.");
+								descriptions.add("Через день вырастает пушок на шее.");
 								break;
 							case MAJOR_BOOST:
-								descriptions.add("In an hour, grows neck fluff.");
+								descriptions.add("Через час вырастает пушок на шее.");
 								break;
 							case MINOR_DRAIN:
-								descriptions.add("In a week, removes neck fluff.");
+								descriptions.add("Через неделю убирает пушок на шее.");
 								break;
 							case DRAIN:
-								descriptions.add("In a day, removes neck fluff.");
+								descriptions.add("Через день убирает пушок на шее.");
 								break;
 							case MAJOR_DRAIN:
-								descriptions.add("In an hour, removes neck fluff.");
+								descriptions.add("Через час убирает пушок на шее.");
 								break;
 							default:
 								break;
@@ -831,13 +828,13 @@ public abstract class AbstractItemEffectType {
 					case TF_TYPE_1:
 						switch(potency) {
 							case MINOR_BOOST:
-								descriptions.add("In a week, grows penis.");
+								descriptions.add("Через неделю вырастет член.");
 								break;
 							case BOOST:
-								descriptions.add("In a day, grows penis.");
+								descriptions.add("Через день вырастет член.");
 								break;
 							case MAJOR_BOOST:
-								descriptions.add("In an hour, grows penis.");
+								descriptions.add("Через час вырастет член.");
 								break;
 							default:
 								break;
@@ -846,50 +843,50 @@ public abstract class AbstractItemEffectType {
 					case REMOVAL:
 						switch(potency) {
 							case MINOR_BOOST:
-								descriptions.add("In a week, removes penis.");
+								descriptions.add("Через неделю исчезнет член.");
 								break;
 							case BOOST:
-								descriptions.add("In a day, removes penis.");
+								descriptions.add("Через день исчезнет член.");
 								break;
 							case MAJOR_BOOST:
-								descriptions.add("In an hour, removes penis.");
+								descriptions.add("Через час исчезнет член.");
 								break;
 							default:
 								break;
 						}
 						break;
 					case TF_MOD_SIZE:
-						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "penis length", Units.size(limit, Units.ValueType.PRECISE, Units.UnitType.SHORT)));
+						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "длина члена", Units.size(limit, Units.ValueType.PRECISE, Units.UnitType.SHORT)));
 						break;
 					case TF_MOD_SIZE_SECONDARY:
-						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "penis girth", PenetrationGirth.getGirthFromInt(limit).getName()));
+						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "обхват члена", PenetrationGirth.getGirthFromInt(limit).getName()));
 						break;
 					case TF_MOD_SIZE_TERTIARY:
-						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "testicle size", TesticleSize.getTesticleSizeFromInt(limit).getDescriptor()));
+						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "размер яичек", TesticleSize.getTesticleSizeFromInt(limit).getDescriptor()));
 						break;
 					case TF_MOD_WETNESS:
-						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "cum storage", Units.fluid(limit, Units.ValueType.PRECISE, Units.UnitType.SHORT)));
+						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "объем спермы", Units.fluid(limit, Units.ValueType.PRECISE, Units.UnitType.SHORT)));
 						break;
 					case TF_MOD_CUM_EXPULSION:
-						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "cum expulsion", limit+"%"));
+						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "извержение спермы", limit+"%"));
 						break;
 					case TF_MOD_REGENERATION:
-						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "cum regeneration", Units.fluid(limit, Units.ValueType.PRECISE, Units.UnitType.SHORT)+" per day"));
+						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "регенерация спермы", Units.fluid(limit, Units.ValueType.PRECISE, Units.UnitType.SHORT)+" в день"));
 						break;
 					case TF_MOD_ORIFICE_PUFFY:
-						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "urethra puffy", "puffy urethra"));
+						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "опухшая уретра", "припухшая уретра"));
 						break;
 					case TF_MOD_ORIFICE_RIBBED:
-						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "urethra internally ribbed",  "urethral ribbing"));
+						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "уретра с внутренними ребрами",  "ребристость уретры"));
 						break;
 					case TF_MOD_ORIFICE_MUSCLED:
-						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "urethra internally muscled", "urethral muscles"));
+						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "уретра с внутренними мышцами", "мышцы уретры"));
 						break;
 					case TF_MOD_ORIFICE_TENTACLED:
-						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "urethra internally tentacled", "urethral tentacles"));
+						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "уретра с внутренними щупальцами", "щупальца уретры"));
 						break;
 					case TF_MOD_BODY_HAIR:
-						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "pubic hairiness", BodyHair.getBodyHairFromValue(limit).getName()));
+						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "волосатость в паху", BodyHair.getBodyHairFromValue(limit).getName()));
 						break;
 					default:
 						break;
@@ -900,13 +897,13 @@ public abstract class AbstractItemEffectType {
 					case TF_TYPE_1:
 						switch(potency) {
 							case MINOR_BOOST:
-								descriptions.add("In a week, grows vagina.");
+								descriptions.add("Через неделю вырастет влагалище.");
 								break;
 							case BOOST:
-								descriptions.add("In a day, grows vagina.");
+								descriptions.add("Через день вырастет влагалище.");
 								break;
 							case MAJOR_BOOST:
-								descriptions.add("In an hour, grows vagina.");
+								descriptions.add("Через час вырастет влагалище.");
 								break;
 							default:
 								break;
@@ -915,50 +912,50 @@ public abstract class AbstractItemEffectType {
 					case REMOVAL:
 						switch(potency) {
 							case MINOR_BOOST:
-								descriptions.add("In a week, removes vagina.");
+								descriptions.add("Через неделю исчезнет влагалище.");
 								break;
 							case BOOST:
-								descriptions.add("In a day, removes vagina.");
+								descriptions.add("Через день исчезнет влагалище.");
 								break;
 							case MAJOR_BOOST:
-								descriptions.add("In an hour, removes vagina.");
+								descriptions.add("Через час исчезнет влагалище.");
 								break;
 							default:
 								break;
 						}
 						break;
 					case TF_MOD_SIZE:
-						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "clitoris size", Units.size(limit, Units.ValueType.PRECISE, Units.UnitType.SHORT)));
+						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "размер клитора", Units.size(limit, Units.ValueType.PRECISE, Units.UnitType.SHORT)));
 						break;
 					case TF_MOD_SIZE_SECONDARY:
-						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "labia size", LabiaSize.getLabiaSizeFromInt(limit).getName()));
+						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "размер половых губ", LabiaSize.getLabiaSizeFromInt(limit).getName()));
 						break;
 					case TF_MOD_ORIFICE_PUFFY:
-						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "vagina puffy", "puffy vagina"));
+						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "вздутое влагалище", "пухлое влагалище"));
 						break;
 					case TF_MOD_ORIFICE_RIBBED:
-						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "vagina internally ribbed",  "vaginal ribbing"));
+						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "внутренние ребра влагалища",  "рельеф влагалища"));
 						break;
 					case TF_MOD_ORIFICE_MUSCLED:
-						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "vagina internally muscled", "extra vaginal muscles"));
+						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "внутренние мышцы влагалища", "дополнительные мышцы влагалища"));
 						break;
 					case TF_MOD_ORIFICE_TENTACLED:
-						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "vagina internally tentacled", "vaginal tentacles"));
+						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "внутренние щупальца влагалища", "щупальца во влагалище"));
 						break;
 					case TF_MOD_ORIFICE_PUFFY_2:
-						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "urethra puffy", "puffy urethra"));
+						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "опухшая уретра", "припухшая уретра"));
 						break;
 					case TF_MOD_ORIFICE_RIBBED_2:
-						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "urethra internally ribbed",  "urethral ribbing"));
+						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "уретра с внутренними ребрами",  "ребристость уретры"));
 						break;
 					case TF_MOD_ORIFICE_MUSCLED_2:
-						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "urethra internally muscled", "urethral muscles"));
+						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "уретра с внутренними мышцами", "мышцы уретры"));
 						break;
 					case TF_MOD_ORIFICE_TENTACLED_2:
-						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "urethra internally tentacled", "urethral tentacles"));
+						descriptions.add(getClothingOrificeTFChangeDescriptionEntry(potency, "уретра с внутренними щупальцами", "щупальца уретры"));
 						break;
 					case TF_MOD_BODY_HAIR:
-						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "pubic hairiness", BodyHair.getBodyHairFromValue(limit).getName()));
+						descriptions.add(getClothingTFChangeDescriptionEntry(potency, "волосатость в паху", BodyHair.getBodyHairFromValue(limit).getName()));
 						break;
 					default:
 						break;
@@ -974,18 +971,18 @@ public abstract class AbstractItemEffectType {
 	private static String getClothingOrificeTFChangeDescriptionEntry(TFPotency potency, String changeAdd, String changeRemove) {
 		switch(potency) {
 			case MINOR_BOOST:
-				return ("In a week, makes "+changeAdd+".");
+				return ("Через неделю дает "+changeAdd+".");
 			case BOOST:
-				return ("In a day, makes "+changeAdd+".");
+				return ("Через день дает "+changeAdd+".");
 			case SPECIAL:
 			case MAJOR_BOOST:
-				return ("In an hour, makes "+changeAdd+".");
+				return ("Через час дает "+changeAdd+".");
 			case MINOR_DRAIN:
-				return ("In a week, removes "+changeRemove+".");
+				return ("Через неделю убирает "+changeRemove+".");
 			case DRAIN:
-				return ("In a day, removes "+changeRemove+".");
+				return ("В день снимает "+changeRemove+".");
 			case MAJOR_DRAIN:
-				return ("In an hour, removes "+changeRemove+".");
+				return ("В час снимает "+changeRemove+".");
 		}
 		return "";
 	}
@@ -993,18 +990,18 @@ public abstract class AbstractItemEffectType {
 	private static String getClothingTFChangeDescriptionEntry(TFPotency potency, String subject, String limit) {
 		switch(potency) {
 			case MINOR_BOOST:
-				return ("Weekly "+subject+" increase. (Limit: "+limit+")");
+				return ("Еженедельно "+subject+" увеличивает. (Лимит: "+limit+")");
 			case BOOST:
-				return ("Daily "+subject+" increase. (Limit: "+limit+")");
+				return ("Ежедневно "+subject+" увеличивает. (Лимит: "+limit+")");
 			case SPECIAL:
 			case MAJOR_BOOST:
-				return ("Hourly "+subject+" increase. (Limit: "+limit+")");
+				return ("Ежечасно "+subject+" увеличивает. (Лимит: "+limit+")");
 			case MINOR_DRAIN:
-				return ("Weekly "+subject+" decrease. (Limit: "+limit+")");
+				return ("Еженедельно "+subject+" уменьшает. (Лимит: "+limit+")");
 			case DRAIN:
-				return ("Daily "+subject+" decrease. (Limit: "+limit+")");
+				return ("Ежедневно "+subject+" уменьшает. (Лимит: "+limit+")");
 			case MAJOR_DRAIN:
-				return ("Hourly "+subject+" decrease. (Limit: "+limit+")");
+				return ("Ежечасно "+subject+" уменьшает. (Лимит: "+limit+")");
 		}
 		return "";
 	}
@@ -2045,7 +2042,7 @@ public abstract class AbstractItemEffectType {
 							addResourceDescriptionsDrain(60, restorationType);
 						} else {
 							if(primaryModifier.getAssociatedAttribute()!=null) {
-								descriptions.add(primaryModifier.getAssociatedAttribute().getFormattedValue(-15, "b")+" to 'potion effects'");
+								descriptions.add(primaryModifier.getAssociatedAttribute().getFormattedValue(-15, "b")+" к «эффектам зелий»");
 							}
 						}
 						break;
@@ -2054,7 +2051,7 @@ public abstract class AbstractItemEffectType {
 							addResourceDescriptionsDrain(40, restorationType);
 						} else {
 							if(primaryModifier.getAssociatedAttribute()!=null) {
-								descriptions.add(primaryModifier.getAssociatedAttribute().getFormattedValue(-10, "b")+" to 'potion effects'");
+								descriptions.add(primaryModifier.getAssociatedAttribute().getFormattedValue(-10, "b")+" к «эффектам зелий»");
 							}
 						}
 						break;
@@ -2063,7 +2060,7 @@ public abstract class AbstractItemEffectType {
 							addResourceDescriptionsDrain(20, restorationType);
 						} else {
 							if(primaryModifier.getAssociatedAttribute()!=null) {
-								descriptions.add(primaryModifier.getAssociatedAttribute().getFormattedValue(-5, "b")+" to 'potion effects'");
+								descriptions.add(primaryModifier.getAssociatedAttribute().getFormattedValue(-5, "b")+" к «эффектам зелий»");
 							}
 						}
 						break;
@@ -2072,7 +2069,7 @@ public abstract class AbstractItemEffectType {
 							addResourceDescriptionsRestore(20, restorationType);
 						} else {
 							if(primaryModifier.getAssociatedAttribute()!=null) {
-								descriptions.add(primaryModifier.getAssociatedAttribute().getFormattedValue(5, "b")+" to 'potion effects'");
+								descriptions.add(primaryModifier.getAssociatedAttribute().getFormattedValue(5, "b")+" к «эффектам зелий»");
 							}
 						}
 						break;
@@ -2081,7 +2078,7 @@ public abstract class AbstractItemEffectType {
 							addResourceDescriptionsRestore(40, restorationType);
 						} else {
 							if(primaryModifier.getAssociatedAttribute()!=null) {
-								descriptions.add(primaryModifier.getAssociatedAttribute().getFormattedValue(10, "b")+" to 'potion effects'");
+								descriptions.add(primaryModifier.getAssociatedAttribute().getFormattedValue(10, "b")+" к «эффектам зелий»");
 							}
 						}
 						break;
@@ -2091,7 +2088,7 @@ public abstract class AbstractItemEffectType {
 							addResourceDescriptionsRestore(60, restorationType);
 						} else {
 							if(primaryModifier.getAssociatedAttribute()!=null) {
-								descriptions.add(primaryModifier.getAssociatedAttribute().getFormattedValue(15, "b")+" to 'potion effects'");
+								descriptions.add(primaryModifier.getAssociatedAttribute().getFormattedValue(15, "b")+" к «эффектам зелий»");
 							}
 						}
 						break;
@@ -2105,28 +2102,28 @@ public abstract class AbstractItemEffectType {
 	private static void addResourceDescriptionsRestore(int value, ResourceRestoration restorationType) {
 		switch(restorationType){
 			case HEALTH:
-					descriptions.add("[style.boldGood(Restores)] "+value+"% [style.boldHealth("+Attribute.HEALTH_MAXIMUM.getName()+")]");
+					descriptions.add("[style.boldGood(Восстанавливает)] "+value+"% [style.boldHealth("+Attribute.HEALTH_MAXIMUM.getName()+")]");
 				break;
 			case MANA:
-					descriptions.add("[style.boldGood(Restores)] "+value+"% [style.boldAura(aura)]");
+					descriptions.add("[style.boldGood(Восстанавливает)] "+value+"% [style.boldAura(ауры)]");
 				break;
 			case ALL:
-					descriptions.add("[style.boldGood(Restores)] "+value+"% [style.boldHealth("+Attribute.HEALTH_MAXIMUM.getName()+")]");
-					descriptions.add("[style.boldGood(Restores)] "+value+"% [style.boldAura(aura)]");
+					descriptions.add("[style.boldGood(Восстанавливает)] "+value+"% [style.boldHealth("+Attribute.HEALTH_MAXIMUM.getName()+")]");
+					descriptions.add("[style.boldGood(Восстанавливает)] "+value+"% [style.boldAura(ауры)]");
 				break;
 		}
 	}
 	private static void addResourceDescriptionsDrain(int value, ResourceRestoration restorationType) {
 		switch(restorationType){
 			case HEALTH:
-					descriptions.add("[style.boldBad(Drains)] "+value+"% [style.boldHealth("+Attribute.HEALTH_MAXIMUM.getName()+")]");
+					descriptions.add("[style.boldBad(Вытягивает)] "+value+"% [style.boldHealth("+Attribute.HEALTH_MAXIMUM.getName()+")]");
 				break;
 			case MANA:
-					descriptions.add("[style.boldBad(Drains)] "+value+"% [style.boldAura(aura)]");
+					descriptions.add("[style.boldBad(Вытягивает)] "+value+"% [style.boldAura(ауры)]");
 				break;
 			case ALL:
-					descriptions.add("[style.boldBad(Drains)] "+value+"% [style.boldHealth("+Attribute.HEALTH_MAXIMUM.getName()+")]");
-					descriptions.add("[style.boldBad(Drains)] "+value+"% [style.boldAura(aura)]");
+					descriptions.add("[style.boldBad(Вытягивает)] "+value+"% [style.boldHealth("+Attribute.HEALTH_MAXIMUM.getName()+")]");
+					descriptions.add("[style.boldBad(Вытягивает)] "+value+"% [style.boldAura(ауры)]");
 				break;
 		}
 	}
@@ -2147,15 +2144,15 @@ public abstract class AbstractItemEffectType {
 		
 		if(percentage > 0) {
 			if(target.isPlayer()) {
-				return "A soothing warmth spreads all throughout your body, and with a deeply satisfied sigh, you find yourself feeling a lot healthier than you did just a moment ago.";
+				return "Успокаивающее тепло разливается по всему телу, и с глубоким удовлетворенным вздохом вы понимаете, что чувствуете себя гораздо здоровее, чем мгновение назад.";
 			} else {
-				return UtilText.parse(target, "[npc.Name] lets out a satisfied sigh, and you notice that [npc.sheIs] suddenly looking a lot healthier than [npc.she] did just a moment ago.");
+				return UtilText.parse(target, "[npc.Name] удовлетворенно вздыхает, и вы замечаете, что [npc.sheIs] внезапно выглядит гораздо здоровее, чем [npc.she] мгновение назад.");
 			}
 		} else {
 			if(target.isPlayer()) {
-				return "A sickly warmth creeps its way all throughout your body, and with a feeble cough, you find yourself feeling weaker than you did just a moment ago.";
+				return "Болезненное тепло просачивается сквозь всё ваше тело, и после слабого кашля вы понимаете, что чувствуете себя слабее, чем мгновение назад.";
 			} else {
-				return UtilText.parse(target, "[npc.Name] lets out a feeble cough, and you notice that [npc.sheIs] suddenly looking a little weaker than [npc.she] did just a moment ago.");
+				return UtilText.parse(target, "[npc.Name] слабо кашляет, и вы замечаете, что [npc.sheIs] внезапно выглядит немного слабее, чем [npc.she] мгновение назад.");
 			}
 		}
 	}
@@ -2170,7 +2167,7 @@ public abstract class AbstractItemEffectType {
 						sb.append(applyRestoration(target, restorationType, -0.6f));
 					} else {
 						if(primaryModifier.getAssociatedAttribute()!=null) {
-							sb.append(UtilText.parse(target, "A sickly wave of arcane energy washes over [npc.name]...")
+							sb.append(UtilText.parse(target, "Болезненная волна арканы накрывает [npc.name]...")
 									+ "<br/>"
 									+ target.addPotionEffect(primaryModifier.getAssociatedAttribute(), -15));
 						}
@@ -2181,7 +2178,7 @@ public abstract class AbstractItemEffectType {
 						sb.append(applyRestoration(target, restorationType, -0.4f));
 					} else {
 						if(primaryModifier.getAssociatedAttribute()!=null) {
-							sb.append(UtilText.parse(target, "A sickly wave of arcane energy washes over [npc.name]...")
+							sb.append(UtilText.parse(target, "Болезненная волна арканы накрывает [npc.name]...")
 									+ "<br/>"
 									+ target.addPotionEffect(primaryModifier.getAssociatedAttribute(), -10));
 						}
@@ -2192,7 +2189,7 @@ public abstract class AbstractItemEffectType {
 						sb.append(applyRestoration(target, restorationType, -0.2f));
 					} else {
 						if(primaryModifier.getAssociatedAttribute()!=null) {
-							sb.append(UtilText.parse(target, "A sickly wave of arcane energy washes over [npc.name]...")
+							sb.append(UtilText.parse(target, "Болезненная волна арканы накрывает [npc.name]...")
 									+ "<br/>"
 									+ target.addPotionEffect(primaryModifier.getAssociatedAttribute(), -5));
 						}
@@ -2203,7 +2200,7 @@ public abstract class AbstractItemEffectType {
 						sb.append(applyRestoration(target, restorationType, 0.2f));
 					} else {
 						if(primaryModifier.getAssociatedAttribute()!=null) {
-							sb.append(UtilText.parse(target, "A soothing wave of arcane energy washes over [npc.name]...")
+							sb.append(UtilText.parse(target, "Успокаивающая волна арканической энергии омывает [npc.name]...")
 									+ "<br/>"
 									+ target.addPotionEffect(primaryModifier.getAssociatedAttribute(), 5));
 						}
@@ -2214,7 +2211,7 @@ public abstract class AbstractItemEffectType {
 						sb.append(applyRestoration(target, restorationType, 0.4f));
 					} else {
 						if(primaryModifier.getAssociatedAttribute()!=null) {
-							sb.append(UtilText.parse(target, "A soothing wave of arcane energy washes over [npc.name]...")
+							sb.append(UtilText.parse(target, "Успокаивающая волна арканической энергии омывает [npc.name]...")
 									+ "<br/>"
 									+ target.addPotionEffect(primaryModifier.getAssociatedAttribute(), 10));
 						}
@@ -2226,7 +2223,7 @@ public abstract class AbstractItemEffectType {
 						sb.append(applyRestoration(target, restorationType, 0.6f));
 					} else {
 						if(primaryModifier.getAssociatedAttribute()!=null) {
-							sb.append(UtilText.parse(target, "A soothing wave of arcane energy washes over [npc.name]...")
+							sb.append(UtilText.parse(target, "Успокаивающая волна арканической энергии омывает [npc.name]...")
 									+ "<br/>"
 									+ target.addPotionEffect(primaryModifier.getAssociatedAttribute(), 15));
 						}
@@ -2770,25 +2767,25 @@ public abstract class AbstractItemEffectType {
 					case TF_MOD_SIZE:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Antenna length (" + Units.size(mediumChangeMajorDrain) + ")") { @Override public String applyEffect() { return target.incrementAntennaLength(mediumChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Длина антенн (" + Units.size(mediumChangeMajorDrain) + ")") { @Override public String applyEffect() { return target.incrementAntennaLength(mediumChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Antenna length (" + Units.size(mediumChangeDrain) + ")") { @Override public String applyEffect() { return target.incrementAntennaLength(mediumChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Длина антенн (" + Units.size(mediumChangeDrain) + ")") { @Override public String applyEffect() { return target.incrementAntennaLength(mediumChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Antenna length (" + Units.size(mediumChangeMinorDrain) + ")") { @Override public String applyEffect() { return target.incrementAntennaLength(mediumChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Длина антенн (" + Units.size(mediumChangeMinorDrain) + ")") { @Override public String applyEffect() { return target.incrementAntennaLength(mediumChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Antenna length (+" + Units.size(mediumChangeMinorBoost) + ")") { @Override public String applyEffect() { return target.incrementAntennaLength(mediumChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Длина антенн (+" + Units.size(mediumChangeMinorBoost) + ")") { @Override public String applyEffect() { return target.incrementAntennaLength(mediumChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Antenna length (+" + Units.size(mediumChangeBoost) + ")") { @Override public String applyEffect() { return target.incrementAntennaLength(mediumChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Длина антенн (+" + Units.size(mediumChangeBoost) + ")") { @Override public String applyEffect() { return target.incrementAntennaLength(mediumChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Antenna length (+" + Units.size(mediumChangeMajorBoost) + ")") { @Override public String applyEffect() { return target.incrementAntennaLength(mediumChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Длина антенн (+" + Units.size(mediumChangeMajorBoost) + ")") { @Override public String applyEffect() { return target.incrementAntennaLength(mediumChangeMajorBoost); } };
 						}
 				
 					case TF_MOD_COUNT:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes an extra pair of antennae.") { @Override public String applyEffect() { return target.incrementAntennaRows(singleDrain); } };
+								return new RacialEffectUtil("Добавляет еще одну пару антенн.") { @Override public String applyEffect() { return target.incrementAntennaRows(singleDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds an extra pair of antennae.") { @Override public String applyEffect() {
+								return new RacialEffectUtil("Добавляет дополнительную пару усиков.") { @Override public String applyEffect() {
 									List<AbstractAntennaType> antennaTypesSuitableForTransformation = RacialBody.valueOfRace(race).getAntennaTypes(true);
 									if(target.getAntennaType().equals(AntennaType.NONE) && !antennaTypesSuitableForTransformation.isEmpty()) {
 										return target.setAntennaType(antennaTypesSuitableForTransformation.get(0));
@@ -2800,21 +2797,21 @@ public abstract class AbstractItemEffectType {
 					case TF_MOD_COUNT_SECONDARY:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Antennae per row (" + smallChangeMajorDrain + " antennae per row)") { @Override public String applyEffect() { return target.incrementAntennaePerRow(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Усиков в ряд (" + smallChangeMajorDrain + " усиков в ряд)") { @Override public String applyEffect() { return target.incrementAntennaePerRow(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Antennae per row (" + smallChangeDrain + " antennae per row)") { @Override public String applyEffect() { return target.incrementAntennaePerRow(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Усиков в ряд (" + smallChangeDrain + " усиков в ряд)") { @Override public String applyEffect() { return target.incrementAntennaePerRow(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Antennae per row (" + smallChangeMinorDrain + " antennae per row)") { @Override public String applyEffect() { return target.incrementAntennaePerRow(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Усиков в ряд (" + smallChangeMinorDrain + " усиков в ряд)") { @Override public String applyEffect() { return target.incrementAntennaePerRow(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Antennae per row (+" + smallChangeMinorBoost + " antennae per row)") { @Override public String applyEffect() { return target.incrementAntennaePerRow(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Усиков в ряд (+" + smallChangeMinorBoost + " усиков в ряд)") { @Override public String applyEffect() { return target.incrementAntennaePerRow(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Antennae per row (+" + smallChangeBoost + " antennae per row)") { @Override public String applyEffect() { return target.incrementAntennaePerRow(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Усиков в ряд (+" + smallChangeBoost + " усиков в ряд)") { @Override public String applyEffect() { return target.incrementAntennaePerRow(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Antennae per row (+" + smallChangeMajorBoost + " antennae per row)") { @Override public String applyEffect() { return target.incrementAntennaePerRow(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Усиков в ряд (+" + smallChangeMajorBoost + " усиков в ряд)") { @Override public String applyEffect() { return target.incrementAntennaePerRow(smallChangeMajorBoost); } };
 						}
 						
 					case REMOVAL:
-						return new RacialEffectUtil("Removes antennae.") { @Override public String applyEffect() { return target.setAntennaType(AntennaType.NONE); } };
+						return new RacialEffectUtil("Убирает усики.") { @Override public String applyEffect() { return target.setAntennaType(AntennaType.NONE); } };
 	
 					case TF_TYPE_1: case TF_TYPE_2: case TF_TYPE_3: case TF_TYPE_4: case TF_TYPE_5: case TF_TYPE_6: case TF_TYPE_7: case TF_TYPE_8: case TF_TYPE_9: case TF_TYPE_10:
 						int index = modifierTypeToInt(secondaryModifier);
@@ -2823,7 +2820,7 @@ public abstract class AbstractItemEffectType {
 					default:
 						List<AbstractAntennaType> antennaTypes = RacialBody.valueOfRace(race).getAntennaTypes(true);
 						AbstractAntennaType antennaType = antennaTypes.isEmpty()?AntennaType.NONE:Util.randomItemFrom(antennaTypes);
-						return new RacialEffectUtil(antennaType.equals(AntennaType.NONE)?"Removes antennae.":Util.capitaliseSentence(race.getName(false))+" antenna transformation.") {
+						return new RacialEffectUtil(antennaType.equals(AntennaType.NONE)?"Убирает усики.":Util.capitaliseSentence(race.getName(false))+" трансформация усиков.") {
 							@Override public String applyEffect() { return target.setAntennaType(antennaType); } };
 				}
 			
@@ -2831,40 +2828,40 @@ public abstract class AbstractItemEffectType {
 				switch(secondaryModifier) {
 					case TF_TYPE_1: case TF_TYPE_2: case TF_TYPE_3: case TF_TYPE_4: case TF_TYPE_5: case TF_TYPE_6: case TF_TYPE_7: case TF_TYPE_8: case TF_TYPE_9: case TF_TYPE_10:
 						int index = Math.min(ArmType.getArmTypes(race).size()-1, modifierTypeToInt(secondaryModifier));
-						return new RacialEffectUtil(Util.capitaliseSentence(ArmType.getArmTypes(race).get(index).getTransformName())+" arm transformation.") {
+						return new RacialEffectUtil(Util.capitaliseSentence(ArmType.getArmTypes(race).get(index).getTransformName())+" трансформация рук.") {
 							@Override public String applyEffect() { return target.setArmType(ArmType.getArmTypes(race).get(index)); } };
 	
 					case TF_MOD_COUNT:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes an extra pair of arms.") { @Override public String applyEffect() { return target.incrementArmRows(singleDrain); } };
+								return new RacialEffectUtil("Убирает дополнительную пару рук.") { @Override public String applyEffect() { return target.incrementArmRows(singleDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds an extra pair of arms.") { @Override public String applyEffect() { return target.incrementArmRows(singleBoost); } };
+								return new RacialEffectUtil("Добавляет дополнительную пару рук.") { @Override public String applyEffect() { return target.incrementArmRows(singleBoost); } };
 						}
 					case TF_MOD_BODY_HAIR:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("Removes a huge amount of underarm hair. (" + smallChangeMajorDrain + " hairiness)") { @Override public String applyEffect() { return target.incrementUnderarmHair(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("Убирает огромное количество волос под мышками. (" + smallChangeMajorDrain + " волосатость)") { @Override public String applyEffect() { return target.incrementUnderarmHair(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("Removes a large amount of underarm hair. (" + smallChangeDrain + " hairiness)") { @Override public String applyEffect() { return target.incrementUnderarmHair(smallChangeDrain); } };
+								return new RacialEffectUtil("Убирает большое количество волос под мышками. (" + smallChangeDrain + " волосатость)") { @Override public String applyEffect() { return target.incrementUnderarmHair(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes some underarm hair. (" + smallChangeMinorDrain + " hairiness)") { @Override public String applyEffect() { return target.incrementUnderarmHair(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("Удаляет часть волос под мышками. (" + smallChangeMinorDrain + " волосатость)") { @Override public String applyEffect() { return target.incrementUnderarmHair(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds some underarm hair. (+" + smallChangeMinorBoost + " hairiness)") { @Override public String applyEffect() { return target.incrementUnderarmHair(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("Добавляет немного волос под мышками. (+" + smallChangeMinorBoost + " волосатость)") { @Override public String applyEffect() { return target.incrementUnderarmHair(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("Adds a large amount of underarm hair. (+" + smallChangeBoost + " hairiness)") { @Override public String applyEffect() { return target.incrementUnderarmHair(smallChangeBoost); } };
+								return new RacialEffectUtil("Добавляет много волос под мышками. (+" + smallChangeBoost + " волосатость)") { @Override public String applyEffect() { return target.incrementUnderarmHair(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("Adds a huge amount of underarm hair. (+" + smallChangeMajorBoost + " hairiness)") { @Override public String applyEffect() { return target.incrementUnderarmHair(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("Добавляет огромное количество волос под мышками. (+" + smallChangeMajorBoost + " волосатость)") { @Override public String applyEffect() { return target.incrementUnderarmHair(smallChangeMajorBoost); } };
 						}
 					default:
-						return new RacialEffectUtil(Util.capitaliseSentence(race.getName(false))+" arm transformation.") { @Override public String applyEffect() { return target.setArmType(RacialBody.valueOfRace(race).getArmType()); } };
+						return new RacialEffectUtil(Util.capitaliseSentence(race.getName(false))+" трансформация рук.") { @Override public String applyEffect() { return target.setArmType(RacialBody.valueOfRace(race).getArmType()); } };
 				}
 				
 			case TF_ASS:
 				switch(secondaryModifier) {
 					case TF_TYPE_1: case TF_TYPE_2: case TF_TYPE_3: case TF_TYPE_4: case TF_TYPE_5: case TF_TYPE_6: case TF_TYPE_7: case TF_TYPE_8: case TF_TYPE_9: case TF_TYPE_10:
 						int index = Math.min(AssType.getAssTypes(race).size()-1, modifierTypeToInt(secondaryModifier));
-						return new RacialEffectUtil(Util.capitaliseSentence(AssType.getAssTypes(race).get(index).getTransformName())+" ass transformation.") {
+						return new RacialEffectUtil(Util.capitaliseSentence(AssType.getAssTypes(race).get(index).getTransformName())+" трансформацию задницы.") {
 							@Override public String applyEffect() {
 								String tfText = target.setAssType(AssType.getAssTypes(race).get(index));
 								if(revealTransformedPart) {
@@ -2877,156 +2874,156 @@ public abstract class AbstractItemEffectType {
 					case TF_MOD_SIZE:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Ass size (" + smallChangeMajorDrain + " ass size)") { @Override public String applyEffect() { return target.incrementAssSize(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Размер задницы (" + smallChangeMajorDrain + " задницы)") { @Override public String applyEffect() { return target.incrementAssSize(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Ass size (" + smallChangeDrain + " ass size)") { @Override public String applyEffect() { return target.incrementAssSize(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Размер задницы (" + smallChangeDrain + " задницы)") { @Override public String applyEffect() { return target.incrementAssSize(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Ass size (" + smallChangeMinorDrain + " ass size)") { @Override public String applyEffect() { return target.incrementAssSize(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Размер задницы (" + smallChangeMinorDrain + " задницы)") { @Override public String applyEffect() { return target.incrementAssSize(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Ass size (+" + smallChangeMinorBoost + " ass size)") { @Override public String applyEffect() { return target.incrementAssSize(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Размер задницы (+" + smallChangeMinorBoost + " задницы)") { @Override public String applyEffect() { return target.incrementAssSize(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Ass size (+" + smallChangeBoost + " ass size)") { @Override public String applyEffect() { return target.incrementAssSize(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Размер задницы (+" + smallChangeBoost + " задницы)") { @Override public String applyEffect() { return target.incrementAssSize(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Ass size (+" + smallChangeMajorBoost + " ass size)") { @Override public String applyEffect() { return target.incrementAssSize(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Размер задницы (+" + smallChangeMajorBoost + " задницы)") { @Override public String applyEffect() { return target.incrementAssSize(smallChangeMajorBoost); } };
 						}
 					case TF_MOD_SIZE_SECONDARY:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Hip size (" + smallChangeMajorDrain + " hip size)") { @Override public String applyEffect() { return target.incrementHipSize(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Размер бедер (" + smallChangeMajorDrain + " размер бедер)") { @Override public String applyEffect() { return target.incrementHipSize(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Hip size (" + smallChangeDrain + " hip size)") { @Override public String applyEffect() { return target.incrementHipSize(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Размер бедер (" + smallChangeDrain + " размер бедер)") { @Override public String applyEffect() { return target.incrementHipSize(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Hip size (" + smallChangeMinorDrain + " hip size)") { @Override public String applyEffect() { return target.incrementHipSize(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Размер бедер (" + smallChangeMinorDrain + " размер бедер)") { @Override public String applyEffect() { return target.incrementHipSize(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Hip size (+" + smallChangeMinorBoost + " hip size)") { @Override public String applyEffect() { return target.incrementHipSize(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Размер бедер (+" + smallChangeMinorBoost + " размер бедер)") { @Override public String applyEffect() { return target.incrementHipSize(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Hip size (+" + smallChangeBoost + " hip size)") { @Override public String applyEffect() { return target.incrementHipSize(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Размер бедер (+" + smallChangeBoost + " размер бедер)") { @Override public String applyEffect() { return target.incrementHipSize(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Hip size (+" + smallChangeMajorBoost + " hip size)") { @Override public String applyEffect() { return target.incrementHipSize(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Размер бедер (+" + smallChangeMajorBoost + " размер бедер)") { @Override public String applyEffect() { return target.incrementHipSize(smallChangeMajorBoost); } };
 						}
 						
 					case TF_MOD_BODY_HAIR:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("Removes a huge amount of ass hair. (" + smallChangeMajorDrain + " hairiness)") { @Override public String applyEffect() { return target.incrementAssHair(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("Убирает огромное количество волос на заднице. (" + smallChangeMajorDrain + " волосатость)") { @Override public String applyEffect() { return target.incrementAssHair(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("Removes a large amount of ass hair. (" + smallChangeDrain + " hairiness)") { @Override public String applyEffect() { return target.incrementAssHair(smallChangeDrain); } };
+								return new RacialEffectUtil("Убирает много волос на заднице. (" + smallChangeDrain + " волосатость)") { @Override public String applyEffect() { return target.incrementAssHair(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes some ass hair. (" + smallChangeMinorDrain + " hairiness)") { @Override public String applyEffect() { return target.incrementAssHair(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("Убирает немного волос на заднице. (" + smallChangeMinorDrain + " волосатость)") { @Override public String applyEffect() { return target.incrementAssHair(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds some ass hair. (+" + smallChangeMinorBoost + " hairiness)") { @Override public String applyEffect() { return target.incrementAssHair(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("Добавляет немного волос на заднице. (+" + smallChangeMinorBoost + " волосатость)") { @Override public String applyEffect() { return target.incrementAssHair(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("Adds a large amount of ass hair. (+" + smallChangeBoost + " hairiness)") { @Override public String applyEffect() { return target.incrementAssHair(smallChangeBoost); } };
+								return new RacialEffectUtil("Добавляет много волос на заднице. (+" + smallChangeBoost + " волосатость)") { @Override public String applyEffect() { return target.incrementAssHair(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("Adds a huge amount of ass hair. (+" + smallChangeMajorBoost + " hairiness)") { @Override public String applyEffect() { return target.incrementAssHair(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("Добавляет огромное количество волос на заднице. (+" + smallChangeMajorBoost + " волосатость)") { @Override public String applyEffect() { return target.incrementAssHair(smallChangeMajorBoost); } };
 						}
 						
 					case TF_MOD_CAPACITY:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Anal capacity (" + Units.size(mediumChangeMajorDrain) + ")") { @Override public String applyEffect() { return target.incrementAssCapacity(mediumChangeMajorDrain, true); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Анальная емкость (" + Units.size(mediumChangeMajorDrain) + ")") { @Override public String applyEffect() { return target.incrementAssCapacity(mediumChangeMajorDrain, true); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Anal capacity (" + Units.size(mediumChangeDrain) + ")") { @Override public String applyEffect() { return target.incrementAssCapacity(mediumChangeDrain, true); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Анальная емкость (" + Units.size(mediumChangeDrain) + ")") { @Override public String applyEffect() { return target.incrementAssCapacity(mediumChangeDrain, true); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Anal capacity (" + Units.size(mediumChangeMinorDrain) + ")") { @Override public String applyEffect() { return target.incrementAssCapacity(mediumChangeMinorDrain, true); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Вместимость ануса (" + Units.size(mediumChangeMinorDrain) + ")") { @Override public String applyEffect() { return target.incrementAssCapacity(mediumChangeMinorDrain, true); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Anal capacity (+" + Units.size(mediumChangeMinorBoost) + ")") { @Override public String applyEffect() { return target.incrementAssCapacity(mediumChangeMinorBoost, true); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Вместимость ануса (+" + Units.size(mediumChangeMinorBoost) + ")") { @Override public String applyEffect() { return target.incrementAssCapacity(mediumChangeMinorBoost, true); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Anal capacity (+" + Units.size(mediumChangeBoost) + ")") { @Override public String applyEffect() { return target.incrementAssCapacity(mediumChangeBoost, true); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Вместимость ануса (+" + Units.size(mediumChangeBoost) + ")") { @Override public String applyEffect() { return target.incrementAssCapacity(mediumChangeBoost, true); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Anal capacity (+" + Units.size(mediumChangeMajorBoost) + ")") { @Override public String applyEffect() { return target.incrementAssCapacity(mediumChangeMajorBoost, true); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Вместимость ануса (+" + Units.size(mediumChangeMajorBoost) + ")") { @Override public String applyEffect() { return target.incrementAssCapacity(mediumChangeMajorBoost, true); } };
 						}
 					case TF_MOD_DEPTH:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Anal depth (" + smallChangeMajorDrain + " depth)") { @Override public String applyEffect() { return target.incrementAssDepth(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Глубина ануса (" + smallChangeMajorDrain + " глубина)") { @Override public String applyEffect() { return target.incrementAssDepth(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Anal depth (" + smallChangeDrain + " depth)") { @Override public String applyEffect() { return target.incrementAssDepth(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Глубина ануса (" + smallChangeDrain + " глубина)") { @Override public String applyEffect() { return target.incrementAssDepth(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Anal depth (" + smallChangeMinorDrain + " depth)") { @Override public String applyEffect() { return target.incrementAssDepth(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Глубина ануса (" + smallChangeMinorDrain + " глубина)") { @Override public String applyEffect() { return target.incrementAssDepth(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Anal depth (+" + smallChangeMinorBoost + " depth)") { @Override public String applyEffect() { return target.incrementAssDepth(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Глубина анального отверстия (+" + smallChangeMinorBoost + " глубина)") { @Override public String applyEffect() { return target.incrementAssDepth(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Anal depth (+" + smallChangeBoost + " depth)") { @Override public String applyEffect() { return target.incrementAssDepth(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Глубина анального отверстия (+" + smallChangeBoost + " глубина)") { @Override public String applyEffect() { return target.incrementAssDepth(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Anal depth (+" + smallChangeMajorBoost + " depth)") { @Override public String applyEffect() { return target.incrementAssDepth(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Глубина анального отверстия (+" + smallChangeMajorBoost + " глубина)") { @Override public String applyEffect() { return target.incrementAssDepth(smallChangeMajorBoost); } };
 						}
 					case TF_MOD_ELASTICITY:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Anal elasticity (" + smallChangeMajorDrain + " elasticity)") { @Override public String applyEffect() { return target.incrementAssElasticity(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Эластичность ануса (" + smallChangeMajorDrain + " эластичность)") { @Override public String applyEffect() { return target.incrementAssElasticity(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Anal elasticity (" + smallChangeDrain + " elasticity)") { @Override public String applyEffect() { return target.incrementAssElasticity(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Эластичность ануса (" + smallChangeDrain + " эластичность)") { @Override public String applyEffect() { return target.incrementAssElasticity(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Anal elasticity (" + smallChangeMinorDrain + " elasticity)") { @Override public String applyEffect() { return target.incrementAssElasticity(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Эластичность ануса (" + smallChangeMinorDrain + " эластичность)") { @Override public String applyEffect() { return target.incrementAssElasticity(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Anal elasticity (+" + smallChangeMinorBoost + " elasticity)") { @Override public String applyEffect() { return target.incrementAssElasticity(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Эластичность ануса (+" + smallChangeMinorBoost + " эластичность)") { @Override public String applyEffect() { return target.incrementAssElasticity(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Anal elasticity (+" + smallChangeBoost + " elasticity)") { @Override public String applyEffect() { return target.incrementAssElasticity(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Анальная эластичность (+" + smallChangeBoost + " эластичность)") { @Override public String applyEffect() { return target.incrementAssElasticity(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Anal elasticity (+" + smallChangeMajorBoost + " elasticity)") { @Override public String applyEffect() { return target.incrementAssElasticity(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Анальная эластичность (+" + smallChangeMajorBoost + " эластичность)") { @Override public String applyEffect() { return target.incrementAssElasticity(smallChangeMajorBoost); } };
 						}
 					case TF_MOD_PLASTICITY:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Anal plasticity (" + smallChangeMajorDrain + " plasticity)") { @Override public String applyEffect() { return target.incrementAssPlasticity(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Анальная пластичность (" + smallChangeMajorDrain + " пластичность)") { @Override public String applyEffect() { return target.incrementAssPlasticity(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Anal plasticity (" + smallChangeDrain + " plasticity)") { @Override public String applyEffect() { return target.incrementAssPlasticity(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Анальная пластичность (" + smallChangeDrain + " пластичность)") { @Override public String applyEffect() { return target.incrementAssPlasticity(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Anal plasticity (" + smallChangeMinorDrain + " plasticity)") { @Override public String applyEffect() { return target.incrementAssPlasticity(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Анальная пластичность (" + smallChangeMinorDrain + " пластичность)") { @Override public String applyEffect() { return target.incrementAssPlasticity(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Anal plasticity (+" + smallChangeMinorBoost + " plasticity)") { @Override public String applyEffect() { return target.incrementAssPlasticity(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Анальная пластичность (+" + smallChangeMinorBoost + " пластичность)") { @Override public String applyEffect() { return target.incrementAssPlasticity(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Anal plasticity (+" + smallChangeBoost + " plasticity)") { @Override public String applyEffect() { return target.incrementAssPlasticity(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Анальная пластичность (+" + smallChangeBoost + " пластичность)") { @Override public String applyEffect() { return target.incrementAssPlasticity(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Anal plasticity (+" + smallChangeMajorBoost + " plasticity)") { @Override public String applyEffect() { return target.incrementAssPlasticity(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Анальная пластичность (+" + smallChangeMajorBoost + " пластичность)") { @Override public String applyEffect() { return target.incrementAssPlasticity(smallChangeMajorBoost); } };
 						}
 					case TF_MOD_WETNESS:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Anal lubrication (" + smallChangeMajorDrain + " wetness)") { @Override public String applyEffect() { return target.incrementAssWetness(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Анальная смазка (" + smallChangeMajorDrain + " влажность)") { @Override public String applyEffect() { return target.incrementAssWetness(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Anal lubrication (" + smallChangeDrain + " wetness)") { @Override public String applyEffect() { return target.incrementAssWetness(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Анальная смазка (" + smallChangeDrain + " влажность)") { @Override public String applyEffect() { return target.incrementAssWetness(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Anal lubrication (" + smallChangeMinorDrain + " wetness)") { @Override public String applyEffect() { return target.incrementAssWetness(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Анальная смазка (" + smallChangeMinorDrain + " влажность)") { @Override public String applyEffect() { return target.incrementAssWetness(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Anal lubrication (+" + smallChangeMinorBoost + " wetness)") { @Override public String applyEffect() { return target.incrementAssWetness(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Анальная смазка (+" + smallChangeMinorBoost + " влажность)") { @Override public String applyEffect() { return target.incrementAssWetness(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Anal lubrication (+" + smallChangeBoost + " wetness)") { @Override public String applyEffect() { return target.incrementAssWetness(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Анальная смазка (+" + smallChangeBoost + " влажность)") { @Override public String applyEffect() { return target.incrementAssWetness(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Anal lubrication (+" + smallChangeMajorBoost + " wetness)") { @Override public String applyEffect() { return target.incrementAssWetness(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Анальная смазка (+" + smallChangeMajorBoost + " влажность)") { @Override public String applyEffect() { return target.incrementAssWetness(smallChangeMajorBoost); } };
 						}
 						
 					case TF_MOD_ORIFICE_PUFFY:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes puffiness from anal rim.") { @Override public String applyEffect() { return target.removeAssOrificeModifier(OrificeModifier.PUFFY); } };
+								return new RacialEffectUtil("Убирает припухлость ануса.") { @Override public String applyEffect() { return target.removeAssOrificeModifier(OrificeModifier.PUFFY); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Makes anal rim puffy.") { @Override public String applyEffect() { return target.addAssOrificeModifier(OrificeModifier.PUFFY); } };
+								return new RacialEffectUtil("Делает анус припухлым.") { @Override public String applyEffect() { return target.addAssOrificeModifier(OrificeModifier.PUFFY); } };
 						}
 					case TF_MOD_ORIFICE_RIBBED:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes internal ribbing from anus.") { @Override public String applyEffect() { return target.removeAssOrificeModifier(OrificeModifier.RIBBED); } };
+								return new RacialEffectUtil("Убирает внутренние ребра в анусе.") { @Override public String applyEffect() { return target.removeAssOrificeModifier(OrificeModifier.RIBBED); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds internal ribbing to anus.") { @Override public String applyEffect() { return target.addAssOrificeModifier(OrificeModifier.RIBBED); } };
+								return new RacialEffectUtil("Добавляет внутренние ребра в анус.") { @Override public String applyEffect() { return target.addAssOrificeModifier(OrificeModifier.RIBBED); } };
 						}
 					case TF_MOD_ORIFICE_MUSCLED:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes extra internal muscles from anus.") { @Override public String applyEffect() { return target.removeAssOrificeModifier(OrificeModifier.MUSCLE_CONTROL); } };
+								return new RacialEffectUtil("Убирает лишние внутренние мышцы в анусе.") { @Override public String applyEffect() { return target.removeAssOrificeModifier(OrificeModifier.MUSCLE_CONTROL); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds extra internal muscles to anus.") { @Override public String applyEffect() { return target.addAssOrificeModifier(OrificeModifier.MUSCLE_CONTROL); } };
+								return new RacialEffectUtil("Добавляет лишние внутренние мышцы в анус.") { @Override public String applyEffect() { return target.addAssOrificeModifier(OrificeModifier.MUSCLE_CONTROL); } };
 						}
 					case TF_MOD_ORIFICE_TENTACLED:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes internal tentacles from anus.") { @Override public String applyEffect() { return target.removeAssOrificeModifier(OrificeModifier.TENTACLED); } };
+								return new RacialEffectUtil("Убирает внутренние щупальца из ануса.") { @Override public String applyEffect() { return target.removeAssOrificeModifier(OrificeModifier.TENTACLED); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds internal tentacles to anus.") { @Override public String applyEffect() { return target.addAssOrificeModifier(OrificeModifier.TENTACLED); } };
+								return new RacialEffectUtil("Добавляет внутренние щупальца в анус.") { @Override public String applyEffect() { return target.addAssOrificeModifier(OrificeModifier.TENTACLED); } };
 						}
 					default:
-						return new RacialEffectUtil(Util.capitaliseSentence(race.getName(false))+" ass transformation.") { @Override public String applyEffect() {
+						return new RacialEffectUtil(Util.capitaliseSentence(race.getName(false))+" трансформацию задницы.") { @Override public String applyEffect() {
 							String tfText = target.setAssType(RacialBody.valueOfRace(race).getAssType());
 							if(revealTransformedPart) {
 								user.setKnowsCharacterArea(CoverableArea.ASS, target, true);
@@ -3040,7 +3037,7 @@ public abstract class AbstractItemEffectType {
 				switch(secondaryModifier) {
 					case TF_TYPE_1: case TF_TYPE_2: case TF_TYPE_3: case TF_TYPE_4: case TF_TYPE_5: case TF_TYPE_6: case TF_TYPE_7: case TF_TYPE_8: case TF_TYPE_9: case TF_TYPE_10:
 						int index = Math.min(BreastType.getBreastTypes(race).size()-1, modifierTypeToInt(secondaryModifier));
-						return new RacialEffectUtil(Util.capitaliseSentence(BreastType.getBreastTypes(race).get(index).getTransformName())+" breast transformation.") {
+						return new RacialEffectUtil(Util.capitaliseSentence(BreastType.getBreastTypes(race).get(index).getTransformName())+" трансформация груди.") {
 							@Override public String applyEffect() {
 								String tfText = target.setBreastType(BreastType.getBreastTypes(race).get(index));
 								if(revealTransformedPart) {
@@ -3051,221 +3048,221 @@ public abstract class AbstractItemEffectType {
 							} };
 	
 					case REMOVAL:
-						return new RacialEffectUtil("Completely flattens breasts.") {
+						return new RacialEffectUtil("Полностью уплощает грудь.") {
 							@Override public String applyEffect() { return target.setBreastSize(0); } };
 							
 					case TF_MOD_COUNT:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes an extra pair of breasts.") { @Override public String applyEffect() { return target.incrementBreastRows(singleDrain); } };
+								return new RacialEffectUtil("Убирает лишнюю пару грудей.") { @Override public String applyEffect() { return target.incrementBreastRows(singleDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds an extra pair of breasts.") { @Override public String applyEffect() { return target.incrementBreastRows(singleBoost); } };
+								return new RacialEffectUtil("Добавляет лишнюю пару грудей.") { @Override public String applyEffect() { return target.incrementBreastRows(singleBoost); } };
 						}
 					case TF_MOD_COUNT_SECONDARY:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes an extra nipple from each breast.") { @Override public String applyEffect() { return target.incrementNippleCountPerBreast(singleDrain); } };
+								return new RacialEffectUtil("Убирает лишний сосок с каждой груди.") { @Override public String applyEffect() { return target.incrementNippleCountPerBreast(singleDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds an extra nipple to each breast.") { @Override public String applyEffect() { return target.incrementNippleCountPerBreast(singleBoost); } };
+								return new RacialEffectUtil("Добавляет лишний сосок к каждой груди.") { @Override public String applyEffect() { return target.incrementNippleCountPerBreast(singleBoost); } };
 						}
 					case TF_MOD_SIZE:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Breast size (" + smallChangeMajorDrain + " breast size)") { @Override public String applyEffect() { return target.incrementBreastSize(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Размер груди (" + smallChangeMajorDrain + " размер груди)") { @Override public String applyEffect() { return target.incrementBreastSize(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Breast size (" + smallChangeDrain + " breast size)") { @Override public String applyEffect() { return target.incrementBreastSize(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Размер груди (" + smallChangeDrain + " размер груди)") { @Override public String applyEffect() { return target.incrementBreastSize(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Breast size (" + smallChangeMinorDrain + " breast size)") { @Override public String applyEffect() { return target.incrementBreastSize(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Размер груди (" + smallChangeMinorDrain + " размер груди)") { @Override public String applyEffect() { return target.incrementBreastSize(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Breast size (+" + smallChangeMinorBoost + " breast size)") { @Override public String applyEffect() { return target.incrementBreastSize(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Размер груди (+" + smallChangeMinorBoost + " размер груди)") { @Override public String applyEffect() { return target.incrementBreastSize(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Breast size (+" + smallChangeBoost + " breast size)") { @Override public String applyEffect() { return target.incrementBreastSize(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Размер груди (+" + smallChangeBoost + " размер груди)") { @Override public String applyEffect() { return target.incrementBreastSize(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Breast size (+" + smallChangeMajorBoost + " breast size)") { @Override public String applyEffect() { return target.incrementBreastSize(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Размер груди (+" + smallChangeMajorBoost + " размер груди)") { @Override public String applyEffect() { return target.incrementBreastSize(smallChangeMajorBoost); } };
 						}
 						
 
 					case TF_MOD_SIZE_SECONDARY:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Nipple size (" + smallChangeMajorDrain + " nipple size)") { @Override public String applyEffect() { return target.incrementNippleSize(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Размер сосков (" + smallChangeMajorDrain + " размер сосков)") { @Override public String applyEffect() { return target.incrementNippleSize(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Nipple size (" + smallChangeDrain + " nipple size)") { @Override public String applyEffect() { return target.incrementNippleSize(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Размер сосков (" + smallChangeDrain + " размер сосков)") { @Override public String applyEffect() { return target.incrementNippleSize(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Nipple size (" + smallChangeMinorDrain + " nipple size)") { @Override public String applyEffect() { return target.incrementNippleSize(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Размер сосков (" + smallChangeMinorDrain + " размер сосков)") { @Override public String applyEffect() { return target.incrementNippleSize(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Nipple size (+" + smallChangeMinorBoost + " nipple size)") { @Override public String applyEffect() { return target.incrementNippleSize(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Размер сосков (+" + smallChangeMinorBoost + " размер сосков)") { @Override public String applyEffect() { return target.incrementNippleSize(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Nipple size (+" + smallChangeBoost + " nipple size)") { @Override public String applyEffect() { return target.incrementNippleSize(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Размер сосков (+" + smallChangeBoost + " размер сосков)") { @Override public String applyEffect() { return target.incrementNippleSize(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Nipple size (+" + smallChangeMajorBoost + " nipple size)") { @Override public String applyEffect() { return target.incrementNippleSize(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Размер сосков (+" + smallChangeMajorBoost + " размер сосков)") { @Override public String applyEffect() { return target.incrementNippleSize(smallChangeMajorBoost); } };
 						}
 
 					case TF_MOD_BREAST_SHAPE_ROUND:
-						return new RacialEffectUtil("Transforms breast shape into being round.") { @Override public String applyEffect() { return target.setBreastShape(BreastShape.ROUND); } };
+						return new RacialEffectUtil("Придает груди округлую форму.") { @Override public String applyEffect() { return target.setBreastShape(BreastShape.ROUND); } };
 					case TF_MOD_BREAST_SHAPE_PERKY:
-						return new RacialEffectUtil("Transforms breast shape into being perky.") { @Override public String applyEffect() { return target.setBreastShape(BreastShape.PERKY); } };
+						return new RacialEffectUtil("Придает груди упругую форму.") { @Override public String applyEffect() { return target.setBreastShape(BreastShape.PERKY); } };
 					case TF_MOD_BREAST_SHAPE_POINTY:
-						return new RacialEffectUtil("Transforms breast shape into being pointy.") { @Override public String applyEffect() { return target.setBreastShape(BreastShape.POINTY); } };
+						return new RacialEffectUtil("Придает груди заостренную форму.") { @Override public String applyEffect() { return target.setBreastShape(BreastShape.POINTY); } };
 					case TF_MOD_BREAST_SHAPE_SIDESET:
-						return new RacialEffectUtil("Transforms breast shape into being sideset.") { @Override public String applyEffect() { return target.setBreastShape(BreastShape.SIDE_SET); } };
+						return new RacialEffectUtil("Придает груди форму с разведенными сосками.") { @Override public String applyEffect() { return target.setBreastShape(BreastShape.SIDE_SET); } };
 					case TF_MOD_BREAST_SHAPE_WIDE:
-						return new RacialEffectUtil("Transforms breast shape into being wide.") { @Override public String applyEffect() { return target.setBreastShape(BreastShape.WIDE); } };
+						return new RacialEffectUtil("Придает груди широкую форму.") { @Override public String applyEffect() { return target.setBreastShape(BreastShape.WIDE); } };
 					case TF_MOD_BREAST_SHAPE_NARROW:
-						return new RacialEffectUtil("Transforms breast shape into being narrow.") { @Override public String applyEffect() { return target.setBreastShape(BreastShape.NARROW); } };
+						return new RacialEffectUtil("Придает груди узкую форму.") { @Override public String applyEffect() { return target.setBreastShape(BreastShape.NARROW); } };
 						
 					case TF_MOD_NIPPLE_NORMAL:
-						return new RacialEffectUtil("Turns nipples into a normal shape.") { @Override public String applyEffect() { return target.setNippleShape(NippleShape.NORMAL); } };
+						return new RacialEffectUtil("Придает соскам нормальную форму.") { @Override public String applyEffect() { return target.setNippleShape(NippleShape.NORMAL); } };
 					case TF_MOD_NIPPLE_INVERTED:
-						return new RacialEffectUtil("Turns nipples into a normal, although inverted, shape.") { @Override public String applyEffect() { return target.setNippleShape(NippleShape.INVERTED); } };
+						return new RacialEffectUtil("Превращает соски в обычную, хотя и вывернутую форму.") { @Override public String applyEffect() { return target.setNippleShape(NippleShape.INVERTED); } };
 					case TF_MOD_NIPPLE_VAGINA:
-						return new RacialEffectUtil("Turns nipples into vaginas.") { @Override public String applyEffect() { return target.setNippleShape(NippleShape.VAGINA); } };
+						return new RacialEffectUtil("Превращает соски в вагины.") { @Override public String applyEffect() { return target.setNippleShape(NippleShape.VAGINA); } };
 					case TF_MOD_NIPPLE_LIPS:
-						return new RacialEffectUtil("Turns nipples into pairs of lips.") { @Override public String applyEffect() { return target.setNippleShape(NippleShape.LIPS); } };
+						return new RacialEffectUtil("Превращает соски в пары губ.") { @Override public String applyEffect() { return target.setNippleShape(NippleShape.LIPS); } };
 						
 					case TF_MOD_SIZE_TERTIARY:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Areolae size (" + smallChangeMajorDrain + " areolae size)") { @Override public String applyEffect() { return target.incrementAreolaeSize(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Размер ареол (" + smallChangeMajorDrain + " размер ареол)") { @Override public String applyEffect() { return target.incrementAreolaeSize(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Areolae size (" + smallChangeDrain + " areolae size)") { @Override public String applyEffect() { return target.incrementAreolaeSize(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Размер ареол (" + smallChangeDrain + " размер ареол)") { @Override public String applyEffect() { return target.incrementAreolaeSize(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Areolae size (" + smallChangeMinorDrain + " areolae size)") { @Override public String applyEffect() { return target.incrementAreolaeSize(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Размер ареол (" + smallChangeMinorDrain + " размер ареол)") { @Override public String applyEffect() { return target.incrementAreolaeSize(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Areolae size (+" + smallChangeMinorBoost + " areolae size)") { @Override public String applyEffect() { return target.incrementAreolaeSize(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Размер ареол (+" + smallChangeMinorBoost + " размер ареол)") { @Override public String applyEffect() { return target.incrementAreolaeSize(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Areolae size (+" + smallChangeBoost + " areolae size)") { @Override public String applyEffect() { return target.incrementAreolaeSize(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Размер ареол (+" + smallChangeBoost + " размер ареол)") { @Override public String applyEffect() { return target.incrementAreolaeSize(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Areolae size (+" + smallChangeMajorBoost + " areolae size)") { @Override public String applyEffect() { return target.incrementAreolaeSize(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Размер ареол (+" + smallChangeMajorBoost + " размер ареол)") { @Override public String applyEffect() { return target.incrementAreolaeSize(smallChangeMajorBoost); } };
 						}
 					case TF_MOD_AREOLAE_CIRCLE:
-						return new RacialEffectUtil("Turns the shape of areolae into normal circles.") { @Override public String applyEffect() { return target.setAreolaeShape(AreolaeShape.NORMAL); } };
+						return new RacialEffectUtil("Придает ареолам форму обычных кругов.") { @Override public String applyEffect() { return target.setAreolaeShape(AreolaeShape.NORMAL); } };
 					case TF_MOD_AREOLAE_HEART:
-						return new RacialEffectUtil("Turns the shape of areolae into hearts.") { @Override public String applyEffect() { return target.setAreolaeShape(AreolaeShape.HEART); } };
+						return new RacialEffectUtil("Придает ареолам форму сердечек.") { @Override public String applyEffect() { return target.setAreolaeShape(AreolaeShape.HEART); } };
 					case TF_MOD_AREOLAE_STAR:
-						return new RacialEffectUtil("Turns the shape of areolae into stars.") { @Override public String applyEffect() { return target.setAreolaeShape(AreolaeShape.STAR); } };
+						return new RacialEffectUtil("Придает ареолам форму звезд.") { @Override public String applyEffect() { return target.setAreolaeShape(AreolaeShape.STAR); } };
 						
 					case TF_MOD_CAPACITY:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Nipple capacity (" + Units.size(mediumChangeMajorDrain) + ")") { @Override public String applyEffect() { return target.incrementNippleCapacity(mediumChangeMajorDrain, true); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Вместимость сосков (" + Units.size(mediumChangeMajorDrain) + ")") { @Override public String applyEffect() { return target.incrementNippleCapacity(mediumChangeMajorDrain, true); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Nipple capacity (" + Units.size(mediumChangeDrain) + ")") { @Override public String applyEffect() { return target.incrementNippleCapacity(mediumChangeDrain, true); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Вместимость сосков (" + Units.size(mediumChangeDrain) + ")") { @Override public String applyEffect() { return target.incrementNippleCapacity(mediumChangeDrain, true); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Nipple capacity (" + Units.size(mediumChangeMinorDrain) + ")") { @Override public String applyEffect() { return target.incrementNippleCapacity(mediumChangeMinorDrain, true); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Вместимость сосков (" + Units.size(mediumChangeMinorDrain) + ")") { @Override public String applyEffect() { return target.incrementNippleCapacity(mediumChangeMinorDrain, true); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Nipple capacity (+" + Units.size(mediumChangeMinorBoost) + ")") { @Override public String applyEffect() { return target.incrementNippleCapacity(mediumChangeMinorBoost, true); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Вместимость сосков (+" + Units.size(mediumChangeMinorBoost) + ")") { @Override public String applyEffect() { return target.incrementNippleCapacity(mediumChangeMinorBoost, true); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Nipple capacity (+" + Units.size(mediumChangeBoost) + ")") { @Override public String applyEffect() { return target.incrementNippleCapacity(mediumChangeBoost, true); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Вместимость сосков (+" + Units.size(mediumChangeBoost) + ")") { @Override public String applyEffect() { return target.incrementNippleCapacity(mediumChangeBoost, true); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Nipple capacity (+" + Units.size(mediumChangeMajorBoost) + ")") { @Override public String applyEffect() { return target.incrementNippleCapacity(mediumChangeMajorBoost, true); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Вместимость сосков (+" + Units.size(mediumChangeMajorBoost) + ")") { @Override public String applyEffect() { return target.incrementNippleCapacity(mediumChangeMajorBoost, true); } };
 						}
 					case TF_MOD_DEPTH:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Nipple depth (" + smallChangeMajorDrain + " depth)") { @Override public String applyEffect() { return target.incrementNippleDepth(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Глубина сосков (" + smallChangeMajorDrain + " глубина)") { @Override public String applyEffect() { return target.incrementNippleDepth(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Nipple depth (" + smallChangeDrain + " depth)") { @Override public String applyEffect() { return target.incrementNippleDepth(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Глубина сосков (" + smallChangeDrain + " глубина)") { @Override public String applyEffect() { return target.incrementNippleDepth(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Nipple depth (" + smallChangeMinorDrain + " depth)") { @Override public String applyEffect() { return target.incrementNippleDepth(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Глубина сосков (" + smallChangeMinorDrain + " глубина)") { @Override public String applyEffect() { return target.incrementNippleDepth(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Nipple depth (+" + smallChangeMinorBoost + " depth)") { @Override public String applyEffect() { return target.incrementNippleDepth(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Глубина сосков (+" + smallChangeMinorBoost + " глубина)") { @Override public String applyEffect() { return target.incrementNippleDepth(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Nipple depth (+" + smallChangeBoost + " depth)") { @Override public String applyEffect() { return target.incrementNippleDepth(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Глубина сосков (+" + smallChangeBoost + " глубина)") { @Override public String applyEffect() { return target.incrementNippleDepth(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Nipple depth (+" + smallChangeMajorBoost + " depth)") { @Override public String applyEffect() { return target.incrementNippleDepth(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Глубина сосков (+" + smallChangeMajorBoost + " глубина)") { @Override public String applyEffect() { return target.incrementNippleDepth(smallChangeMajorBoost); } };
 						}
 					case TF_MOD_ELASTICITY:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Nipple elasticity (" + smallChangeMajorDrain + " elasticity)") { @Override public String applyEffect() { return target.incrementNippleElasticity(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Эластичность сосков (" + smallChangeMajorDrain + " эластичность)") { @Override public String applyEffect() { return target.incrementNippleElasticity(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Nipple elasticity (" + smallChangeDrain + " elasticity)") { @Override public String applyEffect() { return target.incrementNippleElasticity(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Эластичность сосков (" + smallChangeDrain + " эластичность)") { @Override public String applyEffect() { return target.incrementNippleElasticity(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Nipple elasticity (" + smallChangeMinorDrain + " elasticity)") { @Override public String applyEffect() { return target.incrementNippleElasticity(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Эластичность сосков (" + smallChangeMinorDrain + " эластичность)") { @Override public String applyEffect() { return target.incrementNippleElasticity(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Nipple elasticity (+" + smallChangeMinorBoost + " elasticity)") { @Override public String applyEffect() { return target.incrementNippleElasticity(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Эластичность сосков (+" + smallChangeMinorBoost + " эластичность)") { @Override public String applyEffect() { return target.incrementNippleElasticity(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Nipple elasticity (+" + smallChangeBoost + " elasticity)") { @Override public String applyEffect() { return target.incrementNippleElasticity(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Эластичность сосков (+" + smallChangeBoost + " эластичность)") { @Override public String applyEffect() { return target.incrementNippleElasticity(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Nipple elasticity (+" + smallChangeMajorBoost + " elasticity)") { @Override public String applyEffect() { return target.incrementNippleElasticity(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Эластичность сосков (+" + smallChangeMajorBoost + " эластичность)") { @Override public String applyEffect() { return target.incrementNippleElasticity(smallChangeMajorBoost); } };
 						}
 					case TF_MOD_PLASTICITY:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Nipple plasticity (" + smallChangeMajorDrain + " plasticity)") { @Override public String applyEffect() { return target.incrementNipplePlasticity(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Пластичность сосков (" + smallChangeMajorDrain + " пластичность)") { @Override public String applyEffect() { return target.incrementNipplePlasticity(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Nipple plasticity (" + smallChangeDrain + " plasticity)") { @Override public String applyEffect() { return target.incrementNipplePlasticity(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Пластичность сосков (" + smallChangeDrain + " пластичность)") { @Override public String applyEffect() { return target.incrementNipplePlasticity(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Nipple plasticity (" + smallChangeMinorDrain + " plasticity)") { @Override public String applyEffect() { return target.incrementNipplePlasticity(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Пластичность сосков (" + smallChangeMinorDrain + " пластичность)") { @Override public String applyEffect() { return target.incrementNipplePlasticity(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Nipple plasticity (+" + smallChangeMinorBoost + " plasticity)") { @Override public String applyEffect() { return target.incrementNipplePlasticity(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Пластичность сосков (+" + smallChangeMinorBoost + " пластичность)") { @Override public String applyEffect() { return target.incrementNipplePlasticity(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Nipple plasticity (+" + smallChangeBoost + " plasticity)") { @Override public String applyEffect() { return target.incrementNipplePlasticity(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Пластичность сосков (+" + smallChangeBoost + " пластичность)") { @Override public String applyEffect() { return target.incrementNipplePlasticity(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Nipple plasticity (+" + smallChangeMajorBoost + " plasticity)") { @Override public String applyEffect() { return target.incrementNipplePlasticity(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Пластичность сосков (+" + smallChangeMajorBoost + " пластичность)") { @Override public String applyEffect() { return target.incrementNipplePlasticity(smallChangeMajorBoost); } };
 						}
 					case TF_MOD_WETNESS:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Milk storage (" + Units.fluid(largeChangeMajorDrain) + ")") { @Override public String applyEffect() { return target.incrementBreastMilkStorage(largeChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Вместимость молока (" + Units.fluid(largeChangeMajorDrain) + ")") { @Override public String applyEffect() { return target.incrementBreastMilkStorage(largeChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Milk storage (" + Units.fluid(largeChangeDrain) + ")") { @Override public String applyEffect() { return target.incrementBreastMilkStorage(largeChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Запас молока (" + Units.fluid(largeChangeDrain) + ")") { @Override public String applyEffect() { return target.incrementBreastMilkStorage(largeChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Milk storage (" + Units.fluid(largeChangeMinorDrain) + ")") { @Override public String applyEffect() { return target.incrementBreastMilkStorage(largeChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Запас молока (" + Units.fluid(largeChangeMinorDrain) + ")") { @Override public String applyEffect() { return target.incrementBreastMilkStorage(largeChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Milk storage (+" + Units.fluid(largeChangeMinorBoost) + ")") { @Override public String applyEffect() { return target.incrementBreastMilkStorage(largeChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Запас молока (+" + Units.fluid(largeChangeMinorBoost) + ")") { @Override public String applyEffect() { return target.incrementBreastMilkStorage(largeChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Milk storage (+" + Units.fluid(largeChangeBoost) + ")") { @Override public String applyEffect() { return target.incrementBreastMilkStorage(largeChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Запас молока (+" + Units.fluid(largeChangeBoost) + ")") { @Override public String applyEffect() { return target.incrementBreastMilkStorage(largeChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Milk storage (+" + Units.fluid(largeChangeMajorBoost) + ")") { @Override public String applyEffect() { return target.incrementBreastMilkStorage(largeChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Запас молока (+" + Units.fluid(largeChangeMajorBoost) + ")") { @Override public String applyEffect() { return target.incrementBreastMilkStorage(largeChangeMajorBoost); } };
 						}
 					case TF_MOD_REGENERATION:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Milk regeneration") { @Override public String applyEffect() { return target.incrementBreastLactationRegeneration(hugeChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Регенерация молока") { @Override public String applyEffect() { return target.incrementBreastLactationRegeneration(hugeChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Milk regeneration") { @Override public String applyEffect() { return target.incrementBreastLactationRegeneration(hugeChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Регенерация молока") { @Override public String applyEffect() { return target.incrementBreastLactationRegeneration(hugeChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Milk regeneration") { @Override public String applyEffect() { return target.incrementBreastLactationRegeneration(hugeChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Регенерация молока") { @Override public String applyEffect() { return target.incrementBreastLactationRegeneration(hugeChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Milk regeneration") { @Override public String applyEffect() { return target.incrementBreastLactationRegeneration(hugeChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Регенерация молока") { @Override public String applyEffect() { return target.incrementBreastLactationRegeneration(hugeChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Milk regeneration") { @Override public String applyEffect() { return target.incrementBreastLactationRegeneration(hugeChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Регенерация молока") { @Override public String applyEffect() { return target.incrementBreastLactationRegeneration(hugeChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Milk regeneration") { @Override public String applyEffect() { return target.incrementBreastLactationRegeneration(hugeChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Регенерация молока") { @Override public String applyEffect() { return target.incrementBreastLactationRegeneration(hugeChangeMajorBoost); } };
 						}
 						
 					case TF_MOD_ORIFICE_PUFFY:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes puffiness from nipples.") { @Override public String applyEffect() { return target.removeNippleOrificeModifier(OrificeModifier.PUFFY); } };
+								return new RacialEffectUtil("Убирает припухлость сосков.") { @Override public String applyEffect() { return target.removeNippleOrificeModifier(OrificeModifier.PUFFY); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Makes nipples extra puffy.") { @Override public String applyEffect() { return target.addNippleOrificeModifier(OrificeModifier.PUFFY); } };
+								return new RacialEffectUtil("Делает соски очень припухлыми.") { @Override public String applyEffect() { return target.addNippleOrificeModifier(OrificeModifier.PUFFY); } };
 						}
 					case TF_MOD_ORIFICE_RIBBED:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes internal ribbing from nipples.") { @Override public String applyEffect() { return target.removeNippleOrificeModifier(OrificeModifier.RIBBED); } };
+								return new RacialEffectUtil("Убирает внутреннюю ребристость сосков.") { @Override public String applyEffect() { return target.removeNippleOrificeModifier(OrificeModifier.RIBBED); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds internal ribbing to nipples.") { @Override public String applyEffect() { return target.addNippleOrificeModifier(OrificeModifier.RIBBED); } };
+								return new RacialEffectUtil("Добавляет внутреннюю ребристость соскам.") { @Override public String applyEffect() { return target.addNippleOrificeModifier(OrificeModifier.RIBBED); } };
 						}
 					case TF_MOD_ORIFICE_MUSCLED:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes internal muscles from nipples.") { @Override public String applyEffect() { return target.removeNippleOrificeModifier(OrificeModifier.MUSCLE_CONTROL); } };
+								return new RacialEffectUtil("Убирает внутренние мышцы из сосков.") { @Override public String applyEffect() { return target.removeNippleOrificeModifier(OrificeModifier.MUSCLE_CONTROL); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds internal muscles to nipples.") { @Override public String applyEffect() { return target.addNippleOrificeModifier(OrificeModifier.MUSCLE_CONTROL); } };
+								return new RacialEffectUtil("Добавляет внутренние мышцы в соски.") { @Override public String applyEffect() { return target.addNippleOrificeModifier(OrificeModifier.MUSCLE_CONTROL); } };
 						}
 					case TF_MOD_ORIFICE_TENTACLED:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes internal tentacles from nipples.") { @Override public String applyEffect() { return target.removeNippleOrificeModifier(OrificeModifier.TENTACLED); } };
+								return new RacialEffectUtil("Убирает внутренние щупальца из сосков.") { @Override public String applyEffect() { return target.removeNippleOrificeModifier(OrificeModifier.TENTACLED); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds internal tentacles to nipples.") { @Override public String applyEffect() { return target.addNippleOrificeModifier(OrificeModifier.TENTACLED); } };
+								return new RacialEffectUtil("Добавляет внутренние щупальца в соски.") { @Override public String applyEffect() { return target.addNippleOrificeModifier(OrificeModifier.TENTACLED); } };
 						}
 					default:
-						return new RacialEffectUtil(Util.capitaliseSentence(race.getName(false))+" breast transformation.") { @Override public String applyEffect() {
+						return new RacialEffectUtil(Util.capitaliseSentence(race.getName(false))+" трансформация груди.") { @Override public String applyEffect() {
 							String tfText = target.setBreastType(RacialBody.valueOfRace(race).getBreastType());
 							if(revealTransformedPart) {
 								user.setKnowsCharacterArea(CoverableArea.BREASTS, target, true);
@@ -3279,7 +3276,7 @@ public abstract class AbstractItemEffectType {
 				switch(secondaryModifier) {
 					case TF_TYPE_1: case TF_TYPE_2: case TF_TYPE_3: case TF_TYPE_4: case TF_TYPE_5: case TF_TYPE_6: case TF_TYPE_7: case TF_TYPE_8: case TF_TYPE_9: case TF_TYPE_10:
 						int index = Math.min(BreastType.getBreastTypes(race).size()-1, modifierTypeToInt(secondaryModifier));
-						return new RacialEffectUtil(Util.capitaliseSentence(BreastType.getBreastTypes(race).get(index).getTransformName())+" crotch-boob transformation.") { @Override public String applyEffect() {
+						return new RacialEffectUtil(Util.capitaliseSentence(BreastType.getBreastTypes(race).get(index).getTransformName())+" трансформация промежности в грудь.") { @Override public String applyEffect() {
 							String tfText = target.setBreastCrotchType(BreastType.getBreastTypes(race).get(index));
 								if(revealTransformedPart) {
 									user.setKnowsCharacterArea(CoverableArea.BREASTS_CROTCH, target, true);
@@ -3289,7 +3286,7 @@ public abstract class AbstractItemEffectType {
 							} };
 	
 					case REMOVAL:
-						return new RacialEffectUtil("Removes crotch-boobs.") {
+						return new RacialEffectUtil("Убирает лобковые сиськи.") {
 							@Override public String applyEffect() {
 								String tfText = target.setBreastCrotchType(BreastType.NONE);
 								if(revealTransformedPart) {
@@ -3302,220 +3299,220 @@ public abstract class AbstractItemEffectType {
 					case TF_MOD_COUNT:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes an extra pair of crotch-boobs.") { @Override public String applyEffect() { return target.incrementBreastCrotchRows(singleDrain); } };
+								return new RacialEffectUtil("Убирает дополнительную пару лобковых сисек.") { @Override public String applyEffect() { return target.incrementBreastCrotchRows(singleDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds an extra pair of crotch-boobs.") { @Override public String applyEffect() { return target.incrementBreastCrotchRows(singleBoost); } };
+								return new RacialEffectUtil("Добавляет дополнительную пару лобковых сисек.") { @Override public String applyEffect() { return target.incrementBreastCrotchRows(singleBoost); } };
 						}
 					case TF_MOD_COUNT_SECONDARY:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes an extra nipple from each crotch-boob.") { @Override public String applyEffect() {
+								return new RacialEffectUtil("Убирает по одному лишнему соску с каждой лобковой сиськи.") { @Override public String applyEffect() {
 									return target.incrementNippleCrotchCountPerBreast(singleDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds an extra nipple to each crotch-boob.") { @Override public String applyEffect() {
+								return new RacialEffectUtil("Добавляет по одному лишнему соску к каждой лобковой сиське.") { @Override public String applyEffect() {
 									return target.incrementNippleCrotchCountPerBreast(singleBoost); } };
 						}
 					case TF_MOD_SIZE:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Crotch-boob size (" + smallChangeMajorDrain + " breast size)") { @Override public String applyEffect() { return target.incrementBreastCrotchSize(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Размер лобковых сисек (" + smallChangeMajorDrain + " размер груди)") { @Override public String applyEffect() { return target.incrementBreastCrotchSize(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Crotch-boob size (" + smallChangeDrain + " breast size)") { @Override public String applyEffect() { return target.incrementBreastCrotchSize(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Размер лобковых сисек (" + smallChangeDrain + " размер груди)") { @Override public String applyEffect() { return target.incrementBreastCrotchSize(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Crotch-boob size (" + smallChangeMinorDrain + " breast size)") { @Override public String applyEffect() { return target.incrementBreastCrotchSize(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Размер лобковых сисек (" + smallChangeMinorDrain + " размер груди)") { @Override public String applyEffect() { return target.incrementBreastCrotchSize(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Crotch-boob size (" + smallChangeMinorBoost + " breast size)") { @Override public String applyEffect() { return target.incrementBreastCrotchSize(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Размер лобковых сисек (" + smallChangeMinorBoost + " размер груди)") { @Override public String applyEffect() { return target.incrementBreastCrotchSize(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Crotch-boob size (" + smallChangeBoost + " breast size)") { @Override public String applyEffect() { return target.incrementBreastCrotchSize(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Размер лобковых сисек (" + smallChangeBoost + " размер груди)") { @Override public String applyEffect() { return target.incrementBreastCrotchSize(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Crotch-boob size (" + smallChangeMajorBoost + " breast size)") { @Override public String applyEffect() { return target.incrementBreastCrotchSize(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Размер лобковых грудей (" + smallChangeMajorBoost + " размер груди)") { @Override public String applyEffect() { return target.incrementBreastCrotchSize(smallChangeMajorBoost); } };
 						}
 						
 
 					case TF_MOD_SIZE_SECONDARY:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Nipple size (" + smallChangeMajorDrain + " nipple size)") { @Override public String applyEffect() { return target.incrementNippleCrotchSize(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Размер сосков (" + smallChangeMajorDrain + " размер сосков)") { @Override public String applyEffect() { return target.incrementNippleCrotchSize(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Nipple size (" + smallChangeDrain + " nipple size)") { @Override public String applyEffect() { return target.incrementNippleCrotchSize(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Размер сосков (" + smallChangeDrain + " размер сосков)") { @Override public String applyEffect() { return target.incrementNippleCrotchSize(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Nipple size (" + smallChangeMinorDrain + " nipple size)") { @Override public String applyEffect() { return target.incrementNippleCrotchSize(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Размер сосков (" + smallChangeMinorDrain + " размер сосков)") { @Override public String applyEffect() { return target.incrementNippleCrotchSize(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Nipple size (" + smallChangeMinorBoost + " nipple size)") { @Override public String applyEffect() { return target.incrementNippleCrotchSize(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Размер сосков (" + smallChangeMinorBoost + " размер сосков)") { @Override public String applyEffect() { return target.incrementNippleCrotchSize(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Nipple size (" + smallChangeBoost + " nipple size)") { @Override public String applyEffect() { return target.incrementNippleCrotchSize(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Размер сосков (" + smallChangeBoost + " размер сосков)") { @Override public String applyEffect() { return target.incrementNippleCrotchSize(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Nipple size (" + smallChangeMajorBoost + " nipple size)") { @Override public String applyEffect() { return target.incrementNippleCrotchSize(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Размер сосков (" + smallChangeMajorBoost + " размер сосков)") { @Override public String applyEffect() { return target.incrementNippleCrotchSize(smallChangeMajorBoost); } };
 						}
 
 					case TF_MOD_BREAST_SHAPE_UDDERS:
-						return new RacialEffectUtil("Transforms crotch-boobs into udders.") { @Override public String applyEffect() { return target.setBreastCrotchShape(BreastShape.UDDERS); } };
+						return new RacialEffectUtil("Превращает лобковые груди в вымя.") { @Override public String applyEffect() { return target.setBreastCrotchShape(BreastShape.UDDERS); } };
 					case TF_MOD_BREAST_SHAPE_ROUND:
-						return new RacialEffectUtil("Transforms crotch-boob shape into being round.") { @Override public String applyEffect() { return target.setBreastCrotchShape(BreastShape.ROUND); } };
+						return new RacialEffectUtil("Придает лобковым грудям округлую форму.") { @Override public String applyEffect() { return target.setBreastCrotchShape(BreastShape.ROUND); } };
 					case TF_MOD_BREAST_SHAPE_PERKY:
-						return new RacialEffectUtil("Transforms crotch-boob shape into being perky.") { @Override public String applyEffect() { return target.setBreastCrotchShape(BreastShape.PERKY); } };
+						return new RacialEffectUtil("Придает лобковым грудям упругую форму.") { @Override public String applyEffect() { return target.setBreastCrotchShape(BreastShape.PERKY); } };
 					case TF_MOD_BREAST_SHAPE_POINTY:
-						return new RacialEffectUtil("Transforms crotch-boob shape into being pointy.") { @Override public String applyEffect() { return target.setBreastCrotchShape(BreastShape.POINTY); } };
+						return new RacialEffectUtil("Придает лобковым грудям заостренную форму.") { @Override public String applyEffect() { return target.setBreastCrotchShape(BreastShape.POINTY); } };
 					case TF_MOD_BREAST_SHAPE_SIDESET:
-						return new RacialEffectUtil("Transforms crotch-boob shape into being sideset.") { @Override public String applyEffect() { return target.setBreastCrotchShape(BreastShape.SIDE_SET); } };
+						return new RacialEffectUtil("Придает лобковым грудям форму, направленную в стороны.") { @Override public String applyEffect() { return target.setBreastCrotchShape(BreastShape.SIDE_SET); } };
 					case TF_MOD_BREAST_SHAPE_WIDE:
-						return new RacialEffectUtil("Transforms crotch-boob shape into being wide.") { @Override public String applyEffect() { return target.setBreastCrotchShape(BreastShape.WIDE); } };
+						return new RacialEffectUtil("Придает лобковым грудям широкую форму.") { @Override public String applyEffect() { return target.setBreastCrotchShape(BreastShape.WIDE); } };
 					case TF_MOD_BREAST_SHAPE_NARROW:
-						return new RacialEffectUtil("Transforms crotch-boob shape into being narrow.") { @Override public String applyEffect() { return target.setBreastCrotchShape(BreastShape.NARROW); } };
+						return new RacialEffectUtil("Делает форму лобка узкой.") { @Override public String applyEffect() { return target.setBreastCrotchShape(BreastShape.NARROW); } };
 						
 					case TF_MOD_NIPPLE_NORMAL:
-						return new RacialEffectUtil("Turns nipples into a normal shape.") { @Override public String applyEffect() { return target.setNippleCrotchShape(NippleShape.NORMAL); } };
+						return new RacialEffectUtil("Придает соскам нормальную форму.") { @Override public String applyEffect() { return target.setNippleCrotchShape(NippleShape.NORMAL); } };
 					case TF_MOD_NIPPLE_INVERTED:
-						return new RacialEffectUtil("Turns nipples into a normal, although inverted, shape.") { @Override public String applyEffect() { return target.setNippleCrotchShape(NippleShape.INVERTED); } };
+						return new RacialEffectUtil("Превращает соски в обычную, хотя и вывернутую форму.") { @Override public String applyEffect() { return target.setNippleCrotchShape(NippleShape.INVERTED); } };
 					case TF_MOD_NIPPLE_VAGINA:
-						return new RacialEffectUtil("Turns nipples into vaginas.") { @Override public String applyEffect() { return target.setNippleCrotchShape(NippleShape.VAGINA); } };
+						return new RacialEffectUtil("Превращает соски в вагины.") { @Override public String applyEffect() { return target.setNippleCrotchShape(NippleShape.VAGINA); } };
 					case TF_MOD_NIPPLE_LIPS:
-						return new RacialEffectUtil("Turns nipples into pairs of lips.") { @Override public String applyEffect() { return target.setNippleCrotchShape(NippleShape.LIPS); } };
+						return new RacialEffectUtil("Превращает соски в пары губ.") { @Override public String applyEffect() { return target.setNippleCrotchShape(NippleShape.LIPS); } };
 						
 					case TF_MOD_SIZE_TERTIARY:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Areolae size (" + smallChangeMajorDrain + " areolae size)") { @Override public String applyEffect() { return target.incrementAreolaeCrotchSize(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Размер ареол (" + smallChangeMajorDrain + " размер ареол)") { @Override public String applyEffect() { return target.incrementAreolaeCrotchSize(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Areolae size (" + smallChangeDrain + " areolae size)") { @Override public String applyEffect() { return target.incrementAreolaeCrotchSize(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Размер ареол (" + smallChangeDrain + " размер ареол)") { @Override public String applyEffect() { return target.incrementAreolaeCrotchSize(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Areolae size (" + smallChangeMinorDrain + " areolae size)") { @Override public String applyEffect() { return target.incrementAreolaeCrotchSize(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Размер ареол (" + smallChangeMinorDrain + " размер ареол)") { @Override public String applyEffect() { return target.incrementAreolaeCrotchSize(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Areolae size (" + smallChangeMinorBoost + " areolae size)") { @Override public String applyEffect() { return target.incrementAreolaeCrotchSize(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Размер ареол (" + smallChangeMinorBoost + " размер ареол)") { @Override public String applyEffect() { return target.incrementAreolaeCrotchSize(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Areolae size (" + smallChangeBoost + " areolae size)") { @Override public String applyEffect() { return target.incrementAreolaeCrotchSize(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Размер ареол (" + smallChangeBoost + " размер ареол)") { @Override public String applyEffect() { return target.incrementAreolaeCrotchSize(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Areolae size (" + smallChangeMajorBoost + " areolae size)") { @Override public String applyEffect() { return target.incrementAreolaeCrotchSize(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Размер ареол (" + smallChangeMajorBoost + " размер ареол)") { @Override public String applyEffect() { return target.incrementAreolaeCrotchSize(smallChangeMajorBoost); } };
 						}
 					case TF_MOD_AREOLAE_CIRCLE:
-						return new RacialEffectUtil("Turns the shape of areolae into normal circles.") { @Override public String applyEffect() { return target.setAreolaeCrotchShape(AreolaeShape.NORMAL); } };
+						return new RacialEffectUtil("Придает ареолам форму обычных кругов.") { @Override public String applyEffect() { return target.setAreolaeCrotchShape(AreolaeShape.NORMAL); } };
 					case TF_MOD_AREOLAE_HEART:
-						return new RacialEffectUtil("Turns the shape of areolae into hearts.") { @Override public String applyEffect() { return target.setAreolaeCrotchShape(AreolaeShape.HEART); } };
+						return new RacialEffectUtil("Придает ареолам форму сердечек.") { @Override public String applyEffect() { return target.setAreolaeCrotchShape(AreolaeShape.HEART); } };
 					case TF_MOD_AREOLAE_STAR:
-						return new RacialEffectUtil("Turns the shape of areolae into stars.") { @Override public String applyEffect() { return target.setAreolaeCrotchShape(AreolaeShape.STAR); } };
+						return new RacialEffectUtil("Придает ареолам форму звезд.") { @Override public String applyEffect() { return target.setAreolaeCrotchShape(AreolaeShape.STAR); } };
 						
 					case TF_MOD_CAPACITY:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Nipple capacity (" + Units.size(mediumChangeMajorDrain) + ")") { @Override public String applyEffect() { return target.incrementNippleCrotchCapacity(mediumChangeMajorDrain, true); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Вместимость сосков (" + Units.size(mediumChangeMajorDrain) + ")") { @Override public String applyEffect() { return target.incrementNippleCrotchCapacity(mediumChangeMajorDrain, true); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Nipple capacity (" + Units.size(mediumChangeDrain) + ")") { @Override public String applyEffect() { return target.incrementNippleCrotchCapacity(mediumChangeDrain, true); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Вместимость сосков (" + Units.size(mediumChangeDrain) + ")") { @Override public String applyEffect() { return target.incrementNippleCrotchCapacity(mediumChangeDrain, true); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Nipple capacity (" + Units.size(mediumChangeMinorDrain) + ")") { @Override public String applyEffect() { return target.incrementNippleCrotchCapacity(mediumChangeMinorDrain, true); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Вместимость сосков (" + Units.size(mediumChangeMinorDrain) + ")") { @Override public String applyEffect() { return target.incrementNippleCrotchCapacity(mediumChangeMinorDrain, true); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Nipple capacity (" + Units.size(mediumChangeMinorBoost) + ")") { @Override public String applyEffect() { return target.incrementNippleCrotchCapacity(mediumChangeMinorBoost, true); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Вместимость сосков (" + Units.size(mediumChangeMinorBoost) + ")") { @Override public String applyEffect() { return target.incrementNippleCrotchCapacity(mediumChangeMinorBoost, true); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Nipple capacity (" + Units.size(mediumChangeBoost) + ")") { @Override public String applyEffect() { return target.incrementNippleCrotchCapacity(mediumChangeBoost, true); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Вместимость сосков (" + Units.size(mediumChangeBoost) + ")") { @Override public String applyEffect() { return target.incrementNippleCrotchCapacity(mediumChangeBoost, true); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Nipple capacity (" + Units.size(mediumChangeMajorBoost) + ")") { @Override public String applyEffect() { return target.incrementNippleCrotchCapacity(mediumChangeMajorBoost, true); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Вместимость сосков (" + Units.size(mediumChangeMajorBoost) + ")") { @Override public String applyEffect() { return target.incrementNippleCrotchCapacity(mediumChangeMajorBoost, true); } };
 						}
 					case TF_MOD_DEPTH:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Nipple depth (" + smallChangeMajorDrain + " depth)") { @Override public String applyEffect() { return target.incrementNippleCrotchDepth(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Глубина сосков (" + smallChangeMajorDrain + " глубина)") { @Override public String applyEffect() { return target.incrementNippleCrotchDepth(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Nipple depth (" + smallChangeDrain + " depth)") { @Override public String applyEffect() { return target.incrementNippleCrotchDepth(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Глубина сосков (" + smallChangeDrain + " глубина)") { @Override public String applyEffect() { return target.incrementNippleCrotchDepth(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Nipple depth (" + smallChangeMinorDrain + " depth)") { @Override public String applyEffect() { return target.incrementNippleCrotchDepth(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Глубина сосков (" + smallChangeMinorDrain + " глубина)") { @Override public String applyEffect() { return target.incrementNippleCrotchDepth(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Nipple depth (+" + smallChangeMinorBoost + " depth)") { @Override public String applyEffect() { return target.incrementNippleCrotchDepth(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Глубина сосков (+" + smallChangeMinorBoost + " глубина)") { @Override public String applyEffect() { return target.incrementNippleCrotchDepth(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Nipple depth (+" + smallChangeBoost + " depth)") { @Override public String applyEffect() { return target.incrementNippleCrotchDepth(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Глубина сосков (+" + smallChangeBoost + " глубина)") { @Override public String applyEffect() { return target.incrementNippleCrotchDepth(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Nipple depth (+" + smallChangeMajorBoost + " depth)") { @Override public String applyEffect() { return target.incrementNippleCrotchDepth(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Глубина сосков (+" + smallChangeMajorBoost + " глубина)") { @Override public String applyEffect() { return target.incrementNippleCrotchDepth(smallChangeMajorBoost); } };
 						}
 					case TF_MOD_ELASTICITY:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Nipple elasticity (" + smallChangeMajorDrain + " elasticity)") { @Override public String applyEffect() { return target.incrementNippleCrotchElasticity(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Эластичность сосков (" + smallChangeMajorDrain + " эластичность)") { @Override public String applyEffect() { return target.incrementNippleCrotchElasticity(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Nipple elasticity (" + smallChangeDrain + " elasticity)") { @Override public String applyEffect() { return target.incrementNippleCrotchElasticity(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Эластичность сосков (" + smallChangeDrain + " эластичность)") { @Override public String applyEffect() { return target.incrementNippleCrotchElasticity(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Nipple elasticity (" + smallChangeMinorDrain + " elasticity)") { @Override public String applyEffect() { return target.incrementNippleCrotchElasticity(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Эластичность сосков (" + smallChangeMinorDrain + " эластичность)") { @Override public String applyEffect() { return target.incrementNippleCrotchElasticity(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Nipple elasticity (" + smallChangeMinorBoost + " elasticity)") { @Override public String applyEffect() { return target.incrementNippleCrotchElasticity(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Эластичность сосков (" + smallChangeMinorBoost + " эластичность)") { @Override public String applyEffect() { return target.incrementNippleCrotchElasticity(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Nipple elasticity (" + smallChangeBoost + " elasticity)") { @Override public String applyEffect() { return target.incrementNippleCrotchElasticity(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Эластичность сосков (" + smallChangeBoost + " эластичность)") { @Override public String applyEffect() { return target.incrementNippleCrotchElasticity(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Nipple elasticity (" + smallChangeMajorBoost + " elasticity)") { @Override public String applyEffect() { return target.incrementNippleCrotchElasticity(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Эластичность сосков (" + smallChangeMajorBoost + " эластичность)") { @Override public String applyEffect() { return target.incrementNippleCrotchElasticity(smallChangeMajorBoost); } };
 						}
 					case TF_MOD_PLASTICITY:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Nipple plasticity (" + smallChangeMajorDrain + " plasticity)") { @Override public String applyEffect() { return target.incrementNippleCrotchPlasticity(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Пластичность сосков (" + smallChangeMajorDrain + " пластичность)") { @Override public String applyEffect() { return target.incrementNippleCrotchPlasticity(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Nipple plasticity (" + smallChangeDrain + " plasticity)") { @Override public String applyEffect() { return target.incrementNippleCrotchPlasticity(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Пластичность сосков (" + smallChangeDrain + " пластичность)") { @Override public String applyEffect() { return target.incrementNippleCrotchPlasticity(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Nipple plasticity (" + smallChangeMinorDrain + " plasticity)") { @Override public String applyEffect() { return target.incrementNippleCrotchPlasticity(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Пластичность сосков (" + smallChangeMinorDrain + " пластичность)") { @Override public String applyEffect() { return target.incrementNippleCrotchPlasticity(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Nipple plasticity (" + smallChangeMinorBoost + " plasticity)") { @Override public String applyEffect() { return target.incrementNippleCrotchPlasticity(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Пластичность сосков (" + smallChangeMinorBoost + " пластичность)") { @Override public String applyEffect() { return target.incrementNippleCrotchPlasticity(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Nipple plasticity (" + smallChangeBoost + " plasticity)") { @Override public String applyEffect() { return target.incrementNippleCrotchPlasticity(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Пластичность сосков (" + smallChangeBoost + " пластичность)") { @Override public String applyEffect() { return target.incrementNippleCrotchPlasticity(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Nipple plasticity (" + smallChangeMajorBoost + " plasticity)") { @Override public String applyEffect() { return target.incrementNippleCrotchPlasticity(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Пластичность сосков (" + smallChangeMajorBoost + " пластичность)") { @Override public String applyEffect() { return target.incrementNippleCrotchPlasticity(smallChangeMajorBoost); } };
 						}
 					case TF_MOD_WETNESS:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Milk storage (" + Units.fluid(largeChangeMajorDrain) + ")") { @Override public String applyEffect() { return target.incrementBreastCrotchMilkStorage(largeChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Вместимость молока (" + Units.fluid(largeChangeMajorDrain) + ")") { @Override public String applyEffect() { return target.incrementBreastCrotchMilkStorage(largeChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Milk storage (" + Units.fluid(largeChangeDrain) + ")") { @Override public String applyEffect() { return target.incrementBreastCrotchMilkStorage(largeChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Запас молока (" + Units.fluid(largeChangeDrain) + ")") { @Override public String applyEffect() { return target.incrementBreastCrotchMilkStorage(largeChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Milk storage (" + Units.fluid(largeChangeMinorDrain) + ")") { @Override public String applyEffect() { return target.incrementBreastCrotchMilkStorage(largeChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Запас молока (" + Units.fluid(largeChangeMinorDrain) + ")") { @Override public String applyEffect() { return target.incrementBreastCrotchMilkStorage(largeChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Milk storage (" + Units.fluid(largeChangeMinorBoost) + ")") { @Override public String applyEffect() { return target.incrementBreastCrotchMilkStorage(largeChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Вместимость молока (" + Units.fluid(largeChangeMinorBoost) + ")") { @Override public String applyEffect() { return target.incrementBreastCrotchMilkStorage(largeChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Milk storage (" + Units.fluid(largeChangeBoost) + ")") { @Override public String applyEffect() { return target.incrementBreastCrotchMilkStorage(largeChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Вместимость молока (" + Units.fluid(largeChangeBoost) + ")") { @Override public String applyEffect() { return target.incrementBreastCrotchMilkStorage(largeChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Milk storage (" + Units.fluid(largeChangeMajorBoost) + ")") { @Override public String applyEffect() { return target.incrementBreastCrotchMilkStorage(largeChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Вместимость молока (" + Units.fluid(largeChangeMajorBoost) + ")") { @Override public String applyEffect() { return target.incrementBreastCrotchMilkStorage(largeChangeMajorBoost); } };
 						}
 					case TF_MOD_REGENERATION:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Milk regeneration") { @Override public String applyEffect() { return target.incrementBreastCrotchLactationRegeneration(hugeChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Регенерация молока") { @Override public String applyEffect() { return target.incrementBreastCrotchLactationRegeneration(hugeChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Milk regeneration") { @Override public String applyEffect() { return target.incrementBreastCrotchLactationRegeneration(hugeChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Регенерация молока") { @Override public String applyEffect() { return target.incrementBreastCrotchLactationRegeneration(hugeChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Milk regeneration") { @Override public String applyEffect() { return target.incrementBreastCrotchLactationRegeneration(hugeChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Регенерация молока") { @Override public String applyEffect() { return target.incrementBreastCrotchLactationRegeneration(hugeChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Milk regeneration") { @Override public String applyEffect() { return target.incrementBreastCrotchLactationRegeneration(hugeChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Регенерация молока") { @Override public String applyEffect() { return target.incrementBreastCrotchLactationRegeneration(hugeChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Milk regeneration") { @Override public String applyEffect() { return target.incrementBreastCrotchLactationRegeneration(hugeChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Регенерация молока") { @Override public String applyEffect() { return target.incrementBreastCrotchLactationRegeneration(hugeChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Milk regeneration") { @Override public String applyEffect() { return target.incrementBreastCrotchLactationRegeneration(hugeChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Регенерация молока") { @Override public String applyEffect() { return target.incrementBreastCrotchLactationRegeneration(hugeChangeMajorBoost); } };
 						}
 						
 					case TF_MOD_ORIFICE_PUFFY:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes puffiness from nipples.") { @Override public String applyEffect() { return target.removeNippleCrotchOrificeModifier(OrificeModifier.PUFFY); } };
+								return new RacialEffectUtil("Убирает припухлость сосков.") { @Override public String applyEffect() { return target.removeNippleCrotchOrificeModifier(OrificeModifier.PUFFY); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Makes nipples extra puffy.") { @Override public String applyEffect() { return target.addNippleCrotchOrificeModifier(OrificeModifier.PUFFY); } };
+								return new RacialEffectUtil("Делает соски очень припухлыми.") { @Override public String applyEffect() { return target.addNippleCrotchOrificeModifier(OrificeModifier.PUFFY); } };
 						}
 					case TF_MOD_ORIFICE_RIBBED:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes internal ribbing from nipples.") { @Override public String applyEffect() { return target.removeNippleCrotchOrificeModifier(OrificeModifier.RIBBED); } };
+								return new RacialEffectUtil("Убирает внутреннюю ребристость сосков.") { @Override public String applyEffect() { return target.removeNippleCrotchOrificeModifier(OrificeModifier.RIBBED); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds internal ribbing to nipples.") { @Override public String applyEffect() { return target.addNippleCrotchOrificeModifier(OrificeModifier.RIBBED); } };
+								return new RacialEffectUtil("Добавляет внутреннюю ребристость соскам.") { @Override public String applyEffect() { return target.addNippleCrotchOrificeModifier(OrificeModifier.RIBBED); } };
 						}
 					case TF_MOD_ORIFICE_MUSCLED:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes internal muscles from nipples.") { @Override public String applyEffect() { return target.removeNippleCrotchOrificeModifier(OrificeModifier.MUSCLE_CONTROL); } };
+								return new RacialEffectUtil("Убирает внутренние мышцы из сосков.") { @Override public String applyEffect() { return target.removeNippleCrotchOrificeModifier(OrificeModifier.MUSCLE_CONTROL); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds internal muscles to nipples.") { @Override public String applyEffect() { return target.addNippleCrotchOrificeModifier(OrificeModifier.MUSCLE_CONTROL); } };
+								return new RacialEffectUtil("Добавляет внутренние мышцы в соски.") { @Override public String applyEffect() { return target.addNippleCrotchOrificeModifier(OrificeModifier.MUSCLE_CONTROL); } };
 						}
 					case TF_MOD_ORIFICE_TENTACLED:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes internal tentacles from nipples.") { @Override public String applyEffect() { return target.removeNippleCrotchOrificeModifier(OrificeModifier.TENTACLED); } };
+								return new RacialEffectUtil("Убирает внутренние щупальца из сосков.") { @Override public String applyEffect() { return target.removeNippleCrotchOrificeModifier(OrificeModifier.TENTACLED); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds internal tentacles to nipples.") { @Override public String applyEffect() { return target.addNippleCrotchOrificeModifier(OrificeModifier.TENTACLED); } };
+								return new RacialEffectUtil("Добавляет внутренние щупальца в соски.") { @Override public String applyEffect() { return target.addNippleCrotchOrificeModifier(OrificeModifier.TENTACLED); } };
 						}
 						
 					default:
-						return new RacialEffectUtil(Util.capitaliseSentence(race.getName(false))+" crotch-boob transformation.") { @Override public String applyEffect() {
+						return new RacialEffectUtil(Util.capitaliseSentence(race.getName(false))+" трансформация промежности в грудь.") { @Override public String applyEffect() {
 							String tfText = target.setBreastCrotchType(RacialBody.valueOfRace(race).getBreastType());
 							if(revealTransformedPart) {
 								user.setKnowsCharacterArea(CoverableArea.BREASTS_CROTCH, target, true);
@@ -3530,95 +3527,95 @@ public abstract class AbstractItemEffectType {
 					case TF_MOD_SIZE:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Height (" + Units.size(mediumChangeMajorDrain) + ")") { @Override public String applyEffect() { return target.incrementHeight(mediumChangeMajorDrain, false); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Рост (" + Units.size(mediumChangeMajorDrain) + ")") { @Override public String applyEffect() { return target.incrementHeight(mediumChangeMajorDrain, false); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Height (" + Units.size(mediumChangeDrain) + ")") { @Override public String applyEffect() { return target.incrementHeight(mediumChangeDrain, false); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Рост (" + Units.size(mediumChangeDrain) + ")") { @Override public String applyEffect() { return target.incrementHeight(mediumChangeDrain, false); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Height (" + Units.size(mediumChangeMinorDrain) + ")") { @Override public String applyEffect() { return target.incrementHeight(mediumChangeMinorDrain, false); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Рост (" + Units.size(mediumChangeMinorDrain) + ")") { @Override public String applyEffect() { return target.incrementHeight(mediumChangeMinorDrain, false); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Height (+" + Units.size(mediumChangeMinorBoost) + ")") { @Override public String applyEffect() { return target.incrementHeight(mediumChangeMinorBoost, false); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Рост (+" + Units.size(mediumChangeMinorBoost) + ")") { @Override public String applyEffect() { return target.incrementHeight(mediumChangeMinorBoost, false); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Height (+" + Units.size(mediumChangeBoost) + ")") { @Override public String applyEffect() { return target.incrementHeight(mediumChangeBoost, false); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Рост (+" + Units.size(mediumChangeBoost) + ")") { @Override public String applyEffect() { return target.incrementHeight(mediumChangeBoost, false); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Height (+" + Units.size(mediumChangeMajorBoost) + ")") { @Override public String applyEffect() { return target.incrementHeight(mediumChangeMajorBoost, false); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Рост (+" + Units.size(mediumChangeMajorBoost) + ")") { @Override public String applyEffect() { return target.incrementHeight(mediumChangeMajorBoost, false); } };
 						}
 					case TF_MOD_SIZE_SECONDARY:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Muscle mass (" + mediumChangeMajorDrain + " muscles)") { @Override public String applyEffect() { return target.incrementMuscle(mediumChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Мышечная масса (" + mediumChangeMajorDrain + " мышцы)") { @Override public String applyEffect() { return target.incrementMuscle(mediumChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Muscle mass (" + mediumChangeDrain + " muscles)") { @Override public String applyEffect() { return target.incrementMuscle(mediumChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Мышечная масса (" + mediumChangeDrain + " мышцы)") { @Override public String applyEffect() { return target.incrementMuscle(mediumChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Muscle mass (" + mediumChangeMinorDrain + " muscles)") { @Override public String applyEffect() { return target.incrementMuscle(mediumChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Мышечная масса (" + mediumChangeMinorDrain + " мышцы)") { @Override public String applyEffect() { return target.incrementMuscle(mediumChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Muscle mass (+" + mediumChangeMinorBoost + " muscles)") { @Override public String applyEffect() { return target.incrementMuscle(mediumChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Мышечная масса (+" + mediumChangeMinorBoost + " мышцы)") { @Override public String applyEffect() { return target.incrementMuscle(mediumChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Muscle mass (+" + mediumChangeBoost + " muscles)") { @Override public String applyEffect() { return target.incrementMuscle(mediumChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Мышечная масса (+" + mediumChangeBoost + " мышцы)") { @Override public String applyEffect() { return target.incrementMuscle(mediumChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Muscle mass (+" + mediumChangeMajorBoost + " muscles)") { @Override public String applyEffect() { return target.incrementMuscle(mediumChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Мышечная масса (+" + mediumChangeMajorBoost + " мышцы)") { @Override public String applyEffect() { return target.incrementMuscle(mediumChangeMajorBoost); } };
 						}
 					case TF_MOD_SIZE_TERTIARY:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Body size (" + mediumChangeMajorDrain + " body size)") { @Override public String applyEffect() { return target.incrementBodySize(mediumChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Размер тела (" + mediumChangeMajorDrain + " размер тела)") { @Override public String applyEffect() { return target.incrementBodySize(mediumChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Body size (" + mediumChangeDrain + " body size)") { @Override public String applyEffect() { return target.incrementBodySize(mediumChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Размер тела (" + mediumChangeDrain + " размер тела)") { @Override public String applyEffect() { return target.incrementBodySize(mediumChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Body size (" + mediumChangeMinorDrain + " body size)") { @Override public String applyEffect() { return target.incrementBodySize(mediumChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Размер тела (" + mediumChangeMinorDrain + " размер тела)") { @Override public String applyEffect() { return target.incrementBodySize(mediumChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Body size (+" + mediumChangeMinorBoost + " body size)") { @Override public String applyEffect() { return target.incrementBodySize(mediumChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Размер тела (+" + mediumChangeMinorBoost + " размер тела)") { @Override public String applyEffect() { return target.incrementBodySize(mediumChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Body size (+" + mediumChangeBoost + " body size)") { @Override public String applyEffect() { return target.incrementBodySize(mediumChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Размер тела (+" + mediumChangeBoost + " размер тела)") { @Override public String applyEffect() { return target.incrementBodySize(mediumChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Body size (+" + mediumChangeMajorBoost + " body size)") { @Override public String applyEffect() { return target.incrementBodySize(mediumChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Размер тела (+" + mediumChangeMajorBoost + " размер тела)") { @Override public String applyEffect() { return target.incrementBodySize(mediumChangeMajorBoost); } };
 						}
 					case TF_MOD_FEMININITY:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Femininity (" + mediumChangeMajorDrain + " femininity)") { @Override public String applyEffect() { return target.incrementFemininity(mediumChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Женственность (" + mediumChangeMajorDrain + " женственность)") { @Override public String applyEffect() { return target.incrementFemininity(mediumChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Femininity (" + mediumChangeDrain + " femininity)") { @Override public String applyEffect() { return target.incrementFemininity(mediumChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Женственность (" + mediumChangeDrain + " женственность)") { @Override public String applyEffect() { return target.incrementFemininity(mediumChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Femininity (" + mediumChangeMinorDrain + " femininity)") { @Override public String applyEffect() { return target.incrementFemininity(mediumChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Женственность (" + mediumChangeMinorDrain + " женственность)") { @Override public String applyEffect() { return target.incrementFemininity(mediumChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Femininity (+" + mediumChangeMinorBoost + " femininity)") { @Override public String applyEffect() { return target.incrementFemininity(mediumChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Женственность (+" + mediumChangeMinorBoost + " женственность)") { @Override public String applyEffect() { return target.incrementFemininity(mediumChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Femininity (+" + mediumChangeBoost + " femininity)") { @Override public String applyEffect() { return target.incrementFemininity(mediumChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Женственность (+" + mediumChangeBoost + " женственность)") { @Override public String applyEffect() { return target.incrementFemininity(mediumChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Femininity (+" + mediumChangeMajorBoost + " femininity)") { @Override public String applyEffect() { return target.incrementFemininity(mediumChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Женственность (+" + mediumChangeMajorBoost + " женственность)") { @Override public String applyEffect() { return target.incrementFemininity(mediumChangeMajorBoost); } };
 						}
 					case TF_MOD_BODY_HAIR:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("Removes a huge amount of pubic hair. (" + smallChangeMajorDrain + " hairiness)") { @Override public String applyEffect() { return target.incrementPubicHair(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("Убирает огромное количество лобковых волос. (" + smallChangeMajorDrain + " волосатость)") { @Override public String applyEffect() { return target.incrementPubicHair(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("Removes a large amount of pubic hair. (" + smallChangeDrain + " hairiness)") { @Override public String applyEffect() { return target.incrementPubicHair(smallChangeDrain); } };
+								return new RacialEffectUtil("Убирает большое количество лобковых волос. (" + smallChangeDrain + " волосатость)") { @Override public String applyEffect() { return target.incrementPubicHair(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes some pubic hair. (" + smallChangeMinorDrain + " hairiness)") { @Override public String applyEffect() { return target.incrementPubicHair(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("Убирает немного лобковых волос. (" + smallChangeMinorDrain + " волосатость)") { @Override public String applyEffect() { return target.incrementPubicHair(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds some pubic hair. (+" + smallChangeMinorBoost + " hairiness)") { @Override public String applyEffect() { return target.incrementPubicHair(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("Добавляет немного лобковых волос. (+" + smallChangeMinorBoost + " волосатость)") { @Override public String applyEffect() { return target.incrementPubicHair(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("Adds a large amount of pubic hair. (+" + smallChangeBoost + " hairiness)") { @Override public String applyEffect() { return target.incrementPubicHair(smallChangeBoost); } };
+								return new RacialEffectUtil("Добавляет большое количество лобковых волос. (+" + smallChangeBoost + " волосатость)") { @Override public String applyEffect() { return target.incrementPubicHair(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("Adds a huge amount of pubic hair. (+" + smallChangeMajorBoost + " hairiness)") { @Override public String applyEffect() { return target.incrementPubicHair(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("Добавляет огромное количество лобковых волос. (+" + smallChangeMajorBoost + " волосатость)") { @Override public String applyEffect() { return target.incrementPubicHair(smallChangeMajorBoost); } };
 						}
 					case TF_MOD_INTERNAL:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes cloaca, making genitals and asshole external.") { @Override public String applyEffect() { return target.setGenitalArrangement(GenitalArrangement.NORMAL); } };
+								return new RacialEffectUtil("Убирает клоаку, делая гениталии и анус внешними.") { @Override public String applyEffect() { return target.setGenitalArrangement(GenitalArrangement.NORMAL); } };
 							case BOOST:
-								return new RacialEffectUtil("Moves genitals and asshole into cloaca (at asshole location).") {
+								return new RacialEffectUtil("Переносит гениталии и анус внутрь клоаки (в место расположения ануса).") {
 									@Override public String applyEffect() { return target.setGenitalArrangement(GenitalArrangement.CLOACA_BEHIND); }
 								};
 							case MINOR_BOOST:
 								default:
-								return new RacialEffectUtil("Moves genitals and asshole into cloaca (at genital location).") {
+								return new RacialEffectUtil("Перемещает гениталии и анус в клоаку (в местоположение гениталий).") {
 									@Override public String applyEffect() { return target.setGenitalArrangement(GenitalArrangement.CLOACA); }
 								};
 						}
 						
 					default:
-						return new RacialEffectUtil("Random "+race.getName(false)+" transformation") {
+						return new RacialEffectUtil("Случайный "+race.getName(false)+" transformation") {
 							@Override
 							public String applyEffect() {
 								List<TFModifier> availableModifiers = new ArrayList<>();
@@ -3688,7 +3685,7 @@ public abstract class AbstractItemEffectType {
 								}
 								
 								if(availableModifiers.isEmpty()) {
-									return UtilText.parse(target, "<p style='text-align:center'>[style.italicsDisabled([npc.NameHasFull] no more random "+race.getName(true)+" transformations available, so nothing happens...)]</p>");
+									return UtilText.parse(target, "<p style='text-align:center'>[style.italicsDisabled([npc.NameHasFull] больше нет случайных "+race.getName(true)+" доступных трансформаций, поэтому ничего не происходит...)]</p>");
 								}
 								
 								
@@ -3712,326 +3709,326 @@ public abstract class AbstractItemEffectType {
 				switch(secondaryModifier) {
 					case TF_TYPE_1: case TF_TYPE_2: case TF_TYPE_3: case TF_TYPE_4: case TF_TYPE_5: case TF_TYPE_6: case TF_TYPE_7: case TF_TYPE_8: case TF_TYPE_9: case TF_TYPE_10:
 						int index = Math.min(EarType.getEarTypes(race).size()-1, modifierTypeToInt(secondaryModifier));
-						return new RacialEffectUtil(Util.capitaliseSentence(EarType.getEarTypes(race).get(index).getTransformName())+" ears transformation.") {
+						return new RacialEffectUtil(Util.capitaliseSentence(EarType.getEarTypes(race).get(index).getTransformName())+" трансформация ушей.") {
 							@Override public String applyEffect() { return target.setEarType(EarType.getEarTypes(race).get(index)); } };
 	
 					default:
-						return new RacialEffectUtil(Util.capitaliseSentence(race.getName(false))+" ears transformation.") { @Override public String applyEffect() { return target.setEarType(RacialBody.valueOfRace(race).getEarType()); } };
+						return new RacialEffectUtil(Util.capitaliseSentence(race.getName(false))+" трансформация ушей.") { @Override public String applyEffect() { return target.setEarType(RacialBody.valueOfRace(race).getEarType()); } };
 				}
 				
 			case TF_EYES:
 				switch(secondaryModifier) {
 					case TF_TYPE_1: case TF_TYPE_2: case TF_TYPE_3: case TF_TYPE_4: case TF_TYPE_5: case TF_TYPE_6: case TF_TYPE_7: case TF_TYPE_8: case TF_TYPE_9: case TF_TYPE_10:
 						int index = Math.min(EyeType.getEyeTypes(race).size()-1, modifierTypeToInt(secondaryModifier));
-						return new RacialEffectUtil(Util.capitaliseSentence(EyeType.getEyeTypes(race).get(index).getTransformName())+" eyes transformation.") {
+						return new RacialEffectUtil(Util.capitaliseSentence(EyeType.getEyeTypes(race).get(index).getTransformName())+" трансформация глаз.") {
 							@Override public String applyEffect() { return target.setEyeType(EyeType.getEyeTypes(race).get(index)); } };
 						
 					case TF_MOD_COUNT:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes an extra pair of eyes.") { @Override public String applyEffect() { return target.incrementEyePairs(singleDrain); } };
+								return new RacialEffectUtil("Удаляет лишнюю пару глаз.") { @Override public String applyEffect() { return target.incrementEyePairs(singleDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds an extra pair of eyes.") { @Override public String applyEffect() { return target.incrementEyePairs(singleBoost); } };
+								return new RacialEffectUtil("Добавляет лишнюю пару глаз.") { @Override public String applyEffect() { return target.incrementEyePairs(singleBoost); } };
 						}
 
 					case TF_MOD_EYE_IRIS_CIRCLE:
-						return new RacialEffectUtil("Gives irises a round shape.") { @Override public String applyEffect() { return target.setIrisShape(EyeShape.ROUND); } };
+						return new RacialEffectUtil("Придает радужке глаз круглую форму.") { @Override public String applyEffect() { return target.setIrisShape(EyeShape.ROUND); } };
 					case TF_MOD_EYE_IRIS_VERTICAL:
-						return new RacialEffectUtil("Gives irises a vertical shape.") { @Override public String applyEffect() { return target.setIrisShape(EyeShape.VERTICAL); } };
+						return new RacialEffectUtil("Придает радужке вертикальную форму.") { @Override public String applyEffect() { return target.setIrisShape(EyeShape.VERTICAL); } };
 					case TF_MOD_EYE_IRIS_HORIZONTAL:
-						return new RacialEffectUtil("Gives irises a horizontal shape.") { @Override public String applyEffect() { return target.setIrisShape(EyeShape.HORIZONTAL); } };
+						return new RacialEffectUtil("Придает радужке горизонтальную форму.") { @Override public String applyEffect() { return target.setIrisShape(EyeShape.HORIZONTAL); } };
 					case TF_MOD_EYE_IRIS_HEART:
-						return new RacialEffectUtil("Gives irises a heart shape.") { @Override public String applyEffect() { return target.setIrisShape(EyeShape.HEART); } };
+						return new RacialEffectUtil("Придает радужке форму сердца.") { @Override public String applyEffect() { return target.setIrisShape(EyeShape.HEART); } };
 					case TF_MOD_EYE_IRIS_STAR:
-						return new RacialEffectUtil("Gives irises a star shape.") { @Override public String applyEffect() { return target.setIrisShape(EyeShape.STAR); } };
+						return new RacialEffectUtil("Придает радужке форму звезды.") { @Override public String applyEffect() { return target.setIrisShape(EyeShape.STAR); } };
 						
 					case TF_MOD_EYE_PUPIL_CIRCLE:
-						return new RacialEffectUtil("Gives pupils a round shape.") { @Override public String applyEffect() { return target.setPupilShape(EyeShape.ROUND); } };
+						return new RacialEffectUtil("Придает зрачкам круглую форму.") { @Override public String applyEffect() { return target.setPupilShape(EyeShape.ROUND); } };
 					case TF_MOD_EYE_PUPIL_VERTICAL:
-						return new RacialEffectUtil("Gives pupils a vertical shape.") { @Override public String applyEffect() { return target.setPupilShape(EyeShape.VERTICAL); } };
+						return new RacialEffectUtil("Придает зрачкам вертикальную форму.") { @Override public String applyEffect() { return target.setPupilShape(EyeShape.VERTICAL); } };
 					case TF_MOD_EYE_PUPIL_HORIZONTAL:
-						return new RacialEffectUtil("Gives pupils a horizontal shape.") { @Override public String applyEffect() { return target.setPupilShape(EyeShape.HORIZONTAL); } };
+						return new RacialEffectUtil("Придает зрачкам горизонтальную форму.") { @Override public String applyEffect() { return target.setPupilShape(EyeShape.HORIZONTAL); } };
 					case TF_MOD_EYE_PUPIL_HEART:
-						return new RacialEffectUtil("Gives pupils a heart shape.") { @Override public String applyEffect() { return target.setPupilShape(EyeShape.HEART); } };
+						return new RacialEffectUtil("Придает зрачкам форму сердца.") { @Override public String applyEffect() { return target.setPupilShape(EyeShape.HEART); } };
 					case TF_MOD_EYE_PUPIL_STAR:
-						return new RacialEffectUtil("Gives pupils a star shape.") { @Override public String applyEffect() { return target.setPupilShape(EyeShape.STAR); } };
+						return new RacialEffectUtil("Придает зрачкам форму звезды.") { @Override public String applyEffect() { return target.setPupilShape(EyeShape.STAR); } };
 						
 					default:
-						return new RacialEffectUtil(Util.capitaliseSentence(race.getName(false))+" eyes transformation.") { @Override public String applyEffect() { return target.setEyeType(RacialBody.valueOfRace(race).getEyeType()); } };
+						return new RacialEffectUtil(Util.capitaliseSentence(race.getName(false))+" трансформация глаз.") { @Override public String applyEffect() { return target.setEyeType(RacialBody.valueOfRace(race).getEyeType()); } };
 				}
 				
 			case TF_FACE:
 				switch(secondaryModifier) {
 					case TF_TYPE_1: case TF_TYPE_2: case TF_TYPE_3: case TF_TYPE_4: case TF_TYPE_5: case TF_TYPE_6: case TF_TYPE_7: case TF_TYPE_8: case TF_TYPE_9: case TF_TYPE_10:
 						int index = Math.min(FaceType.getFaceTypes(race).size()-1, modifierTypeToInt(secondaryModifier));
-						return new RacialEffectUtil(Util.capitaliseSentence(FaceType.getFaceTypes(race).get(index).getTransformName())+" face transformation.") {
+						return new RacialEffectUtil(Util.capitaliseSentence(FaceType.getFaceTypes(race).get(index).getTransformName())+" трансформация лица.") {
 							@Override public String applyEffect() { return target.setFaceType(FaceType.getFaceTypes(race).get(index)); } };
 						
 					case TF_MOD_SIZE:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Lip size (" + smallChangeMajorDrain + " lip size)") { @Override public String applyEffect() { return target.incrementLipSize(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Размер губ (" + smallChangeMajorDrain + " размер губ)") { @Override public String applyEffect() { return target.incrementLipSize(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Lip size (" + smallChangeDrain + " lip size)") { @Override public String applyEffect() { return target.incrementLipSize(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Размер губ (" + smallChangeDrain + " размер губ)") { @Override public String applyEffect() { return target.incrementLipSize(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Lip size (" + smallChangeMinorDrain + " lip size)") { @Override public String applyEffect() { return target.incrementLipSize(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Размер губ (" + smallChangeMinorDrain + " размер губ)") { @Override public String applyEffect() { return target.incrementLipSize(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Lip size (+" + smallChangeMinorBoost + " lip size)") { @Override public String applyEffect() { return target.incrementLipSize(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Размер губ (+" + smallChangeMinorBoost + " размер губ)") { @Override public String applyEffect() { return target.incrementLipSize(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Lip size (+" + smallChangeBoost + " lip size)") { @Override public String applyEffect() { return target.incrementLipSize(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Размер губ (+" + smallChangeBoost + " размер губ)") { @Override public String applyEffect() { return target.incrementLipSize(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Lip size (+" + smallChangeMajorBoost + " lip size)") { @Override public String applyEffect() { return target.incrementLipSize(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Размер губ (+" + smallChangeMajorBoost + " размер губ)") { @Override public String applyEffect() { return target.incrementLipSize(smallChangeMajorBoost); } };
 						}
 						
 					case TF_MOD_ORIFICE_PUFFY:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes puffiness from lips.") { @Override public String applyEffect() { return target.removeFaceOrificeModifier(OrificeModifier.PUFFY); } };
+								return new RacialEffectUtil("Убирает припухлость губ.") { @Override public String applyEffect() { return target.removeFaceOrificeModifier(OrificeModifier.PUFFY); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Makes lips extra puffy.") { @Override public String applyEffect() { return target.addFaceOrificeModifier(OrificeModifier.PUFFY); } };
+								return new RacialEffectUtil("Делает губы экстремально пухлыми.") { @Override public String applyEffect() { return target.addFaceOrificeModifier(OrificeModifier.PUFFY); } };
 						}
 					case TF_MOD_ORIFICE_RIBBED:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes internal ribbing from throat.") { @Override public String applyEffect() { return target.removeFaceOrificeModifier(OrificeModifier.RIBBED); } };
+								return new RacialEffectUtil("Убирает внутренние ребра в горле.") { @Override public String applyEffect() { return target.removeFaceOrificeModifier(OrificeModifier.RIBBED); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds internal ribbing to throat.") { @Override public String applyEffect() { return target.addFaceOrificeModifier(OrificeModifier.RIBBED); } };
+								return new RacialEffectUtil("Добавляет внутренние ребра в горло.") { @Override public String applyEffect() { return target.addFaceOrificeModifier(OrificeModifier.RIBBED); } };
 						}
 					case TF_MOD_ORIFICE_MUSCLED:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes internal muscles from throat.") { @Override public String applyEffect() { return target.removeFaceOrificeModifier(OrificeModifier.MUSCLE_CONTROL); } };
+								return new RacialEffectUtil("Убирает внутренние мышцы в горле.") { @Override public String applyEffect() { return target.removeFaceOrificeModifier(OrificeModifier.MUSCLE_CONTROL); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds internal muscles to throat.") { @Override public String applyEffect() { return target.addFaceOrificeModifier(OrificeModifier.MUSCLE_CONTROL); } };
+								return new RacialEffectUtil("Добавляет внутренние мышцы в горло.") { @Override public String applyEffect() { return target.addFaceOrificeModifier(OrificeModifier.MUSCLE_CONTROL); } };
 						}
 					case TF_MOD_ORIFICE_TENTACLED:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes internal tentacles from throat.") { @Override public String applyEffect() { return target.removeFaceOrificeModifier(OrificeModifier.TENTACLED); } };
+								return new RacialEffectUtil("Убирает внутренние щупальца в горле.") { @Override public String applyEffect() { return target.removeFaceOrificeModifier(OrificeModifier.TENTACLED); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds internal tentacles to throat.") { @Override public String applyEffect() { return target.addFaceOrificeModifier(OrificeModifier.TENTACLED); } };
+								return new RacialEffectUtil("Добавляет внутренние щупальца в горло.") { @Override public String applyEffect() { return target.addFaceOrificeModifier(OrificeModifier.TENTACLED); } };
 						}
 					case TF_MOD_CAPACITY:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Throat capacity (" + Units.size(mediumChangeMajorDrain) + ")") { @Override public String applyEffect() { return target.incrementFaceCapacity(mediumChangeMajorDrain, true); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Вместимость горла (" + Units.size(mediumChangeMajorDrain) + ")") { @Override public String applyEffect() { return target.incrementFaceCapacity(mediumChangeMajorDrain, true); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Throat capacity (" + Units.size(mediumChangeDrain) + ")") { @Override public String applyEffect() { return target.incrementFaceCapacity(mediumChangeDrain, true); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Вместимость горла (" + Units.size(mediumChangeDrain) + ")") { @Override public String applyEffect() { return target.incrementFaceCapacity(mediumChangeDrain, true); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Throat capacity (" + Units.size(mediumChangeMinorDrain) + ")") { @Override public String applyEffect() { return target.incrementFaceCapacity(mediumChangeMinorDrain, true); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Вместимость горла (" + Units.size(mediumChangeMinorDrain) + ")") { @Override public String applyEffect() { return target.incrementFaceCapacity(mediumChangeMinorDrain, true); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Throat capacity (+" + Units.size(mediumChangeMinorBoost) + ")") { @Override public String applyEffect() { return target.incrementFaceCapacity(mediumChangeMinorBoost, true); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Вместимость горла (+" + Units.size(mediumChangeMinorBoost) + ")") { @Override public String applyEffect() { return target.incrementFaceCapacity(mediumChangeMinorBoost, true); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Throat capacity (+" + Units.size(mediumChangeBoost) + ")") { @Override public String applyEffect() { return target.incrementFaceCapacity(mediumChangeBoost, true); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Вместимость горла (+" + Units.size(mediumChangeBoost) + ")") { @Override public String applyEffect() { return target.incrementFaceCapacity(mediumChangeBoost, true); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Throat capacity (+" + Units.size(mediumChangeMajorBoost) + ")") { @Override public String applyEffect() { return target.incrementFaceCapacity(mediumChangeMajorBoost, true); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Вместимость горла (+" + Units.size(mediumChangeMajorBoost) + ")") { @Override public String applyEffect() { return target.incrementFaceCapacity(mediumChangeMajorBoost, true); } };
 						}
 					case TF_MOD_DEPTH:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Throat depth (" + smallChangeMajorDrain + " depth)") { @Override public String applyEffect() { return target.incrementFaceDepth(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Глубина горла (" + smallChangeMajorDrain + " глубина)") { @Override public String applyEffect() { return target.incrementFaceDepth(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Throat depth (" + smallChangeDrain + " depth)") { @Override public String applyEffect() { return target.incrementFaceDepth(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Глубина горла (" + smallChangeDrain + " глубина)") { @Override public String applyEffect() { return target.incrementFaceDepth(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Throat depth (" + smallChangeMinorDrain + " depth)") { @Override public String applyEffect() { return target.incrementFaceDepth(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Глубина горла (" + smallChangeMinorDrain + " глубина)") { @Override public String applyEffect() { return target.incrementFaceDepth(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Throat depth (+" + smallChangeMinorBoost + " depth)") { @Override public String applyEffect() { return target.incrementFaceDepth(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Глубина горла (+" + smallChangeMinorBoost + " глубина)") { @Override public String applyEffect() { return target.incrementFaceDepth(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Throat depth (+" + smallChangeBoost + " depth)") { @Override public String applyEffect() { return target.incrementFaceDepth(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Глубина горла (+" + smallChangeBoost + " глубина)") { @Override public String applyEffect() { return target.incrementFaceDepth(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Throat depth (+" + smallChangeMajorBoost + " depth)") { @Override public String applyEffect() { return target.incrementFaceDepth(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Глубина горла (+" + smallChangeMajorBoost + " глубина)") { @Override public String applyEffect() { return target.incrementFaceDepth(smallChangeMajorBoost); } };
 						}
 					case TF_MOD_ELASTICITY:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Throat elasticity (" + smallChangeMajorDrain + " elasticity)") { @Override public String applyEffect() { return target.incrementFaceElasticity(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Эластичность горла (" + smallChangeMajorDrain + " эластичность)") { @Override public String applyEffect() { return target.incrementFaceElasticity(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Throat elasticity (" + smallChangeDrain + " elasticity)") { @Override public String applyEffect() { return target.incrementFaceElasticity(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Эластичность горла (" + smallChangeDrain + " эластичность)") { @Override public String applyEffect() { return target.incrementFaceElasticity(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Throat elasticity (" + smallChangeMinorDrain + " elasticity)") { @Override public String applyEffect() { return target.incrementFaceElasticity(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Эластичность горла (" + smallChangeMinorDrain + " эластичность)") { @Override public String applyEffect() { return target.incrementFaceElasticity(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Throat elasticity (+" + smallChangeMinorBoost + " elasticity)") { @Override public String applyEffect() { return target.incrementFaceElasticity(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Эластичность горла (+" + smallChangeMinorBoost + " эластичность)") { @Override public String applyEffect() { return target.incrementFaceElasticity(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Throat elasticity (+" + smallChangeBoost + " elasticity)") { @Override public String applyEffect() { return target.incrementFaceElasticity(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Эластичность горла (+" + smallChangeBoost + " эластичность)") { @Override public String applyEffect() { return target.incrementFaceElasticity(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Throat elasticity (+" + smallChangeMajorBoost + " elasticity)") { @Override public String applyEffect() { return target.incrementFaceElasticity(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Эластичность горла (+" + smallChangeMajorBoost + " эластичность)") { @Override public String applyEffect() { return target.incrementFaceElasticity(smallChangeMajorBoost); } };
 						}
 					case TF_MOD_PLASTICITY:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Throat plasticity (" + smallChangeMajorDrain + " plasticity)") { @Override public String applyEffect() { return target.incrementFacePlasticity(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Пластичность горла (" + smallChangeMajorDrain + " пластичность)") { @Override public String applyEffect() { return target.incrementFacePlasticity(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Throat plasticity (" + smallChangeDrain + " plasticity)") { @Override public String applyEffect() { return target.incrementFacePlasticity(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Пластичность горла (" + smallChangeDrain + " пластичность)") { @Override public String applyEffect() { return target.incrementFacePlasticity(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Throat plasticity (" + smallChangeMinorDrain + " plasticity)") { @Override public String applyEffect() { return target.incrementFacePlasticity(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Пластичность горла (" + smallChangeMinorDrain + " пластичность)") { @Override public String applyEffect() { return target.incrementFacePlasticity(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Throat plasticity (+" + smallChangeMinorBoost + " plasticity)") { @Override public String applyEffect() { return target.incrementFacePlasticity(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Пластичность горла (+" + smallChangeMinorBoost + " пластичность)") { @Override public String applyEffect() { return target.incrementFacePlasticity(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Throat plasticity (+" + smallChangeBoost + " plasticity)") { @Override public String applyEffect() { return target.incrementFacePlasticity(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Пластичность горла (+" + smallChangeBoost + " пластичность)") { @Override public String applyEffect() { return target.incrementFacePlasticity(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Throat plasticity (+" + smallChangeMajorBoost + " plasticity)") { @Override public String applyEffect() { return target.incrementFacePlasticity(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Пластичность горла (+" + smallChangeMajorBoost + " пластичность)") { @Override public String applyEffect() { return target.incrementFacePlasticity(smallChangeMajorBoost); } };
 						}
 					case TF_MOD_WETNESS:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Saliva production (" + smallChangeMajorDrain + " wetness)") { @Override public String applyEffect() { return target.incrementFaceWetness(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Выделение слюны (" + smallChangeMajorDrain + " влажность)") { @Override public String applyEffect() { return target.incrementFaceWetness(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Saliva production (" + smallChangeDrain + " wetness)") { @Override public String applyEffect() { return target.incrementFaceWetness(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Выделение слюны (" + smallChangeDrain + " влажность)") { @Override public String applyEffect() { return target.incrementFaceWetness(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Saliva production (" + smallChangeMinorDrain + " wetness)") { @Override public String applyEffect() { return target.incrementFaceWetness(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Выделение слюны (" + smallChangeMinorDrain + " влажность)") { @Override public String applyEffect() { return target.incrementFaceWetness(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Saliva production (+" + smallChangeMinorBoost + " wetness)") { @Override public String applyEffect() { return target.incrementFaceWetness(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Выделение слюны (+" + smallChangeMinorBoost + " влажность)") { @Override public String applyEffect() { return target.incrementFaceWetness(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Saliva production (+" + smallChangeBoost + " wetness)") { @Override public String applyEffect() { return target.incrementFaceWetness(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Выделение слюны (+" + smallChangeBoost + " влажность)") { @Override public String applyEffect() { return target.incrementFaceWetness(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Saliva production (+" + smallChangeMajorBoost + " wetness)") { @Override public String applyEffect() { return target.incrementFaceWetness(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Выделение слюны (+" + smallChangeMajorBoost + " влажность)") { @Override public String applyEffect() { return target.incrementFaceWetness(smallChangeMajorBoost); } };
 						}
 					case TF_MOD_SIZE_SECONDARY:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Tongue length (" + Units.size(mediumChangeMajorDrain) + ")") { @Override public String applyEffect() { return target.incrementTongueLength(mediumChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Длина языка (" + Units.size(mediumChangeMajorDrain) + ")") { @Override public String applyEffect() { return target.incrementTongueLength(mediumChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Tongue length (" + Units.size(mediumChangeDrain) + ")") { @Override public String applyEffect() { return target.incrementTongueLength(mediumChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Длина языка (" + Units.size(mediumChangeDrain) + ")") { @Override public String applyEffect() { return target.incrementTongueLength(mediumChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Tongue length (" + Units.size(mediumChangeMinorDrain) + ")") { @Override public String applyEffect() { return target.incrementTongueLength(mediumChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Длина языка (" + Units.size(mediumChangeMinorDrain) + ")") { @Override public String applyEffect() { return target.incrementTongueLength(mediumChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Tongue length (+" + Units.size(mediumChangeMinorBoost) + ")") { @Override public String applyEffect() { return target.incrementTongueLength(mediumChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Длина языка (+" + Units.size(mediumChangeMinorBoost) + ")") { @Override public String applyEffect() { return target.incrementTongueLength(mediumChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Tongue length (+" + Units.size(mediumChangeBoost) + ")") { @Override public String applyEffect() { return target.incrementTongueLength(mediumChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Длина языка (+" + Units.size(mediumChangeBoost) + ")") { @Override public String applyEffect() { return target.incrementTongueLength(mediumChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Tongue length (+" + Units.size(mediumChangeMajorBoost) + ")") { @Override public String applyEffect() { return target.incrementTongueLength(mediumChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Длина языка (+" + Units.size(mediumChangeMajorBoost) + ")") { @Override public String applyEffect() { return target.incrementTongueLength(mediumChangeMajorBoost); } };
 						}
 					case TF_MOD_TONGUE_RIBBED:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes ribbing from tongue.") { @Override public String applyEffect() { return target.removeTongueModifier(TongueModifier.RIBBED); } };
+								return new RacialEffectUtil("Убирает пупырышки с языка.") { @Override public String applyEffect() { return target.removeTongueModifier(TongueModifier.RIBBED); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds ribbing to tongue.") { @Override public String applyEffect() { return target.addTongueModifier(TongueModifier.RIBBED); } };
+								return new RacialEffectUtil("Добавляет пупырышки на язык.") { @Override public String applyEffect() { return target.addTongueModifier(TongueModifier.RIBBED); } };
 						}
 					case TF_MOD_TONGUE_TENTACLED:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes tentacles from tongue.") { @Override public String applyEffect() { return target.removeTongueModifier(TongueModifier.TENTACLED); } };
+								return new RacialEffectUtil("Убирает щупальца с языка.") { @Override public String applyEffect() { return target.removeTongueModifier(TongueModifier.TENTACLED); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds tentacles to tongue.") { @Override public String applyEffect() { return target.addTongueModifier(TongueModifier.TENTACLED); } };
+								return new RacialEffectUtil("Добавляет щупальца на язык.") { @Override public String applyEffect() { return target.addTongueModifier(TongueModifier.TENTACLED); } };
 						}
 					case TF_MOD_TONGUE_BIFURCATED:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes bifurcation from tongue.") { @Override public String applyEffect() { return target.removeTongueModifier(TongueModifier.BIFURCATED); } };
+								return new RacialEffectUtil("Убирает раздвоенность языка.") { @Override public String applyEffect() { return target.removeTongueModifier(TongueModifier.BIFURCATED); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds bifurcation to tongue.") { @Override public String applyEffect() { return target.addTongueModifier(TongueModifier.BIFURCATED); } };
+								return new RacialEffectUtil("Разделяет язык на две части.") { @Override public String applyEffect() { return target.addTongueModifier(TongueModifier.BIFURCATED); } };
 						}
 					case TF_MOD_TONGUE_WIDE:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Reverts tongue widening.") { @Override public String applyEffect() { return target.removeTongueModifier(TongueModifier.WIDE); } };
+								return new RacialEffectUtil("Возвращает языку прежнюю ширину.") { @Override public String applyEffect() { return target.removeTongueModifier(TongueModifier.WIDE); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Widens tongue.") { @Override public String applyEffect() { return target.addTongueModifier(TongueModifier.WIDE); } };
+								return new RacialEffectUtil("Расширяет язык.") { @Override public String applyEffect() { return target.addTongueModifier(TongueModifier.WIDE); } };
 						}
 					case TF_MOD_TONGUE_FLAT:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Reverts tongue flattening.") { @Override public String applyEffect() { return target.removeTongueModifier(TongueModifier.FLAT); } };
+								return new RacialEffectUtil("Возвращает языку прежнюю форму.") { @Override public String applyEffect() { return target.removeTongueModifier(TongueModifier.FLAT); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Flattens tongue.") { @Override public String applyEffect() { return target.addTongueModifier(TongueModifier.FLAT); } };
+								return new RacialEffectUtil("Делает язык плоским.") { @Override public String applyEffect() { return target.addTongueModifier(TongueModifier.FLAT); } };
 						}
 					case TF_MOD_TONGUE_STRONG:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes extra strength from tongue.") { @Override public String applyEffect() { return target.removeTongueModifier(TongueModifier.STRONG); } };
+								return new RacialEffectUtil("Убирает избыточную силу языка.") { @Override public String applyEffect() { return target.removeTongueModifier(TongueModifier.STRONG); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Makes tongue extra strong.") { @Override public String applyEffect() { return target.addTongueModifier(TongueModifier.STRONG); } };
+								return new RacialEffectUtil("Делает язык невероятно сильным.") { @Override public String applyEffect() { return target.addTongueModifier(TongueModifier.STRONG); } };
 						}
 						
 					case TF_MOD_BODY_HAIR:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("Removes a huge amount of facial hair. (" + smallChangeMajorDrain + " hairiness)") { @Override public String applyEffect() { return target.incrementFacialHair(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("Убирает огромное количество растительности на лице. (" + smallChangeMajorDrain + " волосатость)") { @Override public String applyEffect() { return target.incrementFacialHair(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("Removes a large amount of facial hair. (" + smallChangeDrain + " hairiness)") { @Override public String applyEffect() { return target.incrementFacialHair(smallChangeDrain); } };
+								return new RacialEffectUtil("Убирает большое количество растительности на лице. (" + smallChangeDrain + " волосатость)") { @Override public String applyEffect() { return target.incrementFacialHair(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes some facial hair. (" + smallChangeMinorDrain + " hairiness)") { @Override public String applyEffect() { return target.incrementFacialHair(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("Убирает немного растительности на лице. (" + smallChangeMinorDrain + " волосатость)") { @Override public String applyEffect() { return target.incrementFacialHair(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds some facial hair. (+" + smallChangeMinorBoost + " hairiness)") { @Override public String applyEffect() { return target.incrementFacialHair(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("Добавляет немного растительности на лице. (+" + smallChangeMinorBoost + " волосатость)") { @Override public String applyEffect() { return target.incrementFacialHair(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("Adds a large amount of facial hair. (+" + smallChangeBoost + " hairiness)") { @Override public String applyEffect() { return target.incrementFacialHair(smallChangeBoost); } };
+								return new RacialEffectUtil("Добавляет много растительности на лице. (+" + smallChangeBoost + " волосатость)") { @Override public String applyEffect() { return target.incrementFacialHair(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("Adds a huge amount of facial hair. (+" + smallChangeMajorBoost + " hairiness)") { @Override public String applyEffect() { return target.incrementFacialHair(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("Добавляет огромное количество растительности на лице. (+" + smallChangeMajorBoost + " волосатость)") { @Override public String applyEffect() { return target.incrementFacialHair(smallChangeMajorBoost); } };
 						}
 						
 					default:
-						return new RacialEffectUtil(Util.capitaliseSentence(race.getName(false))+" face transformation.") { @Override public String applyEffect() { return target.setFaceType(RacialBody.valueOfRace(race).getFaceType()); } };
+						return new RacialEffectUtil(Util.capitaliseSentence(race.getName(false))+" трансформация лица.") { @Override public String applyEffect() { return target.setFaceType(RacialBody.valueOfRace(race).getFaceType()); } };
 				}
 				
 			case TF_HAIR:
 				switch(secondaryModifier) {
 					case TF_TYPE_1: case TF_TYPE_2: case TF_TYPE_3: case TF_TYPE_4: case TF_TYPE_5: case TF_TYPE_6: case TF_TYPE_7: case TF_TYPE_8: case TF_TYPE_9: case TF_TYPE_10:
 						int index = Math.min(HairType.getHairTypes(race).size()-1, modifierTypeToInt(secondaryModifier));
-						return new RacialEffectUtil(Util.capitaliseSentence(HairType.getHairTypes(race).get(index).getTransformName())+" hair transformation.") {
+						return new RacialEffectUtil(Util.capitaliseSentence(HairType.getHairTypes(race).get(index).getTransformName())+" преобразование волос.") {
 							@Override public String applyEffect() { return target.setHairType(HairType.getHairTypes(race).get(index)); } };
 						
 					case TF_MOD_SIZE:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Hair length (" + Units.size(mediumChangeMajorDrain) + ")") { @Override public String applyEffect() { return target.incrementHairLength(mediumChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Длина волос (" + Units.size(mediumChangeMajorDrain) + ")") { @Override public String applyEffect() { return target.incrementHairLength(mediumChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Hair length (" + Units.size(mediumChangeDrain) + ")") { @Override public String applyEffect() { return target.incrementHairLength(mediumChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Длина волос (" + Units.size(mediumChangeDrain) + ")") { @Override public String applyEffect() { return target.incrementHairLength(mediumChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Hair length (" + Units.size(mediumChangeMinorDrain) + ")") { @Override public String applyEffect() { return target.incrementHairLength(mediumChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Длина волос (" + Units.size(mediumChangeMinorDrain) + ")") { @Override public String applyEffect() { return target.incrementHairLength(mediumChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Hair length (+" + Units.size(mediumChangeMinorBoost) + ")") { @Override public String applyEffect() { return target.incrementHairLength(mediumChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Длина волос (+" + Units.size(mediumChangeMinorBoost) + ")") { @Override public String applyEffect() { return target.incrementHairLength(mediumChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Hair length (+" + Units.size(mediumChangeBoost) + ")") { @Override public String applyEffect() { return target.incrementHairLength(mediumChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Длина волос (+" + Units.size(mediumChangeBoost) + ")") { @Override public String applyEffect() { return target.incrementHairLength(mediumChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Hair length (+" + Units.size(mediumChangeMajorBoost) + ")") { @Override public String applyEffect() { return target.incrementHairLength(mediumChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Длина волос (+" + Units.size(mediumChangeMajorBoost) + ")") { @Override public String applyEffect() { return target.incrementHairLength(mediumChangeMajorBoost); } };
 						}
 
 					case TF_MOD_SIZE_SECONDARY:
 						if(potency.isNegative()) {
-							return new RacialEffectUtil("Removes neck fluff.") { @Override public String applyEffect() { return target.setNeckFluff(false); } };
+							return new RacialEffectUtil("Убирает пушок на шее.") { @Override public String applyEffect() { return target.setNeckFluff(false); } };
 						} else {
-							return new RacialEffectUtil("Adds neck fluff.") { @Override public String applyEffect() { return target.setNeckFluff(true); } };
+							return new RacialEffectUtil("Добавляет пушок на шее.") { @Override public String applyEffect() { return target.setNeckFluff(true); } };
 						}
 						
 					default:
-						return new RacialEffectUtil(Util.capitaliseSentence(race.getName(false))+" hair transformation.") { @Override public String applyEffect() { return target.setHairType(RacialBody.valueOfRace(race).getHairType()); } };
+						return new RacialEffectUtil(Util.capitaliseSentence(race.getName(false))+" преобразование волос.") { @Override public String applyEffect() { return target.setHairType(RacialBody.valueOfRace(race).getHairType()); } };
 				}
 				
 			case TF_HORNS:
 				switch(secondaryModifier) {
 					case REMOVAL:
-						return new RacialEffectUtil("Removes horns.") { @Override public String applyEffect() { return target.setHornType(HornType.NONE); } };
+						return new RacialEffectUtil("Убирает рога.") { @Override public String applyEffect() { return target.setHornType(HornType.NONE); } };
 						
 					case TF_TYPE_1: case TF_TYPE_2: case TF_TYPE_3: case TF_TYPE_4: case TF_TYPE_5: case TF_TYPE_6: case TF_TYPE_7: case TF_TYPE_8: case TF_TYPE_9: case TF_TYPE_10:
 						int index = modifierTypeToInt(secondaryModifier);
 						List<AbstractHornType> hornTypes = HornType.getHornTypes(race, false);
 						AbstractHornType selectedHornType = index >= hornTypes.size() ? HornType.NONE : hornTypes.get(index);
-						return new RacialEffectUtil(selectedHornType.equals(HornType.NONE)?"Removes horns.":"Grows "+selectedHornType.getTransformName()+" horn"+(selectedHornType==HornType.HORSE_STRAIGHT?"":"s")+".") {
+						return new RacialEffectUtil(selectedHornType.equals(HornType.NONE)?"Убирает рога.":"Растет "+selectedHornType.getTransformName()+" horn"+(selectedHornType==HornType.HORSE_STRAIGHT?"":"s")+".") {
 							@Override public String applyEffect() { return target.setHornType(selectedHornType); } };
 						
 					case TF_MOD_SIZE:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Horn length (" + Units.size(mediumChangeMajorDrain) + ")") { @Override public String applyEffect() { return target.incrementHornLength(mediumChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Длина рогов (" + Units.size(mediumChangeMajorDrain) + ")") { @Override public String applyEffect() { return target.incrementHornLength(mediumChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Horn length (" + Units.size(mediumChangeDrain) + ")") { @Override public String applyEffect() { return target.incrementHornLength(mediumChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Длина рогов (" + Units.size(mediumChangeDrain) + ")") { @Override public String applyEffect() { return target.incrementHornLength(mediumChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Horn length (" + Units.size(mediumChangeMinorDrain) + ")") { @Override public String applyEffect() { return target.incrementHornLength(mediumChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Длина рогов (" + Units.size(mediumChangeMinorDrain) + ")") { @Override public String applyEffect() { return target.incrementHornLength(mediumChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Horn length (+" + Units.size(mediumChangeMinorBoost) + ")") { @Override public String applyEffect() { return target.incrementHornLength(mediumChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Длина рогов (+" + Units.size(mediumChangeMinorBoost) + ")") { @Override public String applyEffect() { return target.incrementHornLength(mediumChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Horn length (+" + Units.size(mediumChangeBoost) + ")") { @Override public String applyEffect() { return target.incrementHornLength(mediumChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Длина рогов (+" + Units.size(mediumChangeBoost) + ")") { @Override public String applyEffect() { return target.incrementHornLength(mediumChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Horn length (+" + Units.size(mediumChangeMajorBoost) + ")") { @Override public String applyEffect() { return target.incrementHornLength(mediumChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Длина рогов (+" + Units.size(mediumChangeMajorBoost) + ")") { @Override public String applyEffect() { return target.incrementHornLength(mediumChangeMajorBoost); } };
 						}
 				
 					case TF_MOD_COUNT:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes an extra pair of horns.") { @Override public String applyEffect() { return target.incrementHornRows(singleDrain); } };
+								return new RacialEffectUtil("Добавляет лишнюю пару рогов.") { @Override public String applyEffect() { return target.incrementHornRows(singleDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds an extra pair of horns.") { @Override public String applyEffect() {
+								return new RacialEffectUtil("Добавляет лишнюю пару рогов.") { @Override public String applyEffect() {
 									List<AbstractHornType> hornTypesSuitableForTransformation = RacialBody.valueOfRace(race).getHornTypes(true);
 									if(target.getHornType().equals(HornType.NONE) && !hornTypesSuitableForTransformation.isEmpty()) {
 										return target.setHornType(hornTypesSuitableForTransformation.get(0));
@@ -4043,23 +4040,23 @@ public abstract class AbstractItemEffectType {
 					case TF_MOD_COUNT_SECONDARY:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Horns per row (" + smallChangeMajorDrain + " horns per row)") { @Override public String applyEffect() { return target.incrementHornsPerRow(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Рогов в ряду (" + smallChangeMajorDrain + " рогов в ряду)") { @Override public String applyEffect() { return target.incrementHornsPerRow(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Horns per row (" + smallChangeDrain + " horns per row)") { @Override public String applyEffect() { return target.incrementHornsPerRow(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Рогов в ряду (" + smallChangeDrain + " рогов в ряду)") { @Override public String applyEffect() { return target.incrementHornsPerRow(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Horns per row (" + smallChangeMinorDrain + " horns per row)") { @Override public String applyEffect() { return target.incrementHornsPerRow(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Рогов в ряду (" + smallChangeMinorDrain + " рогов в ряду)") { @Override public String applyEffect() { return target.incrementHornsPerRow(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Horns per row (+" + smallChangeMinorBoost + " horns per row)") { @Override public String applyEffect() { return target.incrementHornsPerRow(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Рогов в ряду (+" + smallChangeMinorBoost + " рогов в ряду)") { @Override public String applyEffect() { return target.incrementHornsPerRow(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Horns per row (+" + smallChangeBoost + " horns per row)") { @Override public String applyEffect() { return target.incrementHornsPerRow(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Рогов в ряду (+" + smallChangeBoost + " рогов в ряду)") { @Override public String applyEffect() { return target.incrementHornsPerRow(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Horns per row (+" + smallChangeMajorBoost + " horns per row)") { @Override public String applyEffect() { return target.incrementHornsPerRow(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Рогов в ряду (+" + smallChangeMajorBoost + " рогов в ряду)") { @Override public String applyEffect() { return target.incrementHornsPerRow(smallChangeMajorBoost); } };
 						}
 						
 					default:
 						List<AbstractHornType> defaultHornTypes = RacialBody.valueOfRace(race).getHornTypes(true);
 						AbstractHornType hornType = defaultHornTypes.isEmpty()?HornType.NONE:Util.randomItemFrom(defaultHornTypes);
-						return new RacialEffectUtil(hornType.equals(HornType.NONE)?"Removes horns.":Util.capitaliseSentence(race.getName(false))+" horn transformation.") {
+						return new RacialEffectUtil(hornType.equals(HornType.NONE)?"Убирает рога.":Util.capitaliseSentence(race.getName(false))+" трансформация рогов.") {
 							@Override public String applyEffect() { return target.setHornType(hornType); } };
 				}
 				
@@ -4067,74 +4064,74 @@ public abstract class AbstractItemEffectType {
 				switch(secondaryModifier) {
 					case TF_TYPE_1: case TF_TYPE_2: case TF_TYPE_3: case TF_TYPE_4: case TF_TYPE_5: case TF_TYPE_6: case TF_TYPE_7: case TF_TYPE_8: case TF_TYPE_9: case TF_TYPE_10:
 						int index = Math.min(LegType.getLegTypes(race).size()-1, modifierTypeToInt(secondaryModifier));
-						return new RacialEffectUtil(Util.capitaliseSentence(LegType.getLegTypes(race).get(index).getTransformName())+" legs transformation.") {
+						return new RacialEffectUtil(Util.capitaliseSentence(LegType.getLegTypes(race).get(index).getTransformName())+" трансформация ног.") {
 							@Override public String applyEffect() { return target.setLegType(LegType.getLegTypes(race).get(index)); } };
 
 					case TF_MOD_LEG_CONFIG_BIPEDAL:
-						return new RacialEffectUtil(" Transforms lower body into a pair of bipedal legs.") {
+						return new RacialEffectUtil(" Превращает нижнюю часть тела в пару двуногих ног.") {
 							@Override public String applyEffect() { return RacialBody.valueOfRace(race).getLegType(LegConfiguration.BIPEDAL).applyLegConfigurationTransformation(target, LegConfiguration.BIPEDAL, true, true); } };
 
 					case TF_MOD_LEG_CONFIG_TAUR:
-						return new RacialEffectUtil(" Transforms lower body into a quadrupedal form.") {
+						return new RacialEffectUtil(" Превращает нижнюю часть тела в четвероногое существо.") {
 							@Override public String applyEffect() { return RacialBody.valueOfRace(race).getLegType(LegConfiguration.QUADRUPEDAL).applyLegConfigurationTransformation(target, LegConfiguration.QUADRUPEDAL, true, true); } };
 
 					case TF_MOD_LEG_CONFIG_TAIL_LONG:
-						return new RacialEffectUtil(" Transforms lower body into a long, snake-like tail.") {
+						return new RacialEffectUtil(" Превращает нижнюю часть тела в длинный змееподобный хвост.") {
 							@Override public String applyEffect() { return RacialBody.valueOfRace(race).getLegType(LegConfiguration.TAIL_LONG).applyLegConfigurationTransformation(target, LegConfiguration.TAIL_LONG, true, true); } };
 
 					case TF_MOD_LEG_CONFIG_TAIL:
-						return new RacialEffectUtil(" Transforms lower body into a fish-like tail.") {
+						return new RacialEffectUtil(" Превращает нижнюю часть тела в рыбий хвост.") {
 							@Override public String applyEffect() { return RacialBody.valueOfRace(race).getLegType(LegConfiguration.TAIL).applyLegConfigurationTransformation(target, LegConfiguration.TAIL, true, true); } };
 
 					case TF_MOD_LEG_CONFIG_ARACHNID:
-						return new RacialEffectUtil(" Transforms lower body into the form of an eight-legged arachnid.") {
+						return new RacialEffectUtil(" Превращает нижнюю часть тела в восьминогое паукообразное существо.") {
 							@Override public String applyEffect() { return RacialBody.valueOfRace(race).getLegType(LegConfiguration.ARACHNID).applyLegConfigurationTransformation(target, LegConfiguration.ARACHNID, true, true); } };
 
 					case TF_MOD_LEG_CONFIG_CEPHALOPOD:
-						return new RacialEffectUtil(" Transforms lower body into the form of an eight-tentacled cephalopod.") {
+						return new RacialEffectUtil(" Превращает нижнюю часть тела в восьмищупальцевого головоногого моллюска.") {
 							@Override public String applyEffect() { return RacialBody.valueOfRace(race).getLegType(LegConfiguration.CEPHALOPOD).applyLegConfigurationTransformation(target, LegConfiguration.CEPHALOPOD, true, true); } };
 
 					case TF_MOD_LEG_CONFIG_AVIAN:
-						return new RacialEffectUtil(" Transforms lower body into the form of a feral bird.") {
+						return new RacialEffectUtil(" Превращает нижнюю часть тела в облик дикой птицы.") {
 							@Override public String applyEffect() { return RacialBody.valueOfRace(race).getLegType(LegConfiguration.AVIAN).applyLegConfigurationTransformation(target, LegConfiguration.AVIAN, true, true); } };
 							
 
 					case TF_MOD_FOOT_STRUCTURE_PLANTIGRADE:
-						return new RacialEffectUtil(" Transforms foot structure to be plantigrade.") {
+						return new RacialEffectUtil(" Превращает структуру стопы в пятипалую (плантиградную).") {
 							@Override public String applyEffect() { return target.setFootStructure(FootStructure.PLANTIGRADE); } };
 
 					case TF_MOD_FOOT_STRUCTURE_DIGITIGRADE:
-						return new RacialEffectUtil(" Transforms foot structure to be digitigrade.") {
+						return new RacialEffectUtil(" Превращает структуру стопы в пальцеходящую (дигитиградную).") {
 							@Override public String applyEffect() { return target.setFootStructure(FootStructure.DIGITIGRADE); } };
 
 					case TF_MOD_FOOT_STRUCTURE_UNGULIGRADE:
-						return new RacialEffectUtil(" Transforms foot structure to be unguligrade.") {
+						return new RacialEffectUtil(" Превращает структуру стопы в копытную (унгвиградиную).") {
 							@Override public String applyEffect() { return target.setFootStructure(FootStructure.UNGULIGRADE); } };
 
 					case TF_MOD_SIZE:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Serpent-tail length (" + mediumChangeMajorDrain + "%)") {
+								return new RacialEffectUtil("[style.colourTerrible(--)] Длина змеиного хвоста (" + mediumChangeMajorDrain + "%)") {
 										@Override public String applyEffect() { return target.incrementLegTailLengthAsPercentageOfHeight(mediumChangeMajorDrain/100f); }
 									};
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Serpent-tail length (" + mediumChangeDrain + "%)") {
+								return new RacialEffectUtil("[style.colourBad(--)] Длина змеиного хвоста (" + mediumChangeDrain + "%)") {
 										@Override public String applyEffect() { return target.incrementLegTailLengthAsPercentageOfHeight(mediumChangeDrain/100f); }
 									};
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Serpent-tail length (" + mediumChangeMinorDrain + "%)") {
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Длина змеиного хвоста (" + mediumChangeMinorDrain + "%)") {
 										@Override public String applyEffect() { return target.incrementLegTailLengthAsPercentageOfHeight(mediumChangeMinorDrain/100f); }
 									};
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Serpent-tail length (+" + mediumChangeMinorBoost + "%)") {
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Длина змеиного хвоста (+" + mediumChangeMinorBoost + "%)") {
 										@Override public String applyEffect() { return target.incrementLegTailLengthAsPercentageOfHeight(mediumChangeMinorBoost/100f); }
 									};
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Serpent-tail length (+" + mediumChangeBoost + "%)") {
+								return new RacialEffectUtil("[style.colourGood(++)] Длина змеиного хвоста (+" + mediumChangeBoost + "%)") {
 										@Override public String applyEffect() { return target.incrementLegTailLengthAsPercentageOfHeight(mediumChangeBoost/100f); }
 									};
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Serpent-tail length (+" + mediumChangeMajorBoost + "%)") {
+								return new RacialEffectUtil("[style.colourExcellent(++)] Длина змеиного хвоста (+" + mediumChangeMajorBoost + "%)") {
 										@Override public String applyEffect() { return target.incrementLegTailLengthAsPercentageOfHeight(mediumChangeMajorBoost/100f); }
 									};
 						}
@@ -4142,108 +4139,108 @@ public abstract class AbstractItemEffectType {
 					case TF_MOD_ORIFICE_PUFFY:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes puffiness from spinneret.") { @Override public String applyEffect() { return target.removeSpinneretOrificeModifier(OrificeModifier.PUFFY); } };
+								return new RacialEffectUtil("Убирает припухлость из паутины.") { @Override public String applyEffect() { return target.removeSpinneretOrificeModifier(OrificeModifier.PUFFY); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Makes spinneret extra puffy.") { @Override public String applyEffect() { return target.addSpinneretOrificeModifier(OrificeModifier.PUFFY); } };
+								return new RacialEffectUtil("Делает паутину дополнительно припухлой.") { @Override public String applyEffect() { return target.addSpinneretOrificeModifier(OrificeModifier.PUFFY); } };
 						}
 					case TF_MOD_ORIFICE_RIBBED:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes internal ribbing from spinneret.") { @Override public String applyEffect() { return target.removeSpinneretOrificeModifier(OrificeModifier.RIBBED); } };
+								return new RacialEffectUtil("Убирает внутренние ребра из паутины.") { @Override public String applyEffect() { return target.removeSpinneretOrificeModifier(OrificeModifier.RIBBED); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds internal ribbing to spinneret.") { @Override public String applyEffect() { return target.addSpinneretOrificeModifier(OrificeModifier.RIBBED); } };
+								return new RacialEffectUtil("Добавляет внутренние ребра в паутину.") { @Override public String applyEffect() { return target.addSpinneretOrificeModifier(OrificeModifier.RIBBED); } };
 						}
 					case TF_MOD_ORIFICE_MUSCLED:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes internal muscles from spinneret.") { @Override public String applyEffect() { return target.removeSpinneretOrificeModifier(OrificeModifier.MUSCLE_CONTROL); } };
+								return new RacialEffectUtil("Убирает внутренние мышцы из паутины.") { @Override public String applyEffect() { return target.removeSpinneretOrificeModifier(OrificeModifier.MUSCLE_CONTROL); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds internal muscles to spinneret.") { @Override public String applyEffect() { return target.addSpinneretOrificeModifier(OrificeModifier.MUSCLE_CONTROL); } };
+								return new RacialEffectUtil("Добавляет внутренние мышцы в паутину.") { @Override public String applyEffect() { return target.addSpinneretOrificeModifier(OrificeModifier.MUSCLE_CONTROL); } };
 						}
 					case TF_MOD_ORIFICE_TENTACLED:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes internal tentacles from spinneret.") { @Override public String applyEffect() { return target.removeSpinneretOrificeModifier(OrificeModifier.TENTACLED); } };
+								return new RacialEffectUtil("Убирает внутренние щупальца из паутины.") { @Override public String applyEffect() { return target.removeSpinneretOrificeModifier(OrificeModifier.TENTACLED); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds internal tentacles to spinneret.") { @Override public String applyEffect() { return target.addSpinneretOrificeModifier(OrificeModifier.TENTACLED); } };
+								return new RacialEffectUtil("Добавляет внутренние щупальца в паутину.") { @Override public String applyEffect() { return target.addSpinneretOrificeModifier(OrificeModifier.TENTACLED); } };
 						}
 					case TF_MOD_CAPACITY:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Spinneret capacity (" + Units.size(mediumChangeMajorDrain) + ")") { @Override public String applyEffect() { return target.incrementSpinneretCapacity(mediumChangeMajorDrain, true); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Вместимость паутины (" + Units.size(mediumChangeMajorDrain) + ")") { @Override public String applyEffect() { return target.incrementSpinneretCapacity(mediumChangeMajorDrain, true); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Spinneret capacity (" + Units.size(mediumChangeDrain) + ")") { @Override public String applyEffect() { return target.incrementSpinneretCapacity(mediumChangeDrain, true); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Вместимость паутины (" + Units.size(mediumChangeDrain) + ")") { @Override public String applyEffect() { return target.incrementSpinneretCapacity(mediumChangeDrain, true); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Spinneret capacity (" + Units.size(mediumChangeMinorDrain) + ")") { @Override public String applyEffect() { return target.incrementSpinneretCapacity(mediumChangeMinorDrain, true); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Вместимость паутинного аппарата (" + Units.size(mediumChangeMinorDrain) + ")") { @Override public String applyEffect() { return target.incrementSpinneretCapacity(mediumChangeMinorDrain, true); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Spinneret capacity (+" + Units.size(mediumChangeMinorBoost) + ")") { @Override public String applyEffect() { return target.incrementSpinneretCapacity(mediumChangeMinorBoost, true); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Вместимость паутинного аппарата (+" + Units.size(mediumChangeMinorBoost) + ")") { @Override public String applyEffect() { return target.incrementSpinneretCapacity(mediumChangeMinorBoost, true); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Spinneret capacity (+" + Units.size(mediumChangeBoost) + ")") { @Override public String applyEffect() { return target.incrementSpinneretCapacity(mediumChangeBoost, true); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Вместимость паутинного аппарата (+" + Units.size(mediumChangeBoost) + ")") { @Override public String applyEffect() { return target.incrementSpinneretCapacity(mediumChangeBoost, true); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Spinneret capacity (+" + Units.size(mediumChangeMajorBoost) + ")") { @Override public String applyEffect() { return target.incrementSpinneretCapacity(mediumChangeMajorBoost, true); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Вместимость паутинного аппарата (+" + Units.size(mediumChangeMajorBoost) + ")") { @Override public String applyEffect() { return target.incrementSpinneretCapacity(mediumChangeMajorBoost, true); } };
 						}
 					case TF_MOD_DEPTH:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Spinneret depth (" + smallChangeMajorDrain + " depth)") { @Override public String applyEffect() { return target.incrementSpinneretDepth(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Глубина паутинного аппарата (" + smallChangeMajorDrain + " глубина)") { @Override public String applyEffect() { return target.incrementSpinneretDepth(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Spinneret depth (" + smallChangeDrain + " depth)") { @Override public String applyEffect() { return target.incrementSpinneretDepth(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Глубина паутинного аппарата (" + smallChangeDrain + " глубина)") { @Override public String applyEffect() { return target.incrementSpinneretDepth(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Spinneret depth (" + smallChangeMinorDrain + " depth)") { @Override public String applyEffect() { return target.incrementSpinneretDepth(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Глубина паутинного аппарата (" + smallChangeMinorDrain + " глубина)") { @Override public String applyEffect() { return target.incrementSpinneretDepth(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Spinneret depth (+" + smallChangeMinorBoost + " depth)") { @Override public String applyEffect() { return target.incrementSpinneretDepth(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Глубина паутинного аппарата (+" + smallChangeMinorBoost + " глубина)") { @Override public String applyEffect() { return target.incrementSpinneretDepth(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Spinneret depth (+" + smallChangeBoost + " depth)") { @Override public String applyEffect() { return target.incrementSpinneretDepth(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Глубина паутинного аппарата (+" + smallChangeBoost + " глубина)") { @Override public String applyEffect() { return target.incrementSpinneretDepth(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Spinneret depth (+" + smallChangeMajorBoost + " depth)") { @Override public String applyEffect() { return target.incrementSpinneretDepth(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Глубина паутинного аппарата (+" + smallChangeMajorBoost + " глубина)") { @Override public String applyEffect() { return target.incrementSpinneretDepth(smallChangeMajorBoost); } };
 						}
 					case TF_MOD_ELASTICITY:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Spinneret elasticity (" + smallChangeMajorDrain + " elasticity)") { @Override public String applyEffect() { return target.incrementSpinneretElasticity(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Эластичность паутинки (" + smallChangeMajorDrain + " эластичность)") { @Override public String applyEffect() { return target.incrementSpinneretElasticity(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Spinneret elasticity (" + smallChangeDrain + " elasticity)") { @Override public String applyEffect() { return target.incrementSpinneretElasticity(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Эластичность паутинки (" + smallChangeDrain + " эластичность)") { @Override public String applyEffect() { return target.incrementSpinneretElasticity(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Spinneret elasticity (" + smallChangeMinorDrain + " elasticity)") { @Override public String applyEffect() { return target.incrementSpinneretElasticity(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Эластичность паутинки (" + smallChangeMinorDrain + " эластичность)") { @Override public String applyEffect() { return target.incrementSpinneretElasticity(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Spinneret elasticity (+" + smallChangeMinorBoost + " elasticity)") { @Override public String applyEffect() { return target.incrementSpinneretElasticity(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Эластичность паутинки (+" + smallChangeMinorBoost + " эластичность)") { @Override public String applyEffect() { return target.incrementSpinneretElasticity(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Spinneret elasticity (+" + smallChangeBoost + " elasticity)") { @Override public String applyEffect() { return target.incrementSpinneretElasticity(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Эластичность паутинки (+" + smallChangeBoost + " эластичность)") { @Override public String applyEffect() { return target.incrementSpinneretElasticity(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Spinneret elasticity (+" + smallChangeMajorBoost + " elasticity)") { @Override public String applyEffect() { return target.incrementSpinneretElasticity(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Эластичность паутинки (+" + smallChangeMajorBoost + " эластичность)") { @Override public String applyEffect() { return target.incrementSpinneretElasticity(smallChangeMajorBoost); } };
 						}
 					case TF_MOD_PLASTICITY:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Spinneret plasticity (" + smallChangeMajorDrain + " plasticity)") { @Override public String applyEffect() { return target.incrementSpinneretPlasticity(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Пластичность паутинки (" + smallChangeMajorDrain + " пластичность)") { @Override public String applyEffect() { return target.incrementSpinneretPlasticity(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Spinneret plasticity (" + smallChangeDrain + " plasticity)") { @Override public String applyEffect() { return target.incrementSpinneretPlasticity(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Пластичность паутинки (" + smallChangeDrain + " пластичность)") { @Override public String applyEffect() { return target.incrementSpinneretPlasticity(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Spinneret plasticity (" + smallChangeMinorDrain + " plasticity)") { @Override public String applyEffect() { return target.incrementSpinneretPlasticity(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Пластичность паутинки (" + smallChangeMinorDrain + " пластичность)") { @Override public String applyEffect() { return target.incrementSpinneretPlasticity(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Spinneret plasticity (+" + smallChangeMinorBoost + " plasticity)") { @Override public String applyEffect() { return target.incrementSpinneretPlasticity(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Пластичность паутинки (+" + smallChangeMinorBoost + " пластичность)") { @Override public String applyEffect() { return target.incrementSpinneretPlasticity(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Spinneret plasticity (+" + smallChangeBoost + " plasticity)") { @Override public String applyEffect() { return target.incrementSpinneretPlasticity(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Пластичность паутинки (+" + smallChangeBoost + " пластичность)") { @Override public String applyEffect() { return target.incrementSpinneretPlasticity(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Spinneret plasticity (+" + smallChangeMajorBoost + " plasticity)") { @Override public String applyEffect() { return target.incrementSpinneretPlasticity(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Пластичность паутинки (+" + smallChangeMajorBoost + " пластичность)") { @Override public String applyEffect() { return target.incrementSpinneretPlasticity(smallChangeMajorBoost); } };
 						}
 					case TF_MOD_WETNESS:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Spinneret wetness (" + smallChangeMajorDrain + " wetness)") { @Override public String applyEffect() { return target.incrementSpinneretWetness(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Влажность паутинки (" + smallChangeMajorDrain + " влажность)") { @Override public String applyEffect() { return target.incrementSpinneretWetness(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Spinneret wetness (" + smallChangeDrain + " wetness)") { @Override public String applyEffect() { return target.incrementSpinneretWetness(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Влажность паутинки (" + smallChangeDrain + " влажность)") { @Override public String applyEffect() { return target.incrementSpinneretWetness(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Spinneret wetness (" + smallChangeMinorDrain + " wetness)") { @Override public String applyEffect() { return target.incrementSpinneretWetness(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Влажность паутинки (" + smallChangeMinorDrain + " влажность)") { @Override public String applyEffect() { return target.incrementSpinneretWetness(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Spinneret wetness (+" + smallChangeMinorBoost + " wetness)") { @Override public String applyEffect() { return target.incrementSpinneretWetness(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Влажность паутинки (+" + smallChangeMinorBoost + " влажность)") { @Override public String applyEffect() { return target.incrementSpinneretWetness(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Spinneret wetness (+" + smallChangeBoost + " wetness)") { @Override public String applyEffect() { return target.incrementSpinneretWetness(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Влажность паутинки (+" + smallChangeBoost + " влажность)") { @Override public String applyEffect() { return target.incrementSpinneretWetness(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Spinneret wetness (+" + smallChangeMajorBoost + " wetness)") { @Override public String applyEffect() { return target.incrementSpinneretWetness(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Влажность паутинки (+" + smallChangeMajorBoost + " влажность)") { @Override public String applyEffect() { return target.incrementSpinneretWetness(smallChangeMajorBoost); } };
 						}
 					default:
-						return new RacialEffectUtil(Util.capitaliseSentence(race.getName(false))+" legs transformation.") { @Override public String applyEffect() { return target.setLegType(RacialBody.valueOfRace(race).getLegType()); } };
+						return new RacialEffectUtil(Util.capitaliseSentence(race.getName(false))+" трансформация ног.") { @Override public String applyEffect() { return target.setLegType(RacialBody.valueOfRace(race).getLegType()); } };
 				}
 				
 			case TF_PENIS:
@@ -4251,35 +4248,35 @@ public abstract class AbstractItemEffectType {
 					case TF_MOD_SIZE:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Penis length (" + Units.size(mediumChangeMajorDrain) + ")") { @Override public String applyEffect() { return target.incrementPenisSize(mediumChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Длина члена (" + Units.size(mediumChangeMajorDrain) + ")") { @Override public String applyEffect() { return target.incrementPenisSize(mediumChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Penis length (" + Units.size(mediumChangeDrain) + ")") { @Override public String applyEffect() { return target.incrementPenisSize(mediumChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Длина члена (" + Units.size(mediumChangeDrain) + ")") { @Override public String applyEffect() { return target.incrementPenisSize(mediumChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Penis length (" + Units.size(mediumChangeMinorDrain) + ")") { @Override public String applyEffect() { return target.incrementPenisSize(mediumChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Длина члена (" + Units.size(mediumChangeMinorDrain) + ")") { @Override public String applyEffect() { return target.incrementPenisSize(mediumChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Penis length (+" + Units.size(mediumChangeMinorBoost) + ")") { @Override public String applyEffect() { return target.incrementPenisSize(mediumChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Длина члена (+" + Units.size(mediumChangeMinorBoost) + ")") { @Override public String applyEffect() { return target.incrementPenisSize(mediumChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Penis length (+" + Units.size(mediumChangeBoost) + ")") { @Override public String applyEffect() { return target.incrementPenisSize(mediumChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Длина члена (+" + Units.size(mediumChangeBoost) + ")") { @Override public String applyEffect() { return target.incrementPenisSize(mediumChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Penis length (+" + Units.size(mediumChangeMajorBoost) + ")") { @Override public String applyEffect() { return target.incrementPenisSize(mediumChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Длина члена (+" + Units.size(mediumChangeMajorBoost) + ")") { @Override public String applyEffect() { return target.incrementPenisSize(mediumChangeMajorBoost); } };
 						}
 					case TF_MOD_SIZE_SECONDARY:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Penis girth (" + smallChangeMajorDrain + " girth)") { @Override public String applyEffect() { return target.incrementPenisGirth(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Обхват члена (" + smallChangeMajorDrain + " обхват)") { @Override public String applyEffect() { return target.incrementPenisGirth(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Penis girth (" + smallChangeDrain + " size)") { @Override public String applyEffect() { return target.incrementPenisGirth(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Обхват члена (" + smallChangeDrain + " размер)") { @Override public String applyEffect() { return target.incrementPenisGirth(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Penis girth (" + smallChangeMinorDrain + " girth)") { @Override public String applyEffect() { return target.incrementPenisGirth(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Обхват члена (" + smallChangeMinorDrain + " обхват)") { @Override public String applyEffect() { return target.incrementPenisGirth(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Penis girth (+" + smallChangeMinorBoost + " girth)") { @Override public String applyEffect() { return target.incrementPenisGirth(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Обхват члена (+" + smallChangeMinorBoost + " обхват)") { @Override public String applyEffect() { return target.incrementPenisGirth(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Penis girth (+" + smallChangeBoost + " girth)") { @Override public String applyEffect() { return target.incrementPenisGirth(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Обхват члена (+" + smallChangeBoost + " обхват)") { @Override public String applyEffect() { return target.incrementPenisGirth(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Penis girth (+" + smallChangeMajorBoost + " girth)") { @Override public String applyEffect() { return target.incrementPenisGirth(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Обхват члена (+" + smallChangeMajorBoost + " обхват)") { @Override public String applyEffect() { return target.incrementPenisGirth(smallChangeMajorBoost); } };
 						}
 					case REMOVAL:
-							return new RacialEffectUtil("Removes penis.") { @Override public String applyEffect() {
+							return new RacialEffectUtil("Удаляет член.") { @Override public String applyEffect() {
 								String tfText = target.setPenisType(PenisType.NONE);
 								if(revealTransformedPart) {
 									user.setKnowsCharacterArea(CoverableArea.PENIS, target, true);
@@ -4291,148 +4288,148 @@ public abstract class AbstractItemEffectType {
 					case TF_MOD_BODY_HAIR:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("Removes a huge amount of pubic hair. (" + smallChangeMajorDrain + " hairiness)") { @Override public String applyEffect() { return target.incrementPubicHair(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("Убирает огромное количество лобковых волос. (" + smallChangeMajorDrain + " волосатость)") { @Override public String applyEffect() { return target.incrementPubicHair(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("Removes a large amount of pubic hair. (" + smallChangeDrain + " hairiness)") { @Override public String applyEffect() { return target.incrementPubicHair(smallChangeDrain); } };
+								return new RacialEffectUtil("Убирает большое количество лобковых волос. (" + smallChangeDrain + " волосатость)") { @Override public String applyEffect() { return target.incrementPubicHair(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes some pubic hair. (" + smallChangeMinorDrain + " hairiness)") { @Override public String applyEffect() { return target.incrementPubicHair(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("Убирает немного лобковых волос. (" + smallChangeMinorDrain + " волосатость)") { @Override public String applyEffect() { return target.incrementPubicHair(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds some pubic hair. (" + smallChangeMinorBoost + " hairiness)") { @Override public String applyEffect() { return target.incrementPubicHair(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("Добавляет немного лобковых волос. (" + smallChangeMinorBoost + " волосатость)") { @Override public String applyEffect() { return target.incrementPubicHair(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("Adds a large amount of pubic hair. (" + smallChangeBoost + " hairiness)") { @Override public String applyEffect() { return target.incrementPubicHair(smallChangeBoost); } };
+								return new RacialEffectUtil("Добавляет много лобковых волос. (" + smallChangeBoost + " волосатость)") { @Override public String applyEffect() { return target.incrementPubicHair(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("Adds a huge amount of pubic hair. (" + smallChangeMajorBoost + " hairiness)") { @Override public String applyEffect() { return target.incrementPubicHair(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("Добавляет огромное количество лобковых волос. (" + smallChangeMajorBoost + " волосатость)") { @Override public String applyEffect() { return target.incrementPubicHair(smallChangeMajorBoost); } };
 						}
 						
 					case TF_MOD_PENIS_BARBED:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes barbs from penis.") { @Override public String applyEffect() { return target.removePenisModifier(PenetrationModifier.BARBED); } };
+								return new RacialEffectUtil("Убирает зазубрины с члена.") { @Override public String applyEffect() { return target.removePenisModifier(PenetrationModifier.BARBED); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds barbs to penis.") { @Override public String applyEffect() { return target.addPenisModifier(PenetrationModifier.BARBED); } };
+								return new RacialEffectUtil("Добавляет зазубрины на член.") { @Override public String applyEffect() { return target.addPenisModifier(PenetrationModifier.BARBED); } };
 						}
 					case TF_MOD_PENIS_FLARED:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes flare from penis head.") { @Override public String applyEffect() { return target.removePenisModifier(PenetrationModifier.FLARED); } };
+								return new RacialEffectUtil("Убирает расширение на головке члена.") { @Override public String applyEffect() { return target.removePenisModifier(PenetrationModifier.FLARED); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds flare to penis head.") { @Override public String applyEffect() { return target.addPenisModifier(PenetrationModifier.FLARED); } };
+								return new RacialEffectUtil("Добавляет головке пениса яркость.") { @Override public String applyEffect() { return target.addPenisModifier(PenetrationModifier.FLARED); } };
 						}
 					case TF_MOD_PENIS_BLUNT:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes blunted head from penis.") { @Override public String applyEffect() { return target.removePenisModifier(PenetrationModifier.BLUNT); } };
+								return new RacialEffectUtil("Убирает тупость головки пениса.") { @Override public String applyEffect() { return target.removePenisModifier(PenetrationModifier.BLUNT); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Makes penis head blunt.") { @Override public String applyEffect() { return target.addPenisModifier(PenetrationModifier.BLUNT); } };
+								return new RacialEffectUtil("Делает головку пениса тупой.") { @Override public String applyEffect() { return target.addPenisModifier(PenetrationModifier.BLUNT); } };
 						}
 					case TF_MOD_PENIS_KNOTTED:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes knot from base of penis.") { @Override public String applyEffect() { return target.removePenisModifier(PenetrationModifier.KNOTTED); } };
+								return new RacialEffectUtil("Убирает узел у основания пениса.") { @Override public String applyEffect() { return target.removePenisModifier(PenetrationModifier.KNOTTED); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds knot to base of penis.") { @Override public String applyEffect() { return target.addPenisModifier(PenetrationModifier.KNOTTED); } };
+								return new RacialEffectUtil("Добавляет узел у основания пениса.") { @Override public String applyEffect() { return target.addPenisModifier(PenetrationModifier.KNOTTED); } };
 						}
 					case TF_MOD_PENIS_PREHENSILE:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes prehensility from penis.") { @Override public String applyEffect() { return target.removePenisModifier(PenetrationModifier.PREHENSILE); } };
+								return new RacialEffectUtil("Убирает цепкость у пениса.") { @Override public String applyEffect() { return target.removePenisModifier(PenetrationModifier.PREHENSILE); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds prehensility to penis.") { @Override public String applyEffect() { return target.addPenisModifier(PenetrationModifier.PREHENSILE); } };
+								return new RacialEffectUtil("Добавляет цепкость пенису.") { @Override public String applyEffect() { return target.addPenisModifier(PenetrationModifier.PREHENSILE); } };
 						}
 					case TF_MOD_PENIS_RIBBED:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes ribbing from penis.") { @Override public String applyEffect() { return target.removePenisModifier(PenetrationModifier.RIBBED); } };
+								return new RacialEffectUtil("Убирает ребристость у пениса.") { @Override public String applyEffect() { return target.removePenisModifier(PenetrationModifier.RIBBED); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds ribbing to penis.") { @Override public String applyEffect() { return target.addPenisModifier(PenetrationModifier.RIBBED); } };
+								return new RacialEffectUtil("Добавляет пенису ребристость.") { @Override public String applyEffect() { return target.addPenisModifier(PenetrationModifier.RIBBED); } };
 						}
 					case TF_MOD_PENIS_SHEATHED:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes sheath from penis.") { @Override public String applyEffect() { return target.removePenisModifier(PenetrationModifier.SHEATHED); } };
+								return new RacialEffectUtil("Убирает препуций у пениса.") { @Override public String applyEffect() { return target.removePenisModifier(PenetrationModifier.SHEATHED); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds sheath to penis.") { @Override public String applyEffect() { return target.addPenisModifier(PenetrationModifier.SHEATHED); } };
+								return new RacialEffectUtil("Добавляет чехол на член.") { @Override public String applyEffect() { return target.addPenisModifier(PenetrationModifier.SHEATHED); } };
 						}
 					case TF_MOD_PENIS_TAPERED:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes tapering from penis.") { @Override public String applyEffect() { return target.removePenisModifier(PenetrationModifier.TAPERED); } };
+								return new RacialEffectUtil("Убирает сужение члена.") { @Override public String applyEffect() { return target.removePenisModifier(PenetrationModifier.TAPERED); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds tapering to penis.") { @Override public String applyEffect() { return target.addPenisModifier(PenetrationModifier.TAPERED); } };
+								return new RacialEffectUtil("Добавляет сужение члена.") { @Override public String applyEffect() { return target.addPenisModifier(PenetrationModifier.TAPERED); } };
 						}
 					case TF_MOD_PENIS_TENTACLED:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes tentacles from penis.") { @Override public String applyEffect() { return target.removePenisModifier(PenetrationModifier.TENTACLED); } };
+								return new RacialEffectUtil("Убирает щупальца с члена.") { @Override public String applyEffect() { return target.removePenisModifier(PenetrationModifier.TENTACLED); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds tentacles to penis.") { @Override public String applyEffect() { return target.addPenisModifier(PenetrationModifier.TENTACLED); } };
+								return new RacialEffectUtil("Добавляет щупальца на член.") { @Override public String applyEffect() { return target.addPenisModifier(PenetrationModifier.TENTACLED); } };
 						}
 					case TF_MOD_PENIS_VEINY:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes bulging veins from penis.") { @Override public String applyEffect() { return target.removePenisModifier(PenetrationModifier.VEINY); } };
+								return new RacialEffectUtil("Убирает вздутые вены с члена.") { @Override public String applyEffect() { return target.removePenisModifier(PenetrationModifier.VEINY); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds bulging veins to penis.") { @Override public String applyEffect() { return target.addPenisModifier(PenetrationModifier.VEINY); } };
+								return new RacialEffectUtil("Добавляет вздутые вены на член.") { @Override public String applyEffect() { return target.addPenisModifier(PenetrationModifier.VEINY); } };
 						}
 					case TF_MOD_PENIS_OVIPOSITOR:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes ovipositor functionality from penis.") { @Override public String applyEffect() { return target.removePenisModifier(PenetrationModifier.OVIPOSITOR); } };
+								return new RacialEffectUtil("Убирает функцию яйцеклада у члена.") { @Override public String applyEffect() { return target.removePenisModifier(PenetrationModifier.OVIPOSITOR); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds ovipositor functionality to penis.") { @Override public String applyEffect() { return target.addPenisModifier(PenetrationModifier.OVIPOSITOR); } };
+								return new RacialEffectUtil("Добавляет функцию яйцеклада члену.") { @Override public String applyEffect() { return target.addPenisModifier(PenetrationModifier.OVIPOSITOR); } };
 						}
 
 					case TF_MOD_SIZE_TERTIARY:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Testicle size (" + smallChangeMajorDrain + " size)") { @Override public String applyEffect() { return target.incrementTesticleSize(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Размер яичек (" + smallChangeMajorDrain + " размер)") { @Override public String applyEffect() { return target.incrementTesticleSize(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Testicle size (" + smallChangeDrain + " size)") { @Override public String applyEffect() { return target.incrementTesticleSize(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Размер яичек (" + smallChangeDrain + " размер)") { @Override public String applyEffect() { return target.incrementTesticleSize(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Testicle size (" + smallChangeMinorDrain + " size)") { @Override public String applyEffect() { return target.incrementTesticleSize(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Размер яичек (" + smallChangeMinorDrain + " размер)") { @Override public String applyEffect() { return target.incrementTesticleSize(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Testicle size (+" + smallChangeMinorBoost + " size)") { @Override public String applyEffect() { return target.incrementTesticleSize(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Размер яичек (+" + smallChangeMinorBoost + " размер)") { @Override public String applyEffect() { return target.incrementTesticleSize(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Testicle size (+" + smallChangeBoost + " size)") { @Override public String applyEffect() { return target.incrementTesticleSize(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Размер яичек (+" + smallChangeBoost + " размер)") { @Override public String applyEffect() { return target.incrementTesticleSize(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Testicle size (+" + smallChangeMajorBoost + " size)") { @Override public String applyEffect() { return target.incrementTesticleSize(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Размер яичек (+" + smallChangeMajorBoost + " размер)") { @Override public String applyEffect() { return target.incrementTesticleSize(smallChangeMajorBoost); } };
 						}
 					case TF_MOD_COUNT:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes an extra pair of testicles.") { @Override public String applyEffect() { return target.incrementTesticleCount(smallChangeDrain); } };
+								return new RacialEffectUtil("Удаляет дополнительную пару яичек.") { @Override public String applyEffect() { return target.incrementTesticleCount(smallChangeDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds an extra pair of testicles.") { @Override public String applyEffect() { return target.incrementTesticleCount(smallChangeBoost); } };
+								return new RacialEffectUtil("Добавляет дополнительную пару яичек.") { @Override public String applyEffect() { return target.incrementTesticleCount(smallChangeBoost); } };
 						}
 					case TF_MOD_WETNESS:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Cum storage (" + Units.fluid(largeChangeMajorDrain) + ")") { @Override public String applyEffect() {
+								return new RacialEffectUtil("[style.colourTerrible(--)] Вместимость спермы (" + Units.fluid(largeChangeMajorDrain) + ")") { @Override public String applyEffect() {
 									String s = target.incrementPenisCumStorage(largeChangeMajorDrain);
 									target.fillCumToMaxStorage();
 									return s;} };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Cum storage (" + Units.fluid(largeChangeDrain) + ")") { @Override public String applyEffect() {
+								return new RacialEffectUtil("[style.colourBad(--)] Вместимость спермы (" + Units.fluid(largeChangeDrain) + ")") { @Override public String applyEffect() {
 									String s = target.incrementPenisCumStorage(largeChangeDrain);
 									target.fillCumToMaxStorage();
 									return s; } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Cum storage (" + Units.fluid(largeChangeMinorDrain) + ")") { @Override public String applyEffect() {
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Вместимость спермы (" + Units.fluid(largeChangeMinorDrain) + ")") { @Override public String applyEffect() {
 									String s = target.incrementPenisCumStorage(largeChangeMinorDrain);
 									target.fillCumToMaxStorage();
 									return s; } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Cum storage (+" + Units.fluid(largeChangeMinorBoost) + ")") { @Override public String applyEffect() {
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Общий объем (+" + Units.fluid(largeChangeMinorBoost) + ")") { @Override public String applyEffect() {
 									String s = target.incrementPenisCumStorage(largeChangeMinorBoost);
 									target.fillCumToMaxStorage();
 									return s; } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Cum storage (+" + Units.fluid(largeChangeBoost) + ")") { @Override public String applyEffect() {
+								return new RacialEffectUtil("[style.colourGood(++)] Общий объем (+" + Units.fluid(largeChangeBoost) + ")") { @Override public String applyEffect() {
 									String s = target.incrementPenisCumStorage(largeChangeBoost);
 									target.fillCumToMaxStorage();
 									return s; } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Cum storage (+" + Units.fluid(largeChangeMajorBoost) + ")") { @Override public String applyEffect() {
+								return new RacialEffectUtil("[style.colourExcellent(++)] Общий объем (+" + Units.fluid(largeChangeMajorBoost) + ")") { @Override public String applyEffect() {
 									String s = target.incrementPenisCumStorage(largeChangeMajorBoost);
 									target.fillCumToMaxStorage();
 									return s; } };
@@ -4440,137 +4437,137 @@ public abstract class AbstractItemEffectType {
 					case TF_MOD_REGENERATION:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Cum regeneration") { @Override public String applyEffect() { return target.incrementPenisCumProductionRegeneration(hugeChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Общая регенерация") { @Override public String applyEffect() { return target.incrementPenisCumProductionRegeneration(hugeChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Cum regeneration") { @Override public String applyEffect() { return target.incrementPenisCumProductionRegeneration(hugeChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Общая регенерация") { @Override public String applyEffect() { return target.incrementPenisCumProductionRegeneration(hugeChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Cum regeneration") { @Override public String applyEffect() { return target.incrementPenisCumProductionRegeneration(hugeChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Общая регенерация") { @Override public String applyEffect() { return target.incrementPenisCumProductionRegeneration(hugeChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Cum regeneration") { @Override public String applyEffect() { return target.incrementPenisCumProductionRegeneration(hugeChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Общая регенерация") { @Override public String applyEffect() { return target.incrementPenisCumProductionRegeneration(hugeChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Cum regeneration") { @Override public String applyEffect() { return target.incrementPenisCumProductionRegeneration(hugeChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Общая регенерация") { @Override public String applyEffect() { return target.incrementPenisCumProductionRegeneration(hugeChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Cum regeneration") { @Override public String applyEffect() { return target.incrementPenisCumProductionRegeneration(hugeChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Общая регенерация") { @Override public String applyEffect() { return target.incrementPenisCumProductionRegeneration(hugeChangeMajorBoost); } };
 						}
 					case TF_MOD_CUM_EXPULSION:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Cum amount at orgasm (" + mediumChangeMajorDrain + "%)") { @Override public String applyEffect() { return target.incrementPenisCumExpulsion(mediumChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Общее количество при оргазме (" + mediumChangeMajorDrain + "%)") { @Override public String applyEffect() { return target.incrementPenisCumExpulsion(mediumChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Cum amount at orgasm (" + mediumChangeDrain + "%)") { @Override public String applyEffect() { return target.incrementPenisCumExpulsion(mediumChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Количество спермы при оргазме (" + mediumChangeDrain + "%)") { @Override public String applyEffect() { return target.incrementPenisCumExpulsion(mediumChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Cum amount at orgasm (" + mediumChangeMinorDrain + "%)") { @Override public String applyEffect() { return target.incrementPenisCumExpulsion(mediumChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Количество спермы при оргазме (" + mediumChangeMinorDrain + "%)") { @Override public String applyEffect() { return target.incrementPenisCumExpulsion(mediumChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Cum amount at orgasm (+" + mediumChangeMinorBoost + "%)") { @Override public String applyEffect() { return target.incrementPenisCumExpulsion(mediumChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Количество спермы при оргазме (+" + mediumChangeMinorBoost + "%)") { @Override public String applyEffect() { return target.incrementPenisCumExpulsion(mediumChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Cum amount at orgasm (+" + mediumChangeBoost + "%)") { @Override public String applyEffect() { return target.incrementPenisCumExpulsion(mediumChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Количество спермы при оргазме (+" + mediumChangeBoost + "%)") { @Override public String applyEffect() { return target.incrementPenisCumExpulsion(mediumChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Cum amount at orgasm (+" + mediumChangeMajorBoost + "%)") { @Override public String applyEffect() { return target.incrementPenisCumExpulsion(mediumChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Количество спермы при оргазме (+" + mediumChangeMajorBoost + "%)") { @Override public String applyEffect() { return target.incrementPenisCumExpulsion(mediumChangeMajorBoost); } };
 						}
 					case TF_MOD_INTERNAL:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Makes testicles external.") { @Override public String applyEffect() { return target.setInternalTesticles(false); } };
+								return new RacialEffectUtil("Делает яички внешними.") { @Override public String applyEffect() { return target.setInternalTesticles(false); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Makes testicles internal.") { @Override public String applyEffect() { return target.setInternalTesticles(true); } };
+								return new RacialEffectUtil("Делает яички внутренними.") { @Override public String applyEffect() { return target.setInternalTesticles(true); } };
 						}
 						
 					case TF_MOD_CAPACITY:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Urethra capacity (" + Units.size(mediumChangeMajorDrain) + ")") { @Override public String applyEffect() { return target.incrementPenisCapacity(mediumChangeMajorDrain, true); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Вместимость уретры (" + Units.size(mediumChangeMajorDrain) + ")") { @Override public String applyEffect() { return target.incrementPenisCapacity(mediumChangeMajorDrain, true); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Urethra capacity (" + Units.size(mediumChangeDrain) + ")") { @Override public String applyEffect() { return target.incrementPenisCapacity(mediumChangeDrain, true); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Вместимость уретры (" + Units.size(mediumChangeDrain) + ")") { @Override public String applyEffect() { return target.incrementPenisCapacity(mediumChangeDrain, true); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Urethra capacity (" + Units.size(mediumChangeMinorDrain) + ")") { @Override public String applyEffect() { return target.incrementPenisCapacity(mediumChangeMinorDrain, true); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Вместимость уретры (" + Units.size(mediumChangeMinorDrain) + ")") { @Override public String applyEffect() { return target.incrementPenisCapacity(mediumChangeMinorDrain, true); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Urethra capacity (+" + Units.size(mediumChangeMinorBoost) + ")") { @Override public String applyEffect() { return target.incrementPenisCapacity(mediumChangeMinorBoost, true); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Вместимость уретры (+" + Units.size(mediumChangeMinorBoost) + ")") { @Override public String applyEffect() { return target.incrementPenisCapacity(mediumChangeMinorBoost, true); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Urethra capacity (+" + Units.size(mediumChangeBoost) + ")") { @Override public String applyEffect() { return target.incrementPenisCapacity(mediumChangeBoost, true); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Вместимость уретры (+" + Units.size(mediumChangeBoost) + ")") { @Override public String applyEffect() { return target.incrementPenisCapacity(mediumChangeBoost, true); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Urethra capacity (+" + Units.size(mediumChangeMajorBoost) + ")") { @Override public String applyEffect() { return target.incrementPenisCapacity(mediumChangeMajorBoost, true); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Вместимость уретры (+" + Units.size(mediumChangeMajorBoost) + ")") { @Override public String applyEffect() { return target.incrementPenisCapacity(mediumChangeMajorBoost, true); } };
 						}
 					case TF_MOD_DEPTH:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Urethra depth (" + smallChangeMajorDrain + " depth)") { @Override public String applyEffect() { return target.incrementUrethraDepth(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Глубина уретры (" + smallChangeMajorDrain + " глубина)") { @Override public String applyEffect() { return target.incrementUrethraDepth(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Urethra depth (" + smallChangeDrain + " depth)") { @Override public String applyEffect() { return target.incrementUrethraDepth(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Глубина уретры (" + smallChangeDrain + " глубина)") { @Override public String applyEffect() { return target.incrementUrethraDepth(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Urethra depth (" + smallChangeMinorDrain + " depth)") { @Override public String applyEffect() { return target.incrementUrethraDepth(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Глубина уретры (" + smallChangeMinorDrain + " глубина)") { @Override public String applyEffect() { return target.incrementUrethraDepth(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Urethra depth (+" + smallChangeMinorBoost + " depth)") { @Override public String applyEffect() { return target.incrementUrethraDepth(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Глубина уретры (+" + smallChangeMinorBoost + " глубина)") { @Override public String applyEffect() { return target.incrementUrethraDepth(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Urethra depth (+" + smallChangeBoost + " depth)") { @Override public String applyEffect() { return target.incrementUrethraDepth(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Глубина уретры (+" + smallChangeBoost + " глубина)") { @Override public String applyEffect() { return target.incrementUrethraDepth(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Urethra depth (+" + smallChangeMajorBoost + " depth)") { @Override public String applyEffect() { return target.incrementUrethraDepth(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Глубина уретры (+" + smallChangeMajorBoost + " глубина)") { @Override public String applyEffect() { return target.incrementUrethraDepth(smallChangeMajorBoost); } };
 						}
 					case TF_MOD_ELASTICITY:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Urethra elasticity (" + smallChangeMajorDrain + " elasticity)") { @Override public String applyEffect() { return target.incrementUrethraElasticity(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Эластичность уретры (" + smallChangeMajorDrain + " эластичность)") { @Override public String applyEffect() { return target.incrementUrethraElasticity(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Urethra elasticity (" + smallChangeDrain + " elasticity)") { @Override public String applyEffect() { return target.incrementUrethraElasticity(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Эластичность уретры (" + smallChangeDrain + " эластичность)") { @Override public String applyEffect() { return target.incrementUrethraElasticity(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Urethra elasticity (" + smallChangeMinorDrain + " elasticity)") { @Override public String applyEffect() { return target.incrementUrethraElasticity(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Эластичность уретры (" + smallChangeMinorDrain + " эластичность)") { @Override public String applyEffect() { return target.incrementUrethraElasticity(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Urethra elasticity (+" + smallChangeMinorBoost + " elasticity)") { @Override public String applyEffect() { return target.incrementUrethraElasticity(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Эластичность уретры (+" + smallChangeMinorBoost + " эластичность)") { @Override public String applyEffect() { return target.incrementUrethraElasticity(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Urethra elasticity (+" + smallChangeBoost + " elasticity)") { @Override public String applyEffect() { return target.incrementUrethraElasticity(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Эластичность уретры (+" + smallChangeBoost + " эластичность)") { @Override public String applyEffect() { return target.incrementUrethraElasticity(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Urethra elasticity (+" + smallChangeMajorBoost + " elasticity)") { @Override public String applyEffect() { return target.incrementUrethraElasticity(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Эластичность уретры (+" + smallChangeMajorBoost + " эластичность)") { @Override public String applyEffect() { return target.incrementUrethraElasticity(smallChangeMajorBoost); } };
 						}
 					case TF_MOD_PLASTICITY:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Urethra plasticity (" + smallChangeMajorDrain + " plasticity)") { @Override public String applyEffect() { return target.incrementUrethraPlasticity(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Пластичность уретры (" + smallChangeMajorDrain + " пластичность)") { @Override public String applyEffect() { return target.incrementUrethraPlasticity(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Urethra plasticity (" + smallChangeDrain + " plasticity)") { @Override public String applyEffect() { return target.incrementUrethraPlasticity(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Пластичность уретры (" + smallChangeDrain + " пластичность)") { @Override public String applyEffect() { return target.incrementUrethraPlasticity(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Urethra plasticity (" + smallChangeMinorDrain + " plasticity)") { @Override public String applyEffect() { return target.incrementUrethraPlasticity(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Пластичность уретры (" + smallChangeMinorDrain + " пластичность)") { @Override public String applyEffect() { return target.incrementUrethraPlasticity(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Urethra plasticity (+" + smallChangeMinorBoost + " plasticity)") { @Override public String applyEffect() { return target.incrementUrethraPlasticity(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Пластичность уретры (+" + smallChangeMinorBoost + " пластичность)") { @Override public String applyEffect() { return target.incrementUrethraPlasticity(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Urethra plasticity (+" + smallChangeBoost + " plasticity)") { @Override public String applyEffect() { return target.incrementUrethraPlasticity(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Пластичность уретры (+" + smallChangeBoost + " пластичность)") { @Override public String applyEffect() { return target.incrementUrethraPlasticity(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Urethra plasticity (+" + smallChangeMajorBoost + " plasticity)") { @Override public String applyEffect() { return target.incrementUrethraPlasticity(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Пластичность уретры (+" + smallChangeMajorBoost + " пластичность)") { @Override public String applyEffect() { return target.incrementUrethraPlasticity(smallChangeMajorBoost); } };
 						}
 						
 					case TF_MOD_ORIFICE_PUFFY:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes puffiness from urethra.") { @Override public String applyEffect() { return target.removeUrethraOrificeModifier(OrificeModifier.PUFFY); } };
+								return new RacialEffectUtil("Убирает припухлость уретры.") { @Override public String applyEffect() { return target.removeUrethraOrificeModifier(OrificeModifier.PUFFY); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Makes urethra extra puffy.") { @Override public String applyEffect() { return target.addUrethraOrificeModifier(OrificeModifier.PUFFY); } };
+								return new RacialEffectUtil("Делает уретру экстремально припухлой.") { @Override public String applyEffect() { return target.addUrethraOrificeModifier(OrificeModifier.PUFFY); } };
 						}
 					case TF_MOD_ORIFICE_RIBBED:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes internal ribbing from urethra.") { @Override public String applyEffect() { return target.removeUrethraOrificeModifier(OrificeModifier.RIBBED); } };
+								return new RacialEffectUtil("Убирает внутренние ребра уретры.") { @Override public String applyEffect() { return target.removeUrethraOrificeModifier(OrificeModifier.RIBBED); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds internal ribbing to urethra.") { @Override public String applyEffect() { return target.addUrethraOrificeModifier(OrificeModifier.RIBBED); } };
+								return new RacialEffectUtil("Добавляет внутренние ребра уретре.") { @Override public String applyEffect() { return target.addUrethraOrificeModifier(OrificeModifier.RIBBED); } };
 						}
 					case TF_MOD_ORIFICE_MUSCLED:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes internal muscles from urethra.") { @Override public String applyEffect() { return target.removeUrethraOrificeModifier(OrificeModifier.MUSCLE_CONTROL); } };
+								return new RacialEffectUtil("Убирает внутренние мышцы из уретры.") { @Override public String applyEffect() { return target.removeUrethraOrificeModifier(OrificeModifier.MUSCLE_CONTROL); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds internal muscles to urethra.") { @Override public String applyEffect() { return target.addUrethraOrificeModifier(OrificeModifier.MUSCLE_CONTROL); } };
+								return new RacialEffectUtil("Добавляет внутренние мышцы в уретру.") { @Override public String applyEffect() { return target.addUrethraOrificeModifier(OrificeModifier.MUSCLE_CONTROL); } };
 						}
 					case TF_MOD_ORIFICE_TENTACLED:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes internal tentacles from urethra.") { @Override public String applyEffect() { return target.removeUrethraOrificeModifier(OrificeModifier.TENTACLED); } };
+								return new RacialEffectUtil("Убирает внутренние щупальца из уретры.") { @Override public String applyEffect() { return target.removeUrethraOrificeModifier(OrificeModifier.TENTACLED); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds internal tentacles to urethra.") { @Override public String applyEffect() { return target.addUrethraOrificeModifier(OrificeModifier.TENTACLED); } };
+								return new RacialEffectUtil("Добавляет внутренние щупальца в уретру.") { @Override public String applyEffect() { return target.addUrethraOrificeModifier(OrificeModifier.TENTACLED); } };
 						}
 
 					case TF_TYPE_1: case TF_TYPE_2: case TF_TYPE_3: case TF_TYPE_4: case TF_TYPE_5: case TF_TYPE_6: case TF_TYPE_7: case TF_TYPE_8: case TF_TYPE_9: case TF_TYPE_10:
 						int index = Math.min(PenisType.getPenisTypes(race).size()-1, modifierTypeToInt(secondaryModifier));
 						return new RacialEffectUtil(
 								PenisType.getPenisTypes(race).get(index)==PenisType.NONE
-									?"Removes penis."
-									:Util.capitaliseSentence(PenisType.getPenisTypes(race).get(index).getTransformName())+" penis transformation.") { @Override public String applyEffect() {
+									?"Удаляет член."
+									:Util.capitaliseSentence(PenisType.getPenisTypes(race).get(index).getTransformName())+" трансформация пениса.") { @Override public String applyEffect() {
 								String tfText = target.setPenisType(PenisType.getPenisTypes(race).get(index));
 								if(revealTransformedPart) {
 									user.setKnowsCharacterArea(CoverableArea.PENIS, target, true);
@@ -4580,7 +4577,7 @@ public abstract class AbstractItemEffectType {
 							} };
 							
 					default:
-						return new RacialEffectUtil(Util.capitaliseSentence(race.getName(false))+" penis transformation.") { @Override public String applyEffect() {
+						return new RacialEffectUtil(Util.capitaliseSentence(race.getName(false))+" трансформация пениса.") { @Override public String applyEffect() {
 							String tfText = target.setPenisType(RacialBody.valueOfRace(race).getPenisType());
 							if(revealTransformedPart) {
 								user.setKnowsCharacterArea(CoverableArea.PENIS, target, true);
@@ -4594,10 +4591,10 @@ public abstract class AbstractItemEffectType {
 				switch(secondaryModifier) {
 					case TF_TYPE_1: case TF_TYPE_2: case TF_TYPE_3: case TF_TYPE_4: case TF_TYPE_5: case TF_TYPE_6: case TF_TYPE_7: case TF_TYPE_8: case TF_TYPE_9: case TF_TYPE_10:
 						int index = Math.min(TorsoType.getTorsoTypes(race).size()-1, modifierTypeToInt(secondaryModifier));
-						return new RacialEffectUtil(Util.capitaliseSentence(TorsoType.getTorsoTypes(race).get(index).getTransformName())+" torso transformation.") {
+						return new RacialEffectUtil(Util.capitaliseSentence(TorsoType.getTorsoTypes(race).get(index).getTransformName())+" трансформация торса.") {
 							@Override public String applyEffect() { return target.setTorsoType(TorsoType.getTorsoTypes(race).get(index)); } };
 					default:
-						return new RacialEffectUtil(Util.capitaliseSentence(race.getName(false))+" torso transformation.") { @Override public String applyEffect() { return target.setTorsoType(RacialBody.valueOfRace(race).getTorsoType()); } };
+						return new RacialEffectUtil(Util.capitaliseSentence(race.getName(false))+" трансформация торса.") { @Override public String applyEffect() { return target.setTorsoType(RacialBody.valueOfRace(race).getTorsoType()); } };
 				}
 				
 			case TF_TAIL:
@@ -4605,9 +4602,9 @@ public abstract class AbstractItemEffectType {
 					case TF_MOD_COUNT:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes an extra tail.") { @Override public String applyEffect() { return target.incrementTailCount(singleDrain, false); } };
+								return new RacialEffectUtil("Убирает лишний хвост.") { @Override public String applyEffect() { return target.incrementTailCount(singleDrain, false); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds an extra tail.") { @Override public String applyEffect() {
+								return new RacialEffectUtil("Добавляет лишний хвост.") { @Override public String applyEffect() {
 									List<AbstractTailType> tailTypesSuitableForTransformation = TailType.getTailTypesSuitableForTransformation(RacialBody.valueOfRace(race).getTailType());
 									if(target.getTailType()==TailType.NONE && !tailTypesSuitableForTransformation.isEmpty()) {
 										return target.setTailType(tailTypesSuitableForTransformation.get(0));
@@ -4619,27 +4616,27 @@ public abstract class AbstractItemEffectType {
 					case TF_MOD_SIZE:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Tail length (" + mediumChangeMajorDrain + "%)") {
+								return new RacialEffectUtil("[style.colourTerrible(--)] Длина хвоста (" + mediumChangeMajorDrain + "%)") {
 										@Override public String applyEffect() { return target.incrementTailLengthAsPercentageOfHeight(mediumChangeMajorDrain/100f); }
 									};
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Tail length (" + mediumChangeDrain + "%)") {
+								return new RacialEffectUtil("[style.colourBad(--)] Длина хвоста (" + mediumChangeDrain + "%)") {
 										@Override public String applyEffect() { return target.incrementTailLengthAsPercentageOfHeight(mediumChangeDrain/100f); }
 									};
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Tail length (" + mediumChangeMinorDrain + "%)") {
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Длина хвоста (" + mediumChangeMinorDrain + "%)") {
 										@Override public String applyEffect() { return target.incrementTailLengthAsPercentageOfHeight(mediumChangeMinorDrain/100f); }
 									};
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Tail length (+" + mediumChangeMinorBoost + "%)") {
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Длина хвоста (+" + mediumChangeMinorBoost + "%)") {
 										@Override public String applyEffect() { return target.incrementTailLengthAsPercentageOfHeight(mediumChangeMinorBoost/100f); }
 									};
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Tail length (+" + mediumChangeBoost + "%)") {
+								return new RacialEffectUtil("[style.colourGood(++)] Длина хвоста (+" + mediumChangeBoost + "%)") {
 										@Override public String applyEffect() { return target.incrementTailLengthAsPercentageOfHeight(mediumChangeBoost/100f); }
 									};
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Tail length (+" + mediumChangeMajorBoost + "%)") {
+								return new RacialEffectUtil("[style.colourExcellent(++)] Длина хвоста (+" + mediumChangeMajorBoost + "%)") {
 										@Override public String applyEffect() { return target.incrementTailLengthAsPercentageOfHeight(mediumChangeMajorBoost/100f); }
 									};
 						}
@@ -4647,137 +4644,137 @@ public abstract class AbstractItemEffectType {
 					case TF_MOD_SIZE_SECONDARY:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Tail girth (" + smallChangeMajorDrain + " girth)") { @Override public String applyEffect() { return target.incrementTailGirth(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Обхват хвоста (" + smallChangeMajorDrain + " обхват)") { @Override public String applyEffect() { return target.incrementTailGirth(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Tail girth (" + smallChangeDrain + " girth)") { @Override public String applyEffect() { return target.incrementTailGirth(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Обхват хвоста (" + smallChangeDrain + " обхват)") { @Override public String applyEffect() { return target.incrementTailGirth(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Tail girth (" + smallChangeMinorDrain + " girth)") { @Override public String applyEffect() { return target.incrementTailGirth(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Обхват хвоста (" + smallChangeMinorDrain + " обхват)") { @Override public String applyEffect() { return target.incrementTailGirth(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Tail girth (+" + smallChangeMinorBoost + " girth)") { @Override public String applyEffect() { return target.incrementTailGirth(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Обхват хвоста (+" + smallChangeMinorBoost + " обхват)") { @Override public String applyEffect() { return target.incrementTailGirth(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Tail girth (+" + smallChangeBoost + " girth)") { @Override public String applyEffect() { return target.incrementTailGirth(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Обхват хвоста (+" + smallChangeBoost + " обхват)") { @Override public String applyEffect() { return target.incrementTailGirth(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Tail girth (+" + smallChangeMajorBoost + " girth)") { @Override public String applyEffect() { return target.incrementTailGirth(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Обхват хвоста (+" + smallChangeMajorBoost + " обхват)") { @Override public String applyEffect() { return target.incrementTailGirth(smallChangeMajorBoost); } };
 						}
 						
 					case REMOVAL:
-						return new RacialEffectUtil("Removes tail.") { @Override public String applyEffect() { return target.setTailType(TailType.NONE); } };
+						return new RacialEffectUtil("Удаляет хвост.") { @Override public String applyEffect() { return target.setTailType(TailType.NONE); } };
 
 					case TF_TYPE_1: case TF_TYPE_2: case TF_TYPE_3: case TF_TYPE_4: case TF_TYPE_5: case TF_TYPE_6: case TF_TYPE_7: case TF_TYPE_8: case TF_TYPE_9: case TF_TYPE_10:
 						int index = Math.min(TailType.getTailTypes(race).size()-1, modifierTypeToInt(secondaryModifier));
 						return new RacialEffectUtil(
 								TailType.getTailTypes(race).get(index)==TailType.NONE
-									?"Removes tail."
-									:Util.capitaliseSentence(TailType.getTailTypes(race).get(index).getTransformName())+" tail transformation.") {
+									?"Удаляет хвост."
+									:Util.capitaliseSentence(TailType.getTailTypes(race).get(index).getTransformName())+" трансформация хвоста.") {
 							@Override public String applyEffect() { return target.setTailType(TailType.getTailTypes(race).get(index)); } };
 
 					case TF_MOD_ORIFICE_PUFFY:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes puffiness from spinneret.") { @Override public String applyEffect() { return target.removeSpinneretOrificeModifier(OrificeModifier.PUFFY); } };
+								return new RacialEffectUtil("Убирает припухлость из паутины.") { @Override public String applyEffect() { return target.removeSpinneretOrificeModifier(OrificeModifier.PUFFY); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Makes spinneret extra puffy.") { @Override public String applyEffect() { return target.addSpinneretOrificeModifier(OrificeModifier.PUFFY); } };
+								return new RacialEffectUtil("Делает паутину дополнительно припухлой.") { @Override public String applyEffect() { return target.addSpinneretOrificeModifier(OrificeModifier.PUFFY); } };
 						}
 					case TF_MOD_ORIFICE_RIBBED:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes internal ribbing from spinneret.") { @Override public String applyEffect() { return target.removeSpinneretOrificeModifier(OrificeModifier.RIBBED); } };
+								return new RacialEffectUtil("Убирает внутренние ребра из паутины.") { @Override public String applyEffect() { return target.removeSpinneretOrificeModifier(OrificeModifier.RIBBED); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds internal ribbing to spinneret.") { @Override public String applyEffect() { return target.addSpinneretOrificeModifier(OrificeModifier.RIBBED); } };
+								return new RacialEffectUtil("Добавляет внутренние ребра в паутину.") { @Override public String applyEffect() { return target.addSpinneretOrificeModifier(OrificeModifier.RIBBED); } };
 						}
 					case TF_MOD_ORIFICE_MUSCLED:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes internal muscles from spinneret.") { @Override public String applyEffect() { return target.removeSpinneretOrificeModifier(OrificeModifier.MUSCLE_CONTROL); } };
+								return new RacialEffectUtil("Убирает внутренние мышцы из паутины.") { @Override public String applyEffect() { return target.removeSpinneretOrificeModifier(OrificeModifier.MUSCLE_CONTROL); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds internal muscles to spinneret.") { @Override public String applyEffect() { return target.addSpinneretOrificeModifier(OrificeModifier.MUSCLE_CONTROL); } };
+								return new RacialEffectUtil("Добавляет внутренние мышцы в паутину.") { @Override public String applyEffect() { return target.addSpinneretOrificeModifier(OrificeModifier.MUSCLE_CONTROL); } };
 						}
 					case TF_MOD_ORIFICE_TENTACLED:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes internal tentacles from spinneret.") { @Override public String applyEffect() { return target.removeSpinneretOrificeModifier(OrificeModifier.TENTACLED); } };
+								return new RacialEffectUtil("Убирает внутренние щупальца из паутины.") { @Override public String applyEffect() { return target.removeSpinneretOrificeModifier(OrificeModifier.TENTACLED); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds internal tentacles to spinneret.") { @Override public String applyEffect() { return target.addSpinneretOrificeModifier(OrificeModifier.TENTACLED); } };
+								return new RacialEffectUtil("Добавляет внутренние щупальца в паутину.") { @Override public String applyEffect() { return target.addSpinneretOrificeModifier(OrificeModifier.TENTACLED); } };
 						}
 					case TF_MOD_CAPACITY:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Spinneret capacity (" + Units.size(mediumChangeMajorDrain) + ")") { @Override public String applyEffect() { return target.incrementSpinneretCapacity(mediumChangeMajorDrain, true); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Вместимость паутины (" + Units.size(mediumChangeMajorDrain) + ")") { @Override public String applyEffect() { return target.incrementSpinneretCapacity(mediumChangeMajorDrain, true); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Spinneret capacity (" + Units.size(mediumChangeDrain) + ")") { @Override public String applyEffect() { return target.incrementSpinneretCapacity(mediumChangeDrain, true); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Вместимость паутины (" + Units.size(mediumChangeDrain) + ")") { @Override public String applyEffect() { return target.incrementSpinneretCapacity(mediumChangeDrain, true); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Spinneret capacity (" + Units.size(mediumChangeMinorDrain) + ")") { @Override public String applyEffect() { return target.incrementSpinneretCapacity(mediumChangeMinorDrain, true); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Вместимость паутинного аппарата (" + Units.size(mediumChangeMinorDrain) + ")") { @Override public String applyEffect() { return target.incrementSpinneretCapacity(mediumChangeMinorDrain, true); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Spinneret capacity (+" + Units.size(mediumChangeMinorBoost) + ")") { @Override public String applyEffect() { return target.incrementSpinneretCapacity(mediumChangeMinorBoost, true); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Вместимость паутинного аппарата (+" + Units.size(mediumChangeMinorBoost) + ")") { @Override public String applyEffect() { return target.incrementSpinneretCapacity(mediumChangeMinorBoost, true); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Spinneret capacity (+" + Units.size(mediumChangeBoost) + ")") { @Override public String applyEffect() { return target.incrementSpinneretCapacity(mediumChangeBoost, true); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Вместимость паутинного аппарата (+" + Units.size(mediumChangeBoost) + ")") { @Override public String applyEffect() { return target.incrementSpinneretCapacity(mediumChangeBoost, true); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Spinneret capacity (+" + Units.size(mediumChangeMajorBoost) + ")") { @Override public String applyEffect() { return target.incrementSpinneretCapacity(mediumChangeMajorBoost, true); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Вместимость паутинного аппарата (+" + Units.size(mediumChangeMajorBoost) + ")") { @Override public String applyEffect() { return target.incrementSpinneretCapacity(mediumChangeMajorBoost, true); } };
 						}
 					case TF_MOD_DEPTH:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Spinneret depth (" + smallChangeMajorDrain + " depth)") { @Override public String applyEffect() { return target.incrementSpinneretDepth(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Глубина паутинного аппарата (" + smallChangeMajorDrain + " глубина)") { @Override public String applyEffect() { return target.incrementSpinneretDepth(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Spinneret depth (" + smallChangeDrain + " depth)") { @Override public String applyEffect() { return target.incrementSpinneretDepth(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Глубина паутинного аппарата (" + smallChangeDrain + " глубина)") { @Override public String applyEffect() { return target.incrementSpinneretDepth(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Spinneret depth (" + smallChangeMinorDrain + " depth)") { @Override public String applyEffect() { return target.incrementSpinneretDepth(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Глубина паутинного аппарата (" + smallChangeMinorDrain + " глубина)") { @Override public String applyEffect() { return target.incrementSpinneretDepth(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Spinneret depth (+" + smallChangeMinorBoost + " depth)") { @Override public String applyEffect() { return target.incrementSpinneretDepth(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Глубина паутинного аппарата (+" + smallChangeMinorBoost + " глубина)") { @Override public String applyEffect() { return target.incrementSpinneretDepth(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Spinneret depth (+" + smallChangeBoost + " depth)") { @Override public String applyEffect() { return target.incrementSpinneretDepth(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Глубина паутинного аппарата (+" + smallChangeBoost + " глубина)") { @Override public String applyEffect() { return target.incrementSpinneretDepth(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Spinneret depth (+" + smallChangeMajorBoost + " depth)") { @Override public String applyEffect() { return target.incrementSpinneretDepth(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Глубина паутинного аппарата (+" + smallChangeMajorBoost + " глубина)") { @Override public String applyEffect() { return target.incrementSpinneretDepth(smallChangeMajorBoost); } };
 						}
 					case TF_MOD_ELASTICITY:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Spinneret elasticity (" + smallChangeMajorDrain + " elasticity)") { @Override public String applyEffect() { return target.incrementSpinneretElasticity(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Эластичность паутинки (" + smallChangeMajorDrain + " эластичность)") { @Override public String applyEffect() { return target.incrementSpinneretElasticity(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Spinneret elasticity (" + smallChangeDrain + " elasticity)") { @Override public String applyEffect() { return target.incrementSpinneretElasticity(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Эластичность паутинки (" + smallChangeDrain + " эластичность)") { @Override public String applyEffect() { return target.incrementSpinneretElasticity(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Spinneret elasticity (" + smallChangeMinorDrain + " elasticity)") { @Override public String applyEffect() { return target.incrementSpinneretElasticity(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Эластичность паутинки (" + smallChangeMinorDrain + " эластичность)") { @Override public String applyEffect() { return target.incrementSpinneretElasticity(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Spinneret elasticity (+" + smallChangeMinorBoost + " elasticity)") { @Override public String applyEffect() { return target.incrementSpinneretElasticity(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Эластичность паутинки (+" + smallChangeMinorBoost + " эластичность)") { @Override public String applyEffect() { return target.incrementSpinneretElasticity(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Spinneret elasticity (+" + smallChangeBoost + " elasticity)") { @Override public String applyEffect() { return target.incrementSpinneretElasticity(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Эластичность паутинки (+" + smallChangeBoost + " эластичность)") { @Override public String applyEffect() { return target.incrementSpinneretElasticity(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Spinneret elasticity (+" + smallChangeMajorBoost + " elasticity)") { @Override public String applyEffect() { return target.incrementSpinneretElasticity(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Эластичность паутинки (+" + smallChangeMajorBoost + " эластичность)") { @Override public String applyEffect() { return target.incrementSpinneretElasticity(smallChangeMajorBoost); } };
 						}
 					case TF_MOD_PLASTICITY:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Spinneret plasticity (" + smallChangeMajorDrain + " plasticity)") { @Override public String applyEffect() { return target.incrementSpinneretPlasticity(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Пластичность паутинки (" + smallChangeMajorDrain + " пластичность)") { @Override public String applyEffect() { return target.incrementSpinneretPlasticity(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Spinneret plasticity (" + smallChangeDrain + " plasticity)") { @Override public String applyEffect() { return target.incrementSpinneretPlasticity(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Пластичность паутинки (" + smallChangeDrain + " пластичность)") { @Override public String applyEffect() { return target.incrementSpinneretPlasticity(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Spinneret plasticity (" + smallChangeMinorDrain + " plasticity)") { @Override public String applyEffect() { return target.incrementSpinneretPlasticity(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Пластичность паутинки (" + smallChangeMinorDrain + " пластичность)") { @Override public String applyEffect() { return target.incrementSpinneretPlasticity(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Spinneret plasticity (+" + smallChangeMinorBoost + " plasticity)") { @Override public String applyEffect() { return target.incrementSpinneretPlasticity(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Пластичность паутинки (+" + smallChangeMinorBoost + " пластичность)") { @Override public String applyEffect() { return target.incrementSpinneretPlasticity(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Spinneret plasticity (+" + smallChangeBoost + " plasticity)") { @Override public String applyEffect() { return target.incrementSpinneretPlasticity(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Пластичность паутинки (+" + smallChangeBoost + " пластичность)") { @Override public String applyEffect() { return target.incrementSpinneretPlasticity(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Spinneret plasticity (+" + smallChangeMajorBoost + " plasticity)") { @Override public String applyEffect() { return target.incrementSpinneretPlasticity(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Пластичность паутинки (+" + smallChangeMajorBoost + " пластичность)") { @Override public String applyEffect() { return target.incrementSpinneretPlasticity(smallChangeMajorBoost); } };
 						}
 					case TF_MOD_WETNESS:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Spinneret wetness (" + smallChangeMajorDrain + " wetness)") { @Override public String applyEffect() { return target.incrementSpinneretWetness(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Влажность паутинки (" + smallChangeMajorDrain + " влажность)") { @Override public String applyEffect() { return target.incrementSpinneretWetness(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Spinneret wetness (" + smallChangeDrain + " wetness)") { @Override public String applyEffect() { return target.incrementSpinneretWetness(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Влажность паутинки (" + smallChangeDrain + " влажность)") { @Override public String applyEffect() { return target.incrementSpinneretWetness(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Spinneret wetness (" + smallChangeMinorDrain + " wetness)") { @Override public String applyEffect() { return target.incrementSpinneretWetness(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Влажность паутинки (" + smallChangeMinorDrain + " влажность)") { @Override public String applyEffect() { return target.incrementSpinneretWetness(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Spinneret wetness (+" + smallChangeMinorBoost + " wetness)") { @Override public String applyEffect() { return target.incrementSpinneretWetness(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Влажность паутинки (+" + smallChangeMinorBoost + " влажность)") { @Override public String applyEffect() { return target.incrementSpinneretWetness(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Spinneret wetness (+" + smallChangeBoost + " wetness)") { @Override public String applyEffect() { return target.incrementSpinneretWetness(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Влажность паутинки (+" + smallChangeBoost + " влажность)") { @Override public String applyEffect() { return target.incrementSpinneretWetness(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Spinneret wetness (+" + smallChangeMajorBoost + " wetness)") { @Override public String applyEffect() { return target.incrementSpinneretWetness(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Влажность паутинки (+" + smallChangeMajorBoost + " влажность)") { @Override public String applyEffect() { return target.incrementSpinneretWetness(smallChangeMajorBoost); } };
 						}
 							
 					default:
 						AbstractTailType tailType = RacialBody.valueOfRace(race).getRandomTailType(false);
-						return new RacialEffectUtil(tailType==TailType.NONE?"Removes tail.":Util.capitaliseSentence(race.getName(false))+" tail transformation.") {
+						return new RacialEffectUtil(tailType==TailType.NONE?"Удаляет хвост.":Util.capitaliseSentence(race.getName(false))+" трансформация хвоста.") {
 							@Override public String applyEffect() { return target.setTailType(tailType); } };
 				}
 				
@@ -4786,27 +4783,27 @@ public abstract class AbstractItemEffectType {
 					case TF_MOD_SIZE:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Tentacle length (" + mediumChangeMajorDrain + "%)") {
+								return new RacialEffectUtil("[style.colourTerrible(--)] Длина щупальца (" + mediumChangeMajorDrain + "%)") {
 										@Override public String applyEffect() { return target.incrementTentacleLengthAsPercentageOfHeight(mediumChangeMajorDrain/100f); }
 									};
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Tentacle length (" + mediumChangeDrain + "%)") {
+								return new RacialEffectUtil("[style.colourBad(--)] Длина щупальца (" + mediumChangeDrain + "%)") {
 										@Override public String applyEffect() { return target.incrementTentacleLengthAsPercentageOfHeight(mediumChangeDrain/100f); }
 									};
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Tentacle length (" + mediumChangeMinorDrain + "%)") {
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Длина щупальца (" + mediumChangeMinorDrain + "%)") {
 										@Override public String applyEffect() { return target.incrementTentacleLengthAsPercentageOfHeight(mediumChangeMinorDrain/100f); }
 									};
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Tentacle length (+" + mediumChangeMinorBoost + "%)") {
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Длина щупальца (+" + mediumChangeMinorBoost + "%)") {
 										@Override public String applyEffect() { return target.incrementTentacleLengthAsPercentageOfHeight(mediumChangeMinorBoost/100f); }
 									};
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Tentacle length (+" + mediumChangeBoost + "%)") {
+								return new RacialEffectUtil("[style.colourGood(++)] Длина щупальца (+" + mediumChangeBoost + "%)") {
 										@Override public String applyEffect() { return target.incrementTentacleLengthAsPercentageOfHeight(mediumChangeBoost/100f); }
 									};
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Tentacle length (+" + mediumChangeMajorBoost + "%)") {
+								return new RacialEffectUtil("[style.colourExcellent(++)] Длина щупальца (+" + mediumChangeMajorBoost + "%)") {
 										@Override public String applyEffect() { return target.incrementTentacleLengthAsPercentageOfHeight(mediumChangeMajorBoost/100f); }
 									};
 						}
@@ -4814,17 +4811,17 @@ public abstract class AbstractItemEffectType {
 					default://case TF_MOD_SIZE_SECONDARY:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Tentacle girth (" + smallChangeMajorDrain + " girth)") { @Override public String applyEffect() { return target.incrementTentacleGirth(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Толщина щупальца (" + smallChangeMajorDrain + " обхват)") { @Override public String applyEffect() { return target.incrementTentacleGirth(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Tentacle girth (" + smallChangeDrain + " girth)") { @Override public String applyEffect() { return target.incrementTentacleGirth(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Толщина щупальца (" + smallChangeDrain + " обхват)") { @Override public String applyEffect() { return target.incrementTentacleGirth(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Tentacle girth (" + smallChangeMinorDrain + " girth)") { @Override public String applyEffect() { return target.incrementTentacleGirth(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Толщина щупальца (" + smallChangeMinorDrain + " обхват)") { @Override public String applyEffect() { return target.incrementTentacleGirth(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Tentacle girth (+" + smallChangeMinorBoost + " girth)") { @Override public String applyEffect() { return target.incrementTentacleGirth(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Толщина щупальца (+" + smallChangeMinorBoost + " обхват)") { @Override public String applyEffect() { return target.incrementTentacleGirth(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Tentacle girth (+" + smallChangeBoost + " girth)") { @Override public String applyEffect() { return target.incrementTentacleGirth(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Толщина щупальца (+" + smallChangeBoost + " обхват)") { @Override public String applyEffect() { return target.incrementTentacleGirth(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Tentacle girth (+" + smallChangeMajorBoost + " girth)") { @Override public String applyEffect() { return target.incrementTentacleGirth(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Толщина щупальца (+" + smallChangeMajorBoost + " обхват)") { @Override public String applyEffect() { return target.incrementTentacleGirth(smallChangeMajorBoost); } };
 						}
 				}
 				
@@ -4833,50 +4830,50 @@ public abstract class AbstractItemEffectType {
 					case TF_MOD_SIZE:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Clitoris length (" + Units.size(mediumChangeMajorDrain) + ")") { @Override public String applyEffect() { return target.incrementVaginaClitorisSize(mediumChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Длина клитора (" + Units.size(mediumChangeMajorDrain) + ")") { @Override public String applyEffect() { return target.incrementVaginaClitorisSize(mediumChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Clitoris length (" + Units.size(mediumChangeDrain) + ")") { @Override public String applyEffect() { return target.incrementVaginaClitorisSize(mediumChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Длина клитора (" + Units.size(mediumChangeDrain) + ")") { @Override public String applyEffect() { return target.incrementVaginaClitorisSize(mediumChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Clitoris length (" + Units.size(mediumChangeMinorDrain) + ")") { @Override public String applyEffect() { return target.incrementVaginaClitorisSize(mediumChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Длина клитора (" + Units.size(mediumChangeMinorDrain) + ")") { @Override public String applyEffect() { return target.incrementVaginaClitorisSize(mediumChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Clitoris length (+" + Units.size(mediumChangeMinorBoost) + ")") { @Override public String applyEffect() { return target.incrementVaginaClitorisSize(mediumChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Длина клитора (+" + Units.size(mediumChangeMinorBoost) + ")") { @Override public String applyEffect() { return target.incrementVaginaClitorisSize(mediumChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Clitoris length (+" + Units.size(mediumChangeBoost) + ")") { @Override public String applyEffect() { return target.incrementVaginaClitorisSize(mediumChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Длина клитора (+" + Units.size(mediumChangeBoost) + ")") { @Override public String applyEffect() { return target.incrementVaginaClitorisSize(mediumChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Clitoris length (+" + Units.size(mediumChangeMajorBoost) + ")") { @Override public String applyEffect() { return target.incrementVaginaClitorisSize(mediumChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Длина клитора (+" + Units.size(mediumChangeMajorBoost) + ")") { @Override public String applyEffect() { return target.incrementVaginaClitorisSize(mediumChangeMajorBoost); } };
 						}
 					case TF_MOD_SIZE_SECONDARY:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Clitoris girth (" + smallChangeMajorDrain + " girth)") { @Override public String applyEffect() { return target.incrementClitorisGirth(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Толщина клитора (" + smallChangeMajorDrain + " обхват)") { @Override public String applyEffect() { return target.incrementClitorisGirth(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Clitoris girth (" + smallChangeDrain + " girth)") { @Override public String applyEffect() { return target.incrementClitorisGirth(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Толщина клитора (" + smallChangeDrain + " обхват)") { @Override public String applyEffect() { return target.incrementClitorisGirth(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Clitoris girth (" + smallChangeMinorDrain + " girth)") { @Override public String applyEffect() { return target.incrementClitorisGirth(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Толщина клитора (" + smallChangeMinorDrain + " обхват)") { @Override public String applyEffect() { return target.incrementClitorisGirth(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Clitoris girth (+" + smallChangeMinorBoost + " girth)") { @Override public String applyEffect() { return target.incrementClitorisGirth(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Толщина клитора (+" + smallChangeMinorBoost + " обхват)") { @Override public String applyEffect() { return target.incrementClitorisGirth(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Clitoris girth (+" + smallChangeBoost + " girth)") { @Override public String applyEffect() { return target.incrementClitorisGirth(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Толщина клитора (+" + smallChangeBoost + " обхват)") { @Override public String applyEffect() { return target.incrementClitorisGirth(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Clitoris girth (+" + smallChangeMajorBoost + " girth)") { @Override public String applyEffect() { return target.incrementClitorisGirth(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Толщина клитора (+" + smallChangeMajorBoost + " обхват)") { @Override public String applyEffect() { return target.incrementClitorisGirth(smallChangeMajorBoost); } };
 						}
 					case TF_MOD_SIZE_TERTIARY:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Labia size (" + smallChangeMajorDrain + " size)") { @Override public String applyEffect() { return target.incrementVaginaLabiaSize(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Размер половых губ (" + smallChangeMajorDrain + " размер)") { @Override public String applyEffect() { return target.incrementVaginaLabiaSize(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Labia size (" + smallChangeDrain + " size)") { @Override public String applyEffect() { return target.incrementVaginaLabiaSize(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Размер половых губ (" + smallChangeDrain + " размер)") { @Override public String applyEffect() { return target.incrementVaginaLabiaSize(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Labia size (" + smallChangeMinorDrain + " size)") { @Override public String applyEffect() { return target.incrementVaginaLabiaSize(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Размер половых губ (" + smallChangeMinorDrain + " размер)") { @Override public String applyEffect() { return target.incrementVaginaLabiaSize(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Labia size (+" + smallChangeMinorBoost + " size)") { @Override public String applyEffect() { return target.incrementVaginaLabiaSize(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Размер половых губ (+" + smallChangeMinorBoost + " размер)") { @Override public String applyEffect() { return target.incrementVaginaLabiaSize(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Labia size (+" + smallChangeBoost + " size)") { @Override public String applyEffect() { return target.incrementVaginaLabiaSize(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Размер половых губ (+" + smallChangeBoost + " размер)") { @Override public String applyEffect() { return target.incrementVaginaLabiaSize(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Labia size (+" + smallChangeMajorBoost + " size)") { @Override public String applyEffect() { return target.incrementVaginaLabiaSize(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Размер половых губ (+" + smallChangeMajorBoost + " размер)") { @Override public String applyEffect() { return target.incrementVaginaLabiaSize(smallChangeMajorBoost); } };
 						}
 					case REMOVAL:
-							return new RacialEffectUtil("Removes vagina.") { @Override public String applyEffect() {
+							return new RacialEffectUtil("Убирает влагалище.") { @Override public String applyEffect() {
 								String tfText = target.setVaginaType(VaginaType.NONE);
 								if(revealTransformedPart) {
 									user.setKnowsCharacterArea(CoverableArea.VAGINA, target, true);
@@ -4887,315 +4884,315 @@ public abstract class AbstractItemEffectType {
 					case TF_MOD_BODY_HAIR:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("Removes a huge amount of pubic hair. (" + smallChangeMajorDrain + " hairiness)") { @Override public String applyEffect() { return target.incrementPubicHair(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("Убирает огромное количество лобковых волос. (" + smallChangeMajorDrain + " волосатость)") { @Override public String applyEffect() { return target.incrementPubicHair(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("Removes a large amount of pubic hair. (" + smallChangeDrain + " hairiness)") { @Override public String applyEffect() { return target.incrementPubicHair(smallChangeDrain); } };
+								return new RacialEffectUtil("Убирает большое количество лобковых волос. (" + smallChangeDrain + " волосатость)") { @Override public String applyEffect() { return target.incrementPubicHair(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes some pubic hair. (" + smallChangeMinorDrain + " hairiness)") { @Override public String applyEffect() { return target.incrementPubicHair(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("Убирает немного лобковых волос. (" + smallChangeMinorDrain + " волосатость)") { @Override public String applyEffect() { return target.incrementPubicHair(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds some pubic hair. (" + smallChangeMinorBoost + " hairiness)") { @Override public String applyEffect() { return target.incrementPubicHair(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("Добавляет немного лобковых волос. (" + smallChangeMinorBoost + " волосатость)") { @Override public String applyEffect() { return target.incrementPubicHair(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("Adds a large amount of pubic hair. (" + smallChangeBoost + " hairiness)") { @Override public String applyEffect() { return target.incrementPubicHair(smallChangeBoost); } };
+								return new RacialEffectUtil("Добавляет много лобковых волос. (" + smallChangeBoost + " волосатость)") { @Override public String applyEffect() { return target.incrementPubicHair(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("Adds a huge amount of pubic hair. (" + smallChangeMajorBoost + " hairiness)") { @Override public String applyEffect() { return target.incrementPubicHair(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("Добавляет огромное количество лобковых волос. (" + smallChangeMajorBoost + " волосатость)") { @Override public String applyEffect() { return target.incrementPubicHair(smallChangeMajorBoost); } };
 						}
 
 					case TF_MOD_PENIS_BARBED:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes barbs from clitoris.") { @Override public String applyEffect() { return target.removeClitorisModifier(PenetrationModifier.BARBED); } };
+								return new RacialEffectUtil("Убирает шипы с клитора.") { @Override public String applyEffect() { return target.removeClitorisModifier(PenetrationModifier.BARBED); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds barbs to clitoris.") { @Override public String applyEffect() { return target.addClitorisModifier(PenetrationModifier.BARBED); } };
+								return new RacialEffectUtil("Добавляет шипы на клитор.") { @Override public String applyEffect() { return target.addClitorisModifier(PenetrationModifier.BARBED); } };
 						}
 					case TF_MOD_PENIS_FLARED:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes flare from clitoris head.") { @Override public String applyEffect() { return target.removeClitorisModifier(PenetrationModifier.FLARED); } };
+								return new RacialEffectUtil("Убирает расширение головки клитора.") { @Override public String applyEffect() { return target.removeClitorisModifier(PenetrationModifier.FLARED); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds flare to clitoris head.") { @Override public String applyEffect() { return target.addClitorisModifier(PenetrationModifier.FLARED); } };
+								return new RacialEffectUtil("Добавляет расширение головке клитора.") { @Override public String applyEffect() { return target.addClitorisModifier(PenetrationModifier.FLARED); } };
 						}
 					case TF_MOD_PENIS_BLUNT:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes blunted tip from clitoris.") { @Override public String applyEffect() { return target.removeClitorisModifier(PenetrationModifier.BLUNT); } };
+								return new RacialEffectUtil("Убирает затупленный кончик клитора.") { @Override public String applyEffect() { return target.removeClitorisModifier(PenetrationModifier.BLUNT); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Makes tip of clitoris blunt.") { @Override public String applyEffect() { return target.addClitorisModifier(PenetrationModifier.BLUNT); } };
+								return new RacialEffectUtil("Делает кончик клитора затупленным.") { @Override public String applyEffect() { return target.addClitorisModifier(PenetrationModifier.BLUNT); } };
 						}
 					case TF_MOD_PENIS_KNOTTED:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes knot from base of clitoris.") { @Override public String applyEffect() { return target.removeClitorisModifier(PenetrationModifier.KNOTTED); } };
+								return new RacialEffectUtil("Убирает утолщение у основания клитора.") { @Override public String applyEffect() { return target.removeClitorisModifier(PenetrationModifier.KNOTTED); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds knot to base of clitoris.") { @Override public String applyEffect() { return target.addClitorisModifier(PenetrationModifier.KNOTTED); } };
+								return new RacialEffectUtil("Добавляет утолщение у основания клитора.") { @Override public String applyEffect() { return target.addClitorisModifier(PenetrationModifier.KNOTTED); } };
 						}
 					case TF_MOD_PENIS_PREHENSILE:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes prehensility from clitoris.") { @Override public String applyEffect() { return target.removeClitorisModifier(PenetrationModifier.PREHENSILE); } };
+								return new RacialEffectUtil("Убирает подвижность клитора.") { @Override public String applyEffect() { return target.removeClitorisModifier(PenetrationModifier.PREHENSILE); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds prehensility to clitoris.") { @Override public String applyEffect() { return target.addClitorisModifier(PenetrationModifier.PREHENSILE); } };
+								return new RacialEffectUtil("Добавляет клиторусу цепкость.") { @Override public String applyEffect() { return target.addClitorisModifier(PenetrationModifier.PREHENSILE); } };
 						}
 					case TF_MOD_PENIS_RIBBED:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes ribbing from clitoris.") { @Override public String applyEffect() { return target.removeClitorisModifier(PenetrationModifier.RIBBED); } };
+								return new RacialEffectUtil("Убирает ребристость клитора.") { @Override public String applyEffect() { return target.removeClitorisModifier(PenetrationModifier.RIBBED); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds ribbing to clitoris.") { @Override public String applyEffect() { return target.addClitorisModifier(PenetrationModifier.RIBBED); } };
+								return new RacialEffectUtil("Добавляет клитору рельефность.") { @Override public String applyEffect() { return target.addClitorisModifier(PenetrationModifier.RIBBED); } };
 						}
 					case TF_MOD_PENIS_SHEATHED:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes extra clitoral hood sheathing.") { @Override public String applyEffect() { return target.removeClitorisModifier(PenetrationModifier.SHEATHED); } };
+								return new RacialEffectUtil("Убирает лишнюю складку клиторальной капюшона.") { @Override public String applyEffect() { return target.removeClitorisModifier(PenetrationModifier.SHEATHED); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds extra clitoral hood sheathing.") { @Override public String applyEffect() { return target.addClitorisModifier(PenetrationModifier.SHEATHED); } };
+								return new RacialEffectUtil("Добавляет лишнюю складку клиторального капюшона.") { @Override public String applyEffect() { return target.addClitorisModifier(PenetrationModifier.SHEATHED); } };
 						}
 					case TF_MOD_PENIS_TAPERED:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes tapering from clitoris.") { @Override public String applyEffect() { return target.removeClitorisModifier(PenetrationModifier.TAPERED); } };
+								return new RacialEffectUtil("Убирает сужение клитора.") { @Override public String applyEffect() { return target.removeClitorisModifier(PenetrationModifier.TAPERED); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds tapering to clitoris.") { @Override public String applyEffect() { return target.addClitorisModifier(PenetrationModifier.TAPERED); } };
+								return new RacialEffectUtil("Добавляет сужение клитора.") { @Override public String applyEffect() { return target.addClitorisModifier(PenetrationModifier.TAPERED); } };
 						}
 					case TF_MOD_PENIS_TENTACLED:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes tentacles from clitoris.") { @Override public String applyEffect() { return target.removeClitorisModifier(PenetrationModifier.TENTACLED); } };
+								return new RacialEffectUtil("Убирает щупальца с клитора.") { @Override public String applyEffect() { return target.removeClitorisModifier(PenetrationModifier.TENTACLED); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds tentacles to clitoris.") { @Override public String applyEffect() { return target.addClitorisModifier(PenetrationModifier.TENTACLED); } };
+								return new RacialEffectUtil("Добавляет щупальца на клитор.") { @Override public String applyEffect() { return target.addClitorisModifier(PenetrationModifier.TENTACLED); } };
 						}
 					case TF_MOD_PENIS_VEINY:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes bulging veins from clitoris.") { @Override public String applyEffect() { return target.removeClitorisModifier(PenetrationModifier.VEINY); } };
+								return new RacialEffectUtil("Убирает вздутые вены на клиторе.") { @Override public String applyEffect() { return target.removeClitorisModifier(PenetrationModifier.VEINY); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds bulging veins to clitoris.") { @Override public String applyEffect() { return target.addClitorisModifier(PenetrationModifier.VEINY); } };
+								return new RacialEffectUtil("Добавляет вздутые вены на клитор.") { @Override public String applyEffect() { return target.addClitorisModifier(PenetrationModifier.VEINY); } };
 						}
 					case TF_MOD_PENIS_OVIPOSITOR:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes ovipositor functionality from clitoris.") { @Override public String applyEffect() { return target.removeClitorisModifier(PenetrationModifier.OVIPOSITOR); } };
+								return new RacialEffectUtil("Убирает функцию яйцеклада у клитора.") { @Override public String applyEffect() { return target.removeClitorisModifier(PenetrationModifier.OVIPOSITOR); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds ovipositor functionality to clitoris.") { @Override public String applyEffect() { return target.addClitorisModifier(PenetrationModifier.OVIPOSITOR); } };
+								return new RacialEffectUtil("Добавляет функцию яйцеклада клитору.") { @Override public String applyEffect() { return target.addClitorisModifier(PenetrationModifier.OVIPOSITOR); } };
 						}
 							
 					case TF_MOD_CAPACITY:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Vagina capacity (" + Units.size(mediumChangeMajorDrain) + ")") { @Override public String applyEffect() { return target.incrementVaginaCapacity(mediumChangeMajorDrain, true); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Вместимость влагалища (" + Units.size(mediumChangeMajorDrain) + ")") { @Override public String applyEffect() { return target.incrementVaginaCapacity(mediumChangeMajorDrain, true); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Vagina capacity (" + Units.size(mediumChangeDrain) + ")") { @Override public String applyEffect() { return target.incrementVaginaCapacity(mediumChangeDrain, true); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Вместимость влагалища (" + Units.size(mediumChangeDrain) + ")") { @Override public String applyEffect() { return target.incrementVaginaCapacity(mediumChangeDrain, true); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Vagina capacity (" + Units.size(mediumChangeMinorDrain) + ")") { @Override public String applyEffect() { return target.incrementVaginaCapacity(mediumChangeMinorDrain, true); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Вместимость влагалища (" + Units.size(mediumChangeMinorDrain) + ")") { @Override public String applyEffect() { return target.incrementVaginaCapacity(mediumChangeMinorDrain, true); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Vagina capacity (+" + Units.size(mediumChangeMinorBoost) + ")") { @Override public String applyEffect() { return target.incrementVaginaCapacity(mediumChangeMinorBoost, true); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Вместимость влагалища (+" + Units.size(mediumChangeMinorBoost) + ")") { @Override public String applyEffect() { return target.incrementVaginaCapacity(mediumChangeMinorBoost, true); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Vagina capacity (+" + Units.size(mediumChangeBoost) + ")") { @Override public String applyEffect() { return target.incrementVaginaCapacity(mediumChangeBoost, true); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Вместимость влагалища (+" + Units.size(mediumChangeBoost) + ")") { @Override public String applyEffect() { return target.incrementVaginaCapacity(mediumChangeBoost, true); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Vagina capacity (+" + Units.size(mediumChangeMajorBoost) + ")") { @Override public String applyEffect() { return target.incrementVaginaCapacity(mediumChangeMajorBoost, true); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Вместимость влагалища (+" + Units.size(mediumChangeMajorBoost) + ")") { @Override public String applyEffect() { return target.incrementVaginaCapacity(mediumChangeMajorBoost, true); } };
 						}
 					case TF_MOD_DEPTH:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Vagina depth (" + smallChangeMajorDrain + " depth)") { @Override public String applyEffect() { return target.incrementVaginaDepth(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Глубина влагалища (" + smallChangeMajorDrain + " глубина)") { @Override public String applyEffect() { return target.incrementVaginaDepth(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Vagina depth (" + smallChangeDrain + " depth)") { @Override public String applyEffect() { return target.incrementVaginaDepth(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Глубина влагалища (" + smallChangeDrain + " глубина)") { @Override public String applyEffect() { return target.incrementVaginaDepth(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Vagina depth (" + smallChangeMinorDrain + " depth)") { @Override public String applyEffect() { return target.incrementVaginaDepth(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Глубина влагалища (" + smallChangeMinorDrain + " глубина)") { @Override public String applyEffect() { return target.incrementVaginaDepth(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Vagina depth (+" + smallChangeMinorBoost + " depth)") { @Override public String applyEffect() { return target.incrementVaginaDepth(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Глубина влагалища (+" + smallChangeMinorBoost + " глубина)") { @Override public String applyEffect() { return target.incrementVaginaDepth(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Vagina depth (+" + smallChangeBoost + " depth)") { @Override public String applyEffect() { return target.incrementVaginaDepth(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Глубина влагалища (+" + smallChangeBoost + " глубина)") { @Override public String applyEffect() { return target.incrementVaginaDepth(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Vagina depth (+" + smallChangeMajorBoost + " depth)") { @Override public String applyEffect() { return target.incrementVaginaDepth(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Глубина влагалища (+" + smallChangeMajorBoost + " глубина)") { @Override public String applyEffect() { return target.incrementVaginaDepth(smallChangeMajorBoost); } };
 						}
 					case TF_MOD_ELASTICITY:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Vagina elasticity (" + smallChangeMajorDrain + " elasticity)") { @Override public String applyEffect() { return target.incrementVaginaElasticity(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Эластичность влагалища (" + smallChangeMajorDrain + " эластичность)") { @Override public String applyEffect() { return target.incrementVaginaElasticity(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Vagina elasticity (" + smallChangeDrain + " elasticity)") { @Override public String applyEffect() { return target.incrementVaginaElasticity(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Эластичность влагалища (" + smallChangeDrain + " эластичность)") { @Override public String applyEffect() { return target.incrementVaginaElasticity(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Vagina elasticity (" + smallChangeMinorDrain + " elasticity)") { @Override public String applyEffect() { return target.incrementVaginaElasticity(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Эластичность влагалища (" + smallChangeMinorDrain + " эластичность)") { @Override public String applyEffect() { return target.incrementVaginaElasticity(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Vagina elasticity (+" + smallChangeMinorBoost + " elasticity)") { @Override public String applyEffect() { return target.incrementVaginaElasticity(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Эластичность влагалища (+" + smallChangeMinorBoost + " эластичность)") { @Override public String applyEffect() { return target.incrementVaginaElasticity(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Vagina elasticity (+" + smallChangeBoost + " elasticity)") { @Override public String applyEffect() { return target.incrementVaginaElasticity(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Эластичность влагалища (+" + smallChangeBoost + " эластичность)") { @Override public String applyEffect() { return target.incrementVaginaElasticity(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Vagina elasticity (+" + smallChangeMajorBoost + " elasticity)") { @Override public String applyEffect() { return target.incrementVaginaElasticity(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Эластичность влагалища (+" + smallChangeMajorBoost + " эластичность)") { @Override public String applyEffect() { return target.incrementVaginaElasticity(smallChangeMajorBoost); } };
 						}
 					case TF_MOD_PLASTICITY:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Vagina plasticity (" + smallChangeMajorDrain + " plasticity)") { @Override public String applyEffect() { return target.incrementVaginaPlasticity(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Пластичность влагалища (" + smallChangeMajorDrain + " пластичность)") { @Override public String applyEffect() { return target.incrementVaginaPlasticity(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Vagina plasticity (" + smallChangeDrain + " plasticity)") { @Override public String applyEffect() { return target.incrementVaginaPlasticity(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Пластичность влагалища (" + smallChangeDrain + " пластичность)") { @Override public String applyEffect() { return target.incrementVaginaPlasticity(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Vagina plasticity (" + smallChangeMinorDrain + " plasticity)") { @Override public String applyEffect() { return target.incrementVaginaPlasticity(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Пластичность влагалища (" + smallChangeMinorDrain + " пластичность)") { @Override public String applyEffect() { return target.incrementVaginaPlasticity(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Vagina plasticity (+" + smallChangeMinorBoost + " plasticity)") { @Override public String applyEffect() { return target.incrementVaginaPlasticity(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Пластичность влагалища (+" + smallChangeMinorBoost + " пластичность)") { @Override public String applyEffect() { return target.incrementVaginaPlasticity(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Vagina plasticity (+" + smallChangeBoost + " plasticity)") { @Override public String applyEffect() { return target.incrementVaginaPlasticity(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Пластичность влагалища (+" + smallChangeBoost + " пластичность)") { @Override public String applyEffect() { return target.incrementVaginaPlasticity(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Vagina plasticity (+" + smallChangeMajorBoost + " plasticity)") { @Override public String applyEffect() { return target.incrementVaginaPlasticity(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Пластичность влагалища (+" + smallChangeMajorBoost + " пластичность)") { @Override public String applyEffect() { return target.incrementVaginaPlasticity(smallChangeMajorBoost); } };
 						}
 					case TF_MOD_WETNESS:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Vaginal lubrication (" + Units.fluid(smallChangeMajorDrain) + ")") { @Override public String applyEffect() { return target.incrementVaginaWetness(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Смазка влагалища (" + Units.fluid(smallChangeMajorDrain) + ")") { @Override public String applyEffect() { return target.incrementVaginaWetness(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Vaginal lubrication (" + Units.fluid(smallChangeDrain) + ")") { @Override public String applyEffect() { return target.incrementVaginaWetness(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Смазка влагалища (" + Units.fluid(smallChangeDrain) + ")") { @Override public String applyEffect() { return target.incrementVaginaWetness(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Vaginal lubrication (" + Units.fluid(smallChangeMinorDrain) + ")") { @Override public String applyEffect() { return target.incrementVaginaWetness(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Смазка влагалища (" + Units.fluid(smallChangeMinorDrain) + ")") { @Override public String applyEffect() { return target.incrementVaginaWetness(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Vaginal lubrication (+" + Units.fluid(smallChangeMinorBoost) + ")") { @Override public String applyEffect() { return target.incrementVaginaWetness(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Вагинальная смазка (+" + Units.fluid(smallChangeMinorBoost) + ")") { @Override public String applyEffect() { return target.incrementVaginaWetness(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Vaginal lubrication (+" + Units.fluid(smallChangeBoost) + ")") { @Override public String applyEffect() { return target.incrementVaginaWetness(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Вагинальная смазка (+" + Units.fluid(smallChangeBoost) + ")") { @Override public String applyEffect() { return target.incrementVaginaWetness(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Vaginal lubrication (+" + Units.fluid(smallChangeMajorBoost) + ")") { @Override public String applyEffect() { return target.incrementVaginaWetness(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Вагинальная смазка (+" + Units.fluid(smallChangeMajorBoost) + ")") { @Override public String applyEffect() { return target.incrementVaginaWetness(smallChangeMajorBoost); } };
 						}
 
 					case TF_MOD_VAGINA_SQUIRTER:
 						switch(potency) {
 							case MINOR_BOOST:
-								return new RacialEffectUtil("Makes vagina squirt on orgasm.") { @Override public String applyEffect() { return target.setVaginaSquirter(true); } };
+								return new RacialEffectUtil("Заставляет влагалище сквиртовать во время оргазма.") { @Override public String applyEffect() { return target.setVaginaSquirter(true); } };
 							case MINOR_DRAIN: default:
-								return new RacialEffectUtil("Stops vagina from squirting on orgasm.") { @Override public String applyEffect() { return target.setVaginaSquirter(false); } };
+								return new RacialEffectUtil("Предотвращает сквирт во время оргазма.") { @Override public String applyEffect() { return target.setVaginaSquirter(false); } };
 						}
 
 					case TF_MOD_VAGINA_EGG_LAYER:
 						switch(potency) {
 							case MINOR_BOOST:
-								return new RacialEffectUtil("Makes vagina lay eggs.") { @Override public String applyEffect() { return target.setVaginaEggLayer(true); } };
+								return new RacialEffectUtil("Заставляет влагалище откладывать яйца.") { @Override public String applyEffect() { return target.setVaginaEggLayer(true); } };
 							case MINOR_DRAIN: default:
-								return new RacialEffectUtil("Makes vagina birth live young.") { @Override public String applyEffect() { return target.setVaginaEggLayer(false); } };
+								return new RacialEffectUtil("Заставляет влагалище рожать живых детенышей.") { @Override public String applyEffect() { return target.setVaginaEggLayer(false); } };
 						}
 						
 					case TF_MOD_ORIFICE_PUFFY:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes puffiness from labia.") { @Override public String applyEffect() { return target.removeVaginaOrificeModifier(OrificeModifier.PUFFY); } };
+								return new RacialEffectUtil("Убирает припухлость с половых губ.") { @Override public String applyEffect() { return target.removeVaginaOrificeModifier(OrificeModifier.PUFFY); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Makes labia extra puffy.") { @Override public String applyEffect() { return target.addVaginaOrificeModifier(OrificeModifier.PUFFY); } };
+								return new RacialEffectUtil("Делает половые губы экстремально припухлыми.") { @Override public String applyEffect() { return target.addVaginaOrificeModifier(OrificeModifier.PUFFY); } };
 						}
 					case TF_MOD_ORIFICE_RIBBED:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes internal ribbing from vagina.") { @Override public String applyEffect() { return target.removeVaginaOrificeModifier(OrificeModifier.RIBBED); } };
+								return new RacialEffectUtil("Убирает внутренние ребра во влагалище.") { @Override public String applyEffect() { return target.removeVaginaOrificeModifier(OrificeModifier.RIBBED); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds internal ribbing to vagina.") { @Override public String applyEffect() { return target.addVaginaOrificeModifier(OrificeModifier.RIBBED); } };
+								return new RacialEffectUtil("Добавляет внутренние ребристые структуры во влагалище.") { @Override public String applyEffect() { return target.addVaginaOrificeModifier(OrificeModifier.RIBBED); } };
 						}
 					case TF_MOD_ORIFICE_MUSCLED:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes internal muscles from vagina.") { @Override public String applyEffect() { return target.removeVaginaOrificeModifier(OrificeModifier.MUSCLE_CONTROL); } };
+								return new RacialEffectUtil("Убирает внутренние мышцы из влагалища.") { @Override public String applyEffect() { return target.removeVaginaOrificeModifier(OrificeModifier.MUSCLE_CONTROL); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds internal muscles to vagina.") { @Override public String applyEffect() { return target.addVaginaOrificeModifier(OrificeModifier.MUSCLE_CONTROL); } };
+								return new RacialEffectUtil("Добавляет внутренние мышцы во влагалище.") { @Override public String applyEffect() { return target.addVaginaOrificeModifier(OrificeModifier.MUSCLE_CONTROL); } };
 						}
 					case TF_MOD_ORIFICE_TENTACLED:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes internal tentacles from vagina.") { @Override public String applyEffect() { return target.removeVaginaOrificeModifier(OrificeModifier.TENTACLED); } };
+								return new RacialEffectUtil("Убирает внутренние щупальца из влагалища.") { @Override public String applyEffect() { return target.removeVaginaOrificeModifier(OrificeModifier.TENTACLED); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds internal tentacles to vagina.") { @Override public String applyEffect() { return target.addVaginaOrificeModifier(OrificeModifier.TENTACLED); } };
+								return new RacialEffectUtil("Добавляет внутренние щупальца во влагалище.") { @Override public String applyEffect() { return target.addVaginaOrificeModifier(OrificeModifier.TENTACLED); } };
 						}
 						
 					// Urethral stuff:
 					case TF_MOD_CAPACITY_2:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Urethra capacity (" + Units.size(mediumChangeMajorDrain) + ")") { @Override public String applyEffect() { return target.incrementVaginaUrethraCapacity(mediumChangeMajorDrain, true); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Вместимость уретры (" + Units.size(mediumChangeMajorDrain) + ")") { @Override public String applyEffect() { return target.incrementVaginaUrethraCapacity(mediumChangeMajorDrain, true); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Urethra capacity (" + Units.size(mediumChangeDrain) + ")") { @Override public String applyEffect() { return target.incrementVaginaUrethraCapacity(mediumChangeDrain, true); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Вместимость уретры (" + Units.size(mediumChangeDrain) + ")") { @Override public String applyEffect() { return target.incrementVaginaUrethraCapacity(mediumChangeDrain, true); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Urethra capacity (" + Units.size(mediumChangeMinorDrain) + ")") { @Override public String applyEffect() { return target.incrementVaginaUrethraCapacity(mediumChangeMinorDrain, true); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Вместимость уретры (" + Units.size(mediumChangeMinorDrain) + ")") { @Override public String applyEffect() { return target.incrementVaginaUrethraCapacity(mediumChangeMinorDrain, true); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Urethra capacity (+" + Units.size(mediumChangeMinorBoost) + ")") { @Override public String applyEffect() { return target.incrementVaginaUrethraCapacity(mediumChangeMinorBoost, true); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Вместимость уретры (+" + Units.size(mediumChangeMinorBoost) + ")") { @Override public String applyEffect() { return target.incrementVaginaUrethraCapacity(mediumChangeMinorBoost, true); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Urethra capacity (+" + Units.size(mediumChangeBoost) + ")") { @Override public String applyEffect() { return target.incrementVaginaUrethraCapacity(mediumChangeBoost, true); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Вместимость уретры (+" + Units.size(mediumChangeBoost) + ")") { @Override public String applyEffect() { return target.incrementVaginaUrethraCapacity(mediumChangeBoost, true); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Urethra capacity (+" + Units.size(mediumChangeMajorBoost) + ")") { @Override public String applyEffect() { return target.incrementVaginaUrethraCapacity(mediumChangeMajorBoost, true); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Вместимость уретры (+" + Units.size(mediumChangeMajorBoost) + ")") { @Override public String applyEffect() { return target.incrementVaginaUrethraCapacity(mediumChangeMajorBoost, true); } };
 						}
 					case TF_MOD_DEPTH_2:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Urethra depth (" + smallChangeMajorDrain + " depth)") { @Override public String applyEffect() { return target.incrementVaginaUrethraDepth(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Глубина уретры (" + smallChangeMajorDrain + " глубина)") { @Override public String applyEffect() { return target.incrementVaginaUrethraDepth(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Urethra depth (" + smallChangeDrain + " depth)") { @Override public String applyEffect() { return target.incrementVaginaUrethraDepth(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Глубина уретры (" + smallChangeDrain + " глубина)") { @Override public String applyEffect() { return target.incrementVaginaUrethraDepth(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Urethra depth (" + smallChangeMinorDrain + " depth)") { @Override public String applyEffect() { return target.incrementVaginaUrethraDepth(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Глубина уретры (" + smallChangeMinorDrain + " глубина)") { @Override public String applyEffect() { return target.incrementVaginaUrethraDepth(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Urethra depth (+" + smallChangeMinorBoost + " depth)") { @Override public String applyEffect() { return target.incrementVaginaUrethraDepth(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Глубина уретры (+" + smallChangeMinorBoost + " глубина)") { @Override public String applyEffect() { return target.incrementVaginaUrethraDepth(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Urethra depth (+" + smallChangeBoost + " depth)") { @Override public String applyEffect() { return target.incrementVaginaUrethraDepth(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Глубина уретры (+" + smallChangeBoost + " глубина)") { @Override public String applyEffect() { return target.incrementVaginaUrethraDepth(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Urethra depth (+" + smallChangeMajorBoost + " depth)") { @Override public String applyEffect() { return target.incrementVaginaUrethraDepth(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Глубина уретры (+" + smallChangeMajorBoost + " глубина)") { @Override public String applyEffect() { return target.incrementVaginaUrethraDepth(smallChangeMajorBoost); } };
 						}
 					case TF_MOD_ELASTICITY_2:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Urethra elasticity (" + smallChangeMajorDrain + " elasticity)") { @Override public String applyEffect() { return target.incrementVaginaUrethraElasticity(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Эластичность уретры (" + smallChangeMajorDrain + " эластичность)") { @Override public String applyEffect() { return target.incrementVaginaUrethraElasticity(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Urethra elasticity (" + smallChangeDrain + " elasticity)") { @Override public String applyEffect() { return target.incrementVaginaUrethraElasticity(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Эластичность уретры (" + smallChangeDrain + " эластичность)") { @Override public String applyEffect() { return target.incrementVaginaUrethraElasticity(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Urethra elasticity (" + smallChangeMinorDrain + " elasticity)") { @Override public String applyEffect() { return target.incrementVaginaUrethraElasticity(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Эластичность уретры (" + smallChangeMinorDrain + " эластичность)") { @Override public String applyEffect() { return target.incrementVaginaUrethraElasticity(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Urethra elasticity (+" + smallChangeMinorBoost + " elasticity)") { @Override public String applyEffect() { return target.incrementVaginaUrethraElasticity(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Эластичность уретры (+" + smallChangeMinorBoost + " эластичность)") { @Override public String applyEffect() { return target.incrementVaginaUrethraElasticity(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Urethra elasticity (+" + smallChangeBoost + " elasticity)") { @Override public String applyEffect() { return target.incrementVaginaUrethraElasticity(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Эластичность уретры (+" + smallChangeBoost + " эластичность)") { @Override public String applyEffect() { return target.incrementVaginaUrethraElasticity(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Urethra elasticity (+" + smallChangeMajorBoost + " elasticity)") { @Override public String applyEffect() { return target.incrementVaginaUrethraElasticity(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Эластичность уретры (+" + smallChangeMajorBoost + " эластичность)") { @Override public String applyEffect() { return target.incrementVaginaUrethraElasticity(smallChangeMajorBoost); } };
 						}
 					case TF_MOD_PLASTICITY_2:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Urethra plasticity (" + smallChangeMajorDrain + " plasticity)") { @Override public String applyEffect() { return target.incrementVaginaUrethraPlasticity(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Пластичность уретры (" + smallChangeMajorDrain + " пластичность)") { @Override public String applyEffect() { return target.incrementVaginaUrethraPlasticity(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Urethra plasticity (" + smallChangeDrain + " plasticity)") { @Override public String applyEffect() { return target.incrementVaginaUrethraPlasticity(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Пластичность уретры (" + smallChangeDrain + " пластичность)") { @Override public String applyEffect() { return target.incrementVaginaUrethraPlasticity(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Urethra plasticity (" + smallChangeMinorDrain + " plasticity)") { @Override public String applyEffect() { return target.incrementVaginaUrethraPlasticity(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Пластичность уретры (" + smallChangeMinorDrain + " пластичность)") { @Override public String applyEffect() { return target.incrementVaginaUrethraPlasticity(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Urethra plasticity (+" + smallChangeMinorBoost + " plasticity)") { @Override public String applyEffect() { return target.incrementVaginaUrethraPlasticity(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Пластичность уретры (+" + smallChangeMinorBoost + " пластичность)") { @Override public String applyEffect() { return target.incrementVaginaUrethraPlasticity(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Urethra plasticity (+" + smallChangeBoost + " plasticity)") { @Override public String applyEffect() { return target.incrementVaginaUrethraPlasticity(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Пластичность уретры (+" + smallChangeBoost + " пластичность)") { @Override public String applyEffect() { return target.incrementVaginaUrethraPlasticity(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Urethra plasticity (+" + smallChangeMajorBoost + " plasticity)") { @Override public String applyEffect() { return target.incrementVaginaUrethraPlasticity(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Пластичность уретры (+" + smallChangeMajorBoost + " пластичность)") { @Override public String applyEffect() { return target.incrementVaginaUrethraPlasticity(smallChangeMajorBoost); } };
 						}
 						
 					case TF_MOD_ORIFICE_PUFFY_2:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes puffiness from urethra.") { @Override public String applyEffect() { return target.removeVaginaUrethraOrificeModifier(OrificeModifier.PUFFY); } };
+								return new RacialEffectUtil("Убирает припухлость уретры.") { @Override public String applyEffect() { return target.removeVaginaUrethraOrificeModifier(OrificeModifier.PUFFY); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Makes urethra extra puffy.") { @Override public String applyEffect() { return target.addVaginaUrethraOrificeModifier(OrificeModifier.PUFFY); } };
+								return new RacialEffectUtil("Делает уретру экстремально припухлой.") { @Override public String applyEffect() { return target.addVaginaUrethraOrificeModifier(OrificeModifier.PUFFY); } };
 						}
 					case TF_MOD_ORIFICE_RIBBED_2:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes internal ribbing from urethra.") { @Override public String applyEffect() { return target.removeVaginaUrethraOrificeModifier(OrificeModifier.RIBBED); } };
+								return new RacialEffectUtil("Убирает внутренние ребра уретры.") { @Override public String applyEffect() { return target.removeVaginaUrethraOrificeModifier(OrificeModifier.RIBBED); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds internal ribbing to urethra.") { @Override public String applyEffect() { return target.addVaginaUrethraOrificeModifier(OrificeModifier.RIBBED); } };
+								return new RacialEffectUtil("Добавляет внутренние ребра уретре.") { @Override public String applyEffect() { return target.addVaginaUrethraOrificeModifier(OrificeModifier.RIBBED); } };
 						}
 					case TF_MOD_ORIFICE_MUSCLED_2:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes internal muscles from urethra.") { @Override public String applyEffect() { return target.removeVaginaUrethraOrificeModifier(OrificeModifier.MUSCLE_CONTROL); } };
+								return new RacialEffectUtil("Убирает внутренние мышцы из уретры.") { @Override public String applyEffect() { return target.removeVaginaUrethraOrificeModifier(OrificeModifier.MUSCLE_CONTROL); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds internal muscles to urethra.") { @Override public String applyEffect() { return target.addVaginaUrethraOrificeModifier(OrificeModifier.MUSCLE_CONTROL); } };
+								return new RacialEffectUtil("Добавляет внутренние мышцы в уретру.") { @Override public String applyEffect() { return target.addVaginaUrethraOrificeModifier(OrificeModifier.MUSCLE_CONTROL); } };
 						}
 					case TF_MOD_ORIFICE_TENTACLED_2:
 						switch(potency) {
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("Removes internal tentacles from urethra.") { @Override public String applyEffect() { return target.removeVaginaUrethraOrificeModifier(OrificeModifier.TENTACLED); } };
+								return new RacialEffectUtil("Убирает внутренние щупальца из уретры.") { @Override public String applyEffect() { return target.removeVaginaUrethraOrificeModifier(OrificeModifier.TENTACLED); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("Adds internal tentacles to urethra.") { @Override public String applyEffect() { return target.addVaginaUrethraOrificeModifier(OrificeModifier.TENTACLED); } };
+								return new RacialEffectUtil("Добавляет внутренние щупальца в уретру.") { @Override public String applyEffect() { return target.addVaginaUrethraOrificeModifier(OrificeModifier.TENTACLED); } };
 						}
 
 					case TF_TYPE_1: case TF_TYPE_2: case TF_TYPE_3: case TF_TYPE_4: case TF_TYPE_5: case TF_TYPE_6: case TF_TYPE_7: case TF_TYPE_8: case TF_TYPE_9: case TF_TYPE_10:
 						int index = Math.min(VaginaType.getVaginaTypes(race).size()-1, modifierTypeToInt(secondaryModifier));
 						return new RacialEffectUtil(
 								VaginaType.getVaginaTypes(race).get(index)==VaginaType.NONE
-									?"Removes penis."
-									:Util.capitaliseSentence(VaginaType.getVaginaTypes(race).get(index).getTransformName())+" vagina transformation.") { @Override public String applyEffect() {
+									?"Удаляет член."
+									:Util.capitaliseSentence(VaginaType.getVaginaTypes(race).get(index).getTransformName())+" трансформация влагалища.") { @Override public String applyEffect() {
 								String tfText = target.setVaginaType(VaginaType.getVaginaTypes(race).get(index));
 								if(revealTransformedPart) {
 									user.setKnowsCharacterArea(CoverableArea.VAGINA, target, true);
@@ -5204,7 +5201,7 @@ public abstract class AbstractItemEffectType {
 							} };
 							
 					default:
-						return new RacialEffectUtil(Util.capitaliseSentence(race.getName(false))+" vagina transformation.") { @Override public String applyEffect() {
+						return new RacialEffectUtil(Util.capitaliseSentence(race.getName(false))+" трансформация влагалища.") { @Override public String applyEffect() {
 							String tfText = target.setVaginaType(RacialBody.valueOfRace(race).getVaginaType());
 							if(revealTransformedPart) {
 								user.setKnowsCharacterArea(CoverableArea.VAGINA, target, true);
@@ -5216,161 +5213,161 @@ public abstract class AbstractItemEffectType {
 			case TF_WINGS:
 				switch(secondaryModifier) {
 					case REMOVAL:
-						return new RacialEffectUtil("Removes wings.") { @Override public String applyEffect() { return target.setWingType(WingType.NONE); } };
+						return new RacialEffectUtil("Убирает крылья.") { @Override public String applyEffect() { return target.setWingType(WingType.NONE); } };
 
 					case TF_TYPE_1: case TF_TYPE_2: case TF_TYPE_3: case TF_TYPE_4: case TF_TYPE_5: case TF_TYPE_6: case TF_TYPE_7: case TF_TYPE_8: case TF_TYPE_9: case TF_TYPE_10:
 						int index = Math.min(WingType.getWingTypes(race).size()-1, modifierTypeToInt(secondaryModifier));
-						return new RacialEffectUtil(WingType.getWingTypes(race).get(index)==WingType.NONE?"Removes wings.":Util.capitaliseSentence(WingType.getWingTypes(race).get(index).getTransformName())+" wings transformation.") {
+						return new RacialEffectUtil(WingType.getWingTypes(race).get(index)==WingType.NONE?"Убирает крылья.":Util.capitaliseSentence(WingType.getWingTypes(race).get(index).getTransformName())+" трансформация крыльев.") {
 							@Override public String applyEffect() { return target.setWingType(WingType.getWingTypes(race).get(index)); } };
 							
 					case TF_MOD_SIZE:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Wing size (" + smallChangeMajorDrain + " wing size)") { @Override public String applyEffect() { return target.incrementWingSize(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Размер крыльев (" + smallChangeMajorDrain + " размер крыльев)") { @Override public String applyEffect() { return target.incrementWingSize(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Wing size (" + smallChangeDrain + " wing size)") { @Override public String applyEffect() { return target.incrementWingSize(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Размер крыльев (" + smallChangeDrain + " размер крыльев)") { @Override public String applyEffect() { return target.incrementWingSize(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Wing size (" + smallChangeMinorDrain + " wing size)") { @Override public String applyEffect() { return target.incrementWingSize(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Размер крыльев (" + smallChangeMinorDrain + " размер крыльев)") { @Override public String applyEffect() { return target.incrementWingSize(smallChangeMinorDrain); } };
 							case MINOR_BOOST: default:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Wing size (+" + smallChangeMinorBoost + " wing size)") { @Override public String applyEffect() { return target.incrementWingSize(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Размер крыльев (+" + smallChangeMinorBoost + " размер крыльев)") { @Override public String applyEffect() { return target.incrementWingSize(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Wing size (+" + smallChangeBoost + " wing size)") { @Override public String applyEffect() { return target.incrementWingSize(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Размер крыльев (+" + smallChangeBoost + " размер крыльев)") { @Override public String applyEffect() { return target.incrementWingSize(smallChangeBoost); } };
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Wing size (+" + smallChangeMajorBoost + " wing size)") { @Override public String applyEffect() { return target.incrementWingSize(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Размер крыльев (+" + smallChangeMajorBoost + " размер крыльев)") { @Override public String applyEffect() { return target.incrementWingSize(smallChangeMajorBoost); } };
 						}
 					default:
 						AbstractWingType wingType = RacialBody.valueOfRace(race).getRandomWingType(false);
-						return new RacialEffectUtil(wingType==WingType.NONE?"Removes wings.":Util.capitaliseSentence(race.getName(false))+" wings transformation.") {
+						return new RacialEffectUtil(wingType==WingType.NONE?"Убирает крылья.":Util.capitaliseSentence(race.getName(false))+" трансформация крыльев.") {
 							@Override public String applyEffect() { return target.setWingType(wingType); } };
 				}
 				
 			case TF_CUM:
 				switch(secondaryModifier) {
 					case TF_MOD_FLAVOUR_BEER:
-						return new RacialEffectUtil("Makes cum taste like beer.") { @Override public String applyEffect() { return target.setCumFlavour(FluidFlavour.BEER); } };
+						return new RacialEffectUtil("Придает сперме вкус пива.") { @Override public String applyEffect() { return target.setCumFlavour(FluidFlavour.BEER); } };
 					case TF_MOD_FLAVOUR_CHOCOLATE:
-						return new RacialEffectUtil("Makes cum taste like chocolate.") { @Override public String applyEffect() { return target.setCumFlavour(FluidFlavour.CHOCOLATE); } };
+						return new RacialEffectUtil("Придает сперме вкус шоколада.") { @Override public String applyEffect() { return target.setCumFlavour(FluidFlavour.CHOCOLATE); } };
 					case TF_MOD_FLAVOUR_CUM:
-						return new RacialEffectUtil("Makes cum taste like cum.") { @Override public String applyEffect() { return target.setCumFlavour(FluidFlavour.CUM); } };
+						return new RacialEffectUtil("Придает сперме вкус спермы.") { @Override public String applyEffect() { return target.setCumFlavour(FluidFlavour.CUM); } };
 					case TF_MOD_FLAVOUR_GIRLCUM:
-						return new RacialEffectUtil("Makes cum taste like girlcum.") { @Override public String applyEffect() { return target.setCumFlavour(FluidFlavour.GIRL_CUM); } };
+						return new RacialEffectUtil("Придает сперме вкус женских выделений.") { @Override public String applyEffect() { return target.setCumFlavour(FluidFlavour.GIRL_CUM); } };
 					case TF_MOD_FLAVOUR_MILK:
-						return new RacialEffectUtil("Makes cum taste like milk.") { @Override public String applyEffect() { return target.setCumFlavour(FluidFlavour.MILK); } };
+						return new RacialEffectUtil("Придает сперме вкус молока.") { @Override public String applyEffect() { return target.setCumFlavour(FluidFlavour.MILK); } };
 					case TF_MOD_FLAVOUR_FLAVOURLESS:
-						return new RacialEffectUtil("Makes cum have no flavour.") { @Override public String applyEffect() { return target.setCumFlavour(FluidFlavour.FLAVOURLESS); } };
+						return new RacialEffectUtil("Делает сперму безвкусной.") { @Override public String applyEffect() { return target.setCumFlavour(FluidFlavour.FLAVOURLESS); } };
 					case TF_MOD_FLAVOUR_HONEY:
-						return new RacialEffectUtil("Makes cum taste like honey.") { @Override public String applyEffect() { return target.setCumFlavour(FluidFlavour.HONEY); } };
+						return new RacialEffectUtil("Придает сперме вкус меда.") { @Override public String applyEffect() { return target.setCumFlavour(FluidFlavour.HONEY); } };
 					case TF_MOD_FLAVOUR_MINT:
-						return new RacialEffectUtil("Makes cum taste like mint.") { @Override public String applyEffect() { return target.setCumFlavour(FluidFlavour.MINT); } };
+						return new RacialEffectUtil("Придает сперме вкус мяты.") { @Override public String applyEffect() { return target.setCumFlavour(FluidFlavour.MINT); } };
 					case TF_MOD_FLAVOUR_CHERRY:
-						return new RacialEffectUtil("Makes cum taste like cherries.") { @Override public String applyEffect() { return target.setCumFlavour(FluidFlavour.CHERRY); } };
+						return new RacialEffectUtil("Придает сперме вкус вишни.") { @Override public String applyEffect() { return target.setCumFlavour(FluidFlavour.CHERRY); } };
 					case TF_MOD_FLAVOUR_PINEAPPLE:
-						return new RacialEffectUtil("Makes cum taste like pineapple.") { @Override public String applyEffect() { return target.setCumFlavour(FluidFlavour.PINEAPPLE); } };
+						return new RacialEffectUtil("Придает сперме вкус ананаса.") { @Override public String applyEffect() { return target.setCumFlavour(FluidFlavour.PINEAPPLE); } };
 					case TF_MOD_FLAVOUR_BUBBLEGUM:
-						return new RacialEffectUtil("Makes cum taste like bubblegum.") { @Override public String applyEffect() { return target.setCumFlavour(FluidFlavour.BUBBLEGUM); } };
+						return new RacialEffectUtil("Придает сперме вкус баблгама.") { @Override public String applyEffect() { return target.setCumFlavour(FluidFlavour.BUBBLEGUM); } };
 					case TF_MOD_FLAVOUR_STRAWBERRY:
-						return new RacialEffectUtil("Makes cum taste like strawberries.") { @Override public String applyEffect() { return target.setCumFlavour(FluidFlavour.STRAWBERRY); } };
+						return new RacialEffectUtil("Придает сперме вкус клубники.") { @Override public String applyEffect() { return target.setCumFlavour(FluidFlavour.STRAWBERRY); } };
 					case TF_MOD_FLAVOUR_VANILLA:
-						return new RacialEffectUtil("Makes cum taste like vanilla.") { @Override public String applyEffect() { return target.setCumFlavour(FluidFlavour.VANILLA); } };
+						return new RacialEffectUtil("Придает сперме вкус ванили.") { @Override public String applyEffect() { return target.setCumFlavour(FluidFlavour.VANILLA); } };
 					case TF_MOD_FLAVOUR_COFFEE:
-						return new RacialEffectUtil("Makes cum taste like coffee.") { @Override public String applyEffect() { return target.setCumFlavour(FluidFlavour.COFFEE); } };
+						return new RacialEffectUtil("Придает сперме вкус кофе.") { @Override public String applyEffect() { return target.setCumFlavour(FluidFlavour.COFFEE); } };
 					case TF_MOD_FLAVOUR_TEA:
-						return new RacialEffectUtil("Makes cum taste like tea.") { @Override public String applyEffect() { return target.setCumFlavour(FluidFlavour.TEA); } };
+						return new RacialEffectUtil("Придает сперме вкус чая.") { @Override public String applyEffect() { return target.setCumFlavour(FluidFlavour.TEA); } };
 					case TF_MOD_FLAVOUR_MAPLE:
-						return new RacialEffectUtil("Makes cum taste like maple.") { @Override public String applyEffect() { return target.setCumFlavour(FluidFlavour.MAPLE); } };
+						return new RacialEffectUtil("Придает сперме вкус кленового сиропа.") { @Override public String applyEffect() { return target.setCumFlavour(FluidFlavour.MAPLE); } };
 					case TF_MOD_FLAVOUR_CINNAMON:
-						return new RacialEffectUtil("Makes cum taste like cinnamon.") { @Override public String applyEffect() { return target.setCumFlavour(FluidFlavour.CINNAMON); } };
+						return new RacialEffectUtil("Придает сперме вкус корицы.") { @Override public String applyEffect() { return target.setCumFlavour(FluidFlavour.CINNAMON); } };
 					case TF_MOD_FLAVOUR_LEMON:
-						return new RacialEffectUtil("Makes cum taste like lemon.") { @Override public String applyEffect() { return target.setCumFlavour(FluidFlavour.LEMON); } };
+						return new RacialEffectUtil("Придает сперме вкус лимона.") { @Override public String applyEffect() { return target.setCumFlavour(FluidFlavour.LEMON); } };
 					case TF_MOD_FLAVOUR_ORANGE:
-						return new RacialEffectUtil("Makes cum taste like orange.") { @Override public String applyEffect() { return target.setCumFlavour(FluidFlavour.ORANGE); } };
+						return new RacialEffectUtil("Придает сперме вкус апельсина.") { @Override public String applyEffect() { return target.setCumFlavour(FluidFlavour.ORANGE); } };
 					case TF_MOD_FLAVOUR_GRAPE:
-						return new RacialEffectUtil("Makes cum taste like grape.") { @Override public String applyEffect() { return target.setCumFlavour(FluidFlavour.GRAPE); } };
+						return new RacialEffectUtil("Придает сперме вкус винограда.") { @Override public String applyEffect() { return target.setCumFlavour(FluidFlavour.GRAPE); } };
 					case TF_MOD_FLAVOUR_MELON:
-						return new RacialEffectUtil("Makes cum taste like melon.") { @Override public String applyEffect() { return target.setCumFlavour(FluidFlavour.MELON); } };
+						return new RacialEffectUtil("Придает сперме вкус дыни.") { @Override public String applyEffect() { return target.setCumFlavour(FluidFlavour.MELON); } };
 					case TF_MOD_FLAVOUR_COCONUT:
-						return new RacialEffectUtil("Makes cum taste like coconut.") { @Override public String applyEffect() { return target.setCumFlavour(FluidFlavour.COCONUT); } };
+						return new RacialEffectUtil("Придает сперме вкус кокоса.") { @Override public String applyEffect() { return target.setCumFlavour(FluidFlavour.COCONUT); } };
 					case TF_MOD_FLAVOUR_BLUEBERRY:
-						return new RacialEffectUtil("Makes cum taste like blueberries.") { @Override public String applyEffect() { return target.setCumFlavour(FluidFlavour.BLUEBERRY); } };
+						return new RacialEffectUtil("Придает сперме вкус черники.") { @Override public String applyEffect() { return target.setCumFlavour(FluidFlavour.BLUEBERRY); } };
 					case TF_MOD_FLAVOUR_BANANA:
-						return new RacialEffectUtil("Makes cum taste like bananas.") { @Override public String applyEffect() { return target.setCumFlavour(FluidFlavour.BANANA); } };
+						return new RacialEffectUtil("Придает сперме вкус банана.") { @Override public String applyEffect() { return target.setCumFlavour(FluidFlavour.BANANA); } };
 	
 					case TF_MOD_FLUID_ADDICTIVE:
 						if(potency == TFPotency.MINOR_DRAIN) {
-							return new RacialEffectUtil("Removes addictive effect from cum.") { @Override public String applyEffect() { return target.removeCumModifier(FluidModifier.ADDICTIVE); } };
+							return new RacialEffectUtil("Убирает эффект привыкания у спермы.") { @Override public String applyEffect() { return target.removeCumModifier(FluidModifier.ADDICTIVE); } };
 						} else {
-							return new RacialEffectUtil("Adds an addictive effect to cum.") { @Override public String applyEffect() { return target.addCumModifier(FluidModifier.ADDICTIVE); } };
+							return new RacialEffectUtil("Добавляет эффект привыкания к сперме.") { @Override public String applyEffect() { return target.addCumModifier(FluidModifier.ADDICTIVE); } };
 						}
 					case TF_MOD_FLUID_ALCOHOLIC:
 						if(potency == TFPotency.MINOR_DRAIN) {
-							return new RacialEffectUtil("Removes strongly alcoholic effect from cum.") { @Override public String applyEffect() { return target.removeCumModifier(FluidModifier.ALCOHOLIC); } };
+							return new RacialEffectUtil("Убирает эффект сильного содержания алкоголя из спермы.") { @Override public String applyEffect() { return target.removeCumModifier(FluidModifier.ALCOHOLIC); } };
 						} else {
-							return new RacialEffectUtil("Makes cum strongly alcoholic.") { @Override public String applyEffect() { return target.addCumModifier(FluidModifier.ALCOHOLIC); } };
+							return new RacialEffectUtil("Делает сперму сильно алкогольной.") { @Override public String applyEffect() { return target.addCumModifier(FluidModifier.ALCOHOLIC); } };
 						}
 					case TF_MOD_FLUID_ALCOHOLIC_WEAK:
 						if(potency == TFPotency.MINOR_DRAIN) {
-							return new RacialEffectUtil("Removes alcoholic effect from cum.") { @Override public String applyEffect() { return target.removeCumModifier(FluidModifier.ALCOHOLIC_WEAK); } };
+							return new RacialEffectUtil("Убирает эффект алкоголя из спермы.") { @Override public String applyEffect() { return target.removeCumModifier(FluidModifier.ALCOHOLIC_WEAK); } };
 						} else {
-							return new RacialEffectUtil("Makes cum alcoholic.") { @Override public String applyEffect() { return target.addCumModifier(FluidModifier.ALCOHOLIC_WEAK); } };
+							return new RacialEffectUtil("Делает сперму алкогольной.") { @Override public String applyEffect() { return target.addCumModifier(FluidModifier.ALCOHOLIC_WEAK); } };
 						}
 					case TF_MOD_FLUID_BUBBLING:
 						if(potency == TFPotency.MINOR_DRAIN) {
-							return new RacialEffectUtil("Removes bubbling effect from cum.") { @Override public String applyEffect() { return target.removeCumModifier(FluidModifier.BUBBLING); } };
+							return new RacialEffectUtil("Убирает эффект пузырьков из спермы.") { @Override public String applyEffect() { return target.removeCumModifier(FluidModifier.BUBBLING); } };
 						} else {
-							return new RacialEffectUtil("Makes cum fizzy and bubbly.") { @Override public String applyEffect() { return target.addCumModifier(FluidModifier.BUBBLING); } };
+							return new RacialEffectUtil("Делает сперму шипучей и пузырящейся.") { @Override public String applyEffect() { return target.addCumModifier(FluidModifier.BUBBLING); } };
 						}
 					case TF_MOD_FLUID_HALLUCINOGENIC:
 						if(potency == TFPotency.MINOR_DRAIN) {
-							return new RacialEffectUtil("Removes psychoactive effect from cum.") { @Override public String applyEffect() { return target.removeCumModifier(FluidModifier.HALLUCINOGENIC); } };
+							return new RacialEffectUtil("Убирает психоактивный эффект из спермы.") { @Override public String applyEffect() { return target.removeCumModifier(FluidModifier.HALLUCINOGENIC); } };
 						} else {
-							return new RacialEffectUtil("Adds a psychoactive effect to cum.") { @Override public String applyEffect() { return target.addCumModifier(FluidModifier.HALLUCINOGENIC); } };
+							return new RacialEffectUtil("Добавляет сперме психоактивный эффект.") { @Override public String applyEffect() { return target.addCumModifier(FluidModifier.HALLUCINOGENIC); } };
 						}
 					case TF_MOD_FLUID_MINERAL_OIL:
 						if(potency == TFPotency.MINOR_DRAIN) {
-							return new RacialEffectUtil("Removes mineral oil effect from cum.") { @Override public String applyEffect() { return target.removeCumModifier(FluidModifier.MINERAL_OIL); } };
+							return new RacialEffectUtil("Убирает эффект минерального масла из спермы.") { @Override public String applyEffect() { return target.removeCumModifier(FluidModifier.MINERAL_OIL); } };
 						} else {
-							return new RacialEffectUtil("Adds a mineral oil effect to cum.") { @Override public String applyEffect() { return target.addCumModifier(FluidModifier.MINERAL_OIL); } };
+							return new RacialEffectUtil("Добавляет сперме эффект минерального масла.") { @Override public String applyEffect() { return target.addCumModifier(FluidModifier.MINERAL_OIL); } };
 						}
 					case TF_MOD_FLUID_MUSKY:
 						if(potency == TFPotency.MINOR_DRAIN) {
-							return new RacialEffectUtil("Removes musky effect from cum.") { @Override public String applyEffect() { return target.removeCumModifier(FluidModifier.MUSKY); } };
+							return new RacialEffectUtil("Убирает мускусный эффект из спермы.") { @Override public String applyEffect() { return target.removeCumModifier(FluidModifier.MUSKY); } };
 						} else {
-							return new RacialEffectUtil("Makes cum give off a potent musk.") { @Override public String applyEffect() { return target.addCumModifier(FluidModifier.MUSKY); } };
+							return new RacialEffectUtil("Наделяет сперму сильным мускусным запахом.") { @Override public String applyEffect() { return target.addCumModifier(FluidModifier.MUSKY); } };
 						}
 					case TF_MOD_FLUID_SLIMY:
 						if(potency == TFPotency.MINOR_DRAIN) {
-							return new RacialEffectUtil("Removes slimy effect from cum.") { @Override public String applyEffect() { return target.removeCumModifier(FluidModifier.SLIMY); } };
+							return new RacialEffectUtil("Убирает эффект слизи из спермы.") { @Override public String applyEffect() { return target.removeCumModifier(FluidModifier.SLIMY); } };
 						} else {
-							return new RacialEffectUtil("Makes cum slimy.") { @Override public String applyEffect() { return target.addCumModifier(FluidModifier.SLIMY); } };
+							return new RacialEffectUtil("Делает сперму слизистой.") { @Override public String applyEffect() { return target.addCumModifier(FluidModifier.SLIMY); } };
 						}
 					case TF_MOD_FLUID_STICKY:
 						if(potency == TFPotency.MINOR_DRAIN) {
-							return new RacialEffectUtil("Removes sticky effect from cum.") { @Override public String applyEffect() { return target.removeCumModifier(FluidModifier.STICKY); } };
+							return new RacialEffectUtil("Убирает эффект липкости у спермы.") { @Override public String applyEffect() { return target.removeCumModifier(FluidModifier.STICKY); } };
 						} else {
-							return new RacialEffectUtil("Makes cum sticky.") { @Override public String applyEffect() { return target.addCumModifier(FluidModifier.STICKY); } };
+							return new RacialEffectUtil("Делает сперму липкой.") { @Override public String applyEffect() { return target.addCumModifier(FluidModifier.STICKY); } };
 						}
 					case TF_MOD_FLUID_VISCOUS:
 						if(potency == TFPotency.MINOR_DRAIN) {
-							return new RacialEffectUtil("Removes viscous effect from cum.") { @Override public String applyEffect() { return target.removeCumModifier(FluidModifier.VISCOUS); } };
+							return new RacialEffectUtil("Убирает эффект вязкости у спермы.") { @Override public String applyEffect() { return target.removeCumModifier(FluidModifier.VISCOUS); } };
 						} else {
-							return new RacialEffectUtil("Makes cum thick and viscous.") { @Override public String applyEffect() { return target.addCumModifier(FluidModifier.VISCOUS); } };
+							return new RacialEffectUtil("Делает сперму густой и вязкой.") { @Override public String applyEffect() { return target.addCumModifier(FluidModifier.VISCOUS); } };
 						}
 						
 					default:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Cum storage (" + Units.fluid(largeChangeMajorDrain) + ")") { @Override public String applyEffect() { return target.incrementPenisCumStorage(largeChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Вместимость спермы (" + Units.fluid(largeChangeMajorDrain) + ")") { @Override public String applyEffect() { return target.incrementPenisCumStorage(largeChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Cum storage (" + Units.fluid(largeChangeDrain) + ")") { @Override public String applyEffect() { return target.incrementPenisCumStorage(largeChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Вместимость спермы (" + Units.fluid(largeChangeDrain) + ")") { @Override public String applyEffect() { return target.incrementPenisCumStorage(largeChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Cum storage (" + Units.fluid(largeChangeMinorDrain) + ")") { @Override public String applyEffect() { return target.incrementPenisCumStorage(largeChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Вместимость спермы (" + Units.fluid(largeChangeMinorDrain) + ")") { @Override public String applyEffect() { return target.incrementPenisCumStorage(largeChangeMinorDrain); } };
 							case MINOR_BOOST:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Cum storage (+" + Units.fluid(largeChangeMinorBoost) + ")") { @Override public String applyEffect() { return target.incrementPenisCumStorage(largeChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Общий объем (+" + Units.fluid(largeChangeMinorBoost) + ")") { @Override public String applyEffect() { return target.incrementPenisCumStorage(largeChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Cum storage (+" + Units.fluid(largeChangeBoost) + ")") { @Override public String applyEffect() { return target.incrementPenisCumStorage(largeChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Общий объем (+" + Units.fluid(largeChangeBoost) + ")") { @Override public String applyEffect() { return target.incrementPenisCumStorage(largeChangeBoost); } };
 							case SPECIAL:
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Cum storage (+" + Units.fluid(largeChangeMajorBoost) + ")") { @Override public String applyEffect() { return target.incrementPenisCumStorage(largeChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Общий объем (+" + Units.fluid(largeChangeMajorBoost) + ")") { @Override public String applyEffect() { return target.incrementPenisCumStorage(largeChangeMajorBoost); } };
 						}
 				}
 				break;
@@ -5378,130 +5375,130 @@ public abstract class AbstractItemEffectType {
 			case TF_MILK:
 				switch(secondaryModifier) {
 					case TF_MOD_FLAVOUR_BEER:
-						return new RacialEffectUtil("Makes milk taste like beer.") { @Override public String applyEffect() { return target.setMilkFlavour(FluidFlavour.BEER); } };
+						return new RacialEffectUtil("Придает молоку вкус пива.") { @Override public String applyEffect() { return target.setMilkFlavour(FluidFlavour.BEER); } };
 					case TF_MOD_FLAVOUR_CHOCOLATE:
-						return new RacialEffectUtil("Makes milk taste like chocolate.") { @Override public String applyEffect() { return target.setMilkFlavour(FluidFlavour.CHOCOLATE); } };
+						return new RacialEffectUtil("Придает молоку вкус шоколада.") { @Override public String applyEffect() { return target.setMilkFlavour(FluidFlavour.CHOCOLATE); } };
 					case TF_MOD_FLAVOUR_CUM:
-						return new RacialEffectUtil("Makes milk taste like cum.") { @Override public String applyEffect() { return target.setMilkFlavour(FluidFlavour.CUM); } };
+						return new RacialEffectUtil("Придает молоку вкус спермы.") { @Override public String applyEffect() { return target.setMilkFlavour(FluidFlavour.CUM); } };
 					case TF_MOD_FLAVOUR_GIRLCUM:
-						return new RacialEffectUtil("Makes milk taste like girlcum.") { @Override public String applyEffect() { return target.setMilkFlavour(FluidFlavour.GIRL_CUM); } };
+						return new RacialEffectUtil("Придает молоку вкус женской спермы.") { @Override public String applyEffect() { return target.setMilkFlavour(FluidFlavour.GIRL_CUM); } };
 					case TF_MOD_FLAVOUR_MILK:
-						return new RacialEffectUtil("Makes milk taste like milk.") { @Override public String applyEffect() { return target.setMilkFlavour(FluidFlavour.MILK); } };
+						return new RacialEffectUtil("Придает молоку вкус молока.") { @Override public String applyEffect() { return target.setMilkFlavour(FluidFlavour.MILK); } };
 					case TF_MOD_FLAVOUR_FLAVOURLESS:
-						return new RacialEffectUtil("Makes milk have no flavour.") { @Override public String applyEffect() { return target.setMilkFlavour(FluidFlavour.FLAVOURLESS); } };
+						return new RacialEffectUtil("Делает молоко безвкусным.") { @Override public String applyEffect() { return target.setMilkFlavour(FluidFlavour.FLAVOURLESS); } };
 					case TF_MOD_FLAVOUR_HONEY:
-						return new RacialEffectUtil("Makes milk taste like honey.") { @Override public String applyEffect() { return target.setMilkFlavour(FluidFlavour.HONEY); } };
+						return new RacialEffectUtil("Придает молоку вкус меда.") { @Override public String applyEffect() { return target.setMilkFlavour(FluidFlavour.HONEY); } };
 					case TF_MOD_FLAVOUR_MINT:
-						return new RacialEffectUtil("Makes milk taste like mint.") { @Override public String applyEffect() { return target.setMilkFlavour(FluidFlavour.MINT); } };
+						return new RacialEffectUtil("Придает молоку вкус мяты.") { @Override public String applyEffect() { return target.setMilkFlavour(FluidFlavour.MINT); } };
 					case TF_MOD_FLAVOUR_CHERRY:
-						return new RacialEffectUtil("Makes milk taste like cherries.") { @Override public String applyEffect() { return target.setMilkFlavour(FluidFlavour.CHERRY); } };
+						return new RacialEffectUtil("Придает молоку вкус вишни.") { @Override public String applyEffect() { return target.setMilkFlavour(FluidFlavour.CHERRY); } };
 					case TF_MOD_FLAVOUR_PINEAPPLE:
-						return new RacialEffectUtil("Makes milk taste like pineapple.") { @Override public String applyEffect() { return target.setMilkFlavour(FluidFlavour.PINEAPPLE); } };
+						return new RacialEffectUtil("Придает молоку вкус ананаса.") { @Override public String applyEffect() { return target.setMilkFlavour(FluidFlavour.PINEAPPLE); } };
 					case TF_MOD_FLAVOUR_BUBBLEGUM:
-						return new RacialEffectUtil("Makes milk taste like bubblegum.") { @Override public String applyEffect() { return target.setMilkFlavour(FluidFlavour.BUBBLEGUM); } };
+						return new RacialEffectUtil("Придает молоку вкус баблгама.") { @Override public String applyEffect() { return target.setMilkFlavour(FluidFlavour.BUBBLEGUM); } };
 					case TF_MOD_FLAVOUR_STRAWBERRY:
-						return new RacialEffectUtil("Makes milk taste like strawberries.") { @Override public String applyEffect() { return target.setMilkFlavour(FluidFlavour.STRAWBERRY); } };
+						return new RacialEffectUtil("Придает молоку вкус клубники.") { @Override public String applyEffect() { return target.setMilkFlavour(FluidFlavour.STRAWBERRY); } };
 					case TF_MOD_FLAVOUR_VANILLA:
-						return new RacialEffectUtil("Makes milk taste like vanilla.") { @Override public String applyEffect() { return target.setMilkFlavour(FluidFlavour.VANILLA); } };
+						return new RacialEffectUtil("Придает молоку вкус ванили.") { @Override public String applyEffect() { return target.setMilkFlavour(FluidFlavour.VANILLA); } };
 					case TF_MOD_FLAVOUR_COFFEE:
-						return new RacialEffectUtil("Makes milk taste like coffee.") { @Override public String applyEffect() { return target.setMilkFlavour(FluidFlavour.COFFEE); } };
+						return new RacialEffectUtil("Придает молоку вкус кофе.") { @Override public String applyEffect() { return target.setMilkFlavour(FluidFlavour.COFFEE); } };
 					case TF_MOD_FLAVOUR_TEA:
-						return new RacialEffectUtil("Makes milk taste like tea.") { @Override public String applyEffect() { return target.setMilkFlavour(FluidFlavour.TEA); } };
+						return new RacialEffectUtil("Придает молоку вкус чая.") { @Override public String applyEffect() { return target.setMilkFlavour(FluidFlavour.TEA); } };
 					case TF_MOD_FLAVOUR_MAPLE:
-						return new RacialEffectUtil("Makes milk taste like maple.") { @Override public String applyEffect() { return target.setMilkFlavour(FluidFlavour.MAPLE); } };
+						return new RacialEffectUtil("Придает молоку вкус кленового сиропа.") { @Override public String applyEffect() { return target.setMilkFlavour(FluidFlavour.MAPLE); } };
 					case TF_MOD_FLAVOUR_CINNAMON:
-						return new RacialEffectUtil("Makes milk taste like cinnamon.") { @Override public String applyEffect() { return target.setMilkFlavour(FluidFlavour.CINNAMON); } };
+						return new RacialEffectUtil("Придает молоку вкус корицы.") { @Override public String applyEffect() { return target.setMilkFlavour(FluidFlavour.CINNAMON); } };
 					case TF_MOD_FLAVOUR_LEMON:
-						return new RacialEffectUtil("Makes milk taste like lemon.") { @Override public String applyEffect() { return target.setMilkFlavour(FluidFlavour.LEMON); } };
+						return new RacialEffectUtil("Придает молоку вкус лимона.") { @Override public String applyEffect() { return target.setMilkFlavour(FluidFlavour.LEMON); } };
 					case TF_MOD_FLAVOUR_ORANGE:
-						return new RacialEffectUtil("Makes milk taste like orange.") { @Override public String applyEffect() { return target.setMilkFlavour(FluidFlavour.ORANGE); } };
+						return new RacialEffectUtil("Придает молоку вкус апельсина.") { @Override public String applyEffect() { return target.setMilkFlavour(FluidFlavour.ORANGE); } };
 					case TF_MOD_FLAVOUR_GRAPE:
-						return new RacialEffectUtil("Makes milk taste like grape.") { @Override public String applyEffect() { return target.setMilkFlavour(FluidFlavour.GRAPE); } };
+						return new RacialEffectUtil("Придает молоку вкус винограда.") { @Override public String applyEffect() { return target.setMilkFlavour(FluidFlavour.GRAPE); } };
 					case TF_MOD_FLAVOUR_MELON:
-						return new RacialEffectUtil("Makes milk taste like melon.") { @Override public String applyEffect() { return target.setMilkFlavour(FluidFlavour.MELON); } };
+						return new RacialEffectUtil("Придает молоку вкус дыни.") { @Override public String applyEffect() { return target.setMilkFlavour(FluidFlavour.MELON); } };
 					case TF_MOD_FLAVOUR_COCONUT:
-						return new RacialEffectUtil("Makes milk taste like coconut.") { @Override public String applyEffect() { return target.setMilkFlavour(FluidFlavour.COCONUT); } };
+						return new RacialEffectUtil("Придает молоку вкус кокоса.") { @Override public String applyEffect() { return target.setMilkFlavour(FluidFlavour.COCONUT); } };
 					case TF_MOD_FLAVOUR_BLUEBERRY:
-						return new RacialEffectUtil("Makes milk taste like blueberries.") { @Override public String applyEffect() { return target.setMilkFlavour(FluidFlavour.BLUEBERRY); } };
+						return new RacialEffectUtil("Придает молоку вкус черники.") { @Override public String applyEffect() { return target.setMilkFlavour(FluidFlavour.BLUEBERRY); } };
 					case TF_MOD_FLAVOUR_BANANA:
-						return new RacialEffectUtil("Makes milk taste like bananas.") { @Override public String applyEffect() { return target.setMilkFlavour(FluidFlavour.BANANA); } };
+						return new RacialEffectUtil("Придает молоку вкус банана.") { @Override public String applyEffect() { return target.setMilkFlavour(FluidFlavour.BANANA); } };
 						
 					case TF_MOD_FLUID_ADDICTIVE:
 						if(potency == TFPotency.MINOR_DRAIN) {
-							return new RacialEffectUtil("Removes addictive effect from milk.") { @Override public String applyEffect() { return target.removeMilkModifier(FluidModifier.ADDICTIVE); } };
+							return new RacialEffectUtil("Убирает эффект привыкания у молока.") { @Override public String applyEffect() { return target.removeMilkModifier(FluidModifier.ADDICTIVE); } };
 						} else {
-							return new RacialEffectUtil("Adds an addictive effect to milk.") { @Override public String applyEffect() { return target.addMilkModifier(FluidModifier.ADDICTIVE); } };
+							return new RacialEffectUtil("Добавляет эффект привыкания к молоку.") { @Override public String applyEffect() { return target.addMilkModifier(FluidModifier.ADDICTIVE); } };
 						}
 					case TF_MOD_FLUID_ALCOHOLIC:
 						if(potency == TFPotency.MINOR_DRAIN) {
-							return new RacialEffectUtil("Removes strongly alcoholic effect from milk.") { @Override public String applyEffect() { return target.removeMilkModifier(FluidModifier.ALCOHOLIC); } };
+							return new RacialEffectUtil("Убирает эффект сильного содержания алкоголя из молока.") { @Override public String applyEffect() { return target.removeMilkModifier(FluidModifier.ALCOHOLIC); } };
 						} else {
-							return new RacialEffectUtil("Makes milk strongly alcoholic.") { @Override public String applyEffect() { return target.addMilkModifier(FluidModifier.ALCOHOLIC); } };
+							return new RacialEffectUtil("Делает молоко сильно алкогольным.") { @Override public String applyEffect() { return target.addMilkModifier(FluidModifier.ALCOHOLIC); } };
 						}
 					case TF_MOD_FLUID_ALCOHOLIC_WEAK:
 						if(potency == TFPotency.MINOR_DRAIN) {
-							return new RacialEffectUtil("Removes alcoholic effect from milk.") { @Override public String applyEffect() { return target.removeMilkModifier(FluidModifier.ALCOHOLIC_WEAK); } };
+							return new RacialEffectUtil("Убирает эффект алкоголя из молока.") { @Override public String applyEffect() { return target.removeMilkModifier(FluidModifier.ALCOHOLIC_WEAK); } };
 						} else {
-							return new RacialEffectUtil("Makes milk alcoholic.") { @Override public String applyEffect() { return target.addMilkModifier(FluidModifier.ALCOHOLIC_WEAK); } };
+							return new RacialEffectUtil("Делает молоко алкогольным.") { @Override public String applyEffect() { return target.addMilkModifier(FluidModifier.ALCOHOLIC_WEAK); } };
 						}
 					case TF_MOD_FLUID_BUBBLING:
 						if(potency == TFPotency.MINOR_DRAIN) {
-							return new RacialEffectUtil("Removes bubbling effect from milk.") { @Override public String applyEffect() { return target.removeMilkModifier(FluidModifier.BUBBLING); } };
+							return new RacialEffectUtil("Убирает эффект пузырьков из молока.") { @Override public String applyEffect() { return target.removeMilkModifier(FluidModifier.BUBBLING); } };
 						} else {
-							return new RacialEffectUtil("Makes milk fizzy and bubbly.") { @Override public String applyEffect() { return target.addMilkModifier(FluidModifier.BUBBLING); } };
+							return new RacialEffectUtil("Делает молоко шипучим и пузырящимся.") { @Override public String applyEffect() { return target.addMilkModifier(FluidModifier.BUBBLING); } };
 						}
 					case TF_MOD_FLUID_HALLUCINOGENIC:
 						if(potency == TFPotency.MINOR_DRAIN) {
-							return new RacialEffectUtil("Removes psychoactive effect from milk.") { @Override public String applyEffect() { return target.removeMilkModifier(FluidModifier.HALLUCINOGENIC); } };
+							return new RacialEffectUtil("Убирает психоактивный эффект из молока.") { @Override public String applyEffect() { return target.removeMilkModifier(FluidModifier.HALLUCINOGENIC); } };
 						} else {
-							return new RacialEffectUtil("Adds a psychoactive effect to milk.") { @Override public String applyEffect() { return target.addMilkModifier(FluidModifier.HALLUCINOGENIC); } };
+							return new RacialEffectUtil("Добавляет психоактивный эффект к молоку.") { @Override public String applyEffect() { return target.addMilkModifier(FluidModifier.HALLUCINOGENIC); } };
 						}
 					case TF_MOD_FLUID_MINERAL_OIL:
 						if(potency == TFPotency.MINOR_DRAIN) {
-							return new RacialEffectUtil("Removes mineral oil effect from milk.") { @Override public String applyEffect() { return target.removeMilkModifier(FluidModifier.MINERAL_OIL); } };
+							return new RacialEffectUtil("Убирает эффект минерального масла из молока.") { @Override public String applyEffect() { return target.removeMilkModifier(FluidModifier.MINERAL_OIL); } };
 						} else {
-							return new RacialEffectUtil("Adds a mineral oil effect to milk.") { @Override public String applyEffect() { return target.addMilkModifier(FluidModifier.MINERAL_OIL); } };
+							return new RacialEffectUtil("Добавляет эффект минерального масла к молоку.") { @Override public String applyEffect() { return target.addMilkModifier(FluidModifier.MINERAL_OIL); } };
 						}
 					case TF_MOD_FLUID_MUSKY:
 						if(potency == TFPotency.MINOR_DRAIN) {
-							return new RacialEffectUtil("Removes musky effect from milk.") { @Override public String applyEffect() { return target.removeMilkModifier(FluidModifier.MUSKY); } };
+							return new RacialEffectUtil("Убирает эффект мускуса из молока.") { @Override public String applyEffect() { return target.removeMilkModifier(FluidModifier.MUSKY); } };
 						} else {
-							return new RacialEffectUtil("Makes milk give off a potent musk.") { @Override public String applyEffect() { return target.addMilkModifier(FluidModifier.MUSKY); } };
+							return new RacialEffectUtil("Наделяет молоко сильным мускусным запахом.") { @Override public String applyEffect() { return target.addMilkModifier(FluidModifier.MUSKY); } };
 						}
 					case TF_MOD_FLUID_SLIMY:
 						if(potency == TFPotency.MINOR_DRAIN) {
-							return new RacialEffectUtil("Removes slimy effect from milk.") { @Override public String applyEffect() { return target.removeMilkModifier(FluidModifier.SLIMY); } };
+							return new RacialEffectUtil("Убирает эффект слизи из молока.") { @Override public String applyEffect() { return target.removeMilkModifier(FluidModifier.SLIMY); } };
 						} else {
-							return new RacialEffectUtil("Makes milk slimy.") { @Override public String applyEffect() { return target.addMilkModifier(FluidModifier.SLIMY); } };
+							return new RacialEffectUtil("Делает молоко слизистым.") { @Override public String applyEffect() { return target.addMilkModifier(FluidModifier.SLIMY); } };
 						}
 					case TF_MOD_FLUID_STICKY:
 						if(potency == TFPotency.MINOR_DRAIN) {
-							return new RacialEffectUtil("Removes sticky effect from milk.") { @Override public String applyEffect() { return target.removeMilkModifier(FluidModifier.STICKY); } };
+							return new RacialEffectUtil("Убирает эффект липкости из молока.") { @Override public String applyEffect() { return target.removeMilkModifier(FluidModifier.STICKY); } };
 						} else {
-							return new RacialEffectUtil("Makes milk sticky.") { @Override public String applyEffect() { return target.addMilkModifier(FluidModifier.STICKY); } };
+							return new RacialEffectUtil("Делает молоко липким.") { @Override public String applyEffect() { return target.addMilkModifier(FluidModifier.STICKY); } };
 						}
 					case TF_MOD_FLUID_VISCOUS:
 						if(potency == TFPotency.MINOR_DRAIN) {
-							return new RacialEffectUtil("Removes viscous effect from milk.") { @Override public String applyEffect() { return target.removeMilkModifier(FluidModifier.VISCOUS); } };
+							return new RacialEffectUtil("Убирает эффект вязкости из молока.") { @Override public String applyEffect() { return target.removeMilkModifier(FluidModifier.VISCOUS); } };
 						} else {
-							return new RacialEffectUtil("Makes milk thick and viscous.") { @Override public String applyEffect() { return target.addMilkModifier(FluidModifier.VISCOUS); } };
+							return new RacialEffectUtil("Делает молоко густым и вязким.") { @Override public String applyEffect() { return target.addMilkModifier(FluidModifier.VISCOUS); } };
 						}
 						
 					default:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Milk storage (" + Units.fluid(largeChangeMajorDrain) + ")") { @Override public String applyEffect() { return target.incrementBreastMilkStorage(largeChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Вместимость молока (" + Units.fluid(largeChangeMajorDrain) + ")") { @Override public String applyEffect() { return target.incrementBreastMilkStorage(largeChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Milk storage (" + Units.fluid(largeChangeDrain) + ")") { @Override public String applyEffect() { return target.incrementBreastMilkStorage(largeChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Запас молока (" + Units.fluid(largeChangeDrain) + ")") { @Override public String applyEffect() { return target.incrementBreastMilkStorage(largeChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Milk storage (" + Units.fluid(largeChangeMinorDrain) + ")") { @Override public String applyEffect() { return target.incrementBreastMilkStorage(largeChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Запас молока (" + Units.fluid(largeChangeMinorDrain) + ")") { @Override public String applyEffect() { return target.incrementBreastMilkStorage(largeChangeMinorDrain); } };
 							case MINOR_BOOST:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Milk storage (+" + Units.fluid(largeChangeMinorBoost) + ")") { @Override public String applyEffect() { return target.incrementBreastMilkStorage(largeChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Запас молока (+" + Units.fluid(largeChangeMinorBoost) + ")") { @Override public String applyEffect() { return target.incrementBreastMilkStorage(largeChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Milk storage (+" + Units.fluid(largeChangeBoost) + ")") { @Override public String applyEffect() { return target.incrementBreastMilkStorage(largeChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Запас молока (+" + Units.fluid(largeChangeBoost) + ")") { @Override public String applyEffect() { return target.incrementBreastMilkStorage(largeChangeBoost); } };
 							case SPECIAL:
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Milk storage (+" + Units.fluid(largeChangeMajorBoost) + ")") { @Override public String applyEffect() { return target.incrementBreastMilkStorage(largeChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Запас молока (+" + Units.fluid(largeChangeMajorBoost) + ")") { @Override public String applyEffect() { return target.incrementBreastMilkStorage(largeChangeMajorBoost); } };
 						}
 				}
 				break;
@@ -5509,130 +5506,130 @@ public abstract class AbstractItemEffectType {
 			case TF_MILK_CROTCH:
 				switch(secondaryModifier) {
 					case TF_MOD_FLAVOUR_BEER:
-						return new RacialEffectUtil("Makes udder-milk taste like beer.") { @Override public String applyEffect() { return target.setMilkCrotchFlavour(FluidFlavour.BEER); } };
+						return new RacialEffectUtil("Придает молоку из вымени вкус пива.") { @Override public String applyEffect() { return target.setMilkCrotchFlavour(FluidFlavour.BEER); } };
 					case TF_MOD_FLAVOUR_CHOCOLATE:
-						return new RacialEffectUtil("Makes udder-milk taste like chocolate.") { @Override public String applyEffect() { return target.setMilkCrotchFlavour(FluidFlavour.CHOCOLATE); } };
+						return new RacialEffectUtil("Придает вымени вкуса шоколада.") { @Override public String applyEffect() { return target.setMilkCrotchFlavour(FluidFlavour.CHOCOLATE); } };
 					case TF_MOD_FLAVOUR_CUM:
-						return new RacialEffectUtil("Makes udder-milk taste like cum.") { @Override public String applyEffect() { return target.setMilkCrotchFlavour(FluidFlavour.CUM); } };
+						return new RacialEffectUtil("Придает вымени вкус спермы.") { @Override public String applyEffect() { return target.setMilkCrotchFlavour(FluidFlavour.CUM); } };
 					case TF_MOD_FLAVOUR_GIRLCUM:
-						return new RacialEffectUtil("Makes udder-milk taste like girlcum.") { @Override public String applyEffect() { return target.setMilkCrotchFlavour(FluidFlavour.GIRL_CUM); } };
+						return new RacialEffectUtil("Придает вымени вкус женских соков.") { @Override public String applyEffect() { return target.setMilkCrotchFlavour(FluidFlavour.GIRL_CUM); } };
 					case TF_MOD_FLAVOUR_MILK:
-						return new RacialEffectUtil("Makes udder-milk taste like milk.") { @Override public String applyEffect() { return target.setMilkCrotchFlavour(FluidFlavour.MILK); } };
+						return new RacialEffectUtil("Придает вымени вкус молока.") { @Override public String applyEffect() { return target.setMilkCrotchFlavour(FluidFlavour.MILK); } };
 					case TF_MOD_FLAVOUR_FLAVOURLESS:
-						return new RacialEffectUtil("Makes udder-milk have no flavour.") { @Override public String applyEffect() { return target.setMilkCrotchFlavour(FluidFlavour.FLAVOURLESS); } };
+						return new RacialEffectUtil("Делает вымя безвкусным.") { @Override public String applyEffect() { return target.setMilkCrotchFlavour(FluidFlavour.FLAVOURLESS); } };
 					case TF_MOD_FLAVOUR_HONEY:
-						return new RacialEffectUtil("Makes udder-milk taste like honey.") { @Override public String applyEffect() { return target.setMilkCrotchFlavour(FluidFlavour.HONEY); } };
+						return new RacialEffectUtil("Придает вымени вкус меда.") { @Override public String applyEffect() { return target.setMilkCrotchFlavour(FluidFlavour.HONEY); } };
 					case TF_MOD_FLAVOUR_MINT:
-						return new RacialEffectUtil("Makes udder-milk taste like mint.") { @Override public String applyEffect() { return target.setMilkCrotchFlavour(FluidFlavour.MINT); } };
+						return new RacialEffectUtil("Придает вымени вкус мяты.") { @Override public String applyEffect() { return target.setMilkCrotchFlavour(FluidFlavour.MINT); } };
 					case TF_MOD_FLAVOUR_CHERRY:
-						return new RacialEffectUtil("Makes udder-milk taste like cherries.") { @Override public String applyEffect() { return target.setMilkCrotchFlavour(FluidFlavour.CHERRY); } };
+						return new RacialEffectUtil("Придает вымени вкус вишни.") { @Override public String applyEffect() { return target.setMilkCrotchFlavour(FluidFlavour.CHERRY); } };
 					case TF_MOD_FLAVOUR_PINEAPPLE:
-						return new RacialEffectUtil("Makes udder-milk taste like pineapple.") { @Override public String applyEffect() { return target.setMilkCrotchFlavour(FluidFlavour.PINEAPPLE); } };
+						return new RacialEffectUtil("Придает вымени вкус ананаса.") { @Override public String applyEffect() { return target.setMilkCrotchFlavour(FluidFlavour.PINEAPPLE); } };
 					case TF_MOD_FLAVOUR_BUBBLEGUM:
-						return new RacialEffectUtil("Makes udder-milk taste like bubblegum.") { @Override public String applyEffect() { return target.setMilkCrotchFlavour(FluidFlavour.BUBBLEGUM); } };
+						return new RacialEffectUtil("Придает вымени вкус жвачки.") { @Override public String applyEffect() { return target.setMilkCrotchFlavour(FluidFlavour.BUBBLEGUM); } };
 					case TF_MOD_FLAVOUR_STRAWBERRY:
-						return new RacialEffectUtil("Makes udder-milk taste like strawberries.") { @Override public String applyEffect() { return target.setMilkCrotchFlavour(FluidFlavour.STRAWBERRY); } };
+						return new RacialEffectUtil("Придает вымени вкус клубники.") { @Override public String applyEffect() { return target.setMilkCrotchFlavour(FluidFlavour.STRAWBERRY); } };
 					case TF_MOD_FLAVOUR_VANILLA:
-						return new RacialEffectUtil("Makes udder-milk taste like vanilla.") { @Override public String applyEffect() { return target.setMilkCrotchFlavour(FluidFlavour.VANILLA); } };
+						return new RacialEffectUtil("Придает вымени вкус ванили.") { @Override public String applyEffect() { return target.setMilkCrotchFlavour(FluidFlavour.VANILLA); } };
 					case TF_MOD_FLAVOUR_COFFEE:
-						return new RacialEffectUtil("Makes udder-milk taste like coffee.") { @Override public String applyEffect() { return target.setMilkCrotchFlavour(FluidFlavour.COFFEE); } };
+						return new RacialEffectUtil("Придает вымени вкус кофе.") { @Override public String applyEffect() { return target.setMilkCrotchFlavour(FluidFlavour.COFFEE); } };
 					case TF_MOD_FLAVOUR_TEA:
-						return new RacialEffectUtil("Makes udder-milk taste like tea.") { @Override public String applyEffect() { return target.setMilkCrotchFlavour(FluidFlavour.TEA); } };
+						return new RacialEffectUtil("Придает вымени вкус чая.") { @Override public String applyEffect() { return target.setMilkCrotchFlavour(FluidFlavour.TEA); } };
 					case TF_MOD_FLAVOUR_MAPLE:
-						return new RacialEffectUtil("Makes udder-milk taste like maple.") { @Override public String applyEffect() { return target.setMilkCrotchFlavour(FluidFlavour.MAPLE); } };
+						return new RacialEffectUtil("Придает вымени вкус кленового сиропа.") { @Override public String applyEffect() { return target.setMilkCrotchFlavour(FluidFlavour.MAPLE); } };
 					case TF_MOD_FLAVOUR_CINNAMON:
-						return new RacialEffectUtil("Makes udder-milk taste like cinnamon.") { @Override public String applyEffect() { return target.setMilkCrotchFlavour(FluidFlavour.CINNAMON); } };
+						return new RacialEffectUtil("Придает вымени вкус корицы.") { @Override public String applyEffect() { return target.setMilkCrotchFlavour(FluidFlavour.CINNAMON); } };
 					case TF_MOD_FLAVOUR_LEMON:
-						return new RacialEffectUtil("Makes udder-milk taste like lemon.") { @Override public String applyEffect() { return target.setMilkCrotchFlavour(FluidFlavour.LEMON); } };
+						return new RacialEffectUtil("Придает вымени вкус лимона.") { @Override public String applyEffect() { return target.setMilkCrotchFlavour(FluidFlavour.LEMON); } };
 					case TF_MOD_FLAVOUR_ORANGE:
-						return new RacialEffectUtil("Makes udder-milk taste like orange.") { @Override public String applyEffect() { return target.setMilkCrotchFlavour(FluidFlavour.ORANGE); } };
+						return new RacialEffectUtil("Придает вымени вкус апельсина.") { @Override public String applyEffect() { return target.setMilkCrotchFlavour(FluidFlavour.ORANGE); } };
 					case TF_MOD_FLAVOUR_GRAPE:
-						return new RacialEffectUtil("Makes udder-milk taste like grape.") { @Override public String applyEffect() { return target.setMilkCrotchFlavour(FluidFlavour.GRAPE); } };
+						return new RacialEffectUtil("Придает вымени вкус винограда.") { @Override public String applyEffect() { return target.setMilkCrotchFlavour(FluidFlavour.GRAPE); } };
 					case TF_MOD_FLAVOUR_MELON:
-						return new RacialEffectUtil("Makes udder-milk taste like melon.") { @Override public String applyEffect() { return target.setMilkCrotchFlavour(FluidFlavour.MELON); } };
+						return new RacialEffectUtil("Придает вымени вкус дыни.") { @Override public String applyEffect() { return target.setMilkCrotchFlavour(FluidFlavour.MELON); } };
 					case TF_MOD_FLAVOUR_COCONUT:
-						return new RacialEffectUtil("Makes udder-milk taste like coconut.") { @Override public String applyEffect() { return target.setMilkCrotchFlavour(FluidFlavour.COCONUT); } };
+						return new RacialEffectUtil("Придает вымени молоку вкус кокоса.") { @Override public String applyEffect() { return target.setMilkCrotchFlavour(FluidFlavour.COCONUT); } };
 					case TF_MOD_FLAVOUR_BLUEBERRY:
-						return new RacialEffectUtil("Makes udder-milk taste like blueberries.") { @Override public String applyEffect() { return target.setMilkCrotchFlavour(FluidFlavour.BLUEBERRY); } };
+						return new RacialEffectUtil("Придает вымени молоку вкус черники.") { @Override public String applyEffect() { return target.setMilkCrotchFlavour(FluidFlavour.BLUEBERRY); } };
 					case TF_MOD_FLAVOUR_BANANA:
-						return new RacialEffectUtil("Makes udder-milk taste like bananas.") { @Override public String applyEffect() { return target.setMilkCrotchFlavour(FluidFlavour.BANANA); } };
+						return new RacialEffectUtil("Придает вымени молоку вкус банана.") { @Override public String applyEffect() { return target.setMilkCrotchFlavour(FluidFlavour.BANANA); } };
 	
 					case TF_MOD_FLUID_ADDICTIVE:
 						if(potency == TFPotency.MINOR_DRAIN) {
-							return new RacialEffectUtil("Removes addictive effect from udder-milk.") { @Override public String applyEffect() { return target.removeMilkCrotchModifier(FluidModifier.ADDICTIVE); } };
+							return new RacialEffectUtil("Убирает вызывающий привыкание эффект у вымени молока.") { @Override public String applyEffect() { return target.removeMilkCrotchModifier(FluidModifier.ADDICTIVE); } };
 						} else {
-							return new RacialEffectUtil("Adds an addictive effect to udder-milk.") { @Override public String applyEffect() { return target.addMilkCrotchModifier(FluidModifier.ADDICTIVE); } };
+							return new RacialEffectUtil("Добавляет вызывающий привыкание эффект вымени молоку.") { @Override public String applyEffect() { return target.addMilkCrotchModifier(FluidModifier.ADDICTIVE); } };
 						}
 					case TF_MOD_FLUID_ALCOHOLIC:
 						if(potency == TFPotency.MINOR_DRAIN) {
-							return new RacialEffectUtil("Removes strongly alcoholic effect from udder-milk.") { @Override public String applyEffect() { return target.removeMilkCrotchModifier(FluidModifier.ALCOHOLIC); } };
+							return new RacialEffectUtil("Убирает эффект сильного содержания алкоголя из вымени молока.") { @Override public String applyEffect() { return target.removeMilkCrotchModifier(FluidModifier.ALCOHOLIC); } };
 						} else {
-							return new RacialEffectUtil("Makes udder-milk strongly alcoholic.") { @Override public String applyEffect() { return target.addMilkCrotchModifier(FluidModifier.ALCOHOLIC); } };
+							return new RacialEffectUtil("Делает вымя молоко сильно алкогольным.") { @Override public String applyEffect() { return target.addMilkCrotchModifier(FluidModifier.ALCOHOLIC); } };
 						}
 					case TF_MOD_FLUID_ALCOHOLIC_WEAK:
 						if(potency == TFPotency.MINOR_DRAIN) {
-							return new RacialEffectUtil("Removes alcoholic effect from udder-milk.") { @Override public String applyEffect() { return target.removeMilkCrotchModifier(FluidModifier.ALCOHOLIC_WEAK); } };
+							return new RacialEffectUtil("Убирает эффект алкоголя из вымени молока.") { @Override public String applyEffect() { return target.removeMilkCrotchModifier(FluidModifier.ALCOHOLIC_WEAK); } };
 						} else {
-							return new RacialEffectUtil("Makes udder-milk alcoholic.") { @Override public String applyEffect() { return target.addMilkCrotchModifier(FluidModifier.ALCOHOLIC_WEAK); } };
+							return new RacialEffectUtil("Делает вымя молоко алкогольным.") { @Override public String applyEffect() { return target.addMilkCrotchModifier(FluidModifier.ALCOHOLIC_WEAK); } };
 						}
 					case TF_MOD_FLUID_BUBBLING:
 						if(potency == TFPotency.MINOR_DRAIN) {
-							return new RacialEffectUtil("Removes bubbling effect from udder-milk.") { @Override public String applyEffect() { return target.removeMilkCrotchModifier(FluidModifier.BUBBLING); } };
+							return new RacialEffectUtil("Убирает эффект пузырьков из вымени молока.") { @Override public String applyEffect() { return target.removeMilkCrotchModifier(FluidModifier.BUBBLING); } };
 						} else {
-							return new RacialEffectUtil("Makes udder-milk fizzy and bubbly.") { @Override public String applyEffect() { return target.addMilkCrotchModifier(FluidModifier.BUBBLING); } };
+							return new RacialEffectUtil("Делает выменное молоко шипучим и пузырящимся.") { @Override public String applyEffect() { return target.addMilkCrotchModifier(FluidModifier.BUBBLING); } };
 						}
 					case TF_MOD_FLUID_HALLUCINOGENIC:
 						if(potency == TFPotency.MINOR_DRAIN) {
-							return new RacialEffectUtil("Removes psychoactive effect from udder-milk.") { @Override public String applyEffect() { return target.removeMilkCrotchModifier(FluidModifier.HALLUCINOGENIC); } };
+							return new RacialEffectUtil("Убирает психоактивный эффект из выменного молока.") { @Override public String applyEffect() { return target.removeMilkCrotchModifier(FluidModifier.HALLUCINOGENIC); } };
 						} else {
-							return new RacialEffectUtil("Adds a psychoactive effect to udder-milk.") { @Override public String applyEffect() { return target.addMilkCrotchModifier(FluidModifier.HALLUCINOGENIC); } };
+							return new RacialEffectUtil("Добавляет психоактивный эффект в выменное молоко.") { @Override public String applyEffect() { return target.addMilkCrotchModifier(FluidModifier.HALLUCINOGENIC); } };
 						}
 					case TF_MOD_FLUID_MINERAL_OIL:
 						if(potency == TFPotency.MINOR_DRAIN) {
-							return new RacialEffectUtil("Removes mineral oil effect from udder-milk.") { @Override public String applyEffect() { return target.removeMilkCrotchModifier(FluidModifier.MINERAL_OIL); } };
+							return new RacialEffectUtil("Убирает эффект минерального масла из выменного молока.") { @Override public String applyEffect() { return target.removeMilkCrotchModifier(FluidModifier.MINERAL_OIL); } };
 						} else {
-							return new RacialEffectUtil("Adds a mineral oil effect to udder-milk.") { @Override public String applyEffect() { return target.addMilkCrotchModifier(FluidModifier.MINERAL_OIL); } };
+							return new RacialEffectUtil("Добавляет эффект минерального масла в выменное молоко.") { @Override public String applyEffect() { return target.addMilkCrotchModifier(FluidModifier.MINERAL_OIL); } };
 						}
 					case TF_MOD_FLUID_MUSKY:
 						if(potency == TFPotency.MINOR_DRAIN) {
-							return new RacialEffectUtil("Removes musky effect from udder-milk.") { @Override public String applyEffect() { return target.removeMilkCrotchModifier(FluidModifier.MUSKY); } };
+							return new RacialEffectUtil("Убирает мускусный эффект из выменного молока.") { @Override public String applyEffect() { return target.removeMilkCrotchModifier(FluidModifier.MUSKY); } };
 						} else {
-							return new RacialEffectUtil("Makes udder-milk give off a potent musk.") { @Override public String applyEffect() { return target.addMilkCrotchModifier(FluidModifier.MUSKY); } };
+							return new RacialEffectUtil("Наделяет выменное молоко сильным мускусным запахом.") { @Override public String applyEffect() { return target.addMilkCrotchModifier(FluidModifier.MUSKY); } };
 						}
 					case TF_MOD_FLUID_SLIMY:
 						if(potency == TFPotency.MINOR_DRAIN) {
-							return new RacialEffectUtil("Removes slimy effect from udder-milk.") { @Override public String applyEffect() { return target.removeMilkCrotchModifier(FluidModifier.SLIMY); } };
+							return new RacialEffectUtil("Убирает эффект слизистости из выменного молока.") { @Override public String applyEffect() { return target.removeMilkCrotchModifier(FluidModifier.SLIMY); } };
 						} else {
-							return new RacialEffectUtil("Makes udder-milk slimy.") { @Override public String applyEffect() { return target.addMilkCrotchModifier(FluidModifier.SLIMY); } };
+							return new RacialEffectUtil("Делает выменное молоко слизистым.") { @Override public String applyEffect() { return target.addMilkCrotchModifier(FluidModifier.SLIMY); } };
 						}
 					case TF_MOD_FLUID_STICKY:
 						if(potency == TFPotency.MINOR_DRAIN) {
-							return new RacialEffectUtil("Removes sticky effect from udder-milk.") { @Override public String applyEffect() { return target.removeMilkCrotchModifier(FluidModifier.STICKY); } };
+							return new RacialEffectUtil("Убирает эффект липкости из выменного молока.") { @Override public String applyEffect() { return target.removeMilkCrotchModifier(FluidModifier.STICKY); } };
 						} else {
-							return new RacialEffectUtil("Makes udder-milk sticky.") { @Override public String applyEffect() { return target.addMilkCrotchModifier(FluidModifier.STICKY); } };
+							return new RacialEffectUtil("Делает выменное молоко липким.") { @Override public String applyEffect() { return target.addMilkCrotchModifier(FluidModifier.STICKY); } };
 						}
 					case TF_MOD_FLUID_VISCOUS:
 						if(potency == TFPotency.MINOR_DRAIN) {
-							return new RacialEffectUtil("Removes viscous effect from udder-milk.") { @Override public String applyEffect() { return target.removeMilkCrotchModifier(FluidModifier.VISCOUS); } };
+							return new RacialEffectUtil("Убирает эффект вязкости у выменного молока.") { @Override public String applyEffect() { return target.removeMilkCrotchModifier(FluidModifier.VISCOUS); } };
 						} else {
-							return new RacialEffectUtil("Makes udder-milk thick and viscous.") { @Override public String applyEffect() { return target.addMilkCrotchModifier(FluidModifier.VISCOUS); } };
+							return new RacialEffectUtil("Делает выменное молоко густым и вязким.") { @Override public String applyEffect() { return target.addMilkCrotchModifier(FluidModifier.VISCOUS); } };
 						}
 						
 					default:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Udder-milk storage (" + Units.fluid(largeChangeMajorDrain) + ")") { @Override public String applyEffect() { return target.incrementBreastCrotchMilkStorage(largeChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Запас выменного молока (" + Units.fluid(largeChangeMajorDrain) + ")") { @Override public String applyEffect() { return target.incrementBreastCrotchMilkStorage(largeChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Udder-milk storage (" + Units.fluid(largeChangeDrain) + ")") { @Override public String applyEffect() { return target.incrementBreastCrotchMilkStorage(largeChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Запас выменного молока (" + Units.fluid(largeChangeDrain) + ")") { @Override public String applyEffect() { return target.incrementBreastCrotchMilkStorage(largeChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Udder-milk storage (" + Units.fluid(largeChangeMinorDrain) + ")") { @Override public String applyEffect() { return target.incrementBreastCrotchMilkStorage(largeChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Запас выменного молока (" + Units.fluid(largeChangeMinorDrain) + ")") { @Override public String applyEffect() { return target.incrementBreastCrotchMilkStorage(largeChangeMinorDrain); } };
 							case MINOR_BOOST:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Udder-milk storage (" + Units.fluid(largeChangeMinorBoost) + ")") { @Override public String applyEffect() { return target.incrementBreastCrotchMilkStorage(largeChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Запас выменного молока (" + Units.fluid(largeChangeMinorBoost) + ")") { @Override public String applyEffect() { return target.incrementBreastCrotchMilkStorage(largeChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Udder-milk storage (" + Units.fluid(largeChangeBoost) + ")") { @Override public String applyEffect() { return target.incrementBreastCrotchMilkStorage(largeChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Запас выменного молока (" + Units.fluid(largeChangeBoost) + ")") { @Override public String applyEffect() { return target.incrementBreastCrotchMilkStorage(largeChangeBoost); } };
 							case SPECIAL:
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Udder-milk storage (" + Units.fluid(largeChangeMajorBoost) + ")") { @Override public String applyEffect() { return target.incrementBreastCrotchMilkStorage(largeChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Запас выменного молока (" + Units.fluid(largeChangeMajorBoost) + ")") { @Override public String applyEffect() { return target.incrementBreastCrotchMilkStorage(largeChangeMajorBoost); } };
 						}
 				}
 				break;
@@ -5640,130 +5637,130 @@ public abstract class AbstractItemEffectType {
 			case TF_GIRLCUM:
 				switch(secondaryModifier) {
 					case TF_MOD_FLAVOUR_BEER:
-						return new RacialEffectUtil("Makes girlcum taste like beer.") { @Override public String applyEffect() { return target.setGirlcumFlavour(FluidFlavour.BEER); } };
+						return new RacialEffectUtil("Придает девичьей кончить вкус пива.") { @Override public String applyEffect() { return target.setGirlcumFlavour(FluidFlavour.BEER); } };
 					case TF_MOD_FLAVOUR_CHOCOLATE:
-						return new RacialEffectUtil("Makes girlcum taste like chocolate.") { @Override public String applyEffect() { return target.setGirlcumFlavour(FluidFlavour.CHOCOLATE); } };
+						return new RacialEffectUtil("Придает девичьей смазке вкус шоколада.") { @Override public String applyEffect() { return target.setGirlcumFlavour(FluidFlavour.CHOCOLATE); } };
 					case TF_MOD_FLAVOUR_CUM:
-						return new RacialEffectUtil("Makes girlcum taste like cum.") { @Override public String applyEffect() { return target.setGirlcumFlavour(FluidFlavour.CUM); } };
+						return new RacialEffectUtil("Придает девичьей смазке вкус спермы.") { @Override public String applyEffect() { return target.setGirlcumFlavour(FluidFlavour.CUM); } };
 					case TF_MOD_FLAVOUR_GIRLCUM:
-						return new RacialEffectUtil("Makes girlcum taste like girlcum.") { @Override public String applyEffect() { return target.setGirlcumFlavour(FluidFlavour.GIRL_CUM); } };
+						return new RacialEffectUtil("Придает девичьей смазке вкус девичьей смазки.") { @Override public String applyEffect() { return target.setGirlcumFlavour(FluidFlavour.GIRL_CUM); } };
 					case TF_MOD_FLAVOUR_MILK:
-						return new RacialEffectUtil("Makes girlcum taste like milk.") { @Override public String applyEffect() { return target.setGirlcumFlavour(FluidFlavour.MILK); } };
+						return new RacialEffectUtil("Придает девичьей смазке вкус молока.") { @Override public String applyEffect() { return target.setGirlcumFlavour(FluidFlavour.MILK); } };
 					case TF_MOD_FLAVOUR_FLAVOURLESS:
-						return new RacialEffectUtil("Makes girlcum have no flavour.") { @Override public String applyEffect() { return target.setGirlcumFlavour(FluidFlavour.FLAVOURLESS); } };
+						return new RacialEffectUtil("Девичья смазка становится безвкусной.") { @Override public String applyEffect() { return target.setGirlcumFlavour(FluidFlavour.FLAVOURLESS); } };
 					case TF_MOD_FLAVOUR_HONEY:
-						return new RacialEffectUtil("Makes girlcum taste like honey.") { @Override public String applyEffect() { return target.setGirlcumFlavour(FluidFlavour.HONEY); } };
+						return new RacialEffectUtil("Придает девичьей смазке вкус меда.") { @Override public String applyEffect() { return target.setGirlcumFlavour(FluidFlavour.HONEY); } };
 					case TF_MOD_FLAVOUR_MINT:
-						return new RacialEffectUtil("Makes girlcum taste like mint.") { @Override public String applyEffect() { return target.setGirlcumFlavour(FluidFlavour.MINT); } };
+						return new RacialEffectUtil("Придает девичьей смазке вкус мяты.") { @Override public String applyEffect() { return target.setGirlcumFlavour(FluidFlavour.MINT); } };
 					case TF_MOD_FLAVOUR_CHERRY:
-						return new RacialEffectUtil("Makes girlcum taste like cherries.") { @Override public String applyEffect() { return target.setGirlcumFlavour(FluidFlavour.CHERRY); } };
+						return new RacialEffectUtil("Придает девичьей смазке вкус вишни.") { @Override public String applyEffect() { return target.setGirlcumFlavour(FluidFlavour.CHERRY); } };
 					case TF_MOD_FLAVOUR_PINEAPPLE:
-						return new RacialEffectUtil("Makes girlcum taste like pineapple.") { @Override public String applyEffect() { return target.setGirlcumFlavour(FluidFlavour.PINEAPPLE); } };
+						return new RacialEffectUtil("Придает девичьей смазке вкус ананаса.") { @Override public String applyEffect() { return target.setGirlcumFlavour(FluidFlavour.PINEAPPLE); } };
 					case TF_MOD_FLAVOUR_BUBBLEGUM:
-						return new RacialEffectUtil("Makes girlcum taste like bubblegum.") { @Override public String applyEffect() { return target.setGirlcumFlavour(FluidFlavour.BUBBLEGUM); } };
+						return new RacialEffectUtil("Придает девичьей смазке вкус жвачки.") { @Override public String applyEffect() { return target.setGirlcumFlavour(FluidFlavour.BUBBLEGUM); } };
 					case TF_MOD_FLAVOUR_STRAWBERRY:
-						return new RacialEffectUtil("Makes girlcum taste like strawberries.") { @Override public String applyEffect() { return target.setGirlcumFlavour(FluidFlavour.STRAWBERRY); } };
+						return new RacialEffectUtil("Придает женским сокам вкус клубники.") { @Override public String applyEffect() { return target.setGirlcumFlavour(FluidFlavour.STRAWBERRY); } };
 					case TF_MOD_FLAVOUR_VANILLA:
-						return new RacialEffectUtil("Makes girlcum taste like vanilla.") { @Override public String applyEffect() { return target.setGirlcumFlavour(FluidFlavour.VANILLA); } };
+						return new RacialEffectUtil("Придает женским сокам вкус ванили.") { @Override public String applyEffect() { return target.setGirlcumFlavour(FluidFlavour.VANILLA); } };
 					case TF_MOD_FLAVOUR_COFFEE:
-						return new RacialEffectUtil("Makes girlcum taste like coffee.") { @Override public String applyEffect() { return target.setGirlcumFlavour(FluidFlavour.COFFEE); } };
+						return new RacialEffectUtil("Придает женским сокам вкус кофе.") { @Override public String applyEffect() { return target.setGirlcumFlavour(FluidFlavour.COFFEE); } };
 					case TF_MOD_FLAVOUR_TEA:
-						return new RacialEffectUtil("Makes girlcum taste like tea.") { @Override public String applyEffect() { return target.setGirlcumFlavour(FluidFlavour.TEA); } };
+						return new RacialEffectUtil("Придает женским сокам вкус чая.") { @Override public String applyEffect() { return target.setGirlcumFlavour(FluidFlavour.TEA); } };
 					case TF_MOD_FLAVOUR_MAPLE:
-						return new RacialEffectUtil("Makes girlcum taste like maple.") { @Override public String applyEffect() { return target.setGirlcumFlavour(FluidFlavour.MAPLE); } };
+						return new RacialEffectUtil("Придает женским сокам вкус кленового сиропа.") { @Override public String applyEffect() { return target.setGirlcumFlavour(FluidFlavour.MAPLE); } };
 					case TF_MOD_FLAVOUR_CINNAMON:
-						return new RacialEffectUtil("Makes girlcum taste like cinnamon.") { @Override public String applyEffect() { return target.setGirlcumFlavour(FluidFlavour.CINNAMON); } };
+						return new RacialEffectUtil("Придает женским сокам вкус корицы.") { @Override public String applyEffect() { return target.setGirlcumFlavour(FluidFlavour.CINNAMON); } };
 					case TF_MOD_FLAVOUR_LEMON:
-						return new RacialEffectUtil("Makes girlcum taste like lemons.") { @Override public String applyEffect() { return target.setGirlcumFlavour(FluidFlavour.LEMON); } };
+						return new RacialEffectUtil("Придает женским сокам вкус лимона.") { @Override public String applyEffect() { return target.setGirlcumFlavour(FluidFlavour.LEMON); } };
 					case TF_MOD_FLAVOUR_ORANGE:
-						return new RacialEffectUtil("Makes girlcum taste like orange.") { @Override public String applyEffect() { return target.setGirlcumFlavour(FluidFlavour.ORANGE); } };
+						return new RacialEffectUtil("Придает женским сокам вкус апельсина.") { @Override public String applyEffect() { return target.setGirlcumFlavour(FluidFlavour.ORANGE); } };
 					case TF_MOD_FLAVOUR_GRAPE:
-						return new RacialEffectUtil("Makes girlcum taste like grape.") { @Override public String applyEffect() { return target.setGirlcumFlavour(FluidFlavour.GRAPE); } };
+						return new RacialEffectUtil("Придает женским сокам вкус винограда.") { @Override public String applyEffect() { return target.setGirlcumFlavour(FluidFlavour.GRAPE); } };
 					case TF_MOD_FLAVOUR_MELON:
-						return new RacialEffectUtil("Makes girlcum taste like melon.") { @Override public String applyEffect() { return target.setGirlcumFlavour(FluidFlavour.MELON); } };
+						return new RacialEffectUtil("Придает женским сокам вкус дыни.") { @Override public String applyEffect() { return target.setGirlcumFlavour(FluidFlavour.MELON); } };
 					case TF_MOD_FLAVOUR_COCONUT:
-						return new RacialEffectUtil("Makes girlcum taste like coconut.") { @Override public String applyEffect() { return target.setGirlcumFlavour(FluidFlavour.COCONUT); } };
+						return new RacialEffectUtil("Придает женской смазке вкус кокоса.") { @Override public String applyEffect() { return target.setGirlcumFlavour(FluidFlavour.COCONUT); } };
 					case TF_MOD_FLAVOUR_BLUEBERRY:
-						return new RacialEffectUtil("Makes girlcum taste like blueberries.") { @Override public String applyEffect() { return target.setGirlcumFlavour(FluidFlavour.BLUEBERRY); } };
+						return new RacialEffectUtil("Придает женской смазке вкус черники.") { @Override public String applyEffect() { return target.setGirlcumFlavour(FluidFlavour.BLUEBERRY); } };
 					case TF_MOD_FLAVOUR_BANANA:
-						return new RacialEffectUtil("Makes girlcum taste like bananas.") { @Override public String applyEffect() { return target.setGirlcumFlavour(FluidFlavour.BANANA); } };
+						return new RacialEffectUtil("Придает женской смазке вкус банана.") { @Override public String applyEffect() { return target.setGirlcumFlavour(FluidFlavour.BANANA); } };
 	
 					case TF_MOD_FLUID_ADDICTIVE:
 						if(potency == TFPotency.MINOR_DRAIN) {
-							return new RacialEffectUtil("Removes addictive effect from girlcum.") { @Override public String applyEffect() { return target.removeGirlcumModifier(FluidModifier.ADDICTIVE); } };
+							return new RacialEffectUtil("Убирает эффект привыкания у женской смазки.") { @Override public String applyEffect() { return target.removeGirlcumModifier(FluidModifier.ADDICTIVE); } };
 						} else {
-							return new RacialEffectUtil("Adds an addictive effect to girlcum.") { @Override public String applyEffect() { return target.addGirlcumModifier(FluidModifier.ADDICTIVE); } };
+							return new RacialEffectUtil("Добавляет эффект привыкания женской смазке.") { @Override public String applyEffect() { return target.addGirlcumModifier(FluidModifier.ADDICTIVE); } };
 						}
 					case TF_MOD_FLUID_ALCOHOLIC:
 						if(potency == TFPotency.MINOR_DRAIN) {
-							return new RacialEffectUtil("Removes strongly alcoholic effect from girlcum.") { @Override public String applyEffect() { return target.removeGirlcumModifier(FluidModifier.ALCOHOLIC); } };
+							return new RacialEffectUtil("Убирает эффект сильного содержания алкоголя из женской смазки.") { @Override public String applyEffect() { return target.removeGirlcumModifier(FluidModifier.ALCOHOLIC); } };
 						} else {
-							return new RacialEffectUtil("Makes girlcum strongly alcoholic.") { @Override public String applyEffect() { return target.addGirlcumModifier(FluidModifier.ALCOHOLIC); } };
+							return new RacialEffectUtil("Делает женскую смазку сильно алкогольной.") { @Override public String applyEffect() { return target.addGirlcumModifier(FluidModifier.ALCOHOLIC); } };
 						}
 					case TF_MOD_FLUID_ALCOHOLIC_WEAK:
 						if(potency == TFPotency.MINOR_DRAIN) {
-							return new RacialEffectUtil("Removes alcoholic effect from girlcum.") { @Override public String applyEffect() { return target.removeGirlcumModifier(FluidModifier.ALCOHOLIC_WEAK); } };
+							return new RacialEffectUtil("Убирает эффект алкоголя из женской смазки.") { @Override public String applyEffect() { return target.removeGirlcumModifier(FluidModifier.ALCOHOLIC_WEAK); } };
 						} else {
-							return new RacialEffectUtil("Makes girlcum alcoholic.") { @Override public String applyEffect() { return target.addGirlcumModifier(FluidModifier.ALCOHOLIC_WEAK); } };
+							return new RacialEffectUtil("Делает женскую смазку алкогольной.") { @Override public String applyEffect() { return target.addGirlcumModifier(FluidModifier.ALCOHOLIC_WEAK); } };
 						}
 					case TF_MOD_FLUID_BUBBLING:
 						if(potency == TFPotency.MINOR_DRAIN) {
-							return new RacialEffectUtil("Removes bubbling effect from girlcum.") { @Override public String applyEffect() { return target.removeGirlcumModifier(FluidModifier.BUBBLING); } };
+							return new RacialEffectUtil("Убирает эффект пузырения у женской смазки.") { @Override public String applyEffect() { return target.removeGirlcumModifier(FluidModifier.BUBBLING); } };
 						} else {
-							return new RacialEffectUtil("Makes girlcum fizzy and bubbly.") { @Override public String applyEffect() { return target.addGirlcumModifier(FluidModifier.BUBBLING); } };
+							return new RacialEffectUtil("Делает девичью сперму шипучей и пузырящейся.") { @Override public String applyEffect() { return target.addGirlcumModifier(FluidModifier.BUBBLING); } };
 						}
 					case TF_MOD_FLUID_HALLUCINOGENIC:
 						if(potency == TFPotency.MINOR_DRAIN) {
-							return new RacialEffectUtil("Removes psychoactive effect from girlcum.") { @Override public String applyEffect() { return target.removeGirlcumModifier(FluidModifier.HALLUCINOGENIC); } };
+							return new RacialEffectUtil("Убирает психоактивный эффект из девичьей спермы.") { @Override public String applyEffect() { return target.removeGirlcumModifier(FluidModifier.HALLUCINOGENIC); } };
 						} else {
-							return new RacialEffectUtil("Adds a psychoactive effect to girlcum.") { @Override public String applyEffect() { return target.addGirlcumModifier(FluidModifier.HALLUCINOGENIC); } };
+							return new RacialEffectUtil("Добавляет психоактивный эффект в девичью сперму.") { @Override public String applyEffect() { return target.addGirlcumModifier(FluidModifier.HALLUCINOGENIC); } };
 						}
 					case TF_MOD_FLUID_MINERAL_OIL:
 						if(potency == TFPotency.MINOR_DRAIN) {
-							return new RacialEffectUtil("Removes mineral oil effect from girlcum.") { @Override public String applyEffect() { return target.removeGirlcumModifier(FluidModifier.MINERAL_OIL); } };
+							return new RacialEffectUtil("Убирает эффект минерального масла из девичьей спермы.") { @Override public String applyEffect() { return target.removeGirlcumModifier(FluidModifier.MINERAL_OIL); } };
 						} else {
-							return new RacialEffectUtil("Adds a mineral oil effect to girlcum.") { @Override public String applyEffect() { return target.addGirlcumModifier(FluidModifier.MINERAL_OIL); } };
+							return new RacialEffectUtil("Добавляет эффект минерального масла в девичью сперму.") { @Override public String applyEffect() { return target.addGirlcumModifier(FluidModifier.MINERAL_OIL); } };
 						}
 					case TF_MOD_FLUID_MUSKY:
 						if(potency == TFPotency.MINOR_DRAIN) {
-							return new RacialEffectUtil("Removes musky effect from girlcum.") { @Override public String applyEffect() { return target.removeGirlcumModifier(FluidModifier.MUSKY); } };
+							return new RacialEffectUtil("Убирает мускусный эффект из девичьей спермы.") { @Override public String applyEffect() { return target.removeGirlcumModifier(FluidModifier.MUSKY); } };
 						} else {
-							return new RacialEffectUtil("Makes girlcum give off a potent musk.") { @Override public String applyEffect() { return target.addGirlcumModifier(FluidModifier.MUSKY); } };
+							return new RacialEffectUtil("Наделяет девичью сперму сильным мускусным запахом.") { @Override public String applyEffect() { return target.addGirlcumModifier(FluidModifier.MUSKY); } };
 						}
 					case TF_MOD_FLUID_SLIMY:
 						if(potency == TFPotency.MINOR_DRAIN) {
-							return new RacialEffectUtil("Removes slimy effect from girlcum.") { @Override public String applyEffect() { return target.removeGirlcumModifier(FluidModifier.SLIMY); } };
+							return new RacialEffectUtil("Убирает эффект слизистости из девичьей спермы.") { @Override public String applyEffect() { return target.removeGirlcumModifier(FluidModifier.SLIMY); } };
 						} else {
-							return new RacialEffectUtil("Makes girlcum slimy.") { @Override public String applyEffect() { return target.addGirlcumModifier(FluidModifier.SLIMY); } };
+							return new RacialEffectUtil("Делает девичью сперму слизистой.") { @Override public String applyEffect() { return target.addGirlcumModifier(FluidModifier.SLIMY); } };
 						}
 					case TF_MOD_FLUID_STICKY:
 						if(potency == TFPotency.MINOR_DRAIN) {
-							return new RacialEffectUtil("Removes sticky effect from girlcum.") { @Override public String applyEffect() { return target.removeGirlcumModifier(FluidModifier.STICKY); } };
+							return new RacialEffectUtil("Убирает эффект липкости из девичьей спермы.") { @Override public String applyEffect() { return target.removeGirlcumModifier(FluidModifier.STICKY); } };
 						} else {
-							return new RacialEffectUtil("Makes girlcum sticky.") { @Override public String applyEffect() { return target.addGirlcumModifier(FluidModifier.STICKY); } };
+							return new RacialEffectUtil("Делает девичью сперму липкой.") { @Override public String applyEffect() { return target.addGirlcumModifier(FluidModifier.STICKY); } };
 						}
 					case TF_MOD_FLUID_VISCOUS:
 						if(potency == TFPotency.MINOR_DRAIN) {
-							return new RacialEffectUtil("Removes viscous effect from girlcum.") { @Override public String applyEffect() { return target.removeGirlcumModifier(FluidModifier.VISCOUS); } };
+							return new RacialEffectUtil("Убирает эффект вязкости у девичьей спермы.") { @Override public String applyEffect() { return target.removeGirlcumModifier(FluidModifier.VISCOUS); } };
 						} else {
-							return new RacialEffectUtil("Makes girlcum thick and viscous.") { @Override public String applyEffect() { return target.addGirlcumModifier(FluidModifier.VISCOUS); } };
+							return new RacialEffectUtil("Делает девичью сперму густой и вязкой.") { @Override public String applyEffect() { return target.addGirlcumModifier(FluidModifier.VISCOUS); } };
 						}
 						
 					default:
 						switch(potency) {
 							case MAJOR_DRAIN:
-								return new RacialEffectUtil("[style.colourTerrible(--)] Vaginal lubrication (" + Units.fluid(smallChangeMajorDrain) + ")") { @Override public String applyEffect() { return target.incrementVaginaWetness(smallChangeMajorDrain); } };
+								return new RacialEffectUtil("[style.colourTerrible(--)] Смазка влагалища (" + Units.fluid(smallChangeMajorDrain) + ")") { @Override public String applyEffect() { return target.incrementVaginaWetness(smallChangeMajorDrain); } };
 							case DRAIN:
-								return new RacialEffectUtil("[style.colourBad(--)] Vaginal lubrication (" + Units.fluid(smallChangeDrain) + ")") { @Override public String applyEffect() { return target.incrementVaginaWetness(smallChangeDrain); } };
+								return new RacialEffectUtil("[style.colourBad(--)] Смазка влагалища (" + Units.fluid(smallChangeDrain) + ")") { @Override public String applyEffect() { return target.incrementVaginaWetness(smallChangeDrain); } };
 							case MINOR_DRAIN:
-								return new RacialEffectUtil("[style.colourMinorBad(--)] Vaginal lubrication (" + Units.fluid(smallChangeMinorDrain) + ")") { @Override public String applyEffect() { return target.incrementVaginaWetness(smallChangeMinorDrain); } };
+								return new RacialEffectUtil("[style.colourMinorBad(--)] Смазка влагалища (" + Units.fluid(smallChangeMinorDrain) + ")") { @Override public String applyEffect() { return target.incrementVaginaWetness(smallChangeMinorDrain); } };
 							case MINOR_BOOST:
-								return new RacialEffectUtil("[style.colourMinorGood(++)] Vaginal lubrication (+" + Units.fluid(smallChangeMinorBoost) + ")") { @Override public String applyEffect() { return target.incrementVaginaWetness(smallChangeMinorBoost); } };
+								return new RacialEffectUtil("[style.colourMinorGood(++)] Вагинальная смазка (+" + Units.fluid(smallChangeMinorBoost) + ")") { @Override public String applyEffect() { return target.incrementVaginaWetness(smallChangeMinorBoost); } };
 							case BOOST:
-								return new RacialEffectUtil("[style.colourGood(++)] Vaginal lubrication (+" + Units.fluid(smallChangeBoost) + ")") { @Override public String applyEffect() { return target.incrementVaginaWetness(smallChangeBoost); } };
+								return new RacialEffectUtil("[style.colourGood(++)] Вагинальная смазка (+" + Units.fluid(smallChangeBoost) + ")") { @Override public String applyEffect() { return target.incrementVaginaWetness(smallChangeBoost); } };
 							case SPECIAL:
 							case MAJOR_BOOST:
-								return new RacialEffectUtil("[style.colourExcellent(++)] Vaginal lubrication (+" + Units.fluid(smallChangeMajorBoost) + ")") { @Override public String applyEffect() { return target.incrementVaginaWetness(smallChangeMajorBoost); } };
+								return new RacialEffectUtil("[style.colourExcellent(++)] Вагинальная смазка (+" + Units.fluid(smallChangeMajorBoost) + ")") { @Override public String applyEffect() { return target.incrementVaginaWetness(smallChangeMajorBoost); } };
 						}
 				}
 				break;
@@ -5771,7 +5768,7 @@ public abstract class AbstractItemEffectType {
 				break;
 		}
 
-		return new RacialEffectUtil("Random non-racial transformation") {
+		return new RacialEffectUtil("Случайная нерасовая трансформация") {
 			@Override
 			public String applyEffect() {
 				TFModifier mod = TFModifier.NONE, modSecondary = TFModifier.NONE;
@@ -5792,7 +5789,7 @@ public abstract class AbstractItemEffectType {
 		List<AbstractAntennaType> antennaTypes = RacialBody.valueOfRace(race).getAntennaTypes(true);
 		AbstractAntennaType selectedAntennaType = index >= antennaTypes.size() ? AntennaType.NONE : antennaTypes.get(index);
 		
-		return new RacialEffectUtil("Grows "+selectedAntennaType.getTransformName()+" antennae.") {
+		return new RacialEffectUtil("Растет "+selectedAntennaType.getTransformName()+" антенны.") {
 			@Override public String applyEffect() { return target.setAntennaType(selectedAntennaType); } };
 	}
 

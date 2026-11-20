@@ -129,7 +129,7 @@ public class BlockedParts implements XMLSaving {
 
 		DisplacementType displacementType = DisplacementType.valueOf(parentElement.getElementsByTagName("displacementType").item(0).getTextContent());
 		
-		String errorCode = "Unknown Clothing";
+		String errorCode = "Неизвестная одежда";
 		Element clothingElement = ((Element) doc.getElementsByTagName("clothing").item(0));
 		try { // try, as when loaded when not embedded in clothing, the "clothing" element will not be found.
 			if(clothingElement.getElementsByTagName("coreAtributes").getLength()>0) {

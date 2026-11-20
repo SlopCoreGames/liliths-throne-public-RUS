@@ -131,7 +131,7 @@ public class SubmissionAttacker extends NPC {
 			setName(Name.getRandomTriplet(this.getSubspecies()));
 			this.setPlayerKnowsName(false);
 			setDescription(UtilText.parse(this,
-					"[npc.Name] is a resident of Submission, who prowls the tunnels looking for strangers to mug and assault..."));
+					"[npc.Name] — жительница Submission, которая рыщет по туннелям в поисках незнакомцев, чтобы ограбить и изнасиловать их..."));
 			
 			// PERSONALITY & BACKGROUND:
 			
@@ -235,25 +235,25 @@ public class SubmissionAttacker extends NPC {
 		if(this.getHistory()==Occupation.NPC_PROSTITUTE) {
 			if(this.isSlave()) {
 				return (UtilText.parse(this,
-						"[npc.NamePos] days of whoring [npc.herself] out in the tunnels of Submission are now over. Having run afoul of the law, [npc.sheIs] now a slave, and is no more than [npc.her] owner's property."));
+						"[npc.NamePos] дней проституции [npc.herself] в туннелях Submission подошли к концу. Нарушив закон, [npc.sheIs] теперь стала рабыней и является не более чем собственностью [npc.her]."));
 			} else if(this.getLocationPlace().getPlaceType().equals(PlaceType.ANGELS_KISS_BEDROOM)){
 				return (UtilText.parse(this,
-						"You first found [npc.name] in the tunnels of Submission, where [npc.she] was illegally selling [npc.her] body. You offered [npc.herHim] the chance to move and work out of Angel's Kiss; an offer which [npc.she] happily accepted."));
+						"Впервые вы встретили [npc.name] в туннелях Submission, где [npc.she] незаконно торговала своим телом [npc.her]. Вы предложили [npc.herHim] переехать и начать работать за пределами Angel's Kiss — предложение, которое [npc.she] с радостью приняла."));
 			} else {
 				return (UtilText.parse(this,
-						"[npc.Name] is a prostitute who whores [npc.herself] out in the tunnels of Submission."));
+						"[npc.Name] — проститутка, которая торгует [npc.herself] в туннелях Submission."));
 			}
 			
 		} else {
 			if(this.isSlave()) {
 				return (UtilText.parse(this,
-						"[npc.NamePos] days of prowling the tunnels of Submission and mugging innocent travellers are now over. Having run afoul of the law, [npc.sheIs] now a slave, and is no more than [npc.her] owner's property."));
+						"[npc.NamePos] дней рысканий по туннелям Submission и грабежей невинных путешественников подошли к концу. Нарушив закон, [npc.sheIs] теперь стала рабыней и является не более чем собственностью [npc.her]."));
 			} else if(Main.game.getPlayer().getFriendlyOccupants().contains(this.getId())){
 				return (UtilText.parse(this,
-						"[npc.NamePos] days of prowling the tunnels of Submission and mugging innocent travellers are now over. Having befriended [npc.herHim], you invited [npc.name] to move in with you and helped [npc.herHim] to start a new life."));
+						"[npc.NamePos] дней рысканий по туннелям Submission и грабежей невинных путешественников подошли к концу. Подружившись с [npc.herHim], вы пригласили [npc.name] пожить у вас и помогли [npc.herHim] начать новую жизнь."));
 			} else {
 				return (UtilText.parse(this,
-						"[npc.Name] is a resident of Submission, who prowls the tunnels in search of innocent travellers to mug and rape."));
+						"[npc.Name] — жительница Submission, которая рыщет по туннелям в поисках невинных путешественников, чтобы ограбить и изнасиловать их."));
 			}
 		}
 	}

@@ -79,8 +79,8 @@ public class SlimeQueen extends NPC {
 	}
 
 	public SlimeQueen(boolean isImported) {
-		super(isImported, new NameTriplet("Catherine"), "Mercier",
-				"The self-proclaimed Slime Queen, Catherine, is a gigantic female slime, who wants to turn as many people into her subjects as possible.",
+		super(isImported, new NameTriplet("Катерина"), "Мерсье",
+				"Самопровозглашенная Королева слаймов, Catherine, — это гигантская самка слайма, которая хочет превратить как можно больше людей в своих подданных.",
 				38, Month.JANUARY, 29,
 				15, Gender.F_V_B_FEMALE, Subspecies.SLIME, RaceStage.HUMAN,
 				new CharacterInventory(false, 10),
@@ -108,7 +108,7 @@ public class SlimeQueen extends NPC {
 			this.setBreastMilkStorage(Lactation.THREE_DECENT_AMOUNT.getMedianValue());
 			this.setBreastStoredMilk(Lactation.THREE_DECENT_AMOUNT.getMedianValue());
 		}
-		this.setSurname("Mercier");
+		this.setSurname("Мерсье");
 		if(Main.isVersionOlderThan(Game.loadingVersion, "0.3.3.6")) {
 		}
 		if(Main.isVersionOlderThan(Game.loadingVersion, "0.3.5.1")) {
