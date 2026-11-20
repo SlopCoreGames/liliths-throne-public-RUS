@@ -48,7 +48,7 @@ public class BasicSlave extends NPC {
 	
 	public BasicSlave(Gender gender, boolean isImported) {
 		super(isImported,
-				new NameTriplet("Slave"), "",
+				new NameTriplet("Рабыня"), "",
 				"",
 				21, Util.randomItemFrom(Month.values()), 1+Util.random.nextInt(27),
 				3,
@@ -154,10 +154,10 @@ public class BasicSlave extends NPC {
 			return super.getDescription();
 		}
 		if(this.isSlave()) {
-			return UtilText.parse(this, "Having run afoul of the law, [npc.sheIs] now a slave, and is no more than [npc.her] owner's property.");
+			return UtilText.parse(this, "Нарушив закон, [npc.sheIs] теперь рабыня и всего лишь имущество [npc.her].");
 			
 		} else {
-			return UtilText.parse(this, "After a period of being your slave, [npc.nameIsFull] now your trusted friend.");
+			return UtilText.parse(this, "Проведя какое-то время в роли твоей рабыни, [npc.nameIsFull] теперь твоя верная подруга.");
 		}
 	}
 

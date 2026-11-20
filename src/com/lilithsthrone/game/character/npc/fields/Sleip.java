@@ -95,8 +95,8 @@ public class Sleip extends NPC {
 	}
 	
 	public Sleip(boolean isImported) {
-		super(isImported, new NameTriplet("Sleip"), "Loviennemartu",
-				"Sleip is one of two nightmare bodyguards who protect Angelixx at all times.",
+		super(isImported, new NameTriplet("Слейп"), "Ловиеннемарту",
+				"Слейп — один из двух кошмарных телохранителей, которые постоянно охраняют Анжеликсу.",
 				28, Month.AUGUST, 28,
 				20, Gender.M_P_MALE, Subspecies.HORSE_MORPH, RaceStage.GREATER,
 				new CharacterInventory(false, 30),
@@ -104,7 +104,7 @@ public class Sleip extends NPC {
 				true);
 		if(!isImported) {
 			this.setPlayerKnowsName(false);
-			this.setGenericName("furious nightmare");
+			this.setGenericName("яростный кошмар");
 		}
 	}
 	
@@ -335,7 +335,7 @@ public class Sleip extends NPC {
 		necklace.addEffect(new ItemEffect(ItemEffectType.CLOTHING, TFModifier.CLOTHING_ATTRIBUTE, TFModifier.DAMAGE_PHYSICAL, TFPotency.MAJOR_BOOST, 0));
 		necklace.addEffect(new ItemEffect(ItemEffectType.CLOTHING, TFModifier.CLOTHING_ATTRIBUTE, TFModifier.DAMAGE_PHYSICAL, TFPotency.MINOR_BOOST, 0));
 		this.equipClothingFromNowhere(necklace, true, this);
-		necklace.setName("Angelixx's Gift");
+		necklace.setName("Дар Анжеликс");
 		
 		this.equipMainWeaponFromNowhere(Main.game.getItemGen().generateWeapon("innoxia_bat_metal", DamageType.PHYSICAL));
 		
@@ -556,14 +556,10 @@ public class Sleip extends NPC {
 		if(receivingCharacter.isPlayer() && receivingCharacter.isDoll() && penetrated==SexAreaOrifice.VAGINA) {
 			StringBuilder sb = new StringBuilder();
 			sb.append("<p>");
-				sb.append("[sleip.speechNoEffects(It doesn't get better than breaking in a virgin doll pussy!)]"
-						+ " Sleip hungrily grunts as he slams his fat horse-cock deep into your silicone twat."
-						+ " Having been the first to penetrate your new pussy, the nightmare taunts you by growling,"
-						+ " [sleip.speechNoEffects(You'll always remember my cock as being your first, doll, but to me you're just a forgettable fuck!)]");
+				sb.append("[sleip.speechNoEffects(Нет ничего лучше, чем вскрывать киску девственной кукле!)] Слейп голодно рычит, с силой вбивая свой жирный лошадиный член глубоко в твою силиконовую щель. Будучи первым, кто проник в твою новую киску, кошмар издевается над тобой, рыча: [sleip.speechNoEffects(Ты всегда будешь помнить мой член как свой первый, куколка, но для меня ты — всего лишь забытая трахалка!)]");
 			sb.append("</p>");
 			sb.append("<p>");
-				sb.append("You can't help but moan and shuffle about on the table as the demonic horse-boy hilts his massive, bestial shaft deep into your artificial cunt."
-						+ " Losing your virginity in such a rough, dominant manner sends a wave of submissive pleasure through your new body, and suddenly all you can think about is being a good doll for whoever wants to fuck you.");
+				sb.append("Ты не можешь сдержать стонов и ерзаешь на столе, пока этот демонический конь-мальчик вгоняет основание своего массивного, звериного ствола глубоко в твою искусственную щель. Потеря девственности в такой грубой, доминантной манере посылает волну подчиняющего удовольствия по твоему новому телу, и внезапно всё, о чем ты можешь думать — это как стать послушной куклой для любого, кто захочет тебя оттрахать.");
 			sb.append("</p>");
 			
 			return sb.toString();

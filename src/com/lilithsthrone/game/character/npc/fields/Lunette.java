@@ -49,8 +49,8 @@ public class Lunette extends NPC {
 	
 	public Lunette(boolean isImported) {
 		super(isImported,
-				new NameTriplet("Lunette"), "Lilithmartuilani",
-				"One of the seven elder Lilin, Lunette is one of the most powerful beings in existence.",
+				new NameTriplet("Лунетт"), "Lilithmartuilani",
+				"Одна из семи старших лилин, Лунетт — одно из самых могущественных существ в мироздании.",
 				7641, Month.JANUARY, 13,
 				1000,
 				Gender.F_V_B_FEMALE, Subspecies.DEMON, RaceStage.GREATER,

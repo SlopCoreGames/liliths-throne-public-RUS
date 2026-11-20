@@ -82,8 +82,8 @@ public class Ghost extends NPC {
 	}
 	
 	public Ghost(boolean isImported) {
-		super(isImported, new NameTriplet("Laura"), "Macaulay",
-				"One of the SWORD Enforcers stationed in Elis, this small otter-girl is known only by her callsign, 'Ghost'.",
+		super(isImported, new NameTriplet("Лора"), "Маколей",
+				"Одна из оперативниц SWORD, дислоцированных в Элисе, эта маленькая девочка-выдра известна лишь под своим позывным «Призрак».",
 				67, Month.JULY, 11,
 				42,
 				Gender.F_V_B_FEMALE, Subspecies.getSubspeciesFromId("dsg_otter_subspecies_otter"), RaceStage.GREATER,
@@ -92,7 +92,7 @@ public class Ghost extends NPC {
 				true);
 		if(!isImported) {
 			this.setPlayerKnowsName(false);
-			this.setGenericName("small otter-girl");
+			this.setGenericName("маленькая девочка-выдра");
 		}
 	}
 	
@@ -395,7 +395,7 @@ public class Ghost extends NPC {
 				new ItemEffect(ItemEffectType.WEAPON, TFModifier.CLOTHING_ATTRIBUTE, TFModifier.CRITICAL_DAMAGE, TFPotency.MAJOR_BOOST, 0),
 				new ItemEffect(ItemEffectType.WEAPON, TFModifier.CLOTHING_ATTRIBUTE, TFModifier.CRITICAL_DAMAGE, TFPotency.BOOST, 0)
 				));
-		dagger.setName("Ghost's SWORD dagger");
+		dagger.setName("кинжал Призрака из SWORD");
 		return dagger;
 	}
 	

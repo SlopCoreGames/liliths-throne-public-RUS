@@ -52,7 +52,7 @@ public class SlaveForSale extends NPC {
 	
 	public SlaveForSale(Gender gender, boolean allowTaurSpawns, boolean isImported) {
 		super(isImported,
-				new NameTriplet("Slave"), "",
+				new NameTriplet("Рабыня"), "",
 				"",
 				21, Util.randomItemFrom(Month.values()), 1+Util.random.nextInt(27),
 				1,
@@ -204,10 +204,10 @@ public class SlaveForSale extends NPC {
 			return super.getDescription();
 		}
 		if(this.isSlave()) {
-			return UtilText.parse(this, "For one reason or another, [npc.nameIsFull] a slave, and is no more than [npc.her] owner's property.");
+			return UtilText.parse(this, "По той или иной причине, [npc.nameIsFull] — раб, и не более чем [npc.her] собственность хозяина.");
 			
 		} else {
-			return UtilText.parse(this, "After a period of being your slave, [npc.nameIsFull] now your trusted friend.");
+			return UtilText.parse(this, "Проведя какое-то время в роли твоей рабыни, [npc.nameIsFull] теперь твоя верная подруга.");
 		}
 	}
 	

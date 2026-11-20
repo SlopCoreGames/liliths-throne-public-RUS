@@ -80,8 +80,8 @@ public class Penelope extends NPC {
 	}
 	
 	public Penelope(boolean isImported) {
-		super(isImported, new NameTriplet("Penelope"), "Fear",
-				"A beautiful border collie-girl, who is the owner and manager of Elis's spa; 'Woolly Heaven'.",
+		super(isImported, new NameTriplet("Пенелопа"), "Страх",
+				"Прекрасная девочка-бордер-колли, владелица и управляющая спа-салоном Элис под названием «Woolly Heaven».",
 				29, Month.FEBRUARY, 21, 
 				15, Gender.F_P_V_B_FUTANARI, Subspecies.DOG_MORPH_BORDER_COLLIE, RaceStage.GREATER,
 				new CharacterInventory(false, 10),
@@ -460,7 +460,7 @@ public class Penelope extends NPC {
 		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("innoxia_chest_chemise", PresetColour.CLOTHING_PURPLE_VERY_DARK, false), true, this);
 		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing(ClothingType.HIPS_SUSPENDER_BELT, PresetColour.CLOTHING_PURPLE_VERY_DARK, false), true, this);
 		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("innoxia_groin_crotchless_thong", PresetColour.CLOTHING_PURPLE_VERY_DARK, false), true, this);
-		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("corpseBloom_toeless_stockings_toeless_stockings", PresetColour.CLOTHING_PURPLE_VERY_DARK, false), true, this);
+		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("труповцвет_чулки_безпалые_чулки_безпалые", PresetColour.CLOTHING_PURPLE_VERY_DARK, false), true, this);
 		
 		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("innoxia_piercing_ear_ball_studs", PresetColour.CLOTHING_SILVER, false), true, this);
 	}

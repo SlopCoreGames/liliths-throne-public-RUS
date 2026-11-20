@@ -68,15 +68,15 @@ public class Kheiron extends NPC {
 	}
 	
 	public Kheiron(boolean isImported) {
-		super(isImported, new NameTriplet("Kheiron"), "Grigori",
-				"The owner of the tavern 'The Centaur's Sword' in Elis, this huge, muscular centaur is known throughout town as being remarkably kind and wise.",
+		super(isImported, new NameTriplet("Хейрон"), "Григорий",
+				"Владелец таверны «Меч Кентавра» в Элиде, этот огромный мускулистый кентавр известен во всем городе своей необычайной добротой и мудростью.",
 				45, Month.OCTOBER, 11,
 				25, Gender.M_P_MALE, Subspecies.CENTAUR, RaceStage.PARTIAL_FULL,
 				new CharacterInventory(false, 10),
 				WorldType.getWorldTypeFromId("innoxia_fields_elis_tavern_taur"), PlaceType.getPlaceTypeFromId("innoxia_fields_elis_tavern_taur_bar"),
 				true);
 		
-		this.setGenericName("muscular centaur");
+		this.setGenericName("мускулистый кентавр");
 		
 		if(!isImported) {
 			this.setPlayerKnowsName(false);
@@ -306,7 +306,7 @@ public class Kheiron extends NPC {
 			AbstractClothing collar = Main.game.getItemGen().generateClothing("innoxia_bdsm_choker", PresetColour.CLOTHING_DESATURATED_BROWN_DARK, PresetColour.CLOTHING_BRASS, null, false);
 			collar.setSticker("top_txt", "good");
 			collar.setSticker("btm_txt", "horsie");
-			collar.setName("Kheiron's Good Horsie Collar");
+			collar.setName("Добрый ошейник Хейрона для лошадки");
 			
 			collar.clearEffects();
 			

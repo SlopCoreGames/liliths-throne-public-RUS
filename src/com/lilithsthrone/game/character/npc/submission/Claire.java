@@ -70,10 +70,8 @@ public class Claire extends NPC {
 	}
 	
 	public Claire(boolean isImported) {
-		super(isImported, new NameTriplet("Claire"), "Kasun",
-				"Claire is the messenger who's responsible for keeping all of Submission's Enforcer posts up-to-date with one another."
-					+ " Having been recognised by her superiors as a particularly hard-working and reliable individual, she's been granted permission to use the teleportation pads which link all of these posts together."
-					+ " As a result of this, she seems to be in multiple places at once, and whenever you enter one of these Enforcer posts, Claire is sure to already be there.",
+		super(isImported, new NameTriplet("Клэр"), "Касун",
+				"Клэр — гончая, отвечающая за то, чтобы все посты Enforcer в Submission всегда были на связи друг с другом. Благодаря тому, что начальство признало её исключительно трудолюбивой и надежной личностью, ей разрешили пользоваться телепортационными площадками, соединяющими все эти посты. Из-за этого кажется, будто она находится в нескольких местах одновременно: стоит вам войти на любой из постов Enforcer, как Клэр наверняка уже будет там.",
 				31, Month.DECEMBER, 14,
 				10, Gender.F_V_B_FEMALE, Subspecies.CAT_MORPH, RaceStage.GREATER,
 				new CharacterInventory(false, 30), WorldType.SUBMISSION, PlaceType.SUBMISSION_ENTRANCE, true);
@@ -96,9 +94,7 @@ public class Claire extends NPC {
 			this.setStartingBody(false);
 			this.setHistory(Occupation.NPC_ENFORCER_PATROL_SERGEANT);
 			this.setDescription(
-				"Claire is the messenger who's responsible for keeping all of Submission's Enforcer posts up-to-date with one another."
-					+ " Having been recognised by her superiors as a particularly hard-working and reliable individual, she's been granted permission to use the teleportation pads which link all of these posts together."
-					+ " As a result of this, she seems to be in multiple places at once, and whenever you enter one of these Enforcer posts, Claire is sure to already be there.");
+				"Клэр — гончая, отвечающая за то, чтобы все посты Enforcer в Submission всегда были на связи друг с другом. Благодаря тому, что начальство признало её исключительно трудолюбивой и надежной личностью, ей разрешили пользоваться телепортационными площадками, соединяющими все эти посты. Из-за этого кажется, будто она находится в нескольких местах одновременно: стоит вам войти на любой из постов Enforcer, как Клэр наверняка уже будет там.");
 		}
 		if(Main.isVersionOlderThan(Game.loadingVersion, "0.3.5.1")) {
 			this.setPersonalityTraits(

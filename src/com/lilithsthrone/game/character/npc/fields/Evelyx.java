@@ -125,8 +125,8 @@ public class Evelyx extends NPC {
 	
 	public Evelyx(boolean isImported) {
 		super(isImported,
-				new NameTriplet("Evelyx"), "Lisophiamartu",
-				"The owner and namesake of the farm 'Evelyne's Dairy', this succubus is extremely arrogant and rude, and will do whatever it takes to make the most amount of money possible.",
+				new NameTriplet("Эвеликс"), "Лисофиаммарту",
+				"Владелица и само имя фермы «Молочная ферма Эвелин», эта суккуб чрезвычайно высокомерна и груба; она пойдет на всё, лишь бы заработать как можно больше денег.",
 				76, Month.JULY, 2,
 				25, Gender.F_V_B_FEMALE, Subspecies.DEMON, RaceStage.GREATER,
 				new CharacterInventory(false, 10),
@@ -406,11 +406,11 @@ public class Evelyx extends NPC {
 		
 		sb.append("<p>");
 			if(available) {
-				sb.append("[style.boldGood(Apply:)] <span style='color:"+titleColour.toWebHexString()+";'>"+title+"</span>");
+				sb.append("[style.boldGood(Применить:)] <span style='color:"+titleColour.toWebHexString()+";'>"+title+"</span>");
 				sb.append("</br>");
 				sb.append(text);
 			} else {
-				sb.append("[style.boldDisabled(Not Required:)] [style.colourDisabled("+title);
+				sb.append("[style.boldDisabled(Не требуется:)] [style.colourDisabled("+title);
 				sb.append("</br>");
 				sb.append(text);
 				sb.append(")]");
@@ -422,7 +422,7 @@ public class Evelyx extends NPC {
 			if(available) {
 				transformationStringBuilder.append("<i><b style='color:"+titleColour.toWebHexString()+";'>"+title+":</b> "+text+"</i>");
 			} else {
-				transformationStringBuilder.append("<i>[style.boldDisabled(Not Required:)] [style.colourDisabled("+title+": "+text+")]</i>");
+				transformationStringBuilder.append("<i>[style.boldDisabled(Не требуется:)] [style.colourDisabled("+title+": "+text+")]</i>");
 			}
 		transformationStringBuilder.append("</p>");
 		
@@ -466,7 +466,7 @@ public class Evelyx extends NPC {
 		if(!anyTransformationAvailable) {
 			anyTransformationAvailable = applyFemininity;
 		}
-		sbTransformationText.append(getTransformationFormat(applyFemininity, PresetColour.BASE_PINK_LIGHT, "Femininity Increase", "Cows are required to be feminine in appearance.", sbAppliedTransformation));
+		sbTransformationText.append(getTransformationFormat(applyFemininity, PresetColour.BASE_PINK_LIGHT, "Повышение женственности", "Коровы должны обладать женственной внешностью.", sbAppliedTransformation));
 		if(applyTransformation && applyFemininity) {
 			sbAppliedTransformation.append(worker.setFemininity(80));
 		}
@@ -476,7 +476,7 @@ public class Evelyx extends NPC {
 		if(!anyTransformationAvailable) {
 			anyTransformationAvailable = applyBreastSize;
 		}
-		sbTransformationText.append(getTransformationFormat(applyBreastSize, PresetColour.BASE_PINK, "Breast Enlargement", "Cows should have large breasts.", sbAppliedTransformation));
+		sbTransformationText.append(getTransformationFormat(applyBreastSize, PresetColour.BASE_PINK, "Увеличение груди", "У коров должна быть большая грудь.", sbAppliedTransformation));
 		if(applyTransformation && applyBreastSize) {
 			sbAppliedTransformation.append(worker.setBreastSize(cupSize));
 		}
@@ -485,7 +485,7 @@ public class Evelyx extends NPC {
 		if(!anyTransformationAvailable) {
 			anyTransformationAvailable = applyMilkStorage;
 		}
-		sbTransformationText.append(getTransformationFormat(applyMilkStorage, PresetColour.MILK, "Milk Storage", "A cow's breasts should be full of milk.", sbAppliedTransformation));
+		sbTransformationText.append(getTransformationFormat(applyMilkStorage, PresetColour.MILK, "Запас молока", "Коровьи вымена должны быть полны молока.", sbAppliedTransformation));
 		if(applyTransformation && applyMilkStorage) {
 			sbAppliedTransformation.append(worker.setBreastMilkStorage(milkStorage));
 		}
@@ -494,7 +494,7 @@ public class Evelyx extends NPC {
 		if(!anyTransformationAvailable) {
 			anyTransformationAvailable = applyMilkRegeneration;
 		}
-		sbTransformationText.append(getTransformationFormat(applyMilkRegeneration, PresetColour.MILK, "Milk Regeneration", "Cows should never stop producing milk.", sbAppliedTransformation));
+		sbTransformationText.append(getTransformationFormat(applyMilkRegeneration, PresetColour.MILK, "Регенерация молока", "Коровы никогда не должны переставать давать молоко.", sbAppliedTransformation));
 		if(applyTransformation && applyMilkRegeneration) {
 			sbAppliedTransformation.append(worker.setBreastLactationRegeneration(milkRegeneration));
 		}
@@ -503,7 +503,7 @@ public class Evelyx extends NPC {
 		if(!anyTransformationAvailable) {
 			anyTransformationAvailable = applyPuffy;
 		}
-		sbTransformationText.append(getTransformationFormat(applyPuffy, PresetColour.BASE_PINK_LIGHT, "Puffy Nipples", "Large nipples improve milking machine compatibility.", sbAppliedTransformation));
+		sbTransformationText.append(getTransformationFormat(applyPuffy, PresetColour.BASE_PINK_LIGHT, "Набухшие соски", "Большие соски улучшают совместимость с доильным аппаратом.", sbAppliedTransformation));
 		if(applyTransformation && applyPuffy) {
 			sbAppliedTransformation.append(worker.addNippleOrificeModifier(OrificeModifier.PUFFY));
 		}
@@ -514,7 +514,7 @@ public class Evelyx extends NPC {
 			if(!anyTransformationAvailable) {
 				anyTransformationAvailable = applyCrotchBoobs;
 			}
-			sbTransformationText.append(getTransformationFormat(applyCrotchBoobs, PresetColour.BASE_PURPLE, "Udders", "Cows are required to have udders.", sbAppliedTransformation));
+			sbTransformationText.append(getTransformationFormat(applyCrotchBoobs, PresetColour.BASE_PURPLE, "Вымя", "Коровы обязательно должны иметь вымя.", sbAppliedTransformation));
 			if(applyTransformation && applyCrotchBoobs) {
 				sbAppliedTransformation.append(worker.setBreastCrotchType(worker.getRace().getRacialBody().getBreastCrotchType()));
 			}
@@ -523,7 +523,7 @@ public class Evelyx extends NPC {
 			if(!anyTransformationAvailable) {
 				anyTransformationAvailable = applyCrotchBoobSize;
 			}
-			sbTransformationText.append(getTransformationFormat(applyCrotchBoobSize, PresetColour.BASE_PURPLE_LIGHT, "Udder Enlargement", "Cows should have large udders.", sbAppliedTransformation));
+			sbTransformationText.append(getTransformationFormat(applyCrotchBoobSize, PresetColour.BASE_PURPLE_LIGHT, "Увеличение вымени", "У коров должно быть большое вымя.", sbAppliedTransformation));
 			if(applyTransformation && applyCrotchBoobSize) {
 				sbAppliedTransformation.append(worker.setBreastCrotchSize(cupSize.getMeasurement()/2));
 			}
@@ -532,7 +532,7 @@ public class Evelyx extends NPC {
 			if(!anyTransformationAvailable) {
 				anyTransformationAvailable = applyCrotchBoobMilkStorage;
 			}
-			sbTransformationText.append(getTransformationFormat(applyCrotchBoobMilkStorage, PresetColour.MILK, "Udder Milk Storage", "A cow's udders should be full of milk.", sbAppliedTransformation));
+			sbTransformationText.append(getTransformationFormat(applyCrotchBoobMilkStorage, PresetColour.MILK, "Емкость вымени", "Вымя коровы должно быть полно молока.", sbAppliedTransformation));
 			if(applyTransformation && applyCrotchBoobMilkStorage) {
 				sbAppliedTransformation.append(worker.setBreastCrotchMilkStorage(milkStorage*2));
 			}
@@ -541,7 +541,7 @@ public class Evelyx extends NPC {
 			if(!anyTransformationAvailable) {
 				anyTransformationAvailable = applyCrotchBoobMilkRegeneration;
 			}
-			sbTransformationText.append(getTransformationFormat(applyCrotchBoobMilkRegeneration, PresetColour.MILK, "Udder Milk Regeneration", "Cows should never stop producing milk.", sbAppliedTransformation));
+			sbTransformationText.append(getTransformationFormat(applyCrotchBoobMilkRegeneration, PresetColour.MILK, "Регенерация вымени", "Коровы никогда не должны переставать давать молоко.", sbAppliedTransformation));
 			if(applyTransformation && applyCrotchBoobMilkRegeneration) {
 				sbAppliedTransformation.append(worker.setBreastCrotchLactationRegeneration(milkRegeneration*2));
 			}
@@ -550,7 +550,7 @@ public class Evelyx extends NPC {
 			if(!anyTransformationAvailable) {
 				anyTransformationAvailable = applyCrotchBoobPuffy;
 			}
-			sbTransformationText.append(getTransformationFormat(applyCrotchBoobPuffy, PresetColour.BASE_PURPLE_LIGHT, "Puffy Teats", "Large teats improve milking machine compatibility.", sbAppliedTransformation));
+			sbTransformationText.append(getTransformationFormat(applyCrotchBoobPuffy, PresetColour.BASE_PURPLE_LIGHT, "Набухшие соски", "Большие соски улучшают совместимость с доильным аппаратом.", sbAppliedTransformation));
 			if(applyTransformation && applyCrotchBoobPuffy) {
 				sbAppliedTransformation.append(worker.addNippleCrotchOrificeModifier(OrificeModifier.PUFFY));
 			}
@@ -561,7 +561,7 @@ public class Evelyx extends NPC {
 		if(!anyTransformationAvailable) {
 			anyTransformationAvailable = applyVagina;
 		}
-		sbTransformationText.append(getTransformationFormat(applyVagina, PresetColour.BASE_PINK_LIGHT, "Grow Vagina", "A cow needs to be able to be impregnated.", sbAppliedTransformation));
+		sbTransformationText.append(getTransformationFormat(applyVagina, PresetColour.BASE_PINK_LIGHT, "Увеличить влагалище", "Корову нужно иметь возможность оплодотворить.", sbAppliedTransformation));
 		if(applyTransformation && applyVagina) {
 			sbAppliedTransformation.append(worker.setVaginaType(worker.getAssRace().getRacialBody().getVaginaType()));
 		}
@@ -570,7 +570,7 @@ public class Evelyx extends NPC {
 		if(!anyTransformationAvailable) {
 			anyTransformationAvailable = applyVaginaWetness;
 		}
-		sbTransformationText.append(getTransformationFormat(applyVaginaWetness, PresetColour.GIRLCUM, "Wet Vagina", "A cow's pussy needs to be wet and ready to be fucked at any moment.", sbAppliedTransformation));
+		sbTransformationText.append(getTransformationFormat(applyVaginaWetness, PresetColour.GIRLCUM, "Влажное влагалище", "Коровья киска должна быть влажной и готовой к траху в любой момент.", sbAppliedTransformation));
 		if(applyTransformation && applyVaginaWetness) {
 			sbAppliedTransformation.append(worker.setVaginaWetness(pussyWetness));
 		}
@@ -580,7 +580,7 @@ public class Evelyx extends NPC {
 			if(!anyTransformationAvailable) {
 				anyTransformationAvailable = applyVaginaSquirter;
 			}
-			sbTransformationText.append(getTransformationFormat(applyVaginaSquirter, PresetColour.GIRLCUM, "Squirter", "A cow's orgasm should be profitable.", sbAppliedTransformation));
+			sbTransformationText.append(getTransformationFormat(applyVaginaSquirter, PresetColour.GIRLCUM, "Сквиртер", "Оргазм коровы должен приносить прибыль.", sbAppliedTransformation));
 			if(applyTransformation && applyVaginaSquirter) {
 				sbAppliedTransformation.append(worker.setVaginaSquirter(true));
 			}
@@ -590,7 +590,7 @@ public class Evelyx extends NPC {
 		if(!anyTransformationAvailable) {
 			anyTransformationAvailable = applyPenisRemoval;
 		}
-		sbTransformationText.append(getTransformationFormat(applyPenisRemoval, PresetColour.GENERIC_MINOR_BAD, "Remove Penis", "Cows do not require a penis.", sbAppliedTransformation));
+		sbTransformationText.append(getTransformationFormat(applyPenisRemoval, PresetColour.GENERIC_MINOR_BAD, "Удалить пенис", "Коровам не требуется пенис.", sbAppliedTransformation));
 		if(applyTransformation && applyPenisRemoval) {
 			sbAppliedTransformation.append(worker.setPenisType(PenisType.NONE));
 		}
@@ -790,7 +790,7 @@ public class Evelyx extends NPC {
 		oralRing.addEffect(new ItemEffect(ItemEffectType.CLOTHING, TFModifier.TF_MOD_FETISH_BODY_PART, TFModifier.TF_MOD_FETISH_ORAL_GIVING, TFPotency.MAJOR_BOOST, 0));
 		oralRing.addEffect(new ItemEffect(ItemEffectType.CLOTHING, TFModifier.TF_MOD_FETISH_BODY_PART, TFModifier.TF_MOD_FETISH_VAGINAL_GIVING, TFPotency.MAJOR_BOOST, 0));
 		
-		oralRing.setName("Evelyx's oral ring");
+		oralRing.setName("Оральное кольцо Эвеликс");
 		
 		return oralRing;
 	}
@@ -821,15 +821,13 @@ public class Evelyx extends NPC {
 				
 		if(equippedTag!=null && equippedTag.getClothingType()==ClothingType.getClothingTypeFromId("innoxia_quest_dairy_ear_tag")) {
 			cow.forceUnequipClothingIntoVoid(cow, equippedTag);
-			return "<p style='text-align:center;'>"
-						+"You have traded in your old ear tag for "+upgradedEarTag.getDisplayName(true)+"!"
+			return "<p style='text-align:center;'>Вы променяли свою старую бирку на "+upgradedEarTag.getDisplayName(true)+"!"
 						+"<br/>"+cow.equipClothingFromNowhere(upgradedEarTag, true, cow)
 					+"</p>";
 			
 		} else {
 			cow.removeClothingByType(ClothingType.getClothingTypeFromId("innoxia_quest_dairy_ear_tag"));
-			return "<p style='text-align:center;'>"
-				+"You have traded in your old ear tag for "+upgradedEarTag.getDisplayName(true)+"!"
+			return "<p style='text-align:center;'>Вы променяли свою старую бирку на "+upgradedEarTag.getDisplayName(true)+"!"
 				+"<br/>"+cow.addClothing(upgradedEarTag, false)
 			+"</p>";
 		}
@@ -878,7 +876,7 @@ public class Evelyx extends NPC {
 			collarColour = PresetColour.CLOTHING_GOLD;
 		}
 		AbstractClothing collar = Main.game.getItemGen().generateClothing("innoxia_cattle_cowbell_collar", collarColour, PresetColour.CLOTHING_BLACK, collarColour, false);
-		collar.setName("Evelyx's Milker cowbell collar");
+		collar.setName("Ошейник-колокольчик Эвеликс для дойки");
 		collar.clearEffects();
 		
 //		collar.addEffect(new ItemEffect(ItemEffectType.CLOTHING, TFModifier.CLOTHING_SPECIAL, TFModifier.CLOTHING_SEALING, TFPotency.MAJOR_DRAIN, 0));
@@ -912,7 +910,7 @@ public class Evelyx extends NPC {
 			collarColour = PresetColour.CLOTHING_GOLD;
 		}
 		AbstractClothing collar = Main.game.getItemGen().generateClothing("innoxia_cattle_piercing_nose_ring", collarColour, false);
-		collar.setName("Evelyx's Milker nose ring");
+		collar.setName("Носовое кольцо Эвеликс для дойки");
 		collar.clearEffects();
 		
 //		collar.addEffect(new ItemEffect(ItemEffectType.CLOTHING, TFModifier.CLOTHING_SPECIAL, TFModifier.CLOTHING_SEALING, TFPotency.MAJOR_DRAIN, 0));
@@ -948,8 +946,8 @@ public class Evelyx extends NPC {
 					false,
 					new TattooWriting(
 							(slave
-								?"Princess's Pet"
-								:"Evelyx's Dairy Milker")
+								?"Питомец принцессы"
+								:"Дойная корова Эвеликс")
 								+" #"+(worker.isPlayer()?Main.game.getDialogueFlags().getSavedLong("evelyx_player_number"):(Main.game.getNpcTally()+1500)),
 							PresetColour.CLOTHING_BLACK,
 							false),
@@ -1051,7 +1049,7 @@ public class Evelyx extends NPC {
 						new ItemEffect(ingredient.getEnchantmentEffect(), TFModifier.TF_CORE, TFModifier.TF_MOD_FEMININITY, TFPotency.MAJOR_BOOST, 0),
 						new ItemEffect(ingredient.getEnchantmentEffect(), TFModifier.TF_CORE, TFModifier.TF_MOD_FEMININITY, TFPotency.MAJOR_BOOST, 0),
 						new ItemEffect(ingredient.getEnchantmentEffect(), TFModifier.TF_CORE, TFModifier.TF_MOD_FEMININITY, TFPotency.BOOST, 0)));
-		potion.setName("Evelyx's 'Pretty Cow' Potion");
+		potion.setName("Зелье Эвеликс «Милая коровка»");
 		
 		return potion;
 	}
@@ -1067,7 +1065,7 @@ public class Evelyx extends NPC {
 						new ItemEffect(ingredient.getEnchantmentEffect(), TFModifier.TF_BREASTS, TFModifier.TF_MOD_WETNESS, TFPotency.MAJOR_BOOST, 0),
 						new ItemEffect(ingredient.getEnchantmentEffect(), TFModifier.TF_BREASTS, TFModifier.TF_MOD_WETNESS, TFPotency.MAJOR_BOOST, 0),
 						new ItemEffect(ingredient.getEnchantmentEffect(), TFModifier.TF_BREASTS, TFModifier.TF_MOD_REGENERATION, TFPotency.MAJOR_BOOST, 0)));
-		potion.setName("Evelyx's 'Milky Cow' Potion");
+		potion.setName("Зелье Эвеликс «Молочная корова»");
 		
 		return potion;
 	}
@@ -1082,7 +1080,7 @@ public class Evelyx extends NPC {
 						new ItemEffect(ingredient.getEnchantmentEffect(), TFModifier.TF_BREASTS, TFModifier.TF_MOD_SIZE_SECONDARY, TFPotency.MINOR_BOOST, 0),
 						new ItemEffect(ingredient.getEnchantmentEffect(), TFModifier.TF_BREASTS, TFModifier.TF_MOD_SIZE_TERTIARY, TFPotency.MINOR_BOOST, 0),
 						new ItemEffect(ingredient.getEnchantmentEffect(), TFModifier.TF_BREASTS, TFModifier.TF_MOD_ORIFICE_PUFFY, TFPotency.MINOR_BOOST, 0)));
-		potion.setName("Evelyx's 'Busty Cow' Potion");
+		potion.setName("Зелье Эвеликс «Пышная корова»");
 		
 		return potion;
 	}
@@ -1098,7 +1096,7 @@ public class Evelyx extends NPC {
 						new ItemEffect(ingredient.getEnchantmentEffect(), TFModifier.TF_VAGINA, TFModifier.TF_MOD_WETNESS, TFPotency.MAJOR_BOOST, 0),
 						new ItemEffect(ingredient.getEnchantmentEffect(), TFModifier.TF_VAGINA, TFModifier.TF_MOD_WETNESS, TFPotency.MAJOR_BOOST, 0),
 						new ItemEffect(ingredient.getEnchantmentEffect(), TFModifier.TF_VAGINA, TFModifier.TF_MOD_VAGINA_SQUIRTER, TFPotency.MINOR_BOOST, 0)));
-		potion.setName("Evelyx's 'Wet Cow' Potion");
+		potion.setName("Зелье «Мокрая корова» Эвеликс");
 		
 		return potion;
 	}
@@ -1109,7 +1107,7 @@ public class Evelyx extends NPC {
 		AbstractItem potion = EnchantingUtils.craftItem(ingredient,
 				Util.newArrayListOfValues(
 						new ItemEffect(ingredient.getEnchantmentEffect(), TFModifier.TF_MOD_FETISH_BEHAVIOUR, TFModifier.TF_MOD_FETISH_BIMBO, TFPotency.BOOST, 0)));
-		potion.setName("Evelyx's 'Happy Cow' Potion");
+		potion.setName("Зелье «Счастливая корова» Эвеликс");
 		
 		return potion;
 	}
@@ -1197,7 +1195,7 @@ public class Evelyx extends NPC {
 	 * I didn't add her as an instanced character due to her only appearing in this one bad end.
 	 */
 	public void badEndInitPrincess(NPC princess) {
-		princess.setGenericName("Princess");
+		princess.setGenericName("Принцесса");
 		
 		princess.addSpecialPerk(Perk.SPECIAL_MEGA_SLUT);
 		princess.addSpecialPerk(Perk.SPECIAL_MELEE_EXPERT);
@@ -1372,7 +1370,7 @@ public class Evelyx extends NPC {
 		ring.addEffect(new ItemEffect(ItemEffectType.CLOTHING, TFModifier.CLOTHING_MAJOR_ATTRIBUTE, TFModifier.HEALTH_MAXIMUM, TFPotency.MINOR_BOOST, 0));
 		ring.addEffect(new ItemEffect(ItemEffectType.CLOTHING, TFModifier.CLOTHING_MAJOR_ATTRIBUTE, TFModifier.STRENGTH, TFPotency.MINOR_BOOST, 0));
 		ring.addEffect(new ItemEffect(ItemEffectType.CLOTHING, TFModifier.CLOTHING_MAJOR_ATTRIBUTE, TFModifier.INTELLIGENCE, TFPotency.MINOR_BOOST, 0));
-		ring.setName("Lunette's Gift");
+		ring.setName("Подарок Лунетт");
 		princess.equipClothingFromNowhere(ring, true, princess);
 
 		princess.setPiercedNose(true);
@@ -1473,13 +1471,13 @@ public class Evelyx extends NPC {
 	public void applyBadEndFeral(NPC princess) {
 		Main.game.getPlayer().setFeral(Subspecies.COW_MORPH);
 		
-		Main.game.getPlayer().setVirginityLoss(new SexType(SexParticipantType.NORMAL, SexAreaOrifice.VAGINA, SexAreaPenetration.PENIS), princess, " in Evelyx's slave barn as you were transformed into a feral cow");
+		Main.game.getPlayer().setVirginityLoss(new SexType(SexParticipantType.NORMAL, SexAreaOrifice.VAGINA, SexAreaPenetration.PENIS), princess, " в рабском хлеву Эвеликс, когда вы превратились в дикую корову");
 		Main.game.getPlayer().setVaginaVirgin(false);
 		
-		Main.game.getPlayer().setVirginityLoss(new SexType(SexParticipantType.NORMAL, SexAreaOrifice.ANUS, SexAreaPenetration.PENIS), princess, " in Evelyx's slave barn soon after you were transformed into a feral cow");
+		Main.game.getPlayer().setVirginityLoss(new SexType(SexParticipantType.NORMAL, SexAreaOrifice.ANUS, SexAreaPenetration.PENIS), princess, " в рабском хлеву Эвеликс вскоре после того, как вы превратились в дикую корову");
 		Main.game.getPlayer().setAssVirgin(false);
 		
-		Main.game.getPlayer().setVirginityLoss(new SexType(SexParticipantType.NORMAL, SexAreaOrifice.MOUTH, SexAreaPenetration.PENIS), princess, " in Evelyx's slave barn soon after you were transformed into a feral cow");
+		Main.game.getPlayer().setVirginityLoss(new SexType(SexParticipantType.NORMAL, SexAreaOrifice.MOUTH, SexAreaPenetration.PENIS), princess, " в рабском хлеву Эвеликс вскоре после того, как вы превратились в дикую корову");
 		Main.game.getPlayer().setFaceVirgin(false);
 		
 		if(Main.game.getDialogueFlags().hasFlag("innoxia_evelyx_bad_end_pussy")) {

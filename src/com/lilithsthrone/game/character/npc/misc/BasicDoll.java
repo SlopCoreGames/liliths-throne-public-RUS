@@ -48,7 +48,7 @@ public class BasicDoll extends NPC {
 	
 	public BasicDoll(Gender gender, boolean isImported) {
 		super(isImported,
-				new NameTriplet("Doll"), "",
+				new NameTriplet("Кукла"), "",
 				"",
 				18, Util.randomItemFrom(Month.values()), 1+Util.random.nextInt(27),
 				1,
@@ -140,7 +140,7 @@ public class BasicDoll extends NPC {
 	
 	@Override
 	public String getDescription() {
-		return UtilText.parse(this, "[npc.Name] [npc.is] [npc.a_race] who was created at Lovienne's Luxuries.");
+		return UtilText.parse(this, "[npc.Name] [npc.is] [npc.a_race], созданная в «Роскоши Ловиенн».");
 	}
 
 	@Override

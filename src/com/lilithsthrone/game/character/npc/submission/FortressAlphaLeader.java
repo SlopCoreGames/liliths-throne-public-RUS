@@ -94,8 +94,8 @@ public class FortressAlphaLeader extends NPC {
 	
 	public FortressAlphaLeader(boolean isImported) {
 		super(isImported,
-				new NameTriplet("Fyrsia", "Fyrsia", "Fyrsia"), "Lilyshamartu",
-				"The leader of one of Submission's imp fortresses, [npc.name] rules over [npc.her] followers with an iron fist, and shows very little respect towards anyone but [npc.her] boss, 'The Dark Siren'...",
+				new NameTriplet("Фирсия", "Фирсия", "Фирсия"), "Лилисшамарту",
+				"Предводительница одной из крепостей бесов в Submission, [npc.name] правит [npc.her] последователями железной рукой и почти не проявляет уважения ни к кому, кроме босса [npc.her] — «Темной Сирены»...",
 				27, Month.JANUARY, 28,
 				20, Gender.F_P_V_B_FUTANARI, Subspecies.DEMON, RaceStage.GREATER, new CharacterInventory(false, 10), WorldType.IMP_FORTRESS_ALPHA, PlaceType.FORTRESS_ALPHA_KEEP, true);
 
@@ -318,7 +318,7 @@ public class FortressAlphaLeader extends NPC {
 					PresetColour.CLOTHING_BLACK,
 					PresetColour.CLOTHING_BLACK,
 					false,
-					new TattooWriting("Choke on it, bitch!", PresetColour.CLOTHING_BLACK, false, TattooWritingStyle.ITALICISED),
+					new TattooWriting("Подавись этим, сучка!", PresetColour.CLOTHING_BLACK, false, TattooWritingStyle.ITALICISED),
 					null);
 			this.addTattoo(InventorySlot.GROIN, tat);
 			
@@ -351,16 +351,16 @@ public class FortressAlphaLeader extends NPC {
 
 	@Override
 	public String getArtworkFolderName() {
-		return "Fyrsia";
+		return "Фирсия";
 	}
 	
 	@Override
 	public String getDescription() {
 		if(this.isSlave()) {
 			return (UtilText.parse(this,
-					"[npc.NamePos] days of ruling over [npc.her] imp fortress are now over. Having run afoul of the law, [npc.sheIs] now a slave, and is no more than [npc.her] owner's property."));
+					"[npc.NamePos] дней правления над крепостью из [npc.her] бесов подошли к концу. Нарушив закон, [npc.sheIs] теперь рабыня и всего лишь собственность [npc.her] владельца."));
 		} else {
-			return (UtilText.parse(this, "The leader of one of Submission's imp fortresses, [npc.name] rules over [npc.her] followers with an iron fist, and shows very little respect towards anyone but [npc.her] boss, 'The Dark Siren'..."));
+			return (UtilText.parse(this, "Предводительница одной из крепостей бесов в Submission, [npc.name] правит [npc.her] последователями железной рукой и почти не проявляет уважения ни к кому, кроме босса [npc.her] — «Темной Сирены»..."));
 		}
 	}
 	

@@ -86,9 +86,8 @@ public class Fae extends NPC {
 	}
 	
 	public Fae(boolean isImported) {
-		super(isImported, new NameTriplet("Fae"), "Woodward",
-				"Fae is the younger sister of Silvia, with whom she runs the clothing stall 'Rainbow's End' in the Farmer's Market at Elis."
-						+ " Being far more confident and assertive than her sister, Fae is the one who handles most of the interactions with their stall's customers.",
+		super(isImported, new NameTriplet("Фэй"), "Вудворд",
+				"Фэй — младшая сестра Сильвии; вместе они управляют лавкой одежды «Конец радуги» на фермерском рынке в Элисе. Будучи куда более уверенной и напористой, чем её сестра, Фэй берет на себя большую часть общения с покупателями.",
 				30, Month.JANUARY, 19,
 				15,
 				Gender.F_P_V_B_FUTANARI, Subspecies.FOX_MORPH, RaceStage.GREATER,
@@ -96,7 +95,7 @@ public class Fae extends NPC {
 				WorldType.getWorldTypeFromId("innoxia_fields_elis_market"), PlaceType.getPlaceTypeFromId("innoxia_fields_elis_market_clothing"),
 				true);
 
-		this.setGenericName("green-eyed foxtauress");
+		this.setGenericName("зеленоглазая лисодевица");
 		
 		if(!isImported) {
 			dailyUpdate();
@@ -259,7 +258,7 @@ public class Fae extends NPC {
 		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("innoxia_finger_ring", PresetColour.CLOTHING_GOLD, false), true, this);
 		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("innoxia_ankle_anklet", PresetColour.CLOTHING_GOLD, PresetColour.CLOTHING_GOLD, null, false), true, this);
 
-		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("TonyJC_one_strap_crop_tank_top", PresetColour.CLOTHING_RED_BURGUNDY, false), true, this);
+		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("майка-кроп с одной лямкой от TonyJC", PresetColour.CLOTHING_RED_BURGUNDY, false), true, this);
 		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("innoxia_torsoOver_womens_leather_jacket", PresetColour.CLOTHING_BLACK, false), true, this);
 		AbstractClothing jacket = this.getClothingInSlot(InventorySlot.TORSO_OVER);
 		this.isAbleToBeDisplaced(jacket, DisplacementType.UNZIPS, true, true, this);
@@ -283,7 +282,7 @@ public class Fae extends NPC {
 	
 	@Override
 	public String getArtworkFolderName() {
-		return "Fae";
+		return "Фэй";
 	}
 	
 	@Override

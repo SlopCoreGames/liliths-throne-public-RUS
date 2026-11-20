@@ -91,7 +91,7 @@ public class LunetteMelee extends NPC {
 			
 			this.setGenericName(Util.randomItemFrom(namePrefixes)+" "+name);
 			setName(Name.getRandomTriplet(this.getSubspecies()));
-			this.setSurname("Lunettemartu");
+			this.setSurname("Лунеттемарту");
 			this.setPlayerKnowsName(false);
 			
 			// INVENTORY:
@@ -246,7 +246,7 @@ public class LunetteMelee extends NPC {
 	
 	@Override
 	public String getDescription() {
-		return UtilText.parse(this, "This demonic centaur is a member of the faction 'Lunette's Marauders', and loves nothing more than to break anything and anyone who gets in [npc.her] way.");
+		return UtilText.parse(this, "Эта демоническая кентавриха — член фракции «Мародеры Лунетт», и она не любит ничего больше, чем крушить всё и вся, кто встанет на [npc.her] пути.");
 	}
 	
 	@Override

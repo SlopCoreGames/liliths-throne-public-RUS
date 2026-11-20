@@ -67,8 +67,8 @@ public class Nir extends NPC {
 	}
 	
 	public Nir(boolean isImported) {
-		super(isImported, new NameTriplet("Nir"), "Loviennemartu",
-				"Nir is one of two nightmare bodyguards who protect Angelixx at all times.",
+		super(isImported, new NameTriplet("Нир"), "Ловиеннемарту",
+				"Нир — один из двух кошмарных телохранителей, которые постоянно охраняют Анжеликсу.",
 				28, Month.SEPTEMBER, 9,
 				20, Gender.M_P_MALE, Subspecies.HORSE_MORPH, RaceStage.GREATER,
 				new CharacterInventory(false, 30),
@@ -76,7 +76,7 @@ public class Nir extends NPC {
 				true);
 		if(!isImported) {
 			this.setPlayerKnowsName(false);
-			this.setGenericName("enraged nightmare");
+			this.setGenericName("разъяренный кошмар");
 		}
 	}
 	
@@ -304,7 +304,7 @@ public class Nir extends NPC {
 		necklace.addEffect(new ItemEffect(ItemEffectType.CLOTHING, TFModifier.CLOTHING_ATTRIBUTE, TFModifier.DAMAGE_MELEE_WEAPON, TFPotency.MAJOR_BOOST, 0));
 		necklace.addEffect(new ItemEffect(ItemEffectType.CLOTHING, TFModifier.CLOTHING_ATTRIBUTE, TFModifier.DAMAGE_MELEE_WEAPON, TFPotency.MINOR_BOOST, 0));
 		this.equipClothingFromNowhere(necklace, true, this);
-		necklace.setName("Angelixx's Present");
+		necklace.setName("Подарок Анжеликсны");
 		
 		this.equipMainWeaponFromNowhere(Main.game.getItemGen().generateWeapon("innoxia_bat_wooden", DamageType.PHYSICAL));
 		

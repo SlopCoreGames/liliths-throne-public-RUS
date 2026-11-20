@@ -99,9 +99,8 @@ public class Lunexis extends NPC {
 	}
 	
 	public Lunexis(boolean isImported) {
-		super(isImported, new NameTriplet("Lunexis"), "Lunettemartuilani",
-				"One of Lunette's recognised daughters, Lunexis is particularly strong, dominant, and brutal."
-						+ " Delighting in destruction, chaos, and mayhem, she is used by her elder lilin mother as a living weapon, who tasks her with destroying towns and villages which have displeased her.",
+		super(isImported, new NameTriplet("Лунексис"), "Лунеттемартуилани",
+				"Одна из признанных дочерей Лунетте, Лунексис отличается особой силой, доминантностью и жестокостью. Упиваясь разрушением, хаосом и погромами, она служит живым оружием своей старшей матери-лилин, которая поручает ей уничтожать города и деревни, разгневавшие её.",
 				517, Month.JANUARY, 15,
 				35,
 				null, null, null,
@@ -110,7 +109,7 @@ public class Lunexis extends NPC {
 				true);
 		
 		if(!isImported) {
-			this.setGenericName("four-armed demonic-centauresses");
+			this.setGenericName("четырехрукие демонические кентавриссы");
 			this.setPlayerKnowsName(false);
 		}
 	}
@@ -129,7 +128,7 @@ public class Lunexis extends NPC {
 			this.setPiercedPenis(true);
 			this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("innoxia_piercing_penis_ring", PresetColour.CLOTHING_GOLD, false), true, this);
 			this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("innoxia_wrist_thin_bangles", PresetColour.CLOTHING_GOLD, false), InventorySlot.TAIL, true, this);
-			this.setSurname("Lunettemartuilani");
+			this.setSurname("Лунеттемартуилани");
 		}
 	}
 
@@ -363,7 +362,7 @@ public class Lunexis extends NPC {
 
 	@Override
 	public String getArtworkFolderName() {
-		return "Lunexis";
+		return "Лунексис";
 	}
 	
 	@Override
@@ -412,7 +411,7 @@ public class Lunexis extends NPC {
 	}
 	
 	private void addRandomRaider(Cell cell, boolean leader) {
-		List<String> defaultNamePrefixes = Util.newArrayListOfValues("angry", "furious", "wrathful", "looting", "pillaging");
+		List<String> defaultNamePrefixes = Util.newArrayListOfValues("angry", "яростная", "wrathful", "looting", "pillaging");
 		String defaultName = "raider";
 		if(leader) {
 			defaultNamePrefixes = Util.newArrayListOfValues("commanding", "dominant");
@@ -441,19 +440,19 @@ public class Lunexis extends NPC {
 		int totalCells = raidersCells.size() + raidersClearedCells.size();
 		
 		if(raidersCells.size() > (totalCells/4)*3) { // 75%+ dangerous
-			sb.append("Although you've defeated the raiders who were looting this part of Themiscyra, [style.colourBad(there are still many more)] to be found throughout the town...");
+			sb.append("Хотя вы уже разбили налетчиков, грабивших эту часть Фемисциры, [style.colourBad(по всему городу всё еще можно встретить немало других)]...");
 			
 		} else if(raidersCells.size() > totalCells/2) { // 50%+ dangerous
-			sb.append("You've defeated many groups of raiders within Themiscyra, although [style.colourMinorBad(there are still more)] to be found throughout the town...");
+			sb.append("Вы разбили множество групп налетчиков в Фемисцире, хотя [style.colourMinorBad(по всему городу всё еще можно встретить остальных)]...");
 			
 		} else if(raidersCells.size() > totalCells/4) { // 25%+ dangerous
-			sb.append("You've defeated the majority of the raiders who are looting Themiscyra, and now [style.colourMinorGood(there aren't too many more)] to be found...");
+			sb.append("Вы разбили большинство налетчиков, грабящих Фемисциру, и теперь [style.colourMinorGood(их осталось совсем немного)]...");
 			
 		} else { // 0%+ dangerous
 			if(raidersCells.size()==0) {
-				sb.append("You've defeated all of the looting raiders, and are now recognised, by Aurokaris at least, as the [style.colourExcellent(Hero"+(Main.game.getPlayer().isFeminine()?"ine":"")+" of Themiscyra)]!");
+				sb.append("Вы разбили всех грабителей-налетчиков и теперь признаны, по крайней мере Аурокарис, как [style.colourExcellent(Герой"+(Main.game.getPlayer().isFeminine()?"ка)}":"")+" Темисциры)]!");
 			} else {
-				sb.append("You've defeated the vast majority of the raiders who are looting Themiscyra; [style.colourGood(there are now only one or two groups left)] to defeat...");
+				sb.append("Ты разгромил подавляющее большинство налетчиков, грабящих Темисциру; [style.colourGood(осталось всего одна или две группы)], чтобы окончательно...");
 			}
 		}
 		
@@ -626,7 +625,7 @@ public class Lunexis extends NPC {
 			}
 			pentagram.addEffect(new ItemEffect(ItemEffectType.CLOTHING, TFModifier.CLOTHING_MAJOR_ATTRIBUTE, TFModifier.CORRUPTION, TFPotency.MINOR_BOOST, 0));
 			pentagram.addEffect(new ItemEffect(ItemEffectType.CLOTHING, TFModifier.CLOTHING_ATTRIBUTE, TFModifier.RESISTANCE_LUST, TFPotency.MINOR_DRAIN, 0));
-			pentagram.setName("Cock-sleeve's Reward");
+			pentagram.setName("Награда для кок-слива");
 			meraxis.equipClothingFromNowhere(pentagram, true, meraxis);
 			
 			meraxis.setPiercedNipples(true);
@@ -643,7 +642,7 @@ public class Lunexis extends NPC {
 							"innoxia_animal_hoof",
 							PresetColour.CLOTHING_PURPLE,
 							false,
-							new TattooWriting("Hoof Cleaner", PresetColour.CLOTHING_PURPLE, false),
+							new TattooWriting("Чистильщик копыт", PresetColour.CLOTHING_PURPLE, false),
 							null));
 			meraxis.addTattoo(InventorySlot.HORNS,
 					new Tattoo(
@@ -657,14 +656,14 @@ public class Lunexis extends NPC {
 							"innoxia_animal_hoof",
 							PresetColour.CLOTHING_PURPLE_DARK,
 							false,
-							new TattooWriting("Step On Me!", PresetColour.CLOTHING_PURPLE, false, TattooWritingStyle.BOLD),
+							new TattooWriting("Наступи на меня!", PresetColour.CLOTHING_PURPLE, false, TattooWritingStyle.BOLD),
 							null));
 			meraxis.addTattoo(InventorySlot.NECK,
 					new Tattoo(
 							"innoxia_symbol_lines",
 							PresetColour.CLOTHING_PURPLE,
 							false,
-							new TattooWriting("Choke Me!", PresetColour.CLOTHING_PURPLE, false, TattooWritingStyle.BOLD),
+							new TattooWriting("Задуши меня!", PresetColour.CLOTHING_PURPLE, false, TattooWritingStyle.BOLD),
 							new TattooCounter(TattooCounterType.SEX_SUB, TattooCountType.NUMBERS, PresetColour.CLOTHING_PURPLE, false, meraxis)));
 			meraxis.addTattoo(InventorySlot.WRIST,
 					new Tattoo(
@@ -680,7 +679,7 @@ public class Lunexis extends NPC {
 							"innoxia_symbol_tribal",
 							PresetColour.CLOTHING_PINK_HOT,
 							false,
-							new TattooWriting("~Fill Me Up~", PresetColour.CLOTHING_PINK_HOT, false, TattooWritingStyle.ITALICISED),
+							new TattooWriting("~Наполни меня~", PresetColour.CLOTHING_PINK_HOT, false, TattooWritingStyle.ITALICISED),
 							new TattooCounter(TattooCounterType.CUM_TAKEN, TattooCountType.NUMBERS, PresetColour.CLOTHING_PINK_HOT, false, meraxis)));
 			meraxis.addTattoo(InventorySlot.CHEST,
 					new Tattoo(
@@ -689,14 +688,14 @@ public class Lunexis extends NPC {
 							PresetColour.CLOTHING_PURPLE_ROYAL,
 							PresetColour.CLOTHING_PURPLE,
 							false,
-							new TattooWriting("~Slap My Tits~", PresetColour.CLOTHING_PINK_HOT, false, TattooWritingStyle.ITALICISED),
+							new TattooWriting("~Шлепни меня по сиськам~", PresetColour.CLOTHING_PINK_HOT, false, TattooWritingStyle.ITALICISED),
 							new TattooCounter(TattooCounterType.UNIQUE_SEX_PARTNERS, TattooCountType.NUMBERS, PresetColour.CLOTHING_PINK_HOT, false, meraxis)));
 			meraxis.addTattoo(InventorySlot.NIPPLE,
 					new Tattoo(
 							"innoxia_knot_spiral",
 							PresetColour.CLOTHING_RED_BURGUNDY,
 							false,
-							new TattooWriting("~Pinch & Pull~", PresetColour.CLOTHING_RED, false, TattooWritingStyle.ITALICISED),
+							new TattooWriting("~Ущипни и потяни~", PresetColour.CLOTHING_RED, false, TattooWritingStyle.ITALICISED),
 							null));
 			meraxis.addTattoo(InventorySlot.HAND,
 					new Tattoo(
@@ -723,7 +722,7 @@ public class Lunexis extends NPC {
 							PresetColour.CLOTHING_PURPLE,
 							PresetColour.CLOTHING_PURPLE,
 							false,
-							new TattooWriting("Foal Factory", PresetColour.CLOTHING_PURPLE, false),
+							new TattooWriting("Ферма жеребят", PresetColour.CLOTHING_PURPLE, false),
 							new TattooCounter(TattooCounterType.OFFSPRING_BIRTHED, TattooCountType.NUMBERS, PresetColour.CLOTHING_PURPLE, false, meraxis)));
 			meraxis.addTattoo(InventorySlot.FINGER,
 					new Tattoo(
@@ -737,7 +736,7 @@ public class Lunexis extends NPC {
 							"innoxia_knot_trinity",
 							PresetColour.CLOTHING_PURPLE,
 							false,
-							new TattooWriting("Trip Me Up!", PresetColour.CLOTHING_PURPLE, false, TattooWritingStyle.BOLD),
+							new TattooWriting("Подставь мне подножку!", PresetColour.CLOTHING_PURPLE, false, TattooWritingStyle.BOLD),
 							null));
 			meraxis.addTattoo(InventorySlot.LEG,
 					new Tattoo(
@@ -764,7 +763,7 @@ public class Lunexis extends NPC {
 							PresetColour.CLOTHING_BLACK,
 							PresetColour.CLOTHING_PINK_HOT,
 							false,
-							new TattooWriting("~Knock Me Up~", PresetColour.CLOTHING_PINK_HOT, false, TattooWritingStyle.ITALICISED),
+							new TattooWriting("~Оплодотвори меня~", PresetColour.CLOTHING_PINK_HOT, false, TattooWritingStyle.ITALICISED),
 							new TattooCounter(TattooCounterType.PREGNANCY, TattooCountType.TALLY, PresetColour.CLOTHING_PINK_HOT, false, meraxis)));
 			meraxis.addTattoo(InventorySlot.ANUS,
 					new Tattoo(
@@ -773,14 +772,14 @@ public class Lunexis extends NPC {
 							PresetColour.CLOTHING_RED_VERY_DARK,
 							PresetColour.CLOTHING_PURPLE,
 							false,
-							new TattooWriting("Rough Anal Only!", PresetColour.CLOTHING_RED, false, TattooWritingStyle.BOLD),
+							new TattooWriting("Только грубый анал!", PresetColour.CLOTHING_RED, false, TattooWritingStyle.BOLD),
 							new TattooCounter(TattooCounterType.CUM_TAKEN_ANUS, TattooCountType.NUMBERS, PresetColour.CLOTHING_RED, false, meraxis)));
 			meraxis.addTattoo(InventorySlot.VAGINA,
 					new Tattoo(
 							"innoxia_animal_hoof",
 							PresetColour.CLOTHING_PURPLE_DARK,
 							false,
-							new TattooWriting("Break This Cunt!", PresetColour.CLOTHING_PURPLE, false, TattooWritingStyle.BOLD),
+							new TattooWriting("Разъеби эту киску!", PresetColour.CLOTHING_PURPLE, false, TattooWritingStyle.BOLD),
 							new TattooCounter(TattooCounterType.CUM_TAKEN_PUSSY, TattooCountType.NUMBERS, PresetColour.CLOTHING_PURPLE, false, meraxis)));
 		// Increment stats for tattoo counters:
 			applyTrainingSexCounts(meraxis, new SexType(SexAreaOrifice.VAGINA, SexAreaPenetration.PENIS), 1);
@@ -806,7 +805,7 @@ public class Lunexis extends NPC {
 						"innoxia_symbol_tribal",
 						PresetColour.CLOTHING_PINK,
 						false,
-						new TattooWriting(Main.game.isAnalContentEnabled()?"Rimjob Whore":"Cunt Kisser", PresetColour.CLOTHING_PINK, false),
+						new TattooWriting(Main.game.isAnalContentEnabled()?"Шлюха для римминга":"Лизунчик", PresetColour.CLOTHING_PINK, false),
 						null));
 	}
 	

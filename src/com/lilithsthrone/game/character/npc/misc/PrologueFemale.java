@@ -61,8 +61,8 @@ public class PrologueFemale extends NPC {
 	}
 	
 	public PrologueFemale(boolean isImported) {
-		super(isImported, new NameTriplet("Alexander", "Alex", "Alexandria"), "Bonheur",
-				"One of the guests at the museum's opening exhibit. She's got a beautiful face and figure, and, even better, she seems to have taken an instant liking towards you...",
+		super(isImported, new NameTriplet("Александр", "Алекс", "Александрия"), "Бонёр",
+				"Одна из гостей на открытии выставки в музее. У неё прекрасное лицо и фигура, но что ещё лучше — кажется, она мгновенно прониклась к вам симпатией...",
 				26, Month.APRIL, 12,
 				3,
 				Gender.F_V_B_FEMALE,

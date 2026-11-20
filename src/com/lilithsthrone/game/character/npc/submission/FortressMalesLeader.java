@@ -81,8 +81,8 @@ public class FortressMalesLeader extends NPC {
 	
 	public FortressMalesLeader(boolean isImported) {
 		super(isImported,
-				new NameTriplet("Jhortrax", "Jhortriss", "Jhortriss"), "Liannamartu",
-				"The leader of one of Submission's imp fortresses, [npc.name] and [npc.her] all-male gang of imps take great pleasure in breeding anyone foolish enough to oppose their ruler, 'The Dark Siren'...",
+				new NameTriplet("Джортракс", "Джортрисс", "Джортрисс"), "Лианнамарту",
+				"Лидер одной из крепостей бесов в Submission; [npc.name] и [npc.her] — это исключительно мужская банда бесов, которые получают истинное удовольствие, разводя любого глупца, решившего пойти против их правительницы, «Темной Сирены»...",
 				65, Month.SEPTEMBER, 19,
 				20, Gender.M_P_MALE, Subspecies.DEMON, RaceStage.GREATER, new CharacterInventory(false, 10), WorldType.IMP_FORTRESS_MALES, PlaceType.FORTRESS_MALES_KEEP, true);
 
@@ -280,16 +280,16 @@ public class FortressMalesLeader extends NPC {
 
 	@Override
 	public String getArtworkFolderName() {
-		return "Jhortrax";
+		return "Джортракс";
 	}
 
 	@Override
 	public String getDescription() {
 		if(this.isSlave()) {
 			return (UtilText.parse(this,
-					"[npc.NamePos] days of ruling over [npc.her] imp fortress are now over. Having run afoul of the law, [npc.sheIs] now a slave, and is no more than [npc.her] owner's property."));
+					"[npc.NamePos] дней правления над крепостью из [npc.her] бесов подошли к концу. Нарушив закон, [npc.sheIs] теперь рабыня и всего лишь собственность [npc.her] владельца."));
 		} else {
-			return (UtilText.parse(this, "The leader of one of Submission's imp fortresses, [npc.name] and [npc.her] all-male gang of imps take great pleasure in breeding anyone foolish enough to oppose their ruler, 'The Dark Siren'..."));
+			return (UtilText.parse(this, "Лидер одной из крепостей бесов в Submission; [npc.name] и [npc.her] — это исключительно мужская банда бесов, которые получают истинное удовольствие, разводя любого глупца, решившего пойти против их правительницы, «Темной Сирены»..."));
 		}
 	}
 	

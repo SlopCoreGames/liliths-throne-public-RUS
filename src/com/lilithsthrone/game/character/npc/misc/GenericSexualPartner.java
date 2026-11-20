@@ -158,7 +158,7 @@ public class GenericSexualPartner extends NPC {
 	public void loadFromXML(Element parentElement, Document doc, CharacterImportSetting... settings) {
 		loadNPCVariablesFromXML(this, null, parentElement, doc, settings);
 		
-		this.setName(new NameTriplet("unknown male", "unknown female", "unknown female"));
+		this.setName(new NameTriplet("неизвестный мужчина", "неизвестная женщина", "неизвестная женщина"));
 	}
 
 	@Override
@@ -284,76 +284,46 @@ public class GenericSexualPartner extends NPC {
 		if(Main.game.getPlayer().hasHymen()) {
 			sb.append("<p>");
 				if(Main.game.getPlayer().hasFetish(Fetish.FETISH_PURE_VIRGIN)) {
-					sb.append("As [npc.namePos] [npc.cock+] thrusts into your [pc.pussy+], you can't help but let out a desperate, shuddering wail."
-								+ " Being so enamoured with the idea of being a pure virgin, you don't know what on Earth possessed you to sign up for pregnancy roulette,"
-									+ " but as [npc.namePos] [npc.cock+] claims your precious virginity, you don't have any time to reflect on your poor choice."
-								+ " The only thing that's on your mind is the agonising pain of having your hymen torn by a person you've never even seen or spoken to before.");
+					sb.append("Когда [npc.namePos] [npc.cock+] [pc.pussy+], ты не можешь удержаться от отчаянного, дрожащего вопля. Будучи настолько очарованной идеей оставаться невинной девой, ты и сама не понимаешь, что за чертовщина заставила тебя ввязаться в эту «рулетку беременности», но пока [npc.namePos] [npc.cock+] забирает твою драгоценную девственность, у тебя нет времени размышлять о своем неверном выборе. Единственное, о чем ты можешь думать — это мучительная боль от того, что твоя девственная плева рвется человеком, которого ты никогда раньше даже не видела и с которым не разговаривала.");
 				} else if(Main.game.getPlayer().hasFetish(Fetish.FETISH_MASOCHIST)) {
-					sb.append("As [npc.namePos] [npc.cock+] thrusts into your [pc.pussy+] to tear your hymen and claim your virginity, you can't help but let out a lewd, masochistic scream."
-							+ " The agonising pain of having your hymen torn by a person you've never even seen or spoken to before completely overwhelms you, and you can't help but squeal and moan in a delightful haze of overwhelming ecstasy.");
+					sb.append("Когда [npc.namePos] [npc.cock+] [pc.pussy+], чтобы разорвать твою плеву и забрать твою девственность, ты невольно издаешь похотливый, мазохистский крик. Мучительная боль от того, что твою плеву рвет человек, которого ты никогда раньше даже не видела и с которым не разговаривала, полностью овладевает тобой, и ты не можешь не визжать и стонать в восхитительном тумане всепоглощающего экстаза.");
 				} else {
-					sb.append("As [npc.namePos] [npc.cock+] thrusts into your [pc.pussy+] to claim your virginity, you can't help but let out a desperate, shuddering wail."
-							+ " The agonising pain of having your hymen torn by a person you've never even seen or spoken to before completely overwhelms you, and you squirm about on the table as you try to endure this terrible experience.");
+					sb.append("Когда [npc.namePos] [npc.cock+] [pc.pussy+], чтобы забрать твою девственность, ты не можешь удержаться от отчаянного, дрожащего вопля. Мучительная боль от того, что твою плеву рвет человек, которого ты никогда раньше даже не видела и с которым не разговаривала, полностью овладевает тобой, и ты ерзаешь на столе, пытаясь вытерпеть этот ужасный опыт.");
 				}
 			sb.append("</p>");
 			
-			sb.append("<p>"
-						+ "As your wail turns into a shuddering cry, you hear the [npc.race] on the other side of the wall let out a surprised shout,"
-						+ " [npc.speechNoExtraEffects(Holy shit! This slut was a virgin!)]"
-					+ "</p>");
+			sb.append("<p>Когда твой вой переходит в дрожащий крик, ты слышишь, как [npc.race] на другой стороне стены издает удивленный возглас: [npc.speechNoExtraEffects(Твою мать! Эта шлюшка оказалась девственницей!)]</p>");
 			
 			sb.append("<p>");
 				if(Main.game.getPlayer().hasFetish(Fetish.FETISH_PURE_VIRGIN)) {
-					sb.append("The room beyond the wall is suddenly filled with derisive laughs and lewd remarks, and you can't help but shed a tear as you realise that you've lost your precious,"
-								+ " pure virginity to some stranger who signed up to try and get you pregnant.");
+					sb.append("Комната за стеной внезапно наполняется насмешливым смехом и похотливыми комментариями, и ты невольно пускаешь слезу, осознавая, что потеряла свою драгоценную, чистую девственность из-за какого-то незнакомца, который записался, чтобы попытаться зачать от тебя ребенка.");
 				} else {
-					sb.append("The room beyond the wall is suddenly filled with derisive laughs and lewd remarks, and you can't help but wince as you realise that you've lost your virginity to some stranger who signed up to try and get you pregnant.");
+					sb.append("Комната за стеной внезапно наполняется насмешливым смехом и похотливыми комментариями, и ты невольно вздрагиваешь, осознавая, что потеряла девственность из-за какого-то незнакомца, который записался, чтобы попытаться зачать от тебя ребенка.");
 				}
 			sb.append("</p>");
 			
-			sb.append("<p>"
-						+ "[pc.thought(Pregnant... From my first time... I'm sure that's not possible...)] you think to yourself, trying to suppress your whimpers as [npc.name] pulls back, before thrusting into you once more."
-					+ "</p>"
-					+ "<p>"
-						+ "As [npc.she] fills your freshly popped cherry with [npc.her] [npc.cock+], you hear [npc.herHim] taunting you from the other side of the wall."
-						+ " [npc.speechNoExtraEffects(What a fucking slut! Choosing to lose your virginity to a game of pregnancy roulette! Hah! Glad I'll never be the one who has to tell our kids how they were conceived!)]"
-					+ "</p>");
+			sb.append("<p>[pc.thought(Беременная... После моего первого раза... Уверена, что это невозможно...)] — думаешь ты про себя, пытаясь подавить всхлипы, когда [npc.name] отстраняется, а затем снова входит в тебя.</p><p>Пока [npc.she] наполняет твою только что раскрывшуюся киску [npc.her] [npc.cock+], ты слышишь, как [npc.herHim] насмехается над тобой с другой стороны стены: [npc.speechNoExtraEffects(Ну и гребаная шлюха! Решила лишиться девственности в игре в рулетку беременности! Ха! Рад, что мне никогда не придется рассказывать нашим детям, как они были зачаты!)]</p>");
 			
 		} else {
 			sb.append("<p>");
 				if(Main.game.getPlayer().hasFetish(Fetish.FETISH_PURE_VIRGIN)) {
-					sb.append("As [npc.namePos] [npc.cock+] thrusts into your [pc.pussy+], you can't help but let out a distressed wail."
-								+ " Being so enamoured with the idea of being a pure virgin, you don't know what on Earth possessed you to sign up for pregnancy roulette,"
-									+ " but as [npc.namePos] [npc.cock+] claims your precious virginity, you don't have any time to reflect on your poor choice."
-								+ " The only thing that's on your mind is the fact that you're being broken in by a person you've never even seen or spoken to before, and you can't help but continue to desperately cry out as [npc.she] penetrates you.");
+					sb.append("Когда [npc.namePos] [npc.cock+] вонзается в твою [pc.pussy+], ты невольно издаешь отчаянный вопль. Будучи настолько очарованной идеей оставаться невинной девой, ты и сама не понимаешь, что за чертовщина заставила тебя ввязаться в эту «рулетку беременности», но пока [npc.namePos] [npc.cock+] забирает твою драгоценную девственность, у тебя нет времени размышлять о своем неверном выборе. Единственное, о чем ты можешь думать — это то, что тебя «ломают» и приручают, причем человек, которого ты никогда раньше не видела и с которым даже не разговаривала, и ты не можешь не продолжать отчаянно кричать, пока [npc.she] проникает в тебя.");
 				} else {
-					sb.append("As [npc.namePos] [npc.cock+] thrusts into your [pc.pussy+] to claim your virginity, you can't help but let out a desperately lewd [pc.moan]."
-							+ " This person who you've never even seen or spoken to before is giving you a feeling unlike any you've felt before, and you can't help but continue to scream and [pc.moan] in a delightful haze of overwhelming ecstasy.");
+					sb.append("Когда [npc.namePos] [npc.cock+] вонзается в твою [pc.pussy+], чтобы забрать твою девственность, ты невольно издаешь отчаянный, похотливый [pc.moan]. Этот человек, которого ты никогда раньше не видела и с которым даже не разговаривала, дарит тебе ощущения, подобные которым ты еще не испытывала, и ты не можешь не продолжать кричать и [pc.moan] в восхитительном тумане всепоглощающего экстаза.");
 				}
 			sb.append("</p>");
 			
-			sb.append("<p>"
-						+ "Thanks to the fact that you'd previously lost your hymen, the only indication that you were a virgin is your intense reaction to being fucked,"
-							+ " which is apparently enough for the [npc.race] on the other side of the wall, as [npc.she] lets out a surprised shout,"
-						+ " [npc.speechNoExtraEffects(Holy shit! I think this slut was a virgin!)]"
-					+ "</p>");
+			sb.append("<p>Благодаря тому, что ты ранее уже теряла девственную плеву, единственным признаком твоей невинности была твоя бурная реакция на трах, чего, судя по всему, оказалось достаточно для [npc.race] по ту сторону стены, когда [npc.she] издает удивленный возглас: [npc.speechNoExtraEffects(Твою мать! Кажется, эта шлюха была девственницей!)]</p>");
 			
 			sb.append("<p>");
 				if(Main.game.getPlayer().hasFetish(Fetish.FETISH_PURE_VIRGIN)) {
-					sb.append("The room beyond the wall is suddenly filled with derisive laughs and lewd remarks, and you can't help but shed a tear as you realise that you've lost your precious,"
-								+ " pure virginity to some stranger who signed up to try and get you pregnant.");
+					sb.append("Комната за стеной внезапно наполняется насмешливым смехом и похотливыми комментариями, и ты невольно пускаешь слезу, осознавая, что потеряла свою драгоценную, чистую девственность из-за какого-то незнакомца, который записался, чтобы попытаться зачать от тебя ребенка.");
 				} else {
-					sb.append("The room beyond the wall is suddenly filled with derisive laughs and lewd remarks, and you can't help but wince a little as you realise that you've lost your virginity to some stranger who signed up to try and get you pregnant.");
+					sb.append("Комната за стеной внезапно наполняется насмешливым смехом и похотливыми комментариями, и ты невольно морщишься, осознавая, что лишилась девственности с каким-то незнакомцем, который записался, чтобы попытаться зачать от тебя ребенка.");
 				}
 			sb.append("</p>");
 			
-			sb.append("<p>"
-						+ "[pc.thought(Pregnant... From my first time... I'm sure that's not possible...)] you think to yourself, letting out an involuntary [pc.moan] as [npc.name] pulls back and thrusts into you once more."
-					+ "</p>"
-					+ "<p>"
-						+ "As [npc.she] fills your freshly popped cherry with [npc.her] [npc.cock+], you hear [npc.herHim] taunting you from the other side of the wall."
-						+ " [npc.speechNoExtraEffects(What a fucking slut! Choosing to lose your virginity to a game of pregnancy roulette! Hah! Glad I'll never be the one who has to tell our kids how they were conceived!)]"
-					+ "</p>");
+			sb.append("<p>[pc.thought(Беременна... С самого первого раза... Уверена, что это невозможно...)] — думаешь ты про себя, непроизвольно издавая [pc.moan], когда [npc.name] отстраняется и снова врывается в тебя.</p><p>Пока [npc.she] наполняет твою только что раскрывшуюся киску [npc.her] [npc.cock+], ты слышишь, как [npc.herHim] издевается над тобой с другой стороны стены. [npc.speechNoExtraEffects(Ну и гребаная шлюха! Решила лишиться девственности в игре в рулетку беременности! Ха! Рад, что мне никогда не придется рассказывать нашим детям, как они были зачаты!)]</p>");
 		}
 		
 		return sb.toString();
@@ -363,37 +333,19 @@ public class GenericSexualPartner extends NPC {
 	public String getSpecialPlayerPureVirginityLoss(GameCharacter penetratingCharacter, SexAreaPenetration penetrating) {
 		return UtilText.parse(penetratingCharacter,
 				"<p style='text-align:center;'>"
-					+ "<b style='color:"+PresetColour.GENERIC_TERRIBLE.toWebHexString()+";'>Broken Virgin</b>"
-				+ "</p>"
-				+ "<p>"
-					+ "As the [npc.race] carries on pounding away at your pussy, the sudden realisation of what's just happened hits you like a sledgehammer."
-				+ "</p>"
-				+ "<p style='text-align:center;'>"
-					+ UtilText.parsePlayerThought("I-I've lost my virginity?!<br/>"
-							+ "Like... Like <b>this</b>?!")
-				+ "</p>"
-				+ "<p>"
-					+ "You don't know what's worse, losing the virginity that you prized so highly, or the fact that you're actually enjoying it."
-					+ " As your [pc.labia+] spread lewdly around the "
+					+ "<b style='color:"+PresetColour.GENERIC_TERRIBLE.toWebHexString()+";'>Потерянная девственница</b></p><p>Пока [npc.race] продолжает долбить твою киску, внезапное осознание произошедшего бьет тебя, словно кувалдой.</p><p style='text-align:center;'>"
+					+ UtilText.parsePlayerThought("Я... я лишилась девственности?!<br/>Вот так... Вот так, как <b>это</b>?!")
+				+ "</p><p>Ты не знаешь, что хуже: потеря девственности, которой так дорожила, или тот факт, что тебе это на самом деле нравится. Пока твои [pc.labia+] похотливо раздвинуты вокруг "
 					+ (penetrating==SexAreaPenetration.PENIS
-						?"hot, thick [npc.cock]"
+						?"горячего, густого [npc.cock]"
 						:penetrating.getName(penetratingCharacter))
-					+ " that's pumping in and out of you, you start convincing yourself that this is all you're good for."
-				+ "</p>"
-				+ "<p style='text-align:center;'>"
-				+ UtilText.parsePlayerThought("If I'm not a virgin, that makes me a slut...<br/>"
-						+ "Just a slut to be fucked by whoever wants to use me...<br/>"
-						+ "After this [npc.race] is done with me, I bet it won't be long before I'm fucked by someone else...")
-				+ "</p>"
-				+ "<p>"
-					+ "You're vaguely aware of [npc.name] [npc.moaning] in triumphant pleasure as [npc.she] realises that [npc.sheHas] just taken your virginity."
-					+ " With a desperate [pc.moan],"
+					+ " который входит и выходит из тебя, ты начинаешь убеждать себя, что только на это ты и годна.</p><p style='text-align:center;'>"
+				+ UtilText.parsePlayerThought("Если я уже не девственница, значит, я шлюха...<br/>Просто шлюха, которую будет трахать каждый, кто захочет меня использовать...<br/>Когда этот [npc.race] закончит со мной, бьюсь об заклад, не пройдет и много времени, как меня будет трахать кто-то другой...")
+				+ "</p><p>Вы смутно осознаете, что [npc.name] [npc.moaning] в триумфальном наслаждении, когда [npc.she] понимает, что [npc.sheHas] только что лишил вас девственности. С отчаянным [pc.moan],"
 					+ (Main.game.getPlayer().hasLegs()
-						?" you spread your legs and"
-						:" you")
-					+ " resign yourself to the fact that you're now nothing more than a"
-					+ " <b style='color:"+StatusEffect.FETISH_BROKEN_VIRGIN.getColour().toWebHexString()+";'>broken virgin</b>..."
-				+ "</p>");
+						?" ты раздвигаешь ноги и"
+						:" вы")
+					+ " смиряешься с тем фактом, что теперь ты не более чем <b style='color:"+StatusEffect.FETISH_BROKEN_VIRGIN.getColour().toWebHexString()+";'>сломанная девственница</b>...</p>");
 	}
 	
 }

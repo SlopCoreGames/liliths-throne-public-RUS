@@ -91,7 +91,7 @@ public class LunetteRanged extends NPC {
 			
 			this.setGenericName(Util.randomItemFrom(namePrefixes)+" "+name);
 			setName(Name.getRandomTriplet(this.getSubspecies()));
-			this.setSurname("Lunettemartu");
+			this.setSurname("Лунеттемарту");
 			this.setPlayerKnowsName(false);
 			
 			// INVENTORY:
@@ -247,7 +247,7 @@ public class LunetteRanged extends NPC {
 	
 	@Override
 	public String getDescription() {
-		return UtilText.parse(this, "This demonic centaur is a member of the faction 'The Hundred Paces', and delights in playing wicked games with [npc.her] enemies.");
+		return UtilText.parse(this, "Эта демоническая кентавриха — член фракции «Сто шагов», и она обожает играть в зловещие игры с [npc.her] врагами.");
 	}
 	
 	@Override

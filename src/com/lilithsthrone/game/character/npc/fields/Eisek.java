@@ -75,7 +75,7 @@ public class Eisek extends NPC {
     }
     
     public Eisek(boolean isImported) {
-		super(isImported, new NameTriplet("Eisek","Emio","Eylean"), "Seawings",
+		super(isImported, new NameTriplet("Эйзек","Эмио","Эйлин"), "Морские крылья",
 			"",
 			25, Month.FEBRUARY, 9,
 			20,
@@ -243,17 +243,16 @@ public class Eisek extends NPC {
     @Override
     public String getDescription() {
 	    if(this.isPlayerKnowsName() == false && !Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.getDialogueFlagValueFromId("dsg_elis_eisek_banished"))) {
-		    return "You found this dragon-boy being harassed by a mob while manning a stall at The Farmer's Market in Elis.";
+		    return "Вы застали этого дракономальчика, которого терроризировала толпа, пока он стоял за прилавком на фермерском рынке в Элисе.";
 		    
 	    } else if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.getDialogueFlagValueFromId("dsg_elis_eisek_banished"))) {
-		    return "You found this dragon-boy being harassed by a mob while manning a stall at The Farmer's Market in Elis. Intentionally or not, you sided with the mob and drove him off.";
+		    return "Вы застали этого дракономальчика, которого терроризировала толпа, пока он стоял за прилавком на фермерском рынке в Элисе. Намеренно или нет, вы приняли сторону толпы и прогнали его.";
 		    
 	    } else if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.getDialogueFlagValueFromId("dsg_elis_eisek_asked_himself"))) {
-		    return "Eisek is a produce merchant at The Farmer's Market in Elis. As a dragon, [npc.he] is often unwelcome in civilised areas, a fact that he is well aware of."
-		    		+ " He spends most of his time tending to his crops high up in the mountains and only visits Elis three days out of the month.";
+		    return "Эйзек — торговец овощами и фруктами на фермерском рынке в Элисе. Как дракон, [npc.he] часто бывает нежеланным гостем в цивилизованных местах, и он прекрасно об этом знает. Большую часть времени он проводит, ухаживая за своими посевами высоко в горах, и посещает Элис лишь три дня в месяц.";
 		    
 	    } else {
-		    return "Eisek runs a produce stall in the Elis Farmer's Market. As a dragon, [npc.he] is often unwelcome in civilised areas, a fact that he is well aware of.";
+		    return "Эйзек держит лавку с продуктами на фермерском рынке Элиса. Как дракон, [npc.he] часто бывает нежеланным гостем в цивилизованных местах, и он прекрасно об этом знает.";
 	    }
     }
     
@@ -284,7 +283,7 @@ public class Eisek extends NPC {
     @Override
     public void applyItemTransactionEffects(AbstractCoreItem itemSold, int quantity, int individualPrice, boolean soldToPlayer) {
 		if(soldToPlayer) {
-		    Main.game.appendToTextEndStringBuilder(UtilText.parse(this, "<p>[eisek.speech([game.random(Thank you for your patronage.|I hope you enjoy it.|A handy snack, is it not?)])]</p>"));
+		    Main.game.appendToTextEndStringBuilder(UtilText.parse(this, "<p>[eisek.speech([game.random(Благодарю за покупку.|Надеюсь, вам понравится.|Удобный перекус, не так ли?)])]</p>"));
 		    if(this.getAffection(Main.game.getPlayer()) < 15 && !Main.game.getPlayer().isQuestCompleted(QuestLine.SIDE_EISEK_MOB)) {
 		    	if(this.getAffection(Main.game.getPlayer()) + (quantity * 3) > 15) {
 			    	Main.game.appendToTextEndStringBuilder(this.setAffection(Main.game.getPlayer(), 15));

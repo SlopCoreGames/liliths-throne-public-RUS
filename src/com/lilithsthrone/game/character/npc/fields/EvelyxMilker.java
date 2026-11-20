@@ -199,18 +199,15 @@ public class EvelyxMilker extends NPC {
 		if(level==0) {
 			this.setGenericName("trainee");
 			this.setDescription(UtilText.parse(this,
-					"This [npc.race] is an employee of Evelyx's Dairy, and is currently classed at the lowest promotional level, 'trainee'."
-					+ " She will only be eligible for promotion after she's met certain milk production requirements, at which time she'll have the option to get fucked by a member of the public and be elevated to the position of 'heifer'."));
+					"Эта [npc.race] работает на молочной ферме Эвеликс и на данный момент находится на самом низком уровне — «стажёрка». Она сможет претендовать на повышение только после выполнения определённых норм по надою, после чего у неё появится возможность трахаться с обычными посетителями, чтобы получить звание «телёнка»."));
 		} else if(level==1) {
 			this.setGenericName("heifer");
 			this.setDescription(UtilText.parse(this,
-					"This [npc.race] is an employee of Evelyx's Dairy, and is currently classed at the middle promotional level, 'heifer'."
-					+ " She will only be eligible for promotion after she's been impregnated at least once and met certain milk production requirements, after which she will be elevated to the position of 'cow'."));
+					"Эта [npc.race] работает на молочной ферме Эвеликс и на данный момент находится на среднем уровне — «телёнок». Она сможет претендовать на повышение только после того, как будет забеременена хотя бы раз и выполнит определённые нормы по надою, после чего её повысят до звания «корова»."));
 		} else {
 			this.setGenericName("cow");
 			this.setDescription(UtilText.parse(this,
-					"This [npc.race] is an employee of Evelyx's Dairy, and is currently classed at the highest promotional level, 'cow'."
-					+ " Although cows are offered a special promotion after meeting certain milk production requirements, most choose to remain at this level for the remainder of their careers."));
+					"Эта [npc.race] работает на молочной ферме Эвеликс и на данный момент находится на высшем уровне — «корова». Хотя коровам предлагают особое повышение после выполнения определённых норм по надою, большинство предпочитают оставаться на этом уровне до конца своей карьеры."));
 		}
 		
 		// Add vagina and set race to cow-girl where appropriate:

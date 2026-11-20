@@ -179,13 +179,13 @@ public class BatCavernLurkerAttacker extends NPC {
 		}
 		if(this.isSlave()) {
 			return (UtilText.parse(this,
-					"[npc.NamePos] days of attacking innocent travellers in the Bat Caverns are now over. Having run afoul of the law, [npc.sheIs] now a slave, and is no more than [npc.her] owner's property."));
+					"[npc.NamePos] дней нападений на невинных путников в Пещерах Летучих Мышей подошли к концу. Нарушив закон, [npc.sheIs] теперь раб и не более чем [npc.her] собственность хозяина."));
 		} else if(Main.game.getPlayer().getFriendlyOccupants().contains(this.getId())){
 			return (UtilText.parse(this,
-					"[npc.NamePos] days of attacking innocent travellers in the Bat Caverns are now over. Having befriended [npc.herHim], you invited [npc.name] to move in with you and helped [npc.herHim] to start a new life."));
+					"[npc.NamePos] дней нападений на невинных путников в Пещерах Летучих Мышей подошли к концу. Подружившись с [npc.herHim], вы пригласили [npc.name] жить вместе с вами и помогли [npc.herHim] начать новую жизнь."));
 		} else {
 			return (UtilText.parse(this,
-					"[npc.Name] is a resident of the Bat Caverns, and enjoys nothing more than attacking innocent travellers that pass by [npc.her] roost."));
+					"[npc.Name] — обитатель Пещер Летучих Мышей, и нет для него большего удовольствия, чем нападать на невинных путников, проходящих мимо [npc.her] гнезда."));
 		}
 	}
 	

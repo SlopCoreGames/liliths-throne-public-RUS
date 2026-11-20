@@ -193,13 +193,13 @@ public class FieldsBandit extends NPC {
 		}
 		if(this.isSlave()) {
 			return UtilText.parse(this,
-					"[npc.NamePos] days of roaming the Foloi Fields and preying upon innocent travellers are now over. Having run afoul of the law, [npc.sheIs] now a slave, and is no more than [npc.her] owner's property.");
+					"[npc.NamePos] дней скитаний по полям Фолои в поисках добычи среди невинных путников подошли к концу. Нарушив закон, [npc.sheIs] теперь раб и всего лишь [npc.her] собственность хозяина.");
 			
 		} else if(Main.game.getPlayer()!=null && Main.game.getPlayer().getFriendlyOccupants().contains(this.getId())) {
-			return UtilText.parse(this, "When you first met [npc.name], [npc.she] was a bandit who roamed the Foloi Fields looking for travellers to prey upon. After a period of being your slave, [npc.sheIs] now your trusted friend.");
+			return UtilText.parse(this, "Когда вы впервые встретили [npc.name], [npc.she] был бандитом, который бродил по полям Фолои в поисках жертв среди путешественников. После периода рабства, [npc.sheIs] теперь ваш верный друг.");
 			
 		} else {
-			return UtilText.parse(this, "[npc.Name] is a bandit who roams the Foloi Fields looking for travellers to prey upon.");
+			return UtilText.parse(this, "[npc.Name] — бандит, который бродит по полям Фолои в поисках добычи среди путников.");
 		}
 	}
 

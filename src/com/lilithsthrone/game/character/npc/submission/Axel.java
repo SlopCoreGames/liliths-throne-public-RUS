@@ -76,9 +76,8 @@ public class Axel extends NPC {
 	}
 	
 	public Axel(boolean isImported) {
-		super(isImported, new NameTriplet("Axel", "Lexa", "Lexa"), "Stack",
-				"The buff albino alligator-boy, Axel, is the owner and manager of Submission's Gambling Den."
-					+ " Despite his large and menacing figure, he's very kind and understanding, and always tries his best to satisfy his customers.",
+		super(isImported, new NameTriplet("Аксель", "Лекса", "Лекса"), "Стек",
+				"Крепкий альбинос, парень-аллигатор Аксель, является владельцем и управляющим игорного притона Submission. Несмотря на свою крупную и угрожающую фигуру, он очень добр и понимающ, и всегда старается изо всех сил, чтобы удовлетворить своих клиентов.",
 				36, Month.JANUARY, 10,
 				15, Gender.M_P_MALE, Subspecies.ALLIGATOR_MORPH, RaceStage.GREATER,
 				new CharacterInventory(false, 30), WorldType.GAMBLING_DEN, PlaceType.GAMBLING_DEN_ENTRANCE, true);
@@ -105,7 +104,7 @@ public class Axel extends NPC {
 			} else {
 				setStartingBody(true);
 			}
-			this.setName(new NameTriplet("Axel", "Lexa", "Lexa"));
+			this.setName(new NameTriplet("Аксель", "Лекса", "Лекса"));
 		}
 		if(Main.isVersionOlderThan(Game.loadingVersion, "0.3.6")) {
 			this.resetPerksMap(true);

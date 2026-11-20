@@ -102,7 +102,7 @@ public class ModdedCharacter extends NPC {
 	
 			setName(Name.getRandomTriplet(this.getSubspecies()));
 			this.setPlayerKnowsName(false);
-			setDescription(UtilText.parse(this, "[npc.Name] is [npc.a_fullRace]."));
+			setDescription(UtilText.parse(this, "[npc.Name] — это [npc.a_fullRace]."));
 
 			// Set starting attributes based on the character's race
 			initPerkTreeAndBackgroundPerks();

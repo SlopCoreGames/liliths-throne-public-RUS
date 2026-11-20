@@ -32,7 +32,7 @@ public class LodgerImport extends NPC {
 	}
 	
 	public LodgerImport(boolean isImported) {
-		super(isImported, new NameTriplet("Lodger"), "", "-",
+		super(isImported, new NameTriplet("Жилец"), "", "-",
 				18, Month.JUNE, 10,
 				1, Gender.F_V_B_FEMALE, Subspecies.HUMAN, RaceStage.HUMAN,
 				new CharacterInventory(false, 0), WorldType.EMPTY, PlaceType.GENERIC_HOLDING_CELL, false);
@@ -101,7 +101,7 @@ public class LodgerImport extends NPC {
 		if(this.isSlave() && this.isDoll()) {
 			return super.getDescription();
 		}
-		return UtilText.parse(this, "You first met [npc.name] in Dominion's city hall, where [npc.she] was waiting for someone to offer [npc.herHim] lodgings...");
+		return UtilText.parse(this, "Вы впервые встретили [npc.name] в ратуше Dominion, где [npc.she] ждала кого-нибудь, чтобы предложить [npc.herHim] жилье...");
 	}
 	
 	@Override

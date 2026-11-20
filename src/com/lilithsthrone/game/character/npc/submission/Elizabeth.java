@@ -77,8 +77,8 @@ public class Elizabeth extends NPC {
 	
 	public Elizabeth(boolean isImported) {
 		super(isImported,
-				new NameTriplet("Elizabeth"), "Lyssiethmartu",
-				"An unrecognised daughter of Lyssieth, Elizabeth is captain of her mother's royal guard. She is tasked with protecting the entrance to Lyssieth's palace.",
+				new NameTriplet("Элизабет"), "Lyssiethmartu",
+				"Непризнанная дочь Lyssieth, Элизабет — капитан королевской гвардии своей матери. Её задача — охранять вход в дворец Lyssieth.",
 				23, Month.JUNE, 22,
 				25, Gender.F_V_B_FEMALE, Subspecies.DEMON, RaceStage.PARTIAL_FULL, new CharacterInventory(false, 10), WorldType.SUBMISSION, PlaceType.SUBMISSION_LILIN_PALACE_GATE, true);
 
@@ -91,7 +91,7 @@ public class Elizabeth extends NPC {
 	@Override
 	public void loadFromXML(Element parentElement, Document doc, CharacterImportSetting... settings) {
 		loadNPCVariablesFromXML(this, null, parentElement, doc, settings);
-		this.setDescription("An unrecognised daughter of Lyssieth, Elizabeth is captain of her mother's royal guard. She is tasked with protecting the entrance to Lyssieth's palace.");
+		this.setDescription("Непризнанная дочь Lyssieth, Элизабет — капитан королевской гвардии своей матери. Её задача — охранять вход в дворец Lyssieth.");
 		if(Main.isVersionOlderThan(Game.loadingVersion, "0.3.3.6")) {
 			this.resetPerksMap(true);
 		}

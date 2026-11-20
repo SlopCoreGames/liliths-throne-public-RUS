@@ -89,14 +89,14 @@ public class DarkSiren extends NPC {
 	
 	public DarkSiren(boolean isImported) {
 		super(isImported,
-				new NameTriplet("Meraxis"), "Lyssiethmartuilani",
-				"The ruler of Submission's central imp citadel, 'The Dark Siren' is an incredibly powerful arcane user...",
+				new NameTriplet("Мераксис"), "Lyssiethmartuilani",
+				"Правительница центральной цитадели бесов в Submission, «Темная Сирена» — невероятно могущественная пользовательница Арканы...",
 				26, Month.OCTOBER, 13,
 				30, Gender.F_V_B_FEMALE, Subspecies.DEMON, RaceStage.PARTIAL_FULL, new CharacterInventory(false, 10), WorldType.IMP_FORTRESS_DEMON, PlaceType.FORTRESS_DEMON_KEEP, true);
 
 		if(!isImported) {
 			this.setPlayerKnowsName(false);
-			this.setGenericName("dark siren");
+			this.setGenericName("темная сирена");
 			
 			this.addTrait(Perk.CHUUNI);
 			
@@ -108,7 +108,7 @@ public class DarkSiren extends NPC {
 	public void loadFromXML(Element parentElement, Document doc, CharacterImportSetting... settings) {
 		loadNPCVariablesFromXML(this, null, parentElement, doc, settings);
 
-		this.setGenericName("dark siren");
+		this.setGenericName("темная сирена");
 		
 		if(Main.isVersionOlderThan(Game.loadingVersion, "0.2.12.5")) {
 			this.setBody(Gender.F_V_B_FEMALE, Subspecies.DEMON, RaceStage.PARTIAL_FULL, false);
@@ -120,7 +120,7 @@ public class DarkSiren extends NPC {
 			equipClothing(EquipClothingSetting.getAllClothingSettings());
 		}
 		if(Main.isVersionOlderThan(Game.loadingVersion, "0.3.0.6")) {
-			this.setGenericName("dark siren");
+			this.setGenericName("темная сирена");
 			
 			this.setEssenceCount(10000);
 			
@@ -130,7 +130,7 @@ public class DarkSiren extends NPC {
 		if(Main.isVersionOlderThan(Game.loadingVersion, "0.3.1.6")) {
 			this.setWingSize(WingSize.ONE_SMALL.getValue());
 		}
-		setName(new NameTriplet("Meraxis"));
+		setName(new NameTriplet("Мераксис"));
 		if(Main.isVersionOlderThan(Game.loadingVersion, "0.3.3.7")) {
 			this.setLevel(30);
 			this.resetPerksMap(true);
@@ -441,20 +441,19 @@ public class DarkSiren extends NPC {
 	public String getDescription() {
 		if(this.isSlave()) {
 			return (UtilText.parse(this,
-					"[npc.NamePos] days of ruling over [npc.her] imp citadel as the 'Dark Siren' are now over."
-					+ " Having been enslaved, she is now legally the property of her mother, Lyssieth, and had been expressly forbidden from leaving her room without supervision."));
+					"[npc.NamePos] дней правления над [npc.her] цитаделью бесов в роли «Темной Сирены» подошли к концу. После периода рабства она теперь официально стала собственностью своей матери, Lyssieth, которой было строго запрещено покидать свою комнату без присмотра."));
 		} else {
-			return "The ruler of Submission's central imp citadel, this 'Dark Siren' is an incredibly powerful arcane user...";
+			return "Правительница центральной цитадели бесов в Submission, эта «Темная Сирена» — невероятно могущественная пользовательница Арканы...";
 		}
 	}
 
 	@Override
 	public String getArtworkFolderName() {
 		if(this.getTorsoType().getRace()==Race.HUMAN) {
-			return "Meraxis";
+			return "Мераксис";
 			
 		} else {
-			return "MeraxisDemon";
+			return "Демон Меракс";
 		}
 	}
 	

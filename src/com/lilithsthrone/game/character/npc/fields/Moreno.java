@@ -53,15 +53,15 @@ public class Moreno extends NPC {
 	}
 	
 	public Moreno(boolean isImported) {
-		super(isImported, new NameTriplet("Moreno"), "Caballo",
-				"On every day but Wednesday and Saturday, Moreno operates the strength tester game in the centre of Elis's Farmer's Market.",
+		super(isImported, new NameTriplet("Морено"), "Кабайо",
+				"В любой день, кроме среды и субботы, Морено управляет аттракционом «Тестер силы» в центре фермерского рынка Элис.",
 				31, Month.AUGUST, 28,
 				25, Gender.M_P_MALE, Subspecies.HORSE_MORPH, RaceStage.GREATER,
 				new CharacterInventory(false, 10),
 				WorldType.getWorldTypeFromId("innoxia_fields_elis_market"), PlaceType.getPlaceTypeFromId("innoxia_fields_elis_market_centre"),
 				true);
 
-		this.setGenericName("muscular horse-boy");
+		this.setGenericName("мускулистый жеребец-мальчик");
 		
 		if(!isImported) {
 			this.setPlayerKnowsName(false);
@@ -209,7 +209,7 @@ public class Moreno extends NPC {
 		
 		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("innoxia_groin_briefs", PresetColour.CLOTHING_BLACK, false), true, this);
 		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("innoxia_leg_sport_shorts", PresetColour.CLOTHING_BLACK, false), true, this);
-		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("TonyJC_tank_top", PresetColour.CLOTHING_BLUE_NAVY, false), true, this);
+		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("TonyJC_майка_алкоголичка", PresetColour.CLOTHING_BLUE_NAVY, false), true, this);
 		
 		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("innoxia_head_sweatband", PresetColour.CLOTHING_GREY, false), true, this);
 		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing(ClothingType.WRIST_WRISTBANDS, PresetColour.CLOTHING_GREY, false), true, this);

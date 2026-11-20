@@ -76,9 +76,8 @@ public class Silvia extends NPC {
 	}
 	
 	public Silvia(boolean isImported) {
-		super(isImported, new NameTriplet("Silvia"), "Woodward",
-				"Silvia is the older sister of Fae, with whom she runs the clothing stall 'Rainbow's End' in the Farmer's Market at Elis."
-						+ " Being relatively shy and nervous around strangers, Silvia leaves her sister to handle most of the interactions with their stall's customers.",
+		super(isImported, new NameTriplet("Сильвия"), "Вудворд",
+				"Сильвия — старшая сестра Фэй; вместе они управляют лавкой одежды «Конец радуги» на фермерском рынке в Элисе. Будучи довольно застенчивой и нервничающей в присутствии незнакомцев, Сильвия оставляет сестру разбираться с большинством покупателей.",
 				31, Month.MAY, 1,
 				15,
 				Gender.F_P_V_B_FUTANARI, Subspecies.FOX_MORPH, RaceStage.GREATER,
@@ -86,7 +85,7 @@ public class Silvia extends NPC {
 				WorldType.getWorldTypeFromId("innoxia_fields_elis_market"), PlaceType.getPlaceTypeFromId("innoxia_fields_elis_market_clothing"),
 				true);
 
-		this.setGenericName("blue-eyed foxtauress");
+		this.setGenericName("синеглазая лисодевушка");
 		
 		if(!isImported) {
 			this.setPlayerKnowsName(false);
@@ -269,7 +268,7 @@ public class Silvia extends NPC {
 	
 	@Override
 	public String getArtworkFolderName() {
-		return "Silvia";
+		return "Сильвия";
 	}
 	
 	@Override

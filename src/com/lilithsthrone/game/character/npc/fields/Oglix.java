@@ -97,9 +97,8 @@ public class Oglix extends NPC {
 	}
 	
 	public Oglix(boolean isImported) {
-		super(isImported, new NameTriplet("Oglix"), "Lunettemartu",
-				"The owner of the tavern, 'The Crossed Blades', Oglix's green skin, bulging muscles, and considerable height almost make her look more like some kind of fantasy orc than a succubus."
-						+ " Her size, strength, and considerable arcane abilities make her respected and feared by even the toughest of thugs to be found in Elis.",
+		super(isImported, new NameTriplet("Огликс"), "Лунеттемарту",
+				"Владелица таверны «Скрещенные клинки». Из-за зеленой кожи, раздутых мышц и внушительного роста Огликс кажется скорее каким-то фэнтезийным орком, чем суккубом. Её габариты, сила и значительные способности к Аркане заставляют уважать и бояться её даже самых отъявленных головорезов Элиса.",
 				48, Month.AUGUST, 9,
 				35, Gender.F_V_B_FEMALE, Subspecies.DEMON, RaceStage.GREATER,
 				new CharacterInventory(false, 30),
@@ -292,7 +291,7 @@ public class Oglix extends NPC {
 		
 		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("innoxia_head_sweatband", PresetColour.CLOTHING_DESATURATED_BROWN_DARK, false), true, this);
 		
-		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("TonyJC_tie_up_crop_top", PresetColour.CLOTHING_BLACK, false), true, this);
+		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("TonyJC_кроп-топ с завязками", PresetColour.CLOTHING_BLACK, false), true, this);
 		
 		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("innoxia_leg_hotpants", PresetColour.CLOTHING_BLACK, false), true, this);
 		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("innoxia_groin_panties", PresetColour.CLOTHING_PURPLE_DARK, false), true, this);
@@ -315,7 +314,7 @@ public class Oglix extends NPC {
 
 	@Override
 	public String getArtworkFolderName() {
-		return "Oglix";
+		return "Огликс";
 	}
 	
 	@Override
@@ -393,8 +392,8 @@ public class Oglix extends NPC {
 	
 	public void initElemental() {
 		Elemental elemental = this.getElemental();
-		elemental.setName("Golix");
-		elemental.setSurname("Oglixkamu");
+		elemental.setName("Голикс");
+		elemental.setSurname("Огликсаму");
 		
 		elemental.clearPersonalityTraits();
 		elemental.addPersonalityTrait(PersonalityTrait.BRAVE);

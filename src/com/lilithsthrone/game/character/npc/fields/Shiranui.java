@@ -97,7 +97,7 @@ public class Shiranui extends NPC {
 	}
 	
 	public Shiranui(boolean isImported) {
-		super(isImported, new NameTriplet("Aya"), "Shiranui",
+		super(isImported, new NameTriplet("Ая"), "Сирануи",
 				"",
 				47, Month.JANUARY, 1,
 				40, Gender.F_P_V_B_FUTANARI, Subspecies.FOX_ASCENDANT, RaceStage.PARTIAL_FULL,
@@ -328,14 +328,14 @@ public class Shiranui extends NPC {
 	@Override
 	public String getDescription() {
 		return UtilText.parse(this,
-				"[npc.Name] is a trickster youko, who took over Meraxis's hideout and the surrounding area.");
+				"[npc.Name] — это хитрая ёкая, которая захватила логово Мераксиса и прилегающие территории.");
 	}
 
 	@Override
 	public String getArtworkFolderName() {
 		if(this.getName().equals("Meraxis")) {
 			if(this.getTorsoType().getRace()==Race.HUMAN) {
-				return "Meraxis";
+				return "Мераксис";
 				
 			} else {
 				return "MeraxisDemon";
@@ -535,7 +535,7 @@ public class Shiranui extends NPC {
 			setBody(new Body(Main.game.getNpc(DarkSiren.class).getBody()), true);
 			this.setAgeAppearanceAbsolute(18);
 			if(nameChange) {
-				this.setName("Meraxis");
+				this.setName("Мераксис");
 				this.setSurname("Lyssiethmartuilani");
 			}
 			
@@ -543,8 +543,8 @@ public class Shiranui extends NPC {
 			this.setStartingBody(true);
 			this.setAgeAppearanceAbsolute(25);
 			if(nameChange) {
-				this.setName("Aya");
-				this.setSurname("Shiranui");
+				this.setName("Ая");
+				this.setSurname("Сирануи");
 			}
 			
 			// Reset pregnancy as otherwise it will be demon or half-demon due to Meraxis form:
@@ -563,23 +563,23 @@ public class Shiranui extends NPC {
 		if(target.isBipedal()) {
 			AbstractClothing stockings = Main.game.getItemGen().generateClothing("sage_latex_stockings", colour, false);
 			stockings.addEffect(new ItemEffect(ItemEffectType.CLOTHING, TFModifier.CLOTHING_SPECIAL, TFModifier.CLOTHING_SEALING, TFPotency.MAJOR_DRAIN, 0));
-			stockings.setName("Shiranui's Stockings");
+			stockings.setName("Чулочки Ширануи");
 			target.equipClothingFromNowhere(stockings, true, this);
 			
 			AbstractClothing heels = Main.game.getItemGen().generateClothing("innoxia_foot_stiletto_heels", colour, false);
 			heels.addEffect(new ItemEffect(ItemEffectType.CLOTHING, TFModifier.CLOTHING_SPECIAL, TFModifier.CLOTHING_SEALING, TFPotency.MAJOR_DRAIN, 0));
-			heels.setName("Shiranui's Heels");
+			heels.setName("Каблуки Ширануи");
 			target.equipClothingFromNowhere(heels, true, this);
 		}
 
 		AbstractClothing croptop = Main.game.getItemGen().generateClothing("sage_latex_croptop", colour, false);
 		croptop.addEffect(new ItemEffect(ItemEffectType.CLOTHING, TFModifier.CLOTHING_SPECIAL, TFModifier.CLOTHING_SEALING, TFPotency.MAJOR_DRAIN, 0));
-		croptop.setName("Shiranui's Croptop");
+		croptop.setName("Кроп-топ Ширануи");
 		target.equipClothingFromNowhere(croptop, true, this);
 
 		AbstractClothing microskirt = Main.game.getItemGen().generateClothing("innoxia_leg_micro_skirt_pleated", colour, false);
 		microskirt.addEffect(new ItemEffect(ItemEffectType.CLOTHING, TFModifier.CLOTHING_SPECIAL, TFModifier.CLOTHING_SEALING, TFPotency.MAJOR_DRAIN, 0));
-		microskirt.setName("Shiranui's Microskirt");
+		microskirt.setName("Микроюбка Ширануи");
 		target.equipClothingFromNowhere(microskirt, true, this);
 		
 		dressTargetInFetishGearChoker(target, colour);
@@ -605,7 +605,7 @@ public class Shiranui extends NPC {
 		choker.addEffect(new ItemEffect(ItemEffectType.CLOTHING, TFModifier.TF_VAGINA, TFModifier.TF_MOD_WETNESS, TFPotency.MAJOR_BOOST, 7));
 		choker.addEffect(new ItemEffect(ItemEffectType.CLOTHING, TFModifier.TF_VAGINA, TFModifier.TF_MOD_DEPTH, TFPotency.MAJOR_BOOST, 6));
 		
-		choker.setName("Shiranui's Choker");
+		choker.setName("Чокер Ширануи");
 		
 		target.equipClothingFromNowhere(choker, true, this);
 	}
@@ -621,7 +621,7 @@ public class Shiranui extends NPC {
 		AbstractItem potion = EnchantingUtils.craftItem(
 			Main.game.getItemGen().generateItem(tfPotion.getItemType()),
 			tfPotion.getEffects().stream().map(x -> x.getEffect()).collect(Collectors.toList()));
-		potion.setName("Shiranui's Gift");
+		potion.setName("Дар Ширануи");
 		sb.append(recipient.addItem(potion, 1, false, true));
 		
 		if(recipient.isPlayer() && appendToDialogue) {

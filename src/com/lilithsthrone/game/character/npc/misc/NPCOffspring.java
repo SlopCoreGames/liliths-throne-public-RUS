@@ -200,14 +200,14 @@ public class NPCOffspring extends NPC {
 		if(rel.isEmpty())
 			return "";
 
-		return UtilText.parse(this, " You are [npc.hisHer] ") + getRelationshipStr(rel, Main.game.getPlayer().getGender().getType()) + ".";
+		return UtilText.parse(this, " Вы — [npc.hisHer] ") + getRelationshipStr(rel, Main.game.getPlayer().getGender().getType()) + ".";
 	}
 
 	private static String getMatingDescription(GameCharacter self, GameCharacter partner, String what) {
-		String result = what + " with " + partner.getName("a");
+		String result = what + " with " + partner.getName("");
 		String rel = partner.getRelationshipStrTo(self);
 		if(!rel.isEmpty())
-			return result + ", your " + rel;
+			return result + ", ваш  " + rel;
 		else
 			return result;
 	}
@@ -222,24 +222,24 @@ public class NPCOffspring extends NPC {
 
 		StringBuilder sb = new StringBuilder();
 		
-		sb.append("[npc.Name] is your [npc.daughter], who you "+
+		sb.append("[npc.Name] — ваш [npc.daughter], которого вы  "+
 				(this.getMother()!=null && this.getMother().isPlayer()
-						? getMatingDescription(getMother(), getFather(), "mothered")
-						: getMatingDescription(getFather(), getMother(), "fathered")
+						? getMatingDescription(getMother(), getFather(), "зачали как мать")
+						: getMatingDescription(getFather(), getMother(), "зачали как отец")
 				)+"."
 				+ getRelationshipFromPlayer()
-				+ " [npc.She] was conceived on "+Units.date(this.getConceptionDate(), Units.DateType.LONG)+", and "
+				+ " [npc.She] был зачат  "+Units.date(this.getConceptionDate(), Units.DateType.LONG)+", и "
 				+(daysToBirth==0
-					?"later that same day "
-					:daysToBirth>1?Util.intToString(daysToBirth)+" days later ":Util.intToString(daysToBirth)+" day later ")
+					?"позже в тот же день "
+					:daysToBirth>1?Util.intToString(daysToBirth)+" спустя несколько дней ":Util.intToString(daysToBirth)+" спустя день ")
 				+(this.getMother()!=null && this.getMother().isPlayer()
-					?(this.getIncubator()!=null && !this.getIncubator().isPlayer()?this.getIncubator().getName():"you")+" gave birth to [npc.herHim]."
-					:" [npc.she] was born."));
+					?(this.getIncubator()!=null && !this.getIncubator().isPlayer()?this.getIncubator().getName():"вы")+" породили [npc.herHim]."
+					:" [npc.she] родился/лась."));
 
 		if(this.isSlave() && this.isDoll()) {
-			sb.append(" After enslaving [npc.herHim], you had [npc.herHim] permanently transformed into an obedient sex doll at Lovienne's Luxuries.");
+			sb.append(" Поработив [npc.herHim], вы навсегда превратили [npc.herHim] в послушную секс-куклу в 'Роскоши Ловиенн'.");
 		} else {
-			sb.append(" You first encountered [npc.herHim] prowling the alleyways of Dominion, and, through some arcane-influenced instinct, you both recognised your relationship at first sight.");
+			sb.append(" Впервые вы встретили [npc.herHim], когда тот/та рыскал(а) по переулкам Dominion, и благодаря какому-то инстинкту, подпитанному Арканой, вы оба мгновенно узнали друг друга.");
 		}
 		
 		return UtilText.parse(this, sb.toString());

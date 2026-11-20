@@ -354,7 +354,7 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 		Element valuesElement = doc.createElement("NPCValues");
 		npcSpecific.appendChild(valuesElement);
 		for(NPCFlagValue value : NPCFlagValues) {
-			XMLUtil.createXMLElementWithValue(doc, valuesElement, "NPCValue", value.toString());
+			XMLUtil.createXMLElementWithValue(doc, valuesElement, "Значение_NPC", value.toString());
 		}
 
 		if(genderPreference!=null) {
@@ -484,10 +484,10 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 			return new Value<>(true, ""); 
 		}
 		if(this.isUnique() && !clothing.isCondom(slotToEquipTo)) {
-			return new Value<>(false, "As [npc.name] is a unique character, who is not your slave, you cannot force [npc.herHim] to equip the "+clothing.getName()+"!");
+			return new Value<>(false, "Поскольку [npc.name] — уникальный персонаж, а не ваша рабыня, вы не можете заставить [npc.herHim] надеть "+clothing.getName()+"!");
 		}
 		if(Main.game.isInSex() && (Main.sex.isDom(this) || Main.sex.isSubHasEqualControl())) {
-			return new Value<>(false, "[npc.Name] is not interested in equipping the "+clothing.getName()+"!");
+			return new Value<>(false, "[npc.Name] не заинтересована в том, чтобы надевать "+clothing.getName()+"!");
 		}
 		return new Value<>(true, "");
 	}
@@ -501,34 +501,34 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 			tileSB.append((this.isPlayerKnowsName()
 								?"[npc.Name], [npc.a_femininity(true)] [npc.raceStage(true)] [npc.race(true)],"
 								:"[npc.A_femininity(true)] [npc.raceStage(true)] [npc.race(true)]")
-							+ " is "+(inHiding?"[style.boldBad(hiding)] in":"prowling")+" this area!");
+							+ " есть "+(inHiding?"[style.boldBad(hiding)] в":"рыщущая")+" в этой области!");
 		} else {
-			tileSB.append("Someone, or something, is "+(inHiding?"[style.boldBad(hiding)] in":"prowling")+" this area!");
+			tileSB.append("Кто-то или что-то "+(inHiding?"[style.boldBad(hiding)] в":"рыщущая")+" в этой области!");
 		}
 		
 		// Combat:
 		if(this.getFoughtPlayerCount()>0) {
 			tileSB.append("<br/>");
-			tileSB.append("You have [style.colourCombat(fought [npc.herHim] "+Util.intToCount(this.getFoughtPlayerCount())+")]");
+			tileSB.append("Вы [style.colourCombat(сразились с [npc.herHim] "+Util.intToCount(this.getFoughtPlayerCount())+")]");
 			if(this.getFoughtPlayerCount()==this.getLostCombatCount()) {
 				if(this.getLostCombatCount()==1) {
-					tileSB.append(", and managed to [style.colourGood(win)].");
+					tileSB.append(", и сумели [style.colourGood(победить)].");
 				} else if(this.getLostCombatCount()==2) {
-					tileSB.append(", of which you've [style.colourGood(won)] [style.colourMinorGood(both times)].");
+					tileSB.append(", из которых вы [style.colourGood(выиграли)] [style.colourMinorGood(оба раза)].");
 				} else {
-					tileSB.append(", of which you've [style.colourGood(won)] [style.colourMinorGood(every time)].");
+					tileSB.append(", из которых вы [style.colourGood(выиграли)] [style.colourMinorGood(каждый раз)].");
 				}
 			} else if(this.getFoughtPlayerCount()==this.getWonCombatCount()) {
 				if(this.getWonCombatCount()==1) {
-					tileSB.append(" and [style.colourBad(lost)].");
+					tileSB.append(" и [style.colourBad(проиграли)].");
 				} else if(this.getWonCombatCount()==2) {
-					tileSB.append(" and [style.colourBad(lost)] [style.colourMinorBad(both times)].");
+					tileSB.append(" и [style.colourBad(проиграли)] [style.colourMinorBad(оба раза)].");
 				}  else {
-					tileSB.append(" and [style.colourBad(lost)] [style.colourMinorBad(every time)].");
+					tileSB.append(" и [style.colourBad(проиграли)] [style.colourMinorBad(каждый раз)].");
 				}
 			} else {
-				tileSB.append(", of which you've [style.colourGood(won)] [style.colourMinorGood("+Util.intToCount(this.getLostCombatCount())+")] ");
-				tileSB.append(" and [style.colourBad(lost)] [style.colourMinorBad("+Util.intToCount(this.getWonCombatCount())+")].");
+				tileSB.append(", из которых вы [style.colourGood(выиграли)] [style.colourMinorGood("+Util.intToCount(this.getLostCombatCount())+")] ");
+				tileSB.append(" и [style.colourBad(проиграли)] [style.colourMinorBad("+Util.intToCount(this.getWonCombatCount())+")].");
 			}
 		}
 		
@@ -536,13 +536,13 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 		if(this.getTotalTimesHadSex(Main.game.getPlayer()) > 0) {
 			if(this.getSexAsDomCount(Main.game.getPlayer())>0) {
 				tileSB.append("<br/>");
-				tileSB.append("You have had <span style='color:"+PresetColour.GENERIC_SEX.toWebHexString()+";'>submissive sex</span> with [npc.herHim] ");
+				tileSB.append("У вас было <span style='color:"+PresetColour.GENERIC_SEX.toWebHexString()+";'>сабмиссивный секс</span> с [npc.herHim] ");
 				tileSB.append(Util.intToCount(this.getSexAsDomCount(Main.game.getPlayer()))+".");
 			}
 
 			if(this.getSexAsSubCount(Main.game.getPlayer())>0) {
 				tileSB.append("<br/>");
-				tileSB.append("You have had <span style='color:"+PresetColour.GENERIC_SEX_AS_DOM.toWebHexString()+";'>dominant sex</span> with  [npc.herHim] ");
+				tileSB.append("У вас было <span style='color:"+PresetColour.GENERIC_SEX_AS_DOM.toWebHexString()+";'>доминантный секс</span> с [npc.herHim] ");
 				tileSB.append(Util.intToCount(this.getSexAsSubCount(Main.game.getPlayer()))+".");
 			}
 		}
@@ -550,11 +550,11 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 		// Bitch:
 		if(this.getPlayerSurrenderCount()==3) {
 			tileSB.append("<br/>");
-			tileSB.append("[npc.She] will demand that you <span style='color:"+PresetColour.GENERIC_SEX.toWebHexString()+";'>submit and become [npc.her] bitch</span> the next time you see [npc.herHim]!");
+			tileSB.append("[npc.She] потребует, чтобы ты <span style='color:"+PresetColour.GENERIC_SEX.toWebHexString()+";'>подчинись и стань [npc.her] сучкой</span>, когда в следующий раз увидишь [npc.herHim]!");
 			
 		} else if(this.getPlayerSurrenderCount()>3) {
 			tileSB.append("<br/>");
-			tileSB.append("You have <span style='color:"+PresetColour.GENERIC_SEX.toWebHexString()+";'>submitted and become [npc.her] bitch</span>!");
+			tileSB.append("У тебя есть <span style='color:"+PresetColour.GENERIC_SEX.toWebHexString()+";'>покорился и стал [npc.her] сучкой</span>!");
 		}
 
 		tileSB.append("</i></p>");
@@ -583,37 +583,37 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 					break;
 				case POSITIVE_ONE_FRIENDLY:
 					if(this.isAttractedTo(Main.game.getPlayer()) && Main.game.isIncestEnabled()) {
-						sb.append("[npc.Name] is acting in a <i style='color:"+al.getColour().toWebHexString()+";'>friendly</i>, [style.italicsSex(flirtatious)] manner towards you.");
+						sb.append("[npc.Name] ведет себя в <i style='color:"+al.getColour().toWebHexString()+";'>дружелюбной</i>, [style.italicsSex(кокетливой)] манере по отношению к тебе.");
 					} else {
-						sb.append("[npc.Name] is acting in a <i style='color:"+al.getColour().toWebHexString()+";'>friendly</i> manner towards you.");
+						sb.append("[npc.Name] ведет себя в <i style='color:"+al.getColour().toWebHexString()+";'>дружелюбной</i> манере по отношению к тебе.");
 					}
 					break;
 				case POSITIVE_TWO_LIKE:
 					if(this.isAttractedTo(Main.game.getPlayer()) && Main.game.isIncestEnabled()) {
-						sb.append("[npc.Name] quite clearly <i style='color:"+al.getColour().toWebHexString()+";'>likes you</i>, and sees you as [style.italicsSex(more than just [npc.her] [pc.relation(npc)])].");
+						sb.append("[npc.Name] совершенно явно <i style='color:"+al.getColour().toWebHexString()+";'> нравится тебе</i>, и видит в тебе [style.italicsSex(нечто большее, чем просто [npc.her] [pc.relation(npc)])].");
 					} else {
-						sb.append("[npc.Name] quite clearly <i style='color:"+al.getColour().toWebHexString()+";'>likes you</i>, and is happy to have you as [npc.her] [pc.relation(npc)].");
+						sb.append("[npc.Name] совершенно явно <i style='color:"+al.getColour().toWebHexString()+";'> нравится тебе</i>, и она счастлива, что ты ее [npc.her] [pc.relation(npc)].");
 					}
 					break;
 				case POSITIVE_THREE_CARING:
 					if(this.isAttractedTo(Main.game.getPlayer()) && Main.game.isIncestEnabled()) {
-						sb.append("[npc.Name] quite clearly <i style='color:"+al.getColour().toWebHexString()+";'>cares about you a lot</i>, and is [style.italicsSex(deeply attracted)] towards you.");
+						sb.append("[npc.Name] совершенно явно <i style='color:"+al.getColour().toWebHexString()+";'> очень дорожит тобой</i>, и она [style.italicsSex(сильно увлечена)] тобой.");
 					} else {
-						sb.append("[npc.Name] quite clearly <i style='color:"+al.getColour().toWebHexString()+";'>cares about you a lot</i>, and considers you to be the best [pc.relation(npc)] [npc.she] could ask for.");
+						sb.append("[npc.Name] совершенно явно <i style='color:"+al.getColour().toWebHexString()+";'> очень дорожит тобой</i>, и считает тебя лучшим [pc.relation(npc)], о котором только могла бы мечтать [npc.she].");
 					}
 					break;
 				case POSITIVE_FOUR_LOVE:
 					if(this.isAttractedTo(Main.game.getPlayer()) && Main.game.isIncestEnabled()) {
-						sb.append("You can tell from the way that [npc.she] looks at you that [npc.name] <i style='color:"+al.getColour().toWebHexString()+";'>loves you</i> in a [style.italicsSex(romantic)] manner.");
+						sb.append("По тому, как [npc.she] смотрит на тебя, можно понять, что [npc.name] <i style='color:"+al.getColour().toWebHexString()+";'> любит тебя</i> [style.italicsSex(романтически)].");
 					} else {
-						sb.append("You can tell that [npc.name] <i style='color:"+al.getColour().toWebHexString()+";'>loves you</i> as only [npc.a_relation(pc)] can.");
+						sb.append("Можно заметить, что [npc.name] <i style='color:"+al.getColour().toWebHexString()+";'>любит тебя</i> так, как только [npc.a_relation(pc)] может любить.");
 					}
 					break;
 				case POSITIVE_FIVE_WORSHIP:
 					if(this.isAttractedTo(Main.game.getPlayer()) && Main.game.isIncestEnabled()) {
-						sb.append("[npc.Name] <i style='color:"+al.getColour().toWebHexString()+";'>adores you</i>, and is [style.italicsSex(head-over-heels in love)] with you.");
+						sb.append("[npc.Name] <i style='color:"+al.getColour().toWebHexString()+";'>обожает тебя</i> и [style.italicsSex(без памяти в тебя влюблен(а)]");
 					} else {
-						sb.append("[npc.Name] <i style='color:"+al.getColour().toWebHexString()+";'>adores you</i>, and would do almost anything you asked of [npc.herHim].");
+						sb.append("[npc.Name] <i style='color:"+al.getColour().toWebHexString()+";'>обожает тебя</i> и готов(а) на почти всё, что попросит [npc.herHim].");
 					}
 					break;
 			}
@@ -621,10 +621,9 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 			if(Main.game.isIncestEnabled()) {
 				sb.append("<br/>");
 				if(this.isAttractedTo(Main.game.getPlayer())) {
-					sb.append("You notice [npc.namePos] gaze flick down as [npc.she] tries to take an unnoticed peek at your body."
-								+ " From the hungry look in [npc.her] [npc.eyes], [style.italicsSex(you can tell that [npc.sheIs] attracted to you)]...");
+					sb.append("Вы замечаете, как взгляд [npc.namePos] опускается вниз, пока [npc.she] пытается украдкой разглядеть ваше тело. Судя по голодному взгляду в [npc.her] [npc.eyes], [style.italicsSex(можно понять, что [npc.sheIs] очень сильно к вам влечет)]...");
 				} else {
-					sb.append("[npc.Name] [style.italicsMinorBad(doesn't show any sign of being sexually attracted to you)], and any affection that [npc.she] shows is no doubt simply due to your [pc.mother]-[npc.daughter] relationship.");
+					sb.append("[npc.Name] [style.italicsMinorBad(не проявляет никаких признаков сексуального влечения к вам)], и любая привязанность, которую проявляет [npc.she], несомненно, обусловлена лишь вашими [pc.mother]-[npc.daughter] отношениями.");
 				}
 			}
 			sb.append("</i></p>");
@@ -635,79 +634,79 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 			switch(al) {
 				case NEGATIVE_FIVE_LOATHE:
 					if(this.isAttractedTo(Main.game.getPlayer())) {
-						sb.append("Even though [npc.name] seems to <i style='color:"+al.getColour().toWebHexString()+";'>loathe</i> you, you can tell that [npc.sheIs] still attracted to you.");
+						sb.append("Хотя кажется, что [npc.name] <i style='color:"+al.getColour().toWebHexString()+";'>ненавидит</i> вас, можно понять, что [npc.sheIs] всё еще влечет к вам.");
 					} else {
-						sb.append("[npc.Name] seems to <i style='color:"+al.getColour().toWebHexString()+";'>loathe</i> you.");
+						sb.append("[npc.Name], кажется, <i style='color:"+al.getColour().toWebHexString()+";'>ненавидит</i> тебя.");
 					}
 					break;
 				case NEGATIVE_FOUR_HATE:
 					if(this.isAttractedTo(Main.game.getPlayer())) {
-						sb.append("Even though [npc.name] seems to <i style='color:"+al.getColour().toWebHexString()+";'>hate</i> you, you can tell that [npc.sheIs] still attracted to you.");
+						sb.append("Хотя кажется, что [npc.name] <i style='color:"+al.getColour().toWebHexString()+";'>ненавидит</i> тебя, но заметно, что [npc.sheIs] всё ещё влечёт к тебе.");
 					} else {
-						sb.append("[npc.Name] seems to <i style='color:"+al.getColour().toWebHexString()+";'>hate</i> you.");
+						sb.append("[npc.Name], кажется, <i style='color:"+al.getColour().toWebHexString()+";'>ненадит</i> тебя.");
 					}
 					break;
 				case NEGATIVE_THREE_STRONG_DISLIKE:
 					if(this.isAttractedTo(Main.game.getPlayer())) {
-						sb.append("Even though [npc.name] seems to <i style='color:"+al.getColour().toWebHexString()+";'>strongly dislike</i> you, you can tell that [npc.sheIs] still attracted to you.");
+						sb.append("Хотя кажется, что [npc.name] <i style='color:"+al.getColour().toWebHexString()+";'>испытывает к тебе сильную неприязнь</i>, но заметно, что [npc.sheIs] всё ещё влечёт к тебе.");
 					} else {
-						sb.append("[npc.Name] seems to <i style='color:"+al.getColour().toWebHexString()+";'>strongly dislike</i> you.");
+						sb.append("[npc.Name], кажется, <i style='color:"+al.getColour().toWebHexString()+";'>испытывает к тебе сильную неприязнь</i>.");
 					}
 					break;
 				case NEGATIVE_TWO_DISLIKE:
 					if(this.isAttractedTo(Main.game.getPlayer())) {
-						sb.append("Even though [npc.name] seems to <i style='color:"+al.getColour().toWebHexString()+";'>dislike</i> you, you can tell that [npc.sheIs] still attracted to you.");
+						sb.append("Хотя кажется, что [npc.name] <i style='color:"+al.getColour().toWebHexString()+";'>недолюбливает</i> тебя, но заметно, что [npc.sheIs] всё ещё влечёт к тебе.");
 					} else {
-						sb.append("[npc.Name] seems to <i style='color:"+al.getColour().toWebHexString()+";'>dislike</i> you.");
+						sb.append("[npc.Name], кажется, <i style='color:"+al.getColour().toWebHexString()+";'>недолюбливает</i> тебя.");
 					}
 					break;
 				case NEGATIVE_ONE_ANNOYED:
 					if(this.isAttractedTo(Main.game.getPlayer())) {
-						sb.append("Even though [npc.name] seems to be <i style='color:"+al.getColour().toWebHexString()+";'>annoyed</i> with you, you can tell that [npc.sheIs] still attracted to you.");
+						sb.append("Хотя [npc.name] кажется <i style='color:"+al.getColour().toWebHexString()+";'>раздраженной</i> тобой, можно заметить, что [npc.sheIs] все еще влечет к тебе.");
 					} else {
-						sb.append("[npc.Name] seems to be <i style='color:"+al.getColour().toWebHexString()+";'>annoyed</i> with you.");
+						sb.append("[npc.Name] кажется <i style='color:"+al.getColour().toWebHexString()+";'>раздраженной</i> тобой.");
 					}
 					break;
 				case ZERO_NEUTRAL:
 					if(this.isAttractedTo(Main.game.getPlayer())) {
-						sb.append("[npc.Name] is acting in an <i style='color:"+al.getColour().toWebHexString()+";'>amicable, flirtatious</i> manner towards you.");
+						sb.append("[npc.Name] ведет себя весьма <i style='color:"+al.getColour().toWebHexString()+";'>дружелюбно и кокетливо</i> по отношению к тебе.");
 					} else {
-						sb.append("[npc.Name] is acting in an <i style='color:"+al.getColour().toWebHexString()+";'>amicable</i> manner towards you.");
+						sb.append("[npc.Name] ведет себя в <i style='color:"+al.getColour().toWebHexString()+";'>дружелюбной</i> манере по отношению к тебе.");
 					}
 					break;
 				case POSITIVE_ONE_FRIENDLY:
 					if(this.isAttractedTo(Main.game.getPlayer())) {
-						sb.append("[npc.Name] is acting in a <i style='color:"+al.getColour().toWebHexString()+";'>friendly, flirtatious</i> manner towards you.");
+						sb.append("[npc.Name] ведет себя в <i style='color:"+al.getColour().toWebHexString()+";'>дружелюбно и игриво</i> по отношению к тебе.");
 					} else {
-						sb.append("[npc.Name] is acting in a <i style='color:"+al.getColour().toWebHexString()+";'>friendly</i> manner towards you.");
+						sb.append("[npc.Name] ведет себя в <i style='color:"+al.getColour().toWebHexString()+";'>дружелюбной</i> манере по отношению к тебе.");
 					}
 					break;
 				case POSITIVE_TWO_LIKE:
 					if(this.isAttractedTo(Main.game.getPlayer())) {
-						sb.append("[npc.Name] quite clearly <i style='color:"+al.getColour().toWebHexString()+";'>likes you</i>, and sees you as more than just a friend.");
+						sb.append("[npc.Name] совершенно явно <i style='color:"+al.getColour().toWebHexString()+";'>ты нравишься</i>, и видит в тебе не просто друга.");
 					} else {
-						sb.append("[npc.Name] quite clearly <i style='color:"+al.getColour().toWebHexString()+";'>likes you</i>, and sees you as a close friend.");
+						sb.append("[npc.Name] совершенно явно <i style='color:"+al.getColour().toWebHexString()+";'>ты нравишься</i>, и видит в тебе близкого друга.");
 					}
 					break;
 				case POSITIVE_THREE_CARING:
 					if(this.isAttractedTo(Main.game.getPlayer())) {
-						sb.append("[npc.Name] quite clearly <i style='color:"+al.getColour().toWebHexString()+";'>cares about you a lot</i>, and is deeply attracted towards you.");
+						sb.append("[npc.Name] совершенно явно <i style='color:"+al.getColour().toWebHexString()+";'>ты очень важен/важна для неё</i>, и она испытывает к тебе глубокое влечение.");
 					} else {
-						sb.append("[npc.Name] quite clearly <i style='color:"+al.getColour().toWebHexString()+";'>cares about you a lot</i>, and considers you to be [npc.her] best friend.");
+						sb.append("[npc.Name] совершенно явно <i style='color:"+al.getColour().toWebHexString()+";'>ты очень важен/важна для неё</i>, и считает тебя своим [npc.her] лучшим другом.");
 					}
 					break;
 				case POSITIVE_FOUR_LOVE:
 					if(this.isAttractedTo(Main.game.getPlayer())) {
-						sb.append("You can tell from the way that [npc.she] looks at you that [npc.name] <i style='color:"+al.getColour().toWebHexString()+";'>loves you</i>.");
+						sb.append("По тому, как [npc.she] смотрит на тебя, можно понять, что [npc.name] <i style='color:"+al.getColour().toWebHexString()+";'>она любит тебя</i>.");
 					} else {
-						sb.append("You can tell that [npc.name] <i style='color:"+al.getColour().toWebHexString()+";'>loves you</i> in a purely platonic manner.");
+						sb.append("Можно заметить, что [npc.name] <i style='color:"+al.getColour().toWebHexString()+";'>она любит тебя</i> чисто платонически.");
 					}
 					break;
 				case POSITIVE_FIVE_WORSHIP:
 					if(this.isAttractedTo(Main.game.getPlayer())) {
-						sb.append("[npc.Name] <i style='color:"+al.getColour().toWebHexString()+";'>adores you</i>, and is head-over-heels in love with you.");
+						sb.append("[npc.Name] <i style='color:"+al.getColour().toWebHexString()+";'>ты обожаешь</i>, и она по уши в тебя влюблена.");
 					} else {
-						sb.append("[npc.Name] <i style='color:"+al.getColour().toWebHexString()+";'>adores you</i>, and would do almost anything you asked of [npc.herHim].");
+						sb.append("[npc.Name] <i style='color:"+al.getColour().toWebHexString()+";'>обожает тебя</i> и готов(а) на почти всё, что попросит [npc.herHim].");
 					}
 					break;
 			}
@@ -721,9 +720,7 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 
 	public String getTraderDescription() {
 		return UtilText.parse(this,
-				"<p>"
-					+ "You have a look at what [npc.name] has for sale."
-				+ "</p>");
+				"<p>Вы осматриваете товары, которые есть у [npc.name].</p>");
 	}
 
 	public boolean isTrader() {
@@ -1532,7 +1529,7 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 		if(this.getSubspeciesPreference()==Subspecies.SLIME && target.getBodyMaterial()!=BodyMaterial.SLIME) {
 			possibleEffects.add(new PossibleItemEffect(
 				new ItemEffect(ItemEffectType.RACE_SLIME_TF_UTIL_EFFECT, TFModifier.NONE, TFModifier.NONE, TFPotency.MINOR_BOOST, 1),
-				"You're going to love being a slime!"));
+				"Тебе понравится быть слаймом!"));
 			return new TransformativePotion(itemType, possibleEffects);
 		}
 		
@@ -1612,13 +1609,13 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 					if(!target.isHasAnyPregnancyEffects()) { // Vagina cannot be transformed if pregnant, so skip this
 						possibleEffects.add(new PossibleItemEffect(
 							new ItemEffect(genitalsItemType.getEnchantmentEffect(), TFModifier.TF_VAGINA, TFModifier.REMOVAL, TFPotency.MINOR_BOOST, 1),
-							"Say goodbye to your cunt; you're not going to be needing it anymore!"));
+							"Попрощайся со своей киской; она тебе больше не понадобится!"));
 					}
 					
 				} else {
 					possibleEffects.add(new PossibleItemEffect(
 						new ItemEffect(getItemEnchantmentEffect(genitalsItemType, body.getVagina()), TFModifier.TF_VAGINA, TFModifier.NONE, TFPotency.MINOR_BOOST, 1),
-						"Let's give you a nice "+(humanGenitals?"human":body.getVagina().getType().getTransformName())+" pussy!"));
+						"Давай сделаем тебе отличную "+(humanGenitals?"human":body.getVagina().getType().getTransformName())+" пипку!"));
 					if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 				}
 			}
@@ -1627,13 +1624,13 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 				if(body.getPenis().getType()==PenisType.NONE) {
 					possibleEffects.add(new PossibleItemEffect(
 						new ItemEffect(genitalsItemType.getEnchantmentEffect(), TFModifier.TF_PENIS, TFModifier.REMOVAL, TFPotency.MINOR_BOOST, 1),
-						"It's time to get rid of that cock of yours!"));
+						"Пора избавиться от твоего члена!"));
 					if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 					
 				} else {
 					possibleEffects.add(new PossibleItemEffect(
 						new ItemEffect(getItemEnchantmentEffect(genitalsItemType, body.getPenis()), TFModifier.TF_PENIS, TFModifier.NONE, TFPotency.MINOR_BOOST, 1),
-						"Let's give you a nice "+(humanGenitals?"human":body.getPenis().getType().getTransformName())+" cock!"));
+						"Давай сделаем тебе отличный "+(humanGenitals?"human":body.getPenis().getType().getTransformName())+" член!"));
 					if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 				}
 			}
@@ -1646,65 +1643,65 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 					possibleEffects.add(new PossibleItemEffect(
 						new ItemEffect(getItemEnchantmentEffect(itemType, body.getAntenna()), TFModifier.TF_ANTENNA, TFModifier.NONE, TFPotency.MINOR_BOOST, 1),
 						body.getAntenna().getType()==AntennaType.NONE
-							?UtilText.parse(target, "I don't want you having those [npc.antennae] anymore!")
-							:"Time to give you some antennae!"));//TODO
+							?UtilText.parse(target, "Я не хочу, чтобы у тебя больше были эти [npc.antennae]!")
+							:"Пора отрастить тебе усики!"));//TODO
 					if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 				}
 				if(Main.getProperties().getForcedTFPreference() != FurryPreference.MINIMUM) {
 					if(target.getAssType() != body.getAss().getType()) {
 						possibleEffects.add(new PossibleItemEffect(
 							new ItemEffect(getItemEnchantmentEffect(itemType, body.getAss()), TFModifier.TF_ASS, TFModifier.NONE, TFPotency.MINOR_BOOST, 1),
-							"Let's transform your ass!"));
+							"Давай преобразим твою задницу!"));
 						if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 					}
 					if(target.getBreastType() != body.getBreast().getType()) {
 						possibleEffects.add(new PossibleItemEffect(
 							new ItemEffect(getItemEnchantmentEffect(itemType, body.getBreast()), TFModifier.TF_BREASTS, TFModifier.NONE, TFPotency.MINOR_BOOST, 1),
-							"Your breasts need to be transformed as well!"));
+							"Твои груди тоже нуждаются в трансформации!"));
 						if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 					}
 					if(applyingCrotchBoobTF && target.getBreastCrotchType() != body.getBreastCrotch().getType() && body.getBreastCrotch().getType()!=BreastType.NONE) {
 						possibleEffects.add(new PossibleItemEffect(
 							new ItemEffect(getItemEnchantmentEffect(itemType, body.getBreastCrotch()), TFModifier.TF_BREASTS_CROTCH, TFModifier.NONE, TFPotency.MINOR_BOOST, 1),
-							"You need some new crotch-boobs!"));
+							"Тебе нужны новые лобковые соски!"));
 						if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 					}
 				}
 				if(target.getEarType() != body.getEar().getType()) {
 					possibleEffects.add(new PossibleItemEffect(
 						new ItemEffect(getItemEnchantmentEffect(itemType, body.getEar()), TFModifier.TF_EARS, body.getEar().getType().getTFModifier(), TFPotency.MINOR_BOOST, 1),
-						"Your ears could use some improvement!"));
+						"Твои уши не помешало бы подправить!"));
 					if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 				}
 				if(target.getEyeType() != body.getEye().getType()) {
 					possibleEffects.add(new PossibleItemEffect(
 						new ItemEffect(getItemEnchantmentEffect(itemType, body.getEye()), TFModifier.TF_EYES, TFModifier.NONE, TFPotency.MINOR_BOOST, 1),
-						"Now for your eyes to be transformed!"));
+						"Теперь пришло время преобразить твои глаза!"));
 					if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 				}
 				if(target.getHairType() != body.getHair().getType()) {
 					possibleEffects.add(new PossibleItemEffect(
 						new ItemEffect(getItemEnchantmentEffect(itemType, body.getHair()), TFModifier.TF_HAIR, body.getHair().getType().getTFModifier(), TFPotency.MINOR_BOOST, 1),
-						"This might tingle a little!"));
+						"Это может немного покалывать!"));
 					if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 				}
 				if(target.getHornType() != body.getHorn().getType()) {
 					possibleEffects.add(new PossibleItemEffect(
 						new ItemEffect(getItemEnchantmentEffect(itemType, body.getHorn()), TFModifier.TF_HORNS, body.getHorn().getType().getTFModifier(), TFPotency.MINOR_BOOST, 1),
 						body.getHorn().getType()==HornType.NONE
-							?"Let's get rid of those horns of yours..."
-							:"Ready to grow some new horns?"));
+							?"Давай избавимся от твоих рожек..."
+							:"Готова отрастить новые рога?"));
 					if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 				} else if (target.getHornType() != HornType.NONE) {
 					if(target.getHornLengthValue() + 3 < body.getHorn().getHornLengthValue()) {
 						possibleEffects.add(new PossibleItemEffect(
 							new ItemEffect(itemType.getEnchantmentEffect(), TFModifier.TF_HORNS, TFModifier.TF_MOD_SIZE, TFPotency.BOOST, 1),
-							"Let's make your horn" + ((target.getHornsPerRow() * target.getHornRows()) > 1 ? "s" : "") + " longer!"));
+							"Давай сделаем твой рог" + ((target.getHornsPerRow() * target.getHornRows()) > 1 ? "s" : "") + " длиннее!"));
 						if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 					} else if(target.getHornLengthValue() - 3 > body.getHorn().getHornLengthValue()) {
 						possibleEffects.add(new PossibleItemEffect(
 							new ItemEffect(itemType.getEnchantmentEffect(), TFModifier.TF_HORNS, TFModifier.TF_MOD_SIZE, TFPotency.DRAIN, 1),
-							"Let's make your horn" + ((target.getHornsPerRow() * target.getHornRows()) > 1 ? "s" : "") + " shorter!"));
+							"Давай сделаем твой рог" + ((target.getHornsPerRow() * target.getHornRows()) > 1 ? "s" : "") + " короче!"));
 						if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 					}
 				}
@@ -1714,16 +1711,16 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 					possibleEffects.add(new PossibleItemEffect(
 						new ItemEffect(getItemEnchantmentEffect(itemType, body.getTail()), TFModifier.TF_TAIL, body.getTail().getType().getTFModifier(), TFPotency.MINOR_BOOST, 1), 
 						body.getTail().getType()==TailType.NONE
-							?"That tail of yours is only getting in the way!"
-							:"Time to get a new tail!"));
+							?"Твой хвост только мешается!"
+							:"Пора отрастить новый хвост!"));
 					if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 				}
 				if(target.getWingType() != body.getWing().getType()) {
 					possibleEffects.add(new PossibleItemEffect(
 						new ItemEffect(getItemEnchantmentEffect(itemType, body.getWing()), TFModifier.TF_WINGS, body.getWing().getType().getTFModifier(), TFPotency.MINOR_BOOST, 1),
 						body.getWing().getType()==WingType.NONE
-							?"Let's get rid of those wings of yours..."
-							:"Ready to grow some new wings?"));
+							?"Давай-ка избавимся от твоих крыльев..."
+							:"Готова отрастить новые крылья?"));
 					if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 				}
 			}
@@ -1734,18 +1731,18 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 					if(target.getArmType() != body.getArm().getType()) {
 						possibleEffects.add(new PossibleItemEffect(
 							new ItemEffect(getItemEnchantmentEffect(itemType, body.getArm()), TFModifier.TF_ARMS, TFModifier.NONE, TFPotency.MINOR_BOOST, 1),
-							"Your arms could do with a change!"));
+							"Твоим рукам не помешало бы обновление!"));
 					}
 					// TODO: Add separate chunks for LegConfiguration and LegType if more races have multiple leg types
 					if(target.getLegType() != body.getLeg().getType()) {
 						possibleEffects.add(new PossibleItemEffect(
 							new ItemEffect(getItemEnchantmentEffect(itemType, body.getLeg()), TFModifier.TF_LEGS, TFModifier.NONE, TFPotency.MINOR_BOOST, 1),
-							"Your legs need changing as well!"));
+							"Твои ноги тоже нуждаются в переменах!"));
 					}
 					if(target.getLegConfiguration() != body.getLeg().getLegConfiguration()) {
 						possibleEffects.add(new PossibleItemEffect(
 							new ItemEffect(getItemEnchantmentEffect(itemType, body.getLeg()), TFModifier.TF_LEGS, body.getLeg().getLegConfiguration().getTFModifier(), TFPotency.MINOR_BOOST, 1),
-							"I want you with "+UtilText.generateSingularDeterminer(body.getLeg().getLegConfiguration().getName())+" "+body.getLeg().getLegConfiguration().getName()+" body!"));
+							"Я хочу тебя с "+UtilText.generateSingularDeterminer(body.getLeg().getLegConfiguration().getName())+" "+body.getLeg().getLegConfiguration().getName()+" телом!"));
 					}
 					if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); } // Apply arms & legs at the same time
 				}
@@ -1756,12 +1753,12 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 					if(target.getTorsoType() != body.getTorso().getType()) {
 						possibleEffects.add(new PossibleItemEffect(
 							new ItemEffect(getItemEnchantmentEffect(itemType, body.getTorso()), TFModifier.TF_SKIN, TFModifier.NONE, TFPotency.MINOR_BOOST, 1),
-							"This is going to be good!"));
+							"Это будет круто!"));
 					}
 					if(target.getFaceType() != body.getFace().getType()) {
 						possibleEffects.add(new PossibleItemEffect(
 							new ItemEffect(getItemEnchantmentEffect(itemType, body.getFace()), TFModifier.TF_FACE, body.getFace().getType().getTFModifier(), TFPotency.MINOR_BOOST, 1),
-							"I can't wait to see how you'll look after this!"));
+							"Не терпится увидеть, как ты будешь выглядеть после этого!"));
 					}
 					if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); } // Apply face & skin at the same time
 				}
@@ -1797,7 +1794,7 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 		if(applyingCrotchBoobTF && target.getBreastCrotchType()!=body.getBreastCrotch().getType() && body.getBreastCrotch().getType()==BreastType.NONE) {
 			possibleEffects.add(new PossibleItemEffect(
 				new ItemEffect(getItemEnchantmentEffect(itemType, body.getBreastCrotch()), TFModifier.TF_BREASTS_CROTCH, TFModifier.REMOVAL, TFPotency.MINOR_BOOST, 1),
-				"Let's get rid of those filthy crotch-boobs!"));
+				"Давай избавимся от этих грязных сисек в промежности!"));
 			if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 		}
 		
@@ -1852,13 +1849,13 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 		if(target.getHeightValue() + 10 < body.getHeightValue()) {
 			possibleEffects.add(new PossibleItemEffect(
 				new ItemEffect(itemType.getEnchantmentEffect(), TFModifier.TF_CORE, TFModifier.TF_MOD_SIZE, TFPotency.MAJOR_BOOST, 1),
-				"Let's make you taller!"));
+				"Давай сделаем тебя выше!"));
 			if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 			
 		} else if(target.getHeightValue() - 10 > body.getHeightValue()) {
 			possibleEffects.add(new PossibleItemEffect(
 				new ItemEffect(itemType.getEnchantmentEffect(), TFModifier.TF_CORE, TFModifier.TF_MOD_SIZE, TFPotency.MAJOR_DRAIN, 1),
-				"Let's make you shorter!"));
+				"Давай сделаем тебя ниже!"));
 			if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 		}
 		
@@ -1867,14 +1864,14 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 				&& target.getMuscle() != Muscle.valueOf(body.getMuscle())) {
 			possibleEffects.add(new PossibleItemEffect(
 				new ItemEffect(itemType.getEnchantmentEffect(), TFModifier.TF_CORE, TFModifier.TF_MOD_SIZE_SECONDARY, TFPotency.MAJOR_DRAIN, 1),
-				"You're too muscly for me!"));
+				"Ты слишком мускулистая для меня!"));
 			if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 			
 		} else if(target.getMuscleValue() < body.getMuscle()
 				&& target.getMuscle() != Muscle.valueOf(body.getMuscle())) {
 			possibleEffects.add(new PossibleItemEffect(
 				new ItemEffect(itemType.getEnchantmentEffect(), TFModifier.TF_CORE, TFModifier.TF_MOD_SIZE_SECONDARY, TFPotency.MAJOR_BOOST, 1),
-				"You need to have more muscle!"));
+				"Тебе нужно больше мышц!"));
 			if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 		}
 
@@ -1883,14 +1880,14 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 				&& target.getBodySize() != BodySize.valueOf(body.getBodySize())) {
 			possibleEffects.add(new PossibleItemEffect(
 				new ItemEffect(itemType.getEnchantmentEffect(), TFModifier.TF_CORE, TFModifier.TF_MOD_SIZE_TERTIARY, TFPotency.MAJOR_DRAIN, 1),
-				"Let's slim you down a bit!"));
+				"Давай тебя немного подсушим!"));
 			if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 			
 		} else if(target.getBodySizeValue() < body.getBodySize()
 				&& target.getBodySize() != BodySize.valueOf(body.getBodySize())) {
 			possibleEffects.add(new PossibleItemEffect(
 				new ItemEffect(itemType.getEnchantmentEffect(), TFModifier.TF_CORE, TFModifier.TF_MOD_SIZE_TERTIARY, TFPotency.MAJOR_BOOST, 1),
-				"You're far too slim for my liking!"));
+				"Ты слишком худая на мой вкус!"));
 			if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 		}
 		
@@ -1899,7 +1896,7 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 				&& Femininity.valueOf(target.getFemininityValue()) != Femininity.valueOf(body.getFemininity())) {
 			possibleEffects.add(new PossibleItemEffect(
 				new ItemEffect(itemType.getEnchantmentEffect(), TFModifier.TF_CORE, TFModifier.TF_MOD_FEMININITY, TFPotency.MAJOR_BOOST, 1),
-				"I'm gonna need you to be more feminine!"));
+				"Мне нужно, чтобы ты была более женственной!"));
 			if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 			
 		} else if(target.getFemininityValue() > body.getFemininity()
@@ -1907,7 +1904,7 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 				&& !Femininity.valueOf(body.getFemininity()).isFeminine()) {
 			possibleEffects.add(new PossibleItemEffect(
 				new ItemEffect(itemType.getEnchantmentEffect(), TFModifier.TF_CORE, TFModifier.TF_MOD_FEMININITY, TFPotency.MAJOR_DRAIN, 1),
-				"I'm gonna need you to be more of a man!"));
+				"Мне нужно, чтобы ты вел себя как настоящий мужчина!"));
 			if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 		}
 		
@@ -1917,38 +1914,38 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 		if(target.getBreastSize().getMeasurement() + 3 <= body.getBreast().getSize().getMeasurement()) {
 			possibleEffects.add(new PossibleItemEffect(
 					new ItemEffect(itemType.getEnchantmentEffect(), TFModifier.TF_BREASTS, TFModifier.TF_MOD_SIZE, TFPotency.MAJOR_BOOST, 1),
-					"Your breasts need to be a lot bigger!"));
+					"Твоя грудь должна быть намного больше!"));
 				if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 			
 		} else if(target.getBreastSize().getMeasurement() + 2 <= body.getBreast().getSize().getMeasurement()) {
 			possibleEffects.add(new PossibleItemEffect(
 					new ItemEffect(itemType.getEnchantmentEffect(), TFModifier.TF_BREASTS, TFModifier.TF_MOD_SIZE, TFPotency.BOOST, 1),
-					"Your breasts need to be bigger!"));
+					"Твоей груди нужно стать больше!"));
 				if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 				
 		} else if(target.getBreastSize().getMeasurement() + 1 <= body.getBreast().getSize().getMeasurement()) {
 			possibleEffects.add(new PossibleItemEffect(
 					new ItemEffect(itemType.getEnchantmentEffect(), TFModifier.TF_BREASTS, TFModifier.TF_MOD_SIZE, TFPotency.MINOR_BOOST, 1),
-					"Your breasts need to be a little bigger!"));
+					"Твоей груди нужно стать чуть больше!"));
 				if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 				
 		} else if(target.getBreastSize().getMeasurement()>0) {
 			if(target.getBreastSize().getMeasurement() - 3 >= body.getBreast().getSize().getMeasurement()) {
 				possibleEffects.add(new PossibleItemEffect(
 						new ItemEffect(itemType.getEnchantmentEffect(), TFModifier.TF_BREASTS, TFModifier.TF_MOD_SIZE, TFPotency.MAJOR_DRAIN, 1),
-						"Your breasts are far too big!"));
+						"Твоя грудь слишком огромная!"));
 					if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 					
 			} else if(target.getBreastSize().getMeasurement() - 2 >= body.getBreast().getSize().getMeasurement()) {
 				possibleEffects.add(new PossibleItemEffect(
 						new ItemEffect(itemType.getEnchantmentEffect(), TFModifier.TF_BREASTS, TFModifier.TF_MOD_SIZE, TFPotency.DRAIN, 1),
-						"Your breasts are too big!"));
+						"Твоя грудь слишком большая!"));
 					if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 					
 			} else if(target.getBreastSize().getMeasurement() - 1 >= body.getBreast().getSize().getMeasurement()) {
 				possibleEffects.add(new PossibleItemEffect(
 						new ItemEffect(itemType.getEnchantmentEffect(), TFModifier.TF_BREASTS, TFModifier.TF_MOD_SIZE, TFPotency.MINOR_DRAIN, 1),
-						"Your breasts are a little too big!"));
+						"Твоя грудь слегка великовата!"));
 					if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 			}
 		}
@@ -1959,38 +1956,38 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 			if(target.getBreastCrotchSize().getMeasurement() + 3 <= body.getBreastCrotch().getSize().getMeasurement()) {
 				possibleEffects.add(new PossibleItemEffect(
 						new ItemEffect(itemType.getEnchantmentEffect(), TFModifier.TF_BREASTS_CROTCH, TFModifier.TF_MOD_SIZE, TFPotency.MAJOR_BOOST, 1),
-						"Your crotch-boobs need to be a lot bigger!"));
+						"Твои лобковые губы должны быть намного больше!"));
 					if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 				
 			} else if(target.getBreastCrotchSize().getMeasurement() + 2 <= body.getBreastCrotch().getSize().getMeasurement()) {
 				possibleEffects.add(new PossibleItemEffect(
 						new ItemEffect(itemType.getEnchantmentEffect(), TFModifier.TF_BREASTS_CROTCH, TFModifier.TF_MOD_SIZE, TFPotency.BOOST, 1),
-						"Your crotch-boobs need to be bigger!"));
+						"Твоим лобковым губам нужно стать больше!"));
 					if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 					
 			} else if(target.getBreastCrotchSize().getMeasurement() + 1 <= body.getBreastCrotch().getSize().getMeasurement()) {
 				possibleEffects.add(new PossibleItemEffect(
 						new ItemEffect(itemType.getEnchantmentEffect(), TFModifier.TF_BREASTS_CROTCH, TFModifier.TF_MOD_SIZE, TFPotency.MINOR_BOOST, 1),
-						"Your crotch-boobs need to be a little bigger!"));
+						"Твоим лобковым губам нужно стать чуть больше!"));
 					if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 					
 			} else if(target.getBreastCrotchSize().getMeasurement()>0) {
 				if(target.getBreastCrotchSize().getMeasurement() - 3 >= body.getBreastCrotch().getSize().getMeasurement()) {
 					possibleEffects.add(new PossibleItemEffect(
 							new ItemEffect(itemType.getEnchantmentEffect(), TFModifier.TF_BREASTS_CROTCH, TFModifier.TF_MOD_SIZE, TFPotency.MAJOR_DRAIN, 1),
-							"Your crotch-boobs are far too big!"));
+							"Твои лобковые сиськи слишком огромны!"));
 						if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 						
 				} else if(target.getBreastCrotchSize().getMeasurement() - 2 >= body.getBreastCrotch().getSize().getMeasurement()) {
 					possibleEffects.add(new PossibleItemEffect(
 							new ItemEffect(itemType.getEnchantmentEffect(), TFModifier.TF_BREASTS_CROTCH, TFModifier.TF_MOD_SIZE, TFPotency.DRAIN, 1),
-							"Your crotch-boobs are too big!"));
+							"Твои лобковые сиськи слишком велики!"));
 						if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 						
 				} else if(target.getBreastCrotchSize().getMeasurement() - 1 >= body.getBreastCrotch().getSize().getMeasurement()) {
 					possibleEffects.add(new PossibleItemEffect(
 							new ItemEffect(itemType.getEnchantmentEffect(), TFModifier.TF_BREASTS_CROTCH, TFModifier.TF_MOD_SIZE, TFPotency.MINOR_DRAIN, 1),
-							"Your crotch-boobs are a little too big!"));
+							"Твои лобковые сиськи слегка великоваты!"));
 						if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 				}
 			}
@@ -2002,13 +1999,13 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 		if(target.getAssSize().getValue() + 1 < body.getAss().getAssSize().getValue()) {
 			possibleEffects.add(new PossibleItemEffect(
 				new ItemEffect(itemType.getEnchantmentEffect(), TFModifier.TF_ASS, TFModifier.TF_MOD_SIZE, TFPotency.BOOST, 1),
-				"Your ass needs to be bigger"));
+				"Твоей заднице нужно стать больше"));
 			if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 			
 		} else if(target.getAssSize().getValue() - 1 > body.getAss().getAssSize().getValue()) {
 			possibleEffects.add(new PossibleItemEffect(
 				new ItemEffect(itemType.getEnchantmentEffect(), TFModifier.TF_ASS, TFModifier.TF_MOD_SIZE, TFPotency.DRAIN, 1),
-				"Your ass is too big!"));
+				"Твоя задница слишком большая!"));
 			if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 		}
 		
@@ -2016,13 +2013,13 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 		if(target.getAssRawCapacityValue()+10 < body.getAss().getAnus().getOrificeAnus().getRawCapacityValue()) {
 			possibleEffects.add(new PossibleItemEffect(
 				new ItemEffect(itemType.getEnchantmentEffect(), TFModifier.TF_ASS, TFModifier.TF_MOD_CAPACITY, TFPotency.BOOST, 1),
-				"Your ass is too tight for my liking!"));
+				"Твоя задница слишком тугая на мой вкус!"));
 			if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 			
 		} else if(target.getAssRawCapacityValue()-20 > body.getAss().getAnus().getOrificeAnus().getRawCapacityValue()) {
 			possibleEffects.add(new PossibleItemEffect(
 				new ItemEffect(itemType.getEnchantmentEffect(), TFModifier.TF_ASS, TFModifier.TF_MOD_CAPACITY, TFPotency.MAJOR_DRAIN, 1),
-				"Your ass is far too loose!"));
+				"Твоя задница слишком расхлябанная!"));
 			if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 		}
 		
@@ -2030,20 +2027,20 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 		if(target.getAssWetness().getValue() < body.getAss().getAnus().getOrificeAnus().getWetness(null).getValue()) {
 			possibleEffects.add(new PossibleItemEffect(
 				new ItemEffect(itemType.getEnchantmentEffect(), TFModifier.TF_ASS, TFModifier.TF_MOD_WETNESS, TFPotency.MINOR_BOOST, 1),
-				"Your ass is too dry!"));
+				"Твоя задница слишком сухая!"));
 			if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 		}
 		
 		// Hip size:
 		if(target.getHipSize().getValue() + 1 < body.getAss().getHipSize().getValue()) {
 			possibleEffects.add(new PossibleItemEffect(new ItemEffect(itemType.getEnchantmentEffect(), TFModifier.TF_ASS, TFModifier.TF_MOD_SIZE_SECONDARY, TFPotency.BOOST, 1),
-				"Your hips need to be wider!"));
+				"Твои бёдра должны быть шире!"));
 			if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 			
 		} else if(target.getHipSize().getValue() - 1 > body.getAss().getHipSize().getValue()) {
 			possibleEffects.add(new PossibleItemEffect(
 				new ItemEffect(itemType.getEnchantmentEffect(), TFModifier.TF_ASS, TFModifier.TF_MOD_SIZE_SECONDARY, TFPotency.DRAIN, 1),
-				"Your hips are too wide!"));
+				"Твои бёдра слишком широкие!"));
 			if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 		}
 
@@ -2059,15 +2056,15 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 				possibleEffects.add(new PossibleItemEffect(
 					new ItemEffect(itemType.getEnchantmentEffect(), TFModifier.TF_HAIR, TFModifier.TF_MOD_SIZE, majorChange?TFPotency.MAJOR_BOOST:TFPotency.BOOST, 1),
 					i==0
-						?("Your [pc.hair(true)] "+(target.getHairType().isDefaultPlural(target)?"are":"is")+" too short!")
-						:"Let's make your [pc.hair(true)] even longer!"));
+						?("Твои [pc.hair(true)] "+(target.getHairType().isDefaultPlural(target)?"are":"is")+" слишком короткие!")
+						:"Давай сделаем твои [pc.hair(true)] еще длиннее!"));
 				
 			} else if(target.getHairRawLengthValue() > body.getHair().getRawLengthValue()) {
 				possibleEffects.add(new PossibleItemEffect(
 					new ItemEffect(itemType.getEnchantmentEffect(), TFModifier.TF_HAIR, TFModifier.TF_MOD_SIZE, majorChange?TFPotency.MAJOR_DRAIN:TFPotency.DRAIN, 1),
 					i==0
-						?("Your [pc.hair(true)] "+(target.getHairType().isDefaultPlural(target)?"are":"is")+" too long!")
-						:"Let's make your [pc.hair(true)] even shorter!"));
+						?("Твои [pc.hair(true)] "+(target.getHairType().isDefaultPlural(target)?"are":"is")+" слишком длинные!")
+						:"Давай сделаем твои [pc.hair(true)] еще короче!"));
 			}
 		}
 		if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
@@ -2078,13 +2075,13 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 		if(target.getLipSize().getValue() + 1 < body.getFace().getMouth().getLipSize().getValue()) {
 			possibleEffects.add(new PossibleItemEffect(
 				new ItemEffect(itemType.getEnchantmentEffect(), TFModifier.TF_FACE, TFModifier.TF_MOD_SIZE, TFPotency.BOOST, 1),
-				"Your [pc.lips] are too small!"));
+				"Твои [pc.lips] слишком маленькие!"));
 			if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 			
 		} else if(target.getLipSize().getValue() - 1 > body.getFace().getMouth().getLipSize().getValue()) {
 			possibleEffects.add(new PossibleItemEffect(
 				new ItemEffect(itemType.getEnchantmentEffect(), TFModifier.TF_FACE, TFModifier.TF_MOD_SIZE, TFPotency.DRAIN, 1),
-				"Your [pc.lips] are too big!"));
+				"Твои [pc.lips] слишком большие!"));
 			if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 		}
 		
@@ -2096,7 +2093,7 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 			if(target.getPenisRawCumStorageValue() < body.getPenis().getTesticle().getRawCumStorageValue()) {
 				possibleEffects.add(new PossibleItemEffect(
 					new ItemEffect(itemType.getEnchantmentEffect(), TFModifier.TF_CUM, TFModifier.TF_MOD_WETNESS, TFPotency.MAJOR_BOOST, 1),
-					"Mmm! You're gonna make lots of cum for me!"));
+					"Ммм! Ты выдашь для меня кучу спермы!"));
 				if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 			}
 			// Size:
@@ -2104,12 +2101,12 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 				if(body.getPenis().getRawLengthValue() - target.getPenisRawSizeValue() > 5) {
 					possibleEffects.add(new PossibleItemEffect(
 						new ItemEffect(itemType.getEnchantmentEffect(), TFModifier.TF_PENIS, TFModifier.TF_MOD_SIZE, TFPotency.BOOST, 1),
-						"Your cock needs to be a lot bigger!"));
+						"Твоему члену нужно стать намного больше!"));
 					if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 				} else {
 					possibleEffects.add(new PossibleItemEffect(
 						new ItemEffect(itemType.getEnchantmentEffect(), TFModifier.TF_PENIS, TFModifier.TF_MOD_SIZE, TFPotency.MINOR_BOOST, 1),
-						"Your cock needs to be a little bigger!"));
+						"Твой член должен быть чуть больше!"));
 					if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 				}
 				
@@ -2117,12 +2114,12 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 				if(target.getPenisRawSizeValue() - body.getPenis().getRawLengthValue() > 5) {
 					possibleEffects.add(new PossibleItemEffect(
 						new ItemEffect(itemType.getEnchantmentEffect(), TFModifier.TF_PENIS, TFModifier.TF_MOD_SIZE, TFPotency.DRAIN, 1),
-						"Your cock needs to be a lot smaller!"));
+						"Твой член должен быть намного меньше!"));
 					if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 				} else {
 					possibleEffects.add(new PossibleItemEffect(
 						new ItemEffect(itemType.getEnchantmentEffect(), TFModifier.TF_PENIS, TFModifier.TF_MOD_SIZE, TFPotency.MINOR_DRAIN, 1),
-						"Your cock needs to be a little smaller!"));
+						"Твой член должен быть чуть меньше!"));
 					if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 				}
 			}
@@ -2130,25 +2127,25 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 			if(target.getPenisRawGirthValue() < body.getPenis().getRawGirthValue()) {
 				possibleEffects.add(new PossibleItemEffect(
 					new ItemEffect(itemType.getEnchantmentEffect(), TFModifier.TF_PENIS, TFModifier.TF_MOD_SIZE_SECONDARY, TFPotency.MINOR_BOOST, 1),
-					"I want your cock to be nice and thick!"));
+					"Я хочу, чтобы твой член был хорошеньким и толстым!"));
 				if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 				
 			} else if(target.getPenisRawGirthValue() > body.getPenis().getRawGirthValue()) {
 				possibleEffects.add(new PossibleItemEffect(
 					new ItemEffect(itemType.getEnchantmentEffect(), TFModifier.TF_PENIS, TFModifier.TF_MOD_SIZE_SECONDARY, TFPotency.MINOR_DRAIN, 1),
-					"Your cock's far too thick!"));
+					"Твой член слишком толстый!"));
 				if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 			}
 			// Ball size:
 			if(target.getTesticleSize().getValue() < body.getPenis().getTesticle().getTesticleSize().getValue()) {
 				possibleEffects.add(new PossibleItemEffect(
 					new ItemEffect(itemType.getEnchantmentEffect(), TFModifier.TF_PENIS, TFModifier.TF_MOD_SIZE_TERTIARY, TFPotency.MINOR_BOOST, 1),
-					"Your balls need to be bigger than that!"));
+					"Твои яйца должны быть побольше!"));
 				if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 				
 			} else if(target.getTesticleSize().getValue() > body.getPenis().getTesticle().getTesticleSize().getValue()) {
 				possibleEffects.add(new PossibleItemEffect(
-					new ItemEffect(itemType.getEnchantmentEffect(), TFModifier.TF_PENIS, TFModifier.TF_MOD_SIZE_TERTIARY, TFPotency.MINOR_DRAIN, 1), "Your balls shouldn't be so big!"));
+					new ItemEffect(itemType.getEnchantmentEffect(), TFModifier.TF_PENIS, TFModifier.TF_MOD_SIZE_TERTIARY, TFPotency.MINOR_DRAIN, 1), "Твои яйца не должны быть такими огромными!"));
 				if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 			}
 		}
@@ -2161,20 +2158,20 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 			if(target.getVaginaRawCapacityValue()+10 < body.getVagina().getOrificeVagina().getRawCapacityValue()) {
 				possibleEffects.add(new PossibleItemEffect(
 					new ItemEffect(itemType.getEnchantmentEffect(), TFModifier.TF_VAGINA, TFModifier.TF_MOD_CAPACITY, TFPotency.BOOST, 1),
-					"Your pussy's too tight for my liking!"));
+					"Твоя киска слишком узкая для моего вкуса!"));
 				if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 				
 			} else if(target.getVaginaRawCapacityValue()-20 > body.getVagina().getOrificeVagina().getRawCapacityValue()) {
 				possibleEffects.add(new PossibleItemEffect(
 					new ItemEffect(itemType.getEnchantmentEffect(), TFModifier.TF_VAGINA, TFModifier.TF_MOD_CAPACITY, TFPotency.MAJOR_DRAIN, 1),
-					"Your pussy's far too loose!"));
+					"Твоя киска слишком расхлябанная!"));
 				if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 			}
 			// Wetness:
 			if(target.getVaginaWetness().getValue() < body.getVagina().getOrificeVagina().getWetness(null).getValue()) {
 				possibleEffects.add(new PossibleItemEffect(
 					new ItemEffect(itemType.getEnchantmentEffect(), TFModifier.TF_VAGINA, TFModifier.TF_MOD_WETNESS, TFPotency.MINOR_BOOST, 1),
-					"Your pussy isn't wet enough!"));
+					"Твоя киска недостаточно влажная!"));
 				if(possibleEffects.size()>=numberOfTransformations) { return new TransformativePotion(itemType, possibleEffects, body); }
 			}
 		}
@@ -2854,8 +2851,8 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 		
 		Map<TFModifier, String> fetishAddFlavorText = new HashMap<>(), fetishRemoveFlavorText = new HashMap<>();
 		
-		String defaultFetishAddFlavorText = "Why not expand your horizons a bit, eh?";
-		String defaultFetishRemoveFlavorText = "Maybe you should cool down a bit about the more extreme stuff, eh?.";
+		String defaultFetishAddFlavorText = "Почему бы тебе не расширить свои горизонты, а?";
+		String defaultFetishRemoveFlavorText = "Может, тебе стоит поостыть насчет всяких извращений, а?";
 		
 		// Body part
 		fetishAddFlavorText.put(TFModifier.TF_MOD_FETISH_PENIS_GIVING, "You're going to love using your cock!");
@@ -3063,7 +3060,7 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 				}
 				if(condom!=null && this.isAbleToEquip(condom, inQuickSex, this)) {
 //					System.out.println("Condom");
-					return new Value<>(condom, UtilText.parse(this, "[npc.Name] grabs a "+condom.getName()+" from out of [npc.her] inventory..."));
+					return new Value<>(condom, UtilText.parse(this, "[npc.Name] хватает "+condom.getName()+" из [npc.her] инвентаря..."));
 				}
 			}
 		}
@@ -3091,7 +3088,7 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 					}
 				}
 				if(condom!=null && partner.isAbleToEquip(condom, inQuickSex || !Main.sex.isInForeplay(this), this)) { // Auto management in quick sex and if this NPC is past foreplay, as as otherwise clothing removals would take forever
-					return new Value<>(condom, UtilText.parse(this, "[npc.Name] grabs a "+condom.getName()+" from out of [npc.her] inventory..."));
+					return new Value<>(condom, UtilText.parse(this, "[npc.Name] хватает "+condom.getName()+" из [npc.her] инвентаря..."));
 				}
 			}
 			
@@ -3163,7 +3160,7 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 							&& clothing.isAbleToBeEquippedDuringSex(defaultSlot).getKey()
 							&& partner.getClothingInSlot(defaultSlot)==null
 							&& partner.isAbleToEquip(clothing, inQuickSex, this)) {
-						return new Value<>(clothing, UtilText.parse(this, "[npc.Name] grabs "+clothing.getName(true, true)+" from out of [npc.her] inventory..."));
+						return new Value<>(clothing, UtilText.parse(this, "[npc.Name] хватает "+clothing.getName(true, true)+" из [npc.her] инвентаря..."));
 					}
 				}
 			}
@@ -3204,10 +3201,10 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 								&& !Main.sex.getItemUseDenials(this, partner).contains(ItemType.getItemTypeFromId("innoxia_pills_sterility"))) {
 							return new Value<>(Main.game.getItemGen().generateItem("innoxia_pills_sterility"),
 										UtilText.parse(this, charactersPenetratingThisNpc.get(0),
-												"Taking a small blue '[#ITEM_innoxia_pills_sterility.getName(false)]' out of [npc.her] inventory, [npc.name] pops it out of its protective wrapper before quickly slipping it into [npc.her] mouth and swallowing it down."
+												"Достав из инвентаря [npc.her] маленькую синюю «[#ITEM_innoxia_pills_sterility.getName(false)]», [npc.name] вынимает её из защитной оболочки, быстро закидывает в [npc.her] рот и проглатывает."
 												+ (this.isMute()
-														?" Knowing that [npc.sheIs] now far less fertile and extremely unlikely to get knocked up, [npc.name] lets out a relieved [npc.moan]..."
-														:" Knowing that [npc.sheIs] now far less fertile and extremely unlikely to get knocked up, [npc.name] [npc.moansVerb], [npc.speech(I really don't want to get pregnant...)]")));
+														?" Зная, что [npc.sheIs] теперь гораздо менее фертильна и шансы, что она забеременеет, крайне малы, [npc.name] издает облегченный [npc.moan]..."
+														:" Зная, что [npc.sheIs] теперь гораздо менее фертильна и вероятность забеременеть крайне мала, [npc.name] [npc.moansVerb], [npc.speech(Я очень не хочу беременеть...)]")));
 						}
 						if((this.getFetishDesire(Fetish.FETISH_PREGNANCY).isPositive() && (this.getHistory()!=Occupation.NPC_PROSTITUTE || this.isSlave()))
 								&& this.hasVagina()
@@ -3220,10 +3217,10 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 								&& !Main.sex.getItemUseDenials(this, partner).contains(ItemType.getItemTypeFromId("innoxia_pills_fertility"))) {
 							return new Value<>(Main.game.getItemGen().generateItem("innoxia_pills_fertility"),
 									UtilText.parse(this, charactersPenetratingThisNpc.get(0),
-											"Taking a small pink '[#ITEM_innoxia_pills_fertility.getName(false)]' out of [npc.her] inventory, [npc.name] pops it out of its protective wrapper before quickly slipping it into [npc.her] mouth and swallowing it down."
+											"Достав из [npc.her] инвентаря маленькую розовую '[#ITEM_innoxia_pills_fertility.getName(false)]', [npc.name] вынимает её из защитной оболочки, быстро отправляет в [npc.her] рот и проглатывает."
 											+ (this.isMute()
-													?" Knowing that [npc.sheIs] now a lot more fertile, [npc.name] lets out [npc.a_moan+] as [npc.she] imagines [npc2.name] finishing inside of [npc.herHim] and getting [npc.herHim] knocked up..."
-													:" Knowing that [npc.sheIs] now a lot more fertile, [npc.name] lets out [npc.a_moan+] and pleads, [npc.speech(Finish inside of me! I want you to knock me up!)]")));
+													?" Зная, что [npc.sheIs] теперь стала куда более фертильной, [npc.name] издает [npc.a_moan+], пока [npc.she] представляет, как [npc2.name] кончает внутрь [npc.herHim], и та [npc.herHim] зачинает..."
+													:" Зная, что [npc.sheIs] теперь стала куда более фертильной, [npc.name] издает [npc.a_moan+] и умоляет: [npc.speech(Кончи в меня! Я хочу, чтобы ты меня оплодотворил!)]")));
 						}
 					}
 				}
@@ -3237,10 +3234,10 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 								&& !Main.sex.getItemUseDenials(this, partner).contains(ItemType.getItemTypeFromId("innoxia_pills_sterility"))) {
 							return new Value<>(Main.game.getItemGen().generateItem("innoxia_pills_sterility"),
 										UtilText.parse(this, charactersThisNpcIsPenetrating.get(0),
-												"Taking a small blue '[#ITEM_innoxia_pills_sterility.getName(false)]' out of [npc.her] inventory, [npc.name] pops it out of its protective wrapper before quickly slipping it into [npc.her] mouth and swallowing it down."
+												"Достав из инвентаря [npc.her] маленькую синюю «[#ITEM_innoxia_pills_sterility.getName(false)]», [npc.name] вынимает её из защитной оболочки, быстро закидывает в [npc.her] рот и проглатывает."
 												+ (this.isMute()
-														?" Knowing that [npc.sheIs] now far less virile and extremely unlikely to knock [npc2.name] up, [npc.name] lets out a relieved [npc.moan]..."
-														:" Knowing that [npc.sheIs] now far less virile and extremely unlikely to knock [npc2.name] up, [npc.name] [npc.moansVerb], [npc.speech(That's better! I won't be getting you pregnant now!)]")));
+														?" Зная, что [npc.sheIs] теперь гораздо менее положителен и крайне вряд ли сможет зачать от [npc2.name], [npc.name] издает облегченный [npc.moan]..."
+														:" Зная, что [npc.sheIs] теперь гораздо менее положителен и крайне вряд ли сможет зачать от [npc2.name], [npc.name] [npc.moansVerb], [npc.speech(Так-то лучше! Теперь ты меня не залетишь!)]")));
 						}
 						if(this.getFetishDesire(Fetish.FETISH_IMPREGNATION).isPositive()
 								&& partner.hasVagina()
@@ -3253,10 +3250,10 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 								&& !Main.sex.getItemUseDenials(this, partner).contains(ItemType.getItemTypeFromId("innoxia_pills_fertility"))) {
 							return new Value<>(Main.game.getItemGen().generateItem("innoxia_pills_fertility"),
 									UtilText.parse(this, charactersThisNpcIsPenetrating.get(0),
-											"Taking a small pink '[#ITEM_innoxia_pills_fertility.getName(false)]' out of [npc.her] inventory, [npc.name] pops it out of its protective wrapper before quickly slipping it into [npc.her] mouth and swallowing it down."
+											"Достав из [npc.her] инвентаря маленькую розовую '[#ITEM_innoxia_pills_fertility.getName(false)]', [npc.name] вынимает её из защитной оболочки, быстро отправляет в [npc.her] рот и проглатывает."
 											+ (this.isMute()
-													?" Knowing that [npc.sheIs] now a lot more virile, [npc.name] lets out [npc.a_moan+] as [npc.she] imagines finishing inside of [npc2.herHim] and getting [npc2.herHim] knocked up..."
-													:" Knowing that [npc.sheIs] now a lot more virile, [npc.name] lets out [npc.a_moan+] and teases, [npc.speech(I'm going to give you a big creampie and get you knocked up!)]")));
+													?" Понимая, что [npc.sheIs] теперь стал куда более витальным, [npc.name] издает [npc.a_moan+], когда [npc.she] представляет, как кончает внутрь [npc2.herHim] и зачинает от него [npc2.herHim]..."
+													:" Зная, что [npc.sheIs] теперь стал куда сильнее, [npc.name] издает [npc.a_moan+] и дразнит: [npc.speech(Я устрою тебе такой затек, что ты точно забеременеешь!)]")));
 						}
 					}
 				}
@@ -3275,18 +3272,17 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 								if(partner.isPlayer()) {
 									if(Main.sex.isForcingItemUse(this, partner)) {
 										return new Value<>(Main.game.getItemGen().generateItem("innoxia_pills_sterility"),
-												"Taking a small blue '[#ITEM_innoxia_pills_sterility.getName(false)]' out of [npc.her] inventory, [npc.name] pops it out of its protective wrapper before reaching over and pushing it into your mouth."
-												+ " Clasping [npc.her] [npc.hand] over your [pc.lips] to prevent you from spitting it out,"
+												"Достав из инвентаря [npc.her] маленькую синюю '[#ITEM_innoxia_pills_sterility.getName(false)]', [npc.name] вынимает ее из защитной упаковки, а затем тянется к тебе и проталкивает ее тебе в рот. Сжимая [npc.her] [npc.hand] поверх твоих [pc.lips], чтобы ты не выплюнула ее,"
 													+ (this.isMute()
-															?" [npc.name] lets out a commanding growl and refuses to let go until you've swallowed it down..."
-															:" [npc.name] forces you to swallow it down and growls, [npc.speech(I don't want you knocking me up!)]"));
+															?" [npc.name] издает властный рык и не выпускает ее, пока ты не проглотишь ее целиком..."
+															:" [npc.name] заставляет тебя проглотить ее и рычит: [npc.speech(Я не хочу, чтобы ты меня оплодотворил!)]"));
 										
 									} else {
 										return new Value<>(Main.game.getItemGen().generateItem("innoxia_pills_sterility"),
-												"Taking a small blue '[#ITEM_innoxia_pills_sterility.getName(false)]' out of [npc.her] inventory, [npc.name] holds it out to you"
+												"Достав из инвентаря [npc.her] маленькую синюю '[#ITEM_innoxia_pills_sterility.getName(false)]', [npc.name] протягивает ее тебе,"
 													+ (this.isMute()
-															?" and makes a pleading whine as [npc.she] motions for you to swallow it..."
-															:" and asks, [npc.speech(Please swallow this; I don't want you knocking me up!)]"));
+															?" и жалобно скулит, когда [npc.she] жестом просит тебя проглотить ее..."
+															:" и спрашивает: [npc.speech(Пожалуйста, проглоти это; я не хочу, чтобы ты меня оплодотворил!)]"));
 									}
 									
 								} else {
@@ -3304,18 +3300,17 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 							if(partner.isPlayer()) {
 								if(Main.sex.isForcingItemUse(this, partner)) {
 									return new Value<>(Main.game.getItemGen().generateItem("innoxia_pills_fertility"),
-											"Taking a small pink '[#ITEM_innoxia_pills_fertility.getName(false)]' out of [npc.her] inventory, [npc.name] pops it out of its protective wrapper before reaching over and pushing it into your mouth."
-											+ " Clasping [npc.her] [npc.hand] over your [pc.lips] to prevent you from spitting it out,"
+											"Достав из инвентаря [npc.her] маленькую розовую '[#ITEM_innoxia_pills_fertility.getName(false)]', [npc.name] вынимает ее из защитной упаковки, а затем тянется к тебе и проталкивает ее тебе в рот. Сжимая [npc.her] [npc.hand] поверх твоих [pc.lips], чтобы ты не выплюнула ее,"
 												+ (this.isMute()
-														?" [npc.name] lets out a commanding growl and refuses to let go until you've swallowed it down..."
-														:" [npc.name] forces you to swallow it down and growls, [npc.speech(I want you to get me knocked up!)]"));
+														?" [npc.name] издает властный рык и не выпускает ее, пока ты не проглотишь ее целиком..."
+														:" [npc.name] заставляет тебя проглотить это и рычит: [npc.speech(Я хочу, чтобы ты меня оплодотворил!)]"));
 									
 								} else {
 									return new Value<>(Main.game.getItemGen().generateItem("innoxia_pills_fertility"),
-											"Taking a small pink '[#ITEM_innoxia_pills_fertility.getName(false)]' out of [npc.her] inventory, [npc.name] holds it out to you"
+											"Достав маленькую розовую '[#ITEM_innoxia_pills_fertility.getName(false)]' из инвентаря [npc.her], [npc.name] протягивает её тебе"
 												+ (this.isMute()
-														?" and makes a pleading whine as [npc.she] motions for you to swallow it..."
-														:" and asks, [npc.speech(Please swallow this; I want you to knock me up!)]"));
+														?" и жалобно скулит, когда [npc.she] жестом просит тебя проглотить ее..."
+														:" и просит: [npc.speech(Пожалуйста, проглоти это; я хочу, чтобы ты меня оплодотворил!)]"));
 								}
 								
 							} else {
@@ -3336,18 +3331,17 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 							if(partner.isPlayer()) {
 								if(Main.sex.isForcingItemUse(this, partner)) {
 									return new Value<>(Main.game.getItemGen().generateItem("innoxia_pills_sterility"),
-											"Taking a small blue '[#ITEM_innoxia_pills_sterility.getName(false)]' out of [npc.her] inventory, [npc.name] pops it out of its protective wrapper before reaching over and pushing it into your mouth."
-											+ " Clasping [npc.her] [npc.hand] over your [pc.lips] to prevent you from spitting it out,"
+											"Достав из инвентаря [npc.her] маленькую синюю '[#ITEM_innoxia_pills_sterility.getName(false)]', [npc.name] вынимает ее из защитной упаковки, а затем тянется к тебе и проталкивает ее тебе в рот. Сжимая [npc.her] [npc.hand] поверх твоих [pc.lips], чтобы ты не выплюнула ее,"
 												+ (this.isMute()
-														?" [npc.name] lets out a commanding growl and refuses to let go until you've swallowed it down..."
-														:" [npc.name] forces you to swallow it down and growls, [npc.speech(I don't want to knock you up!)]"));
+														?" [npc.name] издает властный рык и не выпускает ее, пока ты не проглотишь ее целиком..."
+														:" [npc.name] заставляет тебя проглотить это и рычит: [npc.speech(Я не хочу, чтобы ты меня оплодотворил!)]"));
 									
 								} else {
 									return new Value<>(Main.game.getItemGen().generateItem("innoxia_pills_sterility"),
-											"Taking a small blue '[#ITEM_innoxia_pills_sterility.getName(false)]' out of [npc.her] inventory, [npc.name] holds it out to you"
+											"Достав из инвентаря [npc.her] маленькую синюю '[#ITEM_innoxia_pills_sterility.getName(false)]', [npc.name] протягивает ее тебе,"
 												+ (this.isMute()
-														?" and makes a pleading whine as [npc.she] motions for you to swallow it..."
-														:" and asks, [npc.speech(Please swallow this; I don't want to knock you up!)]"));
+														?" и жалобно скулит, когда [npc.she] жестом просит тебя проглотить ее..."
+														:" и просит: [npc.speech(Пожалуйста, проглоти это; я не хочу, чтобы ты меня оплодотворил!)]"));
 								}
 								
 							} else {
@@ -3364,18 +3358,17 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 							if(partner.isPlayer()) {
 								if(Main.sex.isForcingItemUse(this, partner)) {
 									return new Value<>(Main.game.getItemGen().generateItem("innoxia_pills_fertility"),
-											"Taking a small pink '[#ITEM_innoxia_pills_fertility.getName(false)]' out of [npc.her] inventory, [npc.name] pops it out of its protective wrapper before reaching over and pushing it into your mouth."
-											+ " Clasping [npc.her] [npc.hand] over your [pc.lips] to prevent you from spitting it out,"
+											"Достав из инвентаря [npc.her] маленькую розовую '[#ITEM_innoxia_pills_fertility.getName(false)]', [npc.name] вынимает ее из защитной упаковки, а затем тянется к тебе и проталкивает ее тебе в рот. Сжимая [npc.her] [npc.hand] поверх твоих [pc.lips], чтобы ты не выплюнула ее,"
 												+ (this.isMute()
-														?" [npc.name] lets out a commanding growl and refuses to let go until you've swallowed it down..."
-														:" [npc.name] forces you to swallow it down and growls, [npc.speech(I'm going to get you knocked up!)]"));
+														?" [npc.name] издает властный рык и не выпускает ее, пока ты не проглотишь ее целиком..."
+														:" [npc.name] заставляет тебя проглотить это и рычит: [npc.speech(Я заставлю тебя меня оплодотворить!)]"));
 									
 								} else {
 									return new Value<>(Main.game.getItemGen().generateItem("innoxia_pills_fertility"),
-											"Taking a small pink '[#ITEM_innoxia_pills_fertility.getName(false)]' out of [npc.her] inventory, [npc.name] holds it out to you"
+											"Достав маленькую розовую '[#ITEM_innoxia_pills_fertility.getName(false)]' из инвентаря [npc.her], [npc.name] протягивает её тебе"
 												+ (this.isMute()
-														?" and makes a pleading whine as [npc.she] motions for you to swallow it..."
-														:" and asks, [npc.speech(Please swallow this; I want to knock you up!)]"));
+														?" и жалобно скулит, когда [npc.she] жестом просит тебя проглотить ее..."
+														:" и просит: [npc.speech(Пожалуйста, проглоти это; я хочу тебя оплодотворить!)]"));
 								}
 								
 							} else {
@@ -3558,9 +3551,7 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 				if(item.getItemType().isTransformative()) {
 					return new Value<>(true,
 							UtilText.parse(user, target,
-									"<p>"
-										+ "[npc2.speech(As I'm able to freely transform myself at any time, having me "+item.getItemType().getUseName()+" that seems like a waste,)]"
-												+ " [npc2.name] sighs, but nevertheless does as [npc2.sheIs] told and "+item.getItemType().getUseName()+"s the "+item.getName()+"."
+									"<p>[npc2.speech(Раз уж я могу свободно трансформироваться в любое время, то иметь меня, "+item.getItemType().getUseName()+" это кажется пустой тратой времени,)] [npc2.name] вздыхает, но всё же делает так, как сказала [npc2.sheIs], и "+item.getItemType().getUseName()+"с  "+item.getName()+"."
 									+ "</p>")
 							+ itemOwner.useItem(item, target, false));
 					
@@ -3587,18 +3578,11 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 				if(item.getItemType().isTransformative()) {
 					return new Value<>(false,
 							UtilText.parse(user, target,
-							"<p>"
-								+ "[npc.Name] [npc.verb(try)] to give [npc2.name] [npc.her] "+item.getName()+", but [npc2.she] [npc2.verb(take)] one look at it and [npc2.verb(laugh)],"
-								+ " [npc2.speech(Hah! Nice try, but do you really expect me to drink some random potion?!)]<br/>"
-								+ "[npc.Name] reluctantly [npc.verb(put)] the "+item.getName()+" back in [npc.her] inventory, disappointed that [npc2.nameIsFull] not interested."
-							+ "</p>"));
+							"<p>[npc.Name] [npc.verb(try)], чтобы дать [npc2.name] [npc.her] "+item.getName()+", но [npc2.she] [npc2.verb(take)] лишь раз взглянула на него и [npc2.verb(laugh)], [npc2.speech(Ха! Хорошая попытка, но ты правда думаешь, что я стану пить какую-то случайную жижу?!)]<br/>[npc.Name] неохотно [npc.verb(put)] "+item.getName()+" обратно в инвентарь [npc.her], разочарованная тем, что [npc2.nameIsFull] не проявила интереса.</p>"));
 				} else {
 					return new Value<>(false,
 							UtilText.parse(user, target,
-							"<p>"
-								+ "[npc.Name] [npc.verb(try)] to give [npc2.name] [npc.her] "+item.getName()+", but [npc2.she] refuses to take it."
-								+ " [npc.Name] reluctantly [npc.verb(put)] the "+item.getName()+" back in [npc.her] inventory."
-							+ "</p>"));
+							"<p>[npc.Name] [npc.verb(try)], чтобы дать [npc2.name] [npc.her] "+item.getName()+", но [npc2.she] отказывается его брать. [npc.Name] неохотно [npc.verb(put)] "+item.getName()+" обратно в инвентарь [npc.her].</p>"));
 				}
 			}
 		
@@ -3615,22 +3599,20 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 		if(!user.equals(target)) { // Item is not being self-used:
 			if(item.getItemType().equals(ItemType.getItemTypeFromId("innoxia_pills_sterility"))) {
 				sb.append(UtilText.parse(user, target,
-						"<p>"
-							+ "Holding out a '[#ITEM_innoxia_pills_sterility.getName(false)]' to [npc2.name], [npc.name] [npc.verb(tell)] [npc2.herHim] to swallow it so that [npc.she] [npc.does]'t have to worry about any unexpected pregnancies."));
+						"<p>Протягивая '[#ITEM_innoxia_pills_sterility.getName(false)]' [npc2.name], [npc.name] [npc.verb(tell)] [npc2.herHim], чтобы та проглотила его и тогда [npc.she] [npc.does] не пришлось беспокоиться о внезапных беременностях."));
 				
 				if(isObedientSlave) {
 					sb.append(UtilText.parse(user, target, 
-							" Obediently doing what's asked of [npc2.herHim], [npc2.she] happily [npc2.verb(take)] the pill out of [npc.namePos] [npc.hand], and quickly [npc2.verb(pop)] it out of its wrapping before swallowing it down."));
+							" Послушно выполняя просьбу [npc2.herHim], [npc2.she] с радостью [npc2.verb(take)] таблетку из [npc.namePos] [npc.hand] и быстро [npc2.verb(pop)] её из обертки, прежде чем проглотить."));
 					
 				} else if((target.hasFetish(Fetish.FETISH_IMPREGNATION) && target.hasPenis())
 						|| (target.hasFetish(Fetish.FETISH_PREGNANCY) && target.hasVagina())) {
 					sb.append(UtilText.parse(user, target,
-							" Letting out an annoyed sigh, [npc2.she] nevertheless [npc2.verb(take)] the pill out of [npc.namePos] [npc.hand], and after popping it out of its wrapper, [npc2.she] [npc2.verb(swallow)] it down and [npc2.verb(whine)],"
-							+ " [npc2.speech(What's even the point if nobody's going to get pregnant?)]"));
+							" Раздраженно вздохнув, [npc2.she], тем не менее, [npc2.verb(take)] таблетку из [npc.namePos] [npc.hand], и, выковыряв её из обертки, [npc2.she] [npc2.verb(swallow)] её и [npc2.verb(whine)], [npc2.speech(Какой вообще в этом смысл, если никто не забеременеет?)]"));
 					
 				} else {
 					sb.append(UtilText.parse(user, target, 
-							" Letting out a relieved sigh, [npc2.she] happily [npc2.verb(take)] the pill out of [npc.namePos] [npc.hand], before quickly popping it out of its wrapper and swallowing it down."));
+							" С облегчением вздохнув, [npc2.she] с радостью [npc2.verb(take)] таблетку из [npc.namePos] [npc.hand], после чего быстро вытряхивает её из обертки и проглатывает."));
 				}
 				
 				sb.append("</p>");
@@ -3641,23 +3623,20 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 				
 			} else if(item.getItemType().equals(ItemType.getItemTypeFromId("innoxia_pills_fertility"))) {
 				sb.append(UtilText.parse(user, target,
-						"<p>"
-							+ "Holding out a '[#ITEM_innoxia_pills_fertility.getName(false)]' to [npc2.name], [npc.name] [npc.verb(tell)] [npc2.herHim] to swallow it in order to boost the chance of a successful impregnation."));
+						"<p>Протягивая '[#ITEM_innoxia_pills_fertility.getName(false)]' [npc2.name], [npc.name] [npc.verb(tell)] [npc2.herHim], чтобы та проглотила её и повысила шансы на успешное зачатие."));
 				
 				if(isObedientSlave) {
 					sb.append(UtilText.parse(user, target, 
-							" Obediently doing what's asked of [npc2.herHim], [npc2.she] happily [npc2.verb(take)] the pill out of [npc.namePos] [npc.hand], and quickly [npc2.verb(pop)] it out of its wrapping before swallowing it down."));
+							" Послушно выполняя просьбу [npc2.herHim], [npc2.she] с радостью [npc2.verb(take)] таблетку из [npc.namePos] [npc.hand] и быстро [npc2.verb(pop)] её из обертки, прежде чем проглотить."));
 					
 				} else if((target.hasFetish(Fetish.FETISH_IMPREGNATION) && target.hasPenis())
 						|| (target.hasFetish(Fetish.FETISH_PREGNANCY) && target.hasVagina())) {
 					sb.append(UtilText.parse(user, target, 
-							" Letting out a delighted cry, [npc2.she] enthusiastically [npc2.verb(snatch)] the pill out of [npc.namePos] [npc.hand], and after popping it out of its wrapper,"
-							+ " [npc2.she] quickly [npc2.verb(swallow)] it down and [npc2.verb(exclaim)],"
-							+ " [npc2.speech(Let's make some kids together!)]"));
+							" Издав восторженный крик, [npc2.she] с энтузиазмом [npc2.verb(snatch)] таблетку из [npc.namePos] [npc.hand], и, вытряхнув её из обертки, [npc2.she] быстро [npc2.verb(swallow)] её и [npc2.verb(exclaim)], [npc2.speech(Давай заведем деток вместе!)]"));
 					
 				} else {
 					sb.append(UtilText.parse(user, target, 
-							" Letting out a hesitant sigh, [npc2.she] nevertheless [npc2.verb(take)] the pill out of [npc.namePos] [npc.hand], before quickly popping it out of its wrapper and swallowing it down."));
+							" Неуверенно вздохнув, [npc2.she], тем не менее, [npc2.verb(take)] таблетку из [npc.namePos] [npc.hand], после чего быстро вытряхивает её из обертки и проглатывает."));
 				}
 				
 				sb.append("</p>");
@@ -3668,23 +3647,20 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 					
 			} else if(item.getItemType().equals(ItemType.getItemTypeFromId("innoxia_pills_broodmother"))) {
 				sb.append(UtilText.parse(user, target,
-						"<p>"
-							+ "Holding out a '[#ITEM_innoxia_pills_broodmother.getName(false)]' to [npc2.name], [npc.name] [npc.verb(tell)] [npc2.herHim] to swallow it in order to boost the chance of a successful impregnation."));
+						"<p>Протягивая '[#ITEM_innoxia_pills_broodmother.getName(false)]' [npc2.name], [npc.name] [npc.verb(tell)] [npc2.herHim], чтобы та проглотила её и повысила шансы на успешное зачатие."));
 				
 				if(isObedientSlave) {
 					sb.append(UtilText.parse(user, target, 
-							" Obediently doing what's asked of [npc2.herHim], [npc2.she] happily [npc2.verb(take)] the pill out of [npc.namePos] [npc.hand], and quickly [npc2.verb(pop)] it out of its wrapping before swallowing it down."));
+							" Послушно выполняя просьбу [npc2.herHim], [npc2.she] с радостью [npc2.verb(take)] таблетку из [npc.namePos] [npc.hand] и быстро [npc2.verb(pop)] её из обертки, прежде чем проглотить."));
 					
 				} else if((target.hasFetish(Fetish.FETISH_IMPREGNATION) && target.hasPenis())
 						|| (target.hasFetish(Fetish.FETISH_PREGNANCY) && target.hasVagina())) {
 					sb.append(UtilText.parse(user, target, 
-							" Letting out a delighted cry, [npc2.she] enthusiastically [npc2.verb(snatch)] the pill out of [npc.namePos] [npc.hand], and after popping it out of its wrapper,"
-							+ " [npc2.she] quickly [npc2.verb(swallow)] it down and [npc2.verb(exclaim)],"
-							+ " [npc2.speech(Let's make loads of kids together!)]"));
+							" Издав восторженный крик, [npc2.she] с энтузиазмом [npc2.verb(snatch)] таблетку из [npc.namePos] [npc.hand], и, вытряхнув её из обертки, [npc2.she] быстро [npc2.verb(swallow)] её и [npc2.verb(exclaim)], [npc2.speech(Давай народим кучу детей вместе!)]"));
 					
 				} else {
 					sb.append(UtilText.parse(user, target, 
-							" Letting out a hesitant sigh, [npc2.she] nevertheless [npc2.verb(take)] the pill out of [npc.namePos] [npc.hand], before quickly popping it out of its wrapper and swallowing it down."));
+							" Неуверенно вздохнув, [npc2.she], тем не менее, [npc2.verb(take)] таблетку из [npc.namePos] [npc.hand], после чего быстро вытряхивает её из обертки и проглатывает."));
 				}
 				
 				sb.append("</p>");
@@ -3695,17 +3671,15 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 					
 			} else if(item.getItemType().equals(ItemType.getItemTypeFromId("innoxia_pills_lubrication"))) {
 				sb.append(UtilText.parse(user, target,
-						"<p>"
-							+ "Holding out a '[#ITEM_innoxia_pills_lubrication.getName(false)]' to [npc2.name], [npc.name] [npc.verb(tell)] [npc2.herHim] to swallow it in order to get [npc2.herHim] lubed up."));
+						"<p>Протягивая '[#ITEM_innoxia_pills_lubrication.getName(false)]' к [npc2.name], [npc.name] [npc.verb(tell)] [npc2.herHim], чтобы проглотить её и хорошенько смазать [npc2.herHim]."));
 				
 				if(isObedientSlave) {
 					sb.append(UtilText.parse(user, target, 
-							" Obediently doing what's asked of [npc2.herHim], [npc2.she] happily [npc2.verb(take)] the pill out of [npc.namePos] [npc.hand], and quickly [npc2.verb(pop)] it out of its wrapping before swallowing it down."));
+							" Послушно выполняя просьбу [npc2.herHim], [npc2.she] с радостью [npc2.verb(take)] таблетку из [npc.namePos] [npc.hand] и быстро [npc2.verb(pop)] её из обертки, прежде чем проглотить."));
 					
 				} else {
 					sb.append(UtilText.parse(user, target, 
-							" Seeing little harm in swallowing the [#ITEM_innoxia_pills_lubrication.getName(false)], [npc2.she] [npc2.verb(take)] it out of [npc.namePos] [npc.hand],"
-									+ " before quickly popping it out of its wrapper and swallowing it down."));
+							" Не видя ничего плохого в том, чтобы проглотить [#ITEM_innoxia_pills_lubrication.getName(false)], [npc2.she] [npc2.verb(take)] её из рук [npc.namePos] [npc.hand], прежде чем быстро вытащить её из упаковки и проглотить."));
 				}
 				
 				sb.append("</p>");
@@ -3716,67 +3690,29 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 					
 			} else if(item.getItemType().equals(ItemType.ELIXIR)) {
 				sb.append(UtilText.parse(user, target,
-						"<p>"
-							+ "Taking [npc.her] "+item.getName()+" from out of [npc.her] inventory, [npc.name] [npc.verb(hold)] it out to [npc2.name]."));
+						"<p>Доставая [npc.her] "+item.getName()+" из инвентаря [npc.her], [npc.name] [npc.verb(hold)] его для [npc2.name]."));
 				
 				if(isObedientSlave) {
 					sb.append(UtilText.parse(user, target, 
-								" Obediently doing what's expected of [npc2.herHim], [npc2.she] [npc2.verb(take)] the bottle of transformative fluid from [npc.name] and [npc2.verb(say)], "
-								+ " [npc2.speech(Of course I'll do my duty and be transformed into whatever form you desire...)]"
-							+ "</p>"
-							+ "<p>"
-								+ "Eager to please, [npc2.she] then [npc2.verb(remove)] the bottle's stopper, before lifting it up to [npc2.her] waiting [npc2.lips] and gulping down all of the liquid contained within."
-								+ " [npc2.She] [npc2.verb(cough)] and [npc2.verb(splutter)] for a moment, before taking a deep gasp as [npc2.she] [npc2.verb(start)] to feel the liquid's effects taking root deep in [npc2.her] body..."
-							+ "</p>"));
+								" Послушно делая то, чего ожидает от [npc2.herHim], [npc2.she] [npc2.verb(take)] бутылочку трансформирующей жидкости из [npc.name] и [npc2.verb(say)], [npc2.speech(Конечно, я исполню свой долг и превращусь в любую форму, которую ты пожелаешь...)]</p><p>Стремясь угодить, [npc2.she] затем [npc2.verb(remove)] пробку бутылочки, после чего подносит её к [npc2.her], ожидающей [npc2.lips], и залпом выпивает всю жидкость внутри. [npc2.She] [npc2.verb(cough)] и [npc2.verb(splutter)] на мгновение, а затем глубоко вдыхает, когда [npc2.she] [npc2.verb(start)] чувствует, как действие жидкости пускает корни глубоко в теле [npc2.her]...</p>"));
 					
 				} else if(target.getSubspeciesOverrideRace()==Race.DEMON) {
 					sb.append(UtilText.parse(user, target,
-						"<p>"
-							+ "Taking [npc.her] "+item.getName()+" from out of [npc.her] inventory, [npc.name] [npc.verb(hold)] it out to [npc2.name]."
-							+ " Seeing what it is that [npc.nameIs] offering [npc2.herHim], [npc2.she] [npc2.verb(let)] out a mocking laugh, "
-							+ " [npc2.speech(Hah! Don't you know demons can't be transfo- ~Mrph!~)]"
-						+ "</p>"
-						+ "<p>"
-							+ "Not liking the start of [npc2.namePos] response, [npc.name] quickly [npc.verb(remove)] the bottle's stopper, before rather unceremoniously shoving the neck down [npc2.her] throat."
-							+ " Pinching [npc2.her] nose and holding [npc2.herHim] still, [npc.name] [npc.verb(make)] sure to force [npc2.name] to down all of the liquid before finally letting [npc2.herHim] go."
-							+ " [npc2.She] [npc2.verb(cough)] and [npc2.verb(splutter)] for a moment, before letting out an annoyed grumble as [npc2.she] [npc2.verb(wipe)] the liquid from [npc2.her] mouth,"
-							+ " [npc2.speech(It doesn't taste too bad...)]"
-						+ "</p>"));
+						"<p>Доставая [npc.her] "+item.getName()+" доставая из инвентаря [npc.her], [npc.name] [npc.verb(hold)] его к [npc2.name]. Увидев, что именно [npc.nameIs] предлагает [npc2.herHim], [npc2.she] [npc2.verb(let)] издав насмешливый смешок, [npc2.speech(Ха! Разве ты не знаешь, что демоны не могут трансфор- ~Мрф!~)]</p><p> Не довольный началом реакции [npc2.namePos], [npc.name] быстро [npc.verb(remove)] пробку бутылки, после чего довольно бесцеремонно заталкивает горлышко в глотку [npc2.her]. Зажав [npc2.her] нос и удерживая [npc2.herHim] неподвижно, [npc.name] [npc.verb(make)] не забывает заставить [npc2.name] осушить всю жидкость, прежде чем наконец отпустить [npc2.herHim]. [npc2.She] [npc2.verb(cough)] и [npc2.verb(splutter)] на мгновение, а затем раздраженно ворчит, пока [npc2.she] [npc2.verb(wipe)] жидкость изо рта [npc2.her], [npc2.speech(А на вкус не так уж и плохо...)]</p>"));
 					
 							
 				} else if(target.hasFetish(Fetish.FETISH_TRANSFORMATION_RECEIVING)) {
 					sb.append(UtilText.parse(user, target, 
-							" Seeing what it is that [npc.nameIs] offering [npc2.herHim], [npc2.she] [npc2.verb(let)] out a delighted cry and [npc2.verb(ask)], "
-							+ " [npc2.speech(Is that a transformation elixir?! Please, let me drink it! Change me into whatever you want!)]"
-						+ "</p>"
-						+ "<p>"
-							+ "Smiling as [npc.she] [npc.verb(hear)] [npc2.namePos] enthusiastic response, [npc.name] quickly [npc.verb(remove)] the bottle's stopper, before bringing the potion up to the eager [npc2.race]'s mouth."
-							+ " Happily wrapping [npc2.her] [npc2.lips] around the bottle's opening, [npc2.name] [npc2.verb(gulp)] down all of the liquid in one huge swig."
-							+ " [npc2.She] [npc2.verb(cough)] and [npc2.verb(splutter)] for a moment, before letting out an ecstatic cry as [npc2.she] [npc2.verb(start)] to feel the liquid's effects taking root deep in [npc2.her] body..."
-						+ "</p>"));
+							" Увидев, что именно [npc.nameIs] предлагает [npc2.herHim], [npc2.she] [npc2.verb(let)] радостным криком и [npc2.verb(ask)], [npc2.speech(Это что, эликсир трансформации?! Пожалуйста, дай мне выпить его! Преврати меня в кого угодно!)]</p><p>Улыбнувшись тому, как [npc.she] [npc.verb(hear)] на [npc2.namePos] восторженный ответ, [npc.name] быстро [npc.verb(remove)] пробку бутылки, после чего подносит зелье к жаждущему рту [npc2.race]. Счастливая, обхватив [npc2.her] [npc2.lips] вокруг горлышка бутылки, [npc2.name] [npc2.verb(gulp)] всю жидкость одним огромным глотком. [npc2.She] [npc2.verb(cough)] и [npc2.verb(splutter)] на мгновение, прежде чем издать экстатический крик, когда [npc2.she] [npc2.verb(start)] почувствовать, как действие жидкости пускает корни глубоко в теле [npc2.her]...</p>"));
 					
 				} else {
 					if(target.getAffection(user) < AffectionLevel.POSITIVE_FIVE_WORSHIP.getMinimumValue()) {
 						sb.append(UtilText.parse(user, target, 
-								" Seeing what it is that [npc.nameIs] offering [npc2.herHim], [npc2.she] [npc2.verb(shift)] about uncomfortably and [npc2.verb(ask)], "
-								+ " [npc2.speech(You don't seriously expect me to drink some rando- ~Mrph!~)]"
-							+ "</p>"
-							+ "<p>"
-								+ "Not liking the start of [npc2.her] response, [npc.name] quickly [npc.verb(remove)] the bottle's stopper, before rather unceremoniously shoving the neck down [npc2.her] throat."
-								+ " Pinching [npc2.her] nose and holding [npc2.herHim] still, [npc.name] [npc.verb(make)] sure to force [npc2.name] to down all of the liquid before finally letting [npc2.herHim] go."
-								+ " [npc2.She] [npc2.verb(cough)] and [npc2.verb(splutter)] for a moment, before letting out a surprised cry as [npc2.she] [npc2.verb(start)] to feel the liquid's effects taking root deep in [npc2.her] body..."
-							+ "</p>"));
+								" Видя, что именно [npc.nameIs] предлагает [npc2.herHim], [npc2.she] [npc2.verb(shift)] об этом с явным дискомфортом и [npc2.verb(ask)], [npc2.speech(Ты же не серьезно ждешь, что я выпью какую-то случайную ~Мрф!~)]</p><p>Не довольный началом ответа [npc2.her], [npc.name] быстро [npc.verb(remove)] пробку бутылки, после чего довольно бесцеремонно заталкивает горлышко прямо в горло [npc2.her]. Зажав [npc2.her] нос и удерживая [npc2.herHim] на месте, [npc.name] [npc.verb(make)] не забывает заставить [npc2.name] осушить всю жидкость, прежде чем наконец отпустить [npc2.herHim]. [npc2.She] [npc2.verb(cough)] и [npc2.verb(splutter)] на мгновение, а затем издает удивленный крик, когда [npc2.she] [npc2.verb(start)] ощущает, как действие жидкости пускает корни глубоко в теле [npc2.her]...</p>"));
 						
 					} else {
 						sb.append(UtilText.parse(user, target,
-								" As [npc2.she] [npc2.verb(like)] [npc.name] so much, [npc2.she] [npc2.verb(put)] aside [npc2.her] worries of being transformed and [npc2.verb(say)],"
-								+ " [npc2.speech(Of course I'll drink it! I'll do anything for you...)]"
-							+ "</p>"
-							+ "<p>"
-								+ "Hearing [npc2.namePos] willing response, [npc.name] [npc.verb(remove)] the bottle's stopper, before handing it over to [npc2.herHim]."
-								+ " Eager to please, [npc2.she] happily [npc2.verb(wrap)] [npc2.her] [npc2.lips] around the bottle's opening, before gulping down all of the liquid in one huge swig."
-								+ " [npc2.She] [npc2.verb(cough)] and [npc2.verb(splutter)] for a moment, before letting out a startled cry as [npc2.she] [npc2.verb(start)] to feel the liquid's effects taking root deep in [npc2.her] body..."
-							+ "</p>"));
+								" Поскольку [npc2.she] [npc2.verb(like)] [npc.name] так много, [npc2.she] [npc2.verb(put)] не считаясь с [npc2.her] опасениями превратиться и [npc2.verb(say)], [npc2.speech(Конечно, я выпью это! Я сделаю для тебя всё...)]</p><p>Услышав [npc2.namePos] такой охотный ответ, [npc.name] [npc.verb(remove)] пробку бутылки, прежде чем протянуть её [npc2.herHim]. Стремясь угодить, [npc2.she] с радостью [npc2.verb(wrap)] [npc2.her] [npc2.lips] вокруг горлышка, а затем осушила всю жидкость одним огромным глотком. [npc2.She] [npc2.verb(cough)] и [npc2.verb(splutter)] на мгновение, прежде чем издать испуганный крик, когда [npc2.she] [npc2.verb(start)] почувствовала, как действие жидкости пускает корни глубоко в [npc2.her] теле...</p>"));
 					}
 				}
 				
@@ -3786,65 +3722,29 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 					
 			} else if(item.getItemType().equals(ItemType.FETISH_REFINED)) {
 				sb.append(UtilText.parse(user, target,
-						"<p>"
-							+ "Taking [npc.her] "+item.getName()+" from out of [npc.her] inventory, [npc.name] [npc.verb(hold)] it out to [npc2.name]."));
+						"<p>Доставая [npc.her] "+item.getName()+" из инвентаря [npc.her], [npc.name] [npc.verb(hold)] его для [npc2.name]."));
 				
 				if(isObedientSlave) {
 					sb.append(UtilText.parse(user, target, 
-								" Obediently doing what's expected of [npc2.herHim], [npc2.she] [npc2.verb(take)] the bottle of fetish-modifying fluid from [npc.name] and [npc2.verb(say)], "
-								+ " [npc2.speech(Of course I'll do my duty in becoming the sort of slave you desire...)]"
-							+ "</p>"
-							+ "<p>"
-								+ "Eager to please, [npc2.she] then [npc2.verb(remove)] the bottle's stopper, before lifting it up to [npc2.her] waiting [npc2.lips] and gulping down all of the liquid contained within."
-								+ " [npc2.She] [npc2.verb(cough)] and [npc2.verb(splutter)] for a moment, before taking a deep gasp as [npc2.she] [npc2.verb(start)] to feel the liquid's effects taking root deep in [npc2.her] mind..."
-							+ "</p>"));
+								" Послушно исполняя то, чего ожидали от [npc2.herHim], [npc2.she] [npc2.verb(take)] бутылку фетиш-модифицирующей жидкости от [npc.name] и [npc2.verb(say)], [npc2.speech(Конечно, я исполню свой долг и стану той рабыней, которую ты желаешь...)]</p><p>Стремясь угодить, [npc2.she] затем [npc2.verb(remove)] пробку бутылки, прежде чем поднести её к [npc2.her], ожидающей [npc2.lips], и осушила всю содержащуюся в ней жидкость. [npc2.She] [npc2.verb(cough)] и [npc2.verb(splutter)] на мгновение, прежде чем глубоко вдохнуть, когда [npc2.she] [npc2.verb(start)] почувствовала, как действие жидкости пускает корни глубоко в разуме [npc2.her]...</p>"));
 					
 				} else if(target.hasFetish(Fetish.FETISH_KINK_RECEIVING)) {
 					sb.append(UtilText.parse(user, target, 
-							" Seeing what it is that [npc.nameIs] offering [npc2.herHim], [npc2.she] [npc2.verb(let)] out a delighted cry and [npc2.verb(ask)], "
-							+ " [npc2.speech(Is that going to give me a new fetish?! Please, let me drink it!)]"
-						+ "</p>"
-						+ "<p>"
-							+ "Smiling as [npc.she] [npc.verb(hear)] [npc2.namePos] enthusiastic response, [npc.name] quickly [npc.verb(remove)] the bottle's stopper, before bringing the potion up to the eager [npc2.race]'s mouth."
-							+ " Happily wrapping [npc2.her] [npc2.lips] around the bottle's opening, [npc2.name] [npc2.verb(gulp)] down all of the liquid in one huge swig."
-							+ " [npc2.She] [npc2.verb(cough)] and [npc2.verb(splutter)] for a moment, before letting out an ecstatic cry as [npc2.she] [npc2.verb(start)] to feel the liquid's effects taking root deep in [npc2.her] mind..."
-						+ "</p>"));
+							" Увидев, что именно [npc.nameIs] предлагает [npc2.herHim], [npc2.she] [npc2.verb(let)] радостным криком и [npc2.verb(ask)], [npc2.speech(Это что, даст мне новый фетиш?! Пожалуйста, дай мне выпить его!)]</p><p> Улыбаясь тому, как [npc.she] [npc.verb(hear)] [npc2.namePos] с энтузиазмом, [npc.name] быстро [npc.verb(remove)] пробку бутылки, прежде чем поднести зелье к жаждущему рту [npc2.race]. Счастливо обхватив [npc2.her] [npc2.lips] вокруг горлышка бутылки, [npc2.name] [npc2.verb(gulp)] всю жидкость одним огромным глотком. [npc2.She] [npc2.verb(cough)] и [npc2.verb(splutter)] на мгновение, прежде чем издать экстатический крик, когда [npc2.she] [npc2.verb(start)] почувствовать, как действие жидкости пускает корни глубоко в разуме [npc2.her]...</p>"));
 					
 				} else {
 					if(target.getSubspeciesOverrideRace()==Race.DEMON) {
 						sb.append(UtilText.parse(user, target, 
-								" Seeing what it is that [npc.nameIs] offering [npc2.herHim], [npc2.she] [npc2.verb(let)] out a mocking laugh, "
-								+ " [npc2.speech(Hah! Don't you know demons can't be transfo- ~Mrph!~)]"
-							+ "</p>"
-							+ "<p>"
-								+ "Not liking the start of [npc2.namePos] response, [npc.name] quickly [npc.verb(remove)] the bottle's stopper, before rather unceremoniously shoving the neck down [npc2.her] throat."
-								+ " Pinching [npc2.her] nose and holding [npc2.herHim] still, [npc.name] [npc.verb(make)] sure to force [npc2.name] to down all of the liquid before finally letting [npc2.herHim] go."
-								+ " [npc2.She] [npc2.verb(cough)] and [npc2.verb(splutter)] for a moment, before letting out a lewd [npc2.moan] as [npc2.she] [npc2.verb(wipe)] the liquid from [npc2.her] mouth,"
-								+ " [npc2.speech(~Aah!~ Hey, that was a fetish transformative, wasn't it?! ~Ooh!~ I feel hot...)]"
-							+ "</p>"));
+								" Увидев, что именно [npc.nameIs] предлагает [npc2.herHim], [npc2.she] [npc2.verb(let)] насмешливо рассмеялась, [npc2.speech(Ха! Разве ты не знаешь, что демоны не могут трансформиро- ~Мрф!~)]</p><p>Не довольная началом ответа [npc2.namePos], [npc.name] быстро [npc.verb(remove)] пробку бутылки, после чего довольно бесцеремонно затолкнула горлышко в [npc2.her] горло. Зажав [npc2.her] нос и удерживая [npc2.herHim] на месте, [npc.name] [npc.verb(make)] позаботилась о том, чтобы заставить [npc2.name] осушить всю жидкость, прежде чем наконец отпустить [npc2.herHim]. [npc2.She] [npc2.verb(cough)] и [npc2.verb(splutter)] на мгновение, после чего издала похотливый [npc2.moan], пока [npc2.she] [npc2.verb(wipe)] жидкость изо рта [npc2.her], [npc2.speech(~Ааах!~ Эй, это же был трансформирующий фетиш, верно?! ~Ооо!~ Мне так жарко...)]</p>"));
 						
 					} else {
 						if(target.getAffection(user) < AffectionLevel.POSITIVE_FIVE_WORSHIP.getMinimumValue()) {
 							sb.append(UtilText.parse(user, target, 
-									" Seeing what it is that [npc.nameIs] offering [npc2.herHim], [npc2.she] [npc2.verb(shift)] about uncomfortably and [npc2.verb(ask)], "
-									+ " [npc2.speech(You don't seriously expect me to drink some rando- ~Mrph!~)]"
-								+ "</p>"
-								+ "<p>"
-									+ "Not liking the start of [npc2.her] response, [npc.name] quickly [npc.verb(remove)] the bottle's stopper, before rather unceremoniously shoving the neck down [npc2.her] throat."
-									+ " Pinching [npc2.her] nose and holding [npc2.herHim] still, [npc.name] [npc.verb(make)] sure to force [npc2.name] to down all of the liquid before finally letting [npc2.herHim] go."
-									+ " [npc2.She] [npc2.verb(cough)] and [npc2.verb(splutter)] for a moment, before letting out a surprised cry as [npc2.she] [npc2.verb(start)] to feel the liquid's effects taking root deep in [npc2.her] mind..."
-								+ "</p>"));
+									" Видя, что именно [npc.nameIs] предлагает [npc2.herHim], [npc2.she] [npc2.verb(shift)] об этом с явным дискомфортом и [npc2.verb(ask)], [npc2.speech(Ты же не ждешь всерьез, что я буду пить какую-то случайную... ~Мрф!~)]</p><p>Не довольный началом ответа [npc2.her], [npc.name] быстро [npc.verb(remove)] пробку бутылки, после чего довольно бесцеремонно заталкивает горлышко прямо в глотку [npc2.her]. Зажав [npc2.her] нос и удерживая [npc2.herHim] на месте, [npc.name] [npc.verb(make)] не забывает заставить [npc2.name] осушить всю жидкость, прежде чем наконец отпустить [npc2.herHim]. [npc2.She] [npc2.verb(cough)] и [npc2.verb(splutter)] на мгновение, а затем издает удивленный крик, когда [npc2.she] [npc2.verb(start)] ощущает, как действие жидкости пускает корни глубоко в разуме [npc2.her]...</p>"));
 							
 						} else {
 							sb.append(UtilText.parse(user, target,
-									" As [npc2.she] [npc2.verb(like)] [npc.name] so much, [npc2.she] [npc2.verb(put)] aside [npc2.her] worries of being transformed and [npc2.verb(say)],"
-										+ " [npc2.speech(Of course I'll drink it! I'll do anything for you...)]"
-								+ "</p>"
-								+ "<p>"
-									+ "Hearing [npc2.namePos] willing response, [npc.name] [npc.verb(remove)] the bottle's stopper, before handing it over to [npc2.herHim]."
-									+ " Eager to please, [npc2.she] happily [npc2.verb(wrap)] [npc2.her] [npc2.lips] around the bottle's opening, before gulping down all of the liquid in one huge swig."
-									+ " [npc2.She] [npc2.verb(cough)] and [npc2.verb(splutter)] for a moment, before letting out a startled cry as [npc2.she] [npc2.verb(start)] to feel the liquid's effects taking root deep in [npc2.her] mind..."
-								+ "</p>"));
+									" Поскольку [npc2.she] [npc2.verb(like)] [npc.name] так много, [npc2.she] [npc2.verb(put)] не считаясь с [npc2.her] опасениями быть превращенной и [npc2.verb(say)], [npc2.speech(Конечно, я выпью это! Я сделаю для тебя всё...)]</p><p>Услышав [npc2.namePos] такой охотный ответ, [npc.name] [npc.verb(remove)] пробку бутылки, прежде чем протянуть её [npc2.herHim]. Стремясь угодить, [npc2.she] с радостью [npc2.verb(wrap)] [npc2.her] [npc2.lips] вокруг горлышка бутылки, а затем осушила всю жидкость одним огромным глотком. [npc2.She] [npc2.verb(cough)] и [npc2.verb(splutter)] на мгновение, прежде чем издать испуганный крик, когда [npc2.she] [npc2.verb(start)] почувствовала, как действие жидкости пускает корни глубоко в [npc2.her] разуме...</p>"));
 						}
 					}
 				}
@@ -3855,28 +3755,11 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 			} else if(item.getItemType().equals(ItemType.POTION) || item.getItemType().equals(ItemType.EGGPLANT_POTION) || item.getItemType().equals(ItemType.MOTHERS_MILK) || item.getItemType().equals(ItemType.FETISH_UNREFINED)) {
 				if(isObedientSlave) {
 					sb.append(UtilText.parse(user, target,
-							"<p>"
-								+ "Taking [npc.her] "+item.getName()+" from out of [npc.her] inventory, [npc.name] [npc.verb(hold)] it out to [npc2.name]."
-								+ " Obediently doing what's expected of [npc2.herHim], [npc2.she] [npc2.verb(take)] the bottle of fluid from [npc.name] and [npc2.verb(say)], "
-								+ " [npc2.speech(Of course I'll drink whatever it is you give to me...)]"
-							+ "</p>"
-							+ "<p>"
-								+ "Eager to please, [npc2.she] then [npc2.verb(remove)] the bottle's stopper, before lifting it up to [npc2.her] waiting [npc2.lips] and gulping down all of the liquid contained within."
-								+ " [npc2.She] [npc2.verb(cough)] and [npc2.verb(splutter)] for a moment, before taking a deep gasp as [npc2.she] [npc2.verb(start)] to feel the liquid's effects taking effect..."
-							+ "</p>"));
+							"<p>Доставая [npc.her] "+item.getName()+" из [npc.her] инвентаря, [npc.name] [npc.verb(hold)] её [npc2.name]. Послушно делая то, чего от [npc2.herHim] ожидали, [npc2.she] [npc2.verb(take)] бутылку с жидкостью от [npc.name] и [npc2.verb(say)], [npc2.speech(Конечно, я выпью всё, что ты мне дашь...)]</p><p>Стремясь угодить, [npc2.she] затем [npc2.verb(remove)] пробку бутылки, прежде чем поднести её к [npc2.her], ожидающей [npc2.lips], и осушила всю содержащуюся в ней жидкость. [npc2.She] [npc2.verb(cough)] и [npc2.verb(splutter)] на мгновение, прежде чем глубоко вздохнуть, когда [npc2.she] [npc2.verb(start)] почувствовала, как начинает действовать жидкость...</p>"));
 					
 				} else {
 					sb.append(UtilText.parse(user, target,
-							"<p>"
-								+ "Taking [npc.her] "+item.getName()+" from out of [npc.her] inventory, [npc.name] [npc.verb(hold)] it out to [npc2.name]."
-								+ " Seeing what it is that [npc.nameIs] offering [npc2.herHim], [npc2.she] [npc2.verb(shift)] about uncomfortably and [npc2.verb(ask)], "
-								+ " [npc2.speech(You don't seriously expect me to drink some rando- ~Mrph!~)]"
-							+ "</p>"
-							+ "<p>"
-								+ "Not liking the start of [npc2.her] response, [npc.name] quickly [npc.verb(remove)] the bottle's stopper, before rather unceremoniously shoving the neck down [npc2.her] throat."
-								+ " Pinching [npc2.her] nose and holding [npc2.herHim] still, [npc.name] [npc.verb(make)] sure to force [npc2.name] to down all of the liquid before finally letting [npc2.herHim] go."
-								+ " [npc2.She] [npc2.verb(cough)] and [npc2.verb(splutter)] for a moment, before letting out a surprised cry as [npc2.she] [npc2.verb(start)] to feel the liquid's effects taking effect..."
-							+ "</p>"));
+							"<p>Доставая [npc.her] "+item.getName()+" доставая из инвентаря [npc.her], [npc.name] [npc.verb(hold)] его перед [npc2.name]. Увидев, что именно [npc.nameIs] предлагает [npc2.herHim], [npc2.she] неловко [npc2.verb(shift)] и [npc2.verb(ask)], [npc2.speech(Ты же не серьезно ждешь, что я буду пить какую-то случайную ~Мрф!~)]</p><p>Недовольная ответом [npc2.her], [npc.name] быстро [npc.verb(remove)] пробку бутылки, после чего довольно бесцеремонно засовывает горлышко прямо в горло [npc2.her]. Зажав [npc2.her] нос и заставив [npc2.herHim] замереть, [npc.name] непременно [npc.verb(make)], чтобы заставить [npc2.name] осушить всю жидкость, прежде чем наконец отпустить [npc2.herHim]. [npc2.She] [npc2.verb(cough)] и [npc2.verb(splutter)] на мгновение, а затем издает удивленный крик, когда [npc2.she] [npc2.verb(start)] ощущает, как начинает действовать выпитое...</p>"));
 				}
 				sb.append(itemOwner.useItem(item, target, false, true));
 
@@ -3885,25 +3768,11 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 			} else if(item.getItemType().equals(ItemType.EGGPLANT)) {
 				if(isObedientSlave) {
 					sb.append(UtilText.parse(user, target,
-							"<p>"
-								+ "Taking the eggplant from out of [npc.her] inventory, [npc.name] [npc.verb(hold)] it out to [npc2.name]."
-								+ " Seeing what it is that [npc.nameIs] offering [npc2.herHim], [npc2.she] obediently [npc2.verb(take)] it and [npc2.verb(say)], "
-								+ " [npc2.speech(Of course I'll eat whatever it is you give to me...)]"
-							+ "</p>"
-							+ "<p>"
-								+ "Eager to please, [npc2.she] [npc2.verb(lift)] the purple fruit up to [npc2.her] waiting [npc2.lips] and [npc2.verb(munch)] down every last bit of it..."
-							+ "</p>"));
+							"<p>Достав баклажан из инвентаря [npc.her], [npc.name] [npc.verb(hold)] его и протягивает [npc2.name]. Увидев, что именно [npc.nameIs] предлагает [npc2.herHim], [npc2.she] послушно [npc2.verb(take)] и [npc2.verb(say)], [npc2.speech(Конечно, я съем всё, что ты мне дашь...)]</p><p>Стремясь угодить, [npc2.she] [npc2.verb(lift)] фиолетовый плод к [npc2.her], ожидающему [npc2.lips], и [npc2.verb(munch)] до последней крошки...</p>"));
 					
 				} else {
 					sb.append(UtilText.parse(target,
-							"<p>"
-								+ "Taking the eggplant from out of [npc.her] inventory, [npc.name] [npc.verb(hold)] it out to [npc2.name]."
-								+ " Seeing what it is that [npc.nameIs] offering [npc2.herHim], [npc2.she] [npc2.verb(shift)] about uncomfortably and [npc2.verb(ask)], "
-								+ " [npc2.speech(What are you going to do with th- -~Mrph!~)]"
-							+ "</p>"
-							+ "<p>"
-								+ "Not liking the start of [npc2.her] response, [npc.name] quickly [npc.verb(shove)] the eggplant into [npc2.namePos] mouth, grinning as [npc.she] [npc.verb(force)] [npc2.herHim] to eat every last bit of the purple fruit..."
-							+ "</p>"));
+							"<p>Достав баклажан из инвентаря [npc.her], [npc.name] [npc.verb(hold)] его к [npc2.name]. Увидев, что именно [npc.nameIs] предлагает [npc2.herHim], [npc2.she] [npc2.verb(shift)] от неловкости и [npc2.verb(ask)], [npc2.speech(Что ты собираешься делать с э- -~Мрф!~)]</p><p>Не довольный началом ответа [npc2.her], [npc.name] быстро [npc.verb(shove)] баклажан в рот [npc2.namePos], ухмыляясь, пока [npc.she] [npc.verb(force)] [npc2.herHim] съесть до последней крошки этот фиолетовый плод...</p>"));
 				}
 				sb.append(itemOwner.useItem(item, target, false, true));
 

@@ -67,8 +67,8 @@ public class Flash extends NPC {
 	}
 	
 	public Flash(boolean isImported) {
-		super(isImported, new NameTriplet("Flash"), "Hwit",
-				"The owner of 'The Red Dragon' tavern, Flash has a commanding presence and doesn't tolerate any ruckus in his establishment.",
+		super(isImported, new NameTriplet("Вспышка"), "Хвит",
+				"Владелец таверны «Красный дракон», Флэш обладает властным видом и не терпит никакого шума в своем заведении.",
 				42, Month.DECEMBER, 2,
 				10,
 				Gender.M_P_MALE,

@@ -95,8 +95,8 @@ public class Heather extends NPC {
 	}
 	
 	public Heather(boolean isImported) {
-		super(isImported, new NameTriplet("Heather"), "Dreamstar",
-				"Heather operates the stall, 'The Third Eye', in Elis's Farmer's market, from which [heather.she] sells potions and enchanted clothing, as well as telling fortunes in exchange for a Faire ticket.",
+		super(isImported, new NameTriplet("Хезер"), "Дримстар",
+				"Хезер управляет лавкой «Третий глаз» на фермерском рынке Элиса, где [heather.she] продает зелья и зачарованную одежду, а также предсказывает судьбу в обмен на билет на ярмарку.",
 				24, Month.MAY, 7,
 				5,
 				Gender.N_P_TRAP, Subspecies.HUMAN, RaceStage.HUMAN,
@@ -295,7 +295,7 @@ public class Heather extends NPC {
 						null,
 						false,
 						new TattooWriting(
-								"Fill Me Up!",
+								"Наполни меня!",
 								PresetColour.CLOTHING_PINK_HOT,
 								false),
 						new TattooCounter(
@@ -410,7 +410,7 @@ public class Heather extends NPC {
 						new ItemEffect(ItemEffectType.CLOTHING, TFModifier.TF_BREASTS, TFModifier.TF_MOD_SIZE_SECONDARY, TFPotency.BOOST, 3),
 						new ItemEffect(ItemEffectType.CLOTHING, TFModifier.TF_BREASTS, TFModifier.TF_MOD_SIZE_TERTIARY, TFPotency.BOOST, 3),
 						new ItemEffect(ItemEffectType.CLOTHING, TFModifier.TF_BREASTS, TFModifier.TF_MOD_ORIFICE_PUFFY, TFPotency.BOOST, 0)));
-		cage.setName("Heather's Destiny");
+		cage.setName("Судьба Хезер");
 		this.addClothing(cage, false);
 
 		AbstractClothing bangle = Main.game.getItemGen().generateClothing(ClothingType.getClothingTypeFromId("innoxia_wrist_bangle"),
@@ -421,7 +421,7 @@ public class Heather extends NPC {
 						new ItemEffect(ItemEffectType.CLOTHING, TFModifier.TF_MOD_FETISH_BEHAVIOUR, TFModifier.TF_MOD_FETISH_CUM_ADDICT, TFPotency.MAJOR_BOOST, 0),
 						new ItemEffect(ItemEffectType.CLOTHING, TFModifier.TF_MOD_FETISH_BEHAVIOUR, TFModifier.TF_MOD_FETISH_SUBMISSIVE, TFPotency.MAJOR_BOOST, 0),
 						new ItemEffect(ItemEffectType.CLOTHING, TFModifier.TF_MOD_FETISH_BEHAVIOUR, TFModifier.TF_MOD_FETISH_DOMINANT, TFPotency.MAJOR_DRAIN, 0)));
-		bangle.setName("Heather's Advice");
+		bangle.setName("Совет Хезер");
 		this.addClothing(bangle, false);
 
 		AbstractClothing choker = Main.game.getItemGen().generateClothing(ClothingType.getClothingTypeFromId("innoxia_neck_velvet_choker"),
@@ -430,7 +430,7 @@ public class Heather extends NPC {
 						new ItemEffect(ItemEffectType.CLOTHING, TFModifier.CLOTHING_SPECIAL, TFModifier.CLOTHING_SEALING, TFPotency.DRAIN, 0),
 						new ItemEffect(ItemEffectType.CLOTHING, TFModifier.TF_MOD_FETISH_BODY_PART, TFModifier.TF_MOD_FETISH_ORAL_GIVING, TFPotency.MAJOR_BOOST, 0),
 						new ItemEffect(ItemEffectType.CLOTHING, TFModifier.TF_FACE, TFModifier.TF_MOD_SIZE, TFPotency.BOOST, 2)));
-		choker.setName("Heather's Hunger");
+		choker.setName("Голод Хезер");
 		this.addClothing(choker, false);
 
 		AbstractClothing anklet = Main.game.getItemGen().generateClothing(ClothingType.getClothingTypeFromId("innoxia_ankle_anklet"),
@@ -440,7 +440,7 @@ public class Heather extends NPC {
 						new ItemEffect(ItemEffectType.CLOTHING, TFModifier.TF_MOD_FETISH_BODY_PART, TFModifier.TF_MOD_FETISH_ANAL_RECEIVING, TFPotency.MAJOR_BOOST, 0),
 						new ItemEffect(ItemEffectType.CLOTHING, TFModifier.TF_ASS, TFModifier.TF_MOD_SIZE, TFPotency.BOOST, 3),
 						new ItemEffect(ItemEffectType.CLOTHING, TFModifier.TF_ASS, TFModifier.TF_MOD_SIZE_SECONDARY, TFPotency.BOOST, 3)));
-		anklet.setName("Heather's Offering");
+		anklet.setName("Подношение Хезер");
 		this.addClothing(anklet, false);
 	}
 	

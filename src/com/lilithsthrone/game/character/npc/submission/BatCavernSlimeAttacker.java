@@ -163,15 +163,13 @@ public class BatCavernSlimeAttacker extends NPC {
 		}
 		if(this.isSlave()) {
 			return (UtilText.parse(this,
-					"[npc.NamePos] days of getting high on mushrooms and attacking innocent travellers in the Bat Caverns are now over."
-							+ " Having been enslaved as punishment for [npc.her] lawless behaviour, [npc.sheIs] now a slave, and is no more than [npc.her] owner's property."));
+					"[npc.NamePos] дней кайфа от грибов и нападений на невинных путников в Пещерах Летучих Мышей остались позади. Став рабыней в наказание за [npc.her] беззаконное поведение, [npc.sheIs] теперь лишь рабыня, не более чем [npc.her] собственность хозяина."));
 		} else if(Main.game.getPlayer().getFriendlyOccupants().contains(this.getId())){
 			return (UtilText.parse(this,
-					"[npc.NamePos] days of getting high on mushrooms and attacking innocent travellers in the Bat Caverns are now over."
-					+ " Having befriended [npc.herHim], you invited [npc.name] to move in with you and helped [npc.herHim] to start a new life."));
+					"[npc.NamePos] дней кайфа от грибов и нападений на невинных путников в Пещерах Летучих Мышей остались позади. Подружившись с [npc.herHim], вы пригласили [npc.name] жить вместе с вами и помогли [npc.herHim] начать новую жизнь."));
 		} else {
 			return (UtilText.parse(this,
-					"[npc.Name] is a resident of the bat caverns, and loves nothing more than getting high on mushrooms, attacking innocent travellers, and having sex."));
+					"[npc.Name] — обитательница пещер летучих мышей, и нет для неё ничего лучше, чем кайфовать от грибов, нападать на невинных путников и трахаться."));
 		}
 	}
 	

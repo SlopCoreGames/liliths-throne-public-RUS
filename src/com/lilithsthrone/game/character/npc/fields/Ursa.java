@@ -68,8 +68,8 @@ public class Ursa extends NPC {
 	}
 	
 	public Ursa(boolean isImported) {
-		super(isImported, new NameTriplet("Ursa"), "Hippolyta",
-				"Ursa is the queen of the Amazons, a community of all-female warriors who live in the town of Themiscyra.",
+		super(isImported, new NameTriplet("Урса"), "Гипполита",
+				"Урса — королева амазонок, сообщества воительниц, живущих в городе Фемискира.",
 				44, Month.JUNE, 28,
 				35,
 				Gender.F_V_B_FEMALE, Subspecies.getSubspeciesFromId("dsg_bear_subspecies_bear"), RaceStage.GREATER,

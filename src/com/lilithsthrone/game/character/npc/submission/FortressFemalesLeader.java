@@ -78,8 +78,8 @@ public class FortressFemalesLeader extends NPC {
 	
 	public FortressFemalesLeader(boolean isImported) {
 		super(isImported,
-				new NameTriplet("Hyorlyix", "Hyorlyss", "Hyorlyss"), "Loviennemartu",
-				"The leader of one of Submission's imp fortresses, [npc.name] has a loyal following of female imps, who love nothing more than to join [npc.herHim] in having dominant sex with those who oppose their ruler, 'The Dark Siren'...",
+				new NameTriplet("Хьорликс", "Хьорлисс", "Хьорлисс"), "Ловиеннемарту",
+				"Предводительница одной из крепостей бесов Submission, [npc.name] окружена верными последовательницами — самками бесов, которые обожают [npc.herHim] в доминантном сексе с теми, кто посмеет противиться их правительнице, «Темной Сирене»...",
 				22, Month.JANUARY, 11,
 				20, Gender.F_V_B_FEMALE, Subspecies.DEMON, RaceStage.GREATER, new CharacterInventory(false, 10), WorldType.IMP_FORTRESS_FEMALES, PlaceType.FORTRESS_FEMALES_KEEP, true);
 		
@@ -267,16 +267,16 @@ public class FortressFemalesLeader extends NPC {
 
 	@Override
 	public String getArtworkFolderName() {
-		return "Hyorlyss";
+		return "Хьорлисс";
 	}
 
 	@Override
 	public String getDescription() {
 		if(this.isSlave()) {
 			return (UtilText.parse(this,
-					"[npc.NamePos] days of ruling over [npc.her] imp fortress are now over. Having run afoul of the law, [npc.sheIs] now a slave, and is no more than [npc.her] owner's property."));
+					"[npc.NamePos] дней правления над крепостью из [npc.her] бесов подошли к концу. Нарушив закон, [npc.sheIs] теперь рабыня и всего лишь собственность [npc.her] владельца."));
 		} else {
-			return (UtilText.parse(this, "The leader of one of Submission's imp fortresses, [npc.name] has a loyal following of female imps, who love nothing more than to join [npc.herHim] in having dominant sex with those who oppose their ruler, 'The Dark Siren'..."));
+			return (UtilText.parse(this, "Предводительница одной из крепостей бесов Submission, [npc.name] окружена верными последовательницами — самками бесов, которые обожают [npc.herHim] в доминантном сексе с теми, кто посмеет противиться их правительнице, «Темной Сирене»..."));
 		}
 	}
 	

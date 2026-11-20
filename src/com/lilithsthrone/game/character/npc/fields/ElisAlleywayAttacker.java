@@ -219,25 +219,25 @@ public class ElisAlleywayAttacker extends NPC {
 		if(this.getHistory()==Occupation.NPC_PROSTITUTE) {
 			if(this.isSlave()) {
 				return (UtilText.parse(this,
-						"[npc.NamePos] days of whoring [npc.herself] out in the back alleys of Elis are now over. Having run afoul of the law, [npc.sheIs] now a slave, and is no more than [npc.her] owner's property."));
+						"Дни, когда [npc.NamePos] проституировала [npc.herself] в подворотнях Элиса, подошли к концу. Навлекая на себя гнев закона, [npc.sheIs] теперь стала рабыней и всего лишь собственностью [npc.her]."));
 			} else if(this.getLocationPlace().getPlaceType().equals(PlaceType.ANGELS_KISS_BEDROOM)){
 				return (UtilText.parse(this,
-						"You first found [npc.name] in the alleyways of Elis, where [npc.she] was illegally selling [npc.her] body. You offered [npc.herHim] the chance to move and work out of Angel's Kiss; an offer which [npc.she] happily accepted."));
+						"Впервые вы встретили [npc.name] в переулках Элиса, где [npc.she] незаконно продавала тело [npc.her]. Вы предложили [npc.herHim] переехать и работать за пределами Ангельского Поцелуя — предложение, которое [npc.she] с радостью приняла."));
 			} else {
 				return (UtilText.parse(this,
-						"[npc.Name] is a prostitute who whores [npc.herself] out in the backalleys of Elis."));
+						"[npc.Name] — проститутка, которая торгует [npc.herself] в подворотнях Элиса."));
 			}
 			
 		} else {
 			if(this.isSlave()) {
 				return (UtilText.parse(this,
-						"[npc.NamePos] days of prowling the back alleys of Elis and mugging innocent travellers are now over. Having run afoul of the law, [npc.sheIs] now a slave, and is no more than [npc.her] owner's property."));
+						"[npc.NamePos] дней рысканий по задворкам Элиса и грабежей невинных путников остались позади. Навлекая на себя гнев закона, [npc.sheIs] теперь раб и не более чем собственность [npc.her]."));
 			} else if(Main.game.getPlayer().getFriendlyOccupants().contains(this.getId())){
 				return (UtilText.parse(this,
-						"[npc.NamePos] days of prowling the back alleys of Elis and mugging innocent travellers are now over. Having befriended [npc.herHim], you invited [npc.name] to move in with you and helped [npc.herHim] to start a new life."));
+						"[npc.NamePos] дней рысканий по задворкам Элиса и грабежей невинных путников остались позади. Подружившись с [npc.herHim], вы пригласили [npc.name] пожить с вами и помогли [npc.herHim] начать новую жизнь."));
 			} else {
 				return (UtilText.parse(this,
-						"[npc.Name] is a resident of Elis, who prowls the back alleys in search of innocent travellers to prey upon."));
+						"[npc.Name] — жительница Элиса, которая рыщет по подворотням в поисках невинных путников, чтобы на них наброситься."));
 			}
 		}
 	}

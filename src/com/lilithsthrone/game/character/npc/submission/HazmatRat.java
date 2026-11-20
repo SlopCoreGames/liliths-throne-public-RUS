@@ -79,8 +79,8 @@ public class HazmatRat extends NPC {
 	}
 	
 	public HazmatRat(boolean isImported) {
-		super(isImported, new NameTriplet("Rat"), "Tata",
-				"Is this a rat-morph that's inside the vending machine?! Surely not...",
+		super(isImported, new NameTriplet("Крыса"), "Тата",
+				"Неужели внутри торгового автомата какой-то крыс-морф?! Быть не может...",
 				30, Month.JANUARY, 1,
 				15, Gender.M_P_MALE, Subspecies.RAT_MORPH, RaceStage.GREATER,
 				new CharacterInventory(false, 500),
@@ -89,7 +89,7 @@ public class HazmatRat extends NPC {
 
 		if(!isImported) {
 			this.setPlayerKnowsName(false);
-			this.setGenericName("Hazmat Rat");
+			this.setGenericName("Химзащитный крыс");
 			this.dailyUpdate();
 		}
 	}

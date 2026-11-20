@@ -135,9 +135,8 @@ public class Minotallys extends NPC {
 	
 	public Minotallys(boolean isImported) {
 		super(isImported,
-				new NameTriplet("Minotallys"), "Lilithmartuilani",
-				"Transformed into a lilin by Lilith herself, Minotallys is unquestionably loyal to her mother."
-					+ " She typically defers to her assistant, Arion, on all matters related to the everyday running of Elis.",
+				new NameTriplet("Миноталлис"), "Lilithmartuilani",
+				"Превращенная в лилин самой Lilith, Миноталлис беспрекословно предана своей матери. В вопросах повседневного управления Элисом она обычно полагается на своего помощника, Ариона.",
 				643, Month.MAY, 18,
 				250,
 				Gender.F_V_B_FEMALE, Subspecies.COW_MORPH, RaceStage.GREATER,
@@ -156,8 +155,7 @@ public class Minotallys extends NPC {
 			this.setPersonalityTraits(
 					PersonalityTrait.CONFIDENT,
 					PersonalityTrait.LEWD);
-			this.setDescription("Transformed into a lilin by Lilith herself, Minotallys is unquestionably loyal to her mother."
-					+ " Despite her status and power, she typically defers to the advice of her assistant, Arion, on all decisions.");
+			this.setDescription("Превращенная в лилин самой Lilith, Миноталлис беспрекословно предана своей матери. Несмотря на свой статус и власть, в принятии решений она обычно прислушивается к советам своего помощника, Ариона.");
 		}
 	}
 

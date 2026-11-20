@@ -76,9 +76,8 @@ public class Imsu extends NPC {
 	}
 	
 	public Imsu(boolean isImported) {
-		super(isImported, new NameTriplet("Imsu"), "Lisophiamartu",
-				"Imsu is one of the two baphomets who operate the blacksmiths, 'The Ninth Strike', in Elis's shopping precinct."
-						+ " While most of his work involves manufacturing or repairing mundane items and machinery, his real passion is creating melee weapons.",
+		super(isImported, new NameTriplet("Имсу"), "Лисофиаммарту",
+				"Имсу — один из двух бафометов, управляющих кузницей «Девятый удар» в торговом квартале Элис. Хотя большая часть его работы связана с производством или ремонтом обыденных предметов и механизмов, его истинная страсть — создание холодного оружия.",
 				43, Month.FEBRUARY, 4,
 				25,
 				Gender.M_P_MALE, Subspecies.getSubspeciesFromId("innoxia_goat_subspecies_goat"), RaceStage.GREATER,
@@ -86,7 +85,7 @@ public class Imsu extends NPC {
 				WorldType.getWorldTypeFromId("innoxia_fields_elis_shops"), PlaceType.getPlaceTypeFromId("innoxia_fields_elis_shops_blacksmith"),
 				true);
 
-		this.setGenericName("black-furred baphomet");
+		this.setGenericName("черношерстный бафомет");
 		
 		if(!isImported) {
 			dailyUpdate();

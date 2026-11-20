@@ -194,7 +194,7 @@ public class SillyModeLARPAttacker extends NPC {
 	
 	@Override
 	public String getDescription() {
-	    return (UtilText.parse(this, "[npc.Name] is a resident of Elis who has an affinity for live-action roleplay."));
+	    return (UtilText.parse(this, "[npc.Name] — жительница Элиса, обожающая ролевые игры в реальности."));
 	}
 
 	@Override

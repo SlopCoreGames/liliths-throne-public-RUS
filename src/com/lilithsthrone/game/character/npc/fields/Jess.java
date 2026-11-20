@@ -78,9 +78,8 @@ public class Jess extends NPC {
 	}
 	
 	public Jess(boolean isImported) {
-		super(isImported, new NameTriplet("Jess"), "Fyxen",
-				"A permanent fixture of The Red Dragon tavern, Jess happily entertains the establishment's patrons by drinking and talking with them."
-				+ " Of course, if some more intimate entertainment is desired, she's always willing to negotiate the price...",
+		super(isImported, new NameTriplet("Джесс"), "Фиксен",
+				"Постоянная обитательница таверны «Рыжий дракон», Джесс с радостью развлекает завсегдатаев, выпивая и болтая с ними. Разумеется, если гостю захочется более интимного времяпрепровождения, она всегда готова обсудить цену...",
 				22, Month.MARCH, 7,
 				10, Gender.F_V_B_FEMALE, Subspecies.FOX_MORPH, RaceStage.GREATER,
 				new CharacterInventory(false, 10),
@@ -250,7 +249,7 @@ public class Jess extends NPC {
 		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("innoxia_groin_lacy_thong", PresetColour.CLOTHING_PINK_HOT, false), true, this);
 		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("innoxia_chest_strapless_bra", PresetColour.CLOTHING_PINK_HOT, false), true, this);
 
-		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("TonyJC_shoulderless_top", PresetColour.CLOTHING_WHITE, false), true, this);
+		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("TonyJC_топ_без_плечиков", PresetColour.CLOTHING_WHITE, false), true, this);
 		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("innoxia_leg_micro_skirt_pleated", PresetColour.CLOTHING_BLACK, PresetColour.CLOTHING_BLACK, PresetColour.CLOTHING_BLACK, false), true, this);
 		
 		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("innoxia_neck_heart_necklace", PresetColour.CLOTHING_GOLD, PresetColour.CLOTHING_GOLD, PresetColour.CLOTHING_GOLD, false), true, this);
@@ -282,7 +281,7 @@ public class Jess extends NPC {
 	
 	@Override
 	public String getArtworkFolderName() {
-		return "Jess";
+		return "Джесс";
 	}
 
 	@Override
@@ -386,10 +385,7 @@ public class Jess extends NPC {
 			String itemName = item.getName();
 			return new Value<>(false,
 					UtilText.parse(user, target,
-						"<p>"
-							+ "[npc.Name] [npc.verb(take)] out "+UtilText.generateSingularDeterminer(itemName)+" "+itemName+" from [npc.her] inventory and [npc.verb(try)] to give it to [npc2.name],"
-								+ " but [npc2.she] dismisses it with a wave of [npc2.her] hand and says, [npc2.speech(Sorry, [npc.babe], but that's not part of the deal!)]"
-						+ "</p>"));
+						"<p>[npc.Name] [npc.verb(take)] наружу "+UtilText.generateSingularDeterminer(itemName)+" "+itemName+" из [npc.her] инвентаря и [npc.verb(try)], чтобы отдать это [npc2.name], но [npc2.she] отмахивается [npc2.her] рукой и говорит: [npc2.speech(Прости, [npc.babe], но это не входит в сделку!)]</p>"));
 		}
 		return super.getItemUseEffects(item, itemOwner, user, target);
 	}

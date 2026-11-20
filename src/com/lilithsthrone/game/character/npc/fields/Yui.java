@@ -104,9 +104,8 @@ public class Yui extends NPC {
 	}
 	
 	public Yui(boolean isImported) {
-		super(isImported, new NameTriplet("Yui"), "Lyxiasmartu",
-				"Yui owns and operates the stall 'Yui's Toys' in Elis's Farmer's Market."
-						+ " Despite her small size and thin frame, she has an extremely dominant personality, and delights in sadistically abusing her customers.",
+		super(isImported, new NameTriplet("Юи"), "Ликсиасмарту",
+				"Юи владеет лавкой «Игрушки Юи» на фермерском рынке Элис. Несмотря на миниатюрное телосложение и хрупкую фигуру, она обладает крайне доминантным характером и получает истинное удовольствие, садистски издеваясь над своими покупателями.",
 				25, Month.DECEMBER, 22,
 				25,
 				Gender.F_V_B_FEMALE, Subspecies.getSubspeciesFromId("charisma_spider_subspecies_spider"), RaceStage.GREATER,
@@ -114,7 +113,7 @@ public class Yui extends NPC {
 				WorldType.getWorldTypeFromId("innoxia_fields_elis_market"), PlaceType.getPlaceTypeFromId("innoxia_fields_elis_market_toys"),
 				true);
 
-		this.setGenericName("grinning jorogumo");
+		this.setGenericName("ухмыляющаяся джоробумо");
 		
 		if(!isImported) {
 			this.setPlayerKnowsName(false);
@@ -573,7 +572,7 @@ public class Yui extends NPC {
 
 		client.setGenericName("client");
 		
-		client.setDescription("This is one of Yui's clients, who's paid her to visit her basement and roughly fuck the pathetic sub who's tied up down there. Tonight, that pathetic sub is you.");
+		client.setDescription("Это один из клиентов Юи, который заплатил ей за то, чтобы она спустилась в её подвал и грубо оттрахала жалкого саба, привязанного там внизу. И сегодня этот жалкий саб — ты.");
 		
 		// Determines how the client treats the player (by default they punish player):
 		if(Util.random.nextInt(100)<33
@@ -633,15 +632,15 @@ public class Yui extends NPC {
 	public void applyClientIntro(GameCharacter client) {
 		if(Main.game.getPlayer().hasFetish(Fetish.FETISH_INCEST) && Math.random()<0.33f) {
 			if(client.isFeminine()) {
-				client.setGenericName("Mommy");
+				client.setGenericName("Мамочка");
 			} else {
-				client.setGenericName("Daddy");
+				client.setGenericName("Папочка");
 			}
 		}
 		if(client.isFeminine()) {
-			client.setGenericName("Mistress");
+			client.setGenericName("Госпожа");
 		} else {
-			client.setGenericName("Master");
+			client.setGenericName("Хозяин");
 		}
 	}
 
@@ -784,7 +783,7 @@ public class Yui extends NPC {
 		
 		if(isGangVictim) {
 			client.setGenericName("victim");
-			client.setDescription("This stranger is a victim of the gang that's taken ownership of you...");
+			client.setDescription("Этот незнакомец — жертва банды, которая завладела тобой...");
 			
 		} else {
 			if(gangContent) {
@@ -793,14 +792,14 @@ public class Yui extends NPC {
 				} else {
 					client.addStatusEffect(StatusEffect.RECENTLY_SMOKED, 4 * 60 * 60);
 				}
-				client.setGenericName("gang member");
-				client.setDescription("This stranger is a member of a local gang, and is interested only in fucking you...");
+				client.setGenericName("член банды");
+				client.setDescription("Этот незнакомец — член местной банды, и его интересует только то, как трахнуть тебя...");
 				client.setPetName(Main.game.getPlayer(), Util.randomItemFrom(new String[] {"bitch", "cunt", "slut"}));
 				client.setOccupation(Occupation.NPC_GANG_MEMBER);
 				
 			} else {
 				client.setGenericName("stranger");
-				client.setDescription("This stranger is completely unknown to you, and is interested only in fucking you...");
+				client.setDescription("Этот незнакомец тебе совершенно неизвестен, и его интересует только то, как трахнуть тебя...");
 				client.setPetName(Main.game.getPlayer(), Util.randomItemFrom(new String[] {"bitch", "cunt", "slut"}));
 			}
 		}

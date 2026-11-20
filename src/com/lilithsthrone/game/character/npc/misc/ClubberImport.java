@@ -34,7 +34,7 @@ public class ClubberImport extends NPC {
 	}
 	
 	public ClubberImport(boolean isImported) {
-		super(isImported, new NameTriplet("Clubber"), "", "-",
+		super(isImported, new NameTriplet("Клуббер"), "", "-",
 				18, Month.JUNE, 10,
 				1, Gender.F_V_B_FEMALE, Subspecies.HUMAN, RaceStage.HUMAN,
 				new CharacterInventory(false, 0), WorldType.EMPTY, PlaceType.GENERIC_HOLDING_CELL, false);
@@ -109,7 +109,7 @@ public class ClubberImport extends NPC {
 		if(this.isSlave() && this.isDoll()) {
 			return super.getDescription();
 		}
-		return UtilText.parse(this, "[npc.Name] is a resident of Dominion, who you met in one of the clubs in the city's Nightlife district.");
+		return UtilText.parse(this, "[npc.Name] — житель Dominion, которого вы встретили в одном из клубов в районе ночной жизни города.");
 	}
 	
 	@Override
