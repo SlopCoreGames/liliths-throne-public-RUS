@@ -68,12 +68,12 @@ public class LovingActions {
 		
 		@Override
 		public String getActionTitle() {
-			return "Caress face";
+			return "Ласкать лицо";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Gently caress [npc2.namePos] face to make [npc2.herHim] feel loved.";
+			return "Нежно ласкать лицо [npc2.namePos], чтобы [npc2.herHim] чувствовала себя любимой.";
 		}
 		
 		@Override
@@ -86,21 +86,21 @@ public class LovingActions {
 			StringBuilder sb = new StringBuilder();
 
 			sb.append(UtilText.returnStringAtRandom(
-					"Wanting to make [npc2.name] feel loved, [npc.name] [npc.verb(lift)] [npc.her] [npc.hand], before gently stroking [npc.her] [npc.fingers+] over [npc2.her] face.",
-					"Lifting [npc.her] [npc.hand], [npc.name] softly [npc.verb(trace)] [npc.her] [npc.fingers+] over [npc2.namePos] cheek in order to make [npc2.herHim] feel loved.",
-					"Seeking to put [npc2.name] at ease, [npc.name] [npc.verb(raise)] [npc.her] [npc.hand], before using [npc.her] [npc.fingers+] to lovingly caress [npc2.her] face."));
+					"Желая подарить [npc2.name] чувство любви, [npc.name] [npc.verb(lift)] [npc.her] [npc.hand], прежде чем мягко провести [npc.her] [npc.fingers+] по [npc2.her] лицу.",
+					"Приподнимая [npc.her] за [npc.hand], [npc.name] мягко [npc.verb(trace)] [npc.her] [npc.fingers+] по [npc2.namePos] щеке, чтобы заставить [npc2.herHim] почувствовать себя любимой.",
+					"Стремясь успокоить [npc2.name], [npc.name] [npc.verb(raise)] [npc.her] [npc.hand], прежде чем использовать [npc.her] [npc.fingers+], чтобы с любовью ласкать [npc2.her] лицо."));
 			
 			if(!isTargetedCharacterInanimate()) {
 				if(Main.sex.getSexPace(Main.sex.getCharacterTargetedForSexAction(this))!=SexPace.SUB_RESISTING) {
 					sb.append(UtilText.returnStringAtRandom(
-							" A happy [npc2.moan] escapes from [npc2.namePos] mouth in response to this contact, causing [npc.name] to smile in delight.",
-							" The happy sigh which escapes [npc2.namePos] mouth is more than enough to let [npc.name] know that [npc.her] gentle caress has had the desired effect.",
-							" In response to this, [npc2.name] [npc2.verb(let)] out a happy [npc2.moan], letting [npc.name] know that [npc.her] gesture is much appreciated."));
+							" Счастливый [npc2.moan] срывается с губ [npc2.namePos] в ответ на это прикосновение, заставляя [npc.name] довольно улыбнуться.",
+							" Счастливого вздоха, вырвавшегося из [npc2.namePos] рта, более чем достаточно, чтобы [npc.name] поняла, что нежная ласка [npc.her] произвела желаемый эффект.",
+							" В ответ на это, [npc2.name] [npc2.verb(let)] счастливый [npc2.moan], давая [npc.name] понять, что [npc.her] жест очень ценится."));
 				} else {
 					sb.append(UtilText.returnStringAtRandom(
-							" A protesting yelp escapes from [npc2.namePos] mouth as [npc2.she] [npc2.verb(continue)] to resist [npc.namePos] advances.",
-							" The frustrated exclamation which immediately escapes from [npc2.namePos] mouth is not what [npc.name] [npc.was] looking for, and [npc.she] can't help but sigh as [npc2.name] [npc2.verb(continue)] to resist.",
-							" After letting out a shocked cry, tears start to well up in [npc2.namePos] [npc2.eyes], letting [npc.name] know that [npc.her] advances are not having the effect which [npc.she] [npc.was] looking for."));
+							" Протестующий вскрик срывается с губ [npc2.namePos], когда [npc2.she] [npc2.verb(continue)], чтобы сопротивляться [npc.namePos] напору.",
+							" Раздраженное восклицание, которое тут же срывается с губ [npc2.namePos], — совсем не то, что искал [npc.name] [npc.was], и [npc.she] не может не вздохнуть, когда [npc2.name] [npc2.verb(continue)], сопротивляясь.",
+							" Издав шокированный возглас, [npc2.namePos] [npc2.eyes] наполняются слезами, давая [npc.name] понять, что ухаживания [npc.her] не производят того эффекта, который [npc.she] [npc.was] искала."));
 				}
 			}
 			
@@ -149,12 +149,12 @@ public class LovingActions {
 		
 		@Override
 		public String getActionTitle() {
-			return "Kiss cheek";
+			return "Поцеловать в щеку";
 		}
 
 		@Override
 		public String getActionDescription() {
-			return "Plant a loving kiss on [npc2.namePos] cheek.";
+			return "Запечатлеть нежный поцелуй на щеке [npc2.namePos].";
 		}
 		
 		@Override
@@ -167,21 +167,21 @@ public class LovingActions {
 			StringBuilder sb = new StringBuilder();
 
 			sb.append(UtilText.returnStringAtRandom(
-					"Wanting to show [npc2.name] that [npc2.sheIs] loved, [npc.name] [npc.verb(lean)] in towards [npc2.herHim], before planting a gentle kiss on [npc2.her] cheek.",
-					"Leaning in towards [npc2.name], [npc.name] [npc.verb(purse)] [npc.her] [npc.lips+], before planting a loving kiss on [npc2.her] cheek.",
-					"Seeking to remind [npc2.name] of how much [npc2.sheIsFull] loved, [npc.name] [npc.verb(lean)] in towards [npc2.herHim], before pursing [npc.her] [npc.lips+] and kissing [npc2.her] cheek."));
+					"Желая показать [npc2.name], как сильно [npc2.sheIs] любит, [npc.name] [npc.verb(lean)] к [npc2.herHim], прежде чем нежно поцеловать [npc2.her] в щеку.",
+					"Наклоняясь к [npc2.name], [npc.name] [npc.verb(purse)] [npc.her] [npc.lips+], прежде чем запечатлеть любящий поцелуй на щеке [npc2.her].",
+					"Желая напомнить [npc2.name] о том, как сильно [npc2.sheIsFull] любит, [npc.name] [npc.verb(lean)] к [npc2.herHim], прежде чем сжать [npc.her] [npc.lips+] и поцеловать [npc2.her] в щеку."));
 
 			if(!isTargetedCharacterInanimate()) {
 				if(Main.sex.getSexPace(Main.sex.getCharacterTargetedForSexAction(this))!=SexPace.SUB_RESISTING) {
 					sb.append(UtilText.returnStringAtRandom(
-							" A happy [npc2.moan] escapes from [npc2.namePos] mouth in response to this contact, causing [npc.name] to smile in delight.",
-							" The happy sigh which escapes [npc2.namePos] mouth is more than enough to let [npc.name] know that [npc.her] kiss has had the desired effect.",
-							" In response to this, [npc2.name] [npc2.verb(let)] out a happy [npc2.moan], letting [npc.name] know that [npc.her] gesture is much appreciated."));
+							" Счастливый [npc2.moan] срывается с губ [npc2.namePos] в ответ на это прикосновение, заставляя [npc.name] довольно улыбнуться.",
+							" Счастливого вздоха, вырвавшегося из уст [npc2.namePos], более чем достаточно, чтобы дать [npc.name] понять: поцелуй [npc.her] произвел желаемый эффект.",
+							" В ответ на это, [npc2.name] [npc2.verb(let)] счастливый [npc2.moan], давая [npc.name] понять, что [npc.her] жест очень ценится."));
 				} else {
 					sb.append(UtilText.returnStringAtRandom(
-							" A protesting yelp escapes from [npc2.namePos] mouth as [npc2.she] [npc2.verb(continue)] to resist [npc.namePos] advances.",
-							" The frustrated exclamation which immediately escapes from [npc2.namePos] mouth is not what [npc.name] [npc.was] looking for, and [npc.she] can't help but sigh as [npc2.name] [npc2.verb(continue)] to resist.",
-							" After letting out a shocked cry, tears start to well up in [npc2.namePos] [npc2.eyes], letting [npc.name] know that [npc.her] advances are not having the effect which [npc.she] [npc.was] looking for."));
+							" Протестующий вскрик срывается с губ [npc2.namePos], когда [npc2.she] [npc2.verb(continue)], чтобы сопротивляться [npc.namePos] напору.",
+							" Раздраженное восклицание, которое тут же срывается с губ [npc2.namePos], — совсем не то, что искал [npc.name] [npc.was], и [npc.she] не может не вздохнуть, когда [npc2.name] [npc2.verb(continue)], сопротивляясь.",
+							" Издав шокированный возглас, [npc2.namePos] [npc2.eyes] наполняются слезами, давая [npc.name] понять, что ухаживания [npc.her] не производят того эффекта, который [npc.she] [npc.was] искала."));
 				}
 			}
 			
@@ -219,11 +219,11 @@ public class LovingActions {
 		}
 		@Override
 		public String getActionTitle() {
-			return "Stroke belly";
+			return "Погладить живот";
 		}
 		@Override
 		public String getActionDescription() {
-			return "Gently stroke [npc2.namePos] pregnant belly.";
+			return "Нежно поглаживать беременный живот [npc2.namePos].";
 		}
 		@Override
 		public SexActionCategory getCategory() {
@@ -236,40 +236,38 @@ public class LovingActions {
 			boolean performerPossiblyFather = Main.sex.getCharacterTargetedForSexAction(this).isCharacterPossiblyFather(Main.sex.getCharacterPerformingAction());
 			boolean performerIsFather = performerPossiblyFather && Main.sex.getCharacterTargetedForSexAction(this).getPotentialPartnersAsMother().size()==1;
 			
-			String pregnantBellyDesc = Util.randomItemFromValues("pregnant belly", "swollen belly", "rounded tummy", "pregnant tummy");
-			String fatherText = Main.sex.getCharacterPerformingAction().isFeminine()?"'father'":"father";
+			String pregnantBellyDesc = Util.randomItemFromValues("беременный живот", "раздутый живот", "округлый животик", "беременный животик");
+			String fatherText = Main.sex.getCharacterPerformingAction().isFeminine()?"«отец»":"father";
 			
 			sb.append(UtilText.returnStringAtRandom(
-					"Wanting [npc2.name] to know that [npc2.sheIs] loved, [npc.name] [npc.verb(place)] [npc.her] [npc.hands] on [npc2.her] "+pregnantBellyDesc+" and [npc.verb(give)] it a gentle stroke.",
-					"Placing [npc.her] [npc.hands] on [npc2.namePos] "+pregnantBellyDesc+", [npc.name] [npc.verb(start)] lovingly stroking and patting it.",
-					"Seeking to show [npc2.name] how much [npc.she] [npc.verb(love)] [npc2.herHim], [npc.name] gently [npc.verb(place)] [npc.her] [npc.hands] on [npc2.her] "+pregnantBellyDesc+", before giving it several loving strokes."));
+					"Желая, чтобы [npc2.name] знал, что [npc2.sheIs] любил, [npc.name] [npc.verb(place)] [npc.her] [npc.hands] на [npc2.her] "+pregnantBellyDesc+" и [npc.verb(give)] его нежным поглаживанием.",
+					"Положив [npc.her] [npc.hands] на [npc2.namePos] "+pregnantBellyDesc+", [npc.name] [npc.verb(start)] с любовью поглаживал и похлопывал его.",
+					"Стремясь показать [npc2.name], как сильно [npc.she] [npc.verb(love)] [npc2.herHim], [npc.name] нежно [npc.verb(place)] [npc.her] [npc.hands] на [npc2.her] "+pregnantBellyDesc+", прежде чем ласково погладить его несколько раз."));
 			
 			if(performerIsFather) {
 				sb.append(UtilText.returnStringAtRandom(
-						" Knowing that [npc.she] [npc.is] the "+fatherText+" of the offspring growing inside of [npc2.namePos] belly,"
-								+ " [npc.name] [npc.verb(make)] sure to be extra gentle and loving as [npc.she] [npc.verb(run)] [npc.her] [npc.hands] over [npc.her] partner's "+pregnantBellyDesc+".",
-						" As it's a certainty that [npc.name] [npc.is] the "+fatherText+" of [npc2.namePos] offspring, [npc.she] [npc.verb(decide)] to give [npc.her] partner's belly a few extra gentle strokes.",
-						" As [npc.she] [npc.is] definitely the "+fatherText+" of [npc2.namePos] offspring, [npc.name] [npc.verb(make)] sure to be extra gentle and loving while stroking [npc.her] partner's "+pregnantBellyDesc+"."));
+						" Зная, что [npc.she] [npc.is]  "+fatherText+" из-за потомства, растущего внутри живота [npc2.namePos], [npc.name] [npc.verb(make)] обязательно будет проявлять особую нежность и любовь, когда [npc.she] [npc.verb(run)] [npc.her] [npc.hands] над [npc.her] партнером "+pregnantBellyDesc+".",
+						" Ведь совершенно очевидно, что [npc.name] [npc.is]  "+fatherText+" отпрышина [npc2.namePos], [npc.she] [npc.verb(decide)] не упускает возможности лишний раз нежно погладить живот [npc.her] партнера.",
+						" Поскольку [npc.she] [npc.is] определенно  "+fatherText+" отпрышина [npc2.namePos], [npc.name] [npc.verb(make)] старается быть предельно нежным и любящим, поглаживая живот [npc.her] партнера. "+pregnantBellyDesc+"."));
 				
 			} else if(performerPossiblyFather) {
 				sb.append(UtilText.returnStringAtRandom(
-						" Knowing that [npc.she] might be the "+fatherText+" of the offspring growing inside of [npc2.namePos] belly,"
-								+ " [npc.name] [npc.verb(make)] sure to be extra gentle and loving as [npc.she] [npc.verb(run)] [npc.her] [npc.hands] over [npc.her] partner's "+pregnantBellyDesc+".",
-						" As it's possible that [npc.name] might be the "+fatherText+" of [npc2.namePos] offspring, [npc.she] [npc.verb(decide)] to give [npc.her] partner's belly a few extra gentle strokes.",
-						" As [npc.she] might be the "+fatherText+" of [npc2.namePos] offspring, [npc.name] [npc.verb(make)] sure to be extra gentle and loving while stroking [npc.her] partner's "+pregnantBellyDesc+"."));
+						" Зная, что [npc.she] может быть  "+fatherText+" из-за потомства, растущего внутри живота [npc2.namePos], [npc.name] [npc.verb(make)] обязательно будет проявлять особую нежность и любовь, когда [npc.she] [npc.verb(run)] [npc.her] [npc.hands] над [npc.her] партнером "+pregnantBellyDesc+".",
+						" Так как вполне возможно, что [npc.name] может быть  "+fatherText+" отпрышина [npc2.namePos], [npc.she] [npc.verb(decide)] не упускает возможности лишний раз нежно погладить живот [npc.her] партнера.",
+						" Как [npc.she] может быть "+fatherText+" отпрышина [npc2.namePos], [npc.name] [npc.verb(make)] старается быть предельно нежным и любящим, поглаживая живот [npc.her] партнера. "+pregnantBellyDesc+"."));
 			}
 
 			if(!isTargetedCharacterInanimate()) {
 				if(Main.sex.getSexPace(Main.sex.getCharacterTargetedForSexAction(this))!=SexPace.SUB_RESISTING) {
 					sb.append(UtilText.returnStringAtRandom(
-							" A happy [npc2.moan] escapes from [npc2.namePos] mouth in response to this contact, causing [npc.name] to smile in delight.",
-							" The happy sigh which escapes [npc2.namePos] mouth is more than enough to let [npc.name] know that [npc.her] gentle caress has had the desired effect.",
-							" In response to this, [npc2.name] [npc2.verb(let)] out a happy [npc2.moan], letting [npc.name] know that [npc.her] gesture is much appreciated."));
+							" Счастливый [npc2.moan] срывается с губ [npc2.namePos] в ответ на это прикосновение, заставляя [npc.name] довольно улыбнуться.",
+							" Счастливого вздоха, вырвавшегося из [npc2.namePos] рта, более чем достаточно, чтобы [npc.name] поняла, что нежная ласка [npc.her] произвела желаемый эффект.",
+							" В ответ на это, [npc2.name] [npc2.verb(let)] счастливый [npc2.moan], давая [npc.name] понять, что [npc.her] жест очень ценится."));
 				} else {
 					sb.append(UtilText.returnStringAtRandom(
-							" A protesting yelp escapes from [npc2.namePos] mouth as [npc2.she] [npc2.verb(continue)] to resist [npc.namePos] advances.",
-							" The frustrated exclamation which immediately escapes from [npc2.namePos] mouth is not what [npc.name] [npc.was] looking for, and [npc.she] can't help but sigh as [npc2.name] [npc2.verb(continue)] to resist.",
-							" After letting out a shocked cry, tears start to well up in [npc2.namePos] [npc2.eyes], letting [npc.name] know that [npc.her] advances are not having the effect which [npc.she] [npc.was] looking for."));
+							" Протестующий вскрик срывается с губ [npc2.namePos], когда [npc2.she] [npc2.verb(continue)], чтобы сопротивляться [npc.namePos] напору.",
+							" Раздраженное восклицание, которое тут же срывается с губ [npc2.namePos], — совсем не то, что искал [npc.name] [npc.was], и [npc.she] не может не вздохнуть, когда [npc2.name] [npc2.verb(continue)], сопротивляясь.",
+							" Издав шокированный возглас, [npc2.namePos] [npc2.eyes] наполняются слезами, давая [npc.name] понять, что ухаживания [npc.her] не производят того эффекта, который [npc.she] [npc.was] искала."));
 				}
 			}
 			

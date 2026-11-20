@@ -118,7 +118,7 @@ def run_mvn_compile() -> tuple[bool, str]:
     env = os.environ.copy()
     env["JAVA_HOME"] = JAVA_HOME
     proc = subprocess.run(
-        [MVN_CMD, "compile", "-DskipTests"],
+        ["cmd", "/c", MVN_CMD, "compiler:compile", "-DskipTests"],
         cwd=str(ROOT),
         env=env,
         capture_output=True,

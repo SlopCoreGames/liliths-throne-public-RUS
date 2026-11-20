@@ -674,10 +674,11 @@ def translate_java_unit_batch(api_url: str, units: list[dict], glossary: dict, r
             req_cyr = not bool(re.search(r"[А-Яа-яЁё]", core)) and bool(
                 re.search(r"[a-zA-Z]{2,}", base._strip_wrappers_and_masks(PRINTF_SPEC_RE.sub(" ", core)))
             )
+            req_keys = [mk for mk in m_dict if mk in m_txt]
             k = str(pos)
             masked_map[k] = m_txt
             masks_map[k] = m_dict
-            meta_map[k] = (lead, core, trail, req_cyr)
+            meta_map[k] = (lead, core, trail, req_cyr, req_keys)
             comb_src.append(core)
 
         hint = base.build_glossary_hint("\n".join(comb_src), glossary)
@@ -706,11 +707,11 @@ def translate_java_unit_batch(api_url: str, units: list[dict], glossary: dict, r
 
         for pos, ui in enumerate(batch):
             k = str(pos)
-            lead, core, trail, req_cyr = meta_map[k]
+            lead, core, trail, req_cyr, req_keys = meta_map[k]
             if (
                 isinstance(parsed, dict)
                 and isinstance(parsed.get(k), str)
-                and base.validate_masks(parsed[k], masks_map[k], require_cyr=req_cyr, src_text=core)
+                and base.validate_masks(parsed[k], masks_map[k], require_cyr=req_cyr, src_text=core, required_keys=req_keys)
             ):
                 unm = base.unmask_text(parsed[k], masks_map[k])
                 results[ui] = lead + unm + trail
@@ -730,6 +731,7 @@ def _translate_single_java(api_url: str, raw: str, glossary: dict, ctx: str, tm:
     if core in tm and "@@" not in tm[core] and not base.has_translatable_words(tm[core]):
         return lead + tm[core] + trail
     masked, masks = mask_java_text(core)
+    req_keys = [mk for mk in masks if mk in masked]
     hint = base.build_glossary_hint(core, glossary)
     req_cyr = not bool(re.search(r"[А-Яа-яЁё]", core)) and bool(
         re.search(r"[a-zA-Z]{2,}", base._strip_wrappers_and_masks(PRINTF_SPEC_RE.sub(" ", core)))
@@ -739,7 +741,7 @@ def _translate_single_java(api_url: str, raw: str, glossary: dict, ctx: str, tm:
         "Translate ALL English prose/UI text into natural, idiomatic, uncensored Russian. "
         "Keep wrappers like [npc.speech(...)] or [style.colour(...)] intact while translating English words inside parentheses; NEVER invent new bracket tags, arrows ('->'), or repeat English source. "
         "Treat @@V0@@/@@V1@@ as verbs already present in the sentence. "
-        "Preserve EVERY placeholder token (@@H*@@, @@T*@@, @@V*@@, @@S*@@, @@M*@@, @@K*@@, @@P*@@) verbatim. "
+        "CRITICAL: Preserve EVERY placeholder token (@@H*@@, @@T*@@, @@V*@@, @@S*@@, @@M*@@, @@K*@@, @@P*@@) verbatim; NEVER omit one. "
         "Output ONLY the Russian translation."
     )
     usr_p = f"Context: {ctx}\n" + (hint + "\n" if hint else "") + f"Text:\n{masked}"
@@ -752,7 +754,7 @@ def _translate_single_java(api_url: str, raw: str, glossary: dict, ctx: str, tm:
             max_tokens=2048,
             temperature=temp,
         )
-        if base.validate_masks(out, masks, require_cyr=req_cyr, src_text=core):
+        if base.validate_masks(out, masks, require_cyr=req_cyr, src_text=core, required_keys=req_keys):
             unm = base.unmask_text(out, masks)
             if unm != core and "@@" not in unm and not base.has_translatable_words(unm):
                 tm[core] = unm
