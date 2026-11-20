@@ -20,47 +20,47 @@ public enum FluidModifier {
 	VISCOUS(PresetColour.BASE_PURPLE_DARK,
 			false,
 			"viscous",
-			"It's quite viscous, and slowly drips in large globules, much like thick treacle.",
-			"Gives this fluid a thick consistency, somewhere between liquid and solid."),
+			"Оно довольно вязкое и медленно стекает крупными каплями, напоминая густую патоку.",
+			"Придает жидкости густую консистенцию, нечто среднее между жидким и твердым состоянием."),
 	
 	STICKY(PresetColour.BASE_YELLOW_LIGHT,
 			false,
 			"sticky",
-			"It's quite sticky, and is difficult to fully wash off without soap.",
-			"Makes this fluid stick to anything it touches."),
+			"Оно довольно липкое, и его трудно полностью смыть без мыла.",
+			"Заставляет эту жидкость прилипать ко всему, чего она касается."),
 	
 	SLIMY(PresetColour.BASE_BLUE_LIGHT,
 			false,
 			"slimy",
-			"It has a slimy, oily texture.",
-			"Gives this fluid a slimy feel to it."),
+			"Оно имеет склизкую, маслянистую текстуру.",
+			"Придает этой жидкости ощущение скользкости и слизи."),
 	
 	BUBBLING(PresetColour.BASE_LILAC_LIGHT,
 			false,
 			"bubbling",
-			"It fizzes and bubbles like a carbonated drink.",
-			"Makes this fluid bubble like a carbonated drink."),
+			"Оно шипит и пузырится, как газированный напиток.",
+			"Заставляет эту жидкость пузыриться, словно газировку."),
 	
 	// SPECIAL EFFECTS:
 
 	MUSKY(PresetColour.BASE_TAN,
 			true,
 			"musky",
-			"It has a strong, musky smell.",
-			"Musky cum and girlcum will apply 'marked by musk' to anyone who is covered in it during sex."),
+			"У него сильный мускусный запах.",
+			"Мускусная сперма и женская смазка накладывают эффект «отмечен мускусом» на любого, кто будет покрыт ими во время секса."),
 	
 	
 	MINERAL_OIL(PresetColour.BASE_BLACK,
 			true,
-			"mineral oil",
-			"It is rich in minerals good for your skin but not for latex.",
-			"Fluids imbued with mineral oil will rapidly degrade condoms, causing them to break at the moment of orgasm."),
+			"минеральное масло",
+			"Оно богато минералами, полезными для кожи, но губительными для латекса.",
+			"Жидкости с минеральным маслом быстро разрушают презервативы, из-за чего те могут порваться в самый момент оргазма."),
 	
 	ALCOHOLIC(PresetColour.BASE_ORANGE,
 			true,
-			"strongly alcoholic",
-			"It has a high alcohol content, and will get those who consume it very drunk.",
-			"Strongly alcoholic fluids will greatly increase the intoxication level of anyone who consumes them.") {
+			"крепкоалкогольный",
+			"В нем высокое содержание алкоголя, поэтому те, кто его употребит, быстро сильно опьянеют.",
+			"Крепкоалкогольные жидкости значительно повышают уровень опьянения у любого, кто их употребит.") {
 		@Override
 		public String applyEffects(GameCharacter target, GameCharacter fluidProvider, float millilitres, FluidInterface fluid) {
 			return target.incrementAlcoholLevel(millilitres * 0.001f); //TODO factor in body size
@@ -70,8 +70,8 @@ public enum FluidModifier {
 	ALCOHOLIC_WEAK(PresetColour.BASE_ORANGE_LIGHT,
 			true,
 			"alcoholic",
-			"It has a low alcohol content, and will get those who consume it drunk.",
-			"Alcoholic fluids will increase the intoxication level of anyone who consumes them.") {
+			"В нем низкое содержание алкоголя, поэтому те, кто его употребит, слегка опьянеют.",
+			"Алкогольные жидкости повышают уровень опьянения у любого, кто их употребит.") {
 		@Override
 		public String applyEffects(GameCharacter target, GameCharacter fluidProvider, float millilitres, FluidInterface fluid) {
 			return target.incrementAlcoholLevel(millilitres * 0.0001f); //TODO factor in body size
@@ -81,8 +81,8 @@ public enum FluidModifier {
 	ADDICTIVE(PresetColour.BASE_PINK,
 			true,
 			"addictive",
-			"It is highly addictive, and anyone who drinks too much will quickly become dependent on it.",
-			"Addictive fluids will make anyone who consumes them become addicted to that particular type of fluid.") {
+			"Вызывает сильное привыкание: любой, кто будет пить слишком много, быстро станет зависимым.",
+			"Вызывающие привыкание жидкости заставляют любого, кто их употребит, подсесть на этот конкретный вид жидкости.") {
 		@Override
 		public String applyEffects(GameCharacter target, GameCharacter fluidProvider, float millilitres, FluidInterface fluid) {
 			if(target==null || fluidProvider==null) {
@@ -95,10 +95,8 @@ public enum FluidModifier {
 			boolean appendAddiction = !Main.game.isInSex() || curedWithdrawal;
 			if(target.addAddiction(new Addiction(fluid.getType(), Main.game.getMinutesPassed(), fluidProvider.getId()))) {
 				return UtilText.parse(target,
-						"<p style='padding:0; margin:0; text-align:center;'>"
-							+ "Due to the addictive properties of "+(fluidProvider==null?"":(fluidProvider.equals(target)?"[npc.her]":UtilText.parse(fluidProvider, "[npc.namePos]")))+" "+fluid.getName(fluidProvider)
-								+", [npc.name] [npc.verb(find)] [npc.herself] [style.colourArcane(craving)]"
-								+ " <span style='color:"+fluid.getType().getRace().getColour().toWebHexString()+";'>"+fluid.getType().getRace().getName(fluidProvider.getBody(), fluid.isFeral(fluidProvider))+"</span> "+fluid.getName(fluidProvider)+"!"
+						"<p style='padding:0; margin:0; text-align:center;'>Благодаря аддиктивным свойствам "+(fluidProvider==null?"":(fluidProvider.equals(target)?"[npc.her]":UtilText.parse(fluidProvider, "[npc.namePos]")))+" "+fluid.getName(fluidProvider)
+								+", [npc.name] [npc.verb(find)] [npc.herself] [style.colourArcane(жажда)] <span style='color:"+fluid.getType().getRace().getColour().toWebHexString()+";'>"+fluid.getType().getRace().getName(fluidProvider.getBody(), fluid.isFeral(fluidProvider))+"</span> "+fluid.getName(fluidProvider)+"!"
 						+ "</p>");
 				
 				
@@ -110,12 +108,12 @@ public enum FluidModifier {
 								+ "[npc.NamePos] [style.colourArcane(craving)] for <span style='color:"+fluid.getType().getRace().getColour().toWebHexString()+";'>"
 									+fluid.getType().getRace().getName(fluidProvider.getBody(), fluid.isFeral(fluidProvider))
 								+"</span> "+fluid.getName(fluidProvider)
-									+" has been satisfied!"
+									+" была удовлетворена!"
 								+ (curedWithdrawal
-									?" [npc.She] [npc.verb(feel)] deeply grateful to "+(fluidProvider==null?"":UtilText.parse(fluidProvider, "[npc.name]"))+" for providing [npc.herHim] with what [npc.she] needed most..."
+									?" [npc.She] [npc.verb(feel)] глубоко благодарен "+(fluidProvider==null?"":UtilText.parse(fluidProvider, "[npc.name]"))+" за то, что предоставил [npc.herHim] то, в чем [npc.she] нуждался больше всего..."
 											+ (target.isSlave()?target.incrementObedience(5):"")
-									:" [npc.She] [npc.was]n't suffering from withdrawal, but [npc.she] still [npc.verb(feel)] thankful to "
-											+(fluidProvider==null?"":UtilText.parse(fluidProvider, "[npc.name]"))+" for feeding [npc.her] addiction...")
+									:" [npc.She] [npc.was] не страдает от ломки, но [npc.she] все еще [npc.verb(feel)] благодарен "
+											+(fluidProvider==null?"":UtilText.parse(fluidProvider, "[npc.name]"))+" за то, что подпитывает зависимость [npc.her]...")
 							+ "</p>");
 				}
 				return "";
@@ -126,8 +124,8 @@ public enum FluidModifier {
 	HALLUCINOGENIC(PresetColour.BASE_PINK_DEEP,
 			true,
 			"psychoactive",
-			"Anyone who ingests it suffers psychoactive effects, which can manifest in lactation-related hallucinations or sensitivity to hypnotic suggestion.",
-			"Psychoactive fluids will cause anyone who ingests them to experience a hallucinogenic trip, causing their view of sexual organs to be distorted as well as opening them up to the possibility of being hypnotically manipulated.") {
+			"Любой, кто употребляет это, испытывает психоактивный эффект, который может проявляться в виде галлюцинаций, связанных с лактацией, или повышенной чувствительности к гипнотическому внушению.",
+			"Психоактивные жидкости вызывают у любого употребившего их галлюциногенный трип, из-за чего восприятие половых органов искажается, а сам человек становится уязвим для гипнотического манипулирования.") {
 		@Override
 		public String applyEffects(GameCharacter target, GameCharacter fluidProvider, float millilitres, FluidInterface fluid) {
 			if(target.hasPerkAnywhereInTree(Perk.DOLL_PHYSICAL_3)) {
@@ -138,10 +136,8 @@ public enum FluidModifier {
 			target.addStatusEffect(StatusEffect.PSYCHOACTIVE, 6*60*60);
 			if(appendPsychoactive) {
 				return UtilText.parse(target,
-						"<p style='padding:0; margin:0; text-align:center;'>"
-							+ "Due to the psychoactive properties of "+(fluidProvider==null?"":(fluidProvider.equals(target)?"[npc.her]":UtilText.parse(fluidProvider, "[npc.namePos]")))+" "+fluid.getName(fluidProvider)
-								+", [npc.name] [npc.verb(start)] <span style='color:"+PresetColour.PSYCHOACTIVE.toWebHexString()+";'>tripping out</span>!"
-						+ "</p>");
+						"<p style='padding:0; margin:0; text-align:center;'>Благодаря психоактивным свойствам "+(fluidProvider==null?"":(fluidProvider.equals(target)?"[npc.her]":UtilText.parse(fluidProvider, "[npc.namePos]")))+" "+fluid.getName(fluidProvider)
+								+", [npc.name] [npc.verb(start)] <span style='color:"+PresetColour.PSYCHOACTIVE.toWebHexString()+";'>крышу сносит</span>!</p>");
 			}
 			return "";
 		}

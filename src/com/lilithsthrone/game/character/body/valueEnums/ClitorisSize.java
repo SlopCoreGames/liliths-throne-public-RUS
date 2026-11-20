@@ -36,7 +36,7 @@ public enum ClitorisSize {
 	
 	SIX_GIGANTIC("gigantic", 50, 60, PresetColour.GENERIC_SIZE_SEVEN),
 	
-	SEVEN_STALLION("absurdly colossal", 60, 100, PresetColour.GENERIC_SIZE_EIGHT);
+	SEVEN_STALLION("абсурдно колоссальный", 60, 100, PresetColour.GENERIC_SIZE_EIGHT);
 
 	private int minimumValue, maximumValue;
 	private String descriptor;

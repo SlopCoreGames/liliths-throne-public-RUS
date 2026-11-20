@@ -13,7 +13,7 @@ import com.lilithsthrone.utils.colours.PresetColour;
 public enum OrificeDepth {
 	
 	/** 50% of normal depth. */
-	ZERO_EXTREMELY_SHALLOW("very shallow", 0, 0.5f, PresetColour.GENERIC_SIZE_ONE),
+	ZERO_EXTREMELY_SHALLOW("очень мелкая", 0, 0.5f, PresetColour.GENERIC_SIZE_ONE),
 
 	/** 75% of normal depth. */
 	ONE_SHALLOW("shallow", 1, 0.75f, PresetColour.GENERIC_SIZE_TWO),
@@ -29,7 +29,7 @@ public enum OrificeDepth {
 	FOUR_DEEP("deep", 4, 2f, PresetColour.GENERIC_SIZE_FIVE),
 
 	/** 250% of normal depth. */
-	FIVE_VERY_DEEP("very deep", 5, 2.5f, PresetColour.GENERIC_SIZE_SIX),
+	FIVE_VERY_DEEP("очень глубокая", 5, 2.5f, PresetColour.GENERIC_SIZE_SIX),
 
 	/** 300% of normal depth. */
 	SIX_CAVERNOUS("cavernous", 6, 3f, PresetColour.GENERIC_SIZE_SEVEN),

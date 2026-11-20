@@ -13,11 +13,11 @@ public enum TongueLength {
 
 	ONE_LONG("long", 5, 10),
 
-	TWO_VERY_LONG("very long", 10, 20),
+	TWO_VERY_LONG("очень длинные", 10, 20),
 
-	THREE_EXTREMELY_LONG("extremely long", 20, 30),
+	THREE_EXTREMELY_LONG("невероятно длинный", 20, 30),
 
-	FOUR_ABSURDLY_LONG("absurdly long", 30, 60);
+	FOUR_ABSURDLY_LONG("абсурдно длинный", 30, 60);
 
 	private int minimumValue, maximumValue;
 	private String descriptor;

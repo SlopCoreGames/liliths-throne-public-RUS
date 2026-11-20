@@ -31,15 +31,15 @@ public class NippleType {
 
 	public static AbstractNippleType ANGEL = new AbstractNippleType(BodyCoveringType.NIPPLES,
 			Race.ANGEL,
-			Util.newArrayListOfValues("perfect", "flawless"),
-			Util.newArrayListOfValues("perfect", "flawless"),
+			Util.newArrayListOfValues("идеальный", "безупречны"),
+			Util.newArrayListOfValues("идеальный", "безупречны"),
 			Util.newArrayListOfValues()){
 	};
 
 	public static AbstractNippleType DEMON = new AbstractNippleType(BodyCoveringType.NIPPLES,
 			Race.DEMON,
-			Util.newArrayListOfValues("perfect", "flawless"),
-			Util.newArrayListOfValues("perfect", "flawless"),
+			Util.newArrayListOfValues("идеальный", "безупречны"),
+			Util.newArrayListOfValues("идеальный", "безупречны"),
 			Util.newArrayListOfValues()){
 	};
 
@@ -154,7 +154,7 @@ public class NippleType {
 		
 		// Modded types:
 		
-		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/race", "bodyParts", null);
+		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/раса", "bodyParts", null);
 		for(Entry<String, Map<String, File>> entry : moddedFilesMap.entrySet()) {
 			for(Entry<String, File> innerEntry : entry.getValue().entrySet()) {
 				if(Util.getXmlRootElementName(innerEntry.getValue()).equals("nipple")) {

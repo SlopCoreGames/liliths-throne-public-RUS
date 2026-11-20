@@ -13,7 +13,7 @@ public enum OrificeModifier {
 	
 	TENTACLED("tentacled", ""),
 	
-	MUSCLE_CONTROL("internally-muscled", "Prevents this orifice from ever being regarded as 'too loose', no matter how slender an insertion nor how loose its capacity might be.");
+	MUSCLE_CONTROL("internally-muscled", "Предотвращает превращение этого отверстия в «слишком свободное», независимо от того, насколько тонким будет проникновение или насколько растянутым станет его просвет.");
 	
 	
 	private String name;
@@ -34,7 +34,7 @@ public enum OrificeModifier {
 	
 	public String getDescription() {
 		if(description.isEmpty()) {
-			return "No gameplay effect.";
+			return "Не влияет на игровой процесс.";
 		}
 		return description;
 	}

@@ -82,19 +82,19 @@ public enum AffectionLevel {
 				sb.append(UtilText.parse(character, target, "[npc.Name] "+applyColourWrapper("[npc.verb(dislike)]", affectionLevel, withColour)+" [npc2.name]."));
 				break;
 			case NEGATIVE_ONE_ANNOYED:
-				sb.append(UtilText.parse(character, target, "[npc.Name] [npc.is] "+applyColourWrapper("annoyed", affectionLevel, withColour)+" with [npc2.name]."));
+				sb.append(UtilText.parse(character, target, "[npc.Name] [npc.is] "+applyColourWrapper("раздражен", affectionLevel, withColour)+" к [npc2.name]."));
 				break;
 			case ZERO_NEUTRAL:
-				sb.append(UtilText.parse(character, target, "[npc.Name] [npc.is] "+applyColourWrapper("indifferent", affectionLevel, withColour)+" towards [npc2.name]."));
+				sb.append(UtilText.parse(character, target, "[npc.Name] [npc.is] "+applyColourWrapper("безразличен", affectionLevel, withColour)+" к [npc2.name]."));
 				break;
 			case POSITIVE_ONE_FRIENDLY:
-				sb.append(UtilText.parse(character, target, "[npc.Name] [npc.is] "+applyColourWrapper("friendly", affectionLevel, withColour)+" towards [npc2.name]."));
+				sb.append(UtilText.parse(character, target, "[npc.Name] [npc.is] "+applyColourWrapper("дружелюбен", affectionLevel, withColour)+" к [npc2.name]."));
 				break;
 			case POSITIVE_TWO_LIKE:
 				sb.append(UtilText.parse(character, target, "[npc.Name] "+applyColourWrapper("[npc.verb(like)]", affectionLevel, withColour)+" [npc2.name]."));
 				break;
 			case POSITIVE_THREE_CARING:
-				sb.append(UtilText.parse(character, target, "[npc.Name] "+applyColourWrapper("[npc.verb(care)]", affectionLevel, withColour)+" about [npc2.name]."));
+				sb.append(UtilText.parse(character, target, "[npc.Name] "+applyColourWrapper("[npc.verb(care)]", affectionLevel, withColour)+" насчет [npc2.name]."));
 				break;
 			case POSITIVE_FOUR_LOVE:
 				sb.append(UtilText.parse(character, target, "[npc.Name] "+applyColourWrapper("[npc.verb(love)]", affectionLevel, withColour)+" [npc2.name]."));
@@ -117,56 +117,56 @@ public enum AffectionLevel {
 		sb.append("<p style='text-align:center;'><i>");
 		switch(affectionLevel) {
 			case NEGATIVE_FIVE_LOATHE:
-				sb.append("[npc.Name] [npc.verb(make)] it very clear from [npc.her] behaviour that [npc.she] utterly "+applyColourWrapper("[npc.verb(loathe)] [npc2.name]", affectionLevel, withColour)+".");
+				sb.append("[npc.Name] [npc.verb(make)] из [npc.her] поведения совершенно ясно, что [npc.she] совершенно "+applyColourWrapper("[npc.verb(loathe)] [npc2.name]", affectionLevel, withColour)+".");
 				break;
 			case NEGATIVE_FOUR_HATE:
-				sb.append("[npc.Name] [npc.verb(make)] it very clear from [npc.her] behaviour that [npc.she] "+applyColourWrapper("[npc.verb(hate)] [npc2.name]", affectionLevel, withColour)+".");
+				sb.append("[npc.Name] [npc.verb(make)] из [npc.her] поведения совершенно ясно, что [npc.she] "+applyColourWrapper("[npc.verb(hate)] [npc2.name]", affectionLevel, withColour)+".");
 				break;
 			case NEGATIVE_THREE_STRONG_DISLIKE:
-				sb.append("It's obvious from [npc.her] attitude that [npc.name] "+applyColourWrapper("strongly [npc.verb(dislike)] [npc2.name]", affectionLevel, withColour)+".");
+				sb.append("По отношению к [npc.her] очевидно, что [npc.name] "+applyColourWrapper("сильно [npc.verb(dislike)] [npc2.name]", affectionLevel, withColour)+".");
 				break;
 			case NEGATIVE_TWO_DISLIKE:
-				sb.append("[npc.NameIsFull] quite clearly "+applyColourWrapper("[npc.verb(dislike)] [npc2.name]", affectionLevel, withColour)+".");
+				sb.append("[npc.NameIsFull] довольно отчетливо "+applyColourWrapper("[npc.verb(dislike)] [npc2.name]", affectionLevel, withColour)+".");
 				break;
 			case NEGATIVE_ONE_ANNOYED:
-				sb.append("[npc.NameIsFull] clearly "+applyColourWrapper("annoyed", affectionLevel, withColour)+" with [npc2.name].");
+				sb.append("[npc.NameIsFull] отчетливо "+applyColourWrapper("раздражен", affectionLevel, withColour)+" к [npc2.name].");
 				break;
 			case ZERO_NEUTRAL:
-				sb.append("[npc.NameIsFull] acting in an "+applyColourWrapper("indifferent", affectionLevel, withColour)+" manner towards [npc2.name].");
+				sb.append("[npc.NameIsFull] ведет себя "+applyColourWrapper("безразличен", affectionLevel, withColour)+" по отношению к [npc2.name].");
 				break;
 			case POSITIVE_ONE_FRIENDLY:
 				if(character.isAttractedTo(target)) {
-					sb.append("[npc.NameIsFull] acting in a "+applyColourWrapper("friendly, flirtatious", affectionLevel, withColour)+" manner towards [npc2.name].");
+					sb.append("[npc.NameIsFull] ведет себя "+applyColourWrapper("дружелюбно и кокетливо", affectionLevel, withColour)+" по отношению к [npc2.name].");
 				} else {
-					sb.append("[npc.NameIsFull] acting in a "+applyColourWrapper("friendly", affectionLevel, withColour)+" manner towards [npc2.name].");
+					sb.append("[npc.NameIsFull] ведет себя "+applyColourWrapper("дружелюбен", affectionLevel, withColour)+" по отношению к [npc2.name].");
 				}
 				break;
 			case POSITIVE_TWO_LIKE:
 				if(character.isAttractedTo(target)) {
-					sb.append("[npc.Name] quite clearly "+applyColourWrapper("[npc.verb(like)] [npc2.name]", affectionLevel, withColour)+", and [npc.verb(see)] [npc2.herHim] as more than just a friend.");
+					sb.append("[npc.Name] совершенно ясно "+applyColourWrapper("[npc.verb(like)] [npc2.name]", affectionLevel, withColour)+", и [npc.verb(see)] [npc2.herHim] не просто как друга.");
 				} else {
-					sb.append("[npc.Name] quite clearly "+applyColourWrapper("[npc.verb(like)] [npc2.name]", affectionLevel, withColour)+", and [npc.verb(see)] [npc2.herHim] as a close friend.");
+					sb.append("[npc.Name] совершенно ясно "+applyColourWrapper("[npc.verb(like)] [npc2.name]", affectionLevel, withColour)+", и [npc.verb(see)] [npc2.herHim] как близкого друга.");
 				}
 				break;
 			case POSITIVE_THREE_CARING:
 				if(character.isAttractedTo(target)) {
-					sb.append("[npc.Name] quite clearly "+applyColourWrapper("cares about [npc2.name] a lot", affectionLevel, withColour)+", and [npc.is] deeply attracted to [npc2.herHim].");
+					sb.append("[npc.Name] совершенно ясно "+applyColourWrapper("очень заботится о [npc2.name]", affectionLevel, withColour)+", и [npc.is] глубоко испытывает влечение к [npc2.herHim].");
 				} else {
-					sb.append("[npc.Name] quite clearly "+applyColourWrapper("cares about [npc2.name] a lot", affectionLevel, withColour)+", and [npc.verb(consider)] [npc2.herHim] to be [npc.her] best friend.");
+					sb.append("[npc.Name] совершенно ясно "+applyColourWrapper("очень заботится о [npc2.name]", affectionLevel, withColour)+", и [npc.verb(consider)] хочет, чтобы [npc2.herHim] был(а) [npc.her] лучшим другом.");
 				}
 				break;
 			case POSITIVE_FOUR_LOVE:
 				if(character.isAttractedTo(target)) {
-					sb.append("It's obvious from the way that [npc.name] [npc.verb(look)] at [npc2.name] that [npc.she] "+applyColourWrapper("[npc.verb(love)] [npc2.herHim]", affectionLevel, withColour)+".");
+					sb.append("По тому, как [npc.name] [npc.verb(look)] к [npc2.name], сразу видно, что [npc.she] "+applyColourWrapper("[npc.verb(love)] [npc2.herHim]", affectionLevel, withColour)+".");
 				} else {
-					sb.append("It's obvious from the way that [npc.name] [npc.verb(act)] that [npc.she] "+applyColourWrapper("[npc.verb(love)] [npc2.name]", affectionLevel, withColour)+" in a purely platonic manner.");
+					sb.append("По тому, как [npc.name] [npc.verb(act)], сразу видно, что [npc.she] "+applyColourWrapper("[npc.verb(love)] [npc2.name]", affectionLevel, withColour)+" в чисто платоническом смысле.");
 				}
 				break;
 			case POSITIVE_FIVE_WORSHIP:
 				if(character.isAttractedTo(target)) {
-					sb.append("[npc.Name] utterly "+applyColourWrapper("[npc.verb(adore)] [npc2.name]", affectionLevel, withColour)+", and [npc.is] head-over-heels in love with [npc2.herHim].");
+					sb.append("[npc.Name] совершенно "+applyColourWrapper("[npc.verb(adore)] [npc2.name]", affectionLevel, withColour)+", и [npc.is] без памяти влюблен(а) в [npc2.herHim].");
 				} else {
-					sb.append("[npc.Name] utterly "+applyColourWrapper("[npc.verb(adore)] [npc2.name]", affectionLevel, withColour)+", and would do almost anything [npc2.she] asked of [npc.herHim].");
+					sb.append("[npc.Name] совершенно "+applyColourWrapper("[npc.verb(adore)] [npc2.name]", affectionLevel, withColour)+", и была бы готова на всё, что попросит [npc.herHim] у [npc2.she].");
 				}
 				break;
 		}

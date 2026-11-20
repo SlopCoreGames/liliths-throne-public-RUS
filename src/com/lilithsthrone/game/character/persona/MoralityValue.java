@@ -7,13 +7,13 @@ package com.lilithsthrone.game.character.persona;
  */
 public enum MoralityValue {
 	
-	SURRENDER("Surrendering", "A stance on avoiding fighting to bitter end."),
+	SURRENDER("Уступчивость", "Склонность избегать сражений до самого конца."),
 	
-	VIOLENCE("Violence", "A stance on excessive violence."),
+	VIOLENCE("Жестокость", "Склонность к избыточному насилию."),
 	
-	DISHONESTY("Dishonesty", "A stance on lies, half-truths and various obscurities of information."),
+	DISHONESTY("Бесчестие", "Склонность к лжи, полуправде и намеренному сокрытию информации."),
 	
-	SLAVERY("Slavery", "A stance on ownership of slaves.");
+	SLAVERY("Рабство", "Отношение к владению рабами.");
 	
 	private String name;
 	private String description;

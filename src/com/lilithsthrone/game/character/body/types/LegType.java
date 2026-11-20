@@ -33,18 +33,17 @@ public class LegType {
 			Race.HUMAN,
 			FootStructure.PLANTIGRADE,
 			FootType.HUMANOID,
-			"a pair of",
-			"leg",
-			"legs",
-			Util.newArrayListOfValues("masculine"),
-			Util.newArrayListOfValues("feminine"),
+			"пара",
+			"нога",
+			"ноги",
+			Util.newArrayListOfValues("мужской"),
+			Util.newArrayListOfValues("женственная"),
 			Util.newArrayListOfValues(""),
 			Util.newArrayListOfValues(""),
 			Util.newArrayListOfValues(""),
 			Util.newArrayListOfValues(""),
-			"They rapidly shift into normal-looking human legs, complete with human feet.<br/>"
-				+ "[npc.She] now [npc.has] [style.boldHuman(human legs and feet)], which are [npc.materialDescriptor] [npc.legFullDescription].",
-			"[npc.Her] legs and feet are human, and are [npc.materialCompositionDescriptor] [npc.legFullDescription(true)].",
+			"Они стремительно превращаются в обычные человеческие ноги с человеческими ступнями.<br/>[npc.She] теперь [npc.has] [style.boldHuman(человеческие ноги и ступни)], которые [npc.materialDescriptor] [npc.legFullDescription].",
+			"[npc.Her] ноги и ступни человеческие и [npc.materialCompositionDescriptor] [npc.legFullDescription(true)].",
 			Util.newArrayListOfValues(
 					LegConfiguration.BIPEDAL), false) {
 	};
@@ -53,20 +52,17 @@ public class LegType {
 			Race.ANGEL,
 			FootStructure.PLANTIGRADE,
 			FootType.HUMANOID,
-			"a pair of",
-			"leg",
-			"legs",
-			Util.newArrayListOfValues("masculine", "radiant", "angelic"),
-			Util.newArrayListOfValues("feminine", "radiant", "angelic"),
-			Util.newArrayListOfValues("angelic"),
-			Util.newArrayListOfValues("angelic"),
-			Util.newArrayListOfValues("angelic"),
-			Util.newArrayListOfValues("angelic"),
-			"They quickly shift into a pair of smooth, slender legs, and [npc.she] [npc.verb(let)] out a gasp as a layer of flawless, angelic skin rapidly grows to cover them."
-				+ " As they finish transforming, [npc.she] almost [npc.verb(lose)] [npc.her] balance as the bones in [npc.her] feet start to shift and rearrange themselves."
-				+ " After a moment, they've transformed into slender, human-like feet, ending in soft, delicate toes.<br/>"
-				+ "[npc.Name] now [npc.has] [style.boldAngel(angelic legs and feet)], which are [npc.materialDescriptor] [npc.legFullDescription].",
-			"[npc.Her] legs and feet are human in shape, but are [npc.materialCompositionDescriptor] [npc.legFullDescription(true)].",
+			"пара",
+			"нога",
+			"ноги",
+			Util.newArrayListOfValues("мужской", "сияющие", "ангельский"),
+			Util.newArrayListOfValues("женственная", "сияющие", "ангельский"),
+			Util.newArrayListOfValues("ангельский"),
+			Util.newArrayListOfValues("ангельский"),
+			Util.newArrayListOfValues("ангельский"),
+			Util.newArrayListOfValues("ангельский"),
+			"Они быстро превращаются в пару гладких, стройных ног, и [npc.she] [npc.verb(let)] прерывисто вздыхают, пока слой безупречной ангельской кожи стремительно покрывает их. По завершении трансформации, [npc.she] почти [npc.verb(lose)] [npc.her] равновесие, так как кости в [npc.her] ступнях начинают смещаться и перестраиваться. Спустя мгновение они превращаются в стройные, похожие на человеческие ступни с мягкими, нежными пальцами.<br/>[npc.Name] теперь [npc.has] [style.boldAngel(ангельские ноги и ступни)], которые [npc.materialDescriptor] [npc.legFullDescription].",
+			"[npc.Her] ноги и ступни имеют человеческую форму, но они [npc.materialCompositionDescriptor] [npc.legFullDescription(true)].",
 			Util.newArrayListOfValues(
 					LegConfiguration.BIPEDAL), false) {
 	};
@@ -75,35 +71,27 @@ public class LegType {
 			Race.DEMON,
 			FootStructure.PLANTIGRADE,
 			FootType.HUMANOID,
-			"a pair of",
-			"leg",
-			"legs",
-			Util.newArrayListOfValues("masculine", "demonic"),
-			Util.newArrayListOfValues("feminine", "flawless", "demonic"),
-			Util.newArrayListOfValues("demonic"),
-			Util.newArrayListOfValues("demonic"),
-			Util.newArrayListOfValues("demonic"),
-			Util.newArrayListOfValues("demonic"),
+			"пара",
+			"нога",
+			"ноги",
+			Util.newArrayListOfValues("мужской", "демонический"),
+			Util.newArrayListOfValues("женственная", "безупречны", "демонический"),
+			Util.newArrayListOfValues("демонический"),
+			Util.newArrayListOfValues("демонический"),
+			Util.newArrayListOfValues("демонический"),
+			Util.newArrayListOfValues("демонический"),
 			"-",
-			"[npc.Her] legs and feet are human in shape, but are [npc.materialCompositionDescriptor] [npc.legFullDescription(true)].",
+			"[npc.Her] ноги и ступни имеют человеческую форму, но они [npc.materialCompositionDescriptor] [npc.legFullDescription(true)].",
 			Util.newArrayListOfValues(
 					LegConfiguration.BIPEDAL), false) {
 		@Override
 		public String getTransformationDescription(GameCharacter owner) {
 			if (!owner.isShortStature()) {
 				return UtilText.parse(owner,
-						" They quickly shift into a pair of smooth, slender legs, and [npc.she] [npc.verb(let)] out a gasp as a layer of flawless, demonic skin rapidly grows to cover them."
-						+ " As they finish transforming, [npc.she] almost [npc.verb(lose)] [npc.her] balance as the bones in [npc.her] feet start to shift and rearrange themselves."
-						+ " After a moment, they've transformed into slender human-like feet, ending in soft, delicate toes.<br/>"
-						+ "[npc.Name] now [npc.has] [style.boldDemon(demonic legs and feet)], which are [npc.materialDescriptor] [npc.legFullDescription]."
-					+ "</p>");
+						" Они быстро превращаются в пару гладких, стройных ног, и [npc.she] [npc.verb(let)] прерывистый вздох, когда слой безупречной демонической кожи стремительно покрывает их. По завершении трансформации [npc.she] почти [npc.verb(lose)] [npc.her] равновесие, пока кости в [npc.her] ступнях начинают смещаться и перестраиваться. Спустя мгновение они превращаются в стройные человекоподобные стопы с мягкими, нежными пальцами.<br/>[npc.Name] теперь [npc.has] [style.boldDemon(демонические ноги и ступни)], которые [npc.materialDescriptor] [npc.legFullDescription].</p>");
 			} else {
 				return UtilText.parse(owner,
-						" They quickly shift into a pair of smooth, slender legs, and [npc.she] [npc.verb(let)] out a gasp as a layer of flawless, impish skin rapidly grows to cover them."
-						+ " As they finish transforming, [npc.she] almost [npc.verb(lose)] [npc.her] balance as the bones in [npc.her] feet start to shift and rearrange themselves."
-						+ " After a moment, they've transformed into slender human-like feet, ending in soft, delicate toes.<br/>"
-						+ "[npc.Name] now [npc.has] [style.boldImp(impish legs and feet)], which are [npc.materialDescriptor] [npc.legFullDescription]."
-					+ "</p>");
+						" Они быстро превращаются в пару гладких, стройных ног, и [npc.she] [npc.verb(let)] прерывистый вздох, когда слой безупречной бесовской кожи стремительно покрывает их. По завершении трансформации [npc.she] почти [npc.verb(lose)] [npc.her] равновесие, пока кости в [npc.her] ступнях начинают смещаться и перестраиваться. Спустя мгновение они превращаются в стройные человекоподобные стопы с мягкими, нежными пальцами.<br/>[npc.Name] теперь [npc.has] [style.boldImp(бесовские ноги и ступни)], которые [npc.materialDescriptor] [npc.legFullDescription].</p>");
 			}
 		}
 	};
@@ -112,42 +100,32 @@ public class LegType {
 			Race.DEMON,
 			FootStructure.UNGULIGRADE,
 			FootType.HOOFS,
-			"a pair of",
-			"leg",
-			"legs",
-			Util.newArrayListOfValues("masculine", "demonic"),
-			Util.newArrayListOfValues("feminine", "flawless", "demonic"),
-			Util.newArrayListOfValues("demonic"),
-			Util.newArrayListOfValues("demonic"),
-			Util.newArrayListOfValues("demonic"),
-			Util.newArrayListOfValues("demonic"),
+			"пара",
+			"нога",
+			"ноги",
+			Util.newArrayListOfValues("мужской", "демонический"),
+			Util.newArrayListOfValues("женственная", "безупречны", "демонический"),
+			Util.newArrayListOfValues("демонический"),
+			Util.newArrayListOfValues("демонический"),
+			Util.newArrayListOfValues("демонический"),
+			Util.newArrayListOfValues("демонический"),
 			"-",
-			"[npc.Her] demonic legs are [npc.materialCompositionDescriptor] [npc.legFullDescription(true)], and [npc.her] feet are formed into hard hoofs.",
+			"[npc.Her] демонические ноги [npc.materialCompositionDescriptor] [npc.legFullDescription(true)], а [npc.her] ступни превращаются в твердые копыта.",
 			Util.newArrayListOfValues(
 					LegConfiguration.BIPEDAL), false) {
 		@Override
 		public String getTransformationDescription(GameCharacter owner) {
 			if (!owner.isShortStature()) {
 				return UtilText.parse(owner,
-							" They quickly shift into a pair of smooth, slender legs, and [npc.name] [npc.verb(let)] out a gasp as a layer of flawless, demonic skin rapidly grows to cover them."
-							+ " As [npc.her] new skin spreads down to the ends of [npc.her] toes, they suddenly push together, and [npc.she] [npc.verb(let)] out a cry as a thick, hoof-like nail grows in their place,"
-								+ " quickly transforming to turn [npc.her] feet into hard, demonic hoofs."
-							+ " As the transformation ends, [npc.she] [npc.verb(see)] that [npc.her] new skin smoothly transitions into the [npc.skin] covering the rest of [npc.her] body at [npc.her] upper-thigh.<br/>"
-							+ "[npc.NameIsFull] left with [style.boldDemon(demonic legs and hoofed feet)], which are [npc.materialDescriptor] [npc.legFullDescription]."
-						+ "</p>");
+							" Они быстро превращаются в пару гладких, стройных ног, и [npc.name] [npc.verb(let)] сдавленный вздох, когда слой безупречной демонической кожи стремительно разрастается, покрывая их. По мере того как [npc.her] новая кожа спускается до самых кончиков [npc.her] пальцев, они внезапно сжимаются, и [npc.she] [npc.verb(let)] крик, когда на их месте вырастает толстый, похожий на копыто коготь, быстро трансформируясь и превращая [npc.her] ступни в твердые демонические копыта. Когда трансформация завершается, [npc.she] [npc.verb(see)], что [npc.her] новая кожа плавно переходит в [npc.skin], покрывающую остальную часть [npc.her] тела на уровне [npc.her] бедер.<br/>[npc.NameIsFull] оставляя [style.boldDemon(демонические ноги и копыта)], которые [npc.materialDescriptor] [npc.legFullDescription].</p>");
 			} else {
 				return UtilText.parse(owner,
-						" They quickly shift into a pair of smooth, slender legs, and [npc.name] [npc.verb(let)] out a gasp as a layer of flawless, demonic skin rapidly grows to cover them."
-						+ " As [npc.her] new skin spreads down to the ends of [npc.her] toes, they suddenly push together, and [npc.she] [npc.verb(let)] out a cry as a thick, hoof-like nail grows in their place,"
-							+ " quickly transforming to turn [npc.her] feet into hard, demonic hoofs."
-						+ " As the transformation ends, [npc.she] [npc.verb(see)] that [npc.her] new skin smoothly transitions into the [npc.skin] covering the rest of [npc.her] body at [npc.her] upper-thigh.<br/>"
-						+ "[npc.NameIsFull] left with [style.boldImp(impish legs and hoofed feet)], which are [npc.materialDescriptor] [npc.legFullDescription]."
-					+ "</p>");
+						" Они быстро превращаются в пару гладких, стройных ног, и [npc.name] [npc.verb(let)] прерывистый вздох, когда слой безупречной демонической кожи стремительно разрастается, покрывая их. Когда [npc.her] новая кожа спускается до самых кончиков [npc.her] пальцев, они внезапно сжимаются, и [npc.she] [npc.verb(let)] вскрикивает, когда на их месте вырастает толстый, копытообразный коготь, быстро превращая [npc.her] ступни в твердые демонические копыта. Когда трансформация завершается, [npc.she] [npc.verb(see)], что [npc.her] новая кожа плавно переходит в [npc.skin], покрывающую остальную часть [npc.her] тела на уровне [npc.her] бедер.<br/>[npc.NameIsFull] остается с [style.boldImp(бесстыдными ножками и копытами)], которые [npc.materialDescriptor] [npc.legFullDescription].</p>");
 			}
 		}
 		@Override
 		public String getTransformName() {
-			return "demonic-hoofed";
+			return "демонические копыта";
 		}
 	};
 
@@ -155,35 +133,31 @@ public class LegType {
 			Race.DEMON,
 			FootStructure.UNGULIGRADE,
 			FootType.HOOFS,
-			"a pair of",
-			"leg",
-			"legs",
-			Util.newArrayListOfValues("masculine", "hair-coated", "demonic-horse"),
-			Util.newArrayListOfValues("feminine", "hair-coated", "demonic-horse"),
-			Util.newArrayListOfValues("demonic"),
-			Util.newArrayListOfValues("demonic"),
-			Util.newArrayListOfValues("demonic"),
-			Util.newArrayListOfValues("demonic"),
+			"пара",
+			"нога",
+			"ноги",
+			Util.newArrayListOfValues("мужской", "поросший волосами", "демоническо-лошадиные"),
+			Util.newArrayListOfValues("женственная", "поросший волосами", "демоническо-лошадиные"),
+			Util.newArrayListOfValues("демонический"),
+			Util.newArrayListOfValues("демонический"),
+			Util.newArrayListOfValues("демонический"),
+			Util.newArrayListOfValues("демонический"),
 			"-",
-			"[npc.Her] demonic, horse-like legs are [npc.materialCompositionDescriptor] [npc.legFullDescription(true)], and [npc.her] feet are formed into hard hoofs.",
+			"[npc.Her] демонические, лошадиные ноги [npc.materialCompositionDescriptor] [npc.legFullDescription(true)], а [npc.her] ступни превращены в твердые копыта.",
 			Util.newArrayListOfValues(
 					LegConfiguration.BIPEDAL,
 					LegConfiguration.QUADRUPEDAL), false) {
 		@Override
 		public String getTransformationDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"A layer of short, horse-like hair quickly grows over [npc.her] demonic legs as they shift into a new form."
-					+ " As this hair spreads down to the ends of [npc.her] toes, they suddenly push together, and [npc.she] [npc.verb(let)] out a cry as a thick, hoof-like nail grows in their place,"
-						+ " before quickly transforming to turn [npc.her] feet into hard, demonic hoofs."
-					+ " As the transformation ends, [npc.she] [npc.verb(see)] that [npc.her] new hair smoothly transitions into the [npc.skin] covering the rest of [npc.her] body at [npc.her] upper-thigh."
-					+ "<br/>[npc.Name] now [npc.has]"
+					"Слой короткой, похожей на конскую шерсть, быстро прорастает на [npc.her] демонических ногах, когда те принимают новую форму. По мере того как эта шерсть распространяется до самых кончиков [npc.her] пальцев, они внезапно сжимаются, и [npc.she] [npc.verb(let)] крик, когда на их месте вырастает толстый, похожий на копыто коготь, который быстро трансформируется, превращая [npc.her] ступни в твердые демонические копыта. Когда трансформация завершается, [npc.she] [npc.verb(see)], что [npc.her] новая шерсть плавно переходит в [npc.skin], покрывающую остальную часть [npc.her] тела на уровне [npc.her] бедер.<br/>[npc.Name] теперь [npc.has]"
 						+ (!owner.isShortStature()
-							?" [style.boldDemon(animalistic, demonic legs with hoofed feet)], which are [npc.materialDescriptor] [npc.legFullDescription]."
-							:"[style.boldImp(animalistic, impish legs with hoofed feet)], which are [npc.materialDescriptor] [npc.legFullDescription]."));
+							?" [style.boldDemon(животные, демонические ноги с копытами)], которые являются [npc.materialDescriptor] [npc.legFullDescription]."
+							:"[style.boldImp(животные, бесовские ноги с копытами)], которые являются [npc.materialDescriptor] [npc.legFullDescription]."));
 		}
 		@Override
 		public String getTransformName() {
-			return "demonic-horse";
+			return "демоническо-лошадиные";
 		}
 	};
 
@@ -191,17 +165,17 @@ public class LegType {
 			Race.DEMON,
 			FootStructure.NONE,
 			FootType.NONE,
-			"a",
-			"tail",
-			"tails",
-			Util.newArrayListOfValues("masculine", "scaly", "demonic-snake"),
-			Util.newArrayListOfValues("feminine", "scaly", "demonic-snake"),
-			Util.newArrayListOfValues("demonic"),
-			Util.newArrayListOfValues("demonic"),
-			Util.newArrayListOfValues("demonic"),
-			Util.newArrayListOfValues("demonic"),
+			"",
+			"хвост",
+			"хвосты",
+			Util.newArrayListOfValues("мужской", "чешуйчатая", "демоническо-змеиные"),
+			Util.newArrayListOfValues("женственная", "чешуйчатая", "демоническо-змеиные"),
+			Util.newArrayListOfValues("демонический"),
+			Util.newArrayListOfValues("демонический"),
+			Util.newArrayListOfValues("демонический"),
+			Util.newArrayListOfValues("демонический"),
 			"-",
-			"[npc.Her] demonic, snake-like lower body is [npc.materialCompositionDescriptor] [npc.legFullDescription(true)].",
+			"[npc.Her] демоническое, змееподобное нижнее тело является [npc.materialCompositionDescriptor] [npc.legFullDescription(true)].",
 			Util.newArrayListOfValues(
 					LegConfiguration.TAIL_LONG),
 			false) {
@@ -212,16 +186,14 @@ public class LegType {
 		@Override
 		public String getTransformationDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"A layer of smooth scales quickly grow over [npc.her] demonic legs as they take on a snake-like appearance."
-					+ " Quickly coming to an end, the transformation leaves [npc.name] with [npc.her] new scales smoothly transitioning into the [npc.skin] covering the rest of [npc.her] body at [npc.her] upper-thigh."
-					+ "<br/>[npc.Name] now [npc.has]"
+					"Слой гладкой чешуи быстро прорастает на [npc.her] демонических ногах, когда они принимают змееподобный вид. Трансформация быстро завершается, оставляя [npc.name] с [npc.her] новой чешуей, которая плавно переходит в [npc.skin], покрывающую остальную часть [npc.her] тела на уровне [npc.her] бедер.<br/>[npc.Name] теперь [npc.has]"
 						+ (!owner.isShortStature()
-							?" [style.boldDemon(demonic, snake-like legs)], which are [npc.materialDescriptor] [npc.legFullDescription]."
-							:"[style.boldImp(impish, snake-like legs)], which are [npc.materialDescriptor] [npc.legFullDescription]."));
+							?" [style.boldDemon(демонические, змееподобные ноги)], которые являются [npc.materialDescriptor] [npc.legFullDescription]."
+							:"[style.boldImp(бесовские, змееподобные ноги)], которые [npc.materialDescriptor] [npc.legFullDescription]."));
 		}
 		@Override
 		public String getTransformName() {
-			return "demonic-snake";
+			return "демоническо-змеиные";
 		}
 		@Override
 		public boolean isAvailableForSelfTransformMenu(GameCharacter gc) {
@@ -233,33 +205,31 @@ public class LegType {
 			Race.DEMON,
 			FootStructure.DIGITIGRADE,
 			FootType.ARACHNID,
-			"a",
-			"leg",
-			"legs",
-			Util.newArrayListOfValues("masculine", "arachnid", "demonic-spider"),
-			Util.newArrayListOfValues("feminine", "arachnid", "demonic-spider"),
-			Util.newArrayListOfValues("demonic"),
-			Util.newArrayListOfValues("demonic"),
-			Util.newArrayListOfValues("demonic"),
-			Util.newArrayListOfValues("demonic"),
+			"",
+			"нога",
+			"ноги",
+			Util.newArrayListOfValues("мужской", "паукообразные", "демонический-паук"),
+			Util.newArrayListOfValues("женственная", "паукообразные", "демонический-паук"),
+			Util.newArrayListOfValues("демонический"),
+			Util.newArrayListOfValues("демонический"),
+			Util.newArrayListOfValues("демонический"),
+			Util.newArrayListOfValues("демонический"),
 			"-",
-			"[npc.Her] demonic, spider-like lower body is [npc.materialCompositionDescriptor] [npc.legFullDescription(true)].",
+			"[npc.Her] демоническое, паукообразное нижнее тело [npc.materialCompositionDescriptor] [npc.legFullDescription(true)].",
 			Util.newArrayListOfValues(
 					LegConfiguration.ARACHNID),
 			true) {
 		@Override
 		public String getTransformationDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"A layer of smooth chitin quickly grows over [npc.her] demonic [npc.legs] as they take on a spider-like appearance."
-					+ " Quickly coming to an end, the transformation leaves [npc.name] with [npc.her] new chitin smoothly transitioning into the [npc.skin] covering the rest of [npc.her] body at [npc.her] upper-thigh."
-					+ "<br/>[npc.Name] now [npc.has]"
+					"Слой гладкого хитина быстро покрывает [npc.her] демонические [npc.legs], когда они приобретают вид паучьих ног. Трансформация быстро завершается, оставляя [npc.name] с [npc.her] новыми хитиновыми покровами, плавно переходящими в [npc.skin], покрывающий остальную часть [npc.her] тела на уровне [npc.her] бедер.<br/>[npc.Name] теперь [npc.has]"
 						+ (!owner.isShortStature()
-							?" [style.boldDemon(demonic, spider-like legs)], which are [npc.materialDescriptor] [npc.legFullDescription]."
-							:"[style.boldImp(impish, spider-like legs)], which are [npc.materialDescriptor] [npc.legFullDescription]."));
+							?" [style.boldDemon(демонические, паукообразные ноги)], которые [npc.materialDescriptor] [npc.legFullDescription]."
+							:"[style.boldImp(бесовские, паукообразные ноги)], которые [npc.materialDescriptor] [npc.legFullDescription]."));
 		}
 		@Override
 		public String getTransformName() {
-			return "demonic-spider";
+			return "демонический-паук";
 		}
 		@Override
 		public boolean isAvailableForSelfTransformMenu(GameCharacter gc) {
@@ -271,33 +241,31 @@ public class LegType {
 			Race.DEMON,
 			FootStructure.TENTACLED,
 			FootType.TENTACLE,
-			"a",
-			"tentacle",
-			"tentacles",
-			Util.newArrayListOfValues("masculine", "cephalopod", "demonic-octopus"),
-			Util.newArrayListOfValues("feminine", "cephalopod", "demonic-octopus"),
-			Util.newArrayListOfValues("demonic"),
-			Util.newArrayListOfValues("demonic"),
-			Util.newArrayListOfValues("demonic"),
-			Util.newArrayListOfValues("demonic"),
+			"",
+			"щупальце",
+			"щупальца",
+			Util.newArrayListOfValues("мужской", "головоногий", "демонический-осьминог"),
+			Util.newArrayListOfValues("женственная", "головоногий", "демонический-осьминог"),
+			Util.newArrayListOfValues("демонический"),
+			Util.newArrayListOfValues("демонический"),
+			Util.newArrayListOfValues("демонический"),
+			Util.newArrayListOfValues("демонический"),
 			"-",
-			"[npc.Her] demonic, octopus-like lower body is [npc.materialCompositionDescriptor] [npc.legFullDescription(true)].",
+			"[npc.Her] демоническое, похожее на осьминога нижнее тело [npc.materialCompositionDescriptor] [npc.legFullDescription(true)].",
 			Util.newArrayListOfValues(
 					LegConfiguration.CEPHALOPOD),
 			false) {
 		@Override
 		public String getTransformationDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"A layer of smooth skin quickly grows over [npc.her] demonic [npc.legs] as they alarmingly take on a tentacle-like appearance."
-					+ " Quickly coming to an end, the powerful transformation leaves [npc.name] with [npc.her] new skin smoothly transitioning into the [npc.skin] covering the rest of [npc.her] body at [npc.her] upper-thigh."
-					+ "<br/>[npc.Name] now [npc.has]"
+					"Слой гладкой кожи быстро покрывает [npc.her] демонические [npc.legs], когда они пугающим образом превращаются в щупальца. Эта стремительная трансформация завершается тем, что [npc.name] получает [npc.her] новую кожу, плавно переходящую в [npc.skin], покрывающую остальную часть [npc.her] тела на уровне [npc.her] бедра.<br/>[npc.Name] теперь [npc.has]"
 						+ (!owner.isShortStature()
-							?" [style.boldDemon(demonic, octopus-like legs)], which are [npc.materialDescriptor] [npc.legFullDescription]."
-							:"[style.boldImp(impish, octopus-like legs)], which are [npc.materialDescriptor] [npc.legFullDescription]."));
+							?" [style.boldDemon(демонические, осьминожьи ноги)], которые [npc.materialDescriptor] [npc.legFullDescription]."
+							:"[style.boldImp(бесовские, осьминожьи ноги)], которые [npc.materialDescriptor] [npc.legFullDescription]."));
 		}
 		@Override
 		public String getTransformName() {
-			return "demonic-octopus";
+			return "демонический-осьминог";
 		}
 		@Override
 		public AbstractTentacleType getTentacleType() {
@@ -316,17 +284,17 @@ public class LegType {
 			Race.DEMON,
 			FootStructure.NONE,
 			FootType.NONE,
-			"a",
-			"tail",
-			"tails",
-			Util.newArrayListOfValues("masculine", "scaly", "demonic-fish"),
-			Util.newArrayListOfValues("feminine", "scaly", "demonic-fish"),
-			Util.newArrayListOfValues("demonic"),
-			Util.newArrayListOfValues("demonic"),
-			Util.newArrayListOfValues("demonic"),
-			Util.newArrayListOfValues("demonic"),
+			"",
+			"хвост",
+			"хвосты",
+			Util.newArrayListOfValues("мужской", "чешуйчатая", "демоническо-рыбий"),
+			Util.newArrayListOfValues("женственная", "чешуйчатая", "демоническо-рыбий"),
+			Util.newArrayListOfValues("демонический"),
+			Util.newArrayListOfValues("демонический"),
+			Util.newArrayListOfValues("демонический"),
+			Util.newArrayListOfValues("демонический"),
 			"-",
-			"[npc.Her] demonic, fish-like lower body is [npc.materialCompositionDescriptor] [npc.legFullDescription(true)].",
+			"[npc.Her] демоническое, похожее на рыбу нижнее тело [npc.materialCompositionDescriptor] [npc.legFullDescription(true)].",
 			Util.newArrayListOfValues(
 					LegConfiguration.TAIL),
 			false) {
@@ -337,32 +305,30 @@ public class LegType {
 		@Override
 		public String getNameSingular(GameCharacter gc) {
 			if(gc.hasStatusEffect(StatusEffect.AQUATIC_NEGATIVE)) {
-				return "leg";
+				return "нога";
 			} else {
-				return "tail";
+				return "хвост";
 			}
 		}
 		@Override
 		public String getNamePlural(GameCharacter gc) {
 			if(gc.hasStatusEffect(StatusEffect.AQUATIC_NEGATIVE)) {
-				return "legs";
+				return "ноги";
 			} else {
-				return "tails";
+				return "хвосты";
 			}
 		}
 		@Override
 		public String getTransformationDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"A layer of smooth scales quickly grow over [npc.her] demonic legs as they take on a fish-like appearance."
-					+ " Quickly coming to an end, the transformation leaves [npc.name] with [npc.her] new scales smoothly transitioning into the [npc.skin] covering the rest of [npc.her] body at [npc.her] upper-thigh."
-					+ "<br/>[npc.Name] now [npc.has]"
+					"Слой гладкой чешуи быстро покрывает [npc.her] демонические ноги, когда они приобретают рыбье подобие. Эта стремительная трансформация завершается тем, что [npc.name] получает [npc.her] новую чешую, плавно переходящую в [npc.skin], покрывающую остальную часть [npc.her] тела на уровне [npc.her] бедра.<br/>[npc.Name] теперь [npc.has]"
 						+ (!owner.isShortStature()
-							?" [style.boldDemon(demonic, fish-like legs)], which are [npc.materialDescriptor] [npc.legFullDescription]."
-							:"[style.boldImp(impish, fish-like legs)], which are [npc.materialDescriptor] [npc.legFullDescription]."));
+							?" [style.boldDemon(демонические, рыбьи ноги)], которые [npc.materialDescriptor] [npc.legFullDescription]."
+							:"[style.boldImp(бесовские, рыбьи ноги)], которые [npc.materialDescriptor] [npc.legFullDescription]."));
 		}
 		@Override
 		public String getTransformName() {
-			return "demonic-fish";
+			return "демоническо-рыбий";
 		}
 		@Override
 		public boolean isAvailableForSelfTransformMenu(GameCharacter gc) {
@@ -374,33 +340,31 @@ public class LegType {
 			Race.DEMON,
 			FootStructure.DIGITIGRADE,
 			FootType.TALONS,
-			"a",
-			"leg",
-			"legs",
-			Util.newArrayListOfValues("masculine", "clawed", "anthropomorphic, bird-like"),
-			Util.newArrayListOfValues("feminine", "clawed", "anthropomorphic, bird-like"),
-			Util.newArrayListOfValues("demonic"),
-			Util.newArrayListOfValues("demonic"),
-			Util.newArrayListOfValues("demonic"),
-			Util.newArrayListOfValues("demonic"),
+			"",
+			"нога",
+			"ноги",
+			Util.newArrayListOfValues("мужской", "когтистые", "антропоморфные, птичьи"),
+			Util.newArrayListOfValues("женственная", "когтистые", "антропоморфные, птичьи"),
+			Util.newArrayListOfValues("демонический"),
+			Util.newArrayListOfValues("демонический"),
+			Util.newArrayListOfValues("демонический"),
+			Util.newArrayListOfValues("демонический"),
 			"-",
-			"[npc.Her] demonic, bird-like lower body is [npc.materialCompositionDescriptor] [npc.legFullDescription(true)].",
+			"[npc.Her] демоническое, птичье нижнее тело [npc.materialCompositionDescriptor] [npc.legFullDescription(true)].",
 			Util.newArrayListOfValues(
 					LegConfiguration.AVIAN),
 			false) {
 		@Override
 		public String getTransformationDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"A layer of feathers quickly grows over [npc.her] demonic [npc.legs] as they take on a bird-like appearance."
-					+ " Quickly coming to an end, the transformation leaves [npc.name] with [npc.her] new feathers smoothly transitioning into the [npc.skin] covering the rest of [npc.her] body at [npc.her] upper-thigh."
-					+ "<br/>[npc.Name] now [npc.has]"
+					"Слой перьев быстро покрывает [npc.her] демонический [npc.legs], когда они принимают птичий облик. Трансформация завершается быстро, оставляя [npc.name] с [npc.her] новыми перьями, плавно переходящими в [npc.skin], покрывающие остальную часть [npc.her] тела на уровне [npc.her] бедра.<br/>[npc.Name] теперь [npc.has]"
 						+ (!owner.isShortStature()
-							?" [style.boldDemon(demonic, bird-like legs)], which are [npc.materialDescriptor] [npc.legFullDescription]."
-							:"[style.boldImp(impish, bird-like legs)], which are [npc.materialDescriptor] [npc.legFullDescription]."));
+							?" [style.boldDemon(демонические, птичьи ноги)], которые [npc.materialDescriptor] [npc.legFullDescription]."
+							:"[style.boldImp(бесовские, птичьи ноги)], которые [npc.materialDescriptor] [npc.legFullDescription]."));
 		}
 		@Override
 		public String getTransformName() {
-			return "demonic-eagle";
+			return "демоническо-орлиные";
 		}
 		@Override
 		public boolean isAvailableForSelfTransformMenu(GameCharacter gc) {
@@ -412,21 +376,17 @@ public class LegType {
 			Race.COW_MORPH,
 			FootStructure.UNGULIGRADE,
 			FootType.HOOFS,
-			"a pair of",
-			"leg",
-			"legs",
-			Util.newArrayListOfValues("masculine", "hoofed", "furry", "fur-coated", "anthropomorphic, cow-like"),
-			Util.newArrayListOfValues("feminine", "hoofed", "furry", "fur-coated", "anthropomorphic, cow-like"),
-			Util.newArrayListOfValues("cow-like", "bovine"),
-			Util.newArrayListOfValues("cow-like", "bovine"),
-			Util.newArrayListOfValues("cow-like", "bovine"),
-			Util.newArrayListOfValues("cow-like", "bovine"),
-			"A layer of short, cow-like hair quickly grows over [npc.her] legs as they shift into a new form."
-				+ " As [npc.her] new fur spreads down to the ends of [npc.her] toes, they suddenly push together, and [npc.she] [npc.verb(let)] out a cry as a thick, hoof-like nail grows in their place,"
-					+ " before quickly transforming to turn [npc.her] feet into cow-like hoofs."
-				+ " As the transformation ends, [npc.she] [npc.verb(see)] that [npc.her] new fur smoothly transitions into the [npc.skin] covering the rest of [npc.her] body at [npc.her] upper-thigh.<br/>"
-				+ "[npc.Name] now [npc.has] anthropomorphic, [style.boldCowMorph(cow-like legs and hoofed feet)], which are [npc.materialDescriptor] [npc.legFullDescription].",
-			"[npc.Her] legs are [npc.materialCompositionDescriptor] [npc.legFullDescription(true)], and [npc.her] feet are formed into anthropomorphic cow-like hoofs.",
+			"пара",
+			"нога",
+			"ноги",
+			Util.newArrayListOfValues("мужской", "копытные", "пушистая", "покрытая мехом", "антропоморфные, коровьи"),
+			Util.newArrayListOfValues("женственная", "копытные", "пушистая", "покрытая мехом", "антропоморфные, коровьи"),
+			Util.newArrayListOfValues("коровьей формы", "бычий"),
+			Util.newArrayListOfValues("коровьей формы", "бычий"),
+			Util.newArrayListOfValues("коровьей формы", "бычий"),
+			Util.newArrayListOfValues("коровьей формы", "бычий"),
+			"Слой короткой коровьей шерсти быстро прорастает на [npc.her] ногах, пока те принимают новую форму. Когда [npc.her] новый мех спускается до самых кончиков [npc.her] пальцев, они внезапно сжимаются, и [npc.she] [npc.verb(let)] крик, когда на их месте вырастает толстый, похожий на копыто коготь, прежде чем быстро трансформироваться и превратить [npc.her] ступни в коровьи копыта. Когда трансформация завершается, [npc.she] [npc.verb(see)], что [npc.her] новый мех плавно переходит в [npc.skin], покрывающий остальную часть [npc.her] тела на уровне [npc.her] бедер.<br/>[npc.Name] теперь [npc.has] антропоморфные, [style.boldCowMorph(коровьи ноги и копыта)], которые являются [npc.materialDescriptor] [npc.legFullDescription].",
+			"[npc.Her] ноги являются [npc.materialCompositionDescriptor] [npc.legFullDescription(true)], а [npc.her] ступни превращены в антропоморфные коровьи копыта.",
 			Util.newArrayListOfValues(
 					LegConfiguration.BIPEDAL,
 					LegConfiguration.QUADRUPEDAL), false) {
@@ -436,20 +396,17 @@ public class LegType {
 			Race.DOG_MORPH,
 			FootStructure.DIGITIGRADE,
 			FootType.PAWS,
-			"a pair of",
-			"leg",
-			"legs",
-			Util.newArrayListOfValues("masculine", "furry", "fur-coated", "anthropomorphic, dog-like"),
-			Util.newArrayListOfValues("feminine", "furry", "fur-coated", "anthropomorphic, dog-like"),
-			Util.newArrayListOfValues("dog-like", "canine"),
-			Util.newArrayListOfValues("dog-like", "canine"),
-			Util.newArrayListOfValues("dog-like", "canine"),
-			Util.newArrayListOfValues("dog-like", "canine"),
-			"A layer of dog-like fur quickly grows over [npc.her] legs as they shift into a new form."
-				+ " As [npc.her] new fur spreads down to the ends of [npc.her] toes, [npc.her] toenails thicken into little blunt claws, and leathery pads grow to cover [npc.her] soles, leaving [npc.herHim] with paw-like feet."
-				+ " As the transformation ends, [npc.she] [npc.verb(see)] that [npc.her] new fur smoothly transitions into the [npc.skin] covering the rest of [npc.her] body at [npc.her] upper-thigh.<br/>"
-				+ "[npc.Name] now [npc.has] anthropomorphic, [style.boldDogMorph(dog-like legs and feet)], which are [npc.materialDescriptor] [npc.legFullDescription].",
-			"[npc.Her] legs are [npc.materialCompositionDescriptor] [npc.legFullDescription(true)], and [npc.her] feet are formed into anthropomorphic dog-like paws, complete with little blunt claws and leathery pads.",
+			"пара",
+			"нога",
+			"ноги",
+			Util.newArrayListOfValues("мужской", "пушистая", "покрытая мехом", "антропоморфные, собачьи"),
+			Util.newArrayListOfValues("женственная", "пушистая", "покрытая мехом", "антропоморфные, собачьи"),
+			Util.newArrayListOfValues("собачьи", "пёсьи"),
+			Util.newArrayListOfValues("собачьи", "пёсьи"),
+			Util.newArrayListOfValues("собачьи", "пёсьи"),
+			Util.newArrayListOfValues("собачьи", "пёсьи"),
+			"Слой собачьего меха быстро прорастает на [npc.her] ногах, когда те принимают новую форму. По мере того как [npc.her] новый мех спускается до самых кончиков [npc.her] пальцев, [npc.her] ногти утолщаются, превращаясь в маленькие тупые когти, а кожаные подушечки покрывают [npc.her] подошвы, оставляя [npc.herHim] с лапами вместо ступней. Когда трансформация завершается, [npc.she] [npc.verb(see)], что [npc.her] новый мех плавно переходит в [npc.skin], покрывающий остальную часть [npc.her] тела на уровне [npc.her] верхней части бедра.<br/>[npc.Name] теперь [npc.has] антропоморфные, [style.boldDogMorph(собачьи ноги и лапы)], которые являются [npc.materialDescriptor] [npc.legFullDescription].",
+			"Ноги [npc.Her] являются [npc.materialCompositionDescriptor] [npc.legFullDescription(true)], а ступни [npc.her] превращаются в антропоморфные собачьи лапы с маленькими тупыми когтями и кожаными подушечками.",
 			Util.newArrayListOfValues(
 					LegConfiguration.BIPEDAL,
 					LegConfiguration.QUADRUPEDAL), false) {
@@ -459,20 +416,17 @@ public class LegType {
 			Race.WOLF_MORPH,
 			FootStructure.DIGITIGRADE,
 			FootType.PAWS,
-			"a pair of",
-			"leg",
-			"legs",
-			Util.newArrayListOfValues("masculine", "furry", "fur-coated", "anthropomorphic, wolf-like"),
-			Util.newArrayListOfValues("feminine", "furry", "fur-coated", "anthropomorphic, wolf-like"),
-			Util.newArrayListOfValues("wolf-like", "lupine"),
-			Util.newArrayListOfValues("wolf-like", "lupine"),
-			Util.newArrayListOfValues("wolf-like", "lupine"),
-			Util.newArrayListOfValues("wolf-like", "lupine"),
-			"A layer of wolf-like fur quickly grows over [npc.her] legs as they shift into a new form."
-				+ " As [npc.her] new fur spreads down to the ends of [npc.her] toes, [npc.her] toenails thicken into sharp claws, and tough leathery pads grow to cover [npc.her] soles, leaving [npc.herHim] with paw-like feet."
-				+ " As the transformation ends, [npc.she] [npc.verb(see)] that [npc.her] new fur smoothly transitions into the [npc.skin] covering the rest of [npc.her] body at [npc.her] upper-thigh.<br/>"
-				+ "[npc.Name] now [npc.has] anthropomorphic, [style.boldWolfMorph(wolf-like legs and feet)], which are [npc.materialDescriptor] [npc.legFullDescription].",
-			"[npc.Her] legs are [npc.materialCompositionDescriptor] [npc.legFullDescription(true)], and [npc.her] feet are formed into anthropomorphic wolf-like paws, complete with sharp claws and tough leathery pads.",
+			"пара",
+			"нога",
+			"ноги",
+			Util.newArrayListOfValues("мужской", "пушистая", "покрытая мехом", "антропоморфные, волчьи"),
+			Util.newArrayListOfValues("женственная", "пушистая", "покрытая мехом", "антропоморфные, волчьи"),
+			Util.newArrayListOfValues("волчьими", "волчий"),
+			Util.newArrayListOfValues("волчьими", "волчий"),
+			Util.newArrayListOfValues("волчьими", "волчий"),
+			Util.newArrayListOfValues("волчьими", "волчий"),
+			"Слой волчьего меха быстро покрывает [npc.her] ноги, когда те принимают новую форму. По мере того как [npc.her] новый мех спускается до самых кончиков [npc.her] пальцев, [npc.her] ногти утолщаются, превращаясь в острые когти, а подошвы [npc.her] покрываются грубыми кожаными подушечками, оставляя [npc.herHim] с лапами вместо ступней. Когда трансформация завершается, [npc.she] [npc.verb(see)], что [npc.her] новый мех плавно переходит в [npc.skin], покрывающий остальную часть [npc.her] тела до [npc.her] верхней части бедер.<br/>[npc.Name] теперь [npc.has] антропоморфные, [style.boldWolfMorph(волчьи ноги и лапы)], которые являются [npc.materialDescriptor] [npc.legFullDescription].",
+			"[npc.Her] ноги — это [npc.materialCompositionDescriptor] [npc.legFullDescription(true)], а [npc.her] ступни превращаются в антропоморфные волчьи лапы с острыми когтями и грубыми кожаными подушечками.",
 			Util.newArrayListOfValues(
 					LegConfiguration.BIPEDAL,
 					LegConfiguration.QUADRUPEDAL), false) {
@@ -482,20 +436,17 @@ public class LegType {
 			Race.FOX_MORPH,
 			FootStructure.DIGITIGRADE,
 			FootType.PAWS,
-			"a pair of",
-			"leg",
-			"legs",
-			Util.newArrayListOfValues("masculine", "furry", "fur-coated", "anthropomorphic, fox-like"),
-			Util.newArrayListOfValues("feminine", "furry", "fur-coated", "anthropomorphic, fox-like"),
-			Util.newArrayListOfValues("fox-like", "vulpine"),
-			Util.newArrayListOfValues("fox-like", "vulpine"),
-			Util.newArrayListOfValues("fox-like", "vulpine"),
-			Util.newArrayListOfValues("fox-like", "vulpine"),
-			"A layer of fox-like fur quickly grows over [npc.her] legs as they shift into a new form."
-				+ " As [npc.her] new fur spreads down to the ends of [npc.her] toes, [npc.her] toenails thicken into sharp claws, and little pads grow to cover [npc.her] soles, leaving [npc.herHim] with paw-like feet."
-				+ " As the transformation ends, [npc.she] [npc.verb(see)] that [npc.her] new fur smoothly transitions into the [npc.skin] covering the rest of [npc.her] body at [npc.her] upper-thigh.</br>"
-				+ "[npc.Name] now [npc.has] anthropomorphic, [style.boldFoxMorph(fox-like legs and feet)], which are [npc.materialDescriptor] [npc.legFullDescription].",
-			"[npc.Her] legs are [npc.materialCompositionDescriptor] [npc.legFullDescription(true)], and [npc.her] feet are formed into anthropomorphic fox-like paws, complete with sharp claws and tough leathery pads.",
+			"пара",
+			"нога",
+			"ноги",
+			Util.newArrayListOfValues("мужской", "пушистая", "покрытая мехом", "антропоморфные, лисьи"),
+			Util.newArrayListOfValues("женственная", "пушистая", "покрытая мехом", "антропоморфные, лисьи"),
+			Util.newArrayListOfValues("лисоподобные", "лисьи"),
+			Util.newArrayListOfValues("лисоподобные", "лисьи"),
+			Util.newArrayListOfValues("лисоподобные", "лисьи"),
+			Util.newArrayListOfValues("лисоподобные", "лисьи"),
+			"Слой лисьего меха быстро покрывает [npc.her] ноги, когда те принимают новую форму. По мере того как [npc.her] новый мех спускается до самых кончиков [npc.her] пальцев, [npc.her] ногти утолщаются, превращаясь в острые когти, а подошвы [npc.her] покрываются маленькими подушечками, оставляя [npc.herHim] с лапами вместо ступней. Когда трансформация завершается, [npc.she] [npc.verb(see)], что [npc.her] новый мех плавно переходит в [npc.skin], покрывающий остальную часть [npc.her] тела на уровне [npc.her] бедер.</br>[npc.Name] теперь [npc.has] антропоморфные, [style.boldFoxMorph(лисьи ноги и ступни)], которые являются [npc.materialDescriptor] [npc.legFullDescription].",
+			"[npc.Her] ноги — это [npc.materialCompositionDescriptor] [npc.legFullDescription(true)], а [npc.her] ступни превращаются в антропоморфные лисьи лапы с острыми когтями и грубыми кожаными подушечками.",
 			Util.newArrayListOfValues(
 					LegConfiguration.BIPEDAL,
 					LegConfiguration.QUADRUPEDAL), false) {
@@ -505,20 +456,17 @@ public class LegType {
 			Race.SQUIRREL_MORPH,
 			FootStructure.PLANTIGRADE,
 			FootType.PAWS,
-			"a pair of",
-			"leg",
-			"legs",
-			Util.newArrayListOfValues("masculine", "furry", "fur-coated", "anthropomorphic, squirrel-like"),
-			Util.newArrayListOfValues("feminine", "furry", "fur-coated", "anthropomorphic, squirrel-like"),
-			Util.newArrayListOfValues("squirrel-like"),
-			Util.newArrayListOfValues("squirrel-like"),
-			Util.newArrayListOfValues("squirrel-like"),
-			Util.newArrayListOfValues("squirrel-like"),
-			"A layer of squirrel-like fur quickly grows over [npc.her] legs as they shift into a new form."
-				+ " As [npc.her] new fur spreads down to the ends of [npc.her] toes, [npc.her] toenails thicken into sharp claws, and little pink pads grow to cover [npc.her] soles, leaving [npc.herHim] with paw-like feet."
-				+ " As the transformation ends, [npc.she] [npc.verb(see)] that [npc.her] new fur smoothly transitions into the [npc.skin] covering the rest of [npc.her] body at [npc.her] upper-thigh.<br/>"
-				+ "[npc.Name] now [npc.has] anthropomorphic, [style.boldSquirrelMorph(squirrel-like legs and feet)], which are [npc.materialDescriptor] [npc.legFullDescription].",
-			"[npc.Her] legs are [npc.materialCompositionDescriptor] [npc.legFullDescription(true)], and [npc.her] feet are formed into anthropomorphic squirrel-like paws, complete with claws and pink pads.",
+			"пара",
+			"нога",
+			"ноги",
+			Util.newArrayListOfValues("мужской", "пушистая", "покрытая мехом", "антропоморфные, беличьи"),
+			Util.newArrayListOfValues("женственная", "пушистая", "покрытая мехом", "антропоморфные, беличьи"),
+			Util.newArrayListOfValues("беличьи"),
+			Util.newArrayListOfValues("беличьи"),
+			Util.newArrayListOfValues("беличьи"),
+			Util.newArrayListOfValues("беличьи"),
+			"Слой беличьего меха быстро покрывает [npc.her] ноги, пока те принимают новую форму. По мере того как [npc.her] новый мех спускается до самых кончиков [npc.her] пальцев, [npc.her] ногти утолщаются, превращаясь в острые когти, а маленькие розовые подушечки покрывают [npc.her] подошвы, оставляя [npc.herHim] с лапами вместо ступней. Когда трансформация завершается, [npc.she] [npc.verb(see)], что [npc.her] новый мех плавно переходит в [npc.skin], покрывающий остальную часть [npc.her] тела на уровне [npc.her] верхней части бедер.<br/>[npc.Name] теперь [npc.has] антропоморфная, [style.boldSquirrelMorph(беличьи ноги и ступни)], которые являются [npc.materialDescriptor] [npc.legFullDescription].",
+			"Ноги [npc.Her] являются [npc.materialCompositionDescriptor] [npc.legFullDescription(true)], а ступни [npc.her] превращаются в антропоморфные беличьи лапки с когтями и розовыми подушечками.",
 			Util.newArrayListOfValues(
 					LegConfiguration.BIPEDAL,
 					LegConfiguration.QUADRUPEDAL), false) {
@@ -528,20 +476,17 @@ public class LegType {
 			Race.RAT_MORPH,
 			FootStructure.PLANTIGRADE,
 			FootType.PAWS,
-			"a pair of",
-			"leg",
-			"legs",
-			Util.newArrayListOfValues("masculine", "furry", "fur-coated", "anthropomorphic, rat-like"),
-			Util.newArrayListOfValues("feminine", "furry", "fur-coated", "anthropomorphic, rat-like"),
-			Util.newArrayListOfValues("rat-like"),
-			Util.newArrayListOfValues("rat-like"),
-			Util.newArrayListOfValues("rat-like"),
-			Util.newArrayListOfValues("rat-like"),
-			"A layer of rat-like fur quickly grows over [npc.her] legs as they shift into a new form."
-				+ " As [npc.her] new fur spreads down to the ends of [npc.her] toes, [npc.her] toenails thicken into sharp claws, and little pink pads grow to cover [npc.her] soles, leaving [npc.herHim] with paw-like feet."
-				+ " As the transformation ends, [npc.she] [npc.verb(see)] that [npc.her] new fur smoothly transitions into the [npc.skin] covering the rest of [npc.her] body at [npc.her] upper-thigh.<br/>"
-				+ "[npc.Name] now [npc.has] anthropomorphic, [style.boldRatMorph(rat-like legs and feet)], which are [npc.materialDescriptor] [npc.legFullDescription].",
-			"[npc.Her] legs are [npc.materialCompositionDescriptor] [npc.legFullDescription(true)], and [npc.her] feet are formed into anthropomorphic rat-like paws, complete with claws and leathery pads.",
+			"пара",
+			"нога",
+			"ноги",
+			Util.newArrayListOfValues("мужской", "пушистая", "покрытая мехом", "антропоморфная, крысоподобная"),
+			Util.newArrayListOfValues("женственная", "пушистая", "покрытая мехом", "антропоморфная, крысоподобная"),
+			Util.newArrayListOfValues("крысиные"),
+			Util.newArrayListOfValues("крысиные"),
+			Util.newArrayListOfValues("крысиные"),
+			Util.newArrayListOfValues("крысиные"),
+			"Слой крысиного меха быстро покрывает [npc.her] ноги, когда те принимают новую форму. По мере того как [npc.her] новый мех спускается до самых кончиков [npc.her] пальцев, [npc.her] ногти утолщаются, превращаясь в острые когти, а маленькие розовые подушечки покрывают [npc.her] подошвы, оставляя [npc.herHim] с лапами вместо ступней. Когда трансформация завершается, [npc.she] [npc.verb(see)], что [npc.her] новый мех плавно переходит в [npc.skin], покрывающий остальную часть [npc.her] тела на уровне [npc.her] бедер.<br/>[npc.Name] теперь [npc.has] антропоморфная, [style.boldRatMorph(крысиные ноги и лапы)], которые являются [npc.materialDescriptor] [npc.legFullDescription].",
+			"[npc.Her] ноги являются [npc.materialCompositionDescriptor] [npc.legFullDescription(true)], а [npc.her] ступни превращаются в антропоморфные крысиные лапы с когтями и кожистыми подушечками.",
 			Util.newArrayListOfValues(
 					LegConfiguration.BIPEDAL,
 					LegConfiguration.QUADRUPEDAL), false) {
@@ -551,20 +496,17 @@ public class LegType {
 			Race.RABBIT_MORPH,
 			FootStructure.PLANTIGRADE,
 			FootType.PAWS,
-			"a pair of",
-			"leg",
-			"legs",
-			Util.newArrayListOfValues("masculine", "furry", "fur-coated", "anthropomorphic, rabbit-like"),
-			Util.newArrayListOfValues("feminine", "furry", "fur-coated", "anthropomorphic, rabbit-like"),
-			Util.newArrayListOfValues("rabbit-like"),
-			Util.newArrayListOfValues("rabbit-like"),
-			Util.newArrayListOfValues("rabbit-like"),
-			Util.newArrayListOfValues("rabbit-like"),
-			"A layer of rabbit-like fur quickly grows over [npc.her] legs as they shift into a new form."
-				+ " As [npc.her] new fur spreads down to the ends of [npc.her] toes, [npc.her] toenails thicken into blunt claws, and soft little pads grow to cover [npc.her] soles, leaving [npc.herHim] with long, paw-like feet."
-				+ " As the transformation ends, [npc.she] [npc.verb(see)] that [npc.her] new fur smoothly transitions into the [npc.skin] covering the rest of [npc.her] body at [npc.her] upper-thigh.<br/>"
-				+ "[npc.Name] now [npc.has] anthropomorphic, [style.boldRabbitMorph(rabbit-like legs and feet)], which are [npc.materialDescriptor] [npc.legFullDescription].",
-			"[npc.Her] legs are [npc.materialCompositionDescriptor] [npc.legFullDescription(true)], and [npc.her] feet are formed into long, anthropomorphic, rabbit-like paws, complete with blunt claws and soft pads.",
+			"пара",
+			"нога",
+			"ноги",
+			Util.newArrayListOfValues("мужской", "пушистая", "покрытая мехом", "антропоморфные, кроличьи"),
+			Util.newArrayListOfValues("женственная", "пушистая", "покрытая мехом", "антропоморфные, кроличьи"),
+			Util.newArrayListOfValues("кроличьими"),
+			Util.newArrayListOfValues("кроличьими"),
+			Util.newArrayListOfValues("кроличьими"),
+			Util.newArrayListOfValues("кроличьими"),
+			"Слой кроличьего меха быстро покрывает [npc.her] ноги, когда те принимают новую форму. По мере того как [npc.her] новый мех спускается до самых кончиков [npc.her] пальцев, [npc.her] ногти утолщаются, превращаясь в тупые когти, а мягкие подушечки покрывают [npc.her] подошвы, оставляя [npc.herHim] с длинными лапами. Когда трансформация завершается, [npc.she] [npc.verb(see)], что [npc.her] новый мех плавно переходит в [npc.skin], покрывающий остальную часть [npc.her] тела на уровне [npc.her] верхней части бедер.<br/>[npc.Name] теперь [npc.has] антропоморфные, [style.boldRabbitMorph(кроличьи ноги и ступни)], которые являются [npc.materialDescriptor] [npc.legFullDescription].",
+			"Ноги [npc.Her] — это [npc.materialCompositionDescriptor] [npc.legFullDescription(true)], а ступни [npc.her] превращаются в длинные антропоморфные кроличьи лапы с тупыми когтями и мягкими подушечками.",
 			Util.newArrayListOfValues(
 					LegConfiguration.BIPEDAL,
 					LegConfiguration.QUADRUPEDAL), false) {
@@ -574,20 +516,17 @@ public class LegType {
 			Race.BAT_MORPH,
 			FootStructure.DIGITIGRADE,
 			FootType.PAWS,
-			"a pair of",
-			"leg",
-			"legs",
-			Util.newArrayListOfValues("masculine", "furry", "fur-coated", "anthropomorphic, bat-like"),
-			Util.newArrayListOfValues("feminine", "furry", "fur-coated", "anthropomorphic, bat-like"),
-			Util.newArrayListOfValues("bat-like"),
-			Util.newArrayListOfValues("bat-like"),
-			Util.newArrayListOfValues("bat-like"),
-			Util.newArrayListOfValues("bat-like"),
-			"A layer of bat-like fur quickly grows over [npc.her] legs as they shift into a new form."
-				+ " As [npc.her] new fur spreads down to the ends of [npc.her] toes, [npc.her] toenails thicken into sharp claws, and little pink pads grow to cover [npc.her] soles, leaving [npc.herHim] with paw-like feet."
-				+ " As the transformation ends, [npc.she] [npc.verb(see)] that [npc.her] new fur smoothly transitions into the [npc.skin] covering the rest of [npc.her] body at [npc.her] upper-thigh.<br/>"
-				+ "[npc.Name] now [npc.has] anthropomorphic, [style.boldBatMorph(bat-like legs and feet)], which are [npc.materialDescriptor] [npc.legFullDescription].",
-			"[npc.Her] legs are [npc.materialCompositionDescriptor] [npc.legFullDescription(true)], and [npc.her] feet are formed into anthropomorphic bat-like paws, complete with claws and leathery pads.",
+			"пара",
+			"нога",
+			"ноги",
+			Util.newArrayListOfValues("мужской", "пушистая", "покрытая мехом", "антропоморфные, похожие на летучие мыши"),
+			Util.newArrayListOfValues("женственная", "пушистая", "покрытая мехом", "антропоморфные, похожие на летучие мыши"),
+			Util.newArrayListOfValues("похожими на крылья летучей мыши"),
+			Util.newArrayListOfValues("похожими на крылья летучей мыши"),
+			Util.newArrayListOfValues("похожими на крылья летучей мыши"),
+			Util.newArrayListOfValues("похожими на крылья летучей мыши"),
+			"Слой похожей на летучую мышь шерсти быстро покрывает [npc.her] ноги, когда те принимают новую форму. По мере того как [npc.her] новая шерсть спускается до самых кончиков [npc.her] пальцев, [npc.her] ногти утолщаются, превращаясь в острые когти, а маленькие розовые подушечки покрывают [npc.her] подошвы, оставляя [npc.herHim] с лапами, подобными звериным. Когда трансформация завершается, [npc.she] [npc.verb(see)], что [npc.her] новая шерсть плавно переходит в [npc.skin], покрывающую остальную часть [npc.her] тела на уровне [npc.her] верхней части бедра.<br/>[npc.Name] теперь [npc.has] антропоморфные, [style.boldBatMorph(похожие на лапы летучей мыши ноги и ступни)], которые являются [npc.materialDescriptor] [npc.legFullDescription].",
+			"[npc.Her] ноги являются [npc.materialCompositionDescriptor] [npc.legFullDescription(true)], а [npc.her] ступни превращаются в антропоморфные лапы летучей мыши, снабженные когтями и кожистыми подушечками.",
 			Util.newArrayListOfValues(
 					LegConfiguration.BIPEDAL), false) {
 	};
@@ -596,20 +535,17 @@ public class LegType {
 			Race.CAT_MORPH,
 			FootStructure.DIGITIGRADE,
 			FootType.PAWS,
-			"a pair of",
-			"leg",
-			"legs",
-			Util.newArrayListOfValues("masculine", "furry", "fur-coated", "anthropomorphic, cat-like"),
-			Util.newArrayListOfValues("feminine", "furry", "fur-coated", "anthropomorphic, cat-like"),
-			Util.newArrayListOfValues("cat-like", "feline"),
-			Util.newArrayListOfValues("cat-like", "feline"),
-			Util.newArrayListOfValues("cat-like", "feline"),
-			Util.newArrayListOfValues("cat-like", "feline"),
-			"A layer of cat-like fur quickly grows over [npc.her] legs as they shift into a new form."
-				+ " As [npc.her] new fur spreads down to the ends of [npc.her] toes, [npc.her] toenails thicken into sharp, retractable claws, and little pink pads grow to cover [npc.her] soles, leaving [npc.herHim] with paw-like feet."
-				+ " As the transformation ends, [npc.she] [npc.verb(see)] that [npc.her] new fur smoothly transitions into the [npc.skin] covering the rest of [npc.her] body at [npc.her] upper-thigh.<br/>"
-				+ "[npc.Name] now [npc.has] anthropomorphic, [style.boldCatMorph(cat-like legs and feet)], which are [npc.materialDescriptor] [npc.legFullDescription].",
-			"[npc.Her] legs are [npc.materialCompositionDescriptor] [npc.legFullDescription(true)], and [npc.her] feet are formed into anthropomorphic cat-like paws, complete with retractable claws and pink pads.",
+			"пара",
+			"нога",
+			"ноги",
+			Util.newArrayListOfValues("мужской", "пушистая", "покрытая мехом", "антропоморфные, кошачьи"),
+			Util.newArrayListOfValues("женственная", "пушистая", "покрытая мехом", "антропоморфные, кошачьи"),
+			Util.newArrayListOfValues("кошачьими", "кошачьими"),
+			Util.newArrayListOfValues("кошачьими", "кошачьими"),
+			Util.newArrayListOfValues("кошачьими", "кошачьими"),
+			Util.newArrayListOfValues("кошачьими", "кошачьими"),
+			"Слой кошачьего меха быстро покрывает [npc.her] ноги, когда те принимают новую форму. По мере того как [npc.her] новый мех спускается до самых кончиков [npc.her] пальцев, [npc.her] ногти утолщаются, превращаясь в острые втягивающиеся когти, а маленькие розовые подушечки покрывают [npc.her] подошвы, оставляя [npc.herHim] с лапами вместо ступней. Когда трансформация завершается, [npc.she] [npc.verb(see)], что [npc.her] новый мех плавно переходит в [npc.skin], покрывающий остальную часть [npc.her] тела на уровне [npc.her] верхней части бедра.<br/>[npc.Name] теперь [npc.has] антропоморфные, [style.boldCatMorph(кошачьи ноги и ступни)], которые являются [npc.materialDescriptor] [npc.legFullDescription].",
+			"[npc.Her] ноги являются [npc.materialCompositionDescriptor] [npc.legFullDescription(true)], а [npc.her] ступни превращаются в антропоморфные кошачьи лапы с втягивающимися когтями и розовыми подушечками.",
 			Util.newArrayListOfValues(
 					LegConfiguration.BIPEDAL,
 					LegConfiguration.QUADRUPEDAL), false) {
@@ -619,20 +555,17 @@ public class LegType {
 			Race.ALLIGATOR_MORPH,
 			FootStructure.PLANTIGRADE,
 			FootType.HUMANOID,
-			"a pair of",
-			"leg",
-			"legs",
-			Util.newArrayListOfValues("masculine", "scaly", "reptilian", "anthropomorphic, alligator-like"),
-			Util.newArrayListOfValues("feminine", "scaly", "reptilian", "anthropomorphic, alligator-like"),
-			Util.newArrayListOfValues("alligator-like", "scaly", "reptilian"),
-			Util.newArrayListOfValues("alligator-like", "scaly", "reptilian"),
-			Util.newArrayListOfValues("alligator-like", "scaly", "reptilian"),
-			Util.newArrayListOfValues("alligator-like", "scaly", "reptilian"),
-			"A layer of alligator-like scales quickly grows over [npc.her] legs as they shift into a new form."
-				+ " As [npc.her] new scales spread down to the ends of [npc.her] toes, [npc.her] toenails thicken into sharp claws, and little scales grow to cover [npc.her] soles, leaving [npc.herHim] with alligator-like feet."
-				+ " As the transformation ends, [npc.she] [npc.verb(see)] that [npc.her] new scales smoothly transitions into the [npc.skin] covering the rest of [npc.her] body at [npc.her] upper-thigh.<br/>"
-				+ "[npc.Name] now [npc.has] anthropomorphic, [style.boldGatorMorph(alligator-like legs and feet)], which are [npc.materialDescriptor] [npc.legFullDescription].",
-			"[npc.Her] legs are [npc.materialCompositionDescriptor] [npc.legFullDescription(true)], and [npc.her] feet are formed into anthropomorphic alligator-like feet, complete with sharp claws.",
+			"пара",
+			"нога",
+			"ноги",
+			Util.newArrayListOfValues("мужской", "чешуйчатая", "рептилоидные", "антропоморфные, аллигатороподобные"),
+			Util.newArrayListOfValues("женственная", "чешуйчатая", "рептилоидные", "антропоморфные, аллигатороподобные"),
+			Util.newArrayListOfValues("аллигатороподобного", "чешуйчатая", "рептилоидные"),
+			Util.newArrayListOfValues("аллигатороподобного", "чешуйчатая", "рептилоидные"),
+			Util.newArrayListOfValues("аллигатороподобного", "чешуйчатая", "рептилоидные"),
+			Util.newArrayListOfValues("аллигатороподобного", "чешуйчатая", "рептилоидные"),
+			"Слой аллигатороподобной чешуи быстро покрывает ноги [npc.her], когда они принимают новую форму. По мере того как новые чешуйки [npc.her] распространяются до самых кончиков пальцев [npc.her], ногти [npc.her] утолщаются, превращаясь в острые когти, а подошвы [npc.her] покрываются мелкой чешуей, оставляя [npc.herHim] с лапами, похожими на аллигаторовые. Когда трансформация завершается, [npc.she] [npc.verb(see)], что [npc.her] новые чешуйки плавно переходят в [npc.skin], покрывающие остальную часть тела [npc.her] на уровне [npc.her] бедер.<br/>[npc.Name] теперь [npc.has] антропоморфные, [style.boldGatorMorph(аллигатороподобные ноги и ступни)], которые являются [npc.materialDescriptor] [npc.legFullDescription].",
+			"Ноги [npc.Her] являются [npc.materialCompositionDescriptor] [npc.legFullDescription(true)], а ступни [npc.her] превращаются в антропоморфные аллигатороподобные лапы с острыми когтями.",
 			Util.newArrayListOfValues(
 					LegConfiguration.BIPEDAL,
 					LegConfiguration.QUADRUPEDAL), false) {
@@ -642,21 +575,17 @@ public class LegType {
 			Race.HORSE_MORPH,
 			FootStructure.UNGULIGRADE,
 			FootType.HOOFS,
-			"a pair of",
-			"leg",
-			"legs",
-			Util.newArrayListOfValues("masculine", "hair-coated", "anthropomorphic, horse-like"),
-			Util.newArrayListOfValues("feminine", "hair-coated", "anthropomorphic, horse-like"),
-			Util.newArrayListOfValues("horse-like", "equine"),
-			Util.newArrayListOfValues("horse-like", "equine"),
-			Util.newArrayListOfValues("horse-like", "equine"),
-			Util.newArrayListOfValues("horse-like", "equine"),
-			"A layer of short, horse-like hair quickly grows over [npc.her] legs as they shift into a new form."
-				+ " As [npc.her] new fur spreads down to the ends of [npc.her] toes, they suddenly push together, and [npc.she] [npc.verb(let)] out a cry as a thick, hoof-like nail grows in their place,"
-					+ " before quickly transforming to turn [npc.her] feet into horse-like hoofs."
-				+ " As the transformation ends, [npc.she] [npc.verb(see)] that [npc.her] new hair smoothly transitions into the [npc.skin] covering the rest of [npc.her] body at [npc.her] upper-thigh.<br/>"
-				+ "[npc.Name] now [npc.has] anthropomorphic, [style.boldHorseMorph(horse-like legs and hoofed feet)], which are [npc.materialDescriptor] [npc.legFullDescription].",
-			"[npc.Her] legs are [npc.materialCompositionDescriptor] [npc.legFullDescription(true)], and [npc.her] feet are formed into anthropomorphic horse-like hoofs.",
+			"пара",
+			"нога",
+			"ноги",
+			Util.newArrayListOfValues("мужской", "поросший волосами", "антропоморфные, лошадиного типа"),
+			Util.newArrayListOfValues("женственная", "поросший волосами", "антропоморфные, лошадиного типа"),
+			Util.newArrayListOfValues("лошадиный", "лошадиный"),
+			Util.newArrayListOfValues("лошадиный", "лошадиный"),
+			Util.newArrayListOfValues("лошадиный", "лошадиный"),
+			Util.newArrayListOfValues("лошадиный", "лошадиный"),
+			"Слой короткой конской шерсти быстро прорастает на ногах [npc.her], когда те принимают новую форму. По мере того как новый мех [npc.her] спускается до самых кончиков [npc.her] пальцев, они внезапно сжимаются, и [npc.she] [npc.verb(let)] крик, когда на их месте вырастает толстый копытный коготь, который быстро трансформируется, превращая [npc.her] ступни в лошадиные копыта. Когда трансформация завершается, [npc.she] [npc.verb(see)], что [npc.her] новая шерсть плавно переходит в [npc.skin], покрывающую остальную часть [npc.her] тела на уровне [npc.her] бедер.<br/>[npc.Name] теперь [npc.has] антропоморфные, [style.boldHorseMorph(лошадиные ноги и копыта)], которые являются [npc.materialDescriptor] [npc.legFullDescription].",
+			"Ноги [npc.Her] являются [npc.materialCompositionDescriptor] [npc.legFullDescription(true)], а [npc.her] ступни превращаются в антропоморфные лошадиные копыта.",
 			Util.newArrayListOfValues(
 					LegConfiguration.BIPEDAL,
 					LegConfiguration.QUADRUPEDAL), false) {
@@ -717,21 +646,17 @@ public class LegType {
 			Race.REINDEER_MORPH,
 			FootStructure.UNGULIGRADE,
 			FootType.HOOFS,
-			"a pair of",
-			"leg",
-			"legs",
-			Util.newArrayListOfValues("masculine", "fur-coated", "anthropomorphic, reindeer-like"),
-			Util.newArrayListOfValues("feminine", "fur-coated", "anthropomorphic, reindeer-like"),
-			Util.newArrayListOfValues("reindeer-like"),
-			Util.newArrayListOfValues("reindeer-like"),
-			Util.newArrayListOfValues("reindeer-like"),
-			Util.newArrayListOfValues("reindeer-like"),
-			"A layer of furry, reindeer-like hair quickly grows over [npc.her] legs as they shift into a new form."
-				+ " As [npc.her] new fur spreads down to the ends of [npc.her] toes, they suddenly push together, and [npc.she] [npc.verb(let)] out a cry as a crescent-shaped, cloven hoof grows in their place,"
-					+ " before quickly transforming to turn [npc.her] feet into reindeer-like hoofs."
-				+ " As the transformation ends, [npc.she] [npc.verb(see)] that [npc.her] new fur smoothly transitions into the [npc.skin] covering the rest of [npc.her] body at [npc.her] upper-thigh.<br/>"
-				+ "[npc.Name] now [npc.has] anthropomorphic, [style.boldReindeerMorph(reindeer-like legs and hoofed feet)], which are [npc.materialDescriptor] [npc.legFullDescription].",
-			"[npc.Her] legs are [npc.materialCompositionDescriptor] [npc.legFullDescription(true)], and [npc.her] feet are formed into anthropomorphic reindeer-like hoofs.",
+			"пара",
+			"нога",
+			"ноги",
+			Util.newArrayListOfValues("мужской", "покрытая мехом", "антропоморфные, оленьи"),
+			Util.newArrayListOfValues("женственная", "покрытая мехом", "антропоморфные, оленьи"),
+			Util.newArrayListOfValues("похожих на оленьи"),
+			Util.newArrayListOfValues("похожих на оленьи"),
+			Util.newArrayListOfValues("похожих на оленьи"),
+			Util.newArrayListOfValues("похожих на оленьи"),
+			"Слой густой, похожей на оленью шерсти быстро покрывает ноги [npc.her], пока они принимают новую форму. Когда [npc.her] новая шерсть спускается до самых кончиков [npc.her] пальцев, они внезапно сжимаются, и [npc.she] [npc.verb(let)] крик, когда на их месте вырастает серповидное раздвоенное копыто, которое быстро трансформируется, превращая [npc.her] ступни в оленьи копыта. Когда трансформация завершается, [npc.she] [npc.verb(see)], что [npc.her] новая шерсть плавно переходит в [npc.skin], покрывающую остальную часть [npc.her] тела на уровне [npc.her] бедер.<br/>[npc.Name] теперь [npc.has] антропоморфные, [style.boldReindeerMorph(оленьи ноги и копыта)], которые являются [npc.materialDescriptor] [npc.legFullDescription].",
+			"Ноги [npc.Her] являются [npc.materialCompositionDescriptor] [npc.legFullDescription(true)], а ступни [npc.her] превратились в антропоморфные оленьи копыта.",
 			Util.newArrayListOfValues(
 					LegConfiguration.BIPEDAL,
 					LegConfiguration.QUADRUPEDAL), false) {
@@ -741,22 +666,17 @@ public class LegType {
 			Race.HARPY,
 			FootStructure.DIGITIGRADE,
 			FootType.TALONS,
-			"a pair of",
-			"leg",
-			"legs",
-			Util.newArrayListOfValues("masculine", "clawed", "anthropomorphic, bird-like"),
-			Util.newArrayListOfValues("feminine", "clawed", "anthropomorphic, bird-like"),
-			Util.newArrayListOfValues("bird-like"),
-			Util.newArrayListOfValues("bird-like"),
-			Util.newArrayListOfValues("bird-like"),
-			Util.newArrayListOfValues("bird-like"),
-			"A layer of scaly, bird-like leather quickly grows over [npc.her] legs as they shift into a new form."
-				+ " As [npc.her] new leathery skin spreads down to the ends of [npc.her] toes, [npc.her] feet start to undergo an extreme transformation."
-				+ " [npc.Her] toes combine together and re-shape themselves into three forward-facing talons, as a fourth, thumb-like talon branches out behind them."
-				+ " As the transformation ends, this leathery skin sharply transitions into [npc.her] body's [npc.skinColour] [npc.skin] at [npc.her] upper-thigh.<br/>"
-				+ "[npc.Name] now [npc.has] anthropomorphic, [style.boldHarpy(bird-like legs and talons in place of feet)], which are [npc.materialDescriptor] [npc.legFullDescription].",
-			"[npc.Her] bird-like legs are [npc.materialCompositionDescriptor] [npc.legFullDescription(true)], which sharply transitions into [npc.her] body's [npc.skinColour] [npc.skin] at [npc.her] upper-thigh."
-				+ " At the end of each of [npc.her] [npc.legs], [npc.she] [npc.has] sharp, bird-like talons.",
+			"пара",
+			"нога",
+			"ноги",
+			Util.newArrayListOfValues("мужской", "когтистые", "антропоморфные, птичьи"),
+			Util.newArrayListOfValues("женственная", "когтистые", "антропоморфные, птичьи"),
+			Util.newArrayListOfValues("птичьи"),
+			Util.newArrayListOfValues("птичьи"),
+			Util.newArrayListOfValues("птичьи"),
+			Util.newArrayListOfValues("птичьи"),
+			"Слой чешуйчатой, птичьей кожи быстро покрывает ноги [npc.her], когда те принимают новую форму. По мере того как новая кожистая кожа [npc.her] распространяется до самых кончиков пальцев [npc.her], ступни [npc.her] начинают подвергаться экстремальной трансформации. Пальцы [npc.Her] сливаются и перестраиваются в три направленных вперед когтя, в то время как четвертый, похожий на большой палец коготь, ответвляется сзади них. Когда трансформация завершается, эта кожистая кожа резко переходит в [npc.skin] [npc.skinColour] [npc.her] тела на уровне [npc.her] верхней части бедра. <br/>[npc.Name] теперь [npc.has] антропоморфные, [style.boldHarpy(птичьи ноги и когти вместо ступней)], которые являются [npc.materialDescriptor] [npc.legFullDescription].",
+			"[npc.Her] птичьи ноги являются [npc.materialCompositionDescriptor] [npc.legFullDescription(true)], которые резко переходят в [npc.skin] [npc.skinColour] [npc.her] тела на уровне [npc.her] верхней части бедра. На концах каждой из [npc.her] [npc.legs] расположены [npc.she] [npc.has] острые птичьи когти.",
 				Util.newArrayListOfValues(
 						LegConfiguration.BIPEDAL,
 						LegConfiguration.AVIAN), false) {
@@ -771,7 +691,7 @@ public class LegType {
 
 		// Modded types:
 		
-		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/race", "bodyParts", null);
+		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/раса", "bodyParts", null);
 		for(Entry<String, Map<String, File>> entry : moddedFilesMap.entrySet()) {
 			for(Entry<String, File> innerEntry : entry.getValue().entrySet()) {
 				if(Util.getXmlRootElementName(innerEntry.getValue()).equals("leg")) {

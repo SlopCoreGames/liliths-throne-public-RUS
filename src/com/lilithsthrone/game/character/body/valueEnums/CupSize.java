@@ -13,19 +13,19 @@ public enum CupSize {
 
 	// Training bra sizes:
 	
-	TRAINING_AAA("almost unnoticeable", "training-AAA", 1) {
+	TRAINING_AAA("почти незаметный", "тренировочный AAA", 1) {
 		@Override
 		public boolean isTrainingBraSize() {
 			return true;
 		}
 	},
-	TRAINING_AA("almost unnoticeable", "training-AA", 2) {
+	TRAINING_AA("почти незаметный", "тренировочный AA", 2) {
 		@Override
 		public boolean isTrainingBraSize() {
 			return true;
 		}
 	},
-	TRAINING_A("almost unnoticeable", "training-A", 3) {
+	TRAINING_A("почти незаметный", "тренировочный A", 3) {
 		@Override
 		public boolean isTrainingBraSize() {
 			return true;
@@ -34,8 +34,8 @@ public enum CupSize {
 	
 	// Normal cup sizes:
 	
-	AA("extremely tiny", "AA", 4),
-	A("tiny", "A", 5),
+	AA("крошечный", "AA", 4),
+	A("tiny", "", 5),
 	B("small", "B", 6),
 	C("average-sized", "C", 7),
 	D("large", "D", 8),
@@ -54,14 +54,14 @@ public enum CupSize {
 	L("gigantic", "L", 21),
 	LL("colossal", "LL", 22),
 	M("colossal", "M", 23),
-	MM("colossal", "MM", 24),
-	N("colossal", "N", 25),
+	MM("колоссальный", "MM", 24),
+	N("колоссальный", "N", 25),
 	
 	// Hyper sizes:
 	
 	X_AA("extreme", "X-AA", 26),
-	X_A("extreme", "X-A", 27),
-	X_B("extreme", "X-B", 28),
+	X_A("экстремальный", "X-A", 27),
+	X_B("экстремальный", "X-B", 28),
 	X_C("extreme", "X-C", 29),
 	X_D("extreme", "X-D", 30),
 	X_DD("extreme", "X-DD", 31),
@@ -84,8 +84,8 @@ public enum CupSize {
 
 	XX_AA("monstrous", "XX-AA", 48),
 	XX_A("monstrous", "XX-A", 49),
-	XX_B("monstrous", "XX-B", 50),
-	XX_C("monstrous", "XX-C", 51),
+	XX_B("чудовищный", "XX-B", 50),
+	XX_C("чудовищный", "XX-C", 51),
 	XX_D("monstrous", "XX-D", 52),
 	XX_DD("monstrous", "XX-DD", 53),
 	XX_E("monstrous", "XX-E", 54),
@@ -109,24 +109,24 @@ public enum CupSize {
 	XXX_A("hyper", "XXX-A", 71),
 	XXX_B("hyper", "XXX-B", 72),
 	XXX_C("hyper", "XXX-C", 73),
-	XXX_D("hyper", "XXX-D", 74),
-	XXX_DD("hyper", "XXX-DD", 75),
-	XXX_E("hyper", "XXX-E", 76),
-	XXX_F("hyper", "XXX-F", 77),
-	XXX_FF("hyper", "XXX-FF", 78),
-	XXX_G("hyper", "XXX-G", 79),
-	XXX_GG("hyper", "XXX-GG", 80),
-	XXX_H("hyper", "XXX-H", 81),
-	XXX_HH("hyper", "XXX-HH", 82),
-	XXX_J("hyper", "XXX-J", 83),
-	XXX_JJ("hyper", "XXX-JJ", 84),
-	XXX_K("hyper", "XXX-K", 85),
-	XXX_KK("hyper", "XXX-KK", 86),
-	XXX_L("hyper", "XXX-L", 87),
-	XXX_LL("hyper", "XXX-LL", 88),
-	XXX_M("hyper", "XXX-M", 89),
-	XXX_MM("hyper", "XXX-MM", 90),
-	XXX_N("hyper", "XXX-N", 91);
+	XXX_D("гипер", "XXX-D", 74),
+	XXX_DD("гипер", "XXX-DD", 75),
+	XXX_E("гипер", "XXX-E", 76),
+	XXX_F("гипер", "XXX-F", 77),
+	XXX_FF("гипер", "XXX-FF", 78),
+	XXX_G("гипер", "XXX-G", 79),
+	XXX_GG("гипер", "XXX-GG", 80),
+	XXX_H("гипер", "XXX-H", 81),
+	XXX_HH("гипер", "XXX-HH", 82),
+	XXX_J("гипер", "XXX-J", 83),
+	XXX_JJ("гипер", "XXX-JJ", 84),
+	XXX_K("гипер", "XXX-K", 85),
+	XXX_KK("гипер", "XXX-KK", 86),
+	XXX_L("гипер", "XXX-L", 87),
+	XXX_LL("гипер", "XXX-LL", 88),
+	XXX_M("гипер", "XXX-M", 89),
+	XXX_MM("гипер", "XXX-MM", 90),
+	XXX_N("гипер", "XXX-N", 91);
 
 	private String descriptor;
 	private String cupSizeName;

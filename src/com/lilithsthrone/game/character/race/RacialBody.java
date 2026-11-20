@@ -662,7 +662,7 @@ public class RacialBody {
 
 		// Modded racial bodies:
 		
-		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/race", null, "racialBody");
+		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/раса", null, "racialBody");
 		for(Entry<String, Map<String, File>> entry : moddedFilesMap.entrySet()) {
 			for(Entry<String, File> innerEntry : entry.getValue().entrySet()) {
 				try {

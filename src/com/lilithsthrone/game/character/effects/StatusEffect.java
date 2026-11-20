@@ -735,7 +735,7 @@ public class StatusEffect {
 					new Value<>(Attribute.DAMAGE_LUST, 50f),
 					new Value<>(Attribute.FERTILITY, 75f),
 					new Value<>(Attribute.VIRILITY, 75f)),
-			Util.newArrayListOfValues("<b style='color: "+ PresetColour.ATTRIBUTE_CORRUPTION.toWebHexString()+ "'>Demonic mindset</b>")) {
+			Util.newArrayListOfValues("<b style='color: "+ PresetColour.ATTRIBUTE_CORRUPTION.toWebHexString()+ "'>Демонический склад ума</b>")) {
 		@Override
 		public String getName(GameCharacter target) {
 			return Util.capitaliseSentence(CorruptionLevel.FIVE_CORRUPT.getName());
@@ -794,7 +794,7 @@ public class StatusEffect {
 			List<String> effects = new ArrayList<>();
 			if(Main.game.isInSex()) {
 				if(Main.sex.isInForeplay(target)) {
-					effects.add("[style.colourPinkLight(Foreplay)]");
+					effects.add("[style.colourPinkLight(Прелюдия)]");
 					effects.add("[style.colourMinorBad(-50%)] возбуждение");
 				} else {
 					effects.add("[style.colourPink(Основной Секс)]");
@@ -816,7 +816,7 @@ public class StatusEffect {
 			false,
 			null,
 			Util.newArrayListOfValues(
-					"[style.colourPinkLight(Foreplay)]",
+					"[style.colourPinkLight(Прелюдия)]",
 					"[style.colourMinorBad(-50%)] возбуждение растет")) {
 		@Override
 		public String getName(GameCharacter target) {
@@ -1187,12 +1187,12 @@ public class StatusEffect {
 	// WEATHER & LOCATION EFFECTS:
 	
 	public static AbstractStatusEffect WEATHER_PROLOGUE = new AbstractStatusEffect(100,
-			"Strange Atmosphere",
+			"Странная атмосфера",
 			"weatherNightStormIncoming",
 			PresetColour.CLOTHING_WHITE,
 			false,
 			null,
-			Util.newArrayListOfValues("<b style='color: " + PresetColour.GENERIC_ARCANE.toWebHexString() + ";'>Enhanced libido</b>")) {
+			Util.newArrayListOfValues("<b style='color: " + PresetColour.GENERIC_ARCANE.toWebHexString() + ";'>Повышенное либидо</b>")) {
 		@Override
 		public String getDescription(GameCharacter target) {
 			return "Сегодня вечером в музее царит странная атмосфера, и ты невольно чувствуешь себя невероятно возбужденным...";
@@ -1204,7 +1204,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect WEATHER_CLEAR = new AbstractStatusEffect(100,
-			"Clear skies",
+			"Ясное небо",
 			"weatherDayClear",
 			PresetColour.CLOTHING_WHITE,
 			false,
@@ -1254,7 +1254,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect WEATHER_CLOUD = new AbstractStatusEffect(100,
-			"Cloudy skies",
+			"Облачное небо",
 			"weatherDayCloudy",
 			PresetColour.CLOTHING_WHITE,
 			false,
@@ -1289,7 +1289,7 @@ public class StatusEffect {
 			if(target.hasPerkAnywhereInTree(Perk.DOLL_ARCANE_3)) {
 				exEff.add("[style.colourGood(Gaining)] энергия из фона [style.colourArcane(arcane)]");
 			} else {
-				exEff.add("[style.colourArcane(Enhanced libido)]");
+				exEff.add("[style.colourArcane(Повышенное либидо)]");
 			}
 			if(Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.ARCANE)) {
 				exEff.add("Время до следующей [style.colourArcane(arcane storm)]:");
@@ -1300,7 +1300,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect WEATHER_RAIN = new AbstractStatusEffect(100,
-			"Rain",
+			"Дождь",
 			"weatherDayRain",
 			PresetColour.CLOTHING_WHITE,
 			false,
@@ -1335,7 +1335,7 @@ public class StatusEffect {
 			if(target.hasPerkAnywhereInTree(Perk.DOLL_ARCANE_3)) {
 				exEff.add("[style.colourGood(Gaining)] энергия из фона [style.colourArcane(arcane)]");
 			} else {
-				exEff.add("[style.colourArcane(Enhanced libido)]");
+				exEff.add("[style.colourArcane(Повышенное либидо)]");
 			}
 			if(Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.ARCANE)) {
 				exEff.add("Время до следующей [style.colourArcane(arcane storm)]:");
@@ -1346,7 +1346,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect WEATHER_SNOW = new AbstractStatusEffect(100,
-			"Snow",
+			"Снег",
 			"weatherDaySnow",
 			PresetColour.CLOTHING_WHITE,
 			false,
@@ -1438,7 +1438,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect WEATHER_STORM_GATHERING = new AbstractStatusEffect(100,
-			"Gathering storm",
+			"Надвигающаяся буря",
 			"weatherDayStormIncoming",
 			PresetColour.CLOTHING_WHITE,
 			false,
@@ -1468,7 +1468,7 @@ public class StatusEffect {
 			if(target.hasPerkAnywhereInTree(Perk.DOLL_ARCANE_3)) {
 				exEff.add("[style.colourGood(Gaining)] энергия из фона [style.colourArcane(arcane)]");
 			} else {
-				exEff.add("[style.colourArcane(Enhanced libido)]");
+				exEff.add("[style.colourArcane(Повышенное либидо)]");
 			}
 			if(Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.ARCANE)) {
 				exEff.add("Время до следующей аркана бури:");
@@ -1479,7 +1479,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect WEATHER_STORM = new AbstractStatusEffect(100,
-			"Arcane storm",
+			"Аркана-буря",
 			"weatherDayStorm",
 			PresetColour.CLOTHING_WHITE,
 			false,
@@ -1604,7 +1604,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect WEATHER_STORM_VULNERABLE = new AbstractStatusEffect(100,
-			"Arcane storm",
+			"Аркана-буря",
 			"weatherDayStorm",
 			PresetColour.CLOTHING_WHITE,
 			false,
@@ -1685,11 +1685,11 @@ public class StatusEffect {
 				exEff.add("[style.colourGood(Получение)] [style.colourExcellent(массивная)] энергия от [style.colourArcane(арканого шторма)]");
 			} else {
 				exEff.add("[style.colourArcane(Усиленная либидо)]");
-				exEff.add("[style.colourArcane(Overwhelming Lust)]");
-				exEff.add("[style.boldExcellent(Double)] [style.colourArcane(essence gains)] from sex & combat");
+				exEff.add("[style.colourArcane(Неистовая Похоть)]");
+				exEff.add("[style.boldExcellent(Двойной)] [style.colourArcane(прирост эссенции)] за секс и бой");
 			}
 			if(Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.ARCANE)) {
-				exEff.add("Time until [style.colourArcane(storm ends)]:");
+				exEff.add("До [style.colourArcane(завершения бури)] осталось:");
 				exEff.add(Main.game.getWeatherTimeRemainingAsTimeString());
 			}
 			return exEff;
@@ -1697,7 +1697,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect WEATHER_STORM_PROTECTED = new AbstractStatusEffect(100,
-			"Arcane storm (protected)",
+			"Аркана-буря (защищено)",
 			"weatherDayStorm",
 			PresetColour.GENERIC_GOOD,
 			true,
@@ -1711,14 +1711,7 @@ public class StatusEffect {
 					return "";
 				}
 				
-				return "<p>"
-							+ "A bright-pink flash suddenly illuminates the entire city of Dominion, causing those few residents still prowling the streets to look skywards."
-							+ " High up above them, the threatening storm clouds have finally broken, and a roiling mass of arcane energy finally crackles into life."
-						+ "</p>"
-						+ "<p>"
-							+ "Within moments, a ghostly series of lewd moans and ecstatic screams start echoing throughout the city, and as the arcane thunder penetrates into the minds of those without a strong aura,"
-							+ " they find themselves unable to think of anything but sex..."
-						+ "</p>";
+				return "<p>Яркая ярко-розовая вспышка внезапно освещает весь город Dominion, заставляя немногих жителей, всё ещё бродящих по улицам, поднять взор к небу. Высоко над ними грозные грозовые тучи наконец разошлись, и бурлящая масса аркана-энергии наконец ожила, затрещав искрами.</p><p>В считанные мгновения по всему городу начинают разноситься призрачные стоны похоти и экстатические крики, а когда аркана-гром проникает в разум тех, у кого нет сильной ауры, они обнаруживают, что не могут думать ни о чем, кроме секса...</p>";
 			} else {
 				return "";
 			}
@@ -1726,9 +1719,9 @@ public class StatusEffect {
 		@Override
 		public String getDescription(GameCharacter target) {
 			StringBuilder sb = new StringBuilder();
-			sb.append("Huge streaks of pink and purple lightning arc through the sky as an arcane storm rages high above Dominion.");
+			sb.append("Огромные всполохи розовых и фиолетовых молний прорезают небо, пока высоко над Dominion бушует аркана-буря.");
 			if(target.hasPerkAnywhereInTree(Perk.DOLL_ARCANE_3)) {
-				sb.append(" Although [npc.nameIsFull] protected from the storm, [npc.sheIs] still able to absorb background arcane energy to power [npc.herself].");
+				sb.append(" Хотя [npc.nameIsFull] защищен от шторма, [npc.sheIs] все еще способен поглощать фоновую арканную энергию для подпитки [npc.herself].");
 				
 			} else {
 				sb.append(" Хотя [npc.she] всё ещё может чувствовать его эффекты, принимающие форму повышенного либидо, [npc.nameIsFull] в настоящее время защищён от большей части гнева бури.");
@@ -1772,7 +1765,7 @@ public class StatusEffect {
 	};
 
 	public static AbstractStatusEffect BLINDED = new AbstractStatusEffect(90,
-			"Blinded",
+			"Ослепление",
 			"blinded",
 			PresetColour.BASE_BLACK,
 			PresetColour.BASE_RED,
@@ -1827,7 +1820,7 @@ public class StatusEffect {
 	};
 
 	public static AbstractStatusEffect DARKNESS = new AbstractStatusEffect(90,
-			"Darkness",
+			"Тьма",
 			"darkness",
 			PresetColour.BASE_BLACK,
 			PresetColour.BASE_RED,
@@ -1854,7 +1847,7 @@ public class StatusEffect {
 	};
 
 	public static AbstractStatusEffect DARKNESS_NEGATED = new AbstractStatusEffect(90,
-			"Darkness (Negated)",
+			"Тьма (Подавленная)",
 			"darkness_negated",
 			PresetColour.BASE_BLACK,
 			PresetColour.BASE_GREEN,
@@ -1882,7 +1875,7 @@ public class StatusEffect {
 
 
 	public static AbstractStatusEffect SHORT_SIGHTED = new AbstractStatusEffect(90,
-			"impaired vision",
+			"ослабленное зрение",
 			"short_sighted",
 			PresetColour.BASE_BLACK,
 			PresetColour.GENERIC_TERRIBLE,
@@ -1910,7 +1903,7 @@ public class StatusEffect {
 		}
 	};
 	public static AbstractStatusEffect ENCHANCED_VISION = new AbstractStatusEffect(90,
-			"enhanced vision",
+			"улучшенное зрение",
 			"perfect_vision",
 			PresetColour.BASE_BLACK,
 			PresetColour.GENERIC_EXCELLENT,
@@ -1941,7 +1934,7 @@ public class StatusEffect {
 	// RACES:
 	// HUMAN:
 	public static AbstractStatusEffect PURE_HUMAN_PROLOGUE = new AbstractStatusEffect(1000,
-			"human",
+			"человеческими",
 			null,
 			PresetColour.CLOTHING_WHITE,
 			true,
@@ -1982,7 +1975,7 @@ public class StatusEffect {
 			if(target.getSubspeciesOverride()!=null && target.getSubspeciesOverride()!=target.getSubspecies()) {
 				return target.getSubspeciesOverride().getName(null)+" ("+target.getSubspecies().getName(target.getBody())+")";
 			}
-			return (target.isFeral()?"[style.colourFeral(Feral)] ":"")+target.getSubspecies().getName(target.getBody());
+			return (target.isFeral()?"[style.colourFeral(Дикий)] ":"")+target.getSubspecies().getName(target.getBody());
 		}
 		@Override
 		public String getDescription(GameCharacter target) {
@@ -2005,8 +1998,7 @@ public class StatusEffect {
 				additionalDescriptions.add(
 						new Value<>(1,
 								UtilText.parse(target,
-										"[npc.NameIsFull] "
-										+"<span style='color:"+target.getSubspeciesOverride().getColour(target).toWebHexString()+";'>"+UtilText.addDeterminer(target.getSubspeciesOverride().getName(null))+"</span>"
+										"[npc.NameIsFull] <span style='color:"+target.getSubspeciesOverride().getColour(target).toWebHexString()+";'>"+UtilText.addDeterminer(target.getSubspeciesOverride().getName(null))+"</span>"
 										+ " но [npc.she] [npc.verb(appear)] быть "
 										+"<span style='color:"+target.getSubspecies().getColour(target).toWebHexString()+";'>"+UtilText.addDeterminer(subspeciesName)+"</span>!")));
 			}
@@ -2017,7 +2009,7 @@ public class StatusEffect {
 					|| material.getExtraEffects(target)!=null) {
 				int lineHeight = 1;
 				StringBuilder sb = new StringBuilder();
-				sb.append(UtilText.parse(target, "<i style='color:"+material.getColour().toWebHexString()+";'>[npc.NamePos] "+material.getName()+" body grants [npc.herHim]:</i>"));
+				sb.append(UtilText.parse(target, "<i style='color:"+material.getColour().toWebHexString()+";'>[npc.NamePos] "+material.getName()+" тело дает [npc.herHim]:</i>"));
 				if(material.getAttributeModifiers(target)!=null) {
 					for(String s : attributeModifiersToStringList(material.getAttributeModifiers(target))) {
 						sb.append("<br/>"+s);
@@ -2091,7 +2083,7 @@ public class StatusEffect {
 	};
 
 	public static AbstractStatusEffect AQUATIC_TAIL_POSITIVE = new AbstractStatusEffect(90,
-			"Aquatic harmony",
+			"Водная гармония",
 			"aquatic_positive",
 			PresetColour.GENERIC_GOOD,
 			PresetColour.BASE_BLUE_LIGHT,
@@ -2102,18 +2094,13 @@ public class StatusEffect {
 					new Value<>(Attribute.CRITICAL_DAMAGE, 15f),
 					new Value<>(Attribute.ENERGY_SHIELDING, 5f)),
 			Util.newArrayListOfValues(
-					"[style.boldBlueLight(Lost legs)]")) {
+					"[style.boldBlueLight(Потерянные ноги)]")) {
 		@Override
 		public String applyAdditionEffect(GameCharacter target) {
 			if(!target.isPlayer()) {
 				return "";
 			}
-			return "As you increase your proximity to the nearby body of water, you feel an intense tingling start to run up the length of your legs."
-					+ " Without any further warning of what's about to happen, your muscles involuntarily clench, pressing your legs together and causing you to let out a startled cry."
-					+ " Before you're able to react, your legs rapidly fuse together and transform, and within moments your lower body has assumed its true, tailed form!"
-					+ "<p style='text-align:center;'>"
-						+ "[style.italicsMinorBad(Вы больше не можете надевать одежду в слоты для ног и стоп!)]"
-					+ "</p>"
+			return "По мере того как вы приближаетесь к ближайшему водоему, вы чувствуете, как по ногам пробегает интенсивное покалывание. Прежде чем вы успеваете понять, что происходит, ваши мышцы непроизвольно сжимаются, плотно прижимая ноги друг к другу, отчего вы невольно вскрикиваете. Не успеваете вы среагировать, как ваши ноги стремительно срастаются и трансформируются, и спустя мгновение ваша нижняя часть тела принимает свой истинный, хвостовой облик!<p style='text-align:center;'>[style.italicsMinorBad(Вы больше не можете надевать одежду в слоты для ног и стоп!)]</p>"
 					+ target.postTransformationCalculation(); // To handle clothing removals
 		}
 		@Override
@@ -2175,7 +2162,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect AQUATIC_POSITIVE = new AbstractStatusEffect(90,
-			"Aquatic harmony",
+			"Водная гармония",
 			"aquatic_positive",
 			PresetColour.GENERIC_GOOD,
 			PresetColour.BASE_BLUE_LIGHT,
@@ -2267,7 +2254,7 @@ public class StatusEffect {
 	// SEXUAL ORIENTATIONS:
 	
 	public static AbstractStatusEffect ORIENTATION_ANDROPHILIC = new AbstractStatusEffect(90,
-			"androphilic",
+			"андрофильный",
 			"orientation_androphilic",
 			PresetColour.MASCULINE,
 			true,
@@ -2290,7 +2277,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect ORIENTATION_GYNEPHILIC = new AbstractStatusEffect(90,
-			"gynephilic",
+			"гинефильный",
 			"orientation_gynephilic",
 			PresetColour.FEMININE,
 			true,
@@ -2312,7 +2299,7 @@ public class StatusEffect {
 		}
 	};
 	public static AbstractStatusEffect ORIENTATION_AMBIPHILIC = new AbstractStatusEffect(90,
-			"ambiphilic",
+			"амбифильный",
 			"orientation_ambiphilic",
 			PresetColour.ANDROGYNOUS,
 			true,
@@ -2336,7 +2323,7 @@ public class StatusEffect {
 	// CLOTHING:
 
 	public static AbstractStatusEffect CLOTHING_FEMININITY = new AbstractStatusEffect(85,
-			"clothing too feminine",
+			"слишком женственная одежда",
 			"clothingFemininity",
 			PresetColour.CLOTHING_PINK_LIGHT,
 			false,
@@ -2345,8 +2332,7 @@ public class StatusEffect {
 		@Override
 		public String getDescription(GameCharacter target) {
 			return UtilText.parse(target,
-					"Some of [npc.namePos] clothes are too feminine for [npc.her] masculine figure."
-						+ " [npc.She] [npc.verb(find)] [npc.herself] incredibly embarrassed by wearing such clothing and [npc.is] struggling to think clearly.");
+					"Некоторая одежда [npc.namePos] слишком женственна для маскулинной фигуры [npc.her]. [npc.She] [npc.verb(find)] [npc.herself] невероятно смущен(а) из-за такой одежды, и [npc.is] с трудом может(ет) ясно мыслить.");
 		}
 		@Override
 		public boolean isConditionsMet(GameCharacter target) {
@@ -2365,7 +2351,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect CLOTHING_MASCULINITY = new AbstractStatusEffect(85,
-			"clothing too masculine",
+			"слишком мужественная одежда",
 			"clothingMasculinity",
 			PresetColour.CLOTHING_BLUE,
 			false,
@@ -2374,8 +2360,7 @@ public class StatusEffect {
 		@Override
 		public String getDescription(GameCharacter target) {
 			return UtilText.parse(target,
-					"Some of [npc.namePos] clothes are too masculine for [npc.her] feminine figure."
-						+ " [npc.She] [npc.verb(find)] [npc.herself] incredibly embarrassed by wearing such clothing and [npc.is] struggling to think clearly.");
+					"Некоторая одежда [npc.namePos] слишком мужественна для женственной фигуры [npc.her]. [npc.She] [npc.verb(find)] [npc.herself] невероятно смущен(а) из-за такой одежды, и [npc.is] с трудом может(ет) ясно мыслить.");
 		}
 		@Override
 		public boolean isConditionsMet(GameCharacter target) {
@@ -2394,7 +2379,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect CLOTHING_CUM = new AbstractStatusEffect(80,
-			"dirty clothing",
+			"грязная одежда",
 			"clothingCummedIn",
 			PresetColour.CLOTHING_WHITE,
 			false,
@@ -2408,17 +2393,15 @@ public class StatusEffect {
 		public String getDescription(GameCharacter target) {
 			if(target.hasPerkAnywhereInTree(Perk.DOLL_LUST_3)) {
 				return UtilText.parse(target,
-						"Some of [npc.namePos] clothes have been covered in cum, milk or other sexual fluids."
-							+ " Wearing such filthy clothing reinforces the fact that [npc.sheIs] nothing more than a sex toy.");
+						"Некоторая одежда [npc.namePos] испачкана спермой, молоком или другими сексуальными жидкостями. Ношение такой грязной одежды лишь подчеркивает тот факт, что [npc.sheIs] — не более чем секс-игрушка.");
 			}
 			return UtilText.parse(target,
-					"Some of [npc.namePos] clothes have been covered in cum, milk or other sexual fluids."
-						+ " [npc.SheIs] feeling incredibly embarrassed to be walking around in such filthy clothing.");
+					"Часть одежды [npc.namePos] покрыта спермой, молоком или другими сексуальными выделениями. [npc.SheIs] чувствует невероятный стыд, расхаживая в такой грязной одежде.");
 		}
 		@Override
 		protected Value<Integer, String> getAdditionalDescription(GameCharacter target) {
 			if(Main.game.isOpportunisticAttackersEnabled() && target.isPlayer()) {
-				return new Value<>(2, "<b style='color:" + PresetColour.BASE_GREY.toWebHexString() +";'>Opportunistic Attackers</b><br/>Your smelly clothes seem to attract trouble.");
+				return new Value<>(2, "<b style='color:" + PresetColour.BASE_GREY.toWebHexString() +";'>Атакующие-опортунисты</b><br/>Твоя вонючая одежда, кажется, притягивает неприятности.");
 			}
 			return super.getAdditionalDescription(target);
 		}
@@ -2439,7 +2422,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect CLOTHING_CUM_MASOCHIST = new AbstractStatusEffect(80,
-			"dirty clothing",
+			"грязная одежда",
 			"clothingCummedInMasochist",
 			PresetColour.CLOTHING_WHITE,
 			false,
@@ -2452,17 +2435,15 @@ public class StatusEffect {
 		@Override
 		public String getDescription(GameCharacter target) {
 			if(target.isPlayer()) {
-				return "Some of your clothes have been covered in cum, milk or other sexual fluids."
-						+ " You find yourself incredibly turned on to be walking around in such filthy clothing.";
+				return "Часть твоей одежды покрыта спермой, молоком или другими сексуальными выделениями. Ты чувствуешь невероятное возбуждение, расхаживая в такой грязной одежде.";
 			} else {
-				return UtilText.parse(target, "Some of [npc.namePos] clothes have been covered in cum, milk or other sexual fluids."
-						+ " [npc.sheIs] feeling incredibly turned on to be walking around in such filthy clothing.");
+				return UtilText.parse(target, "Часть одежды [npc.namePos] покрыта спермой, молоком или другими сексуальными выделениями. [npc.sheIs] чувствует невероятное возбуждение, расхаживая в такой грязной одежде.");
 			}
 		}
 		@Override
 		protected Value<Integer, String> getAdditionalDescription(GameCharacter target) {
 			if(Main.game.isOpportunisticAttackersEnabled() && target.isPlayer()) {
-				return new Value<>(2, "<b style='color:" + PresetColour.BASE_GREY.toWebHexString() +";'>Opportunistic Attackers</b><br/>Your smelly clothes seem to attract trouble.");
+				return new Value<>(2, "<b style='color:" + PresetColour.BASE_GREY.toWebHexString() +";'>Атакующие-опортунисты</b><br/>Твоя вонючая одежда, кажется, притягивает неприятности.");
 			}
 			return super.getAdditionalDescription(target);
 		}
@@ -2483,7 +2464,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect BODY_CUM = new AbstractStatusEffect(80,
-			"dirty body",
+			"грязное тело",
 			"dirtyBody",
 			PresetColour.CLOTHING_WHITE,
 			false,
@@ -2509,9 +2490,9 @@ public class StatusEffect {
 						if(sb.length()>0) {
 							sb.append("<br/>");
 						}
-						sb.append("You use your <b>"+clothing.getDisplayName(true)+"</b> to clean your "+clothing.getSlotEquippedTo().getName()
+						sb.append("Вы используете свою <b>"+clothing.getDisplayName(true)+"</b>, чтобы очистить свою "+clothing.getSlotEquippedTo().getName()
 								+(seals
-										?" as you equip "+(clothing.getClothingType().isPlural()?"them":"it")
+										?" когда вы надеваете "+(clothing.getClothingType().isPlural()?"их":"это")
 										:" как вы вставляете "+(clothing.getClothingType().isPlural()?" их в ваши отверстия":" её в ваше отверстие"))
 								+".");
 						
@@ -2522,7 +2503,7 @@ public class StatusEffect {
 								sb.append("<br/>");
 							}
 							sb.append(" Вы используете свой <b>"+clothing.getDisplayName(true)+"</b> для очистки вашего "+clothing.getSlotEquippedTo().getName()
-									+", <b style='color:"+PresetColour.CUM.toWebHexString()+";'>dirtying "+(clothing.getClothingType().isPlural()?"them":"it")+" в процессе</b>.");
+									+", <b style='color:"+PresetColour.CUM.toWebHexString()+";'> пачкает "+(clothing.getClothingType().isPlural()?"их":"это")+" в процессе</b>.");
 						}
 					}
 					
@@ -2536,7 +2517,7 @@ public class StatusEffect {
 									sb.append("<br/>");
 								}
 								sb.append(" Вы используете свой <b>"+clothing.getDisplayName(true)+"</b> для очистки вашего "+clothing.getSlotEquippedTo().getName()
-										+", <b style='color:"+PresetColour.CUM.toWebHexString()+";'>dirtying "+(clothing.getClothingType().isPlural()?"them":"it")+" в процессе</b>.");
+										+", <b style='color:"+PresetColour.CUM.toWebHexString()+";'> пачкает "+(clothing.getClothingType().isPlural()?"их":"это")+" в процессе</b>.");
 							}
 						}
 					}
@@ -2576,7 +2557,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect BODY_CUM_MASOCHIST = new AbstractStatusEffect(80,
-			"dirty body",
+			"грязное тело",
 			"dirtyBodyMasochist",
 			PresetColour.CLOTHING_WHITE,
 			false,
@@ -2646,7 +2627,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect CLOTHING_ENCHANTMENT_OVER_LIMIT = new AbstractStatusEffect(80,
-			"unstable enchantments",
+			"нестабильные чары",
 			"unstable_enchantment_1",
 			PresetColour.ATTRIBUTE_CORRUPTION,
 			false,
@@ -2671,13 +2652,13 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect CLOTHING_ENCHANTMENT_OVER_LIMIT_2 = new AbstractStatusEffect(80,
-			"volatile enchantments",
+			"летучие чары",
 			"unstable_enchantment_2",
 			PresetColour.ATTRIBUTE_CORRUPTION,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_CORRUPTION, 50f)),
-			Util.newArrayListOfValues("[style.boldBad(-50%)] [style.boldHealth(Maximum "+Attribute.HEALTH_MAXIMUM.getName()+")]",
-					"[style.boldBad(-50%)] [style.boldMana(Maximum "+Attribute.MANA_MAXIMUM.getName()+")]")) {
+			Util.newArrayListOfValues("[style.boldBad(-50%)] [style.boldHealth(Макс. "+Attribute.HEALTH_MAXIMUM.getName()+")]",
+					"[style.boldBad(-50%)] [style.boldMana(Макс. "+Attribute.MANA_MAXIMUM.getName()+")]")) {
 		@Override
 		public String getDescription(GameCharacter target) {
 			return UtilText.parse(target,
@@ -2696,14 +2677,14 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect CLOTHING_ENCHANTMENT_OVER_LIMIT_3 = new AbstractStatusEffect(80,
-			"shattered enchantments",
+			"разрушенные чары",
 			"unstable_enchantment_3",
 			PresetColour.ATTRIBUTE_CORRUPTION,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_CORRUPTION, 100f)),
-			Util.newArrayListOfValues("[style.boldHealth(Maximum "+Attribute.HEALTH_MAXIMUM.getName()+")] [style.boldTerrible(set to 1)]",
-					"[style.boldMana(Maximum "+Attribute.MANA_MAXIMUM.getName()+")] [style.boldTerrible(set to 1)]",
-					"[style.boldTerrible(All shielding set to 0)]")) {
+			Util.newArrayListOfValues("[style.boldHealth(Макс. "+Attribute.HEALTH_MAXIMUM.getName()+")] [style.boldTerrible(установлено 1)]",
+					"[style.boldMana(Максимум "+Attribute.MANA_MAXIMUM.getName()+")] [style.boldTerrible(установлено 1)]",
+					"[style.boldTerrible(Все щиты сброшены до 0)]")) {
 		@Override
 		public String getDescription(GameCharacter target) {
 			return UtilText.parse(target,
@@ -2721,7 +2702,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect CLOTHING_JINXED = new AbstractStatusEffect(80,
-			"sealed clothing",
+			"запечатанная одежда",
 			"jinxed_clothing",
 			PresetColour.ATTRIBUTE_CORRUPTION,
 			false,
@@ -2761,7 +2742,7 @@ public class StatusEffect {
 								+ "</p>"
 								+ "<p>"
 									+ "В конце концов, сдавшись, вы решаете подойти к Лилайе и спросить, что происходит с "+(clothing.getClothingType().isPlural()?"these":"this")
-										+" <b style='color:"+PresetColour.RARITY_JINXED.toWebHexString()+";'>sealed</b> "+clothing.getName()+"."
+										+" <b style='color:"+PresetColour.RARITY_JINXED.toWebHexString()+";'>запечатанная</b> "+clothing.getName()+"."
 									+ "Может, она знает способ снять заклятие?"
 								+ "</p>"
 								+(!((PlayerCharacter) target).hasQuest(QuestLine.SIDE_ENCHANTMENT_DISCOVERY)
@@ -2813,8 +2794,8 @@ public class StatusEffect {
 	// OTHER:
 
 	public static AbstractStatusEffect SLEEPING = new AbstractStatusEffect(80,
-			"sleeping",
-			"sleeping",
+			"спящий",
+			"спящий",
 			PresetColour.SLEEP,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.ACTION_POINTS, -5f)),
@@ -2841,7 +2822,7 @@ public class StatusEffect {
 	};
 
 	public static AbstractStatusEffect SLEEPING_HEAVY = new AbstractStatusEffect(80,
-			"heavily sleeping",
+			"крепко спящий",
 			"sleeping_heavy",
 			PresetColour.SLEEP_HEAVY,
 			PresetColour.GENERIC_TERRIBLE,
@@ -2875,7 +2856,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect WELL_RESTED = new AbstractStatusEffect(80,
-			"well rested",
+			"отдохнувший",
 			"wellRested",
 			PresetColour.ATTRIBUTE_HEALTH,
 			PresetColour.ATTRIBUTE_MANA,
@@ -3003,18 +2984,18 @@ public class StatusEffect {
 //	};
 	
 	public static AbstractStatusEffect OVERWORKED_1 = new AbstractStatusEffect(80,
-			"slightly overworked",
-			"overworked1",
+			"слегка переутомлен",
+			"переутомлен1",
 			PresetColour.BASE_RED,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.HEALTH_MAXIMUM, -10f),
 					new Value<>(Attribute.MANA_MAXIMUM, -10f)),
 			Util.newArrayListOfValues(
 					"[style.colourMinorBad(Менее вероятно)] использовать комнаты для отдыха",
-					"While working:",
+					"Во время работы:",
 					"[style.boldBad(-50%)] [style.colourAffection(Привязанность)]",
 					"[style.boldBad(-0.5)] [style.colourAffection(Привязанность/час)]",
-					"[style.boldBad(-25%)] [style.colourExperience(experience)] gain chance")) {
+					"[style.boldBad(-25%)] шанс получения [style.colourExperience(опыта)]")) {
 		@Override
 		public String getDescription(GameCharacter target) {
 			if(target!=null) {
@@ -3034,18 +3015,18 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect OVERWORKED_2 = new AbstractStatusEffect(80,
-			"overworked",
-			"overworked2",
+			"переутомлен",
+			"переутомлен2",
 			PresetColour.BASE_RED,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.HEALTH_MAXIMUM, -25f),
 					new Value<>(Attribute.MANA_MAXIMUM, -25f)),
 			Util.newArrayListOfValues(
-					"[style.colourBad(Unlikely)] to use slave lounges",
-					"While working:",
-					"[style.boldBad(-80%)] [style.colourAffection(Affection gains)]",
-					"[style.boldBad(-1)] [style.colourAffection(Affection/hour)]",
-					"[style.boldBad(-50%)] [style.colourExperience(experience)] gain chance")) {
+					"[style.colourBad(Маловероятно)] использовать рабские лаунжи",
+					"Во время работы:",
+					"[style.boldBad(-80%)] [style.colourAffection(прирост Привязанности)]",
+					"[style.boldBad(-1)] [style.colourAffection(Привязанность/час)]",
+					"[style.boldBad(-50%)] шанс получения [style.colourExperience(опыта)]")) {
 		@Override
 		public String getDescription(GameCharacter target) {
 			if(target!=null) {
@@ -3065,15 +3046,15 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect OVERWORKED_3 = new AbstractStatusEffect(80,
-			"severely overworked",
-			"overworked3",
+			"сильное переутомление",
+			"переутомление3",
 			PresetColour.BASE_RED,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_PHYSIQUE, -50f),
 					new Value<>(Attribute.MANA_MAXIMUM, -50f)),
 			Util.newArrayListOfValues(
-					"Will [style.colourTerrible(never)] use slave lounges",
-					"While working:",
+					"Будет [style.colourTerrible(никогда)] использовать рабские лаунжи",
+					"Во время работы:",
 					"[style.boldBad(-100%)] [style.colourAffection(Привязанность)]",
 					"[style.boldBad(-2)] [style.colourAffection(Привязанность/час)]",
 					"[style.boldBad(-75%)] [style.colourExperience(опыт)] шанс")) {
@@ -3114,8 +3095,8 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect FATIGUED = new AbstractStatusEffect(80,
-			"fatigued",
-			"fatigued",
+			"усталость",
+			"усталость",
 			PresetColour.ATTRIBUTE_HEALTH,
 			false,
 			Util.newHashMapOfValues(
@@ -3134,7 +3115,7 @@ public class StatusEffect {
 	
 	// Utility status effect to display text of companions leaving:
 	public static AbstractStatusEffect COMPANIONS_LEAVING = new AbstractStatusEffect(80,
-			"Companions Leaving",
+			"Уход спутников",
 			"",
 			PresetColour.BASE_MAGENTA,
 			false,
@@ -3155,14 +3136,14 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect PSYCHOACTIVE = new AbstractStatusEffect(80,
-			"Psychoactive Trip",
-			"psychoactive",
+			"Психоактивный трип",
+			"психоактивный",
 			PresetColour.BASE_YELLOW,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_PHYSIQUE, -5f),
 					new Value<>(Attribute.MAJOR_ARCANE, -5f),
 					new Value<>(Attribute.RESISTANCE_LUST, -25f)),
-			Util.newArrayListOfValues("Открыт для <b style='color: " + PresetColour.PSYCHOACTIVE.toWebHexString() + ";'>Hypnotic Suggestion</b>")) {
+			Util.newArrayListOfValues("Открыт для <b style='color: " + PresetColour.PSYCHOACTIVE.toWebHexString() + ";'>Гипнотическое внушение</b>")) {
 		@Override
 		public String applyEffect(GameCharacter target, int secondsPassed, long totalSecondsPassed) {
 			if(target.isPlayer() && Math.random()<=Util.getModifiedDropoffValue((secondsPassed/60)*0.0075f, 0.5f)) {
@@ -3268,7 +3249,7 @@ public class StatusEffect {
 			if(target.isPlayer()) {
 				return "Ты чувствуешь себя очень странно в данный момент... Странные видения продолжают мелькать перед твоим [pc.eyes], и ты не совсем уверен в своем окружении...";
 			} else {
-				return UtilText.parse(target, "[npc.name] is feeling very peculiar at the moment... Strange visions keep flashing before [npc.her] [npc.eyes], and [npc.she] doesn't seem to be quite sure of [npc.her] surroundings...");
+				return UtilText.parse(target, "[npc.name] сейчас чувствует себя очень странно... Перед глазами [npc.her] [npc.eyes] то и дело мелькают странные видения, а [npc.she], кажется, не совсем понимает, где находится [npc.her]...");
 			}
 		}
 		@Override
@@ -3283,7 +3264,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect CLEANED_MASSAGED = new AbstractStatusEffect(80,
-			"Recently massaged",
+			"Недавно делали массаж",
 			"cleaned_massage",
 			PresetColour.ATTRIBUTE_HEALTH,
 			PresetColour.GENERIC_EXCELLENT,
@@ -3301,7 +3282,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect CLEANED_SHOWER = new AbstractStatusEffect(80,
-			"Recently showered",
+			"Недавно принимал(а) душ",
 			"cleaned_shower",
 			PresetColour.ATTRIBUTE_HEALTH,
 			PresetColour.BASE_AQUA,
@@ -3320,7 +3301,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect CLEANED_BATH = new AbstractStatusEffect(80,
-			"Recently bathed",
+			"Недавно принимал(а) ванну",
 			"cleaned_bath",
 			PresetColour.ATTRIBUTE_HEALTH,
 			PresetColour.BASE_AQUA,
@@ -3344,7 +3325,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect CLEANED_SPA = new AbstractStatusEffect(80,
-			"Spa soak",
+			"Спа-процедуры",
 			"cleaned_spa",
 			PresetColour.ATTRIBUTE_HEALTH,
 			PresetColour.BASE_AQUA,
@@ -3369,8 +3350,8 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect LOLLIPOP_SUCKING = new AbstractStatusEffect(80,
-			"sucking lollipop",
-			"lollipop",
+			"сосет леденец",
+			"леденец",
 			PresetColour.CLOTHING_PINK,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.DAMAGE_LUST, 5f)),
@@ -3386,7 +3367,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect SMOKING = new AbstractStatusEffect(80,
-			"smoking",
+			"курит",
 			"smoking",
 			PresetColour.CLOTHING_ORANGE,
 			PresetColour.CLOTHING_BRASS,
@@ -3417,7 +3398,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect RECENTLY_SMOKED = new AbstractStatusEffect(80,
-			"recently smoked",
+			"недавно курил(а)",
 			"recentlySmoked",
 			PresetColour.CLOTHING_ORANGE,
 			PresetColour.CLOTHING_BRASS,
@@ -3434,7 +3415,7 @@ public class StatusEffect {
 	};
 
 	public static AbstractStatusEffect RECENTLY_EATEN = new AbstractStatusEffect(80,
-			"recently eaten",
+			"недавно ел(а)",
 			"recentlyEaten",
 			PresetColour.BASE_GREEN,
 			PresetColour.BASE_GREEN_LIGHT,
@@ -3501,7 +3482,7 @@ public class StatusEffect {
 	};
 
 	public static AbstractStatusEffect THIRST_QUENCHED = new AbstractStatusEffect(80,
-			"thirst quenched",
+			"жажда утолена",
 			"recentlyDrank",
 			PresetColour.BASE_BLUE,
 			PresetColour.BASE_BLUE_LIGHT,
@@ -3568,8 +3549,8 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect DRUNK_1 = new AbstractStatusEffect(80,
-			"Intoxicated I - Tipsy",
-			"drunk1",
+			"Опьянение I — Подпитие",
+			"пьянство 1",
 			PresetColour.BASE_YELLOW,
 			false,
 			Util.newHashMapOfValues(
@@ -3601,7 +3582,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect DRUNK_2 = new AbstractStatusEffect(80,
 			"Опьянение II - Веселый",
-			"drunk2",
+			"пьянство 2",
 			PresetColour.BASE_YELLOW,
 			false,
 			Util.newHashMapOfValues(
@@ -3632,7 +3613,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect DRUNK_3 = new AbstractStatusEffect(80,
 			"Опьянение III - Пьяный",
-			"drunk3",
+			"пьянство 3",
 			PresetColour.BASE_YELLOW,
 			false,
 			Util.newHashMapOfValues(
@@ -3669,7 +3650,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect DRUNK_4 = new AbstractStatusEffect(80,
 			"Опьянение IV - Забитый",
-			"drunk4",
+			"пьянство 4",
 			PresetColour.BASE_YELLOW,
 			false,
 			Util.newHashMapOfValues(
@@ -3706,8 +3687,8 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect DRUNK_5 = new AbstractStatusEffect(80,
-			"Intoxicated V - Wasted",
-			"drunk5",
+			"Опьянение V — В стельку",
+			"пьянство 5",
 			PresetColour.BASE_YELLOW,
 			false,
 			Util.newHashMapOfValues(
@@ -3744,8 +3725,8 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect ADDICTIONS = new AbstractStatusEffect(80,
-			"addictions",
-			"addictions",
+			"зависимости",
+			"зависимости",
 			PresetColour.BASE_CRIMSON,
 			false,
 			null,
@@ -3797,8 +3778,8 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect WITHDRAWAL_1 = new AbstractStatusEffect(80,
-			"Mild Withdrawal",
-			"withdrawal1",
+			"Легкая ломка",
+			"ломка1",
 			PresetColour.CORRUPTION_STAGE_ONE,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_ARCANE, -2f),
@@ -3860,8 +3841,8 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect WITHDRAWAL_2 = new AbstractStatusEffect(80,
-			"Noticeable Withdrawal",
-			"withdrawal2",
+			"Заметная ломка",
+			"ломка2",
 			PresetColour.CORRUPTION_STAGE_TWO,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_ARCANE, -5f),
@@ -3923,8 +3904,8 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect WITHDRAWAL_3 = new AbstractStatusEffect(80,
-			"Strong Withdrawal",
-			"withdrawal3",
+			"Сильная ломка",
+			"ломка3",
 			PresetColour.CORRUPTION_STAGE_THREE,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_ARCANE, -10f),
@@ -3986,8 +3967,8 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect WITHDRAWAL_4 = new AbstractStatusEffect(80,
-			"Severe Withdrawal",
-			"withdrawal4",
+			"Тяжелая ломка",
+			"ломка4",
 			PresetColour.CORRUPTION_STAGE_FOUR,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_ARCANE, -25f),
@@ -4049,8 +4030,8 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect WITHDRAWAL_5 = new AbstractStatusEffect(80,
-			"Intense Withdrawal",
-			"withdrawal5",
+			"Мучительная ломка",
+			"ломка5",
 			PresetColour.CORRUPTION_STAGE_FIVE,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_ARCANE, -50f),
@@ -4106,12 +4087,12 @@ public class StatusEffect {
 	};
 
 	public static AbstractStatusEffect MENOPAUSE = new AbstractStatusEffect(80,
-			"Menopause",
-			"menopause",
+			"Менопауза",
+			"менопауза",
 			PresetColour.BASE_CRIMSON,
 			false,
 			null,
-			Util.newArrayListOfValues("[style.colourBad(Total infertility)]")) {
+			Util.newArrayListOfValues("[style.colourBad(Полное бесплодие)]")) {
 		@Override
 		public String applyEffect(GameCharacter target, int secondsPassed, long totalSecondsPassed) {
 			return "";
@@ -4142,7 +4123,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect PREGNANT_0 = new AbstractStatusEffect(80,
 			"риск беременности",
-			"pregnancy0",
+			"беременность0",
 			PresetColour.GENERIC_ARCANE,
 			true,
 			null,
@@ -4207,12 +4188,12 @@ public class StatusEffect {
 						sb.append("<p>");
 							if(target.getBodyMaterial()==BodyMaterial.SLIME) {
 								sb.append("Присмотревшись к своему вздутому, слизистому животу, вы вдруг понимаете, что можете видеть "
-											+Util.intToString(target.getPregnantLitter().getTotalLitterCount())+" маленький слизистый ядро"+(target.getPregnantLitter().getTotalLitterCount()==1?"":"s")+" growing in "
+											+Util.intToString(target.getPregnantLitter().getTotalLitterCount())+" маленький слизистый ядро"+(target.getPregnantLitter().getTotalLitterCount()==1?"":"s")+" растет в "
 											+ (target.hasVagina()
 												?"место, где должен быть ваш живот."
-												:"your belly.")
+												:"твоем животе.")
 										+ " Вы не можете сдержать радостный визг, когда видите свое "
-											+(target.getPregnantLitter().getTotalLitterCount()==1?"child":"children")+"растущая внутри тебя,"
+											+(target.getPregnantLitter().getTotalLitterCount()==1?"ребенок":"дети")+"растущая внутри тебя,"
 													+ "и провести следующие несколько минут"
 													+ (Main.game.getPlayer().isTaur()
 														?"дотянувшись назад, чтобы погладить и потереть"
@@ -4257,9 +4238,9 @@ public class StatusEffect {
 						sb.append("<p>");
 							if(target.getBodyMaterial()==BodyMaterial.SLIME) {
 								sb.append("Когда ты в последний раз смотришь на свой раздутый, слизистый живот, ты вдруг понимаешь, что можешь видеть "
-												+Util.intToString(target.getPregnantLitter().getTotalLitterCount())+" маленький слизистый комок"+(target.getPregnantLitter().getTotalLitterCount()==1?"":"s")+" growing in "
-												+ (target.hasVagina()?"место, где должен быть твой живот.":"your belly.")
-											+ "Ты не можешь сдержать крик удивления, когда видишь, как твой "+(target.getPregnantLitter().getTotalLitterCount()==1?"child":"children")
+												+Util.intToString(target.getPregnantLitter().getTotalLitterCount())+" маленький слизистый комок"+(target.getPregnantLitter().getTotalLitterCount()==1?"":"s")+" растут в "
+												+ (target.hasVagina()?"место, где должен быть твой живот.":"твоем животе.")
+											+ "Ты не можешь сдержать крик удивления, когда видишь, как твой "+(target.getPregnantLitter().getTotalLitterCount()==1?"ребенок":"дети")
 												+"растет внутри тебя, и проводишь следующие несколько минут "
 													+ (Main.game.getPlayer().isTaur()
 														?"простясь назад, чтобы погладить и потереть"
@@ -4290,9 +4271,9 @@ public class StatusEffect {
 					if(target.getBodyMaterial()==BodyMaterial.SLIME) {
 						sb.append("<p>");
 							sb.append("Взглянув на свой вздутый, слизистый живот, вы видите "+Util.intToString(target.getPregnantLitter().getTotalLitterCount())+"маленький слизистый ядро"
-											+(target.getPregnantLitter().getTotalLitterCount()==1?"":"s")+" growing in "+ (target.hasVagina()?"место, где должен быть ваш живот.":"your belly."));
+											+(target.getPregnantLitter().getTotalLitterCount()==1?"":"s")+" растут в "+ (target.hasVagina()?"место, где должен быть ваш живот.":"твоем животе."));
 							if(!target.getFetishDesire(Fetish.FETISH_PREGNANCY).isNegative()) {
-								sb.append("Вы не можете не выпустить счастливый маленький вздох, когда видите свой "+(target.getPregnantLitter().getTotalLitterCount()==1?"child":"children")
+								sb.append("Вы не можете не выпустить счастливый маленький вздох, когда видите свой "+(target.getPregnantLitter().getTotalLitterCount()==1?"ребенок":"дети")
 											+"растущая внутри тебя, и провести следующие несколько минут "
 												+(Main.game.getPlayer().isTaur()
 													?"дотянувшись назад, чтобы погладить и потереть"
@@ -4439,8 +4420,8 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect PREGNANT_1 = new AbstractStatusEffect(80,
-			"pregnant",
-			"pregnancy1",
+			"беременна",
+			"беременность1",
 			PresetColour.GENERIC_ARCANE,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.ENERGY_SHIELDING, 2f)),
@@ -4517,7 +4498,7 @@ public class StatusEffect {
 			if(target.getBodyMaterial()==BodyMaterial.SLIME) {
 				sb.append("<p>"
 						+ "Просвечивая сквозь слайм, из которого состоит ваше тело, вы видите, что "
-						+Util.intToString(target.getPregnantLitter().getTotalLitterCount())+" slime core"+(target.getPregnantLitter().getTotalLitterCount()==1?"":"s")+" внутри вас выросли..."
+						+Util.intToString(target.getPregnantLitter().getTotalLitterCount())+" ядро слайма"+(target.getPregnantLitter().getTotalLitterCount()==1?"":"s")+" внутри вас выросли..."
 				+ "</p>");
 			}
 			sb.append("<p style='text-align:center;'>"
@@ -4527,13 +4508,12 @@ public class StatusEffect {
 			if(breastGrowth) {
 				sb.append("<p><i>"
 							+"Ваши груди опухли и увеличились, поскольку ваше тело готовится к началу лактации."
-							+ " У вас теперь есть [style.boldSex([pc.breastSize]"  + (target.getBreastRawSizeValue()>CupSize.AA.getMeasurement()?", "+target.getBreastSize().getCupSizeName()+"-cup":"") + " breasts)]!"
-						+ "</i></p>");
+							+ " У вас теперь есть [style.boldSex([pc.breastSize]"  + (target.getBreastRawSizeValue()>CupSize.AA.getMeasurement()?", "+target.getBreastSize().getCupSizeName()+"-го размера":"") + " грудь)]!</i></p>");
 			}
 			if(udderGrowth) {
 				sb.append("<p><i>"
 							+"Ваши [pc.udders] опухли и увеличились в размерах, поскольку ваше тело готовится к началу лактации."
-							+ " У вас теперь есть [style.boldSex([pc.udderSize]"  + (target.getBreastCrotchRawSizeValue()>CupSize.AA.getMeasurement()?", "+target.getBreastCrotchSize().getCupSizeName()+"-cup":"") + " [pc.udders])]!"
+							+ " У вас теперь есть [style.boldSex([pc.udderSize]"  + (target.getBreastCrotchRawSizeValue()>CupSize.AA.getMeasurement()?", "+target.getBreastCrotchSize().getCupSizeName()+"-го размера":"") + " [pc.udders])]!"
 						+ "</i></p>");
 			}
 			
@@ -4546,8 +4526,8 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect PREGNANT_2 = new AbstractStatusEffect(80,
-			"heavily pregnant",
-			"pregnancy2",
+			"на позднем сроке беременности",
+			"беременность2",
 			PresetColour.GENERIC_ARCANE,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.ENERGY_SHIELDING, 4f)),
@@ -4607,8 +4587,8 @@ public class StatusEffect {
 				
 				if(target.getBodyMaterial()==BodyMaterial.SLIME) {
 					sb.append(" Видя сквозь полупрозрачный слайм, из которого состоит ваше тело, вы видите, что "
-								+Util.intToString(target.getPregnantLitter().getTotalLitterCount())+" slime core"
-								+(target.getPregnantLitter().getTotalLitterCount()==1?"":"s")+" растущий внутри вас "+(target.getPregnantLitter().getTotalLitterCount()==1?"has":"have")
+								+Util.intToString(target.getPregnantLitter().getTotalLitterCount())+" ядро слайма"
+								+(target.getPregnantLitter().getTotalLitterCount()==1?"":"s")+" растущий внутри вас "+(target.getPregnantLitter().getTotalLitterCount()==1?"имеет":"имеют")
 								+" вырос до размеров вашего собственного, и вы знаете, что теперь готовы к родам.");
 					
 				} else if(target.isVaginaEggLayer()) {
@@ -4628,20 +4608,20 @@ public class StatusEffect {
 			
 			sb.append("<p>");
 				if(target.hasFetish(Fetish.FETISH_PREGNANCY)) {
-					sb.append("[pc.thought(I really should go and see Lilaya... Or maybe I'll stay like this for a little while!)]");
+					sb.append("[pc.thought(Надо бы сходить к Lilaya... А может, полежу так еще немного!)]");
 				} else if(target.getFetishDesire(Fetish.FETISH_PREGNANCY).isNegative()) {
-					sb.append("[pc.thought(Finally! I can go and see Lilaya and get "+(target.getPregnantLitter().getTotalLitterCount()==1?"this brat":"these brats")+" out of me! I <b>hate</b> being pregnant!)]");
+					sb.append("[pc.thought(Наконец-то! Теперь можно пойти к Lilaya и получить "+(target.getPregnantLitter().getTotalLitterCount()==1?"эту девчонку":"эти сопляки")+" из меня! Я <b>ненавижу</b> быть беременной!)]");
 				} else {
-					sb.append("[pc.thought(I really should go and see Lilaya...)]");
+					sb.append("[pc.thought(Мне действительно стоит сходить и навестить Lilaya...)]");
 				}
 			sb.append("</p>");
 			
 			if(lactationIncrease) {
 				sb.append("<p><i>");
 					if(target.isTaur()) {
-						sb.append("Your breasts have gotten noticeably heavier, and as you experimentally grope your chest, you feel droplets of [pc.milk] beading up on your engorged teats.");
+						sb.append("Твоя грудь заметно отяжелела, и когда ты экспериментально ощупываешь её, то чувствуешь, как на набухших сосках проступают капли [pc.milk].");
 					} else {
-						sb.append("Your breasts have gotten noticeably heavier, and as you softly stroke the round bump in your belly, you feel droplets of [pc.milk] beading up on your engorged teats.");
+						sb.append("Твоя грудь заметно отяжелела, и когда ты нежно гладишь округлый живот, то чувствуешь, как на набухших сосках проступают капли [pc.milk].");
 					}
 					sb.append(" Вы теперь можете производить [style.boldSex(" + target.getBreastMilkStorage().getDescriptor() + " [pc.milk] ("+ Units.fluid(target.getBreastRawMilkStorageValue(), Units.UnitType.LONG)+"))]!");
 				sb.append("</i></p>");
@@ -4666,11 +4646,11 @@ public class StatusEffect {
 	};
 	public static AbstractStatusEffect PREGNANT_3 = new AbstractStatusEffect(80,
 			"готов к родам",
-			"pregnancy3",
+			"беременность3",
 			PresetColour.GENERIC_ARCANE,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.ENERGY_SHIELDING, 6f)),
-			Util.newArrayListOfValues("-15% [style.colourHealth(Maximum "+Attribute.HEALTH_MAXIMUM.getName()+")]")) {
+			Util.newArrayListOfValues("-15% [style.colourHealth(Максимальное "+Attribute.HEALTH_MAXIMUM.getName()+")]")) {
 		@Override
 		public String getDescription(GameCharacter target) {
 			return UtilText.parse(target,
@@ -4704,7 +4684,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect INCUBATING_EGGS_STOMACH_1 = new AbstractStatusEffect(80,
 			" Инкубация яиц (Живот)",
-			"incubation1",
+			"инкубация1",
 			PresetColour.GENERIC_ARCANE,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.ENERGY_SHIELDING, 2f)),
@@ -4717,8 +4697,7 @@ public class StatusEffect {
 		@Override
 		public String getDescription(GameCharacter target) {
 			return UtilText.parse(target,
-						"From one of [npc.namePos] recent sexual encounters, [npc.sheHas] had [npc.her] stomach filled with eggs!"
-							+ " Благодаря эффектам аркана, эти яйца наверняка быстро созреют и перейдут к следующей стадии инкубации в течение нескольких дней.");
+						"После одного из недавних сексуальных контактов [npc.namePos], [npc.sheHas] набила [npc.her] живот яйцами! Благодаря эффектам аркана, эти яйца наверняка быстро созреют и перейдут к следующей стадии инкубации в течение нескольких дней.");
 		}
 		@Override
 		public String extraRemovalEffects(GameCharacter target) {
@@ -4749,7 +4728,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect INCUBATING_EGGS_STOMACH_2 = new AbstractStatusEffect(80,
 			"Продвинутая инкубация яиц (живот)",
-			"incubation2",
+			"инкубация2",
 			PresetColour.GENERIC_ARCANE,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.ENERGY_SHIELDING, 4f)),
@@ -4762,8 +4741,7 @@ public class StatusEffect {
 		@Override
 		public String getDescription(GameCharacter target) {
 			return UtilText.parse(target,
-						"From one of [npc.namePos] recent sexual encounters, [npc.sheHas] had [npc.her] stomach filled with eggs!"
-							+ "@@H0@@");
+						"From one of [npc.namePos] recent sexual encounters, [npc.sheHas] had [npc.her] stomach filled with eggs!@@H0@@");
 		}
 		@Override
 		public String extraRemovalEffects(GameCharacter target) {
@@ -4801,7 +4779,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect INCUBATING_EGGS_STOMACH_3 = new AbstractStatusEffect(80,
 			"Завершена инкубация яиц (Желудок)",
-			"incubation3",
+			"инкубация3",
 			PresetColour.GENERIC_ARCANE,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.ENERGY_SHIELDING, 6f)),
@@ -4833,7 +4811,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect INCUBATING_EGGS_NIPPLES_1 = new AbstractStatusEffect(80,
 			"Инкубация яиц (Грудь)",
-			"incubation1",
+			"инкубация1",
 			PresetColour.GENERIC_ARCANE,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.ENERGY_SHIELDING, 2f)),
@@ -4841,7 +4819,7 @@ public class StatusEffect {
 		@Override
 		public List<String> getExtraEffects(GameCharacter target) {
 			int count = target.getIncubationLitter(SexAreaOrifice.NIPPLE).getTotalLitterCount();
-			return Util.newArrayListOfValues("[style.colourYellowLight(Инкубация)] [style.colourGood("+Util.intToString(count)+")] [style.colourYellowLight(egg"+(count>1?"s":"")+")]");
+			return Util.newArrayListOfValues("[style.colourYellowLight(Инкубация)] [style.colourGood("+Util.intToString(count)+")] [style.colourYellowLight(яиц"+(count>1?"s":"")+")]");
 		}
 		@Override
 		public String getDescription(GameCharacter target) {
@@ -4879,7 +4857,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect INCUBATING_EGGS_NIPPLES_2 = new AbstractStatusEffect(80,
 			"Расширенная инкубация яиц (Грудь)",
-			"incubation2",
+			"инкубация2",
 			PresetColour.GENERIC_ARCANE,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.ENERGY_SHIELDING, 4f)),
@@ -4887,7 +4865,7 @@ public class StatusEffect {
 		@Override
 		public List<String> getExtraEffects(GameCharacter target) {
 			int count = target.getIncubationLitter(SexAreaOrifice.NIPPLE).getTotalLitterCount();
-			return Util.newArrayListOfValues("[style.colourYellowLight(Инкубация)] [style.colourGood("+Util.intToString(count)+")] [style.colourYellowLight(egg"+(count>1?"s":"")+")]");
+			return Util.newArrayListOfValues("[style.colourYellowLight(Инкубация)] [style.colourGood("+Util.intToString(count)+")] [style.colourYellowLight(яиц"+(count>1?"s":"")+")]");
 		}
 		@Override
 		public String getDescription(GameCharacter target) {
@@ -4930,7 +4908,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect INCUBATING_EGGS_NIPPLES_3 = new AbstractStatusEffect(80,
 			"Завершена инкубация яиц (Грудь)",
-			"incubation3",
+			"инкубация3",
 			PresetColour.GENERIC_ARCANE,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.ENERGY_SHIELDING, 6f)),
@@ -4962,7 +4940,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect INCUBATING_EGGS_NIPPLES_CROTCH_1 = new AbstractStatusEffect(80,
 			"Инкубация яиц (Грудь-соски)",
-			"incubation1",
+			"инкубация1",
 			PresetColour.GENERIC_ARCANE,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.ENERGY_SHIELDING, 2f)),
@@ -5015,7 +4993,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect INCUBATING_EGGS_NIPPLES_CROTCH_2 = new AbstractStatusEffect(80,
 			"Расширенная инкубация яиц (Грудь-соски)",
-			"incubation2",
+			"инкубация2",
 			PresetColour.GENERIC_ARCANE,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.ENERGY_SHIELDING, 4f)),
@@ -5073,7 +5051,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect INCUBATING_EGGS_NIPPLES_CROTCH_3 = new AbstractStatusEffect(80,
 			"Завершена инкубация яиц (Грудь-соски)",
-			"incubation3",
+			"инкубация3",
 			PresetColour.GENERIC_ARCANE,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.ENERGY_SHIELDING, 6f)),
@@ -5113,7 +5091,7 @@ public class StatusEffect {
 
 	public static AbstractStatusEffect INCUBATING_EGGS_SPINNERET_1 = new AbstractStatusEffect(80,
 			"Инкубация яиц (Spinneret)",
-			"incubation1",
+			"инкубация1",
 			PresetColour.GENERIC_ARCANE,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.ENERGY_SHIELDING, 2f)),
@@ -5159,7 +5137,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect INCUBATING_EGGS_SPINNERET_2 = new AbstractStatusEffect(80,
 			"Расширенная инкубация яиц (Spinneret)",
-			"incubation2",
+			"инкубация2",
 			PresetColour.GENERIC_ARCANE,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.ENERGY_SHIELDING, 4f)),
@@ -5167,13 +5145,12 @@ public class StatusEffect {
 		@Override
 		public List<String> getExtraEffects(GameCharacter target) {
 			int count = target.getIncubationLitter(SexAreaOrifice.SPINNERET).getTotalLitterCount();
-			return Util.newArrayListOfValues("[style.colourYellowLight(Incubating)] [style.colourGood("+Util.intToString(count)+")] [style.colourYellowLight(egg"+(count>1?"s":"")+")]");
+			return Util.newArrayListOfValues("[style.colourYellowLight(Инкубация)] [style.colourGood("+Util.intToString(count)+")] [style.colourYellowLight(яиц"+(count>1?"s":"")+")]");
 		}
 		@Override
 		public String getDescription(GameCharacter target) {
 			return UtilText.parse(target,
-						"From one of [npc.namePos] recent sexual encounters, [npc.sheHas] had [npc.her] [npc.spinneret] filled with eggs!"
-							+ " Thanks to the effects of the arcane, these eggs are sure to rapidly mature and advance to the final stage of incubation in a matter of days.");
+						"После одного из недавних сексуальных контактов [npc.namePos], [npc.sheHas] оказалась с [npc.spinneret], полным [npc.her]! Благодаря эффектам арканы, эти яйца наверняка быстро созреют и перейдут к финальной стадии инкубации всего за несколько дней.");
 		}
 		@Override
 		public String extraRemovalEffects(GameCharacter target) {
@@ -5184,14 +5161,9 @@ public class StatusEffect {
 			
 			StringBuilder sb = new StringBuilder();
 
-			sb.append("<p>"
-						+ "From their significant weight, you're sure that the eggs in your [npc.spinneret] have by now reached full maturity, and could be laid and hatched at any time of your choosing."
-					+ "</p>");
+			sb.append("<p>Судя по их значительному весу, вы уверены, что яйца в вашем [npc.spinneret] к этому моменту полностью созрели и могут быть отложены и вылуплены в любое удобное для вас время.</p>");
 			
-			sb.append("<p style='text-align:center;'>"
-						+ "[style.boldSex(You're now ready to lay the eggs that have been incubating in your [npc.spinneret]!)]"
-						+ "<br/>(To lay your eggs, open your phone's menu and access the 'Eggs' tab.)"
-					+ "</p>");
+			sb.append("<p style='text-align:center;'>[style.boldSex(Теперь ты готова отложить яйца, что созревали в твоей [npc.spinneret]!)]<br/>(Чтобы отложить яйца, открой меню телефона и перейди во вкладку «Яйца».)</p>");
 			
 			if(!Main.game.getPlayer().hasQuest(QuestLine.SIDE_FIRST_TIME_INCUBATION)) {
 				sb.append(Main.game.getPlayer().startQuest(QuestLine.SIDE_FIRST_TIME_INCUBATION));
@@ -5209,8 +5181,8 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect INCUBATING_EGGS_SPINNERET_3 = new AbstractStatusEffect(80,
-			"Completed Egg Incubation (Spinneret)",
-			"incubation3",
+			"Инкубация яйца завершена (Паучьи железы)",
+			"инкубация3",
 			PresetColour.GENERIC_ARCANE,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.ENERGY_SHIELDING, 6f)),
@@ -5218,7 +5190,7 @@ public class StatusEffect {
 		@Override
 		public List<String> getExtraEffects(GameCharacter target) {
 			int count = target.getIncubationLitter(SexAreaOrifice.SPINNERET).getTotalLitterCount();
-			return Util.newArrayListOfValues("[style.colourYellowLight(Incubating)] [style.colourGood("+Util.intToString(count)+")] [style.colourYellowLight(egg"+(count>1?"s":"")+")]");
+			return Util.newArrayListOfValues("[style.colourYellowLight(Инкубация)] [style.colourGood("+Util.intToString(count)+")] [style.colourYellowLight(яиц"+(count>1?"s":"")+")]");
 		}
 		@Override
 		public String getDescription(GameCharacter target) {
@@ -5242,8 +5214,8 @@ public class StatusEffect {
 	};
 
 	public static AbstractStatusEffect INCUBATING_EGGS_WOMB_1 = new AbstractStatusEffect(80,
-			"Egg Incubation (Womb)",
-			"incubation1",
+			"Инкубация яйца (Утроба)",
+			"инкубация1",
 			PresetColour.GENERIC_ARCANE,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.ENERGY_SHIELDING, 2f)),
@@ -5251,13 +5223,12 @@ public class StatusEffect {
 		@Override
 		public List<String> getExtraEffects(GameCharacter target) {
 			int count = target.getIncubationLitter(SexAreaOrifice.VAGINA).getTotalLitterCount();
-			return Util.newArrayListOfValues("[style.colourYellowLight(Incubating)] [style.colourGood("+Util.intToString(count)+")] [style.colourYellowLight(egg"+(count>1?"s":"")+")]");
+			return Util.newArrayListOfValues("[style.colourYellowLight(Инкубация)] [style.colourGood("+Util.intToString(count)+")] [style.colourYellowLight(яиц"+(count>1?"s":"")+")]");
 		}
 		@Override
 		public String getDescription(GameCharacter target) {
 			return UtilText.parse(target,
-						"From one of [npc.namePos] recent sexual encounters, [npc.sheHas] had [npc.her] womb filled with eggs!"
-							+ " Thanks to the effects of the arcane, these eggs are sure to rapidly mature and advance to the next stage of incubation in a matter of days.");
+						"В результате одного из недавних сексуальных контактов [npc.namePos], [npc.sheHas] [npc.her] заполнила свою утробу яйцами! Благодаря эффектам арканы, эти яйца наверняка быстро созреют и перейдут на следующую стадию инкубации всего за несколько дней.");
 		}
 		@Override
 		public String extraRemovalEffects(GameCharacter target) {
@@ -5268,12 +5239,7 @@ public class StatusEffect {
 			
 			StringBuilder sb = new StringBuilder();
 
-			sb.append("<p>"
-						+ "The weight in your womb has gotten noticeably heavier, and you can't help but wonder how long it will be before you're ready to lay the eggs which are incubating in there..."
-					+ "</p>"
-					+ "<p style='text-align:center;'>"
-						+ "[style.boldSex(Яйца в твоем чреве выросли в размерах!)]"
-					+ "</p>");
+			sb.append("<p>Тяжесть в твоей утробе стала заметно сильнее, и ты невольно задаешься вопросом: сколько еще осталось до того момента, когда ты будешь готова отложить яйца, созревающие внутри...</p><p style='text-align:center;'>[style.boldSex(Яйца в твоем чреве выросли в размерах!)]</p>");
 			
 			return UtilText.parse(target, sb.toString());
 		}
@@ -5289,7 +5255,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect INCUBATING_EGGS_WOMB_2 = new AbstractStatusEffect(80,
 			"Продвинутая инкубация яиц (Черево)",
-			"incubation2",
+			"инкубация2",
 			PresetColour.GENERIC_ARCANE,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.ENERGY_SHIELDING, 4f)),
@@ -5340,7 +5306,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect INCUBATING_EGGS_WOMB_3 = new AbstractStatusEffect(80,
 			"Завершена инкубация яиц (Черево)",
-			"incubation3",
+			"инкубация3",
 			PresetColour.GENERIC_ARCANE,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.ENERGY_SHIELDING, 6f)),
@@ -5371,7 +5337,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect VIXENS_VIRILITY = new AbstractStatusEffect(80,
-			"pharmaceutical fertility",
+			"фармацевтическая фертильность",
 			"vixensVirility",
 			PresetColour.GENERIC_SEX,
 			true,
@@ -5389,7 +5355,7 @@ public class StatusEffect {
 	};
 
 	public static AbstractStatusEffect PROMISCUITY_PILL = new AbstractStatusEffect(80,
-			"pharmaceutical sterility",
+			"фармацевтическая стерильность",
 			"promiscuityPill",
 			PresetColour.GENERIC_SEX,
 			true,
@@ -5449,7 +5415,7 @@ public class StatusEffect {
 	};
 
 	public static AbstractStatusEffect LUBE_PILL = new AbstractStatusEffect(80,
-			"lubricated body",
+			"смазанное тело",
 			"lube_pill",
 			PresetColour.WETNESS,
 			PresetColour.GENERIC_EXCELLENT,
@@ -5481,7 +5447,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect CUM_PRODUCTION = new AbstractStatusEffect(80,
-			"Cum Production",
+			"Выработка спермы",
 			"cumProduction",
 			PresetColour.GENERIC_SEX,
 			true,
@@ -5514,7 +5480,7 @@ public class StatusEffect {
 	};
 
 	public static AbstractStatusEffect CUM_FULL = new AbstractStatusEffect(80,
-			"Full Balls",
+			"Полные яйца",
 			"cumFull",
 			PresetColour.GENERIC_SEX,
 			true,
@@ -5530,7 +5496,7 @@ public class StatusEffect {
 			
 			return UtilText.parse(target, "[npc.NamePos] яички полностью заполнены [npc.cum] ("+Units.fluid(target.getPenisRawCumStorageValue())+"),"
 					+ " и [npc.she] не может дождаться следующего раза, когда [npc.sheIs] сможет их опорожнить."
-					+ " [npc.She] будет эякулировать "+Units.fluid(target.getPenisRawOrgasmCumQuantity())+" при оргазме, и затем будет восстанавливать [npc.cum] со скоростью "+Units.fluid(cumRegenRate)+"/minute.");
+					+ " [npc.She] будет эякулировать "+Units.fluid(target.getPenisRawOrgasmCumQuantity())+" при оргазме, и затем будет восстанавливать [npc.cum] со скоростью "+Units.fluid(cumRegenRate)+"/мин.");
 		}
 		@Override
 		public boolean isConditionsMet(GameCharacter target) {
@@ -5547,7 +5513,7 @@ public class StatusEffect {
 	};
 
 	public static AbstractStatusEffect MILK_PRODUCTION = new AbstractStatusEffect(80,
-			"Milk Production",
+			"Выработка молока",
 			"milkProduction",
 			PresetColour.GENERIC_SEX,
 			true,
@@ -5564,8 +5530,7 @@ public class StatusEffect {
 
 			return UtilText.parse(target,
 					"[npc.NamePos] груди производят [npc.milk] с индивидуальной скоростью "+Units.fluid(milkRegenRate)+"/minute,"
-							+ " в общей сложности [style.colourGood("+Units.fluid(milkRegenRate * target.getBreastRows() * 2)+"/minute)] (as [npc.sheHasFull] [npc.totalBreasts] breasts)."
-					+ " They have stored "+Units.fluid(target.getBreastRawStoredMilkValue())+", out of a maximum of "+Units.fluid(target.getBreastRawMilkStorageValue())+".");
+							+ " в общей сложности [style.colourGood("+Units.fluid(milkRegenRate * target.getBreastRows() * 2)+"/мин)] (в [npc.sheHasFull] [npc.totalBreasts] груди). В них накоплено "+Units.fluid(target.getBreastRawStoredMilkValue())+", из максимума "+Units.fluid(target.getBreastRawMilkStorageValue())+".");
 		}
 		@Override
 		public boolean isConditionsMet(GameCharacter target) {
@@ -5578,7 +5543,7 @@ public class StatusEffect {
 	};
 
 	public static AbstractStatusEffect MILK_FULL = new AbstractStatusEffect(80,
-			"Full Breasts",
+			"Наполненная грудь",
 			"milkFull",
 			PresetColour.GENERIC_SEX,
 			true,
@@ -5593,9 +5558,7 @@ public class StatusEffect {
 			float milkRegenRate = target.getLactationRegenerationPerSecond(false) * 60;
 			//milkRegenRate+" |"+
 			return UtilText.parse(target,
-					"[npc.NamePos] [npc.breasts] are filled with "+Units.fluid(target.getBreastRawMilkStorageValue())+" of [npc.milk].<br/>"
-						+ "They produce more [npc.milk] at an individual rate of "+Units.fluid(milkRegenRate)+"/minute,"
-						+ " totalling [style.colourGood("+Units.fluid(milkRegenRate * target.getBreastRows() * 2)+"/minute)] (as [npc.sheHasFull] [npc.totalBreasts] breasts).");
+					"[npc.NamePos] [npc.breasts] наполнены "+Units.fluid(target.getBreastRawMilkStorageValue())+" [npc.milk].<br/>Они производят больше [npc.milk] с индивидуальной скоростью "+Units.fluid(milkRegenRate)+"/мин, всего [style.colourGood("+Units.fluid(milkRegenRate * target.getBreastRows() * 2)+"/мин)] (в [npc.sheHasFull] [npc.totalBreasts] груди).");
 		}
 		@Override
 		public boolean isConditionsMet(GameCharacter target) {
@@ -5609,7 +5572,7 @@ public class StatusEffect {
 	};
 
 	public static AbstractStatusEffect MILK_CROTCH_PRODUCTION = new AbstractStatusEffect(80,
-			"Crotch-boob Milk Production",
+			"Выработка молока из лобка",
 			"milkCrotchProduction",
 			PresetColour.GENERIC_SEX,
 			true,
@@ -5620,7 +5583,7 @@ public class StatusEffect {
 			if(target==null) {
 				return super.getName(target);
 			}
-			return UtilText.parse(target, "[npc.CrotchBoob] Milk Production");
+			return UtilText.parse(target, "[npc.CrotchBoob] Выработка молока");
 		}
 		@Override
 		public String applyEffect(GameCharacter target, int secondsPassed, long totalSecondsPassed) {
@@ -5672,8 +5635,7 @@ public class StatusEffect {
 		
 			return UtilText.parse(target,
 					" [npc.NamePos] [npc.crotchBoobs] наполнены "+Units.fluid(target.getBreastCrotchRawMilkStorageValue())+" [npc.crotchMilk].<br/>"
-							+ " Они производят больше [npc.crotchMilk] с индивидуальной скоростью "+Units.fluid(milkRegenRate)+"/minute,"
-							+ " totalling [style.colourGood("+Units.fluid(milkRegenRate * Math.max(1, target.getBreastCrotchRows()*2))+"/minute)] (as [npc.sheHasFull] [npc.totalCrotchBoobs] [npc.crotchBoobs]).");
+							+ " Они производят больше [npc.crotchMilk] с индивидуальной скоростью "+Units.fluid(milkRegenRate)+"/мин, всего [style.colourGood("+Units.fluid(milkRegenRate * Math.max(1, target.getBreastCrotchRows()*2))+"/мин)] (как [npc.sheHasFull] [npc.totalCrotchBoobs] [npc.crotchBoobs]).");
 		}
 		@Override
 		public boolean isConditionsMet(GameCharacter target) {
@@ -5688,8 +5650,8 @@ public class StatusEffect {
 	};
 
 	public static AbstractStatusEffect STRETCHING_ORIFICE = new AbstractStatusEffect(80,
-			"Big Toys",
-			"sexEffects/combinationStretching",
+			"Большие игрушки",
+			"секс-эффекты/комбинация_растяжения",
 			PresetColour.BASE_MAGENTA,
 			false,
 			Util.newHashMapOfValues(),
@@ -5747,10 +5709,10 @@ public class StatusEffect {
 		public List<String> getExtraEffects(GameCharacter target) {
 			List<String> effects = new ArrayList<>();
 			
-			Map<SexAreaOrifice, String> orifices = Util.newHashMapOfValues(new Value<>(SexAreaOrifice.VAGINA, "[style.boldVagina(Vagina)]:"),
-					new Value<>(SexAreaOrifice.ANUS, "[style.boldAsshole(Asshole)]:"),
-					new Value<>(SexAreaOrifice.MOUTH, "[style.boldMouth(Throat)]:"),
-					new Value<>(SexAreaOrifice.NIPPLE, "[style.boldNipple(Nipples)]:"));
+			Map<SexAreaOrifice, String> orifices = Util.newHashMapOfValues(new Value<>(SexAreaOrifice.VAGINA, "[style.boldVagina(Киска)]:"),
+					new Value<>(SexAreaOrifice.ANUS, "[style.boldAsshole(Анус)]:"),
+					new Value<>(SexAreaOrifice.MOUTH, "[style.boldMouth(Глотка)]:"),
+					new Value<>(SexAreaOrifice.NIPPLE, "[style.boldNipple(Соски)]:"));
 			List<SexAreaOrifice> orificesFound = new ArrayList<>();
 			for(Entry<SexAreaOrifice, String> orifice : orifices.entrySet()) {
 				if(target.getSexToyOrificeStretching().containsKey(orifice.getKey())) {
@@ -5760,14 +5722,14 @@ public class StatusEffect {
 					float diameter = Penis.getGenericDiameter(length, girth);
 					
 					effects.add(orifice.getValue());
-					effects.add("[style.boldBad(Stretching)] up to [style.boldPinkLight("+Units.size(diameter)+")]");
+					effects.add("[style.boldBad(Растяжение)] до [style.boldPinkLight("+Units.size(diameter)+")]");
 					orificesFound.add(orifice.getKey());
 				}
 				if(target.getSexToyOrificePreventingStretchRecovery().containsKey(orifice.getKey())) {
 					if(!orificesFound.contains(orifice.getKey())) {
 						effects.add(orifice.getValue());
 					}
-					effects.add("[style.boldMinorBad(Preventing)] [style.boldPinkLight(stretch recovery)]");
+					effects.add("[style.boldMinorBad(Замедление)] [style.boldPinkLight(восстановления растяжения)]");
 					orificesFound.add(orifice.getKey());
 				}
 				if(target.getSexToyOrificeTooDeep().containsKey(orifice.getKey())) {
@@ -5776,7 +5738,7 @@ public class StatusEffect {
 					if(!orificesFound.contains(orifice.getKey())) {
 						effects.add(orifice.getValue());
 					}
-					effects.add("[style.boldTerrible(Too deep)] at [style.boldPinkLight("+Units.size(length)+")]");
+					effects.add("[style.boldTerrible(Слишком глубоко)] [style.boldPinkLight(, "+Units.size(length)+")]");
 				}
 			}
 			
@@ -5790,16 +5752,16 @@ public class StatusEffect {
 			for(Entry<SexAreaOrifice, AbstractClothing> entry : target.getSexToyOrificeStretching().entrySet()) {
 				switch(entry.getKey()) {
 					case ANUS:
-						stretching.add("[style.colourAsshole(asshole)]");
+						stretching.add("[style.colourAsshole(задница)]");
 						break;
 					case MOUTH:
-						stretching.add("[style.colourMouth(throat)]");
+						stretching.add("[style.colourMouth(глотка)]");
 						break;
 					case NIPPLE:
-						stretching.add("[style.colourNipple(nipples)]");
+						stretching.add("[style.colourNipple(соски)]");
 						break;
 					case VAGINA:
-						stretching.add("[style.colourVagina(vagina)]");
+						stretching.add("[style.colourVagina(киска)]");
 						break;
 					default:
 						break;
@@ -5809,16 +5771,16 @@ public class StatusEffect {
 			for(Entry<SexAreaOrifice, AbstractClothing> entry : target.getSexToyOrificePreventingStretchRecovery().entrySet()) {
 				switch(entry.getKey()) {
 					case ANUS:
-						preventingRecovery.add("[style.colourAsshole(asshole)]");
+						preventingRecovery.add("[style.colourAsshole(анус)]");
 						break;
 					case MOUTH:
-						preventingRecovery.add("[style.colourMouth(throat)]");
+						preventingRecovery.add("[style.colourMouth(горло)]");
 						break;
 					case NIPPLE:
-						preventingRecovery.add("[style.colourNipple(nipples)]");
+						preventingRecovery.add("[style.colourNipple(соски)]");
 						break;
 					case VAGINA:
-						preventingRecovery.add("[style.colourVagina(vagina)]");
+						preventingRecovery.add("[style.colourVagina(вагина)]");
 						break;
 					default:
 						break;
@@ -5828,16 +5790,16 @@ public class StatusEffect {
 			for(Entry<SexAreaOrifice, AbstractClothing> entry : target.getSexToyOrificeTooDeep().entrySet()) {
 				switch(entry.getKey()) {
 					case ANUS:
-						tooDeep.add("[style.colourAsshole(asshole)]");
+						tooDeep.add("[style.colourAsshole(дырка)]");
 						break;
 					case MOUTH:
-						tooDeep.add("[style.colourMouth(throat)]");
+						tooDeep.add("[style.colourMouth(горло)]");
 						break;
 					case NIPPLE:
-						tooDeep.add("[style.colourNipple(nipples)]");
+						tooDeep.add("[style.colourNipple(соски)]");
 						break;
 					case VAGINA:
-						tooDeep.add("[style.colourVagina(vagina)]");
+						tooDeep.add("[style.colourVagina(вагина)]");
 						break;
 					default:
 						break;
@@ -5847,8 +5809,8 @@ public class StatusEffect {
 			boolean needBreak = false;
 			if(!target.getSexToyOrificeStretching().isEmpty()) {
 				boolean singular = target.getSexToyOrificeStretching().size()==1;
-				descriptionSB.append("[npc.NamePos] "+(singular?"sex toy is":"sex toys are")+" too big for [npc.herHim], and as a result, [npc.her] "
-						+Util.stringsToStringList(stretching, false)+(singular?" is":" are")+" being [style.colourBad(stretched out)]!");
+				descriptionSB.append("[npc.NamePos] "+(singular?"секс-игрушка":"секс-игрушки")+" слишком велики для [npc.herHim], и в результате [npc.her] "
+						+Util.stringsToStringList(stretching, false)+(singular?" есть":" являются")+" быть [style.colourBad(растянутой)]!");
 				needBreak = true;
 			}
 			
@@ -5857,7 +5819,7 @@ public class StatusEffect {
 					descriptionSB.append(" ");
 				}
 				boolean singular = target.getSexToyOrificePreventingStretchRecovery().size()==1;
-				descriptionSB.append("[npc.NamePos] "+(singular?"sex toy is":"sex toys are")+" preventing [npc.her] [style.colourMinorBad(stretched)] " +Util.stringsToStringList(preventingRecovery, false)+" from recovering!");
+				descriptionSB.append("[npc.NamePos] "+(singular?"секс-игрушка":"секс-игрушки")+" мешает [npc.her] [style.colourMinorBad(растянуться)] " +Util.stringsToStringList(preventingRecovery, false)+" и восстановиться!");
 				needBreak = true;
 			}
 			
@@ -5867,8 +5829,8 @@ public class StatusEffect {
 						descriptionSB.append(" ");
 					}
 					boolean singular = target.getSexToyOrificeTooDeep().size()==1;
-					descriptionSB.append((singular?"The sex toy":"The sex toys")+" inserted in [npc.namePos] "
-							+Util.stringsToStringList(tooDeep, false)+(singular?" is":" are")+" [style.colourTerrible(uncomfortably deep)]!");
+					descriptionSB.append((singular?"Секс-игрушка":"Секс-игрушки")+" вставлен в [npc.namePos] "
+							+Util.stringsToStringList(tooDeep, false)+(singular?" есть":" являются")+" [style.colourTerrible(неприятно глубоко)]!");
 				}
 			}
 			
@@ -5892,7 +5854,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect RECOVERING_ORIFICE = new AbstractStatusEffect(80,
-			"Recovering Vagina",
+			"Восстановление влагалища",
 			"recoveringOrifice",
 			PresetColour.GENERIC_SEX,
 			false,
@@ -5904,46 +5866,46 @@ public class StatusEffect {
 			StringBuilder sb = new StringBuilder();
 			
 			if(Main.game.isInSex()) {
-				sb.append("Stretched");
+				sb.append("Растянуто");
 			} else {
-				sb.append("Recovering");
+				sb.append("Восстановление");
 			}
 			
 			if (target.hasVagina() && target.getVaginaRawCapacityValue()!=target.getVaginaStretchedCapacity()){
-				sb.append(" Vagina");
+				sb.append(" Киска");
 				i++;
 			}
 			if (target.getAssRawCapacityValue()!=target.getAssStretchedCapacity()){
-				sb.append(" Anus");
+				sb.append(" Анус");
 				i++;
 			}
 			if (target.getNippleRawCapacityValue()!=target.getNippleStretchedCapacity()){
-				sb.append(" Nipples");
+				sb.append(" Соски");
 				i++;
 			}
 			if (target.hasBreastsCrotch()
 					&& target.getNippleCrotchRawCapacityValue()!=target.getNippleCrotchStretchedCapacity()){
-				sb.append(" Crotch Nipples");
+				sb.append(" Соски на лобке");
 				i++;
 			}
 			if (target.hasPenis() && target.getPenisRawCapacityValue()!=target.getPenisStretchedCapacity()){
-				sb.append(" Penile Urethra");
+				sb.append(" Уретра пениса");
 				i++;
 			}
 			if (target.hasVagina() && target.getVaginaUrethraRawCapacityValue()!=target.getVaginaUrethraStretchedCapacity()){
-				sb.append(" Vaginal Urethra");
+				sb.append(" Уретра влагалища");
 				i++;
 			}
 			if (target.getFaceRawCapacityValue()!=target.getFaceStretchedCapacity()){
-				sb.append(" Throat");
+				sb.append(" Глотка");
 				i++;
 			}
 			
 			if(i>1) {
 				if(Main.game.isInSex()) {
-					return "Stretched Orifices";
+					return "Растянутые отверстия";
 				} else {
-					return "Recovering Orifices";
+					return "Восстановление отверстий";
 				}
 			} else {
 				return sb.toString();
@@ -6015,7 +5977,7 @@ public class StatusEffect {
 			int minutes = (int) (1/recoveryModifier)/60;
 			int hours = minutes /60;
 			
-			return "Tightens "+Units.size(1)+" every "+(hours>=1
+			return "Сужается "+Units.size(1)+" every "+(hours>=1
 						?(hours)+" hour"+(hours==1?"":"s")+(minutes%60>0?" and "+(minutes%60)+" minute"+(minutes==1?"":"s"):"")
 						:(minutes )+" minute"+(minutes==1?"":"s"));
 		}
@@ -6027,26 +5989,26 @@ public class StatusEffect {
 			stretchRecoveryPrevention.addAll(target.getSexToyOrificeStretching().keySet());
 			
 			String recoveringText = "recovering";
-			String from1 = "From";
+			String from1 = "От";
 			String from2 = "to";
 			
 			if(Main.game.isInSex()) {
 				recoveringText = "stretched";
-				from1 = "To";
+				from1 = "До";
 				from2 = "from";
 			}
 			
 			if (target.hasVagina() && target.getVaginaRawCapacityValue()!=target.getVaginaStretchedCapacity()){
-				recoveringEffects.add("[style.boldVagina(Vagina "+recoveringText+":)]");
+				recoveringEffects.add("[style.boldVagina(Влагалище "+recoveringText+":)]");
 				recoveringEffects.add(from1+" [style.boldBad("+Units.size(target.getVaginaStretchedCapacity())+")] "+from2+" [style.boldGood("+Units.size(target.getVaginaRawCapacityValue())+")]");
 				if(stretchRecoveryPrevention.contains(SexAreaOrifice.VAGINA)) {
-					recoveringEffects.add("[style.boldBad(Sex toy preventing recovery!)]");
+					recoveringEffects.add("[style.boldBad(Секс-игрушка мешает восстановлению!)]");
 				} else {
 					recoveringEffects.add("[style.boldPlasticity("+getRecoveryText(target.getVaginaPlasticity().getRecoveryModifier())+")]");
 				}
 			}
 			if (target.getAssRawCapacityValue()!=target.getAssStretchedCapacity()){
-				recoveringEffects.add("[style.boldAsshole(Asshole "+recoveringText+":)]");
+				recoveringEffects.add("[style.boldAsshole(Анус "+recoveringText+":)]");
 				recoveringEffects.add(from1+" [style.boldBad("+Units.size(target.getAssStretchedCapacity())+")] "+from2+" [style.boldGood("+Units.size(target.getAssRawCapacityValue())+")]");
 				if(stretchRecoveryPrevention.contains(SexAreaOrifice.ANUS)) {
 					recoveringEffects.add("[style.boldBad(Секс-игрушка предотвращает восстановление!)]");
@@ -6099,16 +6061,16 @@ public class StatusEffect {
 			List<String> orificesRecovering = new ArrayList<>();
 			boolean plural = false;
 			if (target.hasVagina() && target.getVaginaRawCapacityValue()!=target.getVaginaStretchedCapacity()){
-				orificesRecovering.add("[style.boldVagina(vagina)]");
+				orificesRecovering.add("[style.boldVagina(влагалище)]");
 			}
 			if (target.getAssRawCapacityValue()!=target.getAssStretchedCapacity()){
-				orificesRecovering.add("[style.boldAnus(asshole)]");
+				orificesRecovering.add("[style.boldAnus(анус)]");
 			}
 			if (target.getFaceRawCapacityValue()!=target.getFaceStretchedCapacity()){
-				orificesRecovering.add("[style.boldMouth(throat)]");
+				orificesRecovering.add("[style.boldMouth(глотку)]");
 			}
 			if (target.getNippleRawCapacityValue()!=target.getNippleStretchedCapacity()){
-				orificesRecovering.add("[style.boldNipple(nipples)]");
+				orificesRecovering.add("[style.boldNipple(соски)]");
 				plural = true;
 			}
 			if (target.hasBreastsCrotch() && target.getNippleCrotchRawCapacityValue()!=target.getNippleCrotchStretchedCapacity()){
@@ -6122,8 +6084,8 @@ public class StatusEffect {
 				orificesRecovering.add("[style.boldVaginaUrethra(вагинальная уретра)]");
 			}
 			if(orificesRecovering.size()==1) {
-				descriptionSB.append(" объект, который был слишком большим для "+(plural?"them":"it")+", [npc.namePos] "+orificesRecovering.get(0)+" "+(plural?"have":"has")
-						+" был растянут, и "+(plural?"need":"needs")+" некоторое время, в течение которого можно восстановить "+(plural?"their":"its")+" natural tightness.");
+				descriptionSB.append(" объект, который был слишком большим для "+(plural?"их":"это")+", [npc.namePos] "+orificesRecovering.get(0)+" "+(plural?"имеют":"имеет")
+						+" был растянут, и "+(plural?"нужна":"нужна")+" некоторое время, в течение которого можно восстановить "+(plural?"их":"её")+" естественная теснота.");
 			} else {
 				descriptionSB.append(" фаллические объекты, которые были слишком большими для них, [npc.namePos] "+Util.stringsToStringList(orificesRecovering, false)
 						+" были растянуты, и им нужно некоторое время, чтобы восстановить свою естественную плотность.");
@@ -6158,12 +6120,12 @@ public class StatusEffect {
 	
 	
 	public static AbstractStatusEffect CREAMPIE_VAGINA = new AbstractStatusEffect(80,
-			"Pussy Creampie",
-			"creampie",
+			"Залитая киской",
+			"залитая киской",
 			PresetColour.CUM,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_PHYSIQUE, -1f)),
-			Util.newArrayListOfValues("<b style='color: " + PresetColour.ATTRIBUTE_CORRUPTION.toWebHexString() + "'>Dirties clothing</b>")) {
+			Util.newArrayListOfValues("<b style='color: " + PresetColour.ATTRIBUTE_CORRUPTION.toWebHexString() + "'>пачкает одежду</b>")) {
 		@Override
 		public Map<AbstractAttribute, Float> getAttributeModifiers(GameCharacter target) {
 			if(isCumEffectPositive(target)) {
@@ -6209,7 +6171,7 @@ public class StatusEffect {
 					clothingBlocking.setDirty(target, true);
 					
 					if(target.isPlayer()) {
-						Main.game.addEvent(new EventLogEntry("[style.colourCum(Creampie)]", "[style.colourDirty(Брудно)] "+clothingBlocking.getName()), false);
+						Main.game.addEvent(new EventLogEntry("[style.colourCum(Залитая киской)]", "[style.colourDirty(Брудно)] "+clothingBlocking.getName()), false);
 					}
 				}
 				dirtyArea = true;
@@ -6266,8 +6228,8 @@ public class StatusEffect {
 			return new Value<>(retention?3:2,
 					"Текущий кремпай: [style.colourSex("+Units.fluid(cumInArea)+")]"
 					+(target.isOrificePlugged(area) && !retention
-							?"<br/>-"+Units.fluid(absorption, ValueType.PRECISE)+"/minute"
-							:"<br/>-"+(retention?"[style.colourExcellent(":"")+Units.fluid(cumLost, ValueType.PRECISE)+(retention?")]":"")+"/minute")
+							?"<br/>-"+Units.fluid(absorption, ValueType.PRECISE)+"/мин."
+							:"<br/>-"+(retention?"[style.colourExcellent(":"")+Units.fluid(cumLost, ValueType.PRECISE)+(retention?")]":"")+"/мин.")
 					+(retention
 							?"<br/>[style.colourExcellent(Retaining)] кремпай из-за заклинания!"
 							:""));
@@ -6292,11 +6254,11 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect CREAMPIE_VAGINA_URETHRA = new AbstractStatusEffect(80,
 			"Вагинальное уретральное кремпай",
-			"creampie",
+			"залитая киской",
 			PresetColour.CUM,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_PHYSIQUE, -1f)),
-			Util.newArrayListOfValues("<b style='color: " + PresetColour.ATTRIBUTE_CORRUPTION.toWebHexString() + "'>Dirties clothing</b>")) {
+			Util.newArrayListOfValues("<b style='color: " + PresetColour.ATTRIBUTE_CORRUPTION.toWebHexString() + "'>пачкает одежду</b>")) {
 		@Override
 		public Map<AbstractAttribute, Float> getAttributeModifiers(GameCharacter target) {
 			if(isCumEffectPositive(target)) {
@@ -6337,7 +6299,7 @@ public class StatusEffect {
 				if(!clothingBlocking.isDirty()) {
 					clothingBlocking.setDirty(target, true);
 					if(target.isPlayer()) {
-						Main.game.addEvent(new EventLogEntry("[style.colourCum(Creampie)]", "[style.colourDirty(Загрязнения)] "+clothingBlocking.getName()), false);
+						Main.game.addEvent(new EventLogEntry("[style.colourCum(Залитая киской)]", "[style.colourDirty(Загрязнения)] "+clothingBlocking.getName()), false);
 					}
 				}
 				dirtyArea = true;
@@ -6394,8 +6356,8 @@ public class StatusEffect {
 			return new Value<>(retention?3:2,
 					"Текущий кремпай: [style.colourSex("+Units.fluid(cumInArea)+")]"
 					+(target.isOrificePlugged(area) && !retention
-							?"<br/>-"+Units.fluid(absorption, ValueType.PRECISE)+"/minute"
-							:"<br/>-"+(retention?"[style.colourExcellent(":"")+Units.fluid(cumLost, ValueType.PRECISE)+(retention?")]":"")+"/minute")
+							?"<br/>-"+Units.fluid(absorption, ValueType.PRECISE)+"/мин."
+							:"<br/>-"+(retention?"[style.colourExcellent(":"")+Units.fluid(cumLost, ValueType.PRECISE)+(retention?")]":"")+"/мин.")
 					+(retention
 							?"<br/>[style.colourExcellent(Сохраняющий)] кремпай из-за заклинания!"
 							:""));
@@ -6420,11 +6382,11 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect CREAMPIE_PENIS_URETHRA = new AbstractStatusEffect(80,
 			"Уретра пениса кремпай",
-			"creampie",
+			"залитая киской",
 			PresetColour.CUM,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_PHYSIQUE, -1f)),
-			Util.newArrayListOfValues("<b style='color: " + PresetColour.ATTRIBUTE_CORRUPTION.toWebHexString() + "'>Dirties clothing</b>")) {
+			Util.newArrayListOfValues("<b style='color: " + PresetColour.ATTRIBUTE_CORRUPTION.toWebHexString() + "'>пачкает одежду</b>")) {
 		@Override
 		public Map<AbstractAttribute, Float> getAttributeModifiers(GameCharacter target) {
 			if(isCumEffectPositive(target)) {
@@ -6466,7 +6428,7 @@ public class StatusEffect {
 				if(!clothingBlocking.isDirty()) {
 					clothingBlocking.setDirty(target, true);
 					if(target.isPlayer()) {
-						Main.game.addEvent(new EventLogEntry("[style.colourCum(Creampie)]", "[style.colourDirty(Загрязняет)] "+clothingBlocking.getName()), false);
+						Main.game.addEvent(new EventLogEntry("[style.colourCum(Залитая киской)]", "[style.colourDirty(Загрязняет)] "+clothingBlocking.getName()), false);
 					}
 				}
 			}
@@ -6515,8 +6477,8 @@ public class StatusEffect {
 			return new Value<>(retention?3:2,
 					"Текущий кремпай: [style.colourSex("+Units.fluid(cumInArea)+")]"
 					+(target.isOrificePlugged(area) && !retention
-							?"<br/>-"+Units.fluid(absorption, ValueType.PRECISE)+"/minute"
-							:"<br/>-"+(retention?"[style.colourExcellent(":"")+Units.fluid(cumLost, ValueType.PRECISE)+(retention?")]":"")+"/minute")
+							?"<br/>-"+Units.fluid(absorption, ValueType.PRECISE)+"/мин."
+							:"<br/>-"+(retention?"[style.colourExcellent(":"")+Units.fluid(cumLost, ValueType.PRECISE)+(retention?")]":"")+"/мин.")
 					+(retention
 							?"<br/>[style.colourExcellent(Сохранение)] кремпай благодаря заклинанию!"
 							:""));
@@ -6540,12 +6502,12 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect CREAMPIE_ANUS = new AbstractStatusEffect(80,
-			"Anal Creampie",
-			"creampie",
+			"Анал-криампи",
+			"залитая киской",
 			PresetColour.CUM,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_PHYSIQUE, -1f)),
-			Util.newArrayListOfValues("<b style='color: " + PresetColour.ATTRIBUTE_CORRUPTION.toWebHexString() + "'>Dirties clothing</b>")) {
+			Util.newArrayListOfValues("<b style='color: " + PresetColour.ATTRIBUTE_CORRUPTION.toWebHexString() + "'>пачкает одежду</b>")) {
 		@Override
 		public Map<AbstractAttribute, Float> getAttributeModifiers(GameCharacter target) {
 			if(isCumEffectPositive(target)) {
@@ -6577,7 +6539,7 @@ public class StatusEffect {
 				if(!clothingBlocking.isDirty()) {
 					clothingBlocking.setDirty(target, true);
 					if(target.isPlayer()) {
-						Main.game.addEvent(new EventLogEntry("[style.colourCum(Creampie)]", "[style.colourDirty(Загрязняет)] "+clothingBlocking.getName()), false);
+						Main.game.addEvent(new EventLogEntry("[style.colourCum(Залитая киской)]", "[style.colourDirty(Загрязняет)] "+clothingBlocking.getName()), false);
 					}
 				}
 				dirtyArea = true;
@@ -6630,8 +6592,8 @@ public class StatusEffect {
 			return new Value<>(retention?3:2,
 					"Текущий кремпай: [style.colourSex("+Units.fluid(cumInArea)+")]"
 					+(target.isOrificePlugged(area) && !retention
-							?"<br/>-"+Units.fluid(absorption, ValueType.PRECISE)+"/minute"
-							:"<br/>-"+(retention?"[style.colourExcellent(":"")+Units.fluid(cumLost, ValueType.PRECISE)+(retention?")]":"")+"/minute")
+							?"<br/>-"+Units.fluid(absorption, ValueType.PRECISE)+"/мин."
+							:"<br/>-"+(retention?"[style.colourExcellent(":"")+Units.fluid(cumLost, ValueType.PRECISE)+(retention?")]":"")+"/мин.")
 					+(retention
 							?"<br/>[style.colourExcellent(Сохранение)] кремпай благодаря заклинанию!"
 							:""));
@@ -6655,12 +6617,12 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect CREAMPIE_NIPPLES = new AbstractStatusEffect(80,
-			"Nipple Creampie",
-			"creampie",
+			"Ниппель-криампи",
+			"залитая киской",
 			PresetColour.CUM,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_PHYSIQUE, -1f)),
-			Util.newArrayListOfValues("<b style='color: " + PresetColour.ATTRIBUTE_CORRUPTION.toWebHexString() + "'>Dirties clothing</b>")) {
+			Util.newArrayListOfValues("<b style='color: " + PresetColour.ATTRIBUTE_CORRUPTION.toWebHexString() + "'>пачкает одежду</b>")) {
 		@Override
 		public Map<AbstractAttribute, Float> getAttributeModifiers(GameCharacter target) {
 			if(isCumEffectPositive(target)) {
@@ -6703,7 +6665,7 @@ public class StatusEffect {
 				if(!clothingBlocking.isDirty()) {
 					clothingBlocking.setDirty(target, true);
 					if(target.isPlayer()) {
-						Main.game.addEvent(new EventLogEntry("[style.colourCum(Creampie)]", "[style.colourDirty(Загрязняет)] "+clothingBlocking.getName()), false);
+						Main.game.addEvent(new EventLogEntry("[style.colourCum(Залитая киской)]", "[style.colourDirty(Загрязняет)] "+clothingBlocking.getName()), false);
 					}
 				}
 				dirtyArea = true;
@@ -6725,22 +6687,20 @@ public class StatusEffect {
 			
 			if(target.isOrificePlugged(SexAreaOrifice.NIPPLE)) {
 				if(target.isPlayer()) {
-					return "[pc.nipples] @@T1@@ have recently been filled with cum, before being plugged."
-							+ "<br/>[style.boldTerrible(Plugged Nipples:)] No cum is leaking out"
-							+ (retention?"!":", although it is still being absorbed!");
+					return "[pc.nipples] @@T1@@ have recently been filled with cum, before being plugged.<br/>[style.boldTerrible(Plugged Nipples:)] No cum is leaking out"
+							+ (retention?"!":", хотя она всё еще впитывается!");
 				} else {
 					return UtilText.parse(target, 
-							"[npc.NamePos] [npc.nipples] have recently been filled with cum."
-							+ "<br/>[style.boldTerrible(Plugged Nipples:)] No cum is leaking out"
-							+ (retention?"!":", although it is still being absorbed!"));
+							"[npc.NamePos] [npc.nipples] недавно были наполнены спермой.<br/>[style.boldTerrible(Закупоренные соски:)] Сперма не вытекает"
+							+ (retention?"!":", хотя она всё еще впитывается!"));
 				}
 				
 			} else {
 				if(target.isPlayer()) {
-					return "As you walk, you can feel cum drooling out of your recently-used [pc.nipples].";
+					return "При ходьбе вы чувствуете, как сперма вытекает из вашего недавно использованного [pc.nipples].";
 				} else {
 					return UtilText.parse(target,
-							"[npc.NamePos] [npc.nipples] have recently been filled with cum.");
+							"[npc.NamePos] [npc.nipples] недавно были наполнены спермой.");
 				}
 			}
 		}
@@ -6753,12 +6713,12 @@ public class StatusEffect {
 			boolean retention = target.hasCreampieRetentionArea(area);
 			
 			return new Value<>(retention?3:2,
-					"Current creampie: [style.colourSex("+Units.fluid(cumInArea)+")]"
+					"Текущий кремпи: [style.colourSex(\""+Units.fluid(cumInArea)+")]"
 					+(target.isOrificePlugged(area) && !retention
-							?"<br/>-"+Units.fluid(absorption, ValueType.PRECISE)+"/minute"
-							:"<br/>-"+(retention?"[style.colourExcellent(":"")+Units.fluid(cumLost, ValueType.PRECISE)+(retention?")]":"")+"/minute")
+							?"<br/>-"+Units.fluid(absorption, ValueType.PRECISE)+"/мин."
+							:"<br/>-"+(retention?"[style.colourExcellent(":"")+Units.fluid(cumLost, ValueType.PRECISE)+(retention?")]":"")+"/мин.")
 					+(retention
-							?"<br/>[style.colourExcellent(Retaining)] creampie due to enchantment!"
+							?"<br/>[style.colourExcellent(Удержание)] кремпи благодаря зачарованию!"
 							:""));
 		}
 		@Override
@@ -6780,18 +6740,18 @@ public class StatusEffect {
 	};
 
 	public static AbstractStatusEffect CREAMPIE_NIPPLES_CROTCH = new AbstractStatusEffect(80,
-			"Nipple Creampie",
-			"creampie",
+			"Ниппель-криампи",
+			"залитая киской",
 			PresetColour.CUM,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_PHYSIQUE, -1f)),
-			Util.newArrayListOfValues("<b style='color: " + PresetColour.ATTRIBUTE_CORRUPTION.toWebHexString() + "'>Dirties clothing</b>")) {
+			Util.newArrayListOfValues("<b style='color: " + PresetColour.ATTRIBUTE_CORRUPTION.toWebHexString() + "'>пачкает одежду</b>")) {
 		@Override
 		public String getName(GameCharacter owner) {
 			if(owner.getBreastCrotchShape()==BreastShape.UDDERS) {
-				return "Udder-nipple creampie";
+				return "Кремпи в соски-вымя";
 			} else {
-				return "Crotch-nipple creampie";
+				return "Кремпи в соски-промежность";
 			}
 		}
 		@Override
@@ -6817,8 +6777,7 @@ public class StatusEffect {
 			if(pump!=null && pump.isMilkingEquipment()) {
 				target.clearFluidsStored(SexAreaOrifice.NIPPLE_CROTCH);
 				if(!Main.game.isInSex()) {
-					return "<p>"
-								+ "All of the cum from your creampied nipples is quickly sucked away by your "+pump.getName()+"!"
+					return "<p>Вся сперма из твоих набитых сосков быстро всасывается твоими "+pump.getName()+"!"
 							+ "</p>";
 				}
 			}
@@ -6835,7 +6794,7 @@ public class StatusEffect {
 				if(!clothingBlocking.isDirty()) {
 					clothingBlocking.setDirty(target, true);
 					if(target.isPlayer()) {
-						Main.game.addEvent(new EventLogEntry("[style.colourCum(Creampie)]", "[style.colourDirty(Dirties)] "+clothingBlocking.getName()), false);
+						Main.game.addEvent(new EventLogEntry("[style.colourCum(Залитая киской)]", "[style.colourDirty(Грязными)] "+clothingBlocking.getName()), false);
 					}
 				}
 			}
@@ -6854,14 +6813,12 @@ public class StatusEffect {
 			
 			if(target.isOrificePlugged(SexAreaOrifice.NIPPLE_CROTCH)) {
 				if(target.isPlayer()) {
-					return "As you walk, you can feel the cum trapped within your recently-used [pc.crotchNipples]."
-							+ "<br/>[style.boldTerrible(Plugged Crotch-nipples:)] No cum is leaking out"
-							+ (retention?"!":", although it is still being absorbed!");
+					return "По мере ходьбы ты чувствуешь сперму, запертую внутри твоих недавно использованных [pc.crotchNipples].<br/>[style.boldTerrible(Забитые соски-промежности:)] Сперма не вытекает наружу"
+							+ (retention?"!":", хотя она всё еще впитывается!");
 				} else {
 					return UtilText.parse(target, 
-							"[npc.NamePos] [npc.crotchNipples] have recently been filled with cum, before being plugged."
-							+ "<br/>[style.boldTerrible(Plugged Crotch-nipples:)] No cum is leaking out"
-							+ (retention?"!":", although it is still being absorbed!"));
+							"[npc.NamePos] [npc.crotchNipples] недавно были наполнены спермой, а затем закупорены.<br/>[style.boldTerrible(Забитые соски-промежности:)] Сперма не вытекает наружу"
+							+ (retention?"!":", хотя она всё еще впитывается!"));
 				}
 				
 			} else {
@@ -6884,8 +6841,8 @@ public class StatusEffect {
 			return new Value<>(retention?3:2,
 					"Текущий кремпай: [style.colourSex("+Units.fluid(cumInArea)+")]"
 					+(target.isOrificePlugged(area) && !retention
-							?"<br/>-"+Units.fluid(absorption, ValueType.PRECISE)+"/minute"
-							:"<br/>-"+(retention?"[style.colourExcellent(":"")+Units.fluid(cumLost, ValueType.PRECISE)+(retention?")]":"")+"/minute")
+							?"<br/>-"+Units.fluid(absorption, ValueType.PRECISE)+"/мин."
+							:"<br/>-"+(retention?"[style.colourExcellent(":"")+Units.fluid(cumLost, ValueType.PRECISE)+(retention?")]":"")+"/мин.")
 					+(retention
 							?"<br/>[style.colourExcellent(Retaining)] кремпай из-за заклинания!"
 							:""));
@@ -6909,8 +6866,8 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect CREAMPIE_MOUTH = new AbstractStatusEffect(80,
-			"Cummy Meal",
-			"creampie",
+			"Спермоносная трапеза",
+			"залитая киской",
 			PresetColour.CUM,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_PHYSIQUE, -1f)),
@@ -6918,8 +6875,8 @@ public class StatusEffect {
 		@Override
 		public String getName(GameCharacter target) {
 			return target.isOnlyCumInArea(SexAreaOrifice.MOUTH)
-					?"Cummy meal"
-					:"Yummy meal";
+					?"Спермоносная трапеза"
+					:"Вкусная трапеза";
 		}
 		@Override
 		public Map<AbstractAttribute, Float> getAttributeModifiers(GameCharacter target) {
@@ -6969,8 +6926,8 @@ public class StatusEffect {
 			return new Value<>(retention?3:2,
 					"Текущий кремпай: [style.colourSex("+Units.fluid(cumInArea)+")]"
 					+(target.isOrificePlugged(area) && !retention
-							?"<br/>-"+Units.fluid(absorption, ValueType.PRECISE)+"/minute"
-							:"<br/>-"+(retention?"[style.colourExcellent(":"")+Units.fluid(cumLost, ValueType.PRECISE)+(retention?")]":"")+"/minute")
+							?"<br/>-"+Units.fluid(absorption, ValueType.PRECISE)+"/мин."
+							:"<br/>-"+(retention?"[style.colourExcellent(":"")+Units.fluid(cumLost, ValueType.PRECISE)+(retention?")]":"")+"/мин.")
 					+(retention
 							?"<br/>[style.colourExcellent(Retaining)] кремпай из-за заклинания!"
 							:""));
@@ -6994,12 +6951,12 @@ public class StatusEffect {
 	};
 
 	public static AbstractStatusEffect CREAMPIE_SPINNERET = new AbstractStatusEffect(80,
-			"Spinneret Creampie",
-			"creampie",
+			"Кремпай от паучьего веретена",
+			"залитая киской",
 			PresetColour.CUM,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_PHYSIQUE, -1f)),
-			Util.newArrayListOfValues("<b style='color: " + PresetColour.ATTRIBUTE_CORRUPTION.toWebHexString() + "'>Dirties clothing</b>")) {
+			Util.newArrayListOfValues("<b style='color: " + PresetColour.ATTRIBUTE_CORRUPTION.toWebHexString() + "'>пачкает одежду</b>")) {
 		@Override
 		public Map<AbstractAttribute, Float> getAttributeModifiers(GameCharacter target) {
 			if(isCumEffectPositive(target)) {
@@ -7031,7 +6988,7 @@ public class StatusEffect {
 				if(!clothingBlocking.isDirty()) {
 					clothingBlocking.setDirty(target, true);
 					if(target.isPlayer()) {
-						Main.game.addEvent(new EventLogEntry("[style.colourCum(Creampie)]", "[style.colourDirty(Dirties)] "+clothingBlocking.getName()), false);
+						Main.game.addEvent(new EventLogEntry("[style.colourCum(Залитая киской)]", "[style.colourDirty(Грязными)] "+clothingBlocking.getName()), false);
 					}
 				}
 			}
@@ -7067,8 +7024,8 @@ public class StatusEffect {
 			return new Value<>(retention?3:2,
 					"Текущий кремпай: [style.colourSex("+Units.fluid(cumInArea)+")]"
 					+(target.isOrificePlugged(area) && !retention
-							?"<br/>-"+Units.fluid(absorption, ValueType.PRECISE)+"/minute"
-							:"<br/>-"+(retention?"[style.colourExcellent(":"")+Units.fluid(cumLost, ValueType.PRECISE)+(retention?")]":"")+"/minute")
+							?"<br/>-"+Units.fluid(absorption, ValueType.PRECISE)+"/мин."
+							:"<br/>-"+(retention?"[style.colourExcellent(":"")+Units.fluid(cumLost, ValueType.PRECISE)+(retention?")]":"")+"/мин.")
 					+(retention
 							?"<br/>[style.colourExcellent(Retaining)] кремпай из-за заклинания!"
 							:""));
@@ -7092,7 +7049,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect CUM_INFLATION_1 = new AbstractStatusEffect(80,
-			"swollen belly",
+			"раздутый живот",
 			"inflation_stomach_1",
 			PresetColour.GENERIC_ARCANE,
 			false,
@@ -7141,7 +7098,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect CUM_INFLATION_2 = new AbstractStatusEffect(80,
-			"inflated belly",
+			"раздутый живот",
 			"inflation_stomach_2",
 			PresetColour.GENERIC_ARCANE,
 			false,
@@ -7241,7 +7198,7 @@ public class StatusEffect {
 	
 	
 	public static AbstractStatusEffect BREAST_CUM_INFLATION_1 = new AbstractStatusEffect(80,
-			"swollen breasts",
+			"опухшая грудь",
 			"inflation_breasts_1",
 			PresetColour.GENERIC_ARCANE,
 			false,
@@ -7284,7 +7241,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect BREAST_CUM_INFLATION_2 = new AbstractStatusEffect(80,
-			"inflated breasts",
+			"раздутая грудь",
 			"inflation_breasts_2",
 			PresetColour.GENERIC_ARCANE,
 			false,
@@ -7371,7 +7328,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect SPINNERET_CUM_INFLATION_1 = new AbstractStatusEffect(80,
-			"swollen spinneret",
+			"раздутое паучье брюшко",
 			"inflation_spinneret_1",
 			PresetColour.GENERIC_ARCANE,
 			false,
@@ -7391,12 +7348,10 @@ public class StatusEffect {
 			if(target!=null) {
 				if(target.hasTailSpinneret()) {
 					return UtilText.parse(target,
-							"После того, как @@T0@@ надули значительным количеством "+Util.stringsToStringList(fluidNames, false)+", [npc.namePos] [npc.tail] "+(target.getTailCount()>1?"are":"is")+"now a little swollen."
-							+ " The extra weight is making it a little difficult for [npc.herHim] to move around.");
+							"После того, как @@T0@@ надули значительным количеством "+Util.stringsToStringList(fluidNames, false)+", [npc.namePos] [npc.tail] "+(target.getTailCount()>1?"являются":"есть")+"теперь оно немного опухло. Из-за лишнего веса [npc.herHim] стало немного трудно передвигаться.");
 				} else {
 					return UtilText.parse(target,
-							"After being filled with a considerable amount of "+Util.stringsToStringList(fluidNames, false)+", [npc.namePos] abdomen is now a little swollen."
-							+ " The extra weight is making it a little difficult for [npc.herHim] to move around.");
+							"После того как внутрь залили приличное количество "+Util.stringsToStringList(fluidNames, false)+", живот [npc.namePos] теперь немного раздут. Из-за лишнего веса [npc.herHim] стало немного трудно передвигаться.");
 				}
 			}
 			return "";
@@ -7419,7 +7374,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect SPINNERET_CUM_INFLATION_2 = new AbstractStatusEffect(80,
-			"inflated spinneret",
+			"раздутое паучье брюшко",
 			"inflation_spinneret_2",
 			PresetColour.GENERIC_ARCANE,
 			false,
@@ -7439,8 +7394,7 @@ public class StatusEffect {
 			if(target!=null) {
 				if(target.hasTailSpinneret()) {
 					return UtilText.parse(target,
-							"After being filled with a huge amount of "+Util.stringsToStringList(fluidNames, false)+", [npc.namePos] [npc.tail] "+(target.getTailCount()>1?"are":"is")+"now noticeably inflated."
-							+ " The extra weight is hindering [npc.her] ability to move.");
+							"После того как внутрь залили огромное количество "+Util.stringsToStringList(fluidNames, false)+", [npc.namePos] [npc.tail] "+(target.getTailCount()>1?"являются":"есть")+"теперь заметно раздуто. Лишний вес мешает [npc.her] нормально двигаться.");
 				} else {
 					return UtilText.parse(target,
 							"После того, как @@T0@@ брюхо было наполнено огромным количеством "+Util.stringsToStringList(fluidNames, false)+", [npc.namePos] брюхо теперь заметно вздулось."
@@ -7487,7 +7441,7 @@ public class StatusEffect {
 			if(target!=null) {
 				if(target.hasTailSpinneret()) {
 					return UtilText.parse(target,
-							"После того, как @@T0@@ брюхо было наполнено огромным количеством "+Util.stringsToStringList(fluidNames, false)+", [npc.namePos] [npc.tail] "+(target.getTailCount()>1?"are":"is")+"теперь сильно вздулось."
+							"После того, как @@T0@@ брюхо было наполнено огромным количеством "+Util.stringsToStringList(fluidNames, false)+", [npc.namePos] [npc.tail] "+(target.getTailCount()>1?"являются":"есть")+"теперь сильно вздулось."
 							+ "Огромный дополнительный вес делает для [npc.herHim] крайне затруднительным передвижение.");
 				} else {
 					return UtilText.parse(target,
@@ -7514,8 +7468,8 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect FRUSTRATED_NO_ORGASM = new AbstractStatusEffect(80,
-			"Frustrated",
-			"frustrated",
+			"Раздражение",
+			"раздражение",
 			PresetColour.GENERIC_BAD,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.RESISTANCE_LUST, -15f)),
@@ -7543,8 +7497,8 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect PENT_UP_SLAVE = new AbstractStatusEffect(80,
-			"Pent-up",
-			"frustrated",
+			"Сдерживаемое",
+			"раздражение",
 			PresetColour.GENERIC_ARCANE,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.RESISTANCE_LUST, -15f)),
@@ -7578,7 +7532,7 @@ public class StatusEffect {
 	 * This status effect is automatically removed from a character when orgasming in sex.
 	 */
 	public static AbstractStatusEffect DESPERATELY_HORNY = new AbstractStatusEffect(80,
-			"Desperately horny",
+			"Отчаянное возбуждение",
 			"desperately_horny",
 			PresetColour.GENERIC_SEX,
 			false,
@@ -7605,7 +7559,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect CHASTITY_1 = new AbstractStatusEffect(80,
 			"Принудительная целомудренность (спокойно)",
-			"chastity1",
+			"целомудрие1",
 			PresetColour.GENERIC_SEX,
 			false,
 			Util.newHashMapOfValues(),
@@ -7675,7 +7629,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect CHASTITY_2 = new AbstractStatusEffect(80,
 			"Принудительная девственность (беспокойство)",
-			"chastity2",
+			"целомудрие2",
 			PresetColour.GENERIC_SEX,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.RESISTANCE_LUST, -5f)),
@@ -7703,7 +7657,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect CHASTITY_3 = new AbstractStatusEffect(80,
 			"Принудительная девственность (напряжение)",
-			"chastity3",
+			"целомудрие3",
 			PresetColour.GENERIC_SEX,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.RESISTANCE_LUST, -15f)),
@@ -7727,7 +7681,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect CHASTITY_4 = new AbstractStatusEffect(80,
 			"Принудительная девственность (отчаяние)",
-			"chastity4",
+			"целомудрие4",
 			PresetColour.GENERIC_SEX,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.RESISTANCE_LUST, -50f)),
@@ -7872,13 +7826,13 @@ public class StatusEffect {
 					new Value<>(Attribute.RESISTANCE_LUST, -50f),
 					new Value<>(Attribute.RESTING_LUST, 15f)),
 			Util.newArrayListOfValues(
-					"[style.colourSex(Orgasming)] will remove this effect!")) {
+					"[style.colourSex(Оргазм)] снимет этот эффект!")) {
 		@Override
 		public String getDescription(GameCharacter target) {
 			StringBuilder sb = new StringBuilder();
-			sb.append("Recently released from an excruciatingly-long spell of being locked in chastity, [npc.name] [npc.is] now feeling unbelievably horny!");
+			sb.append("Недавно освободившись от мучительно долгого заклинания воздержания, [npc.name] [npc.is] теперь чувствует невероятное возбуждение!");
 			sb.append("<br/>");
-			sb.append("[style.italicsSex(If [npc.sheIsFull] locked back into chastity while still under this effect, [npc.she] will remain in the 'desperate' stage!)]");
+			sb.append("[style.italicsSex(Если [npc.sheIsFull] снова закроет спину в целомудрии, пока действует этот эффект, [npc.she] останется в стадии «отчаяния»!)]");
 			return UtilText.parse(target, sb.toString());
 		}
 		@Override
@@ -7914,7 +7868,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect RECOVERING_AURA = new AbstractStatusEffect(80,
-			"Strengthened aura",
+			"Усиленная аура",
 			"recoveringAura",
 			PresetColour.GENERIC_ARCANE,
 			false,
@@ -7923,11 +7877,9 @@ public class StatusEffect {
 		@Override
 		public String getDescription(GameCharacter target) {
 			if(target.isPlayer()) {
-				return "Due to a recent orgasm, your arcane aura has been temporarily strengthened."
-						+ " While in this state, you will no longer receive an arcane essence if you orgasm!";
+				return "Из-за недавнего оргазма ваша арканная аура временно усилилась. В этом состоянии вы больше не будете получать арканную эссенцию при оргазме!";
 			} else {
-				return UtilText.parse(target, "Due to a recent orgasm, [npc.namePos] arcane aura has been temporarily strengthened."
-						+ " While [npc.she] remains in this state, you will not receive an arcane essence if [npc.she] orgasms in your presence!");
+				return UtilText.parse(target, "Из-за недавнего оргазма арканная аура [npc.namePos] временно усилилась. Пока [npc.she] находится в этом состоянии, вы не будете получать арканную эссенцию, если [npc.she] испытает оргазм в вашем присутствии!");
 			}
 		}
 		@Override
@@ -7941,7 +7893,7 @@ public class StatusEffect {
 	};
 
 	public static AbstractStatusEffect EXPOSED = new AbstractStatusEffect(80,
-			"exposed",
+			"обнажённый",
 			"exposed",
 			PresetColour.BASE_PINK_LIGHT,
 			PresetColour.GENERIC_BAD,
@@ -7955,12 +7907,12 @@ public class StatusEffect {
 			if(target==null) {
 				return "";
 			}
-			return UtilText.parse(target, "[npc.NamePos] clothing doesn't conceal [npc.her] "+getExposedPartsNamesList(target)+", and [npc.she] [npc.verb(feel)] highly embarrassed to be walking around in such an exposed fashion.");
+			return UtilText.parse(target, "Одежда [npc.NamePos] не скрывает [npc.her] "+getExposedPartsNamesList(target)+", и [npc.she] [npc.verb(feel)] ужасно смущается, расхаживая в таком открытом виде.");
 		}
 		@Override
 		protected Value<Integer, String> getAdditionalDescription(GameCharacter target) {
 			if(Main.game.isOpportunisticAttackersEnabled() && target.isPlayer()) {
-				return new Value<>(2, "<b style='color:" + PresetColour.BASE_GREY.toWebHexString() +";'>Opportunistic Attackers</b><br/>Your exposed body parts attract all kind of lewd gazes.");
+				return new Value<>(2, "<b style='color:" + PresetColour.BASE_GREY.toWebHexString() +";'>Нападающие-опортунисты</b><br/>Ваши обнажённые части тела привлекают всевозможные похотливые взгляды.");
 			}
 			return super.getAdditionalDescription(target);
 		}
@@ -7979,7 +7931,7 @@ public class StatusEffect {
 	};
 
 	public static AbstractStatusEffect EXPOSED_ANIMAL = new AbstractStatusEffect(80,
-			"exposed (feral parts)",
+			"обнажённый (дикие части)",
 			"exposedFeral",
 			PresetColour.BASE_PINK_LIGHT,
 			PresetColour.BASE_TAN,
@@ -7993,9 +7945,9 @@ public class StatusEffect {
 				return "";
 			}
 			if(target.getLegConfiguration().isGenitalsExposed(target)) {
-				return UtilText.parse(target, "[npc.NamePos] clothing doesn't conceal [npc.her] "+getExposedPartsNamesList(target)+", but as [npc.she] [npc.has] a feral body, [npc.she] [npc.verb(feel)] as though it's natural to be so exposed.");
+				return UtilText.parse(target, "Одежда [npc.NamePos] не скрывает [npc.her] "+getExposedPartsNamesList(target)+", но так как [npc.she] [npc.has] дикое тело, [npc.she] [npc.verb(feel)] словно это естественно — быть настолько открытой.");
 			} else {
-				return UtilText.parse(target, "[npc.NamePos] clothing doesn't conceal [npc.her] "+getExposedPartsNamesList(target)+", but [npc.her] feral body is shaped in such a way that they aren't on public display.");
+				return UtilText.parse(target, "Одежда [npc.NamePos] не скрывает [npc.her] "+getExposedPartsNamesList(target)+", но [npc.her] дикое тело сложено так, что они не выставлены напоказ.");
 			}
 		}
 		@Override
@@ -8016,7 +7968,7 @@ public class StatusEffect {
 	};
 
 	public static AbstractStatusEffect EXPOSED_DOLL = new AbstractStatusEffect(80,
-			"exposed (doll)",
+			"обнаженная (кукла)",
 			"exposedDoll",
 			PresetColour.BASE_PINK_LIGHT,
 			PresetColour.BASE_GREY,
@@ -8029,7 +7981,7 @@ public class StatusEffect {
 			if(target==null) {
 				return "";
 			}
-			return UtilText.parse(target, "[npc.NamePos] clothing doesn't conceal [npc.her] "+getExposedPartsNamesList(target)+", but as [npc.sheIs] a doll, [npc.sheIs] incapable of feeling ashamed or embarrassed.");
+			return UtilText.parse(target, "Одежда [npc.NamePos] не скрывает [npc.her] "+getExposedPartsNamesList(target)+", но как [npc.sheIs] кукла, [npc.sheIs] неспособная чувствовать стыд или смущение.");
 		}
 		@Override
 		public boolean isConditionsMet(GameCharacter target) {
@@ -8047,7 +7999,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect EXPOSED_BREASTS = new AbstractStatusEffect(80,
-			"exposed breasts",
+			"обнаженная грудь",
 			"exposed",
 			PresetColour.BASE_PINK_LIGHT,
 			PresetColour.GENERIC_BAD,
@@ -8059,7 +8011,7 @@ public class StatusEffect {
 		@Override
 		public String getName(GameCharacter target) {
 			if (! target.hasBreasts()) {
-				return "exposed nipples";
+				return "обнаженные соски";
 			} else {
 				return super.getName(target);
 			}
@@ -8069,12 +8021,12 @@ public class StatusEffect {
 			if(target==null) {
 				return "";
 			}
-			return UtilText.parse(target, "[npc.NamePos] clothing doesn't conceal [npc.her] "+getExposedPartsNamesList(target)+", and [npc.she] [npc.verb(feel)] highly embarrassed to be walking around in such an exposed fashion.");
+			return UtilText.parse(target, "Одежда [npc.NamePos] не скрывает [npc.her] "+getExposedPartsNamesList(target)+", и [npc.she] [npc.verb(feel)] ужасно смущается, расхаживая в таком открытом виде.");
 		}
 		@Override
 		protected Value<Integer, String> getAdditionalDescription(GameCharacter target) {
 			if(Main.game.isOpportunisticAttackersEnabled() && target.isPlayer()) {
-				return new Value<>(2, "<b style='color:" + PresetColour.BASE_GREY.toWebHexString() +";'>Opportunistic Attackers</b><br/>Your exposed breasts attract all kind of lewd gazes.");
+				return new Value<>(2, "<b style='color:" + PresetColour.BASE_GREY.toWebHexString() +";'>Алчные нападающие</b><br/>Твоя обнаженная грудь притягивает всевозможные похотливые взгляды.");
 			}
 			return super.getAdditionalDescription(target);
 		}
@@ -8093,7 +8045,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect EXPOSED_PLUS_BREASTS = new AbstractStatusEffect(80,
-			"exposed",
+			"обнажённый",
 			"exposed",
 			PresetColour.BASE_PINK_LIGHT,
 			PresetColour.GENERIC_BAD,
@@ -8107,12 +8059,12 @@ public class StatusEffect {
 			if(target==null) {
 				return "";
 			}
-			return UtilText.parse(target, "[npc.NamePos] clothing doesn't conceal [npc.her] "+getExposedPartsNamesList(target)+", and [npc.she] [npc.verb(feel)] highly embarrassed to be walking around in such an exposed fashion.");
+			return UtilText.parse(target, "Одежда [npc.NamePos] не скрывает [npc.her] "+getExposedPartsNamesList(target)+", и [npc.she] [npc.verb(feel)] ужасно смущается, расхаживая в таком открытом виде.");
 		}
 		@Override
 		protected Value<Integer, String> getAdditionalDescription(GameCharacter target) {
 			if(Main.game.isOpportunisticAttackersEnabled() && target.isPlayer()) {
-				return new Value<>(2, "<b style='color:" + PresetColour.BASE_GREY.toWebHexString() +";'>Opportunistic Attackers</b><br/>Your exposed body parts attract all kind of lewd gazes.");
+				return new Value<>(2, "<b style='color:" + PresetColour.BASE_GREY.toWebHexString() +";'>Нападающие-опортунисты</b><br/>Ваши обнажённые части тела привлекают всевозможные похотливые взгляды.");
 			}
 			return super.getAdditionalDescription(target);
 		}
@@ -8131,7 +8083,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect FETISH_EXHIBITIONIST = new AbstractStatusEffect(80,
-			"exhibitionist",
+			"эксгибиционизм",
 			"exposedExhibitionist",
 			PresetColour.BASE_PINK_LIGHT,
 			PresetColour.BASE_PINK_DEEP,
@@ -8144,12 +8096,12 @@ public class StatusEffect {
 			if(target==null) {
 				return "";
 			}
-			return UtilText.parse(target, "[npc.NamePos] clothing doesn't conceal [npc.her] "+getExposedPartsNamesList(target)+", and [npc.she] [npc.verb(feel)] incredibly sexy and empowered to be walking around in such an exposed fashion.");
+			return UtilText.parse(target, "Одежда [npc.NamePos] не скрывает [npc.her] "+getExposedPartsNamesList(target)+", и [npc.she] [npc.verb(feel)] невероятно сексуальна и полна сил, расхаживая в таком открытом виде.");
 		}
 		@Override
 		protected Value<Integer, String> getAdditionalDescription(GameCharacter target) {
 			if(Main.game.isOpportunisticAttackersEnabled() && target.isPlayer()) {
-				return new Value<>(2, "<b style='color:" + PresetColour.BASE_GREY.toWebHexString() +";'>Opportunistic Attackers</b><br/>Your exposed body parts attract all kind of lewd gazes.");
+				return new Value<>(2, "<b style='color:" + PresetColour.BASE_GREY.toWebHexString() +";'>Нападающие-опортунисты</b><br/>Ваши обнажённые части тела привлекают всевозможные похотливые взгляды.");
 			}
 			return super.getAdditionalDescription(target);
 		}
@@ -8166,7 +8118,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect FETISH_EXHIBITIONIST_BREASTS = new AbstractStatusEffect(80,
-			"exhibitionist",
+			"эксгибиционизм",
 			"exposedExhibitionist",
 			PresetColour.BASE_PINK_LIGHT,
 			PresetColour.BASE_PINK_DEEP,
@@ -8179,12 +8131,12 @@ public class StatusEffect {
 			if(target==null) {
 				return "";
 			}
-			return UtilText.parse(target, "[npc.NamePos] clothing doesn't conceal [npc.her] "+getExposedPartsNamesList(target)+", and [npc.she] [npc.verb(feel)] incredibly sexy and empowered to be walking around in such an exposed fashion.");
+			return UtilText.parse(target, "Одежда [npc.NamePos] не скрывает [npc.her] "+getExposedPartsNamesList(target)+", и [npc.she] [npc.verb(feel)] невероятно сексуальна и полна сил, расхаживая в таком открытом виде.");
 		}
 		@Override
 		protected Value<Integer, String> getAdditionalDescription(GameCharacter target) {
 			if(Main.game.isOpportunisticAttackersEnabled() && target.isPlayer()) {
-				return new Value<>(2, "<b style='color:" + PresetColour.BASE_GREY.toWebHexString() +";'>Opportunistic Attackers</b><br/>Your exposed body parts attract all kind of lewd gazes.");
+				return new Value<>(2, "<b style='color:" + PresetColour.BASE_GREY.toWebHexString() +";'>Нападающие-опортунисты</b><br/>Ваши обнажённые части тела привлекают всевозможные похотливые взгляды.");
 			}
 			return super.getAdditionalDescription(target);
 		}
@@ -8201,7 +8153,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect FETISH_EXHIBITIONIST_PLUS_BREASTS = new AbstractStatusEffect(80,
-			"exhibitionist",
+			"эксгибиционизм",
 			"exposedExhibitionist",
 			PresetColour.BASE_PINK_LIGHT,
 			PresetColour.BASE_PINK_DEEP,
@@ -8236,7 +8188,7 @@ public class StatusEffect {
 	};
 
 	public static AbstractStatusEffect FETISH_PURE_VIRGIN = new AbstractStatusEffect(80,
-			"Pure Virgin",
+			"Чистая дева",
 			"virginPure",
 			PresetColour.GENERIC_EXCELLENT,
 			true,
@@ -8263,7 +8215,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect FETISH_PURE_VIRGIN_NO_HYMEN = new AbstractStatusEffect(80,
-			"'Pure' Virgin",
+			"'Чистая' девственница",
 			"virginPureNoHymen",
 			PresetColour.GENERIC_GOOD,
 			true,
@@ -8290,7 +8242,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect FETISH_PURE_VIRGIN_ONLY_HYMEN = new AbstractStatusEffect(80,
-			"Pure 'Virgin'",
+			"Чистая 'девственница'",
 			"virginPureRepaired",
 			PresetColour.GENERIC_GOOD,
 			true,
@@ -8316,7 +8268,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect FETISH_BROKEN_VIRGIN = new AbstractStatusEffect(80,
-			"Broken Virgin",
+			"Сломленная девственница",
 			"virginBroken",
 			PresetColour.GENERIC_TERRIBLE,
 			false,
@@ -8344,7 +8296,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect FETISH_LUSTY_MAIDEN = new AbstractStatusEffect(80,
-			"Lusty Maiden",
+			"Похотливая дева",
 			"virginLustyMaidenPure",
 			PresetColour.GENERIC_EXCELLENT,
 			true,
@@ -8371,7 +8323,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect FETISH_LUSTY_MAIDEN_NO_HYMEN = new AbstractStatusEffect(80,
-			"Lusty 'Maiden'",
+			"Похотливая 'дева'",
 			"virginLustyMaidenNoHymen",
 			PresetColour.GENERIC_GOOD,
 			true,
@@ -8398,7 +8350,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect FETISH_LUSTY_MAIDEN_ONLY_HYMEN = new AbstractStatusEffect(80,
-			"Lusty 'Maiden'",
+			"Похотливая 'дева'",
 			"virginLustyMaidenRepaired",
 			PresetColour.GENERIC_GOOD,
 			true,
@@ -8424,7 +8376,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect FETISH_LUSTY_MAIDEN_BROKEN = new AbstractStatusEffect(80,
-			"Broken Maiden",
+			"Сломленная дева",
 			"virginLustyMaidenBroken",
 			PresetColour.GENERIC_TERRIBLE,
 			false,
@@ -8455,7 +8407,7 @@ public class StatusEffect {
 	// JOB/OCCUPATION EFFECTS:
 	
 	public static AbstractStatusEffect COMBAT_JOB_SOLDIER = new AbstractStatusEffect(10,
-			"Controlled Aggression",
+			"Контролируемая агрессия",
 			"res/perks/jobs/soldier",
 			PresetColour.BASE_GREEN,
 			true,
@@ -8476,7 +8428,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect SET_MAID = new AbstractStatusEffect(70,
 			"Трудолюбивая горничная",
-			"clothingSets/maid",
+			"наборы_одежды/горничная",
 			PresetColour.CLOTHING_BLACK,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_PHYSIQUE, 10f),
@@ -8502,7 +8454,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect SET_MAID_BOOSTED = new AbstractStatusEffect(70,
-			"Professional Maid",
+			"Профессиональная горничная",
 			"clothingSets/maid_boosted",
 			PresetColour.CLOTHING_BLACK,
 			PresetColour.BASE_GOLD,
@@ -8532,8 +8484,8 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect SET_MILK_MAID = new AbstractStatusEffect(70,
-			"Milk Maid",
-			"clothingSets/milk_maid",
+			"Молочница",
+			"наборы_одежды/горничная_молочница",
 			PresetColour.BASE_WHITE,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_PHYSIQUE, 10f),
@@ -8546,7 +8498,7 @@ public class StatusEffect {
 		@Override
 		public String getDescription(GameCharacter target) {
 			if(target!=null) {
-				return UtilText.parse(target, "By wearing the entire Milk Maid's outfit, [npc.nameIsFull] filled with the energy [npc.she] [npc.verb(need)] in order to perform all of [npc.her] milk maid's duties.");
+				return UtilText.parse(target, "Надев полный наряд молочной девы, [npc.nameIsFull] наполнилась энергией [npc.she] [npc.verb(need)], чтобы исполнять все обязанности [npc.her] молочной девы.");
 				
 			} else {
 				return "";
@@ -8589,8 +8541,8 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect SET_BUTLER = new AbstractStatusEffect(70,
-			"Butler",
-			"clothingSets/butler",
+			"Дворецкий",
+			"наборы_одежды/дворецкий",
 			PresetColour.CLOTHING_WHITE,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_PHYSIQUE, 10f),
@@ -8603,7 +8555,7 @@ public class StatusEffect {
 		@Override
 		public String getDescription(GameCharacter target) {
 			if(target!=null) {
-				return UtilText.parse(target, "By wearing the entire Butler's outfit, [npc.nameIsFull] filled with the energy [npc.she] [npc.verb(need)] in order to carry out [npc.her] duties as a butler.");
+				return UtilText.parse(target, "Надев полный наряд дворецкого, [npc.nameIsFull] наполнилась энергией [npc.she] [npc.verb(need)], чтобы выполнять обязанности [npc.her] дворецкого.");
 					
 			} else {
 				return "";
@@ -8616,7 +8568,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect SET_BUTLER_BOOSTED = new AbstractStatusEffect(70,
-			"Professional Butler",
+			"Профессиональный дворецкий",
 			"clothingSets/butler_boosted",
 			PresetColour.CLOTHING_WHITE,
 			PresetColour.BASE_GOLD,
@@ -8646,8 +8598,8 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect SET_WITCH = new AbstractStatusEffect(70,
-			"Arcane Witch",
-			"clothingSets/witch",
+			"Arcane Ведьма",
+			"наборы_одежды/ведьма",
 			PresetColour.CLOTHING_BLACK,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_ARCANE, 5f),
@@ -8679,8 +8631,8 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect SET_SCIENTIST = new AbstractStatusEffect(70,
-			"Scientist",
-			"clothingSets/scientist",
+			"Ученый",
+			"наборы_одежды/ученый",
 			PresetColour.CLOTHING_BLACK,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_ARCANE, 5f),
@@ -8713,8 +8665,8 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect SET_SLUTTY_ENFORCER = new AbstractStatusEffect(70,
-			"Slutty Enforcer",
-			"clothingSets/slutty_enforcer",
+			"Развратная Enforcer",
+			"наборы_одежды/распутная_надзирательница",
 			PresetColour.BASE_PINK,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.DAMAGE_LUST, 15f),
@@ -8740,8 +8692,8 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect SET_RAINBOW = new AbstractStatusEffect(70,
-			"Double Rainbow",
-			"clothingSets/rainbow",
+			"Двойная радуга",
+			"наборы_одежды/радужный",
 			PresetColour.CLOTHING_RED,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.DAMAGE_LUST, 10f)),
@@ -8761,7 +8713,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect SET_DARK_SIREN = new AbstractStatusEffect(70,
-			"Dark Siren",
+			"Тёмная сирена",
 			"clothingSets/dark_siren",
 			PresetColour.CLOTHING_PURPLE_DARK,
 			PresetColour.CLOTHING_BLACK_STEEL,
@@ -8785,7 +8737,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect SET_LYSSIETH_GUARD = new AbstractStatusEffect(70,
-			"Lyssieth's Guard",
+			"Стража Lyssieth",
 			"clothingSets/lyssieth_guard",
 			PresetColour.CLOTHING_OLIVE,
 			PresetColour.CLOTHING_BROWN_DARK,
@@ -8809,8 +8761,8 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect SET_BDSM = new AbstractStatusEffect(70,
-			"Bound Bitch",
-			"clothingSets/bdsm",
+			"Подвязанная сучка",
+			"наборы_одежды/бдсм",
 			PresetColour.CLOTHING_BLACK,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_PHYSIQUE, -15f)),
@@ -8847,8 +8799,8 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect SET_CATTLE = new AbstractStatusEffect(70,
-			"Cattle",
-			"clothingSets/cattle",
+			"Скот",
+			"наборы_одежды/скот",
 			PresetColour.BASE_TAN,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_PHYSIQUE, 5f)),
@@ -8878,8 +8830,8 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect SET_SNOWFLAKE = new AbstractStatusEffect(70,
-			"Glacial",
-			"clothingSets/snowflake",
+			"Ледяная",
+			"наборы_одежды/снежинка",
 			PresetColour.BASE_BLUE_LIGHT,
 			true,
 			Util.newHashMapOfValues(
@@ -8904,7 +8856,7 @@ public class StatusEffect {
 	};
 		
 	public static AbstractStatusEffect SET_SUN = new AbstractStatusEffect(70,
-			"Radiant",
+			"Сияющая",
 			"clothingSets/sun",
 			PresetColour.CLOTHING_COPPER,
 			PresetColour.CLOTHING_YELLOW,
@@ -8932,8 +8884,8 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect SET_GEISHA = new AbstractStatusEffect(70,
-			"Geisha",
-			"clothingSets/geisha",
+			"Гейша",
+			"наборы_одежды/гейша",
 			PresetColour.BASE_ROSE,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.DAMAGE_LUST, 15f)),
@@ -8957,8 +8909,8 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect SET_RONIN = new AbstractStatusEffect(70,
-			"Ronin",
-			"clothingSets/ronin",
+			"Ронин",
+			"наборы_одежды/ронины",
 			PresetColour.BASE_ROSE,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_PHYSIQUE, 5f),
@@ -8990,8 +8942,8 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect SET_DAISHO = new AbstractStatusEffect(70,
-			"Daisho",
-			"clothingSets/daisho",
+			"Дайсё",
+			"наборы_одежды/дайшо",
 			PresetColour.BASE_ROSE,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_PHYSIQUE, 5f),
@@ -9017,8 +8969,8 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect SET_JOLNIR = new AbstractStatusEffect(70,
-			"J&oacute;lnir",
-			"clothingSets/jolnir",
+			"Йольнир",
+			"наборы_одежды/йольнир",
 			PresetColour.BASE_BLACK,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_ARCANE, 15f),
@@ -9050,7 +9002,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect SET_KITTY = new AbstractStatusEffect(70,
-			"Playful Kitty",
+			"Игривая кошечка",
 			"clothingSets/kitty",
 			PresetColour.CLOTHING_PINK_LIGHT,
 			PresetColour.CLOTHING_BLACK,
@@ -9077,7 +9029,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect SET_STURDY_STEED = new AbstractStatusEffect(70,
 			"Все в порядке",
-			"clothingSets/sturdy_steed",
+			"наборы_одежды/крепкий_скакун",
 			PresetColour.CLOTHING_STEEL,
 			true,
 			Util.newHashMapOfValues(
@@ -9103,7 +9055,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect CLOTHING_EFFECT = new AbstractStatusEffect(70,
-			"clothing effects",
+			"эффекты одежды",
 			"combatHidden",
 			PresetColour.TRANSFORMATION_GENERIC,
 			false,
@@ -9124,7 +9076,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect POTION_EFFECTS = new AbstractStatusEffect(80,
-			"potion effects",
+			"эффекты зелий",
 			"potionEffects",
 			PresetColour.GENERIC_ARCANE,
 			PresetColour.BASE_PINK_LIGHT,
@@ -9135,7 +9087,7 @@ public class StatusEffect {
 		@Override
 		public String getDescription(GameCharacter target) {
 			if(target.hasTrait(Perk.JOB_CHEF, true)) {
-				return UtilText.parse(target, "Thanks to [npc.namePos] background as a chef, [npc.sheIs] able to harness the full potential of the many arcane-infused consumables found throughout this world...");
+				return UtilText.parse(target, "Благодаря [npc.namePos] прошлому шеф-повара, [npc.sheIs] способна раскрыть весь потенциал многочисленных напитков, наполненных арканой, которые можно найти в этом мире...");
 			}
 			return UtilText.parse(target, "Аркана-инфузированные продукты очень распространены в этом мире, и, как [npc.nameHasFull] обнаружил, они могут иметь довольно любопытные эффекты...");
 		}
@@ -9172,13 +9124,13 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect HAPPINESS = new AbstractStatusEffect(70,
-			"happiness",
+			"счастье",
 			"happinessFox",
 			PresetColour.CLOTHING_SILVER,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.HEALTH_MAXIMUM, 5f),
 					new Value<>(Attribute.MANA_MAXIMUM, 5f)),
-			Util.newArrayListOfValues("[style.italicsGood(Happiness!)]")) {
+			Util.newArrayListOfValues("[style.italicsGood(Счастье!)]")) {
 		@Override
 		public String getDescription(GameCharacter target) {
 			return "Серебристо-меховая лисица, <i>Счастье</i>, следует за тобой, куда бы ты ни пошел."
@@ -9194,7 +9146,7 @@ public class StatusEffect {
 	// COMBAT EFFECTS:
 
 	public static AbstractStatusEffect SPECIAL_SILENCE_TRANCE = new AbstractStatusEffect(70,
-			"Silence's Trance",
+			"Транс Безмолвия",
 			"glowingEyes",
 			PresetColour.GENERIC_ARCANE,
 			true,
@@ -9220,7 +9172,7 @@ public class StatusEffect {
 	};
 
 	public static AbstractStatusEffect SPECIAL_SHADOW_BESERK = new AbstractStatusEffect(70,
-			"Shadow's Rage",
+			"Ярость Тени",
 			"glowingEyes",
 			PresetColour.BASE_CRIMSON,
 			true,
@@ -9274,7 +9226,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect COMBAT_HIDDEN = new AbstractStatusEffect(70,
-			"hidden",
+			"скрытые",
 			"combatHidden",
 			PresetColour.GENERIC_BAD,
 			false,
@@ -9301,7 +9253,7 @@ public class StatusEffect {
 			Util.newArrayListOfValues(
 					"Входящий [style.colourLust(Урон Похоти)] преобразуется в:",
 					"урон)] и [style.colourMana(1*",
-					"[style.colourHealth(2*"+Attribute.HEALTH_MAXIMUM.getName()+"Вы абсолютно отчаянно нуждаетесь в сексе, но благодаря силе вашей арканой ауры, вы можете сопротивляться и не сдаваться прямо здесь и сейчас!"+Attribute.MANA_MAXIMUM.getName()+" damage)]")) {
+					"[style.colourHealth(2*"+Attribute.HEALTH_MAXIMUM.getName()+"Вы абсолютно отчаянно нуждаетесь в сексе, но благодаря силе вашей арканой ауры, вы можете сопротивляться и не сдаваться прямо здесь и сейчас!"+Attribute.MANA_MAXIMUM.getName()+" урон)]")) {
 		@Override
 		public String getDescription(GameCharacter target) {
 			if(target.isPlayer()) {
@@ -9324,7 +9276,7 @@ public class StatusEffect {
 	// From spells or combat moves (still in combat):
 	
 	public static AbstractStatusEffect ARCANE_WEAKNESS = new AbstractStatusEffect(10,
-			"arcane weakness",
+			"уязвимость к аркане",
 			"negativeCombatEffect",
 			PresetColour.GENERIC_ARCANE,
 			false,
@@ -9345,8 +9297,8 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect DAZED = new AbstractStatusEffect(10,
-			"dazed",
-			"dazed",
+			"ошеломление",
+			"ошеломление",
 			PresetColour.DAMAGE_TYPE_PHYSICAL,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.DAMAGE_PHYSICAL, -25f),
@@ -9363,7 +9315,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect CRIPPLE = new AbstractStatusEffect(10,
-			"crippled",
+			"хромота",
 			"negativeCombatEffect",
 			PresetColour.DAMAGE_TYPE_PHYSICAL,
 			false,
@@ -9380,7 +9332,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect VULNERABLE = new AbstractStatusEffect(10,
-			"vulnerable",
+			"уязвимость",
 			"negativeCombatEffect",
 			PresetColour.DAMAGE_TYPE_PHYSICAL,
 			false,
@@ -9399,12 +9351,12 @@ public class StatusEffect {
 	};
 
 	public static AbstractStatusEffect POISONED = new AbstractStatusEffect(10,
-			"poisoned",
+			"отравление",
 			"combat_poisoned",
 			PresetColour.ATTRIBUTE_HEALTH,
 			false,
 			null,
-			Util.newArrayListOfValues("<b>15</b> "+Attribute.DAMAGE_POISON.getColouredName("b")+" per turn</b>")) {
+			Util.newArrayListOfValues("<b>15</b> "+Attribute.DAMAGE_POISON.getColouredName("b")+" за</b>")) {
 		@Override
 		public String applyEffect(GameCharacter target, int secondsPassed, long totalSecondsPassed) {
 			Value<String, Integer> damageValue = DamageType.POISON.damageTarget(null, target, 15);
@@ -9422,14 +9374,14 @@ public class StatusEffect {
 	};
 
 	public static AbstractStatusEffect POISONED_LUST = new AbstractStatusEffect(10,
-			"lust-poisoned",
+			"отравление похотью",
 			"combat_poisoned",
 			PresetColour.DAMAGE_TYPE_LUST,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.RESISTANCE_LUST, -25f)),
 			Util.newArrayListOfValues(
-					"<b>5</b> "+Attribute.DAMAGE_POISON.getColouredName("b")+" per turn</b>",
-					"<b>10</b> "+Attribute.DAMAGE_LUST.getColouredName("b")+" per turn</b>")) {
+					"<b>5</b> "+Attribute.DAMAGE_POISON.getColouredName("b")+" за</b>",
+					"<b>10</b> "+Attribute.DAMAGE_LUST.getColouredName("b")+" за</b>")) {
 		@Override
 		public String applyEffect(GameCharacter target, int secondsPassed, long totalSecondsPassed) {
 			Value<String, Integer> damageValue = DamageType.POISON.damageTarget(null, target, 5);
@@ -9449,7 +9401,7 @@ public class StatusEffect {
 	};
 
 	public static AbstractStatusEffect INKY_ATTACK = new AbstractStatusEffect(10,
-			"Inky's lover",
+			"Любовник Инки",
 			"inky_summon",
 			PresetColour.DAMAGE_TYPE_LUST,
 			false,
@@ -9457,7 +9409,7 @@ public class StatusEffect {
 					new Value<>(Attribute.ACTION_POINTS, -1f),
 					new Value<>(Attribute.RESISTANCE_LUST, -25f)),
 			Util.newArrayListOfValues(
-					"<b>15</b> "+Attribute.DAMAGE_LUST.getColouredName("b")+" per turn</b>")) {
+					"<b>15</b> "+Attribute.DAMAGE_LUST.getColouredName("b")+" за</b>")) {
 		@Override
 		public String applyEffect(GameCharacter target, int secondsPassed, long totalSecondsPassed) {
 			Value<String, Integer> lustDamageValue = DamageType.LUST.damageTarget(null, target, 15);
@@ -9475,7 +9427,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect WITCH_SEAL = new AbstractStatusEffect(10,
-			"Witch's Seal",
+			"Печать ведьмы",
 			"combat_witch_seal",
 			PresetColour.GENERIC_ARCANE,
 			false,
@@ -9499,7 +9451,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect WITCH_CHARM = new AbstractStatusEffect(10,
-			"Bewitching Charm",
+			"Очарование ведьмы",
 			"combat_witch_charm",
 			PresetColour.GENERIC_SEX,
 			true,
@@ -9642,7 +9594,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect WEBBED_1 = new AbstractStatusEffect(10,
-			"Webbed",
+			"Опутана паутиной",
 			"restrain_webbed_1",
 			PresetColour.GENERIC_BAD,
 			false,
@@ -9662,7 +9614,7 @@ public class StatusEffect {
 	};
 
 	public static AbstractStatusEffect WEBBED_2 = new AbstractStatusEffect(10,
-			"Seriously webbed",
+			"Сильно опутана паутиной",
 			"restrain_webbed_2",
 			PresetColour.GENERIC_BAD,
 			false,
@@ -9689,7 +9641,7 @@ public class StatusEffect {
 	};
 
 	public static AbstractStatusEffect WEBBED_3 = new AbstractStatusEffect(10,
-			"Cocooned",
+			"В коконе",
 			"restrain_webbed_3",
 			PresetColour.GENERIC_BAD,
 			false,
@@ -9717,7 +9669,7 @@ public class StatusEffect {
 	};
 
 	public static AbstractStatusEffect WEBBED_SEX = new AbstractStatusEffect(10,
-			"Cocooned",
+			"В коконе",
 			"immobilised_cocoon",
 			PresetColour.GENERIC_BAD,
 			false,
@@ -9745,7 +9697,7 @@ public class StatusEffect {
 	};
 
 	public static AbstractStatusEffect WITCH_SEAL_SEX = new AbstractStatusEffect(10,
-			"Witch's Seal",
+			"Печать ведьмы",
 			"immobilised_seal",
 			PresetColour.GENERIC_ARCANE,
 			false,
@@ -9773,7 +9725,7 @@ public class StatusEffect {
 	};
 
 	public static AbstractStatusEffect TENTACLE_RESTRAIN_1 = new AbstractStatusEffect(10,
-			"Tentacle-grabbed",
+			"Захвачена щупальцами",
 			"restrain_tentacles_1",
 			PresetColour.GENERIC_BAD,
 			PresetColour.getColourFromId("NoStepOnSnek_octopus"),
@@ -9795,7 +9747,7 @@ public class StatusEffect {
 	};
 
 	public static AbstractStatusEffect TENTACLE_RESTRAIN_2 = new AbstractStatusEffect(10,
-			"Tentacle-embraced",
+			"В объятиях щупалец",
 			"restrain_tentacles_2",
 			PresetColour.GENERIC_BAD,
 			PresetColour.getColourFromId("NoStepOnSnek_octopus"),
@@ -9824,7 +9776,7 @@ public class StatusEffect {
 	};
 
 	public static AbstractStatusEffect TENTACLE_RESTRAIN_3 = new AbstractStatusEffect(10,
-			"Tentacle-constricted",
+			"Сдавлена щупальцами",
 			"restrain_tentacles_3",
 			PresetColour.GENERIC_BAD,
 			PresetColour.getColourFromId("NoStepOnSnek_octopus"),
@@ -9854,7 +9806,7 @@ public class StatusEffect {
 	};
 
 	public static AbstractStatusEffect TENTACLE_RESTRICTION_SEX = new AbstractStatusEffect(10,
-			"Tentacle-bound",
+			"Связана щупальцами",
 			"immobilised_tentacles",
 			PresetColour.getColourFromId("NoStepOnSnek_octopus"),
 			false,
@@ -9886,7 +9838,7 @@ public class StatusEffect {
 	};
 
 	public static AbstractStatusEffect TAIL_RESTRAIN_1 = new AbstractStatusEffect(10,
-			"Tail-grabbed",
+			"Схвачена за хвост",
 			"restrain_tail_1",
 			PresetColour.GENERIC_BAD,
 			PresetColour.BASE_GREEN_DARK,
@@ -9908,7 +9860,7 @@ public class StatusEffect {
 	};
 
 	public static AbstractStatusEffect TAIL_RESTRAIN_2 = new AbstractStatusEffect(10,
-			"Tail-embraced",
+			"Объята хвостом",
 			"restrain_tail_2",
 			PresetColour.GENERIC_BAD,
 			PresetColour.BASE_GREEN_DARK,
@@ -9937,7 +9889,7 @@ public class StatusEffect {
 	};
 
 	public static AbstractStatusEffect TAIL_RESTRAIN_3 = new AbstractStatusEffect(10,
-			"Tail-constricted",
+			"Сдавлена хвостом",
 			"restrain_tail_3",
 			PresetColour.GENERIC_BAD,
 			PresetColour.BASE_GREEN_DARK,
@@ -9967,7 +9919,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect TAIL_CONSTRICTION_SEX = new AbstractStatusEffect(10,
-			"Constricted",
+			"Сдавлена",
 			"immobilised_tail",
 			PresetColour.BASE_GREEN_DARK,
 			false,
@@ -9999,7 +9951,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect COMMAND_IMMOBILE_SEX = new AbstractStatusEffect(10,
-			"Immobile",
+			"Неподвижность",
 			"immobilised_command",
 			PresetColour.BASE_WHITE,
 			PresetColour.BASE_RED,
@@ -10033,7 +9985,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect SLEEP_SEX = new AbstractStatusEffect(10,
-			"Asleep",
+			"Сон",
 			"immobilised_sleep",
 			PresetColour.SLEEP_HEAVY,
 			false,
@@ -10063,12 +10015,12 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect BANEFUL_FISSURE = new AbstractStatusEffect(10,
-			"Fissure's Fumes",
+			"Пары Разлома",
 			null,
 			PresetColour.DAMAGE_TYPE_POISON,
 			false,
 			null,
-			Util.newArrayListOfValues("<b>25</b> "+Attribute.DAMAGE_POISON.getColouredName("b")+" per turn</b>")) {
+			Util.newArrayListOfValues("<b>25</b> "+Attribute.DAMAGE_POISON.getColouredName("b")+" за</b>")) {
 		@Override
 		public String applyEffect(GameCharacter target, int secondsPassed, long totalSecondsPassed) {
 			Value<String, Integer> damageValue = DamageType.POISON.damageTarget(null, target, 25);
@@ -10091,13 +10043,13 @@ public class StatusEffect {
 	};
 
 	public static AbstractStatusEffect FIRE_MANA_BURN = new AbstractStatusEffect(10,
-			"Aura Burn",
+			"Горение Ауры",
 			"melee_fire",
 			PresetColour.DAMAGE_TYPE_FIRE,
 			true,
 			null,
 			Util.newArrayListOfValues("[style.boldFire(Fire Spells)] можно использовать за счет "+Attribute.HEALTH_MAXIMUM.getName()+" когда нет ауры",
-					"[style.boldGood(Не уменьшает "+Attribute.HEALTH_MAXIMUM.getName()+" below 1)]")) {
+					"[style.boldGood(Не уменьшает "+Attribute.HEALTH_MAXIMUM.getName()+" ниже 1)]")) {
 		@Override
 		public String getDescription(GameCharacter target) {
 			return UtilText.parse(target,
@@ -10114,7 +10066,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect LINGERING_FLAMES = new AbstractStatusEffect(10,
-			"Lingering Flames",
+			"Тлеющие Огни",
 			null,
 			PresetColour.DAMAGE_TYPE_FIRE,
 			false,
@@ -10124,7 +10076,7 @@ public class StatusEffect {
 		public String applyEffect(GameCharacter target, int secondsPassed, long totalSecondsPassed) {
 			Value<String, Integer> damageValue = DamageType.FIRE.damageTarget(null, target, 5);
 
-			return UtilText.parse(target, "[npc.Name] [npc.verb(take)] <b>" + damageValue.getValue() + "</b> [style.boldFire(fire damage)]!")+damageValue.getKey();
+			return UtilText.parse(target, "[npc.Name] [npc.verb(take)] <b>" + damageValue.getValue() + "</b> [style.boldFire(урон огнем)]!")+damageValue.getKey();
 		}
 		@Override
 		public String getDescription(GameCharacter target) {
@@ -10146,7 +10098,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect FLASH = new AbstractStatusEffect(10,
-			"Blinded",
+			"Ослепление",
 			null,
 			PresetColour.DAMAGE_TYPE_FIRE,
 			false,
@@ -10288,7 +10240,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect ELEMENTAL_FIRE_WILDFIRE = new AbstractStatusEffect(10,
-			"Wildfire",
+			"Стихийный огонь",
 			null,
 			PresetColour.DAMAGE_TYPE_FIRE,
 			true,
@@ -10320,7 +10272,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect ELEMENTAL_FIRE_BURNING_DESIRE = new AbstractStatusEffect(10,
-			"Burning Desire",
+			"Жгучее желание",
 			null,
 			PresetColour.DAMAGE_TYPE_FIRE,
 			false,
@@ -10361,11 +10313,11 @@ public class StatusEffect {
 			PresetColour.DAMAGE_TYPE_FIRE,
 			false,
 			null,
-			Util.newArrayListOfValues("-50% [style.colourHealth(Maximum "+Attribute.HEALTH_MAXIMUM.getName()+")]")) {
+			Util.newArrayListOfValues("-50% [style.colourHealth(Максимальное "+Attribute.HEALTH_MAXIMUM.getName()+")]")) {
 		@Override
 		public String getDescription(GameCharacter target) {
 			return UtilText.parse(target, target.getElemental(),
-					"Having sworn [npc.her] subservience to the school of Fire, [npc.namePos] Fire elemental, [npc2.name], is now siphoning off as much of [npc.namePos] energy as [npc2.she] wants!");
+					"Присягнув на [npc.her] верность школе Огня, [npc.namePos] огненный элементаль, [npc2.name], теперь высасывает столько [npc.namePos] энергии, сколько пожелает [npc2.she]!");
 		}
 		@Override
 		public String getSVGString(GameCharacter owner) {
@@ -10380,12 +10332,12 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect ELEMENTAL_FIRE_SERVANT_OF_FIRE_ELEMENTAL_BUFF = new AbstractStatusEffect(10,
-			"Energy Siphon",
+			"Поглощение энергии",
 			null,
 			PresetColour.DAMAGE_TYPE_FIRE,
 			true,
 			null,
-			Util.newArrayListOfValues("+100% [style.colourExcellent(Non-Seduction Damage)]")) {
+			Util.newArrayListOfValues("+100% [style.colourExcellent(Несоблазнительный урон)]")) {
 		@Override
 		public String getDescription(GameCharacter target) {
 			return UtilText.parse(target, ((Elemental)target).getSummoner(), "[npc.NameIsFull] отсасывает столько энергии [npc2.namePos], сколько хочет [npc.she], что позволяет [npc.herHim] наносить огромный урон!");
@@ -10429,7 +10381,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect FREEZING_FOG = new AbstractStatusEffect(10,
-			"Freezing Fog",
+			"Ледяной туман",
 			null,
 			PresetColour.DAMAGE_TYPE_COLD,
 			false,
@@ -10451,7 +10403,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect FROZEN = new AbstractStatusEffect(10,
-			"Frozen",
+			"Застывший",
 			null,
 			PresetColour.DAMAGE_TYPE_COLD,
 			false,
@@ -10472,7 +10424,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect RAIN_CLOUD = new AbstractStatusEffect(10,
-			"Rain Cloud",
+			"Дождевая туча",
 			null,
 			PresetColour.DAMAGE_TYPE_COLD,
 			false,
@@ -10592,7 +10544,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect ELEMENTAL_WATER_CRASHING_WAVES = new AbstractStatusEffect(10,
-			"Crashing Waves",
+			"Штормовые волны",
 			null,
 			PresetColour.DAMAGE_TYPE_COLD,
 			true,
@@ -10625,7 +10577,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect ELEMENTAL_WATER_CALM_WATERS = new AbstractStatusEffect(10,
-			"Calm Waters",
+			"Спокойные воды",
 			null,
 			PresetColour.DAMAGE_TYPE_COLD,
 			true,
@@ -10666,11 +10618,11 @@ public class StatusEffect {
 			PresetColour.DAMAGE_TYPE_COLD,
 			false,
 			null,
-			Util.newArrayListOfValues("-50% [style.colourHealth(Maximum "+Attribute.HEALTH_MAXIMUM.getName()+")]")) {
+			Util.newArrayListOfValues("-50% [style.colourHealth(Максимальное "+Attribute.HEALTH_MAXIMUM.getName()+")]")) {
 		@Override
 		public String getDescription(GameCharacter target) {
 			return UtilText.parse(target, target.getElemental(),
-						"Having sworn [npc.her] subservience to the school of Water, [npc.namePos] Water elemental, [npc2.name], is now siphoning off as much of [npc.namePos] energy as [npc2.she] wants!");
+						"Присягнув на [npc.her] верность школе Воды, [npc.namePos] водный элементаль, [npc2.name], теперь высасывает столько [npc.namePos] энергии, сколько пожелает [npc2.she]!");
 		}
 		@Override
 		public String getSVGString(GameCharacter owner) {
@@ -10685,12 +10637,12 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect ELEMENTAL_WATER_SERVANT_OF_WATER_ELEMENTAL_BUFF = new AbstractStatusEffect(10,
-			"Energy Siphon",
+			"Поглощение энергии",
 			null,
 			PresetColour.DAMAGE_TYPE_COLD,
 			true,
 			null,
-			Util.newArrayListOfValues("+100% [style.colourExcellent(Non-Seduction Damage)]")) {
+			Util.newArrayListOfValues("+100% [style.colourExcellent(Несоблазнительный урон)]")) {
 		@Override
 		public String getDescription(GameCharacter target) {
 			return UtilText.parse(target, ((Elemental)target).getSummoner(), "[npc.NameIsFull] отсасывает столько энергии [npc2.namePos], сколько хочет [npc.she], позволяя [npc.herHim] нанести огромный урон!");
@@ -10734,12 +10686,12 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect POISON_VAPOURS = new AbstractStatusEffect(10,
-			"Poison Vapours",
+			"Ядовитые испарения",
 			null,
 			PresetColour.DAMAGE_TYPE_POISON,
 			false,
 			null,
-			Util.newArrayListOfValues("<b>25</b> "+Attribute.DAMAGE_POISON.getColouredName("b")+" per turn</b>")) {
+			Util.newArrayListOfValues("<b>25</b> "+Attribute.DAMAGE_POISON.getColouredName("b")+" за</b>")) {
 		@Override
 		public String applyEffect(GameCharacter target, int secondsPassed, long totalSecondsPassed) {
 			Value<String, Integer> damageValue = DamageType.POISON.damageTarget(null, target, 25);
@@ -10766,7 +10718,7 @@ public class StatusEffect {
 			PresetColour.DAMAGE_TYPE_POISON,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.ENERGY_SHIELDING, -5f)),
-			Util.newArrayListOfValues("<b>25</b> "+Attribute.DAMAGE_POISON.getColouredName("b")+" per turn</b>")) {
+			Util.newArrayListOfValues("<b>25</b> "+Attribute.DAMAGE_POISON.getColouredName("b")+" за</b>")) {
 				@Override
 		public String applyEffect(GameCharacter target, int secondsPassed, long totalSecondsPassed) {
 			Value<String, Integer> damageValue = DamageType.POISON.damageTarget(null, target, 25);
@@ -10793,7 +10745,7 @@ public class StatusEffect {
 			PresetColour.DAMAGE_TYPE_POISON,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.ENERGY_SHIELDING, -5f)),
-			Util.newArrayListOfValues("<b>25</b> "+Attribute.DAMAGE_POISON.getColouredName("b")+" per turn</b>",
+			Util.newArrayListOfValues("<b>25</b> "+Attribute.DAMAGE_POISON.getColouredName("b")+" за</b>",
 					"<b>10</b> "+Attribute.MANA_MAXIMUM.getColouredName("b")+" [style.boldУжасный(drained)] в ход</b>")) {
 				@Override
 		public String applyEffect(GameCharacter target, int secondsPassed, long totalSecondsPassed) {
@@ -10828,7 +10780,7 @@ public class StatusEffect {
 			Util.newHashMapOfValues(new Value<>(Attribute.ENERGY_SHIELDING, -5f),
 					new Value<>(Attribute.DAMAGE_PHYSICAL, -15f),
 					new Value<>(Attribute.CRITICAL_DAMAGE, -25f)),
-			Util.newArrayListOfValues("<b>25</b> "+Attribute.DAMAGE_POISON.getColouredName("b")+" per turn</b>",
+			Util.newArrayListOfValues("<b>25</b> "+Attribute.DAMAGE_POISON.getColouredName("b")+" за</b>",
 					"<b>10</b> "+Attribute.MANA_MAXIMUM.getColouredName("b")+" [style.boldУжасный(drained)] в ход</b>")) {
 				@Override
 		public String applyEffect(GameCharacter target, int secondsPassed, long totalSecondsPassed) {
@@ -10856,7 +10808,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect VACUUM = new AbstractStatusEffect(10,
-			"Vacuum",
+			"Вакуум",
 			null,
 			PresetColour.DAMAGE_TYPE_PHYSICAL,
 			false,
@@ -10901,7 +10853,7 @@ public class StatusEffect {
 	};
 
 	public static AbstractStatusEffect VACUUM_SUCTION = new AbstractStatusEffect(10,
-			"Vacuum (Suction)",
+			"Вакуум (Всасывание)",
 			null,
 			PresetColour.DAMAGE_TYPE_PHYSICAL,
 			false,
@@ -10922,7 +10874,7 @@ public class StatusEffect {
 					AbstractClothing clothingBlownOff = suitableClothing.get(Util.random.nextInt(suitableClothing.size()));
 					target.unequipClothingOntoFloor(clothingBlownOff, true, target);
 					if(target.isPlayer()) {
-						return "Your "+clothingBlownOff.getName()+" "+(clothingBlownOff.getClothingType().isPlural()?"are":"is")+"@@H0@@10%@@H1@@ шанс в ход на [style.boldExcellent(stripping)] одежду";
+						return "Вашей "+clothingBlownOff.getName()+" "+(clothingBlownOff.getClothingType().isPlural()?"are":"is")+"@@H0@@10%@@H1@@ шанс в ход на [style.boldExcellent(stripping)] одежду";
 					} else {
 						return "[npc.NamePos] "+clothingBlownOff.getName()+" "+(clothingBlownOff.getClothingType().isPlural()?"are":"is")+"@@H0@@10%@@H1@@ шанс в ход на [style.boldExcellent(stripping)] одежду";
 					}
@@ -10968,7 +10920,7 @@ public class StatusEffect {
 					AbstractClothing clothingBlownOff = suitableClothing.get(Util.random.nextInt(suitableClothing.size()));
 					target.unequipClothingOntoFloor(clothingBlownOff, true, target);
 					if(target.isPlayer()) {
-						return "Your "+clothingBlownOff.getName()+" "+(clothingBlownOff.getClothingType().isPlural()?"are":"is")+" высосана и выброшена на пол!";
+						return "Вашей "+clothingBlownOff.getName()+" "+(clothingBlownOff.getClothingType().isPlural()?"are":"is")+" высосана и выброшена на пол!";
 					} else {
 						return "[npc.NamePos] "+clothingBlownOff.getName()+" "+(clothingBlownOff.getClothingType().isPlural()?"are":"is")+" высосана и выброшена на пол!";
 					}
@@ -10993,7 +10945,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect PROTECTIVE_GUSTS = new AbstractStatusEffect(10,
-			"Protective Gusts",
+			"Защитные порывы",
 			null,
 			PresetColour.DAMAGE_TYPE_PHYSICAL,
 			true,
@@ -11067,7 +11019,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect ELEMENTAL_AIR_WHIRLWIND = new AbstractStatusEffect(10,
-			"Whirlwind",
+			"Вихрь",
 			null,
 			PresetColour.DAMAGE_TYPE_PHYSICAL,
 			false,
@@ -11104,7 +11056,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect ELEMENTAL_AIR_VITALISING_SCENTS = new AbstractStatusEffect(10,
-			"Vitalising Scents",
+			"Оживляющие ароматы",
 			null,
 			PresetColour.DAMAGE_TYPE_PHYSICAL,
 			true,
@@ -11147,7 +11099,7 @@ public class StatusEffect {
 		@Override
 		public String getDescription(GameCharacter target) {
 			return UtilText.parse(target, target.getElemental(),
-						"Having sworn [npc.her] subservience to the school of Air, [npc.namePos] Air elemental, [npc2.name], is now siphoning off as much of [npc.namePos] energy as [npc2.she] wants!");
+						"Присягнув [npc.her] на верность школе Воздуха, [npc.namePos] элементаль воздуха, [npc2.name], теперь высасывает столько [npc.namePos] энергии, сколько пожелает [npc2.she]!");
 		}
 		@Override
 		public String getSVGString(GameCharacter owner) {
@@ -11162,7 +11114,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect ELEMENTAL_AIR_SERVANT_OF_AIR_ELEMENTAL_BUFF = new AbstractStatusEffect(10,
-			"Energy Siphon",
+			"Поглощение энергии",
 			null,
 			PresetColour.DAMAGE_TYPE_PHYSICAL,
 			true,
@@ -11211,7 +11163,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect SLAM_GROUND_SHAKE = new AbstractStatusEffect(10,
-			"Ground Shake",
+			"Дрожь земли",
 			null,
 			PresetColour.DAMAGE_TYPE_PHYSICAL,
 			false,
@@ -11262,12 +11214,12 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect TELEKENETIC_SHOWER = new AbstractStatusEffect(10,
-			"Telekinetic Shower",
+			"Телекинетический душ",
 			null,
 			PresetColour.DAMAGE_TYPE_PHYSICAL,
 			false,
 			null,
-			Util.newArrayListOfValues("<b>25</b> "+Attribute.DAMAGE_PHYSICAL.getColouredName("b")+" per turn</b>")) {
+			Util.newArrayListOfValues("<b>25</b> "+Attribute.DAMAGE_PHYSICAL.getColouredName("b")+" за</b>")) {
 		@Override
 		public String applyEffect(GameCharacter target, int secondsPassed, long totalSecondsPassed) {
 			Value<String, Integer> damageValue = DamageType.PHYSICAL.damageTarget(null, target, 25);
@@ -11295,7 +11247,7 @@ public class StatusEffect {
 			PresetColour.DAMAGE_TYPE_PHYSICAL,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.RESISTANCE_PHYSICAL, -20f)),
-			Util.newArrayListOfValues("<b>25</b> "+Attribute.DAMAGE_PHYSICAL.getColouredName("b")+" per turn</b>")) {
+			Util.newArrayListOfValues("<b>25</b> "+Attribute.DAMAGE_PHYSICAL.getColouredName("b")+" за</b>")) {
 		@Override
 		public String applyEffect(GameCharacter target, int secondsPassed, long totalSecondsPassed) {
 			Value<String, Integer> damageValue = DamageType.PHYSICAL.damageTarget(null, target, 25);
@@ -11323,7 +11275,7 @@ public class StatusEffect {
 			PresetColour.DAMAGE_TYPE_PHYSICAL,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.RESISTANCE_PHYSICAL, -20f)),
-			Util.newArrayListOfValues("<b>50</b> "+Attribute.DAMAGE_PHYSICAL.getColouredName("b")+" per turn</b>")) {
+			Util.newArrayListOfValues("<b>50</b> "+Attribute.DAMAGE_PHYSICAL.getColouredName("b")+" за</b>")) {
 		@Override
 		public String applyEffect(GameCharacter target, int secondsPassed, long totalSecondsPassed) {
 			Value<String, Integer> damageValue = DamageType.PHYSICAL.damageTarget(null, target, 50);
@@ -11346,7 +11298,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect STONE_SHELL = new AbstractStatusEffect(10,
-			"Stone Shell",
+			"Каменная оболочка",
 			null,
 			PresetColour.DAMAGE_TYPE_PHYSICAL,
 			true,
@@ -11456,7 +11408,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect ELEMENTAL_EARTH_ROLLING_STONE = new AbstractStatusEffect(10,
-			"Rolling Stone",
+			"Катящийся камень",
 			null,
 			PresetColour.DAMAGE_TYPE_PHYSICAL,
 			true,
@@ -11490,7 +11442,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect ELEMENTAL_EARTH_HARDENING = new AbstractStatusEffect(10,
-			"Hardening",
+			"Закалка",
 			null,
 			PresetColour.DAMAGE_TYPE_PHYSICAL,
 			true,
@@ -11532,7 +11484,7 @@ public class StatusEffect {
 		@Override
 		public String getDescription(GameCharacter target) {
 			return UtilText.parse(target, target.getElemental(),
-						"Having sworn [npc.her] subservience to the school of Earth, [npc.namePos] Earth elemental, [npc2.name], is now siphoning off as much of [npc.namePos] energy as [npc2.she] wants!");
+						"Присягнув на верность [npc.her] школе Земли, [npc.namePos] земляной элементаль, [npc2.name], теперь высасывает столько [npc.namePos] энергии, сколько пожелает [npc2.she]!");
 		}
 		@Override
 		public String getSVGString(GameCharacter owner) {
@@ -11547,7 +11499,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect ELEMENTAL_EARTH_SERVANT_OF_EARTH_ELEMENTAL_BUFF = new AbstractStatusEffect(10,
-			"Energy Siphon",
+			"Поглощение энергии",
 			null,
 			PresetColour.DAMAGE_TYPE_PHYSICAL,
 			true,
@@ -11597,7 +11549,7 @@ public class StatusEffect {
 	
 
 	public static AbstractStatusEffect ARCANE_AROUSAL_LUSTFUL_DISTRACTION = new AbstractStatusEffect(10,
-			"Lustful Distraction",
+			"Похотливое отвлечение",
 			null,
 			PresetColour.DAMAGE_TYPE_LUST,
 			false,
@@ -11629,8 +11581,7 @@ public class StatusEffect {
 		@Override
 		public String getDescription(GameCharacter target) {
 			return UtilText.parse(target,
-						"Arousing images keep on pushing their way into [npc.namePos] mind, causing [npc.herHim] to lose focus on what it is [npc.sheIs] trying to hit."
-								+ " [npc.She] [npc.verb(hear)] the occasional phantasmal whisper in [npc.her] [npc.ear], promising that [npc.she]'ll have a good time if [npc.she] simply submits.");
+						"Возбуждающие образы то и дело врываются в разум [npc.namePos], заставляя [npc.herHim] терять концентрацию на том, во что [npc.sheIs] пытается попасть. [npc.She] [npc.verb(hear)] изредка слышит призрачный шепот в [npc.her] [npc.ear], обещающий, что [npc.she] отлично проведет время, если просто подчинится [npc.she].");
 		}
 		@Override
 		public String getSVGString(GameCharacter owner) {
@@ -11643,7 +11594,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect TELEPATHIC_COMMUNICATION = new AbstractStatusEffect(10,
-			"Telepathic Communication",
+			"Телепатическая связь",
 			null,
 			PresetColour.DAMAGE_TYPE_LUST,
 			true,
@@ -11652,7 +11603,7 @@ public class StatusEffect {
 		@Override
 		public String getDescription(GameCharacter target) {
 			return UtilText.parse(target,
-						"[npc.NameIsFull] able to project [npc.her] seductive taunts and [npc.moans+] directly into a person's mind!");
+						"[npc.NameIsFull] способна проецировать [npc.her] соблазнительные насмешки и [npc.moans+] прямо в разум человека!");
 		}
 		@Override
 		public String getSVGString(GameCharacter owner) {
@@ -11665,7 +11616,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect TELEPATHIC_COMMUNICATION_PROJECTED_TOUCH = new AbstractStatusEffect(10,
-			"Projected Touch",
+			"Проекция прикосновения",
 			null,
 			PresetColour.DAMAGE_TYPE_LUST,
 			true,
@@ -11674,8 +11625,7 @@ public class StatusEffect {
 		@Override
 		public String getDescription(GameCharacter target) {
 			return UtilText.parse(target,
-						"[npc.NameIsFull] able to project [npc.her] seductive taunts and [npc.moans+] directly into a person's mind!"
-								+ " In addition to this, [npc.she] can deliver phantasmal kisses and gropes to [npc.her] target.");
+						"[npc.NameIsFull] способен проецировать [npc.her] соблазнительные насмешки и [npc.moans+] прямо в разум человека! В дополнение к этому, [npc.she] может осыпать [npc.her] цель призрачными поцелуями и ласками.");
 		}
 		@Override
 		public String getSVGString(GameCharacter owner) {
@@ -11688,17 +11638,16 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect TELEPATHIC_COMMUNICATION_POWER_OF_SUGGESTION = new AbstractStatusEffect(10,
-			"Power of Suggestion",
+			"Сила внушения",
 			null,
 			PresetColour.DAMAGE_TYPE_LUST,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.DAMAGE_LUST, 30f)),
-			Util.newArrayListOfValues("[style.boldLust(Tease)] [style.boldExcellent(applies)] -25 "+Attribute.RESISTANCE_PHYSICAL.getColouredName("b")+" to the target for [style.boldGood(2 turns)]")) {
+			Util.newArrayListOfValues("[style.boldLust(Дразнение)] [style.boldExcellent(накладывает)] -25 "+Attribute.RESISTANCE_PHYSICAL.getColouredName("b")+" на цель на [style.boldGood(2 хода)]")) {
 		@Override
 		public String getDescription(GameCharacter target) {
 			return UtilText.parse(target,
-						"[npc.NameIsFull] able to project [npc.her] seductive taunts and suggestive phrases directly into a person's mind!"
-								+ " In addition to this, [npc.she] can deliver phantasmal kisses and gropes to [npc.her] target.");
+						"[npc.NameIsFull] способен проецировать [npc.her] соблазнительные насмешки и внушающие фразы прямо в разум человека! В дополнение к этому, [npc.she] может осыпать [npc.her] цель призрачными поцелуями и ласками.");
 		}
 		@Override
 		public String getSVGString(GameCharacter owner) {
@@ -11711,7 +11660,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect TELEPATHIC_COMMUNICATION_POWER_OF_SUGGESTION_TARGETED = new AbstractStatusEffect(10,
-			"Power of Suggestion",
+			"Сила внушения",
 			"telepathic_communication_power_of_suggestion_targeted",
 			PresetColour.DAMAGE_TYPE_LUST,
 			false,
@@ -11730,7 +11679,7 @@ public class StatusEffect {
 	
 	
 	public static AbstractStatusEffect ARCANE_CLOUD = new AbstractStatusEffect(10,
-			"Arcane Cloud",
+			"Облако Arcane",
 			null,
 			PresetColour.DAMAGE_TYPE_LUST,
 			false,
@@ -11757,7 +11706,7 @@ public class StatusEffect {
 			PresetColour.DAMAGE_TYPE_LUST,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.RESISTANCE_LUST, -25f)),
-			Util.newArrayListOfValues("<b>5</b> "+Attribute.DAMAGE_LUST.getColouredName("b")+" per turn</b>")) {
+			Util.newArrayListOfValues("<b>5</b> "+Attribute.DAMAGE_LUST.getColouredName("b")+" за</b>")) {
 		@Override
 		public String applyEffect(GameCharacter target, int secondsPassed, long totalSecondsPassed) {
 			Value<String, Integer> damageValue = DamageType.LUST.damageTarget(null, target, 5);
@@ -11785,7 +11734,7 @@ public class StatusEffect {
 			PresetColour.DAMAGE_TYPE_LUST,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.RESISTANCE_LUST, -25f)),
-			Util.newArrayListOfValues("<b>15</b> "+Attribute.DAMAGE_LUST.getColouredName("b")+" per turn</b>")) {
+			Util.newArrayListOfValues("<b>15</b> "+Attribute.DAMAGE_LUST.getColouredName("b")+" за</b>")) {
 		@Override
 		public String applyEffect(GameCharacter target, int secondsPassed, long totalSecondsPassed) {
 			Value<String, Integer> damageValue = DamageType.LUST.damageTarget(null, target, 15);
@@ -11813,7 +11762,7 @@ public class StatusEffect {
 			PresetColour.DAMAGE_TYPE_LUST,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.RESISTANCE_LUST, -25f)),
-			Util.newArrayListOfValues("[style.boldTerrible(Все члены партии)] получают <b>15</b> "+Attribute.DAMAGE_LUST.getColouredName("b")+" per turn</b>")) {
+			Util.newArrayListOfValues("[style.boldTerrible(Все члены партии)] получают <b>15</b> "+Attribute.DAMAGE_LUST.getColouredName("b")+" за</b>")) {
 		@Override
 		public String applyEffect(GameCharacter target, int secondsPassed, long totalSecondsPassed) {
 			StringBuilder sb = new StringBuilder();
@@ -11825,7 +11774,7 @@ public class StatusEffect {
 			for(GameCharacter combatant : affectedCombatants) {
 				Value<String, Integer> damageValue = DamageType.LUST.damageTarget(null, combatant, 15);
 				
-				sb.append(UtilText.parse(combatant, "<br/>[npc.Name] [npc.verb(take)] <b>" + damageValue.getValue() + "</b> [style.boldLust(lust damage)]!")+damageValue.getKey());
+				sb.append(UtilText.parse(combatant, "<br/>[npc.Name] [npc.verb(take)] <b>" + damageValue.getValue() + "</b> [style.boldLust(урон похотью)]!")+damageValue.getKey());
 			}
 			
 			return sb.toString();
@@ -11846,7 +11795,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect ELEMENTAL_ARCANE_LEWD_ENCOURAGEMENTS = new AbstractStatusEffect(10,
-			"Lewd Encouragements",
+			"Похотливое подстрекательство",
 			null,
 			PresetColour.DAMAGE_TYPE_LUST,
 			true,
@@ -11879,7 +11828,7 @@ public class StatusEffect {
 	};
 
 	public static AbstractStatusEffect ELEMENTAL_ARCANE_CARESSING_TOUCH = new AbstractStatusEffect(10,
-			"Caressing Touch",
+			"Ласкающее прикосновение",
 			null,
 			PresetColour.DAMAGE_TYPE_LUST,
 			false,
@@ -11940,12 +11889,12 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect ELEMENTAL_ARCANE_SERVANT_OF_ARCANE_ELEMENTAL_BUFF = new AbstractStatusEffect(10,
-			"Energy Siphon",
+			"Поглощение энергии",
 			null,
 			PresetColour.DAMAGE_TYPE_LUST,
 			true,
 			null,
-			Util.newArrayListOfValues("+100% [style.colourExcellent(Non-Seduction Damage)]")) {
+			Util.newArrayListOfValues("+100% [style.colourExcellent(Несоблазнительный урон)]")) {
 		@Override
 		public String getDescription(GameCharacter target) {
 			return UtilText.parse(target, ((Elemental)target).getSummoner(), "[npc.NameIsFull] забирает столько [npc2.namePos] энергии, сколько хочет [npc.she], позволяя [npc.herHim] нанести огромный урон!");
@@ -12033,7 +11982,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect TELEPORT = new AbstractStatusEffect(10,
-			"Teleport",
+			"Телепортация",
 			null,
 			PresetColour.GENERIC_ARCANE,
 			true,
@@ -12067,7 +12016,7 @@ public class StatusEffect {
 			
 			Value<String, Integer> damageValue = DamageType.LUST.damageTarget(null, randomEnemy, 15);
 
-			return UtilText.parse(randomEnemy, "[npc.Name] [npc.verb(take)] <b>" + damageValue.getValue() + "</b> [style.boldLust(lust damage)]!")+damageValue.getKey();
+			return UtilText.parse(randomEnemy, "[npc.Name] [npc.verb(take)] <b>" + damageValue.getValue() + "</b> [style.boldLust(урон похотью)]!")+damageValue.getKey();
 		}
 		@Override
 		public String getDescription(GameCharacter target) {
@@ -12087,8 +12036,8 @@ public class StatusEffect {
 	// SEX EFFECTS:
 	
 	public static AbstractStatusEffect CONDOM_WORN = new AbstractStatusEffect(80,
-			"Wearing a condom",
-			"condom",
+			"В презервативе",
+			"презерватив",
 			PresetColour.CLOTHING_PINK_LIGHT,
 			false,
 			null,
@@ -12100,7 +12049,7 @@ public class StatusEffect {
 		@Override
 		public List<String> getModifiersAsStringList(GameCharacter target) {
 			List<String> modifiersList = new ArrayList<>();
-			modifiersList.add("-0.5% <b style='color: " + PresetColour.GENERIC_SEX.toWebHexString() + "'>arousal/turn</b>");
+			modifiersList.add("-0.5% <b style='color: " + PresetColour.GENERIC_SEX.toWebHexString() + "'>возбуждение/ход</b>");
 			return modifiersList;
 		}
 		@Override
@@ -12126,7 +12075,7 @@ public class StatusEffect {
 	};
 
 	public static AbstractStatusEffect FLOWING_WATER = new AbstractStatusEffect(80,
-			"Flowing Water",
+			"Текучая вода",
 			"sexEffects/flowing_water",
 			PresetColour.BASE_BLUE_LIGHT,
 			PresetColour.BASE_AQUA,
@@ -12155,8 +12104,8 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect DESIRES = new AbstractStatusEffect(80,
-			"Desires",
-			"desires",
+			"Желания",
+			"желает",
 			PresetColour.GENERIC_ARCANE,
 			false,
 			null,
@@ -12210,13 +12159,13 @@ public class StatusEffect {
 //				modList.add(UtilText.parse(target, "<b>[npc.NamePos] Preferences:</b>"));
 				
 				modList.add(UtilText.parse(target, targetedCharacter,
-										"[style.italics"+(Main.sex.isInForeplay(target)?"PinkLight(<b>Foreplay</b>: ":"Disabled(Foreplay: ")
+										"[style.italics"+(Main.sex.isInForeplay(target)?"PinkLight(<b>Прелюдия</b>: ":"Отключено(Прелюдия: ")
 											+ (foreplayPreference!=null
 													?"[npc.Her] "+foreplayPreference.getPerformingSexArea().getName(target, true)+" и [npc2.namePos] "+foreplayPreference.getTargetedSexArea().getName(targetedCharacter, true)+"."
 													:"[npc.She] [npc.has] нет предпочтений...")
 											+ ")]"));
 				modList.add(UtilText.parse(target, targetedCharacter,
-										"[style.italics"+(!Main.sex.isInForeplay(target)?"Pink(<b>Sex</b>: ":"Disabled(Sex: ")
+										"[style.italics"+(!Main.sex.isInForeplay(target)?"Розовый(<b>Секс</b>: ":"Отключено(Секс: ")
 											+ (mainPreference!=null
 													?"[npc.Her] "+mainPreference.getPerformingSexArea().getName(target, true)+" и [npc2.namePos] "+mainPreference.getTargetedSexArea().getName(targetedCharacter, true)+"."
 													:"[npc.She] [npc.has] нет предпочтений...")
@@ -12264,8 +12213,8 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect ORGASM_COUNTER = new AbstractStatusEffect(80,
-			"Orgasms",
-			"sexEffects/orgasms",
+			"Оргазмы",
+			"сексэффекты/оргазмы",
 			PresetColour.GENERIC_ARCANE,
 			false,
 			null,
@@ -12280,7 +12229,7 @@ public class StatusEffect {
 				sb.append("Любой, кто находится в присутствии сильной арканой ауры, такой как твоя, не страдает от какого-либо рефрактерного периода после оргазма...");
 			}
 			
-			sb.append("<br/>[npc.Name] [npc.verb(need)] to orgasm [style.boldSex(" + Util.intToCount(target.getOrgasmsBeforeSatisfied()) + ")] before [npc.sheIs] satisfied.");
+			sb.append("<br/>[npc.Name] [npc.verb(need)] до оргазма [style.boldSex(" + Util.intToCount(target.getOrgasmsBeforeSatisfied()) + ")] до того, как [npc.sheIs] будет удовлетворен(а).");
 
 			
 			return UtilText.parse(target, sb.toString());
@@ -12290,13 +12239,13 @@ public class StatusEffect {
 			List<Value<Integer, String>> additionalDescriptions = new ArrayList<>();
 			
 			if(Main.sex.getNumberOfOrgasms(target)>=target.getOrgasmsBeforeSatisfied()) {
-				additionalDescriptions.add(new Value<>(1, UtilText.parse(target, "[npc.NameIsFull] [style.colourExcellent(satisfied)].")));
+				additionalDescriptions.add(new Value<>(1, UtilText.parse(target, "[npc.NameIsFull] [style.colourExcellent(удовлетворен(а))].")));
 			} else {
-				additionalDescriptions.add(new Value<>(1, UtilText.parse(target, "[npc.NameIsFull] [style.colourTerrible(not satisfied yet)]!")));
+				additionalDescriptions.add(new Value<>(1, UtilText.parse(target, "[npc.NameIsFull] [style.colourTerrible(еще не удовлетворен(а))]!")));
 			}
 			
 			if(!target.isAbleToOrgasm()) {
-				additionalDescriptions.add(new Value<>(1, UtilText.parse(target, "[npc.NameIsFull] [style.colourTerrible(not able to orgasm)]!")));
+				additionalDescriptions.add(new Value<>(1, UtilText.parse(target, "[npc.NameIsFull] [style.colourTerrible(не может достичь оргазма)]!")));
 			}
 			
 			int bonus = Main.sex.getNumberOfAdditionalOrgasms(target);
@@ -12305,12 +12254,12 @@ public class StatusEffect {
 					additionalDescriptions.add(
 							new Value<>(2,
 									UtilText.parse(target,
-											"[npc.Her] desire has been [style.boldExcellent(boosted)], and so this goal is [style.boldGood(" + Util.intToString(bonus) + " orgasm" + (bonus==1?"":"s") + ")] higher than normal!")));
+											"[npc.Her] желание было [style.boldExcellent(усилено)], поэтому цель [style.boldGood(оргазма" + Util.intToString(bonus) + " оргазма" + (bonus==1?"":"s") + ")] выше нормы!")));
 				} else {
 					additionalDescriptions.add(
 							new Value<>(2,
 									UtilText.parse(target,
-											"[npc.Her] desire has been [style.boldTerrible(suppressed)], and so this goal is [style.boldBad(" + Util.intToString(-bonus) + " orgasm" + (bonus==-1?"":"s") + ")] ниже нормы!")));
+											"[npc.Her] желание было [style.boldTerrible(подавлено)], поэтому цель [style.boldBad(оргазма" + Util.intToString(-bonus) + " оргазма" + (bonus==-1?"":"s") + ")] ниже нормы!")));
 				}
 			}
 
@@ -12326,20 +12275,20 @@ public class StatusEffect {
 				orgasmColour = RenderingEngine.orgasmColours[orgasms];
 			}
 			
-			modList.add("<b style='color:"+orgasmColour.toWebHexString()+";'>"+orgasms+"</b> Orgasm"+(orgasms==1?"":"s"));
+			modList.add("<b style='color:"+orgasmColour.toWebHexString()+";'>"+orgasms+"</b> Оргазм"+(orgasms==1?"":"s"));
 
 			int essences = Main.sex.getEssenceGeneration(target);
 			if(target.hasStatusEffect(StatusEffect.RECOVERING_AURA)) {
 				modList.add("Выработает [style.boldBad(0 эссенций)]");
-				modList.add("Вызвана [style.boldBad('"+RECOVERING_AURA.getName(target)+"')] effect");
+				modList.add("Вызвана [style.boldBad('"+RECOVERING_AURA.getName(target)+"')] эффект");
 				
 			} else {
 				if(target.hasTrait(Perk.NYMPHOMANIAC, true)) {
 					modList.add("Генерирует [style.boldArcane("+(essences)+" эссенций)] после секса");
-					modList.add("[style.boldExcellent(Удвоенная)] от [style.colourTrait("+Perk.NYMPHOMANIAC.getName(target)+" trait)]");
+					modList.add("[style.boldExcellent(Удвоенная)] от [style.colourTrait("+Perk.NYMPHOMANIAC.getName(target)+" черта)]");
 					
 				} else {
-					modList.add("Выработает [style.boldArcane("+(essences)+" essences)]");
+					modList.add("Выработает [style.boldArcane("+(essences)+" эссенций)]");
 				}
 				
 				if(orgasms>=5) {
@@ -12351,7 +12300,7 @@ public class StatusEffect {
 		@Override
 		public String getPathName(GameCharacter owner) {
 			if(Main.sex.getNumberOfOrgasms(owner)>=owner.getOrgasmsBeforeSatisfied()) {
-				return "sexEffects/orgasmsSatisfied";
+				return "сексЭффекты/оргазмыУдовлетворены";
 			}
 			return super.getPathName(owner);
 		}
@@ -12398,7 +12347,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect PENIS_STATUS = new AbstractStatusEffect(95,
-			"Penis status",
+			"Статус пениса",
 			null,
 			PresetColour.GENERIC_SEX,
 			false,
@@ -12429,30 +12378,30 @@ public class StatusEffect {
 						switch((SexAreaPenetration)sArea) {
 							case FINGER:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(stroking [npc.her] own [npc.cock])]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(поглаживая свою [npc.cock] [npc.her])]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] giving [npc2.name] [style.boldSex(a handjob)]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] делает [npc2.name] [style.boldSex(хендджобом)]!"));
 								}
 								break;
 							case PENIS:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(frotting)] with [npc.her] two [npc.cocks(true)]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(трется)] о два [npc.cocks(true)] [npc.her]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(frotting)] with [npc2.name]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(трется)] об [npc2.name]!"));
 								}
 								break;
 							case TAIL:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] giving [npc.herself] [style.boldSex(a tail-job)]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] делает [npc.herself] [style.boldSex(тейл-джобом)]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] giving [npc2.name] [style.boldSex(a tail-job)]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] делает [npc2.name] [style.boldSex(тейл-джобом)]!"));
 								}
 								break;
 							case TENTACLE:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] giving [npc.herself] [style.boldSex(a tentacle-job)]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] делает [npc.herself] [style.boldSex(тентакль-джобом)]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] giving [npc2.name] [style.boldSex(a tentacle-job)]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] делает [npc2.name] [style.boldSex(тентакль-джобом)]!"));
 								}
 								break;
 							case TONGUE:
@@ -12528,7 +12477,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect CLIT_STATUS = new AbstractStatusEffect(95,
-			"Clitoris status",
+			"Статус клитора",
 			null,
 			PresetColour.GENERIC_SEX,
 			false,
@@ -12566,44 +12515,44 @@ public class StatusEffect {
 								break;
 							case PENIS:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(teasing)] [npc.her] own [npc.cock]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(teasing)] [npc.her] сама [npc.cock]!"));
 								} else {
 									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(teasing)] [npc2.namePos] [npc2.cock]!"));
 								}
 								break;
 							case TAIL:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(tail-teasing)] [npc.her] own pussy!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(tail-teasing)] [npc.her] собственная киска!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(tail-teasing)] [npc2.namePos] pussy!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(tail-teasing)] киска [npc2.namePos]!"));
 								}
 								break;
 							case TENTACLE:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(tentacle-teasing)] [npc.her] own pussy!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(tentacle-teasing)] [npc.her] собственная киска!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(tentacle-teasing)] [npc2.namePos] pussy!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(tentacle-teasing)] киска [npc2.namePos]!"));
 								}
 								break;
 							case TONGUE:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(performing cunnilingus)] on [npc.herself]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(performing cunnilingus)] на [npc.herself]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(performing cunnilingus)] on [npc2.name]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(куннилингусом)] [npc2.name]!"));
 								}
 								break;
 							case CLIT:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(tribbing)] [npc.herself]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(триббингом)] [npc.herself]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(tribbing)] with [npc2.name]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(триббингом)] с [npc2.name]!"));
 								}
 								break;
 							case FOOT:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(foot-teasing)] [npc.her] own pussy!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(ласкает ножками)] собственную киску [npc.her]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(foot-teasing)] [npc2.namePos] pussy!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(ласкает ножками)] киску [npc2.namePos]!"));
 								}
 								break;
 						}
@@ -12613,7 +12562,7 @@ public class StatusEffect {
 			}
 			
 			if(Main.sex.getOngoingSexAreas(target, type).isEmpty()) {
-				descriptionSB.append("[style.colourDisabled(No ongoing action...)]");
+				descriptionSB.append("[style.colourDisabled(Никаких активных действий...)]");
 			}
 
 			appendPenetrationAdditionGenericDescriptions(target, type, UtilText.parse(target, "[npc.NamePos] [npc.clit]"), descriptionSB);
@@ -12659,7 +12608,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect ANUS_STATUS = new AbstractStatusEffect(96,
-			"Anus status",
+			"Состояние ануса",
 			null,
 			PresetColour.GENERIC_SEX,
 			false,
@@ -12704,59 +12653,59 @@ public class StatusEffect {
 					switch(pen) {
 						case FINGER:
 							if(selfAction) {
-								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(fingering)] [npc.her] own [npc.asshole]!"));
+								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(пальцами)] собственную [npc.asshole] [npc.her]!"));
 							} else {
-								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" are")
-										+" [style.boldSex(fingering)] [npc.namePos] [npc.asshole]!"));
+								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" являются")
+										+" [style.boldSex(пальцами)] [npc.namePos] [npc.asshole]!"));
 							}
 							break;
 						case PENIS:
 							if(selfAction) {
-								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(fucking)] [npc.her] own [npc.asshole]!"));
+								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(трахает)] собственную [npc.asshole] [npc.her]!"));
 							} else {
-								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" are")
-										+" [style.boldSex(fucking)] [npc.namePos] [npc.asshole]!"));
+								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" являются")
+										+" [style.boldSex(ебать)] [npc.namePos] [npc.asshole]!"));
 							}
 							break;
 						case TAIL:
 							if(selfAction) {
-								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(tail-fucking)] [npc.her] own [npc.asshole]!"));
+								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(трахнуть сзади)] [npc.her] владей [npc.asshole]!"));
 							} else {
-								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" are")
-										+" [style.boldSex(tail-fucking)] [npc.namePos] [npc.asshole]!"));
+								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" являются")
+										+" [style.boldSex(трахать хвостом)] [npc.namePos] [npc.asshole]!"));
 							}
 							break;
 						case TENTACLE:
 							if(selfAction) {
-								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(tentacle-fucking)] [npc.her] own [npc.asshole]!"));
+								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(tentacle-fucking)] [npc.her] владей [npc.asshole]!"));
 							} else {
-								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" are")
-										+" [style.boldSex(tentacle-fucking)] [npc.namePos] [npc.asshole]!"));
+								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" являются")
+										+" [style.boldSex(трахать щупальцами)] [npc.namePos] [npc.asshole]!"));
 							}
 							break;
 						case TONGUE:
 							if(selfAction) {
-								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] performing [style.boldSex(anilingus)] [npc.herself]!"));
+								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(делает анилингус)] [npc.herself]!"));
 							} else {
-								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" are")
-										+" performing [style.boldSex(anilingus)] on [npc.name]!"));
+								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" являются")
+										+" [style.boldSex(делает анилингус)] на [npc.name]!"));
 							}
 							break;
 						case CLIT:
 							if(selfAction) {
-								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(clit-fucking)] [npc.her] own [npc.asshole]!"));
+								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(clit-fucking)] [npc.her] владей [npc.asshole]!"));
 							} else {
-								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" are")
-										+" [style.boldSex(clit-fucking)] [npc.namePos] [npc.asshole]!"));
+								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" являются")
+										+" [style.boldSex(трахать клитором)] [npc.namePos] [npc.asshole]!"));
 							}
 							break;
 						case FOOT:
 							if(selfAction) {
-								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(pushing [npc.her] [npc.toes])] into [npc.her] own [npc.asshole]!"));
+								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(втискивая [npc.her] в [npc.toes])] в собственную [npc.her] [npc.asshole]!"));
 							} else {
 								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))
-										+(names.size()==1?UtilText.parse(main, " [npc.is] [style.boldSex(pushing [npc.her] [npc.toes])]"):"are [style.boldSex(pushing their toes)]")
-										+"  into [npc.namePos] [npc.asshole]!"));
+										+(names.size()==1?UtilText.parse(main, " [npc.is] [style.boldSex(вжимает [npc.her] [npc.toes])]"):"вжимает [style.boldSex(свои пальцы ног)]")
+										+"  в [npc.namePos] [npc.asshole]!"));
 							}
 							break;
 					}
@@ -12790,20 +12739,20 @@ public class StatusEffect {
 							break;
 						case MOUTH:
 							if(selfAction) {
-								descriptionSB.append("[npc.NameIsFull] performing [style.boldSex(anilingus)] on [npc.herself]!");
+								descriptionSB.append("[npc.NameIsFull] делает [style.boldSex(анилингус)] [npc.herself]!");
 							} else {
-								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" are")
-										+" performing [style.boldSex(anilingus)] on [npc2.name]!"));
+								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" являются")
+										+" делает [style.boldSex(анилингус)] на [npc2.name]!"));
 							}
 							break;
 						case THIGHS:
 							break;
 						case URETHRA_PENIS:
 							if(selfAction) {
-								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(fucking)] [npc.her] own [npc.asshole]!"));
+								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(трахает)] собственную [npc.asshole] [npc.her]!"));
 							} else {
-								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" are")
-										+"[style.boldSex(fucking)] [npc.namePos] [npc.asshole]!"));
+								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" являются")
+										+"[style.boldSex(ебать)] [npc.namePos] [npc.asshole]!"));
 							}
 							break;
 						case URETHRA_VAGINA:
@@ -12817,7 +12766,7 @@ public class StatusEffect {
 			}
 			
 			if(!descriptionAdded) {
-				descriptionSB.append("[style.colourDisabled(No ongoing action...)]");
+				descriptionSB.append("[style.colourDisabled(Никаких активных действий...)]");
 			}
 
 			appendOrificeAdditionGenericDescriptions(target, type, UtilText.parse(target, "[npc.Her] [npc.asshole]"), descriptionSB);
@@ -12847,7 +12796,7 @@ public class StatusEffect {
 	};
 
 	public static AbstractStatusEffect ASS_STATUS = new AbstractStatusEffect(96,
-			"Ass status",
+			"Статус задницы",
 			null,
 			PresetColour.GENERIC_SEX,
 			false,
@@ -12878,16 +12827,16 @@ public class StatusEffect {
 						switch((SexAreaPenetration)sArea) {
 							case FINGER:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(groping)] [npc.her] own [npc.ass]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(лапает)] собственную [npc.ass] [npc.her]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(groping)] [npc2.namePos] [npc2.ass]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(лапает)] [npc2.namePos] [npc2.ass]!"));
 								}
 								break;
 							case PENIS:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(hotdogging)] [npc.herself]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(флексит)] перед [npc.herself]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(hotdogging)] [npc2.name]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(флексит)] перед [npc2.name]!"));
 								}
 								break;
 							case TAIL:
@@ -12906,23 +12855,23 @@ public class StatusEffect {
 								break;
 							case TONGUE:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(licking)] [npc2.her] own [npc.ass]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(licking)] [npc2.her] владей [npc.ass]!"));
 								} else {
 									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(licking)] [npc2.namePos] [npc2.ass]!"));
 								}
 								break;
 							case CLIT:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(clit-hotdogging)] [npc.herself]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(клитор-хотдоггинг)] [npc.herself]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(clit-hotdogging)] [npc2.name]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(клитор-хотдоггинг)] [npc2.name]!"));
 								}
 								break;
 							case FOOT:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(groping)] [npc.her] own [npc.ass] with [npc.her] [npc.feet]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(groping)] [npc.her] сама [npc.ass] [npc.her] [npc.feet]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(groping)] [npc2.namePos] [npc2.ass] with [npc.her] [npc.feet]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(groping)] [npc2.namePos] [npc2.ass] с [npc.her] [npc.feet]!"));
 								}
 								break;
 						}
@@ -12939,18 +12888,18 @@ public class StatusEffect {
 								break;
 							case MOUTH:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(licking)] [npc2.her] own [npc.ass]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(licking)] [npc2.her] владей [npc.ass]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(licking)] [npc2.namePos] [npc2.ass]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(облизывая)] [npc2.namePos] [npc2.ass]!"));
 								}
 								break;
 							case THIGHS:
 								break;
 							case URETHRA_PENIS:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(hotdogging)] [npc.herself]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(флексит)] перед [npc.herself]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(hotdogging)] [npc2.name]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(флексит)] перед [npc2.name]!"));
 								}
 								break;
 							case URETHRA_VAGINA:
@@ -12964,7 +12913,7 @@ public class StatusEffect {
 				}
 			}
 			if(Main.sex.getOngoingSexAreas(target, type).isEmpty()) {
-				descriptionSB.append("[style.colourDisabled(No ongoing action...)]");
+				descriptionSB.append("[style.colourDisabled(Никаких активных действий...)]");
 			}
 
 			appendOrificeAdditionGenericDescriptions(target, type, UtilText.parse(target, "[npc.Her] [npc.ass]"), descriptionSB);
@@ -13007,7 +12956,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect MOUTH_STATUS = new AbstractStatusEffect(99,
-			"Mouth status",
+			"Состояние рта",
 			null,
 			PresetColour.GENERIC_SEX,
 			false,
@@ -13038,30 +12987,30 @@ public class StatusEffect {
 						switch((SexAreaPenetration)sArea) {
 							case FINGER:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(sucking)] [npc.her] own [npc.fingers]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(сося)] [npc.her] собственный [npc.fingers]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc2.NameIsFull] [style.boldSex(sucking)] [npc.namePos] [npc.fingers]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc2.NameIsFull] [style.boldSex(сося)] [npc.namePos] [npc.fingers]!"));
 								}
 								break;
 							case PENIS:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] giving [npc.herself] a [style.boldSex(blowjob)]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] делает [npc.herself] [style.boldSex(минет)]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc2.NameIsFull] giving [npc.name] a [style.boldSex(blowjob)]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc2.NameIsFull] делает [npc.name] [style.boldSex(минет)]!"));
 								}
 								break;
 							case TAIL:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(sucking)] [npc.her] own [npc.tail]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(сося)] [npc.her] собственный [npc.tail]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc2.NameIsFull] [style.boldSex(sucking)] [npc.namePos] [npc.tail]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc2.NameIsFull] [style.boldSex(сося)] [npc.namePos] [npc.tail]!"));
 								}
 								break;
 							case TENTACLE:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(sucking)] [npc.her] own tentacle!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(сося)] [npc.her] собственный щупалец!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc2.NameIsFull] [style.boldSex(sucking)] [npc.namePos] tentacle!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc2.NameIsFull] [style.boldSex(сося)] [npc.namePos] щупалец!"));
 								}
 								break;
 							case TONGUE:
@@ -13073,14 +13022,14 @@ public class StatusEffect {
 								break;
 							case CLIT:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(sucking)] [npc.her] own [npc.clit]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(sucking)] [npc.her] владей [npc.clit]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc2.NameIsFull] [style.boldSex(sucking)] [npc.namePos] [npc.clit]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc2.NameIsFull] [style.boldSex(сосание)] [npc.namePos] [npc.clit]!"));
 								}
 								break;
 							case FOOT:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(licking)] [npc.her] own [npc.feet]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(licking)] [npc.her] владей [npc.feet]!"));
 								} else {
 									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc2.NameIsFull] [style.boldSex(licking)] [npc.namePos] [npc.feet]!"));
 								}
@@ -13091,72 +13040,72 @@ public class StatusEffect {
 						switch((SexAreaOrifice)sArea) {
 							case ARMPITS:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(licking)] [npc.her] own [npc.armpits]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(licking)] [npc.her] владей [npc.armpits]!"));
 								} else {
 									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc2.NameIsFull] [style.boldSex(licking)] [npc.namePos] [npc.armpits]!"));
 								}
 								break;
 							case ANUS:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] performing [style.boldSex(anilingus)] on [npc.herself]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] делает [style.boldSex(анилингус)] [npc.herself]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc2.NameIsFull] performing [style.boldSex(anilingus)] on [npc.name]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc2.NameIsFull] делает [style.boldSex(anilingus)] [npc.name]!"));
 								}
 								break;
 							case ASS:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(licking)] [npc.her] own [npc.ass]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(licking)] [npc.her] владей [npc.ass]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc2.NameIsFull] [style.boldSex(licking)] [npc.namePos] [npc.ass]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc2.NameIsFull] [style.boldSex(облизывая)] [npc.namePos] [npc.ass]!"));
 								}
 								break;
 							case BREAST:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(kissing)] [npc.her] own [npc.breasts]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(целуя)] собственную [npc.breasts] [npc.her]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc2.NameIsFull] [style.boldSex(kissing)] [npc.namePos] [npc.breasts]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc2.NameIsFull] [style.boldSex(целуя)] [npc.namePos] [npc.breasts]!"));
 								}
 								break;
 							case NIPPLE:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(sucking on)] [npc.her] own [npc.nipples]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(сося)] собственную [npc.nipples] [npc.her]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc2.NameIsFull] [style.boldSex(sucking on)] [npc.namePos] [npc.nipples]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc2.NameIsFull] [style.boldSex(сося)] [npc.namePos] [npc.nipples]!"));
 								}
 								break;
 							case BREAST_CROTCH:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(kissing)] [npc.her] own [npc.crotchBoobs]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(целуя)] собственную [npc.crotchBoobs] [npc.her]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc2.NameIsFull] [style.boldSex(kissing)] [npc.namePos] [npc.crotchBoobs]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc2.NameIsFull] [style.boldSex(целуя)] [npc.namePos] [npc.crotchBoobs]!"));
 								}
 								break;
 							case NIPPLE_CROTCH:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(sucking on)] [npc.her] own [npc.crotchNipples]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(сося)] собственную [npc.crotchNipples] [npc.her]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc2.NameIsFull] [style.boldSex(sucking on)] [npc.namePos] [npc.crotchNipples]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc2.NameIsFull] [style.boldSex(сося)] [npc.namePos] [npc.crotchNipples]!"));
 								}
 								break;
 							case MOUTH:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(kissing)] [npc.herself]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(целуя)] [npc.herself]!"));
 								} else {
 									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc2.NameIsFull] [style.boldSex(kissing)] [npc.name]!"));
 								}
 								break;
 							case THIGHS:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(kissing)] [npc.her] own [npc.legs]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(kissing)] [npc.her] владей [npc.legs]!"));
 								} else {
 									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc2.NameIsFull] [style.boldSex(kissing)] [npc.namePos] [npc.legs]!"));
 								}
 								break;
 							case URETHRA_PENIS:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] giving [npc.herself] a [style.boldSex(blowjob)]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] делает [npc.herself] [style.boldSex(минет)]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc2.NameIsFull] giving [npc.name] a [style.boldSex(blowjob)]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc2.NameIsFull] делает [npc.name] [style.boldSex(минет)]!"));
 								}
 								break;
 							case URETHRA_VAGINA:
@@ -13214,7 +13163,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect BREAST_STATUS = new AbstractStatusEffect(98,
-			"Breast status",
+			"Состояние груди",
 			null,
 			PresetColour.GENERIC_SEX,
 			false,
@@ -13223,9 +13172,9 @@ public class StatusEffect {
 		@Override
 		public String getName(GameCharacter owner) {
 			if(owner.hasBreasts()) {
-				return "Breast status";
+				return "Состояние груди";
 			} else {
-				return "Chest status";
+				return "Состояние груди";
 			}
 		}
 		@Override
@@ -13253,51 +13202,51 @@ public class StatusEffect {
 						switch((SexAreaPenetration)sArea) {
 							case FINGER:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(groping)] [npc.her] own [npc.breasts]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(ласки)] [npc.her] владей [npc.breasts]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(groping)] [npc2.namePos] [npc2.breasts]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(ласки)] [npc2.namePos] [npc2.breasts]!"));
 								}
 								break;
 							case PENIS:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] performing [style.boldSex("+(target.isBreastFuckablePaizuri()?"paizuri":"naizuri")+")] on [npc.herself]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] делает [style.boldSex("+(target.isBreastFuckablePaizuri()?"пайзури":"наизури")+")] на [npc.herself]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc2.NameIsFull] performing [style.boldSex("+(target.isBreastFuckablePaizuri()?"paizuri":"naizuri")+")] on [npc.name]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc2.NameIsFull] совершает [style.boldSex(наизури"+(target.isBreastFuckablePaizuri()?"пайзури":"наизури")+")] на [npc.name]!"));
 								}
 								break;
 							case TAIL:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] performing [style.boldSex(tail-"+(target.isBreastFuckablePaizuri()?"paizuri":"naizuri")+")] on [npc.herself]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] совершает [style.boldSex(хвосто"+(target.isBreastFuckablePaizuri()?"пайзури":"наизури")+")] на [npc.herself]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc2.NameIsFull] performing [style.boldSex(tail-"+(target.isBreastFuckablePaizuri()?"paizuri":"naizuri")+")] on [npc.name]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc2.NameIsFull] совершает [style.boldSex(хвосто"+(target.isBreastFuckablePaizuri()?"пайзури":"наизури")+")] на [npc.name]!"));
 								}
 								break;
 							case TENTACLE:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] выполняет [style.boldSex(tentacle-"+(target.isBreastFuckablePaizuri()?"paizuri":"naizuri")+")] на [npc.herself]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] выполняет [style.boldSex(tentacle-"+(target.isBreastFuckablePaizuri()?"пайзури":"наизури")+")] на [npc.herself]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc2.NameIsFull] выполняет [style.boldSex(tentacle-"+(target.isBreastFuckablePaizuri()?"paizuri":"naizuri")+")] на [npc.name]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc2.NameIsFull] выполняет [style.boldSex(tentacle-"+(target.isBreastFuckablePaizuri()?"пайзури":"наизури")+")] на [npc.name]!"));
 								}
 								break;
 							case TONGUE:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(kissing)] [npc.her] own [npc.breasts]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(целуя)] собственную [npc.breasts] [npc.her]!"));
 								} else {
 									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(kissing)] [npc2.namePos] [npc2.breasts]!"));
 								}
 								break;
 							case CLIT:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] выполняет [style.boldSex("+(target.isBreastFuckablePaizuri()?"paizuri":"naizuri")+")] на [npc.her] own [npc.clit]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] выполняет [style.boldSex("+(target.isBreastFuckablePaizuri()?"пайзури":"наизури")+")] на [npc.her] own [npc.clit]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc2.NameIsFull] выполняет [style.boldSex("+(target.isBreastFuckablePaizuri()?"paizuri":"naizuri")+")] на [npc.namePos] [npc.clit]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc2.NameIsFull] выполняет [style.boldSex("+(target.isBreastFuckablePaizuri()?"пайзури":"наизури")+")] на [npc.namePos] [npc.clit]!"));
 								}
 								break;
 							case FOOT:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(groping)] [npc.her] own [npc.breasts] with [npc.her] [npc.feet]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(groping)] [npc.her] сама [npc.breasts] с помощью [npc.her] [npc.feet]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(groping)] [npc2.namePos] [npc2.breasts] with [npc.her] [npc.feet]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(groping)] [npc2.namePos] [npc2.breasts] с помощью [npc.her] [npc.feet]!"));
 								}
 								break;
 						}
@@ -13314,7 +13263,7 @@ public class StatusEffect {
 								break;
 							case MOUTH:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(kissing)] [npc.her] own [npc.breasts]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(целуя)] собственную [npc.breasts] [npc.her]!"));
 								} else {
 									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(kissing)] [npc2.namePos] [npc2.breasts]!"));
 								}
@@ -13323,9 +13272,9 @@ public class StatusEffect {
 								break;
 							case URETHRA_PENIS:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] performing [style.boldSex("+(target.isBreastFuckablePaizuri()?"paizuri":"naizuri")+")] on [npc.herself]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] делает [style.boldSex("+(target.isBreastFuckablePaizuri()?"пайзури":"наизури")+")] на [npc.herself]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc2.NameIsFull] performing [style.boldSex("+(target.isBreastFuckablePaizuri()?"paizuri":"naizuri")+")] on [npc.name]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc2.NameIsFull] совершает [style.boldSex(наизури"+(target.isBreastFuckablePaizuri()?"пайзури":"наизури")+")] на [npc.name]!"));
 								}
 								break;
 							case URETHRA_VAGINA:
@@ -13339,7 +13288,7 @@ public class StatusEffect {
 				}
 			}
 			if(Main.sex.getOngoingSexAreas(target, type).isEmpty()) {
-				descriptionSB.append("[style.colourDisabled(No ongoing action...)]");
+				descriptionSB.append("[style.colourDisabled(Никаких активных действий...)]");
 			}
 			
 			appendOrificeAdditionGenericDescriptions(target, type, UtilText.parse(target, "[npc.Her] [npc.breasts]"), descriptionSB);
@@ -13382,7 +13331,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect NIPPLE_STATUS = new AbstractStatusEffect(97,
-			"Nipple status",
+			"Состояние сосков",
 			null,
 			PresetColour.GENERIC_SEX,
 			false,
@@ -13413,51 +13362,51 @@ public class StatusEffect {
 						switch((SexAreaPenetration)sArea) {
 							case FINGER:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(fingering)] [npc.her] own [npc.nipples]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(fingering)] [npc.her] сама [npc.nipples]!"));
 								} else {
 									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(fingering)] [npc2.namePos] [npc2.nipples]!"));
 								}
 								break;
 							case PENIS:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(fucking)] [npc.her] own [npc.nipples]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(fucking)] [npc.her] сама [npc.nipples]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(fucking)] [npc2.namePos] [npc2.nipples]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(ебучий)] [npc2.namePos] [npc2.nipples]!"));
 								}
 								break;
 							case TAIL:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(tail-fucking)] [npc.her] own [npc.nipples]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(tail-fucking)] [npc.her] сама [npc.nipples]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(tail-fucking)] [npc2.namePos] [npc2.nipples]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(трахая хвостом)] [npc2.namePos] [npc2.nipples]!"));
 								}
 								break;
 							case TENTACLE:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(tentacle-fucking)] [npc.her] own [npc.nipples]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(трахая щупальцами)] [npc.her] владея [npc.nipples]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(tentacle-fucking)] [npc2.namePos] [npc2.nipples]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(трахая щупальцами)] [npc2.namePos] [npc2.nipples]!"));
 								}
 								break;
 							case TONGUE:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(kissing)] [npc.her] own [npc.nipples]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(целуя)] [npc.her] владея [npc.nipples]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(kissing)] [npc2.namePos] [npc2.nipples]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(целуя)] [npc2.namePos] [npc2.nipples]!"));
 								}
 								break;
 							case CLIT:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(clit-fucking)] [npc.her] own [npc.nipples]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(трахая клитор)] [npc.her] владея [npc.nipples]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(clit-fucking)] [npc2.namePos] [npc2.nipples]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(трахая клитор)] [npc2.namePos] [npc2.nipples]!"));
 								}
 								break;
 							case FOOT:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(pushing [npc.her] [npc.toes])] into [npc.her] own [npc.nipples]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(втискивая [npc.her] [npc.toes])] в [npc.her] собственную [npc.nipples]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(pushing [npc.her] [npc.toes])] into [npc2.namePos] [npc2.nipples]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(втискивая [npc.her] [npc.toes])] в [npc2.namePos] [npc2.nipples]!"));
 								}
 								break;
 						}
@@ -13474,18 +13423,18 @@ public class StatusEffect {
 								break;
 							case MOUTH:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(kissing)] [npc.her] own [npc.nipples]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(целуя)] [npc.her] владея [npc.nipples]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(kissing)] [npc2.namePos] [npc2.nipples]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(целуя)] [npc2.namePos] [npc2.nipples]!"));
 								}
 								break;
 							case THIGHS:
 								break;
 							case URETHRA_PENIS:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(fucking)] [npc.her] own [npc.nipples]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(fucking)] [npc.her] сама [npc.nipples]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(fucking)] [npc2.namePos] [npc2.nipples]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(ебучий)] [npc2.namePos] [npc2.nipples]!"));
 								}
 								break;
 							case URETHRA_VAGINA:
@@ -13499,7 +13448,7 @@ public class StatusEffect {
 				}
 			}
 			if(Main.sex.getOngoingSexAreas(target, type).isEmpty()) {
-				descriptionSB.append("[style.colourDisabled(No ongoing action...)]");
+				descriptionSB.append("[style.colourDisabled(Никаких активных действий...)]");
 			}
 
 			appendOrificeAdditionGenericDescriptions(target, type, UtilText.parse(target, "[npc.Her] [npc.nipples]"), descriptionSB);
@@ -13532,7 +13481,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect BREAST_CROTCH_STATUS = new AbstractStatusEffect(98,
-			"Crotch-boob status",
+			"Статус «грудь-промежность»",
 			null,
 			PresetColour.GENERIC_SEX,
 			false,
@@ -13541,9 +13490,9 @@ public class StatusEffect {
 		@Override
 		public String getName(GameCharacter owner) {
 			if(owner.getBreastCrotchShape()==BreastShape.UDDERS) {
-				return "Udders status";
+				return "Статус «вымя»";
 			} else {
-				return "Crotch-boob status";
+				return "Статус «грудь-промежность»";
 			}
 		}
 		@Override
@@ -13571,51 +13520,51 @@ public class StatusEffect {
 						switch((SexAreaPenetration)sArea) {
 							case FINGER:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(groping)] [npc.her] own [npc.crotchBoobs]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(щупая)] [npc.her] ласкает свои [npc.crotchBoobs]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(groping)] [npc2.namePos] [npc2.crotchBoobs]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(щупая)] [npc2.namePos] [npc2.crotchBoobs]!"));
 								}
 								break;
 							case PENIS:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] performing [style.boldSex([npc.crotchBoob]-"+(entry.getKey().hasBreasts()?"paizuri":"naizuri")+")] on [npc.herself]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] совершает [style.boldSex([npc.crotchBoob]-"+(entry.getKey().hasBreasts()?"пайзури":"наизури")+")] на [npc.herself]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc2.NameIsFull] выполняет [style.boldSex([npc2.crotchBoob]-"+(entry.getKey().hasBreasts()?"paizuri":"naizuri")+")] на [npc.name]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc2.NameIsFull] выполняет [style.boldSex([npc2.crotchBoob]-"+(entry.getKey().hasBreasts()?"пайзури":"наизури")+")] на [npc.name]!"));
 								}
 								break;
 							case TAIL:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] выполняет [style.boldSex([npc.crotchBoob]-"+(entry.getKey().hasBreasts()?"paizuri":"naizuri")+")] на [npc.her] собственной [npc.tail]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] выполняет [style.boldSex([npc.crotchBoob]-"+(entry.getKey().hasBreasts()?"пайзури":"наизури")+")] на [npc.her] собственной [npc.tail]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc2.NameIsFull] выполняет [style.boldSex([npc2.crotchBoob]-"+(entry.getKey().hasBreasts()?"paizuri":"naizuri")+")] на [npc.namePos] [npc.tail]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc2.NameIsFull] выполняет [style.boldSex([npc2.crotchBoob]-"+(entry.getKey().hasBreasts()?"пайзури":"наизури")+")] на [npc.namePos] [npc.tail]!"));
 								}
 								break;
 							case TENTACLE:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] выполняет [style.boldSex([npc.crotchBoob]-"+(entry.getKey().hasBreasts()?"paizuri":"naizuri")+")] на [npc.her] собственной [npc.tentacle]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] выполняет [style.boldSex([npc.crotchBoob]-"+(entry.getKey().hasBreasts()?"пайзури":"наизури")+")] на [npc.her] собственной [npc.tentacle]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc2.NameIsFull] выполняет [style.boldSex([npc2.crotchBoob]-"+(entry.getKey().hasBreasts()?"paizuri":"naizuri")+")] на [npc.namePos] [npc.tentacle]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc2.NameIsFull] выполняет [style.boldSex([npc2.crotchBoob]-"+(entry.getKey().hasBreasts()?"пайзури":"наизури")+")] на [npc.namePos] [npc.tentacle]!"));
 								}
 								break;
 							case TONGUE:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(kissing)] [npc.her] own [npc.crotchBoobs]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(целуя)] собственную [npc.crotchBoobs] [npc.her]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(kissing)] [npc2.namePos] [npc2.crotchBoobs]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(целуя)] [npc2.namePos] [npc2.crotchBoobs]!"));
 								}
 								break;
 							case CLIT:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] performing [style.boldSex([npc.crotchBoob]-"+(entry.getKey().hasBreasts()?"paizuri":"naizuri")+")] on [npc.her] own [npc.clit]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] совершает [style.boldSex([npc.crotchBoob]-"+(entry.getKey().hasBreasts()?"пайзури":"наизури")+")] на своих собственных [npc.clit] [npc.her]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc2.NameIsFull] performing [style.boldSex([npc.crotchBoob]-"+(entry.getKey().hasBreasts()?"paizuri":"naizuri")+")] on [npc.namePos] [npc.clit]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc2.NameIsFull] совершает [style.boldSex([npc.crotchBoob]-"+(entry.getKey().hasBreasts()?"пайзури":"наизури")+")] на [npc.namePos] [npc.clit]!"));
 								}
 								break;
 							case FOOT:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(groping)] [npc.her] own [npc.crotchBoobs] with [npc.her] [npc.feet]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(ласкает)] собственную [npc.crotchBoobs] [npc.her] с помощью [npc.her] [npc.feet]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(groping)] [npc2.namePos] [npc2.crotchBoobs] with [npc.her] [npc.feet]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(ласкает)] [npc2.namePos] [npc2.crotchBoobs] с помощью [npc.her] [npc.feet]!"));
 								}
 								break;
 						}
@@ -13632,18 +13581,18 @@ public class StatusEffect {
 								break;
 							case MOUTH:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(kissing)] [npc.her] own [npc.crotchBoobs]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(целуя)] собственную [npc.crotchBoobs] [npc.her]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(kissing)] [npc2.namePos] [npc2.crotchBoobs]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(целуя)] [npc2.namePos] [npc2.crotchBoobs]!"));
 								}
 								break;
 							case THIGHS:
 								break;
 							case URETHRA_PENIS:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] выполняет [style.boldSex([npc.crotchBoob]-"+(entry.getKey().hasBreasts()?"paizuri":"naizuri")+")] на [npc.herself]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] выполняет [style.boldSex([npc.crotchBoob]-"+(entry.getKey().hasBreasts()?"пайзури":"наизури")+")] на [npc.herself]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc2.NameIsFull] выполняет [style.boldSex([npc.crotchBoob]-"+(entry.getKey().hasBreasts()?"paizuri":"naizuri")+")] на [npc.name]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc2.NameIsFull] выполняет [style.boldSex([npc.crotchBoob]-"+(entry.getKey().hasBreasts()?"пайзури":"наизури")+")] на [npc.name]!"));
 								}
 								break;
 							case URETHRA_VAGINA:
@@ -13703,7 +13652,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect NIPPLE_CROTCH_STATUS = new AbstractStatusEffect(97,
-			"Nipple status",
+			"Состояние сосков",
 			null,
 			PresetColour.GENERIC_SEX,
 			false,
@@ -13742,51 +13691,51 @@ public class StatusEffect {
 						switch((SexAreaPenetration)sArea) {
 							case FINGER:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(fingering)] [npc.her] own [npc.crotchNipples]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(пальцами)] собственную [npc.crotchNipples] [npc.her]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(fingering)] [npc2.namePos] [npc2.crotchNipples]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(пальцами)] [npc2.namePos] [npc2.crotchNipples]!"));
 								}
 								break;
 							case PENIS:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(fucking)] [npc.her] own [npc.crotchNipples]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(трахает)] собственную [npc.crotchNipples] [npc.her]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(fucking)] [npc2.namePos] [npc2.crotchNipples]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(трахает)] [npc2.namePos] [npc2.crotchNipples]!"));
 								}
 								break;
 							case TAIL:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(tail-fucking)] [npc.her] own [npc.crotchNipples]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(трахает хвостом)] собственную [npc.crotchNipples] [npc.her]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(tail-fucking)] [npc2.namePos] [npc2.crotchNipples]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(трахает хвостом)] [npc2.namePos] [npc2.crotchNipples]!"));
 								}
 								break;
 							case TENTACLE:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(tentacle-fucking)] [npc.her] own [npc.crotchNipples]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(трахает щупальцем)] собственную [npc.crotchNipples] [npc.her]!"));
 								} else {
 									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(tentacle-fucking)] [npc2.namePos] [npc2.crotchNipples]!"));
 								}
 								break;
 							case TONGUE:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(kissing)] [npc.her] own [npc.crotchNipples]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(kissing)] [npc.her] сосёт [npc.crotchNipples]!"));
 								} else {
 									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(kissing)] [npc2.namePos] [npc2.crotchNipples]!"));
 								}
 								break;
 							case CLIT:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(clit-fucking)] [npc.her] own [npc.crotchNipples]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(clit-fucking)] [npc.her] сосёт [npc.crotchNipples]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(clit-fucking)] [npc2.namePos] [npc2.crotchNipples]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(трах клитора)] [npc2.namePos] [npc2.crotchNipples]!"));
 								}
 								break;
 							case FOOT:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(pushing [npc.her] [npc.toes])] into [npc.her] own [npc.crotchNipples]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(pushing [npc.her] [npc.toes])] в [npc.her] собственный [npc.crotchNipples]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(pushing [npc.her] [npc.toes])] into [npc2.namePos] [npc2.crotchNipples]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(pushing [npc.her] [npc.toes])] в [npc2.namePos] [npc2.crotchNipples]!"));
 								}
 								break;
 						}
@@ -13803,7 +13752,7 @@ public class StatusEffect {
 								break;
 							case MOUTH:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(kissing)] [npc.her] own [npc.crotchNipples]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(kissing)] [npc.her] сосёт [npc.crotchNipples]!"));
 								} else {
 									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(kissing)] [npc2.namePos] [npc2.crotchNipples]!"));
 								}
@@ -13812,9 +13761,9 @@ public class StatusEffect {
 								break;
 							case URETHRA_PENIS:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(fucking)] [npc.her] own [npc.crotchNipples]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(трахает)] собственную [npc.crotchNipples] [npc.her]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(fucking)] [npc2.namePos] [npc2.crotchNipples]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(трахает)] [npc2.namePos] [npc2.crotchNipples]!"));
 								}
 								break;
 							case URETHRA_VAGINA:
@@ -13828,7 +13777,7 @@ public class StatusEffect {
 				}
 			}
 			if(Main.sex.getOngoingSexAreas(target, type).isEmpty()) {
-				descriptionSB.append("[style.colourDisabled(No ongoing action...)]");
+				descriptionSB.append("[style.colourDisabled(Никаких активных действий...)]");
 			}
 
 			appendOrificeAdditionGenericDescriptions(target, type, UtilText.parse(target, "[npc.Her] [npc.crotchNipples]"), descriptionSB);
@@ -13861,7 +13810,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect URETHRA_PENIS_STATUS = new AbstractStatusEffect(97,
-			"Penis Urethra status",
+			"Статус: Уретра пениса",
 			null,
 			PresetColour.GENERIC_SEX,
 			false,
@@ -13892,51 +13841,51 @@ public class StatusEffect {
 						switch((SexAreaPenetration)sArea) {
 							case FINGER:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(fingering)] [npc.her] own [npc.urethraPenis]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(fingering)] [npc.her] сама [npc.urethraPenis]!"));
 								} else {
 									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(fingering)] [npc2.namePos] [npc2.urethraPenis]!"));
 								}
 								break;
 							case PENIS:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(fucking)] [npc.her] own [npc.urethraPenis]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(fucking)] [npc.her] сама [npc.urethraPenis]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(fucking)] [npc2.namePos] [npc2.urethraPenis]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(ебучий)] [npc2.namePos] [npc2.urethraPenis]!"));
 								}
 								break;
 							case TAIL:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(tail-fucking)] [npc.her] own [npc.urethraPenis]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(tail-fucking)] [npc.her] сама [npc.urethraPenis]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(tail-fucking)] [npc2.namePos] [npc2.urethraPenis]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(трах в задницу)] [npc2.namePos] [npc2.urethraPenis]!"));
 								}
 								break;
 							case TENTACLE:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(tentacle-fucking)] [npc.her] own [npc.urethraPenis]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(tentacle-fucking)] [npc.her] сама [npc.urethraPenis]!"));
 								} else {
 									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(tentacle-fucking)] [npc2.namePos] [npc2.urethraPenis]!"));
 								}
 								break;
 							case TONGUE:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(kissing)] [npc.her] own [npc.urethraPenis]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(kissing)] [npc.her] сама [npc.urethraPenis]!"));
 								} else {
 									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(kissing)] [npc2.namePos] [npc2.urethraPenis]!"));
 								}
 								break;
 							case CLIT:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(clit-fucking)] [npc.her] own [npc.urethraPenis]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(трахающий клитор)] [npc.her] владея [npc.urethraPenis]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(clit-fucking)] [npc2.namePos] [npc2.urethraPenis]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(трахающий клитор)] [npc2.namePos] [npc2.urethraPenis]!"));
 								}
 								break;
 							case FOOT:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(pushing [npc.her] [npc.toes])] into [npc.her] own [npc.urethraPenis]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(втискивая [npc.her] [npc.toes])] в собственную [npc.her] [npc.urethraPenis]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(pushing [npc.her] [npc.toes])] into [npc2.namePos] [npc2.urethraPenis]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(втискивая [npc.her] [npc.toes])] в [npc2.namePos] [npc2.urethraPenis]!"));
 								}
 								break;
 						}
@@ -13953,18 +13902,18 @@ public class StatusEffect {
 								break;
 							case MOUTH:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(kissing)] [npc.her] own [npc.urethraPenis]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(kissing)] [npc.her] сама [npc.urethraPenis]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(kissing)] [npc2.namePos] [npc2.urethraPenis]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(целуя)] [npc2.namePos] [npc2.urethraPenis]!"));
 								}
 								break;
 							case THIGHS:
 								break;
 							case URETHRA_PENIS:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(fucking)] [npc.her] own [npc.urethraPenis]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(fucking)] [npc.her] сама [npc.urethraPenis]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(fucking)] [npc2.namePos] [npc2.urethraPenis]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(ебучий)] [npc2.namePos] [npc2.urethraPenis]!"));
 								}
 								break;
 							case URETHRA_VAGINA:
@@ -13978,7 +13927,7 @@ public class StatusEffect {
 				}
 			}
 			if(Main.sex.getOngoingSexAreas(target, type).isEmpty()) {
-				descriptionSB.append("[style.colourDisabled(No ongoing action...)]");
+				descriptionSB.append("[style.colourDisabled(Никаких активных действий...)]");
 			}
 			
 			appendOrificeAdditionGenericDescriptions(target, type, UtilText.parse(target, "[npc.Her] [npc.urethraPenis]"), descriptionSB);
@@ -14010,7 +13959,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect URETHRA_VAGINA_STATUS = new AbstractStatusEffect(97,
-			"Vaginal Urethra status",
+			"Статус: вагинальное мочеиспускание",
 			null,
 			PresetColour.GENERIC_SEX,
 			false,
@@ -14041,51 +13990,51 @@ public class StatusEffect {
 						switch((SexAreaPenetration)sArea) {
 							case FINGER:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(fingering)] [npc.her] own [npc.urethraVagina]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(лаская пальцами)] собственную [npc.her] [npc.urethraVagina]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(fingering)] [npc2.namePos] [npc2.urethraVagina]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(лаская пальцами)] [npc2.namePos] [npc2.urethraVagina]!"));
 								}
 								break;
 							case PENIS:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(fucking)] [npc.her] own [npc.urethraVagina]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(трахая)] собственную [npc.her] [npc.urethraVagina]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(fucking)] [npc2.namePos] [npc2.urethraVagina]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(трахая)] [npc2.namePos] [npc2.urethraVagina]!"));
 								}
 								break;
 							case TAIL:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(tail-fucking)] [npc.her] own [npc.urethraVagina]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(трахать хвостом)] [npc.her] владеет [npc.urethraVagina]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(tail-fucking)] [npc2.namePos] [npc2.urethraVagina]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(трахать хвостом)] [npc2.namePos] [npc2.urethraVagina]!"));
 								}
 								break;
 							case TENTACLE:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(tentacle-fucking)] [npc.her] own [npc.urethraVagina]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(трахать щупальцами)] [npc.her] владеет [npc.urethraVagina]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(tentacle-fucking)] [npc2.namePos] [npc2.urethraVagina]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(трахать щупальцами)] [npc2.namePos] [npc2.urethraVagina]!"));
 								}
 								break;
 							case TONGUE:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(kissing)] [npc.her] own [npc.urethraVagina]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(целоваться)] [npc.her] владеет [npc.urethraVagina]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(kissing)] [npc2.namePos] [npc2.urethraVagina]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(целоваться)] [npc2.namePos] [npc2.urethraVagina]!"));
 								}
 								break;
 							case CLIT:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(clit-fucking)] [npc.her] own [npc.urethraVagina]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(трахать клитор)] [npc.her] владеет [npc.urethraVagina]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(clit-fucking)] [npc2.namePos] [npc2.urethraVagina]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(трахать клитор)] [npc2.namePos] [npc2.urethraVagina]!"));
 								}
 								break;
 							case FOOT:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(pushing [npc.her] [npc.toes])] into [npc.her] own [npc.urethraVagina]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(втискивать [npc.her] [npc.toes])] в собственные [npc.urethraVagina] [npc.her]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(pushing [npc.her] [npc.toes])] into [npc2.namePos] [npc2.urethraVagina]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(втискивать [npc.her] [npc.toes])] в [npc2.namePos] [npc2.urethraVagina]!"));
 								}
 								break;
 						}
@@ -14102,18 +14051,18 @@ public class StatusEffect {
 								break;
 							case MOUTH:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(kissing)] [npc.her] own [npc.urethraVagina]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(целоваться)] [npc.her] владеет [npc.urethraVagina]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(kissing)] [npc2.namePos] [npc2.urethraVagina]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(целоваться)] [npc2.namePos] [npc2.urethraVagina]!"));
 								}
 								break;
 							case THIGHS:
 								break;
 							case URETHRA_PENIS:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(fucking)] [npc.her] own [npc.urethraVagina]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(трахая)] собственную [npc.her] [npc.urethraVagina]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(fucking)] [npc2.namePos] [npc2.urethraVagina]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(трахая)] [npc2.namePos] [npc2.urethraVagina]!"));
 								}
 								break;
 							case URETHRA_VAGINA:
@@ -14127,7 +14076,7 @@ public class StatusEffect {
 				}
 			}
 			if(Main.sex.getOngoingSexAreas(target, type).isEmpty()) {
-				descriptionSB.append("[style.colourDisabled(No ongoing action...)]");
+				descriptionSB.append("[style.colourDisabled(Никаких активных действий...)]");
 			}
 			
 			appendOrificeAdditionGenericDescriptions(target, type, UtilText.parse(target, "[npc.Her] [npc.urethraVagina]"), descriptionSB);
@@ -14159,7 +14108,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect VAGINA_STATUS = new AbstractStatusEffect(95,
-			"Pussy status",
+			"Статус киски",
 			null,
 			PresetColour.GENERIC_SEX,
 			false,
@@ -14204,57 +14153,57 @@ public class StatusEffect {
 					switch(pen) {
 						case FINGER:
 							if(selfAction) {
-								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(fingering)] [npc.her] own [npc.pussy]!"));
+								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(ласкает)] [npc.her] свою [npc.pussy]!"));
 							} else {
-								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" are")
-										+" [style.boldSex(fingering)] [npc.namePos] [npc.pussy]!"));
+								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" являются")
+										+" [style.boldSex(ласкает)] [npc.namePos] [npc.pussy]!"));
 							}
 							break;
 						case PENIS:
 							if(selfAction) {
-								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(fucking)] [npc.her] own [npc.pussy]!"));
+								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(трахает)] [npc.her] свою [npc.pussy]!"));
 							} else {
-								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" are")
-										+" [style.boldSex(fucking)] [npc.namePos] [npc.pussy]!"));
+								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" являются")
+										+" [style.boldSex(трахает)] [npc.namePos] [npc.pussy]!"));
 							}
 							break;
 						case TAIL:
 							if(selfAction) {
-								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(tail-fucking)] [npc.her] own [npc.pussy]!"));
+								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(трахает хвостом)] [npc.her] свою [npc.pussy]!"));
 							} else {
-								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" are")
-										+" [style.boldSex(tail-fucking)] [npc.namePos] [npc.pussy]!"));
+								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" являются")
+										+" [style.boldSex(трахает хвостом)] [npc.namePos] [npc.pussy]!"));
 							}
 							break;
 						case TENTACLE:
 							if(selfAction) {
-								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(tentacle-fucking)] [npc.her] own [npc.pussy]!"));
+								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(трахает щупальцем)] [npc.her] свою [npc.pussy]!"));
 							} else {
-								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" are")
-										+" [style.boldSex(tentacle-fucking)] [npc.namePos] [npc.pussy]!"));
+								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" являются")
+										+" [style.boldSex(трахает щупальцем)] [npc.namePos] [npc.pussy]!"));
 							}
 							break;
 						case TONGUE:
 							if(selfAction) {
-								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] performing [style.boldSex(cunnilingus)] [npc.her] own [npc.pussy]!"));
+								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] делает [style.boldSex(куннилингус)] [npc.her] своей [npc.pussy]!"));
 							} else {
-								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" are")
-										+" performing [style.boldSex(cunnilingus)] on [npc.name]!"));
+								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" являются")
+										+" занимается [style.boldSex(куннилингусом)] с [npc.name]!"));
 							}
 							break;
 						case CLIT:
 							if(selfAction) {
 								if(main.isClitorisPseudoPenis()) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(clit-fucking)] [npc.her] own [npc.pussy]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(clit-fucking)] [npc.her] владей [npc.pussy]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(tribbing)] [npc.her] own [npc.pussy]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(tribbing)] [npc.her] владей [npc.pussy]!"));
 								}
 							} else {
 								if(main.isClitorisPseudoPenis()) {
-									descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" are")
-											+" [style.boldSex(clit-fucking)] [npc.namePos] [npc.pussy]!"));
+									descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" являются")
+											+" [style.boldSex(трахает клитор)] [npc.namePos] [npc.pussy]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" are")
+									descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" являются")
 											+" [style.boldSex(tribbing)] с [npc2.name]!"));
 								}
 							}
@@ -14264,7 +14213,7 @@ public class StatusEffect {
 								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(pushing [npc.her] [npc.toes])] в [npc.her] собственную [npc.pussy]!"));
 							} else {
 								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))
-										+(names.size()==1?UtilText.parse(main, " [npc.is] [style.boldSex(pushing [npc.her] [npc.toes])]"):"  в @@T0@@ @@T1@@!")
+										+(names.size()==1?UtilText.parse(main, " [npc.is] [style.boldSex(вжимает [npc.her] [npc.toes])]"):"  в @@T0@@ @@T1@@!")
 										+"в [npc.namePos] [npc.pussy]!"));
 							}
 							break;
@@ -14301,7 +14250,7 @@ public class StatusEffect {
 							if(selfAction) {
 								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] выполняет [style.boldSex(cunnilingus)] на [npc.herself]!"));
 							} else {
-								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" are")
+								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" являются")
 										+" выполняет [style.boldSex(cunnilingus)] на [npc2.name]!"));
 							}
 							break;
@@ -14309,20 +14258,20 @@ public class StatusEffect {
 							break;
 						case URETHRA_PENIS:
 							if(selfAction) {
-								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(fucking)] [npc.her] own [npc.pussy]!"));
+								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(трахает)] [npc.her] свою [npc.pussy]!"));
 							} else {
-								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" are")
-										+" [style.boldSex(fucking)] [npc.namePos] [npc.pussy]!"));
+								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" являются")
+										+" [style.boldSex(трахает)] [npc.namePos] [npc.pussy]!"));
 							}
 							break;
 						case URETHRA_VAGINA:
 							break;
 						case VAGINA:
 							if(selfAction) {
-								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(tribbing)] [npc.her] own [npc.pussy]!")); //???
+								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(tribbing)] [npc.her] владей [npc.pussy]!")); //???
 							} else {
-								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" are")
-										+" [style.boldSex(tribbing)] with [npc2.name]!"));
+								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" являются")
+										+" [style.boldSex(триббинг)] с [npc2.name]!"));
 							}
 							break;
 						case SPINNERET:
@@ -14332,10 +14281,10 @@ public class StatusEffect {
 			}
 			
 			if(!descriptionAdded) {
-				descriptionSB.append("[style.boldDisabled(No ongoing actions.)]");
+				descriptionSB.append("[style.boldDisabled(Нет текущих действий)]");
 			}
 			
-			appendOrificeAdditionGenericDescriptions(target, type, UtilText.parse(target, "[npc.Her] pussy"), descriptionSB);
+			appendOrificeAdditionGenericDescriptions(target, type, UtilText.parse(target, "киска [npc.Her]"), descriptionSB);
 			
 			descriptionSB.append("</p>");
 			
@@ -14362,7 +14311,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect SPINNERET_STATUS = new AbstractStatusEffect(95,
-			"Spinneret status",
+			"Статус паутинного аппарата",
 			null,
 			PresetColour.GENERIC_SEX,
 			false,
@@ -14409,66 +14358,66 @@ public class StatusEffect {
 							if(selfAction) {
 								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(fingering)] [npc.her] собственная паутинная нить!"));
 							} else {
-								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" are")
-										+" [style.boldSex(fingering)] [npc.namePos] spinneret!"));
+								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" являются")
+										+" [style.boldSex(пальцами)] [npc.namePos] паутинный аппарат!"));
 							}
 							break;
 						case PENIS:
 							if(selfAction) {
-								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(fucking)] [npc.her] own spinneret!"));
+								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(трахает)] собственную паутинку [npc.her]!"));
 							} else {
-								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" are")
-										+" [style.boldSex(fucking)] [npc.namePos] spinneret!"));
+								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" являются")
+										+" [style.boldSex(трахает)] паутинку [npc.namePos]!"));
 							}
 							break;
 						case TAIL:
 							if(selfAction) {
-								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(tail-fucking)] [npc.her] own spinneret!"));
+								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(трахает хвостом)] собственную паутинку [npc.her]!"));
 							} else {
-								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" are")
-										+" [style.boldSex(tail-fucking)] [npc.namePos] spinneret!"));
+								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" являются")
+										+" [style.boldSex(трахает хвостом)] паутинку [npc.namePos]!"));
 							}
 							break;
 						case TENTACLE:
 							if(selfAction) {
-								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(tentacle-fucking)] [npc.her] own spinneret!"));
+								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(трахает щупальцем)] собственную паутинку [npc.her]!"));
 							} else {
-								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" are")
-										+" [style.boldSex(tentacle-fucking)] [npc.namePos] spinneret!"));
+								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" являются")
+										+" [style.boldSex(трахает щупальцем)] паутинку [npc.namePos]!"));
 							}
 							break;
 						case TONGUE:
 							if(selfAction) {
-								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] performing [style.boldSex(oral)] [npc.her] own spinneret!"));
+								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(отсасывает)] собственную паутинку [npc.her]!"));
 							} else {
-								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" are")
-										+" performing [style.boldSex(oral)] on [npc.namePos] spinneret!"));
+								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" являются")
+										+" [style.boldSex(отсасывает)] паутинку [npc.namePos]!"));
 							}
 							break;
 						case CLIT:
 							if(selfAction) {
 								if(main.isClitorisPseudoPenis()) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(clit-fucking)] [npc.her] own spinneret!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(трахает клитором)] собственную паутинку [npc.her]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(tribbing)] [npc.her] own spinneret!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(трется клиторами)] собственную паутинку [npc.her]!"));
 								}
 							} else {
 								if(main.isClitorisPseudoPenis()) {
-									descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" are")
-											+" [style.boldSex(clit-fucking)] [npc.namePos] spinneret!"));
+									descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" являются")
+											+" [style.boldSex(clit-fucking)] [npc.namePos] клиторная вертушка!"));
 								} else {
-									descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" are")
-											+" [style.boldSex(tribbing)] with [npc2.namePos] spinneret!"));
+									descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" являются")
+											+" [style.boldSex(tribbing)] с [npc2.namePos] паутинным аппаратом!"));
 								}
 							}
 							break;
 						case FOOT:
 							if(selfAction) {
-								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(pushing [npc.her] [npc.toes])] into [npc.her] own spinneret!"));
+								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(заталкивает [npc.her] в [npc.toes])] в собственный паучий аппарат [npc.her]!"));
 							} else {
 								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))
-										+(names.size()==1?UtilText.parse(main, " [npc.is] [style.boldSex(pushing [npc.her] [npc.toes])]"):" are [style.boldSex(pushing their toes)]")
-										+"  into [npc.namePos] spinneret!"));
+										+(names.size()==1?UtilText.parse(main, " [npc.is] [style.boldSex(вжимает [npc.her] [npc.toes])]"):" вжимает [style.boldSex(свои пальцы ног)]")
+										+"  в [npc.namePos] паутинку!"));
 							}
 							break;
 					}
@@ -14502,9 +14451,9 @@ public class StatusEffect {
 							break;
 						case MOUTH:
 							if(selfAction) {
-								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] performing [style.boldSex(oral)] on [npc.her] own spinneret!"));
+								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] совершает [style.boldSex(оральный)] секс с собственной паутинной железой [npc.her]!"));
 							} else {
-								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" are")
+								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" являются")
 										+" выполняет [style.boldSex(oral)] на [npc2.namePos] spinneret!"));
 							}
 							break;
@@ -14512,19 +14461,19 @@ public class StatusEffect {
 							break;
 						case URETHRA_PENIS:
 							if(selfAction) {
-								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(fucking)] [npc.her] own spinneret!"));
+								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(трахает)] собственную паутинку [npc.her]!"));
 							} else {
-								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" are")
-										+" [style.boldSex(fucking)] [npc.namePos] spinneret!"));
+								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" являются")
+										+" [style.boldSex(трахает)] паутинку [npc.namePos]!"));
 							}
 							break;
 						case URETHRA_VAGINA:
 							break;
 						case VAGINA:
 							if(selfAction) {
-								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(tribbing)] [npc.her] own spinneret!")); //???
+								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(трется клиторами)] собственную паутинку [npc.her]!")); //???
 							} else {
-								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" are")
+								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))+(names.size()==1?UtilText.parse(main, " [npc.is]"):" являются")
 										+" [style.boldSex(tribbing)] с [npc2.namePos] spinneret!"));
 							}
 							break;
@@ -14538,7 +14487,7 @@ public class StatusEffect {
 				descriptionSB.append("[style.boldDisabled(Нет текущих действий.)]");
 			}
 			
-			appendOrificeAdditionGenericDescriptions(target, type, UtilText.parse(target, "[npc.Her] spinneret"), descriptionSB);
+			appendOrificeAdditionGenericDescriptions(target, type, UtilText.parse(target, "[npc.Her] паутинница"), descriptionSB);
 			
 			descriptionSB.append("</p>");
 			
@@ -14565,7 +14514,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect THIGH_STATUS = new AbstractStatusEffect(95,
-			"Thigh status",
+			"Состояние бедер",
 			null,
 			PresetColour.GENERIC_SEX,
 			false,
@@ -14596,51 +14545,51 @@ public class StatusEffect {
 						switch((SexAreaPenetration)sArea) {
 							case FINGER:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(groping)] [npc.her] own [npc.legs]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(лапает)] собственный [npc.her] [npc.legs]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(groping)] [npc2.namePos] [npc2.legs]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(лапает)] [npc2.namePos] [npc2.legs]!"));
 								}
 								break;
 							case PENIS:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(fucking)] [npc.her] own thighs!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(ебаные)] [npc.her] собственные бёдра!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(fucking)] [npc2.namePos] thighs!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(трахать)] [npc2.namePos] бёдрами!"));
 								}
 								break;
 							case TAIL:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(tail-fucking)] [npc.her] own thighs!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(трахать хвостом)] собственными [npc.her] бёдрами!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(tail-fucking)] [npc2.namePos] thighs!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(трахать хвостом)] [npc2.namePos] бёдрами!"));
 								}
 								break;
 							case TENTACLE:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(tentacle-fucking)] [npc.her] own thighs!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(трахать щупальцами)] собственными [npc.her] бёдрами!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(tentacle-fucking)] [npc2.namePos] thighs!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(трахать щупальцами)] [npc2.namePos] бёдрами!"));
 								}
 								break;
 							case TONGUE:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(kissing)] [npc.her] own [npc.legs]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(kissing)] [npc.her] владей [npc.legs]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(kissing)] [npc2.namePos] [npc2.legs]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(целовать)] [npc2.namePos] [npc2.legs]!"));
 								}
 								break;
 							case CLIT:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(clit-fucking)] [npc.her] own thighs!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(трахать клитор)] собственными [npc.her] бёдрами!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(clit-fucking)] [npc2.namePos] thighs!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(трахать клитор)] [npc2.namePos] бёдрами!"));
 								}
 								break;
 							case FOOT:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(pushing [npc.her] [npc.feet])] between [npc.her] own thighs!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(втискивать [npc.her] [npc.feet])] между собственных [npc.her] бёдер!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(pushing [npc.her] [npc.feet])] between [npc2.namePos] thighs!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(втискивать [npc.her] [npc.feet])] между [npc2.namePos] бёдрами!"));
 								}
 								break;
 						}
@@ -14657,18 +14606,18 @@ public class StatusEffect {
 								break;
 							case MOUTH:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(kissing)] [npc.her] own [npc.legs]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(kissing)] [npc.her] владей [npc.legs]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(kissing)] [npc2.namePos] [npc2.legs]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(целовать)] [npc2.namePos] [npc2.legs]!"));
 								}
 								break;
 							case THIGHS:
 								break;
 							case URETHRA_PENIS:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(fucking)] [npc.her] own thighs!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(ебаные)] [npc.her] собственные бёдра!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(fucking)] [npc2.namePos] thighs!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(трахать)] [npc2.namePos] бёдрами!"));
 								}
 								break;
 							case URETHRA_VAGINA:
@@ -14682,10 +14631,10 @@ public class StatusEffect {
 				}
 			}
 			if(Main.sex.getOngoingSexAreas(target, type).isEmpty()) {
-				descriptionSB.append("[style.colourDisabled(No ongoing action...)]");
+				descriptionSB.append("[style.colourDisabled(Никаких активных действий...)]");
 			}
 
-			appendOrificeAdditionGenericDescriptions(target, type, UtilText.parse(target, "[npc.Her] thighs"), descriptionSB);
+			appendOrificeAdditionGenericDescriptions(target, type, UtilText.parse(target, "[npc.Her] бедра"), descriptionSB);
 			
 			descriptionSB.append("</p>");
 			
@@ -14724,7 +14673,7 @@ public class StatusEffect {
 	};
 	
 	public static AbstractStatusEffect ARMPIT_STATUS = new AbstractStatusEffect(95,
-			"Armpit status",
+			"Статус подмышек",
 			null,
 			PresetColour.GENERIC_SEX,
 			false,
@@ -14755,51 +14704,51 @@ public class StatusEffect {
 						switch((SexAreaPenetration)sArea) {
 							case FINGER:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(groping)] [npc.her] own [npc.armpits]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(groping)] [npc.her] ласкает свои собственные [npc.armpits]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(groping)] [npc2.namePos] [npc2.armpits]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(ласки)] [npc2.namePos] [npc2.armpits]!"));
 								}
 								break;
 							case PENIS:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(fucking)] [npc.her] own armpits!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(ебаные)] [npc.her] подмышки!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(fucking)] [npc2.namePos] armpits!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(fucking)] трахает подмышки [npc2.namePos]!"));
 								}
 								break;
 							case TAIL:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(tail-fucking)] [npc.her] own armpits!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(трахать сзади)] [npc.her] собственные подмышки!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(tail-fucking)] [npc2.namePos] armpits!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(tail-fucking)] ебёт хвостом подмышки [npc2.namePos]!"));
 								}
 								break;
 							case TENTACLE:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(tentacle-fucking)] [npc.her] own armpits!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(tentacle-fucking)] [npc.her] собственные подмышки!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(tentacle-fucking)] [npc2.namePos] armpits!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(tentacle-fucking)] трахает щупальцами подмышки [npc2.namePos]!"));
 								}
 								break;
 							case TONGUE:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(kissing)] [npc.her] own [npc.armpits]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(kissing)] [npc.her] собственные [npc.armpits]!"));
 								} else {
 									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(kissing)] [npc2.namePos] [npc2.armpits]!"));
 								}
 								break;
 							case CLIT:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(clit-fucking)] [npc.her] own armpits!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(clit-fucking)] [npc.her] собственные подмышки!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(clit-fucking)] [npc2.namePos] armpits!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(clit-fucking)] [npc2.namePos] подмышки!"));
 								}
 								break;
 							case FOOT:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(pushing [npc.her] [npc.feet])] between [npc.her] own armpits!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(pushing [npc.her] [npc.feet])] между собственными подмышками [npc.her]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(pushing [npc.her] [npc.feet])] between [npc2.namePos] armpits!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(pushing [npc.her] [npc.feet])] между подмышками [npc2.namePos]!"));
 								}
 								break;
 						}
@@ -14816,7 +14765,7 @@ public class StatusEffect {
 								break;
 							case MOUTH:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(kissing)] [npc.her] own [npc.armpits]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(kissing)] [npc.her] собственные [npc.armpits]!"));
 								} else {
 									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(kissing)] [npc2.namePos] [npc2.armpits]!"));
 								}
@@ -14825,9 +14774,9 @@ public class StatusEffect {
 								break;
 							case URETHRA_PENIS:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(fucking)] [npc.her] own armpits!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(ебаные)] [npc.her] подмышки!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(fucking)] [npc2.namePos] armpits!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(fucking)] трахает подмышки [npc2.namePos]!"));
 								}
 								break;
 							case URETHRA_VAGINA:
@@ -14839,10 +14788,10 @@ public class StatusEffect {
 				}
 			}
 			if(Main.sex.getOngoingSexAreas(target, type).isEmpty()) {
-				descriptionSB.append("[style.colourDisabled(No ongoing action...)]");
+				descriptionSB.append("[style.colourDisabled(Никаких активных действий...)]");
 			}
 
-			appendOrificeAdditionGenericDescriptions(target, type, UtilText.parse(target, "[npc.Her] armpits"), descriptionSB);
+			appendOrificeAdditionGenericDescriptions(target, type, UtilText.parse(target, "[npc.Her] подмышки"), descriptionSB);
 			
 			descriptionSB.append("</p>");
 			
@@ -14882,7 +14831,7 @@ public class StatusEffect {
 	};
 
 	public static AbstractStatusEffect HAND_STATUS = new AbstractStatusEffect(95,
-			"Hand status",
+			"Статус руки",
 			null,
 			PresetColour.GENERIC_SEX,
 			false,
@@ -14923,9 +14872,9 @@ public class StatusEffect {
 								break;
 							case FINGER:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(holding hands)] with [npc.herself]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(держится за руки)] с [npc.herself]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(holding hands)] with [npc2.name]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(держится за руки)] с [npc2.name]!"));
 								}
 								break;
 							case FOOT:
@@ -14937,7 +14886,7 @@ public class StatusEffect {
 			}
 			
 			if(Main.sex.getOngoingSexAreas(target, type).isEmpty()) {
-				descriptionSB.append("[style.colourDisabled(No ongoing action...)]");
+				descriptionSB.append("[style.colourDisabled(Никаких активных действий...)]");
 			}
 
 			appendPenetrationAdditionGenericDescriptions(target, type, UtilText.parse(target, "[npc.NamePos] [npc.hands]"), descriptionSB);

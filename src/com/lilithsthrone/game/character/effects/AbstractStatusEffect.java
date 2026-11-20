@@ -618,10 +618,10 @@ public abstract class AbstractStatusEffect {
 		String penetrationName = UtilText.parse(target, "[npc.NamePos] ")+penetration.getName(target);
 		
 		if(!Main.sex.hasLubricationTypeFromAnyone(target, penetration)) {
-			modifiersList.add(penetrationName+" "+(penetration.isPlural()?"are":"is")+" [style.boldWetness1(dry)]!");
+			modifiersList.add(penetrationName+" "+(penetration.isPlural()?"are":"is")+" [style.boldWetness1(сухой)]!");
 			
 		} else {
-			modifiersList.add(penetrationName+" "+(penetration.isPlural()?"have":"has")+" been [style.boldWetness(lubricated)] by:");
+			modifiersList.add(penetrationName+" "+(penetration.isPlural()?"have":"has")+" был [style.boldWetness(смазан)]:");
 			int i=0;
 			List<String> lubricants = new ArrayList<>();
 			for(GameCharacter lubricantProvider : Main.sex.getAllParticipants()) {
@@ -652,13 +652,13 @@ public abstract class AbstractStatusEffect {
 		if(!Main.sex.getOngoingSexAreas(target, penetration).isEmpty()
 				&& !Collections.disjoint(Main.sex.getOngoingSexAreas(target, penetration).get(Main.sex.getCharacterOngoingSexArea(target, penetration).get(0)), Util.newArrayListOfValues(SexAreaPenetration.values()))) {
 
-			modifiersList.add("[style.boldSex(Arousal/turn:)]");
+			modifiersList.add("[style.boldSex(Возбуждение/turn:)]");
 
-			String targetName = target.isPlayer()?"You":UtilText.parse(target, "[npc.Name]");
-			modifiersList.add("+"+penetration.getBaseArousalWhenPenetrating()+" <b style='color:"+target.getFemininity().getColour().toWebHexString()+";'>("+targetName+"</b> - [style.boldSex(Sex)])");
+			String targetName = target.isPlayer()?"Вы":UtilText.parse(target, "[npc.Name]");
+			modifiersList.add("+"+penetration.getBaseArousalWhenPenetrating()+" <b style='color:"+target.getFemininity().getColour().toWebHexString()+";'>("+targetName+"</b> - [style.boldSex(Секс)])");
 			
 			if(!Main.sex.hasLubricationTypeFromAnyone(target, penetration)) {
-				modifiersList.add(penetration.getArousalChangePenetratingDry()+ " <b style='color:"+target.getFemininity().getColour().toWebHexString()+";'>("+targetName+"</b> - [style.boldBad(Dry)])");
+				modifiersList.add(penetration.getArousalChangePenetratingDry()+ " <b style='color:"+target.getFemininity().getColour().toWebHexString()+";'>("+targetName+"</b> - [style.boldBad(Сухой)])");
 			}
 		}
 		return modifiersList;
@@ -732,7 +732,7 @@ public abstract class AbstractStatusEffect {
 	public List<String> getOrificeModifiersAsStringList(GameCharacter target, SexAreaOrifice orifice) {
 		List<String> modifiersList = new ArrayList<>();
 		
-		String targetName = target.isPlayer()?"You":UtilText.parse(target, "[npc.Name]");
+		String targetName = target.isPlayer()?"Вы":UtilText.parse(target, "[npc.Name]");
 
 		boolean orificePlural = orifice.isPlural();
 		String orificeName = UtilText.parse(target, "[npc.NamePos] ")+orifice.getName(target);
@@ -740,17 +740,17 @@ public abstract class AbstractStatusEffect {
 		// Stretching:
 		if(Main.sex.getAreasCurrentlyStretching(target).contains(orifice)) {
 			if(Main.sex.getFirstOngoingSexAreaPenetration(target, orifice)==null) {
-				modifiersList.add(orificeName+" "+(orificePlural?"have":"has")+" been <b style='color:"+PresetColour.BASE_PINK_DEEP.toWebHexString()+";'>stretched</b>!");
+				modifiersList.add(orificeName+" "+(orificePlural?"have":"has")+" был <b style='color:"+PresetColour.BASE_PINK_DEEP.toWebHexString()+";'>растянут</b>!");
 				
 			} else {
-				modifiersList.add(orificeName+" "+(orificePlural?"are":"is")+" being <b style='color:"+PresetColour.BASE_PINK_DEEP.toWebHexString()+";'>stretched</b>!");
+				modifiersList.add(orificeName+" "+(orificePlural?"are":"is")+" являясь <b style='color:"+PresetColour.BASE_PINK_DEEP.toWebHexString()+";'>растянут</b>!");
 			}
 			
 		} else if(Main.sex.getAreasTooLoose(target).contains(orifice)) {
-			modifiersList.add(orificeName+" "+(orificePlural?"are":"is")+" <b style='color:"+PresetColour.BASE_RED.toWebHexString()+";'>too loose</b>!");
+			modifiersList.add(orificeName+" "+(orificePlural?"are":"is")+" <b style='color:"+PresetColour.BASE_RED.toWebHexString()+";'>слишком свободно</b>!");
 			
 		} else if(Main.sex.getAreasStretched(target).contains(orifice)) {
-			modifiersList.add(orificeName+" "+(orificePlural?"have":"has")+" been <b style='color:"+PresetColour.BASE_PINK_DEEP.toWebHexString()+";'>stretched</b>!");
+			modifiersList.add(orificeName+" "+(orificePlural?"have":"has")+" был <b style='color:"+PresetColour.BASE_PINK_DEEP.toWebHexString()+";'>растянут</b>!");
 			
 		}
 //		else {
@@ -761,22 +761,22 @@ public abstract class AbstractStatusEffect {
 		if(Main.game.isPenetrationLimitationsEnabled() && orifice.isInternalOrifice()) {
 			if(!Main.sex.getCharactersPenetratingTooDeep(target, orifice).isEmpty()) {
 				if(target.hasFetish(Fetish.FETISH_MASOCHIST) || target.hasFetish(Fetish.FETISH_SIZE_QUEEN)) {
-					modifiersList.add(orificeName+" "+(orificePlural?"are":"is")+" being penetrated [style.boldSex(too deeply)]!");
+					modifiersList.add(orificeName+" "+(orificePlural?"are":"is")+" проникают [style.boldSex(слишком глубоко)]!");
 				} else {
-					modifiersList.add(orificeName+" "+(orificePlural?"are":"is")+" being penetrated [style.boldTerrible(too deeply)]!");
+					modifiersList.add(orificeName+" "+(orificePlural?"are":"is")+" проникают [style.boldTerrible(слишком глубоко)]!");
 				}
 				
 			} else if(!Main.sex.getCharactersPenetratingFarTooShallow(target, orifice).isEmpty()) {
-				modifiersList.add(orificeName+" "+(orificePlural?"are":"is")+" being penetrated [style.boldPinkLight(too shallowly)]!");//[style.boldPinkLight(not being penetrated deep enough)]!");
+				modifiersList.add(orificeName+" "+(orificePlural?"are":"is")+" проникают [style.boldPinkLight(слишком мелко)]!");//[style.boldPinkLight(not being penetrated deep enough)]!");
 			}
 		}
 		
 		// Lubrication:
 		if(!Main.sex.hasLubricationTypeFromAnyone(target, orifice)) {
-			modifiersList.add(orificeName+" "+(orificePlural?"are":"is")+" [style.boldWetness1(dry)]!");
+			modifiersList.add(orificeName+" "+(orificePlural?"are":"is")+" [style.boldWetness1(сухой)]!");
 			
 		} else {
-			modifiersList.add(orificeName+" "+(orificePlural?"have":"has")+" been [style.boldWetness(lubricated)] by:");
+			modifiersList.add(orificeName+" "+(orificePlural?"have":"has")+" был [style.boldWetness(смазан)]:");
 			int i=0;
 			List<String> lubricants = new ArrayList<>();
 			for(GameCharacter lubricantProvider : Main.sex.getAllParticipants()) {
@@ -806,61 +806,61 @@ public abstract class AbstractStatusEffect {
 		
 		// Arousal:
 		if(!Main.sex.getOngoingSexAreas(target, orifice).isEmpty()) {
-			modifiersList.add("[style.boldSex(Arousal/turn:)]");
+			modifiersList.add("[style.boldSex(Возбуждение/turn:)]");
 
-			modifiersList.add("+"+orifice.getBaseArousalWhenPenetrated()+" (<b style='color:"+target.getFemininity().getColour().toWebHexString()+";'>"+targetName+"</b> - [style.boldSex(Sex)])");
+			modifiersList.add("+"+orifice.getBaseArousalWhenPenetrated()+" (<b style='color:"+target.getFemininity().getColour().toWebHexString()+";'>"+targetName+"</b> - [style.boldSex(Секс)])");
 			
 			if(Main.sex.getAreasCurrentlyStretching(target).contains(orifice)) {
 				float arousalIncrement = orifice.getArousalChangePenetratedStretching();
 				if(target.hasFetish(Fetish.FETISH_MASOCHIST) || target.hasFetish(Fetish.FETISH_SIZE_QUEEN)) { // Positive for masochist and size queen:
 					arousalIncrement = Math.abs(arousalIncrement);
-					modifiersList.add((arousalIncrement>0?"+":"")+arousalIncrement+" (<b style='color:"+target.getFemininity().getColour().toWebHexString()+";'>"+targetName+"</b> - [style.boldSex(Stretching)])");
+					modifiersList.add((arousalIncrement>0?"+":"")+arousalIncrement+" (<b style='color:"+target.getFemininity().getColour().toWebHexString()+";'>"+targetName+"</b> - [style.boldSex(Растяжение)])");
 
 				} else {
-					modifiersList.add((arousalIncrement>0?"+":"")+arousalIncrement+" (<b style='color:"+target.getFemininity().getColour().toWebHexString()+";'>"+targetName+"</b> - [style.boldBad(Stretching)])");
+					modifiersList.add((arousalIncrement>0?"+":"")+arousalIncrement+" (<b style='color:"+target.getFemininity().getColour().toWebHexString()+";'>"+targetName+"</b> - [style.boldBad(Растяжение)])");
 				}
 			}
 			if(Main.sex.getAreasTooLoose(target).contains(orifice)) {
 				modifiersList.add((orifice.getArousalChangePenetratedTooLoose()>0?"+":"")
-						+orifice.getArousalChangePenetratedTooLoose()+" (<b style='color:"+target.getFemininity().getColour().toWebHexString()+";'>"+targetName+"</b> - [style.boldBad(Too loose)])");
+						+orifice.getArousalChangePenetratedTooLoose()+" (<b style='color:"+target.getFemininity().getColour().toWebHexString()+";'>"+targetName+"</b> - [style.boldBad(Слишком свободно)])");
 			}
 			if(!Main.sex.hasLubricationTypeFromAnyone(target, orifice)) {
 				modifiersList.add((orifice.getArousalChangePenetratedDry()>0?"+":"")
-						+orifice.getArousalChangePenetratedDry()+" (<b style='color:"+target.getFemininity().getColour().toWebHexString()+";'>"+targetName+"</b> - [style.boldBad(Dry)])");
+						+orifice.getArousalChangePenetratedDry()+" (<b style='color:"+target.getFemininity().getColour().toWebHexString()+";'>"+targetName+"</b> - [style.boldBad(Сухой)])");
 			}
 
 			if(Main.game.isPenetrationLimitationsEnabled() && orifice.isInternalOrifice()) {
 				if(!Main.sex.getCharactersPenetratingTooDeep(target, (SexAreaOrifice)orifice).isEmpty()) {
 					if(target.hasFetish(Fetish.FETISH_MASOCHIST) || target.hasFetish(Fetish.FETISH_SIZE_QUEEN)) { // Positive for masochist and size queen:
-						modifiersList.add("+2.5 (<b style='color:"+target.getFemininity().getColour().toWebHexString()+";'>"+targetName+"</b> - [style.boldSex(Too deep)])");
+						modifiersList.add("+2.5 (<b style='color:"+target.getFemininity().getColour().toWebHexString()+";'>"+targetName+"</b> - [style.boldSex(Слишком глубоко)])");
 						
 					} else {
-						modifiersList.add("-10 (<b style='color:"+target.getFemininity().getColour().toWebHexString()+";'>"+targetName+"</b> - [style.boldBad(Too deep)])");
+						modifiersList.add("-10 (<b style='color:"+target.getFemininity().getColour().toWebHexString()+";'>"+targetName+"</b> - [style.boldBad(Слишком глубоко)])");
 						
 					}
 					
 				} else if(!Main.sex.getCharactersPenetratingFarTooShallow(target, (SexAreaOrifice)orifice).isEmpty()) {
-					modifiersList.add("-2 (<b style='color:"+target.getFemininity().getColour().toWebHexString()+";'>"+targetName+"</b> - [style.boldBad(Too shallow)])");
+					modifiersList.add("-2 (<b style='color:"+target.getFemininity().getColour().toWebHexString()+";'>"+targetName+"</b> - [style.boldBad(Слишком мелко)])");
 				}
 			}
 			
 			for(GameCharacter penetrator : Main.sex.getOngoingSexAreas(target, orifice).keySet()) {
-				String penetratorName = penetrator.isPlayer()?"You":UtilText.parse(penetrator, "[npc.Name]");
+				String penetratorName = penetrator.isPlayer()?"Вы":UtilText.parse(penetrator, "[npc.Name]");
 				
 				if(!Main.sex.getOngoingSexAreas(target, orifice).isEmpty()) {
-					modifiersList.add("+"+getOrificeArousalPerTurnPartner(target, penetrator, orifice)+" (<b style='color:"+penetrator.getFemininity().getColour().toWebHexString()+";'>"+penetratorName+"</b> - [style.boldSex(Sex)])");
+					modifiersList.add("+"+getOrificeArousalPerTurnPartner(target, penetrator, orifice)+" (<b style='color:"+penetrator.getFemininity().getColour().toWebHexString()+";'>"+penetratorName+"</b> - [style.boldSex(Секс)])");
 					
 					if(Main.sex.getAreasCurrentlyStretching(target).contains(orifice)) {
 						modifiersList.add((orifice.getArousalChangePenetratingStretching()>0?"+":"")
-								+orifice.getArousalChangePenetratingStretching()+" (<b style='color:"+penetrator.getFemininity().getColour().toWebHexString()+";'>"+penetratorName+"</b> - [style.boldGood(Tight)])");
+								+orifice.getArousalChangePenetratingStretching()+" (<b style='color:"+penetrator.getFemininity().getColour().toWebHexString()+";'>"+penetratorName+"</b> - [style.boldGood(Тесный)])");
 					}
 					if(Main.sex.getAreasTooLoose(target).contains(orifice)) {
 						modifiersList.add((orifice.getArousalChangePenetratingTooLoose()>0?"+":"")
-								+orifice.getArousalChangePenetratingTooLoose()+" (<b style='color:"+penetrator.getFemininity().getColour().toWebHexString()+";'>"+penetratorName+"</b> - [style.boldBad(Too loose)])");
+								+orifice.getArousalChangePenetratingTooLoose()+" (<b style='color:"+penetrator.getFemininity().getColour().toWebHexString()+";'>"+penetratorName+"</b> - [style.boldBad(Слишком свободно)])");
 					}
 					if(!Main.sex.hasLubricationTypeFromAnyone(target, orifice)) {
 						modifiersList.add((orifice.getArousalChangePenetratingDry()>0?"+":"")
-								+orifice.getArousalChangePenetratingDry()+" (<b style='color:"+penetrator.getFemininity().getColour().toWebHexString()+";'>"+penetratorName+"</b> - [style.boldBad(Dry)])");
+								+orifice.getArousalChangePenetratingDry()+" (<b style='color:"+penetrator.getFemininity().getColour().toWebHexString()+";'>"+penetratorName+"</b> - [style.boldBad(Сухой)])");
 					}
 				}
 			}
@@ -890,8 +890,7 @@ public abstract class AbstractStatusEffect {
 		StringBuilder sb = new StringBuilder();
 		sb.append(UtilText.parse(target,
 //				"<p style='text-align:center; margin:0; padding:0;'>"
-					"<b style='color:"+target.getFemininity().getColour().toWebHexString()+";'>[npc.NamePos]</b> [style.boldSex("+Util.capitaliseSentence(orifice.getName(target, true))+")]:"
-					+ "<br/>Capacity: "+Units.size(Units.round(orifice.getCapacity(target, true), 1))
+					"<b style='color:"+target.getFemininity().getColour().toWebHexString()+";'>[npc.NamePos]</b> [style.boldSex("+Util.capitaliseSentence(orifice.getName(target, true))+")]:<br/>Вместимость: "+Units.size(Units.round(orifice.getCapacity(target, true), 1))
 					+ (Main.game.isPenetrationLimitationsEnabled()
 						?"<br/>Depth Comfortable / Uncomfortable: "+Units.size(Units.round(orifice.getMaximumPenetrationDepthComfortable(target), 1))+" / "+Units.size(Units.round(orifice.getMaximumPenetrationDepthUncomfortable(target), 1))
 						:"")
@@ -908,8 +907,7 @@ public abstract class AbstractStatusEffect {
 				boolean knotting = Objects.equals(Main.sex.getCharacterKnotting(character), target) && penetration==SexAreaPenetration.PENIS;
 				sb.append(UtilText.parse(character,
 //						"<p style='text-align:center; margin:0; padding:0;'>"//TODO toy length/diameter
-							"<b style='color:"+character.getFemininity().getColour().toWebHexString()+";'>[npc.NamePos]</b> [style.boldSex("+Util.capitaliseSentence(penetration.getName(character, true))+")]:"
-							+ "<br/>Diameter"+(knotting?"[style.boldSex(*2 from swollen knot)]":"")+": "+Units.size(Units.round(penetration.getDiameter(character, (penetration.getLength(character, true))-length)*(knotting?2:1), 1))
+							"<b style='color:"+character.getFemininity().getColour().toWebHexString()+";'>[npc.NamePos]</b> [style.boldSex("+Util.capitaliseSentence(penetration.getName(character, true))+")]:<br/>Диаметр"+(knotting?"[style.boldSex(*2 от раздутого узла)]":"")+": "+Units.size(Units.round(penetration.getDiameter(character, (penetration.getLength(character, true))-length)*(knotting?2:1), 1))
 							+ (Main.game.isPenetrationLimitationsEnabled()
 									?"<br/>Inserted / Total length: "+Units.size(length)+" / "+Units.size(penetration.getLength(character, true))
 									:"")
@@ -1252,7 +1250,7 @@ public abstract class AbstractStatusEffect {
 			names.add("pussy");
 		}
 		if(!owner.hasPenis() && !owner.hasVagina() && owner.isCoverableAreaVisible(CoverableArea.VAGINA)) {
-			names.add("genderless mound");
+			names.add("бесполое возвышение");
 		}
 		
 		return Util.stringsToStringChoice(names, false);
@@ -1287,30 +1285,30 @@ public abstract class AbstractStatusEffect {
 		int marginLeft = (50-size)/2;
 
 		if(breastsExposed) {
-			SVGImageSB.append("<div style='width:"+size+"%;height:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaBreasts()+"</div>");
+			SVGImageSB.append("<div style='width:"+size+"%;высота:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaBreasts()+"</div>");
 			marginTop+=size;
 		} else if (nipplesExposed) {
-			SVGImageSB.append("<div style='width:"+size+"%;height:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaBreastsFlat()+"</div>");
+			SVGImageSB.append("<div style='width:"+size+"%;высота:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaBreastsFlat()+"</div>");
 			marginTop+=size;
 		}
 		if(crotchBoobsExposed) {
-			SVGImageSB.append("<div style='width:"+size+"%;height:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaBreastsCrotch()+"</div>");
+			SVGImageSB.append("<div style='width:"+size+"%;высота:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaBreastsCrotch()+"</div>");
 			marginTop+=size;
 		}
 		if(anusExposed) {
-			SVGImageSB.append("<div style='width:"+size+"%;height:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaAnus()+"</div>");
+			SVGImageSB.append("<div style='width:"+size+"%;высота:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaAnus()+"</div>");
 			marginTop+=size;
 		}
 		if(moundExposed) {
-			SVGImageSB.append("<div style='width:"+size+"%;height:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaMound()+"</div>");
+			SVGImageSB.append("<div style='width:"+size+"%;высота:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaMound()+"</div>");
 			marginTop+=size;
 		}
 		if(penisExposed) {
-			SVGImageSB.append("<div style='width:"+size+"%;height:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getPenetrationTypePenis()+"</div>");
+			SVGImageSB.append("<div style='width:"+size+"%;высота:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getPenetrationTypePenis()+"</div>");
 			marginTop+=size;
 		}
 		if(vaginaExposed) {
-			SVGImageSB.append("<div style='width:"+size+"%;height:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaVagina()+"</div>");
+			SVGImageSB.append("<div style='width:"+size+"%;высота:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaVagina()+"</div>");
 			marginTop+=size;
 		}
 		
@@ -1337,31 +1335,31 @@ public abstract class AbstractStatusEffect {
 		int marginLeft = (50-size)/2;
 
 		if(vaginaRecovering) {
-			SVGImageSB.append("<div style='width:"+size+"%;height:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaVagina()+"</div>");
+			SVGImageSB.append("<div style='width:"+size+"%;высота:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaVagina()+"</div>");
 			marginTop+=size;
 		}
 		if(anusRecovering) {
-			SVGImageSB.append("<div style='width:"+size+"%;height:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaAnus()+"</div>");
+			SVGImageSB.append("<div style='width:"+size+"%;высота:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaAnus()+"</div>");
 			marginTop+=size;
 		}
 		if(throatRecovering) {
-			SVGImageSB.append("<div style='width:"+size+"%;height:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaMouth()+"</div>");
+			SVGImageSB.append("<div style='width:"+size+"%;высота:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaMouth()+"</div>");
 			marginTop+=size;
 		}
 		if(nipplesRecovering) {
-			SVGImageSB.append("<div style='width:"+size+"%;height:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaNipple()+"</div>");
+			SVGImageSB.append("<div style='width:"+size+"%;высота:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaNipple()+"</div>");
 			marginTop+=size;
 		}
 		if(nipplesCrotchRecovering) {
-			SVGImageSB.append("<div style='width:"+size+"%;height:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaNippleCrotch()+"</div>");
+			SVGImageSB.append("<div style='width:"+size+"%;высота:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaNippleCrotch()+"</div>");
 			marginTop+=size;
 		}
 		if(penileUrethraRecovering) {
-			SVGImageSB.append("<div style='width:"+size+"%;height:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaUrethraPenis()+"</div>");
+			SVGImageSB.append("<div style='width:"+size+"%;высота:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaUrethraPenis()+"</div>");
 			marginTop+=size;
 		}
 		if(vaginalUrethraRecovering) {
-			SVGImageSB.append("<div style='width:"+size+"%;height:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaUrethraVagina()+"</div>");
+			SVGImageSB.append("<div style='width:"+size+"%;высота:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaUrethraVagina()+"</div>");
 			marginTop+=size;
 		}
 		
@@ -1376,15 +1374,15 @@ public abstract class AbstractStatusEffect {
 		
 		int topMargin = 0;
 		if(stretch) {
-			SVGImageSB.append("<div style='width:"+iconSize+"%;height:"+iconSize+"%;position:absolute;right:"+iconRight+";top:"+(tooDeep||stretchRecoveryPrevented?"0":"25%")+";'>"+SVGImages.SVG_IMAGE_PROVIDER.getCombinationStretching()+"</div>");
+			SVGImageSB.append("<div style='width:"+iconSize+"%;высота:"+iconSize+"%;position:absolute;right:"+iconRight+";top:"+(tooDeep||stretchRecoveryPrevented?"0":"25%")+";'>"+SVGImages.SVG_IMAGE_PROVIDER.getCombinationStretching()+"</div>");
 			topMargin+=iconSize;
 		}
 		if(stretchRecoveryPrevented) {
-			SVGImageSB.append("<div style='width:"+iconSize+"%;height:"+iconSize+"%;position:absolute;right:"+iconRight+";top:"+(stretch||tooDeep?topMargin+"%":"25%")+";'>"+SVGImages.SVG_IMAGE_PROVIDER.getCombinationStretchRecoveryPrevented()+"</div>");
+			SVGImageSB.append("<div style='width:"+iconSize+"%;высота:"+iconSize+"%;position:absolute;right:"+iconRight+";top:"+(stretch||tooDeep?topMargin+"%":"25%")+";'>"+SVGImages.SVG_IMAGE_PROVIDER.getCombinationStretchRecoveryPrevented()+"</div>");
 			topMargin+=iconSize;
 		}
 		if(tooDeep) {
-			SVGImageSB.append("<div style='width:"+iconSize+"%;height:"+iconSize+"%;position:absolute;right:"+iconRight+";top:"+(stretch||stretchRecoveryPrevented?topMargin+"%":"25%")+";'>"+SVGImages.SVG_IMAGE_PROVIDER.getCombinationDepthMaximum()+"</div>");
+			SVGImageSB.append("<div style='width:"+iconSize+"%;высота:"+iconSize+"%;position:absolute;right:"+iconRight+";top:"+(stretch||stretchRecoveryPrevented?topMargin+"%":"25%")+";'>"+SVGImages.SVG_IMAGE_PROVIDER.getCombinationDepthMaximum()+"</div>");
 		}
 		
 		int size = Math.min(50, (100/(orifices.size()+1)));
@@ -1392,19 +1390,19 @@ public abstract class AbstractStatusEffect {
 		int marginLeft = (50-size)/2;
 
 		if(orifices.contains(SexAreaOrifice.VAGINA)) {
-			SVGImageSB.append("<div style='width:"+size+"%;height:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaVagina()+"</div>");
+			SVGImageSB.append("<div style='width:"+size+"%;высота:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaVagina()+"</div>");
 			marginTop+=size;
 		}
 		if(orifices.contains(SexAreaOrifice.ANUS)) {
-			SVGImageSB.append("<div style='width:"+size+"%;height:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaAnus()+"</div>");
+			SVGImageSB.append("<div style='width:"+size+"%;высота:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaAnus()+"</div>");
 			marginTop+=size;
 		}
 		if(orifices.contains(SexAreaOrifice.NIPPLE)) {
-			SVGImageSB.append("<div style='width:"+size+"%;height:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaNipple()+"</div>");
+			SVGImageSB.append("<div style='width:"+size+"%;высота:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaNipple()+"</div>");
 			marginTop+=size;
 		}
 		if(orifices.contains(SexAreaOrifice.MOUTH)) {
-			SVGImageSB.append("<div style='width:"+size+"%;height:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaMouth()+"</div>");
+			SVGImageSB.append("<div style='width:"+size+"%;высота:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaMouth()+"</div>");
 			marginTop+=size;
 		}
 		

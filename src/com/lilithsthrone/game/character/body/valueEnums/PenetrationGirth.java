@@ -16,11 +16,11 @@ public enum PenetrationGirth {
 	
 	TWO_NARROW(2, -0.2f, "narrow", PresetColour.GENERIC_SIZE_THREE),
 	
-	THREE_AVERAGE(3, 0, "averagely-girthed", PresetColour.GENERIC_SIZE_FOUR),
+	THREE_AVERAGE(3, 0, "средней толщины", PresetColour.GENERIC_SIZE_FOUR),
 	
-	FOUR_GIRTHY(4, 0.2f, "girthy", PresetColour.GENERIC_SIZE_FIVE),
+	FOUR_GIRTHY(4, 0.2f, "толстый", PresetColour.GENERIC_SIZE_FIVE),
 	
-	FIVE_THICK(5, 0.4f, "thick", PresetColour.GENERIC_SIZE_SIX),
+	FIVE_THICK(5, 0.4f, "толстый", PresetColour.GENERIC_SIZE_SIX),
 	
 	SIX_CHUBBY(6, 0.6f, "chubby", PresetColour.GENERIC_SIZE_SEVEN),
 	

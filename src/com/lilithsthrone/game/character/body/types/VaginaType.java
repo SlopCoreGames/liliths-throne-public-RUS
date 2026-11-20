@@ -30,10 +30,8 @@ public class VaginaType {
 			FluidType.GIRL_CUM_HUMAN,
 			Race.NONE,
 			false,
-			"[npc.She] moans and squirms about as [npc.she] [npc.verb(feel)] [npc.her] pussy suddenly tighten and squeeze shut, and with a desperate cry, a strange pressure washes through [npc.her] lower abdomen."
-				+ " Thankfully, the feeling fades almost as quickly as it came, and when the discomfort subsides, [npc.she] [npc.verb(gasp)] as [npc.she] suddenly [npc.verb(realise)] that [npc.her] vagina [npc.has] totally vanished!"
-				+ "<br/>[npc.Name] [npc.has] [style.boldSex(lost [npc.her] vagina)].",
-			"no pussy.", // Shouldn't need a description of no vagina.
+			"[npc.She] стонет и ерзает, когда [npc.she] [npc.verb(feel)] [npc.her] киска внезапно сжимается и плотно смыкается, и с отчаянным криком странное давление проносится сквозь [npc.her] низ живота. К счастью, это ощущение исчезает почти так же быстро, как и появилось, и когда дискомфорт утихает, [npc.she] [npc.verb(gasp)], осознавая, что [npc.she] внезапно [npc.verb(realise)], будто [npc.her] вагина [npc.has] полностью исчезла!<br/>[npc.Name] [npc.has] [style.boldSex(потерянная [npc.her] вагина)].",
+			"никакой киски.", // Shouldn't need a description of no vagina.
 			null) {
 		@Override
 		public String applyAdditionalTransformationEffects(GameCharacter owner, boolean applicationAfterChangeApplied) {
@@ -43,28 +41,10 @@ public class VaginaType {
 				if(owner.isPlayer() && owner.hasFetish(Fetish.FETISH_PURE_VIRGIN)) {
 					if(!owner.isVaginaVirgin()) {
 						return UtilText.parse(owner,
-								"<p style='text-align:center;'>"
-									+ "[style.boldGood(Unbroken Virgin)]"
-									+ "<br/><i>"
-										+ "As the reality of losing [npc.her] worthless cunt sinks in, [npc.name] [npc.verb(start)] to think of [npc.herself] as something more than a dirty slut."
-										+ " After all, if [npc.she] [npc.do]n't have a pussy, it's technically not possible for [npc.herHim] to have lost [npc.her] virginity!"
-										+ " Letting out a deep sigh, [npc.she] [npc.verb(manage)] to convince [npc.herself] that [npc.she] no longer [npc.has] to worry about being a broken virgin."
-									+ "<br/>"
-										+ "Despite being able to finally see [npc.herself] as a dignified individual once again, the fact that [npc.sheIs] lacking the familiar feeling of having a pussy is making [npc.her] restless."
-										+ " Perhaps if [npc.she] [npc.was] able to grow a new pussy, [npc.she]'d gain an unbroken hymen, thereby making [npc.herHim] a pure 'virgin' once again..."
-									+ "</i><br/>"
-									+ "[npc.NameIsFull] [style.boldGood(no longer a broken virgin)]!"
-								+ "</p>");
+								"<p style='text-align:center;'>[style.boldGood(Непорочная дева)]<br/><i>Когда [npc.her] осознает реальность потери своей никчемной щели, [npc.name] [npc.verb(start)] перестает воспринимать [npc.herself] как нечто большее, чем просто грязную шлюху. В конце концов, если у [npc.she] [npc.do] нет киски, то технически [npc.herHim] не может была потерять [npc.her] девственность! Тяжело вздохнув, [npc.she] [npc.verb(manage)] пытается убедить [npc.herself], что [npc.she] больше не [npc.has] беспокоиться о том, что она — «испорченная» девственница.<br/>Несмотря на то, что она наконец-то может снова видеть в [npc.herself] достойную личность, тот факт, что [npc.sheIs] лишена привычного ощущения наличия киски, заставляет [npc.her] нервничать. Возможно, если бы [npc.she] [npc.was] удалось отрастить новую киску, [npc.she] снова обрела бы нетронутую плеву, и тем самым [npc.herHim] вновь стала бы чистой «девственницей»...</i><br/>[npc.NameIsFull] [style.boldGood(больше не испорченная девственница)]!</p>");
 					} else {
 						return UtilText.parse(owner,
-								"<p style='text-align:center;'>"
-									+ "[style.boldBad(Pure Virgin?)]"
-									+ "<br/><i>"
-									+ "As the reality of losing [npc.her] vagina sinks in, [npc.name] [npc.verb(start)] to feel a rising panic in the back of [npc.her] mind."
-									+ " After all, if [npc.she] [npc.do]n't have a pussy, [npc.she] can't be considered a pure virgin!"
-									+ "</i><br/>"
-									+ "Until [npc.name] can [npc.verb(regain)] [npc.her] lost vagina, [npc.she] will [style.boldBad(no longer be considered a pure virgin)]!"
-								+ "</p>");
+								"<p style='text-align:center;'>[style.boldBad(Чистая дева?)]<br/><i>Когда осознание потери [npc.her] влагалища проникает в сознание, [npc.name] [npc.verb(start)] ощущать нарастающую панику в глубине [npc.her] мыслей. В конце концов, если у [npc.she] [npc.do]нет киски, то [npc.she] нельзя считать чистой девой!</i><br/>Пока [npc.name] не сможет [npc.verb(regain)] [npc.her] потерянное влагалище, [npc.she] будет [style.boldBad(больше не считаться чистой девой)]!</p>");
 					}
 				}
 			}
@@ -78,9 +58,9 @@ public class VaginaType {
 			false,
 			Util.newArrayListOfValues(""),
 			Util.newArrayListOfValues(""),
-			Util.newArrayListOfValues("toy", "artificial"),
-			"You have somehow transformed your vagina into an onahole, which is a bug. (Please let Innoxia know!)", // Onaholes are not a transformable option
-			"[npc.she] [npc.has] an onahole inserted into [npc.her] vagina, which is made out of [npc.vaginaFullDescription(true)].",
+			Util.newArrayListOfValues("игрушка", "искусственный"),
+			"Вы каким-то образом превратили свою киску в онахоле — это баг. (Пожалуйста, сообщите об этом Innoxia!)", // Onaholes are not a transformable option
+			"[npc.she] [npc.has] онахоле, вставленный в [npc.her] киску, которая представляет собой [npc.vaginaFullDescription(true)].",
 			null) {
 	};
 
@@ -91,11 +71,8 @@ public class VaginaType {
 			Util.newArrayListOfValues(""),
 			Util.newArrayListOfValues(""),
 			Util.newArrayListOfValues(""),
-			"[npc.She] [npc.verb(let)] out a squeal of excitement as a wave of pleasure runs up through [npc.her] groin, which increases in intensity as [npc.she] [npc.verb(feel)] [npc.her] slit uncontrollably shifting and contracting."
-				+ " Within moments, the feeling starts to fade away, and with a surprised gasp, [npc.she] [npc.verb(discover)] that [npc.her] pussy [npc.has] shaped itself into a regular human vagina."
-				+ " A warm, tingling feeling spreads up through [npc.her] lower abdomen, and as the transformation comes to an end, [npc.she] [npc.verb(realise)] that [npc.her] internal reproductive organs have also transformed into those of a human."
-				+ "<br/>[npc.Name] now [npc.has] a [style.boldHuman(human vagina)], with [npc.pussyColourPrimary(true)] labia and [npc.pussyColourSecondary(true)] internal walls.",
-			"[npc.she] [npc.has] #IF(npc.isPiercedVagina())a pierced,#ELSEa#ENDIF human pussy, with [npc.labiaSize], [npc.pussyPrimaryColour(true)] labia and [npc.pussySecondaryColour(true)] inner-walls.",
+			"[npc.She] [npc.verb(let)] от восторга, когда волна удовольствия пробегает по [npc.her] паху, усиливаясь, пока [npc.she] [npc.verb(feel)] [npc.her] щель бесконтрольно сжимается и пульсирует. Спустя мгновение ощущение начинает угасать, и с удивленным вздохом [npc.she] [npc.verb(discover)], что [npc.her] киска [npc.has] приняла форму обычной человеческой вагины. Теплое, покалывающее чувство разливается по [npc.her] нижней части живота, и по завершении трансформации [npc.she] [npc.verb(realise)], что [npc.her] внутренние репродуктивные органы также трансформировались в человеческие.<br/>[npc.Name] теперь [npc.has] [style.boldHuman(человеческая вагина)] с [npc.pussyColourPrimary(true)] половыми губами и [npc.pussyColourSecondary(true)] внутренними стенками.",
+			"[npc.she] [npc.has] #IF(npc.isPiercedVagina())проколотая,#ELSEобычная#ENDIF человеческая киска с [npc.labiaSize], [npc.pussyPrimaryColour(true)] половыми губами и [npc.pussySecondaryColour(true)] внутренними стенками.",
 			null) {
 	};
 
@@ -103,14 +80,11 @@ public class VaginaType {
 			FluidType.GIRL_CUM_ANGEL,
 			Race.ANGEL,
 			false,
-			Util.newArrayListOfValues("angel-"),
-			Util.newArrayListOfValues("angel-"),
-			Util.newArrayListOfValues("irresistible", "perfect"),
-			"[npc.She] [npc.verb(let)] out a squeal of excitement as a wave of pleasure runs up through [npc.her] groin, which increases in intensity as [npc.she] [npc.verb(feel)] [npc.her] slit uncontrollably shifting and contracting."
-				+ " Within moments, the feeling starts to fade away, and with a surprised gasp, [npc.she] [npc.verb(discover)] that [npc.her] pussy [npc.has] shaped itself into an absolutely perfect-looking angelic vagina."
-				+ " A warm, tingling feeling spreads up through [npc.her] lower abdomen, and as the transformation comes to an end, [npc.she] [npc.verb(realise)] that [npc.her] internal reproductive organs have also transformed into those of an angel."
-				+ "<br/>[npc.Name] now [npc.has] an [style.boldAngel(angel vagina)], with [npc.pussyColourPrimary(true)] labia and [npc.pussyColourSecondary(true)] internal walls.",
-			"[npc.she] [npc.has] #IF(npc.isPiercedVagina())a pierced,#ELSEan#ENDIF angelic pussy, with [npc.labiaSize], [npc.pussyPrimaryColour(true)] labia and [npc.pussySecondaryColour(true)] inner-walls.",
+			Util.newArrayListOfValues("ангельский-"),
+			Util.newArrayListOfValues("ангельский-"),
+			Util.newArrayListOfValues("неотразимый", "идеальный"),
+			"[npc.She] [npc.verb(let)] с визгом восторга, когда волна удовольствия проходит сквозь пах [npc.her], интенсивность которой нарастает, пока [npc.she] [npc.verb(feel)] [npc.her] щель, которая неконтролируемо смещается и сокращается. Спустя мгновение ощущение начинает угасать, и с удивленным вздохом [npc.she] [npc.verb(discover)], что [npc.her] киска [npc.has] приняла форму абсолютно идеальной ангельской вагины. Теплое, покалывающее чувство разливается по нижней части живота [npc.her], и когда трансформация завершается, [npc.she] [npc.verb(realise)], что [npc.her] внутренние репродуктивные органы также превратились в ангельские.<br/>[npc.Name] теперь [npc.has] [style.boldAngel(ангельская вагина)], с [npc.pussyColourPrimary(true)] половыми губами и [npc.pussyColourSecondary(true)] внутренними стенками.",
+			"[npc.she] [npc.has] #IF(npc.isPiercedVagina())проколотая,#ELSEангельская#ENDIF киска с [npc.labiaSize], [npc.pussyPrimaryColour(true)] половыми губами и [npc.pussySecondaryColour(true)] внутренними стенками.",
 			Util.newArrayListOfValues()) {
 	};
 
@@ -118,29 +92,11 @@ public class VaginaType {
 			FluidType.GIRL_CUM_DEMON,
 			Race.DEMON,
 			false,
-			Util.newArrayListOfValues("succubus-"),
-			Util.newArrayListOfValues("succubus-"),
-			Util.newArrayListOfValues("irresistible", "perfect"),
-			"[npc.She] [npc.verb(let)] out a squeal of excitement as a wave of pleasure runs up through [npc.her] groin, which increases in intensity as [npc.she] [npc.verb(feel)] [npc.her] slit uncontrollably shifting and contracting."
-					+ " A strange, bubbling sensation starts running down deep into [npc.her] cunt,"
-						+ " and [npc.she] [npc.verb(let)] out a lewd moan as [npc.she] [npc.verb(feel)] a new set of muscles forming all along the inner-walls of [npc.her] pussy."
-					+ " With an experimental squeeze, [npc.she] quickly [npc.verb(discover)] that [npc.she] [npc.has] an incredible amount of control over [npc.her] pussy's new muscles."
-					+ " With one last shiver of pleasure, [npc.her] pussy reshapes its exterior into an absolutely perfect-looking vagina."
-				+ "</p>"
-				+ "<p>"
-					+ "Just as [npc.she] [npc.verb(start)] think that the transformation [npc.has] come to an end, [npc.her] pussy's new muscles involuntarily clench down,"
-						+ " and a desperate squeal escapes from between [npc.her] [npc.lips+] as a warm, tingling feeling spreads up through [npc.her] lower abdomen."
-					+ " Images of fat demonic cocks slamming deep into [npc.her] new cunt flash before [npc.her] eyes,"
-						+ " and [npc.her] squeal turns into a satisfied moan as [npc.she] [npc.verb(imagine)] them pumping their hot, virile seed deep into [npc.her] demonic womb."
-					+ " Just as quickly as they came, the images fade from [npc.her] mind, and as one last wave of tingling pleasure washes through [npc.her] body,"
-						+ " [npc.she] [npc.verb(feel)] [npc.her] female reproductive organs finishing their transformation."
-					+ "<br/>"
-					+ "#IF(npc.isShortStature())"
-						+ "[npc.Name] now [npc.has] an [style.boldImp(impish vagina)], with [npc.pussyColourPrimary(true)] labia and [npc.pussyColourSecondary(true)] internal walls."
-					+ "#ELSE"
-						+ "[npc.Name] now [npc.has] a [style.boldDemon(demonic vagina)], with [npc.pussyColourPrimary(true)] labia and [npc.pussyColourSecondary(true)] internal walls."
-					+"#ENDIF",
-			"[npc.she] [npc.has] #IF(npc.isPiercedVagina())a pierced,#ELSEa#ENDIF demonic pussy, with [npc.labiaSize], [npc.pussyPrimaryColour(true)] labia and [npc.pussySecondaryColour(true)] inner-walls.",
+			Util.newArrayListOfValues("суккуб-"),
+			Util.newArrayListOfValues("суккуб-"),
+			Util.newArrayListOfValues("неотразимый", "идеальный"),
+			"[npc.She] [npc.verb(let)] издает радостный визг, когда волна удовольствия пробегает по паху [npc.her], интенсивность которой нарастает, пока [npc.she] [npc.verb(feel)] [npc.her] щель беспорядочно содрогается и сжимается. Странное, бурлящее ощущение начинает спускаться глубоко в [npc.her] киску, и [npc.she] [npc.verb(let)] издает похотливый стон, когда [npc.she] [npc.verb(feel)] новый набор мышц формируется вдоль внутренних стенок [npc.her] киски. С экспериментальным сжатием [npc.she] быстро [npc.verb(discover)], что [npc.she] [npc.has] обладает невероятным контролем над новыми мышцами [npc.her] киски. С последней дрожью наслаждения [npc.her] киска меняет свою внешнюю форму, превращаясь в абсолютно идеальную вагину.</p><p>Как раз в тот момент, когда [npc.she] [npc.verb(start)] кажется, что трансформация [npc.has] подошла к концу, новые мышцы [npc.her] киски непроизвольно сжимаются, и отчаянный визг вырывается из глубин [npc.her] [npc.lips+], когда теплое, покалывающее чувство разливается по [npc.her] нижней части живота. Перед [npc.her] глазами проносятся образы толстых демонических членов, глубоко вбивающихся в [npc.her] новую киску, и [npc.her] визг превращается в удовлетворенный стон, когда [npc.she] [npc.verb(imagine)] их горячее, мужское семя, вливающееся глубоко в [npc.her] демоническую утробу. Так же быстро, как и появились, образы исчезают из [npc.her] сознания, и когда последняя волна покалывающего удовольствия омывает [npc.her] тело, [npc.she] [npc.verb(feel)] [npc.her] женские репродуктивные органы завершают свою трансформацию.<br/>#IF(npc.isShortStature())[npc.Name] теперь [npc.has] [style.boldImp(impish vagina)], с [npc.pussyColourPrimary(true)] половыми губами и [npc.pussyColourSecondary(true)] внутренними стенками.#ELSE[npc.Name] теперь [npc.has] [style.boldDemon(demonic vagina)], с [npc.pussyColourPrimary(true)] половыми губами и [npc.pussyColourSecondary(true)] внутренними стенками.#ENDIF",
+			"[npc.she] [npc.has] #IF(npc.isPiercedVagina())проколотая,#ELSE#ENDIF демоническая киска с [npc.labiaSize], [npc.pussyPrimaryColour(true)] половыми губами и [npc.pussySecondaryColour(true)] внутренними стенками.",
 			Util.newArrayListOfValues(
 				OrificeModifier.MUSCLE_CONTROL)) {
 	};
@@ -184,21 +140,11 @@ public class VaginaType {
 			FluidType.GIRL_CUM_DOG_MORPH,
 			Race.DOG_MORPH,
 			false,
-			Util.newArrayListOfValues("dog-", "bitch-"),
-			Util.newArrayListOfValues("dog-", "bitch-"),
-			Util.newArrayListOfValues("hot"),
-			"[npc.She] [npc.verb(let)] out a squeal of excitement as a wave of pleasure runs up through [npc.her] groin, which increases in intensity as [npc.she] [npc.verb(feel)] [npc.her] slit uncontrollably shifting and contracting."
-					+ " Within moments, the feeling fades away, and [npc.she] [npc.verb(discover)] that [npc.her] pussy [npc.has] reformed and puffed up into a distinctly dog-like form."
-				+ "</p>"
-				+ "<p>"
-					+ "Just as [npc.she] [npc.verb(start)] think that the transformation [npc.has] come to an end, [npc.her] pussy involuntarily clenches down,"
-						+ " and a desperate squeal escapes from between [npc.her] [npc.lips+] as a warm, tingling feeling spreads up through [npc.her] lower abdomen."
-					+ " Images of red, knotted dog-cocks slamming deep into [npc.her] new pussy flash before [npc.her] eyes,"
-						+ " and [npc.her] squeal turns into a satisfied moan as [npc.she] [npc.verb(imagine)] them pumping their potent seed deep into [npc.her] canine womb."
-					+ " Just as quickly as they came, the images fade from [npc.her] mind, and as one last wave of tingling pleasure washes through [npc.her] body,"
-						+ " [npc.she] [npc.verb(feel)] [npc.her] female reproductive organs finishing their transformation."
-					+ "<br/>[npc.Name] now [npc.has] a [style.boldDogMorph(dog vagina)], with [npc.pussyColourPrimary(true)] labia and [npc.pussyColourSecondary(true)] internal walls.",
-			"[npc.she] [npc.has] #IF(npc.isPiercedVagina())a pierced,#ELSEa#ENDIF dog-pussy, with [npc.labiaSize], [npc.pussyPrimaryColour(true)] labia and [npc.pussySecondaryColour(true)] inner-walls.",
+			Util.newArrayListOfValues("собачий-", "сучья-"),
+			Util.newArrayListOfValues("собачий-", "сучья-"),
+			Util.newArrayListOfValues("горячая"),
+			"[npc.She] [npc.verb(let)] издает восторженный визг, когда волна удовольствия пробегает сквозь пах [npc.her], интенсивность которой нарастает, пока [npc.she] [npc.verb(feel)] [npc.her] щель беспорядочно дергается и сокращается. Спустя мгновение ощущение угасает, и [npc.she] [npc.verb(discover)] то, что [npc.her] киска [npc.has], принимает отчетливую собачью форму, раздувшись и перестроившись.</p><p>Как раз в тот момент, когда [npc.she] [npc.verb(start)] думает, что трансформация [npc.has] подошла к концу, [npc.her] киска непроизвольно сжимается, и отчаянный визг вырывается из-за [npc.her] [npc.lips+], когда теплое, покалывающее чувство разливается по [npc.her] нижней части живота. Перед [npc.her] глазами проносятся образы красных, узловатых собачьих членов, глубоко вбивающихся в [npc.her] новую киску, и [npc.her] визг переходит в удовлетворенный стон, когда [npc.she] [npc.verb(imagine)] их, впрыскивающих свое мощное семя глубоко в [npc.her] собачью утробу. Так же быстро, как и появились, образы исчезают из [npc.her] мыслей, и когда последняя волна покалывающего удовольствия омывает [npc.her] тело, [npc.she] [npc.verb(feel)] [npc.her] женские репродуктивные органы завершают свою трансформацию.<br/>[npc.Name] теперь [npc.has] [style.boldDogMorph(собачья киска)] с [npc.pussyColourPrimary(true)] половыми губами и [npc.pussyColourSecondary(true)] внутренними стенками.",
+			"[npc.she] [npc.has] #IF(npc.isPiercedVagina())проколотая,#ELSE#ENDIF псина, с [npc.labiaSize], [npc.pussyPrimaryColour(true)] половыми губами и [npc.pussySecondaryColour(true)] внутренними стенками.",
 			Util.newArrayListOfValues(
 				OrificeModifier.PUFFY)) {
 	};
@@ -207,21 +153,11 @@ public class VaginaType {
 			FluidType.GIRL_CUM_WOLF_MORPH,
 			Race.WOLF_MORPH,
 			false,
-			Util.newArrayListOfValues("wolf-"),
-			Util.newArrayListOfValues("wolf-"),
-			Util.newArrayListOfValues("hot"),
-			"[npc.She] [npc.verb(let)] out a squeal of excitement as a wave of pleasure runs up through [npc.her] groin, which increases in intensity as [npc.she] [npc.verb(feel)] [npc.her] slit uncontrollably shifting and contracting."
-					+ " Within moments, the feeling fades away, and [npc.she] [npc.verb(discover)] that [npc.her] pussy [npc.has] reformed and puffed up into a distinctly wolf-like form."
-				+ "</p>"
-				+ "<p>"
-					+ "Just as [npc.she] [npc.verb(start)] think that the transformation [npc.has] come to an end, [npc.her] pussy involuntarily clenches down,"
-						+ " and a desperate squeal escapes from between [npc.her] [npc.lips+] as a warm, tingling feeling spreads up through [npc.her] lower abdomen."
-					+ " Images of red, knotted wolf-cocks slamming deep into [npc.her] new pussy flash before [npc.her] eyes,"
-						+ " and [npc.her] squeal turns into a satisfied moan as [npc.she] [npc.verb(imagine)] them pumping their potent seed deep into [npc.her] lupine womb."
-					+ " Just as quickly as they came, the images fade from [npc.her] mind, and as one last wave of tingling pleasure washes through [npc.her] body,"
-						+ " [npc.she] [npc.verb(feel)] [npc.her] female reproductive organs finishing their transformation."
-					+ "<br/>[npc.Name] now [npc.has] a [style.boldWolfMorph(wolf vagina)], with [npc.pussyColourPrimary(true)] labia and [npc.pussyColourSecondary(true)] internal walls.",
-			"[npc.she] [npc.has] #IF(npc.isPiercedVagina())a pierced#ELSEa#ENDIF wolf-pussy, with [npc.labiaSize], [npc.pussyPrimaryColour(true)] labia and [npc.pussySecondaryColour(true)] inner-walls.",
+			Util.newArrayListOfValues("волчья-"),
+			Util.newArrayListOfValues("волчья-"),
+			Util.newArrayListOfValues("горячая"),
+			"[npc.She] [npc.verb(let)] издает восторженный визг, когда волна удовольствия пробегает сквозь пах [npc.her], интенсивность которой нарастает, пока [npc.she] [npc.verb(feel)] щель [npc.her] беспорядочно дергается и сокращается. Спустя мгновение ощущение утихает, и [npc.she] [npc.verb(discover)] видит, что [npc.her] киска [npc.has] перестроилась и раздулась, приняв отчетливую волчью форму.</p><p>Как раз в тот момент, когда [npc.she] [npc.verb(start)] думает, что трансформация [npc.has] подошла к концу, [npc.her] киска непроизвольно сжимается, и отчаянный визг вырывается из глубин [npc.her] [npc.lips+], когда теплое, покалывающее чувство разливается по [npc.her] нижней части живота. Перед [npc.her] глазами мелькают образы красных, узловатых волчьих членов, с силой вбивающихся в [npc.her] новую киску, и [npc.her] визг переходит в удовлетворенный стон, когда [npc.she] [npc.verb(imagine)] чувствует, как они впрыскивают свое мощное семя глубоко в [npc.her] волчью утробу. Так же быстро, как и появились, образы исчезают из [npc.her] мыслей, и когда последняя волна покалывающего удовольствия омывает [npc.her] тело, [npc.she] [npc.verb(feel)] понимает, что [npc.her] женские репродуктивные органы завершили свое превращение.<br/>[npc.Name] теперь [npc.has] представляет собой [style.boldWolfMorph(волчью киску)] с [npc.pussyColourPrimary(true)] половыми губами и [npc.pussyColourSecondary(true)] внутренними стенками.",
+			"[npc.she] [npc.has] #IF(npc.isPiercedVagina())проколотая#ELSE#ENDIF волчья киска с [npc.labiaSize], [npc.pussyPrimaryColour(true)] половыми губами и [npc.pussySecondaryColour(true)] внутренними стенками.",
 			Util.newArrayListOfValues(
 				OrificeModifier.PUFFY)) {
 	};
@@ -230,21 +166,11 @@ public class VaginaType {
 			FluidType.GIRL_CUM_FOX_MORPH,
 			Race.FOX_MORPH,
 			false,
-			Util.newArrayListOfValues("fox-", "vixen-"),
-			Util.newArrayListOfValues("fox-", "vixen-"),
-			Util.newArrayListOfValues("hot"),
-			"[npc.She] [npc.verb(let)] out a squeal of excitement as a wave of pleasure runs up through [npc.her] groin, which increases in intensity as [npc.she] [npc.verb(feel)] [npc.her] slit uncontrollably shifting and contracting."
-					+ " Within moments, the feeling fades away, and [npc.she] [npc.verb(discover)] that [npc.her] pussy [npc.has] reformed and puffed up into a distinctly fox-like form."
-				+ "</p>"
-				+ "<p>"
-					+ "Just as [npc.she] [npc.verb(start)] think that the transformation [npc.has] come to an end, [npc.her] pussy involuntarily clenches down,"
-						+ " and a desperate squeal escapes from between [npc.her] [npc.lips+] as a warm, tingling feeling spreads up through [npc.her] lower abdomen."
-					+ " Images of red, knotted fox-cocks slamming deep into [npc.her] new pussy flash before [npc.her] eyes,"
-						+ " and [npc.her] squeal turns into a satisfied moan as [npc.she] [npc.verb(imagine)] them pumping their potent seed deep into [npc.her] vulpine womb."
-					+ " Just as quickly as they came, the images fade from [npc.her] mind, and as one last wave of tingling pleasure washes through [npc.her] body,"
-						+ " [npc.she] [npc.verb(feel)] [npc.her] female reproductive organs finishing their transformation."
-					+ "<br/>[npc.Name] now [npc.has] a [style.boldFoxMorph(fox vagina)], with [npc.pussyColourPrimary(true)] labia and [npc.pussyColourSecondary(true)] internal walls.",
-			"[npc.she] [npc.has] #IF(npc.isPiercedVagina())a pierced#ELSEa#ENDIF fox-pussy, with [npc.labiaSize], [npc.pussyPrimaryColour(true)] labia and [npc.pussySecondaryColour(true)] inner-walls.",
+			Util.newArrayListOfValues("лисья-", "лисичья-"),
+			Util.newArrayListOfValues("лисья-", "лисичья-"),
+			Util.newArrayListOfValues("горячая"),
+			"[npc.She] [npc.verb(let)] исторгает радостный визг, когда волна удовольствия пробегает по паху [npc.her], интенсивность которой нарастает, пока [npc.she] [npc.verb(feel)] [npc.her] щель беспорядочно дергается и сокращается. Спустя мгновение ощущение угасает, и [npc.she] [npc.verb(discover)] понимает, что [npc.her] киска [npc.has] перестроилась и раздулась, приняв отчетливую лисью форму.</p><p>Только [npc.she] [npc.verb(start)] успевает подумать, что трансформация [npc.has] подошла к концу, как [npc.her] киска непроизвольно сжимается, и отчаянный визг вырывается из-за [npc.her] [npc.lips+], когда теплое, покалывающее чувство разливается по [npc.her] нижней части живота. Перед [npc.her] глазами мелькают образы красных, узловатых лисьих пенисов, с силой вонзающихся в [npc.her] новую киску, и [npc.her] визг переходит в удовлетворенный стон, когда [npc.she] [npc.verb(imagine)] чувствует, как они вливают свое мощное семя глубоко в [npc.her] лисью утробу. Так же быстро, как и появились, образы исчезают из [npc.her] мыслей, и когда последняя волна покалывающего удовольствия омывает [npc.her] тело, [npc.she] [npc.verb(feel)] осознает, что [npc.her] женские репродуктивные органы завершили свою трансформацию.<br/>[npc.Name] теперь [npc.has] представляет собой [style.boldFoxMorph(лисью киску)] с [npc.pussyColourPrimary(true)] половыми губами и [npc.pussyColourSecondary(true)] внутренними стенками.",
+			"[npc.she] [npc.has] #IF(npc.isPiercedVagina())проколотая#ELSE#ENDIF лисья киска с [npc.labiaSize], [npc.pussyPrimaryColour(true)] половыми губами и [npc.pussySecondaryColour(true)] внутренними стенками.",
 			Util.newArrayListOfValues(
 				OrificeModifier.PUFFY)) {
 	};
@@ -253,21 +179,11 @@ public class VaginaType {
 			FluidType.GIRL_CUM_CAT_MORPH,
 			Race.CAT_MORPH,
 			false,
-			Util.newArrayListOfValues("cat-"),
-			Util.newArrayListOfValues("cat-"),
-			Util.newArrayListOfValues("hot"),
-			"[npc.She] [npc.verb(let)] out a squeal of excitement as a wave of pleasure runs up through [npc.her] groin, which increases in intensity as [npc.she] [npc.verb(feel)] [npc.her] slit uncontrollably shifting and contracting."
-					+ " Within moments, the feeling fades away, and [npc.she] [npc.verb(discover)] that [npc.her] pussy [npc.has] reformed into a distinctly cat-like form."
-				+ "</p>"
-				+ "<p>"
-					+ "Just as [npc.she] [npc.verb(start)] think that the transformation [npc.has] come to an end, [npc.her] pussy involuntarily clenches down,"
-						+ " and a desperate squeal escapes from between [npc.her] [npc.lips+] as a warm, tingling feeling spreads up through [npc.her] lower abdomen."
-					+ " Images of barbed cat-cocks slamming deep into [npc.her] new pussy flash before [npc.her] eyes,"
-						+ " and [npc.her] squeal turns into a satisfied moan as [npc.she] [npc.verb(imagine)] them pumping their potent seed deep into [npc.her] feline womb."
-					+ " Just as quickly as they came, the images fade from [npc.her] mind, and as one last wave of tingling pleasure washes through [npc.her] body,"
-						+ " [npc.she] [npc.verb(feel)] [npc.her] female reproductive organs finishing their transformation."
-					+ "<br/>[npc.Name] now [npc.has] a [style.boldCatMorph(cat vagina)], with [npc.pussyColourPrimary(true)] labia and [npc.pussyColourSecondary(true)] internal walls.",
-			"[npc.she] [npc.has] #IF(npc.isPiercedVagina())a pierced#ELSEa#ENDIF cat-pussy, with [npc.labiaSize], [npc.pussyPrimaryColour(true)] labia and [npc.pussySecondaryColour(true)] inner-walls.",
+			Util.newArrayListOfValues("кошачья-"),
+			Util.newArrayListOfValues("кошачья-"),
+			Util.newArrayListOfValues("горячая"),
+			"[npc.She] [npc.verb(let)] с визгом восторга, когда волна удовольствия пробегает сквозь пах [npc.her], интенсивность которой нарастает, пока [npc.she] [npc.verb(feel)] [npc.her] щель беспорядочно дергается и сокращается. Спустя мгновение чувство угасает, и [npc.she] [npc.verb(discover)] то, что [npc.her] киска [npc.has], принимает отчетливую кошачью форму.</p><p>Как раз когда [npc.she] [npc.verb(start)] думает, что трансформация [npc.has] подошла к концу, [npc.her] киска непроизвольно сжимается, и отчаянный визг вырывается из-за [npc.her] [npc.lips+], когда теплое, покалывающее чувство разливается по [npc.her] нижней части живота. Перед [npc.her] глазами мелькают образы зазубренных кошачьих пенисов, глубоко вбивающихся в [npc.her] новую киску, и [npc.her] визг превращается в удовлетворенный стон, когда [npc.she] [npc.verb(imagine)] их, впрыскивающих свое мощное семя глубоко в [npc.her] кошачью утробу. Так же быстро, как и появились, образы исчезают из [npc.her] сознания, и когда последняя волна покалывающего удовольствия омывает [npc.her] тело, [npc.she] [npc.verb(feel)] [npc.her] женские репродуктивные органы завершают свою трансформацию.<br/>[npc.Name] теперь [npc.has] [style.boldCatMorph(кошачья киска)] с [npc.pussyColourPrimary(true)] половыми губами и [npc.pussyColourSecondary(true)] внутренними стенками.",
+			"[npc.she] [npc.has] #IF(npc.isPiercedVagina())проколотая#ELSE#ENDIF кошачья киска с [npc.labiaSize], [npc.pussyPrimaryColour(true)] половыми губами и [npc.pussySecondaryColour(true)] внутренними стенками.",
 			null) {
 	};
 
@@ -275,21 +191,11 @@ public class VaginaType {
 			FluidType.GIRL_CUM_SQUIRREL_MORPH,
 			Race.SQUIRREL_MORPH,
 			false,
-			Util.newArrayListOfValues("squirrel-"),
-			Util.newArrayListOfValues("squirrel-"),
-			Util.newArrayListOfValues("hot"),
-			"[npc.She] [npc.verb(let)] out a squeal of excitement as a wave of pleasure runs up through [npc.her] groin, which increases in intensity as [npc.she] [npc.verb(feel)] [npc.her] slit uncontrollably shifting and contracting."
-					+ " Within moments, the feeling fades away, and [npc.she] [npc.verb(discover)] that [npc.her] pussy [npc.has] reformed into a distinctly squirrel-like form."
-				+ "</p>"
-				+ "<p>"
-					+ "Just as [npc.she] [npc.verb(start)] think that the transformation [npc.has] come to an end, [npc.her] pussy involuntarily clenches down,"
-						+ " and a desperate squeal escapes from between [npc.her] [npc.lips+] as a warm, tingling feeling spreads up through [npc.her] lower abdomen."
-					+ " Images of massive squirrel-cocks slamming deep into [npc.her] new pussy flash before [npc.her] eyes,"
-						+ " and [npc.her] squeal turns into a satisfied moan as [npc.she] [npc.verb(imagine)] them pumping their potent seed deep into [npc.her] new womb."
-					+ " Just as quickly as they came, the images fade from [npc.her] mind, and as one last wave of tingling pleasure washes through [npc.her] body,"
-						+ " [npc.she] [npc.verb(feel)] [npc.her] female reproductive organs finishing their transformation."
-					+ "<br/>[npc.Name] now [npc.has] a [style.boldSquirrelMorph(squirrel vagina)], with [npc.pussyColourPrimary(true)] labia and [npc.pussyColourSecondary(true)] internal walls.",
-			"[npc.she] [npc.has] #IF(npc.isPiercedVagina())a pierced#ELSEa#ENDIF squirrel-pussy, with [npc.labiaSize], [npc.pussyPrimaryColour(true)] labia and [npc.pussySecondaryColour(true)] inner-walls.",
+			Util.newArrayListOfValues("беличий-"),
+			Util.newArrayListOfValues("беличий-"),
+			Util.newArrayListOfValues("горячая"),
+			"[npc.She] [npc.verb(let)] издает радостный визг, когда волна удовольствия пробегает сквозь пах [npc.her], интенсивность которой нарастает, пока [npc.she] [npc.verb(feel)] [npc.her] щель беспорядочно дергается и сокращается. Спустя мгновение ощущение угасает, и [npc.she] [npc.verb(discover)] то, что [npc.her] киска [npc.has], принимает отчетливую беличью форму.</p><p>Как раз когда [npc.she] [npc.verb(start)] думает, что трансформация [npc.has] подошла к концу, [npc.her] киска непроизвольно сжимается, и отчаянный визг вырывается из-за [npc.her] [npc.lips+], когда теплое, покалывающее чувство разливается по [npc.her] нижней части живота. Перед [npc.her] глазами мелькают образы массивных беличьих членов, глубоко вбивающихся в [npc.her] новую киску, и [npc.her] визг превращается в удовлетворенный стон, когда [npc.she] [npc.verb(imagine)] их, впрыскивающих свое мощное семя глубоко в [npc.her] новую утробу. Так же быстро, как и появились, образы исчезают из [npc.her] мыслей, и когда последняя волна покалывающего удовольствия омывает [npc.her] тело, [npc.she] [npc.verb(feel)] [npc.her] женские репродуктивные органы завершают свою трансформацию.<br/>[npc.Name] теперь [npc.has] [style.boldSquirrelMorph(беличья киска)] с [npc.pussyColourPrimary(true)] половыми губами и [npc.pussyColourSecondary(true)] внутренними стенками.",
+			"[npc.she] [npc.has] #IF(npc.isPiercedVagina())проколотая#ELSE#ENDIF беличья киска с [npc.labiaSize], [npc.pussyPrimaryColour(true)] половыми губами и [npc.pussySecondaryColour(true)] внутренними стенками.",
 			null) {
 	};
 
@@ -297,21 +203,11 @@ public class VaginaType {
 			FluidType.GIRL_CUM_RAT_MORPH,
 			Race.RAT_MORPH,
 			false,
-			Util.newArrayListOfValues("rat-"),
-			Util.newArrayListOfValues("rat-"),
-			Util.newArrayListOfValues("hot"),
-			"[npc.She] [npc.verb(let)] out a squeal of excitement as a wave of pleasure runs up through [npc.her] groin, which increases in intensity as [npc.she] [npc.verb(feel)] [npc.her] slit uncontrollably shifting and contracting."
-					+ " Within moments, the feeling fades away, and [npc.she] [npc.verb(discover)] that [npc.her] pussy [npc.has] reformed into a distinctly rat-like form."
-				+ "</p>"
-				+ "<p>"
-					+ "Just as [npc.she] [npc.verb(start)] think that the transformation [npc.has] come to an end, [npc.her] pussy involuntarily clenches down,"
-						+ " and a desperate squeal escapes from between [npc.her] [npc.lips+] as a warm, tingling feeling spreads up through [npc.her] lower abdomen."
-					+ " Images of throbbing rat-cocks slamming deep into [npc.her] new pussy flash before [npc.her] eyes,"
-						+ " and [npc.her] squeal turns into a satisfied moan as [npc.she] [npc.verb(imagine)] them pumping their potent seed deep into [npc.her] rodent womb."
-					+ " Just as quickly as they came, the images fade from [npc.her] mind, and as one last wave of tingling pleasure washes through [npc.her] body,"
-						+ " [npc.she] [npc.verb(feel)] [npc.her] female reproductive organs finishing their transformation."
-					+ "<br/>[npc.Name] now [npc.has] a [style.boldRatMorph(rat vagina)], with [npc.pussyColourPrimary(true)] labia and [npc.pussyColourSecondary(true)] internal walls.",
-			"[npc.she] [npc.has] #IF(npc.isPiercedVagina())a pierced#ELSEa#ENDIF rat-pussy, with [npc.labiaSize], [npc.pussyPrimaryColour(true)] labia and [npc.pussySecondaryColour(true)] inner-walls.",
+			Util.newArrayListOfValues("крысиный-"),
+			Util.newArrayListOfValues("крысиный-"),
+			Util.newArrayListOfValues("горячая"),
+			"[npc.She] [npc.verb(let)] издает восторженный визг, когда волна удовольствия пробегает сквозь пах [npc.her], интенсивность которой нарастает, пока [npc.she] [npc.verb(feel)] [npc.her] щель беспорядочно смещается и сокращается. Спустя мгновение ощущение угасает, и [npc.she] [npc.verb(discover)] то, что [npc.her] киска [npc.has], принимает отчетливую крысиную форму.</p><p>Как раз когда [npc.she] [npc.verb(start)] думает, что трансформация [npc.has] подошла к концу, [npc.her] киска непроизвольно сжимается, и отчаянный визг вырывается из-за [npc.her] [npc.lips+], когда теплое, покалывающее чувство разливается по [npc.her] нижней части живота. Перед [npc.her] глазами мелькают образы пульсирующих крысиных пенисов, глубоко вбивающихся в [npc.her] новую киску, и [npc.her] визг превращается в удовлетворенный стон, когда [npc.she] [npc.verb(imagine)] их, впрыскивающих свое мощное семя глубоко в [npc.her] грызунью утробу. Так же быстро, как и появились, образы исчезают из [npc.her] сознания, и когда последняя волна покалывающего удовольствия омывает [npc.her] тело, [npc.she] [npc.verb(feel)] [npc.her] женские репродуктивные органы завершают свою трансформацию.<br/>[npc.Name] теперь [npc.has] [style.boldRatMorph(крысиная киска)] с [npc.pussyColourPrimary(true)] половыми губами и [npc.pussyColourSecondary(true)] внутренними стенками.",
+			"[npc.she] [npc.has] #IF(npc.isPiercedVagina())проколотая#ELSE#ENDIF крысиная киска с [npc.labiaSize], [npc.pussyPrimaryColour(true)] половыми губами и [npc.pussySecondaryColour(true)] внутренними стенками.",
 			null) {
 	};
 
@@ -319,21 +215,11 @@ public class VaginaType {
 			FluidType.GIRL_CUM_RABBIT_MORPH,
 			Race.RABBIT_MORPH,
 			false,
-			Util.newArrayListOfValues("rabbit-"),
-			Util.newArrayListOfValues("rabbit-"),
-			Util.newArrayListOfValues("hot"),
-			"[npc.She] [npc.verb(let)] out a squeal of excitement as a wave of pleasure runs up through [npc.her] groin, which increases in intensity as [npc.she] [npc.verb(feel)] [npc.her] slit uncontrollably shifting and contracting."
-					+ " Within moments, the feeling fades away, and [npc.she] [npc.verb(discover)] that [npc.her] pussy [npc.has] reformed into a distinctly rabbit-like form."
-				+ "</p>"
-				+ "<p>"
-					+ "Just as [npc.she] [npc.verb(start)] think that the transformation [npc.has] come to an end, [npc.her] pussy involuntarily clenches down,"
-						+ " and a desperate squeal escapes from between [npc.her] [npc.lips+] as a warm, tingling feeling spreads up through [npc.her] lower abdomen."
-					+ " Images of thick rabbit-cocks slamming deep into [npc.her] new pussy flash before [npc.her] eyes,"
-						+ " and [npc.her] squeal turns into a satisfied moan as [npc.she] [npc.verb(imagine)] them pumping their virile seed deep into [npc.her] new womb."
-					+ " Just as quickly as they came, the images fade from [npc.her] mind, and as one last wave of tingling pleasure washes through [npc.her] body,"
-						+ " [npc.she] [npc.verb(feel)] [npc.her] female reproductive organs finishing their transformation."
-					+ "<br/>[npc.Name] now [npc.has] a [style.boldRabbitMorph(rabbit vagina)], with [npc.pussyColourPrimary(true)] labia and [npc.pussyColourSecondary(true)] internal walls.",
-			"[npc.she] [npc.has] #IF(npc.isPiercedVagina())a pierced#ELSEa#ENDIF rabbit-pussy, with [npc.labiaSize], [npc.pussyPrimaryColour(true)] labia and [npc.pussySecondaryColour(true)] inner-walls.",
+			Util.newArrayListOfValues("кроличий-"),
+			Util.newArrayListOfValues("кроличий-"),
+			Util.newArrayListOfValues("горячая"),
+			"[npc.She] [npc.verb(let)] издает восторженный визг, когда волна удовольствия пробегает сквозь пах [npc.her], интенсивность которой нарастает, пока [npc.she] [npc.verb(feel)] щель [npc.her] беспорядочно смещается и сокращается. Спустя мгновение ощущение угасает, и [npc.she] [npc.verb(discover)] понимает, что [npc.her] киска [npc.has] приняла отчетливую заячью форму.</p><p>Как раз в тот момент, когда [npc.she] [npc.verb(start)] думает, что трансформация [npc.has] подошла к концу, [npc.her] киска непроизвольно сжимается, и отчаянный визг вырывается из-за [npc.her] [npc.lips+], когда теплое, покалывающее чувство разливается по [npc.her] нижней части живота. Перед [npc.her] глазами мелькают образы толстых кроличьих членов, глубоко вбивающихся в [npc.her] новую киску, и [npc.her] визг превращается в удовлетворенный стон, когда [npc.she] [npc.verb(imagine)] чувствует, как они впрыскивают свое мощное семя глубоко в [npc.her] новую утробу. Так же быстро, как и появились, образы исчезают из [npc.her] мыслей, и когда последняя волна покалывающего удовольствия омывает [npc.her] тело, [npc.she] [npc.verb(feel)] осознает, что [npc.her] женские репродуктивные органы завершили свою трансформацию.<br/>[npc.Name] теперь [npc.has] [style.boldRabbitMorph(заячья киска)], с [npc.pussyColourPrimary(true)] половыми губами и [npc.pussyColourSecondary(true)] внутренними стенками.",
+			"[npc.she] [npc.has] #IF(npc.isPiercedVagina())проколотая#ELSE#ENDIF кроличья киска с [npc.labiaSize], [npc.pussyPrimaryColour(true)] половыми губами и [npc.pussySecondaryColour(true)] внутренними стенками.",
 			null) {
 	};
 
@@ -341,21 +227,11 @@ public class VaginaType {
 			FluidType.GIRL_CUM_BAT_MORPH,
 			Race.BAT_MORPH,
 			false,
-			Util.newArrayListOfValues("bat-"),
-			Util.newArrayListOfValues("bat-"),
-			Util.newArrayListOfValues("hot"),
-			"[npc.She] [npc.verb(let)] out a squeal of excitement as a wave of pleasure runs up through [npc.her] groin, which increases in intensity as [npc.she] [npc.verb(feel)] [npc.her] slit uncontrollably shifting and contracting."
-					+ " Within moments, the feeling fades away, and [npc.she] [npc.verb(discover)] that [npc.her] pussy [npc.has] reformed into a distinctly bat-like form."
-				+ "</p>"
-				+ "<p>"
-					+ "Just as [npc.she] [npc.verb(start)] think that the transformation [npc.has] come to an end, [npc.her] pussy involuntarily clenches down,"
-						+ " and a desperate squeal escapes from between [npc.her] [npc.lips+] as a warm, tingling feeling spreads up through [npc.her] lower abdomen."
-					+ " Images of throbbing bat-cocks slamming deep into [npc.her] new pussy flash before [npc.her] eyes,"
-						+ " and [npc.her] squeal turns into a satisfied moan as [npc.she] [npc.verb(imagine)] them pumping their hot seed deep into [npc.her] new womb."
-					+ " Just as quickly as they came, the images fade from [npc.her] mind, and as one last wave of tingling pleasure washes through [npc.her] body,"
-						+ " [npc.she] [npc.verb(feel)] [npc.her] female reproductive organs finishing their transformation."
-					+ "<br/>[npc.Name] now [npc.has] a [style.boldBatMorph(bat vagina)], with [npc.pussyColourPrimary(true)] labia and [npc.pussyColourSecondary(true)] internal walls.",
-			"[npc.she] [npc.has] #IF(npc.isPiercedVagina())a pierced#ELSEa#ENDIF bat-pussy, with [npc.labiaSize], [npc.pussyPrimaryColour(true)] labia and [npc.pussySecondaryColour(true)] inner-walls.",
+			Util.newArrayListOfValues("летучий-"),
+			Util.newArrayListOfValues("летучий-"),
+			Util.newArrayListOfValues("горячая"),
+			"[npc.She] [npc.verb(let)] с визгом восторга, когда волна удовольствия пробегает сквозь пах [npc.her], интенсивность которой нарастает, пока [npc.she] [npc.verb(feel)] [npc.her] щель беспорядочно смещается и сокращается. Спустя мгновение ощущение угасает, и [npc.she] [npc.verb(discover)] то, что [npc.her] киска [npc.has], принимает отчетливую форму летучей мыши.</p><p>Как раз когда [npc.she] [npc.verb(start)] думает, что трансформация [npc.has] подошла к концу, [npc.her] киска непроизвольно сжимается, и отчаянный визг вырывается из-за [npc.her] [npc.lips+], когда теплое, покалывающее чувство разливается по [npc.her] нижней части живота. Перед [npc.her] глазами мелькают образы пульсирующих летучих пенисов, глубоко вбивающихся в [npc.her] новую киску, и [npc.her] визг переходит в удовлетворенный стон, когда [npc.she] [npc.verb(imagine)] их, впрыскивающих горячее семя глубоко в [npc.her] новую утробу. Так же быстро, как и появились, образы исчезают из [npc.her] сознания, и когда последняя волна покалывающего удовольствия омывает [npc.her] тело, [npc.she] [npc.verb(feel)] [npc.her] женские репродуктивные органы завершают свою трансформацию.<br/>[npc.Name] теперь [npc.has] [style.boldBatMorph(вагина летучей мыши)] с [npc.pussyColourPrimary(true)] половыми губами и [npc.pussyColourSecondary(true)] внутренними стенками.",
+			"[npc.she] [npc.has] #IF(npc.isPiercedVagina())проколотая#ELSE#ENDIF летучая киска с [npc.labiaSize], [npc.pussyPrimaryColour(true)] половыми губами и [npc.pussySecondaryColour(true)] внутренними стенками.",
 			null) {
 	};
 	
@@ -363,20 +239,10 @@ public class VaginaType {
 			FluidType.GIRL_CUM_ALLIGATOR_MORPH,
 			Race.ALLIGATOR_MORPH,
 			true,
-			Util.newArrayListOfValues("alligator-"),
-			Util.newArrayListOfValues("alligator-"),
-			Util.newArrayListOfValues("hot"),
-			"[npc.She] [npc.verb(let)] out a squeal of excitement as a wave of pleasure runs up through [npc.her] groin, which increases in intensity as [npc.she] [npc.verb(feel)] [npc.her] slit uncontrollably shifting and contracting."
-					+ " Within moments, the feeling fades away, and [npc.she] [npc.verb(discover)] that [npc.her] pussy [npc.has] reformed into a distinctly alligator-like form."
-				+ "</p>"
-				+ "<p>"
-					+ "Just as [npc.she] [npc.verb(start)] think that the transformation [npc.has] come to an end, [npc.her] pussy involuntarily clenches down,"
-						+ " and a desperate squeal escapes from between [npc.her] [npc.lips+] as a warm, tingling feeling spreads up through [npc.her] lower abdomen."
-					+ " Images of fat alligator-cocks slamming deep into [npc.her] new pussy flash before [npc.her] eyes,"
-						+ " and [npc.her] squeal turns into a satisfied moan as [npc.she] [npc.verb(imagine)] them pumping their hot seed deep into [npc.her] new womb."
-					+ " Just as quickly as they came, the images fade from [npc.her] mind, and as one last wave of tingling pleasure washes through [npc.her] body,"
-						+ " [npc.she] [npc.verb(feel)] [npc.her] female reproductive organs finishing their transformation."
-					+ "<br/>[npc.Name] now [npc.has] an [style.boldAlligatorMorph(alligator vagina)], with [npc.pussyColourPrimary(true)] labia and [npc.pussyColourSecondary(true)] internal walls.",
+			Util.newArrayListOfValues("аллигаторийский-"),
+			Util.newArrayListOfValues("аллигаторийский-"),
+			Util.newArrayListOfValues("горячая"),
+			"[npc.She] [npc.verb(let)] издает восторженный визг, когда волна удовольствия пробегает сквозь пах [npc.her], интенсивность которой нарастает, пока [npc.she] [npc.verb(feel)] [npc.her] щель беспорядочно смещается и сокращается. Спустя мгновение ощущение угасает, и [npc.she] [npc.verb(discover)] то, что [npc.her] киска [npc.has], принимает отчетливую форму аллигатора.</p><p>Как раз когда [npc.she] [npc.verb(start)] думает, что трансформация [npc.has] подошла к концу, [npc.her] киска непроизвольно сжимается, и отчаянный визг вырывается из-за [npc.her] [npc.lips+], когда теплое, покалывающее чувство разливается по [npc.her] нижней части живота. Перед [npc.her] глазами мелькают образы жирных аллигачьих членов, глубоко вбивающихся в [npc.her] новую киску, и [npc.her] визг превращается в удовлетворенный стон, когда [npc.she] [npc.verb(imagine)] их, впрыскивающих горячее семя глубоко в [npc.her] новую матку. Так же быстро, как и появились, образы исчезают из [npc.her] сознания, и когда последняя волна покалывающего удовольствия омывает [npc.her] тело, [npc.she] [npc.verb(feel)] [npc.her] женские репродуктивные органы завершают свою трансформацию.<br/>[npc.Name] теперь [npc.has] [style.boldAlligatorMorph(alligator vagina)], с [npc.pussyColourPrimary(true)] половыми губами и [npc.pussyColourSecondary(true)] внутренними стенками.",
 			"[npc.she] [npc.has] #IF(npc.isPiercedVagina())a pierced#ELSEan#ENDIF alligator-pussy, with [npc.labiaSize], [npc.pussyPrimaryColour(true)] labia and [npc.pussySecondaryColour(true)] inner-walls.",
 			null) {
 	};
@@ -385,21 +251,11 @@ public class VaginaType {
 			FluidType.GIRL_CUM_COW_MORPH,
 			Race.COW_MORPH,
 			false,
-			Util.newArrayListOfValues("cow-"),
-			Util.newArrayListOfValues("cow-"),
-			Util.newArrayListOfValues("hot"),
-			"[npc.She] [npc.verb(let)] out a squeal of excitement as a wave of pleasure runs up through [npc.her] groin, which increases in intensity as [npc.she] [npc.verb(feel)] [npc.her] slit uncontrollably shifting and contracting."
-					+ " Within moments, the feeling fades away, and [npc.she] [npc.verb(discover)] that [npc.her] pussy [npc.has] reformed into a distinctly cow-like form."
-				+ "</p>"
-				+ "<p>"
-					+ "Just as [npc.she] [npc.verb(start)] think that the transformation [npc.has] come to an end, [npc.her] pussy involuntarily clenches down,"
-						+ " and a desperate squeal escapes from between [npc.her] [npc.lips+] as a warm, tingling feeling spreads up through [npc.her] lower abdomen."
-					+ " Images of fat bull-cocks slamming deep into [npc.her] new pussy flash before [npc.her] eyes,"
-						+ " and [npc.her] squeal turns into a satisfied moan as [npc.she] [npc.verb(imagine)] them pumping their hot seed deep into [npc.her] new womb."
-					+ " Just as quickly as they came, the images fade from [npc.her] mind, and as one last wave of tingling pleasure washes through [npc.her] body,"
-						+ " [npc.she] [npc.verb(feel)] [npc.her] female reproductive organs finishing their transformation."
-					+ "<br/>[npc.Name] now [npc.has] a [style.boldCowMorph(cow vagina)], with [npc.pussyColourPrimary(true)] labia and [npc.pussyColourSecondary(true)] internal walls.",
-			"[npc.she] [npc.has] #IF(npc.isPiercedVagina())a pierced#ELSEa#ENDIF cow-pussy, with [npc.labiaSize], [npc.pussyPrimaryColour(true)] labia and [npc.pussySecondaryColour(true)] inner-walls.",
+			Util.newArrayListOfValues("коровий-"),
+			Util.newArrayListOfValues("коровий-"),
+			Util.newArrayListOfValues("горячая"),
+			"[npc.She] [npc.verb(let)] издает восторженный визг, когда волна удовольствия пробегает по паху [npc.her], интенсивность которой нарастает, пока [npc.she] [npc.verb(feel)] [npc.her] щель беспорядочно дергается и сокращается. Спустя мгновение ощущение угасает, и [npc.she] [npc.verb(discover)] то, что [npc.her] киска [npc.has], принимает отчетливую коровью форму.</p><p>Как раз когда [npc.she] [npc.verb(start)] думает, что трансформация [npc.has] подошла к концу, [npc.her] киска непроизвольно сжимается, и отчаянный визг вырывается из-под [npc.her] [npc.lips+], когда теплое, покалывающее чувство разливается по [npc.her] нижней части живота. Перед [npc.her] глазами мелькают образы жирных бычьих членов, с силой вбивающихся в [npc.her] новую киску, и [npc.her] визг переходит в удовлетворенный стон, когда [npc.she] [npc.verb(imagine)] их, впрыскивающих горячее семя глубоко в [npc.her] новую утробу. Так же быстро, как и появились, образы исчезают из [npc.her] сознания, и когда последняя волна покалывающего удовольствия омывает [npc.her] тело, [npc.she] [npc.verb(feel)] [npc.her] женские репродуктивные органы завершают свою трансформацию.<br/>[npc.Name] теперь [npc.has] [style.boldCowMorph(коровья киска)] с [npc.pussyColourPrimary(true)] половыми губами и [npc.pussyColourSecondary(true)] внутренними стенками.",
+			"[npc.she] [npc.has] #IF(npc.isPiercedVagina())проколотая#ELSE#ENDIF киска, с [npc.labiaSize], [npc.pussyPrimaryColour(true)] половыми губами и [npc.pussySecondaryColour(true)] внутренними стенками.",
 			null) {
 	};
 
@@ -407,24 +263,11 @@ public class VaginaType {
 			FluidType.GIRL_CUM_HORSE_MORPH,
 			Race.HORSE_MORPH,
 			false,
-			Util.newArrayListOfValues("#IF(npc.getRace()==npc.getVaginaRace())[npc.raceFeral]#ELSE[npc.pussyRaceFeral]#ENDIF-", "mare-"),
-			Util.newArrayListOfValues("#IF(npc.getRace()==npc.getVaginaRace())[npc.raceFeral]#ELSE[npc.pussyRaceFeral]#ENDIF-", "mare-"),
-			Util.newArrayListOfValues("hot"),
-			"[npc.She] [npc.verb(let)] out a squeal of excitement as a wave of pleasure runs up through [npc.her] groin, which increases in intensity as [npc.she] [npc.verb(feel)] [npc.her] slit uncontrollably shifting and contracting."
-					+ " A strange, bubbling sensation starts running down deep into [npc.her] cunt,"
-						+ " and [npc.she] [npc.verb(let)] out a lewd moan as [npc.she] [npc.verb(feel)] a new set of muscles forming all along the inner-walls of [npc.her] pussy."
-					+ " With an experimental squeeze, [npc.she] quickly [npc.verb(discover)] that [npc.she] [npc.has] an incredible amount of control over [npc.her] pussy's new muscles."
-					+ " Within moments, the feeling fades away, and [npc.she] [npc.verb(discover)] that [npc.her] pussy [npc.has] reformed itself and puffed up into a distinctly horse-like form."
-				+ "</p>"
-				+ "<p>"
-					+ "Just as [npc.she] [npc.verb(start)] think that the transformation [npc.has] come to an end, [npc.her] pussy involuntarily clenches down,"
-						+ " and a desperate squeal escapes from between [npc.her] [npc.lips+] as a warm, tingling feeling spreads up through [npc.her] lower abdomen."
-					+ " Images of flared stallion-cocks slamming deep into [npc.her] new pussy flash before [npc.her] eyes,"
-						+ " and [npc.her] squeal turns into a satisfied moan as [npc.she] [npc.verb(imagine)] them pumping their hot seed deep into [npc.her] new womb."
-					+ " Just as quickly as they came, the images fade from [npc.her] mind, and as one last wave of tingling pleasure washes through [npc.her] body,"
-						+ " [npc.she] [npc.verb(feel)] [npc.her] female reproductive organs finishing their transformation."
-					+ "<br/>[npc.Name] now [npc.has] a [style.boldHorseMorph(horse vagina)], with [npc.pussyColourPrimary(true)] labia and [npc.pussyColourSecondary(true)] internal walls.",
-			"[npc.she] [npc.has] #IF(npc.isPiercedVagina())a pierced#ELSEa#ENDIF horse-pussy, with [npc.labiaSize], [npc.pussyPrimaryColour(true)] labia and [npc.pussySecondaryColour(true)] inner-walls.",
+			Util.newArrayListOfValues("#IF(npc.getRace()==npc.getVaginaRace())[npc.raceFeral]#ELSE[npc.pussyRaceFeral]#ENDIF-", "кобылий-"),
+			Util.newArrayListOfValues("#IF(npc.getRace()==npc.getVaginaRace())[npc.raceFeral]#ELSE[npc.pussyRaceFeral]#ENDIF-", "кобылий-"),
+			Util.newArrayListOfValues("горячая"),
+			"[npc.She] [npc.verb(let)] издает восторженный визг, когда волна удовольствия пробегает сквозь пах [npc.her], интенсивность которой нарастает, пока [npc.she] [npc.verb(feel)] щель [npc.her] непроизвольно смещается и сокращается. Странное, бурлящее ощущение начинает спускаться глубоко в [npc.her] киску, и [npc.she] [npc.verb(let)] похотливый стон, когда [npc.she] [npc.verb(feel)] новый набор мышц, формирующийся вдоль внутренних стенок [npc.her] киски. С экспериментальным сжатием [npc.she] быстро [npc.verb(discover)], что [npc.she] [npc.has] невероятный контроль над новыми мышцами [npc.her] киски. Через мгновение чувство угасает, и [npc.she] [npc.verb(discover)], что [npc.her] киска [npc.has] перестроилась и раздулась, приняв отчетливую лошадиную форму.</p><p>Как раз в тот момент, когда [npc.she] [npc.verb(start)] думает, что трансформация [npc.has] подошла к концу, [npc.her] киска непроизвольно сжимается, и отчаянный визг вырывается из-за [npc.her] [npc.lips+], когда теплое, покалывающее чувство разливается по [npc.her] нижней части живота. Перед [npc.her] глазами проносятся образы раздутых жеребцовых членов, глубоко вбивающихся в [npc.her] новую киску, и визг [npc.her] переходит в удовлетворенный стон, когда [npc.she] [npc.verb(imagine)] их, вливающих горячее семя глубоко в [npc.her] новую матку. Так же быстро, как и появились, образы исчезают из [npc.her] сознания, и когда последняя волна покалывающего удовольствия омывает [npc.her] тело, [npc.she] [npc.verb(feel)] [npc.her] женские репродуктивные органы завершают свою трансформацию.<br/>[npc.Name] теперь [npc.has] [style.boldHorseMorph(лошадиная киска)] с [npc.pussyColourPrimary(true)] половыми губами и [npc.pussyColourSecondary(true)] внутренними стенками.",
+			"[npc.she] [npc.has] #IF(npc.isPiercedVagina())проколотая#ELSE#ENDIF лошадиная киска с [npc.labiaSize], [npc.pussyPrimaryColour(true)] половыми губами и [npc.pussySecondaryColour(true)] внутренними стенками.",
 			Util.newArrayListOfValues(
 				OrificeModifier.PUFFY,
 				OrificeModifier.MUSCLE_CONTROL)) {
@@ -434,21 +277,11 @@ public class VaginaType {
 			FluidType.GIRL_CUM_REINDEER_MORPH,
 			Race.REINDEER_MORPH,
 			false,
-			Util.newArrayListOfValues("reindeer-"),
-			Util.newArrayListOfValues("reindeer-"),
-			Util.newArrayListOfValues("hot"),
-			"[npc.She] [npc.verb(let)] out a squeal of excitement as a wave of pleasure runs up through [npc.her] groin, which increases in intensity as [npc.she] [npc.verb(feel)] [npc.her] slit uncontrollably shifting and contracting."
-					+ " Within moments, the feeling fades away, and [npc.she] [npc.verb(discover)] that [npc.her] pussy [npc.has] reformed itself and puffed up into a distinctly reindeer-like form."
-				+ "</p>"
-				+ "<p>"
-					+ "Just as [npc.she] [npc.verb(start)] think that the transformation [npc.has] come to an end, [npc.her] pussy involuntarily clenches down,"
-						+ " and a desperate squeal escapes from between [npc.her] [npc.lips+] as a warm, tingling feeling spreads up through [npc.her] lower abdomen."
-					+ " Images of throbbing reindeer-cocks slamming deep into [npc.her] new pussy flash before [npc.her] eyes,"
-						+ " and [npc.her] squeal turns into a satisfied moan as [npc.she] [npc.verb(imagine)] them pumping their hot seed deep into [npc.her] new womb."
-					+ " Just as quickly as they came, the images fade from [npc.her] mind, and as one last wave of tingling pleasure washes through [npc.her] body,"
-						+ " [npc.she] [npc.verb(feel)] [npc.her] female reproductive organs finishing their transformation."
-					+ "<br/>[npc.Name] now [npc.has] a [style.boldReindeerMorph(reindeer vagina)], with [npc.pussyColourPrimary(true)] labia and [npc.pussyColourSecondary(true)] internal walls.",
-			"[npc.she] [npc.has] #IF(npc.isPiercedVagina())a pierced#ELSEa#ENDIF reindeer-pussy, with [npc.labiaSize], [npc.pussyPrimaryColour(true)] labia and [npc.pussySecondaryColour(true)] inner-walls.",
+			Util.newArrayListOfValues("олений-"),
+			Util.newArrayListOfValues("олений-"),
+			Util.newArrayListOfValues("горячая"),
+			"[npc.She] [npc.verb(let)] с визгом восторга, когда волна удовольствия пробегает сквозь пах [npc.her], интенсивность которой нарастает, пока [npc.she] [npc.verb(feel)] [npc.her] щель беспорядочно дергается и сокращается. Спустя мгновение ощущение угасает, и [npc.she] [npc.verb(discover)] то, что [npc.her] киска [npc.has], принимает новую форму, раздуваясь в отчетливый олений вид.</p><p>Как раз в тот момент, когда [npc.she] [npc.verb(start)] кажется, что трансформация [npc.has] подошла к концу, [npc.her] киска непроизвольно сжимается, и отчаянный визг вырывается из-под [npc.her] [npc.lips+], когда теплое, покалывающее чувство разливается по [npc.her] нижней части живота. Перед [npc.her] глазами вспыхивают образы пульсирующих оленьих членов, глубоко вбивающихся в [npc.her] новую киску, и [npc.her] визг переходит в удовлетворенный стон, когда [npc.she] [npc.verb(imagine)] их, впрыскивающих горячее семя глубоко в [npc.her] новую матку. Так же быстро, как и появились, образы исчезают из [npc.her] мыслей, и когда последняя волна покалывающего удовольствия омывает [npc.her] тело, [npc.she] [npc.verb(feel)] [npc.her] женские репродуктивные органы завершают свою трансформацию.<br/>[npc.Name] теперь [npc.has] [style.boldReindeerMorph(reindeer vagina)], с [npc.pussyColourPrimary(true)] половыми губами и [npc.pussyColourSecondary(true)] внутренними стенками.",
+			"[npc.she] [npc.has] #IF(npc.isPiercedVagina())проколотая#ELSE#ENDIF оленья киска с [npc.labiaSize], [npc.pussyPrimaryColour(true)] половыми губами и [npc.pussySecondaryColour(true)] внутренними стенками.",
 			Util.newArrayListOfValues(
 				OrificeModifier.PUFFY)) {
 	};
@@ -457,21 +290,11 @@ public class VaginaType {
 			FluidType.GIRL_CUM_HARPY,
 			Race.HARPY,
 			true,
-			Util.newArrayListOfValues("bird-"),
-			Util.newArrayListOfValues("bird-"),
-			Util.newArrayListOfValues("hot"),
-			"[npc.She] [npc.verb(let)] out a squeal of excitement as a wave of pleasure runs up through [npc.her] groin, which increases in intensity as [npc.she] [npc.verb(feel)] [npc.her] slit uncontrollably shifting and contracting."
-					+ " Within moments, the feeling fades away, and [npc.she] [npc.verb(discover)] that [npc.her] pussy [npc.has] reformed itself into a distinctly bird-like form."
-				+ "</p>"
-				+ "<p>"
-					+ "Just as [npc.she] [npc.verb(start)] think that the transformation [npc.has] come to an end, [npc.her] pussy involuntarily clenches down,"
-						+ " and a desperate squeal escapes from between [npc.her] [npc.lips+] as a warm, tingling feeling spreads up through [npc.her] lower abdomen."
-					+ " Images of throbbing bird-cocks slamming deep into [npc.her] new pussy flash before [npc.her] eyes,"
-						+ " and [npc.her] squeal turns into a satisfied moan as [npc.she] [npc.verb(imagine)] them pumping their hot seed deep into [npc.her] avian womb."
-					+ " Just as quickly as they came, the images fade from [npc.her] mind, and as one last wave of tingling pleasure washes through [npc.her] body,"
-						+ " [npc.she] [npc.verb(feel)] [npc.her] female reproductive organs finishing their transformation."
-					+ "<br/>[npc.Name] now [npc.has] a [style.boldHarpy(bird vagina)], with [npc.pussyColourPrimary(true)] labia and [npc.pussyColourSecondary(true)] internal walls.",
-			"[npc.she] [npc.has] #IF(npc.isPiercedVagina())a pierced#ELSEa#ENDIF bird-pussy, with [npc.labiaSize], [npc.pussyPrimaryColour(true)] labia and [npc.pussySecondaryColour(true)] inner-walls.",
+			Util.newArrayListOfValues("птичья-"),
+			Util.newArrayListOfValues("птичья-"),
+			Util.newArrayListOfValues("горячая"),
+			"[npc.She] [npc.verb(let)] издает восторженный визг, когда волна удовольствия пробегает сквозь пах [npc.her], интенсивность которой нарастает, пока [npc.she] [npc.verb(feel)] [npc.her] щель беспорядочно дергается и сокращается. Спустя мгновение ощущение угасает, и [npc.she] [npc.verb(discover)] понимает, что [npc.her] киска [npc.has] приняла отчетливую птичью форму.</p><p>Как раз в тот момент, когда [npc.she] [npc.verb(start)] думает, что трансформация [npc.has] подошла к концу, [npc.her] киска непроизвольно сжимается, и отчаянный визг вырывается из-под [npc.her] [npc.lips+], когда теплое, покалывающее чувство разливается по [npc.her] нижней части живота. Перед [npc.her] глазами проносятся образы пульсирующих птичьих пенисов, глубоко вбивающихся в [npc.her] новую киску, и [npc.her] визг переходит в удовлетворенный стон, когда [npc.she] [npc.verb(imagine)] чувствует, как они закачивают свое горячее семя глубоко в [npc.her] птичью утробу. Так же быстро, как и появились, образы исчезают из [npc.her] мыслей, и когда последняя волна покалывающего удовольствия омывает [npc.her] тело, [npc.she] [npc.verb(feel)] осознает, что [npc.her] женские репродуктивные органы завершили свою трансформацию.<br/>[npc.Name] теперь [npc.has] [style.boldHarpy(птичья киска)] с [npc.pussyColourPrimary(true)] половыми губами и [npc.pussyColourSecondary(true)] внутренними стенками.",
+			"[npc.she] [npc.has] #IF(npc.isPiercedVagina())проколотая#ELSE#ENDIF птичья киска с [npc.labiaSize], [npc.pussyPrimaryColour(true)] половыми губами и [npc.pussySecondaryColour(true)] внутренними стенками.",
 			null) {
 	};
 	
@@ -485,7 +308,7 @@ public class VaginaType {
 
 		// Modded types:
 		
-		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/race", "bodyParts", null);
+		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/раса", "bodyParts", null);
 		for(Entry<String, Map<String, File>> entry : moddedFilesMap.entrySet()) {
 			for(Entry<String, File> innerEntry : entry.getValue().entrySet()) {
 				if(Util.getXmlRootElementName(innerEntry.getValue()).equals("vagina")) {
@@ -556,7 +379,7 @@ public class VaginaType {
 			return VaginaType.DEMON_COMMON;
 		}
 		if(id.equals("NoStepOnSnek_snake_vagina_e")) {
-			id = "NoStepOnSnek_snake_vagina";
+			id = "NoStepOnSnek_змеиная_вагина";
 		}
 		id = Util.getClosestStringMatch(id, idToVaginaMap.keySet());
 		return idToVaginaMap.get(id);

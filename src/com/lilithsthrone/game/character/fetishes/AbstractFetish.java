@@ -165,15 +165,15 @@ public abstract class AbstractFetish {
 	protected static String getGenericFetishDesireDescription(GameCharacter target, FetishDesire desire, String descriptor) {
 		switch(desire) {
 			case ZERO_HATE:
-				return UtilText.parse(target, "You absolutely hate "+descriptor+".");
+				return UtilText.parse(target, "Ты просто ненавидишь "+descriptor+".");
 			case ONE_DISLIKE:
-				return UtilText.parse(target, "You don't like "+descriptor+".");
+				return UtilText.parse(target, "Тебе не нравится "+descriptor+".");
 			case TWO_NEUTRAL:
-				return UtilText.parse(target, "You are indifferent to "+descriptor+".");
+				return UtilText.parse(target, "Ты равнодушен к "+descriptor+".");
 			case THREE_LIKE:
-				return UtilText.parse(target, "You like "+descriptor+".");
+				return UtilText.parse(target, "Тебе нравится "+descriptor+".");
 			case FOUR_LOVE:
-				return UtilText.parse(target, "You love "+descriptor+".");
+				return UtilText.parse(target, "Ты обожаешь "+descriptor+".");
 		}
 		return "";
 	}

@@ -15,9 +15,9 @@ public enum BreastShape {
 	ROUND(false, "round", "round"),
 	POINTY(false, "pointy", "pointy"),
 	PERKY(false, "perky", "perky"),
-	SIDE_SET(false, "side-set", "side-set"),
-	WIDE(false, "wide", "wide"),
-	NARROW(false, "narrow", "narrow");
+	SIDE_SET(false, "расположенные по бокам", "side-set"),
+	WIDE(false, "широкий", "широкий"),
+	NARROW(false, "narrow", "узкий");
 	
 	private boolean restrictedToCrotchBoobs;
 	private String transformName;

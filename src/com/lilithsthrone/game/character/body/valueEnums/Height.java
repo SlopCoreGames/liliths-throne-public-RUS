@@ -17,7 +17,7 @@ public enum Height {
 	NEGATIVE_THREE_MINIMUM("fairy-sized", 15, 61, PresetColour.GENERIC_SIZE_ONE),
 	
 	/**2' to 3'6"*/
-	NEGATIVE_TWO_MINIMUM("very tiny", 61, 106, PresetColour.GENERIC_SIZE_ONE),
+	NEGATIVE_TWO_MINIMUM("очень низкий", 61, 106, PresetColour.GENERIC_SIZE_ONE),
 	
 	/**3'6" to 4'*/
 	NEGATIVE_ONE_TINY("tiny", 106, 122, PresetColour.GENERIC_SIZE_ONE),
@@ -29,13 +29,13 @@ public enum Height {
 	ONE_SHORT("short", 152, 166, PresetColour.GENERIC_SIZE_TWO),
 
 	/**5'6" to 6'*/
-	TWO_AVERAGE("average height", 166, 183, PresetColour.GENERIC_SIZE_THREE),
+	TWO_AVERAGE("средний рост", 166, 183, PresetColour.GENERIC_SIZE_THREE),
 
 	/**6' to 6'6"*/
 	THREE_TALL("tall", 183, 198, PresetColour.GENERIC_SIZE_FOUR),
 
 	/**6'6" to 7'*/
-	FOUR_VERY_TALL("very tall", 198, 214, PresetColour.GENERIC_SIZE_FIVE),
+	FOUR_VERY_TALL("очень высокий", 198, 214, PresetColour.GENERIC_SIZE_FIVE),
 
 	/**7' to 7'6"*/
 	FIVE_ENORMOUS("towering", 214, 228, PresetColour.GENERIC_SIZE_SIX),

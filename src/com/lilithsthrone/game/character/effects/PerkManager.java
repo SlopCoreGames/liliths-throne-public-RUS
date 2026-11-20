@@ -766,8 +766,7 @@ public enum PerkManager {
 		treeSB.setLength(0);
 		
 
-		treeSB.append("<div class='container-full-width' style='padding:8px; text-align:center;'>"
-		+ "<h6 style='text-align:center;'>Active Traits</h6>");
+		treeSB.append("<div class='container-full-width' style='padding:8px; text-align:center;'><h6 style='text-align:center;'>Активные черты</h6>");
 		
 		treeSB.append(
 				"<div id='OCCUPATION_" + Perk.getIdFromPerk(character.getHistory().getAssociatedPerk())
@@ -818,9 +817,7 @@ public enum PerkManager {
 							subspeciesKnowledgePerks.add(hiddenPerk);
 						} else {
 							treeSB.append(
-									"<div id='HIDDEN_PERK_" + Perk.getIdFromPerk(hiddenPerk) + "' class='square-button round small'"
-											+ " style='width:6%; display:inline-block; float:none; border-color:"+PresetColour.GENERIC_EXCELLENT.toWebHexString()+"; cursor:default;'>"
-									+ "<div class='square-button-content'>"+hiddenPerk.getSVGString(character)+"</div>"
+									"<div id='HIDDEN_PERK_" + Perk.getIdFromPerk(hiddenPerk) + "' class='square-button round small' style='width:6%; display:inline-block; float:none; border-color:"+PresetColour.GENERIC_EXCELLENT.toWebHexString()+"; cursor:default;'><div class='square-button-content'>"+hiddenPerk.getSVGString(character)+"</div>"
 									+ "</div>");
 						}
 					}
@@ -832,9 +829,7 @@ public enum PerkManager {
 			treeSB.append("<div class='container-full-width' style='width:100%; padding:0; margin:0;'>");
 				for(AbstractPerk hiddenPerk : subspeciesKnowledgePerks) {
 					treeSB.append(
-							"<div id='HIDDEN_PERK_" + Perk.getIdFromPerk(hiddenPerk) + "' class='square-button round small'"
-									+ " style='width:6%; padding:0; left:12px; margin:0 0 0 -24px; display:inline-block; float:none; border-color:"+hiddenPerk.getColour().toWebHexString()+"; cursor:default;'>"
-							+ "<div class='square-button-content'>"+hiddenPerk.getSVGString(character)+"</div>"
+							"<div id='HIDDEN_PERK_" + Perk.getIdFromPerk(hiddenPerk) + "' class='square-button round small' style='width:6%; padding:0; left:12px; margin:0 0 0 -24px; display:inline-block; float:none; border-color:"+hiddenPerk.getColour().toWebHexString()+"; cursor:default;'><div class='square-button-content'>"+hiddenPerk.getSVGString(character)+"</div>"
 							+ "</div>");
 				}
 			treeSB.append("</div>");
@@ -979,11 +974,11 @@ public enum PerkManager {
 					+ "<svg width='100%' height='100%'><line x1='"+entryX+"%' y1='100%' x2='"+entryX+"%' y2='50%' stroke='"+getPerkLineChildColour(character, perkEntry).toWebHexString()+"' stroke-width='2px'/></svg></div>");
 		}
 		
-		entrySB.append("<div class='square-button"+(perkEntry.getEntry().isEquippableTrait()?"":" round")+(disabled?" disabled":"")+"' style='width:16%; margin:16px "+getMargin(size)+"%; "+
+		entrySB.append("<div class='square-button"+(perkEntry.getEntry().isEquippableTrait()?"":" округление")+(disabled?" отключено":"")+"' style='width:16%; margin:16px "+getMargin(size)+"%; "+
 							(isPerkOwned(character, perkEntry)
 									?character.hasTraitActivated(perkEntry.getEntry())
-										?"border-color:"+PresetColour.TRAIT.toWebHexString()+";"
-										:"border-color:"+borderColour.toWebHexString()+";"
+										?"цвет-границы:"+PresetColour.TRAIT.toWebHexString()+";"
+										:"цвет-границы:"+borderColour.toWebHexString()+";"
 									:"")+"' id='"+perkEntry.getRow()+"_"+perkEntry.getCategory()+"_"+Perk.getIdFromPerk(perkEntry.getEntry())+"'>"
 				+ "<div class='square-button-content'>"+perkEntry.getEntry().getSVGString(character)+"</div>"
 				+ (disabled

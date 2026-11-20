@@ -34,7 +34,7 @@ public enum TesticleSize {
 	SIX_GIGANTIC("gigantic", 6, PresetColour.GENERIC_SIZE_SEVEN),
 
 	/**"Extreme proportion" content.*/
-	SEVEN_ABSURD("absurdly enormous", 7, PresetColour.GENERIC_SIZE_EIGHT);
+	SEVEN_ABSURD("абсурдно огромные", 7, PresetColour.GENERIC_SIZE_EIGHT);
 
 	private int value;
 	private String descriptor;

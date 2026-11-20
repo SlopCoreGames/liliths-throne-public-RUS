@@ -56,12 +56,12 @@ public class MouthType {
 	public static AbstractMouthType HARPY = new AbstractMouthType(BodyCoveringType.MOUTH,
 			Race.HARPY,
 			TongueType.HARPY,
-			Util.newArrayListOfValues("beak"),
-			Util.newArrayListOfValues("beaks"),
+			Util.newArrayListOfValues("клюв"),
+			Util.newArrayListOfValues("клювы"),
 			Util.newArrayListOfValues(""),
 			Util.newArrayListOfValues(""),
-			Util.newArrayListOfValues("beak-lip"),
-			Util.newArrayListOfValues("beak-lips"),
+			Util.newArrayListOfValues("клювогубы"),
+			Util.newArrayListOfValues("клювогубы"),
 			Util.newArrayListOfValues(""),
 			Util.newArrayListOfValues(""),
 			null,
@@ -80,7 +80,7 @@ public class MouthType {
 
 		// Modded types:
 		
-		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/race", "bodyParts", null);
+		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/раса", "bodyParts", null);
 		for(Entry<String, Map<String, File>> entry : moddedFilesMap.entrySet()) {
 			for(Entry<String, File> innerEntry : entry.getValue().entrySet()) {
 				if(Util.getXmlRootElementName(innerEntry.getValue()).equals("mouth")) {

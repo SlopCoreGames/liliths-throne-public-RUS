@@ -33,7 +33,7 @@ public enum PenisLength {
 	FIVE_ENORMOUS("enormous", 40, 50, PresetColour.GENERIC_SIZE_SIX),
 
 	/**This is just ridiculous... World record for a horse-morph. (20-23 inches)*/
-	SIX_GIGANTIC("gigantic", 50, 60, PresetColour.GENERIC_SIZE_SEVEN),
+	SIX_GIGANTIC("гигантский", 50, 60, PresetColour.GENERIC_SIZE_SEVEN),
 
 	/**And this is for "extreme proportion" content. (24-40 inches)*/
 	SEVEN_STALLION("stallion-sized", 60, 100, PresetColour.GENERIC_SIZE_EIGHT);

@@ -760,7 +760,7 @@ public abstract class AbstractSubspecies {
 	
 	@Override
 	public String toString() {
-		new AccessException("WARNING: AbstractSubspecies is calling toString()!").printStackTrace(System.err);
+		new AccessException("ВНИМАНИЕ: AbstractSubspecies вызывает toString()!").printStackTrace(System.err);
 		return Subspecies.getIdFromSubspecies(this);
 	}
 
@@ -1201,7 +1201,7 @@ public abstract class AbstractSubspecies {
 			case CEPHALOPOD:
 				return baseName+"-kraken"+(plural?"s":"");
 			case TAIL:
-				return "mer"+baseName+(plural?"s":"");
+				return "мер"+baseName+(plural?"s":"");
 			case TAIL_LONG:
 				return baseName+"-lamia"+(plural?"s":"");
 			case QUADRUPEDAL:
@@ -1395,15 +1395,15 @@ public abstract class AbstractSubspecies {
 			int landSpeed = character.getLandSpeedModifier();
 			int waterSpeed =  character.getWaterSpeedModifier();
 			if(landSpeed!=0) {
-				effectsModified.add((landSpeed<0?"[style.boldExcellent("+landSpeed+"%)]":"[style.boldTerrible(+"+landSpeed+"%)]")+" travel time on land");
+				effectsModified.add((landSpeed<0?"[style.boldExcellent("+landSpeed+"%)]":"[style.boldTerrible(+"+landSpeed+"%)]")+" время перемещения по суше");
 			}
 			if(waterSpeed!=0) {
-				effectsModified.add((waterSpeed<0?"[style.boldExcellent("+waterSpeed+"%)]":"[style.boldTerrible(+"+waterSpeed+"%)]")+" travel time in water");
+				effectsModified.add((waterSpeed<0?"[style.boldExcellent("+waterSpeed+"%)]":"[style.boldTerrible(+"+waterSpeed+"%)]")+" время перемещения в воде");
 			}
 			
 			if(character.getLegConfiguration()==LegConfiguration.TAIL) {
-				effectsModified.add("[style.boldTan(Grows legs on land)]");
-				effectsModified.add("[style.boldBlueLight(Loses legs in water)]");
+				effectsModified.add("[style.boldTan(Отращивает ноги на суше)]");
+				effectsModified.add("[style.boldBlueLight(Теряет ноги в воде)]");
 			}
 			
 			if(character.isFeral()) {
@@ -1420,8 +1420,8 @@ public abstract class AbstractSubspecies {
 	public List<String> getFeralEffects() {
 		List<String> feralEffects = new ArrayList<>();
 		
-		feralEffects.add("[style.colourUnarmed(Base unarmed damage)] [style.colourExcellent(tripled)]");
-		feralEffects.add("[style.colourExcellent(Immune)] to [style.colourGenericTf(racial transformations)]");
+		feralEffects.add("[style.colourUnarmed(Базовый безоружный урон)] [style.colourExcellent(утроен)]");
+		feralEffects.add("[style.colourExcellent(Иммунитет)] к [style.colourGenericTf(расовым трансформациям)]");
 
 		return feralEffects;
 	}
@@ -1678,7 +1678,7 @@ public abstract class AbstractSubspecies {
 					}
 					SVGStringUncoloured = sb.toString();
 					float iconResizeBorder = (100-getIconSize())/2f;
-					SVGStringUncoloured = "<div style='width:"+getIconSize()+"%;height:"+getIconSize()+"%;position:absolute;left:"+iconResizeBorder+"%;bottom:"+iconResizeBorder+"%;'>"+SVGStringUncoloured+"</div>";
+					SVGStringUncoloured = "<div style='width:"+getIconSize()+"%;высота:"+getIconSize()+"%;position:absolute;left:"+iconResizeBorder+"%;bottom:"+iconResizeBorder+"%;'>"+SVGStringUncoloured+"</div>";
 					
 				} else {
 					InputStream is = this.getClass().getResourceAsStream(getPathName() + ".svg");

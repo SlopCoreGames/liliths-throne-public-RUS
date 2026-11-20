@@ -25,7 +25,7 @@ public enum FluidFlavour {
 	
 	GIRL_CUM("girlcum", PresetColour.GIRLCUM,
 			Util.newArrayListOfValues(
-					"sweet")),
+					"сладкий")),
 	
 	FLAVOURLESS("flavourless", PresetColour.BASE_GREY,
 			Util.newArrayListOfValues(
@@ -63,7 +63,7 @@ public enum FluidFlavour {
 					"tangy",
 					"pineapple-flavoured")),
 	
-	HONEY("honey", PresetColour.BASE_YELLOW,
+	HONEY("медовый", PresetColour.BASE_YELLOW,
 			Util.newArrayListOfValues(
 					"sweet",
 					"honey-flavoured")),

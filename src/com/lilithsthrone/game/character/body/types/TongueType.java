@@ -26,44 +26,44 @@ public class TongueType {
 	public static AbstractTongueType HUMAN = new AbstractTongueType(BodyCoveringType.TONGUE,
 			Race.HUMAN,
 			3,
-			"tongue",
-			"tongues",
+			"язык",
+			"языки",
 			Util.newArrayListOfValues(""),
 			Util.newArrayListOfValues(""),
-			" [npc.Her] mouth holds [npc.a_tongueLength], [npc.tongueColour(true)] [npc.tongue]#IF(npc.isPiercedTongue()), which has been pierced#ENDIF.",
+			" Во рту [npc.Her] находится [npc.a_tongueLength], [npc.tongueColour(true)] [npc.tongue]#IF(npc.isPiercedTongue()), проколотый#ENDIF.",
 			Util.newArrayListOfValues()) {
 	};
 	
 	public static AbstractTongueType ANGEL = new AbstractTongueType(BodyCoveringType.TONGUE,
 			Race.ANGEL,
 			3,
-			"tongue",
-			"tongues",
-			Util.newArrayListOfValues("angelic"),
-			Util.newArrayListOfValues("angelic"),
-			" [npc.Her] mouth holds [npc.a_tongueLength], [npc.tongueColour(true)] [npc.tongue]#IF(npc.isPiercedTongue()), which has been pierced#ENDIF.",
+			"язык",
+			"языки",
+			Util.newArrayListOfValues("ангельский"),
+			Util.newArrayListOfValues("ангельский"),
+			" Во рту [npc.Her] находится [npc.a_tongueLength], [npc.tongueColour(true)] [npc.tongue]#IF(npc.isPiercedTongue()), проколотый#ENDIF.",
 			Util.newArrayListOfValues()) {
 	};
 	
 	public static AbstractTongueType DEMON_COMMON = new AbstractTongueType(BodyCoveringType.TONGUE,
 			Race.DEMON,
 			6,
-			"tongue",
-			"tongues",
-			Util.newArrayListOfValues("demonic"),
-			Util.newArrayListOfValues("demonic"),
-			" [npc.Her] mouth holds [npc.a_tongueLength], [npc.tongueColour(true)] [npc.tongue]#IF(npc.isPiercedTongue()), which has been pierced#ENDIF.",
+			"язык",
+			"языки",
+			Util.newArrayListOfValues("демонический"),
+			Util.newArrayListOfValues("демонический"),
+			" Во рту [npc.Her] находится [npc.a_tongueLength], [npc.tongueColour(true)] [npc.tongue]#IF(npc.isPiercedTongue()), проколотый#ENDIF.",
 			Util.newArrayListOfValues()) {
 	};
 	
 	public static AbstractTongueType DOG_MORPH = new AbstractTongueType(BodyCoveringType.TONGUE,
 			Race.DOG_MORPH,
 			8,
-			"tongue",
-			"tongues",
-			Util.newArrayListOfValues("dog-like"),
-			Util.newArrayListOfValues("dog-like"),
-			" [npc.Her] mouth holds [npc.a_tongueLength], [npc.tongueColour(true)], dog-like [npc.tongue]#IF(npc.isPiercedTongue()), which has been pierced#ENDIF.",
+			"язык",
+			"языки",
+			Util.newArrayListOfValues("собачьи"),
+			Util.newArrayListOfValues("собачьи"),
+			" Во рту [npc.Her] находится [npc.a_tongueLength], [npc.tongueColour(true)], собачий [npc.tongue]#IF(npc.isPiercedTongue()), проколотый#ENDIF.",
 			Util.newArrayListOfValues(
 					TongueModifier.WIDE,
 					TongueModifier.FLAT)) {
@@ -72,11 +72,11 @@ public class TongueType {
 	public static AbstractTongueType WOLF_MORPH = new AbstractTongueType(BodyCoveringType.TONGUE,
 			Race.WOLF_MORPH,
 			8,
-			"tongue",
-			"tongues",
-			Util.newArrayListOfValues("wolf-like"),
-			Util.newArrayListOfValues("wolf-like"),
-			" [npc.Her] mouth holds [npc.a_tongueLength], [npc.tongueColour(true)], wolf-like [npc.tongue]#IF(npc.isPiercedTongue()), which has been pierced#ENDIF.",
+			"язык",
+			"языки",
+			Util.newArrayListOfValues("волчьими"),
+			Util.newArrayListOfValues("волчьими"),
+			" Во рту [npc.Her] находится [npc.a_tongueLength], [npc.tongueColour(true)], волчий [npc.tongue]#IF(npc.isPiercedTongue()), проколотый#ENDIF.",
 			Util.newArrayListOfValues(
 					TongueModifier.WIDE,
 					TongueModifier.FLAT)) {
@@ -85,11 +85,11 @@ public class TongueType {
 	public static AbstractTongueType FOX_MORPH = new AbstractTongueType(BodyCoveringType.TONGUE,
 			Race.FOX_MORPH,
 			6,
-			"tongue",
-			"tongues",
-			Util.newArrayListOfValues("fox-like"),
-			Util.newArrayListOfValues("fox-like"),
-			" [npc.Her] mouth holds [npc.a_tongueLength], [npc.tongueColour(true)], fox-like [npc.tongue]#IF(npc.isPiercedTongue()), which has been pierced#ENDIF.",
+			"язык",
+			"языки",
+			Util.newArrayListOfValues("лисоподобные"),
+			Util.newArrayListOfValues("лисоподобные"),
+			" Во рту [npc.Her] находится [npc.a_tongueLength], [npc.tongueColour(true)], лисий [npc.tongue]#IF(npc.isPiercedTongue()), проколотый#ENDIF.",
 			Util.newArrayListOfValues(
 					TongueModifier.FLAT)) {
 	};
@@ -97,11 +97,11 @@ public class TongueType {
 	public static AbstractTongueType CAT_MORPH = new AbstractTongueType(BodyCoveringType.TONGUE,
 			Race.CAT_MORPH,
 			6,
-			"tongue",
-			"tongues",
-			Util.newArrayListOfValues("cat-like"),
-			Util.newArrayListOfValues("cat-like"),
-			" [npc.Her] mouth holds [npc.a_tongueLength], [npc.tongueColour(true)], cat-like [npc.tongue]#IF(npc.isPiercedTongue()), which has been pierced#ENDIF.",
+			"язык",
+			"языки",
+			Util.newArrayListOfValues("кошачьими"),
+			Util.newArrayListOfValues("кошачьими"),
+			" Во рту [npc.Her] находится [npc.a_tongueLength], [npc.tongueColour(true)], кошачий [npc.tongue]#IF(npc.isPiercedTongue()), проколотый#ENDIF.",
 			Util.newArrayListOfValues(
 					TongueModifier.FLAT)) {
 	};
@@ -109,11 +109,11 @@ public class TongueType {
 	public static AbstractTongueType COW_MORPH = new AbstractTongueType(BodyCoveringType.TONGUE,
 			Race.COW_MORPH,
 			12,
-			"tongue",
-			"tongues",
-			Util.newArrayListOfValues("cow-like"),
-			Util.newArrayListOfValues("cow-like"),
-			" [npc.Her] mouth holds [npc.a_tongueLength], [npc.tongueColour(true)], cow-like [npc.tongue]#IF(npc.isPiercedTongue()), which has been pierced#ENDIF.",
+			"язык",
+			"языки",
+			Util.newArrayListOfValues("коровьей формы"),
+			Util.newArrayListOfValues("коровьей формы"),
+			" Во рту [npc.Her] находится [npc.a_tongueLength], [npc.tongueColour(true)], коровьи [npc.tongue]#IF(npc.isPiercedTongue()), проколотый#ENDIF.",
 			Util.newArrayListOfValues(
 					TongueModifier.STRONG)) {
 	};
@@ -121,11 +121,11 @@ public class TongueType {
 	public static AbstractTongueType ALLIGATOR_MORPH = new AbstractTongueType(BodyCoveringType.TONGUE,
 			Race.ALLIGATOR_MORPH,
 			6,
-			"tongue",
-			"tongues",
-			Util.newArrayListOfValues("alligator-like"),
-			Util.newArrayListOfValues("alligator-like"),
-			" [npc.Her] mouth holds [npc.a_tongueLength], [npc.tongueColour(true)], alligator-like [npc.tongue]#IF(npc.isPiercedTongue()), which has been pierced#ENDIF.",
+			"язык",
+			"языки",
+			Util.newArrayListOfValues("аллигатороподобного"),
+			Util.newArrayListOfValues("аллигатороподобного"),
+			" Во рту [npc.Her] находится [npc.a_tongueLength], [npc.tongueColour(true)], аллигаторовий [npc.tongue]#IF(npc.isPiercedTongue()), проколотый#ENDIF.",
 			Util.newArrayListOfValues(
 					TongueModifier.STRONG)) {
 	};
@@ -133,11 +133,11 @@ public class TongueType {
 	public static AbstractTongueType HORSE_MORPH = new AbstractTongueType(BodyCoveringType.TONGUE,
 			Race.HORSE_MORPH,
 			8,
-			"tongue",
-			"tongues",
-			Util.newArrayListOfValues("horse-like"),
-			Util.newArrayListOfValues("horse-like"),
-			" [npc.Her] mouth holds [npc.a_tongueLength], [npc.tongueColour(true)], horse-like [npc.tongue]#IF(npc.isPiercedTongue()), which has been pierced#ENDIF.",
+			"язык",
+			"языки",
+			Util.newArrayListOfValues("лошадиный"),
+			Util.newArrayListOfValues("лошадиный"),
+			" Во рту [npc.Her] [npc.a_tongueLength], [npc.tongueColour(true)], лошадиный [npc.tongue]#IF(npc.isPiercedTongue()), проколотый#ENDIF.",
 			Util.newArrayListOfValues(
 					TongueModifier.STRONG)) {
 	};
@@ -145,11 +145,11 @@ public class TongueType {
 	public static AbstractTongueType REINDEER_MORPH = new AbstractTongueType(BodyCoveringType.TONGUE,
 			Race.REINDEER_MORPH,
 			8,
-			"tongue",
-			"tongues",
-			Util.newArrayListOfValues("reindeer-like"),
-			Util.newArrayListOfValues("reindeer-like"),
-			" [npc.Her] mouth holds [npc.a_tongueLength], [npc.tongueColour(true)], reindeer-like [npc.tongue]#IF(npc.isPiercedTongue()), which has been pierced#ENDIF.",
+			"язык",
+			"языки",
+			Util.newArrayListOfValues("похожих на оленьи"),
+			Util.newArrayListOfValues("похожих на оленьи"),
+			" Во рту [npc.Her] [npc.a_tongueLength], [npc.tongueColour(true)], олений [npc.tongue]#IF(npc.isPiercedTongue()), проколотый#ENDIF.",
 			Util.newArrayListOfValues(
 					TongueModifier.STRONG)) {
 	};
@@ -157,11 +157,11 @@ public class TongueType {
 	public static AbstractTongueType HARPY = new AbstractTongueType(BodyCoveringType.TONGUE,
 			Race.HARPY,
 			6,
-			"tongue",
-			"tongues",
-			Util.newArrayListOfValues("bird-like"),
-			Util.newArrayListOfValues("bird-like"),
-			" [npc.Her] mouth holds [npc.a_tongueLength], [npc.tongueColour(true)], bird-like [npc.tongue]#IF(npc.isPiercedTongue()), which has been pierced#ENDIF.",
+			"язык",
+			"языки",
+			Util.newArrayListOfValues("птичьи"),
+			Util.newArrayListOfValues("птичьи"),
+			" Во рту [npc.Her] [npc.a_tongueLength], [npc.tongueColour(true)], птичий [npc.tongue]#IF(npc.isPiercedTongue()), проколотый#ENDIF.",
 			Util.newArrayListOfValues(
 					TongueModifier.FLAT)) {
 	};
@@ -169,44 +169,44 @@ public class TongueType {
 	public static AbstractTongueType SQUIRREL_MORPH = new AbstractTongueType(BodyCoveringType.TONGUE,
 			Race.SQUIRREL_MORPH,
 			6,
-			"tongue",
-			"tongues",
-			Util.newArrayListOfValues("squirrel-like"),
-			Util.newArrayListOfValues("squirrel-like"),
-			" [npc.Her] mouth holds [npc.a_tongueLength], [npc.tongueColour(true)], squirrel-like [npc.tongue]#IF(npc.isPiercedTongue()), which has been pierced#ENDIF.",
+			"язык",
+			"языки",
+			Util.newArrayListOfValues("беличьи"),
+			Util.newArrayListOfValues("беличьи"),
+			" Во рту [npc.Her] [npc.a_tongueLength], [npc.tongueColour(true)], беличий [npc.tongue]#IF(npc.isPiercedTongue()), проколотый#ENDIF.",
 			Util.newArrayListOfValues()) {
 	};
 	
 	public static AbstractTongueType RAT_MORPH = new AbstractTongueType(BodyCoveringType.TONGUE,
 			Race.RAT_MORPH,
 			6,
-			"tongue",
-			"tongues",
-			Util.newArrayListOfValues("rat-like"),
-			Util.newArrayListOfValues("rat-like"),
-			" [npc.Her] mouth holds [npc.a_tongueLength], [npc.tongueColour(true)], rat-like [npc.tongue]#IF(npc.isPiercedTongue()), which has been pierced#ENDIF.",
+			"язык",
+			"языки",
+			Util.newArrayListOfValues("крысиные"),
+			Util.newArrayListOfValues("крысиные"),
+			" Во рту [npc.Her] [npc.a_tongueLength], [npc.tongueColour(true)], крысиный [npc.tongue]#IF(npc.isPiercedTongue()), проколотый#ENDIF.",
 			Util.newArrayListOfValues()) {
 	};
 	
 	public static AbstractTongueType RABBIT_MORPH = new AbstractTongueType(BodyCoveringType.TONGUE,
 			Race.RABBIT_MORPH,
 			6,
-			"tongue",
-			"tongues",
-			Util.newArrayListOfValues("rabbit-like"),
-			Util.newArrayListOfValues("rabbit-like"),
-			" [npc.Her] mouth holds [npc.a_tongueLength], [npc.tongueColour(true)], rabbit-like [npc.tongue]#IF(npc.isPiercedTongue()), which has been pierced#ENDIF.",
+			"язык",
+			"языки",
+			Util.newArrayListOfValues("кроличьими"),
+			Util.newArrayListOfValues("кроличьими"),
+			" Во рту [npc.Her] [npc.a_tongueLength], [npc.tongueColour(true)], заячий [npc.tongue]#IF(npc.isPiercedTongue()), проколотый#ENDIF.",
 			Util.newArrayListOfValues()) {
 	};
 	
 	public static AbstractTongueType BAT_MORPH = new AbstractTongueType(BodyCoveringType.TONGUE,
 			Race.BAT_MORPH,
 			6,
-			"tongue",
-			"tongues",
-			Util.newArrayListOfValues("bat-like"),
-			Util.newArrayListOfValues("bat-like"),
-			" [npc.Her] mouth holds [npc.a_tongueLength], [npc.tongueColour(true)], bat-like [npc.tongue]#IF(npc.isPiercedTongue()), which has been pierced#ENDIF.",
+			"язык",
+			"языки",
+			Util.newArrayListOfValues("похожими на крылья летучей мыши"),
+			Util.newArrayListOfValues("похожими на крылья летучей мыши"),
+			" Во рту [npc.Her] [npc.a_tongueLength], [npc.tongueColour(true)], летучий [npc.tongue]#IF(npc.isPiercedTongue()), проколотый#ENDIF.",
 			Util.newArrayListOfValues()) {
 	};
 	
@@ -219,7 +219,7 @@ public class TongueType {
 		
 		// Modded types:
 		
-		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/race", "bodyParts", null);
+		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/раса", "bodyParts", null);
 		for(Entry<String, Map<String, File>> entry : moddedFilesMap.entrySet()) {
 			for(Entry<String, File> innerEntry : entry.getValue().entrySet()) {
 				if(Util.getXmlRootElementName(innerEntry.getValue()).equals("tongue")) {

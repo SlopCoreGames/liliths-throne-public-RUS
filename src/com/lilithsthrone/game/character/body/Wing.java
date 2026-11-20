@@ -75,13 +75,13 @@ public class Wing implements BodyPartInterface {
 		
 		if (type == getType()) {
 			if(type == WingType.NONE) {
-				return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] already [npc.verb(lack)] wings, so nothing happens...)]</p>");
+				return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(у [npc.Name] уже [npc.verb(lack)] крылья, так что ничего не происходит...)]</p>");
 				
 			} else if(type.getRace()!=Race.NONE) {
-				return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] already [npc.has] the [npc.wings] of [npc.a_wingRace], so nothing happens...)]</p>");
+				return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(у [npc.Name] уже [npc.has] есть [npc.wings] [npc.a_wingRace], так что ничего не происходит...)]</p>");
 				
 			} else {
-				return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] already [npc.has] "+type.getTransformName()+" [npc.wings], so nothing happens...)]</p>");
+				return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(у [npc.Name] уже [npc.has] "+type.getTransformName()+" [npc.wings], так что ничего не происходит...)]</p>");
 			}
 		}
 		
@@ -89,28 +89,20 @@ public class Wing implements BodyPartInterface {
 
 		if(type != WingType.NONE) {
 			sb.append(
-					"<p>"
-						+ "[npc.Name] [npc.verb(try)] to look behind [npc.herHim] as [npc.she] [npc.verb(feel)] a strange bubbling sensation rising up in [npc.her] back, before something starts pushing out from under [npc.her] [npc.skin].");
+					"<p>[npc.Name] [npc.verb(try)] оглянуться [npc.herHim], когда [npc.she] [npc.verb(feel)] странное бурление, поднимающееся вверх по [npc.her] спине, прежде чем что-то начинает проталкиваться из-под [npc.her] [npc.skin].");
 			
 		} else {
 			sb.append(
-					"<p>"
-						+ "[npc.NamePos] [npc.wings] suddenly start to twitch and flap with a mind of their own, and [npc.she] [npc.verb(let)] out a gasp as [npc.she] [npc.verb(feel)] them start to transform.");
+					"<p>[npc.NamePos] [npc.wings] внезапно начинают дергаться и хлопать сами по себе, и [npc.she] [npc.verb(let)] от неожиданности, когда [npc.she] [npc.verb(feel)] они начинают трансформироваться.");
 		}
 		
 		sb.append(" "+type.getTransformationDescription(owner));
 		
 		if(type!=WingType.NONE) {
 			if(this.getSize().getValue() >= owner.getLegConfiguration().getMinimumWingSizeForFlight(owner.getBody()).getValue()) {
-				sb.append("</br>"
-						+ "Giving them an experimental flap, [npc.sheIs] delighted to discover that they're [style.colourGood(powerful enough to enable [npc.herHim] to fly)]!"
-						+ "<br/>"
-						+ "[style.italics("+Util.capitaliseSentence(owner.getLegConfiguration().getName())+" bodies require wings to be at least '"+owner.getLegConfiguration().getMinimumWingSizeForFlight(owner.getBody()).getName()+"' to enable flight.)]");
+				sb.append("</br>Попробовав ими взмахнуть, [npc.sheIs] с восторгом обнаруживает, что они [style.colourGood(достаточно сильны, чтобы позволить [npc.herHim] летать)]!<br/>[style.italics(\", "+Util.capitaliseSentence(owner.getLegConfiguration().getName())+" телам нужны крылья размером не меньше '"+owner.getLegConfiguration().getMinimumWingSizeForFlight(owner.getBody()).getName()+"', чтобы обеспечить полет.)]");
 			} else {
-				sb.append("</br>"
-						+ "Giving them an experimental flap, [npc.sheIs] disappointed to discover that they're [style.colourBad(not powerful enough to enable [npc.herHim] to fly)]..."
-						+ "<br/>"
-						+ "[style.italics("+Util.capitaliseSentence(owner.getLegConfiguration().getName())+" bodies require wings to be at least '"+owner.getLegConfiguration().getMinimumWingSizeForFlight(owner.getBody()).getName()+"' to enable flight.)]");
+				sb.append("</br>Попробовав ими взмахнуть, [npc.sheIs] с разочарованием обнаруживает, что они [style.colourBad(недостаточно сильны, чтобы позволить [npc.herHim] летать)]...<br/>[style.italics(\", "+Util.capitaliseSentence(owner.getLegConfiguration().getName())+" телам нужны крылья размером не меньше '"+owner.getLegConfiguration().getMinimumWingSizeForFlight(owner.getBody()).getName()+"', чтобы обеспечить полет.)]");
 			}
 		}
 		sb.append("</p>");
@@ -149,40 +141,34 @@ public class Wing implements BodyPartInterface {
 		}
 		
 		if(this.getType()==WingType.NONE) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.NamePos] [npc.do]n't have any wings, so nothing happens...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(У [npc.NamePos] [npc.do] нет крыльев, так что ничего не происходит...)]</p>");
 		}
 		
 		int effectiveSize = Math.max(this.getType().getMinimumSize().getValue(), Math.min(wingSize, this.getType().getMaximumSize().getValue()));
 		if(owner.getWingSizeValue() == effectiveSize) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(The size of [npc.namePos] [npc.wings] doesn't change...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(Размер [npc.namePos] [npc.wings] не меняется...)]</p>");
 		}
 
 		StringBuilder sb = new StringBuilder();
 		
 		if(this.size > effectiveSize) {
 			sb.append(
-					UtilText.parse(owner, "<p>[npc.Name] [npc.verb(let)] out an alarmed cry as [npc.she] [npc.verb(feel)] a soothing coolness rise up into [npc.her] [npc.wings+], before they suddenly [style.boldShrink(shrink)].<br/>"));
+					UtilText.parse(owner, "<p>[npc.Name] [npc.verb(let)] испуганно вскрикивает, когда [npc.she] [npc.verb(feel)] успокаивающая прохлада разливается по [npc.her] [npc.wings+], после чего они внезапно [style.boldShrink(сжимаются)].<br/>"));
 			
 		} else {
 			sb.append(
-					UtilText.parse(owner, "<p>[npc.Name] [npc.verb(let)] out an alarmed gasp as [npc.she] [npc.verb(feel)] a pulsating warmth rise up into [npc.her] [npc.wings+], before they suddenly [style.boldGrow(grow larger)].<br/>"));
+					UtilText.parse(owner, "<p>[npc.Name] [npc.verb(let)] испуганно ахает, когда [npc.she] [npc.verb(feel)] пульсирующее тепло разливается по [npc.her] [npc.wings+], после чего они внезапно [style.boldGrow(увеличиваются)].<br/>"));
 		}
 		
 		this.size = effectiveSize;
 
-		sb.append(UtilText.parse(owner, "[npc.Name] now [npc.has] [style.boldSex([npc.wingSize] [npc.wings])]!"));
+		sb.append(UtilText.parse(owner, "[npc.Name] теперь [npc.has] [style.boldSex([npc.wingSize] [npc.wings])]!"));
 
 		if(type!=WingType.NONE) {
 			if(this.getSize().getValue() >= owner.getLegConfiguration().getMinimumWingSizeForFlight(owner.getBody()).getValue()) {
-				sb.append("</br>"
-						+ "Giving them an experimental flap, [npc.sheIs] delighted to discover that they're [style.colourGood(powerful enough to enable [npc.herHim] to fly)]!"
-						+ "<br/>"
-						+ "[style.italics("+Util.capitaliseSentence(owner.getLegConfiguration().getName())+" bodies require wings to be at least '"+owner.getLegConfiguration().getMinimumWingSizeForFlight(owner.getBody()).getName()+"' to enable flight.)]");
+				sb.append("</br>Попробовав ими взмахнуть, [npc.sheIs] с восторгом обнаруживает, что они [style.colourGood(достаточно сильны, чтобы позволить [npc.herHim] летать)]!<br/>[style.italics(\", "+Util.capitaliseSentence(owner.getLegConfiguration().getName())+" телам нужны крылья размером не меньше '"+owner.getLegConfiguration().getMinimumWingSizeForFlight(owner.getBody()).getName()+"', чтобы обеспечить полет.)]");
 			} else {
-				sb.append("</br>"
-						+ "Giving them an experimental flap, [npc.sheIs] disappointed to discover that they're [style.colourBad(not powerful enough to enable [npc.herHim] to fly)]..."
-						+ "<br/>"
-						+ "[style.italics("+Util.capitaliseSentence(owner.getLegConfiguration().getName())+" bodies require wings to be at least '"+owner.getLegConfiguration().getMinimumWingSizeForFlight(owner.getBody()).getName()+"' to enable flight.)]");
+				sb.append("</br>Попробовав ими взмахнуть, [npc.sheIs] с разочарованием обнаруживает, что они [style.colourBad(недостаточно сильны, чтобы позволить [npc.herHim] летать)]...<br/>[style.italics(\", "+Util.capitaliseSentence(owner.getLegConfiguration().getName())+" телам нужны крылья размером не меньше '"+owner.getLegConfiguration().getMinimumWingSizeForFlight(owner.getBody()).getName()+"', чтобы обеспечить полет.)]");
 			}
 		}
 		sb.append("</p>");

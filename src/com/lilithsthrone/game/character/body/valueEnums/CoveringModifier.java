@@ -15,20 +15,20 @@ public enum CoveringModifier {
 	GLOSSY("glossy", false),
 	MATTE("matte", false),
 	SPARKLY("sparkly", false),
-	METALLIC("metallic", false),
+	METALLIC("металлический", false),
 
 	BLAZING("blazing", false),
 	SHIMMERING("shimmering", false),
 	GLITTERING("glittering", false),
-	SWIRLING("swirling", false),
+	SWIRLING("вихрящийся", false),
 	
-	GOOEY("gooey", false) {
+	GOOEY("липкий", false) {
 		@Override
 		public String getName() {
 			return UtilText.returnStringAtRandom(
-					"gooey",
-					"wet",
-					"squishy");
+					"вязкий",
+					"влажный",
+					"мягкие");
 		}
 	},
 	
@@ -42,8 +42,8 @@ public enum CoveringModifier {
 	// Fur/hair:
 	SHORT("short", true),
 	SILKEN("silken", true),
-	FLUFFY("fluffy", true),
-	SHAGGY("shaggy", true),
+	FLUFFY("пушистый", true),
+	SHAGGY("лохматый", true),
 	FURRY("fur-like", true), // FURRY is only used for head hair, not body-covering fur.
 	COARSE("coarse", true);
 	

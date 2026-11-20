@@ -29,25 +29,19 @@ public class TailType {
 			Race.NONE,
 			PenetrationGirth.THREE_AVERAGE,
 			0f,
-			"none",
+			"нет",
 			"",
 			"",
-			"tail",
-			"tails",
+			"хвост",
+			"хвосты",
 			Util.newArrayListOfValues(),
 			Util.newArrayListOfValues(),
 			"",
 			"",
 			Util.newArrayListOfValues(),
 			Util.newArrayListOfValues(),
-			"#IF(npc.getTailCount()==1)"
-				+ " [npc.She] gasps as [npc.she] feels [npc.her] [npc.tail] shrinking down and disappearing into [npc.her] lower back."
-			+ "#ELSE"
-				+ " [npc.She] gasps as [npc.she] feels [npc.her] [npc.tails] shrinking down and disappearing into [npc.her] lower back."
-			+ "#ENDIF"
-			+ "<br/>"
-			+ "[npc.Name] now [npc.has] [style.boldTfGeneric(no tail)].",
-			"[style.colourDisabled([npc.She] [npc.do] not have a tail.)]",
+			"#IF(npc.getTailCount()==1) [npc.She] ахает, когда [npc.she] чувствует, как [npc.her] [npc.tail] уменьшается и исчезает в [npc.her] пояснице.@ELSE [npc.She] ахает, когда [npc.she] чувствует, как [npc.her] [npc.tails] уменьшается и исчезает в [npc.her] пояснице.#ENDIF<br/>[npc.Name] теперь [npc.has] [style.boldTfGeneric(без хвоста)].",
+			"[style.colourDisabled([npc.She] [npc.do] нет хвоста.)]",
 			Util.newArrayListOfValues(), false) {
 	};
 	
@@ -56,46 +50,19 @@ public class TailType {
 			Race.DEMON,
 			PenetrationGirth.ONE_SLENDER,
 			1f,
-			"demonic spaded",
+			"демонический лопатообразный",
 			"",
 			"",
-			"tail",
-			"tails",
-			Util.newArrayListOfValues("spaded", "demonic"),
-			Util.newArrayListOfValues("spaded", "demonic"),
-			"tip",
-			"tips",
-			Util.newArrayListOfValues("spaded"),
-			Util.newArrayListOfValues("spaded"),
-			"#IF(npc.getTailCount()==1)"
-				+ " A demonic, spaded tail sprouts from just above [npc.her] ass, rapidly growing in size until it's about [npc.tailLength] long."
-				+ " [npc.She] quickly [npc.verb(realise)] that [npc.she] [npc.has] complete control over where it goes, allowing [npc.herHim] to use it like a third limb."
-				+ "<br/>"
-				+ "[npc.Name] now [npc.has]"
-				+ "#IF(npc.isShortStature())"
-					+ " an [style.boldImp(impish tail)]"
-				+ "#ELSE"
-					+ " a [style.boldDemon(demonic tail)]"
-				+ "#ENDIF"
-				+ ", [npc.materialDescriptor] [npc.tailFullDescription(true)]."
-			+ "#ELSE"
-				+ " [npc.TailCount] demonic, spaded tails sprout from just above [npc.her] ass, rapidly growing in size until they're each about [npc.tailLength] long."
-				+ " [npc.She] quickly [npc.verb(realise)] that [npc.she] [npc.has] complete control over where they go, allowing [npc.herHim] to use them like extra limbs."
-				+ "<br/>"
-				+ "[npc.Name] now [npc.has] [npc.tailCount]"
-				+ "#IF(npc.isShortStature())"
-					+ " [style.boldImp(impish tails)]"
-				+ "#ELSE"
-					+ " [style.boldDemon(demonic tails)]"
-				+ "#ENDIF"
-				+ ", [npc.materialDescriptor] [npc.tailFullDescription(true)]."
-			+ "#ENDIF",
-			"Growing out from just above [npc.her] ass, [npc.sheHasFull]"
-				+ "#IF(npc.getTailCount()==1)"
-					+ " a spaded, [npc.tailColour(true)] #IF(npc.isShortStature())impish#ELSEdemonic#ENDIF tail, over which [npc.sheHasFull] complete control, allowing [npc.herHim] to use it to grip and hold objects."
-				+ "#ELSE"
-					+ " [npc.tailCount] spaded, [npc.tailColour(true)] #IF(npc.isShortStature())impish#ELSEdemonic#ENDIF tails, over which [npc.sheHasFull] complete control, allowing [npc.herHim] to use them to grip and hold objects."
-				+ "#ENDIF",
+			"хвост",
+			"хвосты",
+			Util.newArrayListOfValues("чешуйчатый", "демонический"),
+			Util.newArrayListOfValues("чешуйчатый", "демонический"),
+			"кончик",
+			"кончики",
+			Util.newArrayListOfValues("чешуйчатый"),
+			Util.newArrayListOfValues("чешуйчатый"),
+			"#IF(npc.getTailCount()==1) Из области чуть выше [npc.her] задницы прорастает демонический хвост с кисточкой-лопастью, стремительно увеличиваясь в размерах, пока не достигнет примерно [npc.tailLength] в длину. [npc.She] быстро [npc.verb(realise)], что [npc.she] [npc.has] полностью контролирует каждое его движение, позволяя [npc.herHim] использовать его как третью конечность.<br/>[npc.Name] теперь [npc.has]#IF(npc.isShortStature()) [style.boldImp(бесовский хвост)]#ELSE [style.boldDemon(демонический хвост)]#ENDIF, [npc.materialDescriptor] [npc.tailFullDescription(true)].#ELSE [npc.TailCount] Из области чуть выше [npc.her] задницы прорастают демонические хвосты с кисточками-лопастями, стремительно увеличиваясь в размерах, пока каждый из них не достигнет примерно [npc.tailLength] в длину. [npc.She] быстро [npc.verb(realise)], что [npc.she] [npc.has] полностью контролирует каждое их движение, позволяя [npc.herHim] использовать их как дополнительные конечности.<br/>[npc.Name] теперь [npc.has] [npc.tailCount]#IF(npc.isShortStature()) [style.boldImp(бесовские хвосты)]#ELSE [style.boldDemon(демонические хвосты)]#ENDIF, [npc.materialDescriptor] [npc.tailFullDescription(true)].#ENDIF",
+			"Растущий чуть выше [npc.her] задницы, [npc.sheHasFull]#IF(npc.getTailCount()==1) лопатообразный, [npc.tailColour(true)] #IF(npc.isShortStature())бесовский#ELSEдемонический#ENDIF хвост, над которым [npc.sheHasFull] полный контроль, позволяющий [npc.herHim] использовать его, чтобы хватать и удерживать предметы.#ELSE [npc.tailCount] лопатообразных, [npc.tailColour(true)] #IF(npc.isShortStature())бесовских#ELSEдемонических#ENDIF хвоста, над которыми [npc.sheHasFull] полный контроль, позволяющий [npc.herHim] использовать их, чтобы хватать и удерживать предметы.#ENDIF",
 			Util.newArrayListOfValues(
 					BodyPartTag.TAIL_PREHENSILE,
 					BodyPartTag.TAIL_SUITABLE_FOR_PENETRATION,
@@ -109,48 +76,19 @@ public class TailType {
 			Race.DEMON,
 			PenetrationGirth.ONE_SLENDER,
 			0.5f,
-			"demonic hair-tipped",
+			"демонический с кисточкой на конце",
 			"",
 			"",
-			"tail",
-			"tails",
-			Util.newArrayListOfValues("hair-tipped", "demonic"),
-			Util.newArrayListOfValues("hair-tipped", "demonic"),
-			"tip",
-			"tips",
-			Util.newArrayListOfValues("hair-tufted"),
-			Util.newArrayListOfValues("hair-tufted"),
-			"#IF(npc.getTailCount()==1)"
-				+ " A demonic tail, tipped with a tuft of hair, sprouts from just above [npc.her] ass, rapidly growing in size until it's about [npc.tailLength] long."
-				+ " [npc.She] quickly [npc.verb(realise)] that [npc.she] [npc.has] complete control over where it goes, allowing [npc.herHim] to use it like a third limb."
-				+ "<br/>"
-				+ "[npc.Name] now [npc.has]"
-				+ "#IF(npc.isShortStature())"
-					+ " an [style.boldImp(impish tail)]"
-				+ "#ELSE"
-					+ " a [style.boldDemon(demonic tail)]"
-				+ "#ENDIF"
-				+ ", [npc.materialDescriptor] [npc.tailFullDescription(true)] and tipped with [#npc.getCovering(BODY_COVERING_TYPE_HAIR_DEMON).getFullDescription(npc, true)]."
-			+ "#ELSE"
-				+ " [npc.TailCount] demonic tails, tipped with a tuft of hair, sprout from just above [npc.her] ass, rapidly growing in size until they're each about [npc.tailLength] long."
-				+ " [npc.She] quickly [npc.verb(realise)] that [npc.she] [npc.has] complete control over where they go, allowing [npc.herHim] to use them like extra limbs."
-				+ "<br/>"
-				+ "[npc.Name] now [npc.has] [npc.tailCount]"
-				+ "#IF(npc.isShortStature())"
-					+ " [style.boldImp(impish tails)]"
-				+ "#ELSE"
-					+ " [style.boldDemon(demonic tails)]"
-				+ "#ENDIF"
-				+ ", [npc.materialDescriptor] [npc.tailFullDescription(true)] and tipped with [#npc.getCovering(BODY_COVERING_TYPE_HAIR_DEMON).getFullDescription(npc, true)]."
-			+ "#ENDIF",
-			"Growing out from just above [npc.her] ass, [npc.sheHasFull]"
-				+ "#IF(npc.getTailCount()==1)"
-					+ " a [npc.tailColour(true)], #IF(npc.isShortStature())impish#ELSEdemonic#ENDIF tail, tipped with [#npc.getCovering(BODY_COVERING_TYPE_HAIR_DEMON).getFullDescription(npc, true)],"
-						+ " over which [npc.sheHasFull] complete control, allowing [npc.herHim] to use it to grip and hold objects."
-				+ "#ELSE"
-					+ " [npc.tailCount] [npc.tailColour(true)], #IF(npc.isShortStature())impish#ELSEdemonic#ENDIF tails, tipped with [#npc.getCovering(BODY_COVERING_TYPE_HAIR_DEMON).getFullDescription(npc, true)],"
-						+ " over which [npc.sheHasFull] complete control, allowing [npc.herHim] to use them to grip and hold objects."
-				+ "#ENDIF",
+			"хвост",
+			"хвосты",
+			Util.newArrayListOfValues("с кисточкой на конце", "демонический"),
+			Util.newArrayListOfValues("с кисточкой на конце", "демонический"),
+			"кончик",
+			"кончики",
+			Util.newArrayListOfValues("с пушистым кончиком"),
+			Util.newArrayListOfValues("с пушистыми кончиками"),
+			"#IF(npc.getTailCount()==1) Демонический хвост с пучком волос на конце прорастает чуть выше [npc.her] задницы, стремительно увеличиваясь в размерах, пока не достигнет примерно [npc.tailLength] в длину. [npc.She] быстро [npc.verb(realise)], что [npc.she] [npc.has] полностью контролирует его движения, позволяя [npc.herHim] использовать его как третью конечность.<br/>[npc.Name] теперь [npc.has]#IF(npc.isShortStature()) [style.boldImp(бесовский хвост)]#ELSE [style.boldDemon(демонический хвост)]#ENDIF, [npc.materialDescriptor] [npc.tailFullDescription(true)] и с кончиком из [#npc.getCovering(BODY_COVERING_TYPE_HAIR_DEMON).getFullDescription(npc, true)].#ELSE [npc.TailCount] демонических хвоста, с пучками волос на концах, прорастают чуть выше [npc.her] задницы, стремительно увеличиваясь в размерах, пока каждый из них не достигнет примерно [npc.tailLength] в длину. [npc.She] быстро [npc.verb(realise)], что [npc.she] [npc.has] полностью контролирует их движения, позволяя [npc.herHim] использовать их как дополнительные конечности.<br/>[npc.Name] теперь [npc.has] [npc.tailCount]#IF(npc.isShortStature()) [style.boldImp(бесовские хвосты)]#ELSE [style.boldDemon(демонические хвосты)]#ENDIF, [npc.materialDescriptor] [npc.tailFullDescription(true)] и с кончиками из [#npc.getCovering(BODY_COVERING_TYPE_HAIR_DEMON).getFullDescription(npc, true)].#ENDIF",
+			"Растущий чуть выше [npc.her] задницы, [npc.sheHasFull]#IF(npc.getTailCount()==1) [npc.tailColour(true)] #IF(npc.isShortStature())бесовский#ELSEдемонический#ENDIF хвост с кончиком [#npc.getCovering(BODY_COVERING_TYPE_HAIR_DEMON).getFullDescription(npc, true)], над которым [npc.sheHasFull] имеет полный контроль, что позволяет [npc.herHim] использовать его, чтобы хватать и удерживать предметы.#ELSE [npc.tailCount] [npc.tailColour(true)] #IF(npc.isShortStature())бесовских#ELSEдемонических#ENDIF хвостов с кончиками [#npc.getCovering(BODY_COVERING_TYPE_HAIR_DEMON).getFullDescription(npc, true)], над которыми [npc.sheHasFull] имеет полный контроль, что позволяет [npc.herHim] использовать их, чтобы хватать и удерживать предметы.#ENDIF",
 			Util.newArrayListOfValues(
 					BodyPartTag.TAIL_PREHENSILE,
 					BodyPartTag.TAIL_SLEEP_HUGGING,
@@ -163,46 +101,19 @@ public class TailType {
 			Race.DEMON,
 			PenetrationGirth.THREE_AVERAGE,
 			0.75f,
-			"demonic tapered",
+			"демонический, сужающийся",
 			"",
 			"",
-			"tail",
-			"tails",
-			Util.newArrayListOfValues("tapered", "demonic"),
-			Util.newArrayListOfValues("tapered", "demonic"),
-			"tip",
-			"tips",
-			Util.newArrayListOfValues("tapered"),
-			Util.newArrayListOfValues("tapered"),
-			"#IF(npc.getTailCount()==1)"
-				+ " A demonic, tapered tail sprouts from just above [npc.her] ass, rapidly growing in size until it's about [npc.tailLength] long."
-				+ " [npc.She] quickly [npc.verb(realise)] that [npc.she] [npc.has] complete control over where it goes, allowing [npc.herHim] to use it like a third limb."
-				+ "<br/>"
-				+ "[npc.Name] now [npc.has]"
-				+ "#IF(npc.isShortStature())"
-					+ " an [style.boldImp(impish, tapered tail)]"
-				+ "#ELSE"
-					+ " a [style.boldDemon(demonic, tapered tail)]"
-				+ "#ENDIF"
-				+ ", [npc.materialDescriptor] [npc.tailFullDescription(true)]."
-			+ "#ELSE"
-				+ " [npc.TailCount] demonic, tapered tails sprout from just above [npc.her] ass, rapidly growing in size until they're each about [npc.tailLength] long."
-				+ " [npc.She] quickly [npc.verb(realise)] that [npc.she] [npc.has] complete control over where they go, allowing [npc.herHim] to use them like extra limbs."
-				+ "<br/>"
-				+ "[npc.Name] now [npc.has] [npc.tailCount]"
-				+ "#IF(npc.isShortStature())"
-					+ " [style.boldImp(impish, tapered tails)]"
-				+ "#ELSE"
-					+ " [style.boldDemon(demonic, tapered tails)]"
-				+ "#ENDIF"
-				+ ", [npc.materialDescriptor] [npc.tailFullDescription(true)]."
-			+ "#ENDIF",
-			"Growing out from just above [npc.her] ass, [npc.sheHasFull]"
-				+ "#IF(npc.getTailCount()==1)"
-					+ " a tapered, [npc.tailColour(true)] #IF(npc.isShortStature())impish#ELSEdemonic#ENDIF tail, over which [npc.sheHasFull] complete control, allowing [npc.herHim] to use it to grip and hold objects."
-				+ "#ELSE"
-					+ " [npc.tailCount] tapered, [npc.tailColour(true)] #IF(npc.isShortStature())impish#ELSEdemonic#ENDIF tails, over which [npc.sheHasFull] complete control, allowing [npc.herHim] to use them to grip and hold objects."
-				+ "#ENDIF",
+			"хвост",
+			"хвосты",
+			Util.newArrayListOfValues("заостренный", "демонический"),
+			Util.newArrayListOfValues("заостренный", "демонический"),
+			"кончик",
+			"кончики",
+			Util.newArrayListOfValues("заостренный"),
+			Util.newArrayListOfValues("заостренный"),
+			"#IF(npc.getTailCount()==1) Из-под самой верхней части [npc.her] задницы прорастает демонический сужающийся хвост, стремительно увеличиваясь в размерах, пока не достигнет примерно [npc.tailLength] в длину. [npc.She] быстро [npc.verb(realise)], что [npc.she] [npc.has] полностью контролирует каждое его движение, позволяя [npc.herHim] использовать его как третью конечность.<br/>[npc.Name] теперь [npc.has]#IF(npc.isShortStature()) [style.boldImp(бесовский, сужающийся хвост)]#ELSE [style.boldDemon(демонический, сужающийся хвост)]#ENDIF, [npc.materialDescriptor] [npc.tailFullDescription(true)].#ELSE [npc.TailCount] Из-под самой верхней части [npc.her] задницы прорастают демонические сужающиеся хвосты, стремительно увеличиваясь в размерах, пока каждый из них не достигнет примерно [npc.tailLength] в длину. [npc.She] быстро [npc.verb(realise)], что [npc.she] [npc.has] полностью контролирует каждое их движение, позволяя [npc.herHim] использовать их как дополнительные конечности.<br/>[npc.Name] теперь [npc.has] [npc.tailCount]#IF(npc.isShortStature()) [style.boldImp(бесовские, сужающиеся хвосты)]#ELSE [style.boldDemon(демонические, сужающиеся хвосты)]#ENDIF, [npc.materialDescriptor] [npc.tailFullDescription(true)].#ENDIF",
+			"Растущий чуть выше [npc.her] задницы, [npc.sheHasFull]#IF(npc.getTailCount()==1) сужающийся, [npc.tailColour(true)] #IF(npc.isShortStature())бесовский#ELSEдемонический#ENDIF хвост, над которым [npc.sheHasFull] полный контроль, позволяющий [npc.herHim] использовать его, чтобы хватать и удерживать предметы.#ELSE [npc.tailCount] сужающиеся, [npc.tailColour(true)] #IF(npc.isShortStature())бесовские#ELSEдемонические#ENDIF хвоста, над которыми [npc.sheHasFull] полный контроль, позволяющий [npc.herHim] использовать их, чтобы хватать и удерживать предметы.#ENDIF",
 			Util.newArrayListOfValues(
 					BodyPartTag.TAIL_PREHENSILE,
 					BodyPartTag.TAIL_SUITABLE_FOR_PENETRATION,
@@ -216,48 +127,19 @@ public class TailType {
 			Race.DEMON,
 			PenetrationGirth.THREE_AVERAGE,
 			0.3f,
-			"demonic horse",
+			"демонический конь",
 			"",
 			"",
-			"tail",
-			"tails",
-			Util.newArrayListOfValues("horse-like"),
-			Util.newArrayListOfValues("horse-like"),
-			"end",
-			"ends",
-			Util.newArrayListOfValues("loose"),
-			Util.newArrayListOfValues("loose"),
-			"#IF(npc.getTailCount()==1)"
-				+ " A horse-like tail sprouts from just above [npc.her] ass, rapidly growing in length until it hangs down about [npc.tailLength] behind [npc.herHim]."
-				+ " [npc.She] quickly [npc.verb(discover)] that [npc.her] control over it is limited to swishing it from side to side."
-				+ "<br/>"
-				+ "[npc.Name] now [npc.has]"
-				+ "#IF(npc.isShortStature())"
-					+ " an [style.boldImp(impish, horse-like tail)]"
-				+ "#ELSE"
-					+ " a [style.boldDemon(demonic, horse-like tail)]"
-				+ "#ENDIF"
-				+ ", made out of [npc.tailFullDescription(true)]."
-			+ "#ELSE"
-				+ " [npc.TailCount] horse-like tails sprout from just above [npc.her] ass, rapidly growing in length until they hang down about [npc.tailLength] behind [npc.herHim]."
-				+ " [npc.She] quickly [npc.verb(discover)] that [npc.her] control over them is limited to swishing them from side to side."
-				+ "<br/>"
-				+ "[npc.Name] now [npc.has] [npc.tailCount]"
-				+ "#IF(npc.isShortStature())"
-					+ " [style.boldImp(impish, horse-like tails)]"
-				+ "#ELSE"
-					+ " [style.boldDemon(demonic, horse-like tails)]"
-				+ "#ENDIF"
-				+ ", made out of [npc.tailFullDescription(true)]."
-			+ "#ENDIF",
-			"Growing out from just above [npc.her] ass, [npc.sheHasFull]"
-				+ "#IF(npc.getTailCount()==1)"
-					+ " a #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)], #IF(npc.isShortStature())impish#ELSEdemonic#ENDIF-horse tail,"
-						+ " which [npc.she] can swipe from side to side, but other than that, [npc.she] [npc.does]n't have much control over it."
-				+ "#ELSE"
-					+ " [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] #IF(npc.isShortStature())impish#ELSEdemonic#ENDIF-horse tails,"
-						+ " which [npc.she] can swipe from side to side, but other than that, [npc.she] [npc.does]n't have much control over them."
-				+ "#ENDIF",
+			"хвост",
+			"хвосты",
+			Util.newArrayListOfValues("лошадиный"),
+			Util.newArrayListOfValues("лошадиный"),
+			"конец",
+			"заканчивается",
+			Util.newArrayListOfValues("свободный"),
+			Util.newArrayListOfValues("свободный"),
+			"#IF(npc.getTailCount()==1) Прямо над задницей [npc.her] вырастает лошадиный хвост, стремительно удлиняясь, пока не будет свисать примерно на [npc.tailLength] позади [npc.herHim]. [npc.She] быстро [npc.verb(discover)], что [npc.her] контроль над ним ограничен лишь тем, что им можно вилять из стороны в сторону.<br/>[npc.Name] теперь [npc.has]#IF(npc.isShortStature()) [style.boldImp(бесовский, лошадиный хвост)]#ELSE [style.boldDemon(демонический, лошадиный хвост)]#ENDIF, состоящий из [npc.tailFullDescription(true)].#ELSE Из-под задницы [npc.her] вырастают [npc.TailCount] лошадиных хвоста, стремительно удлиняясь, пока не будут свисать примерно на [npc.tailLength] позади [npc.herHim]. [npc.She] быстро [npc.verb(discover)], что [npc.her] контроль над ними ограничен лишь тем, что ими можно вилять из стороны в сторону.<br/>[npc.Name] теперь [npc.has] [npc.tailCount]#IF(npc.isShortStature()) [style.boldImp(бесовские, лошадиные хвосты)]#ELSE [style.boldDemon(демонические, лошадиные хвосты)]#ENDIF, состоящие из [npc.tailFullDescription(true)].#ENDIF",
+			"Растущий чуть выше [npc.her] задницы, [npc.sheHasFull]#IF(npc.getTailCount()==1) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] #IF(npc.isShortStature())бесовский#ELSEдемонический#ENDIF конский хвост, которым [npc.she] может вилять из стороны в сторону, но в остальном [npc.she] [npc.does] почти не управляет им.#ELSE [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] #IF(npc.isShortStature())бесовские#ELSEдемонические#ENDIF конские хвосты, которыми [npc.she] может вилять из стороны в сторону, но в остальном [npc.she] [npc.does] почти не управляет ими.#ENDIF",
 			Util.newArrayListOfValues(
 					BodyPartTag.TAIL_TYPE_HAIR,
 					BodyPartTag.TAIL_TAPERING_NONE), false) {
@@ -268,52 +150,19 @@ public class TailType {
 			Race.DEMON,
 			PenetrationGirth.THREE_AVERAGE,
 			0.75f,
-			"demonic ovipositor",
+			"демонический яйцеклад",
 			"",
 			"",
-			"tail",
-			"tails",
-			Util.newArrayListOfValues("ovipositor", "demonic"),
-			Util.newArrayListOfValues("ovipositor", "demonic"),
-			"tip",
-			"tips",
-			Util.newArrayListOfValues("ovipositor"),
-			Util.newArrayListOfValues("ovipositor"),
-			"#IF(npc.getTailCount()==1)"
-				+ " A demonic, tapered tail sprouts from just above [npc.her] ass, rapidly growing in size until it's about [npc.tailLength] long."
-				+ " The end swells out a little into a slightly bulbous, tapered bulge, before a vice-tight, cross-shaped slit forms across its tip."
-				+ " Letting out [npc.a_moan], [npc.name] instinctively [npc.verb(feel)] that this new tail of [npc.hers] can be used as an ovipositor."
-				+ " Turning it this way and that, [npc.she] quickly [npc.verb(discover)] that [npc.she] [npc.has] complete control over where it goes, allowing [npc.herHim] to use it like a third limb."
-				+ "<br/>"
-				+ "[npc.Name] now [npc.has]"
-				+ "#IF(npc.isShortStature())"
-					+ " an [style.boldImp(impish, ovipositor tail)]"
-				+ "#ELSE"
-					+ " a [style.boldDemon(demonic, ovipositor tail)]"
-				+ "#ENDIF"
-				+ ", [npc.materialDescriptor] [npc.tailFullDescription(true)]."
-			+ "#ELSE"
-				+ " [npc.TailCount] demonic, tapered tails sprout from just above [npc.her] ass, rapidly growing in size until they're each about [npc.tailLength] long."
-				+ " The ends of each one swell out a little into slightly bulbous, tapered bulges, before vice-tight, cross-shaped slits form across their tips."
-				+ " Letting out [npc.a_moan], [npc.name] instinctively [npc.verb(feel)] that these new tails of [npc.hers] can be used as ovipositors."
-				+ " Turning them this way and that, [npc.she] quickly [npc.verb(discover)] that [npc.she] [npc.has] complete control over where they go, allowing [npc.herHim] to use them like extra limbs."
-				+ "<br/>"
-				+ "[npc.Name] now [npc.has] [npc.tailCount]"
-				+ "#IF(npc.isShortStature())"
-					+ " [style.boldImp(impish, ovipositor tails)]"
-				+ "#ELSE"
-					+ " [style.boldDemon(demonic, ovipositor tails)]"
-				+ "#ENDIF"
-				+ ", [npc.materialDescriptor] [npc.tailFullDescription(true)]."
-			+ "#ENDIF",
-			"Growing out from just above [npc.her] ass, [npc.sheHasFull]"
-				+ "#IF(npc.getTailCount()==1)"
-					+ " a tapered, [npc.tailColour(true)] #IF(npc.isShortStature())impish#ELSEdemonic#ENDIF tail, over which [npc.sheHasFull] complete control, allowing [npc.herHim] to use it to grip and hold objects."
-					+ "  The end has swollen out a little into a slightly bulbous, tapered bulge, while a vice-tight, cross-shaped slit has formed across its tip, allowing [npc.herHim] to use it as an ovipositor."
-				+ "#ELSE"
-					+ " [npc.tailCount] tapered, [npc.tailColour(true)] #IF(npc.isShortStature())impish#ELSEdemonic#ENDIF tails, over which [npc.sheHasFull] complete control, allowing [npc.herHim] to use them to grip and hold objects."
-					+ "  The ends of each one have swollen out a little into slightly bulbous, tapered bulges, while vice-tight, cross-shaped slits have formed across their tips, allowing [npc.herHim] to use them as ovipositors."
-				+ "#ENDIF",
+			"хвост",
+			"хвосты",
+			Util.newArrayListOfValues("яйцеклад", "демонический"),
+			Util.newArrayListOfValues("яйцеклад", "демонический"),
+			"кончик",
+			"кончики",
+			Util.newArrayListOfValues("яйцеклад"),
+			Util.newArrayListOfValues("яйцеклад"),
+			"#IF(npc.getTailCount()==1) A demonic, tapered tail sprouts from just above [npc.her] ass, rapidly growing in size until it's about [npc.tailLength] long. The end swells out a little into a slightly bulbous, tapered bulge, before a vice-tight, cross-shaped slit forms across its tip. Letting out [npc.a_moan], [npc.name] instinctively [npc.verb(feel)] that this new tail of [npc.hers] can be used as an ovipositor. Turning it this way and that, [npc.she] quickly [npc.verb(discover)] that [npc.she] [npc.has] complete control over where it goes, allowing [npc.herHim] to use it like a third limb.<br/>[npc.Name] now [npc.has]#IF(npc.isShortStature()) an [style.boldImp(impish, ovipositor tail)]#ELSE a [style.boldDemon(demonic, ovipositor tail)]#ENDIF, [npc.materialDescriptor] [npc.tailFullDescription(true)].#ELSE [npc.TailCount] demonic, tapered tails sprout from just above [npc.her] ass, rapidly growing in size until they're each about [npc.tailLength] long. The ends of each one swell out a little into slightly bulbous, tapered bulges, before vice-tight, cross-shaped slits form across their tips. Letting out [npc.a_moan], [npc.name] instinctively [npc.verb(feel)] that these new tails of [npc.hers] can be used as ovipositors. Turning them this way and that, [npc.she] quickly [npc.verb(discover)] that [npc.she] [npc.has] complete control over where they go, allowing [npc.herHim] to use them like extra limbs.<br/>[npc.Name] now [npc.has] [npc.tailCount]#IF(npc.isShortStature()) [style.boldImp(impish, ovipositor tails)]#ELSE [style.boldDemon(demonic, ovipositor tails)]#ENDIF, [npc.materialDescriptor] [npc.tailFullDescription(true)].#ENDIF",
+			"Растущий чуть выше [npc.her] задницы, [npc.sheHasFull]#IF(npc.getTailCount()==1) сужающийся, [npc.tailColour(true)] #IF(npc.isShortStature())бесовский#ELSEдемонический#ENDIF хвост, над которым [npc.sheHasFull] обладает полным контролем, что позволяет [npc.herHim] использовать его, чтобы захватывать и удерживать предметы. Его кончик слегка раздулся, превратившись в небольшое округлое утолщение, а на самом конце образовалась плотно сжатая крестообразная щель, позволяющая [npc.herHim] использовать его как яйцеклад.#ELSE [npc.tailCount] сужающиеся, [npc.tailColour(true)] #IF(npc.isShortStature())бесовские#ELSEдемонические#ENDIF хвоста, над которыми [npc.sheHasFull] обладает полным контролем, что позволяет [npc.herHim] использовать их, чтобы захватывать и удерживать предметы. Кончики каждого из них слегка раздулись, превратившись в небольшие округлые утолщения, а на их концах образовались плотно сжатые крестообразные щели, позволяющие [npc.herHim] использовать их как яйцеклады.#ENDIF",
 			Util.newArrayListOfValues(
 					BodyPartTag.TAIL_PREHENSILE,
 					BodyPartTag.TAIL_SUITABLE_FOR_PENETRATION,
@@ -329,34 +178,19 @@ public class TailType {
 			Race.ALLIGATOR_MORPH,
 			PenetrationGirth.FIVE_THICK,
 			0.6f,
-			"alligator",
+			"аллигатора",
 			"",
 			"",
-			"tail",
-			"tails",
-			Util.newArrayListOfValues("alligator-like"),
-			Util.newArrayListOfValues("alligator-like"),
-			"tip",
-			"tips",
+			"хвост",
+			"хвосты",
+			Util.newArrayListOfValues("аллигатороподобного"),
+			Util.newArrayListOfValues("аллигатороподобного"),
+			"кончик",
+			"кончики",
 			Util.newArrayListOfValues(""),
 			Util.newArrayListOfValues(""),
-			"#IF(npc.getTailCount()==1)"
-				+ " A scaly, alligator-like tail sprouts from just above [npc.her] ass, rapidly growing in size until it's about [npc.tailLength] long."
-				+ " [npc.She] quickly [npc.verb(discover)] that [npc.she] can swish it from side to side with considerable force."
-				+ "<br/>"
-				+ "[npc.Name] now [npc.has] a [style.boldAlligatorMorph(alligator-like tail)], [npc.materialDescriptor] [npc.tailFullDescription(true)]."
-			+ "#ELSE"
-				+ " [npc.TailCount] scaly, alligator-like tails sprout from just above [npc.her] ass, rapidly growing in size until they're each about [npc.tailLength] long."
-				+ " [npc.She] quickly [npc.verb(discover)] that [npc.she] can swish them from side to side with considerable force."
-				+ "<br/>"
-				+ "[npc.Name] now [npc.has] [npc.tailCount] [style.boldAlligatorMorph(alligator-like tails)], [npc.materialDescriptor] [npc.tailFullDescription(true)]."
-			+ "#ENDIF",
-			"Growing out from just above [npc.her] ass, [npc.sheHasFull]"
-				+ "#IF(npc.getTailCount()==1)"
-					+ " a #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] alligator tail, which [npc.she] can swipe from side to side with considerable force."
-				+ "#ELSE"
-					+ " [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] alligator tails, which [npc.she] can swipe from side to side with considerable force."
-				+ "#ENDIF",
+			"#IF(npc.getTailCount()==1) Прямо над [npc.her] задницей вырастает чешуйчатый, похожий на аллигаторовый хвост, стремительно увеличиваясь в размерах, пока не достигнет около [npc.tailLength] в длину. [npc.She] быстро [npc.verb(discover)], что [npc.she] может с приличной силой вилять им из стороны в сторону.<br/>[npc.Name] теперь [npc.has] [style.boldAlligatorMorph(аллигаторовый хвост)], [npc.materialDescriptor] [npc.tailFullDescription(true)].#ELSE [npc.TailCount] Прямо над [npc.her] задницей вырастают чешуйчатые, похожие на аллигаторовые хвосты, стремительно увеличиваясь в размерах, пока каждый из них не достигнет около [npc.tailLength] в длину. [npc.She] быстро [npc.verb(discover)], что [npc.she] может с приличной силой вилять ими из стороны в сторону.<br/>[npc.Name] теперь [npc.has] [npc.tailCount] [style.boldAlligatorMorph(аллигаторовые хвосты)], [npc.materialDescriptor] [npc.tailFullDescription(true)].#ENDIF",
+			"Растущий прямо над [npc.her] задницей, [npc.sheHasFull]#IF(npc.getTailCount()==1) [style.colourFeral(дикий)],#ENDIF [npc.tailColour(true)] аллигаторовый хвост, которым [npc.she] может с большой силой вилять из стороны в сторону.#ELSE [npc.tailCount] [style.colourFeral(дикие)],#ENDIF [npc.tailColour(true)] аллигаторовые хвосты, которыми [npc.she] может с большой силой вилять из стороны в сторону.#ENDIF",
 			Util.newArrayListOfValues(
 					BodyPartTag.TAIL_SUITABLE_FOR_PENETRATION,
 					BodyPartTag.TAIL_SLEEP_HUGGING,
@@ -370,36 +204,19 @@ public class TailType {
 			Race.BAT_MORPH,
 			PenetrationGirth.ONE_SLENDER,
 			0.2f,
-			"bat",
+			"летучая мышь",
 			"",
 			"",
-			"tail",
-			"tails",
-			Util.newArrayListOfValues("bat-like"),
-			Util.newArrayListOfValues("bat-like"),
-			"tip",
-			"tips",
-			Util.newArrayListOfValues("furry"),
-			Util.newArrayListOfValues("furry"),
-			"#IF(npc.getTailCount()==1)"
-				+ " A small, bat-like tail sprouts from just above [npc.her] ass, rapidly growing in size until it's about [npc.tailLength] long."
-				+ " [npc.She] quickly [npc.verb(realise)] that [npc.she] [npc.has] a decent amount of control over it, and can twist it almost anywhere [npc.she] [npc.verb(please)]."
-				+ "<br/>"
-				+ "[npc.Name] now [npc.has] a [style.boldBatMorph(bat-like tail)], [npc.materialDescriptor] [npc.tailFullDescription(true)]."
-			+ "#ELSE"
-				+ " [npc.TailCount] small, bat-like tails sprout from just above [npc.her] ass, rapidly growing in size until they're each about [npc.tailLength] long."
-				+ " [npc.She] quickly [npc.verb(realise)] that [npc.she] [npc.has] a decent amount of control over them, and can twist them almost anywhere [npc.she] [npc.verb(please)]."
-				+ "<br/>"
-				+ "[npc.Name] now [npc.has] [npc.tailCount] [style.boldBatMorph(bat-like tails)], [npc.materialDescriptor] [npc.tailFullDescription(true)]."
-			+ "#ENDIF",
-			"Growing out from just above [npc.her] ass, [npc.sheHasFull]"
-				+ "#IF(npc.getTailCount()==1)"
-					+ " a #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] bat tail,"
-						+ " which [npc.she] can rapidly move up and down to help [npc.herHim] keep [npc.her] balance and to control [npc.her] path when in flight."
-				+ "#ELSE"
-					+ " [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] bat tails,"
-						+ " which [npc.she] can rapidly move up and down to help [npc.herHim] keep [npc.her] balance and to control [npc.her] path when in flight."
-				+ "#ENDIF",
+			"хвост",
+			"хвосты",
+			Util.newArrayListOfValues("похожими на крылья летучей мыши"),
+			Util.newArrayListOfValues("похожими на крылья летучей мыши"),
+			"кончик",
+			"кончики",
+			Util.newArrayListOfValues("пушистая"),
+			Util.newArrayListOfValues("пушистая"),
+			"#IF(npc.getTailCount()==1) Прямо над [npc.her] задницей прорастает маленький, похожий на летучий хвост, который стремительно растет, пока не достигнет примерно [npc.tailLength] в длину. [npc.She] быстро [npc.verb(realise)], что [npc.she] [npc.has] вполне неплохо ими управляет, и может изгибать его почти в любом направлении, [npc.she] [npc.verb(please)].<br/>[npc.Name] теперь [npc.has] [style.boldBatMorph(похожий на летучий хвост)], [npc.materialDescriptor] [npc.tailFullDescription(true)].#ELSE [npc.TailCount] прямо над [npc.her] задницей прорастают маленькие, похожие на летучий хвосты, которые стремительно растут, пока каждый из них не достигнет примерно [npc.tailLength] в длину. [npc.She] быстро [npc.verb(realise)], что [npc.she] [npc.has] вполне неплохо ими управляет, и может изгибать их почти в любом направлении, [npc.she] [npc.verb(please)].<br/>[npc.Name] теперь [npc.has] [npc.tailCount] [style.boldBatMorph(похожие на летучий хвосты)], [npc.materialDescriptor] [npc.tailFullDescription(true)].#ENDIF",
+			"Растущий чуть выше [npc.her] задницы, [npc.sheHasFull]#IF(npc.getTailCount()==1) #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] летучий хвост, которым [npc.she] может быстро двигать вверх и вниз, чтобы помогать [npc.herHim] сохранять [npc.her] равновесие и управлять [npc.her] траекторией в полете.#ELSE [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] летучие хвосты, которыми [npc.she] может быстро двигать вверх и вниз, чтобы помогать [npc.herHim] сохранять [npc.her] равновесие и управлять [npc.her] траекторией в полете.#ENDIF",
 			Util.newArrayListOfValues(
 					BodyPartTag.TAIL_TYPE_GENERIC,
 					BodyPartTag.TAIL_TAPERING_NONE), false) {
@@ -410,34 +227,19 @@ public class TailType {
 			Race.CAT_MORPH,
 			PenetrationGirth.TWO_NARROW,
 			0.8f,
-			"feline",
+			"кошачьими",
 			"",
 			"",
-			"tail",
-			"tails",
-			Util.newArrayListOfValues("cat-like", "furry"),
-			Util.newArrayListOfValues("cat-like", "furry"),
-			"tip",
-			"tips",
-			Util.newArrayListOfValues("furry"),
-			Util.newArrayListOfValues("furry"),
-			"#IF(npc.getTailCount()==1)"
-				+ " A furry, cat-like tail sprouts from just above [npc.her] ass, rapidly growing in size until it's about [npc.tailLength] long."
-				+ " [npc.She] quickly [npc.verb(realise)] that [npc.she] [npc.has] a decent amount of control over it, and can twist it almost anywhere [npc.she] [npc.verb(please)]."
-				+ "<br/>"
-				+ "[npc.Name] now [npc.has] a [style.boldCatMorph(cat-like tail)], [npc.materialDescriptor] [npc.tailFullDescription(true)]."
-			+ "#ELSE"
-				+ " [npc.TailCount] furry, cat-like tails sprout from just above [npc.her] ass, rapidly growing in size until they're each about [npc.tailLength] long."
-				+ " [npc.She] quickly [npc.verb(realise)] that [npc.she] [npc.has] a decent amount of control over them, and can twist them almost anywhere [npc.she] [npc.verb(please)]."
-				+ "<br/>"
-				+ "[npc.Name] now [npc.has] [npc.tailCount] [style.boldCatMorph(cat-like tails)], [npc.materialDescriptor] [npc.tailFullDescription(true)]."
-			+ "#ENDIF",
-			"Growing out from just above [npc.her] ass, [npc.sheHasFull]"
-				+ "#IF(npc.getTailCount()==1)"
-					+ " a #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] cat tail, which [npc.she] can control well enough to grant [npc.herHim] significantly improved balance."
-				+ "#ELSE"
-					+ " [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] cat tails, which [npc.she] can control well enough to grant [npc.herHim] significantly improved balance."
-				+ "#ENDIF",
+			"хвост",
+			"хвосты",
+			Util.newArrayListOfValues("кошачьими", "пушистая"),
+			Util.newArrayListOfValues("кошачьими", "пушистая"),
+			"кончик",
+			"кончики",
+			Util.newArrayListOfValues("пушистая"),
+			Util.newArrayListOfValues("пушистая"),
+			"#IF(npc.getTailCount()==1) Прямо над задницей [npc.her] вырастает пушистый кошачий хвост, стремительно увеличиваясь в размерах, пока не достигнет около [npc.tailLength] в длину. [npc.She] быстро [npc.verb(realise)], что [npc.she] [npc.has] вполне неплохо им управляет и может изгибать его почти как угодно [npc.she] [npc.verb(please)].<br/>[npc.Name] теперь [npc.has] [style.boldCatMorph(пушистый кошачий хвост)], [npc.materialDescriptor] [npc.tailFullDescription(true)].#ELSE [npc.TailCount] Прямо над задницей [npc.her] вырастают пушистые кошачьи хвосты, стремительно увеличиваясь в размерах, пока каждый из них не достигнет около [npc.tailLength] в длину. [npc.She] быстро [npc.verb(realise)], что [npc.she] [npc.has] вполне неплохо ими управляет и может изгибать их почти как угодно [npc.she] [npc.verb(please)].<br/>[npc.Name] теперь [npc.has] [npc.tailCount] [style.boldCatMorph(пушистые кошачьи хвосты)], [npc.materialDescriptor] [npc.tailFullDescription(true)].#ENDIF",
+			"Растущий прямо над задницей [npc.her], [npc.sheHasFull]#IF(npc.getTailCount()==1) #IF(npc.isTailFeral()) [style.colourFeral(дикий)],#ENDIF [npc.tailColour(true)] кошачий хвост, которым [npc.she] может управлять достаточно хорошо, чтобы обеспечить [npc.herHim] значительно улучшенное равновесие.#ELSE [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(дикие)],#ENDIF [npc.tailColour(true)] кошачьи хвосты, которыми [npc.she] может управлять достаточно хорошо, чтобы обеспечить [npc.herHim] значительно улучшенное равновесие.#ENDIF",
 			Util.newArrayListOfValues(
 					BodyPartTag.TAIL_PREHENSILE,
 					BodyPartTag.TAIL_SLEEP_HUGGING,
@@ -450,34 +252,19 @@ public class TailType {
 			Race.CAT_MORPH,
 			PenetrationGirth.THREE_AVERAGE,
 			0.2f,
-			"short feline",
+			"короткий кошачий",
 			"",
 			"",
-			"tail",
-			"tails",
-			Util.newArrayListOfValues("cat-like", "short", "furry"),
-			Util.newArrayListOfValues("cat-like", "short", "furry"),
-			"tip",
-			"tips",
-			Util.newArrayListOfValues("furry"),
-			Util.newArrayListOfValues("furry"),
-			"#IF(npc.getTailCount()==1)"
-				+ " A short, furry, cat-like tail sprouts from just above [npc.her] ass, rapidly growing in size until it's about [npc.tailLength] long."
-				+ "Although [npc.she] [npc.has] a decent amount of control over it, it's too short to really do anything with."
-				+ "<br/>"
-				+ "[npc.Name] now [npc.has] a [style.boldCatMorph(short, cat-like tail)], [npc.materialDescriptor] [npc.tailFullDescription(true)]."
-			+ "#ELSE"
-				+ " [npc.TailCount] short, furry, cat-like tails sprout from just above [npc.her] ass, rapidly growing in size until they're each about [npc.tailLength] long."
-				+ " Although [npc.she] [npc.has] a decent amount of control over them, they're too short to really do anything with."
-				+ "<br/>"
-				+ "[npc.Name] now [npc.has] [npc.tailCount] [style.boldCatMorph(short, cat-like tails)], [npc.materialDescriptor] [npc.tailFullDescription(true)]."
-			+ "#ENDIF",
-			"Growing out from just above [npc.her] ass, [npc.sheHasFull]"
-				+ "#IF(npc.getTailCount()==1)"
-					+ " a #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)], short cat tail."
-				+ "#ELSE"
-					+ " [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)], short cat tails."
-				+ "#ENDIF",
+			"хвост",
+			"хвосты",
+			Util.newArrayListOfValues("кошачьими", "короткие", "пушистая"),
+			Util.newArrayListOfValues("кошачьими", "короткие", "пушистая"),
+			"кончик",
+			"кончики",
+			Util.newArrayListOfValues("пушистая"),
+			Util.newArrayListOfValues("пушистая"),
+			"#IF(npc.getTailCount()==1) Прямо над задницей [npc.her] вырастает короткий, пушистый, кошачий хвост, который стремительно увеличивается в размерах, пока не достигнет примерно [npc.tailLength] в длину. Хотя [npc.she] [npc.has] вполне неплохо им управляет, он слишком короток, чтобы толком что-то делать.<br/>[npc.Name] теперь [npc.has] [style.boldCatMorph(короткий, кошачий хвост)], [npc.materialDescriptor] [npc.tailFullDescription(true)].#ELSE [npc.TailCount] Прямо над задницей [npc.her] вырастают короткие, пушистые, кошачьи хвосты, которые стремительно увеличиваются в размерах, пока каждый из них не достигнет примерно [npc.tailLength] в длину. Хотя [npc.she] [npc.has] вполне неплохо ими управляет, они слишком коротки, чтобы толком что-то делать.<br/>[npc.Name] теперь [npc.has] [npc.tailCount] [style.boldCatMorph(короткие, кошачьи хвосты)], [npc.materialDescriptor] [npc.tailFullDescription(true)].#ENDIF",
+			"Растущие прямо над задницей [npc.her], [npc.sheHasFull]#IF(npc.getTailCount()==1) #IF(npc.isTailFeral()) [style.colourFeral(дикий)],#ENDIF [npc.tailColour(true)], короткий кошачий хвост.#ELSE [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(дикий)],#ENDIF [npc.tailColour(true)], короткие кошачьи хвосты.#ENDIF",
 			Util.newArrayListOfValues(
 					BodyPartTag.TAIL_PREHENSILE,
 					BodyPartTag.TAIL_TYPE_FUR,
@@ -489,36 +276,19 @@ public class TailType {
 			Race.CAT_MORPH,
 			PenetrationGirth.THREE_AVERAGE,
 			0.4f,
-			"tufted feline",
+			"пушистый кошачий",
 			"",
 			"",
-			"tail",
-			"tails",
-			Util.newArrayListOfValues("cat-like", "tufted", "furry"),
-			Util.newArrayListOfValues("cat-like", "tufted", "furry"),
-			"tip",
-			"tips",
-			Util.newArrayListOfValues("tufted"),
-			Util.newArrayListOfValues("tufted"),
-			"#IF(npc.getTailCount()==1)"
-				+ " A short, furry, cat-like tail sprouts from just above [npc.her] ass, rapidly growing in size until it's about [npc.tailLength] long."
-				+ " At the end of it there's a fluffy tuft of fur, and [npc.she] can control it well enough to grant [npc.herHim] significantly improved balance."
-				+ "<br/>"
-				+ "[npc.Name] now [npc.has] a [style.boldCatMorph(tufted, cat-like tail)], [npc.materialDescriptor] [npc.tailFullDescription(true)]."
-			+ "#ELSE"
-				+ " [npc.TailCount] short, furry, cat-like tails sprout from just above [npc.her] ass, rapidly growing in size until they're each about [npc.tailLength] long."
-				+ " At the end of each one there's a fluffy tuft of fur, and [npc.she] can control them well enough to grant [npc.herHim] significantly improved balance."
-				+ "<br/>"
-				+ "[npc.Name] now [npc.has] [npc.tailCount] [style.boldCatMorph(tufted, cat-like tails)], [npc.materialDescriptor] [npc.tailFullDescription(true)]."
-			+ "#ENDIF",
-			"Growing out from just above [npc.her] ass, [npc.sheHasFull]"
-				+ "#IF(npc.getTailCount()==1)"
-					+ " a #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] cat tail, which has a tuft of fur on the end."
-					+ " [npc.She] can control it well enough to grant [npc.herHim] significantly improved balance."
-				+ "#ELSE"
-					+ " [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] cat tails, which each have a tuft of fur on the end."
-					+ " [npc.She] can control them well enough to grant [npc.herHim] significantly improved balance."
-				+ "#ENDIF",
+			"хвост",
+			"хвосты",
+			Util.newArrayListOfValues("кошачьими", "пушистый", "пушистая"),
+			Util.newArrayListOfValues("кошачьими", "пушистый", "пушистая"),
+			"кончик",
+			"кончики",
+			Util.newArrayListOfValues("пушистый"),
+			Util.newArrayListOfValues("пушистый"),
+			"#IF(npc.getTailCount()==1) Прямо над [npc.her] задницей вырастает короткий, пушистый, кошачий хвост, стремительно увеличивающийся в размерах, пока не достигнет примерно [npc.tailLength] в длину. На его конце красуется пушистый кончик, и [npc.she] может управлять им достаточно ловко, чтобы обеспечить [npc.herHim] значительно улучшенное равновесие.<br/>[npc.Name] теперь [npc.has] [style.boldCatMorph(tufted, cat-like tail)], [npc.materialDescriptor] [npc.tailFullDescription(true)].#ELSE [npc.TailCount] короткие, пушистые, кошачьи хвосты вырастают прямо над [npc.her] задницей, стремительно увеличиваясь в размерах, пока каждый из них не достигнет примерно [npc.tailLength] в длину. На конце каждого из них красуется пушистый кончик, и [npc.she] может управлять ими достаточно ловко, чтобы обеспечить [npc.herHim] значительно улучшенное равновесие.<br/>[npc.Name] теперь [npc.has] [npc.tailCount] [style.boldCatMorph(tufted, cat-like tails)], [npc.materialDescriptor] [npc.tailFullDescription(true)].#ENDIF",
+			"Растет чуть выше [npc.her] задницы, [npc.sheHasFull]#IF(npc.getTailCount()==1) #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] кошачий хвост с пушистой кисточкой на конце. [npc.She] может достаточно хорошо им управлять, чтобы обеспечить [npc.herHim] значительно улучшенное равновесие.#ELSE [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] кошачьи хвосты, каждый с пушистой кисточкой на конце. [npc.She] может достаточно хорошо ими управлять, чтобы обеспечить [npc.herHim] значительно улучшенное равновесие.#ENDIF",
 			Util.newArrayListOfValues(
 					BodyPartTag.TAIL_PREHENSILE,
 					BodyPartTag.TAIL_TYPE_FUR,
@@ -530,34 +300,19 @@ public class TailType {
 			Race.COW_MORPH,
 			PenetrationGirth.TWO_NARROW,
 			0.35f,
-			"cow",
+			"корова",
 			"",
 			"",
-			"tail",
-			"tails",
-			Util.newArrayListOfValues("cow-like"),
-			Util.newArrayListOfValues("cow-like"),
-			"end",
-			"ends",
-			Util.newArrayListOfValues("hair-tufted"),
-			Util.newArrayListOfValues("hair-tufted"),
-			"#IF(npc.getTailCount()==1)"
-				+ " A cow-like tail sprouts from just above [npc.her] ass, rapidly growing in length until it hangs down about [npc.tailLength] behind [npc.herHim]."
-				+ " [npc.She] quickly [npc.verb(discover)] that [npc.her] control over it is limited to swishing it from side to side."
-				+ "<br/>"
-				+ "[npc.Name] now [npc.has] a [style.boldCowMorph(cow-like tail)], [npc.materialDescriptor] [npc.tailFullDescription(true)]."
-			+ "#ELSE"
-				+ " [npc.TailCount] cow-like tails sprout from just above [npc.her] ass, rapidly growing in length until they hang down about [npc.tailLength] behind [npc.herHim]."
-				+ " [npc.She] quickly [npc.verb(discover)] that [npc.her] control over them is limited to swishing them from side to side."
-				+ "<br/>"
-				+ "[npc.Name] now [npc.has] [npc.tailCount] [style.boldCowMorph(cow-like tails)], [npc.materialDescriptor] [npc.tailFullDescription(true)]."
-			+ "#ENDIF",
-			"Growing out from just above [npc.her] ass, [npc.sheHasFull]"
-				+ "#IF(npc.getTailCount()==1)"
-					+ " a #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)], cow tail, which [npc.she] can swipe from side to side, but other than that, [npc.she] [npc.does]n't have much control over it."
-				+ "#ELSE"
-					+ " [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] cow tails, which [npc.she] can swipe from side to side, but other than that, [npc.she] [npc.does]n't have much control over them."
-				+ "#ENDIF",
+			"хвост",
+			"хвосты",
+			Util.newArrayListOfValues("коровьей формы"),
+			Util.newArrayListOfValues("коровьей формы"),
+			"конец",
+			"заканчивается",
+			Util.newArrayListOfValues("с пушистыми кончиками"),
+			Util.newArrayListOfValues("с пушистыми кончиками"),
+			"#IF(npc.getTailCount()==1) Из области чуть выше [npc.her] задницы прорастает коровьи хвост, стремительно удлиняясь, пока не свисает примерно на [npc.tailLength] позади [npc.herHim]. [npc.She] быстро [npc.verb(discover)], что [npc.her] контроль над ним ограничен лишь покачиванием из стороны в сторону.<br/>[npc.Name] теперь [npc.has] [style.boldCowMorph(коровий хвост)], [npc.materialDescriptor] [npc.tailFullDescription(true)].#ELSE [npc.TailCount] коровьи хвосты прорастают из области чуть выше [npc.her] задницы, стремительно удлиняясь, пока не свисают примерно на [npc.tailLength] позади [npc.herHim]. [npc.She] быстро [npc.verb(discover)], что [npc.her] контроль над ними ограничен лишь покачиванием из стороны в сторону.<br/>[npc.Name] теперь [npc.has] [npc.tailCount] [style.boldCowMorph(коровьи хвосты)], [npc.materialDescriptor] [npc.tailFullDescription(true)].#ENDIF",
+			"Growing out from just above [npc.her] ass, [npc.sheHasFull]#IF(npc.getTailCount()==1) a #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)], cow tail, which [npc.she] can swipe from side to side, but other than that, [npc.she] [npc.does]n't have much control over it.#ELSE [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] cow tails, which [npc.she] can swipe from side to side, but other than that, [npc.she] [npc.does]n't have much control over them.#ENDIF",
 			Util.newArrayListOfValues(
 					BodyPartTag.TAIL_TYPE_FUR,
 					BodyPartTag.TAIL_TAPERING_NONE), false) {
@@ -568,34 +323,19 @@ public class TailType {
 			Race.DOG_MORPH,
 			PenetrationGirth.THREE_AVERAGE,
 			0.4f,
-			"dog",
+			"коровьи",
 			"",
 			"",
-			"tail",
-			"tails",
-			Util.newArrayListOfValues("dog-like"),
-			Util.newArrayListOfValues("dog-like"),
-			"tip",
-			"tips",
-			Util.newArrayListOfValues("furry"),
-			Util.newArrayListOfValues("furry"),
-			"#IF(npc.getTailCount()==1)"
-				+ " A furry, dog-like tail sprouts from just above [npc.her] ass, rapidly growing in size until it's about [npc.tailLength] long."
-				+ " [npc.She] quickly [npc.verb(realise)] that [npc.she] [npc.has] little control over it, and it wags with a mind of its own whenever [npc.she] [npc.verb(get)] excited."
-				+ "<br/>"
-				+ "[npc.Name] now [npc.has] a [style.boldDogMorph(dog-like tail)], [npc.materialDescriptor] [npc.tailFullDescription(true)]."
-			+ "#ELSE"
-				+ " [npc.TailCount] furry, dog-like tails sprout from just above [npc.her] ass, rapidly growing in size until they're each about [npc.tailLength] long."
-				+ " [npc.She] quickly [npc.verb(realise)] that [npc.she] [npc.has] little control over them, and they wags with a mind of their own whenever [npc.she] [npc.verb(get)] excited."
-				+ "<br/>"
-				+ "[npc.Name] now [npc.has] [npc.tailCount] [style.boldDogMorph(dog-like tails)], [npc.materialDescriptor] [npc.tailFullDescription(true)]."
-			+ "#ENDIF",
-			"Growing out from just above [npc.her] ass, [npc.sheHasFull]"
-				+ "#IF(npc.getTailCount()==1)"
-					+ " a #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] dog tail, which wags uncontrollably when [npc.she] [npc.verb(get)] excited."
-				+ "#ELSE"
-					+ " [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] dog tails, which wag uncontrollably when [npc.she] [npc.verb(get)] excited."
-				+ "#ENDIF",
+			"хвост",
+			"хвосты",
+			Util.newArrayListOfValues("собачьи"),
+			Util.newArrayListOfValues("собачьи"),
+			"кончик",
+			"кончики",
+			Util.newArrayListOfValues("пушистая"),
+			Util.newArrayListOfValues("пушистая"),
+			"#IF(npc.getTailCount()==1) Прямо над [npc.her] задницей вырастает пушистый собачий хвост, стремительно увеличиваясь в размерах, пока не достигнет примерно [npc.tailLength] в длину. [npc.She] быстро [npc.verb(realise)], что [npc.she] [npc.has] почти не может его контролировать, и он живет своей жизнью, виляя всякий раз, когда [npc.she] [npc.verb(get)] возбуждается.<br/>[npc.Name] теперь [npc.has] [style.boldDogMorph(собачий хвост)], [npc.materialDescriptor] [npc.tailFullDescription(true)].#ELSE [npc.TailCount] Прямо над [npc.her] задницей вырастают пушистые собачьи хвосты, стремительно увеличиваясь в размерах, пока каждый из них не достигнет примерно [npc.tailLength] в длину. [npc.She] быстро [npc.verb(realise)], что [npc.she] [npc.has] почти не может ими управлять, и они живут своей жизнью, виляя всякий раз, когда [npc.she] [npc.verb(get)] возбуждается.<br/>[npc.Name] теперь [npc.has] [npc.tailCount] [style.boldDogMorph(собачьи хвосты)], [npc.materialDescriptor] [npc.tailFullDescription(true)].#ENDIF",
+			"Растущий чуть выше [npc.her] задницы, [npc.sheHasFull] #IF(npc.getTailCount()==1) [style.colourFeral(feral)]#IFEND [npc.tailColour(true)] собачий хвост, который неудержимо виляет, когда [npc.she] [npc.verb(get)] возбуждается.#ELSE [npc.tailCount] [style.colourFeral(feral)]#IFEND [npc.tailColour(true)] собачьих хвоста, которые неудержимо виляют, когда [npc.she] [npc.verb(get)] возбуждается.#ENDIF",
 			Util.newArrayListOfValues(
 					BodyPartTag.TAIL_TYPE_FUR,
 					BodyPartTag.TAIL_TAPERING_NONE), false) {
@@ -606,34 +346,19 @@ public class TailType {
 			Race.DOG_MORPH,
 			PenetrationGirth.THREE_AVERAGE,
 			0.1f,
-			"stubby dog",
+			"короткий собачий",
 			"",
 			"",
-			"tail",
-			"tails",
-			Util.newArrayListOfValues("stubby", "dog-like"),
-			Util.newArrayListOfValues("stubby", "dog-like"),
-			"tip",
-			"tips",
-			Util.newArrayListOfValues("stubby"),
-			Util.newArrayListOfValues("stubby"),
-			"#IF(npc.getTailCount()==1)"
-				+ " A furry, dog-like tail sprouts from just above [npc.her] ass, rapidly growing in size until it's about [npc.tailLength] long."
-				+ " [npc.She] quickly [npc.verb(realise)] that [npc.she] [npc.has] little control over it, and it wags with a mind of its own whenever [npc.she] [npc.verb(get)] excited."
-				+ "<br/>"
-				+ "[npc.Name] now [npc.has] a [style.boldDogMorph(stubby, dog-like tail)], [npc.materialDescriptor] [npc.tailFullDescription(true)]."
-			+ "#ELSE"
-				+ " [npc.TailCount] furry, dog-like tails sprout from just above [npc.her] ass, rapidly growing in size until they're each about [npc.tailLength] long."
-				+ " [npc.She] quickly [npc.verb(realise)] that [npc.she] [npc.has] little control over them, and they wags with a mind of their own whenever [npc.she] [npc.verb(get)] excited."
-				+ "<br/>"
-				+ "[npc.Name] now [npc.has] [npc.tailCount] [style.boldDogMorph(stubby, dog-like tails)], [npc.materialDescriptor] [npc.tailFullDescription(true)]."
-			+ "#ENDIF",
-			"Growing out from just above [npc.her] ass, [npc.sheHasFull]"
-				+ "#IF(npc.getTailCount()==1)"
-					+ " a #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF stubby, [npc.tailColour(true)] dog tail, which wags uncontrollably when [npc.she] [npc.verb(get)] excited."
-				+ "#ELSE"
-					+ " [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF stubby, [npc.tailColour(true)] dog tails, which wag uncontrollably when [npc.she] [npc.verb(get)] excited."
-				+ "#ENDIF",
+			"хвост",
+			"хвосты",
+			Util.newArrayListOfValues("короткий", "собачьи"),
+			Util.newArrayListOfValues("короткий", "собачьи"),
+			"кончик",
+			"кончики",
+			Util.newArrayListOfValues("короткий"),
+			Util.newArrayListOfValues("короткий"),
+			"#IF(npc.getTailCount()==1) Прямо над задницей [npc.her] вырастает пушистый собачий хвост, стремительно увеличиваясь в размерах, пока не достигнет примерно [npc.tailLength] в длину. [npc.She] быстро [npc.verb(realise)], что [npc.she] [npc.has] почти не может его контролировать, и он живет своей собственной жизнью, виляя всякий раз, когда [npc.she] [npc.verb(get)] возбуждается.<br/>[npc.Name] теперь [npc.has] [style.boldDogMorph(stubby, dog-like tail)], [npc.materialDescriptor] [npc.tailFullDescription(true)].#ELSE [npc.TailCount] Прямо над задницей [npc.her] вырастают пушистые собачьи хвосты, стремительно увеличиваясь в размерах, пока каждый из них не достигнет примерно [npc.tailLength] в длину. [npc.She] быстро [npc.verb(realise)], что [npc.she] [npc.has] почти не может ими управлять, и они живут своей собственной жизнью, виляя всякий раз, когда [npc.she] [npc.verb(get)] возбуждается.<br/>[npc.Name] теперь [npc.has] [npc.tailCount] [style.boldDogMorph(stubby, dog-like tails)], [npc.materialDescriptor] [npc.tailFullDescription(true)].#ENDIF",
+			"Растущий чуть выше [npc.her] задницы, [npc.sheHasFull] #IF(npc.getTailCount()==1) [style.colourFeral(feral)]#IF(npc.isTailFeral()),#ENDIF короткий, [npc.tailColour(true)] собачий хвост, который неудержимо виляет, когда [npc.she] [npc.verb(get)] возбужден.#ELSE [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF короткие [npc.tailColour(true)] собачьи хвосты, которые неудержимо виляют, когда [npc.she] [npc.verb(get)] возбуждены.#ENDIF",
 			Util.newArrayListOfValues(
 					BodyPartTag.TAIL_TYPE_FUR,
 					BodyPartTag.TAIL_TAPERING_NONE), false) {
@@ -644,34 +369,19 @@ public class TailType {
 			Race.FOX_MORPH,
 			PenetrationGirth.FOUR_GIRTHY,
 			0.6f,
-			"fox",
+			"лисий",
 			"",
 			"",
-			"tail",
-			"tails",
-			Util.newArrayListOfValues("fox-like", "fluffy", "bushy"),
-			Util.newArrayListOfValues("fox-like", "fluffy", "bushy"),
-			"tip",
-			"tips",
-			Util.newArrayListOfValues("furry"),
-			Util.newArrayListOfValues("furry"),
-			"#IF(npc.getTailCount()==1)"
-				+ " A bushy, fox-like tail sprouts from just above [npc.her] ass, rapidly growing in size until it's about [npc.tailLength] long."
-				+ " [npc.She] quickly [npc.verb(realise)] that [npc.she] [npc.has] a decent amount of control over it, and [npc.is] able to wrap its fluffy length around [npc.her] lower body."
-				+ "<br/>"
-				+ "[npc.Name] now [npc.has] a [style.boldFoxMorph(fox-like tail)], [npc.materialDescriptor] [npc.tailFullDescription(true)]."
-			+ "#ELSE"
-				+ " [npc.TailCount] bushy, fox-like tails sprout from just above [npc.her] ass, rapidly growing in size until they're each about [npc.tailLength] long."
-				+ " [npc.She] quickly [npc.verb(realise)] that [npc.she] [npc.has] a decent amount of control over them, and [npc.is] able to wrap their fluffy lengths around [npc.her] lower body."
-				+ "<br/>"
-				+ "[npc.Name] now [npc.has] [npc.tailCount] [style.boldFoxMorph(fox-like tails)], [npc.materialDescriptor] [npc.tailFullDescription(true)]."
-			+ "#ENDIF",
-			"Growing out from just above [npc.her] ass, [npc.sheHasFull]"
-				+ "#IF(npc.getTailCount()==1)"
-					+ " a #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] fox tail, which [npc.she] can freely swish this way and that."
-				+ "#ELSE"
-					+ " [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] fox tails, which [npc.she] can freely swish this way and that."
-				+ "#ENDIF",
+			"хвост",
+			"хвосты",
+			Util.newArrayListOfValues("лисоподобные", "пушистый", "пушистый"),
+			Util.newArrayListOfValues("лисоподобные", "пушистый", "пушистый"),
+			"кончик",
+			"кончики",
+			Util.newArrayListOfValues("пушистая"),
+			Util.newArrayListOfValues("пушистая"),
+			"#IF(npc.getTailCount()==1) Прямо над [npc.her] задницей вырастает пушистый лисий хвост, стремительно увеличиваясь в размерах, пока не достигнет примерно [npc.tailLength] в длину. [npc.She] быстро [npc.verb(realise)], что [npc.she] [npc.has] вполне неплохо им управляет, и [npc.is] может обернуть его пушистую длину вокруг [npc.her] нижней части тела.<br/>[npc.Name] теперь [npc.has] [style.boldFoxMorph(лисий хвост)], [npc.materialDescriptor] [npc.tailFullDescription(true)].#ELSE [npc.TailCount] Прямо над [npc.her] задницей вырастают пушистые лисьи хвосты, стремительно увеличиваясь в размерах, пока каждый из них не достигнет примерно [npc.tailLength] в длину. [npc.She] быстро [npc.verb(realise)], что [npc.she] [npc.has] вполне неплохо ими управляет, и [npc.is] может обернуть их пушистые длины вокруг [npc.her] нижней части тела.<br/>[npc.Name] теперь [npc.has] [npc.tailCount] [style.boldFoxMorph(лисьи хвосты)], [npc.materialDescriptor] [npc.tailFullDescription(true)].#ENDIF",
+			"Растущий прямо над [npc.her] задницей, [npc.sheHasFull]#IF(npc.getTailCount()==1) [style.colourFeral(дикий)],#ENDIF [npc.tailColour(true)] лисий хвост, которым [npc.she] может свободно вилять туда-сюда.#ELSE [npc.tailCount] [style.colourFeral(дикие)],#ENDIF [npc.tailColour(true)] лисьи хвосты, которыми [npc.she] может свободно вилять туда-сюда.#ENDIF",
 			Util.newArrayListOfValues(
 					BodyPartTag.TAIL_SLEEP_HUGGING,
 					BodyPartTag.TAIL_TYPE_FUR,
@@ -683,45 +393,19 @@ public class TailType {
 			Race.FOX_MORPH,
 			PenetrationGirth.FOUR_GIRTHY,
 			1f,
-			"arcane fox",
+			"аркана лиса",
 			"",
 			"",
-			"tail",
-			"tails",
-			Util.newArrayListOfValues("arcane", "fox-like", "fluffy"),
-			Util.newArrayListOfValues("arcane", "fox-like", "fluffy"),
-			"tip",
-			"tips",
-			Util.newArrayListOfValues("furry"),
-			Util.newArrayListOfValues("furry"),
-			"#IF(npc.getTailCount()==1)"
-				+ " A bushy, fox-like tail sprouts from just above [npc.her] ass, rapidly growing in size until it's about [npc.tailLength] long."
-				+ " [npc.She] quickly [npc.verb(realise)] that [npc.she] [npc.has] a decent amount of control over it, and [npc.is] able to wrap its fluffy length around [npc.her] lower body."
-				+ " [npc.SheIsFull] also very much aware of the fact that it is granting [npc.herHim] [style.italicsArcane(arcane powers)], and that the more tails [npc.sheIsFull] able to earn, the more powerful [npc.she] will become!"
-				+ "<br/>"
-				+ "[npc.Name] now [npc.has] an [style.boldArcane(arcane)] [style.boldFoxMorph(fox-like tail)], [npc.materialDescriptor] [npc.tailFullDescription(true)]."
-			+ "#ELSE"
-				+ " [npc.TailCount] bushy, fox-like tails sprout from just above [npc.her] ass, rapidly growing in size until they're each about [npc.tailLength] long."
-				+ " [npc.She] quickly [npc.verb(realise)] that [npc.she] [npc.has] a decent amount of control over them, and [npc.is] able to wrap their fluffy lengths around [npc.her] lower body."
-				+ "#IF(npc.getTailCount()==9)"
-					+ " [npc.SheIsFull] also very much aware of the fact that they are granting [npc.herHim] [style.italicsExcellent(immense)] [style.italicsArcane(arcane powers)]!"
-				+ "#ELSE"
-					+ " [npc.SheIsFull] also very much aware of the fact that they are granting [npc.herHim] [style.italicsArcane(arcane powers)], and that the more tails [npc.sheIsFull] able to earn, the more powerful [npc.she] will become!"
-				+ "#ENDIF"
-				+ "<br/>"
-				+ "[npc.Name] now [npc.has] [npc.tailCount] [style.boldArcane(arcane)] [style.boldFoxMorph(fox-like tails)], [npc.materialDescriptor] [npc.tailFullDescription(true)]."
-			+ "#ENDIF",
-			"Growing out from just above [npc.her] ass, [npc.sheHasFull]"
-				+ "#IF(npc.getTailCount()==1)"
-					+ " a #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] [style.boldArcane(arcane)] fox tail, which is granting [npc.herHim] [style.italicsArcane(arcane powers)]!"
-				+ "#ELSE"
-					+ "#IF(npc.getTailCount()==9)"
-						+ " [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] [style.boldArcane(arcane)] fox tails,"
-							+ " which are granting [npc.herHim] [style.italicsExcellent(immense)] [style.italicsArcane(arcane powers)]!"
-					+ "#ELSE"
-						+ " [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] [style.boldArcane(arcane)] fox tails, which are granting [npc.herHim] [style.italicsArcane(arcane powers)]!"
-					+ "#ENDIF"
-				+ "#ENDIF",
+			"хвост",
+			"хвосты",
+			Util.newArrayListOfValues("аркана", "лисоподобные", "пушистый"),
+			Util.newArrayListOfValues("аркана", "лисоподобные", "пушистый"),
+			"кончик",
+			"кончики",
+			Util.newArrayListOfValues("пушистая"),
+			Util.newArrayListOfValues("пушистая"),
+			"#IF(npc.getTailCount()==1) Прямо над [npc.her] задницей вырастает пушистый лисий хвост, стремительно увеличиваясь в размерах, пока не достигнет примерно [npc.tailLength] в длину. [npc.She] быстро [npc.verb(realise)], что [npc.she] [npc.has] вполне неплохо им управляет, и [npc.is] может обернуть его пушистую длину вокруг [npc.her] нижней части тела. [npc.SheIsFull] также прекрасно осознает, что это дарует [npc.herHim] [style.italicsArcane(аркана силы)], и что чем больше хвостов [npc.sheIsFull] сможет обрести, тем мощнее [npc.she] станет!<br/>[npc.Name] теперь [npc.has] [style.boldArcane(аркана)] [style.boldFoxMorph(лисий хвост)], [npc.materialDescriptor] [npc.tailFullDescription(true)].#ELSE [npc.TailCount] прямо над [npc.her] задницей вырастают пушистые лисьи хвосты, стремительно увеличиваясь в размерах, пока каждый из них не достигнет примерно [npc.tailLength] в длину. [npc.She] быстро [npc.verb(realise)], что [npc.she] [npc.has] вполне неплохо ими управляет, и [npc.is] может обернуть их пушистую длину вокруг [npc.her] нижней части тела.#IF(npc.getTailCount()==9) [npc.SheIsFull] также прекрасно осознает, что они даруют [npc.herHim] [style.italicsExcellent(огромные)] [style.italicsArcane(аркана силы)]!#ELSE [npc.SheIsFull] также прекрасно осознает, что они даруют [npc.herHim] [style.italicsArcane(аркана силы)], и что чем больше хвостов [npc.sheIsFull] сможет обрести, тем мощнее [npc.she] станет!#ENDIF<br/>[npc.Name] теперь [npc.has] [npc.tailCount] [style.boldArcane(аркана)] [style.boldFoxMorph(лисьи хвосты)], [npc.materialDescriptor] [npc.tailFullDescription(true)].#ENDIF",
+			"Растущий чуть выше [npc.her] задницы, [npc.sheHasFull]#IF(npc.getTailCount()==1) #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] [style.boldArcane(arcane)] лисий хвост, дарующий [npc.herHim] [style.italicsArcane(arcane powers)]!#ELSE#IF(npc.getTailCount()==9) [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] [style.boldArcane(arcane)] лисьих хвостов, дарующих [npc.herHim] [style.italicsExcellent(immense)] [style.italicsArcane(arcane powers)]!#ELSE [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] [style.boldArcane(arcane)] лисьих хвостов, дарующих [npc.herHim] [style.italicsArcane(arcane powers)]!#ENDIF#ENDIF",
 			Util.newArrayListOfValues(
 					BodyPartTag.TAIL_PREHENSILE,
 					BodyPartTag.TAIL_SLEEP_HUGGING,
@@ -734,36 +418,19 @@ public class TailType {
 			Race.HARPY,
 			PenetrationGirth.FOUR_GIRTHY,
 			0.5f,
-			"harpy plume",
-			"plume of",
-			"plumes of",
-			"tail feathers",
-			"tail feathers",
-			Util.newArrayListOfValues("magnificent", "bird-like"),
-			Util.newArrayListOfValues("magnificent", "bird-like"),
-			"end",
-			"ends",
-			Util.newArrayListOfValues("feathered"),
-			Util.newArrayListOfValues("feathered"),
-			"#IF(npc.getTailCount()==1)"
-				+ " A pretty plume of tail feathers sprouts from just above [npc.her] ass, with each feather quickly growing to be about [npc.tailLength] long."
-				+ " [npc.She] [npc.verb(discover)] that [npc.she] can quickly raise and lower [npc.her] new bird-like tail, which helps [npc.herHim] to keep [npc.her] balance."
-				+ "<br/>"
-				+ "[npc.Name] now [npc.has] a [style.boldHarpy(harpy's bird-like tail)], made out of [npc.tailFullDescription(true)]."
-			+ "#ELSE"
-				+ " [npc.TailCount] pretty plumes of tail feathers sprout from just above [npc.her] ass, with each feather quickly growing to be about [npc.tailLength] long."
-				+ " [npc.She] [npc.verb(discover)] that [npc.she] can quickly raise and lower [npc.her] new bird-like tails, which helps [npc.herHim] to keep [npc.her] balance."
-				+ "<br/>"
-				+ "[npc.Name] now [npc.has] [npc.tailCount] [style.boldHarpy(harpy's bird-like tails)], made out of [npc.tailFullDescription(true)]."
-			+ "#ENDIF",
-			"Growing out from just above [npc.her] ass, [npc.sheHasFull]"
-				+ "#IF(npc.getTailCount()==1)"
-					+ " a #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF plume of beautiful, [npc.tailColour(true)] tail-feathers,"
-						+ " which [npc.she] can rapidly move up and down to help [npc.herHim] keep [npc.her] balance and to control [npc.her] path when in flight."
-				+ "#ELSE"
-					+ " [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF plumes of beautiful, [npc.tailColour(true)] tail-feathers,"
-						+ " which [npc.she] can rapidly move up and down to help [npc.herHim] keep [npc.her] balance and to control [npc.her] path when in flight."
-				+ "#ENDIF",
+			"плюмаж гарпии",
+			"плюмаж",
+			"пучки",
+			"хвостовые перья",
+			"хвостовые перья",
+			Util.newArrayListOfValues("великолепные", "птичьи"),
+			Util.newArrayListOfValues("великолепные", "птичьи"),
+			"конец",
+			"заканчивается",
+			Util.newArrayListOfValues("оперенные"),
+			Util.newArrayListOfValues("оперенные"),
+			"#IF(npc.getTailCount()==1) Прямо над задницей [npc.her] пробивается красивый пучок хвостовых перьев, каждое из которых быстро вырастает до [npc.tailLength] в длину. [npc.She] [npc.verb(discover)] то, что [npc.she] может быстро поднимать и опускать [npc.her] новый птичий хвост, который помогает [npc.herHim] сохранять [npc.her] равновесие.<br/>[npc.Name] теперь [npc.has] [style.boldHarpy(птичий хвост гарпии)], состоящий из [npc.tailFullDescription(true)].#ELSE [npc.TailCount] красивые пучки хвостовых перьев пробиваются прямо над задницей [npc.her], каждое из которых быстро вырастает до [npc.tailLength] в длину. [npc.She] [npc.verb(discover)] то, что [npc.she] может быстро поднимать и опускать [npc.her] новые птичьи хвосты, которые помогают [npc.herHim] сохранять [npc.her] равновесие.<br/>[npc.Name] теперь [npc.has] [npc.tailCount] [style.boldHarpy(птичьи хвосты гарпии)], состоящие из [npc.tailFullDescription(true)].#ENDIF",
+			"Growing out from just above [npc.her] ass, [npc.sheHasFull]#IF(npc.getTailCount()==1) a #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF plume of beautiful, [npc.tailColour(true)] tail-feathers, which [npc.she] can rapidly move up and down to help [npc.herHim] keep [npc.her] balance and to control [npc.her] path when in flight.#ELSE [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF plumes of beautiful, [npc.tailColour(true)] tail-feathers, which [npc.she] can rapidly move up and down to help [npc.herHim] keep [npc.her] balance and to control [npc.her] path when in flight.#ENDIF",
 			Util.newArrayListOfValues(
 					BodyPartTag.TAIL_SLEEP_HUGGING,
 					BodyPartTag.TAIL_TYPE_FEATHER,
@@ -776,34 +443,19 @@ public class TailType {
 			Race.HORSE_MORPH,
 			PenetrationGirth.THREE_AVERAGE,
 			0.3f,
-			"horse",
+			"лошади",
 			"",
 			"",
-			"tail",
-			"tails",
-			Util.newArrayListOfValues("horse-like"),
-			Util.newArrayListOfValues("horse-like"),
-			"end",
-			"ends",
-			Util.newArrayListOfValues("loose"),
-			Util.newArrayListOfValues("loose"),
-			"#IF(npc.getTailCount()==1)"
-				+ " A horse-like tail sprouts from just above [npc.her] ass, rapidly growing in length until it hangs down about [npc.tailLength] behind [npc.herHim]."
-				+ " [npc.She] quickly [npc.verb(discover)] that [npc.her] control over it is limited to swishing it from side to side."
-				+ "<br/>"
-				+ "[npc.Name] now [npc.has] a [style.boldHorseMorph(horse-like tail)], made out of [npc.tailFullDescription(true)]."
-			+ "#ELSE"
-				+ " [npc.TailCount] horse-like tails sprout from just above [npc.her] ass, rapidly growing in length until they hang down about [npc.tailLength] behind [npc.herHim]."
-				+ " [npc.She] quickly [npc.verb(discover)] that [npc.her] control over them is limited to swishing them from side to side."
-				+ "<br/>"
-				+ "[npc.Name] now [npc.has] [npc.tailCount] [style.boldHorseMorph(horse-like tails)], made out of [npc.tailFullDescription(true)]."
-			+ "#ENDIF",
-			"Growing out from just above [npc.her] ass, [npc.sheHasFull]"
-				+ "#IF(npc.getTailCount()==1)"
-					+ " a #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)], horse tail, which [npc.she] can swipe from side to side, but other than that, [npc.she] [npc.does]n't have much control over it."
-				+ "#ELSE"
-					+ " [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] horse tails, which [npc.she] can swipe from side to side, but other than that, [npc.she] [npc.does]n't have much control over them."
-				+ "#ENDIF",
+			"хвост",
+			"хвосты",
+			Util.newArrayListOfValues("лошадиный"),
+			Util.newArrayListOfValues("лошадиный"),
+			"конец",
+			"заканчивается",
+			Util.newArrayListOfValues("свободный"),
+			Util.newArrayListOfValues("свободный"),
+			"#IF(npc.getTailCount()==1) Прямо над [npc.her] задницей прорастает лошадиный хвост, стремительно удлиняясь, пока не свисает примерно на [npc.tailLength] позади [npc.herHim]. [npc.She] быстро [npc.verb(discover)], что [npc.her] контроль над ним ограничен лишь тем, что им можно вилять из стороны в сторону.<br/>[npc.Name] теперь [npc.has] [style.boldHorseMorph(лошадиный хвост)], состоящий из [npc.tailFullDescription(true)].#ELSE [npc.TailCount] лошадиных хвостов прорастают прямо над [npc.her] задницей, стремительно удлиняясь, пока не свисают примерно на [npc.tailLength] позади [npc.herHim]. [npc.She] быстро [npc.verb(discover)], что [npc.her] контроль над ними ограничен лишь тем, что ими можно вилять из стороны в сторону.<br/>[npc.Name] теперь [npc.has] [npc.tailCount] [style.boldHorseMorph(лошадиные хвосты)], состоящие из [npc.tailFullDescription(true)].#ENDIF",
+			"Growing out from just above [npc.her] ass, [npc.sheHasFull]#IF(npc.getTailCount()==1) a #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)], horse tail, which [npc.she] can swipe from side to side, but other than that, [npc.she] [npc.does]n't have much control over it.#ELSE [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] horse tails, which [npc.she] can swipe from side to side, but other than that, [npc.she] [npc.does]n't have much control over them.#ENDIF",
 			Util.newArrayListOfValues(
 					BodyPartTag.TAIL_TYPE_HAIR,
 					BodyPartTag.TAIL_TAPERING_NONE), false) {
@@ -814,34 +466,19 @@ public class TailType {
 			Race.HORSE_MORPH,
 			PenetrationGirth.TWO_NARROW,
 			0.3f,
-			"zebra",
+			"зебра",
 			"",
 			"",
-			"tail",
-			"tails",
-			Util.newArrayListOfValues("zebra-like"),
-			Util.newArrayListOfValues("zebra-like"),
-			"end",
-			"ends",
-			Util.newArrayListOfValues("hair-tipped"),
-			Util.newArrayListOfValues("hair-tipped"),
-			"#IF(npc.getTailCount()==1)"
-				+ " A zebra-like tail sprouts from just above [npc.her] ass, rapidly growing in length until it hangs down about [npc.tailLength] behind [npc.herHim]."
-				+ " [npc.She] quickly [npc.verb(discover)] that [npc.her] control over it is limited to swishing it from side to side."
-				+ "<br/>"
-				+ "[npc.Name] now [npc.has] a [style.boldHorseMorph(zebra-like tail)], made out of [npc.tailFullDescription(true)]."
-			+ "#ELSE"
-				+ " [npc.TailCount] zebra-like tails sprout from just above [npc.her] ass, rapidly growing in length until they hang down about [npc.tailLength] behind [npc.herHim]."
-				+ " [npc.She] quickly [npc.verb(discover)] that [npc.her] control over them is limited to swishing them from side to side."
-				+ "<br/>"
-				+ "[npc.Name] now [npc.has] [npc.tailCount] [style.boldHorseMorph(zebra-like tails)], made out of [npc.tailFullDescription(true)]."
-			+ "#ENDIF",
-			"Growing out from just above [npc.her] ass, [npc.sheHasFull]"
-				+ "#IF(npc.getTailCount()==1)"
-					+ " a #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)], zebra tail, which [npc.she] can swipe from side to side, but other than that, [npc.she] [npc.does]n't have much control over it."
-				+ "#ELSE"
-					+ " [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] zebra tails, which [npc.she] can swipe from side to side, but other than that, [npc.she] [npc.does]n't have much control over them."
-				+ "#ENDIF",
+			"хвост",
+			"хвосты",
+			Util.newArrayListOfValues("зеброподобный"),
+			Util.newArrayListOfValues("зеброподобный"),
+			"конец",
+			"заканчивается",
+			Util.newArrayListOfValues("с кисточкой на конце"),
+			Util.newArrayListOfValues("с кисточкой на конце"),
+			"#IF(npc.getTailCount()==1) Прямо над [npc.her] задницей вырастает полосатый хвост, стремительно удлиняясь, пока не будет свисать примерно на [npc.tailLength] позади [npc.herHim]. [npc.She] быстро [npc.verb(discover)], что [npc.her] контроль над ним ограничен лишь тем, что им можно вилять из стороны в сторону.<br/>[npc.Name] теперь [npc.has] [style.boldHorseMorph(полосатый хвост)], состоящий из [npc.tailFullDescription(true)].#ELSE [npc.TailCount] полосатые хвосты вырастают прямо над [npc.her] задницей, стремительно удлиняясь, пока не будут свисать примерно на [npc.tailLength] позади [npc.herHim]. [npc.She] быстро [npc.verb(discover)], что [npc.her] контроль над ними ограничен лишь тем, что ими можно вилять из стороны в сторону.<br/>[npc.Name] теперь [npc.has] [npc.tailCount] [style.boldHorseMorph(полосатые хвосты)], состоящие из [npc.tailFullDescription(true)].#ENDIF",
+			"Growing out from just above [npc.her] ass, [npc.sheHasFull]#IF(npc.getTailCount()==1) a #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)], zebra tail, which [npc.she] can swipe from side to side, but other than that, [npc.she] [npc.does]n't have much control over it.#ELSE [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] zebra tails, which [npc.she] can swipe from side to side, but other than that, [npc.she] [npc.does]n't have much control over them.#ENDIF",
 			Util.newArrayListOfValues(
 					BodyPartTag.TAIL_TYPE_HAIR,
 					BodyPartTag.TAIL_TAPERING_NONE), false) {
@@ -852,34 +489,19 @@ public class TailType {
 			Race.RAT_MORPH,
 			PenetrationGirth.THREE_AVERAGE,
 			0.75f,
-			"rat",
+			"крыса",
 			"",
 			"",
-			"tail",
-			"tails",
-			Util.newArrayListOfValues("rat-like"),
-			Util.newArrayListOfValues("rat-like"),
-			"tip",
-			"tips",
+			"хвост",
+			"хвосты",
+			Util.newArrayListOfValues("крысиные"),
+			Util.newArrayListOfValues("крысиные"),
+			"кончик",
+			"кончики",
 			Util.newArrayListOfValues(""),
 			Util.newArrayListOfValues(""),
-			"#IF(npc.getTailCount()==1)"
-				+ " A thick, rat-like tail sprouts from just above [npc.her] ass, rapidly growing in size until it's about [npc.tailLength] long."
-				+ " [npc.She] quickly [npc.verb(realise)] that [npc.she] [npc.has] a decent amount of control over it, and can twist it almost anywhere [npc.she] [npc.verb(please)]."
-				+ "<br/>"
-				+ "[npc.Name] now [npc.has] a [style.boldRatMorph(rat-like tail)], [npc.materialDescriptor] [npc.tailFullDescription(true)]."
-			+ "#ELSE"
-				+ " [npc.TailCount] thick, rat-like tails sprout from just above [npc.her] ass, rapidly growing in size until they're each about [npc.tailLength] long."
-				+ " [npc.She] quickly [npc.verb(realise)] that [npc.she] [npc.has] a decent amount of control over them, and can twist them almost anywhere [npc.she] [npc.verb(please)]."
-				+ "<br/>"
-				+ "[npc.Name] now [npc.has] [npc.tailCount] [style.boldRatMorph(rat-like tails)], [npc.materialDescriptor] [npc.tailFullDescription(true)]."
-			+ "#ENDIF",
-			"Growing out from just above [npc.her] ass, [npc.sheHasFull]"
-				+ "#IF(npc.getTailCount()==1)"
-					+ " a #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] rat tail, over which [npc.she] [npc.has] complete control, allowing [npc.herHim] to use it to grip and hold objects."
-				+ "#ELSE"
-					+ " [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] rat tails, over which [npc.she] [npc.has] complete control, allowing [npc.herHim] to use them to grip and hold objects."
-				+ "#ENDIF",
+			"#IF(npc.getTailCount()==1) Прямо над [npc.her] задницей прорастает толстый крысиный хвост, стремительно увеличиваясь в размерах, пока не достигнет примерно [npc.tailLength] в длину. [npc.She] быстро [npc.verb(realise)], что [npc.she] [npc.has] вполне неплохо им управляет и может изгибать его почти как угодно [npc.she] [npc.verb(please)].<br/>[npc.Name] теперь [npc.has] [style.boldRatMorph(крысиный хвост)], [npc.materialDescriptor] [npc.tailFullDescription(true)].#ELSE [npc.TailCount] Прямо над [npc.her] задницей прорастают толстые крысиные хвосты, стремительно увеличиваясь в размерах, пока каждый из них не достигнет примерно [npc.tailLength] в длину. [npc.She] быстро [npc.verb(realise)], что [npc.she] [npc.has] вполне неплохо ими управляет и может изгибать их почти как угодно [npc.she] [npc.verb(please)].<br/>[npc.Name] теперь [npc.has] [npc.tailCount] [style.boldRatMorph(крысиные хвосты)], [npc.materialDescriptor] [npc.tailFullDescription(true)].#ENDIF",
+			"Растущий чуть выше [npc.her] задницы, [npc.sheHasFull] #IF(npc.getTailCount()==1) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] крысиный хвост, над которым [npc.she] [npc.has] полный контроль, позволяющий [npc.herHim] использовать его, чтобы хватать и удерживать предметы.#ELSE [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] крысиных хвостов, над которыми [npc.she] [npc.has] полный контроль, позволяющий [npc.herHim] использовать их, чтобы хватать и удерживать предметы.#ENDIF",
 			Util.newArrayListOfValues(
 					BodyPartTag.TAIL_PREHENSILE,
 					BodyPartTag.TAIL_SUITABLE_FOR_PENETRATION,
@@ -893,34 +515,19 @@ public class TailType {
 			Race.RABBIT_MORPH,
 			PenetrationGirth.FIVE_THICK,
 			0.075f,
-			"rabbit",
+			"кроличьи",
 			"",
 			"",
-			"tail",
-			"tails",
-			Util.newArrayListOfValues("rabbit-like", "fluffy"),
-			Util.newArrayListOfValues("rabbit-like", "fluffy"),
-			"bush",
-			"bushes",
-			Util.newArrayListOfValues("fluffy"),
-			Util.newArrayListOfValues("fluffy"),
-			"#IF(npc.getTailCount()==1)"
-				+ " A furry, round, rabbit-like tail sprouts from just above [npc.her] ass, rapidly growing in size until it's about [npc.tailLength] long."
-				+ " [npc.She] quickly [npc.verb(realise)] that [npc.she] [npc.has] no control over it whatsoever, what with it being no more than a ball of downy fluff."
-				+ "<br/>"
-				+ "[npc.Name] now [npc.has] a [style.boldRabbitMorph(rabbit-like tail)], made out of [npc.tailFullDescription(true)]."
-			+ "#ELSE"
-				+ " [npc.TailCount] furry, round, rabbit-like tails sprout from just above [npc.her] ass, rapidly growing in size until each one is about [npc.tailLength] long."
-				+ " [npc.She] quickly [npc.verb(realise)] that [npc.she] [npc.has] no control over them whatsoever, what with them being no more than balls of downy fluff."
-				+ "<br/>"
-				+ "[npc.Name] now [npc.has] [npc.tailCount] [style.boldRabbitMorph(rabbit-like tails)], made out of [npc.tailFullDescription(true)]."
-			+ "#ENDIF",
-			"Growing out from just above [npc.her] ass, [npc.sheHasFull]"
-				+ "#IF(npc.getTailCount()==1)"
-					+ " a #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] rabbit tail, which really is no more than a large ball of downy fluff."
-				+ "#ELSE"
-					+ " [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] rabbit tails, which really are no more than large balls of downy fluff."
-				+ "#ENDIF",
+			"хвост",
+			"хвосты",
+			Util.newArrayListOfValues("кроличьими", "пушистый"),
+			Util.newArrayListOfValues("кроличьими", "пушистый"),
+			"куст",
+			"кусты",
+			Util.newArrayListOfValues("пушистый"),
+			Util.newArrayListOfValues("пушистый"),
+			"#IF(npc.getTailCount()==1) Прямо над задницей [npc.her] вырастает пушистый, круглый, кроличий хвост, стремительно увеличиваясь в размерах, пока не достигнет около [npc.tailLength] в длину. [npc.She] быстро [npc.verb(realise)], что [npc.she] [npc.has] совершенно не может его контролировать, ведь это всего лишь комок пушистой шерсти.<br/>[npc.Name] теперь [npc.has] [style.boldRabbitMorph(кроличий хвост)], состоящий из [npc.tailFullDescription(true)].#ELSE [npc.TailCount] Прямо над задницей [npc.her] вырастают пушистые, круглые, кроличьи хвосты, стремительно увеличиваясь в размерах, пока каждый из них не достигнет около [npc.tailLength] в длину. [npc.She] быстро [npc.verb(realise)], что [npc.she] [npc.has] совершенно не может ими контролировать, ведь это всего лишь комки пушистой шерсти.<br/>[npc.Name] теперь [npc.has] [npc.tailCount] [style.boldRabbitMorph(кроличьи хвосты)], состоящие из [npc.tailFullDescription(true)].#ENDIF",
+			"Растущий прямо над задницей [npc.her], [npc.sheHasFull]#IF(npc.getTailCount()==1) #IF(npc.isTailFeral()) [style.colourFeral(дикий)],#ENDIF [npc.tailColour(true)] кроличий хвост, который на самом деле является не более чем большим комком пушистой шерсти.#ELSE [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(дикие)],#ENDIF [npc.tailColour(true)] кроличьи хвосты, которые на самом деле являются не более чем большими комками пушистой шерсти.#ENDIF",
 			Util.newArrayListOfValues(
 					BodyPartTag.TAIL_TYPE_FUR,
 					BodyPartTag.TAIL_TAPERING_NONE,
@@ -932,34 +539,19 @@ public class TailType {
 			Race.REINDEER_MORPH,
 			PenetrationGirth.FOUR_GIRTHY,
 			0.05f,
-			"reindeer",
+			"оленьей шерсти",
 			"",
 			"",
-			"tail",
-			"tails",
-			Util.newArrayListOfValues("reindeer-like"),
-			Util.newArrayListOfValues("reindeer-like"),
-			"tip",
-			"tips",
-			Util.newArrayListOfValues("furry"),
-			Util.newArrayListOfValues("furry"),
-			"#IF(npc.getTailCount()==1)"
-				+ " A reindeer-like tail sprouts from just above [npc.her] ass, rapidly growing in size until it's about [npc.tailLength] long."
-				+ " [npc.She] quickly [npc.verb(discover)] that [npc.her] control over it is limited to simply twitching it up and down."
-				+ "<br/>"
-				+ "[npc.Name] now [npc.has] a [style.boldReindeerMorph(reindeer-like tail)], [npc.materialDescriptor] [npc.tailFullDescription(true)]."
-			+ "#ELSE"
-				+ " [npc.TailCount] reindeer-like tails sprout from just above [npc.her] ass, rapidly growing in size until they're each about [npc.tailLength] long."
-				+ " [npc.She] quickly [npc.verb(discover)] that [npc.her] control over them is limited to simply twitching them up and down."
-				+ "<br/>"
-				+ "[npc.Name] now [npc.has] [npc.tailCount] [style.boldReindeerMorph(reindeer-like tails)], [npc.materialDescriptor] [npc.tailFullDescription(true)]."
-			+ "#ENDIF",
-			"Growing out from just above [npc.her] ass, [npc.sheHasFull]"
-				+ "#IF(npc.getTailCount()==1)"
-					+ " a #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] reindeer tail, which [npc.she] can twitch up and down."
-				+ "#ELSE"
-					+ " [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] reindeer tails, which [npc.she] can twitch up and down."
-				+ "#ENDIF",
+			"хвост",
+			"хвосты",
+			Util.newArrayListOfValues("похожих на оленьи"),
+			Util.newArrayListOfValues("похожих на оленьи"),
+			"кончик",
+			"кончики",
+			Util.newArrayListOfValues("пушистая"),
+			Util.newArrayListOfValues("пушистая"),
+			"#IF(npc.getTailCount()==1) Прямо над [npc.her] задницей прорастает олений хвост, стремительно увеличиваясь в размерах, пока не достигнет около [npc.tailLength] в длину. [npc.She] быстро [npc.verb(discover)], что [npc.her] контроль над ним ограничен лишь простым подергиванием вверх-вниз.<br/>[npc.Name] теперь [npc.has] [style.boldReindeerMorph(олений хвост)], [npc.materialDescriptor] [npc.tailFullDescription(true)].#ELSE [npc.TailCount] Прямо над [npc.her] задницей прорастают оленьи хвосты, стремительно увеличиваясь в размерах, пока каждый из них не достигнет около [npc.tailLength] в длину. [npc.She] быстро [npc.verb(discover)], что [npc.her] контроль над ними ограничен лишь простым подергиванием вверх-вниз.<br/>[npc.Name] теперь [npc.has] [npc.tailCount] [style.boldReindeerMorph(оленьи хвосты)], [npc.materialDescriptor] [npc.tailFullDescription(true)].#ENDIF",
+			"Растущий прямо над [npc.her] задницей, [npc.sheHasFull]#IF(npc.getTailCount()==1) [style.colourFeral(дикий)],#ENDIF [npc.tailColour(true)] олений хвост, который [npc.she] можно подергивать вверх-вниз.#ELSE [npc.tailCount] [style.colourFeral(дикие)],#ENDIF [npc.tailColour(true)] оленьи хвосты, которые [npc.she] можно подергивать вверх-вниз.#ENDIF",
 			Util.newArrayListOfValues(
 					BodyPartTag.TAIL_TYPE_FUR,
 					BodyPartTag.TAIL_TAPERING_NONE), false) {
@@ -970,34 +562,19 @@ public class TailType {
 			Race.SQUIRREL_MORPH,
 			PenetrationGirth.FIVE_THICK,
 			1f,
-			"squirrel",
+			"беличьи",
 			"",
 			"",
-			"tail",
-			"tails",
-			Util.newArrayListOfValues("squirrel-like", "fluffy", "bushy"),
-			Util.newArrayListOfValues("squirrel-like", "fluffy", "bushy"),
-			"tip",
-			"tips",
-			Util.newArrayListOfValues("furry"),
-			Util.newArrayListOfValues("furry"),
-			"#IF(npc.getTailCount()==1)"
-				+ " A furry, squirrel-like tail sprouts from just above [npc.her] ass, rapidly growing in size until it's an impressive [npc.tailLength] long."
-				+ " [npc.She] quickly [npc.verb(realise)] that [npc.she] [npc.has] a reasonable amount of control over it, and can use it to help balance [npc.herHim] out while moving quickly."
-				+ "<br/>"
-				+ "[npc.Name] now [npc.has] a [style.boldSquirrelMorph(squirrel-like tail)], [npc.materialDescriptor] [npc.tailFullDescription(true)]."
-			+ "#ELSE"
-				+ " [npc.TailCount] furry, squirrel-like tails sprout from just above [npc.her] ass, rapidly growing in size until they're each an impressive [npc.tailLength] long."
-				+ " [npc.She] quickly [npc.verb(realise)] that [npc.she] [npc.has] a reasonable amount of control over them, and can use them to help balance [npc.herHim] out while moving quickly."
-				+ "<br/>"
-				+ "[npc.Name] now [npc.has] [npc.tailCount] [style.boldSquirrelMorph(squirrel-like tails)], [npc.materialDescriptor] [npc.tailFullDescription(true)]."
-			+ "#ENDIF",
-			"Growing out from just above [npc.her] ass, [npc.sheHasFull]"
-				+ "#IF(npc.getTailCount()==1)"
-					+ " a #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] squirrel tail, which [npc.she] can control well enough to grant [npc.herHim] significantly improved balance."
-				+ "#ELSE"
-					+ " [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] squirrel tails, which [npc.she] can control well enough to grant [npc.herHim] significantly improved balance."
-				+ "#ENDIF",
+			"хвост",
+			"хвосты",
+			Util.newArrayListOfValues("беличьи", "пушистый", "пушистый"),
+			Util.newArrayListOfValues("беличьи", "пушистый", "пушистый"),
+			"кончик",
+			"кончики",
+			Util.newArrayListOfValues("пушистая"),
+			Util.newArrayListOfValues("пушистая"),
+			"#IF(npc.getTailCount()==1) Прямо над задницей [npc.her] вырастает пушистый беличий хвост, стремительно увеличиваясь в размерах, пока не достигнет внушительной длины в [npc.tailLength]. [npc.She] быстро [npc.verb(realise)], что [npc.she] [npc.has] вполне разумно управляет им, и может использовать его, чтобы помогать [npc.herHim] сохранять равновесие при быстром движении.<br/>[npc.Name] теперь [npc.has] [style.boldSquirrelMorph(беличий хвост)], [npc.materialDescriptor] [npc.tailFullDescription(true)].#ELSE [npc.TailCount] Прямо над задницей [npc.her] вырастают пушистые беличьи хвосты, стремительно увеличиваясь в размерах, пока каждый из них не достигнет внушительной длины в [npc.tailLength]. [npc.She] быстро [npc.verb(realise)], что [npc.she] [npc.has] вполне разумно управляет ими, и может использовать их, чтобы помогать [npc.herHim] сохранять равновесие при быстром движении.<br/>[npc.Name] теперь [npc.has] [npc.tailCount] [style.boldSquirrelMorph(беличьи хвосты)], [npc.materialDescriptor] [npc.tailFullDescription(true)].#ENDIF",
+			"Growing out from just above [npc.her] ass, [npc.sheHasFull]#IF(npc.getTailCount()==1) a #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] squirrel tail, which [npc.she] can control well enough to grant [npc.herHim] significantly improved balance.#ELSE [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] squirrel tails, which [npc.she] can control well enough to grant [npc.herHim] significantly improved balance.#ENDIF",
 			Util.newArrayListOfValues(
 					BodyPartTag.TAIL_SLEEP_HUGGING,
 					BodyPartTag.TAIL_TYPE_FUR,
@@ -1009,34 +586,19 @@ public class TailType {
 			Race.WOLF_MORPH,
 			PenetrationGirth.FOUR_GIRTHY,
 			0.4f,
-			"wolf",
+			"волчьи",
 			"",
 			"",
-			"tail",
-			"tails",
-			Util.newArrayListOfValues("wolf-like", "fluffy"),
-			Util.newArrayListOfValues("wolf-like", "fluffy"),
-			"tip",
-			"tips",
-			Util.newArrayListOfValues("furry"),
-			Util.newArrayListOfValues("furry"),
-			"#IF(npc.getTailCount()==1)"
-				+ "  A furry, wolf-like tail sprouts from just above [npc.her] ass, rapidly growing in size until it's about [npc.tailLength] long."
-				+ " [npc.She] quickly [npc.verb(realise)] that [npc.she] [npc.has] limited control over it, and it takes a lot of effort to stop it from betraying [npc.her] emotions."
-				+ "<br/>"
-				+ "[npc.Name] now [npc.has] a [style.boldWolfMorph(wolf-like tail)], [npc.materialDescriptor] [npc.tailFullDescription(true)]."
-			+ "#ELSE"
-				+ " [npc.TailCount] furry, wolf-like tails sprout from just above [npc.her] ass, rapidly growing in size until they're each about [npc.tailLength] long."
-				+ " [npc.She] quickly [npc.verb(realise)] that [npc.she] [npc.has] limited control over them, and it takes a lot of effort to stop them from betraying [npc.her] emotions."
-				+ "<br/>"
-				+ "[npc.Name] now [npc.has] [npc.tailCount] [style.boldWolfMorph(wolf-like tails)], [npc.materialDescriptor] [npc.tailFullDescription(true)]."
-			+ "#ENDIF",
-			"Growing out from just above [npc.her] ass, [npc.sheHasFull]"
-				+ "#IF(npc.getTailCount()==1)"
-					+ " a #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] wolf tail, which swishes from side to side when [npc.she] [npc.verb(get)] excited."
-				+ "#ELSE"
-					+ " [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] wolf tails, which swish from side to side when [npc.she] [npc.verb(get)] excited."
-				+ "#ENDIF",
+			"хвост",
+			"хвосты",
+			Util.newArrayListOfValues("волчьими", "пушистый"),
+			Util.newArrayListOfValues("волчьими", "пушистый"),
+			"кончик",
+			"кончики",
+			Util.newArrayListOfValues("пушистая"),
+			Util.newArrayListOfValues("пушистая"),
+			"#IF(npc.getTailCount()==1) Из-под самой верхней части [npc.her] задницы прорастает пушистый волчий хвост, стремительно увеличиваясь в размерах, пока не достигнет примерно [npc.tailLength] в длину. [npc.She] быстро [npc.verb(realise)], что [npc.she] [npc.has] лишь частично управляет им, и ей приходится прилагать немало усилий, чтобы он не выдавал [npc.her] эмоции.<br/>[npc.Name] теперь [npc.has] [style.boldWolfMorph(волчий хвост)], [npc.materialDescriptor] [npc.tailFullDescription(true)].#ELSE [npc.TailCount] Из-под самой верхней части [npc.her] задницы прорастают пушистые волчьи хвосты, стремительно увеличиваясь в размерах, пока каждый из них не достигнет примерно [npc.tailLength] в длину. [npc.She] быстро [npc.verb(realise)], что [npc.she] [npc.has] лишь частично управляет ими, и ей приходится прилагать немало усилий, чтобы они не выдавали [npc.her] эмоции.<br/>[npc.Name] теперь [npc.has] [npc.tailCount] [style.boldWolfMorph(волчьи хвосты)], [npc.materialDescriptor] [npc.tailFullDescription(true)].#ENDIF",
+			"Растущий чуть выше [npc.her] задницы, [npc.sheHasFull] #IF(npc.getTailCount()==1) [style.colourFeral(feral)]#IFEND [npc.tailColour(true)] волчий хвост, который виляет из стороны в сторону, когда [npc.she] [npc.verb(get)] возбужден.#ELSE [npc.tailCount] [style.colourFeral(feral)]#IFEND [npc.tailColour(true)] волчьих хвоста, которые виляют из стороны в сторону, когда [npc.she] [npc.verb(get)] возбуждены.#ENDIF",
 			Util.newArrayListOfValues(
 					BodyPartTag.TAIL_SLEEP_HUGGING,
 					BodyPartTag.TAIL_TYPE_FUR,
@@ -1053,7 +615,7 @@ public class TailType {
 
 		// Modded types:
 		
-		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/race", "bodyParts", null);
+		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/раса", "bodyParts", null);
 		for(Entry<String, Map<String, File>> entry : moddedFilesMap.entrySet()) {
 			for(Entry<String, File> innerEntry : entry.getValue().entrySet()) {
 				if(Util.getXmlRootElementName(innerEntry.getValue()).equals("tail")) {

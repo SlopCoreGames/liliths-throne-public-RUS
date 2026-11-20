@@ -186,9 +186,9 @@ public class Vagina implements BodyPartInterface {
 		
 		if (type == owner.getVaginaType()) {
 			if(type == VaginaType.NONE) {
-				return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] already [npc.verb(lack)] a vagina, so nothing happens...)]</p>");
+				return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] уже [npc.verb(lack)] вагину, так что ничего не происходит...)]</p>");
 			} else {
-				return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] already [npc.has] [npc.a_vaginaRace] pussy, so nothing happens...)]</p>");
+				return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] уже [npc.has] [npc.a_vaginaRace] киска, так что ничего не происходит...)]</p>");
 			}
 		}
 		
@@ -199,18 +199,13 @@ public class Vagina implements BodyPartInterface {
 				&& type==VaginaType.NONE
 				&& (owner.isPregnant() || owner.hasStatusEffect(StatusEffect.PREGNANT_0) || owner.getIncubationLitter(SexAreaOrifice.VAGINA)!=null)) {
 			sb.append(UtilText.parse(owner,
-					"<p>"
-						+ "[npc.Name] [npc.verb(let)] out a lewd moan as [npc.she] [npc.verb(feel)] [npc.her] [npc.pussy+] starting to grow hot and sensitive,"
-							+ " and as a wave of tingling excitement washes through [npc.her] lower abdomen, [npc.her] moan turns into a desperate gasp."
-						+ " Much to [npc.her] surprise, the feeling fades away almost as quickly as it came, and with a sigh, [npc.she] [npc.verb(realise)] that "
+					"<p>[npc.Name] [npc.verb(let)] похотливый стон, когда [npc.she] [npc.verb(feel)] [npc.her] [npc.pussy+] начинает становиться горячей и чувствительной, и когда волна покалывающего возбуждения проходит сквозь [npc.her] низ живота, [npc.her] стон превращается в отчаянный вздох. К огромному [npc.her] удивлению, чувство исчезает почти так же быстро, как и появилось, и со вздохом, [npc.she] [npc.verb(realise)] это "
 						+ (owner.getIncubationLitter(SexAreaOrifice.VAGINA)!=null
-							?"<b>the eggs being incubated in [npc.her] womb have prevented [npc.her] vagina from being removed</b>!"
+							?"<b>яйца, инкубирующиеся в [npc.her] утробе, помешали удалению [npc.her] вагины</b>!"
 							:(owner.hasStatusEffect(StatusEffect.PREGNANT_0)
-								?"<b>the possibility of being pregnant has prevented [npc.her] vagina from being removed</b>!"
-								:"<b>[npc.her] ongoing pregnancy has prevented [npc.her] vagina from being removed</b>!"))
-						+ "<br/>"
-						+ "[npc.NamePos] pussy remains [style.boldTfSex(unchanged)]."
-					+ "</p>"));
+								?"<b>возможность беременности помешала удалению [npc.her] вагины</b>!"
+								:"<b>[npc.her] текущая беременность помешала удалению [npc.her] вагины</b>!"))
+						+ "<br/>[npc.NamePos] киска остается [style.boldTfSex(неизменной)].</p>"));
 			
 			return sb.toString()
 					+ "<p>"
@@ -221,32 +216,20 @@ public class Vagina implements BodyPartInterface {
 		// If have no vagina:
 		if(owner.getVaginaType() == VaginaType.NONE) {
 			sb.append(UtilText.parse(owner,
-					"<p>"
-						+ "[npc.Name] [npc.verb(blush)] as [npc.she] [npc.verb(feel)] a strange heat spreading through [npc.her] groin, and can't help but let out a low [npc.moan] as the [npc.skin] "
+					"<p>[npc.Name] [npc.verb(blush)], когда [npc.she] [npc.verb(feel)] странный жар разливается по [npc.her] паху, и не может не издать низкий [npc.moan], когда [npc.skin] "
 						+ (!owner.hasPenisIgnoreDildo()
-							? "in the middle of [npc.her] groin"
+							? "посреди [npc.her] паха"
 							: (!owner.isTaur()
-									?"beneath [npc.her] cock"
-									:"above and behind [npc.her] cock"))
-						+ " starts to cave inwards and form a shallow furrow."
-						+ " Showing no sign of stopping, this strange new indentation continues to deepen, sending another burst of heat shooting up into [npc.namePos] lower abdomen."
-						+ " As this second wave of heat fades away, a sharp, penetrating sensation shoots up into [npc.her] groin, and while it isn't painful,"
-							+ " [npc.she] can't help but cry out in shock as this groove suddenly splits and opens up to reveal a deep channel."
-						+ " The opening to this new orifice then quickly transforms into the distinctive shape of a vagina, complete with a [npc.clitSize] clit and [npc.labiaSize] labia."
-					+ "</p>"
-					+ "<p>"
-						+ "Just as [npc.she] [npc.verb(start)] to think that the transformation is over, one final intense wave of heat pulses up into [npc.namePos] lower abdomen,"
-							+ " and [npc.she] can't help but let out a desperate [npc.moan] as [npc.she] instinctively [npc.verb(realise)] that a completely-functional female reproductive system has grown inside of [npc.herHim]."
-						+ " As [npc.her] transformation finally comes to an end, [npc.namePos] suddenly [npc.verb(become)] aware of the fact that [npc.her] new cunt is already soaking wet from arousal, "
-							+ "causing [npc.herHim] to let out one final, sensual [npc.moan]."
-						+ "<br/>"));
+									?"под [npc.her] членом"
+									:"над и позади [npc.her] члена"))
+						+ " начинает прогибаться внутрь, образуя неглубокую борозду. Не подавая признаков остановки, это странное новое углубление продолжает углубляться, посылая очередной всплеск жара в нижнюю часть живота [npc.namePos]. Когда эта вторая волна жара утихает, резкое, пронзительное ощущение прошивает пах [npc.her], и хотя это не больно, [npc.she] не может не вскрикнуть от шока, когда эта борозда внезапно расщепляется и раскрывается, обнажая глубокий канал. Отверстие этого нового отверстия быстро принимает характерную форму влагалища, дополненную [npc.clitSize] клитором и [npc.labiaSize] половыми губами.</p><p>Как раз когда [npc.she] [npc.verb(start)] подумать, что трансформация завершена, последняя интенсивная волна жара пульсирует в нижней части живота [npc.namePos], и [npc.she] не может не издать отчаянный [npc.moan], когда [npc.she] инстинктивно [npc.verb(realise)], что внутри [npc.herHim] выросла полностью функционирующая женская репродуктивная система. Когда трансформация [npc.her] наконец подходит к концу, [npc.namePos] внезапно [npc.verb(become)] осознает, что новая киска [npc.her] уже насквозь промокла от возбуждения, заставляя [npc.herHim] издать последний чувственный [npc.moan].<br/>"));
 			
 			if(owner.isVaginaVirgin()) {
 				sb.append(UtilText.parse(owner,
-						"[npc.Name] now [npc.has] a [style.colourExcellent(virgin)] [style.boldTfSex(vagina)], complete with an [style.colourExcellent(unbroken hymen)]!"));
+						"[npc.Name] теперь [npc.has] [style.colourExcellent(девственная)] [style.boldTfSex(вагина)], в комплекте с [style.colourExcellent(неповрежденной девственной плевой)]!"));
 			} else {
 				sb.append(UtilText.parse(owner,
-						"[npc.Name] now [npc.has] a new [style.boldTfSex(vagina)], and although [npc.she] can't consider [npc.herself] a virgin, [npc.she] at least [npc.has] an [style.colourExcellent(unbroken hymen)]!"));
+						"[npc.Name] теперь [npc.has] [style.boldTfSex(вагина)], и хотя [npc.she] уже нельзя считать [npc.herself] девственницей, [npc.she] по крайней мере [npc.has] [style.colourExcellent(неповрежденную девственную плеву)]!"));
 			}
 					
 			sb.append("</p>");
@@ -254,32 +237,10 @@ public class Vagina implements BodyPartInterface {
 			if(owner.hasFetish(Fetish.FETISH_PURE_VIRGIN)) {
 				if(owner.isVaginaVirgin()) {
 					sb.append(UtilText.parse(owner,
-							"<p style='text-align:center;'>"
-								+ "[style.boldExcellent(Pure Virgin)]"
-								+ "<br/><i>"
-								+ "Now that [npc.name] [npc.has] a vagina, [npc.she] can finally consider [npc.herself] to be a truly pure virgin!"
-								+ " Letting a delighted smile settle on [npc.her] [npc.face], [npc.she] can't help but feel extremely elated, and that for as long as [npc.she] [npc.verb(retain)] [npc.her] virginity,"
-									+ " [npc.she]'ll represent the perfect image of a proud, virtuous being!"
-								+ "</i>"
-								+ "<br/>"
-								+ "[npc.NameIsFull] now a [style.boldExcellent(Pure Virgin)]!"
-							+ "</p>"));
+							"<p style='text-align:center;'>[style.boldExcellent(Чистая девственница)]<br/><i>Теперь, когда у [npc.name] [npc.has] вагина, [npc.she] наконец-то может считать [npc.herself] истинно чистой девственницей! С легкой восторженной улыбкой на [npc.her] [npc.face], [npc.she] не может не чувствовать невероятного восторга, ведь пока [npc.she] [npc.verb(retain)] [npc.her] девственность, [npc.she] будет воплощением идеального, гордого и добродетельного существа!</i><br/>[npc.NameIsFull] теперь [style.boldExcellent(Чистая девственница)]!</p>"));
 				} else {
 					sb.append(UtilText.parse(owner,
-							"<p style='text-align:center;'>"
-								+ "[style.boldGood(Pure 'Virgin')]"
-								+ "<br/><i>"
-								+ "Finding [npc.herself] once again in possession of an unspoiled vagina, a huge wave of euphoria crashes over [npc.name]."
-								+ " Convincing [npc.herself] that [npc.her] unbroken hymen means that [npc.sheIs] technically a virgin again, [npc.she] [npc.verb(feel)] tears of joy start to well up in [npc.her] [npc.eyes]."
-								+ " Despite this feeling of elation, however, there's a small nagging voice in the back of [npc.her] mind which reminds [npc.herHim] that [npc.she]'ll never be a 'real' virgin ever again."
-								+ "<br/>"
-								+ "Shaking [npc.her] head clear of this unwelcome thought, [npc.name] [npc.verb(focus)] on the fact that for as long as [npc.her] hymen remains intact, [npc.she] can at least pretend that [npc.sheHas] never been fucked before."
-								+ " Not even wanting to consider the notion that [npc.her] pussy might at some point be broken in again,"
-									+ " [npc.she] [npc.verb(hold)] [npc.her] head up high and [npc.verb(tell)] [npc.herself] that [npc.sheIs] once again the perfect image of a proud, virtuous being!"
-								+ "</i>"
-								+ "<br/>"
-								+ "[npc.NameIsFull] now a [style.boldGood(Pure 'Virgin')]!"
-							+ "</p>"));
+							"<p style='text-align:center;'>[style.boldGood(Чистая «Дева»)]<br/><i>Осознание того, что [npc.herself] снова обладает нетронутой киской, накрывает [npc.name] огромной волной эйфории. Убедив [npc.herself], что [npc.her] неповрежденная девственная плева означает, что [npc.sheIs] технически снова девственница, [npc.she] [npc.verb(feel)] в [npc.her] [npc.eyes] начинают подступать слезы радости. Однако, несмотря на это чувство ликования, где-то на задворках разума [npc.her] зудит навязчивый голос, напоминающий [npc.herHim], что [npc.she] больше никогда не будет «настоящей» девственницей.<br/>Встряхнув [npc.her] головой, чтобы прогнать эту незваную мысль, [npc.name] [npc.verb(focus)] на том, что пока [npc.her] плева остается целой, [npc.she] может хотя бы притворяться, будто [npc.sheHas] ее еще никто не трахал. Даже не желая допускать мысли, что [npc.her] киску когда-нибудь придется снова «разминать», [npc.she] [npc.verb(hold)] [npc.herself] [npc.her] высоко подняв голову и [npc.verb(tell)], что [npc.sheIs] снова является идеальным воплощением гордого и добродетельного существа!</i><br/>[npc.NameIsFull] теперь [style.boldGood(Чистая «Дева»)]!</p>"));
 				}
 			}
 			
@@ -299,8 +260,7 @@ public class Vagina implements BodyPartInterface {
 			
 		} else {
 			sb.append(UtilText.parse(owner,
-					"<p>"
-						+"[npc.Name] [npc.verb(feel)] a strange heat throbbing within [npc.her] pussy, and [npc.she] can't help but blush and pant for breath as [npc.her] pussy begins to transform.<br/>"));
+					"<p>[npc.Name] [npc.verb(feel)] странный жар пульсирует внутри [npc.her] киски, и [npc.she] не может не краснеть и тяжело дышать, пока [npc.her] киска начинает трансформироваться.<br/>"));
 		}
 
 		sb.append(this.type.applyAdditionalTransformationEffects(owner, false));
@@ -316,9 +276,9 @@ public class Vagina implements BodyPartInterface {
 		if(this.type != VaginaType.NONE) {
 			sb.append("<p style='text-align:center;'>");
 				if(this.eggLayer) {
-					sb.append(UtilText.parse(owner,"<i>Instead of giving birth to live young, [npc.name] now [style.colourEgg([npc.verb(lay)] eggs)]!</i>"));
+					sb.append(UtilText.parse(owner,"<i>Вместо того чтобы рожать живых детенышей, [npc.name] теперь [style.colourEgg([npc.verb(lay)] откладывает яйца)]!</i>"));
 				} else {
-					sb.append(UtilText.parse(owner,"<i>[npc.Name] now [style.colourSex([npc.verb(give)] birth to live young)]!</i>"));
+					sb.append(UtilText.parse(owner,"<i>[npc.Name] теперь [style.colourSex([npc.verb(give)] рождает потомство)]!</i>"));
 				}
 			sb.append("</p>");
 		}
@@ -328,8 +288,7 @@ public class Vagina implements BodyPartInterface {
 			orificeVagina.addOrificeModifier(owner, om);
 		}
 		
-		sb.append(UtilText.parse(owner,"<p>"
-				+ "Any old modifiers which [npc.her] pussy might have had have [style.boldShrink(transformed away)]!"));
+		sb.append(UtilText.parse(owner,"<p>Все старые модификаторы, которые могла иметь киска [npc.her], [style.boldShrink(исчезли в процессе трансформации)]!"));
 		
 		if(orificeVagina.getOrificeModifiers().isEmpty()) {
 			sb.append("</p>");
@@ -360,7 +319,7 @@ public class Vagina implements BodyPartInterface {
 	
 	public String setLabiaSize(GameCharacter owner, int labiaSize) {
 		if(!owner.hasVagina()) {
-			return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+			return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 		}
 		
 		int oldSize = this.labiaSize;
@@ -373,39 +332,23 @@ public class Vagina implements BodyPartInterface {
 		
 		if (sizeChange == 0) {
 			if(owner.isPlayer()) {
-				return "<p style='text-align:center;'>[style.colourDisabled(The size of your labia doesn't change...)]</p>";
+				return "<p style='text-align:center;'>[style.colourDisabled(Размер ваших половых губ не меняется...)]</p>";
 			} else {
-				return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(The size of [npc.namePos] labia doesn't change...)]</p>");
+				return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(Размер губ [npc.namePos] не меняется...)]</p>");
 			}
 		} else if (sizeChange > 0) {
 			if (owner.isPlayer()) {
-				return "<p>"
-							+ "[pc.A_moan+] bursts out from between your [pc.lips+] as you feel a warm tingling sensation run up into your [pc.pussy]."
-							+ " Squirming about on the spot, your exclamation turns into a surprised gasp as you feel your labia swell up and [style.boldGrow(grow larger)].<br/>"
-							+ "You now have [style.boldSex([pc.labiaSize] labia)]!"
-						+ "</p>";
+				return "<p>[pc.A_moan+] вырывается из между ваших [pc.lips+], и вы чувствуете, как теплое покалывание пробегает вверх по [pc.pussy]. Суетливо ерзая на месте, ваш возглас сменяется удивленным вздохом, когда вы чувствуете, как ваши половые губы набухают и [style.boldGrow(растут)].<br/>Теперь у вас [style.boldSex([pc.labiaSize] половые губы)]!</p>";
 			} else {
 				return UtilText.parse(owner,
-						"<p>"
-							+ "[npc.A_moan+] bursts out from between [npc.name] [pc.lips+] as [npc.she] feels a warm tingling sensation run up into [npc.her] [npc.pussy]."
-							+ " Squirming about on the spot, [npc.her] exclamation turns into a surprised gasp as [npc.she] feels [npc.her] labia swell up and [style.boldGrow(grow larger)].<br/>"
-							+ "[npc.Name] now has [style.boldSex([npc.labiaSize] labia)]!"
-						+ "</p>");
+						"<p>[npc.A_moan+] вырывается из между [npc.name] [pc.lips+], когда [npc.she] чувствует, как теплое покалывание пробегает вверх по [npc.her] [npc.pussy]. Суетливо ерзая на месте, возглас [npc.her] сменяется удивленным вздохом, когда [npc.she] чувствует, как [npc.her] половые губы набухают и [style.boldGrow(растут)].<br/>Теперь у [npc.Name] [style.boldSex([npc.labiaSize] половые губы)]!</p>");
 			}
 		} else {
 			if (owner.isPlayer()) {
-				return "<p>"
-						+ "[pc.A_moan+] bursts out from between your [pc.lips+] as you feel a cool tingling sensation spread up into your [pc.pussy]."
-						+ " Squirming about on the spot, your exclamation turns into a surprised gasp as you feel your labia shrink down and [style.boldShrink(get smaller)].<br/>"
-						+ "You now have [style.boldSex([pc.labiaSize] labia)]!"
-					+ "</p>";
+				return "<p>[pc.A_moan+] вырывается из между твоих [pc.lips+], и ты чувствуешь, как прохладное покалывание разливается вверх по [pc.pussy]. Ты начинаешь ерзать на месте, и твой возглас переходит в удивленный вздох, когда ты чувствуешь, как твои половые губы сжимаются и [style.boldShrink(уменьшаются)].<br/>Теперь у тебя [style.boldSex([pc.labiaSize] малые половые губы)]!</p>";
 			} else {
 				return UtilText.parse(owner,
-						"<p>"
-							+ "[npc.A_moan+] bursts out from between [npc.name] [pc.lips+] as [npc.she] feels a cool tingling sensation spread up into [npc.her] [npc.pussy]."
-							+ " Squirming about on the spot, [npc.her] exclamation turns into a surprised gasp as [npc.she] feels [npc.her] labia shrink down and [style.boldShrink(get smaller)].<br/>"
-							+ "[npc.Name] now has [style.boldSex([npc.labiaSize] labia)]!"
-						+ "</p>");
+						"<p>[npc.A_moan+] вырывается из между [npc.name] [pc.lips+], когда [npc.she] ощущает, как прохладное покалывание разливается вверх по [npc.her] [npc.pussy]. Тщетно извиваясь на месте, [npc.her] восклицание превращается в удивленный вздох, когда [npc.she] чувствует, как [npc.her] половые губы сжимаются и [style.boldShrink(уменьшаются)].<br/>[npc.Name] теперь обладает [style.boldSex([npc.labiaSize] половыми губами)]!</p>");
 			}
 		}
 	}
@@ -421,13 +364,13 @@ public class Vagina implements BodyPartInterface {
 		}
 		
 		if(this.pierced == pierced || !owner.hasVagina()) {
-			return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+			return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 		}
 		
 		this.pierced = pierced;
 		
 		if(pierced) {
-			return UtilText.parse(owner, "<p>[npc.NamePos] [npc.pussy] is now [style.boldGrow(pierced)]!</p>");
+			return UtilText.parse(owner, "<p>[npc.NamePos] [npc.pussy] теперь [style.boldGrow(проколот)]!</p>");
 			
 		} else {
 			AbstractClothing c = owner.getClothingInSlot(InventorySlot.PIERCING_VAGINA);
@@ -438,9 +381,7 @@ public class Vagina implements BodyPartInterface {
 			}
 			
 			return UtilText.parse(owner,
-					"<p>"
-						+ "[npc.NamePos] [npc.pussy] is [style.boldShrink(no longer pierced)]!"
-					+ "</p>"
+					"<p>[npc.NamePos] [npc.pussy] [style.boldShrink(больше не проколот)]!</p>"
 					+piercingUnequip);
 		}
 	}
@@ -456,36 +397,23 @@ public class Vagina implements BodyPartInterface {
 		}
 		
 		if(this.eggLayer == eggLayer || !owner.hasVagina()) {
-			return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+			return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 		}
 		
 		if(owner.isPregnant()) {
 			return UtilText.parse(owner,
-					"<p>"
-						+ "[npc.Name] [npc.verb(let)] out a shocked gasp as an unpleasant tingling sensation suddenly spreads throughout [npc.her] lower abdomen."
-						+ " Almost as soon as it arrived, however, this alarming feeling fades away, and [npc.name] [npc.verb(realise)] that [npc.her] ongoing pregnancy is preventing [npc.her] womb from being transformed!"
-					+ "</p>");
+					"<p>[npc.Name] [npc.verb(let)] изумленный вздох, когда неприятное покалывание внезапно разливается по нижней части [npc.her] живота. Однако почти сразу после появления это тревожное чувство исчезает, и [npc.name] [npc.verb(realise)], что [npc.her] текущая беременность мешает [npc.her] матке трансформироваться!</p>");
 		}
 		
 		this.eggLayer = eggLayer;
 		
 		if(eggLayer) {
 			return UtilText.parse(owner,
-					"<p>"
-						+ "[npc.Name] [npc.verb(let)] out a shocked gasp as an unpleasant tingling sensation suddenly spreads throughout [npc.her] lower abdomen."
-						+ " An intense cramp quickly replaces this feeling, causing [npc.namePos] gasp to turn into a distressed groan."
-						+ "<br/>"
-						+ "Thankfully, this uncomfortable transformation quickly runs its course, leaving [npc.name] panting for breath and instinctively knowing that [style.boldEgg([npc.she] will now lay eggs instead of birthing live young)]!"
-					+ "</p>");
+					"<p>[npc.Name] [npc.verb(let)] испускает потрясенный вздох, когда неприятное покалывание внезапно разливается по нижней части живота [npc.her]. Это чувство быстро сменяется сильной судорогой, отчего судорожный вздох [npc.namePos] превращается в мучительный стон.<br/>К счастью, эта дискомфортная трансформация быстро завершается, оставляя [npc.name] тяжело дышащей и инстинктивно понимающей, что [style.boldEgg([npc.she] теперь будет откладывать яйца вместо рождения живых детенышей)]!</p>");
 			
 		} else {
 			return UtilText.parse(owner,
-					"<p>"
-						+ "[npc.Name] [npc.verb(let)] out a shocked gasp as an unpleasant tingling sensation suddenly spreads throughout [npc.her] lower abdomen."
-						+ " An intense cramp quickly replaces this feeling, causing [npc.namePos] gasp to turn into a distressed groan."
-						+ "<br/>"
-						+ "Thankfully, this uncomfortable transformation quickly runs its course, leaving [npc.name] panting for breath and instinctively knowing that [style.boldSex([npc.she] will now birth live young instead of laying eggs)]!"
-					+ "</p>");
+					"<p>[npc.Name] [npc.verb(let)] издает потрясенный вздох, когда неприятное покалывание внезапно разливается по нижней части живота [npc.her]. Это чувство быстро сменяется интенсивной судорогой, отчего вздох [npc.namePos] превращается в мучительный стон.<br/>К счастью, эта дискомфортная трансформация быстро завершается, оставляя [npc.name] тяжело дышащей и инстинктивно понимающей, что [style.boldSex([npc.she] теперь будет рожать живых детенышей вместо того, чтобы откладывать яйца)]!</p>");
 		}
 	
 	}

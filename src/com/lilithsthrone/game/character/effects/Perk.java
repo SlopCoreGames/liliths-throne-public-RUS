@@ -35,7 +35,7 @@ public class Perk {
 	
 	public static AbstractPerk JOB_MISC = new AbstractPerk(20,
 			true,
-			"Misc",
+			"Разное",
 			PerkCategory.JOB,
 			"perks/jobs/prostitute",
 			PresetColour.BASE_PINK,
@@ -66,7 +66,7 @@ public class Perk {
 
 	public static AbstractPerk JOB_NPC_HARPY_FLOCK_MEMBER = new AbstractPerk(20,
 			true,
-			"pecking order",
+			"Иерархия",
 			PerkCategory.JOB,
 			"perks/jobs/npc_harpy_flock_member",
 			PresetColour.RACE_HARPY,
@@ -196,7 +196,7 @@ public class Perk {
 	
 	public static AbstractPerk JOB_NPC_ENFORCER_SWORD_CHIEF_INSPECTOR = new AbstractPerk(20,
 			true,
-			"Enforcer: SWORD Chief Inspector",
+			"Enforcer: Главный инспектор SWORD",
 			PerkCategory.JOB,
 			"perks/jobs/npc_enforcer_chief_inspector",
 			PresetColour.CLOTHING_BLUE,
@@ -224,7 +224,7 @@ public class Perk {
 	
 	public static AbstractPerk JOB_NPC_ENFORCER_SWORD_INSPECTOR = new AbstractPerk(20,
 			true,
-			"Enforcer: SWORD Inspector",
+			"Enforcer: Инспектор SWORD",
 			PerkCategory.JOB,
 			"perks/jobs/npc_enforcer_inspector",
 			PresetColour.CLOTHING_BLUE,
@@ -252,7 +252,7 @@ public class Perk {
 	
 	public static AbstractPerk JOB_NPC_ENFORCER_SWORD_SERGEANT = new AbstractPerk(20,
 			true,
-			"Enforcer: SWORD Sergeant",
+			"Enforcer: Сержант SWORD",
 			PerkCategory.JOB,
 			"perks/jobs/npc_enforcer_sergeant",
 			PresetColour.CLOTHING_BLUE,
@@ -280,7 +280,7 @@ public class Perk {
 	
 	public static AbstractPerk JOB_NPC_ENFORCER_SWORD_CONSTABLE = new AbstractPerk(20,
 			true,
-			"Enforcer: SWORD Constable",
+			"Enforcer: Констебль SWORD",
 			PerkCategory.JOB,
 			"perks/jobs/npc_enforcer_constable",
 			PresetColour.CLOTHING_BLUE,
@@ -308,7 +308,7 @@ public class Perk {
 	
 	public static AbstractPerk JOB_NPC_ENFORCER_ORICL_INSPECTOR = new AbstractPerk(20,
 			true,
-			"Enforcer: ORICL Inspector",
+			"Enforcer: Инспектор ORICL",
 			PerkCategory.JOB,
 			"perks/jobs/npc_enforcer_inspector",
 			PresetColour.CLOTHING_BLUE,
@@ -338,7 +338,7 @@ public class Perk {
 	
 	public static AbstractPerk JOB_NPC_ENFORCER_ORICL_SERGEANT = new AbstractPerk(20,
 			true,
-			"Enforcer: ORICL Sergeant",
+			"Enforcer: Сержант ORICL",
 			PerkCategory.JOB,
 			"perks/jobs/npc_enforcer_sergeant",
 			PresetColour.CLOTHING_BLUE,
@@ -368,7 +368,7 @@ public class Perk {
 	
 	public static AbstractPerk JOB_NPC_ENFORCER_ORICL_CONSTABLE = new AbstractPerk(20,
 			true,
-			"Enforcer: ORICL Constable",
+			"Enforcer: Констебль ORICL",
 			PerkCategory.JOB,
 			"perks/jobs/npc_enforcer_constable",
 			PresetColour.CLOTHING_BLUE,
@@ -410,13 +410,13 @@ public class Perk {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"[npc.NameIsFull] a full-time member of the 'Cult of Lilith', and in order to properly worship [npc.her] goddess, [npc.sheHasFull] spent an inordinate amount of time training both [npc.her] spell-casting and seductive powers.");
+					"[npc.NameIsFull] — штатный член «Культа Lilith», и чтобы должным образом поклоняться [npc.her] богине, [npc.sheHasFull] потратила невероятное количество времени, оттачивая как свои способности к [npc.her] заклинаниям, так и искусство соблазнения.");
 		}
 	};
 
 	public static AbstractPerk JOB_NPC_SLAVER_ADMIN = new AbstractPerk(20,
 			true,
-			"shady overseer",
+			"подозрительный надзиратель",
 			PerkCategory.JOB,
 			"perks/jobs/npc_slave_admin",
 			PresetColour.CLOTHING_BLACK_STEEL,
@@ -434,7 +434,7 @@ public class Perk {
 
 	public static AbstractPerk JOB_NPC_BOUNCER = new AbstractPerk(20,
 			true,
-			"bouncer",
+			"вышибала",
 			PerkCategory.JOB,
 			"perks/jobs/npc_bouncer",
 			PresetColour.DAMAGE_TYPE_PHYSICAL,
@@ -452,7 +452,7 @@ public class Perk {
 
 	public static AbstractPerk JOB_NPC_BARMAID = new AbstractPerk(20,
 			true,
-			"barmaid",
+			"горничная",
 			PerkCategory.JOB,
 			"perks/jobs/npc_barmaid",
 			PresetColour.DAMAGE_TYPE_PHYSICAL,
@@ -463,23 +463,23 @@ public class Perk {
 		@Override
 		public String getName(GameCharacter owner) {
 			if(owner==null) {
-				return "bartender";
+				return "бармен";
 			}
 			if(owner.isFeminine()) {
 				return super.getName(owner);
 			}
-			return "barman";
+			return "бармен";
 		}
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"Благодаря [npc.her] опыту работы в качестве "+(owner.isFeminine()?"barmaid":"barman")+", [npc.name] знает все хитрости флирта, а также как сопротивляться настойчивым ухаживаниям пьяных.");
+					"Благодаря [npc.her] опыту работы в качестве "+(owner.isFeminine()?"горничная":"бармен")+", [npc.name] знает все хитрости флирта, а также как сопротивляться настойчивым ухаживаниям пьяных.");
 		}
 	};
 
 	public static AbstractPerk JOB_NPC_BEAUTICIAN = new AbstractPerk(20,
 			true,
-			"beauty ideal",
+			"идеал красоты",
 			PerkCategory.JOB,
 			"perks/jobs/npc_beautician",
 			PresetColour.DAMAGE_TYPE_PHYSICAL,
@@ -496,7 +496,7 @@ public class Perk {
 	
 	public static AbstractPerk JOB_NPC_NIGHTCLUB_OWNER = new AbstractPerk(20,
 			true,
-			"the boss",
+			"босс",
 			PerkCategory.JOB,
 			"perks/jobs/npc_nightclub_owner",
 			PresetColour.DAMAGE_TYPE_PHYSICAL,
@@ -524,13 +524,13 @@ public class Perk {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"[npc.NameHasFull] dedicated most of [npc.her] life to studying the arcane and unlocking its secrets.");
+					"[npc.NameHasFull] посвятил(а) большую часть [npc.her] жизни изучению арканы и раскрытию её тайн.");
 		}
 	};
 
 	public static AbstractPerk JOB_NPC_SHOP_MANAGER = new AbstractPerk(20,
 			true,
-			"manager",
+			"менеджер",
 			PerkCategory.JOB,
 			"perks/jobs/npc_shop_manager",
 			PresetColour.CURRENCY_GOLD,
@@ -547,7 +547,7 @@ public class Perk {
         
 	public static AbstractPerk JOB_NPC_REBEL_FIGHTER = new AbstractPerk(20,
 			true,
-			"rebel fighter",
+			"повстанка",
 			PerkCategory.JOB,
 			"perks/jobs/npc_rebel_fighter",
 			PresetColour.CLOTHING_RED_DARK,
@@ -587,7 +587,7 @@ public class Perk {
 	
 	public static AbstractPerk JOB_NPC_JOURNALIST = new AbstractPerk(20,
 			true,
-			"Walk the Line",
+			"Идти по краю",
 			PerkCategory.JOB,
 			"perks/jobs/npc_journalist",
 			Util.newArrayListOfValues(PresetColour.CLOTHING_DESATURATED_BROWN, PresetColour.CLOTHING_BLACK, PresetColour.CLOTHING_WHITE),
@@ -618,7 +618,7 @@ public class Perk {
 
 	public static AbstractPerk JOB_NPC_REINDEER_OVERSEER = new AbstractPerk(20,
 			true,
-			"winter-proof",
+			"морозостойкость",
 			PerkCategory.JOB,
 			"perks/jobs/npc_reindeer_overseer",
 			PresetColour.RACE_REINDEER_MORPH,
@@ -635,7 +635,7 @@ public class Perk {
 
 	public static AbstractPerk JOB_ELDER_LILIN = new AbstractPerk(20,
 			true,
-			"untouchable",
+			"неприкасаемая",
 			PerkCategory.JOB,
 			"perks/jobs/elder_lilin",
 			PresetColour.RACE_LILIN,
@@ -666,7 +666,7 @@ public class Perk {
 
 	public static AbstractPerk JOB_NPC_SLIME_QUEEN = new AbstractPerk(20,
 			true,
-			"royal jelly",
+			"королевское желе",
 			PerkCategory.JOB,
 			"perks/jobs/npc_slime_queen",
 			Util.newArrayListOfValues(PresetColour.CLOTHING_GOLD, PresetColour.CLOTHING_RED_VERY_DARK, PresetColour.CLOTHING_GOLD),
@@ -685,7 +685,7 @@ public class Perk {
 
 	public static AbstractPerk JOB_NPC_SLIME_QUEEN_GUARD = new AbstractPerk(20,
 			true,
-			"slime servant",
+			"слуга слаймов",
 			PerkCategory.JOB,
 			"perks/jobs/npc_slime_queen_guard",
 			PresetColour.RACE_REINDEER_MORPH,
@@ -702,7 +702,7 @@ public class Perk {
 
 	public static AbstractPerk JOB_EPONA = new AbstractPerk(20,
 			true,
-			"fertility queen",
+			"королева плодородия",
 			PerkCategory.JOB,
 			"perks/jobs/npc_epona",
 			PresetColour.BASE_PINK,
@@ -713,13 +713,13 @@ public class Perk {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"[npc.NameHasFull] dedicated [npc.her] entire life to helping others become mothers and fathers, and is currently achieving this noble goal by running the game 'pregnancy roulette' in Submission's Gambling Den.");
+					"[npc.NameHasFull] посвятила [npc.her] всю свою жизнь тому, чтобы помогать другим становиться матерями и отцами, и сейчас она преследует эту благородную цель, проводя игру «беременная рулетка» в игорном доме Submission.");
 		}
 	};
 	
 	public static AbstractPerk JOB_GANG_LEADER = new AbstractPerk(20,
 			true,
-			"ruthless leadership",
+			"безжалостное лидерство",
 			PerkCategory.JOB,
 			"perks/jobs/npc_rat_gang",
 			Util.newArrayListOfValues(
@@ -742,7 +742,7 @@ public class Perk {
 	
 	public static AbstractPerk JOB_GANG_BODY_GUARD = new AbstractPerk(20,
 			true,
-			"sharpest fangs",
+			"острейшие клыки",
 			PerkCategory.JOB,
 			"perks/jobs/npc_rat_gang",
 			Util.newArrayListOfValues(
@@ -788,7 +788,7 @@ public class Perk {
 
 	public static AbstractPerk JOB_NPC_STABLE_MISTRESS = new AbstractPerk(20,
 			true,
-			"horse trainer",
+			"тренер лошадей",
 			PerkCategory.JOB,
 			"perks/jobs/npc_stable_mistress",
 			Util.newArrayListOfValues(
@@ -809,7 +809,7 @@ public class Perk {
 	
 	public static AbstractPerk JOB_LYSSIETH_GUARD = new AbstractPerk(20,
 			true,
-			"dutiful daughter",
+			"послушная дочь",
 			PerkCategory.JOB,
 			"perks/jobs/npc_lyssieth_guard",
 			Util.newArrayListOfValues(
@@ -871,7 +871,7 @@ public class Perk {
 	
 	public static AbstractPerk JOB_NPC_ASSISTANT = new AbstractPerk(20,
 			true,
-			"A Helping Hand",
+			"Рука помощи",
 			PerkCategory.JOB,
 			"perks/jobs/assistant",
 			PresetColour.BASE_GREEN,
@@ -888,7 +888,7 @@ public class Perk {
 	
 	public static AbstractPerk JOB_LUNETTE_HERD = new AbstractPerk(20,
 			true,
-			"Merciless Raider",
+			"Беспощадный налётчик",
 			PerkCategory.JOB,
 			"perks/jobs/lunette_raider",
 			Util.newArrayListOfValues(
@@ -912,7 +912,7 @@ public class Perk {
 
 	public static AbstractPerk JOB_NPC_MUSHROOM_FORAGER = new AbstractPerk(20,
 			true,
-			"Masterful Mycologist",
+			"Мастер микологии",
 			PerkCategory.JOB,
 			"perks/jobs/mushroom_forager",//TODO
 			Util.newArrayListOfValues(
@@ -933,7 +933,7 @@ public class Perk {
 
 	public static AbstractPerk JOB_LUNETTE_RECOGNISED_DAUGHTER = new AbstractPerk(20,
 			true,
-			"Lunette's favourite",
+			"Любимица Лунетт",
 			PerkCategory.JOB,
 			"perks/jobs/lunette_raider",
 			Util.newArrayListOfValues(
@@ -956,7 +956,7 @@ public class Perk {
 
 	public static AbstractPerk JOB_ELDER_LILIN_PAWN = new AbstractPerk(20,
 			true,
-			"A loyal pawn",
+			"Верная пешка",
 			PerkCategory.JOB,
 			"perks/jobs/elder_lilin_pawn",
 			Util.newArrayListOfValues(PresetColour.RACE_LILIN),
@@ -970,13 +970,13 @@ public class Perk {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"[npc.NameIsFull] a loyal, valued pawn of an elder lilin, and as such has been granted a fraction of [npc.her] mistress's power.");
+					"[npc.NameIsFull] верная и ценная пешка старшей лилин, благодаря чему ей была дарована часть [npc.her] власти госпожи.");
 		}
 	};
 
 	public static AbstractPerk JOB_SEX_DOLL = new AbstractPerk(20,
 			true,
-			"dutiful doll",
+			"послушная кукла",
 			PerkCategory.JOB,
 			"perks/jobs/sex_doll",
 			Util.newArrayListOfValues(PresetColour.RACE_DOLL),
@@ -1018,7 +1018,7 @@ public class Perk {
 	
 	public static AbstractPerk JOB_AMAZONIAN = new AbstractPerk(20,
 			true,
-			"Girl Power",
+			"Женская сила",
 			PerkCategory.JOB,
 			"perks/jobs/npc_amazonian",
 			PresetColour.BASE_PINK,
@@ -1039,7 +1039,7 @@ public class Perk {
 
 	public static AbstractPerk JOB_YOUKO = new AbstractPerk(20,
 			true,
-			"Bewitching Fox",
+			"Очаровательная лисица",
 			PerkCategory.JOB,
 			"perks/jobs/npc_youko",
 			PresetColour.RACE_FOX_MORPH,
@@ -1058,7 +1058,7 @@ public class Perk {
 	
 	public static AbstractPerk JOB_PUGILIST = new AbstractPerk(20,
 			true,
-			"pugalist",
+			"пугалист",
 			PerkCategory.JOB,
 			"perks/jobs/npc_pugilist",
 			PresetColour.DAMAGE_TYPE_PHYSICAL,
@@ -1094,7 +1094,7 @@ public class Perk {
 
 	public static AbstractPerk JOB_CAPTIVE = new AbstractPerk(20,
 			true,
-			"Kidnapped",
+			"Похищенный",
 			PerkCategory.JOB,
 			"perks/jobs/npc_captive",
 			PresetColour.BASE_RED,
@@ -1127,7 +1127,7 @@ public class Perk {
 	
 	public static AbstractPerk JOB_MUGGER = new AbstractPerk(20,
 			true,
-			"Outlaw",
+			"Вне закона",
 			PerkCategory.JOB,
 			"perks/jobs/mugger",
 			PresetColour.BASE_CRIMSON,
@@ -1143,7 +1143,7 @@ public class Perk {
 	
 	public static AbstractPerk JOB_BOUNTY_HUNTER = new AbstractPerk(20,
 			true,
-			"No Escape",
+			"Без выхода",
 			PerkCategory.JOB,
 			"perks/jobs/bounty_hunter",
 			PresetColour.BASE_CRIMSON,
@@ -1159,7 +1159,7 @@ public class Perk {
 	
 	public static AbstractPerk JOB_CONSTRUCTION_WORKER = new AbstractPerk(20,
 			true,
-			"Builder",
+			"Строитель",
 			PerkCategory.JOB,
 			"perks/jobs/npc_construction",
 			Util.newArrayListOfValues(PresetColour.CLOTHING_YELLOW, PresetColour.CLOTHING_BLACK),
@@ -1176,7 +1176,7 @@ public class Perk {
 	
 	public static AbstractPerk JOB_CONSTRUCTION_WORKER_ARCANE = new AbstractPerk(20,
 			true,
-			"Matter manipulation",
+			"Манипуляция материей",
 			PerkCategory.JOB,
 			"perks/jobs/npc_construction",
 			Util.newArrayListOfValues(PresetColour.CLOTHING_PURPLE, PresetColour.CLOTHING_BLACK),
@@ -1216,7 +1216,7 @@ public class Perk {
 	
 	public static AbstractPerk JOB_OFFICE_WORKER = new AbstractPerk(20,
 			true,
-			"The Salaryman",
+			"Служащий",
 			PerkCategory.JOB,
 			"perks/jobs/officeWorker",
 			PresetColour.BASE_BROWN,
@@ -1228,7 +1228,7 @@ public class Perk {
 			if(owner!=null && owner.isFeminine()) {
 				return "Карьера Женщины";
 			} else {
-				return "The Salaryman";
+				return "Служащий";
 			}
 		}
 		@Override
@@ -1240,7 +1240,7 @@ public class Perk {
 	
 	public static AbstractPerk JOB_STUDENT = new AbstractPerk(20,
 			true,
-			"Student Discount",
+			"Студенческая скидка",
 			PerkCategory.JOB,
 			"perks/jobs/student",
 			PresetColour.BASE_YELLOW,
@@ -1256,7 +1256,7 @@ public class Perk {
 	
 	public static AbstractPerk JOB_MUSICIAN = new AbstractPerk(20,
 			true,
-			"Arcane Composition",
+			"Arcane Состав",
 			PerkCategory.JOB,
 			"perks/jobs/musician",
 			PresetColour.BASE_GREY,
@@ -1265,14 +1265,13 @@ public class Perk {
 			Util.newArrayListOfValues("[style.boldExcellent(Double)] продолжительность всех эффектов заклинаний")) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.Name] [npc.verb(find)] что [npc.herPos] способности как музыканта довольно хорошо переводятся на искусство соблазнения."
-					+ " [npc.She] [npc.verb(feel)] the same sort of rhythm in casting spells as [npc.she] [npc.do] with music, resulting in all of [npc.herPos] spell effects lasting twice as long as usual.");
+			return UtilText.parse(owner, "[npc.Name] [npc.verb(find)] что [npc.herPos] способности как музыканта довольно хорошо переводятся на искусство соблазнения. [npc.She] [npc.verb(feel)] тот же самый ритм при чтении заклинаний, что и [npc.she] [npc.do] с музыкой, в результате чего все [npc.herPos] эффекты заклинаний длятся в два раза дольше обычного.");
 		}
 	};
 	
 	public static AbstractPerk JOB_TEACHER = new AbstractPerk(20,
 			true,
-			"In Control",
+			"Контроль",
 			PerkCategory.JOB,
 			"perks/jobs/teacher",
 			PresetColour.BASE_BLUE_LIGHT,
@@ -1288,7 +1287,7 @@ public class Perk {
 	
 	public static AbstractPerk JOB_WRITER = new AbstractPerk(20,
 			true,
-			"Meditations",
+			"Медитации",
 			PerkCategory.JOB,
 			"perks/jobs/writer",
 			PresetColour.BASE_PURPLE,
@@ -1304,7 +1303,7 @@ public class Perk {
 
 	public static AbstractPerk JOB_CHEF = new AbstractPerk(20,
 			true,
-			"Fine Taste",
+			"Изысканный вкус",
 			PerkCategory.JOB,
 			"perks/jobs/chef",
 			PresetColour.BASE_ORANGE,
@@ -1321,7 +1320,7 @@ public class Perk {
 
 	public static AbstractPerk JOB_PLAYER_CONSTRUCTION_WORKER = new AbstractPerk(20,
 			true,
-			"Project Manager",
+			"Проджект-менеджер",
 			PerkCategory.JOB,
 			"perks/jobs/construction",
 			Util.newArrayListOfValues(PresetColour.CLOTHING_YELLOW, PresetColour.CLOTHING_BLACK),
@@ -1341,7 +1340,7 @@ public class Perk {
 
 	public static AbstractPerk JOB_SOLDIER = new AbstractPerk(20,
 			true,
-			"Controlled Aggression",
+			"Контролируемая агрессия",
 			PerkCategory.JOB,
 			"perks/jobs/soldier",
 			PresetColour.BASE_GREEN,
@@ -1375,7 +1374,7 @@ public class Perk {
 
 	public static AbstractPerk JOB_ARISTOCRAT = new AbstractPerk(20,
 			true,
-			"Blue Blood",
+			"Голубая кровь",
 			PerkCategory.JOB,
 			"perks/jobs/aristocrat",
 			PresetColour.BASE_GOLD,
@@ -1396,7 +1395,7 @@ public class Perk {
 	
 	public static AbstractPerk JOB_MAID = new AbstractPerk(20,
 			true,
-			"Housekeeper",
+			"Домохозяйка",
 			PerkCategory.JOB,
 			"perks/jobs/maid",
 			PresetColour.BASE_PINK_LIGHT,
@@ -1434,7 +1433,7 @@ public class Perk {
 
 	public static AbstractPerk JOB_TOURIST = new AbstractPerk(20,
 			true,
-			"I'm an American!",
+			"Я американец!",
 			PerkCategory.JOB,
 			"perks/jobs/tourist",
 			PresetColour.BASE_BLUE_DARK,
@@ -1454,7 +1453,7 @@ public class Perk {
 	
 	public static AbstractPerk PHYSICAL_BASE = new AbstractPerk(20,
 			false,
-			"natural fitness",
+			"природная форма",
 			PerkCategory.PHYSICAL,
 			"perks/attStrength5",
 			PresetColour.ATTRIBUTE_PHYSIQUE,
@@ -1469,7 +1468,7 @@ public class Perk {
 
 	public static AbstractPerk CRITICAL_BOOST = new AbstractPerk(20,
 			false,
-			"critical power",
+			"критический удар",
 			PerkCategory.PHYSICAL,
 			"perks/critical_power",
 			PresetColour.BASE_ORANGE,
@@ -1486,7 +1485,7 @@ public class Perk {
 
 	public static AbstractPerk CRITICAL_BOOST_LUST = new AbstractPerk(20,
 			false,
-			"critical power",
+			"критический удар",
 			PerkCategory.LUST,
 			"perks/critical_power",
 			PresetColour.BASE_PINK,
@@ -1503,7 +1502,7 @@ public class Perk {
 
 	public static AbstractPerk CRITICAL_BOOST_ARCANE = new AbstractPerk(20,
 			false,
-			"critical power",
+			"критический удар",
 			PerkCategory.ARCANE,
 			"perks/critical_power",
 			PresetColour.BASE_PURPLE,
@@ -1520,7 +1519,7 @@ public class Perk {
 	
 	public static AbstractPerk PHYSIQUE_BOOST = new AbstractPerk(20,
 			false,
-			"physically fit",
+			"в отличной форме",
 			PerkCategory.PHYSICAL,
 			"perks/attStrength1",
 			PresetColour.ATTRIBUTE_PHYSIQUE,
@@ -1535,7 +1534,7 @@ public class Perk {
 	
 	public static AbstractPerk PHYSIQUE_BOOST_ALT = new AbstractPerk(20,
 			false,
-			"physically fit",
+			"в отличной форме",
 			PerkCategory.PHYSICAL,
 			"perks/attStrength1",
 			PresetColour.ATTRIBUTE_PHYSIQUE,
@@ -1550,7 +1549,7 @@ public class Perk {
 
 	public static AbstractPerk PHYSIQUE_BOOST_MAJOR = new AbstractPerk(20,
 			false,
-			"physically fit",
+			"в отличной форме",
 			PerkCategory.PHYSICAL,
 			"perks/attStrength5",
 			PresetColour.ATTRIBUTE_PHYSIQUE,
@@ -1565,7 +1564,7 @@ public class Perk {
 	
 	public static AbstractPerk PHYSICAL_DAMAGE = new AbstractPerk(20,
 			false,
-			"striker",
+			"ударник",
 			PerkCategory.PHYSICAL,
 			"perks/strike",
 			PresetColour.DAMAGE_TYPE_PHYSICAL,
@@ -1580,7 +1579,7 @@ public class Perk {
 
 	public static AbstractPerk UNARMED_DAMAGE = new AbstractPerk(20,
 			false,
-			"hand-to-hand",
+			"рукопашный бой",
 			PerkCategory.PHYSICAL,
 			"perks/unarmed_damage",
 			PresetColour.DAMAGE_TYPE_PHYSICAL,
@@ -1610,7 +1609,7 @@ public class Perk {
 
 	public static AbstractPerk RANGED_DAMAGE = new AbstractPerk(20,
 			false,
-			"sharp-shooter",
+			"меткий стрелок",
 			PerkCategory.PHYSICAL,
 			"perks/ranged_damage",
 			PresetColour.DAMAGE_TYPE_PHYSICAL,
@@ -1625,7 +1624,7 @@ public class Perk {
 
 	public static AbstractPerk BESERK = new AbstractPerk(20,
 			true,
-			"berserk",
+			"берсерк",
 			PerkCategory.PHYSICAL,
 			"perks/beserk",
 			PresetColour.DAMAGE_TYPE_PHYSICAL,
@@ -1639,13 +1638,13 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "Having little time for strategies which don't involve an all-out show of force, [npc.name] [npc.verb(throw)] [npc.herself] into battle with a complete disregard for [npc.her] own safety.");
+			return UtilText.parse(owner, "Поскольку у него мало времени на стратегии, не подразумевающие демонстрацию сокрушительной мощи, [npc.name] [npc.verb(throw)] [npc.herself] в бой, совершенно не заботясь о [npc.her] собственной безопасности.");
 		}
 	};
 	
 	public static AbstractPerk PHYSICAL_DEFENCE = new AbstractPerk(20,
 			false,
-			"defender",
+			"защитник",
 			PerkCategory.PHYSICAL,
 			"perks/shield",
 			PresetColour.DAMAGE_TYPE_PHYSICAL,
@@ -1660,7 +1659,7 @@ public class Perk {
 
 	public static AbstractPerk HYPERMOBILITY = new AbstractPerk(20,
 			false,
-			"hypermobility",
+			"гипермобильность",
 			PerkCategory.PHYSICAL,
 			"perks/hypermobility",
 			PresetColour.BASE_WHITE,
@@ -1679,7 +1678,7 @@ public class Perk {
 	
 	public static AbstractPerk SPELL_DAMAGE = new AbstractPerk(20,
 			false,
-			"spell power",
+			"сила заклинаний",
 			PerkCategory.ARCANE,
 			"perks/arcane_power_1",
 			PresetColour.ATTRIBUTE_ARCANE,
@@ -1693,7 +1692,7 @@ public class Perk {
 	
 	public static AbstractPerk SPELL_DAMAGE_MAJOR = new AbstractPerk(20,
 			false,
-			"spell mastery",
+			"мастерство заклинаний",
 			PerkCategory.ARCANE,
 			"perks/arcane_power_3",
 			PresetColour.ATTRIBUTE_ARCANE,
@@ -1707,7 +1706,7 @@ public class Perk {
 	
 	public static AbstractPerk SPELL_EFFICIENCY = new AbstractPerk(20,
 			false,
-			"spell efficiency",
+			"эффективность заклинаний",
 			PerkCategory.ARCANE,
 			"perks/spell_efficiency",
 			PresetColour.ATTRIBUTE_ARCANE,
@@ -1721,7 +1720,7 @@ public class Perk {
 	
 	public static AbstractPerk AURA_BOOST = new AbstractPerk(20,
 			false,
-			"aura reserves",
+			"запасы ауры",
 			PerkCategory.ARCANE,
 			"perks/resource_boost",
 			PresetColour.ATTRIBUTE_MANA,
@@ -1736,7 +1735,7 @@ public class Perk {
 	
 	public static AbstractPerk ENERGY_BOOST = new AbstractPerk(20,
 			false,
-			"energy reserves",
+			"запасы энергии",
 			PerkCategory.PHYSICAL,
 			"perks/resource_boost",
 			PresetColour.ATTRIBUTE_HEALTH,
@@ -1751,7 +1750,7 @@ public class Perk {
 
 	public static AbstractPerk ENERGY_BOOST_DRAIN_DAMAGE = new AbstractPerk(20,
 			true,
-			"aura shielding",
+			"аура-щит",
 			PerkCategory.PHYSICAL,
 			"perks/resource_boost_drain_aura",
 			PresetColour.ATTRIBUTE_HEALTH,
@@ -1762,13 +1761,13 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "By focusing [npc.her] arcane aura into a protective barrier, [npc.nameIsFull] able to endure taking more damage than [npc.she] otherwise would be able to.");
+			return UtilText.parse(owner, "Концентрируя [npc.her] арканную ауру в защитный барьер, [npc.nameIsFull] может выдержать больше урона, чем [npc.she] смог бы в противном случае.");
 		}
 	};
 	
 	public static AbstractPerk ELEMENTAL_BOOST = new AbstractPerk(20,
 			false,
-			"elemental striker",
+			"стихийный боец",
 			PerkCategory.LUST,
 			"perks/elemental_damage",
 			PresetColour.ATTRIBUTE_ARCANE,
@@ -1786,7 +1785,7 @@ public class Perk {
 	
 	public static AbstractPerk ELEMENTAL_BOOST_ALT = new AbstractPerk(20,
 			false,
-			"elemental striker",
+			"стихийный боец",
 			PerkCategory.LUST,
 			"perks/elemental_damage",
 			PresetColour.ATTRIBUTE_ARCANE,
@@ -1804,7 +1803,7 @@ public class Perk {
 	
 	public static AbstractPerk ELEMENTAL_BOOST_ALT_2 = new AbstractPerk(20,
 			false,
-			"elemental striker",
+			"стихийный боец",
 			PerkCategory.LUST,
 			"perks/elemental_damage",
 			PresetColour.ATTRIBUTE_ARCANE,
@@ -1816,13 +1815,13 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameHasFull] dedicated [npc.herself] to learning how to harness all of the arcane elements more effectively.");
+			return UtilText.parse(owner, "[npc.NameHasFull] посвятил(а) [npc.herself] изучению того, как более эффективно обуздать все стихии Арканы.");
 		}
 	};
 	
 	public static AbstractPerk ELEMENTAL_DEFENCE_BOOST = new AbstractPerk(20,
 			false,
-			"elemental defender",
+			"стихийный защитник",
 			PerkCategory.LUST,
 			"perks/elemental_defence",
 			PresetColour.ATTRIBUTE_ARCANE,
@@ -1855,7 +1854,7 @@ public class Perk {
 	
 	public static AbstractPerk ARCANE_BOOST = new AbstractPerk(20,
 			false,
-			"arcane training",
+			"обучение Аркане",
 			PerkCategory.ARCANE,
 			"perks/attIntelligence1",
 			PresetColour.ATTRIBUTE_ARCANE,
@@ -1870,7 +1869,7 @@ public class Perk {
 
 	public static AbstractPerk ARCANE_BOOST_ALT = new AbstractPerk(20,
 			false,
-			"arcane training",
+			"обучение Аркане",
 			PerkCategory.ARCANE,
 			"perks/attIntelligence5",
 			PresetColour.ATTRIBUTE_ARCANE,
@@ -1885,7 +1884,7 @@ public class Perk {
 
 	public static AbstractPerk ARCANE_BOOST_MAJOR = new AbstractPerk(20,
 			false,
-			"arcane affinity",
+			"родство с Арканой",
 			PerkCategory.ARCANE,
 			"perks/attIntelligence5",
 			PresetColour.ATTRIBUTE_ARCANE,
@@ -1901,7 +1900,7 @@ public class Perk {
 	
 	public static AbstractPerk LEWD_KNOWLEDGE = new AbstractPerk(20,
 			false,
-			"lewd knowledge",
+			"похотливые знания",
 			PerkCategory.LUST,
 			"perks/lewd_knowledge",
 			PresetColour.DAMAGE_TYPE_LUST,
@@ -1912,13 +1911,13 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.Name] [npc.verb(know)] exactly what sort of lewd things the residents of Dominion get up to, and so can use this knowledge to [npc.her] advantage...");
+			return UtilText.parse(owner, "[npc.Name] [npc.verb(know)] точно знает, какими непристойными делами занимаются жители Dominion, и может использовать эти знания, чтобы [npc.her] в свою пользу...");
 		}
 	};
 	
 	public static AbstractPerk SEDUCTION_BOOST = new AbstractPerk(20,
 			false,
-			"seductive",
+			"соблазнительный",
 			PerkCategory.LUST,
 			"perks/attSeduction1",
 			PresetColour.DAMAGE_TYPE_LUST,
@@ -1932,7 +1931,7 @@ public class Perk {
 	
 	public static AbstractPerk SEDUCTION_BOOST_ALT = new AbstractPerk(20,
 			false,
-			"seductive",
+			"соблазнительный",
 			PerkCategory.LUST,
 			"perks/attSeduction1",
 			PresetColour.DAMAGE_TYPE_LUST,
@@ -1946,7 +1945,7 @@ public class Perk {
 	
 	public static AbstractPerk SEDUCTION_BOOST_ALT_2 = new AbstractPerk(20,
 			false,
-			"seductive",
+			"соблазнительный",
 			PerkCategory.LUST,
 			"perks/attSeduction1",
 			PresetColour.DAMAGE_TYPE_LUST,
@@ -1960,7 +1959,7 @@ public class Perk {
 	
 	public static AbstractPerk SEDUCTION_BOOST_MAJOR = new AbstractPerk(20,
 			false,
-			"seductive",
+			"соблазнительный",
 			PerkCategory.LUST,
 			"perks/attSeduction5",
 			PresetColour.BASE_PINK_DEEP,
@@ -1974,7 +1973,7 @@ public class Perk {
 	
 	public static AbstractPerk SEDUCTION_DEFENCE_BOOST = new AbstractPerk(20,
 			false,
-			"resistance",
+			"сопротивление",
 			PerkCategory.LUST,
 			"perks/shield",
 			PresetColour.DAMAGE_TYPE_LUST,
@@ -1982,13 +1981,13 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameHasFull] steeled [npc.herself] to resist any temptation, making it much more likely that [npc.she]'ll be able to avoid getting turned on when teased.");
+			return UtilText.parse(owner, "[npc.NameHasFull] закаленный [npc.herself], способный противостоять любому искушению, что значительно повышает шансы на то, что [npc.she] удастся не возбудиться во время дразнилок.");
 		}
 	};
 	
 	public static AbstractPerk VIRILITY_BOOST = new AbstractPerk(20,
 			false,
-			"virile",
+			"витальный",
 			PerkCategory.LUST,
 			"perks/virile",
 			PresetColour.BASE_BLUE_LIGHT,
@@ -2002,7 +2001,7 @@ public class Perk {
 	
 	public static AbstractPerk VIRILITY_MAJOR_BOOST = new AbstractPerk(20,
 			false,
-			"virile",
+			"витальный",
 			PerkCategory.LUST,
 			"perks/virile",
 			PresetColour.GENERIC_EXCELLENT,
@@ -2016,7 +2015,7 @@ public class Perk {
 
 	public static AbstractPerk FERTILITY_BOOST = new AbstractPerk(20,
 			false,
-			"fertile",
+			"плодовитый",
 			PerkCategory.LUST,
 			"perks/fertile",
 			PresetColour.BASE_PINK_LIGHT,
@@ -2030,7 +2029,7 @@ public class Perk {
 
 	public static AbstractPerk FERTILITY_MAJOR_BOOST = new AbstractPerk(20,
 			false,
-			"fertile",
+			"плодовитый",
 			PerkCategory.LUST,
 			"perks/fertile",
 			PresetColour.GENERIC_EXCELLENT,
@@ -2045,7 +2044,7 @@ public class Perk {
 	
 	public static AbstractPerk ARCANE_COMBATANT = new AbstractPerk(20,
 			false,
-			"arcane combatant",
+			"арканный боец",
 			PerkCategory.ARCANE,
 			"perks/physical_brawler",
 			PresetColour.ATTRIBUTE_ARCANE,
@@ -2062,7 +2061,7 @@ public class Perk {
 	
 	public static AbstractPerk SACRIFICIAL_SHIELDING = new AbstractPerk(20,
 			true,
-			"sacrificial shielding",
+			"жертвенная защита",
 			PerkCategory.ARCANE,
 			"perks/sacrificial_shielding",
 			PresetColour.ATTRIBUTE_MANA,
@@ -2073,13 +2072,13 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "By sacrificing a portion of [npc.her] physical strength, [npc.nameIsFull] able to summon forth an all-protective shield.");
+			return UtilText.parse(owner, "Жертвуя частью своей физической силы [npc.her], [npc.nameIsFull] получает способность призывать всеобъемлющий защитный щит.");
 		}
 	};
 
 	public static AbstractPerk ARCANE_VAMPYRISM = new AbstractPerk(20,
 			true,
-			"arcane vampyrism",
+			"арканный вампиризм",
 			PerkCategory.ARCANE,
 			"perks/arcane_vampyrism",
 			PresetColour.ATTRIBUTE_MANA,
@@ -2087,18 +2086,18 @@ public class Perk {
 					new Value<>(Attribute.MANA_MAXIMUM, -25)),
 			Util.newArrayListOfValues(
 					"[style.colourExcellent(Поглощение 50%)] от любого бойца оставшейся [style.colourMana("+Attribute.MANA_MAXIMUM.getName()+")]",
-					 "when they are defeated")) {
+					 "когда они повержены")) {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameHasFull] trained [npc.her] arcane aura to be vampyric in nature, relying less on its own reserves, and more upon the ability to drain the aura from anyone (friend or foe) who is defeated nearby.");
+			return UtilText.parse(owner, "[npc.NameHasFull] натренировал(а) свою арканную ауру [npc.her] так, чтобы она обладала вампирической природой, меньше полагаясь на собственные резервы и больше на способность высасывать ауру из любого (друга или врага), кто будет повержен поблизости.");
 		}
 	};
 	
 	
 	public static AbstractPerk FEROCIOUS_WARRIOR = new AbstractPerk(20,
 			false,
-			"ferocious warrior",
+			"свирепый воин",
 			PerkCategory.PHYSICAL,
 			"perks/physical_brawler",
 			PresetColour.ATTRIBUTE_PHYSIQUE,
@@ -2112,20 +2111,20 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameHasFull] a lot of fighting experience, making [npc.herHim] a dangerous opponent for anyone foolish enough to challenge [npc.herHim].");
+			return UtilText.parse(owner, "[npc.NameHasFull] обладает огромным боевым опытом, что делает [npc.herHim] опасным противником для любого, кто окажется достаточно глуп, чтобы бросить вызов [npc.herHim].");
 		}
 	};
 	
 	
 	public static AbstractPerk OBSERVANT = new AbstractPerk(60,
 			true,
-			"observant",
+			"наблюдательный",
 			PerkCategory.PHYSICAL,
 			"perks/misc_observant",
 			PresetColour.GENERIC_ARCANE,
 			Util.newHashMapOfValues(new Value<>(Attribute.DAMAGE_PHYSICAL, 5)),
 			Util.newArrayListOfValues(
-					"<span style='color:"+ PresetColour.GENERIC_SEX.toWebHexString()+ ";'>Gender detection</span>")) {
+					"<span style='color:"+ PresetColour.GENERIC_SEX.toWebHexString()+ ";'>Определение пола</span>")) {
 		@Override
 		public String applyPerkGained(GameCharacter character) {
 			return UtilText.parsePlayerThought("");
@@ -2139,10 +2138,9 @@ public class Perk {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			if (owner!=null && owner.isPlayer()) {
-				return "You are very perceptive, and are capable of noticing the slightest of changes in your surroundings."
-						+ " You are always able to determine a person's gender, even if you have no knowledge of what their groin looks like.";
+				return "Вы очень проницательны и способны заметить малейшие изменения в окружающем мире. Вы всегда можете определить пол человека, даже если понятия не имеете, как выглядит его пах.";
 			} else {
-				return UtilText.parse(owner, "[npc.Name] is very perceptive, and [npc.she] continuously scans [npc.her] surroundings for signs of danger.");
+				return UtilText.parse(owner, "[npc.Name] очень проницателен/на, и [npc.she] постоянно сканирует [npc.her] окружение на предмет признаков опасности.");
 			}
 		}
 	};
@@ -2150,14 +2148,14 @@ public class Perk {
 
 	public static AbstractPerk HEAVY_SLEEPER = new AbstractPerk(60,
 			true,
-			"heavy sleeper",
+			"крепко спящий",
 			PerkCategory.PHYSICAL,
-			"statusEffects/sleeping",
+			"statusEffects/спячка",
 			PresetColour.SLEEP_HEAVY,
 			Util.newHashMapOfValues(),
 			Util.newArrayListOfValues(
-					"Will not wake during [style.colourSex(gentle)] sex",
-					"[style.boldExcellent(10x)] [style.colourHealth(health)] and [style.colourMana(aura)] regeneration rate")) {
+					"Не просыпается во время [style.colourSex(нежного)] секса",
+					"[style.boldExcellent(10x)] скорость регенерации [style.colourHealth(здоровья)] и [style.colourMana(ауры)]")) {
 		@Override
 		public String applyPerkGained(GameCharacter character) {
 			return UtilText.parsePlayerThought("");
@@ -2181,12 +2179,12 @@ public class Perk {
 	
 	public static AbstractPerk ARCANE_CRITICALS = new AbstractPerk(60,
 			false,
-			"arcane precision",
+			"arcane точность",
 			PerkCategory.ARCANE,
 			"perks/physical_accurate",
 			PresetColour.GENERIC_ARCANE,
 			Util.newHashMapOfValues(new Value<>(Attribute.DAMAGE_SPELLS, 5)),
-			Util.newArrayListOfValues("<span style='color:"+ PresetColour.GENERIC_COMBAT.toWebHexString()+ ";'>Критические</span> заклинания наносят <b style='color:"+PresetColour.ATTRIBUTE_LUST.toWebHexString()+";'>Arcane weakness</b>")) {
+			Util.newArrayListOfValues("<span style='color:"+ PresetColour.GENERIC_COMBAT.toWebHexString()+ ";'>Критические</span> заклинания наносят <b style='color:"+PresetColour.ATTRIBUTE_LUST.toWebHexString()+";'>Слабость к Arcane</b>")) {
 		@Override
 		public String applyPerkGained(GameCharacter character) {
 			return UtilText.parsePlayerThought("");
@@ -2284,7 +2282,7 @@ public class Perk {
 
 	public static AbstractPerk FIRE_ENHANCEMENT = new AbstractPerk(20,
 			false,
-			"firebrand",
+			"огненный знак",
 			PerkCategory.ARCANE,
 			"perks/attIntelligence3",
 			PresetColour.DAMAGE_TYPE_FIRE,
@@ -2301,7 +2299,7 @@ public class Perk {
 
 	public static AbstractPerk FIRE_ENHANCEMENT_2 = new AbstractPerk(20,
 			false,
-			"incendiary",
+			"зажигательный",
 			PerkCategory.ARCANE,
 			"perks/arcane_fire_1",
 			PresetColour.DAMAGE_TYPE_FIRE,
@@ -2320,7 +2318,7 @@ public class Perk {
 
 	public static AbstractPerk COLD_ENHANCEMENT = new AbstractPerk(20,
 			false,
-			"frosty",
+			"морозный",
 			PerkCategory.ARCANE,
 			"perks/attIntelligence3",
 			PresetColour.DAMAGE_TYPE_COLD,
@@ -2337,7 +2335,7 @@ public class Perk {
 
 	public static AbstractPerk COLD_ENHANCEMENT_2 = new AbstractPerk(20,
 			false,
-			"ice cold",
+			"ледяной",
 			PerkCategory.ARCANE,
 			"perks/arcane_ice_1",
 			PresetColour.DAMAGE_TYPE_COLD,
@@ -2351,13 +2349,13 @@ public class Perk {
 			if (owner.isPlayer())
 				return "Вы мастер в манипуляции арканизмом льда. Вы не только можете максимизировать его урон, но и иметь повышенную устойчивость к его эффектам.";
 			else
-				return UtilText.parse(owner, "[npc.Name] is an expert at manipulating arcane ice. Not only is [npc.she] able to maximise its damage, but [npc.she] also has a heightened resistance to its effects.");
+				return UtilText.parse(owner, "[npc.Name] — эксперт в манипуляциях с арканическим льдом. [npc.she] не только способен максимизировать его урон, но и обладает повышенной сопротивляемостью к его эффектам, что также свойственно [npc.she].");
 		}
 	};
 
 	public static AbstractPerk POISON_ENHANCEMENT = new AbstractPerk(20,
 			false,
-			"venomous",
+			"ядовитый",
 			PerkCategory.ARCANE,
 			"perks/attIntelligence3",
 			PresetColour.DAMAGE_TYPE_POISON,
@@ -2374,7 +2372,7 @@ public class Perk {
 
 	public static AbstractPerk POISON_ENHANCEMENT_2 = new AbstractPerk(20,
 			false,
-			"toxic",
+			"токсичный",
 			PerkCategory.ARCANE,
 			"perks/arcane_poison_1",
 			PresetColour.DAMAGE_TYPE_POISON,
@@ -2395,7 +2393,7 @@ public class Perk {
 	// Fitness:
 	public static AbstractPerk RUNNER = new AbstractPerk(20,
 			true,
-			"runner",
+			"бегун",
 			PerkCategory.PHYSICAL,
 			"perks/fitness_runner",
 			PresetColour.ATTRIBUTE_PHYSIQUE,
@@ -2413,7 +2411,7 @@ public class Perk {
 
 	public static AbstractPerk RUNNER_2 = new AbstractPerk(20,
 			true,
-			"cardio champion",
+			"чемпион кардио",
 			PerkCategory.PHYSICAL,
 			"perks/fitness_runner_2",
 			PresetColour.ATTRIBUTE_PHYSIQUE,
@@ -2422,21 +2420,21 @@ public class Perk {
 		@Override
 		public String getName(GameCharacter character) {
 			if (character!=null && character.isFeminine()) {
-				return "Cardio Queen";
+				return "Королева кардио";
 			} else {
-				return "Cardio King";
+				return "Король кардио";
 			}
 		}
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameIsFull] " + (owner.isFeminine() ? "queen" : "king") + " кардио, обладающий, казалось бы, бесконечным запасом энергии.");
+			return UtilText.parse(owner, "[npc.NameIsFull] " + (owner.isFeminine() ? "королева" : "король") + " кардио, обладающий, казалось бы, бесконечным запасом энергии.");
 		}
 	};
 
 	public static AbstractPerk COMBAT_REGENERATION = new AbstractPerk(20,
 			true,
-			"combat regeneration",
+			"боевая регенерация",
 			PerkCategory.PHYSICAL,
 			"perks/regeneration",
 			PresetColour.ATTRIBUTE_PHYSIQUE,
@@ -2450,7 +2448,7 @@ public class Perk {
 	
 	public static AbstractPerk UNARMED_TRAINING = new AbstractPerk(20,
 			false,
-			"brawler",
+			"драчун",
 			PerkCategory.PHYSICAL,
 			"perks/natural_fighter",
 			PresetColour.ATTRIBUTE_PHYSIQUE,
@@ -2466,12 +2464,11 @@ public class Perk {
 
 	public static AbstractPerk FEMALE_ATTRACTION = new AbstractPerk(60,
 			false,
-			"ladykiller",
+			"ловелас",
 			PerkCategory.LUST,
 			"perks/fitness_female_attraction",
 			PresetColour.FEMININE,
-			null, Util.newArrayListOfValues("+10% <span style='color:" + Attribute.DAMAGE_LUST.getColour().toWebHexString() + ";'>lust damage</span>"
-					+ " vs <span style='color:" + PresetColour.FEMININE.toWebHexString()+ ";'>feminine opponents</span>")) {
+			null, Util.newArrayListOfValues("+10% <span style='color:" + Attribute.DAMAGE_LUST.getColour().toWebHexString() + ";'>урон похотью</span> против <span style='color:" + PresetColour.FEMININE.toWebHexString()+ ";'>женственных противников</span>")) {
 		@Override
 		public String applyPerkGained(GameCharacter character) {
 			return UtilText.parsePlayerThought("");
@@ -2491,12 +2488,11 @@ public class Perk {
 
 	public static AbstractPerk MALE_ATTRACTION = new AbstractPerk(60,
 			false,
-			"minx",
+			"кокетка",
 			PerkCategory.LUST,
 			"perks/fitness_male_attraction",
 			PresetColour.MASCULINE,
-			null, Util.newArrayListOfValues("+10% <span style='color:" + Attribute.DAMAGE_LUST.getColour().toWebHexString() + ";'>lust damage</span>"
-					+ " vs <span style='color:" + PresetColour.MASCULINE.toWebHexString()+ ";'>masculine opponents</span>")) {
+			null, Util.newArrayListOfValues("+10% <span style='color:" + Attribute.DAMAGE_LUST.getColour().toWebHexString() + ";'>урон похотью</span> против <span style='color:" + PresetColour.MASCULINE.toWebHexString()+ ";'>мужественные противники</span>")) {
 		@Override
 		public String applyPerkGained(GameCharacter character) {
 			return UtilText.parsePlayerThought("");
@@ -2515,7 +2511,7 @@ public class Perk {
 	
 	public static AbstractPerk CONVINCING_REQUESTS = new AbstractPerk(20,
 			true,
-			"irresistible appeals",
+			"непреодолимо манят",
 			PerkCategory.LUST,
 			"perks/convincing_requests",
 			Util.newArrayListOfValues(PresetColour.GENERIC_SEX, PresetColour.BASE_GOLD),
@@ -2542,7 +2538,7 @@ public class Perk {
 			Util.newArrayListOfValues("Все партнеры по сексу требуют [style.colourSex(+1 оргазм)] перед тем, как они будут удовлетворены")) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameIsFull] настолько поразительно "+(owner.getFemininity()==Femininity.ANDROGYNOUS?"attractive":(owner.isFeminine()?"beautiful":"handsome"))
+			return UtilText.parse(owner, "[npc.NameIsFull] настолько поразительно "+(owner.getFemininity()==Femininity.ANDROGYNOUS?"привлекательный":(owner.isFeminine()?"прекрасные":"красивый"))
 					+" что [npc.her] сексуальные партнеры не могут не продолжать трахаться, даже после того, как они получили свой первый оргазм.");
 		}
 	};
@@ -2564,14 +2560,13 @@ public class Perk {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"Via a complex manipulation of [npc.her] arcane aura, [npc.name] [npc.has] become far slower to learn from new experiences,"
-					+ " but in return [npc.is] now able to drain the experience of sexual partners who orgasm in [npc.her] presence.");
+					"Путем сложного манипулирования [npc.her] арканной аурой, [npc.name] [npc.has] начинают гораздо медленнее усваивать новый опыт, но взамен [npc.is] теперь способен вытягивать опыт сексуальных партнеров, достигающих оргазма в [npc.her] присутствии.");
 		}
 	};
 	
 	public static AbstractPerk NYMPHOMANIAC = new AbstractPerk(20,
 			true,
-			"nymphomaniac",
+			"нимфоманка",
 			PerkCategory.LUST,
 			"perks/fitness_nymphomaniac",
 			PresetColour.GENERIC_SEX,
@@ -2590,7 +2585,7 @@ public class Perk {
 	
 	public static AbstractPerk AHEGAO = new AbstractPerk(20,
 			true,
-			"ahegao",
+			"ахегао",
 			PerkCategory.LUST,
 			"perks/ahegao",
 			PresetColour.GENERIC_SEX,
@@ -2606,7 +2601,7 @@ public class Perk {
 
 	public static AbstractPerk LUSTPYRE = new AbstractPerk(20,
 			false,
-			"lustpyre",
+			"огненная похоть",
 			PerkCategory.LUST,
 			"perks/lustful_leech",
 			PresetColour.ATTRIBUTE_MANA,
@@ -2615,13 +2610,13 @@ public class Perk {
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "The arcane itself reacts to [npc.namePos] lustful advances, draining a small amount of [npc.her] enemy's "+Attribute.MANA_MAXIMUM.getName()+" каждый раз, когда [npc.she] дразнит их.");
+			return UtilText.parse(owner, "Сама аркана реагирует на [npc.namePos] похотливые ухаживания, поглощая небольшое количество [npc.her] вражеской "+Attribute.MANA_MAXIMUM.getName()+" каждый раз, когда [npc.she] дразнит их.");
 		}
 	};
 
 	public static AbstractPerk PURE_MIND = new AbstractPerk(20,
 			false,
-			"pure thoughts",
+			"чистые мысли",
 			PerkCategory.LUST,
 			"perks/pure_mind",
 			PresetColour.DAMAGE_TYPE_LUST,
@@ -2638,7 +2633,7 @@ public class Perk {
 	
 	public static AbstractPerk CLOTHING_ENCHANTER = new AbstractPerk(20,
 			false,
-			"arcane weaver",
+			"ткач арканы",
 			PerkCategory.ARCANE,
 			"perks/arcaneWeaver",
 			PresetColour.GENERIC_ARCANE,
@@ -2653,7 +2648,7 @@ public class Perk {
 	
 	public static AbstractPerk WEAPON_ENCHANTER = new AbstractPerk(20,
 			false,
-			"arcane smith",
+			"кузнец арканы",
 			PerkCategory.PHYSICAL,
 			"perks/arcaneSmith",
 			PresetColour.GENERIC_ARCANE,
@@ -2668,7 +2663,7 @@ public class Perk {
 	
 	public static AbstractPerk ENCHANTMENT_STABILITY = new AbstractPerk(20,
 			false,
-			"stable enchantments",
+			"стабильные чары",
 			PerkCategory.PHYSICAL,
 			"perks/enchantment_stability",
 			PresetColour.GENERIC_ARCANE,
@@ -2683,7 +2678,7 @@ public class Perk {
 
 	public static AbstractPerk ENCHANTMENT_STABILITY_ALT = new AbstractPerk(20,
 			false,
-			"stable enchantments",
+			"стабильные чары",
 			PerkCategory.ARCANE,
 			"perks/enchantment_stability",
 			PresetColour.GENERIC_ARCANE,
@@ -2698,12 +2693,12 @@ public class Perk {
 	
 	public static AbstractPerk BARREN = new AbstractPerk(20,
 			true,
-			"barren",
+			"бесплодная",
 			PerkCategory.LUST,
 			"perks/barren",
 			PresetColour.GENERIC_SEX,
 			Util.newHashMapOfValues(new Value<>(Attribute.FERTILITY, -200)),
-			Util.newArrayListOfValues("While "+Attribute.FERTILITY.getName()+" значение равно 0 или меньше, беременность [style.colourTerrible(impossible)]")) {
+			Util.newArrayListOfValues("Пока "+Attribute.FERTILITY.getName()+" значение равно 0 или меньше, беременность [style.colourTerrible(impossible)]")) {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
@@ -2713,12 +2708,12 @@ public class Perk {
 	
 	public static AbstractPerk FIRING_BLANKS = new AbstractPerk(20,
 			true,
-			"sterile",
+			"стерильная",
 			PerkCategory.LUST,
 			"perks/firing_blanks",
 			PresetColour.GENERIC_SEX,
 			Util.newHashMapOfValues(new Value<>(Attribute.VIRILITY, -200)),
-			Util.newArrayListOfValues("While "+Attribute.VIRILITY.getName()+" значение равно 0 или меньше, оплодотворение [style.colourTerrible(impossible)]")) {
+			Util.newArrayListOfValues("Пока "+Attribute.VIRILITY.getName()+" значение равно 0 или меньше, оплодотворение [style.colourTerrible(impossible)]")) {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
@@ -2730,7 +2725,7 @@ public class Perk {
 	
 	public static AbstractPerk FETISH_BROODMOTHER = new AbstractPerk(20,
 			true,
-			"broodmother",
+			"матерь выводка",
 			PerkCategory.LUST,
 			"fetishes/fetish_broodmother",
 			PresetColour.GENERIC_SEX,
@@ -2756,7 +2751,7 @@ public class Perk {
 	
 	public static AbstractPerk FETISH_SEEDER = new AbstractPerk(20,
 			true,
-			"seeder",
+			"сеятель",
 			PerkCategory.LUST,
 			"fetishes/fetish_seeder",
 			PresetColour.GENERIC_SEX,
@@ -2780,7 +2775,7 @@ public class Perk {
 	
 	public static AbstractPerk CHUUNI = new AbstractPerk(20,
 			true,
-			"chuuni",
+			"чуни",
 			PerkCategory.ARCANE,
 			"perks/misc_chuuni",
 			PresetColour.ATTRIBUTE_ARCANE,
@@ -2798,7 +2793,7 @@ public class Perk {
 
 	public static AbstractPerk SPECIAL_PLAYER = new AbstractPerk(20,
 			false,
-			"abnormal aura",
+			"аномальная аура",
 			PerkCategory.ARCANE,
 			"perks/attIntelligence5",
 			PresetColour.ATTRIBUTE_ARCANE,
@@ -2839,7 +2834,7 @@ public class Perk {
 	
 	public static AbstractPerk SPECIAL_ARCANE_TATTOOIST = new AbstractPerk(20,
 			false,
-			"Arcane Tattooist",
+			"Татуировщик Arcane",
 			PerkCategory.ARCANE,
 			"perks/tattoo",
 			PresetColour.GENERIC_ARCANE,
@@ -2860,17 +2855,17 @@ public class Perk {
 	
 	public static AbstractPerk SPECIAL_CLOTHING_MASCULINITY_INDIFFERENCE = new AbstractPerk(20,
 			false,
-			"indifference to masculine clothing",
+			"безразличие к мужской одежде",
 			PerkCategory.PHYSICAL,
 			"perks/clothingIndifferenceMasculinity",
 			Util.newArrayListOfValues(PresetColour.MASCULINE, PresetColour.CLOTHING_GREY),
 			Util.newHashMapOfValues(),
-			Util.newArrayListOfValues("<span style='color:"+ PresetColour.GENERIC_GOOD.toWebHexString()+ ";'>Immune to 'clothing too masculine' status effect</span>"),
+			Util.newArrayListOfValues("<span style='color:"+ PresetColour.GENERIC_GOOD.toWebHexString()+ ";'>Иммунитет к эффекту статуса 'слишком мужская одежда'</span>"),
 			null, null, null) {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.Name] always [npc.verb(feel)] comfortable wearing masculine clothing, no matter how feminine [npc.her] body may be.");
+			return UtilText.parse(owner, "[npc.Name] всегда [npc.verb(feel)] комфортно носить мужскую одежду, какой бы женственной ни была [npc.her] тело.");
 		}
 		@Override
 		public boolean isHiddenPerk() {
@@ -2880,17 +2875,17 @@ public class Perk {
 	
 	public static AbstractPerk SPECIAL_CLOTHING_FEMININITY_INDIFFERENCE = new AbstractPerk(20,
 			false,
-			"indifference to feminine clothing",
+			"безразличие к женской одежде",
 			PerkCategory.PHYSICAL,
 			"perks/clothingIndifferenceFemininity",
 			Util.newArrayListOfValues(PresetColour.FEMININE, PresetColour.CLOTHING_GREY),
 			Util.newHashMapOfValues(),
-			Util.newArrayListOfValues("<span style='color:"+ PresetColour.GENERIC_GOOD.toWebHexString()+ ";'>Immune to 'clothing too feminine' status effect</span>"),
+			Util.newArrayListOfValues("<span style='color:"+ PresetColour.GENERIC_GOOD.toWebHexString()+ ";'>Иммунитет к эффекту статуса 'слишком женская одежда'</span>"),
 			null, null, null) {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.Name] always [npc.verb(feel)] comfortable wearing feminine clothing, no matter how masculine [npc.her] body may be.");
+			return UtilText.parse(owner, "[npc.Name] всегда [npc.verb(feel)] комфортно в женской одежде, каким бы маскулинным ни был корпус [npc.her].");
 		}
 		@Override
 		public boolean isHiddenPerk() {
@@ -2902,7 +2897,7 @@ public class Perk {
 
 	public static AbstractPerk SPECIAL_DIRTY_MINDED = new AbstractPerk(20,
 			false,
-			"dirty-minded",
+			"распущенная",
 			PerkCategory.ARCANE,
 			"statusEffects/attCorruption5",
 			PresetColour.ATTRIBUTE_CORRUPTION,
@@ -2912,7 +2907,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameIsFull] very dirty-minded, and often [npc.verb(find)] [npc.her] thoughts dwelling on sex.");
+			return UtilText.parse(owner, "[npc.NameIsFull] очень распущенная, и её мысли часто [npc.verb(find)] [npc.her], полные секса.");
 		}
 		@Override
 		public boolean isHiddenPerk() {
@@ -2926,7 +2921,7 @@ public class Perk {
 	
 	public static AbstractPerk SPECIAL_SLUT = new AbstractPerk(20,
 			false,
-			"slut",
+			"шлюха",
 			PerkCategory.ARCANE,
 			"perks/attSeduction3",
 			PresetColour.ATTRIBUTE_LUST,
@@ -2937,7 +2932,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameHasFull] had countless sexual partners, and [npc.has] performed all manner of lewd acts with them.");
+			return UtilText.parse(owner, "[npc.NameHasFull] имела бесчисленное множество сексуальных партнеров, и [npc.has] совершала с ними всевозможные похотливые акты.");
 		}
 		@Override
 		public boolean isHiddenPerk() {
@@ -2951,7 +2946,7 @@ public class Perk {
 	
 	public static AbstractPerk SPECIAL_MEGA_SLUT = new AbstractPerk(20,
 			false,
-			"debauched",
+			"развратная",
 			PerkCategory.ARCANE,
 			"perks/attSeduction3",
 			PresetColour.ATTRIBUTE_LUST,
@@ -2976,7 +2971,7 @@ public class Perk {
 
 	public static AbstractPerk SPECIAL_ARCANE_TRAINING = new AbstractPerk(20,
 			false,
-			"arcane training",
+			"обучение Аркане",
 			PerkCategory.ARCANE,
 			"perks/attIntelligence3",
 			PresetColour.ATTRIBUTE_ARCANE,
@@ -3001,7 +2996,7 @@ public class Perk {
 
 	public static AbstractPerk SPECIAL_ARCANE_LIGHTNING = new AbstractPerk(20,
 			false,
-			"exceptional arcanist",
+			"исключительный арканист",
 			PerkCategory.ARCANE,
 			"perks/special_arcane_lightning",
 			PresetColour.ATTRIBUTE_ARCANE,
@@ -3027,7 +3022,7 @@ public class Perk {
 	
 	public static AbstractPerk SPECIAL_ARCANE_ALLERGY = new AbstractPerk(20,
 			false,
-			"arcane allergy",
+			"аллергия на аркану",
 			PerkCategory.ARCANE,
 			"perks/arcane_allergy",
 			PresetColour.ATTRIBUTE_ARCANE,
@@ -3051,7 +3046,7 @@ public class Perk {
 
 	public static AbstractPerk SPECIAL_HEALTH_FANATIC = new AbstractPerk(20,
 			false,
-			"health fanatic",
+			"фанатик здоровья",
 			PerkCategory.PHYSICAL,
 			"perks/attStrength3",
 			PresetColour.ATTRIBUTE_PHYSIQUE,
@@ -3061,7 +3056,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameIsFull] obsessed with [npc.her] personal fitness, and spends hours every day working out and planning out [npc.her] diet.");
+			return UtilText.parse(owner, "[npc.NameIsFull] одержим(а) [npc.her] личной физической формой и проводит(а) часы каждый день, тренируясь и планируя [npc.her] рацион.");
 		}
 		@Override
 		public boolean isHiddenPerk() {
@@ -3075,7 +3070,7 @@ public class Perk {
 	
 	public static AbstractPerk SPECIAL_MARTIAL_BACKGROUND = new AbstractPerk(20,
 			false,
-			"martial background",
+			"боевое прошлое",
 			PerkCategory.PHYSICAL,
 			"perks/attStrength3",
 			PresetColour.ATTRIBUTE_PHYSIQUE,
@@ -3099,9 +3094,9 @@ public class Perk {
 
 	public static AbstractPerk SPECIAL_SHORT_SIGHTED = new AbstractPerk(60,
 			false,
-			"visual impairment",
+			"нарушение зрения",
 			PerkCategory.PHYSICAL,
-			"statusEffects/short_sighted",
+			"statusEffects/близорукость",
 			Util.newArrayListOfValues(
 					PresetColour.BASE_BLACK,
 					PresetColour.GENERIC_BAD,
@@ -3140,7 +3135,7 @@ public class Perk {
 	
 	public static AbstractPerk SPECIAL_MELEE_EXPERT = new AbstractPerk(20,
 			false,
-			"melee expert",
+			"мастер ближнего боя",
 			PerkCategory.PHYSICAL,
 			"perks/melee_damage",
 			PresetColour.ATTRIBUTE_PHYSIQUE,
@@ -3164,7 +3159,7 @@ public class Perk {
 	
 	public static AbstractPerk SPECIAL_RANGED_EXPERT = new AbstractPerk(20,
 			false,
-			"ranged expert",
+			"мастер дальнего боя",
 			PerkCategory.PHYSICAL,
 			"perks/ranged_damage",
 			PresetColour.ATTRIBUTE_PHYSIQUE,
@@ -3174,7 +3169,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameHasFull] a considerable amount of experience with wielding ranged weapons, making [npc.herHim] a fearsome foe to face when armed with a weapon of [npc.her] choice.");
+			return UtilText.parse(owner, "[npc.NameHasFull] значительный опыт владения метательным оружием, что делает [npc.herHim] грозным противником, когда в его руках оказывается оружие на [npc.her] вкус.");
 		}
 		@Override
 		public boolean isHiddenPerk() {
@@ -3199,7 +3194,7 @@ public class Perk {
 			null) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "Кровь Цимеры flows through the veins of [npc.namePos], and [npc.she] is long accustomed to the cold of living so high up in the mountains. However, being so removed from [npc.her] desert kin has lessened [npc.her] natural resistance to fire.");
+			return UtilText.parse(owner, "Кровь Цимеры течет в жилах [npc.namePos], и [npc.she] давно привык(ла) к холоду жизни высоко в горах. Однако из-за такой отдаленности от [npc.her] сородичей из пустыни, [npc.her] естественная сопротивляемость огню ослабла.");
 		}
 		
 		@Override
@@ -3210,7 +3205,7 @@ public class Perk {
 
 	public static AbstractPerk SPECIAL_ENFORCER_FIREARMS_TRAINING = new AbstractPerk(20,
 			true,
-			"Firearms Mastery",
+			"Мастерство владения огнестрельным оружием",
 			PerkCategory.PHYSICAL,
 			"perks/enforcer_firearms",
 			Util.newArrayListOfValues(
@@ -3236,7 +3231,7 @@ public class Perk {
 
 	public static AbstractPerk PIX_TRAINING = new AbstractPerk(20,
 			false,
-			"Pix's Training",
+			"Тренировка Пикса",
 			PerkCategory.PHYSICAL,
 			"perks/pix_trained",
 			Util.newArrayListOfValues(
@@ -3261,12 +3256,12 @@ public class Perk {
 	
 	public static AbstractPerk MARTIAL_ARTIST = new AbstractPerk(20,
 			false,
-			"martial artist",
+			"мастер боевых искусств",
 			PerkCategory.PHYSICAL,
 			"perks/unarmed_training",
 			PresetColour.ATTRIBUTE_PHYSIQUE,
 			Util.newHashMapOfValues(new Value<>(Attribute.CRITICAL_DAMAGE, 25)),
-			Util.newArrayListOfValues("[style.colourUnarmed(Base unarmed damage)] [style.colourExcellent(doubled)]"),
+			Util.newArrayListOfValues("[style.colourUnarmed(Базовый урон без оружия)] [style.colourExcellent(удвоенный)]"),
 			null,
 			null,
 			null) {
@@ -3282,7 +3277,7 @@ public class Perk {
 	
 	public static AbstractPerk IMP_SLAYER = new AbstractPerk(20,
 			false,
-			"doomguy",
+			"думгай",
 			PerkCategory.ARCANE,
 			"perks/imp_slayer",
 			PresetColour.RACE_IMP,
@@ -3293,7 +3288,7 @@ public class Perk {
 		@Override
 		public String getName(GameCharacter owner) {
 			if(owner!=null && owner.isFeminine()) {
-				return "doomgirl";
+				return "девочка-рок";
 			} else {
 				return super.getName(owner);
 			}
@@ -3342,7 +3337,7 @@ public class Perk {
 
 	public static AbstractPerk AMAZONIAN_TRAINING = new AbstractPerk(20,
 			false,
-			"Amazonian training",
+			"Амазонская тренировка",
 			PerkCategory.ARCANE,
 			"perks/amazonian_training",
 			Util.newArrayListOfValues(
@@ -3372,15 +3367,15 @@ public class Perk {
 	
 	public static AbstractPerk POWER_OF_LIRECEA_1 = new AbstractPerk(20,
 			false,
-			"Lirecea's power",
+			"Сила Лиреции",
 			PerkCategory.ARCANE,
 			"perks/lilin1",
 			PresetColour.ATTRIBUTE_ARCANE,
 			Util.newHashMapOfValues(
 					new Value<>(Attribute.MANA_MAXIMUM, 50)),
 			Util.newArrayListOfValues(
-					"[style.boldExcellent(Unlocks)] [style.boldLightBlue(fish transformations)] if a [style.boldDemon(demon)]", //TODO placeholder TF unlock, might change in the future
-					"[style.boldExcellent(Immunity)] to [style.boldArcane(Lilith's Command)]")) {
+					"[style.boldExcellent(Разблокирует)] [style.boldLightBlue(превращения в рыб)] если персонаж — [style.boldDemon(демон)]", //TODO placeholder TF unlock, might change in the future
+					"[style.boldExcellent(Иммунитет)] к [style.boldArcane(Команде Lilith)]")) {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
@@ -3407,8 +3402,8 @@ public class Perk {
 					new Value<>(Attribute.MAJOR_CORRUPTION, 15),
 					new Value<>(Attribute.MANA_MAXIMUM, 50)),
 			Util.newArrayListOfValues(
-					"[style.boldExcellent(Unlocks)] [style.boldLightBlue(fish transformations)]",
-					"[style.boldExcellent(Immunity)] to [style.boldArcane(Lilith's Command)]")) {
+					"[style.boldExcellent(Разблокирует)] [style.boldLightBlue(превращения в рыб)]",
+					"[style.boldExcellent(Иммунитет)] к [style.boldArcane(Команде Lilith)]")) {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
@@ -3423,15 +3418,15 @@ public class Perk {
 	
 	public static AbstractPerk POWER_OF_LOVIENNE_2 = new AbstractPerk(21,
 			false,
-			"Lovienne's power",
+			"Сила Ловьенн",
 			PerkCategory.ARCANE,
 			"perks/lilin2",
 			PresetColour.ATTRIBUTE_ARCANE,
 			Util.newHashMapOfValues(
 					new Value<>(Attribute.MANA_MAXIMUM, 50)),
 			Util.newArrayListOfValues(
-					"[style.boldExcellent(Unlocks)] [style.boldFeral(feral transformations)] if a [style.boldDemon(demon)]", //TODO placeholder TF unlock, might change in the future
-					"[style.boldExcellent(Immunity)] to [style.boldArcane(Lilith's Command)]")) {
+					"[style.boldExcellent(Разблокирует)] [style.boldFeral(дикие трансформации)], если [style.boldDemon(демон)]", //TODO placeholder TF unlock, might change in the future
+					"[style.boldExcellent(Иммунитет)] к [style.boldArcane(Команде Lilith)]")) {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
@@ -3474,7 +3469,7 @@ public class Perk {
 	
 	public static AbstractPerk POWER_OF_LASIELLE_3 = new AbstractPerk(22,
 			false,
-			"Lasielle's power",
+			"Сила Ласьель",
 			PerkCategory.ARCANE,
 			"perks/lilin3",
 			PresetColour.ATTRIBUTE_ARCANE,
@@ -3527,7 +3522,7 @@ public class Perk {
 	
 	public static AbstractPerk POWER_OF_LYSSIETH_4 = new AbstractPerk(23,
 			false,
-			"Lyssieth's power",
+			"Сила Lyssieth",
 			PerkCategory.ARCANE,
 			"perks/lilin4",
 			PresetColour.ATTRIBUTE_ARCANE,
@@ -3577,7 +3572,7 @@ public class Perk {
 	
 	public static AbstractPerk POWER_OF_LUNETTE_5 = new AbstractPerk(24,
 			false,
-			"Lunette's power",
+			"Сила Лунетт",
 			PerkCategory.ARCANE,
 			"perks/lilin5",
 			PresetColour.ATTRIBUTE_ARCANE,
@@ -3612,7 +3607,7 @@ public class Perk {
 					new Value<>(Attribute.MAJOR_CORRUPTION, 15),
 					new Value<>(Attribute.MANA_MAXIMUM, 50)),
 			Util.newArrayListOfValues(
-					"[style.boldExcellent(Unlocks)] [style.boldHorse(mammalian transformations)]",
+					"[style.boldExcellent(Разблокирует)] [style.boldHorse(млекопитающие трансформации)]",
 					"[style.boldExcellent(Immunity)] к [style.boldArcane(Команда Лилит)]")) {
 		@Override
 		public String getDescription(GameCharacter owner) {
@@ -3628,14 +3623,14 @@ public class Perk {
 	
 	public static AbstractPerk POWER_OF_LYXIAS_6 = new AbstractPerk(25,
 			false,
-			"Lyxias's power",
+			"Сила Ликсиас",
 			PerkCategory.ARCANE,
 			"perks/lilin6",
 			PresetColour.ATTRIBUTE_ARCANE,
 			Util.newHashMapOfValues(
 					new Value<>(Attribute.MANA_MAXIMUM, 50)),
 			Util.newArrayListOfValues(
-					"[style.boldExcellent(Unlocks)] [style.boldHarpy(avian transformations)] если [style.boldDemon(demon)]", //TODO placeholder TF unlock, might change in the future
+					"[style.boldExcellent(Разблокирует)] [style.boldHarpy(птичьи трансформации)], если [style.boldDemon(демон)]", //TODO placeholder TF unlock, might change in the future
 					"[style.boldExcellent(Immunity)] к [style.boldArcane(Команда Лилит)]")) {
 		@Override
 		public String getDescription(GameCharacter owner) {
@@ -3663,8 +3658,8 @@ public class Perk {
 					new Value<>(Attribute.MAJOR_CORRUPTION, 15),
 					new Value<>(Attribute.MANA_MAXIMUM, 50)),
 			Util.newArrayListOfValues(
-					"[style.boldExcellent(Unlocks)] [style.boldHarpy(avian transformations)]",
-					"[style.boldExcellent(Immunity)] to [style.boldArcane(Lilith's Command)]")) {
+					"[style.boldExcellent(Разблокирует)] [style.boldHarpy(птичьи трансформации)]",
+					"[style.boldExcellent(Иммунитет)] к [style.boldArcane(Команде Lilith)]")) {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
@@ -3679,15 +3674,15 @@ public class Perk {
 	
 	public static AbstractPerk POWER_OF_LISOPHIA_7 = new AbstractPerk(26,
 			false,
-			"Lisophia's power",
+			"Сила Лисофии",
 			PerkCategory.ARCANE,
 			"perks/lilin7",
 			PresetColour.ATTRIBUTE_ARCANE,
 			Util.newHashMapOfValues(
 					new Value<>(Attribute.MANA_MAXIMUM, 50)),
 			Util.newArrayListOfValues(
-					"[style.boldExcellent(Unlocks)] [style.boldGreenLight(reptilian and amphibian transformations)] if a [style.boldDemon(demon)]", //TODO placeholder TF unlock, might change in the future
-					"[style.boldExcellent(Immunity)] to [style.boldArcane(Lilith's Command)]")) {
+					"[style.boldExcellent(Открывает)] [style.boldGreenLight(рептильные и амфибийные трансформации)], если [style.boldDemon(демон)]", //TODO placeholder TF unlock, might change in the future
+					"[style.boldExcellent(Иммунитет)] к [style.boldArcane(Команде Lilith)]")) {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
@@ -3755,7 +3750,7 @@ public class Perk {
 			"statusEffects/race/raceFoxTail2",
 			PresetColour.RACE_FOX_MORPH,
 			Util.newHashMapOfValues(),
-			Util.newArrayListOfValues("[style.boldExcellent(Unlocks)] [style.boldFox(youko transformations!)]")) {
+			Util.newArrayListOfValues("[style.boldExcellent(Открывает)] [style.boldFox(трансформации ёко!)]")) {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
@@ -3773,7 +3768,7 @@ public class Perk {
 			"statusEffects/race/raceFoxTail3",
 			PresetColour.RACE_FOX_MORPH,
 			Util.newHashMapOfValues(),
-			Util.newArrayListOfValues("[style.boldExcellent(Unlocks)] [style.boldFox(youko transformations!)]")) {
+			Util.newArrayListOfValues("[style.boldExcellent(Открывает)] [style.boldFox(трансформации ёко!)]")) {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
@@ -3791,7 +3786,7 @@ public class Perk {
 			"statusEffects/race/raceFoxTail4",
 			PresetColour.RACE_FOX_MORPH,
 			Util.newHashMapOfValues(),
-			Util.newArrayListOfValues("[style.boldExcellent(Unlocks)] [style.boldFox(youko transformations!)]")) {
+			Util.newArrayListOfValues("[style.boldExcellent(Открывает)] [style.boldFox(трансформации ёко!)]")) {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
@@ -3809,7 +3804,7 @@ public class Perk {
 			"statusEffects/race/raceFoxTail5",
 			PresetColour.RACE_FOX_MORPH,
 			Util.newHashMapOfValues(),
-			Util.newArrayListOfValues("[style.boldExcellent(Unlocks)] [style.boldFox(youko transformations!)]")) {
+			Util.newArrayListOfValues("[style.boldExcellent(Открывает)] [style.boldFox(трансформации ёко!)]")) {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
@@ -3988,7 +3983,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_CORE_OCCUPATION = new AbstractPerk(20,
 			true,
-			"elemental",
+			"стихийный",
 			PerkCategory.JOB,
 			"perks/elemental/coreOccupation",
 			PresetColour.GENERIC_ARCANE,
@@ -4028,7 +4023,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_FIRE_SPELL_1 = new AbstractPerk(20,
 			false,
-			"Spell",
+			"Заклинание",
 			PerkCategory.ARCANE_FIRE,
 			null,
 			PresetColour.SPELL_SCHOOL_FIRE,
@@ -4040,7 +4035,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Spell: "+getSpell().getName();
+			return "Заклинание: "+getSpell().getName();
 		}
 
 		@Override
@@ -4062,7 +4057,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_FIRE_SPELL_1_1 = new AbstractPerk(20,
 			false,
-			"Upgrade",
+			"Улучшение",
 			PerkCategory.ARCANE_FIRE,
 			null,
 			PresetColour.SPELL_SCHOOL_FIRE,
@@ -4074,7 +4069,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Upgrade: "+getSpellUpgrade().getName();
+			return "Улучшение: "+getSpellUpgrade().getName();
 		}
 
 		@Override
@@ -4096,7 +4091,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_FIRE_SPELL_1_2 = new AbstractPerk(20,
 			false,
-			"Upgrade",
+			"Улучшение",
 			PerkCategory.ARCANE_FIRE,
 			null,
 			PresetColour.SPELL_SCHOOL_FIRE,
@@ -4108,7 +4103,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Upgrade: "+getSpellUpgrade().getName();
+			return "Улучшение: "+getSpellUpgrade().getName();
 		}
 
 		@Override
@@ -4130,7 +4125,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_FIRE_SPELL_1_3 = new AbstractPerk(20,
 			false,
-			"Upgrade",
+			"Улучшение",
 			PerkCategory.ARCANE_FIRE,
 			null,
 			PresetColour.SPELL_SCHOOL_FIRE,
@@ -4142,7 +4137,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Upgrade: "+getSpellUpgrade().getName();
+			return "Улучшение: "+getSpellUpgrade().getName();
 		}
 
 		@Override
@@ -4164,7 +4159,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_FIRE_SPELL_2 = new AbstractPerk(20,
 			false,
-			"Spell",
+			"Заклинание",
 			PerkCategory.ARCANE_FIRE,
 			null,
 			PresetColour.SPELL_SCHOOL_FIRE,
@@ -4176,7 +4171,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Spell: "+getSpell().getName();
+			return "Заклинание: "+getSpell().getName();
 		}
 
 		@Override
@@ -4198,7 +4193,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_FIRE_SPELL_2_1 = new AbstractPerk(20,
 			false,
-			"Upgrade",
+			"Улучшение",
 			PerkCategory.ARCANE_FIRE,
 			null,
 			PresetColour.SPELL_SCHOOL_FIRE,
@@ -4210,7 +4205,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Upgrade: "+getSpellUpgrade().getName();
+			return "Улучшение: "+getSpellUpgrade().getName();
 		}
 
 		@Override
@@ -4232,7 +4227,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_FIRE_SPELL_2_2 = new AbstractPerk(20,
 			false,
-			"Upgrade",
+			"Улучшение",
 			PerkCategory.ARCANE_FIRE,
 			null,
 			PresetColour.SPELL_SCHOOL_FIRE,
@@ -4244,7 +4239,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Upgrade: "+getSpellUpgrade().getName();
+			return "Улучшение: "+getSpellUpgrade().getName();
 		}
 
 		@Override
@@ -4266,7 +4261,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_FIRE_SPELL_2_3 = new AbstractPerk(20,
 			false,
-			"Upgrade",
+			"Улучшение",
 			PerkCategory.ARCANE_FIRE,
 			null,
 			PresetColour.SPELL_SCHOOL_FIRE,
@@ -4278,7 +4273,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Upgrade: "+getSpellUpgrade().getName();
+			return "Улучшение: "+getSpellUpgrade().getName();
 		}
 
 		@Override
@@ -4300,7 +4295,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_FIRE_SPELL_3 = new AbstractPerk(20,
 			false,
-			"Spell",
+			"Заклинание",
 			PerkCategory.ARCANE_FIRE,
 			null,
 			PresetColour.SPELL_SCHOOL_FIRE,
@@ -4312,7 +4307,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Spell: "+getSpell().getName();
+			return "Заклинание: "+getSpell().getName();
 		}
 
 		@Override
@@ -4334,7 +4329,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_FIRE_SPELL_3_1 = new AbstractPerk(20,
 			false,
-			"Upgrade",
+			"Улучшение",
 			PerkCategory.ARCANE_FIRE,
 			null,
 			PresetColour.SPELL_SCHOOL_FIRE,
@@ -4346,7 +4341,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Upgrade: "+getSpellUpgrade().getName();
+			return "Улучшение: "+getSpellUpgrade().getName();
 		}
 
 		@Override
@@ -4368,7 +4363,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_FIRE_SPELL_3_2 = new AbstractPerk(20,
 			false,
-			"Upgrade",
+			"Улучшение",
 			PerkCategory.ARCANE_FIRE,
 			null,
 			PresetColour.SPELL_SCHOOL_FIRE,
@@ -4380,7 +4375,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Upgrade: "+getSpellUpgrade().getName();
+			return "Улучшение: "+getSpellUpgrade().getName();
 		}
 
 		@Override
@@ -4402,7 +4397,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_FIRE_SPELL_3_3 = new AbstractPerk(20,
 			false,
-			"Upgrade",
+			"Улучшение",
 			PerkCategory.ARCANE_FIRE,
 			null,
 			PresetColour.SPELL_SCHOOL_FIRE,
@@ -4414,7 +4409,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Upgrade: "+getSpellUpgrade().getName();
+			return "Улучшение: "+getSpellUpgrade().getName();
 		}
 
 		@Override
@@ -4436,7 +4431,7 @@ public class Perk {
 	
 	public static AbstractPerk ELEMENTAL_FIRE_BOOST_MINOR = new AbstractPerk(20,
 			false,
-			"ignition",
+			"возгорание",
 			PerkCategory.ARCANE_FIRE,
 			"perks/elemental/fire1",
 			PresetColour.SPELL_SCHOOL_FIRE,
@@ -4453,7 +4448,7 @@ public class Perk {
 	
 	public static AbstractPerk ELEMENTAL_FIRE_BOOST = new AbstractPerk(20,
 			false,
-			"ablaze",
+			"пылающий",
 			PerkCategory.ARCANE_FIRE,
 			"perks/elemental/fire2",
 			PresetColour.SPELL_SCHOOL_FIRE,
@@ -4471,7 +4466,7 @@ public class Perk {
 	
 	public static AbstractPerk ELEMENTAL_FIRE_BOOST_MAJOR = new AbstractPerk(20,
 			false,
-			"conflagration",
+			"пожарище",
 			PerkCategory.ARCANE_FIRE,
 			"perks/elemental/fire3",
 			PresetColour.SPELL_SCHOOL_FIRE,
@@ -4488,7 +4483,7 @@ public class Perk {
 	
 	public static AbstractPerk ELEMENTAL_FIRE_BOOST_ULTIMATE = new AbstractPerk(20,
 			false,
-			"incineration",
+			"испепеление",
 			PerkCategory.ARCANE_FIRE,
 			"perks/elemental/fire4",
 			PresetColour.SPELL_SCHOOL_FIRE,
@@ -4508,7 +4503,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_EARTH_SPELL_1 = new AbstractPerk(20,
 			false,
-			"Spell",
+			"Заклинание",
 			PerkCategory.PHYSICAL_EARTH,
 			null,
 			PresetColour.SPELL_SCHOOL_EARTH,
@@ -4520,7 +4515,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Spell: "+getSpell().getName();
+			return "Заклинание: "+getSpell().getName();
 		}
 
 		@Override
@@ -4542,7 +4537,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_EARTH_SPELL_1_1 = new AbstractPerk(20,
 			false,
-			"Upgrade",
+			"Улучшение",
 			PerkCategory.PHYSICAL_EARTH,
 			null,
 			PresetColour.SPELL_SCHOOL_EARTH,
@@ -4554,7 +4549,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Upgrade: "+getSpellUpgrade().getName();
+			return "Улучшение: "+getSpellUpgrade().getName();
 		}
 
 		@Override
@@ -4576,7 +4571,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_EARTH_SPELL_1_2 = new AbstractPerk(20,
 			false,
-			"Upgrade",
+			"Улучшение",
 			PerkCategory.PHYSICAL_EARTH,
 			null,
 			PresetColour.SPELL_SCHOOL_EARTH,
@@ -4588,7 +4583,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Upgrade: "+getSpellUpgrade().getName();
+			return "Улучшение: "+getSpellUpgrade().getName();
 		}
 
 		@Override
@@ -4610,7 +4605,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_EARTH_SPELL_1_3 = new AbstractPerk(20,
 			false,
-			"Upgrade",
+			"Улучшение",
 			PerkCategory.PHYSICAL_EARTH,
 			null,
 			PresetColour.SPELL_SCHOOL_EARTH,
@@ -4622,7 +4617,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Upgrade: "+getSpellUpgrade().getName();
+			return "Улучшение: "+getSpellUpgrade().getName();
 		}
 
 		@Override
@@ -4644,7 +4639,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_EARTH_SPELL_2 = new AbstractPerk(20,
 			false,
-			"Spell",
+			"Заклинание",
 			PerkCategory.PHYSICAL_EARTH,
 			null,
 			PresetColour.SPELL_SCHOOL_EARTH,
@@ -4656,7 +4651,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Spell: "+getSpell().getName();
+			return "Заклинание: "+getSpell().getName();
 		}
 
 		@Override
@@ -4678,7 +4673,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_EARTH_SPELL_2_1 = new AbstractPerk(20,
 			false,
-			"Upgrade",
+			"Улучшение",
 			PerkCategory.PHYSICAL_EARTH,
 			null,
 			PresetColour.SPELL_SCHOOL_EARTH,
@@ -4690,7 +4685,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Upgrade: "+getSpellUpgrade().getName();
+			return "Улучшение: "+getSpellUpgrade().getName();
 		}
 
 		@Override
@@ -4712,7 +4707,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_EARTH_SPELL_2_2 = new AbstractPerk(20,
 			false,
-			"Upgrade",
+			"Улучшение",
 			PerkCategory.PHYSICAL_EARTH,
 			null,
 			PresetColour.SPELL_SCHOOL_EARTH,
@@ -4724,7 +4719,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Upgrade: "+getSpellUpgrade().getName();
+			return "Улучшение: "+getSpellUpgrade().getName();
 		}
 
 		@Override
@@ -4746,7 +4741,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_EARTH_SPELL_2_3 = new AbstractPerk(20,
 			false,
-			"Upgrade",
+			"Улучшение",
 			PerkCategory.PHYSICAL_EARTH,
 			null,
 			PresetColour.SPELL_SCHOOL_EARTH,
@@ -4758,7 +4753,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Upgrade: "+getSpellUpgrade().getName();
+			return "Улучшение: "+getSpellUpgrade().getName();
 		}
 
 		@Override
@@ -4780,7 +4775,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_EARTH_SPELL_3 = new AbstractPerk(20,
 			false,
-			"Spell",
+			"Заклинание",
 			PerkCategory.PHYSICAL_EARTH,
 			null,
 			PresetColour.SPELL_SCHOOL_EARTH,
@@ -4792,7 +4787,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Spell: "+getSpell().getName();
+			return "Заклинание: "+getSpell().getName();
 		}
 
 		@Override
@@ -4814,7 +4809,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_EARTH_SPELL_3_1 = new AbstractPerk(20,
 			false,
-			"Upgrade",
+			"Улучшение",
 			PerkCategory.PHYSICAL_EARTH,
 			null,
 			PresetColour.SPELL_SCHOOL_EARTH,
@@ -4826,7 +4821,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Upgrade: "+getSpellUpgrade().getName();
+			return "Улучшение: "+getSpellUpgrade().getName();
 		}
 
 		@Override
@@ -4848,7 +4843,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_EARTH_SPELL_3_2 = new AbstractPerk(20,
 			false,
-			"Upgrade",
+			"Улучшение",
 			PerkCategory.PHYSICAL_EARTH,
 			null,
 			PresetColour.SPELL_SCHOOL_EARTH,
@@ -4860,7 +4855,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Upgrade: "+getSpellUpgrade().getName();
+			return "Улучшение: "+getSpellUpgrade().getName();
 		}
 
 		@Override
@@ -4882,7 +4877,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_EARTH_SPELL_3_3 = new AbstractPerk(20,
 			false,
-			"Upgrade",
+			"Улучшение",
 			PerkCategory.PHYSICAL_EARTH,
 			null,
 			PresetColour.SPELL_SCHOOL_EARTH,
@@ -4894,7 +4889,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Upgrade: "+getSpellUpgrade().getName();
+			return "Улучшение: "+getSpellUpgrade().getName();
 		}
 
 		@Override
@@ -4916,7 +4911,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_EARTH_BOOST_MINOR = new AbstractPerk(20,
 			false,
-			"impact",
+			"удар",
 			PerkCategory.PHYSICAL_EARTH,
 			"perks/elemental/earth1",
 			PresetColour.SPELL_SCHOOL_EARTH,
@@ -4933,7 +4928,7 @@ public class Perk {
 	
 	public static AbstractPerk ELEMENTAL_EARTH_BOOST = new AbstractPerk(20,
 			false,
-			"building pressure",
+			"нарастающее давление",
 			PerkCategory.PHYSICAL_EARTH,
 			"perks/elemental/earth2",
 			PresetColour.SPELL_SCHOOL_EARTH,
@@ -4951,7 +4946,7 @@ public class Perk {
 	
 	public static AbstractPerk ELEMENTAL_EARTH_BOOST_MAJOR = new AbstractPerk(20,
 			false,
-			"seismic activity",
+			"сейсмическая активность",
 			PerkCategory.PHYSICAL_EARTH,
 			"perks/elemental/earth3",
 			PresetColour.SPELL_SCHOOL_EARTH,
@@ -4968,7 +4963,7 @@ public class Perk {
 	
 	public static AbstractPerk ELEMENTAL_EARTH_BOOST_ULTIMATE = new AbstractPerk(20,
 			false,
-			"epicentre",
+			"эпицентр",
 			PerkCategory.PHYSICAL_EARTH,
 			"perks/elemental/earth4",
 			PresetColour.SPELL_SCHOOL_EARTH,
@@ -4988,7 +4983,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_WATER_SPELL_1 = new AbstractPerk(20,
 			false,
-			"Spell",
+			"Заклинание",
 			PerkCategory.PHYSICAL_WATER,
 			null,
 			PresetColour.SPELL_SCHOOL_WATER,
@@ -5000,7 +4995,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Spell: "+getSpell().getName();
+			return "Заклинание: "+getSpell().getName();
 		}
 
 		@Override
@@ -5022,7 +5017,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_WATER_SPELL_1_1 = new AbstractPerk(20,
 			false,
-			"Upgrade",
+			"Улучшение",
 			PerkCategory.PHYSICAL_WATER,
 			null,
 			PresetColour.SPELL_SCHOOL_WATER,
@@ -5034,7 +5029,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Upgrade: "+getSpellUpgrade().getName();
+			return "Улучшение: "+getSpellUpgrade().getName();
 		}
 
 		@Override
@@ -5056,7 +5051,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_WATER_SPELL_1_2 = new AbstractPerk(20,
 			false,
-			"Upgrade",
+			"Улучшение",
 			PerkCategory.PHYSICAL_WATER,
 			null,
 			PresetColour.SPELL_SCHOOL_WATER,
@@ -5068,7 +5063,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Upgrade: "+getSpellUpgrade().getName();
+			return "Улучшение: "+getSpellUpgrade().getName();
 		}
 
 		@Override
@@ -5090,7 +5085,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_WATER_SPELL_1_3 = new AbstractPerk(20,
 			false,
-			"Upgrade",
+			"Улучшение",
 			PerkCategory.PHYSICAL_WATER,
 			null,
 			PresetColour.SPELL_SCHOOL_WATER,
@@ -5102,7 +5097,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Upgrade: "+getSpellUpgrade().getName();
+			return "Улучшение: "+getSpellUpgrade().getName();
 		}
 
 		@Override
@@ -5124,7 +5119,7 @@ public class Perk {
 	
 	public static AbstractPerk ELEMENTAL_WATER_SPELL_2 = new AbstractPerk(20,
 			false,
-			"Spell",
+			"Заклинание",
 			PerkCategory.PHYSICAL_WATER,
 			null,
 			PresetColour.SPELL_SCHOOL_WATER,
@@ -5136,7 +5131,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Spell: "+getSpell().getName();
+			return "Заклинание: "+getSpell().getName();
 		}
 
 		@Override
@@ -5158,7 +5153,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_WATER_SPELL_2_1 = new AbstractPerk(20,
 			false,
-			"Upgrade",
+			"Улучшение",
 			PerkCategory.PHYSICAL_WATER,
 			null,
 			PresetColour.SPELL_SCHOOL_WATER,
@@ -5170,7 +5165,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Upgrade: "+getSpellUpgrade().getName();
+			return "Улучшение: "+getSpellUpgrade().getName();
 		}
 
 		@Override
@@ -5192,7 +5187,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_WATER_SPELL_2_2 = new AbstractPerk(20,
 			false,
-			"Upgrade",
+			"Улучшение",
 			PerkCategory.PHYSICAL_WATER,
 			null,
 			PresetColour.SPELL_SCHOOL_WATER,
@@ -5204,7 +5199,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Upgrade: "+getSpellUpgrade().getName();
+			return "Улучшение: "+getSpellUpgrade().getName();
 		}
 
 		@Override
@@ -5226,7 +5221,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_WATER_SPELL_2_3 = new AbstractPerk(20,
 			false,
-			"Upgrade",
+			"Улучшение",
 			PerkCategory.PHYSICAL_WATER,
 			null,
 			PresetColour.SPELL_SCHOOL_WATER,
@@ -5238,7 +5233,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Upgrade: "+getSpellUpgrade().getName();
+			return "Улучшение: "+getSpellUpgrade().getName();
 		}
 
 		@Override
@@ -5260,7 +5255,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_WATER_SPELL_3 = new AbstractPerk(20,
 			false,
-			"Spell",
+			"Заклинание",
 			PerkCategory.PHYSICAL_WATER,
 			null,
 			PresetColour.SPELL_SCHOOL_WATER,
@@ -5272,7 +5267,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Spell: "+getSpell().getName();
+			return "Заклинание: "+getSpell().getName();
 		}
 
 		@Override
@@ -5294,7 +5289,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_WATER_SPELL_3_1 = new AbstractPerk(20,
 			false,
-			"Upgrade",
+			"Улучшение",
 			PerkCategory.PHYSICAL_WATER,
 			null,
 			PresetColour.SPELL_SCHOOL_WATER,
@@ -5306,7 +5301,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Upgrade: "+getSpellUpgrade().getName();
+			return "Улучшение: "+getSpellUpgrade().getName();
 		}
 
 		@Override
@@ -5328,7 +5323,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_WATER_SPELL_3_2 = new AbstractPerk(20,
 			false,
-			"Upgrade",
+			"Улучшение",
 			PerkCategory.PHYSICAL_WATER,
 			null,
 			PresetColour.SPELL_SCHOOL_WATER,
@@ -5340,7 +5335,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Upgrade: "+getSpellUpgrade().getName();
+			return "Улучшение: "+getSpellUpgrade().getName();
 		}
 
 		@Override
@@ -5362,7 +5357,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_WATER_SPELL_3_3 = new AbstractPerk(20,
 			false,
-			"Upgrade",
+			"Улучшение",
 			PerkCategory.PHYSICAL_WATER,
 			null,
 			PresetColour.SPELL_SCHOOL_WATER,
@@ -5374,7 +5369,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Upgrade: "+getSpellUpgrade().getName();
+			return "Улучшение: "+getSpellUpgrade().getName();
 		}
 
 		@Override
@@ -5396,7 +5391,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_WATER_BOOST_MINOR = new AbstractPerk(20,
 			false,
-			"chill",
+			"озноб",
 			PerkCategory.PHYSICAL_WATER,
 			"perks/elemental/water1",
 			PresetColour.SPELL_SCHOOL_WATER,
@@ -5413,7 +5408,7 @@ public class Perk {
 	
 	public static AbstractPerk ELEMENTAL_WATER_BOOST = new AbstractPerk(20,
 			false,
-			"frost",
+			"мороз",
 			PerkCategory.PHYSICAL_WATER,
 			"perks/elemental/water2",
 			PresetColour.SPELL_SCHOOL_WATER,
@@ -5431,7 +5426,7 @@ public class Perk {
 	
 	public static AbstractPerk ELEMENTAL_WATER_BOOST_MAJOR = new AbstractPerk(20,
 			false,
-			"freeze",
+			"заморозка",
 			PerkCategory.PHYSICAL_WATER,
 			"perks/elemental/water3",
 			PresetColour.SPELL_SCHOOL_WATER,
@@ -5448,7 +5443,7 @@ public class Perk {
 	
 	public static AbstractPerk ELEMENTAL_WATER_BOOST_ULTIMATE = new AbstractPerk(20,
 			false,
-			"ice-age",
+			"ледниковый период",
 			PerkCategory.PHYSICAL_WATER,
 			"perks/elemental/water4",
 			PresetColour.SPELL_SCHOOL_WATER,
@@ -5468,7 +5463,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_AIR_SPELL_1 = new AbstractPerk(20,
 			false,
-			"Spell",
+			"Заклинание",
 			PerkCategory.ARCANE_AIR,
 			null,
 			PresetColour.SPELL_SCHOOL_AIR,
@@ -5480,7 +5475,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Spell: "+getSpell().getName();
+			return "Заклинание: "+getSpell().getName();
 		}
 
 		@Override
@@ -5502,7 +5497,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_AIR_SPELL_1_1 = new AbstractPerk(20,
 			false,
-			"Upgrade",
+			"Улучшение",
 			PerkCategory.ARCANE_AIR,
 			null,
 			PresetColour.SPELL_SCHOOL_AIR,
@@ -5514,7 +5509,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Upgrade: "+getSpellUpgrade().getName();
+			return "Улучшение: "+getSpellUpgrade().getName();
 		}
 
 		@Override
@@ -5536,7 +5531,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_AIR_SPELL_1_2 = new AbstractPerk(20,
 			false,
-			"Upgrade",
+			"Улучшение",
 			PerkCategory.ARCANE_AIR,
 			null,
 			PresetColour.SPELL_SCHOOL_AIR,
@@ -5548,7 +5543,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Upgrade: "+getSpellUpgrade().getName();
+			return "Улучшение: "+getSpellUpgrade().getName();
 		}
 
 		@Override
@@ -5570,7 +5565,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_AIR_SPELL_1_3 = new AbstractPerk(20,
 			false,
-			"Upgrade",
+			"Улучшение",
 			PerkCategory.ARCANE_AIR,
 			null,
 			PresetColour.SPELL_SCHOOL_AIR,
@@ -5582,7 +5577,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Upgrade: "+getSpellUpgrade().getName();
+			return "Улучшение: "+getSpellUpgrade().getName();
 		}
 
 		@Override
@@ -5604,7 +5599,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_AIR_SPELL_2 = new AbstractPerk(20,
 			false,
-			"Spell",
+			"Заклинание",
 			PerkCategory.ARCANE_AIR,
 			null,
 			PresetColour.SPELL_SCHOOL_AIR,
@@ -5616,7 +5611,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Spell: "+getSpell().getName();
+			return "Заклинание: "+getSpell().getName();
 		}
 
 		@Override
@@ -5638,7 +5633,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_AIR_SPELL_2_1 = new AbstractPerk(20,
 			false,
-			"Upgrade",
+			"Улучшение",
 			PerkCategory.ARCANE_AIR,
 			null,
 			PresetColour.SPELL_SCHOOL_AIR,
@@ -5650,7 +5645,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Upgrade: "+getSpellUpgrade().getName();
+			return "Улучшение: "+getSpellUpgrade().getName();
 		}
 
 		@Override
@@ -5672,7 +5667,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_AIR_SPELL_2_2 = new AbstractPerk(20,
 			false,
-			"Upgrade",
+			"Улучшение",
 			PerkCategory.ARCANE_AIR,
 			null,
 			PresetColour.SPELL_SCHOOL_AIR,
@@ -5684,7 +5679,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Upgrade: "+getSpellUpgrade().getName();
+			return "Улучшение: "+getSpellUpgrade().getName();
 		}
 
 		@Override
@@ -5706,7 +5701,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_AIR_SPELL_2_3 = new AbstractPerk(20,
 			false,
-			"Upgrade",
+			"Улучшение",
 			PerkCategory.ARCANE_AIR,
 			null,
 			PresetColour.SPELL_SCHOOL_AIR,
@@ -5718,7 +5713,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Upgrade: "+getSpellUpgrade().getName();
+			return "Улучшение: "+getSpellUpgrade().getName();
 		}
 
 		@Override
@@ -5740,7 +5735,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_AIR_SPELL_3 = new AbstractPerk(20,
 			false,
-			"Spell",
+			"Заклинание",
 			PerkCategory.ARCANE_AIR,
 			null,
 			PresetColour.SPELL_SCHOOL_AIR,
@@ -5752,7 +5747,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Spell: "+getSpell().getName();
+			return "Заклинание: "+getSpell().getName();
 		}
 
 		@Override
@@ -5774,7 +5769,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_AIR_SPELL_3_1 = new AbstractPerk(20,
 			false,
-			"Upgrade",
+			"Улучшение",
 			PerkCategory.ARCANE_AIR,
 			null,
 			PresetColour.SPELL_SCHOOL_AIR,
@@ -5786,7 +5781,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Upgrade: "+getSpellUpgrade().getName();
+			return "Улучшение: "+getSpellUpgrade().getName();
 		}
 
 		@Override
@@ -5808,7 +5803,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_AIR_SPELL_3_2 = new AbstractPerk(20,
 			false,
-			"Upgrade",
+			"Улучшение",
 			PerkCategory.ARCANE_AIR,
 			null,
 			PresetColour.SPELL_SCHOOL_AIR,
@@ -5820,7 +5815,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Upgrade: "+getSpellUpgrade().getName();
+			return "Улучшение: "+getSpellUpgrade().getName();
 		}
 
 		@Override
@@ -5842,7 +5837,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_AIR_SPELL_3_3 = new AbstractPerk(20,
 			false,
-			"Upgrade",
+			"Улучшение",
 			PerkCategory.ARCANE_AIR,
 			null,
 			PresetColour.SPELL_SCHOOL_AIR,
@@ -5854,7 +5849,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Upgrade: "+getSpellUpgrade().getName();
+			return "Улучшение: "+getSpellUpgrade().getName();
 		}
 
 		@Override
@@ -5876,7 +5871,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_AIR_BOOST_MINOR = new AbstractPerk(20,
 			false,
-			"breeze",
+			"бриз",
 			PerkCategory.ARCANE_AIR,
 			"perks/elemental/air1",
 			PresetColour.SPELL_SCHOOL_AIR,
@@ -5887,13 +5882,13 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "Если instructed to focus on [npc.her] ability at harnessing the power of arcane poison, [npc.name] could take the first step towards unlocking the next secret of the school of arcane Air.");
+			return UtilText.parse(owner, "Если направить внимание на способность [npc.her] к обузданию силы арканального яда, [npc.name] сможет сделать первый шаг к раскрытию следующей тайны школы арканального Воздуха.");
 		}
 	};
 	
 	public static AbstractPerk ELEMENTAL_AIR_BOOST = new AbstractPerk(20,
 			false,
-			"gale",
+			"шквальный ветер",
 			PerkCategory.ARCANE_AIR,
 			"perks/elemental/air2",
 			PresetColour.SPELL_SCHOOL_AIR,
@@ -5911,7 +5906,7 @@ public class Perk {
 	
 	public static AbstractPerk ELEMENTAL_AIR_BOOST_MAJOR = new AbstractPerk(20,
 			false,
-			"storm",
+			"шторм",
 			PerkCategory.ARCANE_AIR,
 			"perks/elemental/air3",
 			PresetColour.SPELL_SCHOOL_AIR,
@@ -5928,7 +5923,7 @@ public class Perk {
 	
 	public static AbstractPerk ELEMENTAL_AIR_BOOST_ULTIMATE = new AbstractPerk(20,
 			false,
-			"supercell",
+			"суперъячейка",
 			PerkCategory.ARCANE_AIR,
 			"perks/elemental/air4",
 			PresetColour.SPELL_SCHOOL_AIR,
@@ -5949,7 +5944,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_ARCANE_SPELL_1 = new AbstractPerk(20,
 			false,
-			"Spell",
+			"Заклинание",
 			PerkCategory.LUST,
 			null,
 			PresetColour.SPELL_SCHOOL_ARCANE,
@@ -5961,7 +5956,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Spell: "+getSpell().getName();
+			return "Заклинание: "+getSpell().getName();
 		}
 
 		@Override
@@ -5983,7 +5978,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_ARCANE_SPELL_1_1 = new AbstractPerk(20,
 			false,
-			"Upgrade",
+			"Улучшение",
 			PerkCategory.LUST,
 			null,
 			PresetColour.SPELL_SCHOOL_ARCANE,
@@ -5995,7 +5990,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Upgrade: "+getSpellUpgrade().getName();
+			return "Улучшение: "+getSpellUpgrade().getName();
 		}
 
 		@Override
@@ -6017,7 +6012,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_ARCANE_SPELL_1_2 = new AbstractPerk(20,
 			false,
-			"Upgrade",
+			"Улучшение",
 			PerkCategory.LUST,
 			null,
 			PresetColour.SPELL_SCHOOL_ARCANE,
@@ -6029,7 +6024,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Upgrade: "+getSpellUpgrade().getName();
+			return "Улучшение: "+getSpellUpgrade().getName();
 		}
 
 		@Override
@@ -6051,7 +6046,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_ARCANE_SPELL_1_3 = new AbstractPerk(20,
 			false,
-			"Upgrade",
+			"Улучшение",
 			PerkCategory.LUST,
 			null,
 			PresetColour.SPELL_SCHOOL_ARCANE,
@@ -6063,7 +6058,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Upgrade: "+getSpellUpgrade().getName();
+			return "Улучшение: "+getSpellUpgrade().getName();
 		}
 
 		@Override
@@ -6085,7 +6080,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_ARCANE_SPELL_2 = new AbstractPerk(20,
 			false,
-			"Spell",
+			"Заклинание",
 			PerkCategory.LUST,
 			null,
 			PresetColour.SPELL_SCHOOL_ARCANE,
@@ -6097,7 +6092,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Spell: "+getSpell().getName();
+			return "Заклинание: "+getSpell().getName();
 		}
 
 		@Override
@@ -6119,7 +6114,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_ARCANE_SPELL_2_1 = new AbstractPerk(20,
 			false,
-			"Upgrade",
+			"Улучшение",
 			PerkCategory.LUST,
 			null,
 			PresetColour.SPELL_SCHOOL_ARCANE,
@@ -6131,7 +6126,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Upgrade: "+getSpellUpgrade().getName();
+			return "Улучшение: "+getSpellUpgrade().getName();
 		}
 
 		@Override
@@ -6153,7 +6148,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_ARCANE_SPELL_2_2 = new AbstractPerk(20,
 			false,
-			"Upgrade",
+			"Улучшение",
 			PerkCategory.LUST,
 			null,
 			PresetColour.SPELL_SCHOOL_ARCANE,
@@ -6165,7 +6160,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Upgrade: "+getSpellUpgrade().getName();
+			return "Улучшение: "+getSpellUpgrade().getName();
 		}
 
 		@Override
@@ -6187,7 +6182,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_ARCANE_SPELL_2_3 = new AbstractPerk(20,
 			false,
-			"Upgrade",
+			"Улучшение",
 			PerkCategory.LUST,
 			null,
 			PresetColour.SPELL_SCHOOL_ARCANE,
@@ -6199,7 +6194,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Upgrade: "+getSpellUpgrade().getName();
+			return "Улучшение: "+getSpellUpgrade().getName();
 		}
 
 		@Override
@@ -6221,7 +6216,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_ARCANE_SPELL_3 = new AbstractPerk(20,
 			false,
-			"Spell",
+			"Заклинание",
 			PerkCategory.LUST,
 			null,
 			PresetColour.SPELL_SCHOOL_ARCANE,
@@ -6233,7 +6228,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Spell: "+getSpell().getName();
+			return "Заклинание: "+getSpell().getName();
 		}
 
 		@Override
@@ -6255,7 +6250,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_ARCANE_SPELL_3_1 = new AbstractPerk(20,
 			false,
-			"Upgrade",
+			"Улучшение",
 			PerkCategory.LUST,
 			null,
 			PresetColour.SPELL_SCHOOL_ARCANE,
@@ -6267,7 +6262,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Upgrade: "+getSpellUpgrade().getName();
+			return "Улучшение: "+getSpellUpgrade().getName();
 		}
 
 		@Override
@@ -6289,7 +6284,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_ARCANE_SPELL_3_2 = new AbstractPerk(20,
 			false,
-			"Upgrade",
+			"Улучшение",
 			PerkCategory.LUST,
 			null,
 			PresetColour.SPELL_SCHOOL_ARCANE,
@@ -6301,7 +6296,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Upgrade: "+getSpellUpgrade().getName();
+			return "Улучшение: "+getSpellUpgrade().getName();
 		}
 
 		@Override
@@ -6323,7 +6318,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_ARCANE_SPELL_3_3 = new AbstractPerk(20,
 			false,
-			"Upgrade",
+			"Улучшение",
 			PerkCategory.LUST,
 			null,
 			PresetColour.SPELL_SCHOOL_ARCANE,
@@ -6335,7 +6330,7 @@ public class Perk {
 		
 		@Override
 		public String getName(GameCharacter owner) {
-			return "Upgrade: "+getSpellUpgrade().getName();
+			return "Улучшение: "+getSpellUpgrade().getName();
 		}
 
 		@Override
@@ -6357,7 +6352,7 @@ public class Perk {
 
 	public static AbstractPerk ELEMENTAL_ARCANE_BOOST_MINOR = new AbstractPerk(20,
 			false,
-			"arousal",
+			"возбуждение",
 			PerkCategory.LUST,
 			"perks/elemental/arcane1",
 			PresetColour.SPELL_SCHOOL_ARCANE,
@@ -6374,7 +6369,7 @@ public class Perk {
 	
 	public static AbstractPerk ELEMENTAL_ARCANE_BOOST = new AbstractPerk(20,
 			false,
-			"passion",
+			"страсть",
 			PerkCategory.LUST,
 			"perks/elemental/arcane2",
 			PresetColour.SPELL_SCHOOL_ARCANE,
@@ -6392,7 +6387,7 @@ public class Perk {
 	
 	public static AbstractPerk ELEMENTAL_ARCANE_BOOST_MAJOR = new AbstractPerk(20,
 			false,
-			"infatuation",
+			"увлеченность",
 			PerkCategory.LUST,
 			"perks/elemental/arcane3",
 			PresetColour.SPELL_SCHOOL_ARCANE,
@@ -6409,7 +6404,7 @@ public class Perk {
 	
 	public static AbstractPerk ELEMENTAL_ARCANE_BOOST_ULTIMATE = new AbstractPerk(20,
 			false,
-			"nympholepsy",
+			"нимфолепсия",
 			PerkCategory.LUST,
 			"perks/elemental/arcane4",
 			PresetColour.SPELL_SCHOOL_ARCANE,
@@ -6452,7 +6447,7 @@ public class Perk {
 	
 	public static AbstractPerk DOLL_PHYSICAL_1 = new AbstractPerk(20,
 			false,
-			"hypermobility",
+			"гипермобильность",
 			PerkCategory.PHYSICAL,
 			"perks/doll/physical1",
 			PresetColour.BASE_PINK_LIGHT,
@@ -6508,7 +6503,7 @@ public class Perk {
 
 	public static AbstractPerk DOLL_LUST_CORE = new AbstractPerk(20,
 			false,
-			"sex toy",
+			"секс-игрушка",
 			PerkCategory.LUST,
 			"perks/doll/lust0",
 			PresetColour.RACE_DOLL,
@@ -6531,8 +6526,8 @@ public class Perk {
 			PresetColour.RACE_DOLL,
 			Util.newHashMapOfValues(),
 			Util.newArrayListOfValues(
-					"Может [style.colourTerrible(never)] <span style='color:"+SexPace.SUB_RESISTING.getColour().toWebHexString()+";'>resist</span> in [style.colourSex(sex scenes)]",
-					"Не возражает против <span style='color:"+SexPace.SUB_RESISTING.getColour().toWebHexString()+";'>sadistic</span> sex actions",
+					"Может [style.colourTerrible(never)] <span style='color:"+SexPace.SUB_RESISTING.getColour().toWebHexString()+";'>сопротивляйся</span> в [style.colourSex(секс-сценах)]",
+					"Не возражает против <span style='color:"+SexPace.SUB_RESISTING.getColour().toWebHexString()+";'>садистские</span> сексуальные действия",
 					"Ориентация всегда [style.colourAndrogynous(ambiphilic)]")) {
 		@Override
 		public String getDescription(GameCharacter owner) {
@@ -6543,7 +6538,7 @@ public class Perk {
 
 	public static AbstractPerk DOLL_LUST_2 = new AbstractPerk(20,
 			false,
-			"owned",
+			"принадлежащая",
 			PerkCategory.LUST,
 			"perks/doll/lust2",
 			Util.newArrayListOfValues(PresetColour.CLOTHING_BLACK_STEEL, PresetColour.CLOTHING_GOLD, PresetColour.CLOTHING_GOLD),
@@ -6561,7 +6556,7 @@ public class Perk {
 
 	public static AbstractPerk DOLL_LUST_3 = new AbstractPerk(20,
 			false,
-			"anything goes",
+			"все дозволено",
 			PerkCategory.LUST,
 			"perks/doll/lust3",
 			Util.newArrayListOfValues(PresetColour.CLOTHING_BLUE_GREY, PresetColour.BASE_GREY_LIGHT),
@@ -6580,7 +6575,7 @@ public class Perk {
 	
 	public static AbstractPerk DOLL_ARCANE_CORE = new AbstractPerk(20,
 			false,
-			"automaton",
+			"автоматон",
 			PerkCategory.ARCANE,
 			"perks/doll/arcane0",
 			Util.newArrayListOfValues(PresetColour.CLOTHING_PINK_DARK, PresetColour.CLOTHING_PINK, PresetColour.CLOTHING_PINK_LIGHT),
@@ -6601,7 +6596,7 @@ public class Perk {
 	
 	public static AbstractPerk DOLL_ARCANE_1 = new AbstractPerk(20,
 			false,
-			"no aura",
+			"нет ауры",
 			PerkCategory.ARCANE,
 			"perks/doll/arcane1",
 			Util.newArrayListOfValues(PresetColour.BASE_BLACK, PresetColour.GENERIC_ARCANE),
@@ -6622,7 +6617,7 @@ public class Perk {
 
 	public static AbstractPerk DOLL_ARCANE_2 = new AbstractPerk(20,
 			false,
-			"object limitations",
+			"ограничения объекта",
 			PerkCategory.ARCANE,
 			"perks/doll/arcane2",
 			PresetColour.GENERIC_EXPERIENCE,
@@ -6641,14 +6636,14 @@ public class Perk {
 
 	public static AbstractPerk DOLL_ARCANE_3 = new AbstractPerk(20,
 			false,
-			"arcane-powered",
+			"на базе Арканы",
 			PerkCategory.ARCANE,
 			"perks/doll/arcane3",
 			Util.newArrayListOfValues(PresetColour.BASE_PINK, PresetColour.GENERIC_ARCANE),
 			Util.newHashMapOfValues(),
 			Util.newArrayListOfValues(
 					"Не нужно есть, пить или спать",
-					"Получаете [style.colourExcellent(1000)] "+Attribute.HEALTH_MAXIMUM.getColouredName("span")+"при воздействии аркана"),
+					"Получаете [style.colourExcellent(1000)] "+Attribute.HEALTH_MAXIMUM.getColouredName("охват")+"при воздействии аркана"),
 			null, null, null) {
 		@Override
 		public String getDescription(GameCharacter owner) {
@@ -6756,7 +6751,7 @@ public class Perk {
 				
 				AbstractPerk racePerk = new AbstractPerk(20,
 						false,
-						Util.capitaliseSentence(mainSubspecies?sub.getRace().getName(false):subToUse.getName(null))+" knowledge",
+						Util.capitaliseSentence(mainSubspecies?sub.getRace().getName(false):subToUse.getName(null))+" знания",
 						PerkCategory.LUST,
 						null,
 						sub.getColour(null),

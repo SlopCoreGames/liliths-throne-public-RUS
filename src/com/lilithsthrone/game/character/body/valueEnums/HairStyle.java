@@ -24,9 +24,9 @@ public enum HairStyle {
 		public String getName(Body body) {
 			if(body!=null && body.isFeral()) {
 				if(body.getLegConfiguration()==LegConfiguration.AVIAN) {
-					return "plumed";
+					return "с перьями";
 				} else {
-					return "maned";
+					return "грива";
 				}
 			}
 			return super.getName(body);
@@ -50,18 +50,18 @@ public enum HairStyle {
 	BUN("bun", Femininity.FEMININE, HairLength.THREE_SHOULDER_LENGTH),
 	BOB_CUT("bob-cut", Femininity.FEMININE, HairLength.THREE_SHOULDER_LENGTH),
 	CHONMAGE("chonmage", Femininity.FEMININE, HairLength.THREE_SHOULDER_LENGTH),
-	WAVY("wavy", Femininity.FEMININE, HairLength.THREE_SHOULDER_LENGTH),
+	WAVY("волнистые", Femininity.FEMININE, HairLength.THREE_SHOULDER_LENGTH),
 	PONYTAIL("ponytail", Femininity.FEMININE, HairLength.THREE_SHOULDER_LENGTH),
-	LOW_PONYTAIL("low ponytail", Femininity.FEMININE, HairLength.THREE_SHOULDER_LENGTH),
+	LOW_PONYTAIL("низкий хвост", Femininity.FEMININE, HairLength.THREE_SHOULDER_LENGTH),
 	TWIN_TAILS("twintails", Femininity.FEMININE, HairLength.THREE_SHOULDER_LENGTH),
-	SIDE_BRAIDS("side braids", Femininity.FEMININE, HairLength.THREE_SHOULDER_LENGTH),
+	SIDE_BRAIDS("боковые косы", Femininity.FEMININE, HairLength.THREE_SHOULDER_LENGTH),
 	CHIGNON("chignon", Femininity.FEMININE, HairLength.FOUR_MID_BACK),
-	BRAIDED("braided", Femininity.FEMININE, HairLength.FOUR_MID_BACK),
-	TWIN_BRAIDS("twin braids", Femininity.FEMININE, HairLength.FOUR_MID_BACK),
-	CROWN_BRAID("crown braid", Femininity.FEMININE, HairLength.FOUR_MID_BACK),
-	DRILLS("ojou ringlets", Femininity.FEMININE, HairLength.FOUR_MID_BACK),
-	HIME_CUT("hime-cut", Femininity.FEMININE, HairLength.FOUR_MID_BACK),
-	BIRD_CAGE("bird cage", Femininity.FEMININE, HairLength.SEVEN_TO_FLOOR);
+	BRAIDED("заплетенные", Femininity.FEMININE, HairLength.FOUR_MID_BACK),
+	TWIN_BRAIDS("две косы", Femininity.FEMININE, HairLength.FOUR_MID_BACK),
+	CROWN_BRAID("коса-венец", Femininity.FEMININE, HairLength.FOUR_MID_BACK),
+	DRILLS("локоны одзё", Femininity.FEMININE, HairLength.FOUR_MID_BACK),
+	HIME_CUT("стрижка химэ", Femininity.FEMININE, HairLength.FOUR_MID_BACK),
+	BIRD_CAGE("птичья клетка", Femininity.FEMININE, HairLength.SEVEN_TO_FLOOR);
 	
 	private String descriptor;
 	private Femininity femininity;

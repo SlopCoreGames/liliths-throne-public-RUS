@@ -13,9 +13,9 @@ import com.lilithsthrone.utils.colours.PresetColour;
  */
 public enum HipSize {
 	
-	ZERO_NO_HIPS("completely straight", 0, PresetColour.GENERIC_SIZE_ONE),
+	ZERO_NO_HIPS("совершенно прямые", 0, PresetColour.GENERIC_SIZE_ONE),
 	
-	ONE_VERY_NARROW("very narrow", 1, PresetColour.GENERIC_SIZE_TWO),
+	ONE_VERY_NARROW("очень узкие", 1, PresetColour.GENERIC_SIZE_TWO),
 	
 	TWO_NARROW("narrow", 2, PresetColour.GENERIC_SIZE_THREE),
 	
@@ -23,11 +23,11 @@ public enum HipSize {
 	
 	FOUR_WOMANLY("womanly", 4, PresetColour.GENERIC_SIZE_FIVE),
 	
-	FIVE_VERY_WIDE("very wide", 5, PresetColour.GENERIC_SIZE_SIX),
+	FIVE_VERY_WIDE("очень широкие", 5, PresetColour.GENERIC_SIZE_SIX),
 	
-	SIX_EXTREMELY_WIDE("extremely wide", 6, PresetColour.GENERIC_SIZE_SEVEN),
+	SIX_EXTREMELY_WIDE("чрезвычайно широкие", 6, PresetColour.GENERIC_SIZE_SEVEN),
 	
-	SEVEN_ABSURDLY_WIDE("absurdly wide", 7, PresetColour.GENERIC_SIZE_EIGHT);
+	SEVEN_ABSURDLY_WIDE("абсурдно широкие", 7, PresetColour.GENERIC_SIZE_EIGHT);
 
 	
 	private String descriptor;
@@ -56,11 +56,11 @@ public enum HipSize {
 		if(Main.game.isSillyModeEnabled()) {
 			switch(this) {
 				case FIVE_VERY_WIDE:
-					return "thicc";
+					return "сочные";
 				case SIX_EXTREMELY_WIDE:
-					return "extremely thicc";
+					return "невероятно сочные";
 				case SEVEN_ABSURDLY_WIDE:
-					return "absurdly thicc";
+					return "запредельно сочные";
 				case ZERO_NO_HIPS:
 				case ONE_VERY_NARROW:
 				case TWO_NARROW:

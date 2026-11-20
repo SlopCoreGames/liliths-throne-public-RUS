@@ -34,7 +34,7 @@ public enum OrificeElasticity {
 	/*-------STRETCHY:---------*/
 	
 	/**Stretches out fairly quickly.*/
-	FIVE_STRETCHY("stretchy", 5, 0.25f, 0.25f, true, PresetColour.GENERIC_SIZE_SIX),
+	FIVE_STRETCHY("эластичный", 5, 0.25f, 0.25f, true, PresetColour.GENERIC_SIZE_SIX),
 
 	/**Easily stretches out.*/
 	SIX_SUPPLE("supple", 6, 0.3f, 0.25f, true, PresetColour.GENERIC_SIZE_SEVEN),

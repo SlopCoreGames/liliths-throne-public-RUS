@@ -41,7 +41,7 @@ public enum BodyMaterial {
 			"hair", "hairy",
 			"hair", "hairy",
 			"hair", "hairy",
-			"fur", "furry",
+			"мех", "furry",
 			"fur", "furry",
 			"feathers", "feathered",
 			"feathers", "feathered",
@@ -75,13 +75,13 @@ public enum BodyMaterial {
 		@Override
 		public List<String> getExtraEffects(GameCharacter target) {
 			List<String> extraEffectsLsit = new ArrayList<>();
-			extraEffectsLsit.add("[style.colourBad(-75%)] base [style.colourUnarmed(unarmed damage)]");
-			extraEffectsLsit.add("[style.colourTfGeneric(Can morph body at will*)]");
+			extraEffectsLsit.add("[style.colourBad(-75%)] база [style.colourUnarmed(голый урон)]");
+			extraEffectsLsit.add("[style.colourTfGeneric(Может менять тело по желанию*)]");
 			if(target!=null && target.isPlayer()) {
-				extraEffectsLsit.add("[style.colourTfGeneric(*)][style.colourMinorBad(Requires having encountered races)]");
-				extraEffectsLsit.add("[style.colourMinorBad(to be able to transform into them)]");
+				extraEffectsLsit.add("[style.colourTfGeneric(*)][style.colourMinorBad(Требуется встреча с расами)]");
+				extraEffectsLsit.add("[style.colourMinorBad(чтобы иметь возможность превращаться в них)]");
 			}
-			extraEffectsLsit.add("[style.colourSex(Impregnated through any orifice)]");
+			extraEffectsLsit.add("[style.colourSex(Оплодотворение через любое отверстие)]");
 			return extraEffectsLsit;
 		}
 	},

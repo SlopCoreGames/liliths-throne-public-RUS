@@ -29,25 +29,19 @@ public class TentacleType {
 			Race.NONE,
 			PenetrationGirth.THREE_AVERAGE,
 			0f,
-			"none",
+			"нет",
 			"",
 			"",
-			"tentacle",
-			"tentacles",
+			"щупальце",
+			"щупальца",
 			Util.newArrayListOfValues(),
 			Util.newArrayListOfValues(),
 			"",
 			"",
 			Util.newArrayListOfValues(),
 			Util.newArrayListOfValues(),
-			"#IF(npc.getTentacleCount()==1)"
-					+ " [npc.She] gasps as [npc.she] feels [npc.her] [npc.tentacle] shrinking down and disappearing into [npc.her] body."
-				+ "#ELSE"
-					+ " [npc.She] gasps as [npc.she] feels [npc.her] [npc.tentacles] shrinking down and disappearing into [npc.her] body."
-				+ "#ENDIF"
-				+ "<br/>"
-				+ "[npc.Name] now [npc.has] [style.boldTfGeneric(no tentacles)].",
-			"[style.colourDisabled([npc.She] [npc.do] not have any tentacles.)]",
+			"#IF(npc.getTentacleCount()==1) [npc.She] ахает, когда [npc.she] чувствует, как [npc.her] [npc.tentacle] сжимается и исчезает в [npc.her] теле.#ELSE [npc.She] ахает, когда [npc.she] чувствует, как [npc.her] [npc.tentacles] сжимается и исчезает в [npc.her] теле.#ENDIF<br/>[npc.Name] теперь [npc.has] [style.boldTfGeneric(без щупалец)].",
+			"[style.colourDisabled([npc.She] у [npc.do] нет никаких щупалец.)]",
 			Util.newArrayListOfValues()) {
 	};
 	
@@ -56,46 +50,19 @@ public class TentacleType {
 			Race.DEMON,
 			PenetrationGirth.ONE_SLENDER,
 			1f,
-			"demonic",
+			"демонический",
 			"",
 			"",
-			"tentacle",
-			"tentacles",
-			Util.newArrayListOfValues("demonic"),
-			Util.newArrayListOfValues("demonic"),
-			"tip",
-			"tips",
-			Util.newArrayListOfValues("rounded"),
-			Util.newArrayListOfValues("rounded"),
-			"#IF(npc.getTentacleCount()==1)"
-				+ " A demonic tentacle sprouts from [npc.her] back, rapidly growing in size until it's about [npc.tentacleLength] long."
-				+ " [npc.She] quickly [npc.verb(realise)] that [npc.she] [npc.has] complete control over where it goes, allowing [npc.herHim] to use it like a third limb."
-				+ "<br/>"
-				+ "[npc.Name] now [npc.has]"
-				+ "#IF(npc.isShortStature())"
-					+ " an [style.boldImp(impish tentacle)]"
-				+ "#ELSE"
-					+ " a [style.boldDemon(demonic tentacle)]"
-				+ "#ENDIF"
-				+ ", [npc.materialDescriptor] [npc.tentacleFullDescription(true)]."
-			+ "#ELSE"
-				+ " [npc.TentacleCount] demonic tentacles sprout from [npc.her] back, rapidly growing in size until they're each about [npc.tentacleLength] long."
-				+ " [npc.She] quickly [npc.verb(realise)] that [npc.she] [npc.has] complete control over where they go, allowing [npc.herHim] to use them like extra limbs."
-				+ "<br/>"
-				+ "[npc.Name] now [npc.has] [npc.tentacleCount]"
-				+ "#IF(npc.isShortStature())"
-					+ " [style.boldImp(impish tentacles)]"
-				+ "#ELSE"
-					+ " [style.boldDemon(demonic tentacles)]"
-				+ "#ENDIF"
-				+ ", [npc.materialDescriptor] [npc.tentacleFullDescription(true)]."
-			+ "#ENDIF",
-			"Growing out from [npc.her] back, [npc.sheHasFull]"
-				+ "#IF(npc.getTentacleCount()==1)"
-					+ " a spaded, [npc.tentacleColour(true)] #IF(npc.isShortStature())impish#ELSEdemonic#ENDIF tentacle, over which [npc.sheHasFull] complete control, allowing [npc.herHim] to use it to grip and hold objects."
-				+ "#ELSE"
-					+ " [npc.tentacleCount] spaded, [npc.tentacleColour(true)] #IF(npc.isShortStature())impish#ELSEdemonic#ENDIF tentacles, over which [npc.sheHasFull] complete control, allowing [npc.herHim] to use them to grip and hold objects."
-				+ "#ENDIF",
+			"щупальце",
+			"щупальца",
+			Util.newArrayListOfValues("демонический"),
+			Util.newArrayListOfValues("демонический"),
+			"кончик",
+			"кончики",
+			Util.newArrayListOfValues("закругленный"),
+			Util.newArrayListOfValues("закругленный"),
+			"#IF(npc.getTentacleCount()==1) Из [npc.her] спины прорастает демонический щупальце, стремительно увеличиваясь в размерах, пока не достигнет около [npc.tentacleLength] в длину. [npc.She] быстро [npc.verb(realise)], что [npc.she] [npc.has] полностью контролирует направление его движения, позволяя [npc.herHim] использовать его как третью конечность.<br/>[npc.Name] теперь [npc.has]#IF(npc.isShortStature()) [style.boldImp(бесовское щупальце)]#ELSE [style.boldDemon(демоническое щупальце)]#ENDIF, [npc.materialDescriptor] [npc.tentacleFullDescription(true)].#ELSE [npc.TentacleCount] демонические щупальца прорастают из [npc.her] спины, стремительно увеличиваясь в размерах, пока каждое из них не достигнет около [npc.tentacleLength] в длину. [npc.She] быстро [npc.verb(realise)], что [npc.she] [npc.has] полностью контролирует направление их движения, позволяя [npc.herHim] использовать их как дополнительные конечности.<br/>[npc.Name] теперь [npc.has] [npc.tentacleCount]#IF(npc.isShortStature()) [style.boldImp(бесовские щупальца)]#ELSE [style.boldDemon(демонические щупальца)]#ENDIF, [npc.materialDescriptor] [npc.tentacleFullDescription(true)].#ENDIF",
+			"Growing out from [npc.her] back, [npc.sheHasFull]#IF(npc.getTentacleCount()==1) a spaded, [npc.tentacleColour(true)] #IF(npc.isShortStature())impish#ELSEdemonic#ENDIF tentacle, over which [npc.sheHasFull] complete control, allowing [npc.herHim] to use it to grip and hold objects.#ELSE [npc.tentacleCount] spaded, [npc.tentacleColour(true)] #IF(npc.isShortStature())impish#ELSEdemonic#ENDIF tentacles, over which [npc.sheHasFull] complete control, allowing [npc.herHim] to use them to grip and hold objects.#ENDIF",
 			Util.newArrayListOfValues(
 					BodyPartTag.TAIL_PREHENSILE,
 					BodyPartTag.TAIL_SUITABLE_FOR_PENETRATION,
@@ -108,19 +75,19 @@ public class TentacleType {
 			Race.DEMON,
 			PenetrationGirth.FOUR_GIRTHY,
 			2.5f,
-			"demonic-octopus",
+			"демонический-осьминог",
 			"",
 			"",
-			"tentacle",
-			"tentacles",
-			Util.newArrayListOfValues("demonic"),
-			Util.newArrayListOfValues("demonic"),
-			"tip",
-			"tips",
-			Util.newArrayListOfValues("rounded"),
-			Util.newArrayListOfValues("rounded"),
+			"щупальце",
+			"щупальца",
+			Util.newArrayListOfValues("демонический"),
+			Util.newArrayListOfValues("демонический"),
+			"кончик",
+			"кончики",
+			Util.newArrayListOfValues("закругленный"),
+			Util.newArrayListOfValues("закругленный"),
 			"",
-			"In place of legs, [npc.sheHasFull] [npc.tentacleCount] [npc.tentacleColour(true)], octopus-like tentacles, over which [npc.sheHasFull] complete control, allowing [npc.herHim] to use them to grip and hold objects.",
+			"Вместо ног у [npc.sheHasFull] [npc.tentacleCount] [npc.tentacleColour(true)], осьминогоподобные щупальца, над которыми [npc.sheHasFull] имеет полный контроль, что позволяет [npc.herHim] использовать их, чтобы хватать и удерживать предметы.",
 			Util.newArrayListOfValues(
 					BodyPartTag.TAIL_PREHENSILE,
 					BodyPartTag.TAIL_SUITABLE_FOR_PENETRATION,
@@ -138,7 +105,7 @@ public class TentacleType {
 
 		// Modded types:
 		
-		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/race", "bodyParts", null);
+		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/раса", "bodyParts", null);
 		for(Entry<String, Map<String, File>> entry : moddedFilesMap.entrySet()) {
 			for(Entry<String, File> innerEntry : entry.getValue().entrySet()) {
 				if(Util.getXmlRootElementName(innerEntry.getValue()).equals("tentacle")) {

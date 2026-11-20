@@ -14,24 +14,24 @@ import com.lilithsthrone.utils.Util;
  */
 public enum PenetrationModifier {
 
-	SHEATHED("sheathed", "Helps to hide bulge in clothing when not erect."),
+	SHEATHED("sheathed", "Помогает скрыть выпуклость под одеждой, когда член не в состоянии эрекции."),
 	
 	RIBBED("ribbed", ""),
 	
 	TENTACLED("tentacled", ""),
 	
-	KNOTTED("knotted", "Grants ability to be pushed inside an orifice at the moment of orgasm, doubling effective diameter and locking partners together. (Requires orifice to be deep enough for knotted base to be inserted.)"),
+	KNOTTED("knotted", "Дает возможность проталкиваться внутрь отверстия в момент оргазма, удваивая эффективный диаметр и намертво сцепляя партнеров. (Требуется, чтобы отверстие было достаточно глубоким для вхождения узловатого основания.)"),
 	
 	BLUNT("blunt", ""),
 
-	TAPERED("tapered", "Reduces effective diameter by 5%. (Mutually exclusive with 'flared'.)") {
+	TAPERED("tapered", "Уменьшает эффективный диаметр на 5%. (Взаимоисключающее с «расширяющимся».)") {
 		@Override
 		public List<PenetrationModifier> getMutuallyExclusivePenetrationModifiers() {
 			return Util.newArrayListOfValues(FLARED);
 		}
 	},
 	
-	FLARED("flared", "Increases effective diameter by 5%. (Mutually exclusive with 'tapered'.)") {
+	FLARED("flared", "Увеличивает эффективный диаметр на 5%. (Взаимоисключающее с «сужающимся».)") {
 		@Override
 		public List<PenetrationModifier> getMutuallyExclusivePenetrationModifiers() {
 			return Util.newArrayListOfValues(TAPERED);
@@ -45,7 +45,7 @@ public enum PenetrationModifier {
 	PREHENSILE("prehensile", ""),
 	
 	OVIPOSITOR("ovipositor",
-			"Grants ability to lay eggs in the currently-penetrated orifice. (Requires the eggs to already be fertilised. Eggs cannot be laid in an already-pregnant target's vagina.)",
+			"Дает возможность откладывать яйца в текущее проникаемое отверстие. (Требуется, чтобы яйца уже были оплодотворены. Нельзя откладывать яйца во влагалище уже беременной цели.)",
 			Util.newArrayListOfValues(
 					SexAreaPenetration.PENIS,
 					SexAreaPenetration.CLIT));
@@ -88,7 +88,7 @@ public enum PenetrationModifier {
 	
 	public String getDescription() {
 		if(description.isEmpty()) {
-			return "No gameplay effect.";
+			return "Не влияет на игровой процесс.";
 		}
 		return description;
 	}

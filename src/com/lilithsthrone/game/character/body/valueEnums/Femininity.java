@@ -14,15 +14,15 @@ import com.lilithsthrone.utils.colours.PresetColour;
  */
 public enum Femininity {
 	
-	MASCULINE_STRONG(Util.newArrayListOfValues("very masculine", "manly"), 0, 19, PresetColour.MASCULINE_PLUS, PresetColour.MASCULINE_PLUS_NPC),
+	MASCULINE_STRONG(Util.newArrayListOfValues("очень мужественный", "manly"), 0, 19, PresetColour.MASCULINE_PLUS, PresetColour.MASCULINE_PLUS_NPC),
 	
 	MASCULINE(Util.newArrayListOfValues("masculine", "boyish"), 20, 39, PresetColour.MASCULINE, PresetColour.MASCULINE_NPC),
 	
-	ANDROGYNOUS(Util.newArrayListOfValues("androgynous"), 40, 59, PresetColour.ANDROGYNOUS, PresetColour.ANDROGYNOUS_NPC),
+	ANDROGYNOUS(Util.newArrayListOfValues("андрогинный"), 40, 59, PresetColour.ANDROGYNOUS, PresetColour.ANDROGYNOUS_NPC),
 	
-	FEMININE(Util.newArrayListOfValues("feminine", "girly"), 60, 79, PresetColour.FEMININE, PresetColour.FEMININE_NPC),
+	FEMININE(Util.newArrayListOfValues("женственная", "девичий"), 60, 79, PresetColour.FEMININE, PresetColour.FEMININE_NPC),
 	
-	FEMININE_STRONG(Util.newArrayListOfValues("very feminine", "womanly"), 80, 100, PresetColour.FEMININE_PLUS, PresetColour.FEMININE_PLUS_NPC);
+	FEMININE_STRONG(Util.newArrayListOfValues("очень женственный", "womanly"), 80, 100, PresetColour.FEMININE_PLUS, PresetColour.FEMININE_PLUS_NPC);
 
 	private List<String> names;
 	private int minimumFemininity;

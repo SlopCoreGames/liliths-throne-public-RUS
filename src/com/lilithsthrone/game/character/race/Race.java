@@ -37,11 +37,11 @@ import com.lilithsthrone.utils.colours.PresetColour;
  */
 public class Race {
 
-	public static AbstractRace NONE = new AbstractRace("no race",
-			"no race",
-			"no race",
-			"no race",
-			"none",
+	public static AbstractRace NONE = new AbstractRace("нет расы",
+			"нет расы",
+			"нет расы",
+			"нет расы",
+			"нет",
 			PresetColour.RACE_UNKNOWN,
 			Disposition.CIVILIZED,
 			RacialClass.MAMMAL,
@@ -59,11 +59,11 @@ public class Race {
 	};
 	
 	// HUMAN:
-	public static AbstractRace HUMAN = new AbstractRace("human",
-			"humans",
-			"human",
-			"humans",
-			"human",
+	public static AbstractRace HUMAN = new AbstractRace("человеческими",
+			"люди",
+			"человеческими",
+			"люди",
+			"человеческими",
 			PresetColour.RACE_HUMAN,
 			Disposition.CIVILIZED,
 			RacialClass.MAMMAL,
@@ -85,11 +85,11 @@ public class Race {
 	};
 
 	// ANGEL:
-	public static AbstractRace ANGEL = new AbstractRace("angel",
-			"angels",
-			"angel",
-			"angels",
-			"angelic",
+	public static AbstractRace ANGEL = new AbstractRace("ангел",
+			"ангелы",
+			"ангел",
+			"ангелы",
+			"ангельский",
 			PresetColour.CLOTHING_WHITE,
 			Disposition.CIVILIZED,
 			RacialClass.MAMMAL,
@@ -141,11 +141,11 @@ public class Race {
 
 		return names;
 	}
-	public static AbstractRace DEMON = new AbstractRace("demon",
-			"demons",
+	public static AbstractRace DEMON = new AbstractRace("демон",
+			"демоны",
 			generateDemonNameFeralMap(),
 			generateDemonNameFeralPluralMap(),
-			"demonic",
+			"демонический",
 			PresetColour.RACE_DEMON,
 			Disposition.CIVILIZED,
 			RacialClass.MAMMAL,
@@ -164,7 +164,7 @@ public class Race {
 		public String getName(Body body, boolean feral) {
 			if(feral) {
 				if(body!=null && body.getHalfDemonSubspecies()!=null && body.getHalfDemonSubspecies()!=Subspecies.HUMAN) {
-					return "demonic-"+ body.getHalfDemonSubspecies().getFeralName(body);
+					return "демонический-"+ body.getHalfDemonSubspecies().getFeralName(body);
 				}
 				if(body!=null) {
 					AbstractRace r = body.getLegType().getRace();
@@ -172,7 +172,7 @@ public class Race {
 
 					switch(legConfiguration) {
 						case BIPEDAL:
-							return "demon";
+							return "демон";
 						case ARACHNID:
 						case CEPHALOPOD:
 						case QUADRUPEDAL:
@@ -181,9 +181,9 @@ public class Race {
 						case AVIAN:
 						case WINGED_BIPED:
 							if(r==Race.DEMON) {
-								return "demonic-horse";
+								return "демоническо-лошадиные";
 							}
-							return "demonic-"+r.getName(body, true);
+							return "демонический-"+r.getName(body, true);
 					}
 				}
 //				return "demonic-horse";
@@ -194,7 +194,7 @@ public class Race {
 		public String getNamePlural(Body body, boolean feral) {
 			if(feral) {
 				if(body!=null && body.getHalfDemonSubspecies()!=null && body.getHalfDemonSubspecies()!=Subspecies.HUMAN) {
-					return "demonic-"+ body.getHalfDemonSubspecies().getFeralNamePlural(body);
+					return "демонический-"+ body.getHalfDemonSubspecies().getFeralNamePlural(body);
 				}
 				if(body!=null) {
 					AbstractRace r = body.getLegType().getRace();
@@ -202,7 +202,7 @@ public class Race {
 
 					switch(legConfiguration) {
 						case BIPEDAL:
-							return "demons";
+							return "демоны";
 						case ARACHNID:
 						case CEPHALOPOD:
 						case QUADRUPEDAL:
@@ -211,9 +211,9 @@ public class Race {
 						case AVIAN:
 						case WINGED_BIPED:
 							if(r==Race.DEMON) {
-								return "demonic-horses";
+								return "демонические лошади";
 							}
-							return "demonic-"+r.getNamePlural(body, true);
+							return "демонический-"+r.getNamePlural(body, true);
 					}
 				}
 //				return "demonic-horses";
@@ -305,11 +305,11 @@ public class Race {
 	};
 
 	// BOVINES:
-	public static AbstractRace COW_MORPH = new AbstractRace("cattle-morph",
-				"cattle-morphs",
-				"cattle",
-				"cattle",
-				"cattle",
+	public static AbstractRace COW_MORPH = new AbstractRace("скотоморф",
+				"скотоморфы",
+				"скот",
+				"скот",
+				"скот",
 				PresetColour.RACE_COW_MORPH,
 				Disposition.CIVILIZED,
 				RacialClass.MAMMAL,
@@ -336,11 +336,11 @@ public class Race {
 	};
 
 	// CANINES:
-	public static AbstractRace DOG_MORPH = new AbstractRace("dog-morph",
-				"dog-morphs",
-				"dog",
-				"dogs",
-				"dog",
+	public static AbstractRace DOG_MORPH = new AbstractRace("пёс-морф",
+				"пёсы-морфы",
+				"коровьи",
+				"псы",
+				"коровьи",
 				PresetColour.RACE_DOG_MORPH,
 				Disposition.CIVILIZED,
 				RacialClass.MAMMAL,
@@ -365,11 +365,11 @@ public class Race {
 		}
 	};
 
-	public static AbstractRace WOLF_MORPH = new AbstractRace("wolf-morph",
-				"wolf-morphs",
-				"wolf",
-				"wolves",
-				"wolf",
+	public static AbstractRace WOLF_MORPH = new AbstractRace("волк-морф",
+				"волк-морфы",
+				"волчьи",
+				"волки",
+				"волчьи",
 				PresetColour.RACE_WOLF_MORPH,
 				Disposition.SAVAGE,
 				RacialClass.MAMMAL,
@@ -384,9 +384,9 @@ public class Race {
 		public String getName(Body body, boolean feral) {
 			if(Main.game!=null && Main.game.isSillyModeEnabled()) {
 				if(feral) {
-					return "awoo";
+					return "ауу";
 				}
-				return "awoo-morph";
+				return "ауу-морф";
 			}
 			return super.getName(body, feral);
 		}
@@ -394,9 +394,9 @@ public class Race {
 		public String getNamePlural(Body body, boolean feral) {
 			if(Main.game!=null && Main.game.isSillyModeEnabled()) {
 				if(feral) {
-					return "awoos";
+					return "ауу";
 				}
-				return "awoo-morphs";
+				return "ауу-морфы";
 			}
 			return super.getNamePlural(body, feral);
 		}
@@ -414,11 +414,11 @@ public class Race {
 		}
 	};
 	
-	public static AbstractRace FOX_MORPH = new AbstractRace("fox-morph",
-				"fox-morphs",
-				"fox",
-				"foxes",
-				"fox",
+	public static AbstractRace FOX_MORPH = new AbstractRace("лис-морф",
+				"лис-морфы",
+				"лисий",
+				"лисы",
+				"лисий",
 				PresetColour.RACE_FOX_MORPH,
 				Disposition.UNPREDICTABLE,
 				RacialClass.MAMMAL,
@@ -445,11 +445,11 @@ public class Race {
 	
 
 	// FELINES:
-	public static AbstractRace CAT_MORPH = new AbstractRace("cat-morph",
-				"cat-morphs",
-				"cat",
-				"cats",
-				"cat",
+	public static AbstractRace CAT_MORPH = new AbstractRace("кот-морф",
+				"кот-морфы",
+				"кошачьи",
+				"кошки",
+				"кошачьи",
 				PresetColour.RACE_CAT_MORPH,
 				Disposition.CIVILIZED,
 				RacialClass.MAMMAL,
@@ -464,9 +464,9 @@ public class Race {
 		public String getName(Body body, boolean feral) {
 			if(Main.game!=null && Main.game.isSillyModeEnabled()) {
 				if(feral) {
-					return "catte";
+					return "кошечки";
 				}
-				return "catte-morph";
+				return "кошечка-морф";
 			}
 			return super.getName(body, feral);
 		}
@@ -474,9 +474,9 @@ public class Race {
 		public String getNamePlural(Body body, boolean feral) {
 			if(Main.game!=null && Main.game.isSillyModeEnabled()) {
 				if(feral) {
-					return "cattes";
+					return "кошечки";
 				}
-				return "catte-morphs";
+				return "кошечка-морфы";
 			}
 			return super.getNamePlural(body, feral);
 		}
@@ -502,11 +502,11 @@ public class Race {
 //			true),
 	
 	// EQUINE:
-	public static AbstractRace HORSE_MORPH = new AbstractRace("horse-morph",
-				"horse-morphs",
-				"horse",
-				"horses",
-				"horse",
+	public static AbstractRace HORSE_MORPH = new AbstractRace("конь-морф",
+				"конь-морфы",
+				"лошади",
+				"лошади",
+				"лошади",
 				PresetColour.RACE_HORSE_MORPH,
 				Disposition.CIVILIZED,
 				RacialClass.MAMMAL,
@@ -551,11 +551,11 @@ public class Race {
 	};
 
 	
-	public static AbstractRace REINDEER_MORPH = new AbstractRace("reindeer-morph",
-				"reindeer-morphs",
-				"reindeer",
-				"reindeers",
-				"reindeer",
+	public static AbstractRace REINDEER_MORPH = new AbstractRace("олене-морф",
+				"олени-морфы",
+				"оленьей шерсти",
+				"олени",
+				"оленьей шерсти",
 				PresetColour.RACE_REINDEER_MORPH,
 				Disposition.CIVILIZED,
 				RacialClass.MAMMAL,
@@ -573,11 +573,11 @@ public class Race {
 	};
 			
 
-	public static AbstractRace SQUIRREL_MORPH = new AbstractRace("squirrel-morph",
-				"squirrel-morphs",
-				"squirrel",
-				"squirrels",
-				"squirrel",
+	public static AbstractRace SQUIRREL_MORPH = new AbstractRace("белка-морф",
+				"белки-морфы",
+				"беличьи",
+				"белки",
+				"беличьи",
 				PresetColour.RACE_SQUIRREL_MORPH,
 				Disposition.CIVILIZED,
 				RacialClass.MAMMAL,
@@ -594,11 +594,11 @@ public class Race {
 		}
 	};
 
-	public static AbstractRace RAT_MORPH = new AbstractRace("rat-morph",
-				"rat-morphs",
-				"rat",
-				"rats",
-				"rat",
+	public static AbstractRace RAT_MORPH = new AbstractRace("крыс-морф",
+				"крыс-морфы",
+				"крыса",
+				"крысы",
+				"крыса",
 				PresetColour.RACE_RAT_MORPH,
 				Disposition.NEUTRAL,
 				RacialClass.MAMMAL,
@@ -623,11 +623,11 @@ public class Race {
 		}
 	};
 
-	public static AbstractRace RABBIT_MORPH = new AbstractRace("rabbit-morph",
-				"rabbit-morphs",
-				"rabbit",
-				"rabbits",
-				"rabbit",
+	public static AbstractRace RABBIT_MORPH = new AbstractRace("кролик-морф",
+				"кролики-морфы",
+				"кроличьи",
+				"кролики",
+				"кроличьи",
 				PresetColour.RACE_RABBIT_MORPH,
 				Disposition.NEUTRAL,
 				RacialClass.MAMMAL,
@@ -657,11 +657,11 @@ public class Race {
 		}
 	};
 	
-	public static AbstractRace BAT_MORPH = new AbstractRace("bat-morph",
-				"bat-morphs",
-				"bat",
-				"bats",
-				"bat",
+	public static AbstractRace BAT_MORPH = new AbstractRace("летучая мышь-морф",
+				"летучие мыши-морфы",
+				"летучая мышь",
+				"летучие мыши",
+				"летучая мышь",
 				PresetColour.RACE_BAT_MORPH,
 				Disposition.NEUTRAL,
 				RacialClass.MAMMAL,
@@ -682,11 +682,11 @@ public class Race {
 		}
 	};
 	
-	public static AbstractRace ALLIGATOR_MORPH = new AbstractRace("alligator-morph",
-				"alligator-morphs",
-				"alligator",
-				"alligators",
-				"alligator",
+	public static AbstractRace ALLIGATOR_MORPH = new AbstractRace("аллигатор-морф",
+				"аллигаторы-морфы",
+				"аллигатора",
+				"аллигаторы",
+				"аллигатора",
 				PresetColour.RACE_ALLIGATOR_MORPH,
 				Disposition.NEUTRAL,
 				RacialClass.REPTILE,
@@ -704,11 +704,11 @@ public class Race {
 	};
 
 	// AVIAN:
-	public static AbstractRace HARPY = new AbstractRace("harpy",
-			"harpies",
-			"bird",
-			"birds",
-			"harpy",
+	public static AbstractRace HARPY = new AbstractRace("гарпия",
+			"гарпии",
+			"птица",
+			"птицы",
+			"гарпия",
 			PresetColour.RACE_HARPY,
 			Disposition.NEUTRAL,
 			RacialClass.BIRD,
@@ -722,14 +722,14 @@ public class Race {
 		@Override
 		public String getName(Body body, boolean feral) {
 			if(Main.game!=null && Main.game.isSillyModeEnabled()) {
-				return "birb";
+				return "птица";
 			}
 			return super.getName(body, feral);
 		}
 		@Override
 		public String getNamePlural(Body body, boolean feral) {
 			if(Main.game!=null && Main.game.isSillyModeEnabled()) {
-				return "birbs";
+				return "птицы";
 			}
 			return super.getNamePlural(body, feral);
 		}
@@ -748,11 +748,11 @@ public class Race {
 	
 	
 	// SLIME:
-	public static AbstractRace SLIME = new AbstractRace("slime",
-			"slimes",
-			"slime",
-			"slimes",
-			"slime",
+	public static AbstractRace SLIME = new AbstractRace("слайм",
+			"слаймы",
+			"слайм",
+			"слаймы",
+			"слайм",
 			PresetColour.RACE_SLIME,
 			Disposition.NEUTRAL,
 			RacialClass.OTHER,
@@ -774,11 +774,11 @@ public class Race {
 	};
 	
 	// DOLLS:
-	public static AbstractRace DOLL = new AbstractRace("doll",
-			"dolls",
-			"doll",
-			"dolls",
-			"doll",
+	public static AbstractRace DOLL = new AbstractRace("кукла",
+			"куклы",
+			"кукла",
+			"куклы",
+			"кукла",
 			PresetColour.RACE_DOLL,
 			Disposition.NEUTRAL,
 			RacialClass.OTHER,
@@ -800,11 +800,11 @@ public class Race {
 	};
 	
 	// ELEMENTALS:
-	public static AbstractRace ELEMENTAL = new AbstractRace("elemental",
-				"elementals",
-				"elemental",
-				"elementals",
-				"elemental",
+	public static AbstractRace ELEMENTAL = new AbstractRace("стихийный",
+				"стихийные",
+				"стихийный",
+				"стихийные",
+				"стихийный",
 				PresetColour.SPELL_SCHOOL_ARCANE,
 				Disposition.NEUTRAL,
 				RacialClass.OTHER,
@@ -1509,7 +1509,7 @@ public class Race {
 		
 		// Modded races:
 		
-		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/race", null, "race");
+		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/раса", null, "race");
 		for(Entry<String, Map<String, File>> entry : moddedFilesMap.entrySet()) {
 			for(Entry<String, File> innerEntry : entry.getValue().entrySet()) {
 				if(Util.getXmlRootElementName(innerEntry.getValue()).equals("race")) {
@@ -1575,10 +1575,10 @@ public class Race {
 		for(AbstractRace race : Race.getAllRaces()) {
 			if(race!=Race.NONE) {
 				String name = race.getName(true);
-				AbstractAttribute racialAttribute = new AbstractAttribute(true, 0, -100, 100, name+" damage", Util.capitaliseSentence(name)+" damage", "swordIcon", race.getColour(), name+"-obliteration", name+"-mercy", null) {
+				AbstractAttribute racialAttribute = new AbstractAttribute(true, 0, -100, 100, name+" урон", Util.capitaliseSentence(name)+" урон", "swordIcon", race.getColour(), name+"-истребление", name+"-милосердие", null) {
 					@Override
 					public String getDescription(GameCharacter owner) {
-						return "Increases damage vs "+race.getNamePlural(true)+".";
+						return "Увеличивает урон против "+race.getNamePlural(true)+".";
 					}
 					@Override
 					public int getOrderPriority() {

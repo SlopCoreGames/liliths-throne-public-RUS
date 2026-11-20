@@ -18,15 +18,15 @@ import com.lilithsthrone.utils.colours.PresetColour;
  */
 public enum FetishDesire {
 	
-	ZERO_HATE(0, "hate", "hate", "hates", "fondness1", PresetColour.BASE_CRIMSON),
+	ZERO_HATE(0, "hate", "hate", "hates", "сильная симпатия 1", PresetColour.BASE_CRIMSON),
 	
-	ONE_DISLIKE(1, "dislike", "dislike", "dislikes", "fondness2", PresetColour.BASE_RED),
+	ONE_DISLIKE(1, "dislike", "dislike", "dislikes", "сильная симпатия 2", PresetColour.BASE_RED),
 	
-	TWO_NEUTRAL(2, "indifferent", "are indifferent to", "is indifferent to", "fondness3", PresetColour.BASE_BLUE_STEEL),
+	TWO_NEUTRAL(2, "indifferent", "безразличны к", "безразличен к", "сильная симпатия 3", PresetColour.BASE_BLUE_STEEL),
 	
-	THREE_LIKE(3, "like", "like", "likes", "fondness4", PresetColour.BASE_PINK_LIGHT),
+	THREE_LIKE(3, "like", "like", "likes", "сильная симпатия 4", PresetColour.BASE_PINK_LIGHT),
 	
-	FOUR_LOVE(4, "love", "love", "loves", "fondness5", PresetColour.BASE_PINK);
+	FOUR_LOVE(4, "love", "love", "loves", "сильная симпатия 5", PresetColour.BASE_PINK);
 	
 	private int value;
 	private String name;
@@ -45,7 +45,7 @@ public enum FetishDesire {
 		this.colour = colour;
 		
 		modifiersList = new ArrayList<>();
-		modifiersList.add("Modifies [style.boldLust("+ Util.capitaliseSentence(Attribute.LUST.getAbbreviatedName())+ " increments)] of sex actions");
+		modifiersList.add("Изменяет [style.boldLust(, "+ Util.capitaliseSentence(Attribute.LUST.getAbbreviatedName())+ " )] сексуальных действий");
 
 		
 		try {

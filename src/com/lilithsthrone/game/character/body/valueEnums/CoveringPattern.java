@@ -36,18 +36,18 @@ public enum CoveringPattern {
 	EYE_IRISES_HETEROCHROMATIC(true, "heterochromatic"),
 	EYE_PUPILS(false, "standard"),
 	EYE_PUPILS_HETEROCHROMATIC(true, "heterochromatic"),
-	EYE_SCLERA(false, "standard"),
+	EYE_SCLERA(false, "стандартный"),
 	EYE_SCLERA_HETEROCHROMATIC(true, "heterochromatic"),
 
-	HIGHLIGHTS(true, "highlighted"),
+	HIGHLIGHTS(true, "с акцентом"),
 	STRIPED(true, "striped"),
-	SPOTTED(true, "spotted"),
+	SPOTTED(true, "в пятнышко"),
 	MOTTLED(true, "mottled"),
-	MARKED(true, "marked"),
+	MARKED(true, "с отметинами"),
 	FRECKLED(true, "freckled"),
-	FRECKLED_FACE(false, "freckled (face)"),
+	FRECKLED_FACE(false, "веснушки (лицо)"),
 	
-	OMBRE(true, "ombre");
+	OMBRE(true, "омбре");
 	
 	
 	public static Map<CoveringPattern, Integer> allStandardCoveringPatterns = new HashMap<>();

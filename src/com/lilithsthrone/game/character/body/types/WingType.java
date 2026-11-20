@@ -28,17 +28,12 @@ public class WingType {
 			null,
 			Race.NONE,
 			false,
-			"none",
-			"wing",
-			"wings",
+			"нет",
+			"крыло",
+			"крылья",
 			new ArrayList<>(),
 			new ArrayList<>(),
-			"#IF(npc.getLegConfiguration().isWingsOnLegConfiguration())"
-					+ "With a strong tugging sensation, [npc.her] [npc.wings] shrink away and disappear into the sides of [npc.her] [npc.legConfiguration] body."
-			+ "#ELSE"
-				+ "With a strong tugging sensation, [npc.her] [npc.wings] shrink away and disappear into [npc.her] back."
-			+ "#ENDIF"
-			+ "<br/>[npc.Name] now [npc.has] [style.boldTfGeneric(no wings)].",
+			"#IF(npc.getLegConfiguration().isWingsOnLegConfiguration())С сильным тянущим ощущением, [npc.her] [npc.wings] съеживаются и исчезают по бокам [npc.her] [npc.legConfiguration] тела.#ELSEС сильным тянущим ощущением, [npc.her] [npc.wings] съеживаются и исчезают в [npc.her] спине.#ENDIF<br/>[npc.Name] теперь [npc.has] [style.boldTfGeneric(без крыльев)].",
 			"") {
 	};
 
@@ -48,19 +43,13 @@ public class WingType {
 			BodyCoveringType.ANGEL_FEATHER,
 			Race.ANGEL,
 			true,
-			"angelic feathered",
-			"wing",
-			"wings",
-			Util.newArrayListOfValues("angelic", "feathered"),
-			Util.newArrayListOfValues("angelic", "feathered"),
-			"#IF(npc.getLegConfiguration().isWingsOnLegConfiguration())"
-				+ "[npc.She] [npc.verb(bite)] [npc.her] [npc.lip] to try and suppress an unexpected moan of pleasure as a pair of [npc.wingSize], feathered, angelic wings push out from the sides of [npc.her] [npc.legConfiguration] body."
-			+ "#ELSE"
-				+ "[npc.She] [npc.verb(bite)] [npc.her] [npc.lip] to try and suppress an unexpected moan of pleasure as a pair of [npc.wingSize], feathered, angelic wings push out from [npc.her] shoulder blades."
-			+ "#ENDIF"
-			+ "<br/>"
-			+ "[npc.Name] now [npc.has] [style.boldAngel(angelic, feathered wings)].",
-			"[npc.sheHasFull] a pair of [npc.wingSize], feathered, angelic wings, which are [npc.materialDescriptor] [npc.wingFullDescription(true)].") {
+			"ангельские пернатые",
+			"крыло",
+			"крылья",
+			Util.newArrayListOfValues("ангельский", "оперенные"),
+			Util.newArrayListOfValues("ангельский", "оперенные"),
+			"#IF(npc.getLegConfiguration().isWingsOnLegConfiguration())[npc.She] [npc.verb(bite)] [npc.her] [npc.lip], пытаясь подавить неожиданный стон удовольствия, когда пара [npc.wingSize], пернатых, ангельских крыльев прорывается сквозь бока [npc.her] [npc.legConfiguration] тела.#ELSE[npc.She] [npc.verb(bite)] [npc.her] [npc.lip], пытаясь подавить неожиданный стон удовольствия, когда пара [npc.wingSize], пернатых, ангельских крыльев прорывается сквозь лопатки [npc.her].#ENDIF<br/>[npc.Name] теперь [npc.has] [style.boldAngel(ангельские, пернатые крылья)].",
+			"[npc.sheHasFull] пара [npc.wingSize], пернатых, ангельских крыльев, которые являются [npc.materialDescriptor] [npc.wingFullDescription(true)].") {
 	};
 
 	// Demons:
@@ -69,46 +58,26 @@ public class WingType {
 			BodyCoveringType.DEMON_COMMON,
 			Race.DEMON,
 			true,
-			"demonic leathery",
-			"wing",
-			"wings",
-			Util.newArrayListOfValues("demonic", "leathery"),
-			Util.newArrayListOfValues("demonic", "leathery"),
-			"#IF(npc.getLegConfiguration().isWingsOnLegConfiguration())"
-				+ "[npc.She] [npc.verb(bite)] [npc.her] [npc.lip] to try and suppress an unexpected moan of pleasure as a pair of [npc.wingSize], leathery, demonic wings push out from the sides of [npc.her] [npc.legConfiguration] body."
-			+ "#ELSE"
-				+ "[npc.She] [npc.verb(bite)] [npc.her] [npc.lip] to try and suppress an unexpected moan of pleasure as a pair of [npc.wingSize], leathery, demonic wings push out from [npc.her] shoulder blades."
-			+ "#ENDIF"
-			+ "<br/>"
-			+ "#IF(npc.isShortStature())"
-				+ "[npc.Name] now [npc.has] [style.boldImp(impish, leathery wings)]."
-			+ "#ELSE"
-				+ "[npc.Name] now [npc.has] [style.boldDemon(demonic, leathery wings)]."
-			+ "#ENDIF",
-			"[npc.sheHasFull] a pair of [npc.wingSize], leathery, demonic wings, which are [npc.materialDescriptor] [npc.wingFullDescription(true)].") {
+			"демонические кожистые",
+			"крыло",
+			"крылья",
+			Util.newArrayListOfValues("демонический", "кожаные"),
+			Util.newArrayListOfValues("демонический", "кожаные"),
+			"#IF(npc.getLegConfiguration().isWingsOnLegConfiguration())[npc.She] [npc.verb(bite)] [npc.her] [npc.lip], пытаясь подавить неожиданный стон удовольствия, когда пара [npc.wingSize], кожистых, демонических крыльев прорывается сквозь бока [npc.her] [npc.legConfiguration] тела.#ELSE[npc.She] [npc.verb(bite)] [npc.her] [npc.lip], пытаясь подавить неожиданный стон удовольствия, когда пара [npc.wingSize], кожистых, демонических крыльев прорывается сквозь [npc.her] лопатки.#ENDIF<br/>#IF(npc.isShortStature())[npc.Name] теперь [npc.has] [style.boldImp(бесподобные, кожистые крылья)].#ELSE[npc.Name] теперь [npc.has] [style.boldDemon(демонические, кожистые крылья)].#ENDIF",
+			"[npc.sheHasFull] пара [npc.wingSize], кожистых, демонических крыльев, которые являются [npc.materialDescriptor] [npc.wingFullDescription(true)].") {
 	};
 
 	public static final AbstractWingType DEMON_FEATHERED = new AbstractWingType(
 			BodyCoveringType.DEMON_FEATHER,
 			Race.DEMON,
 			true,
-			"demonic feathered",
-			"wing",
-			"wings",
-			Util.newArrayListOfValues("demonic", "feathered"),
-			Util.newArrayListOfValues("demonic", "feathered"),
-			"#IF(npc.getLegConfiguration().isWingsOnLegConfiguration())"
-				+ "[npc.She] [npc.verb(bite)] [npc.her] [npc.lip] to try and suppress an unexpected moan of pleasure as a pair of [npc.wingSize], feathered, demonic wings push out from the sides of [npc.her] [npc.legConfiguration] body."
-			+ "#ELSE"
-				+ "[npc.She] [npc.verb(bite)] [npc.her] [npc.lip] to try and suppress an unexpected moan of pleasure as a pair of [npc.wingSize], feathered, demonic wings push out from [npc.her] shoulder blades."
-			+ "#ENDIF"
-			+ "<br/>"
-			+ "#IF(npc.isShortStature())"
-				+ "[npc.Name] now [npc.has] [style.boldImp(impish, feathered wings)]."
-			+ "#ELSE"
-				+ "[npc.Name] now [npc.has] [style.boldDemon(demonic, feathered wings)]."
-			+ "#ENDIF",
-			"[npc.sheHasFull] a pair of [npc.wingSize], feathered, demonic wings, which are [npc.materialDescriptor] [npc.wingFullDescription(true)].") {
+			"демонические пернатые",
+			"крыло",
+			"крылья",
+			Util.newArrayListOfValues("демонический", "оперенные"),
+			Util.newArrayListOfValues("демонический", "оперенные"),
+			"#IF(npc.getLegConfiguration().isWingsOnLegConfiguration())[npc.She] [npc.verb(bite)] [npc.her] [npc.lip], пытаясь подавить неожиданный стон удовольствия, когда пара [npc.wingSize], пернатых, демонических крыльев прорывается сквозь бока [npc.her] [npc.legConfiguration] тела.#ELSE[npc.She] [npc.verb(bite)] [npc.her] [npc.lip], пытаясь подавить неожиданный стон удовольствия, когда пара [npc.wingSize], пернатых, демонических крыльев прорывается сквозь [npc.her] лопатки.#ENDIF<br/>#IF(npc.isShortStature())[npc.Name] теперь [npc.has] [style.boldImp(бесподобные, пернатые крылья)].#ELSE[npc.Name] теперь [npc.has] [style.boldDemon(демонические, пернатые крылья)].#ENDIF",
+			"[npc.sheHasFull] пара [npc.wingSize], пернатых, демонических крыльев, которые [npc.materialDescriptor] [npc.wingFullDescription(true)].") {
 	};
 	
 	// Generic:
@@ -117,19 +86,13 @@ public class WingType {
 			BodyCoveringType.WING_LEATHER,
 			Race.NONE,
 			true,
-			"leathery",
-			"wing",
-			"wings",
-			Util.newArrayListOfValues("leathery"),
-			Util.newArrayListOfValues("leathery"),
-			"#IF(npc.getLegConfiguration().isWingsOnLegConfiguration())"
-				+ "[npc.She] [npc.verb(bite)] [npc.her] [npc.lip] to try and suppress an unexpected moan of pleasure as a pair of [npc.wingSize], leathery wings push out from the sides of [npc.her] [npc.legConfiguration] body."
-			+ "#ELSE"
-				+ "[npc.She] [npc.verb(bite)] [npc.her] [npc.lip] to try and suppress an unexpected moan of pleasure as a pair of [npc.wingSize], leathery wings push out from [npc.her] shoulder blades."
-			+ "#ENDIF"
-			+ "<br/>"
-			+ "[npc.Name] now [npc.has] [style.boldTfGeneric(leathery wings)].",
-			"[npc.sheHasFull] a pair of [npc.wingSize], leathery wings, which are [npc.materialDescriptor] [npc.wingFullDescription(true)].") {
+			"кожаные",
+			"крыло",
+			"крылья",
+			Util.newArrayListOfValues("кожаные"),
+			Util.newArrayListOfValues("кожаные"),
+			"#IF(npc.getLegConfiguration().isWingsOnLegConfiguration())[npc.She] [npc.verb(bite)] [npc.her] [npc.lip], пытаясь подавить неожиданный стон удовольствия, когда пара [npc.wingSize], кожистых крыльев прорывается сквозь бока [npc.her] [npc.legConfiguration] тела.#ELSE[npc.She] [npc.verb(bite)] [npc.her] [npc.lip], пытаясь подавить неожиданный стон удовольствия, когда пара [npc.wingSize], кожистых крыльев прорывается сквозь [npc.her] лопатки.#ENDIF<br/>[npc.Name] теперь [npc.has] [style.boldTfGeneric(кожистые крылья)].",
+			"[npc.sheHasFull] пара [npc.wingSize] кожаных крыльев, которые [npc.materialDescriptor] [npc.wingFullDescription(true)].") {
 		@Override
 		public boolean isGeneric() {
 			return true;
@@ -140,19 +103,13 @@ public class WingType {
 			BodyCoveringType.FEATHERS,
 			Race.NONE,
 			true,
-			"feathered",
-			"wing",
-			"wings",
-			Util.newArrayListOfValues("feathered"),
-			Util.newArrayListOfValues("feathered"),
-			"#IF(npc.getLegConfiguration().isWingsOnLegConfiguration())"
-				+ "[npc.She] [npc.verb(bite)] [npc.her] [npc.lip] to try and suppress an unexpected moan of pleasure as a pair of [npc.wingSize], feathered wings push out from the sides of [npc.her] [npc.legConfiguration] body."
-			+ "#ELSE"
-				+ "[npc.She] [npc.verb(bite)] [npc.her] [npc.lip] to try and suppress an unexpected moan of pleasure as a pair of [npc.wingSize], feathered wings push out from [npc.her] shoulder blades."
-			+ "#ENDIF"
-			+ "<br/>"
-			+ "[npc.Name] now [npc.has] [style.boldTfGeneric(feathered wings)].",
-			"[npc.sheHasFull] a pair of [npc.wingSize], feathered wings, which are [npc.materialDescriptor] [npc.wingFullDescription(true)].") {
+			"оперенные",
+			"крыло",
+			"крылья",
+			Util.newArrayListOfValues("оперенные"),
+			Util.newArrayListOfValues("оперенные"),
+			"#IF(npc.getLegConfiguration().isWingsOnLegConfiguration())[npc.She] [npc.verb(bite)] [npc.her] [npc.lip], пытаясь подавить неожиданный стон удовольствия, когда пара [npc.wingSize] пернатых крыльев пробивается сквозь бока [npc.her] [npc.legConfiguration] тела.#ELSE[npc.She] [npc.verb(bite)] [npc.her] [npc.lip], пытаясь подавить неожиданный стон удовольствия, когда пара [npc.wingSize] пернатых крыльев пробивается сквозь [npc.her] лопатки.#ENDIF<br/>[npc.Name] теперь [npc.has] [style.boldTfGeneric(пернатые крылья)].",
+			"[npc.sheHasFull] пара [npc.wingSize] пернатых крыльев, которые [npc.materialDescriptor] [npc.wingFullDescription(true)].") {
 		@Override
 		public boolean isGeneric() {
 			return true;
@@ -163,19 +120,13 @@ public class WingType {
 			BodyCoveringType.WING_CHITIN,
 			Race.NONE,
 			true,
-			"insect",
-			"wing",
-			"wings",
-			Util.newArrayListOfValues("chitinous"),
-			Util.newArrayListOfValues("chitinous"),
-			"#IF(npc.getLegConfiguration().isWingsOnLegConfiguration())"
-				+ "[npc.She] [npc.verb(bite)] [npc.her] [npc.lip] to try and suppress an unexpected moan of pleasure as a pair of [npc.wingSize], insect-like wings push out from the sides of [npc.her] [npc.legConfiguration] body."
-			+ "#ELSE"
-				+ "[npc.She] [npc.verb(bite)] [npc.her] [npc.lip] to try and suppress an unexpected moan of pleasure as a pair of [npc.wingSize], insect-like wings push out from [npc.her] shoulder blades."
-			+ "#ENDIF"
-			+ "<br/>"
-			+ "[npc.Name] now [npc.has] [style.boldTfGeneric(chitinous, insect-like wings)].",
-			"[npc.sheHasFull] a pair of [npc.wingSize], insect-like wings, which are [npc.materialDescriptor] [npc.wingFullDescription(true)].") {
+			"насекомое",
+			"крыло",
+			"крылья",
+			Util.newArrayListOfValues("хитиновая"),
+			Util.newArrayListOfValues("хитиновая"),
+			"#IF(npc.getLegConfiguration().isWingsOnLegConfiguration())[npc.She] [npc.verb(bite)] [npc.her] [npc.lip], пытаясь подавить неожиданный стон удовольствия, когда пара [npc.wingSize] насекомоподобных крыльев пробивается сквозь бока [npc.her] [npc.legConfiguration] тела.#ELSE[npc.She] [npc.verb(bite)] [npc.her] [npc.lip], пытаясь подавить неожиданный стон удовольствия, когда пара [npc.wingSize] насекомоподобных крыльев пробивается сквозь [npc.her] лопатки.#ENDIF<br/>[npc.Name] теперь [npc.has] [style.boldTfGeneric(хитиновые, насекомоподобные крылья)].",
+			"[npc.sheHasFull] пара [npc.wingSize], похожих на насекомых крыльев, которые [npc.materialDescriptor] [npc.wingFullDescription(true)].") {
 		@Override
 		public boolean isGeneric() {
 			return true;
@@ -192,7 +143,7 @@ public class WingType {
 
 		// Modded types:
 		
-		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/race", "bodyParts", null);
+		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/раса", "bodyParts", null);
 		for(Entry<String, Map<String, File>> entry : moddedFilesMap.entrySet()) {
 			for(Entry<String, File> innerEntry : entry.getValue().entrySet()) {
 				if(Util.getXmlRootElementName(innerEntry.getValue()).equals("wing")) {

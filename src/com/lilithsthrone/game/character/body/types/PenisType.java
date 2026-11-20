@@ -29,8 +29,7 @@ public class PenisType {
 	public static AbstractPenisType NONE = new AbstractPenisType(null,
 			Race.NONE,
 			TesticleType.NONE,
-			"[npc.She] [npc.verb(squirm)] and [npc.moansVerb] as [npc.her] cock and balls rapidly shrink away, and within seconds, nothing's left to remind [npc.herHim] of [npc.her] manhood.<br/>"
-				+ "[npc.Name] now [npc.has] [style.boldSex(no penis)].",
+			"[npc.She] [npc.verb(squirm)] и [npc.moansVerb], словно [npc.her] член и яички, стремительно уменьшаются, и через несколько секунд не остается ничего, что напоминало бы [npc.herHim] о [npc.her] мужественности.<br/>[npc.Name] теперь [npc.has] [style.boldSex(no penis)].",
 			"", // Shouldn't need a description of no cock.
 			null) {
 		@Override
@@ -45,66 +44,47 @@ public class PenisType {
 	public static AbstractPenisType DILDO = new AbstractPenisType(BodyCoveringType.DILDO,
 			Race.NONE,
 			TesticleType.DILDO,
-			Util.newArrayListOfValues("dildo"),
-			Util.newArrayListOfValues("dildos"),
-			Util.newArrayListOfValues("dildo"),
-			Util.newArrayListOfValues("dildos"),
-			Util.newArrayListOfValues("rubber", "rubbery", "silicone", "artificial"),
-			"You have somehow transformed your penis into a dildo, which is a bug. (Please let Innoxia know!)", // Dildos are not a transformable option
-			"[npc.She] [npc.is] currently wearing [npc.a_cockGirth], [npc.cockLengthValue] dildo, which is made out of [npc.cockFullDescription(true)].",
+			Util.newArrayListOfValues("дилдо"),
+			Util.newArrayListOfValues("дилдо"),
+			Util.newArrayListOfValues("дилдо"),
+			Util.newArrayListOfValues("дилдо"),
+			Util.newArrayListOfValues("резиновый", "резиновый", "силикон", "искусственный"),
+			"Вы каким-то образом превратили свой член в дилдо, что является багом. (Пожалуйста, сообщите об этом Innoxia!)", // Dildos are not a transformable option
+			"[npc.She] [npc.is] сейчас носит [npc.a_cockGirth], [npc.cockLengthValue] дилдо, сделанное из [npc.cockFullDescription(true)].",
 			null) {
 	};
 	
 	public static AbstractPenisType HUMAN = new AbstractPenisType(BodyCoveringType.PENIS,
 			Race.HUMAN,
 			TesticleType.HUMAN,
-			"[npc.She] now [npc.has] a [style.boldHuman(human penis)], [npc.materialDescriptor] [npc.penisFullDescription(true)].<br/>"
-				+ "[npc.She] [npc.has] [style.boldHuman([npc.ballsCount]#IF(npc.isInternalTesticles()) internal,#ENDIF human balls)],"
-					+ " [npc.materialDescriptor] [npc.ballsFullDescription(true)], which produce [npc.cumColour(true)] [style.boldHuman(human cum)].",
-			"[npc.She] [npc.has] [npc.a_cockGirth], [npc.cockLengthValue] human cock, which is [npc.materialCompositionDescriptor] [npc.cockFullDescription(true)].",
+			"[npc.She] теперь [npc.has] [style.boldHuman(человеческий член)], [npc.materialDescriptor] [npc.penisFullDescription(true)].<br/>[npc.She] [npc.has] [style.boldHuman([npc.ballsCount]#IF(npc.isInternalTesticles()) внутренние,#ENDIF человеческие яички)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], которые производят [npc.cumColour(true)] [style.boldHuman(человеческую сперму)].",
+			"[npc.She] [npc.has] [npc.a_cockGirth], [npc.cockLengthValue] человеческий член, который [npc.materialCompositionDescriptor] [npc.cockFullDescription(true)].",
 			null) {
 	};
 
 	public static AbstractPenisType ANGEL = new AbstractPenisType(BodyCoveringType.PENIS,
 			Race.ANGEL,
 			TesticleType.ANGEL,
-			Util.newArrayListOfValues("angel-"),
-			Util.newArrayListOfValues("angel-"),
-			Util.newArrayListOfValues("angel-"),
-			Util.newArrayListOfValues("angel-"),
+			Util.newArrayListOfValues("ангельский-"),
+			Util.newArrayListOfValues("ангельский-"),
+			Util.newArrayListOfValues("ангельский-"),
+			Util.newArrayListOfValues("ангельский-"),
 			Util.newArrayListOfValues(""),
-			"[npc.She] now [npc.has] an [style.boldAngel(angelic penis)], [npc.materialDescriptor] [npc.penisFullDescription(true)].<br/>"
-				+ "[npc.She] [npc.has] [style.boldAngel([npc.ballsCount]#IF(npc.isInternalTesticles()) internal,#ENDIF angelic balls)],"
-					+ " [npc.materialDescriptor] [npc.ballsFullDescription(true)], which produce [npc.cumColour(true)] [style.boldAngel(angel cum)].",
-			"[npc.She] [npc.has] [npc.a_cockGirth], [npc.cockLengthValue] angel cock, which is [npc.materialCompositionDescriptor] [npc.cockFullDescription(true)].",
+			"[npc.She] теперь [npc.has] [style.boldAngel(ангельский член)], [npc.materialDescriptor] [npc.penisFullDescription(true)].<br/>[npc.She] [npc.has] [style.boldAngel([npc.ballsCount]#IF(npc.isInternalTesticles()) внутренние,#ENDIF ангельские яички)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], которые производят [npc.cumColour(true)] [style.boldAngel(ангельскую сперму)].",
+			"[npc.She] [npc.has] [npc.a_cockGirth], [npc.cockLengthValue] ангельский член, который [npc.materialCompositionDescriptor] [npc.cockFullDescription(true)].",
 			null) {
 	};
 
 	public static AbstractPenisType DEMON_COMMON = new AbstractPenisType(BodyCoveringType.PENIS,
 			Race.DEMON,
 			TesticleType.DEMON_COMMON,
-			Util.newArrayListOfValues("succubus-"),
-			Util.newArrayListOfValues("succubus-"),
-			Util.newArrayListOfValues("incubus-"),
-			Util.newArrayListOfValues("incubus-"),
-			Util.newArrayListOfValues("demonic"),
-			"[npc.She] [npc.verb(squirm)] and [npc.moansVerb] as the skin covering [npc.her] cock transforms into a smooth, highly sensitive demonic counterpart."
-				+ " Slimy precum starts drooling from the tip, and [npc.she] [npc.verb(let)] out [npc.a_moan+] as thick ridges suddenly press out all along its length."
-				+ " As if that wasn't enough, rows of little bumps start to press out and form into little tentacles, which then start wriggling with a mind of their own.<br/>"
-				+ "[npc.She] now [npc.has] a"
-				+ "#IF(npc.isShortStature())"
-					+ " [style.boldImp(impish penis)]"
-				+ "#ELSE"
-					+ " [style.boldDemon(demonic penis)]"
-				+ "#ENDIF"
-				+ ", [npc.materialDescriptor] [npc.penisFullDescription(true)].<br/>"
-				+ "[npc.She] now [npc.has]"
-					+ "#IF(npc.isShortStature())"
-						+ " [style.boldImp([npc.ballsCount]#IF(npc.isInternalTesticles()) internal,#ENDIF impish balls)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], which produce [npc.cumColour(true)] [style.boldImp(imp cum)]."
-					+ "#ELSE"
-						+ " [style.boldDemon([npc.ballsCount]#IF(npc.isInternalTesticles()) internal,#ENDIF demonic balls)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], which produce [npc.cumColour(true)] [style.boldDemon(demon cum)]."
-					+ "#ENDIF",
-			"[npc.She] [npc.has] [npc.a_cockGirth], [npc.cockLengthValue] demonic cock, which is [npc.materialCompositionDescriptor] [npc.cockFullDescription(true)].",
+			Util.newArrayListOfValues("суккуб-"),
+			Util.newArrayListOfValues("суккуб-"),
+			Util.newArrayListOfValues("инкуб-"),
+			Util.newArrayListOfValues("инкуб-"),
+			Util.newArrayListOfValues("демонический"),
+			"[npc.She] [npc.verb(squirm)] и [npc.moansVerb], когда кожа, покрывающая [npc.her] член, превращается в гладкий, сверхчувствительный демонический орган. С кончика начинает сочиться липкая предэякуляционная смазка, и [npc.she] [npc.verb(let)] [npc.a_moan+], когда по всей его длине внезапно проступают толстые рельефные жилы. Как будто этого было мало, ряды маленьких бугорков начинают выпирать и превращаться в крошечные щупальца, которые затем начинают извиваться сами по себе.<br/>[npc.She] теперь [npc.has] #IF(npc.isShortStature()) [style.boldImp(бесовский член)]#ELSE [style.boldDemon(демонический член)]#ENDIF, [npc.materialDescriptor] [npc.penisFullDescription(true)].<br/>[npc.She] теперь [npc.has]#IF(npc.isShortStature()) [style.boldImp([npc.ballsCount]#IF(npc.isInternalTesticles()) внутренние,#ENDIF бесовские яички)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], которые производят [npc.cumColour(true)] [style.boldImp(бесовскую сперму)].#ELSE [style.boldDemon([npc.ballsCount]#IF(npc.isInternalTesticles()) внутренние,#ENDIF демонические яички)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], которые производят [npc.cumColour(true)] [style.boldDemon(демоническую сперму)].#ENDIF",
+			"[npc.She] [npc.has] [npc.a_cockGirth], [npc.cockLengthValue] демонический член, который является [npc.materialCompositionDescriptor] [npc.cockFullDescription(true)].",
 			Util.newArrayListOfValues(
 				PenetrationModifier.RIBBED,
 				PenetrationModifier.TENTACLED,
@@ -114,16 +94,13 @@ public class PenisType {
 	public static AbstractPenisType COW_MORPH = new AbstractPenisType(BodyCoveringType.PENIS,
 			Race.COW_MORPH,
 			TesticleType.BOVINE,
-			Util.newArrayListOfValues("cow-"),
-			Util.newArrayListOfValues("cow-"),
-			Util.newArrayListOfValues("bull-"),
-			Util.newArrayListOfValues("bull-"),
+			Util.newArrayListOfValues("коровий-"),
+			Util.newArrayListOfValues("коровий-"),
+			Util.newArrayListOfValues("бычий-"),
+			Util.newArrayListOfValues("бычий-"),
 			Util.newArrayListOfValues(""),
-			"Letting out an involuntary moan, [npc.name] [npc.verb(feel)] [npc.her] penis shifting into a new form, and [npc.sheIs] hit by a wave of overwhelming arousal as [npc.her] shaft grows wider and the head tapers down into a point.<br/>"
-				+ "[npc.She] now [npc.has] a [style.boldCowMorph(bovine penis)], [npc.materialDescriptor] [npc.penisFullDescription].<br/>"
-				+ "[npc.She] [npc.has] [style.boldCowMorph([npc.ballsCount]#IF(npc.isInternalTesticles()) internal,#ENDIF bovine balls)],"
-					+ " [npc.materialDescriptor] [npc.ballsFullDescription(true)], which produce [npc.cumColour(true)] [style.boldCowMorph(bovine cum)].",
-			"[npc.She] [npc.has] [npc.a_cockGirth], [npc.cockLengthValue] #IF(npc.isFeminine())cow#ELSEbull#ENDIF cock, which is [npc.materialCompositionDescriptor] [npc.cockFullDescription(true)].",
+			"Издавая непроизвольный стон, [npc.name] [npc.verb(feel)] [npc.her] пенис принимает новую форму, и [npc.sheIs] накрывает волна непреодолимого возбуждения, когда [npc.her] ствол становится шире, а головка сужается к кончику.<br/>[npc.She] теперь [npc.has] [style.boldCowMorph(бычий пенис)], [npc.materialDescriptor] [npc.penisFullDescription].<br/>[npc.She] [npc.has] [style.boldCowMorph([npc.ballsCount]#IF(npc.isInternalTesticles()) внутренние,#ENDIF бычьи яички)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], которые производят [npc.cumColour(true)] [style.boldCowMorph(бычью сперму)].",
+			"[npc.She] [npc.has] [npc.a_cockGirth], [npc.cockLengthValue] #IF(npc.isFeminine())коровье#ELSEбычье#ENDIF член, который является [npc.materialCompositionDescriptor] [npc.cockFullDescription(true)].",
 			Util.newArrayListOfValues(
 				PenetrationModifier.TAPERED,
 				PenetrationModifier.VEINY,
@@ -133,17 +110,13 @@ public class PenisType {
 	public static AbstractPenisType DOG_MORPH = new AbstractPenisType(BodyCoveringType.PENIS,
 			Race.DOG_MORPH,
 			TesticleType.CANINE,
-			Util.newArrayListOfValues("dog-", "bitch-"),
-			Util.newArrayListOfValues("dog-", "bitch-"),
-			Util.newArrayListOfValues("dog-"),
-			Util.newArrayListOfValues("dog-"),
-			Util.newArrayListOfValues("canine"),
-			"Letting out an involuntary moan, [npc.name] [npc.verb(feel)] [npc.her] penis shifting into a new form, and [npc.sheIs] hit by a wave of overwhelming arousal as a thick knot suddenly presses out at the base of [npc.her] shaft."
-				+ " As [npc.she] [npc.verb(pant)] and [npc.verb(gasp)] for air, the tip of [npc.her] cock narrows down as it tapers into its new form.<br/>"
-				+ "[npc.She] now [npc.has] a [style.boldDogMorph(canine penis)], [npc.materialDescriptor] [npc.penisFullDescription(true)].<br/>"
-				+ "[npc.She] [npc.has] [style.boldDogMorph([npc.ballsCount]#IF(npc.isInternalTesticles()) internal,#ENDIF canine balls)],"
-					+ " [npc.materialDescriptor] [npc.ballsFullDescription(true)], which produce [npc.cumColour(true)] [style.boldDogMorph(canine cum)].",
-			"[npc.She] [npc.has] [npc.a_cockGirth], [npc.cockLengthValue] dog cock, which is [npc.materialCompositionDescriptor] [npc.cockFullDescription(true)].",
+			Util.newArrayListOfValues("собачий-", "сучья-"),
+			Util.newArrayListOfValues("собачий-", "сучья-"),
+			Util.newArrayListOfValues("собачий-"),
+			Util.newArrayListOfValues("собачий-"),
+			Util.newArrayListOfValues("пёсьи"),
+			"Издавая невольный стон, [npc.name] [npc.verb(feel)] [npc.her] пенис принимает новую форму, и [npc.sheIs] накрывает волна непреодолимого возбуждения, когда у основания [npc.her] ствола внезапно проступает толстое утолщение. Пока [npc.she] [npc.verb(pant)] и [npc.verb(gasp)], жадно хватая ртом воздух, головка [npc.her] члена сужается, переходя в свою новую форму.<br/>[npc.She] теперь [npc.has] [style.boldDogMorph(собачий пенис)], [npc.materialDescriptor] [npc.penisFullDescription(true)].<br/>[npc.She] [npc.has] [style.boldDogMorph([npc.ballsCount]#IF(npc.isInternalTesticles()) внутренние,#ENDIF собачьи яички)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], которые производят [npc.cumColour(true)] [style.boldDogMorph(собачью сперму)].",
+			"[npc.She] [npc.has] [npc.a_cockGirth], [npc.cockLengthValue] собачий член, который является [npc.materialCompositionDescriptor] [npc.cockFullDescription(true)].",
 			Util.newArrayListOfValues(
 				PenetrationModifier.KNOTTED,
 				PenetrationModifier.SHEATHED,
@@ -160,17 +133,13 @@ public class PenisType {
 	public static AbstractPenisType WOLF_MORPH = new AbstractPenisType(BodyCoveringType.PENIS,
 			Race.WOLF_MORPH,
 			TesticleType.LUPINE,
-			Util.newArrayListOfValues("wolf-"),
-			Util.newArrayListOfValues("wolf-"),
-			Util.newArrayListOfValues("wolf-"),
-			Util.newArrayListOfValues("wolf-"),
-			Util.newArrayListOfValues("lupine"),
-			"Letting out an involuntary moan, [npc.name] [npc.verb(feel)] [npc.her] penis shifting into a new form, and [npc.sheIs] hit by a wave of overwhelming arousal as a thick knot suddenly presses out at the base of [npc.her] shaft."
-				+ " As [npc.she] [npc.verb(pant)] and [npc.verb(gasp)] for air, the tip of [npc.her] cock narrows down as it tapers into its new form.<br/>"
-				+ "[npc.She] now [npc.has] a [style.boldWolfMorph(wolf-like penis)], [npc.materialDescriptor] [npc.penisFullDescription(true)].<br/>"
-				+ "[npc.She] [npc.has] [style.boldWolfMorph([npc.ballsCount]#IF(npc.isInternalTesticles()) internal,#ENDIF lupine balls)],"
-					+ " [npc.materialDescriptor] [npc.ballsFullDescription(true)], which produce [npc.cumColour(true)] [style.boldWolfMorph(wolf cum)].",
-			"[npc.She] [npc.has] [npc.a_cockGirth], [npc.cockLengthValue] wolf cock, which is [npc.materialCompositionDescriptor] [npc.cockFullDescription(true)].",
+			Util.newArrayListOfValues("волчья-"),
+			Util.newArrayListOfValues("волчья-"),
+			Util.newArrayListOfValues("волчья-"),
+			Util.newArrayListOfValues("волчья-"),
+			Util.newArrayListOfValues("волчий"),
+			"Издавая непроизвольный стон, [npc.name] [npc.verb(feel)] [npc.her] пенис, принимающий новую форму, и [npc.sheIs] накрывает волна непреодолимого возбуждения, когда у основания [npc.her] ствола внезапно проступает толстое утолщение. Пока [npc.she] [npc.verb(pant)] и [npc.verb(gasp)], жадно хватая ртом воздух, головка [npc.her] члена сужается, переходя в свою новую форму.<br/>[npc.She] теперь [npc.has] [style.boldWolfMorph(волчий пенис)], [npc.materialDescriptor] [npc.penisFullDescription(true)].<br/>[npc.She] [npc.has] [style.boldWolfMorph([npc.ballsCount]#IF(npc.isInternalTesticles()) внутренние,#ENDIF волчьи яички)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], которые производят [npc.cumColour(true)] [style.boldWolfMorph(волчью сперму)].",
+			"[npc.She] [npc.has] [npc.a_cockGirth], [npc.cockLengthValue] волчий член, который является [npc.materialCompositionDescriptor] [npc.cockFullDescription(true)].",
 			Util.newArrayListOfValues(
 				PenetrationModifier.KNOTTED,
 				PenetrationModifier.SHEATHED,
@@ -187,17 +156,13 @@ public class PenisType {
 	public static AbstractPenisType FOX_MORPH = new AbstractPenisType(BodyCoveringType.PENIS,
 			Race.FOX_MORPH,
 			TesticleType.FOX_MORPH,
-			Util.newArrayListOfValues("fox-", "vixen-"),
-			Util.newArrayListOfValues("fox-", "vixen-"),
-			Util.newArrayListOfValues("fox-"),
-			Util.newArrayListOfValues("fox-"),
-			Util.newArrayListOfValues("vulpine"),
-			"Letting out an involuntary moan, [npc.name] [npc.verb(feel)] [npc.her] penis shifting into a new form, and [npc.sheIs] hit by a wave of overwhelming arousal as a thick knot suddenly presses out at the base of [npc.her] shaft."
-				+ " As [npc.she] [npc.verb(pant)] and [npc.verb(gasp)] for air, the tip of [npc.her] cock narrows down as it tapers into its new form.<br/>"
-				+ "[npc.She] now [npc.has] a [style.boldFoxMorph(fox-like penis)], [npc.materialDescriptor] [npc.penisFullDescription(true)].<br/>"
-				+ "[npc.She] [npc.has] [style.boldFoxMorph([npc.ballsCount]#IF(npc.isInternalTesticles()) internal,#ENDIF vulpine balls)],"
-					+ " [npc.materialDescriptor] [npc.ballsFullDescription(true)], which produce [npc.cumColour(true)] [style.boldFoxMorph(fox cum)].",
-			"[npc.She] [npc.has] [npc.a_cockGirth], [npc.cockLengthValue] fox cock, which is [npc.materialCompositionDescriptor] [npc.cockFullDescription(true)].",
+			Util.newArrayListOfValues("лисья-", "лисичья-"),
+			Util.newArrayListOfValues("лисья-", "лисичья-"),
+			Util.newArrayListOfValues("лисья-"),
+			Util.newArrayListOfValues("лисья-"),
+			Util.newArrayListOfValues("лисьи"),
+			"Издавая непроизвольный стон, [npc.name] [npc.verb(feel)] [npc.her] пенис принимает новую форму, и [npc.sheIs] накрывает волна непреодолимого возбуждения, когда у основания [npc.her] ствола внезапно проступает толстое утолщение. Пока [npc.she] [npc.verb(pant)] и [npc.verb(gasp)], жадно хватая ртом воздух, головка [npc.her] члена сужается, переходя в свою новую форму.<br/>[npc.She] теперь [npc.has] [style.boldFoxMorph(лисий пенис)], [npc.materialDescriptor] [npc.penisFullDescription(true)].<br/>[npc.She] [npc.has] [style.boldFoxMorph([npc.ballsCount]#IF(npc.isInternalTesticles()) внутренние,#ENDIF лисьи яички)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], которые производят [npc.cumColour(true)] [style.boldFoxMorph(лисью сперму)].",
+			"[npc.She] [npc.has] [npc.a_cockGirth], [npc.cockLengthValue] лисий член, который является [npc.materialCompositionDescriptor] [npc.cockFullDescription(true)].",
 			Util.newArrayListOfValues(
 				PenetrationModifier.KNOTTED,
 				PenetrationModifier.SHEATHED,
@@ -214,17 +179,13 @@ public class PenisType {
 	public static AbstractPenisType CAT_MORPH = new AbstractPenisType(BodyCoveringType.PENIS,
 			Race.CAT_MORPH,
 			TesticleType.FELINE,
-			Util.newArrayListOfValues("cat-"),
-			Util.newArrayListOfValues("cat-"),
-			Util.newArrayListOfValues("cat-"),
-			Util.newArrayListOfValues("cat-"),
-			Util.newArrayListOfValues("feline"),
-			"Letting out an involuntary moan, [npc.she] [npc.verb(feel)] [npc.her] penis shifting into a new form,"
-					+ " and [npc.sheIs] hit by a wave of overwhelming arousal as rows of fleshy little backwards-facing barbs press out all along [npc.her] shaft.<br/>"
-				+ "[npc.She] now [npc.has] a [style.boldCatMorph(feline penis)], [npc.materialDescriptor] [npc.penisFullDescription(true)].<br/>"
-				+ "[npc.She] [npc.has] [style.boldCatMorph([npc.ballsCount]#IF(npc.isInternalTesticles()) internal,#ENDIF feline balls)],"
-					+ " [npc.materialDescriptor] [npc.ballsFullDescription(true)], which produce [npc.cumColour(true)] [style.boldCatMorph(feline cum)].",
-			"[npc.She] [npc.has] [npc.a_cockGirth], [npc.cockLengthValue] cat cock, which is [npc.materialCompositionDescriptor] [npc.cockFullDescription(true)].",
+			Util.newArrayListOfValues("кошачья-"),
+			Util.newArrayListOfValues("кошачья-"),
+			Util.newArrayListOfValues("кошачья-"),
+			Util.newArrayListOfValues("кошачья-"),
+			Util.newArrayListOfValues("кошачьими"),
+			"Издавая непроизвольный стон, [npc.she] [npc.verb(feel)] [npc.her] пенис принимает новую форму, и [npc.sheIs] накрывает волна всепоглощающего возбуждения, когда ряды плотских маленьких загнутых назад шипов проступают по всей длине [npc.her] ствола.<br/>[npc.She] теперь [npc.has] [style.boldCatMorph(кошачий пенис)], [npc.materialDescriptor] [npc.penisFullDescription(true)].<br/>[npc.She] [npc.has] [style.boldCatMorph([npc.ballsCount]#IF(npc.isInternalTesticles()) внутренние,#ENDIF кошачьи яички)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], которые производят [npc.cumColour(true)] [style.boldCatMorph(кошачья сперма)].",
+			"[npc.She] [npc.has] [npc.a_cockGirth], [npc.cockLengthValue] кошачий член, который является [npc.materialCompositionDescriptor] [npc.cockFullDescription(true)].",
 			Util.newArrayListOfValues(
 				PenetrationModifier.BARBED,
 				PenetrationModifier.SHEATHED)) {
@@ -233,16 +194,13 @@ public class PenisType {
 	public static AbstractPenisType ALLIGATOR_MORPH = new AbstractPenisType(BodyCoveringType.PENIS,
 			Race.ALLIGATOR_MORPH,
 			TesticleType.ALLIGATOR_MORPH,
-			Util.newArrayListOfValues("alligator-"),
-			Util.newArrayListOfValues("alligator-"),
-			Util.newArrayListOfValues("alligator-"),
-			Util.newArrayListOfValues("alligator-"),
-			Util.newArrayListOfValues("reptilian"),
-			"Letting out an involuntary moan, [npc.name] [npc.verb(feel)] [npc.her] penis shifting into a new form, and [npc.sheIs] hit by a wave of overwhelming arousal as [npc.her] shaft grows erect and the head smoothes over.<br/>"
-				+ "[npc.She] now [npc.has] an [style.boldGatorMorph(alligator penis)], [npc.materialDescriptor] [npc.penisFullDescription].<br/>"
-				+ "[npc.She] [npc.has] [style.boldGatorMorph([npc.ballsCount]#IF(npc.isInternalTesticles()) internal,#ENDIF reptilian balls)],"
-						+ " [npc.materialDescriptor] [npc.ballsFullDescription(true)], which produce [npc.cumColour(true)] [style.boldGatorMorph(alligator-morph cum)].",
-			"[npc.She] [npc.has] [npc.a_cockGirth], [npc.cockLengthValue] alligator cock, which is [npc.materialCompositionDescriptor] [npc.cockFullDescription(true)].",
+			Util.newArrayListOfValues("аллигаторийский-"),
+			Util.newArrayListOfValues("аллигаторийский-"),
+			Util.newArrayListOfValues("аллигаторийский-"),
+			Util.newArrayListOfValues("аллигаторийский-"),
+			Util.newArrayListOfValues("рептилоидные"),
+			"Издавая непроизвольный стон, [npc.name] [npc.verb(feel)] [npc.her] пенис принимает новую форму, и [npc.sheIs] накрывает волна всепоглощающего возбуждения, когда [npc.her] ствол становится эрегированным, а головка разглаживается.<br/>[npc.She] теперь [npc.has] [style.boldGatorMorph(аллигаторий пенис)], [npc.materialDescriptor] [npc.penisFullDescription].<br/>[npc.She] [npc.has] [style.boldGatorMorph([npc.ballsCount]#IF(npc.isInternalTesticles()) внутренние,#ENDIF рептильные яички)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], которые производят [npc.cumColour(true)] [style.boldGatorMorph(аллигаторий сперма)].",
+			"[npc.She] [npc.has] [npc.a_cockGirth], [npc.cockLengthValue] аллигаторовый член, который является [npc.materialCompositionDescriptor] [npc.cockFullDescription(true)].",
 			Util.newArrayListOfValues(
 				PenetrationModifier.BLUNT)) {
 	};
@@ -250,16 +208,13 @@ public class PenisType {
 	public static AbstractPenisType EQUINE = new AbstractPenisType(BodyCoveringType.PENIS,
 			Race.HORSE_MORPH,
 			TesticleType.EQUINE,
-			Util.newArrayListOfValues("mare-", "#IF(npc.getRace()==npc.getPenisRace())[npc.raceFeral]#ELSE[npc.cockRaceFeral]#ENDIF-", "equine-"),
-			Util.newArrayListOfValues("mare-", "#IF(npc.getRace()==npc.getPenisRace())[npc.raceFeral]#ELSE[npc.cockRaceFeral]#ENDIF-", "equine-"),
-			Util.newArrayListOfValues("stallion-", "#IF(npc.getRace()==npc.getPenisRace())[npc.raceFeral]#ELSE[npc.cockRaceFeral]#ENDIF-", "equine-"),
-			Util.newArrayListOfValues("stallion-", "#IF(npc.getRace()==npc.getPenisRace())[npc.raceFeral]#ELSE[npc.cockRaceFeral]#ENDIF-", "equine-"),
+			Util.newArrayListOfValues("кобылий-", "#IF(npc.getRace()==npc.getPenisRace())[npc.raceFeral]#ELSE[npc.cockRaceFeral]#ENDIF-", "конский-"),
+			Util.newArrayListOfValues("кобылий-", "#IF(npc.getRace()==npc.getPenisRace())[npc.raceFeral]#ELSE[npc.cockRaceFeral]#ENDIF-", "конский-"),
+			Util.newArrayListOfValues("жеребцовый-", "#IF(npc.getRace()==npc.getPenisRace())[npc.raceFeral]#ELSE[npc.cockRaceFeral]#ENDIF-", "конский-"),
+			Util.newArrayListOfValues("жеребцовый-", "#IF(npc.getRace()==npc.getPenisRace())[npc.raceFeral]#ELSE[npc.cockRaceFeral]#ENDIF-", "конский-"),
 			Util.newArrayListOfValues(""),
-			"Letting out an involuntary moan, [npc.name] [npc.verb(feel)] [npc.her] penis shifting into a new form, and [npc.sheIs] hit by a wave of overwhelming arousal as [npc.her] shaft grows wider and the head flattens down.<br/>"
-				+ "[npc.She] now [npc.has] an [style.boldHorseMorph(equine penis)], [npc.materialDescriptor] [npc.penisFullDescription(true)].<br/>"
-				+ "[npc.She] [npc.has] [style.boldHorseMorph([npc.ballsCount]#IF(npc.isInternalTesticles()) internal,#ENDIF equine balls)],"
-					+ " [npc.materialDescriptor] [npc.ballsFullDescription(true)], which produce [npc.cumColour(true)] [style.boldHorseMorph(equine cum)].",
-			"[npc.She] [npc.has] [npc.a_cockGirth], [npc.cockLengthValue] horse cock, which is [npc.materialCompositionDescriptor] [npc.cockFullDescription(true)].",
+			"Издавая непроизвольный стон, [npc.name] [npc.verb(feel)] [npc.her] член принимает новую форму, и [npc.sheIs] накрывает волна непреодолимого возбуждения, когда [npc.her] ствол становится шире, а головка уплощается.<br/>[npc.She] теперь [npc.has] [style.boldHorseMorph(лошадиный член)], [npc.materialDescriptor] [npc.penisFullDescription(true)].<br/>[npc.She] [npc.has] [style.boldHorseMorph([npc.ballsCount]#IF(npc.isInternalTesticles()) внутренние,#ENDIF лошадиные яички)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], которые производят [npc.cumColour(true)] [style.boldHorseMorph(лошадиную сперму)].",
+			"[npc.She] [npc.has] [npc.a_cockGirth], [npc.cockLengthValue] лошадиный член, который является [npc.materialCompositionDescriptor] [npc.cockFullDescription(true)].",
 			Util.newArrayListOfValues(
 				PenetrationModifier.FLARED,
 				PenetrationModifier.VEINY,
@@ -269,16 +224,13 @@ public class PenisType {
 	public static AbstractPenisType REINDEER_MORPH = new AbstractPenisType(BodyCoveringType.PENIS,
 			Race.REINDEER_MORPH,
 			TesticleType.REINDEER_MORPH,
-			Util.newArrayListOfValues("reindeer-"),
-			Util.newArrayListOfValues("reindeer-"),
-			Util.newArrayListOfValues("reindeer-"),
-			Util.newArrayListOfValues("reindeer-"),
+			Util.newArrayListOfValues("олений-"),
+			Util.newArrayListOfValues("олений-"),
+			Util.newArrayListOfValues("олений-"),
+			Util.newArrayListOfValues("олений-"),
 			Util.newArrayListOfValues(""),
-			"Letting out an involuntary moan, [npc.name] [npc.verb(feel)] [npc.her] penis shifting into a new form, and [npc.sheIs] hit by a wave of overwhelming arousal as [npc.her] shaft grows wider and the head flattens down.<br/>"
-				+ "[npc.She] now [npc.has] an [style.boldReindeerMorph(reindeer-like penis)], [npc.materialDescriptor] [npc.penisFullDescription(true)].<br/>"
-				+ "[npc.She] [npc.has] [style.boldReindeerMorph([npc.ballsCount]#IF(npc.isInternalTesticles()) internal,#ENDIF reindeer balls)],"
-					+ " [npc.materialDescriptor] [npc.ballsFullDescription(true)], which produce [npc.cumColour(true)] [style.boldReindeerMorph(reindeer cum)].",
-			"[npc.She] [npc.has] [npc.a_cockGirth], [npc.cockLengthValue] reindeer cock, which is [npc.materialCompositionDescriptor] [npc.cockFullDescription(true)].",
+			"Издавая невольный стон, [npc.name] [npc.verb(feel)] [npc.her] пенис принимает новую форму, и [npc.sheIs] накрывает волна непреодолимого Возбуждения, пока ствол [npc.her] становится шире, а головка уплощается.<br/>[npc.She] теперь [npc.has] [style.boldReindeerMorph(олений пенис)], [npc.materialDescriptor] [npc.penisFullDescription(true)].<br/>[npc.She] [npc.has] [style.boldReindeerMorph([npc.ballsCount]#IF(npc.isInternalTesticles()) внутренние,#ENDIF оленьи яички)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], которые производят [npc.cumColour(true)] [style.boldReindeerMorph(оленью сперму)].",
+			"[npc.She] [npc.has] [npc.a_cockGirth], [npc.cockLengthValue] олений член, который является [npc.materialCompositionDescriptor] [npc.cockFullDescription(true)].",
 			Util.newArrayListOfValues(
 				PenetrationModifier.TAPERED,
 				PenetrationModifier.SHEATHED)) {
@@ -287,15 +239,13 @@ public class PenisType {
 	public static AbstractPenisType HARPY = new AbstractPenisType(BodyCoveringType.PENIS,
 			Race.HARPY,
 			TesticleType.AVIAN,
-			Util.newArrayListOfValues("harpy-"),
-			Util.newArrayListOfValues("harpy-"),
-			Util.newArrayListOfValues("harpy-"),
-			Util.newArrayListOfValues("harpy-"),
-			Util.newArrayListOfValues("avian"),
-			"Letting out an involuntary moan, [npc.name] [npc.verb(feel)] [npc.her] penis shifting into a new form, and [npc.sheIs] hit by a wave of overwhelming arousal as it retreats down into a new sheath that's formed at the base.<br/>"
-				+ "[npc.She] now [npc.has] an [style.boldHarpy(avian penis)], [npc.materialDescriptor] [npc.penisFullDescription(true)].<br/>"
-				+ "[npc.She] [npc.has] [style.boldHarpy([npc.ballsCount]#IF(npc.isInternalTesticles()) internal,#ENDIF avian balls)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], which produce [npc.cumColour(true)] [style.boldHarpy(bird cum)].",
-			"[npc.She] [npc.has] [npc.a_cockGirth], [npc.cockLengthValue] bird cock, which is [npc.materialCompositionDescriptor] [npc.cockFullDescription(true)].",
+			Util.newArrayListOfValues("гарпии-"),
+			Util.newArrayListOfValues("гарпии-"),
+			Util.newArrayListOfValues("гарпии-"),
+			Util.newArrayListOfValues("гарпии-"),
+			Util.newArrayListOfValues("птичий"),
+			"Издавая невольный стон, [npc.name] [npc.verb(feel)] [npc.her] пенис принимает новую форму, и [npc.sheIs] накрывает волна непреодолимого Возбуждения, когда он втягивается в новую препуцию, сформировавшуюся у основания.<br/>[npc.She] теперь [npc.has] [style.boldHarpy(птичий пенис)], [npc.materialDescriptor] [npc.penisFullDescription(true)].<br/>[npc.She] [npc.has] [style.boldHarpy([npc.ballsCount]#IF(npc.isInternalTesticles()) внутренние,#ENDIF птичьи яички)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], которые производят [npc.cumColour(true)] [style.boldHarpy(птичью сперму)].",
+			"[npc.She] [npc.has] [npc.a_cockGirth], [npc.cockLengthValue] птичий член, который [npc.materialCompositionDescriptor] [npc.cockFullDescription(true)].",
 			Util.newArrayListOfValues(
 				PenetrationModifier.SHEATHED)) {
 	};
@@ -303,15 +253,13 @@ public class PenisType {
 	public static AbstractPenisType SQUIRREL_MORPH = new AbstractPenisType(BodyCoveringType.PENIS,
 			Race.SQUIRREL_MORPH,
 			TesticleType.SQUIRREL,
-			Util.newArrayListOfValues("squirrel-"),
-			Util.newArrayListOfValues("squirrel-"),
-			Util.newArrayListOfValues("squirrel-"),
-			Util.newArrayListOfValues("squirrel-"),
-			Util.newArrayListOfValues("rodent"),
-			"[npc.She] now [npc.has] a [style.boldSquirrelMorph(squirrel-morph's penis)], [npc.materialDescriptor] [npc.penisFullDescription(true)].<br/>"
-				+ "[npc.She] [npc.has] [style.boldSquirrelMorph([npc.ballsCount]#IF(npc.isInternalTesticles()) internal,#ENDIF squirrel balls)],"
-					+ " [npc.materialDescriptor] [npc.ballsFullDescription(true)], which produce [npc.cumColour(true)] [style.boldSquirrelMorph(squirrel cum)].",
-			"[npc.She] [npc.has] [npc.a_cockGirth], [npc.cockLengthValue] squirrel cock, which is [npc.materialCompositionDescriptor] [npc.cockFullDescription(true)].",
+			Util.newArrayListOfValues("беличий-"),
+			Util.newArrayListOfValues("беличий-"),
+			Util.newArrayListOfValues("беличий-"),
+			Util.newArrayListOfValues("беличий-"),
+			Util.newArrayListOfValues("грызуний"),
+			"[npc.She] теперь [npc.has] [style.boldSquirrelMorph(пенис белки)], [npc.materialDescriptor] [npc.penisFullDescription(true)].<br/>[npc.She] [npc.has] [style.boldSquirrelMorph([npc.ballsCount]#IF(npc.isInternalTesticles()) внутренние,#ENDIF беличьи яички)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], которые производят [npc.cumColour(true)] [style.boldSquirrelMorph(беличью сперму)].",
+			"[npc.She] [npc.has] [npc.a_cockGirth], [npc.cockLengthValue] беличий член, который [npc.materialCompositionDescriptor] [npc.cockFullDescription(true)].",
 			Util.newArrayListOfValues(
 				PenetrationModifier.SHEATHED)) {
 	};
@@ -319,15 +267,13 @@ public class PenisType {
 	public static AbstractPenisType RAT_MORPH = new AbstractPenisType(BodyCoveringType.PENIS,
 			Race.RAT_MORPH,
 			TesticleType.RAT_MORPH,
-			Util.newArrayListOfValues("rat-"),
-			Util.newArrayListOfValues("rat-"),
-			Util.newArrayListOfValues("rat-"),
-			Util.newArrayListOfValues("rat-"),
+			Util.newArrayListOfValues("крысиный-"),
+			Util.newArrayListOfValues("крысиный-"),
+			Util.newArrayListOfValues("крысиный-"),
+			Util.newArrayListOfValues("крысиный-"),
 			Util.newArrayListOfValues(""),
-			"[npc.She] now [npc.has] a [style.boldRatMorph(rat penis)], [npc.materialDescriptor] [npc.penisFullDescription(true)].<br/>"
-				+ "[npc.She] [npc.has] [style.boldRatMorph([npc.ballsCount]#IF(npc.isInternalTesticles()) internal,#ENDIF rat balls)], [npc.materialDescriptor] [npc.ballsFullDescription(true)],"
-					+ " which produce [npc.cumColour(true)] [style.boldRatMorph(rat cum)].",
-			"[npc.She] [npc.has] [npc.a_cockGirth], [npc.cockLengthValue] rat cock, which is [npc.materialCompositionDescriptor] [npc.cockFullDescription(true)].",
+			"[npc.She] теперь [npc.has] [style.boldRatMorph(пенис крысы)], [npc.materialDescriptor] [npc.penisFullDescription(true)].<br/>[npc.She] [npc.has] [style.boldRatMorph([npc.ballsCount]#IF(npc.isInternalTesticles()) внутренние,#ENDIF крысиные яички)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], которые производят [npc.cumColour(true)] [style.boldRatMorph(крысиную сперму)].",
+			"[npc.She] [npc.has] [npc.a_cockGirth], [npc.cockLengthValue] крысиный член, который [npc.materialCompositionDescriptor] [npc.cockFullDescription(true)].",
 			Util.newArrayListOfValues(
 				PenetrationModifier.SHEATHED)) {
 	};
@@ -335,15 +281,13 @@ public class PenisType {
 	public static AbstractPenisType RABBIT_MORPH = new AbstractPenisType(BodyCoveringType.PENIS,
 			Race.RABBIT_MORPH,
 			TesticleType.RABBIT_MORPH,
-			Util.newArrayListOfValues("rabbit-"),
-			Util.newArrayListOfValues("rabbit-"),
-			Util.newArrayListOfValues("rabbit-"),
-			Util.newArrayListOfValues("rabbit-"),
+			Util.newArrayListOfValues("кроличий-"),
+			Util.newArrayListOfValues("кроличий-"),
+			Util.newArrayListOfValues("кроличий-"),
+			Util.newArrayListOfValues("кроличий-"),
 			Util.newArrayListOfValues(""),
-			"[npc.She] now [npc.has] a [style.boldRabbitMorph(rabbit penis)], [npc.materialDescriptor] [npc.penisFullDescription(true)].<br/>"
-				+ "[npc.She] [npc.has] [style.boldRabbitMorph([npc.ballsCount]#IF(npc.isInternalTesticles()) internal,#ENDIF rabbit balls)],"
-					+ " [npc.materialDescriptor] [npc.ballsFullDescription(true)], which produce [npc.cumColour(true)] [style.boldRabbitMorph(rabbit cum)].",
-			"[npc.She] [npc.has] [npc.a_cockGirth], [npc.cockLengthValue] rabbit cock, which is [npc.materialCompositionDescriptor] [npc.cockFullDescription(true)].",
+			"[npc.She] теперь [npc.has] [style.boldRabbitMorph(кроличий пенис)], [npc.materialDescriptor] [npc.penisFullDescription(true)].<br/>[npc.She] [npc.has] [style.boldRabbitMorph([npc.ballsCount]#IF(npc.isInternalTesticles()) внутренние,#ENDIF кроличьи яички)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], которые производят [npc.cumColour(true)] [style.boldRabbitMorph(кроличий сперма)].",
+			"[npc.She] [npc.has] [npc.a_cockGirth], [npc.cockLengthValue] кроличий член, который [npc.materialCompositionDescriptor] [npc.cockFullDescription(true)].",
 			Util.newArrayListOfValues(
 				PenetrationModifier.SHEATHED)) {
 	};
@@ -351,15 +295,13 @@ public class PenisType {
 	public static AbstractPenisType BAT_MORPH = new AbstractPenisType(BodyCoveringType.PENIS,
 			Race.BAT_MORPH,
 			TesticleType.BAT_MORPH,
-			Util.newArrayListOfValues("bat-"),
-			Util.newArrayListOfValues("bat-"),
-			Util.newArrayListOfValues("bat-"),
-			Util.newArrayListOfValues("bat-"),
+			Util.newArrayListOfValues("летучий-"),
+			Util.newArrayListOfValues("летучий-"),
+			Util.newArrayListOfValues("летучий-"),
+			Util.newArrayListOfValues("летучий-"),
 			Util.newArrayListOfValues(""),
-			"[npc.She] now [npc.has] a [style.boldBatMorph(bat penis)], [npc.materialDescriptor] [npc.penisFullDescription(true)].<br/>"
-				+ "[npc.She] [npc.has] [style.boldBatMorph([npc.ballsCount]#IF(npc.isInternalTesticles()) internal,#ENDIF bat balls)],"
-					+ " [npc.materialDescriptor] [npc.ballsFullDescription(true)], which produce [npc.cumColour(true)] [style.boldBatMorph(bat cum)].",
-			"[npc.She] [npc.has] [npc.a_cockGirth], [npc.cockLengthValue] bat cock, which is [npc.materialCompositionDescriptor] [npc.cockFullDescription(true)].",
+			"[npc.She] теперь [npc.has] [style.boldBatMorph(летучий пенис)], [npc.materialDescriptor] [npc.penisFullDescription(true)].<br/>[npc.She] [npc.has] [style.boldBatMorph([npc.ballsCount]#IF(npc.isInternalTesticles()) внутренние,#ENDIF летучие яички)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], которые производят [npc.cumColour(true)] [style.boldBatMorph(летучая сперма)].",
+			"[npc.She] [npc.has] [npc.a_cockGirth], [npc.cockLengthValue] летучий член, который [npc.materialCompositionDescriptor] [npc.cockFullDescription(true)].",
 			Util.newArrayListOfValues(
 				PenetrationModifier.SHEATHED)) {
 	};
@@ -374,7 +316,7 @@ public class PenisType {
 
 		// Modded types:
 		
-		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/race", "bodyParts", null);
+		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/раса", "bodyParts", null);
 		for(Entry<String, Map<String, File>> entry : moddedFilesMap.entrySet()) {
 			for(Entry<String, File> innerEntry : entry.getValue().entrySet()) {
 				if(Util.getXmlRootElementName(innerEntry.getValue()).equals("penis")) {

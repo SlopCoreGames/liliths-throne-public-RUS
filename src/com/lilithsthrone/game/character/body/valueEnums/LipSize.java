@@ -17,7 +17,7 @@ public enum LipSize {
 	FOUR_HUGE(4, "huge", PresetColour.GENERIC_SIZE_FIVE, false),
 	FIVE_MASSIVE(5, "massive", PresetColour.GENERIC_SIZE_SIX, false),
 	SIX_GIGANTIC(6, "gigantic", PresetColour.GENERIC_SIZE_SEVEN, true),
-	SEVEN_ABSURD(7, "absurdly colossal", PresetColour.GENERIC_SIZE_EIGHT, true);
+	SEVEN_ABSURD(7, "абсурдно колоссальный", PresetColour.GENERIC_SIZE_EIGHT, true);
 	
 	
 	private int value;

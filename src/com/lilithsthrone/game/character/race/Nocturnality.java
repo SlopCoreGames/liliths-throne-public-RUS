@@ -13,16 +13,16 @@ import com.lilithsthrone.utils.time.DayPeriod;
  */
 public enum Nocturnality {
 
-	DIURNAL("diurnal", "Active during the day and rests during the night.", true, false),
-	NOCTURNAL("nocturnal", "Active during the night and rests during the day.", false, true),
+	DIURNAL("diurnal", "Активны днем и отдыхают ночью.", true, false),
+	NOCTURNAL("nocturnal", "Активны ночью и отдыхают днем.", false, true),
 
 	// All of the following are tagged as being active both at night and during the day:
 	
-	CREPUSCULAR("crepuscular", "Active during both the morning and evening twilight periods.", true, true), // Although crepuscular can refer to either matutinal, vespertine, or both, this term is used in LT to refer solely to meaning both
-	MATUTINAL("matutinal", "Active during the morning twilight period.", true, true),
-	VESPERTINE("vespertine", "Active during the evening twilight period.", true, true),
+	CREPUSCULAR("crepuscular", "Активны как в утренние, так и в вечерние сумерки.", true, true), // Although crepuscular can refer to either matutinal, vespertine, or both, this term is used in LT to refer solely to meaning both
+	MATUTINAL("matutinal", "Активны в утренние сумерки.", true, true),
+	VESPERTINE("vespertine", "Активны в вечерние сумерки.", true, true),
 	
-	CATHEMERAL("cathemeral", "Active for irregular periods during both the day and night.", true, true);
+	CATHEMERAL("cathemeral", "Активны в течение нерегулярных периодов как днем, так и ночью.", true, true);
 	
 	private String name;
 	private String description;

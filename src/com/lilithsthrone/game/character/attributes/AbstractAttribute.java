@@ -138,17 +138,16 @@ public abstract class AbstractAttribute implements Comparable<AbstractAttribute>
 			if(!this.getInfiniteDescription().isEmpty()) {
 				returnValue = this.getInfiniteDescription();
 			} else {
-				returnValue = "[style.colourExcellent(Infinite)] <span style='color: "+ this.getColour().toWebHexString()+ ";'>"+ Util.capitaliseSentence(this.getAbbreviatedName())+ "</span>";
+				returnValue = "[style.colourExcellent(Бесконечность)] <span style='color: "+ this.getColour().toWebHexString()+ ";'>"+ Util.capitaliseSentence(this.getAbbreviatedName())+ "</span>";
 			}
 			
 		} else {
 			String minorColour = "";
 			if(this.isPercentage()){
-				minorColour = "Minor";
+				minorColour = "Малый";
 				valueForDisplay = valueForDisplay+"%";
 			}
-			returnValue = (value>0?"[style.colour"+minorColour+"Good(+":"[style.colour"+minorColour+"Bad(")+valueForDisplay+")]"
-					+ " <span style='color:"+this.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(this.getAbbreviatedName())+"</span>";
+			returnValue = (value>0?"[style.colour"+minorColour+"Хороший(+":"[style.colour"+minorColour+"Плохой(")+valueForDisplay+")] <span style='color:"+this.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(this.getAbbreviatedName())+"</span>";
 		}
 		
 		if(htmlTag!=null) {
