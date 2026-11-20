@@ -195,21 +195,21 @@ public class Nipples implements BodyPartInterface {
 			return "";
 		}
 		if(this.nippleSize == boundNippleSize) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(The size of [npc.namePos] [npc.nipples] doesn't change...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(Размер [npc.namePos] [npc.nipples] не меняется...)]</p>");
 		}
 		
 		String transformation = "";
 		
 		if(this.nippleSize > boundNippleSize) {
-			transformation = UtilText.parse(owner, "<p>A soothing coolness rises up into [npc.namePos] [npc.nipples], causing [npc.herHim] to let out a surprised gasp as [npc.she] [npc.verb(feel)] them start to [style.boldShrink(shrink)].<br/>");
+			transformation = UtilText.parse(owner, "<p>Приятная прохлада разливается по [npc.namePos] [npc.nipples], заставляя [npc.herHim] удивленно ахнуть, когда [npc.she] [npc.verb(feel)] они начинают [style.boldShrink(сжиматься)].<br/>");
 			
 		} else {
-			transformation = UtilText.parse(owner, "<p>A pulsating warmth rises up into [npc.namePos] [npc.nipples], causing [npc.herHim] to let out a surprised gasp as [npc.she] [npc.verb(feel)] them start to [style.boldGrow(grow larger)].<br/>");
+			transformation = UtilText.parse(owner, "<p>Пульсирующее тепло разливается по [npc.namePos] [npc.nipples], заставляя [npc.herHim] удивленно ахнуть, когда [npc.she] [npc.verb(feel)] они начинают [style.boldGrow(увеличиваться)].<br/>");
 		}
 		
 		this.nippleSize = boundNippleSize;
 
-		return transformation + UtilText.parse(owner, "[npc.Name] now [npc.has] [style.boldSex([npc.nippleSize] [npc.nipples])]!</p>");
+		return transformation + UtilText.parse(owner, "[npc.Name] теперь [npc.has] [style.boldSex([npc.nippleSize] [npc.nipples])]!</p>");
 		
 	}
 
@@ -224,36 +224,23 @@ public class Nipples implements BodyPartInterface {
 		}
 		
 		if(this.nippleShape == nippleShape) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(The shape of [npc.namePos] [npc.nipples] doesn't change...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(Форма [npc.namePos] [npc.nipples] не меняется...)]</p>");
 		}
 		
 		String transformation = "";
 		
 		switch(nippleShape) {
 			case INVERTED:
-				transformation = "<p>"
-									+ "[npc.Name] [npc.verb(let)] out an uncomfortable whine as [npc.her] [npc.nipples] start to grow sore and sensitive."
-									+ " Before [npc.she] [npc.has] a chance to do anything else, [npc.her] nipples suddenly transform into normal-looking ones, before pulling inwards and inverting!<br/>"
-									+ "[npc.NamePos] [npc.nipplesFullDescriptionColour] [npc.nipples] have transformed into [style.boldSex(inverted nipples)]!"
-								+ "</p>";
+				transformation = "<p>[npc.Name] [npc.verb(let)] издает неуютный стон, когда [npc.her] [npc.nipples] становятся болезненными и чувствительными. Прежде чем [npc.she] [npc.has] успеет что-либо предпринять, соски [npc.her] внезапно принимают обычный вид, а затем втягиваются внутрь!<br/>[npc.NamePos] [npc.nipplesFullDescriptionColour] [npc.nipples] превратились в [style.boldSex(втянутые соски)]!</p>";
 				break;
 			case NORMAL:
-				transformation = "<p>"
-									+ "[npc.Name] [npc.verb(let)] out an uncomfortable whine as [npc.her] [npc.nipples] start to grow sore and sensitive, before suddenly transforming into normal-looking nipples.<br/>"
-									+ "[npc.NamePos] [npc.nipplesFullDescriptionColour] [npc.nipples] have transformed into [style.boldSex(normal nipples)]!"
-								+ "</p>";
+				transformation = "<p>[npc.Name] [npc.verb(let)] издает неуютный стон, когда [npc.her] [npc.nipples] становятся болезненными и чувствительными, а затем внезапно превращаются в обычные соски.<br/>[npc.NamePos] [npc.nipplesFullDescriptionColour] [npc.nipples] превратились в [style.boldSex(обычные соски)]!</p>";
 				break;
 			case LIPS:
-				transformation = "<p>"
-									+ "[npc.Name] [npc.verb(let)] out an uncomfortable whine as [npc.her] [npc.nipples] start to grow sore and sensitive, before suddenly swelling up and transforming into juicy pairs of lips!<br/>"
-									+ "[npc.NamePos] [npc.nipplesFullDescriptionColour] [npc.nipples] have transformed into [style.boldSex(lip-like lipples)], which [npc.she] can control just like regular lips!"
-								+ "</p>";
+				transformation = "<p>[npc.Name] [npc.verb(let)] издает неуютный стон, когда [npc.her] [npc.nipples] становятся болезненными и чувствительными, а затем внезапно раздуваются и превращаются в сочные пары губ!<br/>[npc.NamePos] [npc.nipplesFullDescriptionColour] [npc.nipples] превратились в [style.boldSex(похожие на губы соски)], которыми [npc.she] может управлять так же, как обычными губами!</p>";
 				break;
 			case VAGINA:
-				transformation = "<p>"
-									+ "[npc.Name] [npc.verb(let)] out an uncomfortable whine as [npc.her] [npc.nipples] start to grow sore and sensitive, before suddenly shifting and transforming into pseudo-pussies!<br/>"
-									+ "[npc.NamePos] [npc.nipplesFullDescriptionColour] [npc.nipples] have transformed into [style.boldSex(vagina-like nipple-cunts)]!"
-								+ "</p>";
+				transformation = "<p>[npc.Name] [npc.verb(let)] издает неуютный стон, когда [npc.her] [npc.nipples] становятся болезненными и чувствительными, а затем внезапно смещаются и превращаются в псевдо-киски!<br/>[npc.NamePos] [npc.nipplesFullDescriptionColour] [npc.nipples] превратились в [style.boldSex(похожие на вагины соски-киски)]!</p>";
 				break;
 		}
 		
@@ -276,7 +263,7 @@ public class Nipples implements BodyPartInterface {
 		}
 		
 		if(this.areolaeShape == areolaeShape) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(The shape of [npc.namePos] areolae doesn't change...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(Форма ареол [npc.namePos] не меняется...)]</p>");
 		}
 
 		this.areolaeShape = areolaeShape;
@@ -284,16 +271,13 @@ public class Nipples implements BodyPartInterface {
 		String transformation = "";
 		switch(areolaeShape) {
 			case NORMAL:
-				transformation = "<p>[npc.NamePos] [npc.nipples] suddenly start to tingle, and [npc.she] [npc.verb(gasp)] as [npc.she] [npc.verb(feel)] [npc.her] areolae shift and transform into regular-looking circles.<br/>"
-							+ "[npc.NamePos] areolae are now shaped like [style.boldSex(normal circles)]!";
+				transformation = "<p>[npc.NamePos] [npc.nipples] внезапно начинают покалывать, и [npc.she] [npc.verb(gasp)], когда [npc.she] [npc.verb(feel)] [npc.her] ареолы смещаются и превращаются в обычные круги.<br/>[npc.NamePos] ареолы теперь имеют форму [style.boldSex(обычных кругов)]!";
 				break;
 			case HEART:
-				transformation = "<p>[npc.NamePos] [npc.nipples] suddenly start to tingle, and [npc.she] [npc.verb(gasp)] as [npc.she] [npc.verb(feel)] [npc.her] areolae shift and transform into the shape of hearts.<br/>"
-							+ "[npc.NamePos] areolae are now shaped like [style.boldSex(hearts)]!";
+				transformation = "<p>[npc.NamePos] [npc.nipples] внезапно начинают покалывать, и [npc.she] [npc.verb(gasp)], когда [npc.she] [npc.verb(feel)] [npc.her] ареолы смещаются и принимают форму сердечек.<br/>[npc.NamePos] ареолы теперь имеют форму [style.boldSex(сердечек)]!";
 				break;
 			case STAR:
-				transformation = "<p>[npc.NamePos] [npc.nipples] suddenly start to tingle, and [npc.she] [npc.verb(gasp)] as [npc.she] [npc.verb(feel)] [npc.her] areolae shift and transform into the shape of stars.<br/>"
-							+ "[npc.NamePos] areolae are now shaped like [style.boldSex(stars)]!";
+				transformation = "<p>[npc.NamePos] [npc.verb(gasp)], когда [npc.nipples] внезапно начинают покалывать, и [npc.she] [npc.verb(feel)] [npc.she], ареолы [npc.her] сдвигаются и трансформируются в форме звезд.<br/>[npc.NamePos] ареолы теперь имеют форму [style.boldSex(звезд)]!";
 				break;
 		}
 		
@@ -319,23 +303,23 @@ public class Nipples implements BodyPartInterface {
 			return "";
 		}
 		if (this.areolaeSize == boundAreolaeSize) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(The size of [npc.namePos] areolae doesn't change...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(Размер ареол [npc.namePos] не меняется...)]</p>");
 		}
 		
 		String transformation = "";
 		
 		if (this.areolaeSize > boundAreolaeSize) {
 			transformation = UtilText.parse(owner,
-					"<p>[npc.Name] [npc.verb(let)] out a shocked gasp as [npc.she] [npc.verb(feel)] a strange tingling sensation suddenly build up around [npc.her] [npc.nipples], before [npc.her] areolae suddenly [style.boldShrink(shrink)].<br/>");
+					"<p>[npc.Name] [npc.verb(let)] от шокированного вздоха, так как [npc.she] [npc.verb(feel)] странное покалывание внезапно нарастает вокруг [npc.her] [npc.nipples], прежде чем ареолы [npc.her] внезапно [style.boldShrink(уменьшаются)].<br/>");
 			
 		} else {
 			transformation = UtilText.parse(owner,
-					"<p>[npc.Name] [npc.verb(let)] out a shocked gasp as [npc.she] [npc.verb(feel)] a strange tingling sensation suddenly build up around [npc.her] [npc.nipples], before [npc.her] areolae suddenly [style.boldGrow(grow larger)].<br/>");
+					"<p>[npc.Name] [npc.verb(let)] от шокированного вздоха, так как [npc.she] [npc.verb(feel)] странное покалывание внезапно нарастает вокруг [npc.her] [npc.nipples], прежде чем ареолы [npc.her] внезапно [style.boldGrow(становятся больше)].<br/>");
 		}
 		
 		this.areolaeSize = boundAreolaeSize;
 
-		return transformation + UtilText.parse(owner, "[npc.Name] now [npc.has] [style.boldSex([npc.areolaeSize] areolae)]!</p>");
+		return transformation + UtilText.parse(owner, "[npc.Name] теперь [npc.has] [style.boldSex(ареолы [npc.areolaeSize])]!</p>");
 	}
 
 	public boolean isPierced() {
@@ -344,13 +328,13 @@ public class Nipples implements BodyPartInterface {
 	
 	public String setPierced(GameCharacter owner, boolean pierced) {
 		if(this.pierced == pierced) {
-			return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+			return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 		}
 		
 		this.pierced = pierced;
 		
 		if(pierced) {
-			return UtilText.parse(owner, "<p>[npc.NamePos] [npc.nipples] are now [style.boldGrow(pierced)]!</p>");
+			return UtilText.parse(owner, "<p>[npc.NamePos] [npc.nipples] теперь [style.boldGrow(проколоты)]!</p>");
 			
 		} else {
 			AbstractClothing c = owner.getClothingInSlot(InventorySlot.PIERCING_NIPPLE);
@@ -361,9 +345,7 @@ public class Nipples implements BodyPartInterface {
 			}
 			
 			return UtilText.parse(owner,
-					"<p>"
-						+ "[npc.NamePos] [npc.nipples] are [style.boldShrink(no longer pierced)]!"
-					+ "</p>"
+					"<p>[npc.NamePos] [npc.nipples] теперь [style.boldShrink(больше не проколоты)]!</p>"
 					+piercingUnequip);
 		}
 		

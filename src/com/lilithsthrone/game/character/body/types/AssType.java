@@ -29,8 +29,8 @@ public class AssType {
 			null,
 			Util.newArrayListOfValues(""),
 			Util.newArrayListOfValues(""),
-			"[npc.She] now [npc.has] a [style.boldHuman(human)], [npc.assholeFullDescription].",
-			"[npc.SheHasFull] a human, [npc.anusFullDescription(true)]"){
+			"[npc.She] теперь [npc.has] [style.boldHuman(человеком)], [npc.assholeFullDescription].",
+			"[npc.SheHasFull] человек, [npc.anusFullDescription(true)]"){
 	};
 	
 	public static AbstractAssType ANGEL = new AbstractAssType(BodyCoveringType.ANGEL,
@@ -38,10 +38,10 @@ public class AssType {
 			AnusType.ANGEL,
 			null,
 			null,
-			Util.newArrayListOfValues("angelic"),
-			Util.newArrayListOfValues("angelic", "perfect"),
-			"[npc.She] now [npc.has] an [style.boldAngel(angelic)], [npc.assholeFullDescription].",
-			"[npc.SheHasFull] an angelic, [npc.anusFullDescription(true)]"){
+			Util.newArrayListOfValues("ангельский"),
+			Util.newArrayListOfValues("ангельский", "идеальный"),
+			"[npc.She] теперь [npc.has] [style.boldAngel(ангельским)] существом, [npc.assholeFullDescription].",
+			"[npc.SheHasFull] ангельское существо, [npc.anusFullDescription(true)]"){
 	};
 	
 	public static AbstractAssType DEMON_COMMON = new AbstractAssType(BodyCoveringType.DEMON_COMMON,
@@ -49,10 +49,10 @@ public class AssType {
 			AnusType.DEMON_COMMON,
 			null,
 			null,
-			Util.newArrayListOfValues("demonic"),
-			Util.newArrayListOfValues("demonic", "perfect"),
-			"[npc.She] now [npc.has] a [style.boldDemon(demonic)], [npc.assholeFullDescription].",
-			"[npc.SheHasFull] a demonic, [npc.anusFullDescription(true)]"){
+			Util.newArrayListOfValues("демонический"),
+			Util.newArrayListOfValues("демонический", "идеальный"),
+			"[npc.She] теперь [npc.has] [style.boldDemon(демоническим)] существом, [npc.assholeFullDescription].",
+			"[npc.SheHasFull] демоническое существо, [npc.anusFullDescription(true)]"){
 	};
 	
 	public static AbstractAssType DOG_MORPH = new AbstractAssType(BodyCoveringType.CANINE_FUR,
@@ -62,8 +62,8 @@ public class AssType {
 			null,
 			Util.newArrayListOfValues(""),
 			Util.newArrayListOfValues(""),
-			"[npc.She] now [npc.has] a [style.boldDogMorph(canine)], [npc.assholeFullDescription].",
-			"[npc.SheHasFull] a canine, [npc.anusFullDescription(true)]"){
+			"[npc.She] теперь [npc.has] [style.boldDogMorph(собачьим)] существом, [npc.assholeFullDescription].",
+			"[npc.SheHasFull] собачье существо, [npc.anusFullDescription(true)]"){
 	};
 	
 	public static AbstractAssType COW_MORPH = new AbstractAssType(BodyCoveringType.BOVINE_FUR,
@@ -73,8 +73,8 @@ public class AssType {
 			null,
 			Util.newArrayListOfValues(""),
 			Util.newArrayListOfValues(""),
-			"[npc.She] now [npc.has] a [style.boldCowMorph(bovine)], [npc.assholeFullDescription].",
-			"[npc.SheHasFull] a bovine, [npc.anusFullDescription(true)]"){
+			"[npc.She] теперь [npc.has] [style.boldCowMorph(бычьим)] существом, [npc.assholeFullDescription].",
+			"[npc.SheHasFull] бычье существо, [npc.anusFullDescription(true)]"){
 	};
 	
 	public static AbstractAssType SQUIRREL_MORPH = new AbstractAssType(BodyCoveringType.SQUIRREL_FUR,
@@ -84,8 +84,8 @@ public class AssType {
 			null,
 			Util.newArrayListOfValues(""),
 			Util.newArrayListOfValues(""),
-			"[npc.She] now [npc.has] a [style.boldSquirrelMorph(squirrel-like)], [npc.assholeFullDescription].",
-			"[npc.SheHasFull] a squirrel-like, [npc.anusFullDescription(true)]"){
+			"[npc.She] теперь [npc.has] [style.boldSquirrelMorph(беличья)], [npc.assholeFullDescription].",
+			"[npc.SheHasFull] беличья, [npc.anusFullDescription(true)]"){
 	};
 	
 	public static AbstractAssType RAT_MORPH = new AbstractAssType(BodyCoveringType.RAT_FUR,
@@ -95,8 +95,8 @@ public class AssType {
 			null,
 			Util.newArrayListOfValues(""),
 			Util.newArrayListOfValues(""),
-			"[npc.She] now [npc.has] a [style.boldRatMorph(rat-like)], [npc.assholeFullDescription].",
-			"[npc.SheHasFull] a rat-like, [npc.anusFullDescription(true)]"){
+			"[npc.She] теперь [npc.has] [style.boldRatMorph(крысиная)], [npc.assholeFullDescription].",
+			"[npc.SheHasFull] крысиная, [npc.anusFullDescription(true)]"){
 	};
 	
 	public static AbstractAssType RABBIT_MORPH = new AbstractAssType(BodyCoveringType.RABBIT_FUR,
@@ -106,8 +106,8 @@ public class AssType {
 			null,
 			Util.newArrayListOfValues(""),
 			Util.newArrayListOfValues(""),
-			"[npc.She] now [npc.has] a [style.boldRabbitMorph(rabbit-like)], [npc.assholeFullDescription].",
-			"[npc.SheHasFull] a rabbit-like, [npc.anusFullDescription(true)]"){
+			"[npc.She] теперь [npc.has] [style.boldRabbitMorph(кроличья)], [npc.assholeFullDescription].",
+			"[npc.SheHasFull] кроличья, [npc.anusFullDescription(true)]"){
 	};
 	
 	public static AbstractAssType BAT_MORPH = new AbstractAssType(BodyCoveringType.BAT_FUR,
@@ -117,8 +117,8 @@ public class AssType {
 			null,
 			Util.newArrayListOfValues(""),
 			Util.newArrayListOfValues(""),
-			"[npc.She] now [npc.has] a [style.boldBatMorph(bat-like)], [npc.assholeFullDescription].",
-			"[npc.SheHasFull] a bat-like, [npc.anusFullDescription(true)]"){
+			"[npc.She] теперь [npc.has] [style.boldBatMorph(летучая мышь)], [npc.assholeFullDescription].",
+			"[npc.SheHasFull] похожая на летучую мышь, [npc.anusFullDescription(true)]"){
 	};
 	
 	public static AbstractAssType ALLIGATOR_MORPH = new AbstractAssType(BodyCoveringType.ALLIGATOR_SCALES,
@@ -128,8 +128,8 @@ public class AssType {
 			null,
 			Util.newArrayListOfValues(""),
 			Util.newArrayListOfValues(""),
-			"[npc.She] now [npc.has] an [style.boldGatorMorph(alligator-like)], [npc.assholeFullDescription].",
-			"[npc.SheHasFull] an alligator-like, [npc.anusFullDescription(true)]"){
+			"[npc.She] теперь [npc.has] [style.boldGatorMorph(аллигаторовая)], [npc.assholeFullDescription].",
+			"[npc.SheHasFull] аллигаторовая, [npc.anusFullDescription(true)]"){
 	};
 	
 	public static AbstractAssType WOLF_MORPH = new AbstractAssType(BodyCoveringType.LYCAN_FUR,
@@ -139,8 +139,8 @@ public class AssType {
 			null,
 			Util.newArrayListOfValues(""),
 			Util.newArrayListOfValues(""),
-			"[npc.She] now [npc.has] a [style.boldWolfMorph(lupine)], [npc.assholeFullDescription].",
-			"[npc.SheHasFull] a lupine, [npc.anusFullDescription(true)]"){
+			"[npc.She] теперь [npc.has] [style.boldWolfMorph(волчья)], [npc.assholeFullDescription].",
+			"[npc.SheHasFull] волчья, [npc.anusFullDescription(true)]"){
 	};
 	
 	public static AbstractAssType FOX_MORPH = new AbstractAssType(BodyCoveringType.FOX_FUR,
@@ -150,8 +150,8 @@ public class AssType {
 			null,
 			Util.newArrayListOfValues(""),
 			Util.newArrayListOfValues(""),
-			"[npc.She] now [npc.has] a [style.boldFoxMorph(vulpine)], [npc.assholeFullDescription].",
-			"[npc.SheHasFull] a vulpine, [npc.anusFullDescription(true)]"){
+			"[npc.She] теперь [npc.has] [style.boldFoxMorph(лисья)], [npc.assholeFullDescription].",
+			"[npc.SheHasFull] лисья, [npc.anusFullDescription(true)]"){
 	};
 	
 	public static AbstractAssType CAT_MORPH = new AbstractAssType(BodyCoveringType.FELINE_FUR,
@@ -161,8 +161,8 @@ public class AssType {
 			null,
 			Util.newArrayListOfValues(""),
 			Util.newArrayListOfValues(""),
-			"[npc.She] now [npc.has] a [style.boldCatMorph(feline)], [npc.assholeFullDescription].",
-			"[npc.SheHasFull] a feline, [npc.anusFullDescription(true)]"){
+			"[npc.She] теперь [npc.has] [style.boldCatMorph(кошачья)], [npc.assholeFullDescription].",
+			"[npc.SheHasFull] кошачья, [npc.anusFullDescription(true)]"){
 	};
 	
 	public static AbstractAssType HORSE_MORPH = new AbstractAssType(BodyCoveringType.HORSE_HAIR,
@@ -172,8 +172,8 @@ public class AssType {
 			null,
 			Util.newArrayListOfValues(""),
 			Util.newArrayListOfValues(""),
-			"[npc.She] now [npc.has] an [style.boldHorseMorph(equine)], [npc.assholeFullDescription].",
-			"[npc.SheHasFull] an equine, [npc.anusFullDescription(true)]"){
+			"[npc.She] теперь [npc.has] [style.boldHorseMorph(лошадиная)], [npc.assholeFullDescription].",
+			"[npc.SheHasFull] лошадиная, [npc.anusFullDescription(true)]"){
 	};
 	
 	public static AbstractAssType REINDEER_MORPH = new AbstractAssType(BodyCoveringType.REINDEER_FUR,
@@ -183,8 +183,8 @@ public class AssType {
 			null,
 			Util.newArrayListOfValues(""),
 			Util.newArrayListOfValues(""),
-			"[npc.She] now [npc.has] a [style.boldReindeerMorph(reindeer-like)], [npc.assholeFullDescription].",
-			"[npc.SheHasFull] a reindeer-like, [npc.anusFullDescription(true)]"){
+			"[npc.She] теперь [npc.has] [style.boldReindeerMorph(оленья)], [npc.assholeFullDescription].",
+			"[npc.SheHasFull] оленья, [npc.anusFullDescription(true)]"){
 	};
 	
 	public static AbstractAssType HARPY = new AbstractAssType(BodyCoveringType.FEATHERS,
@@ -194,8 +194,8 @@ public class AssType {
 			null,
 			Util.newArrayListOfValues(""),
 			Util.newArrayListOfValues(""),
-			"[npc.She] now [npc.has] an [style.boldHarpy(avian)], [npc.assholeFullDescription].",
-			"[npc.SheHasFull] an avian, [npc.anusFullDescription(true)]"){
+			"[npc.She] теперь [npc.has] [style.boldHarpy(птицеподобной)], [npc.assholeFullDescription].",
+			"[npc.SheHasFull] птицеподобная, [npc.anusFullDescription(true)]"){
 	};
 	
 	
@@ -208,7 +208,7 @@ public class AssType {
 
 		// Modded types:
 		
-		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/race", "bodyParts", null);
+		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/раса", "bodyParts", null);
 		for(Entry<String, Map<String, File>> entry : moddedFilesMap.entrySet()) {
 			for(Entry<String, File> innerEntry : entry.getValue().entrySet()) {
 				if(Util.getXmlRootElementName(innerEntry.getValue()).equals("ass")) {

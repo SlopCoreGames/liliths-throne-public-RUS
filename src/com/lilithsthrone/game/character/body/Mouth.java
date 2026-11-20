@@ -130,9 +130,9 @@ public class Mouth implements BodyPartInterface {
 		
 		if(owner.getLipSizeValue() == effectiveLipSize) {
 			if(owner.isPlayer()) {
-				return "<p style='text-align:center;'>[style.colourDisabled(The size of your [pc.lips] doesn't change...)]</p>";
+				return "<p style='text-align:center;'>[style.colourDisabled(Размер твоих [pc.lips] не меняется...)]</p>";
 			} else {
-				return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(The size of [npc.namePos] [npc.lips] doesn't change...)]</p>");
+				return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(Размер [npc.namePos] [npc.lips] не меняется...)]</p>");
 			}
 		}
 		
@@ -140,16 +140,16 @@ public class Mouth implements BodyPartInterface {
 		
 		if(this.lipSize > effectiveLipSize) {
 			if(owner.isPlayer()) {
-				transformation = "<p>A soothing coolness rises up into your [pc.lips], causing you to let out a surprised gasp as you feel them [style.boldShrink(shrinking)].<br/>";
+				transformation = "<p>Приятная прохлада поднимается в твои [pc.lips], заставляя тебя удивленно ахнуть, когда ты чувствуешь, как они [style.boldShrink(уменьшаются)].<br/>";
 			} else {
-				transformation = UtilText.parse(owner, "<p>[npc.Name] lets out a little cry as [npc.she] feels a soothing coolness rise up into [npc.her] [npc.lips], before they suddenly [style.boldShrink(shrink)].<br/>");
+				transformation = UtilText.parse(owner, "<p>[npc.Name] издает короткий вскрик, когда [npc.she] чувствует, как приятная прохлада поднимается в [npc.her] [npc.lips], прежде чем они внезапно [style.boldShrink(уменьшаются)].<br/>");
 			}
 			
 		} else {
 			if(owner.isPlayer()) {
-				transformation = "<p>A pulsating warmth rises up into your [pc.lips], causing you to let out a surprised gasp as you feel them [style.boldGrow(growing larger)].<br/>";
+				transformation = "<p>Пульсирующее тепло поднимается в твои [pc.lips], заставляя тебя удивленно ахнуть, когда ты чувствуешь, как они [style.boldGrow(становятся больше)].<br/>";
 			} else {
-				transformation = UtilText.parse(owner, "<p>[npc.Name] lets out a little cry as [npc.she] feels a pulsating warmth rise up into [npc.her] [npc.lips], before they suddenly [style.boldGrow(grow larger)].<br/>");
+				transformation = UtilText.parse(owner, "<p>[npc.Name] издает короткий вскрик, когда [npc.she] чувствует, как пульсирующее тепло поднимается в [npc.her] [npc.lips], прежде чем они внезапно [style.boldGrow(становятся больше)].<br/>");
 			}
 		}
 		
@@ -157,10 +157,10 @@ public class Mouth implements BodyPartInterface {
 
 		if(owner.isPlayer()) {
 			return transformation
-				+ "You now have [style.boldSex([pc.lipSize] [pc.lips])]!</p>";
+				+ "Теперь у тебя есть [style.boldSex([pc.lipSize] [pc.lips])]!</p>";
 		} else {
 			return transformation
-					+ UtilText.parse(owner, "[npc.Name] now has [style.boldSex([npc.lipSize] [npc.lips])]!</p>");
+					+ UtilText.parse(owner, "Теперь у [npc.Name] есть [style.boldSex([npc.lipSize] [npc.lips])]!</p>");
 		}
 	}
 	
@@ -170,17 +170,17 @@ public class Mouth implements BodyPartInterface {
 	
 	public String setPiercedLip(GameCharacter owner, boolean piercedLip) {
 		if(owner.isPiercedLip() == piercedLip) {
-			return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+			return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 		}
 		
 		this.piercedLip = piercedLip;
 		
 		if(piercedLip) {
 			if(owner.isPlayer()) {
-				return "<p>Your [pc.lips] are now [style.boldGrow(pierced)]!</p>";
+				return "<p>Твои [pc.lips] теперь [style.boldGrow(проколоты)]!</p>";
 			} else {
 				return UtilText.parse(owner,
-						"<p>[npc.NamePos] [npc.lips] are now [style.boldGrow(pierced)]!</p>");
+						"<p>[npc.NamePos] [npc.lips] теперь [style.boldGrow(проколоты)]!</p>");
 			}
 			
 		} else {
@@ -192,15 +192,11 @@ public class Mouth implements BodyPartInterface {
 			}
 			
 			if(owner.isPlayer()) {
-				return "<p>"
-							+ "Your [pc.lips] are [style.boldShrink(no longer pierced)]!"
-						+ "</p>"
+				return "<p>Ваши [pc.lips] [style.boldShrink(больше не проколоты)]!</p>"
 						+piercingUnequip;
 			} else {
 				return UtilText.parse(owner,
-						"<p>"
-								+ "[npc.NamePos] [npc.lips] are [style.boldShrink(no longer pierced)]!"
-						+ "</p>"
+						"<p>[npc.NamePos] [npc.lips] [style.boldShrink(больше не проколоты)]!</p>"
 						+piercingUnequip);
 			}
 		}

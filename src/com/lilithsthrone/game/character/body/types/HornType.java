@@ -29,12 +29,12 @@ public class HornType {
 			BodyCoveringType.HORN,
 			Race.NONE,
 			2,
-			"none",
-			"horn",
-			"horns",
+			"нет",
+			"рог",
+			"рога",
 			new ArrayList<>(),
 			new ArrayList<>(),
-			"<br/>[npc.Name] now [npc.has] [style.boldTfGeneric(no horns)].",
+			"<br/>[npc.Name] теперь [npc.has] [style.boldTfGeneric(без рогов)].",
 			"") {
 	};
 
@@ -74,14 +74,13 @@ public class HornType {
 			BodyCoveringType.ANTLER,
 			Race.REINDEER_MORPH,
 			2,
-			"multi-branched",
-			"antler",
-			"antlers",
-			Util.newArrayListOfValues("multi-branched", "reindeer"),
-			Util.newArrayListOfValues("multi-branched", "reindeer"),
-			"branching, multi-pronged #IFnpc.getTotalHorns()==1#THEN[npc.horn]#ELSE[npc.horns]#ENDIF."
-					+ "<br/>[npc.Name] now [npc.has] [npc.hornsDeterminer] [style.boldTfGeneric(reindeer-like #IFnpc.getTotalHorns()==1#THEN[npc.horn]#ELSE[npc.horns]#ENDIF)].",
-			"[npc.HornsDeterminer] [npc.hornSize], [npc.hornColour(true)], multi-branched #IFnpc.getTotalHorns()==1#THEN[npc.horn] grows#ELSE[npc.horns] grow#ENDIF out of the #IFnpc.getHornsPerRow()==1#THENmiddle#ELSEupper sides#ENDIF of [npc.her] forehead.") {
+			"разветвленные",
+			"рог",
+			"рога",
+			Util.newArrayListOfValues("разветвленные", "оленьей шерсти"),
+			Util.newArrayListOfValues("разветвленные", "оленьей шерсти"),
+			"разветвленные, многозубчатые #IFnpc.getTotalHorns()==1#THEN[npc.horn]#ELSE[npc.horns]#ENDIF.<br/>[npc.Name] теперь [npc.has] [npc.hornsDeterminer] [style.boldTfGeneric(похожие на оленьи #IFnpc.getTotalHorns()==1#THEN[npc.horn]#ELSE[npc.horns]#ENDIF)].",
+			"[npc.HornsDeterminer] [npc.hornSize], [npc.hornColour(true)], разветвленные #IFnpc.getTotalHorns()==1#THEN[npc.horn] растет#ELSE[npc.horns] растут#ENDIF из #IFnpc.getHornsPerRow()==1#THEN самой середины#ELSE верхних частей#ENDIF лба [npc.her].") {
 	};
 	
 	// Horse:
@@ -90,14 +89,13 @@ public class HornType {
 			BodyCoveringType.HORN,
 			Race.HORSE_MORPH,
 			1,
-			"unicorn",
-			"horn",
-			"horns",
-			Util.newArrayListOfValues("straight", "twirling", "unicorn"),
-			Util.newArrayListOfValues("straight", "twirling", "unicorn"),
-			"straight, twirling unicorn's #IFnpc.getTotalHorns()==1#THEN[npc.horn]#ELSE[npc.horns]#ENDIF."
-					+ "<br/>[npc.Name] now [npc.has] [npc.hornsDeterminer] [style.boldTfGeneric(unicorn #IFnpc.getTotalHorns()==1#THEN[npc.horn]#ELSE[npc.horns]#ENDIF)].",
-			"[npc.HornsDeterminer] [npc.hornSize], [npc.hornColour(true)], unicorn's #IFnpc.getTotalHorns()==1#THEN[npc.horn] grows#ELSE[npc.horns] grow#ENDIF out of the #IFnpc.getHornsPerRow()==1#THENmiddle#ELSEupper sides#ENDIF of [npc.her] forehead.") {
+			"единорожьи",
+			"рог",
+			"рога",
+			Util.newArrayListOfValues("прямые", "закрученные", "единорожьи"),
+			Util.newArrayListOfValues("прямые", "закрученные", "единорожьи"),
+			"прямой, закрученный единорожий #IFnpc.getTotalHorns()==1#THEN[npc.horn]#ELSE[npc.horns]#ENDIF.<br/>[npc.Name] теперь [npc.has] [npc.hornsDeterminer] [style.boldTfGeneric(единорожий #IFnpc.getTotalHorns()==1#THEN[npc.horn]#ELSE[npc.horns]#ENDIF)].",
+			"[npc.HornsDeterminer] [npc.hornSize], [npc.hornColour(true)], единорожий #IFnpc.getTotalHorns()==1#THEN[npc.horn] растет#ELSE[npc.horns] растут#ENDIF из #IFnpc.getHornsPerRow()==1#THENсередины#ELSEверхних сторон#ENDIF лба [npc.her].") {
 	};
 
 	// Generic:
@@ -106,14 +104,13 @@ public class HornType {
 			BodyCoveringType.ANTLER,
 			Race.NONE,
 			2,
-			"pronged",
-			"antler",
-			"antlers",
-			Util.newArrayListOfValues("pronged"),
-			Util.newArrayListOfValues("pronged"),
-			" multi-pronged #IFnpc.getTotalHorns()==1#THEN[npc.horn]#ELSE[npc.horns]#ENDIF."
-					+ "<br/>[npc.Name] now [npc.has] [npc.hornsDeterminer] [style.boldTfGeneric(pronged #IFnpc.getTotalHorns()==1#THEN[npc.horn]#ELSE[npc.horns]#ENDIF)].",
-			"[npc.HornsDeterminer] [npc.hornSize], [npc.hornColour(true)], pronged #IFnpc.getTotalHorns()==1#THEN[npc.horn] grows#ELSE[npc.horns] grow#ENDIF out of the #IFnpc.getHornsPerRow()==1#THENmiddle#ELSEupper sides#ENDIF of [npc.her] forehead.") {
+			"разветвленный",
+			"рог",
+			"рога",
+			Util.newArrayListOfValues("разветвленный"),
+			Util.newArrayListOfValues("разветвленный"),
+			" многозубчатый #IFnpc.getTotalHorns()==1#THEN[npc.horn]#ELSE[npc.horns]#ENDIF.<br/>[npc.Name] теперь [npc.has] [npc.hornsDeterminer] [style.boldTfGeneric(разветвленный #IFnpc.getTotalHorns()==1#THEN[npc.horn]#ELSE[npc.horns]#ENDIF)].",
+			"[npc.HornsDeterminer] [npc.hornSize], [npc.hornColour(true)], разветвленный #IFnpc.getTotalHorns()==1#THEN[npc.horn] растет#ELSE[npc.horns] растут#ENDIF из #IFnpc.getHornsPerRow()==1#THENсередины#ELSEверхних сторон#ENDIF лба [npc.her].") {
 		@Override
 		public boolean isGeneric() {
 			return true;
@@ -124,14 +121,13 @@ public class HornType {
 			BodyCoveringType.HORN,
 			Race.NONE,
 			2,
-			"curled",
-			"horn",
-			"horns",
-			Util.newArrayListOfValues("curled"),
-			Util.newArrayListOfValues("curled", "smooth"),
-			"circular-curling #IFnpc.getTotalHorns()==1#THEN[npc.horn]#ELSE[npc.horns]#ENDIF."
-					+ "<br/>[npc.Name] now [npc.has] [npc.hornsDeterminer] [style.boldTfGeneric(curled #IFnpc.getTotalHorns()==1#THEN[npc.horn]#ELSE[npc.horns]#ENDIF)].",
-			"[npc.HornsDeterminer] [npc.hornSize], [npc.hornColour(true)], circular-curling #IFnpc.getTotalHorns()==1#THEN[npc.horn] grows#ELSE[npc.horns] grow#ENDIF out of the #IFnpc.getHornsPerRow()==1#THENmiddle#ELSEupper sides#ENDIF of [npc.her] forehead.") {
+			"закрученный",
+			"рог",
+			"рога",
+			Util.newArrayListOfValues("закрученный"),
+			Util.newArrayListOfValues("закрученный", "гладкая"),
+			"закрученный спиралью #IFnpc.getTotalHorns()==1#THEN[npc.horn]#ELSE[npc.horns]#ENDIF.<br/>[npc.Name] теперь [npc.has] [npc.hornsDeterminer] [style.boldTfGeneric(закрученный #IFnpc.getTotalHorns()==1#THEN[npc.horn]#ELSE[npc.horns]#ENDIF)].",
+			"[npc.HornsDeterminer] [npc.hornSize], [npc.hornColour(true)], закрученные по кругу #IFnpc.getTotalHorns()==1#THEN[npc.horn] растет#ELSE[npc.horns] растут#ENDIF из #IFnpc.getHornsPerRow()==1#THENцентра#ELSEверхних частей#ENDIF лба [npc.her].") {
 		@Override
 		public boolean isGeneric() {
 			return true;
@@ -142,14 +138,13 @@ public class HornType {
 			BodyCoveringType.HORN,
 			Race.NONE,
 			2,
-			"spiral", //Rasen no Chikara
-			"horn",
-			"horns",
-			Util.newArrayListOfValues("spiral"),
-			Util.newArrayListOfValues("spiral", "smooth"),
-			"twisted, spiralling #IFnpc.getTotalHorns()==1#THEN[npc.horn]#ELSE[npc.horns]#ENDIF."
-					+ "<br/>[npc.Name] now [npc.has] [npc.hornsDeterminer] [style.boldTfGeneric(spiral #IFnpc.getTotalHorns()==1#THEN[npc.horn]#ELSE[npc.horns]#ENDIF)].",
-			"[npc.HornsDeterminer] [npc.hornSize], [npc.hornColour(true)], spiralling #IFnpc.getTotalHorns()==1#THEN[npc.horn] grows#ELSE[npc.horns] grow#ENDIF out of the #IFnpc.getHornsPerRow()==1#THENmiddle#ELSEupper sides#ENDIF of [npc.her] forehead.") {
+			"спиралевидные", //Rasen no Chikara
+			"рог",
+			"рога",
+			Util.newArrayListOfValues("спиралевидные"),
+			Util.newArrayListOfValues("спиралевидные", "гладкая"),
+			"скрученные, спиралевидные #IFnpc.getTotalHorns()==1#THEN[npc.horn]#ELSE[npc.horns]#ENDIF.<br/>[npc.Name] теперь [npc.has] [npc.hornsDeterminer] [style.boldTfGeneric(спиралевидные #IFnpc.getTotalHorns()==1#THEN[npc.horn]#ELSE[npc.horns]#ENDIF)].",
+			"[npc.HornsDeterminer] [npc.hornSize], [npc.hornColour(true)], спиралевидные #IFnpc.getTotalHorns()==1#THEN[npc.horn] растет#ELSE[npc.horns] растут#ENDIF из #IFnpc.getHornsPerRow()==1#THENцентра#ELSEверхних частей#ENDIF лба [npc.her].") {
 		@Override
 		public boolean isGeneric() {
 			return true;
@@ -160,14 +155,13 @@ public class HornType {
 			BodyCoveringType.HORN,
 			Race.NONE,
 			2,
-			"curved",
-			"horn",
-			"horns",
-			Util.newArrayListOfValues("curved"),
-			Util.newArrayListOfValues("curved", "smooth"),
-			"slightly-curved #IFnpc.getTotalHorns()==1#THEN[npc.horn]#ELSE[npc.horns]#ENDIF."
-					+ "<br/>[npc.Name] now [npc.has] [npc.hornsDeterminer] [style.boldTfGeneric(curved #IFnpc.getTotalHorns()==1#THEN[npc.horn]#ELSE[npc.horns]#ENDIF)].",
-			"[npc.HornsDeterminer] [npc.hornSize], [npc.hornColour(true)], curved #IFnpc.getTotalHorns()==1#THEN[npc.horn] grows#ELSE[npc.horns] grow#ENDIF out of the #IFnpc.getHornsPerRow()==1#THENmiddle#ELSEupper sides#ENDIF of [npc.her] forehead.") {
+			"изогнутые",
+			"рог",
+			"рога",
+			Util.newArrayListOfValues("изогнутые"),
+			Util.newArrayListOfValues("изогнутые", "гладкая"),
+			"слегка изогнутые #IFnpc.getTotalHorns()==1#THEN[npc.horn]#ELSE[npc.horns]#ENDIF.<br/>[npc.Name] теперь [npc.has] [npc.hornsDeterminer] [style.boldTfGeneric(изогнутые #IFnpc.getTotalHorns()==1#THEN[npc.horn]#ELSE[npc.horns]#ENDIF)].",
+			"[npc.HornsDeterminer] [npc.hornSize], [npc.hornColour(true)], изогнутые #IFnpc.getTotalHorns()==1#THEN[npc.horn] растет#ELSE[npc.horns] растут#ENDIF из #IFnpc.getHornsPerRow()==1#THENцентра#ELSEверхних частей#ENDIF лба [npc.her].") {
 		@Override
 		public boolean isGeneric() {
 			return true;
@@ -178,14 +172,13 @@ public class HornType {
 			BodyCoveringType.HORN,
 			Race.NONE,
 			2,
-			"swept-back",
-			"horn",
-			"horns",
-			Util.newArrayListOfValues("swept-back"),
-			Util.newArrayListOfValues("swept-back", "smooth"),
-			"sleek #IFnpc.getTotalHorns()==1#THEN[npc.horn]#ELSE[npc.horns]#ENDIF, before sweeping back and curving over [npc.her] head."
-					+ "<br/>[npc.Name] now [npc.has] [npc.hornsDeterminer] [style.boldTfGeneric(swept-back #IFnpc.getTotalHorns()==1#THEN[npc.horn]#ELSE[npc.horns]#ENDIF)].",
-			"[npc.HornsDeterminer] [npc.hornSize], [npc.hornColour(true)], swept-back #IFnpc.getTotalHorns()==1#THEN[npc.horn] grows#ELSE[npc.horns] grow#ENDIF out of the #IFnpc.getHornsPerRow()==1#THENmiddle#ELSEupper sides#ENDIF of [npc.her] forehead.") {
+			"откинутые назад",
+			"рог",
+			"рога",
+			Util.newArrayListOfValues("откинутые назад"),
+			Util.newArrayListOfValues("откинутые назад", "гладкая"),
+			"гладкие #IFnpc.getTotalHorns()==1#THEN[npc.horn]#ELSE[npc.horns]#ENDIF, отходящие назад и изгибающиеся над [npc.her] головой.<br/>[npc.Name] теперь [npc.has] [npc.hornsDeterminer] [style.boldTfGeneric(загнутые назад #IFnpc.getTotalHorns()==1#THEN[npc.horn]#ELSE[npc.horns]#ENDIF)].",
+			"[npc.HornsDeterminer] [npc.hornSize], [npc.hornColour(true)], загнутые назад #IFnpc.getTotalHorns()==1#THEN[npc.horn] растет#ELSE[npc.horns] растут#ENDIF из #IFnpc.getHornsPerRow()==1#THENцентра#ELSEверхних частей#ENDIF лба [npc.her].") {
 		@Override
 		public boolean isGeneric() {
 			return true;
@@ -196,14 +189,13 @@ public class HornType {
 			BodyCoveringType.HORN,
 			Race.NONE,
 			2,
-			"straight",
-			"horn",
-			"horns",
-			Util.newArrayListOfValues("straight"),
-			Util.newArrayListOfValues("straight", "smooth"),
-			"sleek, straight horns."
-					+ "<br/>[npc.Name] now [npc.has] [npc.hornsDeterminer] [style.boldTfGeneric(straight #IFnpc.getTotalHorns()==1#THEN[npc.horn]#ELSE[npc.horns]#ENDIF)].",
-			"[npc.HornsDeterminer] [npc.hornSize], [npc.hornColour(true)], straight #IFnpc.getTotalHorns()==1#THEN[npc.horn] grows#ELSE[npc.horns] grow#ENDIF out of the #IFnpc.getHornsPerRow()==1#THENmiddle#ELSEupper sides#ENDIF of [npc.her] forehead.") {
+			"прямые",
+			"рог",
+			"рога",
+			Util.newArrayListOfValues("прямые"),
+			Util.newArrayListOfValues("прямые", "гладкая"),
+			"гладкие, прямые рога.<br/>[npc.Name] теперь [npc.has] [npc.hornsDeterminer] [style.boldTfGeneric(прямые #IFnpc.getTotalHorns()==1#THEN[npc.horn]#ELSE[npc.horns]#ENDIF)].",
+			"[npc.HornsDeterminer] [npc.hornSize], [npc.hornColour(true)], прямые #IFnpc.getTotalHorns()==1#THEN[npc.horn] растет#ELSE[npc.horns] растут#ENDIF из #IFnpc.getHornsPerRow()==1#THENцентра#ELSEверхних частей#ENDIF лба [npc.her].") {
 		@Override
 		public boolean isGeneric() {
 			return true;
@@ -220,7 +212,7 @@ public class HornType {
 
 		// Modded types:
 		
-		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/race", "bodyParts", null);
+		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/раса", "bodyParts", null);
 		for(Entry<String, Map<String, File>> entry : moddedFilesMap.entrySet()) {
 			for(Entry<String, File> innerEntry : entry.getValue().entrySet()) {
 				if(Util.getXmlRootElementName(innerEntry.getValue()).equals("horn")) {

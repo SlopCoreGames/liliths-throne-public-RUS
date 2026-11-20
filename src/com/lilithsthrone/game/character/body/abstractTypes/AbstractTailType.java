@@ -323,199 +323,199 @@ public abstract class AbstractTailType implements BodyPartTypeInterface {
 		
 		if(this.getTags().contains(BodyPartTag.TAIL_TYPE_SKIN) || this.getTags().contains(BodyPartTag.TAIL_TYPE_SCALES)) {
 			if(owner.getTailCount()>1) {
-				sb.append(UtilText.parse(owner, " [npc.Her] [npc.tails] are"));
+				sb.append(UtilText.parse(owner, " [npc.Her] [npc.tails] — это"));
 			} else {
-				sb.append(UtilText.parse(owner, " [npc.Her] [npc.tail] is"));
+				sb.append(UtilText.parse(owner, " [npc.Her] [npc.tail] — это"));
 			}
 			switch(owner.getTailGirth()) {
 				case ZERO_THIN:
-					sb.append(UtilText.parse(owner, " <colourStart>very thin<colourEnd> in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " <colourStart>очень тонкий<colourEnd> по сравнению с остальным телом [npc.her]."));
 					break;
 				case ONE_SLENDER:
-					sb.append(UtilText.parse(owner, " <colourStart>slender<colourEnd> in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " <colourStart>изящный<colourEnd> по сравнению с остальным телом [npc.her]."));
 					break;
 				case TWO_NARROW:
-					sb.append(UtilText.parse(owner, " <colourStart>quite narrow<colourEnd> in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " <colourStart>довольно узкий<colourEnd> по сравнению с остальным телом [npc.her]."));
 					break;
 				case THREE_AVERAGE:
-					sb.append(UtilText.parse(owner, " of an <colourStart>average thickness<colourEnd> in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " <colourStart>средней толщины<colourEnd> по сравнению с остальным телом [npc.her]."));
 					break;
 				case FOUR_GIRTHY:
-					sb.append(UtilText.parse(owner, " <colourStart>quite thick<colourEnd> in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " <colourStart>довольно толстый<colourEnd> по сравнению с остальным телом [npc.her]."));
 					break;
 				case FIVE_THICK:
-					sb.append(UtilText.parse(owner, " <colourStart>very thick<colourEnd> in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " <colourStart>очень толстый<colourEnd> по сравнению с остальным телом [npc.her]."));
 					break;
 				case SIX_CHUBBY:
-					sb.append(UtilText.parse(owner, " <colourStart>incredibly thick and girthy<colourEnd> in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " <colourStart>невероятно толстый и мощный<colourEnd> по сравнению с остальным телом [npc.her]."));
 					break;
 				case SEVEN_FAT:
-					sb.append(UtilText.parse(owner, " <colourStart>extremely thick and girthy<colourEnd> in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " <colourStart>чрезвычайно толстый и мощный<colourEnd> по сравнению с остальным телом [npc.her]."));
 					break;
 			}
 		}
 		if(this.getTags().contains(BodyPartTag.TAIL_TYPE_FUR)) {
 			if(owner.getTailCount()>1) {
-				sb.append(UtilText.parse(owner, " [npc.Her] [npc.tails] are"));
+				sb.append(UtilText.parse(owner, " [npc.Her] [npc.tails] — это"));
 			} else {
-				sb.append(UtilText.parse(owner, " [npc.Her] [npc.tail] is"));
+				sb.append(UtilText.parse(owner, " [npc.Her] [npc.tail] — это"));
 			}
 			switch(owner.getTailGirth()) {
 				case ZERO_THIN:
-					sb.append(UtilText.parse(owner, " <colourStart>very thin and severely lacking in fluffiness<colourEnd> in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " <colourStart>очень тонкий и почти лишенный пушистости<colourEnd> по сравнению с остальным телом [npc.her]."));
 					break;
 				case ONE_SLENDER:
-					sb.append(UtilText.parse(owner, " <colourStart>slender and lacking in fluffiness<colourEnd> in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " <colourStart>стройный и недостаточно пушистый<colourEnd> по сравнению с остальным телом [npc.her]."));
 					break;
 				case TWO_NARROW:
-					sb.append(UtilText.parse(owner, " <colourStart>quite narrow and a little lacking in fluffiness<colourEnd> in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " <colourStart>довольно узкий и слегка непушистый<colourEnd> по сравнению с остальным телом [npc.her]."));
 					break;
 				case THREE_AVERAGE:
-					sb.append(UtilText.parse(owner, " of an <colourStart>average thickness and fluffiness<colourEnd> in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " <colourStart>средней толщины и пушистости<colourEnd> по сравнению с остальным телом [npc.her]."));
 					break;
 				case FOUR_GIRTHY:
-					sb.append(UtilText.parse(owner, " <colourStart>quite big and very fluffy<colourEnd> in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " <colourStart>довольно большой и очень пушистый<colourEnd> по сравнению с остальным телом [npc.her]."));
 					break;
 				case FIVE_THICK:
-					sb.append(UtilText.parse(owner, " <colourStart>very big and fluffy<colourEnd> in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " <colourStart>очень большой и пушистый<colourEnd> по сравнению с остальным телом [npc.her]."));
 					break;
 				case SIX_CHUBBY:
-					sb.append(UtilText.parse(owner, " <colourStart>incredibly thick and fluffy<colourEnd> in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " <colourStart>невероятно толстый и пушистый<colourEnd> по сравнению с остальным телом [npc.her]."));
 					break;
 				case SEVEN_FAT:
-					sb.append(UtilText.parse(owner, " <colourStart>extremely thick and fluffy<colourEnd> in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " <colourStart>чрезвычайно толстый и пушистый<colourEnd> по сравнению с остальным телом [npc.her]."));
 					break;
 			}
 		}
 		if(this.getTags().contains(BodyPartTag.TAIL_TYPE_TUFT)) {
 			if(owner.getTailCount()>1) {
-				sb.append(UtilText.parse(owner, " [npc.Her] tufted tails are"));
+				sb.append(UtilText.parse(owner, " [npc.Her] кисточки на хвостах — это"));
 			} else {
-				sb.append(UtilText.parse(owner, " [npc.Her] tufted tail is"));
+				sb.append(UtilText.parse(owner, " [npc.Her] кисточка на хвосте — это"));
 			}
 			switch(owner.getTailGirth()) {
 				case ZERO_THIN:
-					sb.append(UtilText.parse(owner, " <colourStart>very small and significantly lacking in fluffiness<colourEnd> in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " <colourStart>очень маленький и заметно непушистый<colourEnd> по сравнению с остальным телом [npc.her]."));
 					break;
 				case ONE_SLENDER:
-					sb.append(UtilText.parse(owner, " <colourStart>quite small and lacking in fluffiness<colourEnd> in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " <colourStart>довольно маленький и непушистый<colourEnd> по сравнению с остальным телом [npc.her]."));
 					break;
 				case TWO_NARROW:
-					sb.append(UtilText.parse(owner, " <colourStart>a little small and lacking in fluffiness<colourEnd> in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " <colourStart>слегка маловат и непушист<colourEnd> по сравнению с остальным телом [npc.her]."));
 					break;
 				case THREE_AVERAGE:
-					sb.append(UtilText.parse(owner, " of an <colourStart>average size and fluffiness<colourEnd> in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " <colourStart>среднего размера и пушистости<colourEnd> по сравнению с остальным телом [npc.her]."));
 					break;
 				case FOUR_GIRTHY:
-					sb.append(UtilText.parse(owner, " <colourStart>quite big and very fluffy<colourEnd> in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " <colourStart>довольно большой и очень пушистый<colourEnd> по сравнению с остальным телом [npc.her]."));
 					break;
 				case FIVE_THICK:
-					sb.append(UtilText.parse(owner, " <colourStart>very big and extremely fluffy<colourEnd> in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " <colourStart>очень большой и чрезвычайно пушистый<colourEnd> по сравнению с остальным телом [npc.her]."));
 					break;
 				case SIX_CHUBBY:
-					sb.append(UtilText.parse(owner, " <colourStart>incredibly thick and fluffy<colourEnd> in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " <colourStart>невероятно толстый и пушистый<colourEnd> по сравнению с остальным телом [npc.her]."));
 					break;
 				case SEVEN_FAT:
-					sb.append(UtilText.parse(owner, " <colourStart>extremely thick and fluffy<colourEnd> in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " <colourStart>чрезвычайно толстый и пушистый<colourEnd> по сравнению с остальным телом [npc.her]."));
 					break;
 			}
 		}
 		if(this.getTags().contains(BodyPartTag.TAIL_TYPE_HAIR)) {
 			if(owner.getTailCount()>1) {
-				sb.append(UtilText.parse(owner, " [npc.Her] horse tails are"));
+				sb.append(UtilText.parse(owner, " [npc.Her] лошадиные хвосты — это"));
 			} else {
-				sb.append(UtilText.parse(owner, " [npc.Her] horse tail is"));
+				sb.append(UtilText.parse(owner, " [npc.Her] лошадиный хвост — это"));
 			}
 			switch(owner.getTailGirth()) {
 				case ZERO_THIN:
-					sb.append(UtilText.parse(owner, " <colourStart>very much lacking in volume<colourEnd> in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " <colourStart>сильно не хватает объема<colourEnd> по сравнению с остальным телом [npc.her]."));
 					break;
 				case ONE_SLENDER:
-					sb.append(UtilText.parse(owner, " <colourStart>lacking in volume<colourEnd> in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " <colourStart>не хватает объема<colourEnd> по сравнению с остальным телом [npc.her]."));
 					break;
 				case TWO_NARROW:
-					sb.append(UtilText.parse(owner, " <colourStart>a little lacking in volume<colourEnd> in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " <colourStart>слегка не хватает объема<colourEnd> по сравнению с остальным телом [npc.her]."));
 					break;
 				case THREE_AVERAGE:
-					sb.append(UtilText.parse(owner, " of an <colourStart>average volume<colourEnd> in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " <colourStart>среднего объема<colourEnd> по отношению к остальному телу [npc.her]."));
 					break;
 				case FOUR_GIRTHY:
-					sb.append(UtilText.parse(owner, " <colourStart>quite voluminous<colourEnd> in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " <colourStart>довольно объемным<colourEnd> по отношению к остальному телу [npc.her]."));
 					break;
 				case FIVE_THICK:
-					sb.append(UtilText.parse(owner, " <colourStart>very voluminous<colourEnd> in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " <colourStart>очень объемным<colourEnd> по отношению к остальному телу [npc.her]."));
 					break;
 				case SIX_CHUBBY:
-					sb.append(UtilText.parse(owner, " <colourStart>incredibly voluminous<colourEnd> in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " <colourStart>невероятно объемным<colourEnd> по отношению к остальному телу [npc.her]."));
 					break;
 				case SEVEN_FAT:
-					sb.append(UtilText.parse(owner, " <colourStart>extremely voluminous<colourEnd> in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " <colourStart>чрезвычайно объемным<colourEnd> по отношению к остальному телу [npc.her]."));
 					break;
 			}
 		}
 		if(this.getTags().contains(BodyPartTag.TAIL_TYPE_FEATHER)) {
 			if(owner.getTailCount()>1) {
-				sb.append(UtilText.parse(owner, " [npc.Her] plumes of feathers are"));
+				sb.append(UtilText.parse(owner, " [npc.Her]перья представляют собой"));
 			} else {
-				sb.append(UtilText.parse(owner, " [npc.Her] plume of feathers is"));
+				sb.append(UtilText.parse(owner, " [npc.Her]перья представляют собой"));
 			}
 			switch(owner.getTailGirth()) {
 				case ZERO_THIN:
-					sb.append(UtilText.parse(owner, " <colourStart>very small and lacking in volume<colourEnd> in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " <colourStart>очень маленьким и лишенным объема<colourEnd> по отношению к остальному телу [npc.her]."));
 					break;
 				case ONE_SLENDER:
-					sb.append(UtilText.parse(owner, " <colourStart>small and somewhat lacking in volume<colourEnd> in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " <colourStart>маленьким и несколько лишенным объема<colourEnd> по отношению к остальному телу [npc.her]."));
 					break;
 				case TWO_NARROW:
-					sb.append(UtilText.parse(owner, " <colourStart>a little narrow and lacking in volume<colourEnd> in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " <colourStart>немного узким и лишенным объема<colourEnd> по отношению к остальному телу [npc.her]."));
 					break;
 				case THREE_AVERAGE:
-					sb.append(UtilText.parse(owner, " of an <colourStart>average size and volume<colourEnd> in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " <colourStart>среднего размера и объема<colourEnd> по отношению к остальному телу [npc.her]."));
 					break;
 				case FOUR_GIRTHY:
-					sb.append(UtilText.parse(owner, " <colourStart>quite large and voluminous<colourEnd> in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " <colourStart>довольно крупный и объемный<colourEnd> по отношению к остальному телу [npc.her]."));
 					break;
 				case FIVE_THICK:
-					sb.append(UtilText.parse(owner, " <colourStart>very large and voluminous<colourEnd> in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " <colourStart>очень крупный и объемный<colourEnd> по отношению к остальному телу [npc.her]."));
 					break;
 				case SIX_CHUBBY:
-					sb.append(UtilText.parse(owner, " <colourStart>incredibly voluminous<colourEnd> in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " <colourStart>невероятно объемным<colourEnd> по отношению к остальному телу [npc.her]."));
 					break;
 				case SEVEN_FAT:
-					sb.append(UtilText.parse(owner, " <colourStart>extremely voluminous<colourEnd> in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " <colourStart>чрезвычайно объемным<colourEnd> по отношению к остальному телу [npc.her]."));
 					break;
 			}
 		}
 		if(this.getTags().contains(BodyPartTag.TAIL_TYPE_GENERIC)) {
 			if(owner.getTailCount()>1) {
-				sb.append(UtilText.parse(owner, " [npc.Her] tails are"));
+				sb.append(UtilText.parse(owner, " [npc.Her]хвосты"));
 			} else {
-				sb.append(UtilText.parse(owner, " [npc.Her] tail is"));
+				sb.append(UtilText.parse(owner, " [npc.Her]хвост"));
 			}
 			switch(owner.getTailGirth()) {
 				case ZERO_THIN:
-					sb.append(UtilText.parse(owner, " <colourStart>very small<colourEnd> in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " <colourStart>очень маленький<colourEnd> по отношению к остальному телу [npc.her]."));
 					break;
 				case ONE_SLENDER:
-					sb.append(UtilText.parse(owner, " <colourStart>somewhat small<colourEnd> in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " <colourStart>несколько мелкий<colourEnd> по отношению к остальному телу [npc.her]."));
 					break;
 				case TWO_NARROW:
-					sb.append(UtilText.parse(owner, " <colourStart>a little narrow<colourEnd> in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " <colourStart>слегка узкий<colourEnd> по отношению к остальному телу [npc.her]."));
 					break;
 				case THREE_AVERAGE:
-					sb.append(UtilText.parse(owner, " of an <colourStart>average size<colourEnd> in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " <colourStart>среднего размера<colourEnd> по отношению к остальному телу [npc.her]."));
 					break;
 				case FOUR_GIRTHY:
-					sb.append(UtilText.parse(owner, " <colourStart>quite large<colourEnd> in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " <colourStart>довольно крупный<colourEnd> по отношению к остальному телу [npc.her]."));
 					break;
 				case FIVE_THICK:
-					sb.append(UtilText.parse(owner, " <colourStart>very large<colourEnd> in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " <colourStart>очень большой<colourEnd> по сравнению с остальным телом [npc.her]."));
 					break;
 				case SIX_CHUBBY:
-					sb.append(UtilText.parse(owner, " <colourStart>incredibly large<colourEnd> in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " <colourStart>невероятно большой<colourEnd> по сравнению с остальным телом [npc.her]."));
 					break;
 				case SEVEN_FAT:
-					sb.append(UtilText.parse(owner, " <colourStart>extremely large<colourEnd> in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " <colourStart>чрезвычайно большой<colourEnd> по сравнению с остальным телом [npc.her]."));
 					break;
 			}
 		}
@@ -542,122 +542,122 @@ public abstract class AbstractTailType implements BodyPartTypeInterface {
 				|| this.getTags().contains(BodyPartTag.TAIL_TYPE_SCALES)) {
 			switch(girth) {
 				case ZERO_THIN:
-					return "thin";
+					return "тонкий";
 				case ONE_SLENDER:
-					return "slender";
+					return "тонкие";
 				case TWO_NARROW:
-					return "narrow";
+					return "узкий";
 				case THREE_AVERAGE:
-					return "average";
+					return "средний";
 				case FOUR_GIRTHY:
-					return "thick";
+					return "толстый";
 				case FIVE_THICK:
-					return "extra-thick";
+					return "сверхтолстый";
 				case SIX_CHUBBY:
-					return "extremely-thick";
+					return "экстремально толстый";
 				case SEVEN_FAT:
-					return "unbelievably-thick";
+					return "невероятно толстый";
 			}
 		}
 		if(this.getTags().contains(BodyPartTag.TAIL_TYPE_FUR)) {
 			switch(girth) {
 				case ZERO_THIN:
-					return "thin";
+					return "тонкий";
 				case ONE_SLENDER:
-					return "slender";
+					return "тонкие";
 				case TWO_NARROW:
-					return "narrow";
+					return "узкий";
 				case THREE_AVERAGE:
-					return "fluffy";
+					return "пушистый";
 				case FOUR_GIRTHY:
-					return "very-fluffy";
+					return "очень пушистый";
 				case FIVE_THICK:
-					return "extra-fluffy";
+					return "сверхпушистый";
 				case SIX_CHUBBY:
-					return "extremely-fluffy";
+					return "невероятно пушистый";
 				case SEVEN_FAT:
-					return "unbelievably-fluffy";
+					return "невообразимо пушистый";
 			}
 		}
 		if(this.getTags().contains(BodyPartTag.TAIL_TYPE_TUFT)) {
 			switch(girth) {
 				case ZERO_THIN:
-					return "tiny";
+					return "крошечный";
 				case ONE_SLENDER:
-					return "small";
+					return "маленький";
 				case TWO_NARROW:
-					return "narrow";
+					return "узкий";
 				case THREE_AVERAGE:
-					return "fluffy";
+					return "пушистый";
 				case FOUR_GIRTHY:
-					return "very-fluffy";
+					return "очень пушистый";
 				case FIVE_THICK:
-					return "extra-fluffy";
+					return "сверхпушистый";
 				case SIX_CHUBBY:
-					return "extremely-fluffy";
+					return "невероятно пушистый";
 				case SEVEN_FAT:
-					return "unbelievably-fluffy";
+					return "невообразимо пушистый";
 			}
 		}
 		if(this.getTags().contains(BodyPartTag.TAIL_TYPE_HAIR)) {
 			switch(girth) {
 				case ZERO_THIN:
-					return "thin";
+					return "тонкий";
 				case ONE_SLENDER:
-					return "small";
+					return "маленький";
 				case TWO_NARROW:
-					return "narrow";
+					return "узкий";
 				case THREE_AVERAGE:
-					return "average";
+					return "средний";
 				case FOUR_GIRTHY:
-					return "voluminous";
+					return "пышный";
 				case FIVE_THICK:
-					return "extra-voluminous";
+					return "очень пышный";
 				case SIX_CHUBBY:
-					return "extremely-voluminous";
+					return "чрезвычайно пышный";
 				case SEVEN_FAT:
-					return "unbelievably-voluminous";
+					return "невероятно пышный";
 			}
 		}
 
 		if(this.getTags().contains(BodyPartTag.TAIL_TYPE_FEATHER)) {
 			switch(girth) {
 				case ZERO_THIN:
-					return "thin";
+					return "тонкий";
 				case ONE_SLENDER:
-					return "small";
+					return "маленький";
 				case TWO_NARROW:
-					return "narrow";
+					return "узкий";
 				case THREE_AVERAGE:
-					return "average";
+					return "средний";
 				case FOUR_GIRTHY:
-					return "voluminous";
+					return "пышный";
 				case FIVE_THICK:
-					return "extra-voluminous";
+					return "очень пышный";
 				case SIX_CHUBBY:
-					return "extremely-voluminous";
+					return "чрезвычайно пышный";
 				case SEVEN_FAT:
-					return "unbelievably-voluminous";
+					return "невероятно пышный";
 			}
 		}
 		if(this.getTags().contains(BodyPartTag.TAIL_TYPE_GENERIC)) {
 			switch(girth) {
 				case ZERO_THIN:
-					return "tiny";
+					return "крошечный";
 				case ONE_SLENDER:
-					return "small";
+					return "маленький";
 				case TWO_NARROW:
-					return "narrow";
+					return "узкий";
 				case THREE_AVERAGE:
-					return "average";
+					return "средний";
 				case FOUR_GIRTHY:
-					return "large";
+					return "крупные";
 				case FIVE_THICK:
-					return "huge";
+					return "огромный";
 				case SIX_CHUBBY:
-					return "massive";
+					return "массивный";
 				case SEVEN_FAT:
-					return "colossal";
+					return "колоссальный";
 			}
 		}
 		
@@ -674,130 +674,100 @@ public abstract class AbstractTailType implements BodyPartTypeInterface {
 				|| this.getTags().contains(BodyPartTag.TAIL_TYPE_FUR)) {
 			if(positive) {
 				return UtilText.parse(owner,
-						"<p>"
-							+ "[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(feel)] a deep throbbing sensation building up at the base of [npc.her] spine."
-							+ " Without any further warning of what's to come, [npc.her]"
+						"<p>[npc.Name] [npc.verb(let)] из [npc.a_moan+] как [npc.she] [npc.verb(feel)] глубокое пульсирующее ощущение, нарастающее у основания [npc.her] позвоночника. Без всякого предупреждения о том, что последует дальше, [npc.her]"
 							+(owner.getTailCount()>1
-									?" [npc.tails] suddenly [style.boldGrow(grow thicker)]."
-									:" [npc.tail] suddenly [style.boldGrow(grows thicker)].")
-							+ "<br/>"
-							+ "[npc.She] now [npc.has] [style.boldTfGeneric("+tailText+")]!"
+									?" [npc.tails] внезапно [style.boldGrow(становится толще)]."
+									:" [npc.tail] внезапно [style.boldGrow(набухает)].")
+							+ "<br/>[npc.She] теперь [npc.has] [style.boldTfGeneric("+tailText+")]!"
 						+ "</p>");
 					
 			} else {
 				return UtilText.parse(owner,
-						"<p>"
-								+ "[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(feel)] a deep throbbing sensation building up at the base of [npc.her] spine."
-								+ " Without any further warning of what's to come, [npc.her]"
+						"<p>[npc.Name] [npc.verb(let)] из [npc.a_moan+] как [npc.she] [npc.verb(feel)] глубокое пульсирующее ощущение, нарастающее у основания [npc.her] позвоночника. Без всякого предупреждения о том, что последует дальше, [npc.her]"
 								+(owner.getTailCount()>1
-										?" [npc.tails] suddenly [style.boldShrink(shrink down)]."
-										:" [npc.tail] suddenly [style.boldShrink(shrinks down)].")
-								+ "<br/>"
-							+ "[npc.She] now [npc.has] [style.boldTfGeneric("+tailText+")]!"
+										?" [npc.tails] внезапно [style.boldShrink(уменьшается)]."
+										:" [npc.tail] внезапно [style.boldShrink(сжимается)].")
+								+ "<br/>[npc.She] теперь [npc.has] [style.boldTfGeneric("+tailText+")]!"
 						+ "</p>");
 			}
 		}
 		if(this.getTags().contains(BodyPartTag.TAIL_TYPE_TUFT)) {
 			if(positive) {
 				return UtilText.parse(owner,
-						"<p>"
-							+ "[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(feel)] a deep throbbing sensation building up at the base of [npc.her] spine."
-							+ " Without any further warning of what's to come, [npc.her]"
+						"<p>[npc.Name] [npc.verb(let)] из [npc.a_moan+] как [npc.she] [npc.verb(feel)] глубокое пульсирующее ощущение, нарастающее у основания [npc.her] позвоночника. Без всякого предупреждения о том, что последует дальше, [npc.her]"
 							+(owner.getTailCount()>1
-									?" [npc.tails] suddenly [style.boldGrow(fluff up and grow bigger)]."
-									:" [npc.tail] suddenly [style.boldGrow(fluffs up and grows bigger)].")
-							+ "<br/>"
-							+ "[npc.She] now [npc.has] [style.boldTfGeneric("+tailText+")]!"
+									?" [npc.tails] внезапно [style.boldGrow(распушается и увеличивается в размерах)]."
+									:" [npc.tail] внезапно [style.boldGrow(распушается и увеличивается в размерах)].")
+							+ "<br/>[npc.She] теперь [npc.has] [style.boldTfGeneric("+tailText+")]!"
 						+ "</p>");
 					
 			} else {
 				return UtilText.parse(owner,
-						"<p>"
-								+ "[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(feel)] a deep throbbing sensation building up at the base of [npc.her] spine."
-								+ " Without any further warning of what's to come, [npc.her]"
+						"<p>[npc.Name] [npc.verb(let)] из [npc.a_moan+] как [npc.she] [npc.verb(feel)] глубокое пульсирующее ощущение, нарастающее у основания [npc.her] позвоночника. Без всякого предупреждения о том, что последует дальше, [npc.her]"
 								+(owner.getTailCount()>1
-										?" [npc.tails] suddenly [style.boldShrink(shrink down)]."
-										:" [npc.tail] suddenly [style.boldShrink(shrinks down)].")
-								+ "<br/>"
-							+ "[npc.She] now [npc.has] [style.boldTfGeneric("+tailText+")]!"
+										?" [npc.tails] внезапно [style.boldShrink(уменьшается)]."
+										:" [npc.tail] внезапно [style.boldShrink(сжимается)].")
+								+ "<br/>[npc.She] теперь [npc.has] [style.boldTfGeneric("+tailText+")]!"
 						+ "</p>");
 			}
 		}
 		if(this.getTags().contains(BodyPartTag.TAIL_TYPE_HAIR)) {
 			if(positive) {
 				return UtilText.parse(owner,
-						"<p>"
-							+ "[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(feel)] a deep throbbing sensation building up at the base of [npc.her] spine."
-							+ " Without any further warning of what's to come, [npc.her]"
+						"<p>[npc.Name] [npc.verb(let)] из [npc.a_moan+] как [npc.she] [npc.verb(feel)] глубокое пульсирующее ощущение, нарастающее у основания [npc.her] позвоночника. Без всякого предупреждения о том, что последует дальше, [npc.her]"
 							+(owner.getTailCount()>1
-									?" [npc.tails] suddenly [style.boldGrow(fill out and expand in volume)]."
-									:" [npc.tail] suddenly [style.boldGrow(fills out and expands in volume)].")
-							+ "<br/>"
-							+ "[npc.She] now [npc.has] [style.boldTfGeneric("+tailText+")]!"
+									?" [npc.tails] внезапно [style.boldGrow(набухает и увеличивается в объеме)]."
+									:" [npc.tail] внезапно [style.boldGrow(набухает и увеличивается в объеме)].")
+							+ "<br/>[npc.She] теперь [npc.has] [style.boldTfGeneric("+tailText+")]!"
 						+ "</p>");
 					
 			} else {
 				return UtilText.parse(owner,
-						"<p>"
-								+ "[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(feel)] a deep throbbing sensation building up at the base of [npc.her] spine."
-								+ " Without any further warning of what's to come, [npc.her]"
+						"<p>[npc.Name] [npc.verb(let)] из [npc.a_moan+] как [npc.she] [npc.verb(feel)] глубокое пульсирующее ощущение, нарастающее у основания [npc.her] позвоночника. Без всякого предупреждения о том, что последует дальше, [npc.her]"
 								+(owner.getTailCount()>1
-										?" [npc.tails] suddenly [style.boldShrink(shrink down and lose volume)]."
-										:" [npc.tail] suddenly [style.boldShrink(shrinks down and loses volume)].")
-								+ "<br/>"
-							+ "[npc.She] now [npc.has] [style.boldTfGeneric("+tailText+")]!"
+										?" [npc.tails] внезапно [style.boldShrink(сжимается и теряет в объеме)]."
+										:" [npc.tail] внезапно [style.boldShrink(сжимается и теряет в объеме)].")
+								+ "<br/>[npc.She] теперь [npc.has] [style.boldTfGeneric("+tailText+")]!"
 						+ "</p>");
 			}
 		}
 		if(this.getTags().contains(BodyPartTag.TAIL_TYPE_FEATHER)) {
 			if(positive) {
 				return UtilText.parse(owner,
-						"<p>"
-							+ "[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(feel)] a deep throbbing sensation building up at the base of [npc.her] spine."
-							+ " Without any further warning of what's to come, [npc.her]"
+						"<p>[npc.Name] [npc.verb(let)] из [npc.a_moan+] как [npc.she] [npc.verb(feel)] глубокое пульсирующее ощущение, нарастающее у основания [npc.her] позвоночника. Без всякого предупреждения о том, что последует дальше, [npc.her]"
 							+(owner.getTailCount()>1
-									?" [npc.tails] suddenly [style.boldGrow(fill out and expand in volume)]."
-									:" [npc.tail] suddenly [style.boldGrow(fills out and expands in volume)].")
-							+ "<br/>"
-							+ "[npc.She] now [npc.has] [style.boldTfGeneric("+tailText+")]!"
+									?" [npc.tails] внезапно [style.boldGrow(набухает и увеличивается в объеме)]."
+									:" [npc.tail] внезапно [style.boldGrow(набухает и увеличивается в объеме)].")
+							+ "<br/>[npc.She] теперь [npc.has] [style.boldTfGeneric("+tailText+")]!"
 						+ "</p>");
 					
 			} else {
 				return UtilText.parse(owner,
-						"<p>"
-								+ "[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(feel)] a deep throbbing sensation building up at the base of [npc.her] spine."
-								+ " Without any further warning of what's to come, [npc.her]"
+						"<p>[npc.Name] [npc.verb(let)] из [npc.a_moan+] как [npc.she] [npc.verb(feel)] глубокое пульсирующее ощущение, нарастающее у основания [npc.her] позвоночника. Без всякого предупреждения о том, что последует дальше, [npc.her]"
 								+(owner.getTailCount()>1
-										?" [npc.tails] suddenly [style.boldShrink(shrink down and lose volume)]."
-										:" [npc.tail] suddenly [style.boldShrink(shrinks down and loses volume)].")
-								+ "<br/>"
-							+ "[npc.She] now [npc.has] [style.boldTfGeneric("+tailText+")]!"
+										?" [npc.tails] внезапно [style.boldShrink(сжимается и теряет в объеме)]."
+										:" [npc.tail] внезапно [style.boldShrink(сжимается и теряет в объеме)].")
+								+ "<br/>[npc.She] теперь [npc.has] [style.boldTfGeneric("+tailText+")]!"
 						+ "</p>");
 			}
 		}
 		if(this.getTags().contains(BodyPartTag.TAIL_TYPE_GENERIC)) {
 			if(positive) {
 				return UtilText.parse(owner,
-						"<p>"
-							+ "[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(feel)] a deep throbbing sensation building up at the base of [npc.her] spine."
-							+ " Without any further warning of what's to come, [npc.her]"
+						"<p>[npc.Name] [npc.verb(let)] из [npc.a_moan+] как [npc.she] [npc.verb(feel)] глубокое пульсирующее ощущение, нарастающее у основания [npc.her] позвоночника. Без всякого предупреждения о том, что последует дальше, [npc.her]"
 							+(owner.getTailCount()>1
-									?" [npc.tails] suddenly [style.boldGrow(grow larger)]."
-									:" [npc.tail] suddenly [style.boldGrow(grows larger)].")
-							+ "<br/>"
-							+ "[npc.She] now [npc.has] [style.boldTfGeneric("+tailText+")]!"
+									?" [npc.tails] внезапно [style.boldGrow(увеличивается)]."
+									:" [npc.tail] внезапно [style.boldGrow(становится больше)].")
+							+ "<br/>[npc.She] теперь [npc.has] [style.boldTfGeneric("+tailText+")]!"
 						+ "</p>");
 					
 			} else {
 				return UtilText.parse(owner,
-						"<p>"
-								+ "[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(feel)] a deep throbbing sensation building up at the base of [npc.her] spine."
-								+ " Without any further warning of what's to come, [npc.her]"
+						"<p>[npc.Name] [npc.verb(let)] из [npc.a_moan+] как [npc.she] [npc.verb(feel)] глубокое пульсирующее ощущение, нарастающее у основания [npc.her] позвоночника. Без всякого предупреждения о том, что последует дальше, [npc.her]"
 								+(owner.getTailCount()>1
-										?" [npc.tails] suddenly [style.boldShrink(shrink down)]."
-										:" [npc.tail] suddenly [style.boldShrink(shrinks down)].")
-								+ "<br/>"
-							+ "[npc.She] now [npc.has] [style.boldTfGeneric("+tailText+")]!"
+										?" [npc.tails] внезапно [style.boldShrink(уменьшается)]."
+										:" [npc.tail] внезапно [style.boldShrink(сжимается)].")
+								+ "<br/>[npc.She] теперь [npc.has] [style.boldTfGeneric("+tailText+")]!"
 						+ "</p>");
 			}
 		}
@@ -805,136 +775,106 @@ public abstract class AbstractTailType implements BodyPartTypeInterface {
 	}
 	
 	public String getLengthTransformationDescription(GameCharacter owner, boolean positive) {
-		String heightPercentageDescription = " (length is "+((int)(owner.getTailLengthAsPercentageOfHeight()*100))+"% of [npc.namePos] height)";
+		String heightPercentageDescription = " (длина составляет "+((int)(owner.getTailLengthAsPercentageOfHeight()*100))+"% oф при росте [npc.namePos])";
 		if(this.getTags().contains(BodyPartTag.TAIL_TYPE_SKIN)
 				|| this.getTags().contains(BodyPartTag.TAIL_TYPE_SCALES)
 				|| this.getTags().contains(BodyPartTag.TAIL_TYPE_FUR)) {
 			if(positive) {
 				return UtilText.parse(owner,
-						"<p>"
-							+ "[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(feel)] a deep throbbing sensation building up at the base of [npc.her] spine."
-							+ " Without any further warning of what's to come, [npc.her]"
+						"<p>[npc.Name] [npc.verb(let)] из [npc.a_moan+] как [npc.she] [npc.verb(feel)] глубокое пульсирующее ощущение, нарастающее у основания [npc.her] позвоночника. Без всякого предупреждения о том, что последует дальше, [npc.her]"
 							+(owner.getTailCount()>1
-									?" [npc.tails] suddenly [style.boldGrow(grow longer)]."
-									:" [npc.tail] suddenly [style.boldGrow(grows longer)].")
-							+ "<br/>"
-							+ "[npc.She] now [npc.has] [style.boldTfGeneric([npc.a_tailLength] [npc.tail])]"+heightPercentageDescription+"!"
+									?" [npc.tails] внезапно [style.boldGrow(удлиняется)]."
+									:" [npc.tail] внезапно [style.boldGrow(становится длиннее)].")
+							+ "<br/>[npc.She] теперь [npc.has] [style.boldTfGeneric([npc.a_tailLength] [npc.tail])]"+heightPercentageDescription+"!"
 						+ "</p>");
 					
 			} else {
 				return UtilText.parse(owner,
-						"<p>"
-								+ "[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(feel)] a deep throbbing sensation building up at the base of [npc.her] spine."
-								+ " Without any further warning of what's to come, [npc.her]"
+						"<p>[npc.Name] [npc.verb(let)] из [npc.a_moan+] как [npc.she] [npc.verb(feel)] глубокое пульсирующее ощущение, нарастающее у основания [npc.her] позвоночника. Без всякого предупреждения о том, что последует дальше, [npc.her]"
 								+(owner.getTailCount()>1
-										?" [npc.tails] suddenly [style.boldShrink(shorten)]."
-										:" [npc.tail] suddenly [style.boldShrink(shortens)].")
-								+ "<br/>"
-							+ "[npc.She] now [npc.has] [style.boldTfGeneric([npc.a_tailLength] [npc.tail])]"+heightPercentageDescription+"!"
+										?" [npc.tails] внезапно [style.boldShrink(укорачивается)]."
+										:" [npc.tail] внезапно [style.boldShrink(становится короче)].")
+								+ "<br/>[npc.She] теперь [npc.has] [style.boldTfGeneric([npc.a_tailLength] [npc.tail])]"+heightPercentageDescription+"!"
 						+ "</p>");
 			}
 		}
 		if(this.getTags().contains(BodyPartTag.TAIL_TYPE_TUFT)) {
 			if(positive) {
 				return UtilText.parse(owner,
-						"<p>"
-							+ "[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(feel)] a deep throbbing sensation building up at the base of [npc.her] spine."
-							+ " Without any further warning of what's to come, [npc.her]"
+						"<p>[npc.Name] [npc.verb(let)] из [npc.a_moan+] как [npc.she] [npc.verb(feel)] глубокое пульсирующее ощущение, нарастающее у основания [npc.her] позвоночника. Без всякого предупреждения о том, что последует дальше, [npc.her]"
 							+(owner.getTailCount()>1
-									?" [npc.tails] suddenly [style.boldGrow(fluff up and grow longer)]."
-									:" [npc.tail] suddenly [style.boldGrow(fluffs up and grows longer)].")
-							+ "<br/>"
-							+ "[npc.She] now [npc.has] [style.boldTfGeneric([npc.a_tailLength] [npc.tail])]"+heightPercentageDescription+"!"
+									?" [npc.tails] внезапно [style.boldGrow(распушается и становится длиннее)]."
+									:" [npc.tail] внезапно [style.boldGrow(распушается и удлиняется)].")
+							+ "<br/>[npc.She] теперь [npc.has] [style.boldTfGeneric([npc.a_tailLength] [npc.tail])]"+heightPercentageDescription+"!"
 						+ "</p>");
 					
 			} else {
 				return UtilText.parse(owner,
-						"<p>"
-								+ "[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(feel)] a deep throbbing sensation building up at the base of [npc.her] spine."
-								+ " Without any further warning of what's to come, [npc.her]"
+						"<p>[npc.Name] [npc.verb(let)] из [npc.a_moan+] как [npc.she] [npc.verb(feel)] глубокое пульсирующее ощущение, нарастающее у основания [npc.her] позвоночника. Без всякого предупреждения о том, что последует дальше, [npc.her]"
 								+(owner.getTailCount()>1
-										?" [npc.tails] suddenly [style.boldShrink(shorten)]."
-										:" [npc.tail] suddenly [style.boldShrink(shortens)].")
-								+ "<br/>"
-							+ "[npc.She] now [npc.has] [style.boldTfGeneric([npc.a_tailLength] [npc.tail])]"+heightPercentageDescription+"!"
+										?" [npc.tails] внезапно [style.boldShrink(укорачивается)]."
+										:" [npc.tail] внезапно [style.boldShrink(становится короче)].")
+								+ "<br/>[npc.She] теперь [npc.has] [style.boldTfGeneric([npc.a_tailLength] [npc.tail])]"+heightPercentageDescription+"!"
 						+ "</p>");
 			}
 		}
 		if(this.getTags().contains(BodyPartTag.TAIL_TYPE_HAIR)) {
 			if(positive) {
 				return UtilText.parse(owner,
-						"<p>"
-							+ "[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(feel)] a deep throbbing sensation building up at the base of [npc.her] spine."
-							+ " Without any further warning of what's to come, [npc.her]"
+						"<p>[npc.Name] [npc.verb(let)] из [npc.a_moan+] как [npc.she] [npc.verb(feel)] глубокое пульсирующее ощущение, нарастающее у основания [npc.her] позвоночника. Без всякого предупреждения о том, что последует дальше, [npc.her]"
 							+(owner.getTailCount()>1
-									?" [npc.tails] suddenly [style.boldGrow(grow longer)]."
-									:" [npc.tail] suddenly [style.boldGrow(grows longer)].")
-							+ "<br/>"
-							+ "[npc.She] now [npc.has] [style.boldTfGeneric([npc.a_tailLength] [npc.tail])]"+heightPercentageDescription+"!"
+									?" [npc.tails] внезапно [style.boldGrow(удлиняется)]."
+									:" [npc.tail] внезапно [style.boldGrow(становится длиннее)].")
+							+ "<br/>[npc.She] теперь [npc.has] [style.boldTfGeneric([npc.a_tailLength] [npc.tail])]"+heightPercentageDescription+"!"
 						+ "</p>");
 					
 			} else {
 				return UtilText.parse(owner,
-						"<p>"
-								+ "[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(feel)] a deep throbbing sensation building up at the base of [npc.her] spine."
-								+ " Without any further warning of what's to come, [npc.her]"
+						"<p>[npc.Name] [npc.verb(let)] из [npc.a_moan+] как [npc.she] [npc.verb(feel)] глубокое пульсирующее ощущение, нарастающее у основания [npc.her] позвоночника. Без всякого предупреждения о том, что последует дальше, [npc.her]"
 								+(owner.getTailCount()>1
-										?" [npc.tails] suddenly [style.boldShrink(shorten)]."
-										:" [npc.tail] suddenly [style.boldShrink(shortens)].")
-								+ "<br/>"
-							+ "[npc.She] now [npc.has] [style.boldTfGeneric([npc.a_tailLength] [npc.tail])]"+heightPercentageDescription+"!"
+										?" [npc.tails] внезапно [style.boldShrink(укорачивается)]."
+										:" [npc.tail] внезапно [style.boldShrink(становится короче)].")
+								+ "<br/>[npc.She] теперь [npc.has] [style.boldTfGeneric([npc.a_tailLength] [npc.tail])]"+heightPercentageDescription+"!"
 						+ "</p>");
 			}
 		}
 		if(this.getTags().contains(BodyPartTag.TAIL_TYPE_FEATHER)) {
 			if(positive) {
 				return UtilText.parse(owner,
-						"<p>"
-							+ "[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(feel)] a deep throbbing sensation building up at the base of [npc.her] spine."
-							+ " Without any further warning of what's to come, [npc.her]"
+						"<p>[npc.Name] [npc.verb(let)] из [npc.a_moan+] как [npc.she] [npc.verb(feel)] глубокое пульсирующее ощущение, нарастающее у основания [npc.her] позвоночника. Без всякого предупреждения о том, что последует дальше, [npc.her]"
 							+(owner.getTailCount()>1
-									?" [npc.tails] suddenly [style.boldGrow(grow longer)]."
-									:" [npc.tail] suddenly [style.boldGrow(grows longer)].")
-							+ "<br/>"
-							+ "[npc.She] now [npc.has] [style.boldTfGeneric([npc.a_tailLength] [npc.tail])]"+heightPercentageDescription+"!"
+									?" [npc.tails] внезапно [style.boldGrow(удлиняется)]."
+									:" [npc.tail] внезапно [style.boldGrow(становится длиннее)].")
+							+ "<br/>[npc.She] теперь [npc.has] [style.boldTfGeneric([npc.a_tailLength] [npc.tail])]"+heightPercentageDescription+"!"
 						+ "</p>");
 					
 			} else {
 				return UtilText.parse(owner,
-						"<p>"
-								+ "[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(feel)] a deep throbbing sensation building up at the base of [npc.her] spine."
-								+ " Without any further warning of what's to come, [npc.her]"
+						"<p>[npc.Name] [npc.verb(let)] из [npc.a_moan+] как [npc.she] [npc.verb(feel)] глубокое пульсирующее ощущение, нарастающее у основания [npc.her] позвоночника. Без всякого предупреждения о том, что последует дальше, [npc.her]"
 								+(owner.getTailCount()>1
-										?" [npc.tails] suddenly [style.boldShrink(shorten)]."
-										:" [npc.tail] suddenly [style.boldShrink(shortens)].")
-								+ "<br/>"
-							+ "[npc.She] now [npc.has] [style.boldTfGeneric([npc.a_tailLength] [npc.tail])]"+heightPercentageDescription+"!"
+										?" [npc.tails] внезапно [style.boldShrink(укорачивается)]."
+										:" [npc.tail] внезапно [style.boldShrink(становится короче)].")
+								+ "<br/>[npc.She] теперь [npc.has] [style.boldTfGeneric([npc.a_tailLength] [npc.tail])]"+heightPercentageDescription+"!"
 						+ "</p>");
 			}
 		}
 		if(this.getTags().contains(BodyPartTag.TAIL_TYPE_GENERIC)) {
 			if(positive) {
 				return UtilText.parse(owner,
-						"<p>"
-							+ "[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(feel)] a deep throbbing sensation building up at the base of [npc.her] spine."
-							+ " Without any further warning of what's to come, [npc.her]"
+						"<p>[npc.Name] [npc.verb(let)] из [npc.a_moan+] как [npc.she] [npc.verb(feel)] глубокое пульсирующее ощущение, нарастающее у основания [npc.her] позвоночника. Без всякого предупреждения о том, что последует дальше, [npc.her]"
 							+(owner.getTailCount()>1
-									?" [npc.tails] suddenly [style.boldGrow(grow longer)]."
-									:" [npc.tail] suddenly [style.boldGrow(grows longer)].")
-							+ "<br/>"
-							+ "[npc.She] now [npc.has] [style.boldTfGeneric([npc.a_tailLength] [npc.tail])]"+heightPercentageDescription+"!"
+									?" [npc.tails] внезапно [style.boldGrow(удлиняется)]."
+									:" [npc.tail] внезапно [style.boldGrow(становится длиннее)].")
+							+ "<br/>[npc.She] теперь [npc.has] [style.boldTfGeneric([npc.a_tailLength] [npc.tail])]"+heightPercentageDescription+"!"
 						+ "</p>");
 					
 			} else {
 				return UtilText.parse(owner,
-						"<p>"
-								+ "[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(feel)] a deep throbbing sensation building up at the base of [npc.her] spine."
-								+ " Without any further warning of what's to come, [npc.her]"
+						"<p>[npc.Name] [npc.verb(let)] из [npc.a_moan+] как [npc.she] [npc.verb(feel)] глубокое пульсирующее ощущение, нарастающее у основания [npc.her] позвоночника. Без всякого предупреждения о том, что последует дальше, [npc.her]"
 								+(owner.getTailCount()>1
-										?" [npc.tails] suddenly [style.boldShrink(shorten)]."
-										:" [npc.tail] suddenly [style.boldShrink(shortens)].")
-								+ "<br/>"
-							+ "[npc.She] now [npc.has] [style.boldTfGeneric([npc.a_tailLength] [npc.tail])]"+heightPercentageDescription+"!"
+										?" [npc.tails] внезапно [style.boldShrink(укорачивается)]."
+										:" [npc.tail] внезапно [style.boldShrink(становится короче)].")
+								+ "<br/>[npc.She] теперь [npc.has] [style.boldTfGeneric([npc.a_tailLength] [npc.tail])]"+heightPercentageDescription+"!"
 						+ "</p>");
 			}
 		}

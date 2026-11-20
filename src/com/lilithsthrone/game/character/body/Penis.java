@@ -239,9 +239,9 @@ public class Penis implements BodyPartInterface {
 		
 		if (type == getType()) {
 			if(type==PenisType.NONE) {
-				return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] already [npc.verb(lack)] a cock, so nothing happens...)]</p>");
+				return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] уже [npc.verb(lack)] член, так что ничего не происходит...)]</p>");
 			} else {
-				return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] already [npc.has] [npc.a_cockRace]'s cock, so nothing happens...)]</p>");
+				return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] уже [npc.has] [npc.a_cockRace]'s член, так что ничего не происходит...)]</p>");
 			}
 		}
 		
@@ -253,45 +253,43 @@ public class Penis implements BodyPartInterface {
 					length = 1;
 				}
 				sb.append(
-					"[npc.Name] [npc.verb(feel)] an intense heat building up in [npc.her] groin, and [npc.she] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(feel)] the [npc.skin] "
+					"[npc.Name] [npc.verb(feel)] сильный жар, разгорающийся в паху [npc.her], и [npc.she] [npc.verb(let)] [npc.a_moan+], пока [npc.she] [npc.verb(feel)] [npc.skin] "
 								+ (owner.hasVagina()
 										? (!owner.isTaur()
-											?"above [npc.her] pussy"
-											:"beneath [npc.her] pussy")
-										: "between [npc.her] legs")
-							+ " tighten up and start to press outwards."
-						+ " Within moments, a large bump has formed "
+											?"над [npc.her] киской"
+											:"под [npc.her] киской")
+										: "между ног [npc.her]")
+							+ " напрягается и начинает выпирать. Спустя мгновение образуется большая выпуклость "
 							+ (owner.hasVagina()
 									? (!owner.isTaur()
-										?"above [npc.her] feminine slit"
-										:"beneath [npc.her] feminine slit")
-									: "in the middle of [npc.her] groin,")
-							+ " and with a sudden splitting sensation, the bump pushes out and forms into a penis.");
+										?"над женской щелью [npc.her]"
+										:"под женской щелью [npc.her]")
+									: "посреди паха [npc.her],")
+							+ " и с внезапным ощущением расщепления бугорок выпячивается, превращаясь в член.");
 			
 				if(owner.isInternalTesticles()) {
 					sb.append(
-							" As [npc.her] new cock flops down "
+							" Когда новый член [npc.her] обвисает, "
 								+ (owner.hasVagina()
 									? (!owner.isTaur()
-											?"to bump against [npc.her] pussy, [npc.she] [npc.verb(feel)] [npc.a_balls] growing within [npc.her] groin,"
-											:"beneath [npc.her] pussy, [npc.she] [npc.verb(feel)] [npc.a_balls] growing within [npc.her] groin,")
-									: "between [npc.her] legs, [npc.she] [npc.verb(feel)] [npc.a_balls] growing within [npc.her] groin,")
-							+ " and [npc.she] [npc.verb(let)] out an unwitting [npc.moan] as [npc.her] new sexual organ finishes growing.<br/>");
+											?"ударяясь о [npc.her] киску, [npc.she] [npc.verb(feel)] [npc.a_balls] растет внутри [npc.her] паха,"
+											:"под [npc.her] киской, [npc.she] [npc.verb(feel)] [npc.a_balls] растет внутри [npc.her] паха,")
+									: "между ног [npc.her], [npc.she] [npc.verb(feel)] [npc.a_balls] растет внутри [npc.her] паха,")
+							+ " и [npc.she] [npc.verb(let)] наружу невольный [npc.moan], когда [npc.her] новый половой орган завершает свое формирование.<br/>");
 				} else {
 					sb.append(
-							" As [npc.her] new cock flops down "
+							" Когда новый член [npc.her] обвисает, "
 								+ (owner.hasVagina()
 									? (!owner.isTaur()
-											?"to bump against [npc.her] pussy, [npc.she] [npc.verb(feel)] [npc.a_balls] pushing out between [npc.her] two sexes,"
-											:"beneath [npc.her] pussy, [npc.she] [npc.verb(feel)] [npc.a_balls] pushing out between [npc.her] two sexes,")
-									: "between [npc.her] legs, [npc.she] [npc.verb(feel)] [npc.a_balls] push out underneath the base of [npc.her] new shaft,")
-							+ " and [npc.she] [npc.verb(let)] out an unwitting [npc.moan] as [npc.her] new sexual organ finishes growing.<br/>");
+											?"ударяясь о [npc.her] киску, [npc.she] [npc.verb(feel)] [npc.a_balls] выпирает между [npc.her] двумя полами,"
+											:"под [npc.her] киской, [npc.she] [npc.verb(feel)] [npc.a_balls] выпирает между [npc.her] двумя полами,")
+									: "между ног [npc.her], [npc.she] [npc.verb(feel)] [npc.a_balls] выпирает под основанием [npc.her] нового ствола,")
+							+ " и [npc.she] [npc.verb(let)] наружу невольный [npc.moan], когда [npc.her] новый половой орган завершает свое формирование.<br/>");
 				}
 				
 			} else {
 				sb.append(
-						"[npc.Name] [npc.verb(let)] out a gasp as [npc.she] [npc.verb(feel)] [npc.her] [npc.cock] suddenly stand to attention,"
-								+ " and before [npc.sheIs] able to try and get [npc.her] unexpected erection under control, [npc.her] gasp turns into [npc.a_moan+] as [npc.her] cock starts to transform.<br/>");
+						"[npc.Name] [npc.verb(let)] из неожиданности, когда [npc.she] [npc.verb(feel)] [npc.her] [npc.cock] внезапно встает дыбом, и прежде чем [npc.sheIs] успевает попытаться взять [npc.her] неожиданную эрекцию под контроль, [npc.her] вздох превращается в [npc.a_moan+], когда [npc.her] член начинает трансформироваться.<br/>");
 			}
 		sb.append("</p>");
 		
@@ -315,7 +313,7 @@ public class Penis implements BodyPartInterface {
 				penisModifiers.addAll(type.getDefaultRacialPenetrationModifiers());
 				
 				sb.append("<p>");
-					sb.append("Any old modifiers which [npc.her] penis might have had have [style.boldShrink(transformed away)]!");
+					sb.append("Любые старые модификаторы, которые могли быть у [npc.her] пениса, [style.boldShrink(исчезли при трансформации)]!");
 					if(!penisModifiers.isEmpty()) {
 						sb.append("<br/>Instead, [npc.her] new cock is:");
 						for(PenetrationModifier pm : penisModifiers) {
@@ -331,10 +329,8 @@ public class Penis implements BodyPartInterface {
 			AbstractRace penisRace = type.getRace();
 			
 			sb.append("<p>");
-				sb.append("[npc.She] now [npc.has] "+UtilText.generateSingularDeterminer(penisRace.getName(true))+" <b style='color:"+penisRace.getColour().toWebHexString()+";'>"+penisRace.getName(true)+"-like penis</b>,"
-						+ " [npc.materialDescriptor] [npc.penisFullDescription(true)].");
-				sb.append("<br/>[npc.She] [npc.has] <b style='color:"+penisRace.getColour().toWebHexString()+";'>[npc.ballsCount]#IF(npc.isInternalTesticles()) internal#ENDIF balls</b>,"
-						+ " [npc.materialDescriptor] [npc.ballsFullDescription(true)], which produce [npc.cumColour(true)] <b style='color:"+penisRace.getColour().toWebHexString()+";'>"+penisRace.getName(true)+" cum</b>.");
+				sb.append("[npc.She] теперь [npc.has] "+UtilText.generateSingularDeterminer(penisRace.getName(true))+" <b style='color:"+penisRace.getColour().toWebHexString()+";'>"+penisRace.getName(true)+"-подобный член</b>, [npc.materialDescriptor] [npc.penisFullDescription(true)].");
+				sb.append("<br/>[npc.She] [npc.has] <b style='color:"+penisRace.getColour().toWebHexString()+";'>[npc.ballsCount]#IF(npc.isInternalTesticles()) внутренние#ENDIF яички</b>, [npc.materialDescriptor] [npc.ballsFullDescription(true)], которые производят [npc.cumColour(true)] <b style='color:"+penisRace.getColour().toWebHexString()+";'>"+penisRace.getName(true)+" сперму</b>.");
 			sb.append("</p>");
 		}
 		
@@ -374,7 +370,7 @@ public class Penis implements BodyPartInterface {
 		}
 		
 		if(!owner.hasPenisIgnoreDildo()) {
-			return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+			return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 		}
 		
 		int girthChange = 0;
@@ -397,26 +393,16 @@ public class Penis implements BodyPartInterface {
 		}
 		
 		if(girthChange == 0) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(The girth of [npc.namePos] [npc.cock] doesn't change...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(Обхват [npc.namePos] [npc.cock] не меняется...)]</p>");
 		}
 		
 		if (girthChange > 0) {
 			return UtilText.parse(owner,
-					"<p>"
-						+ "[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(feel)] a deep throbbing sensation building up at the base of [npc.her] cock."
-						+ " [npc.Her] cheeks flush red as the feeling works its way up [npc.her] shaft, and as a trickle of precum leaks out from the head of [npc.her] now-hard member,"
-							+ " [npc.she] [npc.verb(realise)] that [npc.her] cock has [style.boldGrow(grown thicker)].<br/>"
-						+ "[npc.She] now [npc.has] [style.boldSex([npc.a_penisGirth] [npc.cock])]!"
-					+ "</p>");
+					"<p>[npc.Name] [npc.verb(let)] из-за того, что [npc.a_moan+] ощущает, как [npc.she] [npc.verb(feel)] глубокая пульсация нарастает у основания [npc.her] члена. [npc.Her] щеки краснеют, когда это ощущение поднимается вверх по [npc.her] стволу, и когда капля предэякулята вытекает из головки [npc.her] теперь уже твердого органа, [npc.she] [npc.verb(realise)] понимает, что [npc.her] член [style.boldGrow(стал толще)].<br/>[npc.She] теперь [npc.has] [style.boldSex([npc.a_penisGirth] [npc.cock])]!</p>");
 			
 		} else {
 			return UtilText.parse(owner,
-					"<p>"
-						+ "[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(feel)] a deep throbbing sensation building up at the base of [npc.her] cock."
-						+ " [npc.Her] cheeks flush red as the feeling works its way up [npc.her] shaft, and as a trickle of precum leaks out from the head of [npc.her] now-hard member,"
-							+ " [npc.she] [npc.verb(realise)] that [npc.her] cock has [style.boldShrink(got thinner)].<br/>"
-						+ "[npc.She] now [npc.has] [style.boldSex([npc.a_penisGirth] [npc.cock])]!"
-					+ "</p>");
+					"<p>[npc.Name] [npc.verb(let)] из-за того, что [npc.a_moan+] как [npc.she] [npc.verb(feel)] глубокая пульсация нарастает у основания [npc.her] члена. [npc.Her] щеки краснеют, когда это ощущение поднимается вверх по [npc.her] стволу, и когда капля предэякулята вытекает из головки [npc.her] теперь уже твердого члена, [npc.she] [npc.verb(realise)] понимает, что [npc.her] член [style.boldShrink(стал тоньше)].<br/>[npc.She] теперь [npc.has] [style.boldSex([npc.a_penisGirth] [npc.cock])]!</p>");
 		}
 	}
 	
@@ -435,7 +421,7 @@ public class Penis implements BodyPartInterface {
 	 */
 	public String setPenisLength(GameCharacter owner, int length) {
 		if(owner!=null && !owner.hasPenisIgnoreDildo()) {
-			return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+			return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 		}
 		
 		int lengthChange = 0;
@@ -462,25 +448,15 @@ public class Penis implements BodyPartInterface {
 		}
 		
 		if(lengthChange == 0) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(The length of [npc.namePos] [npc.cock] doesn't change...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(Длина [npc.namePos] [npc.cock] не меняется...)]</p>");
 		}
 		
 		if (lengthChange > 0) {
 			return UtilText.parse(owner,
-					"<p>"
-						+ "[npc.Name] [npc.verb(let)] out [npc.a_moan] as [npc.she] [npc.verb(feel)] a deep throbbing sensation building up at the base of [npc.her] cock."
-						+ " [npc.Her] cheeks flush red as the feeling works its way up [npc.her] shaft, and as a trickle of precum leaks out from the head of [npc.her] now-hard member,"
-							+ " [npc.she] [npc.verb(realise)] that [npc.her] cock has [style.boldGrow(grown larger)].<br/>"
-						+ "[npc.She] now [npc.has] [style.boldSex([npc.a_penisSize] [npc.cock])]!"
-					+ "</p>");
+					"<p>[npc.Name] [npc.verb(let)] из-за того, что [npc.a_moan] как [npc.she] [npc.verb(feel)] глубокая пульсация нарастает у основания [npc.her] члена. [npc.Her] щеки краснеют, когда это ощущение поднимается вверх по [npc.her] стволу, и когда капля предэякулята вытекает из головки [npc.her] теперь уже твердого члена, [npc.she] [npc.verb(realise)] понимает, что [npc.her] член [style.boldGrow(стал больше)].<br/>[npc.She] теперь [npc.has] [style.boldSex([npc.a_penisSize] [npc.cock])]!</p>");
 		} else {
 			return UtilText.parse(owner,
-					"<p>"
-							+ "[npc.Name] [npc.verb(let)] out [npc.a_moan] as [npc.she] [npc.verb(feel)] an intense tightening sensation building up at the base of [npc.her] cock."
-							+ " [npc.Her] cheeks flush red as the feeling works its way up [npc.her] shaft, and as a trickle of precum leaks out from the head of [npc.her] now-hard member,"
-								+ " [npc.she] [npc.verb(realise)] that [npc.her] cock has [style.boldShrink(shrunk)].<br/>"
-						+ "[npc.She] now [npc.has] [style.boldSex([npc.a_penisSize] [npc.cock])]!"
-					+ "</p>");
+					"<p>[npc.Name] [npc.verb(let)] чувствует, как [npc.a_moan] в виде [npc.she] [npc.verb(feel)] ощущает интенсивное сжатие у основания [npc.her] члена. [npc.Her] щеки краснеют, когда это чувство поднимается вверх по [npc.her] стволу, и когда капля предэякулята вытекает из головки [npc.her] теперь уже твердого органа, [npc.she] [npc.verb(realise)] понимает, что [npc.her] член [style.boldShrink(уменьшился)].<br/>[npc.She] теперь [npc.has] [style.boldSex([npc.a_penisSize] [npc.cock])]!</p>");
 		}
 	}
 	
@@ -507,13 +483,13 @@ public class Penis implements BodyPartInterface {
 
 	public String setPierced(GameCharacter owner, boolean pierced) {
 		if(this.pierced == pierced || !owner.hasPenisIgnoreDildo()) {
-			return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+			return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 		}
 		
 		this.pierced = pierced;
 		
 		if(pierced) {
-			return UtilText.parse(owner, "<p>[npc.NamePos] [npc.cock] is now [style.boldGrow(pierced)]!</p>");
+			return UtilText.parse(owner, "<p>[npc.NamePos] [npc.cock] теперь [style.boldGrow(проколот)]!</p>");
 			
 		} else {
 			AbstractClothing c = owner.getClothingInSlot(InventorySlot.PIERCING_PENIS);
@@ -524,7 +500,7 @@ public class Penis implements BodyPartInterface {
 			}
 			
 			return UtilText.parse(owner,
-					"<p>[npc.NamePos] [npc.cock] is [style.boldShrink(no longer pierced)]!</p>"
+					"<p>[npc.NamePos] [npc.cock] [style.boldShrink(больше не проколот)]!</p>"
 					+piercingUnequip);
 		}
 	}
@@ -547,7 +523,7 @@ public class Penis implements BodyPartInterface {
 
 	public String addPenisModifier(GameCharacter owner, PenetrationModifier modifier) {
 		if(hasPenisModifier(modifier)) {
-			return owner == null ? "" : "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+			return owner == null ? "" : "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 		}
 		
 		if(!isCharacterInitialised(owner) || owner.getBody()==null) {
@@ -556,7 +532,7 @@ public class Penis implements BodyPartInterface {
 		}
 		
 		if(!owner.hasPenisIgnoreDildo()) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] [npc.do]n't have a penis, so nothing happens...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] у [npc.do] нет члена, так что ничего не происходит...)]</p>");
 		}
 		
 		penisModifiers.add(modifier);
@@ -571,62 +547,49 @@ public class Penis implements BodyPartInterface {
 		}
 		String removedText = "";
 		if(!pmsRemoved.isEmpty()) {
-			removedText = "<br/>[style.italicsMinorBad(Due to being mutually exclusive with the '"+modifier.getName()+"' modifier, [npc.namePos] cock is no longer "+Util.stringsToStringList(pmsRemoved, false)+".)]";
+			removedText = "<br/>[style.italicsMinorBad(Due to being mutually exclusive with the '"+modifier.getName()+"' модификатор, [npc.namePos] член больше не "+Util.stringsToStringList(pmsRemoved, false)+".)]";
 		}
 		
 		String returnText = "";
 		
 		switch(modifier) {
 			case RIBBED:
-				returnText = "An intense pressure builds up within [npc.namePos] [npc.cock], but before [npc.she] [npc.has] a chance to react, a series of [style.boldGrow(hard, fleshy ribs)] grow up all along its length."
-							+ "<br/>[style.boldSex([npc.NamePos] [npc.cock] is now ribbed!)]";
+				returnText = "Внутри [npc.namePos] [npc.cock] нарастает сильное давление, но прежде чем [npc.she] [npc.has] успевает среагировать, по всей его длине вырастает ряд [style.boldGrow(твердых, мясистых ребер)].<br/>[style.boldSex([npc.NamePos] [npc.cock] теперь ребристый!)]";
 				break;
 			case TENTACLED:
-				returnText = "A pulsating warmth builds up within [npc.namePos] [npc.cock], but before [npc.she] [npc.has] a chance to react, a series of [style.boldGrow(little wriggling tentacles)] grow up all along its length."
-							+ "<br/>[style.boldSex([npc.NamePos] [npc.cock] is now covered with little tentacles, which wriggle with a mind of their own!)]";
+				returnText = "Внутри [npc.namePos] [npc.cock] нарастает пульсирующее тепло, но прежде чем [npc.she] [npc.has] успевает среагировать, по всей его длине вырастает ряд [style.boldGrow(маленьких извивающихся щупалец)].<br/>[style.boldSex([npc.NamePos] [npc.cock] теперь покрыт маленькими щупальцами, которые извиваются сами по себе!)]";
 				break;
 			case BARBED:
-				returnText = "An intense warmth builds up within [npc.namePos] [npc.cock], but before [npc.she] [npc.has] a chance to react, a series of [style.boldGrow(little fleshy barbs)] grow up all along its length."
-							+ "<br/>[style.boldSex([npc.NamePos] [npc.cock] is now lined with fleshy, backwards-facing barbs!)]";
+				returnText = "Внутри [npc.namePos] [npc.cock] нарастает сильный жар, но прежде чем [npc.she] [npc.has] успевает среагировать, по всей его длине вырастает ряд [style.boldGrow(маленьких мясистых шипов)].<br/>[style.boldSex([npc.NamePos] [npc.cock] теперь усажен мясистыми шипами, направленными назад!)]";
 				break;
 			case FLARED:
-				returnText = "An intense warmth builds up in the tip of [npc.namePos] [npc.cock], and before [npc.she] [npc.has] a chance to react, the [style.boldGrow(head flares out)], much like that of a horse's."
-							+ "<br/>[style.boldSex([npc.NamePos] [npc.cock] now has a wide, flared head!)]";
+				returnText = "В самой головке [npc.namePos] [npc.cock] нарастает сильный жар, и прежде чем [npc.she] [npc.has] успевает среагировать, [style.boldGrow(головка расширяется)], становясь похожей на лошадиную.<br/>[style.boldSex([npc.NamePos] [npc.cock] теперь обладает широкой, расширенной головкой!)]";
 				break;
 			case BLUNT:
-				returnText = "An intense warmth builds up in the tip of [npc.namePos] [npc.cock], and before [npc.she] [npc.has] a chance to react, the [style.boldGrow(head smoothes over)], much like that of a reptile's."
-							+ "<br/>[style.boldSex([npc.NamePos] [npc.cock] now has a smooth, blunt head!)]";
+				returnText = "В самой головке [npc.namePos] [npc.cock] нарастает сильный жар, и прежде чем [npc.she] [npc.has] успевает среагировать, [style.boldGrow(головка сглаживается)], становясь похожей на рептилийскую.<br/>[style.boldSex([npc.NamePos] [npc.cock] теперь обладает гладкой, тупой головкой!)]";
 				break;
 			case KNOTTED:
-				returnText = "An intense warmth builds up in the base of [npc.namePos] [npc.cock], and before [npc.she] [npc.has] a chance to react, a [style.boldGrow(fat knot)] quickly grows up there."
-							+ "<br/>[style.boldSex([npc.NamePos] [npc.cock] now has a fat knot at the base!)]";
+				returnText = "В основании [npc.namePos] [npc.cock] нарастает сильный жар, и прежде чем [npc.she] [npc.has] успевает среагировать, там быстро вырастает [style.boldGrow(жирная луковица)].<br/>[style.boldSex([npc.NamePos] [npc.cock] теперь имеет жирную луковицу у основания!)]";
 				break;
 			case PREHENSILE:
-				returnText = "A strange tingling sensation works its way up the length of [npc.namePos] [npc.cock], and [npc.she] suddenly becomes aware that it's transformed into being [style.boldGrow(prehensile)],"
-								+ " allowing [npc.herHim] to twist and move it around just like a primate's tail."
-							+ "<br/>[style.boldSex([npc.NamePos] [npc.cock] is now prehensile!)]";
+				returnText = "Странное покалывание пробегает по всей длине [npc.namePos] [npc.cock], и [npc.she] внезапно осознает, что он превратился в [style.boldGrow(хватательный)] орган, позволяющий [npc.herHim] извиваться и двигаться, словно хвост примата.<br/>[style.boldSex([npc.NamePos] [npc.cock] теперь стал хватательным!)]";
 				break;
 			case SHEATHED:
-				returnText = "An intense pressure builds up in the base of [npc.namePos] [npc.cock], and before [npc.she] [npc.has] a chance to react, it pulls back into a brand new [style.boldGrow(sheath)] that's just grown up there."
-							+ "<br/>[style.boldSex([npc.NamePos] [npc.cock] is now sheathed!)]";
+				returnText = "В основании [npc.namePos] [npc.cock] нарастает сильное давление, и прежде чем [npc.she] [npc.has] успеет среагировать, он втягивается в совершенно новую [style.boldGrow(оболочку)], которая только что там выросла.<br/>[style.boldSex([npc.NamePos] [npc.cock] теперь в оболочке!)]";
 				break;
 			case TAPERED:
-				returnText = "An intense warmth builds up within [npc.namePos] [npc.cock], but before [npc.she] [npc.has] a chance to react, the shaft suddenly [style.boldGrow(tapers down)]."
-							+ "<br/>[style.boldSex([npc.NamePos] [npc.cock] is now tapered!)]";
+				returnText = "Внутри [npc.namePos] [npc.cock] разливается сильный жар, но прежде чем [npc.she] [npc.has] успеет среагировать, ствол внезапно [style.boldGrow(сужается)].<br/>[style.boldSex([npc.NamePos] [npc.cock] теперь сужен!)]";
 				break;
 			case VEINY:
-				returnText = "An intense warmth builds up within [npc.namePos] [npc.cock], but before [npc.she] [npc.has] a chance to react, a series of [style.boldGrow(prominent veins)] grow up all along its length."
-							+ "<br/>[style.boldSex([npc.NamePos] [npc.cock] is now veiny!)]";
+				returnText = "Внутри [npc.namePos] [npc.cock] разливается сильный жар, но прежде чем [npc.she] [npc.has] успеет среагировать, по всей его длине проступают [style.boldGrow(заметные вены)].<br/>[style.boldSex([npc.NamePos] [npc.cock] теперь в венах!)]";
 				break;
 			case OVIPOSITOR:
-				returnText = "An intense tingling sensation works its up [npc.namePos] [npc.cock], and [npc.she] can't help but let out [npc.a_moan+] as [npc.she] feels it transforming into [style.boldGrow(an ovipositor)]."
-							+ "<br/>[style.boldSex([npc.NamePos] [npc.cock] is now able to lay eggs!)]"
-							+ "<br/><i>(To be fully functional, [npc.name] [npc.verb(require)] [npc.her] eggs to be fertilised before laying can occur. Eggs cannot be laid in an already-pregnant target's vagina.)</i>";
+				returnText = "По [npc.namePos] [npc.cock] пробегает интенсивное покалывание, и [npc.she] не может сдержать [npc.a_moan+], когда [npc.she] чувствует, как он превращается в [style.boldGrow(яйцеклад)].<br/>[style.boldSex([npc.NamePos] [npc.cock] теперь может откладывать яйца!)]<br/><i>(Чтобы стать полностью функциональным, [npc.name] [npc.verb(require)] [npc.her] яиц для оплодотворения перед тем, как начнется процесс откладывания.)</i>";
 				break;
 		}
 		
 		if(returnText.isEmpty()) {
-			return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+			return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 		}
 		
 		return UtilText.parse(owner,
@@ -638,72 +601,38 @@ public class Penis implements BodyPartInterface {
 
 	public String removePenisModifier(GameCharacter owner, PenetrationModifier modifier) {
 		if(!hasPenisModifier(modifier)) {
-			return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+			return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 		}
 		
 		penisModifiers.remove(modifier);
 		
 		switch(modifier) {
 			case RIBBED:
-				return "<p>"
-							+ "An soothing coolness builds up within [npc.namePos] [npc.penis], but before [npc.she] [npc.has] a chance to react, [npc.her] hard, fleshy ribs suddenly [style.boldShrink(disappear)]."
-							+ "<br/>[style.boldSex([npc.NamePos] [npc.penis] is no longer ribbed!)]"
-						+ "</p>";
+				return "<p>Внутри [npc.namePos] [npc.penis] разливается приятная прохлада, но прежде чем [npc.she] [npc.has] успевает среагировать, [npc.her] твердые плотские ребра внезапно [style.boldShrink(исчезают)].<br/>[style.boldSex([npc.NamePos] [npc.penis] больше не ребристый!)]</p>";
 			case TENTACLED:
-				return "<p>"
-							+ "A soothing coolness builds up within [npc.namePos] [npc.penis], and before [npc.she] [npc.has] a chance to react, [npc.her] little wriggling tentacles [style.boldShrink(disappear)]."
-							+ "<br/>[style.boldSex([npc.NamePos] [npc.penis] is no longer covered with little tentacles!)]"
-						+ "</p>";
+				return "<p>Внутри [npc.namePos] [npc.penis] разливается приятная прохлада, и прежде чем [npc.she] [npc.has] успевает среагировать, [npc.her] маленькие извивающиеся щупальца [style.boldShrink(исчезают)].<br/>[style.boldSex([npc.NamePos] [npc.penis] больше не покрыт маленькими щупальцами!)]</p>";
 			case BARBED:
-				return "<p>"
-							+ "A soothing coolness builds up within [npc.namePos] [npc.penis], but before [npc.she] [npc.has] a chance to react, [npc.her] little fleshy barbs [style.boldShrink(disappear)]."
-							+ "<br/>[style.boldSex([npc.NamePos] [npc.penis] is no longer barbed!)]"
-						+ "</p>";
+				return "<p>Внутри [npc.namePos] [npc.penis] разливается приятная прохлада, но прежде чем [npc.she] [npc.has] успевает среагировать, [npc.her] маленькие плотские шипы [style.boldShrink(исчезают)].<br/>[style.boldSex([npc.NamePos] [npc.penis] больше не шипованный!)]</p>";
 			case FLARED:
-				return "<p>"
-							+ "A soothing coolness builds up in the tip of [npc.namePos] [npc.penis], and before [npc.she] [npc.has] a chance to react, [npc.her] flared head [style.boldShrink(shrinks)] down into a regular, human-like one."
-							+ "<br/>[style.boldSex([npc.NamePos] [npc.penis] no longer has a flared head!)]"
-						+ "</p>";
+				return "<p>В кончике [npc.namePos] [npc.penis] разливается приятная прохлада, и прежде чем [npc.she] [npc.has] успевает среагировать, [npc.her] расширенная головка [style.boldShrink(уменьшается)] до обычной, человеческой формы.<br/>[style.boldSex([npc.NamePos] [npc.penis] больше не имеет расширенной головки!)]</p>";
 			case BLUNT:
-				return "<p>"
-							+ "A soothing coolness builds up in the tip of [npc.namePos] [npc.penis], and before [npc.she] [npc.has] a chance to react, [npc.her] blunt head [style.boldShrink(shrinks)] down into a regular, human-like one."
-							+ "<br/>[style.boldSex([npc.NamePos] [npc.penis] no longer has a blunt head!)]"
-						+ "</p>";
+				return "<p>В кончике [npc.namePos] [npc.penis] разливается приятная прохлада, и прежде чем [npc.she] [npc.has] успевает среагировать, [npc.her] тупая головка [style.boldShrink(уменьшается)] до обычной, человеческой формы.<br/>[style.boldSex([npc.NamePos] [npc.penis] больше не имеет тупой головки!)]</p>";
 			case KNOTTED:
-				return "<p>"
-							+ "A soothing coolness builds up in the base of [npc.namePos] [npc.penis], and before [npc.she] [npc.has] a chance to react, [npc.her] fat knot [style.boldShrink(shrinks)] and disappears."
-							+ "<br/>[style.boldSex([npc.NamePos] [npc.penis] is no longer knotted!)]"
-						+ "</p>";
+				return "<p>В основании [npc.namePos] [npc.penis] разливается приятная прохлада, и прежде чем [npc.she] [npc.has] успевает среагировать, [npc.her] жирный узел [style.boldShrink(уменьшается)] и исчезает.<br/>[style.boldSex([npc.NamePos] [npc.penis] больше не узловатый!)]</p>";
 			case PREHENSILE:
-				return "<p>"
-							+ "A strange tingling sensation works its way up the length of [npc.namePos] [npc.penis], and [npc.she] suddenly becomes aware that it's [style.boldShrink(no longer prehensile)]."
-							+ "<br/>[style.boldSex([npc.NamePos] [npc.penis] is no longer prehensile!)]"
-						+ "</p>";
+				return "<p>Странное покалывание пробегает по всей длине [npc.namePos] [npc.penis], и [npc.she] внезапно осознает, что он [style.boldShrink(больше не цепкий)].<br/>[style.boldSex([npc.NamePos] [npc.penis] больше не цепкий!)]</p>";
 			case SHEATHED:
-				return "<p>"
-							+ "A soothing coolness builds up in the base of [npc.namePos] [npc.penis], and before [npc.she] [npc.has] a chance to react, [npc.her] sheath [style.boldShrink(disappears)]."
-							+ "<br/>[style.boldSex([npc.NamePos] [npc.penis] is no longer sheathed!)]"
-						+ "</p>";
+				return "<p>В основании [npc.namePos] [npc.penis] разливается приятная прохлада, и прежде чем [npc.she] [npc.has] успевает среагировать, [npc.her] крайняя плоть [style.boldShrink(исчезает)].<br/>[style.boldSex([npc.NamePos] [npc.penis] больше не скрыт в складке!)]</p>";
 			case TAPERED:
-				return "<p>"
-							+ "An intense warmth builds up within [npc.namePos] [npc.penis], but before [npc.she] [npc.has] a chance to react, the shaft suddenly [style.boldShrink(widens)]."
-							+ "<br/>[style.boldSex([npc.NamePos] [npc.penis] is no longer tapered!)]"
-						+ "</p>";
+				return "<p>Внутри [npc.namePos] [npc.penis] нарастает сильный жар, но прежде чем [npc.she] [npc.has] успевает среагировать, ствол внезапно [style.boldShrink(расширяется)].<br/>[style.boldSex([npc.NamePos] [npc.penis] больше не сужается к концу!)]</p>";
 			case VEINY:
-				return "<p>"
-							+ "An intense warmth builds up within [npc.namePos] [npc.penis], but before [npc.she] [npc.has] a chance to react, [npc.her] prominent veins [style.boldShrink(disappear)]."
-							+ "<br/>[style.boldSex([npc.NamePos] [npc.penis] is no longer veiny!)]"
-						+ "</p>";
+				return "<p>Внутри [npc.namePos] [npc.penis] нарастает сильный жар, но прежде чем [npc.she] [npc.has] успевает среагировать, [npc.her] выступающие вены [style.boldShrink(исчезают)].<br/>[style.boldSex([npc.NamePos] [npc.penis] больше не в венах!)]</p>";
 			case OVIPOSITOR:
-				return "<p>"
-							+ "A strange tingling sensation works its way up the length of [npc.namePos] [npc.penis], and [npc.she] can't help but let out [npc.a_moan+] as [npc.she] feels it transforming to"
-								+ " [style.boldShrink(no longer function as an ovipositor)]."
-							+ "<br/>[style.boldSex([npc.NamePos] [npc.penis] is no longer an ovipositor!)]"
-						+ "</p>";
+				return "<p>Странное покалывание пробегает по всей длине [npc.namePos] [npc.penis], и [npc.she] не может не издать [npc.a_moan+], когда [npc.she] чувствует, как он превращается в [style.boldShrink(больше не яйцеклад)].<br/>[style.boldSex([npc.NamePos] [npc.penis] больше не яйцеклад!)]</p>";
 		}
 		
 		// Catch:
-		return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+		return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 	}
 	
 	public void clearPenisModifiers() {

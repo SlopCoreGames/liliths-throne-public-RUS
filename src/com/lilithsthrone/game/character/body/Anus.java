@@ -123,18 +123,18 @@ public class Anus implements BodyPartInterface {
 	
 	public String setAssBleached(GameCharacter owner, boolean bleached) {
 		if(this.bleached == bleached) {
-			return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+			return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 		}
 		
 		this.bleached = bleached;
 		
 		if(bleached) {
 			return UtilText.parse(owner,
-					"<p>[style.boldTfSex([npc.NamePos] asshole is now bleached!)]</p>");
+					"<p>[style.boldTfSex([npc.NamePos] анус теперь отбелен!)]</p>");
 			
 		} else {
 			return UtilText.parse(owner,
-					"<p>[style.boldTfSex([npc.NamePos] asshole is no longer bleached!)]</p>");
+					"<p>[style.boldTfSex([npc.NamePos] анус больше не отбелен!)]</p>");
 		}
 	}
 
@@ -154,37 +154,37 @@ public class Anus implements BodyPartInterface {
 		String transformation = "";
 
 		if(!this.getType().isAssHairAllowed()) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(As [npc.namePos] anus type prevents [npc.herHim] from growing any hair around [npc.her] asshole, nothing happens...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(Из-за того, что [npc.namePos] тип ануса мешает [npc.herHim] отрастить волосы вокруг [npc.her] ануса, ничего не происходит...)]</p>");
 		}
 		
 		if(getAssHair() == assHair) {
-			return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+			return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 			
 		} else {
 			switch(assHair) {
 				case ZERO_NONE:
-					transformation = UtilText.parse(owner, "<p>There is no longer any trace of "+getAssHairType(owner).getFullDescription(owner, true)+" around [npc.namePos] asshole.</p>");
+					transformation = UtilText.parse(owner, "<p>От <p> больше не осталось и следа "+getAssHairType(owner).getFullDescription(owner, true)+" вокруг ануса [npc.namePos].</p>");
 					break;
 				case ONE_STUBBLE:
-					transformation = UtilText.parse(owner, "<p>[npc.Name] now [npc.has] a stubbly patch of "+getAssHairType(owner).getFullDescription(owner, true)+" around [npc.her] asshole.</p>");
+					transformation = UtilText.parse(owner, "<p>[npc.Name] теперь [npc.has] покрыт колючей щетиной "+getAssHairType(owner).getFullDescription(owner, true)+" вокруг ануса [npc.her].</p>");
 					break;
 				case TWO_MANICURED:
-					transformation = UtilText.parse(owner, "<p>[npc.Name] now [npc.has] a well-manicured patch of "+getAssHairType(owner).getFullDescription(owner, true)+" around [npc.her] asshole.</p>");
+					transformation = UtilText.parse(owner, "<p>[npc.Name] теперь [npc.has] обладает ухоженной полоской волос "+getAssHairType(owner).getFullDescription(owner, true)+" вокруг ануса [npc.her].</p>");
 					break;
 				case THREE_TRIMMED:
-					transformation = UtilText.parse(owner, "<p>[npc.Name] now [npc.has] a trimmed patch of "+getAssHairType(owner).getFullDescription(owner, true)+" around [npc.her] asshole.</p>");
+					transformation = UtilText.parse(owner, "<p>[npc.Name] теперь [npc.has] покрыт аккуратно подстриженной полоской волос "+getAssHairType(owner).getFullDescription(owner, true)+" вокруг ануса [npc.her].</p>");
 					break;
 				case FOUR_NATURAL:
-					transformation = UtilText.parse(owner, "<p>[npc.Name] now [npc.has] a natural amount of "+getAssHairType(owner).getFullDescription(owner, true)+" around [npc.her] asshole.</p>");
+					transformation = UtilText.parse(owner, "<p>[npc.Name] теперь [npc.has] естественное количество "+getAssHairType(owner).getFullDescription(owner, true)+" вокруг ануса [npc.her].</p>");
 					break;
 				case FIVE_UNKEMPT:
-					transformation = UtilText.parse(owner, "<p>[npc.Name] now [npc.has] an unkempt bush of "+getAssHairType(owner).getFullDescription(owner, true)+" around [npc.her] asshole.</p>");
+					transformation = UtilText.parse(owner, "<p>[npc.Name] теперь [npc.has] неухоженный куст "+getAssHairType(owner).getFullDescription(owner, true)+" вокруг ануса [npc.her].</p>");
 					break;
 				case SIX_BUSHY:
-					transformation = UtilText.parse(owner, "<p>[npc.Name] now [npc.has] a thick, bushy mass of "+getAssHairType(owner).getFullDescription(owner, true)+" around [npc.her] asshole.</p>");
+					transformation = UtilText.parse(owner, "<p>[npc.Name] теперь [npc.has] густая, пушистая масса "+getAssHairType(owner).getFullDescription(owner, true)+" вокруг ануса [npc.her].</p>");
 					break;
 				case SEVEN_WILD:
-					transformation = UtilText.parse(owner, "<p>[npc.Name] now [npc.has] a wild, bushy mass of "+getAssHairType(owner).getFullDescription(owner, true)+" around [npc.her] asshole.</p>");
+					transformation = UtilText.parse(owner, "<p>[npc.Name] теперь [npc.has] дикая, пушистая масса "+getAssHairType(owner).getFullDescription(owner, true)+" вокруг ануса [npc.her].</p>");
 					break;
 			}
 		}

@@ -63,7 +63,7 @@ public class OrificeVaginaUrethra implements OrificeInterface {
 	@Override
 	public String setWetness(GameCharacter owner, int wetness) {
 		if (owner!=null && !owner.hasVagina()) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] [npc.verb(lack)] a vagina, so nothing happens...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] [npc.verb(lack)] вагина, так что ничего не происходит...)]</p>");
 		}
 		
 		int oldWetness = this.wetness;
@@ -75,23 +75,17 @@ public class OrificeVaginaUrethra implements OrificeInterface {
 		}
 		
 		if (wetnessChange == 0) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.NamePos] urethral wetness doesn't change...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.NamePos] влажность уретры не меняется...)]</p>");
 		}
 		
 		String wetnessDescriptor = getWetness(owner).getDescriptor();
 		if (wetnessChange > 0) {
 			return UtilText.parse(owner, 
-					"<p>"
-						+ "[npc.NamePos] [npc.eyes] widen as [npc.she] [npc.verb(feel)] a shudder of excitement run through [npc.her] [npc.pussy+], and [npc.she] realises that [npc.her] urethra has gotten [style.boldGrow(wetter)].<br/>"
-						+ "[npc.She] now [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(wetnessDescriptor) + " " + wetnessDescriptor + " urethra)]!"
-					+ "</p>");
+					"<p>[npc.NamePos] [npc.eyes] расширяется, когда [npc.she] [npc.verb(feel)] дрожь возбуждения пронзает [npc.her] [npc.pussy+], и [npc.she] осознает, что уретра [npc.her] стала [style.boldGrow(влажнее)].<br/>[npc.She] теперь [npc.has] [style.boldSex(\"," + UtilText.generateSingularDeterminer(wetnessDescriptor) + " " + wetnessDescriptor + " уретра)]!</p>");
 			
 		} else {
 			return UtilText.parse(owner, 
-					"<p>"
-						+ "[npc.Name] [npc.verb(shift)] about uncomfortably and [npc.verb(let)] out a frustrated groan as [npc.she] [npc.verb(feel)] [npc.her] urethra getting [style.boldShrink(drier)].<br/>"
-						+ "[npc.She] now [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(wetnessDescriptor) + " " + wetnessDescriptor + " urethra)]!"
-					+ "</p>");
+					"<p>[npc.Name] [npc.verb(shift)] неловко и [npc.verb(let)] издает разочарованный стон, когда уретра [npc.she] [npc.verb(feel)] [npc.her] начинает [style.boldShrink(подсыхать)].<br/>[npc.She] теперь [npc.has] [style.boldSex(\"," + UtilText.generateSingularDeterminer(wetnessDescriptor) + " " + wetnessDescriptor + " уретра)]!</p>");
 		}
 	}
 
@@ -108,7 +102,7 @@ public class OrificeVaginaUrethra implements OrificeInterface {
 	@Override
 	public String setCapacity(GameCharacter owner, float capacity, boolean setStretchedValueToNewValue) {
 		if (owner!=null && !owner.hasVagina()) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] [npc.verb(lack)] a vagina, so nothing happens...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] [npc.verb(lack)] вагина, так что ничего не происходит...)]</p>");
 		}
 		
 		float oldCapacity = this.capacity;
@@ -123,25 +117,17 @@ public class OrificeVaginaUrethra implements OrificeInterface {
 		float capacityChange = this.capacity - oldCapacity;
 		
 		if (capacityChange == 0) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(The capacity of [npc.namePos] urethra doesn't change...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(Емкость [npc.namePos] уретры не меняется...)]</p>");
 		}
 		
 		String capacityDescriptor = getCapacity().getDescriptor();
 		if (capacityChange > 0) {
 			return UtilText.parse(owner, 
-					"<p>"
-						+ "An involuntary, shocked gasp escapes from [npc.namePos] mouth as [npc.she] [npc.verb(feel)] [npc.her] pussy's urethra relaxing and stretching out."
-						+ " Within moments, the alarming feeling has passed, and [npc.she] very quickly [npc.verb(realise)] that [npc.her] urethra's internal [style.boldGrow(capacity has increased)].<br/>"
-						+ "[npc.Name] now [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(capacityDescriptor) + " " + capacityDescriptor + " urethra)]!"
-					+ "</p>");
+					"<p>Непроизвольный, шокированный вздох вырывается из рта [npc.namePos], когда [npc.she] [npc.verb(feel)] чувствует, как уретра киски [npc.her] расслабляется и растягивается. Спустя мгновение тревожное чувство проходит, и [npc.she] очень быстро [npc.verb(realise)] понимает, что внутренняя [style.boldGrow(вместимость уретры [npc.her] увеличилась)].<br/>[npc.Name] теперь [npc.has] [style.boldSex(\"," + UtilText.generateSingularDeterminer(capacityDescriptor) + " " + capacityDescriptor + " уретра)]!</p>");
 			
 		} else {
 			return UtilText.parse(owner, 
-					"<p>"
-						+ "[npc.Name] [npc.verb(let)] out a cry as [npc.she] [npc.verb(feel)] [npc.her] pussy's urethra uncontrollably tightening and clenching."
-						+ " Within moments, the alarming feeling has passed, and [npc.she] very quickly [npc.verb(realise)] that [npc.her] urethra's internal [style.boldShrink(capacity has decreased)].<br/>"
-						+ "[npc.Name] now [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(capacityDescriptor) + " " + capacityDescriptor + " urethra)]!"
-					+ "</p>");
+					"<p>[npc.Name] [npc.verb(let)] срывается на крик, когда [npc.she] [npc.verb(feel)] [npc.her] киска непроизвольно сжимается и пульсирует. Спустя мгновение тревожное чувство проходит, и [npc.she] очень быстро [npc.verb(realise)], что внутренность [npc.her] уретры [style.boldShrink(сузилась)].<br/>[npc.Name] теперь [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(capacityDescriptor) + " " + capacityDescriptor + " уретра)]!</p>");
 		}
 	}
 	
@@ -182,11 +168,11 @@ public class OrificeVaginaUrethra implements OrificeInterface {
 	@Override
 	public String setDepth(GameCharacter owner, int depth) {
 		if (owner!=null && !owner.hasVagina()) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] [npc.verb(lack)] a vagina, so nothing happens...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] [npc.verb(lack)] вагина, так что ничего не происходит...)]</p>");
 		}
 		if(owner!=null && !owner.getBodyMaterial().isOrificesLimitedDepth()) {
 			return UtilText.parse(owner,
-					"<p style='text-align:center;'>[style.colourSex(Due to being made out of "+owner.getBodyMaterial().getName()+", the depth of [npc.namePos] "+OrificeDepth.SEVEN_FATHOMLESS.getDescriptor()+" urethra can't be changed...)]</p>");
+					"<p style='text-align:center;'>[style.colourSex(Из-за того, что она сделана из "+owner.getBodyMaterial().getName()+", глубина [npc.namePos] "+OrificeDepth.SEVEN_FATHOMLESS.getDescriptor()+" уретру нельзя изменить...)]</p>");
 		}
 		
 		int oldDepth = this.depth;
@@ -198,25 +184,17 @@ public class OrificeVaginaUrethra implements OrificeInterface {
 		int depthChange = this.depth - oldDepth;
 		
 		if(depthChange == 0) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(The depth of [npc.namePos] urethra doesn't change...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(Глубина уретры [npc.namePos] не меняется...)]</p>");
 		}
 		
 		String depthDescriptor = getDepth(owner).getDescriptor();
 		if(depthChange > 0) {
 			return UtilText.parse(owner, 
-					"<p>"
-						+ "[npc.Name] can't help but let out a surprised gasp as [npc.she] [npc.verb(feel)] an alarming pressure pulsating from [npc.her] pussy up into [npc.her] lower abdomen."
-						+ " Before [npc.her] gasp can turn into a distressed cry, the pressure suddenly fades away, leaving [npc.herHim] instinctively knowing that [npc.her] pussy's urethra [style.boldGrow(has deepened)].<br/>"
-						+ "[npc.Name] now [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(depthDescriptor) + " " + depthDescriptor + " urethra)]!"
-					+ "</p>");
+					"<p>[npc.Name] невольно ахает от неожиданности, когда [npc.she] [npc.verb(feel)] тревожное пульсирующее давление, поднимающееся от [npc.her] киски вверх к [npc.her] нижней части живота. Прежде чем [npc.her] ах превращается в жалобный крик, давление внезапно исчезает, оставляя [npc.herHim] с инстинктивным пониманием того, что уретра [npc.her] киски [style.boldGrow(стала глубже)].<br/>[npc.Name] теперь [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(depthDescriptor) + " " + depthDescriptor + " уретра)]!</p>");
 			
 		} else {
 			return UtilText.parse(owner, 
-					"<p>"
-						+ "[npc.Name] can't help but let out a surprised gasp as [npc.she] [npc.verb(feel)] an alarming tightening sensation moving its way down from [npc.her] lower abdomen into [npc.her] pussy."
-						+ " Before [npc.her] gasp can turn into a distressed cry, the feeling suddenly fades away, leaving [npc.herHim] instinctively knowing that [npc.her] pussy's urethra [style.boldShrink(has become shallower)].<br/>"
-						+ "[npc.Name] now [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(depthDescriptor) + " " + depthDescriptor + " urethra)]!"
-					+ "</p>");
+					"<p>[npc.Name] не может не издать удивленный вздох, когда [npc.she] [npc.verb(feel)] пугающее ощущение сжатия, спускающееся от [npc.her] нижней части живота в [npc.her] киску. Прежде чем [npc.her] вздох успевает превратиться в жалобный крик, чувство внезапно исчезает, оставляя [npc.herHim] инстинктивное понимание того, что уретра [npc.her] киски [style.boldShrink(стала мельче)].<br/>[npc.Name] теперь [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(depthDescriptor) + " " + depthDescriptor + " уретра)]!</p>");
 		}
 	}
 	
@@ -228,7 +206,7 @@ public class OrificeVaginaUrethra implements OrificeInterface {
 	@Override
 	public String setElasticity(GameCharacter owner, int elasticity) {
 		if (owner!=null && !owner.hasVagina()) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] [npc.verb(lack)] a vagina, so nothing happens...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] [npc.verb(lack)] вагина, так что ничего не происходит...)]</p>");
 		}
 		
 		int oldElasticity = this.elasticity;
@@ -239,25 +217,17 @@ public class OrificeVaginaUrethra implements OrificeInterface {
 		}
 		
 		if (elasticityChange == 0) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(The elasticity of [npc.namePos] urethra doesn't change...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(Эластичность уретры [npc.namePos] не меняется...)]</p>");
 		}
 		
 		String elasticityDescriptor = getElasticity().getDescriptor();
 		if (elasticityChange > 0) {
 			return UtilText.parse(owner, 
-					"<p>"
-						+ "[npc.Name] can't help but let out a surprised gasp as [npc.she] [npc.verb(feel)] a strange slackening sensation pulsating deep within [npc.her] pussy."
-						+ " Just as quickly as it started, the feeling passes, and [npc.she] very quickly [npc.verb(realise)] that [npc.her] urethra's [style.boldGrow(elasticity has increased)].<br/>"
-						+ "[npc.Name] now [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(elasticityDescriptor) + " " + elasticityDescriptor + " urethra)]!"
-					+ "</p>");
+					"<p>[npc.Name] не может не издать удивленный вздох, когда [npc.she] [npc.verb(feel)] странное ощущение расслабления, пульсирующее глубоко внутри [npc.her] киски. Так же быстро, как оно началось, чувство проходит, и [npc.she] очень быстро [npc.verb(realise)], что [style.boldGrow(эластичность [npc.her] уретры увеличилась)].<br/>[npc.Name] теперь [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(elasticityDescriptor) + " " + elasticityDescriptor + " уретра)]!</p>");
 			
 		} else {
 			return UtilText.parse(owner, 
-					"<p>"
-						+ "[npc.Name] can't help but let out a surprised gasp as [npc.she] [npc.verb(feel)] a strange clenching sensation pulsating deep within [npc.her] pussy."
-						+ " Just as quickly as it started, the feeling passes, and [npc.she] very quickly [npc.verb(realise)] that [npc.her] urethra's [style.boldShrink(elasticity has decreased)].<br/>"
-						+ "[npc.Name] now [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(elasticityDescriptor) + " " + elasticityDescriptor + " urethra)]!"
-					+ "</p>");
+					"<p>[npc.Name] не может сдержать удивленного вздоха, когда [npc.she] [npc.verb(feel)] странное сжимающее ощущение, пульсирующее глубоко внутри [npc.her] киски. Так же быстро, как оно началось, чувство проходит, и [npc.she] очень быстро [npc.verb(realise)], что [style.boldShrink(эластичность [npc.her] уретры уменьшилась)].<br/>[npc.Name] теперь [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(elasticityDescriptor) + " " + elasticityDescriptor + " уретра)]!</p>");
 		}
 	}
 	
@@ -269,7 +239,7 @@ public class OrificeVaginaUrethra implements OrificeInterface {
 	@Override
 	public String setPlasticity(GameCharacter owner, int plasticity) {
 		if (owner!=null && !owner.hasVagina()) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] [npc.verb(lack)] a vagina, so nothing happens...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] [npc.verb(lack)] вагина, так что ничего не происходит...)]</p>");
 		}
 		
 		int oldPlasticity = this.plasticity;
@@ -280,25 +250,17 @@ public class OrificeVaginaUrethra implements OrificeInterface {
 		}
 		
 		if (plasticityChange == 0) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(The plasticity of [npc.namePos] urethra doesn't change...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(Пластичность уретры [npc.namePos] не меняется...)]</p>");
 		}
 		
 		String plasticityDescriptor = getPlasticity().getDescriptor();
 		if (plasticityChange > 0) {
 			return UtilText.parse(owner, 
-					"<p>"
-						+ "[npc.Name] [npc.verb(let)] out a shocked gasp as [npc.she] suddenly [npc.verb(feel)] a strange hardening sensation pulsating deep within [npc.her] pussy."
-						+ " Before [npc.she] [npc.has] any time to panic, the feeling quickly fades away, leaving [npc.herHim] instinctively knowing that [npc.her] urethra's [style.boldGrow(plasticity has increased)].<br/>"
-						+ "[npc.Name] now [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(plasticityDescriptor) + " " + plasticityDescriptor + " urethra)]!"
-					+ "</p>");
+					"<p>[npc.Name] [npc.verb(let)] прерывисто вздохнула от шока, когда [npc.she] внезапно [npc.verb(feel)] странное ощущение затвердевания, пульсирующее глубоко внутри [npc.her] киски. Прежде чем [npc.she] успела [npc.has] запаниковать, чувство быстро исчезло, оставив [npc.herHim] инстинктивное понимание того, что [style.boldGrow(пластичность уретры [npc.her] увеличилась)].<br/>[npc.Name] теперь [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(plasticityDescriptor) + " " + plasticityDescriptor + " уретра)]!</p>");
 			
 		} else {
 			return UtilText.parse(owner, 
-					"<p>"
-						+ "[npc.Name] [npc.verb(let)] out a shocked gasp as [npc.she] suddenly [npc.verb(feel)] a strange softening sensation pulsating deep within [npc.her] pussy."
-						+ " Before [npc.she] [npc.has] any time to panic, the feeling quickly fades away, leaving [npc.herHim] instinctively knowing that [npc.her] urethra's [style.boldShrink(plasticity has decreased)].<br/>"
-						+ "[npc.Name] now [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(plasticityDescriptor) + " " + plasticityDescriptor + " urethra)]!"
-					+ "</p>");
+					"<p>[npc.Name] [npc.verb(let)] прерывисто ахает от шока, когда [npc.she] внезапно [npc.verb(feel)] странное ощущение размягчения, пульсирующее глубоко внутри [npc.her] киски. Прежде чем [npc.she] [npc.has] успевает запаниковать, чувство быстро исчезает, оставляя [npc.herHim] инстинктивное понимание того, что [style.boldShrink(пластичность)] уретры [npc.her] снизилась.<br/>[npc.Name] теперь [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(plasticityDescriptor) + " " + plasticityDescriptor + " уретра)]!</p>");
 		}
 	}
 
@@ -320,7 +282,7 @@ public class OrificeVaginaUrethra implements OrificeInterface {
 	@Override
 	public String addOrificeModifier(GameCharacter owner, OrificeModifier modifier) {
 		if(hasOrificeModifier(modifier)) {
-			return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+			return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 		}
 		
 		orificeModifiers.add(modifier);
@@ -333,52 +295,34 @@ public class OrificeVaginaUrethra implements OrificeInterface {
 			case MUSCLE_CONTROL:
 				if(owner.isVaginaUrethraFuckable()) {
 					return UtilText.parse(owner,
-							"<p>"
-								+ "[npc.Name] can't help but let out [npc.a_moan+] as an intense pressure swells up deep within [npc.her] [npc.pussy], but before [npc.sheHasFull] any chance to react, the feeling quickly dissipates."
-								+ " With an experimental clench, [npc.she] [npc.verb(discover)] that the interior of [npc.her] urethra is now lined with [style.boldGrow(muscles)],"
-									+ " which [npc.she] can use to expertly grip and squeeze down on any penetrating object.<br/>"
-								+ "[style.boldSex([npc.NamePos] vaginal urethra is now lined with an intricate series of muscles!)]"
-							+ "</p>");
+							"<p>[npc.Name] не может не выдать [npc.a_moan+], когда глубоко внутри [npc.her] [npc.pussy] нарастает интенсивное давление, но прежде чем [npc.sheHasFull] успевает среагировать, это чувство быстро рассеивается. С экспериментальным сжатием, [npc.she] [npc.verb(discover)], что стенки уретры [npc.her] теперь выстланы [style.boldGrow(мышцами)], которые [npc.she] может использовать, чтобы умело обхватывать и сжимать любой проникающий объект.<br/>[style.boldSex(вагинальная уретра [npc.NamePos] теперь выстлана сложной сетью мышц!)]</p>");
 				}
 				break;
 			case RIBBED:
 				if(owner.isVaginaUrethraFuckable()) {
 					return UtilText.parse(owner,
-							"<p>"
-							+ "[npc.Name] can't help but let out [npc.a_moan+] as an intense pressure swells up deep within [npc.her] [npc.pussy], but before [npc.sheHasFull] any chance to react, the feeling quickly dissipates."
-							+ " Shifting [npc.her] [npc.pussy] around a little, [npc.she] [npc.verb(discover)] that the inside of [npc.her] urethra is now lined with [style.boldGrow(fleshy, highly-sensitive ribs)],"
-								+ " which provide extreme pleasure when stimulated.<br/>"
-							+ "[style.boldSex([npc.NamePos] vaginal urethra is now lined with fleshy, pleasure-inducing ribs!)]"
-						+ "</p>");
+							"<p>[npc.Name] не может не издать [npc.a_moan+], когда глубоко внутри [npc.her] [npc.pussy] нарастает интенсивное давление, но прежде чем [npc.sheHasFull] успевает среагировать, это чувство быстро рассеивается. Слегка пошевелив [npc.her] [npc.pussy], [npc.she] [npc.verb(discover)], что стенки [npc.her] уретры теперь покрыты [style.boldGrow(мясистыми, сверхчувствительными складками)], которые дарят невероятное наслаждение при стимуляции.<br/>[style.boldSex([npc.NamePos] вагинальная уретра теперь покрыта мясистыми, вызывающими удовольствие складками!)]</p>");
 				}
 				break;
 			case TENTACLED:
 				if(owner.isVaginaUrethraFuckable()) {
 					return UtilText.parse(owner,
-							"<p>"
-								+ "[npc.Name] can't help but let out [npc.a_moan+] as an intense pressure swells up deep within [npc.her] [npc.pussy], but before [npc.sheHasFull] any chance to react, the feeling quickly dissipates."
-								+ " With an experimental clench, [npc.she] [npc.verb(discover)] that the inside of [npc.her] urethra is now lined with [style.boldGrow(little wriggling tentacles)], over which [npc.sheHasFull] limited control.<br/>"
-								+ "[style.boldSex(The inside of [npc.namePos] vaginal urethra is now filled with small tentacles, which wriggle and caress any intruding object with a mind of their own!)]"
-							+ "</p>");
+							"<p>[npc.Name] невольно издает [npc.a_moan+], когда глубоко внутри [npc.her] [npc.pussy] нарастает сильное давление, но прежде чем [npc.sheHasFull] успевает среагировать, ощущение быстро исчезает. Сделав пробное сжатие, [npc.she] [npc.verb(discover)], что стенки [npc.her] уретры теперь покрыты [style.boldGrow(маленькими извивающимися щупальцами)], над которыми у [npc.sheHasFull] лишь ограниченный контроль.<br/>[style.boldSex(Внутри вагинальной уретры [npc.namePos] теперь копошатся маленькие щупальца, которые извиваются и ласкают любой входящий объект, словно живя своей собственной жизнью!)]</p>");
 				}
 				break;
 			case PUFFY:
 				return UtilText.parse(owner,
-						"<p>"
-							+ "[npc.Name] can't help but let out [npc.a_moan+] as [npc.she] [npc.verb(feel)] a tingling sensation running over [npc.her] [npc.pussy],"
-								+ " before the rim of [npc.her] urethra suddenly [style.boldGrow(puffs up)] into a doughnut-like ring.<br/>"
-							+ "[style.boldSex(The rim of [npc.namePos] urethra is now swollen and puffy!)]"
-						+ "</p>");
+						"<p>[npc.Name] невольно издает [npc.a_moan+], когда [npc.she] [npc.verb(feel)] покалывающее ощущение, пробегающее по [npc.her] [npc.pussy], после чего край [npc.her] уретры внезапно [style.boldGrow(раздувается)], превращаясь в кольцо, похожее на пончик.<br/>[style.boldSex(Край уретры [npc.namePos] теперь опухший и раздутый!)]</p>");
 		}
 		
 		// Catch:
-		return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+		return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 	}
 
 	@Override
 	public String removeOrificeModifier(GameCharacter owner, OrificeModifier modifier) {
 		if(!hasOrificeModifier(modifier)) {
-			return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+			return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 		}
 		
 		orificeModifiers.remove(modifier);
@@ -391,44 +335,28 @@ public class OrificeVaginaUrethra implements OrificeInterface {
 			case MUSCLE_CONTROL:
 				if(owner.isVaginaUrethraFuckable()) {
 					return UtilText.parse(owner,
-							"<p>"
-								+ "[npc.Name] can't help but let out a startled cry as an intense pressure swells up deep within [npc.her] [npc.pussy], but before [npc.sheHasFull] any chance to react, the feeling quickly dissipates."
-								+ " With an experimental clench, [npc.she] [npc.verb(discover)] that the interior of [npc.her] urethra has [style.boldShrink(lost its extra muscles)].<br/>"
-								+ "[style.boldSex([npc.NamePos] urethra is no longer lined with an intricate series of muscles!)]"
-							+ "</p>");
+							"<p>[npc.Name] невольно вскрикивает от неожиданности, когда глубоко внутри [npc.her] [npc.pussy] нарастает сильное давление, но прежде чем [npc.sheHasFull] успевает среагировать, ощущение быстро исчезает. Сделав пробное сжатие, [npc.she] [npc.verb(discover)], что внутренние стенки [npc.her] уретры [style.boldShrink(потеряли свои дополнительные мышцы)].<br/>[style.boldSex(Уретра [npc.NamePos] больше не покрыта сложной сетью мышц!)]</p>");
 				}
 				break;
 			case RIBBED:
 				if(owner.isVaginaUrethraFuckable()) {
 					return UtilText.parse(owner,
-							"<p>"
-							+ "[npc.Name] can't help but let out a startled cry as an intense pressure swells up deep within [npc.her] [npc.pussy], but before [npc.sheHasFull] any chance to react, the feeling quickly dissipates."
-							+ " Shifting [npc.her] [npc.pussy] around a little, [npc.she] [npc.verb(discover)] that the [style.boldShrink(fleshy, highly-sensitive ribs)] that once lined [npc.her] urethra [style.boldShrink(have vanished)].<br/>"
-							+ "[style.boldSex([npc.NamePos] urethra is no longer lined with fleshy, pleasure-inducing ribs!)]"
-						+ "</p>");
+							"<p>[npc.Name] невольно вскрикивает от неожиданности, когда глубоко внутри [npc.her] [npc.pussy] нарастает сильное давление, но прежде чем [npc.sheHasFull] успевает среагировать, ощущение быстро исчезает. Слегка пошевелив [npc.her] [npc.pussy], [npc.she] [npc.verb(discover)], что [style.boldShrink(мясистые, сверхчувствительные складки)], когда-то выстилавшие уретру [npc.her], [style.boldShrink(исчезли)].<br/>[style.boldSex(Уретра [npc.NamePos] больше не покрыта мясистыми, вызывающими наслаждение складками!)]</p>");
 				}
 				break;
 			case TENTACLED:
 				if(owner.isVaginaUrethraFuckable()) {
 					return UtilText.parse(owner,
-							"<p>"
-								+ "[npc.Name] can't help but let out a startled cry as an intense pressure swells up deep within [npc.her] [npc.pussy], but before [npc.sheHasFull] any chance to react, the feeling quickly dissipates."
-								+ " With an experimental clench, [npc.she] [npc.verb(discover)] that the [style.boldShrink(wriggling tentacles)] within [npc.her] urethra [style.boldShrink(have all disappeared)].<br/>"
-								+ "[style.boldSex(The inside of [npc.namePos] urethra is no longer filled with tentacles!)]"
-							+ "</p>");
+							"<p>[npc.Name] невольно вскрикивает от неожиданности, когда глубоко внутри [npc.her] [npc.pussy] нарастает сильное давление, но прежде чем [npc.sheHasFull] успевает среагировать, ощущение быстро исчезает. Проверив всё экспериментальным сжатием, [npc.she] [npc.verb(discover)], что [style.boldShrink(извивающиеся щупальца)] внутри уретры [npc.her] [style.boldShrink(полностью исчезли)].<br/>[style.boldSex(Внутри уретры [npc.namePos] больше нет щупалец!)]</p>");
 				}
 				break;
 			case PUFFY:
 				return UtilText.parse(owner,
-						"<p>"
-							+ "[npc.Name] can't help but let out a startled cry as [npc.she] [npc.verb(feel)] a tingling sensation running over [npc.her] [npc.pussy],"
-								+ " before the [style.boldShrink(puffy rim)] of [npc.her] urethra [style.boldShrink(deflates)] into a more normal-looking shape.<br/>"
-							+ "[style.boldSex(The rim of [npc.namePos] urethra is no longer swollen and puffy!)]"
-						+ "</p>");
+						"<p>[npc.Name] невольно вскрикивает, когда [npc.she] [npc.verb(feel)] покалывающее ощущение, пробегающее по [npc.her] [npc.pussy], прежде чем [style.boldShrink(припухший край)] уретры [npc.her] [style.boldShrink(сдувается)], принимая более нормальный вид.<br/>[style.boldSex(Край уретры [npc.namePos] больше не опухший и раздутый!)]</p>");
 		}
 		
 		// Catch:
-		return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+		return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 	}
 
 	public Set<OrificeModifier> getOrificeModifiers() {

@@ -89,11 +89,11 @@ public class OrificeSpinneret implements OrificeInterface {
 	@Override
 	public String setWetness(GameCharacter owner, int wetness) {
 		if(owner!=null && !owner.hasSpinneret()) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] [npc.verb(lack)] a spinneret, so nothing happens...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] [npc.verb(lack)] паутинный аппарат, так что ничего не происходит...)]</p>");
 		}
 		if(owner!=null && owner.getBodyMaterial().isOrificesAlwaysMaximumWetness()) {
 			return UtilText.parse(owner,
-					"<p style='text-align:center;'>[style.colourSex(Due to being made out of "+owner.getBodyMaterial().getName()+", the wetness of [npc.namePos] "+Wetness.SEVEN_DROOLING.getDescriptor()+" spinneret can't be changed...)]</p>");
+					"<p style='text-align:center;'>[style.colourSex(Из-за того, что она сделана из "+owner.getBodyMaterial().getName()+", влажность [npc.namePos] "+Wetness.SEVEN_DROOLING.getDescriptor()+" паутинный аппарат нельзя изменить...)]</p>");
 		}
 		
 		int oldWetness = this.wetness;
@@ -105,24 +105,17 @@ public class OrificeSpinneret implements OrificeInterface {
 		int wetnessChange = this.wetness - oldWetness;
 		
 		if(wetnessChange == 0) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(The wetness of [npc.namePos] spinneret doesn't change...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(Влажность [npc.namePos] паутинного аппарата не меняется...)]</p>");
 		}
 		
 		String wetnessDescriptor = getWetness(owner).getDescriptor();
 		if (wetnessChange > 0) {
 			return UtilText.parse(owner, 
-					"<p>"
-						+ "[npc.NamePos] [npc.eyes] widen as [npc.she] [npc.verb(feel)] moisture beading around [npc.her] spinneret,"
-							+ " and [npc.she] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(realise)] that it's lubricating itself and [style.boldGrow(getting wetter)].<br/>"
-						+ "The transformation quickly passes, leaving [npc.herHim] with [style.boldSex(" + UtilText.generateSingularDeterminer(wetnessDescriptor) + " " + wetnessDescriptor + " spinneret)]!"
-					+ "</p>");
+					"<p>[npc.NamePos] [npc.eyes] расширяются, пока [npc.she] [npc.verb(feel)] влага выступает вокруг [npc.her] паутинного аппарата, и [npc.she] [npc.verb(let)] наружу [npc.a_moan+], так как [npc.she] [npc.verb(realise)], что он смазывает сам себя и [style.boldGrow(становится всё мокрее)].<br/>Трансформация быстро проходит, оставляя [npc.herHim] с [style.boldSex(" + UtilText.generateSingularDeterminer(wetnessDescriptor) + " " + wetnessDescriptor + " паутинница)]!</p>");
 			
 		} else {
 			return UtilText.parse(owner, 
-					"<p>"
-						+ "[npc.Name] [npc.verb(shift)] about uncomfortably and [npc.verb(let)] out a frustrated groan as [npc.she] [npc.verb(feel)] [npc.her] spinneret [style.boldShrink(getting drier)].<br/>"
-						+ "The transformation quickly passes, leaving [npc.herHim] with [style.boldSex(" + UtilText.generateSingularDeterminer(wetnessDescriptor) + " " + wetnessDescriptor + " spinneret)]!"
-					+ "</p>");
+					"<p>[npc.Name] [npc.verb(shift)] с дискомфортом и [npc.verb(let)] разочарованный стон, когда [npc.she] [npc.verb(feel)] [npc.her] паутинник [style.boldShrink(становится суше)].<br/>Трансформация быстро проходит, оставляя [npc.herHim] с [style.boldSex(" + UtilText.generateSingularDeterminer(wetnessDescriptor) + " " + wetnessDescriptor + " паутинница)]!</p>");
 		}
 	}
 
@@ -139,7 +132,7 @@ public class OrificeSpinneret implements OrificeInterface {
 	@Override
 	public String setCapacity(GameCharacter owner, float capacity, boolean setStretchedValueToNewValue) {
 		if (owner!=null && !owner.hasSpinneret()) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] [npc.verb(lack)] a spinneret, so nothing happens...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] [npc.verb(lack)] паутинный аппарат, так что ничего не происходит...)]</p>");
 		}
 		
 		float oldCapacity = this.capacity;
@@ -154,25 +147,17 @@ public class OrificeSpinneret implements OrificeInterface {
 		float capacityChange = this.capacity - oldCapacity;
 		
 		if (capacityChange == 0) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(The capacity of [npc.namePos] spinneret doesn't change...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(Емкость [npc.namePos] паутинного аппарата не меняется...)]</p>");
 		}
 		
 		String capacityDescriptor = getCapacity().getDescriptor();
 		if (capacityChange > 0) {
 			return UtilText.parse(owner, 
-					"<p>"
-						+ "An involuntary, shocked gasp escapes from [npc.namePos] mouth as [npc.she] [npc.verb(feel)] [npc.her] spinneret uncontrollably dilate and stretch."
-						+ " Within moments, the feeling has passed, and [npc.she] very quickly [npc.verb(realise)] that [npc.her] spinneret's internal [style.boldGrow(capacity has increased)].<br/>"
-						+ "[npc.Name] now [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(capacityDescriptor) + " " + capacityDescriptor + " spinneret)]!"
-					+ "</p>");
+					"<p>Непроизвольный, шокированный вздох срывается с [npc.namePos] рта, когда [npc.she] [npc.verb(feel)] [npc.her] паутинник неконтролируемо расширяется и растягивается. Спустя мгновение ощущение проходит, и [npc.she] очень быстро [npc.verb(realise)], что внутреннее пространство [npc.her] паутинника [style.boldGrow(увеличилось)].<br/>[npc.Name] теперь [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(capacityDescriptor) + " " + capacityDescriptor + " паутинница)]!</p>");
 			
 		} else {
 			return UtilText.parse(owner, 
-					"<p>"
-						+ "[npc.Name] [npc.verb(let)] out a cry as [npc.she] [npc.verb(feel)] [npc.her] spinneret uncontrollably tighten and clench."
-						+ " Within moments, the feeling has passed, and [npc.she] very quickly [npc.verb(realise)] that [npc.her] spinneret's internal [style.boldShrink(capacity has decreased)].<br/>"
-						+ "[npc.Name] now [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(capacityDescriptor) + " " + capacityDescriptor + " spinneret)]!"
-					+ "</p>");
+					"<p>[npc.Name] [npc.verb(let)] вскрикивает, когда [npc.she] [npc.verb(feel)] [npc.her] паутинная сеть неконтролируемо сжимается и пульсирует. Спустя мгновение ощущение проходит, и [npc.she] очень быстро [npc.verb(realise)], что внутренний [style.boldShrink(объем паутинной сети уменьшился)] [npc.her].<br/>[npc.Name] теперь [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(capacityDescriptor) + " " + capacityDescriptor + " паутинница)]!</p>");
 		}
 	}
 	
@@ -237,11 +222,11 @@ public class OrificeSpinneret implements OrificeInterface {
 	@Override
 	public String setDepth(GameCharacter owner, int depth) {
 		if (owner!=null && !owner.hasSpinneret()) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] [npc.verb(lack)] a spinneret, so nothing happens...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] [npc.verb(lack)] паутинный аппарат, так что ничего не происходит...)]</p>");
 		}
 		if(owner!=null && !owner.getBodyMaterial().isOrificesLimitedDepth()) {
 			return UtilText.parse(owner,
-					"<p style='text-align:center;'>[style.colourSex(Due to being made out of "+owner.getBodyMaterial().getName()+", the depth of [npc.namePos] "+OrificeDepth.SEVEN_FATHOMLESS.getDescriptor()+" spinneret can't be changed...)]</p>");
+					"<p style='text-align:center;'>[style.colourSex(Из-за того, что она сделана из "+owner.getBodyMaterial().getName()+", глубина [npc.namePos] "+OrificeDepth.SEVEN_FATHOMLESS.getDescriptor()+" паутинный аппарат нельзя изменить...)]</p>");
 		}
 		
 		int oldDepth = this.depth;
@@ -253,25 +238,17 @@ public class OrificeSpinneret implements OrificeInterface {
 		int depthChange = this.depth - oldDepth;
 		
 		if(depthChange == 0) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(The depth of [npc.namePos] spinneret doesn't change...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(Глубина [npc.namePos] паутинника не меняется...)]</p>");
 		}
 		
 		String depthDescriptor = getDepth(owner).getDescriptor();
 		if(depthChange > 0) {
 			return UtilText.parse(owner, 
-					"<p>"
-						+ "[npc.Name] can't help but let out a surprised gasp as [npc.she] [npc.verb(feel)] an alarming pressure pulsating up from [npc.her] spinneret deep into [npc.her] lower abdomen."
-						+ " Before [npc.her] gasp can turn into a distressed cry, the pressure suddenly fades away, leaving [npc.herHim] instinctively knowing that [npc.her] spinneret [style.boldGrow(has deepened)].<br/>"
-						+ "[npc.Name] now [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(depthDescriptor) + " " + depthDescriptor + " spinneret)]!"
-					+ "</p>");
+					"<p>[npc.Name] невольно издает удивленный вздох, когда [npc.she] [npc.verb(feel)] тревожное давление, пульсирующее от [npc.her] паутины глубоко в [npc.her] нижней части живота. Прежде чем вздох [npc.her] успевает превратиться в мучительный крик, давление внезапно исчезает, оставляя [npc.herHim] с инстинктивным пониманием того, что [npc.her] паутина [style.boldGrow(стала глубже)].<br/>[npc.Name] теперь [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(depthDescriptor) + " " + depthDescriptor + " паутинница)]!</p>");
 			
 		} else {
 			return UtilText.parse(owner, 
-					"<p>"
-						+ "[npc.Name] can't help but let out a surprised gasp as [npc.she] [npc.verb(feel)] an alarming tightening sensation moving its way down [npc.her] lower abdomen into [npc.her] spinneret."
-						+ " Before [npc.her] gasp can turn into a distressed cry, the feeling suddenly fades away, leaving [npc.herHim] instinctively knowing that [npc.her] spinneret [style.boldShrink(has become shallower)].<br/>"
-						+ "[npc.Name] now [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(depthDescriptor) + " " + depthDescriptor + " spinneret)]!"
-					+ "</p>");
+					"<p>[npc.Name] невольно издает удивленный вздох, когда [npc.she] [npc.verb(feel)] тревожное ощущение сжатия, проходящее вниз по [npc.her] нижней части живота в [npc.her] паутинку. Прежде чем [npc.her] вздох успевает превратиться в страдальческий крик, чувство внезапно исчезает, оставляя [npc.herHim] инстинктивное понимание того, что [npc.her] паутинка [style.boldShrink(стала мельче)].<br/>[npc.Name] теперь [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(depthDescriptor) + " " + depthDescriptor + " паутинница)]!</p>");
 		}
 	}
 	
@@ -283,7 +260,7 @@ public class OrificeSpinneret implements OrificeInterface {
 	@Override
 	public String setElasticity(GameCharacter owner, int elasticity) {
 		if (owner!=null && !owner.hasSpinneret()) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] [npc.verb(lack)] a spinneret, so nothing happens...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] [npc.verb(lack)] паутинный аппарат, так что ничего не происходит...)]</p>");
 		}
 		int oldElasticity = this.elasticity;
 		this.elasticity = Math.max(0, Math.min(elasticity, OrificeElasticity.SEVEN_ELASTIC.getValue()));
@@ -294,25 +271,17 @@ public class OrificeSpinneret implements OrificeInterface {
 		int elasticityChange = this.elasticity - oldElasticity;
 		
 		if (elasticityChange == 0) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(The elasticity of [npc.namePos] spinneret doesn't change...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(Эластичность паутинного аппарата [npc.namePos] не меняется...)]</p>");
 		}
 		
 		String elasticityDescriptor = getElasticity().getDescriptor();
 		if (elasticityChange > 0) {
 			return UtilText.parse(owner, 
-					"<p>"
-						+ "[npc.Name] can't help but let out a surprised gasp as [npc.she] [npc.verb(feel)] a strange slackening sensation pulsating deep within [npc.her] spinneret."
-						+ " Just as quickly as it started, the feeling passes, and [npc.she] very quickly [npc.verb(realise)] that [npc.her] spinneret's [style.boldGrow(elasticity has increased)].<br/>"
-						+ "[npc.Name] now [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(elasticityDescriptor) + " " + elasticityDescriptor + " spinneret)]!"
-					+ "</p>");
+					"<p>[npc.Name] can't help but let out a surprised gasp as [npc.she] [npc.verb(feel)] a strange slackening sensation pulsating deep within [npc.her] spinneret. Just as quickly as it started, the feeling passes, and [npc.she] very quickly [npc.verb(realise)] that [npc.her] spinneret's [style.boldGrow(elasticity has increased)].<br/>[npc.Name] now [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(elasticityDescriptor) + " " + elasticityDescriptor + " паутинница)]!</p>");
 			
 		} else {
 			return UtilText.parse(owner, 
-					"<p>"
-						+ "[npc.Name] can't help but let out a surprised gasp as [npc.she] [npc.verb(feel)] a strange clenching sensation pulsating deep within [npc.her] spinneret."
-						+ " Just as quickly as it started, the feeling passes, and [npc.she] very quickly [npc.verb(realise)] that [npc.her] spinneret's [style.boldShrink(elasticity has decreased)].<br/>"
-						+ "[npc.Name] now [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(elasticityDescriptor) + " " + elasticityDescriptor + " spinneret)]!"
-					+ "</p>");
+					"<p>[npc.Name] не может не издать удивленный вздох, когда [npc.she] [npc.verb(feel)] странное сжимающее ощущение, пульсирующее глубоко внутри [npc.her] паутинного аппарата. Так же быстро, как оно началось, чувство проходит, и [npc.she] очень быстро [npc.verb(realise)], что [style.boldShrink(эластичность [npc.her] паутинного аппарата уменьшилась)].<br/>[npc.Name] теперь [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(elasticityDescriptor) + " " + elasticityDescriptor + " паутинница)]!</p>");
 		}
 	}
 	
@@ -324,7 +293,7 @@ public class OrificeSpinneret implements OrificeInterface {
 	@Override
 	public String setPlasticity(GameCharacter owner, int plasticity) {
 		if (owner!=null && !owner.hasSpinneret()) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] [npc.verb(lack)] a spinneret, so nothing happens...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] [npc.verb(lack)] паутинный аппарат, так что ничего не происходит...)]</p>");
 		}
 		int oldPlasticity = this.plasticity;
 		this.plasticity = Math.max(0, Math.min(plasticity, OrificePlasticity.SEVEN_MOULDABLE.getValue()));
@@ -335,25 +304,17 @@ public class OrificeSpinneret implements OrificeInterface {
 		int plasticityChange = this.plasticity - oldPlasticity;
 		
 		if (plasticityChange == 0) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(The plasticity of [npc.namePos] spinneret doesn't change...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(Пластичность [npc.namePos] паутинника не меняется...)]</p>");
 		}
 		
 		String plasticityDescriptor = getPlasticity().getDescriptor();
 		if (plasticityChange > 0) {
 			return UtilText.parse(owner, 
-					"<p>"
-						+ "[npc.Name] [npc.verb(let)] out a shocked gasp as [npc.she] suddenly [npc.verb(feel)] a strange hardening sensation pulsating deep within [npc.her] spinneret."
-						+ " Before [npc.she] [npc.has] any time to panic, the feeling quickly fades away, leaving [npc.herHim] instinctively knowing that [npc.her] spinneret's [style.boldGrow(plasticity has increased)].<br/>"
-						+ "[npc.Name] now [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(plasticityDescriptor) + " " + plasticityDescriptor + " spinneret)]!"
-					+ "</p>");
+					"<p>[npc.Name] [npc.verb(let)] вырывается удивленный вздох, когда [npc.she] внезапно [npc.verb(feel)] странное ощущение затвердевания, пульсирующее глубоко внутри [npc.her] паутины. Прежде чем [npc.she] [npc.has] успеет запаниковать, чувство быстро исчезает, оставляя [npc.herHim] инстинктивное понимание того, что [style.boldGrow(пластичность [npc.her] паутины увеличилась)].<br/>[npc.Name] теперь [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(plasticityDescriptor) + " " + plasticityDescriptor + " паутинница)]!</p>");
 			
 		} else {
 			return UtilText.parse(owner, 
-					"<p>"
-						+ "[npc.Name] [npc.verb(let)] out a shocked gasp as [npc.she] suddenly [npc.verb(feel)] a strange softening sensation pulsating deep within [npc.her] spinneret."
-						+ " Before [npc.she] [npc.has] any time to panic, the feeling quickly fades away, leaving [npc.herHim] instinctively knowing that [npc.her] spinneret's [style.boldShrink(plasticity has decreased)].<br/>"
-						+ "[npc.Name] now [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(plasticityDescriptor) + " " + plasticityDescriptor + " spinneret)]!"
-					+ "</p>");
+					"<p>[npc.Name] [npc.verb(let)] прерывисто вздохнула от шока, когда [npc.she] внезапно [npc.verb(feel)] странное ощущение размягчения, пульсирующее глубоко внутри [npc.her] паутины. Прежде чем [npc.she] успела [npc.has] запаниковать, чувство быстро исчезло, оставив [npc.herHim] инстинктивное понимание того, что [style.boldShrink(пластичность [npc.her] паутины уменьшилась)].<br/>[npc.Name] теперь [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(plasticityDescriptor) + " " + plasticityDescriptor + " паутинница)]!</p>");
 		}
 	}
 
@@ -375,7 +336,7 @@ public class OrificeSpinneret implements OrificeInterface {
 	@Override
 	public String addOrificeModifier(GameCharacter owner, OrificeModifier modifier) {
 		if(hasOrificeModifier(modifier)) {
-			return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+			return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 		}
 		
 		orificeModifiers.add(modifier);
@@ -384,52 +345,35 @@ public class OrificeSpinneret implements OrificeInterface {
 			return "";
 		}
 		if(!owner.hasSpinneret()) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(Nothing happens, as [npc.name] [npc.verb(lack)] a spinneret...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит, так как [npc.name] [npc.verb(lack)] паутинный аппарат...)]</p>");
 		}
 		
 		switch(modifier) {
 			case MUSCLE_CONTROL:
 				return UtilText.parse(owner,
-						"<p>"
-							+ "[npc.Name] can't help but let out [npc.a_moan+] as an intense pressure swells up deep within [npc.her] spinneret, but before [npc.sheHasFull] any chance to react, the feeling quickly dissipates."
-							+ " With an experimental clench, [npc.she] [npc.verb(discover)] that the inner walls of [npc.her] spinneret are now lined with [style.boldGrow(extra muscles)],"
-								+ " which [npc.she] can use to expertly grip and squeeze down on any penetrating object.<br/>"
-							+ "[style.boldSex([npc.NamePos] spinneret is now lined with an intricate series of muscles!)]"
-						+ "</p>");
+						"<p>[npc.Name] не может не издать [npc.a_moan+], когда сильное давление нарастает глубоко внутри веретена [npc.her], но прежде чем у [npc.sheHasFull] появляется возможность среагировать, ощущение быстро рассеивается. С экспериментальным сжатием, [npc.she] [npc.verb(discover)], что внутренние стенки веретена [npc.her] теперь выстланы [style.boldGrow(дополнительными мышцами)], которые [npc.she] может использовать, чтобы умело обхватывать и сжимать любой проникающий объект.<br/>[style.boldSex(веретено [npc.NamePos] теперь выстлано сложной системой мышц!)]</p>");
 				
 			case RIBBED:
 				return UtilText.parse(owner,
-						"<p>"
-						+ "[npc.Name] can't help but let out [npc.a_moan+] as an intense pressure swells up deep within [npc.her] spinneret, but before [npc.sheHasFull] any chance to react, the feeling quickly dissipates."
-						+ " Shifting around a little, [npc.she] [npc.verb(discover)] that the inside of [npc.her] spinneret is now lined with [style.boldGrow(fleshy, highly-sensitive ribs)],"
-							+ " which provide extreme pleasure when stimulated.<br/>"
-						+ "[style.boldSex([npc.NamePos] spinneret is now lined with fleshy, pleasure-inducing ribs!)]"
-					+ "</p>");
+						"<p>[npc.Name] не может не издать [npc.a_moan+], когда сильное давление нарастает глубоко внутри веретена [npc.her], но прежде чем у [npc.sheHasFull] появляется возможность среагировать, ощущение быстро рассеивается. Слегка пошевелившись, [npc.she] [npc.verb(discover)], что внутри веретена [npc.her] теперь выстлано [style.boldGrow(мясистыми, высокочувствительными ребрами)], которые дарят невероятное удовольствие при стимуляции.<br/>[style.boldSex(веретено [npc.NamePos] теперь выстлано мясистыми, вызывающими наслаждение ребрами!)]</p>");
 				
 			case TENTACLED:
 				return UtilText.parse(owner,
-						"<p>"
-							+ "[npc.Name] can't help but let out [npc.a_moan+] as an intense pressure swells up deep within [npc.her] spinneret, but before [npc.sheHasFull] any chance to react, the feeling quickly dissipates."
-							+ " With an experimental clench, [npc.she] [npc.verb(discover)] that the inside of [npc.her] spinneret is now lined with [style.boldGrow(little wriggling tentacles)], over which [npc.sheHasFull] limited control.<br/>"
-							+ "[style.boldSex(The inside of [npc.namePos] spinneret is now filled with small tentacles, which wriggle and caress any intruding object with a mind of their own!)]"
-						+ "</p>");
+						"<p>[npc.Name] не может не издать [npc.a_moan+], когда внутри [npc.her] паутинки нарастает сильное давление, но прежде чем у [npc.sheHasFull] появляется возможность среагировать, ощущение быстро исчезает. С экспериментальным сжатием [npc.she] [npc.verb(discover)], что стенки [npc.her] паутинки теперь усеяны [style.boldGrow(маленькими извивающимися щупальцами)], над которыми у [npc.sheHasFull] ограниченный контроль.<br/>[style.boldSex(Внутри [npc.namePos] паутинки теперь копошатся маленькие щупальца, которые живут своей жизнью, извиваясь и лаская любой входящий объект!)]</p>");
 					
 			case PUFFY:
 				return UtilText.parse(owner,
-						"<p>"
-							+ "[npc.Name] can't help but let out [npc.a_moan+] as [npc.she] [npc.verb(feel)] a tingling sensation running over [npc.her] spinneret, before it suddenly [style.boldGrow(puffs up)].<br/>"
-							+ "[style.boldSex([npc.NamePos] spinneret is now extremely swollen and puffy!)]"
-						+ "</p>");
+						"<p>[npc.Name] не может не издать [npc.a_moan+], когда [npc.she] [npc.verb(feel)] покалывающее ощущение, пробегающее по [npc.her] паутинке, прежде чем она внезапно [style.boldGrow(раздувается)].<br/>[style.boldSex([npc.NamePos] паутинка теперь чрезвычайно опухшая и раздутая!)]</p>");
 		}
 		
 		// Catch:
-		return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+		return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 	}
 
 	@Override
 	public String removeOrificeModifier(GameCharacter owner, OrificeModifier modifier) {
 		if(!hasOrificeModifier(modifier)) {
-			return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+			return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 		}
 		
 		orificeModifiers.remove(modifier);
@@ -441,39 +385,23 @@ public class OrificeSpinneret implements OrificeInterface {
 		switch(modifier) {
 			case MUSCLE_CONTROL:
 				return UtilText.parse(owner,
-						"<p>"
-							+ "[npc.Name] can't help but let out a startled cry as an intense pressure swells up deep within [npc.her] spinneret, but before [npc.sheHasFull] any chance to react, the feeling quickly dissipates."
-							+ " With an experimental clench, [npc.she] [npc.verb(discover)] that the interior of [npc.her] spinneret has [style.boldShrink(lost its extra muscles)].<br/>"
-							+ "[style.boldSex([npc.NamePos] spinneret is no longer lined with an intricate series of muscles!)]"
-						+ "</p>");
+						"<p>[npc.Name] не может не вскрикнуть от неожиданности, когда внутри [npc.her] паутинки нарастает сильное давление, но прежде чем у [npc.sheHasFull] появляется возможность среагировать, ощущение быстро исчезает. С экспериментальным сжатием [npc.she] [npc.verb(discover)], что внутренность [npc.her] паутинки [style.boldShrink(потеряла свои дополнительные мышцы)].<br/>[style.boldSex([npc.NamePos] паутинка больше не усеяна сложной сетью мышц!)]</p>");
 					
 			case RIBBED:
 				return UtilText.parse(owner,
-						"<p>"
-						+ "[npc.Name] can't help but let out a startled cry as an intense pressure swells up deep within [npc.her] spinneret, but before [npc.sheHasFull] any chance to react, the feeling quickly dissipates."
-						+ " Shifting around a little, [npc.she] [npc.verb(discover)] that the [style.boldShrink(fleshy, highly-sensitive ribs)] that once lined the walls of [npc.her] spinneret [style.boldShrink(have vanished)].<br/>"
-						+ "[style.boldSex([npc.NamePos] spinneret is no longer lined with fleshy, pleasure-inducing ribs!)]"
-					+ "</p>");
+						"<p>[npc.Name] невольно вскрикивает от неожиданности, когда глубоко внутри [npc.her] веретена нарастает сильное давление, но прежде чем [npc.sheHasFull] успевает среагировать, ощущение быстро исчезает. Слегка пошевелившись, [npc.she] [npc.verb(discover)], что [style.boldShrink(мясистые, сверхчувствительные ребра)], когда-то выстилавшие стенки [npc.her] веретена, [style.boldShrink(исчезли)].<br/>[style.boldSex(Веретено [npc.NamePos] больше не покрыто мясистыми, вызывающими наслаждение ребрами!)]</p>");
 					
 			case TENTACLED:
 				return UtilText.parse(owner,
-						"<p>"
-							+ "[npc.Name] can't help but let out a startled cry as an intense pressure swells up deep within [npc.her] spinneret, but before [npc.sheHasFull] any chance to react, the feeling quickly dissipates."
-							+ " With an experimental clench, [npc.she] [npc.verb(discover)] that the [style.boldShrink(wriggling tentacles)] within [npc.her] spinneret [style.boldShrink(have all disappeared)].<br/>"
-							+ "[style.boldSex(The inside of [npc.namePos] spinneret is no longer filled with tentacles!)]"
-						+ "</p>");
+						"<p>[npc.Name] невольно вскрикивает от неожиданности, когда глубоко внутри [npc.her] веретена нарастает сильное давление, но прежде чем [npc.sheHasFull] успевает среагировать, ощущение быстро исчезает. Проверив это пробным сжатием, [npc.she] [npc.verb(discover)], что [style.boldShrink(извивающиеся щупальца)] внутри [npc.her] веретена [style.boldShrink(полностью исчезли)].<br/>[style.boldSex(Внутри веретена [npc.namePos] больше нет щупалец!)]</p>");
 					
 			case PUFFY:
 				return UtilText.parse(owner,
-						"<p>"
-							+ "[npc.Name] can't help but let out a startled cry as [npc.she] [npc.verb(feel)] a tingling sensation running over [npc.her] spinneret,"
-								+ " before it suddenly [style.boldShrink(shrinks down)] to take on a more average size.<br/>"
-							+ "[style.boldSex([npc.NamePos] spinneret is no longer extra puffy!)]"
-						+ "</p>");
+						"<p>[npc.Name] невольно вскрикивает, когда [npc.she] [npc.verb(feel)] покалывающее ощущение, пробегающее по [npc.her] веретена, после чего оно внезапно [style.boldShrink(сжимается)], принимая более обычный размер.<br/>[style.boldSex(Веретено [npc.NamePos] больше не раздуто сверх меры!)]</p>");
 		}
 		
 		// Catch:
-		return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+		return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 	}
 
 	public Set<OrificeModifier> getOrificeModifiers() {

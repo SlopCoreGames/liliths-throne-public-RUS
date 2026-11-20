@@ -19,17 +19,17 @@ import com.lilithsthrone.utils.Util;
  */
 public class FootType {
 
-	public static AbstractFootType NONE = new AbstractFootType("none",
-			"none",
-			"none",
+	public static AbstractFootType NONE = new AbstractFootType("нет",
+			"нет",
+			"нет",
 			Util.newArrayListOfValues(""),
 			Util.newArrayListOfValues(""),
-			"none",
-			"none",
+			"нет",
+			"нет",
 			Util.newArrayListOfValues(""),
 			Util.newArrayListOfValues(""),
-			"footjob",
-			"[npc.SheHasFull] no feet.",
+			"футджоб",
+			"[npc.SheHasFull] без ног.",
 			Util.newArrayListOfValues(FootStructure.NONE)) {
 				@Override
 				public String getFootNailPolishDescription(GameCharacter owner) {
@@ -37,158 +37,158 @@ public class FootType {
 				}
 	};
 	
-	public static AbstractFootType HUMANOID = new AbstractFootType("humanoid",
-			"foot",
-			"feet",
-			Util.newArrayListOfValues("masculine"),
-			Util.newArrayListOfValues("feminine", "soft", "delicate", "slender"),
-			"toe",
-			"toes",
-			Util.newArrayListOfValues("masculine"),
-			Util.newArrayListOfValues("feminine", "soft", "delicate", "slender"),
-			"footjob",
-			"[npc.SheHasFull] human-like feet.",
+	public static AbstractFootType HUMANOID = new AbstractFootType("гуманоидные",
+			"ступня",
+			"ступни",
+			Util.newArrayListOfValues("мужской"),
+			Util.newArrayListOfValues("женственная", "мягкий", "хрупкая", "тонкие"),
+			"палец",
+			"пальцы",
+			Util.newArrayListOfValues("мужской"),
+			Util.newArrayListOfValues("женственная", "мягкий", "хрупкая", "тонкие"),
+			"футджоб",
+			"[npc.SheHasFull] человекоподобные ступни.",
 			Util.newArrayListOfValues(FootStructure.PLANTIGRADE)) {
 		@Override
 		public String getFootNailPolishDescription(GameCharacter owner) {
-			return " [npc.Her] toenails have been painted in "+owner.getCovering(BodyCoveringType.MAKEUP_NAIL_POLISH_FEET).getFullDescription(owner, true)+".";
+			return " [npc.Her] ногти на ногах покрашены в "+owner.getCovering(BodyCoveringType.MAKEUP_NAIL_POLISH_FEET).getFullDescription(owner, true)+".";
 		}
 	};
 
-	public static AbstractFootType PAWS = new AbstractFootType("paw-like",
-			"paw",
-			"paws",
-			Util.newArrayListOfValues("masculine","padded"),
-			Util.newArrayListOfValues("feminine", "soft", "padded", "delicate", "slender"),
-			"toe",
-			"toes",
-			Util.newArrayListOfValues("masculine", "padded"),
-			Util.newArrayListOfValues("feminine", "soft", "padded", "delicate", "slender"),
-			"footjob",
-			"[npc.SheHasFull] paw-like feet.",
+	public static AbstractFootType PAWS = new AbstractFootType("похожая на лапу",
+			"лапа",
+			"лапы",
+			Util.newArrayListOfValues("мужской","пышный"),
+			Util.newArrayListOfValues("женственная", "мягкий", "пышный", "хрупкая", "тонкие"),
+			"палец",
+			"пальцы",
+			Util.newArrayListOfValues("мужской", "пышный"),
+			Util.newArrayListOfValues("женственная", "мягкий", "пышный", "хрупкая", "тонкие"),
+			"футджоб",
+			"[npc.SheHasFull] лапообразные ступни.",
 			Util.newArrayListOfValues(
 					FootStructure.PLANTIGRADE,
 					FootStructure.DIGITIGRADE)) {
 		@Override
 		public String getFootNailPolishDescription(GameCharacter owner) {
-			return " [npc.Her] toenails have been painted in "+owner.getCovering(BodyCoveringType.MAKEUP_NAIL_POLISH_FEET).getFullDescription(owner, true)+".";
+			return " [npc.Her] ногти на ногах покрашены в "+owner.getCovering(BodyCoveringType.MAKEUP_NAIL_POLISH_FEET).getFullDescription(owner, true)+".";
 		}
 	};
 
-	public static AbstractFootType HOOFS = new AbstractFootType("hoof-like",
-			"hoof",
-			"hoofs",
-			Util.newArrayListOfValues("masculine","hard"),
-			Util.newArrayListOfValues("feminine", "delicate", "hard"),
-			"hoof",
-			"hoofs",
-			Util.newArrayListOfValues("masculine", "hard"),
-			Util.newArrayListOfValues("feminine", "hard", "delicate"),
-			"hoofjob",
-			"[npc.SheHasFull] hoofs in place of feet.",
+	public static AbstractFootType HOOFS = new AbstractFootType("копытообразные",
+			"копыто",
+			"копыта",
+			Util.newArrayListOfValues("мужской","твёрдая"),
+			Util.newArrayListOfValues("женственная", "хрупкая", "твёрдая"),
+			"копыто",
+			"копыта",
+			Util.newArrayListOfValues("мужской", "твёрдая"),
+			Util.newArrayListOfValues("женственная", "твёрдая", "хрупкая"),
+			"копытотрах",
+			"[npc.SheHasFull] копыта вместо ступней.",
 			Util.newArrayListOfValues(
 					FootStructure.UNGULIGRADE)) {
 		@Override
 		public String getFootNailPolishDescription(GameCharacter owner) {
-			return " [npc.Her] hoofs have been painted in "+owner.getCovering(BodyCoveringType.MAKEUP_NAIL_POLISH_FEET).getFullDescription(owner, true)+".";
+			return " [npc.Her] копыта окрашены в "+owner.getCovering(BodyCoveringType.MAKEUP_NAIL_POLISH_FEET).getFullDescription(owner, true)+".";
 		}
 	};
 
-	public static AbstractFootType REPTILIAN = new AbstractFootType("reptilian",
-			"foot",
-			"feet",
-			Util.newArrayListOfValues("masculine","clawed"),
-			Util.newArrayListOfValues("feminine", "clawed", "slender"),
-			"toe",
-			"toes",
-			Util.newArrayListOfValues("masculine", "clawed"),
-			Util.newArrayListOfValues("feminine", "clawed", "slender"),
-			"footjob",
-			"[npc.SheHasFull] reptilian feet.",
+	public static AbstractFootType REPTILIAN = new AbstractFootType("рептилоидные",
+			"ступня",
+			"ступни",
+			Util.newArrayListOfValues("мужской","когтистые"),
+			Util.newArrayListOfValues("женственная", "когтистые", "тонкие"),
+			"палец",
+			"пальцы",
+			Util.newArrayListOfValues("мужской", "когтистые"),
+			Util.newArrayListOfValues("женственная", "когтистые", "тонкие"),
+			"футджоб",
+			"[npc.SheHasFull] рептилоидные лапы.",
 			Util.newArrayListOfValues(
 					FootStructure.PLANTIGRADE,
 					FootStructure.DIGITIGRADE)) {
 		@Override
 		public String getFootNailPolishDescription(GameCharacter owner) {
-			return " The claws at the end of [npc.her] stout toes have been painted in "+owner.getCovering(BodyCoveringType.MAKEUP_NAIL_POLISH_FEET).getFullDescription(owner, true)+".";
+			return " Когти на концах [npc.her] мощных пальцев окрашены в "+owner.getCovering(BodyCoveringType.MAKEUP_NAIL_POLISH_FEET).getFullDescription(owner, true)+".";
 		}
 	};
 
-	public static AbstractFootType AMPHIBIAN = new AbstractFootType("amphibian",
-			"foot",
-			"feet",
-			Util.newArrayListOfValues("masculine", "webbed"),
-			Util.newArrayListOfValues("feminine", "webbed", "slender"),
-			"toe",
-			"toes",
-			Util.newArrayListOfValues("masculine", "webbed"),
-			Util.newArrayListOfValues("feminine", "webbed", "slender"),
-			"footjob",
-			"[npc.SheHasFull] amphibian feet.",
+	public static AbstractFootType AMPHIBIAN = new AbstractFootType("земноводный",
+			"ступня",
+			"ступни",
+			Util.newArrayListOfValues("мужской", "перепончатый"),
+			Util.newArrayListOfValues("женственная", "перепончатый", "тонкие"),
+			"палец",
+			"пальцы",
+			Util.newArrayListOfValues("мужской", "перепончатый"),
+			Util.newArrayListOfValues("женственная", "перепончатый", "тонкие"),
+			"футджоб",
+			"[npc.SheHasFull] амфибийные лапы.",
 			Util.newArrayListOfValues(
 					FootStructure.PLANTIGRADE,
 					FootStructure.DIGITIGRADE)) {
 		@Override
 		public String getFootNailPolishDescription(GameCharacter owner) {
-			return " The ends of [npc.her] toes have been painted in "+owner.getCovering(BodyCoveringType.MAKEUP_NAIL_POLISH_FEET).getFullDescription(owner, true)+".";
+			return " Кончики [npc.her] пальцев окрашены в "+owner.getCovering(BodyCoveringType.MAKEUP_NAIL_POLISH_FEET).getFullDescription(owner, true)+".";
 		}
 	};
 
-	public static AbstractFootType TALONS = new AbstractFootType("bird-like",
-			"talon",
-			"talons",
-			Util.newArrayListOfValues("masculine","clawed"),
-			Util.newArrayListOfValues("feminine", "clawed", "slender"),
-			"claw",
-			"claws",
-			Util.newArrayListOfValues("masculine", "sharp"),
-			Util.newArrayListOfValues("feminine", "sharp", "slender"),
-			"clawjob",
-			"[npc.SheHasFull] bird-like talons in place of feet.",
+	public static AbstractFootType TALONS = new AbstractFootType("птичьи",
+			"коготь",
+			"когти",
+			Util.newArrayListOfValues("мужской","когтистые"),
+			Util.newArrayListOfValues("женственная", "когтистые", "тонкие"),
+			"коготь",
+			"когти",
+			Util.newArrayListOfValues("мужской", "острая"),
+			Util.newArrayListOfValues("женственная", "острая", "тонкие"),
+			"клешнетрах",
+			"[npc.SheHasFull] вместо ступней — птичьи когти.",
 			Util.newArrayListOfValues(
 					FootStructure.DIGITIGRADE)) {
 		@Override
 		public String getFootNailPolishDescription(GameCharacter owner) {
-			return " The claws on [npc.her] talons have been painted in "+owner.getCovering(BodyCoveringType.MAKEUP_NAIL_POLISH_FEET).getFullDescription(owner, true)+".";
+			return " Когти на [npc.her] когтях окрашены в "+owner.getCovering(BodyCoveringType.MAKEUP_NAIL_POLISH_FEET).getFullDescription(owner, true)+".";
 		}
 	};
 
-	public static AbstractFootType ARACHNID = new AbstractFootType("arachnid",
-			"foot",
-			"feet",
-			Util.newArrayListOfValues("masculine","segmented"),
-			Util.newArrayListOfValues("feminine", "segmented", "slender"),
-			"claw",
-			"claws",
-			Util.newArrayListOfValues("masculine", "sharp"),
-			Util.newArrayListOfValues("feminine", "sharp", "slender"),
-			"clawjob",
-			"[npc.SheHasFull] arachnid claws in place of feet.",
+	public static AbstractFootType ARACHNID = new AbstractFootType("паукообразные",
+			"ступня",
+			"ступни",
+			Util.newArrayListOfValues("мужской","сегментированный"),
+			Util.newArrayListOfValues("женственная", "сегментированный", "тонкие"),
+			"коготь",
+			"когти",
+			Util.newArrayListOfValues("мужской", "острая"),
+			Util.newArrayListOfValues("женственная", "острая", "тонкие"),
+			"клешнетрах",
+			"[npc.SheHasFull] вместо ступней — паучьи клешни.",
 			Util.newArrayListOfValues(
 					FootStructure.PLANTIGRADE,
 					FootStructure.DIGITIGRADE)) {
 		@Override
 		public String getFootNailPolishDescription(GameCharacter owner) {
-			return " The claws on [npc.her] arachnid legs have been painted in "+owner.getCovering(BodyCoveringType.MAKEUP_NAIL_POLISH_FEET).getFullDescription(owner, true)+".";
+			return " Когти на [npc.her] паучьих лапах окрашены в "+owner.getCovering(BodyCoveringType.MAKEUP_NAIL_POLISH_FEET).getFullDescription(owner, true)+".";
 		}
 	};
 
-	public static AbstractFootType TENTACLE = new AbstractFootType("tentacle",
-			"tentacle",
-			"tentacles",
-			Util.newArrayListOfValues("masculine","strong"),
-			Util.newArrayListOfValues("feminine", "strong", "slender"),
-			"sucker",
-			"suckers",
-			Util.newArrayListOfValues("strong"),
-			Util.newArrayListOfValues("strong"),
-			"tentaclejob",
-			"The ends of [npc.her] tentacles are used in much the same way as feet.",
+	public static AbstractFootType TENTACLE = new AbstractFootType("щупальце",
+			"щупальце",
+			"щупальца",
+			Util.newArrayListOfValues("мужской","сильный"),
+			Util.newArrayListOfValues("женственная", "сильный", "тонкие"),
+			"присоску",
+			"присоски",
+			Util.newArrayListOfValues("сильный"),
+			Util.newArrayListOfValues("сильный"),
+			"щупальцетрах",
+			"Кончики [npc.her] щупалец используются почти так же, как ступни.",
 			Util.newArrayListOfValues(
 					FootStructure.TENTACLED)) {
 		@Override
 		public String getFootNailPolishDescription(GameCharacter owner) {
-			return " The tips of [npc.her] tentacles have been painted in "+owner.getCovering(BodyCoveringType.MAKEUP_NAIL_POLISH_FEET).getFullDescription(owner, true)+".";
+			return " Кончики [npc.her] щупалец были раскрашены в "+owner.getCovering(BodyCoveringType.MAKEUP_NAIL_POLISH_FEET).getFullDescription(owner, true)+".";
 		}
 	};
 	

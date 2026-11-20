@@ -19,7 +19,7 @@ public enum BodyPartType {
 	
 	// Ass:
 	ASS("ass"),
-	ANUS("anus"),
+	ANUS("анус"),
 
 	// Breasts:
 	BREAST("breasts"),
@@ -27,19 +27,19 @@ public enum BodyPartType {
 	MILK("milk"),
 	
 	// Crotch-boobs:
-	BREAST_CROTCH("crotch-breasts"),
+	BREAST_CROTCH("грудь на лобке"),
 	NIPPLES_CROTCH("crotch-nipples"),
 	MILK_CROTCH("crotch-breast-milk"),
 	
 	// Head:
-	ANTENNA("antenna"),
+	ANTENNA("антенна"),
 	EAR("ears"),
 	EYE("eyes"),
-	FACE("face"),
+	FACE("лицо"),
 	MOUTH("mouth"),
-	TONGUE("tongue"),
+	TONGUE("язык"),
 	HAIR("hair"),
-	HORN("horns"),
+	HORN("рога"),
 	
 	// Penis:
 	PENIS("penis"),
@@ -48,12 +48,12 @@ public enum BodyPartType {
 	
 	// Vagina:
 	CLIT("clitoris"),
-	VAGINA("vagina"),
-	GIRL_CUM("girl cum"),
+	VAGINA("вагина"),
+	GIRL_CUM("девичья сперма"),
 	
 	// Spinneret:
 
-	SPINNERET("spinneret");
+	SPINNERET("паутинная железа");
 	
 	private String name;
 	private BodyPartType(String name){

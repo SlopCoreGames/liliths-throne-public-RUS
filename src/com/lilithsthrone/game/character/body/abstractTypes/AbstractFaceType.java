@@ -53,7 +53,7 @@ public abstract class AbstractFaceType implements BodyPartTypeInterface {
 	
 	private String faceTransformationDescription;
 	private String faceBodyDescription;
-	private String faceBodyDescriptionFeral = "[npc.SheHasFull] the [npc.feminineDescriptor(true)] face of a feral [npc.legRace], which is [npc.materialDescriptor] [npc.faceFullDescription(true)].";
+	private String faceBodyDescriptionFeral = "[npc.SheHasFull] [npc.feminineDescriptor(true)] лицо дикого [npc.legRace], которое является [npc.materialDescriptor] [npc.faceFullDescription(true)].";
 
 	private List<BodyPartTag> tags;
 
@@ -261,9 +261,9 @@ public abstract class AbstractFaceType implements BodyPartTypeInterface {
 	public String getNameSingular(GameCharacter gc) {
 		if(names==null || names.isEmpty()) {
 			if(this.getTags().contains(BodyPartTag.FACE_MUZZLE)) {
-				return UtilText.returnStringAtRandom("muzzle", "face");
+				return UtilText.returnStringAtRandom("намордник", "лицо");
 			}
-			return "face";
+			return "лицо";
 		}
 		return Util.randomItemFrom(names);
 	}
@@ -272,9 +272,9 @@ public abstract class AbstractFaceType implements BodyPartTypeInterface {
 	public String getNamePlural(GameCharacter gc) {
 		if(namesPlural==null || namesPlural.isEmpty()) {
 			if(this.getTags().contains(BodyPartTag.FACE_MUZZLE)) {
-				return UtilText.returnStringAtRandom("muzzles", "faces");
+				return UtilText.returnStringAtRandom("намордники", "лица");
 			}
-			return "faces";
+			return "лица";
 		}
 		return Util.randomItemFrom(namesPlural);
 	}

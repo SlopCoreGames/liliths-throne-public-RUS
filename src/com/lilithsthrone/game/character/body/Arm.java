@@ -83,21 +83,17 @@ public class Arm implements BodyPartInterface {
 		}
 		
 		if (type == getType()) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] already [npc.has] the [npc.arms] of [npc.a_armRace], so nothing happens...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] уже [npc.has] [npc.arms] [npc.a_armRace], так что ничего не происходит...)]</p>");
 		}
 		
 		StringBuilder sb = new StringBuilder();
 		
 		if (owner.isPlayer()) {
 			sb.append(
-					"<p>"
-						+ "Your [pc.arms+] suddenly feel hot and itchy, and you gasp as you realise that they're starting to transform."
-						+ " You let out a painful cry as your upper limbs twist and transform, leaving you powerless to do anything other than look on as they reshape themselves into a new form.");
+					"<p>Ваши [pc.arms+] внезапно становятся горячими и зудящими; вы ахаете, осознавая, что они начинают трансформироваться. Вы издаете болезненный крик, когда ваши верхние конечности скручиваются и меняются, оставляя вас беспомощными — вам остается лишь наблюдать за тем, как они принимают новую форму.");
 		} else {
 			sb.append(
-					"<p>"
-						+ "[npc.Name] fidgets about as [npc.she] feels [npc.her] [npc.arms+] growing hot and itchy, and [npc.she] gasps as [npc.she] realises that they're starting to transform."
-						+ " [npc.She] lets out a painful cry as [npc.her] upper limbs twist and transform, leaving [npc.her] powerless to do anything other than look on as they reshape themselves into a new form.");
+					"<p>[npc.Name] ерзает, так как [npc.she] чувствует, как [npc.her] [npc.arms+] становится горячим и зудящим, и [npc.she] ахает, когда [npc.she] понимает, что они начинают трансформироваться. [npc.She] издает болезненный крик, когда [npc.her] верхние конечности скручиваются и меняются, оставляя [npc.her] беспомощным(ой), способным(ой) лишь наблюдать за тем, как они принимают новую форму.");
 		}
 
 		// Parse existing content before transformation:
@@ -131,7 +127,7 @@ public class Arm implements BodyPartInterface {
 		int currentArmRows = getArmRows();
 		armRows = Math.max(1, Math.min(armRows, MAXIMUM_ROWS));
 		if (armRows == currentArmRows) {
-			return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+			return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 		}
 		
 		StringBuilder sb = new StringBuilder();
@@ -140,52 +136,40 @@ public class Arm implements BodyPartInterface {
 			boolean losesTwoPairs = (armRows + 2) == currentArmRows;
 			if (owner.isPlayer()) {
 				sb.append(
-						"<p>"
-							+ "You feel a strange pressure building up around the base of "
+						"<p>Вы чувствуете странное давление, нарастающее у основания "
 							+ (losesTwoPairs
-								? "your two extra pairs"
+								? "ваших двух дополнительных пар"
 								: (armRows == 2 
-									? "the lowest of your extra pairs" 
-									: "your extra pair"))
-							+ " of [pc.arms], and before you can react, they rapidly shrink away into the [pc.skin] of your torso.<br/>" 
-							+ "You now have [style.boldTfLesser(" + Util.intToString(armRows) + " pair"+ (armRows > 1 ? "s" : "") + " of [pc.arms])], [pc.materialDescriptor] [pc.armFullDescriptionColour]."
-						+ "</p>");
+									? "самой нижней из ваших дополнительных пар" 
+									: "вашей дополнительной пары"))
+							+ " [pc.arms], и прежде чем вы успеваете среагировать, они стремительно втягиваются в [pc.skin] вашего торса.<br/>Теперь у вас есть [style.boldTfLesser(" + Util.intToString(armRows) + " пара"+ (armRows > 1 ? "s" : "") + " of [pc.arms])], [pc.materialDescriptor] [pc.armFullDescriptionColour].</p>");
 			} else {
 				sb.append(UtilText.parse(owner,
-						"<p>"
-							+ "[npc.Name] glances worriedly down at "
+						"<p>[npc.Name] обеспокоенно смотрит вниз на "
 							+ (losesTwoPairs
-								? "[npc.her] two extra pairs"
+								? "[npc.her] две дополнительные пары"
 								: (armRows == 2 
-									? "the lowest of [npc.her] extra pairs" 
-									: "[npc.her] extra pair"))
-							+ " of [npc.arms], and before [npc.she] can react, they rapidly shrink away into the [npc.skin] of [npc.her] torso.<br/>" 
-							+ "[npc.She] now has [style.boldTfLesser(" + Util.intToString(armRows) + " pair"+ (armRows > 1 ? "s" : "") + " of [npc.arms])], [npc.materialDescriptor] [npc.armFullDescriptionColour]."
-						+ "</p>"));
+									? "самая нижняя из [npc.her] дополнительных пар" 
+									: "[npc.her] дополнительная пара"))
+							+ " [npc.arms], и прежде чем [npc.she] успеет среагировать, они стремительно втягиваются в [npc.skin] [npc.her] торса.<br/>[npc.She] теперь обладает [style.boldTfLesser(" + Util.intToString(armRows) + " пара"+ (armRows > 1 ? "s" : "") + " of [npc.arms])], [npc.materialDescriptor] [npc.armFullDescriptionColour].</p>"));
 			}
 			
 		} else {
 			boolean gainsTwoPairs = (armRows - 2) == currentArmRows;
 			if (owner.isPlayer()) {
 				sb.append(
-						"<p>"
-							+ "You feel a strange pressure building up down the sides of your torso, and before you have time to react, "
+						"<p>Вы чувствуете странное давление, нарастающее по бокам вашего торса, и прежде чем вы успеваете среагировать, "
 								+ (gainsTwoPairs
-									? "two extra pairs"
-									: "an extra pair")
-							+ " of [pc.arms] rapidly grow out of the [pc.skin] of your lower torso.<br/>"
-							+ "You now have [style.boldTfLesser(" + Util.intToString(armRows) + " pair"+ (armRows > 1 ? "s" : "") + " of [pc.arms])], [pc.materialDescriptor] [pc.armFullDescriptionColour]."
-						+ "</p>");
+									? "две дополнительные пары"
+									: "дополнительная пара")
+							+ " [pc.arms] стремительно вырастает из [pc.skin] вашего нижнего торса.<br/>Теперь у вас есть [style.boldTfLesser(" + Util.intToString(armRows) + " пара"+ (armRows > 1 ? "s" : "") + " of [pc.arms])], [pc.materialDescriptor] [pc.armFullDescriptionColour].</p>");
 			} else {
 				sb.append(UtilText.parse(owner,
-						"<p>"
-							+ "[npc.Name] glances worriedly down at [npc.her] torso, and before [npc.she] can react, "
+						"<p>[npc.Name] с беспокойством смотрит на торс [npc.her], и прежде чем [npc.she] успевает среагировать, "
 								+ (gainsTwoPairs
-									? "two extra pairs"
-									: "an extra pair")
-							+ " of [npc.arms] rapidly grow out of the [npc.skin] of [npc.her] lower torso.<br/>"
-							+ "[npc.She] now has [style.boldTfLesser(" + Util.intToString(armRows) + " pair"+ (armRows > 1 ? "s" : "") + " of [npc.arms])], [npc.materialDescriptor] [npc.armFullDescriptionColour]."
-						+ "</p>"));
+									? "две дополнительные пары"
+									: "дополнительная пара")
+							+ " [npc.arms] стремительно прорастают из [npc.skin] [npc.her] нижней части торса.<br/>[npc.She] теперь имеет [style.boldTfLesser(, " + Util.intToString(armRows) + " пара"+ (armRows > 1 ? "s" : "") + " of [npc.arms])], [npc.materialDescriptor] [npc.armFullDescriptionColour].</p>"));
 			}
 		}
 		
@@ -214,39 +198,39 @@ public class Arm implements BodyPartInterface {
 		}
 
 		if(!this.getType().isUnderarmHairAllowed()) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(As [npc.namePos] arm type prevents [npc.herHim] from growing any underarm hair, nothing happens...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(Так как тип рук [npc.namePos] не позволяет [npc.herHim] отращивать волосы под мышками, ничего не происходит...)]</p>");
 		}
 		
 		if(getUnderarmHair() == underarmHair) {
-			return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+			return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 		}
 		
 		StringBuilder sb = new StringBuilder();
 		
 		switch(underarmHair) {
 			case ZERO_NONE:
-				sb.append(UtilText.parse(owner, "<p>There is no longer any trace of "+getUnderarmHairType(owner).getFullDescription(owner, true)+" in [npc.her] armpits.</p>"));
+				sb.append(UtilText.parse(owner, "<p>От <p> больше не осталось и следа "+getUnderarmHairType(owner).getFullDescription(owner, true)+" в подмышках [npc.her].</p>"));
 				break;
 			case ONE_STUBBLE:
-				sb.append(UtilText.parse(owner, "<p>[npc.Name] now [npc.has] stubbly patches of "+getUnderarmHairType(owner).getFullDescription(owner, true)+" in [npc.her] armpits.</p>"));
+				sb.append(UtilText.parse(owner, "<p>[npc.Name] теперь [npc.has] колючие участки "+getUnderarmHairType(owner).getFullDescription(owner, true)+" в подмышках [npc.her].</p>"));
 				break;
 			case TWO_MANICURED:
-				sb.append(UtilText.parse(owner, "<p>[npc.Name] now [npc.has] a well-manicured patch of "+getUnderarmHairType(owner).getFullDescription(owner, true)+" in [npc.her] armpits.</p>"));
+				sb.append(UtilText.parse(owner, "<p>[npc.Name] теперь [npc.has] обладает ухоженной полоской волос "+getUnderarmHairType(owner).getFullDescription(owner, true)+" в подмышках [npc.her].</p>"));
 				break;
 			case THREE_TRIMMED:
-				sb.append(UtilText.parse(owner, "<p>[npc.Name] now [npc.has] trimmed patches of "+getUnderarmHairType(owner).getFullDescription(owner, true)+" in [npc.her] armpits.</p>"));
+				sb.append(UtilText.parse(owner, "<p>[npc.Name] теперь [npc.has] аккуратно подстриженные участки "+getUnderarmHairType(owner).getFullDescription(owner, true)+" в подмышках [npc.her].</p>"));
 				break;
 			case FOUR_NATURAL:
-				sb.append(UtilText.parse(owner, "<p>[npc.Name] now [npc.has] a natural amount of "+getUnderarmHairType(owner).getFullDescription(owner, true)+" in [npc.her] armpits.</p>"));
+				sb.append(UtilText.parse(owner, "<p>[npc.Name] теперь [npc.has] естественное количество "+getUnderarmHairType(owner).getFullDescription(owner, true)+" в подмышках [npc.her].</p>"));
 				break;
 			case FIVE_UNKEMPT:
-				sb.append(UtilText.parse(owner, "<p>[npc.Name] now [npc.has] an unkempt mass of "+getUnderarmHairType(owner).getFullDescription(owner, true)+" in [npc.her] armpits.</p>"));
+				sb.append(UtilText.parse(owner, "<p>[npc.Name] теперь [npc.has] неопрятная масса "+getUnderarmHairType(owner).getFullDescription(owner, true)+" в подмышках [npc.her].</p>"));
 				break;
 			case SIX_BUSHY:
-				sb.append(UtilText.parse(owner, "<p>[npc.Name] now [npc.has] thick, bushy masses of "+getUnderarmHairType(owner).getFullDescription(owner, true)+" in [npc.her] armpits.</p>"));
+				sb.append(UtilText.parse(owner, "<p>[npc.Name] теперь [npc.has] густые, пушистые заросли "+getUnderarmHairType(owner).getFullDescription(owner, true)+" в подмышках [npc.her].</p>"));
 				break;
 			case SEVEN_WILD:
-				sb.append(UtilText.parse(owner, "<p>[npc.Name] now [npc.has] wild, bushy masses of "+getUnderarmHairType(owner).getFullDescription(owner, true)+" in [npc.her] armpits.</p>"));
+				sb.append(UtilText.parse(owner, "<p>[npc.Name] теперь [npc.has] дикие, пушистые заросли "+getUnderarmHairType(owner).getFullDescription(owner, true)+" в подмышках [npc.her].</p>"));
 				break;
 		}
 		

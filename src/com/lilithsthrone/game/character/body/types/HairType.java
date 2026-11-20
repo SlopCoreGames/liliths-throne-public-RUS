@@ -26,71 +26,61 @@ public class HairType {
 
 	public static AbstractHairType HUMAN = new AbstractHairType(BodyCoveringType.HAIR_HUMAN,
 			Race.HUMAN,
-			"human",
-			"hair",
-			"hairs",
+			"человеческими",
+			"волосы",
+			"волосы",
 			Util.newArrayListOfValues(""),
-			Util.newArrayListOfValues("soft", "feminine"),
-			"The transformation only lasts a matter of moments, leaving [npc.herHim] with human-like hair.<br/>"
-					+ "[npc.Name] now [npc.has] [npc.hairColour], [style.boldHuman(human hair)].",
-			"[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)], human hair",
+			Util.newArrayListOfValues("мягкий", "женственная"),
+			"Трансформация длится лишь мгновения, оставляя [npc.herHim] с человеческими волосами.<br/>[npc.Name] теперь [npc.has] [npc.hairColour], [style.boldHuman(человеческие волосы)].",
+			"[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)], человеческие волосы",
 			Util.newArrayListOfValues(BodyPartTag.HAIR_HANDLES_IN_SEX)) {
 	};
 
 	public static AbstractHairType ANGEL = new AbstractHairType(BodyCoveringType.HAIR_ANGEL,
 			Race.ANGEL,
-			"angelic",
-			"hair",
-			"hairs",
+			"ангельский",
+			"волосы",
+			"волосы",
 			Util.newArrayListOfValues(""),
-			Util.newArrayListOfValues("silken", "soft", "feminine"),
-			"The transformation only lasts a matter of moments, leaving [npc.herHim] with silken, angelic hair.<br/>"
-					+ "[npc.Name] now [npc.has] [npc.hairColour], [style.boldAngel(angelic hair)].",
-			"[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)], angelic hair",
+			Util.newArrayListOfValues("шелковистые", "мягкий", "женственная"),
+			"Трансформация длится лишь мгновения, оставляя [npc.herHim] с шелковистыми ангельскими волосами.<br/>[npc.Name] теперь [npc.has] [npc.hairColour], [style.boldAngel(ангельские волосы)].",
+			"[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)], ангельские волосы",
 			Util.newArrayListOfValues(BodyPartTag.HAIR_HANDLES_IN_SEX)) {
 	};
 	
 	public static AbstractHairType DEMON = new AbstractHairType(BodyCoveringType.HAIR_DEMON,
 			Race.DEMON,
-			"demonic",
-			"hair",
-			"hairs",
+			"демонический",
+			"волосы",
+			"волосы",
 			Util.newArrayListOfValues(""),
-			Util.newArrayListOfValues("silken", "soft", "feminine"),
-			"#IF(npc.isShortStature())"
-				+ "The transformation only lasts a matter of moments, leaving [npc.herHim] with silky, impish hair.<br/>"
-					+ "[npc.Name] now [npc.has] [npc.hairColour] [style.boldImp(impish hair)]."
-			+ "#ELSE"
-				+ "The transformation only lasts a matter of moments, leaving [npc.herHim] with silken, demonic hair.<br/>"
-					+ "[npc.Name] now [npc.has] [npc.hairColour], [style.boldDemon(demonic hair)]."
-			+ "#ENDIF",
-			"[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)], #IF(npc.isShortStature())impish#ELSEdemonic#ENDIF hair",
+			Util.newArrayListOfValues("шелковистые", "мягкий", "женственная"),
+			"#IF(npc.isShortStature())Трансформация длится лишь мгновения, оставляя [npc.herHim] с шелковистыми бесовскими волосами.<br/>[npc.Name] теперь [npc.has] [npc.hairColour] [style.boldImp(бесовские волосы)].#ELSEТрансформация длится лишь мгновения, оставляя [npc.herHim] с шелковистыми демоническими волосами.<br/>[npc.Name] теперь [npc.has] [npc.hairColour], [style.boldDemon(демонические волосы)].#ENDIF",
+			"[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)], #IF(npc.isShortStature())бесовские#ELSEдемонические#ENDIF волосы",
 			Util.newArrayListOfValues(BodyPartTag.HAIR_HANDLES_IN_SEX)) {
 	};
 
 	public static AbstractHairType DOG_MORPH = new AbstractHairType(BodyCoveringType.HAIR_CANINE_FUR,
 			Race.DOG_MORPH,
-			"dog",
-			"hair",
-			"hairs",
-			Util.newArrayListOfValues("furry", "fur-like"),
-			Util.newArrayListOfValues("furry", "fur-like"),
-			"The transformation only lasts a matter of moments, leaving [npc.herHim] with fur-like hair.<br/>"
-				+ "[npc.Name] now [npc.has] [npc.hairColour] [style.boldDogMorph(dog hair)].",
-			"[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)], dog-like hair",
+			"коровьи",
+			"волосы",
+			"волосы",
+			Util.newArrayListOfValues("пушистая", "похожими на мех"),
+			Util.newArrayListOfValues("пушистая", "похожими на мех"),
+			"Трансформация длится лишь мгновения, оставляя [npc.herHim] с волосами, похожими на мех.<br/>[npc.Name] теперь [npc.has] [npc.hairColour] [style.boldDogMorph(собачья шерсть)].",
+			"[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)], собачья шерсть",
 			Util.newArrayListOfValues(BodyPartTag.HAIR_HANDLES_IN_SEX)) {
 	};
 	
 	public static AbstractHairType WOLF_MORPH = new AbstractHairType(BodyCoveringType.HAIR_LYCAN_FUR, //TODO rename
 			Race.WOLF_MORPH,
-			"wolf",
-			"hair",
-			"hairs",
-			Util.newArrayListOfValues("furry", "fur-like"),
-			Util.newArrayListOfValues("furry", "fur-like"),
-			"The transformation only lasts a matter of moments, leaving [npc.herHim] with fur-like hair.<br/>"
-				+ "[npc.Name] now [npc.has] [npc.hairColour] [style.boldWolfMorph(wolf hair)].",
-			"[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)], wolf-like hair",
+			"волчьи",
+			"волосы",
+			"волосы",
+			Util.newArrayListOfValues("пушистая", "похожими на мех"),
+			Util.newArrayListOfValues("пушистая", "похожими на мех"),
+			"Трансформация длится лишь мгновения, оставляя [npc.herHim] с волосами, похожими на мех.<br/>[npc.Name] теперь [npc.has] [npc.hairColour] [style.boldWolfMorph(волчья шерсть)].",
+			"[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)], волчья шерсть",
 			Util.newArrayListOfValues(BodyPartTag.HAIR_HANDLES_IN_SEX)) {
 		@Override
 		public boolean isNeckFluffRequiresGreater() {
@@ -104,14 +94,13 @@ public class HairType {
 
 	public static AbstractHairType FOX_MORPH = new AbstractHairType(BodyCoveringType.HAIR_FOX_FUR,
 			Race.FOX_MORPH,
-			"fox",
-			"hair",
-			"hairs",
-			Util.newArrayListOfValues("furry", "fur-like"),
-			Util.newArrayListOfValues("furry", "fur-like"),
-			"The transformation only lasts a matter of moments, leaving [npc.herHim] with fur-like hair.<br/>"
-				+ "[npc.Name] now [npc.has] [npc.hairColour] [style.boldFoxMorph(fox hair)].",
-			"[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)], fox-like hair",
+			"лисий",
+			"волосы",
+			"волосы",
+			Util.newArrayListOfValues("пушистая", "похожими на мех"),
+			Util.newArrayListOfValues("пушистая", "похожими на мех"),
+			"Трансформация длится лишь мгновения, оставляя [npc.herHim] с волосами, похожими на мех.<br/>[npc.Name] теперь [npc.has] [npc.hairColour] [style.boldFoxMorph(лисья шерсть)].",
+			"[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)], лисья шерсть",
 			Util.newArrayListOfValues(BodyPartTag.HAIR_HANDLES_IN_SEX)) {
 		@Override
 		public boolean isNeckFluffRequiresGreater() {
@@ -125,119 +114,110 @@ public class HairType {
 
 	public static AbstractHairType CAT_MORPH = new AbstractHairType(BodyCoveringType.HAIR_FELINE_FUR, //TODO change to cat
 			Race.CAT_MORPH,
-			"cat",
-			"hair",
-			"hairs",
-			Util.newArrayListOfValues("furry", "fur-like"),
-			Util.newArrayListOfValues("furry", "fur-like"),
-			"The transformation only lasts a matter of moments, leaving [npc.herHim] with fur-like hair.<br/>"
-				+ "[npc.Name] now [npc.has] [npc.hairColour] [style.boldCatMorph(cat hair)].",
-			"[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)], cat-like hair",
+			"кошачьи",
+			"волосы",
+			"волосы",
+			Util.newArrayListOfValues("пушистая", "похожими на мех"),
+			Util.newArrayListOfValues("пушистая", "похожими на мех"),
+			"Трансформация длится лишь мгновения, оставляя [npc.herHim] с волосами, похожими на мех.<br/>[npc.Name] теперь [npc.has] [npc.hairColour] [style.boldCatMorph(кошачья шерсть)].",
+			"[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)], кошачья шерсть",
 			Util.newArrayListOfValues(BodyPartTag.HAIR_HANDLES_IN_SEX)) {
 	};
 
 	//TODO should be PANTHER
 	public static AbstractHairType CAT_MORPH_SIDEFLUFF = new AbstractHairType(BodyCoveringType.HAIR_FELINE_FUR,
 			Race.CAT_MORPH,
-			"cat (sidefluff)",
-			"hair",
-			"hairs",
-			Util.newArrayListOfValues("furry", "fur-like"),
-			Util.newArrayListOfValues("furry", "fur-like"),
-			"The transformation only lasts a matter of moments, leaving [npc.herHim] with fur-like hair.<br/>"
-				+ "[npc.Name] now [npc.has] [npc.hairColour] [style.boldCatMorph(cat hair)].",
-			"[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)], cat-like hair, complete with soft, fuzzy fur on the sides of [npc.her] face",
+			"кошка (боковая пушистость)",
+			"волосы",
+			"волосы",
+			Util.newArrayListOfValues("пушистая", "похожими на мех"),
+			Util.newArrayListOfValues("пушистая", "похожими на мех"),
+			"Трансформация длится лишь мгновения, оставляя [npc.herHim] с волосами, похожими на мех.<br/>[npc.Name] теперь [npc.has] [npc.hairColour] [style.boldCatMorph(кошачья шерсть)].",
+			"[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)], кошачья шерсть, дополненная мягким, пушистым мехом по бокам лица [npc.her]",
 			Util.newArrayListOfValues(BodyPartTag.HAIR_HANDLES_IN_SEX)) {
 	};
 
 	public static AbstractHairType COW_MORPH = new AbstractHairType(BodyCoveringType.HAIR_BOVINE_FUR, //TODO change to cow
 			Race.COW_MORPH,
-			"cow",
-			"hair",
-			"hairs",
-			Util.newArrayListOfValues("furry", "fur-like"),
-			Util.newArrayListOfValues("furry", "fur-like"),
-			"The transformation only lasts a matter of moments, leaving [npc.herHim] with fur-like hair.<br/>"
-				+ "[npc.Name] now [npc.has] [npc.hairColour] [style.boldCowMorph(cow hair)].",
-			"[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)], cow-like hair",
+			"корова",
+			"волосы",
+			"волосы",
+			Util.newArrayListOfValues("пушистая", "похожими на мех"),
+			Util.newArrayListOfValues("пушистая", "похожими на мех"),
+			"Трансформация длится лишь мгновения, оставляя [npc.herHim] с волосами, похожими на мех.<br/>[npc.Name] теперь [npc.has] [npc.hairColour] [style.boldCowMorph(коровья шерсть)].",
+			"[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)], коровьи волосы",
 			Util.newArrayListOfValues(BodyPartTag.HAIR_HANDLES_IN_SEX)) {
 	};
 
 	public static AbstractHairType ALLIGATOR_MORPH = new AbstractHairType(BodyCoveringType.HAIR_SCALES_ALLIGATOR, //TODO change to hair
 			Race.ALLIGATOR_MORPH,
-			"alligator",
-			"hair",
-			"hairs",
-			Util.newArrayListOfValues("coarse"),
-			Util.newArrayListOfValues("coarse"),
-			"The transformation only lasts a matter of moments, leaving [npc.herHim] with coarse hair.<br/>"
-				+ "[npc.Name] now [npc.has] [npc.hairColour] [style.boldAlligatorMorph(alligator hair)].",
-			"[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)], coarse alligator hair",
+			"аллигатора",
+			"волосы",
+			"волосы",
+			Util.newArrayListOfValues("жесткими"),
+			Util.newArrayListOfValues("жесткими"),
+			"Трансформация длится лишь мгновения, оставляя [npc.herHim] с грубыми волосами.<br/>[npc.Name] теперь [npc.has] [npc.hairColour] [style.boldAlligatorMorph(аллигаторова шерсть)].",
+			"[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)], грубая аллигаторова шерсть",
 			Util.newArrayListOfValues(BodyPartTag.HAIR_HANDLES_IN_SEX)) {
 	};
 
 	public static AbstractHairType SQUIRREL_MORPH = new AbstractHairType(BodyCoveringType.HAIR_SQUIRREL_FUR,
 			Race.SQUIRREL_MORPH,
-			"squirrel",
-			"hair",
-			"hairs",
-			Util.newArrayListOfValues("furry", "fur-like"),
-			Util.newArrayListOfValues("furry", "fur-like"),
-			"The transformation only lasts a matter of moments, leaving [npc.herHim] with fur-like hair.<br/>"
-				+ "[npc.Name] now [npc.has] [npc.hairColour] [style.boldSquirrelMorph(squirrel hair)].",
-			"[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)], squirrel-like hair",
+			"беличьи",
+			"волосы",
+			"волосы",
+			Util.newArrayListOfValues("пушистая", "похожими на мех"),
+			Util.newArrayListOfValues("пушистая", "похожими на мех"),
+			"Трансформация длится лишь мгновения, оставляя [npc.herHim] с мехоподобными волосами.<br/>[npc.Name] теперь [npc.has] [npc.hairColour] [style.boldSquirrelMorph(беличья шерсть)].",
+			"[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)], беличьи волосы",
 			Util.newArrayListOfValues(BodyPartTag.HAIR_HANDLES_IN_SEX)) {
 	};
 
 	public static AbstractHairType RAT_MORPH = new AbstractHairType(BodyCoveringType.HAIR_RAT_FUR,
 			Race.RAT_MORPH,
-			"rat",
-			"hair",
-			"hairs",
-			Util.newArrayListOfValues("furry", "fur-like"),
-			Util.newArrayListOfValues("furry", "fur-like"),
-			"The transformation only lasts a matter of moments, leaving [npc.herHim] with fur-like hair.<br/>"
-				+ "[npc.Name] now [npc.has] [npc.hairColour] [style.boldRatMorph(rat hair)].",
-			"[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)], rat-like hair",
+			"крыса",
+			"волосы",
+			"волосы",
+			Util.newArrayListOfValues("пушистая", "похожими на мех"),
+			Util.newArrayListOfValues("пушистая", "похожими на мех"),
+			"Трансформация длится лишь мгновения, оставляя [npc.herHim] с мехоподобными волосами.<br/>[npc.Name] теперь [npc.has] [npc.hairColour] [style.boldRatMorph(крысиная шерсть)].",
+			"[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)], крысиные волосы",
 			Util.newArrayListOfValues(BodyPartTag.HAIR_HANDLES_IN_SEX)) {
 	};
 
 	public static AbstractHairType RABBIT_MORPH = new AbstractHairType(BodyCoveringType.HAIR_RABBIT_FUR,
 			Race.RABBIT_MORPH,
-			"rabbit",
-			"hair",
-			"hairs",
-			Util.newArrayListOfValues("furry", "fur-like"),
-			Util.newArrayListOfValues("furry", "fur-like"),
-			"The transformation only lasts a matter of moments, leaving [npc.herHim] with fur-like hair.<br/>"
-				+ "[npc.Name] now [npc.has] [npc.hairColour] [style.boldRabbitMorph(rabbit hair)].",
-			"[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)], rabbit-like hair",
+			"кроличьи",
+			"волосы",
+			"волосы",
+			Util.newArrayListOfValues("пушистая", "похожими на мех"),
+			Util.newArrayListOfValues("пушистая", "похожими на мех"),
+			"Трансформация длится лишь мгновения, оставляя [npc.herHim] с мехоподобными волосами.<br/>[npc.Name] теперь [npc.has] [npc.hairColour] [style.boldRabbitMorph(кроличий мех)].",
+			"[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)], кроличьи волосы",
 			Util.newArrayListOfValues(BodyPartTag.HAIR_HANDLES_IN_SEX)) {
 	};
 
 	public static AbstractHairType BAT_MORPH = new AbstractHairType(BodyCoveringType.HAIR_BAT_FUR,
 			Race.BAT_MORPH,
-			"bat",
-			"hair",
-			"hairs",
-			Util.newArrayListOfValues("furry", "fur-like"),
-			Util.newArrayListOfValues("furry", "fur-like"),
-			"The transformation only lasts a matter of moments, leaving [npc.herHim] with fur-like hair.<br/>"
-				+ "[npc.Name] now [npc.has] [npc.hairColour] [style.boldBatMorph(bat hair)].",
-			"[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)], bat-like hair",
+			"летучая мышь",
+			"волосы",
+			"волосы",
+			Util.newArrayListOfValues("пушистая", "похожими на мех"),
+			Util.newArrayListOfValues("пушистая", "похожими на мех"),
+			"Трансформация длится лишь мгновения, оставляя [npc.herHim] с мехоподобными волосами.<br/>[npc.Name] теперь [npc.has] [npc.hairColour] [style.boldBatMorph(летучая мышь шерсть)].",
+			"[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)], волосы, похожие на перепонки летучей мыши",
 			Util.newArrayListOfValues(BodyPartTag.HAIR_HANDLES_IN_SEX)) {
 	};
 
 	public static AbstractHairType HORSE_MORPH = new AbstractHairType(BodyCoveringType.HAIR_HORSE_HAIR,
 			Race.HORSE_MORPH,
-			"horse",
-			"hair",
-			"hairs",
-			Util.newArrayListOfValues("furry", "fur-like"),
-			Util.newArrayListOfValues("furry", "fur-like"),
-			"The transformation only lasts a matter of moments, leaving [npc.herHim] with fur-like hair.<br/>"
-				+ "[npc.Name] now [npc.has] [npc.hairColour] [style.boldHorseMorph(horse hair)].",
-			"[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)], horse-like hair",
+			"лошади",
+			"волосы",
+			"волосы",
+			Util.newArrayListOfValues("пушистая", "похожими на мех"),
+			Util.newArrayListOfValues("пушистая", "похожими на мех"),
+			"Трансформация длится всего мгновение, оставляя [npc.herHim] с волосами, напоминающими мех.<br/>[npc.Name] теперь [npc.has] [npc.hairColour] [style.boldHorseMorph(лошадиная грива)].",
+			"[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)], волосы, похожие на конскую гриву",
 			Util.newArrayListOfValues(
 					BodyPartTag.HAIR_HANDLES_IN_SEX,
 					BodyPartTag.HAIR_NATURAL_MANE)) {
@@ -245,27 +225,25 @@ public class HairType {
 
 	public static AbstractHairType REINDEER_MORPH = new AbstractHairType(BodyCoveringType.HAIR_REINDEER_FUR,
 			Race.REINDEER_MORPH,
-			"reindeer",
-			"hair",
-			"hairs",
-			Util.newArrayListOfValues("furry", "fur-like"),
-			Util.newArrayListOfValues("furry", "fur-like"),
-			"The transformation only lasts a matter of moments, leaving [npc.herHim] with fur-like hair.<br/>"
-				+ "[npc.Name] now [npc.has] [npc.hairColour] [style.boldReindeerMorph(reindeer hair)].",
-			"[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)], reindeer-like hair",
+			"оленьей шерсти",
+			"волосы",
+			"волосы",
+			Util.newArrayListOfValues("пушистая", "похожими на мех"),
+			Util.newArrayListOfValues("пушистая", "похожими на мех"),
+			"Трансформация длится всего мгновение, оставляя [npc.herHim] с волосами, напоминающими мех.<br/>[npc.Name] теперь [npc.has] [npc.hairColour] [style.boldReindeerMorph(оленья шерсть)].",
+			"[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)], волосы, похожие на оленью шерсть",
 			Util.newArrayListOfValues(BodyPartTag.HAIR_HANDLES_IN_SEX)) {
 	};
 
 	public static AbstractHairType HARPY = new AbstractHairType(BodyCoveringType.HAIR_HARPY,
 			Race.HARPY,
-			"harpy",
-			"head-feather",
-			"head-feathers",
-			Util.newArrayListOfValues("beautiful", "bird-like"),
-			Util.newArrayListOfValues("beautiful", "bird-like"),
-			"The transformation only lasts a matter of moments, leaving [npc.herHim] with a plume of feathers in place of hair.<br/>"
-				+ "[npc.Name] now [npc.has] [npc.hairColour], bird-like [style.boldHarpy(harpy feathers)].",
-			"[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)], bird-like harpy feathers",
+			"гарпия",
+			"головное перо",
+			"головные перья",
+			Util.newArrayListOfValues("прекрасные", "птичьи"),
+			Util.newArrayListOfValues("прекрасные", "птичьи"),
+			"Трансформация длится всего мгновение, оставляя [npc.herHim] вместо волос целый веер перьев.<br/>[npc.Name] теперь [npc.has] [npc.hairColour], птичьи [style.boldHarpy(перья гарпии)].",
+			"[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)], птичьи перья гарпии",
 			Util.newArrayListOfValues(BodyPartTag.HAIR_HANDLES_IN_SEX)) {
 		@Override
 		public boolean isDefaultPlural(GameCharacter gc) {
@@ -273,7 +251,7 @@ public class HairType {
 		}
 		@Override
 		public String getDeterminer(GameCharacter gc) {
-			return "a plume of";
+			return "пучок";
 		}
 	};
 
@@ -286,7 +264,7 @@ public class HairType {
 
 		// Modded types:
 		
-		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/race", "bodyParts", null);
+		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/раса", "bodyParts", null);
 		for(Entry<String, Map<String, File>> entry : moddedFilesMap.entrySet()) {
 			for(Entry<String, File> innerEntry : entry.getValue().entrySet()) {
 				if(Util.getXmlRootElementName(innerEntry.getValue()).equals("hair")) {

@@ -65,18 +65,18 @@ public class Clitoris implements BodyPartInterface {
 	@Override
 	public String getNameSingular(GameCharacter gc) {
 		if(this.getClitorisSize()==ClitorisSize.ZERO_AVERAGE) {
-			return UtilText.returnStringAtRandom("clit", "clit", "clit", "nub", "button");
+			return UtilText.returnStringAtRandom("клитор", "клитор", "клитор", "горошина", "бугорок");
 		} else {
-			return UtilText.returnStringAtRandom("clit", "clit", "clit", "clit-dick");
+			return UtilText.returnStringAtRandom("клитор", "клитор", "клитор", "клитор-член");
 		}
 	}
 
 	@Override
 	public String getNamePlural(GameCharacter gc) {
 		if(this.getClitorisSize()==ClitorisSize.ZERO_AVERAGE) {
-			return UtilText.returnStringAtRandom("clits", "clits", "clits", "nubs", "buttons");
+			return UtilText.returnStringAtRandom("клиторы", "клиторы", "клиторы", "бугорки", "горошины");
 		} else {
-			return UtilText.returnStringAtRandom("clits", "clits", "clits", "clit-dick");
+			return UtilText.returnStringAtRandom("клиторы", "клиторы", "клиторы", "клитор-член");
 		}
 	}
 
@@ -121,11 +121,11 @@ public class Clitoris implements BodyPartInterface {
 	}
 	
 	public String getClitTipNameSingular(GameCharacter gc) {
-		return UtilText.returnStringAtRandom("tip", "tip", "end");
+		return UtilText.returnStringAtRandom("кончик", "кончик", "конец");
 	}
 	
 	public String getClitTipNamePlural(GameCharacter gc) {
-		return UtilText.returnStringAtRandom("tips", "tips", "ends");
+		return UtilText.returnStringAtRandom("кончики", "кончики", "заканчивается");
 	}
 	
 	public String getClitTipDescriptor(GameCharacter gc) {
@@ -173,7 +173,7 @@ public class Clitoris implements BodyPartInterface {
 		}
 		
 		if(!owner.hasVagina()) {
-			return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+			return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 		}
 		
 		int oldSize = this.clitSize;
@@ -182,39 +182,23 @@ public class Clitoris implements BodyPartInterface {
 		
 		if (sizeChange == 0) {
 			if(owner.isPlayer()) {
-				return "<p style='text-align:center;'>[style.colourDisabled(The size of your clit doesn't change...)]</p>";
+				return "<p style='text-align:center;'>[style.colourDisabled(Размер твоего клитора не меняется...)]</p>";
 			} else {
-				return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(The size of [npc.namePos] clit doesn't change...)]</p>");
+				return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(Размер клитора [npc.namePos] не меняется...)]</p>");
 			}
 		} else if (sizeChange > 0) {
 			if (owner.isPlayer()) {
-				return "<p>"
-							+ "You let out [pc.a_moan] as you feel a deep throbbing sensation building up within your [pc.pussy]."
-							+ " Your cheeks flush red as the feeling works its way up into your clit, and with a little gasp, you feel it [style.boldGrow(grow larger)].<br/>"
-							+ "You now have [style.boldSex([pc.a_clitSize] [pc.clit])]!"
-						+ "</p>";
+				return "<p>Ты издаешь [pc.a_moan], чувствуя, как внутри твоей [pc.pussy] нарастает глубокая пульсация. Твои щеки краснеют, когда это ощущение поднимается к самому клитору, и с легким вздохом ты чувствуешь, как он [style.boldGrow(увеличивается)].<br/>Теперь у тебя есть [style.boldSex([pc.a_clitSize] [pc.clit])]!</p>";
 			} else {
 				return UtilText.parse(owner,
-						"<p>"
-							+ "[npc.Name] lets out [npc.a_moan] as [npc.she] feels a deep throbbing sensation building up within [npc.her] [npc.pussy]."
-							+ " [npc.Her] cheeks flush red as the feeling works its way up [npc.her] clit, and with a little gasp, [npc.she] feels it [style.boldGrow(grow larger)].<br/>"
-							+ "[npc.She] now has [style.boldSex([npc.a_clitSize] [npc.clit])]!"
-						+ "</p>");
+						"<p>[npc.Name] издает [npc.a_moan], когда [npc.she] чувствует, как внутри [npc.her] [npc.pussy] нарастает глубокая пульсация. Щеки [npc.Her] краснеют, когда это ощущение поднимается к [npc.her] клитору, и с легким вздохом [npc.she] чувствует, как он [style.boldGrow(увеличивается)].<br/>Теперь у [npc.She] есть [style.boldSex([npc.a_clitSize] [npc.clit])]!</p>");
 			}
 		} else {
 			if (owner.isPlayer()) {
-				return "<p>"
-							+ "You let out [pc.a_moan] as you feel a deep throbbing sensation building up within your [pc.pussy]."
-							+ " Your cheeks flush red as the feeling works its way up into your clit, and with a little gasp, you feel it [style.boldShrink(shrink)].<br/>"
-							+ "You now have [style.boldSex([pc.a_clitSize] [pc.clit])]!"
-						+ "</p>";
+				return "<p>Ты издаешь [pc.a_moan], чувствуя, как внутри твоей [pc.pussy] нарастает глубокая пульсация. Твои щеки краснеют, когда это ощущение поднимается к самому клитору, и с легким вздохом ты чувствуешь, как он [style.boldShrink(уменьшается)].<br/>Теперь у тебя есть [style.boldSex([pc.a_clitSize] [pc.clit])]!</p>";
 			} else {
 				return UtilText.parse(owner,
-						"<p>"
-								+ "[npc.Name] lets out [npc.a_moan] as [npc.she] feels a deep throbbing sensation  building up within [npc.her] [npc.pussy]"
-								+ " [npc.Her] cheeks flush red as the feeling works its way up [npc.her] clit, and with a little gasp, [npc.she] feels it [style.boldShrink(shrink)].<br/>"
-								+ "[npc.She] now has [style.boldSex([npc.a_clitSize] [npc.clit])]!"
-						+ "</p>");
+						"<p>[npc.Name] издает [npc.a_moan], когда [npc.she] чувствует, как внутри [npc.her] нарастает глубокая пульсация. [npc.pussy] [npc.Her] щеки краснеют, когда это ощущение поднимается к [npc.her] клитору, и с легким вздохом [npc.she] чувствует, как он [style.boldShrink(уменьшается)].<br/>[npc.She] теперь обладает [style.boldSex([npc.a_clitSize] [npc.clit])]!</p>");
 			}
 		}
 	}
@@ -240,7 +224,7 @@ public class Clitoris implements BodyPartInterface {
 		}
 		
 		if(!owner.hasVagina()) {
-			return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+			return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 		}
 		
 		int girthChange = 0;
@@ -263,23 +247,15 @@ public class Clitoris implements BodyPartInterface {
 		}
 		
 		if(girthChange == 0) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(The girth of [npc.namePos] [npc.clit] doesn't change...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(Толщина [npc.namePos] [npc.clit] не меняется...)]</p>");
 		}
 		
 		if (girthChange > 0) {
 			return UtilText.parse(owner,
-					"</p>"
-						+ "[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(feel)] a deep throbbing sensation building up within [npc.her] clit."
-						+ " [npc.Her] cheeks flush red as the feeling spreads throughout [npc.her] [npc.pussy+], and [npc.she] can't help but let out another [npc.moan+] as [npc.her] clit suddenly [style.boldGrow(grows thicker)].<br/>"
-						+ "[npc.She] now [npc.has] [style.boldSex([npc.a_clitGirth] [npc.clit])]!"
-					+ "</p>");
+					"</p>[npc.Name] [npc.verb(let)] [npc.a_moan+], пока [npc.she] [npc.verb(feel)] глубокую пульсацию, нарастающую внутри [npc.her] клитора. [npc.Her] щеки краснеют, когда ощущение распространяется по всему [npc.her] [npc.pussy+], и [npc.she] не может сдержать очередной [npc.moan+], когда [npc.her] клитор внезапно [style.boldGrow(становится толще)].<br/>[npc.She] теперь [npc.has] [style.boldSex([npc.a_clitGirth] [npc.clit])]!</p>");
 		} else {
 			return UtilText.parse(owner,
-					"</p>"
-						+ "[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(feel)] a deep throbbing sensation building up within [npc.her] clit."
-						+ " [npc.Her] cheeks flush red as the feeling works its way up [npc.her] shaft, and [npc.she] can't help but let out another [npc.moan+] as [npc.her] clit suddenly [style.boldShrink(thins down)].<br/>"
-						+ "[npc.She] now [npc.has] [style.boldSex([npc.a_clitGirth] [npc.cock])]!"
-					+ "</p>");
+					"</p>[npc.Name] [npc.verb(let)] [npc.a_moan+], пока [npc.she] [npc.verb(feel)] глубокую пульсацию, нарастающую внутри [npc.her] клитора. [npc.Her] щеки краснеют, когда ощущение поднимается вверх по [npc.her] стержню, и [npc.she] не может сдержать очередной [npc.moan+], когда [npc.her] клитор внезапно [style.boldShrink(сужается)].<br/>[npc.She] теперь [npc.has] [style.boldSex([npc.a_clitGirth] [npc.cock])]!</p>");
 		}
 	}
 
@@ -310,7 +286,7 @@ public class Clitoris implements BodyPartInterface {
 
 	public String addClitorisModifier(GameCharacter owner, PenetrationModifier modifier) {
 		if(hasClitorisModifier(modifier)) {
-			return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+			return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 		}
 
 		clitModifiers.add(modifier);
@@ -330,71 +306,58 @@ public class Clitoris implements BodyPartInterface {
 		
 		if(!owner.hasVagina()) {
 			if(owner.isPlayer()) {
-				return "<p style='text-align:center;'>[style.colourDisabled(You don't have a clitoris, so nothing happens...)]</p>";
+				return "<p style='text-align:center;'>[style.colourDisabled(У тебя нет клитора, поэтому ничего не происходит...)]</p>";
 			} else {
-				return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] doesn't have a clitoris, so nothing happens...)]</p>");
+				return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] не хватает клитора, так что ничего не происходит...)]</p>");
 			}
 		}
 		
 		
 		String removedText = "";
 		if(!pmsRemoved.isEmpty()) {
-			removedText = "<br/>[style.italicsMinorBad(Due to being mutually exclusive with the '"+modifier.getName()+"' modifier, [npc.namePos] clit is no longer "+Util.stringsToStringList(pmsRemoved, false)+".)]";
+			removedText = "<br/>[style.italicsMinorBad(Due to being mutually exclusive with the '"+modifier.getName()+"' модификатор, [npc.namePos] клитор больше не "+Util.stringsToStringList(pmsRemoved, false)+".)]";
 		}
 		
 		String returnText = "";
 		
 		switch(modifier) {
 			case RIBBED:
-				returnText = "An intense pressure builds up within [npc.namePos] [npc.clit], but before [npc.she] [npc.has] a chance to react, a series of [style.boldGrow(hard, fleshy ribs)] grow up all along its length."
-							+ "<br/>[style.boldSex([npc.NamePos] [npc.clit] is now ribbed!)]";
+				returnText = "Внутри [npc.namePos] [npc.clit] нарастает сильное давление, но прежде чем [npc.she] [npc.has] успеет среагировать, по всей его длине вырастает ряд [style.boldGrow(твердых, мясистых ребринок)].<br/>[style.boldSex([npc.NamePos] [npc.clit] теперь ребристый!)]";
 				break;
 			case TENTACLED:
-				returnText = "A pulsating warmth builds up within [npc.namePos] [npc.clit], but before [npc.she] [npc.has] a chance to react, a series of [style.boldGrow(little wriggling tentacles)] grow up all along its length."
-							+ "<br/>[style.boldSex([npc.NamePos] [npc.clit] is now covered with little tentacles, which wriggle with a mind of their own!)]";
+				returnText = "Внутри [npc.namePos] [npc.clit] нарастает пульсирующее тепло, но прежде чем [npc.she] [npc.has] успеет среагировать, по всей его длине вырастает ряд [style.boldGrow(маленьких извивающихся щупалец)].<br/>[style.boldSex([npc.NamePos] [npc.clit] теперь покрыт маленькими щупальцами, которые извиваются сами по себе!)]";
 				break;
 			case BARBED:
-				returnText = "An intense warmth builds up within [npc.namePos] [npc.clit], but before [npc.she] [npc.has] a chance to react, a series of [style.boldGrow(little fleshy barbs)] grow up all along its length."
-							+ "<br/>[style.boldSex([npc.NamePos] [npc.clit] is now lined with fleshy, backwards-facing barbs!)]";
+				returnText = "Внутри [npc.namePos] [npc.clit] нарастает сильное тепло, но прежде чем [npc.she] [npc.has] успеет среагировать, по всей его длине вырастает ряд [style.boldGrow(маленьких мясистых шипов)].<br/>[style.boldSex([npc.NamePos] [npc.clit] теперь усажен мясистыми шипами, направленными назад!)]";
 				break;
 			case FLARED:
-				returnText = "An intense warmth builds up in the tip of [npc.namePos] [npc.clit], and before [npc.she] [npc.has] a chance to react, the [style.boldGrow(head flares out)], much like that of a horse's."
-							+ "<br/>[style.boldSex([npc.NamePos] [npc.clit] now has a wide, flared head!)]";
+				returnText = "На кончике [npc.namePos] [npc.clit] нарастает сильное тепло, и прежде чем [npc.she] [npc.has] успеет среагировать, [style.boldGrow(головка расширяется)], напоминая лошадиную.<br/>[style.boldSex([npc.NamePos] [npc.clit] теперь имеет широкую, расширенную головку!)]";
 				break;
 			case BLUNT:
-				returnText = "An intense warmth builds up in the tip of [npc.namePos] [npc.clit], and before [npc.she] [npc.has] a chance to react, the [style.boldGrow(head smoothes over)], much like that of a reptile's."
-							+ "<br/>[style.boldSex([npc.NamePos] [npc.clit] now has a smooth, blunt head!)]";
+				returnText = "В кончике [npc.namePos] [npc.clit] нарастает сильный жар, и прежде чем [npc.she] [npc.has] успеет среагировать, [style.boldGrow(головка разглаживается)], становясь похожей на головку рептилии.<br/>[style.boldSex(у [npc.NamePos] [npc.clit] теперь гладкая, тупая головка!)]";
 				break;
 			case KNOTTED:
-				returnText = "An intense warmth builds up in the base of [npc.namePos] [npc.clit], and before [npc.she] [npc.has] a chance to react, a [style.boldGrow(fat knot)] quickly grows up there."
-							+ "<br/>[style.boldSex([npc.NamePos] [npc.clit] now has a fat knot at the base!)]";
+				returnText = "В основании [npc.namePos] [npc.clit] нарастает сильный жар, и прежде чем [npc.she] [npc.has] успеет среагировать, там быстро раздувается [style.boldGrow(жирный узел)].<br/>[style.boldSex(у [npc.NamePos] [npc.clit] теперь есть жирный узел у основания!)]";
 				break;
 			case PREHENSILE:
-				returnText = "A strange tingling sensation works its way up the length of [npc.namePos] [npc.clit], and [npc.she] suddenly becomes aware that it's transformed into being [style.boldGrow(prehensile)],"
-								+ " allowing [npc.herHim] to twist and move it around just like a primate's tail."
-							+ "<br/>[style.boldSex([npc.NamePos] [npc.clit] is now prehensile!)]";
+				returnText = "Странное покалывание пробегает по всей длине [npc.namePos] [npc.clit], и [npc.she] внезапно осознает, что она стала [style.boldGrow(цепкой)], что позволяет [npc.herHim] извиваться и двигаться, словно хвост примата.<br/>[style.boldSex([npc.NamePos] [npc.clit] теперь цепкая!)]";
 				break;
 			case SHEATHED:
-				returnText = "An intense pressure builds up in the base of [npc.namePos] [npc.clit], and before [npc.she] [npc.has] a chance to react, it pulls back into a brand new [style.boldGrow(sheath)] that's just grown up there."
-							+ "<br/>[style.boldSex([npc.NamePos] [npc.clit] is now sheathed!)]";
+				returnText = "В основании [npc.namePos] [npc.clit] нарастает сильное давление, и прежде чем [npc.she] [npc.has] успеет среагировать, оно втягивается в совершенно новую [style.boldGrow(оболочку)], которая только что там выросла.<br/>[style.boldSex([npc.NamePos] [npc.clit] теперь в оболочке!)]";
 				break;
 			case TAPERED:
-				returnText = "An intense warmth builds up within [npc.namePos] [npc.clit], but before [npc.she] [npc.has] a chance to react, the shaft suddenly [style.boldGrow(tapers down)]."
-							+ "<br/>[style.boldSex([npc.NamePos] [npc.clit] is now tapered!)]";
+				returnText = "Внутри [npc.namePos] [npc.clit] нарастает сильный жар, но прежде чем [npc.she] [npc.has] успеет среагировать, ствол внезапно [style.boldGrow(сужается к концу)].<br/>[style.boldSex([npc.NamePos] [npc.clit] теперь сужается к концу!)]";
 				break;
 			case VEINY:
-				returnText = "An intense warmth builds up within [npc.namePos] [npc.clit], but before [npc.she] [npc.has] a chance to react, a series of [style.boldGrow(prominent veins)] grow up all along its length."
-							+ "<br/>[style.boldSex([npc.NamePos] [npc.clit] is now veiny!)]";
+				returnText = "Внутри [npc.namePos] [npc.clit] нарастает сильный жар, но прежде чем [npc.she] [npc.has] успеет среагировать, по всей его длине вздувается [style.boldGrow(ряд заметных вен)].<br/>[style.boldSex([npc.NamePos] [npc.clit] теперь в венах!)]";
 				break;
 			case OVIPOSITOR:
-				returnText = "An intense tingling sensation works its up [npc.namePos] [npc.clit], and [npc.she] can't help but let out [npc.a_moan+] as [npc.she] feels it transforming into [style.boldGrow(an ovipositor)]."
-							+ "<br/>[style.boldSex([npc.NamePos] [npc.clit] is now able to lay eggs!)]"
-							+ "<br/><i>(To be fully functional, [npc.name] [npc.verb(require)] [npc.her] eggs to be fertilised before laying can occur. Eggs cannot be laid in an already-pregnant target's vagina.)</i>";
+				returnText = "Сильное покалывание разливается по [npc.namePos] [npc.clit], и [npc.she] не может сдержать [npc.a_moan+], когда [npc.she] чувствует, как он превращается в [style.boldGrow(яйцеклад)].<br/>[style.boldSex([npc.NamePos] [npc.clit] теперь может откладывать яйца!)]<br/><i>(Чтобы стать полностью функциональным, [npc.name] [npc.verb(require)] [npc.her] яйца, которые должны быть оплодотворены перед откладкой. Яйца нельзя откладывать во влагалище уже беременной цели.)</i>";
 				break;
 		}
 		
 		if(returnText.isEmpty()) {
-			return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+			return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 		}
 		
 		return UtilText.parse(owner,
@@ -406,7 +369,7 @@ public class Clitoris implements BodyPartInterface {
 
 	public String removeClitorisModifier(GameCharacter owner, PenetrationModifier modifier) {
 		if(!hasClitorisModifier(modifier)) {
-			return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+			return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 		}
 		
 		clitModifiers.remove(modifier);
@@ -414,138 +377,70 @@ public class Clitoris implements BodyPartInterface {
 		switch(modifier) {
 			case RIBBED:
 				if(owner.isPlayer()) {
-					return "<p>"
-								+ "You feel a soothing coolness spread up within your [pc.clit], and before you have a chance to react, your hard, fleshy ribs suddenly [style.boldShrink(disappear)].<br/>"
-								+ "[style.boldSex(Your [pc.clit] is no longer ribbed!)]"
-							+ "</p>";
+					return "<p>Вы чувствуете, как внутри вашей [pc.clit] разливается успокаивающая прохлада, и прежде чем вы успеваете среагировать, ваши твердые мясистые ребра внезапно [style.boldShrink(исчезают)].<br/>[style.boldSex(Ваша [pc.clit] больше не ребристая!)]</p>";
 				} else {
-					return "<p>"
-								+ "An soothing coolness builds up within [npc.namePos] [npc.clit], but before [npc.sheHasFull] a chance to react, [npc.her] hard, fleshy ribs suddenly [style.boldShrink(disappear)].<br/>"
-								+ "[style.boldSex([npc.NamePos] [npc.clit] is no longer ribbed!)]"
-							+ "</p>";
+					return "<p>Внутри [npc.namePos] [npc.clit] разливается успокаивающая прохлада, но прежде чем [npc.sheHasFull] успеет среагировать, [npc.her] твердые мясистые ребра внезапно [style.boldShrink(исчезают)].<br/>[style.boldSex([npc.NamePos] [npc.clit] больше не ребристая!)]</p>";
 				}
 			case TENTACLED:
 				if(owner.isPlayer()) {
-					return "<p>"
-								+ "You feel a soothing coolness building up within your [pc.clit], and before you have a chance to react, your little wriggling tentacles [style.boldShrink(disappear)].<br/>"
-								+ "[style.boldSex(Your [pc.clit] is no longer covered with little tentacles!)]"
-							+ "</p>";
+					return "<p>Ты чувствуешь, как внутри твоей [pc.clit] разливается успокаивающая прохлада, и прежде чем ты успеваешь среагировать, твои маленькие извивающиеся щупальца [style.boldShrink(исчезают)].<br/>[style.boldSex(Твоя [pc.clit] больше не покрыта маленькими щупальцами!)]</p>";
 				} else {
-					return "<p>"
-								+ "A soothing coolness builds up within [npc.namePos] [npc.clit], and before [npc.sheHasFull] a chance to react, [npc.her] little wriggling tentacles [style.boldShrink(disappear)].<br/>"
-								+ "[style.boldSex([npc.NamePos] [npc.clit] is no longer covered with little tentacles!)]"
-							+ "</p>";
+					return "<p>Внутри [npc.namePos] [npc.clit] разливается успокаивающая прохлада, и прежде чем у [npc.sheHasFull] появляется шанс среагировать, [npc.her] маленькие извивающиеся щупальца [style.boldShrink(исчезают)].<br/>[style.boldSex([npc.NamePos] [npc.clit] больше не покрыта маленькими щупальцами!)]</p>";
 				}
 			case BARBED:
 				if(owner.isPlayer()) {
-					return "<p>"
-								+ "You feel a soothing coolness building up within your [pc.clit], and before you have a chance to react, your little fleshy barbs [style.boldShrink(disappear)].<br/>"
-								+ "[style.boldSex(Your [pc.clit] is no longer barbed!)]"
-							+ "</p>";
+					return "<p>Ты чувствуешь, как внутри твоей [pc.clit] разливается успокаивающая прохлада, и прежде чем ты успеваешь среагировать, твои маленькие плотские шипы [style.boldShrink(исчезают)].<br/>[style.boldSex(Твоя [pc.clit] больше не шипованная!)]</p>";
 				} else {
-					return "<p>"
-								+ "A soothing coolness builds up within [npc.namePos] [npc.clit], but before [npc.sheHasFull] a chance to react, [npc.her] little fleshy barbs [style.boldShrink(disappear)].<br/>"
-								+ "[style.boldSex([npc.NamePos] [npc.clit] is no longer barbed!)]"
-							+ "</p>";
+					return "<p>Внутри [npc.namePos] [npc.clit] разливается успокаивающая прохлада, но прежде чем у [npc.sheHasFull] появляется шанс среагировать, [npc.her] маленькие плотские шипы [style.boldShrink(исчезают)].<br/>[style.boldSex([npc.NamePos] [npc.clit] больше не шипованная!)]</p>";
 				}
 			case FLARED:
 				if(owner.isPlayer()) {
-					return "<p>"
-								+ "You feel a soothing coolness building up in the tip of your [pc.clit], and before you have a chance to react, your flared head [style.boldShrink(shrinks)] down,"
-									+ " making your clit look like a regular, human-like one.<br/>"
-								+ "[style.boldSex(Your [pc.clit] no longer has a flared head!)]"
-							+ "</p>";
+					return "<p>Ты чувствуешь, как в кончике твоей [pc.clit] разливается успокаивающая прохлада, и прежде чем ты успеваешь среагировать, твоя расширенная головка [style.boldShrink(уменьшается)], из-за чего твой клитор становится похожим на обычный, человеческий.<br/>[style.boldSex(У твоей [pc.clit] больше нет расширенной головки!)]</p>";
 				} else {
-					return "<p>"
-								+ "A soothing coolness builds up in the tip of [npc.namePos] [npc.clit], and before [npc.sheHasFull] a chance to react, [npc.her] flared head [style.boldShrink(shrinks)] down,"
-									+ " making [npc.her] clit look like a regular, human-like one.<br/>"
-								+ "[style.boldSex([npc.NamePos] [npc.clit] no longer has a flared head!)]"
-							+ "</p>";
+					return "<p>Приятная прохлада разливается по кончику [npc.namePos] [npc.clit], и прежде чем [npc.sheHasFull] успевает среагировать, расширенная головка [npc.her] [style.boldShrink(уменьшается)], из-за чего клитор [npc.her] становится похожим на обычный, человеческий.<br/>[style.boldSex(У [npc.NamePos] [npc.clit] больше нет расширенной головки!)]</p>";
 				}
 			case BLUNT:
 				if(owner.isPlayer()) {
-					return "<p>"
-								+ "You feel a soothing coolness building up in the tip of your [pc.clit], and before you have a chance to react, your blunt head [style.boldShrink(shrinks)] down,"
-									+ " making your clit look like a regular, human-like one.<br/>"
-								+ "[style.boldSex(Your [pc.clit] no longer has a blunt head!)]"
-							+ "</p>";
+					return "<p>Ты чувствуешь, как приятная прохлада разливается по кончику твоего [pc.clit], и прежде чем ты успеваешь среагировать, твоя тупая головка [style.boldShrink(уменьшается)], из-за чего твой клитор становится похожим на обычный, человеческий.<br/>[style.boldSex(Твой [pc.clit] больше не имеет тупой головки!)]</p>";
 				} else {
-					return "<p>"
-								+ "A soothing coolness builds up in the tip of [npc.namePos] [npc.clit], and before [npc.sheHasFull] a chance to react, [npc.her] blunt head [style.boldShrink(shrinks)] down,"
-									+ " making [npc.her] clit look like a regular, human-like one.<br/>"
-								+ "[style.boldSex([npc.NamePos] [npc.clit] no longer has a blunt head!)]"
-							+ "</p>";
+					return "<p>Приятная прохлада разливается по кончику [npc.namePos] [npc.clit], и прежде чем [npc.sheHasFull] успевает среагировать, тупая головка [npc.her] [style.boldShrink(уменьшается)], из-за чего клитор [npc.her] становится похожим на обычный, человеческий.<br/>[style.boldSex(У [npc.NamePos] [npc.clit] больше нет тупой головки!)]</p>";
 				}
 			case KNOTTED:
 				if(owner.isPlayer()) {
-					return "<p>"
-								+ "You feel a soothing coolness building up in the base of your [pc.clit], and before you have a chance to react, your fat knot [style.boldShrink(shrinks)] and disappears.<br/>"
-								+ "[style.boldSex(Your [pc.clit] is no longer knotted!)]"
-							+ "</p>";
+					return "<p>Ты чувствуешь, как приятная прохлада разливается у основания твоего [pc.clit], и прежде чем ты успеваешь среагировать, твой жирный узел [style.boldShrink(уменьшается)] и исчезает.<br/>[style.boldSex(Твой [pc.clit] больше не узловатый!)]</p>";
 				} else {
-					return "<p>"
-								+ "A soothing coolness builds up in the base of [npc.namePos] [npc.clit], and before [npc.sheHasFull] a chance to react, [npc.her] fat knot [style.boldShrink(shrinks)] and disappears.<br/>"
-								+ "[style.boldSex([npc.NamePos] [npc.clit] is no longer knotted!)]"
-							+ "</p>";
+					return "<p>Приятная прохлада разливается у основания [npc.namePos] [npc.clit], и прежде чем [npc.sheHasFull] успевает среагировать, жирный узел [npc.her] [style.boldShrink(уменьшается)] и исчезает.<br/>[style.boldSex([npc.NamePos] [npc.clit] больше не узловатый!)]</p>";
 				}
 			case PREHENSILE:
 				if(owner.isPlayer()) {
-					return "<p>"
-								+ "You feel a strange tingling sensation work its way up the length of your [pc.clit], and you suddenly become aware that it's [style.boldShrink(no longer prehensile)].<br/>"
-								+ "[style.boldSex(Your [pc.clit] is no longer prehensile!)]"
-							+ "</p>";
+					return "<p>Ты чувствуешь странное покалывание, поднимающееся вверх по всей длине твоего [pc.clit], и внезапно осознаешь, что он [style.boldShrink(больше не хватательный)].<br/>[style.boldSex(Твой [pc.clit] больше не хватательный!)]</p>";
 				} else {
-					return "<p>"
-								+ "A strange tingling sensation works its way up the length of [npc.namePos] [npc.clit], and [npc.she] suddenly becomes aware that it's [style.boldShrink(no longer prehensile)].<br/>"
-								+ "[style.boldSex([npc.NamePos] [npc.clit] is no longer prehensile!)]"
-							+ "</p>";
+					return "<p>Странное покалывание поднимается вверх по всей длине [npc.namePos] [npc.clit], и [npc.she] внезапно осознает, что он [style.boldShrink(больше не хватательный)].<br/>[style.boldSex([npc.NamePos] [npc.clit] больше не хватательный!)]</p>";
 				}
 			case SHEATHED:
 				if(owner.isPlayer()) {
-					return "<p>"
-								+ "You feel a soothing coolness building up in the base of your [pc.clit], and before you have a chance to react, your sheath [style.boldShrink(disappears)].<br/>"
-								+ "[style.boldSex(Your [pc.clit] is no longer sheathed!)]"
-							+ "</p>";
+					return "<p>Ты чувствуешь, как у основания твоего [pc.clit] нарастает успокаивающая прохлада, и прежде чем ты успеваешь среагировать, твоя оболочка [style.boldShrink(исчезает)].<br/>[style.boldSex(Твой [pc.clit] больше не скрыт в оболочке!)]</p>";
 				} else {
-					return "<p>"
-								+ "A soothing coolness builds up in the base of [npc.namePos] [npc.clit], and before [npc.sheHasFull] a chance to react, [npc.her] sheath [style.boldShrink(disappears)].<br/>"
-								+ "[style.boldSex([npc.NamePos] [npc.clit] is no longer sheathed!)]"
-							+ "</p>";
+					return "<p>У основания [npc.namePos] [npc.clit] нарастает успокаивающая прохлада, и прежде чем у [npc.sheHasFull] появляется шанс среагировать, оболочка [npc.her] [style.boldShrink(исчезает)].<br/>[style.boldSex([npc.NamePos] [npc.clit] больше не скрыт в оболочке!)]</p>";
 				}
 			case TAPERED:
 				if(owner.isPlayer()) {
-					return "<p>"
-								+ "You feel an intense warmth building up within your [pc.clit], but before you have a chance to react, the shaft suddenly [style.boldShrink(widens)].<br/>"
-								+ "[style.boldSex(Your [pc.clit] is no longer tapered!)]"
-							+ "</p>";
+					return "<p>Ты чувствуешь, как внутри твоего [pc.clit] нарастает интенсивное тепло, но прежде чем ты успеваешь среагировать, ствол внезапно [style.boldShrink(расширяется)].<br/>[style.boldSex(Твой [pc.clit] больше не сужается к концу!)]</p>";
 				} else {
-					return "<p>"
-								+ "An intense warmth builds up within [npc.namePos] [npc.clit], but before [npc.sheHasFull] a chance to react, the shaft suddenly [style.boldShrink(widens)].<br/>"
-								+ "[style.boldSex([npc.NamePos] [npc.clit] is no longer tapered!)]"
-							+ "</p>";
+					return "<p>Внутри [npc.namePos] [npc.clit] нарастает интенсивное тепло, но прежде чем у [npc.sheHasFull] появляется шанс среагировать, ствол внезапно [style.boldShrink(расширяется)].<br/>[style.boldSex([npc.NamePos] [npc.clit] больше не сужается к концу!)]</p>";
 				}
 			case VEINY:
 				if(owner.isPlayer()) {
-					return "<p>"
-								+ "You feel an intense warmth building up within your [pc.clit], but before you have a chance to react, your prominent veins [style.boldShrink(disappear)].<br/>"
-								+ "[style.boldSex(Your [pc.clit] is no longer veiny!)]"
-							+ "</p>";
+					return "<p>Вы чувствуете, как внутри вашего [pc.clit] нарастает сильный жар, но прежде чем вы успеваете среагировать, ваши вздувшиеся вены [style.boldShrink(исчезают)].<br/>[style.boldSex(Ваш [pc.clit] больше не венозный!)]</p>";
 				} else {
-					return "<p>"
-								+ "An intense warmth builds up within [npc.namePos] [npc.clit], but before [npc.sheHasFull] a chance to react, [npc.her] prominent veins [style.boldShrink(disappear)].<br/>"
-								+ "[style.boldSex([npc.NamePos] [npc.clit] is no longer veiny!)]"
-							+ "</p>";
+					return "<p>Сильный жар нарастает внутри [npc.namePos] [npc.clit], но прежде чем у [npc.sheHasFull] появляется шанс среагировать, [npc.her] вздувшиеся вены [style.boldShrink(исчезают)].<br/>[style.boldSex([npc.NamePos] [npc.clit] больше не венозный!)]</p>";
 				}
 			case OVIPOSITOR:
-				return "<p>"
-							+ "A strange tingling sensation works its way up the length of [npc.namePos] [npc.clit], and [npc.she] can't help but let out [npc.a_moan+] as [npc.she] feels it transforming to"
-								+ " [style.boldShrink(no longer function as an ovipositor)]."
-							+ "<br/>[style.boldSex([npc.NamePos] [npc.clit] is no longer an ovipositor!)]"
-						+ "</p>";
+				return "<p>Странное покалывание пробегает по всей длине [npc.namePos] [npc.clit], и [npc.she] не может сдержать [npc.a_moan+], когда [npc.she] чувствует, как он превращается в нечто, что [style.boldShrink(больше не функционирует как яйцеклад)].<br/>[style.boldSex([npc.NamePos] [npc.clit] больше не яйцеклад!)]</p>";
 		}
 		
 		// Catch:
-		return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+		return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 	}
 
 	public void resetClitorisModifiers() {

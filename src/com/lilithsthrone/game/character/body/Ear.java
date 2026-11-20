@@ -67,16 +67,16 @@ public class Ear implements BodyPartInterface {
 		}
 		
 		if (type.equals(getType())) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] already [npc.has] the [npc.ears] of [npc.a_earRace], so nothing happens...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] уже [npc.has] [npc.ears] [npc.a_earRace], так что ничего не происходит...)]</p>");
 		}
 		
 		StringBuilder sb = new StringBuilder();
 
 		sb.append("<p>");
 		if(owner.isArmMovementHindered()) {
-			sb.append("[npc.NamePos] [npc.ears] start to involuntarily twitch and itch, and [npc.she] [npc.verb(let)] out a gasp as [npc.she] [npc.verb(feel)] them start to transform. ");
+			sb.append("[npc.NamePos] [npc.ears] начинают непроизвольно дергаться и чесаться, и [npc.she] [npc.verb(let)] вздох от того, что [npc.she] [npc.verb(feel)] начинают трансформироваться. ");
 		} else {
-			sb.append("[npc.NamePos] [npc.ears] start to involuntarily twitch and itch, and, letting out a gasp, [npc.she] [npc.verb(reach)] up to rub at them as [npc.she] [npc.verb(feel)] them start to transform. ");
+			sb.append("[npc.NamePos] [npc.ears] начинают непроизвольно дергаться и чесаться, и, издав вздох, [npc.she] [npc.verb(reach)] тянется ими потереть, пока [npc.she] [npc.verb(feel)] начинают трансформироваться. ");
 		}
 		
 		// Parse existing content before transformation:
@@ -102,17 +102,17 @@ public class Ear implements BodyPartInterface {
 	
 	public String setPierced(GameCharacter owner, boolean pierced) {
 		if(this.pierced == pierced) {
-			return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+			return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 		}
 		
 		this.pierced = pierced;
 		
 		if(pierced) {
 			if(owner.isPlayer()) {
-				return "<p>Your [pc.ears] are now [style.boldGrow(pierced)]!</p>";
+				return "<p>Ваши [pc.ears] теперь [style.boldGrow(проколоты)]!</p>";
 			} else {
 				return UtilText.parse(owner,
-						"<p>[npc.NamePos] [npc.ears] are now [style.boldGrow(pierced)]!</p>");
+						"<p>[npc.NamePos] [npc.ears] теперь [style.boldGrow(проколоты)]!</p>");
 			}
 			
 		} else {
@@ -124,15 +124,11 @@ public class Ear implements BodyPartInterface {
 			}
 			
 			if(owner.isPlayer()) {
-				return "<p>"
-							+ "Your [pc.ears] are [style.boldShrink(no longer pierced)]!"
-						+ "</p>"
+				return "<p>Ваши [pc.ears] [style.boldShrink(больше не проколоты)]!</p>"
 						+piercingUnequip;
 			} else {
 				return UtilText.parse(owner,
-						"<p>"
-								+ "[npc.NamePos] [npc.ears] are [style.boldShrink(no longer pierced)]!"
-						+ "</p>"
+						"<p>[npc.NamePos] [npc.ears] [style.boldShrink(больше не проколоты)]!</p>"
 						+piercingUnequip);
 			}
 		}

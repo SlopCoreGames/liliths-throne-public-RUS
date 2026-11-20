@@ -240,9 +240,9 @@ public abstract class AbstractArmType implements BodyPartTypeInterface {
 	@Override
 	public String getDeterminer(GameCharacter gc) {
 		if(gc.getArmRows()==1) {
-			return "a pair of";
+			return "пара";
 		} else {
-			return Util.intToString(gc.getArmRows())+" pairs of";
+			return Util.intToString(gc.getArmRows())+" пары";
 		}
 	}
 
@@ -322,7 +322,7 @@ public abstract class AbstractArmType implements BodyPartTypeInterface {
 							InventorySlot.TORSO_OVER,
 							InventorySlot.TORSO_UNDER),
 					Race.HARPY,
-					"Due to the fact that [npc.nameHasFull] bird-like wings instead of arms, only specialist clothing can be worn in this slot.",
+					"Из-за того, что вместо рук у [npc.nameHasFull] птичьи крылья, в этот слот можно надеть только специализированную одежду.",
 					Util.newArrayListOfValues(
 						ItemTag.FITS_FEATHERED_ARM_WINGS,
 						ItemTag.FITS_FEATHERED_ARM_WINGS_EXCLUSIVE,
@@ -338,7 +338,7 @@ public abstract class AbstractArmType implements BodyPartTypeInterface {
 							InventorySlot.TORSO_OVER,
 							InventorySlot.TORSO_UNDER),
 					Race.BAT_MORPH,
-					"Due to the fact that [npc.nameHasFull] leathery wings instead of arms, only specialist clothing can be worn in this slot.",
+					"Из-за того, что вместо рук у [npc.nameHasFull] кожистые крылья, в этот слот можно надеть только специализированную одежду.",
 					Util.newArrayListOfValues(
 						ItemTag.FITS_LEATHERY_ARM_WINGS,
 						ItemTag.FITS_LEATHERY_ARM_WINGS_EXCLUSIVE,

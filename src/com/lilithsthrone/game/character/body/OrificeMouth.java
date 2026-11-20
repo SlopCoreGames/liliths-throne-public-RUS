@@ -67,7 +67,7 @@ public class OrificeMouth implements OrificeInterface {
 	public String setWetness(GameCharacter owner, int wetness) {
 		if(owner!=null && owner.getBodyMaterial().isOrificesAlwaysMaximumWetness()) {
 			return UtilText.parse(owner,
-					"<p style='text-align:center;'>[style.colourSex(Due to being made out of "+owner.getBodyMaterial().getName()+", the wetness of [npc.namePos] "+Wetness.SEVEN_DROOLING.getDescriptor()+" [npc.asshole] can't be changed...)]</p>");
+					"<p style='text-align:center;'>[style.colourSex(Из-за того, что она сделана из "+owner.getBodyMaterial().getName()+", влажность [npc.namePos] "+Wetness.SEVEN_DROOLING.getDescriptor()+" [npc.asshole] изменить нельзя...)]</p>");
 		}
 		
 		int oldWetness = this.wetness;
@@ -79,23 +79,17 @@ public class OrificeMouth implements OrificeInterface {
 		int wetnessChange = this.wetness - oldWetness;
 		
 		if (wetnessChange == 0) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(The wetness of [npc.namePos] throat doesn't change...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(Влажность горла [npc.namePos] не меняется...)]</p>");
 		}
 		
 		String wetnessDescriptor = getWetness(owner).getDescriptor();
 		if (wetnessChange > 0) {
 			return UtilText.parse(owner, 
-					"<p>"
-						+ "[npc.Name] suddenly [npc.verb(start)] salivating, and although [npc.she] quickly [npc.verb(swallow)] it all down, [npc.she] [npc.verb(feel)] that [npc.her] mouth and throat have permanently [style.boldGrow(got wetter)].<br/>"
-						+ "[npc.Name] now [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(wetnessDescriptor) + " " + wetnessDescriptor + " throat)]!"
-					+ "</p>");
+					"<p>[npc.Name] внезапно [npc.verb(start)] пустила слюни, и хотя [npc.she] быстро [npc.verb(swallow)] всё это, [npc.she] [npc.verb(feel)] что рот и горло [npc.her] навсегда [style.boldGrow(стали влажнее)].<br/>[npc.Name] теперь [npc.has] [style.boldSex(\", " + UtilText.generateSingularDeterminer(wetnessDescriptor) + " " + wetnessDescriptor + " горло)]!</p>");
 			
 		} else {
 			return UtilText.parse(owner, 
-					"<p>"
-						+ "[npc.Name] lets out an agitated sigh as [npc.she] [npc.verb(feel)] [npc.her] mouth and throat [style.boldShrink(getting drier)].<br/>"
-						+ "[npc.Name] now [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(wetnessDescriptor) + " " + wetnessDescriptor + " throat)]!"
-					+ "</p>");
+					"<p>[npc.Name] издает взволнованный вздох, пока рот и горло [npc.she] [npc.verb(feel)] [npc.her] [style.boldShrink(подсыхают)].<br/>[npc.Name] теперь [npc.has] [style.boldSex(\", " + UtilText.generateSingularDeterminer(wetnessDescriptor) + " " + wetnessDescriptor + " горло)]!</p>");
 		}
 	}
 
@@ -123,25 +117,17 @@ public class OrificeMouth implements OrificeInterface {
 		float capacityChange = this.capacity - oldCapacity;
 		
 		if (capacityChange == 0) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(The capacity of [npc.namePos] throat doesn't change...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(Вместимость горла [npc.namePos] не меняется...)]</p>");
 		}
 		
 		String capacityDescriptor = getCapacity().getDescriptor();
 		if (capacityChange > 0) {
 			return UtilText.parse(owner, 
-					"<p>"
-						+ "An involuntary, shocked gasp escapes from [npc.namePos] mouth as [npc.she] [npc.verb(feel)] [npc.her] throat relaxing and stretching out."
-						+ " Within moments, the alarming feeling has passed, and [npc.she] very quickly [npc.verb(realise)] that [npc.her] throat's internal [style.boldGrow(capacity has increased)].<br/>"
-						+ "[npc.Name] now [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(capacityDescriptor) + " " + capacityDescriptor + " throat)]!"
-					+ "</p>");
+					"<p>Непроизвольный, шокированный вздох вырывается из рта [npc.namePos], когда [npc.she] [npc.verb(feel)] [npc.her] горло расслабляется и растягивается. Спустя мгновение тревожное чувство проходит, и [npc.she] очень быстро [npc.verb(realise)] что внутренняя [style.boldGrow(вместимость горла [npc.her] увеличилась)].<br/>[npc.Name] теперь [npc.has] [style.boldSex(\", " + UtilText.generateSingularDeterminer(capacityDescriptor) + " " + capacityDescriptor + " горло)]!</p>");
 			
 		} else {
 			return UtilText.parse(owner, 
-					"<p>"
-						+ "[npc.Name] [npc.verb(let)] out a cry as [npc.she] [npc.verb(feel)] [npc.her] throat uncontrollably tightening and clenching."
-						+ " Within moments, the alarming feeling has passed, and [npc.she] very quickly [npc.verb(realise)] that [npc.her] throat's internal [style.boldShrink(capacity has decreased)].<br/>"
-						+ "[npc.Name] now [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(capacityDescriptor) + " " + capacityDescriptor + " throat)]!"
-					+ "</p>");
+					"<p>[npc.Name] [npc.verb(let)] издает крик, пока [npc.she] [npc.verb(feel)] [npc.her] горло не сжимается и не судорожно сокращается. Спустя мгновение тревожное чувство проходит, и [npc.she] очень быстро [npc.verb(realise)], что внутренность [npc.her] горла [style.boldShrink(стала меньше)].<br/>[npc.Name] теперь [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(capacityDescriptor) + " " + capacityDescriptor + " горло)]!</p>");
 		}
 	}
 	
@@ -183,7 +169,7 @@ public class OrificeMouth implements OrificeInterface {
 	public String setDepth(GameCharacter owner, int depth) {
 		if(owner!=null && !owner.getBodyMaterial().isOrificesLimitedDepth()) {
 			return UtilText.parse(owner,
-					"<p style='text-align:center;'>[style.colourSex(Due to being made out of "+owner.getBodyMaterial().getName()+", the depth of [npc.namePos] "+OrificeDepth.SEVEN_FATHOMLESS.getDescriptor()+" throat can't be changed...)]</p>");
+					"<p style='text-align:center;'>[style.colourSex(Из-за того, что она сделана из "+owner.getBodyMaterial().getName()+", глубина [npc.namePos] "+OrificeDepth.SEVEN_FATHOMLESS.getDescriptor()+" горло изменить нельзя...)]</p>");
 		}
 		
 		int oldDepth = this.depth;
@@ -195,25 +181,17 @@ public class OrificeMouth implements OrificeInterface {
 		int depthChange = this.depth - oldDepth;
 		
 		if(depthChange == 0) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(The depth of [npc.namePos] throat doesn't change...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(Глубина горла [npc.namePos] не меняется...)]</p>");
 		}
 		
 		String depthDescriptor = getDepth(owner).getDescriptor();
 		if(depthChange > 0) {
 			return UtilText.parse(owner, 
-					"<p>"
-						+ "[npc.Name] can't help but let out a surprised gasp as [npc.she] [npc.verb(feel)] an alarming pressure pulsating from the back of [npc.her] throat deep down into [npc.her] torso."
-						+ " Before [npc.her] gasp can turn into a distressed cry, the pressure suddenly fades away, leaving [npc.herHim] instinctively knowing that [npc.her] throat [style.boldGrow(has deepened)].<br/>"
-						+ "[npc.Name] now [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(depthDescriptor) + " " + depthDescriptor + " throat)]!"
-					+ "</p>");
+					"<p>[npc.Name] не может не издать удивленный вздох, когда [npc.she] [npc.verb(feel)] тревожное давление, пульсирующее из глубины горла [npc.her] вниз к торсу [npc.her]. Прежде чем вздох [npc.her] успевает превратиться в мучительный крик, давление внезапно исчезает, оставляя [npc.herHim] инстинктивное понимание того, что горло [npc.her] [style.boldGrow(стало глубже)].<br/>[npc.Name] теперь [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(depthDescriptor) + " " + depthDescriptor + " горло)]!</p>");
 			
 		} else {
 			return UtilText.parse(owner, 
-					"<p>"
-						+ "[npc.Name] can't help but let out a surprised gasp as [npc.she] [npc.verb(feel)] an alarming tightening sensation moving its way up from [npc.her] torso into the back of [npc.her] throat."
-						+ " Before [npc.her] gasp can turn into a distressed cry, the feeling suddenly fades away, leaving [npc.herHim] instinctively knowing that [npc.her] throat [style.boldShrink(has become shallower)].<br/>"
-						+ "[npc.Name] now [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(depthDescriptor) + " " + depthDescriptor + " throat)]!"
-					+ "</p>");
+					"<p>[npc.Name] не может не издать удивленный вздох, когда [npc.she] [npc.verb(feel)] тревожное ощущение сжатия, поднимающееся от [npc.her] торса к задней части [npc.her] горла. Прежде чем [npc.her] вздох успевает превратиться в отчаянный крик, чувство внезапно исчезает, оставляя [npc.herHim] с инстинктивным пониманием того, что [npc.her] горло [style.boldShrink(стало более узким)].<br/>[npc.Name] теперь [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(depthDescriptor) + " " + depthDescriptor + " горло)]!</p>");
 		}
 	}
 	
@@ -233,25 +211,17 @@ public class OrificeMouth implements OrificeInterface {
 		int elasticityChange = this.elasticity - oldElasticity;
 		
 		if (elasticityChange == 0) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(The elasticity of [npc.namePos] throat doesn't change...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(Эластичность горла [npc.namePos] не меняется...)]</p>");
 		}
 		
 		String elasticityDescriptor = getElasticity().getDescriptor();
 		if (elasticityChange > 0) {
 			return UtilText.parse(owner, 
-					"<p>"
-						+ "[npc.Name] can't help but let out a surprised gasp as [npc.she] [npc.verb(feel)] a strange slackening sensation pulsating deep within [npc.her] throat."
-						+ " Just as quickly as it started, the feeling passes, and [npc.she] very quickly [npc.verb(realise)] that [npc.her] throat's [style.boldGrow(elasticity has increased)].<br/>"
-						+ "[npc.Name] now [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(elasticityDescriptor) + " " + elasticityDescriptor + " throat)]!"
-					+ "</p>");
+					"<p>[npc.Name] не может не ахнуть от неожиданности, когда [npc.she] [npc.verb(feel)] странное ощущение расслабления, пульсирующее глубоко в горле [npc.her]. Так же быстро, как оно появилось, чувство проходит, и [npc.she] очень быстро [npc.verb(realise)], что [style.boldGrow(эластичность горла [npc.her] увеличилась)].<br/>[npc.Name] теперь [npc.has] [style.boldSex(\", \"" + UtilText.generateSingularDeterminer(elasticityDescriptor) + " " + elasticityDescriptor + " горло)]!</p>");
 			
 		} else {
 			return UtilText.parse(owner, 
-					"<p>"
-						+ "[npc.Name] can't help but let out a surprised gasp as [npc.she] [npc.verb(feel)] a strange clenching sensation pulsating deep within [npc.her] throat."
-						+ " Just as quickly as it started, the feeling passes, and [npc.she] very quickly [npc.verb(realise)] that [npc.her] throat's [style.boldShrink(elasticity has decreased)].<br/>"
-						+ "[npc.Name] now [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(elasticityDescriptor) + " " + elasticityDescriptor + " throat)]!"
-					+ "</p>");
+					"<p>[npc.Name] не может не ахнуть от неожиданности, когда [npc.she] [npc.verb(feel)] странное ощущение сжатия, пульсирующее глубоко в горле [npc.her]. Так же быстро, как оно появилось, чувство проходит, и [npc.she] очень быстро [npc.verb(realise)], что [style.boldShrink(эластичность горла [npc.her] уменьшилась)].<br/>[npc.Name] теперь [npc.has] [style.boldSex(\", \"" + UtilText.generateSingularDeterminer(elasticityDescriptor) + " " + elasticityDescriptor + " горло)]!</p>");
 		}
 	}
 	
@@ -271,25 +241,17 @@ public class OrificeMouth implements OrificeInterface {
 		int plasticityChange = this.plasticity - oldPlasticity;
 		
 		if (plasticityChange == 0) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(The plasticity of [npc.namePos] throat doesn't change...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(Пластичность горла [npc.namePos] не меняется...)]</p>");
 		}
 		
 		String plasticityDescriptor = getPlasticity().getDescriptor();
 		if (plasticityChange > 0) {
 			return UtilText.parse(owner, 
-					"<p>"
-						+ "[npc.Name] [npc.verb(let)] out a shocked gasp as [npc.she] suddenly [npc.verb(feel)] a strange hardening sensation pulsating deep within [npc.her] throat."
-						+ " Before [npc.she] [npc.has] any time to panic, the feeling quickly fades away, leaving [npc.herHim] instinctively knowing that [npc.her] throat's [style.boldGrow(plasticity has increased)].<br/>"
-						+ "[npc.Name] now [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(plasticityDescriptor) + " " + plasticityDescriptor + " throat)]!"
-					+ "</p>");
+					"<p>[npc.Name] [npc.verb(let)] потрясенно ахает, когда [npc.she] внезапно [npc.verb(feel)] странное ощущение затвердевания, пульсирующее глубоко в горле [npc.her]. Прежде чем [npc.she] [npc.has] успеет запаниковать, чувство быстро исчезает, оставляя [npc.herHim] инстинктивное понимание того, что [style.boldGrow(пластичность горла [npc.her] увеличилась)].<br/>[npc.Name] теперь [npc.has] [style.boldSex(\"}" + UtilText.generateSingularDeterminer(plasticityDescriptor) + " " + plasticityDescriptor + " горло)]!</p>");
 			
 		} else {
 			return UtilText.parse(owner, 
-					"<p>"
-						+ "[npc.Name] [npc.verb(let)] out a shocked gasp as [npc.she] suddenly [npc.verb(feel)] a strange softening sensation pulsating deep within [npc.her] throat."
-						+ " Before [npc.she] [npc.has] any time to panic, the feeling quickly fades away, leaving [npc.herHim] instinctively knowing that [npc.her] throat's [style.boldShrink(plasticity has decreased)].<br/>"
-						+ "[npc.Name] now [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(plasticityDescriptor) + " " + plasticityDescriptor + " throat)]!"
-					+ "</p>");
+					"<p>[npc.Name] [npc.verb(let)] прерывистый вздох изумления, когда [npc.she] внезапно [npc.verb(feel)] странное ощущение смягчения, пульсирующее глубоко в горле [npc.her]. Прежде чем [npc.she] успеет [npc.has] запаниковать, чувство быстро исчезает, оставляя [npc.herHim] инстинктивное понимание того, что [style.boldShrink(пластичность горла [npc.her] уменьшилась)].<br/>[npc.Name] теперь [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(plasticityDescriptor) + " " + plasticityDescriptor + " горло)]!</p>");
 		}
 	}
 
@@ -311,7 +273,7 @@ public class OrificeMouth implements OrificeInterface {
 	@Override
 	public String addOrificeModifier(GameCharacter owner, OrificeModifier modifier) {
 		if(hasOrificeModifier(modifier)) {
-			return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+			return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 		}
 		
 		orificeModifiers.add(modifier);
@@ -323,43 +285,26 @@ public class OrificeMouth implements OrificeInterface {
 		switch(modifier) {
 			case MUSCLE_CONTROL:
 					return UtilText.parse(owner,
-							"<p>"
-								+ "[npc.Name] can't help but let out a little cry as an intense pressure swells up deep within [npc.her] throat, but before [npc.sheHasFull] any chance to react, the feeling quickly dissipates."
-								+ " With an experimental clench, [npc.she] [npc.verb(discover)] that the interior of [npc.her] throat is now lined with [style.boldGrow(extra muscles)],"
-									+ " which [npc.she] can use to expertly grip and squeeze down on any penetrating object.<br/>"
-								+ "[style.boldSex([npc.NamePos] throat is now lined with an intricate series of muscles!)]"
-							+ "</p>");
+							"<p>[npc.Name] не может сдержать короткий вскрик, когда сильное давление нарастает глубоко в горле [npc.her], но прежде чем [npc.sheHasFull] успеет среагировать, чувство быстро рассеивается. С экспериментальным сжатием, [npc.she] [npc.verb(discover)], что внутреннюю часть горла [npc.her] теперь выстилают [style.boldGrow(дополнительные мышцы)], которые [npc.she] может использовать, чтобы умело обхватывать и сжимать любой проникающий объект.<br/>[style.boldSex(горло [npc.NamePos] теперь выстлано сложной системой мышц!)]</p>");
 			case RIBBED:
 					return UtilText.parse(owner,
-							"<p>"
-							+ "[npc.Name] can't help but let out a little cry as an intense pressure swells up deep within [npc.her] throat, but before [npc.sheHasFull] any chance to react, the feeling quickly dissipates."
-							+ " Shifting [npc.her] throat around a little, [npc.she] [npc.verb(discover)] that the inside of [npc.her] throat is now lined with [style.boldGrow(fleshy, highly-sensitive ribs)],"
-								+ " which provide extreme pleasure when stimulated.<br/>"
-							+ "[style.boldSex([npc.NamePos] throat is now lined with fleshy, pleasure-inducing ribs!)]"
-						+ "</p>");
+							"<p>[npc.Name] невольно вскрикивает, когда глубоко в [npc.her] горле нарастает сильное давление, но прежде чем [npc.sheHasFull] успевает среагировать, ощущение быстро рассеивается. Слегка пошевелив [npc.her] горлом, [npc.she] [npc.verb(discover)], что теперь стенки [npc.her] горла выстланы [style.boldGrow(мясистыми, сверхчувствительными ребрами)], которые дарят невероятное удовольствие при стимуляции.<br/>[style.boldSex(Горло [npc.NamePos] теперь выстлано мясистыми, вызывающими удовольствие ребрами!)]</p>");
 			case TENTACLED:
 					return UtilText.parse(owner,
-							"<p>"
-								+ "[npc.Name] can't help but let out a little cry as an intense pressure swells up deep within [npc.her] throat, but before [npc.sheHasFull] any chance to react, the feeling quickly dissipates."
-								+ " With an experimental clench, [npc.she] [npc.verb(discover)] that the inside of [npc.her] throat is now filled with [style.boldGrow(a series of little wriggling tentacles)], over which [npc.sheHasFull] limited control.<br/>"
-								+ "[style.boldSex(The inside of [npc.namePos] throat is now filled with little tentacles, which wriggle with a mind of their own!)]"
-							+ "</p>");
+							"<p>[npc.Name] невольно вскрикивает, когда глубоко в горле [npc.her] нарастает сильное давление, но прежде чем у [npc.sheHasFull] появляется возможность среагировать, ощущение быстро исчезает. Сделав пробное сжатие, [npc.she] [npc.verb(discover)], что горло [npc.her] теперь заполнено [style.boldGrow(рядом маленьких извивающихся щупалец)], над которыми у [npc.sheHasFull] лишь ограниченный контроль.<br/>[style.boldSex(Горло [npc.namePos] теперь заполнено маленькими щупальцами, которые извиваются сами по себе!)]</p>");
 			case PUFFY:
 					return UtilText.parse(owner,
-							"<p>"
-								+ "[npc.Name] can't help but let out a little cry as [npc.she] [npc.verb(feel)] a tingling sensation running over [npc.her] mouth, before [npc.her] lips swell out and [style.boldGrow(puff up)].<br/>"
-								+ "[style.boldSex([npc.NamePos] lips are now extremely puffy!)]"
-							+ "</p>");
+							"<p>[npc.Name] невольно вскрикивает, когда [npc.she] [npc.verb(feel)] покалывающее ощущение, пробегающее по [npc.her] рту, после чего [npc.her] губы раздуваются и [style.boldGrow(набухают)].<br/>[style.boldSex(Губы [npc.NamePos] теперь невероятно пухлые!)]</p>");
 		}
 		
 		// Catch:
-		return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+		return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 	}
 
 	@Override
 	public String removeOrificeModifier(GameCharacter owner, OrificeModifier modifier) {
 		if(!hasOrificeModifier(modifier)) {
-			return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+			return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 		}
 		
 		orificeModifiers.remove(modifier);
@@ -371,35 +316,20 @@ public class OrificeMouth implements OrificeInterface {
 		switch(modifier) {
 			case MUSCLE_CONTROL:
 					return UtilText.parse(owner,
-							"<p>"
-								+ "[npc.Name] can't help but let out a little cry as an intense pressure swells up deep within [npc.her] throat, but before [npc.sheHasFull] any chance to react, the feeling quickly dissipates."
-								+ " With an experimental clench, [npc.she] [npc.verb(discover)] that the interior of [npc.her] throat has lost its [style.boldShrink(extra muscles)].<br/>"
-								+ "[style.boldSex([npc.NamePos] throat is no longer lined with an intricate series of muscles!)]"
-							+ "</p>");
+							"<p>[npc.Name] невольно вскрикивает, когда глубоко в [npc.her] горле нарастает сильное давление, но прежде чем [npc.sheHasFull] успевает среагировать, ощущение быстро исчезает. Сделав пробное сжатие, [npc.she] [npc.verb(discover)], что внутреннюю часть [npc.her] горла лишили [style.boldShrink(дополнительных мышц)].<br/>[style.boldSex(Горло [npc.NamePos] больше не выстлано сложной сетью мышц!)]</p>");
 			case RIBBED:
 					return UtilText.parse(owner,
-							"<p>"
-							+ "[npc.Name] can't help but let out a little cry as an intense pressure swells up deep within [npc.her] throat, but before [npc.sheHasFull] any chance to react, the feeling quickly dissipates."
-							+ " Shifting [npc.her] throat around a little, [npc.she] [npc.verb(discover)] that the [style.boldShrink(fleshy, highly-sensitive ribs)] that once lined [npc.her] throat have vanished.<br/>"
-							+ "[style.boldSex([npc.NamePos] throat is no longer lined with fleshy, pleasure-inducing ribs!)]"
-						+ "</p>");
+							"<p>[npc.Name] невольно вскрикивает, когда глубоко в [npc.her] горле нарастает сильное давление, но прежде чем [npc.sheHasFull] успевает среагировать, ощущение быстро исчезает. Слегка шевеля [npc.her] горлом, [npc.she] [npc.verb(discover)], что [style.boldShrink(мясистые, сверхчувствительные ребра)], когда-то выстилавшие [npc.her] горло, исчезли.<br/>[style.boldSex(Горло [npc.NamePos] больше не выстлано мясистыми, вызывающими наслаждение ребрами!)]</p>");
 			case TENTACLED:
 					return UtilText.parse(owner,
-							"<p>"
-								+ "[npc.Name] can't help but let out a little cry as an intense pressure swells up deep within [npc.her] throat, but before [npc.sheHasFull] any chance to react, the feeling quickly dissipates."
-								+ " With an experimental clench, [npc.she] [npc.verb(discover)] that the [style.boldShrink(series of little wriggling tentacles)] within [npc.her] throat have all disappeared.<br/>"
-								+ "[style.boldSex(The inside of [npc.namePos] throat is no longer filled with little tentacles!)]"
-							+ "</p>");
+							"<p>[npc.Name] невольно вскрикивает, когда глубоко в [npc.her] горле нарастает сильное давление, но прежде чем [npc.sheHasFull] успевает среагировать, ощущение быстро исчезает. Сделав пробное сжатие, [npc.she] [npc.verb(discover)], что [style.boldShrink(цепочка маленьких извивающихся щупалец)] внутри [npc.her] горла полностью исчезла.<br/>[style.boldSex(Внутри горла [npc.namePos] больше нет маленьких щупалец!)]</p>");
 			case PUFFY:
 					return UtilText.parse(owner,
-							"<p>"
-								+ "[npc.Name] can't help but let out a little cry as [npc.she] [npc.verb(feel)] a tingling sensation running over [npc.her] lips, before they suddenly [style.boldShrink(deflate)] into a more normal-looking size.<br/>"
-								+ "[style.boldSex([npc.NamePos] lips are no longer extremely puffy!)]"
-							+ "</p>");
+							"<p>[npc.Name] не может сдержать короткого вскрика, когда [npc.she] [npc.verb(feel)] покалывающее ощущение пробегает по [npc.her] губам, прежде чем они внезапно [style.boldShrink(сдуваются)] до более привычного размера.<br/>[style.boldSex(губы [npc.NamePos] больше не опухшие!)]</p>");
 		}
 		
 		// Catch:
-		return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+		return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 	}
 
 	public Set<OrificeModifier> getOrificeModifiers() {

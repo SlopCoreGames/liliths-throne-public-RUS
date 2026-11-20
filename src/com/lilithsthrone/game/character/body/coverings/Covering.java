@@ -226,7 +226,7 @@ public class Covering implements XMLSaving {
 				case HIGHLIGHTS:
 					return getFormattedColour(primaryColour, "", primaryGlowing, capitalised)+", "+getFormattedColour(secondaryColour, "-highlighted", secondaryGlowing, capitalised);
 				case OMBRE:
-					return getFormattedColour(primaryColour, "", primaryGlowing, capitalised)+", fading into "+getFormattedColour(secondaryColour, "", secondaryGlowing, capitalised);
+					return getFormattedColour(primaryColour, "", primaryGlowing, capitalised)+", переходящий в "+getFormattedColour(secondaryColour, "", secondaryGlowing, capitalised);
 				case MOTTLED:
 					return getFormattedColour(primaryColour, "", primaryGlowing, capitalised)+", "+getFormattedColour(secondaryColour, "-mottled", secondaryGlowing, capitalised);
 				case FRECKLED:
@@ -258,15 +258,15 @@ public class Covering implements XMLSaving {
 				case EYE_IRISES:
 					return getFormattedColour(primaryColour, "", primaryGlowing, capitalised);
 				case EYE_IRISES_HETEROCHROMATIC:
-					return "heterochromatic " + getFormattedColour(primaryColour, "", primaryGlowing, capitalised)+" and "+getFormattedColour(secondaryColour, "", secondaryGlowing, capitalised);
+					return "разноцветные " + getFormattedColour(primaryColour, "", primaryGlowing, capitalised)+" and "+getFormattedColour(secondaryColour, "", secondaryGlowing, capitalised);
 				case EYE_PUPILS:
 					return getFormattedColour(primaryColour, "", primaryGlowing, capitalised);
 				case EYE_PUPILS_HETEROCHROMATIC:
-					return "heterochromatic " + getFormattedColour(primaryColour, "", primaryGlowing, capitalised)+" and "+getFormattedColour(secondaryColour, "", secondaryGlowing, capitalised);
+					return "разноцветные " + getFormattedColour(primaryColour, "", primaryGlowing, capitalised)+" and "+getFormattedColour(secondaryColour, "", secondaryGlowing, capitalised);
 				case EYE_SCLERA:
 					return getFormattedColour(primaryColour, "", primaryGlowing, capitalised);
 				case EYE_SCLERA_HETEROCHROMATIC:
-					return "heterochromatic " + getFormattedColour(primaryColour, "", primaryGlowing, capitalised)+" and "+getFormattedColour(secondaryColour, "", secondaryGlowing, capitalised);
+					return "разноцветные " + getFormattedColour(primaryColour, "", primaryGlowing, capitalised)+" and "+getFormattedColour(secondaryColour, "", secondaryGlowing, capitalised);
 			}
 			return (primaryGlowing?spanStartGlowing(primaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+primaryColour.toWebHexString()+";'>")+primaryColourName+"</span>";
 		
@@ -279,7 +279,7 @@ public class Covering implements XMLSaving {
 				case HIGHLIGHTS:
 					return (primaryGlowing?getGlowingDescriptor()+" ":"")+primaryColourName+", "+(secondaryGlowing?getGlowingDescriptor()+" ":"")+secondaryColourName+"-highlighted";
 				case OMBRE:
-					return (primaryGlowing?getGlowingDescriptor()+" ":"")+primaryColourName+", fading into "+(secondaryGlowing?getGlowingDescriptor()+" ":"")+secondaryColourName+"";
+					return (primaryGlowing?getGlowingDescriptor()+" ":"")+primaryColourName+", переходящий в "+(secondaryGlowing?getGlowingDescriptor()+" ":"")+secondaryColourName+"";
 				case MOTTLED:
 					return (primaryGlowing?getGlowingDescriptor()+" ":"")+primaryColourName+", "+(secondaryGlowing?getGlowingDescriptor()+" ":"")+secondaryColourName+"-mottled";
 				case FRECKLED:
@@ -305,15 +305,15 @@ public class Covering implements XMLSaving {
 				case EYE_IRISES:
 					return (primaryGlowing?getGlowingDescriptor()+" ":"")+primaryColourName;
 				case EYE_IRISES_HETEROCHROMATIC:
-					return "heterochromatic "+(primaryGlowing?getGlowingDescriptor()+" ":"")+primaryColourName+" and "+(secondaryGlowing?getGlowingDescriptor()+" ":"")+secondaryColourName;
+					return "разноцветные "+(primaryGlowing?getGlowingDescriptor()+" ":"")+primaryColourName+" and "+(secondaryGlowing?getGlowingDescriptor()+" ":"")+secondaryColourName;
 				case EYE_PUPILS:
 					return (primaryGlowing?getGlowingDescriptor()+" ":"")+primaryColourName;
 				case EYE_PUPILS_HETEROCHROMATIC:
-					return "heterochromatic "+(primaryGlowing?getGlowingDescriptor()+" ":"")+primaryColourName+" and "+(secondaryGlowing?getGlowingDescriptor()+" ":"")+secondaryColourName;
+					return "разноцветные "+(primaryGlowing?getGlowingDescriptor()+" ":"")+primaryColourName+" and "+(secondaryGlowing?getGlowingDescriptor()+" ":"")+secondaryColourName;
 				case EYE_SCLERA:
 					return (primaryGlowing?getGlowingDescriptor()+" ":"")+primaryColourName;
 				case EYE_SCLERA_HETEROCHROMATIC:
-					return "heterochromatic "+(primaryGlowing?getGlowingDescriptor()+" ":"")+primaryColourName+" and "+(secondaryGlowing?getGlowingDescriptor()+" ":"")+secondaryColourName;
+					return "разноцветные "+(primaryGlowing?getGlowingDescriptor()+" ":"")+primaryColourName+" and "+(secondaryGlowing?getGlowingDescriptor()+" ":"")+secondaryColourName;
 			}
 			return (primaryGlowing?getGlowingDescriptor()+" ":"")+primaryColourName;
 		}
@@ -368,69 +368,69 @@ public class Covering implements XMLSaving {
 							+(descriptor!=null && !descriptor.isEmpty()?", "+descriptor:"")+" "+name;
 				case HIGHLIGHTS:
 					return (primaryGlowing?spanStartGlowing(primaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+primaryColour.toWebHexString()+";'>")+primaryColour.getName()+"</span>"
-							+(descriptor!=null && !descriptor.isEmpty()?", "+descriptor:"")+" "+name+", with "
-							+(secondaryGlowing?spanStartGlowing(secondaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+secondaryColour.toWebHexString()+";'>")+secondaryColour.getName()+" highlights</span>";
+							+(descriptor!=null && !descriptor.isEmpty()?", "+descriptor:"")+" "+name+", с "
+							+(secondaryGlowing?spanStartGlowing(secondaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+secondaryColour.toWebHexString()+";'>")+secondaryColour.getName()+" блики</span>";
 				case OMBRE:
 					return (primaryGlowing?spanStartGlowing(primaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+primaryColour.toWebHexString()+";'>")+primaryColour.getName()+"</span>"
-							+(descriptor!=null && !descriptor.isEmpty()?", "+descriptor:"")+" "+name+", which gradually "+(type.isDefaultPlural()?"fade":"fades")+" into "
+							+(descriptor!=null && !descriptor.isEmpty()?", "+descriptor:"")+" "+name+", которые постепенно "+(type.isDefaultPlural()?"fade":"fades")+" into "
 							+(secondaryGlowing?spanStartGlowing(secondaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+secondaryColour.toWebHexString()+";'>")+secondaryColour.getName()+"</span>";
 				case MOTTLED:
 					return (primaryGlowing?spanStartGlowing(primaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+primaryColour.toWebHexString()+";'>")+primaryColour.getName()+"</span>"
-							+(descriptor!=null && !descriptor.isEmpty()?", "+descriptor:"")+" "+name+", with "
-							+(secondaryGlowing?spanStartGlowing(secondaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+secondaryColour.toWebHexString()+";'>")+secondaryColour.getName()+" mottling</span>";
+							+(descriptor!=null && !descriptor.isEmpty()?", "+descriptor:"")+" "+name+", с "
+							+(secondaryGlowing?spanStartGlowing(secondaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+secondaryColour.toWebHexString()+";'>")+secondaryColour.getName()+" мраморность</span>";
 				case FRECKLED:
 					return (primaryGlowing?spanStartGlowing(primaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+primaryColour.toWebHexString()+";'>")+primaryColour.getName()+"</span>"
-							+(descriptor!=null && !descriptor.isEmpty()?", "+descriptor:"")+" "+name+", with "
-							+(secondaryGlowing?spanStartGlowing(secondaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+secondaryColour.toWebHexString()+";'>")+secondaryColour.getName()+" freckles</span>";
+							+(descriptor!=null && !descriptor.isEmpty()?", "+descriptor:"")+" "+name+", с "
+							+(secondaryGlowing?spanStartGlowing(secondaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+secondaryColour.toWebHexString()+";'>")+secondaryColour.getName()+" веснушки</span>";
 				case SPOTTED:
 					return (primaryGlowing?spanStartGlowing(primaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+primaryColour.toWebHexString()+";'>")+primaryColour.getName()+"</span>"
-							+(descriptor!=null && !descriptor.isEmpty()?", "+descriptor:"")+" "+name+", with "
-							+(secondaryGlowing?spanStartGlowing(secondaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+secondaryColour.toWebHexString()+";'>")+secondaryColour.getName()+" spots</span>";
+							+(descriptor!=null && !descriptor.isEmpty()?", "+descriptor:"")+" "+name+", с "
+							+(secondaryGlowing?spanStartGlowing(secondaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+secondaryColour.toWebHexString()+";'>")+secondaryColour.getName()+" пятна</span>";
 				case MARKED:
 					return (primaryGlowing?spanStartGlowing(primaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+primaryColour.toWebHexString()+";'>")+primaryColour.getName()+"</span>"
-							+(descriptor!=null && !descriptor.isEmpty()?", "+descriptor:"")+" "+name+", with "
-							+(secondaryGlowing?spanStartGlowing(secondaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+secondaryColour.toWebHexString()+";'>")+secondaryColour.getName()+" markings</span>";
+							+(descriptor!=null && !descriptor.isEmpty()?", "+descriptor:"")+" "+name+", с "
+							+(secondaryGlowing?spanStartGlowing(secondaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+secondaryColour.toWebHexString()+";'>")+secondaryColour.getName()+" узоры</span>";
 				case STRIPED:
 					return (primaryGlowing?spanStartGlowing(primaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+primaryColour.toWebHexString()+";'>")+primaryColour.getName()+"</span>"
-							+(descriptor!=null && !descriptor.isEmpty()?", "+descriptor:"")+" "+name+", with "
-							+(secondaryGlowing?spanStartGlowing(secondaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+secondaryColour.toWebHexString()+";'>")+secondaryColour.getName()+" stripes</span>";
+							+(descriptor!=null && !descriptor.isEmpty()?", "+descriptor:"")+" "+name+", с "
+							+(secondaryGlowing?spanStartGlowing(secondaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+secondaryColour.toWebHexString()+";'>")+secondaryColour.getName()+" полоски</span>";
 				case ORIFICE_ANUS:
-					return (primaryGlowing?spanStartGlowing(primaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+primaryColour.toWebHexString()+";'>")+primaryColour.getName()+"-rimmed anus</span>, with "
-							+(secondaryGlowing?spanStartGlowing(secondaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+secondaryColour.toWebHexString()+";'>")+secondaryColour.getName()+" internal walls</span>";
+					return (primaryGlowing?spanStartGlowing(primaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+primaryColour.toWebHexString()+";'>")+primaryColour.getName()+"-окаймленный анус</span>, с "
+							+(secondaryGlowing?spanStartGlowing(secondaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+secondaryColour.toWebHexString()+";'>")+secondaryColour.getName()+" внутренними стенками</span>";
 				case ORIFICE_NIPPLE:
-					return (primaryGlowing?spanStartGlowing(primaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+primaryColour.toWebHexString()+";'>")+primaryColour.getName()+" nipples</span>"
+					return (primaryGlowing?spanStartGlowing(primaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+primaryColour.toWebHexString()+";'>")+primaryColour.getName()+" соски</span>"
 							+(gc.getNippleCapacity()==Capacity.ZERO_IMPENETRABLE
 								?""
-								:", with "+(secondaryGlowing?spanStartGlowing(secondaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+secondaryColour.toWebHexString()+";'>")+secondaryColour.getName()+" internal walls</span>");
+								:", с "+(secondaryGlowing?spanStartGlowing(secondaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+secondaryColour.toWebHexString()+";'>")+secondaryColour.getName()+" внутренними стенками</span>");
 				case ORIFICE_NIPPLE_CROTCH:
-					return (primaryGlowing?spanStartGlowing(primaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+primaryColour.toWebHexString()+";'>")+primaryColour.getName()+" nipples</span>"
+					return (primaryGlowing?spanStartGlowing(primaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+primaryColour.toWebHexString()+";'>")+primaryColour.getName()+" соски</span>"
 							+(gc.getNippleCrotchCapacity()==Capacity.ZERO_IMPENETRABLE
 								?""
-								:", with "+(secondaryGlowing?spanStartGlowing(secondaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+secondaryColour.toWebHexString()+";'>")+secondaryColour.getName()+" internal walls</span>");
+								:", с "+(secondaryGlowing?spanStartGlowing(secondaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+secondaryColour.toWebHexString()+";'>")+secondaryColour.getName()+" внутренними стенками</span>");
 				case ORIFICE_VAGINA:
-					return (primaryGlowing?spanStartGlowing(primaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+primaryColour.toWebHexString()+";'>")+primaryColour.getName()+"-lipped pussy</span>, with "
-							+(secondaryGlowing?spanStartGlowing(secondaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+secondaryColour.toWebHexString()+";'>")+secondaryColour.getName()+" internal walls</span>";
+					return (primaryGlowing?spanStartGlowing(primaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+primaryColour.toWebHexString()+";'>")+primaryColour.getName()+"-сжатая киска</span>, с "
+							+(secondaryGlowing?spanStartGlowing(secondaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+secondaryColour.toWebHexString()+";'>")+secondaryColour.getName()+" внутренними стенками</span>";
 				case ORIFICE_SPINNERET:
-					return (primaryGlowing?spanStartGlowing(primaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+primaryColour.toWebHexString()+";'>")+primaryColour.getName()+"-rimmed spinneret</span>, with "
-							+(secondaryGlowing?spanStartGlowing(secondaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+secondaryColour.toWebHexString()+";'>")+secondaryColour.getName()+" internal walls</span>";
+					return (primaryGlowing?spanStartGlowing(primaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+primaryColour.toWebHexString()+";'>")+primaryColour.getName()+"-окаймленным паутинным аппаратом</span>, с "
+							+(secondaryGlowing?spanStartGlowing(secondaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+secondaryColour.toWebHexString()+";'>")+secondaryColour.getName()+" внутренними стенками</span>";
 				case ORIFICE_MOUTH:
-					return (primaryGlowing?spanStartGlowing(primaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+primaryColour.toWebHexString()+";'>")+primaryColour.getName()+" lips</span>, with a "
-							+(secondaryGlowing?spanStartGlowing(secondaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+secondaryColour.toWebHexString()+";'>")+secondaryColour.getName()+" throat</span>";
+					return (primaryGlowing?spanStartGlowing(primaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+primaryColour.toWebHexString()+";'>")+primaryColour.getName()+" губами</span>, с "
+							+(secondaryGlowing?spanStartGlowing(secondaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+secondaryColour.toWebHexString()+";'>")+secondaryColour.getName()+" горлом</span>";
 				case EYE_IRISES:
-					return (primaryGlowing?spanStartGlowing(primaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+primaryColour.toWebHexString()+";'>")+primaryColour.getName()+"</span> irises";
+					return (primaryGlowing?spanStartGlowing(primaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+primaryColour.toWebHexString()+";'>")+primaryColour.getName()+"</span> радужка";
 				case EYE_IRISES_HETEROCHROMATIC:
-					return "heterochromatic "+(primaryGlowing?spanStartGlowing(primaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+primaryColour.toWebHexString()+";'>")+primaryColour.getName()+"</span> and "
-						+(secondaryGlowing?spanStartGlowing(secondaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+secondaryColour.toWebHexString()+";'>")+secondaryColour.getName()+"</span> irises";
+					return "разноцветные "+(primaryGlowing?spanStartGlowing(primaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+primaryColour.toWebHexString()+";'>")+primaryColour.getName()+"</span> и "
+						+(secondaryGlowing?spanStartGlowing(secondaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+secondaryColour.toWebHexString()+";'>")+secondaryColour.getName()+"</span> радужки";
 				case EYE_PUPILS:
-					return (primaryGlowing?spanStartGlowing(primaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+primaryColour.toWebHexString()+";'>")+primaryColour.getName()+"</span> pupils";
+					return (primaryGlowing?spanStartGlowing(primaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+primaryColour.toWebHexString()+";'>")+primaryColour.getName()+"</span> зрачки";
 				case EYE_PUPILS_HETEROCHROMATIC:
-					return "heterochromatic "+(primaryGlowing?spanStartGlowing(primaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+primaryColour.toWebHexString()+";'>")+primaryColour.getName()+"</span> and "
-						+(secondaryGlowing?spanStartGlowing(secondaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+secondaryColour.toWebHexString()+";'>")+secondaryColour.getName()+"</span> pupils";
+					return "разноцветные "+(primaryGlowing?spanStartGlowing(primaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+primaryColour.toWebHexString()+";'>")+primaryColour.getName()+"</span> и "
+						+(secondaryGlowing?spanStartGlowing(secondaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+secondaryColour.toWebHexString()+";'>")+secondaryColour.getName()+"</span> зрачков";
 				case EYE_SCLERA:
-					return (primaryGlowing?spanStartGlowing(primaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+primaryColour.toWebHexString()+";'>")+primaryColour.getName()+"</span> sclerae";
+					return (primaryGlowing?spanStartGlowing(primaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+primaryColour.toWebHexString()+";'>")+primaryColour.getName()+"</span> склеры";
 				case EYE_SCLERA_HETEROCHROMATIC:
-					return "heterochromatic "+(primaryGlowing?spanStartGlowing(primaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+primaryColour.toWebHexString()+";'>")+primaryColour.getName()+"</span> and "
-						+(secondaryGlowing?spanStartGlowing(secondaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+secondaryColour.toWebHexString()+";'>")+secondaryColour.getName()+"</span> sclerae";
+					return "разноцветные "+(primaryGlowing?spanStartGlowing(primaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+primaryColour.toWebHexString()+";'>")+primaryColour.getName()+"</span> и "
+						+(secondaryGlowing?spanStartGlowing(secondaryColour)+getGlowingDescriptor()+" ":"<span style='color:"+secondaryColour.toWebHexString()+";'>")+secondaryColour.getName()+"</span> склеры";
 			
 			}
 			
@@ -445,55 +445,55 @@ public class Covering implements XMLSaving {
 					return (primaryGlowing?getGlowingDescriptor()+" ":"")+primaryColour.getName()+(descriptor!=null && !descriptor.isEmpty()?", "+descriptor:"")+" "+name;
 				case HIGHLIGHTS:
 					return (primaryGlowing?getGlowingDescriptor()+" ":"")+primaryColour.getName()
-							+(descriptor!=null && !descriptor.isEmpty()?", "+descriptor:"")+" "+name+", with "+(secondaryGlowing?getGlowingDescriptor()+" ":"")+secondaryColour.getName()+" highlights";
+							+(descriptor!=null && !descriptor.isEmpty()?", "+descriptor:"")+" "+name+", с "+(secondaryGlowing?getGlowingDescriptor()+" ":"")+secondaryColour.getName()+" highlights";
 				case OMBRE:
 					return (primaryGlowing?getGlowingDescriptor()+" ":"")+primaryColour.getName()
-							+(descriptor!=null && !descriptor.isEmpty()?", "+descriptor:"")+" "+name+", which gradually "+(type.isDefaultPlural()?"fade":"fades")+" into "+(secondaryGlowing?getGlowingDescriptor()+" ":"")+secondaryColour.getName();
+							+(descriptor!=null && !descriptor.isEmpty()?", "+descriptor:"")+" "+name+", которые постепенно "+(type.isDefaultPlural()?"fade":"fades")+" into "+(secondaryGlowing?getGlowingDescriptor()+" ":"")+secondaryColour.getName();
 				case MOTTLED:
 					return (primaryGlowing?getGlowingDescriptor()+" ":"")+primaryColour.getName()
-							+(descriptor!=null && !descriptor.isEmpty()?", "+descriptor:"")+" "+name+", with "+(secondaryGlowing?getGlowingDescriptor()+" ":"")+secondaryColour.getName()+" mottling";
+							+(descriptor!=null && !descriptor.isEmpty()?", "+descriptor:"")+" "+name+", с "+(secondaryGlowing?getGlowingDescriptor()+" ":"")+secondaryColour.getName()+" mottling";
 				case FRECKLED:
 					return (primaryGlowing?getGlowingDescriptor()+" ":"")+primaryColour.getName()
-							+(descriptor!=null && !descriptor.isEmpty()?", "+descriptor:"")+" "+name+", with "+(secondaryGlowing?getGlowingDescriptor()+" ":"")+secondaryColour.getName()+" freckles";
+							+(descriptor!=null && !descriptor.isEmpty()?", "+descriptor:"")+" "+name+", с "+(secondaryGlowing?getGlowingDescriptor()+" ":"")+secondaryColour.getName()+" freckles";
 				case SPOTTED:
 					return (primaryGlowing?getGlowingDescriptor()+" ":"")+primaryColour.getName()
-							+(descriptor!=null && !descriptor.isEmpty()?", "+descriptor:"")+" "+name+", with "+(secondaryGlowing?getGlowingDescriptor()+" ":"")+secondaryColour.getName()+" spots";
+							+(descriptor!=null && !descriptor.isEmpty()?", "+descriptor:"")+" "+name+", с "+(secondaryGlowing?getGlowingDescriptor()+" ":"")+secondaryColour.getName()+" spots";
 				case MARKED:
 					return (primaryGlowing?getGlowingDescriptor()+" ":"")+primaryColour.getName()
-							+(descriptor!=null && !descriptor.isEmpty()?", "+descriptor:"")+" "+name+", with "+(secondaryGlowing?getGlowingDescriptor()+" ":"")+secondaryColour.getName()+" markings";
+							+(descriptor!=null && !descriptor.isEmpty()?", "+descriptor:"")+" "+name+", с "+(secondaryGlowing?getGlowingDescriptor()+" ":"")+secondaryColour.getName()+" markings";
 				case STRIPED:
 					return (primaryGlowing?getGlowingDescriptor()+" ":"")+primaryColour.getName()
-							+(descriptor!=null && !descriptor.isEmpty()?", "+descriptor:"")+" "+name+", with "+(secondaryGlowing?getGlowingDescriptor()+" ":"")+secondaryColour.getName()+" stripes";
+							+(descriptor!=null && !descriptor.isEmpty()?", "+descriptor:"")+" "+name+", с "+(secondaryGlowing?getGlowingDescriptor()+" ":"")+secondaryColour.getName()+" stripes";
 				case ORIFICE_ANUS:
-					return (primaryGlowing?getGlowingDescriptor()+" ":"")+primaryColour.getName()+"-rimmed anus, with "+(secondaryGlowing?getGlowingDescriptor()+" ":"")+secondaryColour.getName()+" internal walls";
+					return (primaryGlowing?getGlowingDescriptor()+" ":"")+primaryColour.getName()+"-rimmed анус, с "+(secondaryGlowing?getGlowingDescriptor()+" ":"")+secondaryColour.getName()+" внутренними стенками";
 				case ORIFICE_NIPPLE:
 					return (primaryGlowing?getGlowingDescriptor()+" ":"")+primaryColour.getName()+" nipples"
 							+(gc.getNippleCapacity()==Capacity.ZERO_IMPENETRABLE
 								?""
-								:", with "+(secondaryGlowing?getGlowingDescriptor()+" ":"")+secondaryColour.getName()+" internal walls");
+								:", с "+(secondaryGlowing?getGlowingDescriptor()+" ":"")+secondaryColour.getName()+" внутренними стенками");
 				case ORIFICE_NIPPLE_CROTCH:
 					return (primaryGlowing?getGlowingDescriptor()+" ":"")+primaryColour.getName()+" nipples"
 							+(gc.getNippleCrotchCapacity()==Capacity.ZERO_IMPENETRABLE
 								?""
-								:", with "+(secondaryGlowing?getGlowingDescriptor()+" ":"")+secondaryColour.getName()+" internal walls");
+								:", с "+(secondaryGlowing?getGlowingDescriptor()+" ":"")+secondaryColour.getName()+" внутренними стенками");
 				case ORIFICE_VAGINA:
-					return (primaryGlowing?getGlowingDescriptor()+" ":"")+primaryColour.getName()+"-lipped pussy, with "+(secondaryGlowing?getGlowingDescriptor()+" ":"")+secondaryColour.getName()+" internal walls";
+					return (primaryGlowing?getGlowingDescriptor()+" ":"")+primaryColour.getName()+"-lipped киска, с "+(secondaryGlowing?getGlowingDescriptor()+" ":"")+secondaryColour.getName()+" внутренними стенками";
 				case ORIFICE_SPINNERET:
-					return (primaryGlowing?getGlowingDescriptor()+" ":"")+primaryColour.getName()+"-rimmed spinneret, with "+(secondaryGlowing?getGlowingDescriptor()+" ":"")+secondaryColour.getName()+" internal walls";
+					return (primaryGlowing?getGlowingDescriptor()+" ":"")+primaryColour.getName()+"-rimmed паутинный орган, с "+(secondaryGlowing?getGlowingDescriptor()+" ":"")+secondaryColour.getName()+" внутренними стенками";
 				case ORIFICE_MOUTH:
-					return (primaryGlowing?getGlowingDescriptor()+" ":"")+primaryColour.getName()+" lips, with a "+(secondaryGlowing?getGlowingDescriptor()+" ":"")+secondaryColour.getName()+" throat";
+					return (primaryGlowing?getGlowingDescriptor()+" ":"")+primaryColour.getName()+" губ, с "+(secondaryGlowing?getGlowingDescriptor()+" ":"")+secondaryColour.getName()+" throat";
 				case EYE_IRISES:
 					return (primaryGlowing?getGlowingDescriptor()+" ":"")+primaryColour.getName()+" irises";
 				case EYE_IRISES_HETEROCHROMATIC:
-					return "heterochromatic "+(primaryGlowing?getGlowingDescriptor()+" ":"")+primaryColour.getName()+" and "+(secondaryGlowing?getGlowingDescriptor()+" ":"")+secondaryColour.getName()+" irises";
+					return "разноцветные "+(primaryGlowing?getGlowingDescriptor()+" ":"")+primaryColour.getName()+" and "+(secondaryGlowing?getGlowingDescriptor()+" ":"")+secondaryColour.getName()+" irises";
 				case EYE_PUPILS:
 					return (primaryGlowing?getGlowingDescriptor()+" ":"")+primaryColour.getName()+" pupils";
 				case EYE_PUPILS_HETEROCHROMATIC:
-					return "heterochromatic "+(primaryGlowing?getGlowingDescriptor()+" ":"")+primaryColour.getName()+" and "+(secondaryGlowing?getGlowingDescriptor()+" ":"")+secondaryColour.getName()+" sclerae";
+					return "разноцветные "+(primaryGlowing?getGlowingDescriptor()+" ":"")+primaryColour.getName()+" and "+(secondaryGlowing?getGlowingDescriptor()+" ":"")+secondaryColour.getName()+" sclerae";
 				case EYE_SCLERA:
 					return (primaryGlowing?getGlowingDescriptor()+" ":"")+primaryColour.getName()+" pupils";
 				case EYE_SCLERA_HETEROCHROMATIC:
-					return "heterochromatic "+(primaryGlowing?getGlowingDescriptor()+" ":"")+primaryColour.getName()+" and "+(secondaryGlowing?getGlowingDescriptor()+" ":"")+secondaryColour.getName()+" sclerae";
+					return "разноцветные "+(primaryGlowing?getGlowingDescriptor()+" ":"")+primaryColour.getName()+" and "+(secondaryGlowing?getGlowingDescriptor()+" ":"")+secondaryColour.getName()+" sclerae";
 			}
 		}
 		return (primaryGlowing?getGlowingDescriptor()+" ":"")+primaryColour.getName();
@@ -504,7 +504,7 @@ public class Covering implements XMLSaving {
 	}
 	
 	private static String getGlowingDescriptor() {
-		return UtilText.returnStringAtRandom("glowing", "luminescent", "luminous", "fluorescent");
+		return UtilText.returnStringAtRandom("сияющими", "люминесцентными", "светящимися", "флуоресцентными");
 	}
 	
 	@Override

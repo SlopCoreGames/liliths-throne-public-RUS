@@ -78,13 +78,12 @@ public class Hair implements BodyPartInterface {
 		}
 		
 		if (type == getType()) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] already [npc.has] the [npc.hair(true)] of [npc.a_hairRace], so nothing happens...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] уже [npc.has] [npc.hair(true)] [npc.a_hairRace], так что ничего не происходит...)]</p>");
 		}
 		
 		StringBuilder sb = new StringBuilder();
 		sb.append(
-				"<p>"
-					+ "[npc.NamePos] scalp tingles and itches, and [npc.she] [npc.verb(rub)] the top of [npc.her] head as [npc.she] [npc.verb(feel)] [npc.her] [npc.hair(true)] start to transform. ");
+				"<p>[npc.NamePos] кожа головы покалывает и чешется, и [npc.she] [npc.verb(rub)] макушку [npc.her], пока [npc.she] [npc.verb(feel)] [npc.her] [npc.hair(true)] начинают трансформироваться. ");
 
 		// Parse existing content before transformation:
 		String s = UtilText.parse(owner, sb.toString());
@@ -123,35 +122,28 @@ public class Hair implements BodyPartInterface {
 		
 		String styleChange = "";
 		if(this.length < owner.getHairStyle().getMinimumLengthRequired()) {
-			styleChange = "<p>"
-							+ "[npc.Her] [npc.hair(true)] "+(owner.getHairType().isDefaultPlural(owner)?"are":"is")+" too short for [npc.her] current hair style!"
-						+ "</p>"
+			styleChange = "<p>[npc.Her] [npc.hair(true)] "+(owner.getHairType().isDefaultPlural(owner)?"are":"is")+" слишком коротко для текущей прически [npc.her]!</p>"
 						+ owner.setHairStyle(HairStyle.NONE);
 		}
 		
 		if (sizeChange == 0) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(The length of [npc.namePos] [npc.hair(true)] doesn't change...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(Длина [npc.hair(true)] [npc.namePos] не меняется...)]</p>");
 			
 		} else if (sizeChange < 0) {
 			String hairChangedText;
 			if (this.length == 0 && owner.isFaceBaldnessNatural()) {
-				hairChangedText = "no [npc.hair(true)]";
+				hairChangedText = "нет [npc.hair(true)]";
 			} else {
 				hairChangedText = "[npc.hairLength], " + Units.size(this.length, Units.UnitType.LONG_SINGULAR) +" [npc.hair(true)]";
 			}
 			return UtilText.parse(owner,
-					"<p>"
-						+ "[npc.Name] [npc.verb(let)] out an involuntary cry and [npc.verb(rub)] at [npc.her] scalp as [npc.she] [npc.verb(feel)] [npc.her] [npc.hair(true)] [style.boldShrink(getting shorter)].<br/>"
-						+ "[npc.She] now [npc.has] [style.boldTfGeneric(" + hairChangedText + ")]!"
+					"<p>[npc.Name] [npc.verb(let)] непроизвольный крик и [npc.verb(rub)] в [npc.her] кожу головы, пока [npc.she] [npc.verb(feel)] [npc.her] [npc.hair(true)] [style.boldShrink(становится короче)].<br/>[npc.She] теперь [npc.has] [style.boldTfGeneric(" + hairChangedText + ")]!"
 					+ "</p>"
 					+ styleChange);
 			
 		} else {
 			return UtilText.parse(owner,
-					"<p>"
-						+ "[npc.Name] [npc.verb(let)] out an involuntary cry and [npc.verb(rub)] at [npc.her] scalp as [npc.she] [npc.verb(feel)] [npc.her] [npc.hair(true)] [style.boldGrow(growing longer)].<br/>"
-						+ "[npc.She] now [npc.has] [style.boldTfGeneric([npc.hairLength], "+ Units.size(this.length, Units.UnitType.LONG_SINGULAR) +" [npc.hair(true)])]!"
-					+ "</p>"
+					"<p>[npc.Name] [npc.verb(let)] непроизвольный крик и [npc.verb(rub)] в [npc.her] кожу головы, пока [npc.she] [npc.verb(feel)] [npc.her] [npc.hair(true)] [style.boldGrow(становится длиннее)].<br/>[npc.She] теперь [npc.has] [style.boldTfGeneric([npc.hairLength], "+ Units.size(this.length, Units.UnitType.LONG_SINGULAR) +" [npc.hair(true)])]!</p>"
 					+ styleChange);
 		}
 	}
@@ -168,91 +160,91 @@ public class Hair implements BodyPartInterface {
 		}
 		StringBuilder sb = new StringBuilder();
 		sb.append("<p>");
-			sb.append("[npc.NamePos] [npc.hair(true)] "+(type.isDefaultPlural(owner)?"are":"is")+" now ");
+			sb.append("[npc.NamePos] [npc.hair(true)] "+(type.isDefaultPlural(owner)?"являются":"есть")+" сейчас ");
 			switch(style) { //TODO This should be handled in the style itself
 				case BRAIDED:
-					sb.append("styled into braids.");
+					sb.append("заплетено в косы.");
 					break;
 				case CURLY:
-					sb.append("curled.");
+					sb.append("кудрявые.");
 					break;
 				case LOOSE:
-					sb.append("loose.");
+					sb.append("распущенные.");
 					break;
 				case NONE:
-					sb.append("unstyled, and will take on "+(type.isDefaultPlural(owner)?"their":"its")+" natural shape.");
+					sb.append("не уложены и примут "+(type.isDefaultPlural(owner)?"их":"её")+" естественную форму.");
 					break;
 				case PONYTAIL:
-					sb.append("styled into a ponytail.");
+					sb.append("собраны в хвост.");
 					break;
 				case STRAIGHT:
-					sb.append("straightened.");
+					sb.append("выпрямлены.");
 					break;
 				case TWIN_TAILS:
-					sb.append("styled into twin-tails.");
+					sb.append("собраны в два хвостика.");
 					break;
 				case WAVY:
-					sb.append("wavy.");
+					sb.append("волнистые.");
 					break;
 				case MOHAWK:
-					sb.append("styled into a mohawk.");
+					sb.append("уложенные в ирокез.");
 					break;
 				case AFRO:
-					sb.append("styled into an afro.");
+					sb.append("уложенные в афро.");
 					break;
 				case SIDECUT:
-					sb.append("styled into a sidecut.");
+					sb.append("уложенные в андеркат.");
 					break;
 				case BOB_CUT:
-					sb.append("styled into a bob cut.");
+					sb.append("уложенные в стрижку боб.");
 					break;
 				case PIXIE:
-					sb.append("styled into a pixie cut.");
+					sb.append("уложенные в стрижку пикси.");
 					break;
 				case SLICKED_BACK:
-					sb.append("slicked back.");
+					sb.append("зачесанные назад.");
 					break;
 				case MESSY:
-					sb.append("unstyled, and particularly messy.");
+					sb.append("неуложенные, совершенно растрепанные.");
 					break;
 				case HIME_CUT:
-					sb.append("straightened, and styled into a hime-cut.");
+					sb.append("выпрямленные и уложенные в стрижку химе.");
 					break;
 				case CHONMAGE:
-					sb.append("straightened, oiled, and styled into a chonmage.");
+					sb.append("выпрямленные, маслянистые и уложенные в чонмаге.");
 					break;
 				case DREADLOCKS:
-					sb.append("styled into dreadlocks.");
+					sb.append("уложены в дреды.");
 					break;
 				case TOPKNOT:
-					sb.append("gathered up into a topknot.");
+					sb.append("собраны в пучок на макушке.");
 					break;
 				case BIRD_CAGE:
-					sb.append("styled into an elaborate bird cage.");
+					sb.append("уложены в замысловатую прическу «птичья клетка».");
 					break;
 				case TWIN_BRAIDS:
-					sb.append("styled into twin braids.");
+					sb.append("уложены в две косы.");
 					break;
 				case DRILLS:
-					sb.append("styled into ojou ringlets.");
+					sb.append("уложены в локоны в стиле одзё.");
 					break;
 				case LOW_PONYTAIL:
-					sb.append("styled into a low ponytail.");
+					sb.append("уложены в низкий хвост.");
 					break;
 				case CROWN_BRAID:
-					sb.append("styled into a crown braid.");
+					sb.append("уложены в виде венка из косы.");
 					break;
 				case BUN:
-					sb.append("styled into a bun.");
+					sb.append("уложены в пучок.");
 					break;
 				case CHIGNON:
-					sb.append("tied up and styled into a chignon.");
+					sb.append("собраны и уложены в шиньон.");
 					break;
 				case SIDE_BRAIDS:
-					sb.append("styled into two braids which hang down on either side of [npc.her] face.");
+					sb.append("уложены в две косы, спадающие по обе стороны лица [npc.her].");
 					break;
 				case SIDE_PARTED:
-					sb.append("styled into a side parting.");
+					sb.append("уложены с боковым пробором.");
 					break;
 			}
 		sb.append("</p>");
@@ -266,9 +258,9 @@ public class Hair implements BodyPartInterface {
 	public String setNeckFluff(GameCharacter owner, boolean neckFluff) {
 		if(owner!=null && this.neckFluff == neckFluff) {
 			if(this.neckFluff) {
-				return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] already [npc.has] neck [npc.hair(true)], so nothing happens...)]</p>");
+				return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] на шее уже [npc.has] [npc.hair(true)], так что ничего не происходит...)]</p>");
 			} else {
-				return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] already [npc.verb(lack)] neck [npc.hair(true)], so nothing happens...)]</p>");
+				return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] на шее уже [npc.verb(lack)] [npc.hair(true)], так что ничего не происходит...)]</p>");
 			}
 		}
 		this.neckFluff = neckFluff;
@@ -278,15 +270,11 @@ public class Hair implements BodyPartInterface {
 		
 		if (neckFluff) {
 			return UtilText.parse(owner,
-					"<p>"
-						+ "[npc.Name] [npc.verb(let)] out a gasp as [npc.she] [npc.verb(feel)] a significant amount of [npc.hair(true)] [style.boldGrow(growing out around [npc.her] neck and upper chest)]!"
-					+ "</p>");
+					"<p>[npc.Name] [npc.verb(let)] прерывисто вздыхает, когда [npc.she] [npc.verb(feel)] значительное количество [npc.hair(true)] [style.boldGrow(отрастает вокруг [npc.her] шеи и верхней части груди)]!</p>");
 			
 		} else {
 			return UtilText.parse(owner,
-					"<p>"
-						+ "[npc.Name] [npc.verb(let)] out a gasp as [npc.she] [npc.verb(feel)] [npc.her] neck [npc.hair(true)] [style.boldShrink(shrink away and disappear)]."
-					+ "</p>");
+					"<p>[npc.Name] [npc.verb(let)] прерывисто вздыхает, когда [npc.she] [npc.verb(feel)] [npc.hair(true)] на [npc.her] шее [style.boldShrink(уменьшается и исчезает)].</p>");
 		}
 	}
 

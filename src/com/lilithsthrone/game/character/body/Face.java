@@ -125,15 +125,14 @@ public class Face implements BodyPartInterface {
 		}
 		
 		if (type == getType()) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] already [npc.has] the [npc.face] of [npc.a_faceRace], so nothing happens...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] уже [npc.has] [npc.face] [npc.a_faceRace], так что ничего не происходит...)]</p>");
 		}
 		
 		StringBuilder sb = new StringBuilder();
 
 		sb.append("<p>");
 		sb.append(
-				 "An intense tingling sensation suddenly sweeps across [npc.namePos] [npc.face], and [npc.she] [npc.verb(scrunch)] up [npc.her] [npc.eyes] as [npc.she] [npc.verb(feel)] it start to transform."
-					+ " With an audible crunch, [npc.her] facial bones start to restructure themselves, and although the feeling isn't painful, it's enough of a shock to cause [npc.herHim] to let out an involuntary cry. ");
+				 "Внезапное интенсивное покалывание проносится по [npc.namePos] [npc.face], и [npc.she] [npc.verb(scrunch)] [npc.her] [npc.eyes], пока [npc.she] [npc.verb(feel)], начиная трансформироваться. С отчетливым хрустом [npc.her] лицевые кости начинают перестраиваться, и хотя это чувство не болезненно, его достаточно, чтобы вызвать у [npc.herHim] непроизвольный крик. ");
 		
 		// Parse existing content before transformation:
 		String s = UtilText.parse(owner, sb.toString());
@@ -159,14 +158,14 @@ public class Face implements BodyPartInterface {
 
 	public String setPiercedNose(GameCharacter owner, boolean piercedNose) {
 		if(owner.isPiercedNose() == piercedNose) {
-			return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+			return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 		}
 		
 		this.piercedNose = piercedNose;
 		
 		if(piercedNose) {
 			return UtilText.parse(owner,
-					"<p>[npc.NamePos] [npc.nose] is now [style.boldGrow(pierced)]!</p>");
+					"<p>[npc.NamePos] [npc.nose] теперь [style.boldGrow(проколот)]!</p>");
 			
 		} else {
 			AbstractClothing c = owner.getClothingInSlot(InventorySlot.PIERCING_NOSE);
@@ -177,9 +176,7 @@ public class Face implements BodyPartInterface {
 			}
 			
 			return UtilText.parse(owner,
-					"<p>"
-							+ "[npc.NamePos] [npc.nose] is [style.boldShrink(no longer pierced)]!"
-					+ "</p>"
+					"<p>[npc.NamePos] [npc.nose] [style.boldShrink(больше не проколот)]!</p>"
 					+piercingUnequip);
 		}
 	}
@@ -199,47 +196,47 @@ public class Face implements BodyPartInterface {
 		}
 
 		if(!this.getType().isFacialHairAllowed()) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(As [npc.namePos] face type prevents [npc.herHim] from growing a beard, nothing happens...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(Так как тип лица [npc.namePos] не позволяет [npc.herHim] отрастить бороду, ничего не происходит...)]</p>");
 		}
 		
 		if(owner.getFemininityValue()>=Femininity.ANDROGYNOUS.getMinimumFemininity() && facialHair!=BodyHair.ZERO_NONE && !Main.getProperties().hasValue(PropertyValue.feminineBeardsContent)) {
 			if(owner.isPlayer()) {
-				return "<p style='text-align:center;'>[style.colourDisabled(You're too feminine to be able to grow a beard...)]</p>";
+				return "<p style='text-align:center;'>[style.colourDisabled(Ты слишком женственна, чтобы отрастить бороду...)]</p>";
 			} else {
-				return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.sheIs] too feminine to be able to grow a beard...)]</p>");
+				return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.sheIs] слишком женственна, чтобы отрастить бороду...)]</p>");
 			}
 		}
 		
 		if(getFacialHair() == facialHair) {
-			return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+			return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 		}
 		
 		StringBuilder sb = new StringBuilder();
 		
 		switch(facialHair) {
 			case ZERO_NONE:
-				sb.append(UtilText.parse(owner, "<p>There is no longer any trace of "+getFacialHairType(owner).getFullDescription(owner, true)+" on [npc.her] face.</p>"));
+				sb.append(UtilText.parse(owner, "<p>От <p> больше не осталось и следа "+getFacialHairType(owner).getFullDescription(owner, true)+" на лице [npc.her].</p>"));
 				break;
 			case ONE_STUBBLE:
-				sb.append(UtilText.parse(owner, "<p>[npc.Name] now [npc.has] a stubbly layer of "+getFacialHairType(owner).getFullDescription(owner, true)+" on [npc.her] face.</p>"));
+				sb.append(UtilText.parse(owner, "<p>[npc.Name] теперь [npc.has] щетинистый слой "+getFacialHairType(owner).getFullDescription(owner, true)+" на лице [npc.her].</p>"));
 				break;
 			case TWO_MANICURED:
-				sb.append(UtilText.parse(owner, "<p>[npc.Name] now [npc.has] a small amount of "+getFacialHairType(owner).getFullDescription(owner, true)+" on [npc.her] face.</p>"));
+				sb.append(UtilText.parse(owner, "<p>[npc.Name] теперь [npc.has] немного "+getFacialHairType(owner).getFullDescription(owner, true)+" на лице [npc.her].</p>"));
 				break;
 			case THREE_TRIMMED:
-				sb.append(UtilText.parse(owner, "<p>[npc.Name] now [npc.has] a well-trimmed beard of "+getFacialHairType(owner).getFullDescription(owner, true)+" on [npc.her] face.</p>"));
+				sb.append(UtilText.parse(owner, "<p>[npc.Name] теперь [npc.has] аккуратно подстриженную бороду из "+getFacialHairType(owner).getFullDescription(owner, true)+" на лице [npc.her].</p>"));
 				break;
 			case FOUR_NATURAL:
-				sb.append(UtilText.parse(owner, "<p>[npc.Name] now [npc.has] a beard, made of "+getFacialHairType(owner).getFullDescription(owner, true)+".</p>"));
+				sb.append(UtilText.parse(owner, "<p>[npc.Name] теперь [npc.has] бороду из "+getFacialHairType(owner).getFullDescription(owner, true)+".</p>"));
 				break;
 			case FIVE_UNKEMPT:
-				sb.append(UtilText.parse(owner, "<p>[npc.Name] now [npc.has] an unkempt, bushy beard, made of "+getFacialHairType(owner).getFullDescription(owner, true)+".</p>"));
+				sb.append(UtilText.parse(owner, "<p>[npc.Name] теперь [npc.has] неопрятную, густую бороду из "+getFacialHairType(owner).getFullDescription(owner, true)+".</p>"));
 				break;
 			case SIX_BUSHY:
-				sb.append(UtilText.parse(owner, "<p>[npc.Name] now [npc.has] a large, bushy beard, made of "+getFacialHairType(owner).getFullDescription(owner, true)+".</p>"));
+				sb.append(UtilText.parse(owner, "<p>[npc.Name] теперь [npc.has] большую, густую бороду из "+getFacialHairType(owner).getFullDescription(owner, true)+".</p>"));
 				break;
 			case SEVEN_WILD:
-				sb.append(UtilText.parse(owner, "<p>[npc.Name] now [npc.has] a wild, thick beard, made of "+getFacialHairType(owner).getFullDescription(owner, true)+".</p>"));
+				sb.append(UtilText.parse(owner, "<p>[npc.Name] теперь [npc.has] дикую, густую бороду из "+getFacialHairType(owner).getFullDescription(owner, true)+".</p>"));
 				break;
 		}
 		

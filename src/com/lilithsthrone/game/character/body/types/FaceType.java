@@ -30,14 +30,12 @@ public class FaceType {
 			null,
 			Util.newArrayListOfValues(""),
 			Util.newArrayListOfValues(""),
-			"nose",
-			"noses",
+			"нос",
+			"носы",
 			Util.newArrayListOfValues(""),
 			Util.newArrayListOfValues(""),
-			"Thankfully#IF(!npc.isPlayer())for [npc.herHim]#ENDIF, the transformation only lasts a matter of moments, leaving [npc.herHim] with a normal human face, [npc.materialDescriptor] [npc.faceSkin+].<br/>"
-				+ "[npc.Name] now [npc.has] a [style.boldHuman(human face)], [npc.materialDescriptor] [npc.faceFullDescription]."
-				+ " Within [npc.her] [npc.mouth], [npc.sheHasFull] a [style.boldHuman(human tongue)].",
-			"[npc.SheHasFull] [npc.a_feminineDescriptor(true)], human face, [npc.materialDescriptor] [npc.faceFullDescription(true)].",
+			"К счастью#IF(!npc.isPlayer())для [npc.herHim]#ENDIF, трансформация длится всего мгновение, оставляя [npc.herHim] с обычным человеческим лицом, [npc.materialDescriptor] [npc.faceSkin+].<br/>[npc.Name] теперь [npc.has] [style.boldHuman(человеческое лицо)], [npc.materialDescriptor] [npc.faceFullDescription]. Внутри [npc.her] [npc.mouth], [npc.sheHasFull] [style.boldHuman(человеческий язык)].",
+			"[npc.SheHasFull] [npc.a_feminineDescriptor(true)], человеческое лицо, [npc.materialDescriptor] [npc.faceFullDescription(true)].",
 			Util.newArrayListOfValues()){
 	};
 
@@ -46,16 +44,14 @@ public class FaceType {
 			MouthType.ANGEL,
 			null,
 			null,
-			Util.newArrayListOfValues("perfect", "flawless", "angelic"),
-			Util.newArrayListOfValues("perfect", "flawless", "angelic"),
-			"nose",
-			"noses",
+			Util.newArrayListOfValues("идеальный", "безупречны", "ангельский"),
+			Util.newArrayListOfValues("идеальный", "безупречны", "ангельский"),
+			"нос",
+			"носы",
 			Util.newArrayListOfValues(""),
 			Util.newArrayListOfValues(""),
-			"Thankfully#IF(!npc.isPlayer())for [npc.herHim]#ENDIF, the transformation only lasts a matter of moments, leaving [npc.herHim] with an angelic, human-looking face, [npc.materialDescriptor] [npc.faceSkin+].<br/>"
-					+ "[npc.Name] now [npc.has] an [style.boldAngel(angelic face)], [npc.materialDescriptor] [npc.faceFullDescription]."
-					+ " Within [npc.her] [npc.mouth], [npc.sheHasFull] an [style.boldAngel(angelic tongue)].",
-			"[npc.SheHasFull] [npc.a_feminineDescriptor(true)], angelic face, [npc.materialDescriptor] [npc.faceFullDescription(true)].",
+			"К счастью#IF(!npc.isPlayer())для [npc.herHim]#ENDIF, трансформация длится всего мгновение, оставляя [npc.herHim] с ангельским, человекоподобным лицом, [npc.materialDescriptor] [npc.faceSkin+].<br/>[npc.Name] теперь [npc.has] [style.boldAngel(ангельское лицо)], [npc.materialDescriptor] [npc.faceFullDescription]. Внутри [npc.her] [npc.mouth], [npc.sheHasFull] [style.boldAngel(ангельский язык)].",
+			"[npc.SheHasFull] [npc.a_feminineDescriptor(true)], ангельское лицо, [npc.materialDescriptor] [npc.faceFullDescription(true)].",
 			Util.newArrayListOfValues()){
 	};
 
@@ -64,22 +60,14 @@ public class FaceType {
 			MouthType.DEMON_COMMON,
 			null,
 			null,
-			Util.newArrayListOfValues("perfect", "flawless", "demonic"),
-			Util.newArrayListOfValues("perfect", "flawless", "demonic"),
-			"nose",
-			"noses",
+			Util.newArrayListOfValues("идеальный", "безупречны", "демонический"),
+			Util.newArrayListOfValues("идеальный", "безупречны", "демонический"),
+			"нос",
+			"носы",
 			Util.newArrayListOfValues(""),
 			Util.newArrayListOfValues(""),
-			"#IF(npc.isShortStature())"
-				+ "Thankfully#IF(!npc.isPlayer())for [npc.herHim]#ENDIF, the transformation only lasts a matter of moments, leaving [npc.herHim] with an impish, human-looking face, [npc.materialDescriptor] [npc.faceSkin+].<br/>"
-				+ "[npc.Name] now [npc.has] a [style.boldImp(impish face)], [npc.materialDescriptor] [npc.faceFullDescription]."
-				+ " Within [npc.her] [npc.mouth], [npc.sheHasFull] a [style.boldImp(impish tongue)]."
-			+ "#ELSE"
-				+ "Thankfully#IF(!npc.isPlayer())for [npc.herHim]#ENDIF, the transformation only lasts a matter of moments, leaving [npc.herHim] with a demonic, human-looking face, [npc.materialDescriptor] [npc.faceSkin+].<br/>"
-				+ "[npc.Name] now [npc.has] a [style.boldDemon(demonic face)], [npc.materialDescriptor] [npc.faceFullDescription]."
-				+ " Within [npc.her] [npc.mouth], [npc.sheHasFull] a [style.boldDemon(demonic tongue)]."
-			+ "#ENDIF",
-			"[npc.SheHasFull] [npc.a_feminineDescriptor(true)], #IF(npc.isShortStature())impish#ELSEdemonic#ENDIF face, [npc.materialDescriptor] [npc.faceFullDescription(true)].",
+			"#IF(npc.isShortStature())К счастью#IF(!npc.isPlayer()) для [npc.herHim]#ENDIF, трансформация длится всего мгновение, оставляя [npc.herHim] с бесовским, человекоподобным лицом, [npc.materialDescriptor] [npc.faceSkin+].<br/>[npc.Name] теперь [npc.has] [style.boldImp(бесовское лицо)], [npc.materialDescriptor] [npc.faceFullDescription]. Внутри [npc.her] [npc.mouth], [npc.sheHasFull] [style.boldImp(бесовский язык)].#ELSEК счастью#IF(!npc.isPlayer()) для [npc.herHim]#ENDIF, трансформация длится всего мгновение, оставляя [npc.herHim] с демоническим, человекоподобным лицом, [npc.materialDescriptor] [npc.faceSkin+].<br/>[npc.Name] теперь [npc.has] [style.boldDemon(демоническое лицо)], [npc.materialDescriptor] [npc.faceFullDescription]. Внутри [npc.her] [npc.mouth], [npc.sheHasFull] [style.boldDemon(демонический язык)].#ENDIF",
+			"[npc.SheHasFull] [npc.a_feminineDescriptor(true)], #IF(npc.isShortStature())бесовское#ELSEдемоническое#ENDIF лицо, [npc.materialDescriptor] [npc.faceFullDescription(true)].",
 			Util.newArrayListOfValues()){
 	};
 
@@ -88,23 +76,15 @@ public class FaceType {
 			MouthType.ALLIGATOR_MORPH,
 			null,
 			null,
-			Util.newArrayListOfValues("anthropomorphic alligator-like", "alligator-like", "reptile"),
-			Util.newArrayListOfValues("anthropomorphic alligator-like", "alligator-like", "reptile"),
-			"nose",
-			"noses",
+			Util.newArrayListOfValues("антропоморфное, похожее на аллигатора", "аллигатороподобного", "рептилия"),
+			Util.newArrayListOfValues("антропоморфное, похожее на аллигатора", "аллигатороподобного", "рептилия"),
+			"нос",
+			"носы",
 			Util.newArrayListOfValues(""),
 			Util.newArrayListOfValues(""),
-			"[npc.Her] nose and mouth twitch and transform as they push out into an anthropomorphic reptilian muzzle, and [npc.her] tongue transforms into a strong, alligator-like one."
-				+ "#IF(npc.getBodyMaterial()==BODY_MATERIAL_FLESH)"
-					+ " A layer of [npc.faceSkin+] quickly grows to cover [npc.her] new face"
-				+ "#ELSE"
-					+ " Just like the rest of [npc.her] body, [npc.her] new face is [npc.materialDescriptor] [npc.faceSkin+]"
-				+ "#ENDIF"
-					+ ", and as the transformation finally comes to an end, [npc.sheIs] left panting and sighing as [npc.she] [npc.verb(try)] to catch [npc.her] breath.<br/>"
-				+ "[npc.Name] now [npc.has] an anthropomorphic [style.boldAlligatorMorph(alligator-like face)], [npc.materialDescriptor] [npc.faceFullDescription]."
-				+ " Within [npc.her] [npc.mouth], [npc.sheHasFull] a [style.boldAlligatorMorph(strong, alligator-like tongue)].",
-			"[npc.SheHasFull] [npc.a_feminineDescriptor(true)], anthropomorphic, alligator-like face [npc.materialCompositionDescriptor] [npc.faceFullDescription(true)] and complete with a long, flat muzzle.",
-			"[npc.SheHasFull] the [npc.feminineDescriptor(true)] face of a feral [npc.legRace], which is [npc.materialDescriptor] [npc.faceFullDescription(true)] and complete with a long, flat muzzle.",
+			"[npc.Her] нос и рот дергаются и трансформируются, вытягиваясь в антропоморфную рептильную морду, а [npc.her] язык превращается в мощный, похожий на аллигаторийский язык.#IF(npc.getBodyMaterial()==BODY_MATERIAL_FLESH) Слой [npc.faceSkin+] быстро нарастает, покрывая [npc.her] новое лицо#ELSE Подобно остальному телу [npc.her], [npc.her] новое лицо [npc.materialDescriptor] [npc.faceSkin+]#ENDIF, и когда трансформация наконец завершается, [npc.sheIs] остается, тяжело дыша и вздыхая, пока [npc.she] [npc.verb(try)], чтобы перевести [npc.her] дух.<br/>[npc.Name] теперь [npc.has] антропоморфная [style.boldAlligatorMorph(морда, похожая на аллигаторийскую)], [npc.materialDescriptor] [npc.faceFullDescription]. Внутри [npc.her] [npc.mouth], [npc.sheHasFull] [style.boldAlligatorMorph(мощный, похожий на аллигаторийский язык)].",
+			"[npc.SheHasFull] [npc.a_feminineDescriptor(true)], антропоморфная, аллигаторийская морда, [npc.materialCompositionDescriptor] [npc.faceFullDescription(true)] с длинной плоской мордой.",
+			"[npc.SheHasFull] [npc.feminineDescriptor(true)] лицо дикого [npc.legRace], которое представляет собой [npc.materialDescriptor] [npc.faceFullDescription(true)] с длинной плоской мордой.",
 			Util.newArrayListOfValues(
 					BodyPartTag.FACE_MUZZLE,
 					BodyPartTag.FACE_FANGS,
@@ -117,23 +97,15 @@ public class FaceType {
 			MouthType.BAT_MORPH,
 			null,
 			null,
-			Util.newArrayListOfValues("anthropomorphic bat-like", "bat-like"),
-			Util.newArrayListOfValues("anthropomorphic bat-like", "bat-like"),
-			"nose",
-			"noses",
+			Util.newArrayListOfValues("антропоморфный, похожий на летучую мышь", "похожими на крылья летучей мыши"),
+			Util.newArrayListOfValues("антропоморфный, похожий на летучую мышь", "похожими на крылья летучей мыши"),
+			"нос",
+			"носы",
 			Util.newArrayListOfValues(""),
 			Util.newArrayListOfValues(""),
-			"[npc.Her] nose and mouth twitch and transform as they push out into an anthropomorphic bat-like muzzle, and [npc.her] tongue transforms into a thin, bat-like one."
-				+ "#IF(npc.getBodyMaterial()==BODY_MATERIAL_FLESH)"
-					+ " A layer of [npc.faceSkin+] quickly grows to cover [npc.her] new face"
-				+ "#ELSE"
-					+ " Just like the rest of [npc.her] body, [npc.her] new face is [npc.materialDescriptor] [npc.faceSkin+]"
-				+ "#ENDIF"
-					+ ", and as the transformation finally comes to an end, [npc.sheIs] left panting and sighing as [npc.she] [npc.verb(try)] to catch [npc.her] breath.<br/>"
-				+ "[npc.Name] now [npc.has] an anthropomorphic [style.boldBatMorph(bat-like face)], [npc.materialDescriptor] [npc.faceFullDescription]."
-				+ " Within [npc.her] [npc.mouth], [npc.sheHasFull] a [style.boldBatMorph(thin, bat-like tongue)].",
-			"[npc.SheHasFull] [npc.a_feminineDescriptor(true)], anthropomorphic, bat-like face [npc.materialCompositionDescriptor] [npc.faceFullDescription(true)] and complete with a short muzzle.",
-			"[npc.SheHasFull] the [npc.feminineDescriptor(true)] face of a feral [npc.legRace], which is [npc.materialDescriptor] [npc.faceFullDescription(true)] and complete with a short muzzle.",
+			"[npc.Her] нос и рот дергаются и трансформируются, вытягиваясь в антропоморфную мордочку, похожую на летучью мышь, а [npc.her] язык превращается в тонкий, как у летучей мыши. #IF(npc.getBodyMaterial()==BODY_MATERIAL_FLESH) Слой [npc.faceSkin+] быстро нарастает, покрывая [npc.her] новое лицо #ELSE Подобно остальному телу [npc.her], [npc.her] новое лицо [npc.materialDescriptor] [npc.faceSkin+] #ENDIF, и когда трансформация наконец завершается, [npc.sheIs] остается тяжело дышащей и вздыхающей, пока [npc.she] [npc.verb(try)], чтобы перевести [npc.her] дух.<br/>[npc.Name] теперь [npc.has] антропоморфным [style.boldBatMorph(лицом, похожим на морду летучей мыши)], [npc.materialDescriptor] [npc.faceFullDescription]. Внутри [npc.her] [npc.mouth], [npc.sheHasFull] [style.boldBatMorph(тонкий, как у летучей мыши язык)].",
+			"[npc.SheHasFull] [npc.a_feminineDescriptor(true)], антропоморфное лицо, похожее на морду летучей мыши, [npc.materialCompositionDescriptor] [npc.faceFullDescription(true)] с короткой мордочкой.",
+			"[npc.SheHasFull] [npc.feminineDescriptor(true)] лицо дикого [npc.legRace], которое [npc.materialDescriptor] [npc.faceFullDescription(true)] и имеет короткую мордочку.",
 			Util.newArrayListOfValues(
 					BodyPartTag.FACE_MUZZLE,
 					BodyPartTag.FACE_FANGS,
@@ -146,23 +118,15 @@ public class FaceType {
 			MouthType.CAT_MORPH,
 			null,
 			null,
-			Util.newArrayListOfValues("anthropomorphic cat-like", "cat-like", "feline"),
-			Util.newArrayListOfValues("anthropomorphic cat-like", "cat-like", "feline"),
-			"nose",
-			"noses",
+			Util.newArrayListOfValues("антропоморфное, кошачье", "кошачьими", "кошачьими"),
+			Util.newArrayListOfValues("антропоморфное, кошачье", "кошачьими", "кошачьими"),
+			"нос",
+			"носы",
 			Util.newArrayListOfValues(""),
 			Util.newArrayListOfValues(""),
-			"[npc.Her] nose and mouth twitch and transform as they push out into an anthropomorphic feline muzzle, and [npc.her] tongue flattens and transforms into a cat-like one."
-				+ "#IF(npc.getBodyMaterial()==BODY_MATERIAL_FLESH)"
-					+ " A layer of [npc.faceSkin+] quickly grows to cover [npc.her] new face"
-				+ "#ELSE"
-					+ " Just like the rest of [npc.her] body, [npc.her] new face is [npc.materialDescriptor] [npc.faceSkin+]"
-				+ "#ENDIF"
-					+ ", and as the transformation finally comes to an end, [npc.sheIs] left panting and sighing as [npc.she] [npc.verb(try)] to catch [npc.her] breath.<br/>"
-				+ "[npc.Name] now [npc.has] an anthropomorphic [style.boldCatMorph(cat-like face)], [npc.materialDescriptor] [npc.faceFullDescription]."
-				+ " Within [npc.her] [npc.mouth], [npc.sheHasFull] a [style.boldCatMorph(flat, cat-like tongue)].",
-			"[npc.SheHasFull] [npc.a_feminineDescriptor(true)], anthropomorphic, cat-like face [npc.materialCompositionDescriptor] [npc.faceFullDescription(true)] and complete with a cute little feline muzzle.",
-			"[npc.SheHasFull] the [npc.feminineDescriptor(true)] face of a feral [npc.legRace], which is [npc.materialDescriptor] [npc.faceFullDescription(true)] and complete with a cute little feline muzzle.",
+			"[npc.Her] нос и рот дергаются и трансформируются, вытягиваясь в антропоморфную кошачью морду, а [npc.her] язык уплощается и превращается в кошачий.#IF(npc.getBodyMaterial()==BODY_MATERIAL_FLESH) Слой [npc.faceSkin+] быстро разрастается, чтобы покрыть [npc.her] новое лицо#ELSE Подобно остальному телу [npc.her], [npc.her] новое лицо [npc.materialDescriptor] [npc.faceSkin+]#ENDIF, и когда трансформация наконец завершается, [npc.sheIs] остается, тяжело дыша и вздыхая, пока [npc.she] [npc.verb(try)], чтобы перевести [npc.her] дух.<br/>[npc.Name] теперь [npc.has] антропоморфным [style.boldCatMorph(кошачьим лицом)], [npc.materialDescriptor] [npc.faceFullDescription]. Внутри [npc.her] [npc.mouth], [npc.sheHasFull] [style.boldCatMorph(плоский, кошачий язык)].",
+			"[npc.SheHasFull] [npc.a_feminineDescriptor(true)], антропоморфное, кошачье лицо, [npc.materialCompositionDescriptor] [npc.faceFullDescription(true)], дополненное милой маленькой кошачьей мордочкой.",
+			"[npc.SheHasFull] [npc.feminineDescriptor(true)] лицо дикого [npc.legRace], которое [npc.materialDescriptor] [npc.faceFullDescription(true)] и дополнено милой маленькой кошачьей мордочкой.",
 			Util.newArrayListOfValues(
 					BodyPartTag.FACE_MUZZLE,
 					BodyPartTag.FACE_FANGS,
@@ -204,23 +168,15 @@ public class FaceType {
 			MouthType.COW_MORPH,
 			null,
 			null,
-			Util.newArrayListOfValues("anthropomorphic cow-like", "cow-like", "bovine"),
-			Util.newArrayListOfValues("anthropomorphic cow-like", "cow-like", "bovine"),
-			"nose",
-			"noses",
+			Util.newArrayListOfValues("антропоморфное коровье", "коровьей формы", "бычий"),
+			Util.newArrayListOfValues("антропоморфное коровье", "коровьей формы", "бычий"),
+			"нос",
+			"носы",
 			Util.newArrayListOfValues(""),
 			Util.newArrayListOfValues(""),
-			"[npc.Her] nose and mouth twitch and transform as they push out into an anthropomorphic bovine-like muzzle, and [npc.her] tongue transforms into a strong, cow-like one."
-				+ "#IF(npc.getBodyMaterial()==BODY_MATERIAL_FLESH)"
-					+ " A layer of [npc.faceSkin+] quickly grows to cover [npc.her] new face"
-				+ "#ELSE"
-					+ " Just like the rest of [npc.her] body, [npc.her] new face is [npc.materialDescriptor] [npc.faceSkin+]"
-				+ "#ENDIF"
-					+ ", and as the transformation finally comes to an end, [npc.sheIs] left panting and sighing as [npc.she] [npc.verb(try)] to catch [npc.her] breath.<br/>"
-				+ "[npc.Name] now [npc.has] an anthropomorphic [style.boldCowMorph(cow-like face)], [npc.materialDescriptor] [npc.faceFullDescription]."
-				+ " Within [npc.her] [npc.mouth], [npc.sheHasFull] a [style.boldCowMorph(strong, cow-like tongue)].",
-			"[npc.SheHasFull] [npc.a_feminineDescriptor(true)], anthropomorphic, cow-like face [npc.materialCompositionDescriptor] [npc.faceFullDescription(true)] and complete with a bovine muzzle.",
-			"[npc.SheHasFull] the [npc.feminineDescriptor(true)] face of a feral [npc.legRace], which is [npc.materialDescriptor] [npc.faceFullDescription(true)] and complete with a bovine muzzle.",
+			"[npc.Her] нос и рот дергаются и трансформируются, вытягиваясь в антропоморфную бычью морду, а [npc.her] язык превращается в мощный, коровьи язык.#IF(npc.getBodyMaterial()==BODY_MATERIAL_FLESH) Слой [npc.faceSkin+] быстро нарастает, покрывая [npc.her] новое лицо#ELSE Как и все остальное тело [npc.her], [npc.her] новое лицо [npc.materialDescriptor] [npc.faceSkin+]#ENDIF, и когда трансформация наконец завершается, [npc.sheIs] остается тяжело дышащей и вздыхающей, пока [npc.she] [npc.verb(try)], чтобы перевести [npc.her] дух.<br/>[npc.Name] теперь [npc.has] антропоморфным [style.boldCowMorph(бычьим лицом)], [npc.materialDescriptor] [npc.faceFullDescription]. Внутри [npc.her] [npc.mouth], [npc.sheHasFull] [style.boldCowMorph(сильный, коровьи язык)].",
+			"[npc.SheHasFull] [npc.a_feminineDescriptor(true)], антропоморфное, бычье лицо, [npc.materialCompositionDescriptor] [npc.faceFullDescription(true)] и с бычьей мордой.",
+			"[npc.SheHasFull] [npc.feminineDescriptor(true)] лицо дикого [npc.legRace], которое [npc.materialDescriptor] [npc.faceFullDescription(true)] и с бычьей мордой.",
 			Util.newArrayListOfValues(
 					BodyPartTag.FACE_MUZZLE,
 					BodyPartTag.FACE_NATURAL_BALDNESS_FURRY
@@ -232,23 +188,15 @@ public class FaceType {
 			MouthType.DOG_MORPH,
 			null,
 			null,
-			Util.newArrayListOfValues("anthropomorphic dog-like", "dog-like", "canine"),
-			Util.newArrayListOfValues("anthropomorphic dog-like", "dog-like", "canine"),
-			"nose",
-			"noses",
+			Util.newArrayListOfValues("антропоморфное, собакоподобное", "собачьи", "пёсьи"),
+			Util.newArrayListOfValues("антропоморфное, собакоподобное", "собачьи", "пёсьи"),
+			"нос",
+			"носы",
 			Util.newArrayListOfValues(""),
 			Util.newArrayListOfValues(""),
-			"[npc.Her] nose and mouth twitch and transform as they push out into an anthropomorphic canine muzzle, and [npc.her] tongue flattens and grows wider, turning into a dog-like one."
-				+ "#IF(npc.getBodyMaterial()==BODY_MATERIAL_FLESH)"
-					+ " A layer of [npc.faceSkin+] quickly grows to cover [npc.her] new face"
-				+ "#ELSE"
-					+ " Just like the rest of [npc.her] body, [npc.her] new face is [npc.materialDescriptor] [npc.faceSkin+]"
-				+ "#ENDIF"
-					+ ", and as the transformation finally comes to an end, [npc.sheIs] left panting and sighing as [npc.she] [npc.verb(try)] to catch [npc.her] breath.<br/>"
-				+ "[npc.Name] now [npc.has] an anthropomorphic [style.boldDogMorph(dog-like face)], [npc.materialDescriptor] [npc.faceFullDescription]."
-				+ " Within [npc.her] [npc.mouth], [npc.sheHasFull] a [style.boldDogMorph(flat, dog-like tongue)].",
-			"[npc.SheHasFull] [npc.a_feminineDescriptor(true)], anthropomorphic, dog-like face [npc.materialCompositionDescriptor] [npc.faceFullDescription(true)] and complete with a canine muzzle.",
-			"[npc.SheHasFull] the [npc.feminineDescriptor(true)] face of a feral [npc.legRace], which is [npc.materialDescriptor] [npc.faceFullDescription(true)] and complete with a canine muzzle.",
+			"[npc.Her] нос и рот дергаются и трансформируются, вытягиваясь в антропоморфную собачью морду, а [npc.her] язык расплющивается и становится шире, превращаясь в собачий.#IF(npc.getBodyMaterial()==BODY_MATERIAL_FLESH) Слой [npc.faceSkin+] быстро нарастает, покрывая [npc.her] новое лицо#ELSE Как и все остальное тело [npc.her], [npc.her] новое лицо — это [npc.materialDescriptor] [npc.faceSkin+]#ENDIF, и когда трансформация наконец завершается, [npc.sheIs] остается тяжело дышащей и вздыхающей, пока [npc.she] [npc.verb(try)], чтобы перевести [npc.her] дух.<br/>[npc.Name] теперь [npc.has] антропоморфным [style.boldDogMorph(собачьим лицом)], [npc.materialDescriptor] [npc.faceFullDescription]. Внутри [npc.her] [npc.mouth], [npc.sheHasFull] [style.boldDogMorph(плоский, собачий язык)].",
+			"[npc.SheHasFull] [npc.a_feminineDescriptor(true)], антропоморфное, собачье лицо, [npc.materialCompositionDescriptor] [npc.faceFullDescription(true)] и с полностью сформированной собачьей мордой.",
+			"[npc.SheHasFull] [npc.feminineDescriptor(true)] лицо дикого [npc.legRace], которое является [npc.materialDescriptor] [npc.faceFullDescription(true)] и имеет полностью сформированную собачью морду.",
 			Util.newArrayListOfValues(
 					BodyPartTag.FACE_MUZZLE,
 					BodyPartTag.FACE_FANGS,
@@ -261,23 +209,15 @@ public class FaceType {
 			MouthType.FOX_MORPH,
 			null,
 			null,
-			Util.newArrayListOfValues("anthropomorphic fox-like", "fox-like"),
-			Util.newArrayListOfValues("anthropomorphic fox-like", "fox-like"),
-			"nose",
-			"noses",
+			Util.newArrayListOfValues("антропоморфное лисье", "лисоподобные"),
+			Util.newArrayListOfValues("антропоморфное лисье", "лисоподобные"),
+			"нос",
+			"носы",
 			Util.newArrayListOfValues(""),
 			Util.newArrayListOfValues(""),
-			"[npc.Her] nose and mouth twitch and transform as they push out into an anthropomorphic vulpine muzzle, and [npc.her] tongue flattens and transforms into a fox-like one."
-				+ "#IF(npc.getBodyMaterial()==BODY_MATERIAL_FLESH)"
-					+ " A layer of [npc.faceSkin+] quickly grows to cover [npc.her] new face"
-				+ "#ELSE"
-					+ " Just like the rest of [npc.her] body, [npc.her] new face is [npc.materialDescriptor] [npc.faceSkin+]"
-				+ "#ENDIF"
-					+ ", and as the transformation finally comes to an end, [npc.sheIs] left panting and sighing as [npc.she] [npc.verb(try)] to catch [npc.her] breath.<br/>"
-				+ "[npc.Name] now [npc.has] an anthropomorphic [style.boldFoxMorph(fox-like face)], [npc.materialDescriptor] [npc.faceFullDescription]."
-				+ " Within [npc.her] [npc.mouth], [npc.sheHasFull] a [style.boldFoxMorph(flat, fox-like tongue)].",
-			"[npc.SheHasFull] [npc.a_feminineDescriptor(true)], anthropomorphic, fox-like face [npc.materialCompositionDescriptor] [npc.faceFullDescription(true)] and complete with a slender, vulpine muzzle.",
-			"[npc.SheHasFull] the [npc.feminineDescriptor(true)] face of a feral [npc.legRace], which is [npc.materialDescriptor] [npc.faceFullDescription(true)] and complete with a slender, vulpine muzzle.",
+			"[npc.Her] нос и рот дергаются и трансформируются, вытягиваясь в антропоморфную лисью морду, а [npc.her] язык расплющивается и превращается в лисий.#IF(npc.getBodyMaterial()==BODY_MATERIAL_FLESH) Слой [npc.faceSkin+] быстро нарастает, покрывая [npc.her] новое лицо#ELSE Подобно остальному телу [npc.her], [npc.her] новое лицо [npc.materialDescriptor] [npc.faceSkin+]#ENDIF, и когда трансформация наконец завершается, [npc.sheIs] остается тяжело дышащей и вздыхающей, пока [npc.she] [npc.verb(try)], чтобы перевести [npc.her] дух.<br/>[npc.Name] теперь [npc.has] антропоморфное [style.boldFoxMorph(лисье лицо)], [npc.materialDescriptor] [npc.faceFullDescription]. Внутри [npc.her] [npc.mouth], [npc.sheHasFull] [style.boldFoxMorph(плоский, лисий язык)].",
+			"[npc.SheHasFull] [npc.a_feminineDescriptor(true)], антропоморфное лисье лицо, [npc.materialCompositionDescriptor] [npc.faceFullDescription(true)], дополненное изящной лисьей мордочкой.",
+			"[npc.SheHasFull] [npc.feminineDescriptor(true)] лицо дикой [npc.legRace], которое [npc.materialDescriptor] [npc.faceFullDescription(true)] и дополнено изящной лисьей мордочкой.",
 			Util.newArrayListOfValues(
 					BodyPartTag.FACE_MUZZLE,
 					BodyPartTag.FACE_FANGS,
@@ -290,25 +230,15 @@ public class FaceType {
 			MouthType.HARPY,
 			null,
 			null,
-			Util.newArrayListOfValues("anthropomorphic bird-like", "bird-like"),
-			Util.newArrayListOfValues("anthropomorphic bird-like", "bird-like"),
-			"nose",
-			"noses",
+			Util.newArrayListOfValues("антропоморфное птицеподобное", "птичьи"),
+			Util.newArrayListOfValues("антропоморфное птицеподобное", "птичьи"),
+			"нос",
+			"носы",
 			Util.newArrayListOfValues(""),
 			Util.newArrayListOfValues(""),
-			"[npc.Her] nose and mouth twitch and transform as they fuse together and push out into a short beak, and [npc.her] tongue thins down, turning into a bird-like one."
-				+ "#IF(npc.getBodyMaterial()==BODY_MATERIAL_FLESH)"
-					+ " A layer of [npc.faceSkin+] quickly grows to cover [npc.her] new face,"
-				+ "#ELSE"
-					+ " Just like the rest of [npc.her] body, [npc.her] new face is [npc.materialDescriptor] [npc.faceSkin+],"
-				+ "#ENDIF"
-					+ " and as the transformation finally comes to an end, [npc.sheIs] left panting and sighing as [npc.she] [npc.verb(try)] to catch [npc.her] breath."
-				+ " [npc.She] [npc.verb(find)], much to [npc.her] relief, that [npc.sheIs] able to harden or soften the edges of [npc.her] beak at will,"
-					+ " allowing [npc.herHim] to portray facial emotions as well as to wrap [npc.her] beak's edges around anything [npc.she] might want to put in [npc.her] mouth.<br/>"
-				+ "[npc.Name] now [npc.has] an anthropomorphic [style.boldHarpy(bird-like face)], [npc.materialDescriptor] [npc.faceFullDescription]."
-				+ " Within [npc.her] [npc.mouth], [npc.sheHasFull] a [style.boldHarpy(thin, bird-like tongue)].",
-			"[npc.SheHasFull] [npc.a_feminineDescriptor(true)], anthropomorphic, bird-like face [npc.materialCompositionDescriptor] [npc.faceFullDescription(true)] and complete with a beak.",
-			"[npc.SheHasFull] the [npc.feminineDescriptor(true)] face of a feral [npc.legRace], which is [npc.materialDescriptor] [npc.faceFullDescription(true)] and complete with a beak.",
+			"[npc.Her] нос и рот дергаются и трансформируются, сливаясь воедино и вытягиваясь в короткий клюв, а [npc.her] язык истончается, становясь птичьим.#IF(npc.getBodyMaterial()==BODY_MATERIAL_FLESH) Слой [npc.faceSkin+] быстро нарастает, покрывая [npc.her] новое лицо,#ELSE Подобно остальному телу [npc.her], новое лицо [npc.her] [npc.materialDescriptor] [npc.faceSkin+],#ENDIF и когда трансформация наконец завершается, [npc.sheIs] остается тяжело дышащей и вздыхающей, пока [npc.she] [npc.verb(try)], чтобы перевести [npc.her] дух. [npc.She] [npc.verb(find)], к огромному облегчению [npc.her], что [npc.sheIs] может по своему желанию делать края [npc.her] клюва тверже или мягче, что позволяет [npc.herHim] выражать мимику, а также обхватывать краями [npc.her] клюва всё, что [npc.she] захочет засунуть в [npc.her] рот.<br/>[npc.Name] теперь [npc.has] антропоморфная [style.boldHarpy(птичье лицо)], [npc.materialDescriptor] [npc.faceFullDescription]. Внутри [npc.her] [npc.mouth], [npc.sheHasFull] [style.boldHarpy(тонкий, птичий язык)].",
+			"[npc.SheHasFull] [npc.a_feminineDescriptor(true)], антропоморфное, птичье лицо, [npc.materialCompositionDescriptor] [npc.faceFullDescription(true)], дополненное клювом.",
+			"[npc.SheHasFull] [npc.feminineDescriptor(true)] морда дикого [npc.legRace], которая является [npc.materialDescriptor] [npc.faceFullDescription(true)] и снабжена клювом.",
 			Util.newArrayListOfValues(
 					BodyPartTag.FACE_BEAK,
 					BodyPartTag.FACE_NATURAL_BALDNESS_AVIAN
@@ -320,23 +250,15 @@ public class FaceType {
 			MouthType.HORSE_MORPH,
 			null,
 			null,
-			Util.newArrayListOfValues("anthropomorphic horse-like", "horse-like", "equine"),
-			Util.newArrayListOfValues("anthropomorphic horse-like", "horse-like", "equine"),
-			"nose",
-			"noses",
+			Util.newArrayListOfValues("антропоморфно-лошадиной", "лошадиный", "лошадиный"),
+			Util.newArrayListOfValues("антропоморфно-лошадиной", "лошадиный", "лошадиный"),
+			"нос",
+			"носы",
 			Util.newArrayListOfValues(""),
 			Util.newArrayListOfValues(""),
-			"[npc.Her] nose and mouth twitch and transform as they push out into an anthropomorphic equine muzzle, and [npc.her] tongue transforms into a strong, horse-like one."
-				+ "#IF(npc.getBodyMaterial()==BODY_MATERIAL_FLESH)"
-					+ " A layer of [npc.faceSkin+] quickly grows to cover [npc.her] new face"
-				+ "#ELSE"
-					+ " Just like the rest of [npc.her] body, [npc.her] new face is [npc.materialDescriptor] [npc.faceSkin+]"
-				+ "#ENDIF"
-					+ ", and as the transformation finally comes to an end, [npc.sheIs] left panting and sighing as [npc.she] [npc.verb(try)] to catch [npc.her] breath.<br/>"
-				+ "[npc.Name] now [npc.has] an anthropomorphic [style.boldHorseMorph(horse-like face)], [npc.materialDescriptor] [npc.faceFullDescription]."
-				+ " Within [npc.her] [npc.mouth], [npc.sheHasFull] a [style.boldHorseMorph(strong, horse-like tongue)].",
-			"[npc.SheHasFull] [npc.a_feminineDescriptor(true)], anthropomorphic, horse-like face [npc.materialCompositionDescriptor] [npc.faceFullDescription(true)] and complete with a long, equine muzzle.",
-			"[npc.SheHasFull] the [npc.feminineDescriptor(true)] face of a feral [npc.legRace], which is [npc.materialDescriptor] [npc.faceFullDescription(true)] and complete with a long, equine muzzle.",
+			"[npc.Her] нос и рот дергаются и трансформируются, выпячиваясь в антропоморфную лошадиную морду, а [npc.her] язык превращается в мощный, лошадиный.#IF(npc.getBodyMaterial()==BODY_MATERIAL_FLESH) Слой [npc.faceSkin+] быстро нарастает, покрывая [npc.her] новое лицо#ELSE Подобно остальной части тела [npc.her], [npc.her] новое лицо является [npc.materialDescriptor] [npc.faceSkin+]#ENDIF, и когда трансформация наконец завершается, [npc.sheIs] остается тяжело дышащей и вздыхающей, пока [npc.she] [npc.verb(try)], чтобы перевести [npc.her] дух.<br/>[npc.Name] теперь [npc.has] антропоморфной [style.boldHorseMorph(лошадиной мордой)], [npc.materialDescriptor] [npc.faceFullDescription]. Внутри [npc.her] [npc.mouth], [npc.sheHasFull] [style.boldHorseMorph(сильный, лошадиный язык)].",
+			"[npc.SheHasFull] [npc.a_feminineDescriptor(true)], антропоморфная, лошадиная морда [npc.materialCompositionDescriptor] [npc.faceFullDescription(true)] и снабженная длинной лошадиной мордой.",
+			"[npc.SheHasFull] [npc.feminineDescriptor(true)] морда дикого [npc.legRace], которая является [npc.materialDescriptor] [npc.faceFullDescription(true)] и снабжена длинной лошадиной мордой.",
 			Util.newArrayListOfValues(
 					BodyPartTag.FACE_MUZZLE,
 					BodyPartTag.FACE_NATURAL_BALDNESS_FURRY // Note: Some horse races only have hair on the neck aka a mane so its not totally unnatural to have a bald face
@@ -348,23 +270,15 @@ public class FaceType {
 			MouthType.RABBIT_MORPH,
 			null,
 			null,
-			Util.newArrayListOfValues("anthropomorphic rabbit-like", "rabbit-like"),
-			Util.newArrayListOfValues("anthropomorphic rabbit-like", "rabbit-like"),
-			"nose",
-			"noses",
+			Util.newArrayListOfValues("антропоморфная заячья", "кроличьими"),
+			Util.newArrayListOfValues("антропоморфная заячья", "кроличьими"),
+			"нос",
+			"носы",
 			Util.newArrayListOfValues(""),
 			Util.newArrayListOfValues(""),
-			"[npc.Her] nose and mouth twitch and transform as they push out into an anthropomorphic rabbit-like muzzle, and [npc.her] tongue transforms into a thin, rabbit-like one."
-				+ "#IF(npc.getBodyMaterial()==BODY_MATERIAL_FLESH)"
-					+ " A layer of [npc.faceSkin+] quickly grows to cover [npc.her] new face"
-				+ "#ELSE"
-					+ " Just like the rest of [npc.her] body, [npc.her] new face is [npc.materialDescriptor] [npc.faceSkin+]"
-				+ "#ENDIF"
-					+ ", and as the transformation finally comes to an end, [npc.sheIs] left panting and sighing as [npc.she] [npc.verb(try)] to catch [npc.her] breath.<br/>"
-				+ "[npc.Name] now [npc.has] an anthropomorphic [style.boldRabbitMorph(rabbit-like face)], [npc.materialDescriptor] [npc.faceFullDescription]."
-				+ " Within [npc.her] [npc.mouth], [npc.sheHasFull] a [style.boldRabbitMorph(thin, rabbit-like tongue)].",
-			"[npc.SheHasFull] [npc.a_feminineDescriptor(true)], anthropomorphic, rabbit-like face [npc.materialCompositionDescriptor] [npc.faceFullDescription(true)] and complete with a short muzzle.",
-			"[npc.SheHasFull] the [npc.feminineDescriptor(true)] face of a feral [npc.legRace], which is [npc.materialDescriptor] [npc.faceFullDescription(true)] and complete with a short muzzle.",
+			"[npc.Her] нос и рот дергаются и трансформируются, вытягиваясь в антропоморфную заячью мордочку, а [npc.her] язык превращается в тонкий, заячий.#IF(npc.getBodyMaterial()==BODY_MATERIAL_FLESH) Слой [npc.faceSkin+] быстро нарастает, покрывая [npc.her] новое лицо#ELSE Подобно остальному телу [npc.her], [npc.her] новое лицо — [npc.materialDescriptor] [npc.faceSkin+]#ENDIF, и когда трансформация наконец завершается, [npc.sheIs] остается тяжело дышащей и вздыхающей, пока [npc.she] [npc.verb(try)], чтобы перевести [npc.her] дух.<br/>[npc.Name] теперь [npc.has] антропоморфным [style.boldRabbitMorph(заячьим лицом)], [npc.materialDescriptor] [npc.faceFullDescription]. Внутри [npc.her] [npc.mouth], [npc.sheHasFull] [style.boldRabbitMorph(тонкий, заячий язык)].",
+			"[npc.SheHasFull] [npc.a_feminineDescriptor(true)], антропоморфное заячье лицо, [npc.materialCompositionDescriptor] [npc.faceFullDescription(true)], дополненное короткой мордочкой.",
+			"[npc.SheHasFull] [npc.feminineDescriptor(true)] лицо дикого [npc.legRace], которое [npc.materialDescriptor] [npc.faceFullDescription(true)] и имеет короткую мордочку.",
 			Util.newArrayListOfValues(
 					BodyPartTag.FACE_MUZZLE,
 					BodyPartTag.FACE_NATURAL_BALDNESS_FURRY
@@ -376,23 +290,15 @@ public class FaceType {
 			MouthType.RAT_MORPH,
 			null,
 			null,
-			Util.newArrayListOfValues("anthropomorphic rat-like", "rat-like", "rodent"),
-			Util.newArrayListOfValues("anthropomorphic rat-like", "rat-like", "rodent"),
-			"nose",
-			"noses",
+			Util.newArrayListOfValues("антропоморфная крысиная", "крысиные", "грызуний"),
+			Util.newArrayListOfValues("антропоморфная крысиная", "крысиные", "грызуний"),
+			"нос",
+			"носы",
 			Util.newArrayListOfValues(""),
 			Util.newArrayListOfValues(""),
-			"[npc.Her] nose and mouth twitch and transform as they push out into an anthropomorphic rat-like muzzle, and [npc.her] tongue transforms into a thin, rat-like one."
-				+ "#IF(npc.getBodyMaterial()==BODY_MATERIAL_FLESH)"
-					+ " A layer of [npc.faceSkin+] quickly grows to cover [npc.her] new face"
-				+ "#ELSE"
-					+ " Just like the rest of [npc.her] body, [npc.her] new face is [npc.materialDescriptor] [npc.faceSkin+]"
-				+ "#ENDIF"
-					+ ", and as the transformation finally comes to an end, [npc.sheIs] left panting and sighing as [npc.she] [npc.verb(try)] to catch [npc.her] breath.<br/>"
-				+ "[npc.Name] now [npc.has] an anthropomorphic [style.boldRatMorph(rat-like face)], [npc.materialDescriptor] [npc.faceFullDescription]."
-				+ " Within [npc.her] [npc.mouth], [npc.sheHasFull] a [style.boldRatMorph(thin, rat-like tongue)].",
-			"[npc.SheHasFull] [npc.a_feminineDescriptor(true)], anthropomorphic, rat-like face [npc.materialCompositionDescriptor] [npc.faceFullDescription(true)] and complete with a long, rodent muzzle.",
-			"[npc.SheHasFull] the [npc.feminineDescriptor(true)] face of a feral [npc.legRace], which is [npc.materialDescriptor] [npc.faceFullDescription(true)] and complete with a long, rodent muzzle.",
+			"[npc.Her] нос и рот дергаются и трансформируются, вытягиваясь в антропоморфную крысиную морду, а [npc.her] язык превращается в тонкий, крысиный язык.#IF(npc.getBodyMaterial()==BODY_MATERIAL_FLESH) Слой [npc.faceSkin+] быстро нарастает, покрывая [npc.her] новое лицо#ELSE Подобно остальному телу [npc.her], [npc.her] новое лицо [npc.materialDescriptor] [npc.faceSkin+]#ENDIF, и когда трансформация наконец завершается, [npc.sheIs] остается, тяжело дыша и вздыхая, пока [npc.she] [npc.verb(try)], чтобы перевести [npc.her] дух.<br/>[npc.Name] теперь [npc.has] антропоморфная [style.boldRatMorph(крысиная морда)], [npc.materialDescriptor] [npc.faceFullDescription]. Внутри [npc.her] [npc.mouth], [npc.sheHasFull] [style.boldRatMorph(тонкий, крысиный язык)].",
+			"[npc.SheHasFull] [npc.a_feminineDescriptor(true)], антропоморфное крысиное лицо, [npc.materialCompositionDescriptor] [npc.faceFullDescription(true)] с длинной грызуньей мордой.",
+			"[npc.SheHasFull] [npc.feminineDescriptor(true)] лицо дикого [npc.legRace], которое [npc.materialDescriptor] [npc.faceFullDescription(true)] и представляет собой длинную грызунью морду.",
 			Util.newArrayListOfValues(
 					BodyPartTag.FACE_MUZZLE,
 					BodyPartTag.FACE_NATURAL_BALDNESS_FURRY
@@ -404,23 +310,15 @@ public class FaceType {
 			MouthType.REINDEER_MORPH,
 			null,
 			null,
-			Util.newArrayListOfValues("anthropomorphic reindeer-like", "reindeer-like", "reindeer"),
-			Util.newArrayListOfValues("anthropomorphic reindeer-like", "reindeer-like", "reindeer"),
-			"nose",
-			"noses",
+			Util.newArrayListOfValues("антропоморфное, похожее на оленье", "похожих на оленьи", "оленьей шерсти"),
+			Util.newArrayListOfValues("антропоморфное, похожее на оленье", "похожих на оленьи", "оленьей шерсти"),
+			"нос",
+			"носы",
 			Util.newArrayListOfValues(""),
 			Util.newArrayListOfValues(""),
-			"[npc.Her] nose and mouth twitch and transform as they push out into an anthropomorphic reindeer muzzle, and [npc.her] tongue transforms into a strong, reindeer-like one."
-				+ "#IF(npc.getBodyMaterial()==BODY_MATERIAL_FLESH)"
-					+ " A layer of [npc.faceSkin+] quickly grows to cover [npc.her] new face"
-				+ "#ELSE"
-					+ " Just like the rest of [npc.her] body, [npc.her] new face is [npc.materialDescriptor] [npc.faceSkin+]"
-				+ "#ENDIF"
-					+ ", and as the transformation finally comes to an end, [npc.sheIs] left panting and sighing as [npc.she] [npc.verb(try)] to catch [npc.her] breath.<br/>"
-				+ "[npc.Name] now [npc.has] an anthropomorphic [style.boldReindeerMorph(horse-reindeer face)], [npc.materialDescriptor] [npc.faceFullDescription]."
-				+ " Within [npc.her] [npc.mouth], [npc.sheHasFull] a [style.boldReindeerMorph(strong, reindeer-like tongue)].",
-			"[npc.SheHasFull] [npc.a_feminineDescriptor(true)], anthropomorphic, reindeer-like face [npc.materialCompositionDescriptor] [npc.faceFullDescription(true)] and complete with a long muzzle.",
-			"[npc.SheHasFull] the [npc.feminineDescriptor(true)] face of a feral [npc.legRace], which is [npc.materialDescriptor] [npc.faceFullDescription(true)] and complete with a long muzzle.",
+			"[npc.Her] нос и рот дергаются и трансформируются, вытягиваясь в антропоморфную оленью морду, а [npc.her] язык превращается в мощный, похожий на олений язык.#IF(npc.getBodyMaterial()==BODY_MATERIAL_FLESH) Слой [npc.faceSkin+] быстро нарастает, покрывая [npc.her] новое лицо#ELSE Подобно остальному телу [npc.her], [npc.her] новое лицо [npc.materialDescriptor] [npc.faceSkin+]#ENDIF, и когда трансформация наконец завершается, [npc.sheIs] остается тяжело дышащей и вздыхающей, пока [npc.she] [npc.verb(try)], чтобы перевести [npc.her] дух.<br/>[npc.Name] теперь [npc.has] антропоморфная [style.boldReindeerMorph(лошадино-оленья морда)], [npc.materialDescriptor] [npc.faceFullDescription]. Внутри [npc.her] [npc.mouth], [npc.sheHasFull] [style.boldReindeerMorph(сильный, олений язык)].",
+			"[npc.SheHasFull] [npc.a_feminineDescriptor(true)], антропоморфное, оленье лицо, [npc.materialCompositionDescriptor] [npc.faceFullDescription(true)] и с длинной мордой.",
+			"[npc.SheHasFull] [npc.feminineDescriptor(true)] лицо дикого [npc.legRace], которое [npc.materialDescriptor] [npc.faceFullDescription(true)] и с длинной мордой.",
 			Util.newArrayListOfValues(
 					BodyPartTag.FACE_MUZZLE,
 					BodyPartTag.FACE_NATURAL_BALDNESS_FURRY
@@ -432,23 +330,15 @@ public class FaceType {
 			MouthType.SQUIRREL_MORPH,
 			null,
 			null,
-			Util.newArrayListOfValues("anthropomorphic squirrel-like", "squirrel-like", "rodent"),
-			Util.newArrayListOfValues("anthropomorphic squirrel-like", "squirrel-like", "rodent"),
-			"nose",
-			"noses",
+			Util.newArrayListOfValues("антропоморфное, похожее на беличье", "беличьи", "грызуний"),
+			Util.newArrayListOfValues("антропоморфное, похожее на беличье", "беличьи", "грызуний"),
+			"нос",
+			"носы",
 			Util.newArrayListOfValues(""),
 			Util.newArrayListOfValues(""),
-			"[npc.Her] nose and mouth twitch and transform as they push out into an anthropomorphic squirrel-like muzzle, and [npc.her] tongue transforms into a thin, squirrel-like one."
-				+ "#IF(npc.getBodyMaterial()==BODY_MATERIAL_FLESH)"
-					+ " A layer of [npc.faceSkin+] quickly grows to cover [npc.her] new face"
-				+ "#ELSE"
-					+ " Just like the rest of [npc.her] body, [npc.her] new face is [npc.materialDescriptor] [npc.faceSkin+]"
-				+ "#ENDIF"
-					+ ", and as the transformation finally comes to an end, [npc.sheIs] left panting and sighing as [npc.she] [npc.verb(try)] to catch [npc.her] breath.<br/>"
-				+ "[npc.Name] now [npc.has] an anthropomorphic [style.boldSquirrelMorph(squirrel-like face)], [npc.materialDescriptor] [npc.faceFullDescription]."
-				+ " Within [npc.her] [npc.mouth], [npc.sheHasFull] a [style.boldSquirrelMorph(thin, squirrel-like tongue)].",
-			"[npc.SheHasFull] [npc.a_feminineDescriptor(true)], anthropomorphic, squirrel-like face [npc.materialCompositionDescriptor] [npc.faceFullDescription(true)] and complete with a short muzzle.",
-			"[npc.SheHasFull] the [npc.feminineDescriptor(true)] face of a feral [npc.legRace], which is [npc.materialDescriptor] [npc.faceFullDescription(true)] and complete with a short muzzle.",
+			"[npc.Her] нос и рот дергаются и трансформируются, вытягиваясь в антропоморфную беличью мордочку, а [npc.her] язык превращается в тонкий, как у белки.#IF(npc.getBodyMaterial()==BODY_MATERIAL_FLESH) Слой [npc.faceSkin+] быстро нарастает, покрывая [npc.her] новое лицо#ELSE Как и все остальное тело [npc.her], [npc.her] новое лицо — [npc.materialDescriptor] [npc.faceSkin+]#ENDIF, и когда трансформация наконец завершается, [npc.sheIs] остается тяжело дышащей и вздыхающей, пока [npc.she] [npc.verb(try)], чтобы перевести [npc.her] дух.<br/>[npc.Name] теперь [npc.has] антропоморфная [style.boldSquirrelMorph(беличья мордочка)], [npc.materialDescriptor] [npc.faceFullDescription]. Внутри [npc.her] [npc.mouth], [npc.sheHasFull] [style.boldSquirrelMorph(тонкий, беличий язык)].",
+			"[npc.SheHasFull] [npc.a_feminineDescriptor(true)], антропоморфная беличья мордочка, [npc.materialCompositionDescriptor] [npc.faceFullDescription(true)], дополненная короткой мордочкой.",
+			"[npc.SheHasFull] [npc.feminineDescriptor(true)] лицо дикого [npc.legRace], которое [npc.materialDescriptor] [npc.faceFullDescription(true)] и имеет короткую мордочку.",
 			Util.newArrayListOfValues(
 					BodyPartTag.FACE_MUZZLE,
 					BodyPartTag.FACE_NATURAL_BALDNESS_FURRY
@@ -460,23 +350,15 @@ public class FaceType {
 			MouthType.WOLF_MORPH,
 			null,
 			null,
-			Util.newArrayListOfValues("anthropomorphic wolf-like", "wolf-like"),
-			Util.newArrayListOfValues("anthropomorphic wolf-like", "wolf-like"),
-			"nose",
-			"noses",
+			Util.newArrayListOfValues("антропоморфная волчья", "волчьими"),
+			Util.newArrayListOfValues("антропоморфная волчья", "волчьими"),
+			"нос",
+			"носы",
 			Util.newArrayListOfValues(""),
 			Util.newArrayListOfValues(""),
-			"[npc.Her] nose and mouth twitch and transform as they push out into an anthropomorphic lupine muzzle, and [npc.her] tongue flattens and grows wider, turning into a wolf-like one."
-				+ "#IF(npc.getBodyMaterial()==BODY_MATERIAL_FLESH)"
-					+ " A layer of [npc.faceSkin+] quickly grows to cover [npc.her] new face"
-				+ "#ELSE"
-					+ " Just like the rest of [npc.her] body, [npc.her] new face is [npc.materialDescriptor] [npc.faceSkin+]"
-				+ "#ENDIF"
-					+ ", and as the transformation finally comes to an end, [npc.sheIs] left panting and sighing as [npc.she] [npc.verb(try)] to catch [npc.her] breath.<br/>"
-				+ "[npc.Name] now [npc.has] an anthropomorphic [style.boldWolfMorph(wolf-like face)], [npc.materialDescriptor] [npc.faceFullDescription]."
-				+ " Within [npc.her] [npc.mouth], [npc.sheHasFull] a [style.boldWolfMorph(flat, wolf-like tongue)].",
-			"[npc.SheHasFull] [npc.a_feminineDescriptor(true)], anthropomorphic, wolf-like face [npc.materialCompositionDescriptor] [npc.faceFullDescription(true)] and complete with a long muzzle.",
-			"[npc.SheHasFull] the [npc.feminineDescriptor(true)] face of a feral [npc.legRace], which is [npc.materialDescriptor] [npc.faceFullDescription(true)] and complete with a long muzzle.",
+			"[npc.Her] нос и рот дергаются и трансформируются, вытягиваясь в антропоморфную волчью морду, а [npc.her] язык расплющивается и становится шире, превращаясь в волчий.#IF(npc.getBodyMaterial()==BODY_MATERIAL_FLESH) Слой [npc.faceSkin+] быстро нарастает, покрывая [npc.her] новое лицо#ELSE Подобно остальному телу [npc.her], [npc.her] новое лицо [npc.materialDescriptor] [npc.faceSkin+]#ENDIF, и когда трансформация наконец завершается, [npc.sheIs] остается тяжело дышать и вздыхать, пока [npc.she] [npc.verb(try)], чтобы перевести [npc.her] дух.<br/>[npc.Name] теперь [npc.has] антропоморфным [style.boldWolfMorph(волчьим лицом)], [npc.materialDescriptor] [npc.faceFullDescription]. Внутри [npc.her] [npc.mouth], [npc.sheHasFull] виден [style.boldWolfMorph(плоский, волчий язык)].",
+			"[npc.SheHasFull] [npc.a_feminineDescriptor(true)], антропоморфное волчье лицо, [npc.materialCompositionDescriptor] [npc.faceFullDescription(true)], дополненное длинной мордой.",
+			"[npc.SheHasFull] [npc.feminineDescriptor(true)] лицо дикого [npc.legRace], которое [npc.materialDescriptor] [npc.faceFullDescription(true)] и с длинной мордой.",
 			Util.newArrayListOfValues(
 					BodyPartTag.FACE_MUZZLE,
 					BodyPartTag.FACE_FANGS,
@@ -494,7 +376,7 @@ public class FaceType {
 
 		// Modded types:
 		
-		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/race", "bodyParts", null);
+		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/раса", "bodyParts", null);
 		for(Entry<String, Map<String, File>> entry : moddedFilesMap.entrySet()) {
 			for(Entry<String, File> innerEntry : entry.getValue().entrySet()) {
 				if(Util.getXmlRootElementName(innerEntry.getValue()).equals("face")) {

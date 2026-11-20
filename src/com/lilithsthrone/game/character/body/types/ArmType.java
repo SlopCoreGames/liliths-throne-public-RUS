@@ -27,335 +27,272 @@ public class ArmType {
 
 	public static AbstractArmType HUMAN = new AbstractArmType(BodyCoveringType.HUMAN,
 			Race.HUMAN,
-			"arm",
-			"arms",
+			"рука",
+			"руки",
 			Util.newArrayListOfValues(""),
 			Util.newArrayListOfValues(""),
-			"hand",
-			"hands",
+			"кисть",
+			"кисти",
 			Util.newArrayListOfValues(""),
-			Util.newArrayListOfValues("soft", "feminine"),
-			"finger",
-			"fingers",
+			Util.newArrayListOfValues("мягкий", "женственная"),
+			"палец",
+			"пальцы",
 			Util.newArrayListOfValues(""),
-			Util.newArrayListOfValues("soft", "feminine"),
-			"Thankfully, the transformation only lasts a matter of moments, leaving [npc.herHim] with normal-looking human arms, complete with human hands.<br/>"
-				+ "[npc.Name] now [npc.has] [style.boldHuman(human arms and hands)], which are [npc.materialDescriptor] [npc.armFullDescription].",
-			"[npc.She] [npc.has] [npc.armRows] normal human arms and hands, which are [npc.materialCompositionDescriptor] [npc.armFullDescription(true)].") {
+			Util.newArrayListOfValues("мягкий", "женственная"),
+			"К счастью, трансформация длится всего мгновение, оставляя [npc.herHim] с обычными на вид человеческими руками и кистями.<br/>[npc.Name] теперь [npc.has] [style.boldHuman(человеческие руки и кисти)], которые [npc.materialDescriptor] [npc.armFullDescription].",
+			"[npc.She] [npc.has] [npc.armRows] обычные человеческие руки и кисти, которые [npc.materialCompositionDescriptor] [npc.armFullDescription(true)].") {
 	};
 
 	public static AbstractArmType ANGEL = new AbstractArmType(BodyCoveringType.HUMAN,
 			Race.ANGEL,
-			"arm",
-			"arms",
-			Util.newArrayListOfValues("delicate"),
-			Util.newArrayListOfValues("delicate"),
-			"hand",
-			"hands",
-			Util.newArrayListOfValues("delicate", "soft"),
-			Util.newArrayListOfValues("delicate", "soft", "feminine"),
-			"finger",
-			"fingers",
-			Util.newArrayListOfValues("delicate", "soft"),
-			Util.newArrayListOfValues("delicate", "soft", "feminine"),
-			"Within a matter of moments, they've changed into slender, human-like arms, complete with human-like hands."
-				+ " Despite their somewhat-normal appearance, they have a subtle, alluring quality to them that reveals their true angelic nature.<br/>"
-				+ "[npc.Name] now [npc.has] [style.boldAngel(angelic arms and hands)], which are [npc.materialDescriptor] [npc.armFullDescription]",
-			"[npc.She] [npc.has] [npc.armRows] human-like arms and hands, which are [npc.materialCompositionDescriptor] [npc.armFullDescription(true)].") {
+			"рука",
+			"руки",
+			Util.newArrayListOfValues("хрупкая"),
+			Util.newArrayListOfValues("хрупкая"),
+			"кисть",
+			"кисти",
+			Util.newArrayListOfValues("хрупкая", "мягкий"),
+			Util.newArrayListOfValues("хрупкая", "мягкий", "женственная"),
+			"палец",
+			"пальцы",
+			Util.newArrayListOfValues("хрупкая", "мягкий"),
+			Util.newArrayListOfValues("хрупкая", "мягкий", "женственная"),
+			"Всего за мгновение они превратились в изящные, похожие на человеческие руки с человеческими кистями. Несмотря на их почти обычный вид, в них чувствуется едва уловимое, манящее очарование, выдающее их истинную ангельскую природу.<br/>[npc.Name] теперь [npc.has] [style.boldAngel(ангельские руки и кисти)], которые [npc.materialDescriptor] [npc.armFullDescription]",
+			"[npc.She] [npc.has] [npc.armRows] похожие на человеческие руки и кисти, которые [npc.materialCompositionDescriptor] [npc.armFullDescription(true)].") {
 	};
 
 	public static AbstractArmType DEMON_COMMON = new AbstractArmType(BodyCoveringType.DEMON_COMMON,
 			Race.DEMON,
-			"arm",
-			"arms",
-			Util.newArrayListOfValues("flawless"),
-			Util.newArrayListOfValues("flawless"),
-			"hand",
-			"hands",
+			"рука",
+			"руки",
+			Util.newArrayListOfValues("безупречны"),
+			Util.newArrayListOfValues("безупречны"),
+			"кисть",
+			"кисти",
 			Util.newArrayListOfValues(""),
-			Util.newArrayListOfValues("delicate", "soft", "feminine"),
-			"finger",
-			"fingers",
+			Util.newArrayListOfValues("хрупкая", "мягкий", "женственная"),
+			"палец",
+			"пальцы",
 			Util.newArrayListOfValues(""),
-			Util.newArrayListOfValues("delicate", "soft", "feminine"),
-			"Within a matter of moments, they've changed into slender, human-like arms, complete with human-like hands."
-				+ " Despite their somewhat-normal appearance, they have a subtle, alluring quality to them that reveals their true demonic nature.<br/>"
-				+ "[npc.Name] now [npc.has] [style.boldDemon(demonic arms and hands)], which are [npc.materialDescriptor] [npc.armFullDescription].",
-			"[npc.She] [npc.has] [npc.armRows] slender human-looking arms and hands, which are [npc.materialCompositionDescriptor] [npc.armFullDescription(true)].") {
+			Util.newArrayListOfValues("хрупкая", "мягкий", "женственная"),
+			"Всего за мгновение они превратились в изящные, похожие на человеческие руки с человеческими кистями. Несмотря на их почти обычный вид, в них чувствуется едва уловимое, манящее очарование, выдающее их истинную демоническую природу.<br/>[npc.Name] теперь [npc.has] [style.boldDemon(демонические руки и кисти)], которые [npc.materialDescriptor] [npc.armFullDescription].",
+			"[npc.She] [npc.has] [npc.armRows] стройные человекоподобные руки и кисти, которые являются [npc.materialCompositionDescriptor] [npc.armFullDescription(true)].") {
 	};
 
 	public static AbstractArmType COW_MORPH = new AbstractArmType(BodyCoveringType.BOVINE_FUR,
 			Race.COW_MORPH,
-			"arm",
-			"arms",
-			Util.newArrayListOfValues("furry", "fur-coated"),
-			Util.newArrayListOfValues("furry", "fur-coated"),
-			"hand",
-			"hands",
-			Util.newArrayListOfValues("bovine"),
-			Util.newArrayListOfValues("feminine", "bovine"),
-			"finger",
-			"fingers",
-			Util.newArrayListOfValues("bovine"),
-			Util.newArrayListOfValues("feminine", "bovine"),
-			"Within a matter of moments, a layer of [npc.armFullDescription] has quickly grown over them, and, looking down,"
-					+ " [npc.she] [npc.verb(see)] [npc.her] new hair growing over the backs of [npc.her] hands as tough, hoof-like nails push out in place of regular, human-like ones."
-				+ " Despite their appearance, [npc.sheIsFull] relieved to discover that [npc.her] hands have lost none of their dexterity."
-				+ " As the transformation comes to an end, [npc.she] [npc.verb(see)] that at [npc.her] upper-biceps, [npc.her] hair smoothly transitions into the [npc.skin] that's covering the rest of [npc.her] body.<br/>"
-				+ "[npc.NameIsFull] left with anthropomorphic, [style.boldCowMorph(cow-like arms and hands)], which are [npc.materialDescriptor] [npc.armFullDescription].",
-			"[npc.She] [npc.has] [npc.armRows] arms, which are [npc.materialCompositionDescriptor] [npc.armFullDescription(true)]."
-				+ " [npc.Her] hands, while human in shape, have tough little hoof-like nails.") {
+			"рука",
+			"руки",
+			Util.newArrayListOfValues("пушистая", "покрытая мехом"),
+			Util.newArrayListOfValues("пушистая", "покрытая мехом"),
+			"кисть",
+			"кисти",
+			Util.newArrayListOfValues("бычий"),
+			Util.newArrayListOfValues("женственная", "бычий"),
+			"палец",
+			"пальцы",
+			Util.newArrayListOfValues("бычий"),
+			Util.newArrayListOfValues("женственная", "бычий"),
+			"Всего за несколько мгновений их покрыл слой [npc.armFullDescription], и, взглянув вниз, [npc.she] [npc.verb(see)] [npc.her] новые волосы, растущие на тыльной стороне [npc.her] рук, в то время как вместо обычных человеческих ногтей пробиваются жесткие, похожие на копыта. Несмотря на их внешний вид, [npc.sheIsFull] с облегчением обнаружили, что [npc.her] руки не утратили своей ловкости. По мере завершения трансформации, [npc.she] [npc.verb(see)], что у [npc.her] верхней части бицепса [npc.her] волосы плавно переходят в [npc.skin], покрывающий остальную часть [npc.her] тела.<br/>[npc.NameIsFull] остались с антропоморфными, [style.boldCowMorph(коровьими руками и кистями)], которые были [npc.materialDescriptor] [npc.armFullDescription].",
+			"[npc.She] [npc.has] [npc.armRows] руки, которые являются [npc.materialCompositionDescriptor] [npc.armFullDescription(true)]. [npc.Her] кисти, хотя и сохраняют человеческую форму, имеют жесткие маленькие копытообразные ногти.") {
 	};
 
 	public static AbstractArmType DOG_MORPH = new AbstractArmType(BodyCoveringType.CANINE_FUR,
 			Race.DOG_MORPH,
-			"arm",
-			"arms",
-			Util.newArrayListOfValues("furry", "fur-coated"),
-			Util.newArrayListOfValues("furry", "fur-coated"),
-			"hand",
-			"hands",
-			Util.newArrayListOfValues("dog-like", "paw-like", "furry", "canine"),
-			Util.newArrayListOfValues("soft", "feminine", "dog-like", "paw-like", "furry", "canine"),
-			"finger",
-			"fingers",
-			Util.newArrayListOfValues("padded", "canine"),
-			Util.newArrayListOfValues("soft", "feminine", "padded", "canine"),
-			"Within a matter of moments, a layer of [npc.armFullDescription] has quickly grown over them, and, looking down,"
-					+ " [npc.she] [npc.verb(see)] [npc.her] new fur growing over the backs of [npc.her] hands as blunt, dog-like claws push out to replace [npc.her] fingernails."
-				+ " [npc.Her] palms rapidly transform to be [npc.materialDescriptor] little leathery pads, and at [npc.her] upper-biceps, [npc.her] fur smoothly transitions into the [npc.skin] that's covering the rest of [npc.her] body.<br/>"
-				+ "As the transformation comes to an end, [npc.nameIsFull] left with anthropomorphic, [style.boldDogMorph(dog-like arms and hands)], which are [npc.materialDescriptor] [npc.armFullDescription].",
-			"[npc.She] [npc.has] [npc.armRows] arms, which are [npc.materialCompositionDescriptor] [npc.armFullDescription(true)]."
-				+ " [npc.Her] hands are formed into anthropomorphic, dog-like hands, complete with little blunt claws and leathery pads.") {
+			"рука",
+			"руки",
+			Util.newArrayListOfValues("пушистая", "покрытая мехом"),
+			Util.newArrayListOfValues("пушистая", "покрытая мехом"),
+			"кисть",
+			"кисти",
+			Util.newArrayListOfValues("собачьи", "похожая на лапу", "пушистая", "пёсьи"),
+			Util.newArrayListOfValues("мягкий", "женственная", "собачьи", "похожая на лапу", "пушистая", "пёсьи"),
+			"палец",
+			"пальцы",
+			Util.newArrayListOfValues("пышный", "пёсьи"),
+			Util.newArrayListOfValues("мягкий", "женственная", "пышный", "пёсьи"),
+			"Всего за мгновение их покрыл слой [npc.armFullDescription], и, взглянув вниз, [npc.she] [npc.verb(see)] [npc.her] новый мех на спинах [npc.her] рук, пока тупые собачьи когти прорываются наружу, заменяя [npc.her] ногти. [npc.Her] ладони стремительно превращаются в [npc.materialDescriptor] маленькие кожистые подушечки, а на [npc.her] верхней части бицепса [npc.her] мех плавно переходит в [npc.skin], покрывающий остальное тело [npc.her].<br/>Когда трансформация завершается, [npc.nameIsFull] остаются с антропоморфными, [style.boldDogMorph(собачьими руками и кистями)], которые являются [npc.materialDescriptor] [npc.armFullDescription].",
+			"[npc.She] [npc.has] [npc.armRows] руки, которые являются [npc.materialCompositionDescriptor] [npc.armFullDescription(true)]. [npc.Her] кисти превратились в антропоморфные, собачьи лапы, снабженные маленькими тупыми когтями и кожистыми подушечками.") {
 	};
 
 	public static AbstractArmType WOLF_MORPH = new AbstractArmType(BodyCoveringType.LYCAN_FUR,
 			Race.WOLF_MORPH,
-			"arm",
-			"arms",
-			Util.newArrayListOfValues("furry", "fur-coated"),
-			Util.newArrayListOfValues("furry", "fur-coated"),
-			"hand",
-			"hands",
-			Util.newArrayListOfValues("wolf-like", "furry", "paw-like"),
-			Util.newArrayListOfValues("soft", "feminine", "wolf-like", "furry", "paw-like"),
-			"finger",
-			"fingers",
-			Util.newArrayListOfValues("padded", "wolf-like"),
-			Util.newArrayListOfValues("soft", "feminine", "padded", "wolf-like"),
-			"Within a matter of moments, a layer of [npc.armFullDescription] has quickly grown over them, and, looking down,"
-					+ " [npc.she] [npc.verb(see)] [npc.her] new fur growing over the backs of [npc.her] hands as sharp claws push out to replace [npc.her] fingernails."
-				+ " [npc.Her] palms rapidly transform to be [npc.materialDescriptor] tough leathery pads, and at [npc.her] upper-biceps, [npc.her] fur smoothly transitions into the [npc.skin] that's covering the rest of [npc.her] body.<br/>"
-				+ "As the transformation comes to an end, [npc.nameIsFull] left with anthropomorphic, [style.boldWolfMorph(wolf-like arms and hands)], which are [npc.materialDescriptor] [npc.armFullDescription].",
-			"[npc.She] [npc.has] [npc.armRows] arms, which are [npc.materialCompositionDescriptor] [npc.armFullDescription(true)]."
-				+ " [npc.Her] hands are formed into anthropomorphic, wolf-like hands, complete with sharp claws and tough leathery pads.") {
+			"рука",
+			"руки",
+			Util.newArrayListOfValues("пушистая", "покрытая мехом"),
+			Util.newArrayListOfValues("пушистая", "покрытая мехом"),
+			"кисть",
+			"кисти",
+			Util.newArrayListOfValues("волчьими", "пушистая", "похожая на лапу"),
+			Util.newArrayListOfValues("мягкий", "женственная", "волчьими", "пушистая", "похожая на лапу"),
+			"палец",
+			"пальцы",
+			Util.newArrayListOfValues("пышный", "волчьими"),
+			Util.newArrayListOfValues("мягкий", "женственная", "пышный", "волчьими"),
+			"Всего за мгновение их [npc.armFullDescription] быстро покрылся слоем шерсти, и, глядя вниз, можно было увидеть, как [npc.she] [npc.verb(see)] [npc.her] новый мех на спинах [npc.her] рук, а острые когти пробиваются наружу, заменяя [npc.her] ногти. [npc.Her] ладони стремительно превращаются в [npc.materialDescriptor] грубые кожистые подушечки, а на [npc.her] верхней части бицепсов [npc.her] мех плавно переходит в [npc.skin], покрывающий остальное тело [npc.her].<br/>Когда трансформация завершается, [npc.nameIsFull] остаются антропоморфными, [style.boldWolfMorph(волчьими руками и кистями)], которые являются [npc.materialDescriptor] [npc.armFullDescription].",
+			"[npc.She] [npc.has] [npc.armRows] руки, которые являются [npc.materialCompositionDescriptor] [npc.armFullDescription(true)]. [npc.Her] кисти превратились в антропоморфные, волчьи лапы с острыми когтями и грубыми кожистыми подушечками.") {
 	};
 
 	public static AbstractArmType FOX_MORPH = new AbstractArmType(BodyCoveringType.FOX_FUR,
 			Race.FOX_MORPH,
-			"arm",
-			"arms",
-			Util.newArrayListOfValues("furry", "fur-coated"),
-			Util.newArrayListOfValues("furry", "fur-coated"),
-			"hand",
-			"hands",
-			Util.newArrayListOfValues("fox-like", "furry", "paw-like"),
-			Util.newArrayListOfValues("soft", "feminine", "fox-like", "furry", "paw-like"),
-			"finger",
-			"fingers",
-			Util.newArrayListOfValues("padded", "fox-like"),
-			Util.newArrayListOfValues("soft", "feminine", "padded", "fox-like"),
-			"Within a matter of moments, a layer of [npc.armFullDescription] has quickly grown over them, and, looking down,"
-					+ " [npc.she] [npc.verb(see)] [npc.her] new fur growing over the backs of [npc.her] hands as sharp claws push out to replace [npc.her] fingernails."
-				+ " [npc.Her] palms rapidly transform to be [npc.materialDescriptor] little pads, and at [npc.her] upper-biceps, [npc.her] fur smoothly transitions into the [npc.skin] that's covering the rest of [npc.her] body.</br>"
-				+ "As the transformation comes to an end, [npc.nameIsFull] left with anthropomorphic, [style.boldFoxMorph(fox-like arms and hands)], which are [npc.materialDescriptor] [npc.armFullDescription].",
-			"[npc.She] [npc.has] [npc.armRows] arms, which are [npc.materialCompositionDescriptor] [npc.armFullDescription(true)]."
-				+ " [npc.Her] hands are formed into anthropomorphic, fox-like hands, complete with sharp claws and tough leathery pads.") {
+			"рука",
+			"руки",
+			Util.newArrayListOfValues("пушистая", "покрытая мехом"),
+			Util.newArrayListOfValues("пушистая", "покрытая мехом"),
+			"кисть",
+			"кисти",
+			Util.newArrayListOfValues("лисоподобные", "пушистая", "похожая на лапу"),
+			Util.newArrayListOfValues("мягкий", "женственная", "лисоподобные", "пушистая", "похожая на лапу"),
+			"палец",
+			"пальцы",
+			Util.newArrayListOfValues("пышный", "лисоподобные"),
+			Util.newArrayListOfValues("мягкий", "женственная", "пышный", "лисоподобные"),
+			"Всего за мгновение их [npc.armFullDescription] покрылся слоем [npc.she], который [npc.verb(see)] [npc.her] новый мех на спинах [npc.her] рук, а острые когти прорезают [npc.her] ногти. [npc.Her] ладони стремительно превращаются в [npc.materialDescriptor] небольшие подушечки, а на [npc.her] верхней части бицепса [npc.her] мех плавно переходит в [npc.skin], покрывающий остальное [npc.her] тела.</br>Когда трансформация завершается, [npc.nameIsFull] остаются антропоморфными, [style.boldFoxMorph(лисоподобными руками и кистями)], которые являются [npc.materialDescriptor] [npc.armFullDescription].",
+			"[npc.She] [npc.has] [npc.armRows] руки, которые являются [npc.materialCompositionDescriptor] [npc.armFullDescription(true)]. [npc.Her] кисти превращаются в антропоморфные, лисоподобные лапы с острыми когтями и жесткими кожаными подушечками.") {
 	};
 
 	public static AbstractArmType CAT_MORPH = new AbstractArmType(BodyCoveringType.FELINE_FUR,
 			Race.CAT_MORPH,
-			"arm",
-			"arms",
-			Util.newArrayListOfValues("furry", "fur-coated"),
-			Util.newArrayListOfValues("furry", "fur-coated"),
-			"hand",
-			"hands",
-			Util.newArrayListOfValues("soft", "delicate", "cat-like", "paw-like", "furry", "feline"),
-			Util.newArrayListOfValues("soft", "feminine", "cat-like", "paw-like", "furry", "feline"),
-			"finger",
-			"fingers",
-			Util.newArrayListOfValues("soft", "delicate", "padded", "feline"),
-			Util.newArrayListOfValues("soft", "feminine", "padded", "feline"),
-			"Within a matter of moments, a layer of [npc.armFullDescription] has quickly grown over them, and, looking down,"
-					+ " [npc.she] [npc.verb(see)] [npc.her] fur growing over the backs of [npc.her] hands as sharp, retractable claws push out to replace [npc.her] fingernails."
-				+ " [npc.Her] palms rapidly transform to be [npc.materialDescriptor] little pink pads, and at [npc.her] upper-biceps, [npc.her] fur smoothly transitions into the [npc.skin] that's covering the rest of [npc.her] body.<br/>"
-				+ "As the transformation comes to an end, [npc.nameIsFull] left with anthropomorphic, [style.boldCatMorph(cat-like arms and hands)], which are [npc.materialDescriptor] [npc.armFullDescription].",
-			"[npc.She] [npc.has] [npc.armRows] arms, which are [npc.materialCompositionDescriptor] [npc.armFullDescription(true)]."
-				+ " [npc.Her] hands are formed into anthropomorphic, cat-like hands, complete with retractable claws and pink pads.") {
+			"рука",
+			"руки",
+			Util.newArrayListOfValues("пушистая", "покрытая мехом"),
+			Util.newArrayListOfValues("пушистая", "покрытая мехом"),
+			"кисть",
+			"кисти",
+			Util.newArrayListOfValues("мягкий", "хрупкая", "кошачьими", "похожая на лапу", "пушистая", "кошачьими"),
+			Util.newArrayListOfValues("мягкий", "женственная", "кошачьими", "похожая на лапу", "пушистая", "кошачьими"),
+			"палец",
+			"пальцы",
+			Util.newArrayListOfValues("мягкий", "хрупкая", "пышный", "кошачьими"),
+			Util.newArrayListOfValues("мягкий", "женственная", "пышный", "кошачьими"),
+			"Всего за мгновение их [npc.armFullDescription] быстро покрылся слоем [npc.she], [npc.verb(see)] [npc.her] мехом на спинах [npc.her] рук, в то время как острые втягивающиеся когти пробивались сквозь [npc.her] ногти. [npc.Her] ладони стремительно превращались в [npc.materialDescriptor] маленькие розовые подушечки, а на [npc.her] верхней части бицепса [npc.her] мех плавно переходил в [npc.skin], покрывающий остальное тело [npc.her].<br/>Когда трансформация завершается, [npc.nameIsFull] остаются с антропоморфными, [style.boldCatMorph(кошачьими руками и кистями)], которые являются [npc.materialDescriptor] [npc.armFullDescription].",
+			"[npc.She] [npc.has] [npc.armRows] руки, которые являются [npc.materialCompositionDescriptor] [npc.armFullDescription(true)]. [npc.Her] кисти превратились в антропоморфные, кошачьи лапы, снабженные втягивающимися когтями и розовыми подушечками.") {
 	};
 
 	public static AbstractArmType HORSE_MORPH = new AbstractArmType(BodyCoveringType.HORSE_HAIR,
 			Race.HORSE_MORPH,
-			"arm",
-			"arms",
-			Util.newArrayListOfValues("hair-coated"),
-			Util.newArrayListOfValues("hair-coated"),
-			"hand",
-			"hands",
-			Util.newArrayListOfValues("equine"),
-			Util.newArrayListOfValues("feminine", "equine"),
-			"finger",
-			"fingers",
-			Util.newArrayListOfValues("equine"),
-			Util.newArrayListOfValues("feminine", "equine"),
-			"Within a matter of moments, a layer of [npc.armFullDescription] has quickly grown over them, and, looking down,"
-					+ " [npc.she] [npc.verb(see)] [npc.her] new hair growing over the backs of [npc.her] hands as tough, hoof-like nails push out in place of regular, human-like ones."
-				+ " Despite their appearance, [npc.sheIs] relieved to discover that [npc.her] hands have lost none of their dexterity."
-				+ " As the transformation comes to an end, [npc.she] [npc.verb(see)] that at [npc.her] upper-biceps, [npc.her] hair smoothly transitions into the [npc.skin] that's covering the rest of [npc.her] body.<br/>"
-				+ "[npc.NameIsFull] left with anthropomorphic, [style.boldHorseMorph(horse-like arms and hands)], which are [npc.materialDescriptor] [npc.armFullDescription].",
-			"[npc.She] [npc.has] [npc.armRows] arms, which are [npc.materialCompositionDescriptor] [npc.armFullDescription(true)]."
-				+ " [npc.Her] hands, while human in shape, have tough little hoof-like nails.") {
+			"рука",
+			"руки",
+			Util.newArrayListOfValues("поросший волосами"),
+			Util.newArrayListOfValues("поросший волосами"),
+			"кисть",
+			"кисти",
+			Util.newArrayListOfValues("лошадиный"),
+			Util.newArrayListOfValues("женственная", "лошадиный"),
+			"палец",
+			"пальцы",
+			Util.newArrayListOfValues("лошадиный"),
+			Util.newArrayListOfValues("женственная", "лошадиный"),
+			"Всего за несколько мгновений их покрыл слой [npc.armFullDescription], и, взглянув вниз, [npc.she] [npc.verb(see)] [npc.her] новый волос, растущий на тыльной стороне [npc.her] рук, в то время как вместо обычных человеческих ногтей пробиваются жесткие, похожие на копыта. Несмотря на их внешний вид, [npc.sheIs] с облегчением обнаружили, что [npc.her] руки не утратили своей ловкости. По мере завершения трансформации, [npc.she] [npc.verb(see)], что у [npc.her] верхней части бицепса [npc.her] волос плавно переходит в [npc.skin], покрывающий остальную часть [npc.her] тела.<br/>[npc.NameIsFull] остались с антропоморфными, [style.boldHorseMorph(лошадиными руками и кистями)], которые были [npc.materialDescriptor] [npc.armFullDescription].",
+			"[npc.She] [npc.has] [npc.armRows] руки, которые являются [npc.materialCompositionDescriptor] [npc.armFullDescription(true)]. [npc.Her] кисти, хотя и сохраняют человеческую форму, имеют жесткие маленькие копытообразные ногти.") {
 	};
 
 	public static AbstractArmType REINDEER_MORPH = new AbstractArmType(BodyCoveringType.REINDEER_FUR,
 			Race.REINDEER_MORPH,
-			"arm",
-			"arms",
-			Util.newArrayListOfValues("hair-coated"),
-			Util.newArrayListOfValues("hair-coated"),
-			"hand",
-			"hands",
-			Util.newArrayListOfValues("reindeer"),
-			Util.newArrayListOfValues("feminine", "reindeer"),
-			"finger",
-			"fingers",
-			Util.newArrayListOfValues("reindeer"),
-			Util.newArrayListOfValues("feminine", "reindeer"),
-			"Within a matter of moments, a layer of [npc.armFullDescription] has quickly grown over them, and, looking down,"
-					+ " [npc.she] [npc.verb(see)] [npc.her] new fur growing over the backs of [npc.her] hands as tough, hoof-like nails push out in place of regular, human-like ones."
-				+ " Despite their appearance, [npc.sheIs] relieved to discover that [npc.her] hands have lost none of their dexterity."
-				+ " As the transformation comes to an end, [npc.she] [npc.verb(see)] that at [npc.her] upper-biceps, [npc.her] fur smoothly transitions into the [npc.skin] that's covering the rest of [npc.her] body.<br/>"
-				+ "[npc.NameIsFull] left with anthropomorphic, [style.boldReindeerMorph(reindeer-like arms and hands)], which are [npc.materialDescriptor] [npc.armFullDescription].",
-			"[npc.She] [npc.has] [npc.armRows] arms, which are [npc.materialCompositionDescriptor] [npc.armFullDescription(true)]."
-				+ " [npc.Her] hands, while human in shape, have tough little hoof-like nails.") {
+			"рука",
+			"руки",
+			Util.newArrayListOfValues("поросший волосами"),
+			Util.newArrayListOfValues("поросший волосами"),
+			"кисть",
+			"кисти",
+			Util.newArrayListOfValues("оленьи"),
+			Util.newArrayListOfValues("женственная", "оленьи"),
+			"палец",
+			"пальцы",
+			Util.newArrayListOfValues("оленьей шерсти"),
+			Util.newArrayListOfValues("женственная", "оленьей шерсти"),
+			"Всего за мгновение их покрыл слой [npc.armFullDescription], и, взглянув вниз, [npc.she] [npc.verb(see)] [npc.her] новый мех на спинах [npc.her] рук, в то время как вместо обычных человеческих ногтей прорезались жесткие, похожие на копыта. Несмотря на их вид, [npc.sheIs] с облегчением обнаружили, что [npc.her] руки не утратили своей ловкости. Когда трансформация подходит к концу, [npc.she] [npc.verb(see)], что у [npc.her] верхней части бицепсов [npc.her] мех плавно переходит в [npc.skin], покрывающий остальное тело [npc.her].<br/>[npc.NameIsFull] остались с антропоморфными, [style.boldReindeerMorph(оленьими руками и кистями)], которые были [npc.materialDescriptor] [npc.armFullDescription].",
+			"[npc.She] [npc.has] [npc.armRows] руки, которые являются [npc.materialCompositionDescriptor] [npc.armFullDescription(true)]. [npc.Her] кисти, хотя и сохраняют человеческую форму, имеют жесткие маленькие копытообразные ногти.") {
 	};
 
 	public static AbstractArmType ALLIGATOR_MORPH = new AbstractArmType(BodyCoveringType.ALLIGATOR_SCALES,
 			Race.ALLIGATOR_MORPH,
-			"arm",
-			"arms",
-			Util.newArrayListOfValues("scaled", "reptile-like"),
-			Util.newArrayListOfValues("scaled", "reptile-like"),
-			"hand",
-			"hands",
-			Util.newArrayListOfValues("scaled"),
-			Util.newArrayListOfValues("feminine", "scaled"),
-			"finger",
-			"fingers",
-			Util.newArrayListOfValues("scaled"),
-			Util.newArrayListOfValues("feminine", "scaled"),
-			"Within a matter of moments, a layer of [npc.armFullDescription] has quickly grown over them, and, looking down,"
-				+ " [npc.she] [npc.verb(see)] [npc.her] new scales growing over the backs of [npc.her] hands as sharp claws push out to replace [npc.her] fingernails."
-				+ " [npc.Her] palms rapidly transform to be [npc.materialDescriptor] little scales, and at [npc.her] upper-biceps, [npc.her] scales smoothly transitions into the [npc.skin] that's covering the rest of [npc.her] body.<br/>"
-				+ "As the transformation comes to an end, [npc.nameIsFull] left with anthropomorphic, [style.boldGatorMorph(alligator-like arms and hands)], which are [npc.materialDescriptor] [npc.armFullDescription].",
-			"[npc.She] [npc.has] [npc.armRows] arms, which are [npc.materialCompositionDescriptor] [npc.armFullDescription(true)]."
-				+ " [npc.Her] hands are formed into anthropomorphic, alligator-like hands, complete with little claws.") {
+			"рука",
+			"руки",
+			Util.newArrayListOfValues("твои", "рептилоидный"),
+			Util.newArrayListOfValues("твои", "рептилоподобными"),
+			"кисть",
+			"кисти",
+			Util.newArrayListOfValues("твои"),
+			Util.newArrayListOfValues("женственная", "твои"),
+			"палец",
+			"пальцы",
+			Util.newArrayListOfValues("твои"),
+			Util.newArrayListOfValues("женственная", "твои"),
+			"Всего за мгновение их покрыл слой [npc.armFullDescription], и, если посмотреть вниз, [npc.she] [npc.verb(see)] [npc.her] новые чешуйки, растущие на спинах [npc.her] рук, пока острые когти прорываются наружу, заменяя [npc.her] ногти. [npc.Her] ладони стремительно превращаются в [npc.materialDescriptor] мелкую чешую, а на [npc.her] верхней части бицепсов [npc.her] чешуя плавно переходит в [npc.skin], покрывающую остальную часть [npc.her] тела.<br/>Когда трансформация завершается, [npc.nameIsFull] остаются антропоморфными, [style.boldGatorMorph(аллигатороподобными руками и кистями)], которые являются [npc.materialDescriptor] [npc.armFullDescription].",
+			"[npc.She] [npc.has] [npc.armRows] руки, которые являются [npc.materialCompositionDescriptor] [npc.armFullDescription(true)]. [npc.Her] кисти превратились в антропоморфные, аллигатороподобные ладони с маленькими когтями.") {
 	};
 
 	public static AbstractArmType SQUIRREL_MORPH = new AbstractArmType(BodyCoveringType.SQUIRREL_FUR,
 			Race.SQUIRREL_MORPH,
-			"arm",
-			"arms",
-			Util.newArrayListOfValues("furry", "fur-coated"),
-			Util.newArrayListOfValues("furry", "fur-coated"),
-			"hand",
-			"hands",
-			Util.newArrayListOfValues("soft", "squirrel-like", "claw-like", "furry", "rodent"),
-			Util.newArrayListOfValues("soft", "feminine", "squirrel-like", "claw-like", "furry", "rodent"),
-			"finger",
-			"fingers",
-			Util.newArrayListOfValues("soft", "clawed", "rodent"),
-			Util.newArrayListOfValues("soft", "feminine", "clawed", "rodent"),
-			"Within a matter of moments, a layer of [npc.armFullDescription] has quickly grown over them, and, looking down,"
-					+ " [npc.she] [npc.verb(see)] [npc.her] new fur growing over the backs of [npc.her] hands as sharp little claws push out to replace [npc.her] fingernails."
-				+ " [npc.Her] palms rapidly transform to be [npc.materialDescriptor] little pink pads, and at [npc.her] upper-biceps, [npc.her] fur smoothly transitions into the [npc.skin] that's covering the rest of [npc.her] body.<br/>"
-				+ "As the transformation comes to an end, [npc.nameIsFull] left with anthropomorphic, [style.boldSquirrelMorph(squirrel-like arms and hands)], which are [npc.materialDescriptor] [npc.armFullDescription].",
-			"[npc.She] [npc.has] [npc.armRows] arms, which are [npc.materialCompositionDescriptor] [npc.armFullDescription(true)]."
-				+ " [npc.Her] hands are formed into anthropomorphic, squirrel-like hands, complete with claws.") {
+			"рука",
+			"руки",
+			Util.newArrayListOfValues("пушистая", "покрытая мехом"),
+			Util.newArrayListOfValues("пушистая", "покрытая мехом"),
+			"кисть",
+			"кисти",
+			Util.newArrayListOfValues("мягкий", "беличьи", "когтеобразный", "пушистая", "грызуний"),
+			Util.newArrayListOfValues("мягкий", "женственная", "беличьи", "когтеобразный", "пушистая", "грызуний"),
+			"палец",
+			"пальцы",
+			Util.newArrayListOfValues("мягкий", "когтистые", "грызуний"),
+			Util.newArrayListOfValues("мягкий", "женственная", "когтистые", "грызуний"),
+			"Всего за мгновение их [npc.armFullDescription] быстро покрылся слоем шерсти, и, глядя вниз, можно было увидеть, как [npc.she] [npc.verb(see)] [npc.her] новый мех на спинах [npc.her] рук, а острые маленькие коготки пробиваются наружу, заменяя [npc.her] ногти. [npc.Her] ладони стремительно превращаются в [npc.materialDescriptor] маленькие розовые подушечки, а на [npc.her] верхней части бицепса [npc.her] мех плавно переходит в [npc.skin], покрывающий остальное тело [npc.her].<br/>Когда трансформация завершается, [npc.nameIsFull] остаются антропоморфными, [style.boldSquirrelMorph(беличьими руками и кистями)], которые являются [npc.materialDescriptor] [npc.armFullDescription].",
+			"[npc.She] [npc.has] [npc.armRows] руки, которые являются [npc.materialCompositionDescriptor] [npc.armFullDescription(true)]. [npc.Her] кисти превратились в антропоморфные, беличьи лапки с когтями.") {
 	};
 
 	public static AbstractArmType RAT_MORPH = new AbstractArmType(BodyCoveringType.RAT_FUR,
 			Race.RAT_MORPH,
-			"arm",
-			"arms",
-			Util.newArrayListOfValues("furry", "fur-coated"),
-			Util.newArrayListOfValues("furry", "fur-coated"),
-			"hand",
-			"hands",
-			Util.newArrayListOfValues("soft", "rat-like", "claw-like", "furry", "rodent"),
-			Util.newArrayListOfValues("soft", "feminine", "rat-like", "claw-like", "furry", "rodent"),
-			"finger",
-			"fingers",
-			Util.newArrayListOfValues("soft", "rat-like", "claw-like", "furry", "rodent"),
-			Util.newArrayListOfValues("soft", "feminine", "rat-like", "claw-like", "furry", "rodent"),
-			"Within a matter of moments, a layer of [npc.armFullDescription] has quickly grown over them, and, looking down,"
-					+ " [npc.she] [npc.verb(see)] [npc.her] fur growing over the backs of [npc.her] hands as sharp little claws push out to replace [npc.her] fingernails."
-				+ " [npc.Her] palms rapidly transform to be [npc.materialDescriptor] little pink pads, and at [npc.her] upper-biceps, [npc.her] new fur smoothly transitions into the [npc.skin] that's covering the rest of [npc.her] body.<br/>"
-				+ "As the transformation comes to an end, [npc.nameIsFull] left with anthropomorphic, [style.boldRatMorph(rat-like arms and hands)], which are [npc.materialDescriptor] [npc.armFullDescription].",
-			"[npc.She] [npc.has] [npc.armRows] arms, which are [npc.materialCompositionDescriptor] [npc.armFullDescription(true)]."
-				+ " [npc.Her] hands are formed into anthropomorphic, rat-like hands, complete with claws.") {
+			"рука",
+			"руки",
+			Util.newArrayListOfValues("пушистая", "покрытая мехом"),
+			Util.newArrayListOfValues("пушистая", "покрытая мехом"),
+			"кисть",
+			"кисти",
+			Util.newArrayListOfValues("мягкий", "крысиные", "когтеобразный", "пушистая", "грызуний"),
+			Util.newArrayListOfValues("мягкий", "женственная", "крысиные", "когтеобразный", "пушистая", "грызуний"),
+			"палец",
+			"пальцы",
+			Util.newArrayListOfValues("мягкий", "крысиные", "когтеобразный", "пушистая", "грызуний"),
+			Util.newArrayListOfValues("мягкий", "женственная", "крысиные", "когтеобразный", "пушистая", "грызуний"),
+			"Всего за мгновение их [npc.armFullDescription] быстро покрылся слоем шерсти, и, глядя вниз, можно было увидеть, как [npc.she] [npc.verb(see)] [npc.her] мех прорастает на спинах [npc.her] рук, а острые маленькие когти пробиваются наружу, заменяя [npc.her] ногти. [npc.Her] ладони стремительно превращаются в [npc.materialDescriptor] маленькие розовые подушечки, а у [npc.her] верхней части бицепсов [npc.her] новый мех плавно переходит в [npc.skin], покрывающий остальное тело [npc.her].<br/>Когда трансформация завершается, [npc.nameIsFull] остаются антропоморфными, [style.boldRatMorph(крысоподобными руками и кистями)], которые являются [npc.materialDescriptor] [npc.armFullDescription].",
+			"[npc.She] [npc.has] [npc.armRows] руки, которые являются [npc.materialCompositionDescriptor] [npc.armFullDescription(true)]. [npc.Her] кисти превратились в антропоморфные, крысоподобные лапы с когтями.") {
 	};
 
 	public static AbstractArmType RABBIT_MORPH = new AbstractArmType(BodyCoveringType.RABBIT_FUR,
 			Race.RABBIT_MORPH,
-			"arm",
-			"arms",
-			Util.newArrayListOfValues("furry", "fur-coated"),
-			Util.newArrayListOfValues("furry", "fur-coated"),
-			"hand",
-			"hands",
-			Util.newArrayListOfValues("rabbit-like", "paw-like", "furry"),
-			Util.newArrayListOfValues("soft", "feminine", "rabbit-like", "paw-like", "furry"),
-			"finger",
-			"fingers",
-			Util.newArrayListOfValues("rabbit-like", "paw-like", "furry"),
-			Util.newArrayListOfValues("soft", "feminine", "rabbit-like", "paw-like", "furry"),
-			"Within a matter of moments, a layer of [npc.armFullDescription] has quickly grown over them, and, looking down,"
-					+ " [npc.she] [npc.verb(see)] [npc.her] new fur growing over the backs of [npc.her] hands as blunt, rabbit-like claws push out to replace [npc.her] fingernails."
-				+ " [npc.Her] palms rapidly transform to be [npc.materialDescriptor] soft little pads, and at [npc.her] upper-biceps, [npc.her] new fur smoothly transitions into the [npc.skin] that's covering the rest of [npc.her] body.<br/>"
-				+ "As the transformation comes to an end, [npc.nameIsFull] left with anthropomorphic, [style.boldRabbitMorph(rabbit-like arms and paw-like hands)], which are [npc.materialDescriptor] [npc.armFullDescription].",
-			"[npc.She] [npc.has] [npc.armRows] arms, which are [npc.materialCompositionDescriptor] [npc.armFullDescription(true)]."
-				+ " [npc.Her] hands are formed into anthropomorphic, rabbit-like hands, complete with blunt little claws.") {
+			"рука",
+			"руки",
+			Util.newArrayListOfValues("пушистая", "покрытая мехом"),
+			Util.newArrayListOfValues("пушистая", "покрытая мехом"),
+			"кисть",
+			"кисти",
+			Util.newArrayListOfValues("кроличьими", "похожая на лапу", "пушистая"),
+			Util.newArrayListOfValues("мягкий", "женственная", "кроличьими", "похожая на лапу", "пушистая"),
+			"палец",
+			"пальцы",
+			Util.newArrayListOfValues("кроличьими", "похожая на лапу", "пушистая"),
+			Util.newArrayListOfValues("мягкий", "женственная", "кроличьими", "похожая на лапу", "пушистая"),
+			"Всего за мгновение их покрыл слой [npc.armFullDescription], и, глядя вниз, можно было увидеть, как [npc.she] [npc.verb(see)] [npc.her] новый мех, растущий на спинах [npc.her] рук, пока тупые, кроличьи когти пробиваются наружу, заменяя [npc.her] ногти. [npc.Her] ладони стремительно превращаются в [npc.materialDescriptor] мягкие подушечки, а на [npc.her] верхней части бицепсов [npc.her] новый мех плавно переходит в [npc.skin], покрывающий остальное тело [npc.her].<br/>Когда трансформация завершается, [npc.nameIsFull] остаются антропоморфными, [style.boldRabbitMorph(кроличьими руками и лапами)], которые являются [npc.materialDescriptor] [npc.armFullDescription].",
+			"[npc.She] [npc.has] [npc.armRows] руки, которые являются [npc.materialCompositionDescriptor] [npc.armFullDescription(true)]. [npc.Her] руки превратились в антропоморфные, кроличьи ладони с тупыми маленькими когтями.") {
 	};
 
 	public static AbstractArmType BAT_MORPH = new AbstractArmType(BodyCoveringType.BAT_SKIN,
 			Race.BAT_MORPH,
-			"wing",
-			"wings",
-			Util.newArrayListOfValues("bat-like"),
-			Util.newArrayListOfValues("bat-like"),
-			"hand",
-			"hands",
-			Util.newArrayListOfValues("bat-like"),
-			Util.newArrayListOfValues("feminine", "bat-like"),
-			"finger",
-			"fingers",
-			Util.newArrayListOfValues("bat-like"),
-			Util.newArrayListOfValues("soft", "feminine", "bat-like"),
-			"Within a matter of moments, a layer of [npc.armFullDescription] has quickly grown over them, and, staring at [npc.her] hands in shock,"
-					+ " [npc.name] [npc.verb(watch)] [npc.her] fingers narrowing down and growing longer and longer as a tough membrane of skin starts to grow between them."
-				+ " [npc.She] [npc.verb(cry)] out in alarm as [npc.she] [npc.verb(feel)] [npc.her] bones growing and snapping into a new form, and within moments,"
-					+ " [npc.her] hands and arms have completely transformed into huge, bat-like wings."
-				+ " Where [npc.her] hands once were, two of [npc.her] fingers have shrunk down into the middle-joint of [npc.her] new appendages,"
-					+ " leaving [npc.herHim] with two small forefingers and an opposable thumb, each of which ends in a little claw."
-				+ " Where [npc.her] new wings meet [npc.her] body at the shoulder, [npc.her] [npc.armFullDescription] smoothly covers the transition into the [npc.skin] that's covering the rest of [npc.her] torso.<br/>"
-				+ "[npc.Name] now [npc.has] huge [style.boldBatMorph(bat-like wings)] in place of arms, which are [npc.materialDescriptor] [npc.armFullDescription].",
-			"In place of arms and hands, [npc.she] [npc.has] [npc.armRows] huge bat-like wings, [npc.materialCompositionDescriptor] [npc.armFullDescription(true)]."
-				+ "#IF(!npc.isFeral())"
-				+ " Where [npc.her] hands should be, [npc.she] [npc.has] two forefingers and a thumb, each of which ends in a little blunt claw."
-				+ " Although slightly less dexterous than a human hand, [npc.sheIs] still able to use [npc.her] digits to form a hand-like grip."
-				+ "#ENDIF") {
+			"крыло",
+			"крылья",
+			Util.newArrayListOfValues("похожими на крылья летучей мыши"),
+			Util.newArrayListOfValues("похожими на крылья летучей мыши"),
+			"кисть",
+			"кисти",
+			Util.newArrayListOfValues("похожими на крылья летучей мыши"),
+			Util.newArrayListOfValues("женственная", "похожими на крылья летучей мыши"),
+			"палец",
+			"пальцы",
+			Util.newArrayListOfValues("похожими на крылья летучей мыши"),
+			Util.newArrayListOfValues("мягкий", "женственная", "похожими на крылья летучей мыши"),
+			"Всего за мгновение их покрыл слой [npc.armFullDescription], и, в шоке глядя на [npc.her] руки, [npc.name] [npc.verb(watch)], как [npc.her] пальцы сужаются и становятся все длиннее и длиннее, пока между ними не начинает нарастать плотная кожная перепонка. [npc.She] [npc.verb(cry)] от тревоги, когда [npc.she] [npc.verb(feel)] [npc.her] кости, растущие и переламывающиеся, принимая новую форму, и через мгновение руки и предплечья [npc.her] полностью превращаются в огромные, похожие на крылышки летучей мыши крылья. Там, где раньше были [npc.her] руки, два из [npc.her] пальцев уменьшились до уровня среднего сустава [npc.her] новых придатков, оставив [npc.herHim] с двумя маленькими указательными пальцами и противопоставленным большим пальцем, каждый из которых заканчивается маленьким когтем. Там, где [npc.her] новые крылья соединяются с [npc.her] телом в районе плеча, [npc.her] [npc.armFullDescription] плавно переходит в [npc.skin], покрывающий остальную часть [npc.her] торса.<br/>[npc.Name] теперь [npc.has] огромные [style.boldBatMorph(крылья, подобные крыльям летучей мыши)] вместо рук, которые [npc.materialDescriptor] [npc.armFullDescription].",
+			"Вместо рук и кистей у [npc.she] [npc.has] [npc.armRows] огромные перепончатые крылья, [npc.materialCompositionDescriptor] [npc.armFullDescription(true)].#IF(!npc.isFeral()) Там, где должны быть [npc.her] руки, [npc.she] [npc.has] два указательных пальца и большой палец, каждый из которых заканчивается маленьким тупым когтем. Хотя они чуть менее ловкие, чем человеческая кисть, [npc.sheIs] все же способны использовать [npc.her] пальцы, чтобы имитировать хват руки.#ENDIF") {
 		@Override
 		public boolean allowsFlight() {
 			return true;
@@ -368,30 +305,20 @@ public class ArmType {
 
 	public static AbstractArmType HARPY = new AbstractArmType(BodyCoveringType.FEATHERS,
 			Race.HARPY,
-			"wing",
-			"wings",
-			Util.newArrayListOfValues("feathered", "bird-like"),
-			Util.newArrayListOfValues("feathered", "bird-like"),
-			"hand",
-			"hands",
-			Util.newArrayListOfValues("feathered"),
-			Util.newArrayListOfValues("feminine", "feathered"),
-			"finger",
-			"fingers",
-			Util.newArrayListOfValues("feathered"),
-			Util.newArrayListOfValues("feminine", "feathered"),
-			"Within a matter of moments, a thick layer of [npc.armFullDescription] quickly sprouts out all over them, and, looking down, [npc.she] [npc.verb(see)] [npc.her] new feathers growing over the backs of [npc.her] hands as well."
-				+ " Just as [npc.she] thinks that the transformation has finished, [npc.she] [npc.verb(cry)] out in shock as [npc.her] bones grow and snap into a new form."
-				+ " Thankfully, the transformation is quickly over, leaving [npc.herHim] with a pair of huge, feathered wings in place of arms."
-				+ " Where [npc.her] hands once were, two of [npc.her] fingers have shrunk down into the middle-joint of [npc.her] appendages, leaving [npc.herHim] with two feathered forefingers and an opposable thumb,"
-					+ " each of which ends in a blunt claw."
-				+ " Where [npc.her] new wings meet [npc.her] body at the shoulder, [npc.her] feathers smoothly cover the transition into the [npc.skin] that's covering the rest of [npc.her] torso.<br/>"
-				+ "[npc.Name] now [npc.has] huge [style.boldHarpy(harpy wings)] in place of arms, which are [npc.materialDescriptor] [npc.armFullDescription].",
-			"In place of arms and hands, [npc.she] [npc.has] [npc.armRows] huge wings, which are [npc.materialCompositionDescriptor] beautiful [npc.armFullDescription(true)]."
-				+ "#IF(!npc.isFeral())"
-				+ " Where [npc.her] hands should be, [npc.she] [npc.has] two feathered forefingers and a thumb, each of which ends in a little blunt claw."
-				+ " Although slightly less dexterous than a human hand, [npc.sheIs] still able to use [npc.her] digits to form a hand-like grip."
-				+ "#ENDIF") {
+			"крыло",
+			"крылья",
+			Util.newArrayListOfValues("оперенные", "птичьи"),
+			Util.newArrayListOfValues("оперенные", "птичьи"),
+			"кисть",
+			"кисти",
+			Util.newArrayListOfValues("оперенные"),
+			Util.newArrayListOfValues("женственная", "оперенные"),
+			"палец",
+			"пальцы",
+			Util.newArrayListOfValues("оперенные"),
+			Util.newArrayListOfValues("женственная", "оперенные"),
+			"Всего за мгновение на них быстро прорастает густой слой [npc.armFullDescription], и, взглянув вниз, [npc.she] [npc.verb(see)] [npc.her] новые перья, растущие также на спинах [npc.her] рук. Как только [npc.she] думает, что трансформация завершена, [npc.she] [npc.verb(cry)] от шока, пока [npc.her] кости растут и с хрустом принимают новую форму. К счастью, трансформация быстро заканчивается, оставляя [npc.herHim] с парой огромных пернатых крыльев вместо рук. Там, где раньше были [npc.her] руки, два из [npc.her] пальцев [npc.her] уменьшились до среднего сустава, оставляя [npc.herHim] с двумя пернатыми указательными пальцами и противопоставленным большим пальцем, каждый из которых заканчивается тупым когтем. Там, где [npc.her] новые крылья соединяются с [npc.her] телом в районе плеча, [npc.her] перья плавно покрывают переход в [npc.skin], который покрывает остальную часть [npc.her] торса.<br/>[npc.Name] теперь [npc.has] огромные [style.boldHarpy(крылья гарпии)] вместо рук, которые являются [npc.materialDescriptor] [npc.armFullDescription].",
+			"Вместо рук и кистей у [npc.she] [npc.has] [npc.armRows] огромные крылья, которые [npc.materialCompositionDescriptor] прекрасны [npc.armFullDescription(true)].#IF(!npc.isFeral()) Там, где должны быть [npc.her] руки, [npc.she] [npc.has] два пернатых указательных пальца и большой палец, каждый из которых заканчивается маленьким тупым когтем. Хотя они чуть менее ловкие, чем человеческая рука, [npc.sheIs] все же способны использовать [npc.her] пальцы, чтобы имитировать хват руки.#ENDIF") {
 		@Override
 		public boolean allowsFlight() {
 			return true;
@@ -412,7 +339,7 @@ public class ArmType {
 
 		// Modded types:
 		
-		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/race", "bodyParts", null);
+		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/раса", "bodyParts", null);
 		for(Entry<String, Map<String, File>> entry : moddedFilesMap.entrySet()) {
 			for(Entry<String, File> innerEntry : entry.getValue().entrySet()) {
 				if(Util.getXmlRootElementName(innerEntry.getValue()).equals("arm")) {

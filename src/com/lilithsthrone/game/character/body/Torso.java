@@ -62,14 +62,13 @@ public class Torso implements BodyPartInterface {
 		}
 		
 		if(type == getType()) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] already [npc.has] the [npc.skin] of [npc.a_skinRace], so nothing happens...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] уже [npc.has] [npc.skin] [npc.a_skinRace], так что ничего не происходит...)]</p>");
 		}
 		
 		StringBuilder sb = new StringBuilder();
 		
 		sb.append(
-				"<p>"
-					+ "[npc.NamePos] entire torso starts to itch and grow hot, and [npc.she] [npc.verb(start)] frantically scratching all over as [npc.her] [npc.skin] starts to transform. ");
+				"<p>[npc.NamePos] весь торс начинает чесаться и гореть, и [npc.she] [npc.verb(start)] неистово чешется повсюду, пока [npc.her] [npc.skin] начинает трансформироваться. ");
 		
 
 		// Parse existing content before transformation:

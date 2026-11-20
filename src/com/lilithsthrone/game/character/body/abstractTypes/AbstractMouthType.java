@@ -112,18 +112,7 @@ public abstract class AbstractMouthType implements BodyPartTypeInterface {
 		this.lipDescriptorsFeminine = lipDescriptorsFeminine;
 		
 		if(mouthBodyDescription==null || mouthBodyDescription.isEmpty()) {
-			this.mouthBodyDescription = "[npc.SheHasFull] [npc.lipSize], [npc.mouthColourPrimary(true)] [npc.lips]"
-						+ "#IF(npc.isWearingLipstick())"
-							+ "#IF(npc.isPiercedLip()), which have been pierced, and#ELSE, which#ENDIF"
-							+ " are currently [npc.materialCompositionDescriptor]"
-							+ "#IF(npc.isHeavyMakeup(BODY_COVERING_TYPE_MAKEUP_LIPSTICK) && game.isLipstickMarkingEnabled())"
-								+ " a [style.colourPinkDeep(heavy layer)] of"
-							+ "#ENDIF"
-							+ " [#npc.getLipstick().getFullDescription(npc, true)]."
-						+ "#ELSE"
-							+ "#IF(npc.isPiercedLip()), which have been pierced#ENDIF."
-						+ "#ENDIF"
-						+ " [npc.Her] throat is [npc.mouthColourSecondary(true)] in colour.";
+			this.mouthBodyDescription = "[npc.SheHasFull] [npc.lipSize], [npc.mouthColourPrimary(true)] [npc.lips]#IF(npc.isWearingLipstick())#IF(npc.isPiercedLip()), проколотые, и#ELSE, которая#ENDIF в данный момент [npc.materialCompositionDescriptor]#IF(npc.isHeavyMakeup(BODY_COVERING_TYPE_MAKEUP_LIPSTICK) && game.isLipstickMarkingEnabled()) [style.colourPinkDeep(густой слой)]#ENDIF [#npc.getLipstick().getFullDescription(npc, true)].#ELSE#IF(npc.isPiercedLip()), проколотые#ENDIF.#ENDIF [npc.Her] горло имеет [npc.mouthColourSecondary(true)] цвет.";
 		} else {
 			this.mouthBodyDescription = mouthBodyDescription;
 		}
@@ -261,7 +250,7 @@ public abstract class AbstractMouthType implements BodyPartTypeInterface {
 	@Override
 	public String getNameSingular(GameCharacter gc) {
 		if(names==null || names.isEmpty()) {
-			return UtilText.returnStringAtRandom("mouth");
+			return UtilText.returnStringAtRandom("рот");
 		}
 		return Util.randomItemFrom(names);
 	}
@@ -269,7 +258,7 @@ public abstract class AbstractMouthType implements BodyPartTypeInterface {
 	@Override
 	public String getNamePlural(GameCharacter gc) {
 		if(namesPlural==null || names.isEmpty()) {
-			return UtilText.returnStringAtRandom("mouths");
+			return UtilText.returnStringAtRandom("рты");
 		}
 		return Util.randomItemFrom(namesPlural);
 	}

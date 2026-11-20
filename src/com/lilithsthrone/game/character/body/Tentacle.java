@@ -99,10 +99,10 @@ public class Tentacle implements BodyPartInterface {
 		
 		if (type == getType()) {
 			if(type == TentacleType.NONE) {
-				return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] already [npc.verb(lack)] a tentacle, so nothing happens...)]</p>");
+				return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] уже [npc.verb(lack)] щупальце, так что ничего не происходит...)]</p>");
 				
 			} else {
-				return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] already [npc.has] the [npc.tentacle] of [npc.a_tentacleRace], so nothing happens...)]</p>");
+				return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] уже [npc.has] [npc.tentacle] [npc.a_tentacleRace], так что ничего не происходит...)]</p>");
 			}
 		}
 		
@@ -110,14 +110,13 @@ public class Tentacle implements BodyPartInterface {
 		
 		if(this.type == TentacleType.NONE) {
 			sb.append(
-					"<p>"
-						+ "[npc.Name] rubs at [npc.her] lower back as [npc.she] [npc.verb(feel)] it growing hot and sensitive, and as [npc.she] [npc.do] so, something starts pushing out from under [npc.her] [npc.skin].");
+					"<p>[npc.Name] потирает [npc.her] поясницу, чувствуя, как [npc.she] [npc.verb(feel)] становится горячей и чувствительной, и когда [npc.she] [npc.do], что-то начинает выпирать из-под [npc.her] [npc.skin].");
 		} else {
 			sb.append(
 					"<p>"
 						+ (owner.getTentacleCount()==1
-							?"[npc.Name] [npc.verb(feel)] [npc.her] [npc.tentacle] growing hot and itchy, and after just a moment it starts to transform."
-							:"[npc.Name] [npc.verb(feel)] [npc.her] [npc.tentacles] growing hot and itchy, and after just a moment they start to transform."));
+							?"[npc.Name] [npc.verb(feel)] [npc.her] [npc.tentacle] становится горячим и зудящим, и спустя мгновение начинает трансформироваться."
+							:"[npc.Name] [npc.verb(feel)] [npc.her] [npc.tentacles] становятся горячими и зудящими, и спустя мгновение начинают трансформироваться."));
 		}
 
 		if(this.getLengthAsPercentageOfHeight()==this.getType().getDefaultLengthAsPercentageOfHeight()) {
@@ -157,7 +156,7 @@ public class Tentacle implements BodyPartInterface {
 		}
 		
 		if(owner.getTentacleCount() == tentacleCount) {
-			return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+			return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 		}
 		
 		owner.removeStatusEffect(StatusEffect.SUBSPECIES_BONUS);
@@ -168,29 +167,23 @@ public class Tentacle implements BodyPartInterface {
 		owner.addStatusEffect(StatusEffect.SUBSPECIES_BONUS, -1);
 		
 		if (owner.getTentacleType() == TentacleType.NONE) {
-			return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+			return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 		}
 		
 		if(removingTentacles) {
 			return UtilText.parse(owner,
-					"<p>"
-						+ "A tingling feeling spreads over [npc.namePos] [npc.tentacles], before moving down and concentrating in [npc.her] lower back."
-						+ " [npc.She] can't help but let out a cry as [npc.she] [npc.verb(feel)] some of them [style.boldShrink(shrinking away)] and disappearing back down into [npc.her] [npc.skin].<br/>"
-						+ "After a few moments, [npc.sheIs] left with [style.boldTfGeneric("
+					"<p>По [npc.tentacles] [npc.namePos] пробегает покалывание, которое затем спускается ниже и концентрируется в нижней части [npc.her] поясницы. [npc.She] не может сдержать крика, когда [npc.she] [npc.verb(feel)] некоторые из них [style.boldShrink(сжимаясь)] и исчезая обратно в [npc.her] [npc.skin].<br/>Спустя несколько мгновений, [npc.sheIs] остается с [style.boldTfGeneric("
 								+(tentacleCount==1
-									?"a single [npc.tentacle]"
+									?"единственным [npc.tentacle]"
 									:Util.intToString(tentacleCount)+" [npc.tentacles]")
 						+ ")]."
 					+ "</p>");
 			
 		} else {
 			return UtilText.parse(owner,
-					"<p>"
-						+ "A tingling feeling spreads over [npc.namePos] [npc.tentacles], before moving down and concentrating in [npc.her] lower back."
-						+ " [npc.She] can't help but let out a little cry as [npc.she] [npc.verb(feel)] new [npc.tentacles] [style.boldGrow(pushing up)] and growing out of [npc.her] [npc.skin].<br/>"
-						+ "After a few moments, [npc.sheIs] left with [style.boldTfGeneric("
+					"<p>По [npc.tentacles] [npc.namePos] пробегает покалывание, которое спускается ниже и концентрируется в [npc.her] пояснице. [npc.She] не может сдержать короткий вскрик, когда у [npc.she] [npc.verb(feel)] новый [npc.tentacles] [style.boldGrow(пробивается вверх)] и растет из [npc.her] [npc.skin].<br/>Спустя несколько мгновений, [npc.sheIs] осталась с [style.boldTfGeneric("
 								+(tentacleCount==1
-									?"a single [npc.tentacle]"
+									?"единственным [npc.tentacle]"
 									:Util.intToString(tentacleCount)+" [npc.tentacles]")
 						+ ")]."
 					+ "</p>");
@@ -217,7 +210,7 @@ public class Tentacle implements BodyPartInterface {
 		}
 		
 		if(!owner.hasTentacle()) {
-			return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+			return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 		}
 		
 		int girthChange = 0;
@@ -240,7 +233,7 @@ public class Tentacle implements BodyPartInterface {
 		}
 		
 		if(girthChange == 0) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(The girth of [npc.namePos] [npc.tentacle] doesn't change...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(Толщина [npc.namePos] [npc.tentacle] не меняется...)]</p>");
 		}
 		
 		return owner.getTentacleType().getGirthTransformationDescription(owner, girthChange > 0);
@@ -283,11 +276,11 @@ public class Tentacle implements BodyPartInterface {
 		}
 		
 		if(!owner.hasTentacle()) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(As [npc.name] [npc.do] not have any tentacles, nothing seems to happen...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(Так как у [npc.name] [npc.do] нет щупалец, кажется, ничего не происходит...)]</p>");
 		}
 		
 		if(lengthChange == 0) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(The length of [npc.namePos] [npc.tentacles] doesn't change...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(Длина [npc.namePos] [npc.tentacles] не меняется...)]</p>");
 		}
 		
 		return owner.getTentacleType().getLengthTransformationDescription(owner, lengthChange > 0);

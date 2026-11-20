@@ -28,9 +28,9 @@ public interface BodyPartTypeInterface {
 	/** @return Pronoun for this body part. (They, it) */
 	public default String getPronoun(GameCharacter gc){
 		if(isDefaultPlural(gc)) {
-			return "they";
+			return "они";
 		} else {
-			return "it";
+			return "это";
 		}
 	}
 	

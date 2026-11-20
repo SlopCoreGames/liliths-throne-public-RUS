@@ -229,7 +229,7 @@ public abstract class AbstractPenisType implements BodyPartTypeInterface {
 	}
 	
 	public String getPenisHeadName(GameCharacter gc) {
-		return UtilText.returnStringAtRandom("head", "tip");
+		return UtilText.returnStringAtRandom("головка", "кончик");
 	}
 	
 	public String getPenisHeadDescriptor(GameCharacter gc) {
@@ -237,11 +237,11 @@ public abstract class AbstractPenisType implements BodyPartTypeInterface {
 			if(gc.getPenisModifiers().contains(mod)) {
 				switch(mod) {
 					case BLUNT:
-						return UtilText.returnStringAtRandom("blunt");
+						return UtilText.returnStringAtRandom("тупой");
 					case FLARED:
-						return UtilText.returnStringAtRandom("wide", "flared", "flat");
+						return UtilText.returnStringAtRandom("широкий", "расширяющийся", "плоские");
 					case TAPERED:
-						return UtilText.returnStringAtRandom("tapered", "pointed");
+						return UtilText.returnStringAtRandom("заостренный", "заостренное");
 					case KNOTTED:
 					case PREHENSILE:
 					case RIBBED:

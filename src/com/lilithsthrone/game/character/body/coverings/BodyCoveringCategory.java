@@ -18,26 +18,26 @@ public enum BodyCoveringCategory {
 	// Eyes
 	EYE_IRIS("irises"),
 	EYE_PUPIL("pupils"),
-	EYE_SCLERA("sclerae"),
+	EYE_SCLERA("склеры"),
 
 	// Head
 	ANTENNAE("antennae"),
-	HORN("horns"),
-	ANTLER("antlers"),
+	HORN("рога"),
+	ANTLER("рога"),
 	HAIR("hair"),
 
 	// Orifices
 	ANUS("anus"),
-	MOUTH("mouth"),
-	TONGUE("tongue"),
+	MOUTH("рот"),
+	TONGUE("язык"),
 	NIPPLE("nipples"),
 	NIPPLE_CROTCH("crotch-nipples"),
-	VAGINA("vagina"),
-	PENIS("penis"),
+	VAGINA("вагина"),
+	PENIS("пенис"),
 	SPINNERET("spinneret"),
 
 	// Other
-	BODY_HAIR("body hair"),
+	BODY_HAIR("волосы на теле"),
 	
 	// Specials
 	ARTIFICIAL("dildo") { public boolean isInfluencedByMaterialType() { return false; } },

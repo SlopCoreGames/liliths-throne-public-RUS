@@ -315,67 +315,67 @@ public abstract class AbstractTentacleType implements BodyPartTypeInterface {
 		
 		if(this.getTags().contains(BodyPartTag.TAIL_TYPE_FUR)) {
 			if(owner.getTentacleCount()>1) {
-				sb.append(UtilText.parse(owner, " [npc.Her] [npc.tentacles] are"));
+				sb.append(UtilText.parse(owner, " [npc.Her] [npc.tentacles] — это"));
 			} else {
-				sb.append(UtilText.parse(owner, " [npc.Her] [npc.tentacle] is"));
+				sb.append(UtilText.parse(owner, " [npc.Her] [npc.tentacle] — это"));
 			}
 			switch(owner.getTentacleGirth()) {
 				case ZERO_THIN:
-					sb.append(UtilText.parse(owner, " very thin and severely lacking in fluffiness in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " очень тонкие и совсем не пушистые по сравнению с остальным телом [npc.her]."));
 					break;
 				case ONE_SLENDER:
-					sb.append(UtilText.parse(owner, " slender and lacking in fluffiness in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " стройные и не слишком пушистые по сравнению с остальным телом [npc.her]."));
 					break;
 				case TWO_NARROW:
-					sb.append(UtilText.parse(owner, " quite narrow and a little lacking in fluffiness in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " довольно узкие и слегка не пушистые по сравнению с остальным телом [npc.her]."));
 					break;
 				case THREE_AVERAGE:
-					sb.append(UtilText.parse(owner, " of an average thickness and fluffiness in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " средней толщины и пушистости по сравнению с остальным телом [npc.her]."));
 					break;
 				case FOUR_GIRTHY:
-					sb.append(UtilText.parse(owner, " quite big and fluffy in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " довольно крупные и пушистые по сравнению с остальным телом [npc.her]."));
 					break;
 				case FIVE_THICK:
-					sb.append(UtilText.parse(owner, " very big and fluffy in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " очень крупные и пушистые по сравнению с остальным телом [npc.her]."));
 					break;
 				case SIX_CHUBBY:
-					sb.append(UtilText.parse(owner, " incredibly thick and fluffy in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " невероятно толстые и пушистые по сравнению с остальным телом [npc.her]."));
 					break;
 				case SEVEN_FAT:
-					sb.append(UtilText.parse(owner, " extremely thick and fluffy in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " чрезвычайно толстые и пушистые по сравнению с остальным телом [npc.her]."));
 					break;
 			}
 			
 		} else {
 			if(owner.getTentacleCount()>1) {
-				sb.append(UtilText.parse(owner, " [npc.Her] [npc.tentacles] are"));
+				sb.append(UtilText.parse(owner, " [npc.Her] [npc.tentacles] — это"));
 			} else {
-				sb.append(UtilText.parse(owner, " [npc.Her] [npc.tentacle] is"));
+				sb.append(UtilText.parse(owner, " [npc.Her] [npc.tentacle] — это"));
 			}
 			switch(owner.getTentacleGirth()) {
 				case ZERO_THIN:
-					sb.append(UtilText.parse(owner, " very thin in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " очень тонкая по сравнению с остальным телом [npc.her]."));
 					break;
 				case ONE_SLENDER:
-					sb.append(UtilText.parse(owner, " slender in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " стройная по сравнению с остальным телом [npc.her]."));
 					break;
 				case TWO_NARROW:
-					sb.append(UtilText.parse(owner, " quite narrow in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " довольно узкая по сравнению с остальным телом [npc.her]."));
 					break;
 				case THREE_AVERAGE:
-					sb.append(UtilText.parse(owner, " of an average thickness in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " средней толщины по сравнению с остальным телом [npc.her]."));
 					break;
 				case FOUR_GIRTHY:
-					sb.append(UtilText.parse(owner, " quite thick in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " довольно толстая по сравнению с остальным телом [npc.her]."));
 					break;
 				case FIVE_THICK:
-					sb.append(UtilText.parse(owner, " very thick in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " очень толстая по сравнению с остальным телом [npc.her]."));
 					break;
 				case SIX_CHUBBY:
-					sb.append(UtilText.parse(owner, " incredibly thick and girthy in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " невероятно толстая и мощная по сравнению с остальным телом [npc.her]."));
 					break;
 				case SEVEN_FAT:
-					sb.append(UtilText.parse(owner, " extremely thick and girthy in proportion to the rest of [npc.her] body."));
+					sb.append(UtilText.parse(owner, " чрезвычайно толстая и мощная по сравнению с остальным телом [npc.her]."));
 					break;
 			}	
 		}
@@ -390,41 +390,41 @@ public abstract class AbstractTentacleType implements BodyPartTypeInterface {
 		if(this.getTags().contains(BodyPartTag.TAIL_TYPE_FUR)) {
 			switch(girth) {
 				case ZERO_THIN:
-					return "thin";
+					return "тонкий";
 				case ONE_SLENDER:
-					return "slender";
+					return "тонкие";
 				case TWO_NARROW:
-					return "narrow";
+					return "узкий";
 				case THREE_AVERAGE:
-					return "fluffy";
+					return "пушистый";
 				case FOUR_GIRTHY:
-					return "very-fluffy";
+					return "очень пушистый";
 				case FIVE_THICK:
-					return "extra-fluffy";
+					return "сверхпушистый";
 				case SIX_CHUBBY:
-					return "extremely-fluffy";
+					return "невероятно пушистый";
 				case SEVEN_FAT:
-					return "unbelievably-fluffy";
+					return "невообразимо пушистый";
 			}
 			
 		} else {
 			switch(girth) {
 				case ZERO_THIN:
-					return "thin";
+					return "тонкий";
 				case ONE_SLENDER:
-					return "slender";
+					return "тонкие";
 				case TWO_NARROW:
-					return "narrow";
+					return "узкий";
 				case THREE_AVERAGE:
-					return "average";
+					return "средний";
 				case FOUR_GIRTHY:
-					return "thick";
+					return "толстый";
 				case FIVE_THICK:
-					return "extra-thick";
+					return "сверхтолстый";
 				case SIX_CHUBBY:
-					return "extremely-thick";
+					return "экстремально толстый";
 				case SEVEN_FAT:
-					return "unbelievably-thick";
+					return "невероятно толстый";
 			}
 		}
 		
@@ -439,48 +439,34 @@ public abstract class AbstractTentacleType implements BodyPartTypeInterface {
 		
 		if(positive) {
 			return UtilText.parse(owner,
-					"<p>"
-						+ "[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(feel)] a deep throbbing sensation building up at the base of [npc.her] [npc.tentacles]."
-						+ " Without any further warning of what's to come, [npc.her]"
+					"<p>[npc.Name] [npc.verb(let)] [npc.a_moan+] как [npc.she] [npc.verb(feel)] нарастающее глубокое пульсирующее ощущение у основания [npc.her] [npc.tentacles]. Без всякого предупреждения о том, что будет дальше, [npc.her]"
 						+(owner.getTentacleCount()>1
-								?" [npc.tentacles] suddenly [style.boldGrow(grow thicker)]."
-								:" [npc.tentacle] suddenly [style.boldGrow(grows thicker)].")
-						+ "<br/>"
-						+ "[npc.She] now [npc.has] [style.boldSex("+tentacleText+")]!"
+								?" [npc.tentacles] внезапно [style.boldGrow(становится толще)]."
+								:" [npc.tentacle] внезапно [style.boldGrow(становится толще)].")
+						+ "<br/>[npc.She] теперь [npc.has] [style.boldSex(\","+tentacleText+")]!"
 					+ "</p>");
 				
 		} else {
 			return UtilText.parse(owner,
-					"<p>"
-							+ "[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(feel)] a deep throbbing sensation building up at the base of [npc.her] [npc.tentacles]."
-							+ " Without any further warning of what's to come, [npc.her]"
+					"<p>[npc.Name] [npc.verb(let)] [npc.a_moan+] как [npc.she] [npc.verb(feel)] нарастающее глубокое пульсирующее ощущение у основания [npc.her] [npc.tentacles]. Без всякого предупреждения о том, что будет дальше, [npc.her]"
 							+(owner.getTentacleCount()>1
-									?" [npc.tentacles] suddenly [style.boldShrink(shrink down)]."
-									:" [npc.tentacle] suddenly [style.boldShrink(shrinks down)].")
-							+ "<br/>"
-						+ "[npc.She] now [npc.has] [style.boldSex("+tentacleText+")]!"
+									?" [npc.tentacles] внезапно [style.boldShrink(уменьшается)]."
+									:" [npc.tentacle] внезапно [style.boldShrink(сжимается)].")
+							+ "<br/>[npc.She] теперь [npc.has] [style.boldSex(\","+tentacleText+")]!"
 					+ "</p>");
 		}
 	}
 	
 	public String getLengthTransformationDescription(GameCharacter owner, boolean positive) {
-		String heightPercentageDescription = " (length is "+((int)(owner.getTentacleLengthAsPercentageOfHeight()*100))+"% of [npc.namePos] height)";
+		String heightPercentageDescription = " (длина составляет "+((int)(owner.getTentacleLengthAsPercentageOfHeight()*100))+"% oф при росте [npc.namePos])";
 		if(positive) {
 			return UtilText.parse(owner,
-					"<p>"
-						+ "[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(feel)] a deep throbbing sensation building up at the [npc.tentacleTip] of each of [npc.her] [npc.tentacles]."
-						+ " Without any further warning of what's to come, [npc.her] [npc.tentacles] suddenly [style.boldGrow(grow longer)]."
-						+ "<br/>"
-						+ "[npc.She] now [npc.has] [style.boldTfGeneric([npc.tentacleLength] [npc.tentacles])]"+heightPercentageDescription+"!"
+					"<p>[npc.Name] [npc.verb(let)] наружу, [npc.a_moan+], пока [npc.she] [npc.verb(feel)] глубокую пульсацию, нарастающую в [npc.tentacleTip] каждого из [npc.her] [npc.tentacles]. Без всякого предупреждения о том, что будет дальше, [npc.her] [npc.tentacles] внезапно [style.boldGrow(вытягивается)].<br/>[npc.She] теперь [npc.has] [style.boldTfGeneric([npc.tentacleLength] [npc.tentacles])]"+heightPercentageDescription+"!"
 					+ "</p>");
 				
 		} else {
 			return UtilText.parse(owner,
-					"<p>"
-						+ "[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(feel)] a deep throbbing sensation building up at the [npc.tentacleTip] of each of [npc.her] [npc.tentacles]."
-						+ " Without any further warning of what's to come, [npc.her] [npc.tentacles] suddenly [style.boldShrink(shorten)]."
-						+ "<br/>"
-						+ "[npc.She] now [npc.has] [style.boldTfGeneric([npc.tentacleLength] [npc.tentacles])]"+heightPercentageDescription+"!"
+					"<p>[npc.Name] [npc.verb(let)] наружу, [npc.a_moan+], пока [npc.she] [npc.verb(feel)] глубокую пульсацию, нарастающую в [npc.tentacleTip] каждого из [npc.her] [npc.tentacles]. Без всякого предупреждения о том, что будет дальше, [npc.her] [npc.tentacles] внезапно [style.boldShrink(укорачивается)].<br/>[npc.She] теперь [npc.has] [style.boldTfGeneric([npc.tentacleLength] [npc.tentacles])]"+heightPercentageDescription+"!"
 					+ "</p>");
 		}
 	}

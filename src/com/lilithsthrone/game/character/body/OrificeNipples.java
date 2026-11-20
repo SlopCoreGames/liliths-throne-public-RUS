@@ -69,7 +69,7 @@ public class OrificeNipples implements OrificeInterface {
 	@Override
 	/**<b>DO NOT USE THIS. NIPPLE WETNESS IS DETERMINED BY BREAST LACTATION.</b>*/
 	public String setWetness(GameCharacter owner, int wetness) {
-		throw new IllegalAccessError("Nipple wetness was attempted to be set manually!");
+		throw new IllegalAccessError("Попытка ручной установки влажности сосков!");
 	}
 	
 	@Override
@@ -98,43 +98,31 @@ public class OrificeNipples implements OrificeInterface {
 		String breastsString = isCrotchNipples()?"[npc.crotchBoobs]":"[npc.breasts]";
 		
 		if (capacityChange == 0) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(The capacity of [npc.namePos] "+nipplesString+" doesn't change...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(Емкость [npc.namePos] "+nipplesString+" не меняется...)]</p>");
 		}
 		
 		String capacityDescriptor = getCapacity().getDescriptor();
 		if (capacityChange > 0) {
 			if(oldCapacity == 0) { // Getting fuckable nipples:
 				return UtilText.parse(owner,
-						"<p>" 
-							+ "[npc.Name] [npc.verb(squirm)] about uncomfortably as [npc.her] "+nipplesString+" grow unusually hard and sensitive."
-							+ " A strange pressure starts to build up within [npc.her] torso, and [npc.she] [npc.verb(let)] out a deep sigh as a drastic transformation takes place within [npc.her] "+breastsString+"."
-							+ " Quickly overwhelmed by the growing intensity of the pressure building up within [npc.her] "+breastsString+", [npc.namePos] sigh turns into [npc.a_moan+],"
-								+ " which bursts out of [npc.her] mouth as [npc.her] "+nipplesString+" suddenly [style.boldGrow(spread open)], revealing deep, fuckable passages that have formed behind them.<br/>"
-							+ "[npc.Name] now [npc.has] [style.boldSex(" + capacityDescriptor + ", fuckable "+nipplesString+")]!"
+						"<p>[npc.Name] [npc.verb(squirm)] о дискомфорте, когда [npc.her] "+nipplesString+" необычайно твердеют и становятся чувствительными. В торсе [npc.her] начинает нарастать странное давление, и [npc.she] [npc.verb(let)] глубокий вздох, пока внутри [npc.her] происходит радикальная трансформация "+breastsString+". Быстро ошеломленный растущей интенсивностью давления внутри [npc.her] "+breastsString+", вздох [npc.namePos] превращается в [npc.a_moan+], который вырывается из рта [npc.her] как [npc.her] "+nipplesString+" внезапно [style.boldGrow(раскрываются)], обнажая глубокие, готовые к траху проходы, образовавшиеся за ними.<br/>[npc.Name] теперь [npc.has] [style.boldSex(" + capacityDescriptor + ", готовые к траху "+nipplesString+")]!"
 						+ "</p>");
 				
 			} else { // Expanding fuckable nipples:
 				return UtilText.parse(owner,
-						"<p>"
-							+ "[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(feel)] a familiar pressure building up behind [npc.her] fuckable "+nipplesString+", before they suddenly [style.boldGrow(grow)] both wider and deeper.<br/>"
-							+ "[npc.Name] now [npc.has] [style.boldSex(" + capacityDescriptor + " "+nipplesString+")]!"
+						"<p>[npc.Name] [npc.verb(let)] [npc.a_moan+], пока [npc.she] [npc.verb(feel)] знакомое давление, нарастающее за готовыми к траху [npc.her] "+nipplesString+", прежде чем они внезапно [style.boldGrow(растянутся)] и станут шире и глубже.<br/>[npc.Name] теперь [npc.has] [style.boldSex(\", " + capacityDescriptor + " "+nipplesString+")]!"
 						+ "</p>");
 			}
 			
 		} else {
 			if(capacity == 0) { // Losing fuckable nipples:
 				return UtilText.parse(owner,
-						"<p>" 
-							+ "[npc.Name] [npc.verb(squirm)] about uncomfortably as [npc.her] "+nipplesString+" grow unusually hard and sensitive."
-							+ " An intense pressure starts to build up within [npc.her] torso, and [npc.she] [npc.verb(let)] out a deep sigh as [npc.her] "+nipplesString+" suddenly [style.boldShrink(clench shut)], removing the ability for them to be fucked.<br/>"
-							+ "[npc.Name] now [npc.has] [style.boldSex(" + capacityDescriptor + ", non-fuckable "+nipplesString+")]!"
+						"<p>[npc.Name] [npc.verb(squirm)] о дискомфорте, когда [npc.her] "+nipplesString+" становятся необычайно твердыми и чувствительными. Внутри торса [npc.her] начинает нарастать интенсивное давление, и [npc.she] [npc.verb(let)] глубокий вздох, когда [npc.her] "+nipplesString+" внезапно [style.boldShrink(сжимаются)], лишая возможности ими заниматься сексом.<br/>[npc.Name] теперь [npc.has] [style.boldSex(\", " + capacityDescriptor + ", не поддающиеся сексу\", "+nipplesString+")]!"
 						+ "</p>");
 				
 			} else { // Shrinking fuckable nipples:
 				return UtilText.parse(owner,
-						"<p>"
-							+ "[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(feel)] a familiar pressure building up behind [npc.her] fuckable "+nipplesString+", before they suddenly [style.boldShrink(shrink)] and become tighter.<br/>"
-							+ "[npc.Name] now [npc.has] [style.boldSex(" + capacityDescriptor + " "+nipplesString+")]!"
+						"<p>[npc.Name] [npc.verb(let)] [npc.a_moan+], пока [npc.she] [npc.verb(feel)] знакомое давление, нарастающее за готовыми к траху [npc.her] "+nipplesString+", прежде чем они внезапно [style.boldShrink(сжимаются)] и становятся теснее.<br/>[npc.Name] теперь [npc.has] [style.boldSex(\", " + capacityDescriptor + " "+nipplesString+")]!"
 						+ "</p>");
 			}
 		}
@@ -185,7 +173,7 @@ public class OrificeNipples implements OrificeInterface {
 		
 		if(owner!=null && !owner.getBodyMaterial().isOrificesLimitedDepth()) {
 			return UtilText.parse(owner,
-					"<p style='text-align:center;'>[style.colourSex(Due to being made out of "+owner.getBodyMaterial().getName()+", the depth of [npc.namePos] "+OrificeDepth.SEVEN_FATHOMLESS.getDescriptor()+" "+nipplesString+" can't be changed...)]</p>");
+					"<p style='text-align:center;'>[style.colourSex(Из-за того, что она сделана из "+owner.getBodyMaterial().getName()+", глубина [npc.namePos] "+OrificeDepth.SEVEN_FATHOMLESS.getDescriptor()+" "+nipplesString+" нельзя изменить...)]</p>\",");
 		}
 		
 		int oldDepth = this.depth;
@@ -197,24 +185,18 @@ public class OrificeNipples implements OrificeInterface {
 		int depthChange = this.depth - oldDepth;
 		
 		if(depthChange == 0) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(The depth of [npc.namePos] "+nipplesString+" doesn't change...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(Глубина [npc.namePos] "+nipplesString+" не меняется...)]</p>");
 		}
 		
 		String depthDescriptor = getDepth(owner).getDescriptor();
 		if(depthChange > 0) {
 			return UtilText.parse(owner, 
-					"<p>"
-						+ "[npc.Name] can't help but let out a surprised gasp as [npc.she] [npc.verb(feel)] an alarming pressure pulsating deep within [npc.her] "+breastsString+"."
-						+ " Before [npc.her] gasp can turn into a distressed cry, the pressure suddenly fades away, leaving [npc.herHim] instinctively knowing that [npc.her] "+nipplesString+" [style.boldGrow(have deepened)].<br/>"
-						+ "[npc.Name] now [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(depthDescriptor) + " " + depthDescriptor + " "+nipplesString+")]!"
+					"<p>[npc.Name] не может сдержать удивленного вздоха, когда [npc.she] [npc.verb(feel)] тревожное давление, пульсирующее глубоко внутри [npc.her] "+breastsString+". Прежде чем вздох [npc.her] успевает превратиться в отчаянный крик, давление внезапно исчезает, оставляя [npc.herHim] с инстинктивным пониманием того, что [npc.her] "+nipplesString+" [style.boldGrow(увеличилась)].<br/>[npc.Name] теперь [npc.has] [style.boldSex(\"" + UtilText.generateSingularDeterminer(depthDescriptor) + " " + depthDescriptor + " "+nipplesString+")]!"
 					+ "</p>");
 			
 		} else {
 			return UtilText.parse(owner, 
-					"<p>"
-						+ "[npc.Name] can't help but let out a surprised gasp as [npc.she] [npc.verb(feel)] an alarming tightening sensation deep within [npc.her] "+breastsString+"."
-						+ " Before [npc.her] gasp can turn into a distressed cry, the feeling suddenly fades away, leaving [npc.herHim] instinctively knowing that [npc.her] "+nipplesString+" [style.boldShrink(have become shallower)].<br/>"
-						+ "[npc.Name] now [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(depthDescriptor) + " " + depthDescriptor + " "+nipplesString+")]!"
+					"<p>[npc.Name] невольно ахает от неожиданности, когда [npc.she] [npc.verb(feel)] пугающее ощущение сжатия глубоко внутри [npc.her] "+breastsString+". Прежде чем ах [npc.her] превращается в жалобный крик, чувство внезапно исчезает, оставляя [npc.herHim] инстинктивное понимание того, что [npc.her] "+nipplesString+" [style.boldShrink(стали менее эластичными)].<br/>[npc.Name] теперь [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(depthDescriptor) + " " + depthDescriptor + " "+nipplesString+")]!"
 					+ "</p>");
 		}
 	}
@@ -237,25 +219,19 @@ public class OrificeNipples implements OrificeInterface {
 		String breastsString = isCrotchNipples()?"[npc.crotchBoobs]":"[npc.breasts]";
 		
 		if (elasticityChange == 0) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(The elasticity of [npc.namePos] "+nipplesString+" doesn't change...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(Эластичность [npc.namePos] "+nipplesString+" не меняется...)]</p>");
 		}
 		
 		
 		String elasticityDescriptor = getElasticity().getDescriptor();
 		if (elasticityChange > 0) {
 			return UtilText.parse(owner, 
-					"<p>"
-						+ "[npc.Name] can't help but let out a surprised gasp as [npc.she] [npc.verb(feel)] a strange slackening sensation pulsating deep within [npc.her] "+breastsString+"."
-						+ " Just as quickly as it started, the feeling passes, and [npc.she] very quickly [npc.verb(realise)] that [npc.her] "+nipplesString+" [style.boldGrow(have gained some elasticity)].<br/>"
-						+ "[npc.Name] now [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(elasticityDescriptor) + " " + elasticityDescriptor + " "+nipplesString+")]!"
+					"<p>[npc.Name] невольно ахает от неожиданности, когда [npc.she] [npc.verb(feel)] странное ощущение расслабления, пульсирующее глубоко внутри [npc.her] "+breastsString+". Так же быстро, как и началось, чувство проходит, и [npc.she] очень быстро [npc.verb(realise)], что [npc.her] "+nipplesString+" [style.boldGrow(стала более эластичной)].<br/>[npc.Name] теперь [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(elasticityDescriptor) + " " + elasticityDescriptor + " "+nipplesString+")]!"
 					+ "</p>");
 			
 		} else {
 			return UtilText.parse(owner, 
-					"<p>"
-						+ "[npc.Name] can't help but let out a surprised gasp as [npc.she] [npc.verb(feel)] a strange clenching sensation pulsating deep within [npc.her] "+breastsString+"."
-						+ " Just as quickly as it started, the feeling passes, and [npc.she] very quickly [npc.verb(realise)] that [npc.her] "+nipplesString+" [style.boldShrink(have lost some elasticity)].<br/>"
-						+ "[npc.Name] now [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(elasticityDescriptor) + " " + elasticityDescriptor + " "+nipplesString+")]!"
+					"<p>[npc.Name] невольно ахает от неожиданности, когда [npc.she] [npc.verb(feel)] странное ощущение сжатия, пульсирующее глубоко внутри [npc.her] "+breastsString+". Так же быстро, как и началось, чувство проходит, и [npc.she] очень быстро [npc.verb(realise)], что [npc.her] "+nipplesString+" [style.boldShrink(стала менее эластичной)].<br/>[npc.Name] теперь [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(elasticityDescriptor) + " " + elasticityDescriptor + " "+nipplesString+")]!"
 					+ "</p>");
 		}
 	}
@@ -278,24 +254,18 @@ public class OrificeNipples implements OrificeInterface {
 		String breastsString = isCrotchNipples()?"[npc.crotchBoobs]":"[npc.breasts]";
 		
 		if (plasticityChange == 0) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(The plasticity of [npc.namePos] "+nipplesString+" doesn't change...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(Пластичность [npc.namePos] "+nipplesString+" не меняется...)]</p>");
 		}
 		
 		String plasticityDescriptor = getPlasticity().getDescriptor();
 		if (plasticityChange > 0) {
 			return UtilText.parse(owner, 
-					"<p>"
-						+ "[npc.Name] [npc.verb(let)] out a shocked gasp as [npc.she] suddenly [npc.verb(feel)] a strange hardening sensation pulsating deep within [npc.her] "+breastsString+"."
-						+ " Before [npc.she] [npc.has] any time to panic, the feeling quickly fades away, leaving [npc.herHim] instinctively knowing that [npc.her] "+nipplesString+" [style.boldGrow(have gained some plasticity)].<br/>"
-						+ "[npc.Name] now [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(plasticityDescriptor) + " " + plasticityDescriptor + " "+nipplesString+")]!"
+					"<p>[npc.Name] [npc.verb(let)] от шока, когда [npc.she] внезапно [npc.verb(feel)] странное ощущение затвердевания, пульсирующее глубоко внутри [npc.her] "+breastsString+". Прежде чем [npc.she] [npc.has] успеет запаниковать, чувство быстро исчезает, оставляя [npc.herHim] с инстинктивным пониманием того, что [npc.her] "+nipplesString+" [style.boldGrow(обрела некоторую пластичность)].<br/>[npc.Name] теперь [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(plasticityDescriptor) + " " + plasticityDescriptor + " "+nipplesString+")]!"
 					+ "</p>");
 			
 		} else {
 			return UtilText.parse(owner, 
-					"<p>"
-						+ "[npc.Name] [npc.verb(let)] out a shocked gasp as [npc.she] suddenly [npc.verb(feel)] a strange softening sensation pulsating deep within [npc.her] "+breastsString+"."
-						+ " Before [npc.she] [npc.has] any time to panic, the feeling quickly fades away, leaving [npc.herHim] instinctively knowing that [npc.her] "+nipplesString+" [style.boldShrink(have lost some plasticity)].<br/>"
-						+ "[npc.Name] now [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(plasticityDescriptor) + " " + plasticityDescriptor + " "+nipplesString+")]!"
+					"<p>[npc.Name] [npc.verb(let)] от шока, когда [npc.she] внезапно [npc.verb(feel)] странное ощущение размягчения, пульсирующее глубоко внутри [npc.her] "+breastsString+". Прежде чем [npc.she] [npc.has] успеет запаниковать, чувство быстро исчезает, оставляя [npc.herHim] с инстинктивным пониманием того, что [npc.her] "+nipplesString+" [style.boldShrink(потеряла некоторую пластичность)].<br/>[npc.Name] теперь [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(plasticityDescriptor) + " " + plasticityDescriptor + " "+nipplesString+")]!"
 					+ "</p>");
 		}
 	}
@@ -322,7 +292,7 @@ public class OrificeNipples implements OrificeInterface {
 	@Override
 	public String addOrificeModifier(GameCharacter owner, OrificeModifier modifier) {
 		if(hasOrificeModifier(modifier)) {
-			return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+			return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 		}
 		
 		orificeModifiers.add(modifier);
@@ -338,52 +308,34 @@ public class OrificeNipples implements OrificeInterface {
 			case MUSCLE_CONTROL:
 				if(isCrotchNipples()?owner.isBreastCrotchFuckableNipplePenetration():owner.isBreastFuckableNipplePenetration()) {
 					return UtilText.parse(owner,
-							"<p>"
-								+ "An intense pressure suddenly swells up deep within [npc.namePos] "+breastsString+", and [npc.she] can't help but let out [npc.a_moan+] as [npc.she] feels a series of [style.boldGrow(extra muscles)]"
-									+ " growing down into the lining of [npc.her] "+nipplesString+"."
-								+ " [npc.sheIs] shocked to discover that [npc.sheHasFull] an incredible amount of control over them, allowing [npc.herHim] to expertly grip and squeeze down on any penetrating object.<br/>"
-								+ "[style.boldSex(The interior of [npc.namePos] "+nipplesString+" are now lined with an intricate series of muscles!)]"
-							+ "</p>");
+							"<p>Внутри [npc.namePos] внезапно нарастает сильное давление "+breastsString+", и [npc.she] не может не издать [npc.a_moan+], когда [npc.she] чувствует, как [style.boldGrow(дополнительные мышцы)] разрастаются вглубь слизистой [npc.her] "+nipplesString+". [npc.sheIs] в шоке от того, что [npc.sheHasFull] обладает невероятным контролем над ними, что позволяет [npc.herHim] умело обхватывать и сжимать любой проникающий объект.<br/>[style.boldSex(Внутри [npc.namePos] "+nipplesString+" теперь выстланы замысловатым рядом мышц!)]</p>");
 				}
 				break;
 			case RIBBED:
 				if(isCrotchNipples()?owner.isBreastCrotchFuckableNipplePenetration():owner.isBreastFuckableNipplePenetration()) {
 					return UtilText.parse(owner,
-							"<p>"
-								+ "An intense pressure suddenly swells up deep within [npc.namePos] "+breastsString+", and [npc.she] can't help but let out [npc.a_moan+] as [npc.she] feels a series of [style.boldGrow(fleshy, highly-sensitive ribs)]"
-									+ " growing down into the lining of [npc.her] "+nipplesString+"."
-								+ " Shifting [npc.her] "+breastsString+" around a little, a jolt of pleasure shoots through [npc.her] torso as [npc.she] feels [npc.her] new additions rub over one another, causing [npc.herHim] to let out another [npc.moan+].<br/>"
-								+ "[style.boldSex(The interior of [npc.namePos] "+nipplesString+" are now lined with fleshy, pleasure-inducing ribs!)]"
-							+ "</p>");
+							"<p>Внутри [npc.namePos] внезапно нарастает сильное давление "+breastsString+", и [npc.she] не может не издать [npc.a_moan+], когда [npc.she] чувствует, как [style.boldGrow(мясистые, сверхчувствительные ребра)] прорастают в стенки [npc.her] "+nipplesString+". Слегка пошевелив [npc.her] "+breastsString+" , разряд удовольствия пронзает торс [npc.her], пока [npc.she] чувствует, как новые наросты [npc.her] трутся друг о друга, заставляя [npc.herHim] издать еще один [npc.moan+].<br/>[style.boldSex(Внутри [npc.namePos] "+nipplesString+" теперь выстланы мясистыми, вызывающими наслаждение ребрами!)]</p>");
 				}
 				break;
 			case TENTACLED:
 				if(isCrotchNipples()?owner.isBreastCrotchFuckableNipplePenetration():owner.isBreastFuckableNipplePenetration()) {
 					return UtilText.parse(owner,
-							"<p>"
-								+ "An intense pressure suddenly swells up deep within [npc.namePos] "+breastsString+", and [npc.she] can't help but let out [npc.a_moan+] as [npc.she] feels a strange tingling sensation deep down in [npc.her] "+nipplesString+"."
-								+ " The tingling sensation grows stronger, and a surprised cry bursts out from [npc.her] mouth as [npc.she] suddenly discovers that the insides of [npc.her] "+nipplesString+" are now filled with"
-										+ " [style.boldGrow(a series of little wriggling tentacles)], over which [npc.sheHasFull] limited control.<br/>"
-								+ "[style.boldSex(The interior of [npc.namePos] "+nipplesString+" are now filled with little tentacles, which wriggle with a mind of their own!)]"
-							+ "</p>");
+							"<p>Внутри [npc.namePos] внезапно нарастает сильное давление "+breastsString+", и [npc.she] не может не издать [npc.a_moan+], когда [npc.she] чувствует странное покалывание глубоко внутри [npc.her] "+nipplesString+". Покалывание усиливается, и из уст [npc.her] вырывается удивленный крик, когда [npc.she] внезапно обнаруживает, что нутро [npc.her] "+nipplesString+" теперь заполнено [style.boldGrow(рядом маленьких извивающихся щупалец)], над которыми у [npc.sheHasFull] лишь ограниченный контроль.<br/>[style.boldSex(Внутри [npc.namePos] "+nipplesString+" теперь полно маленьких щупалец, которые извиваются сами по себе!)]</p>");
 				}
 				break;
 			case PUFFY:
 				return UtilText.parse(owner,
-						"<p>"
-							+ "[npc.Name] [npc.verb(let)] out a little cry as [npc.she] [npc.verb(feel)] a tingling sensation running over [npc.her] "+nipplesString+", before they suddenly swell out and [style.boldGrow(puff up)].<br/>"
-							+ "[style.boldSex([npc.NamePos] "+nipplesString+" are now extremely puffy!)]"
-						+ "</p>");
+						"<p>[npc.Name] [npc.verb(let)] короткий вскрик, когда [npc.she] [npc.verb(feel)] покалывание, пробегающее по [npc.her] "+nipplesString+", прежде чем они внезапно раздуваются и [style.boldGrow(наливаются)].<br/>[style.boldSex([npc.NamePos] "+nipplesString+" теперь невероятно опухшие!)]</p>");
 		}
 		
 		// Catch:
-		return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+		return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 	}
 
 	@Override
 	public String removeOrificeModifier(GameCharacter owner, OrificeModifier modifier) {
 		if(!hasOrificeModifier(modifier)) {
-			return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+			return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 		}
 		
 		orificeModifiers.remove(modifier);
@@ -399,44 +351,29 @@ public class OrificeNipples implements OrificeInterface {
 			case MUSCLE_CONTROL:
 				if(isCrotchNipples()?owner.isBreastCrotchFuckableNipplePenetration():owner.isBreastFuckableNipplePenetration()) {
 					return UtilText.parse(owner,
-							"<p>"
-								+ "A soothing warmth slowly washes up through [npc.namePos] torso, and an involuntary [pc.moan] drifts out from between [npc.her] [npc.lips] as [npc.she] [npc.verb(feel)] [npc.her] [style.boldShrink(extra muscles)]"
-									+ " melt back into the flesh of [npc.her] "+breastsString+".<br/>"
-								+ "[style.boldSex(The interior of [npc.namePos] "+nipplesString+" are no longer lined with an intricate series of muscles!)]"
-							+ "</p>");
+							"<p>Успокаивающее тепло медленно разливается по торсу [npc.namePos], и невольный [pc.moan] вырывается из между [npc.her] [npc.lips], пока [npc.she] [npc.verb(feel)] [npc.her] [style.boldShrink(лишние мышцы)] впитываются обратно в плоть [npc.her] "+breastsString+".<br/>[style.boldSex(Внутренности [npc.namePos] "+nipplesString+" больше не выстланы сложной сетью мышц!)]</p>");
 				}
 				break;
 			case RIBBED:
 				if(isCrotchNipples()?owner.isBreastCrotchFuckableNipplePenetration():owner.isBreastFuckableNipplePenetration()) {
 					return UtilText.parse(owner,
-							"<p>"
-								+ "A soothing warmth slowly washes up through [npc.namePos] torso, and an involuntary [pc.moan] drifts out from between [npc.her] [npc.lips] as"
-									+ " [npc.she] [npc.verb(feel)] [npc.her] [style.boldShrink(fleshy, highly-sensitive ribs)] melt back into the flesh of [npc.her] "+breastsString+".<br/>"
-								+ "[style.boldSex(The interior of [npc.namePos] "+nipplesString+" are no longer ribbed!)]"
-							+ "</p>");
+							"<p>Успокаивающее тепло медленно разливается по торсу [npc.namePos], и невольный [pc.moan] вырывается из между [npc.her] [npc.lips], пока [npc.she] [npc.verb(feel)] [npc.her] [style.boldShrink(мясистые, сверхчувствительные ребра)] впитываются обратно в плоть [npc.her] "+breastsString+".<br/>[style.boldSex(Внутренности [npc.namePos] "+nipplesString+" больше не ребристые!)]</p>");
 				}
 				break;
 					
 			case TENTACLED:
 				if(isCrotchNipples()?owner.isBreastCrotchFuckableNipplePenetration():owner.isBreastFuckableNipplePenetration()) {
 					return UtilText.parse(owner,
-							"<p>"
-								+ "A soothing warmth slowly washes up through [npc.namePos] torso, and an involuntary [npc.moan] drifts out from between [npc.her] [npc.lips]"
-									+ " as [npc.she] [npc.verb(feel)] [npc.her] [style.boldShrink(little wriggling tentacles)] melt back into the flesh of [npc.her] "+breastsString+".<br/>"
-								+ "[style.boldSex(The interior of [npc.namePos] "+nipplesString+" are no longer filled with little tentacles!)]"
-							+ "</p>");
+							"<p>Успокаивающее тепло медленно разливается по торсу [npc.namePos], и невольный [npc.moan] вырывается из между [npc.her] [npc.lips], пока [npc.she] [npc.verb(feel)] [npc.her] [style.boldShrink(маленькие извивающиеся щупальца)] впитываются обратно в плоть [npc.her] "+breastsString+".<br/>[style.boldSex(Внутренности [npc.namePos] "+nipplesString+" больше не наполнены маленькими щупальцами!)]</p>");
 				}
 				break;
 			case PUFFY:
 				return UtilText.parse(owner,
-						"<p>"
-							+ "[npc.Name] [npc.verb(let)] out a sigh as [npc.her] "+nipplesString+" [style.boldShrink(shrink down)] and lose their puffiness.<br/>"
-							+ "[style.boldSex([npc.NamePos] "+nipplesString+" are no longer extremely puffy!)]"
-						+ "</p>");
+						"<p>[npc.Name] [npc.verb(let)] вздыхает, когда [npc.her] "+nipplesString+" [style.boldShrink(сжимаются)] и теряют свою припухлость.<br/>[style.boldSex([npc.NamePos] "+nipplesString+" больше не выглядят невероятно раздутыми!)]</p>");
 		}
 		
 		// Catch:
-		return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+		return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 	}
 
 	public Set<OrificeModifier> getOrificeModifiers() {

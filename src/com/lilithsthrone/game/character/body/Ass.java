@@ -95,15 +95,13 @@ public class Ass implements BodyPartInterface {
 		}
 		
 		if (type == getType()) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] already [npc.has] the ass of [npc.a_assRace], so nothing happens...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] уже [npc.has] задницу [npc.a_assRace], так что ничего не происходит...)]</p>");
 		}
 		
 		StringBuilder sb = new StringBuilder();
 		
 		sb.append(
-				"<p>"
-				+ "[npc.NamePos] [npc.verb(feel)] [npc.her] [npc.ass] suddenly softening and becoming very sensitive, and [npc.she] [npc.verb(let)] out [npc.a_moan+] as the intense feeling moves down into [npc.her] [npc.asshole]."
-				+ " Panting and sighing, [npc.she] [npc.verb(continue)] letting out the occasional involuntary [npc.moan] as [npc.she] [npc.verb(feel)] [npc.her] entire rear-end transform.<br/>");
+				"<p>[npc.NamePos] [npc.verb(feel)] [npc.her] [npc.ass] внезапно смягчается и становится очень чувствительной, и [npc.she] [npc.verb(let)] [npc.a_moan+], когда интенсивное ощущение спускается вниз к [npc.her] [npc.asshole]. Тяжело дыша и вздыхая, [npc.she] [npc.verb(continue)] время от времени издает непроизвольные [npc.moan], пока [npc.she] [npc.verb(feel)] [npc.her] вся задница трансформируется.<br/>");
 		
 		// Parse existing content before transformation:
 		String s = UtilText.parse(owner, sb.toString());
@@ -144,35 +142,23 @@ public class Ass implements BodyPartInterface {
 		int sizeChange = this.assSize - oldSize;
 		
 		if (sizeChange == 0) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(The size of [npc.namePos] ass doesn't change...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(Размер задницы [npc.namePos] не меняется...)]</p>");
 		}
 		
 		String sizeDescriptor = getAssSize().getDescriptor();
 		if (sizeChange > 0) {
 			if (owner.isPlayer()) {
-				return "<p>"
-							+ "You feel a little off-balance as your [pc.ass] suddenly seems to get heavier, and as you give it an experimental shake, you find that it's definitely [style.boldGrow(grown larger)].<br/>"
-							+ "You now have [style.boldSex(" + UtilText.generateSingularDeterminer(sizeDescriptor) + " " + sizeDescriptor + " ass)]!"
-						+ "</p>";
+				return "<p>Вы чувствуете легкую потерю равновесия, так как ваша [pc.ass] внезапно кажется тяжелее, а когда вы экспериментально встряхиваете ею, то обнаруживаете, что она определенно [style.boldGrow(стала больше)].<br/>Теперь у вас [style.boldSex(\", \"" + UtilText.generateSingularDeterminer(sizeDescriptor) + " " + sizeDescriptor + " задница)]!</p>";
 			} else {
 				return UtilText.parse(owner,
-						"<p>"
-							+ "[npc.Name] looks to be a little off-balance as [npc.her] [npc.ass] suddenly seems to get bigger, and as [npc.she] gives it an experimental shake, [npc.she] discovers that it's definitely [style.boldGrow(grown larger)].<br/>"
-							+ "[npc.She] now has [style.boldSex(" + UtilText.generateSingularDeterminer(sizeDescriptor) + " " + sizeDescriptor + " ass)]!"
-						+ "</p>");
+						"<p>[npc.Name] кажется немного неустойчивой, так как [npc.her] [npc.ass] внезапно кажется больше, и когда [npc.she] экспериментально встряхивает ею, [npc.she] обнаруживает, что она определенно [style.boldGrow(стала больше)].<br/>Теперь у [npc.She] [style.boldSex(\", \"" + UtilText.generateSingularDeterminer(sizeDescriptor) + " " + sizeDescriptor + " задница)]!</p>");
 			}
 		} else {
 			if (owner.isPlayer()) {
-				return "<p>"
-							+ "You suddenly feel like a weight has been lifted from your rear end, and, giving your [pc.ass] an experimental shake, you discover that it's [style.boldShrink(shrunk)].<br/>"
-							+ "You now have [style.boldSex(" + UtilText.generateSingularDeterminer(sizeDescriptor) + " " + sizeDescriptor + " ass)]!"
-						+ "</p>";
+				return "<p>Вы внезапно чувствуете, будто с вашей задницы сняли тяжелый груз, и, экспериментально встряхнув своей [pc.ass], обнаруживаете, что она [style.boldShrink(уменьшилась)].<br/>Теперь у вас [style.boldSex(\", \"" + UtilText.generateSingularDeterminer(sizeDescriptor) + " " + sizeDescriptor + " задница)]!</p>";
 			} else {
 				return UtilText.parse(owner,
-						"<p>"
-							+ "[npc.Name] looks to be a little off-balance as [npc.her] [npc.ass] suddenly seems to get smaller, and as [npc.she] gives it an experimental shake, [npc.she] discovers that it's definitely [style.boldShrink(shrunk)].<br/>"
-							+ "[npc.She] now has [style.boldSex(" + UtilText.generateSingularDeterminer(sizeDescriptor) + " " + sizeDescriptor + " ass)]!"
-						+ "</p>");
+						"<p>[npc.Name] кажется слегка неустойчивой, так как [npc.her] [npc.ass] внезапно словно уменьшаются, а когда [npc.she] экспериментально встряхивает их, [npc.she] обнаруживает, что они определенно [style.boldShrink(уменьшились)].<br/>[npc.She] теперь имеет [style.boldSex(" + UtilText.generateSingularDeterminer(sizeDescriptor) + " " + sizeDescriptor + " задница)]!</p>");
 			}
 		}
 	}
@@ -199,22 +185,18 @@ public class Ass implements BodyPartInterface {
 		}
 		
 		if (sizeChange == 0) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(The size of [npc.namePos] hips doesn't change...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(Размер бедер [npc.namePos] не меняется...)]</p>");
 		}
 		
-		String styledSizeDescriptor = "[style.boldSex("+ getHipSize().getDescriptor() + " hips)]";
+		String styledSizeDescriptor = "[style.boldSex("+ getHipSize().getDescriptor() + " бедра)]";
 		if (sizeChange > 0) {
 			return UtilText.parse(owner,
-					"<p>"
-						+ "[npc.Name] [npc.verb(inhale)] sharply in surprise as [npc.she] [npc.verb(feel)] [npc.her] hips reshape themselves, pushing out and [style.boldGrow(growing wider)].<br/>"
-						+ "[npc.She] now [npc.has] " + styledSizeDescriptor + "!"
+					"<p>[npc.Name] [npc.verb(inhale)] резко вздрогнула от неожиданности, когда [npc.she] [npc.verb(feel)] [npc.her] бедра начали менять форму, выпячиваясь и [style.boldGrow(становясь шире)].<br/>[npc.She] теперь [npc.has] " + styledSizeDescriptor + "!"
 					+ "</p>");
 				
 		} else {
 			return UtilText.parse(owner,
-					"<p>"
-						+ "[npc.Name] [npc.verb(inhale)] sharply in surprise as [npc.she] [npc.verb(feel)] [npc.her] hips collapse inwards and reshape themselves as they get [style.boldShrink(narrower)].<br/>"
-						+ "[npc.She] now [npc.has] " + styledSizeDescriptor + "!"
+					"<p>[npc.Name] [npc.verb(inhale)] резко вздрагивает от неожиданности, когда [npc.she] [npc.verb(feel)] [npc.her] бедра прогибаются внутрь и меняют форму, становясь [style.boldShrink(уже)]<br/>[npc.She] теперь [npc.has] " + styledSizeDescriptor + "!"
 					+ "</p>");
 		}
 	}

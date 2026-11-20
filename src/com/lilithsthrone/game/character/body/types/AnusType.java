@@ -36,8 +36,8 @@ public class AnusType {
 			Race.ANGEL,
 			null,
 			null,
-			Util.newArrayListOfValues("angelic", "perfect"),
-			Util.newArrayListOfValues("angelic", "perfect"),
+			Util.newArrayListOfValues("ангельский", "идеальный"),
+			Util.newArrayListOfValues("ангельский", "идеальный"),
 			Util.newArrayListOfValues()){
 	};
 	
@@ -45,8 +45,8 @@ public class AnusType {
 			Race.DEMON,
 			null,
 			null,
-			Util.newArrayListOfValues("demonic", "irresistible"),
-			Util.newArrayListOfValues("demonic", "irresistible"),
+			Util.newArrayListOfValues("демонический", "неотразимый"),
+			Util.newArrayListOfValues("демонический", "неотразимый"),
 			Util.newArrayListOfValues(OrificeModifier.MUSCLE_CONTROL)){
 	};
 	
@@ -54,8 +54,8 @@ public class AnusType {
 			Race.COW_MORPH,
 			null,
 			null,
-			Util.newArrayListOfValues("cow-like", "bovine"),
-			Util.newArrayListOfValues("cow-like", "bovine"),
+			Util.newArrayListOfValues("коровьей формы", "бычий"),
+			Util.newArrayListOfValues("коровьей формы", "бычий"),
 			Util.newArrayListOfValues(OrificeModifier.PUFFY)){
 	};
 	
@@ -135,8 +135,8 @@ public class AnusType {
 			Race.HORSE_MORPH,
 			null,
 			null,
-			Util.newArrayListOfValues("horse-like", "equine"),
-			Util.newArrayListOfValues("horse-like", "equine"),
+			Util.newArrayListOfValues("лошадиный", "лошадиный"),
+			Util.newArrayListOfValues("лошадиный", "лошадиный"),
 			Util.newArrayListOfValues(OrificeModifier.PUFFY)){
 	};
 	
@@ -177,7 +177,7 @@ public class AnusType {
 
 		// Modded types:
 		
-		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/race", "bodyParts", null);
+		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/раса", "bodyParts", null);
 		for(Entry<String, Map<String, File>> entry : moddedFilesMap.entrySet()) {
 			for(Entry<String, File> innerEntry : entry.getValue().entrySet()) {
 				if(Util.getXmlRootElementName(innerEntry.getValue()).equals("anus")) {

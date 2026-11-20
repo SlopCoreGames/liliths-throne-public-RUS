@@ -168,8 +168,8 @@ public class FluidCum implements FluidInterface {
 		}
 		
 		return UtilText.returnStringAtRandom(
-				(gc.getAttributeValue(Attribute.VIRILITY)>=20?"potent":""),
-				"hot",
+				(gc.getAttributeValue(Attribute.VIRILITY)>=20?"сильный":""),
+				"горячая",
 				modifierDescriptor,
 				flavour.getRandomFlavourDescriptor(),
 				type.getDescriptor(gc));
@@ -195,18 +195,16 @@ public class FluidCum implements FluidInterface {
 		}
 		
 		if(this.flavour == flavour || !owner.hasPenis()) {
-			return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+			return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 		}
 		
 		this.flavour = flavour;
 		
 		return UtilText.parse(owner,
-				"<p>"
-					+ "A soothing warmth spreads down into [npc.namePos] [npc.balls+], causing [npc.herHim] to let out an involuntary [npc.moan].<br/>"
-					+ "[npc.NamePos] [npc.cum] "
+				"<p>Успокаивающее тепло разливается глубоко в [npc.namePos] [npc.balls+], заставляя [npc.herHim] невольно [npc.moan].<br/>[npc.NamePos] [npc.cum] "
 					+ (flavour==FluidFlavour.FLAVOURLESS
-						?"is now <b style='color:"+flavour.getColour().toWebHexString()+";'>"+flavour.getName()+"</b>"
-						:"now tastes of <b style='color:"+flavour.getColour().toWebHexString()+";'>"+flavour.getName()+"</b>.")
+						?"теперь <b style='color:"+flavour.getColour().toWebHexString()+";'>"+flavour.getName()+"</b>"
+						:"теперь на вкус как <b style='color:"+flavour.getColour().toWebHexString()+";'>"+flavour.getName()+"</b>.")
 				+ "</p>");
 	}
 	
@@ -221,7 +219,7 @@ public class FluidCum implements FluidInterface {
 		}
 		
 		if(fluidModifiers.contains(fluidModifier) || !owner.hasPenis()) {
-			return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+			return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 		}
 		
 		fluidModifiers.add(fluidModifier);
@@ -229,69 +227,39 @@ public class FluidCum implements FluidInterface {
 		switch(fluidModifier) {
 			case ADDICTIVE:
 				return UtilText.parse(owner,
-						"<p>"
-							+ "A strange, pulsating heat takes root deep within [npc.namePos] [npc.balls], causing [npc.herHim] to let out [npc.a_moan+].<br/>"
-							+ "[npc.NamePos] [npc.cum] is now [style.boldGrow(addictive)]!"
-						+ "</p>");
+						"<p>Странный, пульсирующий жар укореняется глубоко внутри [npc.namePos] [npc.balls], заставляя [npc.herHim] издать [npc.a_moan+].<br/>[npc.NamePos] [npc.cum] теперь [style.boldGrow(вызывающий привыкание)]!</p>");
 			case ALCOHOLIC:
 				fluidModifiers.remove(FluidModifier.ALCOHOLIC_WEAK);
 				return UtilText.parse(owner,
-						"<p>"
-							+ "A strange, soothing warmth takes root deep within [npc.namePos] [npc.balls], causing [npc.herHim] to let out [npc.a_moan+].<br/>"
-							+ "[npc.NamePos] [npc.cum] is now [style.boldGrow(strongly alcoholic)]!"
-						+ "</p>");
+						"<p>Странное, успокаивающее тепло укореняется глубоко внутри [npc.namePos] [npc.balls], заставляя [npc.herHim] издать [npc.a_moan+].<br/>[npc.NamePos] [npc.cum] теперь [style.boldGrow(крепко алкогольный)]!</p>");
 			case ALCOHOLIC_WEAK:
 				fluidModifiers.remove(FluidModifier.ALCOHOLIC);
 				return UtilText.parse(owner,
-						"<p>"
-							+ "A strange, soothing warmth takes root deep within [npc.namePos] [npc.balls], causing [npc.herHim] to let out [npc.a_moan+].<br/>"
-							+ "[npc.NamePos] [npc.cum] is now [style.boldGrow(alcoholic)]!"
-						+ "</p>");
+						"<p>Странное, успокаивающее тепло укореняется глубоко внутри [npc.namePos] [npc.balls], заставляя [npc.herHim] издать [npc.a_moan+].<br/>[npc.NamePos] [npc.cum] теперь [style.boldGrow(алкогольный)]!</p>");
 			case BUBBLING:
 				return UtilText.parse(owner,
-						"<p>"
-							+ "A light, bubbly feeling rises up into [npc.namePos] [npc.balls], causing [npc.herHim] to let out [npc.a_moan+].<br/>"
-							+ "[npc.NamePos] [npc.cum] is now [style.boldGrow(bubbly)]!"
-						+ "</p>");
+						"<p>Легкое, шипучее ощущение поднимается в [npc.namePos] [npc.balls], заставляя [npc.herHim] издать [npc.a_moan+].<br/>[npc.NamePos] [npc.cum] теперь [style.boldGrow(шипучий)]!</p>");
 			case HALLUCINOGENIC:
 				return UtilText.parse(owner,
-						"<p>"
-							+ "A series of strange pulses shoot down into [npc.namePos] [npc.balls], causing [npc.herHim] to let out [npc.a_moan+].<br/>"
-							+ "[npc.NamePos] [npc.cum] is now [style.boldGrow(psychoactive)]!"
-						+ "</p>");
+						"<p>Серия странных пульсаций пронзает [npc.namePos] [npc.balls], заставляя [npc.herHim] издать [npc.a_moan+].<br/>[npc.NamePos] [npc.cum] теперь [style.boldGrow(психоактивный)]!</p>");
 			case MINERAL_OIL:
 				return UtilText.parse(owner,
-						"<p>"
-							+ "A soothing warmth flows into [npc.namePos] [npc.balls], causing [npc.herHim] to let out [npc.a_moan+].<br/>"
-							+ "[npc.NamePos] [npc.cum] is now imbued with [style.boldGrow(mineral oil)], and can melt condoms!"
-						+ "</p>");
+						"<p>Успокаивающее тепло вливается в [npc.namePos] [npc.balls], заставляя [npc.herHim] издать [npc.a_moan+].<br/>[npc.NamePos] [npc.cum] теперь пропитан [style.boldGrow(минеральным маслом)] и может растворять презервативы!</p>");
 			case MUSKY:
 				return UtilText.parse(owner,
-						"<p>"
-							+ "A slow, creeping warmth rises up into [npc.namePos] [npc.balls], causing [npc.herHim] to let out [npc.a_moan+].<br/>"
-							+ "[npc.NamePos] [npc.cum] is now [style.boldGrow(musky)]!"
-						+ "</p>");
+						"<p>Медленное, ползучее тепло поднимается в [npc.namePos] [npc.balls], заставляя [npc.herHim] издать [npc.a_moan+].<br/>[npc.NamePos] [npc.cum] теперь [style.boldGrow(мускусный)]!</p>");
 			case SLIMY:
 				return UtilText.parse(owner,
-						"<p>"
-							+ "A strange, soothing warmth flows up into [npc.namePos] [npc.balls], causing [npc.herHim] to let out [npc.a_moan+].<br/>"
-							+ "[npc.NamePos] [npc.cum] is now [style.boldGrow(slimy)]!"
-						+ "</p>");
+						"<p>Странное, успокаивающее тепло разливается в [npc.namePos] [npc.balls], заставляя [npc.herHim] издать [npc.a_moan+].<br/>[npc.NamePos] [npc.cum] теперь [style.boldGrow(слизистый)]!</p>");
 			case STICKY:
 				return UtilText.parse(owner,
-						"<p>"
-							+ "A thick, sickly warmth flows up into [npc.namePos] [npc.balls], causing [npc.herHim] to let out [npc.a_moan+].<br/>"
-							+ "[npc.NamePos] [npc.cum] is now [style.boldGrow(sticky)]!"
-						+ "</p>");
+						"<p>Густое, тошнотворное тепло разливается в [npc.namePos] [npc.balls], заставляя [npc.herHim] издать [npc.a_moan+].<br/>[npc.NamePos] [npc.cum] теперь [style.boldGrow(липкий)]!</p>");
 			case VISCOUS:
 				return UtilText.parse(owner,
-						"<p>"
-							+ "A heavy heat slowly rises up into [npc.namePos] [npc.balls], causing [npc.herHim] to let out [npc.a_moan+].<br/>"
-							+ "[npc.NamePos] [npc.cum] is now [style.boldGrow(viscous)]!"
-						+ "</p>");
+						"<p>Тяжелый жар медленно поднимается в [npc.namePos] [npc.balls], заставляя [npc.herHim] издать [npc.a_moan+].<br/>[npc.NamePos] [npc.cum] теперь [style.boldGrow(вязкий)]!</p>");
 		}
 		
-		return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+		return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 	}
 	
 	public String removeFluidModifier(GameCharacter owner, FluidModifier fluidModifier) {
@@ -301,7 +269,7 @@ public class FluidCum implements FluidInterface {
 		}
 		
 		if(!fluidModifiers.contains(fluidModifier) || !owner.hasPenis()) {
-			return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+			return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 		}
 		
 		fluidModifiers.remove(fluidModifier);
@@ -309,62 +277,35 @@ public class FluidCum implements FluidInterface {
 		switch(fluidModifier) {
 			case ADDICTIVE:
 				return UtilText.parse(owner,
-						"<p>"
-							+ "A soft coolness spreads up into [npc.namePos] [npc.balls], causing [npc.herHim] to let out a gentle sigh.<br/>"
-							+ "[npc.NamePos] [npc.cum] is [style.boldShrink(no longer addictive)]!"
-						+ "</p>");
+						"<p>Мягкая прохлада разливается в [npc.namePos] [npc.balls], заставляя [npc.herHim] тихо вздохнуть.<br/>[npc.NamePos] [npc.cum] [style.boldShrink(больше не вызывает привыкания)]!</p>");
 			case ALCOHOLIC:
 			case ALCOHOLIC_WEAK:
 				return UtilText.parse(owner,
-						"<p>"
-							+ "A soft coolness spreads up into [npc.namePos] [npc.balls], causing [npc.herHim] to let out a gentle sigh.<br/>"
-							+ "[npc.NamePos] [npc.cum] is [style.boldShrink(no longer alcoholic)]!"
-						+ "</p>");
+						"<p>Мягкая прохлада разливается в [npc.namePos] [npc.balls], заставляя [npc.herHim] тихо вздохнуть.<br/>[npc.NamePos] [npc.cum] [style.boldShrink(больше не содержит алкоголя)]!</p>");
 			case BUBBLING:
 				return UtilText.parse(owner,
-						"<p>"
-							+ "A calm, settling feeling spreads up into [npc.namePos] [npc.balls], causing [npc.herHim] to let out a gentle sigh.<br/>"
-							+ "[npc.NamePos] [npc.cum] is [style.boldShrink(no longer bubbly)]!"
-						+ "</p>");
+						"<p>Спокойное, умиротворяющее чувство разливается в [npc.namePos] [npc.balls], заставляя [npc.herHim] тихо вздохнуть.<br/>[npc.NamePos] [npc.cum] [style.boldShrink(больше не шипучий)]!</p>");
 			case HALLUCINOGENIC:
 				return UtilText.parse(owner,
-						"<p>"
-							+ "A series of soothing waves wash up into [npc.namePos] [npc.balls], causing [npc.herHim] to let out a gentle sigh.<br/>"
-							+ "[npc.NamePos] [npc.cum] is [style.boldShrink(no longer psychoactive)]!"
-						+ "</p>");
+						"<p>Череда успокаивающих волн омывает [npc.namePos] [npc.balls], заставляя [npc.herHim] тихо вздохнуть.<br/>[npc.NamePos] [npc.cum] [style.boldShrink(больше не обладает психоактивным эффектом)]!</p>");
 			case MUSKY:
 				return UtilText.parse(owner,
-						"<p>"
-							+ "A gentle coolness rises up into [npc.namePos] [npc.balls], causing [npc.herHim] to let out a soft sigh.<br/>"
-							+ "[npc.NamePos] [npc.cum] is [style.boldShrink(no longer musky)]!"
-						+ "</p>");
+						"<p>Легкая прохлада поднимается к [npc.namePos] [npc.balls], заставляя [npc.herHim] издавать мягкий вздох.<br/>[npc.NamePos] [npc.cum] [style.boldShrink(больше не мускусный)]!</p>");
 			case SLIMY:
 				return UtilText.parse(owner,
-						"<p>"
-							+ "A calming coolness flows up into [npc.namePos] [npc.balls], causing [npc.herHim] to let out a gentle sigh.<br/>"
-							+ "[npc.NamePos] [npc.cum] is [style.boldShrink(no longer slimy)]!"
-						+ "</p>");
+						"<p>Успокаивающая прохлада струится к [npc.namePos] [npc.balls], заставляя [npc.herHim] тихо вздохнуть.<br/>[npc.NamePos] [npc.cum] [style.boldShrink(больше не слизистый)]!</p>");
 			case STICKY:
 				return UtilText.parse(owner,
-						"<p>"
-							+ "A soft warmth flows up into [npc.namePos] [npc.balls], causing [npc.herHim] to let out a gentle sigh.<br/>"
-							+ "[npc.NamePos] [npc.cum] is [style.boldShrink(no longer sticky)]!"
-						+ "</p>");
+						"<p>Мягкое тепло струится к [npc.namePos] [npc.balls], заставляя [npc.herHim] тихо вздохнуть.<br/>[npc.NamePos] [npc.cum] [style.boldShrink(больше не липкий)]!</p>");
 			case VISCOUS:
 				return UtilText.parse(owner,
-						"<p>"
-							+ "A soft coolness rises up into [npc.namePos] [npc.balls], causing [npc.herHim] to let out a gentle sigh.<br/>"
-							+ "[npc.NamePos] [npc.cum] is [style.boldShrink(no longer viscous)]!"
-						+ "</p>");
+						"<p>Легкая прохлада поднимается к [npc.namePos] [npc.balls], заставляя [npc.herHim] тихо вздохнуть.<br/>[npc.NamePos] [npc.cum] [style.boldShrink(больше не вязкий)]!</p>");
 			case MINERAL_OIL:
 				return UtilText.parse(owner,
-						"<p>"
-							+ "A short relief flows up into [npc.namePos] [npc.balls], causing [npc.herHim] to let out a gentle sigh.<br/>"
-							+ "[npc.NamePos] [npc.cum] is [style.boldShrink(no longer mineral oil)]!"
-						+ "</p>");
+						"<p>Кратковременное облегчение разливается по [npc.namePos] [npc.balls], заставляя [npc.herHim] тихо вздохнуть.<br/>[npc.NamePos] [npc.cum] [style.boldShrink(больше не напоминает минеральное масло)]!</p>");
 		}
 		
-		return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+		return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 	}
 	
 	public List<ItemEffect> getTransformativeEffects() {

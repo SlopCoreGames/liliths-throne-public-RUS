@@ -91,24 +91,18 @@ public class Breast implements BodyPartInterface {
 			if(!isCharacterInitialised(owner)) {
 				return "";
 			}
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] already [npc.has] "+shape.getDescriptor()+" breasts, so nothing happens...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(у [npc.Name] уже [npc.has] "+shape.getDescriptor()+" груди, так что ничего не происходит...)]</p>");
 		}
 		
 		this.shape = shape;
 		
 		if(!owner.hasBreasts()) {
 			return UtilText.parse(owner,
-					"<p>"
-						+ "A strange tingling feeling rises up into [npc.namePos] [npc.breasts+], but as [npc.she] [npc.do]n't have any breasts, nothing seems to happen...<br/>"
-						+ "If [npc.she] ever [npc.verb(grow)] any, [npc.name] will now have [style.boldSex("+shape.getDescriptor()+" breasts)]!"
-					+ "</p>");
+					"<p>Странное покалывание поднимается к [npc.namePos] [npc.breasts+], но так как у [npc.she] [npc.do] нет груди, кажется, ничего не происходит...<br/>Если [npc.she] когда-нибудь [npc.verb(grow)], у [npc.name] теперь будут [style.boldSex("+shape.getDescriptor()+" грудь)]!</p>");
 		}
 		
 		return UtilText.parse(owner,
-				"<p>"
-					+ "A strange tingling feeling rises up into [npc.namePos] [npc.breasts+], and before [npc.she] [npc.verb(know)] what's happening, they've transformed into a new shape...<br/>"
-					+ "[npc.Name] now [npc.has] [style.boldSex("+shape.getDescriptor()+" breasts)]!"
-				+ "</p>");
+				"<p>Странное покалывание поднимается к [npc.namePos] [npc.breasts+], и прежде чем [npc.she] [npc.verb(know)] поймет, что происходит, они уже изменили свою форму...<br/>[npc.Name] теперь [npc.has] [style.boldSex("+shape.getDescriptor()+" грудь)]!</p>");
 		
 	}
 
@@ -184,19 +178,13 @@ public class Breast implements BodyPartInterface {
 		}
 		
 		if (type == getType()) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] already [npc.has] the breasts of [npc.a_breastRace], so nothing happens...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] уже [npc.has] грудь [npc.a_breastRace], так что ничего не происходит...)]</p>");
 		}
 		
 		StringBuilder sb = new StringBuilder();
 		
 		sb.append(
-				"<p>"
-					+ "The front of [npc.namePos] torso suddenly feels extremely soft and sensitive, and [npc.she] can't help but let out [npc.a_moan+] as [npc.she] [npc.verb(feel)] a transformation start to take place."
-					+" [npc.Her] nipples and areolae tingle and harden, causing [npc.herHim] to pant and let out a lewd [npc.moan] as the intense transformation runs its course."
-					+ " While there's no change to the [npc.breastFullDescription] which covers [npc.her] [npc.breasts],"
-						+ " [npc.she] [npc.verb(feel)] #IFnpc.hasBreasts()#THENtheir#ELSEits#ENDIF interior structure shifting and changing into a new form."
-					+ " After just a moment, the transformation ends, leaving [npc.herHim] with [npc.totalNipples] new nipples."
-					+ "<br/>");
+				"<p>Передняя часть [npc.namePos] торса внезапно становится невероятно мягкой и чувствительной, и [npc.she] не может сдержать [npc.a_moan+], когда [npc.she] [npc.verb(feel)] начинается трансформация. [npc.Her] соски и ареолы покалывает и твердеет, заставляя [npc.herHim] тяжело дышать и издавать похотливый [npc.moan], пока интенсивная трансформация идет своим чередом. Хотя [npc.breastFullDescription], покрывающий [npc.her] [npc.breasts], не меняется, [npc.she] [npc.verb(feel)] #IFnpc.hasBreasts()#THENих#ELSEеё#ENDIF внутренняя структура смещается и принимает новую форму. Спустя мгновение трансформация завершается, оставляя [npc.herHim] с [npc.totalNipples] новыми сосками.<br/>");
 		
 		// Parse existing content before transformation:
 		String s = UtilText.parse(owner, sb.toString());
@@ -246,32 +234,27 @@ public class Breast implements BodyPartInterface {
 		
 		if(!isAbleToIncubateEggs() && owner.getIncubationLitter(SexAreaOrifice.NIPPLE)!=null) {
 			this.size = CupSize.getMinimumCupSizeForEggIncubation().getMeasurement();
-			return UtilText.parse(owner, "<p style='text-align:center;'>Due to the fact that [npc.namePos] breasts are incubating eggs,"
-					+ " [style.colourMinorBad(their size cannot be reduced past "+CupSize.getMinimumCupSizeForEggIncubation().getCupSizeName()+"-cups)]!</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>Из-за того, что [npc.namePos] грудь инкубирует яйца, [style.colourMinorBad(их размер не может быть меньше чем "+CupSize.getMinimumCupSizeForEggIncubation().getCupSizeName()+"-й размер)]!</p>");
 		}
 
 		if (sizeChange == 0) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(The size of [npc.namePos] [npc.breasts] doesn't change...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(Размер [npc.namePos] [npc.breasts] не меняется...)]</p>");
 		}
 		
 		String sizeDescriptor = getSize().getDescriptor();
 		if (sizeChange > 0) {
 			return UtilText.parse(owner,
-					"<p>"
-						+ "[npc.Name] [npc.verb(feel)] a tingling heat quickly spreading throughout [npc.her] torso, and [npc.she] can't help but let out [npc.a_moan+] as [npc.her] "
+					"<p>[npc.Name] [npc.verb(feel)] покалывающий жар быстро распространяется по [npc.her] торсу, и [npc.she] не может не выдать [npc.a_moan+], когда [npc.her] "
 						+ (hadBreasts
-								? "[npc.breasts] swell up and [style.boldGrow(grow larger)].<br/>"
-								: "chest swells up, and before [npc.she] [npc.verb(know)] what's happening, a pair of breasts have [style.boldGrow(grown)] out of [npc.her] previously-flat torso.<br/>")
-						+ "[npc.Name] now [npc.has] [style.boldSex(" + sizeDescriptor + (getSize().getMeasurement()>CupSize.AA.getMeasurement()?", "+getSize().getCupSizeName()+"-cup":"") + " breasts)]!"
-					+ "</p>");
+								? "[npc.breasts] набухают и [style.boldGrow(растут)].<br/>"
+								: "грудь набухает, и прежде чем [npc.she] [npc.verb(know)] осознает, что происходит, пара грудей уже [style.boldGrow(выросла)] из ранее плоского [npc.her] торса.<br/>")
+						+ "[npc.Name] теперь [npc.has] [style.boldSex(" + sizeDescriptor + (getSize().getMeasurement()>CupSize.AA.getMeasurement()?", "+getSize().getCupSizeName()+"-го размера":"") + " грудь)]!</p>");
 		} else {
 			return UtilText.parse(owner,
-					"<p>"
-						+ "[npc.Name] [npc.verb(feel)] a tingling heat quickly spreading throughout [npc.her] torso,"
-							+ " and [npc.she] can't help but let out a frustrated [npc.moan] as [npc.her] [npc.breasts] shrink down and [style.boldShrink(get smaller)].<br/>"
+					"<p>[npc.Name] [npc.verb(feel)] ощущает, как покалывающий жар быстро распространяется по торсу [npc.her], и [npc.she] не может сдержать разочарованного [npc.moan], пока [npc.her] [npc.breasts] [style.boldShrink(уменьшаются)].<br/>"
 						+ (this.size==0
-							? "[npc.Name] now [npc.has] [style.boldSex(a completely flat chest)]!"
-							: "[npc.Name] now [npc.has] [style.boldSex(" + sizeDescriptor + (getSize().getMeasurement()>CupSize.AA.getMeasurement()?", "+getSize().getCupSizeName()+"-cup":"") + " breasts)]!")
+							? "[npc.Name] теперь [npc.has] [style.boldSex(совершенно плоская грудь)]!"
+							: "[npc.Name] теперь [npc.has] [style.boldSex(" + sizeDescriptor + (getSize().getMeasurement()>CupSize.AA.getMeasurement()?", "+getSize().getCupSizeName()+"-го размера":"") + " груди)]!")
 					+ "</p>");
 		}
 	}
@@ -298,24 +281,18 @@ public class Breast implements BodyPartInterface {
 		}
 		
 		if (lactationChange == 0) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(The amount of [npc.milk] that [npc.nameIsFull] able to produce doesn't change...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(Количество [npc.milk], которое [npc.nameIsFull] способна производить, не меняется...)]</p>");
 		}
 		
 		String lactationDescriptor = getMilkStorage().getDescriptor();
 		if (lactationChange > 0) {
 			return UtilText.parse(owner,
-					"<p>"
-						+ "[npc.Name] [npc.verb(feel)] a strange bubbling and churning taking place deep within [npc.her] [npc.breasts], and [npc.a_moan+] drifts out from between [npc.her] [npc.lips] as a few drops of [npc.milk] suddenly leak"
-							+ " from [npc.her] [npc.nipples]; clear evidence that [npc.her] [npc.milk] production has [style.boldGrow(increased)].<br/>"
-						+ "[npc.NameIsFull] now able to produce [style.boldSex(" + lactationDescriptor + " [npc.milk])]!"
+					"<p>[npc.Name] [npc.verb(feel)] ощущает странное бурление и клокотание глубоко внутри [npc.her] [npc.breasts], и [npc.a_moan+] вырывается из между [npc.her] [npc.lips], когда несколько капель [npc.milk] внезапно просачиваются из [npc.her] [npc.nipples]; явное свидетельство того, что производство [npc.her] [npc.milk] [style.boldGrow(увеличилось)].<br/>[npc.NameIsFull] теперь способна производить [style.boldSex(" + lactationDescriptor + " [npc.milk])]!"
 					+ "</p>");
 			
 		} else {
 			return UtilText.parse(owner,
-					"<p>"
-						+ "[npc.Name] [npc.verb(feel)] a strange sucking sensation deep within [npc.her] [npc.breasts],"
-							+ " and a frustrated sigh drifts out from between [npc.her] [npc.lips] as [npc.she] [npc.verb(realise)] that [npc.sheIs] feeling [npc.her] [npc.milk] production [style.boldShrink(drying up)].<br/>"
-						+ "[npc.NameIsFull] now able to produce [style.boldSex(" + lactationDescriptor + " [npc.milk])]."
+					"<p>[npc.Name] [npc.verb(feel)] ощущает странное сосательное чувство глубоко внутри [npc.her] [npc.breasts], и разочарованный вздох вырывается из между [npc.her] [npc.lips], когда [npc.she] [npc.verb(realise)], что [npc.sheIs] чувство [npc.her] [npc.milk] производства [style.boldShrink(иссушает)].<br/>[npc.NameIsFull] теперь способна производить [style.boldSex(" + lactationDescriptor + " [npc.milk])]."
 					+ "</p>");
 		}
 	}
@@ -348,13 +325,13 @@ public class Breast implements BodyPartInterface {
 			return UtilText.parse(owner,
 					"<p style='text-align:center;'><i style='color:"+PresetColour.BASE_YELLOW_LIGHT.toWebHexString()+";'>"
 							+ UtilText.returnStringAtRandom(
-									Units.fluid(lactationChange, Units.UnitType.LONG)+" of [npc.namePos] [npc.milk] squirts out of [npc.her] [npc.nipples+].",
-									Units.fluid(lactationChange, Units.UnitType.LONG)+" of [npc.milk+] squirts out of [npc.namePos] [npc.nipples+].",
-									Units.fluid(lactationChange, Units.UnitType.LONG)+" of [npc.namePos] [npc.milk] leaks out of [npc.her] [npc.nipples+].",
-									Units.fluid(lactationChange, Units.UnitType.LONG)+" of [npc.milk+] leaks out of [npc.namePos] [npc.nipples+].")
+									Units.fluid(lactationChange, Units.UnitType.LONG)+" [npc.namePos] [npc.milk] брызгает из [npc.her] [npc.nipples+].",
+									Units.fluid(lactationChange, Units.UnitType.LONG)+" [npc.milk+] брызгает из [npc.namePos] [npc.nipples+].",
+									Units.fluid(lactationChange, Units.UnitType.LONG)+" [npc.namePos] [npc.milk] вытекает из [npc.her] [npc.nipples+].",
+									Units.fluid(lactationChange, Units.UnitType.LONG)+" из [npc.namePos] [npc.nipples+] вытекает [npc.milk+].")
 					+ "</i>"
 					+ (this.milkStored==0
-						?"<br/><i>[npc.Name] now [npc.has] no more [npc.milk] stored in [npc.her] breasts!</i>"
+						?"<br/><i>[npc.Name] теперь [npc.has] больше нет [npc.milk], запасенных в [npc.her] груди!</i>"
 						:"")
 					+ "</p>");
 		}
@@ -383,25 +360,17 @@ public class Breast implements BodyPartInterface {
 		}
 		
 		if (regenerationChange == 0) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.namePos] rate of [npc.milk] regeneration doesn't change...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(скорость регенерации [npc.milk] [npc.namePos] не меняется...)]</p>");
 		}
 		
 		String regenerationDescriptor = getLactationRegeneration().getName();
 		if (regenerationChange > 0) {
 			return UtilText.parse(owner,
-					"<p>"
-						+ "[npc.Name] [npc.verb(feel)] an alarming bubbling and churning taking place deep within [npc.her] [npc.breasts], and [npc.a_moan+] drifts out from between [npc.her] [npc.lips] as a few drops of [npc.milk] suddenly leak"
-							+ " from [npc.her] [npc.nipples]; clear evidence that [npc.her] [npc.milk] regeneration has [style.boldGrow(increased)].<br/>"
-						+ "[npc.NamePos] rate of [npc.milk] regeneration is now [style.boldSex(" + regenerationDescriptor + ")] ("+Units.fluid(milkRegeneration)+"/day)!"
-					+ "</p>");
+					"<p>[npc.Name] [npc.verb(feel)] an alarming bubbling and churning taking place deep within [npc.her] [npc.breasts], and [npc.a_moan+] drifts out from between [npc.her] [npc.lips] as a few drops of [npc.milk] suddenly leak from [npc.her] [npc.nipples]; clear evidence that [npc.her] [npc.milk] regeneration has [style.boldGrow(increased)].<br/>[npc.NamePos] rate of [npc.milk] regeneration is now [style.boldSex(" + regenerationDescriptor + ")] ("+Units.fluid(milkRegeneration)+"/день)!</p>");
 			
 		} else {
 			return UtilText.parse(owner,
-					"<p>"
-						+ "[npc.Name] [npc.verb(feel)] a strange sucking sensation deep within [npc.her] [npc.breasts],"
-							+ " and a frustrated sigh drifts out from between [npc.her] [npc.lips] as [npc.she] realises that [npc.sheIs] feeling [npc.her] [npc.milk] regeneration [style.boldShrink(decreasing)].<br/>"
-						+ "[npc.NamePos] rate of [npc.milk] regeneration is now [style.boldSex(" + regenerationDescriptor + ")] ("+Units.fluid(milkRegeneration)+"/day)!"
-					+ "</p>");
+					"<p>[npc.Name] [npc.verb(feel)] странное сосательное ощущение глубоко внутри [npc.her] [npc.breasts], и разочарованный вздох вырывается из-за [npc.her] [npc.lips], когда [npc.she] осознает, что [npc.sheIs] чувство [npc.her] [npc.milk] регенерации [style.boldShrink(замедляется)].<br/>[npc.NamePos] скорость [npc.milk] регенерации теперь [style.boldSex(" + regenerationDescriptor + ")] ("+Units.fluid(milkRegeneration)+"/день)!</p>");
 		}
 	}
 	
@@ -422,7 +391,7 @@ public class Breast implements BodyPartInterface {
 		}
 		
 		if(rows == getRows()) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(The number of breast rows [npc.nameHasFull] doesn't change...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(Количество рядов груди [npc.nameHasFull] не меняется...)]</p>");
 		}
 		
 		String transformation = "";
@@ -431,24 +400,20 @@ public class Breast implements BodyPartInterface {
 		
 		if (rows < getRows()) {
 			transformation = UtilText.parse(owner,
-						"<p>"
-							+ "[npc.Name] [npc.verb(glance)] down worriedly as [npc.she] [npc.verb(feel)] a strange tightening sensation in [npc.her] torso, and before [npc.sheHasFull] time to react, [npc.her] "
+						"<p>[npc.Name] [npc.verb(glance)] обеспокоенно вниз, когда [npc.she] [npc.verb(feel)] странное чувство стягивания в [npc.her] торсе, и прежде чем [npc.sheHasFull] успевает среагировать, [npc.her] "
 							+ (rowsDifference==1
-								?"lowest pair of [npc.breasts]"
-								:"lowest "+Util.intToString(rowsDifference)+" pairs of [npc.breasts]")
-							+ " rapidly shrink away and [style.boldShrink(disappear)] into the [npc.skin] of [npc.her] torso.<br/>"
-							+ "[npc.Name] now [npc.has] [style.boldSex("+ Util.intToString(rows) + " pair"+ (rows > 1 ? "s" : "") + " of " + (hasBreasts() ? "breasts" : "pecs") +")]!" 
+								?"нижняя пара [npc.breasts]"
+								:"самые нижние "+Util.intToString(rowsDifference)+" пар [npc.breasts]")
+							+ " быстро уменьшаются и [style.boldShrink(исчезают)] в [npc.skin] [npc.her] торса.<br/>[npc.Name] теперь [npc.has] [style.boldSex("+ Util.intToString(rows) + " пара"+ (rows > 1 ? "s" : "") + " из " + (hasBreasts() ? "груди" : "грудные мышцы") +")]!" 
 						+ "</p>");
 			
 		} else if (rows > getRows()) {
 			transformation = UtilText.parse(owner,
-						"<p>"
-							+ "[npc.Name] [npc.verb(glance)] down in surprise as [npc.she] [npc.verb(feel)] a strange swelling sensation in [npc.her] torso, and before [npc.sheHasFull] time to react, "
+						"<p>[npc.Name] [npc.verb(glance)] от неожиданности, так как [npc.she] [npc.verb(feel)] странное чувство распирания в [npc.her] торсе, и прежде чем [npc.sheHasFull] успевает среагировать, "
 							+ (rowsDifference==1
-								?"an extra pair of [npc.breasts]"
-								:Util.intToString(rowsDifference)+" extra pairs of [npc.breasts]")
-							+ " rapidly [style.boldGrow(grow)] out of the [npc.skin] of [npc.her] torso.<br/>"
-							+ "[npc.Name] now [npc.has] [style.boldSex("+ Util.intToString(rows) + " pair"+ (rows > 1 ? "s" : "") + " of " + (hasBreasts() ? "breasts" : "pecs") +")]!" 
+								?"дополнительная пара [npc.breasts]"
+								:Util.intToString(rowsDifference)+" дополнительные пары [npc.breasts]")
+							+ " быстро [style.boldGrow(вырастают)] из [npc.skin] [npc.her] торса.<br/>[npc.Name] теперь [npc.has] [style.boldSex("+ Util.intToString(rows) + " пара"+ (rows > 1 ? "s" : "") + " из " + (hasBreasts() ? "груди" : "грудные мышцы") +")]!" 
 						+ "</p>");
 		}
 
@@ -483,27 +448,19 @@ public class Breast implements BodyPartInterface {
 		}
 		
 		if (this.nippleCountPerBreast == nippleCountPerBreast) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(The number of [npc.nipples] [npc.nameHasFull] doesn't change...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(Количество [npc.nipples] [npc.nameHasFull] не меняется...)]</p>");
 		}
 		
 		String transformation = "";
 		
 		if (nippleCountPerBreast < getNippleCountPerBreast()) {
 			transformation = UtilText.parse(owner,
-					"<p>"
-						+ "[npc.Name] [npc.verb(feel)] a strange tingling sensation running just beneath the surface of the [npc.breastSkin] that covers [npc.her] [npc.breasts]."
-						+ " A shocked gasp bursts from [npc.her] mouth as the force shoots up into [npc.her] [npc.nipples],"
-							+ " and [npc.she] [npc.verb(continue)] [npc.moaning] as some of them [style.boldShrink(shrink)] into the flesh of [npc.her] [npc.breasts].<br/>"
-						+ "[npc.Name] now [npc.has] [style.boldSex("+ Util.intToString(nippleCountPerBreast) + " "+ (nippleCountPerBreast > 1 ? "[npc.nipples]" : "[npc.nipple(true)]") + " on each of [npc.her] " + (hasBreasts() ? "breasts" : "pecs") +")]!" 
+					"<p>[npc.Name] [npc.verb(feel)] странное покалывание прямо под поверхностью [npc.breastSkin], покрывающей [npc.her] [npc.breasts]. Изумленный вздох вырывается из [npc.her] рта, когда сила устремляется вверх в [npc.her] [npc.nipples], и [npc.she] [npc.verb(continue)] [npc.moaning], пока некоторые из них [style.boldShrink(втягиваются)] в плоть [npc.her] [npc.breasts].<br/>[npc.Name] теперь [npc.has] [style.boldSex("+ Util.intToString(nippleCountPerBreast) + " "+ (nippleCountPerBreast > 1 ? "[npc.nipples]" : "[npc.nipple(true)]") + " на каждой из [npc.her] " + (hasBreasts() ? "груди" : "грудные мышцы") +")]!" 
 					+ "</p>");
 			
 		} else if (nippleCountPerBreast > getNippleCountPerBreast()) {
 			transformation = UtilText.parse(owner,
-					"<p>"
-						+ "[npc.Name] [npc.verb(feel)] a strange tingling sensation running just beneath the surface of the [npc.breastSkin] that covers [npc.her] [npc.breasts]."
-						+ " A shocked gasp bursts from [npc.her] mouth as the force shoots up into [npc.her] [npc.nipples],"
-							+ " and [npc.she] [npc.verb(continue)] [npc.moaning] as [npc.she] feels new ones [style.boldGrow(growing)] out of the flesh of [npc.her] [npc.breasts].<br/>"
-						+ "[npc.Name] now [npc.has] [style.boldSex("+ Util.intToString(nippleCountPerBreast) + " "+ (nippleCountPerBreast > 1 ? "[npc.nipples]" : "[npc.nipple(true)]") + " on each of [npc.her] " + (hasBreasts() ? "breasts" : "pecs") +")]!" 
+					"<p>[npc.Name] [npc.verb(feel)] странное покалывание, пробегающее прямо под поверхностью [npc.breastSkin], покрывающей [npc.her] [npc.breasts]. С [npc.her] рта срывается потрясенный вздох, когда сила устремляется вверх в [npc.her] [npc.nipples], и [npc.she] [npc.verb(continue)] [npc.moaning], пока [npc.she] чувствует, как новые [style.boldGrow(растут)] прямо из плоти [npc.her] [npc.breasts].<br/>[npc.Name] теперь [npc.has] [style.boldSex("+ Util.intToString(nippleCountPerBreast) + " "+ (nippleCountPerBreast > 1 ? "[npc.nipples]" : "[npc.nipple(true)]") + " на каждой из [npc.her] " + (hasBreasts() ? "груди" : "грудные мышцы") +")]!" 
 					+ "</p>");
 			
 		}

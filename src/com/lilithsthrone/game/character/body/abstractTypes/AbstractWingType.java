@@ -167,7 +167,7 @@ public abstract class AbstractWingType implements BodyPartTypeInterface {
 	
 	@Override
 	public String getDeterminer(GameCharacter gc) {
-		return "a pair of";
+		return "пара";
 	}
 
 	public boolean allowsFlight() {

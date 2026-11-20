@@ -67,15 +67,12 @@ public class Leg implements BodyPartInterface {
 		
 		if(this.getFootStructure()==footStructure) {
 			return UtilText.parse(owner,
-					"<p>"
-						+ "[style.colourDisabled(Nothing happens, as [npc.namePos] [npc.feet] are already [npc.footStructure]...)]"
-					+ "</p>");
+					"<p>[style.colourDisabled(Ничего не происходит, так как [npc.namePos] и [npc.feet] уже [npc.footStructure]...)]</p>");
 		}
 		
 		if(!type.getFootType().getPermittedFootStructures(owner.getLegConfiguration()).contains(footStructure)) {
 			return UtilText.parse(owner,
-					"<p>"
-						+ "[style.colourDisabled(Nothing happens, as [npc.namePos] [npc.feet] cannot transform to be "+footStructure.getName()+"...)]"
+					"<p>[style.colourDisabled(Ничего не происходит, так как [npc.namePos] [npc.feet] не могут превратиться в "+footStructure.getName()+"...)]"
 					+ "</p>");
 		}
 
@@ -84,25 +81,23 @@ public class Leg implements BodyPartInterface {
 		
 		StringBuilder sb = new StringBuilder();
 
-		sb.append("<p>"
-				+ "[npc.Name] [npc.verb(let)] out a shocked gasp as [npc.she] suddenly [npc.verb(feel)] an intense heat shoot down into [npc.her] [npc.legs] and [npc.feet]."
-				+ " Staggering and swaying, [npc.she] almost [npc.verb(lose)] [npc.her] balance as the structure of [npc.her] feet transforms and changes.</br>");
+		sb.append("<p>[npc.Name] [npc.verb(let)] от шокированного вздоха, когда [npc.she] внезапно [npc.verb(feel)] сильный жар, пронзающий [npc.her] [npc.legs] и [npc.feet]. Пошатываясь и покачиваясь, [npc.she] почти [npc.verb(lose)] [npc.her] равновесие, пока структура [npc.her] ног трансформируется и меняется.</br>");
 		
 		switch(footStructure) {
 			case NONE:
-				sb.append("After just a moment, [npc.sheIs] left with [style.boldTfGeneric(no [npc.feet])]!");
+				sb.append("Спустя мгновение, у [npc.sheIs] [style.boldTfGeneric(не осталось [npc.feet])]!");
 				break;
 			case DIGITIGRADE:
-				sb.append("After just a moment, [npc.sheIs] left with [style.boldTfGeneric(digitigrade [npc.feet])], meaning that [npc.she] now [npc.verb(walk)] on [npc.her] toes, with [npc.her] heel being permanently raised.");
+				sb.append("Спустя мгновение, [npc.sheIs] [style.boldTfGeneric(остались с пальцеходящими [npc.feet])], а это значит, что [npc.she] теперь [npc.verb(walk)] на [npc.her] пальцах, при этом [npc.her] пятка навсегда приподнята.");
 				break;
 			case PLANTIGRADE:
-				sb.append("After just a moment, [npc.sheIs] left with [style.boldTfGeneric(plantigrade [npc.feet])], meaning that [npc.she] now [npc.verb(walk)] with [npc.her] feet flat on the ground.");
+				sb.append("Спустя мгновение, [npc.sheIs] [style.boldTfGeneric(остались с пятипалыми [npc.feet])], а это значит, что [npc.she] теперь [npc.verb(walk)], при этом [npc.her] стопы плотно стоят на земле.");
 				break;
 			case UNGULIGRADE:
-				sb.append("After just a moment, [npc.sheIs] left with [style.boldTfGeneric(unguligrade [npc.feet])], meaning that [npc.she] now [npc.verb(walk)] on [npc.her] [npc.toes], with the rest of [npc.her] foot being permanently raised.");
+				sb.append("Спустя мгновение, [npc.sheIs] [style.boldTfGeneric(остались с копытообразными [npc.feet])], а это значит, что [npc.she] теперь [npc.verb(walk)] на [npc.her] [npc.toes], при этом остальная часть [npc.her] стопы навсегда приподнята.");
 				break;
 			case ARACHNOID:
-				sb.append("After just a moment, [npc.sheIs] left with [style.boldTfGeneric(arachnoid [npc.feet])], meaning that [npc.she] now [npc.verb(walk)] on the ends of [npc.her] segmented arachnoid legs.");
+				sb.append("Спустя мгновение, [npc.sheIs] [style.boldTfGeneric(остались с паукообразными [npc.feet])], а это значит, что [npc.she] теперь [npc.verb(walk)] на концах [npc.her] сегментированных паукообразных ног.");
 				break;
 			case TENTACLED:
 				break;
@@ -179,15 +174,14 @@ public class Leg implements BodyPartInterface {
 		}
 		
 		if(type == getType()) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] already [npc.has] the [npc.legs] of [npc.a_legRace], so nothing happens...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] уже [npc.has] [npc.legs] [npc.a_legRace], так что ничего не происходит...)]</p>");
 		}
 		
 		
 		StringBuilder sb = new StringBuilder();
 		
 		sb.append(
-				"<p>"
-					+ "[npc.NamePos] [npc.legs] start to wobble and feel weak, and [npc.she] almost [npc.verb(lose)] [npc.her] balance as they start to transform. ");
+				"<p>[npc.NamePos] [npc.legs] начинают дрожать и слабеть, а [npc.she] почти [npc.verb(lose)] [npc.her] равновесие по мере того, как начинается трансформация. ");
 		
 		// Parse existing content before transformation:
 		String s = UtilText.parse(owner, sb.toString());
@@ -204,8 +198,7 @@ public class Leg implements BodyPartInterface {
 		
 		if(!type.isLegsReplacedByTentacles() && type.getDefaultFootStructure(this.getLegConfiguration())!=FootStructure.NONE) {
 			sb.append(
-					"<p>"
-						+ "The transformation has left the structure of [npc.her] [npc.feet] as [style.boldTFGeneric("+this.footStructure.getName()+")]! "+this.footStructure.getDescription()
+					"<p>Трансформация оставила структуру [npc.her] [npc.feet] в виде [style.boldTFGeneric("+this.footStructure.getName()+")]! "+this.footStructure.getDescription()
 					+ "</p>");
 		}
 		
@@ -267,30 +260,22 @@ public class Leg implements BodyPartInterface {
 		}
 		
 		if(owner.getLegConfiguration()!=LegConfiguration.TAIL_LONG) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(As [npc.name] [npc.do] not have a "+LegConfiguration.TAIL_LONG+" lower-body, nothing seems to happen...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(Так как у [npc.name] [npc.do] нет "+LegConfiguration.TAIL_LONG+" нижней части тела, кажется, ничего не происходит...)]</p>");
 		}
 		
 		if(lengthChange == 0) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(The length of [npc.namePos] [npc.tail] doesn't change...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(Длина [npc.namePos] [npc.tail] не меняется...)]</p>");
 		}
 		
-		String heightPercentageDescription = " (length is "+((int)(owner.getLegTailLengthAsPercentageOfHeight()*100))+"% of [npc.namePos] height)";
+		String heightPercentageDescription = " (длина составляет "+((int)(owner.getLegTailLengthAsPercentageOfHeight()*100))+"% oф при росте [npc.namePos])";
 		if(lengthChange>0) {
 			return UtilText.parse(owner,
-					"<p>"
-						+ "[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(feel)] a deep throbbing sensation building up within [npc.her] [npc.tail+]."
-						+ " Without any further warning of what's to come, [npc.her] [npc.tail] suddenly [style.boldGrow(grows longer)]."
-						+ "<br/>"
-						+ "[npc.She] now [npc.has] [style.boldTfGeneric([npc.a_tailLength] [npc.tail])]"+heightPercentageDescription+"!"
+					"<p>[npc.Name] [npc.verb(let)] [npc.a_moan+], когда [npc.she] [npc.verb(feel)] глубокое пульсирующее ощущение, нарастающее внутри [npc.her] [npc.tail+]. Без всякого предупреждения о том, что будет дальше, [npc.her] [npc.tail] внезапно [style.boldGrow(удлиняется)].<br/>[npc.She] теперь [npc.has] [style.boldTfGeneric([npc.a_tailLength] [npc.tail])]"+heightPercentageDescription+"!"
 					+ "</p>");
 				
 		} else {
 			return UtilText.parse(owner,
-					"<p>"
-						+ "[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(feel)] a deep throbbing sensation building up within [npc.her] [npc.tail+]."
-						+ " Without any further warning of what's to come, [npc.her] [npc.tail] suddenly [style.boldShrink(shortens)]."
-						+ "<br/>"
-						+ "[npc.She] now [npc.has] [style.boldTfGeneric([npc.a_tailLength] [npc.tail])]"+heightPercentageDescription+"!"
+					"<p>[npc.Name] [npc.verb(let)] [npc.a_moan+], когда [npc.she] [npc.verb(feel)] глубокое пульсирующее ощущение, нарастающее внутри [npc.her] [npc.tail+]. Без всякого предупреждения о том, что будет дальше, [npc.her] [npc.tail] внезапно [style.boldShrink(укорачивается)].<br/>[npc.She] теперь [npc.has] [style.boldTfGeneric([npc.a_tailLength] [npc.tail])]"+heightPercentageDescription+"!"
 					+ "</p>");
 		}
 	}

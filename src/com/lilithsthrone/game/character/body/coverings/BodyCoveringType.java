@@ -38,10 +38,10 @@ public class BodyCoveringType {
 	
 	public static AbstractBodyCoveringType FOX_FUR = new AbstractBodyCoveringType(
 			BodyCoveringCategory.MAIN_FUR,
-			"a layer of",
+			"слой",
 			false,
-			"fur",
-			"fur",
+			"мех",
+			"мех",
 			Util.newArrayListOfValues(
 					CoveringModifier.FLUFFY,
 					CoveringModifier.SMOOTH),
@@ -68,10 +68,10 @@ public class BodyCoveringType {
 
 	public static AbstractBodyCoveringType ANGEL_FEATHER = new AbstractBodyCoveringType(
 			BodyCoveringCategory.MAIN_FEATHER,
-			"a layer of",
+			"слой",
 			true,
-			"feathers",
-			"feather",
+			"перья",
+			"перо",
 			Util.newArrayListOfValues(CoveringModifier.SMOOTH),
 			null,
 			Util.newHashMapOfValues(new Value<>(CoveringPattern.NONE, 1)),
@@ -91,10 +91,10 @@ public class BodyCoveringType {
 
 	public static AbstractBodyCoveringType DEMON_FEATHER = new AbstractBodyCoveringType(
 			BodyCoveringCategory.MAIN_FEATHER,
-			"a layer of",
+			"слой",
 			true,
-			"feathers",
-			"feather",
+			"перья",
+			"перо",
 			Util.newArrayListOfValues(CoveringModifier.SMOOTH),
 			null,
 			Util.newHashMapOfValues(new Value<>(CoveringPattern.NONE, 1)),
@@ -194,10 +194,10 @@ public class BodyCoveringType {
 	
 	public static AbstractBodyCoveringType HORSE_HAIR = new AbstractBodyCoveringType(
 			BodyCoveringCategory.MAIN_HAIR,
-			"a layer of",
+			"слой",
 			false,
-			"hair",
-			"hair",
+			"волосы",
+			"волосы",
 			Util.newArrayListOfValues(CoveringModifier.SHORT),
 			null,
 			Util.newHashMapOfValues(
@@ -237,10 +237,10 @@ public class BodyCoveringType {
 	/** Used for their leg covering */
 	public static AbstractBodyCoveringType HARPY_SKIN = new AbstractBodyCoveringType(
 			BodyCoveringCategory.MAIN_SKIN,
-			"a layer of", // This colour is set in GameCharacter's getCovering method, based on the colour of the dildo equipped.
+			"слой", // This colour is set in GameCharacter's getCovering method, based on the colour of the dildo equipped.
 			false,
-			"skin",
-			"skin",
+			"кожа",
+			"кожа",
 			Util.newArrayListOfValues(CoveringModifier.LEATHERY),
 			null,
 			null,
@@ -258,10 +258,10 @@ public class BodyCoveringType {
 	
 	public static AbstractBodyCoveringType DILDO = new AbstractBodyCoveringType(
 			BodyCoveringCategory.ARTIFICIAL,
-			"a layer of", // This colour is set in GameCharacter's getCovering method, based on the colour of the dildo equipped.
+			"слой", // This colour is set in GameCharacter's getCovering method, based on the colour of the dildo equipped.
 			false,
-			"silicone",
-			"silicone",
+			"силикон",
+			"силикон",
 			Util.newArrayListOfValues(CoveringModifier.SMOOTH),
 			null,
 			null,
@@ -310,10 +310,10 @@ public class BodyCoveringType {
 	
 	public static AbstractBodyCoveringType ALLIGATOR_SCALES = new AbstractBodyCoveringType(
 			BodyCoveringCategory.MAIN_SCALES,
-			"a layer of",
+			"слой",
 			true,
-			"scales",
-			"scale",
+			"чешуя",
+			"чешуйка",
 			Util.newArrayListOfValues(CoveringModifier.SMOOTH),
 			null,
 			Util.newHashMapOfValues(new Value<>(CoveringPattern.NONE, 1)),
@@ -326,10 +326,10 @@ public class BodyCoveringType {
 
 	public static AbstractBodyCoveringType SNAKE_SCALES = new AbstractBodyCoveringType(
 			BodyCoveringCategory.MAIN_SCALES,
-			"a layer of",
+			"слой",
 			true,
-			"scales",
-			"scale",
+			"чешуя",
+			"чешуйка",
 			Util.newArrayListOfValues(CoveringModifier.SMOOTH),
 			null,
 			Util.newHashMapOfValues(new Value<>(CoveringPattern.NONE, 1)),
@@ -342,10 +342,10 @@ public class BodyCoveringType {
 	
 	public static AbstractBodyCoveringType SPIDER_CHITIN = new AbstractBodyCoveringType(
 			BodyCoveringCategory.MAIN_CHITIN,
-			"a layer of",
+			"слой",
 			false,
-			"chitin",
-			"chitin",
+			"хитин",
+			"хитин",
 			Util.newArrayListOfValues(CoveringModifier.SMOOTH),
 			null,
 			Util.newHashMapOfValues(new Value<>(CoveringPattern.NONE, 1)),
@@ -358,10 +358,10 @@ public class BodyCoveringType {
 	
 	public static AbstractBodyCoveringType OCTOPUS_SKIN = new AbstractBodyCoveringType(
 			BodyCoveringCategory.MAIN_SKIN,
-			"a layer of",
+			"слой",
 			false,
-			"skin",
-			"skin",
+			"кожа",
+			"кожа",
 			Util.newArrayListOfValues(CoveringModifier.SMOOTH),
 			null,
 			Util.newHashMapOfValues(new Value<>(CoveringPattern.NONE, 1)),
@@ -376,10 +376,10 @@ public class BodyCoveringType {
 
 	public static AbstractBodyCoveringType FISH_SCALES = new AbstractBodyCoveringType(
 			BodyCoveringCategory.MAIN_SCALES,
-			"a layer of",
+			"слой",
 			true,
-			"scales",
-			"scale",
+			"чешуя",
+			"чешуйка",
 			Util.newArrayListOfValues(CoveringModifier.SMOOTH),
 			null,
 			Util.newHashMapOfValues(new Value<>(CoveringPattern.NONE, 1)),
@@ -394,10 +394,10 @@ public class BodyCoveringType {
 
 	public static AbstractBodyCoveringType ANTENNA = new AbstractBodyCoveringType(
 			BodyCoveringCategory.ANTENNAE,
-			"a layer of",
+			"слой",
 			false,
-			"chitin",
-			"chitin",
+			"хитин",
+			"хитин",
 			Util.newArrayListOfValues(CoveringModifier.SMOOTH),
 			null,
 			null,
@@ -410,10 +410,10 @@ public class BodyCoveringType {
 	
 	public static AbstractBodyCoveringType HORN = new AbstractBodyCoveringType(
 			BodyCoveringCategory.HORN,
-			"a layer of",
+			"слой",
 			false,
-			"keratin",
-			"keratin",
+			"кератин",
+			"кератин",
 			Util.newArrayListOfValues(CoveringModifier.SMOOTH),
 			null,
 			null,
@@ -426,10 +426,10 @@ public class BodyCoveringType {
 
 	public static AbstractBodyCoveringType ANTLER = new AbstractBodyCoveringType(
 			BodyCoveringCategory.ANTLER,
-			"a layer of",
+			"слой",
 			false,
-			"velvet",
-			"velvet",
+			"бархат",
+			"бархат",
 			Util.newArrayListOfValues(CoveringModifier.SMOOTH),
 			null,
 			null,
@@ -442,10 +442,10 @@ public class BodyCoveringType {
 
 	public static AbstractBodyCoveringType TONGUE = new AbstractBodyCoveringType(
 			BodyCoveringCategory.TONGUE,
-			"a layer of",
+			"слой",
 			false,
-			"skin",
-			"skin",
+			"кожа",
+			"кожа",
 			Util.newArrayListOfValues(CoveringModifier.SMOOTH),
 			null,
 			null,
@@ -464,10 +464,10 @@ public class BodyCoveringType {
 
 	public static AbstractBodyCoveringType FEATHERS = new AbstractBodyCoveringType(
 			BodyCoveringCategory.MAIN_FEATHER,
-			"a layer of",
+			"слой",
 			true,
-			"feathers",
-			"feather",
+			"перья",
+			"перо",
 			Util.newArrayListOfValues(CoveringModifier.SMOOTH),
 			null,
 			Util.newHashMapOfValues(
@@ -485,10 +485,10 @@ public class BodyCoveringType {
 
 	public static AbstractBodyCoveringType WING_LEATHER = new AbstractBodyCoveringType(
 			BodyCoveringCategory.MAIN_SKIN,
-			"a layer of",
+			"слой",
 			false,
-			"skin",
-			"skin",
+			"кожа",
+			"кожа",
 			Util.newArrayListOfValues(CoveringModifier.LEATHERY),
 			null,
 			Util.newHashMapOfValues(new Value<>(CoveringPattern.NONE, 1)),
@@ -501,10 +501,10 @@ public class BodyCoveringType {
 	
 	public static AbstractBodyCoveringType WING_CHITIN = new AbstractBodyCoveringType(
 			BodyCoveringCategory.MAIN_CHITIN,
-			"a layer of",
+			"слой",
 			false,
-			"chitin",
-			"chitin",
+			"хитин",
+			"хитин",
 			Util.newArrayListOfValues(CoveringModifier.SMOOTH),
 			null,
 			Util.newHashMapOfValues(new Value<>(CoveringPattern.NONE, 1)),
@@ -527,10 +527,10 @@ public class BodyCoveringType {
 	
 	public static AbstractBodyCoveringType HAIR_FOX_FUR = new AbstractBodyCoveringType(
 			BodyCoveringCategory.HAIR,
-			"a layer of",
+			"слой",
 			false,
-			"hair",
-			"hair",
+			"волосы",
+			"волосы",
 			Util.newArrayListOfValues(
 					CoveringModifier.FURRY),
 			null,
@@ -588,10 +588,10 @@ public class BodyCoveringType {
 	
 	public static AbstractBodyCoveringType HAIR_HARPY = new AbstractBodyCoveringType(
 			BodyCoveringCategory.HAIR,
-			"a plume of",
+			"пучок",
 			true,
-			"feathers",
-			"feather",
+			"перья",
+			"перо",
 			Util.newArrayListOfValues(CoveringModifier.SMOOTH),
 			null,
 			CoveringPattern.allHairCoveringPatterns,
@@ -667,10 +667,10 @@ public class BodyCoveringType {
 	
 	public static AbstractBodyCoveringType BODY_HAIR_HARPY = new AbstractBodyCoveringType(
 			BodyCoveringCategory.BODY_HAIR,
-			"a patch of",
+			"участок",
 			true,
-			"feathers",
-			"feather",
+			"перья",
+			"перо",
 			Util.newArrayListOfValues(CoveringModifier.FLUFFY),
 			null,
 			null,
@@ -715,10 +715,10 @@ public class BodyCoveringType {
 	
 	public static AbstractBodyCoveringType EYE_FOX_MORPH = new AbstractBodyCoveringType(
 			BodyCoveringCategory.EYE_IRIS,
-			"a pair of",
+			"пара",
 			true,
-			"eyes",
-			"eye",
+			"глаза",
+			"глаз",
 			Util.newArrayListOfValues(
 					CoveringModifier.EYE),
 			null,
@@ -774,10 +774,10 @@ public class BodyCoveringType {
 
 	public static AbstractBodyCoveringType EYE_PUPILS = new AbstractBodyCoveringType(
 			BodyCoveringCategory.EYE_PUPIL,
-			"a pair of",
+			"пара",
 			true,
-			"pupils",
-			"pupil",
+			"зрачки",
+			"зрачок",
 			Util.newArrayListOfValues(CoveringModifier.EYE),
 			null,
 			Util.newHashMapOfValues(new Value<>(CoveringPattern.EYE_PUPILS, 1)),
@@ -790,10 +790,10 @@ public class BodyCoveringType {
 
 	public static AbstractBodyCoveringType EYE_SCLERA = new AbstractBodyCoveringType(
 			BodyCoveringCategory.EYE_SCLERA,
-			"a pair of",
+			"пара",
 			true,
-			"sclerae",
-			"sclera",
+			"склеры",
+			"склера",
 			Util.newArrayListOfValues(CoveringModifier.EYE),
 			null,
 			Util.newHashMapOfValues(new Value<>(CoveringPattern.EYE_SCLERA, 1)),
@@ -811,8 +811,8 @@ public class BodyCoveringType {
 			BodyCoveringCategory.FLUID,
 			"",
 			false,
-			"cum",
-			"cum",
+			"сперма",
+			"сперма",
 			Util.newArrayListOfValues(CoveringModifier.FLUID),
 			null,
 			Util.newHashMapOfValues(new Value<>(CoveringPattern.FLUID, 1)),
@@ -827,8 +827,8 @@ public class BodyCoveringType {
 			BodyCoveringCategory.FLUID,
 			"",
 			false,
-			"girlcum",
-			"girlcum",
+			"девичья сперма",
+			"девичья сперма",
 			Util.newArrayListOfValues(CoveringModifier.FLUID),
 			null,
 			Util.newHashMapOfValues(new Value<>(CoveringPattern.FLUID, 1)),
@@ -843,8 +843,8 @@ public class BodyCoveringType {
 			BodyCoveringCategory.FLUID,
 			"",
 			false,
-			"milk",
-			"milk",
+			"молоко",
+			"молоко",
 			Util.newArrayListOfValues(CoveringModifier.FLUID),
 			null,
 			Util.newHashMapOfValues(new Value<>(CoveringPattern.FLUID, 1)),
@@ -860,10 +860,10 @@ public class BodyCoveringType {
 	
 	public static AbstractBodyCoveringType MAKEUP_BLUSHER = new AbstractBodyCoveringType(
 			BodyCoveringCategory.MAKEUP,
-			"a layer of",
+			"слой",
 			false,
-			"blusher",
-			"blusher",
+			"румяна",
+			"румяна",
 			Util.newArrayListOfValues(CoveringModifier.MAKEUP),
 			null,
 			Util.newHashMapOfValues(new Value<>(CoveringPattern.NONE, 1)),
@@ -876,10 +876,10 @@ public class BodyCoveringType {
 	
 	public static AbstractBodyCoveringType MAKEUP_EYE_LINER = new AbstractBodyCoveringType(
 			BodyCoveringCategory.MAKEUP,
-			"a layer of",
+			"слой",
 			false,
-			"eye liner",
-			"eye liner",
+			"подводка для глаз",
+			"подводка для глаз",
 			Util.newArrayListOfValues(CoveringModifier.MAKEUP),
 			null,
 			Util.newHashMapOfValues(new Value<>(CoveringPattern.NONE, 1)),
@@ -892,10 +892,10 @@ public class BodyCoveringType {
 	
 	public static AbstractBodyCoveringType MAKEUP_EYE_SHADOW = new AbstractBodyCoveringType(
 			BodyCoveringCategory.MAKEUP,
-			"a layer of",
+			"слой",
 			false,
-			"eye shadow",
-			"eye shadow",
+			"тени для глаз",
+			"тени для глаз",
 			Util.newArrayListOfValues(
 					CoveringModifier.MATTE,
 					CoveringModifier.SPARKLY,
@@ -911,10 +911,10 @@ public class BodyCoveringType {
 
 	public static AbstractBodyCoveringType MAKEUP_LIPSTICK = new AbstractBodyCoveringType(
 			BodyCoveringCategory.MAKEUP,
-			"a layer of",
+			"слой",
 			false,
-			"lipstick",
-			"lipstick",
+			"помада",
+			"помада",
 			Util.newArrayListOfValues(
 					CoveringModifier.GLOSSY,
 					CoveringModifier.MATTE,
@@ -933,10 +933,10 @@ public class BodyCoveringType {
 	
 	public static AbstractBodyCoveringType MAKEUP_NAIL_POLISH_HANDS = new AbstractBodyCoveringType(
 			BodyCoveringCategory.MAKEUP,
-			"a layer of",
+			"слой",
 			false,
-			"nail polish",
-			"nail polish",
+			"лак для ногтей",
+			"лак для ногтей",
 			Util.newArrayListOfValues(
 					CoveringModifier.SMOOTH,
 					CoveringModifier.SPARKLY,
@@ -954,10 +954,10 @@ public class BodyCoveringType {
 	
 	public static AbstractBodyCoveringType MAKEUP_NAIL_POLISH_FEET = new AbstractBodyCoveringType(
 			BodyCoveringCategory.MAKEUP,
-			"a layer of",
+			"слой",
 			false,
-			"nail polish",
-			"nail polish",
+			"лак для ногтей",
+			"лак для ногтей",
 			Util.newArrayListOfValues(
 					CoveringModifier.SMOOTH,
 					CoveringModifier.SPARKLY,
@@ -1054,7 +1054,7 @@ public class BodyCoveringType {
 		
 		// Modded covering types:
 		
-		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/race", "coveringTypes", null);
+		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/раса", "coveringTypes", null);
 		for(Entry<String, Map<String, File>> entry : moddedFilesMap.entrySet()) {
 			for(Entry<String, File> innerEntry : entry.getValue().entrySet()) {
 				try {

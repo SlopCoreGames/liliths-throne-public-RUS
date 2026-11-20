@@ -167,7 +167,7 @@ public abstract class AbstractFluidType implements BodyPartTypeInterface {
 	
 	@Override
 	public String getDeterminer(GameCharacter gc) {
-		return "some";
+		return "немного";
 	}
 
 	@Override

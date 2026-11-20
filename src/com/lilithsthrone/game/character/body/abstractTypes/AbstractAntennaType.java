@@ -154,24 +154,24 @@ public abstract class AbstractAntennaType implements BodyPartTypeInterface {
 	public String getDeterminer(GameCharacter gc) {
 		if(gc.getAntennaRows()==1) {
 			if(gc.getAntennaePerRow()==1) {
-				return "a solitary";
+				return "одинокая";
 			} else if(gc.getAntennaePerRow()==2) {
-				return "a pair of";
+				return "пара";
 			} else if(gc.getAntennaePerRow()==3) {
-				return "a trio of";
+				return "троица";
 			} else {
-				return "a quartet of";
+				return "четверка";
 			}
 			
 		} else {
 			if(gc.getAntennaePerRow()==1) {
 				return Util.intToString(gc.getAntennaRows())+" vertically-aligned";
 			} else if(gc.getAntennaePerRow()==2) {
-				return Util.intToString(gc.getAntennaRows())+" pairs of";
+				return Util.intToString(gc.getAntennaRows())+" пары";
 			} else if(gc.getAntennaePerRow()==3) {
-				return Util.intToString(gc.getAntennaRows())+" trios of";
+				return Util.intToString(gc.getAntennaRows())+" троицы";
 			} else {
-				return Util.intToString(gc.getAntennaRows())+" quartets of";
+				return Util.intToString(gc.getAntennaRows())+" четверки";
 			}
 		}
 	}

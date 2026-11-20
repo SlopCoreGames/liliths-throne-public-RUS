@@ -199,29 +199,25 @@ public class FluidMilk implements FluidInterface {
 		}
 		
 		if(this.flavour == flavour) {
-			return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+			return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 		}
 
 		this.flavour = flavour;
 		
 		if(this.isCrotchMilk()) {
 			return UtilText.parse(owner,
-					"<p>"
-						+ "A soothing warmth spreads through [npc.namePos] [npc.crotchBoobs], causing [npc.herHim] to let out a contented little sigh.<br/>"
-						+ "[npc.NamePos] [npc.crotchMilk] "
+					"<p>Успокаивающее тепло разливается по [npc.namePos] [npc.crotchBoobs], заставляя [npc.herHim] издать довольный тихий вздох.<br/>[npc.NamePos] [npc.crotchMilk] "
 						+ (flavour==FluidFlavour.FLAVOURLESS
-							?"is now <b style='color:"+flavour.getColour().toWebHexString()+";'>"+flavour.getName()+"</b>"
-							:"now tastes of <b style='color:"+flavour.getColour().toWebHexString()+";'>"+flavour.getName()+"</b>.")
+							?"теперь <b style='color:"+flavour.getColour().toWebHexString()+";'>"+flavour.getName()+"</b>"
+							:"теперь на вкус как <b style='color:"+flavour.getColour().toWebHexString()+";'>"+flavour.getName()+"</b>.")
 					+ "</p>");
 			
 		} else {
 			return UtilText.parse(owner,
-					"<p>"
-						+ "A soothing warmth spreads through [npc.namePos] [npc.breasts], causing [npc.herHim] to let out a contented little sigh.<br/>"
-						+ "[npc.NamePos] [npc.milk] "
+					"<p>Успокаивающее тепло разливается по [npc.namePos] [npc.breasts], заставляя [npc.herHim] издать довольный тихий вздох.<br/>[npc.NamePos] [npc.milk] "
 						+ (flavour==FluidFlavour.FLAVOURLESS
-							?"is now <b style='color:"+flavour.getColour().toWebHexString()+";'>"+flavour.getName()+"</b>"
-							:"now tastes of <b style='color:"+flavour.getColour().toWebHexString()+";'>"+flavour.getName()+"</b>.")
+							?"теперь <b style='color:"+flavour.getColour().toWebHexString()+";'>"+flavour.getName()+"</b>"
+							:"теперь на вкус как <b style='color:"+flavour.getColour().toWebHexString()+";'>"+flavour.getName()+"</b>.")
 					+ "</p>");
 		}
 	}
@@ -232,7 +228,7 @@ public class FluidMilk implements FluidInterface {
 	
 	public String addFluidModifier(GameCharacter owner, FluidModifier fluidModifier) {
 		if(fluidModifiers.contains(fluidModifier)) {
-			return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+			return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 		}
 		
 		fluidModifiers.add(fluidModifier);
@@ -245,153 +241,93 @@ public class FluidMilk implements FluidInterface {
 			case ADDICTIVE:
 				if(this.isCrotchMilk()) {
 					return UtilText.parse(owner,
-							"<p>"
-								+ "A strange, pulsating heat spreads through [npc.namePos] [npc.crotchBoobs], causing [npc.herHim] to let out [npc.a_moan+].<br/>"
-								+ "[npc.NamePos] [npc.crotchMilk] is now [style.boldGrow(addictive)]!"
-							+ "</p>");
+							"<p>Странный, пульсирующий жар разливается по [npc.namePos] [npc.crotchBoobs], заставляя [npc.herHim] издать [npc.a_moan+].<br/>[npc.NamePos] [npc.crotchMilk] теперь [style.boldGrow(вызывает привыкание)]!</p>");
 				} else {
 					return UtilText.parse(owner,
-							"<p>"
-								+ "A strange, pulsating heat spreads through [npc.namePos] [npc.breasts], causing [npc.herHim] to let out [npc.a_moan+].<br/>"
-								+ "[npc.NamePos] [npc.milk] is now [style.boldGrow(addictive)]!"
-							+ "</p>");
+							"<p>Странный, пульсирующий жар разливается по [npc.namePos] [npc.breasts], заставляя [npc.herHim] издать [npc.a_moan+].<br/>[npc.NamePos] [npc.milk] теперь [style.boldGrow(вызывает привыкание)]!</p>");
 				}
 			case ALCOHOLIC:
 				fluidModifiers.remove(FluidModifier.ALCOHOLIC_WEAK);
 				if(this.isCrotchMilk()) {
 					return UtilText.parse(owner,
-							"<p>"
-								+ "A strange, soothing warmth spreads up through [npc.namePos] [npc.crotchBoobs], causing [npc.herHim] to let out [npc.a_moan+].<br/>"
-								+ "[npc.NamePos] [npc.crotchMilk] is now [style.boldGrow(strongly alcoholic)]!"
-							+ "</p>");
+							"<p>Странное, успокаивающее тепло разливается по [npc.namePos] [npc.crotchBoobs], заставляя [npc.herHim] издать [npc.a_moan+].<br/>[npc.NamePos] [npc.crotchMilk] теперь [style.boldGrow(крепкий алкоголь)]!</p>");
 				} else {
 					return UtilText.parse(owner,
-							"<p>"
-								+ "A strange, soothing warmth spreads up through [npc.namePos] [npc.breasts], causing [npc.herHim] to let out [npc.a_moan+].<br/>"
-								+ "[npc.NamePos] [npc.milk] is now [style.boldGrow(strongly alcoholic)]!"
-							+ "</p>");
+							"<p>Странное, успокаивающее тепло разливается по [npc.namePos] [npc.breasts], заставляя [npc.herHim] издать [npc.a_moan+].<br/>[npc.NamePos] [npc.milk] теперь [style.boldGrow(крепкий алкоголь)]!</p>");
 				}
 			case ALCOHOLIC_WEAK:
 				fluidModifiers.remove(FluidModifier.ALCOHOLIC);
 				if(this.isCrotchMilk()) {
 					return UtilText.parse(owner,
-							"<p>"
-								+ "A strange, soothing warmth spreads up through [npc.namePos] [npc.crotchBoobs], causing [npc.herHim] to let out [npc.a_moan+].<br/>"
-								+ "[npc.NamePos] [npc.crotchMilk] is now [style.boldGrow(alcoholic)]!"
-							+ "</p>");
+							"<p>Странное, успокаивающее тепло разливается по [npc.namePos] [npc.crotchBoobs], заставляя [npc.herHim] издать [npc.a_moan+].<br/>[npc.NamePos] [npc.crotchMilk] теперь [style.boldGrow(алкоголь)]!</p>");
 				} else {
 					return UtilText.parse(owner,
-							"<p>"
-								+ "A strange, soothing warmth spreads up through [npc.namePos] [npc.breasts], causing [npc.herHim] to let out [npc.a_moan+].<br/>"
-								+ "[npc.NamePos] [npc.milk] is now [style.boldGrow(alcoholic)]!"
-							+ "</p>");
+							"<p>Странное, успокаивающее тепло разливается по [npc.namePos] [npc.breasts], заставляя [npc.herHim] издать [npc.a_moan+].<br/>[npc.NamePos] [npc.milk] теперь [style.boldGrow(алкогольный)]!</p>");
 				}
 			case BUBBLING:
 				if(this.isCrotchMilk()) {
 					return UtilText.parse(owner,
-							"<p>"
-								+ "A light, bubbly feeling spreads up through [npc.namePos] [npc.crotchBoobs], causing [npc.herHim] to let out [npc.a_moan+].<br/>"
-								+ "[npc.NamePos] [npc.crotchMilk] is now [style.boldGrow(bubbly)]!"
-							+ "</p>");
+							"<p>Легкое, пузырящееся ощущение разливается по [npc.namePos] [npc.crotchBoobs], заставляя [npc.herHim] издать [npc.a_moan+].<br/>[npc.NamePos] [npc.crotchMilk] теперь [style.boldGrow(пузырящийся)]!</p>");
 				} else {
 					return UtilText.parse(owner,
-							"<p>"
-								+ "A light, bubbly feeling spreads up through [npc.namePos] [npc.breasts], causing [npc.herHim] to let out [npc.a_moan+].<br/>"
-								+ "[npc.NamePos] [npc.milk] is now [style.boldGrow(bubbly)]!"
-							+ "</p>");
+							"<p>Легкое, пузырящееся ощущение разливается по [npc.namePos] [npc.breasts], заставляя [npc.herHim] издать [npc.a_moan+].<br/>[npc.NamePos] [npc.milk] теперь [style.boldGrow(пузырящийся)]!</p>");
 				}
 			case HALLUCINOGENIC:
 				if(this.isCrotchMilk()) {
 					return UtilText.parse(owner,
-							"<p>"
-								+ "A series of strange pulses shoot up through [npc.namePos] [npc.crotchBoobs], causing [npc.herHim] to let out [npc.a_moan+].<br/>"
-								+ "[npc.NamePos] [npc.crotchMilk] is now [style.boldGrow(psychoactive)]!"
-							+ "</p>");
+							"<p>Серия странных пульсаций проносится сквозь [npc.namePos] [npc.crotchBoobs], заставляя [npc.herHim] издать [npc.a_moan+].<br/>[npc.NamePos] [npc.crotchMilk] теперь [style.boldGrow(психоактивный)]!</p>");
 				} else {
 					return UtilText.parse(owner,
-							"<p>"
-								+ "A series of strange pulses shoot up through [npc.namePos] [npc.breasts], causing [npc.herHim] to let out [npc.a_moan+].<br/>"
-								+ "[npc.NamePos] [npc.milk] is now [style.boldGrow(psychoactive)]!"
-							+ "</p>");
+							"<p>Серия странных пульсаций проносится сквозь [npc.namePos] [npc.breasts], заставляя [npc.herHim] издать [npc.a_moan+].<br/>[npc.NamePos] [npc.milk] теперь [style.boldGrow(психоактивный)]!</p>");
 				}
 			case MINERAL_OIL:
 				if(this.isCrotchMilk()) {
 					return UtilText.parse(owner,
-							"<p>"
-								+ "A soothing warmth flows into [npc.namePos] [npc.crotchBoobs], causing [npc.herHim] to let out [npc.a_moan+].<br/>"
-								+ "[npc.NamePos] [npc.crotchMilk] is now imbued with [style.boldGrow(mineral oil)], and can melt condoms!"
-							+ "</p>");
+							"<p>Успокаивающее тепло вливается в [npc.namePos] [npc.crotchBoobs], заставляя [npc.herHim] издать [npc.a_moan+].<br/>[npc.NamePos] [npc.crotchMilk] теперь пропитан [style.boldGrow(минеральным маслом)] и может плавить презервативы!</p>");
 				} else {
 					return UtilText.parse(owner,
-							"<p>"
-								+ "A soothing warmth flows into [npc.namePos] [npc.breasts], causing [npc.herHim] to let out [npc.a_moan+].<br/>"
-								+ "[npc.NamePos] [npc.milk] is now imbued with [style.boldGrow(mineral oil)], and can melt condoms!"
-							+ "</p>");
+							"<p>Успокаивающее тепло разливается внутри [npc.namePos] [npc.breasts], заставляя [npc.herHim] издать [npc.a_moan+].<br/>[npc.NamePos] [npc.milk] теперь пропитана [style.boldGrow(минеральным маслом)] и способна растворять презервативы!</p>");
 				}
 			case MUSKY:
 				if(this.isCrotchMilk()) {
 					return UtilText.parse(owner,
-							"<p>"
-								+ "A slow, creeping warmth rises up into [npc.namePos] [npc.crotchBoobs], causing [npc.herHim] to let out [npc.a_moan+].<br/>"
-								+ "[npc.NamePos] [npc.crotchMilk] is now [style.boldGrow(musky)]!"
-							+ "</p>");
+							"<p>Медленное, ползучее тепло поднимается к [npc.namePos] [npc.crotchBoobs], заставляя [npc.herHim] издать [npc.a_moan+].<br/>[npc.NamePos] [npc.crotchMilk] теперь [style.boldGrow(мускусная)]!</p>");
 				} else {
 					return UtilText.parse(owner,
-							"<p>"
-								+ "A slow, creeping warmth rises up into [npc.namePos] [npc.breasts], causing [npc.herHim] to let out [npc.a_moan+].<br/>"
-								+ "[npc.NamePos] [npc.milk] is now [style.boldGrow(musky)]!"
-							+ "</p>");
+							"<p>Медленное, ползучее тепло поднимается к [npc.namePos] [npc.breasts], заставляя [npc.herHim] издать [npc.a_moan+].<br/>[npc.NamePos] [npc.milk] теперь [style.boldGrow(мускусная)]!</p>");
 				}
 			case SLIMY:
 				if(this.isCrotchMilk()) {
 					return UtilText.parse(owner,
-							"<p>"
-								+ "A strange, soothing warmth flows up into [npc.namePos] [npc.crotchBoobs], causing [npc.herHim] to let out [npc.a_moan+].<br/>"
-								+ "[npc.NamePos] [npc.crotchMilk] is now [style.boldGrow(slimy)]!"
-							+ "</p>");
+							"<p>Странное, успокаивающее тепло поднимается к [npc.namePos] [npc.crotchBoobs], заставляя [npc.herHim] издать [npc.a_moan+].<br/>[npc.NamePos] [npc.crotchMilk] теперь [style.boldGrow(скользкая)]!</p>");
 				} else {
 					return UtilText.parse(owner,
-							"<p>"
-								+ "A strange, soothing warmth flows up into [npc.namePos] [npc.breasts], causing [npc.herHim] to let out [npc.a_moan+].<br/>"
-								+ "[npc.NamePos] [npc.milk] is now [style.boldGrow(slimy)]!"
-							+ "</p>");
+							"<p>Странное, успокаивающее тепло поднимается к [npc.namePos] [npc.breasts], заставляя [npc.herHim] издать [npc.a_moan+].<br/>[npc.NamePos] [npc.milk] теперь [style.boldGrow(скользкая)]!</p>");
 				}
 			case STICKY:
 				if(this.isCrotchMilk()) {
 					return UtilText.parse(owner,
-							"<p>"
-								+ "A thick, sickly warmth flows up into [npc.namePos] [npc.crotchBoobs], causing [npc.herHim] to let out [npc.a_moan+].<br/>"
-								+ "[npc.NamePos] [npc.crotchMilk] is now [style.boldGrow(sticky)]!"
-							+ "</p>");
+							"<p>Густое, тошнотворное тепло поднимается к [npc.namePos] [npc.crotchBoobs], заставляя [npc.herHim] издать [npc.a_moan+].<br/>[npc.NamePos] [npc.crotchMilk] теперь [style.boldGrow(липкая)]!</p>");
 				} else {
 					return UtilText.parse(owner,
-							"<p>"
-								+ "A thick, sickly warmth flows up into [npc.namePos] [npc.breasts], causing [npc.herHim] to let out [npc.a_moan+].<br/>"
-								+ "[npc.NamePos] [npc.milk] is now [style.boldGrow(sticky)]!"
-							+ "</p>");
+							"<p>Густое, тошнотворное тепло поднимается к [npc.namePos] [npc.breasts], заставляя [npc.herHim] издать [npc.a_moan+].<br/>[npc.NamePos] [npc.milk] теперь [style.boldGrow(липкая)]!</p>");
 				}
 			case VISCOUS:
 				if(this.isCrotchMilk()) {
 					return UtilText.parse(owner,
-							"<p>"
-								+ "A heavy heat slowly rises up into [npc.namePos] [npc.crotchBoobs], causing [npc.herHim] to let out [npc.a_moan+].<br/>"
-								+ "[npc.NamePos] [npc.crotchMilk] is now [style.boldGrow(viscous)]!"
-							+ "</p>");
+							"<p>Тяжелый жар медленно поднимается вверх по [npc.namePos] [npc.crotchBoobs], заставляя [npc.herHim] издавать [npc.a_moan+].<br/>[npc.NamePos] [npc.crotchMilk] теперь [style.boldGrow(вязкий)]!</p>");
 				} else {
 					return UtilText.parse(owner,
-							"<p>"
-								+ "A heavy heat slowly rises up into [npc.namePos] [npc.breasts], causing [npc.herHim] to let out [npc.a_moan+].<br/>"
-								+ "[npc.NamePos] [npc.milk] is now [style.boldGrow(viscous)]!"
-							+ "</p>");
+							"<p>Тяжелый жар медленно поднимается вверх по [npc.namePos] [npc.breasts], заставляя [npc.herHim] издавать [npc.a_moan+].<br/>[npc.NamePos] [npc.milk] теперь [style.boldGrow(вязкий)]!</p>");
 				}
 		}
 		
-		return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+		return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 	}
 	
 	public String removeFluidModifier(GameCharacter owner, FluidModifier fluidModifier) {
 		if(!fluidModifiers.contains(fluidModifier)) {
-			return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+			return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 		}
 		
 		fluidModifiers.remove(fluidModifier);
@@ -404,133 +340,79 @@ public class FluidMilk implements FluidInterface {
 			case ADDICTIVE:
 				if(this.isCrotchMilk()) {
 					return UtilText.parse(owner,
-							"<p>"
-								+ "A soft coolness spreads up through [npc.namePos] [npc.crotchBoobs], causing [npc.herHim] to let out a gentle sigh.<br/>"
-								+ "[npc.NamePos] [npc.crotchMilk] is [style.boldShrink(no longer addictive)]!"
-							+ "</p>");
+							"<p>Легкая прохлада разливается по [npc.namePos] [npc.crotchBoobs], заставляя [npc.herHim] тихо вздохнуть.<br/>[npc.NamePos] [npc.crotchMilk] теперь [style.boldShrink(больше не вызывает привыкания)]!</p>");
 				} else {
 					return UtilText.parse(owner,
-							"<p>"
-								+ "A soft coolness spreads up through [npc.namePos] [npc.breasts], causing [npc.herHim] to let out a gentle sigh.<br/>"
-								+ "[npc.NamePos] [npc.milk] is [style.boldShrink(no longer addictive)]!"
-							+ "</p>");
+							"<p>Легкая прохлада разливается по [npc.namePos] [npc.breasts], заставляя [npc.herHim] тихо вздохнуть.<br/>[npc.NamePos] [npc.milk] теперь [style.boldShrink(больше не вызывает привыкания)]!</p>");
 				}
 			case ALCOHOLIC:
 			case ALCOHOLIC_WEAK:
 				if(this.isCrotchMilk()) {
 					return UtilText.parse(owner,
-							"<p>"
-								+ "A soft coolness spreads up through [npc.namePos] [npc.crotchBoobs], causing [npc.herHim] to let out a gentle sigh.<br/>"
-								+ "[npc.NamePos] [npc.crotchMilk] is [style.boldShrink(no longer alcoholic)]!"
-							+ "</p>");
+							"<p>Легкая прохлада разливается по [npc.namePos] [npc.crotchBoobs], заставляя [npc.herHim] тихо вздохнуть.<br/>[npc.NamePos] [npc.crotchMilk] теперь [style.boldShrink(больше не содержит алкоголя)]!</p>");
 				} else {
 					return UtilText.parse(owner,
-							"<p>"
-								+ "A soft coolness spreads up through [npc.namePos] [npc.breasts], causing [npc.herHim] to let out a gentle sigh.<br/>"
-								+ "[npc.NamePos] [npc.milk] is [style.boldShrink(no longer alcoholic)]!"
-							+ "</p>");
+							"<p>Легкая прохлада разливается по [npc.namePos] [npc.breasts], заставляя [npc.herHim] тихо вздохнуть.<br/>[npc.NamePos] [npc.milk] теперь [style.boldShrink(больше не содержит алкоголя)]!</p>");
 				}
 			case BUBBLING:
 				if(this.isCrotchMilk()) {
 					return UtilText.parse(owner,
-							"<p>"
-								+ "A calm, settling feeling spreads up through [npc.namePos] [npc.crotchBoobs], causing [npc.herHim] to let out a gentle sigh.<br/>"
-								+ "[npc.NamePos] [npc.crotchMilk] is [style.boldShrink(no longer bubbly)]!"
-							+ "</p>");
+							"<p>Спокойное, умиротворяющее чувство разливается по [npc.namePos] [npc.crotchBoobs], заставляя [npc.herHim] тихо вздохнуть.<br/>[npc.NamePos] [npc.crotchMilk] теперь [style.boldShrink(больше не шипучий)]!</p>");
 				} else {
 					return UtilText.parse(owner,
-							"<p>"
-								+ "A calm, settling feeling spreads up through [npc.namePos] [npc.breasts], causing [npc.herHim] to let out a gentle sigh.<br/>"
-								+ "[npc.NamePos] [npc.milk] is [style.boldShrink(no longer bubbly)]!"
-							+ "</p>");
+							"<p>Спокойное, умиротворяющее чувство разливается по [npc.namePos] [npc.breasts], заставляя [npc.herHim] тихо вздохнуть.<br/>[npc.NamePos] [npc.milk] [style.boldShrink(больше не пузырится)]!</p>");
 				}
 			case HALLUCINOGENIC:
 				if(this.isCrotchMilk()) {
 					return UtilText.parse(owner,
-							"<p>"
-								+ "A series of soothing waves wash up through [npc.namePos] [npc.crotchBoobs], causing [npc.herHim] to let out a gentle sigh.<br/>"
-								+ "[npc.NamePos] [npc.crotchMilk] is [style.boldShrink(no longer psychoactive)]!"
-							+ "</p>");
+							"<p>Волны успокоения накрывают [npc.namePos] [npc.crotchBoobs], заставляя [npc.herHim] тихо вздохнуть.<br/>[npc.NamePos] [npc.crotchMilk] [style.boldShrink(больше не обладает психоактивным эффектом)]!</p>");
 				} else {
 					return UtilText.parse(owner,
-							"<p>"
-								+ "A series of soothing waves wash up through [npc.namePos] [npc.breasts], causing [npc.herHim] to let out a gentle sigh.<br/>"
-								+ "[npc.NamePos] [npc.milk] is [style.boldShrink(no longer psychoactive)]!"
-							+ "</p>");
+							"<p>Волны успокоения накрывают [npc.namePos] [npc.breasts], заставляя [npc.herHim] тихо вздохнуть.<br/>[npc.NamePos] [npc.milk] [style.boldShrink(больше не обладает психоактивным эффектом)]!</p>");
 				}
 			case MUSKY:
 				if(this.isCrotchMilk()) {
 					return UtilText.parse(owner,
-							"<p>"
-								+ "A gentle coolness rises up into [npc.namePos] [npc.crotchBoobs], causing [npc.herHim] to let out a soft sigh.<br/>"
-								+ "[npc.NamePos] [npc.crotchMilk] is [style.boldShrink(no longer musky)]!"
-							+ "</p>");
+							"<p>Легкая прохлада поднимается в [npc.namePos] [npc.crotchBoobs], заставляя [npc.herHim] мягко вздохнуть.<br/>[npc.NamePos] [npc.crotchMilk] [style.boldShrink(больше не мускусный)]!</p>");
 				} else {
 					return UtilText.parse(owner,
-							"<p>"
-								+ "A gentle coolness rises up into [npc.namePos] [npc.breasts], causing [npc.herHim] to let out a soft sigh.<br/>"
-								+ "[npc.NamePos] [npc.milk] is [style.boldShrink(no longer musky)]!"
-							+ "</p>");
+							"<p>Легкая прохлада поднимается в [npc.namePos] [npc.breasts], заставляя [npc.herHim] мягко вздохнуть.<br/>[npc.NamePos] [npc.milk] [style.boldShrink(больше не мускусный)]!</p>");
 				}
 			case SLIMY:
 				if(this.isCrotchMilk()) {
 					return UtilText.parse(owner,
-							"<p>"
-								+ "A calming coolness flows up into [npc.namePos] [npc.crotchBoobs], causing [npc.herHim] to let out a gentle sigh.<br/>"
-								+ "[npc.NamePos] [npc.crotchMilk] is [style.boldShrink(no longer slimy)]!"
-							+ "</p>");
+							"<p>Успокаивающая прохлада течет вверх по [npc.namePos] [npc.crotchBoobs], заставляя [npc.herHim] тихо вздохнуть.<br/>[npc.NamePos] [npc.crotchMilk] [style.boldShrink(больше не слизистый)]!</p>");
 				} else {
 					return UtilText.parse(owner,
-							"<p>"
-								+ "A calming coolness flows up into [npc.namePos] [npc.breasts], causing [npc.herHim] to let out a gentle sigh.<br/>"
-								+ "[npc.NamePos] [npc.milk] is [style.boldShrink(no longer slimy)]!"
-							+ "</p>");
+							"<p>Успокаивающая прохлада течет вверх по [npc.namePos] [npc.breasts], заставляя [npc.herHim] тихо вздохнуть.<br/>[npc.NamePos] [npc.milk] [style.boldShrink(больше не слизистый)]!</p>");
 				}
 			case STICKY:
 				if(this.isCrotchMilk()) {
 					return UtilText.parse(owner,
-							"<p>"
-								+ "A soft warmth flows up into [npc.namePos] [npc.crotchBoobs], causing [npc.herHim] to let out a gentle sigh.<br/>"
-								+ "[npc.NamePos] [npc.crotchMilk] is [style.boldShrink(no longer sticky)]!"
-							+ "</p>");
+							"<p>Мягкое тепло разливается по [npc.namePos] [npc.crotchBoobs], заставляя [npc.herHim] тихо вздохнуть.<br/>[npc.NamePos] [npc.crotchMilk] [style.boldShrink(больше не липкий)]!</p>");
 				} else {
 					return UtilText.parse(owner,
-							"<p>"
-								+ "A soft warmth flows up into [npc.namePos] [npc.breasts], causing [npc.herHim] to let out a gentle sigh.<br/>"
-								+ "[npc.NamePos] [npc.milk] is [style.boldShrink(no longer sticky)]!"
-							+ "</p>");
+							"<p>Мягкое тепло разливается по [npc.namePos] [npc.breasts], заставляя [npc.herHim] тихо вздохнуть.<br/>[npc.NamePos] [npc.milk] [style.boldShrink(больше не липкий)]!</p>");
 				}
 			case VISCOUS:
 				if(this.isCrotchMilk()) {
 					return UtilText.parse(owner,
-							"<p>"
-								+ "A soft coolness rises up into [npc.namePos] [npc.crotchBoobs], causing [npc.herHim] to let out a gentle sigh.<br/>"
-								+ "[npc.NamePos] [npc.crotchMilk] is [style.boldShrink(no longer viscous)]!"
-							+ "</p>");
+							"<p>Легкая прохлада разливается по [npc.namePos] [npc.crotchBoobs], заставляя [npc.herHim] тихо вздохнуть.<br/>[npc.NamePos] [npc.crotchMilk] [style.boldShrink(больше не вязкий)]!</p>");
 				} else {
 					return UtilText.parse(owner,
-							"<p>"
-								+ "A soft coolness rises up into [npc.namePos] [npc.breasts], causing [npc.herHim] to let out a gentle sigh.<br/>"
-								+ "[npc.NamePos] [npc.milk] is [style.boldShrink(no longer viscous)]!"
-							+ "</p>");
+							"<p>Легкая прохлада разливается по [npc.namePos] [npc.breasts], заставляя [npc.herHim] тихо вздохнуть.<br/>[npc.NamePos] [npc.milk] [style.boldShrink(больше не вязкий)]!</p>");
 				}
 			case MINERAL_OIL:
 				if(this.isCrotchMilk()) {
 					return UtilText.parse(owner,
-							"<p>"
-								+ "A short relief flows up into [npc.namePos] [npc.crotchBoobs], causing [npc.herHim] to let out a gentle sigh.<br/>"
-								+ "[npc.NamePos] [npc.crotchMilk] is [style.boldShrink(no longer mineral oil)]!"
-							+ "</p>");
+							"<p>Кратковременное облегчение разливается по [npc.namePos] [npc.crotchBoobs], заставляя [npc.herHim] тихо вздохнуть.<br/>[npc.NamePos] [npc.crotchMilk] [style.boldShrink(больше не минеральное масло)]!</p>");
 				} else {
 					return UtilText.parse(owner,
-							"<p>"
-								+ "A short relief flows up into [npc.namePos] [npc.breasts], causing [npc.herHim] to let out a gentle sigh.<br/>"
-								+ "[npc.NamePos] [npc.milk] is [style.boldShrink(no longer mineral oil)]!"
-							+ "</p>");
+							"<p>Кратковременное облегчение разливается по [npc.namePos] [npc.breasts], заставляя [npc.herHim] тихо вздохнуть.<br/>[npc.NamePos] [npc.milk] [style.boldShrink(больше не минеральное масло)]!</p>");
 				}
 		}
 		
-		return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+		return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 	}
 	
 	public List<ItemEffect> getTransformativeEffects() {

@@ -300,7 +300,7 @@ public abstract class AbstractBodyCoveringType {
 						}
 						
 					} catch (Exception e) {
-						throw new IllegalStateException("AbstractBodyCoveringType: Colour tag reading failure: "+colorsElement.getTagName()+" " + e.getMessage(), e);
+						throw new IllegalStateException("AbstractBodyCoveringType: Ошибка чтения тега цвета: "+colorsElement.getTagName()+" " + e.getMessage(), e);
 					}
 				};
 
@@ -380,7 +380,7 @@ public abstract class AbstractBodyCoveringType {
 	
 	@Override
 	public String toString() {
-		new AccessException("WARNING: AbstractBodyCoveringType is calling toString()!").printStackTrace(System.err);
+		new AccessException("ВНИМАНИЕ: AbstractBodyCoveringType вызывает toString()!").printStackTrace(System.err);
 		return BodyCoveringType.getIdFromBodyCoveringType(this);
 	}
 	

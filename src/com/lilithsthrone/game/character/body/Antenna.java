@@ -78,9 +78,9 @@ public class Antenna implements BodyPartInterface {
 		
 		if (type == getType()) {
 			if(type.equals(AntennaType.NONE)) {
-				return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] already [npc.verb(lack)] antennae, so nothing happens...)]</p>");
+				return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] уже [npc.verb(lack)] антенны, так что ничего не происходит...)]</p>");
 			} else {
-				return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] already [npc.has] the [npc.antenna] of [npc.a_antennaRace], so nothing happens...)]</p>");
+				return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] уже [npc.has] [npc.antenna] [npc.a_antennaRace], так что ничего не происходит...)]</p>");
 			}
 		}
 		
@@ -88,19 +88,15 @@ public class Antenna implements BodyPartInterface {
 		
 		if(this.type.equals(AntennaType.NONE)) {
 			sb.append(UtilText.parse(owner, 
-					"<p>"
-						+ "[npc.Name] [npc.verb(let)] out a surprised gasp and [npc.verb(rub)] at [npc.her] forehead as [npc.she] [npc.verb(feel)] it growing hot and sensitive."
-						+ " After just a moment, [npc.her] [npc.eyes] widen in shock as something starts pushing out from under the [npc.faceSkin] of [npc.her] forehead."));
+					"<p>[npc.Name] [npc.verb(let)] с удивленным вздохом и [npc.verb(rub)] на лоб [npc.her], когда [npc.she] [npc.verb(feel)], как он становится горячим и чувствительным. Спустя мгновение, [npc.her] [npc.eyes] широко распахиваются от шока, когда что-то начинает пробиваться из-под [npc.faceSkin] [npc.her] лба."));
 		} else {
 			sb.append(UtilText.parse(owner, 
-					"<p>"
-						+ "[npc.Name] [npc.verb(let)] out a surprised gasp as [npc.she] [npc.verb(feel)] an odd tingling sensation at the base of [npc.her] [npc.antennae]."
-						+ " Before [npc.she] [npc.has] any time in which to react, they rapidly crumble away, and within moments they've completely disappeared. "));
+					"<p>[npc.Name] [npc.verb(let)] с удивленным вздохом, когда [npc.she] [npc.verb(feel)] странное покалывание у основания [npc.her] [npc.antennae]. Прежде чем [npc.she] успеют [npc.has] на реакцию, они стремительно рассыпаются в прах, и через мгновение полностью исчезают. "));
 		}
 		
 		if(type!=AntennaType.NONE) {
 			sb.append(UtilText.parse(owner, 
-					" Hard nubs suddenly push out from the sides of [npc.her] head, and [npc.she] [npc.verb(gasp)] as [npc.she] [npc.verb(feel)] them quickly grow out into "));
+					" Из боков головы [npc.her] внезапно пробиваются твердые бугорки, и [npc.she] [npc.verb(gasp)], когда [npc.she] [npc.verb(feel)], они быстро превращаются в "));
 		}
 		
 		this.type = type;
@@ -125,7 +121,7 @@ public class Antenna implements BodyPartInterface {
 		}
 		
 		if(owner.getAntennaRows() == rows) {
-			return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+			return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 		}
 		
 		boolean removingAntennae = owner.getAntennaRows() > rows;
@@ -134,24 +130,16 @@ public class Antenna implements BodyPartInterface {
 		owner.postTransformationCalculation();
 		
 		if (owner.getAntennaType().equals(AntennaType.NONE)) {
-			return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+			return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 		}
 		
 		if(removingAntennae) {
 			return UtilText.parse(owner,
-					"<p>"
-						+ "A tingling feeling spreads over [npc.namePos] [npc.antennae], before moving down and concentrating in [npc.her] forehead."
-						+ " [npc.She] can't help but let out a cry as [npc.she] [npc.verb(feel)] some of them [style.boldShrink(crumbling away)] and disappearing back down into [npc.her] [npc.faceSkin].<br/>"
-						+ "After a few moments, [npc.sheIs] left with [style.boldTfGeneric([npc.a_antennae])]."
-					+ "</p>");
+					"<p>По всему [npc.namePos] [npc.antennae] разливается покалывающее чувство, которое затем спускается ниже и концентрируется на [npc.her] лбу. [npc.She] не может сдержать крика, когда некоторые из них [npc.she] [npc.verb(feel)] [style.boldShrink(осыпаясь и исчезая)] обратно в [npc.her] [npc.faceSkin].<br/>Спустя несколько мгновений, у [npc.sheIs] остались [style.boldTfGeneric([npc.a_antennae])].</p>");
 			
 		} else {
 			return UtilText.parse(owner,
-					"<p>"
-						+ "A tingling feeling spreads over [npc.namePos] [npc.antennae], before moving down and concentrating in [npc.her] forehead."
-						+ " [npc.She] can't help but let out a cry as [npc.she] [npc.verb(feel)] new [npc.antennae] [style.boldGrow(pushing up)] and growing out of [npc.her] [npc.faceSkin].<br/>"
-						+ "After a few moments, [npc.sheIs] left with [style.boldTfGeneric([npc.a_antennae])]."
-					+ "</p>");
+					"<p>По всему [npc.namePos] [npc.antennae] разливается покалывающее чувство, которое затем спускается ниже и концентрируется на [npc.her] лбу. [npc.She] не может сдержать крика, когда новые [npc.antennae] [npc.she] [npc.verb(feel)] [style.boldGrow(выталкиваются наружу)] и вырастают из [npc.her] [npc.faceSkin].<br/>Спустя несколько мгновений, у [npc.sheIs] остались [style.boldTfGeneric([npc.a_antennae])].</p>");
 		}
 	}
 	
@@ -167,7 +155,7 @@ public class Antenna implements BodyPartInterface {
 		}
 		
 		if(owner.getAntennaePerRow() == antennaePerRow) {
-			return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+			return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 		}
 		
 		boolean removingAntennae = owner.getAntennaePerRow() > antennaePerRow;
@@ -176,23 +164,17 @@ public class Antenna implements BodyPartInterface {
 		owner.postTransformationCalculation();
 		
 		if (owner.getAntennaType().equals(AntennaType.NONE)) {
-			return "<p style='text-align:center;'>[style.colourDisabled(Nothing happens...)]</p>";
+			return "<p style='text-align:center;'>[style.colourDisabled(Ничего не происходит...)]</p>";
 		}
 		
 		if(removingAntennae) {
 			return UtilText.parse(owner,
-					"<p>"
-						+ "A strange bubbling sensation starts to take root at the base of [npc.namePos] [npc.antennae]."
-						+ " Before [npc.she] can react, they start to [style.boldShrink(crumble away and reshape)] themselves.<br/>"
-						+ "After a few moments, [npc.sheIs] left with [style.boldTfGeneric("+Util.intToString(antennaePerRow)+" "+(antennaePerRow==1?"[npc.antenna]":"[npc.antennae]")+(rows==1?"":" in each row")+")]!"
+					"<p>Странное бурлящее ощущение начинает зарождаться у основания [npc.namePos] [npc.antennae]. Прежде чем [npc.she] успевает среагировать, они начинают [style.boldShrink(осыпаться и менять форму)].<br/>Спустя несколько мгновений, у [npc.sheIs] остались [style.boldTfGeneric("+Util.intToString(antennaePerRow)+" "+(antennaePerRow==1?"[npc.antenna]":"[npc.antennae]")+(rows==1?"":" в каждой строке")+")]!"
 					+ "</p>");
 			
 		} else {
 			return UtilText.parse(owner,
-					"<p>"
-						+ "A strange bubbling sensation starts to rise up in [npc.namePos] forehead."
-						+ " Before [npc.she] can react, new [npc.antennae] suddenly [style.boldGrow(push up)] and grow out of [npc.her] [npc.faceSkin].<br/>"
-						+ "After a few moments, [npc.sheIs] left with [style.boldTfGeneric("+Util.intToString(antennaePerRow)+" "+(antennaePerRow==1?"[npc.antenna]":"[npc.antennae]")+(rows==1?"":" in each row")+")]!"
+					"<p>Странное бурлящее ощущение начинает подниматься в [npc.namePos] лбу. Прежде чем [npc.she] успевает среагировать, новые [npc.antennae] внезапно [style.boldGrow(выталкиваются)] и вырастают из [npc.her] [npc.faceSkin].<br/>Спустя несколько мгновений, у [npc.sheIs] остались [style.boldTfGeneric("+Util.intToString(antennaePerRow)+" "+(antennaePerRow==1?"[npc.antenna]":"[npc.antennae]")+(rows==1?"":" в каждой строке")+")]!"
 					+ "</p>");
 		}
 	}
@@ -219,28 +201,20 @@ public class Antenna implements BodyPartInterface {
 		}
 		
 		if(owner.getAntennaType().equals(AntennaType.NONE)) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.Name] [npc.do]n't have any antennae, so nothing seems to happen...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(У [npc.Name] [npc.do] нет антенн, так что, кажется, ничего не происходит...)]</p>");
 		}
 		
 		if(sizeChange == 0) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(The length of [npc.namePos] [npc.antennae] doesn't change...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(Длина [npc.namePos] [npc.antennae] не меняется...)]</p>");
 		}
 		
 		if(sizeChange < 0) {
 			return UtilText.parse(owner,
-					"<p>"
-						+ "[npc.Name] [npc.verb(let)] out a cry as [npc.she] [npc.verb(feel)] a strange tingling sensation running up through [npc.her] [npc.face] and into [npc.her] [npc.antennae],"
-							+ " before they suddenly shrink down and [style.boldShrink(get noticeably shorter)].<br/>"
-						+ "[npc.Name] now [npc.has] [style.boldTfGeneric([npc.antennaSize] [npc.antennae])]!"
-					+ "</p>");
+					"<p>[npc.Name] [npc.verb(let)] издает крик, когда [npc.she] [npc.verb(feel)] странное покалывание, пробегающее сквозь [npc.her] [npc.face] и уходящее в [npc.her] [npc.antennae], после чего они внезапно уменьшаются и [style.boldShrink(становятся заметно короче)].<br/>[npc.Name] теперь [npc.has] [style.boldTfGeneric([npc.antennaSize] [npc.antennae])]!</p>");
 			
 		} else {
 			return UtilText.parse(owner,
-					"<p>"
-						+ "[npc.Name] [npc.verb(let)] out a little cry as [npc.she] [npc.verb(feel)] a warm pulsating sensation running up through [npc.her] [npc.face] and into [npc.her] [npc.antennae],"
-							+ " before they suddenly grow out and [style.boldGrow(get noticeably longer)].<br/>"
-						+ "[npc.Name] now [npc.has] [style.boldTfGeneric([npc.antennaSize] [npc.antennae])]!"
-					+ "</p>");
+					"<p>[npc.Name] [npc.verb(let)] издает тихий вскрик, когда [npc.she] [npc.verb(feel)] теплое пульсирующее ощущение, пробегающее сквозь [npc.her] [npc.face] и уходящее в [npc.her] [npc.antennae], после чего они внезапно вырастают и [style.boldGrow(становятся заметно длиннее)].<br/>[npc.Name] теперь [npc.has] [style.boldTfGeneric([npc.antennaSize] [npc.antennae])]!</p>");
 		}
 	}
 	

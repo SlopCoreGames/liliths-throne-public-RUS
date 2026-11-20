@@ -25,12 +25,12 @@ public class AntennaType {
 	public static final AbstractAntennaType NONE = new AbstractAntennaType(
 			BodyCoveringType.ANTENNA,
 			Race.NONE,
-			"none",
-			"antenna",
-			"antennae",
+			"нет",
+			"антенна",
+			"антенны",
 			new ArrayList<>(),
 			new ArrayList<>(),
-			"<br/>[npc.Name] now [npc.has] [style.boldTfGeneric(no antennae)].",
+			"<br/>[npc.Name] теперь [npc.has] [style.boldTfGeneric(без усиков)].",
 			"") {
 	};
 
@@ -43,7 +43,7 @@ public class AntennaType {
 		
 		// Modded types:
 		
-		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/race", "bodyParts", null);
+		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/раса", "bodyParts", null);
 		for(Entry<String, Map<String, File>> entry : moddedFilesMap.entrySet()) {
 			for(Entry<String, File> innerEntry : entry.getValue().entrySet()) {
 				if(Util.getXmlRootElementName(innerEntry.getValue()).equals("antenna")) {
