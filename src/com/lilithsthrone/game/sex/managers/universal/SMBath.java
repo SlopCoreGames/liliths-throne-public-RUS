@@ -49,10 +49,10 @@ public class SMBath extends SexManagerDefault {
 
 	@Override
 	public String getSexTitle() {
-		return (!Main.sex.isConsensual() && Main.getProperties().hasValue(PropertyValue.nonConContent)?"Non-consensual ":"")
-				+(Main.sex.isPublicSex()?"Public ":"")
-				+(Main.sex.getAllParticipants(false).size()>1?"Sex: ":"Masturbation: ")
-				+" Bath";
+		return (!Main.sex.isConsensual() && Main.getProperties().hasValue(PropertyValue.nonConContent)?"Принудительный ":"")
+				+(Main.sex.isPublicSex()?"Публичный ":"")
+				+(Main.sex.getAllParticipants(false).size()>1?"Секс: ":"Мастурбация: ")
+				+" Ванна";
 	}
 	
 	@Override

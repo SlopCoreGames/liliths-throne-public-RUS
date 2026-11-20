@@ -481,27 +481,26 @@ public class Response {
 		
 		if(!isAvailable() && !isAbleToBypass()) {
 			if(!Main.game.isBypassSexActionsEnabled() && !isCorruptionWithinRange()) {
-				SB.append("This action is blocked as [style.colourTerrible(you are not corrupt enough)] to think of performing it.");
+				SB.append("Это действие заблокировано, так как [style.colourTerrible(вам недостаточно порочна)], чтобы решиться на него.");
 				
 			} else {
-				SB.append("This action is blocked due to not meeting certain [style.colourBad(requirements)].");
+				SB.append("Это действие заблокировано из-за невыполнения определенных [style.colourBad(требований)].");
 			}
 			
 		} else {
 			if(isAvailableFromFetishes()) {
-				SB.append("Your [style.colourFetish(fetish)] bypasses this action's [style.colourCorruption(corruption)] requirements!");
+				SB.append("Ваш [style.colourFetish(фетиш)] позволяет обойти [style.colourCorruption(порочные)] требования этого действия!");
 				return SB.toString();
 			}
 			
 			if(getCorruptionNeeded() != null) {
 				if(!isActionCorrupting()) {
-					SB.append("Your <span style='color:"+Main.game.getPlayer().getCorruptionLevel().getColour().toWebHexString()+";'>"+Util.capitaliseSentence(Main.game.getPlayer().getCorruptionLevel().getName())+"</span>"
-							+ " [style.colourCorruption(corruption)] has unlocked this action!");
+					SB.append("Ваш <span style='color:"+Main.game.getPlayer().getCorruptionLevel().getColour().toWebHexString()+";'>"+Util.capitaliseSentence(Main.game.getPlayer().getCorruptionLevel().getName())+"</span> [style.colourCorruption(порочности)] открыли это действие!");
 				} else {
-					SB.append("You will gain <b>+"+getCorruptionNeeded().getCorruptionBypass()+"</b> [style.boldCorruption(corruption)], as you don't meet the [style.colourCorruption(corruption)] or [style.colourFetish(fetish)] requirements!");
+					SB.append("Вы получите <b>+"+getCorruptionNeeded().getCorruptionBypass()+"</b> [style.boldCorruption(порочности)], так как вы не соответствуете [style.colourCorruption(порочным)] или [style.colourFetish(фетишным)] требованиям!");
 				}
 			} else {
-				SB.append("This action cannot be unlocked with [style.colourCorruption(corruption)].");
+				SB.append("Это действие нельзя разблокировать с помощью [style.colourCorruption(порочности)].");
 			}
 		}
 		
@@ -510,10 +509,10 @@ public class Response {
 	
 	public String getAdditionalSexActionInformationText() {
 		if(this.getSexActionType()==SexActionType.START_ADDITIONAL_ONGOING) {
-			return "This action will cause you to [style.colourSex(join in)] with the related ongoing action.";
+			return "Это действие заставит вас [style.colourSex(присоединиться к)] связанному текущему действию.";
 			
 		} else if(isSexActionSwitch()) {
-			return "This action will cause [style.colourCorruption(some ongoing actions to be stopped)] before starting the related ongoing action.";
+			return "Это действие приведет к тому, что [style.colourCorruption(некоторые текущие действия остановятся)] перед началом связанного текущего действия.";
 		}
 		return "";
 	}
@@ -560,13 +559,11 @@ public class Response {
 						?Main.game.getPlayer().hasTrait(p, true)
 						:Main.game.getPlayer().hasPerkAnywhereInTree(p)) {
 					SB.append("<br/>"
-							+"<b style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>Requirement</b>"
-							+ " (<span style='color:"+PresetColour.PERK.toWebHexString()+";'>Perk</span>): "
+							+"<b style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>Требование</b> (<span style='color:"+PresetColour.PERK.toWebHexString()+";'>Перк</span>): "
 							+Util.capitaliseSentence(p.getName(Main.game.getPlayer())));
 				} else {
 					SB.append("<br/>"
-							+"<b style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>Requirement</b>"
-							+ " (<span style='color:"+PresetColour.PERK.toWebHexString()+";'>Perk</span>): "
+							+"<b style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>Требование</b> (<span style='color:"+PresetColour.PERK.toWebHexString()+";'>Перк</span>): "
 							+Util.capitaliseSentence(p.getName(Main.game.getPlayer())));
 				}
 			}
@@ -575,26 +572,22 @@ public class Response {
 		if(getFemininityRequired()!=null) {
 			if(isFemininityInRange()) {
 				SB.append("<br/>"
-						+"<b style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>Requirement</b>"
-						+ " (Femininity): "
-						+ "<span style='color:"+getFemininityRequired().getColour().toWebHexString()+";'>"+Util.capitaliseSentence(getFemininityRequired().getName(false))+"</span>");
+						+"<b style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>Требование</b> (Женственность): <span style='color:"+getFemininityRequired().getColour().toWebHexString()+";'>"+Util.capitaliseSentence(getFemininityRequired().getName(false))+"</span>");
 			} else {
 				SB.append("<br/>"
-						+"<b style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>Requirement</b>"
-						+ " (Femininity): "
-						+ "<span style='color:"+getFemininityRequired().getColour().toWebHexString()+";'>"+Util.capitaliseSentence(getFemininityRequired().getName(false))+"</span>");
+						+"<b style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>Требование</b> (Женственность): <span style='color:"+getFemininityRequired().getColour().toWebHexString()+";'>"+Util.capitaliseSentence(getFemininityRequired().getName(false))+"</span>");
 			}
 		}
 		
 		if(getSubspeciesRequired()!=null) {
 			if(isRequiredSubspecies()) {
-				SB.append("<br/><b style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>Requirement</b>");
+				SB.append("<br/><b style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>Требование</b>");
 
 			} else {
-				SB.append("<br/><b style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>Requirement</b>");
+				SB.append("<br/><b style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>Требование</b>");
 			}
 
-			SB.append(" (Subspecies): ");
+			SB.append(" (Подвид): ");
 			List<String> subspeciesList = new ArrayList<>();
 			for(AbstractSubspecies subspecies : getSubspeciesRequired()) {
 				subspeciesList.add("<span style='color:"+subspecies.getColour(Main.game.getPlayer()).toWebHexString()+";'>"+Util.capitaliseSentence(subspecies.getName(null))+"</span>");
@@ -605,12 +598,10 @@ public class Response {
 		if(sexActionType==SexActionType.SPEECH) {
 			if(!Main.sex.isOngoingActionsBlockingSpeech(Main.game.getPlayer())) {
 				SB.append("<br/>"
-						+"<b style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>Requirement</b>"
-						+ " (Speech): [style.colourMinorGood(Unblocked mouth)]");
+						+"<b style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>Требование</b> (Речь): [style.colourMinorGood(Не заблокирован рот)]");
 			} else {
 				SB.append("<br/>"
-						+"<b style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>Requirement</b>"
-						+ " (Speech): [style.colourMinorBad(Unblocked mouth)]");
+						+"<b style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>Требование</b> (Речь): [style.colourMinorBad(Не заблокированный рот)]");
 			}
 		}
 		
@@ -645,31 +636,31 @@ public class Response {
 				for(SexAreaInterface sArea : sexAreaAccessRequiredForPerformer) {
 					if(sArea!=null) {
 						String penetrationName = Util.capitaliseSentence(sArea.getName(characterPerformingSexAction));
-						String accessText = (penetrationAccess?"access":"<span style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>access</span>");
-						String freeText = (penetrationFree?"free":"<span style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>free</span>");
-						String targetName = (characterPerformingSexAction.isPlayer()?"Your":UtilText.parse(characterPerformingSexAction, "[npc.Name]'s"));
+						String accessText = (penetrationAccess?"access":"<span style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>доступ</span>");
+						String freeText = (penetrationFree?"free":"<span style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>свободно</span>");
+						String targetName = (characterPerformingSexAction.isPlayer()?"Вашей":UtilText.parse(characterPerformingSexAction, "[npc.Name]'s"));
 						
 						if(getSexActionType()==SexActionType.REQUIRES_NO_PENETRATION_AND_EXPOSED
 								|| getSexActionType()==SexActionType.START_ONGOING
 								|| getSexActionType()==SexActionType.REQUIRES_NO_PENETRATION) {
 							if(penetrationAccess && penetrationFree) {
-								SB.append("<br/><b style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>Requirement</b> ("+accessText+" & "+freeText+"): "+targetName+" "+ penetrationName);
+								SB.append("<br/><b style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>Требование</b> ("+accessText+" & "+freeText+"): "+targetName+" "+ penetrationName);
 							} else {
-								SB.append("<br/><b style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>Requirement</b> ("+accessText+" & "+freeText+"): "+targetName+" "+ penetrationName);
+								SB.append("<br/><b style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>Требование</b> ("+accessText+" & "+freeText+"): "+targetName+" "+ penetrationName);
 							}
 							
 						} else if(getSexActionType()==SexActionType.REQUIRES_EXPOSED) {
 							if(penetrationAccess) {
-								SB.append("<br/><b style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>Requirement</b> ("+accessText+"): "+targetName+" "+ penetrationName);
+								SB.append("<br/><b style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>Требование</b> ("+accessText+"): "+targetName+" "+ penetrationName);
 							} else {
-								SB.append("<br/><b style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>Requirement</b> ("+accessText+"): "+targetName+" "+ penetrationName);
+								SB.append("<br/><b style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>Требование</b> ("+accessText+"): "+targetName+" "+ penetrationName);
 							}
 							
 						} else {
 							if(penetrationAccess) {
-								SB.append("<br/><b style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>Requirement</b> ("+accessText+"): "+targetName+" "+ penetrationName);
+								SB.append("<br/><b style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>Требование</b> ("+accessText+"): "+targetName+" "+ penetrationName);
 							} else {
-								SB.append("<br/><b style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>Requirement</b> ("+accessText+"): "+targetName+" "+ penetrationName);
+								SB.append("<br/><b style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>Требование</b> ("+accessText+"): "+targetName+" "+ penetrationName);
 							}
 						}
 					}
@@ -697,31 +688,31 @@ public class Response {
 				for(SexAreaInterface sArea : sexAreaAccessRequiredForTargeted) {
 					if(sArea!=null) {
 						String orificeName = Util.capitaliseSentence(sArea.getName(characterTargetedForSexAction));
-						String accessText = (orificeAccess?"access":"<span style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>access</span>");
-						String freeText = (orificeFree?"free":"<span style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>free</span>");
-						String targetName = (characterTargetedForSexAction.isPlayer()?"Your":UtilText.parse(characterTargetedForSexAction, "[npc.Name]'s"));
+						String accessText = (orificeAccess?"access":"<span style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>доступ</span>");
+						String freeText = (orificeFree?"free":"<span style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>свободно</span>");
+						String targetName = (characterTargetedForSexAction.isPlayer()?"Вашей":UtilText.parse(characterTargetedForSexAction, "[npc.Name]'s"));
 						
 						if(getSexActionType()==SexActionType.REQUIRES_NO_PENETRATION_AND_EXPOSED
 								|| getSexActionType()==SexActionType.START_ONGOING
 								|| getSexActionType()==SexActionType.REQUIRES_NO_PENETRATION) {
 							if(orificeAccess && orificeFree) {
-								SB.append("<br/><b style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>Requirement</b> ("+accessText+" & "+freeText+"): "+targetName+" "+ orificeName);
+								SB.append("<br/><b style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>Требование</b> ("+accessText+" & "+freeText+"): "+targetName+" "+ orificeName);
 							} else {
-								SB.append("<br/><b style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>Requirement</b> ("+accessText+" & "+freeText+"): "+targetName+" "+ orificeName);
+								SB.append("<br/><b style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>Требование</b> ("+accessText+" & "+freeText+"): "+targetName+" "+ orificeName);
 							}
 							
 						} else if(getSexActionType()==SexActionType.REQUIRES_EXPOSED) {
 							if(orificeAccess) {
-								SB.append("<br/><b style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>Requirement</b> ("+accessText+"): "+targetName+" "+ orificeName);
+								SB.append("<br/><b style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>Требование</b> ("+accessText+"): "+targetName+" "+ orificeName);
 							} else {
-								SB.append("<br/><b style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>Requirement</b> ("+accessText+"): "+targetName+" "+ orificeName);
+								SB.append("<br/><b style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>Требование</b> ("+accessText+"): "+targetName+" "+ orificeName);
 							}
 							
 						} else {
 							if(orificeAccess) {
-								SB.append("<br/><b style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>Requirement</b> ("+accessText+"): "+targetName+" "+ orificeName);
+								SB.append("<br/><b style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>Требование</b> ("+accessText+"): "+targetName+" "+ orificeName);
 							} else {
-								SB.append("<br/><b style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>Requirement</b> ("+accessText+"): "+targetName+" "+ orificeName);
+								SB.append("<br/><b style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>Требование</b> ("+accessText+"): "+targetName+" "+ orificeName);
 							}
 						}
 					}
@@ -740,13 +731,13 @@ public class Response {
 				if(Main.game.getPlayer().hasFetish(f)) {
 					SB.append("<br/>"
 							+"[style.colourFetish(Associated Fetish)]"
-							+ " (<span style='color:"+PresetColour.GENERIC_MINOR_GOOD.toWebHexString()+";'>owned</span>): "
+							+ " (<span style='color:"+PresetColour.GENERIC_MINOR_GOOD.toWebHexString()+";'>вообще есть</span>): "
 							+ Util.capitaliseSentence(f.getName(Main.game.getPlayer())));
 					
 				} else {
 					SB.append("<br/>"
 							+"[style.colourFetish(Associated Fetish)]"
-							+ " (<span style='color:"+PresetColour.GENERIC_MINOR_BAD.toWebHexString()+";'>not owned</span>): "
+							+ " (<span style='color:"+PresetColour.GENERIC_MINOR_BAD.toWebHexString()+";'>отсутствует</span>): "
 							+ Util.capitaliseSentence(f.getName(Main.game.getPlayer())));
 				}
 			}
@@ -754,18 +745,16 @@ public class Response {
 		
 		if(getCorruptionNeeded()!=null) {
 			if(isCorruptionWithinRange()) {
-				SB.append("<br/>"
-						+"[style.colourCorruption(Associated Corruption)]"
+				SB.append("<br/>[style.colourCorruption(Связанная порочность)]"
 						+ (!isActionCorrupting()
-							?" ([style.colourMinorGood(within range)]): "
-							:" ([style.colourMinorBad(just out of range)]): ")
+							?" ([style.colourMinorGood(в пределах досягаемости)]): "
+							:" ([style.colourMinorBad(чуть дальше досягаемости)]): ")
 						+ Util.capitaliseSentence(getCorruptionNeeded().getName()));
 			} else {
-				SB.append("<br/>"
-						+"[style.colourCorruption(Associated Corruption)]"
+				SB.append("<br/>[style.colourCorruption(Связанная порочность)]"
 						+ (!Main.game.isBypassSexActionsEnabled()
-								?" ([style.colourTerrible(out of range)]): "
-								:" ([style.colourMinorBad(out of range)]): ")
+								?" ([style.colourTerrible(вне досягаемости)]): "
+								:" ([style.colourMinorBad(вне досягаемости)]): ")
 						+ Util.capitaliseSentence(getCorruptionNeeded().getName()));
 			}
 		}
@@ -1031,11 +1020,11 @@ public class Response {
 	}
 
 	public static Response getDisallowedSpittingResponse() {
-		return getDisallowedSpittingResponse("Spit");
+		return getDisallowedSpittingResponse("Сплюнуть");
 	}
 
 	public static Response getDisallowedSpittingResponse(String desc) {
-		return new Response(desc, "You are being forced to drink down the potion!<br/>[style.italicsBad(Rejection of TF potions is disabled in the gameplay options!)]", null);
+		return new Response(desc, "Тебя заставляют выпить зелье!<br/>[style.italicsBad(Отказ от зелий трансформации отключен в настройках игры!)]", null);
 	}
 
 	public String getConditional() {

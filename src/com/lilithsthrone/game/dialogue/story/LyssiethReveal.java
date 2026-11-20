@@ -51,7 +51,7 @@ public class LyssiethReveal {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Follow", "Пусть Элизабет ведет вас к покоям Лиссета.", FORWARDS_1) {
+				return new Response("Следовать", "Пусть Элизабет ведет вас к покоям Лиссета.", FORWARDS_1) {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setLocation(new Vector2i(Main.game.getPlayer().getLocation().getX(), Main.game.getPlayer().getLocation().getY()+1));
@@ -649,7 +649,7 @@ public class LyssiethReveal {
 				}
 				
 			} else if(index==2) {
-				return new ResponseSex("Pussy",
+				return new ResponseSex("Киска",
 						"Скажи Лиссит, что ты хочешь заниматься сексом с ней, и что ты хочешь доминировать над ее pussy.",
 						true,
 						true,
@@ -663,7 +663,7 @@ public class LyssiethReveal {
 						UtilText.parseFromXMLFile("quests/main/lyssiethReveal", "SEX_PUSSY"));
 				
 			} else if(index==3) {
-				return new ResponseSex("Cock",
+				return new ResponseSex("Хер",
 						"Скажи Лиссит, что ты хочешь заниматься сексом с ней, и что она должна вырастить cock и доминировать над тобой.",
 						true,
 						true,
@@ -720,7 +720,7 @@ public class LyssiethReveal {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Vision", "У тебя странное видение, в котором ты Лиссит...", POWER_VISION) {
+				return new Response("Видение", "У тебя странное видение, в котором ты Лиссит...", POWER_VISION) {
 					@Override
 					public void effects() {
 //						setPlayerAsLyssieth();
@@ -731,7 +731,7 @@ public class LyssiethReveal {
 		}
 	};
 	
-	public static final DialogueNode POWER_VISION = new DialogueNode("Vision", "У тебя странное видение, в котором ты Лиссит...", true) {
+	public static final DialogueNode POWER_VISION = new DialogueNode("Видение", "У тебя странное видение, в котором ты Лиссит...", true) {
 
 		@Override
 		public String getContent() {
@@ -741,7 +741,7 @@ public class LyssiethReveal {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Wake up", "Ты приходишь в сознание в офисе Лиссит.", POWER_EXPLANATION) {
+				return new Response("Проснуться", "Ты приходишь в сознание в офисе Лиссит.", POWER_EXPLANATION) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(Main.game.getPlayer().addSpecialPerk(Perk.POWER_OF_LYSSIETH_4));

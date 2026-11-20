@@ -10,27 +10,27 @@ package com.lilithsthrone.game.sex.positions.slots;
 public class SexSlotMasturbation {
 
 	public static final SexSlot STANDING = new SexSlot(
-			"Standing",
+			"Стоя",
 			"standing ",
-			"[npc.Name] [npc.verb(bite)] [npc.her] lip and [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(prepare)] to reach [npc.her] climax.",
+			"[npc.Name] [npc.verb(bite)] [npc.her] прикусывает и [npc.verb(let)] наружу [npc.a_moan+], пока [npc.she] [npc.verb(prepare)], чтобы достичь [npc.her] кульминации.",
 			false);
 
 	public static final SexSlot SITTING = new SexSlot(
-			"Sitting",
+			"Сидя",
 			"sitting",
-			"[npc.Name] [npc.verb(bite)] [npc.her] lip and [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(prepare)] to reach [npc.her] climax.",
+			"[npc.Name] [npc.verb(bite)] [npc.her] прикусывает и [npc.verb(let)] наружу [npc.a_moan+], пока [npc.she] [npc.verb(prepare)], чтобы достичь [npc.her] кульминации.",
 			false);
 	
 	public static final SexSlot KNEELING = new SexSlot(
-			"Kneeling",
+			"На коленях",
 			"kneeling",
-			"[npc.Name] [npc.verb(let)] [npc.her] [npc.legs] slide out from under [npc.herHim], and, letting out [npc.a_moan+], [npc.she] [npc.verb(prepare)] to reach [npc.her] climax.",
+			"[npc.Name] [npc.verb(let)] [npc.her] [npc.legs] выскальзывает из-под [npc.herHim] и, издавая [npc.a_moan+], [npc.she] [npc.verb(prepare)], чтобы достичь [npc.her] кульминации.",
 			false);
 
 	public static final SexSlot KNEELING_PANTIES = new SexSlot(
-			"Kneeling",
+			"На коленях",
 			"kneeling",
-			"[npc.Name] [npc.verb(let)] [npc.her] [npc.legs] slide out from under [npc.herHim], and, tightly gripping Lilaya's panties, [npc.she] [npc.verb(prepare)] to reach [npc.her] climax.",
+			"[npc.Name] [npc.verb(let)] [npc.her] [npc.legs] выскальзывает из-под [npc.herHim] и, крепко сжимая трусики Lilaya, [npc.she] [npc.verb(prepare)], чтобы достичь [npc.her] кульминации.",
 			false);
 
 }

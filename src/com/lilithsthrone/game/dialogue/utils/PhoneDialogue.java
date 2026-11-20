@@ -112,17 +112,17 @@ public class PhoneDialogue {
 			this.species_name = this.female
 					? Util.capitaliseSentence(npc.getSubspecies().getSingularFemaleName(npc.getBody()))
 					: Util.capitaliseSentence(npc.getSubspecies().getSingularMaleName(npc.getBody()));
-			this.mother = (npc.getMother() == null ? "???" : (npc.getMother().isPlayer() ? "[style.colourExcellent(You)]" : Util.capitaliseSentence(npc.getMother().getName(true))));
+			this.mother = (npc.getMother() == null ? "???" : (npc.getMother().isPlayer() ? "[style.colourExcellent(Вы)]" : Util.capitaliseSentence(npc.getMother().getName(true))));
 			if(npc.getMother()==null && !npc.getMotherName().equals("???")) {
 				mother = npc.getMotherName();
 			}
 
-			this.father = (npc.getFather() == null ? "???" : (npc.getFather().isPlayer() ? "[style.colourExcellent(You)]" : Util.capitaliseSentence(npc.getFather().getName(true))));
+			this.father = (npc.getFather() == null ? "???" : (npc.getFather().isPlayer() ? "[style.colourExcellent(Вы)]" : Util.capitaliseSentence(npc.getFather().getName(true))));
 			if(npc.getFather()==null && !npc.getFatherName().equals("???")) {
 				father = npc.getFatherName();
 			}
 
-			this.incubator = (npc.getIncubator() == null ? "[style.colourDisabled(n/a)]" : (npc.getIncubator().isPlayer() ? "[style.colourExcellent(You)]" : Util.capitaliseSentence(npc.getIncubator().getName(true))));
+			this.incubator = (npc.getIncubator() == null ? "[style.colourDisabled(n/a)]" : (npc.getIncubator().isPlayer() ? "[style.colourExcellent(Вы)]" : Util.capitaliseSentence(npc.getIncubator().getName(true))));
 			if(npc.getIncubator()==null && !npc.getIncubatorName().equals("???")) {
 				incubator = npc.getIncubatorName();
 			}
@@ -131,7 +131,7 @@ public class PhoneDialogue {
 			this.relationships = extraRelationships.stream().map((relationship) -> relationship.getName(Main.game.getPlayer())).collect(Collectors.toList());
 			if(npc.getIncubator()!=null && npc.getIncubator().isPlayer()) {
 				int insertIndex = 0;
-				this.relationships.add(insertIndex, "Incubator-mother");
+				this.relationships.add(insertIndex, "Инкубатор-мать");
 
 				if(npc.getMother()!=null && npc.getMother().isPlayer()) {
 					insertIndex++;
@@ -143,36 +143,36 @@ public class PhoneDialogue {
 				}
 
 			} else if(npc.getMother()!=null && npc.getMother().isPlayer()) {
-				this.relationships.add(0, "Mother");
+				this.relationships.add(0, "Мать");
 
 				if(npc.getFather()!=null && npc.getFather().isPlayer()) {
 					this.relationships.add(1, "father");
 				}
 
 			} else {
-				this.relationships.add(0, "Father");
+				this.relationships.add(0, "Отец");
 			}
 		}
 
 		offspringTableLineSubject(OffspringSeed os) {
 			this.female = os.isFeminine();
 			this.is_feral = os.isFeral();
-			this.child_name = "Unknown";
+			this.child_name = "Неизвестно";
 			this.race_color = os.getRace().getColour().toWebHexString();
 			this.species_name = this.female
 					? Util.capitaliseSentence(os.getSubspecies().getSingularFemaleName(os.getBody()))
 					: Util.capitaliseSentence(os.getSubspecies().getSingularMaleName(os.getBody()));
-			this.mother = (os.getMother() == null ? "???" : (os.getMother().isPlayer() ? "[style.colourExcellent(You)]" : Util.capitaliseSentence(os.getMother().getName(true))));
+			this.mother = (os.getMother() == null ? "???" : (os.getMother().isPlayer() ? "[style.colourExcellent(Вы)]" : Util.capitaliseSentence(os.getMother().getName(true))));
 			if(os.getMother()==null && !os.getMotherName().equals("???")) {
 				mother = os.getMotherName();
 			}
 
-			this.father = (os.getFather() == null ? "???" : (os.getFather().isPlayer() ? "[style.colourExcellent(You)]" : Util.capitaliseSentence(os.getFather().getName(true))));
+			this.father = (os.getFather() == null ? "???" : (os.getFather().isPlayer() ? "[style.colourExcellent(Вы)]" : Util.capitaliseSentence(os.getFather().getName(true))));
 			if(os.getFather()==null && !os.getFatherName().equals("???")) {
 				father = os.getFatherName();
 			}
 
-			this.incubator = (os.getIncubator() == null ? "[style.colourDisabled(n/a)]" : (os.getIncubator().isPlayer() ? "[style.colourExcellent(You)]" : Util.capitaliseSentence(os.getIncubator().getName(true))));
+			this.incubator = (os.getIncubator() == null ? "[style.colourDisabled(n/a)]" : (os.getIncubator().isPlayer() ? "[style.colourExcellent(Вы)]" : Util.capitaliseSentence(os.getIncubator().getName(true))));
 			if(os.getIncubator()==null && !os.getIncubatorName().equals("???")) {
 				incubator = os.getIncubatorName();
 			}
@@ -181,7 +181,7 @@ public class PhoneDialogue {
 //			this.relationships = extraRelationships.stream().map((relationship) -> relationship.getName(Main.game.getPlayer())).collect(Collectors.toList());
 			if(os.getIncubator()!=null && os.getIncubator().isPlayer()) {
 				int insertIndex = 0;
-				this.relationships.add(insertIndex, "Incubator-mother");
+				this.relationships.add(insertIndex, "Инкубатор-мать");
 				
 				if(os.getMother()!=null && os.getMother().isPlayer()) {
 					insertIndex++;
@@ -193,14 +193,14 @@ public class PhoneDialogue {
 				}
 
 			} else if(os.getMother()!=null && os.getMother().isPlayer()) {
-				this.relationships.add(0, "Mother");
+				this.relationships.add(0, "Мать");
 
 				if(os.getFather()!=null && os.getFather().isPlayer()) {
 					this.relationships.add(1, "father");
 				}
 
 			} else {
-				this.relationships.add(0, "Father");
+				this.relationships.add(0, "Отец");
 			}
 
 		}
@@ -254,7 +254,7 @@ public class PhoneDialogue {
 		Main.game.getPlayer().setMana(0);
 	}
 	
-	public static final DialogueNode MENU = new DialogueNode("Phone home screen", "Phone", true) {
+	public static final DialogueNode MENU = new DialogueNode("Главный экран телефона", "Телефон", true) {
 
 		@Override
 		public String getContent() {
@@ -266,14 +266,11 @@ public class PhoneDialogue {
 //				UtilText.nodeContentSB.append(RenderingEngine.ENGINE.getFullMap(Main.game.getPlayer().getWorldLocation(), true));
 //			}
 			
-			UtilText.nodeContentSB.append("<p>You pull out your phone and tap in the unlock code.</p>");
+			UtilText.nodeContentSB.append("<p>Вы достаете телефон и вводите код разблокировки.</p>");
 			
 			if(Main.game.isInNewWorld()) {
 				UtilText.nodeContentSB.append(
-						"<p>"
-							+"Using your powerful aura, you've managed to figure out a way to channel the arcane into charging the battery of your phone, although considering that it's the only one in this world, it's not much use for calling anyone."
-							+ " Instead, you're using it as a way to store information about things you've discovered in this strange new world."
-						+ "</p>");
+						"<p>Используя свою мощную ауру, вы сумели найти способ направлять аркану на зарядку аккумулятора телефона, хотя, учитывая, что он единственный в этом мире, толку от звонков мало. Вместо этого вы используете его как способ хранения информации о вещах, которые обнаружили в этом странном новом мире.</p>");
 			}
 			
 			return UtilText.nodeContentSB.toString();
@@ -282,9 +279,9 @@ public class PhoneDialogue {
 		public String getResponseTabTitle(int index) {
 			if(!Main.game.getPlayer().getIncubatingLitters().isEmpty()) {
 				if(index==0) {
-					return "Phone";
+					return "Телефон";
 				} else if(index==1) {
-					return "[style.colourYellowLight(Eggs)]";
+					return "[style.colourYellowLight(Яйца)]";
 				}
 			}
 			return super.getResponseTabTitle(index);
@@ -295,9 +292,9 @@ public class PhoneDialogue {
 				if (index == 1) {
 					return new Response(
 							(Main.game.getPlayer().isMainQuestUpdated() || Main.game.getPlayer().isSideQuestUpdated() || Main.game.getPlayer().isRelationshipQuestUpdated())
-								?"<span style='color:" + PresetColour.GENERIC_EXCELLENT.toWebHexString() + ";'>Quests</span>"
-								:"Quests",
-							"Open your planner to view your current quests.", PLANNER_MAIN){
+								?"<span style='color:" + PresetColour.GENERIC_EXCELLENT.toWebHexString() + ";'>Задания</span>"
+								:"Задания",
+							"Откройте планировщик, чтобы просмотреть текущие задания.", PLANNER_MAIN){
 						@Override
 						public void effects() {
 							Main.game.getPlayer().setMainQuestUpdated(false);
@@ -307,12 +304,12 @@ public class PhoneDialogue {
 				} else if (index == 2) {
 					return new Response(
 							Main.getProperties().hasValue(PropertyValue.levelUpHightlight)
-								? "<span style='color:" + PresetColour.GENERIC_EXCELLENT.toWebHexString() + ";'>Perk Tree</span>"
-								:"Perk Tree",
-							"View your character page.", CHARACTER_PERK_TREE);
+								? "<span style='color:" + PresetColour.GENERIC_EXCELLENT.toWebHexString() + ";'>Древо навыков</span>"
+								:"Древо навыков",
+							"Просмотреть страницу персонажа.", CHARACTER_PERK_TREE);
 					
 				} else if (index == 3) {
-					return new Response("Spells", "View your spells page.", SpellManagement.CHARACTER_SPELLS_EARTH) {
+					return new Response("Заклинания", "Просмотреть страницу заклинаний.", SpellManagement.CHARACTER_SPELLS_EARTH) {
 						@Override
 						public void effects() {
 							SpellManagement.setSpellOwner(Main.game.getPlayer(), MENU);
@@ -320,19 +317,19 @@ public class PhoneDialogue {
 					};
 					
 				} else if (index == 4) {
-					return new Response("Fetishes", "View your fetishes page.", CHARACTER_FETISHES);
+					return new Response("Фетиши", "Просмотреть страницу фетишей.", CHARACTER_FETISHES);
 					
 				} else if (index == 5) {
-					return new Response("Stats", "Take a detailed look at your stats.", CHARACTER_STATS);
+					return new Response("Статы", "Подробно изучить свои характеристики.", CHARACTER_STATS);
 					
 				} else if (index == 6) {
-					return new Response("Selfie", "Take a selfie to get a good view of yourself.", CHARACTER_APPEARANCE);
+					return new Response("Селфи", "Сделайте селфи, чтобы получше рассмотреть себя.", CHARACTER_APPEARANCE);
 					
 				} else if (index == 7) {
 					if(Main.game.getPlayer().getCharactersEncountered().isEmpty()) {
-						return new Response("Contacts", "You haven't met anyone yet!", null);
+						return new Response("Контакты", "Вы еще ни с кем не познакомились!", null);
 					} else {
-						return new Response("Contacts", "Even though you can't call anyone, on account of there being no phones in this world, you've still kept a record of all the people you've come into contact with.", CONTACTS) {
+						return new Response("Контакты", "Хотя в этом мире нет телефонов и вы не можете никому позвонить, вы все же ведете список всех людей, с которыми пересекались.", CONTACTS) {
 							@Override
 							public void effects() {
 								Main.game.getPlayer().sortCharactersEncountered();
@@ -347,9 +344,9 @@ public class PhoneDialogue {
 									|| Main.getProperties().hasValue(PropertyValue.newClothingDiscovered)
 									|| Main.getProperties().hasValue(PropertyValue.newItemDiscovered)
 									|| Main.getProperties().hasValue(PropertyValue.newRaceDiscovered))
-								? "<span style='color:" + PresetColour.GENERIC_EXCELLENT.toWebHexString() + ";'>Encyclopedia</span>"
-								:"Encyclopedia",
-							"Have a look at all the different items and races you've discovered so far.", ENCYCLOPEDIA){
+								? "<span style='color:" + PresetColour.GENERIC_EXCELLENT.toWebHexString() + ";'>Энциклопедия</span>"
+								:"Энциклопедия",
+							"Посмотрите на все предметы и расы, которые вы открыли к этому моменту.", ENCYCLOPEDIA){
 						@Override
 						public void effects() {
 							resetContentForRaces();
@@ -358,8 +355,8 @@ public class PhoneDialogue {
 					
 				} else if (index == 9) {
 					if(Main.game.getPlayer().isAbleToSelfTransform()) {
-						return new Response("Transform",
-								"Transform your body.",
+						return new Response("Трансформация",
+								"Преобразовать свое тело.",
 								BodyChanging.BODY_CHANGING_CORE) {
 							@Override
 							public void effects() {
@@ -367,11 +364,11 @@ public class PhoneDialogue {
 							}
 						};
 					} else {
-						return new Response("Transform", Main.game.getPlayer().getUnableToTransformDescription(), null);
+						return new Response("Трансформация", Main.game.getPlayer().getUnableToTransformDescription(), null);
 					}
 					
 				} else if (index == 10) {
-					return new Response("Maps", "Take a look at maps of all the places you've visited.", MAP) {
+					return new Response("Карты", "Просмотрите карты всех мест, которые вы посетили.", MAP) {
 						@Override
 						public void effects() {
 							worldTypeMap = Main.game.getPlayer().getWorldLocation();
@@ -380,31 +377,31 @@ public class PhoneDialogue {
 					
 				} else if (index == 11) {
 					if(Main.game.isSavedDialogueNeutral()) {
-						return new Response("Combat Moves", "Adjust the core combat moves you are prepared to perform in combat.", CombatMovesSetup.COMBAT_MOVES_CORE) {
+						return new Response("Боевые приемы", "Настройте основные боевые приемы, которые вы готовы использовать в бою.", CombatMovesSetup.COMBAT_MOVES_CORE) {
 							@Override
 							public void effects() {
 								CombatMovesSetup.setTarget(Main.game.getPlayer(), PhoneDialogue.MENU);
 							}
 						};
 					} else {
-						return new Response("Combat Moves", "You are too busy to change your core combat moves.", null);
+						return new Response("Боевые приемы", "Вы слишком заняты, чтобы менять свои основные боевые приемы.", null);
 					}
 					
 				} else if (index == 12) {
 					if(!Main.game.isSavedDialogueNeutral()) {
-							return new Response("Masturbate", "You are too busy to masturbate right now. (Can only be performed in a neutral scene.)", null);
+							return new Response("Мастурбировать", "Сейчас ты слишком занят, чтобы мастурбировать. (Можно совершить только в нейтральной сцене.)", null);
 							
 					} else if(!Main.game.getPlayer().getSexAvailabilityBasedOnLocation().getKey()) {
-						return new Response("Masturbate", Main.game.getPlayer().getSexAvailabilityBasedOnLocation().getValue(), null);
+						return new Response("Мастурбировать", Main.game.getPlayer().getSexAvailabilityBasedOnLocation().getValue(), null);
 						
 					} else if(Main.game.getPlayerCell().getPlace().isPopulated() && !Main.game.getPlayer().hasFetish(Fetish.FETISH_EXHIBITIONIST)) {
-						return new Response("Masturbate",
-								"As you do not have the [style.colourFetish("+Fetish.FETISH_EXHIBITIONIST.getName(Main.game.getPlayer())+" fetish)], you are not comfortable with masturbating in a place where people could see you!",
+						return new Response("Мастурбировать",
+								"Так как у вас нет [style.colourFetish(\""+Fetish.FETISH_EXHIBITIONIST.getName(Main.game.getPlayer())+" фетиш)], тебе некомфортно мастурбировать там, где тебя могут увидеть!",
 								null);
 						
 					} else {
-						return new ResponseSex("Masturbate",
-								"Decide to take a break from what you're currently doing in order to masturbate.",
+						return new ResponseSex("Мастурбировать",
+								"Решить сделать перерыв в текущих делах, чтобы заняться мастурбацией.",
 								true,
 								true,
 								new SMMasturbation(
@@ -418,48 +415,46 @@ public class PhoneDialogue {
 					}
 					
 				} else if (index == 13){
-					String title = Main.game.isSillyMode()?"Delay":"Loiter";
+					String title = Main.game.isSillyMode()?"Отложить":"Поглазеть по сторонам";
 					if(!Main.game.isSavedDialogueNeutral()) {
-						return new Response(title, "You can only loiter to pass the time when in a neutral dialogue scene!", null);
+						return new Response(title, "Бездельничать, чтобы скоротать время, можно только в нейтральной сцене диалога!", null);
 					}
 					if(Main.game.getPlayerCell().getPlace().isDangerous()) {
-						return new Response(title, "You can only loiter to pass the time when in a safe area!", null);
+						return new Response(title, "Бездельничать, чтобы скоротать время, можно только в безопасной зоне!", null);
 					}
 					if(Main.game.getPlayer().getLocationPlace().getPlaceType().isLoiteringEnabledOverride()) {
 						if(!Main.game.getPlayer().getLocationPlace().getPlaceType().isLoiteringEnabled()) {
-							return new Response(title, "This is not a suitable place in which to be loitering about!", null);
+							return new Response(title, "Это не самое подходящее место для того, чтобы слоняться без дела!", null);
 						}
 					} else {
 						if(!Main.game.getPlayerCell().getType().isLoiteringEnabled()) {
-							return new Response(title, "This is not a suitable place in which to be loitering about!", null);
+							return new Response(title, "Это не самое подходящее место для того, чтобы слоняться без дела!", null);
 						}
 					}
-					return new Response(title, "Think about loitering in this area for an as-yet undetermined length of time.", LOITER_SELECTION);
+					return new Response(title, "Задуматься о том, чтобы побродить по этой местности в течение неопределенного времени.", LOITER_SELECTION);
 					
 				} else if (index == 14){
 					if(!Main.game.getPlayer().isElementalSummoned()) {
 						if(Main.game.getPlayer().hasDiscoveredElemental()) {
 							return new Response("[el.Name]",
-									"You have not summoned [el.name], so you cannot talk to [el.herHim]!"
-											+ "<br/>[style.italicsMinorGood(You can summon your elemental from your 'Spells' screen!)]",
+									"Ты еще не призвал [el.name], поэтому не можешь говорить с [el.herHim]!<br/>[style.italicsMinorGood(Ты можешь призвать своего элементаля из экрана «Заклинания»!)]",
 									null);
 						}
-						return new Response("Elemental",
-								"You have not summoned your elemental, so you cannot talk to them..."
-										+ "<br/>[style.italicsMinorGood(You can summon your elemental by learning an elemental-summoning spell and casting it from your 'Spells' screen!)]",
+						return new Response("Элементаль",
+								"Вы еще не призвали своего элементаля, поэтому не можете с ним поговорить...<br/>[style.italicsMinorGood(Вы можете призвать своего элементаля, если выучите заклинание призыва элементаля и примените его в окне «Заклинания»!)]",
 								null);
 					}
 					if(!Main.game.isSavedDialogueNeutral()) {
 						return new Response("[el.Name]",
 								Main.game.isInSex()
-									?"You cannot talk to [el.name] during sex!"
+									?"Вы не можете разговаривать с [el.name] во время секса!"
 									:(Main.game.isInCombat()
-										?"You cannot talk to [el.name] during combat!"
-										:"You cannot talk to [el.name] in this scene!"),
+										?"Вы не можете разговаривать с [el.name] во время боя!"
+										:"Вы не можете разговаривать с [el.name] в этой сцене!"),
 								null);
 					}
 					return new Response("[el.Name]",
-							"Spend some time talking with [el.name].",
+							"Провести время в разговоре с [el.name].",
 							ElementalDialogue.ELEMENTAL_START);
 					
 				}
@@ -470,24 +465,24 @@ public class PhoneDialogue {
 				
 				if(incubationAreas.contains(SexAreaOrifice.VAGINA)) {
 					if(!Main.game.isSavedDialogueNeutral()) {
-						responses.add(new Response("Lay eggs (womb)", "You are too busy to lay eggs right now. (Can only be performed in a neutral scene.)", null));
+						responses.add(new Response("Отложить яйца (матка)", "Сейчас вы слишком заняты, чтобы откладывать яйца. (Можно выполнить только в нейтральной сцене.)", null));
 						
 					} else if(!Main.game.getPlayer().getSexAvailabilityBasedOnLocation().getKey()) {
-						responses.add(new Response("Lay eggs (womb)", "There is no suitable place nearby in which to lay your eggs!", null));
+						responses.add(new Response("Отложить яйца (матка)", "Поблизости нет подходящего места, чтобы отложить яйца!", null));
 						
 					} else if(!Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.VAGINA, true)) {
-						responses.add(new Response("Lay eggs (womb)", "You are unable to gain access to your vagina, and so cannot currently lay the eggs which have matured in your womb!", null));
+						responses.add(new Response("Отложить яйца (матка)", "Вы не можете добраться до своей вагины, поэтому пока не способны отложить яйца, созревшие в вашем чреве!", null));
 						
 					} else if(Main.game.getPlayerCell().getPlace().isPopulated() && !Main.game.getPlayer().hasFetish(Fetish.FETISH_EXHIBITIONIST)) {
-						responses.add(new Response("Lay eggs (womb)",
-								"As you do not have the [style.colourFetish("+Fetish.FETISH_EXHIBITIONIST.getName(Main.game.getPlayer())+" fetish)], you are not comfortable with laying your eggs in a place where people could see you!",
+						responses.add(new Response("Отложить яйца (матка)",
+								"Так как у вас нет [style.colourFetish(\""+Fetish.FETISH_EXHIBITIONIST.getName(Main.game.getPlayer())+" fetish)], вам некомфортно откладывать яйца в месте, где вас могут увидеть люди!",
 								null));
 						
 					} else if(!Main.game.getPlayer().hasStatusEffect(StatusEffect.INCUBATING_EGGS_WOMB_3)) {
-						responses.add(new Response("Lay eggs (womb)", "You need to wait until the eggs in your womb have finished growing before you're able to lay them.", null));
+						responses.add(new Response("Отложить яйца (матка)", "Вам нужно подождать, пока яйца в вашем чреве закончат рост, прежде чем вы сможете их отложить.", null));
 						
 					} else {
-						responses.add(new Response("Lay eggs (womb)", "Find a suitable place nearby in which to lay the eggs you've been incubating in your womb.", INCUBATION_EGG_LAYING) {
+						responses.add(new Response("Отложить яйца (матка)", "Найдите поблизости подходящее место, чтобы отложить яйца, которые вы вынашиваете в своем чреве.", INCUBATION_EGG_LAYING) {
 							@Override
 							public void effects() {
 								layingEggsArea = SexAreaOrifice.VAGINA;
@@ -498,24 +493,24 @@ public class PhoneDialogue {
 				}
 				if(incubationAreas.contains(SexAreaOrifice.ANUS)) {
 					if(!Main.game.isSavedDialogueNeutral()) {
-						responses.add(new Response("Lay eggs (stomach)", "You are too busy to lay eggs right now. (Can only be performed in a neutral scene.)", null));
+						responses.add(new Response("Отложить яйца (желудок)", "Сейчас вы слишком заняты, чтобы откладывать яйца. (Можно выполнить только в нейтральной сцене.)", null));
 						
 					} else if(!Main.game.getPlayer().getSexAvailabilityBasedOnLocation().getKey()) {
-						responses.add(new Response("Lay eggs (stomach)", "There is no suitable place nearby in which to lay your eggs!", null));
+						responses.add(new Response("Отложить яйца (желудок)", "Поблизости нет подходящего места, чтобы отложить яйца!", null));
 						
 					} else if(!Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.ANUS, true)) {
-						responses.add(new Response("Lay eggs (stomach)", "You are unable to gain access to your asshole, and so cannot currently lay the eggs which have matured in your stomach!", null));
+						responses.add(new Response("Отложить яйца (желудок)", "Вы не можете добраться до своего ануса, поэтому пока не способны отложить яйца, созревшие в вашем желудке!", null));
 						
 					} else if(Main.game.getPlayerCell().getPlace().isPopulated() && !Main.game.getPlayer().hasFetish(Fetish.FETISH_EXHIBITIONIST)) {
-						responses.add(new Response("Lay eggs (stomach)",
-								"As you do not have the [style.colourFetish("+Fetish.FETISH_EXHIBITIONIST.getName(Main.game.getPlayer())+" fetish)], you are not comfortable with laying your eggs in a place where people could see you!",
+						responses.add(new Response("Отложить яйца (желудок)",
+								"Так как у вас нет [style.colourFetish(\""+Fetish.FETISH_EXHIBITIONIST.getName(Main.game.getPlayer())+" fetish)], вам некомфортно откладывать яйца в месте, где вас могут увидеть люди!",
 								null));
 						
 					} else if(!Main.game.getPlayer().hasStatusEffect(StatusEffect.INCUBATING_EGGS_STOMACH_3)) {
-						responses.add(new Response("Lay eggs (stomach)", "You need to wait until the eggs in your stomach have finished growing before you're able to lay them.", null));
+						responses.add(new Response("Отложить яйца (желудок)", "Тебе нужно подождать, пока яйца в твоем животе окончательно вырастут, прежде чем ты сможешь их отложить.", null));
 						
 					} else {
-						responses.add(new Response("Lay eggs (stomach)", "Find a suitable place nearby in which to lay the eggs you've been incubating in your stomach.", INCUBATION_EGG_LAYING) {
+						responses.add(new Response("Отложить яйца (желудок)", "Найди подходящее место поблизости, чтобы отложить яйца, которые ты вынашиваешь в животе.", INCUBATION_EGG_LAYING) {
 							@Override
 							public void effects() {
 								layingEggsArea = SexAreaOrifice.ANUS;
@@ -526,24 +521,24 @@ public class PhoneDialogue {
 				}
 				if(incubationAreas.contains(SexAreaOrifice.NIPPLE)) {
 					if(!Main.game.isSavedDialogueNeutral()) {
-						responses.add(new Response("Lay eggs (breasts)", "You are too busy to lay eggs right now. (Can only be performed in a neutral scene.)", null));
+						responses.add(new Response("Отложить яйца (грудь)", "Сейчас вы слишком заняты, чтобы откладывать яйца. (Можно выполнить только в нейтральной сцене.)", null));
 						
 					} else if(!Main.game.getPlayer().getSexAvailabilityBasedOnLocation().getKey()) {
-						responses.add(new Response("Lay eggs (breasts)", "There is no suitable place nearby in which to lay your eggs!", null));
+						responses.add(new Response("Отложить яйца (грудь)", "Поблизости нет подходящего места, чтобы отложить яйца!", null));
 						
 					} else if(!Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.NIPPLES, true)) {
-						responses.add(new Response("Lay eggs (breasts)", "You are unable to gain access to your nipples, and so cannot currently lay the eggs which have matured in your breasts!", null));
+						responses.add(new Response("Отложить яйца (грудь)", "Ты не можешь добраться до своих сосков, поэтому сейчас не в состоянии отложить яйца, созревшие в твоей груди!", null));
 						
 					} else if(Main.game.getPlayerCell().getPlace().isPopulated() && !Main.game.getPlayer().hasFetish(Fetish.FETISH_EXHIBITIONIST)) {
-						responses.add(new Response("Lay eggs (breasts)",
-								"As you do not have the [style.colourFetish("+Fetish.FETISH_EXHIBITIONIST.getName(Main.game.getPlayer())+" fetish)], you are not comfortable with laying your eggs in a place where people could see you!",
+						responses.add(new Response("Отложить яйца (грудь)",
+								"Так как у вас нет [style.colourFetish(\""+Fetish.FETISH_EXHIBITIONIST.getName(Main.game.getPlayer())+" fetish)], вам некомфортно откладывать яйца в месте, где вас могут увидеть люди!",
 								null));
 						
 					} else if(!Main.game.getPlayer().hasStatusEffect(StatusEffect.INCUBATING_EGGS_NIPPLES_3)) {
-						responses.add(new Response("Lay eggs (breasts)", "You need to wait until the eggs in your breasts have finished growing before you're able to lay them.", null));
+						responses.add(new Response("Отложить яйца (грудь)", "Тебе нужно подождать, пока яйца в твоей груди окончательно вырастут, прежде чем ты сможешь их отложить.", null));
 						
 					} else {
-						responses.add(new Response("Lay eggs (breasts)", "Find a suitable place nearby in which to lay the eggs you've been incubating in your breasts.", INCUBATION_EGG_LAYING) {
+						responses.add(new Response("Отложить яйца (грудь)", "Найди поблизости подходящее место, чтобы отложить яйца, которые ты вынашивала в своей груди.", INCUBATION_EGG_LAYING) {
 							@Override
 							public void effects() {
 								layingEggsArea = SexAreaOrifice.NIPPLE;
@@ -555,24 +550,24 @@ public class PhoneDialogue {
 				if(incubationAreas.contains(SexAreaOrifice.NIPPLE_CROTCH)) {
 					String udderName = Main.game.getPlayer().getBreastCrotchShape()==BreastShape.UDDERS?"udders":"crotch-boobs";
 					if(!Main.game.isSavedDialogueNeutral()) {
-						responses.add(new Response("Lay eggs ("+udderName+")", "You are too busy to lay eggs right now. (Can only be performed in a neutral scene.)", null));
+						responses.add(new Response("Отложить яйца ("+udderName+")", "Сейчас вы слишком заняты, чтобы откладывать яйца. (Можно выполнить только в нейтральной сцене.)", null));
 						
 					} else if(!Main.game.getPlayer().getSexAvailabilityBasedOnLocation().getKey()) {
-						responses.add(new Response("Lay eggs ("+udderName+")", "There is no suitable place nearby in which to lay your eggs!", null));
+						responses.add(new Response("Отложить яйца ("+udderName+")", "Поблизости нет подходящего места, чтобы отложить яйца!", null));
 						
 					} else if(!Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.NIPPLES_CROTCH, true)) {
-						responses.add(new Response("Lay eggs ("+udderName+")", "You are unable to gain access to your [pc.crotchNipples], and so cannot currently lay the eggs which have matured in your [pc.crotchBoobs]!", null));
+						responses.add(new Response("Отложить яйца ("+udderName+")", "Ты не можешь получить доступ к своим [pc.crotchNipples], поэтому сейчас не можешь отложить яйца, созревшие в твоих [pc.crotchBoobs]!", null));
 						
 					} else if(Main.game.getPlayerCell().getPlace().isPopulated() && !Main.game.getPlayer().hasFetish(Fetish.FETISH_EXHIBITIONIST)) {
-						responses.add(new Response("Lay eggs ("+udderName+")",
-								"As you do not have the [style.colourFetish("+Fetish.FETISH_EXHIBITIONIST.getName(Main.game.getPlayer())+" fetish)], you are not comfortable with laying your eggs in a place where people could see you!",
+						responses.add(new Response("Отложить яйца ("+udderName+")",
+								"Так как у вас нет [style.colourFetish(\""+Fetish.FETISH_EXHIBITIONIST.getName(Main.game.getPlayer())+" fetish)], вам некомфортно откладывать яйца в месте, где вас могут увидеть люди!",
 								null));
 						
 					} else if(!Main.game.getPlayer().hasStatusEffect(StatusEffect.INCUBATING_EGGS_NIPPLES_CROTCH_3)) {
-						responses.add(new Response("Lay eggs ("+udderName+")", "You need to wait until the eggs in your [pc.crotchBoobs] have finished growing before you're able to lay them.", null));
+						responses.add(new Response("Отложить яйца ("+udderName+")", "Тебе нужно подождать, пока яйца в твоих [pc.crotchBoobs] закончат расти, прежде чем ты сможешь их отложить.", null));
 						
 					} else {
-						responses.add(new Response("Lay eggs ("+udderName+")", "Find a suitable place nearby in which to lay the eggs you've been incubating in your [pc.crotchBoobs].", INCUBATION_EGG_LAYING) {
+						responses.add(new Response("Отложить яйца ("+udderName+")", "Найди поблизости подходящее место, чтобы отложить яйца, которые ты вынашивала в своих [pc.crotchBoobs].", INCUBATION_EGG_LAYING) {
 							@Override
 							public void effects() {
 								layingEggsArea = SexAreaOrifice.NIPPLE_CROTCH;
@@ -584,21 +579,21 @@ public class PhoneDialogue {
 				}
 				if(incubationAreas.contains(SexAreaOrifice.SPINNERET)) {
 					if(!Main.game.isSavedDialogueNeutral()) {
-						responses.add(new Response("Lay eggs (spinneret)", "You are too busy to lay eggs right now. (Can only be performed in a neutral scene.)", null));
+						responses.add(new Response("Отложить яйца (паутинным аппаратом)", "Сейчас вы слишком заняты, чтобы откладывать яйца. (Можно выполнить только в нейтральной сцене.)", null));
 						
 					} else if(!Main.game.getPlayer().getSexAvailabilityBasedOnLocation().getKey()) {
-						responses.add(new Response("Lay eggs (spinneret)", "There is no suitable place nearby in which to lay your eggs!", null));
+						responses.add(new Response("Отложить яйца (паутинным аппаратом)", "Поблизости нет подходящего места, чтобы отложить яйца!", null));
 						
 					} else if(Main.game.getPlayerCell().getPlace().isPopulated() && !Main.game.getPlayer().hasFetish(Fetish.FETISH_EXHIBITIONIST)) {
-						responses.add(new Response("Lay eggs (spinneret)",
-								"As you do not have the [style.colourFetish("+Fetish.FETISH_EXHIBITIONIST.getName(Main.game.getPlayer())+" fetish)], you are not comfortable with laying your eggs in a place where people could see you!",
+						responses.add(new Response("Отложить яйца (паутинным аппаратом)",
+								"Так как у вас нет [style.colourFetish(\""+Fetish.FETISH_EXHIBITIONIST.getName(Main.game.getPlayer())+" fetish)], вам некомфортно откладывать яйца в месте, где вас могут увидеть люди!",
 								null));
 						
 					} else if(!Main.game.getPlayer().hasStatusEffect(StatusEffect.INCUBATING_EGGS_SPINNERET_3)) {
-						responses.add(new Response("Lay eggs (spinneret)", "You need to wait until the eggs in your spinneret have finished growing before you're able to lay them.", null));
+						responses.add(new Response("Отложить яйца (паутинным аппаратом)", "Вам нужно подождать, пока яйца в вашем паутинном аппарате закончат созревать, прежде чем вы сможете их отложить.", null));
 						
 					} else {
-						responses.add(new Response("Lay eggs (spinneret)", "Find a suitable place nearby in which to lay the eggs you've been incubating in your spinneret.", INCUBATION_EGG_LAYING) {
+						responses.add(new Response("Отложить яйца (паутинным аппаратом)", "Найдите подходящее место поблизости, чтобы отложить яйца, которые вы вынашивали в своем паутинном аппарате.", INCUBATION_EGG_LAYING) {
 							@Override
 							public void effects() {
 								layingEggsArea = SexAreaOrifice.SPINNERET;
@@ -645,7 +640,7 @@ public class PhoneDialogue {
 			}
 			
 			if(index == 0) {
-				return new ResponseEffectsOnly("Back", "Put your phone away."){
+				return new ResponseEffectsOnly("Назад", "Убрать телефон."){
 					@Override
 					public void effects() {
 						Main.game.restoreSavedContent(false);
@@ -687,7 +682,7 @@ public class PhoneDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index == 1) {
-				return new Response("Rest", "You have no energy left, and your eyelids seem to be getting heavier...", INCUBATION_EGG_LAYING_FINISHED){
+				return new Response("Отдых", "У вас не осталось энергии, а веки, кажется, становятся всё тяжелее...", INCUBATION_EGG_LAYING_FINISHED){
 					@Override
 					public void effects() {
 						if(!Main.game.getPlayer().isQuestCompleted(QuestLine.SIDE_FIRST_TIME_INCUBATION)) {
@@ -750,13 +745,13 @@ public class PhoneDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index == 1) {
-				return new Response("Continue", "Having successfully laid your eggs, you're now free to continue on your way.", Main.game.getDefaultDialogue(false));
+				return new Response("Продолжить", "Успешно отложив яйца, теперь вы вольны продолжить свой путь.", Main.game.getDefaultDialogue(false));
 			}
 			return null;
 		}
 	};
 	
-	public static final DialogueNode AFTER_MASTURBATION = new DialogueNode("Finished", "You've had enough of masturbating for now.", true) {
+	public static final DialogueNode AFTER_MASTURBATION = new DialogueNode("Завершено", "На сегодня с мастурбацией покончено.", true) {
 
 		@Override
 		public String getContent() {
@@ -766,7 +761,7 @@ public class PhoneDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Continue", "Continue on your way...", Main.game.getDefaultDialogue(false));
+				return new Response("Продолжить", "Продолжить путь...", Main.game.getDefaultDialogue(false));
 
 			} else {
 				return null;
@@ -774,7 +769,7 @@ public class PhoneDialogue {
 		}
 	};
 
-	public static final DialogueNode PLANNER_MAIN = new DialogueNode("Planner", "", true) {
+	public static final DialogueNode PLANNER_MAIN = new DialogueNode("Планировщик", "", true) {
 
 		@Override
 		public String getContent() {
@@ -789,8 +784,7 @@ public class PhoneDialogue {
 			if (Main.game.getPlayer().isQuestCompleted(questLine)) {
 				journalSB.append(
 						"<details open>"
-						+ "<summary class='quest-title' style='color:" + questLine.getType().getColour().getShades()[1] + ";'>"
-							+ "Completed - " + questLine.getName()
+						+ "<summary class='quest-title' style='color:" + questLine.getType().getColour().getShades()[1] + ";'>Завершено - " + questLine.getName()
 						+ "</summary>");
 				journalSB.append(getQuestBoxDiv(q, true));
 				
@@ -819,14 +813,14 @@ public class PhoneDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Main quests", "View your progress on the main quest.", null);
+				return new Response("Основные квесты", "Посмотреть прогресс по основным квестам.", null);
 				
 			} else if (index == 2) {
 				return new Response(
 						(Main.game.getPlayer().isSideQuestUpdated()
-							?"<span style='color:" + PresetColour.GENERIC_EXCELLENT.toWebHexString() + ";'>Side quests</span>"
-							:"Side quests"),
-						"View your side quests.",
+							?"<span style='color:" + PresetColour.GENERIC_EXCELLENT.toWebHexString() + ";'>Побочные квесты</span>"
+							:"Побочные квесты"),
+						"Посмотреть свои побочные квесты.",
 						PLANNER_SIDE){
 					@Override
 					public void effects() {
@@ -837,9 +831,9 @@ public class PhoneDialogue {
 			} else if (index == 3) {
 				return new Response(
 						(Main.game.getPlayer().isRelationshipQuestUpdated()
-							?"<span style='color:" + PresetColour.GENERIC_EXCELLENT.toWebHexString() + ";'>Romance quests</span>"
-							:"Romance quests"),
-						"View your romance quests.",
+							?"<span style='color:" + PresetColour.GENERIC_EXCELLENT.toWebHexString() + ";'>Романтические квесты</span>"
+							:"Романтические квесты"),
+						"Посмотреть ваши романтические квесты.",
 						PLANNER_RELATIONSHIP){
 					@Override
 					public void effects() {
@@ -848,7 +842,7 @@ public class PhoneDialogue {
 				};
 				
 			} else if (index == 0) {
-				return new Response("Back", "Return to the phone's main menu.", MENU);
+				return new Response("Назад", "Вернуться в главное меню телефона.", MENU);
 			} else {
 				return null;
 			}
@@ -859,7 +853,7 @@ public class PhoneDialogue {
 			return DialogueNodeType.PHONE;
 		}
 	};
-	public static final DialogueNode PLANNER_SIDE = new DialogueNode("Planner", "", true) {
+	public static final DialogueNode PLANNER_SIDE = new DialogueNode("Планировщик", "", true) {
 
 		@Override
 		public String getContent() {
@@ -888,8 +882,7 @@ public class PhoneDialogue {
 					if(Main.game.getPlayer().isQuestFailed(questLine)) {
 						journalSB.append(
 								"<details>"
-								+ "<summary class='quest-title' style='color:" + PresetColour.GENERIC_TERRIBLE.getShades()[1] + ";'>"
-									+ "Failed - " + questLine.getName()
+								+ "<summary class='quest-title' style='color:" + PresetColour.GENERIC_TERRIBLE.getShades()[1] + ";'>Ошибка - " + questLine.getName()
 								+ "</summary>");
 						journalSB.append(getQuestBoxDivFailed(Main.game.getPlayer().getQuestsFailed().get(questLine)));
 //						journalSB.append(getQuestBoxDiv(q, true)); // Do not append, as this was the failed Quest
@@ -897,8 +890,7 @@ public class PhoneDialogue {
 					} else if(Main.game.getPlayer().isQuestCompleted(questLine)) {
 						journalSB.append(
 								"<details>"
-								+ "<summary class='quest-title' style='color:" + questLine.getType().getColour().getShades()[1] + ";'>"
-									+ "Completed - " + questLine.getName()
+								+ "<summary class='quest-title' style='color:" + questLine.getType().getColour().getShades()[1] + ";'>Завершено - " + questLine.getName()
 								+ "</summary>");
 						journalSB.append(getQuestBoxDiv(q, true));
 						
@@ -924,7 +916,7 @@ public class PhoneDialogue {
 			}
 			
 			if(!sideQuestsFound) {
-				journalSB.append("<div class='subTitle'>You haven't got any side quests!</div>");
+				journalSB.append("<div class='subTitle'>У вас нет никаких побочных квестов!</div>");
 			}
 
 			return journalSB.toString();
@@ -933,15 +925,15 @@ public class PhoneDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Main quests", "View your progress on the main quest.", PLANNER_MAIN);
+				return new Response("Основные квесты", "Посмотреть прогресс по основным квестам.", PLANNER_MAIN);
 			} else if (index == 2) {
-				return new Response("Side quests", "View your side quests.", null);
+				return new Response("Побочные квесты", "Посмотреть свои побочные квесты.", null);
 			} else if (index == 3) {
 				return new Response(
 						(Main.game.getPlayer().isRelationshipQuestUpdated()
-						?"<span style='color:" + PresetColour.GENERIC_EXCELLENT.toWebHexString() + ";'>Romance quests</span>"
-							:"Romance quests"),
-							"View your romance quests.",
+						?"<span style='color:" + PresetColour.GENERIC_EXCELLENT.toWebHexString() + ";'>Романтические квесты</span>"
+							:"Романтические квесты"),
+							"Посмотреть ваши романтические квесты.",
 						PLANNER_RELATIONSHIP){
 					@Override
 					public void effects() {
@@ -949,7 +941,7 @@ public class PhoneDialogue {
 					}
 				};
 			} else if (index == 0) {
-				return new Response("Back", "Return to the phone's main menu.", MENU);
+				return new Response("Назад", "Вернуться в главное меню телефона.", MENU);
 			} else {
 				return null;
 			}
@@ -960,7 +952,7 @@ public class PhoneDialogue {
 			return DialogueNodeType.PHONE;
 		}
 	};
-	public static final DialogueNode PLANNER_RELATIONSHIP = new DialogueNode("Planner", "", true) {
+	public static final DialogueNode PLANNER_RELATIONSHIP = new DialogueNode("Планировщик", "", true) {
 
 		@Override
 		public String getContent() {
@@ -980,8 +972,7 @@ public class PhoneDialogue {
 					if(Main.game.getPlayer().isQuestFailed(questLine)) {
 						journalSB.append(
 								"<details>"
-								+ "<summary class='quest-title' style='color:" + PresetColour.GENERIC_TERRIBLE.getShades()[1] + ";'>"
-									+ "Failed - " + questLine.getName()
+								+ "<summary class='quest-title' style='color:" + PresetColour.GENERIC_TERRIBLE.getShades()[1] + ";'>Ошибка - " + questLine.getName()
 								+ "</summary>");
 						journalSB.append(getQuestBoxDivFailed(Main.game.getPlayer().getQuestsFailed().get(questLine)));
 //						journalSB.append(getQuestBoxDiv(q, true)); // Do not append, as this was the failed Quest
@@ -989,8 +980,7 @@ public class PhoneDialogue {
 					} else if(Main.game.getPlayer().isQuestCompleted(questLine)) {
 						journalSB.append(
 								"<details>"
-								+ "<summary class='quest-title' style='color:" + questLine.getType().getColour().getShades()[1] + ";'>"
-									+ "Completed - " + questLine.getName()
+								+ "<summary class='quest-title' style='color:" + questLine.getType().getColour().getShades()[1] + ";'>Завершено - " + questLine.getName()
 								+ "</summary>");
 						journalSB.append(getQuestBoxDiv(q, true));
 						
@@ -1016,7 +1006,7 @@ public class PhoneDialogue {
 			}
 			
 			if(!relationshipQuestFound) {
-				journalSB.append("<div class='subTitle'>You haven't got any romance quests!</div>");
+				journalSB.append("<div class='subTitle'>У вас нет никаких романтических квестов!</div>");
 			}
 
 			return journalSB.toString();
@@ -1025,20 +1015,20 @@ public class PhoneDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Main quests", "View your progress on the main quest.", PLANNER_MAIN);
+				return new Response("Основные квесты", "Посмотреть прогресс по основным квестам.", PLANNER_MAIN);
 			} else if (index == 2) {
 				return new Response((Main.game.getPlayer().isSideQuestUpdated()
-						?"<span style='color:" + PresetColour.GENERIC_EXCELLENT.toWebHexString() + ";'>Side quests</span>"
-						:"Side quests"), "View your side quests.", PLANNER_SIDE){
+						?"<span style='color:" + PresetColour.GENERIC_EXCELLENT.toWebHexString() + ";'>Побочные квесты</span>"
+						:"Побочные квесты"), "Посмотреть свои побочные квесты.", PLANNER_SIDE){
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setSideQuestUpdated(false);
 					}
 				};
 			} else if (index == 3) {
-				return new Response("Romance quests", "View your romance quests.", null);
+				return new Response("Романтические квесты", "Посмотреть ваши романтические квесты.", null);
 			} else if (index == 0) {
-				return new Response("Back", "Return to the phone's main menu.", MENU);
+				return new Response("Назад", "Вернуться в главное меню телефона.", MENU);
 			} else {
 				return null;
 			}
@@ -1053,8 +1043,7 @@ public class PhoneDialogue {
 	private static String getQuestBoxDivFailed(Quest q) {
 		return "<div class='quest-box'>"
 				+ getLevelAndExperienceHTML(q, true)
-				+ "<h6 style='color:" + PresetColour.GENERIC_BAD.toWebHexString() + ";text-align:center;'>"
-						+ "<b>Failed - "+ q.getName() + "</b>"
+				+ "<h6 style='color:" + PresetColour.GENERIC_BAD.toWebHexString() + ";text-align:center;'><b>Ошибка - "+ q.getName() + "</b>"
 				+ "</h6>"
 				+ "<p style='color:" + PresetColour.TEXT_GREY.toWebHexString() + ";text-align:center;'>"
 					+ q.getCompletedDescription()
@@ -1075,8 +1064,7 @@ public class PhoneDialogue {
 		if(completed) {
 			return "<div class='quest-box'>"
 					+ getLevelAndExperienceHTML(q, completed)
-					+ "<h6 style='color:" + q.getQuestType().getColour().getShades()[1] + ";text-align:center;'>"
-							+ "<b>Completed - "+ q.getName() + "</b>"
+					+ "<h6 style='color:" + q.getQuestType().getColour().getShades()[1] + ";text-align:center;'><b>Завершено - "+ q.getName() + "</b>"
 					+ "</h6>"
 					+ "<p style='color:" + PresetColour.TEXT_GREY.toWebHexString() + ";text-align:center; margin-top:0;'>"
 						+ q.getCompletedDescription()
@@ -1086,8 +1074,7 @@ public class PhoneDialogue {
 		} else {
 			return "<div class='quest-box'>"
 					+ getLevelAndExperienceHTML(q, completed)
-					+ "<h6 style='color:" + q.getQuestType().getColour().toWebHexString()+ "; text-align:center; margin-top:0;'>"
-						+ "<b>" + q.getName() + "</b>"
+					+ "<h6 style='color:" + q.getQuestType().getColour().toWebHexString()+ "; text-align:center; margin-top:0;'><b>" + q.getName() + "</b>"
 					+ "</h6>"
 					+ "<p style='text-align:center;'>"
 						+ q.getDescription()
@@ -1103,26 +1090,26 @@ public class PhoneDialogue {
 		
 		if (!completed) {
 			if(q.getLevel() <= Main.game.getPlayer().getLevel() - 3) {
-				return "<b class='quest-extra level' style='color:"+  PresetColour.GENERIC_GOOD.toWebHexString() + ";'>Level " + q.getLevel()+ "</b>"
-						+ "<b class='quest-extra experience' style='color:" + PresetColour.GENERIC_EXPERIENCE.toWebHexString() + ";'>" + q.getExperienceReward() + " xp</b>";
+				return "<b class='quest-extra level' style='color:"+  PresetColour.GENERIC_GOOD.toWebHexString() + ";'>Уровень " + q.getLevel()+ "</b>"
+						+ "<b class='quest-extra experience' style='color:" + PresetColour.GENERIC_EXPERIENCE.toWebHexString() + ";'>" + q.getExperienceReward() + " опыта</b>";
 				
 			} else if (q.getLevel() >= Main.game.getPlayer().getLevel() + 3) {
-				return "<b class='quest-extra level' style='color:"+  PresetColour.GENERIC_BAD.toWebHexString() + ";'>Level " + q.getLevel()+ "</b>"
-						+ "<b class='quest-extra experience' style='color:" + PresetColour.GENERIC_EXPERIENCE.toWebHexString() + ";'>" + q.getExperienceReward() + " xp</b>";
+				return "<b class='quest-extra level' style='color:"+  PresetColour.GENERIC_BAD.toWebHexString() + ";'>Уровень " + q.getLevel()+ "</b>"
+						+ "<b class='quest-extra experience' style='color:" + PresetColour.GENERIC_EXPERIENCE.toWebHexString() + ";'>" + q.getExperienceReward() + " опыта</b>";
 				
 			} else {
-				return "<b class='quest-extra level'>Level " + q.getLevel()+ "</b>"
-						+ "<b class='quest-extra experience' style='color:" + PresetColour.GENERIC_EXPERIENCE.toWebHexString() + ";'>" + q.getExperienceReward() + " xp</b>";
+				return "<b class='quest-extra level'>Уровень " + q.getLevel()+ "</b>"
+						+ "<b class='quest-extra experience' style='color:" + PresetColour.GENERIC_EXPERIENCE.toWebHexString() + ";'>" + q.getExperienceReward() + " опыта</b>";
 			}
 			
 		} else {
-			return "<b class='quest-extra level' style='color:" + PresetColour.TEXT_GREY.toWebHexString() + ";'>Level " + q.getLevel() + "</b>"
-					+ "<b class='quest-extra experience' style='color:" + PresetColour.TEXT_GREY.toWebHexString() + ";'>" + q.getExperienceReward() + " xp</b>";
+			return "<b class='quest-extra level' style='color:" + PresetColour.TEXT_GREY.toWebHexString() + ";'>Уровень " + q.getLevel() + "</b>"
+					+ "<b class='quest-extra experience' style='color:" + PresetColour.TEXT_GREY.toWebHexString() + ";'>" + q.getExperienceReward() + " опыта</b>";
 		}
 	}
 	
 
-	public static final DialogueNode CHARACTER_APPEARANCE = new DialogueNode("Selfie picture", "Take a selfie", true) {
+	public static final DialogueNode CHARACTER_APPEARANCE = new DialogueNode("Селфи", "Сделать селфи", true) {
 
 		@Override
 		public String getContent() {
@@ -1133,7 +1120,7 @@ public class PhoneDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 0) {
-				return new Response("Back", "Return to the phone's main menu.", MENU);
+				return new Response("Назад", "Вернуться в главное меню телефона.", MENU);
 			} else {
 				return null;
 			}
@@ -1155,7 +1142,7 @@ public class PhoneDialogue {
 		return valueForDisplay;
 	}
 	
-	public static final DialogueNode CHARACTER_STATS = new DialogueNode("Character Stats", "", true) {
+	public static final DialogueNode CHARACTER_STATS = new DialogueNode("Характеристики персонажа", "", true) {
 
 		@Override
 		public String getContent() {
@@ -1169,100 +1156,97 @@ public class PhoneDialogue {
 				"<div class='container-full-width'>"
 					+ statAttributeHeader()
 					
-					+ "<p style='color:"+PresetColour.GENERIC_EXCELLENT.toWebHexString()+"; text-align:center;'><b>Core Attributes</b></p>"
+					+ "<p style='color:"+PresetColour.GENERIC_EXCELLENT.toWebHexString()+"; text-align:center;'><b>Основные атрибуты</b></p>"
 					+ getAttributeBox(Main.game.getPlayer(), Attribute.MAJOR_PHYSIQUE,
-							"'<b style='color:"+physiqueSE.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(physiqueSE.getName(Main.game.getPlayer()))+"</b>' effect gained")
+							"'<b style='color:"+physiqueSE.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(physiqueSE.getName(Main.game.getPlayer()))+"</b> получен эффект")
 					+ getAttributeBox(Main.game.getPlayer(), Attribute.MAJOR_ARCANE,
-							"'<b style='color:"+arcaneSE.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(arcaneSE.getName(Main.game.getPlayer()))+"</b>' effect gained")
+							"'<b style='color:"+arcaneSE.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(arcaneSE.getName(Main.game.getPlayer()))+"</b> получен эффект")
 					+ getAttributeBox(Main.game.getPlayer(), Attribute.MAJOR_CORRUPTION,
-							"'<b style='color:"+corruptionSE.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(corruptionSE.getName(Main.game.getPlayer()))+"</b>' effect gained")
+							"'<b style='color:"+corruptionSE.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(corruptionSE.getName(Main.game.getPlayer()))+"</b> получен эффект")
 					+ getAttributeBox(Main.game.getPlayer(), Attribute.HEALTH_MAXIMUM,
-							"When reduced to 0, you lose combat")
+							"Когда значение падает до 0, вы проигрываете бой")
 					+ getAttributeBox(Main.game.getPlayer(), Attribute.MANA_MAXIMUM,
-							"Used as a resource for casting spells")
+							"Используется как ресурс для сотворения заклинаний")
 //				+"</div>"
 //				
 //				+"<div class='container-full-width'>"
-					+ "<p style='color:"+PresetColour.GENERIC_ARCANE.toWebHexString()+"; text-align:center;'><b>Misc. Attributes</b></p>"
+					+ "<p style='color:"+PresetColour.GENERIC_ARCANE.toWebHexString()+"; text-align:center;'><b>Разное. Атрибуты</b></p>"
 					+ getAttributeBox(Main.game.getPlayer(), Attribute.FERTILITY,
-							"Increases pregnancy chance")
+							"Увеличивает шанс беременности")
 					+ getAttributeBox(Main.game.getPlayer(), Attribute.VIRILITY,
-							"Increases impregnation chance")
+							"Увеличивает шанс оплодотворения")
 
-					+ "<div class='container-full-width' style='text-align:center; background:"+PresetColour.BACKGROUND_ALT.toWebHexString()+";'>"
-						+ "<b style='color:"+PresetColour.BASE_PINK_LIGHT.toWebHexString()+";'>Pregnancy calculation:</b>"
-								+ "<br/>"
-								+ "<i>"+GameCharacter.PREGNANCY_CALCULATION+"</i>"
+					+ "<div class='container-full-width' style='text-align:center; background:"+PresetColour.BACKGROUND_ALT.toWebHexString()+";'><b style='color:"+PresetColour.BASE_PINK_LIGHT.toWebHexString()+";'>Расчет беременности:</b><br/><i>"+GameCharacter.PREGNANCY_CALCULATION+"</i>"
 					+ "</div>"
 //				+"</div>"
 //					
 //				+"<div class='container-full-width'>"
-					+ "<p style='color:"+PresetColour.GENERIC_COMBAT.toWebHexString()+"; text-align:center;'><b>Combat Attributes</b></p>"
+					+ "<p style='color:"+PresetColour.GENERIC_COMBAT.toWebHexString()+"; text-align:center;'><b>Боевые атрибуты</b></p>"
 					
 					+ getAttributeBox(Main.game.getPlayer(), Attribute.CRITICAL_DAMAGE,
-							"Deals <b>"+Units.number(Main.game.getPlayer().getAttributeValue(Attribute.CRITICAL_DAMAGE))+"%</b> normal damage",
+							"Наносит <b>"+Units.number(Main.game.getPlayer().getAttributeValue(Attribute.CRITICAL_DAMAGE))+"%</b> обычного урона",
 							true)
 					+ getAttributeBox(Main.game.getPlayer(), Attribute.ENERGY_SHIELDING,
-							"<b>"+getAttributeDisplayValue(Attribute.ENERGY_SHIELDING)+"</b> Health Block/Turn",
+							"<b>"+getAttributeDisplayValue(Attribute.ENERGY_SHIELDING)+"Блок Здоровья/ход: </b>",
 							true)
 
 					+ getAttributeBox(Main.game.getPlayer(), Attribute.SPELL_COST_MODIFIER,
-							"Reduces spell cost by <b>"+Units.number(Main.game.getPlayer().getAttributeValue(Attribute.SPELL_COST_MODIFIER))+"%</b>")
+							"Снижает стоимость заклинания на <b>"+Units.number(Main.game.getPlayer().getAttributeValue(Attribute.SPELL_COST_MODIFIER))+"%</b>")
 					+ getAttributeBox(Main.game.getPlayer(), Attribute.DAMAGE_SPELLS,
-							"Increases spell damage by <b>"+Units.number(Main.game.getPlayer().getAttributeValue(Attribute.DAMAGE_SPELLS))+"%</b>",
+							"Увеличивает урон заклинания на <b>"+Units.number(Main.game.getPlayer().getAttributeValue(Attribute.DAMAGE_SPELLS))+"%</b>",
 							true)
 
 					+ getAttributeBox(Main.game.getPlayer(), Attribute.DAMAGE_UNARMED,
-							"Increases unarmed damage by <b>"+Units.number(Main.game.getPlayer().getAttributeValue(Attribute.DAMAGE_UNARMED))+"%</b>",
+							"Увеличивает урон без оружия на <b>"+Units.number(Main.game.getPlayer().getAttributeValue(Attribute.DAMAGE_UNARMED))+"%</b>",
 							true)
 					
 
 					+ getAttributeBox(Main.game.getPlayer(), Attribute.DAMAGE_MELEE_WEAPON,
-							"Increases melee weapon damage by <b>"+Units.number(Main.game.getPlayer().getAttributeValue(Attribute.DAMAGE_MELEE_WEAPON))+"%</b>",
+							"Увеличивает урон холодного оружия на <b>"+Units.number(Main.game.getPlayer().getAttributeValue(Attribute.DAMAGE_MELEE_WEAPON))+"%</b>",
 							true)
 					+ getAttributeBox(Main.game.getPlayer(), Attribute.DAMAGE_RANGED_WEAPON,
-							"Increases ranged weapon damage by <b>"+Units.number(Main.game.getPlayer().getAttributeValue(Attribute.DAMAGE_RANGED_WEAPON))+"%</b>",
+							"Увеличивает урон дистанционного оружия на <b>"+Units.number(Main.game.getPlayer().getAttributeValue(Attribute.DAMAGE_RANGED_WEAPON))+"%</b>",
 							true)
 					
 					
 					+ getAttributeBox(Main.game.getPlayer(), Attribute.DAMAGE_PHYSICAL,
-							"Increases physical damage by <b>"+Units.number(Main.game.getPlayer().getAttributeValue(Attribute.DAMAGE_PHYSICAL))+"%</b>",
+							"Увеличивает физический урон на <b>"+Units.number(Main.game.getPlayer().getAttributeValue(Attribute.DAMAGE_PHYSICAL))+"%</b>",
 							true)
 					+ getAttributeBox(Main.game.getPlayer(), Attribute.RESISTANCE_PHYSICAL,
-							"<b>"+getAttributeDisplayValue(Attribute.RESISTANCE_PHYSICAL)+"</b> Physical Block/Turn",
+							"<b>"+getAttributeDisplayValue(Attribute.RESISTANCE_PHYSICAL)+"Физический блок/ход: </b>",
 							true)
 					
 					+ getAttributeBox(Main.game.getPlayer(), Attribute.DAMAGE_FIRE,
-							"Increases fire damage by <b>"+Units.number(Main.game.getPlayer().getAttributeValue(Attribute.DAMAGE_FIRE))+"%</b>",
+							"Увеличивает урон огнем на <b>"+Units.number(Main.game.getPlayer().getAttributeValue(Attribute.DAMAGE_FIRE))+"%</b>",
 							true)
 					+ getAttributeBox(Main.game.getPlayer(), Attribute.RESISTANCE_FIRE,
-							"<b>"+getAttributeDisplayValue(Attribute.RESISTANCE_FIRE)+"</b> Fire Block/Turn",
+							"<b>"+getAttributeDisplayValue(Attribute.RESISTANCE_FIRE)+"Блок огня/ход: </b>",
 							true)
 					
 					+ getAttributeBox(Main.game.getPlayer(), Attribute.DAMAGE_ICE,
-							"Increases ice damage by <b>"+Units.number(Main.game.getPlayer().getAttributeValue(Attribute.DAMAGE_ICE))+"%</b>",
+							"Увеличивает урон льдом на <b>"+Units.number(Main.game.getPlayer().getAttributeValue(Attribute.DAMAGE_ICE))+"%</b>",
 							true)
 					+ getAttributeBox(Main.game.getPlayer(), Attribute.RESISTANCE_ICE,
-							"<b>"+getAttributeDisplayValue(Attribute.RESISTANCE_ICE)+"</b> Ice Block/Turn",
+							"<b>"+getAttributeDisplayValue(Attribute.RESISTANCE_ICE)+"</b> Блока льда/ход",
 							true)
 
 					+ getAttributeBox(Main.game.getPlayer(), Attribute.DAMAGE_POISON,
-							"Increases poison damage by <b>"+Units.number(Main.game.getPlayer().getAttributeValue(Attribute.DAMAGE_POISON))+"%</b>",
+							"Увеличивает урон ядом на <b>"+Units.number(Main.game.getPlayer().getAttributeValue(Attribute.DAMAGE_POISON))+"%</b>",
 							true)
 					+ getAttributeBox(Main.game.getPlayer(), Attribute.RESISTANCE_POISON,
-							"<b>"+getAttributeDisplayValue(Attribute.RESISTANCE_POISON)+"</b> Poison Block/Turn",
+							"<b>"+getAttributeDisplayValue(Attribute.RESISTANCE_POISON)+"</b> Блока яда/ход",
 							true)
 
 					+ getAttributeBox(Main.game.getPlayer(), Attribute.DAMAGE_LUST,
-							"Increases lust damage by <b>"+Units.number(Main.game.getPlayer().getAttributeValue(Attribute.DAMAGE_LUST))+"%</b>",
+							"Увеличивает урон Похотью на <b>"+Units.number(Main.game.getPlayer().getAttributeValue(Attribute.DAMAGE_LUST))+"%</b>",
 							true)
 					+ getAttributeBox(Main.game.getPlayer(), Attribute.RESISTANCE_LUST,
-							"<b>"+getAttributeDisplayValue(Attribute.RESISTANCE_LUST)+"</b> Lust Block/Turn",
+							"<b>"+getAttributeDisplayValue(Attribute.RESISTANCE_LUST)+"</b> Блока Похоти/ход",
 							true)
 
 //				+"</div>"
 //				+"<div class='container-full-width'>"
-					+ "<p style='color:"+PresetColour.GENERIC_COMBAT.toWebHexString()+"; text-align:center;'><b>Racial Damage Attributes</b></p>");
+					+ "<p style='color:"+PresetColour.GENERIC_COMBAT.toWebHexString()+"; text-align:center;'><b>Расовые атрибуты урона</b></p>");
 			
 			List<AbstractRace> raceListSorted = new ArrayList<>(Attribute.racialAttributes.keySet());
 			raceListSorted.sort((r1, r2) -> r1.getName(true).compareTo(r2.getName(true)));
@@ -1274,24 +1258,24 @@ public class PhoneDialogue {
 					// DEMON is split in IMP, DEMON, LILIN, and ELDER_LILIN damage
 					UtilText.nodeContentSB.append(
 							getAttributeBox(Main.game.getPlayer(), Attribute.DAMAGE_IMP,
-									"Increases damage vs imps by <b>"+Units.number(Main.game.getPlayer().getAttributeValue(Attribute.DAMAGE_IMP))+"%</b>",
+									"Увеличивает урон по бесам на <b>"+Units.number(Main.game.getPlayer().getAttributeValue(Attribute.DAMAGE_IMP))+"%</b>",
 									true));
 					UtilText.nodeContentSB.append(
 							getAttributeBox(Main.game.getPlayer(), attribute,
-									"Increases damage vs "+race.getNamePlural(true)+" by <b>"+Units.number(damageModifier)+"%</b>",
+									"Увеличивает урон против "+race.getNamePlural(true)+" на <b>"+Units.number(damageModifier)+"%</b>",
 									true));
 					UtilText.nodeContentSB.append(
 							getAttributeBox(Main.game.getPlayer(), Attribute.DAMAGE_LILIN,
-									"Increases damage vs lilin by <b>"+Units.number(Main.game.getPlayer().getAttributeValue(Attribute.DAMAGE_LILIN))+"%</b>",
+									"Увеличивает урон по лилин на <b>"+Units.number(Main.game.getPlayer().getAttributeValue(Attribute.DAMAGE_LILIN))+"%</b>",
 									true));
 					UtilText.nodeContentSB.append(
 							getAttributeBox(Main.game.getPlayer(), Attribute.DAMAGE_ELDER_LILIN,
-									"Increases damage vs elder lilin by <b>"+Units.number(Main.game.getPlayer().getAttributeValue(Attribute.DAMAGE_ELDER_LILIN))+"%</b>",
+									"Увеличивает урон по старшим лилин на <b>"+Units.number(Main.game.getPlayer().getAttributeValue(Attribute.DAMAGE_ELDER_LILIN))+"%</b>",
 									true));
 				} else {
 					UtilText.nodeContentSB.append(
 							getAttributeBox(Main.game.getPlayer(), attribute,
-									"Increases damage vs "+race.getNamePlural(true)+" by <b>"+Units.number(damageModifier)+"%</b>",
+									"Увеличивает урон против "+race.getNamePlural(true)+" на <b>"+Units.number(damageModifier)+"%</b>",
 									true));
 				}
 			}
@@ -1316,19 +1300,19 @@ public class PhoneDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Core Stats", "Have a detailed look at your core stats.", null);
+				return new Response("Основные характеристики", "Внимательно изучите свои основные характеристики.", null);
 			
 			} else if (index == 2) {
-				return new Response("Body stats", "Have a detailed look at your body's values.", CHARACTER_STATS_BODY);
+				return new Response("Характеристики тела", "Внимательно изучите показатели вашего тела.", CHARACTER_STATS_BODY);
 			
 			} else if (index == 3) {
-				return new Response("Sex stats", "Have a detailed look at your sex stats.", CHARACTER_STATS_SEX);
+				return new Response("Сексуальные характеристики", "Внимательно изучите ваши сексуальные характеристики.", CHARACTER_STATS_SEX);
 			
 			} else if (index == 4) {
-				return new Response("Pregnancy stats", "Have a detailed look at your pregnancy stats.", CHARACTER_STATS_PREGNANCY);
+				return new Response("Характеристики беременности", "Внимательно изучите показатели вашей беременности.", CHARACTER_STATS_PREGNANCY);
 			
 			} else if (index == 0) {
-				return new Response("Back", "Return to the phone's main menu.", MENU);
+				return new Response("Назад", "Вернуться в главное меню телефона.", MENU);
 			
 			} else {
 				return null;
@@ -1353,21 +1337,21 @@ public class PhoneDialogue {
 		sb.append("<div class='container-full-width' style='margin-bottom:0;'>");
 		rowCount = 0;
 		
-		sb.append(statRowHeader(PresetColour.TRANSFORMATION_GENERIC, "Body Attributes")
+		sb.append(statRowHeader(PresetColour.TRANSFORMATION_GENERIC, "Атрибуты тела")
 				+ statHeader()
-				+ statRow(PresetColour.ANDROGYNOUS, "Femininity",
+				+ statRow(PresetColour.ANDROGYNOUS, "Женственность",
 						PresetColour.TEXT, String.valueOf(character.getFemininityValue()),
 						character.getFemininity().getColour(), Util.capitaliseSentence(character.getFemininity().getName(false)))
-				+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Height",
+				+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Рост",
 						PresetColour.TEXT, Units.size(character.getHeightValue()),
 						character.getHeight().getColour(), Util.capitaliseSentence(character.getHeight().getDescriptor()))
-				+ statRow(PresetColour.MUSCLE_THREE, "Muscle Definition",
+				+ statRow(PresetColour.MUSCLE_THREE, "Рельеф мышц",
 						PresetColour.TEXT, String.valueOf(character.getMuscleValue()),
 						character.getMuscle().getColour(), Util.capitaliseSentence(character.getMuscle().getName(false)))
-				+ statRow(PresetColour.BODY_SIZE_THREE, "Body Size",
+				+ statRow(PresetColour.BODY_SIZE_THREE, "Размер тела",
 						PresetColour.TEXT, String.valueOf(character.getBodySizeValue()),
 						character.getBodySize().getColour(), Util.capitaliseSentence(character.getBodySize().getName(false)))
-				+ statRow(character.getBodyShape().toWebHexStringColour(), "Body Shape",
+				+ statRow(character.getBodyShape().toWebHexStringColour(), "Форма тела",
 						PresetColour.TEXT,
 						"<b style='color:"+character.getMuscle().getColour().toWebHexString()+";'>"+character.getMuscleValue()+"</b>"
 								+ " <b>|</b> <b style='color:"+character.getBodySize().getColour().toWebHexString()+";'>"+character.getBodySizeValue()+"</b>",
@@ -1376,43 +1360,43 @@ public class PhoneDialogue {
 		sb.append("<span style='height:16px;width:100%;float:left;'></span>");
 		rowCount = 0;
 		
-		sb.append(statRowHeader(PresetColour.TRANSFORMATION_GREATER, "Head & Throat Attributes")
-				+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Hair Length",
+		sb.append(statRowHeader(PresetColour.TRANSFORMATION_GREATER, "Параметры головы и горла")
+				+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Длина волос",
 						PresetColour.TEXT, Units.size(character.getHairRawLengthValue()),
 						character.getHairLength().getColour(), Util.capitaliseSentence(character.getHairLength().getDescriptor()))
 				+ (character.hasHorns()
-						?statRow(PresetColour.TRANSFORMATION_GENERIC, "Horn Length",
+						?statRow(PresetColour.TRANSFORMATION_GENERIC, "Длина рогов",
 							PresetColour.TEXT, Units.size(character.getHornLengthValue()),
 							character.getHornLength().getColour(), Util.capitaliseSentence(character.getHornLength().getDescriptor()))
-						:statRow(PresetColour.TRANSFORMATION_GENERIC, "Horn Length",
+						:statRow(PresetColour.TRANSFORMATION_GENERIC, "Длина рогов",
 								PresetColour.TEXT, Units.size(0),
 								PresetColour.TEXT_GREY, "N/A"))
-				+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Tongue Length",
+				+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Длина языка",
 						PresetColour.TEXT, Units.size(character.getTongueLengthValue()),
 						PresetColour.TRANSFORMATION_GENERIC, Util.capitaliseSentence(character.getTongueLength().getDescriptor()))
-				+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Throat Wetness",
+				+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Влажность горла",
 						PresetColour.TEXT, String.valueOf(character.getFaceWetness().getValue()),
 						PresetColour.GENERIC_SEX, Util.capitaliseSentence(character.getFaceWetness().getDescriptor()))
-				+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Throat Capacity",
+				+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Вместимость горла",
 						PresetColour.TEXT, Units.size(character.getFaceRawCapacityValue()),
 						PresetColour.GENERIC_SEX, Util.capitaliseSentence(character.getFaceCapacity().getDescriptor()))
-				+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Throat Depth",
+				+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Глубина горла",
 						PresetColour.TEXT, String.valueOf(character.getFaceDepth().getValue()),
 						PresetColour.GENERIC_SEX, Util.capitaliseSentence(character.getFaceDepth().getDescriptor()) + " ("+(Math.round(character.getFaceDepth().getDepthPercentage()*100))+"%)")
 				+ (Main.game.isPenetrationLimitationsEnabled()
-					?statRow(PresetColour.TRANSFORMATION_GENERIC, "Comfortable Throat Depth Limit",
+					?statRow(PresetColour.TRANSFORMATION_GENERIC, "Комфортная глубина горла",
 						PresetColour.GENERIC_MINOR_GOOD, Units.size(character.getFaceMaximumPenetrationDepthComfortable()),
 						PresetColour.TEXT, "N/A")
 					:"")
 				+ (Main.game.isPenetrationLimitationsEnabled()
-					?statRow(PresetColour.TRANSFORMATION_GENERIC, "Uncomfortable Throat Depth Limit",
-						PresetColour.GENERIC_MINOR_BAD, !character.getBodyMaterial().isOrificesLimitedDepth()?"No limit":Units.size(character.getFaceMaximumPenetrationDepthUncomfortable()),
+					?statRow(PresetColour.TRANSFORMATION_GENERIC, "Некомфортная глубина горла",
+						PresetColour.GENERIC_MINOR_BAD, !character.getBodyMaterial().isOrificesLimitedDepth()?"Без ограничений":Units.size(character.getFaceMaximumPenetrationDepthUncomfortable()),
 						PresetColour.TEXT, "N/A")
 					:"")
-				+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Throat Elasticity",
+				+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Эластичность горла",
 						PresetColour.TEXT, String.valueOf(character.getFaceElasticity().getValue()),
 						PresetColour.GENERIC_SEX, Util.capitaliseSentence(character.getFaceElasticity().getDescriptor()))
-				+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Throat Plasticity",
+				+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Пластичность горла",
 						PresetColour.TEXT, String.valueOf(character.getFacePlasticity().getValue()),
 						PresetColour.GENERIC_SEX, Util.capitaliseSentence(character.getFacePlasticity().getDescriptor())));
 				
@@ -1420,103 +1404,103 @@ public class PhoneDialogue {
 		rowCount = 0;
 		
 		if(character.hasNipples()) {
-			sb.append(statRowHeader(PresetColour.TRANSFORMATION_SEXUAL, "Breast Attributes")
-					+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Cup Size",
+			sb.append(statRowHeader(PresetColour.TRANSFORMATION_SEXUAL, "Параметры груди")
+					+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Размер чашки",
 							PresetColour.TEXT, String.valueOf(character.getBreastRawSizeValue()),
 							PresetColour.GENERIC_SEX, Util.capitaliseSentence(character.getBreastSize().getCupSizeName()))
-					+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Count",
+					+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Количество",
 							PresetColour.TEXT, String.valueOf(character.getBreastRows()),
-							PresetColour.GENERIC_SEX, Util.capitaliseSentence(Util.capitaliseSentence(Util.intToString(character.getBreastRows()))+" pair"+(character.getBreastRows()==1?"":"s")))
-					+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Milk Storage",
-							PresetColour.TEXT, !knowsNipples?"Unknown":Units.fluid(character.getBreastRawMilkStorageValue()),
-							PresetColour.GENERIC_SEX, !knowsNipples?"Unknown":Util.capitaliseSentence(character.getBreastMilkStorage().getDescriptor()))
-					+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Milk Regeneration Per Breast",
-							PresetColour.TEXT, !knowsNipples?"Unknown":Units.fluid(character.getLactationRegenerationPerSecond(false)*60)+"/minute",
-							PresetColour.GENERIC_SEX, !knowsNipples?"Unknown":Util.capitaliseSentence(character.getBreastLactationRegeneration().getName()))
-					+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Milk Regeneration Total",
-							PresetColour.TEXT, !knowsNipples?"Unknown":Units.fluid(character.getLactationRegenerationPerSecond(true)*60)+"/minute",
-							PresetColour.GENERIC_SEX, !knowsNipples?"Unknown":Util.capitaliseSentence(character.getBreastLactationRegeneration().getName()))
-					+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Capacity",
-							PresetColour.TEXT, !knowsNipples?"Unknown":Units.size(character.getNippleRawCapacityValue()),
-							PresetColour.GENERIC_SEX, !knowsNipples?"Unknown":Util.capitaliseSentence(character.getNippleCapacity().getDescriptor()))
+							PresetColour.GENERIC_SEX, Util.capitaliseSentence(Util.capitaliseSentence(Util.intToString(character.getBreastRows()))+" пара"+(character.getBreastRows()==1?"":"s")))
+					+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Запас молока",
+							PresetColour.TEXT, !knowsNipples?"Неизвестно":Units.fluid(character.getBreastRawMilkStorageValue()),
+							PresetColour.GENERIC_SEX, !knowsNipples?"Неизвестно":Util.capitaliseSentence(character.getBreastMilkStorage().getDescriptor()))
+					+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Регенерация молока на одну грудь",
+							PresetColour.TEXT, !knowsNipples?"Неизвестно":Units.fluid(character.getLactationRegenerationPerSecond(false)*60)+"/мин.",
+							PresetColour.GENERIC_SEX, !knowsNipples?"Неизвестно":Util.capitaliseSentence(character.getBreastLactationRegeneration().getName()))
+					+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Общая регенерация молока",
+							PresetColour.TEXT, !knowsNipples?"Неизвестно":Units.fluid(character.getLactationRegenerationPerSecond(true)*60)+"/мин.",
+							PresetColour.GENERIC_SEX, !knowsNipples?"Неизвестно":Util.capitaliseSentence(character.getBreastLactationRegeneration().getName()))
+					+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Емкость",
+							PresetColour.TEXT, !knowsNipples?"Неизвестно":Units.size(character.getNippleRawCapacityValue()),
+							PresetColour.GENERIC_SEX, !knowsNipples?"Неизвестно":Util.capitaliseSentence(character.getNippleCapacity().getDescriptor()))
 					+ (Main.game.isPenetrationLimitationsEnabled() && character.getNippleRawCapacityValue()>0
-						?statRow(PresetColour.TRANSFORMATION_GENERIC, "Nipple Depth",
+						?statRow(PresetColour.TRANSFORMATION_GENERIC, "Глубина сосков",
 							PresetColour.TEXT, String.valueOf(character.getNippleDepth().getValue()),
 							PresetColour.GENERIC_SEX, Util.capitaliseSentence(character.getNippleDepth().getDescriptor()) + " ("+(Math.round(character.getNippleDepth().getDepthPercentage()*100))+"%)")
 						:"")
 					+ (Main.game.isPenetrationLimitationsEnabled() && character.getNippleRawCapacityValue()>0
-						?statRow(PresetColour.TRANSFORMATION_GENERIC, "Comfortable Nipple Depth Limit",
-							PresetColour.GENERIC_MINOR_GOOD, (!knowsNipples?"Unknown":Units.size(character.getNippleMaximumPenetrationDepthComfortable())),
+						?statRow(PresetColour.TRANSFORMATION_GENERIC, "Комфортная глубина сосков",
+							PresetColour.GENERIC_MINOR_GOOD, (!knowsNipples?"Неизвестно":Units.size(character.getNippleMaximumPenetrationDepthComfortable())),
 							PresetColour.TEXT, "N/A")
 						:"")
 					+ (Main.game.isPenetrationLimitationsEnabled() && character.getNippleRawCapacityValue()>0
-						?statRow(PresetColour.TRANSFORMATION_GENERIC, "Uncomfortable Nipple Depth Limit",
-							PresetColour.GENERIC_MINOR_BAD, !character.getBodyMaterial().isOrificesLimitedDepth()?"No limit":(!knowsNipples?"Unknown":Units.size(character.getNippleMaximumPenetrationDepthUncomfortable())),
+						?statRow(PresetColour.TRANSFORMATION_GENERIC, "Некомфортная глубина сосков",
+							PresetColour.GENERIC_MINOR_BAD, !character.getBodyMaterial().isOrificesLimitedDepth()?"Без ограничений":(!knowsNipples?"Неизвестно":Units.size(character.getNippleMaximumPenetrationDepthUncomfortable())),
 							PresetColour.TEXT, "N/A")
 						:"")
-					+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Elasticity",
-							PresetColour.TEXT, !knowsNipples?"Unknown":String.valueOf(character.getNippleElasticity().getValue()),
-							PresetColour.GENERIC_SEX, !knowsNipples?"Unknown":Util.capitaliseSentence(character.getNippleElasticity().getDescriptor()))
-					+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Plasticity",
-							PresetColour.TEXT, !knowsNipples?"Unknown":String.valueOf(character.getNipplePlasticity().getValue()),
-							PresetColour.GENERIC_SEX, !knowsNipples?"Unknown":Util.capitaliseSentence(character.getNipplePlasticity().getDescriptor())));
+					+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Эластичность",
+							PresetColour.TEXT, !knowsNipples?"Неизвестно":String.valueOf(character.getNippleElasticity().getValue()),
+							PresetColour.GENERIC_SEX, !knowsNipples?"Неизвестно":Util.capitaliseSentence(character.getNippleElasticity().getDescriptor()))
+					+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Пластичность",
+							PresetColour.TEXT, !knowsNipples?"Неизвестно":String.valueOf(character.getNipplePlasticity().getValue()),
+							PresetColour.GENERIC_SEX, !knowsNipples?"Неизвестно":Util.capitaliseSentence(character.getNipplePlasticity().getDescriptor())));
 		} else {
-			sb.append(statRowHeader(PresetColour.TRANSFORMATION_SEXUAL, "Breast Attributes")
-					+ statRow(PresetColour.TEXT_GREY, UtilText.parse(character, "[npc.NameHasFull] no breasts...")));
+			sb.append(statRowHeader(PresetColour.TRANSFORMATION_SEXUAL, "Параметры груди")
+					+ statRow(PresetColour.TEXT_GREY, UtilText.parse(character, "[npc.NameHasFull] нет груди...")));
 		}
 		
 		if(character.hasBreastsCrotch()) {
 			sb.append("<span style='height:16px;width:100%;float:left;'></span>");
 			rowCount = 0;
 			
-			sb.append(statRowHeader(PresetColour.TRANSFORMATION_SEXUAL, (character.getBreastCrotchShape()==BreastShape.UDDERS?"Udders":"Crotch-boobs"))
-						+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Size",
-								PresetColour.TEXT, !character.isBreastsCrotchVisibleThroughClothing()&&!knowsCrotchNipples?"Unknown":String.valueOf(character.getBreastCrotchRawSizeValue()),
+			sb.append(statRowHeader(PresetColour.TRANSFORMATION_SEXUAL, (character.getBreastCrotchShape()==BreastShape.UDDERS?"Вымя":"Лобковые соски"))
+						+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Размер",
+								PresetColour.TEXT, !character.isBreastsCrotchVisibleThroughClothing()&&!knowsCrotchNipples?"Неизвестно":String.valueOf(character.getBreastCrotchRawSizeValue()),
 								PresetColour.GENERIC_SEX,
 								!character.isBreastsCrotchVisibleThroughClothing()&&!knowsCrotchNipples
-									?"Unknown"
+									?"Неизвестно"
 									:(character.getBreastCrotchShape()==BreastShape.UDDERS
 										?Util.capitaliseSentence(character.getBreastCrotchSize().getDescriptor())
 										:Util.capitaliseSentence(character.getBreastCrotchSize().getCupSizeName())))
-						+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Count",
-								PresetColour.TEXT, !knowsCrotchNipples?"Unknown":String.valueOf(character.getBreastCrotchRows()),
+						+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Количество",
+								PresetColour.TEXT, !knowsCrotchNipples?"Неизвестно":String.valueOf(character.getBreastCrotchRows()),
 								PresetColour.GENERIC_SEX,
 								!knowsCrotchNipples
-									?"Unknown"
+									?"Неизвестно"
 									:(character.getBreastCrotchRows()==0
-										?"A single udder"
-										:Util.capitaliseSentence(Util.intToString(character.getBreastCrotchRows()))+" pair"+(character.getBreastCrotchRows()==1?"":"s")))
-						+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Milk Storage",
-								PresetColour.TEXT, !knowsCrotchNipples?"Unknown":Units.fluid(character.getBreastCrotchRawMilkStorageValue()),
-								PresetColour.GENERIC_SEX, !knowsCrotchNipples?"Unknown":Util.capitaliseSentence(character.getBreastCrotchMilkStorage().getDescriptor()))
-						+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Milk Regeneration Per Crotch-boob",
-								PresetColour.TEXT, !knowsCrotchNipples?"Unknown":Units.fluid(character.getCrotchLactationRegenerationPerSecond(false)*60)+"/minute",
-								PresetColour.GENERIC_SEX, !knowsCrotchNipples?"Unknown":Util.capitaliseSentence(character.getBreastCrotchLactationRegeneration().getName()))
-						+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Milk Regeneration Total",
-								PresetColour.TEXT, !knowsCrotchNipples?"Unknown":Units.fluid(character.getCrotchLactationRegenerationPerSecond(true)*60)+"/minute",
-								PresetColour.GENERIC_SEX, !knowsCrotchNipples?"Unknown":Util.capitaliseSentence(character.getBreastCrotchLactationRegeneration().getName()))
-						+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Capacity",
-								PresetColour.TEXT, !knowsCrotchNipples?"Unknown":String.valueOf(character.getNippleCrotchRawCapacityValue()),
-								PresetColour.GENERIC_SEX, !knowsCrotchNipples?"Unknown":Util.capitaliseSentence(character.getNippleCrotchCapacity().getDescriptor()))
-						+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Nipple Depth",
+										?"Одиночное вымя"
+										:Util.capitaliseSentence(Util.intToString(character.getBreastCrotchRows()))+" пара"+(character.getBreastCrotchRows()==1?"":"s")))
+						+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Запас молока",
+								PresetColour.TEXT, !knowsCrotchNipples?"Неизвестно":Units.fluid(character.getBreastCrotchRawMilkStorageValue()),
+								PresetColour.GENERIC_SEX, !knowsCrotchNipples?"Неизвестно":Util.capitaliseSentence(character.getBreastCrotchMilkStorage().getDescriptor()))
+						+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Регенерация молока за грудь-яйцо",
+								PresetColour.TEXT, !knowsCrotchNipples?"Неизвестно":Units.fluid(character.getCrotchLactationRegenerationPerSecond(false)*60)+"/мин.",
+								PresetColour.GENERIC_SEX, !knowsCrotchNipples?"Неизвестно":Util.capitaliseSentence(character.getBreastCrotchLactationRegeneration().getName()))
+						+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Общая регенерация молока",
+								PresetColour.TEXT, !knowsCrotchNipples?"Неизвестно":Units.fluid(character.getCrotchLactationRegenerationPerSecond(true)*60)+"/мин.",
+								PresetColour.GENERIC_SEX, !knowsCrotchNipples?"Неизвестно":Util.capitaliseSentence(character.getBreastCrotchLactationRegeneration().getName()))
+						+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Емкость",
+								PresetColour.TEXT, !knowsCrotchNipples?"Неизвестно":String.valueOf(character.getNippleCrotchRawCapacityValue()),
+								PresetColour.GENERIC_SEX, !knowsCrotchNipples?"Неизвестно":Util.capitaliseSentence(character.getNippleCrotchCapacity().getDescriptor()))
+						+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Глубина сосков",
 								PresetColour.TEXT, String.valueOf(character.getNippleCrotchDepth().getValue()),
 								PresetColour.GENERIC_SEX, Util.capitaliseSentence(character.getNippleCrotchDepth().getDescriptor()) + " ("+(Math.round(character.getNippleCrotchDepth().getDepthPercentage()*100))+"%)")
 						+ (Main.game.isPenetrationLimitationsEnabled() && character.getNippleCrotchRawCapacityValue()>0
-							?statRow(PresetColour.TRANSFORMATION_GENERIC, "Comfortable Nipple Depth Limit",
-								PresetColour.GENERIC_MINOR_GOOD, (!knowsCrotchNipples?"Unknown":Units.size(character.getNippleCrotchMaximumPenetrationDepthComfortable())),
+							?statRow(PresetColour.TRANSFORMATION_GENERIC, "Комфортная глубина сосков",
+								PresetColour.GENERIC_MINOR_GOOD, (!knowsCrotchNipples?"Неизвестно":Units.size(character.getNippleCrotchMaximumPenetrationDepthComfortable())),
 								PresetColour.TEXT, "N/A")
 							:"")
 						+ (Main.game.isPenetrationLimitationsEnabled() && character.getNippleCrotchRawCapacityValue()>0
-							?statRow(PresetColour.TRANSFORMATION_GENERIC, "Uncomfortable Nipple Depth Limit",
-								PresetColour.GENERIC_MINOR_BAD, !character.getBodyMaterial().isOrificesLimitedDepth()?"No limit":(!knowsCrotchNipples?"Unknown":Units.size(character.getNippleCrotchMaximumPenetrationDepthUncomfortable())),
+							?statRow(PresetColour.TRANSFORMATION_GENERIC, "Некомфортная глубина сосков",
+								PresetColour.GENERIC_MINOR_BAD, !character.getBodyMaterial().isOrificesLimitedDepth()?"Без ограничений":(!knowsCrotchNipples?"Неизвестно":Units.size(character.getNippleCrotchMaximumPenetrationDepthUncomfortable())),
 								PresetColour.TEXT, "N/A")
 							:"")
-						+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Elasticity",
-								PresetColour.TEXT, !knowsCrotchNipples?"Unknown":String.valueOf(character.getNippleCrotchElasticity().getValue()),
-								PresetColour.GENERIC_SEX, !knowsCrotchNipples?"Unknown":Util.capitaliseSentence(character.getNippleCrotchElasticity().getDescriptor()))
-						+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Plasticity",
-								PresetColour.TEXT, !knowsCrotchNipples?"Unknown":String.valueOf(character.getNippleCrotchPlasticity().getValue()),
-								PresetColour.GENERIC_SEX, !knowsCrotchNipples?"Unknown":Util.capitaliseSentence(character.getNippleCrotchPlasticity().getDescriptor())));
+						+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Эластичность",
+								PresetColour.TEXT, !knowsCrotchNipples?"Неизвестно":String.valueOf(character.getNippleCrotchElasticity().getValue()),
+								PresetColour.GENERIC_SEX, !knowsCrotchNipples?"Неизвестно":Util.capitaliseSentence(character.getNippleCrotchElasticity().getDescriptor()))
+						+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Пластичность",
+								PresetColour.TEXT, !knowsCrotchNipples?"Неизвестно":String.valueOf(character.getNippleCrotchPlasticity().getValue()),
+								PresetColour.GENERIC_SEX, !knowsCrotchNipples?"Неизвестно":Util.capitaliseSentence(character.getNippleCrotchPlasticity().getDescriptor())));
 		}
 
 		sb.append("<span style='height:16px;width:100%;float:left;'></span>");
@@ -1524,45 +1508,39 @@ public class PhoneDialogue {
 		
 		if(character.hasTail()) {
 			if(Main.game.isPenetrationLimitationsEnabled()) {
-				sb.append(statRowHeader(PresetColour.TRANSFORMATION_GENERIC, "Tail Attributes")
-						+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Length | Used for penetration",
+				sb.append(statRowHeader(PresetColour.TRANSFORMATION_GENERIC, "Характеристики хвоста")
+						+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Длина | Используется для проникновения",
 							PresetColour.TEXT, Units.size(character.getTailLength(false))+" | "+Units.size(character.getTailLength(true)),
 							PresetColour.GENERIC_SEX, "N/A"));
 			} else {
-				sb.append(statRowHeader(PresetColour.TRANSFORMATION_GENERIC, "Tail Attributes")
-						+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Length",
+				sb.append(statRowHeader(PresetColour.TRANSFORMATION_GENERIC, "Характеристики хвоста")
+						+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Длина",
 							PresetColour.TEXT, Units.size(character.getTailLength(false)),
 							PresetColour.GENERIC_SEX, "N/A"));
 			}
 			sb.append(
 					statRow(PresetColour.TRANSFORMATION_GENERIC,
-						"Diameter at lengths",
+						"Диаметр на участках",
 						PresetColour.TEXT,
 						"[style.colourSize4("+Units.size(character.getTailDiameter(0))+")]"
 							+"<br/>[style.colourSize3("+Units.size(character.getTailDiameter(character.getTailLength(false)*0.33f))+")]"
 							+"<br/>[style.colourSize2("+Units.size(character.getTailDiameter(character.getTailLength(false)*0.66f))+")]"
 							+"<br/>[style.colourSize1("+Units.size(character.getTailDiameter(character.getTailLength(false)))+")]",
 						PresetColour.TRANSFORMATION_GENERIC,
-						"[style.colourSize4(Base)]"
-							+ "<br/>[style.colourSize3(33%)]"
-							+ "<br/>[style.colourSize2(66%)]"
-							+ "<br/>[style.colourSize1(Tip)]")
+						"[style.colourSize4(Основание)]<br/>[style.colourSize3(33%)]<br/>[style.colourSize2(66%)]<br/>[style.colourSize1(Кончик)]")
 					+ statRow(PresetColour.TRANSFORMATION_GENERIC,
-							"Circumference at lengths",
+							"Обхват на участках",
 							PresetColour.TEXT,
 							"[style.colourSize4("+Units.size(character.getTailCircumference(0))+")]"
 								+"<br/>[style.colourSize3("+Units.size(character.getTailCircumference(character.getTailLength(false)*0.33f))+")]"
 								+"<br/>[style.colourSize2("+Units.size(character.getTailCircumference(character.getTailLength(false)*0.66f))+")]"
 								+"<br/>[style.colourSize1("+Units.size(character.getTailCircumference(character.getTailLength(false)))+")]",
 							PresetColour.TRANSFORMATION_GENERIC,
-							"[style.colourSize4(Base)]"
-								+ "<br/>[style.colourSize3(33%)]"
-								+ "<br/>[style.colourSize2(66%)]"
-								+ "<br/>[style.colourSize1(Tip)]"));
+							"[style.colourSize4(Основание)]<br/>[style.colourSize3(33%)]<br/>[style.colourSize2(66%)]<br/>[style.colourSize1(Кончик)]"));
 			
 		} else {
-			sb.append(statRowHeader(PresetColour.TRANSFORMATION_GENERIC, "Tail Attributes")
-					+ statRow(PresetColour.TEXT_GREY, UtilText.parse(character, "[npc.NameHasFull] no tail...")));
+			sb.append(statRowHeader(PresetColour.TRANSFORMATION_GENERIC, "Характеристики хвоста")
+					+ statRow(PresetColour.TEXT_GREY, UtilText.parse(character, "[npc.NameHasFull] хвоста нет...")));
 		}
 
 		sb.append("<span style='height:16px;width:100%;float:left;'></span>");
@@ -1570,155 +1548,149 @@ public class PhoneDialogue {
 		
 		if(character.hasTentacle()) {
 			if(Main.game.isPenetrationLimitationsEnabled()) {
-				sb.append(statRowHeader(PresetColour.TRANSFORMATION_GENERIC, "Tentacle Attributes")
-						+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Length | Used for penetration",
+				sb.append(statRowHeader(PresetColour.TRANSFORMATION_GENERIC, "Характеристики щупальца")
+						+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Длина | Используется для проникновения",
 							PresetColour.TEXT, Units.size(character.getTentacleLength(false))+" | "+Units.size(character.getTentacleLength(true)),
 							PresetColour.GENERIC_SEX, "N/A"));
 			} else {
-				sb.append(statRowHeader(PresetColour.TRANSFORMATION_GENERIC, "Tentacle Attributes")
-						+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Length",
+				sb.append(statRowHeader(PresetColour.TRANSFORMATION_GENERIC, "Характеристики щупальца")
+						+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Длина",
 							PresetColour.TEXT, Units.size(character.getTentacleLength(false)),
 							PresetColour.GENERIC_SEX, "N/A"));
 			}
 			sb.append(
 					statRow(PresetColour.TRANSFORMATION_GENERIC,
-						"Diameter at lengths",
+						"Диаметр на участках",
 						PresetColour.TEXT,
 						"[style.colourSize4("+Units.size(character.getTentacleDiameter(0))+")]"
 							+"<br/>[style.colourSize3("+Units.size(character.getTentacleDiameter(character.getTentacleLength(false)*0.33f))+")]"
 							+"<br/>[style.colourSize2("+Units.size(character.getTentacleDiameter(character.getTentacleLength(false)*0.66f))+")]"
 							+"<br/>[style.colourSize1("+Units.size(character.getTentacleDiameter(character.getTentacleLength(false)))+")]",
 						PresetColour.TRANSFORMATION_GENERIC,
-						"[style.colourSize4(Base)]"
-							+ "<br/>[style.colourSize3(33%)]"
-							+ "<br/>[style.colourSize2(66%)]"
-							+ "<br/>[style.colourSize1(Tip)]")
+						"[style.colourSize4(Основание)]<br/>[style.colourSize3(33%)]<br/>[style.colourSize2(66%)]<br/>[style.colourSize1(Кончик)]")
 					+ statRow(PresetColour.TRANSFORMATION_GENERIC,
-							"Circumference at lengths",
+							"Обхват на участках",
 							PresetColour.TEXT,
 							"[style.colourSize4("+Units.size(character.getTentacleCircumference(0))+")]"
 								+"<br/>[style.colourSize3("+Units.size(character.getTentacleCircumference(character.getTentacleLength(false)*0.33f))+")]"
 								+"<br/>[style.colourSize2("+Units.size(character.getTentacleCircumference(character.getTentacleLength(false)*0.66f))+")]"
 								+"<br/>[style.colourSize1("+Units.size(character.getTentacleCircumference(character.getTentacleLength(false)))+")]",
 							PresetColour.TRANSFORMATION_GENERIC,
-							"[style.colourSize4(Base)]"
-								+ "<br/>[style.colourSize3(33%)]"
-								+ "<br/>[style.colourSize2(66%)]"
-								+ "<br/>[style.colourSize1(Tip)]"));
+							"[style.colourSize4(Основание)]<br/>[style.colourSize3(33%)]<br/>[style.colourSize2(66%)]<br/>[style.colourSize1(Кончик)]"));
 			
 		} else {
-			sb.append(statRowHeader(PresetColour.TRANSFORMATION_GENERIC, "Tentacle Attributes")
-					+ statRow(PresetColour.TEXT_GREY, UtilText.parse(character, "[npc.NameHasFull] no tentacles...")));
+			sb.append(statRowHeader(PresetColour.TRANSFORMATION_GENERIC, "Характеристики щупальца")
+					+ statRow(PresetColour.TEXT_GREY, UtilText.parse(character, "[npc.NameHasFull] без щупалец...")));
 		}
 		
 		sb.append( "<span style='height:16px;width:100%;float:left;'></span>");
 		rowCount = 0;
 		
 		if(!knowsPenis) {
-			sb.append(statRowHeader(PresetColour.TRANSFORMATION_SEXUAL, "Penis Attributes")
-					+ statRow(PresetColour.TEXT_GREY, "Unknown!"));
+			sb.append(statRowHeader(PresetColour.TRANSFORMATION_SEXUAL, "Характеристики пениса")
+					+ statRow(PresetColour.TEXT_GREY, "Неизвестно!"));
 			
 		} else if(character.hasPenis()) {
-			sb.append(statRowHeader(PresetColour.TRANSFORMATION_SEXUAL, "Penis Attributes")
-				+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Length",
+			sb.append(statRowHeader(PresetColour.TRANSFORMATION_SEXUAL, "Характеристики пениса")
+				+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Длина",
 						PresetColour.TEXT, (Units.size(character.getPenisRawSizeValue())),
 						PresetColour.GENERIC_SEX, (Util.capitaliseSentence(character.getPenisSize().getDescriptor())))
-				+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Diameter | Circumference",
+				+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Диаметр | Обхват",
 						PresetColour.TEXT, (Units.size(character.getPenisDiameter())+" | "+Units.size(character.getPenisCircumference())),
 						PresetColour.TEXT_GREY, "N/A")
-				+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Testicle Size",
+				+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Размер яичек",
 						PresetColour.TEXT, (String.valueOf(character.getTesticleSize().getValue())),
 						PresetColour.GENERIC_SEX, (Util.capitaliseSentence(character.getTesticleSize().getDescriptor())))
-				+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Cum Storage",
+				+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Запас спермы",
 						PresetColour.TEXT, (Units.fluid(character.getPenisRawCumStorageValue())),
 						PresetColour.GENERIC_SEX, (Util.capitaliseSentence(character.getPenisCumStorage().getDescriptor())))
-				+ (Main.getProperties().hasValue(PropertyValue.cumRegenerationContent) ? statRow(PresetColour.TRANSFORMATION_GENERIC, "Cum Regeneration",
-						PresetColour.TEXT, Units.fluid(character.getCumRegenerationPerSecond()*60)+"/minute",
+				+ (Main.getProperties().hasValue(PropertyValue.cumRegenerationContent) ? statRow(PresetColour.TRANSFORMATION_GENERIC, "Регенерация спермы",
+						PresetColour.TEXT, Units.fluid(character.getCumRegenerationPerSecond()*60)+"/мин.",
 						PresetColour.GENERIC_SEX, Util.capitaliseSentence(character.getPenisCumProductionRegeneration().getName()))
-				+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Cum Expulsion (% of stored cum)",
+				+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Извержение спермы (% oф накопленной спермы)",
 						PresetColour.TEXT, String.valueOf(character.getPenisRawCumExpulsionValue()),
 						PresetColour.GENERIC_SEX, Util.capitaliseSentence(character.getPenisCumExpulsion().getDescriptor())) : ""));
 			
 		} else {
-			sb.append(statRowHeader(PresetColour.TRANSFORMATION_SEXUAL, "Penis Attributes")
-					+ statRow(PresetColour.TEXT_GREY, UtilText.parse(character, "[npc.NameHasFull] no penis...")));
+			sb.append(statRowHeader(PresetColour.TRANSFORMATION_SEXUAL, "Характеристики пениса")
+					+ statRow(PresetColour.TEXT_GREY, UtilText.parse(character, "[npc.NameHasFull] без пениса...")));
 		}
 			
 		sb.append("<span style='height:16px;width:100%;float:left;'></span>");
 		rowCount = 0;
 		
 		if(!knowsVagina) {
-			sb.append(statRowHeader(PresetColour.TRANSFORMATION_SEXUAL, "Vagina Attributes")
-					+ statRow(PresetColour.TEXT_GREY, "Unknown!"));
+			sb.append(statRowHeader(PresetColour.TRANSFORMATION_SEXUAL, "Характеристики влагалища")
+					+ statRow(PresetColour.TEXT_GREY, "Неизвестно!"));
 			
 		} else if(character.hasVagina()) {
-			sb.append(statRowHeader(PresetColour.TRANSFORMATION_SEXUAL, "Vagina Attributes")
-				+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Clitoris Size",
+			sb.append(statRowHeader(PresetColour.TRANSFORMATION_SEXUAL, "Характеристики влагалища")
+				+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Размер клитора",
 						PresetColour.TEXT, (character.getVaginaType() == VaginaType.NONE ? "N/A" : Units.size(character.getVaginaRawClitorisSizeValue())),
 						PresetColour.GENERIC_SEX, (character.getVaginaType() == VaginaType.NONE ? "N/A" : Util.capitaliseSentence(character.getVaginaClitorisSize().getDescriptor())))
-				+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Wetness",
+				+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Смачивание",
 						PresetColour.TEXT, (character.getVaginaType() == VaginaType.NONE ? "N/A" : String.valueOf(character.getVaginaWetness().getValue())),
 						PresetColour.GENERIC_SEX, (character.getVaginaType() == VaginaType.NONE ? "N/A" : Util.capitaliseSentence(character.getVaginaWetness().getDescriptor())))
-				+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Capacity",
+				+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Емкость",
 						PresetColour.TEXT, (character.getVaginaType() == VaginaType.NONE ? "N/A" : Units.size(character.getVaginaRawCapacityValue())),
 						PresetColour.GENERIC_SEX, (character.getVaginaType() == VaginaType.NONE ? "N/A" : Util.capitaliseSentence(character.getVaginaCapacity().getDescriptor())))
-				+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Depth",
+				+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Глубина",
 						PresetColour.TEXT, String.valueOf(character.getVaginaDepth().getValue()),
 						PresetColour.GENERIC_SEX, Util.capitaliseSentence(character.getVaginaDepth().getDescriptor()) + " ("+(Math.round(character.getVaginaDepth().getDepthPercentage()*100))+"%)")
 				+ (Main.game.isPenetrationLimitationsEnabled()
-					?statRow(PresetColour.TRANSFORMATION_GENERIC, "Comfortable Depth Limit",
+					?statRow(PresetColour.TRANSFORMATION_GENERIC, "Комфортный предел глубины",
 						PresetColour.GENERIC_MINOR_GOOD, (Units.size(character.getVaginaMaximumPenetrationDepthComfortable())),
 						PresetColour.TEXT, "N/A")
 					:"")
 				+ (Main.game.isPenetrationLimitationsEnabled()
-					?statRow(PresetColour.TRANSFORMATION_GENERIC, "Uncomfortable Depth Limit",
-						PresetColour.GENERIC_MINOR_BAD, !character.getBodyMaterial().isOrificesLimitedDepth()?"No limit":(Units.size(character.getVaginaMaximumPenetrationDepthUncomfortable())),
+					?statRow(PresetColour.TRANSFORMATION_GENERIC, "Некомфортный предел глубины",
+						PresetColour.GENERIC_MINOR_BAD, !character.getBodyMaterial().isOrificesLimitedDepth()?"Без ограничений":(Units.size(character.getVaginaMaximumPenetrationDepthUncomfortable())),
 						PresetColour.TEXT, "N/A")
 					:"")
-				+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Elasticity",
+				+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Эластичность",
 						PresetColour.TEXT, (character.getVaginaType() == VaginaType.NONE ? "N/A" : String.valueOf(character.getVaginaElasticity().getValue())),
 						PresetColour.GENERIC_SEX, (character.getVaginaType() == VaginaType.NONE ? "N/A" : Util.capitaliseSentence(character.getVaginaElasticity().getDescriptor())))
-				+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Plasticity",
+				+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Пластичность",
 						PresetColour.TEXT, (character.getVaginaType() == VaginaType.NONE ? "N/A" : String.valueOf(character.getVaginaPlasticity().getValue())),
 						PresetColour.GENERIC_SEX, (character.getVaginaType() == VaginaType.NONE ? "N/A" : Util.capitaliseSentence(character.getVaginaPlasticity().getDescriptor()))));
 			
 		} else {
-			sb.append(statRowHeader(PresetColour.TRANSFORMATION_SEXUAL, "Vagina Attributes")
-					+ statRow(PresetColour.TEXT_GREY, UtilText.parse(character, "[npc.NameHasFull] no vagina...")));
+			sb.append(statRowHeader(PresetColour.TRANSFORMATION_SEXUAL, "Характеристики влагалища")
+					+ statRow(PresetColour.TEXT_GREY, UtilText.parse(character, "[npc.NameHasFull] без влагалища...")));
 		}
 			
 		sb.append("<span style='height:16px;width:100%;float:left;'></span>");
 		rowCount = 0;
 
 		if(!knowsAnus) {
-			sb.append(statRowHeader(PresetColour.TRANSFORMATION_SEXUAL, "Anus Attributes")
-					+ statRow(PresetColour.TEXT_GREY, "Unknown!"));
+			sb.append(statRowHeader(PresetColour.TRANSFORMATION_SEXUAL, "Характеристики ануса")
+					+ statRow(PresetColour.TEXT_GREY, "Неизвестно!"));
 			
 		} else {
-			sb.append(statRowHeader(PresetColour.TRANSFORMATION_SEXUAL, "Anus Attributes")
-				+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Wetness",
+			sb.append(statRowHeader(PresetColour.TRANSFORMATION_SEXUAL, "Характеристики ануса")
+				+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Смачивание",
 						PresetColour.TEXT, String.valueOf(character.getAssWetness().getValue()),
 						PresetColour.GENERIC_SEX, Util.capitaliseSentence(character.getAssWetness().getDescriptor()))
-				+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Capacity",
+				+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Емкость",
 						PresetColour.TEXT, Units.size(character.getAssRawCapacityValue()),
 						PresetColour.GENERIC_SEX, Util.capitaliseSentence(character.getAssCapacity().getDescriptor()))
-				+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Depth",
+				+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Глубина",
 						PresetColour.TEXT, String.valueOf(character.getAssDepth().getValue()),
 						PresetColour.GENERIC_SEX, Util.capitaliseSentence(character.getAssDepth().getDescriptor()) + " ("+(Math.round(character.getAssDepth().getDepthPercentage()*100))+"%)")
 				+ (Main.game.isPenetrationLimitationsEnabled()
-					?statRow(PresetColour.TRANSFORMATION_GENERIC, "Comfortable Anus Depth Limit",
+					?statRow(PresetColour.TRANSFORMATION_GENERIC, "Комфортный предел глубины ануса",
 						PresetColour.GENERIC_MINOR_GOOD, (Units.size(character.getAssMaximumPenetrationDepthComfortable())),
 						PresetColour.TEXT, "N/A")
 					:"")
 				+ (Main.game.isPenetrationLimitationsEnabled()
-					?statRow(PresetColour.TRANSFORMATION_GENERIC, "Uncomfortable Anus Depth Limit",
-						PresetColour.GENERIC_MINOR_BAD, !character.getBodyMaterial().isOrificesLimitedDepth()?"No limit":(Units.size(character.getAssMaximumPenetrationDepthUncomfortable())),
+					?statRow(PresetColour.TRANSFORMATION_GENERIC, "Предел комфортной глубины ануса",
+						PresetColour.GENERIC_MINOR_BAD, !character.getBodyMaterial().isOrificesLimitedDepth()?"Без ограничений":(Units.size(character.getAssMaximumPenetrationDepthUncomfortable())),
 						PresetColour.TEXT, "N/A")
 					:"")
-				+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Elasticity",
+				+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Эластичность",
 						PresetColour.TEXT, String.valueOf(character.getAssElasticity().getValue()),
 						PresetColour.GENERIC_SEX, Util.capitaliseSentence(character.getAssElasticity().getDescriptor()))
-				+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Plasticity",
+				+ statRow(PresetColour.TRANSFORMATION_GENERIC, "Пластичность",
 						PresetColour.TEXT, String.valueOf(character.getAssPlasticity().getValue()),
 						PresetColour.GENERIC_SEX, Util.capitaliseSentence(character.getAssPlasticity().getDescriptor())));
 		}
@@ -1728,7 +1700,7 @@ public class PhoneDialogue {
 		return sb.toString();
 	}
 	
-	public static final DialogueNode CHARACTER_STATS_BODY = new DialogueNode("Body Stats", "", true) {
+	public static final DialogueNode CHARACTER_STATS_BODY = new DialogueNode("Характеристики тела", "", true) {
 
 		@Override
 		public String getContent() {
@@ -1737,41 +1709,16 @@ public class PhoneDialogue {
 			
 			UtilText.nodeContentSB.append(
 					"<details>"
-							+ "<summary style='color:"+PresetColour.TRANSFORMATION_SEXUAL.toWebHexString()+"; text-align:center;'>Orifice Mechanics</summary>"
-						
-						+ "[style.boldSex(Capacity:)] An orifice's capacity determines the maximum diameter of penises and tails that can be comfortably inserted."
-						+ " <b>Higher capacity values mean that the orifice can take thicker insertions without stretching.</b>"
-						+ "<br/>- The diameter of a penis is calculated from a combination of their 'length' and 'girth' value, with additional modifiers (such as 'flared' or 'tapered') further altering the final value."
-						+ "<br/>- The diameter of a tail is calculated from both its 'girth' value as well as the character's height."
-						+ "<br/>- Capacity diameter values range from 0 [units.sizes] (extremely tight) to [units.sizes("+Math.round(Capacity.SEVEN_GAPING.getMaximumValue(false))+")] (gaping wide)."
-						
-						+ "<br/><br/>");
+							+ "<summary style='color:"+PresetColour.TRANSFORMATION_SEXUAL.toWebHexString()+"; text-align:center;'>Механика отверстий</summary>[style.boldSex(Вместимость:)] Вместимость отверстия определяет максимальный диаметр пенисов и хвостов, которые могут быть комфортно введены. <b>Более высокие значения вместимости означают, что отверстие может принимать более толстые объекты без чрезмерного растяжения.</b><br/>- Диаметр пениса рассчитывается на основе комбинации значений его «длины» и «обхвата», при этом дополнительные модификаторы (такие как «расширяющийся» или «сужающийся») дополнительно изменяют итоговое значение.<br/>- Диаметр хвоста рассчитывается на основе значения его «обхвата», а также роста персонажа.<br/>- Значения диаметра вместимости варьируются от 0 [units.sizes] (чрезвычайно узкое) до [units.sizes("+Math.round(Capacity.SEVEN_GAPING.getMaximumValue(false))+")] (широко разинув рот).<br/><br/>");
 			
 			if(Main.game.isPenetrationLimitationsEnabled()) {
 				UtilText.nodeContentSB.append(
-					"[style.boldSex(Depth:)] An orifice's depth determines the maximum length of penises and tails which can be comfortably or uncomfortably inserted into it."
-						+ " <b>Higher depth values mean that longer penetrative objects can be accommodated before the character experiences discomfort.</b>"
-						+ "<br/>- Comfortable/Uncomfortable depths of an orifice are based on the height of the character, and are then modified by the orifice's 'depth' value."
-						+ "<br/>- Sexual partners who are not in the 'rough' sex-pace, and whose penises or tails are too long to be fully inserted into an orifice will stop at the limit of comfortable depth."
-						+ "<br/>- Sexual partners who are in the 'rough' sex-pace will push past the comfortable orifice depth limit, causing the character discomfort."
-						+ "<br/>- Size queens treat the 'uncomfortable' portion of orifice depth as being comfortable."
-						+ "<br/>- Slimes and elementals always have the maximum depth value for each of their orifices."
-						+ "<br/>- Depth values range from 0 ("+OrificeDepth.ZERO_EXTREMELY_SHALLOW.getDescriptor()+") to 7 ("+OrificeDepth.SEVEN_FATHOMLESS.getDescriptor()+")."
+					"[style.boldSex(Глубина:)] Глубина отверстия определяет максимальную длину пенисов и хвостов, которые могут быть в него вставлены — как с комфортом, так и с дискомфортом. <b>Чем выше значение глубины, тем более длинные объекты могут быть введены до того, как персонаж почувствует дискомфорт.</b><br/>- Комфортная и некомфортная глубина отверстия основывается на росте персонажа, а затем корректируется значением «глубины» самого отверстия.<br/>- Сексуальные партнеры, не использующие «грубый» темп секса, чьи пенисы или хвосты слишком длинны для полного введения, остановятся на пределе комфортной глубины.<br/>- Сексуальные партнеры, использующие «грубый» темп секса, будут проталкиваться за пределы комфортной глубины, вызывая у персонажа дискомфорт.<br/>- «Королевы размера» воспринимают «некомфортную» часть глубины отверстия как комфортную.<br/>- Slimes и элементали всегда имеют максимальное значение глубины для каждого своего отверстия.<br/>- Значения глубины варьируются от 0 ("+OrificeDepth.ZERO_EXTREMELY_SHALLOW.getDescriptor()+") до 7 (\"}"+OrificeDepth.SEVEN_FATHOMLESS.getDescriptor()+")."
 						
 						+ "<br/><br/>");
 			}
 			
-			UtilText.nodeContentSB.append("[style.boldSex(Elasticity:)] An orifice's elasticity determines how quickly it stretches out, and also has an influence on detecting whether a penetrative object is too big for the orifice."
-						+ " If a partner's penis is too large for your orifice's capacity value, then your orifice will stretch out each turn during sex, with <b>higher elasticity values meaning that it stretches out quicker</b>."
-						+ " <b>Higher elasticity values also have an increased tolerance for objects that would normally be too large for the orifice, allowing larger objects to be inserted before stretching begins</b>."
-						+ "<br/>Elasticity values range from 0 (extremely resistant to being stretched out) to 7 (instantly stretching out)."
-						
-						+ "<br/><br/>"
-						
-					+ "[style.boldSex(Plasticity:)] An orifice's plasticity determines how quickly it recovers after being stretched out."
-						+ " If your orifice has been stretched out during sex, <b>higher plasticity values mean that it will recover slower, with very high values meaning that it will never recover all of its original tightness</b>."
-						+ "<br/>Plasticity values range from 0 (instantly returns to starting size after sex) to 7 (recovers none of its original size after sex)."
-			+ "</details>"
+			UtilText.nodeContentSB.append("[style.boldSex(Эластичность:)] Эластичность отверстия определяет, насколько быстро оно растягивается, а также влияет на то, будет ли распознано проникновение слишком крупного объекта. Если пенис партнера превышает пропускную способность вашего отверстия, то во время секса оно будет растягиваться каждый ход, при этом <b>чем выше значения эластичности, тем быстрее оно растягивается</b>. <b>Высокие значения эластичности также означают повышенную толерантность к объектам, которые обычно слишком велики для отверстия, позволяя вставлять более крупные предметы до того, как начнется растяжение</b>.<br/>Значения эластичности варьируются от 0 (чрезвычайно устойчивое к растяжению) до 7 (растягивается мгновенно).<br/><br/>[style.boldSex(Пластичность:)] Пластичность отверстия определяет, как быстро оно восстанавливается после растяжения. Если ваше отверстие растянулось во время секса, то <b>чем выше значения пластичности, тем медленнее оно будет восстанавливаться, а очень высокие значения означают, что оно никогда не вернет свою первоначальную узость</b>.<br/>Значения пластичности варьируются от 0 (мгновенно возвращается к исходному размеру после секса) до 7 (после секса не восстанавливает ни капли своего первоначального размера).</details>"
 					
 			+ getBodyStatsPanel(Main.game.getPlayer()));
 			
@@ -1781,19 +1728,19 @@ public class PhoneDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Core Stats", "Have a detailed look at your core stats.", CHARACTER_STATS);
+				return new Response("Основные характеристики", "Внимательно изучите свои основные характеристики.", CHARACTER_STATS);
 			
 			} else if (index == 2) {
-				return new Response("Body stats", "Have a detailed look at your body's values.", null);
+				return new Response("Характеристики тела", "Внимательно изучите показатели вашего тела.", null);
 			
 			} else if (index == 3) {
-				return new Response("Sex stats", "Have a detailed look at your sex stats.", CHARACTER_STATS_SEX);
+				return new Response("Сексуальные характеристики", "Внимательно изучите ваши сексуальные характеристики.", CHARACTER_STATS_SEX);
 			
 			} else if (index == 4) {
-				return new Response("Pregnancy stats", "Have a detailed look at your pregnancy stats.", CHARACTER_STATS_PREGNANCY);
+				return new Response("Характеристики беременности", "Внимательно изучите показатели вашей беременности.", CHARACTER_STATS_PREGNANCY);
 			
 			} else if (index == 0) {
-				return new Response("Back", "Return to the phone's main menu.", MENU);
+				return new Response("Назад", "Вернуться в главное меню телефона.", MENU);
 			
 			} else {
 				return null;
@@ -1806,26 +1753,21 @@ public class PhoneDialogue {
 		}
 	};
 	
-	public static final DialogueNode CHARACTER_STATS_SEX = new DialogueNode("Sex Stats", "", true) {
+	public static final DialogueNode CHARACTER_STATS_SEX = new DialogueNode("Статистика секса", "", true) {
 
 		@Override
 		public String getContent() {
 			StringBuilder sb = new StringBuilder();
 			
-			sb.append("<div class='container-full-width' style='text-align:center; width:100%; padding:0; margin:4px 0;'>"
-						+ "You have orgasmed [style.boldSex("+Main.game.getPlayer().getDaysOrgasmCount()+")] time"+(Main.game.getPlayer().getDaysOrgasmCount()==1?"":"s")
-							+" today, bringing your total orgasm count to [style.boldSex("+Main.game.getPlayer().getTotalOrgasmCount()+")]."
-						+ "<br/>"
-						+ "Your record for most orgasms in one day is currently [style.boldSex("+Main.game.getPlayer().getDaysOrgasmCountRecord()+")]."
-						+ "<br/>"
-						+ "You have had sex with a total of [style.boldSex("+Main.game.getPlayer().getUniqueSexPartnerCount()+")] "+(Main.game.getPlayer().getUniqueSexPartnerCount()==1?"person":"different people")+"."
+			sb.append("<div class='container-full-width' style='text-align:center; width:100%; padding:0; margin:4px 0;'>Вы достигли оргазма [style.boldSex("+Main.game.getPlayer().getDaysOrgasmCount()+")] раз"+(Main.game.getPlayer().getDaysOrgasmCount()==1?"":"s")
+							+" сегодня, общее количество ваших оргазмов составляет [style.boldSex("+Main.game.getPlayer().getTotalOrgasmCount()+")].<br/>Твой рекорд по количеству оргазмов за один день сейчас составляет [style.boldSex("+Main.game.getPlayer().getDaysOrgasmCountRecord()+")].<br/>Всего у вас было секса: [style.boldSex("+Main.game.getPlayer().getUniqueSexPartnerCount()+")] "+(Main.game.getPlayer().getUniqueSexPartnerCount()==1?"человек":"разные люди")+"."
 					+ "</div>");
 					
 			sb.append(sexStatHeader());
 			
 			boolean oddRow = false;
 			
-			sb.append(sexStatRow(PresetColour.AROUSAL_STAGE_ONE, "Fingering",
+			sb.append(sexStatRow(PresetColour.AROUSAL_STAGE_ONE, "Фингеринг",
 							Main.game.getPlayer().getTotalSexCount(new SexType(SexParticipantType.NORMAL, SexAreaPenetration.FINGER, SexAreaOrifice.VAGINA)),
 							-1,
 							Main.game.getPlayer().getTotalSexCount(new SexType(SexParticipantType.NORMAL, SexAreaOrifice.VAGINA, SexAreaPenetration.FINGER)),
@@ -1835,7 +1777,7 @@ public class PhoneDialogue {
 			oddRow = !oddRow;
 			
 			sb.append((Main.game.isAnalContentEnabled()
-							?sexStatRow(PresetColour.AROUSAL_STAGE_ONE, "Anal Fingering",
+							?sexStatRow(PresetColour.AROUSAL_STAGE_ONE, "Анальный фингерринг",
 									Main.game.getPlayer().getTotalSexCount(new SexType(SexParticipantType.NORMAL, SexAreaPenetration.FINGER, SexAreaOrifice.ANUS)),
 									-1,
 									Main.game.getPlayer().getTotalSexCount(new SexType(SexParticipantType.NORMAL, SexAreaOrifice.ANUS, SexAreaPenetration.FINGER)),
@@ -1847,7 +1789,7 @@ public class PhoneDialogue {
 				oddRow = !oddRow;
 			}
 			
-			sb.append(sexStatRow(PresetColour.AROUSAL_STAGE_ONE, "Blowjobs",
+			sb.append(sexStatRow(PresetColour.AROUSAL_STAGE_ONE, "Минет",
 							Main.game.getPlayer().getTotalSexCount(new SexType(SexParticipantType.NORMAL, SexAreaOrifice.MOUTH, SexAreaPenetration.PENIS)),
 							Main.game.getPlayer().getTotalCumCount(new SexType(SexParticipantType.NORMAL, SexAreaPenetration.PENIS, SexAreaOrifice.MOUTH)),
 							Main.game.getPlayer().getTotalSexCount(new SexType(SexParticipantType.NORMAL, SexAreaPenetration.PENIS, SexAreaOrifice.MOUTH)),
@@ -1856,7 +1798,7 @@ public class PhoneDialogue {
 
 			oddRow = !oddRow;
 			
-			sb.append(sexStatRow(PresetColour.AROUSAL_STAGE_ONE, "Cunnilingus",
+			sb.append(sexStatRow(PresetColour.AROUSAL_STAGE_ONE, "Куннилингус",
 							Main.game.getPlayer().getTotalSexCount(new SexType(SexParticipantType.NORMAL, SexAreaPenetration.TONGUE, SexAreaOrifice.VAGINA)),
 							-1,
 							Main.game.getPlayer().getTotalSexCount(new SexType(SexParticipantType.NORMAL, SexAreaOrifice.VAGINA, SexAreaPenetration.TONGUE)),
@@ -1866,7 +1808,7 @@ public class PhoneDialogue {
 			oddRow = !oddRow;
 			
 			sb.append((Main.game.isAnalContentEnabled()
-							?sexStatRow(PresetColour.AROUSAL_STAGE_ONE, "Anilingus",
+							?sexStatRow(PresetColour.AROUSAL_STAGE_ONE, "Анилингус",
 									Main.game.getPlayer().getTotalSexCount(new SexType(SexParticipantType.NORMAL, SexAreaPenetration.TONGUE, SexAreaOrifice.ANUS)),
 									-1,
 									Main.game.getPlayer().getTotalSexCount(new SexType(SexParticipantType.NORMAL, SexAreaOrifice.ANUS, SexAreaPenetration.TONGUE)),
@@ -1878,7 +1820,7 @@ public class PhoneDialogue {
 				oddRow = !oddRow;
 			}
 
-			sb.append(sexStatRow(PresetColour.AROUSAL_STAGE_ONE, "Intercrural",
+			sb.append(sexStatRow(PresetColour.AROUSAL_STAGE_ONE, "Интеркруральный секс",
 									Main.game.getPlayer().getTotalSexCount(new SexType(SexParticipantType.NORMAL, SexAreaPenetration.PENIS, SexAreaOrifice.THIGHS)),
 									Main.game.getPlayer().getTotalCumCount(new SexType(SexParticipantType.NORMAL, SexAreaPenetration.PENIS, SexAreaOrifice.THIGHS)),
 									Main.game.getPlayer().getTotalSexCount(new SexType(SexParticipantType.NORMAL, SexAreaOrifice.THIGHS, SexAreaPenetration.PENIS)),
@@ -1888,7 +1830,7 @@ public class PhoneDialogue {
 			oddRow = !oddRow;
 					
 			sb.append((Main.game.isFootContentEnabled()
-							?sexStatRow(PresetColour.AROUSAL_STAGE_ONE, "Footjobs",
+							?sexStatRow(PresetColour.AROUSAL_STAGE_ONE, "Футбол (Footjobs)",
 									Main.game.getPlayer().getTotalSexCount(new SexType(SexParticipantType.NORMAL, SexAreaPenetration.FOOT, SexAreaPenetration.PENIS)),
 									Main.game.getPlayer().getTotalCumCount(new SexType(SexParticipantType.NORMAL, SexAreaPenetration.PENIS, SexAreaPenetration.FOOT)),
 									Main.game.getPlayer().getTotalSexCount(new SexType(SexParticipantType.NORMAL, SexAreaPenetration.PENIS, SexAreaPenetration.FOOT)),
@@ -1901,7 +1843,7 @@ public class PhoneDialogue {
 			}
 
 			sb.append((Main.game.isArmpitContentEnabled()
-							?sexStatRow(PresetColour.AROUSAL_STAGE_ONE, "Armpit fuck",
+							?sexStatRow(PresetColour.AROUSAL_STAGE_ONE, "Подмышечный секс",
 									Main.game.getPlayer().getTotalSexCount(new SexType(SexParticipantType.NORMAL, SexAreaPenetration.PENIS, SexAreaOrifice.ARMPITS)),
 									Main.game.getPlayer().getTotalCumCount(new SexType(SexParticipantType.NORMAL, SexAreaPenetration.PENIS, SexAreaOrifice.ARMPITS)),
 									Main.game.getPlayer().getTotalSexCount(new SexType(SexParticipantType.NORMAL, SexAreaOrifice.ARMPITS, SexAreaPenetration.PENIS)),
@@ -1913,7 +1855,7 @@ public class PhoneDialogue {
 				oddRow = !oddRow;
 			}
 					
-			sb.append(sexStatRow(PresetColour.AROUSAL_STAGE_TWO, "Vaginal sex",
+			sb.append(sexStatRow(PresetColour.AROUSAL_STAGE_TWO, "Вагинальный секс",
 							Main.game.getPlayer().getTotalSexCount(new SexType(SexParticipantType.NORMAL, SexAreaPenetration.PENIS, SexAreaOrifice.VAGINA)),
 							Main.game.getPlayer().getTotalCumCount(new SexType(SexParticipantType.NORMAL, SexAreaPenetration.PENIS, SexAreaOrifice.VAGINA)),
 							Main.game.getPlayer().getTotalSexCount(new SexType(SexParticipantType.NORMAL, SexAreaOrifice.VAGINA, SexAreaPenetration.PENIS)),
@@ -1923,7 +1865,7 @@ public class PhoneDialogue {
 			oddRow = !oddRow;
 			
 			sb.append((Main.game.isAnalContentEnabled()
-							?sexStatRow(PresetColour.AROUSAL_STAGE_TWO, "Anal sex",
+							?sexStatRow(PresetColour.AROUSAL_STAGE_TWO, "Анальный секс",
 									Main.game.getPlayer().getTotalSexCount(new SexType(SexParticipantType.NORMAL, SexAreaPenetration.PENIS, SexAreaOrifice.ANUS)),
 									Main.game.getPlayer().getTotalCumCount(new SexType(SexParticipantType.NORMAL, SexAreaPenetration.PENIS, SexAreaOrifice.ANUS)),
 									Main.game.getPlayer().getTotalSexCount(new SexType(SexParticipantType.NORMAL, SexAreaOrifice.ANUS, SexAreaPenetration.PENIS)),
@@ -1936,7 +1878,7 @@ public class PhoneDialogue {
 			}
 			
 			sb.append((Main.game.isNipplePenEnabled()
-							?sexStatRow(PresetColour.AROUSAL_STAGE_TWO, "Nipple penetration",
+							?sexStatRow(PresetColour.AROUSAL_STAGE_TWO, "Проникновение в сосок",
 									Main.game.getPlayer().getTotalSexCount(new SexType(SexParticipantType.NORMAL, SexAreaPenetration.PENIS, SexAreaOrifice.NIPPLE)),
 									Main.game.getPlayer().getTotalCumCount(new SexType(SexParticipantType.NORMAL, SexAreaPenetration.PENIS, SexAreaOrifice.NIPPLE)),
 									Main.game.getPlayer().getTotalSexCount(new SexType(SexParticipantType.NORMAL, SexAreaOrifice.NIPPLE, SexAreaPenetration.PENIS)),
@@ -1949,7 +1891,7 @@ public class PhoneDialogue {
 			}
 			
 			sb.append((Main.game.isNipplePenEnabled()
-							?sexStatRow(PresetColour.AROUSAL_STAGE_TWO, "Crotch Nipple penetration",
+							?sexStatRow(PresetColour.AROUSAL_STAGE_TWO, "Проникновение в сосок промежности",
 									Main.game.getPlayer().getTotalSexCount(new SexType(SexParticipantType.NORMAL, SexAreaPenetration.PENIS, SexAreaOrifice.NIPPLE_CROTCH)),
 									Main.game.getPlayer().getTotalCumCount(new SexType(SexParticipantType.NORMAL, SexAreaPenetration.PENIS, SexAreaOrifice.NIPPLE_CROTCH)),
 									Main.game.getPlayer().getTotalSexCount(new SexType(SexParticipantType.NORMAL, SexAreaOrifice.NIPPLE_CROTCH, SexAreaPenetration.PENIS)),
@@ -1962,7 +1904,7 @@ public class PhoneDialogue {
 			}
 			
 			sb.append((Main.game.isUrethraEnabled()
-							?sexStatRow(PresetColour.AROUSAL_STAGE_TWO, "Penis Urethra penetration",
+							?sexStatRow(PresetColour.AROUSAL_STAGE_TWO, "Проникновение в уретру пениса",
 									Main.game.getPlayer().getTotalSexCount(new SexType(SexParticipantType.NORMAL, SexAreaPenetration.PENIS, SexAreaOrifice.URETHRA_PENIS)),
 									Main.game.getPlayer().getTotalCumCount(new SexType(SexParticipantType.NORMAL, SexAreaPenetration.PENIS, SexAreaOrifice.URETHRA_PENIS)),
 									Main.game.getPlayer().getTotalSexCount(new SexType(SexParticipantType.NORMAL, SexAreaOrifice.URETHRA_PENIS, SexAreaPenetration.PENIS)),
@@ -1975,7 +1917,7 @@ public class PhoneDialogue {
 			}
 			
 			sb.append((Main.game.isUrethraEnabled()
-							?sexStatRow(PresetColour.AROUSAL_STAGE_TWO, "Vagina Urethra penetration",
+							?sexStatRow(PresetColour.AROUSAL_STAGE_TWO, "Проникновение в уретру влагалища",
 									Main.game.getPlayer().getTotalSexCount(new SexType(SexParticipantType.NORMAL, SexAreaPenetration.PENIS, SexAreaOrifice.URETHRA_VAGINA)),
 									Main.game.getPlayer().getTotalCumCount(new SexType(SexParticipantType.NORMAL, SexAreaPenetration.PENIS, SexAreaOrifice.URETHRA_VAGINA)),
 									Main.game.getPlayer().getTotalSexCount(new SexType(SexParticipantType.NORMAL, SexAreaOrifice.URETHRA_VAGINA, SexAreaPenetration.PENIS)),
@@ -1989,19 +1931,19 @@ public class PhoneDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Core Stats", "Have a detailed look at your core stats.", CHARACTER_STATS);
+				return new Response("Основные характеристики", "Внимательно изучите свои основные характеристики.", CHARACTER_STATS);
 			
 			} else if (index == 2) {
-				return new Response("Body stats", "Have a detailed look at your body's values.", CHARACTER_STATS_BODY);
+				return new Response("Характеристики тела", "Внимательно изучите показатели вашего тела.", CHARACTER_STATS_BODY);
 			
 			} else if (index == 3) {
-				return new Response("Sex stats", "Have a detailed look at your sex stats.", null);
+				return new Response("Сексуальные характеристики", "Внимательно изучите ваши сексуальные характеристики.", null);
 			
 			} else if (index == 4) {
-				return new Response("Pregnancy stats", "Have a detailed look at your pregnancy stats.", CHARACTER_STATS_PREGNANCY);
+				return new Response("Характеристики беременности", "Внимательно изучите показатели вашей беременности.", CHARACTER_STATS_PREGNANCY);
 			
 			} else if (index == 0) {
-				return new Response("Back", "Return to the phone's main menu.", MENU);
+				return new Response("Назад", "Вернуться в главное меню телефона.", MENU);
 			
 			} else {
 				return null;
@@ -2014,7 +1956,7 @@ public class PhoneDialogue {
 		}
 	};
 	
-	public static final DialogueNode CHARACTER_STATS_PREGNANCY = new DialogueNode("Pregnancy Stats", "", true) {
+	public static final DialogueNode CHARACTER_STATS_PREGNANCY = new DialogueNode("Статистика беременности", "", true) {
 
 		private void OffspringHeaderDisplay(StringBuilder output, String word_one, String word_two, String color, int count) {
 			output.append("<div class='extraAttribute-quarter'>");
@@ -2154,17 +2096,17 @@ public class PhoneDialogue {
 
 			UtilText.nodeContentSB.setLength(0);
 
-			OffspringHeaderDisplay(UtilText.nodeContentSB, "Mothered", "Sons", PresetColour.MASCULINE.toWebHexString(), sonsBirthed);
-			OffspringHeaderDisplay(UtilText.nodeContentSB, "Mothered", "Daughters", PresetColour.FEMININE.toWebHexString(), daughtersBirthed);
-			OffspringHeaderDisplay(UtilText.nodeContentSB, "Fathered", "Sons", PresetColour.MASCULINE.toWebHexString(), sonsFathered);
-			OffspringHeaderDisplay(UtilText.nodeContentSB, "Fathered", "Daughters", PresetColour.FEMININE.toWebHexString(), daughtersFathered);
+			OffspringHeaderDisplay(UtilText.nodeContentSB, "Материнство", "Сыновья", PresetColour.MASCULINE.toWebHexString(), sonsBirthed);
+			OffspringHeaderDisplay(UtilText.nodeContentSB, "Материнство", "Дочери", PresetColour.FEMININE.toWebHexString(), daughtersBirthed);
+			OffspringHeaderDisplay(UtilText.nodeContentSB, "Отцовство", "Сыновья", PresetColour.MASCULINE.toWebHexString(), sonsFathered);
+			OffspringHeaderDisplay(UtilText.nodeContentSB, "Отцовство", "Дочери", PresetColour.FEMININE.toWebHexString(), daughtersFathered);
 
 			int childrenMet = Main.game.getOffspring().size();
 			int totalChildren = (sonsBirthed+daughtersBirthed+sonsFathered+daughtersFathered+offspringIncubatedCount);
 			int percentageMet = totalChildren == 0 ? 100 : (100 * childrenMet / totalChildren);
 			
 			UtilText.nodeContentSB.append(
-					"<div class='subTitle'>Total offspring: "+ totalChildren+" (Children met: "+ percentageMet +"%)</div>"
+					"<div class='subTitle'>Total offspring: "+ totalChildren+" (Встреченные дети: "+ percentageMet +"%)</div>"
 					
 					+ "<span style='height:16px;width:100%;float:left;'></span>"
 					
@@ -2173,34 +2115,14 @@ public class PhoneDialogue {
 					+ "<span style='height:16px;width:100%;float:left;'></span>");
 			
 			UtilText.nodeContentSB.append(
-					"<div class='subTitle'>Offspring list</div>"
-					+ "<div class='container-full-width' style='text-align:center;'>"
-						+ "<div class='container-full-width'style='float:left; margin:0; width:100%; font-weight:bold;'>"
-							+ "<div class='container-full-width' style='float:left; margin:0; width:20%;'>"
-								+ "Name"
-							+ "</div>"
-							+ "<div class='container-full-width' style='float:left; margin:0; width:15%;'>"
-								+ "Race"
-							+ "</div>"
-							+ "<div class='container-full-width' style='float:left; margin:0; width:20%;'>"
-								+ "Mother"
-							+ "</div>"
-							+ "<div class='container-full-width' style='float:left; margin:0; width:20%;'>"
-								+ "Father"
-							+ "</div>"
-							+ "<div class='container-full-width' style='float:left; margin:0; width:25%;'>"
-								+ "Your relationship"
-							+ "</div>"
-						+ "</div>");
+					"<div class='subTitle'>Список отпрысков</div><div class='container-full-width' style='text-align:center;'><div class='container-full-width'style='float:left; margin:0; width:100%; font-weight:bold;'><div class='container-full-width' style='float:left; margin:0; width:20%;'>Имя</div><div class='container-full-width' style='float:left; margin:0; width:15%;'>Раса</div><div class='container-full-width' style='float:left; margin:0; width:20%;'>Мать</div><div class='container-full-width' style='float:left; margin:0; width:20%;'>Отец</div><div class='container-full-width' style='float:left; margin:0; width:25%;'>Ваши отношения</div></div>");
 			
 			int rowCount = 0;
 			List<NPC> offspringMet= new ArrayList<>(Main.game.getOffspring());
 			offspringMet.removeIf(npc -> npc.getIncubator()!=null && npc.getIncubator().isPlayer()); // Only non-egg incubated offspring
 			List<OffspringSeed> offspringUnknown = new ArrayList<>(Main.game.getOffspringNotSpawned(os->true));
 			if(offspringMet.isEmpty() && offspringUnknown.isEmpty()) {
-				UtilText.nodeContentSB.append("<div class='container-full-width' style='margin:0; padding:0; width:100%;float:left;'>"
-												+ "[style.italicsDisabled(No Offspring...)]"
-											+ "</div>");
+				UtilText.nodeContentSB.append("<div class='container-full-width' style='margin:0; padding:0; width:100%;float:left;'>[style.italicsDisabled(Нет отпрысков...)]</div>");
 			} else {
 				offspringMet.sort(Comparator.comparing(GameCharacter::getBirthday));
 				for(NPC npc : offspringMet) {
@@ -2222,28 +2144,7 @@ public class PhoneDialogue {
 			UtilText.nodeContentSB.append("<span style='height:16px;width:100%;float:left;'></span>");
 			
 			UtilText.nodeContentSB.append(
-					"<div class='subTitle'>Incubated offspring list</div>"
-					+ "<div class='container-full-width' style='text-align:center;'>"
-						+ "<div class='container-full-width'style='float:left; margin:0; width:100%; font-weight:bold;'>"
-							+ "<div class='container-full-width' style='float:left; margin:0; width:15%;'>"
-								+ "Name"
-							+ "</div>"
-							+ "<div class='container-full-width' style='float:left; margin:0; width:15%;'>"
-								+ "Race"
-							+ "</div>"
-							+ "<div class='container-full-width' style='float:left; margin:0; width:15%;'>"
-								+ "Mother"
-							+ "</div>"
-							+ "<div class='container-full-width' style='float:left; margin:0; width:15%;'>"
-								+ "Father"
-							+ "</div>"
-							+ "<div class='container-full-width' style='float:left; margin:0; width:15%;'>"
-								+ "Incubated by"
-							+ "</div>"
-							+ "<div class='container-full-width' style='float:left; margin:0; width:25%;'>"
-								+ "Your relationship"
-							+ "</div>"
-						+ "</div>");
+					"<div class='subTitle'>Список выведенного потомства</div><div class='container-full-width' style='text-align:center;'><div class='container-full-width'style='float:left; margin:0; width:100%; font-weight:bold;'><div class='container-full-width' style='float:left; margin:0; width:15%;'>Имя</div><div class='container-full-width' style='float:left; margin:0; width:15%;'>Раса</div><div class='container-full-width' style='float:left; margin:0; width:15%;'>Мать</div><div class='container-full-width' style='float:left; margin:0; width:15%;'>Отец</div><div class='container-full-width' style='float:left; margin:0; width:15%;'>Инкубировано</div><div class='container-full-width' style='float:left; margin:0; width:25%;'>Ваши отношения</div></div>");
 			
 			rowCount = 0;
 			List<NPC> offspringIncubated = new ArrayList<>(Main.game.getOffspring());
@@ -2252,9 +2153,7 @@ public class PhoneDialogue {
 			List<OffspringSeed> offspringIncubatedUnknown = new ArrayList<>(Main.game.getOffspringNotSpawned(os->true,true));
 			offspringIncubatedUnknown.removeIf(os -> os.getIncubator()==null || !os.getIncubator().isPlayer()); // Only egg incubated offspring
 			if(offspringIncubated.isEmpty() && offspringIncubatedUnknown.isEmpty()) {
-				UtilText.nodeContentSB.append("<div class='container-full-width' style='float:left; margin:0; width:100%;'>"
-												+ "[style.italicsDisabled(No Incubated Offspring...)]"
-											+ "</div>");
+				UtilText.nodeContentSB.append("<div class='container-full-width' style='float:left; margin:0; width:100%;'>[style.italicsDisabled(Нет выведенного потомства...)]</div>");
 			} else {
 				offspringIncubated.sort(Comparator.comparing(GameCharacter::getBirthday));
 				for(NPC npc : offspringIncubated) {
@@ -2278,19 +2177,19 @@ public class PhoneDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Core Stats", "Have a detailed look at your core stats.", CHARACTER_STATS);
+				return new Response("Основные характеристики", "Внимательно изучите свои основные характеристики.", CHARACTER_STATS);
 			
 			} else if (index == 2) {
-				return new Response("Body stats", "Have a detailed look at your body's values.", CHARACTER_STATS_BODY);
+				return new Response("Характеристики тела", "Внимательно изучите показатели вашего тела.", CHARACTER_STATS_BODY);
 			
 			} else if (index == 3) {
-				return new Response("Sex stats", "Have a detailed look at your sex stats.", CHARACTER_STATS_SEX);
+				return new Response("Сексуальные характеристики", "Внимательно изучите ваши сексуальные характеристики.", CHARACTER_STATS_SEX);
 			
 			} else if (index == 4) {
-				return new Response("Pregnancy stats", "Have a detailed look at your pregnancy stats.", null);
+				return new Response("Характеристики беременности", "Внимательно изучите показатели вашей беременности.", null);
 			
 			} else if (index == 0) {
-				return new Response("Back", "Return to the phone's main menu.", MENU);
+				return new Response("Назад", "Вернуться в главное меню телефона.", MENU);
 			
 			} else {
 				return null;
@@ -2304,31 +2203,13 @@ public class PhoneDialogue {
 	};
 	
 	private static String sexStatHeader() {
-		return "<div class='container-full-width' style='width:100%; padding:0; margin:4px 0; font-weight:bold; text-align:center;'>"
-					+ "<div class='container-full-width' style='width:33.3%; padding:0; margin:0;'>"
-						+ "Type"
-					+ "</div>"
-					+ "<div class='container-full-width' style='width:16.66%; padding:0; margin:0;'>"
-						+ "Performed"
-					+ "</div>"
-					+ "<div class='container-full-width' style='width:16.66%; padding:0; margin:0;'>"
-						+ "Creampies<br/>Given"
-					+ "</div>"
-					+ "<div class='container-full-width' style='width:16.66%; padding:0; margin:0;'>"
-						+ "Received"
-					+ "</div>"
-					+ "<div class='container-full-width' style='width:16.66%; padding:0; margin:0;'>"
-						+ "Creampies<br/>Received"
-					+ "</div>"
-				+ "</div>";
+		return "<div class='container-full-width' style='width:100%; padding:0; margin:4px 0; font-weight:bold; text-align:center;'><div class='container-full-width' style='width:33.3%; padding:0; margin:0;'>Тип</div><div class='container-full-width' style='width:16.66%; padding:0; margin:0;'>Выполнено</div><div class='container-full-width' style='width:16.66%; padding:0; margin:0;'>Кончи в<br/>Дано</div><div class='container-full-width' style='width:16.66%; padding:0; margin:0;'>Получено</div><div class='container-full-width' style='width:16.66%; padding:0; margin:0;'>Кончи в<br/>Получено</div></div>";
 	}
 	
 	private static String sexStatRow(Colour colour, String name, int given, int loadsGiven, int received, int loadsReceived, boolean light) {
 		return 
 //				"<div class='container-full-width' style='width:100%; padding:0; margin:4px 0; text-align:center;'>"
-				"<div class='container-full-width inner' style='text-align:center; margin-bottom:0;"+(light?"background:"+PresetColour.BACKGROUND_ALT.toWebHexString()+";'":"'")+">"
-					+ "<div style='float:left; width:33.3%; padding:0; margin:0;'>"
-						+ "<span style='color:" + colour.toWebHexString() + ";'>" + name + "</span>"
+				"<div class='container-full-width inner' style='text-align:center; margin-bottom:0;"+(light?"фон:"+PresetColour.BACKGROUND_ALT.toWebHexString()+";'":"'")+"><div style='float:left; width:33.3%; padding:0; margin:0;'><span style='color:" + colour.toWebHexString() + ";'>" + name + "</span>"
 					+ "</div>"
 					+ "<div style='float:left; width:16.66%; padding:0; margin:0;'>"
 						+ given
@@ -2378,7 +2259,7 @@ public class PhoneDialogue {
 		
 		boolean noPregnancies=true;
 
-		contentSB.append("<div class='subTitle'>Mothered & Incubated Offspring</div>");
+		contentSB.append("<div class='subTitle'>Материнство и вынашивание потомства</div>");
 		
 		if(Main.game.getPlayer().hasStatusEffect(StatusEffect.PREGNANT_0)
 				|| Main.game.getPlayer().hasStatusEffect(StatusEffect.PREGNANT_1)
@@ -2404,15 +2285,15 @@ public class PhoneDialogue {
 								+ "</span>) Probability: "));
 					
 					if (pp.getProbability() <= 0) {
-						possibleFathersSB.append("[style.italicsTerrible(None)]");
+						possibleFathersSB.append("[style.italicsTerrible(Нет)]");
 					} else if(pp.getProbability()<=0.15f) {
-						possibleFathersSB.append("[style.italicsBad(Low)]");
+						possibleFathersSB.append("[style.italicsBad(Низкий)]");
 					} else if(pp.getProbability()<=0.3f) {
-						possibleFathersSB.append("[style.italicsMinorGood(Average)]");
+						possibleFathersSB.append("[style.italicsMinorGood(Средний)]");
 					} else if(pp.getProbability()<1) {
-						possibleFathersSB.append("[style.italicsGood(High)]");
+						possibleFathersSB.append("[style.italicsGood(Высокий)]");
 					} else {
-						possibleFathersSB.append("[style.italicsExcellent(Certainty)]");
+						possibleFathersSB.append("[style.italicsExcellent(Максимальный)]");
 					}
 					
 					possibleFathersSB.append("</b>");
@@ -2431,7 +2312,7 @@ public class PhoneDialogue {
 				stage = StatusEffect.PREGNANT_3.getName(Main.game.getPlayer());
 			}
 			
-			contentSB.append(pregnancyRow("[style.boldBad(Ongoing Pregnancy)]", "[style.italicsSex('"+Util.capitaliseSentence(stage)+"')]", "<b>Possible Fathers:</b>", possibleFathersSB.toString()));
+			contentSB.append(pregnancyRow("[style.boldBad(Беременность)]", "[style.italicsSex('"+Util.capitaliseSentence(stage)+"')]", "<b>Возможные отцы:</b>", possibleFathersSB.toString()));
 			
 			noPregnancies=false;
 		}
@@ -2456,17 +2337,17 @@ public class PhoneDialogue {
 					stage = incubationEntry.getValue().get(2).getName(Main.game.getPlayer());
 				}
 				Litter litter = Main.game.getPlayer().getIncubationLitter(incubationEntry.getKey());
-				contentSB.append(pregnancyRow("[style.boldBad(Ongoing)] [style.boldPurple(Incubation)]",
+				contentSB.append(pregnancyRow("[style.boldBad(В процессе)] [style.boldPurple(Инкубация)]",
 						(litter.getMother()!=null
 							?(litter.getMother().isPlayer()
-								?"Implanter: [style.colourExcellent(Yourself)]"
-								:UtilText.parse(litter.getMother(), "Implanter: <span style='color:"+litter.getMother().getFemininity().getColour().toWebHexString()+";'>[npc.name(A)]</span>"))
-							:"Implanter: [style.colourDisabled(Unknown)]"),
-						"Implanted in "
+								?"Имплантер: [style.colourExcellent(Вы)]"
+								:UtilText.parse(litter.getMother(), "Имплантер: <span style='color:"+litter.getMother().getFemininity().getColour().toWebHexString()+";'>[npc.name(A)]</span>"))
+							:"Имплантер: [style.colourDisabled(Неизвестно)]"),
+						"В имплантировано в "
 							+(incubationEntry.getKey()==SexAreaOrifice.VAGINA
-								?"womb"
+								?"матку"
 								:(incubationEntry.getKey()==SexAreaOrifice.ANUS || incubationEntry.getKey()==SexAreaOrifice.MOUTH
-									?"stomach"
+									?"живот"
 									:incubationEntry.getKey().getName(Main.game.getPlayer(), true)))
 							+": "
 							+Units.date(litter.getIncubationStartDate(), Units.DateType.LONG),
@@ -2480,7 +2361,7 @@ public class PhoneDialogue {
 		
 		if(!Main.game.getPlayer().getLittersBirthed().isEmpty()) {
 			for(Litter litter : Main.game.getPlayer().getLittersBirthed()) {
-				String unknownName = "[style.colourDisabled(Unknown)]";
+				String unknownName = "[style.colourDisabled(Неизвестно)]";
 				try {
 					String offspring0 = litter.getOffspring().iterator().next();
 					if(offspring0.contains("NPCOffspring")) {
@@ -2496,34 +2377,34 @@ public class PhoneDialogue {
 					}
 				} catch(Exception ex) {
 				}
-				contentSB.append(pregnancyRow("[style.boldGood(Resolved Pregnancy)]",
+				contentSB.append(pregnancyRow("[style.boldGood(Беременность разрешилась)]",
 						(litter.getFather()!=null
 							?(litter.getFather().isPlayer()
-								?"Father: [style.colourExcellent(Yourself)]"
-								:UtilText.parse(litter.getFather(), "Father: <span style='color:"+litter.getFather().getFemininity().getColour().toWebHexString()+";'>[npc.name(A)]</span>"))
-							:"Father: "+unknownName),
-						"Conceived: "
+								?"Отец: [style.colourExcellent(Вы)]"
+								:UtilText.parse(litter.getFather(), "Отец: <span style='color:"+litter.getFather().getFemininity().getColour().toWebHexString()+";'>[npc.name(A)]</span>"))
+							:"Отец: "+unknownName),
+						"Зачатие: "
 							+Units.date(litter.getConceptionDate(), Units.DateType.LONG)
-							+" | Delivered: "
+							+" | Рождено: "
 							+Units.date(litter.getBirthDate(), Units.DateType.LONG),
-						"Birthed: "
+						"Родилось: "
 							+litter.getBirthedDescription()));
 			}
 			noPregnancies=false;
 		}
 		if(!Main.game.getPlayer().getLittersIncubated().isEmpty()) {
 			for(Litter litter : Main.game.getPlayer().getLittersIncubated()) {
-				contentSB.append(pregnancyRow("[style.boldGood(Resolved)] [style.boldPurple(Incubation)]",
+				contentSB.append(pregnancyRow("[style.boldGood(Разрешено)] [style.boldPurple(Инкубация)]",
 						(litter.getMother()!=null
 							?(litter.getMother().isPlayer()
-								?"Implanter: [style.colourExcellent(Yourself)]"
-								:UtilText.parse(litter.getMother(), "Implanter: <span style='color:"+litter.getMother().getFemininity().getColour().toWebHexString()+";'>[npc.name(A)]</span>"))
-							:"Implanter: [style.colourDisabled(Unknown)]"),
-						"Implanted: "
+								?"Имплантер: [style.colourExcellent(Вы)]"
+								:UtilText.parse(litter.getMother(), "Имплантер: <span style='color:"+litter.getMother().getFemininity().getColour().toWebHexString()+";'>[npc.name(A)]</span>"))
+							:"Имплантер: [style.colourDisabled(Неизвестно)]"),
+						"Внедрено: "
 								+Units.date(litter.getIncubationStartDate(), Units.DateType.LONG)
-								+" | Delivered: "
+								+" | Рождено: "
 								+Units.date(litter.getBirthDate(), Units.DateType.LONG),
-						"Birthed: "
+						"Родилось: "
 							+litter.getBirthedDescription()));
 			}
 			noPregnancies=false;
@@ -2533,8 +2414,8 @@ public class PhoneDialogue {
 			contentSB.append("<div class='subTitle'>"
 					+ "<span style='color:" + PresetColour.TEXT_GREY.toWebHexString() +
 					(Main.game.getPlayer().getLittersImplanted().isEmpty()
-					?";'>You have never been pregnant...</span>"
-					:";'>You have never given birth...</span>")
+					?";'>Вы еще ни разу не были беременны...</span>"
+					:";'>Вы еще ни разу не рожали...</span>")
 					+ "</div>");
 		}
 		
@@ -2544,23 +2425,23 @@ public class PhoneDialogue {
 		
 		contentSB.append("<span style='height:16px;width:100%;float:left;'></span>");
 		
-		contentSB.append("<div class='subTitle'>Fathered & Implanted Offspring</div>");
+		contentSB.append("<div class='subTitle'>Отец и имплантация потомства</div>");
 		
 		for(PregnancyPossibility pp : new ArrayList<>(Main.game.getPlayer().getPotentialPartnersAsFather())) {
 			if(pp.getMother()!=null) {
 				String impregnationChance = "";
 				if(pp.getMother().hasStatusEffect(StatusEffect.PREGNANT_0)) {
-					impregnationChance = "Probability of impregnation: ";
+					impregnationChance = "Вероятность зачатия: ";
 					if (pp.getProbability() <= 0) {
-						impregnationChance += "[style.italicsTerrible(None)]";
+						impregnationChance += "[style.italicsTerrible(Нет)]";
 					} else if(pp.getProbability()<=0.15f) {
-						impregnationChance += "[style.italicsBad(Low)]";
+						impregnationChance += "[style.italicsBad(Низкий)]";
 					} else if(pp.getProbability()<=0.3f) {
-						impregnationChance += "[style.italicsMinorGood(Average)]";
+						impregnationChance += "[style.italicsMinorGood(Средний)]";
 					} else if(pp.getProbability()<1) {
-						impregnationChance += "[style.italicsGood(High)]";
+						impregnationChance += "[style.italicsGood(Высокий)]";
 					} else {
-						impregnationChance += "[style.italicsExcellent(Certainty)]";
+						impregnationChance += "[style.italicsExcellent(Максимальный)]";
 					}
 				}
 				
@@ -2586,7 +2467,7 @@ public class PhoneDialogue {
 								:Util.capitaliseSentence(pp.getMother().getSubspecies().getSingularMaleName(pp.getMother().getBody())))
 						+ "</span>)";
 				
-				contentSB.append(pregnancyRow("[style.boldBad(Ongoing Pregnancy)]", "[style.italicsSex('"+Util.capitaliseSentence(stage)+"')]", motherName, impregnationChance));
+				contentSB.append(pregnancyRow("[style.boldBad(Беременность)]", "[style.italicsSex('"+Util.capitaliseSentence(stage)+"')]", motherName, impregnationChance));
 				
 			}
 			noPregnancies=false;
@@ -2612,13 +2493,13 @@ public class PhoneDialogue {
 						} else if(incubator.hasStatusEffect(incubationEntry.getValue().get(2))) {
 							stage = incubationEntry.getValue().get(2).getName(incubator);
 						}
-						contentSB.append(pregnancyRow("[style.boldBad(Ongoing)] [style.boldPurple(Incubation)]",
-								UtilText.parse(incubator, "Incubator: <span style='color:"+incubator.getFemininity().getColour().toWebHexString()+";'>[npc.name(A)]</span>"),
-								"Implanted in "
+						contentSB.append(pregnancyRow("[style.boldBad(В процессе)] [style.boldPurple(Инкубация)]",
+								UtilText.parse(incubator, "Инкубатор: <span style='color:"+incubator.getFemininity().getColour().toWebHexString()+";'>[npc.name(A)]</span>"),
+								"В имплантировано в "
 									+(incubationEntry.getKey()==SexAreaOrifice.VAGINA
-										?"womb"
+										?"матку"
 										:(incubationEntry.getKey()==SexAreaOrifice.ANUS || incubationEntry.getKey()==SexAreaOrifice.MOUTH
-											?"stomach"
+											?"живот"
 											:incubationEntry.getKey().getName(incubator, true)))
 									+": "
 									+Units.date(litter.getIncubationStartDate(), Units.DateType.LONG),
@@ -2631,7 +2512,7 @@ public class PhoneDialogue {
 		
 		if(!Main.game.getPlayer().getLittersFathered().isEmpty()) {
 			for (Litter litter : Main.game.getPlayer().getLittersFathered()) {
-				String unknownName = "[style.colourDisabled(Unknown)]";
+				String unknownName = "[style.colourDisabled(Неизвестно)]";
 				try {
 					String offspring0 = litter.getOffspring().iterator().next();
 					if(offspring0.contains("NPCOffspring")) {
@@ -2648,17 +2529,17 @@ public class PhoneDialogue {
 				} catch(Exception ex) {
 				}
 				
-				contentSB.append(pregnancyRow("[style.boldGood(Resolved Pregnancy)]",
+				contentSB.append(pregnancyRow("[style.boldGood(Беременность разрешилась)]",
 						(litter.getMother()!=null
 							?(litter.getMother().isPlayer()
-								?"Mother: [style.colourExcellent(Yourself)]"
-								:UtilText.parse(litter.getMother(), "Mother: <span style='color:"+litter.getMother().getFemininity().getColour().toWebHexString()+";'>[npc.name(A)]</span>"))
-							:"Mother: "+unknownName),
-						"Conceived: "
+								?"Мать: [style.colourExcellent(Ты)]"
+								:UtilText.parse(litter.getMother(), "Мать: <span style='color:"+litter.getMother().getFemininity().getColour().toWebHexString()+";'>[npc.name(A)]</span>"))
+							:"Мать: "+unknownName),
+						"Зачатие: "
 							+Units.date(litter.getConceptionDate(), Units.DateType.LONG)
-							+" | Delivered: "
+							+" | Рождено: "
 							+Units.date(litter.getBirthDate(), Units.DateType.LONG),
-						"Birthed: "
+						"Родилось: "
 							+litter.getBirthedDescription()));
 			}
 			noPregnancies=false;
@@ -2667,7 +2548,7 @@ public class PhoneDialogue {
 			List<Litter> incubatorCompletedLitters = new ArrayList<>(Main.game.getPlayer().getLittersImplanted());
 			incubatorCompletedLitters.removeAll(incubatorOngoingLitters);
 			for (Litter litter : incubatorCompletedLitters) {
-				String unknownName = "[style.colourDisabled(Unknown)]";
+				String unknownName = "[style.colourDisabled(Неизвестно)]";
 				try {
 					String offspring0 = litter.getOffspring().iterator().next();
 					if(offspring0.contains("NPCOffspring")) {
@@ -2684,17 +2565,17 @@ public class PhoneDialogue {
 				} catch(Exception ex) {
 				}
 				
-				contentSB.append(pregnancyRow("[style.boldGood(Resolved)] [style.boldPurple(Incubation)]",
+				contentSB.append(pregnancyRow("[style.boldGood(Разрешено)] [style.boldPurple(Инкубация)]",
 						(litter.getIncubator()!=null
 							?(litter.getIncubator().isPlayer()
-								?"Incubator: [style.colourExcellent(Yourself)]"
-								:UtilText.parse(litter.getIncubator(), "Incubator: <span style='color:"+litter.getIncubator().getFemininity().getColour().toWebHexString()+";'>[npc.name(A)]</span>"))
-							:"Incubator: "+unknownName),
-						"Implanted: "
+								?"Инкубатор: [style.colourExcellent(Ты)]"
+								:UtilText.parse(litter.getIncubator(), "Инкубатор: <span style='color:"+litter.getIncubator().getFemininity().getColour().toWebHexString()+";'>[npc.name(A)]</span>"))
+							:"Инкубатор: "+unknownName),
+						"Внедрено: "
 							+Units.date(litter.getIncubationStartDate(), Units.DateType.LONG)
-							+" | Delivered: "
+							+" | Рождено: "
 							+Units.date(litter.getBirthDate(), Units.DateType.LONG),
-						"Birthed: "
+						"Родилось: "
 							+litter.getBirthedDescription()));
 			}
 			noPregnancies=false;
@@ -2702,8 +2583,7 @@ public class PhoneDialogue {
 		
 		if(noPregnancies){
 			contentSB.append("<div class='subTitle'>"
-					+ "<span style='color:"+PresetColour.TEXT_GREY.toWebHexString()+";'>You have never got anyone pregnant!</span>"
-					+ "</div>");
+					+ "<span style='color:"+PresetColour.TEXT_GREY.toWebHexString()+";'>Ты еще никого не обрюхатил!</span></div>");
 		}
 		
 
@@ -2711,17 +2591,7 @@ public class PhoneDialogue {
 	}
 	
 	private static String statHeader() {
-		return "<div class='container-full-width' style='margin-bottom:0;'>"
-					+ "<div style='width:40%; float:left; font-weight:bold; margin:0; padding:0;'>"
-						+ "Attribute"
-					+ "</div>"
-					+ "<div style='width:30%; float:left; font-weight:bold; margin:0; padding:0;'>"
-						+ "Value"
-					+ "</div>"
-					+ "<div style='float:left; width:30%; font-weight:bold; margin:0; padding:0;'>"
-						+ "Description"
-					+"</div>"
-				+ "</div>";
+		return "<div class='container-full-width' style='margin-bottom:0;'><div style='width:40%; float:left; font-weight:bold; margin:0; padding:0;'>Характеристика</div><div style='width:30%; float:left; font-weight:bold; margin:0; padding:0;'>Значение</div><div style='float:left; width:30%; font-weight:bold; margin:0; padding:0;'>Описание</div></div>";
 	}
 
 	private static String statRowHeader(Colour colour, String text) {
@@ -2732,8 +2602,7 @@ public class PhoneDialogue {
 	
 	private static String statRow(String colourLeft, String left, Colour colourCentre, String centre, String colourRight, String right) {
 		rowCount++;
-		return "<div class='container-full-width inner' style='margin-bottom:0;"+(rowCount%2==0?"background:"+PresetColour.BACKGROUND_ALT.toWebHexString()+";'":"'")+">"
-				+ "<div style='color:"+colourLeft+"; width:40%; float:left; font-weight:bold; margin:0; padding:0;'>"
+		return "<div class='container-full-width inner' style='margin-bottom:0;"+(rowCount%2==0?"фон:"+PresetColour.BACKGROUND_ALT.toWebHexString()+";'":"'")+"><div style='color:"+colourLeft+"; width:40%; float:left; font-weight:bold; margin:0; padding:0;'>"
 					+ left
 				+ "</div>"
 				+ "<div style='color:"+colourCentre.toWebHexString()+"; width:30%; float:left; font-weight:bold; margin:0; padding:0;'>"
@@ -2747,8 +2616,7 @@ public class PhoneDialogue {
 	
 	private static String statRow(Colour colourLeft, String left, Colour colourCentre, String centre, Colour colourRight, String right) {
 		rowCount++;
-		return "<div class='container-full-width inner' style='margin-bottom:0;"+(rowCount%2==0?"background:"+PresetColour.BACKGROUND_ALT.toWebHexString()+";'":"'")+">"
-					+ "<div style='color:"+colourLeft.toWebHexString()+"; width:40%; float:left; font-weight:bold; margin:0; padding:0;'>"
+		return "<div class='container-full-width inner' style='margin-bottom:0;"+(rowCount%2==0?"фон:"+PresetColour.BACKGROUND_ALT.toWebHexString()+";'":"'")+"><div style='color:"+colourLeft.toWebHexString()+"; width:40%; float:left; font-weight:bold; margin:0; padding:0;'>"
 						+ left
 					+ "</div>"
 					+ "<div style='color:"+(centre.equalsIgnoreCase("unknown") || centre.equalsIgnoreCase("N/A")?PresetColour.TEXT_GREY:colourCentre).toWebHexString()+"; width:30%; float:left; font-weight:bold; margin:0; padding:0;'>"
@@ -2762,33 +2630,14 @@ public class PhoneDialogue {
 
 	private static String statRow(Colour colour, String text) {
 		rowCount++;
-		return "<div class='container-full-width inner' style='margin-bottom:0;"+(rowCount%2==0?"background:"+PresetColour.BACKGROUND_ALT.toWebHexString()+";'":"'")+">"
-					+ "<div style='color:"+colour.toWebHexString()+"; width:100%; float:left; font-weight:bold; margin:0; padding:0; text-align:center;'>"
+		return "<div class='container-full-width inner' style='margin-bottom:0;"+(rowCount%2==0?"фон:"+PresetColour.BACKGROUND_ALT.toWebHexString()+";'":"'")+"><div style='color:"+colour.toWebHexString()+"; width:100%; float:left; font-weight:bold; margin:0; padding:0; text-align:center;'>"
 						+ text
 					+ "</div>"
 				+ "</div>";
 	}
 
 	private static String statAttributeHeader() {
-		return "<div class='container-full-width' style='text-align:center; background:"+PresetColour.BACKGROUND_ALT.toWebHexString()+";'><b>"
-				
-					+ "<div class='container-full-width' style='background:transparent;margin:0;padding:0;width:26%;'>"
-						+ "Attribute"
-					+ "</div>"
-
-					+ "<div class='container-full-width' style='background:transparent;margin:0;padding:0;width:16%;'>"
-						+ "Core | Bonus"
-					+ "</div>"
-						
-					+ "<div class='container-full-width' style='background:transparent;margin:0;padding:0;width:20%;'>"
-						+ "Value/Max."
-					+ "</div>"
-						
-					+ "<div class='container-full-width' style='background:transparent;margin:0;padding:0;width:36%;'>"
-						+ "Description"
-					+ "</div>"
-					
-				+ "</b></div>";
+		return "<div class='container-full-width' style='text-align:center; background:"+PresetColour.BACKGROUND_ALT.toWebHexString()+";'><b><div class='container-full-width' style='background:transparent;margin:0;padding:0;width:26%;'>Атрибут</div><div class='container-full-width' style='background:transparent;margin:0;padding:0;width:16%;'>Основной | Бонус</div><div class='container-full-width' style='background:transparent;margin:0;padding:0;width:20%;'>Значение/Макс.</div><div class='container-full-width' style='background:transparent;margin:0;padding:0;width:36%;'>Описание</div></b></div>";
 	}
 	
 	private static String getAttributeBox(GameCharacter owner, AbstractAttribute att, String effect) {
@@ -2813,10 +2662,7 @@ public class PhoneDialogue {
 		
 		float bonusAttributeValue = owner.getBonusAttributeValue(att) + (att==Attribute.RESISTANCE_PHYSICAL?owner.getPhysicalResistanceAttributeFromClothingAndWeapons():0);
 		
-		return "<div class='container-full-width' style='background:"+PresetColour.BACKGROUND_ALT.toWebHexString()+";'>"
-				
-					+ "<div class='container-full-width' style='background:transparent;margin:0;padding:0;width:30%;'>"
-						+ "<b style='color:" + att.getColour().toWebHexString() + ";'>"+Util.capitaliseSentence(att.getName())+"</b>"
+		return "<div class='container-full-width' style='background:"+PresetColour.BACKGROUND_ALT.toWebHexString()+";'><div class='container-full-width' style='background:transparent;margin:0;padding:0;width:30%;'><b style='color:" + att.getColour().toWebHexString() + ";'>"+Util.capitaliseSentence(att.getName())+"</b>"
 					+ "</div>"
 
 					+ "<div class='container-full-width' style='background:transparent;margin:0;padding:0;width:6%;text-align:right;'>"
@@ -2865,20 +2711,20 @@ public class PhoneDialogue {
 		
 		return UtilText.parse(contact, "<b style='color:"+contact.getFemininity().getColour().toWebHexString()+";'>[npc.Name]</b>"+(isOffspring
 				?(contact.isFeminine()
-						?", your [style.colourFeminine(daughter)]"
-						:", your [style.colourMasculine(son)]")
+						?", твоя [style.colourFeminine(дочь)]"
+						:", твой [style.colourMasculine(сын)]")
 				:"")
-				+". [npc.She] is "
+				+". [npc.She] — это "
 				+ (contact.getRaceStage()==RaceStage.HUMAN || contact.isRaceConcealed()
 					?"[npc.a_race(true)]"
 					:"[npc.a_raceStage(true)] [npc.race(true)]")
-				+", whose current location is: "
+				+", который сейчас находится здесь: "
 				+ (contact.getWorldLocation()==WorldType.EMPTY
-					?"[style.italicsDisabled(Unknown!)]"
+					?"[style.italicsDisabled(Неизвестно!)]"
 					:"<i>"+contact.getWorldLocation().getName()+", "+contact.getLocationPlace().getPlaceType().getName()+"</i>."));
 	}
 	
-	public static final DialogueNode CONTACTS = new DialogueNode("Contacts", "Look at your contacts.", true) {
+	public static final DialogueNode CONTACTS = new DialogueNode("Контакты", "Посмотреть контакты.", true) {
 
 		@Override
 		public String getContent() {
@@ -2898,7 +2744,7 @@ public class PhoneDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 0) {
-				return new Response("Back", "Return to the phone's main menu.", MENU);
+				return new Response("Назад", "Вернуться в главное меню телефона.", MENU);
 			
 			} else if (index <= charactersEncountered.size()) {
 				GameCharacter npc = charactersEncountered.get(index-1);
@@ -2926,7 +2772,7 @@ public class PhoneDialogue {
 		}
 	};
 	
-	public static final DialogueNode CONTACTS_CHARACTER = new DialogueNode("Contacts", "Look at your contacts.", true) {
+	public static final DialogueNode CONTACTS_CHARACTER = new DialogueNode("Контакты", "Посмотреть контакты.", true) {
 
 		@Override
 		public String getLabel() {
@@ -2941,13 +2787,13 @@ public class PhoneDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 0) {
-				return new Response("Back", "Return to the phone's main menu.", MENU);
+				return new Response("Назад", "Вернуться в главное меню телефона.", MENU);
 			
 			} else if (index <= Main.game.getPlayer().getCharactersEncountered().size()) {
 				try {
 					GameCharacter npc = Main.game.getNPCById(Main.game.getPlayer().getCharactersEncountered().get(index - 1));
 					return new Response(Util.capitaliseSentence(npc.getName(true)),
-							UtilText.parse(npc, "Take a detailed look at what [npc.name] looks like."),
+							UtilText.parse(npc, "Внимательно посмотри на то, как выглядит [npc.name]."),
 							CONTACTS_CHARACTER){
 						@Override
 						public void effects() {
@@ -2956,7 +2802,7 @@ public class PhoneDialogue {
 						}
 					};
 				} catch (Exception e) {
-					Util.logGetNpcByIdError("CONTACTS_CHARACTER.getResponse()", Main.game.getPlayer().getCharactersEncountered().get(index - 1));
+					Util.logGetNpcByIdError("КОНТАКТЫ_ПЕРСОНАЖА.getResponse()", Main.game.getPlayer().getCharactersEncountered().get(index - 1));
 					return null;
 				}
 			
@@ -2992,17 +2838,15 @@ public class PhoneDialogue {
 	
 	private static int encyclopediaItemIndex = 0;
 	
-	public static final DialogueNode ENCYCLOPEDIA = new DialogueNode("Encyclopedia", "", true) {
+	public static final DialogueNode ENCYCLOPEDIA = new DialogueNode("Энциклопедия", "", true) {
 		@Override
 		public String getContent() {
 			StringBuilder sb = new StringBuilder();
 			
-			sb.append("<p>"
-						+ "You have collected information on all the races, weapons, clothing, and items that you've encountered in your travels."
-					+ "</p>");
+			sb.append("<p>Вы собрали сведения обо всех расах, оружии, одежде и предметах, которые встретили в своих странствиях.</p>");
 			
 			sb.append("<p style='text-align:center;'>");
-				sb.append("You have discovered:");
+				sb.append("Вы обнаружили:");
 				sb.append(Main.getProperties().getSubspeciesDiscoveredCount()==Subspecies.getAllSubspecies().size()
 								?"<br/>[style.colourGood(Subspecies: "+getSubspeciesDiscoveredIndication()+")]"
 								:"<br/>Subspecies: "+getSubspeciesDiscoveredIndication());
@@ -3029,8 +2873,8 @@ public class PhoneDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response((Main.getProperties().hasValue(PropertyValue.newRaceDiscovered))?"<span style='color:" + PresetColour.GENERIC_EXCELLENT.toWebHexString() + ";'>Races</span>":"Races",
-						"Have a look at all the different races that you've encountered in your travels.", RACES){
+				return new Response((Main.getProperties().hasValue(PropertyValue.newRaceDiscovered))?"<span style='color:" + PresetColour.GENERIC_EXCELLENT.toWebHexString() + ";'>Расы</span>":"Расы",
+						"Взгляните на все различные расы, которые вы встретили в своих странствиях.", RACES){
 					@Override
 					public void effects() {
 						Main.getProperties().setValue(PropertyValue.newRaceDiscovered, false);
@@ -3038,8 +2882,8 @@ public class PhoneDialogue {
 				};
 
 			} else if (index == 2) {
-				return new Response((Main.getProperties().hasValue(PropertyValue.newWeaponDiscovered))?"<span style='color:" + PresetColour.GENERIC_EXCELLENT.toWebHexString() + ";'>Weapons</span>":"Weapons",
-						"Have a look at all the different weapons that you've encountered in your travels.", WEAPON_CATALOGUE){
+				return new Response((Main.getProperties().hasValue(PropertyValue.newWeaponDiscovered))?"<span style='color:" + PresetColour.GENERIC_EXCELLENT.toWebHexString() + ";'>Оружие</span>":"Оружие",
+						"Взгляните на все различные виды оружия, которые вы встретили в своих странствиях.", WEAPON_CATALOGUE){
 					@Override
 					public void effects() {
 						Main.getProperties().setValue(PropertyValue.newWeaponDiscovered, false);
@@ -3047,8 +2891,8 @@ public class PhoneDialogue {
 				};
 
 			} else if (index == 3) {
-				return new Response((Main.getProperties().hasValue(PropertyValue.newClothingDiscovered))?"<span style='color:" + PresetColour.GENERIC_EXCELLENT.toWebHexString() + ";'>Clothing</span>":"Clothing",
-						"Have a look at all the different clothing that you've encountered in your travels.", CLOTHING_CATALOGUE){
+				return new Response((Main.getProperties().hasValue(PropertyValue.newClothingDiscovered))?"<span style='color:" + PresetColour.GENERIC_EXCELLENT.toWebHexString() + ";'>Одежда</span>":"Одежда",
+						"Взгляните на всю различную одежду, которую вы встретили в своих странствиях.", CLOTHING_CATALOGUE){
 					@Override
 					public void effects() {
 						Main.getProperties().setValue(PropertyValue.newClothingDiscovered, false);
@@ -3057,8 +2901,8 @@ public class PhoneDialogue {
 				};
 
 			} else if (index == 4) {
-				return new Response((Main.getProperties().hasValue(PropertyValue.newItemDiscovered))?"<span style='color:" + PresetColour.GENERIC_EXCELLENT.toWebHexString() + ";'>Items</span>":"Items",
-						"Have a look at all the different items that you've encountered in your travels.", ITEM_CATALOGUE){
+				return new Response((Main.getProperties().hasValue(PropertyValue.newItemDiscovered))?"<span style='color:" + PresetColour.GENERIC_EXCELLENT.toWebHexString() + ";'>Предметы</span>":"Предметы",
+						"Посмотрите на все различные предметы, которые вы встретили в своих путешествиях.", ITEM_CATALOGUE){
 					@Override
 					public void effects() {
 						encyclopediaItemIndex = 0;
@@ -3071,11 +2915,11 @@ public class PhoneDialogue {
 						&& !Main.getProperties().hasValue(PropertyValue.newClothingDiscovered)
 						&& !Main.getProperties().hasValue(PropertyValue.newWeaponDiscovered)
 						&& !Main.getProperties().hasValue(PropertyValue.newRaceDiscovered)) {
-					return new Response("Clear alerts", "Clears encyclopedia alerts.<br/><i>You currently do not have any encyclopedia alerts to clear...</i>", null);
+					return new Response("Очистить уведомления", "Очищает уведомления энциклопедии.<br/><i>На данный момент у вас нет уведомлений в энциклопедии для очистки...</i>", null);
 					
 				} else {
-					return new ResponseEffectsOnly("Clear alerts",
-							"Clears encyclopedia alerts."){
+					return new ResponseEffectsOnly("Очистить уведомления",
+							"Очищает уведомления энциклопедии."){
 						@Override
 						public Colour getHighlightColour() {
 							return PresetColour.GENERIC_MINOR_GOOD;
@@ -3091,7 +2935,7 @@ public class PhoneDialogue {
 				}
 				
 			} else if (index == 0) {
-				return new Response("Back", "Return to the phone's main menu.", MENU);
+				return new Response("Назад", "Вернуться в главное меню телефона.", MENU);
 
 			} else {
 				return null;
@@ -3207,7 +3051,7 @@ public class PhoneDialogue {
 	public static final DialogueNode WEAPON_CATALOGUE = new DialogueNode("", "", true) {
 		@Override
 		public String getLabel() {
-			return "Discovered Weapons ("+getWeaponsDiscoveredIndication()+")";
+			return "Открытое оружие ("+getWeaponsDiscoveredIndication()+")";
 		}
 		@Override
 		public String getContent() {
@@ -3223,10 +3067,7 @@ public class PhoneDialogue {
 			
 			for(AbstractWeaponType weaponType : weaponsDiscoveredList) {
 				boolean discovered = Main.getProperties().isWeaponDiscovered(weaponType);
-				String entry = "<div class='inventory-item-slot unequipped' style='background-color:"+weaponType.getRarity().getBackgroundColour().toWebHexString()+"; width:78%; margin:1%; padding:0; '>"
-									+ "<div class='inventory-icon-content'>"+(discovered?weaponType.getSVGImage():"")+"</div>"
-									+ "<div class='overlay"+(discovered?"' id='"+weaponType.getId()+"'":" disabled-dark'")+" style='cursor:default;'></div>"
-								+ "</div>";
+				String entry = "<div class='inventory-item-slot unequipped' style='background-color:"+weaponType.getRarity().getBackgroundColour().toWebHexString()+"; width:78%; margin:1%; padding:0; '><div class='inventory-icon-content'>"+(discovered?weaponType.getSVGImage():"")+"</div><div class='overlay"+(discovered?"' id='"+weaponType.getId()+"'":" отключенная-темная")+" style='cursor:default;'></div></div>";
 				sbDamageTypes.setLength(0);
 				if(discovered) {
 					float width = weaponType.getAvailableDamageTypes().size()>4?(72/weaponType.getAvailableDamageTypes().size()):18;
@@ -3260,14 +3101,14 @@ public class PhoneDialogue {
 			
 			sb.append("<div class='container-full-width'>");
 				sb.append("<p style='width:100%; text-align:center; padding:0 margin:0;'>");
-					sb.append("[style.boldBlue(Melee Weapons ("+meleeKnownCount+"/"+meleeCount+"))]");
+					sb.append("[style.boldBlue(Холодное оружие ("+meleeKnownCount+"/"+meleeCount+"))]");
 				sb.append("</p>");
 				sb.append(sbMelee.toString());
 			sb.append("</div>");
 			
 			sb.append("<div class='container-full-width'>");
 				sb.append("<p style='width:100%; text-align:center; padding:0 margin:0;'>");
-					sb.append("[style.boldYellow(Ranged Weapons ("+rangedKnownCount+"/"+rangedCount+"))]");
+					sb.append("[style.boldYellow(Дальнобойное оружие ("+rangedKnownCount+"/"+rangedCount+"))]");
 				sb.append("</p>");
 				sb.append(sbRanged.toString());
 			sb.append("</div>");
@@ -3278,7 +3119,7 @@ public class PhoneDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 0) {
-				return new Response("Back", "Return to the encyclopedia.", ENCYCLOPEDIA);
+				return new Response("Назад", "Вернуться к энциклопедии.", ENCYCLOPEDIA);
 			
 			} else {
 				return null;
@@ -3294,7 +3135,7 @@ public class PhoneDialogue {
 	public static final DialogueNode CLOTHING_CATALOGUE = new DialogueNode("", "", true) {
 		@Override
 		public String getLabel() {
-			return "Discovered Clothing ("+getClothingDiscoveredIndication()+")";
+			return "Открытая одежда ("+getClothingDiscoveredIndication()+")";
 		}
 		@Override
 		public String getContent() {
@@ -3316,10 +3157,7 @@ public class PhoneDialogue {
 				
 				for(InventorySlot slot : clothingType.getEquipSlots()) {
 					if(slots.contains(slot)) {
-						String entry = "<div class='inventory-item-slot unequipped' style='background-color:"+clothingType.getRarity().getBackgroundColour().toWebHexString()+"; width:8%;'>"
-								+ "<div class='inventory-icon-content'>"+(discovered?clothingType.getSVGImageRandomColour(slot, true, false, false):"")+"</div>"
-								+ "<div class='overlay"+(discovered?"' id='"+clothingType.getId()+"_"+slot.toString()+"'":" disabled-dark'")+" style='cursor:default;'></div>"
-							+ "</div>";
+						String entry = "<div class='inventory-item-slot unequipped' style='background-color:"+clothingType.getRarity().getBackgroundColour().toWebHexString()+"; width:8%;'><div class='inventory-icon-content'>"+(discovered?clothingType.getSVGImageRandomColour(slot, true, false, false):"")+"</div><div class='overlay"+(discovered?"' id='"+clothingType.getId()+"_"+slot.toString()+"'":" отключенная-темная")+" style='cursor:default;'></div></div>";
 						sbMap.get(slot).append(entry);
 						discoveredMap.put(slot, new Value<>(discoveredMap.get(slot).getKey()+(discovered?1:0), discoveredMap.get(slot).getValue()+1));
 					}
@@ -3341,16 +3179,16 @@ public class PhoneDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 0) {
-				return new Response("Back", "Return to the encyclopedia.", ENCYCLOPEDIA);
+				return new Response("Назад", "Вернуться к энциклопедии.", ENCYCLOPEDIA);
 			
 			} else {
 				List<Response> responses = new ArrayList<>();
 				for(Entry<String, List<InventorySlot>> entry : clothingSlotCategories.entrySet()) {
 					if(clothingSlotKey==entry.getKey()) {
-						responses.add(new Response(entry.getKey(), "You are already viewing this category!", null));
+						responses.add(new Response(entry.getKey(), "Вы уже просматриваете эту категорию!", null));
 						
 					} else {
-						responses.add(new Response(entry.getKey(), "View all clothing which fits into the following slots:<br/><i>"+Util.capitaliseSentence(Util.inventorySlotsToStringList(entry.getValue()))+".</i>", CLOTHING_CATALOGUE) {
+						responses.add(new Response(entry.getKey(), "Посмотреть всю одежду, подходящую для следующих слотов:<br/><i>"+Util.capitaliseSentence(Util.inventorySlotsToStringList(entry.getValue()))+".</i>", CLOTHING_CATALOGUE) {
 							@Override
 							public void effects() {
 								clothingSlotKey = entry.getKey();
@@ -3370,10 +3208,10 @@ public class PhoneDialogue {
 			return DialogueNodeType.PHONE;
 		}
 	};
-	public static final DialogueNode ITEM_CATALOGUE = new DialogueNode("", "View discovered items", true) {
+	public static final DialogueNode ITEM_CATALOGUE = new DialogueNode("", "Посмотреть открытые предметы", true) {
 		@Override
 		public String getLabel() {
-			return "Discovered Items ("+getItemsDiscoveredIndication()+")";
+			return "Открытые предметы ("+getItemsDiscoveredIndication()+")";
 		}
 		@Override
 		public String getContent() {
@@ -3394,10 +3232,7 @@ public class PhoneDialogue {
 			
 			for(AbstractItemType itemType : itemsDiscoveredList) {
 				boolean discovered = Main.getProperties().isItemDiscovered(itemType);
-				String entry = "<div class='inventory-item-slot unequipped' style='background-color:"+itemType.getRarity().getBackgroundColour().toWebHexString()+"; width:8%;'>"
-									+ "<div class='inventory-icon-content'>"+(discovered?itemType.getSVGString():"")+"</div>"
-									+ "<div class='overlay"+(discovered?"' id='"+itemType.getId()+"'":" disabled-dark'")+" style='cursor:default;'></div>"
-								+ "</div>";
+				String entry = "<div class='inventory-item-slot unequipped' style='background-color:"+itemType.getRarity().getBackgroundColour().toWebHexString()+"; width:8%;'><div class='inventory-icon-content'>"+(discovered?itemType.getSVGString():"")+"</div><div class='overlay"+(discovered?"' id='"+itemType.getId()+"'":" отключенная-темная")+" style='cursor:default;'></div></div>";
 				
 				if(itemType.getItemTags().contains(ItemTag.BOOK)) {
 					sbBooks.append(entry);
@@ -3432,7 +3267,7 @@ public class PhoneDialogue {
 			if(encyclopediaItemIndex==0) {
 				sb.append("<div class='container-full-width'>");
 					sb.append("<p style='width:100%; text-align:center; padding:0 margin:0;'>");
-						sb.append("[style.boldBlueLight(Items ("+itemKnownCount+"/"+itemCount+"))]");
+						sb.append("[style.boldBlueLight(Предметы ("+itemKnownCount+"/"+itemCount+"))]");
 					sb.append("</p>");
 					sb.append(sbItems.toString());
 				sb.append("</div>");
@@ -3441,14 +3276,14 @@ public class PhoneDialogue {
 			if(encyclopediaItemIndex==1) {
 				sb.append("<div class='container-full-width'>");
 					sb.append("<p style='width:100%; text-align:center; padding:0 margin:0;'>");
-						sb.append("[style.boldOrange(Books ("+bookKnownCount+"/"+bookCount+"))]");
+						sb.append("[style.boldOrange(Книги ("+bookKnownCount+"/"+bookCount+"))]");
 					sb.append("</p>");
 					sb.append(sbBooks.toString());
 				sb.append("</div>");
 				
 				sb.append("<div class='container-full-width'>");
 					sb.append("<p style='width:100%; text-align:center; padding:0 margin:0;'>");
-						sb.append("[style.boldArcane(Essences ("+essenceKnownCount+"/"+essenceCount+"))]");
+						sb.append("[style.boldArcane(Эссенции ("+essenceKnownCount+"/"+essenceCount+"))]");
 					sb.append("</p>");
 					sb.append(sbEssences.toString());
 				sb.append("</div>");
@@ -3457,7 +3292,7 @@ public class PhoneDialogue {
 			if(encyclopediaItemIndex==2) {
 				sb.append("<div class='container-full-width'>");
 					sb.append("<p style='width:100%; text-align:center; padding:0 margin:0;'>");
-						sb.append("[style.boldSpells(Spells ("+spellKnownCount+"/"+spellCount+"))]");
+						sb.append("[style.boldSpells(Заклинания ("+spellKnownCount+"/"+spellCount+"))]");
 					sb.append("</p>");
 					sb.append(sbSpells.toString());
 				sb.append("</div>");
@@ -3469,10 +3304,10 @@ public class PhoneDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Items",
+				return new Response("Предметы",
 						encyclopediaItemIndex==0
-							?"You're already viewing all of the items that you've discovered..."
-							:"View all of the items that you've discovered.",
+							?"Вы уже просматриваете все найденные предметы..."
+							:"Просмотреть все найденные предметы.",
 						encyclopediaItemIndex==0
 							?null
 							:ITEM_CATALOGUE){
@@ -3483,10 +3318,10 @@ public class PhoneDialogue {
 				};
 				
 			} else if(index==2) {
-				return new Response("Books & essences",
+				return new Response("Книги и эссенции",
 						encyclopediaItemIndex==1
-							?"You're already viewing all of the racial books and essences that you've discovered..."
-							:"View all of the racial books and essences that you've discovered.",
+							?"Вы уже просматриваете все найденные расовые книги и эссенции..."
+							:"Просмотреть все найденные расовые книги и эссенции.",
 						encyclopediaItemIndex==1
 							?null
 							:ITEM_CATALOGUE){
@@ -3497,10 +3332,10 @@ public class PhoneDialogue {
 				};
 				
 			} else if(index==3) {
-				return new Response("Spell books",
+				return new Response("Книги заклинаний",
 						encyclopediaItemIndex==2
-							?"You're already viewing all of the spell books that you've discovered..."
-							:"View all of the spell books that you've discovered.",
+							?"Вы уже просматриваете все найденные вами книги заклинаний..."
+							:"Просмотреть все найденные вами книги заклинаний.",
 						encyclopediaItemIndex==2
 							?null
 							:ITEM_CATALOGUE){
@@ -3511,7 +3346,7 @@ public class PhoneDialogue {
 				};
 				
 			} else if (index == 0) {
-				return new Response("Back", "Return to the encyclopedia.", ENCYCLOPEDIA);
+				return new Response("Назад", "Вернуться к энциклопедии.", ENCYCLOPEDIA);
 			}
 			return null;
 		}
@@ -3551,7 +3386,7 @@ public class PhoneDialogue {
 	public static final DialogueNode RACES = new DialogueNode("", "", true) {
 		@Override
 		public String getLabel() {
-			return "Discovered Races ("+getSubspeciesDiscoveredIndication()+")";
+			return "Открытые расы ("+getSubspeciesDiscoveredIndication()+")";
 		}
 		@Override
 		public String getContent() {
@@ -3560,14 +3395,7 @@ public class PhoneDialogue {
 			// Race (X/Y), book icon if advanced knowledge found
 			
 			UtilText.nodeContentSB.append(
-					"<p style='text-align:center;'>"
-						+ "You have encountered the following races in your travels:"
-						+ "<br/>"
-						+ "The number of discovered subspecies for each race are shown in brackets."
-						+ "<br/>"
-						+ "If you have unlocked advanced knowledge of the race, its icon will be shown."
-//						+ "Discovered races are [style.boldGood(highlighted)], while undiscovered races are [style.colourDisabled(greyed out)]."
-					+ "</p>");
+					"<p style='text-align:center;'>В своих странствиях вы встретили следующие расы:<br/>Количество открытых подвидов для каждой расы указано в скобках.<br/>Если вы разблокировали расширенные знания о расе, рядом будет отображаться её иконка.</p>");
 			List<AbstractRace> sortedRaces = new ArrayList<>();
 			sortedRaces.addAll(Race.getAllRaces());
 			sortedRaces.remove(Race.NONE);
@@ -3639,11 +3467,11 @@ public class PhoneDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 0) {
-				return new Response("Back", "Return to the encyclopedia.", ENCYCLOPEDIA);
+				return new Response("Назад", "Вернуться к энциклопедии.", ENCYCLOPEDIA);
 			
 			} else if (index <= racesDiscovered.size()) {
 				return new Response(Util.capitaliseSentence(racesDiscovered.get(index - 1).getName(false)),
-						"Take a look at all the subspecies of the race: '" + racesDiscovered.get(index - 1).getName(false) + "'",
+						"Посмотреть все подвиды расы: '" + racesDiscovered.get(index - 1).getName(false) + "'",
 						SUBSPECIES){
 					@Override
 					public void effects() {
@@ -3685,7 +3513,7 @@ public class PhoneDialogue {
 		fullModList.addAll(subspecies.getExtraEffects(null));
 		
 		if(subspecies.isFeralConfigurationAvailable(null)) {
-			fullModList.add("<br/><b>Additional bonuses when in [style.boldFeral(feral form)]:</b>");
+			fullModList.add("<br/><b>Дополнительные бонусы в [style.boldFeral(дикой форме)]:</b>");
 			
 			for(String s : subspecies.getFeralEffects()) {
 				fullModList.add(s);
@@ -3720,52 +3548,15 @@ public class PhoneDialogue {
 			subspeciesSB.append(
 				"<div class='container-full-width' style='width:40%; float:right;'>"
 					+ "<p style='width:100%; text-align:center;'>"
-						+ "<b style='color:"+subspeciesSelected.getColour(null).toWebHexString()+";'>"+Util.capitaliseSentence(subspeciesSelected.getName(null))+"</b>"
-						+ "<br/>Average stats"
-					+ "</p>"
-					+ "<table align='center'>"
-						+ "<tr>"
-							+ "<td></td>"
-							+ "<td>[style.colourFeminine("+Util.capitaliseSentence(subspeciesSelected.getSingularFemaleName(null))+")]</td>"
-							+ "<td>[style.colourMasculine("+Util.capitaliseSentence(subspeciesSelected.getSingularMaleName(null))+")]</td>"
-						+ "</tr>"
-						+ "<tr>"
-							+ "<td>Height</td>"
-							+ "<td>"+Units.size(femaleBody.getHeightValue())+"</td>"
-							+ "<td>"+Units.size(maleBody.getHeightValue())+"</td>"
-						+ "</tr>"
-						+ "<tr>"
-							+ "<td>Femininity</td>"
-							+ "<td>"+femaleBody.getFemininity()+"</td>"
-							+ "<td>"+maleBody.getFemininity()+"</td>"
-						+ "</tr>"
-						+ "<tr>"
-							+ "<td>Breast size</td>"
-							+ "<td>"+(femaleBody.getBreast().getRawSizeValue()==0
-										?"Flat"
-										:femaleBody.getBreast().getSize().getCupSizeName()+"-cup")+"</td>"
+						+ "<b style='color:"+subspeciesSelected.getColour(null).toWebHexString()+";'>"+Util.capitaliseSentence(subspeciesSelected.getName(null))+"</b><br/>Средние показатели</p><table align='center'><tr><td></td><td>[style.colourFeminine("+Util.capitaliseSentence(subspeciesSelected.getSingularFemaleName(null))+")]</td>"
+							+ "<td>[style.colourMasculine("+Util.capitaliseSentence(subspeciesSelected.getSingularMaleName(null))+")]</td></tr><tr><td>Рост</td><td>"+Units.size(femaleBody.getHeightValue())+"</td>"
+							+ "<td>"+Units.size(maleBody.getHeightValue())+"</td></tr><tr><td>Женственность</td><td>"+femaleBody.getFemininity()+"</td>"
+							+ "<td>"+maleBody.getFemininity()+"</td></tr><tr><td>Размер груди</td><td>"+(femaleBody.getBreast().getRawSizeValue()==0
+										?"Плоская"
+										:femaleBody.getBreast().getSize().getCupSizeName()+"-го размера")+"</td>"
 							+ "<td>"+(maleBody.getBreast().getRawSizeValue()==0
-										?"Flat"
-										:maleBody.getBreast().getSize().getCupSizeName()+"-cup")+"</td>"
-						+ "</tr>"
-						+ "<tr>"
-							+ "<td>Penis length</td>"
-							+ "<td>-</td>"
-							+ "<td>"+Units.size(maleBody.getPenis().getRawLengthValue())+"</td>"
-						+ "</tr>"
-						+ "<tr>"
-							+ "<td>Penis diameter</td>"
-							+ "<td>-</td>"
-							+ "<td>"+Units.size(maleBody.getPenis().getRawGirthValue())+"</td>"
-						+ "</tr>"
-						+ "<tr>"
-							+ "<td>Vagina capacity</td>"
-							+ "<td>"+Util.capitaliseSentence(femaleBody.getVagina().getOrificeVagina().getCapacity().getDescriptor())+"</td>"
-							+ "<td>-</td>"
-						+ "</tr>"
-						+ "<tr>"
-							+ "<td>Litter size</td>"
-							+ "<td>"+subspeciesSelected.getRace().getNumberOfOffspringLow()+"-"+subspeciesSelected.getRace().getNumberOfOffspringHigh()+"</td>"
+										?"Плоская"
+										:maleBody.getBreast().getSize().getCupSizeName()+"-го размера")+"</td></tr><tr><td>Длина члена</td><td>-</td><td>"+Units.size(maleBody.getPenis().getRawLengthValue())+"</td></tr><tr><td>Диаметр члена</td><td>-</td><td>"+Units.size(maleBody.getPenis().getRawGirthValue())+"</td></tr><tr><td>Вместимость влагалища</td><td>"+Util.capitaliseSentence(femaleBody.getVagina().getOrificeVagina().getCapacity().getDescriptor())+"</td><td>-</td></tr><tr><td>Размер помета</td><td>"+subspeciesSelected.getRace().getNumberOfOffspringLow()+"-"+subspeciesSelected.getRace().getNumberOfOffspringHigh()+"</td>"
 							+ "<td>-</td>"
 						+ "</tr>"
 					+ "</table>"
@@ -3773,26 +3564,25 @@ public class PhoneDialogue {
 					+ "<p style='width:100%; text-align:center;'>"
 						+ "Nocturnality: "+Util.capitaliseSentence(subspeciesSelected.getNocturnality().getName())
 						+ "<br/>"
-						+ "Aquatic: "+(subspeciesSelected.isAquatic()?"Yes":"No")
+						+ "Aquatic: "+(subspeciesSelected.isAquatic()?"Да":"Нет")
 						+ "<br/>"
 						+ "Leg configuration: "+Util.capitaliseSentence(bodyForSubspeciesSelected.getLegConfiguration().getName())
 						+ "<br/>"
-						+ "Short stature: "+(subspeciesSelected.isShortStature()?"Yes":"No")
+						+ "Short stature: "+(subspeciesSelected.isShortStature()?"Да":"Нет")
 					+"</p>"
 				+ "</div>");
 					
 			subspeciesSB.append("<p>"
 					+ "<b style='color:"+subspeciesSelected.getColour(null).toWebHexString()+";'>"+Util.capitaliseSentence(subspeciesSelected.getName(null))+"</b>"
 					+ (AbstractSubspecies.getMainSubspeciesOfRace(raceSelected)==subspeciesSelected
-							?" ([style.colourMinorGood(Core)] subspecies of <span style='color:"+raceSelected.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(raceSelected.getName(false))+"</span>)"
-							:" (Subspecies of <span style='color:"+raceSelected.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(raceSelected.getName(false))+"</span>)")
+							?" ([style.colourMinorGood(Подвид)] <span style='color:"+raceSelected.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(raceSelected.getName(false))+"</span>)"
+							:" (Подвид <span style='color:"+raceSelected.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(raceSelected.getName(false))+"</span>)")
 					+ "<br/>"
 					+ "Masculine: <span style='color:"+Femininity.valueOf(maleBody.getFemininity()).getColour().toWebHexString()+";'>"+Util.capitaliseSentence(subspeciesSelected.getSingularMaleName(null))+"</span>"
 					+ "<br/>"
 					+ "Feminine: <span style='color:"+Femininity.valueOf(femaleBody.getFemininity()).getColour().toWebHexString()+";'>"+Util.capitaliseSentence(subspeciesSelected.getSingularFemaleName(null))+"</span>");
 
-			subspeciesSB.append("<br/><br/>"
-					+"<b>Race bonuses:</b>");
+			subspeciesSB.append("<br/><br/><b>Бонусы расы:</b>");
 			if(Main.getProperties().isAdvancedRaceKnowledgeDiscovered(subspeciesSelected)) {
 				for (String s : getSubspeciesModifiersAsStringList(subspeciesSelected)) {
 					subspeciesSB.append("<br/>");
@@ -3801,7 +3591,7 @@ public class PhoneDialogue {
 			} else {
 				subspeciesSB.append("<br/>");
 				subspeciesSB.append("<span style='color:"+PresetColour.TEXT_GREY.toWebHexString()+";'>");
-					subspeciesSB.append("Race bonuses can be discovered in books!");
+					subspeciesSB.append("Бонусы расы можно найти в книгах!");
 				subspeciesSB.append("</span>");
 			}
 			
@@ -3809,13 +3599,11 @@ public class PhoneDialogue {
 					+ "<i>"+subspeciesSelected.getDescription(null)+"</i>"
 				+ "</p>");
 					
-			subspeciesSB.append("<h6>"+Util.capitaliseSentence(raceSelected.getName(false))+" Lore</h6>"
+			subspeciesSB.append("<h6>"+Util.capitaliseSentence(raceSelected.getName(false))+" Лор</h6>"
 					+subspeciesSelected.getBasicDescription(null)
 					+ (Main.getProperties().isAdvancedRaceKnowledgeDiscovered(subspeciesSelected)
 						?subspeciesSelected.getAdvancedDescription(null)
-						:"<p style='color:"+PresetColour.TEXT_GREY.toWebHexString()+";'>"
-							+ "Further information can be discovered in books!"
-						+ "</p>"));
+						:"<p style='color:"+PresetColour.TEXT_GREY.toWebHexString()+";'>Дополнительную информацию можно найти в книгах!</p>"));
 			
 			return subspeciesSB.toString();
 		}
@@ -3825,19 +3613,19 @@ public class PhoneDialogue {
 			List<AbstractSubspecies> raceSubspecies = Subspecies.getSubspeciesOfRace(raceSelected);
 			
 			if (index == 0) {
-				return new Response("Back", "Return to the race selection screen.", RACES);
+				return new Response("Назад", "Вернуться к экрану выбора расы.", RACES);
 			
 			} else if (index <= raceSubspecies.size()) {
 				AbstractSubspecies indexSubspecies = raceSubspecies.get(index - 1);
 				if(!subspeciesDiscovered.contains(indexSubspecies)) {
 					return new Response(Util.capitaliseSentence(indexSubspecies.getName(null)),
-							"You haven't discovered this subspecies yet!",
+							"Вы еще не открыли этот подвид!",
 							null);
 				}
 				return new Response(Util.capitaliseSentence(indexSubspecies.getName(null)),
-						"Take a detailed look at what " + indexSubspecies.getNamePlural(null) + " are like."
+						"Взглянуть поближе на то, " + indexSubspecies.getNamePlural(null) + " как они выглядят."
 						+ (AbstractSubspecies.getMainSubspeciesOfRace(raceSelected)==indexSubspecies
-							?"<br/>This is the [style.colourMinorGood(core)] "+raceSelected.getName(false)+" subspecies."
+							?"<br/>Это [style.colourMinorGood(основная)] "+raceSelected.getName(false)+" подгруппа."
 							:""),
 						SUBSPECIES){
 					@Override
@@ -3865,7 +3653,7 @@ public class PhoneDialogue {
 		}
 	};
 
-	public static final DialogueNode CHARACTER_PERK_TREE = new DialogueNode("Perk Tree", "", true) {
+	public static final DialogueNode CHARACTER_PERK_TREE = new DialogueNode("Древо навыков", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			Main.getProperties().setValue(PropertyValue.levelUpHightlight, false);
@@ -3875,22 +3663,13 @@ public class PhoneDialogue {
 			UtilText.nodeContentSB.setLength(0);
 			
 			UtilText.nodeContentSB.append(
-					"<details>"
-							+ "<summary>[style.boldPerk(Perk & Trait Information)]</summary>"
-							+ "[style.colourPerk(Perks)] (circular icons) apply permanent boosts to your attributes.<br/>"
-							+ "[style.colourPerk(Traits)] (square icons) provide unique effects for your character."
-								+ " Unlike perks, <b>traits will have no effect on your character until they're slotted into your 'Active Traits' bar</b>.<br/>"
-							+ "Perks require perk points to unlock. You earn one perk point each time you level up, and earn an extra two perk points every five levels.<br/><br/>"
-							+ "In addition to the perks that can be purchased via perk points, there are also several special, hidden perks that are unlocked via special events."
-					+ "</details>");
+					"<details><summary>[style.boldPerk(Информация о Перках и Чертах)]</summary>[style.colourPerk(Перки)] (круглые иконки) дают постоянные бонусы к вашим характеристикам.<br/>[style.colourPerk(Черты)] (квадратные иконки) обеспечивают уникальные эффекты для вашего персонажа. В отличие от перков, <b>черты не будут действовать на вашего персонажа, пока вы не поместите их в панель «Активные черты»</b>.<br/>Для разблокировки перков требуются очки перков. Вы получаете одно очко перка при каждом повышении уровня, и дополнительные два очка перка каждые пять уровней.<br/><br/>В дополнение к перкам, которые можно купить за очки перков, существуют также несколько специальных скрытых перков, открываемых через особые события.</details>");
 			
 			UtilText.nodeContentSB.append(PerkManager.MANAGER.getPerkTreeDisplay(Main.game.getPlayer(), true));
 			UtilText.nodeContentSB.append("</div>");
 			
 			if(!Main.game.getPlayer().isDoll()) {
-				UtilText.nodeContentSB.append("<div class='container-full-width' style='padding:8px; text-align:center;'>"
-							+ "[style.italicsBad(Please note that this perk tree is a work-in-progress. This is not the final version, and is just a proof of concept!)]"
-						+ "</div>");
+				UtilText.nodeContentSB.append("<div class='container-full-width' style='padding:8px; text-align:center;'>[style.italicsBad(Пожалуйста, учтите, что это древо перков находится в разработке. Это не финальная версия, а лишь проверка концепции!)]</div>");
 			}
 			
 			return UtilText.nodeContentSB.toString();
@@ -3905,9 +3684,9 @@ public class PhoneDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				if(Main.game.getPlayer().isDoll()) {
-					return new Response("Reset", "You cannot reset your perks and traits while you're a doll!", null);
+					return new Response("Сброс", "Вы не можете сбросить свои перки и черты, пока вы кукла!", null);
 				}
-				return new Response("Reset", "Reset all perks and traits, refunding all points spent. (This is a temporary action while the perk tree is still under development.)", CHARACTER_PERK_TREE) {
+				return new Response("Сброс", "Сбросить все перки и черты, вернув все потраченные очки. (Это временная мера, так как древо перков всё еще находится в разработке.)", CHARACTER_PERK_TREE) {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().resetPerksMap(false, false);
@@ -3915,7 +3694,7 @@ public class PhoneDialogue {
 				};
 				
 			} else if (index == 0) {
-				return new Response("Back", "Return to your phone's main menu.", MENU);
+				return new Response("Назад", "Вернуться в главное меню телефона.", MENU);
 			}
 			
 			return null;
@@ -3929,27 +3708,16 @@ public class PhoneDialogue {
 	
 	
 //	private static boolean confirmReset = false;
-	public static final DialogueNode CHARACTER_FETISHES = new DialogueNode("Desires & Fetishes", "", true) {
+	public static final DialogueNode CHARACTER_FETISHES = new DialogueNode("Желания и Фетиши", "", true) {
 
 		@Override
 		public String getContent() {
 			journalSB = new StringBuilder(
-					"<details>"
-						+ "<summary>[style.boldFetish(Fetish Information)]</summary>"
-							+ "You can select your [style.colourLust(desire)] for each fetish [style.colourArcane(for free)],"
-							+ " or choose to take the associated [style.colourFetish(fetish)] for a cost of [style.colourArcane(arcane essences)].<br/><br/>"
-							+ "Choosing a desire will affect bonus lust gains in sex, while taking a fetish will permanently lock your desire to 'love', and also give you special bonuses."
-							+ " Fetishes can only be removed through enchanted potions.<br/><br/>"
-							+ "Your currently selected desire has a "+PresetColour.FETISH.getName()+" border, but your true desire (indicated by the coloured desire icon) may be modified by enchanted clothes or other items.<br/><br/>"
-							+ "You earn experience for each fetish through performing related actions in sex."
-							+ " Experience is earned regardless of whether or not you have the associated fetish."
-							+ " Higher level fetishes will cause both you and your partner to gain more arousal from related sex actions, as well as increase the fetish's bonuses.<br/><br/>"
-							+ "Finally, derived fetishes cannot be directly unlocked, but are instead automatically applied when you meet their requirements."
-					+ "</details>");
+					"<details><summary>[style.boldFetish(Информация о фетишах)]</summary>Вы можете [style.colourArcane(бесплатно)] выбрать свое [style.colourLust(желание)] для каждого фетиша или же решить взять соответствующий [style.colourFetish(фетиш)] за [style.colourArcane(арканные эссенции)].<br/><br/>Выбор желания повлияет на бонусный прирост похоти во время секса, в то время как получение фетиша навсегда закрепит ваше желание как «любовь» и даст особые бонусы. Фетиши можно снять только с помощью зачарованных зелий.<br/><br/>Ваше текущее выбранное желание имеет "+PresetColour.FETISH.getName()+" рамку, но ваше истинное желание (обозначенное цветной иконкой желания) может быть изменено зачатой одеждой или другими предметами.<br/><br/>Вы получаете опыт для каждого фетиша, совершая соответствующие действия во время секса. Опыт начисляется независимо от того, есть ли у вас соответствующий фетиш или нет. Фетиши более высокого уровня заставляют и вас, и вашего партнера получать больше возбуждения от связанных сексуальных действий, а также увеличивают бонусы самого фетиша.<br/><br/>Наконец, производные фетиши нельзя разблокировать напрямую — они применяются автоматически, когда вы соответствуете их требованиям.</details>");
 			
 			// Normal fetishes:
 
-			journalSB.append("<div class='container-full-width' style='text-align:center; font-weight:bold;'><h6>Fetishes</h6></div>");
+			journalSB.append("<div class='container-full-width' style='text-align:center; font-weight:bold;'><h6>Фетиши</h6></div>");
 			ArrayList<AbstractFetish> derivedFetishList = new ArrayList<>();
 			ArrayList<AbstractFetish> pairedFetishList = new ArrayList<>();
 			ArrayList<AbstractFetish> soloFetishList = new ArrayList<>();
@@ -3986,16 +3754,16 @@ public class PhoneDialogue {
 			
 			// Derived fetishes:
 
-			journalSB.append("<div class='container-full-width' style='text-align:center; font-weight:bold; margin-top:16px;'><h6>Derived Fetishes</h6></div>");
+			journalSB.append("<div class='container-full-width' style='text-align:center; font-weight:bold; margin-top:16px;'><h6>Производные фетиши</h6></div>");
 			journalSB.append("<div class='fetish-container'>");
 			
 			for(AbstractFetish fetish : derivedFetishList) {
 				journalSB.append(
 						"<div id='FETISH_" + Fetish.getIdFromFetish(fetish) + "' class='fetish-icon" + (Main.game.getPlayer().hasFetish(fetish)
-						? " owned' style='border:2px solid " + PresetColour.FETISH.getShades()[1] + ";'>"
+						? " есть' style='border:2px solid " + PresetColour.FETISH.getShades()[1] + ";'>"
 						: (fetish.isAvailable(Main.game.getPlayer())
-								? " unlocked' style='border:2px solid " +  PresetColour.TEXT_GREY.toWebHexString() + ";" + "'>"
-								: " locked' style='border:2px solid " + PresetColour.TEXT_GREY.toWebHexString() + ";'>"))
+								? " разблокирован' style='border:2px solid " +  PresetColour.TEXT_GREY.toWebHexString() + ";" + "'>"
+								: " заблокирован' style='border:2px solid " + PresetColour.TEXT_GREY.toWebHexString() + ";'>"))
 						+ "<div class='fetish-icon-content'>"+fetish.getSVGString(Main.game.getPlayer())+"</div>"
 						+ (Main.game.getPlayer().hasFetish(fetish) // Overlay to create disabled effect:
 								? ""
@@ -4016,7 +3784,7 @@ public class PhoneDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 0) {
-				return new Response("Back", "Return to your phone's main menu.", MENU);
+				return new Response("Назад", "Вернуться в главное меню телефона.", MENU);
 			
 			} else {
 				return null;
@@ -4052,13 +3820,11 @@ public class PhoneDialogue {
 						+getFetishDesireEntry(targetedCharacter, fetish, FetishDesire.TWO_NEUTRAL)
 						+getFetishDesireEntry(targetedCharacter, fetish, FetishDesire.THREE_LIKE)
 						+getFetishDesireEntry(targetedCharacter, fetish, FetishDesire.FOUR_LOVE)
-					+ "</div>"
-					+"<div class='container-full-width' style='margin:0 8px; width: calc(22% - 16px);'>"
-						+ "<div id='FETISH_" + Fetish.getIdFromFetish(fetish) + "' class='fetish-icon full" + (targetedCharacter.hasFetish(fetish)
-							? " owned' style='border:2px solid " + PresetColour.FETISH.toWebHexString() + ";'>"
+					+ "</div><div class='container-full-width' style='margin:0 8px; width: calc(22% - 16px);'><div id='FETISH_" + Fetish.getIdFromFetish(fetish) + "' class='fetish-icon full" + (targetedCharacter.hasFetish(fetish)
+							? " есть' style='border:2px solid " + PresetColour.FETISH.toWebHexString() + ";'>"
 							: (fetish.isAvailable(targetedCharacter)
-									? " unlocked' style='border:2px solid " + PresetColour.TEXT_GREY.toWebHexString() + ";" + "'>"
-									: " locked' style='border:2px solid " + PresetColour.TEXT_GREY_DARK.toWebHexString() + ";'>"))
+									? " разблокирован' style='border:2px solid " + PresetColour.TEXT_GREY.toWebHexString() + ";" + "'>"
+									: " заблокирован' style='border:2px solid " + PresetColour.TEXT_GREY_DARK.toWebHexString() + ";'>"))
 										+ "<div class='fetish-icon-content'>"+fetish.getSVGString(targetedCharacter)+"</div>"
 										+ "<div style='width:40%;height:40%;position:absolute;top:0;right:4px;'>"+level.getSVGImageOverlay()+"</div>"
 										+ (targetedCharacter.hasFetish(fetish) // Overlay to create disabled effect:
@@ -4071,25 +3837,15 @@ public class PhoneDialogue {
 					+"<div class='container-full-width' style='margin:0; padding:0; width:100%;'>"
 						+"<div class='container-full-width' style='text-align:center; font-weight:bold; margin:0 8px; width: calc(78% - 16px);'>"
 							+"<div class='container-full-width' style='margin:4px 0; padding:2px; width:100%; background:#222;'>"
-								+ "<div class='container-full-width' style='margin:0; padding:2px; width:" + experiencePercentage + "%; background:"+level.getColour().toWebHexString()+";'></div>"
-							+ "</div>"
-						+ "</div>"
-						+"<div class='container-full-width' style='text-align:center; margin:0 8px; width: calc(22% - 16px);'>"
-							+ "<span style='color:"+level.getColour().toWebHexString()+";'>"+targetedCharacter.getFetishExperience(fetish)+" xp</span>"
-						+ "</div>"
-//						+ "<div class='overlay no-pointer' id='"+Fetish.getIdFromFetish(fetish)+"_EXPERIENCE'></div>"
-					+ "</div>"
-				+ "</div>";
+								+ "<div class='container-full-width' style='margin:0; padding:2px; width:" + experiencePercentage + "%; background:"+level.getColour().toWebHexString()+";'></div></div></div><div class='container-full-width' style='text-align:center; margin:0 8px; width: calc(22% - 16px);'><span style='color:"+level.getColour().toWebHexString()+";'>"+targetedCharacter.getFetishExperience(fetish)+" опыт</span></div></div></div>";
 	}
 	
 	private static String getFetishDesireEntry(GameCharacter targetedCharacter, AbstractFetish fetish, FetishDesire desire) {
 		boolean disabled = desire!=FetishDesire.FOUR_LOVE && targetedCharacter.hasFetish(fetish);
 		
-		return "<div class='square-button"+(disabled?" disabled":"")+"' id='"+Fetish.getIdFromFetish(fetish)+"_"+desire+"'"
-					+ " style='"+(targetedCharacter.getBaseFetishDesire(fetish)==desire
-								?"border:2px solid "+PresetColour.FETISH.getShades()[1]+";"
-								:"")+"width:10%; margin:0 5%; float:left; cursor:pointer;'>"
-				+ "<div class='square-button-content'>"+(targetedCharacter.getFetishDesire(fetish)==desire?desire.getSVGImage():desire.getSVGImageDesaturated())+"</div>"
+		return "<div class='square-button"+(disabled?" disabled":"")+"' id='"+Fetish.getIdFromFetish(fetish)+"_"+desire+"' style='"+(targetedCharacter.getBaseFetishDesire(fetish)==desire
+								?"граница:2px сплошная "+PresetColour.FETISH.getShades()[1]+";"
+								:"")+"width:10%; margin:0 5%; float:left; cursor:pointer;'><div class='square-button-content'>"+(targetedCharacter.getFetishDesire(fetish)==desire?desire.getSVGImage():desire.getSVGImageDesaturated())+"</div>"
 				+ (targetedCharacter.hasFetish(fetish) && targetedCharacter.getFetishDesire(fetish)!=desire
 					?"<div style='position:absolute; left:0; top:0; margin:0; padding:0; width:100%; height:100%; background-color:rgba(0,0,0,0.8); border-radius:5px;'></div>"
 					:targetedCharacter.getFetishDesire(fetish)!=desire
@@ -4111,7 +3867,7 @@ public class PhoneDialogue {
 		}
 	}
 	
-	public static final DialogueNode MAP = new DialogueNode("Maps", "", true) {
+	public static final DialogueNode MAP = new DialogueNode("Карты", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			if(Main.game.getCurrentDialogueNode()!=MAP) {
@@ -4120,7 +3876,7 @@ public class PhoneDialogue {
 		}
 		@Override
 		public String getLabel() {
-			return "Map: "+Util.capitaliseSentence(worldTypeMap.getName());
+			return "Карта: "+Util.capitaliseSentence(worldTypeMap.getName());
 		}
 		@Override
 		public String getContent() {
@@ -4135,9 +3891,9 @@ public class PhoneDialogue {
 			if(index==0) {
 				return "Dominion";
 			} else if(index==1) {
-				return "Submission";
+				return "Покорность";
 			} else if(index==2) {
-				return "Foloi Fields";
+				return "Поля Фолой";
 			}
 			return null;
 		}
@@ -4171,10 +3927,10 @@ public class PhoneDialogue {
 //						String responseTitle = Util.capitaliseSentence(world.getName());
 						
 						if(worldTypeMap==world) {
-							return new Response(responseTitle, "You are already viewing the map of "+world.getName()+"."+(playerPresent?"<br/>[style.colourGood(You are currently in this area!)]":""), null);
+							return new Response(responseTitle, "Вы уже просматриваете карту "+world.getName()+"."+(playerPresent?"<br/>[style.colourGood(Вы сейчас находитесь в этой области!)]":""), null);
 							
 						} else if(Main.game.getPlayer().getWorldsVisited().contains(world) || Main.getProperties().hasValue(PropertyValue.mapReveal)) { 
-							return new Response(responseTitle, "View the map of "+world.getName()+"."+(playerPresent?"<br/>[style.colourGood(You are currently in this area!)]":""), MAP) {
+							return new Response(responseTitle, "Посмотреть карту "+world.getName()+"."+(playerPresent?"<br/>[style.colourGood(Вы сейчас находитесь в этой области!)]":""), MAP) {
 								@Override
 								public Colour getHighlightColour() {
 									if(playerPresent) {
@@ -4193,7 +3949,7 @@ public class PhoneDialogue {
 							};
 							
 						} else {
-							return new Response("???", "You haven't discovered this area yet.", null);
+							return new Response("???", "Вы еще не открыли эту область.", null);
 						}
 					}
 					i++;
@@ -4202,10 +3958,10 @@ public class PhoneDialogue {
 			if (index == 1) {
 				boolean playerPresent = Main.game.getPlayer().getWorldLocation()==WorldType.WORLD_MAP;
 				if(worldTypeMap==WorldType.WORLD_MAP) {
-					return new Response("World map", "You are already viewing the world map."+(playerPresent?"<br/>[style.colourGood(You are currently in this area!)]":""), null);
+					return new Response("Карта мира", "Вы уже смотрите на карту мира."+(playerPresent?"<br/>[style.colourGood(Вы сейчас находитесь в этой области!)]":""), null);
 					
 				} else if(Main.game.getPlayer().isDiscoveredWorldMap()) {
-					return new Response("World map", "Take a look at the world map."+(playerPresent?"<br/>[style.colourGood(You are currently in this area!)]":""), MAP) {
+					return new Response("Карта мира", "Взглянуть на карту мира."+(playerPresent?"<br/>[style.colourGood(Вы сейчас находитесь в этой области!)]":""), MAP) {
 						@Override
 						public Colour getHighlightColour() {
 							if(playerPresent) {
@@ -4220,11 +3976,11 @@ public class PhoneDialogue {
 						}
 					};
 				} else {
-					return new Response("World map", "You haven't discovered the world map yet!", null);
+					return new Response("Карта мира", "Вы еще не открыли карту мира!", null);
 				}
 			
 			} else if (index == 0) {
-				return new Response("Back", "Return to the phone's main menu.", MENU);
+				return new Response("Назад", "Вернуться в главное меню телефона.", MENU);
 			
 			} else {
 				return null;
@@ -4241,19 +3997,17 @@ public class PhoneDialogue {
 
 		@Override
 		public String getContent() {
-			return "<p>"
-						+ "You think about how long you'd like to spend loitering in the area..."
-					+ "</p>";
+			return "<p>Вы раздумываете о том, сколько времени хотели бы провести, слоняясь по этой местности...</p>";
 		}
 
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 0) {
-				return new Response("Back", "Decide against loitering in this area.", MENU);
+				return new Response("Назад", "Решить не задерживаться здесь.", MENU);
 			}
 			
 			if(index == 1) {
-				return new ResponseEffectsOnly("5 minutes", "Loiter in this area for the next five minutes.") {
+				return new ResponseEffectsOnly("5 минут", "Послоняться здесь следующие пять минут.") {
 					@Override
 					public void effects() {
 						loiter(5);
@@ -4261,7 +4015,7 @@ public class PhoneDialogue {
 				};
 				
 			} else if(index == 2) {
-				return new ResponseEffectsOnly("15 minutes", "Loiter in this area for the next fifteen minutes.") {
+				return new ResponseEffectsOnly("15 минут", "Послоняться здесь следующие пятнадцать минут.") {
 					@Override
 					public void effects() {
 						loiter(15);
@@ -4269,7 +4023,7 @@ public class PhoneDialogue {
 				};
 				
 			} else if(index == 3) {
-				return new ResponseEffectsOnly("30 minutes", "Loiter in this area for the next thirty minutes.") {
+				return new ResponseEffectsOnly("30 минут", "Послоняться здесь следующие тридцать минут.") {
 					@Override
 					public void effects() {
 						loiter(30);
@@ -4277,7 +4031,7 @@ public class PhoneDialogue {
 				};
 				
 			} else if(index == 4) {
-				return new ResponseEffectsOnly("1 hour", "Loiter in this area for the next hour.") {
+				return new ResponseEffectsOnly("1 час", "Послоняйся здесь в течение следующего часа.") {
 					@Override
 					public void effects() {
 						loiter(60);
@@ -4285,7 +4039,7 @@ public class PhoneDialogue {
 				};
 				
 			} else if(index == 5) {
-				return new ResponseEffectsOnly("2 hours", "Loiter in this area for the next two hours.") {
+				return new ResponseEffectsOnly("2 часа", "Послоняйся здесь в течение следующих двух часов.") {
 					@Override
 					public void effects() {
 						loiter(60*2);
@@ -4293,7 +4047,7 @@ public class PhoneDialogue {
 				};
 				
 			} else if(index == 6) {
-				return new ResponseEffectsOnly("4 hours", "Loiter in this area for the next four hours.") {
+				return new ResponseEffectsOnly("4 часа", "Послоняйся здесь в течение следующих четырех часов.") {
 					@Override
 					public void effects() {
 						loiter(60*4);
@@ -4301,7 +4055,7 @@ public class PhoneDialogue {
 				};
 				
 			} else if(index == 7) {
-				return new ResponseEffectsOnly("6 hours", "Loiter in this area for the next six hours.") {
+				return new ResponseEffectsOnly("6 часов", "Послоняйся здесь в течение следующих шести часов.") {
 					@Override
 					public void effects() {
 						loiter(60*6);
@@ -4309,7 +4063,7 @@ public class PhoneDialogue {
 				};
 				
 			} else if(index == 8) {
-				return new ResponseEffectsOnly("8 hours", "Loiter in this area for the next eight hours.") {
+				return new ResponseEffectsOnly("8 часов", "Послоняйся здесь в течение следующих восьми часов.") {
 					@Override
 					public void effects() {
 						loiter(60*8);
@@ -4317,7 +4071,7 @@ public class PhoneDialogue {
 				};
 				
 			} else if(index == 9) {
-				return new ResponseEffectsOnly("12 hours", "Loiter in this area for the next twelve hours.") {
+				return new ResponseEffectsOnly("12 часов", "Скитаться в этой области следующие двенадцать часов.") {
 					@Override
 					public void effects() {
 						loiter(60*12);
@@ -4325,7 +4079,7 @@ public class PhoneDialogue {
 				};
 				
 			} else if(index == 10) {
-				return new ResponseEffectsOnly("24 hours", "Loiter in this area for the next twenty-four hours.") {
+				return new ResponseEffectsOnly("24 часа", "Скитаться в этой области следующие двадцать четыре часа.") {
 					@Override
 					public void effects() {
 						loiter(60*24);
@@ -4335,10 +4089,10 @@ public class PhoneDialogue {
 			} else if(index==11) {
 				int timeUntilChange = Main.game.getMinutesUntilNextSunrise() + 5; // Add 5 minutes so that if the days are drawing in, you don't get stuck in a loop of always loitering to sunset/sunrise
 				LocalDateTime[] sunriseSunset = DateAndTime.getTimeOfSolarElevationChange(Main.game.getDateNow(), SolarElevationAngle.SUN_ALTITUDE_SUNRISE_SUNSET, Game.DOMINION_LATITUDE, Game.DOMINION_LONGITUDE);
-				return new ResponseEffectsOnly("Next sunrise",
-						"Loiter in this area for " + (timeUntilChange >= 60 ?timeUntilChange / 60 + " hours " : " ")
-							+ (timeUntilChange % 60 != 0 ? timeUntilChange % 60 + " minutes" : "")
-							+ " until five minutes past sunrise ("+Units.time(sunriseSunset[0].plusMinutes(5))+")."){
+				return new ResponseEffectsOnly("Следующий рассвет",
+						"Скитаться в этой области в течение " + (timeUntilChange >= 60 ?timeUntilChange / 60 + " часов " : " ")
+							+ (timeUntilChange % 60 != 0 ? timeUntilChange % 60 + " минут" : "")
+							+ " до пяти минут после рассвета ("+Units.time(sunriseSunset[0].plusMinutes(5))+")."){
 					@Override
 					public void effects() {
 						loiter(timeUntilChange);
@@ -4348,10 +4102,10 @@ public class PhoneDialogue {
 			} else if(index==12) {
 				int timeUntilChange = Main.game.getMinutesUntilNextSunset() + 5; // Add 5 minutes so that if the days are drawing in, you don't get stuck in a loop of always loitering to sunset/sunrise
 				LocalDateTime[] sunriseSunset = DateAndTime.getTimeOfSolarElevationChange(Main.game.getDateNow(), SolarElevationAngle.SUN_ALTITUDE_SUNRISE_SUNSET, Game.DOMINION_LATITUDE, Game.DOMINION_LONGITUDE);
-				return new ResponseEffectsOnly("Next sunset",
-						"Loiter in this area for " + (timeUntilChange >= 60 ?timeUntilChange / 60 + " hours " : " ")
-							+ (timeUntilChange % 60 != 0 ? timeUntilChange % 60 + " minutes" : "")
-							+ " until five minutes past sunrise ("+Units.time(sunriseSunset[1].plusMinutes(5))+")."){
+				return new ResponseEffectsOnly("Следующий закат",
+						"Скитаться в этой области в течение " + (timeUntilChange >= 60 ?timeUntilChange / 60 + " часов " : " ")
+							+ (timeUntilChange % 60 != 0 ? timeUntilChange % 60 + " минут" : "")
+							+ " до пяти минут после рассвета ("+Units.time(sunriseSunset[1].plusMinutes(5))+")."){
 					@Override
 					public void effects() {
 						loiter(timeUntilChange);
@@ -4376,8 +4130,7 @@ public class PhoneDialogue {
 			if (minutes == 0) {
 				period = "period ";
 			}
-			Main.game.getTextStartStringBuilder().append("<p style='text-align:center;'>" +
-					"<i>You spend the next ").append(period).append("loitering about, doing nothing in particular...</i>").append("</p>");
+			Main.game.getTextStartStringBuilder().append("<p style='text-align:center;'><i>Вы проводите следующие ").append(period).append("бездельничая и не делая ничего особенного...</i>").append("</p>");
 			Main.game.getPlayer().setActive(false);
 			Main.game.endTurn(60*minutes);
 			Main.game.endTurnTimeTakenAddition = Main.game.endTurnTimeTaken;

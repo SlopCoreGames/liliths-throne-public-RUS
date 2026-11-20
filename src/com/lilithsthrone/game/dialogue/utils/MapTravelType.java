@@ -16,9 +16,9 @@ import com.lilithsthrone.world.Cell;
  */
 public enum MapTravelType {
 
-	WALK_SAFE("Walk (safest)",
-			"Use the safest path to your destination.",
-			"Click once on the map to mark your desired end point, then click that end point again to travel there. You can queue up waypoints by holding shift while clicking.",
+	WALK_SAFE("Пешком (самый безопасный)",
+			"Использовать самый безопасный путь до пункта назначения.",
+			"Нажмите один раз на карту, чтобы отметить конечную точку, затем нажмите на неё еще раз, чтобы отправиться в путь. Вы можете ставить несколько точек маршрута, удерживая Shift при клике.",
 			PresetColour.GENERIC_MINOR_GOOD) {
 				@Override
 				public boolean isAvailable(Cell c, GameCharacter character) {
@@ -28,15 +28,15 @@ public enum MapTravelType {
 				@Override
 				public String getUnavailablilityDescription(Cell c, GameCharacter character) {
 					if(character.isCaptive()) {
-						return "You cannot use fast travel while you are a captive!";
+						return "Вы не можете использовать быстрое перемещение, пока вы в плену!";
 					}
 					return "";
 				}
 			},
 	
-	WALK_DANGEROUS("Walk (fastest)",
-			"Use the fastest path to your destination.",
-			"Click once on the map to mark your desired end point, then click that end point again to travel there. You can queue up waypoints by holding shift while clicking.",
+	WALK_DANGEROUS("Пешком (самый быстрый)",
+			"Использовать самый быстрый путь до пункта назначения.",
+			"Нажмите один раз на карту, чтобы отметить конечную точку, затем нажмите на неё еще раз, чтобы отправиться в путь. Вы можете ставить несколько точек маршрута, удерживая Shift при клике.",
 			PresetColour.GENERIC_MINOR_BAD) {
 				@Override
 				public boolean isAvailable(Cell c, GameCharacter character) {
@@ -46,15 +46,15 @@ public enum MapTravelType {
 				@Override
 				public String getUnavailablilityDescription(Cell c, GameCharacter character) {
 					if(character.isCaptive()) {
-						return "You cannot use fast travel while you are a captive!";
+						return "Вы не можете использовать быстрое перемещение, пока вы в плену!";
 					}
 					return "";
 				}
 			},
 	
-	FLYING("Fly",
-			"Fly to your destination.",
-			"Click once on the map to mark your desired end point, then click that end point again to travel there.",
+	FLYING("Лететь",
+			"Долететь до пункта назначения.",
+			"Нажмите один раз на карту, чтобы отметить конечную точку, затем нажмите на неё еще раз, чтобы отправиться в путь.",
 			PresetColour.SPELL_SCHOOL_AIR) {
 				@Override
 				public boolean isAvailable(Cell c, GameCharacter character) {
@@ -64,21 +64,21 @@ public enum MapTravelType {
 				@Override
 				public String getUnavailablilityDescription(Cell c, GameCharacter character) {
 					if(character.isCaptive()) {
-						return "You cannot use fast travel while you are a captive!";
+						return "Вы не можете использовать быстрое перемещение, пока вы в плену!";
 					}
 					if(!character.getWorldLocation().isFlightEnabled()) {
-						return "You cannot fly in this area!";
+						return "В этой области нельзя летать!";
 					}
 					if(!character.isAbleToFly()) {
-						return "You are not able to fly!";
+						return "Вы не можете летать!";
 					}
-					return "Not all of your companions are able to fly!";
+					return "Не все ваши спутники умеют летать!";
 				}
 			},
 	
-	TELEPORT("Teleport",
-			"Teleport to your destination.",
-			"Click once on the map to mark your desired end point, then click that end point again to travel there.",
+	TELEPORT("Телепортация",
+			"Телепортироваться к месту назначения.",
+			"Нажмите один раз на карту, чтобы отметить конечную точку, затем нажмите на неё еще раз, чтобы отправиться в путь.",
 			PresetColour.SPELL_SCHOOL_ARCANE) {
 				@Override
 				public boolean isAvailable(Cell c, GameCharacter character) {
@@ -99,21 +99,21 @@ public enum MapTravelType {
 				@Override
 				public String getUnavailablilityDescription(Cell c, GameCharacter character) {
 					if(character.isCaptive()) {
-						return "You cannot use fast travel while you are a captive!";
+						return "Вы не можете использовать быстрое перемещение, пока вы в плену!";
 					}
 					if(!character.getWorldLocation().getTeleportPermissions().isOutgoing()) {
-						return "You cannot teleport out of the area '"+character.getWorldLocation().getName()+"'!";
+						return "Вы не можете телепортироваться из области '"+character.getWorldLocation().getName()+"'!";
 					}
 					if(c!=null && !c.getType().getTeleportPermissions().isIncoming()) {
-						return "You cannot teleport into the area '"+c.getType().getName()+"'!";
+						return "Вы не можете телепортироваться в область '"+c.getType().getName()+"'!";
 					}
 					if(c!=null && !c.getPlace().getPlaceType().getTeleportPermissions().isIncoming()) {
-						return "You cannot teleport into the tile '"+c.getPlace().getName()+"'!";
+						return "Вы не можете телепортироваться на клетку '"+c.getPlace().getName()+"'!";
 					}
 					if(!character.isAbleToTeleport()) {
 						return character.getUnableToTeleportDescription();
 					}
-					return "You require at least "+Spell.TELEPORT.getModifiedCost(character)+" aura to cast this spell!";
+					return "Вам требуется как минимум  "+Spell.TELEPORT.getModifiedCost(character)+" ауры, чтобы сотворить это заклинание!";
 				}
 			};
 	

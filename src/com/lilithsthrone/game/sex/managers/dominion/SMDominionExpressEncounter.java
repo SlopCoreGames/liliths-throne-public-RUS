@@ -91,9 +91,7 @@ public class SMDominionExpressEncounter extends SexManagerDefault {
 	@Override
 	public String getPublicSexStartingDescription() {
 		if(Main.game.getPlayer().getWorldLocation()==WorldType.DOMINION_EXPRESS) {
-			return "<p style='color:"+PresetColour.BASE_ORANGE.toWebHexString()+"; font-style:italic; text-align:center;'>"
-						+ "A passing centaur slave looks over and smirks as he sees you submitting to [npc.name]..."
-					+ "</p>";
+			return "<p style='color:"+PresetColour.BASE_ORANGE.toWebHexString()+"; font-style:italic; text-align:center;'>Проходящий мимо раб-кентавр оглядывается и ухмыляется, видя, как ты подчиняешься [npc.name]...</p>";
 		}
 		
 		return super.getPublicSexStartingDescription();
@@ -104,15 +102,15 @@ public class SMDominionExpressEncounter extends SexManagerDefault {
 			return "<p style='color:"+PresetColour.BASE_ORANGE.toWebHexString()+"; font-style:italic; text-align:center;'>"
 						+ UtilText.parse(Main.sex.getTargetedPartner(Main.game.getPlayer()),
 							UtilText.returnStringAtRandom(
-								"A couple of centauresses look over at you and giggle as they pass by.",
-								"A centaur slave hastily trots past, too busy to pay you any attention.",
-								"A centauress slave hastily trots past, too busy to pay you any attention.",
-								"A group of centaur slaves take a moment to stop and comment on your performance, before continuing on their way to the stables.",
-								"You hear a centauress letting out an amused laugh from somewhere behind you.",
-								"You hear a centaur letting out an amused grunt from somewhere behind you.",
-								"You glance across to see a bronze-ranked [style.mule] curiously watching to see how you service centaurs.",
-								"A muscular centaur slave pauses to comment on your lewd display, before trotting off on his way to work.",
-								"A busty centauress slave pauses to comment on your lewd display, before trotting off on her way to work."))
+								"Пара кентавров поглядывают на тебя и хихикают, проходя мимо.",
+								"Раб-кентавр торопливо пробегает мимо, слишком занятый, чтобы обращать на тебя внимание.",
+								"Рабыня-кентавриха торопливо пробегает мимо, слишком занятая, чтобы обращать на тебя внимание.",
+								"Группа рабов-кентавров на мгновение останавливается, чтобы прокомментировать твои старания, после чего они продолжают путь к конюшням.",
+								"Где-то позади ты слышишь задорный смех кентаврихи.",
+								"Где-то позади ты слышишь довольное хрюканье кентавра.",
+								"Ты бросаешь взгляд в сторону и видишь, как [style.mule] бронзового ранга с любопытством наблюдает за тем, как ты обслуживаешь кентавров.",
+								"Мускулистый раб-кентавр замирает, чтобы прокомментировать твое развратное зрелище, а затем у trots на работу.",
+								"Пышногрудая рабыня-кентавриза на мгновение задерживается, чтобы прокомментировать твое развратное зрелище, а затем у trots в сторону своей работы."))
 					+"</p>";
 			
 		}

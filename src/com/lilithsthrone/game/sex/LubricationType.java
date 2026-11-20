@@ -22,7 +22,7 @@ public enum LubricationType {
 	
 	GIRLCUM("girlcum", "girlcum", false, PresetColour.GIRLCUM),
 	
-	ANAL_LUBE("anal lubricant", "anal lubricant", false, PresetColour.BASE_BLUE_LIGHT), // This is only present if the anus has been transformed to be 'wetter' than usual
+	ANAL_LUBE("анальная смазка", "анальная смазка", false, PresetColour.BASE_BLUE_LIGHT), // This is only present if the anus has been transformed to be 'wetter' than usual
 
 	SLIME("slime", "slime", false, PresetColour.RACE_SLIME),
 	

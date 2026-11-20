@@ -10,21 +10,20 @@ package com.lilithsthrone.game.sex.positions.slots;
 public class SexSlotBreedingStall {
 
 	public static final SexSlot BREEDING_STALL_FRONT = new SexSlot(
-			"Lying on stomach",
-			"lying on stomach",
-			"[npc.Name] [npc.spreadsHerLegs] and [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(prepare)] to reach [npc.her] climax.",
+			"Лежа на животе",
+			"лежа на животе",
+			"[npc.Name] [npc.spreadsHerLegs] и [npc.verb(let)] наружу [npc.a_moan+] как [npc.she] [npc.verb(prepare)], чтобы достичь [npc.her] кульминации.",
 			false);
 
 	public static final SexSlot BREEDING_STALL_BACK = new SexSlot(
-			"Lying on back",
-			"lying on back",
-			"[npc.Name] [npc.spreadsHerLegs] and [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(prepare)] to reach [npc.her] climax.",
+			"Лежа на спине",
+			"лежа на спине",
+			"[npc.Name] [npc.spreadsHerLegs] и [npc.verb(let)] наружу [npc.a_moan+] как [npc.she] [npc.verb(prepare)], чтобы достичь [npc.her] кульминации.",
 			false);
 	
 	public static final SexSlot BREEDING_STALL_FUCKING = new SexSlot(
-			"Standing",
+			"Стоя",
 			"breeding",
-			"[npc.Name] [npc.verb(reach)] down and [npc.verb(grab)] [npc2.namePos] waist, before stepping forwards and driving [npc.her] [npc.cock] deep into [npc2.namePos] [npc2.pussy+]."
-				+ " Letting out [npc.a_moan+], [npc.she] [npc.verb(prepare)] to reach [npc.her] climax, and pump [npc2.namePos] womb full of [npc.cum+].",
+			"[npc.Name] [npc.verb(reach)] вниз и [npc.verb(grab)] [npc2.namePos] талии, прежде чем сделать шаг вперед и вогнать [npc.her] [npc.cock] глубоко в [npc2.namePos] [npc2.pussy+]. Издавая [npc.a_moan+], [npc.she] [npc.verb(prepare)], чтобы достичь [npc.her] кульминации, и наполняя [npc2.namePos] утробу [npc.cum+].",
 			true);
 }

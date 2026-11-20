@@ -105,19 +105,14 @@ public class EnchantmentDialogue {
 		inventorySB.append("<div class='container-half-width' style='padding-bottom:0;'>");
 		for (TFModifier tfMod : ingredient.getEnchantmentEffect().getPrimaryModifiers(ingredient)) {
 			inventorySB.append("<div class='modifier-icon' style='width:11.5%; background-color:"+tfMod.getRarity().getBackgroundColour().toWebHexString()+";'>"
-					+ "<div class='modifier-icon-content'>"+tfMod.getSVGString()+"</div>"
-					+ "<div class='overlay' id='MOD_PRIMARY_"+tfMod.hashCode()+"'></div>"
+					+ "<div class='modifier-icon-content'>"+tfMod.getSVGString()+"</div><div class='overlay' id='MOD_PRIMARY_"+tfMod.hashCode()+"'></div>"
 					+ "</div>");
 		}
 		for (int i = displaySlots; i > ingredient.getEnchantmentEffect().getPrimaryModifiers(ingredient).size(); i--) {
 			inventorySB.append("<div class='modifier-icon empty' style='width:11.5%;'></div>");
 		}
 		
-		inventorySB.append("<div class='container-full-width'>"
-				+ "<div class='container-half-width' style='width:78%; margin:0 1%; text-align:center; line-height:100vh;'>"
-				+ "<h5 style='margin:0; padding:0;'>Primary Modifier</h5>"
-				+ "</div>"
-				+ "<div class='container-half-width' style='width:18%; margin:0 1%;'>");
+		inventorySB.append("<div class='container-full-width'><div class='container-half-width' style='width:78%; margin:0 1%; text-align:center; line-height:100vh;'><h5 style='margin:0; padding:0;'>Основной модификатор</h5></div><div class='container-half-width' style='width:18%; margin:0 1%;'>");
 		if(primaryMod != null) {
 			inventorySB.append("<div class='modifier-icon' style='width:100%; margin:0;background-color:"+primaryMod.getRarity().getBackgroundColour().toWebHexString()+";'>"
 					+ "<div class='modifier-icon-content'>"+primaryMod.getSVGString()+"</div>"
@@ -138,8 +133,7 @@ public class EnchantmentDialogue {
 		inventorySB.append("<div class='container-half-width' style='padding-bottom:0;'>");
 		for (TFModifier tfMod : ingredient.getEnchantmentEffect().getSecondaryModifiers(ingredient, primaryMod)) {
 			inventorySB.append("<div class='modifier-icon' style='width:11.5%; background-color:"+tfMod.getRarity().getBackgroundColour().toWebHexString()+";'>"
-					+ "<div class='modifier-icon-content'>"+tfMod.getSVGString()+"</div>"
-					+ "<div class='overlay' id='MOD_SECONDARY_"+tfMod.hashCode()+"'></div>"
+					+ "<div class='modifier-icon-content'>"+tfMod.getSVGString()+"</div><div class='overlay' id='MOD_SECONDARY_"+tfMod.hashCode()+"'></div>"
 					+ "</div>");
 		}
 		for (int i = displaySlots; i > ingredient.getEnchantmentEffect().getSecondaryModifiers(ingredient, primaryMod).size(); i--) {
@@ -159,11 +153,7 @@ public class EnchantmentDialogue {
 					+ "<div class='overlay' style='cursor:default;' id='MOD_SECONDARY_ENCHANTING'></div>"
 					+ "</div>");
 		}
-		inventorySB.append("</div>"
-				+ "<div class='container-half-width' style='width:78%; margin:0 1%; text-align:center; line-height:100vh;'>"
-					+ "<h5 style='margin:0; padding:0;'>Secondary Modifier</h5>"
-				+ "</div>"
-				+ "</div>");
+		inventorySB.append("</div><div class='container-half-width' style='width:78%; margin:0 1%; text-align:center; line-height:100vh;'><h5 style='margin:0; padding:0;'>Вторичный модификатор</h5></div></div>");
 		
 		inventorySB.append("</div>");
 
@@ -172,9 +162,8 @@ public class EnchantmentDialogue {
 		inventorySB.append("<div class='container-full-width' style='text-align:center; padding:8px 0; margin-top:0;'>");
 		
 		for(TFPotency potency : TFPotency.getAllPotencies()) {
-			inventorySB.append("<div class='normal-button"+(ingredient.getEnchantmentEffect().getPotencyModifiers(primaryMod, secondaryMod).contains(potency)?"":" disabled")+(EnchantmentDialogue.potency==potency?" selected":"")
-					+"' id='POTENCY_"+potency+"'"
-					+ " style='"+(EnchantmentDialogue.potency==potency?"color:"+potency.getColour().toWebHexString()+";":"")+" margin:0 1%; width:14%;'>"+potency.getName()+"</div>");
+			inventorySB.append("<div class='normal-button"+(ingredient.getEnchantmentEffect().getPotencyModifiers(primaryMod, secondaryMod).contains(potency)?"":" отключено")+(EnchantmentDialogue.potency==potency?" выбранный":"")
+					+"' id='МОЩНОСТЬ_"+potency+"' style='"+(EnchantmentDialogue.potency==potency?"цвет:"+potency.getColour().toWebHexString()+";":"")+" margin:0 1%; width:14%;'>"+potency.getName()+"</div>");
 		}
 		
 		inventorySB.append("</div>");
@@ -183,34 +172,14 @@ public class EnchantmentDialogue {
 		int ingredientLimit = ingredient.getEnchantmentEffect().getLimits(primaryMod, secondaryMod);
 		if(ingredientLimit!=0) {
 			inventorySB.append(
-					"<div class='container-full-width' style='text-align:center; padding:8px 0; margin-top:0;'>"
-						+ "<div style='float:left; width:14.6%; margin:0 1%; padding:0;'>"
-							+ "<div class='normal-button"+(limit == 0?" disabled":"")+"' id='LIMIT_MINIMUM' style='width:100%;'>Limit Min.</div>"
-						+ "</div>"
-						+ "<div style='float:left; width:14.6%; margin:0 1%; padding:0;'>"
-							+ "<div class='normal-button"+(limit == 0?" disabled":"")+"' id='LIMIT_DECREASE_LARGE' style='width:100%;'>Limit--</div>"
-						+ "</div>"
-						+ "<div style='float:left; width:14.6%; margin:0 1%; padding:0;'>"
-							+ "<div class='normal-button"+(limit == 0?" disabled":"")+"' id='LIMIT_DECREASE' style='width:100%;'>Limit-</div>"
-						+ "</div>"
-						+ "<div style='float:left; width:14.6%; margin:0 1%; padding:0;'>"
-							+ "<div class='normal-button"+(limit == ingredientLimit?" disabled":"")+"' id='LIMIT_INCREASE' style='width:100%;'>Limit+</div>"
-						+ "</div>"
-						+ "<div style='float:left; width:14.6%; margin:0 1%; padding:0;'>"
-							+ "<div class='normal-button"+(limit == ingredientLimit?" disabled":"")+"' id='LIMIT_INCREASE_LARGE' style='width:100%;'>Limit++</div>"
-						+ "</div>"
-						+ "<div style='float:left; width:14.6%; margin:0 1%; padding:0;'>"
-							+ "<div class='normal-button"+(limit == ingredientLimit?" disabled":"")+"' id='LIMIT_MAXIMUM' style='width:100%;'>Limit Max.</div>"
-						+ "</div>"
-					+ "</div>");
+					"<div class='container-full-width' style='text-align:center; padding:8px 0; margin-top:0;'><div style='float:left; width:14.6%; margin:0 1%; padding:0;'><div class='normal-button"+(limit == 0?" отключено":"")+"' id='LIMIT_MINIMUM' style='width:100%;'>Лимит мин.</div></div><div style='float:left; width:14.6%; margin:0 1%; padding:0;'><div class='normal-button"+(limit == 0?" отключено":"")+"' id='LIMIT_DECREASE_LARGE' style='width:100%;'>Лимит--</div></div><div style='float:left; width:14.6%; margin:0 1%; padding:0;'><div class='normal-button"+(limit == 0?" отключено":"")+"' id='LIMIT_DECREASE' style='width:100%;'>Лимит-</div></div><div style='float:left; width:14.6%; margin:0 1%; padding:0;'><div class='normal-button"+(limit == ingredientLimit?" отключено":"")+"' id='LIMIT_INCREASE' style='width:100%;'>Лимит+</div></div><div style='float:left; width:14.6%; margin:0 1%; padding:0;'><div class='normal-button"+(limit == ingredientLimit?" отключено":"")+"' id='LIMIT_INCREASE_LARGE' style='width:100%;'>Лимит++</div></div><div style='float:left; width:14.6%; margin:0 1%; padding:0;'><div class='normal-button"+(limit == ingredientLimit?" отключено":"")+"' id='LIMIT_MAXIMUM' style='width:100%;'>Макс. лимит:</div></div></div>");
 		}
 		
 		// Effect:
 		inventorySB.append("<div class='container-full-width' style='text-align:center; padding:8px 0; margin-top:0;'>");
 
 			inventorySB.append("<div class='container-half-width' style='width:28%; margin:0 1%;'>"
-									+ "<b style='color:"+PresetColour.GENERIC_ARCANE.toWebHexString()+";'>Effect to be added:</b>"
-								+ "</div>");
+									+ "<b style='color:"+PresetColour.GENERIC_ARCANE.toWebHexString()+";'>Добавляемый эффект:</b></div>");
 		
 			inventorySB.append("<div class='container-half-width' style='width:48%; margin:0 1%;'>");
 				if(effect.getEffectsDescription(Main.game.getPlayer(), Main.game.getPlayer())!=null) {
@@ -265,8 +234,7 @@ public class EnchantmentDialogue {
 						|| ingredient.getEnchantmentEffect().getEffectsDescription(primaryMod, secondaryMod, potency, limit, Main.game.getPlayer(), Main.game.getPlayer()).isEmpty()
 						|| getEnchantmentEffectBlockedReason(effect)!=null) {
 					inventorySB.append(
-							"<div class='normal-button disabled' style='width:100%; margin:auto 0;'>"
-							+ "<b>Add</b> | "
+							"<div class='normal-button disabled' style='width:100%; margin:auto 0;'><b>Добавить</b> | "
 							+ (ingredient instanceof Tattoo
 									?UtilText.formatAsMoneyUncoloured(EnchantingUtils.getModifierEffectCost(true, ingredient, effect)*EnchantingUtils.FLAME_COST_MODIFER, "b")
 									:UtilText.formatAsEssencesUncoloured(EnchantingUtils.getModifierEffectCost(true, ingredient, effect), "b", false))
@@ -276,7 +244,7 @@ public class EnchantmentDialogue {
 				} else {
 					inventorySB.append(
 							"<div class='normal-button' style='width:100%; margin:auto 0;'>"
-							+ "<b style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>Add</b> | "
+							+ "<b style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>Добавить</b> | "
 									+ (ingredient instanceof Tattoo
 											?UtilText.formatAsMoney(EnchantingUtils.getModifierEffectCost(true, ingredient, effect)*EnchantingUtils.FLAME_COST_MODIFER, "b")
 											:UtilText.formatAsEssences(EnchantingUtils.getModifierEffectCost(true, ingredient, effect), "b", false))
@@ -321,7 +289,7 @@ public class EnchantmentDialogue {
 					inventorySB.append("&#10003;");
 				inventorySB.append("</div>");
 			
-				inventorySB.append("<b>Effects (</b>"
+				inventorySB.append("<b>Эффекты (</b>"
 									+ (effects.size()>=ingredient.getEnchantmentLimit()?"<b style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>":"<b>")+""
 											+ effects.size()+"/"+ingredient.getEnchantmentLimit()+"</b><b>)</b> | Cost: "
 												+ (ingredient instanceof Tattoo
@@ -329,7 +297,7 @@ public class EnchantmentDialogue {
 														:UtilText.formatAsEssences(EnchantingUtils.getCost(ingredient, effects), "b", false)));
 			
 				if(effects.isEmpty()) {
-					inventorySB.append("<br/><span style='color:"+PresetColour.TEXT_GREY.toWebHexString()+";'>No effects added</span>");
+					inventorySB.append("<br/><span style='color:"+PresetColour.TEXT_GREY.toWebHexString()+";'>Эффекты не добавлены</span>");
 				} else {
 					int cost = 0;
 					
@@ -409,7 +377,7 @@ public class EnchantmentDialogue {
 			
 			if(preview!=null) {
 				inventorySB.append("<div class='container-half-width' style='width:18%; margin:0 1%; text-align:center;'>");
-					inventorySB.append("<b>Output</b>");
+					inventorySB.append("<b>Вывод</b>");
 					inventorySB.append("<div class='enchanting-ingredient' style='background-color:"+preview.getRarity().getBackgroundColour().toWebHexString()+";'>");
 						inventorySB.append("<div class='enchanting-ingredient-content'>"+preview.getSVGString()+"</div>");
 						inventorySB.append("<div class='overlay' id='OUTPUT_ENCHANTING' style='cursor:default;'></div>");
@@ -442,7 +410,7 @@ public class EnchantmentDialogue {
 	/**
 	 * Use getEnchantmentMenu() to get this DialogueNodeOld when initially opening the Enchantment menu, as it resets all variables for you.
 	 */
-	public static final DialogueNode ENCHANTMENT_MENU = new DialogueNode("Enchantments", "", true) {
+	public static final DialogueNode ENCHANTMENT_MENU = new DialogueNode("Зачарования", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			InventoryDialogue.setNPCInventoryInteraction(InventoryInteraction.FULL_MANAGEMENT);
@@ -452,7 +420,7 @@ public class EnchantmentDialogue {
 		}
 		@Override
 		public String getLabel() {
-			return "Enchanting";
+			return "Зачарование";
 		}
 		@Override
 		public String getHeaderContent() {
@@ -465,7 +433,7 @@ public class EnchantmentDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 0) {
-				return new Response("Back", "Stop enchanting.", InventoryDialogue.ITEM_INVENTORY) {
+				return new Response("Назад", "Прекратить зачарование.", InventoryDialogue.ITEM_INVENTORY) {
 					@Override
 					public DialogueNode getNextDialogue() {
 						if(ingredient instanceof AbstractItem) {
@@ -506,7 +474,7 @@ public class EnchantmentDialogue {
 							}
 							
 						} else {
-							throw new IllegalStateException("If it's not an item, not clothing, and not a weapon, then what?");
+							throw new IllegalStateException("Если это не предмет, не одежда и не оружие, то что же это?");
 						}
 					}
 					@Override
@@ -533,23 +501,23 @@ public class EnchantmentDialogue {
 				if (index == 1) {
 					if((effects.equals(ingredient.getEffects())
 							|| (effects.isEmpty() && ingredient instanceof AbstractItem))) {
-						return new Response("Craft", "You need to add at least one effect before you can craft something!", null);
+						return new Response("Создать", "Чтобы что-то создать, нужно добавить хотя бы один эффект!", null);
 						
 					} else if(!canAffordCost(ingredient, effects, 1)) {
 						return new Response(
 								(ingredient instanceof Tattoo
-										?"Enchant ("+UtilText.formatAsMoneyUncoloured(price, "span")+")"
-										:"Craft ("+UtilText.formatAsEssencesUncoloured(essenceCost, "span", false)+")"),
-								"You can't afford to craft this right now!", null);
+										?"Зачаровать ("+UtilText.formatAsMoneyUncoloured(price, "охват")+")"
+										:"Создать ("+UtilText.formatAsEssencesUncoloured(essenceCost, "охват", false)+")"),
+								"Вам пока не хватает средств, чтобы создать это!", null);
 						
 					} else  {
 						return new ResponseEffectsOnly(
 								(ingredient instanceof Tattoo
-									?"Enchant ("+UtilText.formatAsMoney(price, "span")+")"
-									:"Craft ("+UtilText.formatAsEssences(essenceCost, "span", false)+")"),
+									?"Зачаровать ("+UtilText.formatAsMoney(price, "охват")+")"
+									:"Создать ("+UtilText.formatAsEssences(essenceCost, "охват", false)+")"),
 								((ingredient instanceof Tattoo)
-									?"Enchant this tattoo with the specified effects. This will cost "+UtilText.formatAsMoney(price, "span")+"."
-									:"Craft '"+EnchantingUtils.getPotionName(ingredient, effects)+"'. This will cost [style.boldArcane("+essenceCost+")] arcane essences.")){
+									?"Зачаровать эту татуировку указанными эффектами. Это будет стоить  "+UtilText.formatAsMoney(price, "охват")+"."
+									:"Создать '"+EnchantingUtils.getPotionName(ingredient, effects)+"'. Это будет стоить [style.boldArcane("+essenceCost+")] арканных эссенций.")){
 							@Override
 							public void effects() {
 								applyEnchantingEffect(1);
@@ -560,24 +528,24 @@ public class EnchantmentDialogue {
 				} else if (index == 2 && !(ingredient instanceof Tattoo)) {
 					if((effects.equals(ingredient.getEffects())
 							|| (effects.isEmpty() && ingredient instanceof AbstractItem))) {
-						return new Response("Craft x5", "You need to add at least one effect before you can craft something!", null);
+						return new Response("Создать x5", "Чтобы что-то создать, нужно добавить хотя бы один эффект!", null);
 						
 					} else if(ingredientCount<5) {
 						return new Response(
-								"Craft x5 ("+UtilText.formatAsEssencesUncoloured(essenceCost*5, "span", false)+")",
-								"You don't have five "+ingredient.getNamePlural()+", so you can't craft five of these right now...",
+								"Создать x5 ("+UtilText.formatAsEssencesUncoloured(essenceCost*5, "охват", false)+")",
+								"У вас нет пяти "+ingredient.getNamePlural()+", так что сейчас вы не можете создать сразу пять...",
 								null);
 						
 					} else if(!canAffordCost(ingredient, effects, 5)) {
 						return new Response(
-								"Craft x5 ("+UtilText.formatAsEssencesUncoloured(essenceCost*5, "span", false)+")",
-								"You can't afford to craft five of these right now!",
+								"Создать x5 ("+UtilText.formatAsEssencesUncoloured(essenceCost*5, "охват", false)+")",
+								"Вам не хватает ресурсов, чтобы создать сразу пять штук!",
 								null);
 						
 					} else {
 						return new ResponseEffectsOnly(
-								"Craft x5 ("+UtilText.formatAsEssences(essenceCost*5, "span", false)+")",
-								"Craft five '"+EnchantingUtils.getPotionName(ingredient, effects)+"'. This will cost [style.boldArcane("+essenceCost*5+")] arcane essences."){
+								"Создать x5 ("+UtilText.formatAsEssences(essenceCost*5, "охват", false)+")",
+								"Создать пять '"+EnchantingUtils.getPotionName(ingredient, effects)+"'. Это будет стоить [style.boldArcane("+essenceCost*5+")] арканных эссенций."){
 							@Override
 							public void effects() {
 								applyEnchantingEffect(5);
@@ -588,18 +556,18 @@ public class EnchantmentDialogue {
 				} else if (index == 3 && !(ingredient instanceof Tattoo)) {
 					if((effects.equals(ingredient.getEffects())
 							|| (effects.isEmpty() && ingredient instanceof AbstractItem))) {
-						return new Response("Craft all (x"+ingredientCount+")", "You need to add at least one effect before you can craft something!", null);
+						return new Response("Создать всё (x"+ingredientCount+")", "Чтобы что-то создать, нужно добавить хотя бы один эффект!", null);
 						
 					} else if(!canAffordCost(ingredient, effects, ingredientCount)) {
 						return new Response(
-								"Craft all (x"+ingredientCount+") ("+UtilText.formatAsEssencesUncoloured(essenceCost*ingredientCount, "span", false)+")",
-								"You can't afford to craft five of these right now!",
+								"Создать всё (x"+ingredientCount+") ("+UtilText.formatAsEssencesUncoloured(essenceCost*ingredientCount, "охват", false)+")",
+								"Вам не хватает ресурсов, чтобы создать сразу пять штук!",
 								null);
 						
 					} else {
 						return new ResponseEffectsOnly(
-								"Craft all (x"+ingredientCount+") ("+UtilText.formatAsEssences(essenceCost*ingredientCount, "span", false)+")",
-								"Craft "+Util.intToString(ingredientCount)+" '"+EnchantingUtils.getPotionName(ingredient, effects)+"'. This will cost [style.boldArcane("+essenceCost*ingredientCount+")] arcane essences."){
+								"Создать всё (x"+ingredientCount+") ("+UtilText.formatAsEssences(essenceCost*ingredientCount, "охват", false)+")",
+								"Создать "+Util.intToString(ingredientCount)+" '"+EnchantingUtils.getPotionName(ingredient, effects)+"'. Это будет стоить [style.boldArcane("+essenceCost*ingredientCount+")] арканных эссенций."){
 							@Override
 							public void effects() {
 								applyEnchantingEffect(ingredientCount);
@@ -608,7 +576,7 @@ public class EnchantmentDialogue {
 					}
 	
 				} else if (index == 6) {
-					return new Response("Save/Load", "Save/Load enchantment recipes.", ENCHANTMENT_SAVE_LOAD) {
+					return new Response("Сохранить/Загрузить", "Сохранение/загрузка рецептов зачарования.", ENCHANTMENT_SAVE_LOAD) {
 						@Override
 						public void effects() {
 							Main.mainController.getWebEngine().executeScript("document.getElementById('hiddenPField').innerHTML=document.getElementById('output_name').value;");
@@ -691,7 +659,7 @@ public class EnchantmentDialogue {
 			Main.game.getPlayer().removeItem((AbstractItem) ingredient);
 			AbstractItem craftedItem = EnchantingUtils.craftItem(ingredient, effects);
 			Main.game.getPlayer().addItem(craftedItem, false);
-			Main.game.addEvent(new EventLogEntry("[style.colourExcellent(Item Enchanted)]", Util.capitaliseSentence(craftedItem.getName(false, true))), false);
+			Main.game.addEvent(new EventLogEntry("[style.colourExcellent(Зачарованная вещь)]", Util.capitaliseSentence(craftedItem.getName(false, true))), false);
 			if(applyCost) {
 				Main.game.getPlayer().incrementEssenceCount(-EnchantingUtils.getCost(ingredient, effects), false);
 			}
@@ -704,7 +672,7 @@ public class EnchantmentDialogue {
 			Main.game.getPlayer().removeClothing((AbstractClothing) ingredient);
 			AbstractClothing craftedClothing = EnchantingUtils.craftClothing(ingredient, effects);
 			Main.game.getPlayer().addClothing(craftedClothing, false);
-			Main.game.addEvent(new EventLogEntry("[style.colourExcellent(Clothing Enchanted)]", Util.capitaliseSentence(craftedClothing.getName(false, true))), false);
+			Main.game.addEvent(new EventLogEntry("[style.colourExcellent(Зачатая одежда)]", Util.capitaliseSentence(craftedClothing.getName(false, true))), false);
 			if(applyCost) {
 				Main.game.getPlayer().incrementEssenceCount(-EnchantingUtils.getCost(ingredient, effects), false);
 			}
@@ -717,7 +685,7 @@ public class EnchantmentDialogue {
 			Main.game.getPlayer().removeWeapon((AbstractWeapon) ingredient);
 			AbstractWeapon craftedWeapon = EnchantingUtils.craftWeapon(ingredient, effects);
 			Main.game.getPlayer().addWeapon(craftedWeapon, false);
-			Main.game.addEvent(new EventLogEntry("[style.colourExcellent(Weapon Enchanted)]", Util.capitaliseSentence(craftedWeapon.getName(false, true))), false);
+			Main.game.addEvent(new EventLogEntry("[style.colourExcellent(Зачарованное оружие)]", Util.capitaliseSentence(craftedWeapon.getName(false, true))), false);
 			if(applyCost) {
 				Main.game.getPlayer().incrementEssenceCount(-EnchantingUtils.getCost(ingredient, effects), false);
 			}
@@ -739,7 +707,7 @@ public class EnchantmentDialogue {
 				System.err.println("craftAndApplyFullInventoryEffects() error: Tattoo is not equipped?");
 				tattoo = EnchantingUtils.craftTattoo(ingredient, effects);
 			}
-			Main.game.addEvent(new EventLogEntry("[style.colourExcellent(Tattoo Enchanted)]", Util.capitaliseSentence(((Tattoo)ingredient).getName())), false);
+			Main.game.addEvent(new EventLogEntry("[style.colourExcellent(Зачатая татуировка)]", Util.capitaliseSentence(((Tattoo)ingredient).getName())), false);
 			if(finalCraftInStack) {
 				finaliseCrafting(ingredient, effects);
 			}
@@ -839,7 +807,7 @@ public class EnchantmentDialogue {
 		}
 	}
 	
-	public static final DialogueNode ENCHANTMENT_SAVE_LOAD = new DialogueNode("Save enchantment files", "", true) {
+	public static final DialogueNode ENCHANTMENT_SAVE_LOAD = new DialogueNode("Сохранить файлы зачарований", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			initSaveLoadMenu();
@@ -853,20 +821,7 @@ public class EnchantmentDialogue {
 			StringBuilder saveLoadSB = new StringBuilder();
 			
 			saveLoadSB.append(
-					"<div class='container-full-width' style='padding:0; margin:0 0 8px 0;'>"
-							+ "Only standard characters (letters and numbers) will work for save file names."
-							+ "<br/>Hover over each item's icon to see the effects to be saved/loaded."
-							+ "<br/>If a name is [style.colourBad(red)], then you don't have a suitable item in your inventory, and cannot load that effect."
-							+ "<br/>You can only save/overwrite saves if your enchantment has at least one effect added."
-					+ "</div>"
-					+ "<div class='container-full-width' style='padding:0; margin:0;'>"
-						+ "<div class='container-full-width' style='width:calc(75% - 16px); text-align:center; background:transparent;'>"
-							+ "Name"
-						+ "</div>"
-						+ "<div class='container-full-width' style='width:calc(25% - 16px); text-align:center; background:transparent;'>"
-							+ "Save | Load | Delete"
-						+ "</div>"
-					+ "</div>");
+					"<div class='container-full-width' style='padding:0; margin:0 0 8px 0;'>Для имен файлов сохранения подходят только стандартные символы (буквы и цифры).<br/>Наведите на иконку каждого предмета, чтобы увидеть эффекты, которые будут сохранены/загружены.<br/>Если имя выделено [style.colourBad(красным)], значит, в вашем инвентаре нет подходящего предмета и этот эффект нельзя загрузить.<br/>Вы можете сохранять или перезаписывать сохранения только в том случае, если в ваше зачарование добавлен хотя бы один эффект.</div><div class='container-full-width' style='padding:0; margin:0;'><div class='container-full-width' style='width:calc(75% - 16px); text-align:center; background:transparent;'>Название</div><div class='container-full-width' style='width:calc(25% - 16px); text-align:center; background:transparent;'>Сохранить | Загрузить | Удалить</div></div>");
 
 			int i=0;
 			
@@ -886,16 +841,14 @@ public class EnchantmentDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Confirmations: ",
-						"Toggle confirmations being shown when you click to load, overwrite, or delete a saved enchantment."
-							+ " When turned on, it will take two clicks to apply any button press."
-							+ " When turned off, it will only take one click.",
+				return new Response("Подтверждения: ",
+						"Включить/выключить подтверждение действий при нажатии кнопок загрузки, перезаписи или удаления зачарования. Если включено, для выполнения любого действия потребуется два клика. Если выключено — только один.",
 						ENCHANTMENT_SAVE_LOAD) {
 					@Override
 					public String getTitle() {
-						return "Confirmations: "+(Main.getProperties().hasValue(PropertyValue.overwriteWarning)
-								?"<span style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>ON</span>"
-								:"<span style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>OFF</span>");
+						return "Подтверждения: "+(Main.getProperties().hasValue(PropertyValue.overwriteWarning)
+								?"<span style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>ВКЛ</span>"
+								:"<span style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>ВЫКЛ</span>");
 					}
 					
 					@Override
@@ -909,7 +862,7 @@ public class EnchantmentDialogue {
 				};
 
 			} else if (index == 0) {
-				return new Response("Back", "Back to the enchantment menu.", ENCHANTMENT_MENU);
+				return new Response("Назад", "Назад в меню зачарования.", ENCHANTMENT_MENU);
 
 			} else {
 				return null;
@@ -945,26 +898,14 @@ public class EnchantmentDialogue {
 			
 			boolean suitableItemAvailable = loadedEnchantment.isSuitableItemAvailable();
 			
-			return "<div class='container-full-width' style='padding:0; margin:0 0 4px 0;"+(altColour?"background:#222;":"")+" position:relative;'>"
-						
-						+ "<div class='container-full-width' style='width:calc(75% - 16px); background:transparent;'>"
-						
-							+ "<div class='container-full-width' style='width:10%; margin:0; padding:0; background:transparent; position:relative; float:left;'>"
-								+"<div class='inventoryImage' style='width:100%;'>"
-									+ "<div class='inventoryImage-content'>"
+			return "<div class='container-full-width' style='padding:0; margin:0 0 4px 0;"+(altColour?"background:#222;":"")+" position:relative;'><div class='container-full-width' style='width:calc(75% - 16px); background:transparent;'><div class='container-full-width' style='width:10%; margin:0; padding:0; background:transparent; position:relative; float:left;'><div class='inventoryImage' style='width:100%;'><div class='inventoryImage-content'>"
 										+ loadedEnchantment.getSVGString()
-									+ "</div>"
-									+ "<div class='overlay no-pointer' id='LOADED_ENCHANTMENT_" + baseName + "'></div>"
+									+ "</div><div class='overlay no-pointer' id='LOADED_ENCHANTMENT_" + baseName + "'></div>"
 								+ "</div>"
 							+ "</div>"
 						
 							+ "<div style='width:calc(90% - 8px); padding:0; margin:0 0 0 8px; position:relative; float:left;'>"
-								+ "<h6 style='margin:0; padding:2px;'>"+(!suitableItemAvailable?"[style.boldBad("+loadedEnchantment.getName()+")]":loadedEnchantment.getName())+"</h6>"
-								+ "<p style='margin:0; padding:2px;'>[style.colourDisabled(data/enchantments/)]"+baseName+"[style.colourDisabled(.xml)]</p>"
-							+"</div>"
-							
-						+ "</div>"
-						+ "<div class='container-full-width' style='width:calc(25% - 16px);text-align:center; background:transparent;'>"
+								+ "<h6 style='margin:0; padding:2px;'>"+(!suitableItemAvailable?"[style.boldBad("+loadedEnchantment.getName()+")]":loadedEnchantment.getName())+"</h6><p style='margin:0; padding:2px;'>[style.colourDisabled(data/enchantments/)]"+baseName+"[style.colourDisabled(.xml)]</p></div></div><div class='container-full-width' style='width:calc(25% - 16px);text-align:center; background:transparent;'>"
 							+ (Main.game.isStarted() && !Main.game.isInCombat() && !Main.game.isInSex() && !EnchantmentDialogue.getEffects().isEmpty()
 									?(fileName.equals(overwriteConfirmationName)
 										?"<div class='square-button saveIcon' id='OVERWRITE_" + baseName + "'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getDiskSaveConfirm()+"</div></div>"
@@ -986,14 +927,7 @@ public class EnchantmentDialogue {
 			
 		} else {
 			if(EnchantmentDialogue.getEffects().isEmpty()) {
-				return "<div class='container-full-width' style='padding:0; margin:0 0 4px 0;"+(altColour?"background:#222;":"")+"'>"
-						
-							+ "<div class='container-full-width' style='width:calc(75% - 16px); background:transparent; text-align:center;'>"
-								+"[style.colourDisabled(Cannot save an enchantment that has no effects added!)]"
-							+ "</div>"
-								
-							+ "<div class='container-full-width' style='width:calc(25% - 16px); text-align:center; background:transparent;'>"
-								+ "<div class='square-button saveIcon disabled' style='float:left;'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getDiskSaveDisabled()+"</div></div>"
+				return "<div class='container-full-width' style='padding:0; margin:0 0 4px 0;"+(altColour?"background:#222;":"")+"'><div class='container-full-width' style='width:calc(75% - 16px); background:transparent; text-align:center;'>[style.colourDisabled(Нельзя сохранить зачарование, в котором нет добавленных эффектов!)]</div><div class='container-full-width' style='width:calc(25% - 16px); text-align:center; background:transparent;'><div class='square-button saveIcon disabled' style='float:left;'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getDiskSaveDisabled()+"</div></div>"
 							+ "</div>"
 						+ "</div>";
 				
@@ -1058,7 +992,7 @@ public class EnchantmentDialogue {
 				for (File child : directoryListing) {
 					if (child.getName().equals(name+".xml")){
 						if(!allowOverwrite) {
-							Main.game.flashMessage(PresetColour.GENERIC_BAD, "Name already exists!");
+							Main.game.flashMessage(PresetColour.GENERIC_BAD, "Такое имя уже существует!");
 							return;
 						}
 					}
@@ -1131,7 +1065,7 @@ public class EnchantmentDialogue {
 		if(dialogueNode!=null) {
 			Main.game.setContent(new Response("", "", dialogueNode));
 		}
-		Main.game.flashMessage(PresetColour.GENERIC_GOOD, "Enchantment saved!");
+		Main.game.flashMessage(PresetColour.GENERIC_GOOD, "Зачарование сохранено!");
 	}
 
 	public static LoadedEnchantment loadEnchant(String name) {
@@ -1202,7 +1136,7 @@ public class EnchantmentDialogue {
 			}
 			
 		} else {
-			Main.game.flashMessage(PresetColour.GENERIC_BAD, "File not found...");
+			Main.game.flashMessage(PresetColour.GENERIC_BAD, "Файл не найден...");
 		}
 	}
 
@@ -1251,7 +1185,7 @@ public class EnchantmentDialogue {
 			if(effect.getSecondaryModifier()==TFModifier.CLOTHING_VIBRATION) {
 				for(ItemEffect ie : effects) {
 					if(ie.getSecondaryModifier()==TFModifier.CLOTHING_VIBRATION) {
-						return "Only one 'vibration' effect can be added to clothing!";
+						return "К одежде можно добавить только один эффект «вибрации»!";
 					}
 				}
 			}

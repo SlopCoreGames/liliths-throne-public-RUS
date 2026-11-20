@@ -766,7 +766,7 @@ public class Game implements XMLSaving {
 				for (File child : directoryListing) {
 					if (child.getName().equals(exportFileName+".xml")){
 						if(!allowOverwrite) {
-							Main.game.flashMessage(PresetColour.GENERIC_BAD, "Name already exists!");
+							Main.game.flashMessage(PresetColour.GENERIC_BAD, "Такое имя уже существует!");
 							return;
 						} else {
 							overwrite = true;
@@ -831,7 +831,7 @@ public class Game implements XMLSaving {
 				Main.game.getOccupancyUtil().saveAsXML(game, doc);
 			}catch(Exception ex) {
 				System.err.println("SlaveryUtil saving failed!");
-				Main.game.addEvent(new EventLogEntry("<style='color:"+PresetColour.GENERIC_TERRIBLE.toWebHexString()+";'>Partial Save Fail<b>", "SlaveryUtil failure"), false);
+				Main.game.addEvent(new EventLogEntry("<style='color:"+PresetColour.GENERIC_TERRIBLE.toWebHexString()+";'>Частичная ошибка сохранения<b>", "ошибка SlaveryUtil"), false);
 			}
 
 			Element dateNode = doc.createElement("date");
@@ -843,7 +843,7 @@ public class Game implements XMLSaving {
 			XMLUtil.addAttribute(doc, dateNode, "minute", String.valueOf(Main.game.startingDate.getMinute()));
 		} catch(Exception ex) {
 			System.err.println("coreInfo saving failed!");
-			Main.game.addEvent(new EventLogEntry("<style='color:"+PresetColour.GENERIC_TERRIBLE.toWebHexString()+";'>Partial Save Fail<b>", "coreInfo failure"), false);
+			Main.game.addEvent(new EventLogEntry("<style='color:"+PresetColour.GENERIC_TERRIBLE.toWebHexString()+";'>Частичная ошибка сохранения<b>", "ошибка coreInfo"), false);
 		}
 
 		Main.game.dialogueFlags.saveAsXML(game, doc);
@@ -856,7 +856,7 @@ public class Game implements XMLSaving {
 			}
 		} catch(Exception ex) {
 			System.err.println("eventLog saving failed!");
-			Main.game.addEvent(new EventLogEntry("<style='color:"+PresetColour.GENERIC_TERRIBLE.toWebHexString()+";'>Partial Save Fail<b>", "eventLog failure"), false);
+			Main.game.addEvent(new EventLogEntry("<style='color:"+PresetColour.GENERIC_TERRIBLE.toWebHexString()+";'>Частичная ошибка сохранения<b>", "ошибка eventLog"), false);
 		}
 
 		try {
@@ -872,7 +872,7 @@ public class Game implements XMLSaving {
 			}
 		} catch(Exception ex) {
 			System.err.println("slaveryEventLog saving failed!");
-			Main.game.addEvent(new EventLogEntry("<style='color:"+PresetColour.GENERIC_TERRIBLE.toWebHexString()+";'>Partial Save Fail<b>", "slaveryEventLog failure"), false);
+			Main.game.addEvent(new EventLogEntry("<style='color:"+PresetColour.GENERIC_TERRIBLE.toWebHexString()+";'>Частичная ошибка сохранения<b>", "ошибка slaveryEventLog"), false);
 		}
 
 		// Add maps:
@@ -886,7 +886,7 @@ public class Game implements XMLSaving {
 			}
 		} catch(Exception ex) {
 			System.err.println("maps saving failed!");
-			Main.game.addEvent(new EventLogEntry("<style='color:"+PresetColour.GENERIC_TERRIBLE.toWebHexString()+";'>Partial Save Fail<b>", "maps failure"), false);
+			Main.game.addEvent(new EventLogEntry("<style='color:"+PresetColour.GENERIC_TERRIBLE.toWebHexString()+";'>Частичная ошибка сохранения<b>", "ошибка карт"), false);
 		}
 
 		// Add player:
@@ -896,7 +896,7 @@ public class Game implements XMLSaving {
 			Main.game.getPlayer().saveAsXML(characterNode, doc);
 		} catch(Exception ex) {
 			System.err.println("playerCharacter saving failed!");
-			Main.game.addEvent(new EventLogEntry("<style='color:"+PresetColour.GENERIC_TERRIBLE.toWebHexString()+";'>Partial Save Fail<b>", "playerCharacter failure"), false);
+			Main.game.addEvent(new EventLogEntry("<style='color:"+PresetColour.GENERIC_TERRIBLE.toWebHexString()+";'>Частичная ошибка сохранения<b>", "ошибка персонажа игрока"), false);
 		}
 
 		// Add all NPCs:
@@ -909,7 +909,7 @@ public class Game implements XMLSaving {
 		} catch(Exception ex) {
 			System.err.println("NPC saving failed!");
 			ex.printStackTrace();
-			Main.game.addEvent(new EventLogEntry("<style='color:"+PresetColour.GENERIC_TERRIBLE.toWebHexString()+";'>Partial Save Fail<b>", "NPC failure"), false);
+			Main.game.addEvent(new EventLogEntry("<style='color:"+PresetColour.GENERIC_TERRIBLE.toWebHexString()+";'>Частичная ошибка сохранения<b>", "ошибка NPC"), false);
 		}
 
 		// Add all offspringSeed:
@@ -922,7 +922,7 @@ public class Game implements XMLSaving {
 		} catch(Exception ex) {
 			System.err.println("offspringSeed saving failed!");
 			ex.printStackTrace();
-			Main.game.addEvent(new EventLogEntry("<style='color:"+PresetColour.GENERIC_TERRIBLE.toWebHexString()+";'>Partial Save Fail<b>", "offspringSeed failure"), false);
+			Main.game.addEvent(new EventLogEntry("<style='color:"+PresetColour.GENERIC_TERRIBLE.toWebHexString()+";'>Частичная ошибка сохранения<b>", "ошибка семени потомства"), false);
 		}
 
 		// Ending stuff:
@@ -946,17 +946,17 @@ public class Game implements XMLSaving {
 
 			if(!isAutoSave) {
 				if(overwrite) {
-					Main.game.addEvent(new EventLogEntry("[style.colourGood(Game saved)]", saveLocation), false);
-					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()), false, PresetColour.GENERIC_GOOD, "Save game overwritten!");
+					Main.game.addEvent(new EventLogEntry("[style.colourGood(Игра сохранена)]", saveLocation), false);
+					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()), false, PresetColour.GENERIC_GOOD, "Сохранение перезаписано!");
 				} else {
-					Main.game.addEvent(new EventLogEntry("[style.colourGood(Game saved)]", saveLocation), false);
-					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()), false, PresetColour.GENERIC_GOOD, "Game saved!");
+					Main.game.addEvent(new EventLogEntry("[style.colourGood(Игра сохранена)]", saveLocation), false);
+					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()), false, PresetColour.GENERIC_GOOD, "Игра сохранена!");
 				}
 			}
 		} catch(Exception ex) {
 			System.err.println("XML writing failed!");
 			ex.printStackTrace();
-			Main.game.addEvent(new EventLogEntry("<style='color:"+PresetColour.GENERIC_TERRIBLE.toWebHexString()+";'>Partial Save Fail</span>", "XML writing failure"), false);
+			Main.game.addEvent(new EventLogEntry("<style='color:"+PresetColour.GENERIC_TERRIBLE.toWebHexString()+";'>Частичный сбой сохранения</span>", "Ошибка записи XML"), false);
 		}
 
 		if(timeLog) {
@@ -1332,7 +1332,7 @@ public class Game implements XMLSaving {
 								if(Main.isVersionOlderThan(loadingVersion, "0.2.4")) {
 									int lastIndex = className.lastIndexOf('.');
 									if(className.substring(lastIndex-3, lastIndex).equals("npc")) {
-										className = className.substring(0, lastIndex) + ".misc" + className.substring(lastIndex, className.length());
+										className = className.substring(0, lastIndex) + ".разное" + className.substring(lastIndex, className.length());
 									}
 								}
 								if(Main.isVersionOlderThan(loadingVersion, "0.4.1.5")) {
@@ -2236,7 +2236,7 @@ public class Game implements XMLSaving {
 		Main.game.setRequestAutosave(false);
 		
 		DialogueNode startingDialogueNode = Main.game.getPlayerCell().getDialogue(false);
-		Main.game.addEvent(new EventLogEntry("[style.colourGood(Game loaded)]", "data/saves/"+Util.getFileName(file)+".xml"), false);
+		Main.game.addEvent(new EventLogEntry("[style.colourGood(Игра загружена)]", "data/saves/"+Util.getFileName(file)+".xml"), false);
 		Main.game.setStarted(true); // Set started before setting content so that it parses correctly (as the scripting engine is initialised fully in the setStarted() method).
 		Main.game.setContent(new Response("", startingDialogueNode.getDescription(), startingDialogueNode), false);
 		
@@ -2993,7 +2993,7 @@ public class Game implements XMLSaving {
 					NPC occupant = (NPC) Main.game.getNPCById(id);
 					Main.game.getOccupancyUtil().dailyOccupantUpdate(occupant);
 				} catch(Exception e) {
-					Util.logGetNpcByIdError("endTurn()", id);
+					Util.logGetNpcByIdError("завершитьХод()", id);
 				}
 			}
 			if(loopDebug) {
@@ -3170,7 +3170,7 @@ public class Game implements XMLSaving {
 						if(npc.getSlavePermissionSettings().get(SlavePermission.PREGNANCY).contains(SlavePermissionSetting.PREGNANCY_ALLOW_BIRTHING)) {
 							npc.endPregnancy(true, false);
 							
-							List<String> events = Util.newArrayListOfValues(UtilText.parse(npc, "[npc.She] gave birth to:<br/>")+npc.getLastLitterBirthed().getBirthedDescription());
+							List<String> events = Util.newArrayListOfValues(UtilText.parse(npc, "[npc.She] родила: <br/>")+npc.getLastLitterBirthed().getBirthedDescription());
 							SlaveryEventLogEntry entry = new SlaveryEventLogEntry(getHourOfDay(),
 									npc,
 									null,
@@ -3226,7 +3226,7 @@ public class Game implements XMLSaving {
 									case URETHRA_VAGINA:
 										break;
 								}
-								List<String> events = Util.newArrayListOfValues(UtilText.parse(npc, "[npc.She] completed [npc.her] "+areaEgged+" incubation and gave birth to:<br/>")+npc.getLastLitterIncubated().getBirthedDescription());
+								List<String> events = Util.newArrayListOfValues(UtilText.parse(npc, "[npc.She] завершил(а) [npc.her] "+areaEgged+" инкубацию и родил(а): <br/>")+npc.getLastLitterIncubated().getBirthedDescription());
 								SlaveryEventLogEntry incubationBirthEntry = new SlaveryEventLogEntry(getHourOfDay(),
 										npc,
 										null,
@@ -3618,7 +3618,7 @@ public class Game implements XMLSaving {
 	public String getNextStormTimeAsTimeString() {
 		long minutes = ((nextStormTimeInSeconds+gatheringStormDurationInSeconds)-getSecondsPassed())/60;
 		long hours = minutes/60;
-		return (hours/24)+" days, "+hours%24+" hours, "+minutes%60+" minutes";
+		return (hours/24)+" дней, "+hours%24+" ч, "+minutes%60+" minutes";
 	}
 	
 	public Weather getWeather() {
@@ -3663,9 +3663,7 @@ public class Game implements XMLSaving {
 			String corruptionGains = "";
 			if(response.isActionCorrupting() && !response.isAvailableFromFetishes()) {
 				Main.game.getPlayer().incrementAttribute(Attribute.MAJOR_CORRUPTION, response.getCorruptionNeeded().getCorruptionBypass());
-				corruptionGains = ("<p style='text-align:center;'>"
-						+ "<b>You have gained +"+response.getCorruptionNeeded().getCorruptionBypass()+"</b> <b style='color:"+Attribute.MAJOR_CORRUPTION.getColour().toWebHexString()+";'>corruption</b><b>!</b>"
-						+ "</p>");
+				corruptionGains = ("<p style='text-align:center;'><b>Вы получили +"+response.getCorruptionNeeded().getCorruptionBypass()+"</b> <b style='color:"+Attribute.MAJOR_CORRUPTION.getColour().toWebHexString()+";'>порочности</b><b>!</b></p>");
 			};
 
 			if(!response.isAvailable() && !response.isAbleToBypass()) {
@@ -3819,7 +3817,7 @@ public class Game implements XMLSaving {
 						&& Main.game.isRequestAutosave()
 						&& (Main.game.getCurrentDialogueNode()!=null && !Main.game.getCurrentDialogueNode().isTravelDisabled())) {
 					lastAutoSaveTime = Main.game.getSecondsPassed();
-					Main.saveGame("AutoSave_"+Main.game.getPlayer().getName(false), true, true);
+					Main.saveGame("Автосохранение_"+Main.game.getPlayer().getName(false), true, true);
 					Main.game.setRequestAutosave(false);
 				}
 				
@@ -3832,21 +3830,20 @@ public class Game implements XMLSaving {
 //										+ "<div class='inner-text-content'>"
 											+ getMapDiv()
 											+ (headerContent != null
-												? "<div id='header-content' style='font-size:" + Main.getProperties().fontSize + "px; line-height:" + (Main.getProperties().fontSize + 6) + "px; -webkit-user-select: none;'>"
+												? "<div id='header-content' style='font-size:" + Main.getProperties().fontSize + "px; межстрочный интервал:" + (Main.getProperties().fontSize + 6) + "px; -webkit-user-select: none;'>"
 													+ (currentDialogueNode.disableHeaderParsing() ? headerContent : UtilText.parse(headerContent))
 													+ "</div>"
 												: "")
 											+ (content != null
 													? "<div "+(Main.getProperties().hasValue(PropertyValue.fadeInText)?"id='text-content'":"")
-															+" style='font-size:" + Main.getProperties().fontSize + "px; line-height:" + (Main.getProperties().fontSize + 6) + "px;"
+															+" style='font-size:" + Main.getProperties().fontSize + "px; межстрочный интервал:" + (Main.getProperties().fontSize + 6) + "px;"
 																+ (requiresYScroll(node)?" overflow-y:scroll; overflow-x:hidden;":"")+"'>"
 															+ pastDialogueSB.toString()
 														+ "</div>"
 													: "")
 	//												+ textStartStringBuilder.toString() + pastDialogueSB.toString() + textEndStringBuilder.toString() + "</div>" : "")
 //										+ "</div>"
-									+ "</div>"
-									+"<div id='bottom-text'>Game saved!</div>"
+									+ "</div><div id='bottom-text'>Игра сохранена!</div>"
 									+ getResponsesDiv(currentDialogueNode, resetPointer)
 								+ "</div>"
 							+ "</body>";
@@ -3859,21 +3856,20 @@ public class Game implements XMLSaving {
 //									+ "<div class='inner-text-content'>"
 										+ getMapDiv()
 										+ (headerContent != null
-											? "<div id='header-content' style='font-size:" + Main.getProperties().fontSize + "px; line-height:" + (Main.getProperties().fontSize + 6) + "px;-webkit-user-select: none;'>"
+											? "<div id='header-content' style='font-size:" + Main.getProperties().fontSize + "px; межстрочный интервал:" + (Main.getProperties().fontSize + 6) + "px;-webkit-user-select: none;'>"
 												+ (currentDialogueNode.disableHeaderParsing() ? headerContent : UtilText.parse(headerContent))
 												+ "</div>"
 											: "")
 										+ (content != null
 												? "<div "+(Main.getProperties().hasValue(PropertyValue.fadeInText)?"id='text-content'":"")
-														+" style='font-size:" + Main.getProperties().fontSize + "px; line-height:" + (Main.getProperties().fontSize + 6) + "px;"
+														+" style='font-size:" + Main.getProperties().fontSize + "px; межстрочный интервал:" + (Main.getProperties().fontSize + 6) + "px;"
 															+ (requiresYScroll(node)?" overflow-y:scroll; overflow-x:hidden;":"")+ "'>"
 														+ pastDialogueSB.toString()
 													+ "</div>"
 												: "")
 	//									+ textStartStringBuilder.toString() + pastDialogueSB.toString() + textEndStringBuilder.toString() + "</div>" : "")
 //									+ "</div>"
-								+ "</div>"
-								+"<div id='bottom-text'>Game saved!</div>"
+								+ "</div><div id='bottom-text'>Игра сохранена!</div>"
 								+ getResponsesDiv(currentDialogueNode, resetPointer)
 							+ "</div>"
 							+ "</body>";
@@ -3882,8 +3878,7 @@ public class Game implements XMLSaving {
 //				Main.mainController.unbindListeners();
 				setMainContentRegex(
 						((node.isContinuesDialogue() || response.isForceContinue()) && isContentScroll(response, node)
-							?"<body onLoad='scrollToElement()' style='"+getBodyStyle()+"'>"
-								+ "<script>function scrollToElement() {document.getElementById('content-block').scrollTop = document.getElementById('position" + (positionAnchor) + "').offsetTop -64;}</script>"
+							?"<body onLoad='scrollToElement()' style='"+getBodyStyle()+"'><script>function scrollToElement() {document.getElementById('content-block').scrollTop = document.getElementById('position" + (positionAnchor) + "').offsetTop -64;}</script>"
 							:"<body style='"+getBodyStyle()+"'>"),
 						currentDialogue);
 				
@@ -4073,7 +4068,7 @@ public class Game implements XMLSaving {
 				&& Main.game.isRequestAutosave()
 				&& (Main.game.getCurrentDialogueNode()!=null && !Main.game.getCurrentDialogueNode().isTravelDisabled())) {
 			lastAutoSaveTime = Main.game.getSecondsPassed();
-			Main.saveGame("AutoSave_"+Main.game.getPlayer().getName(false), true, true);
+			Main.saveGame("Автосохранение_"+Main.game.getPlayer().getName(false), true, true);
 			Main.game.setRequestAutosave(false);
 		}
 
@@ -4085,19 +4080,18 @@ public class Game implements XMLSaving {
 //							+ "<div class='inner-text-content'>"
 								+ getMapDiv()
 								+ (headerContent != null
-									? "<div id='header-content' style='font-size:" + Main.getProperties().fontSize + "px; line-height:" + (Main.getProperties().fontSize + 6) + "px;-webkit-user-select: none;'>"
+									? "<div id='header-content' style='font-size:" + Main.getProperties().fontSize + "px; межстрочный интервал:" + (Main.getProperties().fontSize + 6) + "px;-webkit-user-select: none;'>"
 										+ (currentDialogueNode.disableHeaderParsing() ? headerContent : UtilText.parse(headerContent))
 										+ "</div>"
 									: "") 
 								+ (content != null
 									? "<div "+(Main.getProperties().hasValue(PropertyValue.fadeInText)?"id='text-content'":"")
-											+" style='font-size:" + Main.getProperties().fontSize + "px; line-height:" + (Main.getProperties().fontSize + 6) + "px;"
+											+" style='font-size:" + Main.getProperties().fontSize + "px; межстрочный интервал:" + (Main.getProperties().fontSize + 6) + "px;"
 												+ (requiresYScroll(node)?" overflow-y:scroll; overflow-x:hidden;":"")+ "'>"
 									+ pastDialogueSB.toString() + "</div>" : "")
 	//									+ textStartStringBuilder.toString() + pastDialogueSB.toString() + textEndStringBuilder.toString() + "</div>" : "")
 //							+ "</div>"
-						+ "</div>"
-						+"<div id='bottom-text'>Game saved!</div>"
+						+ "</div><div id='bottom-text'>Игра сохранена!</div>"
 						+ getResponsesDiv(currentDialogueNode, resetPointer)
 					+ "</div>"
 				+ "</body>";
@@ -4110,21 +4104,20 @@ public class Game implements XMLSaving {
 //								+ "<div class='inner-text-content'>"
 									+ getMapDiv()
 									+ (headerContent != null
-										? "<div id='header-content' style='font-size:" + Main.getProperties().fontSize + "px; line-height:" + (Main.getProperties().fontSize + 6) + "px;-webkit-user-select: none;'>"
+										? "<div id='header-content' style='font-size:" + Main.getProperties().fontSize + "px; межстрочный интервал:" + (Main.getProperties().fontSize + 6) + "px;-webkit-user-select: none;'>"
 											+ (currentDialogueNode.disableHeaderParsing() ? headerContent : UtilText.parse(headerContent))
 											+ "</div>"
 										: "")
 									+ (content != null
 										? "<div "+(Main.getProperties().hasValue(PropertyValue.fadeInText)?"id='text-content'":"")
-												+" style='font-size:" + Main.getProperties().fontSize + "px; line-height:" + (Main.getProperties().fontSize + 6) + "px;"
+												+" style='font-size:" + Main.getProperties().fontSize + "px; межстрочный интервал:" + (Main.getProperties().fontSize + 6) + "px;"
 													+ (requiresYScroll(node)?" overflow-y:scroll; overflow-x:hidden;":"")+ "'>"
 												+ pastDialogueSB.toString()
 											+ "</div>"
 										: "")
 	//								+ textStartStringBuilder.toString() + pastDialogueSB.toString() + textEndStringBuilder.toString() + "</div>" : "")
 //								+ "</div>"
-							+ "</div>"
-						+"<div id='bottom-text'>Game saved!</div>"
+							+ "</div><div id='bottom-text'>Игра сохранена!</div>"
 						+ getResponsesDiv(currentDialogueNode, resetPointer)
 					+ "</div>"
 				+ "</body>";
@@ -4139,12 +4132,10 @@ public class Game implements XMLSaving {
 		//-------------------- MEMORY LEAK PROBLEM
 		setMainContentRegex(node.isContinuesDialogue() || response.isForceContinue()
 				?(isContentScroll(response, node)
-					?"<body onLoad='scrollToElement()' style='"+getBodyStyle()+"'>"
-						+ "<script>function scrollToElement() {document.getElementById('content-block').scrollTop = document.getElementById('position" + (positionAnchor) + "').offsetTop -64;}</script>"
+					?"<body onLoad='scrollToElement()' style='"+getBodyStyle()+"'><script>function scrollToElement() {document.getElementById('content-block').scrollTop = document.getElementById('position" + (positionAnchor) + "').offsetTop -64;}</script>"
 					:"<body style='"+getBodyStyle()+"'>")
 				:(isContentScroll(response, node)
-					?"<body onLoad='scrollToElement()' style='"+getBodyStyle()+"'>"
-						+ "<script>function scrollToElement() {document.getElementById('content-block').scrollTop = "+currentPosition+";}</script>"
+					?"<body onLoad='scrollToElement()' style='"+getBodyStyle()+"'><script>function scrollToElement() {document.getElementById('content-block').scrollTop = "+currentPosition+";}</script>"
 					:"<body style='"+getBodyStyle()+"'>"),
 				currentDialogue);
 		//--------------------
@@ -4209,7 +4200,7 @@ public class Game implements XMLSaving {
 	
 	private String getDialogueTitle() {
 		if(isBadEnd()) {
-			return "<b style='color:"+PresetColour.GENERIC_BAD_END.toWebHexString()+";'>Bad End: "+Main.getProperties().badEndTitle+"</b>";
+			return "<b style='color:"+PresetColour.GENERIC_BAD_END.toWebHexString()+";'>Плохая концовка: "+Main.getProperties().badEndTitle+"</b>";
 		}
 		return dialogueTitle;
 	}
@@ -4337,7 +4328,7 @@ public class Game implements XMLSaving {
 			int responsePageCounter = 0;
 			while (node.getResponseTabTitle(responsePageCounter) != null){
 				choicesDialogueSB.append(
-						"<div class='response-tab"+(responseTab==responsePageCounter?" selected'":"'")
+						"<div class='response-tab"+(responseTab==responsePageCounter?" выбран":"'")
 							+ (isResponseTabEmpty(node, responsePageCounter)
 									?"style='color:"+PresetColour.TEXT_GREY.toWebHexString()+";'"
 									:(responseTab==responsePageCounter
@@ -4386,7 +4377,7 @@ public class Game implements XMLSaving {
 				if (response != null) {
 					choicesDialogueSB.append(getResponseBoxDiv(response, i));
 				} else
-					choicesDialogueSB.append("<div class='response-box disabled"+(responsePointer==i?" selected":"")+"' id='option_" + i + "'>"
+					choicesDialogueSB.append("<div class='response-box disabled"+(responsePointer==i?" выбранный":"")+"' id='option_" + i + "'>"
 												+ "<b class='hotkey-icon disabled'>" + getResponseHotkey(i) + "</b>"
 											+ "</div>");
 			}
@@ -4395,8 +4386,7 @@ public class Game implements XMLSaving {
 				choicesDialogueSB.append(getResponseBoxDiv(response, 0));
 
 			} else
-				choicesDialogueSB.append("<div class='response-box disabled"+(responsePointer==0?" selected":"")+"' id='option_0'>"
-											+ "<b class='hotkey-icon disabled'>" + getResponseHotkey(0) + "</b>"
+				choicesDialogueSB.append("<div class='response-box disabled"+(responsePointer==0?" выбранный":"")+"' id='option_0'><b class='hotkey-icon disabled'>" + getResponseHotkey(0) + "</b>"
 										+ "</div>");
 			
 		} else {
@@ -4405,7 +4395,7 @@ public class Game implements XMLSaving {
 				if (response != null) {
 					choicesDialogueSB.append(getResponseBoxDiv(response, i + 1));
 				} else {
-					choicesDialogueSB.append("<div class='response-box disabled"+(responsePointer-(responsePage*MainController.RESPONSE_COUNT)==i?" selected":"")+"' id='option_" + (i + 1) + "'>"
+					choicesDialogueSB.append("<div class='response-box disabled"+(responsePointer-(responsePage*MainController.RESPONSE_COUNT)==i?" выбранный":"")+"' id='option_" + (i + 1) + "'>"
 												+ "<b class='hotkey-icon disabled'>" + getResponseHotkey(i + 1) + "</b>"
 											+ "</div>");
 				}
@@ -4414,8 +4404,7 @@ public class Game implements XMLSaving {
 			if (response != null) {
 				choicesDialogueSB.append(getResponseBoxDiv(response, 0));
 			} else {
-				choicesDialogueSB.append("<div class='response-box disabled"+(responsePointer-((responsePage+1)*MainController.RESPONSE_COUNT)+1==0?" selected":"")+"' id='option_0'>"
-												+ "<b class='hotkey-icon disabled'>" + getResponseHotkey(0) + "</b>"
+				choicesDialogueSB.append("<div class='response-box disabled"+(responsePointer-((responsePage+1)*MainController.RESPONSE_COUNT)+1==0?" выбранный":"")+"' id='option_0'><b class='hotkey-icon disabled'>" + getResponseHotkey(0) + "</b>"
 											+ "</div>");
 			}
 			
@@ -4479,23 +4468,16 @@ public class Game implements XMLSaving {
 			ex.printStackTrace();
 		}
 		
-		return "<body style='background:#1e1e20; color:#DDD; font-family:Calibri;'>"
-				+ "<style>"
-				+ ".speech:before { content: '\"'; }"
-				+ ".speech:after { content: '\"'; }"
-				+ "</style>"
-					+ "<h4 style='text-align:center; font-size:1.4em;'>" + getDialogueTitle() + "</h4>"
+		return "<body style='background:#1e1e20; color:#DDD; font-family:Calibri;'><style>.speech:before { content: '\"'; }.speech:after { content: '\"'; }</style><h4 style='text-align:center; font-size:1.4em;'>" + getDialogueTitle() + "</h4>"
 					+ "<div style='max-width:800px; margin:0 auto;'>"
 						+ (currentDialogueNode.getHeaderContent() != null ? "<div id='header-content'>" + currentDialogueNode.getHeaderContent() + "</div>" : "")
 						+ (content != null
 								? "<div id='text-content'"
-									+ " style='font-size:" + Main.getProperties().fontSize + "px; line-height:" + (Main.getProperties().fontSize + 6) + "px;"
+									+ " style='font-size:" + Main.getProperties().fontSize + "px; межстрочный интервал:" + (Main.getProperties().fontSize + 6) + "px;"
 										+ (requiresYScroll(currentDialogueNode)?" overflow-y:scroll; overflow-x:hidden;":"")+ "'>"
 									+ textStartStringBuilder.toString() + pastDialogueSB.toString() + textEndStringBuilder.toString() + "</div>"
 								: "")
-					+ "</div>"
-				+ "</div>"
-				+"<p style='text-align:center;font-size:0.6em;color:#777;'>Dialogue written by "+currentDialogueNode.getAuthor()+" for <i>"+Main.NAME_OF_GAME+" v"+Main.VERSION_NUMBER+"</i></p>"
+					+ "</div></div><p style='text-align:center;font-size:0.6em;color:#777;'>Диалоги написаны "+currentDialogueNode.getAuthor()+" для <i>"+Main.NAME_OF_GAME+" v"+Main.VERSION_NUMBER+"</i></p>"
 				+ "</body>";
 	}
 
@@ -4580,8 +4562,7 @@ public class Game implements XMLSaving {
 		
 		if(responsePage==0) {
 			return "<div class='response-box"+(responsePointer==option?" selected":"")+"' id='option_" + option + "'>"
-						+ "<b class='hotkey-icon'>" + getResponseHotkey(option) + "</b>"
-						+ "<p class='response-text"+(responsePointer==option?" selected":"")+"' "+style+">" + (!responseDisabled ? titleText : UtilText.getDisabledResponse(titleText)) + "</p>"
+						+ "<b class='hotkey-icon'>" + getResponseHotkey(option) + "</b><p class='response-text"+(responsePointer==option?" selected":"")+"' "+style+">" + (!responseDisabled ? titleText : UtilText.getDisabledResponse(titleText)) + "</p>"
 						+ iconLeftTop
 						+ iconLeftBottom
 						+ iconRightTop
@@ -4591,8 +4572,7 @@ public class Game implements XMLSaving {
 		} else {
 			if(option == 0) {
 				return "<div class='response-box"+(responsePointer-((responsePage+1)*MainController.RESPONSE_COUNT)+1==(option)?" selected":"")+"' id='option_" + option + "'>"
-						+ "<b class='hotkey-icon'>" + getResponseHotkey(option) + "</b>"
-						+ "<p class='response-text"+(responsePointer-((responsePage+1)*MainController.RESPONSE_COUNT)+1==option?" selected":"")+"' "+style+">"
+						+ "<b class='hotkey-icon'>" + getResponseHotkey(option) + "</b><p class='response-text"+(responsePointer-((responsePage+1)*MainController.RESPONSE_COUNT)+1==option?" selected":"")+"' "+style+">"
 						+ (!responseDisabled ? titleText : UtilText.getDisabledResponse(titleText)) + "</p>"
 						+ iconLeftTop
 						+ iconLeftBottom
@@ -4601,8 +4581,7 @@ public class Game implements XMLSaving {
 					+ "</div>";
 			} else {
 				return "<div class='response-box"+(responsePointer-(responsePage*MainController.RESPONSE_COUNT)+1==(option)?" selected":"")+"' id='option_" + option + "'>"
-						+ "<b class='hotkey-icon'>" + getResponseHotkey(option) + "</b>"
-						+ "<p class='response-text"+(responsePointer-(responsePage*MainController.RESPONSE_COUNT)+1==option?" selected":"")+"' "+style+">"
+						+ "<b class='hotkey-icon'>" + getResponseHotkey(option) + "</b><p class='response-text"+(responsePointer-(responsePage*MainController.RESPONSE_COUNT)+1==option?" selected":"")+"' "+style+">"
 						+ (!responseDisabled ? titleText : UtilText.getDisabledResponse(titleText)) + "</p>"
 						+ iconLeftTop
 						+ iconLeftBottom
@@ -4716,21 +4695,7 @@ public class Game implements XMLSaving {
 	public void flashMessage(Colour colour, String text){
 		try {
 			Main.mainController.getWebEngine().executeScript(
-					"\"use strict\";"
-					+ "document.getElementById('bottom-text').innerHTML=\"<span style='color:"+colour.toWebHexString()+";'>"+text+"</span>\";"
-					+ "try{"
-						+ "timer;"
-					+ "} catch(e){"
-						+ "var timer=false;"
-					+ "}"
-					+ "if(!timer) {"
-						+ "document.getElementById('bottom-text').classList.add('demo');"
-						+ "timer = true;"
-						+ "timer = setTimeout(function(){"
-							+ "document.getElementById('bottom-text').classList.remove('demo');"
-							+ "timer = false;"
-						+ "}, 2000);"
-					+ "}");
+					"\"use strict\";document.getElementById('bottom-text').innerHTML=\"<span style='color:"+colour.toWebHexString()+";'>"+text+"</span>\";try{timer;} catch(e){var timer=false;}if(!timer) {document.getElementById('bottom-text').classList.add('demo');timer = true;timer = setTimeout(function(){document.getElementById('bottom-text').classList.remove('demo');timer = false;}, 2000);}");
 		} catch(Exception ex) {
 			System.err.println("var timer not found...");
 		}
@@ -4773,17 +4738,16 @@ public class Game implements XMLSaving {
 						+ "<div class='div-center' id='content-block'>"
 								+ getMapDiv()
 								+ (headerContent != null
-									? "<div id='header-content' style='font-size:" + Main.getProperties().fontSize + "px; line-height:" + (Main.getProperties().fontSize + 6) + "px;-webkit-user-select: none;'>"
+									? "<div id='header-content' style='font-size:" + Main.getProperties().fontSize + "px; межстрочный интервал:" + (Main.getProperties().fontSize + 6) + "px;-webkit-user-select: none;'>"
 										+ (currentDialogueNode.disableHeaderParsing() ? headerContent : UtilText.parse(headerContent))
 										+ "</div>"
 									: "")
 								+ (content != null
-										? "<div "+(Main.getProperties().hasValue(PropertyValue.fadeInText)?"id='text-content'":"")+" style='font-size:" + Main.getProperties().fontSize + "px; line-height:" + (Main.getProperties().fontSize + 6) + "px;'>"
+										? "<div "+(Main.getProperties().hasValue(PropertyValue.fadeInText)?"id='text-content'":"")+" style='font-size:" + Main.getProperties().fontSize + "px; межстрочный интервал:" + (Main.getProperties().fontSize + 6) + "px;'>"
 												+ content
 											+ "</div>"
 										: "")
-						+ "</div>"
-						+"<div id='bottom-text'>Game saved!</div>"
+						+ "</div><div id='bottom-text'>Игра сохранена!</div>"
 						+ getResponsesDiv(currentDialogueNode)
 					+ "</div>"
 				+ "</body>";
@@ -4815,8 +4779,7 @@ public class Game implements XMLSaving {
 		
 		setMainContentRegex(
 				(savedDialogueNode.getDialogueNodeType()!=DialogueNodeType.PHONE && savedDialogueNode.getDialogueNodeType()!=DialogueNodeType.CHARACTERS_PRESENT
-					?"<body onLoad='scrollToElement()' style='"+getBodyStyle()+"'>"
-						+ "<script>function scrollToElement() {document.getElementById('content-block').scrollTop = document.getElementById('position" + (positionAnchor) + "').offsetTop -64;}</script>"
+					?"<body onLoad='scrollToElement()' style='"+getBodyStyle()+"'><script>function scrollToElement() {document.getElementById('content-block').scrollTop = document.getElementById('position" + (positionAnchor) + "').offsetTop -64;}</script>"
 					:"<body style='"+getBodyStyle()+"'>"),
 			currentDialogue);
 
@@ -5009,7 +4972,7 @@ public class Game implements XMLSaving {
 	public String getWeatherTimeRemainingAsTimeString() {
 		long minutes = weatherTimeRemainingInSeconds/60;
 		long hours = minutes/60;
-		return (hours/24)+" days, "+hours%24+" hours, "+minutes%60+" minutes";
+		return (hours/24)+" дней, "+hours%24+" ч, "+minutes%60+" minutes";
 	}
 	
 	public void setWeatherInSeconds(Weather weather, int secondsRemaining) {
@@ -5159,10 +5122,10 @@ public class Game implements XMLSaving {
 
 	public String getDisplayDate(TemporalAccessor dateNow, boolean withYear) {
 		if(isBadEnd()) {
-			return UtilText.parse("[style.colourBad(Unknown date)]");
+			return UtilText.parse("[style.colourBad(Неизвестная дата)]");
 		}
 		if(isInNewWorld() && !getDialogueFlags().hasFlag(DialogueFlagValue.knowsDate)) {
-			return UtilText.parse("[style.colourMinorBad(Unknown date)]");
+			return UtilText.parse("[style.colourMinorBad(Неизвестная дата)]");
 		}
 		
 		String date = Units.date(dateNow, Units.DateType.LONG);
@@ -5443,7 +5406,7 @@ public class Game implements XMLSaving {
 	
 	public String getUniqueNPCId(Class<? extends NPC> c) {
 		if(c.equals(DarkSiren.class)) {
-			return "-1,FortressDemonLeader";
+			return "-1,ЛидерДемоновКрепости";
 		}
 		return "-1,"+c.getSimpleName();
 	}
@@ -5544,7 +5507,7 @@ public class Game implements XMLSaving {
 		}
 		
 		if(NPCMap.keySet().contains(npc.getId())) {
-			throw new Exception("NPC map already contained an NPC with this Id ("+npc.getId()+"). SOMETHING HAS GONE HORRIBLY WRONG! PANIC!");
+			throw new Exception("Карта NPC уже содержала NPC с этим ID ("+npc.getId()+"). ЧТО-ТО ПОШЛО УЖАСНО НЕ ТАК! ПАНИКА!");
 		}
 		
 		if(isInNPCUpdateLoop && !forceImmediateAddition) {
@@ -5728,7 +5691,7 @@ public class Game implements XMLSaving {
 		}
 
 		if(OffspringSeedMap.keySet().contains(os.getId())) {
-			throw new Exception("OffspringSeed map already contained an OffspringSeed with this Id ("+os.getId()+"). SOMETHING HAS GONE HORRIBLY WRONG! PANIC!");
+			throw new Exception("Карта OffspringSeed уже содержала OffspringSeed с этим ID ("+os.getId()+"). ЧТО-ТО ПОШЛО УЖАСНО НЕ ТАК! ПАНИКА!");
 		}
 
 		OffspringSeedMap.put(os.getId(), os);
@@ -6467,7 +6430,7 @@ public class Game implements XMLSaving {
 		}
 		Main.game.getCharacterUtils().setGenericName(npc, genericName, excludedAdjectives);
 		
-		npc.setDescription("[npc.Name] is a complete stranger to you, who, after wandering in to use the toilet, found you offering to service [npc.her] #IF(npc.hasPenis())cock#ELSEpussy#ENDIF at a gloryhole...");
+		npc.setDescription("[npc.Name] для тебя совершенно незнакомая особа, которая, заглянув к тебе в туалет, обнаружила, что ты предлагаешь обслужить её [npc.her] #IF(npc.hasPenis())член#ELSEкиску#ENDIF через глорихоул...");
 		
 		if(Math.random()<0.4f) {
 			npc.setSexualOrientation(SexualOrientation.AMBIPHILIC);
@@ -6519,7 +6482,7 @@ public class Game implements XMLSaving {
 		npc.setRaceConcealed(true);
 		Main.game.getCharacterUtils().setGenericName(npc, genericName, Util.newArrayListOfValues());
 
-		npc.setDescription("[npc.Name] is a complete stranger to you, who, after wandering in to use the toilet, decided to service a gloryhole...");
+		npc.setDescription("[npc.Name] для вас — совершенно незнакомый человек. Зайдя в туалет, вы решили воспользоваться славным делом — глорихолом...");
 		
 		if(Math.random()<0.4f) {
 			npc.setSexualOrientation(SexualOrientation.AMBIPHILIC);
@@ -6630,8 +6593,8 @@ public class Game implements XMLSaving {
 	public void startGenericSex(GameCharacter character) {
 //		Main.game.setContent(new Response("", "", Main.game.getDefaultDialogue(false)));
 		Main.game.setContent(
-				new ResponseSex(UtilText.parse(character, "Sex with [npc.name]"),
-					UtilText.parse(character, "Start a generic sex scene with [npc.name]"),
+				new ResponseSex(UtilText.parse(character, "Секс с [npc.name]"),
+					UtilText.parse(character, "Начать обычную секс-сцену с [npc.name]"),
 					true,
 					true,
 					new SMGeneric(
@@ -6641,7 +6604,7 @@ public class Game implements XMLSaving {
 					null),
 					Main.game.getDefaultDialogue(false),
 					"<p>"
-						+ UtilText.parse(character, "You start having sex with [npc.name]")
+						+ UtilText.parse(character, "Вы начинаете заниматься сексом с [npc.name]")
 					+ "</p>"));
 	}
 	

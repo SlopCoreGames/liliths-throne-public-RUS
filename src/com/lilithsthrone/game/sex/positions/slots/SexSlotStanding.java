@@ -13,37 +13,37 @@ import com.lilithsthrone.main.Main;
 public class SexSlotStanding {
 
 	public static final SexSlot STANDING_DOMINANT = new SexSlot(
-			"Standing",
+			"Стоя",
 			"standing",
-			"[npc.Name] [npc.verb(lean)] heavily into [npc2.namePos] [npc2.breasts] and [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(prepare)] to reach [npc.her] climax.",
+			"[npc.Name] [npc.verb(lean)] глубоко в [npc2.namePos] [npc2.breasts] и [npc.verb(let)] [npc.a_moan+] как [npc.she] [npc.verb(prepare)], чтобы достичь [npc.her] кульминации.",
 			true,
 			SexSlotTag.STANDING) {
 		@Override
 		public String getOrgasmDescription(GameCharacter orgasmingCharacter, GameCharacter targetedCharacter) {
 			SexSlot targetedSlot = Main.sex.getSexPositionSlot(targetedCharacter);
 			if(orgasmingCharacter.equals(targetedCharacter)) {
-				return "[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(prepare)] to reach [npc.her] climax.";
+				return "[npc.Name] [npc.verb(let)] из [npc.a_moan+] как [npc.she] [npc.verb(prepare)], чтобы достичь [npc.her] кульминации.";
 			}
 			if(targetedSlot.hasTag(SexSlotTag.PERFORMING_ORAL)) {
-				return "With a small thrust of [npc.her] [npc.hips], [npc.name] [npc.verb(push)] [npc.her] groin into [npc2.namePos] [npc2.face], before letting out [npc.a_moan+] as [npc.she] [npc.verb(reach)] [npc.her] climax.";
+				return "С коротким толчком [npc.her] [npc.hips], [npc.name] [npc.verb(push)] [npc.her] пахом в [npc2.namePos] [npc2.face], прежде чем издать [npc.a_moan+], пока [npc.she] [npc.verb(reach)] [npc.her] кульминации.";
 			}
 			if(targetedSlot.hasTag(SexSlotTag.PERFORMING_ORAL_BEHIND)) {
-				return "With a small backwards thrust of [npc.her] [npc.hips], [npc.name] [npc.verb(push)] [npc.her] rear end back into [npc2.namePos] [npc2.face], before letting out [npc.a_moan+] as [npc.she] [npc.verb(reach)] [npc.her] climax.";
+				return "С коротким толчком [npc.her] [npc.hips] назад, [npc.name] [npc.verb(push)] [npc.her] задницей назад в [npc2.namePos] [npc2.face], прежде чем издать [npc.a_moan+], пока [npc.she] [npc.verb(reach)] [npc.her] кульминации.";
 			}
 			if(targetedSlot.hasTag(SexSlotTag.STANDING_BEHIND)) {
-				return "Leaning back into [npc2.name], [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(reach)] [npc.her] climax.";
+				return "Откинувшись назад на [npc2.name], [npc.name] [npc.verb(let)] [npc.a_moan+], пока [npc.she] [npc.verb(reach)] [npc.her] кульминации.";
 			}
 			if(targetedCharacter.isTaur()) {
-				return "[npc.Name] [npc.verb(reach)] around and [npc.verb(wrap)] [npc.her] [npc.arms] around [npc2.namePos] back, pulling [npc2.herHim] close and letting out [npc.a_moan+] as [npc.she] [npc.verb(prepare)] to reach [npc.her] climax.";
+				return "[npc.Name] [npc.verb(reach)] вокруг и [npc.verb(wrap)] [npc.her] [npc.arms] вокруг [npc2.namePos] спины, притягивая [npc2.herHim] ближе и издавая [npc.a_moan+], пока [npc.she] [npc.verb(prepare)] достигает [npc.her] кульминации.";
 			}
-			return "[npc.Name] [npc.verb(reach)] around and [npc.verb(grab)] [npc2.namePos] [npc2.ass+], pulling [npc2.herHim] close and letting out [npc.a_moan+] as [npc.she] [npc.verb(prepare)] to reach [npc.her] climax.";
+			return "[npc.Name] [npc.verb(reach)] вокруг и [npc.verb(grab)] [npc2.namePos] [npc2.ass+], притягивая [npc2.herHim] ближе и издавая [npc.a_moan+], пока [npc.she] [npc.verb(prepare)] достигает [npc.her] кульминации.";
 		}
 	};
 	
 	public static final SexSlot STANDING_DOMINANT_TWO = new SexSlot(STANDING_DOMINANT) {
 		@Override
 		public String getDescription() {
-			return "standing (2nd)";
+			return "стоя (2-я)";
 		}
 		@Override
 		public String getOrgasmDescription(GameCharacter orgasmingCharacter, GameCharacter targetedCharacter) {
@@ -53,7 +53,7 @@ public class SexSlotStanding {
 	public static final SexSlot STANDING_DOMINANT_THREE = new SexSlot(STANDING_DOMINANT) {
 		@Override
 		public String getDescription() {
-			return "standing (3rd)";
+			return "стоя (3-я)";
 		}
 		@Override
 		public String getOrgasmDescription(GameCharacter orgasmingCharacter, GameCharacter targetedCharacter) {
@@ -63,7 +63,7 @@ public class SexSlotStanding {
 	public static final SexSlot STANDING_DOMINANT_FOUR = new SexSlot(STANDING_DOMINANT) {
 		@Override
 		public String getDescription() {
-			return "standing (4th)";
+			return "стоя (4-я)";
 		}
 		@Override
 		public String getOrgasmDescription(GameCharacter orgasmingCharacter, GameCharacter targetedCharacter) {
@@ -72,60 +72,60 @@ public class SexSlotStanding {
 	};
 
 	public static final SexSlot STANDING_SUBMISSIVE = new SexSlot(
-			"Standing",
-			"standing (in front)",
-			"[npc.Name] [npc.verb(lean)] heavily into [npc2.namePos] [npc2.breasts] and [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(prepare)] to reach [npc.her] climax.",
+			"Стоя",
+			"стоит (спереди)",
+			"[npc.Name] [npc.verb(lean)] глубоко в [npc2.namePos] [npc2.breasts] и [npc.verb(let)] [npc.a_moan+] как [npc.she] [npc.verb(prepare)], чтобы достичь [npc.her] кульминации.",
 			true);
 
 	public static final SexSlot STANDING_SUBMISSIVE_TWO = new SexSlot(STANDING_SUBMISSIVE) {
 		@Override
 		public String getDescription() {
-			return "standing (2nd in front)";
+			return "стоит (2-я спереди)";
 		}
 	};
 	public static final SexSlot STANDING_SUBMISSIVE_THREE = new SexSlot(STANDING_SUBMISSIVE) {
 		@Override
 		public String getDescription() {
-			return "standing (3rd in front)";
+			return "стоит (3-я спереди)";
 		}
 	};
 	public static final SexSlot STANDING_SUBMISSIVE_FOUR = new SexSlot(STANDING_SUBMISSIVE) {
 		@Override
 		public String getDescription() {
-			return "standing (4th in front)";
+			return "стоя (4-й спереди)";
 		}
 	};
 
 	public static final SexSlot STANDING_SUBMISSIVE_BEHIND = new SexSlot(
-			"Standing",
-			"standing (behind)",
-			"[npc.Name] [npc.verb(pull)] [npc2.name] back in against [npc.her] [npc.breasts] and [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(prepare)] to reach [npc.her] climax.",
+			"Стоя",
+			"стоя (сзади)",
+			"[npc.Name] [npc.verb(pull)] [npc2.name] прижавшись спиной к [npc.her] [npc.breasts] и [npc.verb(let)] вытаскивая [npc.a_moan+] как [npc.she] [npc.verb(prepare)] чтобы достичь [npc.her] оргазма.",
 			true,
 			SexSlotTag.STANDING_BEHIND);
 
 	public static final SexSlot STANDING_SUBMISSIVE_BEHIND_TWO = new SexSlot(STANDING_SUBMISSIVE) {
 		@Override
 		public String getDescription() {
-			return "standing (2nd behind)";
+			return "стоя (2-й сзади)";
 		}
 	};
 	public static final SexSlot STANDING_SUBMISSIVE_BEHIND_THREE = new SexSlot(STANDING_SUBMISSIVE) {
 		@Override
 		public String getDescription() {
-			return "standing (3rd behind)";
+			return "стоя (3-й сзади)";
 		}
 	};
 	public static final SexSlot STANDING_SUBMISSIVE_BEHIND_FOUR = new SexSlot(STANDING_SUBMISSIVE) {
 		@Override
 		public String getDescription() {
-			return "standing (4th behind)";
+			return "стоя (4-й сзади)";
 		}
 	};
 
 	public static final SexSlot PERFORMING_ORAL = new SexSlot(
-			"Performing oral (front)",
-			"performing oral (front)",
-			"[npc.Name] [npc.verb(reach)] up and [npc.verb(place)] a [npc.hand] on one of [npc2.namePos] [npc2.legs], before letting out [npc.a_moan+] as [npc.she] [npc.verb(prepare)] to reach [npc.her] climax.",
+			"Оральный секс (спереди)",
+			"оральный секс (спереди)",
+			"[npc.Name] [npc.verb(reach)] вверх и [npc.verb(place)] [npc.hand] на одном из [npc2.namePos] [npc2.legs], после чего издает [npc.a_moan+], пока [npc.she] [npc.verb(prepare)] достигает [npc.her] кульминации.",
 			false,
 			SexSlotTag.PERFORMING_ORAL) {
 		@Override
@@ -135,8 +135,8 @@ public class SexSlotStanding {
 	};
 	
 	public static final SexSlot PERFORMING_ORAL_TWO = new SexSlot(
-			"Performing oral (front)",
-			"performing oral (2nd front)",
+			"Оральный секс (спереди)",
+			"оральный секс (2-й спереди)",
 			null,
 			false,
 			SexSlotTag.PERFORMING_ORAL) {
@@ -147,8 +147,8 @@ public class SexSlotStanding {
 	};
 
 	public static final SexSlot PERFORMING_ORAL_THREE = new SexSlot(
-			"Performing oral (front)",
-			"performing oral (3rd front)",
+			"Оральный секс (спереди)",
+			"оральный секс (3-я позиция спереди)",
 			null,
 			false,
 			SexSlotTag.PERFORMING_ORAL) {
@@ -159,8 +159,8 @@ public class SexSlotStanding {
 	};
 
 	public static final SexSlot PERFORMING_ORAL_FOUR = new SexSlot(
-			"Performing oral (front)",
-			"performing oral (4th front)",
+			"Оральный секс (спереди)",
+			"оральный секс (4-я позиция спереди)",
 			null,
 			false,
 			SexSlotTag.PERFORMING_ORAL) {
@@ -171,9 +171,9 @@ public class SexSlotStanding {
 	};
 
 	public static final SexSlot PERFORMING_ORAL_BEHIND = new SexSlot(
-			"Performing oral (behind)",
-			"performing oral (behind)",
-			"[npc.Name] [npc.verb(reach)] up and [npc.verb(place)] a [npc.hand] on one of [npc2.namePos] [npc2.legs], before letting out [npc.a_moan+] as [npc.she] [npc.verb(prepare)] to reach [npc.her] climax.",
+			"оральный секс (сзади)",
+			"оральный секс (сзади)",
+			"[npc.Name] [npc.verb(reach)] вверх и [npc.verb(place)] [npc.hand] на одном из [npc2.namePos] [npc2.legs], после чего издает [npc.a_moan+], пока [npc.she] [npc.verb(prepare)] достигает [npc.her] кульминации.",
 			false,
 			SexSlotTag.PERFORMING_ORAL_BEHIND) {
 		@Override
@@ -183,8 +183,8 @@ public class SexSlotStanding {
 	};
 
 	public static final SexSlot PERFORMING_ORAL_BEHIND_TWO = new SexSlot(
-			"Performing oral (behind)",
-			"performing oral (2nd behind)",
+			"оральный секс (сзади)",
+			"оральный секс (2-я позиция сзади)",
 			null,
 			false,
 			SexSlotTag.PERFORMING_ORAL_BEHIND) {
@@ -195,8 +195,8 @@ public class SexSlotStanding {
 	};
 
 	public static final SexSlot PERFORMING_ORAL_BEHIND_THREE = new SexSlot(
-			"Performing oral (behind)",
-			"performing oral (3rd behind)",
+			"оральный секс (сзади)",
+			"оральный секс (3-я позиция сзади)",
 			null,
 			false,
 			SexSlotTag.PERFORMING_ORAL_BEHIND) {
@@ -207,8 +207,8 @@ public class SexSlotStanding {
 	};
 
 	public static final SexSlot PERFORMING_ORAL_BEHIND_FOUR = new SexSlot(
-			"Performing oral (behind)",
-			"performing oral (4th behind)",
+			"оральный секс (сзади)",
+			"оральный секс (4-я позиция сзади)",
 			null,
 			false,
 			SexSlotTag.PERFORMING_ORAL_BEHIND) {

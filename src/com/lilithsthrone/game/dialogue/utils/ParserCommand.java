@@ -57,7 +57,7 @@ public abstract class ParserCommand {
 	}
 	
 	public String getArgumentExample() {
-		return "Example argument";
+		return "Пример аргумента";
 	}
 
 	public String getExampleBeforeParse(String target, String arguments) {
@@ -85,6 +85,6 @@ public abstract class ParserCommand {
 		if(descriptor==null)
 			return input;
 		
-		return (descriptor.length() > 0 ? descriptor + " " : (UtilText.isVowel(input.charAt(0))?"an ":"a ")) + input;
+		return (descriptor.length() > 0 ? descriptor + " " : (UtilText.isVowel(input.charAt(0))?"":"")) + input;
 	}
 }

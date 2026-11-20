@@ -317,7 +317,7 @@ public class ImpFortressDialogue {
 				
 				imp = new ImpAttacker(Subspecies.IMP_ALPHA, Gender.F_P_V_B_FUTANARI, false);
 //				impAdjectives.add(Main.game.getCharacterUtils().setGenericName(imp, impAdjectives));
-				imp.setGenericName("alpha-imp archer");
+				imp.setGenericName("альфа-бес лучник");
 				imp.setLevel(8+Util.random.nextInt(3)); // 8-10
 				Main.game.addNPC(imp, false);
 				imp.equipMainWeaponFromNowhere(Main.game.getItemGen().generateWeapon("innoxia_bow_shortbow", Util.randomItemFrom(new DamageType[] {DamageType.POISON, DamageType.FIRE})));
@@ -393,7 +393,7 @@ public class ImpFortressDialogue {
 				
 				imp = new ImpAttacker(Subspecies.IMP_ALPHA, Gender.F_P_V_B_FUTANARI, false);
 //				impAdjectives.add(Main.game.getCharacterUtils().setGenericName(imp, impAdjectives));
-				imp.setGenericName("alpha-imp archer");
+				imp.setGenericName("альфа-бес лучник");
 				imp.setLevel(8+Util.random.nextInt(3)); // 8-10
 				Main.game.addNPC(imp, false);
 				imp.equipMainWeaponFromNowhere(Main.game.getItemGen().generateWeapon("innoxia_bow_shortbow", Util.randomItemFrom(new DamageType[] {DamageType.POISON, DamageType.FIRE})));
@@ -662,14 +662,14 @@ public class ImpFortressDialogue {
 		if(fortress==WorldType.IMP_FORTRESS_ALPHA) {
 			try {
 				ImpAttacker imp = new ImpAttacker(Subspecies.IMP_ALPHA, Gender.F_P_V_B_FUTANARI, false);
-				imp.setGenericName("alpha-imp leader");
+				imp.setGenericName("вожак альфа-бесов");
 				imp.setLevel(12+Util.random.nextInt(3)); // 12-14
 				Main.game.addNPC(imp, false);
 				imp.equipMainWeaponFromNowhere(Main.game.getItemGen().generateWeapon(WeaponType.getWeaponTypeFromId("innoxia_pipe_pipe")));
 				impGroup.add(imp);
 				
 				imp = new ImpAttacker(Subspecies.IMP_ALPHA, Gender.F_P_V_B_FUTANARI, false);
-				imp.setGenericName("alpha-imp archer");
+				imp.setGenericName("альфа-бес лучник");
 				imp.setLevel(8+Util.random.nextInt(3)); // 8-10
 				Main.game.addNPC(imp, false);
 				imp.equipMainWeaponFromNowhere(Main.game.getItemGen().generateWeapon("innoxia_bow_shortbow", Util.randomItemFrom(new DamageType[] {DamageType.POISON, DamageType.FIRE})));
@@ -692,7 +692,7 @@ public class ImpFortressDialogue {
 		} else if(fortress==WorldType.IMP_FORTRESS_FEMALES) {
 			try {
 				ImpAttacker imp = new ImpAttacker(Subspecies.IMP_ALPHA, Gender.F_V_B_FEMALE, false);
-				imp.setGenericName("alpha-imp leader");
+				imp.setGenericName("вожак альфа-бесов");
 				imp.setLevel(12+Util.random.nextInt(3)); // 12-14
 				Main.game.addNPC(imp, false);
 				impGroup.add(imp);
@@ -720,7 +720,7 @@ public class ImpFortressDialogue {
 		} else if(fortress==WorldType.IMP_FORTRESS_MALES) {
 			try {
 				ImpAttacker imp = new ImpAttacker(Subspecies.IMP_ALPHA, Gender.M_P_MALE, false);
-				imp.setGenericName("alpha-imp leader");
+				imp.setGenericName("вожак альфа-бесов");
 				imp.setLevel(12+Util.random.nextInt(3)); // 12-14
 				Main.game.addNPC(imp, false);
 				imp.equipMainWeaponFromNowhere(Main.game.getItemGen().generateWeapon(WeaponType.getWeaponTypeFromId("innoxia_pipe_pipe")));
@@ -728,7 +728,7 @@ public class ImpFortressDialogue {
 				impGroup.add(imp);
 				
 				imp = new ImpAttacker(Subspecies.IMP_ALPHA, Gender.M_P_MALE, false);
-				imp.setGenericName("alpha-imp brawler");
+				imp.setGenericName("альфа-бес боец");
 				imp.setLevel(8+Util.random.nextInt(3)); // 8-10
 				Main.game.addNPC(imp, false);
 				imp.equipMainWeaponFromNowhere(Main.game.getItemGen().generateWeapon(WeaponType.getWeaponTypeFromId("innoxia_pipe_pipe")));
@@ -756,19 +756,19 @@ public class ImpFortressDialogue {
 		
 		if(isAlphaFortress()) {
 			// Alpha imp group encounter:
-			idSB.append("Alpha");
+			idSB.append("Альфа");
 			
 		} else if(isFemalesFortress()) {
 			// Female imps encounter:
-			idSB.append("Females");
+			idSB.append("Женщины");
 			
 		} else {
 			// Male imps encounter:
-			idSB.append("Males");
+			idSB.append("Мужчины");
 		}
 		
 		if(isCompanionDialogue()) {
-			idSB.append("Companions");
+			idSB.append("Спутники");
 		}
 		return idSB.toString();
 	}
@@ -776,7 +776,7 @@ public class ImpFortressDialogue {
 	public static String getGuardsDialogueEncounterId() {
 		StringBuilder idSB = new StringBuilder();
 		if(isCompanionDialogue()) {
-			idSB.append("Companions");
+			idSB.append("Спутники");
 		}
 		return idSB.toString();
 	}
@@ -1065,7 +1065,7 @@ public class ImpFortressDialogue {
 	
 	// Dialogues:
 	
-	public static final DialogueNode ENTRANCE = new DialogueNode("Gateway", "", false) {
+	public static final DialogueNode ENTRANCE = new DialogueNode("Ворота", "", false) {
 		@Override
 		public void applyPreParsingEffects() {
 			if(Main.game.getPlayer().getRace()==Race.DEMON) {
@@ -1123,7 +1123,7 @@ public class ImpFortressDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(isGuardsPacified() || isGuardsDefeated()) {
 				if (index == 1) {
-					return new Response("Leave", "Head back out into the tunnels.", getSubmissionFortress().getDialogue(false)) {
+					return new Response("Уйти", "Вернуться обратно в туннели.", getSubmissionFortress().getDialogue(false)) {
 						@Override
 						public void effects() {
 							if(isGuardsDefeated() && !isDefeated()) {
@@ -1137,12 +1137,12 @@ public class ImpFortressDialogue {
 				} else if(!isGuardsDefeated()) {
 					if(index==2) {
 						if(!isOralAvailable()) {
-							return new Response(isCompanionDialogue()?"Offer oral (solo)":"Offer oral", "As you are unable to access your mouth, you cannot offer to perform oral sex on the imps!", null);
+							return new Response(isCompanionDialogue()?"Предложить оральный (соло)":"Предложить оральный секс", "Так как вы не можете пошевелить ртом, вы не можете предложить бесам отсосать!", null);
 						}
-						return new ResponseSex(isCompanionDialogue()?"Offer oral (solo)":"Offer oral",
+						return new ResponseSex(isCompanionDialogue()?"Предложить оральный (соло)":"Предложить оральный секс",
 								isGuardsPacifiedBySex()
-									?"Agree with the imp's taunts, and offer to perform oral sex on them again."
-									:"Offer to perform oral sex on the imps.",
+									?"Согласиться с насмешками беса и снова предложить ему отсосать."
+									:"Предложить бесам отсосать.",
 								true,
 								false,
 								getImpGuards(),
@@ -1161,20 +1161,20 @@ public class ImpFortressDialogue {
 						
 					} else if(index==3 && !isGuardsDefeated() && isCompanionDialogue()) {
 						if(!isOralAvailable()) {
-							return new Response("Offer oral (both)", "As you are unable to access your mouth, you cannot offer to perform oral sex on the imps!", null);
+							return new Response("Предложить оральный (обоим)", "Так как вы не можете пошевелить ртом, вы не можете предложить бесам отсосать!", null);
 						}
 						if(!isOralAvailableCompanion()) {
-							return new Response("Offer oral (both)", UtilText.parse(getMainCompanion(), "As [npc.nameIsFull] unable to access [npc.her] mouth, [npc.she] cannot perform oral sex on the imps!"), null);
+							return new Response("Предложить оральный (обоим)", UtilText.parse(getMainCompanion(), "Так как [npc.nameIsFull] не может пошевелить [npc.her] ртом, [npc.she] не может предложить бесам отсосать!"), null);
 						}
 						if(!getMainCompanion().isAttractedTo(getImpGuardLeader()) && getMainCompanion().isAbleToRefuseSexAsCompanion()) {
-							return new Response("Offer oral (both)",
-									UtilText.parse(getMainCompanion(), "[npc.Name] is not interested in performing oral sex on the imps, and as [npc.sheIs] not a slave, you can't force [npc.herHim] to do so..."), null);
+							return new Response("Предложить оральный (обоим)",
+									UtilText.parse(getMainCompanion(), "[npc.Name] не горит желанием делать бесам минет, а так как [npc.sheIs] не рабыня, ты не можешь заставить [npc.herHim] делать это..."), null);
 							
 						} else {
-							return new ResponseSex("Offer oral (both)",
+							return new ResponseSex("Предложить оральный (обоим)",
 									isGuardsPacifiedBySex()
-										?UtilText.parse(getMainCompanion(), "Agree with the imp's taunts, and tell them that you and [npc.name] are willing to perform oral sex on them again.")
-										:UtilText.parse(getMainCompanion(), "Tell the imps that both you and [npc.name] want to perform oral sex on them."),
+										?UtilText.parse(getMainCompanion(), "Согласиться с насмешками бесов и сказать им, что ты и [npc.name] готовы снова сделать им минет.")
+										:UtilText.parse(getMainCompanion(), "Сказать бесам, что и ты, и [npc.name] хотите сделать им минет."),
 									true,
 									false,
 									getImpGuards(),
@@ -1193,7 +1193,7 @@ public class ImpFortressDialogue {
 						}
 						
 					} else if(isCompanionDialogue()?index==4:index==3) {
-						return new ResponseCombat("Attack", "Change your mind about not wanting to fight the imps, and decide to teach them a lesson!", getImpGuardLeader(), getImpGuards(), null);
+						return new ResponseCombat("Атаковать", "Передумать насчет нежелания сражаться с бесами и решить проучить их!", getImpGuardLeader(), getImpGuards(), null);
 					}
 				}
 				return null;
@@ -1201,10 +1201,10 @@ public class ImpFortressDialogue {
 			} else {
 				if (index == 1) {
 					if(Main.game.getPlayer().getTrueRace()==Race.DEMON) {
-						return new Response("Command",
+						return new Response("Приказать",
 								Main.game.getPlayer().getRace()==Race.DEMON
-									?"The imps seem incredibly nervous at the prospect of being confronted by a demon. Use this to your advantage and order them to step aside."
-									:"Reveal your true demonic form to the imps and order them to step aside.",
+									?"Бесы кажутся невероятно нервными при мысли о противостоянии с демоном. Используй это в своих интересах и прикажи им расступиться."
+									:"Явить бесам свой истинный демонический облик и приказать им расступиться.",
 								ENTRANCE_DEMONIC_COMMAND) {
 							@Override
 							public void effects() {
@@ -1214,15 +1214,15 @@ public class ImpFortressDialogue {
 						};
 						
 					} else {
-						return new Response("Command",
-								"If you were a demon, perhaps you'd be able to intimidate the imps. As you're not, however, it looks like you're going to have to fight them...",
+						return new Response("Приказать",
+								"Будь ты демоном, возможно, тебе бы удалось запугать бесов. Но так как ты им не являешься, похоже, придется вступить с ними в бой...",
 								null);
 					}
 	
 				} else if(index==2) {
 					if(Main.game.getPlayer().isElementalSummoned()) {
-						return new Response("Elemental",
-								UtilText.parse("Intimidate the imps by drawing attention to the fact that you are powerful enough to have a summoned elemental with you..."), ENTRANCE_ELEMENTAL) {
+						return new Response("Элементаль",
+								UtilText.parse("Запугать бесов, указав на то, что ты достаточно сильна, чтобы иметь при себе призванного элементаля..."), ENTRANCE_ELEMENTAL) {
 							@Override
 							public void effects() {
 								Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/submission/fortressImpGuards"+getGuardsDialogueEncounterId(), "ENTRANCE_ELEMENTAL_INTIMIDATE",
@@ -1236,7 +1236,7 @@ public class ImpFortressDialogue {
 							|| (Main.game.getPlayer().hasSpell(Spell.ELEMENTAL_FIRE) && Main.game.getPlayer().getMana()>=Spell.ELEMENTAL_FIRE.getModifiedCost(Main.game.getPlayer()))
 							|| (Main.game.getPlayer().hasSpell(Spell.ELEMENTAL_EARTH) && Main.game.getPlayer().getMana()>=Spell.ELEMENTAL_EARTH.getModifiedCost(Main.game.getPlayer()))
 							|| (Main.game.getPlayer().hasSpell(Spell.ELEMENTAL_WATER) && Main.game.getPlayer().getMana()>=Spell.ELEMENTAL_WATER.getModifiedCost(Main.game.getPlayer()))) {
-						return new Response("Elemental", UtilText.parse(getBoss(), "Intimidate the imps by summoning your elemental in front of them."), ENTRANCE_ELEMENTAL) {
+						return new Response("Элементаль", UtilText.parse(getBoss(), "Запугать бесов, призвав своего элементаля прямо перед ними."), ENTRANCE_ELEMENTAL) {
 							@Override
 							public void effects() {
 								List<Spell> elementalSpells = Util.newArrayListOfValues(Spell.ELEMENTAL_AIR, Spell.ELEMENTAL_ARCANE, Spell.ELEMENTAL_FIRE, Spell.ELEMENTAL_EARTH, Spell.ELEMENTAL_WATER);
@@ -1255,18 +1255,18 @@ public class ImpFortressDialogue {
 						};
 						
 					} else {
-						return new Response("Elemental", UtilText.parse(getBoss(), "You'd need to have an elemental summoned, or know such a spell and have enough aura to cast it, if you wanted to intimidate [npc.name]..."), null);
+						return new Response("Элементаль", UtilText.parse(getBoss(), "Чтобы запугать [npc.name], вам нужно было бы иметь призванного элементаля или знать такое заклинание и обладать достаточным количеством ауры, чтобы его сотворить..."), null);
 					}
 					
 				} else if(index==3) {
-					return new ResponseCombat("Attack", "Defend yourself against the imps!", getImpGuardLeader(), getImpGuards(), null);
+					return new ResponseCombat("Атаковать", "Защищаться от бесов!", getImpGuardLeader(), getImpGuards(), null);
 					
 				} else if(index==4) {
 					if(!isOralAvailable()) {
-						return new Response(isCompanionDialogue()?"Offer oral (solo)":"Offer oral", "As you are unable to access your mouth, you cannot offer to perform oral sex on the imps!", null);
+						return new Response(isCompanionDialogue()?"Предложить оральный (соло)":"Предложить оральный секс", "Так как вы не можете пошевелить ртом, вы не можете предложить бесам отсосать!", null);
 					}
-					return new ResponseSex(isCompanionDialogue()?"Offer oral (solo)":"Offer oral",
-							"Offer to perform oral sex on the imps in exchange for them letting you into the fortress.",
+					return new ResponseSex(isCompanionDialogue()?"Предложить оральный (соло)":"Предложить оральный секс",
+							"Предложить бесам отсосать им в обмен на то, что они пропустят вас в крепость.",
 							true,
 							false,
 							getImpGuards(),
@@ -1285,18 +1285,18 @@ public class ImpFortressDialogue {
 					
 				} else if(index==5 && isCompanionDialogue()) {
 					if(!isOralAvailable()) {
-						return new Response("Offer oral (both)", "As you are unable to access your mouth, you cannot offer to perform oral sex on the imps!", null);
+						return new Response("Предложить оральный (обоим)", "Так как вы не можете пошевелить ртом, вы не можете предложить бесам отсосать!", null);
 					}
 					if(!isOralAvailableCompanion()) {
-						return new Response("Offer oral (both)", UtilText.parse(getMainCompanion(), "As [npc.nameIsFull] unable to access [npc.her] mouth, [npc.she] cannot perform oral sex on the imps!"), null);
+						return new Response("Предложить оральный (обоим)", UtilText.parse(getMainCompanion(), "Так как [npc.nameIsFull] не может пошевелить [npc.her] ртом, [npc.she] не может предложить бесам отсосать!"), null);
 					}
 					if(!getMainCompanion().isAttractedTo(getImpGuardLeader()) && getMainCompanion().isAbleToRefuseSexAsCompanion()) {
-						return new Response("Offer oral (both)",
-								UtilText.parse(getMainCompanion(), "[npc.Name] is not interested in performing oral sex on the imps, and as [npc.sheIs] not a slave, you can't force [npc.herHim] to do so..."), null);
+						return new Response("Предложить оральный (обоим)",
+								UtilText.parse(getMainCompanion(), "[npc.Name] не горит желанием делать бесам минет, а так как [npc.sheIs] не рабыня, ты не можешь заставить [npc.herHim] делать это..."), null);
 						
 					} else {
-						return new ResponseSex("Offer oral (both)",
-								UtilText.parse(getMainCompanion(), "Tell the imps that both you and [npc.name] will perform oral sex on them in exchange for being let into the fortress."),
+						return new ResponseSex("Предложить оральный (обоим)",
+								UtilText.parse(getMainCompanion(), "Сказать бесам, что и вы, и [npc.name] отсосете им в обмен на то, что они пропустят вас в крепость."),
 								true,
 								false,
 								getImpGuards(),
@@ -1321,7 +1321,7 @@ public class ImpFortressDialogue {
 		}
 	};
 	
-	public static final DialogueNode GUARDS_AFTER_ORAL_FOR_ENTRY = new DialogueNode("Finished", ".", false) {
+	public static final DialogueNode GUARDS_AFTER_ORAL_FOR_ENTRY = new DialogueNode("Завершено", ".", false) {
 
 		@Override
 		public String getContent() {
@@ -1339,7 +1339,7 @@ public class ImpFortressDialogue {
 	};
 
 	
-	public static final DialogueNode GUARDS_AFTER_ORAL_FOR_ENTRY_WITH_COMPANION = new DialogueNode("Finished", ".", false) {
+	public static final DialogueNode GUARDS_AFTER_ORAL_FOR_ENTRY_WITH_COMPANION = new DialogueNode("Завершено", ".", false) {
 
 		@Override
 		public String getContent() {
@@ -1379,7 +1379,7 @@ public class ImpFortressDialogue {
 	};
 
 	
-	public static final DialogueNode ENTRANCE_ELEMENTAL = new DialogueNode("Keep", "", true, true) {
+	public static final DialogueNode ENTRANCE_ELEMENTAL = new DialogueNode("Цитадель", "", true, true) {
 		@Override
 		public int getSecondsPassed() {
 			return 60;
@@ -1391,7 +1391,7 @@ public class ImpFortressDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue", "Now that these imps have been suitably intimidated, you're free to continue on your way into the fortress.", Main.game.getDefaultDialogue()) {
+				return new Response("Продолжить", "Теперь, когда эти бесы были должным образом запуганы, вы вольны продолжать свой путь в крепость.", Main.game.getDefaultDialogue()) {
 					@Override
 					public void effects() {
 						Main.game.appendToTextStartStringBuilder(UtilText.parseFromXMLFile("places/submission/fortressImpGuards"+getGuardsDialogueEncounterId(), "ENTRANCE_ELEMENTAL_CONTINUE", getAllCharacters()));
@@ -1420,11 +1420,11 @@ public class ImpFortressDialogue {
 	};
 
 	
-	public static final DialogueNode GUARDS_AFTER_COMBAT_VICTORY = new DialogueNode("Victory", ".", true) {
+	public static final DialogueNode GUARDS_AFTER_COMBAT_VICTORY = new DialogueNode("Победа", ".", true) {
 
 		@Override
 		public String getDescription() {
-			return "You have defeated the imps!";
+			return "Ты одолел бесов!";
 		}
 
 		@Override
@@ -1439,13 +1439,13 @@ public class ImpFortressDialogue {
 		public String getResponseTabTitle(int index) {
 			if(!getImpGuards().isEmpty()) {
 				if(index==0) {
-					return "Interactions";
+					return "Взаимодействие";
 					
 				} else if(index==1) {
-					return "Inventories";
+					return "Инвентарь";
 					
 				} else if(index==2) {
-					return "Transformations";
+					return "Трансформации";
 					
 				}
 			}
@@ -1456,14 +1456,14 @@ public class ImpFortressDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(getImpGuards().isEmpty()) {
 				if(index==1) {
-					return new Response("Continue", "As you've enslaved the imp guards, there's nothing left to do but continue on your way into the fortress...", Main.game.getDefaultDialogue(false));
+					return new Response("Продолжить", "Поскольку вы поработили бесов-стражников, остается только продолжать свой путь в крепость...", Main.game.getDefaultDialogue(false));
 				}
 				return null;
 			}
 			if(!isCompanionDialogue()) {
 				if(responseTab == 0) {
 					if (index == 1) {
-						return new Response("Scare off", "Tell the imps to get out of here while they still can.", Main.game.getDefaultDialogue(false)) {
+						return new Response("Запугать", "Приказать бесам убираться отсюда, пока они еще могут.", Main.game.getDefaultDialogue(false)) {
 							@Override
 							public void effects() {
 								Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/submission/fortressImpGuards"+getGuardsDialogueEncounterId(), "GUARDS_AFTER_COMBAT_VICTORY_SCARE_OFF", getAllCharacters()));
@@ -1472,8 +1472,8 @@ public class ImpFortressDialogue {
 						};
 						
 					} else if (index == 2) {
-						return new ResponseSex("Sex",
-								"Well, they <i>are</i> asking for it!",
+						return new ResponseSex("Секс",
+								"Ну, они сами <i>напрашиваются</i>!",
 								true,
 								false,
 								getPartyForSex(),
@@ -1483,8 +1483,8 @@ public class ImpFortressDialogue {
 								GUARDS_AFTER_SEX_VICTORY, UtilText.parseFromXMLFile("places/submission/fortressImpGuards"+getGuardsDialogueEncounterId(), "GUARDS_COMBAT_VICTORY_SEX", getAllCharacters()));
 						
 					} else if (index == 3) {
-						return new ResponseSex("Gentle Sex",
-								"Well, they <i>are</i> asking for it!",
+						return new ResponseSex("Нежный секс",
+								"Ну, они сами <i>напрашиваются</i>!",
 								true,
 								false,
 								getPartyForSex(),
@@ -1495,8 +1495,8 @@ public class ImpFortressDialogue {
 								UtilText.parseFromXMLFile("places/submission/fortressImpGuards"+getGuardsDialogueEncounterId(), "GUARDS_COMBAT_VICTORY_SEX_GENTLE", getAllCharacters()), ResponseTag.START_PACE_PLAYER_DOM_GENTLE);
 						
 					} else if (index == 4) {
-						return new ResponseSex("Rough Sex",
-								"Well, they <i>are</i> asking for it!",
+						return new ResponseSex("Грубый секс",
+								"Ну, они сами <i>напрашиваются</i>!",
 								true,
 								false,
 								getPartyForSex(),
@@ -1507,8 +1507,8 @@ public class ImpFortressDialogue {
 								UtilText.parseFromXMLFile("places/submission/fortressImpGuards"+getGuardsDialogueEncounterId(), "GUARDS_COMBAT_VICTORY_SEX_ROUGH", getAllCharacters()), ResponseTag.START_PACE_PLAYER_DOM_ROUGH);
 						
 					} else if (index == 5) {
-						return new ResponseSex("Submit",
-								"You're not really sure what to do now... Perhaps it would be best to let the imps choose what to do next...",
+						return new ResponseSex("Подчиниться",
+								"Ты не совсем понимаешь, что делать дальше... Возможно, лучше позволить бесам самим решить, что делать...",
 								Util.newArrayListOfValues(Fetish.FETISH_SUBMISSIVE),
 								null,
 								Fetish.FETISH_SUBMISSIVE.getAssociatedCorruptionLevel(),
@@ -1529,7 +1529,7 @@ public class ImpFortressDialogue {
 						if(index==i) {
 							NPC imp = (NPC) getImpGuards().get(i-1);
 							return new ResponseEffectsOnly(UtilText.parse(imp, "[npc.Name]"),
-									UtilText.parse(imp, "Now that you've defeated [npc.name], there's nothing stopping you from helping yourself to [npc.her] clothing and items...")) {
+									UtilText.parse(imp, "Теперь, когда ты одолел(а) [npc.name], ничто не мешает тебе полакомиться одеждой и вещами [npc.her]...")) {
 								@Override
 								public void effects() {
 									Main.mainController.openInventory(imp, InventoryInteraction.FULL_MANAGEMENT);
@@ -1543,7 +1543,7 @@ public class ImpFortressDialogue {
 						if(index==i) {
 							NPC imp = (NPC) getImpGuards().get(i-1);
 							return new Response(UtilText.parse(imp, "[npc.Name]"),
-									UtilText.parse(imp, "Take a very detailed look at what [npc.name] can transform [npc.herself] into..."),
+									UtilText.parse(imp, "Внимательно рассмотреть, в кого [npc.name] может превратить [npc.herself]..."),
 									BodyChanging.BODY_CHANGING_CORE){
 								@Override
 								public void effects() {
@@ -1561,7 +1561,7 @@ public class ImpFortressDialogue {
 
 				if(responseTab == 0) {
 					if (index == 1) {
-						return new Response("Scare off", "Tell the imps to get out of here while they still can...", Main.game.getDefaultDialogue(false)) {
+						return new Response("Запугать", "Приказать бесам убираться отсюда, пока не поздно...", Main.game.getDefaultDialogue(false)) {
 							@Override
 							public void effects() {
 								banishImpGuards();
@@ -1569,8 +1569,8 @@ public class ImpFortressDialogue {
 						};
 						
 					} else if (index == 2) {
-						return new ResponseSex("Solo sex",
-								UtilText.parse(getMainCompanion(), "Tell [npc.name] to stand to one side and watch as you have sex with the imps."),
+						return new ResponseSex("Соло-секс",
+								UtilText.parse(getMainCompanion(), "Приказать [npc.name] отойти в сторону и наблюдать, как вы грубо трахаетесь с бесами."),
 								true,
 								false,
 								Util.newArrayListOfValues(Main.game.getPlayer()),
@@ -1580,8 +1580,8 @@ public class ImpFortressDialogue {
 								GUARDS_AFTER_SEX_VICTORY, UtilText.parseFromXMLFile("places/submission/fortressImpGuards"+getGuardsDialogueEncounterId(), "GUARDS_COMBAT_VICTORY_SEX", getAllCharacters()));
 						
 					} else if (index == 3) {
-						return new ResponseSex("Solo sex (Gentle)",
-								UtilText.parse(getMainCompanion(), "Tell [npc.name] to stand to one side and watch as you have sex with the imps."),
+						return new ResponseSex("Соло-секс (Нежный)",
+								UtilText.parse(getMainCompanion(), "Приказать [npc.name] отойти в сторону и наблюдать, как вы грубо трахаетесь с бесами."),
 								true,
 								false,
 								Util.newArrayListOfValues(Main.game.getPlayer()),
@@ -1592,8 +1592,8 @@ public class ImpFortressDialogue {
 								UtilText.parseFromXMLFile("places/submission/fortressImpGuards"+getGuardsDialogueEncounterId(), "GUARDS_COMBAT_VICTORY_SEX_GENTLE", getAllCharacters()), ResponseTag.START_PACE_PLAYER_DOM_GENTLE);
 						
 					} else if (index == 4) {
-						return new ResponseSex("Solo sex (Rough)",
-								UtilText.parse(getMainCompanion(), "Tell [npc.name] to stand to one side and watch as you have sex with the imps."),
+						return new ResponseSex("Соло-секс (Грубый)",
+								UtilText.parse(getMainCompanion(), "Приказать [npc.name] отойти в сторону и наблюдать, как вы грубо трахаетесь с бесами."),
 								true,
 								false,
 								Util.newArrayListOfValues(Main.game.getPlayer()),
@@ -1604,8 +1604,8 @@ public class ImpFortressDialogue {
 								UtilText.parseFromXMLFile("places/submission/fortressImpGuards"+getGuardsDialogueEncounterId(), "GUARDS_COMBAT_VICTORY_SEX_ROUGH", getAllCharacters()), ResponseTag.START_PACE_PLAYER_DOM_ROUGH);
 						
 					} else if (index == 5) {
-						return new ResponseSex("Solo submission",
-								UtilText.parse(getMainCompanion(), "Tell [npc.name] to stand to one side and watch as you submit to the imps, allowing them to have dominant sex with you."),
+						return new ResponseSex("Соло-сабмиссив",
+								UtilText.parse(getMainCompanion(), "Приказать [npc.name] отойти в сторону и наблюдать, как вы подчиняетесь бесам, позволяя им доминировать над вами во время секса."),
 								Util.newArrayListOfValues(Fetish.FETISH_SUBMISSIVE),
 								null,
 								Fetish.FETISH_SUBMISSIVE.getAssociatedCorruptionLevel(),
@@ -1625,12 +1625,12 @@ public class ImpFortressDialogue {
 						GameCharacter companion = getMainCompanion();
 
 						if(!companion.isAttractedTo(getImpGuardLeader()) && companion.isAbleToRefuseSexAsCompanion()) {
-							return new Response("Group sex",
-									UtilText.parse(companion, "[npc.Name] is not interested in having sex with the imps, and as [npc.sheIs] not a slave, you can't force [npc.herHim] to do so..."), null);
+							return new Response("Групповой секс",
+									UtilText.parse(companion, "[npc.Name] не заинтересована в сексе с бесами, а так как [npc.sheIs] не рабыня, вы не можете заставить [npc.herHim] сделать это..."), null);
 							
 						} else {
-							return new ResponseSex(UtilText.parse(companion, "Group sex"),
-									UtilText.parse(companion, "Have dominant sex with the imps, and get [npc.name] to join in with the fun."),
+							return new ResponseSex(UtilText.parse(companion, "Групповой секс"),
+									UtilText.parse(companion, "Занимайтесь доминирующим сексом с бесами и заставьте [npc.name] присоединиться к веселью."),
 									true,
 									false,
 									getPartyForSex(),
@@ -1644,12 +1644,12 @@ public class ImpFortressDialogue {
 						GameCharacter companion = getMainCompanion();
 
 						if(!companion.isAttractedTo(getImpGuardLeader()) && companion.isAbleToRefuseSexAsCompanion()) {
-							return new Response("Group submission",
-									UtilText.parse(companion, "[npc.Name] is not interested in having sex with the imps, and as [npc.sheIs] not a slave, you can't force [npc.herHim] to do so..."), null);
+							return new Response("Групповое подчинение",
+									UtilText.parse(companion, "[npc.Name] не заинтересована в сексе с бесами, а так как [npc.sheIs] не рабыня, вы не можете заставить [npc.herHim] сделать это..."), null);
 							
 						} else {
-							return new ResponseSex(UtilText.parse(companion, "Group submission"),
-									UtilText.parse(companion, "Get [npc.name] to join you in submitting to the imps, allowing them to have dominant sex with the two of you."),
+							return new ResponseSex(UtilText.parse(companion, "Групповое подчинение"),
+									UtilText.parse(companion, "Заставьте [npc.name] подчиниться бесам вместе с вами, позволяя им доминировать над вами обоими."),
 									true,
 									false,
 									getImpGuards(),
@@ -1663,12 +1663,12 @@ public class ImpFortressDialogue {
 						GameCharacter companion = getMainCompanion();
 
 						if(!companion.isAttractedTo(getImpGuardLeader()) && companion.isAbleToRefuseSexAsCompanion()) {
-							return new Response(UtilText.parse(companion, "Give to [npc.name]"),
-									UtilText.parse(companion, "[npc.Name] is not interested in having sex with the imps, and as [npc.sheIs] not a slave, you can't force [npc.herHim] to do so..."), null);
+							return new Response(UtilText.parse(companion, "Отдать [npc.name]"),
+									UtilText.parse(companion, "[npc.Name] не заинтересована в сексе с бесами, а так как [npc.sheIs] не рабыня, вы не можете заставить [npc.herHim] сделать это..."), null);
 							
 						} else {
-							return new ResponseSex(UtilText.parse(companion, "Give to [npc.name]"),
-									UtilText.parse(companion, "Tell [npc.name] that [npc.she] can have some fun with the imps while you watch."),
+							return new ResponseSex(UtilText.parse(companion, "Отдать [npc.name]"),
+									UtilText.parse(companion, "Скажите [npc.name], что [npc.she] может немного повеселиться с бесами, пока вы наблюдаете."),
 									false,
 									false,
 									Util.newArrayListOfValues(getMainCompanion()),
@@ -1682,13 +1682,13 @@ public class ImpFortressDialogue {
 						GameCharacter companion = getMainCompanion();
 						
 						if(!companion.isAttractedTo(getImpGuardLeader()) && companion.isAbleToRefuseSexAsCompanion()) {
-							return new Response(UtilText.parse(companion, "Offer [npc.name]"),
-									UtilText.parse(companion, "You can tell that [npc.name] isn't at all interested in having sex with the imps, and you can't force [npc.herHim] to do so..."),
+							return new Response(UtilText.parse(companion, "Предложить [npc.name]"),
+									UtilText.parse(companion, "Вы видите, что [npc.name] совсем не заинтересована в сексе с бесами, и не можете заставить [npc.herHim] сделать это..."),
 									null);
 							
 						} else {
-							return new ResponseSex(UtilText.parse(companion, "Offer [npc.name]"),
-									UtilText.parse(companion, "Hand [npc.name] over to the imps, and watch as they have sex with [npc.herHim]."),
+							return new ResponseSex(UtilText.parse(companion, "Предложить [npc.name]"),
+									UtilText.parse(companion, "Передайте [npc.name] бесам и наблюдайте, как они трахают [npc.herHim]."),
 									true,
 									false,
 									getImpGuards(),
@@ -1714,7 +1714,7 @@ public class ImpFortressDialogue {
 						if(index==i) {
 							NPC imp = (NPC) getImpGuards().get(i-1);
 							return new ResponseEffectsOnly(UtilText.parse(imp, "[npc.Name]"),
-									UtilText.parse(imp, "Now that you've defeated [npc.name], there's nothing stopping you from helping yourself to [npc.her] clothing and items...")) {
+									UtilText.parse(imp, "Теперь, когда ты одолел(а) [npc.name], ничто не мешает тебе полакомиться одеждой и вещами [npc.her]...")) {
 								@Override
 								public void effects() {
 									Main.mainController.openInventory(imp, InventoryInteraction.FULL_MANAGEMENT);
@@ -1728,7 +1728,7 @@ public class ImpFortressDialogue {
 						if(index==i) {
 							NPC imp = (NPC) getImpGuards().get(i-1);
 							return new Response(UtilText.parse(imp, "[npc.Name]"),
-									UtilText.parse(imp, "Take a very detailed look at what [npc.name] can transform [npc.herself] into..."),
+									UtilText.parse(imp, "Внимательно рассмотреть, в кого [npc.name] может превратить [npc.herself]..."),
 									BodyChanging.BODY_CHANGING_CORE){
 								@Override
 								public void effects() {
@@ -1746,7 +1746,7 @@ public class ImpFortressDialogue {
 		}
 	};
 
-	public static final DialogueNode GUARDS_AFTER_COMBAT_DEFEAT = new DialogueNode("Defeat", ".", true) {
+	public static final DialogueNode GUARDS_AFTER_COMBAT_DEFEAT = new DialogueNode("Поражение", ".", true) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -1755,7 +1755,7 @@ public class ImpFortressDialogue {
 		
 		@Override
 		public String getDescription() {
-			return "You have been defeated by the imps!";
+			return "Вы были повержены бесами!";
 		}
 
 		@Override
@@ -1771,8 +1771,8 @@ public class ImpFortressDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(Main.game.isNonConEnabled()) {
 				if (index == 1) {
-					return new ResponseSex("Sex",
-							"Allow the imps to move you into position...",
+					return new ResponseSex("Секс",
+							"Позволь бесам принять тебя нужную позу...",
 							false,
 							false,
 							getImpGuards(),
@@ -1782,8 +1782,8 @@ public class ImpFortressDialogue {
 							GUARDS_AFTER_SEX_DEFEAT, UtilText.parseFromXMLFile("places/submission/fortressImpGuards"+getGuardsDialogueEncounterId(), "GUARDS_AFTER_COMBAT_DEFEAT_SEX", getAllCharacters()));
 					
 				} else if (index == 2) {
-					return new ResponseSex("Eager Sex",
-							"Eagerly allow yourself to be moved into position by the gang of imps...",
+					return new ResponseSex("Жажда секса",
+							"С готовностью позволь толпе бесов усадить тебя в нужное положение...",
 							false,
 							false,
 							getImpGuards(),
@@ -1794,8 +1794,8 @@ public class ImpFortressDialogue {
 							UtilText.parseFromXMLFile("places/submission/fortressImpGuards"+getGuardsDialogueEncounterId(), "GUARDS_AFTER_COMBAT_DEFEAT_SEX_EAGER", getAllCharacters()), ResponseTag.START_PACE_PLAYER_SUB_EAGER);
 					
 				} else if (index == 3 && Main.game.isNonConEnabled()) {
-					return new ResponseSex("Resist Sex",
-							"Try to resist as the gang of imps move you into position...",
+					return new ResponseSex("Сопротивляться сексу",
+							"Попытайся сопротивляться, пока толпа бесов усаживает тебя в нужное положение...",
 							false,
 							false,
 							getImpGuards(),
@@ -1808,7 +1808,7 @@ public class ImpFortressDialogue {
 				
 			} else {
 				if (index == 1) {
-					return new Response("Thrown out", "The imps abandon you and return to their fortress...", getSubmissionFortress().getDialogue(false)) {
+					return new Response("Тебя вышвыривают", "Бесы бросают вас и возвращаются в свою крепость...", getSubmissionFortress().getDialogue(false)) {
 						@Override
 						public void effects() {
 							Main.game.getPlayer().setLocation(WorldType.SUBMISSION, getSubmissionFortress());
@@ -1821,11 +1821,11 @@ public class ImpFortressDialogue {
 		}
 	};
 	
-	public static final DialogueNode GUARDS_AFTER_SEX_VICTORY = new DialogueNode("Step back", "", true) {
+	public static final DialogueNode GUARDS_AFTER_SEX_VICTORY = new DialogueNode("Отступить", "", true) {
 		
 		@Override
 		public String getDescription(){
-			return "Now that you've had your fun, you can step back and leave the imps to recover and disperse.";
+			return "Теперь, когда ты вдоволь повеселился, можно отступить и оставить бесов приходить в себя и расходиться.";
 		}
 
 		@Override
@@ -1845,7 +1845,7 @@ public class ImpFortressDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(responseTab==0) {
 				if (index == 1) {
-					return new Response("Continue", "Carry on your way.", Main.game.getDefaultDialogue(false)) {
+					return new Response("Продолжить", "Продолжить путь.", Main.game.getDefaultDialogue(false)) {
 						@Override
 						public void effects() {
 							banishImpGuards();
@@ -1861,7 +1861,7 @@ public class ImpFortressDialogue {
 		}
 	};
 	
-	public static final DialogueNode GUARDS_AFTER_SEX_DEFEAT = new DialogueNode("Collapse", "", true) {
+	public static final DialogueNode GUARDS_AFTER_SEX_DEFEAT = new DialogueNode("Свалиться", "", true) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -1870,7 +1870,7 @@ public class ImpFortressDialogue {
 		
 		@Override
 		public String getDescription(){
-			return "You're completely worn out from [npc.namePos] dominant treatment, and need a while to recover.";
+			return "Вы совершенно измотаны доминирующим напором [npc.namePos] и нуждаетесь в отдыхе, чтобы прийти в себя.";
 		}
 
 		@Override
@@ -1881,7 +1881,7 @@ public class ImpFortressDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Continue", "Carry on your way.", getSubmissionFortress().getDialogue(false)) {
+				return new Response("Продолжить", "Продолжить путь.", getSubmissionFortress().getDialogue(false)) {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setLocation(WorldType.SUBMISSION, getSubmissionFortress());
@@ -1894,7 +1894,7 @@ public class ImpFortressDialogue {
 		}
 	};
 
-	public static final DialogueNode COURTYARD = new DialogueNode("Courtyard", ".", false) {
+	public static final DialogueNode COURTYARD = new DialogueNode("Внутренний двор", ".", false) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -1914,11 +1914,11 @@ public class ImpFortressDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				if(Main.game.getPlayer().isPartyAbleToFly()) {
-					return new Response("Fly",
+					return new Response("Лететь",
 							(isDefeated()
 									|| isPacified())
-								?"As you're able to simply exit peacefully through the front gate, there's no need to do this unless you were just trying to show off..."
-								:"Fly over the wall of the fortress, thereby avoiding a confrontation with the imp guards at the gate.",
+								?"Поскольку вы можете просто мирно выйти через главные ворота, в этом нет необходимости, если только вы не пытались просто похвастаться..."
+								:"Перелететь через стену крепости, тем самым избежав столкновения с бесами-стражниками у ворот.",
 							getSubmissionFortress().getDialogue(false)) {
 						@Override
 						public void effects() {
@@ -1930,14 +1930,14 @@ public class ImpFortressDialogue {
 						}
 					};
 				} else {
-					return new Response("Fly", "Either you or a member of your party is unable to fly, so you're unable to access the fortress by flying over the walls!", null);
+					return new Response("Лететь", "Либо вы, либо кто-то из ваших спутников не умеет летать, поэтому вы не можете попасть в крепость, перелетев через стены!", null);
 				}	
 			}
 			return null;
 		}
 	};
 
-	public static final DialogueNode KEEP = new DialogueNode("Keep", ".", false) {
+	public static final DialogueNode KEEP = new DialogueNode("Цитадель", ".", false) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -1963,9 +1963,9 @@ public class ImpFortressDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				if(isDefeated() && !Main.game.getCharactersPresent().contains(getBoss())) {
-					return new Response("Enter", "The keep is deserted, and there's nothing of value inside...", null);
+					return new Response("Войти", "Цитадель пустует, и внутри нет ничего ценного...", null);
 				} else {
-					return new Response("Enter", "Push open the doors of the keep and step inside.", KEEP_ENTRY) {
+					return new Response("Войти", "Толкнуть двери цитадели и войти внутрь.", KEEP_ENTRY) {
 						@Override
 						public void effects() {
 							getBoss().setPlayerKnowsName(true);
@@ -2004,7 +2004,7 @@ public class ImpFortressDialogue {
 		return suitableWeapon;
 	}
 	
-	public static final DialogueNode KEEP_ENTRY = new DialogueNode("Keep", ".", true) {
+	public static final DialogueNode KEEP_ENTRY = new DialogueNode("Цитадель", ".", true) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -2075,7 +2075,7 @@ public class ImpFortressDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(isPacified()) {
 				if(index==1) {
-					return new Response("Leave", UtilText.parse(getBoss(), "Tell [npc.name] that you were just checking up on [npc.herHim], before quickly taking your leave."), KEEP) {
+					return new Response("Уйти", UtilText.parse(getBoss(), "Сказать [npc.name], что вы просто проверяли [npc.herHim], после чего поспешно удалиться."), KEEP) {
 						@Override
 						public void effects() {
 							Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/submission/fortress"+getDialogueEncounterId(), "KEEP_PACIFIED_LEAVE", getAllCharacters()));
@@ -2083,30 +2083,30 @@ public class ImpFortressDialogue {
 					};
 					
 				} else if(index==2) {
-					String title = "Sex";
+					String title = "Секс";
 					
 					if(isAlphaFortress()) {
 						if(isAlphaBossWantingOral(Main.game.getPlayer())) {
-							title = isCompanionDialogue()?"Suck cock (solo)":"Suck cock";
+							title = isCompanionDialogue()?"Сосать член (соло)":"Сосать член";
 						} else {
-							title = isCompanionDialogue()?"Imp sex (solo)":"Imp sex";
+							title = isCompanionDialogue()?"Секс с бесом (соло)":"Секс с бесом";
 						}
 						
 					} else if(isFemalesFortress()) {
-						title = isCompanionDialogue()?"Plaything (solo)":"Plaything";
+						title = isCompanionDialogue()?"Игрушка (соло)":"Игрушка";
 						
 					} else if(isMalesFortress()) {
 						if(isMaleBossWantingToBreed(Main.game.getPlayer())) {
-							title = isCompanionDialogue()?"Get bred (solo)":"Get bred";
+							title = isCompanionDialogue()?"Даться (соло)":"Даться";
 						} else {
-							title = isCompanionDialogue()?"Imp sex (solo)":"Imp sex";
+							title = isCompanionDialogue()?"Секс с бесом (соло)":"Секс с бесом";
 						}
 					}
 					
 					if(isAlphaFortress()) {
 						SexManagerInterface manager = getAlphaSexManager(Main.game.getPlayer());
 						return new ResponseSex(title,
-								UtilText.parse(getBoss(), "Do as [npc.name] commands, and submit to [npc.herHim] again..."),
+								UtilText.parse(getBoss(), "Делай, как велит [npc.name], и снова подчиняйся [npc.herHim]..."),
 								true,
 								false,
 								manager,
@@ -2118,7 +2118,7 @@ public class ImpFortressDialogue {
 					} else if(isMalesFortress()) {
 						SexManagerInterface manager = getMalesSexManager(Main.game.getPlayer());
 						return new ResponseSex(title,
-								UtilText.parse(getBoss(), "Do as [npc.name] commands, and submit to [npc.herHim] again..."),
+								UtilText.parse(getBoss(), "Делай, как велит [npc.name], и снова подчиняйся [npc.herHim]..."),
 								true,
 								false,
 								manager,
@@ -2128,7 +2128,7 @@ public class ImpFortressDialogue {
 								UtilText.parseFromXMLFile("places/submission/fortress"+getDialogueEncounterId(), isMaleBossWantingToBreed(Main.game.getPlayer())?"KEEP_PACIFIED_REPEAT_SEX":"KEEP_PACIFIED_REPEAT_SEX_IMPS", getAllCharacters()));
 					}
 					return new ResponseSex(title,
-							UtilText.parse(getBoss(), "Do as [npc.name] commands, and prepare to have submissive sex with [npc.herHim] again..."),
+							UtilText.parse(getBoss(), "Делай, как велит [npc.name], и готовься снова заняться покорным сексом с [npc.herHim]..."),
 							true,
 							false,
 							new SMLyingDown(
@@ -2150,36 +2150,36 @@ public class ImpFortressDialogue {
 					};
 					
 				} else if(index==3 && isCompanionDialogue()) {
-					String title = "Sex";
+					String title = "Секс";
 					
 					if(isAlphaFortress()) {
 						if(isAlphaBossWantingOral(Main.game.getPlayer())) {
-							title = "Suck cock (both)";
+							title = "Сосать член (обоим)";
 						} else {
-							title = "Imp sex (both)";
+							title = "Бесье секс (обоим)";
 						}
 						
 					} else if(isFemalesFortress()) {
-						title = "Plaything (both)";
+						title = "Игрушка (обоим)";
 						
 					} else if(isMalesFortress()) {
 						if(isMaleBossWantingToBreed(Main.game.getPlayer())) {
-							title = "Get bred (both)";
+							title = "Оплодотворение (обоим)";
 						} else {
-							title = "Imp sex (both)";
+							title = "Бесье секс (обоим)";
 						}
 					}
 					
 					
 					if(!getMainCompanion().isAttractedTo(getBoss()) && getMainCompanion().isAbleToRefuseSexAsCompanion()) {
 						return new Response(title,
-								UtilText.parse(getMainCompanion(), getBoss(), "[npc.Name] is not interested in having sex with [npc2.name], and as [npc.sheIs] not a slave, you can't force [npc.herHim] to do so..."), null);
+								UtilText.parse(getMainCompanion(), getBoss(), "[npc.Name] не заинтересован(а) в сексе с [npc2.name], а так как [npc.sheIs] не раб(а), ты не можешь заставить [npc.herHim]..."), null);
 						
 					} else {
 						if(isAlphaFortress()) {
 							SexManagerInterface manager = getAlphaSexManager(Main.game.getPlayer(), getMainCompanion());
 							return new ResponseSex(title,
-									UtilText.parse(getBoss(), getMainCompanion(), "Do as [npc.name] commands, and have [npc2.name] submit to [npc.herHim] alongside you..."),
+									UtilText.parse(getBoss(), getMainCompanion(), "Делай, как велит [npc.name], и заставь [npc2.name] подчиниться [npc.herHim] вместе с тобой..."),
 									true,
 									false,
 									manager,
@@ -2199,7 +2199,7 @@ public class ImpFortressDialogue {
 						} else if(isMalesFortress()) {
 							SexManagerInterface manager = getMalesSexManager(Main.game.getPlayer(), getMainCompanion());
 							return new ResponseSex(title,
-									UtilText.parse(getBoss(), getMainCompanion(), "Do as [npc.name] commands, and have [npc2.name] submit to [npc.herHim] alongside you..."),
+									UtilText.parse(getBoss(), getMainCompanion(), "Делай, как велит [npc.name], и заставь [npc2.name] подчиниться [npc.herHim] вместе с тобой..."),
 									true,
 									false,
 									manager,
@@ -2217,7 +2217,7 @@ public class ImpFortressDialogue {
 										getAllCharacters()));
 						}
 						return new ResponseSex(title,
-								UtilText.parse(getMainCompanion(), getBoss(), "Do as [npc2.name] commands, and prepare for both you and [npc.name] to have submissive sex with [npc2.herHim] again..."),
+								UtilText.parse(getMainCompanion(), getBoss(), "Делай так, как велит [npc2.name], и готовься к тому, что и ты, и [npc.name] снова будете заниматься подчиненным сексом с [npc2.herHim]..."),
 								true,
 								false,
 								new SMLyingDown(
@@ -2253,9 +2253,7 @@ public class ImpFortressDialogue {
 						if(Main.game.getPlayer().hasPerkAnywhereInTree(Perk.MARTIAL_ARTIST)) {
 							return new Response(Util.capitaliseSentence(Perk.MARTIAL_ARTIST.getName(Main.game.getPlayer())),
 									UtilText.parse(getBoss(),
-											"Seize this fleeting opportunity to provoke [npc.name] into trying to punch you,"
-													+ " relying on your skill as a <b style='color:"+PresetColour.TRAIT.toWebHexString()+";'>"+Perk.MARTIAL_ARTIST.getName(Main.game.getPlayer())+"</b>"
-															+ " to humiliate [npc.herHim] in front of [npc.her] imp followers."),
+											"Воспользуйся этой мимолетной возможностью спровоцировать [npc.name] на удар, полагаясь на свое мастерство <b style='color:"+PresetColour.TRAIT.toWebHexString()+";'>"+Perk.MARTIAL_ARTIST.getName(Main.game.getPlayer())+"</b> унизить [npc.herHim] на глазах у бесов-последователей [npc.her]."),
 									KEEP_ALPHA_BRAWLER) {
 								@Override
 								public void effects() {
@@ -2279,17 +2277,15 @@ public class ImpFortressDialogue {
 						} else {
 							return new Response(Util.capitaliseSentence(Perk.MARTIAL_ARTIST.getName(Main.game.getPlayer())),
 									UtilText.parse(getBoss(),
-											"You're not competent enough at fighting to try and humiliate [npc.name] in front of [npc.her] gang...</br>"
-													+ "(Requires '"+Perk.MARTIAL_ARTIST.getName(Main.game.getPlayer())+"' perk.)"),
+											"Ты недостаточно хорош в бою, чтобы пытаться унизить [npc.name] перед бандой [npc.her]...</br>(Требуется навык '"+Perk.MARTIAL_ARTIST.getName(Main.game.getPlayer())+"' нимфоманка.')"),
 									null);
 						}
 						
 					} else if(isFemalesFortress()) {
 						if(Main.game.getPlayer().hasTraitActivated(Perk.NYMPHOMANIAC)) {
-							return new Response("True nympho",
+							return new Response("Истинная нимфоманка",
 									UtilText.parse(getBoss(),
-											"Seize this fleeting opportunity to undermine [npc.namePos] authority by describing to [npc.her] gang how much fun"
-													+ " <b style='color:"+PresetColour.TRAIT.toWebHexString()+";'>Nymphomaniacs</b> can have out in Submission's tunnels."),
+											"Воспользуйся этой мимолетной возможностью подорвать авторитет [npc.namePos], рассказав [npc.her] банде, как весело было <b style='color:"+PresetColour.TRAIT.toWebHexString()+";'>нимфоманки</b> проводить время в туннелях Submission."),
 									KEEP_FEMALES_NYMPHO) {
 								@Override
 								public void effects() {
@@ -2308,16 +2304,16 @@ public class ImpFortressDialogue {
 							};
 							
 						} else {
-							return new Response("True nympho",
-									UtilText.parse(getBoss(), "You're not as sex-crazed as [npc.name], so you can't undermine [npc.her] authority in front of [npc.her] imps...</br>(Requires 'Nymphomaniac' trait.)"),
+							return new Response("Истинная нимфоманка",
+									UtilText.parse(getBoss(), "Ты не так помешана на сексе, как [npc.name], поэтому не можешь подорвать авторитет [npc.her] перед бесами [npc.her]...</br>(Требуется черта 'Нимфоманка'.)"),
 									null);
 						}
 						
 					} else {
 						if(getSuitableWeaponForCutting()!=null) {
-							return new Response("Tameshigiri",
+							return new Response("Тамесигири",
 									UtilText.parse(getBoss(),
-											"Seize this fleeting opportunity to 'test cut' the largest bamboo trunk behind [npc.name], thereby demonstrating your superiority in front of [npc.her] imp followers."),
+											"Воспользуйся этой мимолетной возможностью, чтобы «прорубить» самый толстый бамбуковый ствол за [npc.name], тем самым продемонстрировав свое превосходство перед свитой из [npc.her] бесов."),
 									KEEP_MALES_TAMESHIGIRI_MAIN) {
 								@Override
 								public void effects() {
@@ -2334,9 +2330,8 @@ public class ImpFortressDialogue {
 							};
 							
 						} else {
-							return new Response("Tameshigiri",
-									UtilText.parse(getBoss(), "You don't think you can match [npc.namePos] demonstration with your weapons...</br>"
-											+ "(Requires you to have an equipped bladed weapon with a maximum damage greater than <b>"
+							return new Response("Тамесигири",
+									UtilText.parse(getBoss(), "Ты не думаешь, что сможешь сравниться с демонстрацией [npc.namePos] своим оружием...</br>(Требуется, чтобы у тебя было экипировано клинковое оружие с максимальным уроном больше <b>)"
 												+Attack.getMaximumDamage(Main.game.getNpc(FortressMalesLeader.class), null, Attack.MAIN, Main.game.getNpc(FortressMalesLeader.class).getMainWeapon(0))+"</b>.)"),
 									null);
 						}
@@ -2347,12 +2342,12 @@ public class ImpFortressDialogue {
 					if((isAlphaFortress() && Main.game.getPlayer().hasItemType(ItemType.IMP_FORTRESS_ARCANE_KEY))
 							|| (isMalesFortress() && Main.game.getPlayer().hasItemType(ItemType.IMP_FORTRESS_ARCANE_KEY_2))
 							|| (isFemalesFortress() && Main.game.getPlayer().hasItemType(ItemType.IMP_FORTRESS_ARCANE_KEY_3))) {
-						return new Response("Dark Siren",
-								UtilText.parse(getBoss(), "You've already gained a key from [npc.name]!"),
+						return new Response("Тёмная сирена",
+								UtilText.parse(getBoss(), "Ты уже получил ключ от [npc.name]!"),
 								null);
 					}
-					return new Response("Dark Siren",
-							UtilText.parse(getBoss(), "Tell [npc.name] that you want to meet 'The Dark Siren', and ask [npc.herHim] what it would take to gain an audience with them."),
+					return new Response("Тёмная сирена",
+							UtilText.parse(getBoss(), "Скажи [npc.name], что хочешь встретиться с «Темной Сиреной», и спроси [npc.herHim], что нужно сделать, чтобы получить аудиенцию у неё."),
 							KEEP_AUDIENCE) {
 						@Override
 						public void effects() {
@@ -2361,7 +2356,7 @@ public class ImpFortressDialogue {
 					};
 
 				} else if(darkSirenActionAvailable?index==3:index==2) {
-					return new ResponseCombat("Attack", UtilText.parse(getBoss(), "Defend yourself against [npc.name] and [npc.her] minions!"),
+					return new ResponseCombat("Атаковать", UtilText.parse(getBoss(), "Защищайся от приспешников [npc.name] и [npc.her]!"),
 							(NPC) getBoss(),
 							getImpBossGroup(true), null) {
 						@Override
@@ -2373,10 +2368,10 @@ public class ImpFortressDialogue {
 				} else if(darkSirenActionAvailable?index==4:index==3) {
 					if(isAlphaFortress()) {
 						SexManagerInterface manager = getAlphaSexManager(Main.game.getPlayer(), getMainCompanion());
-						return new ResponseSex("Surrender",
+						return new ResponseSex("Сдаться",
 								isCompanionDialogue()
-									?UtilText.parse(getMainCompanion(), getBoss(), "Surrender both yourself and [npc.name] to [npc2.name], allowing [npc2.herHim] and [npc2.her] imps to do what they please with you.")
-									:UtilText.parse(getBoss(), "Surrender your body to [npc.name] and [npc.her] imps in exchange for being allowed to leave without a fight."),
+									?UtilText.parse(getMainCompanion(), getBoss(), "Сдай себя и [npc.name] на милость [npc2.name], позволяя бесам [npc2.herHim] и [npc2.her] делать с вами всё, что им вздумается.")
+									:UtilText.parse(getBoss(), "Отдай свое тело бесам [npc.name] и [npc.her] в обмен на возможность уйти без боя."),
 								true,
 								false,
 								manager,
@@ -2406,10 +2401,10 @@ public class ImpFortressDialogue {
 						
 					} else if(isMalesFortress()) {
 						SexManagerInterface manager = getMalesSexManager(Main.game.getPlayer(), getMainCompanion());
-						return new ResponseSex("Surrender",
+						return new ResponseSex("Сдаться",
 										isCompanionDialogue()
-											?UtilText.parse(getMainCompanion(), getBoss(), "Surrender both yourself and [npc.name] to [npc2.name], allowing [npc2.herHim] and [npc2.her] imps to do what they please with you.")
-											:UtilText.parse(getBoss(), "Surrender your body to [npc.name] and [npc.her] imps in exchange for being allowed to leave without a fight."),
+											?UtilText.parse(getMainCompanion(), getBoss(), "Сдай себя и [npc.name] на милость [npc2.name], позволяя бесам [npc2.herHim] и [npc2.her] делать с вами всё, что им вздумается.")
+											:UtilText.parse(getBoss(), "Отдай свое тело бесам [npc.name] и [npc.her] в обмен на возможность уйти без боя."),
 										true,
 										false,
 										manager,
@@ -2437,10 +2432,10 @@ public class ImpFortressDialogue {
 							}
 						};
 					}
-					return new ResponseSex("Surrender",
+					return new ResponseSex("Сдаться",
 							isCompanionDialogue()
-								?UtilText.parse(getMainCompanion(), getBoss(), "Surrender both yourself and [npc.name] to [npc2.name], allowing [npc2.herHim] and [npc2.her] imps to do what they please with you.")
-								:UtilText.parse(getBoss(), "Surrender your body to [npc.name] and [npc.her] imps in exchange for being allowed to leave without a fight."),
+								?UtilText.parse(getMainCompanion(), getBoss(), "Сдай себя и [npc.name] на милость [npc2.name], позволяя бесам [npc2.herHim] и [npc2.her] делать с вами всё, что им вздумается.")
+								:UtilText.parse(getBoss(), "Отдай свое тело бесам [npc.name] и [npc.her] в обмен на возможность уйти без боя."),
 							true,
 							false,
 							isCompanionDialogue()
@@ -2482,7 +2477,7 @@ public class ImpFortressDialogue {
 		}
 	};
 	
-	public static final DialogueNode KEEP_ALPHA_BRAWLER = new DialogueNode("Keep", ".", true, true) {
+	public static final DialogueNode KEEP_ALPHA_BRAWLER = new DialogueNode("Цитадель", ".", true, true) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -2499,8 +2494,8 @@ public class ImpFortressDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Scare off",
-						UtilText.parse(getBoss(), "Let [npc.name] escape, and shout after [npc.herHim] to keep clear of this place."),
+				return new Response("Запугать",
+						UtilText.parse(getBoss(), "Дать [npc.name] сбежать и крикнуть вслед [npc.herHim], чтобы держались подальше от этого места."),
 						KEEP_ALPHA_BRAWLER_SCARED_OFF) {
 					@Override
 					public void effects() {
@@ -2510,8 +2505,8 @@ public class ImpFortressDialogue {
 				};
 					
 			} else if(index==2 && Main.game.isNonConEnabled()) {
-				return new ResponseSex(isCompanionDialogue()?"Rape (solo)":"Rape",
-						UtilText.parse(getBoss(), "Push [npc.name] down and force yourself on [npc.herHim]."),
+				return new ResponseSex(isCompanionDialogue()?"Изнасиловать (соло)":"Изнасилование",
+						UtilText.parse(getBoss(), "Повалить [npc.name] на землю и взять [npc.herHim] силой."),
 						false,
 						false,
 						new SMAllFours(
@@ -2550,11 +2545,11 @@ public class ImpFortressDialogue {
 				
 			} else if(index==3 && isCompanionDialogue() && Main.game.isNonConEnabled()) {
 				if(!((NPC) getMainCompanion()).isWillingToRape() && getMainCompanion().isAbleToRefuseSexAsCompanion()) {
-					return new Response("Rape (companion)", 
-							UtilText.parse(getMainCompanion(), getBoss(), "[npc.Name] is not interested in raping [npc2.name], and as [npc.sheIs] not a slave, you can't force [npc.herHim] to do so..."), null);
+					return new Response("Изнасиловать (спутника)", 
+							UtilText.parse(getMainCompanion(), getBoss(), "[npc.Name] не горит желанием насиловать [npc2.name], а так как [npc.sheIs] не раб(а), ты не можешь заставить [npc.herHim] сделать это..."), null);
 				}
-				return new ResponseSex("Rape (companion)",
-						UtilText.parse(getBoss(), getMainCompanion(), "Push [npc.name] down and tell [npc2.name] that [npc2.she] can do what [npc2.she] likes with [npc.herHim]."),
+				return new ResponseSex("Изнасиловать (спутника)",
+						UtilText.parse(getBoss(), getMainCompanion(), "Прижми [npc.name] к земле и скажи [npc2.name], что [npc2.she] может делать с [npc.herHim] всё, что пожелает [npc2.she]."),
 						false,
 						false,
 						new SMAllFours(
@@ -2593,11 +2588,11 @@ public class ImpFortressDialogue {
 				
 			} else if(index==4 && isCompanionDialogue() && Main.game.isNonConEnabled()) {
 				if(!((NPC) getMainCompanion()).isWillingToRape() && getMainCompanion().isAbleToRefuseSexAsCompanion()) {
-					return new Response("Rape (both)", 
-							UtilText.parse(getMainCompanion(), getBoss(), "[npc.Name] is not interested in raping [npc2.name], and as [npc.sheIs] not a slave, you can't force [npc.herHim] to do so..."), null);
+					return new Response("Изнасиловать (обоих)", 
+							UtilText.parse(getMainCompanion(), getBoss(), "[npc.Name] не горит желанием насиловать [npc2.name], а так как [npc.sheIs] не раб(а), ты не можешь заставить [npc.herHim] сделать это..."), null);
 				}
-				return new ResponseSex("Rape (both)",
-						UtilText.parse(getBoss(), getMainCompanion(), "Push [npc.name] down and force [npc.herHim] to have sex with both you and [npc2.name]."),
+				return new ResponseSex("Изнасиловать (обоих)",
+						UtilText.parse(getBoss(), getMainCompanion(), "Прижать [npc.name] к земле и заставить [npc.herHim] трахаться одновременно с тобой и [npc2.name]."),
 						false,
 						false,
 						new SMAllFours(
@@ -2640,7 +2635,7 @@ public class ImpFortressDialogue {
 		}
 	};
 	
-	public static final DialogueNode KEEP_ALPHA_BRAWLER_SCARED_OFF = new DialogueNode("Keep", ".", false, true) {
+	public static final DialogueNode KEEP_ALPHA_BRAWLER_SCARED_OFF = new DialogueNode("Цитадель", ".", false, true) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -2658,11 +2653,11 @@ public class ImpFortressDialogue {
 		}
 	};
 	
-	public static final DialogueNode KEEP_AFTER_SEX_ALPHA_FORCED = new DialogueNode("Finished", "", true, true) {
+	public static final DialogueNode KEEP_AFTER_SEX_ALPHA_FORCED = new DialogueNode("Завершено", "", true, true) {
 
 		@Override
 		public String getDescription() {
-			return UtilText.parse(getBoss(), "You've had your fun with [npc.name].");
+			return UtilText.parse(getBoss(), "Ты вдоволь нагулялся с [npc.name].");
 		}
 
 		@Override
@@ -2675,8 +2670,8 @@ public class ImpFortressDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Scare off",
-						UtilText.parse(getBoss(), "Let [npc.name] escape, and shout after [npc.herHim] to keep clear of this place."),
+				return new Response("Запугать",
+						UtilText.parse(getBoss(), "Дать [npc.name] сбежать и крикнуть вслед [npc.herHim], чтобы держались подальше от этого места."),
 						KEEP_AFTER_SEX_ALPHA_FORCED_SCARED_OFF) {
 					@Override
 					public void effects() {
@@ -2689,7 +2684,7 @@ public class ImpFortressDialogue {
 		}
 	};
 
-	public static final DialogueNode KEEP_AFTER_SEX_ALPHA_FORCED_SCARED_OFF = new DialogueNode("Keep", ".", false, true) {
+	public static final DialogueNode KEEP_AFTER_SEX_ALPHA_FORCED_SCARED_OFF = new DialogueNode("Цитадель", ".", false, true) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -2707,7 +2702,7 @@ public class ImpFortressDialogue {
 		}
 	};
 	
-	public static final DialogueNode KEEP_FEMALES_NYMPHO = new DialogueNode("Keep", ".", true, true) {
+	public static final DialogueNode KEEP_FEMALES_NYMPHO = new DialogueNode("Цитадель", ".", true, true) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -2722,8 +2717,8 @@ public class ImpFortressDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Scare off",
-						UtilText.parse(getBoss(), "Let [npc.name] escape, and shout after [npc.herHim] to keep clear of this place."),
+				return new Response("Запугать",
+						UtilText.parse(getBoss(), "Дать [npc.name] сбежать и крикнуть вслед [npc.herHim], чтобы держались подальше от этого места."),
 						KEEP_FEMALES_NYMPHO_SCARED_OFF) {
 					@Override
 					public void effects() {
@@ -2733,8 +2728,8 @@ public class ImpFortressDialogue {
 				};
 					
 			} else if(index==2 && Main.game.isNonConEnabled()) {
-				return new ResponseSex(isCompanionDialogue()?"Sex (solo)":"Sex",
-						UtilText.parse(getBoss(), "Do as [npc.name] asks and have sex with [npc.herHim]."),
+				return new ResponseSex(isCompanionDialogue()?"Секс (соло)":"Секс",
+						UtilText.parse(getBoss(), "Сделать так, как просит [npc.name], и заняться сексом с [npc.herHim]."),
 						false,
 						false,
 						new SMLyingDown(
@@ -2747,11 +2742,11 @@ public class ImpFortressDialogue {
 				
 			} else if(index==3 && isCompanionDialogue() && Main.game.isNonConEnabled()) {
 				if(!((NPC) getMainCompanion()).isAttractedTo(getBoss()) && getMainCompanion().isAbleToRefuseSexAsCompanion()) {
-					return new Response("Sex (companion)", 
-							UtilText.parse(getMainCompanion(), getBoss(), "[npc.Name] is not interested in having sex with [npc2.name], and as [npc.sheIs] not a slave, you can't force [npc.herHim] to do so..."), null);
+					return new Response("Секс (с напарником)", 
+							UtilText.parse(getMainCompanion(), getBoss(), "[npc.Name] не заинтересован(а) в сексе с [npc2.name], а так как [npc.sheIs] не раб(а), ты не можешь заставить [npc.herHim]..."), null);
 				}
-				return new ResponseSex("Sex (companion)",
-						UtilText.parse(getBoss(), getMainCompanion(), "Tell [npc2.name] that [npc2.she] can have sex with [npc.name], before stepping back to watch."),
+				return new ResponseSex("Секс (с напарником)",
+						UtilText.parse(getBoss(), getMainCompanion(), "Сказать [npc2.name], что [npc2.she] может трахаться с [npc.name], а затем отступить, чтобы понаблюдать."),
 						false,
 						false,
 						new SMLyingDown(
@@ -2764,11 +2759,11 @@ public class ImpFortressDialogue {
 				
 			} else if(index==4 && isCompanionDialogue() && Main.game.isNonConEnabled()) {
 				if(!((NPC) getMainCompanion()).isAttractedTo(getBoss()) && getMainCompanion().isAbleToRefuseSexAsCompanion()) {
-					return new Response("Sex (both)", 
-							UtilText.parse(getMainCompanion(), getBoss(), "[npc.Name] is not interested in having sex with [npc2.name], and as [npc.sheIs] not a slave, you can't force [npc.herHim] to do so..."), null);
+					return new Response("Секс (вдвоем)", 
+							UtilText.parse(getMainCompanion(), getBoss(), "[npc.Name] не заинтересован(а) в сексе с [npc2.name], а так как [npc.sheIs] не раб(а), ты не можешь заставить [npc.herHim]..."), null);
 				}
-				return new ResponseSex("Sex (both)",
-						UtilText.parse(getBoss(), getMainCompanion(), "Do as [npc.name] asks and get [npc2.name] to join you in having sex with [npc.herHim]."),
+				return new ResponseSex("Секс (вдвоем)",
+						UtilText.parse(getBoss(), getMainCompanion(), "Сделать так, как просит [npc.name], и заставить [npc2.name] присоединиться к тебе, чтобы заняться сексом с [npc.herHim]."),
 						false,
 						false,
 						new SMLyingDown(
@@ -2785,7 +2780,7 @@ public class ImpFortressDialogue {
 		}
 	};
 	
-	public static final DialogueNode KEEP_FEMALES_NYMPHO_SCARED_OFF = new DialogueNode("Keep", ".", false, true) {
+	public static final DialogueNode KEEP_FEMALES_NYMPHO_SCARED_OFF = new DialogueNode("Цитадель", ".", false, true) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -2803,11 +2798,11 @@ public class ImpFortressDialogue {
 		}
 	};
 	
-	public static final DialogueNode KEEP_AFTER_SEX_FEMALES_NYMPHO = new DialogueNode("Finished", "", true, true) {
+	public static final DialogueNode KEEP_AFTER_SEX_FEMALES_NYMPHO = new DialogueNode("Завершено", "", true, true) {
 
 		@Override
 		public String getDescription() {
-			return UtilText.parse(getBoss(), "You've had your fun with [npc.name].");
+			return UtilText.parse(getBoss(), "Ты вдоволь нагулялся с [npc.name].");
 		}
 
 		@Override
@@ -2820,8 +2815,8 @@ public class ImpFortressDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Scare off",
-						UtilText.parse(getBoss(), "Let [npc.name] escape, and shout after [npc.herHim] to keep clear of this place."),
+				return new Response("Запугать",
+						UtilText.parse(getBoss(), "Дать [npc.name] сбежать и крикнуть вслед [npc.herHim], чтобы держались подальше от этого места."),
 						KEEP_AFTER_SEX_FEMALES_NYMPHO_SCARED_OFF) {
 					@Override
 					public void effects() {
@@ -2834,7 +2829,7 @@ public class ImpFortressDialogue {
 		}
 	};
 
-	public static final DialogueNode KEEP_AFTER_SEX_FEMALES_NYMPHO_SCARED_OFF = new DialogueNode("Keep", ".", false, true) {
+	public static final DialogueNode KEEP_AFTER_SEX_FEMALES_NYMPHO_SCARED_OFF = new DialogueNode("Цитадель", ".", false, true) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -2852,7 +2847,7 @@ public class ImpFortressDialogue {
 		}
 	};
 	
-	public static final DialogueNode KEEP_MALES_TAMESHIGIRI_MAIN = new DialogueNode("Keep", ".", true, true) {
+	public static final DialogueNode KEEP_MALES_TAMESHIGIRI_MAIN = new DialogueNode("Цитадель", ".", true, true) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -2868,8 +2863,8 @@ public class ImpFortressDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Let him leave",
-						UtilText.parse(getBoss(), "Allow [npc.name] and [npc.her] imps to leave without a fight."),
+				return new Response("Пусть он уходит",
+						UtilText.parse(getBoss(), "Позволить бесам [npc.name] и [npc.her] уйти без боя."),
 						KEEP_MALES_TAMESHIGIRI_ALLOW_TO_LEAVE) {
 					@Override
 					public void effects() {
@@ -2882,7 +2877,7 @@ public class ImpFortressDialogue {
 		}
 	};
 	
-	public static final DialogueNode KEEP_MALES_TAMESHIGIRI_ALLOW_TO_LEAVE = new DialogueNode("Keep", ".", false, true) {
+	public static final DialogueNode KEEP_MALES_TAMESHIGIRI_ALLOW_TO_LEAVE = new DialogueNode("Цитадель", ".", false, true) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -2900,7 +2895,7 @@ public class ImpFortressDialogue {
 		}
 	};
 	
-	public static final DialogueNode KEEP_AUDIENCE = new DialogueNode("Keep", ".", true, true) {
+	public static final DialogueNode KEEP_AUDIENCE = new DialogueNode("Цитадель", ".", true, true) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -2965,17 +2960,17 @@ public class ImpFortressDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new ResponseCombat("Refuse", UtilText.parse(getBoss(), "You aren't prepared to go that far! Tell [npc.name] as such, and prepare to defend yourself!"),
+				return new ResponseCombat("Отказаться", UtilText.parse(getBoss(), "Ты не готов зайти так далеко! Скажи об этом [npc.name] и приготовься защищаться!"),
 						(NPC) getBoss(),
 						getImpBossGroup(true), null);
 				
 			} else if(index==2) {
 				if(isAlphaFortress()) {
 					SexManagerInterface manager = getAlphaSexManager(Main.game.getPlayer());
-					return new ResponseSex(isCompanionDialogue()?"Agree (solo)":"Agree",
+					return new ResponseSex(isCompanionDialogue()?"Согласиться (в одиночку)":"Согласиться",
 							isCompanionDialogue()
-								?UtilText.parse(getMainCompanion(), getBoss(), "Decide to do as [npc2.name] demands, and, after telling [npc.name] to stand aside and keep watch, submit to [npc2.herHim]...")
-								:UtilText.parse(getBoss(), "Decide to do as [npc.name] demands, and submit to [npc.herHim]..."),
+								?UtilText.parse(getMainCompanion(), getBoss(), "Решить поступить так, как требует [npc2.name], и, велев [npc.name] отойти в сторону и следить за происходящим, подчиниться [npc2.herHim]...")
+								:UtilText.parse(getBoss(), "Решить поступить так, как требует [npc.name], и подчиниться [npc.herHim]..."),
 							true,
 							false,
 							manager,
@@ -2991,10 +2986,10 @@ public class ImpFortressDialogue {
 					
 				} else if(isMalesFortress()) {
 					SexManagerInterface manager = getMalesSexManager(Main.game.getPlayer());
-					return new ResponseSex(isCompanionDialogue()?"Agree (solo)":"Agree",
+					return new ResponseSex(isCompanionDialogue()?"Согласиться (в одиночку)":"Согласиться",
 							isCompanionDialogue()
-								?UtilText.parse(getMainCompanion(), getBoss(), "Decide to do as [npc2.name] demands, and, after telling [npc.name] to stand aside and keep watch, submit to [npc2.herHim]...")
-								:UtilText.parse(getBoss(), "Decide to do as [npc.name] demands, and submit to [npc.herHim]..."),
+								?UtilText.parse(getMainCompanion(), getBoss(), "Решить поступить так, как требует [npc2.name], и, велев [npc.name] отойти в сторону и следить за происходящим, подчиниться [npc2.herHim]...")
+								:UtilText.parse(getBoss(), "Решить поступить так, как требует [npc.name], и подчиниться [npc.herHim]..."),
 							true,
 							false,
 							manager,
@@ -3008,10 +3003,10 @@ public class ImpFortressDialogue {
 						}
 					};
 				}
-				return new ResponseSex(isCompanionDialogue()?"Agree (solo)":"Agree",
+				return new ResponseSex(isCompanionDialogue()?"Согласиться (в одиночку)":"Согласиться",
 						isCompanionDialogue()
-							?UtilText.parse(getMainCompanion(), getBoss(), "Decide to do as [npc2.name] demands, and, after telling [npc.name] to stand aside and keep watch, submit to [npc2.herHim]...")
-							:UtilText.parse(getBoss(), "Decide to do as [npc.name] demands, and submit to [npc.herHim]..."),
+							?UtilText.parse(getMainCompanion(), getBoss(), "Решить поступить так, как требует [npc2.name], и, велев [npc.name] отойти в сторону и следить за происходящим, подчиниться [npc2.herHim]...")
+							:UtilText.parse(getBoss(), "Решить поступить так, как требует [npc.name], и подчиниться [npc.herHim]..."),
 						true,
 						false,
 						new SMLyingDown(
@@ -3036,8 +3031,8 @@ public class ImpFortressDialogue {
 			} else if(index==3 && isCompanionDialogue()) {
 				if(isAlphaFortress()) {
 					SexManagerInterface manager = getAlphaSexManager(Main.game.getPlayer(), getMainCompanion());
-					return new ResponseSex("Agree (both)",
-							UtilText.parse(getMainCompanion(), getBoss(), "Decide to do as [npc2.name] demands, and, along with [npc.name], submit to [npc2.herHim]..."),
+					return new ResponseSex("Согласиться (обоим)",
+							UtilText.parse(getMainCompanion(), getBoss(), "Решить поступить так, как требует [npc2.name], и вместе с [npc.name] покориться [npc2.herHim]..."),
 							true,
 							false,
 							manager,
@@ -3061,8 +3056,8 @@ public class ImpFortressDialogue {
 					
 				} else if(isMalesFortress()) {
 					SexManagerInterface manager = getMalesSexManager(Main.game.getPlayer(), getMainCompanion());
-					return new ResponseSex("Agree (both)",
-									UtilText.parse(getMainCompanion(), getBoss(), "Decide to do as [npc2.name] demands, and, along with [npc.name], submit to [npc2.herHim]..."),
+					return new ResponseSex("Согласиться (обоим)",
+									UtilText.parse(getMainCompanion(), getBoss(), "Решить поступить так, как требует [npc2.name], и вместе с [npc.name] покориться [npc2.herHim]..."),
 									true,
 									false,
 									manager,
@@ -3084,8 +3079,8 @@ public class ImpFortressDialogue {
 						}
 					};
 				}
-				return new ResponseSex("Agree (both)",
-						UtilText.parse(getMainCompanion(), getBoss(), "Decide to do as [npc2.name] demands, and, along with [npc.name], submit to [npc2.herHim]..."),
+				return new ResponseSex("Согласиться (обоим)",
+						UtilText.parse(getMainCompanion(), getBoss(), "Решить поступить так, как требует [npc2.name], и вместе с [npc.name] покориться [npc2.herHim]..."),
 						true,
 						false,
 						new SMLyingDown(
@@ -3114,11 +3109,11 @@ public class ImpFortressDialogue {
 		}
 	};
 	
-	public static final DialogueNode KEEP_AFTER_SEX_AUDIENCE = new DialogueNode("Finished", "", true) {
+	public static final DialogueNode KEEP_AFTER_SEX_AUDIENCE = new DialogueNode("Завершено", "", true) {
 		
 		@Override
 		public String getDescription(){
-			return UtilText.parse(getBoss(), "[npc.Name] seems happy enough with your submissive performance.");
+			return UtilText.parse(getBoss(), "[npc.Name] кажется вполне довольным вашим покорным представлением.");
 		}
 
 		@Override
@@ -3133,7 +3128,7 @@ public class ImpFortressDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Take key", UtilText.parse(getBoss(), "Take the key from [npc.name] and leave the keep."), KEEP_AFTER_SEX_AUDIENCE_KEY) {
+				return new Response("Взять ключ", UtilText.parse(getBoss(), "Забрать ключ у [npc.name] и покинуть крепость."), KEEP_AFTER_SEX_AUDIENCE_KEY) {
 					@Override
 					public void effects() {
 						AbstractItemType keyType = ItemType.IMP_FORTRESS_ARCANE_KEY;
@@ -3150,7 +3145,7 @@ public class ImpFortressDialogue {
 		}
 	};
 	
-	public static final DialogueNode KEEP_AFTER_SEX_AUDIENCE_KEY = new DialogueNode("Step back", "", false, true) {
+	public static final DialogueNode KEEP_AFTER_SEX_AUDIENCE_KEY = new DialogueNode("Отступить", "", false, true) {
 		
 		@Override
 		public String getContent() {
@@ -3163,11 +3158,11 @@ public class ImpFortressDialogue {
 		}
 	};
 	
-	public static final DialogueNode KEEP_AFTER_COMBAT_VICTORY = new DialogueNode("Keep", ".", true) {
+	public static final DialogueNode KEEP_AFTER_COMBAT_VICTORY = new DialogueNode("Цитадель", ".", true) {
 
 		@Override
 		public String getDescription() {
-			return UtilText.parse(getBoss(), "You have defeated [npc.name] and [npc.her] imps!");
+			return UtilText.parse(getBoss(), "Вы победили бесов [npc.name] и [npc.her]!");
 		}
 
 		@Override
@@ -3178,13 +3173,13 @@ public class ImpFortressDialogue {
 		@Override
 		public String getResponseTabTitle(int index) {
 			if(index==0) {
-				return "Interactions";
+				return "Взаимодействие";
 				
 			} else if(index==1) {
-				return "Inventories";
+				return "Инвентарь";
 				
 			} else if(index==2) {
-				return "Transformations";
+				return "Трансформации";
 				
 			}
  			return null;
@@ -3195,7 +3190,7 @@ public class ImpFortressDialogue {
 			if(!isCompanionDialogue()) {
 				if(responseTab == 0) {
 					if (index == 1) {
-						return new Response("Scare off", UtilText.parse(getBoss(), "Tell [npc.name] and [npc.her] gang to get out of here, before you change your mind..."), Main.game.getDefaultDialogue(false)) {
+						return new Response("Запугать", UtilText.parse(getBoss(), "Скажи банде [npc.name] и [npc.her], чтобы они убирались отсюда, пока ты не передумала..."), Main.game.getDefaultDialogue(false)) {
 							@Override
 							public void effects() {
 								Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/submission/fortress"+getDialogueEncounterId(), "KEEP_AFTER_COMBAT_VICTORY_SCARE_OFF", getAllCharacters()));
@@ -3204,8 +3199,8 @@ public class ImpFortressDialogue {
 						};
 						
 					} else if (index == 2) {
-						return new ResponseSex("Sex",
-								UtilText.parse(getBoss(), "Now that they've been defeated, there's nothing stopping you from having sex with [npc.name] and [npc.her] imp gang."),
+						return new ResponseSex("Секс",
+								UtilText.parse(getBoss(), "Теперь, когда они побеждены, ничто не мешает тебе переспать с бандой бесов [npc.name] и [npc.her]."),
 								true,
 								false,
 								getPartyForSex(),
@@ -3215,8 +3210,8 @@ public class ImpFortressDialogue {
 								KEEP_AFTER_SEX_VICTORY, UtilText.parseFromXMLFile("places/submission/fortress"+getDialogueEncounterId(), "KEEP_COMBAT_VICTORY_SEX", getAllCharacters()));
 						
 					} else if (index == 3) {
-						return new ResponseSex("Gentle Sex",
-								UtilText.parse(getBoss(), "Now that they've been defeated, there's nothing stopping you from having sex with [npc.name] and [npc.her] imp gang."),
+						return new ResponseSex("Нежный секс",
+								UtilText.parse(getBoss(), "Теперь, когда они побеждены, ничто не мешает тебе переспать с бандой бесов [npc.name] и [npc.her]."),
 								true,
 								false,
 								getPartyForSex(),
@@ -3227,8 +3222,8 @@ public class ImpFortressDialogue {
 								UtilText.parseFromXMLFile("places/submission/fortress"+getDialogueEncounterId(), "KEEP_COMBAT_VICTORY_SEX_GENTLE", getAllCharacters()), ResponseTag.START_PACE_PLAYER_DOM_GENTLE);
 						
 					} else if (index == 4) {
-						return new ResponseSex("Rough Sex",
-								UtilText.parse(getBoss(), "Now that they've been defeated, there's nothing stopping you from having sex with [npc.name] and [npc.her] imp gang."),
+						return new ResponseSex("Грубый секс",
+								UtilText.parse(getBoss(), "Теперь, когда они побеждены, ничто не мешает тебе переспать с бандой бесов [npc.name] и [npc.her]."),
 								true,
 								false,
 								getPartyForSex(),
@@ -3241,8 +3236,8 @@ public class ImpFortressDialogue {
 					} else if (index == 5) {
 						if(isAlphaFortress()) {
 							SexManagerInterface manager = getAlphaSexManager(Main.game.getPlayer());
-							return new ResponseSex("Submit",
-									UtilText.parse(getBoss(), "Feeling sorry for [npc.name] and [npc.her] imps, you decide to let them have some fun with your body before you force them to flee their fortress..."),
+							return new ResponseSex("Подчиниться",
+									UtilText.parse(getBoss(), "Пожалев бесов [npc.name] и [npc.her], ты решаешь позволить им немного развлечься с твоим телом, прежде чем заставишь их бежать из их крепости..."),
 									Util.newArrayListOfValues(Fetish.FETISH_SUBMISSIVE),
 									null,
 									Fetish.FETISH_SUBMISSIVE.getAssociatedCorruptionLevel(),
@@ -3260,8 +3255,8 @@ public class ImpFortressDialogue {
 							
 						} else if(isMalesFortress()) {
 								SexManagerInterface manager = getMalesSexManager(Main.game.getPlayer());
-								return new ResponseSex("Submit",
-										UtilText.parse(getBoss(), "Feeling sorry for [npc.name] and [npc.her] imps, you decide to let them have some fun with your body before you force them to flee their fortress..."),
+								return new ResponseSex("Подчиниться",
+										UtilText.parse(getBoss(), "Пожалев бесов [npc.name] и [npc.her], ты решаешь позволить им немного развлечься с твоим телом, прежде чем заставишь их бежать из их крепости..."),
 										Util.newArrayListOfValues(Fetish.FETISH_SUBMISSIVE),
 										null,
 										Fetish.FETISH_SUBMISSIVE.getAssociatedCorruptionLevel(),
@@ -3278,8 +3273,8 @@ public class ImpFortressDialogue {
 												isMaleBossWantingToBreed(Main.game.getPlayer())?"KEEP_COMBAT_VICTORY_SEX_SUBMIT":"KEEP_COMBAT_VICTORY_SEX_SUBMIT_IMPS", getAllCharacters()));
 								
 							}
-						return new ResponseSex("Submit",
-								UtilText.parse(getBoss(), "Feeling sorry for [npc.name] and [npc.her] imps, you decide to let them have some fun with your body before you force them to flee their fortress..."),
+						return new ResponseSex("Подчиниться",
+								UtilText.parse(getBoss(), "Пожалев бесов [npc.name] и [npc.her], ты решаешь позволить им немного развлечься с твоим телом, прежде чем заставишь их бежать из их крепости..."),
 								Util.newArrayListOfValues(Fetish.FETISH_SUBMISSIVE),
 								null,
 								Fetish.FETISH_SUBMISSIVE.getAssociatedCorruptionLevel(),
@@ -3312,7 +3307,7 @@ public class ImpFortressDialogue {
 						if(index==i) {
 							NPC imp = (NPC) getImpBossGroup(true).get(i-1);
 							return new ResponseEffectsOnly(UtilText.parse(imp, "[npc.Name]"),
-									UtilText.parse(imp, "Now that you've defeated [npc.name], there's nothing stopping you from helping yourself to [npc.her] clothing and items...")) {
+									UtilText.parse(imp, "Теперь, когда ты одолел(а) [npc.name], ничто не мешает тебе полакомиться одеждой и вещами [npc.her]...")) {
 								@Override
 								public void effects() {
 									Main.mainController.openInventory(imp, InventoryInteraction.FULL_MANAGEMENT);
@@ -3326,7 +3321,7 @@ public class ImpFortressDialogue {
 						if(index==i) {
 							NPC imp = (NPC) getImpBossGroup(true).get(i-1);
 							return new Response(UtilText.parse(imp, "[npc.Name]"),
-									UtilText.parse(imp, "Take a very detailed look at what [npc.name] can transform [npc.herself] into..."),
+									UtilText.parse(imp, "Внимательно рассмотреть, в кого [npc.name] может превратить [npc.herself]..."),
 									BodyChanging.BODY_CHANGING_CORE){
 								@Override
 								public void effects() {
@@ -3343,8 +3338,8 @@ public class ImpFortressDialogue {
 			} else {
 				if(responseTab == 0) {
 					if (index == 1) {
-						return new Response("Scare off",
-								UtilText.parse(getMainCompanion(), getBoss(), "Tell [npc2.name] and [npc2.her] gang to get out of here, before you and [npc.name] change your minds..."), Main.game.getDefaultDialogue(false)) {
+						return new Response("Запугать",
+								UtilText.parse(getMainCompanion(), getBoss(), "Скажи банде [npc2.name] и [npc2.her], чтобы они убирались отсюда, пока вы с [npc.name] не передумали..."), Main.game.getDefaultDialogue(false)) {
 							@Override
 							public void effects() {
 								Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/submission/fortress"+getDialogueEncounterId(), "KEEP_AFTER_COMBAT_VICTORY_SCARE_OFF", getAllCharacters()));
@@ -3353,8 +3348,8 @@ public class ImpFortressDialogue {
 						};
 						
 					} else if (index == 2) {
-						return new ResponseSex("Solo sex",
-								UtilText.parse(getMainCompanion(), getBoss(), "Tell [npc.name] to stand to one side and watch as you have sex with [npc2.name] and [npc2.her] imp gang."),
+						return new ResponseSex("Соло-секс",
+								UtilText.parse(getMainCompanion(), getBoss(), "Скажи [npc.name] отойти в сторону и смотреть, как ты трахаешься с бандой бесов [npc2.name] и [npc2.her]."),
 								true,
 								false,
 								Util.newArrayListOfValues(Main.game.getPlayer()),
@@ -3364,8 +3359,8 @@ public class ImpFortressDialogue {
 								KEEP_AFTER_SEX_VICTORY, UtilText.parseFromXMLFile("places/submission/fortress"+getDialogueEncounterId(), "KEEP_COMBAT_VICTORY_SEX", getAllCharacters()));
 						
 					} else if (index == 3) {
-						return new ResponseSex("Solo sex (Gentle)",
-								UtilText.parse(getMainCompanion(), getBoss(), "Tell [npc.name] to stand to one side and watch as you have sex with [npc2.name] and [npc2.her] imp gang."),
+						return new ResponseSex("Соло-секс (Нежный)",
+								UtilText.parse(getMainCompanion(), getBoss(), "Скажи [npc.name] отойти в сторону и смотреть, как ты трахаешься с бандой бесов [npc2.name] и [npc2.her]."),
 								true,
 								false,
 								Util.newArrayListOfValues(Main.game.getPlayer()),
@@ -3376,8 +3371,8 @@ public class ImpFortressDialogue {
 								UtilText.parseFromXMLFile("places/submission/fortress"+getDialogueEncounterId(), "KEEP_COMBAT_VICTORY_SEX_GENTLE", getAllCharacters()), ResponseTag.START_PACE_PLAYER_DOM_GENTLE);
 						
 					} else if (index == 4) {
-						return new ResponseSex("Solo sex (Rough)",
-								UtilText.parse(getMainCompanion(), getBoss(), "Tell [npc.name] to stand to one side and watch as you have sex with [npc2.name] and [npc2.her] imp gang."),
+						return new ResponseSex("Соло-секс (Грубый)",
+								UtilText.parse(getMainCompanion(), getBoss(), "Скажи [npc.name] отойти в сторону и смотреть, как ты трахаешься с бандой бесов [npc2.name] и [npc2.her]."),
 								true,
 								false,
 								Util.newArrayListOfValues(Main.game.getPlayer()),
@@ -3390,9 +3385,9 @@ public class ImpFortressDialogue {
 					} else if (index == 5) {
 						if(isAlphaFortress()) {
 							SexManagerInterface manager = getAlphaSexManager(Main.game.getPlayer());
-							return new ResponseSex("Solo submission",
+							return new ResponseSex("Соло-сабмиссив",
 									UtilText.parse(getMainCompanion(), getBoss(),
-											"Tell [npc.name] to stand to one side, and then let [npc2.name] and [npc2.her] gang have some fun with your body, before forcing them to flee their fortress..."),
+											"Прикажи [npc.name] отойти в сторону, а затем позволь банде бесов в лице [npc2.name] и [npc2.her] повеселиться с твоим телом, прежде чем заставишь их бежать из их крепости..."),
 									Util.newArrayListOfValues(Fetish.FETISH_SUBMISSIVE),
 									null,
 									Fetish.FETISH_SUBMISSIVE.getAssociatedCorruptionLevel(),
@@ -3410,9 +3405,9 @@ public class ImpFortressDialogue {
 							
 						} else if(isMalesFortress()) {
 								SexManagerInterface manager = getMalesSexManager(Main.game.getPlayer());
-								return new ResponseSex("Solo submission",
+								return new ResponseSex("Соло-сабмиссив",
 										UtilText.parse(getMainCompanion(), getBoss(),
-												"Tell [npc.name] to stand to one side, and then let [npc2.name] and [npc2.her] gang have some fun with your body, before forcing them to flee their fortress..."),
+												"Прикажи [npc.name] отойти в сторону, а затем позволь банде бесов в лице [npc2.name] и [npc2.her] повеселиться с твоим телом, прежде чем заставишь их бежать из их крепости..."),
 										Util.newArrayListOfValues(Fetish.FETISH_SUBMISSIVE),
 										null,
 										Fetish.FETISH_SUBMISSIVE.getAssociatedCorruptionLevel(),
@@ -3429,9 +3424,9 @@ public class ImpFortressDialogue {
 												isMaleBossWantingToBreed(Main.game.getPlayer())?"KEEP_COMBAT_VICTORY_SEX_SUBMIT":"KEEP_COMBAT_VICTORY_SEX_SUBMIT_IMPS", getAllCharacters()));
 								
 							}
-						return new ResponseSex("Solo submission",
+						return new ResponseSex("Соло-сабмиссив",
 								UtilText.parse(getMainCompanion(), getBoss(),
-										"Tell [npc.name] to stand to one side, and then let [npc2.name] and [npc2.her] gang have some fun with your body, before forcing them to flee their fortress..."),
+										"Прикажи [npc.name] отойти в сторону, а затем позволь банде бесов в лице [npc2.name] и [npc2.her] повеселиться с твоим телом, прежде чем заставишь их бежать из их крепости..."),
 								Util.newArrayListOfValues(Fetish.FETISH_SUBMISSIVE),
 								null,
 								Fetish.FETISH_SUBMISSIVE.getAssociatedCorruptionLevel(),
@@ -3461,13 +3456,13 @@ public class ImpFortressDialogue {
 						GameCharacter companion = getMainCompanion();
 
 						if(!companion.isAttractedTo(getBoss()) && companion.isAbleToRefuseSexAsCompanion()) {
-							return new Response("Group sex",
+							return new Response("Групповой секс",
 									UtilText.parse(companion, getBoss(),
-											"[npc.Name] is not interested in having sex with [npc2.name] and [npc2.her] imps, and as [npc.sheIs] not a slave, you can't force [npc.herHim] to do so..."), null);
+											"[npc.Name] не заинтересована в сексе с бесами [npc2.name] и [npc2.her], а так как [npc.sheIs] не рабыня, ты не можешь заставить [npc.herHim] сделать это..."), null);
 							
 						} else {
-							return new ResponseSex(UtilText.parse(companion, "Group sex"),
-									UtilText.parse(companion, getBoss(), "Have dominant sex with [npc2.name] and [npc2.her] imps, and get [npc.name] to join in with the fun."),
+							return new ResponseSex(UtilText.parse(companion, "Групповой секс"),
+									UtilText.parse(companion, getBoss(), "Занимайся доминантным сексом с бесами [npc2.name] и [npc2.her], и заставь [npc.name] присоединиться к веселью."),
 									true,
 									false,
 									getPartyForSex(),
@@ -3482,14 +3477,14 @@ public class ImpFortressDialogue {
 						GameCharacter companion = getMainCompanion();
 
 						if(!companion.isAttractedTo(getBoss()) && companion.isAbleToRefuseSexAsCompanion()) {
-							return new Response("Group submission",
-									UtilText.parse(companion, getBoss(), "[npc.Name] is not interested in having sex with [npc2.name] and [npc2.her] imps, and as [npc.sheIs] not a slave, you can't force [npc.herHim] to do so..."), null);
+							return new Response("Групповое подчинение",
+									UtilText.parse(companion, getBoss(), "[npc.Name] не заинтересована в сексе с бесами [npc2.name] и [npc2.her], а так как [npc.sheIs] не рабыня, ты не можешь заставить [npc.herHim] сделать это..."), null);
 							
 						} else {
 							if(isAlphaFortress()) {
 								SexManagerInterface manager = getAlphaSexManager(Main.game.getPlayer(), getMainCompanion());
-								return new ResponseSex("Group submission",
-										UtilText.parse(getMainCompanion(), getBoss(), "Get [npc.name] to join you in submitting to [npc2.name] and [npc2.her] imps, allowing them to have dominant sex with the two of you."),
+								return new ResponseSex("Групповое подчинение",
+										UtilText.parse(getMainCompanion(), getBoss(), "Уговори [npc.name] вместе с тобой подчиниться бесам [npc2.name] и [npc2.her], позволяя им доминировать в сексе с вами обоими."),
 										true,
 										false,
 										manager,
@@ -3509,8 +3504,8 @@ public class ImpFortressDialogue {
 								
 							} else if(isMalesFortress()) {
 									SexManagerInterface manager = getMalesSexManager(Main.game.getPlayer(), getMainCompanion());
-									return new ResponseSex("Group submission",
-											UtilText.parse(getMainCompanion(), getBoss(), "Get [npc.name] to join you in submitting to [npc2.name] and [npc2.her] imps, allowing them to have dominant sex with the two of you."),
+									return new ResponseSex("Групповое подчинение",
+											UtilText.parse(getMainCompanion(), getBoss(), "Уговори [npc.name] вместе с тобой подчиниться бесам [npc2.name] и [npc2.her], позволяя им доминировать в сексе с вами обоими."),
 											true,
 											false,
 											manager,
@@ -3528,8 +3523,8 @@ public class ImpFortressDialogue {
 														:"KEEP_COMBAT_VICTORY_GROUP_SEX_SUBMISSION_DOUBLE_IMPS",
 												getAllCharacters()));
 								}
-							return new ResponseSex("Group submission",
-									UtilText.parse(companion, getBoss(), "Get [npc.name] to join you in submitting to [npc2.name] and [npc2.her] imps, allowing them to have dominant sex with the two of you."),
+							return new ResponseSex("Групповое подчинение",
+									UtilText.parse(companion, getBoss(), "Уговори [npc.name] вместе с тобой подчиниться бесам [npc2.name] и [npc2.her], позволяя им доминировать в сексе с вами обоими."),
 									true,
 									false,
 									new SMLyingDown(
@@ -3556,12 +3551,12 @@ public class ImpFortressDialogue {
 						GameCharacter companion = getMainCompanion();
 
 						if(!companion.isAttractedTo(getBoss()) && companion.isAbleToRefuseSexAsCompanion()) {
-							return new Response(UtilText.parse(companion, "Give to [npc.name]"),
-									UtilText.parse(companion, getBoss(), "[npc.Name] is not interested in having sex with [npc2.name] and [npc2.her] imps, and as [npc.sheIs] not a slave, you can't force [npc.herHim] to do so..."), null);
+							return new Response(UtilText.parse(companion, "Отдать [npc.name]"),
+									UtilText.parse(companion, getBoss(), "[npc.Name] не заинтересована в сексе с бесами [npc2.name] и [npc2.her], а так как [npc.sheIs] не рабыня, ты не можешь заставить [npc.herHim] сделать это..."), null);
 							
 						} else {
-							return new ResponseSex(UtilText.parse(companion, "Give to [npc.name]"),
-									UtilText.parse(companion, getBoss(), "Tell [npc.name] that [npc.she] can have some fun with [npc2.name] and [npc2.her] imps while you watch."),
+							return new ResponseSex(UtilText.parse(companion, "Отдать [npc.name]"),
+									UtilText.parse(companion, getBoss(), "Скажи [npc.name], что [npc.she] может немного развлечься с бесами [npc2.name] и [npc2.her], пока ты наблюдаешь."),
 									false,
 									false,
 									Util.newArrayListOfValues(getMainCompanion()),
@@ -3575,16 +3570,16 @@ public class ImpFortressDialogue {
 						GameCharacter companion = getMainCompanion();
 						
 						if(!companion.isAttractedTo(getBoss()) && companion.isAbleToRefuseSexAsCompanion()) {
-							return new Response(UtilText.parse(companion, "Offer [npc.name]"),
+							return new Response(UtilText.parse(companion, "Предложить [npc.name]"),
 									UtilText.parse(companion, getBoss(),
-											"You can tell that [npc.name] isn't at all interested in having sex with [npc2.name] and [npc2.her] imps, and you can't force [npc.herHim] to do so..."),
+											"Можно заметить, что [npc.name] совсем не заинтересована в сексе с бесами [npc2.name] и [npc2.her], и ты не можешь заставить [npc.herHim] сделать это..."),
 									null);
 							
 						} else { 
 							if(isAlphaFortress()) {
 								SexManagerInterface manager = getAlphaSexManager(getMainCompanion());
-								return new ResponseSex(UtilText.parse(companion, "Offer [npc.name]"),
-										UtilText.parse(companion, getBoss(), "Hand [npc.name] over to [npc2.name] and [npc2.her] imps, and watch as they have sex with [npc.herHim], before making them flee their fortress."),
+								return new ResponseSex(UtilText.parse(companion, "Предложить [npc.name]"),
+										UtilText.parse(companion, getBoss(), "Передай [npc.name] бесам [npc2.name] и [npc2.her] и смотри, как они трахают [npc.herHim], прежде чем заставишь их бежать из их крепости."),
 										true,
 										false,
 										manager,
@@ -3599,8 +3594,8 @@ public class ImpFortressDialogue {
 								
 							} else if(isMalesFortress()) {
 									SexManagerInterface manager = getMalesSexManager(getMainCompanion());
-									return new ResponseSex(UtilText.parse(companion, "Offer [npc.name]"),
-											UtilText.parse(companion, getBoss(), "Hand [npc.name] over to [npc2.name] and [npc2.her] imps, and watch as they have sex with [npc.herHim], before making them flee their fortress."),
+									return new ResponseSex(UtilText.parse(companion, "Предложить [npc.name]"),
+											UtilText.parse(companion, getBoss(), "Передай [npc.name] бесам [npc2.name] и [npc2.her] и смотри, как они трахают [npc.herHim], прежде чем заставишь их бежать из их крепости."),
 											true,
 											false,
 											manager,
@@ -3613,8 +3608,8 @@ public class ImpFortressDialogue {
 													:"KEEP_COMBAT_VICTORY_OFFER_COMPANION_IMPS",
 												getAllCharacters()));
 								}
-							return new ResponseSex(UtilText.parse(companion, "Offer [npc.name]"),
-									UtilText.parse(companion, getBoss(), "Hand [npc.name] over to [npc2.name] and [npc2.her] imps, and watch as they have sex with [npc.herHim], before making them flee their fortress."),
+							return new ResponseSex(UtilText.parse(companion, "Предложить [npc.name]"),
+									UtilText.parse(companion, getBoss(), "Передай [npc.name] бесам [npc2.name] и [npc2.her] и смотри, как они трахают [npc.herHim], прежде чем заставишь их бежать из их крепости."),
 									true,
 									false,
 									new SMLyingDown(
@@ -3648,7 +3643,7 @@ public class ImpFortressDialogue {
 						if(index==i) {
 							NPC imp = (NPC) getImpBossGroup(true).get(i-1);
 							return new ResponseEffectsOnly(UtilText.parse(imp, "[npc.Name]"),
-									UtilText.parse(imp, "Now that you've defeated [npc.name], there's nothing stopping you from helping yourself to [npc.her] clothing and items...")) {
+									UtilText.parse(imp, "Теперь, когда ты одолел(а) [npc.name], ничто не мешает тебе полакомиться одеждой и вещами [npc.her]...")) {
 								@Override
 								public void effects() {
 									Main.mainController.openInventory(imp, InventoryInteraction.FULL_MANAGEMENT);
@@ -3662,7 +3657,7 @@ public class ImpFortressDialogue {
 						if(index==i) {
 							NPC imp = (NPC) getImpBossGroup(true).get(i-1);
 							return new Response(UtilText.parse(imp, "[npc.Name]"),
-									UtilText.parse(imp, "Take a very detailed look at what [npc.name] can transform [npc.herself] into..."),
+									UtilText.parse(imp, "Внимательно рассмотреть, в кого [npc.name] может превратить [npc.herself]..."),
 									BodyChanging.BODY_CHANGING_CORE){
 								@Override
 								public void effects() {
@@ -3679,11 +3674,11 @@ public class ImpFortressDialogue {
 		}
 	};
 
-	public static final DialogueNode KEEP_AFTER_COMBAT_DEFEAT = new DialogueNode("Keep", ".", true) {
+	public static final DialogueNode KEEP_AFTER_COMBAT_DEFEAT = new DialogueNode("Цитадель", ".", true) {
 		
 		@Override
 		public String getDescription() {
-			return "You have been defeated by [npc2.name] and [npc2.her] imps!";
+			return "Ты был побежден бесами [npc2.name] и [npc2.her]!";
 		}
 
 		@Override
@@ -3745,20 +3740,20 @@ public class ImpFortressDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1 || index == 2 || (index == 3 && Main.game.isNonConEnabled())) {
 				
-				String title = "Sex";
+				String title = "Секс";
 				String appendPace = "";
-				String description = UtilText.parse(getBoss(), "Let [npc.name] and [npc.her] imps have sex with you.");
+				String description = UtilText.parse(getBoss(), "Позволь бесам [npc.name] и [npc.her] трахнуть тебя.");
 				ResponseTag tag = null;
 				if(index==2) {
-					title = "Eager sex";
+					title = "Жадный секс";
 					appendPace = "_EAGER";
-					description = UtilText.parse(getBoss(), "Eagerly encourage [npc.name] and [npc.her] imps have sex with you.");
+					description = UtilText.parse(getBoss(), "С энтузиазмом поощряй бесов [npc.name] и [npc.her] трахать тебя.");
 					tag = ResponseTag.START_PACE_PLAYER_SUB_EAGER;
 				}
 				if(index==3) {
-					title = "Resist sex";
+					title = "Секс с сопротивлением";
 					appendPace = "_RESIST";
-					description = UtilText.parse(getBoss(), "Struggle against [npc.name] and [npc.her] imps and do your best to resist having sex with them.");
+					description = UtilText.parse(getBoss(), "Сопротивляйся бесам [npc.name] и [npc.her], изо всех сил стараясь избежать секса с ними.");
 					tag = ResponseTag.START_PACE_PLAYER_SUB_RESISTING;
 				}
 				
@@ -3853,11 +3848,11 @@ public class ImpFortressDialogue {
 		}
 	};
 	
-	public static final DialogueNode KEEP_AFTER_SEX_PACIFIED = new DialogueNode("Finished", "", true) {
+	public static final DialogueNode KEEP_AFTER_SEX_PACIFIED = new DialogueNode("Завершено", "", true) {
 		
 		@Override
 		public String getDescription(){
-			return UtilText.parse(getBoss(), "[npc.Name] seems happy enough with your performance, and orders you to get away from [npc.herHim].");
+			return UtilText.parse(getBoss(), "[npc.Name] кажется вполне довольной твоими успехами и приказывает тебе убираться прочь от [npc.herHim].");
 		}
 
 		@Override
@@ -3872,17 +3867,17 @@ public class ImpFortressDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Leave", UtilText.parse(getBoss(), "Do as [npc.name] commands and leave the keep."), KEEP);
+				return new Response("Уйти", UtilText.parse(getBoss(), "Делай, как велит [npc.name], и покинь замок."), KEEP);
 			}
 			return null;
 		}
 	};
 	
-	public static final DialogueNode KEEP_AFTER_SEX_VICTORY = new DialogueNode("Step back", "", true) {
+	public static final DialogueNode KEEP_AFTER_SEX_VICTORY = new DialogueNode("Отступить", "", true) {
 		
 		@Override
 		public String getDescription(){
-			return UtilText.parse(getBoss(), "Now that you've had your fun, you can step back and leave [npc.name] and [npc.her] imps to flee their fortress and disperse into the tunnels of Submission.");
+			return UtilText.parse(getBoss(), "Теперь, когда ты вдоволь повеселился, ты можешь отступить, позволив бесам [npc.name] и [npc.her] бросить свою крепость и рассеяться по туннелям Submission.");
 		}
 
 		@Override
@@ -3902,7 +3897,7 @@ public class ImpFortressDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(responseTab==0) {
 				if (index == 1) {
-					return new Response("Scare off", UtilText.parse(getBoss(), "Tell [npc.name] and [npc.her] imps to get out of here, and not come back."), KEEP_AFTER_SEX_VICTORY_SCARE_OFF) {
+					return new Response("Запугать", UtilText.parse(getBoss(), "Прикажи бесам [npc.name] и [npc.her] убираться отсюда и не возвращаться."), KEEP_AFTER_SEX_VICTORY_SCARE_OFF) {
 						@Override
 						public void effects() {
 							Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/submission/fortress"+getDialogueEncounterId(), "KEEP_AFTER_SEX_VICTORY_SCARE_OFF", getAllCharacters()));
@@ -3932,7 +3927,7 @@ public class ImpFortressDialogue {
 		}
 	};
 	
-	public static final DialogueNode KEEP_AFTER_SEX_DEFEAT = new DialogueNode("Collapse", "", true) {
+	public static final DialogueNode KEEP_AFTER_SEX_DEFEAT = new DialogueNode("Свалиться", "", true) {
 		
 		@Override
 		public int getSecondsPassed() {
@@ -3941,7 +3936,7 @@ public class ImpFortressDialogue {
 		
 		@Override
 		public String getDescription(){
-			return UtilText.parse(getBoss(), "You're completely worn out from [npc.namePos] dominant treatment, and need a while to recover.");
+			return UtilText.parse(getBoss(), "Вы совершенно измотаны доминирующим напором [npc.namePos] и нуждаетесь в отдыхе, чтобы прийти в себя.");
 		}
 
 		@Override
@@ -3952,7 +3947,7 @@ public class ImpFortressDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Continue", "Carry on your way.", Main.game.getDefaultDialogue(false)) {
+				return new Response("Продолжить", "Продолжить путь.", Main.game.getDefaultDialogue(false)) {
 					@Override
 					public void effects() {
 						if(isAlphaFortress() || Main.game.getPlayer().getLocationPlace().getPlaceType().equals(PlaceType.SUBMISSION_IMP_FORTRESS_ALPHA)) {
@@ -3967,19 +3962,19 @@ public class ImpFortressDialogue {
 							
 							if((boss).isAbleToEquipGag(Main.game.getPlayer())) {
 								AbstractClothing ringGag = Main.game.getItemGen().generateClothing("innoxia_bdsm_ringgag", PresetColour.CLOTHING_GOLD, PresetColour.CLOTHING_WHITE, PresetColour.CLOTHING_GOLD, effects);
-								ringGag.setName(UtilText.parse(boss,"[npc.NamePos] 'Cock-Sucker' Ring gag"));
+								ringGag.setName(UtilText.parse(boss,"Кольцо-кляп [npc.NamePos] «Сосальщик хуёв»"));
 								Main.game.getPlayer().equipClothingFromNowhere(ringGag, true, boss);
-								Main.game.getTextStartStringBuilder().append("<p style='text-align:center;'>"+UtilText.parse(boss,"[npc.Name]")+" has forced you to wear:<br/>"
+								Main.game.getTextStartStringBuilder().append("<p style='text-align:center;'>"+UtilText.parse(boss,"[npc.Name]")+" заставило тебя надеть:<br/>"
 										+Main.game.getPlayer().getClothingInSlot(ringGag.getClothingType().getEquipSlots().get(0)).getDisplayName(true)+ "</p>");
 							}
 							
 							if(ImpFortressDialogue.getMainCompanion()!=null && Main.sex.getAllParticipants().contains(ImpFortressDialogue.getMainCompanion())
 									&& (boss).isAbleToEquipGag(ImpFortressDialogue.getMainCompanion())) {
 								AbstractClothing ringGag = Main.game.getItemGen().generateClothing("innoxia_bdsm_ringgag", PresetColour.CLOTHING_STEEL, PresetColour.CLOTHING_BROWN_DARK, PresetColour.CLOTHING_BLACK_STEEL, effects);
-								ringGag.setName(UtilText.parse(boss,"[npc.NamePos] 'Cock-Sucker' Ring gag"));
+								ringGag.setName(UtilText.parse(boss,"Кольцо-кляп [npc.NamePos] «Сосальщик хуёв»"));
 								ImpFortressDialogue.getMainCompanion().equipClothingFromNowhere(ringGag, true, boss);
-								Main.game.getTextStartStringBuilder().append("<p style='text-align:center;'>"+UtilText.parse(boss,"[npc.Name]")+" has forced "
-										+UtilText.parse(ImpFortressDialogue.getMainCompanion(), "[npc.name]")+" to wear:<br/>"
+								Main.game.getTextStartStringBuilder().append("<p style='text-align:center;'>"+UtilText.parse(boss,"[npc.Name]")+" заставило "
+										+UtilText.parse(ImpFortressDialogue.getMainCompanion(), "[npc.name]")+" надеть:<br/>"
 											+ImpFortressDialogue.getMainCompanion().getClothingInSlot(ringGag.getClothingType().getEquipSlots().get(0)).getDisplayName(true)+ "</p>");
 							}
 							
@@ -3996,9 +3991,9 @@ public class ImpFortressDialogue {
 							if(boss.isAbleToEquipButtPlug(Main.game.getPlayer())) {
 								AbstractClothing buttPlug = Main.game.getItemGen().generateClothing(ClothingType.getClothingTypeFromId("innoxia_buttPlugs_butt_plug_heart"),
 										PresetColour.CLOTHING_SILVER, PresetColour.CLOTHING_PINK_LIGHT, PresetColour.CLOTHING_PINK_LIGHT, effects);
-								buttPlug.setName(UtilText.parse(boss,"[npc.NamePos] 'Public Playtoy' Butt plug"));
+								buttPlug.setName(UtilText.parse(boss,"Анальная пробка [npc.NamePos] «Публичная игрушка»"));
 								Main.game.getPlayer().equipClothingFromNowhere(buttPlug, true, boss);
-								Main.game.getTextStartStringBuilder().append("<p style='text-align:center;'>"+UtilText.parse(boss,"[npc.Name]")+" has forced you to wear:<br/>"
+								Main.game.getTextStartStringBuilder().append("<p style='text-align:center;'>"+UtilText.parse(boss,"[npc.Name]")+" заставило тебя надеть:<br/>"
 										+Main.game.getPlayer().getClothingInSlot(buttPlug.getClothingType().getEquipSlots().get(0)).getDisplayName(true)+ "</p>");
 							}
 							
@@ -4006,10 +4001,10 @@ public class ImpFortressDialogue {
 									&& boss.isAbleToEquipButtPlug(ImpFortressDialogue.getMainCompanion())) {
 								AbstractClothing buttPlug = Main.game.getItemGen().generateClothing(ClothingType.getClothingTypeFromId("innoxia_buttPlugs_butt_plug_heart"),
 										PresetColour.CLOTHING_SILVER, PresetColour.CLOTHING_PERIWINKLE, PresetColour.CLOTHING_PERIWINKLE, effects);
-								buttPlug.setName(UtilText.parse(boss,"[npc.NamePos] 'Public Playtoy' Butt plug"));
+								buttPlug.setName(UtilText.parse(boss,"Анальная пробка [npc.NamePos] «Публичная игрушка»"));
 								ImpFortressDialogue.getMainCompanion().equipClothingFromNowhere(buttPlug, true, boss);
-								Main.game.getTextStartStringBuilder().append("<p style='text-align:center;'>"+UtilText.parse(boss,"[npc.Name]")+" has forced "
-										+UtilText.parse(ImpFortressDialogue.getMainCompanion(), "[npc.name]")+" to wear:<br/>"
+								Main.game.getTextStartStringBuilder().append("<p style='text-align:center;'>"+UtilText.parse(boss,"[npc.Name]")+" заставило "
+										+UtilText.parse(ImpFortressDialogue.getMainCompanion(), "[npc.name]")+" надеть:<br/>"
 										+ImpFortressDialogue.getMainCompanion().getClothingInSlot(buttPlug.getClothingType().getEquipSlots().get(0)).getDisplayName(true)+ "</p>");
 							}
 							
@@ -4025,34 +4020,34 @@ public class ImpFortressDialogue {
 							
 							if(boss.isAbleToEquipThong(Main.game.getPlayer())) {
 								AbstractClothing thong = Main.game.getItemGen().generateClothing("innoxia_groin_crotchless_thong", PresetColour.CLOTHING_RED_DARK, effects);
-								thong.setName(UtilText.parse(boss,"[npc.NamePos] 'Breeder' Crotchless thong"));
+								thong.setName(UtilText.parse(boss,"[npc.NamePos] Кружевные трусики «Заводчик» без ластовицы"));
 								Main.game.getPlayer().equipClothingFromNowhere(thong, true, boss);
-								Main.game.getTextStartStringBuilder().append("<p style='text-align:center;'>"+UtilText.parse(boss,"[npc.Name]")+" has forced you to wear:<br/>"
+								Main.game.getTextStartStringBuilder().append("<p style='text-align:center;'>"+UtilText.parse(boss,"[npc.Name]")+" заставило тебя надеть:<br/>"
 										+Main.game.getPlayer().getClothingInSlot(thong.getClothingType().getEquipSlots().get(0)).getDisplayName(true)+ "</p>");
 							}
 							if(boss.isAbleToEquipDildo(Main.game.getPlayer())) {
 								AbstractClothing dildo = Main.game.getItemGen().generateClothing("innoxia_vagina_insertable_dildo", PresetColour.CLOTHING_BLACK,
 										Util.newArrayListOfValues(new ItemEffect(ItemEffectType.CLOTHING, TFModifier.CLOTHING_SPECIAL, TFModifier.CLOTHING_SEALING, TFPotency.MINOR_BOOST, 0)));
 								Main.game.getPlayer().equipClothingFromNowhere(dildo, true, boss);
-								Main.game.getTextStartStringBuilder().append("<p style='text-align:center;'>"+UtilText.parse(boss,"[npc.Name]")+" has forced you to wear:<br/>"
+								Main.game.getTextStartStringBuilder().append("<p style='text-align:center;'>"+UtilText.parse(boss,"[npc.Name]")+" заставило тебя надеть:<br/>"
 										+Main.game.getPlayer().getClothingInSlot(dildo.getClothingType().getEquipSlots().get(0)).getDisplayName(true)+ "</p>");
 							}
 							
 							if(ImpFortressDialogue.getMainCompanion()!=null && Main.sex.getAllParticipants().contains(ImpFortressDialogue.getMainCompanion())
 									&& boss.isAbleToEquipThong(ImpFortressDialogue.getMainCompanion())) {
 								AbstractClothing thong = Main.game.getItemGen().generateClothing("innoxia_groin_crotchless_thong", PresetColour.CLOTHING_PINK_LIGHT, effects);
-								thong.setName(UtilText.parse(boss,"[npc.NamePos] 'Breeder' Crotchless thong"));
+								thong.setName(UtilText.parse(boss,"[npc.NamePos] Кружевные трусики «Заводчик» без ластовицы"));
 								ImpFortressDialogue.getMainCompanion().equipClothingFromNowhere(thong, true, boss);
-								Main.game.getTextStartStringBuilder().append("<p style='text-align:center;'>"+UtilText.parse(boss,"[npc.Name]")+" has forced "
-										+UtilText.parse(ImpFortressDialogue.getMainCompanion(), "[npc.name]")+" to wear:<br/>"
+								Main.game.getTextStartStringBuilder().append("<p style='text-align:center;'>"+UtilText.parse(boss,"[npc.Name]")+" заставило "
+										+UtilText.parse(ImpFortressDialogue.getMainCompanion(), "[npc.name]")+" надеть:<br/>"
 										+ImpFortressDialogue.getMainCompanion().getClothingInSlot(thong.getClothingType().getEquipSlots().get(0)).getDisplayName(true)+ "</p>");
 							}
 							if(ImpFortressDialogue.getMainCompanion()!=null && boss.isAbleToEquipDildo(ImpFortressDialogue.getMainCompanion())) {
 								AbstractClothing dildo = Main.game.getItemGen().generateClothing("innoxia_vagina_insertable_dildo", PresetColour.CLOTHING_WHITE,
 										Util.newArrayListOfValues(new ItemEffect(ItemEffectType.CLOTHING, TFModifier.CLOTHING_SPECIAL, TFModifier.CLOTHING_SEALING, TFPotency.MINOR_BOOST, 0)));
 								ImpFortressDialogue.getMainCompanion().equipClothingFromNowhere(dildo, true, boss);
-								Main.game.getTextStartStringBuilder().append("<p style='text-align:center;'>"+UtilText.parse(boss,"[npc.Name]")+" has forced "
-										+UtilText.parse(ImpFortressDialogue.getMainCompanion(), "[npc.name]")+" to wear:<br/>"
+								Main.game.getTextStartStringBuilder().append("<p style='text-align:center;'>"+UtilText.parse(boss,"[npc.Name]")+" заставило "
+										+UtilText.parse(ImpFortressDialogue.getMainCompanion(), "[npc.name]")+" надеть:<br/>"
 										+ImpFortressDialogue.getMainCompanion().getClothingInSlot(dildo.getClothingType().getEquipSlots().get(0)).getDisplayName(true)+ "</p>");
 							}
 						}

@@ -70,7 +70,7 @@ import com.lilithsthrone.world.places.PlaceType;
  */
 public class MiscDialogue {
 	
-	public static final DialogueNode STATUS_EFFECTS = new DialogueNode("Important status effect updates", "", true) {
+	public static final DialogueNode STATUS_EFFECTS = new DialogueNode("Важные обновления эффектов статуса", "", true) {
 		@Override
 		public String getContent() {
 			StringBuilder sb = new StringBuilder();
@@ -81,7 +81,7 @@ public class MiscDialogue {
 						for(Entry<AbstractStatusEffect, String> innerEntry : entry.getValue().entrySet()) {
 							sb.append("<hr/>");
 							sb.append("<h6 style='text-align:center; margin:0; padding:0;'>");
-								sb.append(Util.capitaliseSentence(innerEntry.getKey()==null?"Miscellaneous Effects":innerEntry.getKey().getName(Main.game.getPlayer())));
+								sb.append(Util.capitaliseSentence(innerEntry.getKey()==null?"Разные эффекты":innerEntry.getKey().getName(Main.game.getPlayer())));
 							sb.append("</h6>");
 							sb.append("<p style='margin-top:0;'>");
 								sb.append(UtilText.parse(Main.game.getPlayer(), innerEntry.getValue()));
@@ -95,7 +95,7 @@ public class MiscDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 0) {
-				return new ResponseEffectsOnly("Continue", "Carry on with whatever you were doing."){
+				return new ResponseEffectsOnly("Продолжить", "Продолжить делать то, чем вы занимались."){
 					@Override
 					public void effects() {
 						Main.game.getPlayer().getStatusEffectDescriptions().clear();
@@ -124,7 +124,7 @@ public class MiscDialogue {
 		return BODY_CHANGING_MAKEUP;
 	}
 	
-	private static final DialogueNode BODY_CHANGING_MAKEUP = new DialogueNode("Makeup", "", true) {
+	private static final DialogueNode BODY_CHANGING_MAKEUP = new DialogueNode("Макияж", "", true) {
 		@Override
 		public String getHeaderContent() {
 			StringBuilder sb = new StringBuilder();
@@ -134,32 +134,32 @@ public class MiscDialogue {
 					+ "</div>"
 					
 					+ (withHairStyle
-						?CharacterModificationUtils.getSelfDivHairStyles("Hair Style", UtilText.parse(BodyChanging.getTarget(), "Change [npc.namePos] hair style."))
+						?CharacterModificationUtils.getSelfDivHairStyles("Прическа", UtilText.parse(BodyChanging.getTarget(), "Изменить прическу [npc.namePos]."))
 						:""));
 			if(!BodyChanging.getTarget().isAbleToWearMakeup()) {
 				sb.append("<div class='container-full-width' style='text-align:center;'>"
 						+ UtilText.parse(BodyChanging.getTarget(),
-								"<i>As [npc.namePos] body is made of "+BodyChanging.getTarget().getBodyMaterial().getName()+", [npc.sheIsFull] [style.colourBad(unable to wear any makeup)]!</i>")
+								"<i>Так как тело [npc.namePos] состоит из "+BodyChanging.getTarget().getBodyMaterial().getName()+", [npc.sheIsFull] [style.colourBad(невозможно использовать любую косметику)]!</i>")
 					+ "</div>");
 				
 			} else {
 				sb.append(CharacterModificationUtils.getKatesDivCoveringsNew(
-								false, Race.NONE, BodyCoveringType.MAKEUP_BLUSHER, "Blusher", "Blusher (also called rouge) is used to colour the cheeks so as to provide a more youthful appearance, and to emphasise the cheekbones.", true, true)
+								false, Race.NONE, BodyCoveringType.MAKEUP_BLUSHER, "Румяна", "Румяна (также называемые руж) используются для придания щекам цвета, чтобы придать лицу более юный вид и подчеркнуть скулы.", true, true)
 						
 						+CharacterModificationUtils.getKatesDivCoveringsNew(
-								false, Race.NONE, BodyCoveringType.MAKEUP_LIPSTICK, "Lipstick", "Lipstick is used to provide colour, texture, and protection to the wearer's lips.", true, true)
+								false, Race.NONE, BodyCoveringType.MAKEUP_LIPSTICK, "Помада", "Помада используется для придания губам цвета, текстуры и защиты.", true, true)
 						
 						+CharacterModificationUtils.getKatesDivCoveringsNew(
-								false, Race.NONE, BodyCoveringType.MAKEUP_EYE_LINER, "Eyeliner", "Eyeliner is applied around the contours of the eyes to help to define shape or highlight different features.", true, true)
+								false, Race.NONE, BodyCoveringType.MAKEUP_EYE_LINER, "Подводка для глаз", "Подводка наносится по контуру глаз, чтобы подчеркнуть их форму или выделить отдельные черты.", true, true)
 						
 						+CharacterModificationUtils.getKatesDivCoveringsNew(
-								false, Race.NONE, BodyCoveringType.MAKEUP_EYE_SHADOW, "Eye shadow", "Eye shadow is used to make the wearer's eyes stand out or look more attractive.", true, true)
+								false, Race.NONE, BodyCoveringType.MAKEUP_EYE_SHADOW, "Тени для век", "Тени для век используются для того, чтобы сделать глаза ярче или привлекательнее.", true, true)
 						
 						+CharacterModificationUtils.getKatesDivCoveringsNew(
-								false, Race.NONE, BodyCoveringType.MAKEUP_NAIL_POLISH_HANDS, "Nail polish", "Nail polish is used to colour and protect the nails on your [pc.hands].", true, true)
+								false, Race.NONE, BodyCoveringType.MAKEUP_NAIL_POLISH_HANDS, "Лак для ногтей", "Лак для ногтей используется для окрашивания и защиты ногтей на твоих [pc.hands].", true, true)
 						
 						+CharacterModificationUtils.getKatesDivCoveringsNew(
-								false, Race.NONE, BodyCoveringType.MAKEUP_NAIL_POLISH_FEET, "Toenail polish", "Toenail polish is used to colour and protect the nails on your [pc.feet].", true, true));
+								false, Race.NONE, BodyCoveringType.MAKEUP_NAIL_POLISH_FEET, "Лак для ногтей на ногах", "Лак для ногтей на ногах используется для окрашивания и защиты ногтей на твоих [pc.feet].", true, true));
 			}
 			
 			return sb.toString();
@@ -173,23 +173,23 @@ public class MiscDialogue {
 			if(index==1) {
 				if(Main.game.isInSex()) {
 					return new Response(
-							"Finished",
-							"Finish using the makeup set...",
+							"Завершено",
+							"Закончить использование набора косметики...",
 							Main.sex.SEX_DIALOGUE){
 						@Override
 						public void effects(){
 							Main.mainController.openInventory();
 							Main.sex.setUsingItemText(UtilText.parse(BodyChanging.getTarget(),
 								BodyChanging.getTarget().isPlayer()
-									?"You use the arcane makeup set on yourself..."
-									:"You use the arcane makeup set on [npc.name]..."));
+									?"Вы используете арканный набор косметики на себе..."
+									:"Вы используете арканный набор косметики на [npc.name]..."));
 							Main.sex.endSexTurn(SexActionUtility.PLAYER_USE_ITEM);
 							Main.sex.setSexStarted(true);
 						}
 					};
 					
 				} else {
-					return new ResponseEffectsOnly("Finished", "Return to your inventory screen.") {
+					return new ResponseEffectsOnly("Завершено", "Вернуться в экран инвентаря.") {
 						@Override
 						public void effects() {
 							if(BodyChanging.getTarget().isPlayer()) {
@@ -244,7 +244,7 @@ public class MiscDialogue {
 		return USED_CONDOM_SELECTION;
 	}
 	
-	private static final DialogueNode USED_CONDOM_SELECTION = new DialogueNode("Used Condom", "", true) {
+	private static final DialogueNode USED_CONDOM_SELECTION = new DialogueNode("Использованный презерватив", "", true) {
 		@Override
 		public String getHeaderContent() {
 			StringBuilder sb = new StringBuilder();
@@ -253,11 +253,11 @@ public class MiscDialogue {
 			
 			sb.append("<p>");
 				sb.append(condomUseDescription);
-				sb.append(" The condom contains:");
+				sb.append(" Внутри презерватива:");
 			sb.append("</p>");
 			
 			sb.append("<p style='text-align:center;'>");
-			sb.append("<b>[units.fluid("+fs.getMillilitres()+")]</b> of");
+			sb.append("<b>[units.fluid("+fs.getMillilitres()+")]</b> из");
 			sb.append("<br/>");
 				try {
 					sb.append(UtilText.parse(fs.getFluidCharacter(), "<span style='color:"+fs.getFluidCharacter().getFemininity().getColour().toWebHexString()+";'>[npc.NamePos]</span>"));
@@ -271,11 +271,11 @@ public class MiscDialogue {
 					sb.append(" [style.colourCum("+fs.getFluid().getName(null)+")]");
 				}
 				sb.append("<br/>");
-				sb.append("It has the flavour of <span style='color:"+fs.getFluid().getFlavour().getColour().toWebHexString()+";'>"+fs.getFluid().getFlavour().getName()+"</span>");
+				sb.append("У него вкус <span style='color:"+fs.getFluid().getFlavour().getColour().toWebHexString()+";'>"+fs.getFluid().getFlavour().getName()+"</span>");
 				if(!fs.getFluid().getFluidModifiers().isEmpty()) {
 					sb.append("<br/>");
 					StringBuilder modifiersSB = new StringBuilder();
-					modifiersSB.append("It is ");
+					modifiersSB.append("Оно ");
 					List<String> modList = new ArrayList<>();
 					for(FluidModifier mod : fs.getFluid().getFluidModifiers()) {
 						modList.add("<span style='color:"+mod.getColour().toWebHexString()+";'>"+mod.getName()+"</span>");
@@ -288,9 +288,9 @@ public class MiscDialogue {
 
 			sb.append("<p>");
 				if(Main.game.getPlayer().hasFetish(Fetish.FETISH_CUM_ADDICT)) {
-					sb.append("As you love cum so much, you feel yourself getting madly turned on at the prospect of using the contents of this condom...");
+					sb.append("Раз уж ты так обожаешь сперму, ты чувствуешь, как тебя безумно возбуждает сама мысль о том, чтобы использовать содержимое этого презерватива...");
 				} else {
-					sb.append("The cum is cold and unappealing, making you question your decision to open the condom...");
+					sb.append("Сперма холодная и неаппетитная, что заставляет тебя усомниться в решении вскрыть презерватив...");
 				}
 			sb.append("</p>");
 			
@@ -305,8 +305,8 @@ public class MiscDialogue {
 			if(index==0) {
 				if(Main.game.isInSex()) {
 					return new Response(
-							"Back",
-							"Decide against using the condom's contents...",
+							"Назад",
+							"Решить не использовать содержимое презерватива...",
 							Main.sex.SEX_DIALOGUE){
 						@Override
 						public void effects(){
@@ -316,7 +316,7 @@ public class MiscDialogue {
 					};
 					
 				} else {
-					return new ResponseEffectsOnly("Back", "Decide against using the condom's contents...") {
+					return new ResponseEffectsOnly("Назад", "Решить не использовать содержимое презерватива...") {
 						@Override
 						public void effects() {
 							condomOwner.addItem(usedCondom);
@@ -339,73 +339,73 @@ public class MiscDialogue {
 			List<Response> responses = new ArrayList<>();
 			
 			if(!condomTarget.isSexAreaExposed(SexAreaOrifice.MOUTH)) {
-				responses.add(new Response("Swallow",
-						UtilText.parse(condomTarget, "[npc.NamePos] mouth is blocked..."),
+				responses.add(new Response("Проглотить",
+						UtilText.parse(condomTarget, "Рот [npc.NamePos] забит..."),
 						null));
 			} else {
-				responses.add(getUsedCondomResponse("Swallow",
-							"Swallow the condom's contents...",
-							"Get [npc.name] to swallow the condom's contents",
+				responses.add(getUsedCondomResponse("Проглотить",
+							"Проглотить содержимое презерватива...",
+							"Заставить [npc.name] проглотить содержимое презерватива",
 							(SexAreaOrifice.MOUTH)));
 			}
 			
 			if(!condomTarget.hasVagina()) {
-				responses.add(new Response("Pussy",
-						UtilText.parse(condomTarget, "[npc.Name] [npc.do]n't have a vagina..."),
+				responses.add(new Response("Киска",
+						UtilText.parse(condomTarget, "У [npc.Name] нет [npc.do]..."),
 						null));
 			} else if(!condomTarget.isSexAreaExposed(SexAreaOrifice.VAGINA)) {
-				responses.add(new Response("Pussy",
-						UtilText.parse(condomTarget, "[npc.NamePos] pussy is blocked..."),
+				responses.add(new Response("Киска",
+						UtilText.parse(condomTarget, "Киска [npc.NamePos] забита..."),
 						null));
 			} else {
-				responses.add(getUsedCondomResponse("Pussy",
-							"Stuff the condom's contents into your pussy...",
-							"Stuff the condom's contents into [npc.namePos] pussy...",
+				responses.add(getUsedCondomResponse("Киска",
+							"Запихнуть содержимое презерватива в свою киску...",
+							"Запихай содержимое презерватива в киску [npc.namePos]...",
 							(SexAreaOrifice.VAGINA)));
 			}
 
 			if(Main.game.isAnalContentEnabled()) {
 				if(!condomTarget.isSexAreaExposed(SexAreaOrifice.ANUS)) {
-					responses.add(new Response("Asshole",
-							UtilText.parse(condomTarget, "[npc.NamePos] asshole is blocked..."),
+					responses.add(new Response("Анус",
+							UtilText.parse(condomTarget, "Анус [npc.NamePos] забит..."),
 							null));
 				} else {
-					responses.add(getUsedCondomResponse("Asshole",
-								"Stuff the condom's contents into your asshole...",
-								"Stuff the condom's contents into [npc.namePos] asshole...",
+					responses.add(getUsedCondomResponse("Анус",
+								"Запихай содержимое презерватива в свой анус...",
+								"Запихай содержимое презерватива в анус [npc.namePos]...",
 								(SexAreaOrifice.ANUS)));
 				}
 			}
 			
 			if(Main.game.isNipplePenEnabled()) {
 				if(!condomTarget.isBreastFuckableNipplePenetration()) {
-					responses.add(new Response("Nipples",
-							UtilText.parse(condomTarget, "[npc.Name] [npc.do]n't have fuckable nipples into which the condom's contents can be stuffed..."),
+					responses.add(new Response("Соски",
+							UtilText.parse(condomTarget, "У [npc.Name] [npc.do] нет подходящих для секса сосков, в которые можно было бы запихать содержимое презерватива..."),
 							null));
 				} else if(!condomTarget.isSexAreaExposed(SexAreaOrifice.NIPPLE)) {
-					responses.add(new Response("Nipples",
-							UtilText.parse(condomTarget, "[npc.NamePos] nipples are blocked..."),
+					responses.add(new Response("Соски",
+							UtilText.parse(condomTarget, "Соски [npc.NamePos] забиты..."),
 							null));
 				} else {
-					responses.add(getUsedCondomResponse("Nipples",
-							"Stuff the condom's contents into your fuckable nipples...",
-							"Stuff the condom's contents into [npc.namePos] fuckable nipples...",
+					responses.add(getUsedCondomResponse("Соски",
+							"Запихай содержимое презерватива в свои соски...",
+							"Запихай содержимое презерватива в соски [npc.namePos]...",
 							(SexAreaOrifice.NIPPLE)));
 				}
 				
 				if(Main.game.isUdderContentEnabled()) {
 					if(!condomTarget.isBreastCrotchFuckableNipplePenetration()) {
-						responses.add(new Response(condomTarget.getBreastCrotchShape()==BreastShape.UDDERS?"Udders":"Crotch-boobs",
-								UtilText.parse(condomTarget, "[npc.Name] [npc.do]n't have fuckable [npc.nipplesCrotch] into which the condom's contents can be stuffed..."),
+						responses.add(new Response(condomTarget.getBreastCrotchShape()==BreastShape.UDDERS?"Вымя":"Лобковые соски",
+								UtilText.parse(condomTarget, "У [npc.Name] [npc.do] нет подходящих для секса [npc.nipplesCrotch], в которые можно было бы запихать содержимое презерватива..."),
 								null));
 					} else if(!condomTarget.isSexAreaExposed(SexAreaOrifice.NIPPLE_CROTCH)) {
-						responses.add(new Response(condomTarget.getBreastCrotchShape()==BreastShape.UDDERS?"Udders":"Crotch-boobs",
-								UtilText.parse(condomTarget, "[npc.NamePos] [npc.nipplesCrotch] are blocked..."),
+						responses.add(new Response(condomTarget.getBreastCrotchShape()==BreastShape.UDDERS?"Вымя":"Лобковые соски",
+								UtilText.parse(condomTarget, "[npc.NamePos] [npc.nipplesCrotch] забиты..."),
 								null));
 					} else {
-						responses.add(getUsedCondomResponse(condomTarget.getBreastCrotchShape()==BreastShape.UDDERS?"Udders":"Crotch-boobs",
-								"Stuff the condom's contents into your [npc.nipplesCrotch+]...",
-								"Stuff the condom's contents into [npc.namePos] [npc.nipplesCrotch+]...",
+						responses.add(getUsedCondomResponse(condomTarget.getBreastCrotchShape()==BreastShape.UDDERS?"Вымя":"Лобковые соски",
+								"Запихай содержимое презерватива в свою [npc.nipplesCrotch+]...",
+								"Запихай содержимое презерватива в [npc.namePos] [npc.nipplesCrotch+]...",
 								(SexAreaOrifice.NIPPLE_CROTCH)));
 					}
 				}
@@ -413,52 +413,52 @@ public class MiscDialogue {
 			
 			if(Main.game.isUrethraEnabled()) {
 				if(!condomTarget.hasPenisIgnoreDildo() || !condomTarget.isUrethraFuckable()) {
-					responses.add(new Response("Penile urethra",
+					responses.add(new Response("Мочеиспускательный канал",
 							condomTarget.hasPenisIgnoreDildo()
-								?UtilText.parse(condomTarget, "[npc.Name] [npc.do]n't have a fuckable urethra into which the condom's contents can be stuffed...")
-								:UtilText.parse(condomTarget, "[npc.Name] [npc.do]n't have a penis..."),
+								?UtilText.parse(condomTarget, "У [npc.Name] [npc.do] нет подходящего для секса канала, куда можно было бы запихать содержимое презерватива...")
+								:UtilText.parse(condomTarget, "У [npc.Name] [npc.do] нет пениса..."),
 							null));
 				} else if(!condomTarget.isSexAreaExposed(SexAreaOrifice.URETHRA_PENIS)) {
-					responses.add(new Response("Penile urethra",
-							UtilText.parse(condomTarget, "[npc.NamePos] urethra is blocked..."),
+					responses.add(new Response("Мочеиспускательный канал",
+							UtilText.parse(condomTarget, "Уретра [npc.NamePos] закупорена..."),
 							null));
 				} else {
-					responses.add(getUsedCondomResponse("Penile urethra",
-							"Stuff the condom's contents into your [npc.urethraPenis]...",
-							"Stuff the condom's contents into [npc.namePos] [npc.urethraPenis+]...",
+					responses.add(getUsedCondomResponse("Мочеиспускательный канал",
+							"Запихай содержимое презерватива в свою [npc.urethraPenis]...",
+							"Запихай содержимое презерватива в [npc.namePos] [npc.urethraPenis+]...",
 							(SexAreaOrifice.URETHRA_PENIS)));
 				}
 				
 				if(!condomTarget.hasVagina() || !condomTarget.isVaginaUrethraFuckable()) {
-					responses.add(new Response("Vaginal urethra",
+					responses.add(new Response("Вагинальная уретра",
 							condomTarget.hasVagina()
-								?UtilText.parse(condomTarget, "[npc.Name] [npc.do]n't have a fuckable urethra into which the condom's contents can be stuffed...")
-								:UtilText.parse(condomTarget, "[npc.Name] [npc.do]n't have a vagina..."),
+								?UtilText.parse(condomTarget, "У [npc.Name] [npc.do] нет подходящего для секса канала, куда можно было бы запихать содержимое презерватива...")
+								:UtilText.parse(condomTarget, "У [npc.Name] нет [npc.do]..."),
 							null));
 				} else if(!condomTarget.isSexAreaExposed(SexAreaOrifice.URETHRA_VAGINA)) {
-					responses.add(new Response("Vaginal urethra",
-							UtilText.parse(condomTarget, "[npc.NamePos] urethra is blocked..."),
+					responses.add(new Response("Вагинальная уретра",
+							UtilText.parse(condomTarget, "Уретра [npc.NamePos] закупорена..."),
 							null));
 				} else {
-					responses.add(getUsedCondomResponse("Vaginal urethra",
-							"Stuff the condom's contents into your [npc.urethraVagina]...",
-							"Stuff the condom's contents into [npc.namePos] [npc.urethraVagina+]...",
+					responses.add(getUsedCondomResponse("Вагинальная уретра",
+							"Запихай содержимое презерватива в свою [npc.urethraVagina]...",
+							"Запихай содержимое презерватива в [npc.namePos] [npc.urethraVagina+]...",
 							(SexAreaOrifice.URETHRA_VAGINA)));
 				}
 			}
 
 			if(!condomTarget.hasSpinneret()) {
-				responses.add(new Response("Spinneret",
-						UtilText.parse(condomTarget, "[npc.Name] [npc.do]n't have a spinneret into which the condom's contents can be stuffed..."),
+				responses.add(new Response("Паутинный аппарат",
+						UtilText.parse(condomTarget, "У [npc.Name] [npc.do] нет паутинного аппарата, в который можно было бы запихать содержимое презерватива..."),
 						null));
 			} else if(!condomTarget.isSexAreaExposed(SexAreaOrifice.SPINNERET)) {
-				responses.add(new Response("Spinneret",
-						UtilText.parse(condomTarget, "[npc.NamePos] spinneret is blocked..."),
+				responses.add(new Response("Паутинный аппарат",
+						UtilText.parse(condomTarget, "Паутинный аппарат [npc.NamePos] забит..."),
 						null));
 			} else {
-				responses.add(getUsedCondomResponse("Spinneret",
-							"Stuff the condom's contents into your spinneret...",
-							"Stuff the condom's contents into [npc.namePos] spinneret...",
+				responses.add(getUsedCondomResponse("Паутинный аппарат",
+							"Запихай содержимое презерватива в свой паутинный аппарат...",
+							"Запихай содержимое презерватива в паутинный аппарат [npc.namePos]...",
 							(SexAreaOrifice.SPINNERET)));
 			}
 			
@@ -549,89 +549,73 @@ public class MiscDialogue {
 			case ANUS:
 				if(condomTarget.hasFetish(Fetish.FETISH_CUM_ADDICT)) {
 					sb.append(UtilText.parse(condomTarget, condomUser,
-							"[npc.Name] can't help but let out a delighted [npc.moan] as "+targetNameSelfShe+" eagerly [npc2.verb(push)] the slimy fluid into [npc.her] [npc.asshole+]."
-							+ " Desperately stuffing "+userNamePosSelfHer+" [npc.ass] full of the condom's contents, "+targetNameSelfShe+" only [npc2.verb(discard)] the condom once [npc2.sheIs] sure that it's completely empty."));
+							"[npc.Name] не может не издать восторженный [npc.moan], когда "+targetNameSelfShe+" жадно [npc2.verb(push)] склизкую жидкость в [npc.her] [npc.asshole+]. Отчаянно запихивая "+userNamePosSelfHer+" [npc.ass], наполненный содержимым презерватива, "+targetNameSelfShe+" только [npc2.verb(discard)] презерватив, когда [npc2.sheIs], что он полностью пуст."));
 				} else {
 					sb.append(UtilText.parse(condomTarget, condomUser,
-							"[npc.Name] [npc.verb(shudder)] as "+targetNameSelfShe+" [npc2.verb(push)] the slimy fluid into [npc.her] [npc.asshole+],"
-									+ " trying [npc.her] best not to think about the cold "+cumName+" that's now in [npc.her] [npc.ass] as "+targetNameSelfShe+" [npc2.verb(throw)] the now-empty condom to the floor..."));
+							"[npc.Name] [npc.verb(shudder)], как "+targetNameSelfShe+" [npc2.verb(push)] слизистую жидкость в [npc.her] [npc.asshole+], стараясь [npc.her] изо всех сил не думать о холоде "+cumName+" который теперь в [npc.her] [npc.ass], когда "+targetNameSelfShe+" [npc2.verb(throw)] теперь уже пустой презерватив на пол..."));
 				}
 				break;
 			case MOUTH:
 				if(condomTarget.hasFetish(Fetish.FETISH_CUM_ADDICT)) {
 					sb.append(UtilText.parse(condomTarget, condomUser,
-							"[npc.Name] can't help but let out a delighted [npc.moan] as [npc.she] greedily [npc.verb(gulp)] down the slimy fluid."
-							+ " Darting [npc.her] [npc.tongue] out, [npc.she] desperately [npc.verb(lick)] up every last drop of cum; only discarding the condom once [npc.sheIs] sure that it's completely empty."));
+							"[npc.Name] не может не издать восторженный [npc.moan], когда [npc.she] жадно [npc.verb(gulp)] склизкую жидкость. Быстро высунув [npc.her] [npc.tongue], [npc.she] отчаянно [npc.verb(lick)] каждую последнюю каплю спермы; выбрасывая презерватив только тогда, когда [npc.sheIs] уверен, что он полностью пуст."));
 				} else {
 					sb.append(UtilText.parse(condomTarget, condomUser,
-							"[npc.Name] [npc.verb(scrunch)] [npc.her] [npc.eyes] shut as [npc.she] [npc.verb(gulp)] down the slimy fluid,"
-									+ " trying [npc.her] best not to think about what [npc.sheHas] just done as "+targetNameSelfShe+" [npc2.verb(throw)] the now-empty condom to the floor..."));
+							"[npc.Name] [npc.verb(scrunch)] [npc.her] [npc.eyes] заглатывал [npc.she] [npc.verb(gulp)] скользкую жидкость, стараясь [npc.her] изо всех сил не думать о том, что [npc.sheHas] только что сделал, когда "+targetNameSelfShe+" [npc2.verb(throw)] теперь уже пустой презерватив на пол..."));
 				}
 				break;
 			case NIPPLE:
 				if(condomTarget.hasFetish(Fetish.FETISH_CUM_ADDICT)) {
 					sb.append(UtilText.parse(condomTarget, condomUser,
-							"[npc.Name] can't help but let out a delighted [npc.moan] as "+targetNameSelfShe+" eagerly [npc2.verb(push)] the slimy fluid into [npc.her] [npc.nipple+]."
-							+ " Desperately stuffing "+userNamePosSelfHer+" [npc.breasts] full of the condom's contents, "+targetNameSelfShe+" only [npc2.verb(discard)] the condom once [npc2.sheIs] sure that it's completely empty."));
+							"[npc.Name] не может не издать восторженный [npc.moan], когда "+targetNameSelfShe+" жадно [npc2.verb(push)] склизкую жидкость в [npc.her] [npc.nipple+]. Отчаянно запихивая "+userNamePosSelfHer+" [npc.breasts], наполненное содержимым презерватива, "+targetNameSelfShe+" только [npc2.verb(discard)] презерватив, когда [npc2.sheIs], что он полностью пуст."));
 				} else {
 					sb.append(UtilText.parse(condomTarget, condomUser,
-							"[npc.Name] [npc.verb(shudder)] as "+targetNameSelfShe+" [npc2.verb(push)] the slimy fluid into [npc.her] [npc.nipple+],"
-									+ " trying [npc.her] best not to think about the cold "+cumName+" that's now in [npc.her] [npc.breasts] as "+targetNameSelfShe+" [npc2.verb(throw)] the now-empty condom to the floor..."));
+							"[npc.Name] [npc.verb(shudder)], как "+targetNameSelfShe+" [npc2.verb(push)] склизкую жидкость в [npc.her] [npc.nipple+], стараясь изо [npc.her] сил не думать о холоде, "+cumName+" который теперь в [npc.her] [npc.breasts], пока "+targetNameSelfShe+" [npc2.verb(throw)] теперь уже пустой презерватив на пол..."));
 				}
 				break;
 			case NIPPLE_CROTCH:
 				if(condomTarget.hasFetish(Fetish.FETISH_CUM_ADDICT)) {
 					sb.append(UtilText.parse(condomTarget, condomUser,
-							"[npc.Name] can't help but let out a delighted [npc.moan] as "+targetNameSelfShe+" eagerly [npc2.verb(push)] the slimy fluid into [npc.her] [npc.nippleCrotch+]."
-							+ " Desperately stuffing "+userNamePosSelfHer+" [npc.crotchBoobs] full of the condom's contents, "+targetNameSelfShe+" only [npc2.verb(discard)] the condom once [npc2.sheIs] sure that it's completely empty."));
+							"[npc.Name] не может не издать восторженный [npc.moan], когда "+targetNameSelfShe+" жадно [npc2.verb(push)] склизкую жидкость в [npc.her] [npc.nippleCrotch+]. Отчаянно запихивая "+userNamePosSelfHer+" [npc.crotchBoobs], наполненное содержимым презерватива, "+targetNameSelfShe+" только [npc2.verb(discard)] презерватив, когда [npc2.sheIs], что он полностью пуст."));
 				} else {
 					sb.append(UtilText.parse(condomTarget, condomUser,
-							"[npc.Name] [npc.verb(shudder)] as "+targetNameSelfShe+" [npc2.verb(push)] the slimy fluid into [npc.her] [npc.nippleCrotch+],"
-									+ " trying [npc.her] best not to think about the cold "+cumName+" that's now in [npc.her] [npc.crotchBoobs] as "+targetNameSelfShe+" [npc2.verb(throw)] the now-empty condom to the floor..."));
+							"[npc.Name] [npc.verb(shudder)], как "+targetNameSelfShe+" [npc2.verb(push)] склизкую жидкость в [npc.her] [npc.nippleCrotch+], стараясь изо [npc.her] сил не думать о холоде, "+cumName+" который теперь в [npc.her] [npc.crotchBoobs], пока "+targetNameSelfShe+" [npc2.verb(throw)] теперь уже пустой презерватив на пол..."));
 				}
 				break;
 			case SPINNERET:
 				if(condomTarget.hasFetish(Fetish.FETISH_CUM_ADDICT)) {
 					sb.append(UtilText.parse(condomTarget, condomUser,
-							"[npc.Name] can't help but let out a delighted [npc.moan] as "+targetNameSelfShe+" eagerly [npc2.verb(push)] the slimy fluid into [npc.her] [npc.spinneret+]."
-							+ " Desperately stuffing "+userNamePosSelfHer+" web-spinning orifice full of the condom's contents, "+targetNameSelfShe+" only [npc2.verb(discard)] the condom once [npc2.sheIs] sure that it's completely empty."));
+							"[npc.Name] не может не издать восторженный [npc.moan], когда "+targetNameSelfShe+" жадно [npc2.verb(push)] склизкую жидкость в [npc.her] [npc.spinneret+]. Отчаянно запихивая "+userNamePosSelfHer+" похожее на паутину отверстие, полное содержимого презерватива, "+targetNameSelfShe+" только [npc2.verb(discard)] презерватив, когда [npc2.sheIs], что он полностью пуст."));
 				} else {
 					sb.append(UtilText.parse(condomTarget, condomUser,
-							"[npc.Name] [npc.verb(shudder)] as "+targetNameSelfShe+" [npc2.verb(push)] the slimy fluid into [npc.her] [npc.spinneret+],"
-									+ " trying [npc.her] best not to think about the cold "+cumName+" that's now in [npc.her] web-spinning orifice as "+targetNameSelfShe+" [npc2.verb(throw)] the now-empty condom to the floor..."));
+							"[npc.Name] [npc.verb(shudder)], как "+targetNameSelfShe+" [npc2.verb(push)] склизкую жидкость в [npc.her] [npc.spinneret+], стараясь [npc.her] изо всех сил не думать о холоде "+cumName+" который теперь в паутиноподобном отверстии [npc.her], когда "+targetNameSelfShe+" [npc2.verb(throw)] теперь уже пустой презерватив на пол..."));
 				}
 				break;
 			case URETHRA_PENIS:
 				if(condomTarget.hasFetish(Fetish.FETISH_CUM_ADDICT)) {
 					sb.append(UtilText.parse(condomTarget, condomUser,
-							"[npc.Name] can't help but let out a delighted [npc.moan] as "+targetNameSelfShe+" eagerly [npc2.verb(push)] the slimy fluid into [npc.her] [npc.urethraPenis+]."
-							+ " Desperately stuffing "+userNamePosSelfHer+" [npc.cock] full of the condom's contents, "+targetNameSelfShe+" only [npc2.verb(discard)] the condom once [npc2.sheIs] sure that it's completely empty."));
+							"[npc.Name] не может не издать восторженный [npc.moan], когда "+targetNameSelfShe+" с жадностью [npc2.verb(push)] склизкую жидкость в [npc.her] [npc.urethraPenis+]. Отчаянно запихивая "+userNamePosSelfHer+" [npc.cock], наполненное содержимым презерватива, "+targetNameSelfShe+" только [npc2.verb(discard)] презерватив, когда [npc2.sheIs], что он полностью пуст."));
 				} else {
 					sb.append(UtilText.parse(condomTarget, condomUser,
-							"[npc.Name] [npc.verb(shudder)] as "+targetNameSelfShe+" [npc2.verb(push)] the slimy fluid into [npc.her] [npc.urethraPenis+],"
-									+ " trying [npc.her] best not to think about the cold "+cumName+" that's now in [npc.her] [npc.cock] as "+targetNameSelfShe+" [npc2.verb(throw)] the now-empty condom to the floor..."));
+							"[npc.Name] [npc.verb(shudder)], как "+targetNameSelfShe+" [npc2.verb(push)] склизкую жидкость в [npc.her] [npc.urethraPenis+], стараясь [npc.her] изо всех сил не думать о холоде "+cumName+" который теперь в [npc.her] [npc.cock], когда "+targetNameSelfShe+" [npc2.verb(throw)] теперь уже пустой презерватив на пол..."));
 				}
 				break;
 			case URETHRA_VAGINA:
 				if(condomTarget.hasFetish(Fetish.FETISH_CUM_ADDICT)) {
 					sb.append(UtilText.parse(condomTarget, condomUser,
-							"[npc.Name] can't help but let out a delighted [npc.moan] as "+targetNameSelfShe+" eagerly [npc2.verb(push)] the slimy fluid into [npc.her] [npc.urethraVagina+]."
-							+ " Desperately stuffing "+userNamePosSelfHer+" [npc.pussy] full of the condom's contents, "+targetNameSelfShe+" only [npc2.verb(discard)] the condom once [npc2.sheIs] sure that it's completely empty."));
+							"[npc.Name] не может не издать восторженный [npc.moan], когда "+targetNameSelfShe+" с жадностью [npc2.verb(push)] склизкую жидкость в [npc.her] [npc.urethraVagina+]. Отчаянно запихивая "+userNamePosSelfHer+" [npc.pussy], наполненное содержимым презерватива, "+targetNameSelfShe+" только [npc2.verb(discard)] презерватив, когда [npc2.sheIs], что он полностью пуст."));
 				} else {
 					sb.append(UtilText.parse(condomTarget, condomUser,
-							"[npc.Name] [npc.verb(shudder)] as "+targetNameSelfShe+" [npc2.verb(push)] the slimy fluid into [npc.her] [npc.urethraVagina+],"
-									+ " trying [npc.her] best not to think about the cold "+cumName+" that's now in [npc.her] [npc.pussy] as "+targetNameSelfShe+" [npc2.verb(throw)] the now-empty condom to the floor..."));
+							"[npc.Name] [npc.verb(shudder)], как "+targetNameSelfShe+" [npc2.verb(push)] склизкую жидкость в [npc.her] [npc.urethraVagina+], стараясь [npc.her] изо всех сил не думать о холоде "+cumName+" который теперь в [npc.her] [npc.pussy], когда "+targetNameSelfShe+" [npc2.verb(throw)] теперь уже пустой презерватив на пол..."));
 				}
 				break;
 			case VAGINA:
 				if(condomTarget.hasFetish(Fetish.FETISH_CUM_ADDICT)) {
 					sb.append(UtilText.parse(condomTarget, condomUser,
-							"[npc.Name] can't help but let out a delighted [npc.moan] as "+targetNameSelfShe+" eagerly [npc2.verb(push)] the slimy fluid into [npc.her] [npc.pussy+]."
-							+ " Desperately stuffing "+userNamePosSelfHer+" [npc.pussy] full of the condom's contents, "+targetNameSelfShe+" only [npc2.verb(discard)] the condom once [npc2.sheIs] sure that it's completely empty."));
+							"[npc.Name] не может не издать восторженный [npc.moan], когда "+targetNameSelfShe+" жадно [npc2.verb(push)] склизкую жидкость в [npc.her] [npc.pussy+]. Отчаянно запихивая "+userNamePosSelfHer+" [npc.pussy], наполненное содержимым презерватива, "+targetNameSelfShe+" только [npc2.verb(discard)] презерватив, когда [npc2.sheIs], что он полностью пуст."));
 				} else {
 					sb.append(UtilText.parse(condomTarget, condomUser,
-							"[npc.Name] [npc.verb(shudder)] as "+targetNameSelfShe+" [npc2.verb(push)] the slimy fluid into [npc.her] [npc.pussy+],"
-									+ " trying [npc.her] best not to think about the cold "+cumName+" that's now in [npc.her] [npc.pussy] as "+targetNameSelfShe+" [npc2.verb(throw)] the now-empty condom to the floor..."));
+							"[npc.Name] [npc.verb(shudder)], как "+targetNameSelfShe+" [npc2.verb(push)] склизкую жидкость в [npc.her] [npc.pussy+], стараясь [npc.her] изо всех сил не думать о холоде "+cumName+" который теперь в [npc.her] [npc.pussy], когда "+targetNameSelfShe+" [npc2.verb(throw)] теперь уже пустой презерватив на пол..."));
 				}
 				break;
 		}
@@ -740,7 +724,7 @@ public class MiscDialogue {
 	}
 	
 	
-	public static final DialogueNode DOLL_BROCHURE = new DialogueNode("Doll Brochure", "", true) {
+	public static final DialogueNode DOLL_BROCHURE = new DialogueNode("Брошюра с куклами", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			dollOption = 0;
@@ -764,51 +748,51 @@ public class MiscDialogue {
 				sb.append(Main.game.parseFromFile("txt/places/dominion/sex_shop/generic", "DOLL_BROCHURE"));
 			}
 			
-			sb.append(startWrapper("Model"));
-				sb.append(applyWrapperDiscounted("DD", "Our standard model; the 'DD' comes with DD-cup breasts and a feminine figure.", PresetColour.GENERIC_GOOD, "DOLL_CORE_0", "Select", dollOption==0, getDollCost(0), false));
-				sb.append(applyWrapperDiscounted("HH", "Our premium model; the 'HH' comes with HH-cup breasts and a more womanly figure.", PresetColour.GENERIC_GOOD, "DOLL_CORE_1", "Select", dollOption==1, getDollCost(1), false));
-				sb.append(applyWrapperDiscounted("Anthro Special", "Our special edition anthro dolls come in every race imaginable. You'll be able to select your preferred race after filling out this form.",
-							PresetColour.GENERIC_EXCELLENT, "DOLL_CORE_2", "Select", dollOption==2, getDollCost(2), false));
+			sb.append(startWrapper("Модель"));
+				sb.append(applyWrapperDiscounted("DD", "Наша стандартная модель; версия «DD» оснащена грудью размера DD и женственной фигурой.", PresetColour.GENERIC_GOOD, "DOLL_CORE_0", "Выбрать", dollOption==0, getDollCost(0), false));
+				sb.append(applyWrapperDiscounted("HH", "Наша премиальная модель; версия «HH» оснащена грудью размера HH и более зрелой женской фигурой.", PresetColour.GENERIC_GOOD, "DOLL_CORE_1", "Выбрать", dollOption==1, getDollCost(1), false));
+				sb.append(applyWrapperDiscounted("Антропо-спецвыпуск", "Наши специальные антропоморфные куклы представлены во всех мыслимых расах. Вы сможете выбрать предпочитаемую расу после заполнения этой формы.",
+							PresetColour.GENERIC_EXCELLENT, "DOLL_CORE_2", "Выбрать", dollOption==2, getDollCost(2), false));
 			sb.append(endWrapper());
 
-			sb.append(startWrapper("Genitals"));
-				sb.append(applyWrapperDiscounted("Pussy", "The default option; an artificial pussy.", PresetColour.FEMININE, "DOLL_GENITALS_0", "Select", genitalsOption==0, getGenitalCost(0), true));
-				sb.append(applyWrapperDiscounted("Cock", "Replace your doll's pussy with a cock; our doll's cocks display realistic flaccid and erection behaviour.",
-						PresetColour.MASCULINE, "DOLL_GENITALS_1", "Select", genitalsOption==1, getGenitalCost(1), true));
-				sb.append(applyWrapperDiscounted("Both", "For if you want the best of both worlds; give your doll a pussy and cock.", PresetColour.ANDROGYNOUS, "DOLL_GENITALS_2", "Select", genitalsOption==2, getGenitalCost(2), true));
+			sb.append(startWrapper("Гениталии"));
+				sb.append(applyWrapperDiscounted("Киска", "Вариант по умолчанию; искусственная киска.", PresetColour.FEMININE, "DOLL_GENITALS_0", "Выбрать", genitalsOption==0, getGenitalCost(0), true));
+				sb.append(applyWrapperDiscounted("Хер", "Замените киску вашей куклы на член; члены наших кукол демонстрируют реалистичное поведение в расслабленном и эрегированном состоянии.",
+						PresetColour.MASCULINE, "DOLL_GENITALS_1", "Выбрать", genitalsOption==1, getGenitalCost(1), true));
+				sb.append(applyWrapperDiscounted("Оба", "Ведь если вы хотите получить лучшее из двух миров — подарите своей кукле и киску, и член.", PresetColour.ANDROGYNOUS, "DOLL_GENITALS_2", "Выбрать", genitalsOption==2, getGenitalCost(2), true));
 			sb.append(endWrapper());
 
 			if(Main.getProperties().hasValue(PropertyValue.ageContent)) {
-				sb.append(startWrapper("Age Appearance"));
-					sb.append(applyWrapperDiscounted("18", "Our default model has the appearance of an 18 year old.", PresetColour.AGE_TEENS, "DOLL_AGE_0", "Select", ageOption==0, getAgeCost(0), true));
-					sb.append(applyWrapperDiscounted("20's", "We're able to age your doll a little if you like.", PresetColour.AGE_TWENTIES, "DOLL_AGE_1", "Select", ageOption==1, getAgeCost(1), true));
-					sb.append(applyWrapperDiscounted("30's", "Or we can double their age from the default, if you prefer.", PresetColour.AGE_THIRTIES, "DOLL_AGE_2", "Select", ageOption==2, getAgeCost(2), true));
-					sb.append(applyWrapperDiscounted("40's", "Want your doll to look like a MILF? We can do that too.", PresetColour.AGE_FORTIES, "DOLL_AGE_3", "Select", ageOption==3, getAgeCost(3), true));
-					sb.append(applyWrapperDiscounted("50's", "If you prefer more mature bodies, we can keep going...", PresetColour.AGE_FIFTIES, "DOLL_AGE_4", "Select", ageOption==4, getAgeCost(4), true));
-					sb.append(applyWrapperDiscounted("60's", "And make them look *very* mature...", PresetColour.AGE_SIXTIES, "DOLL_AGE_5", "Select", ageOption==5, getAgeCost(5), true));
+				sb.append(startWrapper("Внешний возраст"));
+					sb.append(applyWrapperDiscounted("18", "Наша стандартная модель выглядит как 18-летняя девушка.", PresetColour.AGE_TEENS, "DOLL_AGE_0", "Выбрать", ageOption==0, getAgeCost(0), true));
+					sb.append(applyWrapperDiscounted("20's", "Если хотите, мы можем немного состарить вашу куклу.", PresetColour.AGE_TWENTIES, "DOLL_AGE_1", "Выбрать", ageOption==1, getAgeCost(1), true));
+					sb.append(applyWrapperDiscounted("30's", "Или же, если предпочитаете, мы можем удвоить её возраст относительно стандартного.", PresetColour.AGE_THIRTIES, "DOLL_AGE_2", "Выбрать", ageOption==2, getAgeCost(2), true));
+					sb.append(applyWrapperDiscounted("40's", "Хотите, чтобы ваша кукла выглядела как милфа? Мы можем и это.", PresetColour.AGE_FORTIES, "DOLL_AGE_3", "Выбрать", ageOption==3, getAgeCost(3), true));
+					sb.append(applyWrapperDiscounted("50's", "Если вам нравятся тела постарше, мы можем продолжать...", PresetColour.AGE_FIFTIES, "DOLL_AGE_4", "Выбрать", ageOption==4, getAgeCost(4), true));
+					sb.append(applyWrapperDiscounted("60's", "И сделать их *очень* зрелыми...", PresetColour.AGE_SIXTIES, "DOLL_AGE_5", "Выбрать", ageOption==5, getAgeCost(5), true));
 				sb.append(endWrapper());
 			}
 			
-			sb.append(startWrapper("Outfits"));
-				sb.append(applyWrapper("Naked", "No clothes are supplied with your doll.", PresetColour.BASE_BLUE_STEEL, "DOLL_CLOTHING_0", "Select", outfitOption==0, getOutfitCost(0), true));
-				sb.append(applyWrapper("Rainbow", "Your doll will arrive wearing rainbow accessories.", PresetColour.BASE_INDIGO, "DOLL_CLOTHING_1", "Select", outfitOption==1, getOutfitCost(1), true));
-				sb.append(applyWrapper("Kitty lingerie", "Your doll will arrive wearing a full set of kitty lingerie.", PresetColour.BASE_PINK_LIGHT, "DOLL_CLOTHING_2", "Select", outfitOption==2, getOutfitCost(2), true));
-				sb.append(applyWrapper("Maid", "Your doll will arrive wearing a full maid's uniform.", PresetColour.BASE_PINK, "DOLL_CLOTHING_3", "Select", outfitOption==3, getOutfitCost(3), true));
+			sb.append(startWrapper("Наряды"));
+				sb.append(applyWrapper("Обнаженная", "Одежда в комплект к кукле не входит.", PresetColour.BASE_BLUE_STEEL, "DOLL_CLOTHING_0", "Выбрать", outfitOption==0, getOutfitCost(0), true));
+				sb.append(applyWrapper("Радуга", "Ваша кукла прибудет в радужных аксессуарах.", PresetColour.BASE_INDIGO, "DOLL_CLOTHING_1", "Выбрать", outfitOption==1, getOutfitCost(1), true));
+				sb.append(applyWrapper("Кошачье белье", "Ваша кукла прибудет в полном комплекте кошачьего белья.", PresetColour.BASE_PINK_LIGHT, "DOLL_CLOTHING_2", "Выбрать", outfitOption==2, getOutfitCost(2), true));
+				sb.append(applyWrapper("Горничная", "Ваша кукла прибудет в полном костюме горничной.", PresetColour.BASE_PINK, "DOLL_CLOTHING_3", "Выбрать", outfitOption==3, getOutfitCost(3), true));
 			sb.append(endWrapper());
 			
-			sb.append(startWrapper("Extras"));
-				sb.append(applyWrapper("Erase barcode", "We'll remove the barcode tattoo from your doll's forehead before delivery.", PresetColour.GENERIC_MINOR_GOOD, "DOLL_BARCODE", "Remove", barcodeRemoval, getBarcodeCost(), true));
-				sb.append(applyWrapper("Toy set", "Your doll will come equipped with a selection of toys.", PresetColour.BASE_PINK, "DOLL_TOYS", "Add", toySet, getToyCost(), true));
-				sb.append(applyWrapperDiscounted("Hair", "We'll give your doll a head of synthetic hair.", PresetColour.BASE_BROWN_LIGHT, "DOLL_HAIR", "Add", hair, getHairCost(), true));
+			sb.append(startWrapper("Дополнительно"));
+				sb.append(applyWrapper("Стереть штрихкод", "Перед доставкой мы удалим татуировку в виде штрихкода со лба вашей куклы.", PresetColour.GENERIC_MINOR_GOOD, "DOLL_BARCODE", "Убрать", barcodeRemoval, getBarcodeCost(), true));
+				sb.append(applyWrapper("Набор игрушек", "Ваша кукла будет укомплектована набором игрушек на ваш выбор.", PresetColour.BASE_PINK, "DOLL_TOYS", "Добавить", toySet, getToyCost(), true));
+				sb.append(applyWrapperDiscounted("Волосы", "Мы сделаем вашей кукле парик из синтетических волос.", PresetColour.BASE_BROWN_LIGHT, "DOLL_HAIR", "Добавить", hair, getHairCost(), true));
 				sb.append(applyWrapperDisabled("D.E.C.K.",
 						(Main.game.getPlayer().hasItemType(ItemType.DOLL_CONSOLE)
-							?"[style.italicsDisabled(You already have a D.E.C.K., and have no need for another...)]"
-							:"Purchase a D.E.C.K. with your doll, allowing you to fully customise it whenever you want."),
-						PresetColour.GENERIC_EXCELLENT, "DOLL_DECK", "Purchase", deck, getDeckCost(), true, Main.game.getPlayer().hasItemType(ItemType.DOLL_CONSOLE)));
+							?"[style.italicsDisabled(У вас уже есть D.E.C.K., и другой вам не нужен...)]"
+							:"Приобрести D.E.C.K. вместе с куклой, что позволит вам полностью настраивать её в любое время."),
+						PresetColour.GENERIC_EXCELLENT, "DOLL_DECK", "Купить", deck, getDeckCost(), true, Main.game.getPlayer().hasItemType(ItemType.DOLL_CONSOLE)));
 			sb.append(endWrapper());
 
-			sb.append(startWrapper("Pre-delivery"));
-				sb.append(applyWrapper("Broken-in", "Don't like the idea of your doll being a virgin? Saellatrix will happily break in all of their holes.", PresetColour.BASE_PINK_DEEP, "DOLL_FUCKED", "Fucked", fucked, getFuckedCost(), true));
+			sb.append(startWrapper("До доставки"));
+				sb.append(applyWrapper("Разношенная", "Не нравится мысль о том, что твоя кукла — девственница? Саэллатрикс с радостью разбередит все её дырочки.", PresetColour.BASE_PINK_DEEP, "DOLL_FUCKED", "Трахнутый", fucked, getFuckedCost(), true));
 			sb.append(endWrapper());
 			
 			return sb.toString();
@@ -821,8 +805,8 @@ public class MiscDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				if(Main.game.getPlayer().getMoney()>=getDollBrochureCost()) {
-					return new Response("Continue ("+UtilText.formatAsMoney(getDollBrochureCost(), "span")+")",
-							"Fill out the form and give it back to Saellatrix.",
+					return new Response("Продолжить ("+UtilText.formatAsMoney(getDollBrochureCost(), "охват")+")",
+							"Заполните форму и отдайте её Саэллатрикс.",
 							dollOption==2
 								?DOLL_BROCHURE_RACE_SELECTION
 								:DOLL_BROCHURE_FINISHED) {
@@ -835,17 +819,17 @@ public class MiscDialogue {
 					};
 					
 				} else {
-					return new Response("Continue ("+UtilText.formatAsMoneyUncoloured(getDollBrochureCost(), "span")+")", "You can't afford this...", null);
+					return new Response("Продолжить ("+UtilText.formatAsMoneyUncoloured(getDollBrochureCost(), "охват")+")", "Тебе это не по карману...", null);
 				}
 				
 			} else if(index==2) {
-				return new Response("Back", "Decide against buying a doll after all.", DialogueManager.getDialogueFromId("innoxia_places_dominion_sex_shop_generic_counter"));
+				return new Response("Назад", "В итоге отказаться от покупки куклы.", DialogueManager.getDialogueFromId("innoxia_places_dominion_sex_shop_generic_counter"));
 			}
 			return null;
 		}
 	};
 
-	public static final DialogueNode DOLL_BROCHURE_INTERNAL = new DialogueNode("Doll Brochure", "", true) {
+	public static final DialogueNode DOLL_BROCHURE_INTERNAL = new DialogueNode("Брошюра с куклами", "", true) {
 		@Override
 		public String getHeaderContent() {
 			return DOLL_BROCHURE.getHeaderContent();
@@ -893,7 +877,7 @@ public class MiscDialogue {
 		return dollCompatibleSubspecies;
 	}
 	
-	public static final DialogueNode DOLL_BROCHURE_RACE_SELECTION = new DialogueNode("Doll Brochure", "", true) {
+	public static final DialogueNode DOLL_BROCHURE_RACE_SELECTION = new DialogueNode("Брошюра с куклами", "", true) {
 		@Override
 		public String getContent() {
 			return Main.game.parseFromFile("txt/places/dominion/sex_shop/generic", "DOLL_BROCHURE_RACE_SELECTION");
@@ -915,7 +899,7 @@ public class MiscDialogue {
 				
 				return new Response(
 						Util.capitaliseSentence(name),
-						"Choose "+UtilText.generateSingularDeterminer(name)+" "+name+" to be your doll's subspecies.",
+						"Выбрать "+UtilText.generateSingularDeterminer(name)+" "+name+" подвид для твоей куклы.",
 						DOLL_BROCHURE_FINISHED){
 					@Override
 					public void effects() {
@@ -925,13 +909,13 @@ public class MiscDialogue {
 				};
 				
 			} else if (index == 0) {
-				return new Response("Back", "Return to the previous page.", DOLL_BROCHURE_INTERNAL);
+				return new Response("Назад", "Вернуться на предыдущую страницу.", DOLL_BROCHURE_INTERNAL);
 			}
 			return null;
 		}
 	};
 	
-	public static final DialogueNode DOLL_BROCHURE_FINISHED = new DialogueNode("Doll Brochure", "", true) {
+	public static final DialogueNode DOLL_BROCHURE_FINISHED = new DialogueNode("Брошюра с куклами", "", true) {
 		@Override
 		public String getContent() {
 			UtilText.addSpecialParsingString(String.valueOf(dollOption), true);
@@ -954,8 +938,8 @@ public class MiscDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Pay ("+UtilText.formatAsMoney(getDollBrochureCost(), "span")+")",
-						"Pay "+UtilText.formatAsMoney(getDollBrochureCost(), "span")+" to buy the doll with the options you've selected.",
+				return new Response("Заплатить ("+UtilText.formatAsMoney(getDollBrochureCost(), "охват")+")",
+						"Заплатить "+UtilText.formatAsMoney(getDollBrochureCost(), "охват")+" чтобы купить куклу с выбранными вами настройками.",
 						slaveToDollify==null
 							?DOLL_BROCHURE_END
 							:DOLL_BROCHURE_END_SLAVE) {
@@ -967,14 +951,14 @@ public class MiscDialogue {
 				};
 				
 			} else if (index == 2) {
-				return new Response("Back", "Return to the brochure.", DOLL_BROCHURE_INTERNAL);
+				return new Response("Назад", "Вернуться к брошюре.", DOLL_BROCHURE_INTERNAL);
 			}
 			
 			return null;
 		}
 	};
 	
-	public static final DialogueNode DOLL_BROCHURE_END = new DialogueNode("Doll Brochure", "", true) {
+	public static final DialogueNode DOLL_BROCHURE_END = new DialogueNode("Брошюра с куклами", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			if(deck) {
@@ -989,8 +973,8 @@ public class MiscDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Wait",
-						"Wait for Saellatrix to return with your new doll.",
+				return new Response("Ждать",
+						"Ждать возвращения Саэллатрикс с вашей новой куклой.",
 						DOLL_BROCHURE_END_FINAL) {
 					@Override
 					public void effects() {
@@ -1005,7 +989,7 @@ public class MiscDialogue {
 		}
 	};
 
-	public static final DialogueNode DOLL_BROCHURE_END_FINAL = new DialogueNode("Doll Brochure", "", true) {
+	public static final DialogueNode DOLL_BROCHURE_END_FINAL = new DialogueNode("Брошюра с куклами", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			Main.game.appendToTextEndStringBuilder(Main.game.parseFromFile("txt/places/dominion/sex_shop/generic", "DOLL_BROCHURE_NEW_DOLL_END", newDoll));
@@ -1021,8 +1005,8 @@ public class MiscDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue",
-						"You've obtained a new doll!",
+				return new Response("Продолжить",
+						"Вы получили новую куклу!",
 						DOLL_BROCHURE_NEW_DOLL_END);
 			}
 			return null;
@@ -1030,7 +1014,7 @@ public class MiscDialogue {
 	};
 	
 	
-	public static final DialogueNode DOLL_BROCHURE_END_SLAVE = new DialogueNode("Doll Brochure", "", true) {
+	public static final DialogueNode DOLL_BROCHURE_END_SLAVE = new DialogueNode("Брошюра с куклами", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			if(deck) {
@@ -1045,8 +1029,8 @@ public class MiscDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Wait",
-						"Wait for Saellatrix to return with your new doll.",
+				return new Response("Ждать",
+						"Ждать возвращения Саэллатрикс с вашей новой куклой.",
 						DOLL_BROCHURE_END_SLAVE_FINAL) {
 					@Override
 					public void effects() {
@@ -1061,7 +1045,7 @@ public class MiscDialogue {
 		}
 	};
 	
-	public static final DialogueNode DOLL_BROCHURE_END_SLAVE_FINAL = new DialogueNode("Doll Brochure", "", true) {
+	public static final DialogueNode DOLL_BROCHURE_END_SLAVE_FINAL = new DialogueNode("Брошюра с куклами", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			Main.game.appendToTextEndStringBuilder(Main.game.parseFromFile("txt/places/dominion/sex_shop/generic", "DOLL_BROCHURE_NEW_DOLL_END", newDoll));
@@ -1077,15 +1061,15 @@ public class MiscDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue",
-						"You've obtained a new doll!",
+				return new Response("Продолжить",
+						"Вы получили новую куклу!",
 						DOLL_BROCHURE_NEW_DOLL_END);
 			}
 			return null;
 		}
 	};
 
-	public static final DialogueNode DOLL_BROCHURE_NEW_DOLL_END = new DialogueNode("Doll Brochure", "", false) {
+	public static final DialogueNode DOLL_BROCHURE_NEW_DOLL_END = new DialogueNode("Брошюра с куклами", "", false) {
 		@Override
 		public void applyPreParsingEffects() {
 			Main.game.appendToTextEndStringBuilder(Main.game.parseFromFile("txt/places/dominion/sex_shop/generic", "DOLL_BROCHURE_NEW_DOLL_END", newDoll));
@@ -1149,7 +1133,7 @@ public class MiscDialogue {
 		String dollNumber = "#"+String.format("%05d", dollCount);
 		
 		if(slaveToDollify==null) {
-			doll.setName("Doll");
+			doll.setName("Кукла");
 			((Saellatrix)Main.game.getNpc(Saellatrix.class)).incrementDollsSold(1);
 			doll.setSurname(dollNumber);
 		}
@@ -1165,9 +1149,9 @@ public class MiscDialogue {
 						null));
 
 		if(slaveToDollify!=null) {
-			doll.setDescription("[npc.Name] was once one of your slaves, but you had [npc.herHim] permanently transformed into an obedient sex doll at Lovienne's Luxuries.");
+			doll.setDescription("[npc.Name] когда-то была одной из ваших рабынь, но вы навсегда превратили [npc.herHim] в послушную секс-куклу в «Роскоши Ловьенн».");
 		} else {
-			doll.setDescription("This doll was created in Lovienne's Luxuries.");
+			doll.setDescription("Эта кукла была создана в «Роскоши Ловьенн»,");
 		}
 		
 		doll.setPetName(Main.game.getPlayer(), "master");
@@ -1246,11 +1230,11 @@ public class MiscDialogue {
 //				doll.setVirginityLoss(new SexType(SexAreaPenetration.PENIS, SexAreaOrifice.VAGINA), saellatrix, "before being delivered to you");
 //			}
 			if(doll.hasVagina()) {
-				doll.setVirginityLoss(new SexType(SexAreaOrifice.VAGINA, SexAreaPenetration.PENIS), saellatrix, "before being delivered to you");
+				doll.setVirginityLoss(new SexType(SexAreaOrifice.VAGINA, SexAreaPenetration.PENIS), saellatrix, "прежде чем её доставили вам");
 			}
-			doll.setVirginityLoss(new SexType(SexAreaOrifice.MOUTH, SexAreaPenetration.PENIS), saellatrix, "before being delivered to you");
-			doll.setVirginityLoss(new SexType(SexAreaOrifice.ANUS, SexAreaPenetration.PENIS), saellatrix, "before being delivered to you");
-			doll.setVirginityLoss(new SexType(SexAreaOrifice.NIPPLE, SexAreaPenetration.PENIS), saellatrix, "before being delivered to you");
+			doll.setVirginityLoss(new SexType(SexAreaOrifice.MOUTH, SexAreaPenetration.PENIS), saellatrix, "прежде чем её доставили вам");
+			doll.setVirginityLoss(new SexType(SexAreaOrifice.ANUS, SexAreaPenetration.PENIS), saellatrix, "прежде чем её доставили вам");
+			doll.setVirginityLoss(new SexType(SexAreaOrifice.NIPPLE, SexAreaPenetration.PENIS), saellatrix, "прежде чем её доставили вам");
 		}
 		
 		try {
@@ -1295,7 +1279,7 @@ public class MiscDialogue {
 	private static String applyWrapper(String title, String description, Colour buttonColour, String buttonId, String buttonText, boolean buttonActive, int cost, boolean isCostAdditional, boolean isDisabled, boolean isDiscounted) {
 		StringBuilder sb = new StringBuilder();
 
-		String border = "border: 1px solid "+(buttonActive?buttonColour:PresetColour.BASE_GREY_DARK).toWebHexString()+"55;";
+		String border = "граница: 1px сплошная "+(buttonActive?buttonColour:PresetColour.BASE_GREY_DARK).toWebHexString()+"55;";
 		String background = "";//buttonActive?"background:#555;":"";
 		String buttonStyle= "style='min-width:0; width:calc(100% - 8px); padding:4px; margin:0;'";
 		
@@ -1323,26 +1307,24 @@ public class MiscDialogue {
 					
 				} else if(buttonActive) {
 					sb.append(
-							"<div id='"+buttonId+"' class='cosmetics-button active' "+buttonStyle+">"
-								+ "<span style='color:"+buttonColour.toWebHexString()+";'>"+buttonText+"</span>"
+							"<div id='"+buttonId+"' class='cosmetics-button active' "+buttonStyle+"><span style='color:"+buttonColour.toWebHexString()+";'>"+buttonText+"</span>"
 							+ "</div>");
 					
 				} else {
 					sb.append(
-							"<div id='"+buttonId+"' class='cosmetics-button' "+buttonStyle+">"
-								+ "<span style='color:"+PresetColour.TEXT_GREY.toWebHexString()+";'>"+buttonText+"</span>"
+							"<div id='"+buttonId+"' class='cosmetics-button' "+buttonStyle+"><span style='color:"+PresetColour.TEXT_GREY.toWebHexString()+";'>"+buttonText+"</span>"
 							+ "</div>");
 				}
 			sb.append("</div>");
 			
 			sb.append("<div class='container-full-width' style='width:20%; padding:0; margin:0;'>");
 				if(isDiscounted) {
-					sb.append("<span style='text-decoration: line-through;'>[style.colourDisabled("+(isCostAdditional?"+":"")+UtilText.formatAsMoneyUncoloured((int) (cost * (1/getCostModifier())), "span")+")]</span><br/>");
+					sb.append("<span style='text-decoration: line-through;'>[style.colourDisabled("+(isCostAdditional?"+":"")+UtilText.formatAsMoneyUncoloured((int) (cost * (1/getCostModifier())), "охват")+")]</span><br/>");
 				}
 				if(buttonActive) {
-					sb.append((isCostAdditional?"+":"")+UtilText.formatAsMoney(cost, "span"));
+					sb.append((isCostAdditional?"+":"")+UtilText.formatAsMoney(cost, "охват"));
 				} else {
-					sb.append("[style.colourDisabled("+(isCostAdditional?"+":"")+UtilText.formatAsMoneyUncoloured(cost, "span")+")]");
+					sb.append("[style.colourDisabled("+(isCostAdditional?"+":"")+UtilText.formatAsMoneyUncoloured(cost, "охват")+")]");
 				}
 			sb.append("</div>");
 		
@@ -1358,7 +1340,7 @@ public class MiscDialogue {
 		}
 	}
 
-	public static final DialogueNode SAELLATRIX_DOLL_CORE = new DialogueNode("Core", "", true) {
+	public static final DialogueNode SAELLATRIX_DOLL_CORE = new DialogueNode("Основа", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			BodyChanging.setTarget(getDollTarget());
@@ -1369,7 +1351,7 @@ public class MiscDialogue {
 			UtilText.nodeContentSB.setLength(0);
 			
 			UtilText.nodeContentSB.append("<div class='container-full-width' style='text-align:center;'>"
-					+ UtilText.parse(getDollTarget(), "<i>With the D.E.C.K.'s cable plugged into the port on the rear of [npc.namePos] neck, you're able to customise the colour of [npc.her] body...</i>")
+					+ UtilText.parse(getDollTarget(), "<i>Подключив кабель D.E.C.K. к порту на затылке [npc.namePos], вы сможете изменить цвет тела [npc.her]...</i>")
 				+ "</div>");
 				
 			for(Entry<AbstractBodyCoveringType, Value<AbstractRace, List<String>>> entry : SuccubisSecrets.coveringsNamesMap.entrySet()){
@@ -1394,18 +1376,18 @@ public class MiscDialogue {
 			}
 			
 			UtilText.nodeContentSB.append(CharacterModificationUtils.getKatesDivCoveringsNew(false, getDollTarget().getEyeType().getRace(), getDollTarget().getCovering(getDollTarget().getEyeCovering()).getType(),
-					"Iris colour",
-					UtilText.parse(getDollTarget(), "The colour and pattern of [npc.namePos] irises."),
+					"Цвет радужки",
+					UtilText.parse(getDollTarget(), "Цвет и узор радужки глаз [npc.namePos]."),
 					true, true));
 
 			UtilText.nodeContentSB.append(CharacterModificationUtils.getKatesDivCoveringsNew(false, Race.NONE, getDollTarget().getCovering(BodyCoveringType.EYE_PUPILS).getType(),
-					"Pupil colour",
-					UtilText.parse(getDollTarget(), "The colour and pattern of [npc.namePos] pupils."),
+					"Цвет зрачков",
+					UtilText.parse(getDollTarget(), "Цвет и узор зрачков [npc.namePos]."),
 					true, true));
 
 			UtilText.nodeContentSB.append(CharacterModificationUtils.getKatesDivCoveringsNew(false, Race.NONE, getDollTarget().getCovering(BodyCoveringType.EYE_SCLERA).getType(),
-					"Sclerae colour",
-					UtilText.parse(getDollTarget(), "The colour and pattern of [npc.namePos] sclerae."),
+					"Цвет склер",
+					UtilText.parse(getDollTarget(), "Цвет и узор склер [npc.namePos]."),
 					true, true));
 			
 			return UtilText.parse(getDollTarget(), UtilText.nodeContentSB.toString());
@@ -1424,7 +1406,7 @@ public class MiscDialogue {
 		}
 	};
 
-	public static final DialogueNode SAELLATRIX_DOLL_PUSSY = new DialogueNode("Vagina", "", true) {
+	public static final DialogueNode SAELLATRIX_DOLL_PUSSY = new DialogueNode("Киска", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			BodyChanging.setTarget(getDollTarget());
@@ -1463,8 +1445,8 @@ public class MiscDialogue {
 			UtilText.nodeContentSB.append(CharacterModificationUtils.getKatesDivCoveringsNew(false,
 					getDollTarget().getVaginaRace(),
 					getDollTarget().getCovering(BodyCoveringType.VAGINA).getType(),
-					"Vagina Colour",
-					UtilText.parse(getDollTarget(), "Change the colour of [npc.namePos] vagina."),
+					"Цвет влагалища",
+					UtilText.parse(getDollTarget(), "Изменить цвет [npc.namePos] вагины."),
 					true, true));
 
 			return UtilText.parse(getDollTarget(), UtilText.nodeContentSB.toString());
@@ -1483,7 +1465,7 @@ public class MiscDialogue {
 		}
 	};
 
-	public static final DialogueNode SAELLATRIX_DOLL_ASS = new DialogueNode("Ass", "", true) {
+	public static final DialogueNode SAELLATRIX_DOLL_ASS = new DialogueNode("Задница", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			BodyChanging.setTarget(getDollTarget());
@@ -1507,8 +1489,8 @@ public class MiscDialogue {
 					+ CharacterModificationUtils.getKatesDivCoveringsNew(false,
 							getDollTarget().getAssRace(),
 							getDollTarget().getCovering(BodyCoveringType.ANUS).getType(),
-							"Anus Colour", 
-							UtilText.parse(getDollTarget(), "Change the colour of [npc.namePos] asshole."),
+							"Цвет ануса", 
+							UtilText.parse(getDollTarget(), "Изменить цвет ануса [npc.namePos]."),
 							true, true));
 				
 			return UtilText.nodeContentSB.toString();
@@ -1527,7 +1509,7 @@ public class MiscDialogue {
 		}
 	};
 
-	public static final DialogueNode SLAVE_DOLLIFICATION = new DialogueNode("Slave Dollification", "", true) {
+	public static final DialogueNode SLAVE_DOLLIFICATION = new DialogueNode("Окукливание рабыни", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			slaveToDollify = null;
@@ -1548,8 +1530,7 @@ public class MiscDialogue {
 				slaveResponses.add(new Response(
 						"<span style='color:"+slave.getFemininity().getColour().toWebHexString()+";'>"+UtilText.parse(slave, "[npc.Name]")+"</span>",
 						UtilText.parse(slave,
-							"Tell Saellatrix that you'd like to have [npc.name], your [npc.raceFull(true)] slave, transformed into a doll."
-								+ "<br/>[style.italicsTerrible(This is a permanent, irreversible transformation!)]"),
+							"Скажите Саэллатрикс, что вы хотите превратить [npc.name], вашу [npc.raceFull(true)] рабыню, в куклу.<br/>[style.italicsTerrible(Это необратимая, перманентная трансформация!)]"),
 						DOLL_BROCHURE) {
 					@Override
 					public void effects() {
@@ -1559,7 +1540,7 @@ public class MiscDialogue {
 			}
 			
 			if(index==0) {
-				return new Response("Back", "Decide against dollifying your slaves after all.", DialogueManager.getDialogueFromId("innoxia_places_dominion_sex_shop_generic_counter")) {
+				return new Response("Назад", "В итоге решить не превращать своих рабынь в кукол.", DialogueManager.getDialogueFromId("innoxia_places_dominion_sex_shop_generic_counter")) {
 					@Override
 					public void effects() {
 						slaveToDollify = null;

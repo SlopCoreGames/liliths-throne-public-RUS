@@ -71,7 +71,7 @@ public class OptionsDialogue {
 	
 	private static boolean defaultResetConfirmation = false;
 	
-	public static final DialogueNode MENU = new DialogueNode("Menu", "Menu", true) {
+	public static final DialogueNode MENU = new DialogueNode("Меню", "Меню", true) {
 		
 		@Override
 		public String getLabel() {
@@ -113,7 +113,7 @@ public class OptionsDialogue {
 					sb.append("<p style='text-align:center;margin:0;padding:0;'><b>Уровень ").append(Main.getProperties().level).append("</b></p>");
 					String colourString = Main.getProperties().raceColour;
 					if(!colourString.isEmpty()) {
-						colourString = "color:"+colourString+";";
+						colourString = "цвет:"+colourString+";";
 					}
 					sb.append("<p style='text-align:center;margin:0;padding:0;").append(colourString).append("'><b>").append(Util.capitaliseSentence(Main.getProperties().race)).append("</b></p>");
 					sb.append("<p style='text-align:center;margin:0;padding:0;'>").append(UtilText.formatAsMoney(Main.getProperties().money, "b")).append("</p>");
@@ -251,7 +251,7 @@ public class OptionsDialogue {
 				};
 			
 			} else if (index == 13) {
-				return new ResponseEffectsOnly("Wiki", "Открывает страницу:<br/><br/><i>https://www.lilithsthrone.com/wiki/doku.php</i><br/><br/><b>Внешне в вашем браузере по умолчанию.</b>"){
+				return new ResponseEffectsOnly("Вики", "Открывает страницу:<br/><br/><i>https://www.lilithsthrone.com/wiki/doku.php</i><br/><br/><b>Внешне в вашем браузере по умолчанию.</b>"){
 					@Override
 					public void effects() {
 						Util.openLinkInDefaultBrowser("https://www.lilithsthrone.com/wiki/doku.php");
@@ -410,9 +410,9 @@ public class OptionsDialogue {
 						SAVE_LOAD) {
 					@Override
 					public String getTitle() {
-						return "Confirmations: "+(Main.getProperties().hasValue(PropertyValue.overwriteWarning)
-								?"<span style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>ON</span>"
-								:"<span style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>OFF</span>");
+						return "Подтверждения: "+(Main.getProperties().hasValue(PropertyValue.overwriteWarning)
+								?"<span style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>ВКЛ</span>"
+								:"<span style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>ВЫКЛ</span>");
 					}
 					
 					@Override
@@ -466,24 +466,7 @@ public class OptionsDialogue {
 		public String getHeaderContent(){
 			StringBuilder saveLoadSB = new StringBuilder();
 	
-			saveLoadSB.append("<p>"
-						+ "Здесь вы можете экспортировать своего текущего персонажа, или удалить любых персонажей, которых вы экспортировали в прошлом."
-						+ "Любой NPC может быть экспортирован в игре, посмотрев его информацию (либо из 'присутствующих персонажей', либо из 'контактов' вашего телефона), а затем нажав на кнопку 'экспорт персонажа' (в правом нижнем углу интерфейса)."
-					+ "</p>"
-					+ "<p>"
-						+ "Экспортированные персонажи могут быть использованы в качестве игрового персонажа при начале новой игры (выберите 'Начать (Импорт')), или как импортируемый раб на Аукционном Блоке в Улице Рабовладельцев."
-					+ "</p>"
-					+ "<div class='container-full-width' style='padding:0; margin:0;'>"
-						+ "<div class='container-quarter-width' style='text-align:center;'>"
-							+ "Time"
-						+ "</div>"
-						+ "<div class='container-half-width' style='width:calc(55% - 16px); text-align:center; background:transparent;'>"
-							+ "Name"
-						+ "</div>"
-						+ "<div class='container-quarter-width' style='width:calc(20% - 16px); text-align:center; background:transparent;'>"
-							+ "Functions"
-						+ "</div>"
-					+ "</div>");
+			saveLoadSB.append("<p>Здесь вы можете экспортировать своего текущего персонажа или удалить любых персонажей, которых вы экспортировали ранее. Любого NPC можно экспортировать в игре, просмотрев его информацию (либо из списка «Присутствующие персонажи», либо из «Контактов» вашего телефона), а затем нажав кнопку «Экспорт персонажа» (в правом нижнем углу интерфейса).</p><p>Экспортированных персонажей можно использовать в качестве игрового персонажа при начале новой игры (выберите «Начать (Импорт)») или как импортируемых рабов на Аукционном блоке на Улице Рабовладельцев.</p><div class='container-full-width' style='padding:0; margin:0;'><div class='container-quarter-width' style='text-align:center;'>Время</div><div class='container-half-width' style='width:calc(55% - 16px); text-align:center; background:transparent;'>Имя</div><div class='container-quarter-width' style='width:calc(20% - 16px); text-align:center; background:transparent;'>Функции</div></div>");
 			
 			Main.getCharactersForImport().sort(Comparator.comparingLong(File::lastModified).reversed());
 			int i = 0;
@@ -506,9 +489,9 @@ public class OptionsDialogue {
 							IMPORT_EXPORT) {
 					@Override
 					public String getTitle() {
-						return "Confirmations: "+(Main.getProperties().hasValue(PropertyValue.overwriteWarning)
-								?"<span style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>ON</span>"
-								:"<span style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>OFF</span>");
+						return "Подтверждения: "+(Main.getProperties().hasValue(PropertyValue.overwriteWarning)
+								?"<span style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>ВКЛ</span>"
+								:"<span style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>ВЫКЛ</span>");
 					}
 					
 					@Override
@@ -527,7 +510,7 @@ public class OptionsDialogue {
 						@Override
 						public void effects() {
 							Main.game.getCharacterUtils().saveCharacterAsXML(Main.game.getPlayer());
-							Main.game.flashMessage(PresetColour.GENERIC_GOOD, "Character exported!");
+							Main.game.flashMessage(PresetColour.GENERIC_GOOD, "Персонаж экспортирован!");
 						}
 					};
 				} else {
@@ -553,7 +536,7 @@ public class OptionsDialogue {
 			String baseName = Util.getFileName(name);
 			String identifierName = Util.getFileIdentifier(name);
 
-			return "<div class='container-full-width' style='padding:0; margin:0 0 4px 0;"+(altColour?"background:"+PresetColour.BACKGROUND_ALT.toWebHexString()+";":"")+"'>"
+			return "<div class='container-full-width' style='padding:0; margin:0 0 4px 0;"+(altColour?"фон:"+PresetColour.BACKGROUND_ALT.toWebHexString()+";":"")+"'>"
 						+ "<div class='container-full-width' style='width:calc(25% - 16px); background:transparent;'>"
 							+ date
 						+ "</div>"
@@ -579,7 +562,7 @@ public class OptionsDialogue {
 					+ "</div>";
 			
 		} else {
-			return "<div class='container-full-width' style='padding:0; margin:0 0 4px 0;"+(altColour?"background:"+PresetColour.BACKGROUND_ALT.toWebHexString()+";":"")+"'>"
+			return "<div class='container-full-width' style='padding:0; margin:0 0 4px 0;"+(altColour?"фон:"+PresetColour.BACKGROUND_ALT.toWebHexString()+";":"")+"'>"
 						+ "<div class='container-full-width' style='width:calc(25% - 16px); background:transparent;'>"
 							+ "-"
 						+ "</div>"
@@ -616,7 +599,7 @@ public class OptionsDialogue {
 	}
 	
 	
-	public static final DialogueNode OPTIONS = new DialogueNode("Настройки", "Options", true) {
+	public static final DialogueNode OPTIONS = new DialogueNode("Настройки", "Настройки", true) {
 		
 		@Override
 		public String getContent(){
@@ -771,7 +754,7 @@ public class OptionsDialogue {
 		}
 	};
 	
-	public static final DialogueNode KEYBINDS = new DialogueNode("Настройки", "Options", true) {
+	public static final DialogueNode KEYBINDS = new DialogueNode("Настройки", "Настройки", true) {
 
 		@Override
 		public String getHeaderContent() {
@@ -876,7 +859,7 @@ public class OptionsDialogue {
 		private void savePreset(int index) {
 			// Create new properties containing current key mappings
 			Properties preset = new Properties();
-			preset.setProperty("NAME", "Custom " + index);
+			preset.setProperty("NAME", "Пользовательский " + index);
 			preset.setProperty("DESCRIPTION", "Повторно применить сохраненные привязки клавиш.");
 
 			for (Map.Entry<KeyboardAction, KeyCodeWithModifiers> e : Main.getProperties().hotkeyMapPrimary.entrySet())
@@ -910,7 +893,7 @@ public class OptionsDialogue {
 				
 			} else if (index <= presets.size()) {
 				Properties preset = presets.get(index - 1);
-				return new Response(preset.getProperty("NAME", "Custom " + index), preset.getProperty("DESCRIPTION", "Применить сохраненные ранее настройки клавиш."), KEYBINDS) {
+				return new Response(preset.getProperty("NAME", "Пользовательский " + index), preset.getProperty("DESCRIPTION", "Применить сохраненные ранее настройки клавиш."), KEYBINDS) {
 					@Override
 					public void effects() {
 						loadPreset(preset);
@@ -943,32 +926,25 @@ public class OptionsDialogue {
 		return "<tr>"
 				+ "<td>"
 				+ action.getName()
-				+ "</td>"
-				+ "<td style='min-width:160px;'>"
-				+ "<div class='bindingButton"
+				+ "</td><td style='min-width:160px;'><div class='bindingButton"
 				+ (Main.mainController.getActionToBind() == action
 						&& Main.mainController.isPrimaryBinding() ? " active" : "")
 				+ "' id='KB_PRIMARY_"
 				+ action
 				+ "'>"
 				+ (Main.getProperties().hotkeyMapPrimary.get(action) == null ? "<span class='option-disabled'>-</span>" : Main.getProperties().hotkeyMapPrimary.get(action).getFullName())
-				+ "</div>"
-				+ "<div class='bindingClearButton"
+				+ "</div><div class='bindingClearButton"
 				+ (Main.getProperties().hotkeyMapPrimary.get(action) == null ? " empty" : "")
 				+ "' id='KB_PRIMARY_CLEAR_"
 				+ action
-				+ "'><b>x</b></div>"
-				+ "</td>"
-				+ "<td style='min-width:160px;'>"
-				+ "<div class='bindingButton"
+				+ "'><b>x</b></div></td><td style='min-width:160px;'><div class='bindingButton"
 				+ (Main.mainController.getActionToBind() == action
 						&& !Main.mainController.isPrimaryBinding() ? " active" : "")
 				+ "' id='KB_SECONDARY_"
 				+ action
 				+ "'>"
 				+ (Main.getProperties().hotkeyMapSecondary.get(action) == null ? "<span class='option-disabled'>-</span>" : Main.getProperties().hotkeyMapSecondary.get(action).getFullName())
-				+ "</div>"
-				+ "<div class='bindingClearButton"
+				+ "</div><div class='bindingClearButton"
 				+ (Main.getProperties().hotkeyMapSecondary.get(action) == null ? " empty" : "")
 				+ "' id='KB_SECONDARY_CLEAR_"
 				+ action
@@ -977,7 +953,7 @@ public class OptionsDialogue {
 				+ "</tr>";
 	}
 	
-	public static final DialogueNode OPTIONS_PRONOUNS = new DialogueNode("Настройки", "Options", true) {
+	public static final DialogueNode OPTIONS_PRONOUNS = new DialogueNode("Настройки", "Настройки", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			defaultResetConfirmation = false;
@@ -991,10 +967,7 @@ public class OptionsDialogue {
 						+ "<table align='center'>"
 							+ "<tr>"
 							+ "<th>Части тела</th>"
-								+ "<th style='color:"+PresetColour.MASCULINE.toWebHexString()+";'>Masculine</th>"
-								+ "<th style='color:"+PresetColour.ANDROGYNOUS.toWebHexString()+";'>Androgynous</th>"
-								+ "<th style='color:"+PresetColour.FEMININE.toWebHexString()+";'>Feminine</th>"
-							+ "</tr>");
+								+ "<th style='color:"+PresetColour.MASCULINE.toWebHexString()+";'>Мужское</th><th style='color:"+PresetColour.ANDROGYNOUS.toWebHexString()+";'>Андрогинное</th><th style='color:"+PresetColour.FEMININE.toWebHexString()+";'>Женское</th></tr>");
 			
 			for(GenderNames gn : GenderNames.values()) {
 				sb.append(getGenderNameTableRow(gn));
@@ -1008,9 +981,7 @@ public class OptionsDialogue {
 						+ "<table align='center'>"
 							+ "<tr>"
 								+ "<th>Pronoun</th>"
-								+ "<th style='color:"+PresetColour.MASCULINE.toWebHexString()+";'>Masculine</th>"
-								+ "<th style='color:"+PresetColour.FEMININE.toWebHexString()+";'>Feminine</th>"
-							+ "</tr>"
+								+ "<th style='color:"+PresetColour.MASCULINE.toWebHexString()+";'>Мужское</th><th style='color:"+PresetColour.FEMININE.toWebHexString()+";'>Женское</th></tr>"
 							+ getPronounTableRow(GenderPronoun.NOUN)
 							+ getPronounTableRow(GenderPronoun.YOUNG_NOUN)
 							+ getPronounTableRow(GenderPronoun.SECOND_PERSON)
@@ -1019,15 +990,7 @@ public class OptionsDialogue {
 							+ getPronounTableRow(GenderPronoun.POSSESSIVE_ALONE)
 						+ "</table>"
 					+ "</p>"
-					+ "<h5 style='text-align:center;'><span style='color:"+PresetColour.ANDROGYNOUS.toWebHexString()+";'>Androgynous bodies</span> (option 3)</h5>"
-					+ "<p>"
-					+ "<b style='color:"+PresetColour.FEMININE.toWebHexString()+";'>Feminine:</b> Treated as <b style='color:"+PresetColour.FEMININE.toWebHexString()+";'>feminine</b>.<br/>"
-					+ "<b style='color:"+PresetColour.ANDROGYNOUS.toWebHexString()+";'>Clothing feminine:</b> Treated according to clothing femininity."
-							+ " If clothing is neutral, treated as <b style='color:"+PresetColour.FEMININE.toWebHexString()+";'>feminine</b>.<br/>"
-					+ "<b style='color:"+PresetColour.ANDROGYNOUS.toWebHexString()+";'>Clothing masculine:</b> Treated according to clothing femininity."
-							+ " If clothing is neutral, treated as <b style='color:"+PresetColour.MASCULINE.toWebHexString()+";'>masculine</b>.<br/>"
-					+ "<b style='color:"+PresetColour.MASCULINE.toWebHexString()+";'>Masculine:</b> Treated as <b style='color:"+PresetColour.MASCULINE.toWebHexString()+";'>masculine</b>.<br/>"
-					+ "</p>");
+					+ "<h5 style='text-align:center;'><span style='color:"+PresetColour.ANDROGYNOUS.toWebHexString()+";'>Андрогинные тела</span> (вариант 3)</h5><p><b style='color:"+PresetColour.FEMININE.toWebHexString()+";'>Женское:</b> Относиться как к <b style='color:"+PresetColour.FEMININE.toWebHexString()+";'>женскому</b>.<br/><b style='color:"+PresetColour.ANDROGYNOUS.toWebHexString()+";'>Женская одежда:</b> Обрабатывается согласно женственности одежды. Если одежда нейтральна, считается как <b style='color:"+PresetColour.FEMININE.toWebHexString()+";'>женскому</b>.<br/><b style='color:"+PresetColour.ANDROGYNOUS.toWebHexString()+";'>Мужская одежда:</b> Обрабатывается согласно женственности одежды. Если одежда нейтральна, считается как <b style='color:"+PresetColour.MASCULINE.toWebHexString()+";'>мужчина</b>.<br/><b style='color:"+PresetColour.MASCULINE.toWebHexString()+";'>Мужской:</b> Считается как <b style='color:"+PresetColour.MASCULINE.toWebHexString()+";'>мужской</b>.<br/></p>");
 			
 			return sb.toString();	
 		}
@@ -1048,7 +1011,7 @@ public class OptionsDialogue {
 							Main.getProperties().genderPronounMale.put(gp, ((String) Main.mainController.getWebEngine().executeScript("document.getElementById('masculine_" + gp +"').value")).toLowerCase());
 						}
 						Main.saveProperties();
-						Main.game.flashMessage(PresetColour.GENERIC_GOOD, "Pronouns saved!");
+						Main.game.flashMessage(PresetColour.GENERIC_GOOD, "Местоимения сохранены!");
 					}
 				};
 				
@@ -1126,24 +1089,14 @@ public class OptionsDialogue {
 	private static String getGenderNameTableRow(GenderNames name) {
 		return "<tr>"
 					+ "<td>"
-						+ (name.isHasPenis()?"[style.colourGood(Penis)]":"[style.colourDisabled(Penis)]")
-						+ " " + (name.isHasVagina()?"[style.colourGood(Vagina)]":"[style.colourDisabled(Vagina)]")
-						+ " " + (name.isHasBreasts()?"[style.colourGood(Breasts)]":"[style.colourDisabled(Breasts)]")
-					+ "</td>"
-					+ "<td style='min-width:160px;'>"
-						+"<form style='padding:0;margin:0;text-align:center;'><input type='text' id='GENDER_NAME_MASCULINE_" + name + "' value='"
+						+ (name.isHasPenis()?"[style.colourGood(Пенис)]":"[style.colourDisabled(Пенис)]")
+						+ " " + (name.isHasVagina()?"[style.colourGood(Вагина)]":"[style.colourDisabled(Вагина)]")
+						+ " " + (name.isHasBreasts()?"[style.colourGood(Грудь)]":"[style.colourDisabled(Грудь)]")
+					+ "</td><td style='min-width:160px;'><form style='padding:0;margin:0;text-align:center;'><input type='text' id='GENDER_NAME_MASCULINE_" + name + "' value='"
 						+ UtilText.parseForHTMLDisplay(Main.getProperties().genderNameMale.get(name))
-						+ "'>"
-						+ "</form>"
-					+ "</td>"
-					+ "<td style='min-width:160px;'>"
-						+"<form style='padding:0;margin:0;text-align:center;'><input type='text' id='GENDER_NAME_ANDROGYNOUS_" + name + "' value='"
+						+ "'></form></td><td style='min-width:160px;'><form style='padding:0;margin:0;text-align:center;'><input type='text' id='GENDER_NAME_ANDROGYNOUS_" + name + "' value='"
 						+ UtilText.parseForHTMLDisplay(Main.getProperties().genderNameNeutral.get(name))
-						+ "'>"
-						+ "</form>"
-					+ "</td>"
-					+ "<td style='min-width:160px;'>"
-						+"<form style='padding:0;margin:0;text-align:center;'><input type='text' id='GENDER_NAME_FEMININE_" + name + "' value='"
+						+ "'></form></td><td style='min-width:160px;'><form style='padding:0;margin:0;text-align:center;'><input type='text' id='GENDER_NAME_FEMININE_" + name + "' value='"
 						+ UtilText.parseForHTMLDisplay(Main.getProperties().genderNameFemale.get(name))
 						+ "'>"
 						+ "</form>"
@@ -1155,13 +1108,7 @@ public class OptionsDialogue {
 		return "<tr>"
 				+ "<td>"
 					+ pronoun.getName()
-				+ "</td>"
-					+ "<td style='min-width:160px;'>"
-					+"<form style='padding:0;margin:0;text-align:center;'><input type='text' id='masculine_" + pronoun + "' value='"+ UtilText.parseForHTMLDisplay(Main.getProperties().genderPronounMale.get(pronoun))+ "'>"
-					+ "</form>"
-				+ "</td>"
-				+ "<td style='min-width:160px;'>"
-					+"<form style='padding:0;margin:0;text-align:center;'><input type='text' id='feminine_" + pronoun + "' value='"+ UtilText.parseForHTMLDisplay(Main.getProperties().genderPronounFemale.get(pronoun))+ "'></form>"
+				+ "</td><td style='min-width:160px;'><form style='padding:0;margin:0;text-align:center;'><input type='text' id='masculine_" + pronoun + "' value='"+ UtilText.parseForHTMLDisplay(Main.getProperties().genderPronounMale.get(pronoun))+ "'></form></td><td style='min-width:160px;'><form style='padding:0;margin:0;text-align:center;'><input type='text' id='feminine_" + pronoun + "' value='"+ UtilText.parseForHTMLDisplay(Main.getProperties().genderPronounFemale.get(pronoun))+ "'></form>"
 				+ "</td>"
 				+ "</tr>";
 	}
@@ -1248,8 +1195,7 @@ public class OptionsDialogue {
 								?"<div id='OFFSPRING_GENDER_PREF_"+i+"' class='normal-button selected' style='width:48%; margin:1%; text-align:center; float:right; color:"+PresetColour.ANDROGYNOUS.toWebHexString()+";'>"
 									+ com.lilithsthrone.game.Properties.offspringGenderName[i]
 									+ "</div>"
-								:"<div id='OFFSPRING_GENDER_PREF_"+i+"' class='normal-button' style='width:48%; margin:1%; text-align:center; float:right;'>"
-									+ "[style.colourDisabled("+com.lilithsthrone.game.Properties.offspringGenderName[i]+")]"
+								:"<div id='OFFSPRING_GENDER_PREF_"+i+"' class='normal-button' style='width:48%; margin:1%; text-align:center; float:right;'>[style.colourDisabled("+com.lilithsthrone.game.Properties.offspringGenderName[i]+")]"
 									+ "</div>"));
 				}
 			UtilText.nodeContentSB.append("</div></div>");
@@ -1319,14 +1265,14 @@ public class OptionsDialogue {
 								+ "<div style='width:140px; float:left;'><b style='color:"+colour.getShades(8)[count]+";'>" +Util.capitaliseSentence(g.getName())+"</b></div>");
 				
 				for(ContentPreferenceValue preference : ContentPreferenceValue.values()) {
-					sb.append("<div id='"+preference+"_"+g+"' class='preference-button"+(Main.getProperties().genderPreferencesMap.get(g)==preference.getValue()?" selected":"")+"'>"+Util.capitaliseSentence(preference.getName())+"</div>");
+					sb.append("<div id='"+preference+"_"+g+"' class='preference-button"+(Main.getProperties().genderPreferencesMap.get(g)==preference.getValue()?" выбранный":"")+"'>"+Util.capitaliseSentence(preference.getName())+"</div>");
 				}
 								
 				sb.append("<p><br/>"
-								+ "<span style='color:"+colour.getShades(8)[count]+";'>" +Util.capitaliseSentence(g.getName())+"s</span> have "
-										+(g.getGenderName().isHasVagina()?"a [style.colourGood(vagina)]":"no [style.colourBad(vagina)]")+", "
-										+(g.getGenderName().isHasPenis()?"a [style.colourGood(penis)]":"no [style.colourBad(penis)]")+", and "
-										+ (g.getGenderName().isHasBreasts()?"[style.colourGood(breasts)]":"no [style.colourBad(breasts)]")+"."
+								+ "<span style='color:"+colour.getShades(8)[count]+";'>" +Util.capitaliseSentence(g.getName())+"s</span> есть "
+										+(g.getGenderName().isHasVagina()?"[style.colourGood(вагина)]":"нет [style.colourBad(вагина)]")+", "
+										+(g.getGenderName().isHasPenis()?"[style.colourGood(пенис)]":"нет [style.colourBad(пенис)]")+", и "
+										+ (g.getGenderName().isHasBreasts()?"[style.colourGood(грудь)]":"нет [style.colourBad(грудь)]")+"."
 								+ "</p>"
 							+ "</div>"
 						+ "</div>"
@@ -1367,7 +1313,7 @@ public class OptionsDialogue {
 		return sb.toString();
 	}
 	
-	public static final DialogueNode ORIENTATION_PREFERENCE = new DialogueNode("Orientation preferences", "", true) {
+	public static final DialogueNode ORIENTATION_PREFERENCE = new DialogueNode("Предпочтения по ориентации", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			defaultResetConfirmation = false;
@@ -1492,7 +1438,7 @@ public class OptionsDialogue {
 					+ "<div style='width:140px; float:left;'><b style='color:"+colour.toWebHexString()+";'>" +Util.capitaliseSentence(orient.getName())+"</b></div>");
 		
 		for(SexualOrientationPreference preference : SexualOrientationPreference.values()) {
-			sb.append("<div id='"+preference+"_"+orient+"' class='preference-button"+(Main.getProperties().orientationPreferencesMap.get(orient)==preference.getValue()?" selected":"")+"'>"
+			sb.append("<div id='"+preference+"_"+orient+"' class='preference-button"+(Main.getProperties().orientationPreferencesMap.get(orient)==preference.getValue()?" выбранный":"")+"'>"
 							+Util.capitaliseSentence(preference.getName())
 						+"</div>");
 		}
@@ -1527,19 +1473,19 @@ public class OptionsDialogue {
 				if (Fetish.FETISH_SIZE_QUEEN.equals(fetish)) {
 					disabledMsg = "Разница в размере при проникновении";
 				} else if (Fetish.FETISH_NON_CON_DOM.equals(fetish) || Fetish.FETISH_NON_CON_SUB.equals(fetish)) {
-					disabledMsg = "Non-consent";
+					disabledMsg = "Неконсенсуальный контент";
 				} else if (Fetish.FETISH_INCEST.equals(fetish)) {
-					disabledMsg = "Incest";
+					disabledMsg = "Инцест";
 				} else if (Fetish.FETISH_LACTATION_SELF.equals(fetish) || Fetish.FETISH_LACTATION_OTHERS.equals(fetish)) {
-					disabledMsg = "Lactation";
+					disabledMsg = "Лактация";
 				} else if (Fetish.FETISH_ANAL_RECEIVING.equals(fetish) || Fetish.FETISH_ANAL_GIVING.equals(fetish)) {
-					disabledMsg = "Anal Content";
+					disabledMsg = "Анальный контент";
 				} else if (Fetish.FETISH_FOOT_RECEIVING.equals(fetish) || Fetish.FETISH_FOOT_GIVING.equals(fetish)) {
-					disabledMsg = "Foot Content";
+					disabledMsg = "Контент ног";
 				} else if (Fetish.FETISH_ARMPIT_RECEIVING.equals(fetish) || Fetish.FETISH_ARMPIT_GIVING.equals(fetish)) {
-					disabledMsg = "Armpit Content";
+					disabledMsg = "Контент подмышек";
 				} else {
-					disabledMsg = "Unspecified Content";
+					disabledMsg = "Неуказанный контент";
 				}
 			}
 			if(disabledMsg!=null) {
@@ -1548,9 +1494,7 @@ public class OptionsDialogue {
 				sb.append("<div style='display:inline-block;'><span class='option-disabled'>Фетиш насильно отключен из-за "+disabledMsg+" установки!</span></div>");
 				break;
 			} else {
-				sb.append("<div id='"+preference+"_"+Fetish.getIdFromFetish(fetish)+"' class='preference-button"+(Main.getProperties().fetishPreferencesMap.get(fetish)==preference.getValue()?" selected":"")+"'"
-						+ " style='width:70px;'"
-						+ ">"
+				sb.append("<div id='"+preference+"_"+Fetish.getIdFromFetish(fetish)+"' class='preference-button"+(Main.getProperties().fetishPreferencesMap.get(fetish)==preference.getValue()?" выбранный":"")+"' style='width:70px;'>"
 							+Util.capitaliseSentence(preference.getName())
 						+"</div>");
 			}
@@ -1583,24 +1527,21 @@ public class OptionsDialogue {
 				switch(g.getType()) {
 					case MASCULINE:
 						if(Main.getProperties().genderPreferencesMap.get(g)>0) {
-							sb.append("<div style='width:calc(" + (Main.getProperties().genderPreferencesMap.get(g)/total) * (100) + "% - 1px); height:12px;"
-									+ " background:"+PresetColour.MASCULINE.getShades(8)[m] + "; float:left; border-radius: 2;'></div>");
+							sb.append("<div style='width:calc(" + (Main.getProperties().genderPreferencesMap.get(g)/total) * (100) + "% - 1px); height:12px; background:"+PresetColour.MASCULINE.getShades(8)[m] + "; float:left; border-radius: 2;'></div>");
 							sb.append("<div style='width:1px; height:12px; background:#000; float:left; border-radius: 2;'></div>");
 						}
 						m++;
 						break;
 					case NEUTRAL:
 						if(Main.getProperties().genderPreferencesMap.get(g)>0) {
-							sb.append("<div style='width:calc(" + (Main.getProperties().genderPreferencesMap.get(g)/total) * (100) + "% - 1px); height:12px;"
-									+ " background:"+PresetColour.ANDROGYNOUS.getShades(8)[n] + "; float:left; border-radius: 2;'></div>");
+							sb.append("<div style='width:calc(" + (Main.getProperties().genderPreferencesMap.get(g)/total) * (100) + "% - 1px); height:12px; background:"+PresetColour.ANDROGYNOUS.getShades(8)[n] + "; float:left; border-radius: 2;'></div>");
 							sb.append("<div style='width:1px; height:12px; background:#000; float:left; border-radius: 2;'></div>");
 						}
 						n++;
 						break;
 					case FEMININE:
 						if(Main.getProperties().genderPreferencesMap.get(g)>0) {
-							sb.append("<div style='width:calc(" + (Main.getProperties().genderPreferencesMap.get(g)/total) * (100) + "% - 1px); height:12px;"
-									+ " background:"+PresetColour.FEMININE.getShades(8)[f] + "; float:left; border-radius: 2;'></div>");
+							sb.append("<div style='width:calc(" + (Main.getProperties().genderPreferencesMap.get(g)/total) * (100) + "% - 1px); height:12px; background:"+PresetColour.FEMININE.getShades(8)[f] + "; float:left; border-radius: 2;'></div>");
 							sb.append("<div style='width:1px; height:12px; background:#000; float:left; border-radius: 2;'></div>");
 						}
 						f++;
@@ -1686,7 +1627,7 @@ public class OptionsDialogue {
 			
 			for(ContentPreferenceValue preference : ContentPreferenceValue.values()) {
 				sb.append(
-						"<div id='"+type+"_"+preference+"_"+ageCat+"' class='preference-button"+(Main.getProperties().agePreferencesMap.get(type).get(ageCat)==preference.getValue()?" selected":"")+"'>"
+						"<div id='"+type+"_"+preference+"_"+ageCat+"' class='preference-button"+(Main.getProperties().agePreferencesMap.get(type).get(ageCat)==preference.getValue()?" выбранный":"")+"'>"
 								+Util.capitaliseSentence(preference.getName())
 						+"</div>");
 			}
@@ -1722,8 +1663,7 @@ public class OptionsDialogue {
 			int i=(AgeCategory.values().length*2)-1;
 			for(AgeCategory ageCat : AgeCategory.values()) {
 				if(Main.getProperties().agePreferencesMap.get(type).get(ageCat)>0) {
-					sb.append("<div style='width:calc(" + (Main.getProperties().agePreferencesMap.get(type).get(ageCat)/total) * (100) + "% - 1px); height:12px;"
-							+ " background:"+type.getColour().getShades(AgeCategory.values().length*2)[i] + "; float:left; border-radius: 2;'></div>");
+					sb.append("<div style='width:calc(" + (Main.getProperties().agePreferencesMap.get(type).get(ageCat)/total) * (100) + "% - 1px); height:12px; background:"+type.getColour().getShades(AgeCategory.values().length*2)[i] + "; float:left; border-radius: 2;'></div>");
 					sb.append("<div style='width:1px; height:12px; background:#000; float:left; border-radius: 2;'></div>");
 				}
 				i--;
@@ -1775,7 +1715,7 @@ public class OptionsDialogue {
 				UtilText.nodeContentSB.append("</div>");
 
 				UtilText.nodeContentSB.append("<div class='container-half-width inner' style='width:31.3%; margin:1%; padding:1%;'>");
-					UtilText.nodeContentSB.append("<b style='color:"+PresetColour.RACE_CENTAUR.toWebHexString()+"; float:left; width:100%; text-align:center;'>Taur Spawn Rate</b>");
+					UtilText.nodeContentSB.append("<b style='color:"+PresetColour.RACE_CENTAUR.toWebHexString()+"; float:left; width:100%; text-align:center;'>Шанс появления тавра</b>");
 					UtilText.nodeContentSB.append("<div style='display:inline-block; padding-left:5%; width:100%;'>");
 							UtilText.nodeContentSB.append(getSpawnRateDiv(
 											"TAUR_SPAWN_RATE",
@@ -1788,7 +1728,7 @@ public class OptionsDialogue {
 				UtilText.nodeContentSB.append("</div>");
 
 				UtilText.nodeContentSB.append("<div class='container-half-width inner' style='width:31.3%; margin:1%; padding:1%;'>");
-					UtilText.nodeContentSB.append("<b style='color:"+PresetColour.RACE_HALF_DEMON.toWebHexString()+"; float:left; width:100%; text-align:center;'>Half-Demon Spawn Rate</b>");
+					UtilText.nodeContentSB.append("<b style='color:"+PresetColour.RACE_HALF_DEMON.toWebHexString()+"; float:left; width:100%; text-align:center;'>Шанс появления полудемона</b>");
 					UtilText.nodeContentSB.append("<div style='display:inline-block; padding-left:5%; width:100%;'>");
 							UtilText.nodeContentSB.append(getSpawnRateDiv(
 											"HALF_DEMON_SPAWN_RATE",
@@ -1807,53 +1747,37 @@ public class OptionsDialogue {
 						?"<div id='TAUR_FURRY_LIMIT_"+2+"' class='normal-button selected' style='width:31%; margin:1%; text-align:center; float:right; color:"+FurryPreference.MINIMUM.getColour().toWebHexString()+";'>"
 							+ FurryPreference.MINIMUM.getName()
 							+ "</div>"
-						:"<div id='TAUR_FURRY_LIMIT_"+2+"' class='normal-button' style='width:31%; margin:1%; text-align:center; float:right;'>"
-							+ "[style.colourDisabled("+FurryPreference.MINIMUM.getName()+")]"
+						:"<div id='TAUR_FURRY_LIMIT_"+2+"' class='normal-button' style='width:31%; margin:1%; text-align:center; float:right;'>[style.colourDisabled("+FurryPreference.MINIMUM.getName()+")]"
 							+ "</div>")
 					+(Main.getProperties().taurFurryLevel==1
-						?"<div id='TAUR_FURRY_LIMIT_"+1+"' class='normal-button selected' style='width:31%; margin:1%; text-align:center; float:right; color:"+FurryPreference.HUMAN.getColour().toWebHexString()+";'>"
-							+ "Human"
-							+ "</div>"
-						:"<div id='TAUR_FURRY_LIMIT_"+1+"' class='normal-button' style='width:31%; margin:1%; text-align:center; float:right;'>"
-							+ "[style.colourDisabled(Human)]"
-							+ "</div>")
+						?"<div id='TAUR_FURRY_LIMIT_"+1+"' class='normal-button selected' style='width:31%; margin:1%; text-align:center; float:right; color:"+FurryPreference.HUMAN.getColour().toWebHexString()+";'>Человек</div>"
+						:"<div id='TAUR_FURRY_LIMIT_"+1+"' class='normal-button' style='width:31%; margin:1%; text-align:center; float:right;'>[style.colourDisabled(Человек)]</div>")
 					+(Main.getProperties().taurFurryLevel==0
-						?"<div id='TAUR_FURRY_LIMIT_"+0+"' class='normal-button selected' style='width:31%; margin:1%; text-align:center; float:right; color:"+PresetColour.TRANSFORMATION_GENERIC.toWebHexString()+";'>"
-							+ "Untouched"
-							+ "</div>"
-						:"<div id='TAUR_FURRY_LIMIT_"+0+"' class='normal-button' style='width:31%; margin:1%; text-align:center; float:right;'>"
-							+ "[style.colourDisabled(Untouched)]"
-							+ "</div>")
+						?"<div id='TAUR_FURRY_LIMIT_"+0+"' class='normal-button selected' style='width:31%; margin:1%; text-align:center; float:right; color:"+PresetColour.TRANSFORMATION_GENERIC.toWebHexString()+";'>Нетронутый</div>"
+						:"<div id='TAUR_FURRY_LIMIT_"+0+"' class='normal-button' style='width:31%; margin:1%; text-align:center; float:right;'>[style.colourDisabled(Нетронутый)]</div>")
 					
 					+(Main.getProperties().taurFurryLevel==5
 						?"<div id='TAUR_FURRY_LIMIT_"+5+"' class='normal-button selected' style='width:31%; margin:1%; text-align:center; float:right; color:"+FurryPreference.MAXIMUM.getColour().toWebHexString()+";'>"
 							+ FurryPreference.MAXIMUM.getName()
 							+ "</div>"
-						:"<div id='TAUR_FURRY_LIMIT_"+5+"' class='normal-button' style='width:31%; margin:1%; text-align:center; float:right;'>"
-							+ "[style.colourDisabled("+FurryPreference.MAXIMUM.getName()+")]"
+						:"<div id='TAUR_FURRY_LIMIT_"+5+"' class='normal-button' style='width:31%; margin:1%; text-align:center; float:right;'>[style.colourDisabled("+FurryPreference.MAXIMUM.getName()+")]"
 							+ "</div>")
 					+(Main.getProperties().taurFurryLevel==4
 						?"<div id='TAUR_FURRY_LIMIT_"+4+"' class='normal-button selected' style='width:31%; margin:1%; text-align:center; float:right; color:"+FurryPreference.NORMAL.getColour().toWebHexString()+";'>"
 							+ FurryPreference.NORMAL.getName()
 							+ "</div>"
-						:"<div id='TAUR_FURRY_LIMIT_"+4+"' class='normal-button' style='width:31%; margin:1%; text-align:center; float:right;'>"
-							+ "[style.colourDisabled("+FurryPreference.NORMAL.getName()+")]"
+						:"<div id='TAUR_FURRY_LIMIT_"+4+"' class='normal-button' style='width:31%; margin:1%; text-align:center; float:right;'>[style.colourDisabled("+FurryPreference.NORMAL.getName()+")]"
 							+ "</div>")
 					+(Main.getProperties().taurFurryLevel==3
 						?"<div id='TAUR_FURRY_LIMIT_"+3+"' class='normal-button selected' style='width:31%; margin:1%; text-align:center; float:right; color:"+FurryPreference.REDUCED.getColour().toWebHexString()+";'>"
 							+ FurryPreference.REDUCED.getName()
 							+ "</div>"
-						:"<div id='TAUR_FURRY_LIMIT_"+3+"' class='normal-button' style='width:31%; margin:1%; text-align:center; float:right;'>"
-							+ "[style.colourDisabled("+FurryPreference.REDUCED.getName()+")]"
+						:"<div id='TAUR_FURRY_LIMIT_"+3+"' class='normal-button' style='width:31%; margin:1%; text-align:center; float:right;'>[style.colourDisabled("+FurryPreference.REDUCED.getName()+")]"
 							+ "</div>"));
 			UtilText.nodeContentSB.append("</div></div>");
 			
 			
-			UtilText.nodeContentSB.append("<div class='container-full-width' style='text-align: center;'>"
-												+ "<div style='display:inline-block; margin:4px auto;'>"
-													+"<div style='float:left; text-align:right; margin-right:16px;'>"
-														+ "<b>Set all furry preferences:</b>"
-													+ "</div>");
+			UtilText.nodeContentSB.append("<div class='container-full-width' style='text-align: center;'><div style='display:inline-block; margin:4px auto;'><div style='float:left; text-align:right; margin-right:16px;'><b>Установить все предпочтения фурри:</b></div>");
 			for(FurryPreference fp : FurryPreference.values()) {
 				UtilText.nodeContentSB.append("<div id='ALL_FURRY_"+fp+"' class='normal-button' style='width:80px; margin:0 2px;'>"+fp.getName()+"</div>");
 			}
@@ -1869,9 +1793,7 @@ public class OptionsDialogue {
 											+"</div>");
 												
 			UtilText.nodeContentSB.append("<div class='container-full-width' style='text-align: center;'>"
-											+"<div class='container-full-width' style='text-align:center; background:"+getEntryBackgroundColour(false)+";'>"
-												+"<div class='container-full-width' style='text-align:center; width:calc(60% - 16px);background:transparent; margin:0 0 0 40%; padding:0;'>"
-													+ "<b style='color:"+PresetColour.TRANSFORMATION_GENERIC.toWebHexString()+"; float:left; width:50%; text-align:center;'>Фурри-предпочтения</b>"
+											+"<div class='container-full-width' style='text-align:center; background:"+getEntryBackgroundColour(false)+";'><div class='container-full-width' style='text-align:center; width:calc(60% - 16px);background:transparent; margin:0 0 0 40%; padding:0;'><b style='color:"+PresetColour.TRANSFORMATION_GENERIC.toWebHexString()+"; float:left; width:50%; text-align:center;'>Фурри-предпочтения</b>"
 													+ "<b style='color:"+PresetColour.BASE_YELLOW_LIGHT.toWebHexString()+"; float:left; width:50%; text-align:center;'>Частота спауна</b>"
 												+ "</div>"
 											+ "</div>");
@@ -1931,19 +1853,19 @@ public class OptionsDialogue {
 		contentSB.append("<div class='container-full-width' style='padding:0; margin:2px 0;'>");
 		
 			contentSB.append(
-					"<div id='"+id+"_INCREASE_LARGE' class='normal-button"+(value==maximum?" disabled":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
+					"<div id='"+id+"_УВЕЛИЧИТЬ_БОЛЬШОЙ' class='normal-button"+(value==maximum?" отключено":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
 							+ (value==maximum?"[style.boldDisabled(+)]":"[style.boldGood(+)]")
 					+ "</div>"
-					+ "<div id='"+id+"_INCREASE' class='normal-button"+(value==maximum?" disabled":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
+					+ "<div id='"+id+"_УВЕЛИЧИТЬ' class='normal-button"+(value==maximum?" отключено":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
 							+ (value==maximum?"[style.boldDisabled(+)]":"[style.boldMinorGood(+)]")
 					+ "</div>"
 					+ "<div class='container-full-width' style='text-align:center; width:40%; float:right; margin:0;'>"
 						+ "<b>"+valueDisplay+"</b>"
 					+ "</div>"
-					+ "<div id='"+id+"_DECREASE' class='normal-button"+(value==minimum?" disabled":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
+					+ "<div id='"+id+"_УМЕНЬШИТЬ' class='normal-button"+(value==minimum?" отключено":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
 						+ (value==minimum?"[style.boldDisabled(-)]":"[style.boldMinorBad(-)]")
 					+ "</div>"
-					+ "<div id='"+id+"_DECREASE_LARGE' class='normal-button"+(value==minimum?" disabled":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
+					+ "<div id='"+id+"_УМЕНЬШИТЬ_БОЛЬШ' class='normal-button"+(value==minimum?" отключено":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
 					+ (value==minimum?"[style.boldDisabled(-)]":"[style.boldBad(-)]")
 				+ "</div>");
 		
@@ -1981,17 +1903,17 @@ public class OptionsDialogue {
 			sb.append("<div class='container-full-width' style='text-align:center; width:30%; background:transparent; margin:2px 0; padding:0;'>");
 
 				for(FurryPreference preference : FurryPreference.values()) {
-					sb.append("<div id='FEMININE_"+preference+"_"+subspeciesId+"' class='square-button small"+(!s.isFurryPreferencesEnabled()?" disabled":"")
+					sb.append("<div id='FEMININE_"+preference+"_"+subspeciesId+"' class='square-button small"+(!s.isFurryPreferencesEnabled()?" отключено":"")
 								+(Main.getProperties().getSubspeciesFeminineFurryPreferencesMap().get(s)==preference && s.isFurryPreferencesEnabled()
-									?" selected' style='"+baseStyle+" border-color:"+preference.getColour().toWebHexString()+";'><div class='square-button-content'>"+preference.getSVGImage(false)+"</div></div>"
+									?" selected' style='"+baseStyle+" цвет-границы:"+preference.getColour().toWebHexString()+";'><div class='square-button-content'>"+preference.getSVGImage(false)+"</div></div>"
 									:"' style='"+baseStyle+"'><div class='square-button-content'>"+preference.getSVGImage(true)+"</div></div>"));
 				}
 				sb.append("</div>");
 				sb.append("<div class='container-full-width' style='text-align:center; width:30%; background:transparent; margin:2px 0; padding:0;'>");
 				for(SubspeciesPreference preference : SubspeciesPreference.values()) {
-					sb.append("<div id='FEMININE_SPAWN_"+preference+"_"+subspeciesId+"' class='square-button small"+(!s.isSpawnPreferencesEnabled()?" disabled":"")
+					sb.append("<div id='FEMININE_SPAWN_"+preference+"_"+subspeciesId+"' class='square-button small"+(!s.isSpawnPreferencesEnabled()?" отключено":"")
 								+(Main.getProperties().getSubspeciesFemininePreferencesMap().get(s)==preference && s.isSpawnPreferencesEnabled()
-									?" selected' style='"+baseStyle+" border-color:"+PresetColour.FEMININE_PLUS.toWebHexString()+";'><div class='square-button-content'>"+preference.getSVGImage(false)+"</div></div>"
+									?" selected' style='"+baseStyle+" цвет-границы:"+PresetColour.FEMININE_PLUS.toWebHexString()+";'><div class='square-button-content'>"+preference.getSVGImage(false)+"</div></div>"
 									:"' style='"+baseStyle+"'><div class='square-button-content'>"+preference.getSVGImage(true)+"</div></div>"));
 				}
 				
@@ -2005,17 +1927,17 @@ public class OptionsDialogue {
 			sb.append("<div class='container-full-width' style='text-align:center; width:30%; background:transparent; margin:2px 0; padding:0;'>");
 			
 				for(FurryPreference preference : FurryPreference.values()) {
-					sb.append("<div id='MASCULINE_"+preference+"_"+subspeciesId+"' class='square-button small"+(!s.isFurryPreferencesEnabled()?" disabled":"")
+					sb.append("<div id='MASCULINE_"+preference+"_"+subspeciesId+"' class='square-button small"+(!s.isFurryPreferencesEnabled()?" отключено":"")
 								+(Main.getProperties().getSubspeciesMasculineFurryPreferencesMap().get(s)==preference && s.isFurryPreferencesEnabled()
-									?" selected' style='"+baseStyle+" border-color:"+preference.getColour().toWebHexString()+";'><div class='square-button-content'>"+preference.getSVGImage(false)+"</div></div>"
+									?" selected' style='"+baseStyle+" цвет-границы:"+preference.getColour().toWebHexString()+";'><div class='square-button-content'>"+preference.getSVGImage(false)+"</div></div>"
 									:"' style='"+baseStyle+"'><div class='square-button-content'>"+preference.getSVGImage(true)+"</div></div>"));
 				}
 			sb.append("</div>");
 			sb.append("<div class='container-full-width' style='text-align:center; width:30%; background:transparent; margin:2px 0; padding:0;'>");
 				for(SubspeciesPreference preference : SubspeciesPreference.values()) {
-					sb.append("<div id='MASCULINE_SPAWN_"+preference+"_"+subspeciesId+"' class='square-button small"+(!s.isSpawnPreferencesEnabled()?" disabled":"")
+					sb.append("<div id='MASCULINE_SPAWN_"+preference+"_"+subspeciesId+"' class='square-button small"+(!s.isSpawnPreferencesEnabled()?" отключено":"")
 								+(Main.getProperties().getSubspeciesMasculinePreferencesMap().get(s)==preference && s.isSpawnPreferencesEnabled()
-									?" selected' style='"+baseStyle+" border-color:"+PresetColour.MASCULINE_PLUS.toWebHexString()+";'><div class='square-button-content'>"+preference.getSVGImage(false)+"</div></div>"
+									?" selected' style='"+baseStyle+" цвет-границы:"+PresetColour.MASCULINE_PLUS.toWebHexString()+";'><div class='square-button-content'>"+preference.getSVGImage(false)+"</div></div>"
 									:"' style='"+baseStyle+"'><div class='square-button-content'>"+preference.getSVGImage(true)+"</div></div>"));
 				}
 				
@@ -2029,7 +1951,7 @@ public class OptionsDialogue {
 		return sb.toString();
 	}
 
-	public static final DialogueNode UNIT_PREFERENCE = new DialogueNode("Unit preferences", "", true) {
+	public static final DialogueNode UNIT_PREFERENCE = new DialogueNode("Предпочтения единиц измерения", "", true) {
 
 		@Override
 		public String getHeaderContent() {
@@ -2046,37 +1968,37 @@ public class OptionsDialogue {
 
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("AUTO_LOCALE",
 					PresetColour.BASE_BLUE_LIGHT,
-					"Automatic",
+					"Автоматически",
 					"Когда включено, используется локаль системы. В противном случае, применяются следующие настройки.",
 					Main.getProperties().hasValue(PropertyValue.autoLocale)));
 
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("METRIC_SIZES",
 					PresetColour.BASE_BLUE_STEEL,
-					"Metric sizes",
+					"Метрические размеры",
 					"Игра будет использовать метры и сантиметры вместо футов и дюймов.",
 					Main.getProperties().hasValue(PropertyValue.metricSizes)));
 
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("METRIC_FLUIDS",
 					PresetColour.BASE_BLUE_STEEL,
-					"Metric fluids",
+					"Метрические объемы",
 					"Игра будет использовать литры и миллилитры вместо галлонов и унций.",
 					Main.getProperties().hasValue(PropertyValue.metricFluids)));
 
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("METRIC_WEIGHTS",
 					PresetColour.BASE_BLUE_STEEL,
-					"Metric weights",
+					"Метрические веса",
 					"Игра будет использовать килограммы и граммы вместо фунтов и унций.",
 					Main.getProperties().hasValue(PropertyValue.metricWeights)));
 
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("TWENTYFOUR_HOUR_TIME",
 					PresetColour.BASE_LILAC_LIGHT,
-					"24 hour time",
+					"24-часовой формат",
 					"Время будет отображаться в формате 24 часа вместо AM/PM.",
 					Main.getProperties().hasValue(PropertyValue.twentyFourHourTime)));
 
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("INTERNATIONAL_DATE",
 					PresetColour.BASE_LILAC_LIGHT,
-					"International date",
+					"Международный формат даты",
 					"Сокращённая дата будет отображаться в формате день.месяц.год вместо месяц/день/год.",
 					Main.getProperties().hasValue(PropertyValue.internationalDate)));
 
@@ -2136,17 +2058,10 @@ public class OptionsDialogue {
 					"<div class='normal-button selected' style='width:25%; margin-right:4%; text-align:center; float:right;'>"
 							+ "[style.boldGood(ON)]"
 						+ "</div>"
-					+ "<div id='"+id+"_OFF' class='normal-button' style='width:25%; margin-right:4%; text-align:center; float:right;'>"
-						+ "[style.colourDisabled(OFF)]"
-					+ "</div>");
+					+ "<div id='"+id+"_OFF' class='normal-button' style='width:25%; margin-right:4%; text-align:center; float:right;'>[style.colourDisabled(ВЫКЛ)]</div>");
 		} else {
 			contentSB.append(
-					"<div id='"+id+"_ON' class='normal-button' style='width:25%; margin-right:4%; text-align:center; float:right;'>"
-						+ "[style.colourDisabled(ON)]"
-					+ "</div>"
-					+"<div class='normal-button selected' style='width:25%; margin-right:4%; text-align:center; float:right;'>"
-						+ "[style.boldBad(OFF)]"
-					+ "</div>");
+					"<div id='"+id+"_ON' class='normal-button' style='width:25%; margin-right:4%; text-align:center; float:right;'>[style.colourDisabled(ВКЛ)]</div><div class='normal-button selected' style='width:25%; margin-right:4%; text-align:center; float:right;'>[style.boldBad(ВЫКЛ)]</div>");
 		}
 
 		contentSB.append("</div>"
@@ -2178,13 +2093,13 @@ public class OptionsDialogue {
 		contentSB.append(
 				"<div class='container-full-width' style='width:100%; margin:0; padding:0; text-align:right;'>"
 					+ "Breasts: "
-					+ "<div id='"+id+"_ON' class='normal-button"+(value==maximum?" disabled":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
+					+ "<div id='"+id+"_ON' class='normal-button"+(value==maximum?" отключено":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
 							+ (value==maximum?"[style.boldDisabled(+)]":"[style.boldGood(+)]")
 					+ "</div>"
 					+ "<div class='container-full-width' style='text-align:center; width:calc(30%); float:right; margin:0;'>"
 						+ "<b>"+valueDisplay+"</b>"
 					+ "</div>"
-					+ "<div id='"+id+"_OFF' class='normal-button"+(value==minimum?" disabled":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
+					+ "<div id='"+id+"_ВЫКЛ' class='normal-button"+(value==minimum?" отключено":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
 						+ (value==minimum?"[style.boldDisabled(-)]":"[style.boldBad(-)]")
 					+ "</div>"
 				+ "</div>");
@@ -2192,13 +2107,13 @@ public class OptionsDialogue {
 		contentSB.append(
 				"<div class='container-full-width' style='width:100%; margin:0; padding:0; text-align:right;'>"
 					+ "Udders: "
-					+ "<div id='"+id+"_UDDERS_ON' class='normal-button"+(valueUdders==maximumUdders?" disabled":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
+					+ "<div id='"+id+"_ГРУДИ_ВКЛ' class='normal-button"+(valueUdders==maximumUdders?" отключено":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
 							+ (valueUdders==maximumUdders?"[style.boldDisabled(+)]":"[style.boldGood(+)]")
 					+ "</div>"
 					+ "<div class='container-full-width' style='text-align:center; width:calc(30%); float:right; margin:0;'>"
 						+ "<b>"+valueDisplayUdders+"</b>"
 					+ "</div>"
-					+ "<div id='"+id+"_UDDERS_OFF' class='normal-button"+(valueUdders==minimumUdders?" disabled":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
+					+ "<div id='"+id+"_ГРУДИ_ВЫКЛ' class='normal-button"+(valueUdders==minimumUdders?" отключено":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
 						+ (valueUdders==minimumUdders?"[style.boldDisabled(-)]":"[style.boldBad(-)]")
 					+ "</div>"
 				+ "</div>");
@@ -2233,14 +2148,9 @@ public class OptionsDialogue {
 					int value = entry.getValue();
 					contentSB.append(
 							"<div class='container-full-width' style='width:100%; margin:0; padding:0; text-align:right;'>"
-								+ "<span style='color:"+skinColour.toWebHexString()+";'>"+Util.capitaliseSentence(skinColour.getName())+":</span> "
-								+ "<div id='"+id+"_"+(skinColour).getId()+"_ON' class='normal-button"+(value==maximum?" disabled":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
+								+ "<span style='color:"+skinColour.toWebHexString()+";'>"+Util.capitaliseSentence(skinColour.getName())+":</span> <div id='"+id+"_"+(skinColour).getId()+"_ВКЛ' class='normal-button"+(value==maximum?" отключено":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
 										+ (value==maximum?"[style.boldDisabled(+)]":"[style.boldGood(+)]")
-								+ "</div>"
-								+ "<div class='container-full-width' style='text-align:center; width:calc(30%); float:right; margin:0;'>"
-									+ "[style.colourSize"+value+"("+value+")]"
-								+ "</div>"
-								+ "<div id='"+id+"_"+(skinColour).getId()+"_OFF' class='normal-button"+(value==minimum?" disabled":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
+								+ "</div><div class='container-full-width' style='text-align:center; width:calc(30%); float:right; margin:0;'>[style.colourSize"+value+"("+value+")]</div><div id='"+id+"_"+(skinColour).getId()+"_ВЫКЛ' class='normal-button"+(value==minimum?" отключено":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
 									+ (value==minimum?"[style.boldDisabled(-)]":"[style.boldBad(-)]")
 								+ "</div>"
 							+ "</div>");
@@ -2264,13 +2174,13 @@ public class OptionsDialogue {
 					+ "<div class='container-half-width' style='width:calc(45% - 16px);'>");
 		
 		contentSB.append(
-				"<div id='"+id+"_ON' class='normal-button', "+(value==maximum?" disabled":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
+				"<div id='"+id+"_ON' class='normal-button', "+(value==maximum?" отключено":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
 						+ (value==maximum?"[style.boldDisabled(+)]":"[style.boldGood(+)]")
 				+ "</div>"
 				+ "Контекст: Java UI/Dialogue src/com/lilithsthrone/game/dialogue/utils/OptionsDialogue.java\nТекст:\n<div class='container-full-width' style='text-align:center; width:calc(30%); float:right; margin:0;'>"
 					+ "<b>"+valueDisplay+"</b>"
 				+ "</div>"
-				+ "<div id='"+id+"_OFF' class='normal-button"+(value==minimum?" disabled":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
+				+ "<div id='"+id+"_ВЫКЛ' class='normal-button"+(value==minimum?" отключено":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
 					+ (value==minimum?"[style.boldDisabled(-)]":"[style.boldBad(-)]")
 				+ "</div>");
 		
@@ -2281,7 +2191,7 @@ public class OptionsDialogue {
 	}
 	
 	
-	public static final DialogueNode CREDITS = new DialogueNode("Credits", "", true) {
+	public static final DialogueNode CREDITS = new DialogueNode("Авторы", "", true) {
 		
 		@Override
 		public String getContent(){
@@ -2304,21 +2214,7 @@ public class OptionsDialogue {
 				}
 			}
 
-			UtilText.nodeContentSB.append("<br/>"
-					+ "Contributors:</br>" // In alphabetical order:
-					+ "<b style='color:#21bfc5;'>AceXP</b></br>"
-					+ "<b style='color:#21bfc5;'>DJ Addi</b></br>"
-					+ "<b style='color:#21bfc5;'>DSG</b></br>"
-					+ "<b style='color:#21bfc5;'>Irbynx</b></br>"
-					+ "<b style='color:#21bfc5;'>Maxis010</b></br>"
-					+ "<b style='color:#21bfc5;'>Nnxx</b></br>"
-					+ "<b style='color:#21bfc5;'>Norin</b></br>"
-					+ "<b style='color:#21bfc5;'>NoStepOnSnek</b></br>"
-					+ "<b style='color:#21bfc5;'>Phlarx</b></br>"
-					+ "<b style='color:#21bfc5;'>Pimgd</b></br>"
-					+ "<b style='color:#21bfc5;'>PoyntFury</b></br>"
-					+ "<b style='color:#21bfc5;'>Rfpnj</b></br>"
-					+ "<b style='color:#21bfc5;'>Tukaima</b></br>");
+			UtilText.nodeContentSB.append("<br/>Разработчики:</br><b style='color:#21bfc5;'>AceXP</b></br><b style='color:#21bfc5;'>DJ Addi</b></br><b style='color:#21bfc5;'>DSG</b></br><b style='color:#21bfc5;'>Irbynx</b></br><b style='color:#21bfc5;'>Maxis010</b></br><b style='color:#21bfc5;'>Nnxx</b></br><b style='color:#21bfc5;'>Norin</b></br><b style='color:#21bfc5;'>NoStepOnSnek</b></br><b style='color:#21bfc5;'>Phlarx</b></br><b style='color:#21bfc5;'>Pimgd</b></br><b style='color:#21bfc5;'>PoyntFury</b></br><b style='color:#21bfc5;'>Rfpnj</b></br><b style='color:#21bfc5;'>Tukaima</b></br>");
 			
 			UtilText.nodeContentSB.append("<br/>"
 						+ "Особая благодарность:<br/>"
@@ -2331,8 +2227,7 @@ public class OptionsDialogue {
 						+ "<b>Всем за игру в Трон Лилит!</b>"
 					+ "</p>"
 					+ "<br/>"
-					+ "<h5 style='text-align:center; color:"+PresetColour.RARITY_LEGENDARY.toWebHexString()+";'>Legendary Patrons</h5>"
-					+ "<p style='text-align:center;'>");
+					+ "<h5 style='text-align:center; color:"+PresetColour.RARITY_LEGENDARY.toWebHexString()+";'>Легендарные меценаты</h5><p style='text-align:center;'>");
 			
 			for(CreditsSlot cs : Main.credits) {
 				if(cs.getLegendaryCount()>0) {
@@ -2376,8 +2271,7 @@ public class OptionsDialogue {
 			UtilText.nodeContentSB.append(
 					"</p>"
 					+ "<br/>"
-					+ "<h5 style='text-align:center; color:"+PresetColour.RARITY_EPIC.toWebHexString()+";'>Epic Patrons</h5>"
-					+ "<p style='text-align:center;'>");
+					+ "<h5 style='text-align:center; color:"+PresetColour.RARITY_EPIC.toWebHexString()+";'>Эпические меценаты</h5><p style='text-align:center;'>");
 			
 			for(CreditsSlot cs : Main.credits) {
 				if(cs.getLegendaryCount()==0 && cs.getEpicCount()>0) {
@@ -2407,8 +2301,7 @@ public class OptionsDialogue {
 			UtilText.nodeContentSB.append(
 					"</p>"
 					+ "<br/>"
-					+ "<h5 style='text-align:center; color:"+Subspecies.DEMON.getColour(null).toWebHexString()+";'>Demonic backers</h5>"
-					+ "<p style='text-align:center;'>");
+					+ "<h5 style='text-align:center; color:"+Subspecies.DEMON.getColour(null).toWebHexString()+";'>Демонические покровители</h5><p style='text-align:center;'>");
 			
 			for(CreditsSlot cs : Main.credits) {
 				if(cs.getLegendaryCount()==0 && cs.getEpicCount()==0) {
@@ -2475,8 +2368,7 @@ public class OptionsDialogue {
 			return new Response("Тела", "Просмотр опций контента игры по телам.", BODIES);
 		} else if (index == 5) {
 			return new Response("[style.colourMinorBad(Сброс)]",
-					"Сбрасывает <b>все предпочтения 'Разное', 'Игровой процесс', 'Секс и фетиши' и 'Тела'</b> к их значениям по умолчанию!"
-							+"<br/>Does <b>not</b> reset Gender, Orientation, Age, Furry, or Fetish preferences.",
+					"Сбрасывает <b>все предпочтения 'Разное', 'Игровой процесс', 'Секс и фетиши' и 'Тела'</b> к их значениям по умолчанию!<br/>Это <b>не</b> сбрасывает предпочтения пола, ориентации, возраста, фурри или фетишей.",
 					MISCELLANEOUS) {
 				@Override
 				public void effects() {
@@ -2523,9 +2415,9 @@ public class OptionsDialogue {
 		public String getContent() {
 			UtilText.nodeContentSB.setLength(0);
 			
-			UtilText.nodeContentSB.append(getCustomContentPreferenceDivStart(PresetColour.GENERIC_GOOD, "Autosave Frequency", "Выберите, как часто вы хотите, чтобы игра автоматически сохранялась при переходе с одной карты на другую."));
+			UtilText.nodeContentSB.append(getCustomContentPreferenceDivStart(PresetColour.GENERIC_GOOD, "Частота автосохранения", "Выберите, как часто вы хотите, чтобы игра автоматически сохранялась при переходе с одной карты на другую."));
 			for (int i = 2; i>=0; i--) {
-				UtilText.nodeContentSB.append("<div id='AUTOSAVE_FREQUENCY_"+i+"' class='normal-button', "+(Main.getProperties().autoSaveFrequency == i?" selected":"")+"' style='width:calc(33% - 8px); margin-right:8px; text-align:center; float:right;'>"
+				UtilText.nodeContentSB.append("<div id='AUTOSAVE_FREQUENCY_"+i+"' class='normal-button', "+(Main.getProperties().autoSaveFrequency == i?" выбранный":"")+"' style='width:calc(33% - 8px); margin-right:8px; text-align:center; float:right;'>"
 						+(Main.getProperties().autoSaveFrequency == i
 						?"[style.boldGood("
 						:"[style.colourDisabled(")
@@ -2534,12 +2426,12 @@ public class OptionsDialogue {
 			UtilText.nodeContentSB.append("Контекст: Java UI/Dialogue src/com/lilithsthrone/game/dialogue/utils/OptionsDialogue.java\nТекст:\n</div></div>");
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("ARTWORK",
 					PresetColour.BASE_BLUE_LIGHT,
-					"Artwork",
+					"Арт",
 					"Вот перевод на русский язык:\n\nВключает возможность отображения иллюстраций на экранах информации о персонажах.",
 					Main.getProperties().hasValue(PropertyValue.artwork)));
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("THUMBNAIL",
 					PresetColour.BASE_BLUE_STEEL,
-					"Thumbnails",
+					"Миниатюры",
 					"Вот перевод на естественный, нецензурный русский язык:\n\nsrc/com/lilithsthrone/game/dialogue/utils/OptionsDialogue.java\n\nТекст:\nВключает подсказки, содержащие миниатюрные изображения персонажа.",
 					Main.getProperties().hasValue(PropertyValue.thumbnail)));
 			
@@ -2547,10 +2439,7 @@ public class OptionsDialogue {
 			
 			UtilText.nodeContentSB.append("Контекст: Java UI/Dialogue src/com/lilithsthrone/game/dialogue/utils/OptionsDialogue.java\nТекст:\n<div class='container-full-width' style='padding:0; margin:2px 0;'>"
 				+ "<div class='container-half-width' style='width:calc(55% - 16px);'>"
-					+ "<b style='text-align:center; color:"+PresetColour.BASE_AQUA.toWebHexString()+";'>Preferred Artist</b><b>:</b> "
-					+ "Which artist's work is used by default."
-				+ "</div>"
-				+ "<div class='container-half-width' style='width:calc(45% - 16px);'>");
+					+ "<b style='text-align:center; color:"+PresetColour.BASE_AQUA.toWebHexString()+";'>Любимый художник</b><b>:</b> Работы какого художника используются по умолчанию.</div><div class='container-half-width' style='width:calc(45% - 16px);'>");
 			
 			List<Artist> artists = new ArrayList<>(Artwork.allArtists);
 			artists.remove(Artwork.customArtist);
@@ -2560,13 +2449,11 @@ public class OptionsDialogue {
 				Artist artist = artists.get(i);
 				if (!artist.getName().equals("Custom")) {
 					UtilText.nodeContentSB.append("<div style='width:100%;  margin:1px 0; border-radius:4px; background-color:"+PresetColour.BACKGROUND.toWebHexString()+";'>");
-						UtilText.nodeContentSB.append("<div "+(i==0?"":"id='ARTIST_"+artist.getFolderName()+"_UP'")+" class='normal-button"+(i==0?" disabled":"")+"' style='width:10%; margin:0; text-align:center;'>");
+						UtilText.nodeContentSB.append("<div "+(i==0?"":"id='ARTIST_"+artist.getFolderName()+"_ВВЕРХ'")+" class='normal-button"+(i==0?" отключено":"")+"' style='width:10%; margin:0; text-align:center;'>");
 							UtilText.nodeContentSB.append("&#8593;");
 						UtilText.nodeContentSB.append("</div>");
-						UtilText.nodeContentSB.append("<div "+(i==artists.size()-1?"":"id='ARTIST_"+artist.getFolderName()+"_DOWN'")
-									+" class='normal-button"+(i==artists.size()-1?" disabled":"")+"' style='width:10%; margin:0; text-align:center; float:right;'>"
-								+"&#8595;"
-							+"</div>");
+						UtilText.nodeContentSB.append("<div "+(i==artists.size()-1?"":"id='ARTIST_"+artist.getFolderName()+"_ВНИЗ'")
+									+" class='normal-button"+(i==artists.size()-1?" отключено":"")+"' style='width:10%; margin:0; text-align:center; float:right;'>&#8595;</div>");
 						UtilText.nodeContentSB.append("<div style='width:80%; margin:0; text-align:center; float:right;'>"
 								+"<span style='color:"+artist.getColour().toWebHexString()+";'>"+artist.getName()+"</span> ("+artist.getArtworkCount()+")"
 							+"</div>");
@@ -2576,12 +2463,12 @@ public class OptionsDialogue {
 			UtilText.nodeContentSB.append("</div></div>");
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("SHARED_ENCYCLOPEDIA",
 					PresetColour.GENERIC_EXCELLENT,
-					"Shared Encyclopedia",
+					"Общая энциклопедия",
 					"Когда включена, ваша персонаж будет использовать общую Энциклопедию (чьи записи разблокированы в любой игре). Если отключена, разблокированные записи Энциклопедии показываются только если ваша текущая персонаж обнаружила их.",
 					Main.getProperties().hasValue(PropertyValue.sharedEncyclopedia)));
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("WEATHER_INTERRUPTION",
 					PresetColour.GENERIC_ARCANE,
-					"Storm interruptions",
+					"Прерывания штормом",
 					"Когда включена, арканические бури будут прерывать диалог, чтобы сообщить вам, что они начались.",
 					Main.getProperties().hasValue(PropertyValue.weatherInterruptions)));
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("DIALOGUE_COPY",
@@ -2592,7 +2479,7 @@ public class OptionsDialogue {
 					Main.getProperties().hasValue(PropertyValue.automaticDialogueCopy)));
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("SILLY",
 					PresetColour.GENERIC_GOOD,
-					"Silly mode",
+					"Глупый режим",
 					"Этот параметр позволяет добавлять дополнительные смешные контенты в игру.",
 					Main.getProperties().hasValue(PropertyValue.sillyMode)));
 			
@@ -2617,34 +2504,34 @@ public class OptionsDialogue {
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("ENCHANTMENT_LIMITS",
 					PresetColour.GENERIC_ARCANE,
-					"Enchantment Instability",
-					"Toggle the '"+Attribute.ENCHANTMENT_LIMIT.getName()+"Механика, которая ограничивает количество зачарованных предметов, которые вы можете носить. По умолчанию она включена, и при отключении она может нарушить баланс боевой системы игры.",
+					"Нестабильность чар",
+					"Включить/выключить '"+Attribute.ENCHANTMENT_LIMIT.getName()+"Механика, которая ограничивает количество зачарованных предметов, которые вы можете носить. По умолчанию она включена, и при отключении она может нарушить баланс боевой системы игры.",
 					Main.getProperties().hasValue(PropertyValue.enchantmentLimits)));
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("BAD_END",
 					PresetColour.GENERIC_TERRIBLE,
-					"Bad Ends",
+					"Плохие концовки",
 					"Включает возможность вызывать 'плохие концовки', которые заканчивают игру для вашего персонажа, когда они происходят."
 							+"<br/>[style.italicsMinorBad(Пожалуйста, обратите внимание, что плохие концовки включают в себя не-контент, поэтому игнорируйте ваше не-кон настройку.)]",
 //							+"<br/>[style.italicsTerrible(Please be aware that some bad ends are unaffected by this setting and are always present in the game.)]"
 					Main.getProperties().hasValue(PropertyValue.badEndContent)));
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("LEVEL_DRAIN",
 					PresetColour.GENERIC_TERRIBLE,
-					"Level Drain",
+					"Поглощение уровня",
 					"Включает возможность использовать перк 'уровень оргазма' у уникальных NPC (например, в некоторых сценах с Эмбер), который заставляет их сливать ваш уровень за каждый оргазм, который вы имеете с ними.",
 					Main.getProperties().hasValue(PropertyValue.levelDrain)));
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("OPPORTUNISTIC_ATTACKERS",
 					PresetColour.BASE_CRIMSON,
-					"Opportunistic attackers",
+					"Атакующие наживчицы",
 					"Это делает случайные атаки более вероятными, когда вы находитесь под воздействием похоти, низкого здоровья, покрыты жидкостями, обнажены или пьяны.",
 					Main.game.isOpportunisticAttackersEnabled()));
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("OFFSPRING_ENCOUNTERS",
 					PresetColour.BASE_INDIGO,
-					"Offspring Encounters",
+					"Встречи с отпрысками",
 					"Это позволяет вам случайно встретить свое потомство по всему миру."
 					+ "<br/><i>Этот параметр не влияет на Карту Потомства, а также на потомство, с которым вы уже встретились.</i>",
 					Main.game.isOffspringEncountersEnabled()));
 			
-			UtilText.nodeContentSB.append(getCustomContentPreferenceDivStart(PresetColour.BASE_BLUE_LIGHT, "Clothing Femininity", "Это устанавливает ограничения по значениям женственности одежды."));
+			UtilText.nodeContentSB.append(getCustomContentPreferenceDivStart(PresetColour.BASE_BLUE_LIGHT, "Женственность одежды", "Это устанавливает ограничения по значениям женственности одежды."));
 			for (int i=Main.getProperties().clothingFemininityTitles.length-1; i>=0; i--) {
 				if (Main.getProperties().getClothingFemininityLevel() == i) {
 					UtilText.nodeContentSB.append("<div id='CLOTHING_FEMININITY_"+i
@@ -2652,15 +2539,14 @@ public class OptionsDialogue {
 							+Main.getProperties().clothingFemininityColours[i].toWebHexString()+";'><b>"+Main.getProperties().clothingFemininityTitles[i]+"</b></div>");
 				} else {
 					UtilText.nodeContentSB.append("<div id='CLOTHING_FEMININITY_"+i
-							+"' class='normal-button' style='width:31%; margin:1%; text-align:center; float:right;'>"
-							+"[style.colourDisabled("+Main.getProperties().clothingFemininityTitles[i]+")]</div>");
+							+"' class='normal-button' style='width:31%; margin:1%; text-align:center; float:right;'>[style.colourDisabled("+Main.getProperties().clothingFemininityTitles[i]+")]</div>");
 				}
 			}
 			UtilText.nodeContentSB.append("</div></div>");
 			
 			UtilText.nodeContentSB.append(getCustomContentPreferenceDivStart(PresetColour.BASE_PINK, "Обход действия секса", "Если это включено, требования к порочности при действии секса могут быть обходятся."));
 			for (int i = 2; i>=0; i--) {
-				UtilText.nodeContentSB.append("<div id='BYPASS_SEX_ACTIONS_"+i+"' class='normal-button'}"+(Main.getProperties().bypassSexActions == i?" selected":"")+"' style='width:calc(33% - 8px); margin-right:8px; text-align:center; float:right;'>"
+				UtilText.nodeContentSB.append("<div id='BYPASS_SEX_ACTIONS_"+i+"' class='normal-button'}"+(Main.getProperties().bypassSexActions == i?" выбранный":"")+"' style='width:calc(33% - 8px); margin-right:8px; text-align:center; float:right;'>"
 						+(Main.getProperties().bypassSexActions == i
 						?"[style.boldGood("
 						:"[style.colourDisabled(")
@@ -2671,9 +2557,9 @@ public class OptionsDialogue {
 			UtilText.nodeContentSB.append(getContentPreferenceVariableDiv(
 					"PREGNANCY_DURATION",
 					PresetColour.BASE_PINK_DEEP,
-					"Pregnancy duration",
+					"Длительность беременности",
 					"Это устанавливает максимальное время, которое требуется для прогрессирования беременности от зачатия до рождения.",
-					Main.getProperties().pregnancyDuration+" week"+(Main.getProperties().pregnancyDuration == 1?"":"s"),
+					Main.getProperties().pregnancyDuration+" нед."+(Main.getProperties().pregnancyDuration == 1?"":"s"),
 					Main.getProperties().pregnancyDuration,
 					1,
 					40));
@@ -2687,7 +2573,7 @@ public class OptionsDialogue {
 			UtilText.nodeContentSB.append(getContentPreferenceVariableDiv(
 					"FORCED_TF",
 					PresetColour.TRANSFORMATION_GENERIC,
-					"Forced TF",
+					"Принудительная ТФ",
 					"Это устанавливает количество НПС, появляющихся с фетишем '"+Fetish.FETISH_TRANSFORMATION_GIVING.getName(null)+"' фетиш, который заставляет их насильно трансформировать вас после победы в бою.",
 					Main.getProperties().forcedTFPercentage+"%",
 					Main.getProperties().forcedTFPercentage,
@@ -2706,13 +2592,12 @@ public class OptionsDialogue {
 							+fp.getColour().toWebHexString()+";'>"+fp.getName()+"</div>");
 				} else {
 					UtilText.nodeContentSB.append("<div id='FORCED_TF_FURRY_LIMIT_"+fp
-							+"' class='normal-button' style='width:31%; margin:1%; text-align:center; float:right;'>"
-							+"[style.colourDisabled("+fp.getName()+")]</div>");
+							+"' class='normal-button' style='width:31%; margin:1%; text-align:center; float:right;'>[style.colourDisabled("+fp.getName()+")]</div>");
 				}
 			}
 			UtilText.nodeContentSB.append("</div></div>");
 			
-			UtilText.nodeContentSB.append(getCustomContentPreferenceDivStart(PresetColour.BASE_GREEN, "Forced TF Gender Tendency", "This allows you to override NPC tastes when a forced transformation will alter your gender presentation."));
+			UtilText.nodeContentSB.append(getCustomContentPreferenceDivStart(PresetColour.BASE_GREEN, "Принудительная гендерная склонность", "Позволяет игнорировать вкусы NPC, когда принудительная трансформация меняет ваш гендерный облик."));
 			for (ForcedTFTendency ftt : Util.newArrayListOfValues(ForcedTFTendency.NEUTRAL,
 					ForcedTFTendency.FEMININE,
 					ForcedTFTendency.FEMININE_HEAVY,
@@ -2724,8 +2609,7 @@ public class OptionsDialogue {
 							+ftt.getColour().toWebHexString()+";'>"+ftt.getName()+"</div>");
 				} else {
 					UtilText.nodeContentSB.append("<div id='FORCED_TF_TENDENCY_"+ftt
-							+"' class='normal-button' style='width:31%; margin:1%; text-align:center; float:right;'>"
-							+"[style.colourDisabled("+ftt.getName()+")]</div>");
+							+"' class='normal-button' style='width:31%; margin:1%; text-align:center; float:right;'>[style.colourDisabled("+ftt.getName()+")]</div>");
 				}
 			}
 			UtilText.nodeContentSB.append("</div></div>");
@@ -2733,7 +2617,7 @@ public class OptionsDialogue {
 			UtilText.nodeContentSB.append(getContentPreferenceVariableDiv(
 					"FORCED_FETISH",
 					PresetColour.FETISH,
-					"Forced Fetishes",
+					"Принудительные фетиши",
 					"Это устанавливает количество НПС, появляющихся с фетишем '"+Fetish.FETISH_KINK_GIVING.getName(null)+"' фетишем, который заставляет их пытаться насильно давать вам фетиши после того, как они побеждают вас в бою.",
 					Main.getProperties().forcedFetishPercentage+"%",
 					Main.getProperties().forcedFetishPercentage,
@@ -2754,15 +2638,14 @@ public class OptionsDialogue {
 							+fft.getColour().toWebHexString()+";'>"+fft.getName()+"</div>");
 				} else {
 					UtilText.nodeContentSB.append("<div id='FORCED_FETISH_TENDENCY_"+fft
-							+"' class='normal-button' style='width:31%; margin:1%; text-align:center; float:right;'>"
-							+"[style.colourDisabled("+fft.getName()+")]</div>");
+							+"' class='normal-button' style='width:31%; margin:1%; text-align:center; float:right;'>[style.colourDisabled("+fft.getName()+")]</div>");
 				}
 			}
 			UtilText.nodeContentSB.append("</div></div>");
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("COMPANION",
 					PresetColour.BASE_GREEN_LIGHT,
-					"Companions",
+					"Спутники",
 					"Включить возможность добавлять рабов или дружелюбных обитателей в качестве спутника."
 							+"<br/>[style.boldBad(Предупреждение:)] Это экспериментальная функция, и поддержка спутников была убрана в v0.3.9, поэтому не будет никаких особых диалогов или действий, связанных с вашими спутниками, за пределами Dominion.",
 					Main.getProperties().hasValue(PropertyValue.companionContent)));
@@ -2788,46 +2671,46 @@ public class OptionsDialogue {
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("NON_CON",
 					PresetColour.BASE_CRIMSON,
-					"Non-consent",
+					"Неконсенсуальный контент",
 					"Это включает в себя 'resist' темп в сценах секса, который содержит некоторые более экстремальные неконсенсуальные описания, а также диалоговые ссылки и действия, связанные с этим контентом."
 							+"<br/>[style.italicsMinorBad(Пожалуйста, обратите внимание, что плохие концовки включают в себя неконтент, независимо от того, включена ли эта опция.)]",
 					Main.getProperties().hasValue(PropertyValue.nonConContent)));
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("SADISTIC_SEX",
 					PresetColour.BASE_RED,
-					"Sadistic sex",
+					"Садистский секс",
 					"Это разблокирует 'садистские' сексуальные действия, такие как удушение, хлопанье по лицу и плюхание на партнера во время секса.",
 					Main.getProperties().hasValue(PropertyValue.sadisticSexContent)));
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("LIPSTICK_MARKING",
 					PresetColour.BASE_RED_DARK,
-					"Lipstick marking",
+					"Следы от помады",
 					"Это включает в себя маркировку губной помадой частей тела через поцелуи во время секса.",
 					Main.getProperties().hasValue(PropertyValue.lipstickMarkingContent)));
 			
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("VOLUNTARY_NTR",
 					PresetColour.GENERIC_MINOR_BAD,
-					"Voluntary NTR",
+					"Добровольный NTR",
 					"Когда включено, у вас будет возможность предложить некоторым врагам секс с вашим спутником как способ избежать боя.",
 					Main.getProperties().hasValue(PropertyValue.voluntaryNTR)));
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("INVOLUNTARY_NTR",
 					PresetColour.GENERIC_BAD,
-					"Involuntary NTR",
+					"Невольный NTR",
 					"Когда включено, враги могут выбрать, чтобы заниматься сексом только с вашим спутником после победы над вашей группой в бою."
 							+"Когда отключено, все сцены секса после поражения в бою будут включать вас.",
 					Main.getProperties().hasValue(PropertyValue.involuntaryNTR)));
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("INCEST",
 					PresetColour.BASE_ROSE,
-					"Incest",
+					"Инцест",
 					"Это позволит сексуальные действия между персонажами, которые связаны друг с другом.",
 					Main.getProperties().hasValue(PropertyValue.incestContent)));
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("LACTATION",
 					PresetColour.BASE_YELLOW_LIGHT,
-					"Lactation",
+					"Лактация",
 					"Это позволяет контент о лактации.",
 					Main.getProperties().hasValue(PropertyValue.lactationContent)));
 			
@@ -2839,25 +2722,25 @@ public class OptionsDialogue {
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("URETHRAL",
 					PresetColour.BASE_PINK_DEEP,
-					"Urethral content",
+					"Уретральный контент",
 					"Это позволяет трансформации и проникновения в уретру.",
 					Main.getProperties().hasValue(PropertyValue.urethralContent)));
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("NIPPLE_PEN",
 					PresetColour.BASE_PINK_DEEP,
-					"Nipple penetrations",
+					"Проникновения в соски",
 					"Это позволяет трансформации и сексуальные действия, связанные с сосками.",
 					Main.getProperties().hasValue(PropertyValue.nipplePenContent)));
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("ANAL",
 					PresetColour.BASE_ORANGE,
-					"Anal content",
+					"Анальный контент",
 					"Когда отключена, удаляет все анальные действия из доступных во время секса.",
 					Main.getProperties().hasValue(PropertyValue.analContent)));
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("GAPE",
 					PresetColour.BASE_PINK_DEEP,
-					"Gape content",
+					"Контент с широко раскрытым ртом",
 					"Когда отключена, изменяет описания широко раскрытых отверстий на просто 'расслабленные', а также скрывает любой специальный контент, связанный с раскрытием.",
 					Main.getProperties().hasValue(PropertyValue.gapeContent)));
 			
@@ -2876,19 +2759,19 @@ public class OptionsDialogue {
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("FOOT",
 					PresetColour.BASE_TAN,
-					"Foot content",
+					"Контент с ножками",
 					"При отключении, все действия, связанные с ногами, будут недоступны во время секса.",
 					Main.getProperties().hasValue(PropertyValue.footContent)));
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("ARMPIT",
 					PresetColour.BASE_PINK_LIGHT,
-					"Armpit content",
+					"Контент с подмышками",
 					"При отключении, все действия, связанные с подмышками, будут недоступны во время секса.",
 					Main.getProperties().hasValue(PropertyValue.armpitContent)));
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("MUSK",
 					PresetColour.BASE_YELLOW_LIGHT,
-					"Musk content",
+					"Мускусный контент",
 					"При отключении, некоторые сцены будут иметь либо сниженное содержание мускуса, либо будут опущены полностью, а эффект статуса 'запах мускуса' будет отключен.",
 					Main.getProperties().hasValue(PropertyValue.muskContent)));
 			
@@ -2900,7 +2783,7 @@ public class OptionsDialogue {
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("INFLATION_CONTENT",
 					PresetColour.CUM,
-					"Cum inflation",
+					"Раздувание спермой",
 					"Это включает механику надувания спермы.",
 					Main.getProperties().hasValue(PropertyValue.inflationContent)));
 			
@@ -2912,7 +2795,7 @@ public class OptionsDialogue {
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("AUTO_SEX_CLOTHING_STRIP",
 					PresetColour.BASE_PINK_LIGHT,
-					"Automatic stripping",
+					"Автоматическое раздевание",
 					"Когда включено, все персонажи, которых вы можете раздеть во время секса (включая себя), начнут секс голыми.",
 					Main.getProperties().hasValue(PropertyValue.autoSexStrip)));
 			
@@ -2924,7 +2807,7 @@ public class OptionsDialogue {
 			
 			UtilText.nodeContentSB.append(getCustomContentPreferenceDivStart(PresetColour.BASE_PINK, "Полные описания обнажения", "Устанавливает, как часто обнаженные части тела полностью описываются во время секса."));
 			for (int i = 2; i>=0; i--) {
-				UtilText.nodeContentSB.append("<div id='FULL_EXPOSURE_DESCRIPTIONS_"+i+"' class='normal-button"+(Main.getProperties().bypassSexActions == i?" selected":"")+"' style='width:calc(33% - 8px); margin-right:8px; text-align:center; float:right;'>"
+				UtilText.nodeContentSB.append("<div id='FULL_EXPOSURE_DESCRIPTIONS_"+i+"' class='normal-button"+(Main.getProperties().bypassSexActions == i?" выбранный":"")+"' style='width:calc(33% - 8px); margin-right:8px; text-align:center; float:right;'>"
 						+(Main.getProperties().fullExposureDescriptions == i
 						?"[style.boldGood("
 						:"[style.colourDisabled(")
@@ -2954,32 +2837,32 @@ public class OptionsDialogue {
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("AGE",
 					PresetColour.AGE_TWENTIES,
-					"Age",
+					"Возраст",
 					"Это позволяет описывать возраст, который имеют персонажи.",
 					Main.getProperties().hasValue(PropertyValue.ageContent)));
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("FERAL",
 					PresetColour.BASE_TAN,
-					"Feral",
+					"Дикий",
 					"Это позволяет использовать феромонные взаимодействия, которые включают в себя сексуальные и несексуальные взаимодействия с разумными персонажами, имеющими полностью животные тела.",
 					Main.getProperties().hasValue(PropertyValue.feralContent)));
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("CUM_REGENERATION",
 					PresetColour.CUM,
-					"Cum Regeneration",
+					"Регенерация спермы",
 					"Это позволяет использовать контент, связанный с регенерацией спермы, например, уменьшение количества спермы при многократных оргазмах за один сеанс и эффект полного наполнения яичек."
 							+"<br>При отключении, яички всегда будут считаться полными, но без каких-либо негативных эффектов.",
 					Main.getProperties().hasValue(PropertyValue.cumRegenerationContent)));
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("FUTA_BALLS",
 					PresetColour.BASE_PINK,
-					"Futanari Testicles",
+					"Яички футанари",
 					"При включении, NPC футани смогут иметь внешние яички. При отключении, они всегда будут иметь внутренние.",
 					Main.getProperties().hasValue(PropertyValue.futanariTesticles)));
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("CLOACA",
 					PresetColour.BASE_PINK_LIGHT,
-					"Bipedal Cloacas",
+					"Двуногие клоаки",
 					"При включении, некоторые двуногие расы (например, гарпии и аллигатор-морфы) будут иметь клоаки."
 							+"При отключении, все двуногие с клоаками будут считаться имеющими обычную генитальную конфигурацию."
 							+"Некоторые специальные расы, такие как ламии, всегда имеют клоаки и не подвержены этому эффекту.",
@@ -2993,10 +2876,10 @@ public class OptionsDialogue {
 					Main.getProperties().hasValue(PropertyValue.vestigialMultiBreasts)));
 			
 			
-			UtilText.nodeContentSB.append(getCustomContentPreferenceDivStart(PresetColour.NIPPLES, "Multi-breasts", "Выберите, должны ли случайно сгенерированные пушистые персонажи иметь несколько рядов груди."));
+			UtilText.nodeContentSB.append(getCustomContentPreferenceDivStart(PresetColour.NIPPLES, "Многогрудь", "Выберите, должны ли случайно сгенерированные пушистые персонажи иметь несколько рядов груди."));
 			int[] buttonOrder = new int[] {2, 1, 0, 3}; // Order buttons in this manner so that they appear to be a little more logical
 			for (int i : buttonOrder) {
-				UtilText.nodeContentSB.append("<div id='MULTI_BREAST_PREFERENCE_"+i+"' class='normal-button"+(Main.getProperties().multiBreasts == i?" selected":"")+"' style='width:calc(33% - 8px); margin-right:8px; text-align:center; float:right;'>"
+				UtilText.nodeContentSB.append("<div id='MULTI_BREAST_PREFERENCE_"+i+"' class='normal-button"+(Main.getProperties().multiBreasts == i?" выбранный":"")+"' style='width:calc(33% - 8px); margin-right:8px; text-align:center; float:right;'>"
 						+(Main.getProperties().multiBreasts == i
 							?(i == 0
 								?"[style.boldTerrible("
@@ -3010,7 +2893,7 @@ public class OptionsDialogue {
 			
 			UtilText.nodeContentSB.append(getCustomContentPreferenceDivStart(PresetColour.NIPPLES_CROTCH, "Груди в паху & Вымя", "Выберите, должны ли случайно сгенерированные тауры и пушистые персонажи иметь вымя или грудь в паху."));
 			for (int i = com.lilithsthrone.game.Properties.uddersLabels.length-1; i>=0; i--) {
-				UtilText.nodeContentSB.append("<div id='UDDER_PREFERENCE_"+i+"' class='normal-button"+(Main.getProperties().getUddersLevel() == i?" selected":"")+"' style='width:calc(33% - 8px); margin-right:8px; text-align:center; float:right;'>"
+				UtilText.nodeContentSB.append("<div id='UDDER_PREFERENCE_"+i+"' class='normal-button"+(Main.getProperties().getUddersLevel() == i?" выбранный":"")+"' style='width:calc(33% - 8px); margin-right:8px; text-align:center; float:right;'>"
 						+(Main.getProperties().getUddersLevel() == i
 						?(i == 0?"[style.boldBad(":"[style.boldGood(")
 						:"[style.colourDisabled(")
@@ -3018,92 +2901,92 @@ public class OptionsDialogue {
 			}
 			UtilText.nodeContentSB.append("</div></div>");
 			
-			UtilText.nodeContentSB.append(getCustomContentPreferenceDivStart(PresetColour.BASE_BROWN_LIGHT, "Hair growth", "Выберите, как часто волосы игрока будут расти на 1 см. НПС поддерживают свою длину волос, поэтому этот параметр влияет только на вас."));
+			UtilText.nodeContentSB.append(getCustomContentPreferenceDivStart(PresetColour.BASE_BROWN_LIGHT, "Рост волос", "Выберите, как часто волосы игрока будут расти на 1 см. НПС поддерживают свою длину волос, поэтому этот параметр влияет только на вас."));
 			int[] hairButtonOrder = new int[] {2, 1, 0, 3}; // Order buttons in this manner so that they appear to be a little more logical
 			for (int i : hairButtonOrder) {
 				boolean active = Main.getProperties().getHairGrowth() == i;
-				UtilText.nodeContentSB.append("<div id='HAIR_GROWTH_PREFERENCE_"+i+"' class='normal-button"+(Main.getProperties().getHairGrowth() == i?" selected":"")+"' style='width:calc(33% - 8px); margin-right:8px; text-align:center; float:right;'>"
+				UtilText.nodeContentSB.append("<div id='HAIR_GROWTH_PREFERENCE_"+i+"' class='normal-button"+(Main.getProperties().getHairGrowth() == i?" выбранный":"")+"' style='width:calc(33% - 8px); margin-right:8px; text-align:center; float:right;'>"
 						+(i == 0
-								?"[style.bold"+(active?"Bad":"Disabled")+"(Never)]"
+								?"[style.bold"+(active?"Плохая":"Отключено")+"(Никогда)]"
 								:(i == 1
-									?"[style.bold"+(active?"Size10":"Disabled")+"(Weekly)]"
+									?"[style.bold"+(active?"Размер10":"Отключено")+"(Еженедельно)]"
 									:(i == 2
-										?"[style.bold"+(active?"Size5":"Disabled")+"(Daily)]"
-										:"[style.bold"+(active?"Size0":"Disabled")+"(Hourly)]")))
+										?"[style.bold"+(active?"Размер5":"Отключено")+"(Ежедневно)]"
+										:"[style.bold"+(active?"Размер0":"Отключено")+"(Ежечасно)]")))
 						+"</div>");
 			}
 			UtilText.nodeContentSB.append("</div></div>");
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("HAIR_FACIAL",
 					PresetColour.BASE_LILAC_LIGHT,
-					"Facial hair",
+					"Растительность на лице",
 					"Это позволяет описывать и показывать усы.",
 					Main.getProperties().hasValue(PropertyValue.facialHairContent)));
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("HAIR_PUBIC",
 					PresetColour.BASE_LILAC,
-					"Pubic hair",
+					"Лобковые волосы",
 					"Это позволяет описывать и показывать лобковые волосы.",
 					Main.getProperties().hasValue(PropertyValue.pubicHairContent)));
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("HAIR_BODY",
 					PresetColour.BASE_PURPLE,
-					"Underarm hair",
-					"This enables underarm hair descriptions and content.",
+					"Волосы под мышками",
+					"Включает описания и контент, связанный с волосами в подмышках.",
 					Main.getProperties().hasValue(PropertyValue.bodyHairContent)));
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("HAIR_ASS",
 					PresetColour.BASE_PURPLE_DARK,
-					"Ass hair",
-					"This enables ass hair descriptions and content.",
+					"Волосы на заднице",
+					"Включает описания и контент, связанный с волосами на заднице.",
 					Main.getProperties().hasValue(PropertyValue.assHairContent)));
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("FEMININE_BEARD",
 					PresetColour.BASE_BLUE_STEEL,
-					"Feminine beards",
-					"This enables feminine characters to grow beards.",
+					"Женские бороды",
+					"Позволяет женским персонажам отращивать бороды.",
 					Main.getProperties().hasValue(PropertyValue.feminineBeardsContent)));
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("FURRY_HAIR",
 					PresetColour.CLOTHING_DESATURATED_BROWN,
-					"Furry hair",
-					"Toggles whether or not characters with a furry head type will spawn with human-like hair on their heads.",
+					"Меховые волосы",
+					"Переключает, будут ли персонажи с типом головы «мех» появляться с человекоподобными волосами на голове.",
 					Main.getProperties().hasValue(PropertyValue.furryHairContent)));
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("SCALY_HAIR",
 					PresetColour.BASE_GREEN_DARK,
-					"Scaly Hair",
-					"Toggles whether or not characters with a reptilian or amphibious head type will spawn with human-like hair on their heads.",
+					"Чешуйчатые волосы",
+					"Включает или выключает появление человекоподобных волос у персонажей с рептилоидным или амфибийным типом головы.",
 					Main.getProperties().hasValue(PropertyValue.scalyHairContent)));
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("LIP_LISP",
 					PresetColour.BASE_PINK_SALMON,
-					"Lip lisps",
-					"Toggles whether or not characters with very large lips will speak with a lisp.",
+					"Шепелявость",
+					"Включает или выключает шепелявость у персонажей с очень большими губами.",
 					Main.getProperties().hasValue(PropertyValue.lipLispContent)));
 			
 			UtilText.nodeContentSB.append(getBreastsContentPreferenceVariableDiv(
 					"PREGNANCY_BREAST_GROWTH",
 					PresetColour.BASE_PINK,
-					"Average Pregnancy Breast Growth",
-					"Set the <b>average</b> cup size growth that characters will gain from each pregnancy. Actual breast growth will be within "+Util.intToString(Main.getProperties().pregnancyBreastGrowthVariance)+" sizes of this value.",
+					"Средний рост груди при беременности",
+					"Устанавливает <b>средний</b> размер чашки, который персонажи получают при каждой беременности. Фактический рост груди будет находиться в пределах "+Util.intToString(Main.getProperties().pregnancyBreastGrowthVariance)+" значений этого параметра.",
 					Main.getProperties().pregnancyBreastGrowth == 0
-							?"[style.boldDisabled(Disabled)]"
-							:Main.getProperties().pregnancyBreastGrowth+" cup"+(Main.getProperties().pregnancyBreastGrowth != 1?"s":""),
+							?"[style.boldDisabled(Выключено)]"
+							:Main.getProperties().pregnancyBreastGrowth+" размера"+(Main.getProperties().pregnancyBreastGrowth != 1?"s":""),
 					Main.getProperties().pregnancyBreastGrowth, 0, 10,
 					Main.getProperties().pregnancyUdderGrowth == 0
-							?"[style.boldDisabled(Disabled)]"
-							:Main.getProperties().pregnancyUdderGrowth+" cup"+(Main.getProperties().pregnancyUdderGrowth != 1?"s":""),
+							?"[style.boldDisabled(Выключено)]"
+							:Main.getProperties().pregnancyUdderGrowth+" размера"+(Main.getProperties().pregnancyUdderGrowth != 1?"s":""),
 					Main.getProperties().pregnancyUdderGrowth, 0, 10));
 			
 			UtilText.nodeContentSB.append(getBreastsContentPreferenceVariableDiv(
 					"PREGNANCY_BREAST_GROWTH_LIMIT",
 					PresetColour.BASE_PINK_LIGHT,
-					"Pregnancy Breast Growth Limit",
+					"Лимит роста груди при беременности",
 					"Установите максимальный предел размера чашки, до которого будут расти груди персонажей в результате беременностей.",
-					CupSize.getCupSizeFromInt(Main.getProperties().pregnancyBreastGrowthLimit).getCupSizeName()+"-cup",
+					CupSize.getCupSizeFromInt(Main.getProperties().pregnancyBreastGrowthLimit).getCupSizeName()+"-го размера",
 					Main.getProperties().pregnancyBreastGrowthLimit, 0, 100,
-					CupSize.getCupSizeFromInt(Main.getProperties().pregnancyUdderGrowthLimit).getCupSizeName()+"-cup",
+					CupSize.getCupSizeFromInt(Main.getProperties().pregnancyUdderGrowthLimit).getCupSizeName()+"-го размера",
 					Main.getProperties().pregnancyUdderGrowthLimit, 0, 100));
 			
 			UtilText.nodeContentSB.append(getBreastsContentPreferenceVariableDiv(
@@ -3113,11 +2996,11 @@ public class OptionsDialogue {
 					"Установите <b>среднее</b> увеличение лактации, которое персонажи получат в результате каждой беременности. Фактическое увеличение лактации будет в пределах "
 							+Units.fluid(Main.getProperties().pregnancyLactationIncreaseVariance)+" из этого значения.",
 					Main.getProperties().pregnancyLactationIncrease == 0
-							?"[style.boldDisabled(Disabled)]"
+							?"[style.boldDisabled(Выключено)]"
 							:Units.fluid(Main.getProperties().pregnancyLactationIncrease),
 					Main.getProperties().pregnancyLactationIncrease, 0, 1000,
 					Main.getProperties().pregnancyUdderLactationIncrease == 0
-							?"[style.boldDisabled(Disabled)]"
+							?"[style.boldDisabled(Выключено)]"
 							:Units.fluid(Main.getProperties().pregnancyUdderLactationIncrease),
 					Main.getProperties().pregnancyUdderLactationIncrease, 0, 1000));
 			
@@ -3154,7 +3037,7 @@ public class OptionsDialogue {
 			UtilText.nodeContentSB.append(getContentPreferenceVariableDiv(
 					"TRAP_PENIS_SIZE_PREFERENCE",
 					PresetColour.BASE_PINK_LIGHT,
-					Util.capitaliseSentence(Gender.N_P_TRAP.getName())+" penis size",
+					Util.capitaliseSentence(Gender.N_P_TRAP.getName())+" размер пениса",
 					"Размер пениса случайно сгенерированного "+Gender.N_P_TRAP.getName()+"s. 100% представляет собой неизмененный размер. Размер яичек и производство спермы также будут изменены пропорционально этому параметру.",
 					(100+Main.getProperties().trapPenisSizePreference)+"%",
 					Main.getProperties().trapPenisSizePreference,

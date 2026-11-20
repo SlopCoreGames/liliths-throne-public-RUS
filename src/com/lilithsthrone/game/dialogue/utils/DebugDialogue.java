@@ -105,7 +105,7 @@ public class DebugDialogue {
 	
 	private static GameCharacter targetedCharacter;
 	
-	public static final DialogueNode DEBUG_MENU = new DialogueNode("A powerful tool", "Open debug menu.", false) {
+	public static final DialogueNode DEBUG_MENU = new DialogueNode("Мощный инструмент", "Открыть меню отладки.", false) {
 //		@Override
 //		public void applyPreParsingEffects() {
 //			targetedCharacter = null; // Reset this value when opening the debug menu to make sure that the targetedCharacter is not from a previous save file
@@ -121,41 +121,25 @@ public class DebugDialogue {
 		
 		@Override
 		public String getContent() {
-			return "<p>"
-						+ "As you finish speaking the magic word, you suddenly hear a little thudding noise close behind you."
-						+ " Spinning around, you see a small metallic device lying on the floor, which sort of resembles a t.v. remote from back in your old world."
-					+ "</p>"
-
-					+ "<p>"
-						+ "You lean down and pick it up, and as you turn it over in your hands, you see a little label stuck to the back."
-						+ " Someone's written a message on it, and you read the following:" 
-					+ "</p>"
-
-					+ "<p style='text-align:center;'><i>"
-						+ "Hi [pc.name]!<br/>"
-						+ "It looks like you know about the magic debug code! Just to give you a warning, all the options here are really buggy!"
-						+ " If you spawn in any clothing or items, just be aware that some of them aren't officially in the game just yet, so they may not work exactly as expected."
-						+ " Thanks for playing!<br/><br/>"
-						+ "~Innoxia~<br/></i>"
-					+ "</p>";
+			return "<p>Как только вы произносите магическое слово, за вашей спиной внезапно раздается негромкий глухой звук. Обернувшись, вы видите на полу маленькое металлическое устройство, отдаленно напоминающее пульт от телевизора из вашего старого мира.</p><p>Вы наклоняетесь и поднимаете его; вертя в руках, вы замечаете на задней стороне маленькую наклейку. Кто-то оставил на ней послание, и вы читаете следующее:</p><p style='text-align:center;'><i>Привет, [pc.name]!<br/>Похоже, тебе известен магический код отладки! Просто предупреждаю: все настройки здесь дико глючные! Если ты заспавнишь какую-нибудь одежду или предметы, имей в виду, что некоторые из них еще официально не добавлены в игру, так что они могут работать не совсем так, как ожидается. Спасибо за игру!<br/><br/>~Инноксия~<br/></i></p>";
 		}
 
 		@Override
 		public String getResponseTabTitle(int index) {
 			if(index == 0) {
-				return "Main";
+				return "Главное";
 				
 			} else if(index == 1) {
-				return "Stats";
+				return "Статы";
 				
 			} else if(index == 2) {
-				return "Misc.";
+				return "Разное";
 
 			} else if(index == 3) {
-				return "Item view";
+				return "Просмотр предметов";
 				
 			} else if(index == 4) {
-				return "Personality";
+				return "Личность";
 			}
 			return null;
 		}
@@ -163,7 +147,7 @@ public class DebugDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index == 0) {
-				return new Response("Back", "", DEBUG_MENU){
+				return new Response("Назад", "", DEBUG_MENU){
 					@Override
 					public DialogueNode getNextDialogue() {
 						if(Main.game.isInSex()) {
@@ -176,13 +160,13 @@ public class DebugDialogue {
 			
 			if(responseTab==0) {
 				if (index == 1) {
-					return new Response("Open parser", "Test the parser.", PARSER);
+					return new Response("Открыть парсер", "Протестировать парсер.", PARSER);
 					
 				} else if (index == 2) {
-					return new Response("Debug mode: ", "Unlocks enchanting and slavery without first having to do the associated quests.", DEBUG_MENU){
+					return new Response("Режим отладки: ", "Разблокирует зачарование и рабство без необходимости предварительного выполнения соответствующих квестов.", DEBUG_MENU){
 						@Override
 						public String getTitle() {
-							return "Debug mode: "+(Main.game.isDebugMode()?"[style.colourGood(ON)]":"[style.colourDisabled(OFF)]");
+							return "Режим отладки: "+(Main.game.isDebugMode()?"[style.colourGood(ВКЛ)]":"[style.colourDisabled(OFF)]");
 						}
 						
 						@Override
@@ -193,10 +177,10 @@ public class DebugDialogue {
 					};
 					
 				} else if (index == 3) {
-					return new Response("Reveal Maps: ", "Reveals all map tiles.", DEBUG_MENU){
+					return new Response("Открыть карты: ", "Открывает все клетки карты.", DEBUG_MENU){
 						@Override
 						public String getTitle() {
-							return "Reveal Maps: "+(Main.game.isMapReveal()?"[style.colourGood(ON)]":"[style.colourDisabled(OFF)]");
+							return "Открыть карты: "+(Main.game.isMapReveal()?"[style.colourGood(ВКЛ)]":"[style.colourDisabled(OFF)]");
 						}
 						
 						@Override
@@ -207,13 +191,12 @@ public class DebugDialogue {
 					};
 					
 				} else if (index == 4) {
-					return new Response("Reveal bodies: ",
-							"When toggled on, clothing does not conceal inventory slots, and you'll know what all character's genitals look like without first having to see them."
-									+ " This also reveals unique NPCs' naked & underwear images.",
+					return new Response("Открыть тела: ",
+							"При включении одежда не скрывает слоты инвентаря, и вы будете знать, как выглядят гениталии всех персонажей, даже не видя их. Это также открывает нагие изображения и изображения в нижнем белье для уникальных NPC.",
 							DEBUG_MENU){
 						@Override
 						public String getTitle() {
-							return "Reveal bodies: "+(Main.game.isConcealedSlotsReveal()?"[style.colourGood(ON)]":"[style.colourDisabled(OFF)]");
+							return "Открыть тела: "+(Main.game.isConcealedSlotsReveal()?"[style.colourGood(ВКЛ)]":"[style.colourDisabled(OFF)]");
 						}
 						
 						@Override
@@ -233,18 +216,18 @@ public class DebugDialogue {
 							PlaceType.getPlaceTypeFromId("innoxia_fields_elis_town_alley"),
 							PlaceType.getPlaceTypeFromId("innoxia_fields_elis_town_abandoned_bakery")
 							).contains(Main.game.getPlayer().getLocationPlace().getPlaceType())) {
-						return new Response("Spawn attacker", "You can only spawn an attacker on: Dominion's alleyway & canal tiles; Submission's tunnel tiles; Elis alleyway tiles.", null);
+						return new Response("Заспавнить атакующего", "Вы можете призвать атакующего только на: плитках переулков и каналов Dominion; плитках туннелей Submission; плитках переулков Элис.", null);
 					}
 					if(!Main.game.getNonCompanionCharactersPresent().isEmpty()) {
-						return new Response("Spawn attacker", "You can only spawn an attacker on empty tiles.", null);
+						return new Response("Заспавнить атакующего", "Вы можете призвать атакующего только на пустых плитках.", null);
 					}
-					return new Response("Spawn attacker", "Spawn an attacker on this tile.", ATTACKER_SPAWN_MENU);
+					return new Response("Заспавнить атакующего", "Призвать атакующего на эту плитку.", ATTACKER_SPAWN_MENU);
 					
 				} else if (index == 6) {
-					return new Response("Spawn Menu", "View the clothing, weapon, and item spawn menu.", SPAWN_MENU);
+					return new Response("Меню призыва", "Просмотреть меню призыва одежды, оружия и предметов.", SPAWN_MENU);
 					
 				} else if (index == 7) {
-					return new Response("Transform", "Transform your body.", BodyChanging.BODY_CHANGING_CORE) {
+					return new Response("Трансформация", "Преобразовать свое тело.", BodyChanging.BODY_CHANGING_CORE) {
 						@Override
 						public void effects() {
 							BodyChanging.setTarget(Main.game.getPlayer(), true);
@@ -252,16 +235,16 @@ public class DebugDialogue {
 					};
 					
 				} else if (index == 8) {
-					return new Response("Set body material", "Set your body material.", BODY_PART_MATERIAL);
+					return new Response("Установить материал тела", "Установить материал вашего тела.", BODY_PART_MATERIAL);
 					
 				} else if (index == 9) {
-					return new Response("Race resets", "View the race reset options.", BODY_PART_RACE_RESET);
+					return new Response("Сброс расы", "Просмотреть настройки сброса расы.", BODY_PART_RACE_RESET);
 					
 				} else if (index == 10) {
-					return new Response("Set spawns", "View all of the clothing/weapon sets in the game and spawn them.", SPAWN_MENU_SET);
+					return new Response("Установить спавн", "Просмотреть все наборы одежды/оружия в игре и заспавнить их.", SPAWN_MENU_SET);
 					
 				} else if (index == 11) {
-					return new Response(UtilText.formatAsMoney(100_000, "span"), "Add 100,000 flames.", DEBUG_MENU){
+					return new Response(UtilText.formatAsMoney(100_000, "охват"), "Добавить 100 000 огней.", DEBUG_MENU){
 						@Override
 						public void effects() {
 							Main.game.getPlayer().incrementMoney(100_000);
@@ -269,7 +252,7 @@ public class DebugDialogue {
 					};
 					
 				} else if (index == 12) {
-					return new Response("+1000 essences", "Add 1000 arcane essences.", DEBUG_MENU){
+					return new Response("+1000 эссенций", "Добавить 1000 арканных эссенций.", DEBUG_MENU){
 						@Override
 						public void effects() {
 							Main.game.getPlayer().incrementEssenceCount(1000, false);
@@ -278,15 +261,15 @@ public class DebugDialogue {
 					
 				} else if (index == 13) {
 //					return new Response("Very long action text for testing", "Very long action text for testing.", null);
-					return new Response("Encounters", "View all encounters which can trigger on this tile.", ENCOUNTER_MENU);
+					return new Response("Встречи", "Просмотреть все встречи, которые могут произойти на этой клетке.", ENCOUNTER_MENU);
 					
 				} else if (index == 14) {
-					return new Response("Sticker unlocks: ",
-							"Unlocks availability of all stickers for clothing. This is done by ignoring stickers' unavailabilityText and availabilityText, so if you're trying to test those, having this on will be a problem!",
+					return new Response("Разблокировка стикеров: ",
+							"Разблокирует доступность всех стикеров для одежды. Это делается путем игнорирования текстов unavailabilityText и availabilityText, так что если вы пытаетесь протестировать их, включение этой функции создаст проблемы!",
 							DEBUG_MENU){
 						@Override
 						public String getTitle() {
-							return "Sticker unlocks: "+(Main.game.isAllStickersUnlocked()?"[style.colourGood(ON)]":"[style.colourDisabled(OFF)]");
+							return "Разблокировка стикеров: "+(Main.game.isAllStickersUnlocked()?"[style.colourGood(ВКЛ)]":"[style.colourDisabled(ВЫКЛ)]");
 						}
 						
 						@Override
@@ -298,10 +281,10 @@ public class DebugDialogue {
 					
 				} else if(index==15) {
 					if(Main.game.getPlayer().isQuestProgressGreaterThan(QuestLine.MAIN, Quest.MAIN_1_I_ARTHURS_TALE)) {
-						return new Response("Skip Dominion quests", "You have already completed all of the main quests which lead up to the Submission quest line!", null);
+						return new Response("Пропустить квесты Dominion", "Вы уже завершили все основные квесты, ведущие к цепочке квестов Submission!", null);
 						
 					} else {
-						return new Response("Skip Dominion quests", "Skip all main quests up to the start of the Submission quest line.", DEBUG_MENU){
+						return new Response("Пропустить квесты Dominion", "Пропустить все основные квесты до начала цепочки квестов Submission.", DEBUG_MENU){
 							@Override
 							public void effects() {
 								List<Quest> dominionSkipQuests = Util.newArrayListOfValues(
@@ -329,13 +312,13 @@ public class DebugDialogue {
 					
 				} else if(index==16) {
 					if(Main.game.getPlayer().isQuestProgressLessThan(QuestLine.MAIN, Quest.MAIN_2_A_INTO_THE_DEPTHS)) {
-						return new Response("Skip Submission quests", "You have not progressed far enough into the main quest to start skipping Submission quests!", null);
+						return new Response("Пропустить квесты Submission", "Вы еще не продвинулись достаточно далеко по основному квесту, чтобы начать пропускать квесты Submission!", null);
 						
 					} else if(Main.game.getPlayer().isQuestProgressGreaterThan(QuestLine.MAIN, Quest.MAIN_2_D_MEETING_A_LILIN)) {
-						return new Response("Skip Submission quests", "You have already completed all of the main quests which lead up to the Elis quest line!", null);
+						return new Response("Пропустить квесты Submission", "Вы уже завершили все основные квесты, ведущие к цепочке квестов Elis!", null);
 						
 					} else {
-						return new Response("Skip Submission quests", "Skip all main quests up to the start of the Elis quest line.", DEBUG_MENU){
+						return new Response("Пропустить квесты Submission", "Пропустить все основные квесты до начала цепочки квестов Элис.", DEBUG_MENU){
 							@Override
 							public void effects() {
 								List<Quest> submissionSkipQuests = Util.newArrayListOfValues(
@@ -358,16 +341,16 @@ public class DebugDialogue {
 					}
 					
 				} else if(index==25) {
-					return new Response("Enchanted clothing", "View a list of all of the randomly-enchanted clothing which can spawn.", RANDOM_ENCHANTMENT_CLOTHING);
+					return new Response("Зачарованная одежда", "Показать список всей случайно зачарованной одежды, которая может выпасть.", RANDOM_ENCHANTMENT_CLOTHING);
 					
 				} else if(index==26) {
-					return new Response("Enchanted potions", "View a list of all of the randomly-enchanted Youko potions which can spawn.", RANDOM_ENCHANTMENT_POTIONS);
+					return new Response("Зачарованные зелья", "Показать список всех случайно зачарованных зелий Йоко, которые могут выпасть.", RANDOM_ENCHANTMENT_POTIONS);
 				}
 				
 				
 			} else if(responseTab==1) {
 				if (index == 1) {
-					return new Response("<span style='color:"+PresetColour.GENERIC_EXPERIENCE.toWebHexString()+";'>+500 xp</span> (self)", "Give yourself 500xp.", DEBUG_MENU){
+					return new Response("<span style='color:"+PresetColour.GENERIC_EXPERIENCE.toWebHexString()+";'>+500 xp</span> (себе)", "Дать себе 500 ед. опыта.", DEBUG_MENU){
 						@Override
 						public void effects() {
 							Main.game.getPlayer().incrementExperience(500, false);
@@ -376,9 +359,9 @@ public class DebugDialogue {
 					
 				} else if (index == 2) {
 					if(!Main.game.getPlayer().hasCompanions()) {
-						return new Response("+500 xp (party)", "You do not have any companions, so there's nobody to give experience to...", null);
+						return new Response("+500 xp (группе)", "У вас нет спутников, так что давать опыт некому...", null);
 					}
-					return new Response("<span style='color:"+PresetColour.GENERIC_EXPERIENCE.toWebHexString()+";'>+500 xp</span> (party)", "Give each of your party members 500xp.", DEBUG_MENU){
+					return new Response("<span style='color:"+PresetColour.GENERIC_EXPERIENCE.toWebHexString()+";'>+500 xp</span> (группе)", "Дать каждому члену отряда по 500 ед. опыта.", DEBUG_MENU){
 						@Override
 						public void effects() {
 							for(GameCharacter character : Main.game.getPlayer().getParty()) {
@@ -388,7 +371,7 @@ public class DebugDialogue {
 					};
 					
 				} else if(index==3) {
-					return new Response("<span style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>+5</span> <span style='color:"+PresetColour.ATTRIBUTE_PHYSIQUE.toWebHexString()+";'>Physique</span>", "", DEBUG_MENU){
+					return new Response("<span style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>+5</span> <span style='color:"+PresetColour.ATTRIBUTE_PHYSIQUE.toWebHexString()+";'>Телосложение</span>", "", DEBUG_MENU){
 						@Override
 						public void effects() {
 							Main.game.getPlayer().incrementAttribute(Attribute.MAJOR_PHYSIQUE, 5);
@@ -404,7 +387,7 @@ public class DebugDialogue {
 					};
 					
 				} else if(index==5) {
-					return new Response("<span style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>+5</span> <span style='color:"+PresetColour.ATTRIBUTE_CORRUPTION.toWebHexString()+";'>Corruption</span>", "", DEBUG_MENU){
+					return new Response("<span style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>+5</span> <span style='color:"+PresetColour.ATTRIBUTE_CORRUPTION.toWebHexString()+";'>Порочность</span>", "", DEBUG_MENU){
 						@Override
 						public void effects() {
 							Main.game.getPlayer().incrementAttribute(Attribute.MAJOR_CORRUPTION, 5);
@@ -412,7 +395,7 @@ public class DebugDialogue {
 					};
 					
 				} else if(index==6) {
-					return new Response("<span style='color:"+PresetColour.GENERIC_EXCELLENT.toWebHexString()+";'>Max all attributes</span>", "", DEBUG_MENU){
+					return new Response("<span style='color:"+PresetColour.GENERIC_EXCELLENT.toWebHexString()+";'>Максимизировать все атрибуты</span>", "", DEBUG_MENU){
 						@Override
 						public void effects() {
 							Main.game.getPlayer().setAttribute(Attribute.MAJOR_PHYSIQUE, 100);
@@ -422,7 +405,7 @@ public class DebugDialogue {
 					};
 					
 				}  else if(index==7) {
-					return new Response("<span style='color:"+PresetColour.GENERIC_EXCELLENT.toWebHexString()+";'>+1</span> <span style='color:"+PresetColour.PERK.toWebHexString()+";'>Perk point</span>", "", DEBUG_MENU){
+					return new Response("<span style='color:"+PresetColour.GENERIC_EXCELLENT.toWebHexString()+";'>+1</span> <span style='color:"+PresetColour.PERK.toWebHexString()+";'>Очко навыка</span>", "", DEBUG_MENU){
 						@Override
 						public void effects() {
 							Main.game.getPlayer().incrementPerkPoints(1);
@@ -430,7 +413,7 @@ public class DebugDialogue {
 					};
 					
 				} else if(index==8) {
-					return new Response("<span style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>-5</span> <span style='color:"+PresetColour.ATTRIBUTE_PHYSIQUE.toWebHexString()+";'>Physique</span>", "", DEBUG_MENU){
+					return new Response("<span style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>-5</span> <span style='color:"+PresetColour.ATTRIBUTE_PHYSIQUE.toWebHexString()+";'>Телосложение</span>", "", DEBUG_MENU){
 						@Override
 						public void effects() {
 							Main.game.getPlayer().incrementAttribute(Attribute.MAJOR_PHYSIQUE, -5);
@@ -444,7 +427,7 @@ public class DebugDialogue {
 						}
 					};
 				} else if(index==10) {
-					return new Response("<span style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>-5</span> <span style='color:"+PresetColour.ATTRIBUTE_CORRUPTION.toWebHexString()+";'>Corruption</span>", "", DEBUG_MENU){
+					return new Response("<span style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>-5</span> <span style='color:"+PresetColour.ATTRIBUTE_CORRUPTION.toWebHexString()+";'>Порочность</span>", "", DEBUG_MENU){
 						@Override
 						public void effects() {
 							Main.game.getPlayer().incrementAttribute(Attribute.MAJOR_CORRUPTION, -5);
@@ -452,7 +435,7 @@ public class DebugDialogue {
 					};
 					
 				} else if (index == 11) {
-					return new Response("Reset spells", "Resets all of your spells and upgrades, and removes all of your spell upgrade points.", DEBUG_MENU){
+					return new Response("Сбросить заклинания", "Сбрасывает все ваши заклинания и улучшения, а также удаляет все очки улучшения заклинаний.", DEBUG_MENU){
 						@Override
 						public void effects() {
 							Main.game.getPlayer().resetSpells();
@@ -462,7 +445,7 @@ public class DebugDialogue {
 					};
 					
 				} else if (index == 12) {
-					return new Response("+10 Spell Points", "Add 10 spell points to each spell school.", DEBUG_MENU){
+					return new Response("+10 очков заклинаний", "Добавляет по 10 очков заклинаний в каждую школу магии.", DEBUG_MENU){
 						@Override
 						public void effects() {
 							for(SpellSchool school : SpellSchool.values()) {
@@ -472,7 +455,7 @@ public class DebugDialogue {
 					};
 					
 				} else if (index == 13) {
-					return new Response("[style.colourGood(Complete)] Shared Encyclopedia", "Unlock every entry in your shared encyclopedia.", DEBUG_MENU){
+					return new Response("[style.colourGood(Завершено)] Общая энциклопедия", "Разблокирует все записи в вашей общей энциклопедии.", DEBUG_MENU){
 						@Override
 						public void effects() {
 							Main.getProperties().completeSharedEncyclopedia();
@@ -481,7 +464,7 @@ public class DebugDialogue {
 					};
 					
 				} else if (index == 14) {
-					return new Response("[style.colourBad(Reset)] Shared Encyclopedia", "Delete every entry in your shared encyclopedia.", DEBUG_MENU){
+					return new Response("[style.colourBad(Reset)] Общая энциклопедия", "Удалить все записи из вашей общей энциклопедии.", DEBUG_MENU){
 						@Override
 						public void effects() {
 							Main.getProperties().resetRaceDiscovered();
@@ -495,7 +478,7 @@ public class DebugDialogue {
 					};
 					
 				} else if (index == 15) {
-					return new Response("Reset virginities", "Removes all of your virginity loss information as well as resetting all orifices to being 'virgin'.", DEBUG_MENU){
+					return new Response("Сбросить девственность", "Удаляет всю информацию о потере девственности, а также сбрасывает состояние всех отверстий на «девственное».", DEBUG_MENU){
 						@Override
 						public void effects() {
 							Main.game.getPlayer().completeVirginityReset();
@@ -506,16 +489,16 @@ public class DebugDialogue {
 				
 			} else if(responseTab==2) {
 				if (index == 1) {
-					return new Response("Test colours", "Test text for readability", COLOURS){
+					return new Response("Тест цветов", "Тест текста на читаемость", COLOURS){
 						@Override
 						public void effects() {
 							coloursSB = new StringBuilder("<p>");
 							for (Colour c : PresetColour.getAllPresetColours()) {
-								coloursSB.append(c.getId() + ": <span style='color:" + c.toWebHexString() + ";'>Test text for readability.</span><br/>");
+								coloursSB.append(c.getId() + ": <span style='color:" + c.toWebHexString() + ";'>Тестовый текст для проверки читаемости.</span><br/>");
 							}
 							coloursSB.append("<br/><br/>");
 							for (BaseColour bc : BaseColour.values()) {
-								coloursSB.append(bc.toString() + ": <span style='color:" + bc.toWebHexString() + ";'>Test text for readability.</span><br/>");
+								coloursSB.append(bc.toString() + ": <span style='color:" + bc.toWebHexString() + ";'>Тестовый текст для проверки читаемости.</span><br/>");
 							}
 							coloursSB.append("</p>");
 							
@@ -523,10 +506,10 @@ public class DebugDialogue {
 					};
 					
 				} else if (index == 2) {
-					return new Response("Offspring", "View available offspring", OFFSPRING);
+					return new Response("Отпрыск", "Посмотреть доступных отпрысков", OFFSPRING);
 					
 				} else if (index == 3) {
-					return new Response("[style.boldBad(Month -)]", "Reduce current month by 1.", DEBUG_MENU){
+					return new Response("[style.boldBad(Месяц -)]", "Уменьшить текущий месяц на 1.", DEBUG_MENU){
 						@Override
 						public void effects() {
 							Main.game.setStartingDateMonth(Main.game.getStartingDate().getMonth().minus(1));
@@ -534,7 +517,7 @@ public class DebugDialogue {
 					};
 					
 				} else if (index == 4) {
-						return new Response("[style.boldGood(Month +)]", "Increase current month by 1.", DEBUG_MENU){
+						return new Response("[style.boldGood(Месяц +)]", "Увеличить текущий месяц на 1.", DEBUG_MENU){
 							@Override
 							public void effects() {
 								Main.game.setStartingDateMonth(Main.game.getStartingDate().getMonth().plus(1));
@@ -543,7 +526,7 @@ public class DebugDialogue {
 						
 				}
 				else if (index == 5) {
-					return new Response("Combat moves", "View a list of all combat moves available in the game.", COMBAT_MOVES);
+					return new Response("Боевые приемы", "Просмотреть список всех боевых приемов, доступных в игре.", COMBAT_MOVES);
 					
 //					if(!Main.game.getPlayer().getLocationPlace().getPlaceType().equals(PlaceType.DOMINION_BACK_ALLEYS)) {
 //						return new Response("Lumi test", "Lumi can only be spawned in alleyway tiles.", null);
@@ -563,35 +546,35 @@ public class DebugDialogue {
 					
 				} 
 				else if (index == 6) {
-					return new Response("Brax's revenge", "Brax cums in your vagina!", DEBUG_MENU){
+					return new Response("Месть Brax", "Brax кончает тебе во влагалище!", DEBUG_MENU){
 						@Override
 						public void effects() {
 							Main.game.getPlayer().guaranteePregnancyOnNextRoll();
 							if(Main.game.getPlayer().hasHymen()) {
 								Main.game.getPlayer().setVaginaVirgin(false);
 								SexType sexType = new SexType(SexParticipantType.NORMAL, SexAreaOrifice.VAGINA, SexAreaPenetration.PENIS);
-								Main.game.getPlayer().setVirginityLoss(sexType, Main.game.getNpc(Brax.class),"while fooling around in the debug menu");
+								Main.game.getPlayer().setVirginityLoss(sexType, Main.game.getNpc(Brax.class),"пока вы развлекаетесь в меню отладки");
 							}
 							Main.game.getPlayer().ingestFluid(Main.game.getNpc(Brax.class), Main.game.getNpc(Brax.class).getCum(), SexAreaOrifice.VAGINA, 1000);
 						}
 					};
 					
 				} else if (index == 7) {
-					return new Response("Lilaya's hypocrisy", "Lilaya cums in your vagina!", DEBUG_MENU){
+					return new Response("Лицемерие Lilaya", "Lilaya кончает тебе во влагалище!", DEBUG_MENU){
 						@Override
 						public void effects() {
 							Main.game.getPlayer().guaranteePregnancyOnNextRoll();
 							if(Main.game.getPlayer().hasHymen()) {
 								Main.game.getPlayer().setVaginaVirgin(false);
 								SexType sexType = new SexType(SexParticipantType.NORMAL, SexAreaOrifice.VAGINA, SexAreaPenetration.PENIS);
-								Main.game.getPlayer().setVirginityLoss(sexType, Main.game.getNpc(Lilaya.class), "while fooling around in the debug menu");
+								Main.game.getPlayer().setVirginityLoss(sexType, Main.game.getNpc(Lilaya.class), "пока вы развлекаетесь в меню отладки");
 							}
 							Main.game.getPlayer().ingestFluid(Main.game.getNpc(Lilaya.class), Main.game.getNpc(Lilaya.class).getCum(), SexAreaOrifice.VAGINA, 1000);
 						}
 					};
 					
 				} else if (index == 8) {
-					return new Response("Lilaya's tests", "Automatically completes Lilaya's enchantment quest, making you able to enchant right away.", DEBUG_MENU){
+					return new Response("Испытания Lilaya", "Автоматически завершает квест Lilaya на зачарование, позволяя вам зачаровывать предметы прямо сейчас.", DEBUG_MENU){
 						@Override
 						public void effects() {
 							if(!Main.game.getPlayer().isQuestCompleted(QuestLine.SIDE_ENCHANTMENT_DISCOVERY)){ //If the player hasn't completed the enchantment quest
@@ -607,17 +590,17 @@ public class DebugDialogue {
 					};
 
 				} else if (index == 9) {
-					return new Response("+1 Epona stamp", "Gives you one stamp you can get by playing the breeder roulette.", DEBUG_MENU){
+					return new Response("+1 штамп Эпоны", "Дает один штамп, который можно получить, играя в рулетку заводчика.", DEBUG_MENU){
 						@Override
 						public void effects() {
 							Main.game.getDialogueFlags().eponaStamps += 1;
-							Main.game.getTextEndStringBuilder().append("Added 1 stamp, you now have "  + Main.game.getDialogueFlags().eponaStamps + " stamp(s)");
+							Main.game.getTextEndStringBuilder().append("Добавлено 1 штамп, теперь у вас "  + Main.game.getDialogueFlags().eponaStamps + " штамп(ов)");
 						}
 					};
 
 				} else if(index == 10){
 					if(!Main.game.getPlayer().isQuestCompleted(QuestLine.SIDE_SLAVERY)) { //If the player doesn't have the slaver license
-						return new Response("Get slaver license", "Automatically completes the quest to get a slaver license. This will start the quest if you don't already have it, and finish it.", DEBUG_MENU){
+						return new Response("Получить лицензию работорговца", "Автоматически завершает квест на получение лицензии работорговца. Если квеста еще нет, он запустится и тут же завершится.", DEBUG_MENU){
 							@Override
 							public void effects() {
 								if(!Main.game.getPlayer().hasQuest(QuestLine.SIDE_SLAVERY)){
@@ -638,11 +621,11 @@ public class DebugDialogue {
 						};
 						
 					} else {
-						return new Response("Get slaver license", "You've already completed the side quest to obtain a slaver license.", null);
+						return new Response("Получить лицензию работорговца", "Вы уже выполнили побочный квест на получение лицензии работорговца.", null);
 					}
 					
 				} else if(index == 11){
-					return new Response("Centaur", "A wild centaur appears! (Please only use this on a completely neutral tile, as it will probably break things otherwise.)", CENTAUR_SEX){
+					return new Response("Кентавр", "Появляется дикий кентавр! (Пожалуйста, используйте это только на полностью нейтральной клетке, иначе это, скорее всего, сломает игру.)", CENTAUR_SEX){
 						@Override
 						public void effects(){
 							NPC target = new GenericSexualPartner(Gender.getGenderFromUserPreferences(false,  false), Main.game.getPlayer().getWorldLocation(), Main.game.getPlayer().getLocation(), false, (s)->s!=Subspecies.CENTAUR);
@@ -655,7 +638,7 @@ public class DebugDialogue {
 						}
 					};
 				} else if (index == 12) {
-					return new Response("[style.boldMinorBad(Day -)]", "Reduce current day by 1.", DEBUG_MENU){
+					return new Response("[style.boldMinorBad(День -)]", "Уменьшить текущий день на 1.", DEBUG_MENU){
 						@Override
 						public void effects() {
 							Main.game.incrementStartingDateDays(-1);
@@ -663,7 +646,7 @@ public class DebugDialogue {
 					};
 					
 				} else if (index == 13) {
-						return new Response("[style.boldMinorGood(Day +)]", "Increase current day by 1.", DEBUG_MENU){
+						return new Response("[style.boldMinorGood(День +)]", "Увеличить текущий день на 1.", DEBUG_MENU){
 							@Override
 							public void effects() {
 								Main.game.incrementStartingDateDays(1);
@@ -671,7 +654,7 @@ public class DebugDialogue {
 						};
 						
 				} else if (index == 14) {
-					return new Response("+1000 [style.mule] points", "Gives you the maximum amount of [style.mule] points (can be used after qualifying as a [style.mule] in Dominion Express).", DEBUG_MENU){
+					return new Response("+1000 очков [style.mule]", "Дает вам максимальное количество очков [style.mule] (можно использовать после получения статуса [style.mule] в Dominion Express).", DEBUG_MENU){
 						@Override
 						public void effects() {
 							Main.game.getTextEndStringBuilder().append(Main.game.getDialogueFlags().incrementNatalyaPoints(1000));
@@ -679,7 +662,7 @@ public class DebugDialogue {
 					};
 					
 				} else if(index==15) {
-					return new Response("Bimbos!", "Turn every feminine NPC in the game into a busty, slovenly bimbo.<br/>[style.italicsBad(Warning! This cannot be undone!)]", DEBUG_MENU){
+					return new Response("Бимбо!", "Превращает всех женских NPC в игре в пышногрудых, неряшливых бимбо.<br/>[style.italicsBad(Внимание! Это действие нельзя отменить!)]", DEBUG_MENU){
 						@Override
 						public Colour getHighlightColour() {
 							return PresetColour.BASE_PINK_DEEP;
@@ -699,7 +682,7 @@ public class DebugDialogue {
 					};
 					
 				} else if(index==16) {
-					return new Response("Tiger mode", "Turn every NPC in the game into a greater tiger-morph.<br/>[style.italicsBad(Warning! This cannot be undone!)]", DEBUG_MENU){
+					return new Response("Режим тигра", "Превращает каждого NPC в игре в высшего тигр-морфа.<br/>[style.italicsBad(Внимание! Это нельзя отменить!)]", DEBUG_MENU){
 						@Override
 						public Colour getHighlightColour() {
 							return PresetColour.RACE_CAT_MORPH_TIGER;
@@ -719,7 +702,7 @@ public class DebugDialogue {
 					};
 					
 				} else if(index==17) {
-					return new Response("Mofu mode", "Every NPC with a covering type that supports the 'fluffy' modifier gains the 'fluffy' modifier.<br/>[style.italicsBad(Warning! This cannot be undone!)]", DEBUG_MENU){
+					return new Response("Режим моф", "Каждый NPC с типом покрытия, поддерживающим модификатор «пушистость», получает модификатор «пушистость».<br/>[style.italicsBad(Внимание! Это нельзя отменить!)]", DEBUG_MENU){
 						@Override
 						public Colour getHighlightColour() {
 							return PresetColour.BASE_ROSE;
@@ -740,13 +723,8 @@ public class DebugDialogue {
 					};
 					
 				} else if(index==18) {
-					return new Response("Moo mode",
-							"Every feminine NPC will have their breast size incremented by 5,"
-									+ " gain the '"+Fetish.FETISH_LACTATION_SELF.getName(null)+"' fetish,"
-									+ " gain 500ml breast milk storage,"
-									+ " ass size incremented by 1,"
-									+ " and hip size incremented by 1."
-							+ "<br/>[style.italicsBad(Warning! This cannot be undone!)]",
+					return new Response("Режим му",
+							"У каждого женского NPC размер груди увеличивается на 5, появляется фетиш «"+Fetish.FETISH_LACTATION_SELF.getName(null)+"', объем запаса грудного молока увеличивается на 500 мл, размер задницы увеличивается на 1, а размер бедер — на 1.<br/>[style.italicsBad(Внимание! Это нельзя отменить!)]",
 							DEBUG_MENU){
 						@Override
 						public Colour getHighlightColour() {
@@ -766,7 +744,7 @@ public class DebugDialogue {
 						}
 					};
 				} else if(index==19) {
-					return new Response("Rat mode", "Turn every NPC in the game into a greater rat-morph.<br/>[style.italicsBad(Warning! This cannot be undone!)]", DEBUG_MENU){
+					return new Response("Режим крысы", "Превращает каждого NPC в игре в высшего крыс-морфа.<br/>[style.italicsBad(Внимание! Это нельзя отменить!)]", DEBUG_MENU){
 						@Override
 						public Colour getHighlightColour() {
 							return PresetColour.RACE_RAT_MORPH;
@@ -805,10 +783,10 @@ public class DebugDialogue {
 					AbstractPerk perk = powerPerks.get(index-20);
 					AbstractPerk perkDemon = powerPerksDemon.get(index-20);
 					
-					return new Response("Elder Lilin perk", "Toggle perk.", DEBUG_MENU) {
+					return new Response("Перк Старшей лилин", "Переключить перк.", DEBUG_MENU) {
 						@Override
 						public String getTitle() {
-							return perk.getName(null)+": "+(Main.game.getPlayer().hasPerkAnywhereInTree(perk) || Main.game.getPlayer().hasPerkAnywhereInTree(perkDemon)?"[style.colourGood(ON)]":"[style.colourDisabled(OFF)]");
+							return perk.getName(null)+": "+(Main.game.getPlayer().hasPerkAnywhereInTree(perk) || Main.game.getPlayer().hasPerkAnywhereInTree(perkDemon)?"[style.colourGood(ВКЛ)]":"[style.colourDisabled(ВЫКЛ)]");
 						}
 						
 						@Override
@@ -827,10 +805,10 @@ public class DebugDialogue {
 					};
 					
 				} else if(index==29)  {
-					return new Response("Spawn rates", "List the spawn rates in the current location.", SPAWN_RATES) {
+					return new Response("Шансы появления", "Список шансов появления в текущей локации.", SPAWN_RATES) {
 						@Override
 						public void effects() {
-							spawnrateSB = new StringBuilder("<table><tr><th>Race Name</th><th>Overall</th><th>Masculine</th><th>Feminine</th><th>Race Name</th><th>Overall</th><th>Masculine</th><th>Feminine</th></tr>");
+							spawnrateSB = new StringBuilder("<table><tr><th>Название расы</th><th>Всего</th><th>Мужчины</th><th>Женщины</th><th>Название расы</th><th>Всего</th><th>Мужчины</th><th>Женщины</th></tr>");
 							spawnTotal = 0;
 							spawnTotalMasculine = 0;
 							spawnTotalFeminine = 0;
@@ -872,20 +850,20 @@ public class DebugDialogue {
 					};
 					
 				} else if(index==30) {
-					return new Response("Item collage", "View a collage of all item, weapon, and clothing icons which are currently in the game.<br/>[style.italicsMinorBad(Will be slow to load and display!)]", CLOTHING_COLLAGE);
+					return new Response("Коллаж предметов", "Просмотреть коллаж всех иконок предметов, оружия и одежды, которые сейчас есть в игре.<br/>[style.italicsMinorBad(Загрузка и отображение могут занять много времени!)]", CLOTHING_COLLAGE);
 					
 				}
 				
 			} else if(responseTab == 3) {
 				if(index==1) {
-					String femName = "None";
+					String femName = "Нет";
 					if(filterFemininity==Femininity.FEMININE) {
-						femName = "Feminine";
+						femName = "Женственные";
 					} else if(filterFemininity==Femininity.MASCULINE) {
-						femName = "Masculine";
+						femName = "Мужественные";
 					}
-					return new Response("Filter: <span style='color:"+(filterFemininity.getColour().toWebHexString())+";'>"+femName+"</span>",
-							"Toggle the femininity filter for clothing.",
+					return new Response("Фильтр: <span style='color:"+(filterFemininity.getColour().toWebHexString())+";'>"+femName+"</span>",
+							"Переключить фильтр женственности для одежды.",
 							Main.game.getCurrentDialogueNode()==DEBUG_MENU
 								?DEBUG_MENU
 								:ITEM_VIEWER) {
@@ -918,8 +896,8 @@ public class DebugDialogue {
 //					};
 					
 				} else if(index==2) {
-					return new Response("Items",
-							"View icons and ids of all the items in the game. You can also spawn these items by clicking on their icons. <i>Warning: May be sluggish and slow to load.</i>",
+					return new Response("Предметы",
+							"Просмотреть иконки и ID всех предметов в игре. Вы также можете спавнить эти предметы, кликая по их иконкам. <i>Внимание: Может работать медленно и долго загружаться.</i>",
 							ITEM_VIEWER) {
 						@Override
 						public void effects() {
@@ -932,8 +910,8 @@ public class DebugDialogue {
 					};
 					
 				} else if(index==3) {
-					return new Response("Weapons",
-							"View icons and ids of all the weapons in the game. You can also spawn these items by clicking on their icons. <i>Warning: May be sluggish and slow to load.</i>",
+					return new Response("Оружие",
+							"Просмотреть иконки и ID всего оружия в игре. Вы также можете призвать эти предметы, нажимая на их иконки. <i>Внимание: процесс может быть медленным и долгим.</i>",
 							ITEM_VIEWER) {
 						@Override
 						public void effects() {
@@ -962,8 +940,8 @@ public class DebugDialogue {
 //							return PresetColour.BASE_YELLOW;
 //						}
 //					};
-					return new Response("Tattoos",
-							"View icons and ids of all the tattoos in the game. <i>Warning: May be sluggish and slow to load.</i>",
+					return new Response("Татуировки",
+							"Просмотреть иконки и ID всех татуировок в игре. <i>Внимание: процесс может быть медленным и долгим.</i>",
 							ITEM_VIEWER) {
 						@Override
 						public void effects() {
@@ -973,8 +951,8 @@ public class DebugDialogue {
 					};
 					
 				} else if(index==5) {
-					return new Response("Outfits",
-							"Enter the outfit generator, allowing you to test all of the in-game outfits.",
+					return new Response("Наряды",
+							"Войти в генератор нарядов, позволяющий протестировать все игровые костюмы.",
 							OUTFIT_VIEWER) {
 						@Override
 						public void effects() {
@@ -1002,7 +980,7 @@ public class DebugDialogue {
 							doll.setPiercedTongue(true);
 							doll.setPiercedVagina(true);
 							
-							doll.setName("Dress-up doll");
+							doll.setName("Кукла для переодевания");
 							doll.setLocation(Main.game.getPlayer());
 							Main.game.setActiveNPC(doll);
 						}
@@ -1025,7 +1003,7 @@ public class DebugDialogue {
 					if(index-indexOffset < clothingSlots.size()) {
 						InventorySlot is = clothingSlots.get(index-indexOffset);
 						return new Response(Util.capitaliseSentence(is.getName()),
-								"View icons and ids of all the clothing in the slot '"+is.getName()+"'. You can also spawn these items by clicking on their icons. <i>Warning: May be very sluggish and slow to load.</i>",
+								"Просмотреть иконки и ID всей одежды в слоте '"+is.getName()+"'. Вы также можете призвать эти предметы, нажимая на их иконки. <i>Внимание: процесс может быть очень медленным и долгим.</i>",
 								ITEM_VIEWER) {
 							@Override
 							public void effects() {
@@ -1052,8 +1030,7 @@ public class DebugDialogue {
 				if(index==1) {
 					return new ResponseEffectsOnly(UtilText.parse(targetedCharacter, "[npc.Name]"),
 							UtilText.parse(targetedCharacter,
-									"[npc.NameIsFull] the current target, and personality changes will be applied to [npc.herHim]."
-									+ "<br/><i>Click to cycle through characters present in this tile.</i>")) {
+									"[npc.NameIsFull] текущую цель, и изменения личности будут применены к [npc.herHim].<br/><i>Нажмите, чтобы переключиться между персонажами, находящимися в этой клетке.</i>")) {
 						@Override
 						public Colour getHighlightColour() {
 							return targetedCharacter.getGender().getColour();
@@ -1088,8 +1065,8 @@ public class DebugDialogue {
 									?"<b style='color:"+perTr.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(perTr.getName())+"</b>"
 									:Util.capitaliseSentence(perTr.getName()),
 									(hasTrait
-										?"[style.boldGood(Owned!)] "
-										:"[style.colourMinorBad(Not owned!)] ")
+										?"[style.boldGood(В наличии!)] "
+										:"[style.colourMinorBad(Нет в наличии!)] ")
 									+perTr.getDescription(targetedCharacter, true, true),
 								DEBUG_MENU) {
 							@Override
@@ -1105,8 +1082,8 @@ public class DebugDialogue {
 				}
 				
 				if(index==pt.size()+2) {
-					return new Response("[style.colourMinorBad(Regenerate)]",
-								UtilText.parse(targetedCharacter, "Regenerate [npc.namePos] personality traits based on [npc.her] race and history."),
+					return new Response("[style.colourMinorBad(Регенерировать)]",
+								UtilText.parse(targetedCharacter, "Регенерировать черты [npc.namePos] личности на основе [npc.her] расы и истории."),
 								DEBUG_MENU) {
 						@Override
 						public void effects() {
@@ -1184,17 +1161,17 @@ public class DebugDialogue {
 				if(npc.getMother()!=null && npc.getMother().getPregnantLitter()!=null && npc.getMother().getPregnantLitter().getOffspring().contains(npc.getId())) {
 					isBorn = false;
 				}
-				UtilText.nodeContentSB.append((isBorn?"":"(Not born yet) ")+"<span style='color:"+npc.getFemininity().getColour().toWebHexString()+";'>"+npc.getName(true)+" "+npc.getSurname()+"</span>"
+				UtilText.nodeContentSB.append((isBorn?"":"(Еще не родился) ")+"<span style='color:"+npc.getFemininity().getColour().toWebHexString()+";'>"+npc.getName(true)+" "+npc.getSurname()+"</span>"
 						+ " ("+npc.getSubspecies().getName(npc.getBody())+" | "+npc.getHalfDemonSubspecies().getName(npc.getBody())+")"
 						+ " ("+npc.getCovering(npc.getBody().getTorsoType().getBodyCoveringType(npc.getBody())).getPrimaryColour().getName()+")" // Primary covering colour
-						+ " M:"+(npc.getMother()!=null?npc.getMother().getName(true):"Deleted NPC")
-						+ " F:"+(npc.getFather()!=null?npc.getFather().getName(true):"Deleted NPC")+"<br/>");
+						+ " M:"+(npc.getMother()!=null?npc.getMother().getName(true):"Удаленный NPC")
+						+ " F:"+(npc.getFather()!=null?npc.getFather().getName(true):"Удаленный NPC")+"<br/>");
 			}
 			for(OffspringSeed os : Main.game.getOffspringNotSpawned(os -> true,true)) {
 				if(!os.isBorn()) {
-					UtilText.nodeContentSB.append("[style.colourBad(Not yet born)] ");
+					UtilText.nodeContentSB.append("[style.colourBad(Еще не родился)] ");
 				} else {
-					UtilText.nodeContentSB.append("Not yet met ");
+					UtilText.nodeContentSB.append("Еще не встречались ");
 				}
 				
 				UtilText.nodeContentSB.append("<span style='color:"+os.getFemininity().getColour().toWebHexString()+";'>"+os.getName()+" "+os.getSurname()+"</span>");
@@ -1210,12 +1187,12 @@ public class DebugDialogue {
 				Colour primaryCoveringColour = os.getBody().getCovering(os.getBody().getTorsoType().getBodyCoveringType(os.getBody()), true).getPrimaryColour();
 				UtilText.nodeContentSB.append(" (<span style='color:"+primaryCoveringColour.toWebHexString()+";'>"+primaryCoveringColour.getName()+"</span>)"); // Primary covering colour
 				
-				UtilText.nodeContentSB.append(" M:"+(os.getMother()!=null?os.getMother().getName(true):"Deleted NPC"));
-				UtilText.nodeContentSB.append(" F:"+(os.getFather()!=null?os.getFather().getName(true):"Deleted NPC")+"<br/>");
+				UtilText.nodeContentSB.append(" M:"+(os.getMother()!=null?os.getMother().getName(true):"Удаленный NPC"));
+				UtilText.nodeContentSB.append(" F:"+(os.getFather()!=null?os.getFather().getName(true):"Удаленный NPC")+"<br/>");
 			}
 			if(activeOffspring!=null) {
 				for(AbstractFetish f : activeOffspring.getFetishes(true)) {
-					UtilText.nodeContentSB.append("<br/>[style.boldSex(Fetish:)] "+f.getName(activeOffspring));
+					UtilText.nodeContentSB.append("<br/>[style.boldSex(Фетиш:)] "+f.getName(activeOffspring));
 				}
 				UtilText.nodeContentSB.append(
 						"<br/>" + activeOffspring.getDescription()
@@ -1228,10 +1205,10 @@ public class DebugDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 0) {
-				return new Response("Back", "", DEBUG_MENU);
+				return new Response("Назад", "", DEBUG_MENU);
 				
 			} else if(index-1 < Main.game.getOffspring().size()) {
-				return new Response(Main.game.getOffspring().get(index-1).getName(true), "View the character page for this offspring.", OFFSPRING) {
+				return new Response(Main.game.getOffspring().get(index-1).getName(true), "Открыть страницу персонажа этого отпрыска.", OFFSPRING) {
 					@Override
 					public void effects() {
 						activeOffspring = Main.game.getOffspring().get(index-1);
@@ -1273,7 +1250,7 @@ public class DebugDialogue {
 	}
 	private static StringBuilder inventorySB = new StringBuilder();
 	
-	public static final DialogueNode SPAWN_MENU = new DialogueNode("Spawn Menu", "Access the spawn menu.", false) {
+	public static final DialogueNode SPAWN_MENU = new DialogueNode("Меню призыва", "Открыть меню спавна.", false) {
 		@Override
 		public String getHeaderContent() {
 			inventorySB.setLength(0);
@@ -1283,12 +1260,12 @@ public class DebugDialogue {
 			inventorySB.append(
 					"<p style='width:100%; text-align:center; padding:0 margin:0;'>"
 						+ (itemTag==ItemTag.CHEAT_ITEM
-							?"[style.boldGreenDark(Cheat Items)]"
+							?"[style.boldGreenDark(Чит-предметы)]"
 							:(activeSlot==null
-								?"<b style='color:"+PresetColour.BASE_BLUE_LIGHT.toWebHexString()+";'>Spawn Item</b>"
+								?"<b style='color:"+PresetColour.BASE_BLUE_LIGHT.toWebHexString()+";'>Заспавнить предмет</b>"
 								:(activeSlot.isWeapon()
-									? "<b style='color:"+PresetColour.BASE_RED_LIGHT.toWebHexString()+";'>Spawn Weapon</b> ("+Util.capitaliseSentence(activeSlot==InventorySlot.WEAPON_MAIN_1?"Melee":"Ranged")+")"
-									: "<b style='color:"+PresetColour.BASE_YELLOW_LIGHT.toWebHexString()+";'>Spawn Clothing</b> ("+Util.capitaliseSentence(activeSlot.getName())+")")))
+									? "<b style='color:"+PresetColour.BASE_RED_LIGHT.toWebHexString()+";'>Заспавнить оружие</b> ("+Util.capitaliseSentence(activeSlot==InventorySlot.WEAPON_MAIN_1?"Ближний бой":"Дальний бой")+")"
+									: "<b style='color:"+PresetColour.BASE_YELLOW_LIGHT.toWebHexString()+";'>Заспавнить одежду</b> ("+Util.capitaliseSentence(activeSlot.getName())+")")))
 					+"</p>");
 			
 			int count=0;
@@ -1300,8 +1277,7 @@ public class DebugDialogue {
 								+ "<div class='inventory-icon-content'>"
 									+c.getSVGImage()
 								+"</div>"
-								+ "<div class='overlay' id='" + c.getId() + "_SPAWN'></div>"
-							+ "</div>");
+								+ "<div class='overlay' id='" + c.getId() + "_SPAWN'></div></div>");
 					}
 				}
 				for(AbstractWeaponType weaponType : WeaponType.getAllWeapons()) {
@@ -1309,16 +1285,14 @@ public class DebugDialogue {
 						inventorySB.append("<div class='inventory-item-slot unequipped' style='background-color:"+weaponType.getRarity().getBackgroundColour().toWebHexString()+";'>"
 								+ "<div class='inventory-icon-content'>"+weaponType.getSVGImage()
 								+"</div>"
-								+ "<div class='overlay' id='" + weaponType.getId() + "_SPAWN'></div>"
-							+ "</div>");
+								+ "<div class='overlay' id='" + weaponType.getId() + "_SPAWN'></div></div>");
 					}
 				}
 				for(AbstractItemType itemType : ItemType.getAllItems()) {
 					if(itemType.getItemTags().contains(ItemTag.CHEAT_ITEM)) {
 						inventorySB.append("<div class='inventory-item-slot unequipped' style='background-color:"+itemType.getRarity().getBackgroundColour().toWebHexString()+";'>"
 								+ "<div class='inventory-icon-content'>"+itemType.getSVGString()+"</div>"
-								+ "<div class='overlay' id='" + itemType.getId() + "_SPAWN'></div>"
-							+ "</div>");
+								+ "<div class='overlay' id='" + itemType.getId() + "_SPAWN'></div></div>");
 					}
 				}
 				
@@ -1334,8 +1308,7 @@ public class DebugDialogue {
 										|| (itemTag==ItemTag.SPELL_BOOK && itemType.getItemTags().contains(ItemTag.SPELL_SCROLL))))) {
 						inventorySB.append("<div class='inventory-item-slot unequipped' style='background-color:"+itemType.getRarity().getBackgroundColour().toWebHexString()+";'>"
 												+ "<div class='inventory-icon-content'>"+itemType.getSVGString()+"</div>"
-												+ "<div class='overlay' id='" + itemType.getId() + "_SPAWN'></div>"
-											+ "</div>");
+												+ "<div class='overlay' id='" + itemType.getId() + "_SPAWN'></div></div>");
 					}
 					count++;
 				}
@@ -1348,8 +1321,7 @@ public class DebugDialogue {
 						inventorySB.append("<div class='inventory-item-slot unequipped' style='background-color:"+rarity.getBackgroundColour().toWebHexString()+";'>"
 												+ "<div class='inventory-icon-content'>"+weaponType.getSVGImage()
 												+"</div>"
-												+ "<div class='overlay' id='" + weaponType.getId() + "_SPAWN'></div>"
-											+ "</div>");
+												+ "<div class='overlay' id='" + weaponType.getId() + "_SPAWN'></div></div>");
 						count++;
 					}
 				}
@@ -1361,8 +1333,7 @@ public class DebugDialogue {
 												+ "<div class='inventory-icon-content'>"
 													+clothingType.getSVGImage()
 												+"</div>"
-												+ "<div class='overlay' id='" + clothingType.getId() + "_SPAWN'></div>"
-											+ "</div>");
+												+ "<div class='overlay' id='" + clothingType.getId() + "_SPAWN'></div></div>");
 						count++;
 					}
 				}
@@ -1384,18 +1355,18 @@ public class DebugDialogue {
 					inventorySB.append("<div class='normal-button' id='"+slot+"_SPAWN_SELECT' style='width:18%; margin:1%; padding:2px; font-size:0.9em; color:"
 							+ (slot.isWeapon() ? PresetColour.BASE_RED_LIGHT.toWebHexString() : PresetColour.BASE_YELLOW_LIGHT.toWebHexString())+";'>"
 							+(slot == InventorySlot.WEAPON_MAIN_1
-								?"Melee"
+								?"Ближний бой"
 								:(slot == InventorySlot.WEAPON_OFFHAND_1
-										?"Ranged"
+										?"Дальний бой"
 										:Util.capitaliseSentence(slot.getName())))
 							+"</div>");
 				}
 			}
-			inventorySB.append("<div class='normal-button' id='ITEM_SPAWN_SELECT' style='width:18%; margin:1%; padding:2px; font-size:0.9em; color:"+PresetColour.BASE_BLUE_LIGHT.toWebHexString()+";'>Items</div>");
-			inventorySB.append("<div class='normal-button' id='ESSENCE_SPAWN_SELECT' style='width:18%; margin:1%; padding:2px; font-size:0.9em; color:"+PresetColour.GENERIC_ARCANE.toWebHexString()+";'>Essences</div>");
-			inventorySB.append("<div class='normal-button' id='BOOK_SPAWN_SELECT' style='width:18%; margin:1%; padding:2px; font-size:0.9em; color:"+PresetColour.BASE_ORANGE.toWebHexString()+";'>Books</div>");
-			inventorySB.append("<div class='normal-button' id='SPELL_SPAWN_SELECT' style='width:18%; margin:1%; padding:2px; font-size:0.9em; color:"+PresetColour.DAMAGE_TYPE_SPELL.toWebHexString()+";'>Spells</div>");
-			inventorySB.append("<div class='normal-button' id='HIDDEN_SPAWN_SELECT' style='width:18%; margin:1%; padding:2px; font-size:0.9em; opacity:0; cursor:default; color:"+PresetColour.BASE_GREEN_DARK.toWebHexString()+";'>Cheats</div>");
+			inventorySB.append("<div class='normal-button' id='ITEM_SPAWN_SELECT' style='width:18%; margin:1%; padding:2px; font-size:0.9em; color:"+PresetColour.BASE_BLUE_LIGHT.toWebHexString()+";'>Предметы</div>");
+			inventorySB.append("<div class='normal-button' id='ESSENCE_SPAWN_SELECT' style='width:18%; margin:1%; padding:2px; font-size:0.9em; color:"+PresetColour.GENERIC_ARCANE.toWebHexString()+";'>Эссенции</div>");
+			inventorySB.append("<div class='normal-button' id='BOOK_SPAWN_SELECT' style='width:18%; margin:1%; padding:2px; font-size:0.9em; color:"+PresetColour.BASE_ORANGE.toWebHexString()+";'>Книги</div>");
+			inventorySB.append("<div class='normal-button' id='SPELL_SPAWN_SELECT' style='width:18%; margin:1%; padding:2px; font-size:0.9em; color:"+PresetColour.DAMAGE_TYPE_SPELL.toWebHexString()+";'>Заклинания</div>");
+			inventorySB.append("<div class='normal-button' id='HIDDEN_SPAWN_SELECT' style='width:18%; margin:1%; padding:2px; font-size:0.9em; opacity:0; cursor:default; color:"+PresetColour.BASE_GREEN_DARK.toWebHexString()+";'>Читы</div>");
 
 			inventorySB.append("</div>");
 			
@@ -1418,7 +1389,7 @@ public class DebugDialogue {
 		}
 	};
 	
-	public static final DialogueNode SPAWN_MENU_SET = new DialogueNode("Set spawns", "", false) {
+	public static final DialogueNode SPAWN_MENU_SET = new DialogueNode("Установить спавн", "", false) {
 		@Override
 		public String getHeaderContent() {
 			inventorySB.setLength(0);
@@ -1490,11 +1461,9 @@ public class DebugDialogue {
 							|| (itemTag!=null
 								&& (itemType.getItemTags().contains(itemTag)
 										|| (itemTag==ItemTag.SPELL_BOOK && itemType.getItemTags().contains(ItemTag.SPELL_SCROLL))))) {
-						sb.append("<div class='container-full-width' style='width:"+width+"%; white-space: nowrap; word-wrap: break-word; font-size:0.75em; -webkit-user-select:auto; padding:0; margin:0;'>"
-												+ "<div class='inventory-item-slot unequipped' style='width:"+imgWidth+"%; box-sizing: border-box; padding:0; margin:0; background-color:"+itemType.getRarity().getBackgroundColour().toWebHexString()+";'>"
+						sb.append("<div class='container-full-width' style='width:"+width+"%; white-space: nowrap; word-wrap: break-word; font-size:0.75em; -webkit-user-select:auto; padding:0; margin:0;'><div class='inventory-item-slot unequipped' style='width:"+imgWidth+"%; box-sizing: border-box; padding:0; margin:0; background-color:"+itemType.getRarity().getBackgroundColour().toWebHexString()+";'>"
 													+ "<div class='inventory-icon-content'>"+itemType.getSVGString()+"</div>"
-													+ "<div class='overlay' id='" + itemType.getId() + "_SPAWN'></div>"
-												+ "</div>"
+													+ "<div class='overlay' id='" + itemType.getId() + "_SPAWN'></div></div>"
 												+ ItemType.getItemToIdMap().get(itemType)
 											+ "</div>");
 					}
@@ -1506,12 +1475,10 @@ public class DebugDialogue {
 				sb.append("<div class='inventory-not-equipped' style='-webkit-user-select:auto;'>"
 						+ "<h5>Total weapons: "+weaponsTotal.size()+"</h5>");
 				for(AbstractWeaponType weaponType : weaponsTotal) {
-					sb.append("<div class='container-full-width' style='width:"+width+"%; white-space: nowrap; word-wrap: break-word; font-size:0.75em; -webkit-user-select:auto; padding:0; margin:0;'>"
-											+ "<div class='inventory-item-slot unequipped' style='width:"+imgWidth+"%; box-sizing: border-box; padding:0; margin:0; background-color:"+weaponType.getRarity().getBackgroundColour().toWebHexString()+";'>"
+					sb.append("<div class='container-full-width' style='width:"+width+"%; white-space: nowrap; word-wrap: break-word; font-size:0.75em; -webkit-user-select:auto; padding:0; margin:0;'><div class='inventory-item-slot unequipped' style='width:"+imgWidth+"%; box-sizing: border-box; padding:0; margin:0; background-color:"+weaponType.getRarity().getBackgroundColour().toWebHexString()+";'>"
 												+ "<div class='inventory-icon-content'>"+weaponType.getSVGImage()
 												+"</div>"
-												+ "<div class='overlay' id='" + weaponType.getId() + "_SPAWN'></div>"
-											+ "</div>"
+												+ "<div class='overlay' id='" + weaponType.getId() + "_SPAWN'></div></div>"
 											+ WeaponType.getIdFromWeaponType(weaponType)
 										+ "</div>");
 				}
@@ -1521,16 +1488,14 @@ public class DebugDialogue {
 			if(viewAll || viewAllClothing) {
 				sb.append("<div class='inventory-not-equipped' style='-webkit-user-select:auto;'>");
 				sb.append("<h5>");
-					sb.append("Total clothing: "+clothingTotal.size());
+					sb.append("Всего одежды: "+clothingTotal.size());
 				sb.append("</h5>");
 				for(AbstractClothingType clothingType : clothingTotal) {
-					sb.append("<div class='container-full-width' style='width:"+width+"%; white-space: nowrap; word-wrap: break-word; font-size:0.75em; -webkit-user-select:auto; padding:0; margin:0;'>"
-										+ "<div class='inventory-item-slot unequipped' style='width:"+imgWidth+"%; box-sizing: border-box; padding:0; margin:0; background-color:"+clothingType.getRarity().getBackgroundColour().toWebHexString()+";'>"
+					sb.append("<div class='container-full-width' style='width:"+width+"%; white-space: nowrap; word-wrap: break-word; font-size:0.75em; -webkit-user-select:auto; padding:0; margin:0;'><div class='inventory-item-slot unequipped' style='width:"+imgWidth+"%; box-sizing: border-box; padding:0; margin:0; background-color:"+clothingType.getRarity().getBackgroundColour().toWebHexString()+";'>"
 											+ "<div class='inventory-icon-content'>"
 												+clothingType.getSVGImage()
 											+"</div>"
-											+ "<div class='overlay' id='" + clothingType.getId() + "_SPAWN'></div>"
-										+ "</div>"
+											+ "<div class='overlay' id='" + clothingType.getId() + "_SPAWN'></div></div>"
 										+ (clothingType.getPhysicalResistance()>0
 												?"[style.boldPhysical("+UtilText.getShieldSymbol()+clothingType.getPhysicalResistance()+")] [style.colourGreenLight("+ClothingType.getIdFromClothingType(clothingType)+")]"
 												:ClothingType.getIdFromClothingType(clothingType))
@@ -1542,13 +1507,11 @@ public class DebugDialogue {
 				sb.append("<div class='inventory-not-equipped' style='-webkit-user-select:auto;'>"
 						+ "<h5>Total tattoos: "+tattoosTotal.size()+"</h5>");
 				for(AbstractTattooType tattooType : tattoosTotal) {
-					sb.append("<div class='container-full-width' style='width:"+width+"%; white-space: nowrap; word-wrap: break-word; font-size:0.75em; -webkit-user-select:auto; padding:0; margin:0;'>"
-											+ "<div class='inventory-item-slot unequipped' style='width:"+imgWidth+"%; box-sizing: border-box; padding:0; margin:0; background-color:"+tattooType.getRarity().getBackgroundColour().toWebHexString()+";'>"
+					sb.append("<div class='container-full-width' style='width:"+width+"%; white-space: nowrap; word-wrap: break-word; font-size:0.75em; -webkit-user-select:auto; padding:0; margin:0;'><div class='inventory-item-slot unequipped' style='width:"+imgWidth+"%; box-sizing: border-box; padding:0; margin:0; background-color:"+tattooType.getRarity().getBackgroundColour().toWebHexString()+";'>"
 												+ "<div class='inventory-icon-content'>"
 													+tattooType.getSVGImage(Main.game.getPlayer())
 												+"</div>"
-												+ "<div class='overlay' id='" + tattooType.getId() + "_SPAWN'></div>"
-											+ "</div>"
+												+ "<div class='overlay' id='" + tattooType.getId() + "_SPAWN'></div></div>"
 											+ TattooType.getIdFromTattooType(tattooType)
 										+ "</div>");
 				}
@@ -1569,20 +1532,18 @@ public class DebugDialogue {
 				
 				sb.append("<div class='inventory-not-equipped' style='-webkit-user-select:auto;'>");
 				sb.append("<h5>");
-					sb.append("Total '"+itemViewSlot.getName()+"' slot clothing: "+clothingToDisplay.size()+(filterFemininity!=Femininity.ANDROGYNOUS?"/"+maxItems:""));
+					sb.append("Всего слотов одежды: '"+itemViewSlot.getName()+"слот одежды: "+clothingToDisplay.size()+(filterFemininity!=Femininity.ANDROGYNOUS?"/"+maxItems:""));
 					if(filterFemininity!=Femininity.ANDROGYNOUS) {
 						sb.append("<br/>");
-						sb.append("(<span style='color:"+filterFemininity.getColour().toWebHexString()+";'>"+(filterFemininity.isFeminine()?"Feminine":"Masculine")+" Filter</span>)");
+						sb.append("(<span style='color:"+filterFemininity.getColour().toWebHexString()+";'>"+(filterFemininity.isFeminine()?"Женственные":"Мужественные")+" Фильтр</span>)");
 					}
 				sb.append("</h5>");
 				for(AbstractClothingType clothingType : clothingToDisplay) {
-					sb.append("<div class='container-full-width' style='width:"+width+"%; white-space: nowrap; word-wrap: break-word; font-size:0.75em; -webkit-user-select:auto; padding:0; margin:0;'>"
-							+ "<div class='inventory-item-slot unequipped' style='width:"+imgWidth+"%; box-sizing: border-box; padding:0; margin:0; background-color:"+clothingType.getRarity().getBackgroundColour().toWebHexString()+";'>"
+					sb.append("<div class='container-full-width' style='width:"+width+"%; white-space: nowrap; word-wrap: break-word; font-size:0.75em; -webkit-user-select:auto; padding:0; margin:0;'><div class='inventory-item-slot unequipped' style='width:"+imgWidth+"%; box-sizing: border-box; padding:0; margin:0; background-color:"+clothingType.getRarity().getBackgroundColour().toWebHexString()+";'>"
 								+ "<div class='inventory-icon-content'>"
 									+clothingType.getSVGImage()
 								+"</div>"
-								+ "<div class='overlay' id='" + clothingType.getId() + "_SPAWN'></div>"
-							+ "</div>"
+								+ "<div class='overlay' id='" + clothingType.getId() + "_SPAWN'></div></div>"
 							+ ClothingType.getIdFromClothingType(clothingType)
 						+ "</div>");
 				}
@@ -1604,7 +1565,7 @@ public class DebugDialogue {
 	};
 	
 	
-	public static final DialogueNode OUTFIT_VIEWER = new DialogueNode("Outfit Viewer", "", true) {
+	public static final DialogueNode OUTFIT_VIEWER = new DialogueNode("Просмотр наряда", "", true) {
 		@Override
 		public String getContent() {
 			inventorySB.setLength(0);
@@ -1621,12 +1582,12 @@ public class DebugDialogue {
 							inventorySB.append("<br/>");
 							inventorySB.append("ID: "+id);
 							inventorySB.append("<br/>");
-							inventorySB.append("Femininity: <span style='color:"+outfit.getFemininity().getColour().toWebHexString()+";'>"+outfit.getFemininity().toString()+"</span>");
+							inventorySB.append("Женственность: <span style='color:"+outfit.getFemininity().getColour().toWebHexString()+";'>"+outfit.getFemininity().toString()+"</span>");
 							inventorySB.append("<br/>");
-							inventorySB.append("Conditional: <span style='font-family:monospace; font-size:0.85em; background:"+PresetColour.BACKGROUND_DARK.toWebHexString()+"; padding:2px;'>"+outfit.getConditional()+"</span>");
+							inventorySB.append("Условие: <span style='font-family:monospace; font-size:0.85em; background:"+PresetColour.BACKGROUND_DARK.toWebHexString()+"; padding:2px;'>"+outfit.getConditional()+"</span>");
 							
 							inventorySB.append("<br/>");
-							inventorySB.append("Leg configurations: ");
+							inventorySB.append("Конфигурации ног: ");
 							if(outfit.getAcceptableLegConfigurations()!=null && !outfit.getAcceptableLegConfigurations().isEmpty()) {
 								List<String> lcNames = new ArrayList<>();
 								for(LegConfiguration lc : outfit.getAcceptableLegConfigurations()) {
@@ -1638,7 +1599,7 @@ public class DebugDialogue {
 							}
 							
 							inventorySB.append("<br/>");
-							inventorySB.append("Outfit types: ");
+							inventorySB.append("Типы нарядов: ");
 							if(outfit.getOutfitTypes()!=null && !outfit.getOutfitTypes().isEmpty()) {
 								List<String> otNames = new ArrayList<>();
 								for(OutfitType ot : outfit.getOutfitTypes()) {
@@ -1646,10 +1607,9 @@ public class DebugDialogue {
 								}
 								inventorySB.append(Util.stringsToStringList(otNames, false));
 							} else {
-								inventorySB.append("[style.colourBad(NONE!)]");
+								inventorySB.append("[style.colourBad(НИЧЕГО!)]");
 							}
-							inventorySB.append("<div class='normal-button' id='OUTFIT_"+id+"'"
-									+ " style='position:absolute; text-align:center; width:18%; margin:1%; right:2px; bottom:2px; padding:2px; font-size:0.9em; color:"+PresetColour.GENERIC_MINOR_GOOD.toWebHexString()+";'>Apply</div>");
+							inventorySB.append("<div class='normal-button' id='OUTFIT_"+id+"' style='position:absolute; text-align:center; width:18%; margin:1%; right:2px; bottom:2px; padding:2px; font-size:0.9em; color:"+PresetColour.GENERIC_MINOR_GOOD.toWebHexString()+";'>Применить</div>");
 					inventorySB.append("</div>");
 					
 					
@@ -1663,7 +1623,7 @@ public class DebugDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Back", "Return to the main debug menu.", DEBUG_MENU) {
+				return new Response("Назад", "Вернуться в главное меню отладки.", DEBUG_MENU) {
 					@Override
 					public void effects() {
 						Main.game.banishNPC(dollID);
@@ -1696,17 +1656,17 @@ public class DebugDialogue {
 		
 	}
 	
-	public static final DialogueNode BODY_PART_MATERIAL = new DialogueNode("Set body material", "Set body material.", false) {
+	public static final DialogueNode BODY_PART_MATERIAL = new DialogueNode("Установить материал тела", "Установить материал тела.", false) {
 
 		@Override
 		public String getContent() {
-			return "<p>Choose a material type.</p>";
+			return "<p>Выберите тип материала.</p>";
 		}
 		
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index != 0 && index < BodyMaterial.values().length+1) {
-				return new Response(Util.capitaliseSentence(BodyMaterial.values()[index - 1].getName()), "Set your body to be made out of "+BodyMaterial.values()[index - 1].getName()+".", BODY_PART_MATERIAL){
+				return new Response(Util.capitaliseSentence(BodyMaterial.values()[index - 1].getName()), "Сделать ваше тело из "+BodyMaterial.values()[index - 1].getName()+".", BODY_PART_MATERIAL){
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(Main.game.getPlayer().setBodyMaterial(BodyMaterial.values()[index - 1]));
@@ -1714,7 +1674,7 @@ public class DebugDialogue {
 				};
 				
 			} else if (index == 0) {
-				return new Response("Back", "", DEBUG_MENU);
+				return new Response("Назад", "", DEBUG_MENU);
 				
 			} else {
 				return null;
@@ -1723,7 +1683,7 @@ public class DebugDialogue {
 	};
 	
 	public static Map<AbstractEncounter, Float> encounters;
-	public static final DialogueNode ENCOUNTER_MENU = new DialogueNode("Available Encounters", "", false) {
+	public static final DialogueNode ENCOUNTER_MENU = new DialogueNode("Доступные встречи", "", false) {
 		@Override
 		public void applyPreParsingEffects() {
 			encounters = Main.game.getPlayerCell().getPlaceType().getPossibleEncountersMap(true);
@@ -1740,8 +1700,7 @@ public class DebugDialogue {
 				float chance = entry.getValue();
 				String id = encounter.getId();
 				
-				sb.append("<div class='container-full-width' style='border:1px solid "+(encounter.isFromExternalFile()?PresetColour.GENERIC_MINOR_GOOD:PresetColour.GENERIC_MINOR_BAD).toWebHexString()+";"
-						+ " width:95%; padding:4px; margin:4px 2.5% 4px 2.5%; background-color:"+(i%2==0?PresetColour.BACKGROUND:PresetColour.BACKGROUND_ALT).toWebHexString()+";'>");
+				sb.append("<div class='container-full-width' style='border:1px solid "+(encounter.isFromExternalFile()?PresetColour.GENERIC_MINOR_GOOD:PresetColour.GENERIC_MINOR_BAD).toWebHexString()+"; width:95%; padding:4px; margin:4px 2.5% 4px 2.5%; background-color:"+(i%2==0?PresetColour.BACKGROUND:PresetColour.BACKGROUND_ALT).toWebHexString()+";'>");
 
 					sb.append("<div class='container-full-width' style='position:relative; padding:0; margin:0; width:100%; background-color:#00000000; -webkit-user-select:auto; text-align:left;'>");
 						if(encounter.isFromExternalFile()) {
@@ -1752,7 +1711,7 @@ public class DebugDialogue {
 						sb.append("<b>"+id+": "+chance+"%</b>");
 						sb.append("<br/>");
 
-						sb.append("Encounters:");
+						sb.append("Встречи:");
 						if(encounter.isFromExternalFile()) {
 							int encounterIndex=0;
 							int rowCount=0;
@@ -1763,13 +1722,11 @@ public class DebugDialogue {
 										+ " background:"+(rowCount%2==0?PresetColour.BACKGROUND.getShades()[3]:PresetColour.BACKGROUND_ALT.getShades()[3])+";'>");
 									sb.append(data.getName()+": "+(triggerChance==0?"<span style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>":"<span>")+triggerChance+"%</span>");
 									sb.append("<br/>");
-									sb.append("Conditional: <span style='font-family:monospace; font-size:0.85em; background:"+PresetColour.BACKGROUND_DARK.toWebHexString()+"; padding:2px;'>"+data.getTriggerConditional()+"</span>");
+									sb.append("Условие: <span style='font-family:monospace; font-size:0.85em; background:"+PresetColour.BACKGROUND_DARK.toWebHexString()+"; padding:2px;'>"+data.getTriggerConditional()+"</span>");
 									sb.append("<br/>");
-									sb.append("Dialogue triggered: "+data.getDialogueId());
-									sb.append("<div class='normal-button' id='DEBUG_ENCOUNTER_"+id+"_"+encounterIndex+"'"
-											+ " style='position:absolute; text-align:center; width:18%; height:auto; margin:1%; top:-8px; right:2px; padding:2px;"
-											+ " font-size:0.9em; color:"+(triggerChance==0?PresetColour.GENERIC_BAD:PresetColour.GENERIC_MINOR_GOOD).toWebHexString()+";'>");
-										sb.append("Trigger");
+									sb.append("Запуск диалога: "+data.getDialogueId());
+									sb.append("<div class='normal-button' id='DEBUG_ENCOUNTER_"+id+"_"+encounterIndex+"' style='position:absolute; text-align:center; width:18%; height:auto; margin:1%; top:-8px; right:2px; padding:2px; font-size:0.9em; color:"+(triggerChance==0?PresetColour.GENERIC_BAD:PresetColour.GENERIC_MINOR_GOOD).toWebHexString()+";'>");
+										sb.append("Триггер");
 									sb.append("</div>");
 								sb.append("</div>");
 								encounterIndex++;
@@ -1784,9 +1741,8 @@ public class DebugDialogue {
 								sb.append("<div class='container-full-width' style='margin:2px 0; padding:4px; width:100%;position:relative;"
 										+ " background:"+(rowCount%2==0?PresetColour.BACKGROUND.getShades()[3]:PresetColour.BACKGROUND_ALT.getShades()[3])+";'>");
 									sb.append(et.toString()+": "+etChance+"%");
-									sb.append("<div class='normal-button' id='DEBUG_ENCOUNTER_"+id+"_"+et+"'"
-											+ " style='position:absolute; text-align:center; width:18%; height:auto; margin:1%; top:-8px; right:2px; padding:2px; font-size:0.9em; color:"+PresetColour.GENERIC_MINOR_GOOD.toWebHexString()+";'>");
-										sb.append("Trigger");
+									sb.append("<div class='normal-button' id='DEBUG_ENCOUNTER_"+id+"_"+et+"' style='position:absolute; text-align:center; width:18%; height:auto; margin:1%; top:-8px; right:2px; padding:2px; font-size:0.9em; color:"+PresetColour.GENERIC_MINOR_GOOD.toWebHexString()+";'>");
+										sb.append("Триггер");
 									sb.append("</div>");
 								sb.append("</div>");
 							}
@@ -1841,7 +1797,7 @@ public class DebugDialogue {
 		Main.game.setActiveNPC(attacker);
 	}
 	
-	public static final DialogueNode ATTACKER_SPAWN_MENU = new DialogueNode("Spawn Attacker", "", false) {
+	public static final DialogueNode ATTACKER_SPAWN_MENU = new DialogueNode("Создать атакующего", "", false) {
 		@Override
 		public void applyPreParsingEffects() {
 			attacker = null;
@@ -1852,26 +1808,26 @@ public class DebugDialogue {
 		public String getContent() {
 			StringBuilder sb = new StringBuilder();
 			sb.append("<p>");
-				sb.append("Choose the attacker's race.");
+				sb.append("Выберите расу атакующего.");
 			sb.append("</p>");
 			return sb.toString();
 		}
 		@Override
 		public String getResponseTabTitle(int index) {
 			if(index == 0) {
-				return "[style.colourTfPartial(Partial)]";
+				return "[style.colourTfPartial(Частичная)]";
 
 			} else if(index == 1) {
-				return "[style.colourTfMinor(Minor)]";
+				return "[style.colourTfMinor(Незначительная)]";
 				
 			} else if(index == 2) {
-				return "[style.colourTfLesser(Lesser)]";
+				return "[style.colourTfLesser(Малая)]";
 				
 			} else if(index == 3) {
-				return "[style.colourTfGreater(Greater)]";
+				return "[style.colourTfGreater(Сильная)]";
 				
 			} else if(index == 4) {
-				return "[style.colourHalfDemon(Half-demon)]";
+				return "[style.colourHalfDemon(Полудемон)]";
 			}
 			return null;
 		}
@@ -1891,7 +1847,7 @@ public class DebugDialogue {
 				
 				return new Response(
 						Util.capitaliseSentence(name),
-						"Spawn an attacker of the subspecies: "+name,
+						"Создать атакующего подтипа: "+name,
 						ATTACKER_SPAWN) {
 					@Override
 					public Colour getHighlightColour() {
@@ -1918,18 +1874,18 @@ public class DebugDialogue {
 				};
 				
 			} else if (index == 0) {
-				return new Response("Back", "", DEBUG_MENU);
+				return new Response("Назад", "", DEBUG_MENU);
 			}
 			return null;
 		}
 	};
 	
-	public static final DialogueNode ATTACKER_SPAWN = new DialogueNode("Spawn Attacker", "", false) {
+	public static final DialogueNode ATTACKER_SPAWN = new DialogueNode("Создать атакующего", "", false) {
 		@Override
 		public String getContent() {
 			StringBuilder sb = new StringBuilder();
 			sb.append("<p>");
-				sb.append("Choose the attacker's gender.");
+				sb.append("Выберите пол атакующего.");
 			sb.append("</p>");
 			return sb.toString();
 		}
@@ -1943,13 +1899,12 @@ public class DebugDialogue {
 				
 				return new ResponseEffectsOnly(
 						Util.capitaliseSentence(gender.getName()),
-						"Spawn an attacker."
-						+ "<br/>Subspecies: "+name
+						"Создать атакующего.<br/>Подтип: "+name
 						+"<br/>Gender: "+gender.getName()
 						+" ("
-							+(gender.getGenderName().isHasPenis()?"[style.italicsGood(Penis)] ":"[style.italicsBad(Penis)] ")
-							+(gender.getGenderName().isHasVagina()?"[style.italicsGood(Vagina)] ":"[style.italicsBad(Vagina)] ")
-							+(gender.getGenderName().isHasBreasts()?"[style.italicsGood(Breasts)]":"[style.italicsBad(Breasts)]")
+							+(gender.getGenderName().isHasPenis()?"[style.italicsGood(Пенис)] ":"[style.italicsBad(Пенис)] ")
+							+(gender.getGenderName().isHasVagina()?"[style.italicsGood(Вагина)] ":"[style.italicsBad(Вагина)] ")
+							+(gender.getGenderName().isHasBreasts()?"[style.italicsGood(Грудь)]":"[style.italicsBad(Грудь)]")
 						+")") {
 					@Override
 					public Colour getHighlightColour() {
@@ -1992,13 +1947,13 @@ public class DebugDialogue {
 				};
 				
 			} else if (index == 0) {
-				return new Response("Back", "", DEBUG_MENU);
+				return new Response("Назад", "", DEBUG_MENU);
 			}
 			return null;
 		}
 	};
 	
-	public static final DialogueNode BODY_PART_RACE_RESET = new DialogueNode("Reset body", "Set race.", false) {
+	public static final DialogueNode BODY_PART_RACE_RESET = new DialogueNode("Сбросить тело", "Установить расу.", false) {
 		@Override
 		public void applyPreParsingEffects() {
 			// Just in case this dialogue node is accessed before initialising targetedCharacter, or if targetedCharacter is no longer present:
@@ -2011,16 +1966,8 @@ public class DebugDialogue {
 		public String getContent() {
 			StringBuilder sb = new StringBuilder();
 			sb.append("<p>"
-						+ UtilText.parse(targetedCharacter, "Select one of the races to reset [npc.namePos] body to the default values of that race. (i.e. Regenerate [npc.her] current body as that of a different race.)")
-					+ "</p>"
-					+ "<p>"
-						+ "[style.colourTfPartial(Partial)]: Sets body to human, with selected race's antennae, eyes, ears, hair, horns, tail, and wings.</br>"
-						+ "[style.colourTfMinor(Minor)]: Same as partial, but also includes ass, breasts, penis, and vagina.</br>"
-						+ "[style.colourTfLesser(Lesser)]: Same as minor, but also includes arms and legs.</br>"
-						+ "[style.colourTfGreater(Greater)]: Sets all parts to the race's.</br>"
-					+ "</p>"
-					+ "<p>"
-					+ "<b>IDs:</b><br/>");
+						+ UtilText.parse(targetedCharacter, "Выберите одну из рас, чтобы сбросить тело [npc.namePos] до значений по умолчанию этой расы. (т. е. переделать текущее тело [npc.her] под другую расу.)")
+					+ "</p><p>[style.colourTfPartial(Частичная)]: Устанавливает тело как человеческое, но с усиками, глазами, ушами, волосами, рогами, хвостом и крыльями выбранной расы.</br>[style.colourTfMinor(Малая)]: То же самое, что частичная, но также включает задницу, грудь, пенис и вагину.</br>[style.colourTfLesser(Меньшая)]: То же самое, что малая, но также включает руки и ноги.</br>[style.colourTfGreater(Полная)]: Устанавливает все части тела как у выбранной расы.</br></p><p><b>ID:</b><br/>");
 			for(AbstractSubspecies sub : Subspecies.getAllSubspecies()) {
 				sb.append("<span style='color:"+sub.getColour(targetedCharacter).toWebHexString()+";'>"+Util.capitaliseSentence(sub.getName(targetedCharacter.getBody()))+"</span>: "+Subspecies.getIdFromSubspecies(sub));
 				sb.append("</br>");
@@ -2033,19 +1980,19 @@ public class DebugDialogue {
 		@Override
 		public String getResponseTabTitle(int index) {
 			if(index == 0) {
-				return "[style.colourTfPartial(Partial)]";
+				return "[style.colourTfPartial(Частичная)]";
 
 			} else if(index == 1) {
-				return "[style.colourTfMinor(Minor)]";
+				return "[style.colourTfMinor(Незначительная)]";
 				
 			} else if(index == 2) {
-				return "[style.colourTfLesser(Lesser)]";
+				return "[style.colourTfLesser(Малая)]";
 				
 			} else if(index == 3) {
-				return "[style.colourTfGreater(Greater)]";
+				return "[style.colourTfGreater(Сильная)]";
 				
 			} else if (index == 4) {
-				return "Target";
+				return "Цель";
 			}
 			return null;
 		}
@@ -2055,9 +2002,9 @@ public class DebugDialogue {
 			if(responseTab==4) {
 				if (index == 1) {
 					if (targetedCharacter == Main.game.getPlayer()) {
-						return new Response(Main.game.getPlayer().getName(), "You are the current target.", null);
+						return new Response(Main.game.getPlayer().getName(), "Вы — текущая цель.", null);
 					} else {
-						return new Response(Main.game.getPlayer().getName(), "Target yourself.", BODY_PART_RACE_RESET) {
+						return new Response(Main.game.getPlayer().getName(), "Выбрать себя.", BODY_PART_RACE_RESET) {
 							@Override
 							public void effects() {
 								targetedCharacter = Main.game.getPlayer();
@@ -2075,9 +2022,9 @@ public class DebugDialogue {
 				GameCharacter gc = Main.game.getCharactersPresent().get(index);
 				if (!gc.isUnique()) {
 					if (targetedCharacter == gc) {
-						return new Response(gc.getName(), gc.getName()+" is the current target.", null);
+						return new Response(gc.getName(), gc.getName()+" — текущая цель.", null);
 					} else {
-						return new Response(gc.getName(), "Change target to "+gc.getName(), BODY_PART_RACE_RESET) {
+						return new Response(gc.getName(), "Сменить цель на "+gc.getName(), BODY_PART_RACE_RESET) {
 							@Override
 							public void effects() {
 								targetedCharacter = gc;
@@ -2098,7 +2045,7 @@ public class DebugDialogue {
 				
 				return new Response(
 						Util.capitaliseSentence(name),
-						"Set your body as that of "+UtilText.generateSingularDeterminer(name)+" "+name+".",
+						"Сделать ваше тело таким, как у "+UtilText.generateSingularDeterminer(name)+" "+name+".",
 						BODY_PART_RACE_RESET){
 					@Override
 					public void effects() {
@@ -2144,14 +2091,13 @@ public class DebugDialogue {
 									false);
 						}
 						Main.game.getTextEndStringBuilder().append(
-								"<p>"
-									+ "[style.boldTfGeneric(Transformed:)] You are now "+UtilText.generateSingularDeterminer(name)+" "+name+"!"
+								"<p>[style.boldTfGeneric(Трансформация:)] Теперь вы "+UtilText.generateSingularDeterminer(name)+" "+name+"!"
 								+ "</p>");
 					}
 				};
 				
 			} else if (index == 0) {
-				return new Response("Back", "", DEBUG_MENU);
+				return new Response("Назад", "", DEBUG_MENU);
 				
 			} else {
 				return null;
@@ -2160,7 +2106,7 @@ public class DebugDialogue {
 	};
 	
 	
-	public static final DialogueNode CLOTHING_COLLAGE = new DialogueNode("Clothing collage", "Clothing collage.", false) {
+	public static final DialogueNode CLOTHING_COLLAGE = new DialogueNode("Коллаж одежды", "Коллаж одежды.", false) {
 		@Override
 		public String getContent() {
 			inventorySB.setLength(0);
@@ -2171,39 +2117,30 @@ public class DebugDialogue {
 			inventorySB.append("<div class='inventory-not-equipped' style='-webkit-user-select:auto;'>"
 					+ "<h5>Total items: "+itemsTotal.size()+"</h5>");
 			for(AbstractItemType itemType : itemsTotal) {
-				inventorySB.append("<div class='container-full-width' style='width:"+width+"%; white-space: nowrap; word-wrap: break-word; font-size:0.75em; -webkit-user-select:auto; padding:1px; margin:0;'>"
-										+ "<div class='inventory-item-slot unequipped' style='width:"+imgWidth+"%; box-sizing: border-box; padding:0; margin:0; background-color:"+itemType.getRarity().getBackgroundColour().toWebHexString()+";'>"
+				inventorySB.append("<div class='container-full-width' style='width:"+width+"%; white-space: nowrap; word-wrap: break-word; font-size:0.75em; -webkit-user-select:auto; padding:1px; margin:0;'><div class='inventory-item-slot unequipped' style='width:"+imgWidth+"%; box-sizing: border-box; padding:0; margin:0; background-color:"+itemType.getRarity().getBackgroundColour().toWebHexString()+";'>"
 											+ "<div class='inventory-icon-content'>"+itemType.getSVGString()+"</div>"
-											+ "<div class='overlay' id='" + itemType.getId() + "_SPAWN'></div>"
-										+ "</div>"
-									+ "</div>");
+											+ "<div class='overlay' id='" + itemType.getId() + "_SPAWN'></div></div></div>");
 			}
 			inventorySB.append("</div>");
 
 			inventorySB.append("<div class='inventory-not-equipped' style='-webkit-user-select:auto;'>"
 					+ "<h5>Total weapons: "+weaponsTotal.size()+"</h5>");
 			for(AbstractWeaponType weaponType : weaponsTotal) {
-				inventorySB.append("<div class='container-full-width' style='width:"+width+"%; white-space: nowrap; word-wrap: break-word; font-size:0.75em; -webkit-user-select:auto; padding:1px; margin:0;'>"
-										+ "<div class='inventory-item-slot unequipped' style='width:"+imgWidth+"%; box-sizing: border-box; padding:0; margin:0; background-color:"+weaponType.getRarity().getBackgroundColour().toWebHexString()+";'>"
+				inventorySB.append("<div class='container-full-width' style='width:"+width+"%; white-space: nowrap; word-wrap: break-word; font-size:0.75em; -webkit-user-select:auto; padding:1px; margin:0;'><div class='inventory-item-slot unequipped' style='width:"+imgWidth+"%; box-sizing: border-box; padding:0; margin:0; background-color:"+weaponType.getRarity().getBackgroundColour().toWebHexString()+";'>"
 											+ "<div class='inventory-icon-content'>"+weaponType.getSVGImage()
 											+"</div>"
-											+ "<div class='overlay' id='" + weaponType.getId() + "_SPAWN'></div>"
-										+ "</div>"
-									+ "</div>");
+											+ "<div class='overlay' id='" + weaponType.getId() + "_SPAWN'></div></div></div>");
 			}
 			inventorySB.append("</div>");
 
 			inventorySB.append("<div class='inventory-not-equipped' style='-webkit-user-select:auto;'>"
 					+ "<h5>Total clothing: "+clothingTotal.size()+"</h5>");
 			for(AbstractClothingType clothingType : clothingTotal) {
-				inventorySB.append("<div class='container-full-width' style='width:"+width+"%; white-space: nowrap; word-wrap: break-word; font-size:0.75em; -webkit-user-select:auto; padding:1px; margin:0;'>"
-									+ "<div class='inventory-item-slot unequipped' style='width:"+imgWidth+"%; box-sizing: border-box; padding:0; margin:0; background-color:"+clothingType.getRarity().getBackgroundColour().toWebHexString()+";'>"
+				inventorySB.append("<div class='container-full-width' style='width:"+width+"%; white-space: nowrap; word-wrap: break-word; font-size:0.75em; -webkit-user-select:auto; padding:1px; margin:0;'><div class='inventory-item-slot unequipped' style='width:"+imgWidth+"%; box-sizing: border-box; padding:0; margin:0; background-color:"+clothingType.getRarity().getBackgroundColour().toWebHexString()+";'>"
 										+ "<div class='inventory-icon-content'>"
 											+clothingType.getSVGImageRandomColour(true, false, false)
 										+"</div>"
-										+ "<div class='overlay' id='" + clothingType.getId() + "_SPAWN'></div>"
-									+ "</div>"
-								+ "</div>");
+										+ "<div class='overlay' id='" + clothingType.getId() + "_SPAWN'></div></div></div>");
 			}
 			inventorySB.append("</div>");
 			
@@ -2213,7 +2150,7 @@ public class DebugDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 0) {
-				return new Response("Back", "", DEBUG_MENU);
+				return new Response("Назад", "", DEBUG_MENU);
 				
 			} else {
 				return null;
@@ -2224,7 +2161,7 @@ public class DebugDialogue {
 	private static String parsedText = "";
 	private static String rawText = "";
 	private static String xmlFileText = "res/txt/ENTER_PATH.xml";
-	public static final DialogueNode PARSER = new DialogueNode("Parser", "", true) {
+	public static final DialogueNode PARSER = new DialogueNode("Парсер", "", true) {
 
 		@Override
 		public String getHeaderContent() {
@@ -2237,34 +2174,19 @@ public class DebugDialogue {
 						+ "<div style='position:relative; display:inline-block; padding-bottom:0; margin 0 auto; vertical-align:middle; width:100%; text-align:center;'>"
 							+ "<p style='display:inline-block; padding:0; margin:0; width:100%;'>XML test (enter full path, including .xml): </p>"
 							+ "<br/>"
-							+ "<form style='display:inline-block; width:100%; padding:0; margin:0; text-align:center;'><input type='text' id='xmlTest' style='width:50%;' placeholder='res/txt/...' value='"+xmlFileText+"'></form>"
-						+ "</div>"
-					+ "</div>"
-					
-					+ "<p>"
-						+ "<b>This parser accepts html formatting.</b>"
-					+ "</p>"
-
-					+ "<p style='padding:0;margin:0;text-align:center;'>"
-						+ "Parse:"
-					+ "</p>"
-					+ "<form style='padding:0;margin:0;text-align:center;'>"
-					+ "<textarea id='parseInput' name='Text1' style='width:760px;height:200px;'>"+rawText+"</textarea>"
+							+ "<form style='display:inline-block; width:100%; padding:0; margin:0; text-align:center;'><input type='text' id='xmlTest' style='width:50%;' placeholder='res/txt/...' value='"+xmlFileText+"'></form></div></div><p><b>Этот парсер поддерживает html-форматирование.</b></p><p style='padding:0;margin:0;text-align:center;'>Парсить:</p><form style='padding:0;margin:0;text-align:center;'><textarea id='parseInput' name='Text1' style='width:760px;height:200px;'>"+rawText+"</textarea>"
 					+ "</form>");
 		}
 		
 		@Override
 		public String getContent() {
-			return  "<p>"
-					+ "<b>Output:</b>"
-					+ "</p>"
-					+ "<p>"+parsedText+"</p>";
+			return  "<p><b>Результат:</b></p><p>"+parsedText+"</p>";
 		}
 
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new ResponseEffectsOnly("Parse!", "Parse the text you've entered."){
+				return new ResponseEffectsOnly("Парсить!", "Разобрать введенный вами текст."){
 					@Override
 					public void effects() {
 						rawText = (String) Main.mainController.getWebEngine().executeScript("document.getElementById('parseInput').value");
@@ -2276,42 +2198,36 @@ public class DebugDialogue {
 				};
 				
 			} else if (index == 2) {
-				return new Response("Help", "", PARSER_HELP);
+				return new Response("Помочь", "", PARSER_HELP);
 				
 			} else if (index == 3) {
-				return new Response("Targets", "", PARSER_TARGETS);
+				return new Response("Цели", "", PARSER_TARGETS);
 				
 			} else if (index == 4) {
-				return new Response("Commands", "", PARSER_COMMANDS_NEAT);
+				return new Response("Команды", "", PARSER_COMMANDS_NEAT);
 				
 			} else if (index == 5) {
-				return new Response("Commands list", "", PARSER_COMMANDS);
+				return new Response("Список команд", "", PARSER_COMMANDS);
 				
 			} else if (index == 6) {
-				return new Response("Load example 1", "", PARSER){
+				return new Response("Загрузить пример 1", "", PARSER){
 					@Override
 					public void effects() {
-						rawText = "You see [lilaya.name] sitting at one of the tables in [lilaya.herHis] lab, playing around with an inert demonstone."
-								+ " [rose.name] is sitting beside [lilaya.herPro], gazing up lovingly into [lilaya.namePos] [lilaya.eyes+] as [rose.her] [rose.tail+] gently swishes back and forth behind [rose.herPro]."
-								+ "\n<br/><br/>\n"
-								+ "Unable to concentrate with [lilaya.her] slave hovering so close at hand, [lilaya.name] places the demonstone down onto the table, before wrapping [lilaya.her] [lilaya.arms+] around [rose.namePos] back and pulling"
-								+ " [rose.herPro] into [lilaya.her] lap. [rose.name] lets out a happy little cry as [rose.her] master finally starts giving [rose.herPro] the attention [rose.she] was craving, and as [lilaya.namePos] hand slips down"
-								+ " under [rose.her] dress, [rose.she] starts moaning in delight.";
+						rawText = "Вы видите, как [lilaya.name] сидит за одним из столов в лаборатории [lilaya.herHis], вертя в руках инертный демонстоун. [rose.name] сидит рядом с [lilaya.herPro], с любовью глядя в [lilaya.eyes+] [lilaya.namePos], пока [rose.her] [rose.tail+] плавно покачивается взад-вперед позади [rose.herPro].\n<br/><br/>\nНе в силах сосредоточиться, когда [lilaya.her] рабыня так близко, [lilaya.name] кладет демонстоун на стол, после чего обвивает [lilaya.arms+] [lilaya.her] вокруг [rose.namePos] со спины и притягивает [rose.herPro] к себе на [lilaya.her] колени. [rose.name] издает радостный тихий вскрик, когда [rose.her] господин наконец начинает уделять [rose.herPro] то внимание, которого [rose.she] так жаждала, и когда [lilaya.namePos] рука скользит под [rose.her] платье, [rose.she] начинает стонать от восторга.";
 					}
 				};
 				
 			} else if (index == 7) {
-				return new Response("Load example 2", "", PARSER){
+				return new Response("Загрузить пример 2", "", PARSER){
 					@Override
 					public void effects() {
-						rawText = "[brax.name] paces back and forth in [brax.herHis] office, growling softly to [brax.himself], [brax.speech(Hrmph... My new poster still hasn't arrived...)]";
+						rawText = "[brax.name] расхаживает взад-вперед по кабинету [brax.herHis], тихо ворча на [brax.himself]: [brax.speech(Хм... Мой новый постер всё еще не приехал...)]";
 					}
 				};
 				
 			} else if (index == 11) {
-				return new Response("Xml test",
-						"Parse every dialogue entry in the file whose path you've specified in order to check for errors. Lilaya, Brax, Rose, Ralph, Nyan, and Zaranix, are passed in as parser targets."
-						+ " Special parsing is formtted as 'SP1' and runs up to 10.",
+				return new Response("Xml тест",
+						"Проанализируйте каждую запись диалога в файле по указанному вами пути, чтобы проверить наличие ошибок. Lilaya, Brax, Rose, Ralph, Nyan и Zaranix передаются в качестве целей парсера. Специальный парсинг форматируется как 'SP1' и выполняется до 10 раз.",
 						PARSER){
 					@Override
 					public void effects() {
@@ -2324,7 +2240,7 @@ public class DebugDialogue {
 				};
 				
 			} else if (index == 0) {
-				return new Response("Back", "", DEBUG_MENU);
+				return new Response("Назад", "", DEBUG_MENU);
 				
 			} else {
 				return null;
@@ -2337,7 +2253,7 @@ public class DebugDialogue {
 		}
 	};
 	
-	public static final DialogueNode PARSER_HELP = new DialogueNode("Innoxia's super fun and interesting guide to parsing", "", true) {
+	public static final DialogueNode PARSER_HELP = new DialogueNode("Супер веселый и интересный гид Инноксии по парсингу", "", true) {
 
 		/*
 		 * I've seen String concatenation... String concatenation that you've seen.
@@ -2354,50 +2270,13 @@ public class DebugDialogue {
 					+ "<p>"
 					+ "<h6>Input:</h6><br/>"
 					+"Everything is parsed using square brackets, split into the following pattern:<br/>"
-					+"[<i style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>target</i>.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>command</i>]<br/>"
-					+"or, for the few special commands that require arguments:<br/>"
-					+"[<i style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>target</i>.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>command</i>"
-							+ "<i style='color:"+PresetColour.CLOTHING_YELLOW.toWebHexString()+";'>(arguments)</i>]<br/>"
-					+"or, for parsing as a script:<br/>"
-					+"[#<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>command</i>]<br/>"
-					+"or, for parsing as a script which suppresses output:<br/>"
-					+"[##<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>command</i>]<br/>"
-					+ "<i>(This means that the command will be executed, but no String output will be displayed.)</i>"
-					+ "</p>"
-					
-					+ "<p>"
-					+"An example of use in a sentence would be:<br/><br/>"
-					+"<i>As you start to read Innoxia's tedious parsing documentation, [lilaya.name] steps up behind you and wraps [lilaya.her] [lilaya.tail+] around your [pc.leg]."
-					+" Leaning in over your shoulder, [lilaya.she] groans, [lilaya.speech(Oh my God. This is so boring, [#pc.getName(true)]!)]'</i><br/><br/>"
-					+ "parses to:<br/><br/>"
-					+ UtilText.parse("As you start to read Innoxia's tedious parsing documentation, [lilaya.name] steps up behind you and wraps [lilaya.her] [lilaya.tail+] around your [pc.leg]."
-							+ " Leaning in over your shoulder, [lilaya.she] groans, [lilaya.speech(Oh my God. This is so boring, [#pc.getName(true)]!)]")
+					+"[<i style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>цель</i>.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>команда</i>]<br/>или, для немногих специальных команд, требующих аргументов:<br/>[<i style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>цель</i>.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>команда</i><i style='color:"+PresetColour.CLOTHING_YELLOW.toWebHexString()+";'>(аргументы)</i>]<br/>или, для парсинга как скрипта:<br/>[#<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>команда</i>]<br/>или, для парсинга как скрипта, подавляющего вывод:<br/>[##<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>команда</i>]<br/><i>(Это значит, что команда будет выполнена, но строковый вывод не отобразится.)</i></p><p>Пример использования в предложении:<br/><br/><i>Пока ты начинаешь читать нудную документацию по парсингу Инноксии, [lilaya.name] подходит сзади и обвивает [lilaya.her] [lilaya.tail+] вокруг твоих [pc.leg]. Наклонившись над твоим плечом, [lilaya.she] стонет: [lilaya.speech(О боже. Это так скучно, [#pc.getName(true)]!)]'</i><br/><br/>парсится в:<br/><br/>"
+					+ UtilText.parse("Пока ты начинаешь читать нудную документацию по парсингу Инноксии, [lilaya.name] подходит сзади и обвивает [lilaya.her] [lilaya.tail+] вокруг твоих [pc.leg]. Наклонившись над твоим плечом, [lilaya.she] стонет: [lilaya.speech(О боже. Это так скучно, [#pc.getName(true)]!)]")
 					+ "</p>"
 					+ "<br/>"
 					
 					
-					+"<h6><b style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>Target</b> <b>tag:</b></h6>"
-					+"<p>"
-					+"The target of a command is an NPC's name, or 'pc' for the player character. Target tags are <b>case-insensitive.</b> (i.e. pc is treated the same as PC, pC, or Pc)<br/>"
-					+" If an unrecognised name is passed, the output will read 'INVALID_TARGET_NAME'.<br/>"
-					+" Currently accepted target tags can be viewed in the 'Targets' page.<br/>"
-					+ "e.g.:<br/>"
-					+ "[<i style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>lilaya</i>.command]<br/>"
-					+ "[<i style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>pc</i>.command(arguments)]<br/>"
-					+ "[<i style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>npc</i>.command]"
-					+ "</p>"
-					+ "<br/>"
-					
-					
-					+"<h6><b style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>Command</b> <b>and</b> <b style='color:"+PresetColour.CLOTHING_YELLOW.toWebHexString()+";'>argument</b> <b>tags:</b></h6>"
-					+"<p>"
-					+"Command tags determine what output is returned. They come in two varieties; with and without arguments.<br/>"
-					+"Arguments are passed inside brackets that follow the command, ignoring any spaces that you may insert.<br/>"
-					+ "i.e. [pc.command(arguments)] is the same as [pc.command   (arguments)].<br/>"
-					+"Command tags are <b>only case-sensitive for the first letter</b>. (i.e. command is treated the same as cOMMAND, cOmMaNd, or commanD)<br/>"
-					+ "Arguments are specific to each command, and you'll have to refer to the command documentation to find out what arguments a command takes. (Don't worry, there aren't many that take arguments.)<br/>"
-					+ "e.g.:<br/>"
-					+ "[pc.speech<i style='color:"+PresetColour.CLOTHING_YELLOW.toWebHexString()+";'>(Hello reader!)</i>] outputs "+UtilText.parsePlayerSpeech("Hello reader!")+""
+					+"<h6><b style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>Цель</b> <b>тег:</b></h6><p>Целью команды является имя NPC или 'pc' для главного героя. Теги целей <b>нечувствительны к регистру.</b> (т.е. pc воспринимается так же, как PC, pC или Pc)<br/> Если передано нераспознанное имя, результат будет 'INVALID_TARGET_NAME'.<br/> Текущие доступные теги целей можно посмотреть на странице 'Targets'.<br/>Пример:<br/>[<i style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>lilaya</i>.command]<br/>[<i style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>pc</i>.command(аргументы)]<br/>[<i style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>npc</i>.command]</p><br/><h6><b style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>Команда</b> <b>и</b> <b style='color:"+PresetColour.CLOTHING_YELLOW.toWebHexString()+";'>аргумент</b> <b>теги:</b></h6><p>Теги команд определяют, какой результат будет возвращен. Они бывают двух видов: с аргументами и без них.<br/>Аргументы передаются внутри скобок, следующих за командой, при этом любые вставленные вами пробелы игнорируются.<br/> т.е. [pc.command(аргументы)] — это то же самое, что [pc.command   (аргументы)].<br/>Теги команд <b>чувствительны к регистру только для первой буквы</b>. (т.е. command воспринимается так же, как cOMMAND, cOmMaNd или commanD)<br/>Аргументы специфичны для каждой команды, поэтому вам придется заглянуть в документацию команды, чтобы узнать, какие аргументы она принимает. (Не волнуйтесь, команд с аргументами не так уж много.)<br/>Пример:<br/>[pc.speech<i style='color:"+PresetColour.CLOTHING_YELLOW.toWebHexString()+";'>(Привет, читатель!)</i>] выводит "+UtilText.parsePlayerSpeech("Привет, читатель!")+""
 					+ ""
 					+ "</p>"
 					
@@ -2405,90 +2284,10 @@ public class DebugDialogue {
 					+ "<b>Command modifier (a_ an_)</b><br/>"
 					+"You may insert 'a_' or 'an_' to automatically generate the appropriate pronoun before an argument. (It's your choice if you prefer a_ or an_, they both work in exactly the same way.)<br/>"
 					+"e.g.:<br/>"
-					+ "[npc.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>height</i>] outputs 'tall'<br/>"
-					+ "[npc.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>a_height</i>] outputs 'a tall'<br/>"
-					+ "[npc.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>an_height</i>] <b>also</b> outputs 'a tall'<br/><br/>"
-					
-					+"For some body part names, this provides a little more complexity.<br/>"
-					+ "e.g.:<br/>"
-					+ "[npc.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>arms</i>] outputs 'wings'<br/>"
-					+ "[npc.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>a_arms</i>] outputs 'a pair of wings'<br/>"
-					+ "[npc.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>an_arms</i>] <b>also</b> outputs 'a pair of wings'<br/><br/>"
-					+ "</p>"
-					
-					+"<p>"
-					+ "<b>Command modifier (Capitalisation)</b><br/>"
-					+"Most commands are able to apply capitalisation. The ones that don't, such as numeric output commands, will still happily take a capitalised command, but capitalisation won't be applied.<br/>"
-					+ "To capitalise an output, all you have to do is capitalise <b>the first letter</b> of the command name.<br/>"
-					+"e.g.:<br/>"
-					+ "[npc.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>height</i>] outputs 'tall'<br/>"
-					+ "[npc.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>hEIGHT</i>] <b>also</b> outputs 'tall' (I'm sure nobody would ever do this...)<br/>"
-					+ "[npc.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>Height</i>] outputs 'Tall'<br/>"
-					+ "[npc.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>a_height</i>] outputs 'a tall'<br/>"
-					+ "[npc.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>A_height</i>]  outputs 'A tall'<br/>"
-					+ "[npc.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>a_Height</i>] <b>also</b> outputs 'A tall'<br/><br/>"
-					
-					+"<p>"
-					+ "<b>Command modifier (+ D)</b><br/>"
-					+"Most commands that return a name are able to apply additional <b>randomised descriptors</b>. (You can check to see what commands accept '+' and 'D' modifiers in the 'Commands' page.)<br/>"
-					+ "To apply additional descriptors to the returned output, all you have to do is add a '+', 'd', or 'D' to the end of the command.<br/>"
-					+ "<b>This works in combination with 'a_ an_' and 'Capitalisation' modifiers.</b><br/>"
-					+"e.g.:<br/>"
-					+ "[npc.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>arms</i>] outputs 'wings'<br/>"
-					+ "[npc.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>arms+</i>] outputs 'feathered wings'<br/>"
-					+ "[npc.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>armsD</i>] <b>also</b> outputs 'feathered wings'<br/>"
-					+ "[npc.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>armsd</i>] <b>also</b> outputs 'feathered wings'<br/>"
-					+ "[npc.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>ArmsD</i>] outputs 'Feathered wings'<br/>"
-					+ "[npc.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>a_arms+</i>] outputs 'a pair of feathered wings'<br/>"
-					+ "[npc.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>A_arms+</i>]  outputs 'A pair of feathered wings'<br/><br/>"
-					
-					+"Some outputs have more randomisation than others.<br/>"
-					+ "e.g.:<br/>"
-					+ "[npc.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>pussy</i>] outputs 'slit'<br/>"
-					+ "[npc.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>pussy</i>] outputs 'cunt'<br/>"
-					+ "[npc.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>pussy+</i>] outputs 'wet pussy'<br/>"
-					+ "[npc.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>pussy+</i>] outputs 'tentacle-lined twat'<br/><br/>"
-					+ "</p>"
-					+ "<br/>"
-
-					+ "<h6>Conclusion:</h6><br/>"
-					+"<p>"
-					+"<b>Valid</b> command syntax:<br/>"
-					+"[<i style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>target</i>.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>command</i>]<br/>"
-					+"or<br/>"
-					+"[<i style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>target</i>.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>command</i>"
-							+ "<i style='color:"+PresetColour.CLOTHING_YELLOW.toWebHexString()+";'>(arguments)</i>]<br/><br/>"
-					+ "<br/>"
-
-					+ "<h6>Examples:</h6><br/>"
-					+ "[<i style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>brax</i>.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>name</i>]"
-						+ " leans back in [<i style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>brax</i>.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>his</i>]"
-						+ " chair, wondering what happened to [<i style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>arthur</i>.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>name</i>]"
-						+ " after [<i style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>brax</i>.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>he</i>]"
-						+ " handed [<i style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>arthur</i>.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>him</i>] over to Scarlett.<br/>"
-					+ "outputs:<br/>"
-					+ "'Brax leans back in his chair, wondering what happened to Arthur after he handed him over to Scarlett.'<br/><br/>"
-					
-					+ "[<i style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>rose</i>.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>name</i>]"
-						+ " leans back in "
-						+ "[<i style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>rose</i>.<i style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>herHuis</i>]"
-						+ " chair, letting out a sigh as "
-						+ "[<i style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>rose</i>.<i style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>shyeHe</i>]"
-						+ " takes a sip of [<i style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>rose</i>.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>name</i>] coffee.<br/>"
-					+ "outputs:<br/>"
-					+ UtilText.parse("[rose.name] leans back in [rose.herHuis] chair, letting out a sigh as [rose.shyeHe] takes a sip of [rose.name] coffee.")+"<br/>"
-					+ "<b>Note:</b> <i style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>Typos</i> will cause the parsing system to return an invalid command string, whereas"
-							+ " <i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>incorrect commands</i> (such as typing .name instead of .herHis) will not throw an error!<br/><br/>"
-					
-					+ "[<i style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>lilaya</i>.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>name</i>]"
-						+ " storms up to [<i style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>innoxia</i>.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>name</i>],"
-						+ " shouting angrily in response to finding out that"
-						+ " [<i style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>lilaya</i>.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>her</i>] sex scenes haven't been fixed yet,"
-								+ " [<i style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>lilaya</i>.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>speech</i>"
-										+ "<i style='color:"+PresetColour.CLOTHING_YELLOW.toWebHexString()+";'>(What the hell are you doing Innoxia?! You said my scenes were going to be re-written weeks ago!)</i>]<br/>"
-					+ "outputs:<br/>"
-					+ "'Lilaya storms up to Innoxia, shouting angrily in response to finding out that her sex scenes haven't been fixed yet, "
-						+UtilText.parseSpeech("What the hell are you doing Innoxia?! You said my scenes were going to be re-written weeks ago!", Main.game.getNpc(Lilaya.class))+"'"
+					+ "[npc.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>height</i>] выводит 'tall'<br/>[npc.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>a_height</i>] выводит 'высокий'<br/>[npc.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>an_height</i>] <b>также</b> выводит 'высокий'<br/><br/>Для некоторых названий частей тела это добавляет немного сложности.<br/>например:<br/>[npc.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>arms</i>] выводит 'крылья'<br/>[npc.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>a_arms</i>] выводит 'пара крыльев'<br/>[npc.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>an_arms</i>] <b>также</b> выводит 'пара крыльев'<br/><br/></p><p><b>Модификатор команды (Заглавные буквы)</b><br/>Большинство команд позволяют применять заглавные буквы. Те, что этого не позволяют (например, команды с числовым выводом), всё равно примут команду с заглавной буквы, но само изменение регистра не применится.<br/>Чтобы сделать вывод с заглавной буквы, нужно просто написать <b>первую букву</b> имени команды с заглавной.<br/>например:<br/>[npc.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>height</i>] выводит 'tall'<br/>[npc.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>hEIGHT</i>] <b>также</b> выводит 'высокий' (уверен, никто бы так не сделал...)<br/>[npc.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>Height</i>] выводит 'Высокий'<br/>[npc.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>a_height</i>] выводит 'высокий'<br/>[npc.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>A_height</i>] выводит 'Высокий'<br/>[npc.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>a_Height</i>] <b>также</b> выдает 'A tall'<br/><br/><p><b>Модификатор команды (+ D)</b><br/>Большинство команд, возвращающих имя, могут применять дополнительные <b>рандомизированные дескрипторы</b>. (Вы можете проверить, какие команды принимают модификаторы '+' и 'D', на странице 'Команды'.)<br/>Чтобы применить дополнительные дескрипторы к результату, вам нужно просто добавить '+', 'd' или 'D' в конец команды.<br/><b>Это работает в сочетании с модификаторами 'a_ an_' и 'Capitalisation' (Регистр).</b><br/>например:<br/>[npc.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>arms</i>] выводит 'крылья'<br/>[npc.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>arms+</i>] выдает 'feathered wings'<br/>[npc.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>armsD</i>] <b>также</b> выдает 'feathered wings'<br/>[npc.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>armsd</i>] <b>также</b> выдает 'feathered wings'<br/>[npc.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>ArmsD</i>] выдает 'Feathered wings'<br/>[npc.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>a_arms+</i>] выдает 'a pair of feathered wings'<br/>[npc.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>A_arms+</i>] выдает 'A pair of feathered wings'<br/><br/>Некоторые результаты имеют больше рандомизации, чем другие.<br/>например:<br/>[npc.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>pussy</i>] выдает 'slit'<br/>[npc.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>pussy</i>] выдает 'cunt'<br/>[npc.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>pussy+</i>] выдает 'wet pussy'<br/>[npc.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>pussy+</i>] выдает 'усеянную щупальцами киску'<br/><br/></p><br/><h6>Итог:</h6><br/><p><b>Верный</b> синтаксис команды:<br/>[<i style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>цель</i>.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>команда</i>]<br/>или<br/>[<i style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>цель</i>.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>команда</i><i style='color:"+PresetColour.CLOTHING_YELLOW.toWebHexString()+";'>(аргументы)</i>]<br/><br/><br/><h6>Примеры:</h6><br/>[<i style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>Бракс</i>.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>name</i>] откидывается на [<i style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>Бракс</i>.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>его</i>] спинку стула, гадая, что случилось с [<i style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>артур</i>.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>name</i>] после [<i style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>Бракс</i>.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>он</i>] передал [<i style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>артур</i>.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>его</i>] в руки Scarlett.<br/>вывод:<br/>'Brax откидывается на спинку своего кресла, гадая, что стало с Arthur после того, как он передал его Scarlett.'<br/><br/>[<i style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>встал</i>.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>name</i>] откидывается на [<i style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>встала</i>.<i style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>она</i>] поднялась со своего стула, вздохнув, когда [<i style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>встал</i>.<i style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>он</i>] делает глоток [<i style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>встала</i>.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>название</i>] кофе.<br/>вывод:<br/>"
+					+ UtilText.parse("[rose.name] откидывается на спинку [rose.herHuis] кресла, вздыхая, когда [rose.shyeHe] делает глоток [rose.name] кофе.")+"<br/>"
+					+ "<b>Note:</b> <i style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>Опечатки</i> заставят систему парсинга вернуть неверную строку команды, тогда как <i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>неправильные команды</i> (например, ввод .name вместо .herHis) не вызовут ошибки!<br/><br/>[<i style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>лиловая</i>.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>name</i>] врывается к [<i style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>инноксия</i>.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>name</i>], гневно крича, узнав, что [<i style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>лиловая</i>.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>ее</i>] секс-сцены еще не исправили, [<i style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>лиловая</i>.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>речь</i><i style='color:"+PresetColour.CLOTHING_YELLOW.toWebHexString()+";'>(Какого черта ты творишь, Инноксия?! Ты сказала, что мои сцены перепишут еще несколько недель назад!)</i>]<br/>выводы:<br/>'Lilaya в ярости подлетает к Инноксии, крича от возмущения, узнав, что ее секс-сцены до сих пор не исправлены, "
+						+UtilText.parseSpeech("Какого черта ты творишь, Инноксия?! Ты сказала, что мои сцены перепишут еще несколько недель назад!", Main.game.getNpc(Lilaya.class))+"'"
 					
 					+ "</p>";
 		}
@@ -2501,22 +2300,22 @@ public class DebugDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Parser", "", PARSER);
+				return new Response("Парсер", "", PARSER);
 					
 			} else if (index == 2) {
-				return new Response("Help", "", null);
+				return new Response("Помочь", "", null);
 					
 			} else if (index == 3) {
-				return new Response("Targets", "", PARSER_TARGETS);
+				return new Response("Цели", "", PARSER_TARGETS);
 				
 			} else if (index == 4) {
-				return new Response("Commands", "", PARSER_COMMANDS_NEAT);
+				return new Response("Команды", "", PARSER_COMMANDS_NEAT);
 				
 			} else if (index == 5) {
-				return new Response("Commands list", "", PARSER_COMMANDS);
+				return new Response("Список команд", "", PARSER_COMMANDS);
 				
 			} else if (index == 0) {
-				return new Response("Back", "", DEBUG_MENU);
+				return new Response("Назад", "", DEBUG_MENU);
 				
 			} else {
 				return null;
@@ -2529,15 +2328,13 @@ public class DebugDialogue {
 		}
 	};
 	
-	public static final DialogueNode PARSER_TARGETS = new DialogueNode("Parser", "", true) {
+	public static final DialogueNode PARSER_TARGETS = new DialogueNode("Парсер", "", true) {
 
 		@Override
 		public String getHeaderContent() {
 			UtilText.nodeContentSB.setLength(0);
 			
-			UtilText.nodeContentSB.append("<p>Here are a list of accepted <i style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>targets</i>, for use in the parsing syntax:<br/>"
-					+ "[<i style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>target</i>.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>command</i>"
-							+ "<i style='color:"+PresetColour.CLOTHING_YELLOW.toWebHexString()+";'>(arguments)</i>]</p>");
+			UtilText.nodeContentSB.append("<p>Here are a list of accepted <i style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>цели</i>, для использования в синтаксисе парсинга:<br/>[<i style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>цель</i>.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>команда</i><i style='color:"+PresetColour.CLOTHING_YELLOW.toWebHexString()+";'>(аргументы)</i>]</p>");
 			
 			for(AbstractParserTarget character : ParserTarget.getAllParserTargets()) {
 				UtilText.nodeContentSB.append("<hr/>"
@@ -2565,22 +2362,22 @@ public class DebugDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Parser", "", PARSER);
+				return new Response("Парсер", "", PARSER);
 				
 			} else if (index == 2) {
-				return new Response("Help", "", PARSER_HELP);
+				return new Response("Помочь", "", PARSER_HELP);
 				
 			} else if (index == 3) {
-				return new Response("Targets", "", null);
+				return new Response("Цели", "", null);
 				
 			} else if (index == 4) {
-				return new Response("Commands", "", PARSER_COMMANDS_NEAT);
+				return new Response("Команды", "", PARSER_COMMANDS_NEAT);
 				
 			} else if (index == 5) {
-				return new Response("Commands list", "", PARSER_COMMANDS);
+				return new Response("Список команд", "", PARSER_COMMANDS);
 				
 			} else if (index == 0) {
-				return new Response("Back", "", DEBUG_MENU);
+				return new Response("Назад", "", DEBUG_MENU);
 				
 			} else {
 				return null;
@@ -2593,19 +2390,13 @@ public class DebugDialogue {
 		}
 	};
 	
-	public static final DialogueNode PARSER_COMMANDS = new DialogueNode("Parser", "", true) {
+	public static final DialogueNode PARSER_COMMANDS = new DialogueNode("Парсер", "", true) {
 
 		@Override
 		public String getHeaderContent() {
 			UtilText.nodeContentSB.setLength(0);
 			
-			UtilText.nodeContentSB.append("<p>Here are a list of accepted <i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>commands</i>, for use in the parsing syntax:<br/>"
-						+ "[<i style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>target</i>.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>command</i>"
-						+ "<i style='color:"+PresetColour.CLOTHING_YELLOW.toWebHexString()+";'>(arguments)</i>]</p>"
-						+ "<p>"
-							+ "<b>Please don't be intimidated by the number of commands!</b>"
-							+ " The <i>vast</i> majority of them are automatically generated 'standard' variations for body parts, following a (hopefully) intuitive naming system."
-						+ "</p>");
+			UtilText.nodeContentSB.append("<p>Here are a list of accepted <i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>команды</i>, для использования в синтаксисе парсинга:<br/>[<i style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>цель</i>.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>команда</i><i style='color:"+PresetColour.CLOTHING_YELLOW.toWebHexString()+";'>(аргументы)</i>]</p><p><b>Пожалуйста, не пугайтесь количества команд!</b> <i>Подавляющее</i> большинство из них — это автоматически сгенерированные «стандартные» вариации для частей тела, следующие (надеемся, что) интуитивно понятной системе именования.</p>");
 			
 			int count=1;
 			for(ParserCommand command : UtilText.commandsList) {
@@ -2633,22 +2424,22 @@ public class DebugDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Parser", "", PARSER);
+				return new Response("Парсер", "", PARSER);
 				
 			} else if (index == 2) {
-				return new Response("Help", "", PARSER_HELP);
+				return new Response("Помочь", "", PARSER_HELP);
 				
 			} else if (index == 3) {
-				return new Response("Targets", "", PARSER_TARGETS);
+				return new Response("Цели", "", PARSER_TARGETS);
 				
 			} else if (index == 4) {
-				return new Response("Commands", "", PARSER_COMMANDS_NEAT);
+				return new Response("Команды", "", PARSER_COMMANDS_NEAT);
 				
 			} else if (index == 5) {
-				return new Response("Commands list", "", null);
+				return new Response("Список команд", "", null);
 				
 			} else if (index == 0) {
-				return new Response("Back", "", DEBUG_MENU);
+				return new Response("Назад", "", DEBUG_MENU);
 				
 			} else {
 				return null;
@@ -2661,19 +2452,13 @@ public class DebugDialogue {
 		}
 	};
 	
-	public static final DialogueNode PARSER_COMMANDS_NEAT = new DialogueNode("Parser", "", true) {
+	public static final DialogueNode PARSER_COMMANDS_NEAT = new DialogueNode("Парсер", "", true) {
 
 		@Override
 		public String getHeaderContent() {
 			UtilText.nodeContentSB.setLength(0);
 			
-			UtilText.nodeContentSB.append("<p>Here are a list of accepted <i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>commands</i>, for use in the parsing syntax:<br/>"
-						+ "[<i style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>target</i>.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>command</i>"
-						+ "<i style='color:"+PresetColour.CLOTHING_YELLOW.toWebHexString()+";'>(arguments)</i>]</p>"
-						+ "<p>"
-							+ "<b>Please don't be intimidated by the number of commands!</b>"
-							+ " The <i>vast</i> majority of them are automatically generated 'standard' variations for body parts, following a (hopefully) intuitive naming system."
-						+ "</p>");
+			UtilText.nodeContentSB.append("<p>Here are a list of accepted <i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>команды</i>, для использования в синтаксисе парсинга:<br/>[<i style='color:"+PresetColour.CLOTHING_BLUE_LIGHT.toWebHexString()+";'>цель</i>.<i style='color:"+PresetColour.CLOTHING_PINK_LIGHT.toWebHexString()+";'>команда</i><i style='color:"+PresetColour.CLOTHING_YELLOW.toWebHexString()+";'>(аргументы)</i>]</p><p><b>Пожалуйста, не пугайтесь количества команд!</b> <i>Подавляющее</i> большинство из них — это автоматически сгенерированные «стандартные» вариации для частей тела, следующие (надеемся, что) интуитивно понятной системе именования.</p>");
 			
 			int count = 1;
 			for(BodyPartType bpt : BodyPartType.values()) {
@@ -2691,19 +2476,18 @@ public class DebugDialogue {
 					}
 					
 					UtilText.nodeContentSB.append("<br/>"
-							+(command.getArguments()==""?"<i style='color:"+PresetColour.TEXT_GREY.toWebHexString()+";'>No arguments</i>":"<i style='color:"+PresetColour.CLOTHING_YELLOW.toWebHexString()+";'>"+command.getArguments()+"</i>")+"<br/>"
-							+(command.isAllowsCapitalisation()?"<i style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>Capitalisation</i>":"<i style='color:"+PresetColour.TEXT_GREY.toWebHexString()+";'>Capitalisation</i>")
-								+ " | " +(command.isAllowsPronoun()?"<i style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>Pronouns</i>":"<i style='color:"+PresetColour.TEXT_GREY.toWebHexString()+";'>Pronouns</i>")
+							+(command.getArguments()==""?"<i style='color:"+PresetColour.TEXT_GREY.toWebHexString()+";'>Без аргументов</i>":"<i style='color:"+PresetColour.CLOTHING_YELLOW.toWebHexString()+";'>"+command.getArguments()+"</i>")+"<br/>"
+							+(command.isAllowsCapitalisation()?"<i style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>Регистр</i>":"<i style='color:"+PresetColour.TEXT_GREY.toWebHexString()+";'>Регистр</i>")
+								+ " | " +(command.isAllowsPronoun()?"<i style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>Местоимения</i>":"<i style='color:"+PresetColour.TEXT_GREY.toWebHexString()+";'>Местоимения</i>")
 								+"<br/>"
-							+command.getDescription()+"<br/>"
-							+"Examples:<br/>"
-							+ command.getExampleBeforeParse("lilaya", (command.getArguments()==""?"":command.getArgumentExample()))+" -> "
-								+UtilText.parse("[lilaya."+command.getTags().get(0)+(command.getArguments()==""?"":"("+command.getArgumentExample()+")")+"]")+"<br/>"
+							+command.getDescription()+"<br/>Примеры:<br/>"
+							+ command.getExampleBeforeParse("лилая", (command.getArguments()==""?"":command.getArgumentExample()))+" -> "
+								+UtilText.parse("[лилая."+command.getTags().get(0)+(command.getArguments()==""?"":"("+command.getArgumentExample()+")")+"]")+"<br/>"
 							
-							+ command.getExampleBeforeParse("brax", (command.getArguments()==""?"":command.getArgumentExample()))+" -> "
-								+UtilText.parse("[brax."+command.getTags().get(0)+(command.getArguments()==""?"":"("+command.getArgumentExample()+")")+"]")+"<br/>"
+							+ command.getExampleBeforeParse("бракс", (command.getArguments()==""?"":command.getArgumentExample()))+" -> "
+								+UtilText.parse("[бракс."+command.getTags().get(0)+(command.getArguments()==""?"":"("+command.getArgumentExample()+")")+"]")+"<br/>"
 							
-							+ command.getExampleBeforeParse("kate", (command.getArguments()==""?"":command.getArgumentExample()))+" -> "
+							+ command.getExampleBeforeParse("кейт", (command.getArguments()==""?"":command.getArgumentExample()))+" -> "
 								+UtilText.parse("[kate."+command.getTags().get(0)+(command.getArguments()==""?"":"("+command.getArgumentExample()+")")+"]")
 							+"</p>");
 					
@@ -2724,22 +2508,22 @@ public class DebugDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Parser", "", PARSER);
+				return new Response("Парсер", "", PARSER);
 				
 			} else if (index == 2) {
-				return new Response("Help", "", PARSER_HELP);
+				return new Response("Помочь", "", PARSER_HELP);
 				
 			} else if (index == 3) {
-				return new Response("Targets", "", PARSER_TARGETS);
+				return new Response("Цели", "", PARSER_TARGETS);
 				
 			} else if (index == 4) {
-				return new Response("Commands", "", null);
+				return new Response("Команды", "", null);
 				
 			} else if (index == 5) {
-				return new Response("Commands list", "", PARSER_COMMANDS);
+				return new Response("Список команд", "", PARSER_COMMANDS);
 				
 			} else if (index == 0) {
-				return new Response("Back", "", DEBUG_MENU);
+				return new Response("Назад", "", DEBUG_MENU);
 				
 			} else {
 				return null;
@@ -2769,9 +2553,9 @@ public class DebugDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				if(Main.sex.isDom(Main.game.getPlayer())) {
-					return new Response("Continue", "Now that you've put this bitch in [npc.her] place, you can continue with what you were doing...", Main.game.getDefaultDialogue(false));
+					return new Response("Продолжить", "Теперь, когда ты поставил эту сучку на [npc.her] место, можешь продолжать то, чем занимался...", Main.game.getDefaultDialogue(false));
 				} else {
-					return new Response("Continue", "Now that you've been put in your place like the bitch you are, you can continue with what you were doing...", Main.game.getDefaultDialogue(false));
+					return new Response("Продолжить", "Теперь, когда тебя поставили на место, как и подобает сучке, можешь продолжать то, чем занимался...", Main.game.getDefaultDialogue(false));
 				}
 			}
 			return null;
@@ -2791,8 +2575,8 @@ public class DebugDialogue {
 			
 			if(index==1) {
 				return new ResponseSex(
-						UtilText.parse(centaur, "Dom [npc.herHim]"),
-						UtilText.parse(centaur, "Take the dominant role and fuck this [npc.race]."),
+						UtilText.parse(centaur, "Доминируй над [npc.herHim]"),
+						UtilText.parse(centaur, "Возьми на себя роль доминанта и трахни эту [npc.race]."),
 						true,
 						false,
 						new SMGeneric(
@@ -2801,15 +2585,12 @@ public class DebugDialogue {
 								Main.game.getPlayer().getCompanions(),
 								null),
 						DebugDialogue.POST_SEX_CENTAUR,
-						"<p>"
-							+ "Deciding that you want to dominate this [npc.race] who just magically appeared before you, you step up to [npc.herHim] and growl,"
-							+ " [pc.speech(It's time to put you in your place!)]"
-						+ "</p>");
+						"<p>Решив, что хочешь подчинить себе эту [npc.race], которая только что магическим образом возникла перед тобой, ты подходишь к [npc.herHim] и рычишь: [pc.speech(Пора поставить тебя на место!)]</p>");
 				
 			} else if(index==2) {
 				return new ResponseSex(
-						UtilText.parse(centaur, "Submit to [npc.herHim]"),
-						UtilText.parse(centaur, "Take the submissive role and let this [npc.race] fuck you."),
+						UtilText.parse(centaur, "Подчиниться [npc.herHim]"),
+						UtilText.parse(centaur, "Возьми на себя роль подчиненной и позволь этой [npc.race] трахать тебя."),
 						true,
 						false,
 						new SMGeneric(
@@ -2818,13 +2599,10 @@ public class DebugDialogue {
 								null,
 								Main.game.getPlayer().getCompanions()),
 						DebugDialogue.POST_SEX_CENTAUR,
-						"<p>"
-							+ "Deciding that you want to get dominated by this [npc.race] who just magically appeared before you, you step up to [npc.herHim] and plead,"
-							+ " [pc.speech(It's time for you to put me in my place!)]"
-						+ "</p>");
+						"<p>Решив, что хочешь, чтобы эта [npc.race] подчинила тебя себе, ты подходишь к [npc.herHim] и умоляешь: [pc.speech(Пора тебе поставить меня на место!)]</p>");
 				
 			} else if(index==0) {
-				return new Response("Nevermind", UtilText.parse(centaur, "Decide not to do anything with this [npc.race], and instead just continue with what you were doing..."), Main.game.getDefaultDialogue(false)) {
+				return new Response("Неважно", UtilText.parse(centaur, "Решить ничего не делать с этим [npc.race], а вместо этого просто продолжить то, чем вы занимались..."), Main.game.getDefaultDialogue(false)) {
 					@Override
 					public void effects() {
 						Main.game.banishNPC(centaur);
@@ -2852,14 +2630,14 @@ public class DebugDialogue {
 			if(index==1) {
 				NPC centaur = Main.game.getActiveNPC();
 				if(Main.sex.isDom(Main.game.getPlayer())) {
-					return new Response("Continue", UtilText.parse(centaur, "Now that you've put this [npc.race] in [npc.her] place, you can continue with what you were doing..."), Main.game.getDefaultDialogue(false)) {
+					return new Response("Продолжить", UtilText.parse(centaur, "Теперь, когда вы поместили этот [npc.race] на его [npc.her] место, вы можете продолжить то, чем занимались..."), Main.game.getDefaultDialogue(false)) {
 						@Override
 						public void effects() {
 							Main.game.banishNPC(centaur);
 						}
 					};
 				} else {
-					return new Response("Continue", UtilText.parse(centaur, "Now that you've been put in your place by this [npc.race], you can continue with what you were doing..."), Main.game.getDefaultDialogue(false)) {
+					return new Response("Продолжить", UtilText.parse(centaur, "Теперь, когда этот [npc.race] поставил вас на место, вы можете продолжить то, чем занимались..."), Main.game.getDefaultDialogue(false)) {
 						@Override
 						public void effects() {
 							Main.game.banishNPC(centaur);
@@ -2910,9 +2688,9 @@ public class DebugDialogue {
 							sb.append("<b style='color:"+move.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(move.getName(0, Main.game.getPlayer()))+"</b>: "+move.getDescription(0, Main.game.getPlayer()));
 							sb.append("<br/>");
 							if(cat==CombatMoveCategory.SPELL) {
-								sb.append("Type: <span style='color:"+move.getAssociatedSpell().getSpellSchool().getColour().toWebHexString()+";'>"+Util.capitaliseSentence(move.getAssociatedSpell().getSpellSchool().getName())+" Spell</span> | ");
+								sb.append("Тип: <span style='color:"+move.getAssociatedSpell().getSpellSchool().getColour().toWebHexString()+";'>"+Util.capitaliseSentence(move.getAssociatedSpell().getSpellSchool().getName())+" Заклинание</span> | ");
 							} else {
-								sb.append("Type: <span style='color:"+move.getType().getColour().toWebHexString()+";'>"+Util.capitaliseSentence(move.getType().getName())+"</span> | ");
+								sb.append("Тип: <span style='color:"+move.getType().getColour().toWebHexString()+";'>"+Util.capitaliseSentence(move.getType().getName())+"</span> | ");
 							}
 							sb.append("ID: <span style='font-family:monospace;'>"+move.getIdentifier()+"</span>");
 						sb.append("</p>");
@@ -2934,19 +2712,19 @@ public class DebugDialogue {
 	};
 
 
-	public static final DialogueNode RANDOM_ENCHANTMENT_CLOTHING = new DialogueNode("Random Clothing Enchantments", "", false) {
+	public static final DialogueNode RANDOM_ENCHANTMENT_CLOTHING = new DialogueNode("Случайные зачарования одежды", "", false) {
 		@Override
 		public String getContent() {
 			StringBuilder sb = new StringBuilder();
 			
-			sb.append(UtilText.parse("<h4>[style.colourMinorGood(Positive Enchantments:)]</h4>"));
+			sb.append(UtilText.parse("<h4>[style.colourMinorGood(Положительные зачарования:)]</h4>"));
 			int i=0;
 			for(RandomEnchantment randomEnchantment : RandomEnchantment.getAllPositiveClothingEnchantments()) {
 				sb.append(getFormattedEnchantmentEntry(i%2==0, randomEnchantment));
 				i++;
 			}
 			
-			sb.append(UtilText.parse("<h4>[style.colourMinorBad(Negative Enchantments:)]</h4>"));
+			sb.append(UtilText.parse("<h4>[style.colourMinorBad(Отрицательные чары:)]</h4>"));
 			i=0;
 			for(RandomEnchantment randomEnchantment : RandomEnchantment.getAllNegativeClothingEnchantments()) {
 				sb.append(getFormattedEnchantmentEntry(i%2==0, randomEnchantment));
@@ -2984,33 +2762,30 @@ public class DebugDialogue {
 			sb.append("</div>");
 			sb.append("<div class='container-full-width' style='span:0; margin:0; width:50%; -webkit-user-select:auto; font-family:monospace; font-size:0.75em;background:#00000000;'>");
 				if(randomEnchantment.isMod()) {
-					sb.append(UtilText.parse("[style.colourGreenLight(MOD)] "));
+					sb.append(UtilText.parse("[style.colourGreenLight(МОД)] "));
 				} else {
-					sb.append(UtilText.parse("[style.colourBlueLight(RES)] "));
+					sb.append(UtilText.parse("[style.colourBlueLight(РЕЗ)] "));
 				}
 				sb.append(RandomEnchantment.getIdFromRandomEnchantment(randomEnchantment));
 			sb.append("</div>");
 
 			sb.append("<div class='container-full-width' style='background:"+PresetColour.BACKGROUND_DARK.toWebHexString()+"; -webkit-user-select:auto; margin-top:0;'>");
-				sb.append("spawnWeighting:<br/>");
+				sb.append("вес_спавна:<br/>");
 				sb.append("<span style='font-family:monospace; font-size:0.75em;'>"+randomEnchantment.getSpawnWeighting()+"</span>");
 			sb.append("</div>");
 			
 			if(!preParsingString.isEmpty()) {
 				sb.append("<div class='container-full-width' style='background:"+PresetColour.BACKGROUND_DARK.toWebHexString()+"; -webkit-user-select:auto; margin-top:0;'>");
-					sb.append("conditionalPreParsing:<br/>");
+					sb.append("условный_предварительный_парсинг:<br/>");
 					sb.append("<span style='font-family:monospace; font-size:0.75em;'>"+preParsingString+"</span>");
 				sb.append("</div>");
 			}
 			
 			
 			sb.append("<div class='container-full-width' style='margin:0; padding:0; background:#00000000; text-align:center;'>");
-				sb.append("<div class='normal-button' id='RANDOM_ENCHANTMENT_"+randomEnchantmentClothingIds.get(0)+"_"+RandomEnchantment.getIdFromRandomEnchantment(randomEnchantment)+"'"
-						+ " style='width:18%; margin:1%; padding:2px; font-size:0.9em; color:"+PresetColour.FEMININE.toWebHexString()+";'>Spawn Panties</div>");
-				sb.append("<div class='normal-button' id='RANDOM_ENCHANTMENT_"+randomEnchantmentClothingIds.get(1)+"_"+RandomEnchantment.getIdFromRandomEnchantment(randomEnchantment)+"'"
-						+ " style='width:18%; margin:1%; padding:2px; font-size:0.9em; color:"+PresetColour.ANDROGYNOUS.toWebHexString()+";'>Spawn T-shirt</div>");
-				sb.append("<div class='normal-button' id='RANDOM_ENCHANTMENT_"+randomEnchantmentClothingIds.get(2)+"_"+RandomEnchantment.getIdFromRandomEnchantment(randomEnchantment)+"'"
-						+ " style='width:18%; margin:1%; padding:2px; font-size:0.9em; color:"+PresetColour.MASCULINE.toWebHexString()+";'>Spawn Watch</div>");
+				sb.append("<div class='normal-button' id='RANDOM_ENCHANTMENT_"+randomEnchantmentClothingIds.get(0)+"_"+RandomEnchantment.getIdFromRandomEnchantment(randomEnchantment)+"' style='width:18%; margin:1%; padding:2px; font-size:0.9em; color:"+PresetColour.FEMININE.toWebHexString()+";'>Заспавнить трусики</div>");
+				sb.append("<div class='normal-button' id='RANDOM_ENCHANTMENT_"+randomEnchantmentClothingIds.get(1)+"_"+RandomEnchantment.getIdFromRandomEnchantment(randomEnchantment)+"' style='width:18%; margin:1%; padding:2px; font-size:0.9em; color:"+PresetColour.ANDROGYNOUS.toWebHexString()+";'>Заспавнить футболку</div>");
+				sb.append("<div class='normal-button' id='RANDOM_ENCHANTMENT_"+randomEnchantmentClothingIds.get(2)+"_"+RandomEnchantment.getIdFromRandomEnchantment(randomEnchantment)+"' style='width:18%; margin:1%; padding:2px; font-size:0.9em; color:"+PresetColour.MASCULINE.toWebHexString()+";'>Заспавнить часы</div>");
 			sb.append("</div>");
 			
 		sb.append("</div>");
@@ -3019,19 +2794,19 @@ public class DebugDialogue {
 	}
 	
 	//TODO
-	public static final DialogueNode RANDOM_ENCHANTMENT_POTIONS = new DialogueNode("Random Potion Enchantments", "", false) {
+	public static final DialogueNode RANDOM_ENCHANTMENT_POTIONS = new DialogueNode("Случайные зачарования зелий", "", false) {
 		@Override
 		public String getContent() {
 			StringBuilder sb = new StringBuilder();
 			
-			sb.append(UtilText.parse("<h4>[style.colourMinorGood(Positive Enchantments:)]</h4>"));
+			sb.append(UtilText.parse("<h4>[style.colourMinorGood(Положительные зачарования:)]</h4>"));
 			int i=0;
 			for(RandomPotionEnchantment randomEnchantment : RandomPotionEnchantment.getAllPositivePotionEnchantments()) {
 				sb.append(getFormattedPotionEnchantmentEntry(i%2==0, randomEnchantment));
 				i++;
 			}
 			
-			sb.append(UtilText.parse("<h4>[style.colourMinorBad(Negative Enchantments:)]</h4>"));
+			sb.append(UtilText.parse("<h4>[style.colourMinorBad(Отрицательные чары:)]</h4>"));
 			i=0;
 			for(RandomPotionEnchantment randomEnchantment : RandomPotionEnchantment.getAllNegativePotionEnchantments()) {
 				sb.append(getFormattedPotionEnchantmentEntry(i%2==0, randomEnchantment));
@@ -3067,29 +2842,28 @@ public class DebugDialogue {
 			sb.append("</div>");
 			sb.append("<div class='container-full-width' style='span:0; margin:0; width:50%; -webkit-user-select:auto; font-family:monospace; font-size:0.75em;background:#00000000;'>");
 				if(randomEnchantment.isMod()) {
-					sb.append(UtilText.parse("[style.colourGreenLight(MOD)] "));
+					sb.append(UtilText.parse("[style.colourGreenLight(МОД)] "));
 				} else {
-					sb.append(UtilText.parse("[style.colourBlueLight(RES)] "));
+					sb.append(UtilText.parse("[style.colourBlueLight(РЕЗ)] "));
 				}
 				sb.append(RandomPotionEnchantment.getIdFromRandomEnchantment(randomEnchantment));
 			sb.append("</div>");
 
 			sb.append("<div class='container-full-width' style='background:"+PresetColour.BACKGROUND_DARK.toWebHexString()+"; -webkit-user-select:auto; margin-top:0;'>");
-				sb.append("spawnWeighting:<br/>");
+				sb.append("вес_спавна:<br/>");
 				sb.append("<span style='font-family:monospace; font-size:0.75em;'>"+randomEnchantment.getSpawnWeighting()+"</span>");
 			sb.append("</div>");
 			
 			if(!preParsingString.isEmpty()) {
 				sb.append("<div class='container-full-width' style='background:"+PresetColour.BACKGROUND_DARK.toWebHexString()+"; -webkit-user-select:auto; margin-top:0;'>");
-					sb.append("conditionalPreParsing:<br/>");
+					sb.append("условный_предварительный_парсинг:<br/>");
 					sb.append("<span style='font-family:monospace; font-size:0.75em;'>"+preParsingString+"</span>");
 				sb.append("</div>");
 			}
 			
 			
 			sb.append("<div class='container-full-width' style='margin:0; padding:0; background:#00000000; text-align:center;'>");
-				sb.append("<div class='normal-button' id='RANDOM_POTION_ENCHANTMENT_"+RandomPotionEnchantment.getIdFromRandomEnchantment(randomEnchantment)+"'"
-						+ " style='width:18%; margin:1%; padding:2px; font-size:0.9em; color:"+PresetColour.TRANSFORMATION_GENERIC.toWebHexString()+";'>Spawn potion</div>");
+				sb.append("<div class='normal-button' id='RANDOM_POTION_ENCHANTMENT_"+RandomPotionEnchantment.getIdFromRandomEnchantment(randomEnchantment)+"' style='width:18%; margin:1%; padding:2px; font-size:0.9em; color:"+PresetColour.TRANSFORMATION_GENERIC.toWebHexString()+";'>Создать зелье</div>");
 			sb.append("</div>");
 			
 		sb.append("</div>");

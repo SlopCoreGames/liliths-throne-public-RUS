@@ -37,14 +37,14 @@ import com.lilithsthrone.utils.Util.Value;
  */
 public class SexPositionUnique {
 
-	public static final AbstractSexPosition PET_MOUNTING = new AbstractSexPosition("Mounted",
+	public static final AbstractSexPosition PET_MOUNTING = new AbstractSexPosition("Оседлан",
 			2,
 			true,
 			null, Util.newArrayListOfValues(PetMounting.class)) {
 		@Override
 		public String getDescription(Map<GameCharacter, SexSlot> occupiedSlots) {
 			return UtilText.parse(Main.sex.getCharacterInPosition(SexSlotUnique.PET_MOUNTING_ON_ALL_FOURS), Main.sex.getCharacterInPosition(SexSlotUnique.PET_MOUNTING_HUMPING),
-					"[npc.NameIs] down on all fours, and [npc.has] been mounted by [npc2.name], who's desperate to penetrate and start humping [npc.herHim].");
+					"[npc.NameIs] стоит на четвереньках, а [npc.has] оседлала [npc2.name], который отчаянно жаждет проникнуть в [npc.herHim] и начать вовсю трахать её.");
 		}
 		@Override
 		public Map<SexSlot, Map<SexSlot, SexActionInteractions>> getSlotTargets() {
@@ -65,14 +65,14 @@ public class SexPositionUnique {
 		}
 	};
 	
-	public static final AbstractSexPosition PET_ORAL = new AbstractSexPosition("Pet Oral",
+	public static final AbstractSexPosition PET_ORAL = new AbstractSexPosition("Оральный секс в положении лежа",
 			2,
 			true,
 			null, Util.newArrayListOfValues(PetOral.class)) {
 		@Override
 		public String getDescription(Map<GameCharacter, SexSlot> occupiedSlots) {
 			return UtilText.parse(Main.sex.getCharacterInPosition(SexSlotUnique.PET_ORAL_ON_ALL_FOURS), Main.sex.getCharacterInPosition(SexSlotUnique.PET_ORAL_COCKED_LEG),
-					"[npc.NameIs] down on all fours, with [npc2.namePos] [npc2.leg] hooked over [npc.her] neck, leaving [npc.her] face just [unit.sizes] away from [npc2.namePos] [npc2.cock+].");
+					"[npc.NameIs] стоит на четвереньках, а [npc2.namePos] [npc2.leg] нависает над [npc.her], так что лицо [npc.her] находится всего в [unit.sizes] от [npc2.namePos] [npc2.cock+].");
 		}
 		@Override
 		public Map<SexSlot, Map<SexSlot, SexActionInteractions>> getSlotTargets() {
@@ -82,14 +82,14 @@ public class SexPositionUnique {
 		}
 	};
 	
-	public static final AbstractSexPosition UNDER_DESK_RALPH = new AbstractSexPosition("Under desk",
+	public static final AbstractSexPosition UNDER_DESK_RALPH = new AbstractSexPosition("Под столом",
 			2,
 			false,
 			null,
 			Util.newArrayListOfValues(RalphOral.class)) {
 		@Override
 		public String getDescription(Map<GameCharacter, SexSlot> occupiedSlots) {
-			return "You're kneeling under Ralph's counter, with your face just [unit.sizes] away from his crotch.";
+			return "Вы стоите на коленях под прилавком Ральфа, и ваше лицо находится всего в [unit.sizes] от его паха.";
 		}
 		@Override
 		public Map<SexSlot, Map<SexSlot, SexActionInteractions>> getSlotTargets() {
@@ -109,14 +109,14 @@ public class SexPositionUnique {
 		}
 	};
 
-	public static final AbstractSexPosition OVER_DESK_RALPH = new AbstractSexPosition("Over desk",
+	public static final AbstractSexPosition OVER_DESK_RALPH = new AbstractSexPosition("На столе",
 			2,
 			false,
 			null,
 			Util.newArrayListOfValues(RalphOral.class)) {
 		@Override
 		public String getDescription(Map<GameCharacter, SexSlot> occupiedSlots) {
-			return "You're bent over Ralph's counter, with the horse-boy standing right behind you.";
+			return "Вы склонились над прилавком Ральфа, а конь-мальчик стоит прямо у вас за спиной.";
 		}
 		@Override
 		public Map<SexSlot, Map<SexSlot, SexActionInteractions>> getSlotTargets() {
@@ -136,13 +136,13 @@ public class SexPositionUnique {
 		}
 	};
 	
-	public static final AbstractSexPosition SHOWER_TIME_PIX = new AbstractSexPosition("Shower sex",
+	public static final AbstractSexPosition SHOWER_TIME_PIX = new AbstractSexPosition("Секс в душе",
 			2,
 			false,
 			null, Util.newArrayListOfValues(PixShower.class)) {
 		@Override
 		public String getDescription(Map<GameCharacter, SexSlot> occupiedSlots) {
-			return "You're standing with your face pressed up against one wall of the shower, and behind you, Pix is growling hungrily into your ear.";
+			return "Вы стоите, прижавшись лицом к одной из стенок душевой, а позади вас Пикс голодно рычит вам прямо в ухо.";
 		}
 		@Override
 		public Map<SexSlot, Map<SexSlot, SexActionInteractions>> getSlotTargets() {
@@ -152,13 +152,13 @@ public class SexPositionUnique {
 		}
 	};
 	
-	public static final AbstractSexPosition HANDS_ROSE = new AbstractSexPosition("Hand-holding",
+	public static final AbstractSexPosition HANDS_ROSE = new AbstractSexPosition("Держание за руки",
 			2,
 			false,
 			null, Util.newArrayListOfValues(RoseHandHolding.class, GenericOrgasms.class)) {
 		@Override
 		public String getDescription(Map<GameCharacter, SexSlot> occupiedSlots) {
-			return "You and the cat-girl maid, Rose, are standing facing one another, ready to perform lewd acts with one another's hands.";
+			return "Вы и кошкодевочка-горничная Роуз стоите лицом к лицу, готовые ласкать друг друга руками.";
 		}
 		@Override
 		public Map<SexSlot, Map<SexSlot, SexActionInteractions>> getSlotTargets() {
@@ -169,13 +169,13 @@ public class SexPositionUnique {
 		}
 	};
 	
-	public static final AbstractSexPosition KNEELING_ORAL_CULTIST = new AbstractSexPosition("Kneeling",
+	public static final AbstractSexPosition KNEELING_ORAL_CULTIST = new AbstractSexPosition("На коленях",
 			2,
 			true,
 			null, Util.newArrayListOfValues(CultistSexActions.class)) {
 		@Override
 		public String getDescription(Map<GameCharacter, SexSlot> occupiedSlots) {
-			return "You're kneeling at the feet of [npc.name], with your [pc.face+] hovering just [unit.sizes] away from [npc.her] groin.";
+			return "Вы стоите на коленях у ног [npc.name], а ваш [pc.face+] завис всего в [unit.sizes] от паха [npc.her].";
 		}
 		@Override
 		public Map<SexSlot, Map<SexSlot, SexActionInteractions>> getSlotTargets() {
@@ -195,7 +195,7 @@ public class SexPositionUnique {
 		}
 	};
 	
-	public static final AbstractSexPosition MISSIONARY_ALTAR_CULTIST = new AbstractSexPosition("Missionary on altar",
+	public static final AbstractSexPosition MISSIONARY_ALTAR_CULTIST = new AbstractSexPosition("Миссионерская на алтаре",
 			2,
 			true,
 			null, Util.newArrayListOfValues(CultistSexActions.class)) {
@@ -216,17 +216,17 @@ public class SexPositionUnique {
 				characters.add(Main.sex.getCharacterInPosition(SexSlotUnique.MISSIONARY_ALTAR_KNEELING_BETWEEN_LEGS));
 				isKneeling = true;
 			} else {
-				return "MISSIONARY_ALTAR_CULTIST: Invalid character positions!";
+				return "MISSIONARY_ALTAR_CULTIST: Неверное положение персонажей!";
 			}
 
 			// boolean playerIsOnTheAltar = characters.get(0).isPlayer();
 
 			StringBuilder desc = new StringBuilder();
-			desc.append("[npc.NameIs] lying back on top of the chapel's altar, and ");
+			desc.append("[npc.NameIs] лежит на спине на алтаре часовни, а ");
 			if (isKneeling) {
-				desc.append("[npc2.nameIs] kneeling down between [npc.hisHer] [npc.legs], ready to have some oral fun with [npc.himHer] in the missionary position.");
+				desc.append("[npc2.nameIs] стоит на коленях между [npc.hisHer] [npc.legs], готовая к оральному удовольствию с [npc.himHer] в миссионерской позе.");
 			} else {
-				desc.append("[npc2.nameIs] standing between [npc.hisHer] [npc.legs], ready to have some fun with [npc.himHer] in the missionary position.");
+				desc.append("[npc2.nameIs] стоит между [npc.hisHer] [npc.legs], готовая к веселью с [npc.himHer] в миссионерской позе.");
 			}
 			return UtilText.parse(characters.get(0), characters.get(1), desc.toString());
 		}
@@ -257,7 +257,7 @@ public class SexPositionUnique {
 		}
 	};
 	
-	public static final AbstractSexPosition MISSIONARY_ALTAR_SEALED_CULTIST = new AbstractSexPosition("Missionary on altar",
+	public static final AbstractSexPosition MISSIONARY_ALTAR_SEALED_CULTIST = new AbstractSexPosition("Миссионерская на алтаре",
 			2,
 			true,
 			null, Util.newArrayListOfValues(CultistSexActions.class)) {
@@ -274,17 +274,17 @@ public class SexPositionUnique {
 				characters.add(Main.sex.getCharacterInPosition(SexSlotUnique.MISSIONARY_ALTAR_SEALED_KNEELING_BETWEEN_LEGS));
 				isKneeling = true;
 			} else {
-				return "MISSIONARY_ALTAR_SEALED_CULTIST: Invalid character positions!";
+				return "MISSIONARY_ALTAR_SEALED_CULTIST: Неверное положение персонажей!";
 			}
 
 			// boolean playerIsOnTheAltar = characters.get(0).isPlayer();
 
 			StringBuilder desc = new StringBuilder();
-			desc.append("[npc.NameIs] lying back on top of the chapel's altar, and ");
+			desc.append("[npc.NameIs] лежит на спине на алтаре часовни, а ");
 			if (isKneeling) {
-				desc.append("[npc2.nameIs] kneeling down between [npc.hisHer] [npc.legs], ready to have some oral fun with [npc.himHer] in the missionary position.");
+				desc.append("[npc2.nameIs] стоит на коленях между [npc.hisHer] [npc.legs], готовая к оральному удовольствию с [npc.himHer] в миссионерской позе.");
 			} else {
-				desc.append("[npc2.nameIs] standing between [npc.hisHer] [npc.legs], ready to have some fun with [npc.himHer] in the missionary position.");
+				desc.append("[npc2.nameIs] стоит между [npc.hisHer] [npc.legs], готовая к веселью с [npc.himHer] в миссионерской позе.");
 			}
 			return UtilText.parse(characters.get(0), characters.get(1), desc.toString());
 		}

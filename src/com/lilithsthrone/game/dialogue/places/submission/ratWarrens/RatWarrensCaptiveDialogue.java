@@ -146,8 +146,8 @@ public class RatWarrensCaptiveDialogue {
 		
 		if(lyingDown) {
 			if(stage==0) {
-				responseTitle = "Handjob";
-				responseDescription = "Do as Murk says and give him a handjob...";
+				responseTitle = "Ручная стимуляция";
+				responseDescription = "Сделай, как говорит Мёрк, и отсоси ему рукой...";
 				sexIntroTextPath = nodePathHandjob;
 				position = SexPosition.LYING_DOWN;
 				murkSexInfo = new Value<>(SexSlotLyingDown.LYING_DOWN, new SexType(SexParticipantType.NORMAL, SexAreaPenetration.PENIS, SexAreaPenetration.FINGER));
@@ -155,8 +155,8 @@ public class RatWarrensCaptiveDialogue {
 				
 			} else if(stage>=4) {
 				sexIntroTextPath = nodePathSex;
-				responseTitle = "Ride cock";
-				responseDescription = "Do as your Master says and ride his cock...";
+				responseTitle = "Скакать на члене";
+				responseDescription = "Сделай, как говорит твой Господин, и оседлай его член...";
 				if(Main.game.getPlayer().isTaur() || !Main.game.getPlayer().hasLegs()) {
 					position = SexPosition.LYING_DOWN;
 					if(Main.game.getPlayer().hasVagina()) {
@@ -181,8 +181,8 @@ public class RatWarrensCaptiveDialogue {
 				}
 				
 			} else {
-				responseTitle = "Kiss cock";
-				responseDescription = "Do as Murk says and kiss his cock...";
+				responseTitle = "Поцеловать член";
+				responseDescription = "Сделай, как говорит Мёрк, и поцелуй его член...";
 				sexIntroTextPath = nodePathOral;
 				position = SexPosition.LYING_DOWN;
 				murkSexInfo = new Value<>(SexSlotLyingDown.LYING_DOWN, new SexType(SexParticipantType.NORMAL, SexAreaPenetration.PENIS, SexAreaOrifice.MOUTH));
@@ -191,8 +191,8 @@ public class RatWarrensCaptiveDialogue {
 			
 		} else {
 			if(stage==0) {
-				responseTitle = "Kneel";
-				responseDescription = "Do as Murk says and kneel down before him so that you can give him a handjob...";
+				responseTitle = "Встать на колени";
+				responseDescription = "Сделай, как говорит Мёрк, и опустись перед ним на колени, чтобы отсосать ему рукой...";
 				sexIntroTextPath = nodePathHandjob;
 				position = SexPosition.STANDING;
 				murkSexInfo = new Value<>(SexSlotStanding.STANDING_DOMINANT, new SexType(SexParticipantType.NORMAL, SexAreaPenetration.PENIS, SexAreaPenetration.FINGER));
@@ -201,8 +201,8 @@ public class RatWarrensCaptiveDialogue {
 			} else if(stage>=4) {
 				sexIntroTextPath = nodePathSex;
 				if(Main.game.getPlayer().isTaur() || !Main.game.getPlayer().hasLegs()) {
-					responseTitle = "Humped";
-					responseDescription = "Do as your Master says and present yourself to him so that he can give you a good humping...";
+					responseTitle = "Трахнутый";
+					responseDescription = "Сделай, как говорит твой Господин, и подставься под него, чтобы он хорошенько тебя оттрахал...";
 					position = SexPosition.ALL_FOURS;
 					if(Main.game.getPlayer().hasVagina()) {
 						murkSexInfo = new Value<>(SexSlotAllFours.HUMPING, new SexType(SexParticipantType.NORMAL, SexAreaPenetration.PENIS, SexAreaOrifice.VAGINA));
@@ -214,8 +214,8 @@ public class RatWarrensCaptiveDialogue {
 					}
 					
 				} else {
-					responseTitle = "Lie back";
-					responseDescription = "Do as your Master says and lie down before him so that he can give you a good fucking...";
+					responseTitle = "Лечь на спину";
+					responseDescription = "Сделай, как говорит твой Господин, и ляг перед ним, чтобы он хорошенько тебя оттрахал...";
 					position = SexPosition.LYING_DOWN;
 					if(Main.game.getPlayer().hasVagina()) {
 						murkSexInfo = new Value<>(SexSlotLyingDown.MATING_PRESS, new SexType(SexParticipantType.NORMAL, SexAreaPenetration.PENIS, SexAreaOrifice.VAGINA));
@@ -228,8 +228,8 @@ public class RatWarrensCaptiveDialogue {
 				}
 				
 			} else {
-				responseTitle = "Get down";
-				responseDescription = "Do as Murk says and drop down before him so that you can suck his cock...";
+				responseTitle = "Спуститься на колени";
+				responseDescription = "Сделай, как говорит Мёрк, и упади перед ним на колени, чтобы отсосать его член...";
 				sexIntroTextPath = nodePathOral;
 				position = SexPosition.ALL_FOURS;
 				murkSexInfo = new Value<>(SexSlotAllFours.IN_FRONT, new SexType(SexParticipantType.NORMAL, SexAreaPenetration.PENIS, SexAreaOrifice.MOUTH));
@@ -515,20 +515,19 @@ public class RatWarrensCaptiveDialogue {
 	private static String getObedienceResponseDescription(float increment) {
 		String descriptor = "";
 		if(increment<-10) {
-			descriptor = "[style.italicsMinorGood(significantly less)]";
+			descriptor = "[style.italicsMinorGood(значительно меньше)]";
 		} else if(increment<5) {
 			descriptor = "[style.italicsBad(less)]";
 		} else if(increment<0) {
-			descriptor = "[style.italicsMinorBad(slightly less)]";
+			descriptor = "[style.italicsMinorBad(чуть менее)]";
 		} else if(increment<=5) {
 			descriptor = "[style.italicsMinorGood(slightly more)]";
 		} else if(increment<=10) {
 			descriptor = "[style.italicsGood(more)]";
 		} else {
-			descriptor = "[style.italicsExcellent(significantly more)]";
+			descriptor = "[style.italicsExcellent(значительно больше)]";
 		}
-		return "<br/>"
-				+ "<i>You will become "+descriptor+" [style.boldObedience(obedient)]!</i>";
+		return "<br/><i>Вы станете "+descriptor+" [style.boldObedience(покорными)]!</i>";
 	}
 	
 	private static String incrementPlayerObedience(int increment) {
@@ -545,28 +544,28 @@ public class RatWarrensCaptiveDialogue {
 		
 		sb.append("<p style='text-align:center;'>");
 			if(increment!=0) {
-				sb.append("You "+(increment>0?"[style.boldGrow(gained)]":"[style.boldShrink(lost)]")+" <b>"+Math.abs(increment)+"</b> [style.boldObedience(obedience)]!<br/>");
+				sb.append("Вы "+(increment>0?"[style.boldGrow(приобретено)]":"[style.boldShrink(потеряно)]")+" <b>"+Math.abs(increment)+"</b> [style.boldObedience(покорность)]!<br/>");
 			}
-			sb.append("You are <span style='color:"+level.getColour().toWebHexString()+";'>"+level.getName()+"</span>"
+			sb.append("Вы — <span style='color:"+level.getColour().toWebHexString()+";'>"+level.getName()+"</span>"
 					+ " (<span style='color:"+level.getColour().toWebHexString()+";'>"+obedience+"</span>/100), ");
 			switch(level) {
 				case ZERO_FREE_WILLED:
 				case POSITIVE_ONE_AGREEABLE:
 				case POSITIVE_TWO_OBEDIENT:
-					sb.append("and [style.colourMinorGood(can refuse or obey any of Murk's orders)]!");
-					sb.append("<br/><i>At "+ObedienceLevel.POSITIVE_THREE_DISCIPLINED.getMinimumValue()+"/100, you will be unable to refuse Murk's orders!</i>");
+					sb.append("и [style.colourMinorGood(можете отказываться или подчиняться любым приказам Мёрка)]!");
+					sb.append("<br/><i>При "+ObedienceLevel.POSITIVE_THREE_DISCIPLINED.getMinimumValue()+"/100 вы не сможете отказываться от приказов Мёрка!</i>");
 					break;
 				case POSITIVE_THREE_DISCIPLINED:
 				case POSITIVE_FOUR_DUTIFUL:
-					sb.append("and [style.colourMinorBad(cannot bring yourself to refuse Murk's orders)]!");
-					sb.append("<br/><i>At "+ObedienceLevel.POSITIVE_FIVE_SUBSERVIENT.getMinimumValue()+"/100, you will do absolutely anything to please Murk!</i>");
+					sb.append("и [style.colourMinorBad(не можете заставить себя отказать Мёрку)]!");
+					sb.append("<br/><i>При "+ObedienceLevel.POSITIVE_FIVE_SUBSERVIENT.getMinimumValue()+"/100 вы сделаете абсолютно всё, чтобы угодить Мёрку!</i>");
 					break;
 				case POSITIVE_FIVE_SUBSERVIENT:
 					if(obedience>=100) {
-						sb.append("and [style.colourBadEnd(have accepted your fate as one of Murk's milkers)]!");
+						sb.append("и [style.colourBadEnd(смирились со своей судьбой одной из доярок Мёрка)]!");
 					} else {
-						sb.append("and [style.colourBad(will do absolutely anything to please Murk)]!");
-						sb.append("<br/><i>At 100/100, you will willingly accept your fate as one of Murk's milkers!</i>");
+						sb.append("и [style.colourBad(сделаете абсолютно всё, чтобы угодить Мёрку)]!");
+						sb.append("<br/><i>При 100/100 вы с радостью примете свою судьбу одной из доярок Мёрка!</i>");
 					}
 					break;
 				default:
@@ -597,8 +596,8 @@ public class RatWarrensCaptiveDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Stay quiet",
-						"Stay quiet and hope that Murk leaves you alone."
+				return new Response("Затаиться",
+						"Сиди тихо и надейся, что Мёрк оставит тебя в покое."
 								+getObedienceResponseDescription(5),
 						CAPTIVE_DAY_0_THANKS) {
 					@Override
@@ -610,8 +609,8 @@ public class RatWarrensCaptiveDialogue {
 				};
 				
 			} else if(index==2) {
-				return new Response("Thank him",
-						"Say thank you to Murk."
+				return new Response("Поблагодарить его",
+						"Сказать Мёрку «спасибо»."
 								+getObedienceResponseDescription(10),
 						CAPTIVE_DAY_0_THANKS) {
 					@Override
@@ -623,8 +622,8 @@ public class RatWarrensCaptiveDialogue {
 				};
 				
 			} else if(index==3) {
-				return new Response("Insult him",
-						"Tell Murk to fuck off."
+				return new Response("Оскорбить его",
+						"Сказать Мёрку, чтобы он отъебался."
 								+getObedienceResponseDescription(-10),
 						CAPTIVE_DAY_0_THANKS) {
 					@Override
@@ -652,7 +651,7 @@ public class RatWarrensCaptiveDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(Main.game.getPlayer().isPregnant()) {
 				if(index==1) {
-					return new Response("Wait", "Wait for Murk to return...", CAPTIVE_GIVE_BIRTH) {
+					return new Response("Ждать", "Ждать возвращения Мёрка...", CAPTIVE_GIVE_BIRTH) {
 						@Override
 						public void effects() {
 							Main.game.getNpc(Silence.class).setLocation(Main.game.getPlayer(), false);
@@ -686,7 +685,7 @@ public class RatWarrensCaptiveDialogue {
 				
 			} else if(!Main.game.getPlayer().getIncubatingLitters().isEmpty()) {
 				if(index==1) {
-					return new Response("Wait", "Wait for Murk to return...", CAPTIVE_LAY_EGGS) {
+					return new Response("Ждать", "Ждать возвращения Мёрка...", CAPTIVE_LAY_EGGS) {
 						@Override
 						public void effects() {
 							Main.game.getNpc(Silence.class).setLocation(Main.game.getPlayer(), false);
@@ -707,8 +706,8 @@ public class RatWarrensCaptiveDialogue {
 				
 			} else {
 				if(index==1) {
-					return new Response("Sleep",
-							"Completely exhausted, you find yourself drifting off to sleep...",
+					return new Response("Спать",
+							"Совершенно измотанная, ты чувствуешь, как проваливаешься в сон...",
 							CAPTIVE_NIGHT) {
 						@Override
 						public void effects() {
@@ -755,8 +754,8 @@ public class RatWarrensCaptiveDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(isMasculineTransform()) {
 				if(index==1) {
-					return new Response("Pull away",
-							"Pull away from [murk.namePos] cock, which will make him want to transform you into a [style.colourMasculineStrong(masculine)] cum-milker.",
+					return new Response("Отстраниться",
+							"Отстраниться от члена [murk.namePos], что заставит его захотеть превратить тебя в [style.colourMasculineStrong(мужественного)] доярку спермы.",
 							CAPTIVE_DAY_1_TF_CHOICE) {
 						@Override
 						public Colour getHighlightColour() {
@@ -770,8 +769,8 @@ public class RatWarrensCaptiveDialogue {
 					};
 					
 				} else if(index==2) {
-					return new Response("Push back",
-							"Raise your hips and push your ass back into [murk.namePos] cock, which will make him want to transform you into an [style.colourAndrogynous(androgynous)] sissy cum-milker.",
+					return new Response("Податься назад",
+							"Приподнять бедра и плотнее прижаться задницей к члену [murk.namePos], что заставит его захотеть превратить тебя в [style.colourAndrogynous(андрогинную)] сисси-доярку спермы.",
 							CAPTIVE_DAY_1_TF_CHOICE) {
 						@Override
 						public Colour getHighlightColour() {
@@ -787,8 +786,8 @@ public class RatWarrensCaptiveDialogue {
 				
 			} else {
 				if(index==1) {
-					return new Response("Pull away",
-							"Pull away from Murk's hand, signalling that you'd prefer to be transformed into a [style.colourFeminineStrong(female)] milker.",
+					return new Response("Отстраниться",
+							"Отстраниться от руки Мёрка, давая понять, что ты предпочёл бы превратиться в [style.colourFeminineStrong(женскую)] доилку.",
 							CAPTIVE_DAY_1_TF_CHOICE) {
 						@Override
 						public Colour getHighlightColour() {
@@ -802,8 +801,8 @@ public class RatWarrensCaptiveDialogue {
 					};
 					
 				} else if(index==2) {
-					return new Response("Hump hand",
-							"Hump Murk's hand, signalling that you'd prefer to be transformed into a [style.colourFeminine(futa)] milker.",
+					return new Response("Теребиться на руке",
+							"Теребиться на руке Мёрка, давая понять, что ты предпочёл бы превратиться в [style.colourFeminine(фута)] доилку.",
 							CAPTIVE_DAY_1_TF_CHOICE) {
 						@Override
 						public Colour getHighlightColour() {
@@ -841,7 +840,7 @@ public class RatWarrensCaptiveDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Wait", "You don't have any choice but to wait in the stocks...", CAPTIVE_DAY_1_MORNING) {
+				return new Response("Ждать", "У тебя нет иного выбора, кроме как ждать в колодках...", CAPTIVE_DAY_1_MORNING) {
 					@Override
 					public void effects() {
 						GameCharacter milker = getMilkers().get(1);
@@ -866,8 +865,8 @@ public class RatWarrensCaptiveDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Say hello",
-						"Say hello to Murk's cock in the hopes that he'll then leave and end his abuse."
+				return new Response("Поздороваться",
+						"Поздороваться с членом Мёрка в надежде, что тогда он уйдет и прекратит свои издевательства."
 							+getObedienceResponseDescription(5),
 							CAPTIVE_DAY_1_MORNING_WAIT) {
 					@Override
@@ -880,8 +879,8 @@ public class RatWarrensCaptiveDialogue {
 				};
 				
 			} else if(index==2) {
-				return new Response("Compliment",
-						"Say hello to Murk's cock and compliment it on its size and potent musk."
+				return new Response("Сделать комплимент",
+						"Поздороваться с членом Мёрка и сделать комплимент его размеру и мощному мускусному запаху."
 							+getObedienceResponseDescription(10),
 							CAPTIVE_DAY_1_MORNING_WAIT) {
 					@Override
@@ -894,8 +893,8 @@ public class RatWarrensCaptiveDialogue {
 				};
 				
 			} else if(index==3) {
-				return new Response("Resist",
-						"Refuse to play along with Murk's game and try to pull away from his cock."
+				return new Response("Сопротивляться",
+						"Отказаться играть в игру Мёрка и попытаться отстраниться от его члена."
 							+getObedienceResponseDescription(-10),
 							CAPTIVE_DAY_1_MORNING_WAIT) {
 					@Override
@@ -929,8 +928,8 @@ public class RatWarrensCaptiveDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Wait",
-						"You have no choice other than to wait for Murk's return...",
+				return new Response("Ждать",
+						"Тебе остается только ждать возвращения Мёрка...",
 						CAPTIVE_DAY_1_LUNCH);
 				
 			}
@@ -954,8 +953,8 @@ public class RatWarrensCaptiveDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Eat",
-						"Do as Murk says and eat the gruel..."
+				return new Response("Позавтракать",
+						"Сделать так, как говорит Мёрк, и съесть похлебку..."
 								+getObedienceResponseDescription(5),
 						CAPTIVE_DAY_1_LUNCH_END) {
 					@Override
@@ -966,8 +965,8 @@ public class RatWarrensCaptiveDialogue {
 				};
 				
 			} else if(index==2) {
-				return new Response("Refuse",
-						"Refuse to eat the disgusting gruel..."
+				return new Response("Отказаться",
+						"Отказаться есть эту отвратительную жижу..."
 								+getObedienceResponseDescription(-10),
 						CAPTIVE_DAY_1_LUNCH_END) {
 					@Override
@@ -998,7 +997,7 @@ public class RatWarrensCaptiveDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Wait", "You don't have any option other to wait in the stocks...", CAPTIVE_DAY_1_AFTERNOON);
+				return new Response("Ждать", "У тебя нет другого выбора, кроме как ждать в колодках...", CAPTIVE_DAY_1_AFTERNOON);
 			}
 			return null;
 		}
@@ -1024,8 +1023,8 @@ public class RatWarrensCaptiveDialogue {
 			CaptiveTransformation playerTf = CaptiveTransformation.getTransformationType(Main.game.getPlayer());
 			
 			if(index==1) {
-				return new Response("Open wide",
-						"Do as Murk says and swallow down the transformative potion..."
+				return new Response("Раскрой рот пошире",
+						"Сделать как говорит Мёрк, и проглотить трансформирующее зелье..."
 								+getObedienceResponseDescription(10),
 						CAPTIVE_DAY_1_AFTER_TRANSFORMATION) {
 					@Override
@@ -1044,8 +1043,8 @@ public class RatWarrensCaptiveDialogue {
 				};
 				
 			} else if(index==2) {
-				return new Response("Resist",
-						"Keep your mouth closed and try to resist drinking down the transformative potion!"
+				return new Response("Сопротивляться",
+						"Держать рот на замке и попытаться не выпить трансформирующее зелье!"
 								+getObedienceResponseDescription(-10),
 						CAPTIVE_DAY_1_AFTER_TRANSFORMATION) {
 					@Override
@@ -1079,7 +1078,7 @@ public class RatWarrensCaptiveDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Recover", "With the transformations now at an end, you can start to recover...", CAPTIVE_DAY_1_AFTER_TRANSFORMATION_MURK_COCK);
+				return new Response("Восстановиться", "Трансформации подошли к концу, и теперь ты можешь начать приходить в себя...", CAPTIVE_DAY_1_AFTER_TRANSFORMATION_MURK_COCK);
 			}
 			return null;
 		}
@@ -1098,8 +1097,8 @@ public class RatWarrensCaptiveDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				return new ResponseSex(
-						"Open wide",
-						"You can't help but want to suck Murk's throbbing cock, but that doesn't mean you have to admit that you're in love with it..."
+						"Раскрой рот пошире",
+						"Ты не можешь удержаться от желания отсосать пульсирующий член Мёрка, но это еще не значит, что ты должна признаться, что влюбилась в него..."
 								+getObedienceResponseDescription(5),
 						true,
 						false,
@@ -1121,8 +1120,8 @@ public class RatWarrensCaptiveDialogue {
 				
 			} else if(index==2) {
 				return new ResponseSex(
-						"Love cock",
-						"Play along with Murk by telling his cock that you've fallen in love with it and are eager to share your first kiss together."
+						"Полюбить член",
+						"Подыграть Мёрку, сказав его члену, что ты в него влюбилась и жаждешь разделить с ним свой первый поцелуй."
 								+getObedienceResponseDescription(15),
 						true,
 						false,
@@ -1146,7 +1145,7 @@ public class RatWarrensCaptiveDialogue {
 		}
 	};
 	
-	public static final DialogueNode CAPTIVE_DAY_1_END = new DialogueNode("Finished", "Now that he's filled your belly with his hot, musky cum, Murk has had enough...", true) {
+	public static final DialogueNode CAPTIVE_DAY_1_END = new DialogueNode("Завершено", "Теперь, когда он набил твой живот своим горячим мускусным семенем, Мёрку хватит...", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			getMurk().returnToHome();
@@ -1162,7 +1161,7 @@ public class RatWarrensCaptiveDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Chained up", "You once again find yourself chained up...", CAPTIVE_NIGHT);
+				return new Response("Скованная цепями", "Ты снова оказываешься в цепях...", CAPTIVE_NIGHT);
 			}
 			return null;
 		}
@@ -1193,8 +1192,8 @@ public class RatWarrensCaptiveDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Obey",
-						"Get into your milking stall so that Murk can fasten your restraints..."
+				return new Response("Повиноваться",
+						"Зайди в свою доильную стойку, чтобы Мёрк мог закрепить твои оковы..."
 								+getObedienceResponseDescription(5),
 						CAPTIVE_DAY_2_LOCKED_IN_STALL) {
 					@Override
@@ -1206,10 +1205,10 @@ public class RatWarrensCaptiveDialogue {
 				
 			} else if(index==2) {
 				if(isPlayerObeyingOrders(false)) {
-					return new Response("Resist", "You are too obedient to even think about refusing Murk's command!", null);
+					return new Response("Сопротивляться", "Ты слишком послушна, чтобы даже помыслить о неповиновении приказу Мёрка!", null);
 				}
-				return new Response("Resist",
-						"Try and resist being locked into your milking stall..."
+				return new Response("Сопротивляться",
+						"Попытаться сопротивляться, когда тебя запирают в доильной стойке..."
 								+getObedienceResponseDescription(-10),
 						CAPTIVE_DAY_2_LOCKED_IN_STALL) {
 					@Override
@@ -1239,7 +1238,7 @@ public class RatWarrensCaptiveDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Wait", "You don't have any option other than to wait in the stocks...", CAPTIVE_DAY_2_MORNING) {
+				return new Response("Ждать", "У тебя нет иного выбора, кроме как ждать в колодках...", CAPTIVE_DAY_2_MORNING) {
 					@Override
 					public void effects() {
 						GameCharacter milker = getMilkers().get(2);
@@ -1269,8 +1268,8 @@ public class RatWarrensCaptiveDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				return new Response(
-						"Kiss",
-						"Do as Murk says and kiss his musky, cum-coated cock."
+						"Поцеловать",
+						"Сделать так, как говорит Мёрк, и поцеловать его мускулистый, покрытый спермой член."
 							+getObedienceResponseDescription(5),
 						CAPTIVE_DAY_2_POTION) {
 					@Override
@@ -1282,8 +1281,8 @@ public class RatWarrensCaptiveDialogue {
 				
 			} else if(index==2) {
 				return new Response(
-						"Eagerly kiss",
-						"Tell Murk that you're in love with his cock as you kiss it."
+						"Жадно целовать",
+						"Говорить Мёрку, что ты влюблена в его член, пока целуешь его."
 							+getObedienceResponseDescription(10),
 						CAPTIVE_DAY_2_POTION) {
 					@Override
@@ -1295,11 +1294,11 @@ public class RatWarrensCaptiveDialogue {
 				
 			} else if(index==3) {
 				if(isPlayerObeyingOrders(false)) {
-					return new Response("Refuse", "You're so obedient that you can't bring yourself to disobey Murk...", null);
+					return new Response("Отказаться", "Ты настолько послушна, что не можешь заставить себя ослушаться Мёрка...", null);
 				}
 				return new Response(
-						"Refuse",
-						"Refuse to kiss Murk's stinky cock."
+						"Отказаться",
+						"Отказаться целовать вонючий член Мёрка."
 							+getObedienceResponseDescription(-10),
 						CAPTIVE_DAY_2_POTION) {
 					@Override
@@ -1327,8 +1326,8 @@ public class RatWarrensCaptiveDialogue {
 			CaptiveTransformation playerTf = CaptiveTransformation.getTransformationType(Main.game.getPlayer());
 			
 			if(index==1) {
-				return new Response("Eagerly beg",
-						"You find yourself desperately wanting to be transformed, and so you eagerly beg to receive a taste of Murk's potion..."
+				return new Response("Жадно умолять",
+						"Ты отчаянно жаждешь трансформации, поэтому с энтузиазмом умоляешь дать тебе испробовать зелье Мёрка..."
 								+getObedienceResponseDescription(5),
 						CAPTIVE_DAY_2_AFTER_POTION) {
 					@Override
@@ -1348,10 +1347,10 @@ public class RatWarrensCaptiveDialogue {
 				
 			} else if(index==2) {
 				if(isPlayerObeyingOrders(false)) {
-					return new Response("Reluctantly beg", "You are too obedient to do anything other than eagerly beg for the transformation potion!", null);
+					return new Response("Неохотно умолять", "Ты слишком послушна, чтобы делать что-то другое, кроме как усердно выпрашивать зелье трансформации!", null);
 				}
-				return new Response("Reluctantly beg",
-						"You find yourself desperately wanting to be transformed, but that doesn't mean you should be too enthusiastic about it...",
+				return new Response("Неохотно умолять",
+						"Ты отчаянно жаждешь трансформации, но это не значит, что стоит проявлять слишком много восторга...",
 						CAPTIVE_DAY_2_AFTER_POTION) {
 					@Override
 					public void effects() {
@@ -1385,11 +1384,11 @@ public class RatWarrensCaptiveDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				if(isPlayerObeyingOrders(true)) {
-					return new Response("Suck cock", "By now you're so obedient that you can't consider doing anything but completely submitting to Murk's cock!", null);
+					return new Response("Сосать член", "К этому моменту ты настолько послушна, что не можешь думать ни о чем, кроме как полностью подчиниться члену Мёрка!", null);
 				}
 				return new ResponseSex(
-						"Suck cock",
-						"While you don't want to admit that you've fallen in love with Murk's cock, you still want to get a taste of it..."
+						"Сосать член",
+						"Хотя ты и не хочешь признавать, что влюбилась в член Мёрка, ты всё равно жаждешь его вкуса..."
 							+getObedienceResponseDescription(5),
 						true,
 						false,
@@ -1410,8 +1409,8 @@ public class RatWarrensCaptiveDialogue {
 				
 			} else if(index==2) {
 				return new ResponseSex(
-						"Submit to cock",
-						"Tell Murk that you're madly in love with his delicious cock, and that you want it to dominate your throat!"
+						"Подчиниться члену",
+						"Сказать Мёрку, что ты безумно влюблена в его вкусный член и хочешь, чтобы он доминировал в твоем горле!"
 							+getObedienceResponseDescription(10),
 						true,
 						false,
@@ -1434,7 +1433,7 @@ public class RatWarrensCaptiveDialogue {
 		}
 	};
 	
-	public static final DialogueNode CAPTIVE_DAY_2_AFTER_BLOWJOB = new DialogueNode("Finished", "Murk has had enough of fucking your throat...", true) {
+	public static final DialogueNode CAPTIVE_DAY_2_AFTER_BLOWJOB = new DialogueNode("Завершено", "Мёрку уже достаточно трахать твое горло...", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			getMurk().returnToHome();
@@ -1450,7 +1449,7 @@ public class RatWarrensCaptiveDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Wait", "You don't have any option other to wait in the stocks...", CAPTIVE_DAY_2_LUNCH);
+				return new Response("Ждать", "У тебя нет другого выбора, кроме как ждать в колодках...", CAPTIVE_DAY_2_LUNCH);
 			}
 			return null;
 		}
@@ -1472,8 +1471,8 @@ public class RatWarrensCaptiveDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Eat",
-						"Do as Murk says and eat the gruel..."
+				return new Response("Позавтракать",
+						"Сделать так, как говорит Мёрк, и съесть похлебку..."
 							+getObedienceResponseDescription(5),
 						CAPTIVE_DAY_2_LUNCH_END) {
 					@Override
@@ -1486,10 +1485,10 @@ public class RatWarrensCaptiveDialogue {
 				
 			} else if(index==2) {
 				if(isPlayerObeyingOrders(false)) {
-					return new Response("Refuse", "You are too obedient to even think about refusing to eat the gruel!", null);
+					return new Response("Отказаться", "Ты слишком послушна, чтобы даже помыслить о том, чтобы отказаться есть жижу!", null);
 				}
-				return new Response("Refuse",
-						"Refuse to eat the disgusting gruel..."
+				return new Response("Отказаться",
+						"Отказаться есть эту отвратительную жижу..."
 							+getObedienceResponseDescription(-10),
 						CAPTIVE_DAY_2_LUNCH_END) {
 					@Override
@@ -1521,7 +1520,7 @@ public class RatWarrensCaptiveDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Wait", "You don't have any option other to wait in the stocks...", CAPTIVE_DAY_2_AFTERNOON) {
+				return new Response("Ждать", "У тебя нет другого выбора, кроме как ждать в колодках...", CAPTIVE_DAY_2_AFTERNOON) {
 					@Override
 					public void effects() {
 						GameCharacter milker = getMilkers().get(0);
@@ -1558,8 +1557,8 @@ public class RatWarrensCaptiveDialogue {
 			CaptiveTransformation playerTf = CaptiveTransformation.getTransformationType(Main.game.getPlayer());
 			
 			if(index==1) {
-				return new Response("Eagerly beg",
-						"You find yourself desperately wanting to be transformed, and so you eagerly beg to receive a taste of Murk's potion..."
+				return new Response("Жадно умолять",
+						"Ты отчаянно жаждешь трансформации, поэтому с энтузиазмом умоляешь дать тебе испробовать зелье Мёрка..."
 								+getObedienceResponseDescription(5),
 								CAPTIVE_DAY_2_AFTERNOON_AFTER_TRANSFORMATION) {
 					@Override
@@ -1583,10 +1582,10 @@ public class RatWarrensCaptiveDialogue {
 				
 			} else if(index==2) {
 				if(isPlayerObeyingOrders(false)) {
-					return new Response("Reluctantly beg", "You are too obedient to do anything other than eagerly beg for the transformation potion!", null);
+					return new Response("Неохотно умолять", "Ты слишком послушна, чтобы делать что-то другое, кроме как усердно выпрашивать зелье трансформации!", null);
 				}
-				return new Response("Reluctantly beg",
-						"You find yourself desperately wanting to be transformed, but that doesn't mean you should be too enthusiastic about it...",
+				return new Response("Неохотно умолять",
+						"Ты отчаянно жаждешь трансформации, но это не значит, что стоит проявлять слишком много восторга...",
 						CAPTIVE_DAY_2_AFTERNOON_AFTER_TRANSFORMATION) {
 					@Override
 					public void effects() {
@@ -1623,7 +1622,7 @@ public class RatWarrensCaptiveDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Groped", "Murk spends some time groping your new body...", CAPTIVE_DAY_2_AFTERNOON_AFTER_TRANSFORMATION_GROPED);
+				return new Response("Ощупывание", "Мерк некоторое время ощупывает твое новое тело...", CAPTIVE_DAY_2_AFTERNOON_AFTER_TRANSFORMATION_GROPED);
 			}
 			return null;
 		}
@@ -1642,7 +1641,7 @@ public class RatWarrensCaptiveDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Training", "Murk continues with the final stage of your obedience training...", CAPTIVE_DAY_2_EVENING_TRAINING_START);
+				return new Response("Тренировка", "Мерк переходит к финальной стадии твоего обучения покорности...", CAPTIVE_DAY_2_EVENING_TRAINING_START);
 			}
 			return null;
 		}
@@ -1660,8 +1659,8 @@ public class RatWarrensCaptiveDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Beg for it",
-						"Desperately plead for Murk to fuck you instead of the milker."
+				return new Response("Умолять",
+						"Отчаянно умолять Мерка трахнуть тебя вместо доильного аппарата."
 								+getObedienceResponseDescription(10),
 								CAPTIVE_DAY_2_EVENING_TRAINING) {
 					@Override
@@ -1673,10 +1672,10 @@ public class RatWarrensCaptiveDialogue {
 				
 			} else if(index==2) {
 				if(isPlayerObeyingOrders(false)) {
-					return new Response("Stay silent", "You are too obedient to ignore Murk, and find yourself unable to think of doing anything other than begging for him to fuck you!", null);
+					return new Response("Молчать", "Ты слишком покорна, чтобы игнорировать Мерка, и понимаешь, что не можешь думать ни о чем, кроме как умолять его трахнуть тебя!", null);
 				}
-				return new Response("Stay silent",
-						"Despite your overwhelming lust, you refuse to beg for Murk to fuck you."
+				return new Response("Молчать",
+						"Несмотря на непреодолимую похоть, ты отказываешься умолять Мерка трахнуть тебя."
 								+getObedienceResponseDescription(-10),
 								CAPTIVE_DAY_2_EVENING_TRAINING) {
 					@Override
@@ -1708,8 +1707,8 @@ public class RatWarrensCaptiveDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Submit",
-						"Agree with Murk that you're a submissive milker slut who needs to be rutted by his fat cock."
+				return new Response("Подчиниться",
+						"Согласиться с Мерком, что ты — покорная шлюха-доярка, которую нужно трахать его жирным членом."
 							+getObedienceResponseDescription(10),
 						CAPTIVE_DAY_2_END) {
 					@Override
@@ -1721,10 +1720,10 @@ public class RatWarrensCaptiveDialogue {
 				
 			} else if(index==2) {
 				if(isPlayerObeyingOrders(false)) {
-					return new Response("Resist", "You are too obedient to refuse Murk's orders!", null);
+					return new Response("Сопротивляться", "Ты слишком покорна, чтобы ослушаться приказов Мерка!", null);
 				}
-				return new Response("Resist",
-						"Do your best to resist your urge to submit to Murk and just stay silent."
+				return new Response("Сопротивляться",
+						"Сделать всё возможное, чтобы подавить желание подчиниться Мерку, и просто молчать."
 								+getObedienceResponseDescription(-10),
 						CAPTIVE_DAY_2_END) {
 					@Override
@@ -1770,7 +1769,7 @@ public class RatWarrensCaptiveDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Chained up", "You once again find yourself chained up...", CAPTIVE_NIGHT);
+				return new Response("Скованная цепями", "Ты снова оказываешься в цепях...", CAPTIVE_NIGHT);
 			}
 			return null;
 		}
@@ -1801,8 +1800,8 @@ public class RatWarrensCaptiveDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Obey",
-						"Get into your milking stall so that Murk can fasten your restraints..."
+				return new Response("Повиноваться",
+						"Зайди в свою доильную стойку, чтобы Мёрк мог закрепить твои оковы..."
 							+ getObedienceResponseDescription(5),
 						CAPTIVE_DAY_3_LOCKED_IN_STALL) {
 					@Override
@@ -1814,10 +1813,10 @@ public class RatWarrensCaptiveDialogue {
 				
 			} else if(index==2) {
 				if(isPlayerObeyingOrders(false)) {
-					return new Response("Resist", "You are too obedient to even think about refusing Murk's command!", null);
+					return new Response("Сопротивляться", "Ты слишком послушна, чтобы даже помыслить о неповиновении приказу Мёрка!", null);
 				}
-				return new Response("Resist",
-						"Try and resist being locked into your milking stall..."
+				return new Response("Сопротивляться",
+						"Попытаться сопротивляться, когда тебя запирают в доильной стойке..."
 								+ getObedienceResponseDescription(-10),
 						CAPTIVE_DAY_3_LOCKED_IN_STALL) {
 					@Override
@@ -1847,7 +1846,7 @@ public class RatWarrensCaptiveDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Wait", "Wait for Murk to return with your final transformative potion...", CAPTIVE_DAY_3_LOCKED_IN_STALL_WAIT);
+				return new Response("Ждать", "Ждать, пока Мерк вернется с твоим последним трансформирующим зельем...", CAPTIVE_DAY_3_LOCKED_IN_STALL_WAIT);
 			}
 			return null;
 		}
@@ -1871,8 +1870,8 @@ public class RatWarrensCaptiveDialogue {
 			CaptiveTransformation playerTf = CaptiveTransformation.getTransformationType(Main.game.getPlayer());
 			
 			if(index==1) {
-				return new Response("Eagerly kiss",
-						"You find yourself desperately wanting to be transformed, and so you eagerly kiss Murk's cock and tell him that you've fallen in love with it..."
+				return new Response("Жадно целовать",
+						"Вы отчаянно жаждете трансформации, поэтому с вожделением целуете член Мёрка и признаетесь ему, что влюбились в него..."
 								+ getObedienceResponseDescription(5),
 						CAPTIVE_DAY_3_AFTER_POTION) {
 					@Override
@@ -1892,10 +1891,10 @@ public class RatWarrensCaptiveDialogue {
 				
 			} else if(index==2) {
 				if(isPlayerObeyingOrders(false)) {
-					return new Response("Reluctantly kiss", "You are too obedient to do anything other than eagerly beg for the transformation potion!", null);
+					return new Response("Неохотно поцеловать", "Ты слишком послушна, чтобы делать что-то другое, кроме как усердно выпрашивать зелье трансформации!", null);
 				}
-				return new Response("Reluctantly kiss",
-						"You find yourself desperately wanting to be transformed, but that doesn't mean you should be too enthusiastic about it...",
+				return new Response("Неохотно поцеловать",
+						"Ты отчаянно жаждешь трансформации, но это не значит, что стоит проявлять слишком много восторга...",
 						CAPTIVE_DAY_3_AFTER_POTION) {
 					@Override
 					public void effects() {
@@ -1927,7 +1926,7 @@ public class RatWarrensCaptiveDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Milked", "Murk moves to hook you up to the milking machine...", CAPTIVE_DAY_3_MILKING);
+				return new Response("Доен", "Мёрк принимается подключать вас к доильному аппарату...", CAPTIVE_DAY_3_MILKING);
 			}
 			return null;
 		}
@@ -1950,8 +1949,8 @@ public class RatWarrensCaptiveDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(Main.game.getPlayer().hasVagina()) {
 				if(index==1) {
-					return new Response("Drink",
-							"You're so turned on that you can't think of doing anything other than gulping down the transformative liquid..."
+					return new Response("Выпить",
+							"Вы настолько возбуждены, что не можете думать ни о чем, кроме как заглотить преобразующую жидкость..."
 								+ getObedienceResponseDescription(10),
 							CAPTIVE_DAY_3_MILKING_VAGINA_FINAL_TF) {
 						@Override
@@ -1990,8 +1989,8 @@ public class RatWarrensCaptiveDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				return new ResponseSex(
-						"In love",
-						"Admit to Murk that you've fallen in love with his cock and beg for him to fuck you!"
+						"Влюблена",
+						"Признаться Мёрку, что вы влюбились в его член, и умолять его трахнуть вас!"
 							+ getObedienceResponseDescription(25),
 						true,
 						false,
@@ -2019,7 +2018,7 @@ public class RatWarrensCaptiveDialogue {
 		}
 	};
 	
-	public static final DialogueNode CAPTIVE_DAY_3_AFTER_FIRST_SEX = new DialogueNode("Finished", "Murk has finished giving you your first real experience with his fat, musky cock...", true) {
+	public static final DialogueNode CAPTIVE_DAY_3_AFTER_FIRST_SEX = new DialogueNode("Завершено", "Мёрк закончил дарить вам ваш первый настоящий опыт с его жирным, мускусным членом...", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			if(Main.game.getPlayer().hasVagina()) {
@@ -2038,7 +2037,7 @@ public class RatWarrensCaptiveDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Milked", "Murk leaves you to be milked by the machine as he swaggers off to check on the other milkers...", CAPTIVE_DAY_3_AFTER_SEX_MILKED);
+				return new Response("Доен", "Мёрк оставляет вас на попечение доильного аппарата и вальяжно уходит проверить остальных доярок...", CAPTIVE_DAY_3_AFTER_SEX_MILKED);
 			}
 			return null;
 		}
@@ -2057,10 +2056,10 @@ public class RatWarrensCaptiveDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				return new ResponseSex(
-						"Fully submit",
+						"Полностью подчиниться",
 						Main.game.getPlayer().hasVagina() && !Main.game.isAnalContentEnabled()
-							?"Tell Murk that you're his submissive milker bitch and that you need him to break you!"
-							:"Tell Murk that you're a filthy butt-slut milker and that you love his cock!"
+							?"Сказать Мёрку, что вы его покорная сучка-доярка и вам нужно, чтобы он вас сломал!"
+							:"Скажи Мёрку, что ты грязная сучка-доярка и обожаешь его член!"
 								+ getObedienceResponseDescription(25),
 						true,
 						false,
@@ -2103,7 +2102,7 @@ public class RatWarrensCaptiveDialogue {
 		}
 	};
 	
-	public static final DialogueNode CAPTIVE_DAY_3_AFTER_SECOND_SEX = new DialogueNode("Finished", "Murk has finished giving you your 'second date' with his fat, musky cock...", true) {
+	public static final DialogueNode CAPTIVE_DAY_3_AFTER_SECOND_SEX = new DialogueNode("Завершено", "Мёрк закончил своё «второе свидание» со своим жирным мускусным членом...", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			getMurk().returnToHome();
@@ -2120,7 +2119,7 @@ public class RatWarrensCaptiveDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Lunch time", "Murk leaves you to be milked while he goes off to get lunch ready...", CAPTIVE_DAY_3_LUNCH);
+				return new Response("Время обеда", "Мёрк оставляет тебя доиться, пока сам идет готовить обед...", CAPTIVE_DAY_3_LUNCH);
 			}
 			return null;
 		}
@@ -2142,8 +2141,8 @@ public class RatWarrensCaptiveDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Eat",
-						"Do as Murk says and eat the gruel..."
+				return new Response("Позавтракать",
+						"Сделать так, как говорит Мёрк, и съесть похлебку..."
 								+ getObedienceResponseDescription(5),
 						CAPTIVE_DAY_3_LUNCH_END) {
 					@Override
@@ -2155,7 +2154,7 @@ public class RatWarrensCaptiveDialogue {
 				};
 				
 			} else if(index==2) { // Should be impossible...
-				return new Response("Refuse", "You are too obedient to even think about refusing to eat the gruel!", null);
+				return new Response("Отказаться", "Ты слишком послушна, чтобы даже помыслить о том, чтобы отказаться есть жижу!", null);
 			}
 			return null;
 		}
@@ -2181,7 +2180,7 @@ public class RatWarrensCaptiveDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Milked", "Enjoy the sensation of being milked as you wait for Murk to return...", CAPTIVE_DAY_3_AFTERNOON);
+				return new Response("Доен", "Наслаждайся ощущением дойки, ожидая возвращения Мёрка...", CAPTIVE_DAY_3_AFTERNOON);
 			}
 			return null;
 		}
@@ -2207,8 +2206,8 @@ public class RatWarrensCaptiveDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				return new ResponseSex(
-						"Beg for cock",
-						UtilText.parse(getCharacters(false), "Beg for [npc.namePos] rat-cock so that [npc.she]'ll start fucking you.")
+						"Умолять о члене",
+						UtilText.parse(getCharacters(false), "Умолять о [npc.namePos] крысином члене, чтобы [npc.she] начал тебя трахать.")
 								+ getObedienceResponseDescription(10),
 						true,
 						false,
@@ -2238,10 +2237,10 @@ public class RatWarrensCaptiveDialogue {
 		}
 	};
 
-	public static final DialogueNode CAPTIVE_DAY_3_AFTERNOON_AFTER_SEX = new DialogueNode("Finished", "", true) {
+	public static final DialogueNode CAPTIVE_DAY_3_AFTERNOON_AFTER_SEX = new DialogueNode("Завершено", "", true) {
 		@Override
 		public String getDescription() {
-			return UtilText.parse(getCharacters(false), "[npc.Name] feels as though [npc.sheHas] got [npc.her] money's worth out of you, and so brings an end to the sex...");
+			return UtilText.parse(getCharacters(false), "[npc.Name] кажется, что [npc.sheHas] выжал из тебя всё на [npc.her] денег, и он заканчивает секс...");
 		}
 		@Override
 		public void applyPreParsingEffects() {
@@ -2261,7 +2260,7 @@ public class RatWarrensCaptiveDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Milked", "Enjoy the sensation of being milked as you wait for Murk to return again...", CAPTIVE_DAY_3_AFTERNOON_SECOND_SEX);
+				return new Response("Доен", "Наслаждайся ощущением дойки, ожидая, пока Мёрк вернется снова...", CAPTIVE_DAY_3_AFTERNOON_SECOND_SEX);
 			}
 			return null;
 		}
@@ -2288,8 +2287,8 @@ public class RatWarrensCaptiveDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				return new ResponseSex(
-						"Fucked again",
-						UtilText.parse(getCharacters(false), "[npc.Name] doesn't seem to care about giving you any foreplay and just starts fucking you...")
+						"Снова оттрахана",
+						UtilText.parse(getCharacters(false), "[npc.Name], кажется, вовсе не собирается тратить время на прелюдию и просто начинает трахать тебя...")
 								+ getObedienceResponseDescription(10),
 						true,
 						false,
@@ -2319,10 +2318,10 @@ public class RatWarrensCaptiveDialogue {
 		}
 	};
 
-	public static final DialogueNode CAPTIVE_DAY_3_AFTERNOON_AFTER_SECOND_SEX = new DialogueNode("Finished", "", true) {
+	public static final DialogueNode CAPTIVE_DAY_3_AFTERNOON_AFTER_SECOND_SEX = new DialogueNode("Завершено", "", true) {
 		@Override
 		public String getDescription() {
-			return UtilText.parse(getCharacters(false), "[npc.Name] [npc.has] had enough of fucking you, and so brings an end to the sex...");
+			return UtilText.parse(getCharacters(false), "[npc.Name] [npc.has] натрахался тобой досыта и решает закончить секс...");
 		}
 		@Override
 		public void applyPreParsingEffects() {
@@ -2342,7 +2341,7 @@ public class RatWarrensCaptiveDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Milked", "Enjoy the sensation of being milked as you wait for Murk to return again...", CAPTIVE_DAY_3_AFTERNOON_END);
+				return new Response("Доен", "Наслаждайся ощущением дойки, ожидая, пока Мёрк вернется снова...", CAPTIVE_DAY_3_AFTERNOON_END);
 			}
 			return null;
 		}
@@ -2366,10 +2365,10 @@ public class RatWarrensCaptiveDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Submit", "Kneel down before Murk and beg for him to fuck you.", CAPTIVE_DAY_3_AFTERNOON_END_SUBMIT);
+				return new Response("Подчиниться", "Опустись на колени перед Мёрком и умоляй его оттрахать тебя.", CAPTIVE_DAY_3_AFTERNOON_END_SUBMIT);
 				
 			} else if(index==2) {
-				return new Response("Escape", "The thought of trying to escape doesn't even cross your obedient milker mind...", null);
+				return new Response("Сбежать", "Мысль о попытке побега даже не посещает твой послушный разум доярки...", null);
 			}
 			return null;
 		}
@@ -2390,11 +2389,11 @@ public class RatWarrensCaptiveDialogue {
 				boolean allFours = Main.game.getPlayer().isTaur() || !Main.game.getPlayer().hasLegs();
 				return new ResponseSex(
 						allFours
-							?"Present yourself"
-							:"Spread legs",
+							?"Предстать перед ней"
+							:"Развести ноги",
 						(allFours
-							?"Present your pussy to your Master and tell him that his cock is your one true love!"
-							:"Spread your legs for your Master and tell him that his cock is your one true love!")
+							?"Представь свою киску своему Господину и скажи ему, что его член — твоя единственная истинная любовь!"
+							:"Разведи ноги перед своим Господином и скажи ему, что его член — твоя единственная истинная любовь!")
 							+ getObedienceResponseDescription(25),
 						true,
 						false,
@@ -2459,7 +2458,7 @@ public class RatWarrensCaptiveDialogue {
 		}
 	};
 	
-	public static final DialogueNode CAPTIVE_DAY_3_END = new DialogueNode("Finished", "Murk has had his fun by stuffing you full of his cum...", true) {
+	public static final DialogueNode CAPTIVE_DAY_3_END = new DialogueNode("Завершено", "Мёрк вдоволь развлекся, набивая твою утробу своим спермотой...", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			getMurk().returnToHome();
@@ -2475,7 +2474,7 @@ public class RatWarrensCaptiveDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Chained up", "You once again find yourself chained up...", CAPTIVE_NIGHT);
+				return new Response("Скованная цепями", "Ты снова оказываешься в цепях...", CAPTIVE_NIGHT);
 			}
 			return null;
 		}
@@ -2526,9 +2525,8 @@ public class RatWarrensCaptiveDialogue {
 				int stage = Main.game.getDialogueFlags().getMurkTfStage(Main.game.getPlayer());
 				if(stage>=4) {
 					if(Main.game.isBadEndsEnabled()) {
-						return new Response("Sleep",
-								"Fall asleep..."
-								+ "<br/>[style.boldBadEnd(BAD END:)] By failing to escape for the third night in a row, you will fully capitulate to Murk and accept your new life as one of his milkers!",
+						return new Response("Спать",
+								"Заснуть...<br/>[style.boldBadEnd(ПЛОХОЙ ФИНАЛ:)] Не сумев сбежать третий раз подряд, ты окончательно капитулируешь перед Мёрком и примешь свою новую жизнь в качестве одной из его доярок!",
 								CAPTIVE_NIGHT_SLEEP) {
 							@Override
 							public Colour getHighlightColour() {
@@ -2537,16 +2535,16 @@ public class RatWarrensCaptiveDialogue {
 						};
 						
 					} else {
-						return new Response("Sleep", "Fall asleep...", CAPTIVE_NIGHT_SLEEP_RESCUED);
+						return new Response("Спать", "Заснуть...", CAPTIVE_NIGHT_SLEEP_RESCUED);
 					}
 				}
-				return new Response("Sleep", "Fall asleep...", CAPTIVE_NIGHT_SLEEP);
+				return new Response("Спать", "Заснуть...", CAPTIVE_NIGHT_SLEEP);
 				
 			} else if(index==2) {
 				if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.ratWarrensCaptiveWashed)) {
-					return new Response("Wash", "You've already washed yourself this evening...", null);
+					return new Response("Умыться", "Ты уже умывалась этим вечером...", null);
 				}
-				return new Response("Wash", "Use the shallow stream to wash your body.", CAPTIVE_NIGHT) {
+				return new Response("Умыться", "Использовать мелководный ручей, чтобы омыть тело.", CAPTIVE_NIGHT) {
 					@Override
 					public int getSecondsPassed() {
 						return 10*60;
@@ -2572,16 +2570,16 @@ public class RatWarrensCaptiveDialogue {
 				
 			} else if(index==3) {
 				if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.ratWarrensCaptiveCalledOut)) {
-					return new Response("Call out", "Murk won't pay attention to you if you call out again. You'll have to wait until tomorrow night...", null);
+					return new Response("Окликнуть", "Мерк не обратит на тебя внимания, если ты снова закричишь. Придется ждать до завтрашнего вечера...", null);
 				}
-				return new Response("Call out", "Call out for Murk...", CAPTIVE_CALL_OUT);
+				return new Response("Окликнуть", "Окликнуть Мерка...", CAPTIVE_CALL_OUT);
 				
 			} else if(index==4) {
 				if(isPlayerObeyingOrders(false)) {
-					return new Response("Break lock", "You're too obedient to even consider trying to damage Murk's property!", null);
+					return new Response("Сломать замок", "Ты слишком послушна, чтобы даже помышлять о порче имущества Мерка!", null);
 				}
 				if(Main.game.getPlayer().getAttributeValue(Attribute.MAJOR_PHYSIQUE)>=PhysiqueLevel.THREE_POWERFUL.getMinimumValue()) {
-					return new Response("Break lock", "Use your raw physical power to break free of the lock...", CAPTIVE_BROKEN_FREE) {
+					return new Response("Сломать замок", "Использовать грубую физическую силу, чтобы вырваться из оков...", CAPTIVE_BROKEN_FREE) {
 						@Override
 						public void effects() {
 							Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/submission/ratWarrens/captive", "CAPTIVE_NIGHT_BREAK_LOCK", getCharacters(false)));
@@ -2589,17 +2587,17 @@ public class RatWarrensCaptiveDialogue {
 						}
 					};
 				}
-				return new Response("Break lock", "You are not strong enough to break the lock...<br/>[style.italicsMinorBad(Requires at least "+PhysiqueLevel.THREE_POWERFUL.getMinimumValue()+" "+Attribute.MAJOR_PHYSIQUE.getName()+"...)]", null);
+				return new Response("Сломать замок", "Тебе не хватает сил, чтобы взломать замок...<br/>[style.italicsMinorBad(Требуется как минимум "+PhysiqueLevel.THREE_POWERFUL.getMinimumValue()+" "+Attribute.MAJOR_PHYSIQUE.getName()+"...)]", null);
 				
 			} else if(index==5) {
 				if(isPlayerObeyingOrders(false)) {
-					return new Response("Break lock (Spell)", "You're too obedient to even consider trying to damage Murk's property!", null);
+					return new Response("Взломать замок (Заклинание)", "Ты слишком послушна, чтобы даже помышлять о порче имущества Мерка!", null);
 				}
 				if(Main.game.getPlayer().hasSpell(Spell.FIREBALL)
 						|| Main.game.getPlayer().hasSpell(Spell.ICE_SHARD)
 						|| Main.game.getPlayer().hasSpell(Spell.SLAM)) {
-					return new Response("Break lock (Spell)",
-							"Spend some time channelling your arcane power in an attempt to overcome your slave collar's enchantment and cast a spell to break the lock on the stocks.",
+					return new Response("Взломать замок (Заклинание)",
+							"Потратить время на концентрацию своей арканы, пытаясь преодолеть чары рабского ошейника и сотворить заклинание, чтобы разбить замок на колодках.",
 							CAPTIVE_BROKEN_FREE) {
 						@Override
 						public int getSecondsPassed() {
@@ -2612,9 +2610,8 @@ public class RatWarrensCaptiveDialogue {
 						}
 					};
 				}
-				return new Response("Break lock",
-						"You do not know a spell that would be suitable to break the lock..."
-								+ "<br/>[style.italicsMinorBad(Requires knowing one of the following spells: "+Spell.FIREBALL.getName()+"; "+Spell.ICE_SHARD.getName()+"; "+Spell.SLAM.getName()+".)]",
+				return new Response("Сломать замок",
+						"Ты не знаешь заклинания, подходящего для взлома замка...<br/>[style.italicsMinorBad(Требуется знание одного из следующих заклинаний: "+Spell.FIREBALL.getName()+"; "+Spell.ICE_SHARD.getName()+"; "+Spell.SLAM.getName()+".)]",
 						null);
 			}
 			return null;
@@ -2636,7 +2633,7 @@ public class RatWarrensCaptiveDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Wake up", "You wake up the next morning...", getSleepNode());
+				return new Response("Проснуться", "Ты просыпаешься следующим утром...", getSleepNode());
 			}
 			return null;
 		}
@@ -2647,12 +2644,12 @@ public class RatWarrensCaptiveDialogue {
 	// --------- MISCELLANEOUS DIALOGUES --------- //
 	
 	
-	public static final DialogueNode BAD_END = new DialogueNode("[style.boldBadEnd(Bad End: Murk's Milker)]", "", true) {
+	public static final DialogueNode BAD_END = new DialogueNode("[style.boldBadEnd(Плохая концовка: Дойка Мёрка)]", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
-			Main.game.setBadEnd("Murk's Milker");
+			Main.game.setBadEnd("Дойка Мёрка");
 			
-			Main.game.getPlayer().setName(new NameTriplet("Horny milker"));
+			Main.game.getPlayer().setName(new NameTriplet("Похотливая дойка"));
 		}
 		@Override
 		public String getContent() {
@@ -2661,7 +2658,7 @@ public class RatWarrensCaptiveDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("The End...", "[style.italicsBadEnd(With this end to your journey, the thread of prophecy is severed. Restore a saved game to restore the weave of fate, or persist in the doomed world you have created.)]", null);
+				return new Response("Конец...", "[style.italicsBadEnd(С таким финалом твоего путешествия нить пророчества обрывается. Загрузи сохраненную игру, чтобы восстановить плетение судьбы, или продолжай жить в обреченном мире, который ты создал.)]", null);
 			}
 			return null;
 		}
@@ -2695,7 +2692,7 @@ public class RatWarrensCaptiveDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				if(Main.game.getPlayer().isVaginaEggLayer()) {
-					return new Response("Protect the eggs!", "Protect your eggs from these rats!", CAPTIVE_GIVE_BIRTH_PROTECT_THE_EGGS) {
+					return new Response("Защищать яйца!", "Защити свои яйца от этих крыс!", CAPTIVE_GIVE_BIRTH_PROTECT_THE_EGGS) {
 						@Override
 						public void effects() {
 							Main.game.getNpc(Silence.class).returnToHome();
@@ -2703,7 +2700,7 @@ public class RatWarrensCaptiveDialogue {
 						}
 					};
 				} else {
-					return new Response("Rest", "You spend some time recovering from your ordeal...", CAPTIVE_GIVE_BIRTH_FINISHED) {
+					return new Response("Отдых", "Ты проводишь некоторое время, приходя в себя после пережитого...", CAPTIVE_GIVE_BIRTH_FINISHED) {
 						@Override
 						public void effects() {
 							Main.game.getNpc(Silence.class).returnToHome();
@@ -2728,7 +2725,7 @@ public class RatWarrensCaptiveDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Rest", "You spend some time recovering from your ordeal...", CAPTIVE_GIVE_BIRTH_FINISHED);
+				return new Response("Отдых", "Ты проводишь некоторое время, приходя в себя после пережитого...", CAPTIVE_GIVE_BIRTH_FINISHED);
 			}
 			return null;
 		}
@@ -2779,7 +2776,7 @@ public class RatWarrensCaptiveDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Rest", "You spend some time recovering from your ordeal...", CAPTIVE_LAY_EGGS_FINISHED) {
+				return new Response("Отдых", "Ты проводишь некоторое время, приходя в себя после пережитого...", CAPTIVE_LAY_EGGS_FINISHED) {
 					@Override
 					public void effects() {
 						Main.game.getNpc(Silence.class).returnToHome();
@@ -2831,10 +2828,10 @@ public class RatWarrensCaptiveDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new ResponseCombat("Attack",
-						"Now that you're free of your chain, you can finally attack Murk!",
+				return new ResponseCombat("Атаковать",
+						"Теперь, когда ты свободна от цепей, ты наконец-то можешь напасть на Мерка!",
 						(NPC) getMurk(),
-						Util.newHashMapOfValues(new Value<>(getMurk(), "[murk.speech(Yer gonna pay fer this!)] Murk shouts as he prepares to fight you."))) {
+						Util.newHashMapOfValues(new Value<>(getMurk(), "[murk.speech(Ты за это заплатишь!)] — кричит Мерк, готовясь к бою."))) {
 					@Override
 					public void effects() {
 						Main.game.getDialogueFlags().setFlag(DialogueFlagValue.ratWarrensCaptiveAttemptingEscape, true);
@@ -2842,8 +2839,8 @@ public class RatWarrensCaptiveDialogue {
 				};
 				
 			} else if(index==2) {
-				return new Response("Submit",
-						"Do as Murk says and submit to him..."
+				return new Response("Подчиниться",
+						"Сделай то, что говорит Мерк, и подчинись ему..."
 								+getObedienceResponseDescription(10),
 						CAPTIVE_BROKEN_FREE_SUBMIT) {
 					@Override
@@ -2878,14 +2875,14 @@ public class RatWarrensCaptiveDialogue {
 		}
 	};
 	
-	public static final DialogueNode CAPTIVE_BROKEN_FREE_AFTER_SEX = new DialogueNode("Finished", "", true) {
+	public static final DialogueNode CAPTIVE_BROKEN_FREE_AFTER_SEX = new DialogueNode("Завершено", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			getMurk().returnToHome();
 		}
 		@Override
 		public String getDescription() {
-			return "Murk has finished with you for now...";
+			return "Мерк на время закончил с тобой...";
 		}
 		@Override
 		public int getSecondsPassed() {
@@ -2899,10 +2896,10 @@ public class RatWarrensCaptiveDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				if(!Main.game.isBadEndsEnabled() && Main.game.getDialogueFlags().getMurkTfStage(Main.game.getPlayer())>=4) {
-					return new Response("Sleep", "Completely exhausted from sexually pleasuring Murk, you soon find yourself falling asleep...", CAPTIVE_NIGHT_SLEEP_RESCUED);
+					return new Response("Спать", "Совершенно измотанная сексуальным обслуживанием Мерка, ты вскоре засыпаешь...", CAPTIVE_NIGHT_SLEEP_RESCUED);
 				}
-				return new Response("Sleep",
-						"Completely exhausted from sexually pleasuring Murk, you soon find yourself falling asleep...",
+				return new Response("Спать",
+						"Совершенно измотанная сексуальным обслуживанием Мерка, ты вскоре засыпаешь...",
 						getSleepNode());
 			}
 			return null;
@@ -2926,9 +2923,9 @@ public class RatWarrensCaptiveDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				if(isPlayerObeyingOrders(false)) {
-					return new Response("Feign choking", "You're too obedient to even consider trying to lie to Murk!", null);
+					return new Response("Притвориться, что подавилась", "Ты слишком послушна, чтобы даже помыслить о лжи Мёрку!", null);
 				}
-				return new Response("Feign choking", "Pretend to be choking in order to trick [murk.name] into releasing you...", CAPTIVE_CALL_OUT_RELEASED) {
+				return new Response("Притвориться, что подавилась", "Притвориться, что ты подавилась, чтобы обманом заставить [murk.name] снять с тебя ошейник...", CAPTIVE_CALL_OUT_RELEASED) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/submission/ratWarrens/captive", "CAPTIVE_CALL_OUT_CHOKE", getCharacters(false)));
@@ -2937,17 +2934,15 @@ public class RatWarrensCaptiveDialogue {
 				
 			} else if(index==2) {
 				if(!Main.game.getPlayer().hasTraitActivated(Perk.CONVINCING_REQUESTS) && !isPlayerObeyingOrders(false)) {
-					return new Response("Seduce",
+					return new Response("Соблазнить",
 							UtilText.parse(getMurk(),
-									"You aren't convincing enough at seduction to attempt to trick [npc.name] into taking your collar off..."
-									+ "<br/>[style.italicsMinorBad(Requires the '"+Perk.CONVINCING_REQUESTS.getName(Main.game.getPlayer())+"' trait to be active.)]"),
+									"Ты недостаточно хороша в соблазнении, чтобы попытаться обманом заставить [npc.name] снять твой ошейник...<br/>[style.italicsMinorBad(Требуется активный черта '"+Perk.CONVINCING_REQUESTS.getName(Main.game.getPlayer())+"(черта должна быть активна.)]"),
 							null);
 				}
-				return new Response("Seduce",
+				return new Response("Соблазнить",
 						isPlayerObeyingOrders(false)
-							?"Tell Murk that you're so desperate for sex that you can't sleep..."
-							:"Tell Murk that you're desperate for sex in an attempt to trick him into taking your collar off..."
-								+ "<br/>[style.italicsMinorGood(Unlocked from having the '"+Perk.CONVINCING_REQUESTS.getName(Main.game.getPlayer())+"' trait activated.)]",
+							?"Сказать Мёрку, что ты так жаждешь секса, что даже не можешь спать..."
+							:"Сказать Мёрку, что ты жаждешь секса, пытаясь обманом заставить его снять твой ошейник...<br/>[style.italicsMinorGood(Разблокировано при наличии активной черты '"+Perk.CONVINCING_REQUESTS.getName(Main.game.getPlayer())+"' trait activated.)]",
 						CAPTIVE_CALL_OUT_RELEASED) {
 					@Override
 					public void effects() {
@@ -2974,14 +2969,14 @@ public class RatWarrensCaptiveDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				if(isPlayerObeyingOrders(false)) {
-					return new Response("Fight", "You're too obedient to even consider fighting Murk!", null);
+					return new Response("Сразиться", "Ты слишком послушна, чтобы даже задуматься о сопротивлении Мёрку!", null);
 				}
-				return new ResponseCombat("Fight",
-						UtilText.parse(getMurk(), "Now that you're free of your collar, you can finally attack [npc.name]!"),
+				return new ResponseCombat("Сразиться",
+						UtilText.parse(getMurk(), "Теперь, когда ты свободна от ошейника, ты наконец-то можешь напасть на [npc.name]!"),
 						null,
 						(NPC) getMurk(),
 						Util.newArrayListOfValues(getMurk()),
-						Util.newHashMapOfValues(new Value<>(getMurk(), "[npc.speech(Y-Yer gonna pay fer this!)] [npc.name] shouts in panic, wielding his bat."))) {
+						Util.newHashMapOfValues(new Value<>(getMurk(), "[npc.speech(Т-ты за это заплатишь!)] [npc.name] в панике кричит, размахивая своей битой."))) {
 					@Override
 					public void effects() {
 						Main.game.getDialogueFlags().setFlag(DialogueFlagValue.ratWarrensCaptiveAttemptingEscape, true);
@@ -2995,7 +2990,7 @@ public class RatWarrensCaptiveDialogue {
 		}
 	};
 	
-	public static final DialogueNode CAPTIVE_RELEASED_AFTER_SEX = new DialogueNode("Finished", "Murk is finished with you...", true) {
+	public static final DialogueNode CAPTIVE_RELEASED_AFTER_SEX = new DialogueNode("Завершено", "Мурк с тобой закончил...", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			Main.game.getPlayer().setLocation(WorldType.RAT_WARRENS, PlaceType.RAT_WARRENS_MILKING_ROOM);
@@ -3012,10 +3007,10 @@ public class RatWarrensCaptiveDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Locked up", "Let Murk lock you back into the stocks...", CAPTIVE_RELEASED_AFTER_SEX_LOCKED_UP);
+				return new Response("Заперта", "Позволь Мурку снова запереть тебя в колодки...", CAPTIVE_RELEASED_AFTER_SEX_LOCKED_UP);
 				
 			} else if(index==2) {
-				return new Response("Offer company", "Offer to sleep with Murk, which would give you the opportunity to sneak out and escape...", CAPTIVE_RELEASED_OFFER_COMPANY);
+				return new Response("Составить компанию", "Предложить Мурку переспать, что даст тебе шанс незаметно ускользнуть и сбежать...", CAPTIVE_RELEASED_OFFER_COMPANY);
 				
 			}
 			return null;
@@ -3040,9 +3035,9 @@ public class RatWarrensCaptiveDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				if(!Main.game.isBadEndsEnabled() && Main.game.getDialogueFlags().getMurkTfStage(Main.game.getPlayer())>=4) {
-					return new Response("Sleep", "Fall asleep...", CAPTIVE_NIGHT_SLEEP_RESCUED);
+					return new Response("Спать", "Заснуть...", CAPTIVE_NIGHT_SLEEP_RESCUED);
 				}
-				return new Response("Sleep", "Fall asleep...", getSleepNode());
+				return new Response("Спать", "Заснуть...", getSleepNode());
 			}
 			return null;
 		}
@@ -3060,7 +3055,7 @@ public class RatWarrensCaptiveDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Slip away", "Use this opportunity to slip away and attempt to escape...", CAPTIVE_ESCAPING) {
+				return new Response("Ускользнуть", "Воспользоваться этой возможностью, чтобы незаметно ускользнуть и попытаться сбежать...", CAPTIVE_ESCAPING) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/submission/ratWarrens/captive", "CAPTIVE_RELEASED_OFFER_COMPANY_SLIP_AWAY", getCharacters(false)));
@@ -3070,7 +3065,7 @@ public class RatWarrensCaptiveDialogue {
 				};
 				
 			} else if(index==2) {
-				return new Response("Stay", "Stay with Murk until it's time for you to be locked back into your milking stall...", CAPTIVE_RELEASED_OFFER_COMPANY_STAY);
+				return new Response("Остаться", "Остаться с Мурком до тех пор, пока тебя не запрут обратно в стойло для дойки...", CAPTIVE_RELEASED_OFFER_COMPANY_STAY);
 			}
 			return null;
 		}
@@ -3116,9 +3111,9 @@ public class RatWarrensCaptiveDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				if(!Main.game.isBadEndsEnabled() && Main.game.getDialogueFlags().getMurkTfStage(Main.game.getPlayer())>=4) {
-					return new Response("Sleep", "Fall asleep...", CAPTIVE_NIGHT_SLEEP_RESCUED);
+					return new Response("Спать", "Заснуть...", CAPTIVE_NIGHT_SLEEP_RESCUED);
 				}
-				return new Response("Sleep", "Fall asleep...", getSleepNode());
+				return new Response("Спать", "Заснуть...", getSleepNode());
 			}
 			return null;
 		}
@@ -3136,7 +3131,7 @@ public class RatWarrensCaptiveDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Tunnels", "Head back through the tunnels and escape from the Rat Warrens.", CAPTIVE_ESCAPING) {
+				return new Response("Туннели", "Направиться обратно через туннели и выбраться из Крысиных нор.", CAPTIVE_ESCAPING) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/submission/ratWarrens/captive", "CAPTIVE_ESCAPE_FIGHT_VICTORY_ESCAPING", getCharacters(false)));
@@ -3166,7 +3161,7 @@ public class RatWarrensCaptiveDialogue {
 		}
 	};
 	
-	public static final DialogueNode CAPTIVE_AFTER_DEFEAT_SEX = new DialogueNode("Finished", "", true) {
+	public static final DialogueNode CAPTIVE_AFTER_DEFEAT_SEX = new DialogueNode("Завершено", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			Main.game.getPlayer().setLocation(WorldType.RAT_WARRENS, PlaceType.RAT_WARRENS_MILKING_ROOM);
@@ -3174,7 +3169,7 @@ public class RatWarrensCaptiveDialogue {
 		}
 		@Override
 		public String getDescription() {
-			return UtilText.parse(getMurk(), "[npc.NameHasFull] finished with you for now...");
+			return UtilText.parse(getMurk(), "[npc.NameHasFull] на данный момент с тобой закончил...");
 		}
 		@Override
 		public int getSecondsPassed() {
@@ -3188,10 +3183,10 @@ public class RatWarrensCaptiveDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				if(!Main.game.isBadEndsEnabled() && Main.game.getDialogueFlags().getMurkTfStage(Main.game.getPlayer())>=4) {
-					return new Response("Sleep", "Completely exhausted from your fight and the subsequent sex, you soon find yourself falling asleep...", CAPTIVE_NIGHT_SLEEP_RESCUED);
+					return new Response("Спать", "Совершенно измотанная битвой и последующим сексом, ты вскоре погружаешься в сон...", CAPTIVE_NIGHT_SLEEP_RESCUED);
 				}
-				return new Response("Sleep",
-						"Completely exhausted from your fight and the subsequent sex, you soon find yourself falling asleep...",
+				return new Response("Спать",
+						"Совершенно измотанная битвой и последующим сексом, ты вскоре погружаешься в сон...",
 						getSleepNode());
 			}
 			return null;
@@ -3235,7 +3230,7 @@ public class RatWarrensCaptiveDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Escape", "Follow Shadow and Silence as they lead you out of the Rat Warrens.", ESCAPING) {
+				return new Response("Сбежать", "Следуйте за Shadow и Silence, пока они выводят вас из Крысиных нор.", ESCAPING) {
 					@Override
 					public void effects() {
 						RatWarrensCaptiveDialogue.restoreInventories();
@@ -3264,7 +3259,7 @@ public class RatWarrensCaptiveDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Follow", "Join Shadow and Silence in following Constable Adams to the nearest Enforcer post.", RatWarrensDialogue.POST_CAPTIVITY_SWORD_RAID) {
+				return new Response("Следовать", "Присоединяйтесь к Shadow и Silence, чтобы последовать за констеблем Adams к ближайшему посту Enforcer.", RatWarrensDialogue.POST_CAPTIVITY_SWORD_RAID) {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setLocation(WorldType.SUBMISSION, PlaceType.SUBMISSION_RAT_WARREN);

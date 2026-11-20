@@ -13,139 +13,139 @@ import com.lilithsthrone.game.dialogue.utils.UtilText;
 public class SexSlotDesk {
 
 	public static final SexSlot OVER_DESK_ON_BACK = new SexSlot(
-			"Lying back",
-			"lying back",
-			"[npc.Name] [npc.verb(collapse)] back down onto the [pc.desk], before letting out [npc.a_moan+] as [npc.she] [npc.verb(prepare)] to reach [npc.her] climax.",
+			"Лежа на спине",
+			"лежа на спине",
+			"[npc.Name] [npc.verb(collapse)] на спину на [pc.desk], издав [npc.a_moan+], пока [npc.she] [npc.verb(prepare)] к [npc.her] кульминации.",
 			false,
 			SexSlotTag.OVER_DESK_BACK);
 	public static final SexSlot OVER_DESK_ON_BACK_TWO = new SexSlot(OVER_DESK_ON_BACK) {
 		@Override
 		public String getDescription() {
-			return "lying back (2nd)";
+			return "лежа на спине (2-й)";
 		}
 	};
 	public static final SexSlot OVER_DESK_ON_BACK_THREE = new SexSlot(OVER_DESK_ON_BACK) {
 		@Override
 		public String getDescription() {
-			return "lying back (3rd)";
+			return "лежа на спине (3-й)";
 		}
 	};
 	public static final SexSlot OVER_DESK_ON_BACK_FOUR = new SexSlot(OVER_DESK_ON_BACK) {
 		@Override
 		public String getDescription() {
-			return "lying back (4th)";
+			return "лежа на спине (4-й)";
 		}
 	};
 
 	
 	public static final SexSlot OVER_DESK_ON_FRONT = new SexSlot(
-			"Bent over",
-			"bent over",
-			"[npc.Name] [npc.verb(collapse)] down onto the [pc.desk], before letting out [npc.a_moan+] as [npc.she] [npc.verb(prepare)] to reach [npc.her] climax.",
+			"Наклонившись",
+			"наклонившись",
+			"[npc.Name] [npc.verb(collapse)] на [pc.desk], издав [npc.a_moan+], пока [npc.she] [npc.verb(prepare)] к [npc.her] кульминации.",
 			false,
 			SexSlotTag.OVER_DESK_FRONT);
 	public static final SexSlot OVER_DESK_ON_FRONT_TWO = new SexSlot(OVER_DESK_ON_FRONT) {
 		@Override
 		public String getDescription() {
-			return "bent over (2nd)";
+			return "наклонившись (2-й)";
 		}
 	};
 	public static final SexSlot OVER_DESK_ON_FRONT_THREE = new SexSlot(OVER_DESK_ON_FRONT) {
 		@Override
 		public String getDescription() {
-			return "bent over (3rd)";
+			return "наклонившись (3-й)";
 		}
 	};
 	public static final SexSlot OVER_DESK_ON_FRONT_FOUR = new SexSlot(OVER_DESK_ON_FRONT) {
 		@Override
 		public String getDescription() {
-			return "bent over (4th)";
+			return "наклонившись (4-й)";
 		}
 	};
 
 	
 	public static final SexSlot BETWEEN_LEGS = new SexSlot(
-			"Between legs",
-			"between legs",
+			"Между ног",
+			"между ног",
 			null,
 			true,
 			SexSlotTag.OVER_DESK_BETWEEN_LEGS);
 	public static final SexSlot BETWEEN_LEGS_TWO = new SexSlot(BETWEEN_LEGS) {
 		@Override
 		public String getDescription() {
-			return "between legs (2nd)";
+			return "между ног (2-й)";
 		}
 	};
 	public static final SexSlot BETWEEN_LEGS_THREE = new SexSlot(BETWEEN_LEGS) {
 		@Override
 		public String getDescription() {
-			return "between legs (3rd)";
+			return "между ног (3-й)";
 		}
 	};
 	public static final SexSlot BETWEEN_LEGS_FOUR = new SexSlot(BETWEEN_LEGS) {
 		@Override
 		public String getDescription() {
-			return "between legs (4th)";
+			return "между ног (4-й)";
 		}
 	};
 
 	public static final SexSlot HUMPING = new SexSlot(
-			"Humping",
+			"Трах",
 			"humping",
-			"[npc.Name] wildly [npc.verb(buck)] [npc.her] [npc.hips] against [npc2.name], before letting out [npc.a_moan+] as [npc.she] [npc.verb(prepare)] to reach [npc.her] climax.",
+			"[npc.Name] неистово [npc.verb(buck)] [npc.her] [npc.hips] в [npc2.name], прежде чем издать [npc.a_moan+], пока [npc.she] [npc.verb(prepare)] к [npc.her] кульминации.",
 			false) {
 		@Override
 		public String getName(GameCharacter target) {
 			GameCharacter partner = getCharacterInSlot(OVER_DESK_ON_FRONT);
 			if(partner==null) { partner = getCharacterInSlot(OVER_DESK_ON_BACK); }
-			if(partner!=null) { return "Humping "+UtilText.parse(partner, "[npc.name]"); }
-			return "Humping";
+			if(partner!=null) { return "Трах "+UtilText.parse(partner, "[npc.name]"); }
+			return "Трах";
 		}
 	};
 	public static final SexSlot HUMPING_TWO = new SexSlot(
-			"Humping",
-			"humping (2nd)",
-			"[npc.Name] wildly [npc.verb(buck)] [npc.her] [npc.hips] against [npc2.name], before letting out [npc.a_moan+] as [npc.she] [npc.verb(prepare)] to reach [npc.her] climax.",
+			"Трах",
+			"трах (2-й)",
+			"[npc.Name] неистово [npc.verb(buck)] [npc.her] [npc.hips] в [npc2.name], прежде чем издать [npc.a_moan+], пока [npc.she] [npc.verb(prepare)] к [npc.her] кульминации.",
 			false) {
 		@Override
 		public String getName(GameCharacter target) {
 			GameCharacter partner = getCharacterInSlot(OVER_DESK_ON_FRONT_TWO);
 			if(partner==null) { partner = getCharacterInSlot(OVER_DESK_ON_BACK_TWO); }
-			if(partner!=null) { return "Humping "+UtilText.parse(partner, "[npc.name]"); }
-			return "Humping";
+			if(partner!=null) { return "Трах "+UtilText.parse(partner, "[npc.name]"); }
+			return "Трах";
 		}
 	};
 	public static final SexSlot HUMPING_THREE = new SexSlot(
-			"Humping",
-			"humping (3rd)",
-			"[npc.Name] wildly [npc.verb(buck)] [npc.her] [npc.hips] against [npc2.name], before letting out [npc.a_moan+] as [npc.she] [npc.verb(prepare)] to reach [npc.her] climax.",
+			"Трах",
+			"трах (3-й)",
+			"[npc.Name] неистово [npc.verb(buck)] [npc.her] [npc.hips] в [npc2.name], прежде чем издать [npc.a_moan+], пока [npc.she] [npc.verb(prepare)] к [npc.her] кульминации.",
 			false) {
 		@Override
 		public String getName(GameCharacter target) {
 			GameCharacter partner = getCharacterInSlot(OVER_DESK_ON_FRONT_THREE);
 			if(partner==null) { partner = getCharacterInSlot(OVER_DESK_ON_BACK_THREE); }
-			if(partner!=null) { return "Humping "+UtilText.parse(partner, "[npc.name]"); }
-			return "Humping";
+			if(partner!=null) { return "Трах "+UtilText.parse(partner, "[npc.name]"); }
+			return "Трах";
 		}
 	};
 	public static final SexSlot HUMPING_FOUR = new SexSlot(
-			"Humping",
-			"humping (4th)",
-			"[npc.Name] wildly [npc.verb(buck)] [npc.her] [npc.hips] against [npc2.name], before letting out [npc.a_moan+] as [npc.she] [npc.verb(prepare)] to reach [npc.her] climax.",
+			"Трах",
+			"трахается (на четвереньках)",
+			"[npc.Name] неистово [npc.verb(buck)] [npc.her] [npc.hips] в [npc2.name], прежде чем издать [npc.a_moan+], пока [npc.she] [npc.verb(prepare)] к [npc.her] кульминации.",
 			false) {
 		@Override
 		public String getName(GameCharacter target) {
 			GameCharacter partner = getCharacterInSlot(OVER_DESK_ON_FRONT_FOUR);
 			if(partner==null) { partner = getCharacterInSlot(OVER_DESK_ON_BACK_FOUR); }
-			if(partner!=null) { return "Humping "+UtilText.parse(partner, "[npc.name]"); }
-			return "Humping";
+			if(partner!=null) { return "Трах "+UtilText.parse(partner, "[npc.name]"); }
+			return "Трах";
 		}
 	};
 	
 	public static final SexSlot PERFORMING_ORAL = new SexSlot(
-			"Performing oral",
-			"performing oral",
-			"[npc.Name] [npc.verb(lower)] [npc.her] head down into [npc2.namePos] groin, before letting out [npc.a_moan+] as [npc.she] [npc.verb(prepare)] to reach [npc.her] climax.",
+			"Оральный секс",
+			"оральный секс",
+			"[npc.Name] [npc.verb(lower)] [npc.her] голову в [npc2.namePos] пах, издав [npc.a_moan+], пока [npc.she] [npc.verb(prepare)] к [npc.her] кульминации.",
 			false) {
 		@Override
 		public boolean isStanding(GameCharacter target) {
@@ -153,8 +153,8 @@ public class SexSlotDesk {
 		}
 	};
 	public static final SexSlot PERFORMING_ORAL_TWO = new SexSlot(
-			"Performing oral",
-			"performing oral (2nd)",
+			"Оральный секс",
+			"оральный секс (2-й)",
 			null,
 			false) {
 		@Override
@@ -163,8 +163,8 @@ public class SexSlotDesk {
 		}
 	};
 	public static final SexSlot PERFORMING_ORAL_THREE = new SexSlot(
-			"Performing oral",
-			"performing oral (3rd)",
+			"Оральный секс",
+			"оральный секс (3-й)",
 			null,
 			false) {
 		@Override
@@ -173,8 +173,8 @@ public class SexSlotDesk {
 		}
 	};
 	public static final SexSlot PERFORMING_ORAL_FOUR = new SexSlot(
-			"Performing oral",
-			"performing oral (4th)",
+			"Оральный секс",
+			"оральный секс (4-й)",
 			null,
 			false) {
 		@Override
@@ -185,26 +185,26 @@ public class SexSlotDesk {
 	
 
 	public static final SexSlot RECEIVING_ORAL = new SexSlot(
-			"Receiving oral",
-			"receiving oral",
-			"[npc.Name] [npc.verb(press)] [npc.herself] up close against [npc2.name], before letting out [npc.a_moan+] as [npc.she] [npc.verb(prepare)] to reach [npc.her] climax.",
+			"Получает оральный секс",
+			"получение орального секса",
+			"[npc.Name] [npc.verb(press)] [npc.herself] вплотную к [npc2.name], издав [npc.a_moan+], пока [npc.she] [npc.verb(prepare)] к [npc.her] кульминации.",
 			true);
 	public static final SexSlot RECEIVING_ORAL_TWO = new SexSlot(RECEIVING_ORAL) {
 		@Override
 		public String getDescription() {
-			return "receiving oral (2nd)";
+			return "принимает оральный секс (2-й)";
 		}
 	};
 	public static final SexSlot RECEIVING_ORAL_THREE =  new SexSlot(RECEIVING_ORAL) {
 		@Override
 		public String getDescription() {
-			return "receiving oral (3rd)";
+			return "принимает оральный секс (3-й)";
 		}
 	};
 	public static final SexSlot RECEIVING_ORAL_FOUR =  new SexSlot(RECEIVING_ORAL) {
 		@Override
 		public String getDescription() {
-			return "receiving oral (4th)";
+			return "принимает оральный секс (4-й)";
 		}
 	};
 }

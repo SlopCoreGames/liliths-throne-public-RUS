@@ -85,32 +85,32 @@ public class Properties {
 	
 	// Taur furry options:
 	public static final String[] taurFurryLevelName = new String[] {
-			"Untouched",
-			"Human",
-			"Minimum",
-			"Lesser",
-			"Greater",
-			"Maximum"};
+			"Без изменений",
+			"Человек",
+			"Минимум",
+			"Меньший",
+			"Больший",
+			"Максимальный"};
 	public static final String[] taurFurryLevelDescription = new String[] {
-			"If an NPC is generated as a taur, their upper body's furriness will be based on your furry preferences for their race.",
-			"If an NPC is generated as a taur, their upper body will always be completely human.",
-			"If an NPC is generated as a taur, they will always have the upper-body of a partial morph (so eyes, ears, horns, and antenna will be non-human).",
-			"If an NPC is generated as a taur, they will always have the upper-body of a partial morph (so eyes, ears, horns, and antenna will be non-human). They also have the chance to spawn with furry breasts and arms.",
-			"If an NPC is generated as a taur, they will always have the upper-body of a partial morph (so eyes, ears, horns, and antenna will be non-human). They also have the chance to spawn with furry breasts, arms, skin/fur, and faces.",
-			"If an NPC is generated as a taur, they will always have the upper-body of a greater morph, spawning in with furry ears, eyes, horns, antenna, breasts, arms, skin/fur, and face."};
+			"Если NPC генерируется как тавр, пушистость его верхней части тела будет зависеть от ваших предпочтений по меху для этой расы.",
+			"Если NPC генерируется как тавр, его верхняя часть тела всегда будет полностью человеческой.",
+			"Если NPC генерируется как тавр, его верхняя часть тела всегда будет иметь черты частичного морфа (т.е. глаза, уши, рога и усики будут нечеловеческими).",
+			"Если NPC генерируется как тавр, его верхняя часть тела всегда будет иметь черты частичного морфа (т.е. глаза, уши, рога и усики будут нечеловеческими). Также есть шанс появления с пушистой грудью и руками.",
+			"Если NPC генерируется как тавр, его верхняя часть тела всегда будет иметь черты частичного морфа (т.е. глаза, уши, рога и усики будут нечеловеческими). Также есть шанс появления с пушистой грудью, руками, кожей/мехом и лицом.",
+			"Если NPC генерируется как тавр, его верхняя часть тела всегда будет иметь черты полного морфа, появляясь с пушистыми ушами, глазами, рогами, усиками, грудью, руками, кожей/мехом и лицом."};
 	public int taurFurryLevel = 2;
 
 	// Offspring gender options:
 	public static final String[] offspringGenderName = new String[] {
-			"No offspring",
-			"Self-offspring",
-			"NPC-offspring",
-			"All offspring"};
+			"Нет потомства",
+			"Собственное потомство",
+			"Потомство NPC",
+			"Все потомки"};
 	public static final String[] offspringGenderDescription = new String[] {
-			"The gender of all offspring birthed throughout the game by both NPCs and the player will use gender ratios which are derived from their race.",
-			"The gender of offspring birthed by the player will use the gender preferences that you've defined on this page. Offspring birthed by NPCs will use gender ratios which are derived from the offspring's race.",
-			"The gender of offspring birthed by NPCs will use the gender preferences that you've defined on this page. Offspring birthed by the player will use gender ratios which are derived from the offspring's race.",
-			"The gender of all offspring birthed throughout the game by both NPCs and the player will use the gender preferences that you've defined on this page."};
+			"Пол всех потомков, рожденных на протяжении игры как NPC, так и игроком, будет определяться соотношением полов, характерным для их расы.",
+			"Пол потомков, рожденных игроком, будет определяться гендерными предпочтениями, заданными на этой странице. Пол потомков, рожденных NPC, будет определяться соотношением полов, характерным для их расы.",
+			"Пол потомков, рожденных NPC, будет определяться гендерными предпочтениями, заданными на этой странице. Пол потомков, рожденных игроком, будет определяться соотношением полов, характерным для их расы.",
+			"Пол всех потомков, рожденных на протяжении игры как NPC, так и игроком, будет определяться гендерными предпочтениями, заданными на этой странице."};
 	public int offspringGenderLevel = 0;
 	
 	public int humanSpawnRate = 5;
@@ -118,51 +118,47 @@ public class Properties {
 	public int halfDemonSpawnRate = 5;
 	
 	public int multiBreasts = 1;
-	public static String[] multiBreastsLabels = new String[] {"Never", "Off", "Furry-only", "On"};
+	public static String[] multiBreastsLabels = new String[] {"Никогда", "Выкл.", "Только фурри", "Вкл."};
 	public static String[] multiBreastsDescriptions = new String[] {
-			"Randomly-generated NPCs will never have multiple rows of breasts, and most unique NPCs will no longer have multi-boobs."
-				+"<br/><i>Characters will no longer gain additional breasts via transformations.</i>",
+			"У случайно сгенерированных NPC больше никогда не будет нескольких рядов груди, а большинство уникальных NPC избавятся от многогрудости.<br/><i>Персонажи больше не будут получать дополнительные груди через трансформации.</i>",
 				
-			"Randomly-generated NPCs will never have multiple rows of breasts."
-				+"<br/><i>Characters can always gain additional breasts via transformations after they've spawned.</i>",
+			"У случайно сгенерированных NPC никогда не будет нескольких рядов груди.<br/><i>Персонажи всегда могут получить дополнительные ряды груди через трансформации после появления.</i>",
 				
-			"Randomly-generated NPCs will only have multiple rows of breasts if they have furry skin. (Default setting.)"
-				+"<br/><i>Characters can always gain additional breasts via transformations after they've spawned.</i>",
+			"У случайно сгенерированных NPC будет несколько рядов груди только при наличии меховой кожи. (Настройка по умолчанию.)<br/><i>Персонажи всегда могут получить дополнительные ряды груди через трансформации после появления.</i>",
 				
-			"Randomly-generated NPCs will have multiple rows of breasts if their breast type is furry (starts at 'Minor morph' level)."
-				+"<br/><i>Characters can always gain additional breasts via transformations after they've spawned.</i>"};
+			"У случайно сгенерированных NPC будет несколько рядов груди, если тип их груди — меховой (начинается с уровня 'Minor morph').<br/><i>Персонажи всегда могут получить дополнительные ряды груди через трансформации после появления.</i>"};
 	
 	/** 0=off, 1=taur-only, 2=on*/
 	private int udders = 1;
-	public static String[] uddersLabels = new String[] {"Off", "Taur-only", "On"};
+	public static String[] uddersLabels = new String[] {"Выкл.", "Только для тавров", "Вкл."};
 	public static String[] uddersDescriptions = new String[] {
-			"Neither randomly-generated taurs nor anthro-morphs will ever have udders or crotch-boobs.",
-			"Randomly-generated NPCs will only have udders or crotch-boobs if they have a non-bipedal body. (Default setting.)",
-			"Randomly-generated greater-anthro-morphs, as well as taurs, will have udders and crotch boobs."};
+			"Ни у случайно сгенерированных тавров, ни у антропоморфов никогда не будет вымени или лобковой груди.",
+			"У случайно сгенерированных NPC будет вымя или лобковая грудь только при наличии небипедального тела. (Настройка по умолчанию.)",
+			"У случайно сгенерированных высших антропоморфов, а также у тавров, будут вымя и лобковая грудь."};
 
 	/** 0=off, 1=weekly, 2=daily, 3=hourly*/
 	private int hairGrowth = 1;
 	
 	public int autoSaveFrequency = 0;
-	public static String[] autoSaveLabels = new String[] {"Always", "Daily", "Weekly"};
+	public static String[] autoSaveLabels = new String[] {"Всегда", "Ежедневно", "Еженедельно"};
 	public static String[] autoSaveDescriptions = new String[] {
-			"The game will autosave every time you transition to a new map.",
-			"The game will autosave when you transition to a new map, at a maximum rate of once per in-game day.",
-			"The game will autosave when you transition to a new map, at a maximum rate of once per in-game week."};
+			"Игра будет автоматически сохранять прогресс каждый раз при переходе на новую карту.",
+			"Игра будет автоматически сохранять прогресс при переходе на новую карту, но не чаще одного раза в игровой день.",
+			"Игра будет автоматически сохраняться при переходе на новую карту, но не чаще одного раза в игровую неделю."};
 
 	public int bypassSexActions = 2;
-	public static String[] bypassSexActionsLabels = new String[] {"None", "Limited", "Full"};
+	public static String[] bypassSexActionsLabels = new String[] {"Нет", "Ограниченный", "Полный"};
 	public static String[] getBypassSexActionsDescriptions = new String[] {
-			"There will be no options to bypass sex action corruption requirements, you are limited in your actions based on your corruption and fetishes.",
-			"Sex action corruption requirements may be bypassed if your corruption level is one level below the required corruption level of the action, but you will gain corruption if you do so.",
-			"All sex action corruption requirements may be bypassed, but you will gain corruption if you do so."};
+			"Варианты обхода требований к порочности для секс-действий будут отсутствовать; ваши действия ограничены уровнем вашей порочности и фетишами.",
+			"Требования к порочности для секс-действий можно обойти, если ваш уровень порочности всего на один шаг ниже необходимого, но при этом вы будете получать порочность.",
+			"Все требования к порочности для секс-действий можно обойти, но при этом вы будете получать порочность."};
 
 	public int fullExposureDescriptions = 2;
-	public static String[] fullExposureDescriptionsLabels = new String[] {"Never", "Once", "Always"};
+	public static String[] fullExposureDescriptionsLabels = new String[] {"Никогда", "Один раз", "Всегда"};
 	public static String[] getFullExposureDescriptionsDescriptions = new String[] {
-			"Full descriptions for revealed body parts will never be shown during sex.",
-			"Full descriptions for revealed body parts will only be shown during sex if it's your first time seeing them.",
-			"Full descriptions for revealed body parts will always be shown during sex."};
+			"Полные описания открытых частей тела никогда не будут показываться во время секса.",
+			"Полные описания открытых частей тела будут показываться во время секса только при первом знакомстве с ними.",
+			"Полные описания открытых частей тела всегда будут показываться во время секса."};
 	
 	public int pregnancyDuration = 1;
 	
@@ -192,12 +188,12 @@ public class Properties {
 	
 	private int clothingFemininityLevel = 3;
 	public Colour[] clothingFemininityColours = new Colour[] {PresetColour.GENERIC_BAD, PresetColour.MASCULINE, PresetColour.FEMININE, PresetColour.GENERIC_GOOD};
-	public String[] clothingFemininityTitles = new String[] {"None", "Masculine", "Feminine", "All"};
+	public String[] clothingFemininityTitles = new String[] {"Нет", "Мужественные", "Женственные", "Все"};
 	public String[] clothingFemininityDescriptions = new String[] {
-			"No clothing will have a femininity value associated with it, allowing clothing of all types to be worn by any character without penalty.",
-			"Only clothing which is marked as 'masculine' will retain its femininty value, resulting in masculine characters being able to wear any clothing without penalty.",
-			"Only clothing which is marked as 'feminine' will retain its femininty value, resulting in feminine characters being able to wear any clothing without penalty.",
-			"All clothing will have their intended femininity values, resulting in a negative status effect for characters who wear clothing that's either too masculine or too feminine for them."};
+			"Ни у одной одежды не будет значения женственности, что позволит любому персонажу носить одежду любого типа без штрафов.",
+			"Только одежда с пометкой «мужественная» будет сохранять свое значение женственности, благодаря чему мужественные персонажи смогут носить любую одежду без штрафов.",
+			"Только одежда с пометкой «женственная» будет сохранять свое значение женственности, благодаря чему женственные персонажи смогут носить любую одежду без штрафов.",
+			"Вся одежда будет иметь свои исходные значения женственности, что приведет к отрицательным эффектам у персонажей, которые надевают одежду, слишком мужественную или слишком женственную для них."};
 	
 	public Set<PropertyValue> values;
 
@@ -404,7 +400,7 @@ public class Properties {
 			createXMLElementWithValue(doc, settings, "forcedFetishPercentage", String.valueOf(forcedFetishPercentage));
 
 			createXMLElementWithValue(doc, settings, "difficultyLevel", difficultyLevel.toString());
-			createXMLElementWithValue(doc, settings, "AIblunderRate", String.valueOf(AIblunderRate));
+			createXMLElementWithValue(doc, settings, "Вероятность ошибки ИИ", String.valueOf(AIblunderRate));
 			
 			
 			// Artist priority:
@@ -1671,7 +1667,7 @@ public class Properties {
 		boolean playerDiscovered = Main.game.getPlayer().addAdvancedRaceKnowledge(subspecies);
 		if(subspeciesAdvancedKnowledge.add(subspecies) || (!this.hasValue(PropertyValue.sharedEncyclopedia) && playerDiscovered)) {
 			if(withEvent) {
-				Main.game.addEvent(new EventLogEntryEncyclopediaUnlock(subspecies.getName(null)+" (Advanced)", subspecies.getColour(null)), true);
+				Main.game.addEvent(new EventLogEntryEncyclopediaUnlock(subspecies.getName(null)+" (Расширенные)", subspecies.getColour(null)), true);
 			}
 			return true;
 		}

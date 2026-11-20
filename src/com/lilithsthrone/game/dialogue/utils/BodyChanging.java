@@ -113,10 +113,10 @@ public class BodyChanging {
 	private static Response getBodyChangingResponse(int responseTab, int index) {
 		if (index == 0) {
 			if (isDebugMenu()) {
-				return new Response("Back", "Return to the previous screen.", DebugDialogue.DEBUG_MENU);
+				return new Response("Назад", "Вернуться к предыдущему экрану.", DebugDialogue.DEBUG_MENU);
 
 			} else if (coreNode != null) {
-				return new Response("Back", "Return to the previous screen.", coreNode) {
+				return new Response("Назад", "Вернуться к предыдущему экрану.", coreNode) {
 					@Override
 					public void effects() {
 						Main.game.setResponseTab(defaultResponseTab);
@@ -124,7 +124,7 @@ public class BodyChanging {
 				};
 
 			} else {
-				return new ResponseEffectsOnly("Back", "Return to the previous screen.") {
+				return new ResponseEffectsOnly("Назад", "Вернуться к предыдущему экрану.") {
 					@Override
 					public void effects() {
 						Main.game.restoreSavedContent(false);
@@ -136,99 +136,99 @@ public class BodyChanging {
 		if (responseTab==0) {
 			if (index == 1) {
 				if (Main.game.getCurrentDialogueNode() == BODY_CHANGING_CORE) {
-					return new Response("Core", "You are already in this screen!", null);
+					return new Response("Основа", "Вы уже находитесь на этом экране!", null);
 				}
-				return new Response("Core",
-						UtilText.parse(getTarget(), "Change core aspects of [npc.namePos] body."),
+				return new Response("Основа",
+						UtilText.parse(getTarget(), "Изменить основные черты тела [npc.namePos]."),
 						BODY_CHANGING_CORE);
 
 			} else if (index == 2) {
 				if (Main.game.getCurrentDialogueNode() == BODY_CHANGING_EYES) {
-					return new Response("Eyes", "You are already in this screen!", null);
+					return new Response("Глаза", "Вы уже находитесь на этом экране!", null);
 				}
-				return new Response("Eyes",
-						UtilText.parse(getTarget(), "Change aspects of [npc.namePos] eyes."),
+				return new Response("Глаза",
+						UtilText.parse(getTarget(), "Изменить глаза [npc.namePos]."),
 						BODY_CHANGING_EYES);
 
 			} else if (index == 3) {
 				if (Main.game.getCurrentDialogueNode() == BODY_CHANGING_HAIR) {
-					return new Response("Hair", "You are already in this screen!", null);
+					return new Response("Волосы", "Вы уже находитесь на этом экране!", null);
 				}
-				return new Response("Hair",
-						UtilText.parse(getTarget(), "Change aspects of [npc.namePos] hair."),
+				return new Response("Волосы",
+						UtilText.parse(getTarget(), "Изменить волосы [npc.namePos]."),
 						BODY_CHANGING_HAIR);
 
 			} else if (index == 4) {
 				if (Main.game.getCurrentDialogueNode() == BODY_CHANGING_HEAD) {
-					return new Response("Head", "You are already in this screen!", null);
+					return new Response("Голова", "Вы уже находитесь на этом экране!", null);
 				}
-				return new Response("Head",
-						UtilText.parse(getTarget(), "Change aspects of [npc.namePos] face and head."),
+				return new Response("Голова",
+						UtilText.parse(getTarget(), "Изменить лицо и голову [npc.namePos]."),
 						BODY_CHANGING_HEAD);
 
 			} else if (index == 5) {
 				if (Main.game.getCurrentDialogueNode() == BODY_CHANGING_ASS) {
-					return new Response("Ass", "You are already in this screen!", null);
+					return new Response("Задница", "Вы уже находитесь на этом экране!", null);
 				}
-				return new Response("Ass",
-						UtilText.parse(getTarget(), "Change aspects of [npc.namePos] ass."),
+				return new Response("Задница",
+						UtilText.parse(getTarget(), "Изменить параметры задницы [npc.namePos]."),
 						BODY_CHANGING_ASS);
 
 			} else if (index == 6) {
 				if (Main.game.getCurrentDialogueNode() == BODY_CHANGING_BREASTS) {
-					return new Response("Breasts", "You are already in this screen!", null);
+					return new Response("Грудь", "Вы уже находитесь на этом экране!", null);
 				} else if (!getTarget().hasNipples()) {
-					return new Response("Breasts",
-							UtilText.parse(getTarget(), "[npc.Name] [npc.do] not have any breasts!"),
+					return new Response("Грудь",
+							UtilText.parse(getTarget(), "У [npc.Name] [npc.do] нет груди!"),
 							null);
 				}
-				return new Response("Breasts",
-						UtilText.parse(getTarget(), "Change aspects of [npc.namePos] breasts."),
+				return new Response("Грудь",
+						UtilText.parse(getTarget(), "Изменить параметры груди [npc.namePos]."),
 						BODY_CHANGING_BREASTS);
 
 			} else if (index == 7) {
 				if (Main.game.getCurrentDialogueNode() == BODY_CHANGING_VAGINA) {
-					return new Response("Vagina", "You are already in this screen!", null);
+					return new Response("Киска", "Вы уже находитесь на этом экране!", null);
 				}
-				return new Response("Vagina",
-						UtilText.parse(getTarget(), "Change aspects of [npc.namePos] vagina."),
+				return new Response("Киска",
+						UtilText.parse(getTarget(), "Изменить параметры влагалища [npc.namePos]."),
 						BODY_CHANGING_VAGINA);
 
 			} else if (index == 8) {
 				if (Main.game.getCurrentDialogueNode() == BODY_CHANGING_PENIS) {
-					return new Response("Penis", "You are already in this screen!", null);
+					return new Response("Пенис", "Вы уже находитесь на этом экране!", null);
 				}
-				return new Response("Penis",
-						UtilText.parse(getTarget(), "Change aspects of [npc.namePos] penis."),
+				return new Response("Пенис",
+						UtilText.parse(getTarget(), "Изменить параметры пениса [npc.namePos]."),
 						BODY_CHANGING_PENIS);
 
 			} else if (index == 9) {
 				if (Main.game.getCurrentDialogueNode() == BODY_CHANGING_SPINNERET) {
-					return new Response("Spinneret", "You are already in this screen!", null);
+					return new Response("Паутинный аппарат", "Вы уже находитесь на этом экране!", null);
 				} else if (!getTarget().hasSpinneret()) {
-					return new Response("Spinneret",
-							UtilText.parse(getTarget(), "[npc.Name] [npc.do] not have a spinneret!<br/><i>Spinnerets are gained via certain tail or leg types.</i>"),
+					return new Response("Паутинный аппарат",
+							UtilText.parse(getTarget(), "У [npc.Name] [npc.do] нет паутинного аппарата!<br/><i>Паутинные аппараты приобретаются с определенными типами хвостов или ног.</i>"),
 							null);
 				}
-				return new Response("Spinneret",
-						UtilText.parse(getTarget(), "Change aspects of [npc.namePos] spinneret."),
+				return new Response("Паутинный аппарат",
+						UtilText.parse(getTarget(), "Изменить параметры паутинного аппарата [npc.namePos]."),
 						BODY_CHANGING_SPINNERET);
 
 			} else if (index == 10) {
-				String title = getTarget().getBreastCrotchShape() == BreastShape.UDDERS?"Udders":"Crotch-boobs";
+				String title = getTarget().getBreastCrotchShape() == BreastShape.UDDERS?"Вымя":"Лобковые соски";
 				if (Main.game.getCurrentDialogueNode() == BODY_CHANGING_BREASTS_CROTCH) {
-					return new Response(title, "You are already in this screen!", null);
+					return new Response(title, "Вы уже находитесь на этом экране!", null);
 				}
 				return new Response(title,
-						UtilText.parse(getTarget(), "Change aspects of [npc.namePos] [npc.crotchBoobs]."),
+						UtilText.parse(getTarget(), "Изменить параметры [npc.namePos] [npc.crotchBoobs]."),
 						BODY_CHANGING_BREASTS_CROTCH);
 
 			} else if (index == 11) {
 				if (Main.game.getCurrentDialogueNode() == BODY_CHANGING_SAVE_LOAD) {
-					return new Response("Save/Load", "You are already in this screen!", null);
+					return new Response("Сохранить/Загрузить", "Вы уже находитесь на этом экране!", null);
 				}
-				return new Response("Save/Load",
-						UtilText.parse(getTarget(), "Save or load transformation presets, allowing you to quickly switch your appearance."),
+				return new Response("Сохранить/Загрузить",
+						UtilText.parse(getTarget(), "Сохранить или загрузить пресеты трансформации, позволяя быстро менять свой облик."),
 						BODY_CHANGING_SAVE_LOAD) {
 					@Override
 					public void effects() {
@@ -238,10 +238,10 @@ public class BodyChanging {
 
 			} else if (index == 12 && isDebugMenu()) {
 				if (Main.game.getCurrentDialogueNode() == BODY_CHANGING_MAKEUP) {
-					return new Response("Makeup (debug)", "You are already in this screen!", null);
+					return new Response("Макияж (отладка)", "Вы уже находитесь на этом экране!", null);
 				}
-				return new Response("Makeup (debug)",
-						UtilText.parse(getTarget(), "Change aspects of [npc.namePos] makeup. (This transformation menu is only available in the debug screen.)"),
+				return new Response("Макияж (отладка)",
+						UtilText.parse(getTarget(), "Изменить аспекты внешности [npc.namePos]. (Это меню трансформации доступно только в режиме отладки.)"),
 						BODY_CHANGING_MAKEUP);
 				
 			} else {
@@ -250,9 +250,9 @@ public class BodyChanging {
 		} else if (responseTab == 1 && isDebugMenu()) {
 			if (index == 1) {
 				if (getTarget() == Main.game.getPlayer()) {
-					return new Response(Main.game.getPlayer().getName(), "You are the current target.", null);
+					return new Response(Main.game.getPlayer().getName(), "Вы — текущая цель.", null);
 				} else {
-					return new Response(Main.game.getPlayer().getName(), "Target yourself.", BODY_CHANGING_CORE) {
+					return new Response(Main.game.getPlayer().getName(), "Выбрать себя.", BODY_CHANGING_CORE) {
 						@Override
 						public void effects() {
 							setTarget(Main.game.getPlayer(), isDebugMenu());
@@ -269,9 +269,9 @@ public class BodyChanging {
 			GameCharacter gc = Main.game.getCharactersPresent().get(index);
 			if (!gc.isUnique()) {
 				if (getTarget() == gc) {
-					return new Response(gc.getName(), gc.getName()+" is the current target.", null);
+					return new Response(gc.getName(), gc.getName()+" — текущая цель.", null);
 				} else {
-					return new Response(gc.getName(), "Change target to "+gc.getName(), BODY_CHANGING_CORE) {
+					return new Response(gc.getName(), "Сменить цель на "+gc.getName(), BODY_CHANGING_CORE) {
 						@Override
 						public void effects() {
 							setTarget(gc, isDebugMenu());
@@ -288,9 +288,9 @@ public class BodyChanging {
 			return null;
 		}
 		if (index == 0) {
-			return "Transform";
+			return "Трансформация";
 		} else if (index == 1) {
-			return "Target";
+			return "Цель";
 		}
 		return null;
 	}
@@ -450,26 +450,26 @@ public class BodyChanging {
 
 		sb.append("<div class='container-full-width' style='text-align:center;'>");
 			if(isDemonTFMenu()) {
-				sb.append("<i>[npc.Name] can harness the power of [npc.her] demonic form to self-transform aspects of [npc.her] "+area+".</i>");
+				sb.append("<i>[npc.Name] может использовать силу демонической формы [npc.her], чтобы изменять аспекты [npc.her] "+area+".</i>");
 
 			} else if(isSelfTFMenu()) {
-				sb.append("<i>[npc.Name] can harness [npc.her] innate powers to self-transform aspects of [npc.her] "+area+".</i>");
+				sb.append("<i>[npc.Name] может использовать врожденные силы [npc.her], чтобы изменять аспекты [npc.her] "+area+".</i>");
 				if(target.isElemental()) {
-					sb.append("<br/>[style.italicsMinorBad(You can only transform [npc.name] into races which you've unlocked advanced knowledge of.)]");
+					sb.append("<br/>[style.italicsMinorBad(Вы можете превращать [npc.name] только в те расы, о которых у вас есть глубокие знания.)]");
 				}
 
 			} else if(isDebugMenu()) {
-				sb.append("<i>[npc.Name] can harness the power of the debugging tool to self-transform aspects of [npc.her] "+area+".</i>");
+				sb.append("<i>[npc.Name] может использовать мощь инструмента отладки, чтобы изменять аспекты [npc.her] "+area+".</i>");
 
 			} else if(getTarget().isDoll()) {
-				sb.append("<i>With the D.E.C.K.'s cable plugged into the port on the rear of [npc.namePos] neck, you're able to customise [npc.her] "+area+"...</i>");
+				sb.append("<i>Подключив кабель D.E.C.K. к порту на затылке [npc.namePos], вы получаете возможность настраивать [npc.her] "+area+"...</i>");
 
 			} else {
-				sb.append("<i>[npc.NamePos] morphable, slimy body [npc.verb(allow)] [npc.herHim] to self-transform aspects of [npc.her] "+area+".</i>");
+				sb.append("<i>[npc.NamePos] морфируемое, склизкое тело, которое [npc.verb(allow)] [npc.herHim] для самотрансформации аспектов [npc.her] "+area+".</i>");
 				if(getTarget().isPlayer()) {
-					sb.append("<br/>[style.italicsMinorBad(You can only self-transform into races which you've unlocked advanced knowledge of.)]");
+					sb.append("<br/>[style.italicsMinorBad(Вы можете самотрансформироваться только в те расы, о которых у вас есть расширенные знания.)]");
 				} else {
-					sb.append("<br/>[style.italicsMinorBad(You can only transform [npc.name] into races which you've unlocked advanced knowledge of.)]");
+					sb.append("<br/>[style.italicsMinorBad(Вы можете превращать [npc.name] только в те расы, о которых у вас есть глубокие знания.)]");
 				}
 			}
 		sb.append("</div>");
@@ -477,7 +477,7 @@ public class BodyChanging {
 		return UtilText.parse(getTarget(), sb.toString());
 	}
 
-	public static final DialogueNode BODY_CHANGING_CORE = new DialogueNode("Core", "", true) {
+	public static final DialogueNode BODY_CHANGING_CORE = new DialogueNode("Основа", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			SuccubisSecrets.initCoveringsMap(getTarget());
@@ -490,7 +490,7 @@ public class BodyChanging {
 			if (ScarlettsShop.isSlaveCustomisationMenu()) {
 				SuccubisSecrets.initCoveringsMap(getTarget());
 			}
-			UtilText.nodeContentSB.append(getSelfTransformDescription("body"));
+			UtilText.nodeContentSB.append(getSelfTransformDescription("тело"));
 
 			UtilText.nodeContentSB.append(
 					"<div style='clear:left;'>"
@@ -512,8 +512,7 @@ public class BodyChanging {
 							+CharacterModificationUtils.getBodySizeChoiceDiv()
 							+CharacterModificationUtils.getMuscleChoiceDiv()
 							+"<div class='container-full-width' style='text-align:center;'>"
-							+UtilText.parse(getTarget(), "[npc.NamePos] muscle and body size values give [npc.herHim] the body shape: "
-							+"<b style='color:"+getTarget().getBodyShape().toWebHexStringColour()+";'>"+Util.capitaliseSentence(getTarget().getBodyShape().getName(false))+"</b>")
+							+UtilText.parse(getTarget(), "[npc.NamePos] значения мышц и размера тела придают [npc.herHim] форму тела: <b style='color:"+getTarget().getBodyShape().toWebHexStringColour()+";'>"+Util.capitaliseSentence(getTarget().getBodyShape().getName(false))+"</b>")
 							+"</div>"
 							+"</div>");
 
@@ -615,11 +614,11 @@ public class BodyChanging {
 			}
 
 			if (Main.game.isBodyHairEnabled() && (!getTarget().isDoll() || isDebugMenu())) {
-				UtilText.nodeContentSB.append(CharacterModificationUtils.getKatesDivUnderarmHair(false, "Underarm hair",
-						UtilText.parse(getTarget(), "Change the amount of hair in [npc.namePos] underarms."))
+				UtilText.nodeContentSB.append(CharacterModificationUtils.getKatesDivUnderarmHair(false, "Волосы под мышками",
+						UtilText.parse(getTarget(), "Изменить количество волос в подмышках [npc.namePos]."))
 
-						+CharacterModificationUtils.getKatesDivCoveringsNew(false, Race.NONE, getTarget().getUnderarmHairType().getType(), "Underarm hair colour",
-						UtilText.parse(getTarget(), "The colour of [npc.namePos] underarm hair."),
+						+CharacterModificationUtils.getKatesDivCoveringsNew(false, Race.NONE, getTarget().getUnderarmHairType().getType(), "Цвет волос в подмышках",
+						UtilText.parse(getTarget(), "Цвет волос в подмышках [npc.namePos]."),
 						true, true));
 			}
 
@@ -647,12 +646,12 @@ public class BodyChanging {
 		}
 	};
 
-	public static final DialogueNode BODY_CHANGING_EYES = new DialogueNode("Eyes", "", true) {
+	public static final DialogueNode BODY_CHANGING_EYES = new DialogueNode("Глаза", "", true) {
 		@Override
 		public String getHeaderContent() {
 			UtilText.nodeContentSB.setLength(0);
 
-			UtilText.nodeContentSB.append(getSelfTransformDescription("eyes"));
+			UtilText.nodeContentSB.append(getSelfTransformDescription("глаза"));
 
 			if (!getTarget().isDoll() || isDebugMenu()) {
 				UtilText.nodeContentSB.append(
@@ -674,18 +673,18 @@ public class BodyChanging {
 							+"</div>"
 
 							+CharacterModificationUtils.getKatesDivCoveringsNew(false, getTarget().getEyeType().getRace(), getTarget().getCovering(getTarget().getEyeCovering()).getType(),
-							"Iris colour",
-							UtilText.parse(getTarget(), "The colour and pattern of [npc.namePos] irises."),
+							"Цвет радужки",
+							UtilText.parse(getTarget(), "Цвет и узор радужки глаз [npc.namePos]."),
 							true, true)
 
 							+CharacterModificationUtils.getKatesDivCoveringsNew(false, getTarget().getEyeType().getRace(), getTarget().getCovering(BodyCoveringType.EYE_PUPILS).getType(),
-							"Pupil colour",
-							UtilText.parse(getTarget(), "The colour and pattern of [npc.namePos] pupils."),
+							"Цвет зрачков",
+							UtilText.parse(getTarget(), "Цвет и узор зрачков [npc.namePos]."),
 							true, true)
 
 							+CharacterModificationUtils.getKatesDivCoveringsNew(false, getTarget().getEyeType().getRace(), getTarget().getCovering(BodyCoveringType.EYE_SCLERA).getType(),
-							"Sclerae colour",
-							UtilText.parse(getTarget(), "The colour and pattern of [npc.namePos] sclerae."),
+							"Цвет склер",
+							UtilText.parse(getTarget(), "Цвет и узор склер [npc.namePos]."),
 							true, true));
 
 			return UtilText.nodeContentSB.toString();
@@ -712,12 +711,12 @@ public class BodyChanging {
 		}
 	};
 
-	public static final DialogueNode BODY_CHANGING_HAIR = new DialogueNode("Hair", "", true) {
+	public static final DialogueNode BODY_CHANGING_HAIR = new DialogueNode("Волосы", "", true) {
 		@Override
 		public String getHeaderContent() {
 			UtilText.nodeContentSB.setLength(0);
 
-			UtilText.nodeContentSB.append(getSelfTransformDescription("hair"));
+			UtilText.nodeContentSB.append(getSelfTransformDescription("волосы"));
 
 			if (!getTarget().isDoll() || isDebugMenu()) {
 				UtilText.nodeContentSB.append(CharacterModificationUtils.getSelfTransformHairChoiceDiv(
@@ -730,11 +729,11 @@ public class BodyChanging {
 							+CharacterModificationUtils.getNeckFluffDiv()
 							+"</div>"
 
-							+CharacterModificationUtils.getSelfDivHairStyles("Hair Style", UtilText.parse(getTarget(), "Change [npc.namePos] hair style."))
+							+CharacterModificationUtils.getSelfDivHairStyles("Прическа", UtilText.parse(getTarget(), "Изменить прическу [npc.namePos]."))
 
 							+CharacterModificationUtils.getKatesDivCoveringsNew(false, getTarget().getHairRace(),
-							getTarget().getCovering(getTarget().getHairCovering()).getType(), "Hair colour",
-							UtilText.parse(getTarget(), "Change the colour of [npc.her] hair."), true, true));
+							getTarget().getCovering(getTarget().getHairCovering()).getType(), "Цвет волос",
+							UtilText.parse(getTarget(), "Изменить цвет волос [npc.her]."), true, true));
 
 			return UtilText.nodeContentSB.toString();
 		}
@@ -760,12 +759,12 @@ public class BodyChanging {
 		}
 	};
 
-	public static final DialogueNode BODY_CHANGING_HEAD = new DialogueNode("Head", "", true) {
+	public static final DialogueNode BODY_CHANGING_HEAD = new DialogueNode("Голова", "", true) {
 		@Override
 		public String getHeaderContent() {
 			UtilText.nodeContentSB.setLength(0);
 
-			UtilText.nodeContentSB.append(getSelfTransformDescription("head and face"));
+			UtilText.nodeContentSB.append(getSelfTransformDescription("голова и лицо"));
 
 			if (!getTarget().isDoll() || isDebugMenu()) {
 				UtilText.nodeContentSB.append(CharacterModificationUtils.getSelfTransformEarChoiceDiv(
@@ -805,8 +804,8 @@ public class BodyChanging {
 				if (getTarget().hasHorns()) {
 					UtilText.nodeContentSB.append(
 							CharacterModificationUtils.getKatesDivCoveringsNew(false, getTarget().getHornRace(),
-									getTarget().getCovering(getTarget().getHornCovering()).getType(), "Horn Colour",
-									UtilText.parse(getTarget(), "The colour of [npc.namePos] horns."),
+									getTarget().getCovering(getTarget().getHornCovering()).getType(), "Цвет рогов",
+									UtilText.parse(getTarget(), "Цвет рогов [npc.namePos]."),
 									true, true));
 				}
 			}
@@ -835,25 +834,24 @@ public class BodyChanging {
 							+"</div>"
 
 							+CharacterModificationUtils.getKatesDivCoveringsNew(false, getTarget().getMouthType().getRace(), getTarget().getCovering(BodyCoveringType.MOUTH).getType(),
-							"Lip & Throat colour",
+							"Цвет губ и горла",
 							UtilText.parse(getTarget(),
-									"The natural colour of [npc.namePos] "+(getTarget().getFaceType() == FaceType.HARPY?"beak":"lips")+" (top options) and [npc.her] throat (bottom options)."
-											+"Lipstick can be used to conceal [npc.her] natural lip colour."),
+									"Естественный цвет [npc.namePos] "+(getTarget().getFaceType() == FaceType.HARPY?"клюв":"губы")+" (верхние настройки) и горла [npc.her] (нижние настройки). Помаду можно использовать, чтобы скрыть естественный цвет губ [npc.her]."),
 							true, true)
 
 							+CharacterModificationUtils.getKatesDivCoveringsNew(false, getTarget().getTongueType().getRace(), getTarget().getCovering(BodyCoveringType.TONGUE).getType(),
-							"Tongue colour",
+							"Цвет языка",
 							(getTarget().isPlayer()
-									?"The colour of your tongue."
-									:UtilText.parse(getTarget(), "The colour of [npc.namePos] tongue.")),
+									?"Цвет вашего языка."
+									:UtilText.parse(getTarget(), "Цвет языка [npc.namePos].")),
 							true, true));
 
 			if (Main.game.isFacialHairEnabled() && (!getTarget().isFeminine() || Main.game.isFemaleFacialHairEnabled())) {
-				UtilText.nodeContentSB.append(CharacterModificationUtils.getKatesDivFacialHair(false, "Beard length",
-						UtilText.parse(getTarget(), "Change the length of [npc.namePos] beard."))
+				UtilText.nodeContentSB.append(CharacterModificationUtils.getKatesDivFacialHair(false, "Длина бороды",
+						UtilText.parse(getTarget(), "Изменить длину бороды [npc.namePos]."))
 
-						+CharacterModificationUtils.getKatesDivCoveringsNew(false, Race.NONE, getTarget().getFacialHairType().getType(), "Beard colour",
-						UtilText.parse(getTarget(), "The colour of [npc.namePos] beard."),
+						+CharacterModificationUtils.getKatesDivCoveringsNew(false, Race.NONE, getTarget().getFacialHairType().getType(), "Цвет бороды",
+						UtilText.parse(getTarget(), "Цвет бороды [npc.namePos]."),
 						true, true));
 			}
 
@@ -881,13 +879,13 @@ public class BodyChanging {
 		}
 	};
 
-	public static final DialogueNode BODY_CHANGING_ASS = new DialogueNode("Ass", "", true) {
+	public static final DialogueNode BODY_CHANGING_ASS = new DialogueNode("Задница", "", true) {
 
 		@Override
 		public String getHeaderContent() {
 			UtilText.nodeContentSB.setLength(0);
 
-			UtilText.nodeContentSB.append(getSelfTransformDescription("ass and hips"));
+			UtilText.nodeContentSB.append(getSelfTransformDescription("ягодицы и бедра"));
 
 			if (!getTarget().isDoll() || isDebugMenu()) {
 				UtilText.nodeContentSB.append(CharacterModificationUtils.getSelfTransformAssChoiceDiv(
@@ -918,16 +916,16 @@ public class BodyChanging {
 							+CharacterModificationUtils.getKatesDivCoveringsNew(false,
 							getTarget().getAssRace(),
 							getTarget().getCovering(BodyCoveringType.ANUS).getType(),
-							"Anus Colour",
-							UtilText.parse(getTarget(), "Change the colour of [npc.namePos] asshole."),
+							"Цвет ануса",
+							UtilText.parse(getTarget(), "Изменить цвет ануса [npc.namePos]."),
 							true, true));
 
 			if (Main.game.isAssHairEnabled() && (!getTarget().isDoll() || isDebugMenu())) {
-				UtilText.nodeContentSB.append(CharacterModificationUtils.getKatesDivAssHair(false, "Ass hair",
-						UtilText.parse(getTarget(), "Change the amount of hair around [npc.namePos] anus."))
+				UtilText.nodeContentSB.append(CharacterModificationUtils.getKatesDivAssHair(false, "Волосы на заднице",
+						UtilText.parse(getTarget(), "Изменить количество волос вокруг ануса [npc.namePos]."))
 
-						+CharacterModificationUtils.getKatesDivCoveringsNew(false, Race.NONE, getTarget().getAssHairType().getType(), "Ass hair colour",
-						UtilText.parse(getTarget(), "The colour of [npc.namePos] ass hair."),
+						+CharacterModificationUtils.getKatesDivCoveringsNew(false, Race.NONE, getTarget().getAssHairType().getType(), "Цвет волос на заднице",
+						UtilText.parse(getTarget(), "Цвет волос на заднице [npc.namePos]."),
 						true, true));
 			}
 
@@ -955,13 +953,13 @@ public class BodyChanging {
 		}
 	};
 
-	public static final DialogueNode BODY_CHANGING_BREASTS = new DialogueNode("Breasts", "", true) {
+	public static final DialogueNode BODY_CHANGING_BREASTS = new DialogueNode("Грудь", "", true) {
 
 		@Override
 		public String getHeaderContent() {
 			UtilText.nodeContentSB.setLength(0);
 
-			UtilText.nodeContentSB.append(getSelfTransformDescription("breasts"));
+			UtilText.nodeContentSB.append(getSelfTransformDescription("груди"));
 
 			if (!getTarget().isDoll() || isDebugMenu()) {
 				UtilText.nodeContentSB.append(CharacterModificationUtils.getSelfTransformBreastChoiceDiv(
@@ -1012,15 +1010,15 @@ public class BodyChanging {
 							+CharacterModificationUtils.getKatesDivCoveringsNew(false,
 							getTarget().getBreastRace(),
 							getTarget().getCovering(BodyCoveringType.NIPPLES).getType(),
-							"Nipple Colour",
-							UtilText.parse(getTarget(), "Change the colour of [npc.namePos] nipples."),
+							"Цвет сосков",
+							UtilText.parse(getTarget(), "Изменить цвет сосков [npc.namePos]."),
 							true, true)
 
 							+CharacterModificationUtils.getKatesDivCoveringsNew(false,
 							Race.NONE,
 							getTarget().getCovering(BodyCoveringType.MILK).getType(),
-							"Milk Colour",
-							UtilText.parse(getTarget(), "Change the colour of [npc.namePos] [npc.milk]."),
+							"Цвет молока",
+							UtilText.parse(getTarget(), "Изменить цвет [npc.milk] [npc.namePos]."),
 							true, true));
 
 			return UtilText.nodeContentSB.toString();
@@ -1047,13 +1045,13 @@ public class BodyChanging {
 		}
 	};
 
-	public static final DialogueNode BODY_CHANGING_VAGINA = new DialogueNode("Vagina", "", true) {
+	public static final DialogueNode BODY_CHANGING_VAGINA = new DialogueNode("Киска", "", true) {
 
 		@Override
 		public String getHeaderContent() {
 			UtilText.nodeContentSB.setLength(0);
 
-			UtilText.nodeContentSB.append(getSelfTransformDescription("vagina"));
+			UtilText.nodeContentSB.append(getSelfTransformDescription("вагина"));
 
 			//if (!getTarget().isDoll() || isDebugMenu()) {
 				UtilText.nodeContentSB.append(CharacterModificationUtils.getSelfTransformVaginaChoiceDiv(
@@ -1116,23 +1114,23 @@ public class BodyChanging {
 								+CharacterModificationUtils.getKatesDivCoveringsNew(false,
 								getTarget().getVaginaRace(),
 								getTarget().getCovering(BodyCoveringType.VAGINA).getType(),
-								"Vagina Colour",
-								UtilText.parse(getTarget(), "Change the colour of [npc.namePos] vagina."),
+								"Цвет влагалища",
+								UtilText.parse(getTarget(), "Изменить цвет [npc.namePos] вагины."),
 								true, true)
 
 								+CharacterModificationUtils.getKatesDivCoveringsNew(false,
 								Race.NONE,
 								getTarget().getCovering(BodyCoveringType.GIRL_CUM).getType(),
-								"Girlcum Colour",
-								UtilText.parse(getTarget(), "Change the colour of [npc.namePos] [npc.girlcum]."),
+								"Цвет девичьей смазки",
+								UtilText.parse(getTarget(), "Изменить цвет [npc.namePos] [npc.girlcum]."),
 								true, true));
 
 				if (Main.game.isPubicHairEnabled() && (!getTarget().isDoll() || isDebugMenu())) {
-					UtilText.nodeContentSB.append(CharacterModificationUtils.getKatesDivPubicHair(false, "Pubic hair",
-							UtilText.parse(getTarget(), "Change the amount of hair around [npc.namePos] genitals."))
+					UtilText.nodeContentSB.append(CharacterModificationUtils.getKatesDivPubicHair(false, "Лобковые волосы",
+							UtilText.parse(getTarget(), "Изменить количество волос вокруг гениталий [npc.namePos]."))
 
-							+CharacterModificationUtils.getKatesDivCoveringsNew(false, Race.NONE, getTarget().getPubicHairType().getType(), "Pubic hair colour",
-							UtilText.parse(getTarget(), "The colour of [npc.namePos] pubic hair."),
+							+CharacterModificationUtils.getKatesDivCoveringsNew(false, Race.NONE, getTarget().getPubicHairType().getType(), "Цвет лобковых волос",
+							UtilText.parse(getTarget(), "Цвет лобковых волос [npc.namePos]."),
 							true, true));
 				}
 			}
@@ -1161,13 +1159,13 @@ public class BodyChanging {
 		}
 	};
 
-	public static final DialogueNode BODY_CHANGING_PENIS = new DialogueNode("Penis", "", true) {
+	public static final DialogueNode BODY_CHANGING_PENIS = new DialogueNode("Пенис", "", true) {
 
 		@Override
 		public String getHeaderContent() {
 			UtilText.nodeContentSB.setLength(0);
 
-			UtilText.nodeContentSB.append(getSelfTransformDescription("penis"));
+			UtilText.nodeContentSB.append(getSelfTransformDescription("пенис"));
 
 			//if (!getTarget().isDoll() || isDebugMenu()) {
 				UtilText.nodeContentSB.append(CharacterModificationUtils.getSelfTransformPenisChoiceDiv(
@@ -1212,22 +1210,22 @@ public class BodyChanging {
 								+CharacterModificationUtils.getKatesDivCoveringsNew(false,
 								getTarget().getPenisRace(),
 								getTarget().getCovering(BodyCoveringType.PENIS).getType(),
-								"Penis Colour",
-								UtilText.parse(getTarget(), "Change the colour of [npc.namePos] penis."),
+								"Цвет пениса",
+								UtilText.parse(getTarget(), "Изменить цвет пениса [npc.namePos]."),
 								true, true)
 
 								+CharacterModificationUtils.getKatesDivCoveringsNew(false,
 								Race.NONE,
 								getTarget().getCovering(BodyCoveringType.CUM).getType(),
-								"Cum Colour",
-								UtilText.parse(getTarget(), "Change the colour of [npc.namePos] [npc.cum]."),
+								"Цвет спермы",
+								UtilText.parse(getTarget(), "Изменить цвет [npc.namePos] [npc.cum]."),
 								true, true));
 				
 				if (Main.game.isPubicHairEnabled() && (!getTarget().isDoll() || isDebugMenu())) {
-					UtilText.nodeContentSB.append(CharacterModificationUtils.getKatesDivPubicHair(false, "Pubic hair",
-							UtilText.parse(getTarget(), "Change the amount of hair around [npc.namePos] genitals."))
-							+CharacterModificationUtils.getKatesDivCoveringsNew(false, Race.NONE, getTarget().getPubicHairType().getType(), "Pubic hair colour",
-							UtilText.parse(getTarget(), "The colour of [npc.namePos] pubic hair."),
+					UtilText.nodeContentSB.append(CharacterModificationUtils.getKatesDivPubicHair(false, "Лобковые волосы",
+							UtilText.parse(getTarget(), "Изменить количество волос вокруг гениталий [npc.namePos]."))
+							+CharacterModificationUtils.getKatesDivCoveringsNew(false, Race.NONE, getTarget().getPubicHairType().getType(), "Цвет лобковых волос",
+							UtilText.parse(getTarget(), "Цвет лобковых волос [npc.namePos]."),
 							true, true));
 				}
 			}
@@ -1256,7 +1254,7 @@ public class BodyChanging {
 		}
 	};
 
-	public static final DialogueNode BODY_CHANGING_BREASTS_CROTCH = new DialogueNode("Crotch-boobs", "", true) {
+	public static final DialogueNode BODY_CHANGING_BREASTS_CROTCH = new DialogueNode("Лобковые соски", "", true) {
 
 		@Override
 		public String getHeaderContent() {
@@ -1314,15 +1312,15 @@ public class BodyChanging {
 								+CharacterModificationUtils.getKatesDivCoveringsNew(false,
 								getTarget().getBreastCrotchRace(),
 								getTarget().getCovering(BodyCoveringType.NIPPLES_CROTCH).getType(),
-								"Nipple Colour",
-								UtilText.parse(getTarget(), "Change the colour of [npc.namePos] [npc.crotchNipples]."),
+								"Цвет сосков",
+								UtilText.parse(getTarget(), "Изменить цвет [npc.namePos] [npc.crotchNipples]."),
 								true, true)
 
 								+CharacterModificationUtils.getKatesDivCoveringsNew(false,
 								Race.NONE,
 								getTarget().getCovering(BodyCoveringType.MILK).getType(),
-								"Milk Colour",
-								UtilText.parse(getTarget(), "Change the colour of [npc.namePos] [npc.milk]."),
+								"Цвет молока",
+								UtilText.parse(getTarget(), "Изменить цвет [npc.milk] [npc.namePos]."),
 								true, true));
 			}
 
@@ -1350,14 +1348,14 @@ public class BodyChanging {
 		}
 	};
 
-	public static final DialogueNode BODY_CHANGING_SPINNERET = new DialogueNode("Spinneret", "", true) {
+	public static final DialogueNode BODY_CHANGING_SPINNERET = new DialogueNode("Паутинный аппарат", "", true) {
 
 		@Override
 		public String getHeaderContent() {
 			UtilText.nodeContentSB.setLength(0);
 			
 			UtilText.nodeContentSB.append(
-					getSelfTransformDescription("spinneret")
+					getSelfTransformDescription("паутинная железа")
 
 							+"<div style='clear:left;'>"
 							+CharacterModificationUtils.getSelfTransformSpinneretModifiersDiv()
@@ -1379,8 +1377,8 @@ public class BodyChanging {
 									?getTarget().getLegRace()
 									:getTarget().getTailRace(),
 							getTarget().getCovering(BodyCoveringType.SPINNERET).getType(),
-							"Spinneret Colour",
-							UtilText.parse(getTarget(), "Change the colour of [npc.namePos] spinneret."),
+							"Цвет отверстия",
+							UtilText.parse(getTarget(), "Изменить цвет отверстия [npc.namePos]."),
 							true, true));
 			
 			return UtilText.nodeContentSB.toString();
@@ -1407,28 +1405,28 @@ public class BodyChanging {
 		}
 	};
 	
-	public static final DialogueNode BODY_CHANGING_MAKEUP = new DialogueNode("Makeup", "", true) {
+	public static final DialogueNode BODY_CHANGING_MAKEUP = new DialogueNode("Макияж", "", true) {
 		@Override
 		public String getHeaderContent() {
 			return getSelfTransformDescription("makeup")
 
 					+CharacterModificationUtils.getKatesDivCoveringsNew(
-					false, Race.NONE, BodyCoveringType.MAKEUP_BLUSHER, "Blusher", "Blusher (also called rouge) is used to colour the cheeks so as to provide a more youthful appearance, and to emphasise the cheekbones.", true, true)
+					false, Race.NONE, BodyCoveringType.MAKEUP_BLUSHER, "Румяна", "Румяна (также называемые руж) используются для придания щекам цвета, чтобы придать лицу более юный вид и подчеркнуть скулы.", true, true)
 					
 					+CharacterModificationUtils.getKatesDivCoveringsNew(
-					false, Race.NONE, BodyCoveringType.MAKEUP_LIPSTICK, "Lipstick", "Lipstick is used to provide colour, texture, and protection to the wearer's lips.", true, true)
+					false, Race.NONE, BodyCoveringType.MAKEUP_LIPSTICK, "Помада", "Помада используется для придания губам цвета, текстуры и защиты.", true, true)
 
 					+CharacterModificationUtils.getKatesDivCoveringsNew(
-					false, Race.NONE, BodyCoveringType.MAKEUP_EYE_LINER, "Eyeliner", "Eyeliner is applied around the contours of the eyes to help to define shape or highlight different features.", true, true)
+					false, Race.NONE, BodyCoveringType.MAKEUP_EYE_LINER, "Подводка для глаз", "Подводка наносится по контуру глаз, чтобы подчеркнуть их форму или выделить отдельные черты.", true, true)
 
 					+CharacterModificationUtils.getKatesDivCoveringsNew(
-					false, Race.NONE, BodyCoveringType.MAKEUP_EYE_SHADOW, "Eye shadow", "Eye shadow is used to make the wearer's eyes stand out or look more attractive.", true, true)
+					false, Race.NONE, BodyCoveringType.MAKEUP_EYE_SHADOW, "Тени для век", "Тени для век используются для того, чтобы сделать глаза ярче или привлекательнее.", true, true)
 
 					+CharacterModificationUtils.getKatesDivCoveringsNew(
-					false, Race.NONE, BodyCoveringType.MAKEUP_NAIL_POLISH_HANDS, "Nail polish", "Nail polish is used to colour and protect the nails on your [pc.hands].", true, true)
+					false, Race.NONE, BodyCoveringType.MAKEUP_NAIL_POLISH_HANDS, "Лак для ногтей", "Лак для ногтей используется для окрашивания и защиты ногтей на твоих [pc.hands].", true, true)
 
 					+CharacterModificationUtils.getKatesDivCoveringsNew(
-					false, Race.NONE, BodyCoveringType.MAKEUP_NAIL_POLISH_FEET, "Toenail polish", "Toenail polish is used to colour and protect the nails on your [pc.feet].", true, true);
+					false, Race.NONE, BodyCoveringType.MAKEUP_NAIL_POLISH_FEET, "Лак для ногтей на ногах", "Лак для ногтей на ногах используется для окрашивания и защиты ногтей на твоих [pc.feet].", true, true);
 		}
 		
 		@Override
@@ -1488,7 +1486,7 @@ public class BodyChanging {
 		return presetTransformationsMap;
 	}
 
-	public static final DialogueNode BODY_CHANGING_SAVE_LOAD = new DialogueNode("Save transformation files", "", true) {
+	public static final DialogueNode BODY_CHANGING_SAVE_LOAD = new DialogueNode("Сохранить файлы трансформаций", "", true) {
 		@Override
 		public String getContent() {
 			return "";
@@ -1498,22 +1496,9 @@ public class BodyChanging {
 			StringBuilder saveLoadSB = new StringBuilder();
 			
 			saveLoadSB.append(
-					"<div class='container-full-width' style='padding:0; margin:0 0 8px 0;'>"
-						+ "<p>"
-							+ "Only standard characters (letters and numbers) will work for save file names."
-							+ "<br/>Hover over each transformation preset's icon to see the body overview."
-							+ UtilText.parse(getTarget(), "<br/>If a name is [style.colourDisabled(greyed-out)], then [npc.name] [npc.do]n't have the ability to transform into that preset,"
-								+ " and you can hover over the greyed-out load button to find out why it's unavailable.")
-						+ "</p>"
-					+ "</div>"
-					+ "<div class='container-full-width' style='padding:0; margin:0;'>"
-						+ "<div class='container-full-width' style='width:calc(75% - 16px); text-align:center; background:transparent;'>"
-							+ "Name"
-						+ "</div>"
-						+ "<div class='container-full-width' style='width:calc(25% - 16px); text-align:center; background:transparent;'>"
-							+ "Save | Load | Delete"
-						+ "</div>"
-					+ "</div>");
+					"<div class='container-full-width' style='padding:0; margin:0 0 8px 0;'><p>Для имен файлов сохранения подходят только стандартные символы (буквы и цифры).<br/>Наведите курсор на иконку любого пресета трансформации, чтобы увидеть обзор тела."
+							+ UtilText.parse(getTarget(), "<br/>Если имя [style.colourDisabled(серое)], значит, [npc.name] [npc.do]не может трансформироваться в этот пресет; вы можете навести курсор на серую кнопку загрузки, чтобы узнать причину.")
+						+ "</p></div><div class='container-full-width' style='padding:0; margin:0;'><div class='container-full-width' style='width:calc(75% - 16px); text-align:center; background:transparent;'>Имя</div><div class='container-full-width' style='width:calc(25% - 16px); text-align:center; background:transparent;'>Сохранить | Загрузить | Удалить</div></div>");
 
 			int i=0;
 			
@@ -1533,16 +1518,14 @@ public class BodyChanging {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Confirmations: ",
-						"Toggle confirmations being shown when you click to load, overwrite, or delete a saved transformation."
-							+ " When turned on, it will take two clicks to apply any button press."
-							+ " When turned off, it will only take one click.",
+				return new Response("Подтверждения: ",
+						"Включить или выключить подтверждение при нажатии кнопок загрузки, перезаписи или удаления сохраненной трансформации. Если включено, для выполнения действия потребуется два клика. Если выключено — только один.",
 							BODY_CHANGING_SAVE_LOAD) {
 					@Override
 					public String getTitle() {
-						return "Confirmations: "+(Main.getProperties().hasValue(PropertyValue.overwriteWarning)
-								?"<span style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>ON</span>"
-								:"<span style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>OFF</span>");
+						return "Подтверждения: "+(Main.getProperties().hasValue(PropertyValue.overwriteWarning)
+								?"<span style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>ВКЛ</span>"
+								:"<span style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>ВЫКЛ</span>");
 					}
 					
 					@Override
@@ -1556,7 +1539,7 @@ public class BodyChanging {
 				};
 
 			} else if (index == 0) {
-				return new Response("Back", "Back to the transformation menu.", BODY_CHANGING_CORE);
+				return new Response("Назад", "Назад в меню трансформации.", BODY_CHANGING_CORE);
 
 			} else {
 				return null;
@@ -1594,23 +1577,14 @@ public class BodyChanging {
 			
 //			System.out.println(body.getLoadedSubspecies().getName(body));
 			
-			return "<div class='container-full-width' style='padding:0; margin:0 0 4px 0;"+(altColour?"background:#222;":"")+" position:relative;'>"
-						+ "<div class='container-full-width' style='width:calc(75% - 16px); background:transparent;'>"
-							+ "<div class='container-full-width' style='width:10%; margin:0; padding:0; background:transparent; position:relative; float:left;'>"
-								+"<div class='inventoryImage' style='width:100%;'>"
-									+ "<div class='inventoryImage-content'"+(canTransform?"":" style='opacity:0.25;'")+">"
+			return "<div class='container-full-width' style='padding:0; margin:0 0 4px 0;"+(altColour?"background:#222;":"")+" position:relative;'><div class='container-full-width' style='width:calc(75% - 16px); background:transparent;'><div class='container-full-width' style='width:10%; margin:0; padding:0; background:transparent; position:relative; float:left;'><div class='inventoryImage' style='width:100%;'><div class='inventoryImage-content'"+(canTransform?"":" style='opacity:0.25;'")+">"
 										+ body.getLoadedSubspecies().getSVGStringFromBody(body)
-									+ "</div>"
-									+ "<div class='overlay no-pointer' id='LOADED_BODY_" + baseName + "'></div>"
+									+ "</div><div class='overlay no-pointer' id='LOADED_BODY_" + baseName + "'></div>"
 								+ "</div>"
 							+ "</div>"
 						
 							+ "<div style='width:calc(90% - 8px); padding:0; margin:0 0 0 8px; position:relative; float:left;'>"
-								+ "<p style='margin:0; padding:2px;'>"+displayName+"</p>"
-								+ "<p style='margin:0; padding:2px;'>[style.colourDisabled(data/transformation_presets/)]"+baseName+"[style.colourDisabled(.xml)]</p>"
-							+"</div>"
-						+ "</div>"
-						+ "<div class='container-full-width' style='width:calc(25% - 16px);text-align:center; background:transparent;'>"
+								+ "<p style='margin:0; padding:2px;'>"+displayName+"</p><p style='margin:0; padding:2px;'>[style.colourDisabled(data/transformation_presets/)]"+baseName+"[style.colourDisabled(.xml)]</p></div></div><div class='container-full-width' style='width:calc(25% - 16px);text-align:center; background:transparent;'>"
 							+ (Main.game.isStarted()
 									?(fileName.equals(overwriteConfirmationName)
 										?"<div class='square-button saveIcon' id='OVERWRITE_" + baseName + "'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getDiskSaveConfirm()+"</div></div>"
@@ -1679,7 +1653,7 @@ public class BodyChanging {
 				for (File child : directoryListing) {
 					if (child.getName().equals(name+".xml")){
 						if(!allowOverwrite) {
-							Main.game.flashMessage(PresetColour.GENERIC_BAD, "Name already exists!");
+							Main.game.flashMessage(PresetColour.GENERIC_BAD, "Такое имя уже существует!");
 							return;
 						}
 					}
@@ -1770,7 +1744,7 @@ public class BodyChanging {
 			}
 			
 		} else {
-			Main.game.flashMessage(PresetColour.GENERIC_BAD, "File not found...");
+			Main.game.flashMessage(PresetColour.GENERIC_BAD, "Файл не найден...");
 		}
 	}
 
@@ -1787,9 +1761,9 @@ public class BodyChanging {
 		// Height limitation:
 		if(getTarget().isShortStature()!=body.isShortStature()) {
 			if(getTarget().isShortStature()) {
-				return UtilText.parse(getTarget(), "[npc.NameIsFull] too short to be able to transform into this form!");
+				return UtilText.parse(getTarget(), "[npc.NameIsFull] слишком низкий, чтобы превратиться в эту форму!");
 			} else {
-				return UtilText.parse(getTarget(), "[npc.NameIsFull] too tall to be able to transform into this form!");
+				return UtilText.parse(getTarget(), "[npc.NameIsFull] слишком высокий, чтобы превратиться в эту форму!");
 			}
 		}
 		
@@ -1831,17 +1805,16 @@ public class BodyChanging {
 			BodyMaterial matCurrent = getTarget().getBodyMaterial();
 			BodyMaterial matTarget = body.getBodyMaterial();
 			return UtilText.parse(getTarget(),
-					"[npc.Name] cannot transform into a body that has a different material than [npc.her] current one!"
-					+ "<br/>Current material: <span style='color:"+matCurrent.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(matCurrent.getName())+"</span>"
+					"[npc.Name] не может превратиться в тело, материал которого отличается от текущего материала [npc.her]!<br/>Текущий материал: <span style='color:"+matCurrent.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(matCurrent.getName())+"</span>"
 					+ "<br/>Transformation target's material: <span style='color:"+matTarget.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(matTarget.getName())+"</span>");
 		}
 				
 		// Feral limitations:
 		if(body.isFeral()!=getTarget().isFeral()) {
 			if(body.isFeral()) {
-				return UtilText.parse(getTarget(), "[npc.Name] cannot transform into a [style.colourFeral(feral body)] as [npc.her] current body isn't feral!");
+				return UtilText.parse(getTarget(), "[npc.Name] не может превратиться в [style.colourFeral(дикое тело)], так как текущее тело [npc.her] не является диким!");
 			}
-			return UtilText.parse(getTarget(), "[npc.Name] cannot transform into a [style.colourHuman(non-feral body)] as [npc.her] current body is feral!");
+			return UtilText.parse(getTarget(), "[npc.Name] не может превратиться в [style.colourHuman(недикое тело)], так как текущее тело [npc.her] является диким!");
 		}
 
 		StringBuilder sb = new StringBuilder();
@@ -1882,7 +1855,7 @@ public class BodyChanging {
 			}
 			if (!availableRaces.contains(presetPart.getType().getRace())) {
 				if (sb.length() == 0) {
-					sb.append("[npc.NameIsFull] unable to transform into the associated race for the following parts:");
+					sb.append("[npc.NameIsFull] не может превратиться в соответствующую расу для следующих частей:");
 					sb.append("<br/>");
 				}
 				partsList.add(presetPart.getType().getName(getTarget()));
@@ -1896,28 +1869,28 @@ public class BodyChanging {
 
 		if(getTarget().isYouko()) { // Youko self-TF limitations:
 			if(body.getArm().getArmRows()!=getTarget().getArmRows()) {
-				sb.append("<br/>Arm row count");
+				sb.append("<br/>Количество рядов рук");
 			}
 			if(body.getGenitalArrangement()!=getTarget().getGenitalArrangement()) {
-				sb.append("<br/>Genital arrangement");
+				sb.append("<br/>Расположение гениталий");
 			}
 			if(body.getTentacle().getType()!=getTarget().getTentacleType()) {
-				sb.append("<br/>Tentacle type");
+				sb.append("<br/>Тип щупалец");
 			}
 			if(body.getWing().getType()!=getTarget().getWingType()) {
-				sb.append("<br/>Wing type");
+				sb.append("<br/>Тип крыльев");
 			}
 			if(body.getEye().getEyePairs()!=getTarget().getEyePairs()) {
-				sb.append("<br/>Eye count");
+				sb.append("<br/>Количество глаз");
 			}
 			if(body.getHorn().getType()!=getTarget().getHornType()) {
-				sb.append("<br/>Horn type");
+				sb.append("<br/>Тип рогов");
 			}
 			if(body.getAntenna().getType()!=getTarget().getAntennaType()) {
-				sb.append("<br/>Antennae type");
+				sb.append("<br/>Тип антенн");
 			}
 			if(sb.length()>0) {
-				sb.insert(0, "Youkos' limited transformation powers prevent [npc.name] from transforming:");
+				sb.insert(0, "Ограниченные способности Юкос к трансформации не позволяют [npc.name] превратиться в:");
 				return UtilText.parse(getTarget(), sb.toString());
 			}
 		}

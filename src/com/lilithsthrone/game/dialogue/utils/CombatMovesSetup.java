@@ -29,24 +29,19 @@ public class CombatMovesSetup {
         CombatMovesSetup.dialogueReturn = dialogueReturn;
     }
 
-    public static final DialogueNode COMBAT_MOVES_CORE = new DialogueNode("Combat Moves", "", true) {
+    public static final DialogueNode COMBAT_MOVES_CORE = new DialogueNode("Боевые приемы", "", true) {
         @Override
         public String getHeaderContent() {
             UtilText.nodeContentSB.setLength(0);
 
             UtilText.nodeContentSB.append(
-                    "<div class='container-full-width' style='padding:8px; text-align:center;'>"
-                            + "While there is no limit on the number of moves which a character can know and use in combat,"
-                            	+ " it's only possible for "+String.valueOf(GameCharacter.MAX_COMBAT_MOVES)+" [style.colourMinorGood(core combat moves)] to be selected at a time."
-                            + " Any [style.colourMinorBad(non-core moves)] cost [style.colourBad(+1 action point)] to use in combat, and will suffer a [style.colourBad(+1 turn cooldown)].<br/>"
+                    "<div class='container-full-width' style='padding:8px; text-align:center;'>Хотя количество приемов, которые персонаж может знать и использовать в бою, не ограничено, одновременно можно выбрать только "+String.valueOf(GameCharacter.MAX_COMBAT_MOVES)+" [style.colourMinorGood(основные боевые приемы)]. Любые [style.colourMinorBad(дополнительные приемы)] стоят [style.colourBad(+1 очко действия)] при использовании в бою и накладывают [style.colourBad(+1 ход перезарядки)].<br/>"
                             + UtilText.parse(getTarget(),
-                            		"<i>(You can click on the icons below to add and remove them from [npc.namePos] core combat moves.)</i>"
+                            		"<i>(Вы можете нажимать на иконки ниже, чтобы добавлять или удалять их из списка [npc.namePos] основных боевых приемов.)</i>"
                             		+(getTarget().isPlayer()
                             				?""
-                            				:"<i>([npc.Name] will only choose to use [npc.her] core moves when in combat, unless [npc.sheHasFull] none available, in which case [npc.she] will choose from [npc.her] non-core moves.)</i>"))
-                            + "</div>"
-                            + "<div class='container-full-width' style='padding:8px; text-align:center;'>"
-                            + "<h6 style='text-align:center;'>[style.colourMinorGood(Core Combat Moves)]</h6>");
+                            				:"<i>([npc.Name] будет использовать только [npc.her] основных приема в бою, если только [npc.sheHasFull] нет доступных, в таком случае [npc.she] выберет из [npc.her] дополнительных приемов.)</i>"))
+                            + "</div><div class='container-full-width' style='padding:8px; text-align:center;'><h6 style='text-align:center;'>[style.colourMinorGood(Основные боевые приемы)]</h6>");
 
             for(int i=0;i<GameCharacter.MAX_COMBAT_MOVES;i++) {
                 AbstractCombatMove mv = null;
@@ -66,8 +61,7 @@ public class CombatMovesSetup {
             UtilText.nodeContentSB.append("</div>");
 
             UtilText.nodeContentSB.append(
-                            "<div class='container-full-width' style='padding:8px; text-align:center;'>"
-                            + "<h6 style='text-align:center;'>[style.colourMinorBad(Non-Core Combat Moves)]</h6>");
+                            "<div class='container-full-width' style='padding:8px; text-align:center;'><h6 style='text-align:center;'>[style.colourMinorBad(Вспомогательные боевые приемы)]</h6>");
 
             for(int i=0;i<target.getAvailableMoves().size();i++) {
                 AbstractCombatMove mv = target.getAvailableMoves().get(i);

@@ -132,7 +132,7 @@ public class CharacterCreation {
 		
 		@Override
 		public String getLabel() {
-			return "Version " + Main.VERSION_NUMBER + " | <b style='color:" + PresetColour.BASE_YELLOW_LIGHT.toWebHexString() + ";'>"+Main.VERSION_DESCRIPTION+"</b>";
+			return "Версия " + Main.VERSION_NUMBER + " | <b style='color:" + PresetColour.BASE_YELLOW_LIGHT.toWebHexString() + ";'>"+Main.VERSION_DESCRIPTION+"</b>";
 		}
 		
 		@Override
@@ -158,7 +158,7 @@ public class CharacterCreation {
 						resetBodyAppearance();
 						
 						Main.game.setRenderAttributesSection(true);
-						Main.game.getPlayer().setName(new NameTriplet("Unknown", "Unknown", "Unknown"));
+						Main.game.getPlayer().setName(new NameTriplet("Неизвестно", "Неизвестно", "Неизвестно"));
 						Main.game.getPlayer().setSurname("");
 						BodyChanging.setTarget(Main.game.getPlayer());
 					}
@@ -670,59 +670,16 @@ public class CharacterCreation {
 		}
 	};
 	
-	public static final DialogueNode CHOOSE_NAME = new DialogueNode("A Night Out", "", true) {
+	public static final DialogueNode CHOOSE_NAME = new DialogueNode("Ночной выход в свет", "", true) {
 
 		boolean unsuitableName = false, unsuitableSurname = false;
 		
 		@Override
 		public String getHeaderContent() {
 			return "<p>"
-						+ "[npcMale.speech("+(Main.game.getPlayer().isFeminine()?"Miss":"Sir")+",)]"
-						+ " the doorman calls out to you, evidently having finished with the other people in the queue,"
-						+ " [npcMale.speech(do you have an invitation?)]"
-					+ "</p>"
-					+ "<p>"
-						+ "You turn away from the glass and step forwards, smiling."
-						+ " [pc.speech(Yes, I have it right here... erm... hold on...)]"
-					+ "</p>"
-					+ "<p>"
-						+ "Reaching into your "+(Main.game.getPlayer().isFeminine()?"purse":"pocket")+", you feel your heart start to race as you discover that the invitation isn't in there."
-						+ " [pc.speech(No, no, no! I must have left it in the taxi!)]"
-					+ "</p>"
-					+ "<p>"
-						+ "[npcMale.speech(Well, don't worry,)]"
-						+ " the man replies,"
-						+ " [npcMale.speech(если вы назовете меня по имени, я смогу проверить, есть ли вы в списке.)]"
-					+ "</p>"
-					+ "<p>"
-						+ "вздохнув с облегчением, вы называете мужчине свое имя..."
-					+ "</p>"
-					+"<br/>"
-					+ "<div class='container-full-width' style='text-align:center;'>"
-						+ "<div style='position:relative; display:inline-block; padding-bottom:0; margin 0 auto; vertical-align:middle; width:100%; text-align:center;'>"
-							+ "<i>"
-								+ "Ваше имя может быть установлено как три значения; ваше мужское имя, андрогинное имя и женское имя."
-								+ "Ваше имя автоматически изменится на то, которое соответствует вашей женственности."
-							+ "</i>"
-							+ "<br/>"
-							+ "<p style='display:inline-block; padding:0; margin:0; height:32px; line-height:32px; width:100px;'>Имя: </p>"
-							+ "</form style='display:inline-block; padding:0; margin:0; text-align:center;'>"
-									+ "<input type='text' id='nameMasculineInput' style=' color:"+PresetColour.MASCULINE.toWebHexString()+";' value='"+ UtilText.parseForHTMLDisplay(Main.game.getPlayer().getNameTriplet().getMasculine())+ "'>"
-									
-							+ "</form style='display:inline-block; padding:0; margin:0; text-align:center;'>"
-								+ "<input type='text' id='nameAndrogynousInput' style=' color:"+PresetColour.ANDROGYNOUS.toWebHexString()+";' value='"+ UtilText.parseForHTMLDisplay(Main.game.getPlayer().getNameTriplet().getAndrogynous())+ "'>"
-								
-							+ "</form style='display:inline-block; padding:0; margin:0; text-align:center;'>"
-								+ "<input type='text' id='nameFeminineInput' style=' color:"+PresetColour.FEMININE.toWebHexString()+";' value='"+ UtilText.parseForHTMLDisplay(Main.game.getPlayer().getNameTriplet().getFeminine())+ "'>"
-							
-							+ "<br/>"
-							+ "<p style='display:inline-block; padding:0; margin:0; height:32px; line-height:32px; width:100px;'>Surname: </p>"
-							+ "<form style='display:inline-block; padding:0; margin:0; text-align:center;'><input type='text' id='surnameInput' value='"+ UtilText.parseForHTMLDisplay(Main.game.getPlayer().getSurname())+ "'></form>"
-						+ "</div>"
-						+ "<br/>"
-						+ "<i>Your name must be between 2 and 32 characters long. You cannot use the square bracket characters or full stops. (Surname may be left blank.)</i>"
-						+ (unsuitableName ? "<p style='text-align:center;padding-top:0;'><b style=' color:"+ PresetColour.GENERIC_BAD.toWebHexString()+ ";'>Invalid name.</b></p>" : "")
-						+ (unsuitableSurname ? "<p style='text-align:center;padding-top:0;'><b style=' color:"+ PresetColour.GENERIC_BAD.toWebHexString()+ ";'>Invalid Surname.</b></p>" : "")
+						+ "[npcMale.speech("+(Main.game.getPlayer().isFeminine()?"Мисс":"Сэр")+",)] швейцар окликает вас — очевидно, он уже закончил с остальными в очереди, [npcMale.speech(у вас есть приглашение?)]</p><p>Вы отворачиваетесь от стекла и делаете шаг вперед с улыбкой. [pc.speech(Да, оно прямо здесь... э-э... погодите...)]</p><p>Залезая в свою "+(Main.game.getPlayer().isFeminine()?"purse":"pocket")+", вы чувствуете, как сердце начинает бешено колотиться, обнаружив, что приглашения там нет. [pc.speech(Нет, нет, нет! Должно быть, я оставила его в такси!)]</p><p>[npcMale.speech(Ну, не волнуйтесь,)] отвечает мужчина, [npcMale.speech(если вы назовете меня по имени, я смогу проверить, есть ли вы в списке.)]</p><p>вздохнув с облегчением, вы называете мужчине свое имя...</p><br/><div class='container-full-width' style='text-align:center;'><div style='position:relative; display:inline-block; padding-bottom:0; margin 0 auto; vertical-align:middle; width:100%; text-align:center;'><i>Ваше имя может быть установлено как три значения: ваше мужское имя, андрогинное имя и женское имя. Ваше имя будет автоматически меняться в зависимости от уровня вашей женственности.</i><br/><p style='display:inline-block; padding:0; margin:0; height:32px; line-height:32px; width:100px;'>Имя: </p></form style='display:inline-block; padding:0; margin:0; text-align:center;'><input type='text' id='nameMasculineInput' style=' color:"+PresetColour.MASCULINE.toWebHexString()+";' value='"+ UtilText.parseForHTMLDisplay(Main.game.getPlayer().getNameTriplet().getMasculine())+ "'></form style='display:inline-block; padding:0; margin:0; text-align:center;'><input type='text' id='nameAndrogynousInput' style=' color:"+PresetColour.ANDROGYNOUS.toWebHexString()+";' value='"+ UtilText.parseForHTMLDisplay(Main.game.getPlayer().getNameTriplet().getAndrogynous())+ "'></form style='display:inline-block; padding:0; margin:0; text-align:center;'><input type='text' id='nameFeminineInput' style=' color:"+PresetColour.FEMININE.toWebHexString()+";' value='"+ UtilText.parseForHTMLDisplay(Main.game.getPlayer().getNameTriplet().getFeminine())+ "'><br/><p style='display:inline-block; padding:0; margin:0; height:32px; line-height:32px; width:100px;'>Фамилия: </p><form style='display:inline-block; padding:0; margin:0; text-align:center;'><input type='text' id='surnameInput' value='"+ UtilText.parseForHTMLDisplay(Main.game.getPlayer().getSurname())+ "'></form></div><br/><i>Длина вашего имени должна составлять от 2 до 32 символов. Нельзя использовать квадратные скобки или точки. (Фамилию можно оставить пустой.)</i>"
+						+ (unsuitableName ? "<p style='text-align:center;padding-top:0;'><b style=' color:"+ PresetColour.GENERIC_BAD.toWebHexString()+ ";'>Недопустимое имя.</b></p>" : "")
+						+ (unsuitableSurname ? "<p style='text-align:center;padding-top:0;'><b style=' color:"+ PresetColour.GENERIC_BAD.toWebHexString()+ ";'>Недопустимая фамилия.</b></p>" : "")
 					+ "</div>"
 					
 					+ "<p id='hiddenFieldName' style='display:none;'></p>"
@@ -861,8 +818,8 @@ public class CharacterCreation {
 					+ "<p>"
 						+ "Наконец, ты видишь, как его палец останавливается на твоем имени, и с улыбкой он отходит в сторону и машет рукой, приглашая тебя вперед."
 						+ " [npcMale.speech(Желаю вам хорошего вечера, "+(Main.game.getPlayer().getSurname().length()!=0
-								?(Main.game.getPlayer().isFeminine()?"Miss":"Mr.")+" [pc.surname]"
-								:(Main.game.getPlayer().isFeminine()?"Miss":"Sir"))+".)]"
+								?(Main.game.getPlayer().isFeminine()?"Мисс":"Мистер")+" [pc.surname]"
+								:(Main.game.getPlayer().isFeminine()?"Мисс":"Сэр"))+".)]"
 					+ "</p>"
 					+ "<p>"
 						+ "Благодарив его, ты спешишь через вход, и через несколько мгновений оказываешься в огромном центральном вестибюле музея."
@@ -926,7 +883,7 @@ public class CharacterCreation {
 				return new Response("Ягодицы & Бёдра", "Введите меню настройки для аспектов, связанных с вашей ягодицей, бёдрами и анусом.", CHOOSE_ADVANCED_APPEARANCE_ASS);
 				
 			} else if (index == 7) {
-				return new Response((Main.game.getPlayer().hasPenis()?"Penis":"Vagina"), "Введите меню настройки для аспектов, связанных с вашей "+(Main.game.getPlayer().hasPenis()?"penis":"vagina")+".", CHOOSE_ADVANCED_APPEARANCE_GENITALS);
+				return new Response((Main.game.getPlayer().hasPenis()?"Пенис":"Киска"), "Введите меню настройки для аспектов, связанных с вашей "+(Main.game.getPlayer().hasPenis()?"пенис":"вагина")+".", CHOOSE_ADVANCED_APPEARANCE_GENITALS);
 				
 			}  else if (index == 8) {
 				return new Response("Макс", "Введите меню настройки для макияжа.", CHOOSE_ADVANCED_APPEARANCE_COSMETICS);
@@ -968,7 +925,7 @@ public class CharacterCreation {
 						
 					+ CharacterModificationUtils.getHeightChoiceDiv(true)
 					
-					+ CharacterModificationUtils.getKatesDivCoveringsNew(false, Race.HUMAN, BodyCoveringType.HUMAN, "Skin Colour", "Цвет кожи, покрывающей ваше тело.", true, false, false)
+					+ CharacterModificationUtils.getKatesDivCoveringsNew(false, Race.HUMAN, BodyCoveringType.HUMAN, "Цвет кожи", "Цвет кожи, покрывающей ваше тело.", true, false, false)
 					
 					+ "<div class='cosmetics-container' style='background:transparent;'>"
 					
@@ -1012,7 +969,7 @@ public class CharacterCreation {
 					
 					+ CharacterModificationUtils.getLipPuffynessDiv()
 
-					+ CharacterModificationUtils.getKatesDivCoveringsNew(false, Main.game.getPlayer().getEyeType().getRace(), BodyCoveringType.EYE_HUMAN, "Iris Colour", "Цвет радужной оболочки ваших глаз.", true, false, false);
+					+ CharacterModificationUtils.getKatesDivCoveringsNew(false, Main.game.getPlayer().getEyeType().getRace(), BodyCoveringType.EYE_HUMAN, "Цвет радужки", "Цвет радужной оболочки ваших глаз.", true, false, false);
 		}
 		
 		@Override
@@ -1039,11 +996,11 @@ public class CharacterCreation {
 						+ "<i>Все эти настройки можно изменить позже в игре.</i>"
 					+ "</div>"
 
-					+ CharacterModificationUtils.getKatesDivHairLengths(false, "Hair Length", "Выберите длину ваших волос.")
+					+ CharacterModificationUtils.getKatesDivHairLengths(false, "Длина волос", "Выберите длину ваших волос.")
 					
-					+ CharacterModificationUtils.getKatesDivHairStyles(false, "Hair Style", "Выберите прическу. Некоторые прически недоступны при короткой длине волос.")
+					+ CharacterModificationUtils.getKatesDivHairStyles(false, "Прическа", "Выберите прическу. Некоторые прически недоступны при короткой длине волос.")
 
-					+ CharacterModificationUtils.getKatesDivCoveringsNew(false, Main.game.getPlayer().getHairType().getRace(), BodyCoveringType.HAIR_HUMAN, "Hair Colour", "Цвет ваших волос.", true, false);
+					+ CharacterModificationUtils.getKatesDivCoveringsNew(false, Main.game.getPlayer().getHairType().getRace(), BodyCoveringType.HAIR_HUMAN, "Цвет волос", "Цвет ваших волос.", true, false);
 		}
 		
 		@Override
@@ -1135,9 +1092,9 @@ public class CharacterCreation {
 		@Override
 		public String getLabel() {
 			if(Main.game.getPlayer().hasPenis()) {
-				return "Penis Appearance";
+				return "Внешний вид пениса";
 			} else {
-				return "Vagina Appearance";
+				return "Внешний вид влагалища";
 			}
 		}
 		
@@ -1241,7 +1198,7 @@ public class CharacterCreation {
 
 		@Override
 		public String getLabel() {
-			return "Add Tattoo: "+Util.capitaliseSentence(CharacterModificationUtils.tattooInventorySlot.getTattooSlotName());
+			return "Добавить татуировку: "+Util.capitaliseSentence(CharacterModificationUtils.tattooInventorySlot.getTattooSlotName());
 		}
 		
 		@Override
@@ -1300,22 +1257,22 @@ public class CharacterCreation {
 					+ "</div>"
 							
 					+CharacterModificationUtils.getKatesDivCoveringsNew(
-							false, Race.NONE, BodyCoveringType.MAKEUP_BLUSHER, "Blusher", "Румяна (также называемые руж) используются для придания цвета щекам, чтобы придать более молодой вид, и для подчеркивания скул.", true, false)
+							false, Race.NONE, BodyCoveringType.MAKEUP_BLUSHER, "Румяна", "Румяна (также называемые руж) используются для придания цвета щекам, чтобы придать более молодой вид, и для подчеркивания скул.", true, false)
 					
 					+CharacterModificationUtils.getKatesDivCoveringsNew(
-							false, Race.NONE, BodyCoveringType.MAKEUP_LIPSTICK, "Lipstick", "Помада используется для придания цвета, текстуры и защиты губ.", true, false)
+							false, Race.NONE, BodyCoveringType.MAKEUP_LIPSTICK, "Помада", "Помада используется для придания цвета, текстуры и защиты губ.", true, false)
 
 					+CharacterModificationUtils.getKatesDivCoveringsNew(
-							false, Race.NONE, BodyCoveringType.MAKEUP_EYE_LINER, "Eyeliner", "Тушь для глаз наносится вокруг контуров глаз, чтобы помочь определить форму или подчеркнуть различные черты.", true, false)
+							false, Race.NONE, BodyCoveringType.MAKEUP_EYE_LINER, "Подводка для глаз", "Тушь для глаз наносится вокруг контуров глаз, чтобы помочь определить форму или подчеркнуть различные черты.", true, false)
 
 					+CharacterModificationUtils.getKatesDivCoveringsNew(
-							false, Race.NONE, BodyCoveringType.MAKEUP_EYE_SHADOW, "Eye shadow", "Тени для век используются, чтобы сделать глаза носителя более заметными или привлекательными.", true, false)
+							false, Race.NONE, BodyCoveringType.MAKEUP_EYE_SHADOW, "Тени для век", "Тени для век используются, чтобы сделать глаза носителя более заметными или привлекательными.", true, false)
 
 					+CharacterModificationUtils.getKatesDivCoveringsNew(
-							false, Race.NONE, BodyCoveringType.MAKEUP_NAIL_POLISH_HANDS, "Nail polish", "Лак для ногтей используется для окраски и защиты ногтей на ваших [pc.hands].", true, false)
+							false, Race.NONE, BodyCoveringType.MAKEUP_NAIL_POLISH_HANDS, "Лак для ногтей", "Лак для ногтей используется для окраски и защиты ногтей на ваших [pc.hands].", true, false)
 
 					+CharacterModificationUtils.getKatesDivCoveringsNew(
-							false, Race.NONE, BodyCoveringType.MAKEUP_NAIL_POLISH_FEET, "Toenail polish", "Лак для ногтей на ногах используется для окраски и защиты ногтей на ваших [pc.feet].", true, false);
+							false, Race.NONE, BodyCoveringType.MAKEUP_NAIL_POLISH_FEET, "Лак для ногтей на ногах", "Лак для ногтей на ногах используется для окраски и защиты ногтей на ваших [pc.feet].", true, false);
 		}
 		
 		@Override
@@ -1346,48 +1303,48 @@ public class CharacterCreation {
 			
 			if(Main.game.isPubicHairEnabled() || Main.game.isFacialHairEnabled() || Main.game.isBodyHairEnabled()) {
 				UtilText.nodeContentSB.append(CharacterModificationUtils.getKatesDivCoveringsNew(
-						false, Race.NONE, Main.game.getPlayer().getBodyHairCoveringType(), "Body hair", "Это волосы, которые покрывают все области, кроме головы.", false, false, false));
+						false, Race.NONE, Main.game.getPlayer().getBodyHairCoveringType(), "Волосы на теле", "Это волосы, которые покрывают все области, кроме головы.", false, false, false));
 			} else {
 				UtilText.nodeContentSB.append(CharacterModificationUtils.getKatesDivGenericBodyHairDisabled(
-						"Body hair", "Это волосы, которые покрывают все области, кроме головы.", "Все дополнительные опции для волос тела отключены. Вы не увидите никаких дополнительных волос."));
+						"Волосы на теле", "Это волосы, которые покрывают все области, кроме головы.", "Все дополнительные опции для волос тела отключены. Вы не увидите никаких дополнительных волос."));
 				
 				return UtilText.nodeContentSB.toString();
 			}
 			
 			if(Main.game.isFacialHairEnabled()) {
 				if (Main.game.isFemaleFacialHairEnabled()) {
-					UtilText.nodeContentSB.append(CharacterModificationUtils.getKatesDivFacialHair(false, "Facial hair", "Волосы на теле, которые находятся на лице."));
+					UtilText.nodeContentSB.append(CharacterModificationUtils.getKatesDivFacialHair(false, "Растительность на лице", "Волосы на теле, которые находятся на лице."));
 				} else {
-					UtilText.nodeContentSB.append(CharacterModificationUtils.getKatesDivFacialHair(false, "Facial hair", "Волосы на теле, которые находятся на лице. Женские персонажи не могут отращивать усы."));
+					UtilText.nodeContentSB.append(CharacterModificationUtils.getKatesDivFacialHair(false, "Растительность на лице", "Волосы на теле, которые находятся на лице. Женские персонажи не могут отращивать усы."));
 				}
 			} else {
 				UtilText.nodeContentSB.append(CharacterModificationUtils.getKatesDivGenericBodyHairDisabled(
-						"Facial hair", "Волосы на теле, которые находятся на лице. Женские персонажи не могут отращивать усы.", "Усы в настоящее время отключены в настройках. Вы не увидите никаких усов, пока они отключены."));
+						"Растительность на лице", "Волосы на теле, которые находятся на лице. Женские персонажи не могут отращивать усы.", "Усы в настоящее время отключены в настройках. Вы не увидите никаких усов, пока они отключены."));
 			}
 			
 			if(Main.game.isPubicHairEnabled()) {
-				UtilText.nodeContentSB.append(CharacterModificationUtils.getKatesDivPubicHair(false, "Pubic hair", "Волосы на теле, которые находятся в области гениталий; расположены на и вокруг ваших половых органов и промежности."));
+				UtilText.nodeContentSB.append(CharacterModificationUtils.getKatesDivPubicHair(false, "Лобковые волосы", "Волосы на теле, которые находятся в области гениталий; расположены на и вокруг ваших половых органов и промежности."));
 				
 			} else {
 				UtilText.nodeContentSB.append(CharacterModificationUtils.getKatesDivGenericBodyHairDisabled(
-						"Pubic hair", "Волосы на теле, которые находятся в области гениталий; расположены на и вокруг ваших половых органов и промежности.", "Лобковые волосы в настоящее время отключены в настройках. Вы не увидите никаких лобковых волос, пока они отключены."));
+						"Лобковые волосы", "Волосы на теле, которые находятся в области гениталий; расположены на и вокруг ваших половых органов и промежности.", "Лобковые волосы в настоящее время отключены в настройках. Вы не увидите никаких лобковых волос, пока они отключены."));
 			}
 			
 			if(Main.game.isBodyHairEnabled()) {
 				UtilText.nodeContentSB.append(
-						CharacterModificationUtils.getKatesDivUnderarmHair(false, "Underarm hair", "Волосы на теле, которые находятся в подмышечных впадинах."));
+						CharacterModificationUtils.getKatesDivUnderarmHair(false, "Волосы под мышками", "Волосы на теле, которые находятся в подмышечных впадинах."));
 				
 			} else {
 				UtilText.nodeContentSB.append(CharacterModificationUtils.getKatesDivGenericBodyHairDisabled(
-						"Underarm hair", "Волосся, найденное в твоих подмышках.", "Волосся под мышками в настоящее время отключено в настройках. Ты не увидишь никакого содержимого с волосами под мышками, пока оно отключено."));
+						"Волосы под мышками", "Волосся, найденное в твоих подмышках.", "Волосся под мышками в настоящее время отключено в настройках. Ты не увидишь никакого содержимого с волосами под мышками, пока оно отключено."));
 			}
 			
 			if(Main.game.isAssHairEnabled()) {
-				UtilText.nodeContentSB.append(CharacterModificationUtils.getKatesDivAssHair(false, "Ass hair", "Волосся на теле вокруг твоего анала."));
+				UtilText.nodeContentSB.append(CharacterModificationUtils.getKatesDivAssHair(false, "Волосы на заднице", "Волосся на теле вокруг твоего анала."));
 				
 			} else {
 				UtilText.nodeContentSB.append(CharacterModificationUtils.getKatesDivGenericBodyHairDisabled(
-						"Ass hair", "Волосся на теле вокруг твоего анала.", "Волосся на анусе в настоящее время отключено в настройках. Ты не увидишь никакого содержимого с волосами на анусе, пока оно отключено."));
+						"Волосы на заднице", "Волосся на теле вокруг твоего анала.", "Волосся на анусе в настоящее время отключено в настройках. Ты не увидишь никакого содержимого с волосами на анусе, пока оно отключено."));
 			}
 			
 			return UtilText.nodeContentSB.toString();
@@ -1425,7 +1382,7 @@ public class CharacterCreation {
 						+ "В конце концов, это большой вечер для Лили, и вы хотите, чтобы она увидела, что вы приложили некоторые усилия к своему внешнему виду."
 					+ "</p>"
 					+ "<p>"
-						+ "Поворачиваясь то в одну, то в другую сторону, чтобы лучше рассмотреть себя в зеркале, вы начинаете замечать, как "+(Main.game.getPlayer().isFeminine()?"hot":"handsome")+"вы выглядите сегодня вечером..."
+						+ "Поворачиваясь то в одну, то в другую сторону, чтобы лучше рассмотреть себя в зеркале, вы начинаете замечать, как "+(Main.game.getPlayer().isFeminine()?"горячая":"красивый")+"вы выглядите сегодня вечером..."
 					+ "</p>"
 					+ "<p>"
 						+ "[pc.thought(Почему я чувствую себя такой возбужденной?)]"
@@ -1476,32 +1433,7 @@ public class CharacterCreation {
 						+ "Когда ты прислоняешься к холодной стене и делаешь глубокий вдох, внезапно прерывает твои мысли голос,");
 			
 			if(!femalePrologueNPC()) {
-				UtilText.nodeContentSB.append("[prologueMale.speech(Отдыхаешь от толпы тоже?)]"
-						+ "</p>"
-						+ "<p>"
-							+ "Поворачиваясь, ты видишь высокого, красивого мужчину, который, вероятно, всего на пару лет старше тебя, и он улыбается тебе самой очаровательной улыбкой, которую ты когда-либо видела."
-							+ "Прежде чем ты успеваешь осознать, что делаешь, твои глаза бегают по всем [unit.size] его мужественного, мускулистого тела, и ты только с большим трудом можешь сдержать себя от того, чтобы не выпустить из себя отчаянный маленький стон."
-						+ "</p>"
-						+ "<p>"
-							+ "[pc.thought(Сосредоточься, [pc.name], сосредоточься!)] ты думаешь, пытаясь вести себя как можно более непринужденно, когда улыбаешься незнакомцу перед тобой."
-						+ "</p>"
-						+ "<p>"
-							+ "[pc.speech(На самом деле,) ты говоришь, [pc.speech(я только что приехал. Я думал, что опоздаю, но похоже, что ничего еще не началось.)]"
-						+ "</p>"
-						+ "<p>"
-							+ "[prologueMale.speech(Ах, ты, должно быть, только что пропустил объявление,) отвечает он, [prologueMale.speech(вступление откладывается на полчаса.)]"
-								+ " Я пытался засидеться в той толпе там, но я не историк, и большая часть разговора довольно скучна...)]"
-						+ "</p>"
-						+ "<p>"
-							+ "[pc.speech(Haha,)]"
-							+ " ты смеешься, отчаянно пытаясь не представить, как он выглядит голым,"
-							+ " [pc.speech(Я знаю <i>точно</i>, что ты имеешь в виду. Моя тетя - дама, которая произносит вступительную речь, и каждый раз, когда я встречаю ее друзей из музея, я не могу следить за их разговорами."
-									+ " Ну, кроме Артура. Он ближе к нашему возрасту, и с ним очень легко общаться.)]"
-						+ "</p>"
-						+ "<p>"
-							+ "[prologueMale.speech(Ха! Ты знаешь Артура? Я здесь по его приглашению. Он и я давние друзья,)"
-							+ " жизнерадостно отвечает мужчина, и его улыбка заставляет твое сердце учащенно биться."
-							+ "[prologueMale.speech(Я [prologueMale.name], кстати, рад познакомиться с тобой "+(Main.game.getPlayer().isFeminine()?"Ms. ...?":"Mr. ...?")+")]"
+				UtilText.nodeContentSB.append("[prologueMale.speech(Отдыхаешь от толпы тоже?)]</p><p>Поворачиваясь, ты видишь высокого, красивого мужчину, который, вероятно, всего на пару лет старше тебя, и он улыбается тебе самой очаровательной улыбкой, которую ты когда-либо видела.Прежде чем ты успеваешь осознать, что делаешь, твои глаза бегают по всем [unit.size] его мужественного, мускулистого тела, и ты только с большим трудом можешь сдержать себя от того, чтобы не выпустить из себя отчаянный маленький стон.</p><p>[pc.thought(Сосредоточься, [pc.name], сосредоточься!)] ты думаешь, пытаясь вести себя как можно более непринужденно, когда улыбаешься незнакомцу перед тобой.</p><p>[pc.speech(На самом деле,) ты говоришь, [pc.speech(я только что приехал. Я думал, что опоздаю, но похоже, что ничего еще не началось.)]</p><p>[prologueMale.speech(Ах, ты, должно быть, только что пропустил объявление,) отвечает он, [prologueMale.speech(вступление откладывается на полчаса.)] Я пытался засидеться в той толпе там, но я не историк, и большая часть разговора довольно скучна...)]</p><p>[pc.speech(Haha,)] ты смеешься, отчаянно пытаясь не представить, как он выглядит голым, [pc.speech(Я знаю <i>точно</i>, что ты имеешь в виду. Моя тетя - дама, которая произносит вступительную речь, и каждый раз, когда я встречаю ее друзей из музея, я не могу следить за их разговорами. Ну, кроме Артура. Он ближе к нашему возрасту, и с ним очень легко общаться.)]</p><p>[prologueMale.speech(Ха! Ты знаешь Артура? Я здесь по его приглашению. Он и я давние друзья,) жизнерадостно отвечает мужчина, и его улыбка заставляет твое сердце учащенно биться.[prologueMale.speech(Я [prologueMale.name], кстати, рад познакомиться с тобой "+(Main.game.getPlayer().isFeminine()?"Госпожа ...?":"Господин ...?")+")]"
 						+ "</p>"
 						+ "<p>"
 							+ "[pc.speech(Точно,)] ты отвечаешь, пожимаешь ему протянутую руку, пытаясь не думать о том, насколько силен и доминирующе его хват.) [pc.speech(Я [pc.Name].)]"
@@ -1513,32 +1445,7 @@ public class CharacterCreation {
 						+ "</p>");
 				
 			} else {
-				UtilText.nodeContentSB.append("[prologueFemale.speech(Делаете перерыв от толпы тоже?)]"
-						+ "</p>"
-						+ "<p>"
-							+ "Поворачиваясь, вы видите красивую женщину, которая выглядит примерно в твоем возрасте, и она улыбается тебе так, как ты еще никогда не видел."
-							+ "Прежде чем ты успеваешь понять, что делаешь, твои глаза бегают по всему телу [unit.size], и ты только что успеваешь остановиться, чтобы не вырвать из себя вожделенное стон."
-						+ "</p>"
-						+ "<p>"
-							+ "[pc.thought(Фокусируйся [pc.name], фокусируйся!)] ты думаешь, пытаясь вести себя как можно более непринужденно, когда улыбаешься незнакомке перед тобой."
-						+ "</p>"
-						+ "<p>"
-							+ "[pc.speech(На самом деле,) ты говоришь, [pc.speech(Я только что приехал. Я думал, что опоздаю, но похоже, что ничего еще не началось.)] "
-						+ "</p>"
-						+ "<p>"
-							+ "[prologueFemale.speech(Ах, ты, должно быть, только что пропустил объявление,) она отвечает, [prologueFemale.speech(вступительная речь откладывается на полчаса."
-								+ "Я пытался постоять в той толпе там, но я не историк, и большая часть разговора довольно скучна...)]"
-						+ "</p>"
-						+ "<p>"
-							+ "[pc.speech(Haha,)]"
-							+ " ты смеёшься, отчаянно пытаясь не представить, как она выглядит голой,"
-							+ " [pc.speech(Я знаю <i>точно</i>, что ты имеешь в виду. Моя тетя - это та самая женщина, которая произносит вступительную речь, и каждый раз, когда я встречаю её друзей из музея, я не могу понять их разговоры."
-									+ " Ну, кроме Артура. Он ближе к нашему возрасту, и с ним очень легко общаться и весело разговаривать.)]"
-						+ "</p>"
-						+ "<p>"
-							+ "[prologueFemale.speech(О! Ты знаешь Артура? Я здесь по его приглашению, на самом деле. Он и я давно знакомы,)]"
-							+ " женщина жизнерадостно отвечает, и её улыбка заставляет твое сердце биться быстрее."
-							+ " [prologueFemale.speech(Я [prologueFemale.name], кстати, рада познакомиться с тобой "+(Main.game.getPlayer().isFeminine()?"Ms. ...?":"Mr. ...?")+")]"
+				UtilText.nodeContentSB.append("[prologueFemale.speech(Делаете перерыв от толпы тоже?)]</p><p>Поворачиваясь, вы видите красивую женщину, которая выглядит примерно в твоем возрасте, и она улыбается тебе так, как ты еще никогда не видел.Прежде чем ты успеваешь понять, что делаешь, твои глаза бегают по всему телу [unit.size], и ты только что успеваешь остановиться, чтобы не вырвать из себя вожделенное стон.</p><p>[pc.thought(Фокусируйся [pc.name], фокусируйся!)] ты думаешь, пытаясь вести себя как можно более непринужденно, когда улыбаешься незнакомке перед тобой.</p><p>[pc.speech(На самом деле,) ты говоришь, [pc.speech(Я только что приехал. Я думал, что опоздаю, но похоже, что ничего еще не началось.)] </p><p>[prologueFemale.speech(Ах, ты, должно быть, только что пропустил объявление,) она отвечает, [prologueFemale.speech(вступительная речь откладывается на полчаса.Я пытался постоять в той толпе там, но я не историк, и большая часть разговора довольно скучна...)]</p><p>[pc.speech(Haha,)] ты смеёшься, отчаянно пытаясь не представить, как она выглядит голой, [pc.speech(Я знаю <i>точно</i>, что ты имеешь в виду. Моя тетя - это та самая женщина, которая произносит вступительную речь, и каждый раз, когда я встречаю её друзей из музея, я не могу понять их разговоры. Ну, кроме Артура. Он ближе к нашему возрасту, и с ним очень легко общаться и весело разговаривать.)]</p><p>[prologueFemale.speech(О! Ты знаешь Артура? Я здесь по его приглашению, на самом деле. Он и я давно знакомы,)] женщина жизнерадостно отвечает, и её улыбка заставляет твое сердце биться быстрее. [prologueFemale.speech(Я [prologueFemale.name], кстати, рада познакомиться с тобой "+(Main.game.getPlayer().isFeminine()?"Госпожа ...?":"Господин ...?")+")]"
 						+ "</p>"
 						+ "<p>"
 							+ "[pc.speech(Точно,)] ты отвечаешь, пожимаешь ей протянутую руку, пытаясь не думать о том, насколько нежная и мягкая её кожа. [pc.speech(Я [pc.Name].)]"
@@ -1601,13 +1508,10 @@ public class CharacterCreation {
 				UtilText.nodeContentSB.append(
 						"<div class='container-full-width'>"
 							+"<div class='container-full-width' style='margin:0;padding:0;'>"
-								+ "<h6 style='color:"+history.getAssociatedPerk().getColour().toWebHexString()+";'>"+Util.capitaliseSentence(history.getName(Main.game.getPlayer()))+"</h6>"
-							+ "</div>"
-							+"<div class='container-full-width' style='margin:0 8px; width: calc(10% - 16px);'>"
-								+ "<div id='OCCUPATION_" + history + "' class='fetish-icon full"
+								+ "<h6 style='color:"+history.getAssociatedPerk().getColour().toWebHexString()+";'>"+Util.capitaliseSentence(history.getName(Main.game.getPlayer()))+"</h6></div><div class='container-full-width' style='margin:0 8px; width: calc(10% - 16px);'><div id='OCCUPATION_" + history + "' class='fetish-icon full"
 									+ (Main.game.getPlayer().getHistory()==history
-										? " owned' style='border:2px solid " + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>"
-										: " unlocked' style='border:2px solid " + PresetColour.TEXT_GREY.toWebHexString() + ";" + "'>")
+										? " есть' style='border:2px solid " + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>"
+										: " разблокирован' style='border:2px solid " + PresetColour.TEXT_GREY.toWebHexString() + ";" + "'>")
 									+ "<div class='fetish-icon-content'>"+history.getAssociatedPerk().getSVGString(Main.game.getPlayer())+"</div>"
 								+ "</div>"
 							+ "</div>"
@@ -2063,11 +1967,7 @@ public class CharacterCreation {
 				+ "</td>"
 				+ "<td style='min-width:200px;'>"
 					+ baseName
-				+ "</td>"
-				+ "<td>"
-					+ "<div class='saveLoadButton' id='IMPORT_CHARACTER_" + identifier + "' style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>Load</div>"
-				+ "</td>"
-				+ "</tr>";
+				+ "</td><td><div class='saveLoadButton' id='IMPORT_CHARACTER_" + identifier + "' style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>Загрузить</div></td></tr>";
 	}
 
 	private static boolean resetImportedCharacter = false;
@@ -2076,7 +1976,7 @@ public class CharacterCreation {
 		
 		@Override
 		public String getLabel() {
-			return "Imported Character";
+			return "Импортированный персонаж";
 		}
 		
 		@Override
@@ -2167,8 +2067,8 @@ public class CharacterCreation {
 
 			} else if (index == 5) {
 				return new ResponseEffectsOnly(resetImportedCharacter
-						?"Сбросить персонажа: <span style='color:" + PresetColour.GENERIC_BAD.toWebHexString() + ";'>ON</span>"
-						:"Сбросить персонажа: <span style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>OFF</span>",
+						?"Сбросить персонажа: <span style='color:" + PresetColour.GENERIC_BAD.toWebHexString() + ";'>ВКЛ</span>"
+						:"Сбросить персонажа: <span style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>ВЫКЛ</span>",
 						"Сбрасывает опыт и Кредиты / Огни (Flames) до 0 и очищает весь ваш Инвентарь, за исключением экипированной одежды и оружия. " +
 								"Заклинания и перки к заклинаниям также удаляются."){
 					@Override

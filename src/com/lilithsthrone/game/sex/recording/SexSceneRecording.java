@@ -227,6 +227,6 @@ public class SexSceneRecording implements XMLSaving {
 			tfe.printStackTrace();
 		}
 
-		Main.game.flashMessage(PresetColour.GENERIC_GOOD, "Sex Scene Recorded!");
+		Main.game.flashMessage(PresetColour.GENERIC_GOOD, "Секс-сцена записана!");
 	}
 }

@@ -54,7 +54,7 @@ public class OffspringMapDialogue {
 	}
 	
 	
-	public static final DialogueNode OFFSPRING_CHOICE = new DialogueNode("Offspring list", "-", true) {
+	public static final DialogueNode OFFSPRING_CHOICE = new DialogueNode("Список потомства", "-", true) {
 		List<OffspringSeed> offspringList;
 		@Override
 		public void applyPreParsingEffects() {
@@ -67,40 +67,38 @@ public class OffspringMapDialogue {
 			boolean noOffspring = offspringList.isEmpty();
 			
 			UtilText.nodeContentSB.append(
-					"<p>"
-						+ "The arcane enchantment in the map causes a list of names of all your unmet offspring to be projected into the air in front of you, with corresponding dots showing their exact location on the physical map itself."
+					"<p>Аркана-чары на карте заставляют список имен всех ваших еще не встреченных отпрысков проецироваться в воздухе перед вами, а соответствующие точки показывают их точное местоположение на самой физической карте."
 						+ (noOffspring
-								? " It doesn't look like you have any unmet offspring to be found right now..."
-								: " Luckily, it looks like one of your offspring is in this very area."
-									+ " As you take a look at the key, you see just who it is...")
+								? " Похоже, что на данный момент у вас нет еще не встреченных потомков..."
+								: " К счастью, кажется, один из ваших отпрысков находится именно в этой области. Взглянув на ключ, вы увидите, кто именно это...")
 					+ "</p>"
 					+ "<p style='text-align:center;'>");
 			
 			if(Main.game.getOffspringNotSpawned(os->true).isEmpty()) {
-				UtilText.nodeContentSB.append("[style.colourDisabled(No offspring available)]");
+				UtilText.nodeContentSB.append("[style.colourDisabled(Нет доступного потомства)]");
 				
 			} else {
 				boolean foundAnyInArea = false;
 				List<OffspringSeed> offspringToShow = Main.game.getOffspringNotSpawned(npc->offspringList.contains(npc));
 				if(!offspringToShow.isEmpty()) {
 					foundAnyInArea = true;
-					UtilText.nodeContentSB.append("Offspring [style.colourMinorGood(possibly in this area)]:<br/>");
+					UtilText.nodeContentSB.append("Потомство [style.colourMinorGood(возможно, в этой области)]:<br/>");
 				}
 				for(OffspringSeed os : offspringToShow) {
 					UtilText.nodeContentSB.append("<span style='color:"+os.getFemininity().getColour().toWebHexString()+";'>"+Util.capitaliseSentence(os.getName())+"</span>");
 					
-					String unknownMotherName = "Unknown";
+					String unknownMotherName = "Неизвестно";
 					if(os.getMother()==null && !os.getMotherName().equals("???")) {
 						unknownMotherName = os.getMotherName();
 					}
-					String unknownFatherName = "Unknown";
+					String unknownFatherName = "Неизвестно";
 					if(os.getFather()==null && !os.getFatherName().equals("???")) {
 						unknownFatherName = os.getFatherName();
 					}
 
 					UtilText.nodeContentSB.append(" ("+(os.isFeral()?"<span style='color:"+RaceStage.FERAL.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(RaceStage.FERAL.getName())+"</span> ":"")+"<span style='color:"+os.getSubspecies().getColour(null).toWebHexString()+";'>"+Util.capitaliseSentence(os.getSubspecies().getName(os.getBody()))+"</span>)"
-							+ " Mother: "+(os.getMother()==null?unknownMotherName:(os.getMother().isPlayer()?"[style.colourExcellent(You)]":os.getMother().getName(true)))
-							+ " Father: "+(os.getFather()==null?unknownFatherName:(os.getFather().isPlayer()?"[style.colourExcellent(You)]":os.getFather().getName(true)))
+							+ " Mother: "+(os.getMother()==null?unknownMotherName:(os.getMother().isPlayer()?"[style.colourExcellent(Вы)]":os.getMother().getName(true)))
+							+ " Отец: "+(os.getFather()==null?unknownFatherName:(os.getFather().isPlayer()?"[style.colourExcellent(Вы)]":os.getFather().getName(true)))
 							+ "<br/>");
 				}
 				
@@ -109,23 +107,23 @@ public class OffspringMapDialogue {
 					if(foundAnyInArea) {
 						UtilText.nodeContentSB.append("<br/>");
 					}
-					UtilText.nodeContentSB.append("Offspring [style.colourMinorBad(not in this area)]:<br/>");
+					UtilText.nodeContentSB.append("Потомство [style.colourMinorBad(не в этой области)]:<br/>");
 				}
 				for(OffspringSeed os : offspringToShow) {
 					UtilText.nodeContentSB.append("[style.colourDisabled("+Util.capitaliseSentence(os.getName())+")]");
 					
-					String unknownMotherName = "Unknown";
+					String unknownMotherName = "Неизвестно";
 					if(os.getMother()==null && !os.getMotherName().equals("???")) {
 						unknownMotherName = os.getMotherName();
 					}
-					String unknownFatherName = "Unknown";
+					String unknownFatherName = "Неизвестно";
 					if(os.getFather()==null && !os.getFatherName().equals("???")) {
 						unknownFatherName = os.getFatherName();
 					}
 					
 					UtilText.nodeContentSB.append(" (<span style='color:"+os.getSubspecies().getColour(null).toWebHexString()+";'>"+Util.capitaliseSentence(os.getSubspecies().getName(os.getBody()))+"</span>)"
-							+ " Mother: "+(os.getMother()==null?unknownMotherName:(os.getMother().isPlayer()?"[style.colourExcellent(You)]":os.getMother().getName(true)))
-							+ " Father: "+(os.getFather()==null?unknownFatherName:(os.getFather().isPlayer()?"[style.colourExcellent(You)]":os.getFather().getName(true)))
+							+ " Mother: "+(os.getMother()==null?unknownMotherName:(os.getMother().isPlayer()?"[style.colourExcellent(Вы)]":os.getMother().getName(true)))
+							+ " Отец: "+(os.getFather()==null?unknownFatherName:(os.getFather().isPlayer()?"[style.colourExcellent(Вы)]":os.getFather().getName(true)))
 							+ "<br/>");
 				}
 			}
@@ -141,19 +139,19 @@ public class OffspringMapDialogue {
 			offspringToShow.addAll(Main.game.getOffspringNotSpawned(npc->!offspringList.contains(npc)));
 			
 			if (index == 0) {
-				return new Response("Back", "Decide not to look for any of your offspring in this location after all.", Main.game.getDefaultDialogue(false));
+				return new Response("Назад", "В конце концов, вы решаете не искать здесь свое потомство.", Main.game.getDefaultDialogue(false));
 				
 			} else if(index-1 < offspringToShow.size()) {
 				OffspringSeed offspring = offspringToShow.get(index-1);
 				
 				if(!offspringList.contains(offspring)) {
 					return new Response(offspring.getName(),
-							offspring.getName()+" cannot be found in this area, due to "+offspring.hisHer()+" subspecies...",
+							offspring.getName()+" не удалось найти в этой области из-за "+offspring.hisHer()+" подвида...",
 							null);
 				}
 
 				return new Response(offspring.getName(),
-						"With the help of the enchanted map, you know that you'll soon be able to find "+offspring.getName()+" in this area...",
+						"С помощью зачарованной карты вы понимаете, что скоро сможете найти "+offspring.getName()+" в этой области...",
 						offspring.getEncounterDialogue()) {
 					@Override
 					public Colour getHighlightColour() {
@@ -172,8 +170,7 @@ public class OffspringMapDialogue {
 						Main.game.getTextStartStringBuilder().append(
 								"<p><i>"
 									+ UtilText.parse(npc,
-										"Consulting the map, you soon find that your [npc.daughter], [npc.name], is living in this particular area of the alleyways."
-										+ " Putting away your map, you start to search for [npc.herHim]...")
+										"Изучив карту, вы вскоре обнаруживаете, что ваш [npc.daughter], [npc.name], живет именно в этом районе переулков. Убрав карту, вы начинаете поиски [npc.herHim]...")
 								+ "</i></p>");
 					}
 				};

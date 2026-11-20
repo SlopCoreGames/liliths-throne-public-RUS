@@ -397,10 +397,10 @@ public class RatWarrensDialogue {
 	}
 	
 	private static String getCooperationWarning() {
-		return "<br/>[style.italicsSideQuest(You will be locked into the non-violent quest route if you select this option.)]";
+		return "<br/>[style.italicsSideQuest(Выбрав этот вариант, вы заблокируете возможность прохождения по силовому пути квеста.)]";
 	}
 	
-	public static final DialogueNode RAT_WARREN_INITIAL_ENTRY = new DialogueNode("Entrance", "", true) {
+	public static final DialogueNode RAT_WARREN_INITIAL_ENTRY = new DialogueNode("Вход", "", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 5*60;
@@ -422,7 +422,7 @@ public class RatWarrensDialogue {
 				
 			} else if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.ratWarrensEntry)) { // They let you in again:
 				if(index==1) {
-					return new Response("Confidential", "Tell the rats that your business is private, and that Vengar will be angry if they delay your entry.", ENTRANCE_NO_CONTENT) {
+					return new Response("Конфиденциально", "Сказать крысам, что ваши дела — это личное, и Венгар рассердится, если они задержат ваш вход.", ENTRANCE_NO_CONTENT) {
 						@Override
 						public void effects() {
 							Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/submission/ratWarrens/core", "ENTRANCE_REPEAT_ACCESSED", getGuards(true)));
@@ -432,7 +432,7 @@ public class RatWarrensDialogue {
 			}
 			
 			if(index==1) {
-				return new Response("Axel", "Tell the gang members that you're here to discuss the matter of Axel's payments with Vengar.", ENTRANCE_NO_CONTENT) {
+				return new Response("Аксель", "Сказать банде, что вы здесь, чтобы обсудить с Венгаром вопрос выплат Акселя.", ENTRANCE_NO_CONTENT) {
 					@Override
 					public void effects() {
 						Main.game.getDialogueFlags().setFlag(DialogueFlagValue.ratWarrensEntry, true);
@@ -441,7 +441,7 @@ public class RatWarrensDialogue {
 				};
 				
 			} else if(index==2) {
-				return new Response("Whore", "Tell the gang members that you're a whore who's been hired to pleasure Vengar.", RAT_WARREN_INITIAL_ENTRY_WHORE) {
+				return new Response("Шалава", "Сказать банде, что вы — шлюха, нанятая, чтобы ублажать Венгара.", RAT_WARREN_INITIAL_ENTRY_WHORE) {
 					@Override
 					public void effects() {
 						Main.game.getDialogueFlags().setFlag(DialogueFlagValue.ratWarrensEntryWhore, true);
@@ -449,7 +449,7 @@ public class RatWarrensDialogue {
 				};
 				
 			} else if(index==3) {
-				return new Response("Challenge", "Tell the gang members that you're here to fight.<br/>[style.italicsBad(This will undoubtedly result in a significant amount of gang members arriving as backup!)]", ENTRANCE_FIGHT) {
+				return new Response("Бросить вызов", "Сказать банде, что вы пришли драться.<br/>[style.italicsBad(Это несомненно приведет к тому, что на подмогу явится целая толпа бандитов!)]", ENTRANCE_FIGHT) {
 					@Override
 					public void effects() {
 						spawnGuards(false, 1);
@@ -467,7 +467,7 @@ public class RatWarrensDialogue {
 		}
 	};
 	
-	public static final DialogueNode RAT_WARREN_INITIAL_ENTRY_WHORE = new DialogueNode("Entrance", "", true) {
+	public static final DialogueNode RAT_WARREN_INITIAL_ENTRY_WHORE = new DialogueNode("Вход", "", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 2*60;
@@ -479,7 +479,7 @@ public class RatWarrensDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Refuse", "Tell the gang members that Vengar would be upset with them if he didn't get to be the first to fuck you.", ENTRANCE_NO_CONTENT){
+				return new Response("Отказаться", "Сказать банде, что Венгар будет расстроен, если не успеет трахнуть вас первым.", ENTRANCE_NO_CONTENT){
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/submission/ratWarrens/core", "RAT_WARREN_INITIAL_ENTRY_WHORE_NO_SEX", getGuards(true)));
@@ -489,11 +489,11 @@ public class RatWarrensDialogue {
 			} else if(index==2) {
 				return new ResponseSex(
 						isCompanionDialogue()
-							?"Sex (solo)"
-							:"Sex",
+							?"Секс (соло)"
+							:"Секс",
 						isCompanionDialogue()
-							?UtilText.parse(getMainCompanion(), "Tell the gang members that you'd be happy to show them what you're capable of, but that [npc.name] is going to save [npc.herself] for Vengar...")
-							:"Tell the gang members that you'd be happy to show them what you're capable of...",
+							?UtilText.parse(getMainCompanion(), "Сказать банде, что вы с радостью покажете им, на что способны, но [npc.name] прибережет [npc.herself] для Венгара...")
+							:"Сказать банде, что вы с радостью покажете им, на что способны...",
 						Util.newArrayListOfValues(
 								Fetish.FETISH_SUBMISSIVE),
 						null,
@@ -522,13 +522,13 @@ public class RatWarrensDialogue {
 				GameCharacter companion = getMainCompanion();
 				
 				if(!companion.isAttractedToGroup(getGuards(false)) && companion.isAbleToRefuseSexAsCompanion()) {
-					return new Response(UtilText.parse(companion, "Sex (both)"),
-							UtilText.parse(getGuards(true), "You can tell that [npc.name] isn't at all interested in having sex with [npc2.name] or [npc3.name], and you can't force [npc.herHim] into it..."),
+					return new Response(UtilText.parse(companion, "Секс (вдвоем)"),
+							UtilText.parse(getGuards(true), "Вы видите, что [npc.name] совсем не заинтересована в сексе с [npc2.name] или [npc3.name], и вы не можете заставить [npc.herHim] заняться этим..."),
 							null);
 					
 				} else {
-					return new ResponseSex(UtilText.parse(companion, "Sex (both)"),
-							UtilText.parse(getGuards(true), "Tell the gang members that both you and [npc.name] would be happy to show them what you're capable of."),
+					return new ResponseSex(UtilText.parse(companion, "Секс (вдвоем)"),
+							UtilText.parse(getGuards(true), "Скажите членам банды, что и вы, и [npc.name] будете рады показать им, на что вы способны."),
 							Util.newArrayListOfValues(
 									Fetish.FETISH_SUBMISSIVE),
 							null,
@@ -558,13 +558,13 @@ public class RatWarrensDialogue {
 				GameCharacter companion = getMainCompanion();
 
 				if(!companion.isAttractedToGroup(getGuards(false)) && companion.isAbleToRefuseSexAsCompanion()) {
-					return new Response(UtilText.parse(companion, "Offer [npc.name]"),
-							UtilText.parse(getGuards(true), "You can tell that [npc2.name] isn't at all interested in having sex with [npc.name], and you can't force [npc2.herHim] to do so..."),
+					return new Response(UtilText.parse(companion, "Предложить [npc.name]"),
+							UtilText.parse(getGuards(true), "Сразу видно, что [npc2.name] совсем не горит желанием трахаться с [npc.name], а заставить [npc2.herHim] ты всё равно не сможешь..."),
 							null);
 					
 				} else {
-					return new ResponseSex(UtilText.parse(companion, "Offer [npc.name]"),
-							UtilText.parse(getMainCompanion(), "Tell the gang members that you'd be happy to let [npc.name] show them what [npc.sheIs] capable of, but that you're going to save yourself for Vengar..."),
+					return new ResponseSex(UtilText.parse(companion, "Предложить [npc.name]"),
+							UtilText.parse(getMainCompanion(), "Скажите членам банды, что вы будете рады позволить [npc.name] показать им, на что способна [npc.sheIs], но вы собираетесь приберечь себя для Венгара..."),
 							Util.newArrayListOfValues(
 									Fetish.FETISH_VOYEURIST),
 							null,
@@ -592,7 +592,7 @@ public class RatWarrensDialogue {
 		}
 	};
 
-	public static final DialogueNode AFTER_ENTRANCE_SEX = new DialogueNode("Finished", "The gang members have finished...", false) {
+	public static final DialogueNode AFTER_ENTRANCE_SEX = new DialogueNode("Завершено", "Члены банды закончили...", false) {
 		@Override
 		public int getSecondsPassed() {
 			return 2*60;
@@ -628,8 +628,8 @@ public class RatWarrensDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new ResponseCombat("Fight",
-						"Defend yourself against the rats!",
+				return new ResponseCombat("Сразиться",
+						"Защищайтесь от крыс!",
 						(NPC)getGuardLeader(),
 						getGuards(false),
 						new HashMap<>());
@@ -638,7 +638,7 @@ public class RatWarrensDialogue {
 		}
 	};
 	
-	public static final DialogueNode GUARD_COMBAT_VICTORY = new DialogueNode("Victory", "", true) {
+	public static final DialogueNode GUARD_COMBAT_VICTORY = new DialogueNode("Победа", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
 //			if(Main.game.getPlayerCell().getPlace().getPlaceType()==PlaceType.RAT_WARRENS_CHECKPOINT_LEFT
@@ -667,10 +667,10 @@ public class RatWarrensDialogue {
 		public String getResponseTabTitle(int index) {
 			if(!getGuards(false).isEmpty()) {
 				if(index==0) {
-					return "Interactions";
+					return "Взаимодействие";
 					
 				} else if(index==1) {
-					return "Inventories";
+					return "Инвентарь";
 				}
 			}
  			return null;
@@ -680,7 +680,7 @@ public class RatWarrensDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(getGuards(false).isEmpty()) {
 				if (index == 1) {
-					return new Response("Continue", "As you've enslaved all of the gang members who dared to fight you, there's nothing left to do but continue on your way...", Main.game.getDefaultDialogue(false)) {
+					return new Response("Продолжить", "Поскольку вы поработили всех членов банды, которые осмелились сразиться с вами, остается только продолжать свой путь...", Main.game.getDefaultDialogue(false)) {
 						@Override
 						public void effects() {
 							Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/submission/ratWarrens/core", "GUARD_COMBAT_VICTORY_ALL_ENSLAVED"));
@@ -691,7 +691,7 @@ public class RatWarrensDialogue {
 			}
 			if(responseTab == 0) {
 				if (index == 1) {
-					return new Response("Scare off", "Tell the gang members to get out of here while they still can...", Main.game.getDefaultDialogue(false)) {
+					return new Response("Запугать", "Скажите членам банды, чтобы они убирались отсюда, пока еще не поздно...", Main.game.getDefaultDialogue(false)) {
 						@Override
 						public void effects() {
 							Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/submission/ratWarrens/core", "GUARD_COMBAT_VICTORY_SCARE_OFF", getGuards(false)));
@@ -702,11 +702,11 @@ public class RatWarrensDialogue {
 				} else if (index == 2) {
 					return new ResponseSex(
 							isCompanionDialogue()
-								?"Solo sex"
-								:"Sex",
+								?"Соло-секс"
+								:"Секс",
 							isCompanionDialogue()
-								?UtilText.parse(getMainCompanion(), "Tell [npc.name] to stand to one side and watch as you have sex with the gang members.")
-								:"Have sex with the gang members.",
+								?UtilText.parse(getMainCompanion(), "Скажите [npc.name] отойти в сторону и смотреть, как вы трахаетесь с членами банды.")
+								:"Затрахаться с членами банды.",
 							true,
 							false,
 							Util.newArrayListOfValues(Main.game.getPlayer()),
@@ -719,11 +719,11 @@ public class RatWarrensDialogue {
 				} else if (index == 3) {
 					return new ResponseSex(
 							isCompanionDialogue()
-								?"Solo sex (Gentle)"
-								:"Sex (Gentle)",
+								?"Соло-секс (Нежный)"
+								:"Секс (Нежный)",
 							isCompanionDialogue()
-								?UtilText.parse(getMainCompanion(), "Tell [npc.name] to stand to one side and watch as you have sex with the gang members.")
-								:"Have sex with the gang members.",
+								?UtilText.parse(getMainCompanion(), "Скажите [npc.name] отойти в сторону и смотреть, как вы трахаетесь с членами банды.")
+								:"Затрахаться с членами банды.",
 							true,
 							false,
 							Util.newArrayListOfValues(Main.game.getPlayer()),
@@ -737,11 +737,11 @@ public class RatWarrensDialogue {
 				} else if (index == 4) {
 					return new ResponseSex(
 							isCompanionDialogue()
-								?"Solo sex (Rough)"
-								:"Sex (Rough)",
+								?"Соло-секс (Грубый)"
+								:"Секс (Грубый)",
 							isCompanionDialogue()
-								?UtilText.parse(getMainCompanion(), "Tell [npc.name] to stand to one side and watch as you have sex with the gang members.")
-								:"Have sex with the gang members.",
+								?UtilText.parse(getMainCompanion(), "Скажите [npc.name] отойти в сторону и смотреть, как вы трахаетесь с членами банды.")
+								:"Затрахаться с членами банды.",
 							true,
 							false,
 							Util.newArrayListOfValues(Main.game.getPlayer()),
@@ -755,11 +755,11 @@ public class RatWarrensDialogue {
 				} else if (index == 5) {
 					return new ResponseSex(
 							isCompanionDialogue()
-								?"Solo submission"
-								:"Submit",
+								?"Соло-сабмиссив"
+								:"Подчиниться",
 							isCompanionDialogue()
-								?UtilText.parse(getMainCompanion(), "Tell [npc.name] to stand to one side and watch as you submit to the gang members, allowing them to have dominant sex with you.")
-								:"Tell the gang members that they can have their way with you...",
+								?UtilText.parse(getMainCompanion(), "Приказать [npc.name] отойти в сторону и наблюдать, как ты подчиняешься членам банды, позволяя им доминировать над тобой во время секса.")
+								:"Сказать членам банды, что они могут делать с тобой всё, что захотят...",
 							Util.newArrayListOfValues(Fetish.FETISH_SUBMISSIVE),
 							null,
 							Fetish.FETISH_SUBMISSIVE.getAssociatedCorruptionLevel(),
@@ -779,12 +779,12 @@ public class RatWarrensDialogue {
 					GameCharacter companion = getMainCompanion();
 
 					if(!companion.isAttractedToGroup(getGuards(false)) && companion.isAbleToRefuseSexAsCompanion()) {
-						return new Response("Group sex",
-								UtilText.parse(companion, "[npc.Name] is not interested in having sex with one or more of the gang members, and as [npc.sheIs] not a slave, you can't force [npc.herHim] to do so..."), null);
+						return new Response("Групповой секс",
+								UtilText.parse(companion, "[npc.Name] не заинтересована в сексе с одним или несколькими членами банды, и так как [npc.sheIs] не рабыня, ты не можешь заставить [npc.herHim]..."), null);
 						
 					} else {
-						return new ResponseSex(UtilText.parse(companion, "Group sex"),
-								UtilText.parse(companion, "Have dominant sex with the gang members, and get [npc.name] to join in with the fun."),
+						return new ResponseSex(UtilText.parse(companion, "Групповой секс"),
+								UtilText.parse(companion, "Заниматься сексом с членами банды, позволяя им доминировать, и уговорить [npc.name] присоединиться к веселью."),
 								true,
 								false,
 								Main.game.getPlayer().getParty(),
@@ -799,12 +799,12 @@ public class RatWarrensDialogue {
 					GameCharacter companion = getMainCompanion();
 
 					if(!companion.isAttractedToGroup(getGuards(false)) && companion.isAbleToRefuseSexAsCompanion()) {
-						return new Response("Group submission",
-								UtilText.parse(companion, "[npc.Name] is not interested in having sex with one or more of the gang members, and as [npc.sheIs] not a slave, you can't force [npc.herHim] to do so..."), null);
+						return new Response("Групповое подчинение",
+								UtilText.parse(companion, "[npc.Name] не заинтересована в сексе с одним или несколькими членами банды, и так как [npc.sheIs] не рабыня, ты не можешь заставить [npc.herHim]..."), null);
 						
 					} else {
-						return new ResponseSex(UtilText.parse(companion, "Group submission"),
-								UtilText.parse(companion, "Get [npc.name] to join you in submitting to the gang members, allowing them to have dominant sex with the two of you."),
+						return new ResponseSex(UtilText.parse(companion, "Групповое подчинение"),
+								UtilText.parse(companion, "Уговорить [npc.name] вместе с тобой подчиниться членам банды, позволяя им доминировать над вами обеими во время секса."),
 								true,
 								false,
 								getGuards(false),
@@ -819,12 +819,12 @@ public class RatWarrensDialogue {
 					GameCharacter companion = getMainCompanion();
 
 					if(!companion.isAttractedToGroup(getGuards(false)) && companion.isAbleToRefuseSexAsCompanion()) {
-						return new Response(UtilText.parse(companion, "Give to [npc.name]"),
-								UtilText.parse(companion, "[npc.Name] is not interested in having sex with one or more of the gang members, and as [npc.sheIs] not a slave, you can't force [npc.herHim] to do so..."), null);
+						return new Response(UtilText.parse(companion, "Отдать [npc.name]"),
+								UtilText.parse(companion, "[npc.Name] не заинтересована в сексе с одним или несколькими членами банды, и так как [npc.sheIs] не рабыня, ты не можешь заставить [npc.herHim]..."), null);
 						
 					} else {
-						return new ResponseSex(UtilText.parse(companion, "Give to [npc.name]"),
-								UtilText.parse(companion, "Tell [npc.name] that [npc.she] can have some fun with the gang members while you watch."),
+						return new ResponseSex(UtilText.parse(companion, "Отдать [npc.name]"),
+								UtilText.parse(companion, "Сказать [npc.name], что [npc.she] может немного развлечься с членами банды, пока ты наблюдаешь."),
 								false,
 								false,
 								Util.newArrayListOfValues(getMainCompanion()),
@@ -839,13 +839,13 @@ public class RatWarrensDialogue {
 					GameCharacter companion = getMainCompanion();
 					
 					if(!companion.isAttractedToGroup(getGuards(false)) && ((companion.isAbleToRefuseSexAsCompanion()) || !Main.game.isNonConEnabled())) {
-						return new Response(UtilText.parse(companion, "Offer [npc.name]"),
-								UtilText.parse(companion, "You can tell that [npc.name] isn't at all interested in having sex with the gang members, and you can't force [npc.herHim] to do so..."),
+						return new Response(UtilText.parse(companion, "Предложить [npc.name]"),
+								UtilText.parse(companion, "Ты видишь, что [npc.name] совсем не хочет заниматься сексом с членами банды, и ты не можешь заставить [npc.herHim]..."),
 								null);
 						
 					} else {
-						return new ResponseSex(UtilText.parse(companion, "Offer [npc.name]"),
-								UtilText.parse(companion, "Hand [npc.name] over to the gang members, and watch as they have sex with [npc.herHim]."),
+						return new ResponseSex(UtilText.parse(companion, "Предложить [npc.name]"),
+								UtilText.parse(companion, "Отдай [npc.name] членам банды и наблюдай, как они трахают [npc.herHim]."),
 								true,
 								false,
 								getGuards(false),
@@ -872,7 +872,7 @@ public class RatWarrensDialogue {
 					if(index==i) {
 						NPC guard = (NPC) getGuards(false).get(i-1);
 						return new ResponseEffectsOnly(UtilText.parse(guard, "[npc.Name]"),
-								UtilText.parse(guard, "Now that you've defeated [npc.name], there's nothing stopping you from helping yourself to [npc.her] clothing and items...")) {
+								UtilText.parse(guard, "Теперь, когда ты одолел(а) [npc.name], ничто не мешает тебе полакомиться одеждой и вещами [npc.her]...")) {
 							@Override
 							public void effects() {
 								Main.mainController.openInventory(guard, InventoryInteraction.FULL_MANAGEMENT);
@@ -886,7 +886,7 @@ public class RatWarrensDialogue {
 		}
 	};
 	
-	public static final DialogueNode GUARD_COMBAT_VICTORY_AFTER_SEX = new DialogueNode("Step back", "Now that you've had your fun, you step back and wonder what to do with the gang members...", true) {
+	public static final DialogueNode GUARD_COMBAT_VICTORY_AFTER_SEX = new DialogueNode("Отступить", "Теперь, когда ты вдоволь нагулялся, ты отступаешь назад и раздумываешь, что делать с членами банды...", true) {
 
 		@Override
 		public String getContent() {
@@ -912,7 +912,7 @@ public class RatWarrensDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(getGuards(false).isEmpty()) {
 				if (index == 1) {
-					return new Response("Continue", "As you've enslaved all of the gang members who dared to fight you, there's nothing left to do but continue on your way...", Main.game.getDefaultDialogue(false)) {
+					return new Response("Продолжить", "Поскольку вы поработили всех членов банды, которые осмелились сразиться с вами, остается только продолжать свой путь...", Main.game.getDefaultDialogue(false)) {
 						@Override
 						public void effects() {
 							Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/submission/ratWarrens/core", "GUARD_COMBAT_VICTORY_ALL_ENSLAVED"));
@@ -923,7 +923,7 @@ public class RatWarrensDialogue {
 			}
 			if(responseTab==0) {
 				if (index == 1) {
-					return new Response("Scare off", "Scare the gang members off and continue on your way.", Main.game.getDefaultDialogue(false)) {
+					return new Response("Запугать", "Напугать членов банды и продолжить свой путь.", Main.game.getDefaultDialogue(false)) {
 						@Override
 						public void effects() {
 							banishGuards(true);
@@ -940,7 +940,7 @@ public class RatWarrensDialogue {
 		}
 	};
 	
-	public static final DialogueNode GUARD_COMBAT_DEFEAT = new DialogueNode("Defeat", "", true) {
+	public static final DialogueNode GUARD_COMBAT_DEFEAT = new DialogueNode("Поражение", "", true) {
 		@Override
 		public String getContent() {
 			if(!Main.game.isNonConEnabled()) {
@@ -952,7 +952,7 @@ public class RatWarrensDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(!Main.game.isNonConEnabled()) {
 				if(index==1) {
-					return new Response("Thrown out", "The gang members unceremoniously throw you back out into Submission's tunnels.", PlaceType.SUBMISSION_RAT_WARREN.getDialogue(false)) {
+					return new Response("Тебя вышвыривают", "Члены банды бесцеремонно выбрасывают тебя обратно в туннели Submission.", PlaceType.SUBMISSION_RAT_WARREN.getDialogue(false)) {
 						@Override
 						public int getSecondsPassed() {
 							return 30*60;
@@ -974,9 +974,8 @@ public class RatWarrensDialogue {
 			} else {
 				if(index == 1) {
 					if(isCompanionDialogue()) {
-						return new Response("Save [com.name]",
-								"Use the last of your energy to hold off the rats long enough for [com.name] to escape."
-										+ "<br/>[style.italicsMinorGood([com.Name] will safely return home.)]",
+						return new Response("Сохранить [com.name]",
+								"Использовать остатки своей энергии, чтобы сдерживать крыс достаточно долго, чтобы [com.name] успела сбежать.<br/>[style.italicsMinorGood([com.Name] благополучно вернется домой.)]",
 								GUARD_COMBAT_DEFEAT_STOCKS) {
 							@Override
 							public void effects() {
@@ -1002,8 +1001,8 @@ public class RatWarrensDialogue {
 						};
 						
 					} else {
-						return new Response("Dragged away",
-								UtilText.parse(getGuards(false), "You are powerless to resist as the gang members drag you off deeper into their lair..."),
+						return new Response("Утащенная прочь",
+								UtilText.parse(getGuards(false), "Ты бессильна сопротивляться, когда члены банды утаскивают тебя всё глубже в их логово..."),
 								GUARD_COMBAT_DEFEAT_STOCKS) {
 							@Override
 							public void effects() {
@@ -1136,8 +1135,8 @@ public class RatWarrensDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Stripped",
-						UtilText.parse(getGuards(false), "Murk and [npc.name] set about stripping you naked..."),
+				return new Response("Раздета",
+						UtilText.parse(getGuards(false), "Мерк и [npc.name] принимаются раздевать тебя догола..."),
 						GUARD_COMBAT_DEFEAT_STOCKS_STRIPPED) {
 					@Override
 					public void effects() {
@@ -1161,8 +1160,8 @@ public class RatWarrensDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("New home",
-						UtilText.parse(getGuards(false), "Murk and [npc.name] lead you into the adjoining room to introduce you to your 'new home'..."),
+				return new Response("Новый дом",
+						UtilText.parse(getGuards(false), "Мерк и [npc.name] ведут тебя в соседнюю комнату, чтобы познакомить с твоим «новым домом»..."),
 						GUARD_COMBAT_DEFEAT_STOCKS_STRIPPED_END) {
 					@Override
 					public void effects() {
@@ -1220,8 +1219,8 @@ public class RatWarrensDialogue {
 			List<GameCharacter> guards = getGuards(false);
 			
 			if (index == 1) {
-				return new ResponseSex("Oral",
-						UtilText.parse(getGuards(false), "Do what's expected of you and obediently perform oral on [npc.name]."),
+				return new ResponseSex("Оральный",
+						UtilText.parse(getGuards(false), "Сделай то, чего от тебя ждут, и послушно отсоси [npc.name]."),
 						false,
 						false,
 						getStocksManager(guards, null),
@@ -1240,8 +1239,8 @@ public class RatWarrensDialogue {
 				};
 				
 			} else if (index == 2) {
-				return new ResponseSex("Eager oral",
-						UtilText.parse(getGuards(false), "Make a show of how willing you are to obediently perform oral on [npc.name]."),
+				return new ResponseSex("С готовностью к оралу",
+						UtilText.parse(getGuards(false), "Покажи всем, как сильно ты жаждешь послушно отсосать [npc.name]."),
 						false,
 						false,
 						getStocksManager(guards, SexPace.SUB_EAGER),
@@ -1260,8 +1259,8 @@ public class RatWarrensDialogue {
 				};
 				
 			} else if (index == 3) {
-				return new ResponseSex("Resist oral",
-						UtilText.parse(getGuards(false), "Do your best to resist performing oral on [npc.name]."),
+				return new ResponseSex("Сопротивляться оралу",
+						UtilText.parse(getGuards(false), "Сделай всё возможное, чтобы сопротивляться оральному сексу с [npc.name]."),
 						false,
 						false,
 						getStocksManager(guards, SexPace.SUB_RESISTING),
@@ -1284,14 +1283,14 @@ public class RatWarrensDialogue {
 		}
 	};
 
-	public static final DialogueNode GUARD_COMBAT_DEFEAT_STOCKS_AFTER_SEX = new DialogueNode("Finished", "", true) {
+	public static final DialogueNode GUARD_COMBAT_DEFEAT_STOCKS_AFTER_SEX = new DialogueNode("Завершено", "", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 15*60;
 		}
 		@Override
 		public String getDescription(){
-			return UtilText.parse(getGuards(false).get(0), "[npc.Name] has finished having [npc.her] way with you...");
+			return UtilText.parse(getGuards(false).get(0), "[npc.Name] закончил возиться с тобой [npc.her]...");
 		}
 		@Override
 		public String getContent() {
@@ -1300,7 +1299,7 @@ public class RatWarrensDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Murk", "Murk reappears to tell you what's in store for you next...", RatWarrensCaptiveDialogue.CAPTIVE_DAY_0) {
+				return new Response("Мерк", "Мерк снова появляется, чтобы рассказать, что ждет тебя дальше...", RatWarrensCaptiveDialogue.CAPTIVE_DAY_0) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/submission/ratWarrens/captive", "CAPTIVE_DAY_0", getGuards(false)));
@@ -1314,7 +1313,7 @@ public class RatWarrensDialogue {
 		}
 	};
 	
-	public static final DialogueNode ENTRANCE_NO_CONTENT = new DialogueNode("Entrance", "", false) {
+	public static final DialogueNode ENTRANCE_NO_CONTENT = new DialogueNode("Вход", "", false) {
 		@Override
 		public int getSecondsPassed() {
 			return 1*60;
@@ -1329,7 +1328,7 @@ public class RatWarrensDialogue {
 		}
 	};
 	
-	public static final DialogueNode ENTRANCE = new DialogueNode("Entrance", "", false) {
+	public static final DialogueNode ENTRANCE = new DialogueNode("Вход", "", false) {
 		@Override
 		public int getSecondsPassed() {
 			return 1*60;
@@ -1342,9 +1341,9 @@ public class RatWarrensDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.ratWarrensHostile)) {
-					return new Response("Leave", "The rats have sealed the doors, preventing your escape! You'll have to confront Vengar in order to get out of here now...", null);
+					return new Response("Уйти", "Крысы запечатали двери, преграждая путь к отступлению! Чтобы выбраться отсюда, тебе придется бросить вызов Венгару...", null);
 				}
-				return new Response("Leave", "Tell the gang members that you're leaving, and head back out into Submission's tunnels.", SubmissionGenericPlaces.RAT_WARREN) {
+				return new Response("Уйти", "Скажи членам банды, что уходишь, и направляйся обратно в туннели Submission.", SubmissionGenericPlaces.RAT_WARREN) {
 					@Override
 					public void effects() {
 						exit();
@@ -1363,7 +1362,7 @@ public class RatWarrensDialogue {
 			} else if(index==6
 					&& !Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.ratWarrensClearedCentre)
 					&& !Main.game.getPlayer().hasQuestInLine(QuestLine.SIDE_VENGAR, Quest.VENGAR_TWO_COOPERATION)) {
-				return new Response("Challenge", "Tell the gang members that you're here to fight.<br/>[style.italicsBad(This will undoubtedly result in a significant amount of gang members arriving as backup!)]", ENTRANCE_FIGHT) {
+				return new Response("Бросить вызов", "Сказать банде, что вы пришли драться.<br/>[style.italicsBad(Это несомненно приведет к тому, что на подмогу явится целая толпа бандитов!)]", ENTRANCE_FIGHT) {
 					@Override
 					public void effects() {
 						spawnGuards(false, 1);
@@ -1380,7 +1379,7 @@ public class RatWarrensDialogue {
 		}
 	};
 	
-	public static final DialogueNode CORRIDOR = new DialogueNode("Twisting Passageway", "", false) {
+	public static final DialogueNode CORRIDOR = new DialogueNode("Извилистый проход", "", false) {
 		@Override
 		public void applyPreParsingEffects() {
 			if(Main.game.getPlayerCell().getPlace().getPlaceType()==PlaceType.RAT_WARRENS_CHECKPOINT_LEFT
@@ -1458,8 +1457,8 @@ public class RatWarrensDialogue {
 				|| (Main.game.getPlayerCell().getPlace().getPlaceType()==PlaceType.RAT_WARRENS_CHECKPOINT_RIGHT
 					&& Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.ratWarrensClearedRight)!=Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.ratWarrensClearedCentre))) {
 				if(index==1) {
-					return new ResponseCombat("Fight",
-							"The gang members aren't going to let you go without a fight, so you're forced to defend yourself!",
+					return new ResponseCombat("Сразиться",
+							"Члены банды не собираются отпускать тебя без боя, так что тебе приходится защищаться!",
 							(NPC)getGuardLeader(),
 							getGuards(false),
 							new HashMap<>());
@@ -1469,7 +1468,7 @@ public class RatWarrensDialogue {
 		}
 	};
 
-	public static final DialogueNode DORMITORY = new DialogueNode("Dormitory", "", false) {
+	public static final DialogueNode DORMITORY = new DialogueNode("Спальня", "", false) {
 		@Override
 		public int getSecondsPassed() {
 			return 2*60;
@@ -1495,7 +1494,7 @@ public class RatWarrensDialogue {
 					&& !Main.game.getPlayer().hasQuestInLine(QuestLine.SIDE_VENGAR, Quest.VENGAR_TWO_COOPERATION)
 					&& ((Main.game.getPlayerCell().getPlace().getPlaceType()==PlaceType.RAT_WARRENS_DORMITORY_LEFT && !Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.ratWarrensClearedLeft))
 							|| (Main.game.getPlayerCell().getPlace().getPlaceType()==PlaceType.RAT_WARRENS_DORMITORY_RIGHT && !Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.ratWarrensClearedRight)))) {
-				return new Response("Challenge", "Tell the gang members that you're here to fight.<br/>[style.italicsBad(This will undoubtedly result in a significant amount of gang members arriving as backup!)]", ENTRANCE_FIGHT) {
+				return new Response("Бросить вызов", "Сказать банде, что вы пришли драться.<br/>[style.italicsBad(Это несомненно приведет к тому, что на подмогу явится целая толпа бандитов!)]", ENTRANCE_FIGHT) {
 					@Override
 					public void effects() {
 						spawnGuards(true, 4);
@@ -1512,7 +1511,7 @@ public class RatWarrensDialogue {
 		}
 	};
 
-	public static final DialogueNode DICE_DEN = new DialogueNode("Dice Den", "", false) {
+	public static final DialogueNode DICE_DEN = new DialogueNode("Логово Костей", "", false) {
 		@Override
 		public int getSecondsPassed() {
 			return 1*60;
@@ -1529,10 +1528,10 @@ public class RatWarrensDialogue {
 			if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.ratWarrensHostile)) {
 				if(index==1) {
 					if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.ratWarrensLootedDiceDen)) {
-						return new Response("Loot bar", "You've already taken everything of value from behind the bar...", null);
+						return new Response("Обыскать бар", "Вы уже забрали всё ценное из-за барной стойки...", null);
 						
 					} else {
-						return new Response("Loot bar", "Take a look behind the bar and see if there's anything worth taking...", DICE_DEN_LOOT) {
+						return new Response("Обыскать бар", "Загляните за барную стойку и посмотрите, нет ли там чего-нибудь стоящего...", DICE_DEN_LOOT) {
 							@Override
 							public void effects() {
 								Main.game.getDialogueFlags().setFlag(DialogueFlagValue.ratWarrensLootedDiceDen, true);
@@ -1551,9 +1550,9 @@ public class RatWarrensDialogue {
 				
 				if(index==1) {
 					if(Main.game.getPlayer().getMoney()>=buyIn) {
-						return new ResponseEffectsOnly("[style.colourMasculine(Rat-boy)] ("+UtilText.formatAsMoney(buyIn, "span")+")",
-								"Start playing dice poker with one of the rat-boys. The buy-in amount is "+UtilText.formatAsMoney(table.getInitialBet(), "span")
-									+", but you'll also need "+UtilText.formatAsMoney(table.getRaiseAmount(), "span")+" for any raises.") {
+						return new ResponseEffectsOnly("[style.colourMasculine(Крысопацан)] ("+UtilText.formatAsMoney(buyIn, "охват")+")",
+								"Начать играть в костяной покер с одним из крысопацанов. Взнос составляет "+UtilText.formatAsMoney(table.getInitialBet(), "охват")
+									+", но вам также понадобятся "+UtilText.formatAsMoney(table.getRaiseAmount(), "охват")+" для любых повышений ставок.") {
 							@Override
 							public void effects() {
 								gambler = generateGambler(Femininity.MASCULINE);
@@ -1563,17 +1562,17 @@ public class RatWarrensDialogue {
 						};
 						
 					} else {
-						return new Response("Rat-boy ("+UtilText.formatAsMoneyUncoloured(buyIn, "span")+")",
-								"The buy-in amount is "+UtilText.formatAsMoney(table.getInitialBet(), "span")
-								+", but you'll also need "+UtilText.formatAsMoney(table.getRaiseAmount(), "span")+" for any raises. As a result, you don't have enough money to play with the rat-boy!",
+						return new Response("Крысопацан ("+UtilText.formatAsMoneyUncoloured(buyIn, "охват")+")",
+								"Взнос составляет "+UtilText.formatAsMoney(table.getInitialBet(), "охват")
+								+", но вам также понадобятся "+UtilText.formatAsMoney(table.getRaiseAmount(), "охват")+" для любых повышений. В итоге у вас недостаточно денег, чтобы играть с крысопацаном!",
 								null);
 					}
 					
 				} else if(index==2) {
 					if(Main.game.getPlayer().getMoney()>=buyIn) {
-						return new ResponseEffectsOnly("[style.colourFeminine(Rat-girl)] ("+UtilText.formatAsMoney(buyIn, "span")+")",
-								"Start playing dice poker with one of the rat-girls. The buy-in amount is "+UtilText.formatAsMoney(table.getInitialBet(), "span")
-									+", but you'll also need "+UtilText.formatAsMoney(table.getRaiseAmount(), "span")+" for any raises.") {
+						return new ResponseEffectsOnly("[style.colourFeminine(Крысодевка)] ("+UtilText.formatAsMoney(buyIn, "охват")+")",
+								"Начать играть в костяной покер с одной из крысодевок. Взнос составляет "+UtilText.formatAsMoney(table.getInitialBet(), "охват")
+									+", но вам также понадобятся "+UtilText.formatAsMoney(table.getRaiseAmount(), "охват")+" для любых повышений ставок.") {
 							@Override
 							public void effects() {
 								gambler = generateGambler(Femininity.FEMININE);
@@ -1582,24 +1581,24 @@ public class RatWarrensDialogue {
 						};
 						
 					} else {
-						return new Response("Rat-girl ("+UtilText.formatAsMoneyUncoloured(buyIn, "span")+")",
-								"The buy-in amount is "+UtilText.formatAsMoney(table.getInitialBet(), "span")
-								+", but you'll also need "+UtilText.formatAsMoney(table.getRaiseAmount(), "span")+" for any raises. As a result, you don't have enough money to play with the rat-girl!",
+						return new Response("Крысодевка ("+UtilText.formatAsMoneyUncoloured(buyIn, "охват")+")",
+								"Взнос составляет "+UtilText.formatAsMoney(table.getInitialBet(), "охват")
+								+", но вам также понадобятся "+UtilText.formatAsMoney(table.getRaiseAmount(), "охват")+" для любых повышений. В итоге у вас недостаточно денег, чтобы играть с крысодевкой!",
 								null);
 					}
 					
 				} else if(index==3) {
-					return new Response("Rules", UtilText.parse(getGuards(false).get(0), "Ask [npc.name] what the rules of dice poker are."), DICE_DEN_RULES);
+					return new Response("Правила", UtilText.parse(getGuards(false).get(0), "Спросить у [npc.name], каковы правила костяного покера."), DICE_DEN_RULES);
 
 				} else if(index==4) {
 					int price = getRumPrice();
 					if(!Main.game.getPlayer().isCoverableAreaExposed(CoverableArea.MOUTH)) {
-						return new Response("Rum ("+UtilText.formatAsMoneyUncoloured(price, "span")+")", "You can't drink a glass of rum, as your mouth is blocked...", null);
+						return new Response("Ром ("+UtilText.formatAsMoneyUncoloured(price, "охват")+")", "Ты не можешь выпить стакан рома, так как твой рот забит...", null);
 					}
 					if(Main.game.getPlayer().getMoney()<price) {
-						return new Response("Rum ("+UtilText.formatAsMoneyUncoloured(price, "span")+")", "You can't afford to buy a glass of rum from the rat behind the bar...", null);
+						return new Response("Ром ("+UtilText.formatAsMoneyUncoloured(price, "охват")+")", "Тебе не хватает средств, чтобы купить стакан рома у крысы за барной стойкой...", null);
 					}
-					return new Response("Rum ("+UtilText.formatAsMoney(price, "span")+")", "Buy a glass of rum from the rat behind the bar.", DICE_DEN_RUM) {
+					return new Response("Ром ("+UtilText.formatAsMoney(price, "охват")+")", "Купить стакан рома у крысы за барной стойкой.", DICE_DEN_RUM) {
 						@Override
 						public void effects() {
 							Main.game.getTextEndStringBuilder().append(UtilText.parseFromXMLFile("places/submission/ratWarrens/core", "DICE_DEN_RUM_DRINK", getGuards(true)));
@@ -1613,17 +1612,17 @@ public class RatWarrensDialogue {
 				} else if(index==5 && isCompanionDialogue()) {
 					int price = getRumPrice();
 					if(!getMainCompanion().isCoverableAreaExposed(CoverableArea.MOUTH)) {
-						return new Response("Rum ("+UtilText.parse(getMainCompanion(), "[npc.name]")+") ("+UtilText.formatAsMoneyUncoloured(price, "span")+")",
-								UtilText.parse(getMainCompanion(), "[npc.Name] can't drink a glass of rum, as [npc.her] mouth is blocked..."),
+						return new Response("Ром ("+UtilText.parse(getMainCompanion(), "[npc.name]")+") ("+UtilText.formatAsMoneyUncoloured(price, "охват")+")",
+								UtilText.parse(getMainCompanion(), "[npc.Name] не может выпить стакан рома, так как рот [npc.her] забит..."),
 								null);
 					}
 					if(Main.game.getPlayer().getMoney()<price) {
-						return new Response("Rum ("+UtilText.parse(getMainCompanion(), "[npc.name]")+") ("+UtilText.formatAsMoneyUncoloured(price, "span")+")",
-								UtilText.parse(getMainCompanion(), "You can't afford to buy a glass of rum for [npc.name] from the rat behind the bar..."),
+						return new Response("Ром ("+UtilText.parse(getMainCompanion(), "[npc.name]")+") ("+UtilText.formatAsMoneyUncoloured(price, "охват")+")",
+								UtilText.parse(getMainCompanion(), "Тебе не хватает средств, чтобы купить стакан рома для [npc.name] у крысы за барной стойкой..."),
 								null);
 					}
-					return new Response("Rum ("+UtilText.parse(getMainCompanion(), "[npc.name]")+") ("+UtilText.formatAsMoney(price, "span")+")",
-							UtilText.parse(getMainCompanion(), "Buy a glass of rum for [npc.name] from the rat behind the bar."),
+					return new Response("Ром ("+UtilText.parse(getMainCompanion(), "[npc.name]")+") ("+UtilText.formatAsMoney(price, "охват")+")",
+							UtilText.parse(getMainCompanion(), "Купить стакан рома для [npc.name] у крысы за барной стойкой."),
 							DICE_DEN_RUM) {
 						@Override
 						public void effects() {
@@ -1637,7 +1636,7 @@ public class RatWarrensDialogue {
 					
 				} else if(index==6
 						&& !Main.game.getPlayer().hasQuestInLine(QuestLine.SIDE_VENGAR, Quest.VENGAR_TWO_COOPERATION)) {
-					return new Response("Challenge", "Tell the gang members that you're here to fight.<br/>[style.italicsBad(This will undoubtedly result in a significant amount of gang members arriving as backup!)]", ENTRANCE_FIGHT) {
+					return new Response("Бросить вызов", "Сказать банде, что вы пришли драться.<br/>[style.italicsBad(Это несомненно приведет к тому, что на подмогу явится целая толпа бандитов!)]", ENTRANCE_FIGHT) {
 						@Override
 						public void effects() {
 							spawnGuards(false, 1); // Set to 1 as the bar-tender makes the 2nd, and the entrance guards make 3rd and 4th
@@ -1659,7 +1658,7 @@ public class RatWarrensDialogue {
 		}
 	};
 	
-	public static final DialogueNode DICE_DEN_LOOT = new DialogueNode("Dice Den", "", false) {
+	public static final DialogueNode DICE_DEN_LOOT = new DialogueNode("Логово Костей", "", false) {
 		@Override
 		public String getContent() {
 			return UtilText.parseFromXMLFile("places/submission/ratWarrens/core", "DICE_DEN_LOOT", getGuards(true));
@@ -1671,7 +1670,7 @@ public class RatWarrensDialogue {
 		}
 	};
 	
-	public static final DialogueNode DICE_DEN_RULES = new DialogueNode("Dice Den", "", false) {
+	public static final DialogueNode DICE_DEN_RULES = new DialogueNode("Логово Костей", "", false) {
 		
 		@Override
 		public String getContent() {
@@ -1681,13 +1680,13 @@ public class RatWarrensDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==3) {
-				return new Response("Rules", UtilText.parse(getGuards(false).get(0), "You are already asking [npc.name] what the rules of dice poker are."), DICE_DEN_RULES);
+				return new Response("Правила", UtilText.parse(getGuards(false).get(0), "Ты уже спрашиваешь [npc.name] о правилах костяного покера."), DICE_DEN_RULES);
 			}
 			return DICE_DEN.getResponse(responseTab, index);
 		}
 	};
 	
-	public static final DialogueNode DICE_DEN_POST_GAMBLING = new DialogueNode("Dice Den", "", false) {
+	public static final DialogueNode DICE_DEN_POST_GAMBLING = new DialogueNode("Логово Костей", "", false) {
 		@Override
 		public void applyPreParsingEffects() {
 			Main.game.banishNPC(gambler);
@@ -1708,7 +1707,7 @@ public class RatWarrensDialogue {
 		}
 	};
 
-	public static final DialogueNode DICE_DEN_RUM = new DialogueNode("Dice Den", "", true) {
+	public static final DialogueNode DICE_DEN_RUM = new DialogueNode("Логово Костей", "", true) {
 		@Override
 		public String getContent() {
 			return "";
@@ -1718,15 +1717,15 @@ public class RatWarrensDialogue {
 		public Response getResponse(int responseTab, int index) {
 			NPC bartender = (NPC) getGuards(false).get(0);
 			if(index==1) {
-				return new Response("Refuse", UtilText.parse(bartender, "Refuse [npc.namePos] offer..."), DICE_DEN);
+				return new Response("Отказаться", UtilText.parse(bartender, "Отклонить предложение [npc.namePos]..."), DICE_DEN);
 				
 			} else if(index==2) {
 				if(!Main.game.getPlayer().isAbleToAccessCoverableArea(CoverableArea.MOUTH, true)) {
-					return new Response("Accept", UtilText.parse(bartender, "As you cannot access your mouth, you cannot perform oral on [npc.name] in order to get your flames back..."), null);
+					return new Response("Принять", UtilText.parse(bartender, "Поскольку ты не можешь пользоваться ртом, ты не можешь заняться оральным сексом с [npc.name], чтобы вернуть свои огни..."), null);
 				}
 				return new ResponseSex(
-						"Accept",
-						UtilText.parse(bartender, "Get paid "+getRumPrice()+" flames to perform oral on [npc.name]..."),
+						"Принять",
+						UtilText.parse(bartender, "Получить оплату "+getRumPrice()+" огнями за минет [npc.name]..."),
 						true,
 						false,
 						new SMStanding(
@@ -1809,16 +1808,16 @@ public class RatWarrensDialogue {
 				GameCharacter companion = getMainCompanion();
 
 				if(!companion.isAbleToAccessCoverableArea(CoverableArea.MOUTH, true)) {
-					return new Response("Offer [com.name]", UtilText.parse(companion, bartender, "As [npc.name] cannot access [npc.her] mouth, [npc.she] cannot perform oral on [npc2.name] in order to get your flames back..."), null);
+					return new Response("Предложить [com.name]", UtilText.parse(companion, bartender, "Так как [npc.name] не может добраться до рта [npc.her], [npc.she] не может сделать минет [npc2.name], чтобы вернуть твои огни..."), null);
 				}
 				if(!companion.isAttractedToGroup(getGuards(false)) && companion.isAbleToRefuseSexAsCompanion()) {
-					return new Response(UtilText.parse(companion, "Offer [npc.name]"),
-							UtilText.parse(companion, bartender, "You can tell that [npc.name] isn't at all interested in performing oral on [npc2.name], and you can't force [npc.herHim] to do so..."),
+					return new Response(UtilText.parse(companion, "Предложить [npc.name]"),
+							UtilText.parse(companion, bartender, "Сразу видно, что [npc.name] совсем не горит желанием делать минет [npc2.name], а заставить [npc.herHim] ты тоже не можешь..."),
 							null);
 					
 				} else {
-					return new ResponseSex(UtilText.parse(companion, "Offer [npc.name]"),
-									UtilText.parse(companion, bartender, "Get paid "+getRumPrice()+" flames to have [npc.name] perform oral on [npc2.name]..."),
+					return new ResponseSex(UtilText.parse(companion, "Предложить [npc.name]"),
+									UtilText.parse(companion, bartender, "Получить оплату "+getRumPrice()+" огнями за то, чтобы [npc.name] сделала минет [npc2.name]..."),
 									true,
 									false,
 									new SMStanding(
@@ -1902,14 +1901,14 @@ public class RatWarrensDialogue {
 		}
 	};
 
-	public static final DialogueNode AFTER_DICE_DEN_ORAL = new DialogueNode("Finished", "", false) {
+	public static final DialogueNode AFTER_DICE_DEN_ORAL = new DialogueNode("Завершено", "", false) {
 		@Override
 		public void applyPreParsingEffects() {
 			Main.game.getTextEndStringBuilder().append(Main.game.getPlayer().incrementMoney(getRumPrice()));
 		}
 		@Override
 		public String getDescription() {
-			return UtilText.parse((NPC) getGuards(false).get(0), "[npc.Name] has finished...");
+			return UtilText.parse((NPC) getGuards(false).get(0), "[npc.Name] закончила...");
 		}
 		@Override
 		public String getContent() {
@@ -1925,7 +1924,7 @@ public class RatWarrensDialogue {
 		}
 	};
 	
-	public static final DialogueNode MILKING_STORAGE = new DialogueNode("Entrance", "", true) {
+	public static final DialogueNode MILKING_STORAGE = new DialogueNode("Вход", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			if(!Main.game.getPlayer().isQuestCompleted(QuestLine.SIDE_VENGAR)
@@ -1965,7 +1964,7 @@ public class RatWarrensDialogue {
 			}
 			if(Main.game.getPlayer().isCaptive()) {
 				if(index==1) {
-					return new Response("Step back", "You can't get very far with the chain restricting your movements...", RatWarrensCaptiveDialogue.CAPTIVE_NIGHT) {
+					return new Response("Отступить", "Цепь, сковывающая твои движения, не дает тебе зайти слишком далеко...", RatWarrensCaptiveDialogue.CAPTIVE_NIGHT) {
 						@Override
 						public int getSecondsPassed() {
 							return 0; // So that the player can't advance days by repeatedly moving back and forth.
@@ -1981,7 +1980,7 @@ public class RatWarrensDialogue {
 				
 			} else if(!Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.ratWarrensClearedLeft)) {
 				if(index==1) {
-					return new Response("Step back", "Do as Murk says and leave.", CORRIDOR) {
+					return new Response("Отступить", "Сделай как говорит Мёрк, и уходи.", CORRIDOR) {
 						@Override
 						public void effects() {
 							Main.game.getDialogueFlags().setFlag(DialogueFlagValue.murkIntroduced, true);
@@ -1991,11 +1990,11 @@ public class RatWarrensDialogue {
 					
 				} else if(index==2) {
 					if(Main.game.getHourOfDay()<14 || Main.game.getHourOfDay()>=22) {
-						return new Response("Milkers ("+UtilText.formatAsMoneyUncoloured(500, "span")+")",
-								"Murk only rents out his milkers between [style.time(14)] and [style.time(22)], so if you wanted to pay them a visit, you'll have to come back between those times.",
+						return new Response("Доярки ("+UtilText.formatAsMoneyUncoloured(500, "охват")+")",
+								"Мерк сдает свои молочные железы в аренду только между [style.time(14)] и [style.time(22)], так что если вы хотите нанести им визит, вам придется вернуться в это время.",
 								null);
 					}
-					return new Response("Milkers ("+UtilText.formatAsMoney(500, "span")+")", "Pay Murk 500 flames to gain access to his 'milkers'.", MILKING_ROOM) {
+					return new Response("Доярки ("+UtilText.formatAsMoney(500, "охват")+")", "Заплатить Мерку 500 огней, чтобы получить доступ к его «молочным железам».", MILKING_ROOM) {
 						@Override
 						public void effects() {
 							Main.game.getDialogueFlags().setFlag(DialogueFlagValue.murkIntroduced, true);
@@ -2011,7 +2010,7 @@ public class RatWarrensDialogue {
 					
 				} else if(index==6
 						&& !Main.game.getPlayer().hasQuestInLine(QuestLine.SIDE_VENGAR, Quest.VENGAR_TWO_COOPERATION)) {
-					return new Response("Challenge", "Tell Murk that you're here to fight.<br/>[style.italicsBad(This will undoubtedly result in a significant amount of gang members arriving as backup!)]", ENTRANCE_FIGHT) {
+					return new Response("Бросить вызов", "Сказать Мерку, что вы пришли сражаться.<br/>[style.italicsBad(Это несомненно приведет к тому, что на подмогу явится целая толпа членов банды!)]", ENTRANCE_FIGHT) {
 						@Override
 						public void effects() {
 							Main.game.getPlayer().setNearestLocation(WorldType.RAT_WARRENS, PlaceType.RAT_WARRENS_CORRIDOR_LEFT, false);
@@ -2032,7 +2031,7 @@ public class RatWarrensDialogue {
 		}
 	};
 	
-	public static final DialogueNode MILKING_ROOM = new DialogueNode("Milking Room", "", false) {
+	public static final DialogueNode MILKING_ROOM = new DialogueNode("Доильный зал", "", false) {
 		@Override
 		public boolean isTravelDisabled() {
 			return !Main.game.getPlayer().isQuestCompleted(QuestLine.SIDE_VENGAR)
@@ -2061,12 +2060,12 @@ public class RatWarrensDialogue {
 			if(isCompanionDialogue()) {
 				switch(index) {
 					case 0:
-						return "You";
+						return "Вы";
 					case 1:
 						return UtilText.parse(getMainCompanion(), "[npc.Name]");
 					case 2:
 						if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.ratWarrensClearedLeft)) {
-							return "Both";
+							return "Оба";
 						}
 						break;
 				}
@@ -2084,8 +2083,8 @@ public class RatWarrensDialogue {
 					GameCharacter milker = milkers.get(index-1);
 					if(!Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.ratWarrensClearedLeft)) {
 						return new ResponseSex(
-								"Use "+milker.getName(true),
-								UtilText.parse(milker, "Choose to have sex with [npc.name]..."),
+								"Использовать "+milker.getName(true),
+								UtilText.parse(milker, "Решить заняться сексом с [npc.name]..."),
 								true,
 								false,
 								new SMMilkingStall(
@@ -2120,8 +2119,8 @@ public class RatWarrensDialogue {
 						
 					} else {
 						return new ResponseSex(
-								"Use "+milker.getName(true),
-								UtilText.parse(milker, "Now that you've defeated Murk and the gang members in this area, there's nobody to stop you from having sex with [npc.name]..."),
+								"Использовать "+milker.getName(true),
+								UtilText.parse(milker, "Теперь, когда вы победили Мерка и членов банды в этой области, ничто не мешает вам заняться сексом с [npc.name]..."),
 								true,
 								false,
 								new SMMilkingStall(
@@ -2159,14 +2158,14 @@ public class RatWarrensDialogue {
 					if(!getMainCompanion().isAttractedTo(milker) && getMainCompanion().isAbleToRefuseSexAsCompanion()) {
 						return new Response(UtilText.parse(milker, "[npc.Name]"),
 								UtilText.parse(getMainCompanion(), milker,
-										"You can tell that [npc.name] isn't at all interested in having sex with [npc2.name], and you can't force [npc.herHim] to do so..."),
+										"Вы видите, что [npc.name] совсем не заинтересована в сексе с [npc2.name], и вы не можете заставить [npc.herHim] сделать это..."),
 								null);
 					}
 					
 					if(!Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.ratWarrensClearedLeft)) {
 						return new ResponseSex(
 								UtilText.parse(milker, "[npc.Name]"),
-								UtilText.parse(getMainCompanion(), milker, "Tell [npc.name] to fuck [npc2.name] while you and Murk watch..."),
+								UtilText.parse(getMainCompanion(), milker, "Приказать [npc.name] трахнуть [npc2.name] под вашим с Мерком наблюдением..."),
 								true,
 								false,
 								new SMMilkingStall(
@@ -2202,7 +2201,7 @@ public class RatWarrensDialogue {
 					} else {
 						return new ResponseSex(
 								UtilText.parse(milker, "[npc.Name]"),
-								UtilText.parse(getMainCompanion(), milker, "Now that you've defeated Murk and the gang members in this area, there's nobody to stop you from ordering [npc.name] to have sex with [npc2.name] while you watch..."),
+								UtilText.parse(getMainCompanion(), milker, "Теперь, когда ты одолел Мёрка и членов его банды в этой области, никто не помешает тебе приказать [npc.name] заняться сексом с [npc2.name] на твоих глазах..."),
 								true,
 								false,
 								new SMMilkingStall(
@@ -2238,15 +2237,15 @@ public class RatWarrensDialogue {
 					GameCharacter milker = milkers.get(index-1);
 					
 					if(!getMainCompanion().isAttractedTo(milker) && getMainCompanion().isAbleToRefuseSexAsCompanion()) {
-						return new Response(UtilText.parse(milker, "Both ([npc.Name])"),
+						return new Response(UtilText.parse(milker, "Оба ([npc.Name])"),
 								UtilText.parse(getMainCompanion(), milker,
-										"You can tell that [npc.name] isn't at all interested in having sex with [npc2.name], and you can't force [npc.herHim] to do so..."),
+										"Вы видите, что [npc.name] совсем не заинтересована в сексе с [npc2.name], и вы не можете заставить [npc.herHim] сделать это..."),
 								null);
 					}
 					
 					return new ResponseSex(
-							UtilText.parse(milker, "Both ([npc.Name])"),
-							UtilText.parse(getMainCompanion(), milker, "Now that you've defeated Murk and the gang members in this area, there's nobody to stop you and [npc.name] from having sex with [npc2.name]..."),
+							UtilText.parse(milker, "Оба ([npc.Name])"),
+							UtilText.parse(getMainCompanion(), milker, "Теперь, когда ты одолел Мёрка и членов его банды в этой области, никто не помешает тебе и [npc.name] заняться сексом с [npc2.name]..."),
 							true,
 							false,
 							new SMMilkingStall(
@@ -2283,13 +2282,13 @@ public class RatWarrensDialogue {
 				if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.ratWarrensClearedLeft)) {
 					if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.ratWarrensMilkersFreeAttempt)) {
 						return new Response(
-								"Free captives",
-								"You've already tried to free the milkers, and discovered that they are entirely unwilling to escape with you...",
+								"Освободить пленников",
+								"Ты уже пытался освободить доярок, но обнаружил, что они совершенно не хотят сбегать вместе с тобой...",
 								null);
 					}
 					return new Response(
-							"Free captives",
-							"Now that you've defeated the gang members in this area, there's nobody to stop you from freeing the captive humans...",
+							"Освободить пленников",
+							"Теперь, когда ты одолел членов банды в этой области, никто не помешает тебе освободить плененных людей...",
 							MILKING_ROOM_FREE_ATTEMPT) {
 						@Override
 						public void effects() {
@@ -2299,8 +2298,8 @@ public class RatWarrensDialogue {
 					
 				} else {
 					return new Response(
-							"Milkers",
-							"Ask Murk how he came to acquire these 'milkers'...",
+							"Доярки",
+							"Спросить Мёрка, как он заполучил этих «доярок»...",
 							MILKING_ROOM_BACKGROUND) {
 						@Override
 						public void effects() {
@@ -2312,7 +2311,7 @@ public class RatWarrensDialogue {
 			} else if(index==6
 					&& !Main.game.getPlayer().hasQuestInLine(QuestLine.SIDE_VENGAR, Quest.VENGAR_TWO_COOPERATION)
 					&& !Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.ratWarrensClearedLeft)) {
-				return new Response("Fight Murk", "Tell Murk that you're here to fight him.<br/>[style.italicsBad(This will undoubtedly result in a significant amount of gang members arriving as backup!)]", ENTRANCE_FIGHT) {
+				return new Response("Сразиться с Мёрком", "Сказать Мёрку, что ты пришел сразиться с ним.<br/>[style.italicsBad(Это несомненно приведет к тому, что на помощь явится целая толпа членов банды!)]", ENTRANCE_FIGHT) {
 					@Override
 					public void effects() {
 						Main.game.getDialogueFlags().setFlag(DialogueFlagValue.ratWarrensSeenMilkers, true);
@@ -2330,7 +2329,7 @@ public class RatWarrensDialogue {
 				};
 				
 			} else if(index==0 && !Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.ratWarrensClearedLeft)) {
-				return new Response("Leave", "Decide against having sex with any of the milkers and leave...<br/>[style.italicsBad(You will not get your money back!)]", MILKING_ROOM_BACKED_OUT) {
+				return new Response("Уйти", "Решить не заниматься сексом ни с одной из этих «кормилиц» и уйти...<br/>[style.italicsBad(Деньги тебе не вернут!)]", MILKING_ROOM_BACKED_OUT) {
 					@Override
 					public void effects() {
 						Main.game.getDialogueFlags().setFlag(DialogueFlagValue.ratWarrensSeenMilkers, true);
@@ -2361,7 +2360,7 @@ public class RatWarrensDialogue {
 		}
 	};
 	
-	public static final DialogueNode AFTER_MILKER_SEX = new DialogueNode("Finished", "Step back and decide what to do now that you've had your fun...", true) {
+	public static final DialogueNode AFTER_MILKER_SEX = new DialogueNode("Завершено", "Отступить на шаг и решить, что делать теперь, когда ты вдоволь нагулялся...", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			Main.game.getDialogueFlags().setFlag(DialogueFlagValue.ratWarrensSeenMilkers, true);
@@ -2393,8 +2392,8 @@ public class RatWarrensDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(!Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.ratWarrensClearedLeft)) {
 				if(index==6 && !Main.game.getPlayer().hasQuestInLine(QuestLine.SIDE_VENGAR, Quest.VENGAR_TWO_COOPERATION)) {
-					return new Response("Fight Murk",
-							"Tell Murk that these girls are yours now, and that you're going to put him in his place.<br/>[style.italicsBad(This will undoubtedly result in a significant amount of gang members arriving as backup!)]",
+					return new Response("Сразиться с Мёрком",
+							"Сказать Мёрку, что теперь эти девки принадлежат тебе и ты собираешься поставить его на место.<br/>[style.italicsBad(Это несомненно приведет к тому, что на помощь явится целая толпа членов банды!)]",
 							ENTRANCE_FIGHT) {
 						@Override
 						public void effects() {
@@ -2430,8 +2429,8 @@ public class RatWarrensDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(index==5) {
 				return new Response(
-						"Milkers",
-						"You are already asking Murk about how he came to acquire these 'milkers'!",
+						"Доярки",
+						"Ты уже расспрашиваешь Мёрка о том, как он заполучил этих «кормилиц»!",
 						null);
 			}
 			return MILKING_ROOM.getResponse(responseTab, index);
@@ -2453,7 +2452,7 @@ public class RatWarrensDialogue {
 		}
 	};
 
-	public static final DialogueNode VENGARS_HALL = new DialogueNode("Vengar's Hall", "", true) {
+	public static final DialogueNode VENGARS_HALL = new DialogueNode("Зал Венгара", "", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 2*60;
@@ -2465,12 +2464,12 @@ public class RatWarrensDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Approach",
+				return new Response("Подойти",
 						Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.ratWarrensHostile)
-							?"Approach Vengar and prepare to start fighting him."
+							?"Подойти к Венгару и приготовиться к бою."
 							:(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.vengarIntroduced)
-								?"Approach Vengar and start talking to him."
-								:"Approach Vengar and introduce yourself to him."),
+								?"Подойти к Венгару и заговорить с ним."
+								:"Подойти к Венгару и представиться ему."),
 						VENGARS_HALL_APPROACH) {
 					@Override
 					public void effects() {
@@ -2492,7 +2491,7 @@ public class RatWarrensDialogue {
 			}
 			if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.vengarIntroduced)) {
 				if(index==0) {
-					return new Response("Leave", "Decide against approaching Vengar, and instead turn around and exit the hall.", PlaceType.RAT_WARRENS_CORRIDOR_RIGHT.getDialogue(false)) {
+					return new Response("Уйти", "Решить не приближаться к Венгару, а вместо этого развернуться и выйти из зала.", PlaceType.RAT_WARRENS_CORRIDOR_RIGHT.getDialogue(false)) {
 						@Override
 						public void effects() {
 							Main.game.getPlayer().setNearestLocation(WorldType.RAT_WARRENS, PlaceType.RAT_WARRENS_CORRIDOR_RIGHT, false);
@@ -2502,7 +2501,7 @@ public class RatWarrensDialogue {
 				
 			} else {
 				if(index==2 && Main.game.getPlayer().hasItemType(ItemType.RESONANCE_STONE)) {
-					return new Response("Resonance stone", "Use the resonance stone to signal the SWORD Enforcers to start their raid.", VENGARS_HALL_RESONANCE_STONE) {
+					return new Response("Резонансный камень", "Использовать резонансный камень, чтобы подать сигнал карателям SWORD начать налет.", VENGARS_HALL_RESONANCE_STONE) {
 						@Override
 						public void effects() {
 							Main.game.getDialogueFlags().setFlag(DialogueFlagValue.ratWarrensUsedResonanceStone, true);
@@ -2528,8 +2527,8 @@ public class RatWarrensDialogue {
 			// Repeat encounters (after initial quest is resolved):
 			if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.vengarIntroduced)) {
 				if(index==1) {
-					return new Response("Bedroom",
-							"Join Vengar in his private bed-chambers...",
+					return new Response("Спальня",
+							"Присоединиться к Венгару в его личных покоях...",
 							VENGARS_BEDROOM) {
 						@Override
 						public boolean isSexHighlight() {
@@ -2549,9 +2548,9 @@ public class RatWarrensDialogue {
 					if(!Main.game.getNpc(Axel.class).getSexualOrientation().isAttractedToFeminine()
 							&& Main.game.getPlayer().isFeminine()
 							&& !Main.game.isVoluntaryNTREnabled()) {
-						return new Response("Lexa", "Lexa is not attracted to you, so you'd be unable to have sex with her while visiting with Vengar...", null);
+						return new Response("Лекса", "Лекса не испытывает к тебе влечения, так что во время визита к Венгару заняться с ней сексом не получится...", null);
 					}
-					return new Response("Lexa", "Join Vengar in paying Lexa an unannounced visit...", LEXA_VISIT) {
+					return new Response("Лекса", "Вместе с Венгаром отправиться к Лексе с незапланированным визитом...", LEXA_VISIT) {
 						@Override
 						public void effects() {
 							Main.game.getPlayer().setLocation(WorldType.GAMBLING_DEN, PlaceType.GAMBLING_DEN_OFFICE, false);
@@ -2564,7 +2563,7 @@ public class RatWarrensDialogue {
 					};
 					
 				} else if(index==0) {
-					return new Response("Leave", "Tell Vengar that you didn't need anything at the moment, but that you might be back some other time.", PlaceType.RAT_WARRENS_CORRIDOR_RIGHT.getDialogue(false)) {
+					return new Response("Уйти", "Сказать Венгару, что сейчас тебе ничего не нужно, но ты, возможно, заглянешь в другой раз.", PlaceType.RAT_WARRENS_CORRIDOR_RIGHT.getDialogue(false)) {
 						@Override
 						public void effects() {
 							Main.game.getPlayer().setNearestLocation(WorldType.RAT_WARRENS, PlaceType.RAT_WARRENS_CORRIDOR_RIGHT, false);
@@ -2577,8 +2576,8 @@ public class RatWarrensDialogue {
 					// Fight
 					if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.ratWarrensHostile)) {
 						return new Response(
-								"Prepare",
-								"Prepare to defend yourself!",
+								"Приготовиться",
+								"Приготовиться к обороне!",
 								VENGARS_HALL_FIGHT_NO_CONTENT) {
 							@Override
 							public void effects() {
@@ -2601,7 +2600,7 @@ public class RatWarrensDialogue {
 							}
 						};
 					}
-					return new Response("Challenge", "Tell Vengar that you're here to put an end to him and his gang.", VENGARS_HALL_FIGHT_NO_CONTENT) {
+					return new Response("Бросить вызов", "Сказать Венгару, что ты здесь, чтобы покончить с ним и его бандой.", VENGARS_HALL_FIGHT_NO_CONTENT) {
 						@Override
 						public void effects() {
 							Main.game.getDialogueFlags().setFlag(DialogueFlagValue.vengarIntroduced, true);
@@ -2619,9 +2618,9 @@ public class RatWarrensDialogue {
 					
 				} else if(index==2) {
 					if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.ratWarrensHostile)) {
-						return new Response("Persuade", "Vengar considers you to be an enemy, so he isn't going to listen to anything you have to say...", null);
+						return new Response("Убедить", "Венгар считает тебя врагом, поэтому он не станет слушать всё, что ты захочешь сказать...", null);
 					}
-					return new Response("Persuade", "Try to persuade Vengar to stop extorting protection money from Axel...", VENGARS_HALL_APPROACH_PERSUADE) {
+					return new Response("Убедить", "Попытаться убедить Венгара перестать вымогать деньги у Акселя...", VENGARS_HALL_APPROACH_PERSUADE) {
 						@Override
 						public void effects() {
 							Main.game.getDialogueFlags().setFlag(DialogueFlagValue.vengarIntroduced, true);
@@ -2632,19 +2631,18 @@ public class RatWarrensDialogue {
 					
 				} else if(index==3) {
 					if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.ratWarrensHostile)) {
-						return new Response("Threaten", "You don't have a chance to threaten Vengar, as you've got to deal with his bodyguards!", null);
+						return new Response("Угрожать", "У вас нет возможности припугнуть Венгара, так как вам приходится иметь дело с его телохранителями!", null);
 					}
 					if(Main.game.getPlayer().hasTraitActivated(Perk.CHUUNI)
 							|| Main.game.getPlayer().getRace()==Race.DEMON
 							|| Main.game.getPlayer().getLevel()>=35) {
-						return new Response("Threaten",
-								"Threaten Vengar, which will cause him to directly fight you without relying on his bodyguards."
-										+ "<br/>[style.italicsMinorGood(Unlocked "
+						return new Response("Угрожать",
+								"Припугнуть Венгара, что заставит его сражаться с вами напрямую, не полагаясь на телохранителей.<br/>[style.italicsMinorGood(Открыто "
 											+(Main.game.getPlayer().hasTraitActivated(Perk.CHUUNI)
-													?"due to acting like chuuni"
+													?"из-за поведения чуни)"
 													:(Main.game.getPlayer().getRace()==Race.DEMON
-														?"due to being a demon"
-														:"due to being at least level 35"))
+														?"из-за того, что вы демон"
+														:"из-за того, что ваш уровень не ниже 35)"))
 											+".)]",
 								VENGARS_HALL_APPROACH_THREATEN) {
 							@Override
@@ -2657,21 +2655,19 @@ public class RatWarrensDialogue {
 							}
 						};
 					}
-					return new Response("Threaten",
-							"You aren't able to threaten Vengar into stopping his extortion of Axel."
-							+ "<br/>[style.italicsMinorBad(You need to be at least twice the level of Vengar, be a demon, or have the '"+Perk.CHUUNI.getName(Main.game.getPlayer())+"' perk active in order to successfully threaten him.)]",
+					return new Response("Угрожать",
+							"Вам не удалось запугать Венгара, чтобы он прекратил вымогать деньги у Акселя.<br/>[style.italicsMinorBad(Чтобы успешно припугнуть его, ваш уровень должен быть как минимум вдвое выше уровня Венгара, вы должны быть демоном или иметь активный перк '"+Perk.CHUUNI.getName(Main.game.getPlayer())+"(активен перк, чтобы успешно припугнуть его.)]",
 							null);
 					
 				} else if(index==4) {
 					if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.ratWarrensHostile)) {
-						return new Response("Seduce", "Vengar considers you to be an enemy, so he isn't going to pay attention to any attempts at seducing him...", null);
+						return new Response("Соблазнить", "Венгар считает вас врагом, поэтому он не обратит внимания на любые попытки соблазнить его...", null);
 					}
 					if(Main.game.getPlayer().hasTraitActivated(Perk.CONVINCING_REQUESTS)
 							|| Main.game.getPlayer().hasSpellUpgrade(SpellUpgrade.TELEPATHIC_COMMUNICATION_3)
 							|| Main.game.getPlayer().getAttributeValue(Attribute.DAMAGE_LUST)>=75) {
-						return new Response("Seduce",
-								"Seduce Vengar in an attempt to convince him to stop extorting protection money from Axel."
-										+ "<br/>[style.italicsMinorGood(Unlocked from having the '"+Perk.CONVINCING_REQUESTS.getName(Main.game.getPlayer())+"' trait activated.)]"
+						return new Response("Соблазнить",
+								"Соблазнить Венгара, пытаясь убедить его перестать вымогать деньги у Акселя.<br/>[style.italicsMinorGood(Открыто благодаря наличию '"+Perk.CONVINCING_REQUESTS.getName(Main.game.getPlayer())+" черта активен.)]"
 										+getCooperationWarning(),
 								VENGARS_HALL_APPROACH_SEDUCE) {
 							@Override
@@ -2688,10 +2684,8 @@ public class RatWarrensDialogue {
 							}
 						};
 					}
-					return new Response("Seduce",
-							"You aren't skilled enough in the art of seduction to convince Vengar to stop extorting protection money from Axel in this manner."
-									+ "<br/>[style.italicsMinorBad(Requires the '"+Perk.CONVINCING_REQUESTS.getName(Main.game.getPlayer())+"' trait to be active,"
-											+ " at least 75 lust damage, or the '"+SpellUpgrade.TELEPATHIC_COMMUNICATION_3.getName()+"' upgrade for the '"+Spell.TELEPATHIC_COMMUNICATION.getName()+"' spell.)]",
+					return new Response("Соблазнить",
+							"Вы недостаточно искусны в искусстве соблазнения, чтобы убедить Венгара перестать таким образом вымогать деньги за защиту у Акселя.<br/>[style.italicsMinorBad(Требуется активная черта '"+Perk.CONVINCING_REQUESTS.getName(Main.game.getPlayer())+"', как минимум 75 ед. урона похоти или улучшение '"+SpellUpgrade.TELEPATHIC_COMMUNICATION_3.getName()+"' для заклинания '"+Spell.TELEPATHIC_COMMUNICATION.getName()+"' заклинание.)]",
 							null);
 				}
 			}
@@ -2712,8 +2706,8 @@ public class RatWarrensDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new ResponseCombat("Fight",
-						"Fight Vengar's rat-girl bodyguards.",
+				return new ResponseCombat("Сразиться",
+						"Сразиться с крысино-девичьими телохранительницами Венгара.",
 						Main.game.getNpc(Shadow.class),
 						Util.newArrayListOfValues(Main.game.getNpc(Shadow.class), Main.game.getNpc(Silence.class)),
 						Util.newHashMapOfValues(
@@ -2738,10 +2732,10 @@ public class RatWarrensDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				if(Main.game.getPlayer().getMoney()<PERSUASION_PAYMENT) {
-					return new Response("Pay ("+UtilText.formatAsMoneyUncoloured(PERSUASION_PAYMENT, "span")+")", "You do not have "+UtilText.formatAsMoney(PERSUASION_PAYMENT, "span")+", so cannot do as Vengar asks...", null);
+					return new Response("Заплатить ("+UtilText.formatAsMoneyUncoloured(PERSUASION_PAYMENT, "охват")+")", "У вас нет "+UtilText.formatAsMoney(PERSUASION_PAYMENT, "охват")+", поэтому вы не можете поступить так, как просит Венгар...", null);
 				}
-				return new Response("Pay ("+UtilText.formatAsMoney(PERSUASION_PAYMENT, "span")+")",
-						"Agree to pay Vengar "+UtilText.formatAsMoney(PERSUASION_PAYMENT, "span")+" to show your submission to him..."
+				return new Response("Заплатить ("+UtilText.formatAsMoney(PERSUASION_PAYMENT, "охват")+")",
+						"Согласиться заплатить Венгару, "+UtilText.formatAsMoney(PERSUASION_PAYMENT, "охват")+" чтобы продемонстрировать ему свою покорность..."
 						+getCooperationWarning(),
 						VENGARS_HALL_APPROACH_PERSUADE_PAY) {
 					@Override
@@ -2754,8 +2748,8 @@ public class RatWarrensDialogue {
 				};
 				
 			} else if(index==2) {
-				return new Response("Kneel",
-						"Kneel down before Vengar to show your submission to him...",
+				return new Response("Встать на колени",
+						"Встань на колени перед Венгаром, чтобы продемонстрировать ему свою покорность...",
 						VENGARS_HALL_APPROACH_PERSUADE_KNEEL) {
 					@Override
 					public void effects() {
@@ -2764,7 +2758,7 @@ public class RatWarrensDialogue {
 				};
 				
 			} else if(index==3) {
-				return new Response("Refuse", "Outright refuse to pay. Vengar is unlikely to take this well...", VENGARS_HALL_FIGHT_NO_CONTENT) {
+				return new Response("Отказаться", "Наотрез отказаться платить. Вряд ли Венгар воспримет это спокойно...", VENGARS_HALL_FIGHT_NO_CONTENT) {
 					@Override
 					public boolean isCombatHighlight() {
 						return true;
@@ -2797,7 +2791,7 @@ public class RatWarrensDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Agree", "Having already decided to take a non-violent approach, agreeing to get Axel to come and show his submission seems to be the only option left to you.", VENGARS_HALL_CORRIDOR_EXIT_NO_CONTENT) {
+				return new Response("Согласиться", "Поскольку вы уже решили придерживаться ненасильственного подхода, согласиться на то, чтобы Аксель пришел и показал свою покорность, кажется единственным оставшимся вариантом.", VENGARS_HALL_CORRIDOR_EXIT_NO_CONTENT) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/submission/ratWarrens/core", "VENGARS_HALL_APPROACH_PERSUADE_END_AND_LEAVE", getGuards(true)));
@@ -2821,8 +2815,8 @@ public class RatWarrensDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Submit",
-						"Do as Vengar says and act as his foot rest."
+				return new Response("Подчиниться",
+						"Сделать так, как говорит Венгар, и стать его подставкой для ног."
 								+getCooperationWarning(),
 						VENGARS_HALL_APPROACH_PERSUADE_KNEEL_SUBMIT) {
 					@Override
@@ -2833,7 +2827,7 @@ public class RatWarrensDialogue {
 				};
 				
 			} else if(index==2) {
-				return new Response("Refuse", "Refuse to humiliate yourself as Vengar orders. He is unlikely to take this well...", VENGARS_HALL_FIGHT_NO_CONTENT) {
+				return new Response("Отказаться", "Отказаться унижаться по приказу Венгара. Вряд ли он воспримет это спокойно...", VENGARS_HALL_FIGHT_NO_CONTENT) {
 					@Override
 					public boolean isCombatHighlight() {
 						return true;
@@ -2899,7 +2893,7 @@ public class RatWarrensDialogue {
 				if(isCompanionDialogue()) {
 					if(!isAssAccess(getMainCompanion()) && !isVaginaAccess(getMainCompanion())) {
 						if(index==1) {
-							return new Response("Continue", "As Vengar is unable to fuck either of you, he's content to simply inform you what he wants you to do for him.", VENGARS_HALL_APPROACH_PERSUADE_FINISH) {
+							return new Response("Продолжить", "Поскольку Венгар не может трахнуть ни одного из вас, он доволен тем, что просто диктует вам, что вы должны для него сделать.", VENGARS_HALL_APPROACH_PERSUADE_FINISH) {
 								@Override
 								public void effects() {
 									Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/submission/ratWarrens/core", "VENGARS_HALL_SUB_NO_SEX_FINISH", getGuards(true)));
@@ -2912,7 +2906,7 @@ public class RatWarrensDialogue {
 					} else {
 						if(!Main.game.isVoluntaryNTREnabled()) {
 							if(index==1) {
-								return new Response("Continue", "As Vengar is unable to fuck you, he's content to simply inform you what he wants you to do for him.", VENGARS_HALL_APPROACH_PERSUADE_FINISH) {
+								return new Response("Продолжить", "Поскольку Венгар не может трахнуть тебя, он доволен тем, что просто диктует тебе, что ты должна для него сделать.", VENGARS_HALL_APPROACH_PERSUADE_FINISH) {
 									@Override
 									public void effects() {
 										Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/submission/ratWarrens/core", "VENGARS_HALL_SUB_NO_SEX_FINISH", getGuards(true)));
@@ -2924,8 +2918,8 @@ public class RatWarrensDialogue {
 							
 						} else {
 							if(index==1) {
-								return new Response("Stand up",
-										UtilText.parse(getMainCompanion(), "Refuse to allow Vengar to fuck [npc.name] in front of everyone, and tell him that you've already done as he asked."),
+								return new Response("Встать",
+										UtilText.parse(getMainCompanion(), "Запретить Венгару трахать [npc.name] на глазах у всех и сказать ему, что вы уже сделали всё, как он просил."),
 										VENGARS_HALL_APPROACH_PERSUADE_FINISH) {
 									@Override
 									public void effects() {
@@ -2937,13 +2931,13 @@ public class RatWarrensDialogue {
 								
 							} else if(index==2) {
 								if(!getMainCompanion().isAttractedTo(Main.game.getNpc(Vengar.class)) && getMainCompanion().isAbleToRefuseSexAsCompanion()) {
-									return new Response("Agree",
-											UtilText.parse(getMainCompanion(), "You can tell that [npc.name] isn't at all interested in having sex with Vengar, and you can't force [npc.herHim] to do so..."),
+									return new Response("Согласиться",
+											UtilText.parse(getMainCompanion(), "Вы видите, что [npc.name] совсем не заинтересована в сексе с Венгаром, и вы не можете заставить [npc.herHim] сделать это..."),
 											null);
 								}
 								return new ResponseSex(
-										"Agree",
-										UtilText.parse(getMainCompanion(), "Let Vengar fuck [npc.name] while you and everyone else in the hall watches."),
+										"Согласиться",
+										UtilText.parse(getMainCompanion(), "Пусть Венгар трахает [npc.name], пока ты и все остальные в зале наблюдаете за этим."),
 										true,
 										false,
 										new SMVengarDominantSex(
@@ -2977,7 +2971,7 @@ public class RatWarrensDialogue {
 					
 				} else {
 					if(index==1) {
-						return new Response("Continue", "As Vengar is unable to fuck you, he's content to simply inform you what he wants you to do for him.", VENGARS_HALL_APPROACH_PERSUADE_FINISH) {
+						return new Response("Продолжить", "Поскольку Венгар не может трахнуть тебя, он доволен тем, что просто диктует тебе, что ты должна для него сделать.", VENGARS_HALL_APPROACH_PERSUADE_FINISH) {
 							@Override
 							public void effects() {
 								Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/submission/ratWarrens/core", "VENGARS_HALL_SUB_NO_SEX_FINISH"));
@@ -2990,10 +2984,10 @@ public class RatWarrensDialogue {
 			}
 			
 			if(index==1) {
-				return new Response("Stand up",
+				return new Response("Встать",
 						isCompanionDialogue()
-							?UtilText.parse(getMainCompanion(), "Refuse to allow Vengar to fuck you or [npc.name] in front of everyone, and tell him that you've already done enough.")
-							:"Refuse to allow Vengar to fuck you in front of everyone, and tell him that you've already done as he asked.",
+							?UtilText.parse(getMainCompanion(), "Отказаться позволить Венгару трахать тебя или [npc.name] на глазах у всех, сказав ему, что вы уже достаточно наделались.")
+							:"Отказаться позволить Венгару трахать тебя на глазах у всех, сказав ему, что ты уже сделала всё, как он просил.",
 						VENGARS_HALL_APPROACH_PERSUADE_FINISH) {
 					@Override
 					public void effects() {
@@ -3005,11 +2999,11 @@ public class RatWarrensDialogue {
 			} else if(index==2) {
 				return new ResponseSex(
 						isCompanionDialogue()
-							?"Present yourself (solo)"
-							:"Present yourself",
+							?"Представить себя (в одиночку)"
+							:"Предстать перед ней",
 						isCompanionDialogue()
-							?UtilText.parse(getMainCompanion(), "Tell [npc.name] to stand back, before shuffling around and raising your ass towards Vengar, presenting yourself to be fucked by him in front of everyone in the hall.")
-							:"Shuffle around and raise your ass towards Vengar, presenting yourself to be fucked by him in front of everyone in the hall.",
+							?UtilText.parse(getMainCompanion(), "Приказать [npc.name] отойти назад, после чего начать вилять задом и подставить задницу Венгару, предлагая ему трахнуть тебя на глазах у всех в зале.")
+							:"Начать вилять задом и подставить задницу Венгару, предлагая ему трахнуть тебя на глазах у всех в зале.",
 						true,
 						false,
 						new SMVengarDominantSex(
@@ -3041,14 +3035,14 @@ public class RatWarrensDialogue {
 				GameCharacter companion = getMainCompanion();
 
 				if(!getMainCompanion().isAttractedTo(Main.game.getNpc(Vengar.class)) && getMainCompanion().isAbleToRefuseSexAsCompanion()) {
-					return new Response(UtilText.parse(companion, "Present yourselves"),
-							UtilText.parse(getMainCompanion(), "You can tell that [npc.name] isn't at all interested in having sex with Vengar, and you can't force [npc.herHim] to do so..."),
+					return new Response(UtilText.parse(companion, "Представить себя"),
+							UtilText.parse(getMainCompanion(), "Вы видите, что [npc.name] совсем не заинтересована в сексе с Венгаром, и вы не можете заставить [npc.herHim] сделать это..."),
 							null);
 					
 				} else {
 					return new Response(
-							UtilText.parse(companion, "Present yourselves"),
-							UtilText.parse(getMainCompanion(), "Tell [npc.name] to join you in shuffling around and raising your asses towards Vengar, presenting yourselves to be fucked by him in front of everyone in the hall."),
+							UtilText.parse(companion, "Представить себя"),
+							UtilText.parse(getMainCompanion(), "Приказать [npc.name] присоединиться к тебе: начать вилять задом и подставлять задницы Венгару, предлагая ему трахнуть вас обеих на глазах у всех в зале."),
 							VENGARS_HALL_APPROACH_PERSUADE_SEX_DOUBLE_CHOICE) {
 						@Override
 						public boolean isSexHighlight() {
@@ -3061,13 +3055,13 @@ public class RatWarrensDialogue {
 				GameCharacter companion = getMainCompanion();
 
 				if(!companion.isAttractedTo(Main.game.getNpc(Vengar.class)) && companion.isAbleToRefuseSexAsCompanion()) {
-					return new Response(UtilText.parse(companion, "Offer [npc.name]"),
-							UtilText.parse(companion, "You can tell that [npc.name] isn't at all interested in having sex with Vengar, and you can't force [npc.herHim] to do so..."),
+					return new Response(UtilText.parse(companion, "Предложить [npc.name]"),
+							UtilText.parse(companion, "Вы видите, что [npc.name] совсем не заинтересована в сексе с Венгаром, и вы не можете заставить [npc.herHim] сделать это..."),
 							null);
 					
 				} else {
-					return new ResponseSex(UtilText.parse(companion, "Offer [npc.name]"),
-							UtilText.parse(getMainCompanion(), "Tell Vengar that while you're not keen on the idea yourself, you'd be happy to let him fuck [npc.name] in front of everyone..."),
+					return new ResponseSex(UtilText.parse(companion, "Предложить [npc.name]"),
+							UtilText.parse(getMainCompanion(), "Сказать Венгару, что, хотя тебе самой идея не очень нравится, ты будешь рада позволить ему трахнуть [npc.name] на глазах у всех..."),
 							true,
 							false,
 							new SMVengarDominantSex(
@@ -3112,16 +3106,16 @@ public class RatWarrensDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new ResponseSex("Fucked first",
+				return new ResponseSex("Трахнут первым",
 						UtilText.parse(getMainCompanion(),
-							"Push your [pc.hips] back against Vengar, signalling to him that you want him to fuck you first."
+							"Прижми свои [pc.hips] к Венгару, давая ему понять, что хочешь, чтобы он трахнул тебя первым."
 								+ (!isMouthAccess(Main.game.getPlayer())
-									?" As you are unable to access your mouth, [npc.name] can't receive oral from you, and must simply watch and wait [npc.her] turn as Vengar fucks you..."	
+									?" Поскольку ты не можешь открыть рот, [npc.name] не сможет отсосать тебе, и ей останется лишь наблюдать и ждать [npc.her], пока Венгар трахает тебя..."	
 									:(isVaginaAccess(getMainCompanion())
-										?"You will be tasked with eating [npc.name] out while Vengar fucks you, so that [npc.sheIs] prepared for Vengar's cock once he's finished with you."
+										?"Тебе поручат отсосать [npc.name], пока Венгар трахает тебя, чтобы [npc.sheIs] была готова к члену Венгара, когда он закончит с тобой."
 										:(isAssAccess(getMainCompanion())
-											?"You will be tasked with performing anilingus on [npc.name] while Vengar fucks you, so that [npc.sheIs] prepared for Vengar's cock once he's finished with you."
-											:" [npc.Name] will have to watch and wait [npc.her] turn as Vengar fucks you...")))),
+											?"Тебе поручат заняться анилингусом для [npc.name], пока Венгар трахает тебя, чтобы [npc.sheIs] была готова к члену Венгара, когда он закончит с тобой."
+											:" [npc.Name] придется наблюдать и ждать [npc.her], пока Венгар трахает тебя...")))),
 						true,
 						false,
 						new SMVengarDominantSex(
@@ -3179,16 +3173,15 @@ public class RatWarrensDialogue {
 				};
 				
 			} else if(index==2) {
-				return new ResponseSex("Fucked second",
+				return new ResponseSex("Трахнут вторым",
 						UtilText.parse(getMainCompanion(), 
 							!isMouthAccess(getMainCompanion())
-								?"Shuffle away from Vengar a little, signalling to him that you want him to fuck your companion first."
-										+ " As [npc.name] is unable to access [npc.her] mouth, [npc.she] can't perform oral on you while Vengar fucks [npc.herHim], leaving you with nothing to do but watch and wait your turn..."
+								?"Немного отодвинься от Венгара, давая ему понять, что хочешь, чтобы он сначала трахнул твою спутницу. Так как [npc.name] не может дотянуться до [npc.her] рта, [npc.she] не сможет отсосать тебе, пока Венгар трахает [npc.herHim], и тебе останется лишь наблюдать и ждать своей очереди..."
 								:isVaginaAccess(Main.game.getPlayer())
-									?"Get [npc.name] to start eating you out, signalling to Vengar that you want him to fuck your companion first."
+									?"Заставь [npc.name] начать отсасывать тебе, давая понять Венгару, что хочешь, чтобы он сначала трахнул твою спутницу."
 									:(isAssAccess(getMainCompanion())
-										?"Get [npc.name] to crawl around behind you and start performing anilingus on you, signalling to Vengar that you want him to fuck your companion first."
-										:"Shuffle away from Vengar a little, signalling to him that you want him to fuck your companion first.")),
+										?"Заставь [npc.name] подползти к тебе сзади и начать делать тебе анилингус, давая понять Венгару, что хочешь, чтобы он сначала трахнул твою спутницу."
+										:"Немного отодвиньтесь от Венгара, давая ему понять, что хотите, чтобы он сначала трахнул вашу спутницу.")),
 						true,
 						false,
 						new SMVengarDominantSex(
@@ -3248,7 +3241,7 @@ public class RatWarrensDialogue {
 		}
 	};
 	
-	public static final DialogueNode VENGARS_HALL_APPROACH_PERSUADE_AFTER_SEX_DOUBLE = new DialogueNode("Finished", "Vengar is satisfied, and brings an end to the sex...", true) {
+	public static final DialogueNode VENGARS_HALL_APPROACH_PERSUADE_AFTER_SEX_DOUBLE = new DialogueNode("Завершено", "Венгар удовлетворен и заканчивает секс...", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 5*60;
@@ -3266,15 +3259,15 @@ public class RatWarrensDialogue {
 			
 			if(index==1) {
 				if(Main.sex.getSexPositionSlot(Main.game.getPlayer())!=SexSlotAllFours.ALL_FOURS) {
-					return new ResponseSex("Fucked",
+					return new ResponseSex("Трахнутый",
 							UtilText.parse(getMainCompanion(),
 								!isMouthAccess(Main.game.getPlayer())
-									?"You lift your ass as you prepare to get fucked by Vengar."
+									?"Вы приподнимаете зад, готовясь к тому, что Венгар будет в вас трахаться."
 									:isVaginaAccess(getMainCompanion())
-										?"Start eating the cum out of [npc.namePos] pussy as you prepare to get fucked by Vengar next."
+										?"Начните слизывать сперму из киски [npc.namePos], готовясь к тому, что следующим в вас будет трахаться Венгар."
 										:(isAssAccess(getMainCompanion())
-												?"Start eating the cum out of [npc.namePos] ass as you get fucked by Vengar next."
-												:"You lift your ass as you prepare to get fucked by Vengar.")),
+												?"Начните слизывать сперму из задницы [npc.namePos], пока Венгар будет трахать вас."
+												:"Вы приподнимаете зад, готовясь к тому, что Венгар будет в вас трахаться.")),
 							true,
 							false,
 							new SMVengarDominantSex(
@@ -3339,16 +3332,16 @@ public class RatWarrensDialogue {
 				} else {
 					return new ResponseSex(
 							!isMouthAccess(getMainCompanion()) || (!isVaginaAccess(Main.game.getPlayer()) && !isAssAccess(Main.game.getPlayer()))
-								?UtilText.parse(getMainCompanion(), "[npc.NamePos] turn")
-								:"Oral cleanup",
+								?UtilText.parse(getMainCompanion(), "[npc.NamePos] поворачивает")
+								:"Оральная чистка",
 							UtilText.parse(getMainCompanion(),
 								!isMouthAccess(getMainCompanion())
-									?"Look on as Vengar fucks [npc.name] next..."
+									?"Наблюдайте за тем, как Венгар трахает [npc.name]..."
 									:isVaginaAccess(Main.game.getPlayer())
-										?"Get [npc.name] to start eating the cum out of your pussy as Vengar fucks [npc.herHim] next."
+										?"Заставьте [npc.name] начать слизывать сперму из вашей киски, пока Венгар трахает [npc.herHim]."
 										:(isAssAccess(Main.game.getPlayer())
-											?"Get [npc.name] to crawl around behind you and start eating the cum out of your ass as Vengar fucks [npc.herHim] next."
-											:"Look on as Vengar fucks [npc.name] next...")),
+											?"Заставьте [npc.name] ползать позади вас и начать слизывать сперму из вашей задницы, пока Венгар трахает [npc.herHim]."
+											:"Наблюдайте за тем, как Венгар трахает [npc.name]...")),
 							true,
 							false,
 							new SMVengarDominantSex(
@@ -3409,7 +3402,7 @@ public class RatWarrensDialogue {
 		}
 	};
 	
-	public static final DialogueNode VENGARS_HALL_APPROACH_PERSUADE_AFTER_SEX = new DialogueNode("Finished", "Vengar is satisfied, and brings an end to the sex...", true) {
+	public static final DialogueNode VENGARS_HALL_APPROACH_PERSUADE_AFTER_SEX = new DialogueNode("Завершено", "Венгар удовлетворен и заканчивает секс...", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 5*60;
@@ -3424,7 +3417,7 @@ public class RatWarrensDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Stand up", "Stand up and await Vengar's next command...", VENGARS_HALL_APPROACH_PERSUADE_FINISH) {
+				return new Response("Встать", "Встань и жди следующей команды Венгара...", VENGARS_HALL_APPROACH_PERSUADE_FINISH) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/submission/ratWarrens/core", "VENGARS_HALL_APPROACH_PERSUADE_AFTER_SEX_FINISH", getGuards(true)));
@@ -3448,7 +3441,7 @@ public class RatWarrensDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Agree", "Having already decided to take a non-violent approach, agreeing to get Axel to come and show his submission seems to be the only option left to you.", VENGARS_HALL_CORRIDOR_EXIT_NO_CONTENT) {
+				return new Response("Согласиться", "Поскольку вы уже решили придерживаться ненасильственного подхода, согласиться на то, чтобы Аксель пришел и показал свою покорность, кажется единственным оставшимся вариантом.", VENGARS_HALL_CORRIDOR_EXIT_NO_CONTENT) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/submission/ratWarrens/core", "VENGARS_HALL_APPROACH_PERSUADE_END_AND_LEAVE", getGuards(true)));
@@ -3484,30 +3477,27 @@ public class RatWarrensDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new ResponseCombat("Fight",
-						"Defend yourself against Vengar!",
+				return new ResponseCombat("Сразиться",
+						"Защищайся от Венгара!",
 						Main.game.getNpc(Vengar.class));
 				
 			} else if(index==2) {
 				if(Main.game.getPlayer().hasPerkAnywhereInTree(Perk.MARTIAL_ARTIST)
 						|| Main.game.getPlayer().getAttributeValue(Attribute.DAMAGE_UNARMED)>=75
 						|| Main.game.getPlayer().hasSpellUpgrade(SpellUpgrade.SLAM_3)) {
-					return new Response("Knock out",
-							"You can take advantage of Vengar's haste to deliver a knock-out blow to him."
-									+ "<br/>[style.italicsMinorGood("
+					return new Response("Вырубить",
+							"Ты можешь воспользоваться спешкой Венгара, чтобы нанести ему нокаутирующий удар.<br/>[style.italicsMinorGood("
 									+(Main.game.getPlayer().hasSpellUpgrade(SpellUpgrade.SLAM_3)
-										?"Unlocked from having the '"+SpellUpgrade.SLAM_3.getName()+"' upgrade to the '"+Spell.SLAM.getName()+"' spell."
+										?"Открывается при наличии улучшения \""+SpellUpgrade.SLAM_3.getName()+"\" для заклинания \""+Spell.SLAM.getName()+"' заклинание."
 										:(Main.game.getPlayer().hasPerkAnywhereInTree(Perk.MARTIAL_ARTIST)
-											?"Unlocked from having the '"+Perk.MARTIAL_ARTIST.getName(Main.game.getPlayer())+"' trait."
-											:"Unlocked from having over 75 unarmed damage."))
+											?"Открывается при наличии черты \""+Perk.MARTIAL_ARTIST.getName(Main.game.getPlayer())+"' черта."
+											:"Открывается при уроне без оружия более 75."))
 									+ ")]",
 							VENGARS_HALL_APPROACH_THREATEN_KNOCK_OUT);
 					
 				} else {
-					return new Response("Knock out",
-							"You aren't able to take advantage of Vengar's haste..."
-									+ "<br/>[style.italicsMinorBad(Requires the '"+Perk.MARTIAL_ARTIST.getName(Main.game.getPlayer())+"' trait,"
-											+ " over 75 unarmed damage, or the '"+SpellUpgrade.SLAM_3.getName()+"' upgrade to the '"+Spell.SLAM.getName()+"' spell.)]",
+					return new Response("Вырубить",
+							"Ты не можешь воспользоваться спешкой Венгара...<br/>[style.italicsMinorBad(Требуется \""+Perk.MARTIAL_ARTIST.getName(Main.game.getPlayer())+"' черту, более 75 единиц без оружия или '"+SpellUpgrade.SLAM_3.getName()+"\" для заклинания \""+Spell.SLAM.getName()+"' заклинание.)]",
 							null);
 				}
 				
@@ -3535,7 +3525,7 @@ public class RatWarrensDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Defend", "Defend yourself against the rat-girls!", VENGARS_HALL_APPROACH_THREATEN_KNOCK_OUT_CHAOS);
+				return new Response("Защита", "Защищайся от крысодевок!", VENGARS_HALL_APPROACH_THREATEN_KNOCK_OUT_CHAOS);
 			}
 			return null;
 		}
@@ -3553,7 +3543,7 @@ public class RatWarrensDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Prepare", "Prepare yourself for whatever is coming!", VENGARS_HALL_APPROACH_THREATEN_KNOCK_OUT_SWORD_RAID);
+				return new Response("Приготовиться", "Приготовься к тому, что грядет!", VENGARS_HALL_APPROACH_THREATEN_KNOCK_OUT_SWORD_RAID);
 			}
 			return null;
 		}
@@ -3571,7 +3561,7 @@ public class RatWarrensDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Wait", "You don't have any choice but to wait for the Frontline Patrol division to show up...", VENGARS_HALL_APPROACH_THREATEN_KNOCK_OUT_SWORD_RAID_CLAIRE) {
+				return new Response("Ждать", "У тебя нет другого выбора, кроме как ждать появления передового патруля...", VENGARS_HALL_APPROACH_THREATEN_KNOCK_OUT_SWORD_RAID_CLAIRE) {
 					@Override
 					public void effects() {
 						Main.game.getNpc(Claire.class).setLocation(Main.game.getPlayer(), false);
@@ -3594,7 +3584,7 @@ public class RatWarrensDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Follow", "You don't have much choice but to do as Claire says and follow her out of the Rat Warrens...", SWORD_RAID_EXIT) {
+				return new Response("Следовать", "У тебя почти нет выбора, кроме как поступить по словам Клэр и последовать за ней из Крысиных Лабиринтов...", SWORD_RAID_EXIT) {
 					@Override
 					public void effects() {
 						Main.game.getTextEndStringBuilder().append(applyConflictQuestEnd());
@@ -3643,14 +3633,14 @@ public class RatWarrensDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Just tease",
-						"Tease Vengar by promising him sex at a later time, once all this business with Axel has been resolved.",
+				return new Response("Просто дразнить",
+						"Дразни Венгара, обещая ему секс позже, когда все эти дела с Акселем будут улажены.",
 						VENGARS_HALL_APPROACH_SEDUCE_NO_SEX);
 				
 			} else if(index==2) {
 				return new ResponseSex(
-						"Submit",
-						"Tell Vengar that he can do whatever he wants with you...",
+						"Подчиниться",
+						"Скажи Венгару, что он может делать с тобой всё, что захочет...",
 						true,
 						true,
 						new SMGeneric(
@@ -3663,8 +3653,8 @@ public class RatWarrensDialogue {
 				
 			} else if(index==3) {
 				return new ResponseSex(
-						"Dominate",
-						"Tell Vengar that he's going to submit to you...",
+						"Доминировать",
+						"Скажи Венгару, что он будет тебе подчиняться...",
 						true,
 						true,
 						new SMGeneric(
@@ -3694,7 +3684,7 @@ public class RatWarrensDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Agree", "Having already decided to take a non-violent approach, agreeing to get Axel to come and show his submission seems to be the only option left to you.", VENGARS_HALL_CORRIDOR_EXIT_NO_CONTENT) {
+				return new Response("Согласиться", "Поскольку вы уже решили придерживаться ненасильственного подхода, согласиться на то, чтобы Аксель пришел и показал свою покорность, кажется единственным оставшимся вариантом.", VENGARS_HALL_CORRIDOR_EXIT_NO_CONTENT) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/submission/ratWarrens/core", "VENGARS_HALL_APPROACH_SEDUCE_NO_SEX_LEAVE", getGuards(true)));
@@ -3708,7 +3698,7 @@ public class RatWarrensDialogue {
 		}
 	};
 	
-	public static final DialogueNode VENGARS_HALL_APPROACH_SEDUCE_AFTER_SEX = new DialogueNode("Finished", "Vengar is satisfied, and brings an end to the sex...", true) {
+	public static final DialogueNode VENGARS_HALL_APPROACH_SEDUCE_AFTER_SEX = new DialogueNode("Завершено", "Венгар удовлетворен и заканчивает секс...", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 5*60;
@@ -3723,7 +3713,7 @@ public class RatWarrensDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Agree", "Having already decided to take a non-violent approach, agreeing to get Axel to come and show his submission seems to be the only option left to you.", VENGARS_HALL_CORRIDOR_EXIT_NO_CONTENT) {
+				return new Response("Согласиться", "Поскольку вы уже решили придерживаться ненасильственного подхода, согласиться на то, чтобы Аксель пришел и показал свою покорность, кажется единственным оставшимся вариантом.", VENGARS_HALL_CORRIDOR_EXIT_NO_CONTENT) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/submission/ratWarrens/core", "VENGARS_HALL_APPROACH_SEDUCE_AFTER_SEX_LEAVE", getGuards(true)));
@@ -3749,7 +3739,7 @@ public class RatWarrensDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Defend", "Defend yourself against the rat-girls!", VENGARS_HALL_APPROACH_THREATEN_KNOCK_OUT_CHAOS);
+				return new Response("Защита", "Защищайся от крысодевок!", VENGARS_HALL_APPROACH_THREATEN_KNOCK_OUT_CHAOS);
 			}
 			return null;
 		}
@@ -3790,8 +3780,8 @@ public class RatWarrensDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new ResponseCombat("Silence",
-						"It looks like you'll have to deal with both Silence and her newly-summoned elemental!",
+				return new ResponseCombat("Сайленс",
+						"Похоже, тебе придется иметь дело и с Сайленс, и с ее только что призванным элементалем!",
 						Main.game.getNpc(Silence.class),
 						Util.newArrayListOfValues(Main.game.getNpc(Silence.class), Main.game.getNpc(Silence.class).getElemental()),
 						null);
@@ -3818,8 +3808,8 @@ public class RatWarrensDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new ResponseCombat("Shadow",
-						"It looks like you'll have to deal with an enraged Shadow!",
+				return new ResponseCombat("Тень",
+						"Похоже, тебе придется сразиться с разъяренной Тенью!",
 						Main.game.getNpc(Shadow.class),
 						Util.newArrayListOfValues(Main.game.getNpc(Shadow.class)),
 						null);
@@ -3840,8 +3830,8 @@ public class RatWarrensDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new ResponseCombat("Vengar",
-						"Now that you've dealt with his bodyguards, you're going to need to take on Vengar himself!",
+				return new ResponseCombat("Венгар",
+						"Теперь, когда с его телохранителями покончено, тебе предстоит бросить вызов самому Венгару!",
 						Main.game.getNpc(Vengar.class));
 			}
 			return null;
@@ -3864,15 +3854,14 @@ public class RatWarrensDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(!Main.game.isNonConEnabled()) {
 				if(index==1) {
-					return new Response("Defend", "Defend yourself against the rat-girls!", VENGARS_HALL_APPROACH_THREATEN_KNOCK_OUT_CHAOS); //TODO test
+					return new Response("Защита", "Защищайся от крысодевок!", VENGARS_HALL_APPROACH_THREATEN_KNOCK_OUT_CHAOS); //TODO test
 				}
 				
 			} else {
 				if(index==1) { //TODO
 					if(isCompanionDialogue()) {
-						return new Response("Save [com.name]",
-								"Use the last of your energy to hold off the rats long enough for [com.name] to escape."
-										+ "<br/>[style.italicsMinorGood([com.Name] will safely return home.)]",
+						return new Response("Сохранить [com.name]",
+								"Использовать остатки своей энергии, чтобы сдерживать крыс достаточно долго, чтобы [com.name] успела сбежать.<br/>[style.italicsMinorGood([com.Name] благополучно вернется домой.)]",
 								BODYGUARDS_COMBAT_DEFEAT_DRAGGED_OFF) {
 							@Override
 							public void effects() {
@@ -3888,8 +3877,8 @@ public class RatWarrensDialogue {
 						};
 						
 					} else {
-						return new Response("Dragged away",
-								"You're powerless to resist as Vengar drags you off to another part of his lair...",
+						return new Response("Утащенная прочь",
+								"Ты бессильна сопротивляться, пока Венгар тащит тебя в другую часть своего логова...",
 								BODYGUARDS_COMBAT_DEFEAT_DRAGGED_OFF) {
 							@Override
 							public void effects() {
@@ -3950,8 +3939,8 @@ public class RatWarrensDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Stripped",
-						"Murk sets about stripping you naked...",
+				return new Response("Раздета",
+						"Мерк принимается раздевать тебя догола...",
 						BODYGUARDS_COMBAT_DEFEAT_STRIPPED) {
 					@Override
 					public void effects() {
@@ -3975,8 +3964,8 @@ public class RatWarrensDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("New home",
-						"Murk and Vengar lead you into the adjoining room to introduce you to your 'new home'...",
+				return new Response("Новый дом",
+						"Мерк и Венгар ведут тебя в соседнюю комнату, чтобы представить твой «новый дом»...",
 						BODYGUARDS_COMBAT_DEFEAT_STRIPPED_END) {
 					@Override
 					public void effects() {
@@ -4003,8 +3992,8 @@ public class RatWarrensDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index == 1) {
-				return new ResponseSex("Blowjob",
-						"Do what's expected of you and obediently give Vengar a blowjob.",
+				return new ResponseSex("Минет",
+						"Сделай то, чего от тебя ждут, и послушно отсоси Венгару.",
 						false,
 						false,
 						getStocksManager(Util.newArrayListOfValues(Main.game.getNpc(Vengar.class)), null),
@@ -4019,8 +4008,8 @@ public class RatWarrensDialogue {
 				};
 				
 			} else if (index == 2) {
-				return new ResponseSex("Eager blowjob",
-						"Make a show of how willing you are to obediently give Vengar a blowjob.",
+				return new ResponseSex("Жадно отсосать",
+						"Показать всем своим видом, как сильно ты хочешь послушно отсосать Венгару.",
 						false,
 						false,
 						getStocksManager(Util.newArrayListOfValues(Main.game.getNpc(Vengar.class)), SexPace.SUB_EAGER),
@@ -4035,8 +4024,8 @@ public class RatWarrensDialogue {
 				};
 				
 			} else if (index == 3) {
-				return new ResponseSex("Resist blowjob",
-						"Do your best to resist performing giving Vengar a blowjob.",
+				return new ResponseSex("Сопротивляться минету",
+						"Сделай всё возможное, чтобы сопротивляться, когда Венгар попытается отсосать тебе.",
 						false,
 						false,
 						getStocksManager(Util.newArrayListOfValues(Main.game.getNpc(Vengar.class)), SexPace.SUB_RESISTING),
@@ -4055,14 +4044,14 @@ public class RatWarrensDialogue {
 		}
 	};
 
-	public static final DialogueNode BODYGUARDS_COMBAT_DEFEAT_AFTER_MILKING_ROOM_SEX = new DialogueNode("Finished", "", true) {
+	public static final DialogueNode BODYGUARDS_COMBAT_DEFEAT_AFTER_MILKING_ROOM_SEX = new DialogueNode("Завершено", "", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 15*60;
 		}
 		@Override
 		public String getDescription(){
-			return "Having had his fun, Vengar steps back and prepares to leave...";
+			return "Насладившись, Венгар отстраняется и готовится уйти...";
 		}
 		@Override
 		public String getContent() {
@@ -4071,7 +4060,7 @@ public class RatWarrensDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Murk", "Murk reappears to tell you what's in store for you next...", RatWarrensCaptiveDialogue.CAPTIVE_DAY_0) {
+				return new Response("Мерк", "Мерк снова появляется, чтобы рассказать, что ждет тебя дальше...", RatWarrensCaptiveDialogue.CAPTIVE_DAY_0) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/submission/ratWarrens/captive", "CAPTIVE_DAY_0"));
@@ -4098,7 +4087,7 @@ public class RatWarrensDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Defend", "Defend yourself against the rat-girls!", VENGARS_HALL_APPROACH_THREATEN_KNOCK_OUT_CHAOS);
+				return new Response("Защита", "Защищайся от крысодевок!", VENGARS_HALL_APPROACH_THREATEN_KNOCK_OUT_CHAOS);
 			}
 			return null;
 		}
@@ -4132,8 +4121,8 @@ public class RatWarrensDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				return new ResponseSex(
-						"Submit",
-						"Tell Vengar that he can do whatever he wants with you...",
+						"Подчиниться",
+						"Скажи Венгару, что он может делать с тобой всё, что захочет...",
 						true,
 						true,
 						new SMGeneric(
@@ -4151,8 +4140,8 @@ public class RatWarrensDialogue {
 				
 			} else if(index==2) {
 				return new ResponseSex(
-						"Dominate",
-						"Tell Vengar that he's going to submit to you...",
+						"Доминировать",
+						"Скажи Венгару, что он будет тебе подчиняться...",
 						true,
 						true,
 						new SMGeneric(
@@ -4172,7 +4161,7 @@ public class RatWarrensDialogue {
 		}
 	};
 
-	public static final DialogueNode VENGARS_BEDROOM_AFTER_SEX = new DialogueNode("Finished", "Vengar is satisfied, and brings an end to the sex...", true) {
+	public static final DialogueNode VENGARS_BEDROOM_AFTER_SEX = new DialogueNode("Завершено", "Венгар удовлетворен и заканчивает секс...", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 5*60;
@@ -4184,7 +4173,7 @@ public class RatWarrensDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Leave", "Tell Vengar that you'll see him again some other time before taking your leave.", VENGARS_HALL_CORRIDOR_EXIT_NO_CONTENT) {
+				return new Response("Уйти", "Скажи Венгару, что увидишься с ним как-нибудь в другой раз, прежде чем попрощаться.", VENGARS_HALL_CORRIDOR_EXIT_NO_CONTENT) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/submission/ratWarrens/core", "VENGARS_BEDROOM_AFTER_SEX_LEAVE"));
@@ -4197,7 +4186,7 @@ public class RatWarrensDialogue {
 		}
 	};
 	
-	public static final DialogueNode LEXA_VISIT = new DialogueNode("The Gambling Den", "", true) {
+	public static final DialogueNode LEXA_VISIT = new DialogueNode("Игорный дом", "", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 5*60;
@@ -4210,11 +4199,11 @@ public class RatWarrensDialogue {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				if(!Main.game.getNpc(Axel.class).getSexualOrientation().isAttractedToFeminine() && Main.game.getPlayer().isFeminine()) {
-					return new Response("Threesome", "[axel.Name] is only attracted to masculine people, and as such, is unwilling to have sex with you...", null);
+					return new Response("Трио", "[axel.Name] привлекают только маскулинные люди, поэтому она не желает заниматься с тобой сексом...", null);
 				}
 				return new ResponseSex(
-						"Threesome",
-						"Join Vengar in having dominant sex with [axel.name]...",
+						"Трио",
+						"Присоединись к Венгару, чтобы доминировать над [axel.name] во время секса...",
 						true,
 						true,
 						new SMGeneric(
@@ -4235,8 +4224,8 @@ public class RatWarrensDialogue {
 				
 			} else if(index==2) {
 				return new ResponseSex(
-						"Watch",
-						"Watch Vengar fuck [axel.name]...",
+						"Смотреть",
+						"Наблюдай, как Венгар трахает [axel.name]...",
 						true,
 						true,
 						new SMGeneric(
@@ -4253,7 +4242,7 @@ public class RatWarrensDialogue {
 						UtilText.parseFromXMLFile("places/submission/ratWarrens/core", "LEXA_VISIT_WATCH", getGuards(true)));
 				
 			} else if(index==3) {
-				return new Response("Leave", "Decide against doing anything lewd with Vengar and [axel.name], and instead leave the two of them to it...", PlaceType.SUBMISSION_GAMBLING_DEN.getDialogue(false)) {
+				return new Response("Уйти", "Реши не заниматься ничем непристойным с Венгаром и [axel.name], а вместо этого оставить их наедине...", PlaceType.SUBMISSION_GAMBLING_DEN.getDialogue(false)) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/submission/ratWarrens/core", "LEXA_VISIT_LEAVE", getGuards(true)));
@@ -4268,7 +4257,7 @@ public class RatWarrensDialogue {
 		}
 	};
 	
-	public static final DialogueNode LEXA_VISIT_AFTER_SEX = new DialogueNode("Finished", "Vengar is satisfied, and brings an end to the sex...", true) {
+	public static final DialogueNode LEXA_VISIT_AFTER_SEX = new DialogueNode("Завершено", "Венгар удовлетворен и заканчивает секс...", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 5*60;
@@ -4280,7 +4269,7 @@ public class RatWarrensDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue", "You're left alone with [axel.name] back in the Gambling Den's main entrance.", PlaceType.GAMBLING_DEN_ENTRANCE.getDialogue(false)) {
+				return new Response("Продолжить", "Ты остаешься наедине с [axel.name] у главного входа в Игорный дом.", PlaceType.GAMBLING_DEN_ENTRANCE.getDialogue(false)) {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setLocation(WorldType.GAMBLING_DEN, PlaceType.GAMBLING_DEN_ENTRANCE, false);
@@ -4314,7 +4303,7 @@ public class RatWarrensDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue", "Continue on your way...", Main.game.getDefaultDialogue(false));
+				return new Response("Продолжить", "Продолжить путь...", Main.game.getDefaultDialogue(false));
 			}
 			return null;
 		}

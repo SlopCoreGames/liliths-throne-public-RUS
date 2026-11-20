@@ -52,11 +52,11 @@ public interface SexManagerInterface {
 	}
 
 	public default String getDefaultSexTitle() {
-		return (!Main.sex.isConsensual() && Main.getProperties().hasValue(PropertyValue.nonConContent)?"Non-consensual ":"")
-				+(Main.sex.isPublicSex()?"Public ":"")
+		return (!Main.sex.isConsensual() && Main.getProperties().hasValue(PropertyValue.nonConContent)?"Принудительный ":"")
+				+(Main.sex.isPublicSex()?"Публичный ":"")
 				+(getPosition().getName().isEmpty()
-						?(Main.sex.getAllParticipants(false).size()>1?"Sex":"Masturbation")
-						:(Main.sex.getAllParticipants(false).size()>1?"Sex: ":"Masturbation: ")+getPosition().getName());
+						?(Main.sex.getAllParticipants(false).size()>1?"Секс":"Мастурбация")
+						:(Main.sex.getAllParticipants(false).size()>1?"Секс: ":"Мастурбация: ")+getPosition().getName());
 	}
 	
 	public AbstractSexPosition getPosition();
@@ -551,19 +551,19 @@ public interface SexManagerInterface {
 				raceNames.add(AbstractSubspecies.getMainSubspeciesOfRace(racesPresent.get(i)).getNamePlural(null));
 			}
 			if(raceNames.size() < racesPresent.size()) {
-				raceNames.add("many other races");
+				raceNames.add("многочисленных других рас");
 			}
 			
 			return applyPublicSexFormatting(
 						Main.sex.isMasturbation()
-							?"A crowd of "+Util.stringsToStringList(raceNames, false)+" quickly forms around you, eager to watch your erotic display..."
-							:"A crowd of "+Util.stringsToStringList(raceNames, false)+" quickly forms around you and [npc.name], eager to watch your erotic display...");
+							?"Толпа "+Util.stringsToStringList(raceNames, false)+" быстро собирается вокруг тебя, жаждая увидеть твое эротическое шоу..."
+							:"Толпа "+Util.stringsToStringList(raceNames, false)+" быстро собирается вокруг тебя и [npc.name], жаждая увидеть ваше эротическое шоу...");
 			
 		} else {
 			return applyPublicSexFormatting(
 						Main.sex.isMasturbation()
 							?""
-							:"A crowd quickly forms around you and [npc.name], eager to watch your erotic display...");
+							:"Вокруг тебя и [npc.name] быстро собирается толпа, жаждущая увидеть твое эротическое представление...");
 		}
 	}
 	
@@ -578,53 +578,53 @@ public interface SexManagerInterface {
 		if(Main.sex.isMasturbation()) {
 			return applyPublicSexFormatting(
 						UtilText.returnStringAtRandom(
-							"The crowd of onlookers laugh and cheer as they look on.",
-							"You hear someone in the crowd wolf-whistling as they watch you masturbating.",
+							"Толпа зрителей смеется и ликует, наблюдая за тобой.",
+							"Ты слышишь, как кто-то в толпе одобрительно свистит, глядя на то, как ты мастурбируешь.",
 							enforcersPresent
-								?"A pair of Enforcers shove their way through the crowd, but instead of putting a stop to your fun, they join the onlookers in laughing and commenting on your performance."
+								?"Пара Enforcer проталкивается сквозь толпу, но вместо того чтобы прервать ваше веселье, они присоединяются к зрителям, смеясь и комментируя твое выступление."
 								:"",
-							"You hear the crowd that's gathered to watch you commenting on your performance.",
-							"Cheering and laughing, the crowd of onlookers watch as you continue masturbating.",
-							"You glance across to see several members of the crowd touching themselves as they watch you go at it.",
-							"The crowd cheers you on as you carry on masturbating in front of them.",
-							"Several members of the crowd shout and cheer as you carry on masturbating in front of them."));
+							"Ты слышишь, как толпа, собравшаяся посмотреть на тебя, комментирует твои старания.",
+							"Под крики и смех толпа зрителей наблюдает за тем, как ты продолжаешь мастурбировать.",
+							"Ты бросаешь взгляд в сторону и видишь, как несколько человек в толпе ласкают себя, наблюдая за твоим напором.",
+							"Толпа подбадривает тебя, пока ты продолжаешь мастурбировать перед ними.",
+							"Несколько человек в толпе кричат и ликуют, пока ты продолжаешь мастурбировать перед ними."));
 			
 		} else if(Main.sex.getAllParticipants(false).contains(Main.game.getPlayer())) {
 			return applyPublicSexFormatting(
 					UtilText.parse(Main.sex.getTargetedPartner(Main.game.getPlayer()),
 							UtilText.returnStringAtRandom(
-								"The crowd of onlookers laugh and cheer as they look on.",
-								"You hear someone in the crowd wolf-whistling as they watch you having sex.",
+								"Толпа зрителей смеется и ликует, наблюдая за тобой.",
+								"Ты слышишь, как кто-то в толпе одобрительно свистит, наблюдая за вашим сексом.",
 								enforcersPresent
-									?"A pair of Enforcers shove their way through the crowd, but instead of putting a stop to your fun, they join the onlookers in laughing and commenting on your performance."
+									?"Пара Enforcer проталкивается сквозь толпу, но вместо того чтобы прервать ваше веселье, они присоединяются к зрителям, смеясь и комментируя твое выступление."
 									:"",
-								"You hear the crowd that's gathered to watch you commenting on your performance.",
-								"You hear the crowd that's gathered to watch you commenting on [npc.namePos] performance.",
-								"Cheering and laughing, the crowd of onlookers watch as you continue having sex with [npc.name].",
-								"You glance across to see several members of the crowd touching themselves as they watch you and [npc.name] go at it.",
-								"The crowd cheers you on as you and [npc.name] carry on having sex in front of them.",
-								"The crowd laughs and cheers as you and [npc.name] carry on having sex in front of them.",
-								"Several members of the crowd shout and cheer as you and [npc.name] carry on having sex in front of them.",
-								"Several members of the crowd cheer you on as you and [npc.name] carry on having sex in front of them.")));
+								"Ты слышишь, как толпа, собравшаяся посмотреть на тебя, комментирует твои старания.",
+								"Вы слышите, как собравшаяся толпа комментирует выступление [npc.namePos].",
+								"Смеясь и ликуя, толпа зрителей наблюдает за тем, как вы продолжаете заниматься сексом с [npc.name].",
+								"Вы бросаете взгляд на толпу и видите, как несколько человек ласкают себя, наблюдая за тем, как вы с [npc.name] жарите друг друга.",
+								"Толпа подбадривает вас, пока вы с [npc.name] продолжаете трахаться прямо перед ними.",
+								"Толпа смеется и ликует, пока вы с [npc.name] продолжаете заниматься сексом на их глазах.",
+								"Несколько человек в толпе кричат и улюлюкают, пока вы с [npc.name] продолжаете трахаться перед ними.",
+								"Несколько человек в толпе подбадривают вас, пока вы с [npc.name] продолжаете заниматься сексом на их глазах.")));
 			
 		} else {
 			GameCharacter target = Util.randomItemFrom(Main.sex.getDominantParticipants(false).keySet());
 			return applyPublicSexFormatting(
 					UtilText.parse(target, Main.sex.getTargetedPartner(target),
 						UtilText.returnStringAtRandom(
-							"The crowd of onlookers laugh and cheer as they look on.",
-							"You hear someone in the crowd wolf-whistling as they watch [npc.name] fucking [npc2.name].",
+							"Толпа зрителей смеется и ликует, наблюдая за тобой.",
+							"Вы слышите, как кто-то в толпе одобрительно свистит, наблюдая, как [npc.name] трахает [npc2.name].",
 							enforcersPresent
-								?"A pair of Enforcers shove their way through the crowd, but instead of putting a stop to the fun, they join the onlookers in laughing and commenting on your performance."
+								?"Пара Enforcer проталкивается сквозь толпу, но вместо того чтобы остановить веселье, они присоединяются к зрителям, смеясь и комментируя ваше выступление."
 								:"",
-							"You hear the crowd that's gathered to watch [npc.name] commenting on [npc.her] performance.",
-							"You hear the crowd that's gathered to watch [npc2.name] commenting on [npc2.her] performance.",
-							"Cheering and laughing, the crowd of onlookers watch as [npc.name] continues having sex with [npc2.name].",
-							"You glance across to see several members of the crowd touching themselves as they watch [npc.name] and [npc2.name] go at it.",
-							"The crowd cheers [npc.name] on as [npc.she] carries on having sex in front of them.",
-							"The crowd laughs and cheers as [npc.name] and [npc2.name] carry on having sex in front of them.",
-							"Several members of the crowd shout and cheer as [npc.name] and [npc2.name] carry on having sex in front of them.",
-							"Several members of the crowd cheer [npc.name] on as [npc.she] carries on fucking [npc2.name] in front of them.")));
+							"Вы слышите, как собравшаяся толпа комментирует выступление [npc.name] и [npc.her].",
+							"Вы слышите, как собравшаяся толпа комментирует выступление [npc2.name] и [npc2.her].",
+							"Под крики и смех зеваки наблюдают за тем, как [npc.name] продолжает заниматься сексом с [npc2.name].",
+							"Вы бросаете взгляд в сторону и видите, как несколько человек в толпе ласкают себя, наблюдая за тем, как [npc.name] и [npc2.name] трахаются.",
+							"Толпа подбадривает [npc.name], пока [npc.she] продолжает заниматься сексом прямо перед ними.",
+							"Толпа смеется и ликует, пока [npc.name] и [npc2.name] продолжают заниматься сексом на их глазах.",
+							"Несколько человек в толпе кричат и улюлюкают, пока [npc.name] и [npc2.name] продолжают заниматься сексом перед ними.",
+							"Несколько человек в толпе подбадривают [npc.name], пока [npc.she] продолжает трахать [npc2.name] на их глазах.")));
 		}
 	}
 

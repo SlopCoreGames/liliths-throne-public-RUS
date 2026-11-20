@@ -38,7 +38,7 @@ public class CharactersPresentDialogue {
 		} else {
 			CharactersPresentDialogue.characterViewed = (NPC) characterViewed;
 		}
-		menuTitle = "Characters Present ("+Util.capitaliseSentence(CharactersPresentDialogue.characterViewed.getName(true))+")";
+		menuTitle = "Присутствующие персонажи ("+Util.capitaliseSentence(CharactersPresentDialogue.characterViewed.getName(true))+")";
 		menuContent = ((NPC) CharactersPresentDialogue.characterViewed).getCharacterInformationScreen(true);
 
 		if(Main.game.getPlayer().hasCompanion(CharactersPresentDialogue.characterViewed)) {
@@ -122,20 +122,20 @@ public class CharactersPresentDialogue {
 		public String getResponseTabTitle(int index) {
 			if(Main.game.getPlayer().hasCompanion(characterViewed)) {
 				if(index == 0) {
-					return "Characters";
+					return "Персонажи";
 				} else if(index == 1) {
-					return UtilText.parse("[style.colourSex(Sex)]");
+					return UtilText.parse("[style.colourSex(Секс)]");
 				} else if(index == 2) {
-					return UtilText.parse("[style.colourCompanion(Manage)]");
+					return UtilText.parse("[style.colourCompanion(Управление)]");
 				}
 				
 			} else {
 				if(index == 0) {
-					return "Characters";
+					return "Персонажи";
 				} else if(index == 1) {
-					return "Sex";
+					return "Секс";
 				} else if(index == 2) {
-					return "Manage";
+					return "Управление";
 				}
 			}
 			return null;
@@ -149,7 +149,7 @@ public class CharactersPresentDialogue {
 			
 			if(responseTab==0) {
 				if (index == 0) {
-					return new ResponseEffectsOnly("Back", "Stop viewing the characters present and return to the main game."){
+					return new ResponseEffectsOnly("Назад", "Перестать осматривать присутствующих персонажей и вернуться к основной игре."){
 						@Override
 						public void effects() {
 							Main.game.getDialogueFlags().setManagementCompanion(null);
@@ -159,21 +159,21 @@ public class CharactersPresentDialogue {
 					
 				} else if (index <= charactersPresent.size()) {
 					String title = "[npc.Name]";
-					String description = "Take a detailed look at [npc.name].";
+					String description = "Внимательно осмотреть [npc.name].";
 					
 					if(charactersPresent.get(index - 1).equals(characterViewed)) {
 						if(!charactersPresent.get(index - 1).isRaceConcealed() || charactersPresent.get(index - 1).isPlayerKnowsName()) {
 							title = "[style.colourDisabled([npc.Name])]";
-							description = "You are already looking at [npc.name]!";
+							description = "Вы уже смотрите на [npc.name]!";
 						}else {
-							title = "[style.colourDisabled(Unknown person)]";
-							description = "You don't know what this person looks like!";
+							title = "[style.colourDisabled(Неизвестный)]";
+							description = "Вы не знаете, как выглядит этот человек!";
 						}
 							
 						
 					} else if(Main.game.getPlayer().hasCompanion(charactersPresent.get(index - 1))) {
 						title = "[style.colourCompanion([npc.Name])]";
-						description = "Take a detailed look at your [style.colourCompanion(companion)], [npc.name].";
+						description = "Внимательно осмотрите свою [style.colourCompanion(спутницу)], [npc.name].";
 					}
 					
 					return new Response(
@@ -183,7 +183,7 @@ public class CharactersPresentDialogue {
 						@Override
 						public void effects() {
 							characterViewed = charactersPresent.get(index-1);
-							menuTitle = "Characters Present ("+Util.capitaliseSentence(charactersPresent.get(index - 1).getName(true))+")";
+							menuTitle = "Присутствующие персонажи ("+Util.capitaliseSentence(charactersPresent.get(index - 1).getName(true))+")";
 							menuContent = ((NPC) charactersPresent.get(index - 1)).getCharacterInformationScreen(true);
 						}
 					};
@@ -194,7 +194,7 @@ public class CharactersPresentDialogue {
 				
 			} else if (responseTab==1 && Main.game.getPlayer().hasCompanion(characterViewed)) {
 				if (index == 0) {
-					return new ResponseEffectsOnly("Back", "Stop viewing the characters present and return to the main game."){
+					return new ResponseEffectsOnly("Назад", "Перестать осматривать присутствующих персонажей и вернуться к основной игре."){
 						@Override
 						public void effects() {
 							Main.game.getDialogueFlags().setManagementCompanion(null);
@@ -204,13 +204,13 @@ public class CharactersPresentDialogue {
 				} 
 				if(index>0 && index<5 && !characterViewed.isCompanionAvailableForSex(true)) {
 					if(index==1) {
-						return new Response("Sex", characterViewed.getCompanionSexRejectionReason(true), null);
+						return new Response("Секс", characterViewed.getCompanionSexRejectionReason(true), null);
 					}
 					return null;
 				}
 				if(index>5 && index<10 && !characterViewed.isCompanionAvailableForSex(false)) {
 					if(index==6) {
-						return new Response("Submissive Sex", characterViewed.getCompanionSexRejectionReason(false), null);
+						return new Response("Секс в подчиненной позиции", characterViewed.getCompanionSexRejectionReason(false), null);
 					}
 					return null;
 				}
@@ -228,11 +228,11 @@ public class CharactersPresentDialogue {
 		}
 	};
 	
-	public static final DialogueNode AFTER_SEX = new DialogueNode("Step back", "", true) {
+	public static final DialogueNode AFTER_SEX = new DialogueNode("Отступить", "", true) {
 		
 		@Override
 		public String getDescription(){
-			return "Now that you've had your fun, you can step back and leave [npc.name] to recover.";
+			return "Теперь, когда ты вдоволь на楽しみлся, ты можешь отступить и оставить [npc.name] приходить в себя.";
 		}
 
 		@Override
@@ -253,7 +253,7 @@ public class CharactersPresentDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Continue", "Decide what to do next.", AFTER_SEX) {
+				return new Response("Продолжить", "Реши, что делать дальше.", AFTER_SEX) {
 					@Override
 					public DialogueNode getNextDialogue() {
 						return Main.game.getDefaultDialogue(false);
@@ -280,7 +280,7 @@ public class CharactersPresentDialogue {
 		
 		@Override
 		public String getLabel() {
-			return UtilText.parse(getCharacterViewed(), "[npc.NamePos] Perk Tree");
+			return UtilText.parse(getCharacterViewed(), "Древо навыков [npc.NamePos]");
 		}
 		
 		@Override
@@ -288,23 +288,14 @@ public class CharactersPresentDialogue {
 			UtilText.nodeContentSB.setLength(0);
 
 			UtilText.nodeContentSB.append(UtilText.parse(characterViewed,
-					"<details>"
-							+ "<summary>[style.boldPerk(Perk & Trait Information)]</summary>"
-							+ "[style.colourPerk(Perks)] (circular icons) apply permanent boosts to [npc.namePos] attributes.<br/>"
-							+ "[style.colourPerk(Traits)] (square icons) provide unique effects for [npc.name]."
-								+ " Unlike perks, <b>traits will have no effect on [npc.name] until they're slotted into [npc.her] 'Active Traits' bar</b>.<br/>"
-							+ "Perks require perk points to unlock. [npc.Name] earns one perk point each time [npc.she] levels up, and earns an extra two perk points every five levels.<br/><br/>"
-							+ "In addition to the perks that can be purchased via perk points, there are also several special, hidden perks that are unlocked via special events."
-					+ "</details>"));
+					"<details><summary>[style.boldPerk(Информация о Перках и Чертах)]</summary>[style.colourPerk(Перки)] (круглые иконки) дают постоянные бонусы к атрибутам [npc.namePos].<br/>[style.colourPerk(Черты)] (квадратные иконки) дают уникальные эффекты для [npc.name]. В отличие от перков, <b>черты не будут влиять на [npc.name], пока их не вставят в панель [npc.her] «Активные черты»</b>.<br/>Для разблокировки перков требуются очки перков. [npc.Name] получает одно очко перка каждый раз, когда [npc.she] повышает уровень, и получает дополнительные два очка перка каждые пять уровней.<br/><br/>В дополнение к перкам, которые можно купить за очки перков, существуют также несколько специальных скрытых перков, которые открываются через особые события.</details>"));
 			
 			UtilText.nodeContentSB.append(PerkManager.MANAGER.getPerkTreeDisplay(characterViewed, true));
 			
 			UtilText.nodeContentSB.append("</div>");
 			
 			if(!characterViewed.isElemental() && !characterViewed.isDoll()) {
-				UtilText.nodeContentSB.append("<div class='container-full-width' style='padding:8px; text-align:center;'>"
-							+ "<i>Please note that this perk tree is a work-in-progress. This is not the final version, and is just a proof of concept!</i>"
-						+ "</div>");
+				UtilText.nodeContentSB.append("<div class='container-full-width' style='padding:8px; text-align:center;'><i>Пожалуйста, учтите, что это древо перков находится в процессе разработки. Это не финальная версия, а лишь проверка концепции!</i></div>");
 			}
 			
 			return UtilText.nodeContentSB.toString();
@@ -313,10 +304,10 @@ public class CharactersPresentDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 6) {
-				return new Response("Perk Tree", UtilText.parse(characterViewed, "You are already assigning [npc.namePos] perk points."), null);
+				return new Response("Древо навыков", UtilText.parse(characterViewed, "Вы уже распределяете очки навыков [npc.namePos]."), null);
 				
 			} else if(index==7) {
-				return new Response("Reset perks", "Reset all of [npc.namePos] perks and traits, refunding all points spent. (This is a temporary action while the perk tree is still under development.)", PERKS) {
+				return new Response("Сбросить перки", "Сбросить все перки и черты [npc.namePos], вернув все потраченные очки. (Это временная мера, так как древо перков всё еще находится в разработке.)", PERKS) {
 					@Override
 					public void effects() {
 						characterViewed.resetPerksMap(false, false);

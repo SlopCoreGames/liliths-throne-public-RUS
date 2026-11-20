@@ -83,7 +83,7 @@ public class SexPosition {
 		@Override
 		public Value<Boolean, String> isSlotUnlocked(GameCharacter characterToTakeSlot, SexSlot slot, Map<GameCharacter, SexSlot> positioningSlots) {
 			if(characterToTakeSlot.isTaur() && slot==SexSlotMasturbation.SITTING) {
-				return new Value<Boolean, String>(false, UtilText.parse(characterToTakeSlot, "Due to the proportions of [npc.her] animalistic lower body, [npc.nameIsFull] unable to sit down and masturbate at the same time."));
+				return new Value<Boolean, String>(false, UtilText.parse(characterToTakeSlot, "Из-за пропорций звериного низа [npc.her], [npc.nameIsFull] не может одновременно сидеть и мастурбировать."));
 			}
 			
 			return new Value<Boolean, String>(true, "");
@@ -91,19 +91,19 @@ public class SexPosition {
 		@Override
 		public String getDescription(Map<GameCharacter, SexSlot> occupiedSlots) {
 			if(Main.sex.getCharacterInPosition(SexSlotMasturbation.KNEELING)!=null) {
-				return UtilText.parse(Main.sex.getCharacterInPosition(SexSlotMasturbation.KNEELING), "[npc.NameIsFull] kneeling on the floor, ready to masturbate.");
+				return UtilText.parse(Main.sex.getCharacterInPosition(SexSlotMasturbation.KNEELING), "[npc.NameIsFull] стоит на коленях на полу, готовая к мастурбации.");
 			}
 			if(Main.sex.getCharacterInPosition(SexSlotMasturbation.STANDING)!=null) {
-				return UtilText.parse(Main.sex.getCharacterInPosition(SexSlotMasturbation.STANDING), "[npc.NameIsFull] standing upright, ready to masturbate.");
+				return UtilText.parse(Main.sex.getCharacterInPosition(SexSlotMasturbation.STANDING), "[npc.NameIsFull] стоит в полный рост, готовая к мастурбации.");
 			}
 			if(Main.sex.getCharacterInPosition(SexSlotMasturbation.SITTING)!=null) {
-				return UtilText.parse(Main.sex.getCharacterInPosition(SexSlotMasturbation.SITTING), "[npc.NameIsFull] sitting down, ready to masturbate.");
+				return UtilText.parse(Main.sex.getCharacterInPosition(SexSlotMasturbation.SITTING), "[npc.NameIsFull] сидит, готовая к мастурбации.");
 			}
 			if(Main.sex.getCharacterInPosition(SexSlotMasturbation.KNEELING_PANTIES)!=null) {
-				return UtilText.parse(Main.sex.getCharacterInPosition(SexSlotMasturbation.KNEELING_PANTIES), "[npc.NameIsFull] kneeling on the floor, ready to masturbate with the aid of Lilaya's panties.");
+				return UtilText.parse(Main.sex.getCharacterInPosition(SexSlotMasturbation.KNEELING_PANTIES), "[npc.NameIsFull] стоит на коленях на полу, готовая к мастурбации с помощью трусиков Lilaya.");
 			}
 			
-			return UtilText.parse("You are ready to masturbate.");
+			return UtilText.parse("Вы готовы к мастурбации.");
 		}
 		@Override
 		public Map<SexSlot, Map<SexSlot, SexActionInteractions>> getSlotTargets() {
@@ -128,7 +128,7 @@ public class SexPosition {
 	};
 	
 	
-	public static final AbstractSexPosition STANDING = new AbstractSexPosition("Standing",
+	public static final AbstractSexPosition STANDING = new AbstractSexPosition("Стоя",
 			8,
 			true,
 			SexActionPresets.positioningActionsNew, Util.newArrayListOfValues(KneelingOral.class)) {
@@ -152,8 +152,7 @@ public class SexPosition {
 							if(entry.contains(e.getValue()) && e.getValue()!=slot && !e.getKey().equals(characterToTakeSlot)) {
 								return new Value<Boolean, String>(
 										false,
-										"The slot '"+Util.capitaliseSentence(slot.getDescription())+"' cannot be used while the slot"
-												+ " '"+Util.capitaliseSentence(e.getValue().getDescription())+"' is already assigned to "+(UtilText.parse(e.getKey(), "[npc.name]"))+".");
+										"Слот '"+Util.capitaliseSentence(slot.getDescription())+"' нельзя использовать, пока слот '"+Util.capitaliseSentence(e.getValue().getDescription())+"' уже занят "+(UtilText.parse(e.getKey(), "[npc.name]"))+".");
 							}
 						}
 					}
@@ -176,7 +175,7 @@ public class SexPosition {
 				}
 			}
 			if(!suitablePosition) {
-				return new Value<Boolean, String>(false, "At least one character needs to be in a standing slot for this position to work.");
+				return new Value<Boolean, String>(false, "Для этой позы хотя бы один персонаж должен находиться в положении стоя.");
 			}
 			return new Value<Boolean, String>(true, "");
 		}
@@ -335,118 +334,118 @@ public class SexPosition {
 			
 			int totalDoms = doms.size()+domTaurs.size();
 			if(totalDoms>=2) {
-				sb.append(Util.capitaliseSentence(Util.stringsToStringList(domNames, false))+" are standing side-by-side before ");
+				sb.append(Util.capitaliseSentence(Util.stringsToStringList(domNames, false))+" стоят бок о бок перед ");
 			} else {
 				sb.append(Util.capitaliseSentence(Util.stringsToStringList(domNames, false))
-						+UtilText.parse(mainDom, " [npc.is]")+" standing before ");
+						+UtilText.parse(mainDom, " [npc.is]")+" стоят перед ");
 			}
 
-			sb.append(Util.stringsToStringList(subNames, false)+", ready to have some fun with "
+			sb.append(Util.stringsToStringList(subNames, false)+", готовые повеселиться с "
 					+(subNames.size()>1
-							?(playerInSubs?(playerInSubs?"the "+Util.intToString(subs.size())+" of you":"them"):"them")
+							?(playerInSubs?(playerInSubs?""+Util.intToString(subs.size())+" из вас":"их"):"их")
 							:UtilText.parse(subs.keySet().iterator().next(), " [npc.herHim]"))+". ");
 			
 			// Standing:
 			if(subStandingNames.size()>=2) {
 				sb.append(Util.capitaliseSentence(Util.stringsToStringList(subStandingNames, false))
-						+" are similarly standing beside one another in front of "+(totalDoms==1?UtilText.parse(mainDom, " [npc.herHim]"):(playerInDoms?"the "+Util.intToString(totalDoms)+" of you":"them"))+". ");
+						+" также стоят рядом друг с другом перед "+(totalDoms==1?UtilText.parse(mainDom, " [npc.herHim]"):(playerInDoms?""+Util.intToString(totalDoms)+" из вас":"их"))+". ");
 				
 			} else if(subStandingNames.size()==1) {
 				sb.append(Util.capitaliseSentence(Util.stringsToStringList(subStandingNames, false))
-						+UtilText.parse(mainStandingSub, " [npc.is]")+" standing in front of "+(totalDoms==1?UtilText.parse(mainDom, " [npc.herHim]"):(playerInDoms?"the "+Util.intToString(totalDoms)+" of you":"them"))+". ");
+						+UtilText.parse(mainStandingSub, " [npc.is]")+" стоит перед "+(totalDoms==1?UtilText.parse(mainDom, " [npc.herHim]"):(playerInDoms?""+Util.intToString(totalDoms)+" из вас":"их"))+". ");
 			}
 
 			// Kneeling:
 			if(subKneelingNames.size()>=2) {
 				sb.append(Util.capitaliseSentence(Util.stringsToStringList(subKneelingNames, false))
-						+" are kneeling down beside one another");
+						+" стоят на коленях рядом друг с другом");
 				if(domTaurs.isEmpty()) {
-					sb.append(" before "+(totalDoms==1?UtilText.parse(mainDom, " [npc.herHim]"):(playerInDoms?" you":"the "+Util.intToString(totalDoms)+" of them"))+", ready to perform oral." );
+					sb.append(" перед "+(totalDoms==1?UtilText.parse(mainDom, " [npc.herHim]"):(playerInDoms?" вы":""+Util.intToString(totalDoms)+" ними,"))+"готовые заняться оральным сексом." );
 				} else if(doms.isEmpty()) {
-					sb.append(", and are ready to shuffle forwards beneath "
-								+(totalDoms==1?UtilText.parse(mainDom, " [npc.her] animalistic body"):(playerInDoms?"one of your animalistic bodies":"one of their animalistic bodies"))+" in order to perform oral. ");
+					sb.append(", и они готовы подползти под "
+								+(totalDoms==1?UtilText.parse(mainDom, " [npc.her] звериное тело"):(playerInDoms?"одно из ваших звериных тел":"одно из их звериных тел"))+" чтобы заняться оральным сексом. ");
 				} else {
-					sb.append(", and are ready to shuffle forwards and start performing oral. ");
+					sb.append(", и они готовы подползти вперед и начать оральный секс. ");
 				}
 				
 			} else if(subKneelingNames.size()==1) {
 				sb.append(Util.capitaliseSentence(Util.stringsToStringList(subKneelingNames, false))
-						+UtilText.parse(mainKneelingSub, " [npc.is]")+" kneeling down");
+						+UtilText.parse(mainKneelingSub, " [npc.is]")+" опустившись на колени");
 				if(domTaurs.isEmpty()) {
-					sb.append(" before "+(totalDoms==1?UtilText.parse(mainDom, " [npc.herHim]"):(playerInDoms?" you":"the "+Util.intToString(totalDoms)+" of them"))+", ready to perform oral. ");
+					sb.append(" перед "+(totalDoms==1?UtilText.parse(mainDom, " [npc.herHim]"):(playerInDoms?" вы":""+Util.intToString(totalDoms)+" ними,"))+"готовые заняться оральным сексом. ");
 				} else if(doms.isEmpty()) {
-					sb.append(" and "+UtilText.parse(mainKneelingSub, " [npc.is]")+" ready to shuffle forwards beneath "
-								+(totalDoms==1?UtilText.parse(mainDom, " [npc.her] animalistic body"):(playerInDoms?"one of your animalistic bodies":"one of their animalistic bodies"))+" in order to perform oral. ");
+					sb.append(" и "+UtilText.parse(mainKneelingSub, " [npc.is]")+" готов(а) подползти вперед под "
+								+(totalDoms==1?UtilText.parse(mainDom, " [npc.her] звериное тело"):(playerInDoms?"одно из ваших звериных тел":"одно из их звериных тел"))+" чтобы заняться оральным сексом. ");
 				} else {
-					sb.append(" and "+UtilText.parse(mainKneelingSub, " [npc.is]")+" ready to shuffle forwards and start performing oral. ");
+					sb.append(" и "+UtilText.parse(mainKneelingSub, " [npc.is]")+" готов(а) подползти вперед и начать отыгрывать оральный секс. ");
 				}
 			}
 			// Kneeling size difference:
 			if(subSizeDiffKneelingNames.size()>=2) {
 				sb.append(Util.capitaliseSentence(Util.stringsToStringList(subSizeDiffKneelingNames, false))
-						+" are ready to perform oral, but due to "+(playerInSubs?"your":"their")+" short stature, "+(playerInSubs?"you":"they")+" do not need to kneel, and are instead standing before "
-						+(totalDoms==1?UtilText.parse(mainDom, " [npc.herHim]"):(playerInDoms?" you":"the "+Util.intToString(totalDoms)+" of them"))+".");
+						+" готовы заняться оральным сексом, но из-за "+(playerInSubs?"твоей":"их")+" невысокого роста, "+(playerInSubs?"вы":"они")+" им не нужно вставать на колени, вместо этого они стоят перед "
+						+(totalDoms==1?UtilText.parse(mainDom, " [npc.herHim]"):(playerInDoms?" вы":""+Util.intToString(totalDoms)+" ними,"))+".");
 				
 			} else if(subSizeDiffKneelingNames.size()==1) {
 				sb.append(Util.capitaliseSentence(Util.stringsToStringList(subSizeDiffKneelingNames, false))
-						+UtilText.parse(mainKneelingSizeDiffSub, " [npc.is] ready to perform oral, but due to [npc.her] short stature, [npc.she] [npc.does] not need to kneel, and [npc.is] instead standing before ")
-						+(totalDoms==1?UtilText.parse(mainDom, " [npc.herHim]"):(playerInDoms?" you":"the "+Util.intToString(totalDoms)+" of them"))+".");
+						+UtilText.parse(mainKneelingSizeDiffSub, " [npc.is] готовы заняться оральным сексом, но из-за [npc.her] невысокого роста, [npc.she] [npc.does] не нужно вставать на колени, и [npc.is] вместо этого стоят перед ")
+						+(totalDoms==1?UtilText.parse(mainDom, " [npc.herHim]"):(playerInDoms?" вы":""+Util.intToString(totalDoms)+" ними,"))+".");
 			}
 
 			// Standing behind:
 			if(subStandingBehindNames.size()>=2) {
 				sb.append(Util.capitaliseSentence(Util.stringsToStringList(subStandingBehindNames, false))
-						+" are standing behind, next to one another.");
+						+" стоят сзади, плечом к плечу.");
 				
 			} else if(subStandingBehindNames.size()==1) {
 				sb.append(Util.capitaliseSentence(Util.stringsToStringList(subStandingBehindNames, false))
-						+UtilText.parse(mainStandingBehindSub, " [npc.is]")+" standing behind "+(totalDoms==1?UtilText.parse(mainDom, " [npc.name]"):(playerInDoms?" you":" them"))+".");
+						+UtilText.parse(mainStandingBehindSub, " [npc.is]")+" стоит сзади "+(totalDoms==1?UtilText.parse(mainDom, " [npc.name]"):(playerInDoms?" вы":" их"))+".");
 			}
 			
 			// Kneeling behind:
 			if(subKneelingBehindNames.size()>=2) {
 				sb.append(Util.capitaliseSentence(Util.stringsToStringList(subKneelingBehindNames, false))
-						+" have knelt down beside one another");
+						+" опустились на колени рядом друг с другом");
 				if(domTaurs.isEmpty()) {
-					sb.append(" behind "+(totalDoms==1?UtilText.parse(mainDom, " [npc.herHim]"):(playerInDoms?" you":" them"))+", ready to perform anilingus.");
+					sb.append(" сзади "+(totalDoms==1?UtilText.parse(mainDom, " [npc.herHim]"):(playerInDoms?" вы":" их"))+", готовый заняться анилингусом.");
 				} else if(doms.isEmpty()) {
-					sb.append(" behind "+
+					sb.append(" сзади "+
 							(totalDoms==1
-								?UtilText.parse(mainDom, " [npc.herHim], and are ready to perform oral on [npc.her] animalistic rear-half.")
+								?UtilText.parse(mainDom, " [npc.herHim], и готовы заняться оральным сексом с [npc.her] звериной задницей.")
 								:(playerInDoms
-									?" you, and are ready to perform oral on one of your animalistic rear-halves."
-									:" them, and are ready to perform oral on one of their animalistic rear-halves.")));
+									?" тебя, и готовы заняться оральным сексом с одной из твоих звериных задниц."
+									:" их, и готовы заняться оральным сексом с одной из их звериных задниц.")));
 				} else {
-					sb.append(", and are ready to perform oral on "+(totalDoms==1?UtilText.parse(mainDom, " [npc.her] rear-end."):(playerInDoms?" your rear-ends.":" their rear-ends.")));
+					sb.append(", и готовы заняться оральным сексом с "+(totalDoms==1?UtilText.parse(mainDom, " [npc.her] задницей."):(playerInDoms?" твоими задницами.":" их задницами.")));
 				}
 				
 			} else if(subKneelingBehindNames.size()==1) {
 				sb.append(Util.capitaliseSentence(Util.stringsToStringList(subKneelingBehindNames, false))
-						+UtilText.parse(mainBehindSub, " [npc.is]")+" kneeling down behind "+(totalDoms==1?UtilText.parse(mainDom, " [npc.herHim]"):(playerInDoms?" you":" them")));
+						+UtilText.parse(mainBehindSub, " [npc.is]")+" опустившись на колени позади "+(totalDoms==1?UtilText.parse(mainDom, " [npc.herHim]"):(playerInDoms?" вы":" их")));
 				if(domTaurs.isEmpty()) {
-					sb.append(", ready to perform anilingus.");
+					sb.append(", готовый заняться анилингусом.");
 				} else if(doms.isEmpty()) {
 					sb.append((totalDoms==1
-								?UtilText.parse(mainDom, ", and "+UtilText.parse(mainBehindSub, " [npc.is]")+" ready to perform oral on [npc.her] animalistic rear-half.")
+								?UtilText.parse(mainDom, ", и "+UtilText.parse(mainBehindSub, " [npc.is]")+" готова отсосать [npc.her] звериной заднице.")
 								:(playerInDoms
-									?", and "+UtilText.parse(mainBehindSub, " [npc.is]")+" ready to perform oral on one of your animalistic rear-halves."
-									:", and "+UtilText.parse(mainBehindSub, " [npc.is]")+" ready to perform oral on one of their animalistic rear-halves.")));
+									?", и "+UtilText.parse(mainBehindSub, " [npc.is]")+" готова отсосать одну из твоих звериных задниц."
+									:", и "+UtilText.parse(mainBehindSub, " [npc.is]")+" готова отсосать одну из их звериных задниц.")));
 				} else {
-					sb.append(", ready to perform oral on "+(totalDoms==1?UtilText.parse(mainDom, " [npc.her] rear-end."):(playerInDoms?" your rear-ends.":" their rear-ends.")));
+					sb.append(", готовая отсосать "+(totalDoms==1?UtilText.parse(mainDom, " [npc.her] задницей."):(playerInDoms?" твоими задницами.":" их задницами.")));
 				}
 			}
 			// Kneeling behind size difference:
 			if(subSizeDiffBehindNames.size()>=2) {
 				sb.append(Util.capitaliseSentence(Util.stringsToStringList(subSizeDiffBehindNames, false))
-						+" are positioned behind "+(totalDoms==1?UtilText.parse(mainDom, "[npc.name]"):(playerInDoms?"you":"the "+Util.intToString(totalDoms)+" of them"))
-						+ ", ready to perform oral on "+(totalDoms==1?UtilText.parse(mainDom, " [npc.her] rear-end"):(playerInDoms?" your rear-ends":" their rear-ends"))
-						+", but due to "+(playerInSubs?"your":"their")+" short stature, "+(playerInSubs?"you":"they")+" do not need to kneel, and are instead standing upright.");
+						+" расположены позади "+(totalDoms==1?UtilText.parse(mainDom, "[npc.name]"):(playerInDoms?"вы":""+Util.intToString(totalDoms)+" ними,"))
+						+ ", готовая отсосать "+(totalDoms==1?UtilText.parse(mainDom, " звериная задница [npc.her]"):(playerInDoms?" ваши задницы":" их задницы"))
+						+", но из-за "+(playerInSubs?"твоей":"их")+" невысокого роста, "+(playerInSubs?"вы":"они")+" не нужно вставать на колени, а стоят в полный рост.");
 				
 			} else if(subSizeDiffBehindNames.size()==1) {
 				sb.append(Util.capitaliseSentence(Util.stringsToStringList(subSizeDiffBehindNames, false))
-						+UtilText.parse(mainBehindSizeDiffSub, " [npc.is] positioned behind ")+(totalDoms==1?UtilText.parse(mainDom, "[npc.name]"):(playerInDoms?"you":"the "+Util.intToString(totalDoms)+" of them"))
-						+ ", ready to perform oral on "+(totalDoms==1?UtilText.parse(mainDom, " [npc.her] rear-end"):(playerInDoms?" your rear-ends":" their rear-ends"))
-						+UtilText.parse(mainBehindSizeDiffSub, ", but due to [npc.her] short stature, [npc.she] [npc.does] not need to kneel, and [npc.is] instead standing upright."));
+						+UtilText.parse(mainBehindSizeDiffSub, " [npc.is], стоящий(ая) сзади ")+(totalDoms==1?UtilText.parse(mainDom, "[npc.name]"):(playerInDoms?"вы":""+Util.intToString(totalDoms)+" ними,"))
+						+ ", готовая отсосать "+(totalDoms==1?UtilText.parse(mainDom, " звериная задница [npc.her]"):(playerInDoms?" ваши задницы":" их задницы"))
+						+UtilText.parse(mainBehindSizeDiffSub, ", но из-за низкого роста [npc.her], [npc.she] [npc.does] не нужно вставать на колени, а [npc.is] стоит в полный рост."));
 			}
 			
 
@@ -521,9 +520,9 @@ public class SexPosition {
 				}
 			}
 			if(!shorterMap.isEmpty()) {
-				sb.append("<br/>[style.italicsOrange(Some characters are significantly shorter than others, and as such will be in a position to perform oral on their larger partners even while standing:)]");
+				sb.append("<br/>[style.italicsOrange(Некоторые персонажи значительно ниже остальных, поэтому они могут делать минет своим более крупным партнерам, даже стоя:)]");
 				for(Entry<GameCharacter, List<String>> entry : shorterMap.entrySet()) {
-					sb.append(UtilText.parse(entry.getKey(), "<br/><span style='color:"+entry.getKey().getFemininity().getColour().toWebHexString()+";'>[npc.Name]</span> [npc.is] shorter than "));
+					sb.append(UtilText.parse(entry.getKey(), "<br/><span style='color:"+entry.getKey().getFemininity().getColour().toWebHexString()+";'>[npc.Name]</span> [npc.is] ниже, чем "));
 					sb.append("");
 					sb.append(Util.stringsToStringList(entry.getValue(), false));
 					sb.append(".");
@@ -611,7 +610,7 @@ public class SexPosition {
 	};
 	
 
-	public static final AbstractSexPosition AGAINST_WALL = new AbstractSexPosition("Against [pc.wall]",
+	public static final AbstractSexPosition AGAINST_WALL = new AbstractSexPosition("Прижавшись к [pc.wall]",
 			8,
 			true,
 			SexActionPresets.positioningActionsNew,
@@ -635,8 +634,7 @@ public class SexPosition {
 							if(entry.contains(e.getValue()) && e.getValue()!=slot && !e.getKey().equals(characterToTakeSlot)) {
 								return new Value<Boolean, String>(
 										false,
-										"The slot '"+Util.capitaliseSentence(slot.getDescription())+"' cannot be used while the slot"
-												+ " '"+Util.capitaliseSentence(e.getValue().getDescription())+"' is already assigned to "+(UtilText.parse(e.getKey(), "[npc.name]"))+".");
+										"Слот '"+Util.capitaliseSentence(slot.getDescription())+"' нельзя использовать, пока слот '"+Util.capitaliseSentence(e.getValue().getDescription())+"' уже занят "+(UtilText.parse(e.getKey(), "[npc.name]"))+".");
 							}
 						}
 					}
@@ -672,7 +670,7 @@ public class SexPosition {
 				}
 			}
 			if(!suitablePositionWall || !suitablePositionStandingOrOral) {
-				return new Value<Boolean, String>(false, "At least one character needs to be against [pc.a_wall], and another either standing or performing oral for this position to work.");
+				return new Value<Boolean, String>(false, "Для этой позы как минимум один персонаж должен прижиматься к [pc.a_wall], а другой должен либо стоять, либо делать минет.");
 			}
 			return new Value<Boolean, String>(true, "");
 		}
@@ -758,32 +756,32 @@ public class SexPosition {
 
 			int facingWallCount = facingWallNames.size();
 			if(facingWallCount>=2) {
-				sb.append(Util.capitaliseSentence(Util.stringsToStringList(facingWallNames, false))+" are standing side-by-side facing a nearby [pc.wall]");
+				sb.append(Util.capitaliseSentence(Util.stringsToStringList(facingWallNames, false))+" стоят бок о бок лицом к ближайшему [pc.wall]");
 				
 			} else if(facingWallCount==1) {
-				sb.append(Util.capitaliseSentence(Util.stringsToStringList(facingWallNames, false))+UtilText.parse(mainFacingWall, " [npc.is] standing facing a nearby [pc.wall]"));
+				sb.append(Util.capitaliseSentence(Util.stringsToStringList(facingWallNames, false))+UtilText.parse(mainFacingWall, " [npc.is] стоит лицом к ближайшему [pc.wall]"));
 			}
 			
 			if(backToWallNames.size()>=2) {
 				if(facingWallCount>0) {
-					sb.append(", while "+Util.stringsToStringList(backToWallNames, false)+" are standing beside "
-								+(facingWallCount==1?UtilText.parse(mainFacingWall,"[npc.herHim]"):(playerBackToWall?"you":"them"))+", with "+(playerBackToWall?"your":"their")+" backs to the [pc.wall] instead. ");
+					sb.append(", в то время как "+Util.stringsToStringList(backToWallNames, false)+" стоят рядом с "
+								+(facingWallCount==1?UtilText.parse(mainFacingWall,"[npc.herHim]"):(playerBackToWall?"вы":"их"))+", с "+(playerBackToWall?"твоей":"их")+" вместо этого повернувшись спиной к [pc.wall]. ");
 				} else {
-					sb.append(Util.capitaliseSentence(Util.stringsToStringList(backToWallNames, false))+" are standing side-by-side, with "+(playerBackToWall?"your":"their")+" rears pressed back against the [pc.wall] behind them. ");
+					sb.append(Util.capitaliseSentence(Util.stringsToStringList(backToWallNames, false))+" стоят бок о бок, при этом "+(playerBackToWall?"твоей":"их")+" их зады прижаты к [pc.wall] позади них. ");
 				}
 				
 			} else if(backToWallNames.size()==1) {
 				if(facingWallCount>0) {
-					sb.append(", while "+Util.stringsToStringList(backToWallNames, false)+UtilText.parse(mainBackToWall, " [npc.is] standing beside ")
-							+(facingWallCount==1?UtilText.parse(mainFacingWall,"[npc.herHim]"):(playerBackToWall?"you":"them"))+", with "+UtilText.parse(mainBackToWall,"[npc.her]")+" back to the [pc.wall] instead. ");
+					sb.append(", в то время как "+Util.stringsToStringList(backToWallNames, false)+UtilText.parse(mainBackToWall, " [npc.is] стоит рядом с ")
+							+(facingWallCount==1?UtilText.parse(mainFacingWall,"[npc.herHim]"):(playerBackToWall?"вы":"их"))+", с "+UtilText.parse(mainBackToWall,"[npc.her]")+" вместо этого спиной к [pc.wall]. ");
 				} else {
-					sb.append(Util.capitaliseSentence(Util.stringsToStringList(backToWallNames, false))+UtilText.parse(mainBackToWall, " [npc.is] standing with [npc.her] rear pressed back against a [pc.wall] behind [npc.herHim]. "));
+					sb.append(Util.capitaliseSentence(Util.stringsToStringList(backToWallNames, false))+UtilText.parse(mainBackToWall, " [npc.is] стоит, прижав [npc.her] задницу к [pc.wall] позади [npc.herHim]. "));
 				}
 			} else {
 				if(facingWallCount>1) {
-					sb.append(", with each of "+(playerFacingWall?"you":"them")+" throwing the occasional glance back over "+(playerFacingWall?"your":"their")+" shoulders. ");
+					sb.append(", при этом каждый из "+(playerFacingWall?"вы":"их")+" время от времени оглядывается через "+(playerFacingWall?"твоей":"их")+" плечо. ");
 				} else {
-					sb.append(UtilText.parse(mainFacingWall, ", and occasionally [npc.verb(throw)] a rearward glance back over [npc.her] shoulder. "));
+					sb.append(UtilText.parse(mainFacingWall, ", и время от времени [npc.verb(throw)] бросает взгляд назад через [npc.her] плечо. "));
 				}
 			}
 
@@ -791,37 +789,37 @@ public class SexPosition {
 			int standingCount = standingNames.size();
 			GameCharacter mainWall = mainBackToWall==null?mainFacingWall:mainBackToWall;
 			if(standingCount>=2) {
-				sb.append(Util.capitaliseSentence(Util.stringsToStringList(standingNames, false))+" are positioned so as to be standing right up against "
-							+(totalAgainstWall>1?(playerFacingWall || playerBackToWall?"you":"them"):UtilText.parse(mainWall, "[npc.name]")));
+				sb.append(Util.capitaliseSentence(Util.stringsToStringList(standingNames, false))+" расположены так, чтобы стоять вплотную к "
+							+(totalAgainstWall>1?(playerFacingWall || playerBackToWall?"вы":"их"):UtilText.parse(mainWall, "[npc.name]")));
 				
 			} else if(standingCount==1) {
 				sb.append(Util.capitaliseSentence(Util.stringsToStringList(standingNames, false))
-							+UtilText.parse(mainStanding," [npc.is] positioned so as to be standing right up against ")+(totalAgainstWall>1?(playerFacingWall || playerBackToWall?"you":"them"):UtilText.parse(mainWall, "[npc.name]")));
+							+UtilText.parse(mainStanding," [npc.is] расположен(а) так, чтобы стоять вплотную к ")+(totalAgainstWall>1?(playerFacingWall || playerBackToWall?"вы":"их"):UtilText.parse(mainWall, "[npc.name]")));
 			}
 			
 			if(performingOralNames.size()>=2) {
 				if(standingCount>0) {
-					sb.append(", while "+Util.stringsToStringList(performingOralNames, false)+" are down on "+(playerPerformingOral?"your":"their")+" knees, ready to perform oral on "
-								+(totalAgainstWall==1?UtilText.parse(mainWall,"[npc.name]"):(playerFacingWall || playerBackToWall?"you":"them"))+".");
+					sb.append(", в то время как "+Util.stringsToStringList(performingOralNames, false)+" стоит(ят) на "+(playerPerformingOral?"твоей":"их")+" коленях, готовый(ая) отсосать "
+								+(totalAgainstWall==1?UtilText.parse(mainWall,"[npc.name]"):(playerFacingWall || playerBackToWall?"вы":"их"))+".");
 				} else {
-					sb.append(Util.capitaliseSentence(Util.stringsToStringList(performingOralNames, false))+" are positioned close behind and are down on "+(playerPerformingOral?"your":"their")+" knees, ready to perform oral on "
-								+(totalAgainstWall==1?UtilText.parse(mainWall,"[npc.name]"):(playerFacingWall || playerBackToWall?"you":"them"))+".");
+					sb.append(Util.capitaliseSentence(Util.stringsToStringList(performingOralNames, false))+" расположен(ы) совсем рядом сзади и стоят(ят) на "+(playerPerformingOral?"твоей":"их")+" коленях, готовый(ая) отсосать "
+								+(totalAgainstWall==1?UtilText.parse(mainWall,"[npc.name]"):(playerFacingWall || playerBackToWall?"вы":"их"))+".");
 				}
 				
 			} else if(performingOralNames.size()==1) {
 				if(standingCount>0) {
-					sb.append(", while "+Util.stringsToStringList(performingOralNames, false)+UtilText.parse(mainPerformingOral, " [npc.is] down on [npc.her] knees, ready to perform oral on ")
-								+(totalAgainstWall==1?UtilText.parse(mainWall,"[npc.name]"):(playerFacingWall || playerBackToWall?"you":"them"))+".");
+					sb.append(", в то время как "+Util.stringsToStringList(performingOralNames, false)+UtilText.parse(mainPerformingOral, " [npc.is] на [npc.her] коленях, готовый(ая) отсосать ")
+								+(totalAgainstWall==1?UtilText.parse(mainWall,"[npc.name]"):(playerFacingWall || playerBackToWall?"вы":"их"))+".");
 				} else {
-					sb.append(Util.capitaliseSentence(Util.stringsToStringList(performingOralNames, false))+UtilText.parse(mainPerformingOral, " [npc.is] positioned close behind and [npc.is] down on [npc.her] knees, ready to perform oral on ")
-								+(totalAgainstWall==1?UtilText.parse(mainWall,"[npc.name]"):(playerFacingWall || playerBackToWall?"you":"them"))+".");
+					sb.append(Util.capitaliseSentence(Util.stringsToStringList(performingOralNames, false))+UtilText.parse(mainPerformingOral, " [npc.is] расположен(ы) совсем рядом сзади, а [npc.is] стоит(ят) на [npc.her] коленях, готовый(ая) отсосать ")
+								+(totalAgainstWall==1?UtilText.parse(mainWall,"[npc.name]"):(playerFacingWall || playerBackToWall?"вы":"их"))+".");
 				}
 				
 			} else {
 				if(totalAgainstWall>1) {
-					sb.append(", ready to have some fun with the "+Util.intToString(totalAgainstWall)+" of "+(playerFacingWall?"you":"them")+".");
+					sb.append(", готовый(ая) немного развлечься с "+Util.intToString(totalAgainstWall)+" из "+(playerFacingWall?"вы":"их")+".");
 				} else {
-					sb.append(", ready to have some fun with "+UtilText.parse(mainWall,"[npc.herHim]")+".");
+					sb.append(", готовые повеселиться с "+UtilText.parse(mainWall,"[npc.herHim]")+".");
 				}
 			}
 			
@@ -837,9 +835,9 @@ public class SexPosition {
 				}
 			}
 			if(!shorterMap.isEmpty()) {
-				sb.append("<br/>[style.italicsOrange(Some characters are significantly shorter than others, and as such will be in a position to perform oral on their larger partners even while standing:)]");
+				sb.append("<br/>[style.italicsOrange(Некоторые персонажи значительно ниже остальных, поэтому они могут делать минет своим более крупным партнерам, даже стоя:)]");
 				for(Entry<GameCharacter, List<String>> entry : shorterMap.entrySet()) {
-					sb.append(UtilText.parse(entry.getKey(), "<br/><span style='color:"+entry.getKey().getFemininity().getColour().toWebHexString()+";'>[npc.Name]</span> [npc.is] shorter than "));
+					sb.append(UtilText.parse(entry.getKey(), "<br/><span style='color:"+entry.getKey().getFemininity().getColour().toWebHexString()+";'>[npc.Name]</span> [npc.is] ниже, чем "));
 					sb.append("");
 					sb.append(Util.stringsToStringList(entry.getValue(), false));
 					sb.append(".");
@@ -931,7 +929,7 @@ public class SexPosition {
 	};
 	
 
-	public static final AbstractSexPosition OVER_DESK = new AbstractSexPosition("Over [pc.desk]",
+	public static final AbstractSexPosition OVER_DESK = new AbstractSexPosition("Поверх [pc.desk]",
 			8,
 			true,
 			SexActionPresets.positioningActionsNew, Util.newArrayListOfValues(MissionaryDesk.class)) {
@@ -960,8 +958,7 @@ public class SexPosition {
 							if(entry.contains(e.getValue()) && e.getValue()!=slot && !e.getKey().equals(characterToTakeSlot)) {
 								return new Value<Boolean, String>(
 										false,
-										"The slot '"+Util.capitaliseSentence(slot.getDescription())+"' cannot be used while the slot"
-												+ " '"+Util.capitaliseSentence(e.getValue().getDescription())+"' is already assigned to "+(UtilText.parse(e.getKey(), "[npc.name]"))+".");
+										"Слот '"+Util.capitaliseSentence(slot.getDescription())+"' нельзя использовать, пока слот '"+Util.capitaliseSentence(e.getValue().getDescription())+"' уже занят "+(UtilText.parse(e.getKey(), "[npc.name]"))+".");
 							}
 						}
 					}
@@ -972,28 +969,28 @@ public class SexPosition {
 					|| (slot==SexSlotDesk.HUMPING_TWO && !positioningSlots.containsValue(SexSlotDesk.OVER_DESK_ON_FRONT_TWO) && !positioningSlots.containsValue(SexSlotDesk.OVER_DESK_ON_BACK_TWO))
 					|| (slot==SexSlotDesk.HUMPING_THREE && !positioningSlots.containsValue(SexSlotDesk.OVER_DESK_ON_FRONT_THREE) && !positioningSlots.containsValue(SexSlotDesk.OVER_DESK_ON_BACK_THREE))
 					|| (slot==SexSlotDesk.HUMPING_FOUR && !positioningSlots.containsValue(SexSlotDesk.OVER_DESK_ON_FRONT_FOUR) && !positioningSlots.containsValue(SexSlotDesk.OVER_DESK_ON_BACK_FOUR))) {
-				return new Value<Boolean, String>(false, UtilText.parse(characterToTakeSlot, "There is no free character lying over a [pc.desk] to hump!"));
+				return new Value<Boolean, String>(false, UtilText.parse(characterToTakeSlot, "Нет ни одного свободного персонажа, лежащего на [pc.desk], чтобы его оттрахать!"));
 			}
 
 			// Cannot hump when the person standing behind the intended target is a taur:
 			if((slot==SexSlotDesk.HUMPING && positioningSlots.containsValue(SexSlotDesk.BETWEEN_LEGS) && reversedPositioningSlotsMap.get(SexSlotDesk.BETWEEN_LEGS).isTaur())) {
-				return new Value<Boolean, String>(false, UtilText.parse(characterToTakeSlot, reversedPositioningSlotsMap.get(SexSlotDesk.BETWEEN_LEGS), "[npc.Name] cannot hump anyone while [npc2.namePos] [npc2.legRace]'s body is in the way!"));
+				return new Value<Boolean, String>(false, UtilText.parse(characterToTakeSlot, reversedPositioningSlotsMap.get(SexSlotDesk.BETWEEN_LEGS), "[npc.Name] не может никого оттрахать, пока тело [npc2.namePos] [npc2.legRace] мешает!"));
 			} else if((slot==SexSlotDesk.HUMPING_TWO && positioningSlots.containsValue(SexSlotDesk.BETWEEN_LEGS_TWO) && reversedPositioningSlotsMap.get(SexSlotDesk.BETWEEN_LEGS_TWO).isTaur())) {
-				return new Value<Boolean, String>(false, UtilText.parse(characterToTakeSlot, reversedPositioningSlotsMap.get(SexSlotDesk.BETWEEN_LEGS_TWO), "[npc.Name] cannot hump anyone while [npc2.namePos] [npc2.legRace]'s body is in the way!"));
+				return new Value<Boolean, String>(false, UtilText.parse(characterToTakeSlot, reversedPositioningSlotsMap.get(SexSlotDesk.BETWEEN_LEGS_TWO), "[npc.Name] не может никого оттрахать, пока тело [npc2.namePos] [npc2.legRace] мешает!"));
 			} else if((slot==SexSlotDesk.HUMPING_THREE && positioningSlots.containsValue(SexSlotDesk.BETWEEN_LEGS_THREE) && reversedPositioningSlotsMap.get(SexSlotDesk.BETWEEN_LEGS_THREE).isTaur())) {
-				return new Value<Boolean, String>(false, UtilText.parse(characterToTakeSlot, reversedPositioningSlotsMap.get(SexSlotDesk.BETWEEN_LEGS_THREE), "[npc.Name] cannot hump anyone while [npc2.namePos] [npc2.legRace]'s body is in the way!"));
+				return new Value<Boolean, String>(false, UtilText.parse(characterToTakeSlot, reversedPositioningSlotsMap.get(SexSlotDesk.BETWEEN_LEGS_THREE), "[npc.Name] не может никого оттрахать, пока тело [npc2.namePos] [npc2.legRace] мешает!"));
 			} else if((slot==SexSlotDesk.HUMPING_FOUR && positioningSlots.containsValue(SexSlotDesk.BETWEEN_LEGS_FOUR) && reversedPositioningSlotsMap.get(SexSlotDesk.BETWEEN_LEGS_FOUR).isTaur())) {
-				return new Value<Boolean, String>(false, UtilText.parse(characterToTakeSlot, reversedPositioningSlotsMap.get(SexSlotDesk.BETWEEN_LEGS_FOUR), "[npc.Name] cannot hump anyone while [npc2.namePos] [npc2.legRace]'s body is in the way!"));
+				return new Value<Boolean, String>(false, UtilText.parse(characterToTakeSlot, reversedPositioningSlotsMap.get(SexSlotDesk.BETWEEN_LEGS_FOUR), "[npc.Name] не может никого оттрахать, пока тело [npc2.namePos] [npc2.legRace] мешает!"));
 			}
 			// And vice-versa:
 			if((slot==SexSlotDesk.BETWEEN_LEGS && positioningSlots.containsValue(SexSlotDesk.HUMPING) && characterToTakeSlot.isTaur())) {
-				return new Value<Boolean, String>(false, UtilText.parse(characterToTakeSlot, reversedPositioningSlotsMap.get(SexSlotDesk.HUMPING), "[npc.NamePos] [npc2.legRace]'s body will not fit while [npc2.name] is in the way!"));
+				return new Value<Boolean, String>(false, UtilText.parse(characterToTakeSlot, reversedPositioningSlotsMap.get(SexSlotDesk.HUMPING), "Тело [npc.NamePos] [npc2.legRace] не поместится, пока [npc2.name] мешает!"));
 			} else if((slot==SexSlotDesk.BETWEEN_LEGS_TWO && positioningSlots.containsValue(SexSlotDesk.HUMPING_TWO) && characterToTakeSlot.isTaur())) {
-				return new Value<Boolean, String>(false, UtilText.parse(characterToTakeSlot, reversedPositioningSlotsMap.get(SexSlotDesk.HUMPING_TWO), "[npc.NamePos] [npc2.legRace]'s body will not fit while [npc2.name] is in the way!"));
+				return new Value<Boolean, String>(false, UtilText.parse(characterToTakeSlot, reversedPositioningSlotsMap.get(SexSlotDesk.HUMPING_TWO), "Тело [npc.NamePos] [npc2.legRace] не поместится, пока [npc2.name] мешает!"));
 			} else if((slot==SexSlotDesk.BETWEEN_LEGS_THREE && positioningSlots.containsValue(SexSlotDesk.HUMPING_THREE) && characterToTakeSlot.isTaur())) {
-				return new Value<Boolean, String>(false, UtilText.parse(characterToTakeSlot, reversedPositioningSlotsMap.get(SexSlotDesk.HUMPING_THREE), "[npc.NamePos] [npc2.legRace]'s body will not fit while [npc2.name] is in the way!"));
+				return new Value<Boolean, String>(false, UtilText.parse(characterToTakeSlot, reversedPositioningSlotsMap.get(SexSlotDesk.HUMPING_THREE), "Тело [npc.NamePos] [npc2.legRace] не поместится, пока [npc2.name] мешает!"));
 			} else if((slot==SexSlotDesk.BETWEEN_LEGS_FOUR && positioningSlots.containsValue(SexSlotDesk.HUMPING_FOUR) && characterToTakeSlot.isTaur())) {
-				return new Value<Boolean, String>(false, UtilText.parse(characterToTakeSlot, reversedPositioningSlotsMap.get(SexSlotDesk.HUMPING_FOUR), "[npc.NamePos] [npc2.legRace]'s body will not fit while [npc2.name] is in the way!"));
+				return new Value<Boolean, String>(false, UtilText.parse(characterToTakeSlot, reversedPositioningSlotsMap.get(SexSlotDesk.HUMPING_FOUR), "Тело [npc.NamePos] [npc2.legRace] не поместится, пока [npc2.name] мешает!"));
 			}
 			
 			if(characterToTakeSlot.isTaur()
@@ -1001,7 +998,7 @@ public class SexPosition {
 						|| slot==SexSlotDesk.OVER_DESK_ON_BACK_TWO
 						|| slot==SexSlotDesk.OVER_DESK_ON_BACK_THREE
 						|| slot==SexSlotDesk.OVER_DESK_ON_BACK_FOUR)) {
-				return new Value<Boolean, String>(false, UtilText.parse(characterToTakeSlot, "Due to the proportions of [npc.her] animalistic lower body, [npc.nameIsFull] unable to lie down on [npc.her] back over the [pc.desk]."));
+				return new Value<Boolean, String>(false, UtilText.parse(characterToTakeSlot, "Из-за пропорций звериного низа [npc.her], [npc.nameIsFull] не может лечь на [npc.her] над [pc.desk]."));
 			}
 			
 			return new Value<Boolean, String>(true, "");
@@ -1041,7 +1038,7 @@ public class SexPosition {
 				}
 			}
 			if(!suitablePositionDesk || !suitablePositionStandingOrOral) {
-				return new Value<Boolean, String>(false, "At least one character needs to be on top of the [pc.desk], and another either standing, humping, receiving oral, or performing oral for this position to work.");
+				return new Value<Boolean, String>(false, "Для этой позы как минимум один персонаж должен находиться сверху на [pc.desk], а другой должен либо стоять, либо двигаться навстречу, либо принимать оральный секс, либо делать его.");
 			}
 			return new Value<Boolean, String>(true, "");
 		}
@@ -1180,42 +1177,42 @@ public class SexPosition {
 			
 			int deskBackCount = deskBackNames.size();
 			if(deskBackCount>=2) {
-				sb.append(Util.capitaliseSentence(Util.stringsToStringList(deskBackNames, false))+" are lying back over the [pc.desk]");
+				sb.append(Util.capitaliseSentence(Util.stringsToStringList(deskBackNames, false))+" лежат на спине над [pc.desk]");
 				
 			} else if(deskBackCount==1) {
-				sb.append(Util.capitaliseSentence(Util.stringsToStringList(deskBackNames, false))+UtilText.parse(mainDeskBack, " [npc.is] lying back over the [pc.desk]"));
+				sb.append(Util.capitaliseSentence(Util.stringsToStringList(deskBackNames, false))+UtilText.parse(mainDeskBack, " [npc.is] лежит на спине над [pc.desk]"));
 			}
 			
 			if(deskFrontNames.size()>=2) {
 				if(deskBackCount>0) {
-					sb.append(", while "+Util.stringsToStringList(deskFrontNames, false)+" are lying down, face-first, beside "
-								+(deskBackCount==1?UtilText.parse(mainDeskBack,"[npc.herHim]"):(playerDeskBack?"you":"them"))+". ");
+					sb.append(", в то время как "+Util.stringsToStringList(deskFrontNames, false)+" лежат ниц, рядом с "
+								+(deskBackCount==1?UtilText.parse(mainDeskBack,"[npc.herHim]"):(playerDeskBack?"вы":"их"))+". ");
 				} else {
-					sb.append(Util.capitaliseSentence(Util.stringsToStringList(deskFrontNames, false))+" are lying down, face-first, over the [pc.desk]. "); 
+					sb.append(Util.capitaliseSentence(Util.stringsToStringList(deskFrontNames, false))+" лежат ниц, на [pc.desk]. "); 
 				}
 				
 			} else if(deskFrontNames.size()==1) {
 				if(deskBackCount>0) {
-					sb.append(", while "+Util.stringsToStringList(deskFrontNames, false)+UtilText.parse(mainDeskFront, " [npc.is] lying down, face-first, over the [pc.desk]. "));
+					sb.append(", в то время как "+Util.stringsToStringList(deskFrontNames, false)+UtilText.parse(mainDeskFront, " [npc.is] лежит ниц, на [pc.desk]. "));
 				} else {
-					sb.append(Util.capitaliseSentence(Util.stringsToStringList(deskFrontNames, false))+UtilText.parse(mainDeskFront, " [npc.is] lying down, face-first, over the [pc.desk]. "));
+					sb.append(Util.capitaliseSentence(Util.stringsToStringList(deskFrontNames, false))+UtilText.parse(mainDeskFront, " [npc.is] лежит ниц, на [pc.desk]. "));
 				}
 				
 			} else if(deskBackCount>0) {
 				if(deskBackCount>1) {
-					sb.append(", side-by-side with one another. ");
+					sb.append(", бок о бок друг с другом. ");
 				} else {
-					sb.append(UtilText.parse(mainDeskBack, ", ready to be fucked. "));
+					sb.append(UtilText.parse(mainDeskBack, ", готовый к тому, чтобы его оттрахали. "));
 				}
 			}
 			
 			// Desk taurs:
 			if(deskFrontTaurNames.size()>=2) {
-				sb.append(Util.capitaliseSentence(Util.stringsToStringList(deskFrontTaurNames, false))+" have used their front legs to step up on top of the [pc.desk], before lying down and resting their animalistic lower bodies over it. ");
+				sb.append(Util.capitaliseSentence(Util.stringsToStringList(deskFrontTaurNames, false))+" запрыгнули передними лапами на [pc.desk], а затем улеглись, положив свои звериные низы тел на него. ");
 				
 			} else if(deskFrontTaurNames.size()==1) {
 				sb.append(Util.capitaliseSentence(Util.stringsToStringList(deskFrontTaurNames, false))+UtilText.parse(mainDeskFrontTaur,
-						" [npc.has] used [npc.her] front legs to step up on top of the [pc.desk], before lying down and resting [npc.her] animalistic lower body over it. "));
+						" [npc.has] запрыгнул(а) на [pc.desk], используя [npc.her] передние лапы, а затем улегся(лась), положив [npc.her] звериный низ тела на него. "));
 			}
 			
 
@@ -1229,35 +1226,35 @@ public class SexPosition {
 						:mainDeskFront
 					:mainDeskBack;
 			if(standingCount>=2) {
-				sb.append(Util.capitaliseSentence(Util.stringsToStringList(standingNames, false))+" have moved forwards so as to be standing right up between "
-							+(totalDeskCount>1?(playerDeskBack||playerDeskFront?"your legs":"their legs"):UtilText.parse(mainDesk, "[npc.namePos] [npc.legs]")));
+				sb.append(Util.capitaliseSentence(Util.stringsToStringList(standingNames, false))+" подвинулись вперед, чтобы встать прямо между "
+							+(totalDeskCount>1?(playerDeskBack||playerDeskFront?"твоими ногами":"их ногами"):UtilText.parse(mainDesk, "[npc.namePos] [npc.legs]")));
 				
 			} else if(standingCount==1) {
 				sb.append(Util.capitaliseSentence(Util.stringsToStringList(standingNames, false))
-							+UtilText.parse(mainStanding," [npc.has] moved forwards so as to be standing right up between ")
-							+(totalDeskCount>1?(playerDeskBack||playerDeskFront?"your legs":"their legs"):UtilText.parse(mainDesk, "[npc.namePos] [npc.legs]")));
+							+UtilText.parse(mainStanding," [npc.has] подвинулся(лась) вперед, чтобы встать прямо между ")
+							+(totalDeskCount>1?(playerDeskBack||playerDeskFront?"твоими ногами":"их ногами"):UtilText.parse(mainDesk, "[npc.namePos] [npc.legs]")));
 			}
 			if(standingCount>0) {
 				if(totalDeskCount>1) {
-					sb.append(", ready to have some fun with the "+Util.intToString(totalDeskCount)+" of "+(playerDeskBack||playerDeskFront?"you":"them")+". ");
+					sb.append(", готовый(ая) немного развлечься с "+Util.intToString(totalDeskCount)+" из "+(playerDeskBack||playerDeskFront?"вы":"их")+". ");
 				} else {
-					sb.append(", ready to have some fun with "+UtilText.parse(mainDesk,"[npc.herHim]")+". ");
+					sb.append(", готовые повеселиться с "+UtilText.parse(mainDesk,"[npc.herHim]")+". ");
 				}
 			}
 			
 			int standingCountTaurs = standingNamesTaur.size();
 			if(standingCountTaurs>=2) {
-				sb.append(Util.capitaliseSentence(Util.stringsToStringList(standingNamesTaur, false))+" have stepped up onto the [pc.desk] with their front legs, and are ready to use their feral lower bodies");
+				sb.append(Util.capitaliseSentence(Util.stringsToStringList(standingNamesTaur, false))+" запрыгнули на [pc.desk] передними лапами и готовы использовать свои дикие низы тел");
 				
 			} else if(standingCountTaurs==1) {
 				sb.append(Util.capitaliseSentence(Util.stringsToStringList(standingNamesTaur, false))
-							+UtilText.parse(mainStandingTaur," [npc.has] stepped up onto the [pc.desk] with [npc.her] front legs, and [npc.is] ready to use [npc.her] feral lower body"));
+							+UtilText.parse(mainStandingTaur," [npc.has] запрыгнул(а) на [pc.desk], используя [npc.her] передние лапы, и [npc.is] готов(а) использовать [npc.her] дикий низ тела"));
 			}
 			if(standingCountTaurs>0) {
 				if(totalDeskCount>1) {
-					sb.append(" to mount the "+Util.intToString(totalDeskCount)+" of "+(playerDeskBack||playerDeskFront?"you":"them")+". ");
+					sb.append(" оседлать "+Util.intToString(totalDeskCount)+" из "+(playerDeskBack||playerDeskFront?"вы":"их")+". ");
 				} else {
-					sb.append(" to mount "+UtilText.parse(mainDesk,"[npc.herHim]")+". ");
+					sb.append(" оседлать "+UtilText.parse(mainDesk,"[npc.herHim]")+". ");
 				}
 			}
 			
@@ -1267,12 +1264,12 @@ public class SexPosition {
 			int humpingCount = humpingNames.size();
 			if(humpingCount>0) {
 				if(humpingCount>=2) {
-					sb.append(Util.capitaliseSentence(Util.stringsToStringList(humpingNames, false))+" have eagerly clambered up onto the edge of the [pc.desk], and are ready to start humping their partners.");
+					sb.append(Util.capitaliseSentence(Util.stringsToStringList(humpingNames, false))+" с жадностью взобрались на край [pc.desk] и готовы начать трахать своих партнеров.");
 					
 				} else if(humpingCount==1) {
-					sb.append(UtilText.parse(mainHumping, "[npc.Name] [npc.has] eagerly clambered up onto the edge of the [pc.desk], and [npc.is] ready to start humping"));
+					sb.append(UtilText.parse(mainHumping, "[npc.Name] [npc.has] с жадностью взобрались на край [pc.desk], и [npc.is] готовы начать трахать"));
 					if(totalDeskCount>1) {
-						sb.append(UtilText.parse(mainHumping," [npc.her] partner. "));
+						sb.append(UtilText.parse(mainHumping," [npc.her] партнера. "));
 					} else {
 						sb.append(UtilText.parse(mainDesk," [npc.name]")+". ");
 					}
@@ -1283,31 +1280,31 @@ public class SexPosition {
 			// Performing oral:
 			
 			if(performingOralNames.size()>=2) {
-					sb.append(Util.capitaliseSentence(Util.stringsToStringList(performingOralNames, false))+" are positioned so as to be right up between "
+					sb.append(Util.capitaliseSentence(Util.stringsToStringList(performingOralNames, false))+" расположены так, чтобы оказаться прямо между "
 							+(totalDeskCount>1
-									?(playerDeskBack||playerDeskFront?"your legs":"their legs")+", ready to perform oral on "+(playerDeskBack||playerDeskFront?"you. ":"them. ")
-									:UtilText.parse(mainDesk, "[npc.namePos] [npc.legs], ready to perform oral on [npc.herHim]. ")));
+									?(playerDeskBack||playerDeskFront?"твоими ногами":"их ногами")+", готовая отсосать "+(playerDeskBack||playerDeskFront?"тобой. ":"ними. ")
+									:UtilText.parse(mainDesk, "[npc.namePos] [npc.legs], готовый отсосать [npc.herHim]. ")));
 				
 				
 			} else if(performingOralNames.size()==1) {
-					sb.append(Util.capitaliseSentence(Util.stringsToStringList(performingOralNames, false))+UtilText.parse(mainPerformingOral," [npc.is] positioned so as to be right up between ")
+					sb.append(Util.capitaliseSentence(Util.stringsToStringList(performingOralNames, false))+UtilText.parse(mainPerformingOral," [npc.is] расположена так, чтобы оказаться прямо между ")
 							+(totalDeskCount>1
-									?(playerDeskBack||playerDeskFront?"your legs":"their legs")+", ready to perform oral on "+(playerDeskBack||playerDeskFront?"you. ":"them. ")
-									:UtilText.parse(mainDesk, "[npc.namePos] [npc.legs], ready to perform oral on [npc.herHim]. ")));
+									?(playerDeskBack||playerDeskFront?"твоими ногами":"их ногами")+", готовая отсосать "+(playerDeskBack||playerDeskFront?"тобой. ":"ними. ")
+									:UtilText.parse(mainDesk, "[npc.namePos] [npc.legs], готовый отсосать [npc.herHim]. ")));
 			}
 			
 			boolean additionalDoms = !standingNames.isEmpty() || !standingNamesTaur.isEmpty() || !performingOralNames.isEmpty();
 			if(receivingOralNames.size()>=2) {
-				sb.append(Util.capitaliseSentence(Util.stringsToStringList(receivingOralNames, false))+(additionalDoms?", meanwhile,":"")+" are positioned around the other side of the [pc.desk], next to "
+				sb.append(Util.capitaliseSentence(Util.stringsToStringList(receivingOralNames, false))+(additionalDoms?", тем временем,":"")+" располагаются с другой стороны [pc.desk], рядом с "
 							+(totalDeskCount>1
-									?(playerDeskBack||playerDeskFront?"your faces":"their faces")+", in order to receive oral from "+(playerDeskBack||playerDeskFront?"you.":"them.")
-									:UtilText.parse(mainDesk, "[npc.namePos] [npc.face], in order to receive oral from [npc.herHim].")));
+									?(playerDeskBack||playerDeskFront?"вашими лицами":"их лицами")+", чтобы получить минет от "+(playerDeskBack||playerDeskFront?"тобой.":"ними.")
+									:UtilText.parse(mainDesk, "[npc.namePos] [npc.face], чтобы получить минет от [npc.herHim].")));
 				
 			} else if(receivingOralNames.size()==1) {
-				sb.append(Util.capitaliseSentence(Util.stringsToStringList(receivingOralNames, false))+(additionalDoms?", meanwhile,":"")+UtilText.parse(mainReceivingOral, " [npc.is] positioned around the other side of the [pc.desk], next to ")
+				sb.append(Util.capitaliseSentence(Util.stringsToStringList(receivingOralNames, false))+(additionalDoms?", тем временем,":"")+UtilText.parse(mainReceivingOral, " [npc.is] располагаются с другой стороны [pc.desk], рядом с ")
 						+(totalDeskCount>1
-								?(playerDeskBack||playerDeskFront?"your faces":"their faces")+", in order to receive oral from "+(playerDeskBack||playerDeskFront?"you.":"them.")
-								:UtilText.parse(mainDesk, "[npc.namePos] [npc.face], in order to receive oral from [npc.herHim].")));
+								?(playerDeskBack||playerDeskFront?"вашими лицами":"их лицами")+", чтобы получить минет от "+(playerDeskBack||playerDeskFront?"тобой.":"ними.")
+								:UtilText.parse(mainDesk, "[npc.namePos] [npc.face], чтобы получить минет от [npc.herHim].")));
 			}
 			
 
@@ -1321,15 +1318,15 @@ public class SexPosition {
 				if(deskFrontTaurNames.size()>=2) {
 					sizeDifferenceAdditions.add(
 							Util.capitaliseSentence(Util.stringsToStringList(deskFrontTaurNames, false))
-								+" are unable to perform oral on "+Util.stringsToStringChoice(receivingOralNames, false)+", due to the fact that "
+								+" не могут заняться оральным сексом с "+Util.stringsToStringChoice(receivingOralNames, false)+", из-за того что "
 									+(playerTaurPerformingOral
-											?"you are unable to bend your humanoid upper-bodies down low enough"
-											:"they are unable to bend their humanoid upper-bodies down low enough."));
+											?"вы не можете наклонить свое гуманоидное туловище достаточно низко"
+											:"они не могут наклонить свои гуманоидные туловища достаточно низко."));
 				} else {
 					sizeDifferenceAdditions.add(
 							Util.capitaliseSentence(Util.stringsToStringList(deskFrontTaurNames, false))
 								+UtilText.parse(mainDeskFrontTaur,
-										" [npc.is] unable to perform oral on "+Util.stringsToStringChoice(receivingOralNames, false)+", due to the fact that [npc.sheIsFull] unable to bend [npc.her] humanoid upper-body down low enough."));
+										" [npc.is] не может заняться оральным сексом с "+Util.stringsToStringChoice(receivingOralNames, false)+", из-за того что [npc.sheIsFull] не может наклонить [npc.her] гуманоидное туловище достаточно низко."));
 				}
 			}
 			
@@ -1491,7 +1488,7 @@ public class SexPosition {
 	};
 
 	
-	public static final AbstractSexPosition STOCKS = new AbstractSexPosition("Stocks",
+	public static final AbstractSexPosition STOCKS = new AbstractSexPosition("Стойла",
 			8,
 			true,
 			SexActionPresets.positioningActionsNew,
@@ -1503,13 +1500,13 @@ public class SexPosition {
 						|| positioningSlots.get(characterToTakeSlot)==SexSlotStocks.LOCKED_IN_STOCKS_TWO
 						|| positioningSlots.get(characterToTakeSlot)==SexSlotStocks.LOCKED_IN_STOCKS_THREE
 						|| positioningSlots.get(characterToTakeSlot)==SexSlotStocks.LOCKED_IN_STOCKS_FOUR) {
-					return new Value<Boolean, String>(false, UtilText.parse(characterToTakeSlot, "[npc.NameIsFull] locked into the stocks, and so cannot switch slot!"));
+					return new Value<Boolean, String>(false, UtilText.parse(characterToTakeSlot, "[npc.NameIsFull] зажат в колодки, поэтому не может сменить слот!"));
 					
 				} else if(slot==SexSlotStocks.LOCKED_IN_STOCKS
 						|| slot==SexSlotStocks.LOCKED_IN_STOCKS_TWO
 						|| slot==SexSlotStocks.LOCKED_IN_STOCKS_THREE
 						|| slot==SexSlotStocks.LOCKED_IN_STOCKS_FOUR) {
-					return new Value<Boolean, String>(false, UtilText.parse(characterToTakeSlot, "Characters cannot be locked into or out of stocks during this sex scene!"));
+					return new Value<Boolean, String>(false, UtilText.parse(characterToTakeSlot, "Персонажи не могут быть зажаты в колодки или освобождены из них во время этой секс-сцены!"));
 				}
 			}
 			
@@ -1526,8 +1523,7 @@ public class SexPosition {
 							if(entry.contains(e.getValue()) && e.getValue()!=slot && !e.getKey().equals(characterToTakeSlot)) {
 								return new Value<Boolean, String>(
 										false,
-										"The slot '"+Util.capitaliseSentence(slot.getDescription())+"' cannot be used while the slot"
-												+ " '"+Util.capitaliseSentence(e.getValue().getDescription())+"' is already assigned to "+(UtilText.parse(e.getKey(), "[npc.name]"))+".");
+										"Слот '"+Util.capitaliseSentence(slot.getDescription())+"' нельзя использовать, пока слот '"+Util.capitaliseSentence(e.getValue().getDescription())+"' уже занят "+(UtilText.parse(e.getKey(), "[npc.name]"))+".");
 							}
 						}
 					}
@@ -1548,7 +1544,7 @@ public class SexPosition {
 				}
 			}
 			if(!characterInStocks) {
-				return new Value<Boolean, String>(false, "At least one character needs to be locked into the stocks for this position to work.");
+				return new Value<Boolean, String>(false, "Для этой позы как минимум один персонаж должен быть зажат в колодках.");
 			}
 			return new Value<Boolean, String>(true, "");
 		}
@@ -1682,115 +1678,113 @@ public class SexPosition {
 			int stocksCount = stocksNames.size() + stocksTaurNames.size();
 			GameCharacter soloStocks = mainStocks==null?mainStocksTaur:mainStocks;
 			if(stocksNames.size()>=2) {
-				sb.append(Util.capitaliseSentence(Util.stringsToStringList(allStocksNames, false))+" are locked into "+Util.intToString(stocksNames.size())
-						+" sets of stocks, and are completely at the mercy of anyone who wants to use "+(playerStocks?"you":"them")+". "); 
+				sb.append(Util.capitaliseSentence(Util.stringsToStringList(allStocksNames, false))+" зажаты в "+Util.intToString(stocksNames.size())
+						+" набор колодок, и они полностью во власти любого, кто захочет ими воспользоваться "+(playerStocks?"вы":"их")+". "); 
 				
 			} else if(stocksTaurNames.isEmpty()) {
 				sb.append(Util.capitaliseSentence(Util.stringsToStringList(allStocksNames, false))
 						+UtilText.parse(soloStocks,
-								" [npc.is] locked into a set of stocks, and [npc.is] completely at the mercy of anyone who wants to use [npc.herHim]. ")); 
+								" [npc.is] заперт(а) в колодках, и [npc.is] полностью во власти любого, кто захочет использовать [npc.herHim]. ")); 
 			}
 			
 			if(stocksTaurNames.size()>=2) {
-				sb.append(" Having feral lower bodies, "+Util.stringsToStringList(stocksTaurNames, false)
-						+" have been locked into special sets of stocks, which force their front halves down into a kneeling position, while their animalistic rear halves are held fully upright,"
-						+ " allowing anyone to step up and use their mouths or genitals as they'd like. "); 
+				sb.append(" Обладая звериным низом, "+Util.stringsToStringList(stocksTaurNames, false)
+						+" были заперты в специальные колодки, которые принудительно опускают их передние части в положение на коленях, в то время как их животные задние части удерживаются в вертикальном положении, позволяя любому подойти и использовать их рты или гениталии так, как ему заблагорассудится. "); 
 				
 			} else if(stocksTaurNames.size()==1) {
 				sb.append(UtilText.parse(mainStocksTaur,
-						" Having the feral lower body of [npc.a_legRace], "+Util.stringsToStringList(stocksTaurNames, false)
-						+" [npc.has] been locked into a special set of stocks, which forces [npc.her] front half down into a kneeling position, while [npc.her] animalistic rear half is held fully upright,"
-						+ " allowing anyone to step up and use [npc.her] mouth or genitals as they'd like. ")); 
+						" Обладая звериным низом [npc.a_legRace], "+Util.stringsToStringList(stocksTaurNames, false)
+						+" [npc.has] заперт(а) в специальных колодках, которые принудительно опускают переднюю часть [npc.her] в положение на коленях, в то время как звериная задняя часть [npc.her] удерживается в вертикальном положении, позволяя любому подойти и использовать рот или гениталии [npc.her] так, как ему заблагорассудится. ")); 
 			}
 			
 			// Using stocks target:
 			
 			int standingCount = standingNames.size();
 			if(standingCount>=2) {
-				sb.append(Util.capitaliseSentence(Util.stringsToStringList(standingNames, false))+" have moved forwards so as to be standing right up behind "
+				sb.append(Util.capitaliseSentence(Util.stringsToStringList(standingNames, false))+" подвинулись вперед так, чтобы встать прямо позади "
 							+(stocksCount>1
-									?(playerStocks?"you, ready to take advantage of your immobility. ":"them, ready to take advantage of their immobility. ")
-									:UtilText.parse(soloStocks, "[npc.name], ready to take advantage of [npc.her] immobility. ")));
+									?(playerStocks?"тебя, готовые воспользоваться твоей неподвижностью. ":"них, готовых воспользоваться их неподвижностью. ")
+									:UtilText.parse(soloStocks, "[npc.name], готового(ую) воспользоваться [npc.her] неподвижностью. ")));
 				
 			} else if(standingCount==1) {
 				sb.append(Util.capitaliseSentence(Util.stringsToStringList(standingNames, false))
-							+UtilText.parse(mainStanding," [npc.has] moved forwards so as to be standing right up behind ")
+							+UtilText.parse(mainStanding," [npc.has] двинулся вперед, чтобы встать прямо за ")
 							+(stocksCount>1
-									?(playerStocks?"you, ready to take advantage of your immobility. ":"them, ready to take advantage of their immobility. ")
-									:UtilText.parse(soloStocks, "[npc.name], ready to take advantage of [npc.her] immobility. ")));
+									?(playerStocks?"тебя, готовые воспользоваться твоей неподвижностью. ":"них, готовых воспользоваться их неподвижностью. ")
+									:UtilText.parse(soloStocks, "[npc.name], готового(ую) воспользоваться [npc.her] неподвижностью. ")));
 			}
 			
 			int standingCountTaurs = standingNamesTaur.size();
 			if(standingCountTaurs>=2) {
-				sb.append(Util.capitaliseSentence(Util.stringsToStringList(standingNamesTaur, false))+" have reared up on their hind legs, before planting their front "
-							+UtilText.parse(mainStandingTaur, "[npc.feet]")+" on the top of the stocks, allowing them to "
+				sb.append(Util.capitaliseSentence(Util.stringsToStringList(standingNamesTaur, false))+" встали на задние лапы, прежде чем упереться передними "
+							+UtilText.parse(mainStandingTaur, "[npc.feet]")+" на верхнюю часть колодок, позволяя им "
 							+(stocksCount>1
-									?(playerStocks?"effectively mount the "+(Util.intToString(stocksCount))+" of you. ":"effectively mount the "+(Util.intToString(stocksCount))+" of them. ")
-									:UtilText.parse(soloStocks, "effectively mount [npc.name]. ")));
+									?(playerStocks?"эффективно оседлать "+(Util.intToString(stocksCount))+" тебя. ":"эффективно оседлать "+(Util.intToString(stocksCount))+" их. ")
+									:UtilText.parse(soloStocks, "эффективно оседлать [npc.name]. ")));
 				
 			} else if(standingCountTaurs==1) {
 				sb.append(Util.capitaliseSentence(Util.stringsToStringList(standingNamesTaur, false))
-							+UtilText.parse(mainStanding," [npc.has] reared up on [npc.her] hind legs, before planting [npc.her] front [npc.feet] on the top of the stocks, allowing [npc.herHim] to ")
+							+UtilText.parse(mainStanding," [npc.has] встал на [npc.her] задние лапы, прежде чем упереться [npc.her] передними [npc.feet] на верхнюю часть колодок, позволяя [npc.herHim] ")
 							+(stocksCount>1
 									?(playerStocks
-											?UtilText.parse(mainStanding,"effectively mount whichever of the "+(Util.intToString(stocksCount))+" of you [npc.she] [npc.verb(want)]. ")
-											:UtilText.parse(mainStanding,"effectively mount whichever of the "+(Util.intToString(stocksCount))+" of them [npc.she] [npc.verb(want)]. "))
-									:UtilText.parse(soloStocks, "effectively mount [npc.name]. ")));
+											?UtilText.parse(mainStanding,"эффективно оседлать любого из "+(Util.intToString(stocksCount))+" [npc.she] [npc.verb(want)] тебя. ")
+											:UtilText.parse(mainStanding,"эффективно оседлать любого из "+(Util.intToString(stocksCount))+" [npc.she] [npc.verb(want)] их. "))
+									:UtilText.parse(soloStocks, "эффективно оседлать [npc.name]. ")));
 			}
 			
 			if(humpingNames.size()>=2) {
-				sb.append(Util.capitaliseSentence(Util.stringsToStringList(humpingNames, false))+" have clambered up onto "
+				sb.append(Util.capitaliseSentence(Util.stringsToStringList(humpingNames, false))+" забрались на "
 						+(stocksCount>1
-								?(playerStocks?"your lower back":"their lower backs")+", ready to start humping "+(playerStocks?"you. ":"them. ")
-								:UtilText.parse(soloStocks, "[npc.namePos] lower back, ready to start humping [npc.herHim]. ")));
+								?(playerStocks?"твою поясницу":"их поясницы")+", готовые начать трахать "+(playerStocks?"тобой. ":"ними. ")
+								:UtilText.parse(soloStocks, "[npc.namePos] поясницу, готовую начать трахать [npc.herHim]. ")));
 			
 			
 			} else if(humpingNames.size()==1) {
-					sb.append(Util.capitaliseSentence(Util.stringsToStringList(humpingNames, false))+UtilText.parse(mainHumping," [npc.has] clambered up onto ")
-							+UtilText.parse(soloStocks, "[npc.namePos] lower back, ready to start humping [npc.herHim]. "));
+					sb.append(Util.capitaliseSentence(Util.stringsToStringList(humpingNames, false))+UtilText.parse(mainHumping," [npc.has] забрались на ")
+							+UtilText.parse(soloStocks, "[npc.namePos] поясницу, готовую начать трахать [npc.herHim]. "));
 			}
 			
 			if(performingOralNames.size()>=2) {
-					sb.append(Util.capitaliseSentence(Util.stringsToStringList(performingOralNames, false))+" are positioned so as to be right up between "
+					sb.append(Util.capitaliseSentence(Util.stringsToStringList(performingOralNames, false))+" расположены так, чтобы оказаться прямо между "
 							+(stocksCount>1
-									?(playerStocks?"your legs":"their legs")+", ready to perform oral on "+(playerStocks?"you. ":"them. ")
-									:UtilText.parse(soloStocks, "[npc.namePos] [npc.legs], ready to perform oral on [npc.herHim]. ")));
+									?(playerStocks?"твоими ногами":"их ногами")+", готовая отсосать "+(playerStocks?"тобой. ":"ними. ")
+									:UtilText.parse(soloStocks, "[npc.namePos] [npc.legs], готовый отсосать [npc.herHim]. ")));
 				
 				
 			} else if(performingOralNames.size()==1) {
-					sb.append(Util.capitaliseSentence(Util.stringsToStringList(performingOralNames, false))+UtilText.parse(mainPerformingOral," [npc.is] positioned so as to be right up between ")
+					sb.append(Util.capitaliseSentence(Util.stringsToStringList(performingOralNames, false))+UtilText.parse(mainPerformingOral," [npc.is] расположена так, чтобы оказаться прямо между ")
 							+(stocksCount>1
-									?(playerStocks?"your legs":"their legs")+", ready to perform oral on "+(playerStocks?"you. ":"them. ")
-									:UtilText.parse(soloStocks, "[npc.namePos] [npc.legs], ready to perform oral on [npc.herHim]. ")));
+									?(playerStocks?"твоими ногами":"их ногами")+", готовая отсосать "+(playerStocks?"тобой. ":"ними. ")
+									:UtilText.parse(soloStocks, "[npc.namePos] [npc.legs], готовый отсосать [npc.herHim]. ")));
 			}
 			
 
 			if(beneathNames.size()>=2) {
-					sb.append(Util.capitaliseSentence(Util.stringsToStringList(beneathNames, false))+" have dropped down beneath "
+					sb.append(Util.capitaliseSentence(Util.stringsToStringList(beneathNames, false))+" опустились под "
 							+(stocksCount>1
-									?(playerStocks?"you":"them")+", ready to get fucked. "
-									:UtilText.parse(soloStocks, "[npc.name], ready to get fucked by [npc.herHim]. ")));
+									?(playerStocks?"вы":"их")+", готовая к траху. "
+									:UtilText.parse(soloStocks, "[npc.name], готовая к тому, чтобы ее оттрахал [npc.herHim]. ")));
 				
 				
 			} else if(beneathNames.size()==1) {
-					sb.append(Util.capitaliseSentence(Util.stringsToStringList(beneathNames, false))+UtilText.parse(mainBeneath," [npc.has] dropped down beneath ")
+					sb.append(Util.capitaliseSentence(Util.stringsToStringList(beneathNames, false))+UtilText.parse(mainBeneath," [npc.has] опустилась под ")
 							+(stocksCount>1
-									?(playerStocks?"you":"them")+", ready to get fucked. "
-									:UtilText.parse(soloStocks, "[npc.name], ready to get fucked by [npc.herHim]. ")));
+									?(playerStocks?"вы":"их")+", готовая к траху. "
+									:UtilText.parse(soloStocks, "[npc.name], готовая к тому, чтобы ее оттрахал [npc.herHim]. ")));
 			}
 			
 			boolean additionalDoms = !standingNames.isEmpty() || !standingNamesTaur.isEmpty() || !performingOralNames.isEmpty() || !beneathNames.isEmpty();
 			if(receivingOralNames.size()>=2) {
-				sb.append(Util.capitaliseSentence(Util.stringsToStringList(receivingOralNames, false))+(additionalDoms?", meanwhile,":"")+" are positioned around the other side of the stocks, next to "
+				sb.append(Util.capitaliseSentence(Util.stringsToStringList(receivingOralNames, false))+(additionalDoms?", тем временем,":"")+" расположены по другую сторону колодок, рядом с "
 							+(stocksCount>1
-									?(playerStocks?"your faces":"their faces")+", in order to receive oral from "+(playerStocks?"you.":"them.")
-									:UtilText.parse(soloStocks, "[npc.namePos] [npc.face], in order to receive oral from [npc.herHim].")));
+									?(playerStocks?"вашими лицами":"их лицами")+", чтобы получить минет от "+(playerStocks?"тобой.":"ними.")
+									:UtilText.parse(soloStocks, "[npc.namePos] [npc.face], чтобы получить минет от [npc.herHim].")));
 				
 			} else if(receivingOralNames.size()==1) {
-				sb.append(Util.capitaliseSentence(Util.stringsToStringList(receivingOralNames, false))+(additionalDoms?", meanwhile,":"")+UtilText.parse(mainReceivingOral, " [npc.is] positioned around the other side of the stocks, next to ")
+				sb.append(Util.capitaliseSentence(Util.stringsToStringList(receivingOralNames, false))+(additionalDoms?", тем временем,":"")+UtilText.parse(mainReceivingOral, " [npc.is] расположена по другую сторону колодок, рядом с ")
 						+(stocksCount>1
-								?(playerStocks?"your faces":"their faces")+", in order to receive oral from "+(playerStocks?"you.":"them.")
-								:UtilText.parse(soloStocks, "[npc.namePos] [npc.face], in order to receive oral from [npc.herHim].")));
+								?(playerStocks?"вашими лицами":"их лицами")+", чтобы получить минет от "+(playerStocks?"тобой.":"ними.")
+								:UtilText.parse(soloStocks, "[npc.namePos] [npc.face], чтобы получить минет от [npc.herHim].")));
 			}
 			
 			
@@ -1889,7 +1883,7 @@ public class SexPosition {
 		}
 	};
 	
-	public static final AbstractSexPosition MILKING_STALL = new AbstractSexPosition("Milking stall",
+	public static final AbstractSexPosition MILKING_STALL = new AbstractSexPosition("Доильный станок",
 			8,
 			true,
 			SexActionPresets.positioningActionsNew,
@@ -1901,13 +1895,13 @@ public class SexPosition {
 						|| positioningSlots.get(characterToTakeSlot)==SexSlotMilkingStall.LOCKED_IN_MILKING_STALL_TWO
 						|| positioningSlots.get(characterToTakeSlot)==SexSlotMilkingStall.LOCKED_IN_MILKING_STALL_THREE
 						|| positioningSlots.get(characterToTakeSlot)==SexSlotMilkingStall.LOCKED_IN_MILKING_STALL_FOUR) {
-					return new Value<Boolean, String>(false, UtilText.parse(characterToTakeSlot, "[npc.NameIsFull] locked into the stall, and so cannot switch slot!"));
+					return new Value<Boolean, String>(false, UtilText.parse(characterToTakeSlot, "[npc.NameIsFull] заблокирована в станке, поэтому не может сменить слот!"));
 					
 				} else if(slot==SexSlotMilkingStall.LOCKED_IN_MILKING_STALL
 						|| slot==SexSlotMilkingStall.LOCKED_IN_MILKING_STALL_TWO
 						|| slot==SexSlotMilkingStall.LOCKED_IN_MILKING_STALL_THREE
 						|| slot==SexSlotMilkingStall.LOCKED_IN_MILKING_STALL_FOUR) {
-					return new Value<Boolean, String>(false, UtilText.parse(characterToTakeSlot, "Characters cannot be locked into or out of stalls during this sex scene!"));
+					return new Value<Boolean, String>(false, UtilText.parse(characterToTakeSlot, "Персонажи не могут быть заблокированы в станках или освобождены из них во время этой секс-сцены!"));
 				}
 			}
 			
@@ -1924,8 +1918,7 @@ public class SexPosition {
 							if(entry.contains(e.getValue()) && e.getValue()!=slot && !e.getKey().equals(characterToTakeSlot)) {
 								return new Value<Boolean, String>(
 										false,
-										"The slot '"+Util.capitaliseSentence(slot.getDescription())+"' cannot be used while the slot"
-												+ " '"+Util.capitaliseSentence(e.getValue().getDescription())+"' is already assigned to "+(UtilText.parse(e.getKey(), "[npc.name]"))+".");
+										"Слот '"+Util.capitaliseSentence(slot.getDescription())+"' нельзя использовать, пока слот '"+Util.capitaliseSentence(e.getValue().getDescription())+"' уже занят "+(UtilText.parse(e.getKey(), "[npc.name]"))+".");
 							}
 						}
 					}
@@ -1946,7 +1939,7 @@ public class SexPosition {
 				}
 			}
 			if(!characterInStocks) {
-				return new Value<Boolean, String>(false, "At least one character needs to be locked into the milking stall for this position to work.");
+				return new Value<Boolean, String>(false, "Для этой позы как минимум один персонаж должен быть зафиксирован в доильном стойле.");
 			}
 			return new Value<Boolean, String>(true, "");
 		}
@@ -2080,117 +2073,115 @@ public class SexPosition {
 			int stocksCount = stocksNames.size() + stocksTaurNames.size();
 			GameCharacter soloStocks = mainStocks==null?mainStocksTaur:mainStocks;
 			if(stocksNames.size()>=2) {
-				sb.append(Util.capitaliseSentence(Util.stringsToStringList(allStocksNames, false))+" are locked into "+Util.intToString(stocksNames.size())
-						+" sets of milking stalls, and are completely at the mercy of anyone who wants to use "+(playerStocks?"you":"them")+". "); 
+				sb.append(Util.capitaliseSentence(Util.stringsToStringList(allStocksNames, false))+" зажаты в "+Util.intToString(stocksNames.size())
+						+" наборы доильных стойл и полностью зависят от любого, кто захочет использовать "+(playerStocks?"вы":"их")+". "); 
 				
 			} else if(stocksTaurNames.isEmpty()) {
 				sb.append(Util.capitaliseSentence(Util.stringsToStringList(allStocksNames, false))
 						+UtilText.parse(soloStocks,
-								" [npc.is] locked into a milking stall, and [npc.is] completely at the mercy of anyone who wants to use [npc.herHim]. ")); 
+								" [npc.is] зафиксирован(а) в доильном стойле, а [npc.is] полностью зависит от любого, кто захочет использовать [npc.herHim]. ")); 
 			}
 			
 			if(stocksTaurNames.size()>=2) {
-				sb.append(" Having feral lower bodies, "+Util.stringsToStringList(stocksTaurNames, false)
-						+" have been locked into specially-designed milking stalls, which force their front halves down into a kneeling position, while their animalistic rear halves are held fully upright,"
-						+ " allowing anyone to step up and use their mouths or genitals as they'd like. "); 
+				sb.append(" Обладая звериным низом, "+Util.stringsToStringList(stocksTaurNames, false)
+						+" были зафиксированы в специально сконструированных доильных стойлах, которые принудительно опускают их передние половины в положение на коленях, в то время как их звериные задние половины удерживаются в вертикальном положении, позволяя любому подойти и использовать их рты или гениталии по своему желанию. "); 
 				
 			} else if(stocksTaurNames.size()==1) {
 				sb.append(UtilText.parse(mainStocksTaur,
-						" Having the feral lower body of [npc.a_legRace], "+Util.stringsToStringList(stocksTaurNames, false)
-						+" [npc.has] been locked into a specially-designed milking stall, which forces [npc.her] front half down into a kneeling position, while [npc.her] animalistic rear half is held fully upright,"
-						+ " allowing anyone to step up and use [npc.her] mouth or genitals as they'd like. ")); 
+						" Обладая звериным низом [npc.a_legRace], "+Util.stringsToStringList(stocksTaurNames, false)
+						+" [npc.has] зафиксирован(а) в специально сконструированном доильном стойле, которое принудительно опускает [npc.her] переднюю половину в положение на коленях, в то время как [npc.her] звериная задняя половина удерживается в вертикальном положении, позволяя любому подойти и использовать [npc.her] рот или гениталии по своему желанию. ")); 
 			}
 			
 			// Standing behind:
 			
 			int standingCount = standingNames.size();
 			if(standingCount>=2) {
-				sb.append(Util.capitaliseSentence(Util.stringsToStringList(standingNames, false))+" have moved forwards so as to be standing right up behind "
+				sb.append(Util.capitaliseSentence(Util.stringsToStringList(standingNames, false))+" подвинулись вперед так, чтобы встать прямо позади "
 							+(stocksCount>1
-									?(playerStocks?"you, ready to take advantage of your immobility. ":"them, ready to take advantage of their immobility. ")
-									:UtilText.parse(soloStocks, "[npc.name], ready to take advantage of [npc.her] immobility. ")));
+									?(playerStocks?"тебя, готовые воспользоваться твоей неподвижностью. ":"них, готовых воспользоваться их неподвижностью. ")
+									:UtilText.parse(soloStocks, "[npc.name], готового(ую) воспользоваться [npc.her] неподвижностью. ")));
 				
 			} else if(standingCount==1) {
 				sb.append(Util.capitaliseSentence(Util.stringsToStringList(standingNames, false))
-							+UtilText.parse(mainStanding," [npc.has] moved forwards so as to be standing right up behind ")
+							+UtilText.parse(mainStanding," [npc.has] двинулся вперед, чтобы встать прямо за ")
 							+(stocksCount>1
-									?(playerStocks?"you, ready to take advantage of your immobility. ":"them, ready to take advantage of their immobility. ")
-									:UtilText.parse(soloStocks, "[npc.name], ready to take advantage of [npc.her] immobility. ")));
+									?(playerStocks?"тебя, готовые воспользоваться твоей неподвижностью. ":"них, готовых воспользоваться их неподвижностью. ")
+									:UtilText.parse(soloStocks, "[npc.name], готового(ую) воспользоваться [npc.her] неподвижностью. ")));
 			}
 			
 			int standingCountTaurs = standingNamesTaur.size();
 			if(standingCountTaurs>=2) {
-				sb.append(Util.capitaliseSentence(Util.stringsToStringList(standingNamesTaur, false))+" have reared up on their hind legs, before planting their front "
-							+UtilText.parse(mainStandingTaur, "[npc.feet]")+" on the top of the stall, allowing them to "
+				sb.append(Util.capitaliseSentence(Util.stringsToStringList(standingNamesTaur, false))+" встали на задние лапы, прежде чем упереться передними "
+							+UtilText.parse(mainStandingTaur, "[npc.feet]")+" на вершине стойла, позволяя им "
 							+(stocksCount>1
-									?(playerStocks?"effectively mount the "+(Util.intToString(stocksCount))+" of you. ":"effectively mount the "+(Util.intToString(stocksCount))+" of them. ")
-									:UtilText.parse(soloStocks, "effectively mount [npc.name]. ")));
+									?(playerStocks?"эффективно оседлать "+(Util.intToString(stocksCount))+" тебя. ":"эффективно оседлать "+(Util.intToString(stocksCount))+" их. ")
+									:UtilText.parse(soloStocks, "эффективно оседлать [npc.name]. ")));
 				
 			} else if(standingCountTaurs==1) {
 				sb.append(Util.capitaliseSentence(Util.stringsToStringList(standingNamesTaur, false))
-							+UtilText.parse(mainStanding," [npc.has] reared up on [npc.her] hind legs, before planting [npc.her] front [npc.feet] on the top of the stall, allowing [npc.herHim] to ")
+							+UtilText.parse(mainStanding," [npc.has] поднялся(ась) на [npc.her] задние лапы, прежде чем упереть [npc.her] передние [npc.feet] на вершину стойла, позволяя [npc.herHim] ")
 							+(stocksCount>1
 									?(playerStocks
-											?UtilText.parse(mainStanding,"effectively mount whichever of the "+(Util.intToString(stocksCount))+" of you [npc.she] [npc.verb(want)]. ")
-											:UtilText.parse(mainStanding,"effectively mount whichever of the "+(Util.intToString(stocksCount))+" of them [npc.she] [npc.verb(want)]. "))
-									:UtilText.parse(soloStocks, "effectively mount [npc.name]. ")));
+											?UtilText.parse(mainStanding,"эффективно оседлать любого из "+(Util.intToString(stocksCount))+" [npc.she] [npc.verb(want)] тебя. ")
+											:UtilText.parse(mainStanding,"эффективно оседлать любого из "+(Util.intToString(stocksCount))+" [npc.she] [npc.verb(want)] их. "))
+									:UtilText.parse(soloStocks, "эффективно оседлать [npc.name]. ")));
 			}
 
 			
 			if(humpingNames.size()>=2) {
-				sb.append(Util.capitaliseSentence(Util.stringsToStringList(humpingNames, false))+" have clambered up onto "
+				sb.append(Util.capitaliseSentence(Util.stringsToStringList(humpingNames, false))+" забрались на "
 						+(stocksCount>1
-								?(playerStocks?"your lower back":"their lower backs")+", ready to start humping "+(playerStocks?"you. ":"them. ")
-								:UtilText.parse(soloStocks, "[npc.namePos] lower back, ready to start humping [npc.herHim]. ")));
+								?(playerStocks?"твою поясницу":"их поясницы")+", готовые начать трахать "+(playerStocks?"тобой. ":"ними. ")
+								:UtilText.parse(soloStocks, "[npc.namePos] поясницу, готовую начать трахать [npc.herHim]. ")));
 			
 			
 			} else if(humpingNames.size()==1) {
-					sb.append(Util.capitaliseSentence(Util.stringsToStringList(humpingNames, false))+UtilText.parse(mainHumping," [npc.has] clambered up onto ")
-							+UtilText.parse(soloStocks, "[npc.namePos] lower back, ready to start humping [npc.herHim]. "));
+					sb.append(Util.capitaliseSentence(Util.stringsToStringList(humpingNames, false))+UtilText.parse(mainHumping," [npc.has] забрались на ")
+							+UtilText.parse(soloStocks, "[npc.namePos] поясницу, готовую начать трахать [npc.herHim]. "));
 			}
 			
 			if(performingOralNames.size()>=2) {
-					sb.append(Util.capitaliseSentence(Util.stringsToStringList(performingOralNames, false))+" are positioned so as to be right up between "
+					sb.append(Util.capitaliseSentence(Util.stringsToStringList(performingOralNames, false))+" расположены так, чтобы оказаться прямо между "
 							+(stocksCount>1
-									?(playerStocks?"your legs":"their legs")+", ready to perform oral on "+(playerStocks?"you. ":"them. ")
-									:UtilText.parse(soloStocks, "[npc.namePos] [npc.legs], ready to perform oral on [npc.herHim]. ")));
+									?(playerStocks?"твоими ногами":"их ногами")+", готовая отсосать "+(playerStocks?"тобой. ":"ними. ")
+									:UtilText.parse(soloStocks, "[npc.namePos] [npc.legs], готовый отсосать [npc.herHim]. ")));
 				
 				
 			} else if(performingOralNames.size()==1) {
-					sb.append(Util.capitaliseSentence(Util.stringsToStringList(performingOralNames, false))+UtilText.parse(mainPerformingOral," [npc.is] positioned so as to be right up between ")
+					sb.append(Util.capitaliseSentence(Util.stringsToStringList(performingOralNames, false))+UtilText.parse(mainPerformingOral," [npc.is] расположена так, чтобы оказаться прямо между ")
 							+(stocksCount>1
-									?(playerStocks?"your legs":"their legs")+", ready to perform oral on "+(playerStocks?"you. ":"them. ")
-									:UtilText.parse(soloStocks, "[npc.namePos] [npc.legs], ready to perform oral on [npc.herHim]. ")));
+									?(playerStocks?"твоими ногами":"их ногами")+", готовая отсосать "+(playerStocks?"тобой. ":"ними. ")
+									:UtilText.parse(soloStocks, "[npc.namePos] [npc.legs], готовый отсосать [npc.herHim]. ")));
 			}
 
 			
 			if(beneathNames.size()>=2) {
-					sb.append(Util.capitaliseSentence(Util.stringsToStringList(beneathNames, false))+" have dropped down beneath "
+					sb.append(Util.capitaliseSentence(Util.stringsToStringList(beneathNames, false))+" опустились под "
 							+(stocksCount>1
-									?(playerStocks?"you":"them")+", ready to get fucked. "
-									:UtilText.parse(soloStocks, "[npc.name], ready to get fucked by [npc.herHim]. ")));
+									?(playerStocks?"вы":"их")+", готовая к траху. "
+									:UtilText.parse(soloStocks, "[npc.name], готовая к тому, чтобы ее оттрахал [npc.herHim]. ")));
 				
 				
 			} else if(beneathNames.size()==1) {
-					sb.append(Util.capitaliseSentence(Util.stringsToStringList(beneathNames, false))+UtilText.parse(mainBeneath," [npc.has] dropped down beneath ")
+					sb.append(Util.capitaliseSentence(Util.stringsToStringList(beneathNames, false))+UtilText.parse(mainBeneath," [npc.has] опустилась под ")
 							+(stocksCount>1
-									?(playerStocks?"you":"them")+", ready to get fucked. "
-									:UtilText.parse(soloStocks, "[npc.name], ready to get fucked by [npc.herHim]. ")));
+									?(playerStocks?"вы":"их")+", готовая к траху. "
+									:UtilText.parse(soloStocks, "[npc.name], готовая к тому, чтобы ее оттрахал [npc.herHim]. ")));
 			}
 			
 			boolean additionalDoms = !standingNames.isEmpty() || !standingNamesTaur.isEmpty() || !performingOralNames.isEmpty();
 			if(receivingOralNames.size()>=2) {
-				sb.append(Util.capitaliseSentence(Util.stringsToStringList(receivingOralNames, false))+(additionalDoms?", meanwhile,":"")+" are positioned around the other side of the "+(stocksCount==1?"stall":"stalls")+", next to "
+				sb.append(Util.capitaliseSentence(Util.stringsToStringList(receivingOralNames, false))+(additionalDoms?", тем временем,":"")+" расположены с другой стороны "+(stocksCount==1?"стойла":"стойл")+", рядом с "
 							+(stocksCount>1
-									?(playerStocks?"your faces":"their faces")+", in order to receive oral from "+(playerStocks?"you.":"them.")
-									:UtilText.parse(soloStocks, "[npc.namePos] [npc.face], in order to receive oral from [npc.herHim].")));
+									?(playerStocks?"вашими лицами":"их лицами")+", чтобы получить минет от "+(playerStocks?"тобой.":"ними.")
+									:UtilText.parse(soloStocks, "[npc.namePos] [npc.face], чтобы получить минет от [npc.herHim].")));
 				
 			} else if(receivingOralNames.size()==1) {
-				sb.append(Util.capitaliseSentence(Util.stringsToStringList(receivingOralNames, false))+(additionalDoms?", meanwhile,":"")
-						+UtilText.parse(mainReceivingOral, " [npc.is] positioned around the other side of the "+(stocksCount==1?"stall":"stalls")+", next to ")
+				sb.append(Util.capitaliseSentence(Util.stringsToStringList(receivingOralNames, false))+(additionalDoms?", тем временем,":"")
+						+UtilText.parse(mainReceivingOral, " [npc.is] располагается с другой стороны "+(stocksCount==1?"стойла":"стойл")+", рядом с ")
 						+(stocksCount>1
-								?(playerStocks?"your faces":"their faces")+", in order to receive oral from "+(playerStocks?"you.":"them.")
-								:UtilText.parse(soloStocks, "[npc.namePos] [npc.face], in order to receive oral from [npc.herHim].")));
+								?(playerStocks?"вашими лицами":"их лицами")+", чтобы получить минет от "+(playerStocks?"тобой.":"ними.")
+								:UtilText.parse(soloStocks, "[npc.namePos] [npc.face], чтобы получить минет от [npc.herHim].")));
 			}
 			
 			
@@ -2290,7 +2281,7 @@ public class SexPosition {
 	};
 	
 	
-	public static final AbstractSexPosition ALL_FOURS = new AbstractSexPosition("All fours",
+	public static final AbstractSexPosition ALL_FOURS = new AbstractSexPosition("На четвереньках",
 			8,
 			true,
 			SexActionPresets.positioningActionsNew,
@@ -2314,8 +2305,7 @@ public class SexPosition {
 							if(entry.contains(e.getValue()) && e.getValue()!=slot && !e.getKey().equals(characterToTakeSlot)) {
 								return new Value<Boolean, String>(
 										false,
-										"The slot '"+Util.capitaliseSentence(slot.getDescription())+"' cannot be used while the slot"
-												+ " '"+Util.capitaliseSentence(e.getValue().getDescription())+"' is already assigned to "+(UtilText.parse(e.getKey(), "[npc.name]"))+".");
+										"Слот '"+Util.capitaliseSentence(slot.getDescription())+"' нельзя использовать, пока слот '"+Util.capitaliseSentence(e.getValue().getDescription())+"' уже занят "+(UtilText.parse(e.getKey(), "[npc.name]"))+".");
 							}
 						}
 					}
@@ -2348,7 +2338,7 @@ public class SexPosition {
 							|| slot==SexSlotAllFours.USING_FEET)) {
 				return new Value<Boolean, String>(
 						false,
-						"The slot '"+Util.capitaliseSentence(slot.getDescription())+"' cannot be used unless there is a character assigned to the '"+Util.capitaliseSentence(SexSlotAllFours.ALL_FOURS.getDescription())+"' slot.");
+						"Слот '"+Util.capitaliseSentence(slot.getDescription())+"' нельзя использовать, пока в слот '"+Util.capitaliseSentence(SexSlotAllFours.ALL_FOURS.getDescription())+"' не назначен персонаж.");
 			}
 			if((!positioningSlots.values().contains(SexSlotAllFours.ALL_FOURS_TWO) || positioningSlots.get(characterToTakeSlot)==SexSlotAllFours.ALL_FOURS_TWO)
 					&& (slot==SexSlotAllFours.BEHIND_TWO
@@ -2359,7 +2349,7 @@ public class SexPosition {
 							|| slot==SexSlotAllFours.USING_FEET_TWO)) {
 				return new Value<Boolean, String>(
 						false,
-						"The slot '"+Util.capitaliseSentence(slot.getDescription())+"' cannot be used unless there is a character assigned to the '"+Util.capitaliseSentence(SexSlotAllFours.ALL_FOURS_TWO.getDescription())+"' slot.");
+						"Слот '"+Util.capitaliseSentence(slot.getDescription())+"' нельзя использовать, пока в слот '"+Util.capitaliseSentence(SexSlotAllFours.ALL_FOURS_TWO.getDescription())+"' не назначен персонаж.");
 			}
 			if((!positioningSlots.values().contains(SexSlotAllFours.ALL_FOURS_THREE) || positioningSlots.get(characterToTakeSlot)==SexSlotAllFours.ALL_FOURS_THREE)
 					&& (slot==SexSlotAllFours.BEHIND_THREE
@@ -2370,7 +2360,7 @@ public class SexPosition {
 							|| slot==SexSlotAllFours.USING_FEET_THREE)) {
 				return new Value<Boolean, String>(
 						false,
-						"The slot '"+Util.capitaliseSentence(slot.getDescription())+"' cannot be used unless there is a character assigned to the '"+Util.capitaliseSentence(SexSlotAllFours.ALL_FOURS_THREE.getDescription())+"' slot.");
+						"Слот '"+Util.capitaliseSentence(slot.getDescription())+"' нельзя использовать, пока в слот '"+Util.capitaliseSentence(SexSlotAllFours.ALL_FOURS_THREE.getDescription())+"' не назначен персонаж.");
 			}
 			if((!positioningSlots.values().contains(SexSlotAllFours.ALL_FOURS_FOUR) || positioningSlots.get(characterToTakeSlot)==SexSlotAllFours.ALL_FOURS_FOUR)
 					&& (slot==SexSlotAllFours.BEHIND_FOUR
@@ -2381,7 +2371,7 @@ public class SexPosition {
 							|| slot==SexSlotAllFours.USING_FEET_FOUR)) {
 				return new Value<Boolean, String>(
 						false,
-						"The slot '"+Util.capitaliseSentence(slot.getDescription())+"' cannot be used unless there is a character assigned to the '"+Util.capitaliseSentence(SexSlotAllFours.ALL_FOURS_FOUR.getDescription())+"' slot.");
+						"Слот '"+Util.capitaliseSentence(slot.getDescription())+"' нельзя использовать, пока в слот '"+Util.capitaliseSentence(SexSlotAllFours.ALL_FOURS_FOUR.getDescription())+"' не назначен персонаж.");
 			}
 			
 			return new Value<Boolean, String>(true, "");
@@ -2398,7 +2388,7 @@ public class SexPosition {
 				}
 			}
 			if(!suitablePosition) {
-				return new Value<Boolean, String>(false, "At least one character needs to be down on all fours for this position to work.");
+				return new Value<Boolean, String>(false, "Для этой позы как минимум одному персонажу нужно встать на четвереньки.");
 			}
 			return new Value<Boolean, String>(true, "");
 		}
@@ -2487,26 +2477,26 @@ public class SexPosition {
 						case 0:
 							sb.append(UtilText.parse(allFours,
 									(!allFours.isTaur()
-										?"[npc.NameIsFull] down on all fours, ready to be fucked in the doggy-style position. "
-										:"[npc.NameHasFull] dropped the front legs of [npc.her] lower feral [npc.legRace]'s body down into a kneeling position, while keeping [npc.her] rear end raised up, ready to be fucked. ")));
+										?"[npc.NameIsFull] на четвереньках, готовая к траху в позе догги-стайл. "
+										:"[npc.NameHasFull] опустил переднюю часть дикого тела [npc.her] ниже, заставив [npc.legRace] встать на колени, при этом высоко задрав [npc.her] задницу, готовую к траху. ")));
 							break;
 						case 1:
 							sb.append(UtilText.parse(allFours, fallBackAllFours3,
 									(!allFours.isTaur()
-										?" In a similar manner to [npc2.name], [npc.nameHasFull] dropped down on all fours, presenting [npc.herself] in order to be fucked like an animal. "
-										:" In a similar manner to [npc2.name], [npc.nameHasFull] knelt down with the front half of [npc.her] [npc.legRace] body, while raising [npc.her] [npc.ass+] up in order to be fucked like an animal. ")));
+										?" Подобно [npc2.name], [npc.nameHasFull] тоже опустилась на четвереньки, подставляя [npc.herself] для того, чтобы её трахнули как животное. "
+										:" Подобно [npc2.name], [npc.nameHasFull] опустилась на колени, прижимая переднюю часть тела [npc.her] [npc.legRace], при этом задрав [npc.her] [npc.ass+] вверх, чтобы ее трахали как животное. ")));
 							break;
 						case 2:
 							sb.append(UtilText.parse(Util.newArrayListOfValues(allFours, fallBackAllFours3, fallBackAllFours2),
 									(!allFours.isTaur()
-										?" Just like [npc2.name] and [npc3.name], [npc.nameHasFull] sunk down onto [npc.her] [npc.hands] and knees. "
-										:" Just like [npc2.name] and [npc3.name], [npc.nameHasFull] sunk down onto [npc.her] front [npc.legs], while lifting [npc.her] [npc.ass+] up and presenting [npc.her] lower [npc.legRace]'s body to be rutted. ")));
+										?" Как и [npc2.name] с [npc3.name], [npc.nameHasFull] опустилась на [npc.her] [npc.hands] и колени. "
+										:" Как и [npc2.name] с [npc3.name], [npc.nameHasFull] опустилась на передние [npc.legs] [npc.her], приподняв [npc.her] [npc.ass+] и подставив нижнюю часть тела [npc.her] [npc.legRace] для жесткого траха. ")));
 							break;
 						case 3:
 							sb.append(UtilText.parse(Util.newArrayListOfValues(allFours, fallBackAllFours3, fallBackAllFours2, fallBackAllFours1),
 									(!allFours.isTaur()
-										?" Finishing off the group of four, [npc.nameIsFull] down on all fours beside [npc2.name], [npc3.name], and [npc4.name]. "
-										:" Finishing off the group of four, [npc.nameIsFull] down beside [npc2.name], [npc3.name], and [npc4.name], and [npc.is] presenting [npc.her] feral [npc.legRace]'s body like a horny animal. ")));
+										?" Завершая группу из четырех: [npc.nameIsFull] на четвереньках рядом с [npc2.name], [npc3.name] и [npc4.name]. "
+										:" Завершая группу из четырех: [npc.nameIsFull] лежит рядом с [npc2.name], [npc3.name] и [npc4.name], а [npc.is] подставляет дикое тело [npc.her] [npc.legRace], словно похотливое животное. ")));
 							break;
 					}
 				}
@@ -2515,48 +2505,48 @@ public class SexPosition {
 				if(humping!=null) {
 					if(humping.isSizeDifferenceShorterThan(allFours)) {
 						sb.append(UtilText.parse(humping, allFours,
-								" Not letting [npc.her] smaller stature prevent [npc.herHim] from having fun, [npc.NameHasFull] climbed up onto [npc2.namePos] lower back, before gripping [npc2.her] waist and preparing to start humping [npc2.herHim]."));
+								" Не позволяя [npc.her] низкому росту помешать [npc.herHim] развлечься, [npc.NameHasFull] забралась на [npc2.namePos] поясницу, после чего обхватила [npc2.her] талию, готовясь начать трахать [npc2.herHim]."));
 					} else {
 						sb.append(UtilText.parse(humping, allFours,
-								" [npc.NameHasFull] crouched fully over [npc2.namePos] back, and, bumping [npc.her] groin against [npc2.her] [npc2.ass+], [npc.is] prepared to start humping [npc2.herHim]."));
+								" [npc.NameHasFull] полностью нависла над спиной [npc2.namePos] и, прижавшись [npc.her] пахом к [npc2.her] [npc2.ass+], [npc.is] приготовилась начать трахать [npc2.herHim]."));
 					}
 					continuation = true;
 				}
 				if(behind!=null) {
 					sb.append(UtilText.parse(behind, allFours,
 							!behind.isTaur()
-								?" [npc.NameIsFull] "+(positions.get(1).isStanding(behind)?"standing":"kneeling")+" just behind [npc2.herHim], in a position where [npc.she] can start fucking [npc2.herHim] at any moment."
-								:" [npc.NameHasFull] stepped fully over the top of [npc2.herHim] with [npc.her] feral [npc.legRace]'s body, effectively mounting [npc2.herHim]."));
+								?" [npc.NameIsFull] "+(positions.get(1).isStanding(behind)?"стоя":"на коленях")+" прямо за [npc2.herHim], в позиции, где [npc.she] может начать трахать [npc2.herHim] в любой момент."
+								:" [npc.NameHasFull] полностью перешагнул через [npc2.herHim], нависнув над диким телом [npc.her] [npc.legRace] и фактически оседлав [npc2.herHim]."));
 					continuation = true;
 				}
 				if(behindOral!=null) {
 					sb.append(UtilText.parse(behindOral, allFours,
-							" [npc.NameHasFull] "+(positions.get(2).isStanding(behindOral)?"moved up to stand":"dropped down onto [npc.her] knees")+" behind [npc2.name], ready to perform oral on [npc2.herHim]."));
+							" [npc.NameHasFull] "+(positions.get(2).isStanding(behindOral)?"поднялась, чтобы стоять":"опустилась на [npc.her] колени")+" позади [npc2.name], готовая отсосать [npc2.herHim]."));
 					continuation = true;
 				}
 				if(usingFeet!=null) {
 					sb.append(UtilText.parse(usingFeet, allFours,
-							" By sinking down onto [npc.her] knees behind [npc2.name], [npc.name] [npc.has] positioned [npc.herself] in such a way as to be able to use [npc2.her] [npc2.feet+]."));
+							" Опустившись на [npc.her] колени позади [npc2.name], [npc.name] [npc.has] расположила [npc.herself] так, чтобы иметь возможность использовать [npc2.her] [npc2.feet+]."));
 					continuation = true;
 				}
 
 				if(inFront!=null) {
 					sb.append(UtilText.parse(inFront, allFours,
 							continuation
-							?" Meanwhile, around the other side of [npc2.name], [npc.nameHasFull] "+(positions.get(5).isStanding(inFront)?"stepped":"knelt down")
+							?" Тем временем, с другой стороны [npc2.name], [npc.nameHasFull] "+(positions.get(5).isStanding(inFront)?"шагающие":"опустился на колени")
 									+(inFront.isTaur()
-										?" over the top of [npc2.herHim], before pushing [npc.her] animalistic groin towards [npc2.her] [npc2.face] so that [npc.she] can receive oral from [npc2.herHim]."
-										:" up in front of [npc2.her] [npc2.face], ready to receive oral from [npc2.herHim].")
-							:" Instead of taking advantage of [npc2.herHim] from behind, [npc.nameHasFull] "+(positions.get(5).isStanding(inFront)?"stepped up":"knelt down")
-								+" right in front of [npc2.her] [npc2.face], ready to receive oral from [npc2.herHim]."));
+										?" поверх [npc2.herHim], после чего прижал звериное пах [npc.her] к [npc2.her] [npc2.face] так, чтобы [npc.she] могла получать оральный секс от [npc2.herHim]."
+										:" прямо перед [npc2.her] [npc2.face], готовый принимать оральный секс от [npc2.herHim].")
+							:" Вместо того чтобы заняться [npc2.herHim] сзади, [npc.nameHasFull] "+(positions.get(5).isStanding(inFront)?"подошел":"опустился на колени")
+								+" прямо перед [npc2.her] [npc2.face], готовый принимать оральный секс от [npc2.herHim]."));
 				}
 				if(inFrontAnal!=null) {
 					sb.append(UtilText.parse(inFrontAnal, allFours,
 							continuation
-							?" Meanwhile, around the other side of [npc2.name], [npc.nameHasFull] "+(positions.get(6).isStanding(inFrontAnal)?"stepped up and turned around":"knelt down and shuffled back")
-									+" towards [npc2.her] [npc2.face], ready to put [npc2.her] mouth to use on [npc.her] [npc.ass+]."
-							:" Instead of taking advantage of [npc2.herHim] from behind, [npc.nameHasFull] "+(positions.get(6).isStanding(inFrontAnal)?"stepped up and turned around":"knelt down and shuffled back")
-								+" towards [npc2.her] [npc2.face], ready to put [npc2.her] mouth to use on [npc.her] [npc.ass+]."));
+							?" Тем временем, с другой стороны [npc2.name], [npc.nameHasFull] "+(positions.get(6).isStanding(inFrontAnal)?"подошел и развернулся":"опустилась на колени и отползла назад")
+									+" к [npc2.her] [npc2.face], готовая использовать [npc2.her] рот на [npc.her] [npc.ass+]."
+							:" Вместо того чтобы заняться [npc2.herHim] сзади, [npc.nameHasFull] "+(positions.get(6).isStanding(inFrontAnal)?"подошел и развернулся":"опустился на колени и отполз назад")
+								+" к [npc2.her] [npc2.face], готовый использовать [npc2.her] рот на [npc.her] [npc.ass+]."));
 				}
 
 				if(!skipAllFours) {
@@ -2714,7 +2704,7 @@ public class SexPosition {
 	 * <b>Mating press</b><br/>
 	 * <b>Scissoring</b>
 	 */
-	public static final AbstractSexPosition LYING_DOWN = new AbstractSexPosition("Lying down",
+	public static final AbstractSexPosition LYING_DOWN = new AbstractSexPosition("Лежа",
 			8,
 			true,
 			SexActionPresets.positioningActionsNew,
@@ -2771,8 +2761,7 @@ public class SexPosition {
 							if(entry.contains(e.getValue()) && e.getValue()!=slot && !e.getKey().equals(characterToTakeSlot)) {
 								return new Value<Boolean, String>(
 										false,
-										"The slot '"+Util.capitaliseSentence(slot.getDescription())+"' cannot be used while the slot"
-												+ " '"+Util.capitaliseSentence(e.getValue().getDescription())+"' is already assigned to "+(UtilText.parse(e.getKey(), "[npc.name]"))+".");
+										"Слот '"+Util.capitaliseSentence(slot.getDescription())+"' нельзя использовать, пока слот '"+Util.capitaliseSentence(e.getValue().getDescription())+"' уже занят "+(UtilText.parse(e.getKey(), "[npc.name]"))+".");
 							}
 						}
 					}
@@ -2803,8 +2792,7 @@ public class SexPosition {
 								if(entry.contains(e.getValue()) && e.getValue()!=slot && !e.getKey().equals(characterToTakeSlot)) {
 									return new Value<Boolean, String>(
 											false,
-											"The slot '"+Util.capitaliseSentence(slot.getDescription())+"' cannot be used while the slot"
-													+ " '"+Util.capitaliseSentence(e.getValue().getDescription())+"' is already assigned to "+(UtilText.parse(e.getKey(), "[npc.name]"))+".");
+											"Слот '"+Util.capitaliseSentence(slot.getDescription())+"' нельзя использовать, пока слот '"+Util.capitaliseSentence(e.getValue().getDescription())+"' уже занят "+(UtilText.parse(e.getKey(), "[npc.name]"))+".");
 								}
 							}
 							
@@ -2813,8 +2801,7 @@ public class SexPosition {
 								if(e.getValue()==matingPressSlot && e.getValue()!=slot && !e.getKey().equals(characterToTakeSlot)) {
 									return new Value<Boolean, String>(
 											false,
-											"The slot '"+Util.capitaliseSentence(slot.getDescription())+"' cannot be used while the slot"
-													+ " '"+Util.capitaliseSentence(e.getValue().getDescription())+"' is already assigned to "+(UtilText.parse(e.getKey(), "[npc.name]"))+".");
+											"Слот '"+Util.capitaliseSentence(slot.getDescription())+"' нельзя использовать, пока слот '"+Util.capitaliseSentence(e.getValue().getDescription())+"' уже занят "+(UtilText.parse(e.getKey(), "[npc.name]"))+".");
 								}
 							}
 						}
@@ -2846,8 +2833,7 @@ public class SexPosition {
 								if(entry.contains(e.getValue()) && e.getValue()!=slot && !e.getKey().equals(characterToTakeSlot)) {
 									return new Value<Boolean, String>(
 											false,
-											"The slot '"+Util.capitaliseSentence(slot.getDescription())+"' cannot be used while the slot"
-													+ " '"+Util.capitaliseSentence(e.getValue().getDescription())+"' is already assigned to "+(UtilText.parse(e.getKey(), "[npc.name]"))+".");
+											"Слот '"+Util.capitaliseSentence(slot.getDescription())+"' нельзя использовать, пока слот '"+Util.capitaliseSentence(e.getValue().getDescription())+"' уже занят "+(UtilText.parse(e.getKey(), "[npc.name]"))+".");
 								}
 							}
 							
@@ -2856,8 +2842,7 @@ public class SexPosition {
 								if(e.getValue()==frontalLyingDownSlot && e.getValue()!=slot && !e.getKey().equals(characterToTakeSlot)) {
 									return new Value<Boolean, String>(
 											false,
-											"The slot '"+Util.capitaliseSentence(slot.getDescription())+"' cannot be used while the slot"
-													+ " '"+Util.capitaliseSentence(e.getValue().getDescription())+"' is already assigned to "+(UtilText.parse(e.getKey(), "[npc.name]"))+".");
+											"Слот '"+Util.capitaliseSentence(slot.getDescription())+"' нельзя использовать, пока слот '"+Util.capitaliseSentence(e.getValue().getDescription())+"' уже занят "+(UtilText.parse(e.getKey(), "[npc.name]"))+".");
 								}
 							}
 						}
@@ -2871,14 +2856,14 @@ public class SexPosition {
 						|| slot==SexSlotLyingDown.SCISSORING_TWO
 						|| slot==SexSlotLyingDown.SCISSORING_THREE
 						|| slot==SexSlotLyingDown.SCISSORING_FOUR)) {
-				return new Value<Boolean, String>(false, "The slot '"+Util.capitaliseSentence(slot.getDescription())+"' can only be used by characters with a bipedal lower body.");
+				return new Value<Boolean, String>(false, "Слот '"+Util.capitaliseSentence(slot.getDescription())+"' можно использовать только персонажами с двуногой нижней частью тела.");
 			}
 			if(characterToTakeSlot.isTaur()
 					&& (slot==SexSlotLyingDown.SIXTY_NINE
 						|| slot==SexSlotLyingDown.SIXTY_NINE_TWO
 						|| slot==SexSlotLyingDown.SIXTY_NINE_THREE
 						|| slot==SexSlotLyingDown.SIXTY_NINE_FOUR)) {
-				return new Value<Boolean, String>(false, "The slot '"+Util.capitaliseSentence(slot.getDescription())+"' can only be used by characters with a bipedal lower body.");
+				return new Value<Boolean, String>(false, "Слот '"+Util.capitaliseSentence(slot.getDescription())+"' можно использовать только персонажами с двуногой нижней частью тела.");
 			}
 			
 			if((!positioningSlots.values().contains(SexSlotLyingDown.LYING_DOWN) || positioningSlots.get(characterToTakeSlot)==SexSlotLyingDown.LYING_DOWN)
@@ -2892,7 +2877,7 @@ public class SexPosition {
 							|| slot==SexSlotLyingDown.SIXTY_NINE)) {
 				return new Value<Boolean, String>(
 						false,
-						"The slot '"+Util.capitaliseSentence(slot.getDescription())+"' cannot be used unless there is a character assigned to the '"+Util.capitaliseSentence(SexSlotLyingDown.LYING_DOWN.getDescription())+"' slot.");
+						"Слот '"+Util.capitaliseSentence(slot.getDescription())+"' нельзя использовать, пока в слот '"+Util.capitaliseSentence(SexSlotLyingDown.LYING_DOWN.getDescription())+"' не назначен персонаж.");
 			}
 			if((!positioningSlots.values().contains(SexSlotLyingDown.LYING_DOWN_TWO) || positioningSlots.get(characterToTakeSlot)==SexSlotLyingDown.LYING_DOWN_TWO)
 					&& (slot==SexSlotLyingDown.COWGIRL_TWO
@@ -2905,7 +2890,7 @@ public class SexPosition {
 							|| slot==SexSlotLyingDown.SIXTY_NINE_TWO)) {
 				return new Value<Boolean, String>(
 						false,
-						"The slot '"+Util.capitaliseSentence(slot.getDescription())+"' cannot be used unless there is a character assigned to the '"+Util.capitaliseSentence(SexSlotLyingDown.LYING_DOWN_TWO.getDescription())+"' slot.");
+						"Слот '"+Util.capitaliseSentence(slot.getDescription())+"' нельзя использовать, пока в слот '"+Util.capitaliseSentence(SexSlotLyingDown.LYING_DOWN_TWO.getDescription())+"' не назначен персонаж.");
 			}
 			if((!positioningSlots.values().contains(SexSlotLyingDown.LYING_DOWN_THREE) || positioningSlots.get(characterToTakeSlot)==SexSlotLyingDown.LYING_DOWN_THREE)
 					&& (slot==SexSlotLyingDown.COWGIRL_THREE
@@ -2918,7 +2903,7 @@ public class SexPosition {
 							|| slot==SexSlotLyingDown.SIXTY_NINE_THREE)) {
 				return new Value<Boolean, String>(
 						false,
-						"The slot '"+Util.capitaliseSentence(slot.getDescription())+"' cannot be used unless there is a character assigned to the '"+Util.capitaliseSentence(SexSlotLyingDown.LYING_DOWN_THREE.getDescription())+"' slot.");
+						"Слот '"+Util.capitaliseSentence(slot.getDescription())+"' нельзя использовать, пока в слот '"+Util.capitaliseSentence(SexSlotLyingDown.LYING_DOWN_THREE.getDescription())+"' не назначен персонаж.");
 			}
 			if((!positioningSlots.values().contains(SexSlotLyingDown.LYING_DOWN_FOUR) || positioningSlots.get(characterToTakeSlot)==SexSlotLyingDown.LYING_DOWN_FOUR)
 					&& (slot==SexSlotLyingDown.COWGIRL_FOUR
@@ -2931,7 +2916,7 @@ public class SexPosition {
 							|| slot==SexSlotLyingDown.SIXTY_NINE_FOUR)) {
 				return new Value<Boolean, String>(
 						false,
-						"The slot '"+Util.capitaliseSentence(slot.getDescription())+"' cannot be used unless there is a character assigned to the '"+Util.capitaliseSentence(SexSlotLyingDown.LYING_DOWN_FOUR.getDescription())+"' slot.");
+						"Слот '"+Util.capitaliseSentence(slot.getDescription())+"' нельзя использовать, пока в слот '"+Util.capitaliseSentence(SexSlotLyingDown.LYING_DOWN_FOUR.getDescription())+"' не назначен персонаж.");
 			}
 			
 
@@ -2939,25 +2924,25 @@ public class SexPosition {
 					&& (slot==SexSlotLyingDown.RECEIVING_ORAL)) {
 				return new Value<Boolean, String>(
 						false,
-						"The slot '"+Util.capitaliseSentence(slot.getDescription())+"' cannot be used unless there is a character assigned to the '"+Util.capitaliseSentence(SexSlotLyingDown.LYING_DOWN_FRONT.getDescription())+"' slot.");
+						"Слот '"+Util.capitaliseSentence(slot.getDescription())+"' нельзя использовать, пока в слот '"+Util.capitaliseSentence(SexSlotLyingDown.LYING_DOWN_FRONT.getDescription())+"' не назначен персонаж.");
 			}
 			if((!positioningSlots.values().contains(SexSlotLyingDown.LYING_DOWN_FRONT_TWO) || positioningSlots.get(characterToTakeSlot)==SexSlotLyingDown.LYING_DOWN_FRONT_TWO)
 					&& (slot==SexSlotLyingDown.RECEIVING_ORAL_TWO)) {
 				return new Value<Boolean, String>(
 						false,
-						"The slot '"+Util.capitaliseSentence(slot.getDescription())+"' cannot be used unless there is a character assigned to the '"+Util.capitaliseSentence(SexSlotLyingDown.LYING_DOWN_FRONT_TWO.getDescription())+"' slot.");
+						"Слот '"+Util.capitaliseSentence(slot.getDescription())+"' нельзя использовать, пока в слот '"+Util.capitaliseSentence(SexSlotLyingDown.LYING_DOWN_FRONT_TWO.getDescription())+"' не назначен персонаж.");
 			}
 			if((!positioningSlots.values().contains(SexSlotLyingDown.LYING_DOWN_FRONT_THREE) || positioningSlots.get(characterToTakeSlot)==SexSlotLyingDown.LYING_DOWN_FRONT_THREE)
 					&& (slot==SexSlotLyingDown.RECEIVING_ORAL_THREE)) {
 				return new Value<Boolean, String>(
 						false,
-						"The slot '"+Util.capitaliseSentence(slot.getDescription())+"' cannot be used unless there is a character assigned to the '"+Util.capitaliseSentence(SexSlotLyingDown.LYING_DOWN_FRONT_THREE.getDescription())+"' slot.");
+						"Слот '"+Util.capitaliseSentence(slot.getDescription())+"' нельзя использовать, пока в слот '"+Util.capitaliseSentence(SexSlotLyingDown.LYING_DOWN_FRONT_THREE.getDescription())+"' не назначен персонаж.");
 			}
 			if((!positioningSlots.values().contains(SexSlotLyingDown.LYING_DOWN_FRONT_FOUR) || positioningSlots.get(characterToTakeSlot)==SexSlotLyingDown.LYING_DOWN_FRONT_FOUR)
 					&& (slot==SexSlotLyingDown.RECEIVING_ORAL_FOUR)) {
 				return new Value<Boolean, String>(
 						false,
-						"The slot '"+Util.capitaliseSentence(slot.getDescription())+"' cannot be used unless there is a character assigned to the '"+Util.capitaliseSentence(SexSlotLyingDown.LYING_DOWN_FRONT_FOUR.getDescription())+"' slot.");
+						"Слот '"+Util.capitaliseSentence(slot.getDescription())+"' нельзя использовать, пока в слот '"+Util.capitaliseSentence(SexSlotLyingDown.LYING_DOWN_FRONT_FOUR.getDescription())+"' не назначен персонаж.");
 			}
 			
 			
@@ -2967,8 +2952,7 @@ public class SexPosition {
 							|| slot==SexSlotLyingDown.MISSIONARY_ORAL)) {
 				return new Value<Boolean, String>(
 						false,
-						"The slot '"+Util.capitaliseSentence(slot.getDescription())+"' cannot be used unless there is a character assigned to either the"
-								+ " '"+Util.capitaliseSentence(SexSlotLyingDown.LYING_DOWN.getDescription())+"' or '"+Util.capitaliseSentence(SexSlotLyingDown.LYING_DOWN_FRONT.getDescription())+"' slot.");
+						"Слот '"+Util.capitaliseSentence(slot.getDescription())+"' нельзя использовать, если к одному из ' не привязан персонаж"+Util.capitaliseSentence(SexSlotLyingDown.LYING_DOWN.getDescription())+"' либо '"+Util.capitaliseSentence(SexSlotLyingDown.LYING_DOWN_FRONT.getDescription())+"' не назначен персонаж.");
 			}
 			if((!positioningSlots.values().contains(SexSlotLyingDown.LYING_DOWN_TWO) || positioningSlots.get(characterToTakeSlot)==SexSlotLyingDown.LYING_DOWN_TWO)
 					&& (!positioningSlots.values().contains(SexSlotLyingDown.LYING_DOWN_FRONT_TWO) || positioningSlots.get(characterToTakeSlot)==SexSlotLyingDown.LYING_DOWN_FRONT_TWO)
@@ -2976,8 +2960,7 @@ public class SexPosition {
 							|| slot==SexSlotLyingDown.MISSIONARY_ORAL_TWO)) {
 				return new Value<Boolean, String>(
 						false,
-						"The slot '"+Util.capitaliseSentence(slot.getDescription())+"' cannot be used unless there is a character assigned to either the"
-								+ " '"+Util.capitaliseSentence(SexSlotLyingDown.LYING_DOWN_TWO.getDescription())+"' or '"+Util.capitaliseSentence(SexSlotLyingDown.LYING_DOWN_FRONT_TWO.getDescription())+"' slot.");
+						"Слот '"+Util.capitaliseSentence(slot.getDescription())+"' нельзя использовать, если к одному из ' не привязан персонаж"+Util.capitaliseSentence(SexSlotLyingDown.LYING_DOWN_TWO.getDescription())+"' либо '"+Util.capitaliseSentence(SexSlotLyingDown.LYING_DOWN_FRONT_TWO.getDescription())+"' не назначен персонаж.");
 			}
 			if((!positioningSlots.values().contains(SexSlotLyingDown.LYING_DOWN_THREE) || positioningSlots.get(characterToTakeSlot)==SexSlotLyingDown.LYING_DOWN_THREE)
 					&& (!positioningSlots.values().contains(SexSlotLyingDown.LYING_DOWN_FRONT_THREE) || positioningSlots.get(characterToTakeSlot)==SexSlotLyingDown.LYING_DOWN_FRONT_THREE)
@@ -2985,8 +2968,7 @@ public class SexPosition {
 							|| slot==SexSlotLyingDown.MISSIONARY_ORAL_THREE)) {
 				return new Value<Boolean, String>(
 						false,
-						"The slot '"+Util.capitaliseSentence(slot.getDescription())+"' cannot be used unless there is a character assigned to either the"
-								+ " '"+Util.capitaliseSentence(SexSlotLyingDown.LYING_DOWN_THREE.getDescription())+"' or '"+Util.capitaliseSentence(SexSlotLyingDown.LYING_DOWN_FRONT_THREE.getDescription())+"' slot.");
+						"Слот '"+Util.capitaliseSentence(slot.getDescription())+"' нельзя использовать, если к одному из ' не привязан персонаж"+Util.capitaliseSentence(SexSlotLyingDown.LYING_DOWN_THREE.getDescription())+"' либо '"+Util.capitaliseSentence(SexSlotLyingDown.LYING_DOWN_FRONT_THREE.getDescription())+"' не назначен персонаж.");
 			}
 			if((!positioningSlots.values().contains(SexSlotLyingDown.LYING_DOWN_FOUR) || positioningSlots.get(characterToTakeSlot)==SexSlotLyingDown.LYING_DOWN_FOUR)
 					&& (!positioningSlots.values().contains(SexSlotLyingDown.LYING_DOWN_FRONT_FOUR) || positioningSlots.get(characterToTakeSlot)==SexSlotLyingDown.LYING_DOWN_FRONT_FOUR)
@@ -2994,8 +2976,7 @@ public class SexPosition {
 							|| slot==SexSlotLyingDown.MISSIONARY_ORAL_FOUR)) {
 				return new Value<Boolean, String>(
 						false,
-						"The slot '"+Util.capitaliseSentence(slot.getDescription())+"' cannot be used unless there is a character assigned to either the"
-								+ " '"+Util.capitaliseSentence(SexSlotLyingDown.LYING_DOWN_FOUR.getDescription())+"' or '"+Util.capitaliseSentence(SexSlotLyingDown.LYING_DOWN_FRONT_FOUR.getDescription())+"' slot.");
+						"Слот '"+Util.capitaliseSentence(slot.getDescription())+"' нельзя использовать, если к одному из ' не привязан персонаж"+Util.capitaliseSentence(SexSlotLyingDown.LYING_DOWN_FOUR.getDescription())+"' либо '"+Util.capitaliseSentence(SexSlotLyingDown.LYING_DOWN_FRONT_FOUR.getDescription())+"' не назначен персонаж.");
 			}
 			
 			return new Value<Boolean, String>(true, "");
@@ -3016,7 +2997,7 @@ public class SexPosition {
 				}
 			}
 			if(!suitablePosition) {
-				return new Value<Boolean, String>(false, "At least one character needs to be lying down for this position to work.");
+				return new Value<Boolean, String>(false, "Для этой позы хотя бы один персонаж должен лежать.");
 			}
 			return new Value<Boolean, String>(true, "");
 		}
@@ -3126,14 +3107,14 @@ public class SexPosition {
 							if(occupiedSlots.get(targetedCharacter1).hasTag(SexSlotTag.LYING_DOWN_ON_FRONT)) {
 								sb.append(UtilText.parse(targetedCharacter1,
 										(!targetedCharacter1.isTaur()
-											?" [npc.NameIsFull] lying down on [npc.her] front, "
-											:" [npc.NameIsFull] lying down flat and stretched out on [npc.her] feral [npc.legRace]'s body, ")
-										+"submissively exposing [npc.her] back, ass, and groin. "));
+											?" [npc.NameIsFull] лежит на животе у [npc.her], "
+											:" [npc.NameIsFull] лежит, растянувшись на диком теле [npc.her] [npc.legRace], ")
+										+"покорно подставив [npc.her] спину, задницу и пах. "));
 							} else {
 								sb.append(UtilText.parse(lyingDownCharacters.get(0),
 										(!lyingDownCharacters.get(0).isTaur()
-											?" [npc.NameIsFull] lying down on [npc.her] back, submissively exposing [npc.her] stomach, [npc.face], and groin. "
-											:" [npc.NameHasFull] lain down on [npc.her] feral [npc.legRace]'s body, before rolling over onto [npc.her] back in order to submissively expose [npc.her] stomach. ")));
+											?" [npc.NameIsFull] лежит на спине у [npc.her], покорно подставив [npc.her] живот, [npc.face] и пах. "
+											:" [npc.NameHasFull] лежит на диком теле [npc.her] [npc.legRace], а затем переворачивается на [npc.her] спину, чтобы покорно подставить [npc.her] живот. ")));
 							}
 							break;
 						case 1:
@@ -3142,14 +3123,14 @@ public class SexPosition {
 							if(occupiedSlots.get(targetedCharacter1).hasTag(SexSlotTag.LYING_DOWN_ON_FRONT)) {
 								sb.append(UtilText.parse(targetedCharacter2, targetedCharacter1,
 										(!targetedCharacter2.isTaur()
-											?" Joining [npc2.name] on the floor, [npc.nameIsFull] lying down on [npc.her] front, "
-											:" Joining [npc2.name] on the floor, [npc.nameIsFull] lying down on [npc.her] feral [npc.legRace]'s body, ")
-										+"ready to be submissively fucked. "));
+											?" Присоединяясь к [npc2.name] на полу, [npc.nameIsFull] лежит на животе у [npc.her], "
+											:" Присоединяясь к [npc2.name] на полу, [npc.nameIsFull] лежит на диком теле [npc.her] [npc.legRace], ")
+										+"готовый к покорному траху. "));
 							} else {
 								sb.append(UtilText.parse(targetedCharacter2, targetedCharacter1,
 										(!targetedCharacter2.isTaur()
-											?" Joining [npc2.name] on the floor, [npc.nameHasFull] dropped down to lie on [npc.her] back. "
-											:" Joining [npc2.name] on the floor, [npc.nameHasFull] knelt down onto [npc.her] feral [npc.legRace]'s body, before rolling over and presenting [npc.her] underside. ")));
+											?" Присоединяясь к [npc2.name] на полу, [npc.nameHasFull] опускается на [npc.her] спину. "
+											:" Присоединившись к [npc2.name] на полу, [npc.nameHasFull] опустилась на колено на дикое тело [npc.her] [npc.legRace], а затем перевернулась, подставляя [npc.her]. ")));
 							}
 							break;
 						case 2:
@@ -3159,14 +3140,14 @@ public class SexPosition {
 							if(occupiedSlots.get(targetedCharacter1).hasTag(SexSlotTag.LYING_DOWN_ON_FRONT)) {
 								sb.append(UtilText.parse(Util.newArrayListOfValues(targetedCharacter3, targetedCharacter2, targetedCharacter1),
 										(!targetedCharacter3.isTaur()
-											?" Just like [npc2.name] and [npc3.name], [npc.nameHasFull] sunk down onto the floor and [npc.is] lying down on [npc.her] front, "
-											:" Just like [npc2.name] and [npc3.name], [npc.nameHasFull] sunk down onto the floor and [npc.is] lying down on [npc.her] feral [npc.legRace]'s body, ")
-										+"ready to be submissively fucked. "));
+											?" Как и [npc2.name] с [npc3.name], [npc.nameHasFull] опустилась на пол, а [npc.is] легла на [npc.her] лицом, "
+											:" Как и [npc2.name] с [npc3.name], [npc.nameHasFull] опустилась на пол и [npc.is], растянувшись на теле дикого [npc.legRace] [npc.her], ")
+										+"готовый к покорному траху. "));
 							} else {
 								sb.append(UtilText.parse(Util.newArrayListOfValues(targetedCharacter3, targetedCharacter2, targetedCharacter1),
 										(!targetedCharacter3.isTaur()
-											?" Just like [npc2.name] and [npc3.name], [npc.nameHasFull] sunk down onto the floor, before lying down on [npc.her] back. "
-											:" Just like [npc2.name] and [npc3.name], [npc.nameHasFull] sunk down onto [npc.her] feral [npc.legRace]'s body, before rolling over onto [npc.her] back and presenting [npc.herself]. ")));
+											?" Как и [npc2.name] с [npc3.name], [npc.nameHasFull] опустилась на пол, а затем легла на спину к [npc.her]. "
+											:" Как и [npc2.name] с [npc3.name], [npc.nameHasFull] опустилась на дикое тело [npc.her] [npc.legRace], а затем перевернулась на спину к [npc.her], подставляя [npc.herself]. ")));
 							}
 							break;
 						case 3:
@@ -3177,13 +3158,13 @@ public class SexPosition {
 							if(occupiedSlots.get(targetedCharacter1).hasTag(SexSlotTag.LYING_DOWN_ON_FRONT)) {
 								sb.append(UtilText.parse(Util.newArrayListOfValues(targetedCharacter4, targetedCharacter3, targetedCharacter2, targetedCharacter1),
 										(!targetedCharacter4.isTaur()
-											?" Finishing off the group of four, [npc.nameIsFull] lying down on [npc.her] front beside [npc2.name], [npc3.name], and [npc4.name]. "
-											:" Finishing off the group of four, [npc.nameIsFull] lying down on [npc.her] front beside [npc2.name], [npc3.name], and [npc4.name]. ")));
+											?" Завершая группу из четырех человек: [npc.nameIsFull] лежит на [npc.her] лицом рядом с [npc2.name], [npc3.name] и [npc4.name]. "
+											:" Завершая группу из четырех человек: [npc.nameIsFull] лежит на [npc.her] лицом рядом с [npc2.name], [npc3.name] и [npc4.name]. ")));
 							} else {
 								sb.append(UtilText.parse(Util.newArrayListOfValues(targetedCharacter4, targetedCharacter3, targetedCharacter2, targetedCharacter1),
 										(!targetedCharacter4.isTaur()
-											?" Finishing off the group of four, [npc.nameIsFull] lying down on [npc.her] back beside [npc2.name], [npc3.name], and [npc4.name]. "
-											:" Finishing off the group of four, [npc.nameIsFull] lying down beside [npc2.name], [npc3.name], and [npc4.name], and [npc.has] rolled over to present the underside of [npc.her] feral [npc.legRace]'s body. ")));
+											?" Завершая группу из четырех человек: [npc.nameIsFull] лежит на [npc.her] спиной рядом с [npc2.name], [npc3.name] и [npc4.name]. "
+											:" Завершая группу из четырех человек: [npc.nameIsFull] лежит рядом с [npc2.name], [npc3.name], [npc4.name], а [npc.has] перевернулась, подставляя низ дикого тела [npc.her] [npc.legRace]. ")));
 							}
 							break;
 					}
@@ -3196,20 +3177,20 @@ public class SexPosition {
 					if(missionary!=null) {
 						if(!missionary.isTaur()) {
 							sb.append(UtilText.parse(missionary, lyingDownFront,
-									" [npc.NameHasFull] dropped down behind [npc2.name] and positioned [npc.herself] between [npc2.her] [npc2.legs], ready to fuck [npc2.herHim] in the prone bone position."));
+									" [npc.NameHasFull] опустился позади [npc2.name] и расположил [npc.herself] между [npc2.her] [npc2.legs], готовый трахать [npc2.herHim] в позе «лежа на животе»."));
 						} else {
 							sb.append(UtilText.parse(missionary, lyingDownFront,
-									" [npc.NameHasFull] lowered [npc.her] feral [npc.legRace]'s body down over the top of [npc2.name], and [npc.is] ready to start rutting [npc2.herHim] in the prone bone position."));
+									" [npc.NameHasFull] прижал дикое тело [npc.legRace] [npc.her] сверху на [npc2.name], и [npc.is] был готов начать спариваться с [npc2.herHim] в позе «лежа на животе»."));
 						}
 						continuation = true;
 					}
 					if(performingOral!=null) {
 						sb.append(UtilText.parse(performingOral, lyingDownFront,
-								" Wanting to perform oral on [npc2.name], [npc.nameHasFull] laid down between [npc2.her] [npc2.legs], bringing [npc.her] [npc.face] right down to [npc2.her] groin."));
+								" Желая отсосать у [npc2.name], [npc.nameHasFull] лег(ла) между [npc2.her] [npc2.legs], прижав [npc.her] [npc.face] прямо к [npc2.her] паху."));
 					}
 					if(receivingOral!=null) {
 						sb.append(UtilText.parse(receivingOral, lyingDownFront,
-								" Wanting to receive oral from [npc2.name], [npc.nameHasFull] dropped down in front of [npc2.herHim], bringing [npc.her] groin right down to [npc2.her] [npc2.face]."));
+								" Желая получить минет от [npc2.name], [npc.nameHasFull] опустился(лась) перед [npc2.herHim], прижав пах [npc.her] прямо к [npc2.her] [npc2.face]."));
 					}
 					
 					
@@ -3218,59 +3199,51 @@ public class SexPosition {
 					if(cowgirl!=null) {
 						if(!cowgirl.isTaur()) {
 							sb.append(UtilText.parse(cowgirl, lyingDown,
-									" [npc.NameHasFull] stepped over the top of [npc2.name], before lowering [npc.herself] down and straddling [npc2.her] groin, ready to start riding [npc2.herHim] in the cowgirl position."));
+									" [npc.NameHasFull] перешагнул(а) через [npc2.name], после чего опустил(а) [npc.herself] и сел(а) верхом на пах [npc2.her], готовый(ая) начать скакать на [npc2.herHim] в позе наездницы."));
 						} else {
 							sb.append(UtilText.parse(cowgirl, lyingDown,
-									" [npc.NameHasFull] stepped over the top of [npc2.name], before dropping the rear-half of [npc.her] feral [npc.legRace]'s body down in order to plant [npc.her] groin firmly against [npc2.hers]."));
+									" [npc.NameHasFull] перешагнул(а) через [npc2.name], после чего опустил(а) заднюю часть дикого тела [npc.legRace] [npc.her], чтобы плотно прижать пах [npc.her] к [npc2.hers]."));
 						}
 						continuation = true;
 					}
 					if(cowgirlReverse!=null) {
 						if(!cowgirlReverse.isTaur()) {
 							sb.append(UtilText.parse(cowgirlReverse, lyingDown,
-									" [npc.NameHasFull] stepped over the top of [npc2.name], before turning around and lowering [npc.herself] down and straddling [npc2.her] groin, ready to start riding [npc2.herHim] in the reverse cowgirl position."));
+									" [npc.NameHasFull] перешагнул(а) через [npc2.name], после чего развернулся(лась), опустил(а) [npc.herself] и сел(а) верхом на пах [npc2.her], готовый(ая) начать скакать на [npc2.herHim] в позе обратной наездницы."));
 						} else {
 							sb.append(UtilText.parse(cowgirlReverse, lyingDown,
-									" [npc.NameHasFull] stepped over the top of [npc2.name], before turning around and dropping the rear-half of [npc.her] feral [npc.legRace]'s body down in order to plant [npc.her] groin firmly against [npc2.hers]."));
+									" [npc.NameHasFull] перешагнула через [npc2.name], после чего развернулась и опустила заднюю часть дикого тела [npc.her], обладающего [npc.legRace], чтобы плотно прижать [npc.her] пах к [npc2.hers]."));
 						}
 						continuation = true;
 					}
 					if(matingPress!=null) {
 						if(!matingPress.hasLegs()) {
 							sb.append(UtilText.parse(matingPress, lyingDown,
-									" [npc.NameHasFull] pushed [npc2.namePos] down onto [npc2.her] back, before lying down on top of [npc2.herHim] with [npc.her] groin hovering just over [npc2.hers]."
-										+ " [npc.SheIs] dominantly using [npc.her] [npc.hands] to pin [npc2.namePos] wrists to the floor on either side of [npc2.her] head,"
-											+ " thereby fully locking [npc2.herHim] down beneath [npc.herHim] in a position suitable for being bred."));
+									" [npc.NameHasFull] прижал [npc2.namePos] спиной к [npc2.her], после чего навис сверху над [npc2.herHim], удерживая [npc.her] в паху прямо над [npc2.hers]. [npc.SheIs] властно использовал(а) [npc.her] [npc.hands], чтобы прижать [npc2.namePos] запястья к полу по обе стороны от головы [npc2.her], тем самым полностью зафиксировав [npc2.herHim] под [npc.herHim] в позе, идеально подходящей для осеменения."));
 							
 						} else if(!matingPress.isTaur()) {
 							sb.append(UtilText.parse(matingPress, lyingDown,
-									" [npc.NameHasFull] pushed [npc2.namePos] [npc2.legs] apart and back up towards [npc2.her] head, before lying down on top of [npc2.herHim] with [npc.her] groin hovering just over [npc2.hers]."
-										+ " [npc.SheIs] dominantly using [npc.her] [npc.hands] to pin [npc2.namePos] wrists to the floor on either side of [npc2.her] head,"
-											+ " thereby fully locking [npc2.herHim] down beneath [npc.herHim] in a position suitable for being bred."));
+									" [npc.NameHasFull] раздвинул [npc2.namePos] [npc2.legs] и прижал их назад, к голове [npc2.her], а затем лег сверху на [npc2.herHim], удерживая [npc.her] прямо над [npc2.hers]. [npc.SheIs] властно использовал [npc.her] [npc.hands], чтобы прижать запястья [npc2.namePos] к полу по обе стороны от головы [npc2.her], тем самым полностью зафиксировав [npc2.herHim] под [npc.herHim] в позе, идеально подходящей для осеменения."));
 							
 						} else {
 							sb.append(UtilText.parse(matingPress, lyingDown,
-									" [npc.NameHasFull] pushed [npc2.namePos] [npc2.legs] apart and back up towards [npc2.her] head, before dropping [npc.her] feral [npc.legRace]'s body down on top of [npc2.herHim],"
-											+ " with [npc.her] animalistic groin hovering just over [npc2.hers]."
-										+ " [npc.SheIs] dominantly using [npc.her] front [npc.legs] to pin [npc2.name] wrists to the floor on either side of [npc2.her] head,"
-											+ " thereby fully locking [npc2.herHim] down beneath [npc.herHim] in a position suitable for being bred."));
+									" [npc.NameHasFull] pushed [npc2.namePos] [npc2.legs] apart and back up towards [npc2.her] head, before dropping [npc.her] feral [npc.legRace]'s body down on top of [npc2.herHim], with [npc.her] animalistic groin hovering just over [npc2.hers]. [npc.SheIs] dominantly using [npc.her] front [npc.legs] to pin [npc2.name] wrists to the floor on either side of [npc2.her] head, thereby fully locking [npc2.herHim] down beneath [npc.herHim] in a position suitable for being bred."));
 						}
 						continuation = true;
 					}
 					if(scissoring!=null) {
 						sb.append(UtilText.parse(scissoring, lyingDown,
-								" [npc.NameHasFull] laid down on [npc.her] back, and by [npc.spreadingHerLegs] and shuffling forwards,"
-										+ " [npc.has] brought [npc.her] groin into contact with [npc2.hers], ready to start scissoring [npc2.herHim]."));
+								" [npc.NameHasFull] легла на спину [npc.her], и, подвигаясь [npc.spreadingHerLegs] и перебирая ногами вперед, [npc.has] прижала пах [npc.her] к [npc2.hers], готовясь начать ножницы с [npc2.herHim]."));
 						continuation = true;
 					}
 	
 					if(missionary!=null) {
 						if(!missionary.isTaur()) {
 							sb.append(UtilText.parse(missionary, lyingDown,
-									" [npc.NameHasFull] dropped down between [npc2.namePos] [npc2.legs], ready to fuck [npc2.herHim] in the missionary position."));
+									" [npc.NameHasFull] опустился между [npc2.namePos] [npc2.legs], готовый трахать [npc2.herHim] в миссионерской позе."));
 						} else {
 							sb.append(UtilText.parse(missionary, lyingDown,
-									" [npc.NameHasFull] lowered [npc.her] feral [npc.legRace]'s body down over the top of [npc2.name], and [npc.is] ready to start rutting [npc2.herHim] in the missionary position."));
+									" [npc.NameHasFull] опустил(а) тело дикого [npc.legRace] [npc.her] поверх [npc2.name], и [npc.is], готовый(ая) начать спариваться с [npc2.herHim] в миссионерской позе."));
 						}
 						continuation = true;
 					}
@@ -3279,60 +3252,56 @@ public class SexPosition {
 						if(!faceSitting.isTaur()) {
 							sb.append(UtilText.parse(faceSitting, lyingDown,
 									continuation
-									?" Meanwhile, eager for some face-sitting action, [npc.nameHasFull] stepped over the top of [npc2.name], before lowering [npc.herself] down and planting [npc.her] groin firmly over [npc2.her] [npc2.face]."
-									:" Eager for some face-sitting action, [npc.nameHasFull] stepped over the top of [npc2.name], before lowering [npc.herself] down and planting [npc.her] groin firmly over [npc2.her] [npc2.face]."));
+									?" Тем временем, жаждая секса лицом, [npc.nameHasFull] перешагнул через [npc2.name], после чего опустил [npc.herself] и плотно прижал свой пах [npc.her] к [npc2.her] [npc2.face]."
+									:" Жаждая секса лицом, [npc.nameHasFull] перешагнул через [npc2.name], после чего опустил [npc.herself] и плотно прижал свой пах [npc.her] к [npc2.her] [npc2.face]."));
 						} else {
 							sb.append(UtilText.parse(faceSitting, lyingDown,
 									continuation
-									?" Meanwhile, eager for some face-sitting action, [npc.nameHasFull] stepped over the top of [npc2.name],"
-											+ " before lowering [npc.her] feral [npc.legRace]'s body down and planting [npc.her] animalistic groin firmly over [npc2.her] [npc2.face]."
-									:" Eager for some face-sitting action, [npc.nameHasFull] stepped over the top of [npc2.name],"
-											+ " before lowering [npc.her] feral [npc.legRace]'s body down and planting [npc.her] animalistic groin firmly over [npc2.her] [npc2.face]."));
+									?" Тем временем, жаждущая сесть [npc.nameHasFull] на лицо, перешагнула через [npc2.name], после чего опустила дикое тело [npc.legRace] [npc.her] и крепко прижала свою животную паховую область к [npc2.face] [npc2.her] [npc.her]."
+									:" Жаждущая секса лицом, [npc.nameHasFull] перешагнула через [npc2.name], после чего опустила дикое тело [npc.her] [npc.legRace] и плотно прижала свою животную паховую область к [npc2.her] [npc2.face] [npc.her]."));
 						}
 					}
 					if(faceSittingReverse!=null) {
 						if(!faceSittingReverse.isTaur()) {
 							sb.append(UtilText.parse(faceSittingReverse, lyingDown,
 									continuation
-									?" Meanwhile, [npc.nameHasFull] stepped over the top of [npc2.name], before turning around to face [npc2.her] lower body and then lowering [npc.herself] down in order to assume the reverse face-sitting position."
-									:" [npc.NameHasFull] stepped over the top of [npc2.name], before turning around to face [npc2.her] lower body and then lowering [npc.herself] down in order to assume the reverse face-sitting position."));
+									?" Тем временем [npc.nameHasFull] перешагнула через [npc2.name], затем развернулась лицом к нижней части тела [npc2.her] и опустила [npc.herself], чтобы занять позу обратного сидения на лице."
+									:" [npc.NameHasFull] перешагнула через [npc2.name], затем развернулась лицом к нижней части тела [npc2.her] и опустила [npc.herself], чтобы занять позу обратного сидения на лице."));
 						} else {
 							sb.append(UtilText.parse(faceSittingReverse, lyingDown,
 									continuation
-									?" Meanwhile, [npc.nameHasFull] stepped over the top of [npc2.name],"
-											+ " before turning around to face [npc2.her] lower body and then lowering [npc.her] feral [npc.legRace]'s body down in order to assume the reverse face-sitting position."
-									:" [npc.NameHasFull] stepped over the top of [npc2.name],"
-											+ " before turning around to face [npc2.her] lower body and then lowering [npc.her] feral [npc.legRace]'s body down in order to assume the reverse face-sitting position."));
+									?" Тем временем [npc.nameHasFull] перешагнула через [npc2.name], затем развернулась лицом к нижней части тела [npc2.her] и опустила дикое тело [npc.her] [npc.legRace], чтобы занять позу обратного сидения на лице."
+									:" [npc.NameHasFull] перешагнула через [npc2.name], затем развернулась лицом к нижней части тела [npc2.her] и опустила дикое тело [npc.her] [npc.legRace], чтобы занять позу обратного сидения на лице."));
 						}
 					}
 					if(sixtyNine!=null) {
 						sb.append(UtilText.parse(sixtyNine, lyingDown,
 								continuation
-								?" Meanwhile, eager for some oral action, [npc.nameHasFull] stepped over the top of [npc2.name], before turning around and lowering [npc.herself] over [npc2.herHim] in the sixty-nine position."
-								:" Eager for some oral action, [npc.nameHasFull] stepped over the top of [npc2.name], before turning around and lowering [npc.herself] over [npc2.herHim] in the sixty-nine position."));
+								?" Тем временем, жаждая орального секса, [npc.nameHasFull] перекинула ногу через [npc2.name], после чего развернулась и опустила [npc.herself] на [npc2.herHim] в позе шестьдесят девять."
+								:" Жаждая орального секса, [npc.nameHasFull] перекинула ногу через [npc2.name], после чего развернулась и опустила [npc.herself] на [npc2.herHim] в позе шестьдесят девять."));
 					}
 					if(lapPillow!=null) {
 						sb.append(UtilText.parse(lapPillow, lyingDown,
 								continuation
-								?" Meanwhile, eager to fuss over [npc2.herHim], [npc.nameHasFull] knelt down beside [npc2.namePos] [npc2.face], before lifting [npc2.her] head and resting it on [npc.her] lap."
-								:" Eager to fuss over [npc2.herHim], [npc.nameHasFull] knelt down beside [npc2.namePos] [npc2.face], before lifting [npc2.her] head and resting it on [npc.her] lap."));
+								?" Тем временем, желая уделить внимание [npc2.herHim], [npc.nameHasFull] опустилась на колени рядом с [npc2.namePos] [npc2.face], после чего приподняла [npc2.her] голову и положила её на [npc.her] колени."
+								:" Желая уделить внимание [npc2.herHim], [npc.nameHasFull] опустилась на колени рядом с [npc2.namePos] [npc2.face], после чего приподняла [npc2.her] голову и положила её на [npc.her] колени."));
 					}
 	
 					if(performingOral!=null) {
 						sb.append(UtilText.parse(performingOral, lyingDown,
-								" Wanting to perform oral on [npc2.name], [npc.nameHasFull] laid down between [npc2.her] [npc2.legs], bringing [npc.her] [npc.face] right down to [npc2.her] groin."));
+								" Желая отсосать у [npc2.name], [npc.nameHasFull] лег(ла) между [npc2.her] [npc2.legs], прижав [npc.her] [npc.face] прямо к [npc2.her] паху."));
 					}
 				}
 			}
 			
 			if(besideNames.size()>=2) {
 				sb.append(Util.capitaliseSentence(Util.stringsToStringList(besideNames, false))
-						+" are positioned off to the side, ready to receive oral or some non-penetrative sex. "); 
+						+" расположены сбоку, готовые к оральному сексу или другим видам секса без проникновения. "); 
 				
 			} else if(besideNames.size()==1) {
 				sb.append(Util.capitaliseSentence(Util.stringsToStringList(besideNames, false))
 						+UtilText.parse(mainBeside,
-								" [npc.is] positioned off to the side, ready to receive oral or some non-penetrative sex. ")); 
+								" [npc.is] расположена сбоку, готовая к оральному сексу или другим видам секса без проникновения. ")); 
 			}
 			
 			return sb.toString();
@@ -3636,7 +3605,7 @@ public class SexPosition {
 		}
 	};
 	
-	public static final AbstractSexPosition SITTING = new AbstractSexPosition("Sitting Down",
+	public static final AbstractSexPosition SITTING = new AbstractSexPosition("Сидя",
 			8,
 			true,
 			Util.mergeLists(
@@ -3663,8 +3632,7 @@ public class SexPosition {
 							if(entry.contains(e.getValue()) && e.getValue()!=slot && !e.getKey().equals(characterToTakeSlot)) {
 								return new Value<Boolean, String>(
 										false,
-										"The slot '"+Util.capitaliseSentence(slot.getDescription())+"' cannot be used while the slot"
-												+ " '"+Util.capitaliseSentence(e.getValue().getDescription())+"' is already assigned to "+(UtilText.parse(e.getKey(), "[npc.name]"))+".");
+										"Слот '"+Util.capitaliseSentence(slot.getDescription())+"' нельзя использовать, пока слот '"+Util.capitaliseSentence(e.getValue().getDescription())+"' уже занят "+(UtilText.parse(e.getKey(), "[npc.name]"))+".");
 							}
 						}
 					}
@@ -3683,7 +3651,7 @@ public class SexPosition {
 							|| slot==SexSlotSitting.SITTING_TAUR_PRESENTING_ORAL_TWO
 							|| slot==SexSlotSitting.SITTING_TAUR_PRESENTING_ORAL_THREE
 							|| slot==SexSlotSitting.SITTING_TAUR_PRESENTING_ORAL_FOUR)) {
-				return new Value<Boolean, String>(false, UtilText.parse(characterToTakeSlot, "Only characters with the lower body of a feral animal can use the '"+Util.capitaliseSentence(slot.getDescription())+"' slot."));
+				return new Value<Boolean, String>(false, UtilText.parse(characterToTakeSlot, "Только персонажи с нижней частью тела дикого животного могут использовать '"+Util.capitaliseSentence(slot.getDescription())+"' не назначен персонаж."));
 			}
 			return new Value<Boolean, String>(true, "");
 		}
@@ -3699,7 +3667,7 @@ public class SexPosition {
 				}
 			}
 			if(!suitableSitting) {
-				return new Value<Boolean, String>(false, "At least one character needs to be sitting down for this position to work.");
+				return new Value<Boolean, String>(false, "Для этой позы как минимум один персонаж должен сидеть.");
 			}
 			return new Value<Boolean, String>(true, "");
 		}
@@ -3821,10 +3789,10 @@ public class SexPosition {
 			
 			
 			if(sittingNames.size()>=2) {
-				sb.append(Util.capitaliseSentence(Util.stringsToStringList(sittingNames, false))+" are sitting down next to one another, while "); 
+				sb.append(Util.capitaliseSentence(Util.stringsToStringList(sittingNames, false))+" сидят рядом друг с другом, пока "); 
 				
 			} else {
-				sb.append(UtilText.parse(mainSitting, "[npc.Name] [npc.is] sitting down on a chair, while ")); 
+				sb.append(UtilText.parse(mainSitting, "[npc.Name] [npc.is] садится на стул, в то время как ")); 
 			}
 			
 			
@@ -3833,36 +3801,36 @@ public class SexPosition {
 			boolean sentenceContinuationFound = true;
 			if(sittingLapCount>=2) {
 				if(inLapNames.isEmpty()) {
-					sb.append(Util.stringsToStringList(inLapNamesTaur, false)+ " have turned around and stepped backwards, before lowering their feral bodies down into "
+					sb.append(Util.stringsToStringList(inLapNamesTaur, false)+ " разворачивается и делает шаг назад, прежде чем опустить свое дикое тело на "
 					+(sittingNames.size()>1
-							?(playerSitting?"your laps. ":"their laps. ")
-							:UtilText.parse(mainSitting, "[npc.her] lap. ")));
+							?(playerSitting?"твои колени. ":"их колени. ")
+							:UtilText.parse(mainSitting, "колени [npc.her]. ")));
 					
 				} else {
-						sb.append(Util.stringsToStringList(allInLapNames, false)+" have stepped forwards so as to be sitting in "
+						sb.append(Util.stringsToStringList(allInLapNames, false)+" делает шаг вперед, чтобы сесть на "
 									+(sittingNames.size()>1
-											?(playerSitting?"your laps. ":"their laps. ")
-											:UtilText.parse(mainSitting, "[npc.her] lap. ")));
+											?(playerSitting?"твои колени. ":"их колени. ")
+											:UtilText.parse(mainSitting, "колени [npc.her]. ")));
 						if(!inLapNamesTaur.isEmpty()) {
-							sb.append(" In order to do this, "+Util.capitaliseSentence(Util.stringsToStringList(inLapNamesTaur, false))
-								+" have turned around and stepped backwards, allowing them to plant their feral bodies down against "
+							sb.append(" Чтобы сделать это, "+Util.capitaliseSentence(Util.stringsToStringList(inLapNamesTaur, false))
+								+" развернулись и отступили назад, позволяя своим диким телам прижаться к "
 								+(sittingNames.size()>1
-										?(playerSitting?"your groins. ":"their groins. ")
-										:UtilText.parse(mainSitting, "[npc.her] groin. ")));
+										?(playerSitting?"твоим пахам. ":"их пахам. ")
+										:UtilText.parse(mainSitting, "паху [npc.her]. ")));
 						}
 				}
 				
 			} else if(inLapNames.size()==1) {
-				sb.append(Util.stringsToStringList(inLapNames, false)+UtilText.parse(mainInLap, " [npc.has] stepped forwards so as to be sitting in ")
+				sb.append(Util.stringsToStringList(inLapNames, false)+UtilText.parse(mainInLap, " [npc.has] шагнул вперед, чтобы сесть к тебе на ")
 						+(sittingNames.size()>1
-								?(playerSitting?"your lap. ":"their lap. ")
-								:UtilText.parse(mainSitting, "[npc.her] lap. ")));
+								?(playerSitting?"колени. ":"их колени. ")
+								:UtilText.parse(mainSitting, "колени [npc.her]. ")));
 				
 			} else if(inLapNamesTaur.size()==1) {
-				sb.append(Util.stringsToStringList(inLapNamesTaur, false)+UtilText.parse(mainInLapTaur, " [npc.has] turned around and stepped backwards, before lowering [npc.her] feral [npc.legRace]'s body down into ")
+				sb.append(Util.stringsToStringList(inLapNamesTaur, false)+UtilText.parse(mainInLapTaur, " [npc.has] развернулся и отступил назад, прежде чем опустить дикое тело [npc.legRace] [npc.her] на ")
 				+(sittingNames.size()>1
-						?(playerSitting?"your lap. ":"their lap. ")
-						:UtilText.parse(mainSitting, "[npc.her] lap. ")));
+						?(playerSitting?"твои колени. ":"их колени. ")
+						:UtilText.parse(mainSitting, "колени [npc.her]. ")));
 			} else {
 				sentenceContinuationFound=false;
 			}
@@ -3872,31 +3840,31 @@ public class SexPosition {
 			if(betweenLegsCount>=2) {
 				if(betweenLegsNames.isEmpty()) {
 					sb.append((sentenceContinuationFound?Util.capitaliseSentence(Util.stringsToStringList(betweenLegsNamesTaur, false)):Util.stringsToStringList(betweenLegsNamesTaur, false))
-						+ " have stepped forwards over the top of "
+						+ " сделали шаг вперед, нависая над "
 					+(sittingNames.size()>1
-							?(playerSitting ?"you" :"them")
+							?(playerSitting ?"вы" :"их")
 							:UtilText.parse(mainSitting, "[npc.name]"))
-					+", bringing the groins of "+(playerBetweenLegs?"your":"their")+" animalistic lower bodies right up against "
+					+", прижимая пахи "+(playerBetweenLegs?"твоей":"их")+" зверических нижних тел вплотную к "
 					+(sittingNames.size()>1
-							?(playerSitting ?"yours. " :"theirs. ")
+							?(playerSitting ?"твоим. " :"их. ")
 							:UtilText.parse(mainSitting, "[npc.hers]. ")));
 					
 				} else {
 					sb.append((sentenceContinuationFound?Util.capitaliseSentence(Util.stringsToStringList(betweenLegsNames, false)):Util.stringsToStringList(betweenLegsNames, false))
-							+" have stepped forwards so as to be standing in between "
+							+" сделали шаг вперед, чтобы встать между "
 								+(sittingNames.size()>1
-										?(playerSitting?"your legs":"their legs")
+										?(playerSitting?"твоими ногами":"их ногами")
 										:UtilText.parse(mainSitting, "[npc.namePos] [npc.legs]")));
 					if(!betweenLegsNamesTaur.isEmpty()) {
-						sb.append(", while "+Util.stringsToStringList(betweenLegsNamesTaur, false)+ " "+(betweenLegsNamesTaur.size()==1?UtilText.parse(mainBetweenLegs, "[npc.has]"):"have")+" stepped forwards over the top of "
+						sb.append(", в то время как "+Util.stringsToStringList(betweenLegsNamesTaur, false)+ " "+(betweenLegsNamesTaur.size()==1?UtilText.parse(mainBetweenLegs, "[npc.has]"):"имеют")+" сделали шаг вперед, нависая над "
 								+(sittingNames.size()>1
-										?(playerSitting ?"you" :"them")
+										?(playerSitting ?"вы" :"их")
 										:UtilText.parse(mainSitting, "[npc.name]"))
 								+(betweenLegsNamesTaur.size()==1
-									?UtilText.parse(mainBetweenLegs, ", bringing the groin of [npc.her] animalistic [npc.legRace]'s body right up against ")
-									:", bringing the groins of "+(playerBetweenLegs?"your":"their")+" animalistic lower bodies right up against")
+									?UtilText.parse(mainBetweenLegs, ", прижимая пах [npc.her] звериного [npc.legRace] вплотную к ")
+									:", прижимая пахи "+(playerBetweenLegs?"твоей":"их")+" зверических нижних тел вплотную к")
 								+(sittingNames.size()>1
-										?(playerSitting ?"yours. " :"theirs. ")
+										?(playerSitting ?"твоим. " :"их. ")
 										:UtilText.parse(mainSitting, "[npc.hers]. ")));
 					} else {
 						sb.append(".");
@@ -3906,21 +3874,21 @@ public class SexPosition {
 				
 			} else if(betweenLegsNames.size()==1) {
 				sb.append((sentenceContinuationFound?Util.capitaliseSentence(Util.stringsToStringList(betweenLegsNames, false)):Util.stringsToStringList(betweenLegsNames, false))
-						+UtilText.parse(mainBetweenLegs, " [npc.has] stepped forwards so as to be standing in between ")
+						+UtilText.parse(mainBetweenLegs, " [npc.has] шагнул(ла) вперед, чтобы встать между ")
 						+(sittingNames.size()>1
-								?(playerSitting?"your legs. ":"their legs. ")
+								?(playerSitting?"твоими ногами. ":"их ногами. ")
 								:UtilText.parse(mainSitting, "[npc.her] [npc.legs]. ")));
 				sentenceContinuationFound = true;
 				
 			} else if(betweenLegsNamesTaur.size()==1) {
 				sb.append((sentenceContinuationFound?Util.capitaliseSentence(Util.stringsToStringList(betweenLegsNamesTaur, false)):Util.stringsToStringList(betweenLegsNamesTaur, false))
-						+UtilText.parse(mainBetweenLegs, " [npc.has] stepped forwards over the top of ")
+						+UtilText.parse(mainBetweenLegs, " [npc.has] шагнул(ла) вперед, перешагнув через ")
 						+(sittingNames.size()>1
-								?(playerSitting ?"you" :"them")
+								?(playerSitting ?"вы" :"их")
 								:UtilText.parse(mainSitting, "[npc.name]"))
-						+UtilText.parse(mainBetweenLegs, ", bringing the groin of [npc.her] animalistic [npc.legRace]'s body right up against ")
+						+UtilText.parse(mainBetweenLegs, ", прижимая пах [npc.her] звериного [npc.legRace] вплотную к ")
 						+(sittingNames.size()>1
-								?(playerSitting ?"yours. " :"theirs. ")
+								?(playerSitting ?"твоим. " :"их. ")
 								:UtilText.parse(mainSitting, "[npc.hers]. ")));
 				sentenceContinuationFound = true;
 			}
@@ -3928,18 +3896,18 @@ public class SexPosition {
 			// Performing oral:
 			if(performingOralNames.size()>=2) {
 					sb.append((sentenceContinuationFound?Util.capitaliseSentence(Util.stringsToStringList(performingOralNames, false)):Util.stringsToStringList(performingOralNames, false))
-							+" are positioned so as to be down between "
+							+" расположены так, чтобы находиться между "
 							+(sittingNames.size()>1
-									?(playerSitting?"your legs":"their legs")+", ready to perform oral on "+(playerSitting?"you. ":"them. ")
-									:UtilText.parse(mainSitting, "[npc.namePos] [npc.legs], ready to perform oral on [npc.herHim]. ")));
+									?(playerSitting?"твоими ногами":"их ногами")+", готовая отсосать "+(playerSitting?"тобой. ":"ними. ")
+									:UtilText.parse(mainSitting, "[npc.namePos] [npc.legs], готовый отсосать [npc.herHim]. ")));
 					sentenceContinuationFound = true;
 				
 			} else if(performingOralNames.size()==1) {
 					sb.append((sentenceContinuationFound?Util.capitaliseSentence(Util.stringsToStringList(performingOralNames, false)):Util.stringsToStringList(performingOralNames, false))
-							+UtilText.parse(mainPerformingOral," [npc.is] positioned so as to be right up between ")
+							+UtilText.parse(mainPerformingOral," [npc.is] расположена так, чтобы оказаться прямо между ")
 					+(sittingNames.size()>1
-							?(playerSitting?"your legs":"their legs")+", ready to perform oral on "+(playerSitting?"you. ":"them. ")
-							:UtilText.parse(mainSitting, "[npc.namePos] [npc.legs], ready to perform oral on [npc.herHim]. ")));
+							?(playerSitting?"твоими ногами":"их ногами")+", готовая отсосать "+(playerSitting?"тобой. ":"ними. ")
+							:UtilText.parse(mainSitting, "[npc.namePos] [npc.legs], готовый отсосать [npc.herHim]. ")));
 					sentenceContinuationFound = true;
 			}
 
@@ -3947,17 +3915,17 @@ public class SexPosition {
 			// Receiving oral:
 			if(taurPresentingNames.size()>=2) {
 				sb.append((sentenceContinuationFound?Util.capitaliseSentence(Util.stringsToStringList(taurPresentingNames, false)):Util.stringsToStringList(taurPresentingNames, false))
-						+" have turned around and stepped back in order to present their animalistic genitals to "
+						+" развернулись и отступили назад, чтобы подставить свои звериные гениталии "
 						+(sittingNames.size()>1
-								?(playerSitting?"the "+Util.intToString(sittingNames.size())+" of you.":"the "+Util.intToString(sittingNames.size())+" of them.")
+								?(playerSitting?""+Util.intToString(sittingNames.size())+" тебя.":""+Util.intToString(sittingNames.size())+" их.")
 								:UtilText.parse(mainSitting, "[npc.name].")));
 			
 				
 			} else if(taurPresentingNames.size()==1) {
 					sb.append((sentenceContinuationFound?Util.capitaliseSentence(Util.stringsToStringList(taurPresentingNames, false)):Util.stringsToStringList(taurPresentingNames, false))
-							+UtilText.parse(mainTaurPresenting," [npc.has] turned around and stepped back in order to present [npc.her] feral rear end to ")
+							+UtilText.parse(mainTaurPresenting," [npc.has] развернулся(лась) и отступил(а) назад, чтобы подставить [npc.her] дикий зад к ")
 					+(sittingNames.size()>1
-							?(playerSitting?"the "+Util.intToString(sittingNames.size())+" of you.":"the "+Util.intToString(sittingNames.size())+" of them.")
+							?(playerSitting?""+Util.intToString(sittingNames.size())+" тебя.":""+Util.intToString(sittingNames.size())+" их.")
 							:UtilText.parse(mainSitting, "[npc.name].")));
 			}
 			
@@ -4179,14 +4147,14 @@ public class SexPosition {
 	
 	//--- Unique and one-off sex scenes ---//
 	
-	public static final AbstractSexPosition BREEDING_STALL = new AbstractSexPosition("Breeding Stall",
+	public static final AbstractSexPosition BREEDING_STALL = new AbstractSexPosition("Стойло для спаривания",
 			2,
 			true,
 			null, Util.newArrayListOfValues()) {
 		@Override
 		public Value<Boolean, String> isSlotUnlocked(GameCharacter characterToTakeSlot, SexSlot slot, Map<GameCharacter, SexSlot> positioningSlots) {
 			if(characterToTakeSlot.isTaur() && (slot==SexSlotBreedingStall.BREEDING_STALL_BACK)) {
-				return new Value<Boolean, String>(false, UtilText.parse(characterToTakeSlot, "Due to the proportions of [npc.her] animalistic lower body, [npc.nameIsFull] unable to lie down on [npc.her] back in order to get bred."));
+				return new Value<Boolean, String>(false, UtilText.parse(characterToTakeSlot, "Из-за пропорций звериного низа тела [npc.her], [npc.nameIsFull] не может(ет) лечь на [npc.her] спину, чтобы его(е) осеменили."));
 			}
 			
 			return new Value<Boolean, String>(true, "");
@@ -4201,20 +4169,20 @@ public class SexPosition {
 			}
 			
 			if(lyingDown.isPlayer()) {
-				return "You're lying on your "+(front?"front":"back")+" on the padded bench, with your legs and lower abdomen projecting out of the hole in the wall, exposing your pussy to the breeders beyond."
+				return "Ты лежишь на своей "+(front?"front":"back")+" на мягкой скамье, при этом твои ноги и низ живота торчат из отверстия в стене, подставляя твою киску заводчикам по ту сторону."
 						+ (Main.game.getPlayer().hasTail()
-								?" As you get into position, someone on the other side of the wall fastens your "
-									+(Main.game.getPlayer().getTailCount()>1?"[pc.tailCount] [pc.tails] to the wall by means of metal clamps":" [pc.tail] to the wall by means of a metal clamp")
-									+ ", in order to prevent you from using"+(Main.game.getPlayer().getTailCount()>1?"them":"it")+" to block your [pc.pussy+]."
+								?" Когда ты принимаешь нужную позу, кто-то по другую сторону стены пристегивает твои "
+									+(Main.game.getPlayer().getTailCount()>1?"[pc.tailCount] [pc.tails] к стене с помощью металлических зажимов":" [pc.tail] к стене с помощью металлического зажима")
+									+ ", чтобы ты не могла использовать"+(Main.game.getPlayer().getTailCount()>1?"them":"it")+" чтобы заблокировать твою [pc.pussy+]."
 								:"");
 			} else {
 				GameCharacter character = Main.sex.getCharacterInPosition(SexSlotBreedingStall.BREEDING_STALL_FRONT);
 				if(character!=null) {
-					return "[npc.Name] is lying on [npc.her] "+(front?"front":"back")+" on the padded bench, with [npc.her] legs and lower abdomen projecting out of the hole in the wall. [npc.Her] pussy is completely exposed to you, ready for breeding."
+					return "[npc.Name] лежит на [npc.her] "+(front?"front":"back")+" на мягкой скамье, при этом ноги [npc.her] и её низ живота торчат из отверстия в стене. Киска [npc.Her] полностью открыта тебе, готовая к осеменению."
 							+ (character.hasTail()
-									?" As [npc.she] gets into position, Epona steps forwards and fastens [npc.her] "
-										+(character.getTailCount()>1?"[npc.tailCount] [npc.tails] to the wall by means of metal clamps":" [npc.tail] to the wall by means of a metal clamp")
-										+ ", in order to prevent [npc.herHim] from using"+(character.getTailCount()>1?"them":"it")+" to block [npc.her] [npc.pussy+]."
+									?" Когда [npc.she] принимает позу, Эпона делает шаг вперед и пристегивает [npc.her] "
+										+(character.getTailCount()>1?"[npc.tailCount] [npc.tails] к стене с помощью металлических зажимов":" [npc.tail] к стене с помощью металлического зажима")
+										+ ", чтобы не дать [npc.herHim] использовать"+(character.getTailCount()>1?"them":"it")+" чтобы заблокировать [npc.her] [npc.pussy+]."
 									:"");
 				} else {
 					return "";
@@ -4274,7 +4242,7 @@ public class SexPosition {
 	
 
 	
-	public static final AbstractSexPosition GLORY_HOLE = new AbstractSexPosition("Glory hole oral",
+	public static final AbstractSexPosition GLORY_HOLE = new AbstractSexPosition("Оральный глорихоул",
 			3,
 			true,
 			null, Util.newArrayListOfValues(GloryHole.class)) {
@@ -4312,49 +4280,43 @@ public class SexPosition {
 				boolean c2Taur = characters.get(2).isTaur();
 				
 				if(c1Taur || c2Taur) {
-					sb.append("[npc.NameIsFull] kneeling on the floor, ready to service whatever sets of genitals [npc2.name] and [npc3.name] put through the glory holes to either side of [npc.herHim].");
+					sb.append("[npc.NameIsFull] стоит на коленях на полу, готовая обслужить любые гениталии, которые [npc2.name] и [npc3.name] просунут в отверстия глорихоула по обе стороны от [npc.herHim].");
 					for(int i=1; i<3; i++) {
 						GameCharacter character = characters.get(i);
 						if(character.hasPenis() && character.isAbleToAccessCoverableArea(CoverableArea.PENIS, true)) {
 							sb.append(UtilText.parse(characters.get(0), character,
-									"<br/><i>As [npc2.namePos] [npc2.cock+] is positioned below [npc2.her] lower [npc2.legRace]'s body,"
-										+ " [npc2.name] quickly [npc2.verb(discover)] that [npc2.sheIs] unable to get into a position in which [npc2.she] could push [npc2.her] cock through the gloryhole."
-									+ " Instead, [npc2.she] [npc2.has] to make do with turning around and presenting [npc2.her] [npc2.pussy+] to [npc.name]...</i>"));
+									"<br/><i>Поскольку [npc2.namePos] [npc2.cock+] расположился ниже нижней части тела [npc2.her] [npc2.legRace], [npc2.name] быстро [npc2.verb(discover)], что [npc2.sheIs] не сможет принять такую позу, чтобы [npc2.she] мог просунуть [npc2.her] член сквозь слайтхол... Вместо этого, [npc2.she] [npc2.has] довольствоваться тем, что развернется и подставит [npc2.her] [npc2.pussy+] к [npc.name]...</i>"));
 							
 						} else {
 							sb.append(UtilText.parse(characters.get(0), character,
-									"<br/><i>Due to possessing the lower body of [npc2.a_legRace],"
-									+ " [npc2.name] [npc2.verb(make)] a great deal of noise as [npc2.she] awkwardly [npc2.verb(turn)] around in the cramped stall and [npc2.verb(present)] [npc2.her] [npc2.pussy+] to [npc.name]...</i>"));
+									"<br/><i>Из-за того, что [npc2.a_legRace] обладает нижней частью тела [npc2.name], [npc2.verb(make)] куча шума, пока [npc2.she] неуклюже [npc2.verb(turn)] в тесной стойле и [npc2.verb(present)] [npc2.her] [npc2.pussy+] к [npc.name]...</i>"));
 						}
 					}
 					
 				} else {
 					if(characters.get(1).hasPenis() && characters.get(1).isAbleToAccessCoverableArea(CoverableArea.PENIS, true)
 							&& characters.get(2).hasPenis() && characters.get(2).isAbleToAccessCoverableArea(CoverableArea.PENIS, true)) {
-						sb.append("[npc.NameIsFull] kneeling on the floor, ready to serve [npc2.namePos] [npc2.cock+] on one side, an [npc3.namePos] [npc3.cock+] on the other.");
+						sb.append("[npc.NameIsFull] стоит на коленях на полу, готовая обслужить [npc2.namePos] [npc2.cock+] с одной стороны и [npc3.namePos] [npc3.cock+] с другой.");
 					} else {
-						sb.append("[npc.NameIsFull] kneeling on the floor, ready to service whatever sets of genitals [npc2.name] and [npc3.name] put through the glory holes to either side of [npc.herHim].");
+						sb.append("[npc.NameIsFull] стоит на коленях на полу, готовая обслужить любые гениталии, которые [npc2.name] и [npc3.name] просунут в отверстия глорихоула по обе стороны от [npc.herHim].");
 					}
 				}
 				
 			} else {
 				if(c1Taur) {
-					sb.append("[npc.NameIsFull] kneeling on the floor with [npc.her] mouth pushed up against the glory hole, ready to service whatever set of genitals [npc2.name] [npc2.verb(present)] [npc.herHim] with.");
+					sb.append("[npc.NameIsFull] стоит на коленях на полу, прижавшись [npc.her] ртом к отверстию в стене, готовая обслужить любые гениталии, которыми [npc2.name] будет [npc2.verb(present)] [npc.herHim].");
 					GameCharacter character = characters.get(1);
 					if(character.hasPenis() && character.isAbleToAccessCoverableArea(CoverableArea.PENIS, true)) {
 						sb.append(UtilText.parse(characters.get(0), character,
-								"<br/><i>As [npc2.namePos] [npc2.cock+] is positioned below [npc2.her] lower [npc2.legRace]'s body,"
-									+ " [npc2.name] quickly [npc2.verb(discover)] that [npc2.sheIs] unable to get into a position in which [npc2.she] could push [npc2.her] cock through the gloryhole."
-								+ " Instead, [npc2.she] [npc2.has] to make do with turning around and presenting [npc2.her] [npc2.pussy+] to [npc.name]...</i>"));
+								"<br/><i>Поскольку [npc2.namePos] [npc2.cock+] расположился ниже нижней части тела [npc2.her] [npc2.legRace], [npc2.name] быстро [npc2.verb(discover)], что [npc2.sheIs] не сможет принять такую позу, чтобы [npc2.she] мог просунуть [npc2.her] член сквозь слайтхол... Вместо этого, [npc2.she] [npc2.has] довольствоваться тем, что развернется и подставит [npc2.her] [npc2.pussy+] к [npc.name]...</i>"));
 						
 					} else {
 						sb.append(UtilText.parse(characters.get(0), character,
-								"<br/><i>Due to possessing the lower body of [npc2.a_legRace],"
-								+ " [npc2.name] [npc2.verb(make)] a great deal of noise as [npc2.she] awkwardly [npc2.verb(turn)] around in the cramped stall and [npc2.verb(present)] [npc2.her] [npc2.pussy+] to [npc.name]...</i>"));
+								"<br/><i>Из-за того, что [npc2.a_legRace] обладает нижней частью тела [npc2.name], [npc2.verb(make)] куча шума, пока [npc2.she] неуклюже [npc2.verb(turn)] в тесной стойле и [npc2.verb(present)] [npc2.her] [npc2.pussy+] к [npc.name]...</i>"));
 					}
 					
 				} else {
-					sb.append("[npc.NameIsFull] kneeling on the floor with [npc.her] mouth pushed up against the glory hole, ready to service whatever set of genitals [npc2.name] [npc2.verb(present)] [npc.herHim] with.");
+					sb.append("[npc.NameIsFull] стоит на коленях на floor, прижавшись [npc.her] ртом к отверстию в стене, готовая обслужить любые гениталии, которыми [npc2.name] будет [npc2.verb(present)] [npc.herHim].");
 				}
 			}
 			
@@ -4376,7 +4338,7 @@ public class SexPosition {
 		}
 	};
 	
-	public static final AbstractSexPosition GLORY_HOLE_SEX = new AbstractSexPosition("Glory hole sex",
+	public static final AbstractSexPosition GLORY_HOLE_SEX = new AbstractSexPosition("Секс через отверстие в стене",
 			3,
 			true,
 			null, Util.newArrayListOfValues(GloryHole.class)) {
@@ -4406,20 +4368,20 @@ public class SexPosition {
 			StringBuilder sb = new StringBuilder();
 			
 			if(analFucking) {
-				sb.append("[npc.NameIsFull] pressing [npc.her] [npc.asshole+] up against the glory hole behind [npc.herHim],");
+				sb.append("[npc.NameIsFull] прижимает [npc.her] [npc.asshole+] к отверстию в стене позади [npc.herHim],");
 			} else {
-				sb.append("[npc.NameIsFull] pressing [npc.her] [npc.pussy+] up against the glory hole behind [npc.herHim],");
+				sb.append("[npc.NameIsFull] прижимает [npc.her] [npc.pussy+] к отверстию в стене позади [npc.herHim],");
 			}
 			
 			if(characters.get(1).hasPenis() && characters.get(1).isAbleToAccessCoverableArea(CoverableArea.PENIS, true) && !characters.get(1).isTaur()) {
-				sb.append(" ready to have [npc2.name] thrust forwards and sink [npc2.her] [npc2.cock+] into it.");
+				sb.append(" готовая к тому, чтобы [npc2.name] толкнулся вперед и погрузил [npc2.her] [npc2.cock+] внутрь.");
 			} else {
-				sb.append(" ready to have [npc2.name] start using it.");
+				sb.append(" готовая к тому, чтобы [npc2.name] начал использовать её.");
 			}
 
 			if(Main.sex.getTotalParticipantCount(false)==3) {
 				characters.add(Main.sex.getCharacterInPosition(SexSlotUnique.GLORY_HOLE_RECEIVING_ORAL_ONE));
-				sb.append(" On the other side of the stall, [npc.name] [npc.is] leaning down to continue pleasuring [npc3.namePos] gloryhole with [npc.her] mouth.");
+				sb.append(" По другую сторону кабинки [npc.name] [npc.is] наклоняется, чтобы продолжить ласкать [npc3.namePos] через отверстие в стене с помощью [npc.her] рта.");
 			}
 			
 			return UtilText.parse(characters, sb.toString());

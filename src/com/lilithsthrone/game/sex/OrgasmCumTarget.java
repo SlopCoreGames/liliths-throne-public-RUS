@@ -12,17 +12,17 @@ import com.lilithsthrone.game.dialogue.utils.UtilText;
 public enum OrgasmCumTarget {
 
 	// Specials:
-	LILAYA_PANTIES("into Lilaya's panties", "panties", false) {
+	LILAYA_PANTIES("в трусики Lilaya", "panties", false) {
 		@Override
 		public CoverableArea getRelatedCoverableArea(GameCharacter owner) {
 			return CoverableArea.NONE;
 		}
 	},
 	
-	WALL("up the wall", "wall", false) {
+	WALL("на стену", "wall", false) {
 		@Override
 		public String getName() {
-			return UtilText.parse("up the [pc.wall]");
+			return UtilText.parse("в [pc.wall]");
 		}
 
 		@Override
@@ -30,7 +30,7 @@ public enum OrgasmCumTarget {
 			return CoverableArea.NONE;
 		}
 	},
-	FLOOR("onto floor", "floor", false) {
+	FLOOR("на пол", "floor", false) {
 		@Override
 		public CoverableArea getRelatedCoverableArea(GameCharacter owner) {
 			return CoverableArea.NONE;
@@ -43,26 +43,26 @@ public enum OrgasmCumTarget {
 			return CoverableArea.NONE;
 		}
 	},
-	INSIDE_SWITCH_DOUBLE("inside (double)", "inside", true) {
+	INSIDE_SWITCH_DOUBLE("внутрь (двойной)", "inside", true) {
 		@Override
 		public CoverableArea getRelatedCoverableArea(GameCharacter owner) {
 			return CoverableArea.NONE;
 		}
 	},
 	
-	ARMPITS("over armpit", "armpit", true) {
+	ARMPITS("на подмышку", "armpit", true) {
 		@Override
 		public CoverableArea getRelatedCoverableArea(GameCharacter owner) {
 			return CoverableArea.ARMPITS;
 		}
 	},
-	ASS("over ass", "ass", true) {
+	ASS("на задницу", "ass", true) {
 		@Override
 		public CoverableArea getRelatedCoverableArea(GameCharacter owner) {
 			return CoverableArea.ASS;
 		}
 	},
-	GROIN("over groin", "groin", true) {
+	GROIN("на пах", "groin", true) {
 		@Override
 		public CoverableArea getRelatedCoverableArea(GameCharacter owner) {
 			if(owner.hasVagina()) {
@@ -73,50 +73,50 @@ public enum OrgasmCumTarget {
 			return CoverableArea.MOUND;
 		}
 	},
-	BREASTS("onto breasts", "breasts", true) {
+	BREASTS("на грудь", "breasts", true) {
 		@Override
 		public CoverableArea getRelatedCoverableArea(GameCharacter owner) {
 			return CoverableArea.BREASTS;
 		}
 	},
-	FACE("over face", "face", true) {
+	FACE("на лицо", "face", true) {
 		@Override
 		public CoverableArea getRelatedCoverableArea(GameCharacter owner) {
 			return CoverableArea.MOUTH;
 		}
 	},
-	HAIR("into hair", "hair", true) {
+	HAIR("в волосы", "hair", true) {
 		@Override
 		public CoverableArea getRelatedCoverableArea(GameCharacter owner) {
 			return CoverableArea.HAIR;
 		}
 	},
-	STOMACH("onto stomach", "stomach", true) {
+	STOMACH("на живот", "stomach", true) {
 		@Override
 		public CoverableArea getRelatedCoverableArea(GameCharacter owner) {
 			return CoverableArea.STOMACH;
 		}
 	},
-	LEGS("onto legs", "legs", true) {
+	LEGS("на ноги", "legs", true) {
 		@Override
 		public CoverableArea getRelatedCoverableArea(GameCharacter owner) {
 			return CoverableArea.LEGS;
 		}
 	},
-	FEET("onto feet", "feet", true) {
+	FEET("на ступни", "feet", true) {
 		@Override
 		public CoverableArea getRelatedCoverableArea(GameCharacter owner) {
 			return CoverableArea.FEET;
 		}
 	},
-	BACK("over back", "back", true) {
+	BACK("на спину", "back", true) {
 		@Override
 		public CoverableArea getRelatedCoverableArea(GameCharacter owner) {
 			return CoverableArea.BACK;
 		}
 	},
 	
-	SELF_GROIN("onto self groin", "own groin", false) {
+	SELF_GROIN("на свой пах", "свой пах", false) {
 		@Override
 		public CoverableArea getRelatedCoverableArea(GameCharacter owner) {
 			if(owner.hasVagina()) {
@@ -127,37 +127,37 @@ public enum OrgasmCumTarget {
 			return CoverableArea.MOUND;
 		}
 	},
-	SELF_STOMACH("onto self stomach", "own stomach", false) {
+	SELF_STOMACH("на свой живот", "свой живот", false) {
 		@Override
 		public CoverableArea getRelatedCoverableArea(GameCharacter owner) {
 			return CoverableArea.STOMACH;
 		}
 	},
-	SELF_LEGS("onto self legs", "own legs", false) {
+	SELF_LEGS("на свои ноги", "собственные ноги", false) {
 		@Override
 		public CoverableArea getRelatedCoverableArea(GameCharacter owner) {
 			return CoverableArea.LEGS;
 		}
 	},
-	SELF_FEET("onto self feet", "own feet", false) {
+	SELF_FEET("на свои стопы", "собственные стопы", false) {
 		@Override
 		public CoverableArea getRelatedCoverableArea(GameCharacter owner) {
 			return CoverableArea.FEET;
 		}
 	},
-	SELF_BREASTS("onto self breasts", "own breasts", false) {
+	SELF_BREASTS("на свою грудь", "собственная грудь", false) {
 		@Override
 		public CoverableArea getRelatedCoverableArea(GameCharacter owner) {
 			return CoverableArea.BREASTS;
 		}
 	},
-	SELF_HANDS("onto self hands", "own hands", false) {
+	SELF_HANDS("на свои руки", "собственные руки", false) {
 		@Override
 		public CoverableArea getRelatedCoverableArea(GameCharacter owner) {
 			return CoverableArea.HANDS;
 		}
 	},
-	SELF_FACE("onto self face", "own face", false) {
+	SELF_FACE("на своё лицо", "собственное лицо", false) {
 		@Override
 		public CoverableArea getRelatedCoverableArea(GameCharacter owner) {
 			return CoverableArea.MOUTH;

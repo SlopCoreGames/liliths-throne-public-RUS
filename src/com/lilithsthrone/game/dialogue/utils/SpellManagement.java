@@ -70,44 +70,44 @@ public class SpellManagement {
     private static Response getResponses1To9(int index) {
     	if(index==1) {
     		if(Main.game.getCurrentDialogueNode()==CHARACTER_SPELLS_EARTH) {
-    			return new Response("Earth", UtilText.parse(getSpellOwner(), "You are already viewing [npc.namePos] Earth spells!"), null);
+    			return new Response("Земля", UtilText.parse(getSpellOwner(), "Вы уже просматриваете заклинания школы [npc.namePos] Земля!"), null);
     		}
-			return new Response("Earth", UtilText.parse(getSpellOwner(), "View [npc.namePos] spells and upgrades in the school of Earth."), CHARACTER_SPELLS_EARTH);
+			return new Response("Земля", UtilText.parse(getSpellOwner(), "Просмотреть заклинания и улучшения школы [npc.namePos] Земля."), CHARACTER_SPELLS_EARTH);
 			
 		} else if(index==2) {
     		if(Main.game.getCurrentDialogueNode()==CHARACTER_SPELLS_WATER) {
-    			return new Response("Water", UtilText.parse(getSpellOwner(), "You are already viewing [npc.namePos] Water spells!"), null);
+    			return new Response("Вода", UtilText.parse(getSpellOwner(), "Вы уже просматриваете заклинания школы [npc.namePos] Вода!"), null);
     		}
-			return new Response("Water", UtilText.parse(getSpellOwner(), "View [npc.namePos] spells and upgrades in the school of Water."), CHARACTER_SPELLS_WATER);
+			return new Response("Вода", UtilText.parse(getSpellOwner(), "Просмотреть заклинания и улучшения школы [npc.namePos] Вода."), CHARACTER_SPELLS_WATER);
 			
 		} else if(index==3) {
     		if(Main.game.getCurrentDialogueNode()==CHARACTER_SPELLS_FIRE) {
-    			return new Response("Fire", UtilText.parse(getSpellOwner(), "You are already viewing [npc.namePos] Fire spells!"), null);
+    			return new Response("Огненный", UtilText.parse(getSpellOwner(), "Вы уже просматриваете заклинания школы [npc.namePos] Огонь!"), null);
     		}
-			return new Response("Fire", UtilText.parse(getSpellOwner(), "View [npc.namePos] spells and upgrades in the school of Fire."), CHARACTER_SPELLS_FIRE);
+			return new Response("Огненный", UtilText.parse(getSpellOwner(), "Просмотреть заклинания и улучшения школы [npc.namePos] Огонь."), CHARACTER_SPELLS_FIRE);
 			
 		} else if(index==4) {
     		if(Main.game.getCurrentDialogueNode()==CHARACTER_SPELLS_AIR) {
-    			return new Response("Air", UtilText.parse(getSpellOwner(), "You are already viewing [npc.namePos] Air spells!"), null);
+    			return new Response("Воздух", UtilText.parse(getSpellOwner(), "Вы уже просматриваете заклинания школы [npc.namePos] Воздух!"), null);
     		}
-			return new Response("Air", UtilText.parse(getSpellOwner(), "View [npc.namePos] spells and upgrades in the school of Air."), CHARACTER_SPELLS_AIR);
+			return new Response("Воздух", UtilText.parse(getSpellOwner(), "Просмотреть [npc.namePos] заклинаний и улучшений в школе Воздуха."), CHARACTER_SPELLS_AIR);
 			
 		} else if(index==5) {
     		if(Main.game.getCurrentDialogueNode()==CHARACTER_SPELLS_ARCANE) {
-    			return new Response("Arcane", UtilText.parse(getSpellOwner(), "You are already viewing [npc.namePos] Arcane spells!"), null);
+    			return new Response("Аркана", UtilText.parse(getSpellOwner(), "Вы уже просматриваете [npc.namePos] заклинаний Arcane!"), null);
     		}
-			return new Response("Arcane", UtilText.parse(getSpellOwner(), "View [npc.namePos] spells and upgrades in the school of Arcane."), CHARACTER_SPELLS_ARCANE);
+			return new Response("Аркана", UtilText.parse(getSpellOwner(), "Просмотреть [npc.namePos] заклинаний и улучшений в школе Arcane."), CHARACTER_SPELLS_ARCANE);
 			
 		} else if(index==6) {
     		if(Main.game.getCurrentDialogueNode()==CHARACTER_SPELLS_MISC) {
-    			return new Response("Misc.", UtilText.parse(getSpellOwner(), "You are already viewing [npc.namePos] miscellaneous spells!"), null);
+    			return new Response("Разное", UtilText.parse(getSpellOwner(), "Вы уже просматриваете [npc.namePos] прочих заклинаний!"), null);
     		}
-			return new Response("Misc.", UtilText.parse(getSpellOwner(), "View [npc.namePos] miscellaneous spells which [npc.sheHas] gained from weapons or special events."), CHARACTER_SPELLS_MISC);
+			return new Response("Разное", UtilText.parse(getSpellOwner(), "Просмотреть [npc.namePos] прочих заклинаний, которые [npc.sheHas] получил из оружия или особых событий."), CHARACTER_SPELLS_MISC);
 			
 		} else if(index==9) {
 			return new ResponseEffectsOnly(
-					UtilText.parse(getSpellTarget(), "Target: <b style='color:"+getSpellTarget().getFemininity().getColour().toWebHexString()+";'>[npc.Name]</b>"),
-					"Cycle the targeted character for casting spells on.") {
+					UtilText.parse(getSpellTarget(), "Цель: <b style='color:"+getSpellTarget().getFemininity().getColour().toWebHexString()+";'>[npc.Name]</b>"),
+					"Переключить цель для наложения заклинаний.") {
 				@Override
 				public void effects() {
 					List<GameCharacter> companions = Util.newArrayListOfValues(Main.game.getPlayer());
@@ -133,7 +133,7 @@ public class SpellManagement {
     	return null;
     }
 
-    public static final DialogueNode CHARACTER_SPELLS_ARCANE = new DialogueNode("Arcane Spells", "", true) {
+    public static final DialogueNode CHARACTER_SPELLS_ARCANE = new DialogueNode("Заклинания Arcane", "", true) {
 		@Override
 		public String getHeaderContent() {
 			UtilText.nodeContentSB.setLength(0);
@@ -145,11 +145,9 @@ public class SpellManagement {
 						+"</div>"
 						+"<div class='container-full-width' style='width:50%; padding:8px; margin:0;'>"
 							+SpellSchool.ARCANE.getDescription()
-						+"</div>"
-						+ "<div class='container-full-width inner' style='text-align:center;'>"
-							+ "[style.boldArcane(School of Arcane ability:)] "
+						+"</div><div class='container-full-width inner' style='text-align:center;'>[style.boldArcane(Способность школы Arcane:)] "
 								+(!getSpellOwner().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.ARCANE)
-									?"[style.colourDisabled("+SpellSchool.ARCANE.getPassiveBuff()+")]<br/>(Requires knowing at least <b>three</b> Arcane school spells to unlock.)"
+									?"[style.colourDisabled("+SpellSchool.ARCANE.getPassiveBuff()+")]<br/>(Для разблокировки нужно знать как минимум <b>три</b> заклинания школы Arcane.)"
 									:"[style.colourGood("+SpellSchool.ARCANE.getPassiveBuff()+")]")
 						+ "</div>"
 					+"</div>");
@@ -168,7 +166,7 @@ public class SpellManagement {
 				return getResponses1To9(index);
 				
 			} else if(index==10) {
-				return new Response("Reset Arcane", UtilText.parse(getSpellOwner(), "Reset [npc.namePos] Arcane upgrades, refunding all points spent. [npc.Her] spells will not be reset."), CHARACTER_SPELLS_ARCANE) {
+				return new Response("Сбросить Arcane", UtilText.parse(getSpellOwner(), "Сбросить улучшения [npc.namePos] Arcane, вернув все потраченные очки. Заклинания [npc.Her] сброшены не будут."), CHARACTER_SPELLS_ARCANE) {
 					@Override
 					public void effects() {
 						getSpellOwner().resetSpellUpgrades(SpellSchool.ARCANE);
@@ -176,7 +174,7 @@ public class SpellManagement {
 				};
 				
 			} else if (index == 0) {
-				return new Response("Back", "Return to the previous screen.", dialogueReturn);
+				return new Response("Назад", "Вернуться к предыдущему экрану.", dialogueReturn);
 			
 			} else {
 				return null;
@@ -192,7 +190,7 @@ public class SpellManagement {
 		}
 	};
 	
-	public static final DialogueNode CHARACTER_SPELLS_EARTH = new DialogueNode("Earth Spells", "", true) {
+	public static final DialogueNode CHARACTER_SPELLS_EARTH = new DialogueNode("Заклинания Земли", "", true) {
 
 
 		@Override
@@ -206,11 +204,9 @@ public class SpellManagement {
 						+"</div>"
 						+"<div class='container-full-width' style='width:50%; padding:8px; margin:0;'>"
 							+SpellSchool.EARTH.getDescription()
-						+"</div>"
-						+ "<div class='container-full-width inner' style='text-align:center;'>"
-							+ "[style.boldEarth(School of Earth ability:)] "
+						+"</div><div class='container-full-width inner' style='text-align:center;'>[style.boldEarth(Способность школы Земли:)] "
 								+(!getSpellOwner().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
-									?"[style.colourDisabled("+SpellSchool.EARTH.getPassiveBuff()+")]<br/>(Requires knowing at least <b>three</b> Earth school spells to unlock.)"
+									?"[style.colourDisabled("+SpellSchool.EARTH.getPassiveBuff()+")]<br/>(Для разблокировки нужно знать как минимум <b>три</b> заклинания школы Земли.)"
 									:"[style.colourGood("+SpellSchool.EARTH.getPassiveBuff()+")]")
 						+ "</div>"
 					+"</div>");
@@ -229,7 +225,7 @@ public class SpellManagement {
 				return getResponses1To9(index);
 				
 			}  else if(index==10) {
-				return new Response("Reset Earth", UtilText.parse(getSpellOwner(), "Reset [npc.namePos] Earth upgrades, refunding all points spent. [npc.Her] spells will not be reset."), CHARACTER_SPELLS_EARTH) {
+				return new Response("Сбросить Землю", UtilText.parse(getSpellOwner(), "Сбросить улучшения [npc.namePos] Земли, вернув все потраченные очки. Заклинания [npc.Her] сброшены не будут."), CHARACTER_SPELLS_EARTH) {
 					@Override
 					public void effects() {
 						getSpellOwner().resetSpellUpgrades(SpellSchool.EARTH);
@@ -237,7 +233,7 @@ public class SpellManagement {
 				};
 				
 			} else if(index == 0) {
-				return new Response("Back", "Return to the previous screen.", dialogueReturn);
+				return new Response("Назад", "Вернуться к предыдущему экрану.", dialogueReturn);
 			
 			} else {
 				return null;
@@ -253,7 +249,7 @@ public class SpellManagement {
 		}
 	};
 	
-	public static final DialogueNode CHARACTER_SPELLS_WATER = new DialogueNode("Water Spells", "", true) {
+	public static final DialogueNode CHARACTER_SPELLS_WATER = new DialogueNode("Заклинания Воды", "", true) {
 
 
 		@Override
@@ -267,11 +263,9 @@ public class SpellManagement {
 						+"</div>"
 						+"<div class='container-full-width' style='width:50%; padding:8px; margin:0;'>"
 							+SpellSchool.WATER.getDescription()
-						+"</div>"
-						+ "<div class='container-full-width inner' style='text-align:center;'>"
-							+ "[style.boldWater(School of Water ability:)] "
+						+"</div><div class='container-full-width inner' style='text-align:center;'>[style.boldWater(Способность школы Воды:)] "
 								+(!getSpellOwner().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.WATER)
-									?"[style.colourDisabled("+SpellSchool.WATER.getPassiveBuff()+")]<br/>(Requires knowing at least <b>three</b> Water school spells to unlock.)"
+									?"[style.colourDisabled("+SpellSchool.WATER.getPassiveBuff()+")]<br/>(Для разблокировки нужно знать как минимум <b>три</b> заклинания школы Воды.)"
 									:"[style.colourGood("+SpellSchool.WATER.getPassiveBuff()+")]")
 						+ "</div>"
 					+"</div>");
@@ -290,7 +284,7 @@ public class SpellManagement {
 				return getResponses1To9(index);
 				
 			} else if(index==10) {
-				return new Response("Reset Water", UtilText.parse(getSpellOwner(), "Reset [npc.namePos] Water upgrades, refunding all points spent. [npc.Her] spells will not be reset."), CHARACTER_SPELLS_WATER) {
+				return new Response("Сбросить Воду", UtilText.parse(getSpellOwner(), "Сбросить [npc.namePos] улучшения Воды, возвращая все потраченные очки. [npc.Her] заклинания сброшены не будут."), CHARACTER_SPELLS_WATER) {
 					@Override
 					public void effects() {
 						getSpellOwner().resetSpellUpgrades(SpellSchool.WATER);
@@ -298,7 +292,7 @@ public class SpellManagement {
 				};
 				
 			} else if (index == 0) {
-				return new Response("Back", "Return to the previous screen.", dialogueReturn);
+				return new Response("Назад", "Вернуться к предыдущему экрану.", dialogueReturn);
 			
 			} else {
 				return null;
@@ -314,7 +308,7 @@ public class SpellManagement {
 		}
 	};
 	
-	public static final DialogueNode CHARACTER_SPELLS_AIR = new DialogueNode("Air Spells", "", true) {
+	public static final DialogueNode CHARACTER_SPELLS_AIR = new DialogueNode("Заклинания Воздуха", "", true) {
 
 
 		@Override
@@ -328,11 +322,9 @@ public class SpellManagement {
 						+"</div>"
 						+"<div class='container-full-width' style='width:50%; padding:8px; margin:0;'>"
 							+SpellSchool.AIR.getDescription()
-						+"</div>"
-						+ "<div class='container-full-width inner' style='text-align:center;'>"
-							+ "[style.boldAir(School of Air ability:)] "
+						+"</div><div class='container-full-width inner' style='text-align:center;'>[style.boldAir(Способность школы Воздуха:)] "
 								+(!getSpellOwner().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.AIR)
-									?"[style.colourDisabled("+SpellSchool.AIR.getPassiveBuff()+")]<br/>(Requires knowing at least <b>three</b> Air school spells to unlock.)"
+									?"[style.colourDisabled("+SpellSchool.AIR.getPassiveBuff()+")]<br/>(Для разблокировки нужно знать как минимум <b>три</b> заклинания школы Воздуха.)"
 									:"[style.colourGood("+SpellSchool.AIR.getPassiveBuff()+")]")
 						+ "</div>"
 					+"</div>");
@@ -351,7 +343,7 @@ public class SpellManagement {
 				return getResponses1To9(index);
 				
 			}  else if(index==10) {
-				return new Response("Reset Air", UtilText.parse(getSpellOwner(), "Reset [npc.namePos] Air upgrades, refunding all points spent. [npc.Her] spells will not be reset."), CHARACTER_SPELLS_AIR) {
+				return new Response("Сбросить Воздух", UtilText.parse(getSpellOwner(), "Сбросить [npc.namePos] улучшения Воздуха, возвращая все потраченные очки. [npc.Her] заклинания сброшены не будут."), CHARACTER_SPELLS_AIR) {
 					@Override
 					public void effects() {
 						getSpellOwner().resetSpellUpgrades(SpellSchool.AIR);
@@ -359,7 +351,7 @@ public class SpellManagement {
 				};
 				
 			} else if (index == 0) {
-				return new Response("Back", "Return to the previous screen.", dialogueReturn);
+				return new Response("Назад", "Вернуться к предыдущему экрану.", dialogueReturn);
 			
 			} else {
 				return null;
@@ -375,7 +367,7 @@ public class SpellManagement {
 		}
 	};
 	
-	public static final DialogueNode CHARACTER_SPELLS_FIRE = new DialogueNode("Fire Spells", "", true) {
+	public static final DialogueNode CHARACTER_SPELLS_FIRE = new DialogueNode("Заклинания Огня", "", true) {
 
 		@Override
 		public String getHeaderContent() {
@@ -388,11 +380,9 @@ public class SpellManagement {
 						+"</div>"
 						+"<div class='container-full-width' style='width:50%; padding:8px; margin:0;'>"
 							+SpellSchool.FIRE.getDescription()
-						+"</div>"
-						+ "<div class='container-full-width inner' style='text-align:center;'>"
-							+ "[style.boldFire(School of Fire ability:)] "
+						+"</div><div class='container-full-width inner' style='text-align:center;'>[style.boldFire(Способность школы Огня:)] "
 								+(!getSpellOwner().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.FIRE)
-									?"[style.colourDisabled("+SpellSchool.FIRE.getPassiveBuff()+")]<br/>(Requires knowing at least <b>three</b> Fire school spells to unlock.)"
+									?"[style.colourDisabled("+SpellSchool.FIRE.getPassiveBuff()+")]<br/>(Требуется знание как минимум <b>трех</b> заклинаний школы Огня, чтобы разблокировать.)"
 									:"[style.colourGood("+SpellSchool.FIRE.getPassiveBuff()+")]")
 						+ "</div>"
 					+"</div>");
@@ -411,7 +401,7 @@ public class SpellManagement {
 				return getResponses1To9(index);
 				
 			} else if(index==10) {
-				return new Response("Reset Fire", UtilText.parse(getSpellOwner(), "Reset [npc.namePos] Fire upgrades, refunding all points spent. [npc.Her] spells will not be reset."), CHARACTER_SPELLS_FIRE) {
+				return new Response("Сбросить Огонь", UtilText.parse(getSpellOwner(), "Сбросить [npc.namePos] улучшения Огня, возвращая все потраченные очки. [npc.Her] заклинания сброшены не будут."), CHARACTER_SPELLS_FIRE) {
 					@Override
 					public void effects() {
 						getSpellOwner().resetSpellUpgrades(SpellSchool.FIRE);
@@ -419,7 +409,7 @@ public class SpellManagement {
 				};
 				
 			} else if (index == 0) {
-				return new Response("Back", "Return to the previous screen.", dialogueReturn);
+				return new Response("Назад", "Вернуться к предыдущему экрану.", dialogueReturn);
 			
 			} else {
 				return null;
@@ -435,7 +425,7 @@ public class SpellManagement {
 		}
 	};
 
-	public static final DialogueNode CHARACTER_SPELLS_MISC = new DialogueNode("Miscellaneous Spells", "", true) {
+	public static final DialogueNode CHARACTER_SPELLS_MISC = new DialogueNode("Разные заклинания", "", true) {
 
 		@Override
 		public String getHeaderContent() {
@@ -445,18 +435,7 @@ public class SpellManagement {
 					"<div class='container-full-width' style='width:100%; padding:0; margin:0;'>"
 						+"<div class='container-full-width' style='width:50%; padding:0; margin:0;'>"
 							+Spell.getSpellMiscTreeDisplay(getSpellOwner(), getSpellTarget())
-						+"</div>"
-						+"<div class='container-full-width' style='width:50%; padding:8px; margin:0;'>"
-							+ "While there are many spells explained in great detail in relatively easy-to-obtain spell books, there are also those which have eluded the process of being catalogued and committed to text."
-							+ " Although these elusive spells all fall into one of the five main schools of the arcane, they are typically categorised as 'miscellaneous' in the few books which make brief reference to them."
-							+ "<br/><br/>"
-							+ "Although they cannot be learned from a book, these spells can harnessed by equipping specially-enchanted weapons."
-							+ " There's also the possibility of obtaining these spells via unique events..."
-						+"</div>"
-						+ "<div class='container-full-width inner' style='text-align:center;'>"
-							+ "[style.boldSpell(Miscellaneous spells)] are obtained from special weapons and unique events."
-						+ "</div>"
-					+"</div>");
+						+"</div><div class='container-full-width' style='width:50%; padding:8px; margin:0;'>Хотя многие заклинания подробно описаны в относительно легкодоступных книгах заклинаний, существуют и те, что ускользнули от каталогизации и записи в тексты. Хотя все эти неуловимые заклинания относятся к одной из пяти основных школ арканы, в тех немногих книгах, где они кратко упоминаются, их обычно классифицируют как «разные».<br/><br/>Хотя их нельзя выучить по книге, эти заклинания можно использовать, экипировав специально зачарованное оружие. Также существует возможность получить эти заклинания через уникальные события...</div><div class='container-full-width inner' style='text-align:center;'>[style.boldSpell(Разные заклинания)] добываются из особого оружия и уникальных событий.</div></div>");
 			
 			return UtilText.nodeContentSB.toString();
 		}
@@ -472,7 +451,7 @@ public class SpellManagement {
 				return getResponses1To9(index);
 				
 			} else if (index == 0) {
-				return new Response("Back", "Return to the previous screen.", dialogueReturn);
+				return new Response("Назад", "Вернуться к предыдущему экрану.", dialogueReturn);
 			
 			} else {
 				return null;
@@ -505,7 +484,7 @@ public class SpellManagement {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue", "Return to the spell management screen.", spellScreenAfterCasting);
+				return new Response("Продолжить", "Вернуться к экрану управления заклинаниями.", spellScreenAfterCasting);
 			}
 			return null;
 		}

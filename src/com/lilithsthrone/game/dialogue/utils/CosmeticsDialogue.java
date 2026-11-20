@@ -65,58 +65,58 @@ public class CosmeticsDialogue {
 	
 	private static Response getMainResponse(int index) {
 		if(index == 1){
-			return new ResponseTrade("Trade", UtilText.parse(beautician, "Ask [npc.name] what cosmetics or jewellery [npc.she] has for sale."), beautician);
+			return new ResponseTrade("Торговать", UtilText.parse(beautician, "Спросить у [npc.name], какие косметические средства или украшения продает [npc.she]."), beautician);
 			
 		} else if (index == 2) {
 			if (Main.game.getCurrentDialogueNode()==BEAUTICIAN_COSMETICS) {
-				return new Response("Makeup", "You are already looking at what cosmetics are available...", null);
+				return new Response("Макияж", "Вы уже осматриваете доступную косметику...", null);
 				
 			} else if(!Main.game.getPlayer().isAbleToWearMakeup()) {
-				return new Response("Makeup", UtilText.parse(beautician, "As your body is made of "+Main.game.getPlayer().getBodyMaterial().getName()+", [npc.name] is unable to apply any makeup!"), null);
+				return new Response("Макияж", UtilText.parse(beautician, "Поскольку ваше тело состоит из "+Main.game.getPlayer().getBodyMaterial().getName()+", [npc.name] не может нанести макияж!"), null);
 				
 			} else {
-				return new Response("Makeup",
-						UtilText.parse(beautician, "[npc.Name] can apply many different styles and colours of lipstick, nail polish, and other forms of makeup."),
+				return new Response("Макияж",
+						UtilText.parse(beautician, "[npc.Name] может использовать множество различных оттенков и стилей помады, лака для ногтей и других видов макияжа."),
 						BEAUTICIAN_COSMETICS);
 			}
 			
 		} else if (index == 3) {
 			if (Main.game.getCurrentDialogueNode()==BEAUTICIAN_HAIR) {
-				return new Response("Hair", "You are already looking at what hair styles are available...", null);
+				return new Response("Волосы", "Вы уже осматриваете доступные прически...", null);
 				
 			} else {
-				return new Response("Hair",
-					UtilText.parse(beautician, "[npc.Name] is able to dye, style, cut, and even lengthen your [pc.hair]."),
+				return new Response("Волосы",
+					UtilText.parse(beautician, "[npc.Name] может окрашивать, укладывать, стричь и даже удлинять ваши [pc.hair]."),
 					BEAUTICIAN_HAIR);
 			}
 
 		} else if (index == 4) {
 			if (Main.game.getCurrentDialogueNode()==BEAUTICIAN_PIERCINGS) {
-				return new Response("Piercings", "You are already looking at what piercings are available...", null);
+				return new Response("Пирсинг", "Вы уже осматриваете доступные виды пирсинга...", null);
 				
 			} else {
-				return new Response("Piercings",
-						UtilText.parse(beautician, "[npc.Name] is able to pierce many different parts of your body."),
+				return new Response("Пирсинг",
+						UtilText.parse(beautician, "[npc.Name] может сделать проколы во многих частях вашего тела."),
 						BEAUTICIAN_PIERCINGS);
 			}
 
 		}  else if (index == 5) {
 			if (Main.game.getCurrentDialogueNode()==BEAUTICIAN_EYES) {
-				return new Response("Eyes", "You are already looking at what changes to your eyes are available...", null);
+				return new Response("Глаза", "Вы уже осматриваете доступные изменения глаз...", null);
 				
 			} else {
-				return new Response("Eyes",
-						UtilText.parse(beautician, "[npc.Name] is able to recolour your eyes, although it's quite demanding on [npc.her] aura, and is therefore very expensive."),
+				return new Response("Глаза",
+						UtilText.parse(beautician, "[npc.Name] может изменить цвет ваших глаз, хотя это довольно сильно истощает [npc.her] ауру, и поэтому стоит очень дорого."),
 						BEAUTICIAN_EYES);
 			}
 
 		} else if (index == 6) {
 			if (Main.game.getCurrentDialogueNode()==BEAUTICIAN_SKIN_COLOUR) {
-				return new Response("Coverings", "You are already looking at what changes to your coverings are available...", null);
+				return new Response("Покрытия", "Вы уже просматриваете доступные изменения для вашего облика...", null);
 				
 			} else {
-				return new Response("Coverings",
-						UtilText.parse(beautician, "[npc.Name] is able to recolour all types of body coverings, such as skin, fur, and feathers. This is quite demanding on [npc.her] aura, and is therefore very expensive."),
+				return new Response("Покрытия",
+						UtilText.parse(beautician, "[npc.Name] способна менять цвет любых типов кожного покрова, таких как кожа, мех и перья. Это весьма требовательно к [npc.her] ауре, и поэтому стоит очень дорого."),
 						BEAUTICIAN_SKIN_COLOUR){
 					@Override
 					public void effects() {
@@ -127,24 +127,24 @@ public class CosmeticsDialogue {
 			
 		} else if (index == 7) {
 			if (Main.game.getCurrentDialogueNode()==BEAUTICIAN_OTHER) {
-				return new Response("Miscellaneous", "You are already looking at what miscellaneous services are available...", null);
+				return new Response("Разное", "Вы уже просматриваете доступные прочие услуги...", null);
 				
 			} else {
-				return new Response("Miscellaneous", UtilText.parse(beautician, "[npc.Name] offers other miscellaneous services, such as anal bleaching."), BEAUTICIAN_OTHER);
+				return new Response("Разное", UtilText.parse(beautician, "[npc.Name] предлагает и другие прочие услуги, такие как отбеливание ануса."), BEAUTICIAN_OTHER);
 			}
 			
 		} else if (index == 8) {
 			if (Main.game.getCurrentDialogueNode()==BEAUTICIAN_TATTOOS) {
-				return new Response("Tattoos", "You are already looking at what tattoos are available...", null);
+				return new Response("Татуировки", "Вы уже просматриваете доступные татуировки...", null);
 				
 			} else {
-				return new Response("Tattoos",
-						UtilText.parse(beautician, "[npc.Name] is able to both apply and remove tattoos. She's even able to apply arcane-enchanted tattoos, but they look to be very expensive..."),
+				return new Response("Татуировки",
+						UtilText.parse(beautician, "[npc.Name] способна как наносить, так и удалять татуировки. Она даже может наносить татуировки с арканным зачарованием, но, похоже, они стоят очень дорого..."),
 						BEAUTICIAN_TATTOOS);
 			}
 
 		} else if (index == 0) {
-			return new Response("Back", "You've had enough of changing your appearance for now.", returnToNode) {
+			return new Response("Назад", "На данный момент вы достаточно изменили свою внешность.", returnToNode) {
 				@Override
 				public void effects() {
 					Main.game.setResponseTab(0);
@@ -157,12 +157,10 @@ public class CosmeticsDialogue {
 	}
 	
 	private static String getMoneyRemainingString() {
-		return "<h6 style='text-align:center;'>"
-					+ "You currently have [style.moneyFormat([pc.money], span)]"
-				+ "</h6>";
+		return "<h6 style='text-align:center;'>Сейчас у вас есть [style.moneyFormat([pc.money], span)]</h6>";
 	}
 
-	public static final DialogueNode BEAUTICIAN_START = new DialogueNode("Cosmetics", "", true) {
+	public static final DialogueNode BEAUTICIAN_START = new DialogueNode("Косметика", "", true) {
 		@Override
 		public String getContent() {
 			return "";
@@ -173,7 +171,7 @@ public class CosmeticsDialogue {
 		}
 	};
 	
-	public static final DialogueNode BEAUTICIAN_COSMETICS = new DialogueNode("Cosmetics", "", true) {
+	public static final DialogueNode BEAUTICIAN_COSMETICS = new DialogueNode("Косметика", "", true) {
 		@Override
 		public String getHeaderContent() {
 			UtilText.nodeContentSB.setLength(0);
@@ -182,22 +180,22 @@ public class CosmeticsDialogue {
 			
 			UtilText.nodeContentSB.append(
 					CharacterModificationUtils.getKatesDivCoveringsNew(
-							true, Race.NONE, BodyCoveringType.MAKEUP_BLUSHER, "Blusher", "Blusher (also called rouge) is used to colour the cheeks so as to provide a more youthful appearance, and to emphasise the cheekbones.", true, true)
+							true, Race.NONE, BodyCoveringType.MAKEUP_BLUSHER, "Румяна", "Румяна (также называемые руж) используются для придания щекам цвета, чтобы придать лицу более юный вид и подчеркнуть скулы.", true, true)
 							
 					+CharacterModificationUtils.getKatesDivCoveringsNew(
-							true, Race.NONE, BodyCoveringType.MAKEUP_LIPSTICK, "Lipstick", "Lipstick is used to provide colour, texture, and protection to the wearer's lips.", true, true)
+							true, Race.NONE, BodyCoveringType.MAKEUP_LIPSTICK, "Помада", "Помада используется для придания губам цвета, текстуры и защиты.", true, true)
 		
 					+CharacterModificationUtils.getKatesDivCoveringsNew(
-							true, Race.NONE, BodyCoveringType.MAKEUP_EYE_LINER, "Eyeliner", "Eyeliner is applied around the contours of the eyes to help to define shape or highlight different features.", true, true)
+							true, Race.NONE, BodyCoveringType.MAKEUP_EYE_LINER, "Подводка для глаз", "Подводка наносится по контуру глаз, чтобы подчеркнуть их форму или выделить отдельные черты.", true, true)
 		
 					+CharacterModificationUtils.getKatesDivCoveringsNew(
-							true, Race.NONE, BodyCoveringType.MAKEUP_EYE_SHADOW, "Eye shadow", "Eye shadow is used to make the wearer's eyes stand out or look more attractive.", true, true)
+							true, Race.NONE, BodyCoveringType.MAKEUP_EYE_SHADOW, "Тени для век", "Тени для век используются для того, чтобы сделать глаза ярче или привлекательнее.", true, true)
 		
 					+CharacterModificationUtils.getKatesDivCoveringsNew(
-							true, Race.NONE, BodyCoveringType.MAKEUP_NAIL_POLISH_HANDS, "Nail polish", "Nail polish is used to colour and protect the nails on your [pc.hands].", true, true)
+							true, Race.NONE, BodyCoveringType.MAKEUP_NAIL_POLISH_HANDS, "Лак для ногтей", "Лак для ногтей используется для окрашивания и защиты ногтей на твоих [pc.hands].", true, true)
 		
 					+CharacterModificationUtils.getKatesDivCoveringsNew(
-							true, Race.NONE, BodyCoveringType.MAKEUP_NAIL_POLISH_FEET, "Toenail polish", "Toenail polish is used to colour and protect the nails on your [pc.feet].", true, true));
+							true, Race.NONE, BodyCoveringType.MAKEUP_NAIL_POLISH_FEET, "Лак для ногтей на ногах", "Лак для ногтей на ногах используется для окрашивания и защиты ногтей на твоих [pc.feet].", true, true));
 			
 			return UtilText.nodeContentSB.toString();
 		}
@@ -215,7 +213,7 @@ public class CosmeticsDialogue {
 		}
 	};
 	
-	public static final DialogueNode BEAUTICIAN_HAIR = new DialogueNode("Hair", "", true) {
+	public static final DialogueNode BEAUTICIAN_HAIR = new DialogueNode("Волосы", "", true) {
 		@Override
 		public String getHeaderContent() {
 			UtilText.nodeContentSB.setLength(0);
@@ -223,12 +221,12 @@ public class CosmeticsDialogue {
 			UtilText.nodeContentSB.append(getMoneyRemainingString());
 			
 			UtilText.nodeContentSB.append(
-				CharacterModificationUtils.getKatesDivHairLengths(true, "Hair Length", "Hair length determines what hair styles you're able to have. The longer the hair, the more styles are available.")
+				CharacterModificationUtils.getKatesDivHairLengths(true, "Длина волос", "Длина волос определяет доступные прически. Чем длиннее волосы, тем больше вариантов доступно.")
 
-				+CharacterModificationUtils.getKatesDivHairStyles(true, "Hair Style", "Hair style availability is determined by your hair length.")
+				+CharacterModificationUtils.getKatesDivHairStyles(true, "Прическа", "Доступность причесок зависит от длины твоих волос.")
 				
 				+CharacterModificationUtils.getKatesDivCoveringsNew(true, Main.game.getPlayer().getHairType().getRace(), Main.game.getPlayer().getCovering(Main.game.getPlayer().getHairCovering()).getType(),
-						"[pc.Hair] Colour", "All hair recolourings are permanent, so if you want to change your colour again at a later time, you'll have to visit Kate again.", true, true));
+						"Цвет [pc.Hair]", "Все изменения цвета волос постоянны, так что если вы захотите сменить цвет снова, вам придется снова навестить Кейт.", true, true));
 			
 			return UtilText.nodeContentSB.toString();
 		}
@@ -246,7 +244,7 @@ public class CosmeticsDialogue {
 		}
 	};
 	
-	public static final DialogueNode BEAUTICIAN_SKIN_COLOUR = new DialogueNode("Coverings", "-", true) {
+	public static final DialogueNode BEAUTICIAN_SKIN_COLOUR = new DialogueNode("Покрытия", "-", true) {
 		@Override
 		public String getHeaderContent() {
 			UtilText.nodeContentSB.setLength(0);
@@ -286,7 +284,7 @@ public class CosmeticsDialogue {
 		}
 	};
 	
-	public static final DialogueNode BEAUTICIAN_EYES = new DialogueNode("Eyes", "-", true) {
+	public static final DialogueNode BEAUTICIAN_EYES = new DialogueNode("Глаза", "-", true) {
 		@Override
 		public String getHeaderContent() {
 			UtilText.nodeContentSB.setLength(0);
@@ -296,21 +294,21 @@ public class CosmeticsDialogue {
 			UtilText.nodeContentSB.append(
 					CharacterModificationUtils.getKatesDivCoveringsNew(
 							true, Main.game.getPlayer().getEyeType().getRace(), Main.game.getPlayer().getEyeCovering(),
-							"Irises", "The iris is the coloured part of the eye that's responsible for controlling the diameter and size of the pupil.", true, true)
+							"Радужка", "Радужка — это цветная часть глаза, отвечающая за контроль диаметра и размера зрачка.", true, true)
 		
 					+CharacterModificationUtils.getKatesDivCoveringsNew(
 							true, Race.NONE,
 							Main.game.getPlayer().getBodyMaterial()!=BodyMaterial.FLESH
 								?BodyCoveringType.getMaterialBodyCoveringType(Main.game.getPlayer().getBodyMaterial(), BodyCoveringCategory.EYE_PUPIL)
 								:BodyCoveringType.EYE_PUPILS,
-							"Pupils", "The pupil is a hole located in the centre of the iris that allows light to strike the retina.", true, true)
+							"Зрачки", "Зрачок — это отверстие в центре радужки, через которое свет попадает на сетчатку.", true, true)
 		
 					+CharacterModificationUtils.getKatesDivCoveringsNew(
 							true, Race.NONE,
 							Main.game.getPlayer().getBodyMaterial()!=BodyMaterial.FLESH
 								?BodyCoveringType.getMaterialBodyCoveringType(Main.game.getPlayer().getBodyMaterial(), BodyCoveringCategory.EYE_SCLERA)
 								:BodyCoveringType.EYE_SCLERA,
-							"Sclerae", "The sclera is the (typically white) part of the eye that surrounds the iris.", true, true));
+							"Склеры", "Склера — это (обычно белая) часть глаза, окружающая радужку.", true, true));
 			
 			return UtilText.nodeContentSB.toString();
 		}
@@ -328,7 +326,7 @@ public class CosmeticsDialogue {
 		}
 	};
 	
-	public static final DialogueNode BEAUTICIAN_PIERCINGS = new DialogueNode("Piercings", "-", true) {
+	public static final DialogueNode BEAUTICIAN_PIERCINGS = new DialogueNode("Пирсинг", "-", true) {
 		@Override
 		public String getHeaderContent() {
 			UtilText.nodeContentSB.setLength(0);
@@ -353,7 +351,7 @@ public class CosmeticsDialogue {
 		}
 	};
 	
-	public static final DialogueNode BEAUTICIAN_OTHER = new DialogueNode("Miscellaneous", "", true) {
+	public static final DialogueNode BEAUTICIAN_OTHER = new DialogueNode("Разное", "", true) {
 		@Override
 		public String getHeaderContent() {
 			UtilText.nodeContentSB.setLength(0);
@@ -364,20 +362,20 @@ public class CosmeticsDialogue {
 					CharacterModificationUtils.getKatesDivAnalBleaching()
 					
 					+(Main.game.isFacialHairEnabled()
-							? CharacterModificationUtils.getKatesDivFacialHair(true, "Facial hair", "The body hair found on your face." 
-									+ (Main.game.isFemaleFacialHairEnabled() ? "" : " Feminine characters cannot grow facial hair."))
+							? CharacterModificationUtils.getKatesDivFacialHair(true, "Растительность на лице", "Волосы на лице." 
+									+ (Main.game.isFemaleFacialHairEnabled() ? "" : " Женские персонажи не могут отращивать растительность на лице."))
 							:"")
 					
 					+(Main.game.isPubicHairEnabled()
-							?CharacterModificationUtils.getKatesDivPubicHair(true, "Pubic hair", "The body hair found in the genital area; located on and around your sex organs and crotch.")
+							?CharacterModificationUtils.getKatesDivPubicHair(true, "Лобковые волосы", "Волосы в области гениталий; расположены на половых органах и вокруг паха.")
 							:"")
 					
 					+(Main.game.isBodyHairEnabled()
-							?CharacterModificationUtils.getKatesDivUnderarmHair(true, "Underarm hair", "The body hair found in your armpits.")
+							?CharacterModificationUtils.getKatesDivUnderarmHair(true, "Волосы под мышками", "Волосы на ваших подмышках.")
 							:"")
 					
 					+(Main.game.isAssHairEnabled()
-							?CharacterModificationUtils.getKatesDivAssHair(true, "Ass hair", "The body hair found around your asshole.")
+							?CharacterModificationUtils.getKatesDivAssHair(true, "Волосы на заднице", "Волосы вокруг вашего ануса.")
 							:"")
 					);
 			
@@ -387,7 +385,7 @@ public class CosmeticsDialogue {
 						|| (Main.game.isAssHairEnabled() &&  Main.game.getPlayer().getAssHairType().getType()==bct)
 						|| (Main.game.isPubicHairEnabled() && Main.game.getPlayer().getPubicHairType().getType()==bct)) {
 					UtilText.nodeContentSB.append(CharacterModificationUtils.getKatesDivCoveringsNew(
-							true, Race.NONE, bct, "Body hair", "Your body hair.", true, true));
+							true, Race.NONE, bct, "Волосы на теле", "Волосы на теле.", true, true));
 					
 				}
 			}
@@ -408,7 +406,7 @@ public class CosmeticsDialogue {
 		}
 	};
 	
-	public static final DialogueNode BEAUTICIAN_TATTOOS = new DialogueNode("Tattoos", "-", true) {
+	public static final DialogueNode BEAUTICIAN_TATTOOS = new DialogueNode("Татуировки", "-", true) {
 		@Override
 		public String getContent() {
 			UtilText.nodeContentSB.setLength(0);
@@ -422,16 +420,14 @@ public class CosmeticsDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==11) {
-				return new Response("Confirmations: ",
-						"Toggle tattoo removal confirmations."
-							+ " When turned on, it will take two clicks to remove tattoos."
-							+ " When turned off, it will only take one click.",
+				return new Response("Подтверждения: ",
+						"Включить подтверждение удаления татуировок. Если включено, для удаления татуировки потребуется два клика. Если выключено — всего один.",
 							BEAUTICIAN_TATTOOS) {
 					@Override
 					public String getTitle() {
-						return "Confirmations: "+(Main.getProperties().hasValue(PropertyValue.tattooRemovalConfirmations)
-									?"<span style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>ON</span>"
-									:"<span style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>OFF</span>");
+						return "Подтверждения: "+(Main.getProperties().hasValue(PropertyValue.tattooRemovalConfirmations)
+									?"<span style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>ВКЛ</span>"
+									:"<span style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>ВЫКЛ</span>");
 					}
 					
 					@Override
@@ -449,10 +445,10 @@ public class CosmeticsDialogue {
 		}
 	};
 	
-	public static final DialogueNode BEAUTICIAN_TATTOOS_ADD = new DialogueNode("Tattoos", "-", true) {
+	public static final DialogueNode BEAUTICIAN_TATTOOS_ADD = new DialogueNode("Татуировки", "-", true) {
 		@Override
 		public String getLabel() {
-			return "Tattoos: "+Util.capitaliseSentence(CharacterModificationUtils.tattooInventorySlot.getTattooSlotName());
+			return "Татуировки: "+Util.capitaliseSentence(CharacterModificationUtils.tattooInventorySlot.getTattooSlotName());
 		}
 		@Override
 		public String getContent() {
@@ -467,15 +463,15 @@ public class CosmeticsDialogue {
 			int value = CharacterModificationUtils.tattoo.getValue();
 			if (index == 1) {
 				if(Main.game.getPlayer().getMoney()<value) {
-					return new Response("Apply ("+UtilText.formatAsMoneyUncoloured(value, "span")+")", "You don't have enough money to get a tattoo!", null);
+					return new Response("Применить ("+UtilText.formatAsMoneyUncoloured(value, "охват")+")", "У вас недостаточно денег, чтобы сделать татуировку!", null);
 					
 				} else if(CharacterModificationUtils.tattoo.getType().equals(TattooType.getTattooTypeFromId("innoxia_misc_none"))
 						&& CharacterModificationUtils.tattoo.getWriting().getText().isEmpty()
 						&& CharacterModificationUtils.tattoo.getCounter().getType()==TattooCounterType.NONE) {
-					return new Response("Apply ("+UtilText.formatAsMoneyUncoloured(value, "span")+")", "You need to select a tattoo type, add some writing, or add a counter in order to make a tattoo!", null);
+					return new Response("Применить ("+UtilText.formatAsMoneyUncoloured(value, "охват")+")", "Чтобы сделать татуировку, нужно выбрать тип тату, добавить надпись или счетчик!", null);
 					
 				} else {
-					return new Response("Apply ("+UtilText.formatAsMoney(value, "span")+")", UtilText.parse(beautician, "Tell [npc.name] that you'd like [npc.herHim] to give you this tattoo."), BEAUTICIAN_TATTOOS) {
+					return new Response("Применить ("+UtilText.formatAsMoney(value, "охват")+")", UtilText.parse(beautician, "Скажите [npc.name], что вы хотите, чтобы [npc.herHim] нанесла вам эту татуировку."), BEAUTICIAN_TATTOOS) {
 						@Override
 						public void effects() {
 							Main.game.getTextStartStringBuilder().append(Main.game.getPlayer().incrementMoney(-value));
@@ -489,7 +485,7 @@ public class CosmeticsDialogue {
 				}
 			
 			} else if(index==2) {
-				return new Response("Save/Load", "Save/Load tattoo presets.", TATTOO_SAVE_LOAD) {
+				return new Response("Сохранить/Загрузить", "Сохранять/загружать пресеты татуировок.", TATTOO_SAVE_LOAD) {
 					@Override
 					public void effects() {
 						initTattooSaveLoadDialogue(BEAUTICIAN_TATTOOS_ADD);
@@ -497,7 +493,7 @@ public class CosmeticsDialogue {
 				};
 			
 			} else if(index==0) {
-				return new Response("Back", "Decide not to get this tattoo and return to the main selection screen.", BEAUTICIAN_TATTOOS);
+				return new Response("Назад", "Решить не делать эту татуировку и вернуться к основному экрану выбора.", BEAUTICIAN_TATTOOS);
 			}
 			
 			return null;
@@ -544,7 +540,7 @@ public class CosmeticsDialogue {
 		return loadedTattoosMap;
 	}
 
-	public static final DialogueNode TATTOO_SAVE_LOAD = new DialogueNode("Save tattoo files", "", true) {
+	public static final DialogueNode TATTOO_SAVE_LOAD = new DialogueNode("Сохранить файлы татуировок", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			initSaveLoadMenu();
@@ -558,21 +554,11 @@ public class CosmeticsDialogue {
 			StringBuilder saveLoadSB = new StringBuilder();
 			
 			saveLoadSB.append(
-					"<div class='container-full-width' style='padding:0; margin:0 0 8px 0;'>"
-							+ "Only standard characters (letters and numbers) will work for save file names."
-							+ "<br/>Hover over each tattoo's icon to see the full details of what will be saved/loaded."
+					"<div class='container-full-width' style='padding:0; margin:0 0 8px 0;'>Для имен файлов сохранений подходят только стандартные символы (буквы и цифры).<br/>Наведите курсор на иконку каждой татуировки, чтобы увидеть подробную информацию о том, что будет сохранено или загружено."
 							+(!Main.game.isInNewWorld()
-								?"<br/>If a name is [style.colourBad(red)], then you cannot load that tattoo due to an incompatibility with your selected body area, or due to the tattoo having special effects which aren't available to you yet!"
-								:"<br/>If a name is [style.colourBad(red)], then you cannot load that tattoo due to an incompatibility with your selected body area.")
-					+ "</div>"
-					+ "<div class='container-full-width' style='padding:0; margin:0;'>"
-						+ "<div class='container-full-width' style='width:calc(75% - 16px); text-align:center; background:transparent;'>"
-							+ "Name"
-						+ "</div>"
-						+ "<div class='container-full-width' style='width:calc(25% - 16px); text-align:center; background:transparent;'>"
-							+ "Save | Load | Delete"
-						+ "</div>"
-					+ "</div>");
+								?"<br/>Если имя выделено [style.colourBad(красным)], значит, вы не можете загрузить эту татуировку из-за несовместимости с выбранной областью тела или из-за того, что татуировка обладает спецэффектами, которые вам пока недоступны!"
+								:"<br/>Если имя выделено [style.colourBad(красным)], значит, вы не можете загрузить эту татуировку из-за несовместимости с выбранной областью тела.")
+					+ "</div><div class='container-full-width' style='padding:0; margin:0;'><div class='container-full-width' style='width:calc(75% - 16px); text-align:center; background:transparent;'>Название</div><div class='container-full-width' style='width:calc(25% - 16px); text-align:center; background:transparent;'>Сохранить | Загрузить | Удалить</div></div>");
 
 			int i=0;
 			
@@ -592,16 +578,14 @@ public class CosmeticsDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Confirmations: ",
-						"Toggle confirmations being shown when you click to load, overwrite, or delete a saved tattoo."
-							+ " When turned on, it will take two clicks to apply any button press."
-							+ " When turned off, it will only take one click.",
+				return new Response("Подтверждения: ",
+						"Включить подтверждение действий при нажатии на кнопки загрузки, перезаписи или удаления сохраненной татуировки. Если включено, для выполнения действия потребуется два клика. Если выключено — только один.",
 						TATTOO_SAVE_LOAD) {
 					@Override
 					public String getTitle() {
-						return "Confirmations: "+(Main.getProperties().hasValue(PropertyValue.overwriteWarning)
-								?"<span style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>ON</span>"
-								:"<span style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>OFF</span>");
+						return "Подтверждения: "+(Main.getProperties().hasValue(PropertyValue.overwriteWarning)
+								?"<span style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>ВКЛ</span>"
+								:"<span style='color:"+PresetColour.GENERIC_BAD.toWebHexString()+";'>ВЫКЛ</span>");
 					}
 					
 					@Override
@@ -615,7 +599,7 @@ public class CosmeticsDialogue {
 				};
 
 			} else if (index == 0) {
-				return new Response("Back", "Back to the tattoo menu.", returnToNodeFromTattooSaveLoad);
+				return new Response("Назад", "Назад к меню татуировок.", returnToNodeFromTattooSaveLoad);
 			}
 			
 			return null;
@@ -646,26 +630,14 @@ public class CosmeticsDialogue {
 			boolean specialEffectsLimitation = !Main.game.isInNewWorld()
 					&& (loadedTattoo.getCounter()!=null || loadedTattoo.isGlowing() || (loadedTattoo.getWriting()!=null && loadedTattoo.getWriting().isGlow()));
 			
-			return "<div class='container-full-width' style='padding:0; margin:0 0 4px 0;"+(altColour?"background:#222;":"")+" position:relative;'>"
-						
-						+ "<div class='container-full-width' style='width:calc(75% - 16px); background:transparent;'>"
-						
-							+ "<div class='container-full-width' style='width:10%; margin:0; padding:0; background:transparent; position:relative; float:left;'>"
-								+"<div class='inventoryImage' style='width:100%;'>"
-									+ "<div class='inventoryImage-content'>"
+			return "<div class='container-full-width' style='padding:0; margin:0 0 4px 0;"+(altColour?"background:#222;":"")+" position:relative;'><div class='container-full-width' style='width:calc(75% - 16px); background:transparent;'><div class='container-full-width' style='width:10%; margin:0; padding:0; background:transparent; position:relative; float:left;'><div class='inventoryImage' style='width:100%;'><div class='inventoryImage-content'>"
 										+ loadedTattoo.getSVGString()
-									+ "</div>"
-									+ "<div class='overlay no-pointer' id='LOADED_TATTOO_" + baseName + "'></div>"
+									+ "</div><div class='overlay no-pointer' id='LOADED_TATTOO_" + baseName + "'></div>"
 								+ "</div>"
 							+ "</div>"
 						
 							+ "<div style='width:calc(90% - 8px); padding:0; margin:0 0 0 8px; position:relative; float:left;'>"
-								+ "<h6 style='margin:0; padding:2px;'>"+(!suitableSlot || specialEffectsLimitation?"[style.boldBad("+loadedTattoo.getName()+")]":loadedTattoo.getName())+"</h6>"
-								+ "<p style='margin:0; padding:2px;'>[style.colourDisabled(data/tattoos/)]"+baseName+"[style.colourDisabled(.xml)]</p>"
-							+"</div>"
-							
-						+ "</div>"
-						+ "<div class='container-full-width' style='width:calc(25% - 16px);text-align:center; background:transparent;'>"
+								+ "<h6 style='margin:0; padding:2px;'>"+(!suitableSlot || specialEffectsLimitation?"[style.boldBad("+loadedTattoo.getName()+")]":loadedTattoo.getName())+"</h6><p style='margin:0; padding:2px;'>[style.colourDisabled(data/tattoos/)]"+baseName+"[style.colourDisabled(.xml)]</p></div></div><div class='container-full-width' style='width:calc(25% - 16px);text-align:center; background:transparent;'>"
 							+ (Main.game.isStarted() && !Main.game.isInCombat() && !Main.game.isInSex()
 									?(fileName.equals(overwriteConfirmationName)
 										?"<div class='square-button saveIcon' id='OVERWRITE_" + baseName + "'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getDiskSaveConfirm()+"</div></div>"
@@ -733,7 +705,7 @@ public class CosmeticsDialogue {
 				for (File child : directoryListing) {
 					if (child.getName().equals(name+".xml")){
 						if(!allowOverwrite) {
-							Main.game.flashMessage(PresetColour.GENERIC_BAD, "Name already exists!");
+							Main.game.flashMessage(PresetColour.GENERIC_BAD, "Такое имя уже существует!");
 							return;
 						}
 					}
@@ -783,7 +755,7 @@ public class CosmeticsDialogue {
 		if(dialogueNode!=null) {
 			Main.game.setContent(new Response("", "", dialogueNode));
 		}
-		Main.game.flashMessage(PresetColour.GENERIC_GOOD, "Tattoo saved!");
+		Main.game.flashMessage(PresetColour.GENERIC_GOOD, "Татуировка сохранена!");
 	}
 
 	public static Tattoo loadTattoo(String name) {
@@ -831,7 +803,7 @@ public class CosmeticsDialogue {
 			}
 			
 		} else {
-			Main.game.flashMessage(PresetColour.GENERIC_BAD, "File not found...");
+			Main.game.flashMessage(PresetColour.GENERIC_BAD, "Файл не найден...");
 		}
 	}
 	

@@ -178,14 +178,14 @@ public class InventoryDialogue {
 	
 	private static String getEnchantmentNotDiscoveredText(String item) {
 		StringBuilder sb = new StringBuilder();
-		sb.append("You have not discovered how to enchant ");
+		sb.append("Вы еще не научились зачаровывать ");
 		sb.append(item);
-		sb.append(" yet...");
+		sb.append(" предметы...");
 		sb.append("<br/>");
 		if(Main.game.getPlayer().hasQuest(QuestLine.SIDE_ENCHANTMENT_DISCOVERY)) {
-			sb.append("[style.italicsArcane(You should go and talk to Lilaya about essences...)]");
+			sb.append("[style.italicsArcane(Стоит сходить и поговорить с Lilaya об эссенциях...)]");
 		} else {
-			sb.append("[style.italicsArcane(You need to absorb an essence after combat or sex, or via purchasing one, to discover more about enchanting...)]");
+			sb.append("[style.italicsArcane(Чтобы узнать больше о зачаровании, вам нужно поглотить эссенцию после боя или секса, либо просто купить её...)]");
 		}
 		return sb.toString();
 	}
@@ -194,21 +194,21 @@ public class InventoryDialogue {
 		StringBuilder sb = new StringBuilder();
 		AbstractClothing blockingClothing = equipTarget.getBlockingClothing();
 
-		sb.append("You can't ");
+		sb.append("Вы не можете ");
 		sb.append(equipVerb);
-		sb.append(" the ");
+		sb.append("");
 		sb.append(clothing.getName());
-		sb.append(", as ");
+		sb.append(", так как ");
 		
 		if(blockingClothing.equals(clothing) && clothing.isSealed()) {
-			sb.append((blockingClothing.getClothingType().isPlural()?" they are":" it is"));
-			sb.append(" sealed!");
+			sb.append((blockingClothing.getClothingType().isPlural()?" их":" это"));
+			sb.append(" запечатано!");
 			
 		} else {
 			sb.append(UtilText.parse(equipTarget, "[npc.namePos] "));
 			sb.append(blockingClothing.getName());
-			sb.append((blockingClothing.getClothingType().isPlural()?" are":" is"));
-			sb.append(" blocking you from doing so!");
+			sb.append((blockingClothing.getClothingType().isPlural()?" являются":" есть"));
+			sb.append(" преграждает вам путь!");
 		}
 		
 		return sb.toString();
@@ -232,17 +232,17 @@ public class InventoryDialogue {
 	 * The main DialogueNode. From here, the player can gain access to all parts
 	 * of their inventory.
 	 */
-	public static final DialogueNode INVENTORY_MENU = new DialogueNode("Inventory", "Return to inventory menu.", true) {
+	public static final DialogueNode INVENTORY_MENU = new DialogueNode("Инвентарь", "Вернуться в меню инвентаря.", true) {
 		@Override
 		public String getLabel() {
 			if(!Main.game.isInNewWorld()) {
-				return "Evening's Attire";
+				return "Вечерний наряд";
 			}
 			
 			if (Main.game.getDialogueFlags().values.contains(DialogueFlagValue.quickTrade) && !Main.game.isInSex() && !Main.game.isInCombat()) {
-				return "Inventory (Quick-Manage is <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>ON</b>)";
+				return "Инвентарь (Быстрое управление <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>ВКЛЮЧЕНО</b>)";
 			} else {
-				return "Inventory";
+				return "Инвентарь";
 			}
 		}
 
@@ -279,7 +279,7 @@ public class InventoryDialogue {
 			
 			if(Main.game.isBadEnd()) {
 				if(index==1) {
-					return new Response("Unavailable", "You can't manipulate your inventory during a bad end...", null);
+					return new Response("Недоступно", "Вы не можете управлять инвентарем во время плохого финала...", null);
 				}
 				return null;
 			}
@@ -312,35 +312,35 @@ public class InventoryDialogue {
 			switch(interactionType) {
 				case COMBAT:
 					if(index == 1) {
-						return new Response("Take all", "You can't do this during combat!", null);
+						return new Response("Забрать всё", "Вы не можете делать это во время боя!", null);
 
 					} else if (index == 2) {
-						return new Response("Displace all", "You cannot do this while fighting someone!", null);
+						return new Response("Смешать всё", "Вы не можете делать это во время сражения!", null);
 
 					} else if (index == 3) {
-						return new Response("Replace all", "You cannot do this while fighting someone!", null);
+						return new Response("Заменить всё", "Вы не можете делать это во время сражения!", null);
 						
 					} else if (index == 4) {
-						return new Response("Unequip all", "You cannot do this while fighting someone!", null);
+						return new Response("Снять всё", "Вы не можете делать это во время сражения!", null);
 
 					} else if (index == 5) {
-						return new Response("Equip all", "You cannot do this while fighting someone!", null);
+						return new Response("Надеть всё", "Вы не можете делать это во время сражения!", null);
 
 					} else if(index == 6) {
 						if(Main.game.getPlayer().getLocationPlace().isItemsDisappear()) {
-							return new Response("Store all", "You can't do this during combat!", null);
+							return new Response("Убрать всё", "Вы не можете делать это во время боя!", null);
 						}
-						return new Response("Drop all", "You can't do this during combat!", null);
+						return new Response("Выбросить всё", "Вы не можете делать это во время боя!", null);
 
 					} else if(index==11) {
 						if(Main.game.getPlayer().getUnlockKeyMap().isEmpty()) {
-							return new Response("Keys", "You do not currently own any keys which are used for unlocking certain items of clothing.", null);
+							return new Response("Ключи", "Сейчас у вас нет ключей, которые используются для разблокировки определенных предметов одежды.", null);
 							
 						} else if(Main.game.getCurrentDialogueNode()==INVENTORY_MENU_KEYS) {
-							return new Response("Keys", "You are already viewing a list of all the keys that you own which are used for unlocking certain items of clothing.", null);
+							return new Response("Ключи", "Вы уже просматриваете список всех имеющихся у вас ключей, используемых для разблокировки определенных предметов одежды.", null);
 							
 						} else {
-							return new Response("Keys", "View a list of all the keys that you currently own which are used for unlocking certain items of clothing.", INVENTORY_MENU_KEYS);
+							return new Response("Ключи", "Посмотреть список всех имеющихся у вас ключей, используемых для разблокировки определенных предметов одежды.", INVENTORY_MENU_KEYS);
 						}
 						
 					} else {
@@ -353,10 +353,10 @@ public class InventoryDialogue {
 							if((Main.game.getPlayerCell().getInventory().getInventorySlotsTaken()==0 && !Main.game.getPlayerCell().getInventory().isAnyQuestItemPresent())
 									|| Main.game.isInCombat()
 									|| Main.game.isInSex()) {
-								return new Response("Take all", "Pick up everything on the ground.", null);
+								return new Response("Забрать всё", "Собрать всё на земле.", null);
 
 							} else {
-								return new Response("Take all", "Pick up everything on the ground.", INVENTORY_MENU){
+								return new Response("Забрать всё", "Собрать всё на земле.", INVENTORY_MENU){
 									@Override
 									public void effects(){
 										for(Entry<AbstractItem, Integer> entry : new HashMap<>(Main.game.getPlayerCell().getInventory().getAllItemsInInventory()).entrySet()) {
@@ -374,10 +374,10 @@ public class InventoryDialogue {
 
 						} else {
 							if(inventoryNPC.getInventorySlotsTaken()==0 || Main.game.isInCombat() || Main.game.isInSex()) {
-								return new Response("Take all", UtilText.parse(inventoryNPC, "Take everything from [npc.namePos] inventory."), null);
+								return new Response("Забрать всё", UtilText.parse(inventoryNPC, "Забрать всё из инвентаря [npc.namePos]."), null);
 
 							} else {
-								return new Response("Take all", UtilText.parse(inventoryNPC, "Take everything from [npc.namePos] inventory."), INVENTORY_MENU){
+								return new Response("Забрать всё", UtilText.parse(inventoryNPC, "Забрать всё из инвентаря [npc.namePos]."), INVENTORY_MENU){
 									@Override
 									public void effects(){
 										for(Entry<AbstractItem, Integer> entry : new HashMap<>(inventoryNPC.getAllItemsInInventory()).entrySet()) {
@@ -411,10 +411,10 @@ public class InventoryDialogue {
 
 					} else if (index == 2) {
 						if(Main.game.getPlayer().getClothingCurrentlyEquipped().isEmpty()) {
-							return new Response("Displace all", "You aren't wearing any clothing, so there's nothing to displace!", null);
+							return new Response("Смешать всё", "На вас нет одежды, так что нечего сдвигать!", null);
 
 						} else {
-							return new Response("Displace all", "Displace as much of your clothing as possible.", INVENTORY_MENU){
+							return new Response("Смешать всё", "Сдвинуть как можно больше одежды.", INVENTORY_MENU){
 								@Override
 								public void effects(){
 									for(AbstractClothing c : Main.game.getPlayer().getClothingCurrentlyEquipped()) {
@@ -431,10 +431,10 @@ public class InventoryDialogue {
 
 					} else if (index == 3) {
 						if(Main.game.getPlayer().getClothingCurrentlyEquipped().isEmpty()) {
-							return new Response("Replace all", "You aren't wearing any clothing, so there's nothing to replace!", null);
+							return new Response("Заменить всё", "На вас нет одежды, так что нечего заменять!", null);
 
 						} else {
-							return new Response("Replace all", "Replace as much of your clothing as possible.", INVENTORY_MENU){
+							return new Response("Заменить всё", "Заменить как можно больше одежды.", INVENTORY_MENU){
 								@Override
 								public void effects(){
 
@@ -455,10 +455,10 @@ public class InventoryDialogue {
 
 					} else if (index == 4) {
 						if(Main.game.getPlayer().getClothingCurrentlyEquipped().isEmpty()) {
-							return new Response("Unequip all", "You aren't wearing any clothing, so there's nothing to remove!", null);
+							return new Response("Снять всё", "На вас нет одежды, так что нечего снимать!", null);
 
 						} else {
-							return new Response("Unequip all", "Remove as much of your clothing as possible.", INVENTORY_MENU){
+							return new Response("Снять всё", "Снять как можно больше одежды.", INVENTORY_MENU){
 								@Override
 								public void effects(){
 									Main.game.getTextEndStringBuilder().append(unequipAll(Main.game.getPlayer()));
@@ -468,10 +468,10 @@ public class InventoryDialogue {
 
 					} else if (index == 5) {
 						if(Main.game.getPlayer().getAllClothingInInventory().isEmpty()) {
-							return new Response("Equip all", "You don't have any clothing, so there's nothing to equip!", null);
+							return new Response("Надеть всё", "У вас нет одежды, так что надеть нечего!", null);
 
 						} else {
-							return new Response("Equip all", "Equip as much of the clothing in your inventory as possible.", INVENTORY_MENU){
+							return new Response("Надеть всё", "Надеть как можно больше одежды из вашего инвентаря.", INVENTORY_MENU){
 								@Override
 								public void effects(){
 									equipAll(Main.game.getPlayer());
@@ -483,20 +483,20 @@ public class InventoryDialogue {
 						if(Main.game.getPlayer().getInventorySlotsTaken()==0) {
 							return new Response(
 									!Main.game.getPlayer().getLocationPlace().isItemsDisappear()
-										?"Store all"
-										:"Drop all",
+										?"Убрать всё"
+										:"Выбросить всё",
 									!Main.game.getPlayer().getLocationPlace().isItemsDisappear()
-										?"You have nothing in your inventory to store..."
-										:"You have nothing in your inventory to drop...",
+										?"В вашем инвентаре нечего складывать..."
+										:"В вашем инвентаре нечего выбрасывать...",
 											null);
 						}
 						return new Response(
 								!Main.game.getPlayer().getLocationPlace().isItemsDisappear()
-									?"Store all"
-									:"Drop all",
+									?"Убрать всё"
+									:"Выбросить всё",
 								!Main.game.getPlayer().getLocationPlace().isItemsDisappear()
-									?"Store everything from your inventory in this location."
-									:"Drop everything from your inventory onto the ground.",
+									?"Сложить всё содержимое инвентаря в это место."
+									:"Выбросить всё содержимое инвентаря на землю.",
 										INVENTORY_MENU) {
 							@Override
 							public void effects() {
@@ -520,13 +520,13 @@ public class InventoryDialogue {
 
 					} else if (index == 7 && inventoryNPC != null) {
 						if(inventoryNPC.getClothingCurrentlyEquipped().isEmpty()) {
-							return new Response(UtilText.parse(inventoryNPC,"Displace all ([npc.HerHim])"),
-									UtilText.parse(inventoryNPC, "[npc.Name] isn't wearing any clothing, so there's nothing to displace!"),
+							return new Response(UtilText.parse(inventoryNPC,"Снять всё ([npc.HerHim])"),
+									UtilText.parse(inventoryNPC, "На [npc.Name] нет одежды, так что снимать нечего!"),
 									null);
 
 						} else {
-							return new Response(UtilText.parse(inventoryNPC,"Displace all ([npc.HerHim])"),
-									UtilText.parse(inventoryNPC, "Displace as much of [npc.namePos] clothing as possible."),
+							return new Response(UtilText.parse(inventoryNPC,"Снять всё ([npc.HerHim])"),
+									UtilText.parse(inventoryNPC, "Снять с [npc.namePos] как можно больше одежды."),
 									INVENTORY_MENU){
 								@Override
 								public void effects(){
@@ -544,13 +544,13 @@ public class InventoryDialogue {
 
 					} else if (index == 8 && inventoryNPC != null) {
 						if(inventoryNPC.getClothingCurrentlyEquipped().isEmpty()) {
-							return new Response(UtilText.parse(inventoryNPC,"Replace all ([npc.HerHim])"),
-									UtilText.parse(inventoryNPC, "[npc.Name] isn't wearing any clothing, so there's nothing to replace!"),
+							return new Response(UtilText.parse(inventoryNPC,"Заменить всё ([npc.HerHim])"),
+									UtilText.parse(inventoryNPC, "На [npc.Name] нет никакой одежды, так что менять нечего!"),
 									null);
 
 						} else {
-							return new Response(UtilText.parse(inventoryNPC,"Replace all ([npc.HerHim])"),
-									UtilText.parse(inventoryNPC, "Replace as much of [npc.namePos] clothing as possible."),
+							return new Response(UtilText.parse(inventoryNPC,"Заменить всё ([npc.HerHim])"),
+									UtilText.parse(inventoryNPC, "Снять как можно больше одежды с [npc.namePos]."),
 									INVENTORY_MENU){
 								@Override
 								public void effects(){
@@ -572,13 +572,13 @@ public class InventoryDialogue {
 
 					} else if (index == 9 && inventoryNPC != null) {
 						if(inventoryNPC.getClothingCurrentlyEquipped().isEmpty()) {
-							return new Response(UtilText.parse(inventoryNPC, "Unequip all ([npc.HerHim])"),
-									UtilText.parse(inventoryNPC, "[npc.Name] isn't wearing any clothing, so there's nothing to remove!"),
+							return new Response(UtilText.parse(inventoryNPC, "Снять всё ([npc.HerHim])"),
+									UtilText.parse(inventoryNPC, "На [npc.Name] нет никакой одежды, так что снимать нечего!"),
 									null);
 
 						} else {
-							return new Response(UtilText.parse(inventoryNPC, "Unequip all ([npc.HerHim])"),
-									UtilText.parse(inventoryNPC, "Remove as much of [npc.namePos] clothing as possible."),
+							return new Response(UtilText.parse(inventoryNPC, "Снять всё ([npc.HerHim])"),
+									UtilText.parse(inventoryNPC, "Снять как можно больше одежды с [npc.namePos]."),
 									INVENTORY_MENU){
 								@Override
 								public void effects(){
@@ -592,13 +592,13 @@ public class InventoryDialogue {
 
 					} else if(index==11) {
 						if(Main.game.getPlayer().getUnlockKeyMap().isEmpty()) {
-							return new Response("Keys", "You do not currently own any keys which are used for unlocking certain items of clothing.", null);
+							return new Response("Ключи", "Сейчас у вас нет ключей, которые используются для разблокировки определенных предметов одежды.", null);
 							
 						} else if(Main.game.getCurrentDialogueNode()==INVENTORY_MENU_KEYS) {
-							return new Response("Keys", "You are already viewing a list of all the keys that you own which are used for unlocking certain items of clothing.", null);
+							return new Response("Ключи", "Вы уже просматриваете список всех имеющихся у вас ключей, используемых для разблокировки определенных предметов одежды.", null);
 							
 						} else {
-							return new Response("Keys", "View a list of all the keys that you currently own which are used for unlocking certain items of clothing.", INVENTORY_MENU_KEYS);
+							return new Response("Ключи", "Посмотреть список всех имеющихся у вас ключей, используемых для разблокировки определенных предметов одежды.", INVENTORY_MENU_KEYS);
 						}
 						
 					} else {
@@ -611,10 +611,10 @@ public class InventoryDialogue {
 								|| Main.game.getPlayer().isCoverableAreaVisible(CoverableArea.PENIS)
 								|| Main.game.getPlayer().isCoverableAreaVisible(CoverableArea.VAGINA)
 								|| (Main.game.getPlayer().getClothingInSlot(InventorySlot.FOOT)==null && Main.game.getPlayer().getLegType().equals(LegType.HUMAN))) {
-							return new Response("To the stage", "You need to be wearing clothing that covers your body, as well as a pair of shoes.", null);
+							return new Response("На сцену", "Вам нужно быть одетым так, чтобы тело было прикрыто, а также надеть пару туфель.", null);
 							
 						} else {
-							return new Response("To the stage", "You're ready to approach the stage now.", CharacterCreation.CHOOSE_BACKGROUND) {
+							return new Response("На сцену", "Теперь ты готов выйти на сцену.", CharacterCreation.CHOOSE_BACKGROUND) {
 								@Override
 								public int getSecondsPassed() {
 									return CharacterCreation.TIME_TO_BACKGROUND;
@@ -628,10 +628,10 @@ public class InventoryDialogue {
 						
 					} else if(index == 2){
 						if(Main.game.getPlayer().getClothingCurrentlyEquipped().isEmpty()){
-							return new Response("Unequip all", "You're currently naked, there's nothing to be unequipped.", null);
+							return new Response("Снять всё", "Сейчас на тебе ничего нет, снимать нечего.", null);
 						}
 						else{
-							return new Response("Unequip all", "Remove as much of your clothing as possible.", INVENTORY_MENU){
+							return new Response("Снять всё", "Снять как можно больше одежды.", INVENTORY_MENU){
 								@Override
 								public void effects(){
 									Main.game.getTextEndStringBuilder().append(unequipAll(Main.game.getPlayer()));
@@ -646,10 +646,10 @@ public class InventoryDialogue {
 				case TRADING:
 					if (index == 1) {
 						if(inventoryNPC != null ||Main.game.getPlayerCell().getInventory().getInventorySlotsTaken()==0 || Main.game.isInCombat() || Main.game.isInSex()) {
-							return new Response("Take all", "Pick up everything on the ground.", null);
+							return new Response("Забрать всё", "Собрать всё на земле.", null);
 
 						} else {
-							return new Response("Take all", "Pick up everything on the ground.", INVENTORY_MENU){
+							return new Response("Забрать всё", "Собрать всё на земле.", INVENTORY_MENU){
 								@Override
 								public void effects(){
 									for(Entry<AbstractItem, Integer> entry : new HashMap<>(Main.game.getPlayerCell().getInventory().getAllItemsInInventory()).entrySet()) {
@@ -667,10 +667,10 @@ public class InventoryDialogue {
 
 					} else if (index == 2) {
 						if(Main.game.getPlayer().getClothingCurrentlyEquipped().isEmpty()) {
-							return new Response("Displace all", "You aren't wearing any clothing, so there's nothing to displace!", null);
+							return new Response("Смешать всё", "На вас нет одежды, так что нечего сдвигать!", null);
 
 						} else {
-							return new Response("Displace all", "Displace as much of your clothing as possible.", INVENTORY_MENU){
+							return new Response("Смешать всё", "Сдвинуть как можно больше одежды.", INVENTORY_MENU){
 								@Override
 								public void effects(){
 									for(AbstractClothing c : Main.game.getPlayer().getClothingCurrentlyEquipped()) {
@@ -687,10 +687,10 @@ public class InventoryDialogue {
 
 					} else if (index == 3) {
 						if(Main.game.getPlayer().getClothingCurrentlyEquipped().isEmpty()) {
-							return new Response("Replace all", "You aren't wearing any clothing, so there's nothing to replace!", null);
+							return new Response("Заменить всё", "На вас нет одежды, так что нечего заменять!", null);
 
 						} else {
-							return new Response("Replace all", "Replace as much of your clothing as possible.", INVENTORY_MENU){
+							return new Response("Заменить всё", "Заменить как можно больше одежды.", INVENTORY_MENU){
 								@Override
 								public void effects(){
 
@@ -711,10 +711,10 @@ public class InventoryDialogue {
 
 					} else if (index == 4) {
 						if(Main.game.getPlayer().getClothingCurrentlyEquipped().isEmpty()) {
-							return new Response("Unequip all", "You aren't wearing any clothing, so there's nothing to remove!", null);
+							return new Response("Снять всё", "На вас нет одежды, так что нечего снимать!", null);
 
 						} else {
-							return new Response("Unequip all", "Remove as much of your clothing as possible.", INVENTORY_MENU){
+							return new Response("Снять всё", "Снять как можно больше одежды.", INVENTORY_MENU){
 								@Override
 								public void effects(){
 									Main.game.getTextEndStringBuilder().append(unequipAll(Main.game.getPlayer()));
@@ -724,10 +724,10 @@ public class InventoryDialogue {
 
 					} else if (index == 5) {
 						if(Main.game.getPlayer().getAllClothingInInventory().isEmpty()) {
-							return new Response("Equip all", "You don't have any clothing, so there's nothing to equip!", null);
+							return new Response("Надеть всё", "У вас нет одежды, так что надеть нечего!", null);
 
 						} else {
-							return new Response("Equip all", "Equip as much of the clothing in your inventory as possible.", INVENTORY_MENU){
+							return new Response("Надеть всё", "Надеть как можно больше одежды из вашего инвентаря.", INVENTORY_MENU){
 								@Override
 								public void effects(){
 									equipAll(Main.game.getPlayer());
@@ -737,9 +737,9 @@ public class InventoryDialogue {
 
 					} else if(index == 6) {
 						if(Main.game.getPlayer().getLocationPlace().isItemsDisappear()) {
-							return new Response("Store all", "You can't do this while trading with someone...", null);
+							return new Response("Убрать всё", "Ты не можешь сделать это во время торговли...", null);
 						}
-						return new Response("Drop all", "You can't do this while trading with someone...", null);
+						return new Response("Выбросить всё", "Ты не можешь сделать это во время торговли...", null);
 
 					} else if (index == 9 && inventoryNPC!=null) {
 						return getBuybackResponse();
@@ -749,13 +749,13 @@ public class InventoryDialogue {
 
 					} else if(index==11) {
 						if(Main.game.getPlayer().getUnlockKeyMap().isEmpty()) {
-							return new Response("Keys", "You do not currently own any keys which are used for unlocking certain items of clothing.", null);
+							return new Response("Ключи", "Сейчас у вас нет ключей, которые используются для разблокировки определенных предметов одежды.", null);
 							
 						} else if(Main.game.getCurrentDialogueNode()==INVENTORY_MENU_KEYS) {
-							return new Response("Keys", "You are already viewing a list of all the keys that you own which are used for unlocking certain items of clothing.", null);
+							return new Response("Ключи", "Вы уже просматриваете список всех имеющихся у вас ключей, используемых для разблокировки определенных предметов одежды.", null);
 							
 						} else {
-							return new Response("Keys", "View a list of all the keys that you currently own which are used for unlocking certain items of clothing.", INVENTORY_MENU_KEYS);
+							return new Response("Ключи", "Посмотреть список всех имеющихся у вас ключей, используемых для разблокировки определенных предметов одежды.", INVENTORY_MENU_KEYS);
 						}
 						
 					} else {
@@ -763,14 +763,14 @@ public class InventoryDialogue {
 					}
 				case SEX:
 					if(index == 1) {
-						return new Response("Take all", "Pick up everything on the ground.", null);
+						return new Response("Забрать всё", "Собрать всё на земле.", null);
 
 					} else if (index == 2) {
 						if(Main.game.getPlayer().getClothingCurrentlyEquipped().isEmpty()) {
-							return new Response("Displace all", "You aren't wearing any clothing, so there's nothing to displace!", null);
+							return new Response("Смешать всё", "На вас нет одежды, так что нечего сдвигать!", null);
 
 						} else {
-							return new Response("Displace all", "Displace as much of your clothing as possible.", Main.sex.SEX_DIALOGUE){
+							return new Response("Смешать всё", "Сдвинуть как можно больше одежды.", Main.sex.SEX_DIALOGUE){
 								@Override
 								public void effects(){
 									responseSB.setLength(0);
@@ -793,14 +793,14 @@ public class InventoryDialogue {
 						}
 
 					} else if (index == 3) {
-						return new Response("Replace all", "You can't replace clothing in sex!", null);
+						return new Response("Заменить всё", "Во время секса нельзя менять одежду!", null);
 
 					} else if (index == 4) {
 						if(Main.game.getPlayer().getClothingCurrentlyEquipped().isEmpty()) {
-							return new Response("Unequip all", "You aren't wearing any clothing, so there's nothing to remove!", null);
+							return new Response("Снять всё", "На вас нет одежды, так что нечего снимать!", null);
 
 						} else {
-							return new Response("Unequip all", "Remove as much of your clothing as possible.", Main.sex.SEX_DIALOGUE){
+							return new Response("Снять всё", "Снять как можно больше одежды.", Main.sex.SEX_DIALOGUE){
 								@Override
 								public void effects(){
 									responseSB.setLength(0);
@@ -816,26 +816,26 @@ public class InventoryDialogue {
 						}
 
 					} else if (index == 5) {
-						return new Response("Equip all", "You can't equip clothing in sex!", null);
+						return new Response("Надеть всё", "Во время секса нельзя надевать одежду!", null);
 
 					} else if(index == 6) {
 						if(Main.game.getPlayer().getLocationPlace().isItemsDisappear()) {
-							return new Response("Store all", "You can't do this during sex...", null);
+							return new Response("Убрать всё", "Ты не можешь сделать это во время секса...", null);
 						}
-						return new Response("Drop all", "You can't do this during sex...", null);
+						return new Response("Выбросить всё", "Ты не можешь сделать это во время секса...", null);
 
 					} else if (index == 7 && inventoryNPC != null) {
 						if(Main.sex.getInitialSexManager().isHidden(Main.game.getPlayer())) {
-							return new Response(UtilText.parse(inventoryNPC, "Displace all ([npc.HerHim])"), UtilText.parse(inventoryNPC, "As you're hiding, you can't displace [npc.namePos] clothing!"), null);
+							return new Response(UtilText.parse(inventoryNPC, "Снять всё ([npc.HerHim])"), UtilText.parse(inventoryNPC, "Пока ты прячешься, ты не можешь сменить [npc.namePos] одежду!"), null);
 							
 						} else if(!Main.sex.isCanRemoveOthersClothing(Main.game.getPlayer(), null)) {
-							return new Response(UtilText.parse(inventoryNPC, "Displace all ([npc.HerHim])"), UtilText.parse(inventoryNPC, "You can't displace [npc.namePos] clothing in this sex scene!"), null);
+							return new Response(UtilText.parse(inventoryNPC, "Снять всё ([npc.HerHim])"), UtilText.parse(inventoryNPC, "В этой секс-сцене нельзя сменить [npc.namePos] одежду!"), null);
 
 						} else if(inventoryNPC.getClothingCurrentlyEquipped().isEmpty()) {
-							return new Response(UtilText.parse(inventoryNPC, "Displace all ([npc.HerHim])"), UtilText.parse(inventoryNPC, "[npc.Name] isn't wearing any clothing, so there's nothing to displace!"), null);
+							return new Response(UtilText.parse(inventoryNPC, "Снять всё ([npc.HerHim])"), UtilText.parse(inventoryNPC, "На [npc.Name] нет одежды, так что снимать нечего!"), null);
 
 						} else {
-							return new Response(UtilText.parse(inventoryNPC, "Displace all ([npc.HerHim])"), UtilText.parse(inventoryNPC, "Displace as much of [npc.namePos] clothing as possible."), Main.sex.SEX_DIALOGUE){
+							return new Response(UtilText.parse(inventoryNPC, "Снять всё ([npc.HerHim])"), UtilText.parse(inventoryNPC, "Снять с [npc.namePos] как можно больше одежды."), Main.sex.SEX_DIALOGUE){
 								@Override
 								public void effects(){
 									responseSB.setLength(0);
@@ -858,20 +858,20 @@ public class InventoryDialogue {
 						}
 
 					} else if (index == 8 && inventoryNPC != null) {
-						return new Response(UtilText.parse(inventoryNPC, "Replace all ([npc.HerHim])"), UtilText.parse(inventoryNPC, "You can't replace [npc.namePos] clothing in sex!"), null);
+						return new Response(UtilText.parse(inventoryNPC, "Заменить всё ([npc.HerHim])"), UtilText.parse(inventoryNPC, "Вы не можете сменить [npc.namePos] одежду во время секса!"), null);
 
 					} else if (index == 9 && inventoryNPC != null) {
 						if(Main.sex.getInitialSexManager().isHidden(Main.game.getPlayer())) {
-							return new Response(UtilText.parse(inventoryNPC, "Unequip all ([npc.HerHim])"), UtilText.parse(inventoryNPC, "As you're hiding, you can't unequip [npc.namePos] clothing!"), null);
+							return new Response(UtilText.parse(inventoryNPC, "Снять всё ([npc.HerHim])"), UtilText.parse(inventoryNPC, "Пока вы прячетесь, вы не можете снять [npc.namePos] одежду!"), null);
 							
 						} else if(!Main.sex.isCanRemoveOthersClothing(Main.game.getPlayer(), null)) {
-							return new Response(UtilText.parse(inventoryNPC, "Unequip all ([npc.HerHim])"), UtilText.parse(inventoryNPC, "You can't unequip [npc.namePos] clothing in this sex scene!"), null);
+							return new Response(UtilText.parse(inventoryNPC, "Снять всё ([npc.HerHim])"), UtilText.parse(inventoryNPC, "Вы не можете снять [npc.namePos] одежду в этой секс-сцене!"), null);
 
 						} else if(inventoryNPC.getClothingCurrentlyEquipped().isEmpty()) {
-							return new Response(UtilText.parse(inventoryNPC, "Unequip all ([npc.HerHim])"), UtilText.parse(inventoryNPC, "[npc.Name] isn't wearing any clothing, so there's nothing to remove!"), null);
+							return new Response(UtilText.parse(inventoryNPC, "Снять всё ([npc.HerHim])"), UtilText.parse(inventoryNPC, "На [npc.Name] нет никакой одежды, так что снимать нечего!"), null);
 
 						} else {
-							return new Response(UtilText.parse(inventoryNPC, "Unequip all ([npc.HerHim])"), UtilText.parse(inventoryNPC, "Remove as much of [npc.namePos] clothing as possible."), Main.sex.SEX_DIALOGUE){
+							return new Response(UtilText.parse(inventoryNPC, "Снять всё ([npc.HerHim])"), UtilText.parse(inventoryNPC, "Снять как можно больше одежды с [npc.namePos]."), Main.sex.SEX_DIALOGUE){
 								@Override
 								public void effects(){
 									responseSB.setLength(0);
@@ -888,13 +888,13 @@ public class InventoryDialogue {
 
 					} else if(index==11) {
 						if(Main.game.getPlayer().getUnlockKeyMap().isEmpty()) {
-							return new Response("Keys", "You do not currently own any keys which are used for unlocking certain items of clothing.", null);
+							return new Response("Ключи", "Сейчас у вас нет ключей, которые используются для разблокировки определенных предметов одежды.", null);
 							
 						} else if(Main.game.getCurrentDialogueNode()==INVENTORY_MENU_KEYS) {
-							return new Response("Keys", "You are already viewing a list of all the keys that you own which are used for unlocking certain items of clothing.", null);
+							return new Response("Ключи", "Вы уже просматриваете список всех имеющихся у вас ключей, используемых для разблокировки определенных предметов одежды.", null);
 							
 						} else {
-							return new Response("Keys", "View a list of all the keys that you currently own which are used for unlocking certain items of clothing.", INVENTORY_MENU_KEYS);
+							return new Response("Ключи", "Посмотреть список всех имеющихся у вас ключей, используемых для разблокировки определенных предметов одежды.", INVENTORY_MENU_KEYS);
 						}
 						
 					} else {
@@ -911,17 +911,17 @@ public class InventoryDialogue {
 		}
 	};
 	
-	public static final DialogueNode INVENTORY_MENU_KEYS = new DialogueNode("Inventory", "Return to inventory menu.", true) {
+	public static final DialogueNode INVENTORY_MENU_KEYS = new DialogueNode("Инвентарь", "Вернуться в меню инвентаря.", true) {
 		@Override
 		public String getLabel() {
 			if(!Main.game.isInNewWorld()) {
-				return "Evening's Attire";
+				return "Вечерний наряд";
 			}
 			
 			if (Main.game.getDialogueFlags().values.contains(DialogueFlagValue.quickTrade) && !Main.game.isInSex() && !Main.game.isInCombat()) {
-				return "Inventory (Quick-Manage is <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>ON</b>)";
+				return "Инвентарь (Быстрое управление <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>ВКЛЮЧЕНО</b>)";
 			} else {
-				return "Inventory";
+				return "Инвентарь";
 			}
 		}
 
@@ -935,9 +935,9 @@ public class InventoryDialogue {
 			UtilText.nodeContentSB.setLength(0);
 			
 			UtilText.nodeContentSB.append("<p>");
-			UtilText.nodeContentSB.append("[style.boldMinorGood(Keys owned:)]");
+			UtilText.nodeContentSB.append("[style.boldMinorGood(В наличии ключей:)]");
 			if(Main.game.getPlayer().getUnlockKeyMap().isEmpty()) {
-				UtilText.nodeContentSB.append("<br/>[style.italicsDisabled(None...)]");
+				UtilText.nodeContentSB.append("<br/>[style.italicsDisabled(Нет...)]");
 				
 			} else {
 				for(Entry<String, List<InventorySlot>> entry : Main.game.getPlayer().getUnlockKeyMap().entrySet()) {
@@ -947,7 +947,7 @@ public class InventoryDialogue {
 						for(InventorySlot slot : entry.getValue()) {
 							AbstractClothing slotClothing = npc.getClothingInSlot(slot);
 							if(slotClothing!=null) {
-								slots.add(Util.capitaliseSentence(slotClothing.getName())+" ('"+slot.getName()+"' slot)");
+								slots.add(Util.capitaliseSentence(slotClothing.getName())+" ('"+slot.getName()+"' слот)");
 							}
 						}
 						if(!slots.isEmpty()) {
@@ -982,14 +982,14 @@ public class InventoryDialogue {
 		}
 	};
 	
-	public static final DialogueNode ITEM_INVENTORY = new DialogueNode("Item", "", true) {
+	public static final DialogueNode ITEM_INVENTORY = new DialogueNode("Предмет", "", true) {
 
 		@Override
 		public String getLabel() {
 			if (Main.game.getDialogueFlags().values.contains(DialogueFlagValue.quickTrade) && !Main.game.isInSex() && !Main.game.isInCombat()) {
-				return "Inventory (Quick-Manage is <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>ON</b>)";
+				return "Инвентарь (Быстрое управление <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>ВКЛЮЧЕНО</b>)";
 			} else {
-				return "Inventory";
+				return "Инвентарь";
 			}
 		}
 
@@ -1009,13 +1009,13 @@ public class InventoryDialogue {
 								? (inventoryNPC != null && interactionType == InventoryInteraction.TRADING
 										? "<p>"
 											+(inventoryNPC.willBuy(item) && item.getItemType().isAbleToBeSold()
-												?inventoryNPC.getName("The") + " will buy it for " + UtilText.formatAsMoney(item.getPrice(inventoryNPC.getBuyModifier())) + "."
-												:inventoryNPC.getName("The") + " doesn't want to buy this.")
+												?inventoryNPC.getName("") + " купит за " + UtilText.formatAsMoney(item.getPrice(inventoryNPC.getBuyModifier())) + "."
+												:inventoryNPC.getName("") + " не хочет покупать это.")
 											+"</p>"
 										: "")
 								:(inventoryNPC != null && interactionType == InventoryInteraction.TRADING
 									? "<p>"
-											+ inventoryNPC.getName("The") + " will sell it for " + UtilText.formatAsMoney(item.getPrice(inventoryNPC.getSellModifier(item))) + "."
+											+ inventoryNPC.getName("") + " продаст за " + UtilText.formatAsMoney(item.getPrice(inventoryNPC.getSellModifier(item))) + "."
 										+ "</p>" 
 									: "")));
 		}
@@ -1032,7 +1032,7 @@ public class InventoryDialogue {
 
 			if(Main.game.isBadEnd()) {
 				if(index==1) {
-					return new Response("Unavailable", "You can't manipulate your inventory during a bad end...", null);
+					return new Response("Недоступно", "Вы не можете управлять инвентарем во время плохого финала...", null);
 				}
 				return null;
 			}
@@ -1049,39 +1049,39 @@ public class InventoryDialogue {
 					
 					switch(interactionType) {
 						case SEX:
-							String dropTitle = owner.getLocationPlace().isItemsDisappear()?"Drop ":"Store";
+							String dropTitle = owner.getLocationPlace().isItemsDisappear()?"Выбросить ":"Спрятать";
 							if(index == 1) {
-								return new Response(dropTitle+"(1)", "You can't drop items while masturbating.", null);
+								return new Response(dropTitle+"(1)", "Вы не можете выбрасывать предметы во время мастурбации.", null);
 								
 							} else if(index == 2) {
-								return new Response(dropTitle+"(5)", "You can't drop items while masturbating.", null);
+								return new Response(dropTitle+"(5)", "Вы не можете выбрасывать предметы во время мастурбации.", null);
 								
 							} else if(index == 3) {
-								return new Response(dropTitle+"(All)", "You can't drop items while masturbating.", null);
+								return new Response(dropTitle+"(Все)", "Вы не можете выбрасывать предметы во время мастурбации.", null);
 								
 							} else if(index == 5) {
-								return new Response("Enchant", "You can't enchant items while masturbating.", null);
+								return new Response("Зачаровать", "Вы не можете зачаровывать предметы во время мастурбации.", null);
 								
 							} else if(index == 6) {
 								if(Main.sex.isCharacterImmobilised(Main.game.getPlayer())) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Self)", "You can't use this as you are currently [style.colourTerrible(immobilised)]!", null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Себя)", "Вы не можете использовать это, так как сейчас вы [style.colourTerrible(неподвижны)]!", null);
 								}
 								if(!Main.sex.isItemUseAvailable()) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Self)", "Items cannot be used during this sex scene!", null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Себя)", "Предметы нельзя использовать во время этой секс-сцены!", null);
 									
 								} else if (!item.isAbleToBeUsedInSex()) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Self)", "You cannot use this during sex!", null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Себя)", "Это нельзя использовать во время секса!", null);
 									
 								} else if (!item.isAbleToBeUsedFromInventory()) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Self)", item.getUnableToBeUsedFromInventoryDescription(), null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Себя)", item.getUnableToBeUsedFromInventoryDescription(), null);
 									
 								} else if (!item.isAbleToBeUsed(Main.game.getPlayer(), Main.game.getPlayer())) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName()) +" (Self)", item.getUnableToBeUsedDescription(Main.game.getPlayer(), Main.game.getPlayer()), null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName()) +" (Себя)", item.getUnableToBeUsedDescription(Main.game.getPlayer(), Main.game.getPlayer()), null);
 									
 								} else {
 									if(item.isBreakOutOfInventory()) {
 										return new ResponseEffectsOnly(
-												Util.capitaliseSentence(item.getItemType().getUseName()) +" (Self)",
+												Util.capitaliseSentence(item.getItemType().getUseName()) +" (Себя)",
 												item.getItemType().getUseTooltipDescription(owner, owner)){
 											@Override
 											public void effects(){
@@ -1091,7 +1091,7 @@ public class InventoryDialogue {
 										};
 									} else {
 										return new Response(
-												Util.capitaliseSentence(item.getItemType().getUseName()) +" (Self)",
+												Util.capitaliseSentence(item.getItemType().getUseName()) +" (Себя)",
 												item.getItemType().getUseTooltipDescription(owner, owner),
 												Main.sex.SEX_DIALOGUE){
 											@Override
@@ -1107,7 +1107,7 @@ public class InventoryDialogue {
 								}
 								
 							} else if(index == 7) {
-								return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" all (Self)", "You can only use one item at a time during sex!", null);
+								return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" все (Себя)", "Во время секса можно использовать только один предмет за раз!", null);
 								
 							} else if (index == 10) {
 								return getQuickTradeResponse();
@@ -1120,11 +1120,11 @@ public class InventoryDialogue {
 							if(index == 1) {
 								if(owner.getLocationPlace().isItemsDisappear()) {
 									if(!item.getItemType().isAbleToBeDropped()) {
-										return new Response("Drop (1)", "You cannot drop the " + item.getName() + "!", null);
+										return new Response("Выбросить (1)", "Вы не можете выбросить " + item.getName() + "!", null);
 									} else if(areaFull) {
-										return new Response("Drop (1)", "This area is full, so you can't drop your " + item.getName() + " here!", null);
+										return new Response("Выбросить (1)", "Это место заполнено, поэтому вы не можете бросить свой " + item.getName() + " здесь!", null);
 									} else {
-										return new Response("Drop (1)", "Drop your " + item.getName() + ".", INVENTORY_MENU){
+										return new Response("Выбросить (1)", "Выбросить свой " + item.getName() + ".", INVENTORY_MENU){
 											@Override
 											public void effects(){
 												dropItems(owner, item, 1);
@@ -1133,11 +1133,11 @@ public class InventoryDialogue {
 									}
 								} else {
 									if(!item.getItemType().isAbleToBeDropped()) {
-										return new Response("Store (1)", "You cannot store the " + item.getName() + "!", null);
+										return new Response("Сложить (1)", "Вы не можете сложить " + item.getName() + "!", null);
 									} else if(areaFull) {
-										return new Response("Store (1)", "This area is full, so you can't store your " + item.getName() + " here!", null);
+										return new Response("Сложить (1)", "Эта область заполнена, поэтому вы не можете сложить свои " + item.getName() + " здесь!", null);
 									} else {
-										return new Response("Store (1)", "Store the " + item.getName() + " in this area.", INVENTORY_MENU){
+										return new Response("Сложить (1)", "Сложить " + item.getName() + " в этой области.", INVENTORY_MENU){
 											@Override
 											public void effects(){
 												dropItems(owner, item, 1);
@@ -1149,16 +1149,16 @@ public class InventoryDialogue {
 							} else if(index == 2) {
 								if(owner.getLocationPlace().isItemsDisappear()) {
 									if(owner.getItemCount(item) < 5) {
-										return new Response("Drop (5)", "You don't have five " + item.getNamePlural() + " to give!", null);
+										return new Response("Выбросить (5)", "У вас нет пяти " + item.getNamePlural() + " чтобы отдать!", null);
 										
 									} else if(!item.getItemType().isAbleToBeDropped()) {
-										return new Response("Drop (5)", "You cannot drop the " + item.getName() + "!", null);
+										return new Response("Выбросить (5)", "Вы не можете выбросить " + item.getName() + "!", null);
 										
 									} else if(areaFull) {
-										return new Response("Drop (5)", "This area is full, so you can't drop your " + item.getNamePlural() + " here!", null);
+										return new Response("Выбросить (5)", "Это место заполнено, поэтому вы не можете бросить свой " + item.getNamePlural() + " здесь!", null);
 										
 									} else {
-										return new Response("Drop (5)", "Drop five of your " + item.getNamePlural() + ".", INVENTORY_MENU){
+										return new Response("Выбросить (5)", "Выбросить пять ваших " + item.getNamePlural() + ".", INVENTORY_MENU){
 											@Override
 											public void effects(){
 												dropItems(owner, item, 5);
@@ -1167,16 +1167,16 @@ public class InventoryDialogue {
 									}
 								} else {
 									if(owner.getItemCount(item) < 5) {
-										return new Response("Store (5)", "You don't have five " + item.getNamePlural() + " to give!", null);
+										return new Response("Сложить (5)", "У вас нет пяти " + item.getNamePlural() + " чтобы отдать!", null);
 										
 									} else if(!item.getItemType().isAbleToBeDropped()) {
-										return new Response("Store (5)", "You cannot store the " + item.getName() + "!", null);
+										return new Response("Сложить (5)", "Вы не можете сложить " + item.getName() + "!", null);
 										
 									} else if(areaFull) {
-										return new Response("Store (5)", "This area is full, so you can't store your " + item.getNamePlural() + " here!", null);
+										return new Response("Сложить (5)", "Эта область заполнена, поэтому вы не можете сложить свои " + item.getNamePlural() + " здесь!", null);
 										
 									} else {
-										return new Response("Store (5)", "Store five of your " + item.getNamePlural() + " in this area.", INVENTORY_MENU){
+										return new Response("Сложить (5)", "Сложить пять ваших " + item.getNamePlural() + " в этой области.", INVENTORY_MENU){
 											@Override
 											public void effects(){
 												dropItems(owner, item, 5);
@@ -1188,11 +1188,11 @@ public class InventoryDialogue {
 							} else if(index == 3) {
 								if(owner.getLocationPlace().isItemsDisappear()) {
 									if(!item.getItemType().isAbleToBeDropped()) {
-										return new Response("Drop (All)", "You cannot drop the " + item.getName() + "!", null);
+										return new Response("Выбросить (Все)", "Вы не можете выбросить " + item.getName() + "!", null);
 									} else if(areaFull) {
-										return new Response("Drop (All)", "This area is full, so you can't drop your " + item.getNamePlural() + " here!", null);
+										return new Response("Выбросить (Все)", "Это место заполнено, поэтому вы не можете бросить свой " + item.getNamePlural() + " здесь!", null);
 									} else {
-										return new Response("Drop (All)", "Drop all of your " + item.getNamePlural() + ".", INVENTORY_MENU){
+										return new Response("Выбросить (Все)", "Выбросить все ваши " + item.getNamePlural() + ".", INVENTORY_MENU){
 											@Override
 											public void effects(){
 												dropItems(owner, item, owner.getItemCount(item));
@@ -1201,11 +1201,11 @@ public class InventoryDialogue {
 									}
 								} else {
 									if(!item.getItemType().isAbleToBeDropped()) {
-										return new Response("Store (All)", "You cannot store the " + item.getName() + "!", null);
+										return new Response("Склад (Все)", "Вы не можете сложить " + item.getName() + "!", null);
 									} else if(areaFull) {
-										return new Response("Store (All)", "This area is full, so you can't store your " + item.getNamePlural() + " here!", null);
+										return new Response("Склад (Все)", "Эта область заполнена, поэтому вы не можете сложить свои " + item.getNamePlural() + " здесь!", null);
 									} else {
-										return new Response("Store (All)", "Store all of your " + item.getNamePlural() + " in this area.", INVENTORY_MENU){
+										return new Response("Склад (Все)", "Сложить все ваши " + item.getNamePlural() + " в этой области.", INVENTORY_MENU){
 											@Override
 											public void effects(){
 												dropItems(owner, item, owner.getItemCount(item));
@@ -1216,11 +1216,11 @@ public class InventoryDialogue {
 								
 							} else if(index == 5) {
 								if(item.getEnchantmentItemType(null)==null || item.getItemTags().contains(ItemTag.UNENCHANTABLE)) {
-									return new Response("Enchant", "This item cannot be enchanted!", null);
+									return new Response("Зачаровать", "Этот предмет нельзя зачаровать!", null);
 									
 								} else if(Main.game.isDebugMode()
 										|| (Main.game.getPlayer().hasQuest(QuestLine.SIDE_ENCHANTMENT_DISCOVERY) && Main.game.getPlayer().isQuestCompleted(QuestLine.SIDE_ENCHANTMENT_DISCOVERY))) {
-									return new Response("Enchant", "Enchant this item.", EnchantmentDialogue.ENCHANTMENT_MENU) {
+									return new Response("Зачаровать", "Зачаровать этот предмет.", EnchantmentDialogue.ENCHANTMENT_MENU) {
 										@Override
 										public DialogueNode getNextDialogue() {
 											return EnchantmentDialogue.getEnchantmentMenu(item);
@@ -1228,19 +1228,19 @@ public class InventoryDialogue {
 									};
 									
 								} else {
-									return new Response("Enchant", getEnchantmentNotDiscoveredText("items"), null);
+									return new Response("Зачаровать", getEnchantmentNotDiscoveredText("предметов"), null);
 								}
 								
 							} else if(index == 6) {
 								if (!item.isAbleToBeUsedFromInventory()) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Self)", item.getUnableToBeUsedFromInventoryDescription(), null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Себя)", item.getUnableToBeUsedFromInventoryDescription(), null);
 									
 								} else if (!item.isAbleToBeUsed(Main.game.getPlayer(), Main.game.getPlayer())) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName()) +" (Self)", item.getUnableToBeUsedDescription(Main.game.getPlayer(), Main.game.getPlayer()), null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName()) +" (Себя)", item.getUnableToBeUsedDescription(Main.game.getPlayer(), Main.game.getPlayer()), null);
 								} else {
 									if(item.isBreakOutOfInventory()) {
 										return new ResponseEffectsOnly(
-												Util.capitaliseSentence(item.getItemType().getUseName()) +" (Self)",
+												Util.capitaliseSentence(item.getItemType().getUseName()) +" (Себя)",
 												item.getItemType().getUseTooltipDescription(owner, owner)){
 											@Override
 											public void effects(){
@@ -1250,7 +1250,7 @@ public class InventoryDialogue {
 										};
 									}
 									return new Response(
-											Util.capitaliseSentence(item.getItemType().getUseName()) +" (Self)",
+											Util.capitaliseSentence(item.getItemType().getUseName()) +" (Себя)",
 											item.getItemType().getUseTooltipDescription(owner, owner),
 											INVENTORY_MENU){
 										@Override
@@ -1263,19 +1263,19 @@ public class InventoryDialogue {
 								
 							} else if(index == 7) {
 								if (!item.isAbleToBeUsedFromInventory()) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" all (Self)", item.getUnableToBeUsedFromInventoryDescription(), null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" все (Себя)", item.getUnableToBeUsedFromInventoryDescription(), null);
 									
 								} else if(!item.isAbleToBeUsed(Main.game.getPlayer(), Main.game.getPlayer())) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" all (Self)", item.getUnableToBeUsedDescription(Main.game.getPlayer(), Main.game.getPlayer()), null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" все (Себя)", item.getUnableToBeUsedDescription(Main.game.getPlayer(), Main.game.getPlayer()), null);
 									
 								} else {
 									if(item.isBreakOutOfInventory()) {
-										return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" all (Self)", "As this item has special effects, you can only use one at a time!", null);
+										return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" все (Себя)", "Так как этот предмет обладает особыми эффектами, вы можете использовать только один за раз!", null);
 									}
 									return new Response(
-											Util.capitaliseSentence(item.getItemType().getUseName())+" all (Self)",
+											Util.capitaliseSentence(item.getItemType().getUseName())+" все (Себя)",
 											item.getItemType().getUseTooltipDescription(owner, owner)
-												+"<br/>[style.italicsMinorGood(Repeat this for all of the " + item.getNamePlural() + " which are in your inventory.)]",
+												+"<br/>[style.italicsMinorGood(Повторить для всех " + item.getNamePlural() + " предметов в вашем инвентаре.)]",
 											INVENTORY_MENU){
 										@Override
 										public void effects(){
@@ -1301,39 +1301,39 @@ public class InventoryDialogue {
 					switch(interactionType) {
 						case COMBAT:
 							if(index == 1) {
-								return new Response("Give (1)", "You can't give someone items while fighting them!", null);
+								return new Response("Отдать (1)", "Вы не можете отдавать предметы во время боя!", null);
 								
 							} else if(index == 2) {
-								return new Response("Give (5)", "You can't give someone items while fighting them!", null);
+								return new Response("Отдать (5)", "Вы не можете отдавать предметы во время боя!", null);
 								
 							} else if(index == 3) {
-								return new Response("Give (All)", "You can't give someone items while fighting them!", null);
+								return new Response("Отдать (Все)", "Вы не можете отдавать предметы во время боя!", null);
 								
 							} else if(index == 5) {
-								return new Response("Enchant", "You can't enchant items while fighting someone!", null);
+								return new Response("Зачаровать", "Вы не можете зачаровывать предметы во время боя!", null);
 								
 							} else if(index == 6) {
 								if(Main.game.getPlayer().isStunned()) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Self)", "You cannot use any items while you're stunned!", null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Себя)", "Вы не можете использовать предметы, пока оглушены!", null);
 									
 								} else if(Main.combat.isCombatantDefeated(Main.game.getPlayer())) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Self)", "You cannot use any items while you're defeated!", null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Себя)", "Вы не можете использовать предметы, пока повержены!", null);
 									
 								} else if(Main.game.getPlayer().getRemainingAP()<CombatMove.ITEM_USAGE.getAPcost(Main.game.getPlayer())) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Self)", "You need at least "+CombatMove.ITEM_USAGE.getAPcost(Main.game.getPlayer())+" AP to use this actions!", null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Себя)", "Вам нужно как минимум "+CombatMove.ITEM_USAGE.getAPcost(Main.game.getPlayer())+" Очков действия (AP), чтобы совершить это действие!", null);
 									
 								} else if (!item.isAbleToBeUsedInCombatAllies()) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Self)", "You cannot use this during combat!", null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Себя)", "Вы не можете использовать это во время боя!", null);
 									
 								} else if (!item.isAbleToBeUsedFromInventory()) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Self)", item.getUnableToBeUsedFromInventoryDescription(), null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Себя)", item.getUnableToBeUsedFromInventoryDescription(), null);
 									
 								} else if (!item.isAbleToBeUsed(Main.game.getPlayer(), Main.game.getPlayer())) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName()) +" (Self)", item.getUnableToBeUsedDescription(Main.game.getPlayer(), Main.game.getPlayer()), null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName()) +" (Себя)", item.getUnableToBeUsedDescription(Main.game.getPlayer(), Main.game.getPlayer()), null);
 									
 								} else {
 									return new Response(
-											Util.capitaliseSentence(item.getItemType().getUseName()) +" (Self)",
+											Util.capitaliseSentence(item.getItemType().getUseName()) +" (Себя)",
 											item.getItemType().getUseTooltipDescription(owner, owner),
 											Main.combat.ENEMY_ATTACK){
 										@Override
@@ -1346,32 +1346,32 @@ public class InventoryDialogue {
 								}
 								
 							} else if(index == 7) {
-								return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" all (Self)", "You can only use one item at a time during combat!", null);
+								return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" все (Себя)", "Во время боя можно использовать только один предмет за раз!", null);
 								
 							} else if (index == 10) {
 								return getQuickTradeResponse();
 								
 							} else if(index == 11) {//TODO on ally though???
 								if(Main.game.getPlayer().isStunned()) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Opponent)", "You cannot use any items while you're stunned!", null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Противник)", "Вы не можете использовать предметы, пока оглушены!", null);
 									
 								} else if(Main.combat.isCombatantDefeated(Main.game.getPlayer())) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Opponent)", "You cannot use any items while you're defeated!", null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Противник)", "Вы не можете использовать предметы, пока повержены!", null);
 									
 								} else if(Main.game.getPlayer().getRemainingAP()<CombatMove.ITEM_USAGE.getAPcost(Main.game.getPlayer())) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Opponent)", "You need at least "+CombatMove.ITEM_USAGE.getAPcost(Main.game.getPlayer())+" AP to use this actions!", null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Противник)", "Вам нужно как минимум "+CombatMove.ITEM_USAGE.getAPcost(Main.game.getPlayer())+" Очков действия (AP), чтобы совершить это действие!", null);
 									
 								} else if (!item.isAbleToBeUsedInCombatEnemies()) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Opponent)", "You cannot use this during combat!", null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Противник)", "Вы не можете использовать это во время боя!", null);
 									
 								} else if (!item.isAbleToBeUsedFromInventory()) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Opponent)", item.getUnableToBeUsedFromInventoryDescription(), null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Противник)", item.getUnableToBeUsedFromInventoryDescription(), null);
 									
 								} else if (!item.isAbleToBeUsed(Main.game.getPlayer(), inventoryNPC)) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName()) +" (Opponent)", item.getUnableToBeUsedDescription(Main.game.getPlayer(), inventoryNPC), null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName()) +" (Противник)", item.getUnableToBeUsedDescription(Main.game.getPlayer(), inventoryNPC), null);
 
 								} else if(item.getItemType().isFetishGiving()) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName()) +" (Opponent)",
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName()) +" (Противник)",
 											item.getItemType().getUseTooltipDescription(owner, inventoryNPC),
 											Main.combat.ENEMY_ATTACK,
 											Util.newArrayListOfValues(Fetish.FETISH_KINK_GIVING),
@@ -1388,7 +1388,7 @@ public class InventoryDialogue {
 									};
 								} else if(item.getItemType().isTransformative()) {
 									return new Response(
-											Util.capitaliseSentence(item.getItemType().getUseName()) +" (Opponent)",
+											Util.capitaliseSentence(item.getItemType().getUseName()) +" (Противник)",
 											item.getItemType().getUseTooltipDescription(owner, inventoryNPC),
 											Main.combat.ENEMY_ATTACK,
 											Util.newArrayListOfValues(Fetish.FETISH_TRANSFORMATION_GIVING),
@@ -1406,7 +1406,7 @@ public class InventoryDialogue {
 									
 								} else {
 									return new Response(
-											Util.capitaliseSentence(item.getItemType().getUseName()) +" (Opponent)",
+											Util.capitaliseSentence(item.getItemType().getUseName()) +" (Противник)",
 											item.getItemType().getUseTooltipDescription(owner, inventoryNPC),
 											Main.combat.ENEMY_ATTACK){
 										@Override
@@ -1419,7 +1419,7 @@ public class InventoryDialogue {
 								}
 								
 							} else if(index == 12) {
-								return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" all (Opponent)", "You can only use one item at a time during combat!", null);
+								return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" все (Оппонент)", "Во время боя можно использовать только один предмет за раз!", null);
 								
 							} else {
 								return null;
@@ -1430,11 +1430,11 @@ public class InventoryDialogue {
 							
 							if(index == 1) {
 								if(!item.getItemType().isAbleToBeDropped()) {
-									return new Response("Give (1)", "You cannot give away the " + item.getName() + "!", null);
+									return new Response("Отдать (1)", "Вы не можете отдать " + item.getName() + "!", null);
 								} else if(inventoryFull) {
-									return new Response("Give (1)", UtilText.parse(inventoryNPC, "[npc.NamePos] inventory is already full!"), null);
+									return new Response("Отдать (1)", UtilText.parse(inventoryNPC, "[npc.NamePos], инвентарь уже полон!"), null);
 								}
-								return new Response("Give (1)", UtilText.parse(inventoryNPC, "Give [npc.name] one " + item.getName() + "."), INVENTORY_MENU){
+								return new Response("Отдать (1)", UtilText.parse(inventoryNPC, "Отдать [npc.name] одну " + item.getName() + "."), INVENTORY_MENU){
 									@Override
 									public void effects(){
 										transferItems(Main.game.getPlayer(), inventoryNPC, item, 1);
@@ -1443,28 +1443,28 @@ public class InventoryDialogue {
 								
 							} else if(index == 2) {
 								if(!item.getItemType().isAbleToBeDropped()) {
-									return new Response("Give (5)", "You cannot give away the " + item.getName() + "!", null);
+									return new Response("Отдать (5)", "Вы не можете отдать " + item.getName() + "!", null);
 								} else if(inventoryFull) {
-									return new Response("Give (5)", UtilText.parse(inventoryNPC, "[npc.NamePos] inventory is already full!"), null);
+									return new Response("Отдать (5)", UtilText.parse(inventoryNPC, "[npc.NamePos], инвентарь уже полон!"), null);
 								}
 								if(Main.game.getPlayer().getItemCount(item) >= 5) {
-									return new Response("Give (5)", UtilText.parse(inventoryNPC, "Give [npc.name] five of your " + item.getNamePlural() + "."), INVENTORY_MENU){
+									return new Response("Отдать (5)", UtilText.parse(inventoryNPC, "Отдать [npc.name] пять ваших " + item.getNamePlural() + "."), INVENTORY_MENU){
 										@Override
 										public void effects(){
 											transferItems(Main.game.getPlayer(), inventoryNPC, item, 5);
 										}
 									};
 								} else {
-									return new Response("Give (5)", "You don't have five " + item.getNamePlural() + " to give!", null);
+									return new Response("Отдать (5)", "У вас нет пяти " + item.getNamePlural() + " чтобы отдать!", null);
 								}
 								
 							} else if(index == 3) {
 								if(!item.getItemType().isAbleToBeDropped()) {
-									return new Response("Give (All)", "You cannot give away the " + item.getName() + "!", null);
+									return new Response("Отдать (Все)", "Вы не можете отдать " + item.getName() + "!", null);
 								} else if(inventoryFull) {
-									return new Response("Give (All)", UtilText.parse(inventoryNPC, "[npc.NamePos] inventory is already full!"), null);
+									return new Response("Отдать (Все)", UtilText.parse(inventoryNPC, "[npc.NamePos], инвентарь уже полон!"), null);
 								}
-								return new Response("Give (All)", UtilText.parse(inventoryNPC, "Give [npc.name] all of your " + item.getNamePlural() + "."), INVENTORY_MENU){
+								return new Response("Отдать (Все)", UtilText.parse(inventoryNPC, "Отдать [npc.name] все ваши " + item.getNamePlural() + "."), INVENTORY_MENU){
 									@Override
 									public void effects(){
 										transferItems(Main.game.getPlayer(), inventoryNPC, item, Main.game.getPlayer().getItemCount(item));
@@ -1473,11 +1473,11 @@ public class InventoryDialogue {
 								
 							} else if(index == 5) {
 								if(item.getEnchantmentItemType(null)==null || item.getItemTags().contains(ItemTag.UNENCHANTABLE)) {
-									return new Response("Enchant", "This item cannot be enchanted!", null);
+									return new Response("Зачаровать", "Этот предмет нельзя зачаровать!", null);
 									
 								} else if(Main.game.isDebugMode()
 											|| (Main.game.getPlayer().hasQuest(QuestLine.SIDE_ENCHANTMENT_DISCOVERY) && Main.game.getPlayer().isQuestCompleted(QuestLine.SIDE_ENCHANTMENT_DISCOVERY))) {
-										return new Response("Enchant", "Enchant this item.", EnchantmentDialogue.ENCHANTMENT_MENU) {
+										return new Response("Зачаровать", "Зачаровать этот предмет.", EnchantmentDialogue.ENCHANTMENT_MENU) {
 											@Override
 											public DialogueNode getNextDialogue() {
 												return EnchantmentDialogue.getEnchantmentMenu(item);
@@ -1485,20 +1485,20 @@ public class InventoryDialogue {
 										};
 								
 								} else {
-									return new Response("Enchant", getEnchantmentNotDiscoveredText("items"), null);
+									return new Response("Зачаровать", getEnchantmentNotDiscoveredText("предметов"), null);
 								}
 							
 							} else if(index == 6) {
 								if (!item.isAbleToBeUsedFromInventory()) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Self)", item.getUnableToBeUsedFromInventoryDescription(), null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Себя)", item.getUnableToBeUsedFromInventoryDescription(), null);
 									
 								} else if (!item.isAbleToBeUsed(Main.game.getPlayer(), Main.game.getPlayer())) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName()) +" (Self)", item.getUnableToBeUsedDescription(Main.game.getPlayer(), Main.game.getPlayer()), null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName()) +" (Себя)", item.getUnableToBeUsedDescription(Main.game.getPlayer(), Main.game.getPlayer()), null);
 									
 								} else {
 									if(item.isBreakOutOfInventory()) {
 										return new ResponseEffectsOnly(
-												Util.capitaliseSentence(item.getItemType().getUseName()) +" (Self)",
+												Util.capitaliseSentence(item.getItemType().getUseName()) +" (Себя)",
 												item.getItemType().getUseTooltipDescription(owner, owner)){
 											@Override
 											public void effects(){
@@ -1508,7 +1508,7 @@ public class InventoryDialogue {
 										};
 									}
 									return new Response(
-											Util.capitaliseSentence(item.getItemType().getUseName()) +" (Self)",
+											Util.capitaliseSentence(item.getItemType().getUseName()) +" (Себя)",
 											item.getItemType().getUseTooltipDescription(owner, owner),
 											INVENTORY_MENU){
 										@Override
@@ -1521,19 +1521,19 @@ public class InventoryDialogue {
 								
 							} else if(index == 7) {
 								if (!item.isAbleToBeUsedFromInventory()) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" all (Self)", item.getUnableToBeUsedFromInventoryDescription(), null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" все (Себя)", item.getUnableToBeUsedFromInventoryDescription(), null);
 									
 								} else if(!item.isAbleToBeUsed(Main.game.getPlayer(), Main.game.getPlayer())) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" all (Self)", item.getUnableToBeUsedDescription(Main.game.getPlayer(), Main.game.getPlayer()), null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" все (Себя)", item.getUnableToBeUsedDescription(Main.game.getPlayer(), Main.game.getPlayer()), null);
 									
 								} else {
 									if(item.isBreakOutOfInventory()) {
-										return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" all (Self)", "As this item has special effects, you can only use one at a time!", null);
+										return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" все (Себя)", "Так как этот предмет обладает особыми эффектами, вы можете использовать только один за раз!", null);
 									}
 									return new Response(
-											Util.capitaliseSentence(item.getItemType().getUseName())+" all (Self)",
+											Util.capitaliseSentence(item.getItemType().getUseName())+" все (Себя)",
 											item.getItemType().getUseTooltipDescription(owner, owner)
-												+"<br/>[style.italicsMinorGood(Repeat this for all of the " + item.getNamePlural() + " which are in your inventory.)]",
+												+"<br/>[style.italicsMinorGood(Повторить для всех " + item.getNamePlural() + " предметов в вашем инвентаре.)]",
 											INVENTORY_MENU){
 										@Override
 										public void effects(){
@@ -1611,18 +1611,18 @@ public class InventoryDialogue {
 								}
 							} else if(index == 12) {
 								if (!item.isAbleToBeUsedFromInventory()) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+UtilText.parse(inventoryNPC, " all ([npc.HerHim])"), item.getUnableToBeUsedFromInventoryDescription(), null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+UtilText.parse(inventoryNPC, " все ([npc.HerHim])"), item.getUnableToBeUsedFromInventoryDescription(), null);
 									
 								} else if(!item.isAbleToBeUsed(Main.game.getPlayer(), inventoryNPC)) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+UtilText.parse(inventoryNPC, " all ([npc.HerHim])"), item.getUnableToBeUsedDescription(Main.game.getPlayer(), inventoryNPC), null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+UtilText.parse(inventoryNPC, " все ([npc.HerHim])"), item.getUnableToBeUsedDescription(Main.game.getPlayer(), inventoryNPC), null);
 									
 								} else if(item.isBreakOutOfInventory()) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+UtilText.parse(inventoryNPC, " all ([npc.HerHim])"), "As this item has special effects, you can only use one at a time!", null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+UtilText.parse(inventoryNPC, " все ([npc.HerHim])"), "Так как этот предмет обладает особыми эффектами, вы можете использовать только один за раз!", null);
 									
 								} else if(item.getItemType().isFetishGiving()) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+UtilText.parse(inventoryNPC, " all ([npc.HerHim])"),
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+UtilText.parse(inventoryNPC, " все ([npc.HerHim])"),
 											item.getItemType().getUseTooltipDescription(owner, inventoryNPC)
-												+"<br/>[style.italicsMinorGood(Repeat this for all of the " + item.getNamePlural() + " which are in your inventory.)]",
+												+"<br/>[style.italicsMinorGood(Повторить для всех " + item.getNamePlural() + " предметов в вашем инвентаре.)]",
 											INVENTORY_MENU,
 											Util.newArrayListOfValues(Fetish.FETISH_KINK_GIVING),
 											Fetish.FETISH_KINK_GIVING.getAssociatedCorruptionLevel(),
@@ -1639,9 +1639,9 @@ public class InventoryDialogue {
 										}
 									};
 								} else if(item.getItemType().isTransformative()) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+UtilText.parse(inventoryNPC, " all ([npc.HerHim])"),
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+UtilText.parse(inventoryNPC, " все ([npc.HerHim])"),
 											item.getItemType().getUseTooltipDescription(owner, inventoryNPC)
-												+"<br/>[style.italicsMinorGood(Repeat this for all of the " + item.getNamePlural() + " which are in your inventory.)]",
+												+"<br/>[style.italicsMinorGood(Повторить для всех " + item.getNamePlural() + " предметов в вашем инвентаре.)]",
 											INVENTORY_MENU,
 											Util.newArrayListOfValues(Fetish.FETISH_TRANSFORMATION_GIVING),
 											Fetish.FETISH_TRANSFORMATION_GIVING.getAssociatedCorruptionLevel(),
@@ -1659,9 +1659,9 @@ public class InventoryDialogue {
 									};
 									
 								} else {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+UtilText.parse(inventoryNPC, " all ([npc.HerHim])"),
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+UtilText.parse(inventoryNPC, " все ([npc.HerHim])"),
 											item.getItemType().getUseTooltipDescription(owner, inventoryNPC)
-												+"<br/>[style.italicsMinorGood(Repeat this for all of the " + item.getNamePlural() + " which are in your inventory.)]",
+												+"<br/>[style.italicsMinorGood(Повторить для всех " + item.getNamePlural() + " предметов в вашем инвентаре.)]",
 											INVENTORY_MENU){
 										@Override
 										public void effects(){
@@ -1680,37 +1680,37 @@ public class InventoryDialogue {
 							
 						case SEX:
 							if(index == 1) {
-								return new Response("Give (1)", "You can't give someone items while having sex with them!", null);
+								return new Response("Отдать (1)", "Вы не можете отдавать предметы, когда занимаетесь сексом!", null);
 								
 							} else if(index == 2) {
-								return new Response("Give (5)", "You can't give someone items while having sex with them!", null);
+								return new Response("Отдать (5)", "Вы не можете отдавать предметы, когда занимаетесь сексом!", null);
 								
 							} else if(index == 3) {
-								return new Response("Give (All)", "You can't give someone items while having sex with them!", null);
+								return new Response("Отдать (Все)", "Вы не можете отдавать предметы, когда занимаетесь сексом!", null);
 								
 							} else if(index == 5) {
-								return new Response("Enchant", "You can't enchant items while having sex with someone!", null);
+								return new Response("Зачаровать", "Вы не можете зачаровывать предметы, когда занимаетесь сексом!", null);
 								
 							} else if(index == 6) {
 								if(Main.sex.isCharacterImmobilised(Main.game.getPlayer())) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Self)", "You can't use this as you are currently [style.colourTerrible(immobilised)]!", null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Себя)", "Вы не можете использовать это, так как сейчас вы [style.colourTerrible(неподвижны)]!", null);
 								}
 								if(!Main.sex.isItemUseAvailable()) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Self)", "Items cannot be used during this sex scene!", null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Себя)", "Предметы нельзя использовать во время этой секс-сцены!", null);
 									
 								} else if (!item.isAbleToBeUsedInSex()) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Self)", "You cannot use this during sex!", null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Себя)", "Это нельзя использовать во время секса!", null);
 									
 								} else if (!item.isAbleToBeUsedFromInventory()) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Self)", item.getUnableToBeUsedFromInventoryDescription(), null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Себя)", item.getUnableToBeUsedFromInventoryDescription(), null);
 									
 								} else if (!item.isAbleToBeUsed(Main.game.getPlayer(), Main.game.getPlayer())) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName()) +" (Self)", item.getUnableToBeUsedDescription(Main.game.getPlayer(), Main.game.getPlayer()), null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName()) +" (Себя)", item.getUnableToBeUsedDescription(Main.game.getPlayer(), Main.game.getPlayer()), null);
 									
 								} else {
 									if(item.isBreakOutOfInventory()) {
 										return new ResponseEffectsOnly(
-												Util.capitaliseSentence(item.getItemType().getUseName()) +" (Self)",
+												Util.capitaliseSentence(item.getItemType().getUseName()) +" (Себя)",
 												item.getItemType().getUseTooltipDescription(owner, owner)){
 											@Override
 											public void effects(){
@@ -1720,7 +1720,7 @@ public class InventoryDialogue {
 										};
 									} else {
 										return new Response(
-												Util.capitaliseSentence(item.getItemType().getUseName()) +" (Self)",
+												Util.capitaliseSentence(item.getItemType().getUseName()) +" (Себя)",
 												item.getItemType().getUseTooltipDescription(owner, owner),
 												Main.sex.SEX_DIALOGUE){
 											@Override
@@ -1736,37 +1736,37 @@ public class InventoryDialogue {
 								}
 								
 							} else if(index == 7) {
-								return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" all (Self)", "You can only use one item at a time during sex!", null);
+								return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" все (Себя)", "Во время секса можно использовать только один предмет за раз!", null);
 								
 							} else if (index == 10) {
 								return getQuickTradeResponse();
 								
 							} else if(index == 11) {
 								if(Main.sex.isCharacterImmobilised(Main.game.getPlayer())) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Partner)", "You can't use this as you are currently [style.colourTerrible(immobilised)]!", null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Партнер)", "Вы не можете использовать это, так как сейчас вы [style.colourTerrible(неподвижны)]!", null);
 								}
 								if(Main.sex.getInitialSexManager().isHidden(Main.game.getPlayer())) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Partner)", UtilText.parse(inventoryNPC, "As you're hiding, you can't use items on [npc.name]!"), null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Партнер)", UtilText.parse(inventoryNPC, "Пока вы прячетесь, вы не можете использовать предметы на [npc.name]!"), null);
 									
 								} else if(!Main.sex.isItemUseAvailable()) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Partner)", "Items cannot be used during this sex scene!", null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Партнер)", "Предметы нельзя использовать во время этой секс-сцены!", null);
 									
 								} else if (!item.isAbleToBeUsedInSex()) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Partner)", "You cannot use this during sex!", null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Партнер)", "Это нельзя использовать во время секса!", null);
 									
 								} else if (!item.isAbleToBeUsedFromInventory()) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Partner)", item.getUnableToBeUsedFromInventoryDescription(), null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Партнер)", item.getUnableToBeUsedFromInventoryDescription(), null);
 									
 								} else if (!item.isAbleToBeUsed(Main.game.getPlayer(), inventoryNPC)) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName()) +" (Partner)", item.getUnableToBeUsedDescription(Main.game.getPlayer(), inventoryNPC), null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName()) +" (Партнер)", item.getUnableToBeUsedDescription(Main.game.getPlayer(), inventoryNPC), null);
 									
 								} else if(inventoryNPC.isAsleep()) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Partner)", UtilText.parse(inventoryNPC, "You cannot use this while [npc.nameIsFull] asleep!"), null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Партнер)", UtilText.parse(inventoryNPC, "Вы не можете использовать это, пока [npc.nameIsFull] спит!"), null);
 									
 								} else if(item.getItemType().isFetishGiving()) {
 									if(item.isBreakOutOfInventory()) {
 										return new ResponseEffectsOnly(
-												Util.capitaliseSentence(item.getItemType().getUseName()) +" (Partner)",
+												Util.capitaliseSentence(item.getItemType().getUseName()) +" (Партнер)",
 												item.getItemType().getUseTooltipDescription(owner, inventoryNPC),
 												Util.newArrayListOfValues(Fetish.FETISH_KINK_GIVING),
 												Fetish.FETISH_KINK_GIVING.getAssociatedCorruptionLevel(),
@@ -1781,7 +1781,7 @@ public class InventoryDialogue {
 										};
 									} else {
 										return new Response(
-												Util.capitaliseSentence(item.getItemType().getUseName()) +" (Partner)",
+												Util.capitaliseSentence(item.getItemType().getUseName()) +" (Партнер)",
 												item.getItemType().getUseTooltipDescription(owner, inventoryNPC),
 												Main.sex.SEX_DIALOGUE,
 												Util.newArrayListOfValues(Fetish.FETISH_KINK_GIVING),
@@ -1803,7 +1803,7 @@ public class InventoryDialogue {
 								} else if(item.getItemType().isTransformative()) {
 									if(item.isBreakOutOfInventory()) {
 										return new ResponseEffectsOnly(
-												Util.capitaliseSentence(item.getItemType().getUseName()) +" (Partner)",
+												Util.capitaliseSentence(item.getItemType().getUseName()) +" (Партнер)",
 												item.getItemType().getUseTooltipDescription(owner, inventoryNPC),
 												Util.newArrayListOfValues(Fetish.FETISH_TRANSFORMATION_GIVING),
 												Fetish.FETISH_TRANSFORMATION_GIVING.getAssociatedCorruptionLevel(),
@@ -1818,7 +1818,7 @@ public class InventoryDialogue {
 										};
 									} else {
 										return new Response(
-												Util.capitaliseSentence(item.getItemType().getUseName()) +" (Partner)",
+												Util.capitaliseSentence(item.getItemType().getUseName()) +" (Партнер)",
 												item.getItemType().getUseTooltipDescription(owner, inventoryNPC),
 												Main.sex.SEX_DIALOGUE,
 												Util.newArrayListOfValues(Fetish.FETISH_TRANSFORMATION_GIVING),
@@ -1840,7 +1840,7 @@ public class InventoryDialogue {
 								} else {
 									if(item.isBreakOutOfInventory()) {
 										return new ResponseEffectsOnly(
-												Util.capitaliseSentence(item.getItemType().getUseName()) +" (Partner)",
+												Util.capitaliseSentence(item.getItemType().getUseName()) +" (Партнер)",
 												item.getItemType().getUseTooltipDescription(owner, inventoryNPC)){
 											@Override
 											public void effects(){
@@ -1850,7 +1850,7 @@ public class InventoryDialogue {
 										};
 									} else {
 										return new Response(
-												Util.capitaliseSentence(item.getItemType().getUseName()) +" (Partner)",
+												Util.capitaliseSentence(item.getItemType().getUseName()) +" (Партнер)",
 												item.getItemType().getUseTooltipDescription(owner, inventoryNPC),
 												Main.sex.SEX_DIALOGUE){
 											@Override
@@ -1866,7 +1866,7 @@ public class InventoryDialogue {
 								}
 								
 							} else if(index == 12) {
-								return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" all (Partner)", "You can only use one item at a time during sex!", null);
+								return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" все (Партнер)", "Во время секса можно использовать только один предмет за раз!", null);
 								
 							} else {
 								return null;
@@ -1875,65 +1875,65 @@ public class InventoryDialogue {
 						case TRADING:
 							if(index == 1) {
 								if(!item.getItemType().isAbleToBeSold()) {
-									return new Response("Sell (1)", "You cannot sell the " + item.getName() + "!", null);
+									return new Response("Продать (1)", "Вы не можете продать  " + item.getName() + "!", null);
 									
 								} else if (inventoryNPC.willBuy(item)) {
 									int sellPrice = item.getPrice(inventoryNPC.getBuyModifier());
-									return new Response("Sell (1) (" + UtilText.formatAsMoney(sellPrice, "span") + ")", "Sell the " + item.getName() + " for " + UtilText.formatAsMoney(sellPrice) + ".", INVENTORY_MENU){
+									return new Response("Продать (1) (" + UtilText.formatAsMoney(sellPrice, "охват") + ")", "Продать  " + item.getName() + " на " + UtilText.formatAsMoney(sellPrice) + ".", INVENTORY_MENU){
 										@Override
 										public void effects(){
 											sellItems(Main.game.getPlayer(), inventoryNPC, item, 1, sellPrice);
 										}
 									};
 								} else {
-									return new Response("Sell (1)", inventoryNPC.getName("The") + " doesn't want to buy this.", null);
+									return new Response("Продать (1)", inventoryNPC.getName("") + " не хочет покупать это.", null);
 								}
 								
 							} else if(index == 2) {
 								if(Main.game.getPlayer().getItemCount(item) >= 5) {
 									if(!item.getItemType().isAbleToBeSold()) {
-										return new Response("Sell (5)", "You cannot sell the " + item.getName() + "!", null);
+										return new Response("Продать (5)", "Вы не можете продать  " + item.getName() + "!", null);
 										
 									} else if (inventoryNPC.willBuy(item)) {
 										int sellPrice = item.getPrice(inventoryNPC.getBuyModifier());
-										return new Response("Sell (5) (" + UtilText.formatAsMoney(sellPrice*5, "span") + ")", "Sell five of your " + item.getNamePlural() + " for " + UtilText.formatAsMoney(sellPrice*5) + ".", INVENTORY_MENU){
+										return new Response("Продать (5) (" + UtilText.formatAsMoney(sellPrice*5, "охват") + ")", "Продать пять ваших  " + item.getNamePlural() + " на " + UtilText.formatAsMoney(sellPrice*5) + ".", INVENTORY_MENU){
 											@Override
 											public void effects(){
 												sellItems(Main.game.getPlayer(), inventoryNPC, item, 5, sellPrice);
 											}
 										};
 									} else {
-										return new Response("Sell (5)", inventoryNPC.getName("The") + " doesn't want to buy these.", null);
+										return new Response("Продать (5)", inventoryNPC.getName("") + " не хочет это покупать.", null);
 									}
 									
 								} else {
-									return new Response("Sell (5)", "You don't have five " + item.getNamePlural() + " to sell!", null);
+									return new Response("Продать (5)", "У вас нет пяти " + item.getNamePlural() + " продать!", null);
 								}
 								
 							} else if(index == 3) {
 								if(!item.getItemType().isAbleToBeSold()) {
-									return new Response("Sell (All)", "You cannot sell the " + item.getName() + "!", null);
+									return new Response("Продать (Все)", "Вы не можете продать  " + item.getName() + "!", null);
 									
 								} else if (inventoryNPC.willBuy(item)) {
 									int sellPrice = item.getPrice(inventoryNPC.getBuyModifier());
-									return new Response("Sell (All) (" + UtilText.formatAsMoney(sellPrice*Main.game.getPlayer().getItemCount(item), "span") + ")",
-											"Sell the " + item.getName() + " for " + UtilText.formatAsMoney(sellPrice*Main.game.getPlayer().getItemCount(item)) + ".", INVENTORY_MENU){
+									return new Response("Продать (Все) (" + UtilText.formatAsMoney(sellPrice*Main.game.getPlayer().getItemCount(item), "охват") + ")",
+											"Продать  " + item.getName() + " на " + UtilText.formatAsMoney(sellPrice*Main.game.getPlayer().getItemCount(item)) + ".", INVENTORY_MENU){
 										@Override
 										public void effects(){
 											sellItems(Main.game.getPlayer(), inventoryNPC, item, Main.game.getPlayer().getItemCount(item), sellPrice);
 										}
 									};
 								} else {
-									return new Response("Sell (All)", inventoryNPC.getName("The") + " doesn't want to buy these.", null);
+									return new Response("Продать (Все)", inventoryNPC.getName("") + " не хочет это покупать.", null);
 								}
 								
 							} else if(index == 5) {
 								if(item.getEnchantmentItemType(null)==null || item.getItemTags().contains(ItemTag.UNENCHANTABLE)) {
-									return new Response("Enchant", "This item cannot be enchanted!", null);
+									return new Response("Зачаровать", "Этот предмет нельзя зачаровать!", null);
 									
 								} else if(Main.game.isDebugMode()
 										|| (Main.game.getPlayer().hasQuest(QuestLine.SIDE_ENCHANTMENT_DISCOVERY) && Main.game.getPlayer().isQuestCompleted(QuestLine.SIDE_ENCHANTMENT_DISCOVERY))) {
-									return new Response("Enchant", "Enchant this item.", EnchantmentDialogue.ENCHANTMENT_MENU) {
+									return new Response("Зачаровать", "Зачаровать этот предмет.", EnchantmentDialogue.ENCHANTMENT_MENU) {
 										@Override
 										public DialogueNode getNextDialogue() {
 											return EnchantmentDialogue.getEnchantmentMenu(item);
@@ -1941,23 +1941,23 @@ public class InventoryDialogue {
 									};
 									
 								} else {
-									return new Response("Enchant", getEnchantmentNotDiscoveredText("items"), null);
+									return new Response("Зачаровать", getEnchantmentNotDiscoveredText("предметов"), null);
 								}
 								
 							} else if(index == 6) {
 								if (!item.isAbleToBeUsedFromInventory()) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Self)", item.getUnableToBeUsedFromInventoryDescription(), null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Себя)", item.getUnableToBeUsedFromInventoryDescription(), null);
 									
 								} else if(!item.isAbleToBeUsedWhileTrading()) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Self)", item.getUnableToBeUsedWhileTradingDescription(), null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Себя)", item.getUnableToBeUsedWhileTradingDescription(), null);
 									
 								} else if (!item.isAbleToBeUsed(Main.game.getPlayer(), Main.game.getPlayer())) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName()) +" (Self)", item.getUnableToBeUsedDescription(Main.game.getPlayer(), Main.game.getPlayer()), null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName()) +" (Себя)", item.getUnableToBeUsedDescription(Main.game.getPlayer(), Main.game.getPlayer()), null);
 									
 								} else {
 									if(item.isBreakOutOfInventory()) {
 										return new ResponseEffectsOnly(
-												Util.capitaliseSentence(item.getItemType().getUseName()) +" (Self)",
+												Util.capitaliseSentence(item.getItemType().getUseName()) +" (Себя)",
 												item.getItemType().getUseTooltipDescription(owner, owner)){
 											@Override
 											public void effects(){
@@ -1966,7 +1966,7 @@ public class InventoryDialogue {
 											}
 										};
 									}
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName()) +" (Self)",
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName()) +" (Себя)",
 											item.getItemType().getUseTooltipDescription(owner, owner),
 											INVENTORY_MENU){
 										@Override
@@ -1979,22 +1979,22 @@ public class InventoryDialogue {
 								
 							} else if(index == 7) {
 								if (!item.isAbleToBeUsedFromInventory()) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" all (Self)", item.getUnableToBeUsedFromInventoryDescription(), null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" все (Себя)", item.getUnableToBeUsedFromInventoryDescription(), null);
 									
 								} else if(!item.isAbleToBeUsedWhileTrading()) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" all (Self)", item.getUnableToBeUsedWhileTradingDescription(), null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" все (Себя)", item.getUnableToBeUsedWhileTradingDescription(), null);
 									
 								} else if(!item.isAbleToBeUsed(Main.game.getPlayer(), Main.game.getPlayer())) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" all (Self)", item.getUnableToBeUsedDescription(Main.game.getPlayer(), Main.game.getPlayer()), null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" все (Себя)", item.getUnableToBeUsedDescription(Main.game.getPlayer(), Main.game.getPlayer()), null);
 									
 								} else {
 									if(item.isBreakOutOfInventory()) {
-										return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" all (Self)", "As this item has special effects, you can only use one at a time!", null);
+										return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" все (Себя)", "Так как этот предмет обладает особыми эффектами, вы можете использовать только один за раз!", null);
 									}
 									return new Response(
-											Util.capitaliseSentence(item.getItemType().getUseName())+" all (Self)",
+											Util.capitaliseSentence(item.getItemType().getUseName())+" все (Себя)",
 											item.getItemType().getUseTooltipDescription(owner, owner)
-												+"<br/>[style.italicsMinorGood(Repeat this for all of the " + item.getNamePlural() + " which are in your inventory.)]",
+												+"<br/>[style.italicsMinorGood(Повторить для всех " + item.getNamePlural() + " предметов в вашем инвентаре.)]",
 											INVENTORY_MENU){
 										@Override
 										public void effects(){
@@ -2014,10 +2014,10 @@ public class InventoryDialogue {
 								return getQuickTradeResponse();
 								
 							} else if(index == 11) {
-								return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+UtilText.parse(inventoryNPC, " ([npc.HerHim])"), UtilText.parse(inventoryNPC, "[npc.Name] doesn't want to use your items."), null);
+								return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+UtilText.parse(inventoryNPC, " ([npc.HerHim])"), UtilText.parse(inventoryNPC, "[npc.Name] не хочет использовать твои предметы."), null);
 								
 							} else if(index == 12) {
-								return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+UtilText.parse(inventoryNPC, " all ([npc.HerHim])"), UtilText.parse(inventoryNPC, "[npc.Name] doesn't want to use your items."), null);
+								return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+UtilText.parse(inventoryNPC, " все ([npc.HerHim])"), UtilText.parse(inventoryNPC, "[npc.Name] не хочет использовать твои предметы."), null);
 								
 							} else {
 								return null;
@@ -2035,37 +2035,37 @@ public class InventoryDialogue {
 					switch(interactionType) {
 						case SEX:
 							if(index == 1) {
-								return new Response("Take (1)", "You can't pick up items while masturbating.", null);
+								return new Response("Взять (1)", "Ты не можешь подбирать предметы во время мастурбации.", null);
 								
 							} else if(index == 2) {
-								return new Response("Take (5)", "You can't pick up items while masturbating.", null);
+								return new Response("Взять (5)", "Ты не можешь подбирать предметы во время мастурбации.", null);
 								
 							} else if(index == 3) {
-								return new Response("Take (All)", "You can't pick up items while masturbating.", null);
+								return new Response("Взять (Все)", "Ты не можешь подбирать предметы во время мастурбации.", null);
 								
 							} else if(index == 5) {
-								return new Response("Enchant", "You can't enchant items while masturbating.", null);
+								return new Response("Зачаровать", "Вы не можете зачаровывать предметы во время мастурбации.", null);
 								
 							} else if(index == 6) {
 								if(Main.sex.isCharacterImmobilised(Main.game.getPlayer())) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Self)", "You can't use this as you are currently [style.colourTerrible(immobilised)]!", null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Себя)", "Вы не можете использовать это, так как сейчас вы [style.colourTerrible(неподвижны)]!", null);
 								}
 								if(!Main.sex.isItemUseAvailable()) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Self)", "Items cannot be used during this sex scene!", null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Себя)", "Предметы нельзя использовать во время этой секс-сцены!", null);
 									
 								} else if (!item.isAbleToBeUsedInSex()) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Self)", "You cannot use this during sex!", null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Себя)", "Это нельзя использовать во время секса!", null);
 									
 								} else if (!item.isAbleToBeUsedFromInventory()) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Self)", item.getUnableToBeUsedFromInventoryDescription(), null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Себя)", item.getUnableToBeUsedFromInventoryDescription(), null);
 									
 								} else if (!item.isAbleToBeUsed(Main.game.getPlayer(), Main.game.getPlayer())) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName()) +" (Self)", item.getUnableToBeUsedDescription(Main.game.getPlayer(), Main.game.getPlayer()), null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName()) +" (Себя)", item.getUnableToBeUsedDescription(Main.game.getPlayer(), Main.game.getPlayer()), null);
 									
 								} else {
 									if(item.isBreakOutOfInventory()) {
 										return new ResponseEffectsOnly(
-												Util.capitaliseSentence(item.getItemType().getUseName()) +" (Self)",
+												Util.capitaliseSentence(item.getItemType().getUseName()) +" (Себя)",
 												item.getItemType().getUseTooltipDescription(Main.game.getPlayer(), Main.game.getPlayer())){
 											@Override
 											public void effects(){
@@ -2075,7 +2075,7 @@ public class InventoryDialogue {
 										};
 									} else {
 										return new Response(
-												Util.capitaliseSentence(item.getItemType().getUseName()) +" (Self)",
+												Util.capitaliseSentence(item.getItemType().getUseName()) +" (Себя)",
 												item.getItemType().getUseTooltipDescription(Main.game.getPlayer(), Main.game.getPlayer()),
 												Main.sex.SEX_DIALOGUE){
 											@Override
@@ -2091,7 +2091,7 @@ public class InventoryDialogue {
 								}
 								
 							} else if(index == 7) {
-								return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" all (Self)", "You can only use one item at a time during sex!", null);
+								return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" все (Себя)", "Во время секса можно использовать только один предмет за раз!", null);
 								
 							} else if (index == 10) {
 								return getQuickTradeResponse();
@@ -2103,9 +2103,9 @@ public class InventoryDialogue {
 						default:
 							if(index == 1) {
 								if(inventoryFull) {
-									return new Response("Take (1)", "Your inventory is already full!", null);
+									return new Response("Взять (1)", "Ваш инвентарь уже полон!", null);
 								}
-								return new Response("Take (1)", "Take one " + item.getName() + " from the ground.", INVENTORY_MENU){
+								return new Response("Взять (1)", "Взять один " + item.getName() + " с земли.", INVENTORY_MENU){
 									@Override
 									public void effects(){
 										pickUpItems(Main.game.getPlayer(), item, 1);
@@ -2114,24 +2114,24 @@ public class InventoryDialogue {
 								
 							} else if(index == 2) {
 								if(inventoryFull) {
-									return new Response("Take (5)", "Your inventory is already full!", null);
+									return new Response("Взять (5)", "Ваш инвентарь уже полон!", null);
 								}
 								if(Main.game.getPlayerCell().getInventory().getItemCount(item) >= 5) {
-									return new Response("Take (5)", "Take five of the " + item.getNamePlural() + " from the ground.", INVENTORY_MENU){
+									return new Response("Взять (5)", "Взять пять " + item.getNamePlural() + " с земли.", INVENTORY_MENU){
 										@Override
 										public void effects(){
 											pickUpItems(Main.game.getPlayer(), item, 5);
 										}
 									};
 								} else {
-									return new Response("Take (5)", "There aren't five " + item.getNamePlural() + " on the ground!", null);
+									return new Response("Взять (5)", "Их не пять, " + item.getNamePlural() + " на земле!", null);
 								}
 								
 							} else if(index == 3) {
 								if(inventoryFull) {
-									return new Response("Take (All)", "Your inventory is already full!", null);
+									return new Response("Взять (Все)", "Ваш инвентарь уже полон!", null);
 								}
-								return new Response("Take (All)", "Take all of the " + item.getNamePlural() + " from the ground.", INVENTORY_MENU){
+								return new Response("Взять (Все)", "Забрать всё, " + item.getNamePlural() + " с земли.", INVENTORY_MENU){
 									@Override
 									public void effects(){
 										pickUpItems(Main.game.getPlayer(), item, Main.game.getPlayerCell().getInventory().getItemCount(item));
@@ -2139,19 +2139,19 @@ public class InventoryDialogue {
 								};
 								
 							} else if(index == 5) {
-								return new Response("Enchant", "You can't enchant items on the ground!", null);
+								return new Response("Зачаровать", "Нельзя зачаровывать предметы на земле!", null);
 								
 							} else if(index == 6) {
 								if (!item.isAbleToBeUsedFromInventory()) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Self)", item.getUnableToBeUsedFromInventoryDescription(), null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Себя)", item.getUnableToBeUsedFromInventoryDescription(), null);
 									
 								} else if (!item.isAbleToBeUsed(Main.game.getPlayer(), Main.game.getPlayer())) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName()) +" (Self)", item.getUnableToBeUsedDescription(Main.game.getPlayer(), Main.game.getPlayer()), null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName()) +" (Себя)", item.getUnableToBeUsedDescription(Main.game.getPlayer(), Main.game.getPlayer()), null);
 									
 								} else {
 									if(item.isBreakOutOfInventory()) {
 										return new ResponseEffectsOnly(
-												Util.capitaliseSentence(item.getItemType().getUseName()) +" (Self)",
+												Util.capitaliseSentence(item.getItemType().getUseName()) +" (Себя)",
 												item.getItemType().getUseTooltipDescription(Main.game.getPlayer(), Main.game.getPlayer())){
 											@Override
 											public void effects(){
@@ -2161,7 +2161,7 @@ public class InventoryDialogue {
 										};
 									}
 									return new Response(
-											Util.capitaliseSentence(item.getItemType().getUseName()) +" (Self)",
+											Util.capitaliseSentence(item.getItemType().getUseName()) +" (Себя)",
 											item.getItemType().getUseTooltipDescription(Main.game.getPlayer(), Main.game.getPlayer()),
 											INVENTORY_MENU){
 										@Override
@@ -2174,19 +2174,19 @@ public class InventoryDialogue {
 								
 							} else if(index == 7) {
 								if (!item.isAbleToBeUsedFromInventory()) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" all (Self)", item.getUnableToBeUsedFromInventoryDescription(), null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" все (Себя)", item.getUnableToBeUsedFromInventoryDescription(), null);
 									
 								} else if(!item.isAbleToBeUsed(Main.game.getPlayer(), Main.game.getPlayer())) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" all (Self)", item.getUnableToBeUsedDescription(Main.game.getPlayer(), Main.game.getPlayer()), null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" все (Себя)", item.getUnableToBeUsedDescription(Main.game.getPlayer(), Main.game.getPlayer()), null);
 									
 								} else {
 									if(item.isBreakOutOfInventory()) {
-										return new Response(Util.capitaliseSentence(item.getItemType().getUseName()) +" all (Self)", "As this item has special effects, you can only use one at a time!", null);
+										return new Response(Util.capitaliseSentence(item.getItemType().getUseName()) +" все (Себя)", "Так как этот предмет обладает особыми эффектами, вы можете использовать только один за раз!", null);
 									}
 									return new Response(
-											Util.capitaliseSentence(item.getItemType().getUseName())+" all (Self)",
+											Util.capitaliseSentence(item.getItemType().getUseName())+" все (Себя)",
 											item.getItemType().getUseTooltipDescription(Main.game.getPlayer(), Main.game.getPlayer())
-											+"<br/>[style.italicsMinorGood(Repeat this for all of the " + item.getNamePlural() + " which are in this area.)]",
+											+"<br/>[style.italicsMinorGood(Повторить для всех " + item.getNamePlural() + " которые находятся в этой области.)]",
 											INVENTORY_MENU){
 										@Override
 										public void effects(){
@@ -2213,31 +2213,31 @@ public class InventoryDialogue {
 					switch(interactionType) {
 						case COMBAT:
 							if(index == 1) {
-								return new Response("Take (1)", "You can't take someone items while fighting them!", null);
+								return new Response("Взять (1)", "Нельзя забирать чужие вещи во время боя!", null);
 								
 							} else if(index == 2) {
-								return new Response("Take (5)", "You can't take someone items while fighting them!", null);
+								return new Response("Взять (5)", "Нельзя забирать чужие вещи во время боя!", null);
 								
 							} else if(index == 3) {
-								return new Response("Take (All)", "You can't take someone items while fighting them!", null);
+								return new Response("Взять (Все)", "Нельзя забирать чужие вещи во время боя!", null);
 								
 							} else if(index == 5) {
-								return new Response("Enchant", "You can't enchant someone else's items, especially not while fighting them!", null);
+								return new Response("Зачаровать", "Нельзя зачаровывать чужие предметы, особенно во время боя!", null);
 								
 							} else if(index == 6) {
-								return new Response(Util.capitaliseSentence(item.getItemType().getUseName()) +" (Self)", "You can't use someone else's items while fighting them!", null);
+								return new Response(Util.capitaliseSentence(item.getItemType().getUseName()) +" (Себя)", "Нельзя использовать чужие предметы во время боя!", null);
 								
 							} else if(index == 7) {
-								return new Response(Util.capitaliseSentence(item.getItemType().getUseName()) +" all (Self)", "You can't use someone else's items while fighting them!", null);
+								return new Response(Util.capitaliseSentence(item.getItemType().getUseName()) +" все (Себя)", "Нельзя использовать чужие предметы во время боя!", null);
 								
 							} else if (index == 10) {
 								return getQuickTradeResponse();
 								
 							} else if(index == 11) {
-								return new Response(Util.capitaliseSentence(item.getItemType().getUseName()) +" (Opponent)", "You can't make someone use an item while fighting them!", null);
+								return new Response(Util.capitaliseSentence(item.getItemType().getUseName()) +" (Противник)", "Нельзя заставить кого-то использовать предмет прямо во время боя!", null);
 								
 							} else if(index == 12) {
-								return new Response(Util.capitaliseSentence(item.getItemType().getUseName()) +" all (Opponent)", "You can't make someone use an item while fighting them!", null);
+								return new Response(Util.capitaliseSentence(item.getItemType().getUseName()) +" все (Оппонент)", "Нельзя заставить кого-то использовать предмет прямо во время боя!", null);
 								
 							} else {
 								return null;
@@ -2248,9 +2248,9 @@ public class InventoryDialogue {
 						
 							if(index == 1) {
 								if(inventoryFull) {
-									return new Response("Take (1)", "Your inventory is already full!", null);
+									return new Response("Взять (1)", "Ваш инвентарь уже полон!", null);
 								}
-								return new Response("Take (1)", UtilText.parse(inventoryNPC, "Take " + item.getName() + " from [npc.name]."), INVENTORY_MENU){
+								return new Response("Взять (1)", UtilText.parse(inventoryNPC, "Взять " + item.getName() + " из [npc.name]."), INVENTORY_MENU){
 									@Override
 									public void effects(){
 										transferItems(inventoryNPC, Main.game.getPlayer(), item, 1);
@@ -2259,24 +2259,24 @@ public class InventoryDialogue {
 								
 							} else if(index == 2) {
 								if(inventoryFull) {
-									return new Response("Take (5)", "Your inventory is already full!", null);
+									return new Response("Взять (5)", "Ваш инвентарь уже полон!", null);
 								}
 								if(inventoryNPC.getItemCount(item) >= 5) {
-									return new Response("Take (5)", UtilText.parse(inventoryNPC, "Take five of  [npc.namePos] " + item.getNamePlural() + "."), INVENTORY_MENU){
+									return new Response("Взять (5)", UtilText.parse(inventoryNPC, "Взять пять штук [npc.namePos] " + item.getNamePlural() + "."), INVENTORY_MENU){
 										@Override
 										public void effects(){
 											transferItems(inventoryNPC, Main.game.getPlayer(), item, 5);
 										}
 									};
 								} else {
-									return new Response("Take (5)", UtilText.parse(inventoryNPC, "[npc.Name] doesn't have five " + item.getNamePlural() + "!"), null);
+									return new Response("Взять (5)", UtilText.parse(inventoryNPC, "У [npc.Name] нет пяти штук " + item.getNamePlural() + "!"), null);
 								}
 								
 							} else if(index == 3) {
 								if(inventoryFull) {
-									return new Response("Take (All)", "Your inventory is already full!", null);
+									return new Response("Взять (Все)", "Ваш инвентарь уже полон!", null);
 								}
-								return new Response("Take (All)", UtilText.parse(inventoryNPC, "Take all "+Util.intToString(inventoryNPC.getItemCount(item))+" of  [npc.namePos] " + item.getNamePlural() + "."), INVENTORY_MENU){
+								return new Response("Взять (Все)", UtilText.parse(inventoryNPC, "Забрать всё "+Util.intToString(inventoryNPC.getItemCount(item))+" of  [npc.namePos] " + item.getNamePlural() + "."), INVENTORY_MENU){
 									@Override
 									public void effects(){
 										transferItems(inventoryNPC, Main.game.getPlayer(), item, inventoryNPC.getItemCount(item));
@@ -2284,18 +2284,18 @@ public class InventoryDialogue {
 								};
 								
 							} else if(index == 5) {
-								return new Response("Enchant", "You can't enchant items owned by someone else!", null);
+								return new Response("Зачаровать", "Нельзя зачаровывать предметы, принадлежащие кому-то другому!", null);
 								
 							} else if(index == 6) {
 								if (!item.isAbleToBeUsedFromInventory()) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Self)", item.getUnableToBeUsedFromInventoryDescription(), null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Себя)", item.getUnableToBeUsedFromInventoryDescription(), null);
 									
 								} else if (!item.isAbleToBeUsed(Main.game.getPlayer(), Main.game.getPlayer())) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName()) +" (Self)", item.getUnableToBeUsedDescription(Main.game.getPlayer(), Main.game.getPlayer()), null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName()) +" (Себя)", item.getUnableToBeUsedDescription(Main.game.getPlayer(), Main.game.getPlayer()), null);
 									
 								} else {
 									return new Response(
-											Util.capitaliseSentence(item.getItemType().getUseName()) +" (Self)",
+											Util.capitaliseSentence(item.getItemType().getUseName()) +" (Себя)",
 											item.getItemType().getUseTooltipDescription(Main.game.getPlayer(), Main.game.getPlayer()),
 											INVENTORY_MENU){
 										@Override
@@ -2311,16 +2311,16 @@ public class InventoryDialogue {
 								
 							} else if(index == 7) {
 								if (!item.isAbleToBeUsedFromInventory()) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" all (Self)", item.getUnableToBeUsedFromInventoryDescription(), null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" все (Себя)", item.getUnableToBeUsedFromInventoryDescription(), null);
 									
 								} else if(!item.isAbleToBeUsed(Main.game.getPlayer(), Main.game.getPlayer())) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" all (Self)", item.getUnableToBeUsedDescription(Main.game.getPlayer(), Main.game.getPlayer()), null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" все (Себя)", item.getUnableToBeUsedDescription(Main.game.getPlayer(), Main.game.getPlayer()), null);
 									
 								} else {
 									return new Response(
-											Util.capitaliseSentence(item.getItemType().getUseName())+" all (Self)",
+											Util.capitaliseSentence(item.getItemType().getUseName())+" все (Себя)",
 											item.getItemType().getUseTooltipDescription(Main.game.getPlayer(), Main.game.getPlayer())
-												+"<br/>[style.italicsMinorGood(Repeat this for all of the " + item.getNamePlural() + " which are in [npc.namePos] inventory.)]",
+												+"<br/>[style.italicsMinorGood(Повторить для всех " + item.getNamePlural() + " которые находятся в инвентаре [npc.namePos].)]",
 											INVENTORY_MENU){
 										@Override
 										public void effects(){
@@ -2405,19 +2405,19 @@ public class InventoryDialogue {
 								
 							} else if(index == 12) {
 								if (!item.isAbleToBeUsedFromInventory()) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+UtilText.parse(inventoryNPC, " all ([npc.HerHim])"), item.getUnableToBeUsedFromInventoryDescription(), null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+UtilText.parse(inventoryNPC, " все ([npc.HerHim])"), item.getUnableToBeUsedFromInventoryDescription(), null);
 									
 								} else if(!item.isAbleToBeUsed(Main.game.getPlayer(), inventoryNPC)) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+UtilText.parse(inventoryNPC, " all ([npc.HerHim])"), item.getUnableToBeUsedDescription(Main.game.getPlayer(), inventoryNPC), null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+UtilText.parse(inventoryNPC, " все ([npc.HerHim])"), item.getUnableToBeUsedDescription(Main.game.getPlayer(), inventoryNPC), null);
 									
 								} else if(item.isBreakOutOfInventory()) {
-									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+UtilText.parse(inventoryNPC, " all ([npc.HerHim])"), "As this item has special effects, you can only use one at a time!", null);
+									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+UtilText.parse(inventoryNPC, " все ([npc.HerHim])"), "Так как этот предмет обладает особыми эффектами, вы можете использовать только один за раз!", null);
 									
 								} else if(item.getItemType().isFetishGiving()) {
 									return new Response(
-											Util.capitaliseSentence(item.getItemType().getUseName())+UtilText.parse(inventoryNPC, " all ([npc.HerHim])"),
+											Util.capitaliseSentence(item.getItemType().getUseName())+UtilText.parse(inventoryNPC, " все ([npc.HerHim])"),
 											item.getItemType().getUseTooltipDescription(Main.game.getPlayer(), inventoryNPC)
-												+"<br/>[style.italicsMinorGood(Repeat this for all of the " + item.getNamePlural() + " which are in [npc.namePos] inventory.)]",
+												+"<br/>[style.italicsMinorGood(Повторить для всех " + item.getNamePlural() + " которые находятся в инвентаре [npc.namePos].)]",
 											INVENTORY_MENU,
 											Util.newArrayListOfValues(Fetish.FETISH_KINK_GIVING),
 											Fetish.FETISH_KINK_GIVING.getAssociatedCorruptionLevel(),
@@ -2436,9 +2436,9 @@ public class InventoryDialogue {
 									
 								} else if(item.getItemType().isTransformative()) {
 									return new Response(
-											Util.capitaliseSentence(item.getItemType().getUseName())+UtilText.parse(inventoryNPC, " all ([npc.HerHim])"),
+											Util.capitaliseSentence(item.getItemType().getUseName())+UtilText.parse(inventoryNPC, " все ([npc.HerHim])"),
 											item.getItemType().getUseTooltipDescription(Main.game.getPlayer(), inventoryNPC)
-												+"<br/>[style.italicsMinorGood(Repeat this for all of the " + item.getNamePlural() + " which are in [npc.namePos] inventory.)]",
+												+"<br/>[style.italicsMinorGood(Повторить для всех " + item.getNamePlural() + " которые находятся в инвентаре [npc.namePos].)]",
 											INVENTORY_MENU,
 											Util.newArrayListOfValues(Fetish.FETISH_TRANSFORMATION_GIVING),
 											Fetish.FETISH_TRANSFORMATION_GIVING.getAssociatedCorruptionLevel(),
@@ -2457,9 +2457,9 @@ public class InventoryDialogue {
 									
 								} else {
 									return new Response(
-											Util.capitaliseSentence(item.getItemType().getUseName())+UtilText.parse(inventoryNPC, " all ([npc.HerHim])"),
+											Util.capitaliseSentence(item.getItemType().getUseName())+UtilText.parse(inventoryNPC, " все ([npc.HerHim])"),
 											item.getItemType().getUseTooltipDescription(Main.game.getPlayer(), inventoryNPC)
-												+"<br/>[style.italicsMinorGood(Repeat this for all of the " + item.getNamePlural() + " which are in [npc.namePos] inventory.)]",
+												+"<br/>[style.italicsMinorGood(Повторить для всех " + item.getNamePlural() + " которые находятся в инвентаре [npc.namePos].)]",
 											INVENTORY_MENU){
 										@Override
 										public void effects(){
@@ -2478,19 +2478,19 @@ public class InventoryDialogue {
 							
 						case SEX:
 							if(index == 1) {
-								return new Response("Take (1)", "You can't take someone's items while having sex with them!", null);
+								return new Response("Взять (1)", "Нельзя забирать чужие вещи прямо во время секса!", null);
 								
 							} else if(index == 2) {
-								return new Response("Take (5)", "You can't take someone's items while having sex with them!", null);
+								return new Response("Взять (5)", "Нельзя забирать чужие вещи прямо во время секса!", null);
 								
 							} else if(index == 3) {
-								return new Response("Take (All)", "You can't take someone's items while having sex with them!", null);
+								return new Response("Взять (Все)", "Нельзя забирать чужие вещи прямо во время секса!", null);
 								
 							} else if(index == 5) {
-								return new Response("Enchant", "You can't enchant someone else's items, especially not while having sex with them!", null);
+								return new Response("Зачаровать", "Нельзя зачаровывать чужие вещи, особенно во время секса!", null);
 								
 							} else if(index == 6) {
-								return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Self)", "You can't use your partner's items during sex!", null);
+								return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Себя)", "Нельзя использовать вещи партнера во время секса!", null);
 								//TODO
 //								if (!item.isAbleToBeUsedInSex()) {
 //									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Self)", "This cannot be used during sex!", null);
@@ -2516,13 +2516,13 @@ public class InventoryDialogue {
 //								}
 								
 							} else if(index == 7) {
-								return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" all (Self)", "You can only use one item at a time during sex!", null);
+								return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" все (Себя)", "Во время секса можно использовать только один предмет за раз!", null);
 								
 							} else if (index == 10) {
 								return getQuickTradeResponse();
 								
 							} else if(index == 11) {
-								return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Partner)", "You can't use your partner's items during sex!", null);
+								return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Партнер)", "Нельзя использовать вещи партнера во время секса!", null);
 								//TODO
 //								if (!item.isAbleToBeUsedInSex()) {
 //									return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" (Partner)", "This cannot be used during sex!", null);
@@ -2585,7 +2585,7 @@ public class InventoryDialogue {
 //								}
 								
 							} else if(index == 12) {
-								return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" all (Partner)", "You can only use one item at a time during sex!", null);
+								return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+" все (Партнер)", "Во время секса можно использовать только один предмет за раз!", null);
 								
 							} else {
 								return null;
@@ -2597,12 +2597,12 @@ public class InventoryDialogue {
 							if(index == 1) {
 								int sellPrice = buyback?Main.game.getPlayer().getBuybackStack().get(buyBackIndex).getPrice():item.getPrice(inventoryNPC.getSellModifier(item));
 								if(inventoryFull) {
-									return new Response("Buy (1) ("+UtilText.formatAsMoneyUncoloured(sellPrice, "span")+")", "Your inventory is already full!", null);
+									return new Response("Купить (1) ("+UtilText.formatAsMoneyUncoloured(sellPrice, "охват")+")", "Ваш инвентарь уже полон!", null);
 								}
 								if(Main.game.getPlayer().getMoney() < sellPrice) {
-									return new Response("Buy (1) ("+UtilText.formatAsMoneyUncoloured(sellPrice, "span")+")", "You can't afford to buy this!", null);
+									return new Response("Купить (1) ("+UtilText.formatAsMoneyUncoloured(sellPrice, "охват")+")", "Тебе не хватает денег на это!", null);
 								}
-								return new Response("Buy (1) (" + UtilText.formatAsMoney(sellPrice, "span") + ")", "Buy the " + item.getName() + " for " + UtilText.formatAsMoney(sellPrice) + ".", INVENTORY_MENU){
+								return new Response("Купить (1) (" + UtilText.formatAsMoney(sellPrice, "охват") + ")", "Купить  " + item.getName() + " на " + UtilText.formatAsMoney(sellPrice) + ".", INVENTORY_MENU){
 									@Override
 									public void effects(){
 										sellItems(inventoryNPC, Main.game.getPlayer(), item, 1, sellPrice);
@@ -2613,15 +2613,15 @@ public class InventoryDialogue {
 								int sellPrice = buyback?Main.game.getPlayer().getBuybackStack().get(buyBackIndex).getPrice():item.getPrice(inventoryNPC.getSellModifier(item));
 								if((buyback && Main.game.getPlayer().getBuybackStack().get(buyBackIndex).getCount()<5)
 										|| (!buyback && inventoryNPC.getItemCount(item) < 5)) {
-									return new Response("Buy (5) ("+UtilText.formatAsMoneyUncoloured(sellPrice*5, "span")+")", UtilText.parse(inventoryNPC, "[npc.Name] doesn't have five "+item.getNamePlural()+"."), null);
+									return new Response("Купить (5) ("+UtilText.formatAsMoneyUncoloured(sellPrice*5, "охват")+")", UtilText.parse(inventoryNPC, "У [npc.Name] нет пяти штук "+item.getNamePlural()+"."), null);
 								}
 								if(inventoryFull) {
-									return new Response("Buy (5) ("+UtilText.formatAsMoneyUncoloured(sellPrice*5, "span")+")", "Your inventory is already full!", null);
+									return new Response("Купить (5) ("+UtilText.formatAsMoneyUncoloured(sellPrice*5, "охват")+")", "Ваш инвентарь уже полон!", null);
 								}
 								if(Main.game.getPlayer().getMoney() < sellPrice*5) {
-									return new Response("Buy (5) ("+UtilText.formatAsMoneyUncoloured(sellPrice*5, "span")+")", "You can't afford to buy this!", null);
+									return new Response("Купить (5) ("+UtilText.formatAsMoneyUncoloured(sellPrice*5, "охват")+")", "Тебе не хватает денег на это!", null);
 								}
-								return new Response("Buy (5) (" + UtilText.formatAsMoney(sellPrice*5, "span") + ")", "Buy the " + item.getName() + " for " + UtilText.formatAsMoney(sellPrice*5) + ".", INVENTORY_MENU){
+								return new Response("Купить (5) (" + UtilText.formatAsMoney(sellPrice*5, "охват") + ")", "Купить  " + item.getName() + " на " + UtilText.formatAsMoney(sellPrice*5) + ".", INVENTORY_MENU){
 									@Override
 									public void effects(){
 										sellItems(inventoryNPC, Main.game.getPlayer(), item, 5, sellPrice);
@@ -2632,24 +2632,24 @@ public class InventoryDialogue {
 								int sellPrice = buyback?Main.game.getPlayer().getBuybackStack().get(buyBackIndex).getPrice():item.getPrice(inventoryNPC.getSellModifier(item));
 								int count = buyback?Main.game.getPlayer().getBuybackStack().get(buyBackIndex).getCount():inventoryNPC.getItemCount(item);
 								if(inventoryFull) {
-									return new Response("Buy (All) ("+UtilText.formatAsMoneyUncoloured(sellPrice*count, "span")+")", "Your inventory is already full!", null);
+									return new Response("Купить (Все) ("+UtilText.formatAsMoneyUncoloured(sellPrice*count, "охват")+")", "Ваш инвентарь уже полон!", null);
 								}
 								if(Main.game.getPlayer().getMoney() < sellPrice*count) {
 									int affordableCount = (int)(Main.game.getPlayer().getMoney() / sellPrice);
 									if(affordableCount > 0) {
-										return new Response("Buy (Max " + affordableCount + ") (" + UtilText.formatAsMoney(sellPrice * affordableCount, "span") + ")",
-												"Buy the " + item.getName() + " for " + UtilText.formatAsMoney(sellPrice * affordableCount) + ".", INVENTORY_MENU) {
+										return new Response("Купить (Макс " + affordableCount + ") (" + UtilText.formatAsMoney(sellPrice * affordableCount, "охват") + ")",
+												"Купить  " + item.getName() + " на " + UtilText.formatAsMoney(sellPrice * affordableCount) + ".", INVENTORY_MENU) {
 											@Override
 											public void effects() {
 												sellItems(inventoryNPC, Main.game.getPlayer(), item, affordableCount, sellPrice);
 											}
 										};
 									} else {
-										return new Response("Buy (All) ("+UtilText.formatAsMoneyUncoloured(sellPrice*count, "span")+")", "You can't afford to buy this!", null);
+										return new Response("Купить (Все) ("+UtilText.formatAsMoneyUncoloured(sellPrice*count, "охват")+")", "Тебе не хватает денег на это!", null);
 									}
 								}
-								return new Response("Buy (All) (" + UtilText.formatAsMoney(sellPrice*count, "span") + ")",
-										"Buy the " + item.getName() + " for " + UtilText.formatAsMoney(sellPrice*count) + ".", INVENTORY_MENU){
+								return new Response("Купить (Все) (" + UtilText.formatAsMoney(sellPrice*count, "охват") + ")",
+										"Купить  " + item.getName() + " на " + UtilText.formatAsMoney(sellPrice*count) + ".", INVENTORY_MENU){
 									@Override
 									public void effects(){
 										sellItems(inventoryNPC, Main.game.getPlayer(), item, count, sellPrice);
@@ -2657,13 +2657,13 @@ public class InventoryDialogue {
 								};
 								
 							} else if(index == 5) {
-								return new Response("Enchant", "You can't enchant someone else's item!", null);
+								return new Response("Зачаровать", "Вы не можете зачаровать чужой предмет!", null);
 								
 							} else if(index == 6) {
-								return new Response(Util.capitaliseSentence(item.getItemType().getUseName()) +" (Self)", UtilText.parse(inventoryNPC, "[npc.Name] isn't going to let you use [npc.her] items without buying them first."), null);
+								return new Response(Util.capitaliseSentence(item.getItemType().getUseName()) +" (Себя)", UtilText.parse(inventoryNPC, "[npc.Name] не позволит вам использовать предметы [npc.her], не купив их сначала."), null);
 								
 							} else if(index == 7) {
-								return new Response(Util.capitaliseSentence(item.getItemType().getUseName()) +" all (Self)", UtilText.parse(inventoryNPC, "[npc.Name] isn't going to let you use [npc.her] items without buying them first."), null);
+								return new Response(Util.capitaliseSentence(item.getItemType().getUseName()) +" все (Себя)", UtilText.parse(inventoryNPC, "[npc.Name] не позволит вам использовать предметы [npc.her], не купив их сначала."), null);
 								
 							} else if (index == 9) {
 								return getBuybackResponse();
@@ -2673,12 +2673,12 @@ public class InventoryDialogue {
 								
 							} else if(index == 11) {
 								return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+UtilText.parse(inventoryNPC, " ([npc.HerHim])"),
-										UtilText.parse(inventoryNPC, "[npc.Name] isn't going to use the items that [npc.sheIs] trying to sell!"),
+										UtilText.parse(inventoryNPC, "[npc.Name] не станет использовать предметы, которые пытается продать [npc.sheIs]!"),
 										null);
 								
 							} else if(index == 12) {
-								return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+UtilText.parse(inventoryNPC, " all ([npc.HerHim])"),
-										UtilText.parse(inventoryNPC, "[npc.Name] isn't going to use the items that [npc.sheIs] trying to sell!"),
+								return new Response(Util.capitaliseSentence(item.getItemType().getUseName())+UtilText.parse(inventoryNPC, " все ([npc.HerHim])"),
+										UtilText.parse(inventoryNPC, "[npc.Name] не станет использовать предметы, которые пытается продать [npc.sheIs]!"),
 										null);
 								
 							} else {
@@ -2696,14 +2696,14 @@ public class InventoryDialogue {
 		}
 	};
 	
-	public static final DialogueNode WEAPON_INVENTORY = new DialogueNode("Weapon", "", true) {
+	public static final DialogueNode WEAPON_INVENTORY = new DialogueNode("Оружие", "", true) {
 		
 		@Override
 		public String getLabel() {
 			if (Main.game.getDialogueFlags().values.contains(DialogueFlagValue.quickTrade) && !Main.game.isInSex() && !Main.game.isInCombat()) {
-				return "Inventory (Quick-Manage is <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>ON</b>)";
+				return "Инвентарь (Быстрое управление <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>ВКЛЮЧЕНО</b>)";
 			} else {
-				return "Inventory";
+				return "Инвентарь";
 			}
 		}
 		
@@ -2735,13 +2735,13 @@ public class InventoryDialogue {
 								? (inventoryNPC != null && interactionType == InventoryInteraction.TRADING
 										? "<p>" 
 											+(inventoryNPC.willBuy(weapon)
-												?inventoryNPC.getName("The") + " will buy it for " + UtilText.formatAsMoney(weapon.getPrice(inventoryNPC.getBuyModifier())) + "."
-												:inventoryNPC.getName("The") + " doesn't want to buy this.")
+												?inventoryNPC.getName("") + " купит за " + UtilText.formatAsMoney(weapon.getPrice(inventoryNPC.getBuyModifier())) + "."
+												:inventoryNPC.getName("") + " не хочет покупать это.")
 											+"</p>"
 										: "")
 								:(inventoryNPC != null && interactionType == InventoryInteraction.TRADING
 									? "<p>"
-											+ inventoryNPC.getName("The") + " will sell it for " + UtilText.formatAsMoney(weapon.getPrice(inventoryNPC.getSellModifier(weapon))) + "."
+											+ inventoryNPC.getName("") + " продаст за " + UtilText.formatAsMoney(weapon.getPrice(inventoryNPC.getSellModifier(weapon))) + "."
 										+ "</p>" 
 									: "")));
 		}
@@ -2759,7 +2759,7 @@ public class InventoryDialogue {
 
 			if(Main.game.isBadEnd()) {
 				if(index==1) {
-					return new Response("Unavailable", "You can't manipulate your inventory during a bad end...", null);
+					return new Response("Недоступно", "Вы не можете управлять инвентарем во время плохого финала...", null);
 				}
 				return null;
 			}
@@ -2777,27 +2777,27 @@ public class InventoryDialogue {
 					
 					switch(interactionType) {
 						case SEX:
-							String dropTitle = owner.getLocationPlace().isItemsDisappear()?"Drop ":"Store";
+							String dropTitle = owner.getLocationPlace().isItemsDisappear()?"Выбросить ":"Спрятать";
 							if(index == 1) {
-								return new Response(dropTitle+"(1)", "You can't drop your weapons while masturbating.", null);
+								return new Response(dropTitle+"(1)", "Вы не можете выпустить оружие во время мастурбации.", null);
 								
 							} else if(index == 2) {
-								return new Response(dropTitle+"(5)", "You can't drop your weapons while masturbating.", null);
+								return new Response(dropTitle+"(5)", "Вы не можете выпустить оружие во время мастурбации.", null);
 								
 							} else if(index == 3) {
-								return new Response(dropTitle+"(All)", "You can't drop your weapons while masturbating.", null);
+								return new Response(dropTitle+"(Все)", "Вы не можете выпустить оружие во время мастурбации.", null);
 								
 							} else if(index == 4) {
-								return new Response("Dye/Reforge", "You can't dye or reforge your weapons while masturbating.", null);
+								return new Response("Краска/Перековка", "Вы не можете красить или перековывать оружие во время мастурбации.", null);
 								
 							} else if(index == 5) {
-								return new Response("Enchant", "You can't enchant weapons while masturbating.", null);
+								return new Response("Зачаровать", "Вы не можете накладывать заклинания на оружие во время мастурбации.", null);
 								
 							} else if(index == 6) {
-								return new Response("Equip Main (Self)", "You can't equip weapons while masturbating.", null);
+								return new Response("Экипировать в правую руку (Себе)", "Вы не можете экипировать оружие во время мастурбации.", null);
 								
 							} else if(index == 7) {
-								return new Response("Equip Offhand (Self)", "You can't equip weapons while masturbating.", null);
+								return new Response("Экипировать в левую руку (Себе)", "Вы не можете экипировать оружие во время мастурбации.", null);
 								
 							} else if (index == 10) {
 								return getQuickTradeResponse();
@@ -2810,13 +2810,13 @@ public class InventoryDialogue {
 							if(index == 1) {
 								if(owner.getLocationPlace().isItemsDisappear()) {
 									if(!weapon.getWeaponType().isAbleToBeDropped()) {
-										return new Response("Drop (1)", "You cannot drop the " + weapon.getName() + "!", null);
+										return new Response("Выбросить (1)", "Вы не можете выбросить " + weapon.getName() + "!", null);
 										
 									} else if(areaFull) {
-										return new Response("Drop (1)", "This area is full, so you can't drop your " + weapon.getName() + " here!", null);
+										return new Response("Выбросить (1)", "Это место заполнено, поэтому вы не можете бросить свой " + weapon.getName() + " здесь!", null);
 										
 									} else {
-										return new Response("Drop (1)", "Drop your " + weapon.getName() + ".", INVENTORY_MENU){
+										return new Response("Выбросить (1)", "Выбросить свой " + weapon.getName() + ".", INVENTORY_MENU){
 											@Override
 											public void effects(){
 												dropWeapons(owner, weapon, 1);
@@ -2825,12 +2825,12 @@ public class InventoryDialogue {
 									}
 								} else {
 									if(!weapon.getWeaponType().isAbleToBeDropped()) {
-										return new Response("Store (1)", "You cannot drop the " + weapon.getName() + "!", null);
+										return new Response("Сложить (1)", "Вы не можете выбросить " + weapon.getName() + "!", null);
 										
 									} else if(areaFull) {
-										return new Response("Store (1)", "This area is full, so you can't store your " + weapon.getName() + " here!", null);
+										return new Response("Сложить (1)", "Эта область заполнена, поэтому вы не можете сложить свои " + weapon.getName() + " здесь!", null);
 									} else {
-										return new Response("Store (1)", "Store the " + weapon.getName() + " in this area.", INVENTORY_MENU){
+										return new Response("Сложить (1)", "Сложить " + weapon.getName() + " в этой области.", INVENTORY_MENU){
 											@Override
 											public void effects(){
 												dropWeapons(owner, weapon, 1);
@@ -2842,16 +2842,16 @@ public class InventoryDialogue {
 							} else if(index == 2) {
 								if(owner.getLocationPlace().isItemsDisappear()) {
 									if(!weapon.getWeaponType().isAbleToBeDropped()) {
-										return new Response("Drop (5)", "You cannot drop the " + weapon.getName() + "!", null);
+										return new Response("Выбросить (5)", "Вы не можете выбросить " + weapon.getName() + "!", null);
 										
 									} else if(owner.getWeaponCount(weapon) < 5) {
-										return new Response("Drop (5)", "You don't have five " + weapon.getNamePlural() + " to drop!", null);
+										return new Response("Выбросить (5)", "У вас нет пяти " + weapon.getNamePlural() + " чтобы выбить!", null);
 										
 									} else if(areaFull) {
-										return new Response("Drop (5)", "This area is full, so you can't drop your " + weapon.getNamePlural() + " here!", null);
+										return new Response("Выбросить (5)", "Это место заполнено, поэтому вы не можете бросить свой " + weapon.getNamePlural() + " здесь!", null);
 										
 									} else {
-										return new Response("Drop (5)", "Drop five of your " + weapon.getNamePlural() + ".", INVENTORY_MENU){
+										return new Response("Выбросить (5)", "Выбросить пять ваших " + weapon.getNamePlural() + ".", INVENTORY_MENU){
 											@Override
 											public void effects(){
 												dropWeapons(owner, weapon, 5);
@@ -2860,16 +2860,16 @@ public class InventoryDialogue {
 									}
 								} else {
 									if(!weapon.getWeaponType().isAbleToBeDropped()) {
-										return new Response("Store (5)", "You cannot drop the " + weapon.getName() + "!", null);
+										return new Response("Сложить (5)", "Вы не можете выбросить " + weapon.getName() + "!", null);
 										
 									} else if(owner.getWeaponCount(weapon) < 5) {
-										return new Response("Store (5)", "You don't have five " + weapon.getNamePlural() + " to drop!", null);
+										return new Response("Сложить (5)", "У вас нет пяти " + weapon.getNamePlural() + " чтобы выбить!", null);
 										
 									} else if(areaFull) {
-										return new Response("Store (5)", "This area is full, so you can't store your " + weapon.getNamePlural() + " here!", null);
+										return new Response("Сложить (5)", "Эта область заполнена, поэтому вы не можете сложить свои " + weapon.getNamePlural() + " здесь!", null);
 										
 									} else {
-										return new Response("Store (5)", "Store five of your " + weapon.getNamePlural() + " in this area.", INVENTORY_MENU){
+										return new Response("Сложить (5)", "Сложить пять ваших " + weapon.getNamePlural() + " в этой области.", INVENTORY_MENU){
 											@Override
 											public void effects(){
 												dropWeapons(owner, weapon, 5);
@@ -2880,13 +2880,13 @@ public class InventoryDialogue {
 								
 							} else if(index == 3) {
 								if(!weapon.getWeaponType().isAbleToBeDropped()) {
-									return new Response("Drop (All)", "You cannot drop the " + weapon.getName() + "!", null);
+									return new Response("Выбросить (Все)", "Вы не можете выбросить " + weapon.getName() + "!", null);
 									
 								} else if(owner.getLocationPlace().isItemsDisappear()) {
 									if(areaFull) {
-										return new Response("Drop (All)", "This area is full, so you can't drop your " + weapon.getNamePlural() + " here!", null);
+										return new Response("Выбросить (Все)", "Это место заполнено, поэтому вы не можете бросить свой " + weapon.getNamePlural() + " здесь!", null);
 									} else {
-										return new Response("Drop (All)", "Drop all of your " + weapon.getNamePlural() + ".", INVENTORY_MENU){
+										return new Response("Выбросить (Все)", "Выбросить все ваши " + weapon.getNamePlural() + ".", INVENTORY_MENU){
 											@Override
 											public void effects(){
 												dropWeapons(owner, weapon, owner.getWeaponCount(weapon));
@@ -2895,12 +2895,12 @@ public class InventoryDialogue {
 									}
 								} else {
 									if(!weapon.getWeaponType().isAbleToBeDropped()) {
-										return new Response("Store (All)", "You cannot drop the " + weapon.getName() + "!", null);
+										return new Response("Склад (Все)", "Вы не можете выбросить " + weapon.getName() + "!", null);
 										
 									} else if(areaFull) {
-										return new Response("Store (All)", "This area is full, so you can't store your " + weapon.getNamePlural() + " here!", null);
+										return new Response("Склад (Все)", "Эта область заполнена, поэтому вы не можете сложить свои " + weapon.getNamePlural() + " здесь!", null);
 									} else {
-										return new Response("Store (All)", "Store all of your " + weapon.getNamePlural() + " in this area.", INVENTORY_MENU){
+										return new Response("Склад (Все)", "Сложить все ваши " + weapon.getNamePlural() + " в этой области.", INVENTORY_MENU){
 											@Override
 											public void effects(){
 												dropWeapons(owner, weapon, owner.getWeaponCount(weapon));
@@ -2915,10 +2915,10 @@ public class InventoryDialogue {
 									boolean isDyeingStackItem = Main.game.getPlayer().getAllWeaponsInInventory().get(weapon) > 1;
 									boolean canDye = !(isDyeingStackItem && hasFullInventory);
 									if (canDye) {
-										return new Response("Dye/Reforge",
+										return new Response("Краска/Перековка",
 												Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
-													?"Use your proficiency with [style.colourEarth(Earth spells)] to dye or reforge this item."
-													:"Use a dye-brush or reforge hammer to alter this weapon's properties.",
+													?"Используйте свои познания в [style.colourEarth(заклинаниях земли)], чтобы покрасить или перековать этот предмет."
+													:"Используйте кисть для окрашивания или молот для перековки, чтобы изменить свойства этого оружия.",
 												DYE_WEAPON) {
 											@Override
 											public void effects() {
@@ -2926,19 +2926,19 @@ public class InventoryDialogue {
 											}
 										};
 									} else {
-										return new Response("Dye/Reforge", "Your inventory is full, so you can't alter this weapon's properties.", null);
+										return new Response("Краска/Перековка", "Ваш инвентарь полон, поэтому вы не можете изменить свойства этого оружия.", null);
 									}
 								} else {
-									return new Response("Dye/Reforge", "You'll need to find a dye-brush or reforge hammer if you want to alter this weapon's properties.", null);
+									return new Response("Краска/Перековка", "Чтобы изменить свойства этого оружия, вам понадобится кисть для красок или молот для перековки.", null);
 								}
 								
 							} else if(index == 5) {
 								if(weapon.getEnchantmentItemType(null)==null || weapon.getItemTags().contains(ItemTag.UNENCHANTABLE)) {
-									return new Response("Enchant", "This weapon cannot be enchanted!", null);
+									return new Response("Зачаровать", "Это оружие нельзя зачаровать!", null);
 									
 								} else if(Main.game.isDebugMode()
 										|| (Main.game.getPlayer().hasQuest(QuestLine.SIDE_ENCHANTMENT_DISCOVERY) && Main.game.getPlayer().isQuestCompleted(QuestLine.SIDE_ENCHANTMENT_DISCOVERY))) {
-									return new Response("Enchant", "Enchant this weapon.", EnchantmentDialogue.ENCHANTMENT_MENU) {
+									return new Response("Зачаровать", "Зачаровать это оружие.", EnchantmentDialogue.ENCHANTMENT_MENU) {
 										@Override
 										public DialogueNode getNextDialogue() {
 											return EnchantmentDialogue.getEnchantmentMenu(weapon);
@@ -2946,13 +2946,13 @@ public class InventoryDialogue {
 									};
 									
 								} else {
-									return new Response("Enchant", getEnchantmentNotDiscoveredText("weapons"), null);
+									return new Response("Зачаровать", getEnchantmentNotDiscoveredText("оружие"), null);
 								}
 								
 							} else if(index == 6) {
 								InventorySlot slot = InventorySlot.mainWeaponSlots[Main.game.getPlayer().getMainWeaponIndexToEquipTo(weapon)];
 								if(weapon.isCanBeEquipped(Main.game.getPlayer(), slot)) {
-									return new Response("Equip Main (Self)", "Equip the " + weapon.getName() + ".", INVENTORY_MENU){
+									return new Response("Экипировать в правую руку (Себе)", "Экипировать " + weapon.getName() + ".", INVENTORY_MENU){
 										@Override
 										public void effects(){
 											Main.game.getTextEndStringBuilder().append(
@@ -2963,24 +2963,24 @@ public class InventoryDialogue {
 										}
 									};
 								} else {
-									return new Response("Equip Main (Self)", weapon.getCannotBeEquippedText(Main.game.getPlayer(), slot), null);
+									return new Response("Экипировать в правую руку (Себе)", weapon.getCannotBeEquippedText(Main.game.getPlayer(), slot), null);
 								}
 								
 							} else if(index == 7) {
 								if(weapon.getWeaponType().isTwoHanded()) {
-									return new Response("Equip Offhand (Self)",
+									return new Response("Экипировать в левую руку (Себе)",
 											(weapon.getWeaponType().isPlural()
-												?"As the " + weapon.getName() + " require two hands to wield, they can only be equipped in the main slot!"
-												:"As the " + weapon.getName() + " is a two-handed weapon, it can only be equipped in the main slot!"),
+												?"По мере того как " + weapon.getName() + " требуют двух рук для использования, их можно экипировать только в основной слот!"
+												:"По мере того как " + weapon.getName() + " — это двуручное оружие, его можно экипировать только в основной слот!"),
 											null);
 								}
 
 								InventorySlot slot = InventorySlot.offhandWeaponSlots[Main.game.getPlayer().getOffhandWeaponIndexToEquipTo(weapon)];
 								if(weapon.isCanBeEquipped(Main.game.getPlayer(), slot)) {
-									return new Response("Equip Offhand (Self)",
-											"Equip the " + weapon.getName() + "."
+									return new Response("Экипировать в левую руку (Себе)",
+											"Экипировать " + weapon.getName() + "."
 												+(weapon.getWeaponType().isTwoHanded()
-														?"<br/>[style.italicsGood(Although "+(weapon.getWeaponType().isPlural()?"":"")+")]"
+														?"<br/>[style.italicsGood(Хотя "+(weapon.getWeaponType().isPlural()?"":"")+")]"
 														:""),
 											INVENTORY_MENU){
 										@Override
@@ -2993,7 +2993,7 @@ public class InventoryDialogue {
 										}
 									};
 								} else {
-									return new Response("Equip Offhand (Self)", weapon.getCannotBeEquippedText(Main.game.getPlayer(), slot), null);
+									return new Response("Экипировать в левую руку (Себе)", weapon.getCannotBeEquippedText(Main.game.getPlayer(), slot), null);
 								}
 								
 							} else if (index == 10) {
@@ -3009,31 +3009,31 @@ public class InventoryDialogue {
 					switch(interactionType) {
 						case COMBAT:
 							if(index == 1) {
-								return new Response("Give (1)", "You can't give someone weapons while fighting them!", null);
+								return new Response("Отдать (1)", "Вы не можете передавать оружие кому-то во время боя!", null);
 								
 							} else if(index == 2) {
-								return new Response("Give (5)", "You can't give someone weapons while fighting them!", null);
+								return new Response("Отдать (5)", "Вы не можете передавать оружие кому-то во время боя!", null);
 								
 							} else if(index == 3) {
-								return new Response("Give (All)", "You can't give someone weapons while fighting them!", null);
+								return new Response("Отдать (Все)", "Вы не можете передавать оружие кому-то во время боя!", null);
 								
 							} else if(index == 4) {
-								return new Response("Dye", "You can't dye your weapons while fighting someone!", null);
+								return new Response("Краситель", "Вы не можете красить оружие во время боя!", null);
 								
 							} else if(index == 5) {
-								return new Response("Enchant", "You can't enchant weapons while fighting someone!", null);
+								return new Response("Зачаровать", "Вы не можете зачаровывать оружие во время боя!", null);
 								
 							} else if(index == 6) {
-								return new Response("Equip Main (Self)", "You can't change weapons while fighting someone!", null);
+								return new Response("Экипировать в правую руку (Себе)", "Вы не можете менять оружие во время боя!", null);
 									
 							} else if(index == 7) {
-								return new Response("Equip Offhand (Self)", "You can't change weapons while fighting someone!", null);
+								return new Response("Экипировать в левую руку (Себе)", "Вы не можете менять оружие во время боя!", null);
 									
 							} else if (index == 10) {
 								return getQuickTradeResponse();
 								
 							} else if(index == 11) {
-								return new Response("Equip (Opponent)", "You can't make your opponent equip a weapon!", null);
+								return new Response("Экипировать (Противник)", "Вы не можете заставить противника экипировать оружие!", null);
 								
 							} else {
 								return null;
@@ -3044,12 +3044,12 @@ public class InventoryDialogue {
 							
 							if(index == 1) {
 								if(!weapon.getWeaponType().isAbleToBeDropped()) {
-									return new Response("Give (1)", "You cannot give away the " + weapon.getName() + "!", null);
+									return new Response("Отдать (1)", "Вы не можете отдать " + weapon.getName() + "!", null);
 									
 								} else if(inventoryFull) {
-									return new Response("Give (1)", UtilText.parse(inventoryNPC, "[npc.NamePos] inventory is already full!"), null);
+									return new Response("Отдать (1)", UtilText.parse(inventoryNPC, "[npc.NamePos], инвентарь уже полон!"), null);
 								}
-								return new Response("Give (1)", UtilText.parse(inventoryNPC, "Give [npc.name] one " + weapon.getName() + "."), INVENTORY_MENU){
+								return new Response("Отдать (1)", UtilText.parse(inventoryNPC, "Отдать [npc.name] одну " + weapon.getName() + "."), INVENTORY_MENU){
 									@Override
 									public void effects(){
 										transferWeapons(Main.game.getPlayer(), inventoryNPC, weapon, 1);
@@ -3058,30 +3058,30 @@ public class InventoryDialogue {
 								
 							} else if(index == 2) {
 								if(!weapon.getWeaponType().isAbleToBeDropped()) {
-									return new Response("Give (5)", "You cannot give away the " + weapon.getName() + "!", null);
+									return new Response("Отдать (5)", "Вы не можете отдать " + weapon.getName() + "!", null);
 									
 								} else if(inventoryFull) {
-									return new Response("Give (5)", UtilText.parse(inventoryNPC, "[npc.NamePos] inventory is already full!"), null);
+									return new Response("Отдать (5)", UtilText.parse(inventoryNPC, "[npc.NamePos], инвентарь уже полон!"), null);
 								}
 								if(Main.game.getPlayer().getWeaponCount(weapon) >= 5) {
-									return new Response("Give (5)", UtilText.parse(inventoryNPC, "Give [npc.name] five of your " + weapon.getNamePlural() + "."), INVENTORY_MENU){
+									return new Response("Отдать (5)", UtilText.parse(inventoryNPC, "Отдать [npc.name] пять ваших " + weapon.getNamePlural() + "."), INVENTORY_MENU){
 										@Override
 										public void effects(){
 											transferWeapons(Main.game.getPlayer(), inventoryNPC, weapon, 5);
 										}
 									};
 								} else {
-									return new Response("Give (5)", "You don't have five " + weapon.getNamePlural() + " to give!", null);
+									return new Response("Отдать (5)", "У вас нет пяти " + weapon.getNamePlural() + " чтобы отдать!", null);
 								}
 								
 							} else if(index == 3) {
 								if(!weapon.getWeaponType().isAbleToBeDropped()) {
-									return new Response("Give (All)", "You cannot give away the " + weapon.getName() + "!", null);
+									return new Response("Отдать (Все)", "Вы не можете отдать " + weapon.getName() + "!", null);
 									
 								} else if(inventoryFull) {
-									return new Response("Give (All)", UtilText.parse(inventoryNPC, "[npc.NamePos] inventory is already full!"), null);
+									return new Response("Отдать (Все)", UtilText.parse(inventoryNPC, "[npc.NamePos], инвентарь уже полон!"), null);
 								}
-								return new Response("Give (All)", UtilText.parse(inventoryNPC, "Give [npc.name] all of your " + weapon.getNamePlural() + "."), INVENTORY_MENU){
+								return new Response("Отдать (Все)", UtilText.parse(inventoryNPC, "Отдать [npc.name] все ваши " + weapon.getNamePlural() + "."), INVENTORY_MENU){
 									@Override
 									public void effects(){
 										transferWeapons(Main.game.getPlayer(), inventoryNPC, weapon, Main.game.getPlayer().getWeaponCount(weapon));
@@ -3094,10 +3094,10 @@ public class InventoryDialogue {
 									boolean isDyeingStackItem = Main.game.getPlayer().getAllWeaponsInInventory().get(weapon) > 1;
 									boolean canDye = !(isDyeingStackItem && hasFullInventory);
 									if (canDye) {
-										return new Response("Dye/Reforge",
+										return new Response("Краска/Перековка",
 												Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
-													?"Use your proficiency with [style.colourEarth(Earth spells)] to dye or reforge this item."
-													:"Use a dye-brush or reforge hammer to alter this weapon's properties.",
+													?"Используйте свои познания в [style.colourEarth(заклинаниях земли)], чтобы покрасить или перековать этот предмет."
+													:"Используйте кисть для окрашивания или молот для перековки, чтобы изменить свойства этого оружия.",
 												DYE_WEAPON) {
 											@Override
 											public void effects() {
@@ -3105,19 +3105,19 @@ public class InventoryDialogue {
 											}
 										};
 									} else {
-										return new Response("Dye/Reforge", "Your inventory is full, so you can't alter this weapon's properties.", null);
+										return new Response("Краска/Перековка", "Ваш инвентарь полон, поэтому вы не можете изменить свойства этого оружия.", null);
 									}
 								} else {
-									return new Response("Dye/Reforge", "You'll need to find a dye-brush or reforge hammer if you want to alter this weapon's properties.", null);
+									return new Response("Краска/Перековка", "Чтобы изменить свойства этого оружия, вам понадобится кисть для красок или молот для перековки.", null);
 								}
 								
 							} else if(index == 5) {
 								if(weapon.getEnchantmentItemType(null)==null || weapon.getItemTags().contains(ItemTag.UNENCHANTABLE)) {
-									return new Response("Enchant", "This weapon cannot be enchanted!", null);
+									return new Response("Зачаровать", "Это оружие нельзя зачаровать!", null);
 									
 								} else if(Main.game.isDebugMode()
 										|| (Main.game.getPlayer().hasQuest(QuestLine.SIDE_ENCHANTMENT_DISCOVERY) && Main.game.getPlayer().isQuestCompleted(QuestLine.SIDE_ENCHANTMENT_DISCOVERY))) {
-									return new Response("Enchant", "Enchant this weapon.", EnchantmentDialogue.ENCHANTMENT_MENU) {
+									return new Response("Зачаровать", "Зачаровать это оружие.", EnchantmentDialogue.ENCHANTMENT_MENU) {
 										@Override
 										public DialogueNode getNextDialogue() {
 											return EnchantmentDialogue.getEnchantmentMenu(weapon);
@@ -3125,13 +3125,13 @@ public class InventoryDialogue {
 									};
 									
 								} else {
-									return new Response("Enchant", getEnchantmentNotDiscoveredText("weapons"), null);
+									return new Response("Зачаровать", getEnchantmentNotDiscoveredText("оружие"), null);
 								}
 								
 							} else if(index == 6) {
 								InventorySlot slot = InventorySlot.mainWeaponSlots[Main.game.getPlayer().getMainWeaponIndexToEquipTo(weapon)];
 								if(weapon.isCanBeEquipped(Main.game.getPlayer(), slot)) {
-									return new Response("Equip Main (Self)", "Equip the " + weapon.getName() + " as your main weapon.", INVENTORY_MENU){
+									return new Response("Экипировать в правую руку (Себе)", "Экипировать " + weapon.getName() + " в качестве основного оружия.", INVENTORY_MENU){
 										@Override
 										public void effects(){
 											Main.game.getTextEndStringBuilder().append("<p style='text-align:center;'>"
@@ -3141,21 +3141,21 @@ public class InventoryDialogue {
 										}
 									};
 								} else {
-									return new Response("Equip Main (Self)", weapon.getCannotBeEquippedText(Main.game.getPlayer(), slot), null);
+									return new Response("Экипировать в правую руку (Себе)", weapon.getCannotBeEquippedText(Main.game.getPlayer(), slot), null);
 								}
 									
 							} else if(index == 7) {
 								if(weapon.getWeaponType().isTwoHanded()) {
-									return new Response("Equip Offhand (Self)",
+									return new Response("Экипировать в левую руку (Себе)",
 											(weapon.getWeaponType().isPlural()
-												?"As the " + weapon.getName() + " require two hands to wield, they can only be equipped in the main slot!"
-												:"As the " + weapon.getName() + " is a two-handed weapon, it can only be equipped in the main slot!"),
+												?"По мере того как " + weapon.getName() + " требуют двух рук для использования, их можно экипировать только в основной слот!"
+												:"По мере того как " + weapon.getName() + " — это двуручное оружие, его можно экипировать только в основной слот!"),
 											null);
 								}
 
 								InventorySlot slot = InventorySlot.offhandWeaponSlots[Main.game.getPlayer().getOffhandWeaponIndexToEquipTo(weapon)];
 								if(weapon.isCanBeEquipped(Main.game.getPlayer(), slot)) {
-									return new Response("Equip Offhand (Self)", "Equip the " + weapon.getName() + " as your offhand weapon.", INVENTORY_MENU){
+									return new Response("Экипировать в левую руку (Себе)", "Экипировать " + weapon.getName() + " в качестве дополнительного оружия.", INVENTORY_MENU){
 										@Override
 										public void effects(){
 											Main.game.getTextEndStringBuilder().append("<p style='text-align:center;'>"
@@ -3165,7 +3165,7 @@ public class InventoryDialogue {
 										}
 									};
 								} else {
-									return new Response("Equip Offhand (Self)", weapon.getCannotBeEquippedText(Main.game.getPlayer(), slot), null);
+									return new Response("Экипировать в левую руку (Себе)", weapon.getCannotBeEquippedText(Main.game.getPlayer(), slot), null);
 								}
 								
 							} else if (index == 10) {
@@ -3178,7 +3178,7 @@ public class InventoryDialogue {
 
 								InventorySlot slot = InventorySlot.mainWeaponSlots[inventoryNPC.getMainWeaponIndexToEquipTo(weapon)];
 								if(weapon.isCanBeEquipped(inventoryNPC, slot)) {
-									return new Response(UtilText.parse(inventoryNPC, "Equip Main ([npc.HerHim])"), UtilText.parse(inventoryNPC, "Make [npc.name] equip the "+weapon.getName()+" as [npc.her] main weapon."), INVENTORY_MENU){
+									return new Response(UtilText.parse(inventoryNPC, "Экипировать основное ([npc.HerHim])"), UtilText.parse(inventoryNPC, "Заставить [npc.name] экипировать "+weapon.getName()+" как основное оружие [npc.her]."), INVENTORY_MENU){
 										@Override
 										public void effects(){
 											Main.game.getTextEndStringBuilder().append("<p style='text-align:center;'>"
@@ -3188,7 +3188,7 @@ public class InventoryDialogue {
 										}
 									};
 								} else {
-									return new Response(UtilText.parse(inventoryNPC, "Equip Main ([npc.HerHim])"), weapon.getCannotBeEquippedText(inventoryNPC, slot), null);
+									return new Response(UtilText.parse(inventoryNPC, "Экипировать основное ([npc.HerHim])"), weapon.getCannotBeEquippedText(inventoryNPC, slot), null);
 								}
 								
 							
@@ -3197,15 +3197,15 @@ public class InventoryDialogue {
 //									return new Response(UtilText.parse(inventoryNPC, "Equip Main ([npc.HerHim])"), "You cannot give away the " + weapon.getName() + "!", null);
 //								}
 								if(weapon.getWeaponType().isTwoHanded()) {
-									return new Response(UtilText.parse(inventoryNPC, "Equip Offhand ([npc.HerHim])"),
+									return new Response(UtilText.parse(inventoryNPC, "Экипировать в левую руку ([npc.HerHim])"),
 											(weapon.getWeaponType().isPlural()
-												?"As the " + weapon.getName() + " require two hands to wield, they can only be equipped in the main slot!"
-												:"As the " + weapon.getName() + " is a two-handed weapon, it can only be equipped in the main slot!"),
+												?"По мере того как " + weapon.getName() + " требуют двух рук для использования, их можно экипировать только в основной слот!"
+												:"По мере того как " + weapon.getName() + " — это двуручное оружие, его можно экипировать только в основной слот!"),
 											null);
 								}
 								InventorySlot slot = InventorySlot.offhandWeaponSlots[inventoryNPC.getOffhandWeaponIndexToEquipTo(weapon)];
 								if(weapon.isCanBeEquipped(inventoryNPC, slot)) {
-									return new Response(UtilText.parse(inventoryNPC, "Equip Offhand ([npc.HerHim])"), UtilText.parse(inventoryNPC, "Make [npc.name] equip the "+weapon.getName()+" as [npc.her] offhand weapon."), INVENTORY_MENU){
+									return new Response(UtilText.parse(inventoryNPC, "Экипировать в левую руку ([npc.HerHim])"), UtilText.parse(inventoryNPC, "Заставить [npc.name] экипировать "+weapon.getName()+" как вспомогательное оружие [npc.her]."), INVENTORY_MENU){
 										@Override
 										public void effects(){
 											Main.game.getTextEndStringBuilder().append("<p style='text-align:center;'>"
@@ -3215,7 +3215,7 @@ public class InventoryDialogue {
 										}
 									};
 								} else {
-									return new Response(UtilText.parse(inventoryNPC, "Equip Offhand ([npc.HerHim])"), weapon.getCannotBeEquippedText(inventoryNPC, slot), null);
+									return new Response(UtilText.parse(inventoryNPC, "Экипировать в левую руку ([npc.HerHim])"), weapon.getCannotBeEquippedText(inventoryNPC, slot), null);
 								}
 							
 							} else {
@@ -3224,31 +3224,31 @@ public class InventoryDialogue {
 							
 						case SEX:
 							if(index == 1) {
-								return new Response("Give (1)", "You can't give someone weapons while having sex with them!", null);
+								return new Response("Отдать (1)", "Вы не можете передавать оружие во время секса!", null);
 								
 							} else if(index == 2) {
-								return new Response("Give (5)", "You can't give someone weapons while having sex with them!", null);
+								return new Response("Отдать (5)", "Вы не можете передавать оружие во время секса!", null);
 								
 							} else if(index == 3) {
-								return new Response("Give (All)", "You can't give someone weapons while having sex with them!", null);
+								return new Response("Отдать (Все)", "Вы не можете передавать оружие во время секса!", null);
 								
 							} else if(index == 4) {
-								return new Response("Dye", "You can't dye your weapons while having sex with someone!", null);
+								return new Response("Краситель", "Вы не можете красить оружие во время секса!", null);
 								
 							} else if(index == 5) {
-								return new Response("Enchant", "You can't enchant weapons while having sex with someone!", null);
+								return new Response("Зачаровать", "Вы не можете зачаровывать оружие во время секса!", null);
 								
 							} else if(index == 6) {
-								return new Response("Equip Main (Self)", "You can't equip weapons while having sex with someone!", null);
+								return new Response("Экипировать в правую руку (Себе)", "Вы не можете экипировать оружие, пока занимаетесь сексом!", null);
 								
 							} else if(index == 7) {
-								return new Response("Equip Offhand (Self)", "You can't equip weapons while having sex with someone!", null);
+								return new Response("Экипировать в левую руку (Себе)", "Вы не можете экипировать оружие, пока занимаетесь сексом!", null);
 								
 							} else if (index == 10) {
 								return getQuickTradeResponse();
 								
 							} else if(index == 11) {
-								return new Response(UtilText.parse(inventoryNPC, "Equip ([npc.HerHim])"), "You can't equip weapons while having sex with someone!", null);
+								return new Response(UtilText.parse(inventoryNPC, "Экипировать ([npc.HerHim])"), "Вы не можете экипировать оружие, пока занимаетесь сексом!", null);
 								
 							} else {
 								return null;
@@ -3257,56 +3257,56 @@ public class InventoryDialogue {
 						case TRADING:
 							if(index == 1) {
 								if(!weapon.getWeaponType().isAbleToBeSold()) {
-									return new Response("Sell (1)", "You cannot sell the " + weapon.getName() + "!", null);
+									return new Response("Продать (1)", "Вы не можете продать  " + weapon.getName() + "!", null);
 									
 								} else if (inventoryNPC.willBuy(weapon)) {
 									int sellPrice = weapon.getPrice(inventoryNPC.getBuyModifier());
-									return new Response("Sell (1) (" + UtilText.formatAsMoney(sellPrice, "span") + ")", "Sell the " + weapon.getName() + " for " + UtilText.formatAsMoney(sellPrice) + ".", INVENTORY_MENU){
+									return new Response("Продать (1) (" + UtilText.formatAsMoney(sellPrice, "охват") + ")", "Продать  " + weapon.getName() + " на " + UtilText.formatAsMoney(sellPrice) + ".", INVENTORY_MENU){
 										@Override
 										public void effects(){
 											sellWeapons(Main.game.getPlayer(), inventoryNPC, weapon, 1, sellPrice);
 										}
 									};
 								} else {
-									return new Response("Sell (1)", inventoryNPC.getName("The") + " doesn't want to buy this.", null);
+									return new Response("Продать (1)", inventoryNPC.getName("") + " не хочет покупать это.", null);
 								}
 								
 							} else if(index == 2) {
 								if(Main.game.getPlayer().getWeaponCount(weapon) >= 5) {
 									if(!weapon.getWeaponType().isAbleToBeSold()) {
-										return new Response("Sell (5)", "You cannot sell the " + weapon.getName() + "!", null);
+										return new Response("Продать (5)", "Вы не можете продать  " + weapon.getName() + "!", null);
 										
 									} else if (inventoryNPC.willBuy(weapon)) {
 										int sellPrice = weapon.getPrice(inventoryNPC.getBuyModifier());
-										return new Response("Sell (5) (" + UtilText.formatAsMoney(sellPrice*5, "span") + ")", "Sell five of your " + weapon.getNamePlural() + " for " + UtilText.formatAsMoney(sellPrice*5) + ".", INVENTORY_MENU){
+										return new Response("Продать (5) (" + UtilText.formatAsMoney(sellPrice*5, "охват") + ")", "Продать пять ваших  " + weapon.getNamePlural() + " на " + UtilText.formatAsMoney(sellPrice*5) + ".", INVENTORY_MENU){
 											@Override
 											public void effects(){
 												sellWeapons(Main.game.getPlayer(), inventoryNPC, weapon, 5, sellPrice);
 											}
 										};
 									} else {
-										return new Response("Sell (5)", inventoryNPC.getName("The") + " doesn't want to buy these.", null);
+										return new Response("Продать (5)", inventoryNPC.getName("") + " не хочет это покупать.", null);
 									}
 									
 								} else {
-									return new Response("Sell (5)", "You don't have five " + weapon.getNamePlural() + " to sell!", null);
+									return new Response("Продать (5)", "У вас нет пяти " + weapon.getNamePlural() + " продать!", null);
 								}
 								
 							} else if(index == 3) {
 								if(!weapon.getWeaponType().isAbleToBeSold()) {
-									return new Response("Sell (All)", "You cannot sell the " + weapon.getName() + "!", null);
+									return new Response("Продать (Все)", "Вы не можете продать  " + weapon.getName() + "!", null);
 									
 								} else if (inventoryNPC.willBuy(weapon)) {
 									int sellPrice = weapon.getPrice(inventoryNPC.getBuyModifier());
-									return new Response("Sell (All) (" + UtilText.formatAsMoney(sellPrice*Main.game.getPlayer().getWeaponCount(weapon), "span") + ")",
-											"Sell the " + weapon.getName() + " for " + UtilText.formatAsMoney(sellPrice*Main.game.getPlayer().getWeaponCount(weapon)) + ".", INVENTORY_MENU){
+									return new Response("Продать (Все) (" + UtilText.formatAsMoney(sellPrice*Main.game.getPlayer().getWeaponCount(weapon), "охват") + ")",
+											"Продать  " + weapon.getName() + " на " + UtilText.formatAsMoney(sellPrice*Main.game.getPlayer().getWeaponCount(weapon)) + ".", INVENTORY_MENU){
 										@Override
 										public void effects(){
 											sellWeapons(Main.game.getPlayer(), inventoryNPC, weapon, Main.game.getPlayer().getWeaponCount(weapon), sellPrice);
 										}
 									};
 								} else {
-									return new Response("Sell (All)", inventoryNPC.getName("The") + " doesn't want to buy these.", null);
+									return new Response("Продать (Все)", inventoryNPC.getName("") + " не хочет это покупать.", null);
 								}
 								
 							} else if (index==4) {
@@ -3315,10 +3315,10 @@ public class InventoryDialogue {
 									boolean isDyeingStackItem = Main.game.getPlayer().getAllWeaponsInInventory().get(weapon) > 1;
 									boolean canDye = !(isDyeingStackItem && hasFullInventory);
 									if (canDye) {
-										return new Response("Dye/Reforge",
+										return new Response("Краска/Перековка",
 												Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
-													?"Use your proficiency with [style.colourEarth(Earth spells)] to dye or reforge this item."
-													:"Use a dye-brush or reforge hammer to alter this weapon's properties.",
+													?"Используйте свои познания в [style.colourEarth(заклинаниях земли)], чтобы покрасить или перековать этот предмет."
+													:"Используйте кисть для окрашивания или молот для перековки, чтобы изменить свойства этого оружия.",
 												DYE_WEAPON) {
 											@Override
 											public void effects() {
@@ -3326,19 +3326,19 @@ public class InventoryDialogue {
 											}
 										};
 									} else {
-										return new Response("Dye/Reforge", "Your inventory is full, so you can't alter this weapon's properties.", null);
+										return new Response("Краска/Перековка", "Ваш инвентарь полон, поэтому вы не можете изменить свойства этого оружия.", null);
 									}
 								} else {
-									return new Response("Dye/Reforge", "You'll need to find a dye-brush or reforge hammer if you want to alter this weapon's properties.", null);
+									return new Response("Краска/Перековка", "Чтобы изменить свойства этого оружия, вам понадобится кисть для красок или молот для перековки.", null);
 								}
 								
 							} else if(index == 5) {
 								if(weapon.getEnchantmentItemType(null)==null || weapon.getItemTags().contains(ItemTag.UNENCHANTABLE)) {
-									return new Response("Enchant", "This weapon cannot be enchanted!", null);
+									return new Response("Зачаровать", "Это оружие нельзя зачаровать!", null);
 									
 								} else if(Main.game.isDebugMode()
 										|| (Main.game.getPlayer().hasQuest(QuestLine.SIDE_ENCHANTMENT_DISCOVERY) && Main.game.getPlayer().isQuestCompleted(QuestLine.SIDE_ENCHANTMENT_DISCOVERY))) {
-									return new Response("Enchant", "Enchant this weapon.", EnchantmentDialogue.ENCHANTMENT_MENU) {
+									return new Response("Зачаровать", "Зачаровать это оружие.", EnchantmentDialogue.ENCHANTMENT_MENU) {
 										@Override
 										public DialogueNode getNextDialogue() {
 											return EnchantmentDialogue.getEnchantmentMenu(weapon);
@@ -3346,13 +3346,13 @@ public class InventoryDialogue {
 									};
 									
 								} else {
-									return new Response("Enchant", getEnchantmentNotDiscoveredText("weapons"), null);
+									return new Response("Зачаровать", getEnchantmentNotDiscoveredText("оружие"), null);
 								}
 								
 							} else if(index == 6) {
 								InventorySlot slot = InventorySlot.mainWeaponSlots[Main.game.getPlayer().getMainWeaponIndexToEquipTo(weapon)];
 								if(weapon.isCanBeEquipped(Main.game.getPlayer(), slot)) {
-									return new Response("Equip Main (Self)", "Equip the " + weapon.getName() + " as your main weapon.", INVENTORY_MENU){
+									return new Response("Экипировать в правую руку (Себе)", "Экипировать " + weapon.getName() + " в качестве основного оружия.", INVENTORY_MENU){
 										@Override
 										public void effects(){
 											Main.game.getTextEndStringBuilder().append(
@@ -3363,21 +3363,21 @@ public class InventoryDialogue {
 										}
 									};
 								} else {
-									return new Response("Equip Main (Self)", weapon.getCannotBeEquippedText(Main.game.getPlayer(), slot), null);
+									return new Response("Экипировать в правую руку (Себе)", weapon.getCannotBeEquippedText(Main.game.getPlayer(), slot), null);
 								}
 									
 							} else if(index == 7) {
 								if(weapon.getWeaponType().isTwoHanded()) {
-									return new Response("Equip Offhand (Self)",
+									return new Response("Экипировать в левую руку (Себе)",
 											(weapon.getWeaponType().isPlural()
-												?"As the " + weapon.getName() + " require two hands to wield, they can only be equipped in the main slot!"
-												:"As the " + weapon.getName() + " is a two-handed weapon, it can only be equipped in the main slot!"),
+												?"По мере того как " + weapon.getName() + " требуют двух рук для использования, их можно экипировать только в основной слот!"
+												:"По мере того как " + weapon.getName() + " — это двуручное оружие, его можно экипировать только в основной слот!"),
 											null);
 								}
 								
 								InventorySlot slot = InventorySlot.offhandWeaponSlots[Main.game.getPlayer().getOffhandWeaponIndexToEquipTo(weapon)];
 								if(weapon.isCanBeEquipped(Main.game.getPlayer(), slot)) {
-									return new Response("Equip Offhand (Self)", "Equip the " + weapon.getName() + " as your offhand weapon.", INVENTORY_MENU){
+									return new Response("Экипировать в левую руку (Себе)", "Экипировать " + weapon.getName() + " в качестве дополнительного оружия.", INVENTORY_MENU){
 										@Override
 										public void effects(){
 											Main.game.getTextEndStringBuilder().append(
@@ -3388,7 +3388,7 @@ public class InventoryDialogue {
 										}
 									};
 								} else {
-									return new Response("Equip Offhand (Self)", weapon.getCannotBeEquippedText(Main.game.getPlayer(), slot), null);
+									return new Response("Экипировать в левую руку (Себе)", weapon.getCannotBeEquippedText(Main.game.getPlayer(), slot), null);
 								}
 								
 							} else if (index == 9) {
@@ -3398,10 +3398,10 @@ public class InventoryDialogue {
 								return getQuickTradeResponse();
 								
 							} else if(index == 11) {
-								return new Response(UtilText.parse(inventoryNPC, "Equip Main ([npc.HerHim])"), UtilText.parse(inventoryNPC, "[npc.Name] doesn't want to use your weapons."), null);
+								return new Response(UtilText.parse(inventoryNPC, "Экипировать основное ([npc.HerHim])"), UtilText.parse(inventoryNPC, "[npc.Name] не хочет использовать ваше оружие."), null);
 								
 							} else if(index == 12) {
-								return new Response(UtilText.parse(inventoryNPC, "Equip Offhand ([npc.HerHim])"), UtilText.parse(inventoryNPC, "[npc.Name] doesn't want to use your weapons."), null);
+								return new Response(UtilText.parse(inventoryNPC, "Экипировать в левую руку ([npc.HerHim])"), UtilText.parse(inventoryNPC, "[npc.Name] не хочет использовать ваше оружие."), null);
 								
 							} else {
 								return null;
@@ -3419,25 +3419,25 @@ public class InventoryDialogue {
 					switch(interactionType) {
 						case SEX:
 							if(index == 1) {
-								return new Response("Take (1)", "You can't pick up weapons while masturbating.", null);
+								return new Response("Взять (1)", "Вы не можете подобрать оружие во время мастурбации.", null);
 								
 							} else if(index == 2) {
-								return new Response("Take (5)", "You can't pick up weapons while masturbating.", null);
+								return new Response("Взять (5)", "Вы не можете подобрать оружие во время мастурбации.", null);
 								
 							} else if(index == 3) {
-								return new Response("Take (All)", "You can't pick up weapons while masturbating.", null);
+								return new Response("Взять (Все)", "Вы не можете подобрать оружие во время мастурбации.", null);
 								
 							} else if(index == 4) {
-								return new Response("Dye", "You can't dye weapons while masturbating.", null);
+								return new Response("Краситель", "Вы не можете красить оружие во время мастурбации.", null);
 								
 							} else if(index == 5) {
-								return new Response("Enchant", "You can't enchant weapons while masturbating.", null);
+								return new Response("Зачаровать", "Вы не можете накладывать заклинания на оружие во время мастурбации.", null);
 								
 							} else if(index == 6) {
-								return new Response("Equip Main (Self)", "You can't equip weapons while masturbating.", null);
+								return new Response("Экипировать в правую руку (Себе)", "Вы не можете экипировать оружие во время мастурбации.", null);
 								
 							} else if(index == 7) {
-								return new Response("Equip Offhand (Self)", "You can't equip weapons while masturbating.", null);
+								return new Response("Экипировать в левую руку (Себе)", "Вы не можете экипировать оружие во время мастурбации.", null);
 								
 							} else if (index == 10) {
 								return getQuickTradeResponse();
@@ -3449,9 +3449,9 @@ public class InventoryDialogue {
 						default:
 							if(index == 1) {
 								if(inventoryFull) {
-									return new Response("Take (1)", "Your inventory is already full!", null);
+									return new Response("Взять (1)", "Ваш инвентарь уже полон!", null);
 								}
-								return new Response("Take (1)", "Take one " + weapon.getName() + " from the ground.", INVENTORY_MENU){
+								return new Response("Взять (1)", "Взять один " + weapon.getName() + " с земли.", INVENTORY_MENU){
 									@Override
 									public void effects(){
 										pickUpWeapons(Main.game.getPlayer(), weapon, 1);
@@ -3460,24 +3460,24 @@ public class InventoryDialogue {
 								
 							} else if(index == 2) {
 								if(inventoryFull) {
-									return new Response("Take (5)", "Your inventory is already full!", null);
+									return new Response("Взять (5)", "Ваш инвентарь уже полон!", null);
 								}
 								if(Main.game.getPlayerCell().getInventory().getWeaponCount(weapon) >= 5) {
-									return new Response("Take (5)", "Take five of the " + weapon.getNamePlural() + " from the ground.", INVENTORY_MENU){
+									return new Response("Взять (5)", "Взять пять " + weapon.getNamePlural() + " с земли.", INVENTORY_MENU){
 										@Override
 										public void effects(){
 											pickUpWeapons(Main.game.getPlayer(), weapon, 5);
 										}
 									};
 								} else {
-									return new Response("Take (5)", "There aren't five " + weapon.getNamePlural() + " on the ground!", null);
+									return new Response("Взять (5)", "Их не пять, " + weapon.getNamePlural() + " на земле!", null);
 								}
 								
 							} else if(index == 3) {
 								if(inventoryFull) {
-									return new Response("Take (All)", "Your inventory is already full!", null);
+									return new Response("Взять (Все)", "Ваш инвентарь уже полон!", null);
 								}
-								return new Response("Take (All)", "Take all of the " + weapon.getNamePlural() + " from the ground.", INVENTORY_MENU){
+								return new Response("Взять (Все)", "Забрать всё, " + weapon.getNamePlural() + " с земли.", INVENTORY_MENU){
 									@Override
 									public void effects(){
 										pickUpWeapons(Main.game.getPlayer(), weapon, Main.game.getPlayerCell().getInventory().getWeaponCount(weapon));
@@ -3490,10 +3490,10 @@ public class InventoryDialogue {
 									boolean isDyeingStackItem = Main.game.getPlayerCell().getInventory().getAllWeaponsInInventory().get(weapon) > 1;
 									boolean canDye = !(isDyeingStackItem && hasFullInventory);
 									if (canDye) {
-										return new Response("Dye/Reforge",
+										return new Response("Краска/Перековка",
 												Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
-													?"Use your proficiency with [style.colourEarth(Earth spells)] to dye or reforge this item."
-													:"Use a dye-brush or reforge hammer to alter this weapon's properties.",
+													?"Используйте свои познания в [style.colourEarth(заклинаниях земли)], чтобы покрасить или перековать этот предмет."
+													:"Используйте кисть для окрашивания или молот для перековки, чтобы изменить свойства этого оружия.",
 												DYE_WEAPON) {
 											@Override
 											public void effects() {
@@ -3501,19 +3501,19 @@ public class InventoryDialogue {
 											}
 										};
 									} else {
-										return new Response("Dye/Reforge", "Your inventory is full, so you can't alter this weapon's properties.", null);
+										return new Response("Краска/Перековка", "Ваш инвентарь полон, поэтому вы не можете изменить свойства этого оружия.", null);
 									}
 								} else {
-									return new Response("Dye/Reforge", "You'll need to find a dye-brush or reforge hammer if you want to alter this weapon's properties.", null);
+									return new Response("Краска/Перековка", "Чтобы изменить свойства этого оружия, вам понадобится кисть для красок или молот для перековки.", null);
 								}
 								
 							} else if(index == 5) {
-								return new Response("Enchant", "You can't enchant weapons on the ground!", null);
+								return new Response("Зачаровать", "Нельзя зачаровывать оружие прямо на земле!", null);
 								
 							} else if(index == 6) {
 								InventorySlot slot = InventorySlot.mainWeaponSlots[Main.game.getPlayer().getMainWeaponIndexToEquipTo(weapon)];
 								if(weapon.isCanBeEquipped(Main.game.getPlayer(), slot)) {
-									return new Response("Equip Main (Self)", "Equip the " + weapon.getName() + " as your main weapon.", INVENTORY_MENU){
+									return new Response("Экипировать в правую руку (Себе)", "Экипировать " + weapon.getName() + " в качестве основного оружия.", INVENTORY_MENU){
 										@Override
 										public void effects(){
 											Main.game.getTextEndStringBuilder().append("<p style='text-align:center;'>"
@@ -3523,23 +3523,23 @@ public class InventoryDialogue {
 										}
 									};
 								} else {
-									return new Response("Equip Main (Self)", weapon.getCannotBeEquippedText(Main.game.getPlayer(), slot), null);
+									return new Response("Экипировать в правую руку (Себе)", weapon.getCannotBeEquippedText(Main.game.getPlayer(), slot), null);
 								}
 								
 							} else if(index == 7) {
 								InventorySlot slot = InventorySlot.mainWeaponSlots[Main.game.getPlayer().getMainWeaponIndexToEquipTo(weapon)];
 								if(!weapon.isCanBeEquipped(Main.game.getPlayer(), slot)) {
-									return new Response("Equip Offhand (Self)", weapon.getCannotBeEquippedText(Main.game.getPlayer(), slot), null);
+									return new Response("Экипировать в левую руку (Себе)", weapon.getCannotBeEquippedText(Main.game.getPlayer(), slot), null);
 								}
 								
 								if(weapon.getWeaponType().isTwoHanded()) {
-									return new Response("Equip Offhand (Self)",
+									return new Response("Экипировать в левую руку (Себе)",
 											(weapon.getWeaponType().isPlural()
-												?"As the " + weapon.getName() + " require two hands to wield, they can only be equipped in the main slot!"
-												:"As the " + weapon.getName() + " is a two-handed weapon, it can only be equipped in the main slot!"),
+												?"По мере того как " + weapon.getName() + " требуют двух рук для использования, их можно экипировать только в основной слот!"
+												:"По мере того как " + weapon.getName() + " — это двуручное оружие, его можно экипировать только в основной слот!"),
 											null);
 								}
-								return new Response("Equip Offhand (Self)", "Equip the " + weapon.getName() + " as your offhand weapon.", INVENTORY_MENU){
+								return new Response("Экипировать в левую руку (Себе)", "Экипировать " + weapon.getName() + " в качестве дополнительного оружия.", INVENTORY_MENU){
 									@Override
 									public void effects(){
 										Main.game.getTextEndStringBuilder().append("<p style='text-align:center;'>"
@@ -3563,34 +3563,34 @@ public class InventoryDialogue {
 					switch(interactionType) {
 						case COMBAT:
 							if(index == 1) {
-								return new Response("Take (1)", "You can't take someone weapons while fighting them!", null);
+								return new Response("Взять (1)", "Нельзя отобрать оружие у кого-то во время боя!", null);
 								
 							} else if(index == 2) {
-								return new Response("Take (5)", "You can't take someone weapons while fighting them!", null);
+								return new Response("Взять (5)", "Нельзя отобрать оружие у кого-то во время боя!", null);
 								
 							} else if(index == 3) {
-								return new Response("Take (All)", "You can't take someone weapons while fighting them!", null);
+								return new Response("Взять (Все)", "Нельзя отобрать оружие у кого-то во время боя!", null);
 								
 							} else if(index == 4) {
-								return new Response("Dye", "You can't dye someone's weapons while fighting them!", null);
+								return new Response("Краситель", "Нельзя перекрасить чужое оружие во время боя!", null);
 								
 							} else if(index == 5) {
-								return new Response("Enchant", "You can't enchant someone else's weapons, especially not while fighting them!", null);
+								return new Response("Зачаровать", "Нельзя зачаровывать чужое оружие, особенно во время боя!", null);
 								
 							} else if(index == 6) {
-								return new Response("Equip Main (Self)", "You can't use someone else's weapons while fighting them!", null);
+								return new Response("Экипировать в правую руку (Себе)", "Нельзя использовать чужое оружие во время боя!", null);
 								
 							} else if(index == 7) {
-								return new Response("Equip Offhand (Self)", "You can't use someone else's weapons while fighting them!", null);
+								return new Response("Экипировать в левую руку (Себе)", "Нельзя использовать чужое оружие во время боя!", null);
 								
 							} else if (index == 10) {
 								return getQuickTradeResponse();
 								
 							} else if(index == 11) {
-								return new Response("Equip Main (Opponent)", "You can't make someone use a weapon while fighting them!", null);
+								return new Response("Экипировать основное (противник)", "Нельзя заставить кого-то использовать оружие во время боя!", null);
 								
 							} else if(index == 12) {
-								return new Response("Equip Offhand (Opponent)", "You can't make someone use a weapon while fighting them!", null);
+								return new Response("Экипировать в левую руку (Противник)", "Нельзя заставить кого-то использовать оружие во время боя!", null);
 								
 							} else {
 								return null;
@@ -3601,9 +3601,9 @@ public class InventoryDialogue {
 						
 							if(index == 1) {
 								if(inventoryFull) {
-									return new Response("Take (1)", "Your inventory is already full!", null);
+									return new Response("Взять (1)", "Ваш инвентарь уже полон!", null);
 								}
-								return new Response("Take (1)", UtilText.parse(inventoryNPC, "Take one " + weapon.getName() + " from [npc.name]."), INVENTORY_MENU){
+								return new Response("Взять (1)", UtilText.parse(inventoryNPC, "Взять один " + weapon.getName() + " из [npc.name]."), INVENTORY_MENU){
 									@Override
 									public void effects(){
 										transferWeapons(inventoryNPC, Main.game.getPlayer(), weapon, 1);
@@ -3612,24 +3612,24 @@ public class InventoryDialogue {
 								
 							} else if(index == 2) {
 								if(inventoryFull) {
-									return new Response("Take (5)", "Your inventory is already full!", null);
+									return new Response("Взять (5)", "Ваш инвентарь уже полон!", null);
 								}
 								if(inventoryNPC.getWeaponCount(weapon) >= 5) {
-									return new Response("Take (5)", UtilText.parse(inventoryNPC, "Take five of  [npc.namePos] " + weapon.getNamePlural() + "."), INVENTORY_MENU){
+									return new Response("Взять (5)", UtilText.parse(inventoryNPC, "Взять пять штук [npc.namePos] " + weapon.getNamePlural() + "."), INVENTORY_MENU){
 										@Override
 										public void effects(){
 											transferWeapons(inventoryNPC, Main.game.getPlayer(), weapon, 5);
 										}
 									};
 								} else {
-									return new Response("Take (5)", UtilText.parse(inventoryNPC, "[npc.Name] doesn't have five " + weapon.getNamePlural() + "!"), null);
+									return new Response("Взять (5)", UtilText.parse(inventoryNPC, "У [npc.Name] нет пяти штук " + weapon.getNamePlural() + "!"), null);
 								}
 								
 							} else if(index == 3) {
 								if(inventoryFull) {
-									return new Response("Take (All)", "Your inventory is already full!", null);
+									return new Response("Взять (Все)", "Ваш инвентарь уже полон!", null);
 								}
-								return new Response("Take (All)", UtilText.parse(inventoryNPC, "Take all "+Util.intToString(inventoryNPC.getWeaponCount(weapon))+" of  [npc.namePos] " + weapon.getNamePlural() + "."), INVENTORY_MENU){
+								return new Response("Взять (Все)", UtilText.parse(inventoryNPC, "Забрать всё "+Util.intToString(inventoryNPC.getWeaponCount(weapon))+" of  [npc.namePos] " + weapon.getNamePlural() + "."), INVENTORY_MENU){
 									@Override
 									public void effects(){
 										transferWeapons(inventoryNPC, Main.game.getPlayer(), weapon, inventoryNPC.getWeaponCount(weapon));
@@ -3642,10 +3642,10 @@ public class InventoryDialogue {
 									boolean isDyeingStackItem = inventoryNPC.getAllWeaponsInInventory().get(weapon) > 1;
 									boolean canDye = !(isDyeingStackItem && hasFullInventory);
 									if (canDye) {
-										return new Response("Dye/Reforge",
+										return new Response("Краска/Перековка",
 												Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
-													?"Use your proficiency with [style.colourEarth(Earth spells)] to dye or reforge this item."
-													:"Use a dye-brush or reforge hammer to alter this weapon's properties.",
+													?"Используйте свои познания в [style.colourEarth(заклинаниях земли)], чтобы покрасить или перековать этот предмет."
+													:"Используйте кисть для окрашивания или молот для перековки, чтобы изменить свойства этого оружия.",
 												DYE_WEAPON) {
 											@Override
 											public void effects() {
@@ -3653,19 +3653,19 @@ public class InventoryDialogue {
 											}
 										};
 									} else {
-										return new Response("Dye/Reforge", UtilText.parse(inventoryNPC, "[npc.NamePos] inventory is full, so you can't alter this weapon's properties."), null);
+										return new Response("Краска/Перековка", UtilText.parse(inventoryNPC, "Инвентарь [npc.NamePos] полон, поэтому вы не можете изменить свойства этого оружия."), null);
 									}
 								} else {
-									return new Response("Dye/Reforge", UtilText.parse(inventoryNPC, "You'll need to find a dye-brush or reforge hammer if you want to alter the properties of [npc.namePos] weapons."), null);
+									return new Response("Краска/Перековка", UtilText.parse(inventoryNPC, "Чтобы изменить свойства оружия [npc.namePos], вам понадобится кисть для красок или молот для перековки."), null);
 								}
 								
 							} else if(index == 5) {
-								return new Response("Enchant", "You can't enchant weapons owned by someone else!", null);
+								return new Response("Зачаровать", "Вы не можете зачаровывать чужое оружие!", null);
 								
 							} else if(index == 6) {
 								InventorySlot slot = InventorySlot.mainWeaponSlots[Main.game.getPlayer().getMainWeaponIndexToEquipTo(weapon)];
 								if(weapon.isCanBeEquipped(Main.game.getPlayer(), slot)) {
-									return new Response("Equip Main (Self)", "Equip the " + weapon.getName() + " as your main weapon.", INVENTORY_MENU){
+									return new Response("Экипировать в правую руку (Себе)", "Экипировать " + weapon.getName() + " в качестве основного оружия.", INVENTORY_MENU){
 										@Override
 										public void effects(){
 											Main.game.getTextEndStringBuilder().append("<p style='text-align:center;'>"
@@ -3675,21 +3675,21 @@ public class InventoryDialogue {
 										}
 									};
 								} else {
-									return new Response("Equip Main (Self)", weapon.getCannotBeEquippedText(Main.game.getPlayer(), slot), null);
+									return new Response("Экипировать в правую руку (Себе)", weapon.getCannotBeEquippedText(Main.game.getPlayer(), slot), null);
 								}
 								
 							} else if(index == 7) {
 								if(weapon.getWeaponType().isTwoHanded()) {
-									return new Response("Equip Offhand (Self)",
+									return new Response("Экипировать в левую руку (Себе)",
 											(weapon.getWeaponType().isPlural()
-												?"As the " + weapon.getName() + " require two hands to wield, they can only be equipped in the main slot!"
-												:"As the " + weapon.getName() + " is a two-handed weapon, it can only be equipped in the main slot!"),
+												?"По мере того как " + weapon.getName() + " требуют двух рук для использования, их можно экипировать только в основной слот!"
+												:"По мере того как " + weapon.getName() + " — это двуручное оружие, его можно экипировать только в основной слот!"),
 											null);
 								}
 								
 								InventorySlot slot = InventorySlot.offhandWeaponSlots[Main.game.getPlayer().getOffhandWeaponIndexToEquipTo(weapon)];
 								if(weapon.isCanBeEquipped(Main.game.getPlayer(), slot)) {
-									return new Response("Equip Offhand (Self)", "Equip the " + weapon.getName() + " as your offhand weapon.", INVENTORY_MENU){
+									return new Response("Экипировать в левую руку (Себе)", "Экипировать " + weapon.getName() + " в качестве дополнительного оружия.", INVENTORY_MENU){
 										@Override
 										public void effects(){
 											Main.game.getTextEndStringBuilder().append("<p style='text-align:center;'>"
@@ -3699,7 +3699,7 @@ public class InventoryDialogue {
 										}
 									};
 								} else {
-									return new Response("Equip Offhand (Self)", weapon.getCannotBeEquippedText(Main.game.getPlayer(), slot), null);
+									return new Response("Экипировать в левую руку (Себе)", weapon.getCannotBeEquippedText(Main.game.getPlayer(), slot), null);
 								}
 								
 							} else if (index == 10) {
@@ -3708,7 +3708,7 @@ public class InventoryDialogue {
 							} else if(index == 11) {
 								InventorySlot slot = InventorySlot.mainWeaponSlots[inventoryNPC.getMainWeaponIndexToEquipTo(weapon)];
 								if(weapon.isCanBeEquipped(inventoryNPC, slot)) {
-									return new Response(UtilText.parse(inventoryNPC, "Equip Main ([npc.HerHim])"), UtilText.parse(inventoryNPC, "Get [npc.name] to equip the " + weapon.getName() + " as [npc.her] main weapon."), INVENTORY_MENU){
+									return new Response(UtilText.parse(inventoryNPC, "Экипировать основное ([npc.HerHim])"), UtilText.parse(inventoryNPC, "Заставьте [npc.name] экипировать " + weapon.getName() + " как основное оружие [npc.her]."), INVENTORY_MENU){
 										@Override
 										public void effects(){
 											Main.game.getTextEndStringBuilder().append("<p style='text-align:center;'>"
@@ -3718,21 +3718,21 @@ public class InventoryDialogue {
 										}
 									};
 								} else {
-									return new Response(UtilText.parse(inventoryNPC, "Equip Main ([npc.HerHim])"), weapon.getCannotBeEquippedText(inventoryNPC, slot), null);
+									return new Response(UtilText.parse(inventoryNPC, "Экипировать основное ([npc.HerHim])"), weapon.getCannotBeEquippedText(inventoryNPC, slot), null);
 								}
 								
 							} else if(index == 12) {
 								if(weapon.getWeaponType().isTwoHanded()) {
-									return new Response(UtilText.parse(inventoryNPC, "Equip Offhand ([npc.HerHim])"),
+									return new Response(UtilText.parse(inventoryNPC, "Экипировать в левую руку ([npc.HerHim])"),
 											(weapon.getWeaponType().isPlural()
-												?"As the " + weapon.getName() + " require two hands to wield, they can only be equipped in the main slot!"
-												:"As the " + weapon.getName() + " is a two-handed weapon, it can only be equipped in the main slot!"),
+												?"По мере того как " + weapon.getName() + " требуют двух рук для использования, их можно экипировать только в основной слот!"
+												:"По мере того как " + weapon.getName() + " — это двуручное оружие, его можно экипировать только в основной слот!"),
 											null);
 								}
 								
 								InventorySlot slot = InventorySlot.offhandWeaponSlots[Main.game.getPlayer().getOffhandWeaponIndexToEquipTo(weapon)];
 								if(weapon.isCanBeEquipped(inventoryNPC, slot)) {
-									return new Response(UtilText.parse(inventoryNPC, "Equip Offhand ([npc.HerHim])"), UtilText.parse(inventoryNPC, "Get [npc.name] to equip the " + weapon.getName() + " as [npc.her] offhand weapon."), INVENTORY_MENU){
+									return new Response(UtilText.parse(inventoryNPC, "Экипировать в левую руку ([npc.HerHim])"), UtilText.parse(inventoryNPC, "Заставьте [npc.name] экипировать " + weapon.getName() + " как вспомогательное оружие [npc.her]."), INVENTORY_MENU){
 										@Override
 										public void effects(){
 											Main.game.getTextEndStringBuilder().append("<p style='text-align:center;'>"
@@ -3742,7 +3742,7 @@ public class InventoryDialogue {
 										}
 									};
 								} else {
-									return new Response(UtilText.parse(inventoryNPC, "Equip Offhand ([npc.HerHim])"), weapon.getCannotBeEquippedText(inventoryNPC, slot), null);
+									return new Response(UtilText.parse(inventoryNPC, "Экипировать в левую руку ([npc.HerHim])"), weapon.getCannotBeEquippedText(inventoryNPC, slot), null);
 								}
 								
 							} else {
@@ -3751,34 +3751,34 @@ public class InventoryDialogue {
 							
 						case SEX:
 							if(index == 1) {
-								return new Response("Take (1)", "You can't take someone's weapons while having sex with them!", null);
+								return new Response("Взять (1)", "Вы не можете забирать чье-то оружие прямо во время секса!", null);
 								
 							} else if(index == 2) {
-								return new Response("Take (5)", "You can't take someone's weapons while having sex with them!", null);
+								return new Response("Взять (5)", "Вы не можете забирать чье-то оружие прямо во время секса!", null);
 								
 							} else if(index == 3) {
-								return new Response("Take (All)", "You can't take someone's weapons while having sex with them!", null);
+								return new Response("Взять (Все)", "Вы не можете забирать чье-то оружие прямо во время секса!", null);
 								
 							} else if(index == 4) {
-								return new Response("Dye", "You can't dye someone's weapons while having sex with them!", null);
+								return new Response("Краситель", "Ты не можешь красить чье-то оружие прямо во время секса!", null);
 								
 							} else if(index == 5) {
-								return new Response("Enchant", "You can't enchant someone else's weapons, especially not while having sex with them!", null);
+								return new Response("Зачаровать", "Ты не можешь зачаровывать чужое оружие, особенно во время секса!", null);
 								
 							} else if(index == 6) {
-								return new Response("Equip Main (Self)", "You can't use someone else's weapons while having sex with them!", null);
+								return new Response("Экипировать в правую руку (Себе)", "Ты не можешь пользоваться чужим оружием прямо во время секса!", null);
 								
 							} else if(index == 7) {
-								return new Response("Equip Offhand (Self)", "You can't use someone else's weapons while having sex with them!", null);
+								return new Response("Экипировать в левую руку (Себе)", "Ты не можешь пользоваться чужим оружием прямо во время секса!", null);
 								
 							} else if (index == 10) {
 								return getQuickTradeResponse();
 								
 							} else if(index == 11) {
-								return new Response("Equip Main (Opponent)", "You can't make someone use a weapon while having sex with them!", null);
+								return new Response("Экипировать основное (противник)", "Ты не можешь заставить кого-то использовать оружие прямо во время секса!", null);
 								
 							} else if(index == 12) {
-								return new Response("Equip Offhand (Opponent)", "You can't make someone use a weapon while having sex with them!", null);
+								return new Response("Экипировать в левую руку (Противник)", "Ты не можешь заставить кого-то использовать оружие прямо во время секса!", null);
 								
 							} else {
 								return null;
@@ -3790,12 +3790,12 @@ public class InventoryDialogue {
 							if(index == 1) {
 								int sellPrice = buyback?Main.game.getPlayer().getBuybackStack().get(buyBackIndex).getPrice():weapon.getPrice(inventoryNPC.getSellModifier(weapon));
 								if(inventoryFull) {
-									return new Response("Buy (1) ("+UtilText.formatAsMoneyUncoloured(sellPrice, "span")+")", "Your inventory is already full!", null);
+									return new Response("Купить (1) ("+UtilText.formatAsMoneyUncoloured(sellPrice, "охват")+")", "Ваш инвентарь уже полон!", null);
 								}
 								if(Main.game.getPlayer().getMoney() < sellPrice) {
-									return new Response("Buy (1) ("+UtilText.formatAsMoneyUncoloured(sellPrice, "span")+")", "You can't afford to buy this!", null);
+									return new Response("Купить (1) ("+UtilText.formatAsMoneyUncoloured(sellPrice, "охват")+")", "Тебе не хватает денег на это!", null);
 								}
-								return new Response("Buy (1) (" + UtilText.formatAsMoney(sellPrice, "span") + ")", "Buy the " + weapon.getName() + " for " + UtilText.formatAsMoney(sellPrice) + ".", INVENTORY_MENU){
+								return new Response("Купить (1) (" + UtilText.formatAsMoney(sellPrice, "охват") + ")", "Купить  " + weapon.getName() + " на " + UtilText.formatAsMoney(sellPrice) + ".", INVENTORY_MENU){
 									@Override
 									public void effects(){
 										sellWeapons(inventoryNPC, Main.game.getPlayer(), weapon, 1, sellPrice);
@@ -3806,15 +3806,15 @@ public class InventoryDialogue {
 								int sellPrice = buyback?Main.game.getPlayer().getBuybackStack().get(buyBackIndex).getPrice():weapon.getPrice(inventoryNPC.getSellModifier(weapon));
 								if((buyback && Main.game.getPlayer().getBuybackStack().get(buyBackIndex).getCount()<5)
 										|| (!buyback && inventoryNPC.getWeaponCount(weapon) < 5)) {
-									return new Response("Buy (5) ("+UtilText.formatAsMoneyUncoloured(sellPrice*5, "span")+")", UtilText.parse(inventoryNPC, "[npc.Name] doesn't have five "+weapon.getNamePlural()+"."), null);
+									return new Response("Купить (5) ("+UtilText.formatAsMoneyUncoloured(sellPrice*5, "охват")+")", UtilText.parse(inventoryNPC, "У [npc.Name] нет пяти штук "+weapon.getNamePlural()+"."), null);
 								}
 								if(inventoryFull) {
-									return new Response("Buy (5) ("+UtilText.formatAsMoneyUncoloured(sellPrice*5, "span")+")", "Your inventory is already full!", null);
+									return new Response("Купить (5) ("+UtilText.formatAsMoneyUncoloured(sellPrice*5, "охват")+")", "Ваш инвентарь уже полон!", null);
 								}
 								if(Main.game.getPlayer().getMoney() < sellPrice*5) {
-									return new Response("Buy (5) ("+UtilText.formatAsMoneyUncoloured(sellPrice*5, "span")+")", "You can't afford to buy this!", null);
+									return new Response("Купить (5) ("+UtilText.formatAsMoneyUncoloured(sellPrice*5, "охват")+")", "Тебе не хватает денег на это!", null);
 								}
-								return new Response("Buy (5) (" + UtilText.formatAsMoney(sellPrice*5, "span") + ")", "Buy the " + weapon.getName() + " for " + UtilText.formatAsMoney(sellPrice*5) + ".", INVENTORY_MENU){
+								return new Response("Купить (5) (" + UtilText.formatAsMoney(sellPrice*5, "охват") + ")", "Купить  " + weapon.getName() + " на " + UtilText.formatAsMoney(sellPrice*5) + ".", INVENTORY_MENU){
 									@Override
 									public void effects(){
 										sellWeapons(inventoryNPC, Main.game.getPlayer(), weapon, 5, sellPrice);
@@ -3825,24 +3825,24 @@ public class InventoryDialogue {
 								int sellPrice = buyback?Main.game.getPlayer().getBuybackStack().get(buyBackIndex).getPrice():weapon.getPrice(inventoryNPC.getSellModifier(weapon));
 								int count = buyback?Main.game.getPlayer().getBuybackStack().get(buyBackIndex).getCount():inventoryNPC.getWeaponCount(weapon);
 								if(inventoryFull) {
-									return new Response("Buy (All) ("+UtilText.formatAsMoneyUncoloured(sellPrice*count, "span")+")", "Your inventory is already full!", null);
+									return new Response("Купить (Все) ("+UtilText.formatAsMoneyUncoloured(sellPrice*count, "охват")+")", "Ваш инвентарь уже полон!", null);
 								}
 								if(Main.game.getPlayer().getMoney() < sellPrice*count) {
 									int affordableCount = (int)(Main.game.getPlayer().getMoney() / sellPrice);
 									if(affordableCount > 0) {
-										return new Response("Buy (Max " + affordableCount + ") (" + UtilText.formatAsMoney(sellPrice * affordableCount, "span") + ")",
-												"Buy the " + weapon.getName() + " for " + UtilText.formatAsMoney(sellPrice * affordableCount) + ".", INVENTORY_MENU) {
+										return new Response("Купить (Макс " + affordableCount + ") (" + UtilText.formatAsMoney(sellPrice * affordableCount, "охват") + ")",
+												"Купить  " + weapon.getName() + " на " + UtilText.formatAsMoney(sellPrice * affordableCount) + ".", INVENTORY_MENU) {
 											@Override
 											public void effects() {
 												sellWeapons(inventoryNPC, Main.game.getPlayer(), weapon, affordableCount, sellPrice);
 											}
 										};
 									} else {
-										return new Response("Buy (All) ("+UtilText.formatAsMoneyUncoloured(sellPrice*count, "span")+")", "You can't afford to buy this!", null);
+										return new Response("Купить (Все) ("+UtilText.formatAsMoneyUncoloured(sellPrice*count, "охват")+")", "Тебе не хватает денег на это!", null);
 									}
 								}
-								return new Response("Buy (All) (" + UtilText.formatAsMoney(sellPrice*count, "span") + ")",
-										"Buy the " + weapon.getName() + " for " + UtilText.formatAsMoney(sellPrice*count) + ".", INVENTORY_MENU){
+								return new Response("Купить (Все) (" + UtilText.formatAsMoney(sellPrice*count, "охват") + ")",
+										"Купить  " + weapon.getName() + " на " + UtilText.formatAsMoney(sellPrice*count) + ".", INVENTORY_MENU){
 									@Override
 									public void effects(){
 										sellWeapons(inventoryNPC, Main.game.getPlayer(), weapon, count, sellPrice);
@@ -3850,16 +3850,16 @@ public class InventoryDialogue {
 								};
 								
 							} else if(index == 4) {
-								return new Response("Dye", UtilText.parse(inventoryNPC, "[npc.Name] isn't going to let you dye the weapon that [npc.sheIs] trying to sell!"), null);
+								return new Response("Краситель", UtilText.parse(inventoryNPC, "[npc.Name] не позволит тебе покрасить оружие, которое [npc.sheIs] пытается продать!"), null);
 								
 							} else if(index == 5) {
-								return new Response("Enchant", "You can't enchant someone else's weapon!", null);
+								return new Response("Зачаровать", "Ты не можешь зачаровывать чужое оружие!", null);
 								
 							} else if(index == 6) {
-								return new Response("Equip Main (Self)", UtilText.parse(inventoryNPC, "[npc.Name] isn't going to let you equip [npc.her] weapons without buying them first."), null);
+								return new Response("Экипировать в правую руку (Себе)", UtilText.parse(inventoryNPC, "[npc.Name] не позволит тебе экипировать оружие [npc.her], не купив его сначала."), null);
 								
 							} else if(index == 7) {
-								return new Response("Equip Offhand (Self)", UtilText.parse(inventoryNPC, "[npc.Name] isn't going to let you equip [npc.her] weapons without buying them first."), null);
+								return new Response("Экипировать в левую руку (Себе)", UtilText.parse(inventoryNPC, "[npc.Name] не позволит тебе экипировать оружие [npc.her], не купив его сначала."), null);
 								
 							} else if (index == 9) {
 								return getBuybackResponse();
@@ -3868,10 +3868,10 @@ public class InventoryDialogue {
 								return getQuickTradeResponse();
 								
 							} else if(index == 11) {
-								return new Response(UtilText.parse(inventoryNPC, "Equip Main ([npc.HerHim])"), UtilText.parse(inventoryNPC, "[npc.Name] isn't going to equip the weapons that [npc.sheIs] trying to sell!"), null);
+								return new Response(UtilText.parse(inventoryNPC, "Экипировать основное ([npc.HerHim])"), UtilText.parse(inventoryNPC, "[npc.Name] не собирается надевать то оружие, которое пытается продать [npc.sheIs]!"), null);
 								
 							} else if(index == 12) {
-								return new Response(UtilText.parse(inventoryNPC, "Equip Offhand ([npc.HerHim])"), UtilText.parse(inventoryNPC, "[npc.Name] isn't going to equip the weapons that [npc.sheIs] trying to sell!"), null);
+								return new Response(UtilText.parse(inventoryNPC, "Экипировать в левую руку ([npc.HerHim])"), UtilText.parse(inventoryNPC, "[npc.Name] не собирается надевать то оружие, которое пытается продать [npc.sheIs]!"), null);
 								
 							} else {
 								return null;
@@ -3888,18 +3888,18 @@ public class InventoryDialogue {
 		}
 	};
 	
-	public static final DialogueNode CLOTHING_INVENTORY = new DialogueNode("Clothing", "", true) {
+	public static final DialogueNode CLOTHING_INVENTORY = new DialogueNode("Одежда", "", true) {
 
 		@Override
 		public String getLabel() {
 			if(!Main.game.isInNewWorld()) {
-				return "Evening's Attire";
+				return "Вечерний наряд";
 			}
 			
 			if (Main.game.getDialogueFlags().values.contains(DialogueFlagValue.quickTrade) && !Main.game.isInSex() && !Main.game.isInCombat()) {
-				return "Inventory (Quick-Manage is <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>ON</b>)";
+				return "Инвентарь (Быстрое управление <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>ВКЛЮЧЕНО</b>)";
 			} else {
-				return "Inventory";
+				return "Инвентарь";
 			}
 		}
 		
@@ -3919,7 +3919,7 @@ public class InventoryDialogue {
 				for(InventorySlot is : clothing.getClothingType().getEquipSlots()) {
 					List<String> descriptions = clothing.getExtraDescriptions(null, is, true);
 					if(!descriptions.isEmpty()) {
-						sb.append("<i>When equipped into the '"+is.getName()+"' slot:</i><br/>");
+						sb.append("<i>When equipped into the '"+is.getName()+"слот:</i><br/>");
 						for(String s : clothing.getExtraDescriptions(null, is, true)) {
 							sb.append(s+"<br/>");
 						}
@@ -3930,13 +3930,13 @@ public class InventoryDialogue {
 							? (inventoryNPC != null && interactionType == InventoryInteraction.TRADING
 							? "<p>"
 								+(inventoryNPC.willBuy(clothing)
-									? inventoryNPC.getName("The") + " will buy it for " + UtilText.formatAsMoney(clothing.getPrice(inventoryNPC.getBuyModifier())) + "."
-									: inventoryNPC.getName("The") + " doesn't want to buy this.")
+									? inventoryNPC.getName("") + " купит за " + UtilText.formatAsMoney(clothing.getPrice(inventoryNPC.getBuyModifier())) + "."
+									: inventoryNPC.getName("") + " не хочет покупать это.")
 								+"</p>"
 							: "")
 					:(inventoryNPC != null && interactionType == InventoryInteraction.TRADING
 						? "<p>"
-								+ inventoryNPC.getName("The") + " will sell it for " + UtilText.formatAsMoney(clothing.getPrice(inventoryNPC.getSellModifier(clothing))) + "."
+								+ inventoryNPC.getName("") + " продаст за " + UtilText.formatAsMoney(clothing.getPrice(inventoryNPC.getSellModifier(clothing))) + "."
 							+ "</p>" 
 						: "")));
 			
@@ -3962,7 +3962,7 @@ public class InventoryDialogue {
 
 			if(Main.game.isBadEnd()) {
 				if(index==1) {
-					return new Response("Unavailable", "You can't manipulate your inventory during a bad end...", null);
+					return new Response("Недоступно", "Вы не можете управлять инвентарем во время плохого финала...", null);
 				}
 				return null;
 			}
@@ -3980,43 +3980,43 @@ public class InventoryDialogue {
 
 					switch(interactionType) {
 						case SEX:
-							String dropTitle = owner.getLocationPlace().isItemsDisappear()?"Drop ":"Store ";
+							String dropTitle = owner.getLocationPlace().isItemsDisappear()?"Выбросить ":"Спрятать ";
 							if(index == 1) {
-								return new Response(dropTitle+"(1)", "You can't drop clothing while masturbating.", null);
+								return new Response(dropTitle+"(1)", "Нельзя снимать одежду во время мастурбации.", null);
 								
 							} else if(index == 2) {
-								return new Response(dropTitle+"(5)", "You can't drop clothing while masturbating.", null);
+								return new Response(dropTitle+"(5)", "Нельзя снимать одежду во время мастурбации.", null);
 								
 							} else if(index == 3) {
-								return new Response(dropTitle+"(All)", "You can't drop clothing while masturbating.", null);
+								return new Response(dropTitle+"(Все)", "Нельзя снимать одежду во время мастурбации.", null);
 								
 							} else if(index == 4) {
-								return new Response("Dye", "You can't dye your clothing while masturbating.", null);
+								return new Response("Краситель", "Нельзя красить одежду во время мастурбации.", null);
 								
 							} else if(index == 5) {
 								if(clothing.isCondom()) {
 									if(clothing.getCondomEffect().getPotency().isNegative()) {
-										return new Response("Repair (<i>1 Essence</i>)", "You can't repair the condom while masturbating.", null);
+										return new Response("Починить (<i>1 Эссенция</i>)", "Нельзя чинить презерватив во время мастурбации.", null);
 									}
-									return new Response("Sabotage", "You can't sabotage the condom while masturbating.", null);
+									return new Response("Саботаж", "Нельзя саботировать презерватив во время мастурбации.", null);
 								}
-								return new Response("Enchant", "You can't enchant clothing while masturbating.", null);
+								return new Response("Зачаровать", "Нельзя зачаровывать одежду во время мастурбации.", null);
 
 							} else if(index >= 6 && index <= 9 && index-6<clothing.getClothingType().getEquipSlots().size()) {
 								InventorySlot slot = clothing.getClothingType().getEquipSlots().get(index-6);
 								if(Main.sex.isCharacterImmobilised(Main.game.getPlayer())) {
-									return new Response("Equip: "+Util.capitaliseSentence(slot.getName()), "You can't equip this as you are currently [style.colourTerrible(immobilised)]!", null);
+									return new Response("Надеть: "+Util.capitaliseSentence(slot.getName()), "Вы не можете надеть это, так как сейчас вы [style.colourTerrible(обездвижены)]!", null);
 								}
 								if(clothing.isCanBeEquipped(Main.game.getPlayer(), slot)) {
 									if(clothing.isAbleToBeEquippedDuringSex(slot).getKey()) {
 										if(!Main.sex.getInitialSexManager().isAbleToEquipSexClothing(Main.game.getPlayer(), Main.game.getPlayer(), clothing)) {
-											return new Response("Equip: "+Util.capitaliseSentence(slot.getName()), "As this is a special sex scene, you cannot equip clothing during it!", null);
+											return new Response("Надеть: "+Util.capitaliseSentence(slot.getName()), "Так как это особая секс-сцена, вы не можете надевать одежду во время неё!", null);
 										}
 										if(!Main.sex.isClothingEquipAvailable(Main.game.getPlayer(), slot, clothing)) {
-											return new Response("Equip: "+Util.capitaliseSentence(slot.getName()), "This slot is involved with an ongoing sex action, so you cannot equip clothing into it!", null);
+											return new Response("Надеть: "+Util.capitaliseSentence(slot.getName()), "Этот слот задействован в текущем сексуальном действии, поэтому вы не можете надеть в него одежду!", null);
 										}
 										if(Main.game.getPlayer().isAbleToEquip(clothing, slot, false, Main.game.getPlayer())) {
-											return new Response("Equip: "+Util.capitaliseSentence(slot.getName()), "Equip the " + clothing.getName() + ".", Main.sex.SEX_DIALOGUE){
+											return new Response("Надеть: "+Util.capitaliseSentence(slot.getName()), "Экипировать " + clothing.getName() + ".", Main.sex.SEX_DIALOGUE){
 												@Override
 												public void effects(){
 													AbstractClothing c = clothing;
@@ -4028,15 +4028,15 @@ public class InventoryDialogue {
 												}
 											};
 										} else {
-											return new Response("Equip: "+Util.capitaliseSentence(slot.getName()), getClothingBlockingRemovalText(Main.game.getPlayer(), "equip"), null);
+											return new Response("Надеть: "+Util.capitaliseSentence(slot.getName()), getClothingBlockingRemovalText(Main.game.getPlayer(), "надеть"), null);
 										}
 										
 									} else {
-										return new Response("Equip: "+Util.capitaliseSentence(slot.getName()), clothing.isAbleToBeEquippedDuringSex(slot).getValue(), null);
+										return new Response("Надеть: "+Util.capitaliseSentence(slot.getName()), clothing.isAbleToBeEquippedDuringSex(slot).getValue(), null);
 									}
 									
 								} else {
-									return new Response("Equip: "+Util.capitaliseSentence(slot.getName()), clothing.getCannotBeEquippedText(Main.game.getPlayer(), slot), null);
+									return new Response("Надеть: "+Util.capitaliseSentence(slot.getName()), clothing.getCannotBeEquippedText(Main.game.getPlayer(), slot), null);
 								}
 								
 							} else if (index == 10) {
@@ -4049,12 +4049,12 @@ public class InventoryDialogue {
 							if(index == 1) {
 								if(owner.getLocationPlace().isItemsDisappear()) {
 									if(!clothing.getClothingType().isAbleToBeDropped()) {
-										return new Response("Drop (1)", "You cannot drop the " + clothing.getName() + "!", null);
+										return new Response("Выбросить (1)", "Вы не можете выбросить " + clothing.getName() + "!", null);
 										
 									} else if(areaFull) {
-										return new Response("Drop (1)", "This area is full, so you can't drop your " + clothing.getName() + " here!", null);
+										return new Response("Выбросить (1)", "Это место заполнено, поэтому вы не можете бросить свой " + clothing.getName() + " здесь!", null);
 									} else {
-										return new Response("Drop (1)", "Drop your " + clothing.getName() + ".", INVENTORY_MENU){
+										return new Response("Выбросить (1)", "Выбросить свой " + clothing.getName() + ".", INVENTORY_MENU){
 											@Override
 											public void effects(){
 												dropClothing(owner, clothing, 1);
@@ -4063,12 +4063,12 @@ public class InventoryDialogue {
 									}
 								} else {
 									if(!clothing.getClothingType().isAbleToBeDropped()) {
-										return new Response("Store (1)", "You cannot drop the " + clothing.getName() + "!", null);
+										return new Response("Сложить (1)", "Вы не можете выбросить " + clothing.getName() + "!", null);
 										
 									} else if(areaFull) {
-										return new Response("Store (1)", "This area is full, so you can't store your " + clothing.getName() + " here!", null);
+										return new Response("Сложить (1)", "Эта область заполнена, поэтому вы не можете сложить свои " + clothing.getName() + " здесь!", null);
 									} else {
-										return new Response("Store (1)", "Store the " + clothing.getName() + " in this area.", INVENTORY_MENU){
+										return new Response("Сложить (1)", "Сложить " + clothing.getName() + " в этой области.", INVENTORY_MENU){
 											@Override
 											public void effects(){
 												dropClothing(owner, clothing, 1);
@@ -4080,16 +4080,16 @@ public class InventoryDialogue {
 							} else if(index == 2) {
 								if(owner.getLocationPlace().isItemsDisappear()) {
 									if(!clothing.getClothingType().isAbleToBeDropped()) {
-										return new Response("Drop (5)", "You cannot drop the " + clothing.getName() + "!", null);
+										return new Response("Выбросить (5)", "Вы не можете выбросить " + clothing.getName() + "!", null);
 										
 									} else if(owner.getClothingCount(clothing) < 5) {
-										return new Response("Drop (5)", "You don't have five " + clothing.getNamePlural() + " to give!", null);
+										return new Response("Выбросить (5)", "У вас нет пяти " + clothing.getNamePlural() + " чтобы отдать!", null);
 										
 									} else if(areaFull) {
-										return new Response("Drop (5)", "This area is full, so you can't drop your " + clothing.getNamePlural() + " here!", null);
+										return new Response("Выбросить (5)", "Это место заполнено, поэтому вы не можете бросить свой " + clothing.getNamePlural() + " здесь!", null);
 										
 									} else {
-										return new Response("Drop (5)", "Drop five of your " + clothing.getNamePlural() + ".", INVENTORY_MENU){
+										return new Response("Выбросить (5)", "Выбросить пять ваших " + clothing.getNamePlural() + ".", INVENTORY_MENU){
 											@Override
 											public void effects(){
 												dropClothing(owner, clothing, 5);
@@ -4098,16 +4098,16 @@ public class InventoryDialogue {
 									}
 								} else {
 									if(!clothing.getClothingType().isAbleToBeDropped()) {
-										return new Response("Store (5)", "You cannot drop the " + clothing.getName() + "!", null);
+										return new Response("Сложить (5)", "Вы не можете выбросить " + clothing.getName() + "!", null);
 										
 									} else if(owner.getClothingCount(clothing) < 5) {
-										return new Response("Store (5)", "You don't have five " + clothing.getNamePlural() + " to give!", null);
+										return new Response("Сложить (5)", "У вас нет пяти " + clothing.getNamePlural() + " чтобы отдать!", null);
 										
 									} else if(areaFull) {
-										return new Response("Store (5)", "This area is full, so you can't store your " + clothing.getNamePlural() + " here!", null);
+										return new Response("Сложить (5)", "Эта область заполнена, поэтому вы не можете сложить свои " + clothing.getNamePlural() + " здесь!", null);
 										
 									} else {
-										return new Response("Store (5)", "Store five of your " + clothing.getNamePlural() + " in this area.", INVENTORY_MENU){
+										return new Response("Сложить (5)", "Сложить пять ваших " + clothing.getNamePlural() + " в этой области.", INVENTORY_MENU){
 											@Override
 											public void effects(){
 												dropClothing(owner, clothing, 5);
@@ -4119,12 +4119,12 @@ public class InventoryDialogue {
 							} else if(index == 3) {
 								if(owner.getLocationPlace().isItemsDisappear()) {
 									if(!clothing.getClothingType().isAbleToBeDropped()) {
-										return new Response("Drop (All)", "You cannot drop the " + clothing.getName() + "!", null);
+										return new Response("Выбросить (Все)", "Вы не можете выбросить " + clothing.getName() + "!", null);
 										
 									} else if(areaFull) {
-										return new Response("Drop (All)", "This area is full, so you can't drop your " + clothing.getNamePlural() + " here!", null);
+										return new Response("Выбросить (Все)", "Это место заполнено, поэтому вы не можете бросить свой " + clothing.getNamePlural() + " здесь!", null);
 									} else {
-										return new Response("Drop (All)", "Drop all of your " + clothing.getNamePlural() + ".", INVENTORY_MENU){
+										return new Response("Выбросить (Все)", "Выбросить все ваши " + clothing.getNamePlural() + ".", INVENTORY_MENU){
 											@Override
 											public void effects(){
 												dropClothing(owner, clothing, owner.getClothingCount(clothing));
@@ -4133,12 +4133,12 @@ public class InventoryDialogue {
 									}
 								} else {
 									if(!clothing.getClothingType().isAbleToBeDropped()) {
-										return new Response("Store (All)", "You cannot drop the " + clothing.getName() + "!", null);
+										return new Response("Склад (Все)", "Вы не можете выбросить " + clothing.getName() + "!", null);
 										
 									} else if(areaFull) {
-										return new Response("Store (All)", "This area is full, so you can't store your " + clothing.getNamePlural() + " here!", null);
+										return new Response("Склад (Все)", "Эта область заполнена, поэтому вы не можете сложить свои " + clothing.getNamePlural() + " здесь!", null);
 									} else {
-										return new Response("Store (All)", "Store all of your " + clothing.getNamePlural() + " in this area.", INVENTORY_MENU){
+										return new Response("Склад (Все)", "Сложить все ваши " + clothing.getNamePlural() + " в этой области.", INVENTORY_MENU){
 											@Override
 											public void effects(){
 												dropClothing(owner, clothing, owner.getClothingCount(clothing));
@@ -4153,10 +4153,10 @@ public class InventoryDialogue {
 									boolean isDyeingStackItem = Main.game.getPlayer().getAllClothingInInventory().get(clothing) > 1;
 									boolean canDye = !(isDyeingStackItem && hasFullInventory);
 									if (canDye) {
-										return new Response("Dye",
+										return new Response("Краситель",
 												Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
-													?"Use your proficiency with [style.colourEarth(Earth spells)] to dye this item of clothing."
-													:"Use a dye-brush to dye this item of clothing.",
+													?"Используйте свое мастерство в [style.colourEarth(заклинаниях Земли)], чтобы покрасить эту одежду."
+													:"Используйте кисть для окрашивания, чтобы покрасить эту одежду.",
 												DYE_CLOTHING) {
 											@Override
 											public void effects() {
@@ -4164,10 +4164,10 @@ public class InventoryDialogue {
 											}
 										};
 									} else {
-										return new Response("Dye", "Your inventory is full, so you can't dye this item of clothing.", null);
+										return new Response("Краситель", "Ваш инвентарь полон, поэтому вы не можете покрасить эту одежду.", null);
 									}
 								} else {
-									return new Response("Dye", "You'll need to find a dye-brush if you want to dye your clothes.", null);
+									return new Response("Краситель", "Вам нужно найти кисть для окрашивания, если вы хотите покрасить свою одежду.", null);
 								}
 								
 							} else if(index == 5) {
@@ -4177,13 +4177,12 @@ public class InventoryDialogue {
 								if(Main.game.isDebugMode()
 										|| (Main.game.getPlayer().hasQuest(QuestLine.SIDE_ENCHANTMENT_DISCOVERY) && Main.game.getPlayer().isQuestCompleted(QuestLine.SIDE_ENCHANTMENT_DISCOVERY))) {
 									if(clothing.getEnchantmentItemType(null)==null || clothing.getItemTags().contains(ItemTag.UNENCHANTABLE)) {
-										return new Response("Enchant", "This clothing cannot be enchanted!", null);
+										return new Response("Зачаровать", "Эту одежду нельзя зачаровать!", null);
 										
 									} else if(!clothing.isEnchantmentKnown()) {
 										if(Main.game.getPlayer().getEssenceCount() >= IDENTIFICATION_ESSENCE_PRICE) {
-											return new Response("Identify ([style.italicsArcane("+IDENTIFICATION_ESSENCE_PRICE+" Essences)])",
-													"To identify the "+clothing.getName()+", you can either spend "+IDENTIFICATION_ESSENCE_PRICE+" arcane essences to do it yourself,"
-															+ " or go to a vendor and pay "+IDENTIFICATION_PRICE+" flames to have them do it for you.",
+											return new Response("Идентифицировать ([style.italicsArcane(Arcane"+IDENTIFICATION_ESSENCE_PRICE+"  Эссенции)])",
+													"Чтобы идентифицировать "+clothing.getName()+", вы можете либо потратить "+IDENTIFICATION_ESSENCE_PRICE+" арканных эссенций, чтобы сделать это самому, или же прийти к торговцу и заплатить "+IDENTIFICATION_PRICE+" огнями, чтобы они сделали всё за тебя.",
 													CLOTHING_INVENTORY) {
 												@Override
 												public void effects() {
@@ -4194,24 +4193,19 @@ public class InventoryDialogue {
 													clothing = AbstractClothing.enchantmentRemovedClothing;
 													
 													Main.game.getTextEndStringBuilder().append(
-															"<p>"
-																+ "You channel the power of "+Util.intToString(IDENTIFICATION_ESSENCE_PRICE)+" of your arcane essences into the "+clothing.getName()
-																	+", and as it emits a faint purple glow, you find yourself able to detect what sort of enchantment it has!"
-															+ "</p>"
+															"<p>Вы направляете силу "+Util.intToString(IDENTIFICATION_ESSENCE_PRICE)+" ваших арканных эссенций в "+clothing.getName()
+																	+", и когда предмет начинает испускать слабое фиолетовое свечение, вы понимаете, какое именно зачарование на нём наложено!</p>"
 															+ enchantmentRemovedString
-															+ "<p style='text-align:center;'>"
-																+ "Identifying the "+clothing.getName()+" has cost you [style.boldBad("+Util.intToString(IDENTIFICATION_ESSENCE_PRICE)+")] [style.boldArcane(Arcane Essences)]!"
-															+ "</p>");
+															+ "<p style='text-align:center;'>Опознание "+clothing.getName()+" стоило вам [style.boldBad("+Util.intToString(IDENTIFICATION_ESSENCE_PRICE)+")] [style.boldArcane(Эссенции Arcane)]!</p>");
 													RenderingEngine.setPage(Main.game.getPlayer(), clothing);
 												}
 											};
 										} else {
-											return new Response("Identify (<i>"+IDENTIFICATION_ESSENCE_PRICE+" Essences</i>)",
-													"To identify the "+clothing.getName()+", you can either spend "+IDENTIFICATION_ESSENCE_PRICE+" arcane essences to do it yourself ([style.italicsBad(which you don't have)]),"
-															+ " or go to a vendor and pay "+IDENTIFICATION_PRICE+" flames to have them do it for you.", null);
+											return new Response("Опознать (<i>"+IDENTIFICATION_ESSENCE_PRICE+" Эссенции</i>)",
+													"Чтобы идентифицировать "+clothing.getName()+", вы можете либо потратить "+IDENTIFICATION_ESSENCE_PRICE+" арканные эссенции, чтобы сделать всё самому ([style.italicsBad(которых у вас нет)]), или отправляйтесь к торговцу и платите "+IDENTIFICATION_PRICE+" огнями, чтобы они сделали всё за тебя.", null);
 										}
 									}
-									return new Response("Enchant", "Enchant this clothing.", EnchantmentDialogue.ENCHANTMENT_MENU) {
+									return new Response("Зачаровать", "Зачаровать эту одежду.", EnchantmentDialogue.ENCHANTMENT_MENU) {
 										@Override
 										public DialogueNode getNextDialogue() {
 											return EnchantmentDialogue.getEnchantmentMenu(clothing);
@@ -4219,20 +4213,20 @@ public class InventoryDialogue {
 									};
 									
 								} else {
-									return new Response("Enchant", getEnchantmentNotDiscoveredText("clothing"), null);
+									return new Response("Зачаровать", getEnchantmentNotDiscoveredText("одежда"), null);
 								}
 								
 							} else if(index >= 6 && index <= 9 && index-6<clothing.getClothingType().getEquipSlots().size()) {
 								InventorySlot slot = clothing.getClothingType().getEquipSlots().get(index-6);
 								if(clothing.isCanBeEquipped(Main.game.getPlayer(), slot)) {
-									return new Response("Equip: "+Util.capitaliseSentence(slot.getName()), "Equip the " + clothing.getName() + ".", INVENTORY_MENU){
+									return new Response("Надеть: "+Util.capitaliseSentence(slot.getName()), "Экипировать " + clothing.getName() + ".", INVENTORY_MENU){
 										@Override
 										public void effects(){
 											Main.game.getTextEndStringBuilder().append("<p style='text-align:center;'>" + equipClothingFromInventory(Main.game.getPlayer(), slot, Main.game.getPlayer(), clothing) + "</p>");
 										}
 									};
 								} else {
-									return new Response("Equip: "+Util.capitaliseSentence(slot.getName()), clothing.getCannotBeEquippedText(Main.game.getPlayer(), slot), null);
+									return new Response("Надеть: "+Util.capitaliseSentence(slot.getName()), clothing.getCannotBeEquippedText(Main.game.getPlayer(), slot), null);
 								}
 								
 							} else if (index == 10) {
@@ -4248,36 +4242,36 @@ public class InventoryDialogue {
 					switch(interactionType) {
 						case COMBAT:
 							if(index == 1) {
-								return new Response("Give (1)", "You can't give someone clothing while fighting them!", null);
+								return new Response("Отдать (1)", "Вы не можете дарить одежду во время боя!", null);
 								
 							} else if(index == 2) {
-								return new Response("Give (5)", "You can't give someone clothing while fighting them!", null);
+								return new Response("Отдать (5)", "Вы не можете дарить одежду во время боя!", null);
 								
 							} else if(index == 3) {
-								return new Response("Give (All)", "You can't give someone clothing while fighting them!", null);
+								return new Response("Отдать (Все)", "Вы не можете дарить одежду во время боя!", null);
 								
 							} else if(index == 4) {
-								return new Response("Dye", "You can't dye your clothing while fighting someone!", null);
+								return new Response("Краситель", "Вы не можете красить одежду во время боя!", null);
 								
 							} else if(index == 5) {
 								if(clothing.isCondom()) {
 									if(clothing.getCondomEffect().getPotency().isNegative()) {
-										return new Response("Repair (<i>1 Essence</i>)", "You can't repair the condom while fighting someone!", null);
+										return new Response("Починить (<i>1 Эссенция</i>)", "Вы не можете чинить презерватив во время боя!", null);
 									}
-									return new Response("Sabotage", "You can't sabotage the condom while fighting someone!", null);
+									return new Response("Саботаж", "Вы не можете портить презерватив во время боя!", null);
 								}
-								return new Response("Enchant", "You can't enchant clothing while fighting someone!", null);
+								return new Response("Зачаровать", "Вы не можете зачаровывать одежду во время боя!", null);
 								
 							} else if(index >= 6 && index <= 9 && index-6<clothing.getClothingType().getEquipSlots().size()) {
 								InventorySlot slot = clothing.getClothingType().getEquipSlots().get(index-6);
-								return new Response("Equip: "+Util.capitaliseSentence(slot.getName()), "You cannot change your clothes while fighting someone!", null);
+								return new Response("Надеть: "+Util.capitaliseSentence(slot.getName()), "Вы не можете переодеваться прямо во время боя!", null);
 								
 							} else if (index == 10) {
 								return getQuickTradeResponse();
 
 							} else if(index >= 11 && index <= 14 && index-11<clothing.getClothingType().getEquipSlots().size()) {
 								InventorySlot slot = clothing.getClothingType().getEquipSlots().get(index-11);
-								return new Response("Equip: "+Util.capitaliseSentence(slot.getName())+" (Opponent)", "You can't make your opponent equip clothing while fighting them!", null);
+								return new Response("Надеть: "+Util.capitaliseSentence(slot.getName())+" (Противник)", "Вы не можете заставить противника надеть одежду прямо во время боя!", null);
 								
 							} else {
 								return null;
@@ -4288,12 +4282,12 @@ public class InventoryDialogue {
 							
 							if(index == 1) {
 								if(!clothing.getClothingType().isAbleToBeDropped()) {
-									return new Response("Give (1)", "You cannot give away the " + clothing.getName() + "!", null);
+									return new Response("Отдать (1)", "Вы не можете отдать " + clothing.getName() + "!", null);
 									
 								} else if(inventoryFull) {
-									return new Response("Give (1)", UtilText.parse(inventoryNPC, "[npc.NamePos] inventory is already full!"), null);
+									return new Response("Отдать (1)", UtilText.parse(inventoryNPC, "[npc.NamePos], инвентарь уже полон!"), null);
 								}
-								return new Response("Give (1)", UtilText.parse(inventoryNPC, "Give [npc.name] the " + clothing.getName() + "."), INVENTORY_MENU){
+								return new Response("Отдать (1)", UtilText.parse(inventoryNPC, "Отдать [npc.name] " + clothing.getName() + "."), INVENTORY_MENU){
 									@Override
 									public void effects(){
 										transferClothing(Main.game.getPlayer(), inventoryNPC, clothing, 1);
@@ -4302,30 +4296,30 @@ public class InventoryDialogue {
 								
 							} else if(index == 2) {
 								if(!clothing.getClothingType().isAbleToBeDropped()) {
-									return new Response("Give (5)", "You cannot give away the " + clothing.getName() + "!", null);
+									return new Response("Отдать (5)", "Вы не можете отдать " + clothing.getName() + "!", null);
 									
 								} else if(inventoryFull) {
-									return new Response("Give (5)", UtilText.parse(inventoryNPC, "[npc.NamePos] inventory is already full!"), null);
+									return new Response("Отдать (5)", UtilText.parse(inventoryNPC, "[npc.NamePos], инвентарь уже полон!"), null);
 								}
 								if(Main.game.getPlayer().getClothingCount(clothing) >= 5) {
-									return new Response("Give (5)", UtilText.parse(inventoryNPC, "Give [npc.name] five of your " + clothing.getNamePlural() + "."), INVENTORY_MENU){
+									return new Response("Отдать (5)", UtilText.parse(inventoryNPC, "Отдать [npc.name] пять ваших " + clothing.getNamePlural() + "."), INVENTORY_MENU){
 										@Override
 										public void effects(){
 											transferClothing(Main.game.getPlayer(), inventoryNPC, clothing, 5);
 										}
 									};
 								} else {
-									return new Response("Give (5)", "You don't have five " + clothing.getNamePlural() + " to give!", null);
+									return new Response("Отдать (5)", "У вас нет пяти " + clothing.getNamePlural() + " чтобы отдать!", null);
 								}
 								
 							} else if(index == 3) {
 								if(!clothing.getClothingType().isAbleToBeDropped()) {
-									return new Response("Give (All)", "You cannot give away the " + clothing.getName() + "!", null);
+									return new Response("Отдать (Все)", "Вы не можете отдать " + clothing.getName() + "!", null);
 									
 								} else if(inventoryFull) {
-									return new Response("Give (All)", UtilText.parse(inventoryNPC, "[npc.NamePos] inventory is already full!"), null);
+									return new Response("Отдать (Все)", UtilText.parse(inventoryNPC, "[npc.NamePos], инвентарь уже полон!"), null);
 								}
-								return new Response("Give (All)", UtilText.parse(inventoryNPC, "Give [npc.name] all of your " + clothing.getNamePlural() + "."), INVENTORY_MENU){
+								return new Response("Отдать (Все)", UtilText.parse(inventoryNPC, "Отдать [npc.name] все ваши " + clothing.getNamePlural() + "."), INVENTORY_MENU){
 									@Override
 									public void effects(){
 										transferClothing(Main.game.getPlayer(), inventoryNPC, clothing, Main.game.getPlayer().getClothingCount(clothing));
@@ -4338,10 +4332,10 @@ public class InventoryDialogue {
 									boolean isDyeingStackItem = Main.game.getPlayer().getAllClothingInInventory().get(clothing) > 1;
 									boolean canDye = !(isDyeingStackItem && hasFullInventory);
 									if (canDye) {
-										return new Response("Dye",
+										return new Response("Краситель",
 												Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
-													?"Use your proficiency with [style.colourEarth(Earth spells)] to dye this item."
-													:"Use a dye-brush to dye this item of clothing.",
+													?"Используйте свое мастерство в [style.colourEarth(заклинаниях Земли)], чтобы покрасить этот предмет."
+													:"Используйте кисть для окрашивания, чтобы покрасить эту одежду.",
 												DYE_CLOTHING) {
 											@Override
 											public void effects() {
@@ -4349,10 +4343,10 @@ public class InventoryDialogue {
 											}
 										};
 									} else {
-										return new Response("Dye", "Your inventory is full, so you can't dye this item of clothing.", null);
+										return new Response("Краситель", "Ваш инвентарь полон, поэтому вы не можете покрасить эту одежду.", null);
 									}
 								} else {
-									return new Response("Dye", "You'll need to find a dye-brush if you want to dye your clothes.", null);
+									return new Response("Краситель", "Вам нужно найти кисть для окрашивания, если вы хотите покрасить свою одежду.", null);
 								}
 								
 							} else if(index == 5) {
@@ -4362,13 +4356,12 @@ public class InventoryDialogue {
 								if(Main.game.isDebugMode()
 										|| (Main.game.getPlayer().hasQuest(QuestLine.SIDE_ENCHANTMENT_DISCOVERY) && Main.game.getPlayer().isQuestCompleted(QuestLine.SIDE_ENCHANTMENT_DISCOVERY))) {
 									if(clothing.getEnchantmentItemType(null)==null || clothing.getItemTags().contains(ItemTag.UNENCHANTABLE)) {
-										return new Response("Enchant", "This clothing cannot be enchanted!", null);
+										return new Response("Зачаровать", "Эту одежду нельзя зачаровать!", null);
 										
 									} else if(!clothing.isEnchantmentKnown()) {
 										if(Main.game.getPlayer().getEssenceCount() >= IDENTIFICATION_ESSENCE_PRICE) {
-											return new Response("Identify ([style.italicsArcane("+IDENTIFICATION_ESSENCE_PRICE+" Essences)])",
-													"To identify the "+clothing.getName()+", you can either spend "+IDENTIFICATION_ESSENCE_PRICE+" arcane essences to do it yourself,"
-															+ " or go to a vendor and pay "+IDENTIFICATION_PRICE+" flames to have them do it for you.",
+											return new Response("Идентифицировать ([style.italicsArcane(Arcane"+IDENTIFICATION_ESSENCE_PRICE+"  Эссенции)])",
+													"Чтобы идентифицировать "+clothing.getName()+", вы можете либо потратить "+IDENTIFICATION_ESSENCE_PRICE+" арканных эссенций, чтобы сделать это самому, или же прийти к торговцу и заплатить "+IDENTIFICATION_PRICE+" огнями, чтобы они сделали всё за тебя.",
 													CLOTHING_INVENTORY) {
 												@Override
 												public void effects() {
@@ -4379,24 +4372,19 @@ public class InventoryDialogue {
 													clothing = AbstractClothing.enchantmentRemovedClothing;
 													
 													Main.game.getTextEndStringBuilder().append(
-															"<p>"
-																+ "You channel the power of "+Util.intToString(IDENTIFICATION_ESSENCE_PRICE)+" of your arcane essences into the "+clothing.getName()
-																	+", and as it emits a faint purple glow, you find yourself able to detect what sort of enchantment it has!"
-															+ "</p>"
+															"<p>Вы направляете силу "+Util.intToString(IDENTIFICATION_ESSENCE_PRICE)+" ваших арканных эссенций в "+clothing.getName()
+																	+", и когда предмет начинает испускать слабое фиолетовое свечение, вы понимаете, какое именно зачарование на нём наложено!</p>"
 															+ enchantmentRemovedString
-															+ "<p style='text-align:center;'>"
-																+ "Identifying the "+clothing.getName()+" has cost you [style.boldBad("+Util.intToString(IDENTIFICATION_ESSENCE_PRICE)+")] [style.boldArcane(Arcane Essences)]!"
-															+ "</p>");
+															+ "<p style='text-align:center;'>Опознание "+clothing.getName()+" стоило вам [style.boldBad("+Util.intToString(IDENTIFICATION_ESSENCE_PRICE)+")] [style.boldArcane(Эссенции Arcane)]!</p>");
 													RenderingEngine.setPage(Main.game.getPlayer(), clothing);
 												}
 											};
 										} else {
-											return new Response("Identify (<i>"+IDENTIFICATION_ESSENCE_PRICE+" Essences</i>)",
-													"To identify the "+clothing.getName()+", you can either spend "+IDENTIFICATION_ESSENCE_PRICE+" arcane essences to do it yourself ([style.italicsBad(which you don't have)]),"
-															+ " or go to a vendor and pay "+IDENTIFICATION_PRICE+" flames to have them do it for you.", null);
+											return new Response("Опознать (<i>"+IDENTIFICATION_ESSENCE_PRICE+" Эссенции</i>)",
+													"Чтобы идентифицировать "+clothing.getName()+", вы можете либо потратить "+IDENTIFICATION_ESSENCE_PRICE+" арканные эссенции, чтобы сделать всё самому ([style.italicsBad(которых у вас нет)]), или отправляйтесь к торговцу и платите "+IDENTIFICATION_PRICE+" огнями, чтобы они сделали всё за тебя.", null);
 										}
 									}
-									return new Response("Enchant", "Enchant this clothing.", EnchantmentDialogue.ENCHANTMENT_MENU) {
+									return new Response("Зачаровать", "Зачаровать эту одежду.", EnchantmentDialogue.ENCHANTMENT_MENU) {
 										@Override
 										public DialogueNode getNextDialogue() {
 											return EnchantmentDialogue.getEnchantmentMenu(clothing);
@@ -4404,20 +4392,20 @@ public class InventoryDialogue {
 									};
 									
 								} else {
-									return new Response("Enchant", getEnchantmentNotDiscoveredText("clothing"), null);
+									return new Response("Зачаровать", getEnchantmentNotDiscoveredText("одежда"), null);
 								}
 								
 							} else if(index >= 6 && index <= 9 && index-6<clothing.getClothingType().getEquipSlots().size()) {
 								InventorySlot slot = clothing.getClothingType().getEquipSlots().get(index-6);
 								if(clothing.isCanBeEquipped(Main.game.getPlayer(), slot)) {
-									return new Response("Equip: "+Util.capitaliseSentence(slot.getName()), "Equip the " + clothing.getName() + ".", INVENTORY_MENU) {
+									return new Response("Надеть: "+Util.capitaliseSentence(slot.getName()), "Экипировать " + clothing.getName() + ".", INVENTORY_MENU) {
 										@Override
 										public void effects(){
 											Main.game.getTextEndStringBuilder().append("<p style='text-align:center;'>" + equipClothingFromInventory(Main.game.getPlayer(), slot, Main.game.getPlayer(), clothing) + "</p>");
 										}
 									};
 								} else {
-									return new Response("Equip: "+Util.capitaliseSentence(slot.getName()), clothing.getCannotBeEquippedText(Main.game.getPlayer(), slot), null);
+									return new Response("Надеть: "+Util.capitaliseSentence(slot.getName()), clothing.getCannotBeEquippedText(Main.game.getPlayer(), slot), null);
 								}
 									
 							} else if (index == 10) {
@@ -4434,7 +4422,7 @@ public class InventoryDialogue {
 								Value<Boolean, String> equipAllowed = inventoryNPC.isInventoryEquipAllowed(clothing, slot);
 								if(!equipAllowed.getKey()) {
 									return new Response(
-											UtilText.parse(inventoryNPC, "Equip: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim])"),
+											UtilText.parse(inventoryNPC, "Надеть: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim])"),
 											UtilText.parse(inventoryNPC, equipAllowed.getValue()),
 											null);
 								}
@@ -4444,21 +4432,21 @@ public class InventoryDialogue {
 										return new Response(
 												UtilText.parse(inventoryNPC,
 														!willEnslave
-															?"[style.colourMinorBad(Equip: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim]))]"
-															:"[style.colourArcane(Equip: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim]))]"),
+															?"[style.colourMinorBad(Надеть: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim]))]"
+															:"[style.colourArcane(Надеть: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim]))]"),
 												UtilText.parse(inventoryNPC,
-														"Make [npc.name] equip the "+clothing.getName()+"."
+														"Заставить [npc.name] экипировать "+clothing.getName()+"."
 														+(!willEnslave
-															?"<br/><i>Despite the fact that the "+clothing.getName()+" "
-																	+(clothing.getClothingType().isPlural()?"have an enslavement enchantment, they":"has an enslavement enchantment, it")
-																	+" [style.colourMinorBad(will not enslave [npc.name])], as"
+															?"<br/><i>Несмотря на то, что "+clothing.getName()+" "
+																	+(clothing.getClothingType().isPlural()?"имеют чары порабощения, они":"имеет чары порабощения, это")
+																	+" [style.colourMinorBad(не поработит [npc.name])], так как"
 																	+ (Main.game.getPlayer().isHasSlaverLicense()
-																			?" [npc.sheIsFull] not a suitable target for enslavement"
-																			:" you do not possess a slaver license")
+																			?" [npc.sheIsFull] не подходит для порабощения"
+																			:" у вас нет лицензии работорговца")
 																	+"!</i>"
-															:"<br/><i>Thanks to the fact that the "+clothing.getName()+" "
-																	+(clothing.getClothingType().isPlural()?"have an enslavement enchantment, they":"has an enslavement enchantment, it")
-																	+" [style.colourArcane(will enslave [npc.name])], making you [npc.her] new owner!</i>")),
+															:"<br/><i>Благодаря тому, что "+clothing.getName()+" "
+																	+(clothing.getClothingType().isPlural()?"имеют чары порабощения, они":"имеет чары порабощения, это")
+																	+" [style.colourArcane(поработит [npc.name])], вы станете [npc.her] новым владельцем!</i>")),
 												INVENTORY_MENU){
 											@Override
 											public DialogueNode getNextDialogue() {
@@ -4490,8 +4478,8 @@ public class InventoryDialogue {
 										
 									} else {
 										return new Response(
-												UtilText.parse(inventoryNPC, "Equip: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim])"),
-												UtilText.parse(inventoryNPC, "Make [npc.name] equip the "+clothing.getName()+"!"),
+												UtilText.parse(inventoryNPC, "Надеть: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim])"),
+												UtilText.parse(inventoryNPC, "Заставить [npc.name] экипировать "+clothing.getName()+"!"),
 												INVENTORY_MENU){
 											@Override
 											public void effects(){
@@ -4502,7 +4490,7 @@ public class InventoryDialogue {
 									
 								} else {
 									return new Response(
-											UtilText.parse(inventoryNPC, "Equip: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim])"),
+											UtilText.parse(inventoryNPC, "Надеть: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim])"),
 											clothing.getCannotBeEquippedText(inventoryNPC, slot),
 											null);
 								}
@@ -4513,41 +4501,41 @@ public class InventoryDialogue {
 							
 						case SEX:
 							if(index == 1) {
-								return new Response("Give (1)", "You can't give someone clothing while having sex with them!", null);
+								return new Response("Отдать (1)", "Вы не можете передать одежду во время секса!", null);
 								
 							} else if(index == 2) {
-								return new Response("Give (5)", "You can't give someone clothing while having sex with them!", null);
+								return new Response("Отдать (5)", "Вы не можете передать одежду во время секса!", null);
 								
 							} else if(index == 3) {
-								return new Response("Give (All)", "You can't give someone clothing while having sex with them!", null);
+								return new Response("Отдать (Все)", "Вы не можете передать одежду во время секса!", null);
 								
 							} else if(index == 4) {
-								return new Response("Dye", "You can't dye your clothing while having sex with someone!", null);
+								return new Response("Краситель", "Вы не можете покрасить одежду во время секса!", null);
 								
 							} else if(index == 5) {
 								if(clothing.isCondom()) {
 									if(clothing.getCondomEffect().getPotency().isNegative()) {
-										return new Response("Repair (<i>1 Essence</i>)", "You can't repair the condom while having sex with someone!", null);
+										return new Response("Починить (<i>1 Эссенция</i>)", "Вы не можете починить презерватив во время секса!", null);
 									}
-									return new Response("Sabotage", "You can't sabotage the condom while having sex with someone!", null);
+									return new Response("Саботаж", "Вы не можете испортить презерватив во время секса!", null);
 								}
-								return new Response("Enchant", "You can't enchant clothing while having sex with someone!", null);
+								return new Response("Зачаровать", "Нельзя зачаровывать одежду, когда вы занимаетесь сексом!", null);
 
 							} else if(index >= 6 && index <= 9 && index-6<clothing.getClothingType().getEquipSlots().size()) {
 								InventorySlot slot = clothing.getClothingType().getEquipSlots().get(index-6);
 								if(Main.sex.isCharacterImmobilised(Main.game.getPlayer())) {
-									return new Response("Equip: "+Util.capitaliseSentence(slot.getName()), "You can't equip this as you are currently [style.colourTerrible(immobilised)]!", null);
+									return new Response("Надеть: "+Util.capitaliseSentence(slot.getName()), "Вы не можете надеть это, так как сейчас вы [style.colourTerrible(обездвижены)]!", null);
 								}
 								if(clothing.isCanBeEquipped(Main.game.getPlayer(), slot)) {
 									if(clothing.isAbleToBeEquippedDuringSex(slot).getKey()) {
 										if(!Main.sex.getInitialSexManager().isAbleToEquipSexClothing(Main.game.getPlayer(), Main.game.getPlayer(), clothing)) {
-											return new Response("Equip: "+Util.capitaliseSentence(slot.getName()), "As this is a special sex scene, you cannot equip clothing during it!", null);
+											return new Response("Надеть: "+Util.capitaliseSentence(slot.getName()), "Так как это особая секс-сцена, вы не можете надевать одежду во время неё!", null);
 										}
 										if(!Main.sex.isClothingEquipAvailable(Main.game.getPlayer(), slot, clothing)) {
-											return new Response("Equip: "+Util.capitaliseSentence(slot.getName()), "This slot is involved with an ongoing sex action, so you cannot equip clothing into it!", null);
+											return new Response("Надеть: "+Util.capitaliseSentence(slot.getName()), "Этот слот задействован в текущем сексуальном действии, поэтому вы не можете надеть в него одежду!", null);
 										}
 										if (Main.game.getPlayer().isAbleToEquip(clothing, slot, false, Main.game.getPlayer())) {
-											return new Response("Equip: "+Util.capitaliseSentence(slot.getName()), "Equip the " + clothing.getName() + ".", Main.sex.SEX_DIALOGUE){
+											return new Response("Надеть: "+Util.capitaliseSentence(slot.getName()), "Экипировать " + clothing.getName() + ".", Main.sex.SEX_DIALOGUE){
 												@Override
 												public void effects(){
 													AbstractClothing c = clothing;
@@ -4559,15 +4547,15 @@ public class InventoryDialogue {
 												}
 											};
 										} else {
-											return new Response("Equip: "+Util.capitaliseSentence(slot.getName()), getClothingBlockingRemovalText(Main.game.getPlayer(), "equip"), null);
+											return new Response("Надеть: "+Util.capitaliseSentence(slot.getName()), getClothingBlockingRemovalText(Main.game.getPlayer(), "надеть"), null);
 										}
 										
 									} else {
-										return new Response("Equip: "+Util.capitaliseSentence(slot.getName()), clothing.isAbleToBeEquippedDuringSex(slot).getValue(), null);
+										return new Response("Надеть: "+Util.capitaliseSentence(slot.getName()), clothing.isAbleToBeEquippedDuringSex(slot).getValue(), null);
 									}
 									
 								} else {
-									return new Response("Equip: "+Util.capitaliseSentence(slot.getName()), clothing.getCannotBeEquippedText(Main.game.getPlayer(), slot), null);
+									return new Response("Надеть: "+Util.capitaliseSentence(slot.getName()), clothing.getCannotBeEquippedText(Main.game.getPlayer(), slot), null);
 								}
 								
 							} else if (index == 10) {
@@ -4583,14 +4571,14 @@ public class InventoryDialogue {
 //								}
 								if(Main.sex.isCharacterImmobilised(Main.game.getPlayer())) {
 									return new Response(
-											UtilText.parse(inventoryNPC, "Equip: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim])"),
-											UtilText.parse(inventoryNPC, "You can't get [npc.name] to equip the " + clothing.getName() + " as you are currently [style.colourTerrible(immobilised)]!"),
+											UtilText.parse(inventoryNPC, "Надеть: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim])"),
+											UtilText.parse(inventoryNPC, "Вы не можете заставить [npc.name] надеть " + clothing.getName() + " так как ты сейчас [style.colourTerrible(парализован)]!"),
 											null);
 								}
 								Value<Boolean, String> equipAllowed = inventoryNPC.isInventoryEquipAllowed(clothing, slot);
 								if(!equipAllowed.getKey()) {
 									return new Response(
-											UtilText.parse(inventoryNPC, "Equip: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim])"),
+											UtilText.parse(inventoryNPC, "Надеть: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim])"),
 											UtilText.parse(inventoryNPC, equipAllowed.getValue()),
 											null);
 								}
@@ -4598,20 +4586,20 @@ public class InventoryDialogue {
 									if(clothing.isAbleToBeEquippedDuringSex(slot).getKey()) {
 										if(!Main.sex.getInitialSexManager().isAbleToEquipSexClothing(Main.game.getPlayer(), inventoryNPC, clothing)) {
 											return new Response(
-													UtilText.parse(inventoryNPC, "Equip: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim])"),
-													"As this is a special sex scene, you cannot equip clothing during it!",
+													UtilText.parse(inventoryNPC, "Надеть: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim])"),
+													"Так как это особая секс-сцена, вы не можете надевать одежду во время неё!",
 													null);
 										}
 										if(!Main.sex.isClothingEquipAvailable(inventoryNPC, slot, clothing)) {
 											return new Response(
-													UtilText.parse(inventoryNPC, "Equip: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim])"),
-													"This slot is involved with an ongoing sex action, so you cannot equip clothing into it!",
+													UtilText.parse(inventoryNPC, "Надеть: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim])"),
+													"Этот слот задействован в текущем сексуальном действии, поэтому вы не можете надеть в него одежду!",
 													null);
 										}
 										if(inventoryNPC.isAbleToEquip(clothing, slot, false, Main.game.getPlayer())) {
 											return new Response(
-													UtilText.parse(inventoryNPC, "Equip: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim])"),
-													UtilText.parse(inventoryNPC, "Get [npc.name] to equip the " + clothing.getName() + "."),
+													UtilText.parse(inventoryNPC, "Надеть: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim])"),
+													UtilText.parse(inventoryNPC, "Заставьте [npc.name] экипировать " + clothing.getName() + "."),
 													Main.sex.SEX_DIALOGUE){
 												@Override
 												public void effects(){
@@ -4624,16 +4612,16 @@ public class InventoryDialogue {
 												}
 											};
 										} else {
-											return new Response(UtilText.parse(inventoryNPC, "Equip: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim])"),
-													UtilText.parse(inventoryNPC, "[npc.Name] can't equip the " + clothing.getName() + ", as other clothing is blocking [npc.herHim] from doing so!"), null);
+											return new Response(UtilText.parse(inventoryNPC, "Надеть: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim])"),
+													UtilText.parse(inventoryNPC, "[npc.Name] не может экипировать " + clothing.getName() + ", так как другая одежда мешает [npc.herHim] это сделать!"), null);
 										}
 										
 									} else {
-										return new Response(UtilText.parse(inventoryNPC, "Equip: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim])"), clothing.isAbleToBeEquippedDuringSex(slot).getValue(), null);
+										return new Response(UtilText.parse(inventoryNPC, "Надеть: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim])"), clothing.isAbleToBeEquippedDuringSex(slot).getValue(), null);
 									}
 									
 								} else {
-									return new Response(UtilText.parse(inventoryNPC, "Equip: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim])"), clothing.getCannotBeEquippedText(inventoryNPC, slot), null);
+									return new Response(UtilText.parse(inventoryNPC, "Надеть: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim])"), clothing.getCannotBeEquippedText(inventoryNPC, slot), null);
 								}
 								
 							} else {
@@ -4643,56 +4631,56 @@ public class InventoryDialogue {
 						case TRADING:
 							if(index == 1) {
 								if(!clothing.getClothingType().isAbleToBeSold()) {
-									return new Response("Sell (1)", "You cannot sell the " + clothing.getName() + "!", null);
+									return new Response("Продать (1)", "Вы не можете продать  " + clothing.getName() + "!", null);
 									
 								} else if (inventoryNPC.willBuy(clothing)) {
 									int sellPrice = clothing.getPrice(inventoryNPC.getBuyModifier());
-									return new Response("Sell (1) (" + UtilText.formatAsMoney(sellPrice, "span") + ")", "Sell the " + clothing.getName() + " for " + UtilText.formatAsMoney(sellPrice) + ".", INVENTORY_MENU){
+									return new Response("Продать (1) (" + UtilText.formatAsMoney(sellPrice, "охват") + ")", "Продать  " + clothing.getName() + " на " + UtilText.formatAsMoney(sellPrice) + ".", INVENTORY_MENU){
 										@Override
 										public void effects(){
 											sellClothing(Main.game.getPlayer(), inventoryNPC, clothing, 1, sellPrice);
 										}
 									};
 								} else {
-									return new Response("Sell (1)", inventoryNPC.getName("The") + " doesn't want to buy this.", null);
+									return new Response("Продать (1)", inventoryNPC.getName("") + " не хочет покупать это.", null);
 								}
 								
 							} else if(index == 2) {
 								if(!clothing.getClothingType().isAbleToBeSold()) {
-									return new Response("Sell (5)", "You cannot sell the " + clothing.getName() + "!", null);
+									return new Response("Продать (5)", "Вы не можете продать  " + clothing.getName() + "!", null);
 									
 								} else if(Main.game.getPlayer().getClothingCount(clothing) >= 5) {
 									if (inventoryNPC.willBuy(clothing)) {
 										int sellPrice = clothing.getPrice(inventoryNPC.getBuyModifier());
-										return new Response("Sell (5) (" + UtilText.formatAsMoney(sellPrice*5, "span") + ")", "Sell five of your " + clothing.getNamePlural() + " for " + UtilText.formatAsMoney(sellPrice*5) + ".", INVENTORY_MENU){
+										return new Response("Продать (5) (" + UtilText.formatAsMoney(sellPrice*5, "охват") + ")", "Продать пять ваших  " + clothing.getNamePlural() + " на " + UtilText.formatAsMoney(sellPrice*5) + ".", INVENTORY_MENU){
 											@Override
 											public void effects(){
 												sellClothing(Main.game.getPlayer(), inventoryNPC, clothing, 5, sellPrice);
 											}
 										};
 									} else {
-										return new Response("Sell (5)", inventoryNPC.getName("The") + " doesn't want to buy these.", null);
+										return new Response("Продать (5)", inventoryNPC.getName("") + " не хочет это покупать.", null);
 									}
 									
 								} else {
-									return new Response("Sell (5)", "You don't have five " + clothing.getNamePlural() + " to sell!", null);
+									return new Response("Продать (5)", "У вас нет пяти " + clothing.getNamePlural() + " продать!", null);
 								}
 								
 							} else if(index == 3) {
 								if(!clothing.getClothingType().isAbleToBeSold()) {
-									return new Response("Sell (All)", "You cannot sell the " + clothing.getName() + "!", null);
+									return new Response("Продать (Все)", "Вы не можете продать  " + clothing.getName() + "!", null);
 									
 								} else if (inventoryNPC.willBuy(clothing)) {
 									int sellPrice = clothing.getPrice(inventoryNPC.getBuyModifier());
-									return new Response("Sell (All) (" + UtilText.formatAsMoney(sellPrice*Main.game.getPlayer().getClothingCount(clothing), "span") + ")",
-											"Sell the " + clothing.getName() + " for " + UtilText.formatAsMoney(sellPrice*Main.game.getPlayer().getClothingCount(clothing)) + ".", INVENTORY_MENU){
+									return new Response("Продать (Все) (" + UtilText.formatAsMoney(sellPrice*Main.game.getPlayer().getClothingCount(clothing), "охват") + ")",
+											"Продать  " + clothing.getName() + " на " + UtilText.formatAsMoney(sellPrice*Main.game.getPlayer().getClothingCount(clothing)) + ".", INVENTORY_MENU){
 										@Override
 										public void effects(){
 											sellClothing(Main.game.getPlayer(), inventoryNPC, clothing, Main.game.getPlayer().getClothingCount(clothing), sellPrice);
 										}
 									};
 								} else {
-									return new Response("Sell (All)", inventoryNPC.getName("The") + " doesn't want to buy these.", null);
+									return new Response("Продать (Все)", inventoryNPC.getName("") + " не хочет это покупать.", null);
 								}
 								
 							} else if (index==4) {
@@ -4701,10 +4689,10 @@ public class InventoryDialogue {
 									boolean isDyeingStackItem = Main.game.getPlayer().getAllClothingInInventory().get(clothing) > 1;
 									boolean canDye = !(isDyeingStackItem && hasFullInventory);
 									if (canDye) {
-										return new Response("Dye", 
+										return new Response("Краситель", 
 												Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
-													?"Use your proficiency with [style.colourEarth(Earth spells)] to dye this item."
-													:"Use a dye-brush to dye this item of clothing.",
+													?"Используйте свое мастерство в [style.colourEarth(заклинаниях Земли)], чтобы покрасить этот предмет."
+													:"Используйте кисть для окрашивания, чтобы покрасить эту одежду.",
 												DYE_CLOTHING) {
 											@Override
 											public void effects() {
@@ -4712,10 +4700,10 @@ public class InventoryDialogue {
 											}
 										};
 									} else {
-										return new Response("Dye", "Your inventory is full, so you can't dye this item of clothing.", null);
+										return new Response("Краситель", "Ваш инвентарь полон, поэтому вы не можете покрасить эту одежду.", null);
 									}
 								} else {
-									return new Response("Dye", "You'll need to find a dye-brush if you want to dye your clothes.", null);
+									return new Response("Краситель", "Вам нужно найти кисть для окрашивания, если вы хотите покрасить свою одежду.", null);
 								}
 								
 							} else if(index == 5) {
@@ -4725,13 +4713,12 @@ public class InventoryDialogue {
 								if(Main.game.isDebugMode()
 										|| (Main.game.getPlayer().hasQuest(QuestLine.SIDE_ENCHANTMENT_DISCOVERY) && Main.game.getPlayer().isQuestCompleted(QuestLine.SIDE_ENCHANTMENT_DISCOVERY))) {
 									if(clothing.getEnchantmentItemType(null)==null || clothing.getItemTags().contains(ItemTag.UNENCHANTABLE)) {
-										return new Response("Enchant", "This clothing cannot be enchanted!", null);
+										return new Response("Зачаровать", "Эту одежду нельзя зачаровать!", null);
 										
 									} else if(!clothing.isEnchantmentKnown()) {
 										if(Main.game.getPlayer().getEssenceCount() >= IDENTIFICATION_ESSENCE_PRICE) {
-											return new Response("Identify ([style.italicsArcane("+IDENTIFICATION_ESSENCE_PRICE+" Essences)])",
-													"To identify the "+clothing.getName()+", you can either spend "+IDENTIFICATION_ESSENCE_PRICE+" arcane essences to do it yourself,"
-															+ " or go to a vendor and pay "+IDENTIFICATION_PRICE+" flames to have them do it for you.",
+											return new Response("Идентифицировать ([style.italicsArcane(Arcane"+IDENTIFICATION_ESSENCE_PRICE+"  Эссенции)])",
+													"Чтобы идентифицировать "+clothing.getName()+", вы можете либо потратить "+IDENTIFICATION_ESSENCE_PRICE+" арканных эссенций, чтобы сделать это самому, или же прийти к торговцу и заплатить "+IDENTIFICATION_PRICE+" огнями, чтобы они сделали всё за тебя.",
 													CLOTHING_INVENTORY) {
 												@Override
 												public void effects() {
@@ -4742,24 +4729,19 @@ public class InventoryDialogue {
 													clothing = AbstractClothing.enchantmentRemovedClothing;
 													
 													Main.game.getTextEndStringBuilder().append(
-															"<p>"
-																+ "You channel the power of "+Util.intToString(IDENTIFICATION_ESSENCE_PRICE)+" of your arcane essences into the "+clothing.getName()
-																	+", and as it emits a faint purple glow, you find yourself able to detect what sort of enchantment it has!"
-															+ "</p>"
+															"<p>Вы направляете силу "+Util.intToString(IDENTIFICATION_ESSENCE_PRICE)+" ваших арканных эссенций в "+clothing.getName()
+																	+", и когда предмет начинает испускать слабое фиолетовое свечение, вы понимаете, какое именно зачарование на нём наложено!</p>"
 															+ enchantmentRemovedString
-															+ "<p style='text-align:center;'>"
-																+ "Identifying the "+clothing.getName()+" has cost you [style.boldBad("+Util.intToString(IDENTIFICATION_ESSENCE_PRICE)+")] [style.boldArcane(Arcane Essences)]!"
-															+ "</p>");
+															+ "<p style='text-align:center;'>Опознание "+clothing.getName()+" стоило вам [style.boldBad("+Util.intToString(IDENTIFICATION_ESSENCE_PRICE)+")] [style.boldArcane(Эссенции Arcane)]!</p>");
 													RenderingEngine.setPage(Main.game.getPlayer(), clothing);
 												}
 											};
 										} else {
-											return new Response("Identify (<i>"+IDENTIFICATION_ESSENCE_PRICE+" Essences</i>)",
-													"To identify the "+clothing.getName()+", you can either spend "+IDENTIFICATION_ESSENCE_PRICE+" arcane essences to do it yourself ([style.italicsBad(which you don't have)]),"
-															+ " or go to a vendor and pay "+IDENTIFICATION_PRICE+" flames to have them do it for you.", null);
+											return new Response("Опознать (<i>"+IDENTIFICATION_ESSENCE_PRICE+" Эссенции</i>)",
+													"Чтобы идентифицировать "+clothing.getName()+", вы можете либо потратить "+IDENTIFICATION_ESSENCE_PRICE+" арканные эссенции, чтобы сделать всё самому ([style.italicsBad(которых у вас нет)]), или отправляйтесь к торговцу и платите "+IDENTIFICATION_PRICE+" огнями, чтобы они сделали всё за тебя.", null);
 										}
 									}
-									return new Response("Enchant", "Enchant this clothing.", EnchantmentDialogue.ENCHANTMENT_MENU) {
+									return new Response("Зачаровать", "Зачаровать эту одежду.", EnchantmentDialogue.ENCHANTMENT_MENU) {
 										@Override
 										public DialogueNode getNextDialogue() {
 											return EnchantmentDialogue.getEnchantmentMenu(clothing);
@@ -4767,20 +4749,20 @@ public class InventoryDialogue {
 									};
 									
 								} else {
-									return new Response("Enchant", getEnchantmentNotDiscoveredText("clothing"), null);
+									return new Response("Зачаровать", getEnchantmentNotDiscoveredText("одежда"), null);
 								}
 
 							} else if(index >= 6 && index <= 9 && index-6<clothing.getClothingType().getEquipSlots().size()) {
 								InventorySlot slot = clothing.getClothingType().getEquipSlots().get(index-6);
 								if(clothing.isCanBeEquipped(Main.game.getPlayer(), slot)) {
-									return new Response("Equip: "+Util.capitaliseSentence(slot.getName()), "Equip the " + clothing.getName() + ".", INVENTORY_MENU){
+									return new Response("Надеть: "+Util.capitaliseSentence(slot.getName()), "Экипировать " + clothing.getName() + ".", INVENTORY_MENU){
 											@Override
 											public void effects(){
 												Main.game.getTextEndStringBuilder().append("<p style='text-align:center;'>" + equipClothingFromInventory(Main.game.getPlayer(), slot, Main.game.getPlayer(), clothing) + "</p>");
 											}
 										};
 								} else {
-									return new Response("Equip: "+Util.capitaliseSentence(slot.getName()), clothing.getCannotBeEquippedText(Main.game.getPlayer(), slot), null);
+									return new Response("Надеть: "+Util.capitaliseSentence(slot.getName()), clothing.getCannotBeEquippedText(Main.game.getPlayer(), slot), null);
 								}
 								
 							} else if (index == 9) {
@@ -4793,19 +4775,19 @@ public class InventoryDialogue {
 //							}
 							else if(index >= 11 && index <= 14 && index-11<clothing.getClothingType().getEquipSlots().size()) {
 								InventorySlot slot = clothing.getClothingType().getEquipSlots().get(index-11);
-								return new Response(UtilText.parse(inventoryNPC, "Equip: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim])"), UtilText.parse(inventoryNPC, "[npc.Name] doesn't want to wear your clothing."), null);
+								return new Response(UtilText.parse(inventoryNPC, "Надеть: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim])"), UtilText.parse(inventoryNPC, "[npc.Name] не хочет носить вашу одежду."), null);
 								
 							} else if (index == 10 && !clothing.isEnchantmentKnown()) {
 								if(!inventoryNPC.willBuy(clothing)) {
-									return new Response("Identify", inventoryNPC.getName("The") + " can't identify clothing!", null);
+									return new Response("Опознать", inventoryNPC.getName("") + " не может опознать одежду!", null);
 									
 								} else if(Main.game.getPlayer().getMoney() < IDENTIFICATION_PRICE){
 									// don't format as money because we don't want to highlight non-selectable choices
-									return new Response("Identify (" + UtilText.formatAsMoneyUncoloured(IDENTIFICATION_PRICE, "span") + ")", "You don't have enough money!", null);
+									return new Response("Опознать (" + UtilText.formatAsMoneyUncoloured(IDENTIFICATION_PRICE, "охват") + ")", "У вас недостаточно денег!", null);
 									
 								}else {
-									return new Response("Identify (" + UtilText.formatAsMoney(IDENTIFICATION_PRICE, "span") + ")",
-												"Have the " + clothing.getName() + " identified for " + UtilText.formatAsMoney(IDENTIFICATION_PRICE, "span") + ".", CLOTHING_INVENTORY){
+									return new Response("Опознать (" + UtilText.formatAsMoney(IDENTIFICATION_PRICE, "охват") + ")",
+												"Имеет " + clothing.getName() + " опознанный для " + UtilText.formatAsMoney(IDENTIFICATION_PRICE, "охват") + ".", CLOTHING_INVENTORY){
 										@Override
 										public void effects(){
 											Main.game.getPlayer().incrementMoney(-IDENTIFICATION_PRICE);
@@ -4817,8 +4799,7 @@ public class InventoryDialogue {
 											Main.game.getTextEndStringBuilder().append(
 													"<p style='text-align:center;'>"
 														+ UtilText.parse(inventoryNPC,
-																"You hand over " + UtilText.formatAsMoney(IDENTIFICATION_PRICE) + " to [npc.name],"
-																		+ " who promptly feeds several bottles of arcane essence into a specialist identification device, before using it to reveal the enchantment on your "+clothing.getName()+".")
+																"Вы передаете " + UtilText.formatAsMoney(IDENTIFICATION_PRICE) + " [npc.name], который тут же вливает несколько флаконов арканической эссенции в специальное устройство для идентификации, после чего использует его, чтобы раскрыть чары на вашем "+clothing.getName()+".")
 													+ "</p>"
 													+enchantmentRemovedString);
 											
@@ -4847,10 +4828,10 @@ public class InventoryDialogue {
 										|| Main.game.getPlayer().isCoverableAreaVisible(CoverableArea.PENIS)
 										|| Main.game.getPlayer().isCoverableAreaVisible(CoverableArea.VAGINA)
 										|| (Main.game.getPlayer().getClothingInSlot(InventorySlot.FOOT)==null && Main.game.getPlayer().getLegType().equals(LegType.HUMAN))) {
-									return new Response("To the stage", "You need to be wearing clothing that covers your body, as well as a pair of shoes.", null);
+									return new Response("На сцену", "Вам нужно быть одетым так, чтобы тело было прикрыто, а также надеть пару туфель.", null);
 									
 								} else {
-									return new Response("To the stage", "You're ready to approach the stage now.", CharacterCreation.CHOOSE_BACKGROUND) {
+									return new Response("На сцену", "Теперь ты готов выйти на сцену.", CharacterCreation.CHOOSE_BACKGROUND) {
 										@Override
 										public void effects() {
 											CharacterCreation.moveNPCIntoPlayerTile();
@@ -4860,10 +4841,10 @@ public class InventoryDialogue {
 								
 							} else if(index == 4) {
 								if(Main.game.getPlayer().getClothingCurrentlyEquipped().isEmpty()){
-									return new Response("Unequip all", "You're currently naked, there's nothing to be unequipped.", null);
+									return new Response("Снять всё", "Сейчас на тебе ничего нет, снимать нечего.", null);
 								}
 								else{
-									return new Response("Unequip all", "Remove as much of your clothing as possible.", INVENTORY_MENU){
+									return new Response("Снять всё", "Снять как можно больше одежды.", INVENTORY_MENU){
 										@Override
 										public void effects(){
 											Main.game.getTextEndStringBuilder().append(unequipAll(Main.game.getPlayer()));
@@ -4872,7 +4853,7 @@ public class InventoryDialogue {
 								}
 								
 							} else if(index == 5) {
-								return new Response("Change colour", "Change the colour of this item of clothing.", DYE_CLOTHING_CHARACTER_CREATION) {
+								return new Response("Изменить цвет", "Изменить цвет этого предмета одежды.", DYE_CLOTHING_CHARACTER_CREATION) {
 									@Override
 									public void effects() {
 										resetClothingDyeColours();
@@ -4882,7 +4863,7 @@ public class InventoryDialogue {
 							} else if(index >= 6 && index <= 9 && index-6<clothing.getClothingType().getEquipSlots().size()) {
 								InventorySlot slot = clothing.getClothingType().getEquipSlots().get(index-6);
 								if(clothing.isCanBeEquipped(Main.game.getPlayer(), slot)) {
-									return new Response("Equip: "+Util.capitaliseSentence(slot.getName()), "Equip the " + clothing.getName() + ".", INVENTORY_MENU){
+									return new Response("Надеть: "+Util.capitaliseSentence(slot.getName()), "Экипировать " + clothing.getName() + ".", INVENTORY_MENU){
 										@Override
 										public void effects(){
 											equipClothingFromGround(Main.game.getPlayer(), slot, Main.game.getPlayer(), clothing);
@@ -4890,7 +4871,7 @@ public class InventoryDialogue {
 									};
 									
 								} else {
-									return new Response("Equip: "+Util.capitaliseSentence(slot.getName()), clothing.getCannotBeEquippedText(Main.game.getPlayer(), slot), null);
+									return new Response("Надеть: "+Util.capitaliseSentence(slot.getName()), clothing.getCannotBeEquippedText(Main.game.getPlayer(), slot), null);
 								}
 							
 							} else {
@@ -4899,44 +4880,44 @@ public class InventoryDialogue {
 					
 					case SEX:
 						if(index == 1) {
-							return new Response("Take (1)", "You can't pick up clothing while masturbating.", null);
+							return new Response("Взять (1)", "Вы не можете подбирать одежду во время мастурбации.", null);
 							
 						} else if(index == 2) {
-							return new Response("Take (5)", "You can't pick up clothing while masturbating.", null);
+							return new Response("Взять (5)", "Вы не можете подбирать одежду во время мастурбации.", null);
 							
 						} else if(index == 3) {
-							return new Response("Take (All)", "You can't pick up clothing while masturbating.", null);
+							return new Response("Взять (Все)", "Вы не можете подбирать одежду во время мастурбации.", null);
 							
 						} else if(index == 4) {
-							return new Response("Dye", "You can't dye your clothing while masturbating.", null);
+							return new Response("Краситель", "Нельзя красить одежду во время мастурбации.", null);
 							
 						} else if(index == 5) {
 							if(clothing.isCondom()) {
 								if(clothing.getCondomEffect().getPotency().isNegative()) {
-									return new Response("Repair (<i>1 Essence</i>)", "You can't repair condoms on the ground!", null);
+									return new Response("Починить (<i>1 Эссенция</i>)", "Вы не можете чинить презервативы на земле!", null);
 								}
-								return new Response("Sabotage", "You can't sabotage condoms on the ground!", null);
+								return new Response("Саботаж", "Нельзя портить презервативы, лежащие на земле!", null);
 							}
 							if(!clothing.isEnchantmentKnown()) {
-								return new Response("Identify", "You can't identify clothing during sex!", null);
+								return new Response("Опознать", "Нельзя опознавать одежду во время секса!", null);
 							}
-							return new Response("Enchant", "You can't enchant clothing on the ground!", null);
+							return new Response("Зачаровать", "Нельзя зачаровывать одежду, лежащую на земле!", null);
 
 						} else if(index >= 6 && index <= 9 && index-6<clothing.getClothingType().getEquipSlots().size()) {
 							InventorySlot slot = clothing.getClothingType().getEquipSlots().get(index-6);
 							if(Main.sex.isCharacterImmobilised(Main.game.getPlayer())) {
-								return new Response("Equip: "+Util.capitaliseSentence(slot.getName()), "You can't equip this as you are currently [style.colourTerrible(immobilised)]!", null);
+								return new Response("Надеть: "+Util.capitaliseSentence(slot.getName()), "Вы не можете надеть это, так как сейчас вы [style.colourTerrible(обездвижены)]!", null);
 							}
 							if(clothing.isCanBeEquipped(Main.game.getPlayer(), slot)) {
 								if(clothing.isAbleToBeEquippedDuringSex(slot).getKey()) {
 									if(!Main.sex.getInitialSexManager().isAbleToEquipSexClothing(Main.game.getPlayer(), Main.game.getPlayer(), clothing)) {
-										return new Response("Equip: "+Util.capitaliseSentence(slot.getName()), "As this is a special sex scene, you cannot equip clothing during it!", null);
+										return new Response("Надеть: "+Util.capitaliseSentence(slot.getName()), "Так как это особая секс-сцена, вы не можете надевать одежду во время неё!", null);
 									}
 									if(!Main.sex.isClothingEquipAvailable(Main.game.getPlayer(), slot, clothing)) {
-										return new Response("Equip: "+Util.capitaliseSentence(slot.getName()), "This slot is involved with an ongoing sex action, so you cannot equip clothing into it!", null);
+										return new Response("Надеть: "+Util.capitaliseSentence(slot.getName()), "Этот слот задействован в текущем сексуальном действии, поэтому вы не можете надеть в него одежду!", null);
 									}
 									if (Main.game.getPlayer().isAbleToEquip(clothing, slot, false, Main.game.getPlayer())) {
-										return new Response("Equip: "+Util.capitaliseSentence(slot.getName()), "Equip the " + clothing.getName() + ".", Main.sex.SEX_DIALOGUE){
+										return new Response("Надеть: "+Util.capitaliseSentence(slot.getName()), "Экипировать " + clothing.getName() + ".", Main.sex.SEX_DIALOGUE){
 											@Override
 											public void effects(){
 												AbstractClothing c = clothing;
@@ -4948,13 +4929,13 @@ public class InventoryDialogue {
 											}
 										};
 									} else {
-										return new Response("Equip: "+Util.capitaliseSentence(slot.getName()), getClothingBlockingRemovalText(Main.game.getPlayer(), "equip"), null);
+										return new Response("Надеть: "+Util.capitaliseSentence(slot.getName()), getClothingBlockingRemovalText(Main.game.getPlayer(), "надеть"), null);
 									}
 								} else {
-									return new Response("Equip: "+Util.capitaliseSentence(slot.getName()), clothing.isAbleToBeEquippedDuringSex(slot).getValue(), null);
+									return new Response("Надеть: "+Util.capitaliseSentence(slot.getName()), clothing.isAbleToBeEquippedDuringSex(slot).getValue(), null);
 								}
 							} else {
-								return new Response("Equip: "+Util.capitaliseSentence(slot.getName()), clothing.getCannotBeEquippedText(Main.game.getPlayer(), slot), null);
+								return new Response("Надеть: "+Util.capitaliseSentence(slot.getName()), clothing.getCannotBeEquippedText(Main.game.getPlayer(), slot), null);
 							}
 							
 						} else if (index == 10) {
@@ -4967,9 +4948,9 @@ public class InventoryDialogue {
 					default:
 						if(index == 1) {
 							if(inventoryFull) {
-								return new Response("Take (1)", "Your inventory is already full!", null);
+								return new Response("Взять (1)", "Ваш инвентарь уже полон!", null);
 							}
-							return new Response("Take (1)", "Take one " + clothing.getName() + " from the ground.", INVENTORY_MENU){
+							return new Response("Взять (1)", "Взять один " + clothing.getName() + " с земли.", INVENTORY_MENU){
 								@Override
 								public void effects(){
 									pickUpClothing(Main.game.getPlayer(), clothing, 1);
@@ -4978,24 +4959,24 @@ public class InventoryDialogue {
 							
 						} else if(index == 2) {
 							if(inventoryFull) {
-								return new Response("Take (5)", "Your inventory is already full!", null);
+								return new Response("Взять (5)", "Ваш инвентарь уже полон!", null);
 							}
 							if(Main.game.getPlayerCell().getInventory().getClothingCount(clothing) >= 5) {
-								return new Response("Take (5)", "Take five of the " + clothing.getNamePlural() + " from the ground.", INVENTORY_MENU){
+								return new Response("Взять (5)", "Взять пять " + clothing.getNamePlural() + " с земли.", INVENTORY_MENU){
 									@Override
 									public void effects(){
 										pickUpClothing(Main.game.getPlayer(), clothing, 5);
 									}
 								};
 							} else {
-								return new Response("Take (5)", "There aren't five " + clothing.getNamePlural() + " on the ground!", null);
+								return new Response("Взять (5)", "Их не пять, " + clothing.getNamePlural() + " на земле!", null);
 							}
 							
 						} else if(index == 3) {
 							if(inventoryFull) {
-								return new Response("Take (All)", "Your inventory is already full!", null);
+								return new Response("Взять (Все)", "Ваш инвентарь уже полон!", null);
 							}
-							return new Response("Take (All)", "Take all of the " + clothing.getNamePlural() + " from the ground.", INVENTORY_MENU){
+							return new Response("Взять (Все)", "Забрать всё, " + clothing.getNamePlural() + " с земли.", INVENTORY_MENU){
 								@Override
 								public void effects(){
 									pickUpClothing(Main.game.getPlayer(), clothing, Main.game.getPlayerCell().getInventory().getClothingCount(clothing));
@@ -5008,10 +4989,10 @@ public class InventoryDialogue {
 								boolean isDyeingStackItem = Main.game.getPlayerCell().getInventory().getAllClothingInInventory().get(clothing) > 1;
 								boolean canDye = !(isDyeingStackItem && hasFullInventory);
 								if (canDye) {
-									return new Response("Dye", 
+									return new Response("Краситель", 
 											Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
-												?"Use your proficiency with [style.colourEarth(Earth spells)] to dye this item."
-												:"Use a dye-brush to dye this item of clothing.",
+												?"Используйте свое мастерство в [style.colourEarth(заклинаниях Земли)], чтобы покрасить этот предмет."
+												:"Используйте кисть для окрашивания, чтобы покрасить эту одежду.",
 											DYE_CLOTHING) {
 										@Override
 										public void effects() {
@@ -5019,24 +5000,23 @@ public class InventoryDialogue {
 										}
 									};
 								} else {
-									return new Response("Dye", "Your inventory is full, so you can't dye this item of clothing.", null);
+									return new Response("Краситель", "Ваш инвентарь полон, поэтому вы не можете покрасить эту одежду.", null);
 								}
 							} else {
-								return new Response("Dye", "You'll need to find a dye-brush if you want to dye your clothes.", null);
+								return new Response("Краситель", "Вам нужно найти кисть для окрашивания, если вы хотите покрасить свою одежду.", null);
 							}
 							
 						} else if(index == 5) {
 							if(clothing.isCondom()) {
 								if(clothing.getCondomEffect().getPotency().isNegative()) {
-									return new Response("Repair (<i>1 Essence</i>)", "You can't repair condoms on the ground!", null);
+									return new Response("Починить (<i>1 Эссенция</i>)", "Вы не можете чинить презервативы на земле!", null);
 								}
-								return new Response("Sabotage", "You can't sabotage condoms on the ground!", null);
+								return new Response("Саботаж", "Нельзя портить презервативы, лежащие на земле!", null);
 							}
 							if(!clothing.isEnchantmentKnown()) {
 								if(Main.game.getPlayer().getEssenceCount() >= IDENTIFICATION_ESSENCE_PRICE) {
-									return new Response("Identify ([style.italicsArcane("+IDENTIFICATION_ESSENCE_PRICE+" Essences)])",
-											"To identify the "+clothing.getName()+", you can either spend "+IDENTIFICATION_ESSENCE_PRICE+" arcane essences to do it yourself,"
-													+ " or go to a vendor and pay "+IDENTIFICATION_PRICE+" flames to have them do it for you.",
+									return new Response("Идентифицировать ([style.italicsArcane(Arcane"+IDENTIFICATION_ESSENCE_PRICE+"  Эссенции)])",
+											"Чтобы идентифицировать "+clothing.getName()+", вы можете либо потратить "+IDENTIFICATION_ESSENCE_PRICE+" арканных эссенций, чтобы сделать это самому, или же прийти к торговцу и заплатить "+IDENTIFICATION_PRICE+" огнями, чтобы они сделали всё за тебя.",
 											CLOTHING_INVENTORY) {
 										@Override
 										public void effects() {
@@ -5049,36 +5029,31 @@ public class InventoryDialogue {
 //											clothing = AbstractClothing.enchantmentRemovedClothing;
 											
 											Main.game.getTextEndStringBuilder().append(
-													"<p>"
-														+ "You channel the power of "+Util.intToString(IDENTIFICATION_ESSENCE_PRICE)+" of your arcane essences into the "+clothing.getName()
-															+", and as it emits a faint purple glow, you find yourself able to detect what sort of enchantment it has!"
-													+ "</p>"
+													"<p>Вы направляете силу "+Util.intToString(IDENTIFICATION_ESSENCE_PRICE)+" ваших арканных эссенций в "+clothing.getName()
+															+", и когда предмет начинает испускать слабое фиолетовое свечение, вы понимаете, какое именно зачарование на нём наложено!</p>"
 													+ enchantmentRemovedString
-													+ "<p style='text-align:center;'>"
-														+ "Identifying the "+clothing.getName()+" has cost you [style.boldBad("+Util.intToString(IDENTIFICATION_ESSENCE_PRICE)+")] [style.boldArcane(Arcane Essences)]!"
-													+ "</p>");
+													+ "<p style='text-align:center;'>Опознание "+clothing.getName()+" стоило вам [style.boldBad("+Util.intToString(IDENTIFICATION_ESSENCE_PRICE)+")] [style.boldArcane(Эссенции Arcane)]!</p>");
 											RenderingEngine.setPage(Main.game.getPlayer(), clothing);
 										}
 									};
 								} else {
-									return new Response("Identify (<i>"+IDENTIFICATION_ESSENCE_PRICE+" Essences</i>)",
-											"To identify the "+clothing.getName()+", you can either spend "+IDENTIFICATION_ESSENCE_PRICE+" arcane essences to do it yourself ([style.italicsBad(which you don't have)]),"
-													+ " or go to a vendor and pay "+IDENTIFICATION_PRICE+" flames to have them do it for you.", null);
+									return new Response("Опознать (<i>"+IDENTIFICATION_ESSENCE_PRICE+" Эссенции</i>)",
+											"Чтобы идентифицировать "+clothing.getName()+", вы можете либо потратить "+IDENTIFICATION_ESSENCE_PRICE+" арканные эссенции, чтобы сделать всё самому ([style.italicsBad(которых у вас нет)]), или отправляйтесь к торговцу и платите "+IDENTIFICATION_PRICE+" огнями, чтобы они сделали всё за тебя.", null);
 								}
 							}
-							return new Response("Enchant", "You can't enchant clothing on the ground!", null);
+							return new Response("Зачаровать", "Нельзя зачаровывать одежду, лежащую на земле!", null);
 							
 						} else if(index >= 6 && index <= 9 && index-6<clothing.getClothingType().getEquipSlots().size()) {
 							InventorySlot slot = clothing.getClothingType().getEquipSlots().get(index-6);
 							if(clothing.isCanBeEquipped(Main.game.getPlayer(), slot)) {
-								return new Response("Equip: "+Util.capitaliseSentence(slot.getName()), "Equip the " + clothing.getName() + ".", INVENTORY_MENU){
+								return new Response("Надеть: "+Util.capitaliseSentence(slot.getName()), "Экипировать " + clothing.getName() + ".", INVENTORY_MENU){
 									@Override
 									public void effects(){
 										Main.game.getTextEndStringBuilder().append("<p style='text-align:center;'>" + equipClothingFromGround(Main.game.getPlayer(), slot, Main.game.getPlayer(), clothing) + "</p>");
 									}
 								};
 							} else {
-								return new Response("Equip: "+Util.capitaliseSentence(slot.getName()), clothing.getCannotBeEquippedText(Main.game.getPlayer(), slot), null);
+								return new Response("Надеть: "+Util.capitaliseSentence(slot.getName()), clothing.getCannotBeEquippedText(Main.game.getPlayer(), slot), null);
 							}
 							
 						} else if (index == 10) {
@@ -5095,34 +5070,34 @@ public class InventoryDialogue {
 					switch(interactionType) {
 						case COMBAT:
 							if(index == 1) {
-								return new Response("Take (1)", "You can't take someone clothing while fighting them!", null);
+								return new Response("Взять (1)", "Нельзя снимать с кого-то одежду во время боя!", null);
 								
 							} else if(index == 2) {
-								return new Response("Take (5)", "You can't take someone clothing while fighting them!", null);
+								return new Response("Взять (5)", "Нельзя снимать с кого-то одежду во время боя!", null);
 								
 							} else if(index == 3) {
-								return new Response("Take (All)", "You can't take someone clothing while fighting them!", null);
+								return new Response("Взять (Все)", "Нельзя снимать с кого-то одежду во время боя!", null);
 								
 							} else if(index == 4) {
-								return new Response("Dye", "You can't dye someone's clothing while fighting them!", null);
+								return new Response("Краситель", "Нельзя красить чью-то одежду во время боя!", null);
 								
 							} else if(index == 5) {
 								if(clothing.isCondom()) {
 									if(clothing.getCondomEffect().getPotency().isNegative()) {
-										return new Response("Repair (<i>1 Essence</i>)", "You can't repair someone else's condom, especially not when fighting them!", null);
+										return new Response("Починить (<i>1 Эссенция</i>)", "Нельзя чинить чужой презерватив, тем более во время боя!", null);
 									}
-									return new Response("Sabotage", "You can't sabotage someone else's condom, especially not while fighting them!", null);
+									return new Response("Саботаж", "Вы не можете саботировать чужой презерватив, тем более во время боя!", null);
 								}
-								return new Response("Enchant", "You can't enchant someone else's clothing, especially not while fighting them!", null);
+								return new Response("Зачаровать", "Вы не можете зачаровать чужую одежду, тем более во время боя!", null);
 								
 							} else if(index == 6) {
-								return new Response("Equip (Self)", "You can't use someone else's clothing while fighting them!", null);
+								return new Response("Надеть (на себя)", "Вы не можете надеть чужую одежду во время боя!", null);
 								
 							} else if (index == 10) {
 								return getQuickTradeResponse();
 								
 							} else if(index == 11) {
-								return new Response(UtilText.parse(inventoryNPC, "Equip: ([npc.HerHim])"), "You can't make someone wear clothing while fighting them!", null);
+								return new Response(UtilText.parse(inventoryNPC, "Надеть: ([npc.HerHim])"), "Вы не можете заставить кого-то надеть одежду во время боя!", null);
 								
 							} else {
 								return null;
@@ -5133,9 +5108,9 @@ public class InventoryDialogue {
 						
 							if(index == 1) {
 								if(inventoryFull) {
-									return new Response("Take (1)", "Your inventory is already full!", null);
+									return new Response("Взять (1)", "Ваш инвентарь уже полон!", null);
 								}
-								return new Response("Take (1)", UtilText.parse(inventoryNPC, "Take the " + clothing.getName() + " from [npc.name]."), INVENTORY_MENU){
+								return new Response("Взять (1)", UtilText.parse(inventoryNPC, "Взять " + clothing.getName() + " из [npc.name]."), INVENTORY_MENU){
 									@Override
 									public void effects(){
 										transferClothing(inventoryNPC, Main.game.getPlayer(), clothing, 1);
@@ -5144,24 +5119,24 @@ public class InventoryDialogue {
 								
 							} else if(index == 2) {
 								if(inventoryFull) {
-									return new Response("Take (5)", "Your inventory is already full!", null);
+									return new Response("Взять (5)", "Ваш инвентарь уже полон!", null);
 								}
 								if(inventoryNPC.getClothingCount(clothing) >= 5) {
-									return new Response("Take (5)", UtilText.parse(inventoryNPC, "Take five of  [npc.namePos] " + clothing.getNamePlural() + "."), INVENTORY_MENU){
+									return new Response("Взять (5)", UtilText.parse(inventoryNPC, "Взять пять штук [npc.namePos] " + clothing.getNamePlural() + "."), INVENTORY_MENU){
 										@Override
 										public void effects(){
 											transferClothing(inventoryNPC, Main.game.getPlayer(), clothing, 5);
 										}
 									};
 								} else {
-									return new Response("Take (5)", UtilText.parse(inventoryNPC, "[npc.Name] doesn't have five " + clothing.getNamePlural() + "!"), null);
+									return new Response("Взять (5)", UtilText.parse(inventoryNPC, "У [npc.Name] нет пяти штук " + clothing.getNamePlural() + "!"), null);
 								}
 								
 							} else if(index == 3) {
 								if(inventoryFull) {
-									return new Response("Take (All)", "Your inventory is already full!", null);
+									return new Response("Взять (Все)", "Ваш инвентарь уже полон!", null);
 								}
-								return new Response("Take (All)", UtilText.parse(inventoryNPC, "Take all "+Util.intToString(inventoryNPC.getClothingCount(clothing))+" of  [npc.namePos] " + clothing.getNamePlural() + "."), INVENTORY_MENU){
+								return new Response("Взять (Все)", UtilText.parse(inventoryNPC, "Забрать всё "+Util.intToString(inventoryNPC.getClothingCount(clothing))+" of  [npc.namePos] " + clothing.getNamePlural() + "."), INVENTORY_MENU){
 									@Override
 									public void effects(){
 										transferClothing(inventoryNPC, Main.game.getPlayer(), clothing, inventoryNPC.getClothingCount(clothing));
@@ -5174,10 +5149,10 @@ public class InventoryDialogue {
 									boolean isDyeingStackItem = clothing!=null && inventoryNPC.getAllClothingInInventory().get(clothing) > 1;
 									boolean canDye = !(isDyeingStackItem && hasFullInventory);
 									if (canDye) {
-										return new Response("Dye", 
+										return new Response("Краситель", 
 												Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
-													?"Use your proficiency with [style.colourEarth(Earth spells)] to dye this item."
-													:"Use a dye-brush to dye this item of clothing.",
+													?"Используйте свое мастерство в [style.colourEarth(заклинаниях Земли)], чтобы покрасить этот предмет."
+													:"Используйте кисть для окрашивания, чтобы покрасить эту одежду.",
 												DYE_CLOTHING) {
 											@Override
 											public void effects() {
@@ -5185,32 +5160,32 @@ public class InventoryDialogue {
 											}
 										};
 									} else {
-										return new Response("Dye", UtilText.parse(inventoryNPC, "[npc.NamePos] inventory is full, so you can't dye this item of clothing."), null);
+										return new Response("Краситель", UtilText.parse(inventoryNPC, "Инвентарь [npc.NamePos] полон, поэтому вы не можете покрасить эту вещь."), null);
 									}
 								} else {
-									return new Response("Dye", UtilText.parse(inventoryNPC, "You'll need to find another dye-brush if you want to dye [npc.namePos] clothes."), null);
+									return new Response("Краситель", UtilText.parse(inventoryNPC, "Вам понадобится другая кисть для красок, если вы хотите покрасить одежду [npc.namePos]."), null);
 								}
 								
 							} else if(index == 5) {
 								if(clothing.isCondom()) {
 									if(clothing.getCondomEffect().getPotency().isNegative()) {
-										return new Response("Repair (<i>1 Essence</i>)", "You can't repair condoms owned by someone else!", null);
+										return new Response("Починить (<i>1 Эссенция</i>)", "Вы не можете чинить чужие презервативы!", null);
 									}
-									return new Response("Sabotage", "You can't sabotage condoms owned by someone else!", null);
+									return new Response("Саботаж", "Вы не можете портить чужие презервативы!", null);
 								}
-								return new Response("Enchant", "You can't enchant clothing owned by someone else!", null);
+								return new Response("Зачаровать", "Вы не можете зачаровывать чужую одежду!", null);
 
 							} else if(index >= 6 && index <= 9 && index-6<clothing.getClothingType().getEquipSlots().size()) {
 								InventorySlot slot = clothing.getClothingType().getEquipSlots().get(index-6);
 								if(clothing.isCanBeEquipped(Main.game.getPlayer(), slot)) {
-									return new Response("Equip: "+Util.capitaliseSentence(slot.getName()), "Equip the " + clothing.getName() + ".", INVENTORY_MENU){
+									return new Response("Надеть: "+Util.capitaliseSentence(slot.getName()), "Экипировать " + clothing.getName() + ".", INVENTORY_MENU){
 										@Override
 										public void effects(){
 											Main.game.getTextEndStringBuilder().append("<p style='text-align:center;'>" + equipClothingFromInventory(Main.game.getPlayer(), slot, Main.game.getPlayer(), clothing) + "</p>");
 										}
 									};
 								} else {
-									return new Response("Equip: "+Util.capitaliseSentence(slot.getName()), clothing.getCannotBeEquippedText(Main.game.getPlayer(), slot), null);
+									return new Response("Надеть: "+Util.capitaliseSentence(slot.getName()), clothing.getCannotBeEquippedText(Main.game.getPlayer(), slot), null);
 								}
 								
 							} else if (index == 10) {
@@ -5221,7 +5196,7 @@ public class InventoryDialogue {
 								Value<Boolean, String> equipAllowed = inventoryNPC.isInventoryEquipAllowed(clothing, slot);
 								if(!equipAllowed.getKey()) {
 									return new Response(
-											UtilText.parse(inventoryNPC, "Equip: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim])"),
+											UtilText.parse(inventoryNPC, "Надеть: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim])"),
 											UtilText.parse(inventoryNPC, equipAllowed.getValue()),
 											null);
 								}
@@ -5231,21 +5206,21 @@ public class InventoryDialogue {
 										return new Response(
 												UtilText.parse(inventoryNPC,
 														!willEnslave
-															?"[style.colourMinorBad(Equip: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim]))]"
-															:"[style.colourArcane(Equip: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim]))]"),
+															?"[style.colourMinorBad(Надеть: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim]))]"
+															:"[style.colourArcane(Надеть: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim]))]"),
 												UtilText.parse(inventoryNPC,
-														"Make [npc.name] equip the "+clothing.getName()+"."
+														"Заставить [npc.name] экипировать "+clothing.getName()+"."
 														+(!willEnslave
-															?"<br/><i>Despite the fact that the "+clothing.getName()+" "
-																	+(clothing.getClothingType().isPlural()?"have an enslavement enchantment, they":"has an enslavement enchantment, it")
-																	+" [style.colourMinorBad(will not enslave [npc.name])], as"
+															?"<br/><i>Несмотря на то, что "+clothing.getName()+" "
+																	+(clothing.getClothingType().isPlural()?"имеют чары порабощения, они":"имеет чары порабощения, это")
+																	+" [style.colourMinorBad(не поработит [npc.name])], так как"
 																	+ (Main.game.getPlayer().isHasSlaverLicense()
-																			?" [npc.sheIsFull] not a suitable target for enslavement"
-																			:" you do not possess a slaver license")
+																			?" [npc.sheIsFull] не подходит для порабощения"
+																			:" у вас нет лицензии работорговца")
 																	+"!</i>"
-															:"<br/><i>Thanks to the fact that the "+clothing.getName()+" "
-																	+(clothing.getClothingType().isPlural()?"have an enslavement enchantment, they":"has an enslavement enchantment, it")
-																	+" [style.colourArcane(will enslave [npc.name])], making you [npc.her] new owner!</i>")),
+															:"<br/><i>Благодаря тому, что "+clothing.getName()+" "
+																	+(clothing.getClothingType().isPlural()?"имеют чары порабощения, они":"имеет чары порабощения, это")
+																	+" [style.colourArcane(поработит [npc.name])], вы станете [npc.her] новым владельцем!</i>")),
 												INVENTORY_MENU){
 											@Override
 											public DialogueNode getNextDialogue() {
@@ -5277,8 +5252,8 @@ public class InventoryDialogue {
 										
 									} else {
 										return new Response(
-												UtilText.parse(inventoryNPC, "Equip: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim])"),
-												UtilText.parse(inventoryNPC, "Get [npc.name] to equip the " + clothing.getName() + "."),
+												UtilText.parse(inventoryNPC, "Надеть: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim])"),
+												UtilText.parse(inventoryNPC, "Заставьте [npc.name] экипировать " + clothing.getName() + "."),
 												INVENTORY_MENU){
 											@Override
 											public void effects(){
@@ -5288,7 +5263,7 @@ public class InventoryDialogue {
 									}
 								} else {
 									return new Response(
-											UtilText.parse(inventoryNPC, "Equip: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim])"),
+											UtilText.parse(inventoryNPC, "Надеть: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim])"),
 											clothing.getCannotBeEquippedText(inventoryNPC, slot),
 											null);
 								}
@@ -5299,41 +5274,41 @@ public class InventoryDialogue {
 							
 						case SEX:
 							if(index == 1) {
-								return new Response("Take (1)", "You can't take someone's clothing while having sex with them!", null);
+								return new Response("Взять (1)", "Вы не можете снимать с кого-то одежду прямо во время секса!", null);
 								
 							} else if(index == 2) {
-								return new Response("Take (5)", "You can't take someone's clothing while having sex with them!", null);
+								return new Response("Взять (5)", "Вы не можете снимать с кого-то одежду прямо во время секса!", null);
 								
 							} else if(index == 3) {
-								return new Response("Take (All)", "You can't take someone's clothing while having sex with them!", null);
+								return new Response("Взять (Все)", "Вы не можете снимать с кого-то одежду прямо во время секса!", null);
 								
 							} else if(index == 4) {
-								return new Response("Dye", "You can't dye someone's clothing while having sex with them!", null);
+								return new Response("Краситель", "Вы не можете красить чужую одежду прямо во время секса!", null);
 								
 							} else if(index == 5) {
 								if(clothing.isCondom()) {
 									if(clothing.getCondomEffect().getPotency().isNegative()) {
-										return new Response("Repair (<i>1 Essence</i>)", "You can't repair someone else's condom, especially not while having sex with them!", null);
+										return new Response("Починить (<i>1 Эссенция</i>)", "Вы не можете чинить чужой презерватив, тем более во время секса с этим человеком!", null);
 									}
-									return new Response("Sabotage", "You can't sabotage someone else's condom, especially not while having sex with them!", null);
+									return new Response("Саботаж", "Вы не можете портить чужой презерватив, тем более во время секса с этим человеком!", null);
 								}
-								return new Response("Enchant", "You can't enchant someone else's clothing, especially not while having sex with them!", null);
+								return new Response("Зачаровать", "Вы не можете зачаровывать чужую одежду, тем более во время секса с этим человеком!", null);
 
 							} else if(index >= 6 && index <= 9 && index-6<clothing.getClothingType().getEquipSlots().size()) { //TODO ???
 								InventorySlot slot = clothing.getClothingType().getEquipSlots().get(index-6);
 								if(Main.sex.isCharacterImmobilised(Main.game.getPlayer())) {
-									return new Response("Equip: "+Util.capitaliseSentence(slot.getName()), "You can't equip this as you are currently [style.colourTerrible(immobilised)]!", null);
+									return new Response("Надеть: "+Util.capitaliseSentence(slot.getName()), "Вы не можете надеть это, так как сейчас вы [style.colourTerrible(обездвижены)]!", null);
 								}
 								if(clothing.isCanBeEquipped(Main.game.getPlayer(), slot)) {
 									if(clothing.isAbleToBeEquippedDuringSex(slot).getKey() && !inventoryNPC.isTrader()) {
 										if(!Main.sex.getInitialSexManager().isAbleToEquipSexClothing(Main.game.getPlayer(), Main.game.getPlayer(), clothing)) {
-											return new Response("Equip: "+Util.capitaliseSentence(slot.getName()), "As this is a special sex scene, you cannot equip clothing during it!", null);
+											return new Response("Надеть: "+Util.capitaliseSentence(slot.getName()), "Так как это особая секс-сцена, вы не можете надевать одежду во время неё!", null);
 										}
 										if(!Main.sex.isClothingEquipAvailable(Main.game.getPlayer(), slot, clothing)) {
-											return new Response("Equip: "+Util.capitaliseSentence(slot.getName()), "This slot is involved with an ongoing sex action, so you cannot equip clothing into it!", null);
+											return new Response("Надеть: "+Util.capitaliseSentence(slot.getName()), "Этот слот задействован в текущем сексуальном действии, поэтому вы не можете надеть в него одежду!", null);
 										}
 										if (Main.game.getPlayer().isAbleToEquip(clothing, slot, false, Main.game.getPlayer())) {
-											return new Response("Equip: "+Util.capitaliseSentence(slot.getName()), "Equip the " + clothing.getName() + ".", Main.sex.SEX_DIALOGUE){
+											return new Response("Надеть: "+Util.capitaliseSentence(slot.getName()), "Экипировать " + clothing.getName() + ".", Main.sex.SEX_DIALOGUE){
 												@Override
 												public void effects(){
 													AbstractClothing c = clothing;
@@ -5345,15 +5320,15 @@ public class InventoryDialogue {
 												}
 											};
 										} else {
-											return new Response("Equip: "+Util.capitaliseSentence(slot.getName()), getClothingBlockingRemovalText(Main.game.getPlayer(), "equip"), null);
+											return new Response("Надеть: "+Util.capitaliseSentence(slot.getName()), getClothingBlockingRemovalText(Main.game.getPlayer(), "надеть"), null);
 										}
 										
 									} else {
-										return new Response("Equip: "+Util.capitaliseSentence(slot.getName()), clothing.isAbleToBeEquippedDuringSex(slot).getValue(), null);
+										return new Response("Надеть: "+Util.capitaliseSentence(slot.getName()), clothing.isAbleToBeEquippedDuringSex(slot).getValue(), null);
 									}
 									
 								} else {
-									return new Response("Equip: "+Util.capitaliseSentence(slot.getName()), clothing.getCannotBeEquippedText(Main.game.getPlayer(), slot), null);
+									return new Response("Надеть: "+Util.capitaliseSentence(slot.getName()), clothing.getCannotBeEquippedText(Main.game.getPlayer(), slot), null);
 								}
 								
 							} else if (index == 10) {
@@ -5363,14 +5338,14 @@ public class InventoryDialogue {
 								InventorySlot slot = clothing.getClothingType().getEquipSlots().get(index-11);
 								if(Main.sex.isCharacterImmobilised(Main.game.getPlayer())) {
 									return new Response(
-											UtilText.parse(inventoryNPC, "Equip: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim])"),
-											UtilText.parse(inventoryNPC, "You can't get [npc.name] to equip the " + clothing.getName() + " as you are currently [style.colourTerrible(immobilised)]!"),
+											UtilText.parse(inventoryNPC, "Надеть: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim])"),
+											UtilText.parse(inventoryNPC, "Вы не можете заставить [npc.name] надеть " + clothing.getName() + " так как ты сейчас [style.colourTerrible(парализован)]!"),
 											null);
 								}
 								Value<Boolean, String> equipAllowed = inventoryNPC.isInventoryEquipAllowed(clothing, slot);
 								if(!equipAllowed.getKey()) {
 									return new Response(
-											UtilText.parse(inventoryNPC, "Equip: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim])"),
+											UtilText.parse(inventoryNPC, "Надеть: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim])"),
 											UtilText.parse(inventoryNPC, equipAllowed.getValue()),
 											null);
 								}
@@ -5378,20 +5353,20 @@ public class InventoryDialogue {
 									if(clothing.isAbleToBeEquippedDuringSex(slot).getKey() && !inventoryNPC.isTrader()) {
 										if(!Main.sex.getInitialSexManager().isAbleToEquipSexClothing(Main.game.getPlayer(), inventoryNPC, clothing)) {
 											return new Response(
-													UtilText.parse(inventoryNPC, "Equip: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim])"),
-													"As this is a special sex scene, you cannot equip clothing during it!",
+													UtilText.parse(inventoryNPC, "Надеть: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim])"),
+													"Так как это особая секс-сцена, вы не можете надевать одежду во время неё!",
 													null);
 										}
 										if(!Main.sex.isClothingEquipAvailable(inventoryNPC, slot, clothing)) {
 											return new Response(
-													UtilText.parse(inventoryNPC, "Equip: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim])"), 
-													"This slot is involved with an ongoing sex action, so you cannot equip clothing into it!",
+													UtilText.parse(inventoryNPC, "Надеть: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim])"), 
+													"Этот слот задействован в текущем сексуальном действии, поэтому вы не можете надеть в него одежду!",
 													null);
 										}
 										if (inventoryNPC.isAbleToEquip(clothing, slot, false, Main.game.getPlayer())) {
 											return new Response(
-													UtilText.parse(inventoryNPC, "Equip: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim])"),
-													UtilText.parse(inventoryNPC, "Get [npc.name] to equip the " + clothing.getName() + "."),
+													UtilText.parse(inventoryNPC, "Надеть: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim])"),
+													UtilText.parse(inventoryNPC, "Заставьте [npc.name] экипировать " + clothing.getName() + "."),
 													Main.sex.SEX_DIALOGUE){
 												@Override
 												public void effects(){
@@ -5405,21 +5380,21 @@ public class InventoryDialogue {
 											};
 										} else {
 											return new Response(
-													UtilText.parse(inventoryNPC, "Equip: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim])"),
-													UtilText.parse(inventoryNPC, "[npc.Name] can't equip the " + clothing.getName() + ", as other clothing is blocking [npc.herHim] from doing so!"),
+													UtilText.parse(inventoryNPC, "Надеть: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim])"),
+													UtilText.parse(inventoryNPC, "[npc.Name] не может экипировать " + clothing.getName() + ", так как другая одежда мешает [npc.herHim] это сделать!"),
 													null);
 										}
 										
 									} else {
 										return new Response(
-												UtilText.parse(inventoryNPC, "Equip: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim])"),
+												UtilText.parse(inventoryNPC, "Надеть: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim])"),
 												clothing.isAbleToBeEquippedDuringSex(slot).getValue(),
 												null);
 									}
 									
 								} else {
 									return new Response(
-											UtilText.parse(inventoryNPC, "Equip: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim])"),
+											UtilText.parse(inventoryNPC, "Надеть: "+Util.capitaliseSentence(slot.getName())+" ([npc.HerHim])"),
 											clothing.getCannotBeEquippedText(inventoryNPC, slot),
 											null);
 								}
@@ -5434,12 +5409,12 @@ public class InventoryDialogue {
 							if(index == 1) {
 								int sellPrice = buyback?Main.game.getPlayer().getBuybackStack().get(buyBackIndex).getPrice():clothing.getPrice(inventoryNPC.getSellModifier(clothing));
 								if(inventoryFull) {
-									return new Response("Buy (1) ("+UtilText.formatAsMoneyUncoloured(sellPrice, "span")+")", "Your inventory is already full!", null);
+									return new Response("Купить (1) ("+UtilText.formatAsMoneyUncoloured(sellPrice, "охват")+")", "Ваш инвентарь уже полон!", null);
 								}
 								if(Main.game.getPlayer().getMoney() < sellPrice) {
-									return new Response("Buy (1) ("+UtilText.formatAsMoneyUncoloured(sellPrice, "span")+")", "You can't afford to buy this!", null);
+									return new Response("Купить (1) ("+UtilText.formatAsMoneyUncoloured(sellPrice, "охват")+")", "Тебе не хватает денег на это!", null);
 								}
-								return new Response("Buy (1) (" + UtilText.formatAsMoney(sellPrice, "span") + ")", "Buy the " + clothing.getName() + " for " + UtilText.formatAsMoney(sellPrice) + ".", INVENTORY_MENU){
+								return new Response("Купить (1) (" + UtilText.formatAsMoney(sellPrice, "охват") + ")", "Купить  " + clothing.getName() + " на " + UtilText.formatAsMoney(sellPrice) + ".", INVENTORY_MENU){
 									@Override
 									public void effects(){
 										sellClothing(inventoryNPC, Main.game.getPlayer(), clothing, 1, sellPrice);
@@ -5450,15 +5425,15 @@ public class InventoryDialogue {
 								int sellPrice = buyback?Main.game.getPlayer().getBuybackStack().get(buyBackIndex).getPrice():clothing.getPrice(inventoryNPC.getSellModifier(clothing));
 								if((buyback && Main.game.getPlayer().getBuybackStack().get(buyBackIndex).getCount()<5)
 										|| (!buyback && inventoryNPC.getClothingCount(clothing) < 5)) {
-									return new Response("Buy (5) ("+UtilText.formatAsMoneyUncoloured(sellPrice*5, "span")+")", UtilText.parse(inventoryNPC, "[npc.Name] doesn't have five "+clothing.getNamePlural()+"."), null);
+									return new Response("Купить (5) ("+UtilText.formatAsMoneyUncoloured(sellPrice*5, "охват")+")", UtilText.parse(inventoryNPC, "У [npc.Name] нет пяти штук "+clothing.getNamePlural()+"."), null);
 								}
 								if(inventoryFull) {
-									return new Response("Buy (5) ("+UtilText.formatAsMoneyUncoloured(sellPrice*5, "span")+")", "Your inventory is already full!", null);
+									return new Response("Купить (5) ("+UtilText.formatAsMoneyUncoloured(sellPrice*5, "охват")+")", "Ваш инвентарь уже полон!", null);
 								}
 								if(Main.game.getPlayer().getMoney() < sellPrice*5) {
-									return new Response("Buy (5) ("+UtilText.formatAsMoneyUncoloured(sellPrice*5, "span")+")", "You can't afford to buy this!", null);
+									return new Response("Купить (5) ("+UtilText.formatAsMoneyUncoloured(sellPrice*5, "охват")+")", "Тебе не хватает денег на это!", null);
 								}
-								return new Response("Buy (5) (" + UtilText.formatAsMoney(sellPrice*5, "span") + ")", "Buy the " + clothing.getName() + " for " + UtilText.formatAsMoney(sellPrice*5) + ".", INVENTORY_MENU){
+								return new Response("Купить (5) (" + UtilText.formatAsMoney(sellPrice*5, "охват") + ")", "Купить  " + clothing.getName() + " на " + UtilText.formatAsMoney(sellPrice*5) + ".", INVENTORY_MENU){
 									@Override
 									public void effects(){
 										sellClothing(inventoryNPC, Main.game.getPlayer(), clothing, 5, sellPrice);
@@ -5469,24 +5444,24 @@ public class InventoryDialogue {
 								int sellPrice = buyback?Main.game.getPlayer().getBuybackStack().get(buyBackIndex).getPrice():clothing.getPrice(inventoryNPC.getSellModifier(clothing));
 								int count = buyback?Main.game.getPlayer().getBuybackStack().get(buyBackIndex).getCount():inventoryNPC.getClothingCount(clothing);
 								if(inventoryFull) {
-									return new Response("Buy (All) ("+UtilText.formatAsMoneyUncoloured(sellPrice*count, "span")+")", "Your inventory is already full!", null);
+									return new Response("Купить (Все) ("+UtilText.formatAsMoneyUncoloured(sellPrice*count, "охват")+")", "Ваш инвентарь уже полон!", null);
 								}
 								if(Main.game.getPlayer().getMoney() < sellPrice*count) {
 									int affordableCount = (int)(Main.game.getPlayer().getMoney() / sellPrice);
 									if(affordableCount > 0) {
-										return new Response("Buy (Max " + affordableCount + ") (" + UtilText.formatAsMoney(sellPrice * affordableCount, "span") + ")",
-												"Buy the " + clothing.getName() + " for " + UtilText.formatAsMoney(sellPrice * affordableCount) + ".", INVENTORY_MENU) {
+										return new Response("Купить (Макс " + affordableCount + ") (" + UtilText.formatAsMoney(sellPrice * affordableCount, "охват") + ")",
+												"Купить  " + clothing.getName() + " на " + UtilText.formatAsMoney(sellPrice * affordableCount) + ".", INVENTORY_MENU) {
 											@Override
 											public void effects() {
 												sellClothing(inventoryNPC, Main.game.getPlayer(), clothing, affordableCount, sellPrice);
 											}
 										};
 									} else {
-										return new Response("Buy (All) ("+UtilText.formatAsMoneyUncoloured(sellPrice*count, "span")+")", "You can't afford to buy this!", null);
+										return new Response("Купить (Все) ("+UtilText.formatAsMoneyUncoloured(sellPrice*count, "охват")+")", "Тебе не хватает денег на это!", null);
 									}
 								}
-								return new Response("Buy (All) (" + UtilText.formatAsMoney(sellPrice*count, "span") + ")",
-										"Buy the " + clothing.getName() + " for " + UtilText.formatAsMoney(sellPrice*count) + ".", INVENTORY_MENU){
+								return new Response("Купить (Все) (" + UtilText.formatAsMoney(sellPrice*count, "охват") + ")",
+										"Купить  " + clothing.getName() + " на " + UtilText.formatAsMoney(sellPrice*count) + ".", INVENTORY_MENU){
 									@Override
 									public void effects(){
 										sellClothing(inventoryNPC, Main.game.getPlayer(), clothing, count, sellPrice);
@@ -5494,19 +5469,19 @@ public class InventoryDialogue {
 								};
 								
 							} else if(index == 4) {
-								return new Response("Dye", UtilText.parse(inventoryNPC, "[npc.Name] isn't going to let you dye the clothing that [npc.sheIs] trying to sell!"), null);
+								return new Response("Краситель", UtilText.parse(inventoryNPC, "[npc.Name] не позволит тебе перекрасить одежду, которую пытается продать [npc.sheIs]!"), null);
 								
 							} else if(index == 5) {
 								if(clothing.isCondom()) {
 									if(clothing.getCondomEffect().getPotency().isNegative()) {
-										return new Response("Repair (<i>1 Essence</i>)", "You can't repair someone else's condom!", null);
+										return new Response("Починить (<i>1 Эссенция</i>)", "Ты не можешь починить чужой презерватив!", null);
 									}
-									return new Response("Sabotage", "You can't sabotage someone else's condom!", null);
+									return new Response("Саботаж", "Ты не можешь испортить чужой презерватив!", null);
 								}
-								return new Response("Enchant", "You can't enchant someone else's clothing!", null);
+								return new Response("Зачаровать", "Ты не можешь зачаровать чужую одежду!", null);
 								
 							} else if(index == 6) {
-								return new Response("Equip (Self)", UtilText.parse(inventoryNPC, "[npc.Name] isn't going to let you use [npc.her] clothing without buying them first."), null);
+								return new Response("Надеть (на себя)", UtilText.parse(inventoryNPC, "[npc.Name] не позволит тебе использовать одежду [npc.her], не купив её сначала."), null);
 								
 							} else if (index == 9) {
 								return getBuybackResponse();
@@ -5515,7 +5490,7 @@ public class InventoryDialogue {
 								return getQuickTradeResponse();
 								
 							} else if(index == 11) {
-								return new Response(UtilText.parse(inventoryNPC, "Equip ([npc.HerHim])"), UtilText.parse(inventoryNPC, "[npc.Name] isn't going to use the clothing that [npc.sheIs] trying to sell!"), null);
+								return new Response(UtilText.parse(inventoryNPC, "Экипировать ([npc.HerHim])"), UtilText.parse(inventoryNPC, "[npc.Name] не станет носить одежду, которую пытается продать [npc.sheIs]!"), null);
 								
 							} else {
 								return null;
@@ -5533,14 +5508,14 @@ public class InventoryDialogue {
 		}
 	};
 	
-	public static final DialogueNode WEAPON_EQUIPPED = new DialogueNode("Weapon equipped", "", true) {
+	public static final DialogueNode WEAPON_EQUIPPED = new DialogueNode("Оружие экипировано", "", true) {
 		
 		@Override
 		public String getLabel() {
 			if (Main.game.getDialogueFlags().values.contains(DialogueFlagValue.quickTrade) && !Main.game.isInSex() && !Main.game.isInCombat()) {
-				return "Inventory (Quick-Manage is <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>ON</b>)";
+				return "Инвентарь (Быстрое управление <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>ВКЛЮЧЕНО</b>)";
 			} else {
-				return "Inventory";
+				return "Инвентарь";
 			}
 		}
 		
@@ -5582,7 +5557,7 @@ public class InventoryDialogue {
 
 			if(Main.game.isBadEnd()) {
 				if(index==1) {
-					return new Response("Unavailable", "You can't manipulate your inventory during a bad end...", null);
+					return new Response("Недоступно", "Вы не можете управлять инвентарем во время плохого финала...", null);
 				}
 				return null;
 			}
@@ -5597,20 +5572,20 @@ public class InventoryDialogue {
 					case COMBAT:
 						if (index == 1) {
 							if(Main.game.getPlayer().getLocationPlace().isItemsDisappear()) {
-								return new Response("Drop", "You can't change weapons while fighting someone!", null);
+								return new Response("Выбросить", "Вы не можете менять оружие во время боя!", null);
 								
 							} else {
-								return new Response("Store", "You can't change weapons while fighting someone!", null);
+								return new Response("Спрятать", "Вы не можете менять оружие во время боя!", null);
 							}
 							
 						} else if (index==4) {
-							return new Response("Dye/Reforge", "You can't alter the properties of "+(owner.isPlayer()?"your":owner.getName("")+"'s")+" weapons in combat!", null);
+							return new Response("Краска/Перековка", "Ты не можешь изменять свойства "+(owner.isPlayer()?"твоей":owner.getName("")+"'s")+" оружия в бою!", null);
 							
 						} else if(index == 5) {
-							return new Response("Enchant", "You can't enchant equipped weapons!", null);
+							return new Response("Зачаровать", "Ты не можешь зачаровать экипированное оружие!", null);
 							
 						} if(index == 6) {
-							return new Response("Unequip", "You can't change weapons while fighting someone!", null);
+							return new Response("Снять", "Вы не можете менять оружие во время боя!", null);
 							
 						} else if (index == 10) {
 							return getQuickTradeResponse();
@@ -5624,12 +5599,12 @@ public class InventoryDialogue {
 							boolean areaFull = Main.game.isPlayerTileFull() && !Main.game.getPlayerCell().getInventory().hasWeapon(weapon);
 							if(Main.game.getPlayer().getLocationPlace().isItemsDisappear()) {
 								if(!weapon.getWeaponType().isAbleToBeDropped()) {
-									return new Response("Drop", "You cannot drop the " + weapon.getName() + "!", null);
+									return new Response("Выбросить", "Вы не можете выбросить " + weapon.getName() + "!", null);
 									
 								} else if(areaFull) {
-									return new Response("Drop", "This area is full, so you can't drop your " + weapon.getName() + " here!", null);
+									return new Response("Выбросить", "Это место заполнено, поэтому вы не можете бросить свой " + weapon.getName() + " здесь!", null);
 								} else {
-									return new Response("Drop", "Drop your " + weapon.getName() + ".", INVENTORY_MENU){
+									return new Response("Выбросить", "Выбросить свой " + weapon.getName() + ".", INVENTORY_MENU){
 										@Override
 										public void effects(){
 											Main.game.getTextEndStringBuilder().append(
@@ -5643,12 +5618,12 @@ public class InventoryDialogue {
 								
 							} else {
 								if(!weapon.getWeaponType().isAbleToBeDropped()) {
-									return new Response("Store", "You cannot drop the " + weapon.getName() + "!", null);
+									return new Response("Спрятать", "Вы не можете выбросить " + weapon.getName() + "!", null);
 									
 								} else if(areaFull) {
-									return new Response("Store", "This area is full, so you can't store your " + weapon.getName() + " here!", null);
+									return new Response("Спрятать", "Эта область заполнена, поэтому вы не можете сложить свои " + weapon.getName() + " здесь!", null);
 								} else {
-									return new Response("Store", "Store your " + weapon.getName() + " in this area.", INVENTORY_MENU){
+									return new Response("Спрятать", "Убрать ваше " + weapon.getName() + " в этой области.", INVENTORY_MENU){
 										@Override
 										public void effects(){
 											Main.game.getTextEndStringBuilder().append(
@@ -5663,10 +5638,10 @@ public class InventoryDialogue {
 							
 						} else if (index==4) {
 							if (isWeaponDyeReforgeActionAvailable()) {
-								return new Response("Dye/Reforge", 
+								return new Response("Краска/Перековка", 
 										Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
-											?"Use your proficiency with [style.colourEarth(Earth spells)] to alter this weapon's properties."
-											:"Use a dye-brush or reforge hammer to alter this weapon's properties.",
+											?"Используйте ваше мастерство в [style.colourEarth(земляных заклинаниях)], чтобы изменить свойства этого оружия."
+											:"Используйте кисть для окрашивания или молот для перековки, чтобы изменить свойства этого оружия.",
 										DYE_EQUIPPED_WEAPON) {
 									@Override
 									public void effects() {
@@ -5674,14 +5649,14 @@ public class InventoryDialogue {
 									}
 								};
 							} else {
-								return new Response("Dye", "You need a dye-brush or reforge hammer in order to alter this weapon's properties.", null);
+								return new Response("Краситель", "Чтобы изменить свойства этого оружия, вам понадобится кисть для красок или молот для перековки.", null);
 							}
 							
 						} else if(index == 5) {
-							return new Response("Enchant", "You can't enchant equipped weapons!", null);
+							return new Response("Зачаровать", "Ты не можешь зачаровать экипированное оружие!", null);
 							
 						} else if(index == 6) {
-							return new Response("Unequip", "Unequip the " + weapon.getName() + ".", INVENTORY_MENU){
+							return new Response("Снять", "Снять " + weapon.getName() + ".", INVENTORY_MENU){
 								@Override
 								public void effects(){
 									Main.game.getTextEndStringBuilder().append(
@@ -5704,12 +5679,12 @@ public class InventoryDialogue {
 							boolean areaFull = Main.game.isPlayerTileFull() && !Main.game.getPlayerCell().getInventory().hasWeapon(weapon);
 							if(Main.game.getPlayer().getLocationPlace().isItemsDisappear()) {
 								if(!weapon.getWeaponType().isAbleToBeDropped()) {
-									return new Response("Drop", "You cannot drop the " + weapon.getName() + "!", null);
+									return new Response("Выбросить", "Вы не можете выбросить " + weapon.getName() + "!", null);
 									
 								} else if(areaFull) {
-									return new Response("Drop", "This area is full, so you can't drop your " + weapon.getName() + " here!", null);
+									return new Response("Выбросить", "Это место заполнено, поэтому вы не можете бросить свой " + weapon.getName() + " здесь!", null);
 								} else {
-									return new Response("Drop", "Drop your " + weapon.getName() + ".", Main.sex.SEX_DIALOGUE){
+									return new Response("Выбросить", "Выбросить свой " + weapon.getName() + ".", Main.sex.SEX_DIALOGUE){
 										@Override
 										public void effects(){
 											Main.sex.setUnequipWeaponText(weapon,
@@ -5726,12 +5701,12 @@ public class InventoryDialogue {
 								
 							} else {
 								if(!weapon.getWeaponType().isAbleToBeDropped()) {
-									return new Response("Store", "You cannot drop the " + weapon.getName() + "!", null);
+									return new Response("Спрятать", "Вы не можете выбросить " + weapon.getName() + "!", null);
 									
 								} else if(areaFull) {
-									return new Response("Store", "This area is full, so you can't store your " + weapon.getName() + " here!", null);
+									return new Response("Спрятать", "Эта область заполнена, поэтому вы не можете сложить свои " + weapon.getName() + " здесь!", null);
 								} else {
-									return new Response("Store", "Store your " + weapon.getName() + " in this area.", Main.sex.SEX_DIALOGUE){
+									return new Response("Спрятать", "Убрать ваше " + weapon.getName() + " в этой области.", Main.sex.SEX_DIALOGUE){
 										@Override
 										public void effects(){
 											Main.sex.setUnequipWeaponText(weapon,
@@ -5748,13 +5723,13 @@ public class InventoryDialogue {
 							}
 							
 						} else if (index==4) {
-							return new Response("Dye/Reforge", "You can't alter the properties of "+(owner.isPlayer()?"your":owner.getName("")+"'s")+" weapons in sex!", null);
+							return new Response("Краска/Перековка", "Ты не можешь изменять свойства "+(owner.isPlayer()?"твоей":owner.getName("")+"'s")+" оружие в секс!", null);
 							
 						} else if(index == 5) {
-							return new Response("Enchant", "You can't enchant equipped weapons!", null);
+							return new Response("Зачаровать", "Ты не можешь зачаровать экипированное оружие!", null);
 							
 						} else if(index == 6) {
-							return new Response("Unequip", "Unequip the " + weapon.getName() + ".", Main.sex.SEX_DIALOGUE){
+							return new Response("Снять", "Снять " + weapon.getName() + ".", Main.sex.SEX_DIALOGUE){
 								@Override
 								public void effects(){
 									Main.sex.setUnequipWeaponText(weapon,
@@ -5782,19 +5757,19 @@ public class InventoryDialogue {
 				switch(interactionType) {
 					case COMBAT:
 						if(index == 1) {
-							return new Response("Drop", "You can't make someone drop their weapon while fighting them!", null);
+							return new Response("Выбросить", "Нельзя заставить кого-то выпустить оружие прямо во время боя!", null);
 							
 						} else if(index == 2) {
-							return new Response("Take", "You can't take someone's weapon while fighting them!", null);
+							return new Response("Взять", "Нельзя отобрать оружие у кого-то прямо во время боя!", null);
 							
 						} else if (index==4) {
-							return new Response("Dye/Reforge", "You can't alter the properties of someone else's equipped weapons while you're fighting them!", null);
+							return new Response("Краска/Перековка", "Нельзя изменять свойства чужого экипированного оружия прямо во время боя!", null);
 							
 						} else if(index == 5) {
-							return new Response("Enchant", "You can't enchant someone else's equipped weapon, especially not while fighting them!", null);
+							return new Response("Зачаровать", "Нельзя зачаровывать чужое экипированное оружие, особенно во время боя!", null);
 							
 						} else if (index == 6) {
-							return new Response("Unequip", "You can't unequip someone's weapon while fighting them!", null);
+							return new Response("Снять", "Нельзя снять оружие с кого-то прямо во время боя!", null);
 							
 						} else if (index == 10) {
 							return getQuickTradeResponse();
@@ -5810,12 +5785,12 @@ public class InventoryDialogue {
 							boolean areaFull = Main.game.isPlayerTileFull() && !Main.game.getPlayerCell().getInventory().hasWeapon(weapon);
 							if(Main.game.getPlayer().getLocationPlace().isItemsDisappear()) {
 								if(!weapon.getWeaponType().isAbleToBeDropped()) {
-									return new Response("Drop", UtilText.parse(inventoryNPC, "[npc.Name] cannot drop [npc.her] " + weapon.getName() + "!"), null);
+									return new Response("Выбросить", UtilText.parse(inventoryNPC, "[npc.Name] не может выпустить [npc.her] " + weapon.getName() + "!"), null);
 									
 								} else if(areaFull) {
-									return new Response("Drop", UtilText.parse(inventoryNPC, "This area is full, so [npc.name] can't drop [npc.her] " + weapon.getName() + " here!"), null);
+									return new Response("Выбросить", UtilText.parse(inventoryNPC, "Место занято, поэтому [npc.name] не может выпустить [npc.her] " + weapon.getName() + " здесь!"), null);
 								} else {
-									return new Response("Drop", UtilText.parse(inventoryNPC, "Get [npc.name] to drop [npc.her] " + weapon.getName() + "."), INVENTORY_MENU){
+									return new Response("Выбросить", UtilText.parse(inventoryNPC, "Заставьте [npc.name] выпустить [npc.her] " + weapon.getName() + "."), INVENTORY_MENU){
 										@Override
 										public void effects(){
 											Main.game.getTextEndStringBuilder().append(
@@ -5829,12 +5804,12 @@ public class InventoryDialogue {
 								
 							} else {
 								if(!weapon.getWeaponType().isAbleToBeDropped()) {
-									return new Response("Drop", UtilText.parse(inventoryNPC, "[npc.Name] cannot drop [npc.her] " + weapon.getName() + "!"), null);
+									return new Response("Выбросить", UtilText.parse(inventoryNPC, "[npc.Name] не может выпустить [npc.her] " + weapon.getName() + "!"), null);
 									
 								} else if(areaFull) {
-									return new Response("Store", UtilText.parse(inventoryNPC, "This area is full, so [npc.name] can't store [npc.her] " + weapon.getName() + " here!"), null);
+									return new Response("Спрятать", UtilText.parse(inventoryNPC, "Место занято, поэтому [npc.name] не может убрать [npc.her] " + weapon.getName() + " здесь!"), null);
 								} else {
-									return new Response("Store", UtilText.parse(inventoryNPC, "Get [npc.name] to store [npc.her] " + weapon.getName() + " in this area."), INVENTORY_MENU){
+									return new Response("Спрятать", UtilText.parse(inventoryNPC, "Получите [npc.name], чтобы хранить [npc.her] " + weapon.getName() + " в этой области."), INVENTORY_MENU){
 										@Override
 										public void effects(){
 											Main.game.getTextEndStringBuilder().append(
@@ -5849,11 +5824,11 @@ public class InventoryDialogue {
 							
 						} else if (index == 2) {
 							if(inventoryFull) {
-								return new Response("Take", "Your inventory is full, so you can't take this!", null);
+								return new Response("Взять", "Ваш инвентарь полон, так что вы не можете взять это!", null);
 								
 							} else {
-								return new Response("Take",
-										UtilText.parse(inventoryNPC, "Take [npc.namePos] " + weapon.getName() + " and add it to your inventory."),
+								return new Response("Взять",
+										UtilText.parse(inventoryNPC, "Взять [npc.namePos] " + weapon.getName() + " и добавить его в свой инвентарь."),
 										INVENTORY_MENU){
 									@Override
 									public void effects(){
@@ -5869,10 +5844,10 @@ public class InventoryDialogue {
 							
 						} else if (index==4) {
 							if (isWeaponDyeReforgeActionAvailable()) {
-								return new Response("Dye/Reforge", 
+								return new Response("Краска/Перековка", 
 										Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
-											?"Use your proficiency with [style.colourEarth(Earth spells)] to alter this weapon's properties."
-											:"Use a dye-brush or reforge hammer to alter this weapon's properties.",
+											?"Используйте ваше мастерство в [style.colourEarth(земляных заклинаниях)], чтобы изменить свойства этого оружия."
+											:"Используйте кисть для окрашивания или молот для перековки, чтобы изменить свойства этого оружия.",
 										DYE_EQUIPPED_WEAPON) {
 									@Override
 									public void effects() {
@@ -5880,17 +5855,17 @@ public class InventoryDialogue {
 									}
 								};
 							} else {
-								return new Response("Dye", UtilText.parse(inventoryNPC, "You'll need to find a dye-brush or reforge hammer if you want to alter the properties of [npc.namePos] weapons."), null);
+								return new Response("Краситель", UtilText.parse(inventoryNPC, "Чтобы изменить свойства оружия [npc.namePos], вам понадобится кисть для красок или молот для перековки."), null);
 							}
 							
 						} else if(index == 5) {
-							return new Response("Enchant", "You can't enchant equipped weapons!", null);
+							return new Response("Зачаровать", "Ты не можешь зачаровать экипированное оружие!", null);
 							
 						} else if(index == 6) {
 							if(!weapon.getWeaponType().isAbleToBeDropped()) {
-								return new Response("Unequip", UtilText.parse(inventoryNPC, "As it's a unique weapon, the " + weapon.getName() + " cannot be unequipped into [npc.namePos] inventory."), null);
+								return new Response("Снять", UtilText.parse(inventoryNPC, "Так как это уникальное оружие, " + weapon.getName() + " нельзя убрать в [npc.namePos] инвентарь."), null);
 							}
-							return new Response("Unequip", UtilText.parse(inventoryNPC, "Get [npc.name] to unequip [npc.her] " + weapon.getName() + "."), INVENTORY_MENU){
+							return new Response("Снять", UtilText.parse(inventoryNPC, "Получите [npc.name], чтобы снять [npc.her] " + weapon.getName() + "."), INVENTORY_MENU){
 								@Override
 								public void effects(){
 									Main.game.getTextEndStringBuilder().append(
@@ -5910,19 +5885,19 @@ public class InventoryDialogue {
 						
 					case SEX:
 						if(index == 1) {
-							return new Response("Drop", "You can't unequip someone's weapon while having sex with them!", null);
+							return new Response("Выбросить", "Вы не можете снять чье-то оружие во время секса!", null);
 							
 						} else if (index == 2) {
-							return new Response("Take", "You can't take someone's weapon while having sex with them!", null);
+							return new Response("Взять", "Вы не можете забрать чье-то оружие во время секса!", null);
 							
 						} else if (index==4) {
-							return new Response("Dye/Reforge", UtilText.parse(inventoryNPC, "You can't alter the properties of [npc.namePos] weapons in sex!"), null);
+							return new Response("Краска/Перековка", UtilText.parse(inventoryNPC, "Вы не можете изменять свойства [npc.namePos] оружия во время секса!"), null);
 						
 						} else if(index == 5) {
-							return new Response("Enchant", "You can't enchant equipped weapons!", null);
+							return new Response("Зачаровать", "Ты не можешь зачаровать экипированное оружие!", null);
 							
 						} else if(index == 6) {
-							return new Response("Unequip", "You can't unequip someone's weapon while having sex with them!", null);
+							return new Response("Снять", "Вы не можете снять чье-то оружие во время секса!", null);
 							
 						} else if (index == 10) {
 							return getQuickTradeResponse();
@@ -5933,19 +5908,19 @@ public class InventoryDialogue {
 						
 					case TRADING:
 						if(index == 1) {
-							return new Response("Drop", "You can't make someone drop their weapon!", null);
+							return new Response("Выбросить", "Нельзя заставить кого-то выпустить оружие!", null);
 							
 						} else if (index == 2) {
-							return new Response("Take", "You can't take someone else's weapon!", null);
+							return new Response("Взять", "Нельзя забрать чужое оружие!", null);
 							
 						} else if (index==4) {
-							return new Response("Dye/Reforge", UtilText.parse(inventoryNPC, "You can't alter the properties of [npc.namePos] weapons!"), null);
+							return new Response("Краска/Перековка", UtilText.parse(inventoryNPC, "Нельзя изменять свойства оружия [npc.namePos]!"), null);
 							
 						} else if(index == 5) {
-							return new Response("Enchant", "You can't enchant someone else's equipped weapon!", null);
+							return new Response("Зачаровать", "Нельзя зачаровывать чужое экипированное оружие!", null);
 							
 						} else if(index == 6) {
-							return new Response("Unequip", "You can't unequip someone else's weapon!", null);
+							return new Response("Снять", "Нельзя снимать чужое оружие!", null);
 							
 						} else if (index == 10) {
 							return getQuickTradeResponse();
@@ -5964,18 +5939,18 @@ public class InventoryDialogue {
 			return DialogueNodeType.INVENTORY;
 		}
 	};
-	public static final DialogueNode CLOTHING_EQUIPPED = new DialogueNode("Clothing equipped", "", true) {
+	public static final DialogueNode CLOTHING_EQUIPPED = new DialogueNode("Одежда надета", "", true) {
 
 		@Override
 		public String getLabel() {
 			if(!Main.game.isInNewWorld()) {
-				return "Evening's Attire";
+				return "Вечерний наряд";
 			}
 			
 			if (Main.game.getDialogueFlags().values.contains(DialogueFlagValue.quickTrade) && !Main.game.isInSex() && !Main.game.isInCombat()) {
-				return "Inventory (Quick-Manage is <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>ON</b>)";
+				return "Инвентарь (Быстрое управление <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>ВКЛЮЧЕНО</b>)";
 			} else {
-				return "Inventory";
+				return "Инвентарь";
 			}
 		}
 		
@@ -6020,7 +5995,7 @@ public class InventoryDialogue {
 
 			if(Main.game.isBadEnd()) {
 				if(index==1) {
-					return new Response("Unavailable", "You can't manipulate your inventory during a bad end...", null);
+					return new Response("Недоступно", "Вы не можете управлять инвентарем во время плохого финала...", null);
 				}
 				return null;
 			}
@@ -6036,14 +6011,14 @@ public class InventoryDialogue {
 					case COMBAT:
 						if (index == 1) {
 							if(Main.game.getPlayer().getLocationPlace().isItemsDisappear()) {
-								return new Response("Drop", "You cannot drop the " + clothing.getName() + " while fighting someone!", null);
+								return new Response("Выбросить", "Вы не можете выбросить " + clothing.getName() + " во время боя!", null);
 								
 							} else {
-								return new Response("Store", "You cannot drop the " + clothing.getName() + " while fighting someone!", null);
+								return new Response("Спрятать", "Вы не можете выбросить " + clothing.getName() + " во время боя!", null);
 							}
 							
 						} else if (index==4) {
-							return new Response("Dye", "You can't dye "+(owner.isPlayer()?"your":owner.getName("")+"'s")+" clothes in combat!", null);
+							return new Response("Краситель", "Нельзя красить "+(owner.isPlayer()?"твоей":owner.getName("")+"'s")+" одежду в бою!", null);
 							
 						} else if(index == 5) {
 							if(clothing.isSealed()) {
@@ -6052,23 +6027,23 @@ public class InventoryDialogue {
 							} else {
 								if(clothing.isCondom()) {
 									if(clothing.getCondomEffect().getPotency().isNegative()) {
-										return new Response("Repair (<i>1 Essence</i>)", "You can't repair equipped condoms!", null);
+										return new Response("Починить (<i>1 Эссенция</i>)", "Нельзя чинить надетые презервативы!", null);
 									}
-									return new Response("Sabotage", "You can't sabotage equipped condoms!", null);
+									return new Response("Саботаж", "Нельзя портить надетые презервативы!", null);
 								}
-								return new Response("Enchant", "You can't enchant equipped clothing!", null);
+								return new Response("Зачаровать", "Нельзя зачаровывать надетую одежду!", null);
 							}
 							
 						} else if(index == 6 && !clothing.isDiscardedOnUnequip(slotEquippedTo)) {
-							return new Response("Unequip", "You can't unequip the " + clothing.getName() + " during combat!", null);
+							return new Response("Снять", "Нельзя снять " + clothing.getName() + " во время боя!", null);
 							
 						} else if (index == 10) {
 							return getQuickTradeResponse();
 							
 						} else if (index > 10 && index - 11 < clothing.getBlockedPartsKeysAsListWithoutNONE(owner, clothing.getSlotEquippedTo()).size()){
 								return new Response(Util.capitaliseSentence(clothing.getBlockedPartsKeysAsListWithoutNONE(owner, clothing.getSlotEquippedTo()).get(index -11).getDescription()),
-										"You can't "+clothing.getBlockedPartsKeysAsListWithoutNONE(owner, clothing.getSlotEquippedTo()).get(index -11).getDescription()
-										+ " the " + clothing.getName() + " during combat!", null);
+										"Вы не можете "+clothing.getBlockedPartsKeysAsListWithoutNONE(owner, clothing.getSlotEquippedTo()).get(index -11).getDescription()
+										+ "" + clothing.getName() + " во время боя!", null);
 								
 							
 						} else {
@@ -6081,15 +6056,15 @@ public class InventoryDialogue {
 							boolean areaFull = Main.game.isPlayerTileFull() && !Main.game.getPlayerCell().getInventory().hasClothing(clothing);
 							if(Main.game.getPlayer().getLocationPlace().isItemsDisappear()) {
 								if(!clothing.getClothingType().isAbleToBeDropped()) {
-									return new Response("Drop", "You cannot drop the " + clothing.getName() + "!", null);
+									return new Response("Выбросить", "Вы не можете выбросить " + clothing.getName() + "!", null);
 									
 								} else if(areaFull && !clothing.isDiscardedOnUnequip(slotEquippedTo)) {
-									return new Response("Drop", "This area is full, so you can't drop "+(owner.isPlayer()?"your":owner.getName("")+"'s")+" " + clothing.getName() + " here!", null);
+									return new Response("Выбросить", "Место закончилось, так что нельзя просто выбросить "+(owner.isPlayer()?"твоей":owner.getName("")+"'s")+" " + clothing.getName() + " здесь!", null);
 								} else {
-									return new Response((clothing.isDiscardedOnUnequip(slotEquippedTo)?"Discard":"Drop"),
+									return new Response((clothing.isDiscardedOnUnequip(slotEquippedTo)?"Выбросить":"Выбросить"),
 											(clothing.isDiscardedOnUnequip(slotEquippedTo)
-													?"Take off "+(owner.isPlayer()?"your":owner.getName("")+"'s")+" " + clothing.getName() + " and throw it away."
-													:"Drop "+(owner.isPlayer()?"your":owner.getName("")+"'s")+" " + clothing.getName() + "."),
+													?"Снять "+(owner.isPlayer()?"твоей":owner.getName("")+"'s")+" " + clothing.getName() + " и отправить это на помойку."
+													:"Выбросить "+(owner.isPlayer()?"твоей":owner.getName("")+"'s")+" " + clothing.getName() + "."),
 											INVENTORY_MENU){
 										@Override
 										public void effects(){
@@ -6100,15 +6075,15 @@ public class InventoryDialogue {
 								
 							} else {
 								if(!clothing.getClothingType().isAbleToBeDropped()) {
-									return new Response("Store", "You cannot drop the " + clothing.getName() + "!", null);
+									return new Response("Спрятать", "Вы не можете выбросить " + clothing.getName() + "!", null);
 									
 								} else if(areaFull && !clothing.isDiscardedOnUnequip(slotEquippedTo)) {
-									return new Response("Store", "This area is full, so you can't store "+(owner.isPlayer()?"your":owner.getName("")+"'s")+" " + clothing.getName() + " here!", null);
+									return new Response("Спрятать", "Это место заполнено, поэтому вы не можете сохранить "+(owner.isPlayer()?"твоей":owner.getName("")+"'s")+" " + clothing.getName() + " здесь!", null);
 								} else {
-									return new Response((clothing.isDiscardedOnUnequip(slotEquippedTo)?"Discard":"Store"),
+									return new Response((clothing.isDiscardedOnUnequip(slotEquippedTo)?"Выбросить":"Спрятать"),
 											(clothing.isDiscardedOnUnequip(slotEquippedTo)
-													?"Take off "+(owner.isPlayer()?"your":owner.getName("")+"'s")+" " + clothing.getName() + " and throw it away."
-													:"Store "+(owner.isPlayer()?"your":owner.getName("")+"'s")+" " + clothing.getName() + " in this area."),
+													?"Снять "+(owner.isPlayer()?"твоей":owner.getName("")+"'s")+" " + clothing.getName() + " и отправить это на помойку."
+													:"Спрятать "+(owner.isPlayer()?"твоей":owner.getName("")+"'s")+" " + clothing.getName() + " в этой области."),
 											INVENTORY_MENU){
 										@Override
 										public void effects(){
@@ -6120,10 +6095,10 @@ public class InventoryDialogue {
 							
 						} else if (index==4) {
 							if (isClothingDyeActionAvailable()) {
-								return new Response("Dye", 
+								return new Response("Краситель", 
 										Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
-											?"Use your proficiency with [style.colourEarth(Earth spells)] to dye this item."
-											:"Use a dye-brush to dye this item of clothing.",
+											?"Используйте свое мастерство в [style.colourEarth(заклинаниях Земли)], чтобы покрасить этот предмет."
+											:"Используйте кисть для окрашивания, чтобы покрасить эту одежду.",
 										DYE_EQUIPPED_CLOTHING) {
 									@Override
 									public void effects() {
@@ -6131,7 +6106,7 @@ public class InventoryDialogue {
 									}
 								};
 							} else {
-								return new Response("Dye", "You need a dye-brush in order to dye this item of clothing.", null);
+								return new Response("Краситель", "Чтобы покрасить эту вещь, вам нужна кисть для красок.", null);
 							}
 							
 						} else if(index == 5) {
@@ -6141,16 +6116,16 @@ public class InventoryDialogue {
 							} else {
 								if(clothing.isCondom()) {
 									if(clothing.getCondomEffect().getPotency().isNegative()) {
-										return new Response("Repair (<i>1 Essence</i>)", "You can't repair equipped condoms!", null);
+										return new Response("Починить (<i>1 Эссенция</i>)", "Нельзя чинить надетые презервативы!", null);
 									}
-									return new Response("Sabotage", "You can't sabotage equipped condoms!", null);
+									return new Response("Саботаж", "Нельзя портить надетые презервативы!", null);
 								}
-								return new Response("Enchant", "You can't enchant equipped clothing!", null);
+								return new Response("Зачаровать", "Нельзя зачаровывать надетую одежду!", null);
 							}
 							
 						} else if(index == 6 && !clothing.isDiscardedOnUnequip(slotEquippedTo)) {
 							if (owner.isAbleToUnequip(clothing, true, Main.game.getPlayer())) {
-								return new Response("Unequip", "Unequip the " + clothing.getName() + ".", INVENTORY_MENU){
+								return new Response("Снять", "Снять " + clothing.getName() + ".", INVENTORY_MENU){
 									@Override
 									public void effects(){
 										Main.game.getTextEndStringBuilder().append("<p style='text-align:center;'>" + unequipClothingToInventory(Main.game.getPlayer(), clothing) + "</p>");
@@ -6158,7 +6133,7 @@ public class InventoryDialogue {
 								};
 								
 							} else {
-								return new Response("Unequip", getClothingBlockingRemovalText(owner, "unequip"), null);
+								return new Response("Снять", getClothingBlockingRemovalText(owner, "снять"), null);
 							}
 							
 						} else if (index == 10) {
@@ -6168,12 +6143,12 @@ public class InventoryDialogue {
 							
 							if (clothing.getDisplacedList().contains(clothing.getBlockedPartsKeysAsListWithoutNONE(owner, clothing.getSlotEquippedTo()).get(index - 11))) {
 								return new Response(Util.capitaliseSentence(clothing.getBlockedPartsKeysAsListWithoutNONE(owner, clothing.getSlotEquippedTo()).get(index - 11).getOppositeDescription()),
-										Util.capitaliseSentence(clothing.getBlockedPartsKeysAsListWithoutNONE(owner, clothing.getSlotEquippedTo()).get(index - 11).getOppositeDescription()) + " the " + clothing.getName() + ". "
+										Util.capitaliseSentence(clothing.getBlockedPartsKeysAsListWithoutNONE(owner, clothing.getSlotEquippedTo()).get(index - 11).getOppositeDescription()) + "" + clothing.getName() + ". "
 												+ clothing.getClothingBlockingDescription(
 														clothing.getBlockedPartsKeysAsListWithoutNONE(owner, clothing.getSlotEquippedTo()).get(index - 11),
 														Main.game.getPlayer(),
 														clothing.getSlotEquippedTo(),
-														" <span style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>This will cover "+(owner.isPlayer()?"your":owner.getName("")+"'s")+" ",
+														" <span style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>Это прикроет "+(owner.isPlayer()?"твоей":owner.getName("")+"'s")+" ",
 														".</span>"),
 												CLOTHING_EQUIPPED){
 									@Override
@@ -6183,12 +6158,12 @@ public class InventoryDialogue {
 								};
 							} else {
 								return new Response(Util.capitaliseSentence(clothing.getBlockedPartsKeysAsListWithoutNONE(owner, clothing.getSlotEquippedTo()).get(index - 11).getDescription()),
-										Util.capitaliseSentence(clothing.getBlockedPartsKeysAsListWithoutNONE(owner, clothing.getSlotEquippedTo()).get(index - 11).getDescription()) + " the " + clothing.getName() + ". "
+										Util.capitaliseSentence(clothing.getBlockedPartsKeysAsListWithoutNONE(owner, clothing.getSlotEquippedTo()).get(index - 11).getDescription()) + "" + clothing.getName() + ". "
 												+ clothing.getClothingBlockingDescription(
 														clothing.getBlockedPartsKeysAsListWithoutNONE(owner, clothing.getSlotEquippedTo()).get(index - 11),
 														Main.game.getPlayer(),
 														clothing.getSlotEquippedTo(),
-														" <span style='color:" + PresetColour.GENERIC_SEX.toWebHexString() + ";'>This will expose "+(owner.isPlayer()?"your":owner.getName("")+"'s")+" ",
+														" <span style='color:" + PresetColour.GENERIC_SEX.toWebHexString() + ";'>Это обнажит "+(owner.isPlayer()?"твоей":owner.getName("")+"'s")+" ",
 														".</span>"),
 												CLOTHING_EQUIPPED){
 									@Override
@@ -6209,10 +6184,10 @@ public class InventoryDialogue {
 									|| Main.game.getPlayer().isCoverableAreaVisible(CoverableArea.PENIS)
 									|| Main.game.getPlayer().isCoverableAreaVisible(CoverableArea.VAGINA)
 									|| (Main.game.getPlayer().getClothingInSlot(InventorySlot.FOOT)==null && Main.game.getPlayer().getLegType().equals(LegType.HUMAN))) {
-								return new Response("To the stage", "You need to be wearing clothing that covers your body, as well as a pair of shoes.", null);
+								return new Response("На сцену", "Вам нужно быть одетым так, чтобы тело было прикрыто, а также надеть пару туфель.", null);
 								
 							} else {
-								return new Response("To the stage", "You're ready to approach the stage now.", CharacterCreation.CHOOSE_BACKGROUND) {
+								return new Response("На сцену", "Теперь ты готов выйти на сцену.", CharacterCreation.CHOOSE_BACKGROUND) {
 									@Override
 									public void effects() {
 										CharacterCreation.moveNPCIntoPlayerTile();
@@ -6222,10 +6197,10 @@ public class InventoryDialogue {
 							
 						} else if(index == 4){
 							if(Main.game.getPlayer().getClothingCurrentlyEquipped().isEmpty()){
-								return new Response("Unequip all", "You're currently naked, there's nothing to be unequipped.", null);
+								return new Response("Снять всё", "Сейчас на тебе ничего нет, снимать нечего.", null);
 							}
 							else{
-								return new Response("Unequip all", "Remove as much of your clothing as possible.", INVENTORY_MENU){
+								return new Response("Снять всё", "Снять как можно больше одежды.", INVENTORY_MENU){
 									@Override
 									public void effects(){
 										Main.game.getTextEndStringBuilder().append(unequipAll(Main.game.getPlayer()));
@@ -6234,7 +6209,7 @@ public class InventoryDialogue {
 							}
 							
 						} else if(index == 5) {
-							return new Response("Change colour", "Change the colour of this item of clothing.", DYE_EQUIPPED_CLOTHING_CHARACTER_CREATION) {
+							return new Response("Изменить цвет", "Изменить цвет этого предмета одежды.", DYE_EQUIPPED_CLOTHING_CHARACTER_CREATION) {
 								@Override
 								public void effects() {
 									resetClothingDyeColours();
@@ -6242,7 +6217,7 @@ public class InventoryDialogue {
 							};
 							
 						} else if(index == 6) {
-							return new Response("Unequip", "Unequip the " + clothing.getName() + ".", INVENTORY_MENU){
+							return new Response("Снять", "Снять " + clothing.getName() + ".", INVENTORY_MENU){
 								@Override
 								public void effects(){
 									unequipClothingToFloor(Main.game.getPlayer(), clothing);
@@ -6255,32 +6230,32 @@ public class InventoryDialogue {
 						
 					case SEX:
 						if (index == 1) {
-							String unequipTitle = "Drop";
+							String unequipTitle = "Выбросить";
 							if(clothing.isDiscardedOnUnequip(slotEquippedTo)) {
-								unequipTitle = "Discard";
+								unequipTitle = "Выбросить";
 							} else if(!Main.game.getPlayer().getLocationPlace().isItemsDisappear()) {
-								unequipTitle = "Store";
+								unequipTitle = "Спрятать";
 							}
 							if(Main.sex.isCharacterImmobilised(Main.game.getPlayer())) {
-								return new Response(unequipTitle, "You can't unequip the " + clothing.getName() + " as you are currently [style.colourTerrible(immobilised)]!", null);
+								return new Response(unequipTitle, "Нельзя снять " + clothing.getName() + " так как ты сейчас [style.colourTerrible(парализован)]!", null);
 							}
 							if(!Main.sex.isCanRemoveSelfClothing(Main.game.getPlayer())) {
-								return new Response(unequipTitle, "You can't unequip the " + clothing.getName() + " in this sex scene!", null);
+								return new Response(unequipTitle, "Нельзя снять " + clothing.getName() + " в этой секс-сцене!", null);
 							}
 							boolean areaFull = Main.game.isPlayerTileFull() && !Main.game.getPlayerCell().getInventory().hasClothing(clothing);
 							if(Main.game.getPlayer().getLocationPlace().isItemsDisappear()) {
 								if(!clothing.getClothingType().isAbleToBeDropped()) {
-									return new Response("Drop", "You cannot drop the " + clothing.getName() + "!", null);
+									return new Response("Выбросить", "Вы не можете выбросить " + clothing.getName() + "!", null);
 									
 								} else if(areaFull && !clothing.isDiscardedOnUnequip(slotEquippedTo)) {
-									return new Response("Drop", "This area is full, so you can't drop "+(owner.isPlayer()?"your":owner.getName("")+"'s")+" " + clothing.getName() + " here!", null);
+									return new Response("Выбросить", "Место закончилось, так что нельзя просто выбросить "+(owner.isPlayer()?"твоей":owner.getName("")+"'s")+" " + clothing.getName() + " здесь!", null);
 									
 								} else {
 									if (owner.isAbleToUnequip(clothing, false, Main.game.getPlayer())) {
-										return new Response((clothing.isDiscardedOnUnequip(slotEquippedTo)?"Discard":"Drop"),
+										return new Response((clothing.isDiscardedOnUnequip(slotEquippedTo)?"Выбросить":"Выбросить"),
 												(clothing.isDiscardedOnUnequip(slotEquippedTo)
-														?"Take off "+(owner.isPlayer()?"your":owner.getName("")+"'s")+" " + clothing.getName() + " and throw it away."
-														:"Drop "+(owner.isPlayer()?"your":owner.getName("")+"'s")+" " + clothing.getName() + "."),
+														?"Снять "+(owner.isPlayer()?"твоей":owner.getName("")+"'s")+" " + clothing.getName() + " и отправить это на помойку."
+														:"Выбросить "+(owner.isPlayer()?"твоей":owner.getName("")+"'s")+" " + clothing.getName() + "."),
 												Main.sex.SEX_DIALOGUE){
 											@Override
 											public void effects(){
@@ -6294,23 +6269,23 @@ public class InventoryDialogue {
 											}
 										};
 									} else {
-										return new Response("Drop", getClothingBlockingRemovalText(owner, "unequip"), null);
+										return new Response("Выбросить", getClothingBlockingRemovalText(owner, "снять"), null);
 									}
 								}
 								
 							} else {
 								if(!clothing.getClothingType().isAbleToBeDropped()) {
-									return new Response("Store", "You cannot drop the " + clothing.getName() + "!", null);
+									return new Response("Спрятать", "Вы не можете выбросить " + clothing.getName() + "!", null);
 									
 								} else if(areaFull && !clothing.isDiscardedOnUnequip(slotEquippedTo)) {
-									return new Response("Store", "This area is full, so you can't store "+(owner.isPlayer()?"your":owner.getName("")+"'s")+" " + clothing.getName() + " here!", null);
+									return new Response("Спрятать", "Это место заполнено, поэтому вы не можете сохранить "+(owner.isPlayer()?"твоей":owner.getName("")+"'s")+" " + clothing.getName() + " здесь!", null);
 									
 								} else {
 									if (owner.isAbleToUnequip(clothing, false, Main.game.getPlayer())) {
-										return new Response((clothing.isDiscardedOnUnequip(slotEquippedTo)?"Discard":"Store"),
+										return new Response((clothing.isDiscardedOnUnequip(slotEquippedTo)?"Выбросить":"Спрятать"),
 												(clothing.isDiscardedOnUnequip(slotEquippedTo)
-														?"Take off "+(owner.isPlayer()?"your":owner.getName("")+"'s")+" " + clothing.getName() + " and throw it away."
-														:"Drop "+(owner.isPlayer()?"your":owner.getName("")+"'s")+" " + clothing.getName() + "."),
+														?"Снять "+(owner.isPlayer()?"твоей":owner.getName("")+"'s")+" " + clothing.getName() + " и отправить это на помойку."
+														:"Выбросить "+(owner.isPlayer()?"твоей":owner.getName("")+"'s")+" " + clothing.getName() + "."),
 												Main.sex.SEX_DIALOGUE){
 											@Override
 											public void effects(){
@@ -6324,13 +6299,13 @@ public class InventoryDialogue {
 											}
 										};
 									} else {
-										return new Response("Store", getClothingBlockingRemovalText(owner, "unequip"), null);
+										return new Response("Спрятать", getClothingBlockingRemovalText(owner, "снять"), null);
 									}
 								}
 							}
 							
 						} else if (index==4) {
-							return new Response("Dye", "You can't dye "+(owner.isPlayer()?"your":owner.getName("")+"'s")+" clothes in sex!", null);
+							return new Response("Краситель", "Нельзя красить "+(owner.isPlayer()?"твоей":owner.getName("")+"'s")+" одежду во время секса!", null);
 							
 						} else if(index == 5) {
 							if(clothing.isSealed()) {
@@ -6339,22 +6314,22 @@ public class InventoryDialogue {
 							} else {
 								if(clothing.isCondom()) {
 									if(clothing.getCondomEffect().getPotency().isNegative()) {
-										return new Response("Repair (<i>1 Essence</i>)", "You can't repair equipped condoms!", null);
+										return new Response("Починить (<i>1 Эссенция</i>)", "Нельзя чинить надетые презервативы!", null);
 									}
-									return new Response("Sabotage", "You can't sabotage equipped condoms!", null);
+									return new Response("Саботаж", "Нельзя портить надетые презервативы!", null);
 								}
-								return new Response("Enchant", "You can't enchant equipped clothing!", null);
+								return new Response("Зачаровать", "Нельзя зачаровывать надетую одежду!", null);
 							}
 							
 						} else if(index == 6 && !clothing.isDiscardedOnUnequip(slotEquippedTo)) {
 							if(Main.sex.isCharacterImmobilised(Main.game.getPlayer())) {
-								return new Response("Unequip", "You can't unequip the " + clothing.getName() + " as you are currently [style.colourTerrible(immobilised)]!", null);
+								return new Response("Снять", "Нельзя снять " + clothing.getName() + " так как ты сейчас [style.colourTerrible(парализован)]!", null);
 							}
 							if(!Main.sex.isCanRemoveSelfClothing(Main.game.getPlayer())) {
-								return new Response("Unequip", "You can't unequip the " + clothing.getName() + " in this sex scene!", null);
+								return new Response("Снять", "Нельзя снять " + clothing.getName() + " в этой секс-сцене!", null);
 							}
 							if (owner.isAbleToUnequip(clothing, false, Main.game.getPlayer())) {
-								return new Response("Unequip", "Unequip the " + clothing.getName() + ".", Main.sex.SEX_DIALOGUE){
+								return new Response("Снять", "Снять " + clothing.getName() + ".", Main.sex.SEX_DIALOGUE){
 									@Override
 									public void effects(){
 										AbstractClothing c = clothing;
@@ -6366,7 +6341,7 @@ public class InventoryDialogue {
 									}
 								};
 							} else {
-								return new Response("Unequip", getClothingBlockingRemovalText(owner, "unequip"), null);
+								return new Response("Снять", getClothingBlockingRemovalText(owner, "снять"), null);
 							}
 							
 						} else if (index == 10) {
@@ -6375,32 +6350,32 @@ public class InventoryDialogue {
 						} else if (index > 10 && index - 11 < clothing.getBlockedPartsKeysAsListWithoutNONE(owner, clothing.getSlotEquippedTo()).size()) {
 							if (clothing.getDisplacedList().contains(clothing.getBlockedPartsKeysAsListWithoutNONE(owner, clothing.getSlotEquippedTo()).get(index - 11))) {
 								return new Response(Util.capitaliseSentence(clothing.getBlockedPartsKeysAsListWithoutNONE(owner, clothing.getSlotEquippedTo()).get(index -11).getDescription()),
-										"The "+ clothing.getName()+ " "
-										+(clothing.getClothingType().isPlural()?"have":"has")+" already been "
+										""+ clothing.getName()+ " "
+										+(clothing.getClothingType().isPlural()?"имеют":"имеет")+" уже было "
 												+ clothing.getBlockedPartsKeysAsListWithoutNONE(owner, clothing.getSlotEquippedTo()).get(index -11).getDescriptionPast() + "!", null);
 								
 							} else {
 								if(Main.sex.isCharacterImmobilised(Main.game.getPlayer())) {
 									return new Response(
 											Util.capitaliseSentence(clothing.getBlockedPartsKeysAsListWithoutNONE(owner, clothing.getSlotEquippedTo()).get(index - 11).getDescription()),
-											"You can't "+clothing.getBlockedPartsKeysAsListWithoutNONE(owner, clothing.getSlotEquippedTo()).get(index -11).getDescription()
-												+" the " + clothing.getName() + " as you are currently [style.colourTerrible(immobilised)]!",
+											"Вы не можете "+clothing.getBlockedPartsKeysAsListWithoutNONE(owner, clothing.getSlotEquippedTo()).get(index -11).getDescription()
+												+"" + clothing.getName() + " так как ты сейчас [style.colourTerrible(парализован)]!",
 											null);
 								}
 								if(!Main.sex.isCanRemoveSelfClothing(Main.game.getPlayer())) {
 									return new Response(Util.capitaliseSentence(clothing.getBlockedPartsKeysAsListWithoutNONE(owner, clothing.getSlotEquippedTo()).get(index - 11).getDescription()),
-											"You can't "+clothing.getBlockedPartsKeysAsListWithoutNONE(owner, clothing.getSlotEquippedTo()).get(index -11).getDescription()
-											+ " "+(owner.isPlayer()?"your":owner.getName("")+"'s")+" " + clothing.getName() + " in this sex scene!", null);
+											"Вы не можете "+clothing.getBlockedPartsKeysAsListWithoutNONE(owner, clothing.getSlotEquippedTo()).get(index -11).getDescription()
+											+ " "+(owner.isPlayer()?"твоей":owner.getName("")+"'s")+" " + clothing.getName() + " в этой секс-сцене!", null);
 								}
 								
 								if(owner.isAbleToBeDisplaced(clothing, clothing.getBlockedPartsKeysAsListWithoutNONE(owner, clothing.getSlotEquippedTo()).get(index -11), false, false, Main.game.getPlayer())) {
 									return new Response(Util.capitaliseSentence(clothing.getBlockedPartsKeysAsListWithoutNONE(owner, clothing.getSlotEquippedTo()).get(index - 11).getDescription()),
-											Util.capitaliseSentence(clothing.getBlockedPartsKeysAsListWithoutNONE(owner, clothing.getSlotEquippedTo()).get(index - 11).getDescription()) + " the " + clothing.getName() + ". "
+											Util.capitaliseSentence(clothing.getBlockedPartsKeysAsListWithoutNONE(owner, clothing.getSlotEquippedTo()).get(index - 11).getDescription()) + "" + clothing.getName() + ". "
 													+ clothing.getClothingBlockingDescription(
 															clothing.getBlockedPartsKeysAsListWithoutNONE(owner, clothing.getSlotEquippedTo()).get(index - 11),
 															Main.game.getPlayer(),
 															clothing.getSlotEquippedTo(),
-															" <span style='color:" + PresetColour.GENERIC_SEX.toWebHexString() + ";'>This will expose "+(owner.isPlayer()?"your":owner.getName("")+"'s")+" ",
+															" <span style='color:" + PresetColour.GENERIC_SEX.toWebHexString() + ";'>Это обнажит "+(owner.isPlayer()?"твоей":owner.getName("")+"'s")+" ",
 															".</span>"),
 													Main.sex.SEX_DIALOGUE){
 										@Override
@@ -6415,9 +6390,9 @@ public class InventoryDialogue {
 								
 								} else {
 									return new Response(Util.capitaliseSentence(clothing.getBlockedPartsKeysAsListWithoutNONE(owner, clothing.getSlotEquippedTo()).get(index -11).getDescription()),
-											"You can't "+clothing.getBlockedPartsKeysAsListWithoutNONE(owner, clothing.getSlotEquippedTo()).get(index -11).getDescription()
-											+ " the " + clothing.getName() + ", as "+UtilText.parse(owner, "[npc.namePos] ")
-											+owner.getBlockingClothing().getName()+" "+(owner.getBlockingClothing().getClothingType().isPlural()?"are":"is")+" in the way!", null);
+											"Вы не можете "+clothing.getBlockedPartsKeysAsListWithoutNONE(owner, clothing.getSlotEquippedTo()).get(index -11).getDescription()
+											+ "" + clothing.getName() + ", так как "+UtilText.parse(owner, "[npc.namePos] ")
+											+owner.getBlockingClothing().getName()+" "+(owner.getBlockingClothing().getClothingType().isPlural()?"являются":"есть")+" мешает!", null);
 								}
 							}
 							
@@ -6433,10 +6408,10 @@ public class InventoryDialogue {
 				switch(interactionType) {
 					case COMBAT:
 						if (index == 1) {
-							return new Response("Drop", "You can't make someone drop their clothing while fighting them!", null);
+							return new Response("Выбросить", "Вы не можете заставить противника раздеться прямо во время боя!", null);
 							
 						} else if (index==4) {
-							return new Response("Dye", "You can't dye someone else's equipped clothing while you're fighting them!", null);
+							return new Response("Краситель", "Вы не можете перекрасить надетую на кого-то одежду во время боя!", null);
 							
 						} else if(index == 5) {
 							if(clothing.isSealed()) {
@@ -6445,15 +6420,15 @@ public class InventoryDialogue {
 							} else {
 								if(clothing.isCondom()) {
 									if(clothing.getCondomEffect().getPotency().isNegative()) {
-										return new Response("Repair (<i>1 Essence</i>)", "You can't repair equipped condoms!", null);
+										return new Response("Починить (<i>1 Эссенция</i>)", "Нельзя чинить надетые презервативы!", null);
 									}
-									return new Response("Sabotage", "You can't sabotage equipped condoms!", null);
+									return new Response("Саботаж", "Нельзя портить надетые презервативы!", null);
 								}
-								return new Response("Enchant", "You can't enchant equipped clothing!", null);
+								return new Response("Зачаровать", "Нельзя зачаровывать надетую одежду!", null);
 							}
 							
 						} else if(index == 6) {
-							return new Response("Unequip", "You can't unequip someone's clothing while fighting them!", null);
+							return new Response("Снять", "Вы не можете снять одежду с противника во время боя!", null);
 							
 						} else if (index == 10) {
 							return getQuickTradeResponse();
@@ -6461,13 +6436,13 @@ public class InventoryDialogue {
 						} else if (index > 10 && index - 11 < clothing.getBlockedPartsKeysAsListWithoutNONE(inventoryNPC, clothing.getSlotEquippedTo()).size()){
 							if (clothing.getDisplacedList().contains(clothing.getBlockedPartsKeysAsListWithoutNONE(inventoryNPC, clothing.getSlotEquippedTo()).get(index - 11))) {
 								return new Response(Util.capitaliseSentence(clothing.getBlockedPartsKeysAsListWithoutNONE(inventoryNPC, clothing.getSlotEquippedTo()).get(index -11).getDescription()),
-										"The "+ clothing.getName()+ " "
-										+(clothing.getClothingType().isPlural()?"have":"has")+" already been "
+										""+ clothing.getName()+ " "
+										+(clothing.getClothingType().isPlural()?"имеют":"имеет")+" уже было "
 												+ clothing.getBlockedPartsKeysAsListWithoutNONE(inventoryNPC, clothing.getSlotEquippedTo()).get(index -11).getDescriptionPast() + "!", null);
 								
 							} else {
 								return new Response(Util.capitaliseSentence(clothing.getBlockedPartsKeysAsListWithoutNONE(inventoryNPC, clothing.getSlotEquippedTo()).get(index -11).getDescription()),
-										"You can't "+clothing.getBlockedPartsKeysAsListWithoutNONE(inventoryNPC, clothing.getSlotEquippedTo()).get(index -11).getDescription() + " the " + clothing.getName() + " while in a fight!", null);
+										"Вы не можете "+clothing.getBlockedPartsKeysAsListWithoutNONE(inventoryNPC, clothing.getSlotEquippedTo()).get(index -11).getDescription() + "" + clothing.getName() + " во время боя!", null);
 							}
 							
 						} else {
@@ -6481,15 +6456,15 @@ public class InventoryDialogue {
 							boolean areaFull = Main.game.isPlayerTileFull() && !Main.game.getPlayerCell().getInventory().hasClothing(clothing);
 							if(Main.game.getPlayer().getLocationPlace().isItemsDisappear()) {
 								if(!clothing.getClothingType().isAbleToBeDropped()) {
-									return new Response("Drop", "You cannot drop the " + clothing.getName() + "!", null);
+									return new Response("Выбросить", "Вы не можете выбросить " + clothing.getName() + "!", null);
 									
 								} else if(areaFull && !clothing.isDiscardedOnUnequip(slotEquippedTo)) {
-									return new Response("Drop", UtilText.parse(inventoryNPC, "This area is full, so you can't drop [npc.namePos] " + clothing.getName() + " here!"), null);
+									return new Response("Выбросить", UtilText.parse(inventoryNPC, "Место закончилось, поэтому вы не можете бросить [npc.namePos] " + clothing.getName() + " здесь!"), null);
 								} else {
-									return new Response((clothing.isDiscardedOnUnequip(slotEquippedTo)?"Discard":"Drop"),
+									return new Response((clothing.isDiscardedOnUnequip(slotEquippedTo)?"Выбросить":"Выбросить"),
 											(clothing.isDiscardedOnUnequip(slotEquippedTo)
-													?UtilText.parse(inventoryNPC, "Take off [npc.namePos] " + clothing.getName() + " and throw it away.")
-													:UtilText.parse(inventoryNPC, "Drop [npc.namePos] " + clothing.getName() + ".")),
+													?UtilText.parse(inventoryNPC, "Снять [npc.namePos] " + clothing.getName() + " и отправить это на помойку.")
+													:UtilText.parse(inventoryNPC, "Бросить [npc.namePos] " + clothing.getName() + ".")),
 											INVENTORY_MENU){
 										@Override
 										public void effects(){
@@ -6500,15 +6475,15 @@ public class InventoryDialogue {
 								
 							} else {
 								if(!clothing.getClothingType().isAbleToBeDropped()) {
-									return new Response("Store", "You cannot drop the " + clothing.getName() + "!", null);
+									return new Response("Спрятать", "Вы не можете выбросить " + clothing.getName() + "!", null);
 									
 								} else if(areaFull && !clothing.isDiscardedOnUnequip(slotEquippedTo)) {
-									return new Response("Store", UtilText.parse(inventoryNPC, "This area is full, so you can't store [npc.namePos] " + clothing.getName() + " here!"), null);
+									return new Response("Спрятать", UtilText.parse(inventoryNPC, "Место закончилось, поэтому вы не можете сохранить [npc.namePos] " + clothing.getName() + " здесь!"), null);
 								} else {
-									return new Response((clothing.isDiscardedOnUnequip(slotEquippedTo)?"Discard":"Store"),
+									return new Response((clothing.isDiscardedOnUnequip(slotEquippedTo)?"Выбросить":"Спрятать"),
 											(clothing.isDiscardedOnUnequip(slotEquippedTo)
-													?UtilText.parse(inventoryNPC, "Take off [npc.namePos] " + clothing.getName() + " and throw it away.")
-													:UtilText.parse(inventoryNPC, "Store [npc.namePos] " + clothing.getName() + " in this area.")),
+													?UtilText.parse(inventoryNPC, "Снять [npc.namePos] " + clothing.getName() + " и отправить это на помойку.")
+													:UtilText.parse(inventoryNPC, "Сложить [npc.namePos] " + clothing.getName() + " в этой области.")),
 											INVENTORY_MENU){
 										@Override
 										public void effects(){
@@ -6520,14 +6495,14 @@ public class InventoryDialogue {
 							
 						} else if(index==2) {
 							if(inventoryFull) {
-								return new Response("Take", "Your inventory is full, so you can't take this!", null);
+								return new Response("Взять", "Ваш инвентарь полон, так что вы не можете взять это!", null);
 								
 							} else if(clothing.isDiscardedOnUnequip(slotEquippedTo)) {
-								return new Response("Take", "This piece of clothing is automatically discarded when unequipped, so you can't take it!", null);
+								return new Response("Взять", "Эта вещь автоматически выбрасывается при снятии, так что забрать её не получится!", null);
 								
 							} else {
-								return new Response("Take",
-										UtilText.parse(inventoryNPC, "Take [npc.namePos] " + clothing.getName() + " and add it to your inventory."),
+								return new Response("Взять",
+										UtilText.parse(inventoryNPC, "Взять [npc.namePos] " + clothing.getName() + " и добавить его в свой инвентарь."),
 										INVENTORY_MENU){
 									@Override
 									public void effects(){
@@ -6541,10 +6516,10 @@ public class InventoryDialogue {
 							
 						} else if (index==4) {
 							if (isClothingDyeActionAvailable()) {
-								return new Response("Dye", 
+								return new Response("Краситель", 
 										Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
-											?"Use your proficiency with [style.colourEarth(Earth spells)] to dye this item."
-											:"Use a dye-brush to dye this item of clothing.",
+											?"Используйте свое мастерство в [style.colourEarth(заклинаниях Земли)], чтобы покрасить этот предмет."
+											:"Используйте кисть для окрашивания, чтобы покрасить эту одежду.",
 										DYE_EQUIPPED_CLOTHING) {
 									@Override
 									public void effects() {
@@ -6553,7 +6528,7 @@ public class InventoryDialogue {
 								};
 								
 							} else {
-								return new Response("Dye", UtilText.parse(inventoryNPC, "You'll need to find a dye-brush if you want to dye [npc.namePos] clothes."), null);
+								return new Response("Краситель", UtilText.parse(inventoryNPC, "Если хочешь покрасить одежду [npc.namePos], тебе понадобится кисть для красок."), null);
 							}
 							
 						} else if(index == 5) {
@@ -6563,18 +6538,18 @@ public class InventoryDialogue {
 							} else {
 								if(clothing.isCondom()) {
 									if(clothing.getCondomEffect().getPotency().isNegative()) {
-										return new Response("Repair (<i>1 Essence</i>)", "You can't repair equipped condoms!", null);
+										return new Response("Починить (<i>1 Эссенция</i>)", "Нельзя чинить надетые презервативы!", null);
 									}
-									return new Response("Sabotage", "You can't sabotage equipped condoms!", null);
+									return new Response("Саботаж", "Нельзя портить надетые презервативы!", null);
 								}
-								return new Response("Enchant", "You can't enchant equipped clothing!", null);
+								return new Response("Зачаровать", "Нельзя зачаровывать надетую одежду!", null);
 							}
 							
 						} else if(index == 6 && !clothing.isDiscardedOnUnequip(slotEquippedTo)) {
 							if(!clothing.getClothingType().isAbleToBeDropped()) {
-								return new Response("Unequip", UtilText.parse(inventoryNPC, "As it's a unique item, the " + clothing.getName() + " cannot be unequipped into [npc.namePos] inventory."), null);
+								return new Response("Снять", UtilText.parse(inventoryNPC, "Так как это уникальный предмет, " + clothing.getName() + " нельзя убрать в [npc.namePos] инвентарь."), null);
 							}
-							return new Response("Unequip", "Unequip the " + clothing.getName() + ".", INVENTORY_MENU){
+							return new Response("Снять", "Снять " + clothing.getName() + ".", INVENTORY_MENU){
 								@Override
 								public void effects(){
 									Main.game.getTextEndStringBuilder().append("<p style='text-align:center;'>" + unequipClothingToInventory(Main.game.getPlayer(), clothing) + "</p>");
@@ -6588,12 +6563,12 @@ public class InventoryDialogue {
 							
 							if (clothing.getDisplacedList().contains(clothing.getBlockedPartsKeysAsListWithoutNONE(inventoryNPC, clothing.getSlotEquippedTo()).get(index - 11))) {
 								return new Response(Util.capitaliseSentence(clothing.getBlockedPartsKeysAsListWithoutNONE(inventoryNPC, clothing.getSlotEquippedTo()).get(index - 11).getOppositeDescription()),
-										Util.capitaliseSentence(clothing.getBlockedPartsKeysAsListWithoutNONE(inventoryNPC, clothing.getSlotEquippedTo()).get(index - 11).getOppositeDescription()) + " the " + clothing.getName() + ". "
+										Util.capitaliseSentence(clothing.getBlockedPartsKeysAsListWithoutNONE(inventoryNPC, clothing.getSlotEquippedTo()).get(index - 11).getOppositeDescription()) + "" + clothing.getName() + ". "
 												+ clothing.getClothingBlockingDescription(
 														clothing.getBlockedPartsKeysAsListWithoutNONE(inventoryNPC, clothing.getSlotEquippedTo()).get(index - 11),
 														owner,
 														clothing.getSlotEquippedTo(),
-														" <span style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>This will cover "+(owner.isPlayer()?"your":owner.getName("")+"'s")+" ",
+														" <span style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>Это прикроет "+(owner.isPlayer()?"твоей":owner.getName("")+"'s")+" ",
 														".</span>"),
 												CLOTHING_EQUIPPED){
 									@Override
@@ -6603,12 +6578,12 @@ public class InventoryDialogue {
 								};
 							} else {
 								return new Response(Util.capitaliseSentence(clothing.getBlockedPartsKeysAsListWithoutNONE(inventoryNPC, clothing.getSlotEquippedTo()).get(index - 11).getDescription()),
-										Util.capitaliseSentence(clothing.getBlockedPartsKeysAsListWithoutNONE(inventoryNPC, clothing.getSlotEquippedTo()).get(index - 11).getDescription()) + " the " + clothing.getName() + ". "
+										Util.capitaliseSentence(clothing.getBlockedPartsKeysAsListWithoutNONE(inventoryNPC, clothing.getSlotEquippedTo()).get(index - 11).getDescription()) + "" + clothing.getName() + ". "
 												+ clothing.getClothingBlockingDescription(
 														clothing.getBlockedPartsKeysAsListWithoutNONE(inventoryNPC, clothing.getSlotEquippedTo()).get(index - 11),
 														owner,
 														clothing.getSlotEquippedTo(),
-														" <span style='color:" + PresetColour.GENERIC_SEX.toWebHexString() + ";'>This will expose "+(owner.isPlayer()?"your":owner.getName("")+"'s")+" ",
+														" <span style='color:" + PresetColour.GENERIC_SEX.toWebHexString() + ";'>Это обнажит "+(owner.isPlayer()?"твоей":owner.getName("")+"'s")+" ",
 														".</span>"),
 												CLOTHING_EQUIPPED){
 									@Override
@@ -6625,44 +6600,44 @@ public class InventoryDialogue {
 						
 					case SEX:
 						if (index == 1) {
-							String unequipTitle = "Drop";
+							String unequipTitle = "Выбросить";
 							if(clothing.isDiscardedOnUnequip(slotEquippedTo)) {
-								unequipTitle = "Discard";
+								unequipTitle = "Выбросить";
 							} else if(!Main.game.getPlayer().getLocationPlace().isItemsDisappear()) {
-								unequipTitle = "Store";
+								unequipTitle = "Спрятать";
 							}
 							if(Main.sex.isCharacterImmobilised(Main.game.getPlayer())) {
 								return new Response(unequipTitle,
-									UtilText.parse(inventoryNPC, "You can't unequip [npc.namePos] clothing as you are currently [style.colourTerrible(immobilised)]!"),
+									UtilText.parse(inventoryNPC, "Ты не можешь снять одежду [npc.namePos], потому что ты сейчас [style.colourTerrible(обездвижена)]!"),
 									null);
 							}
 							if(Main.sex.getInitialSexManager().isHidden(Main.game.getPlayer())) {
 								return new Response(unequipTitle,
-										UtilText.parse(inventoryNPC, "As you're hiding, you can't unequip [npc.namePos] clothing!"),
+										UtilText.parse(inventoryNPC, "Пока вы прячетесь, вы не можете снять [npc.namePos] одежду!"),
 										null);
 								
 							} else if(clothing.isDiscardedOnUnequip(slotEquippedTo) && !Main.sex.isCanRemoveOthersClothing(Main.game.getPlayer(), clothing)) {
-								return new Response("Discard", "You can't unequip the " + clothing.getName() + " in this sex scene!", null);
+								return new Response("Выбросить", "Нельзя снять " + clothing.getName() + " в этой секс-сцене!", null);
 							}
 
 							if(!Main.sex.isCanRemoveOthersClothing(Main.game.getPlayer(), clothing)) {
-								return new Response(unequipTitle, "You can't unequip the " + clothing.getName() + " in this sex scene!", null);
+								return new Response(unequipTitle, "Нельзя снять " + clothing.getName() + " в этой секс-сцене!", null);
 							}
 							
 							boolean areaFull = Main.game.isPlayerTileFull() && !Main.game.getPlayerCell().getInventory().hasClothing(clothing);
 							if(Main.game.getPlayer().getLocationPlace().isItemsDisappear()) {
 								if(!clothing.getClothingType().isAbleToBeDropped()) {
-									return new Response("Drop", "You cannot drop the " + clothing.getName() + "!", null);
+									return new Response("Выбросить", "Вы не можете выбросить " + clothing.getName() + "!", null);
 									
 								} else if(areaFull && !clothing.isDiscardedOnUnequip(slotEquippedTo)) {
-									return new Response("Drop", UtilText.parse(inventoryNPC, "This area is full, so you can't drop [npc.namePos] " + clothing.getName() + " here!"), null);
+									return new Response("Выбросить", UtilText.parse(inventoryNPC, "Место закончилось, поэтому вы не можете бросить [npc.namePos] " + clothing.getName() + " здесь!"), null);
 									
 								} else {
 									if (owner.isAbleToUnequip(clothing, false, Main.game.getPlayer())) {
-										return new Response((clothing.isDiscardedOnUnequip(slotEquippedTo)?"Discard":"Drop"),
+										return new Response((clothing.isDiscardedOnUnequip(slotEquippedTo)?"Выбросить":"Выбросить"),
 											(clothing.isDiscardedOnUnequip(slotEquippedTo)
-													?UtilText.parse(inventoryNPC, "Take off [npc.namePos] " + clothing.getName() + " and throw it away.")
-													:UtilText.parse(inventoryNPC, "Drop [npc.namePos] " + clothing.getName() + ".")),
+													?UtilText.parse(inventoryNPC, "Снять [npc.namePos] " + clothing.getName() + " и отправить это на помойку.")
+													:UtilText.parse(inventoryNPC, "Бросить [npc.namePos] " + clothing.getName() + ".")),
 												Main.sex.SEX_DIALOGUE){
 											@Override
 											public void effects(){
@@ -6675,22 +6650,22 @@ public class InventoryDialogue {
 											}
 										};
 									} else {
-										return new Response("Drop", getClothingBlockingRemovalText(owner, "unequip"), null);
+										return new Response("Выбросить", getClothingBlockingRemovalText(owner, "снять"), null);
 									}
 								}
 								
 							} else {
 								if(!clothing.getClothingType().isAbleToBeDropped()) {
-									return new Response("Store", "You cannot drop the " + clothing.getName() + "!", null);
+									return new Response("Спрятать", "Вы не можете выбросить " + clothing.getName() + "!", null);
 									
 								} else if(areaFull && !clothing.isDiscardedOnUnequip(slotEquippedTo)) {
-									return new Response("Store", UtilText.parse(inventoryNPC, "This area is full, so you can't store [npc.namePos] " + clothing.getName() + " here!"), null);
+									return new Response("Спрятать", UtilText.parse(inventoryNPC, "Место закончилось, поэтому вы не можете сохранить [npc.namePos] " + clothing.getName() + " здесь!"), null);
 								} else {
 									if (owner.isAbleToUnequip(clothing, false, Main.game.getPlayer())) {
-										return new Response((clothing.isDiscardedOnUnequip(slotEquippedTo)?"Discard":"Store"),
+										return new Response((clothing.isDiscardedOnUnequip(slotEquippedTo)?"Выбросить":"Спрятать"),
 												(clothing.isDiscardedOnUnequip(slotEquippedTo)
-														?UtilText.parse(inventoryNPC, "Take off [npc.namePos] " + clothing.getName() + " and throw it away.")
-														:UtilText.parse(inventoryNPC, "Store [npc.namePos] " + clothing.getName() + " in this area.")),
+														?UtilText.parse(inventoryNPC, "Снять [npc.namePos] " + clothing.getName() + " и отправить это на помойку.")
+														:UtilText.parse(inventoryNPC, "Сложить [npc.namePos] " + clothing.getName() + " в этой области.")),
 												Main.sex.SEX_DIALOGUE){
 											@Override
 											public void effects(){
@@ -6703,13 +6678,13 @@ public class InventoryDialogue {
 											}
 										};
 									} else {
-										return new Response("Store", getClothingBlockingRemovalText(owner, "unequip"), null);
+										return new Response("Спрятать", getClothingBlockingRemovalText(owner, "снять"), null);
 									}
 								}
 							}
 							
 						} else if (index==4) {
-							return new Response("Dye", UtilText.parse(inventoryNPC, "You can't dye [npc.namePos] clothes in sex!"), null);
+							return new Response("Краситель", UtilText.parse(inventoryNPC, "Ты не можешь красить одежду [npc.namePos] во время секса!"), null);
 							
 						} else if(index == 5) {
 							if(clothing.isSealed()) {
@@ -6718,28 +6693,28 @@ public class InventoryDialogue {
 							} else {
 								if(clothing.isCondom()) {
 									if(clothing.getCondomEffect().getPotency().isNegative()) {
-										return new Response("Repair (<i>1 Essence</i>)", "You can't repair equipped condoms!", null);
+										return new Response("Починить (<i>1 Эссенция</i>)", "Нельзя чинить надетые презервативы!", null);
 									}
-									return new Response("Sabotage", "You can't sabotage equipped condoms!", null);
+									return new Response("Саботаж", "Нельзя портить надетые презервативы!", null);
 								}
-								return new Response("Enchant", "You can't enchant equipped clothing!", null);
+								return new Response("Зачаровать", "Нельзя зачаровывать надетую одежду!", null);
 							}
 							
 						} else if(index == 6 && !clothing.isDiscardedOnUnequip(slotEquippedTo)) {
 							if(Main.sex.isCharacterImmobilised(Main.game.getPlayer())) {
-								return new Response("Unequip",
-									UtilText.parse(inventoryNPC, "You can't unequip [npc.namePos] clothing as you are currently [style.colourTerrible(immobilised)]!"),
+								return new Response("Снять",
+									UtilText.parse(inventoryNPC, "Ты не можешь снять одежду [npc.namePos], потому что ты сейчас [style.colourTerrible(обездвижена)]!"),
 									null);
 							}
 							if(Main.sex.getInitialSexManager().isHidden(Main.game.getPlayer())) {
-								return new Response("Unequip", UtilText.parse(inventoryNPC, "As you're hiding, you can't unequip [npc.namePos] clothing!"), null);
+								return new Response("Снять", UtilText.parse(inventoryNPC, "Пока вы прячетесь, вы не можете снять [npc.namePos] одежду!"), null);
 								
 							} else if(!Main.sex.isCanRemoveOthersClothing(Main.game.getPlayer(), clothing)) {
-								return new Response("Unequip", "You can't unequip the " + clothing.getName() + " in this sex scene!", null);
+								return new Response("Снять", "Нельзя снять " + clothing.getName() + " в этой секс-сцене!", null);
 							}
 							
 							if (owner.isAbleToUnequip(clothing, false, Main.game.getPlayer())) {
-								return new Response("Unequip", "Unequip the " + clothing.getName() + ".", Main.sex.SEX_DIALOGUE){
+								return new Response("Снять", "Снять " + clothing.getName() + ".", Main.sex.SEX_DIALOGUE){
 									@Override
 									public void effects(){
 										AbstractClothing c = clothing;
@@ -6751,7 +6726,7 @@ public class InventoryDialogue {
 									}
 								};
 							} else {
-								return new Response("Unequip", getClothingBlockingRemovalText(owner, "unequip"), null);
+								return new Response("Снять", getClothingBlockingRemovalText(owner, "снять"), null);
 							}
 							
 						} else if (index == 10) {
@@ -6760,36 +6735,36 @@ public class InventoryDialogue {
 						} else if (index > 10 && index - 11 < clothing.getBlockedPartsKeysAsListWithoutNONE(inventoryNPC, clothing.getSlotEquippedTo()).size()){
 							if (clothing.getDisplacedList().contains(clothing.getBlockedPartsKeysAsListWithoutNONE(inventoryNPC, clothing.getSlotEquippedTo()).get(index - 11))) {
 								return new Response(Util.capitaliseSentence(clothing.getBlockedPartsKeysAsListWithoutNONE(inventoryNPC, clothing.getSlotEquippedTo()).get(index -11).getDescription()),
-										"The "+ clothing.getName()+ " "
-										+(clothing.getClothingType().isPlural()?"have":"has")+" already been "
+										""+ clothing.getName()+ " "
+										+(clothing.getClothingType().isPlural()?"имеют":"имеет")+" уже было "
 												+ clothing.getBlockedPartsKeysAsListWithoutNONE(inventoryNPC, clothing.getSlotEquippedTo()).get(index -11).getDescriptionPast() + "!", null);
 								
 							} else {
 								if(Main.sex.isCharacterImmobilised(Main.game.getPlayer())) {
 									return new Response(Util.capitaliseSentence(clothing.getBlockedPartsKeysAsListWithoutNONE(inventoryNPC, clothing.getSlotEquippedTo()).get(index - 11).getDescription()),
-										UtilText.parse(inventoryNPC, "You can't "+clothing.getBlockedPartsKeysAsListWithoutNONE(inventoryNPC, clothing.getSlotEquippedTo()).get(index -11).getDescription()
-												+ " [npc.namePos] clothing as you are currently [style.colourTerrible(immobilised)]!"),
+										UtilText.parse(inventoryNPC, "Вы не можете "+clothing.getBlockedPartsKeysAsListWithoutNONE(inventoryNPC, clothing.getSlotEquippedTo()).get(index -11).getDescription()
+												+ " одежду [npc.namePos], так как ты сейчас [style.colourTerrible(обездвижена)]!"),
 										null);
 								}
 								if(Main.sex.getInitialSexManager().isHidden(Main.game.getPlayer())) {
 									return new Response(Util.capitaliseSentence(clothing.getBlockedPartsKeysAsListWithoutNONE(inventoryNPC, clothing.getSlotEquippedTo()).get(index - 11).getDescription()),
 											UtilText.parse(inventoryNPC,
-													"As you're hiding, you can't "+clothing.getBlockedPartsKeysAsListWithoutNONE(inventoryNPC, clothing.getSlotEquippedTo()).get(index -11).getDescription() + " [npc.namePos] " + clothing.getName() + "!"),
+													"Так как ты прячешься, ты не можешь "+clothing.getBlockedPartsKeysAsListWithoutNONE(inventoryNPC, clothing.getSlotEquippedTo()).get(index -11).getDescription() + " [npc.namePos] " + clothing.getName() + "!"),
 											null);
 								}
 								if(owner.isAbleToBeDisplaced(clothing, clothing.getBlockedPartsKeysAsListWithoutNONE(inventoryNPC, clothing.getSlotEquippedTo()).get(index -11), false, false, Main.game.getPlayer())){
 									if(!Main.sex.isCanRemoveOthersClothing(Main.game.getPlayer(), clothing)) {
 										return new Response(Util.capitaliseSentence(clothing.getBlockedPartsKeysAsListWithoutNONE(inventoryNPC, clothing.getSlotEquippedTo()).get(index - 11).getDescription()),
-												"You can't "+clothing.getBlockedPartsKeysAsListWithoutNONE(inventoryNPC, clothing.getSlotEquippedTo()).get(index -11).getDescription() + " the " + clothing.getName() + " in this sex scene!", null);
+												"Вы не можете "+clothing.getBlockedPartsKeysAsListWithoutNONE(inventoryNPC, clothing.getSlotEquippedTo()).get(index -11).getDescription() + "" + clothing.getName() + " в этой секс-сцене!", null);
 									}
 									
 									return new Response(Util.capitaliseSentence(clothing.getBlockedPartsKeysAsListWithoutNONE(inventoryNPC, clothing.getSlotEquippedTo()).get(index - 11).getDescription()),
-											Util.capitaliseSentence(clothing.getBlockedPartsKeysAsListWithoutNONE(inventoryNPC, clothing.getSlotEquippedTo()).get(index - 11).getDescription()) + " the " + clothing.getName() + ". "
+											Util.capitaliseSentence(clothing.getBlockedPartsKeysAsListWithoutNONE(inventoryNPC, clothing.getSlotEquippedTo()).get(index - 11).getDescription()) + "" + clothing.getName() + ". "
 													+ clothing.getClothingBlockingDescription(
 															clothing.getBlockedPartsKeysAsListWithoutNONE(inventoryNPC, clothing.getSlotEquippedTo()).get(index - 11),
 															owner,
 															clothing.getSlotEquippedTo(),
-															" <span style='color:" + PresetColour.GENERIC_SEX.toWebHexString() + ";'>This will expose "+(owner.isPlayer()?"your":owner.getName("")+"'s")+" ",
+															" <span style='color:" + PresetColour.GENERIC_SEX.toWebHexString() + ";'>Это обнажит "+(owner.isPlayer()?"твоей":owner.getName("")+"'s")+" ",
 															".</span>"),
 													Main.sex.SEX_DIALOGUE){
 										@Override
@@ -6804,9 +6779,9 @@ public class InventoryDialogue {
 								
 								} else {
 									return new Response(Util.capitaliseSentence(clothing.getBlockedPartsKeysAsListWithoutNONE(inventoryNPC, clothing.getSlotEquippedTo()).get(index -11).getDescription()),
-											"You can't "+clothing.getBlockedPartsKeysAsListWithoutNONE(inventoryNPC, clothing.getSlotEquippedTo()).get(index -11).getDescription()
-											+ " the " + clothing.getName() + ", as "+UtilText.parse(owner, "[npc.namePos] ")
-											+owner.getBlockingClothing().getName()+" "+(owner.getBlockingClothing().getClothingType().isPlural()?"are":"is")+" in the way!", null);
+											"Вы не можете "+clothing.getBlockedPartsKeysAsListWithoutNONE(inventoryNPC, clothing.getSlotEquippedTo()).get(index -11).getDescription()
+											+ "" + clothing.getName() + ", так как "+UtilText.parse(owner, "[npc.namePos] ")
+											+owner.getBlockingClothing().getName()+" "+(owner.getBlockingClothing().getClothingType().isPlural()?"являются":"есть")+" мешает!", null);
 								}
 							}
 							
@@ -6816,22 +6791,22 @@ public class InventoryDialogue {
 						
 						case TRADING:
 							if (index == 1) {
-								return new Response("Drop", UtilText.parse(inventoryNPC, "You can't make [npc.name] drop [npc.her] clothing!"), null);
+								return new Response("Выбросить", UtilText.parse(inventoryNPC, "Вы не можете заставить [npc.name] снять [npc.her] одежду!"), null);
 								
 							} else if (index==4) {
-								return new Response("Dye", UtilText.parse(inventoryNPC, "You can't dye [npc.namePos] clothes!"), null);
+								return new Response("Краситель", UtilText.parse(inventoryNPC, "Вы не можете покрасить одежду [npc.namePos]!"), null);
 								
 							}  else if(index == 5) {
 								if(clothing.isCondom()) {
 									if(clothing.getCondomEffect().getPotency().isNegative()) {
-										return new Response("Repair (<i>1 Essence</i>)", "You can't repair [npc.namePos] condom!", null);
+										return new Response("Починить (<i>1 Эссенция</i>)", "Вы не можете починить презерватив [npc.namePos]!", null);
 									}
-									return new Response("Sabotage", "You can't sabotage [npc.namePos] condom!", null);
+									return new Response("Саботаж", "Вы не можете испортить презерватив [npc.namePos]!", null);
 								}
-								return new Response("Enchant", UtilText.parse(inventoryNPC, "You can't enchant [npc.namePos] clothing!"), null);
+								return new Response("Зачаровать", UtilText.parse(inventoryNPC, "Вы не можете зачаровать одежду [npc.namePos]!"), null);
 								
 							} else if(index == 6) {
-								return new Response("Unequip", UtilText.parse(inventoryNPC, "You can't unequip [npc.namePos] clothing!"), null);
+								return new Response("Снять", UtilText.parse(inventoryNPC, "Вы не можете снять одежду [npc.namePos]!"), null);
 								
 							} else if (index == 10) {
 								return getQuickTradeResponse();
@@ -6839,13 +6814,13 @@ public class InventoryDialogue {
 							} else if (index > 10 && index - 11 < clothing.getBlockedPartsKeysAsListWithoutNONE(inventoryNPC, clothing.getSlotEquippedTo()).size()){
 								if (clothing.getDisplacedList().contains(clothing.getBlockedPartsKeysAsListWithoutNONE(inventoryNPC, clothing.getSlotEquippedTo()).get(index - 11))) {
 									return new Response(Util.capitaliseSentence(clothing.getBlockedPartsKeysAsListWithoutNONE(inventoryNPC, clothing.getSlotEquippedTo()).get(index -11).getDescription()),
-											"The "+ clothing.getName()+ " "
-													+(clothing.getClothingType().isPlural()?"have":"has")+" already been "
+											""+ clothing.getName()+ " "
+													+(clothing.getClothingType().isPlural()?"имеют":"имеет")+" уже было "
 													+ clothing.getBlockedPartsKeysAsListWithoutNONE(inventoryNPC, clothing.getSlotEquippedTo()).get(index -11).getDescriptionPast() + "!", null);
 									
 								} else {
 									return new Response(Util.capitaliseSentence(clothing.getBlockedPartsKeysAsListWithoutNONE(inventoryNPC, clothing.getSlotEquippedTo()).get(index -11).getDescription()),
-											"You can't "+clothing.getBlockedPartsKeysAsListWithoutNONE(inventoryNPC, clothing.getSlotEquippedTo()).get(index -11).getDescription() + " the " + clothing.getName() + "!", null);
+											"Вы не можете "+clothing.getBlockedPartsKeysAsListWithoutNONE(inventoryNPC, clothing.getSlotEquippedTo()).get(index -11).getDescription() + "" + clothing.getName() + "!", null);
 								}
 								
 							} else {
@@ -6876,17 +6851,7 @@ public class InventoryDialogue {
 							+ clothing.getSVGString()
 						+ "</div>"
 					+ "</div>"
-					+ "<h3 style='text-align:center;'><b>"+clothing.getDisplayName(true)+"</b></h3>"
-					+ "<p>"
-						+ "Select the desired colours from the coloured buttons below, and after using the preview to see how the new clothing will look, press the 'Dye' option at the bottom of the screen to apply your changes."
-					+ "</p>"
-				+ "</div>"
-					
-				+ "<br/>"
-				
-				+ "<div class='container-full-width'>"
-					+ "<div class='inventoryImage'>"
-						+ "<div class='inventoryImage-content'>"
+					+ "<h3 style='text-align:center;'><b>"+clothing.getDisplayName(true)+"</b></h3><p>Выберите нужные цвета с помощью цветных кнопок ниже. После того как воспользуетесь предпросмотром, чтобы увидеть, как будет выглядеть новая одежда, нажмите кнопку «Покрасить» внизу экрана, чтобы применить изменения.</p></div><br/><div class='container-full-width'><div class='inventoryImage'><div class='inventoryImage-content'>"
 							+ clothing.getClothingType().getSVGImage(slotEquippedTo,
 									dyePreviews,
 									dyePreviewPattern,
@@ -6895,7 +6860,7 @@ public class InventoryDialogue {
 						+ "</div>"
 					+ "</div>");
 		
-		inventorySB.append("<h3 style='text-align:center;'><b>Dye & Preview</b></h3>");
+		inventorySB.append("<h3 style='text-align:center;'><b>Покраска и просмотр</b></h3>");
 		
 		if(!clothing.getClothingType().getStickers().isEmpty()) {
 			StringBuilder stickerSB = new StringBuilder();
@@ -6920,19 +6885,16 @@ public class InventoryDialogue {
 								String id = "ITEM_STICKER_"+cat.getId()+sticker.getId();
 								if(!requirements.isEmpty()) {
 									stickerSB.append(
-											"<div id='"+id+"' class='cosmetics-button disabled'>"
-													+ "<b style='color:" + PresetColour.TEXT_GREY.toWebHexString() + ";'>" + Util.capitaliseSentence(sticker.getName()) + (specialSticker?"*":"") + "</b>"
+											"<div id='"+id+"' class='cosmetics-button disabled'><b style='color:" + PresetColour.TEXT_GREY.toWebHexString() + ";'>" + Util.capitaliseSentence(sticker.getName()) + (specialSticker?"*":"") + "</b>"
 											+ "</div>");
 									
 								} else if(dyePreviewStickers.get(cat)==sticker) {
 									stickerSB.append(
-											"<div id='"+id+"' class='cosmetics-button active'>"
-													+ "<b style='color:" + sticker.getColourSelected().toWebHexString() + ";'>" + Util.capitaliseSentence(sticker.getName()) + (specialSticker?"*":"") + "</b>"
+											"<div id='"+id+"' class='cosmetics-button active'><b style='color:" + sticker.getColourSelected().toWebHexString() + ";'>" + Util.capitaliseSentence(sticker.getName()) + (specialSticker?"*":"") + "</b>"
 											+ "</div>");
 								} else {
 									stickerSB.append(
-											"<div id='"+id+"' class='cosmetics-button'>"
-													+ "<span style='color:"+sticker.getColourDisabled().toWebHexString()+";'>" + Util.capitaliseSentence(sticker.getName()) + (specialSticker?"*":"") + "</span>"
+											"<div id='"+id+"' class='cosmetics-button'><span style='color:"+sticker.getColourDisabled().toWebHexString()+";'>" + Util.capitaliseSentence(sticker.getName()) + (specialSticker?"*":"") + "</span>"
 											+ "</div>");
 								}
 							}
@@ -6952,19 +6914,17 @@ public class InventoryDialogue {
 			ColourReplacement cr = clothing.getClothingType().getColourReplacement(i);
 			if(!cr.getAllColours().isEmpty()) {
 				inventorySB.append("<div class='container-quarter-width' style='width:calc(75% - 16px);'>"
-							+ Util.capitaliseSentence(Util.intToPrimarySequence(i+1))+" Colour"+(cr.isRecolouringAllowed()?"":" ([style.italicsBad(cannot be changed)])")+":<br/>");
+							+ Util.capitaliseSentence(Util.intToPrimarySequence(i+1))+" Цвет"+(cr.isRecolouringAllowed()?"":" ([style.italicsBad(нельзя изменить)])")+":<br/>");
 				
 				for(Colour c : cr.getAllColours()) {
 //					if(!c.isDesaturated()) {
-						inventorySB.append("<div class='normal-button"+(dyePreviews.size()>i && dyePreviews.get(i)==c?" selected":"")+"' id='DYE_CLOTHING_"+i+"_"+c.getId()+"'"
-											+ " style='width:auto; margin-right:4px; border-width:1px;"
+						inventorySB.append("<div class='normal-button"+(dyePreviews.size()>i && dyePreviews.get(i)==c?" выбранный":"")+"' id='DYE_CLOTHING_"+i+"_"+c.getId()+"' style='width:auto; margin-right:4px; border-width:1px;"
 												+(cr.getDefaultColours().contains(c)
-													?"border-color:"+PresetColour.TEXT_GREY.toWebHexString()+";"
+													?"цвет-границы:"+PresetColour.TEXT_GREY.toWebHexString()+";"
 													:"")
 												+(dyePreviews.size()>i && dyePreviews.get(i)==c
 													?" background-color:"+PresetColour.BASE_GREEN.getShades()[4]+";"
-													:"")+"'>"
-										+ "<div class='phone-item-colour' style='"
+													:"")+"'><div class='phone-item-colour' style='"
 											+ (c.isMetallic()
 													?"background: repeating-linear-gradient(135deg, " + c.toWebHexString() + ", " + c.getShades()[4] + " 10px);"
 													:"background-color:" + c.toWebHexString() + ";")
@@ -6978,9 +6938,7 @@ public class InventoryDialogue {
 		
 		if(clothing.getClothingType().isPatternAvailable()){
 			inventorySB.append(
-					"<br/>"
-					+ "<div class='container-full-width'>"
-					+ "Pattern:<br/>");
+					"<br/><div class='container-full-width'>Узор:<br/>");
 	 
 			for (Pattern pattern : Pattern.getAllPatterns()) {
 				if (dyePreviewPattern.equals(pattern.getId())) {
@@ -6990,8 +6948,7 @@ public class InventoryDialogue {
 							+ "</div>");
 				} else {
 					inventorySB.append(
-							"<div id='ITEM_PATTERN_"+pattern.getId()+"' class='cosmetics-button'>"
-							+ "<span style='color:"+PresetColour.TRANSFORMATION_GENERIC.getShades()[0]+";'>" + Util.capitaliseSentence(pattern.getNiceName()) + "</span>"
+							"<div id='ITEM_PATTERN_"+pattern.getId()+"' class='cosmetics-button'><span style='color:"+PresetColour.TRANSFORMATION_GENERIC.getShades()[0]+";'>" + Util.capitaliseSentence(pattern.getNiceName()) + "</span>"
 							+ "</div>");
 				}
 			}
@@ -7000,13 +6957,10 @@ public class InventoryDialogue {
 			for(int i=0; i<clothing.getClothingType().getPatternColourReplacements().size(); i++) {
 				ColourReplacement cr = clothing.getClothingType().getPatternColourReplacement(i);
 				if(!cr.getAllColours().isEmpty() && Pattern.getPattern(dyePreviewPattern).isRecolourAvailable(cr)) {
-					inventorySB.append("<div class='container-quarter-width' style='width:calc(75% - 16px);'>"
-								+ "Pattern "+Util.capitaliseSentence(Util.intToPrimarySequence(i+1))+" Colour:<br/>");
+					inventorySB.append("<div class='container-quarter-width' style='width:calc(75% - 16px);'>Узор "+Util.capitaliseSentence(Util.intToPrimarySequence(i+1))+" Цвет:<br/>");
 					
 					for (Colour c : cr.getAllColours()) {
-						inventorySB.append("<div class='normal-button"+(dyePreviewPatternColours.size()>i && dyePreviewPatternColours.get(i)==c?" selected":"")+"' id='DYE_CLOTHING_PATTERN_"+i+"_"+c.getId()+"'"
-											+ " style='width:auto; margin-right:4px;"+(dyePreviewPatternColours.size()>i && dyePreviewPatternColours.get(i)==c?" background-color:"+PresetColour.BASE_GREEN.getShades()[4]+";":"")+"'>"
-										+ "<div class='phone-item-colour' style='"
+						inventorySB.append("<div class='normal-button"+(dyePreviewPatternColours.size()>i && dyePreviewPatternColours.get(i)==c?" выбранный":"")+"' id='DYE_CLOTHING_PATTERN_"+i+"_"+c.getId()+"' style='width:auto; margin-right:4px;"+(dyePreviewPatternColours.size()>i && dyePreviewPatternColours.get(i)==c?" background-color:"+PresetColour.BASE_GREEN.getShades()[4]+";":"")+"'><div class='phone-item-colour' style='"
 											+ (c.isMetallic()
 													?"background: repeating-linear-gradient(135deg, " + c.toWebHexString() + ", " + c.getShades()[4] + " 10px);"
 													:"background-color:" + c.toWebHexString() + ";")
@@ -7030,39 +6984,26 @@ public class InventoryDialogue {
 							+ weapon.getSVGString()
 						+ "</div>"
 					+ "</div>"
-					+ "<h3 style='text-align:center;'><b>"+weapon.getDisplayName(true)+"</b></h3>"
-					+ "<p>"
-						+ "Select the desired colours from the coloured buttons below, and after using the preview to see how the new weapon will look, press the 'Dye' option at the bottom of the screen to apply your changes."
-					+ "</p>"
-				+ "</div>"
-				+ "<br/>"
-				+ "<div class='container-full-width'>"
-					+ "<div class='container-full-width' style='text-align:center; width:calc(25% - 16px); float:right;'>"
-						+ "<div class='inventoryImage' style='width:100%;'>"
+					+ "<h3 style='text-align:center;'><b>"+weapon.getDisplayName(true)+"</b></h3><p>Выберите нужные цвета с помощью цветных кнопок ниже. После того как вы воспользуетесь предпросмотром, чтобы увидеть, как будет выглядеть новое оружие, нажмите кнопку «Покрасить» в нижней части экрана, чтобы применить изменения.</p></div><br/><div class='container-full-width'><div class='container-full-width' style='text-align:center; width:calc(25% - 16px); float:right;'><div class='inventoryImage' style='width:100%;'>"
 							+ (weapon.getWeaponType().isEquippedSVGImageDifferent()
-								?"Unequipped"
+								?"Снято"
 								:"")
 							+ "<div class='inventoryImage-content'>"
 								+ weapon.getWeaponType().getSVGImage(damageTypePreview, dyePreviews)
 							+ "</div>"
 						+ "</div>"
 						+(weapon.getWeaponType().isEquippedSVGImageDifferent()
-							?"<div class='inventoryImage' style='width:100%;'>"
-								+ "Equipped"
-									+ "<div class='inventoryImage-content'>"
+							?"<div class='inventoryImage' style='width:100%;'>Экипировано<div class='inventoryImage-content'>"
 										+ weapon.getWeaponType().getSVGEquippedImage(Main.game.getPlayer(), damageTypePreview, dyePreviews)
 									+ "</div>"
 								+ "</div>"
 							:"")
-					+ "</div>"
-					+ "<h3 style='text-align:center;'><b>Dye & Preview</b></h3>");
+					+ "</div><h3 style='text-align:center;'><b>Краска и просмотр</b></h3>");
 		
 		
-		inventorySB.append("<div class='container-quarter-width' style='text-align:center;width:calc(75% - 16px);'>"
-				+ "<b>Damage type:</b><br/>");
+		inventorySB.append("<div class='container-quarter-width' style='text-align:center;width:calc(75% - 16px);'><b>Тип урона:</b><br/>");
 		for(DamageType dt : weapon.getWeaponType().getAvailableDamageTypes()) {
-			inventorySB.append("<div class='normal-button"+(damageTypePreview==dt?" selected":"")+"' id='DAMAGE_TYPE_"+dt.toString()+"'"
-							+ "style='width:20%; margin:0 2.5%; color:"+(damageTypePreview==dt?dt.getColour().toWebHexString():dt.getColour().getShades(8)[0])+";'>"
+			inventorySB.append("<div class='normal-button"+(damageTypePreview==dt?" выбранный":"")+"' id='ТИП_УРОНА_"+dt.toString()+"'style='width:20%; margin:0 2.5%; color:"+(damageTypePreview==dt?dt.getColour().toWebHexString():dt.getColour().getShades(8)[0])+";'>"
 						+ Util.capitaliseSentence(dt.getName())
 					+ "</div>");
 		}
@@ -7075,19 +7016,17 @@ public class InventoryDialogue {
 			ColourReplacement cr = weapon.getWeaponType().getColourReplacement(false, i);
 			if(!cr.getAllColours().isEmpty()) {
 				inventorySB.append("<div class='container-quarter-width' style='width:calc(75% - 16px);'>"
-						+ Util.capitaliseSentence(Util.intToPrimarySequence(i+1))+" Colour"+(cr.isRecolouringAllowed()?"":" ([style.italicsBad(cannot be changed)])")+":<br/>");
+						+ Util.capitaliseSentence(Util.intToPrimarySequence(i+1))+" Цвет"+(cr.isRecolouringAllowed()?"":" ([style.italicsBad(нельзя изменить)])")+":<br/>");
 				
 				for(Colour c : cr.getAllColours()) {
-					inventorySB.append("<div class='normal-button"+(dyePreviews.size()>i && dyePreviews.get(i)==c?" selected":"")+"' id='DYE_WEAPON_"+i+"_"+c.getId()+"'"
-										+ " style='width:auto; margin-right:4px; border-width:1px;"
+					inventorySB.append("<div class='normal-button"+(dyePreviews.size()>i && dyePreviews.get(i)==c?" выбранный":"")+"' id='DYE_WEAPON_"+i+"_"+c.getId()+"' style='width:auto; margin-right:4px; border-width:1px;"
 											+(cr.getDefaultColours().contains(c)
-												?"border-color:"+PresetColour.TEXT_GREY.toWebHexString()+";"
+												?"цвет-границы:"+PresetColour.TEXT_GREY.toWebHexString()+";"
 												:"")
 											+(dyePreviews.size()>i && dyePreviews.get(i)==c
 												?" background-color:"+PresetColour.BASE_GREEN.getShades()[4]+";"
 												:"")
-										+"'>"
-									+ "<div class='phone-item-colour' style='"
+										+"'><div class='phone-item-colour' style='"
 										+ (c.isMetallic()
 												?"background: repeating-linear-gradient(135deg, " + c.toWebHexString() + ", " + c.getShades()[4] + " 10px);"
 												:"background-color:" + c.toWebHexString() + ";")
@@ -7099,9 +7038,7 @@ public class InventoryDialogue {
 		}
 		
 		if(!colourOptions) {
-			inventorySB.append("<div class='container-half-width' style='text-align:center;'>"
-					+ "[style.colourDisabled(No dye options available...)]"
-					+ "</div>");
+			inventorySB.append("<div class='container-half-width' style='text-align:center;'>[style.colourDisabled(Доступных красителей нет...)]</div>");
 		}
 
 		inventorySB.append("</div>");
@@ -7109,7 +7046,7 @@ public class InventoryDialogue {
 		return inventorySB.toString();
 	}
 	
-	public static final DialogueNode DYE_CLOTHING = new DialogueNode("Dye clothing", "", true) {
+	public static final DialogueNode DYE_CLOTHING = new DialogueNode("Красить одежду", "", true) {
 
 		@Override
 		public String getContent() {
@@ -7119,23 +7056,23 @@ public class InventoryDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 0) {
-				return new Response("Back", "Return to the previous menu.", INVENTORY_MENU);
+				return new Response("Назад", "Вернуться в предыдущее меню.", INVENTORY_MENU);
 
 			} else if (index == 1) {
 				if(dyePreviews.equals(clothing.getColours())
 						&& dyePreviewPattern.equals(clothing.getPattern())
 						&& dyePreviewPatternColours.equals(clothing.getPatternColours())
 						&& dyePreviewStickers.equals(clothing.getStickersAsObjects())) {
-					return new Response("Dye",
-							"You need to choose different colours before being able to dye the " + clothing.getName() + "!",
+					return new Response("Краситель",
+							"Сначала нужно выбрать другие цвета, прежде чем вы сможете покрасить " + clothing.getName() + "!",
 							null); 
 				}
 				
-				return new Response("Dye",
-						"Dye the " + clothing.getName() + " in the colours you have chosen."
+				return new Response("Краситель",
+						"Покрасить " + clothing.getName() + " в выбранные вами цвета."
 								+ (Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
-										?" This action is permanent, but thanks to your proficiency with [style.boldEarth(Earth spells)], you can dye it a different colour at any time."
-										:" This action is permanent, and you'll need another dye-brush if you want to change its colour again."),
+										?" Это действие необратимо, но благодаря вашему мастерству в [style.boldEarth(заклинаниях земли)], вы сможете перекрасить предмет в любой другой цвет в любое время."
+										:" Это действие необратимо, и если вы захотите изменить цвет снова, вам понадобится новая кисть для окрашивания."),
 						INVENTORY_MENU) {
 					@Override
 					public void effects(){
@@ -7144,22 +7081,16 @@ public class InventoryDialogue {
 							Main.game.getTextEndStringBuilder().append(
 									"<p style='text-align:center;'>"
 										+ getDyeBrushEffects(clothing, dyePreviews.get(0))
-									+ "</p>"
-									+ "<p>"
-										+ "<b>The " + clothing.getName() + " " + (clothing.getClothingType().isPlural() ? "have been" : "has been") + " dyed</b>!"
-									+ "</p>"
-									+ "<p>"
+									+ "</p><p><b>The " + clothing.getName() + " " + (clothing.getClothingType().isPlural() ? "были" : "был") + " окрашены</b>!</p><p>"
 										+ (isClothingDyeActionAvailable()
-												?"You have <b>" + Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH))
-														+ "</b> dye-brush" + (Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH)) == 1 ? "" : "es") + " left!"
-												:"You have <b>0</b> dye-brushes left!")
+												?"У вас осталось <b>" + Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH))
+														+ "</b> кистей для окрашивания" + (Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH)) == 1 ? "" : "шт.") + " слева!"
+												:"У вас осталось <b>0</b> кистей для окрашивания!")
 									+ "</p>");
 							
 						} else {
 							Main.game.getTextEndStringBuilder().append(
-									"<p>"
-											+ "Thanks to your proficiency with [style.boldEarth(Earth spells)], you are able to dye the " + clothing.getName() + " without needing to use a dye-brush!"
-										+ "</p>");
+									"<p>Благодаря вашему мастерству владения [style.boldEarth(заклинаниями земли)], вы можете окрашивать " + clothing.getName() + " без использования кисти!</p>");
 						}
 						
 						if(owner!=null) {
@@ -7170,7 +7101,7 @@ public class InventoryDialogue {
 							dyedClothing.setPatternColours(dyePreviewPatternColours);
 							dyedClothing.setStickersAsObjects(dyePreviewStickers);
 							owner.addClothing(dyedClothing, false);
-							Main.game.addEvent(new EventLogEntry("Dyed", dyedClothing.getDisplayName(true)), false);
+							Main.game.addEvent(new EventLogEntry("Окрашено", dyedClothing.getDisplayName(true)), false);
 
 						} else {
 							Main.game.getPlayerCell().getInventory().removeClothing(clothing);
@@ -7180,7 +7111,7 @@ public class InventoryDialogue {
 							dyedClothing.setPatternColours(dyePreviewPatternColours);
 							dyedClothing.setStickersAsObjects(dyePreviewStickers);
 							Main.game.getPlayerCell().getInventory().addClothing(dyedClothing);
-							Main.game.addEvent(new EventLogEntry("Dyed", dyedClothing.getDisplayName(true)), false);
+							Main.game.addEvent(new EventLogEntry("Окрашено", dyedClothing.getDisplayName(true)), false);
 						}
 						
 					}
@@ -7191,8 +7122,8 @@ public class InventoryDialogue {
 						&& dyePreviewPattern.equals(clothing.getPattern())
 						&& dyePreviewPatternColours.equals(clothing.getPatternColours())
 						&& dyePreviewStickers.equals(clothing.getStickersAsObjects())) {
-					return new Response("Dye all (stack)",
-							"You need to choose different colours before being able to dye the " + clothing.getName() + "!",
+					return new Response("Окрасить всё (стак)",
+							"Сначала нужно выбрать другие цвета, прежде чем вы сможете покрасить " + clothing.getName() + "!",
 							null); 
 				}
 				
@@ -7206,8 +7137,8 @@ public class InventoryDialogue {
 				int finalCount = stackCount;
 				
 				if(stackCount==1) {
-					return new Response("Dye all (stack)",
-							"You only have one "+clothing.getName()+", so you should dye it using the individual action...",
+					return new Response("Окрасить всё (стак)",
+							"У вас есть всего лишь одна "+clothing.getName()+", поэтому вам следует покрасить её, используя отдельное действие...",
 							null); 
 				}
 				
@@ -7215,17 +7146,17 @@ public class InventoryDialogue {
 					int dyeBrushCount = Main.game.getPlayer().getItemCount(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH));
 					
 					if(dyeBrushCount<stackCount) {
-						return new Response("Dye all (stack)",
-								"You do not have enough dye brushes to dye all the " + clothing.getNamePlural() + "! You have "+dyeBrushCount+" dye brushes, but there are "+stackCount+" "+clothing.getNamePlural()+" in this stack...",
+						return new Response("Окрасить всё (стак)",
+								"Вам не хватает кистей для окрашивания, чтобы покрасить все " + clothing.getNamePlural() + "! У вас есть "+dyeBrushCount+" кистей, но в этой стопке находится "+stackCount+" "+clothing.getNamePlural()+" штук...",
 								null); 
 					}
 				}
 				
-				return new Response("Dye all (stack)",
-						"Dye all " + clothing.getNamePlural() + " which are in this clothing stack ("+stackCount+" in total) in the colours you have chosen."
+				return new Response("Окрасить всё (стак)",
+						"Покрасить все " + clothing.getNamePlural() + " находящиеся в этой стопке предметов одежды ("+stackCount+" всего) в выбранные вами цвета."
 								+ (Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
-										?" This action is permanent, but thanks to your proficiency with [style.boldEarth(Earth spells)], you can dye them a different colour at any time."
-										:" This action is permanent, and you'll need another dye-brush if you want to change their colour again."),
+										?" Это действие необратимо, но благодаря вашему мастерству в [style.boldEarth(заклинаниях Земли)], вы сможете перекрасить их в другой цвет в любое время."
+										:" Это действие необратимо, и если вы захотите снова изменить их цвет, вам понадобится новая кисть для окрашивания."),
 						INVENTORY_MENU) {
 					@Override
 					public void effects(){
@@ -7234,29 +7165,24 @@ public class InventoryDialogue {
 							Main.game.getTextEndStringBuilder().append(
 									"<p style='text-align:center;'>"
 										+ getDyeBrushEffects(clothing, dyePreviews.get(0))
-									+ "</p>"
-									+ "<p>"
-										+ "<b>The "+clothing.getName()+(clothing.getClothingType().isPlural()?"have":"has")+" been dyed</b>!"
-									+ "</p>");
+									+ "</p><p><b>The "+clothing.getName()+(clothing.getClothingType().isPlural()?"имеют":"имеет")+" были окрашены</b>!</p>");
 							
-							Main.game.getTextEndStringBuilder().append("<p>You then repeat this for the other "+Util.intToString(finalCount-1)+" "+clothing.getNamePlural()+"...</p>");
+							Main.game.getTextEndStringBuilder().append("<p>Затем вы повторяете это для остальных "+Util.intToString(finalCount-1)+" "+clothing.getNamePlural()+"...</p>");
 							
 							Main.game.getTextEndStringBuilder().append("<p>"
 										+ (isClothingDyeActionAvailable()
-												?"You have <b>" + Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH))
-														+ "</b> dye-brush" + (Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH)) == 1 ? "" : "es") + " left!"
-												:"You have <b>0</b> dye-brushes left!")
+												?"У вас осталось <b>" + Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH))
+														+ "</b> кистей для окрашивания" + (Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH)) == 1 ? "" : "шт.") + " слева!"
+												:"У вас осталось <b>0</b> кистей для окрашивания!")
 									+ "</p>");
 							
 						} else {
 							Main.game.getTextEndStringBuilder().append(
-									"<p>"
-											+ "Thanks to your proficiency with [style.boldEarth(Earth spells)], you are able to dye "
+									"<p>Благодаря вашему мастерству в [style.boldEarth(заклинаниях земли)], вы способны окрашивать "
 												+ (finalCount==2
-													?"both"
-													:"all "+Util.intToString(finalCount))
-												+" of the " + clothing.getNamePlural() + " without needing to use a single dye-brush!"
-										+ "</p>");
+													?"оба"
+													:"все "+Util.intToString(finalCount))
+												+" из " + clothing.getNamePlural() + " без использования ни одной кисти для окрашивания!</p>");
 						}
 						
 						if(owner!=null) {
@@ -7267,7 +7193,7 @@ public class InventoryDialogue {
 							dyedClothing.setPatternColours(dyePreviewPatternColours);
 							dyedClothing.setStickersAsObjects(dyePreviewStickers);
 							owner.addClothing(dyedClothing, finalCount, false, false);
-							Main.game.addEvent(new EventLogEntry("Dyed", dyedClothing.getDisplayName(true)), false);
+							Main.game.addEvent(new EventLogEntry("Окрашено", dyedClothing.getDisplayName(true)), false);
 
 						} else {
 							Main.game.getPlayerCell().getInventory().removeClothing(clothing, finalCount);
@@ -7277,7 +7203,7 @@ public class InventoryDialogue {
 							dyedClothing.setPatternColours(dyePreviewPatternColours);
 							dyedClothing.setStickersAsObjects(dyePreviewStickers);
 							Main.game.getPlayerCell().getInventory().addClothing(dyedClothing, finalCount);
-							Main.game.addEvent(new EventLogEntry("Dyed", dyedClothing.getDisplayName(true)), false);
+							Main.game.addEvent(new EventLogEntry("Окрашено", dyedClothing.getDisplayName(true)), false);
 						}
 					}
 				};
@@ -7287,8 +7213,8 @@ public class InventoryDialogue {
 						&& dyePreviewPattern.equals(clothing.getPattern())
 						&& dyePreviewPatternColours.equals(clothing.getPatternColours())
 						&& dyePreviewStickers.equals(clothing.getStickersAsObjects())) {
-					return new Response("Dye all",
-							"You need to choose different colours before being able to dye the " + clothing.getName() + "!",
+					return new Response("Покрасить все",
+							"Сначала нужно выбрать другие цвета, прежде чем вы сможете покрасить " + clothing.getName() + "!",
 							null); 
 				}
 				
@@ -7313,8 +7239,8 @@ public class InventoryDialogue {
 				int finalCount = stackCount;
 				
 				if(stackCount==1) {
-					return new Response("Dye all",
-							"You only have one "+clothing.getName()+", so you should dye it using the individual action...",
+					return new Response("Покрасить все",
+							"У вас есть всего лишь одна "+clothing.getName()+", поэтому вам следует покрасить её, используя отдельное действие...",
 							null); 
 				}
 				
@@ -7322,17 +7248,17 @@ public class InventoryDialogue {
 					int dyeBrushCount = Main.game.getPlayer().getItemCount(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH));
 					
 					if(dyeBrushCount<stackCount) {
-						return new Response("Dye all",
-								"You do not have enough dye brushes to dye all the " + clothing.getNamePlural() + "! You have "+dyeBrushCount+" dye brushes, but there are "+stackCount+" "+clothing.getNamePlural()+" in total...",
+						return new Response("Покрасить все",
+								"Вам не хватает кистей для окрашивания, чтобы покрасить все " + clothing.getNamePlural() + "! У вас есть "+dyeBrushCount+" кистей, но в этой стопке находится "+stackCount+" "+clothing.getNamePlural()+" всего...",
 								null); 
 					}
 				}
 				
-				return new Response("Dye all",
-						"Dye all " + clothing.getNamePlural() + " which are in this clothing stack ("+stackCount+" in total) in the colours you have chosen."
+				return new Response("Покрасить все",
+						"Покрасить все " + clothing.getNamePlural() + " находящиеся в этой стопке предметов одежды ("+stackCount+" всего) в выбранные вами цвета."
 								+ (Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
-										?" This action is permanent, but thanks to your proficiency with [style.boldEarth(Earth spells)], you can dye them a different colour at any time."
-										:" This action is permanent, and you'll need another dye-brush if you want to change their colour again."),
+										?" Это действие необратимо, но благодаря вашему мастерству в [style.boldEarth(заклинаниях Земли)], вы сможете перекрасить их в другой цвет в любое время."
+										:" Это действие необратимо, и если вы захотите снова изменить их цвет, вам понадобится новая кисть для окрашивания."),
 						INVENTORY_MENU) {
 					@Override
 					public void effects(){
@@ -7341,29 +7267,24 @@ public class InventoryDialogue {
 							Main.game.getTextEndStringBuilder().append(
 									"<p style='text-align:center;'>"
 										+ getDyeBrushEffects(clothing, dyePreviews.get(0))
-									+ "</p>"
-									+ "<p>"
-									+ "<b>The "+clothing.getName()+(clothing.getClothingType().isPlural()?"have":"has")+" been dyed</b>!"
-									+ "</p>");
+									+ "</p><p><b>The "+clothing.getName()+(clothing.getClothingType().isPlural()?"имеют":"имеет")+" были окрашены</b>!</p>");
 							
-							Main.game.getTextEndStringBuilder().append("<p>You then repeat this for the other "+Util.intToString(finalCount-1)+" "+clothing.getNamePlural()+"...</p>");
+							Main.game.getTextEndStringBuilder().append("<p>Затем вы повторяете это для остальных "+Util.intToString(finalCount-1)+" "+clothing.getNamePlural()+"...</p>");
 							
 							Main.game.getTextEndStringBuilder().append("<p>"
 										+ (isClothingDyeActionAvailable()
-												?"You have <b>" + Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH))
-														+ "</b> dye-brush" + (Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH)) == 1 ? "" : "es") + " left!"
-												:"You have <b>0</b> dye-brushes left!")
+												?"У вас осталось <b>" + Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH))
+														+ "</b> кистей для окрашивания" + (Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH)) == 1 ? "" : "шт.") + " слева!"
+												:"У вас осталось <b>0</b> кистей для окрашивания!")
 									+ "</p>");
 							
 						} else {
 							Main.game.getTextEndStringBuilder().append(
-									"<p>"
-											+ "Thanks to your proficiency with [style.boldEarth(Earth spells)], you are able to dye "
+									"<p>Благодаря вашему мастерству в [style.boldEarth(заклинаниях земли)], вы способны окрашивать "
 												+ (finalCount==2
-													?"both"
-													:"all "+Util.intToString(finalCount))
-												+" of the " + clothing.getNamePlural() + " without needing to use a single dye-brush!"
-										+ "</p>");
+													?"оба"
+													:"все "+Util.intToString(finalCount))
+												+" из " + clothing.getNamePlural() + " без использования ни одной кисти для окрашивания!</p>");
 						}
 						
 						if(owner!=null) {
@@ -7376,7 +7297,7 @@ public class InventoryDialogue {
 								dyedClothing.setPatternColours(dyePreviewPatternColours);
 								dyedClothing.setStickersAsObjects(dyePreviewStickers);
 								owner.addClothing(dyedClothing, clothingCount, false, false);
-								Main.game.addEvent(new EventLogEntry("Dyed", dyedClothing.getDisplayName(true)), false);
+								Main.game.addEvent(new EventLogEntry("Окрашено", dyedClothing.getDisplayName(true)), false);
 							}
 							
 						} else {
@@ -7389,7 +7310,7 @@ public class InventoryDialogue {
 								dyedClothing.setPatternColours(dyePreviewPatternColours);
 								dyedClothing.setStickersAsObjects(dyePreviewStickers);
 								Main.game.getPlayerCell().getInventory().addClothing(dyedClothing, clothingCount);
-								Main.game.addEvent(new EventLogEntry("Dyed", dyedClothing.getDisplayName(true)), false);
+								Main.game.addEvent(new EventLogEntry("Окрашено", dyedClothing.getDisplayName(true)), false);
 							}
 						}
 					}
@@ -7406,7 +7327,7 @@ public class InventoryDialogue {
 		}
 	};
 
-	public static final DialogueNode DYE_EQUIPPED_CLOTHING = new DialogueNode("Dye clothing", "", true) {
+	public static final DialogueNode DYE_EQUIPPED_CLOTHING = new DialogueNode("Красить одежду", "", true) {
 
 		@Override
 		public String getContent() {
@@ -7416,23 +7337,23 @@ public class InventoryDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 0) {
-				return new Response("Back", "Return to the previous menu.", INVENTORY_MENU);
+				return new Response("Назад", "Вернуться в предыдущее меню.", INVENTORY_MENU);
 
 			} else if (index == 1) {
 				if(dyePreviews.equals(clothing.getColours())
 						&& dyePreviewPattern.equals(clothing.getPattern())
 						&& dyePreviewPatternColours.equals(clothing.getPatternColours())
 						&& dyePreviewStickers.equals(clothing.getStickersAsObjects())) {
-					return new Response("Dye",
-							"You need to choose different colours before being able to dye the " + clothing.getName() + "!",
+					return new Response("Краситель",
+							"Сначала нужно выбрать другие цвета, прежде чем вы сможете покрасить " + clothing.getName() + "!",
 							null); 
 				}
 				
-				return new Response("Dye",
-								"Dye the " + clothing.getName() + " in the colours you have chosen."
+				return new Response("Краситель",
+								"Покрасить " + clothing.getName() + " в выбранные вами цвета."
 										+ (Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
-												?" This action is permanent, but thanks to your proficiency with [style.boldEarth(Earth spells)], you can dye it a different colour at any time."
-												:" This action is permanent, and you'll need another dye-brush if you want to change its colour again."),
+												?" Это действие необратимо, но благодаря вашему мастерству в [style.boldEarth(заклинаниях земли)], вы сможете перекрасить предмет в любой другой цвет в любое время."
+												:" Это действие необратимо, и если вы захотите изменить цвет снова, вам понадобится новая кисть для окрашивания."),
 								INVENTORY_MENU){
 					@Override
 					public void effects(){
@@ -7441,22 +7362,16 @@ public class InventoryDialogue {
 							Main.game.getTextEndStringBuilder().append(
 									"<p style='text-align:center;'>"
 										+ getDyeBrushEffects(clothing, dyePreviews.get(0))
-									+ "</p>"
-									+ "<p>"
-										+ "<b>The " + clothing.getName() + " " + (clothing.getClothingType().isPlural() ? "have been" : "has been") + " dyed</b>!"
-									+ "</p>"
-									+ "<p>"
+									+ "</p><p><b>Тот " + clothing.getName() + " " + (clothing.getClothingType().isPlural() ? "были" : "был") + " окрашены</b>!</p><p>"
 										+ (isClothingDyeActionAvailable()
-												?"You have <b>" + Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH))
-														+ "</b> dye-brush" + (Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH)) == 1 ? "" : "es") + " left!"
-												:"You have <b>0</b> dye-brushes left!")
+												?"У вас осталось <b>" + Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH))
+														+ "</b> кистей для окрашивания" + (Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH)) == 1 ? "" : "шт.") + " слева!"
+												:"У вас осталось <b>0</b> кистей для окрашивания!")
 									+ "</p>");
 							
 						} else {
 							Main.game.getTextEndStringBuilder().append(
-									"<p>"
-											+ "Thanks to your proficiency with [style.boldEarth(Earth spells)], you are able to dye the " + clothing.getName() + " without needing to use a dye-brush!"
-										+ "</p>");
+									"<p>Благодаря вашему мастерству владения [style.boldEarth(заклинаниями земли)], вы можете окрашивать " + clothing.getName() + " без использования кисти!</p>");
 						}
 						
 						clothing.setColours(dyePreviews);
@@ -7464,7 +7379,7 @@ public class InventoryDialogue {
 						clothing.setPatternColours(dyePreviewPatternColours);
 						clothing.setStickersAsObjects(dyePreviewStickers);
 						
-						Main.game.addEvent(new EventLogEntry("Dyed", clothing.getDisplayName(true)), false);
+						Main.game.addEvent(new EventLogEntry("Окрашено", clothing.getDisplayName(true)), false);
 					}
 				};
 
@@ -7479,7 +7394,7 @@ public class InventoryDialogue {
 	};
 	
 	
-	public static final DialogueNode DYE_CLOTHING_CHARACTER_CREATION = new DialogueNode("Choose Colour", "", true) {
+	public static final DialogueNode DYE_CLOTHING_CHARACTER_CREATION = new DialogueNode("Выбрать цвет", "", true) {
 
 		@Override
 		public String getContent() {
@@ -7489,20 +7404,20 @@ public class InventoryDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 0) {
-				return new Response("Back", "Return to the previous menu.", CLOTHING_INVENTORY);
+				return new Response("Назад", "Вернуться в предыдущее меню.", CLOTHING_INVENTORY);
 
 			} else if (index == 1) {
 				if(dyePreviews.equals(clothing.getColours())
 						&& dyePreviewPattern.equals(clothing.getPattern())
 						&& dyePreviewPatternColours.equals(clothing.getPatternColours())
 						&& dyePreviewStickers.equals(clothing.getStickersAsObjects())) {
-					return new Response("Dye",
-							"You need to choose different colours before being able to dye the " + clothing.getName() + "!",
+					return new Response("Краситель",
+							"Сначала нужно выбрать другие цвета, прежде чем вы сможете покрасить " + clothing.getName() + "!",
 							null); 
 				}
 				
-				return new Response("Dye",
-						"Change the colour of the " + clothing.getName() + " to the colours you have chosen.",
+				return new Response("Краситель",
+						"Изменить цвет " + clothing.getName() + " на выбранные вами цвета.",
 						INVENTORY_MENU){
 					@Override
 					public void effects(){
@@ -7527,7 +7442,7 @@ public class InventoryDialogue {
 		}
 	};
 
-	public static final DialogueNode DYE_EQUIPPED_CLOTHING_CHARACTER_CREATION = new DialogueNode("Choose Colour", "", true) {
+	public static final DialogueNode DYE_EQUIPPED_CLOTHING_CHARACTER_CREATION = new DialogueNode("Выбрать цвет", "", true) {
 
 		@Override
 		public String getContent() {
@@ -7537,20 +7452,20 @@ public class InventoryDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 0) {
-				return new Response("Back", "Return to the previous menu.", CLOTHING_EQUIPPED);
+				return new Response("Назад", "Вернуться в предыдущее меню.", CLOTHING_EQUIPPED);
 
 			} else if (index  == 1) {
 				if(dyePreviews.equals(clothing.getColours())
 						&& dyePreviewPattern.equals(clothing.getPattern())
 						&& dyePreviewPatternColours.equals(clothing.getPatternColours())
 						&& dyePreviewStickers.equals(clothing.getStickersAsObjects())) {
-					return new Response("Dye",
-							"You need to choose different colours before being able to dye the " + clothing.getName() + "!",
+					return new Response("Краситель",
+							"Сначала нужно выбрать другие цвета, прежде чем вы сможете покрасить " + clothing.getName() + "!",
 							null); 
 				}
 				
-				return new Response("Dye",
-						"Change the colour of the " + clothing.getName() + " to the colours you have chosen.",
+				return new Response("Краситель",
+						"Изменить цвет " + clothing.getName() + " на выбранные вами цвета.",
 						CLOTHING_EQUIPPED){
 					@Override
 					public void effects(){
@@ -7571,7 +7486,7 @@ public class InventoryDialogue {
 		}
 	};
 
-	public static final DialogueNode DYE_WEAPON = new DialogueNode("Dye Weapon", "", true) {
+	public static final DialogueNode DYE_WEAPON = new DialogueNode("Покрасить оружие", "", true) {
 
 		@Override
 		public String getContent() {
@@ -7581,28 +7496,28 @@ public class InventoryDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 0) {
-				return new Response("Back", "Return to the previous menu.", INVENTORY_MENU);
+				return new Response("Назад", "Вернуться в предыдущее меню.", INVENTORY_MENU);
 
 			} else if (index == 1) {
 				if (!Main.game.getPlayer().hasItemType(ItemType.DYE_BRUSH)
 						&& !Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
 						&& !Main.game.isDebugMode()) {
-					return new Response("Dye",
-							"You do not have a dye-brush, so cannot change the colours of the " + weapon.getName() + "...",
+					return new Response("Краситель",
+							"У вас нет кисти для красок, поэтому вы не можете изменить цвета " + weapon.getName() + "...",
 							null); 
 				}
 				
 				if(dyePreviews.equals(weapon.getColours())) {
-					return new Response("Dye",
-							"You need to choose different colours before being able to dye the " + weapon.getName() + "!",
+					return new Response("Краситель",
+							"Сначала нужно выбрать другие цвета, прежде чем вы сможете покрасить " + weapon.getName() + "!",
 							null); 
 				}
 				
-				return new Response("Dye",
-						"Dye the " + weapon.getName() + " in the colours you have chosen."
+				return new Response("Краситель",
+						"Покрасить " + weapon.getName() + " в выбранные вами цвета."
 								+ (Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
-										?" This action is permanent, but thanks to your proficiency with [style.boldEarth(Earth spells)], you can dye it a different colour at any time."
-										:" This action is permanent, and you'll need another dye-brush if you want to change its colour again."),
+										?" Это действие необратимо, но благодаря вашему мастерству в [style.boldEarth(заклинаниях земли)], вы сможете перекрасить предмет в любой другой цвет в любое время."
+										:" Это действие необратимо, и если вы захотите изменить цвет снова, вам понадобится новая кисть для окрашивания."),
 						INVENTORY_MENU){
 					@Override
 					public void effects(){
@@ -7611,22 +7526,16 @@ public class InventoryDialogue {
 							Main.game.getTextEndStringBuilder().append(
 									"<p style='text-align:center;'>"
 										+ getDyeBrushEffects(weapon, dyePreviews.get(0))
-									+ "</p>"
-									+ "<p>"
-										+ "<b>The " + weapon.getName() + " " + (weapon.getWeaponType().isPlural() ? "have been" : "has been") + " dyed</b>!"
-									+ "</p>"
-									+ "<p>"
+									+ "</p><p><b>Того " + weapon.getName() + " " + (weapon.getWeaponType().isPlural() ? "были" : "был") + " окрашены</b>!</p><p>"
 										+ (isClothingDyeActionAvailable()
-												?"You have <b>" + Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH))
-														+ "</b> dye-brush" + (Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH)) == 1 ? "" : "es") + " left!"
-												:"You have <b>0</b> dye-brushes left!")
+												?"У вас осталось <b>" + Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH))
+														+ "</b> кистей для окрашивания" + (Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH)) == 1 ? "" : "шт.") + " слева!"
+												:"У вас осталось <b>0</b> кистей для окрашивания!")
 									+ "</p>");
 							
 						} else {
 							Main.game.getTextEndStringBuilder().append(
-									"<p>"
-										+ "Thanks to your proficiency with [style.boldEarth(Earth spells)], you are able to dye the " + weapon.getName() + " without needing to use a dye-brush!"
-									+ "</p>");
+									"<p>Благодаря вашему мастерству владения [style.boldEarth(заклинаниями земли)], вы можете окрашивать " + weapon.getName() + " без использования кисти!</p>");
 						}
 						 
 						if(owner!=null) {
@@ -7634,7 +7543,7 @@ public class InventoryDialogue {
 							AbstractWeapon dyedWeapon = Main.game.getItemGen().generateWeapon(weapon);
 							dyedWeapon.setColours(dyePreviews);
 							owner.addWeapon(dyedWeapon, false);
-							Main.game.addEvent(new EventLogEntry("Dyed", dyedWeapon.getDisplayName(true)), false);
+							Main.game.addEvent(new EventLogEntry("Окрашено", dyedWeapon.getDisplayName(true)), false);
 							weapon = dyedWeapon;
 
 						} else {
@@ -7642,7 +7551,7 @@ public class InventoryDialogue {
 							AbstractWeapon dyedWeapon = Main.game.getItemGen().generateWeapon(weapon);
 							dyedWeapon.setColours(dyePreviews);
 							Main.game.getPlayerCell().getInventory().addWeapon(dyedWeapon);
-							Main.game.addEvent(new EventLogEntry("Dyed", dyedWeapon.getDisplayName(true)), false);
+							Main.game.addEvent(new EventLogEntry("Окрашено", dyedWeapon.getDisplayName(true)), false);
 							weapon = dyedWeapon;
 						}
 					}
@@ -7652,22 +7561,22 @@ public class InventoryDialogue {
 				if (!Main.game.getPlayer().hasItemType(ItemType.REFORGE_HAMMER)
 						&& !Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
 						&& !Main.game.isDebugMode()) {
-					return new Response("Reforge",
-							"You do not have a reforging hammer, so cannot change the damage type of the " + weapon.getName() + "...",
+					return new Response("Перековка",
+							"У вас нет молота для перековки, поэтому вы не можете изменить тип урона у " + weapon.getName() + "...",
 							null); 
 				}
 				
 				if(damageTypePreview == weapon.getDamageType()) {
-					return new Response("Reforge",
-							"You need to choose a different damage type before being able to reforge the " + weapon.getName() + "!",
+					return new Response("Перековка",
+							"Вам нужно выбрать другой тип урона, прежде чем вы сможете перековать " + weapon.getName() + "!",
 							null); 
 				}
 				
-				return new Response("Reforge",
-						"Reforge the " + weapon.getName() + " into the damage type you have chosen."
+				return new Response("Перековка",
+						"Перековать " + weapon.getName() + " в выбранный вами тип урона."
 								+ (Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
-										?" This action is permanent, but thanks to your proficiency with [style.boldEarth(Earth spells)], you can reforge it at any time."
-										:" This action is permanent, and you'll need another reforging hammer if you want to change its damage type again."),
+										?" Это действие необратимо, но благодаря вашему мастерству в [style.boldEarth(заклинаниях Земли)], вы сможете перековать его в любое время."
+										:" Это действие необратимо, и если вы захотите снова изменить тип урона, вам понадобится еще один молот для перековки."),
 						INVENTORY_MENU){
 					@Override
 					public void effects(){
@@ -7677,22 +7586,16 @@ public class InventoryDialogue {
 							Main.game.getTextEndStringBuilder().append(
 									"<p style='text-align:center;'>"
 										+ getReforgeHammerEffects(weapon, damageTypePreview)
-									+ "</p>"
-									+ "<p>"
-										+ "<b>The " + weapon.getName() + " " + (weapon.getWeaponType().isPlural() ? "have been" : "has been") + " reforged</b>!"
-									+ "</p>"
-									+ "<p>"
+									+ "</p><p><b>Того " + weapon.getName() + " " + (weapon.getWeaponType().isPlural() ? "были" : "был") + " перековано</b>!</p><p>"
 										+ (Main.game.getPlayer().hasItemType(ItemType.REFORGE_HAMMER) || Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
-												?"You have <b>" + Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.REFORGE_HAMMER))
-														+ "</b> reforging " + (Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.REFORGE_HAMMER)) == 1 ? "hammer" : "hammers") + " left!"
-												:"You have <b>0</b> reforging hammers left!")
+												?"У вас осталось <b>" + Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.REFORGE_HAMMER))
+														+ "Перековка </b> " + (Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.REFORGE_HAMMER)) == 1 ? "долбить" : "долбит") + " слева!"
+												:"У вас осталось <b>0</b> молотов для перековки!")
 									+ "</p>");
 							
 						} else {
 							Main.game.getTextEndStringBuilder().append(
-									"<p>"
-											+ "Thanks to your proficiency with [style.boldEarth(Earth spells)], you are able to reforge the " + weapon.getName() + " without needing to use a reforging hammer!"
-										+ "</p>");
+									"<p>Благодаря вашему мастерству в [style.boldEarth(заклинаниях земли)], вы можете перековать " + weapon.getName() + " без использования молота для перековки!</p>");
 						}
 						 
 						if(owner!=null) {
@@ -7701,7 +7604,7 @@ public class InventoryDialogue {
 							modifiedWeapon.setDamageType(damageTypePreview);
 							// For some reason, if you add the modifiedWeapon directly, it won't stack with other identical weapons... Have to generateWeapon(modifiedWeapon) again to get it to start stacking properly:
 							owner.addWeapon(Main.game.getItemGen().generateWeapon(modifiedWeapon), false);
-							Main.game.addEvent(new EventLogEntry("Reforged", modifiedWeapon.getDisplayName(true)), false);
+							Main.game.addEvent(new EventLogEntry("Перековано", modifiedWeapon.getDisplayName(true)), false);
 
 						} else {
 							Main.game.getPlayerCell().getInventory().removeWeapon(weapon);
@@ -7709,7 +7612,7 @@ public class InventoryDialogue {
 							modifiedWeapon.setDamageType(damageTypePreview);
 							// For some reason, if you add the modifiedWeapon directly, it won't stack with other identical weapons... Have to generateWeapon(modifiedWeapon) again to get it to start stacking properly:
 							Main.game.getPlayerCell().getInventory().addWeapon(Main.game.getItemGen().generateWeapon(modifiedWeapon));
-							Main.game.addEvent(new EventLogEntry("Reforged", modifiedWeapon.getDisplayName(true)), false);
+							Main.game.addEvent(new EventLogEntry("Перековано", modifiedWeapon.getDisplayName(true)), false);
 						}
 					}
 				};
@@ -7718,28 +7621,28 @@ public class InventoryDialogue {
 				if ((!Main.game.getPlayer().hasItemType(ItemType.REFORGE_HAMMER) || !Main.game.getPlayer().hasItemType(ItemType.DYE_BRUSH))
 						&& !Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
 						&& !Main.game.isDebugMode()) {
-					return new Response("Dye & reforge",
-							"You do not have both a dye brush and a reforging hammer, so cannot dye and reforge the " + weapon.getName() + "...",
+					return new Response("Покрасить и перековать",
+							"У вас нет одновременно кисти для покраски и молота для перековки, поэтому вы не можете покрасить и перековать " + weapon.getName() + "...",
 							null); 
 				}
 				
 				if(damageTypePreview == weapon.getDamageType()) {
-					return new Response("Dye & reforge",
-							"You need to choose a different damage type before being able to reforge the " + weapon.getName() + "!",
+					return new Response("Покрасить и перековать",
+							"Вам нужно выбрать другой тип урона, прежде чем вы сможете перековать " + weapon.getName() + "!",
 							null); 
 				}
 				
 				if(dyePreviews.equals(weapon.getColours())) {
-					return new Response("Dye & reforge",
-							"You need to choose different colours before being able to dye the " + weapon.getName() + "!",
+					return new Response("Покрасить и перековать",
+							"Сначала нужно выбрать другие цвета, прежде чем вы сможете покрасить " + weapon.getName() + "!",
 							null); 
 				}
 				
-				return new Response("Dye & reforge",
-						"Dye and reforge the " + weapon.getName() + " into the colours and damage type you have chosen."
+				return new Response("Покрасить и перековать",
+						"Покрасить и перековать  " + weapon.getName() + " в выбранные вами цвета и тип урона."
 								+ (Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
-										?" This action is permanent, but thanks to your proficiency with [style.boldEarth(Earth spells)], you can dye and reforge it at any time."
-										:" This action is permanent, and you'll need another dye-brush and another reforging hammer if you want to change its colours and damage type again."),
+										?" Это действие необратимо, но благодаря вашему мастерству в использовании [style.boldEarth(Заклинаний земли)], вы можете красить и перековывать его в любое время."
+										:" Это действие необратимо, и если вы захотите снова изменить цвета и тип урона, вам понадобятся новая кисть для окрашивания и новый молот для перековки."),
 						INVENTORY_MENU){
 					@Override
 					public void effects(){
@@ -7752,27 +7655,21 @@ public class InventoryDialogue {
 									+ "</p>"
 									+ "<p style='text-align:center;'>"
 										+ getReforgeHammerEffects(weapon, damageTypePreview)
-									+ "</p>"
-									+ "<p>"
-										+ "<b>The " + weapon.getName() + " " + (weapon.getWeaponType().isPlural() ? "have been" : "has been") + " dyed and reforged</b>!"
-									+ "</p>"
-									+ "<p>"
+									+ "</p><p><b>Того " + weapon.getName() + " " + (weapon.getWeaponType().isPlural() ? "были" : "был") + " покрашено и перековано</b>!</p><p>"
 										+ (isClothingDyeActionAvailable()
-												?"You have <b>" + Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH))
-														+ "</b> dye-brush" + (Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH)) == 1 ? "" : "es") + " left!"
-												:"You have <b>0</b> dye-brushes left!")
+												?"У вас осталось <b>" + Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH))
+														+ "</b> кистей для окрашивания" + (Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH)) == 1 ? "" : "шт.") + " слева!"
+												:"У вас осталось <b>0</b> кистей для окрашивания!")
 										+"<br/>"
 										+ (Main.game.getPlayer().hasItemType(ItemType.REFORGE_HAMMER) || Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
-												?"You have <b>" + Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.REFORGE_HAMMER))
-														+ "</b> reforging " + (Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.REFORGE_HAMMER)) == 1 ? "hammer" : "hammers") + " left!"
-												:"You have <b>0</b> reforging hammers left!")
+												?"У вас осталось <b>" + Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.REFORGE_HAMMER))
+														+ "Перековка </b> " + (Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.REFORGE_HAMMER)) == 1 ? "долбить" : "долбит") + " слева!"
+												:"У вас осталось <b>0</b> молотов для перековки!")
 									+ "</p>");
 							
 						} else {
 							Main.game.getTextEndStringBuilder().append(
-									"<p>"
-											+ "Thanks to your proficiency with [style.boldEarth(Earth spells)], you are able to dye and reforge the " + weapon.getName() + " without needing to use a dye-brush or reforging hammer!"
-										+ "</p>");
+									"<p>Благодаря вашему мастерству в использовании [style.boldEarth(Заклинаний земли)], вы можете покрасить и перековать  " + weapon.getName() + " без использования кисти для окрашивания или молота для перековки!</p>");
 						}
 						
 						if(owner!=null) {
@@ -7782,7 +7679,7 @@ public class InventoryDialogue {
 							modifiedWeapon.setColours(dyePreviews);
 							// For some reason, if you add the modifiedWeapon directly, it won't stack with other identical weapons... Have to generateWeapon(modifiedWeapon) again to get it to start stacking properly:
 							owner.addWeapon(Main.game.getItemGen().generateWeapon(modifiedWeapon), false);
-							Main.game.addEvent(new EventLogEntry("Dyed & Reforged", modifiedWeapon.getDisplayName(true)), false);
+							Main.game.addEvent(new EventLogEntry("Покрашено и перековано", modifiedWeapon.getDisplayName(true)), false);
 
 						} else {
 							Main.game.getPlayerCell().getInventory().removeWeapon(weapon);
@@ -7791,15 +7688,15 @@ public class InventoryDialogue {
 							modifiedWeapon.setColours(dyePreviews);
 							// For some reason, if you add the modifiedWeapon directly, it won't stack with other identical weapons... Have to generateWeapon(modifiedWeapon) again to get it to start stacking properly:
 							Main.game.getPlayerCell().getInventory().addWeapon(Main.game.getItemGen().generateWeapon(modifiedWeapon));
-							Main.game.addEvent(new EventLogEntry("Dyed & Reforged", modifiedWeapon.getDisplayName(true)), false);
+							Main.game.addEvent(new EventLogEntry("Покрашено и перековано", modifiedWeapon.getDisplayName(true)), false);
 						}
 					}
 				};
 
 			} else if (index == 6) {
 				if(dyePreviews.equals(weapon.getColours())) {
-					return new Response("Dye all (stack)",
-							"You need to choose different colours before being able to dye the " + weapon.getName() + "!",
+					return new Response("Окрасить всё (стак)",
+							"Сначала нужно выбрать другие цвета, прежде чем вы сможете покрасить " + weapon.getName() + "!",
 							null); 
 				}
 				
@@ -7813,8 +7710,8 @@ public class InventoryDialogue {
 				int finalCount = stackCount;
 				
 				if(stackCount==1) {
-					return new Response("Dye all (stack)",
-							"You only have one "+weapon.getName()+", so you should dye it using the individual action...",
+					return new Response("Окрасить всё (стак)",
+							"У вас есть всего лишь одна "+weapon.getName()+", поэтому вам следует покрасить её, используя отдельное действие...",
 							null); 
 				}
 				
@@ -7822,17 +7719,17 @@ public class InventoryDialogue {
 					int dyeBrushCount = Main.game.getPlayer().getItemCount(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH));
 					
 					if(dyeBrushCount<stackCount) {
-						return new Response("Dye all (stack)",
-								"You do not have enough dye brushes to dye all the " + weapon.getNamePlural() + "! You have "+dyeBrushCount+" dye brushes, but there are "+stackCount+" "+weapon.getNamePlural()+" in this stack...",
+						return new Response("Окрасить всё (стак)",
+								"Вам не хватает кистей для окрашивания, чтобы покрасить все " + weapon.getNamePlural() + "! У вас есть "+dyeBrushCount+" кистей, но в этой стопке находится "+stackCount+" "+weapon.getNamePlural()+" штук...",
 								null); 
 					}
 				}
 				
-				return new Response("Dye all (stack)",
-						"Dye all " + weapon.getNamePlural() + " which are in this weapon stack ("+stackCount+" in total) in the colours you have chosen."
+				return new Response("Окрасить всё (стак)",
+						"Покрасить все " + weapon.getNamePlural() + " которые находятся в этой стопке оружия ("+stackCount+" всего) в выбранные вами цвета."
 								+ (Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
-										?" This action is permanent, but thanks to your proficiency with [style.boldEarth(Earth spells)], you can dye them a different colour at any time."
-										:" This action is permanent, and you'll need another dye-brush if you want to change their colour again."),
+										?" Это действие необратимо, но благодаря вашему мастерству в [style.boldEarth(заклинаниях Земли)], вы сможете перекрасить их в другой цвет в любое время."
+										:" Это действие необратимо, и если вы захотите снова изменить их цвет, вам понадобится новая кисть для окрашивания."),
 						INVENTORY_MENU) {
 					@Override
 					public void effects(){
@@ -7841,29 +7738,24 @@ public class InventoryDialogue {
 							Main.game.getTextEndStringBuilder().append(
 									"<p style='text-align:center;'>"
 										+ getDyeBrushEffects(weapon, dyePreviews.get(0))
-									+ "</p>"
-									+ "<p>"
-									+ "<b>The "+weapon.getName()+(weapon.getWeaponType().isPlural()?"have":"has")+" been dyed</b>!"
-									+ "</p>");
+									+ "</p><p><b>Того "+weapon.getName()+(weapon.getWeaponType().isPlural()?"имеют":"имеет")+" были окрашены</b>!</p>");
 							
-							Main.game.getTextEndStringBuilder().append("<p>You then repeat this for the other "+Util.intToString(finalCount-1)+" "+weapon.getNamePlural()+"...</p>");
+							Main.game.getTextEndStringBuilder().append("<p>Затем вы повторяете это для остальных "+Util.intToString(finalCount-1)+" "+weapon.getNamePlural()+"...</p>");
 							
 							Main.game.getTextEndStringBuilder().append("<p>"
 										+ (isClothingDyeActionAvailable()
-												?"You have <b>" + Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH))
-														+ "</b> dye-brush" + (Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH)) == 1 ? "" : "es") + " left!"
-												:"You have <b>0</b> dye-brushes left!")
+												?"У вас осталось <b>" + Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH))
+														+ "</b> кистей для окрашивания" + (Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH)) == 1 ? "" : "шт.") + " слева!"
+												:"У вас осталось <b>0</b> кистей для окрашивания!")
 									+ "</p>");
 							
 						} else {
 							Main.game.getTextEndStringBuilder().append(
-									"<p>"
-											+ "Thanks to your proficiency with [style.boldEarth(Earth spells)], you are able to dye "
+									"<p>Благодаря вашему мастерству в [style.boldEarth(заклинаниях земли)], вы способны окрашивать "
 												+ (finalCount==2
-													?"both"
-													:"all "+Util.intToString(finalCount))
-												+" of the " + weapon.getNamePlural() + " without needing to use a single dye-brush!"
-										+ "</p>");
+													?"оба"
+													:"все "+Util.intToString(finalCount))
+												+" из " + weapon.getNamePlural() + " без использования ни одной кисти для окрашивания!</p>");
 						}
 						
 						if(owner!=null) {
@@ -7871,22 +7763,22 @@ public class InventoryDialogue {
 							AbstractWeapon dyedWeapon = Main.game.getItemGen().generateWeapon(weapon);
 							dyedWeapon.setColours(dyePreviews);
 							owner.addWeapon(dyedWeapon, finalCount, false, false);
-							Main.game.addEvent(new EventLogEntry("Dyed", dyedWeapon.getDisplayName(true)), false);
+							Main.game.addEvent(new EventLogEntry("Окрашено", dyedWeapon.getDisplayName(true)), false);
 
 						} else {
 							Main.game.getPlayerCell().getInventory().removeWeapon(weapon, finalCount);
 							AbstractWeapon dyedWeapon = Main.game.getItemGen().generateWeapon(weapon);
 							dyedWeapon.setColours(dyePreviews);
 							Main.game.getPlayerCell().getInventory().addWeapon(dyedWeapon, finalCount);
-							Main.game.addEvent(new EventLogEntry("Dyed", dyedWeapon.getDisplayName(true)), false);
+							Main.game.addEvent(new EventLogEntry("Окрашено", dyedWeapon.getDisplayName(true)), false);
 						}
 					}
 				};
 
 			} else if (index == 7) {
 				if(damageTypePreview == weapon.getDamageType()) {
-					return new Response("Reforge all (stack)",
-							"You need to choose a different damage type before being able to reforge the " + weapon.getName() + "!",
+					return new Response("Перековать всё (стопкой)",
+							"Вам нужно выбрать другой тип урона, прежде чем вы сможете перековать " + weapon.getName() + "!",
 							null); 
 				}
 				
@@ -7900,8 +7792,8 @@ public class InventoryDialogue {
 				int finalCount = stackCount;
 				
 				if(stackCount==1) {
-					return new Response("Reforge all (stack)",
-							"You only have one "+weapon.getName()+", so you should reforge it using the individual action...",
+					return new Response("Перековать всё (стопкой)",
+							"У вас есть всего лишь одна "+weapon.getName()+", так что тебе стоит перековывать их по отдельности...",
 							null); 
 				}
 				
@@ -7909,17 +7801,17 @@ public class InventoryDialogue {
 					int reforgeHammerCount = Main.game.getPlayer().getItemCount(Main.game.getItemGen().generateItem(ItemType.REFORGE_HAMMER));
 					
 					if(reforgeHammerCount<stackCount) {
-						return new Response("Reforge all (stack)",
-								"You do not have enough reforging hammers to reforge all of the " + weapon.getNamePlural() + "! You have "+reforgeHammerCount+" reforging hammers, but there are "+stackCount+" "+weapon.getNamePlural()+" in this stack...",
+						return new Response("Перековать всё (стопкой)",
+								"У тебя недостаточно молотов для перековки, чтобы перековать все " + weapon.getNamePlural() + "! У вас есть "+reforgeHammerCount+" молоты, но есть "+stackCount+" "+weapon.getNamePlural()+" штук...",
 								null); 
 					}
 				}
 				
-				return new Response("Reforge all (stack)",
-						"Reforge all " + weapon.getNamePlural() + " which are in this weapon stack ("+stackCount+" in total) into the damage type you have chosen."
+				return new Response("Перековать всё (стопкой)",
+						"Перековать всё " + weapon.getNamePlural() + " которые находятся в этой стопке оружия ("+stackCount+" всего) в выбранный тобой тип урона."
 								+ (Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
-										?" This action is permanent, but thanks to your proficiency with [style.boldEarth(Earth spells)], you can reforge them at any time."
-										:" This action is permanent, and you'll need another reforging hammer if you want to change their damage type again."),
+										?" Это действие необратимо, но благодаря твоему мастерству в [style.boldEarth(заклинаниях земли)], ты можешь перековывать их в любое время."
+										:" Это действие необратимо, и если вы захотите снова изменить тип урона, вам понадобится еще один молот для перековки."),
 						INVENTORY_MENU) {
 					@Override
 					public void effects(){
@@ -7928,29 +7820,24 @@ public class InventoryDialogue {
 							Main.game.getTextEndStringBuilder().append(
 									"<p style='text-align:center;'>"
 										+ getReforgeHammerEffects(weapon, damageTypePreview)
-									+ "</p>"
-									+ "<p>"
-									+ "<b>The "+weapon.getName()+(weapon.getWeaponType().isPlural()?"have":"has")+" been reforged</b>!"
-									+ "</p>");
+									+ "</p><p><b>Того "+weapon.getName()+(weapon.getWeaponType().isPlural()?"имеют":"имеет")+" было перековано</b>!</p>");
 							
-							Main.game.getTextEndStringBuilder().append("<p>You then repeat this for the other "+Util.intToString(finalCount-1)+" "+weapon.getNamePlural()+"...</p>");
+							Main.game.getTextEndStringBuilder().append("<p>Затем вы повторяете это для остальных "+Util.intToString(finalCount-1)+" "+weapon.getNamePlural()+"...</p>");
 							
 							Main.game.getTextEndStringBuilder().append("<p>"
 										+ (Main.game.getPlayer().hasItemType(ItemType.REFORGE_HAMMER) || Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
-												?"You have <b>" + Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.REFORGE_HAMMER))
-														+ "</b> reforging hammer" + (Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.REFORGE_HAMMER)) == 1 ? "" : "s") + " left!"
-												:"You have <b>0</b> reforging hammers left!")
+												?"У вас осталось <b>" + Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.REFORGE_HAMMER))
+														+ "</b> молот для перековки" + (Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.REFORGE_HAMMER)) == 1 ? "" : "s") + " слева!"
+												:"У вас осталось <b>0</b> молотов для перековки!")
 									+ "</p>");
 							
 						} else {
 							Main.game.getTextEndStringBuilder().append(
-									"<p>"
-											+ "Thanks to your proficiency with [style.boldEarth(Earth spells)], you are able to reforge "
+									"<p>Благодаря вашему мастерству в [style.boldEarth(заклинаниях земли)], вы способны перековывать "
 												+ (finalCount==2
-													?"both"
-													:"all "+Util.intToString(finalCount))
-												+" of the " + weapon.getNamePlural() + " without needing to use a single reforging hammer!"
-										+ "</p>");
+													?"оба"
+													:"все "+Util.intToString(finalCount))
+												+" из " + weapon.getNamePlural() + " не используя ни единого молота для перековки!</p>");
 						}
 						
 						if(owner!=null) {
@@ -7959,7 +7846,7 @@ public class InventoryDialogue {
 							modifiedWeapon.setDamageType(damageTypePreview);
 							// For some reason, if you add the modifiedWeapon directly, it won't stack with other identical weapons... Have to generateWeapon(modifiedWeapon) again to get it to start stacking properly:
 							owner.addWeapon(Main.game.getItemGen().generateWeapon(modifiedWeapon), finalCount, false, false);
-							Main.game.addEvent(new EventLogEntry("Reforged", modifiedWeapon.getDisplayName(true)), false);
+							Main.game.addEvent(new EventLogEntry("Перековано", modifiedWeapon.getDisplayName(true)), false);
 
 						} else {
 							Main.game.getPlayerCell().getInventory().removeWeapon(weapon, finalCount);
@@ -7967,21 +7854,21 @@ public class InventoryDialogue {
 							modifiedWeapon.setDamageType(damageTypePreview);
 							// For some reason, if you add the modifiedWeapon directly, it won't stack with other identical weapons... Have to generateWeapon(modifiedWeapon) again to get it to start stacking properly:
 							Main.game.getPlayerCell().getInventory().addWeapon(Main.game.getItemGen().generateWeapon(modifiedWeapon), finalCount);
-							Main.game.addEvent(new EventLogEntry("Reforged", modifiedWeapon.getDisplayName(true)), false);
+							Main.game.addEvent(new EventLogEntry("Перековано", modifiedWeapon.getDisplayName(true)), false);
 						}
 					}
 				};
 
 			} else if (index == 8) {
 				if(damageTypePreview == weapon.getDamageType()) {
-					return new Response("Dye & reforge all (stack)",
-							"You need to choose a different damage type before being able to reforge the " + weapon.getName() + "!",
+					return new Response("Покрасить и перековать всё (стопкой)",
+							"Вам нужно выбрать другой тип урона, прежде чем вы сможете перековать " + weapon.getName() + "!",
 							null); 
 				}
 				
 				if(dyePreviews.equals(weapon.getColours())) {
-					return new Response("Dye & reforge all (stack)",
-							"You need to choose different colours before being able to dye the " + weapon.getName() + "!",
+					return new Response("Покрасить и перековать всё (стопкой)",
+							"Сначала нужно выбрать другие цвета, прежде чем вы сможете покрасить " + weapon.getName() + "!",
 							null); 
 				}
 				
@@ -7996,8 +7883,8 @@ public class InventoryDialogue {
 				int finalCount = stackCount;
 				
 				if(stackCount==1) {
-					return new Response("Dye & reforge all (stack)",
-							"You only have one "+weapon.getName()+", so you should dye & reforge it using the individual action...",
+					return new Response("Покрасить и перековать всё (стопкой)",
+							"У вас есть всего лишь одна "+weapon.getName()+", так что вам стоит покрасить и перековать его, используя отдельное действие...",
 							null); 
 				}
 				
@@ -8006,17 +7893,17 @@ public class InventoryDialogue {
 					int reforgeHammerCount = Main.game.getPlayer().getItemCount(Main.game.getItemGen().generateItem(ItemType.REFORGE_HAMMER));
 					
 					if(dyeBrushCount<stackCount || reforgeHammerCount<stackCount) {
-						return new Response("Dye & reforge all (stack)",
-								"You do not have enough dye brushes or reforge hammers to dye & reforge all "+stackCount+" "+weapon.getNamePlural()+" in this stack...",
+						return new Response("Покрасить и перековать всё (стопкой)",
+								"У вас недостаточно кистей для окрашивания или молотов для перековки, чтобы покрасить и перековать все "+stackCount+" "+weapon.getNamePlural()+" штук...",
 								null); 
 					}
 				}
 				
-				return new Response("Dye & reforge all (stack)",
-						"Dye & reforge all " + weapon.getNamePlural() + " which are in this weapon stack ("+stackCount+" in total) in the colours and damage type you have chosen."
+				return new Response("Покрасить и перековать всё (стопкой)",
+						"Покрасить и перековать всё " + weapon.getNamePlural() + " которые находятся в этой стопке оружия ("+stackCount+" ) целиком в выбранных вами цветах и типах урона."
 								+ (Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
-										?" This action is permanent, but thanks to your proficiency with [style.boldEarth(Earth spells)], you can do this at any time."
-										:" This action is permanent, and you'll need another dye-brush and reforging hammer if you want to do this again."),
+										?" Это действие необратимо, но благодаря вашему мастерству в [style.boldEarth(заклинаниях земли)], вы можете делать это в любое время."
+										:" Это действие необратимо, и если вы захотите повторить его снова, вам понадобятся еще одна кисть для окрашивания и молот для перековки."),
 						INVENTORY_MENU) {
 					@Override
 					public void effects(){
@@ -8029,36 +7916,31 @@ public class InventoryDialogue {
 									+ "</p>"
 									+ "<p style='text-align:center;'>"
 										+ getReforgeHammerEffects(weapon, damageTypePreview)
-									+ "</p>"
-									+ "<p>"
-									+ "<b>The "+weapon.getName()+(weapon.getWeaponType().isPlural()?"have":"has")+" been dyed and reforged</b>!"
-									+ "</p>");
+									+ "</p><p><b>Того "+weapon.getName()+(weapon.getWeaponType().isPlural()?"имеют":"имеет")+" были окрашены и перекованы</b>!</p>");
 							
-							Main.game.getTextEndStringBuilder().append("<p>You then repeat this for the other "+Util.intToString(finalCount-1)+" "+weapon.getNamePlural()+"...</p>");
+							Main.game.getTextEndStringBuilder().append("<p>Затем вы повторяете это для остальных "+Util.intToString(finalCount-1)+" "+weapon.getNamePlural()+"...</p>");
 							
 							Main.game.getTextEndStringBuilder().append("<p>"
 										+ (Main.game.getPlayer().hasItemType(ItemType.DYE_BRUSH)
-												?"You have <b>" + Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH))
-														+ "</b> dye-brush" + (Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH)) == 1 ? "" : "es") + " left!"
-												:"You have <b>0</b> dye-brushes left!")
+												?"У вас осталось <b>" + Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH))
+														+ "</b> кистей для окрашивания" + (Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH)) == 1 ? "" : "шт.") + " слева!"
+												:"У вас осталось <b>0</b> кистей для окрашивания!")
 									+ "</p>");
 
 							Main.game.getTextEndStringBuilder().append("<p>"
 										+ (Main.game.getPlayer().hasItemType(ItemType.REFORGE_HAMMER)
-												?"You have <b>" + Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.REFORGE_HAMMER))
-														+ "</b> reforging hammer" + (Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.REFORGE_HAMMER)) == 1 ? "" : "s") + " left!"
-												:"You have <b>0</b> reforging hammers left!")
+												?"У вас осталось <b>" + Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.REFORGE_HAMMER))
+														+ "</b> молот для перековки" + (Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.REFORGE_HAMMER)) == 1 ? "" : "s") + " слева!"
+												:"У вас осталось <b>0</b> молотов для перековки!")
 									+ "</p>");
 							
 						} else {
 							Main.game.getTextEndStringBuilder().append(
-									"<p>"
-											+ "Thanks to your proficiency with [style.boldEarth(Earth spells)], you are able to dye "
+									"<p>Благодаря вашему мастерству в [style.boldEarth(заклинаниях земли)], вы способны окрашивать "
 												+ (finalCount==2
-													?"both"
-													:"all "+Util.intToString(finalCount))
-												+" of the " + weapon.getNamePlural() + " without needing to use a single dye-brush or reforging hammer!"
-										+ "</p>");
+													?"оба"
+													:"все "+Util.intToString(finalCount))
+												+" из " + weapon.getNamePlural() + " без использования ни одной кисти для окрашивания или молота для перековки!</p>");
 						}
 						
 						if(owner!=null) {
@@ -8068,7 +7950,7 @@ public class InventoryDialogue {
 							modifiedWeapon.setColours(dyePreviews);
 							// For some reason, if you add the modifiedWeapon directly, it won't stack with other identical weapons... Have to generateWeapon(modifiedWeapon) again to get it to start stacking properly:
 							owner.addWeapon(Main.game.getItemGen().generateWeapon(modifiedWeapon), finalCount, false, false);
-							Main.game.addEvent(new EventLogEntry("Dyed & Reforged", modifiedWeapon.getDisplayName(true)), false);
+							Main.game.addEvent(new EventLogEntry("Покрашено и перековано", modifiedWeapon.getDisplayName(true)), false);
 
 						} else {
 							Main.game.getPlayerCell().getInventory().removeWeapon(weapon, finalCount);
@@ -8077,15 +7959,15 @@ public class InventoryDialogue {
 							modifiedWeapon.setColours(dyePreviews);
 							// For some reason, if you add the modifiedWeapon directly, it won't stack with other identical weapons... Have to generateWeapon(modifiedWeapon) again to get it to start stacking properly:
 							Main.game.getPlayerCell().getInventory().addWeapon(Main.game.getItemGen().generateWeapon(modifiedWeapon), finalCount);
-							Main.game.addEvent(new EventLogEntry("Dyed & Reforged", modifiedWeapon.getDisplayName(true)), false);
+							Main.game.addEvent(new EventLogEntry("Покрашено и перековано", modifiedWeapon.getDisplayName(true)), false);
 						}
 					}
 				};
 
 			} else if (index == 11) {
 				if(dyePreviews.equals(weapon.getColours())) {
-					return new Response("Dye all",
-							"You need to choose different colours before being able to dye the " + weapon.getName() + "!",
+					return new Response("Покрасить все",
+							"Сначала нужно выбрать другие цвета, прежде чем вы сможете покрасить " + weapon.getName() + "!",
 							null); 
 				}
 				
@@ -8110,8 +7992,8 @@ public class InventoryDialogue {
 				int finalCount = stackCount;
 				
 				if(stackCount==1) {
-					return new Response("Dye all",
-							"You only have one "+weapon.getName()+", so you should dye it using the individual action...",
+					return new Response("Покрасить все",
+							"У вас есть всего лишь одна "+weapon.getName()+", поэтому вам следует покрасить её, используя отдельное действие...",
 							null); 
 				}
 				
@@ -8119,17 +8001,17 @@ public class InventoryDialogue {
 					int dyeBrushCount = Main.game.getPlayer().getItemCount(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH));
 					
 					if(dyeBrushCount<stackCount) {
-						return new Response("Dye all",
-								"You do not have enough dye brushes to dye all the " + weapon.getNamePlural() + "! You have "+dyeBrushCount+" dye brushes, but there are "+stackCount+" "+weapon.getNamePlural()+" in total...",
+						return new Response("Покрасить все",
+								"Вам не хватает кистей для окрашивания, чтобы покрасить все " + weapon.getNamePlural() + "! У вас есть "+dyeBrushCount+" кистей, но в этой стопке находится "+stackCount+" "+weapon.getNamePlural()+" всего...",
 								null); 
 					}
 				}
 				
-				return new Response("Dye all",
-						"Dye all " + weapon.getNamePlural() + " which are in this weapon stack ("+stackCount+" in total) in the colours you have chosen."
+				return new Response("Покрасить все",
+						"Покрасить все " + weapon.getNamePlural() + " которые находятся в этой стопке оружия ("+stackCount+" всего) в выбранные вами цвета."
 								+ (Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
-										?" This action is permanent, but thanks to your proficiency with [style.boldEarth(Earth spells)], you can dye them a different colour at any time."
-										:" This action is permanent, and you'll need another dye-brush if you want to change their colour again."),
+										?" Это действие необратимо, но благодаря вашему мастерству в [style.boldEarth(заклинаниях Земли)], вы сможете перекрасить их в другой цвет в любое время."
+										:" Это действие необратимо, и если вы захотите снова изменить их цвет, вам понадобится новая кисть для окрашивания."),
 						INVENTORY_MENU) {
 					@Override
 					public void effects(){
@@ -8138,29 +8020,24 @@ public class InventoryDialogue {
 							Main.game.getTextEndStringBuilder().append(
 									"<p style='text-align:center;'>"
 										+ getDyeBrushEffects(weapon, dyePreviews.get(0))
-									+ "</p>"
-									+ "<p>"
-									+ "<b>The "+weapon.getName()+(weapon.getWeaponType().isPlural()?"have":"has")+" been dyed</b>!"
-									+ "</p>");
+									+ "</p><p><b>Того "+weapon.getName()+(weapon.getWeaponType().isPlural()?"имеют":"имеет")+" были окрашены</b>!</p>");
 							
-							Main.game.getTextEndStringBuilder().append("<p>You then repeat this for the other "+Util.intToString(finalCount-1)+" "+weapon.getNamePlural()+"...</p>");
+							Main.game.getTextEndStringBuilder().append("<p>Затем вы повторяете это для остальных "+Util.intToString(finalCount-1)+" "+weapon.getNamePlural()+"...</p>");
 							
 							Main.game.getTextEndStringBuilder().append("<p>"
 										+ (isClothingDyeActionAvailable()
-												?"You have <b>" + Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH))
-														+ "</b> dye-brush" + (Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH)) == 1 ? "" : "es") + " left!"
-												:"You have <b>0</b> dye-brushes left!")
+												?"У вас осталось <b>" + Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH))
+														+ "</b> кистей для окрашивания" + (Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH)) == 1 ? "" : "шт.") + " слева!"
+												:"У вас осталось <b>0</b> кистей для окрашивания!")
 									+ "</p>");
 							
 						} else {
 							Main.game.getTextEndStringBuilder().append(
-									"<p>"
-											+ "Thanks to your proficiency with [style.boldEarth(Earth spells)], you are able to dye "
+									"<p>Благодаря вашему мастерству в [style.boldEarth(заклинаниях земли)], вы способны окрашивать "
 												+ (finalCount==2
-													?"both"
-													:"all "+Util.intToString(finalCount))
-												+" of the " + weapon.getNamePlural() + " without needing to use a single dye-brush!"
-										+ "</p>");
+													?"оба"
+													:"все "+Util.intToString(finalCount))
+												+" из " + weapon.getNamePlural() + " без использования ни одной кисти для окрашивания!</p>");
 						}
 						
 
@@ -8171,7 +8048,7 @@ public class InventoryDialogue {
 								AbstractWeapon dyedWeapon = Main.game.getItemGen().generateWeapon(w);
 								dyedWeapon.setColours(dyePreviews);
 								owner.addWeapon(dyedWeapon, weaponCount, false, false);
-								Main.game.addEvent(new EventLogEntry("Dyed", dyedWeapon.getDisplayName(true)), false);
+								Main.game.addEvent(new EventLogEntry("Окрашено", dyedWeapon.getDisplayName(true)), false);
 							}
 							
 						} else {
@@ -8181,7 +8058,7 @@ public class InventoryDialogue {
 								AbstractWeapon dyedWeapon = Main.game.getItemGen().generateWeapon(w);
 								dyedWeapon.setColours(dyePreviews);
 								Main.game.getPlayerCell().getInventory().addWeapon(dyedWeapon, weaponCount);
-								Main.game.addEvent(new EventLogEntry("Dyed", dyedWeapon.getDisplayName(true)), false);
+								Main.game.addEvent(new EventLogEntry("Окрашено", dyedWeapon.getDisplayName(true)), false);
 							}
 						}
 					}
@@ -8189,8 +8066,8 @@ public class InventoryDialogue {
 
 			} else if (index == 12) {
 				if(damageTypePreview == weapon.getDamageType()) {
-					return new Response("Reforge all",
-							"You need to choose a different damage type before being able to reforge the " + weapon.getName() + "!",
+					return new Response("Перековать всё",
+							"Вам нужно выбрать другой тип урона, прежде чем вы сможете перековать " + weapon.getName() + "!",
 							null); 
 				}
 				
@@ -8215,8 +8092,8 @@ public class InventoryDialogue {
 				int finalCount = stackCount;
 				
 				if(stackCount==1) {
-					return new Response("Reforge all",
-							"You only have one "+weapon.getName()+", so you should reforge it using the individual action...",
+					return new Response("Перековать всё",
+							"У вас есть всего лишь одна "+weapon.getName()+", так что тебе стоит перековывать их по отдельности...",
 							null); 
 				}
 				
@@ -8224,17 +8101,17 @@ public class InventoryDialogue {
 					int reforgeHammerCount = Main.game.getPlayer().getItemCount(Main.game.getItemGen().generateItem(ItemType.REFORGE_HAMMER));
 					
 					if(reforgeHammerCount<stackCount) {
-						return new Response("Reforge all",
-								"You do not have enough reforging hammers to reforge all of the " + weapon.getNamePlural() + "! You have "+reforgeHammerCount+" reforging hammers, but there are "+stackCount+" "+weapon.getNamePlural()+" in total...",
+						return new Response("Перековать всё",
+								"У тебя недостаточно молотов для перековки, чтобы перековать все " + weapon.getNamePlural() + "! У вас есть "+reforgeHammerCount+" молоты, но есть "+stackCount+" "+weapon.getNamePlural()+" всего...",
 								null); 
 					}
 				}
 				
-				return new Response("Reforge all",
-						"Reforge all " + weapon.getNamePlural() + " which are in this weapon stack ("+stackCount+" in total) into the damage type you have chosen."
+				return new Response("Перековать всё",
+						"Перековать всё " + weapon.getNamePlural() + " которые находятся в этой стопке оружия ("+stackCount+" всего) в выбранный тобой тип урона."
 								+ (Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
-										?" This action is permanent, but thanks to your proficiency with [style.boldEarth(Earth spells)], you can reforge them at any time."
-										:" This action is permanent, and you'll need another reforging hammer if you want to change their damage type again."),
+										?" Это действие необратимо, но благодаря твоему мастерству в [style.boldEarth(заклинаниях земли)], ты можешь перековывать их в любое время."
+										:" Это действие необратимо, и если вы захотите снова изменить тип урона, вам понадобится еще один молот для перековки."),
 						INVENTORY_MENU) {
 					@Override
 					public void effects(){
@@ -8243,29 +8120,24 @@ public class InventoryDialogue {
 							Main.game.getTextEndStringBuilder().append(
 									"<p style='text-align:center;'>"
 										+ getReforgeHammerEffects(weapon, damageTypePreview)
-									+ "</p>"
-									+ "<p>"
-									+ "<b>The "+weapon.getName()+(weapon.getWeaponType().isPlural()?"have":"has")+" been reforged</b>!"
-									+ "</p>");
+									+ "</p><p><b>Того "+weapon.getName()+(weapon.getWeaponType().isPlural()?"имеют":"имеет")+" было перековано</b>!</p>");
 							
-							Main.game.getTextEndStringBuilder().append("<p>You then repeat this for the other "+Util.intToString(finalCount-1)+" "+weapon.getNamePlural()+"...</p>");
+							Main.game.getTextEndStringBuilder().append("<p>Затем вы повторяете это для остальных "+Util.intToString(finalCount-1)+" "+weapon.getNamePlural()+"...</p>");
 							
 							Main.game.getTextEndStringBuilder().append("<p>"
 										+ (Main.game.getPlayer().hasItemType(ItemType.REFORGE_HAMMER) || Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
-												?"You have <b>" + Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.REFORGE_HAMMER))
-														+ "</b> reforging hammer" + (Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.REFORGE_HAMMER)) == 1 ? "" : "s") + " left!"
-												:"You have <b>0</b> reforging hammers left!")
+												?"У вас осталось <b>" + Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.REFORGE_HAMMER))
+														+ "</b> молот для перековки" + (Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.REFORGE_HAMMER)) == 1 ? "" : "s") + " слева!"
+												:"У вас осталось <b>0</b> молотов для перековки!")
 									+ "</p>");
 							
 						} else {
 							Main.game.getTextEndStringBuilder().append(
-									"<p>"
-											+ "Thanks to your proficiency with [style.boldEarth(Earth spells)], you are able to reforge "
+									"<p>Благодаря вашему мастерству в [style.boldEarth(заклинаниях земли)], вы способны перековывать "
 												+ (finalCount==2
-													?"both"
-													:"all "+Util.intToString(finalCount))
-												+" of the " + weapon.getNamePlural() + " without needing to use a single reforging hammer!"
-										+ "</p>");
+													?"оба"
+													:"все "+Util.intToString(finalCount))
+												+" из " + weapon.getNamePlural() + " не используя ни единого молота для перековки!</p>");
 						}
 
 						if(owner!=null) {
@@ -8276,7 +8148,7 @@ public class InventoryDialogue {
 								modifiedWeapon.setDamageType(damageTypePreview);
 								// For some reason, if you add the modifiedWeapon directly, it won't stack with other identical weapons... Have to generateWeapon(modifiedWeapon) again to get it to start stacking properly:
 								owner.addWeapon(Main.game.getItemGen().generateWeapon(modifiedWeapon), weaponCount, false, false);
-								Main.game.addEvent(new EventLogEntry("Reforged", modifiedWeapon.getDisplayName(true)), false);
+								Main.game.addEvent(new EventLogEntry("Перековано", modifiedWeapon.getDisplayName(true)), false);
 							}
 
 						} else {
@@ -8287,7 +8159,7 @@ public class InventoryDialogue {
 								modifiedWeapon.setDamageType(damageTypePreview);
 								// For some reason, if you add the modifiedWeapon directly, it won't stack with other identical weapons... Have to generateWeapon(modifiedWeapon) again to get it to start stacking properly:
 								Main.game.getPlayerCell().getInventory().addWeapon(Main.game.getItemGen().generateWeapon(modifiedWeapon), weaponCount);
-								Main.game.addEvent(new EventLogEntry("Reforged", modifiedWeapon.getDisplayName(true)), false);
+								Main.game.addEvent(new EventLogEntry("Перековано", modifiedWeapon.getDisplayName(true)), false);
 							}
 						}
 					}
@@ -8295,14 +8167,14 @@ public class InventoryDialogue {
 
 			} else if (index == 13) {
 				if(damageTypePreview == weapon.getDamageType()) {
-					return new Response("Dye & reforge all",
-							"You need to choose a different damage type before being able to reforge the " + weapon.getName() + "!",
+					return new Response("Покрасить и перековать всё",
+							"Вам нужно выбрать другой тип урона, прежде чем вы сможете перековать " + weapon.getName() + "!",
 							null); 
 				}
 				
 				if(dyePreviews.equals(weapon.getColours())) {
-					return new Response("Dye & reforge all",
-							"You need to choose different colours before being able to dye the " + weapon.getName() + "!",
+					return new Response("Покрасить и перековать всё",
+							"Сначала нужно выбрать другие цвета, прежде чем вы сможете покрасить " + weapon.getName() + "!",
 							null); 
 				}
 				
@@ -8327,8 +8199,8 @@ public class InventoryDialogue {
 				int finalCount = stackCount;
 				
 				if(stackCount==1) {
-					return new Response("Dye & reforge all",
-							"You only have one "+weapon.getName()+", so you should dye & reforge it using the individual action...",
+					return new Response("Покрасить и перековать всё",
+							"У вас есть всего лишь одна "+weapon.getName()+", так что вам стоит покрасить и перековать его, используя отдельное действие...",
 							null); 
 				}
 				
@@ -8337,17 +8209,17 @@ public class InventoryDialogue {
 					int reforgeHammerCount = Main.game.getPlayer().getItemCount(Main.game.getItemGen().generateItem(ItemType.REFORGE_HAMMER));
 					
 					if(dyeBrushCount<stackCount || reforgeHammerCount<stackCount) {
-						return new Response("Dye & reforge all",
-								"You do not have enough dye brushes or reforge hammers to dye & reforge all "+stackCount+" "+weapon.getNamePlural()+" in this stack...",
+						return new Response("Покрасить и перековать всё",
+								"У вас недостаточно кистей для окрашивания или молотов для перековки, чтобы покрасить и перековать все "+stackCount+" "+weapon.getNamePlural()+" штук...",
 								null); 
 					}
 				}
 				
-				return new Response("Dye & reforge all",
-						"Dye & reforge all " + weapon.getNamePlural() + " which are in this weapon stack ("+stackCount+" in total) in the colours and damage type you have chosen."
+				return new Response("Покрасить и перековать всё",
+						"Покрасить и перековать всё " + weapon.getNamePlural() + " которые находятся в этой стопке оружия ("+stackCount+" ) целиком в выбранных вами цветах и типах урона."
 								+ (Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
-										?" This action is permanent, but thanks to your proficiency with [style.boldEarth(Earth spells)], you can do this at any time."
-										:" This action is permanent, and you'll need another dye-brush and reforging hammer if you want to do this again."),
+										?" Это действие необратимо, но благодаря вашему мастерству в [style.boldEarth(заклинаниях земли)], вы можете делать это в любое время."
+										:" Это действие необратимо, и если вы захотите повторить его снова, вам понадобятся еще одна кисть для окрашивания и молот для перековки."),
 						INVENTORY_MENU) {
 					@Override
 					public void effects(){
@@ -8359,36 +8231,31 @@ public class InventoryDialogue {
 									+ "</p>"
 									+ "<p style='text-align:center;'>"
 										+ getReforgeHammerEffects(weapon, damageTypePreview)
-									+ "</p>"
-									+ "<p>"
-									+ "<b>The "+weapon.getName()+(weapon.getWeaponType().isPlural()?"have":"has")+" been dyed and reforged</b>!"
-									+ "</p>");
+									+ "</p><p><b>Того "+weapon.getName()+(weapon.getWeaponType().isPlural()?"имеют":"имеет")+" были окрашены и перекованы</b>!</p>");
 							
-							Main.game.getTextEndStringBuilder().append("<p>You then repeat this for the other "+Util.intToString(finalCount-1)+" "+weapon.getNamePlural()+"...</p>");
+							Main.game.getTextEndStringBuilder().append("<p>Затем вы повторяете это для остальных "+Util.intToString(finalCount-1)+" "+weapon.getNamePlural()+"...</p>");
 							
 							Main.game.getTextEndStringBuilder().append("<p>"
 										+ (Main.game.getPlayer().hasItemType(ItemType.DYE_BRUSH)
-												?"You have <b>" + Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH))
-														+ "</b> dye-brush" + (Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH)) == 1 ? "" : "es") + " left!"
-												:"You have <b>0</b> dye-brushes left!")
+												?"У вас осталось <b>" + Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH))
+														+ "</b> кистей для окрашивания" + (Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH)) == 1 ? "" : "шт.") + " слева!"
+												:"У вас осталось <b>0</b> кистей для окрашивания!")
 									+ "</p>");
 
 							Main.game.getTextEndStringBuilder().append("<p>"
 										+ (Main.game.getPlayer().hasItemType(ItemType.REFORGE_HAMMER)
-												?"You have <b>" + Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.REFORGE_HAMMER))
-														+ "</b> reforging hammer" + (Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.REFORGE_HAMMER)) == 1 ? "" : "s") + " left!"
-												:"You have <b>0</b> reforging hammers left!")
+												?"У вас осталось <b>" + Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.REFORGE_HAMMER))
+														+ "</b> молот для перековки" + (Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.REFORGE_HAMMER)) == 1 ? "" : "s") + " слева!"
+												:"У вас осталось <b>0</b> молотов для перековки!")
 									+ "</p>");
 							
 						} else {
 							Main.game.getTextEndStringBuilder().append(
-									"<p>"
-											+ "Thanks to your proficiency with [style.boldEarth(Earth spells)], you are able to dye and reforge "
+									"<p>Благодаря вашему мастерству в [style.boldEarth(заклинаниях земли)], вы способны окрашивать и перековывать "
 												+ (finalCount==2
-													?"both"
-													:"all "+Util.intToString(finalCount))
-												+" of the " + weapon.getNamePlural() + " without needing to use a single dye-brush or reforging hammer!"
-										+ "</p>");
+													?"оба"
+													:"все "+Util.intToString(finalCount))
+												+" из " + weapon.getNamePlural() + " без использования ни одной кисти для окрашивания или молота для перековки!</p>");
 						}
 						
 						if(owner!=null) {
@@ -8400,7 +8267,7 @@ public class InventoryDialogue {
 								modifiedWeapon.setColours(dyePreviews);
 								// For some reason, if you add the modifiedWeapon directly, it won't stack with other identical weapons... Have to generateWeapon(modifiedWeapon) again to get it to start stacking properly:
 								owner.addWeapon(Main.game.getItemGen().generateWeapon(modifiedWeapon), weaponCount, false, false);
-								Main.game.addEvent(new EventLogEntry("Dyed & Reforged", modifiedWeapon.getDisplayName(true)), false);
+								Main.game.addEvent(new EventLogEntry("Покрашено и перековано", modifiedWeapon.getDisplayName(true)), false);
 							}
 							
 						} else {
@@ -8412,7 +8279,7 @@ public class InventoryDialogue {
 								modifiedWeapon.setColours(dyePreviews);
 								// For some reason, if you add the modifiedWeapon directly, it won't stack with other identical weapons... Have to generateWeapon(modifiedWeapon) again to get it to start stacking properly:
 								Main.game.getPlayerCell().getInventory().addWeapon(Main.game.getItemGen().generateWeapon(modifiedWeapon), weaponCount);
-								Main.game.addEvent(new EventLogEntry("Dyed & Reforged", modifiedWeapon.getDisplayName(true)), false);
+								Main.game.addEvent(new EventLogEntry("Покрашено и перековано", modifiedWeapon.getDisplayName(true)), false);
 							}
 						}
 					}
@@ -8429,7 +8296,7 @@ public class InventoryDialogue {
 		}
 	};
 
-	public static final DialogueNode DYE_EQUIPPED_WEAPON = new DialogueNode("Dye Weapon", "", true) {
+	public static final DialogueNode DYE_EQUIPPED_WEAPON = new DialogueNode("Покрасить оружие", "", true) {
 
 		@Override
 		public String getContent() {
@@ -8439,28 +8306,28 @@ public class InventoryDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 0) {
-				return new Response("Back", "Return to the previous menu.", INVENTORY_MENU);
+				return new Response("Назад", "Вернуться в предыдущее меню.", INVENTORY_MENU);
 
 			} else if (index == 1) {
 				if (!Main.game.getPlayer().hasItemType(ItemType.DYE_BRUSH)
 						&& !Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
 						&& !Main.game.isDebugMode()) {
-					return new Response("Dye",
-							"You do not have a dye-brush, so cannot change the colours of the " + weapon.getName() + "...",
+					return new Response("Краситель",
+							"У вас нет кисти для красок, поэтому вы не можете изменить цвета " + weapon.getName() + "...",
 							null); 
 				}
 				
 				if(dyePreviews.equals(weapon.getColours())) {
-					return new Response("Dye",
-							"You need to choose different colours before being able to dye the " + weapon.getName() + "!",
+					return new Response("Краситель",
+							"Сначала нужно выбрать другие цвета, прежде чем вы сможете покрасить " + weapon.getName() + "!",
 							null); 
 				}
 				
-				return new Response("Dye",
-						"Dye the " + weapon.getName() + " in the colours you have chosen."
+				return new Response("Краситель",
+						"Покрасить " + weapon.getName() + " в выбранные вами цвета."
 								+ (Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
-										?" This action is permanent, but thanks to your proficiency with [style.boldEarth(Earth spells)], you can dye it a different colour at any time."
-										:" This action is permanent, and you'll need another dye-brush if you want to change its colour again."),
+										?" Это действие необратимо, но благодаря вашему мастерству в [style.boldEarth(заклинаниях земли)], вы сможете перекрасить предмет в любой другой цвет в любое время."
+										:" Это действие необратимо, и если вы захотите изменить цвет снова, вам понадобится новая кисть для окрашивания."),
 						INVENTORY_MENU){
 					@Override
 					public void effects(){
@@ -8469,22 +8336,16 @@ public class InventoryDialogue {
 							Main.game.getTextEndStringBuilder().append(
 									"<p style='text-align:center;'>"
 										+ getDyeBrushEffects(weapon, dyePreviews.get(0))
-									+ "</p>"
-									+ "<p>"
-										+ "<b>The " + weapon.getName() + " " + (weapon.getWeaponType().isPlural() ? "have been" : "has been") + " dyed</b>!"
-									+ "</p>"
-									+ "<p>"
+									+ "</p><p><b>Того " + weapon.getName() + " " + (weapon.getWeaponType().isPlural() ? "были" : "был") + " окрашены</b>!</p><p>"
 										+ (isClothingDyeActionAvailable()
-												?"You have <b>" + Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH))
-														+ "</b> dye-brush" + (Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH)) == 1 ? "" : "es") + " left!"
-												:"You have <b>0</b> dye-brushes left!")
+												?"У вас осталось <b>" + Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH))
+														+ "</b> кистей для окрашивания" + (Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH)) == 1 ? "" : "шт.") + " слева!"
+												:"У вас осталось <b>0</b> кистей для окрашивания!")
 									+ "</p>");
 							
 						} else {
 							Main.game.getTextEndStringBuilder().append(
-									"<p>"
-											+ "Thanks to your proficiency with [style.boldEarth(Earth spells)], you are able to dye the " + weapon.getName() + " without needing to use a dye-brush!"
-										+ "</p>");
+									"<p>Благодаря вашему мастерству владения [style.boldEarth(заклинаниями земли)], вы можете окрашивать " + weapon.getName() + " без использования кисти!</p>");
 						}
 						
 						
@@ -8506,7 +8367,7 @@ public class InventoryDialogue {
 
 //						weapon.setPrimaryColour(dyePreviewPrimary);
 //						weapon.setSecondaryColour(dyePreviewSecondary);
-						Main.game.addEvent(new EventLogEntry("Dyed", weapon.getDisplayName(true)), false);
+						Main.game.addEvent(new EventLogEntry("Окрашено", weapon.getDisplayName(true)), false);
 					}
 				};
 
@@ -8514,22 +8375,22 @@ public class InventoryDialogue {
 				if (!Main.game.getPlayer().hasItemType(ItemType.REFORGE_HAMMER)
 						&& !Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
 						&& !Main.game.isDebugMode()) {
-					return new Response("Reforge",
-							"You do not have a reforging hammer, so cannot change the damage type of the " + weapon.getName() + "...",
+					return new Response("Перековка",
+							"У вас нет молота для перековки, поэтому вы не можете изменить тип урона у " + weapon.getName() + "...",
 							null); 
 				}
 				
 				if(damageTypePreview == weapon.getDamageType()) {
-					return new Response("Reforge",
-							"You need to choose a different damage type before being able to reforge the " + weapon.getName() + "!",
+					return new Response("Перековка",
+							"Вам нужно выбрать другой тип урона, прежде чем вы сможете перековать " + weapon.getName() + "!",
 							null); 
 				}
 				
-				return new Response("Reforge",
-						"Reforge the " + weapon.getName() + " into the damage type you have chosen."
+				return new Response("Перековка",
+						"Перековать " + weapon.getName() + " в выбранный вами тип урона."
 								+ (Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
-										?" This action is permanent, but thanks to your proficiency with [style.boldEarth(Earth spells)], you can reforge it at any time."
-										:" This action is permanent, and you'll need another reforging hammer if you want to change its damage type again."),
+										?" Это действие необратимо, но благодаря вашему мастерству в [style.boldEarth(заклинаниях Земли)], вы сможете перековать его в любое время."
+										:" Это действие необратимо, и если вы захотите снова изменить тип урона, вам понадобится еще один молот для перековки."),
 						INVENTORY_MENU){
 					@Override
 					public void effects(){
@@ -8538,22 +8399,16 @@ public class InventoryDialogue {
 							Main.game.getTextEndStringBuilder().append(
 									"<p style='text-align:center;'>"
 										+ getReforgeHammerEffects(weapon, damageTypePreview)
-									+ "</p>"
-									+ "<p>"
-										+ "<b>The " + weapon.getName() + " " + (weapon.getWeaponType().isPlural() ? "have been" : "has been") + " reforged</b>!"
-									+ "</p>"
-									+ "<p>"
+									+ "</p><p><b>Того " + weapon.getName() + " " + (weapon.getWeaponType().isPlural() ? "были" : "был") + " перековано</b>!</p><p>"
 										+ (Main.game.getPlayer().hasItemType(ItemType.REFORGE_HAMMER) || Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
-												?"You have <b>" + Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.REFORGE_HAMMER))
-														+ "</b> reforging " + (Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.REFORGE_HAMMER)) == 1 ? "hammer" : "hammers") + " left!"
-												:"You have <b>0</b> reforging hammers left!")
+												?"У вас осталось <b>" + Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.REFORGE_HAMMER))
+														+ "Перековка </b> " + (Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.REFORGE_HAMMER)) == 1 ? "долбить" : "долбит") + " слева!"
+												:"У вас осталось <b>0</b> молотов для перековки!")
 									+ "</p>");
 							
 						} else {
 							Main.game.getTextEndStringBuilder().append(
-									"<p>"
-											+ "Thanks to your proficiency with [style.boldEarth(Earth spells)], you are able to reforge the " + weapon.getName() + " without needing to use a reforging hammer!"
-										+ "</p>");
+									"<p>Благодаря вашему мастерству в [style.boldEarth(заклинаниях земли)], вы можете перековать " + weapon.getName() + " без использования молота для перековки!</p>");
 						}
 
 						owner.unequipWeaponIntoVoid(weaponSlot, weapon, true);
@@ -8571,7 +8426,7 @@ public class InventoryDialogue {
 							owner.equipOffhandWeaponFromNowhere(Main.game.getItemGen().generateWeapon(modifiedWeapon));
 						}
 						
-						Main.game.addEvent(new EventLogEntry("Reforged", weapon.getDisplayName(true)), false);
+						Main.game.addEvent(new EventLogEntry("Перековано", weapon.getDisplayName(true)), false);
 					}
 				};
 
@@ -8579,28 +8434,28 @@ public class InventoryDialogue {
 				if ((!Main.game.getPlayer().hasItemType(ItemType.REFORGE_HAMMER) || !Main.game.getPlayer().hasItemType(ItemType.DYE_BRUSH))
 						&& !Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
 						&& !Main.game.isDebugMode()) {
-					return new Response("Dye & reforge",
-							"You do not have both a dye brush and a reforging hammer, so cannot dye and reforge the " + weapon.getName() + "...",
+					return new Response("Покрасить и перековать",
+							"У вас нет одновременно кисти для покраски и молота для перековки, поэтому вы не можете покрасить и перековать " + weapon.getName() + "...",
 							null); 
 				}
 				
 				if(damageTypePreview == weapon.getDamageType()) {
-					return new Response("Dye & reforge",
-							"You need to choose a different damage type before being able to reforge the " + weapon.getName() + "!",
+					return new Response("Покрасить и перековать",
+							"Вам нужно выбрать другой тип урона, прежде чем вы сможете перековать " + weapon.getName() + "!",
 							null); 
 				}
 				
 				if(dyePreviews.equals(weapon.getColours())) {
-					return new Response("Dye & reforge",
-							"You need to choose different colours before being able to dye the " + weapon.getName() + "!",
+					return new Response("Покрасить и перековать",
+							"Сначала нужно выбрать другие цвета, прежде чем вы сможете покрасить " + weapon.getName() + "!",
 							null); 
 				}
 				
-				return new Response("Dye & reforge",
-						"Dye and reforge the " + weapon.getName() + " into the colours and damage type you have chosen."
+				return new Response("Покрасить и перековать",
+						"Покрасить и перековать  " + weapon.getName() + " в выбранные вами цвета и тип урона."
 								+ (Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
-										?" This action is permanent, but thanks to your proficiency with [style.boldEarth(Earth spells)], you can dye and reforge it at any time."
-										:" This action is permanent, and you'll need another dye-brush and another reforging hammer if you want to change its colours and damage type again."),
+										?" Это действие необратимо, но благодаря вашему мастерству в использовании [style.boldEarth(Заклинаний земли)], вы можете красить и перековывать его в любое время."
+										:" Это действие необратимо, и если вы захотите снова изменить цвета и тип урона, вам понадобятся новая кисть для окрашивания и новый молот для перековки."),
 						INVENTORY_MENU){
 					@Override
 					public void effects(){
@@ -8613,27 +8468,21 @@ public class InventoryDialogue {
 									+ "</p>"
 									+ "<p style='text-align:center;'>"
 										+ getReforgeHammerEffects(weapon, damageTypePreview)
-									+ "</p>"
-									+ "<p>"
-										+ "<b>The " + weapon.getName() + " " + (weapon.getWeaponType().isPlural() ? "have been" : "has been") + " reforged</b>!"
-									+ "</p>"
-									+ "<p>"
+									+ "</p><p><b>Того " + weapon.getName() + " " + (weapon.getWeaponType().isPlural() ? "были" : "был") + " перековано</b>!</p><p>"
 										+ (isClothingDyeActionAvailable()
-												?"You have <b>" + Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH))
-														+ "</b> dye-brush" + (Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH)) == 1 ? "" : "es") + " left!"
-												:"You have <b>0</b> dye-brushes left!")
+												?"У вас осталось <b>" + Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH))
+														+ "</b> кистей для окрашивания" + (Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.DYE_BRUSH)) == 1 ? "" : "шт.") + " слева!"
+												:"У вас осталось <b>0</b> кистей для окрашивания!")
 										+"<br/>"
 										+ (Main.game.getPlayer().hasItemType(ItemType.REFORGE_HAMMER) || Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
-												?"You have <b>" + Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.REFORGE_HAMMER))
-														+ "</b> reforging " + (Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.REFORGE_HAMMER)) == 1 ? "hammer" : "hammers") + " left!"
-												:"You have <b>0</b> reforging hammers left!")
+												?"У вас осталось <b>" + Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.REFORGE_HAMMER))
+														+ "Перековка </b> " + (Main.game.getPlayer().getAllItemsInInventory().get(Main.game.getItemGen().generateItem(ItemType.REFORGE_HAMMER)) == 1 ? "долбить" : "долбит") + " слева!"
+												:"У вас осталось <b>0</b> молотов для перековки!")
 									+ "</p>");
 							
 						} else {
 							Main.game.getTextEndStringBuilder().append(
-									"<p>"
-											+ "Thanks to your proficiency with [style.boldEarth(Earth spells)], you are able to dye and reforge the " + weapon.getName() + " without needing to use a dye-brush or reforging hammer!"
-										+ "</p>");
+									"<p>Благодаря вашему мастерству в использовании [style.boldEarth(Заклинаний земли)], вы можете покрасить и перековать  " + weapon.getName() + " без использования кисти для окрашивания или молота для перековки!</p>");
 						}
 
 						owner.unequipWeaponIntoVoid(weaponSlot, weapon, true);
@@ -8655,7 +8504,7 @@ public class InventoryDialogue {
 //						weapon.setDamageType(damageTypePreview);
 //						weapon.setPrimaryColour(dyePreviewPrimary);
 //						weapon.setSecondaryColour(dyePreviewSecondary);
-						Main.game.addEvent(new EventLogEntry("Dyed & Reforged", weapon.getDisplayName(true)), false);
+						Main.game.addEvent(new EventLogEntry("Покрашено и перековано", weapon.getDisplayName(true)), false);
 					}
 				};
 
@@ -8675,30 +8524,17 @@ public class InventoryDialogue {
 	// Utility methods:
 	
 	private static String getDyeBrushEffects(AbstractClothing clothing, Colour colour) {
-		return "<p>"
-					+ "As you take hold of the Dye-brush, you see the purple glow around the tip growing in strength."
-					+ " The closer you move it to your " + clothing.getName() + ", the brighter the glow becomes, until suddenly, images of different colours start flashing through your mind."
-					+ " As you touch the bristles to the " + clothing.getName() + "'s surface, the Dye-brush instantly evaporates!"
-					+ " You see that the arcane enchantment has dyed the " + clothing.getName() + " " + colour.getName() + "."
+		return "<p>Когда вы берете в руки Кисть-краситель, вы замечаете, что фиолетовое свечение вокруг ее кончика становится все сильнее. Чем ближе вы подносите ее к вашему " + clothing.getName() + ", тем ярче становится свечение, пока внезапно в вашем сознании не начинают мелькать образы различных цветов. Как только ворсинки касаются поверхности " + clothing.getName() + ", Кисть-краситель мгновенно испаряется! Вы видите, что аркана-зачарование окрасило " + clothing.getName() + " " + colour.getName() + "."
 				+ "</p>";
 	}
 	
 	private static String getDyeBrushEffects(AbstractWeapon weapon, Colour colour) {
-		return "<p>"
-					+ "As you take hold of the Dye-brush, you see the purple glow around the tip growing in strength."
-					+ " The closer you move it to your " + weapon.getName() + ", the brighter the glow becomes, until suddenly, images of different colours start flashing through your mind."
-					+ " As you touch the bristles to the " + weapon.getName() + "'s surface, the Dye-brush instantly evaporates!"
-					+ " You see that the arcane enchantment has dyed the " + weapon.getName() + " " + colour.getName() + "."
+		return "<p>Когда вы берете в руки Кисть-краситель, вы замечаете, что фиолетовое свечение вокруг ее кончика становится все сильнее. Чем ближе вы подносите ее к вашему " + weapon.getName() + ", тем ярче становится свечение, пока внезапно в вашем сознании не начинают мелькать образы различных цветов. Как только ворсинки касаются поверхности " + weapon.getName() + ", Кисть-краситель мгновенно испаряется! Вы видите, что аркана-зачарование окрасило " + weapon.getName() + " " + colour.getName() + "."
 				+ "</p>";
 	}
 	
 	private static String getReforgeHammerEffects(AbstractWeapon weapon, DamageType damageType) {
-		return "<p>"
-					+ "As you take hold of the reforging hammer, you see the metal head start to emit a deep purple glow."
-					+ " The closer you move it to your " + weapon.getName() + ", the brighter this glow becomes, until suddenly, images of different damage types start flashing through your mind."
-					+ " As you touch the metal head  to the " + weapon.getName() + ", the reforge hammer instantly evaporates!"
-					+ " You see that the arcane enchantment has reforged the " + weapon.getName() + " so that it now deals " + damageType.getName() + " damage."
-				+ "</p>";
+		return "<p>Когда вы берете в руки молот для перековки, вы замечаете, как металлическая голова начинает излучать глубокое фиолетовое свечение. Чем ближе вы подносите его к вашему " + weapon.getName() + ", тем ярче становится это свечение, пока внезапно в вашем сознании не начинают мелькать образы различных типов урона. Как только вы касаетесь металлической головы " + weapon.getName() + ", молот для перековки мгновенно испаряется! Вы видите, что аркана-зачарование перековало " + weapon.getName() + " так что теперь оно наносит " + damageType.getName() + " урона.</p>";
 	}
 	
 	private static String getItemDisplayPanel(AbstractCoreItem item, String SVGString, String title, String description) {
@@ -8715,9 +8551,9 @@ public class InventoryDialogue {
 	
 	private static String getGeneralResponseTabTitle(int index) {
 		if(index==0) {
-			return "Overview";
+			return "Обзор";
 		} else if(index==1) {
-			return "Selected item";
+			return "Выбранный предмет";
 		} else {
 			return null;
 		}
@@ -8725,7 +8561,7 @@ public class InventoryDialogue {
 	
 	private static Response getCloseInventoryResponse() {
 		if(interactionType == InventoryInteraction.CHARACTER_CREATION) {
-			return new Response("Back", "Return to looking in the mirror at your appearance.", CharacterCreation.CHOOSE_ADVANCED_APPEARANCE){
+			return new Response("Назад", "Вернуться к созерцанию своего отражения в зеркале.", CharacterCreation.CHOOSE_ADVANCED_APPEARANCE){
 				@Override
 				public int getSecondsPassed() {
 					return -CharacterCreation.TIME_TO_CLOTHING;
@@ -8739,7 +8575,7 @@ public class InventoryDialogue {
 			};
 			
 		} else {
-			return new ResponseEffectsOnly("Close inventory", "Close the Inventory menu."){
+			return new ResponseEffectsOnly("Закрыть инвентарь", "Закрыть меню Инвентаря."){
 				@Override
 				public void effects(){
 					item = null;
@@ -8753,7 +8589,7 @@ public class InventoryDialogue {
 	
 	private static Response getBuybackResponse() {
 		if (buyback) {
-			return new Response("Normal trade", "Switch back to the normal trade menu.", INVENTORY_MENU){
+			return new Response("Обычная торговля", "Вернуться к обычному меню торговли.", INVENTORY_MENU){
 				@Override
 				public void effects(){
 					buyback = !buyback;
@@ -8761,9 +8597,9 @@ public class InventoryDialogue {
 			};
 		} else {
 			if(Main.game.getPlayer().getBuybackStack()==null || Main.game.getPlayer().getBuybackStack().isEmpty()) {
-				return new Response("Buyback", "You have not sold any items, so cannot buy anything back...", null);
+				return new Response("Обратный выкуп", "Вы еще не продали ни одного предмета, поэтому нечего выкупать...", null);
 			} else {
-				return new Response("Buyback", "Switch to viewing the buyback menu.", INVENTORY_MENU){
+				return new Response("Обратный выкуп", "Переключиться на меню обратного выкупа.", INVENTORY_MENU){
 					@Override
 					public void effects(){
 						buyback = !buyback;
@@ -8817,60 +8653,58 @@ public class InventoryDialogue {
 		int removalCost = clothing.getJinxRemovalCost(Main.game.getPlayer(), selfUnseal);
 		
 		if(clothing.getEffects().stream().filter(ie->ie.getSecondaryModifier()==TFModifier.CLOTHING_SEALING).findFirst().get().getPotency()==TFPotency.SPECIAL) {
-			return new Response("Unseal ([style.colourTerrible(Impossible)])",
-					"The "+clothing.getName()+" has a special sealing enchantment and cannot be unsealed via regular means!",
+			return new Response("Распечатать ([style.colourTerrible(Невозможно)])",
+					""+clothing.getName()+" имеет особое запечатывающее заклинание и не может быть распечатано обычными способами!",
 					null);
 		}
 		
 		if(interactionType==InventoryInteraction.COMBAT) {
-			return new Response("Unseal"+(ownsKey?"(Use key)":"(<i>"+removalCost+" Essences</i>)"),
-					"You can't unseal clothing in combat!",
+			return new Response("Распечатать"+(ownsKey?"(Использовать клавишу)":"(<i>"+removalCost+" Эссенции</i>)"),
+					"В бою одежду распечатать нельзя!",
 					null);
 		}
 
 		if(interactionType==InventoryInteraction.SEX) {
 			if(Main.sex.isCharacterImmobilised(Main.game.getPlayer())) {
-				return new Response("Unseal"+(ownsKey?"(Use key)":"(<i>"+removalCost+" Essences</i>)"),
-						UtilText.parse(owner, "You can't unseal [npc.namePos] clothing as you are currently [style.colourTerrible(immobilised)]!"),
+				return new Response("Распечатать"+(ownsKey?"(Использовать клавишу)":"(<i>"+removalCost+" Эссенции</i>)"),
+						UtilText.parse(owner, "Вы не можете распечатать [npc.namePos] одежду, так как сейчас вы [style.colourTerrible(неподвижны)]!"),
 						null);
 			}
 			if(!selfUnseal && Main.sex.getInitialSexManager().isHidden(Main.game.getPlayer())) {
-				return new Response("Unseal"+(ownsKey?"(Use key)":"(<i>"+removalCost+" Essences</i>)"),
-						UtilText.parse(owner, "As you're hiding, you can't unseal [npc.namePos] clothing!"),
+				return new Response("Распечатать"+(ownsKey?"(Использовать клавишу)":"(<i>"+removalCost+" Эссенции</i>)"),
+						UtilText.parse(owner, "Пока вы прячетесь, вы не можете распечатать [npc.namePos] одежду!"),
 						null);
 			}
 			if(!Main.sex.getInitialSexManager().isAbleToRemoveClothingSeals(Main.game.getPlayer())) {
-				return new Response("Unseal"+(ownsKey?"(Use key)":"(<i>"+removalCost+" Essences</i>)"),
-						"You can't unseal clothing in this sex scene!",
+				return new Response("Распечатать"+(ownsKey?"(Использовать клавишу)":"(<i>"+removalCost+" Эссенции</i>)"),
+						"В этой секс-сцене вы не можете распечатать одежду!",
 						null);
 			}
 		}
 		
 		if(!ownsKey) {
 			if(!Main.game.getPlayer().isQuestCompleted(QuestLine.SIDE_ENCHANTMENT_DISCOVERY)) {
-				return new Response("Unseal", "You don't know how to unseal clothing! Perhaps you should pay Lilaya a visit and ask her about it...", null);
+				return new Response("Распечатать", "Вы не знаете, как распечатывать одежду! Возможно, вам стоит навестить Lilaya и расспросить её об этом...", null);
 			}
 			if(Main.game.getPlayer().getClothingCurrentlyEquipped().stream().anyMatch(c -> c.isSelfTransformationInhibiting())) {
-				return new Response("Unseal",
-						"Although you are normally able to unseal clothing, you cannot do so due to an enchantment on one or more pieces of your equipped clothing!"
-						+ "<br/>[style.italicsArcane(Visit Lilaya to get your sealed clothing removed!)]",
+				return new Response("Распечатать",
+						"Хотя обычно вы можете распечатывать одежду, сейчас это невозможно из-за чар на одной или нескольких вещах из вашего снаряжения!<br/>[style.italicsArcane(Навестите Lilaya, чтобы снять печати с одежды!)]",
 						null);
 			}
 			if(Main.game.getPlayer().getTattoos().values().stream().anyMatch(c -> c.isSelfTransformationInhibiting())) {
-				return new Response("Unseal",
-						"Although you are normally able to unseal clothing, you cannot do so due to an enchantment on one or more of your tattoos!"
-								+ "<br/>[style.italicsArcane(Visit Kate to get the tattoo removed!)]",
+				return new Response("Распечатать",
+						"Хотя обычно вы можете распечатывать одежду, сейчас это невозможно из-за чар на одной или нескольких ваших татуировках!<br/>[style.italicsArcane(Навестите Kate, чтобы снять татуировку!)]",
 						null);
 			}
 		}
 		
 		if(ownsKey || Main.game.getPlayer().getEssenceCount()>=removalCost) {
-			return new Response("Unseal "+(ownsKey?"([style.italicsGood(Use key)])":"([style.italicsArcane("+removalCost+" Essences)])"),
+			return new Response("Распечатать "+(ownsKey?"([style.italicsGood(Использовать ключ)])":"([style.italicsArcane("+removalCost+"  Эссенции)])"),
 						ownsKey
-							?"As you own the key which unlocks this piece of clothing, you can remove it without having to spend any arcane essences!"
-							:("Spend "+removalCost+" arcane essences on unsealing this piece of clothing."
+							?"Так как у вас есть ключ, отпирающий этот предмет одежды, вы можете снять его, не тратя ни капли арканной эссенции!"
+							:("Потратить "+removalCost+" арканной эссенции на распечатывание этого предмета одежды."
 								+ (Main.game.getPlayer().hasFetish(Fetish.FETISH_BONDAGE_VICTIM) && selfUnseal
-									?"<br/>[style.italicsMinorBad(You have to pay 5 times the standard unseal cost due to your '"+Fetish.FETISH_BONDAGE_VICTIM.getName(Main.game.getPlayer())+"' fetish!)]"
+									?"<br/>[style.italicsMinorBad(You have to pay 5 times the standard unseal cost due to your '"+Fetish.FETISH_BONDAGE_VICTIM.getName(Main.game.getPlayer())+"' фетиш!)]"
 									:"")),
 						interactionType==InventoryInteraction.SEX
 							?Main.sex.SEX_DIALOGUE
@@ -8882,19 +8716,13 @@ public class InventoryDialogue {
 						if(!Main.game.isInSex()) {
 							Main.game.getPlayer().removeFromUnlockKeyMap(owner.getId(), clothing.getSlotEquippedTo());
 						}
-						s = "<p>"
-								+ "Using the key which is in your possession, you unlock the "+clothing.getName()+"!"
+						s = "<p>Используя имеющийся у вас ключ, вы отпираете "+clothing.getName()+"!"
 							+ "</p>";
 						
 					} else {
 						Main.game.getPlayer().incrementEssenceCount(-removalCost, false);
 						s = UtilText.parse(owner,
-								"<p>"
-									+ "You channel the power of your arcane essences into [npc.namePos] "+clothing.getName()+", and with a bright purple flash, you manage to remove the seal!"
-								+ "</p>"
-								+ "<p style='text-align:center;'>"
-									+ "Removing the seal has cost you [style.boldBad("+removalCost+")] [style.boldArcane(Arcane Essences)]!"
-								+ "</p>");
+								"<p>Вы направляете силу своих арканных эссенций в [npc.namePos] "+clothing.getName()+", и яркая фиолетовая вспышка знаменует то, что печать снята!</p><p style='text-align:center;'>Снятие печати стоило вам [style.boldBad(\", "+removalCost+")] [style.boldArcane(Эссенции Arcane)]!</p>");
 					}
 					
 					// Have to remove and then re-add the clothing as setting the sealed status affects the clothing's hashCode
@@ -8923,10 +8751,10 @@ public class InventoryDialogue {
 			};
 			
 		} else {
-			return new Response("Unseal (<i>"+removalCost+" Essences</i>)",
-					"You need at least "+removalCost+" arcane essences in order to unseal this piece of clothing!"
+			return new Response("Снять печать (<i>"+removalCost+" Эссенции</i>)",
+					"Вам нужно как минимум "+removalCost+" арканных эссенций, чтобы снять печать с этой одежды!"
 							+ (Main.game.getPlayer().hasFetish(Fetish.FETISH_BONDAGE_VICTIM)
-									?"<br/>[style.italicsMinorBad(This cost is)] [style.italicsBad(5 times)] [style.italicsMinorBad(more than normal due to your '"+Fetish.FETISH_BONDAGE_VICTIM.getName(Main.game.getPlayer())+"' fetish!)]"
+									?"<br/>[style.italicsMinorBad(This cost is)] [style.italicsBad(5 times)] [style.italicsMinorBad(more than normal due to your '"+Fetish.FETISH_BONDAGE_VICTIM.getName(Main.game.getPlayer())+"' фетиш!)]"
 									:""),
 					null);
 		}
@@ -8982,15 +8810,15 @@ public class InventoryDialogue {
 			}
 			
 			if(from.isPlayer()) {
-				Main.game.addEvent(new EventLogEntry("Sold",
-								count+"x <span style='color:"+item.getRarity().getColour().toWebHexString()+";'>"+(count==1?item.getName():item.getNamePlural())+"</span> for "+UtilText.formatAsMoney(itemPrice*count)),
+				Main.game.addEvent(new EventLogEntry("Продана",
+								count+"x <span style='color:"+item.getRarity().getColour().toWebHexString()+";'>"+(count==1?item.getName():item.getNamePlural())+"</span> на "+UtilText.formatAsMoney(itemPrice*count)),
 						false);
 			}
 			
 			if(to.isPlayer()) {
 				//((NPC) from).handleSellingEffects(item, count, itemPrice); // Delete: This was replaced by applyItemTransactionEffects
-				Main.game.addEvent(new EventLogEntry("Bought",
-								count+"x <span style='color:"+item.getRarity().getColour().toWebHexString()+";'>"+(count==1?item.getName():item.getNamePlural())+"</span> for "+UtilText.formatAsMoney(itemPrice*count)),
+				Main.game.addEvent(new EventLogEntry("Куплено",
+								count+"x <span style='color:"+item.getRarity().getColour().toWebHexString()+";'>"+(count==1?item.getName():item.getNamePlural())+"</span> на "+UtilText.formatAsMoney(itemPrice*count)),
 						false);
 			}
 			
@@ -9054,15 +8882,15 @@ public class InventoryDialogue {
 			}
 			
 			if(from.isPlayer()) {
-				Main.game.addEvent(new EventLogEntry("Sold",
-								count+"x <span style='color:"+weapon.getRarity().getColour().toWebHexString()+";'>"+(count==1?weapon.getName():weapon.getNamePlural())+"</span> for "+UtilText.formatAsMoney(itemPrice*count)),
+				Main.game.addEvent(new EventLogEntry("Продана",
+								count+"x <span style='color:"+weapon.getRarity().getColour().toWebHexString()+";'>"+(count==1?weapon.getName():weapon.getNamePlural())+"</span> на "+UtilText.formatAsMoney(itemPrice*count)),
 						false);
 			}
 			
 			if(to.isPlayer()) {
 				//((NPC) from).handleSellingEffects(weapon, count, itemPrice); // Delete: This was replaced by applyItemTransactionEffects
-				Main.game.addEvent(new EventLogEntry("Bought",
-								count+"x <span style='color:"+weapon.getRarity().getColour().toWebHexString()+";'>"+(count==1?weapon.getName():weapon.getNamePlural())+"</span> for "+UtilText.formatAsMoney(itemPrice*count)),
+				Main.game.addEvent(new EventLogEntry("Куплено",
+								count+"x <span style='color:"+weapon.getRarity().getColour().toWebHexString()+";'>"+(count==1?weapon.getName():weapon.getNamePlural())+"</span> на "+UtilText.formatAsMoney(itemPrice*count)),
 						false);
 			}
 			
@@ -9134,15 +8962,15 @@ public class InventoryDialogue {
 			}
 			
 			if(from.isPlayer()) {
-				Main.game.addEvent(new EventLogEntry("Sold",
-								count+"x <span style='color:"+clothing.getRarity().getColour().toWebHexString()+";'>"+(count==1?clothing.getName():clothing.getNamePlural())+"</span> for "+UtilText.formatAsMoney(itemPrice*count)),
+				Main.game.addEvent(new EventLogEntry("Продана",
+								count+"x <span style='color:"+clothing.getRarity().getColour().toWebHexString()+";'>"+(count==1?clothing.getName():clothing.getNamePlural())+"</span> на "+UtilText.formatAsMoney(itemPrice*count)),
 						false);
 			}
 			
 			if(to.isPlayer()) {
 				//((NPC) from).handleSellingEffects(clothing, count, itemPrice); // Delete: This was replaced by applyItemTransactionEffects
-				Main.game.addEvent(new EventLogEntry("Bought",
-								count+"x <span style='color:"+clothing.getRarity().getColour().toWebHexString()+";'>"+(count==1?clothing.getName():clothing.getNamePlural())+"</span> for "+UtilText.formatAsMoney(itemPrice*count)),
+				Main.game.addEvent(new EventLogEntry("Куплено",
+								count+"x <span style='color:"+clothing.getRarity().getColour().toWebHexString()+";'>"+(count==1?clothing.getName():clothing.getNamePlural())+"</span> на "+UtilText.formatAsMoney(itemPrice*count)),
 						false);
 			}
 			
@@ -9210,18 +9038,13 @@ public class InventoryDialogue {
 	private static Response getCondomSabotageResponse(AbstractClothing clothing) {
 		if(clothing.getCondomEffect().getPotency().isNegative()) {
 			if(Main.game.getPlayer().getEssenceCount() >= 1) {
-				return new Response("Repair ([style.italicsArcane(1 Essence)])",
-						"Spend 1 arcane essence to repair the condom.", CLOTHING_INVENTORY) {
+				return new Response("Починить ([style.italicsArcane(1 Эссенция)])",
+						"Потратить 1 арканную эссенцию, чтобы починить презерватив.", CLOTHING_INVENTORY) {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().incrementEssenceCount(-1, false);
 						Main.game.getTextEndStringBuilder().append(
-								"<p>"
-									+ "You channel the power of an arcane essence into the condom, and, after emitting a faint purple glow, it is repaired!"
-								+ "</p>"
-								+ "<p style='text-align:center;'>"
-									+ "Repairing the condom has cost you [style.boldBad(1)] [style.boldArcane(Arcane Essence)]!"
-								+ "</p>");
+								"<p>Вы направляете силу арканной эссенции в презерватив, и после слабого фиолетового свечения он становится как новый!</p><p style='text-align:center;'>Починка презерватива стоила вам [style.boldBad(1)] [style.boldArcane(Арканной Эссенции)]!</p>");
 						AbstractClothing c = (AbstractClothing) EnchantmentDialogue.craftAndApplyFullInventoryEffects(clothing, clothing.getClothingType().getEffects());
 
 						Main.game.getPlayer().removeClothing(c);
@@ -9233,11 +9056,11 @@ public class InventoryDialogue {
 					}
 				};
 			} else {
-				return new Response("Repair (<i>1 Essence</i>)", "You need at least 1 arcane essence in order to repair the condom!", null);
+				return new Response("Починить (<i>1 Эссенция</i>)", "Для починки презерватива вам нужно как минимум 1 арканная эссенция!", null);
 			}
 			
 		} else {
-			return new Response("Sabotage", "By making a small tear in the end of this condom, you can ensure that it will break at the moment of orgasm!", CLOTHING_INVENTORY) {
+			return new Response("Саботаж", "Сделав небольшой надрез на кончике этого презерватива, вы гарантируете, что он порвется в момент оргазма!", CLOTHING_INVENTORY) {
 				@Override
 				public void effects(){
 					EnchantmentDialogue.setOutputName(clothing.getClothingType().getName());
@@ -9251,12 +9074,7 @@ public class InventoryDialogue {
 
 					RenderingEngine.setPage(Main.game.getPlayer(), c);
 					Main.game.getTextEndStringBuilder().append(
-							"<p>"
-								+ "By making a tiny, near-invisible tear in the end of the condom, you ensure that it will split when filled with cum..."
-							+ "</p>"
-							+ "<p style='text-align:center;'>"
-								+ "[style.italicsBad(The condom is now guaranteed to break upon orgasm)]!"
-							+ "</p>");
+							"<p>Сделав крошечный, почти невидимый надрез на кончике презерватива, вы гарантируете, что он лопнет, когда наполнится спермой...</p><p style='text-align:center;'>[style.italicsBad(Теперь презерватив гарантированно порвется во время оргазма)]!</p>");
 				}
 			};
 		}

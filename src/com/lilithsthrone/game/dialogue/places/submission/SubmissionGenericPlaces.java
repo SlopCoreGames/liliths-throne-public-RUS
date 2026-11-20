@@ -62,11 +62,11 @@ public class SubmissionGenericPlaces {
 		}
 	}
 
-	public static final DialogueNode WALKWAYS = new DialogueNode("Walkways", "", false) {
+	public static final DialogueNode WALKWAYS = new DialogueNode("Пешеходные дорожки", "", false) {
 		
 		@Override
 		public String getAuthor() {
-			return "Duner & Innoxia";
+			return "Duner и Innoxia";
 		}
 		
 		@Override
@@ -88,11 +88,11 @@ public class SubmissionGenericPlaces {
 		}
 	};
 	
-	public static final DialogueNode TUNNEL = new DialogueNode("Tunnels", "", false) {
+	public static final DialogueNode TUNNEL = new DialogueNode("Туннели", "", false) {
 
 		@Override
 		public String getAuthor() {
-			return "Duner";
+			return "Дунер";
 		}
 
 		@Override
@@ -137,7 +137,7 @@ public class SubmissionGenericPlaces {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index == 1) {
-				return AbstractEncounter.exploreArea("the tunnels");
+				return AbstractEncounter.exploreArea("туннели");
 			} else if(index == 2) {
 				return AbstractEncounter.useOffspringMap();
 			}
@@ -145,7 +145,7 @@ public class SubmissionGenericPlaces {
 		}
 	};
 
-	public static final DialogueNode BAT_CAVERNS = new DialogueNode("Bat Caverns", "", false) {
+	public static final DialogueNode BAT_CAVERNS = new DialogueNode("Пещеры летучих мышей", "", false) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -160,7 +160,7 @@ public class SubmissionGenericPlaces {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Bat Caverns", "Enter the bat caverns.", PlaceType.BAT_CAVERN_ENTRANCE.getDialogue(false)) {
+				return new Response("Пещеры летучих мышей", "Войти в пещеры летучих мышей.", PlaceType.BAT_CAVERN_ENTRANCE.getDialogue(false)) {
 					@Override
 					public void effects() {
 						Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/submission/submissionPlaces", "BAT_CAVERNS_ENTRY"));
@@ -174,7 +174,7 @@ public class SubmissionGenericPlaces {
 		}
 	};
 	
-	public static final DialogueNode RAT_WARREN = new DialogueNode("Rat Warrens", "", false) {
+	public static final DialogueNode RAT_WARREN = new DialogueNode("Крысиные Норы", "", false) {
 		@Override
 		public int getSecondsPassed() {
 			return 3*60;
@@ -190,8 +190,8 @@ public class SubmissionGenericPlaces {
 		public Response getResponse(int responseTab, int index) {
 			if(!Main.game.getPlayer().isQuestCompleted(QuestLine.SIDE_VENGAR) && Main.game.getPlayer().getQuest(QuestLine.SIDE_VENGAR)!=Quest.VENGAR_THREE_END) {
 				if(index==1) {
-					return new Response("Knock",
-							"Knock on the door and wait to see if anyone answers.",
+					return new Response("Постучать",
+							"Постучать в дверь и подождать, откликнется ли кто-нибудь.",
 							RAT_WARREN_KNOCK_ON_DOOR) {
 						@Override
 						public void effects() {
@@ -205,7 +205,7 @@ public class SubmissionGenericPlaces {
 		}
 	};
 	
-	public static final DialogueNode RAT_WARREN_KNOCK_ON_DOOR = new DialogueNode("Rat Warrens", "", true) {
+	public static final DialogueNode RAT_WARREN_KNOCK_ON_DOOR = new DialogueNode("Крысиные Норы", "", true) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -222,25 +222,25 @@ public class SubmissionGenericPlaces {
 			boolean freeEntry = Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.ratWarrensEntry) || Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.ratWarrensEntryWhore);
 			if(index == 1) {
 				if(!Main.game.getPlayer().hasQuest(QuestLine.SIDE_VENGAR)) {
-					return new Response("Enter",
-							"You're not able to gain access to the Rat Warrens without a good reason...",
+					return new Response("Войти",
+							"Вы не сможете попасть в Крысиные норы без веской причины...",
 							null);
 				} else {
 					if(freeEntry) {
-						return new Response("Enter",
-								"As the guards have recognised you, you're able to freely enter the Rat Warrens.",
+						return new Response("Войти",
+								"Поскольку стражники узнали вас, вы можете свободно войти в Крысиные норы.",
 								RatWarrensDialogue.RAT_WARREN_INITIAL_ENTRY);
 					}
-					return new Response("Explain",
-							"Tell the guards that you've come here to do business with Vengar, on behalf of Axel.",
+					return new Response("Объяснить",
+							"Сказать стражникам, что вы пришли по делам Венгара от имени Акселя.",
 							RatWarrensDialogue.RAT_WARREN_INITIAL_ENTRY);
 				}
 				
 			} else if(index==2) {
-				return new Response("Step back",
+				return new Response("Отступить",
 						freeEntry
-							?"Decide against entering the Rat Warrens, and instead step away from the door."
-							:"As you don't have any business here, you're not going to be able to get in. It would be best to step back and take your leave before the guards follow through on their threats...",
+							?"Решить не входить в Крысиные норы, а вместо этого отойти от двери."
+							:"Так как у вас здесь нет никаких дел, войти не получится. Лучше всего отступить и уйти, пока стражники не перешли от угроз к делу...",
 						RAT_WARREN_STEP_BACK) {
 					@Override
 					public void effects() {
@@ -257,7 +257,7 @@ public class SubmissionGenericPlaces {
 		}
 	};
 	
-	public static final DialogueNode RAT_WARREN_STEP_BACK = new DialogueNode("Rat Warrens", "", false) {
+	public static final DialogueNode RAT_WARREN_STEP_BACK = new DialogueNode("Крысиные Норы", "", false) {
 		@Override
 		public int getSecondsPassed() {
 			return 1*60;
@@ -272,7 +272,7 @@ public class SubmissionGenericPlaces {
 		}
 	};
 
-	public static final DialogueNode GAMBLING_DEN = new DialogueNode("Gambling Den", "", false) {
+	public static final DialogueNode GAMBLING_DEN = new DialogueNode("Игорный притон", "", false) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -287,7 +287,7 @@ public class SubmissionGenericPlaces {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Gambling Den", "Enter the Gambling Den.", GamblingDenDialogue.ENTRANCE) {
+				return new Response("Игорный притон", "Войти в Игорный притон.", GamblingDenDialogue.ENTRANCE) {
 					@Override
 					public void effects() {
 						List<NPC> gamblersPresent = Main.game.getCharactersPresent(Main.game.getWorlds().get(WorldType.GAMBLING_DEN).getCell(PlaceType.GAMBLING_DEN_GAMBLING));
@@ -318,7 +318,7 @@ public class SubmissionGenericPlaces {
 		}
 	};
 
-	public static final DialogueNode LILIN_PALACE_CAVERN = new DialogueNode("Cavern", "", false) {
+	public static final DialogueNode LILIN_PALACE_CAVERN = new DialogueNode("Пещера", "", false) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -346,7 +346,7 @@ public class SubmissionGenericPlaces {
 		}
 	};
 	
-	public static final DialogueNode LILIN_PALACE_GATE = new DialogueNode("Lyssieth's Palace Gate", "", true) {
+	public static final DialogueNode LILIN_PALACE_GATE = new DialogueNode("Врата дворца Lyssieth", "", true) {
 		@Override
 		public boolean isTravelDisabled() {
 			return !Main.game.getPlayer().isQuestProgressGreaterThan(QuestLine.MAIN, Quest.MAIN_2_C_SIRENS_FALL)
@@ -393,7 +393,7 @@ public class SubmissionGenericPlaces {
 			// First time visiting this tile:
 			if(!Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.elizabethIntroduced)) {
 				if(index==1) {
-					return new Response("Introductions", "Tell the succubus and her troops who you are.", LILIN_PALACE_GATE_GENERIC_TALK) {
+					return new Response("Знакомство", "Рассказать суккубу и её войскам, кто ты такой.", LILIN_PALACE_GATE_GENERIC_TALK) {
 						@Override
 						public void effects() {
 							Main.game.getNpc(Elizabeth.class).setPlayerKnowsName(true);
@@ -410,7 +410,7 @@ public class SubmissionGenericPlaces {
 				if(Main.game.getNpc(Elizabeth.class).getWorldLocation()==WorldType.SUBMISSION) {
 					if(Main.game.getNpc(Elizabeth.class).isVisiblyPregnant() && !Main.game.getNpc(Elizabeth.class).isCharacterReactedToPregnancy(Main.game.getPlayer())) {
 						if (index == 1) {
-							return new Response("Pregnancy", "Ask Elizabeth if she needs any help with her pregnancy.", LILIN_PALACE_GATE_GENERIC_TALK) {
+							return new Response("Беременность", "Спросить Элизабет, не нужна ли ей помощь с беременностью.", LILIN_PALACE_GATE_GENERIC_TALK) {
 								@Override
 								public void effects() {
 									Main.game.getNpc(Elizabeth.class).setCharacterReactedToPregnancy(Main.game.getPlayer(), true);
@@ -422,9 +422,9 @@ public class SubmissionGenericPlaces {
 					} else {
 						if (index == 1) {
 							if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.elizabethAskedAboutUniforms)) {
-								return new Response("Uniforms", "You've just asked Elizabeth about her uniforms...", null);
+								return new Response("Униформа", "Вы только что спросили Элизабет об её униформе...", null);
 							}
-							return new Response("Uniforms", "Ask Elizabeth why she and her troops are wearing historical uniforms.", LILIN_PALACE_GATE_GENERIC_TALK) {
+							return new Response("Униформа", "Спросить Элизабет, почему она и её войска носят историческую униформу.", LILIN_PALACE_GATE_GENERIC_TALK) {
 								@Override
 								public void effects() {
 									Main.game.getDialogueFlags().setFlag(DialogueFlagValue.elizabethAskedAboutUniforms, true);
@@ -434,9 +434,9 @@ public class SubmissionGenericPlaces {
 							
 						} else if (index == 2) {
 							if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.elizabethAskedAboutSurname)) {
-								return new Response("Surname", "You've just asked Elizabeth about her surname...", null);
+								return new Response("Фамилия", "Вы только что спросили Элизабет о её фамилии...", null);
 							}
-							return new Response("Surname", "Ask Elizabeth why she didn't want to be addressed by her surname.", LILIN_PALACE_GATE_GENERIC_TALK) {
+							return new Response("Фамилия", "Спросить Элизабет, почему она не хочет, чтобы к ней обращались по фамилии.", LILIN_PALACE_GATE_GENERIC_TALK) {
 								@Override
 								public void effects() {
 									Main.game.getDialogueFlags().setFlag(DialogueFlagValue.elizabethAskedAboutSurname, true);
@@ -446,9 +446,9 @@ public class SubmissionGenericPlaces {
 							
 						} else if (index == 3) {
 							if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.elizabethAskedAboutRoutine)) {
-								return new Response("Routine", "You've just asked Elizabeth about her daily routine...", null);
+								return new Response("Распорядок", "Вы только что спросили Элизабет о её распорядке дня...", null);
 							}
-							return new Response("Routine", "Ask Elizabeth about her daily routine.", LILIN_PALACE_GATE_GENERIC_TALK) {
+							return new Response("Распорядок", "Спросить Элизабет о её распорядке дня.", LILIN_PALACE_GATE_GENERIC_TALK) {
 								@Override
 								public void effects() {
 									Main.game.getDialogueFlags().setFlag(DialogueFlagValue.elizabethAskedAboutRoutine, true);
@@ -464,7 +464,7 @@ public class SubmissionGenericPlaces {
 			// Handing in the Siren's quest:
 			if(Main.game.getPlayer().getQuest(QuestLine.MAIN)==Quest.MAIN_2_C_SIRENS_FALL) {
 				if (index == 1) {
-					return new Response("Report", "Tell Elizabeth how you handled the Siren.", LILIN_PALACE_GATE_GENERIC_TALK) {
+					return new Response("Доложить", "Рассказать Элизабет о том, как ты справился с Сиреной.", LILIN_PALACE_GATE_GENERIC_TALK) {
 						@Override
 						public void effects() {
 							if(Main.game.getPlayer().hasItemType(ItemType.LYSSIETHS_RING)) {
@@ -487,7 +487,7 @@ public class SubmissionGenericPlaces {
 			
 			// Normal dialogue, for before completing the Siren's quest:
 			if (index == 1) {
-				return new ResponseEffectsOnly("Step back", "Decide to step away from Elizabeth and the royal guard, and head back into Submission.") {
+				return new ResponseEffectsOnly("Отступить", "Решить отойти от Элизабет и королевской гвардии и вернуться в Submission.") {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setLocation(new Vector2i(Main.game.getPlayer().getLocation().getX(), Main.game.getPlayer().getLocation().getY()-1));
@@ -497,9 +497,9 @@ public class SubmissionGenericPlaces {
 
 			} else if (index == 2) {
 				if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.elizabethAskedAboutUniforms)) {
-					return new Response("Uniforms", "You've just asked Elizabeth about her uniforms...", null);
+					return new Response("Униформа", "Вы только что спросили Элизабет об её униформе...", null);
 				}
-				return new Response("Uniforms", "Ask Elizabeth why she and her troops are wearing historical uniforms.", LILIN_PALACE_GATE_GENERIC_TALK) {
+				return new Response("Униформа", "Спросить Элизабет, почему она и её войска носят историческую униформу.", LILIN_PALACE_GATE_GENERIC_TALK) {
 					@Override
 					public void effects() {
 						Main.game.getDialogueFlags().setFlag(DialogueFlagValue.elizabethAskedAboutUniforms, true);
@@ -509,9 +509,9 @@ public class SubmissionGenericPlaces {
 
 			} else if (index == 3) {
 				if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.elizabethAskedAboutSurname)) {
-					return new Response("Surname", "You've just asked Elizabeth about her surname...", null);
+					return new Response("Фамилия", "Вы только что спросили Элизабет о её фамилии...", null);
 				}
-				return new Response("Surname", "Ask Elizabeth why she didn't want to be addressed by her surname.", LILIN_PALACE_GATE_GENERIC_TALK) {
+				return new Response("Фамилия", "Спросить Элизабет, почему она не хочет, чтобы к ней обращались по фамилии.", LILIN_PALACE_GATE_GENERIC_TALK) {
 					@Override
 					public void effects() {
 						Main.game.getDialogueFlags().setFlag(DialogueFlagValue.elizabethAskedAboutSurname, true);
@@ -521,7 +521,7 @@ public class SubmissionGenericPlaces {
 			} else if (index == 4) {
 				if(Main.game.getPlayer().getQuest(QuestLine.MAIN)==Quest.MAIN_2_A_INTO_THE_DEPTHS) {
 					if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.impFortressDemonDefeated)) {
-						return new Response("Audience", "Ask Elizabeth how you can earn an audience with Lyssieth.", LILIN_PALACE_GATE_GENERIC_TALK) {
+						return new Response("Аудиенция", "Спросить Элизабет, как можно заслужить аудиенцию у Lyssieth.", LILIN_PALACE_GATE_GENERIC_TALK) {
 							@Override
 							public void effects() {
 								Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/submission/submissionPlaces", "LILIN_PALACE_GATE_AUDIENCE_SKIP"));
@@ -531,7 +531,7 @@ public class SubmissionGenericPlaces {
 						};
 						
 					} else {
-						return new Response("Audience", "Ask Elizabeth how you can earn an audience with Lyssieth.", LILIN_PALACE_GATE_GENERIC_TALK) {
+						return new Response("Аудиенция", "Спросить Элизабет, как можно заслужить аудиенцию у Lyssieth.", LILIN_PALACE_GATE_GENERIC_TALK) {
 							@Override
 							public void effects() {
 								Main.game.getTextStartStringBuilder().append(UtilText.parseFromXMLFile("places/submission/submissionPlaces", "LILIN_PALACE_GATE_AUDIENCE"));
@@ -542,12 +542,11 @@ public class SubmissionGenericPlaces {
 					}
 					
 				} else if(Main.game.getPlayer().getQuest(QuestLine.MAIN)==Quest.MAIN_2_B_SIRENS_CALL) {
-					return new Response("Audience", "You have already asked Elizabeth how to earn an audience with Lyssieth. You need to find, and then enslave, Lyssieth's daughter; the 'dark siren'.", null);
+					return new Response("Аудиенция", "Ты уже спрашивал Элизабет, как заслужить аудиенцию у Lyssieth. Тебе нужно найти, а затем поработить дочь Lyssieth — «темную сирену».", null);
 					
 				} else {
-					return new Response("Audience",
-							"Elizabeth said that Lyssieth isn't receiving visitors, and, for the moment at least, you don't have a particular reason for needing to see her."
-								+ " Perhaps you'll need to ask for an audience with Lyssieth at some point in the future...",
+					return new Response("Аудиенция",
+							"Элизабет сказала, что Lyssieth сейчас не принимает посетителей, и, по крайней мере, на данный момент у тебя нет веской причины, чтобы видеться с ней. Возможно, в будущем тебе всё же придётся просить аудиенции у Lyssieth...",
 							null);
 				}
 			}
@@ -556,7 +555,7 @@ public class SubmissionGenericPlaces {
 		}
 	};
 	
-	public static final DialogueNode LILIN_PALACE_GATE_GENERIC_TALK = new DialogueNode("Lyssieth's Palace Gate", "", true, true) {
+	public static final DialogueNode LILIN_PALACE_GATE_GENERIC_TALK = new DialogueNode("Врата дворца Lyssieth", "", true, true) {
 
 		@Override
 		public boolean isTravelDisabled() {
@@ -579,7 +578,7 @@ public class SubmissionGenericPlaces {
 		}
 	};
 	
-	public static final DialogueNode LILIN_PALACE = new DialogueNode("Lyssieth's Palace", "", false) {
+	public static final DialogueNode LILIN_PALACE = new DialogueNode("Дворец Lyssieth", "", false) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -608,9 +607,9 @@ public class SubmissionGenericPlaces {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				if(Main.game.getPlayer().getQuest(QuestLine.MAIN)==Quest.MAIN_2_D_MEETING_A_LILIN) {
-					return new Response("Enter",
-							"Enter the palace with Elizabeth, who will then proceed to lead you to the throne room."
-									+ (Main.game.getPlayer().hasCompanions()?"<br/>[style.italicsMinorBad(This will dismiss all of your companions, who will be returned home.)]":""),
+					return new Response("Войти",
+							"Войти во дворец вместе с Элизабет, которая затем проведёт тебя в тронный зал."
+									+ (Main.game.getPlayer().hasCompanions()?"<br/>[style.italicsMinorBad(Это заставит всех твоих спутников разойтись, и они вернутся по домам.)]":""),
 							LyssiethReveal.ENTRANCE_WITH_ELIZABETH) {
 						@Override
 						public void effects() {
@@ -622,10 +621,10 @@ public class SubmissionGenericPlaces {
 					};
 					
 				} else if(Main.game.getPlayer().isQuestProgressGreaterThan(QuestLine.MAIN, Quest.MAIN_2_D_MEETING_A_LILIN)) {
-					return new Response("Enter",
+					return new Response("Войти",
 							Main.game.getNpc(Elizabeth.class).getWorldLocation()==WorldType.SUBMISSION
-								?"Tell Elizabeth that you'd like to enter the palace, and have her unlock the doors for you."
-								:"Tell the guard that you'd like to enter the palace, and have her unlock the doors for you.",
+								?"Сказать Элизабет, что ты хочешь войти во дворец, чтобы она отперла тебе двери."
+								:"Сказать стражнице, что ты хочешь войти во дворец, чтобы она отперла тебе двери.",
 							PlaceType.LYSSIETH_PALACE_ENTRANCE.getDialogue(false)) {
 						@Override
 						public void effects() {
@@ -635,14 +634,14 @@ public class SubmissionGenericPlaces {
 					};
 					
 				} else {
-					return new Response("Enter", "The doors are locked...", null);
+					return new Response("Войти", "Двери заперты...", null);
 				}
 			}
 			return null;
 		}
 	};
 	
-	public static final DialogueNode IMP_FORTRESS_ALPHA = new DialogueNode("Crude Fortress", "", false) {
+	public static final DialogueNode IMP_FORTRESS_ALPHA = new DialogueNode("Грубая крепость", "", false) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -674,8 +673,8 @@ public class SubmissionGenericPlaces {
 					|| Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.impFortressAlphaPacified);
 			
 			if(index==1) {
-				return new Response(canEnter?"Enter":"Approach",
-						canEnter?"Enter the fortress.":"Approach the guards at the entrance to the fortress.",
+				return new Response(canEnter?"Войти":"Подойти",
+						canEnter?"Войти в крепость.":"Подойти к стражникам у входа в крепость.",
 								PlaceType.FORTRESS_ALPHA_ENTRANCE.getDialogue(false)) {
 					@Override
 					public void effects() {
@@ -694,10 +693,10 @@ public class SubmissionGenericPlaces {
 				
 			} else if(index==2) {
 				if(Main.game.getPlayer().isPartyAbleToFly()) {
-					return new Response("Fly",
+					return new Response("Лететь",
 							canEnter
-								?"As you're able to simply walk through the front gate, there's no need to do this unless you were just trying to show off..."
-								:"Fly over the wall of the fortress, thereby avoiding a confrontation with the imp guards at the gate.",
+								?"Поскольку ты можешь просто пройти через главные ворота, в этом нет необходимости, если только ты не пытаешься похвастаться..."
+								:"Перелететь через стену крепости, тем самым избежав столкновения с бесами-стражниками у ворот.",
 							PlaceType.FORTRESS_ALPHA_COURTYARD.getDialogue(false)) {
 						@Override
 						public void effects() {
@@ -715,7 +714,7 @@ public class SubmissionGenericPlaces {
 						}
 					};
 				} else {
-					return new Response("Fly", "Either you or a member of your party is unable to fly, so you're unable to access the fortress by flying over the walls!", null);
+					return new Response("Лететь", "Либо вы, либо кто-то из ваших спутников не умеет летать, поэтому вы не можете попасть в крепость, перелетев через стены!", null);
 				}
 			} else {
 				return null;
@@ -723,7 +722,7 @@ public class SubmissionGenericPlaces {
 		}
 	};
 	
-	public static final DialogueNode IMP_FORTRESS_FEMALES = new DialogueNode("Crude Fortress", "", false) {
+	public static final DialogueNode IMP_FORTRESS_FEMALES = new DialogueNode("Грубая крепость", "", false) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -756,8 +755,8 @@ public class SubmissionGenericPlaces {
 					|| Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.impFortressFemalesPacified);
 			
 			if(index==1) {
-				return new Response(canEnter?"Enter":"Approach",
-						canEnter?"Enter the fortress.":"Approach the guards at the entrance to the fortress.",
+				return new Response(canEnter?"Войти":"Подойти",
+						canEnter?"Войти в крепость.":"Подойти к стражникам у входа в крепость.",
 								PlaceType.FORTRESS_FEMALES_ENTRANCE.getDialogue(false)) {
 					@Override
 					public void effects() {
@@ -776,10 +775,10 @@ public class SubmissionGenericPlaces {
 				
 			} else if(index==2) {
 				if(Main.game.getPlayer().isPartyAbleToFly()) {
-					return new Response("Fly",
+					return new Response("Лететь",
 							canEnter
-								?"As you're able to simply walk through the front gate, there's no need to do this unless you were just trying to show off..."
-								:"Fly over the wall of the fortress, thereby avoiding a confrontation with the imp guards at the gate.",
+								?"Поскольку ты можешь просто пройти через главные ворота, в этом нет необходимости, если только ты не пытаешься похвастаться..."
+								:"Перелететь через стену крепости, тем самым избежав столкновения с бесами-стражниками у ворот.",
 							PlaceType.FORTRESS_FEMALES_COURTYARD.getDialogue(false)) {
 						@Override
 						public void effects() {
@@ -797,7 +796,7 @@ public class SubmissionGenericPlaces {
 						}
 					};
 				} else {
-					return new Response("Fly", "Either you or a member of your party is unable to fly, so you're unable to access the fortress by flying over the walls!", null);
+					return new Response("Лететь", "Либо вы, либо кто-то из ваших спутников не умеет летать, поэтому вы не можете попасть в крепость, перелетев через стены!", null);
 				}
 			} else {
 				return null;
@@ -805,7 +804,7 @@ public class SubmissionGenericPlaces {
 		}
 	};
 	
-	public static final DialogueNode IMP_FORTRESS_MALES = new DialogueNode("Crude Fortress", "", false) {
+	public static final DialogueNode IMP_FORTRESS_MALES = new DialogueNode("Грубая крепость", "", false) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -838,8 +837,8 @@ public class SubmissionGenericPlaces {
 					|| Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.impFortressMalesPacified);
 			
 			if(index==1) {
-				return new Response(canEnter?"Enter":"Approach",
-						canEnter?"Enter the fortress.":"Approach the guards at the entrance to the fortress.",
+				return new Response(canEnter?"Войти":"Подойти",
+						canEnter?"Войти в крепость.":"Подойти к стражникам у входа в крепость.",
 								PlaceType.FORTRESS_MALES_ENTRANCE.getDialogue(false)) {
 					@Override
 					public void effects() {
@@ -858,10 +857,10 @@ public class SubmissionGenericPlaces {
 				
 			} else if(index==2) {
 				if(Main.game.getPlayer().isPartyAbleToFly()) {
-					return new Response("Fly",
+					return new Response("Лететь",
 							canEnter
-								?"As you're able to simply walk through the front gate, there's no need to do this unless you were just trying to show off..."
-								:"Fly over the wall of the fortress, thereby avoiding a confrontation with the imp guards at the gate.",
+								?"Поскольку ты можешь просто пройти через главные ворота, в этом нет необходимости, если только ты не пытаешься похвастаться..."
+								:"Перелететь через стену крепости, тем самым избежав столкновения с бесами-стражниками у ворот.",
 							PlaceType.FORTRESS_MALES_COURTYARD.getDialogue(false)) {
 						@Override
 						public void effects() {
@@ -879,7 +878,7 @@ public class SubmissionGenericPlaces {
 						}
 					};
 				} else {
-					return new Response("Fly", "Either you or a member of your party is unable to fly, so you're unable to access the fortress by flying over the walls!", null);
+					return new Response("Лететь", "Либо вы, либо кто-то из ваших спутников не умеет летать, поэтому вы не можете попасть в крепость, перелетев через стены!", null);
 				}
 			} else {
 				return null;
@@ -887,7 +886,7 @@ public class SubmissionGenericPlaces {
 		}
 	};
 	
-	public static final DialogueNode IMP_FORTRESS_DEMON = new DialogueNode("Stone Citadel", "", false) {
+	public static final DialogueNode IMP_FORTRESS_DEMON = new DialogueNode("Каменная цитадель", "", false) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -923,7 +922,7 @@ public class SubmissionGenericPlaces {
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
 				if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.impFortressDemonDefeated)) {
-					return new Response("Enter", "Enter the ruins of the Dark Siren's citadel.", PlaceType.FORTRESS_DEMON_ENTRANCE.getDialogue(false)) {
+					return new Response("Войти", "Войти в руины цитадели Темной Сирены.", PlaceType.FORTRESS_DEMON_ENTRANCE.getDialogue(false)) {
 						@Override
 						public void effects() {
 							Main.game.getPlayer().setLocation(WorldType.IMP_FORTRESS_DEMON, PlaceType.FORTRESS_DEMON_ENTRANCE);
@@ -935,7 +934,7 @@ public class SubmissionGenericPlaces {
 								&& Main.game.getPlayer().hasItemType(ItemType.IMP_FORTRESS_ARCANE_KEY_2)
 								&& Main.game.getPlayer().hasItemType(ItemType.IMP_FORTRESS_ARCANE_KEY_3))
 							|| Main.game.getPlayer().hasClothingType(ClothingType.getClothingTypeFromId("innoxia_neck_key_chain"), true)) {
-					return new Response("Enter", "Enter the citadel.", FORTRESS_DEMON_ENTRANCE_KEY_ENTRY) {
+					return new Response("Войти", "Войти в цитадель.", FORTRESS_DEMON_ENTRANCE_KEY_ENTRY) {
 						@Override
 						public void effects() {
 							Main.game.getPlayer().setLocation(WorldType.IMP_FORTRESS_DEMON, PlaceType.FORTRESS_DEMON_ENTRANCE);
@@ -959,7 +958,7 @@ public class SubmissionGenericPlaces {
 					};
 					
 				} else {
-					return new Response("Enter", "You don't have the three keys required to open the gates...", null);
+					return new Response("Войти", "У вас нет трех ключей, необходимых для открытия ворот...", null);
 				}
 				
 			} else {
@@ -983,7 +982,7 @@ public class SubmissionGenericPlaces {
 
 	// Entrance and exits:
 
-	public static final DialogueNode SEWER_ENTRANCE = new DialogueNode("Enforcer Checkpoint", "", false) {
+	public static final DialogueNode SEWER_ENTRANCE = new DialogueNode("Контрольно-пропускной пункт Enforcer", "", false) {
 		@Override
 		public int getSecondsPassed() {
 			return 3*60;
@@ -1004,7 +1003,7 @@ public class SubmissionGenericPlaces {
 		public Response getResponse(int responseTab, int index) {
 			if(Main.game.getPlayer().isQuestCompleted(QuestLine.SIDE_VENGAR) && Main.game.getPlayer().isHasSlaverLicense() && !Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.milkersClaireDialogue)) {
 				if (index == 1) {
-					return new Response("Take milkers", "Tell Claire that you'll take responsibility for the slaves recovered from the Rat Warrens.", SEWER_ENTRANCE_MILKERS_RESOLVED) {
+					return new Response("Забрать молочные железы", "Сказать Клэр, что вы возьмете на себя ответственность за рабов, извлеченных из Крысиных Варренов.", SEWER_ENTRANCE_MILKERS_RESOLVED) {
 						@Override
 						public void effects() {
 							Main.game.getDialogueFlags().setFlag(DialogueFlagValue.milkersClaireDialogue, true);
@@ -1023,7 +1022,7 @@ public class SubmissionGenericPlaces {
 					};
 
 				} else if (index == 2) {
-					return new Response("Decline", "Tell Claire that you're not interested in the slaves recovered from the Rat Warrens.", SEWER_ENTRANCE_MILKERS_RESOLVED) {
+					return new Response("Отклонить", "Сказать Клэр, что вас не интересуют рабы, извлеченные из Крысиных Варренов.", SEWER_ENTRANCE_MILKERS_RESOLVED) {
 						@Override
 						public void effects() {
 							Main.game.getDialogueFlags().setFlag(DialogueFlagValue.milkersClaireDialogue, true);
@@ -1035,7 +1034,7 @@ public class SubmissionGenericPlaces {
 				
 			} else {
 				if (index == 1) {
-					return new Response("Dominion", "Head back up to Dominion.", PlaceType.DOMINION_EXIT_TO_SUBMISSION.getDialogue(false)){
+					return new Response("Dominion", "Вернуться обратно в Dominion.", PlaceType.DOMINION_EXIT_TO_SUBMISSION.getDialogue(false)){
 						@Override
 						public void effects() {
 							Main.game.getPlayer().setLocation(WorldType.DOMINION, PlaceType.DOMINION_EXIT_TO_SUBMISSION, false);
@@ -1043,10 +1042,10 @@ public class SubmissionGenericPlaces {
 					};
 
 				} else if (index == 2) {
-					return new Response("Claire", "Approach Claire and say hello to her.", CLAIRE);
+					return new Response("Клэр", "Подойти к Клэр и поздороваться с ней.", CLAIRE);
 					
 				} else if (index == 3) {
-					return new Response("Vending machine", "Approach the vending machine that's located just outside of the Enforcer outpost.", VENDING_MACHINE);
+					return new Response("Торговый автомат", "Подойти к торговому автомату, который находится прямо у аванпоста Enforcer.", VENDING_MACHINE);
 				}
 			}
 			
@@ -1069,7 +1068,7 @@ public class SubmissionGenericPlaces {
 		}
 	};
 	
-	public static final DialogueNode CLAIRE = new DialogueNode("Claire", "", true) {
+	public static final DialogueNode CLAIRE = new DialogueNode("Клэр", "", true) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -1085,13 +1084,13 @@ public class SubmissionGenericPlaces {
 		public Response getResponse(int responseTab, int index) {
 			List<Response> responses = new ArrayList<>();
 			
-			responses.add(new Response("Back", "Tell Claire that you need to get going.", SEWER_ENTRANCE));
+			responses.add(new Response("Назад", "Сказать Клэр, что тебе пора идти.", SEWER_ENTRANCE));
 			
 
 			if(Main.game.getCurrentDialogueNode()==CLAIRE_INFO_SUBMISSION_SOCIETY) {
-				responses.add(new Response("Information", "You are already asking Claire about Submission society.", null));
+				responses.add(new Response("Информация", "Вы уже расспрашиваете Клэр об обществе Submission.", null));
 			} else {
-				responses.add(new Response("Information", "Ask Claire about Submission society.", CLAIRE_INFO_SUBMISSION_SOCIETY) {
+				responses.add(new Response("Информация", "Расспросить Клэр об обществе Submission.", CLAIRE_INFO_SUBMISSION_SOCIETY) {
 					@Override
 					public void effects() {
 						applyClaireMeetingEffects();
@@ -1100,9 +1099,9 @@ public class SubmissionGenericPlaces {
 			}
 			
 			if(Main.game.getCurrentDialogueNode()==CLAIRE_INFO_LYSSIETH) {
-				responses.add(new Response("Lyssieth", "You are already asking Claire about Lyssieth.", null));
+				responses.add(new Response("Lyssieth", "Вы уже расспрашиваете Клэр о Lyssieth.", null));
 			} else {
-				responses.add(new Response("Lyssieth", "Ask Claire about Lyssieth.", CLAIRE_INFO_LYSSIETH) {
+				responses.add(new Response("Lyssieth", "Спросить Клэр о Lyssieth.", CLAIRE_INFO_LYSSIETH) {
 					@Override
 					public void effects() {
 						applyClaireMeetingEffects();
@@ -1112,13 +1111,13 @@ public class SubmissionGenericPlaces {
 			
 			if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.claireAskedTeleportation)) {
 				if(Main.game.getCurrentDialogueNode()==CLAIRE_INFO_SWORD_ORICL) {
-					responses.add(new Response("SWORD & ORICL", "You are already asking Claire about the Enforcer branches of 'SWORD' and 'ORICL'.", null));
+					responses.add(new Response("SWORD и ORICL", "Вы уже расспрашиваете Клэр о ветвях Enforcer в 'SWORD' и 'ORICL'.", null));
 				} else {
-					responses.add(new Response("SWORD & ORICL", "Ask Claire about the Enforcer branches of 'SWORD' and 'ORICL'.", CLAIRE_INFO_SWORD_ORICL));
+					responses.add(new Response("SWORD и ORICL", "Спросить Клэр о ветвях Enforcer в 'SWORD' и 'ORICL'.", CLAIRE_INFO_SWORD_ORICL));
 				}
 				
 			} else {
-				responses.add(new Response("Teleportation", "Ask Claire about teleportation.", CLAIRE_INFO_TELEPORTATION) {
+				responses.add(new Response("Телепортация", "Спросить Клэр о телепортации.", CLAIRE_INFO_TELEPORTATION) {
 					@Override
 					public void effects() {
 						Main.game.getDialogueFlags().setFlag(DialogueFlagValue.claireAskedTeleportation, true);
@@ -1130,15 +1129,13 @@ public class SubmissionGenericPlaces {
 			if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.claireAskedTeleportation)) {
 				if(!Main.game.getPlayer().hasQuest(QuestLine.SIDE_TELEPORTATION) || !Main.game.getPlayer().isQuestCompleted(QuestLine.SIDE_TELEPORTATION)) {
 					if(!Main.game.getPlayer().isQuestCompleted(QuestLine.SIDE_SLIME_QUEEN)) {
-						responses.add(new Response("Teleportation pads",
-								"You're unable to see the teleportation pads until the Submission Enforcers have a reason to trust you..."
-										+ "<br/>[style.italicsMinorBad(You'll be able to access this option once you've completed the quest '"+QuestLine.SIDE_SLIME_QUEEN.getName()+"'.)]",
+						responses.add(new Response("Телепортационные площадки",
+								"Вы не сможете увидеть телепортационные площадки, пока у Enforcer из Submission не появится повод вам доверять...<br/>[style.italicsMinorBad(Вы сможете воспользоваться этим вариантом, как только завершите квест '"+QuestLine.SIDE_SLIME_QUEEN.getName()+"'.)]",
 								null));
 						
 					} else {
-						responses.add(new Response("Teleportation pads",
-								"Tell Claire that you'd like to see the teleportation pads now."
-										+ "<br/>[style.italicsQuestSide(This will start a side quest which will need to be resolved before you're able to continue with whatever it is you were doing...)]",
+						responses.add(new Response("Телепортационные площадки",
+								"Сказать Клэр, что вы хотите увидеть телепортационные площадки прямо сейчас.<br/>[style.italicsQuestSide(Это запустит побочный квест, который нужно будет завершить, прежде чем вы сможете вернуться к своим прежним делам...)]",
 								CLAIRE_TELEPORTATION_PADS) {
 							@Override
 							public void effects() {
@@ -1154,9 +1151,8 @@ public class SubmissionGenericPlaces {
 				} else {
 					if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.claireAskedWarehouseEscape)) {
 						responses.add(new ResponseSex(
-								"Risky sex",
-								"From your experience in the SWORD warehouse, Claire seems to have obtained a fetish for risky sex."
-										+ " You could always satisfy her craving for it if you wanted to...",
+								"Рискованный секс",
+								"Судя по вашему опыту на складе SWORD, похоже, у Клэр развился фетиш на рискованный секс. Вы всегда могли бы утолить её жажду, если захотите...",
 								true,
 								true,
 								new SexManagerDefault(
@@ -1174,7 +1170,7 @@ public class SubmissionGenericPlaces {
 								UtilText.parseFromXMLFile("places/submission/submissionPlaces", "START_CLAIRE_SEX")));
 						
 					} else {
-						responses.add(new Response("Warehouse", "Ask Claire if she still thinks about your escape from the SWORD warehouse.", CLAIRE_WAREHOUSE) {
+						responses.add(new Response("Склад", "Спросить Клэр, думает ли она всё ещё о вашем побеге со склада SWORD.", CLAIRE_WAREHOUSE) {
 							@Override
 							public void effects() {
 								Main.game.getDialogueFlags().setFlag(DialogueFlagValue.claireAskedWarehouseEscape, true);
@@ -1186,7 +1182,7 @@ public class SubmissionGenericPlaces {
 			}
 			
 			if(Main.game.getPlayer().getQuest(QuestLine.SIDE_SLIME_QUEEN)==Quest.SLIME_QUEEN_TWO) {
-				responses.add(new Response("Report Back", "Report what the slime said about a 'Slime Queen'.", CLAIRE_INFO_REPORT_BACK) {
+				responses.add(new Response("Доложить назад", "Рассказать о том, что сказал слайм про «Королеву слаймов».", CLAIRE_INFO_REPORT_BACK) {
 					@Override
 					public void effects() {
 						applyClaireMeetingEffects();
@@ -1198,7 +1194,7 @@ public class SubmissionGenericPlaces {
 			} else if(Main.game.getPlayer().getQuest(QuestLine.SIDE_SLIME_QUEEN)==Quest.SLIME_QUEEN_SIX_SUBMIT
 						|| Main.game.getPlayer().getQuest(QuestLine.SIDE_SLIME_QUEEN)==Quest.SLIME_QUEEN_SIX_FORCE
 						|| Main.game.getPlayer().getQuest(QuestLine.SIDE_SLIME_QUEEN)==Quest.SLIME_QUEEN_SIX_CONVINCE) {
-				responses.add(new Response("Report Back", "Report to Claire that you've defeated the Slime Queen.", CLAIRE_INFO_SLIME_QUEEN_REPORT_BACK) {
+				responses.add(new Response("Доложить назад", "Сообщить Клэр, что вы победили Королеву слаймов.", CLAIRE_INFO_SLIME_QUEEN_REPORT_BACK) {
 					@Override
 					public void effects() {
 						applyClaireMeetingEffects();
@@ -1214,7 +1210,7 @@ public class SubmissionGenericPlaces {
 					&& !Main.game.getPlayer().hasQuestInLine(QuestLine.SIDE_VENGAR, Quest.VENGAR_OPTIONAL_CLAIRE)
 					&& !Main.game.getPlayer().hasQuestInLine(QuestLine.SIDE_VENGAR, Quest.VENGAR_THREE_END)
 					&& !Main.game.getPlayer().isQuestCompleted(QuestLine.SIDE_VENGAR)) {
-				responses.add(new Response("Vengar", "Ask for Claire's help with dealing with Vengar.", CLAIRE_VENGAR_HELP) {
+				responses.add(new Response("Венгар", "Попросить Клэр помочь с Венгаром.", CLAIRE_VENGAR_HELP) {
 					@Override
 					public void effects() {
 						applyClaireMeetingEffects();
@@ -1223,8 +1219,8 @@ public class SubmissionGenericPlaces {
 			}
 
 			if(Main.game.getPlayer().getQuest(QuestLine.SIDE_WES)==Quest.WES_2) {
-				responses.add(new Response("Anonymous tip",
-						"Ask Claire if there's a way to anonymously submit evidence of criminal activity, so that you can deposit the arcane recorder containing the footage of Elle dealing with the gang.",
+				responses.add(new Response("Анонимная наводка",
+						"Спросить Клэр, можно ли анонимно передать улики преступной деятельности, чтобы подбросить аркана-рекордер с записью того, как Эль разбирается с бандой.",
 						WesQuest.CLAIRE_ELLE_EVIDENCE) {
 					@Override
 					public void effects() {
@@ -1258,7 +1254,7 @@ public class SubmissionGenericPlaces {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Continue", "Let Claire get back on with her work, and continue on your way.", SEWER_ENTRANCE);
+				return new Response("Продолжить", "Позволить Клэр вернуться к работе и отправиться дальше своим путём.", SEWER_ENTRANCE);
 				
 			} else {
 				return null;
@@ -1303,8 +1299,8 @@ public class SubmissionGenericPlaces {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Wait",
-						"Do as Claire asks and wait for her to return.",
+				return new Response("Ждать",
+						"Сделать так, как просит Клэр, и ждать её возвращения.",
 						CLAIRE_VENGAR_HELP_WAIT) {
 					@Override
 					public void effects() {
@@ -1424,7 +1420,7 @@ public class SubmissionGenericPlaces {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Teleported!", "The teleportation pad has activated, sending you and Claire to an unknown destination!", ENFORCER_WARHOUSE_APPEARANCE) {
+				return new Response("Телепортация!", "Телепортационная платформа активировалась, отправив вас с Клэр в неизвестном направлении!", ENFORCER_WARHOUSE_APPEARANCE) {
 					@Override
 					public void effects() {
 						EnforcerWarehouse.initWarehouse();
@@ -1488,7 +1484,7 @@ public class SubmissionGenericPlaces {
 		}
 	};
 
-	public static final DialogueNode AFTER_CLAIRE_SEX = new DialogueNode("Finished", "You and Claire start disentangling yourselves from one another...", true) {
+	public static final DialogueNode AFTER_CLAIRE_SEX = new DialogueNode("Завершено", "Вы с Клэр начинаете высвобождаться из объятий друг друга...", true) {
 		@Override
 		public int getSecondsPassed() {
 			return 3*60;
@@ -1523,8 +1519,8 @@ public class SubmissionGenericPlaces {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new ResponseTrade("Trade",
-						"Take a look at what the vending machine has for sale today.",
+				return new ResponseTrade("Торговать",
+						"Посмотреть, что сегодня продается в торговом автомате.",
 						Main.game.getNpc(HazmatRat.class)) {
 					@Override
 					public void effects() {
@@ -1533,10 +1529,10 @@ public class SubmissionGenericPlaces {
 				};
 				
 			} else if(index==2) {
-				return new Response("Inspect",
+				return new Response("Осмотреть",
 						vendingMachineInspected
-							?"You've already taken a closer look at this vending machine..."
-							:"Take a closer look at this vending machine.",
+							?"Вы уже внимательно осматривали этот торговый автомат..."
+							:"Внимательнее осмотреть торговый автомат.",
 						vendingMachineInspected
 							?null
 							:VENDING_MACHINE_MISC) {
@@ -1549,10 +1545,10 @@ public class SubmissionGenericPlaces {
 				};
 				
 			} else if(index==3 && Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.vendingMachineTalked)) {
-				return new Response("Talk",
+				return new Response("Поговорить",
 						vendingMachineTalked
-							?"You've already tried to talk to this vending machine..."
-							:"Convinced that there must be someone inside of it, you decide to try to engage the vending machine in conversation.",
+							?"Вы уже пытались заговорить с этим торговым автоматом..."
+							:"Убежденный, что внутри кто-то есть, вы решаете попытаться завязать с торговым автоматом разговор.",
 							vendingMachineTalked
 								?null
 								:VENDING_MACHINE_MISC) {
@@ -1564,8 +1560,8 @@ public class SubmissionGenericPlaces {
 				};
 				
 			} else if(index==0) {
-				return new Response("Back",
-						"[pc.Step] away from the vending machine and go elsewhere...",
+				return new Response("Назад",
+						"[pc.Step] от торгового автомата и отправиться куда-нибудь еще...",
 						SEWER_ENTRANCE);
 			}
 			return null;

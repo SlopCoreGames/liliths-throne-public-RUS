@@ -13,113 +13,113 @@ import com.lilithsthrone.main.Main;
 public class SexSlotMilkingStall {
 
 	public static final SexSlot LOCKED_IN_MILKING_STALL = new SexSlot(
-			"Locked in stall",
-			"locked in stall",
-			"Unable to move, [npc1.name] [npc1.verb(wriggle)] around in the stall and [npc1.verb(let)] out [npc1.a_moan+] as [npc1.she] [npc1.verb(prepare)] to reach [npc1.her] climax.",
+			"Заперта в стойле",
+			"заперта в стойле",
+			"Невозможно пошевелиться, [npc1.name] [npc1.verb(wriggle)] вокруг в стойле и [npc1.verb(let)] наружу [npc1.a_moan+], пока [npc1.she] [npc1.verb(prepare)], чтобы достичь [npc1.her] кульминации.",
 			false,
 			SexSlotTag.LOCKED_IN_STOCKS);
 	public static final SexSlot LOCKED_IN_MILKING_STALL_TWO = new SexSlot(LOCKED_IN_MILKING_STALL) {
 		@Override
 		public String getDescription() {
-			return "locked in stall (2nd)";
+			return "заперта в стойле (2-я)";
 		}
 	};
 	public static final SexSlot LOCKED_IN_MILKING_STALL_THREE = new SexSlot(LOCKED_IN_MILKING_STALL) {
 		@Override
 		public String getDescription() {
-			return "locked in stall (3rd)";
+			return "заперта в стойле (3-я)";
 		}
 	};
 	public static final SexSlot LOCKED_IN_MILKING_STALL_FOUR = new SexSlot(LOCKED_IN_MILKING_STALL) {
 		@Override
 		public String getDescription() {
-			return "locked in stall (4th)";
+			return "заперта в стойле (4-я)";
 		}
 	};
 
 	
 	public static final SexSlot BEHIND_MILKING_STALL = new SexSlot(
-			"Behind stall",
-			"behind stall",
-			"[npc1.Name] [npc1.verb(buck)] [npc.her] hips forwards, thrusting into [npc2.namePos] groin and letting out [npc1.a_moan+] as [npc1.she] [npc1.verb(prepare)] to reach [npc1.her] climax.",
+			"Позади стойла",
+			"позади стойла",
+			"[npc1.Name] [npc1.verb(buck)] [npc.her] бедра вперед, вжимаясь в [npc2.namePos] пах и издавая [npc1.a_moan+], пока [npc1.she] [npc1.verb(prepare)], чтобы достичь [npc1.her] кульминации.",
 			false,
 			SexSlotTag.BEHIND_STOCKS);
 	public static final SexSlot BEHIND_MILKING_STALL_TWO = new SexSlot(BEHIND_MILKING_STALL) {
 		@Override
 		public String getDescription() {
-			return "behind stall (2nd)";
+			return "позади стойла (2-я)";
 		}
 	};
 	public static final SexSlot BEHIND_MILKING_STALL_THREE = new SexSlot(BEHIND_MILKING_STALL) {
 		@Override
 		public String getDescription() {
-			return "behind stall (3rd)";
+			return "за стойкой (3-й)";
 		}
 	};
 	public static final SexSlot BEHIND_MILKING_STALL_FOUR = new SexSlot(BEHIND_MILKING_STALL) {
 		@Override
 		public String getDescription() {
-			return "behind stall (4th)";
+			return "за стойкой (4-й)";
 		}
 	};
 	
 	
 	public static final SexSlot HUMPING = new SexSlot(
-			"Humping",
+			"Трах",
 			"humping",
-			"[npc1.Name] [npc1.verb(buck)] [npc.her] hips forwards, thrusting into [npc2.namePos] groin and letting out [npc1.a_moan+] as [npc1.she] [npc1.verb(prepare)] to reach [npc1.her] climax.",
+			"[npc1.Name] [npc1.verb(buck)] [npc.her] бедра вперед, вжимаясь в [npc2.namePos] пах и издавая [npc1.a_moan+], пока [npc1.she] [npc1.verb(prepare)], чтобы достичь [npc1.her] кульминации.",
 			false,
 			SexSlotTag.HUMPING_STOCKS);
 	public static final SexSlot HUMPING_TWO = new SexSlot(HUMPING) {
 		@Override
 		public String getDescription() {
-			return "humping (2nd)";
+			return "трах (2-й)";
 		}
 	};
 	public static final SexSlot HUMPING_THREE = new SexSlot(HUMPING) {
 		@Override
 		public String getDescription() {
-			return "humping (3rd)";
+			return "трах (3-й)";
 		}
 	};
 	public static final SexSlot HUMPING_FOUR = new SexSlot(HUMPING) {
 		@Override
 		public String getDescription() {
-			return "humping (4th)";
+			return "трахается (на четвереньках)";
 		}
 	};
 	
 	
 	public static final SexSlot BENEATH_MILKING_STALL = new SexSlot(
-			"All fours",
-			"all fours",
-			"[npc1.Name] [npc1.verb(buck)] [npc.her] hips back, thrusting into [npc2.namePos] groin and letting out [npc1.a_moan+] as [npc1.she] [npc1.verb(prepare)] to reach [npc1.her] climax.",
+			"На четвереньках",
+			"на четвереньках",
+			"[npc1.Name] [npc1.verb(buck)] [npc.her] бедра назад, вжимаясь в [npc2.namePos] пах и издавая [npc1.a_moan+], пока [npc1.she] [npc1.verb(prepare)], чтобы достичь [npc1.her] кульминации.",
 			false,
 			SexSlotTag.ALL_FOURS);
 	public static final SexSlot BENEATH_MILKING_STALL_TWO = new SexSlot(BENEATH_MILKING_STALL) {
 		@Override
 		public String getDescription() {
-			return "all fours (2nd)";
+			return "на четвереньках (2-я)";
 		}
 	};
 	public static final SexSlot BENEATH_MILKING_STALL_THREE = new SexSlot(BENEATH_MILKING_STALL) {
 		@Override
 		public String getDescription() {
-			return "all fours (3rd)";
+			return "на четвереньках (3-я)";
 		}
 	};
 	public static final SexSlot BENEATH_MILKING_STALL_FOUR = new SexSlot(BENEATH_MILKING_STALL) {
 		@Override
 		public String getDescription() {
-			return "all fours (4th)";
+			return "на четвереньках (4-я)";
 		}
 	};
 
 	
 	public static final SexSlot PERFORMING_ORAL = new SexSlot(
-			"Performing oral",
-			"performing oral",
-			"[npc1.Name] [npc1.verb(reach)] up and [npc1.verb(place)] a [npc1.hand] on one of [npc2.namePos] [npc2.legs], letting out [npc1.a_moan+] as [npc1.she] [npc1.verb(prepare)] to reach [npc1.her] climax.",
+			"Оральный секс",
+			"оральный секс",
+			"[npc1.Name] [npc1.verb(reach)] вверх и [npc1.verb(place)] [npc1.hand] на одном из [npc2.namePos] [npc2.legs], издавая [npc1.a_moan+], пока [npc1.she] [npc1.verb(prepare)], чтобы достичь [npc1.her] кульминации.",
 			false,
 			SexSlotTag.PERFORMING_ORAL_STOCKS) {
 		@Override
@@ -128,8 +128,8 @@ public class SexSlotMilkingStall {
 		}
 	};
 	public static final SexSlot PERFORMING_ORAL_TWO = new SexSlot(
-			"Performing oral",
-			"performing oral (2nd)",
+			"Оральный секс",
+			"оральный секс (2-й)",
 			null,
 			false,
 			SexSlotTag.PERFORMING_ORAL_STOCKS) {
@@ -139,8 +139,8 @@ public class SexSlotMilkingStall {
 		}
 	};
 	public static final SexSlot PERFORMING_ORAL_THREE = new SexSlot(
-			"Performing oral",
-			"performing oral (3rd)",
+			"Оральный секс",
+			"оральный секс (3-й)",
 			null,
 			false,
 			SexSlotTag.PERFORMING_ORAL_STOCKS) {
@@ -150,8 +150,8 @@ public class SexSlotMilkingStall {
 		}
 	};
 	public static final SexSlot PERFORMING_ORAL_FOUR = new SexSlot(
-			"Performing oral",
-			"performing oral (4th)",
+			"Оральный секс",
+			"оральный секс (4-й)",
 			null,
 			false,
 			SexSlotTag.PERFORMING_ORAL_STOCKS) {
@@ -163,27 +163,27 @@ public class SexSlotMilkingStall {
 	
 
 	public static final SexSlot RECEIVING_ORAL = new SexSlot(
-			"Receiving oral",
-			"receiving oral",
-			"[npc1.Name] [npc1.verb(reach)] down and [npc1.verb(place)] a [npc1.hand] on [npc2.namePos] head, letting out [npc1.a_moan+] as [npc1.she] [npc1.verb(prepare)] to reach [npc1.her] climax.",
+			"Получает оральный секс",
+			"получение орального секса",
+			"[npc1.Name] [npc1.verb(reach)] вниз и [npc1.verb(place)] [npc1.hand] на [npc2.namePos] голове, издавая [npc1.a_moan+], пока [npc1.she] [npc1.verb(prepare)], чтобы достичь [npc1.her] кульминации.",
 			true,
 			SexSlotTag.RECEIVING_ORAL_STOCKS);
 	public static final SexSlot RECEIVING_ORAL_TWO = new SexSlot(RECEIVING_ORAL) {
 		@Override
 		public String getDescription() {
-			return "receiving oral (2nd)";
+			return "принимает оральный секс (2-й)";
 		}
 	};
 	public static final SexSlot RECEIVING_ORAL_THREE =  new SexSlot(RECEIVING_ORAL) {
 		@Override
 		public String getDescription() {
-			return "receiving oral (3rd)";
+			return "принимает оральный секс (3-й)";
 		}
 	};
 	public static final SexSlot RECEIVING_ORAL_FOUR =  new SexSlot(RECEIVING_ORAL) {
 		@Override
 		public String getDescription() {
-			return "receiving oral (4th)";
+			return "принимает оральный секс (4-й)";
 		}
 	};
 }

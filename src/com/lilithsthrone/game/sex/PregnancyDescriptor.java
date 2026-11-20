@@ -24,52 +24,52 @@ public enum PregnancyDescriptor {
 			sb.append("<p class='centre noPad'>");
 			if(characterBeingImpregnated.isPlayer() && cumInPussy){
 				if(characterProvidingCum==null) {
-					sb.append("You feel cum ");
+					sb.append("Ты чувствуешь, как сперма ");
 					if(isSlime) {
-						sb.append("dispersing through your slimy body, seeking to impregnate your core");
+						sb.append("разливается по твоему склизкому телу, стремясь оплодотворить твою суть");
 					} else {
-						sb.append("deep in your [pc.pussy+]");
+						sb.append("глубоко внутри твоей [pc.pussy+]");
 					}
-					sb.append(", but because [style.boldSex(you're already pregnant, you don't have to worry about it)]!");
+					sb.append(", но так как [style.boldSex(ты уже беременна, тебе не о чем беспокоиться)]!");
 					
 				} else {
-					sb.append("You feel ");
+					sb.append("Ты чувствуешь, ");
 					if(selfcest) {
-						sb.append("your own [npc.cum+]");
+						sb.append("как твоя собственная [npc.cum+]");
 					} else {
 						sb.append("[npc2.namePos] [npc2.cum+]");
 					}
 					if(isSlime) {
-						sb.append(" dispersing through your slimy body, seeking to impregnate your core");
+						sb.append(" разливается по твоему склизкому телу, стремясь оплодотворить твою суть");
 					} else {
-						sb.append(" deep in your [pc.pussy+]");
+						sb.append(" глубоко внутри твоей [pc.pussy+]");
 					}
-					sb.append(", but because [style.boldSex(you're already pregnant, you don't have to worry about it)]!");
+					sb.append(", но так как [style.boldSex(ты уже беременна, тебе не о чем беспокоиться)]!");
 				}
 				
 			} else {
 				if(characterProvidingCum==null) {
-					sb.append("[npc.NameIsFull] already pregnant, [style.boldSex(so there's no chance that ");
+					sb.append("[npc.NameIsFull] уже беременна, [style.boldSex(так что нет шансов, что ");
 					if(selfcest) {
-						sb.append("[npc.sheHasFull] knocked [npc.herself] up");
+						sb.append("[npc.sheHasFull] обрюхатил [npc.herself]");
 					} else {
-						sb.append("[npc.sheHasFull] been impregnated");
+						sb.append("[npc.sheHasFull] забеременела");
 					}
 					sb.append(")]!");
 					
 				} else {
-					sb.append("[npc.NameIsFull] already pregnant, [style.boldSex(so there's no chance that ");
+					sb.append("[npc.NameIsFull] уже беременна, [style.boldSex(так что нет шансов, что ");
 					if(directSexInsemination) {
 						if(selfcest) {
-							sb.append("[npc.sheHasFull] knocked [npc.herself] up");
+							sb.append("[npc.sheHasFull] обрюхатил [npc.herself]");
 						} else {
-							sb.append("[npc2.nameHas] knocked [npc.herHim] up");
+							sb.append("[npc2.nameHas] обрюхатил [npc.herHim]");
 						}
 					} else {
 						if(selfcest) {
-							sb.append("[npc.sheHasFull] impregnated [npc.herself]");
+							sb.append("[npc.sheHasFull] оплодотворил [npc.herself]");
 						} else {
-							sb.append("[npc2.nameHas] impregnated [npc.herHim]");
+							sb.append("[npc2.nameHas] оплодотворил [npc.herHim]");
 						}
 					}
 					sb.append(")]!");
@@ -97,52 +97,52 @@ public enum PregnancyDescriptor {
 			sb.append("<p class='centre noPad'>");
 			if(characterBeingImpregnated.isPlayer() && cumInPussy){
 				if(characterProvidingCum==null) {
-					sb.append("You feel cum ");
+					sb.append("Ты чувствуешь, как сперма ");
 					if(isSlime) {
-						sb.append("dispersing through your slimy body, seeking to impregnate your core");
+						sb.append("разливается по твоему склизкому телу, стремясь оплодотворить твою суть");
 					} else {
-						sb.append("deep in your [pc.pussy+]");
+						sb.append("глубоко внутри твоей [pc.pussy+]");
 					}
-					sb.append(", but because [style.boldSex(your womb is already filled with eggs, you don't have to worry about it)]!");
+					sb.append(", но так как [style.boldSex(твоя утроба уже полна яйцеклеток, тебе не о чем беспокоиться)]!");
 					
 				} else {
-					sb.append("You feel ");
+					sb.append("Ты чувствуешь, ");
 					if(selfcest) {
-						sb.append("your own [npc.cum+]");
+						sb.append("как твоя собственная [npc.cum+]");
 					} else {
 						sb.append("[npc2.namePos] [npc2.cum+]");
 					}
 					if(isSlime) {
-						sb.append(" dispersing through your slimy body, seeking to impregnate your core");
+						sb.append(" разливается по твоему склизкому телу, стремясь оплодотворить твою суть");
 					} else {
-						sb.append(" deep in your [pc.pussy+]");
+						sb.append(" глубоко внутри твоей [pc.pussy+]");
 					}
-					sb.append(", but because [style.boldSex(your womb is already filled with eggs, you don't have to worry about it)]!");
+					sb.append(", но так как [style.boldSex(твоя утроба уже полна яйцеклеток, тебе не о чем беспокоиться)]!");
 				}
 				
 			} else {
 				if(characterProvidingCum==null) {
-					sb.append("[npc.NamePos] womb is already filled with eggs, [style.boldSex(so there's no chance that ");
+					sb.append("Утроба [npc.NamePos] уже полна яйцеклеток, [style.boldSex(так что нет шансов, что ");
 					if(selfcest) {
-						sb.append("[npc.sheHasFull] knocked [npc.herself] up");
+						sb.append("[npc.sheHasFull] обрюхатил [npc.herself]");
 					} else {
-						sb.append("[npc.sheHasFull] been impregnated");
+						sb.append("[npc.sheHasFull] забеременела");
 					}
 					sb.append(")]!");
 					
 				} else {
-					sb.append("[npc.NamePos] womb is already filled with eggs, [style.boldSex(so there's no chance that ");
+					sb.append("Утроба [npc.NamePos] уже полна яйцеклеток, [style.boldSex(так что нет шансов, что ");
 					if(directSexInsemination) {
 						if(selfcest) {
-							sb.append("[npc.sheHasFull] knocked [npc.herself] up");
+							sb.append("[npc.sheHasFull] обрюхатил [npc.herself]");
 						} else {
-							sb.append("[npc2.nameHas] knocked [npc.herHim] up");
+							sb.append("[npc2.nameHas] обрюхатил [npc.herHim]");
 						}
 					} else {
 						if(selfcest) {
-							sb.append("[npc.sheHasFull] impregnated [npc.herself]");
+							sb.append("[npc.sheHasFull] оплодотворил [npc.herself]");
 						} else {
-							sb.append("[npc2.nameHas] impregnated [npc.herHim]");
+							sb.append("[npc2.nameHas] оплодотворил [npc.herHim]");
 						}
 					}
 					sb.append(")]!");
@@ -169,27 +169,27 @@ public enum PregnancyDescriptor {
 			
 			sb.append("<p class='centre noPad'>");
 			if(!cumInPussy) {
-				sb.append("Although [npc.namePos] womb is free, [style.boldSex(there's no chance that ");
+				sb.append("Хотя утроба [npc.namePos] свободна, [style.boldSex(нет никаких шансов, что ");
 				if(characterProvidingCum==null) {
 					if(selfcest) {
-						sb.append("[npc.sheHasFull] knocked [npc.herself] up");
+						sb.append("[npc.sheHasFull] обрюхатил [npc.herself]");
 					} else {
-						sb.append("[npc.sheHasFull] been impregnated");
+						sb.append("[npc.sheHasFull] забеременела");
 					}
 					sb.append(")]!");
 					
 				} else {
 					if(directSexInsemination) {
 						if(selfcest) {
-							sb.append("[npc.sheHasFull] knocked [npc.herself] up");
+							sb.append("[npc.sheHasFull] обрюхатил [npc.herself]");
 						} else {
-							sb.append("[npc2.nameHas] knocked [npc.herHim] up");
+							sb.append("[npc2.nameHas] обрюхатил [npc.herHim]");
 						}
 					} else {
 						if(selfcest) {
-							sb.append("[npc.sheHasFull] impregnated [npc.herself]");
+							sb.append("[npc.sheHasFull] оплодотворил [npc.herself]");
 						} else {
-							sb.append("[npc2.nameHas] impregnated [npc.herHim]");
+							sb.append("[npc2.nameHas] оплодотворил [npc.herHim]");
 						}
 					}
 					sb.append(")]!");
@@ -197,54 +197,54 @@ public enum PregnancyDescriptor {
 				
 			} else if(characterBeingImpregnated.isPlayer()){
 				if(characterProvidingCum==null) {
-					sb.append("Despite feeling cum ");
+					sb.append("несмотря на ощущение спермы ");
 					if(isSlime) {
-						sb.append("dispersing through your slimy body, seeking to impregnate your core");
+						sb.append("разливается по твоему склизкому телу, стремясь оплодотворить твою суть");
 					} else {
-						sb.append("deep in your womb");
+						sb.append("глубоко в твоей утробе");
 					}
-					sb.append(", you feel that [style.boldSex(you aren't going to get pregnant from this)].");
+					sb.append(", ты чувствуешь, что [style.boldSex(от этого ты не забеременеешь)].");
 					
 				} else {
-					sb.append("Despite feeling ");
+					sb.append("Несмотря на ощущение ");
 					if(selfcest) {
-						sb.append("your own [npc.cum+]");
+						sb.append("как твоя собственная [npc.cum+]");
 					} else {
 						sb.append("[npc2.namePos] [npc2.cum+]");
 					}
 					if(isSlime) {
-						sb.append(" dispersing through your slimy body, seeking to impregnate your core");
+						sb.append(" разливается по твоему склизкому телу, стремясь оплодотворить твою суть");
 					} else {
-						sb.append(" deep in your womb");
+						sb.append(" глубоко в твоей утробе");
 					}
-					sb.append(", you feel that [style.boldSex(you aren't going to get pregnant from this)].");
+					sb.append(", ты чувствуешь, что [style.boldSex(от этого ты не забеременеешь)].");
 				}
 				
 			} else {
 				if(characterProvidingCum==null) {
-					sb.append("Despite having [npc.her] ");
+					sb.append("Несмотря на то, что тело [npc.her], ");
 					if(isSlime) {
-						sb.append("slimy body");
+						sb.append("скользкое и");
 					} else {
-						sb.append("womb");
+						sb.append("матку");
 					}
 					if(selfcest) {
-						sb.append(" filled with [npc.her] own seed, [style.boldSex(there's no chance that [npc.nameHasFull] impregnated [npc.herself])].");
+						sb.append(" наполненное собственным семенем [npc.her], [style.boldSex(нет никаких шансов, что [npc.nameHasFull] оплодотворил(а) [npc.herself])].");
 					} else {
-						sb.append(" filled with cum, [style.boldSex(there's no chance that [npc.nameHasFull] been impregnated)].");
+						sb.append(" наполненная спермой, [style.boldSex(шансов на то, что [npc.nameHasFull] забеременела, нет)].");
 					}
 					
 				} else {
-					sb.append("Despite having [npc.her] ");
+					sb.append("Несмотря на то, что тело [npc.her], ");
 					if(isSlime) {
-						sb.append("slimy body");
+						sb.append("скользкое и");
 					} else {
-						sb.append("womb");
+						sb.append("матку");
 					}
 					if(selfcest) {
-						sb.append(" filled with [npc.her] own seed, [style.boldSex(there's no chance that [npc.nameHasFull] impregnated [npc.herself])].");
+						sb.append(" наполненное собственным семенем [npc.her], [style.boldSex(нет никаких шансов, что [npc.nameHasFull] оплодотворил(а) [npc.herself])].");
 					} else {
-						sb.append(" filled with [npc2.namePos] [npc2.cum+], [style.boldSex(there's no chance that [npc.nameHasFull] been impregnated)].");
+						sb.append(" наполненная [npc2.namePos] [npc2.cum+], [style.boldSex(шансов на то, что [npc.nameHasFull] забеременела, нет)].");
 					}
 				}
 			}
@@ -269,55 +269,55 @@ public enum PregnancyDescriptor {
 			
 			sb.append("<p class='centre noPad'>");
 			if(!cumInPussy) {
-				sb.append("Letting out a gasp,");
+				sb.append("Издавая судорожный вздох,");
 				if(characterBeingImpregnated.hasStatusEffect(StatusEffect.PREGNANT_0)) {
-					sb.append(" [npc.name] [npc.verb(realise)] that [style.boldSex(if [npc.she] [npc.is]n't already pregnant, there's a small chance [npc.she] [npc.is] now)]!");
+					sb.append(" [npc.name] [npc.verb(realise)], что [style.boldSex(если [npc.she] [npc.is] нет уже беременной, есть небольшой шанс, что [npc.she] [npc.is] прямо сейчас)]!");
 				} else {
-					sb.append(" [npc.name] [npc.verb(realise)] that [style.boldSex(there's a small chance [npc.she]'ll get pregnant from this)]!");
+					sb.append(" [npc.name] [npc.verb(realise)], что [style.boldSex(есть небольшой шанс, что [npc.she] забеременеет от этого)]!");
 				}
 				
 			} else if(characterBeingImpregnated.isPlayer()){
-				sb.append("You feel ");
+				sb.append("Ты чувствуешь, ");
 				if(selfcest) {
-					sb.append("your own [npc.cum+]");
+					sb.append("как твоя собственная [npc.cum+]");
 				} else {
 					if(characterProvidingCum==null) {
-						sb.append("cum");
+						sb.append("сперма");
 					} else {
 						sb.append("[npc2.namePos] [npc2.cum+]");
 					}
 				}
 				if(isSlime) {
-					sb.append(" dispersing through your slimy body, seeking to impregnate your core");
+					sb.append(" разливается по твоему склизкому телу, стремясь оплодотворить твою суть");
 				} else {
-					sb.append(" deep in your womb");
+					sb.append(" глубоко в твоей утробе");
 				}
 				if(characterBeingImpregnated.hasStatusEffect(StatusEffect.PREGNANT_0)) {
-					sb.append(", and you realise that [style.boldSex(if you aren't already pregnant, there's a small chance you are now)]!");
+					sb.append(", и ты понимаешь, что [style.boldSex(если ты еще не беременна, то теперь есть небольшой шанс, что ты забеременела)]!");
 				} else {
-					sb.append(", and you realise that [style.boldSex(there's a small chance you'll get pregnant)]!");
+					sb.append(", и ты понимаешь, что [style.boldSex(есть небольшой шанс, что ты забеременеешь)]!");
 				}
 				
 			} else {
-				sb.append("After having [npc.her] ");
+				sb.append("После того как [npc.her] ");
 				if(isSlime) {
-					sb.append("slimy body");
+					sb.append("скользкое и");
 				} else {
-					sb.append("womb");
+					sb.append("матку");
 				}
 				if(selfcest) {
-					sb.append(" filled with [npc.her] own seed,");
+					sb.append(" наполненная [npc.her] собственным семенем,");
 				} else {
 					if(characterProvidingCum==null) {
-						sb.append(" filled with cum,");
+						sb.append(" наполненная спермой,");
 					} else {
-						sb.append(" filled with [npc2.namePos] [npc2.cum+],");
+						sb.append(" наполнен(а) [npc2.namePos] [npc2.cum+],");
 					}
 				}
 				if(characterBeingImpregnated.hasStatusEffect(StatusEffect.PREGNANT_0)) {
-					sb.append(" [npc.name] [npc.verb(realise)] that [style.boldSex(if [npc.she] isn't already pregnant, there's a small chance [npc.she] is now)]!");
+					sb.append(" [npc.name] [npc.verb(realise)], [style.boldSex(если [npc.she] еще не беременна, то теперь есть небольшой шанс, что [npc.she] забеременела)]!");
 				} else {
-					sb.append(" [npc.name] [npc.verb(realise)] that [style.boldSex(there's a small chance [npc.she]'ll get pregnant)]!");
+					sb.append(" [npc.name] [npc.verb(realise)], при этом [style.boldSex(есть небольшой шанс, что [npc.she] забеременеет)]!");
 				}
 			}
 			sb.append("</p>");
@@ -341,55 +341,55 @@ public enum PregnancyDescriptor {
 			
 			sb.append("<p class='centre noPad'>");
 			if(!cumInPussy) {
-				sb.append("Letting out a gasp,");
+				sb.append("Издавая судорожный вздох,");
 				if(characterBeingImpregnated.hasStatusEffect(StatusEffect.PREGNANT_0)) {
-					sb.append(" [npc.name] [npc.verb(realise)] that [style.boldSex(if [npc.she] [npc.is]n't already pregnant, there's a chance [npc.she] [npc.is] now)]!");
+					sb.append(" [npc.name] [npc.verb(realise)], что [style.boldSex(если [npc.she] [npc.is] нет уже беременной, есть шанс, что [npc.she] [npc.is] прямо сейчас)]!");
 				} else {
-					sb.append(" [npc.name] [npc.verb(realise)] that [style.boldSex(there's a chance [npc.she]'ll get pregnant from this)]!");
+					sb.append(" [npc.name] [npc.verb(realise)], при этом [style.boldSex(есть шанс, что от этого [npc.she] забеременеет)]!");
 				}
 				
 			} else if(characterBeingImpregnated.isPlayer()){
-				sb.append("You feel ");
+				sb.append("Ты чувствуешь, ");
 				if(selfcest) {
-					sb.append("your own [npc.cum+]");
+					sb.append("как твоя собственная [npc.cum+]");
 				} else {
 					if(characterProvidingCum==null) {
-						sb.append("cum");
+						sb.append("сперма");
 					} else {
 						sb.append("[npc2.namePos] [npc2.cum+]");
 					}
 				}
 				if(isSlime) {
-					sb.append(" dispersing through your slimy body, seeking to impregnate your core");
+					sb.append(" разливается по твоему склизкому телу, стремясь оплодотворить твою суть");
 				} else {
-					sb.append(" deep in your womb");
+					sb.append(" глубоко в твоей утробе");
 				}
 				if(characterBeingImpregnated.hasStatusEffect(StatusEffect.PREGNANT_0)) {
-					sb.append(", and you realise that [style.boldSex(if you aren't already pregnant, there's a chance you are now)]!");
+					sb.append(", и ты понимаешь, что [style.boldSex(если ты еще не беременна, есть шанс, что ты только что забеременела)]!");
 				} else {
-					sb.append(", and you realise that [style.boldSex(there's a chance you'll get pregnant)]!");
+					sb.append(", и ты понимаешь, что [style.boldSex(есть шанс, что ты забеременеешь)]!");
 				}
 				
 			} else {
-				sb.append("After having [npc.her] ");
+				sb.append("После того как [npc.her] ");
 				if(isSlime) {
-					sb.append("slimy body");
+					sb.append("скользкое и");
 				} else {
-					sb.append("womb");
+					sb.append("матку");
 				}
 				if(selfcest) {
-					sb.append(" filled with [npc.her] own seed,");
+					sb.append(" наполненная [npc.her] собственным семенем,");
 				} else {
 					if(characterProvidingCum==null) {
-						sb.append(" filled with cum,");
+						sb.append(" наполненная спермой,");
 					} else {
-						sb.append(" filled with [npc2.namePos] [npc2.cum+],");
+						sb.append(" наполнен(а) [npc2.namePos] [npc2.cum+],");
 					}
 				}
 				if(characterBeingImpregnated.hasStatusEffect(StatusEffect.PREGNANT_0)) {
-					sb.append(" [npc.name] [npc.verb(realise)] that [style.boldSex(if [npc.she] isn't already pregnant, there's a chance [npc.she] is now)]!");
+					sb.append(" [npc.name] [npc.verb(realise)], что [style.boldSex(если [npc.she] еще не беременна, то теперь [npc.she] может оказаться в положении)]!");
 				} else {
-					sb.append(" [npc.name] [npc.verb(realise)] that [style.boldSex(there's a chance [npc.she]'ll get pregnant)]!");
+					sb.append(" [npc.name] [npc.verb(realise)], при этом [style.boldSex(есть шанс, что [npc.she] забеременеет)]!");
 				}
 			}
 			sb.append("</p>");
@@ -413,55 +413,55 @@ public enum PregnancyDescriptor {
 			
 			sb.append("<p class='centre noPad'>");
 			if(!cumInPussy) {
-				sb.append("Letting out a gasp,");
+				sb.append("Издавая судорожный вздох,");
 				if(characterBeingImpregnated.hasStatusEffect(StatusEffect.PREGNANT_0)) {
-					sb.append(" [npc.name] [npc.verb(realise)] that [style.boldSex(if [npc.she] [npc.is]n't already pregnant, there's a high chance [npc.she] [npc.is] now)]!");
+					sb.append(" [npc.name] [npc.verb(realise)], что [style.boldSex(если [npc.she] [npc.is]n't уже не беременна, то есть большой шанс, что [npc.she] [npc.is] прямо сейчас)]!");
 				} else {
-					sb.append(" [npc.name] [npc.verb(realise)] that [style.boldSex(there's a high chance [npc.she]'ll get pregnant from this)]!");
+					sb.append(" [npc.name] [npc.verb(realise)], что [style.boldSex(есть большая вероятность, что от этого [npc.she] забеременеет)]!");
 				}
 				
 			} else if(characterBeingImpregnated.isPlayer()){
-				sb.append("You feel ");
+				sb.append("Ты чувствуешь, ");
 				if(selfcest) {
-					sb.append("your own [npc.cum+]");
+					sb.append("как твоя собственная [npc.cum+]");
 				} else {
 					if(characterProvidingCum==null) {
-						sb.append("cum");
+						sb.append("сперма");
 					} else {
 						sb.append("[npc2.namePos] [npc2.cum+]");
 					}
 				}
 				if(isSlime) {
-					sb.append(" dispersing through your slimy body, seeking to impregnate your core");
+					sb.append(" разливается по твоему склизкому телу, стремясь оплодотворить твою суть");
 				} else {
-					sb.append(" deep in your womb");
+					sb.append(" глубоко в твоей утробе");
 				}
 				if(characterBeingImpregnated.hasStatusEffect(StatusEffect.PREGNANT_0)) {
-					sb.append(", and you realise that [style.boldSex(if you aren't already pregnant, there's a high chance you are now)]!");
+					sb.append(", и ты понимаешь, что [style.boldSex(если ты еще не беременна, то сейчас ты наверняка забеременела)]!");
 				} else {
-					sb.append(", and you realise that [style.boldSex(there's a high chance you'll get pregnant)]!");
+					sb.append(", и ты понимаешь, что [style.boldSex(есть большая вероятность, что ты забеременеешь)]!");
 				}
 				
 			} else {
-				sb.append("After having [npc.her] ");
+				sb.append("После того как [npc.her] ");
 				if(isSlime) {
-					sb.append("slimy body");
+					sb.append("скользкое и");
 				} else {
-					sb.append("womb");
+					sb.append("матку");
 				}
 				if(selfcest) {
-					sb.append(" filled with [npc.her] own seed,");
+					sb.append(" наполненная [npc.her] собственным семенем,");
 				} else {
 					if(characterProvidingCum==null) {
-						sb.append(" filled with cum,");
+						sb.append(" наполненная спермой,");
 					} else {
-						sb.append(" filled with [npc2.namePos] [npc2.cum+],");
+						sb.append(" наполнен(а) [npc2.namePos] [npc2.cum+],");
 					}
 				}
 				if(characterBeingImpregnated.hasStatusEffect(StatusEffect.PREGNANT_0)) {
-					sb.append(" [npc.name] [npc.verb(realise)] that [style.boldSex(if [npc.she] isn't already pregnant, there's a high chance [npc.she] is now)]!");
+					sb.append(" [npc.name] [npc.verb(realise)], что [style.boldSex(если [npc.she] еще не беременна, то теперь [npc.she], скорее всего, зачинает)]!");
 				} else {
-					sb.append(" [npc.name] [npc.verb(realise)] that [style.boldSex(there's a high chance [npc.she]'ll get pregnant)]!");
+					sb.append(" [npc.name] [npc.verb(realise)], что [style.boldSex(есть большая вероятность, что [npc.she] забеременеет)]!");
 				}
 			}
 			sb.append("</p>");
@@ -485,55 +485,55 @@ public enum PregnancyDescriptor {
 			
 			sb.append("<p class='centre noPad'>");
 			if(!cumInPussy) {
-				sb.append("Letting out a gasp,");
+				sb.append("Издавая судорожный вздох,");
 				if(characterBeingImpregnated.hasStatusEffect(StatusEffect.PREGNANT_0)) {
-					sb.append(" [npc.name] [npc.verb(realise)] that [style.boldSex(if [npc.she] [npc.is]n't already pregnant, [npc.she] certainly [npc.is] now)]!");
+					sb.append(" [npc.name] [npc.verb(realise)], если [style.boldSex([npc.she] [npc.is] еще не беременна, то [npc.she] теперь точно [npc.is])]!");
 				} else {
-					sb.append(" [npc.name] [npc.verb(realise)] that [style.boldSex(it's a certainty that [npc.sheHas] been impregnated from this)]!");
+					sb.append(" [npc.name] [npc.verb(realise)], что [style.boldSex(нет сомнений, что [npc.sheHas] была оплодотворена этим)]!");
 				}
 				
 			} else if(characterBeingImpregnated.isPlayer()){
-				sb.append("You feel ");
+				sb.append("Ты чувствуешь, ");
 				if(selfcest) {
-					sb.append("your own [npc.cum+]");
+					sb.append("как твоя собственная [npc.cum+]");
 				} else {
 					if(characterProvidingCum==null) {
-						sb.append("cum");
+						sb.append("сперма");
 					} else {
 						sb.append("[npc2.namePos] [npc2.cum+]");
 					}
 				}
 				if(isSlime) {
-					sb.append(" dispersing through your slimy body, seeking to impregnate your core");
+					sb.append(" разливается по твоему склизкому телу, стремясь оплодотворить твою суть");
 				} else {
-					sb.append(" deep in your womb");
+					sb.append(" глубоко в твоей утробе");
 				}
 				if(characterBeingImpregnated.hasStatusEffect(StatusEffect.PREGNANT_0)) {
-					sb.append(", and you realise that [style.boldSex(if you aren't already pregnant, you certainly are now)]!");
+					sb.append(", и ты понимаешь, что [style.boldSex(если ты еще не беременна, то теперь ты точно беременна)]!");
 				} else {
-					sb.append(", and you realise that [style.boldSex(it's a certainty that you've been impregnated)]!");
+					sb.append(", и ты понимаешь, что [style.boldSex(нет сомнений, что ты была оплодотворена)]!");
 				}
 				
 			} else {
-				sb.append("After having [npc.her] ");
+				sb.append("После того как [npc.her] ");
 				if(isSlime) {
-					sb.append("slimy body");
+					sb.append("скользкое и");
 				} else {
-					sb.append("womb");
+					sb.append("матку");
 				}
 				if(selfcest) {
-					sb.append(" filled with [npc.her] own seed,");
+					sb.append(" наполненная [npc.her] собственным семенем,");
 				} else {
 					if(characterProvidingCum==null) {
-						sb.append(" filled with cum,");
+						sb.append(" наполненная спермой,");
 					} else {
-						sb.append(" filled with [npc2.namePos] [npc2.cum+],");
+						sb.append(" наполнен(а) [npc2.namePos] [npc2.cum+],");
 					}
 				}
 				if(characterBeingImpregnated.hasStatusEffect(StatusEffect.PREGNANT_0)) {
-					sb.append(" [npc.name] [npc.verb(realise)] that [style.boldSex(if [npc.she] isn't already pregnant, [npc.she] certainly is now)]!");
+					sb.append(" [npc.name] [npc.verb(realise)], что [style.boldSex(если [npc.she] еще не была беременна, то теперь [npc.she] точно забеременела)]!");
 				} else {
-					sb.append(" [npc.name] [npc.verb(realise)] that [style.boldSex(it's a certainty that [npc.sheHas] been impregnated)]!");
+					sb.append(" [npc.name] [npc.verb(realise)], что [style.boldSex(нет сомнений: [npc.sheHas] была оплодотворена)]!");
 				}
 			}
 			sb.append("</p>");

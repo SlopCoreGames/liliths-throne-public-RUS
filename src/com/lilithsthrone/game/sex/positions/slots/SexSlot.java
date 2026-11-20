@@ -71,7 +71,7 @@ public class SexSlot {
 	 */
 	public String getOrgasmDescription(GameCharacter orgasmingCharacter, GameCharacter targetedCharacter) {
 		if(orgasmingCharacter.equals(targetedCharacter)) {
-			return "[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(prepare)] to reach [npc.her] climax.";
+			return "[npc.Name] [npc.verb(let)] из [npc.a_moan+] как [npc.she] [npc.verb(prepare)], чтобы достичь [npc.her] кульминации.";
 		}
 		if(orgasmDescription==null) {
 			return getGenericOrgasmDescription(orgasmingCharacter, targetedCharacter);
@@ -85,10 +85,10 @@ public class SexSlot {
 	private String getGenericOrgasmDescription(GameCharacter orgasmingCharacter, GameCharacter targetedCharacter) {
 		if(orgasmingCharacter.equals(targetedCharacter)) {
 			return UtilText.parse(orgasmingCharacter, targetedCharacter,
-					"[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(reach)] [npc.her] climax.");
+					"[npc.Name] [npc.verb(let)] из [npc.a_moan+] как [npc.she] [npc.verb(reach)] [npc.her] кульминации.");
 		} else {
 			return UtilText.parse(orgasmingCharacter, targetedCharacter,
-					"Pressing [npc.herself] against [npc2.name], [npc.name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(reach)] [npc.her] climax.");
+					"Прижимая [npc.herself] к [npc2.name], [npc.name] [npc.verb(let)] из [npc.a_moan+] как [npc.she] [npc.verb(reach)] [npc.her] кульминации.");
 		}
 	}
 
@@ -97,15 +97,15 @@ public class SexSlot {
 	 */
 	public String getGenericEndSexDescription(GameCharacter endingCharacter, GameCharacter targetedCharacter) {
 		if(Main.game.isInSex() && Main.sex.isMasturbation()) {
-			return UtilText.parse(endingCharacter, "Deciding that [npc.sheHas] had enough for now, [npc.name] [npc.verb(put)] an end to [npc.her] masturbation session and [npc.verb(prepare)] to continue on [npc.her] way.");
+			return UtilText.parse(endingCharacter, "Решив, что с [npc.sheHas] на сегодня хватит, [npc.name] [npc.verb(put)] завершает сеанс мастурбации [npc.her] и [npc.verb(prepare)], чтобы продолжить свой [npc.her] путь.");
 		}
 
 		if(targetedCharacter.isAsleep()) {
 			return UtilText.parse(endingCharacter, targetedCharacter,
-					"With a satisfied sigh, [npc.name] [npc.verb(separate)] [npc.herself] from [npc2.name], making sure not to wake [npc2.herHim] up in the process.");
+					"С удовлетворенным вздохом, [npc.name] [npc.verb(separate)] [npc.herself] из [npc2.name], стараясь при этом не разбудить [npc2.herHim].");
 		}
 		return UtilText.parse(endingCharacter, targetedCharacter,
-				"With a satisfied sigh, [npc.name] [npc.verb(disentangle)] [npc.herself] from [npc2.namePos] clutches, before stating that [npc.sheHas] had enough for now.");
+				"С удовлетворенным вздохом, [npc.name] [npc.verb(disentangle)] [npc.herself] из хватки [npc2.namePos], прежде чем заявить, что с [npc.sheHas] на сегодня хватит.");
 	}
 	
 	
