@@ -1054,7 +1054,7 @@ public class BodyCoveringType {
 		
 		// Modded covering types:
 		
-		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/раса", "coveringTypes", null);
+		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/race", "coveringTypes", null);
 		for(Entry<String, Map<String, File>> entry : moddedFilesMap.entrySet()) {
 			for(Entry<String, File> innerEntry : entry.getValue().entrySet()) {
 				try {

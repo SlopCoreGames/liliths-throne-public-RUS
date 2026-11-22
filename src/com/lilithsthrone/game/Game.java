@@ -3817,7 +3817,7 @@ public class Game implements XMLSaving {
 						&& Main.game.isRequestAutosave()
 						&& (Main.game.getCurrentDialogueNode()!=null && !Main.game.getCurrentDialogueNode().isTravelDisabled())) {
 					lastAutoSaveTime = Main.game.getSecondsPassed();
-					Main.saveGame("Автосохранение_"+Main.game.getPlayer().getName(false), true, true);
+					Main.saveGame("AutoSave_"+Main.game.getPlayer().getName(false), true, true);
 					Main.game.setRequestAutosave(false);
 				}
 				
@@ -4068,7 +4068,7 @@ public class Game implements XMLSaving {
 				&& Main.game.isRequestAutosave()
 				&& (Main.game.getCurrentDialogueNode()!=null && !Main.game.getCurrentDialogueNode().isTravelDisabled())) {
 			lastAutoSaveTime = Main.game.getSecondsPassed();
-			Main.saveGame("Автосохранение_"+Main.game.getPlayer().getName(false), true, true);
+			Main.saveGame("AutoSave_"+Main.game.getPlayer().getName(false), true, true);
 			Main.game.setRequestAutosave(false);
 		}
 

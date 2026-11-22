@@ -225,7 +225,7 @@ public class Belle extends NPC {
 		
 		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("innoxia_head_headband_bow", PresetColour.CLOTHING_WHITE, PresetColour.CLOTHING_GREY, PresetColour.CLOTHING_PINK_LIGHT, false), true, this);
 		
-		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("TonyJC_кроп-топ с завязками", PresetColour.CLOTHING_PINK_LIGHT, false), true, this);
+		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("TonyJC_tie_up_crop_top", PresetColour.CLOTHING_PINK_LIGHT, false), true, this);
 		AbstractClothing cropTop = this.getClothingInSlot(InventorySlot.TORSO_UNDER);
 		this.isAbleToBeDisplaced(cropTop, DisplacementType.UNTIE, true, true, this);
 		

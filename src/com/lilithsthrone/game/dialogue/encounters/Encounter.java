@@ -1443,7 +1443,7 @@ public class Encounter {
 		
 		// Modded encounters:
 		
-		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/встречи");
+		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/encounters");
 		for(Entry<String, Map<String, File>> entry : moddedFilesMap.entrySet()) {
 			for(Entry<String, File> innerEntry : entry.getValue().entrySet()) {
 				try {

@@ -417,7 +417,7 @@ public class Subspecies {
 			120000,
 			"innoxia_race_demon_liliths_gift",
 			null,
-			"statusEffects/race/raceДемон",
+			"statusEffects/race/raceDemon",
 			"statusEffects/race/raceBackground",
 			"демон",
 			"демоны",
@@ -607,7 +607,7 @@ public class Subspecies {
 			50000,
 			"innoxia_race_demon_liliths_gift",
 			null,
-			"statusEffects/race/raceДемон",
+			"statusEffects/race/raceDemon",
 			"statusEffects/race/raceBackground",
 			"полудемон",
 			"полудемоны",
@@ -771,7 +771,7 @@ public class Subspecies {
 			1000,
 			"innoxia_race_imp_impish_brew",
 			null,
-			"statusEffects/race/raceБес",
+			"statusEffects/race/raceImp",
 			"statusEffects/race/raceBackground",
 			"бес",
 			"бесы",
@@ -4676,7 +4676,7 @@ public class Subspecies {
 			12000,
 			"innoxia_race_harpy_harpy_perfume",
 			"innoxia_race_harpy_bubblegum_lollipop",
-			"statusEffects/race/raceГарпия",
+			"statusEffects/race/raceHarpy",
 			"statusEffects/race/raceBackground",
 			"гарпия",
 			"гарпии",
@@ -4808,7 +4808,7 @@ public class Subspecies {
 			14000,
 			"innoxia_race_harpy_harpy_perfume",
 			"innoxia_race_harpy_bubblegum_lollipop",
-			"statusEffects/race/raceГарпия",
+			"statusEffects/race/raceHarpy",
 			"statusEffects/race/raceBackground",
 			"воронья-гарпия",
 			"вороньи-гарпии",
@@ -4920,7 +4920,7 @@ public class Subspecies {
 			22000,
 			"innoxia_race_harpy_harpy_perfume",
 			"innoxia_race_harpy_bubblegum_lollipop",
-			"statusEffects/race/raceГарпия",
+			"statusEffects/race/raceHarpy",
 			"statusEffects/race/raceBackground",
 			"лебединая гарпия",
 			"лебединые гарпии",
@@ -5145,7 +5145,7 @@ public class Subspecies {
 			50000,
 			"innoxia_race_harpy_harpy_perfume",
 			"innoxia_race_harpy_bubblegum_lollipop",
-			"statusEffects/race/raceГарпия",
+			"statusEffects/race/raceHarpy",
 			"statusEffects/race/raceBackgroundPhoenix",
 			"феникс-гарпия",
 			"феникс-гарпии",
@@ -6090,7 +6090,7 @@ public class Subspecies {
 
 		// Modded subspecies:
 		
-		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/раса", "subspecies", null);
+		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/race", "subspecies", null);
 		for(Entry<String, Map<String, File>> entry : moddedFilesMap.entrySet()) {
 			for(Entry<String, File> innerEntry : entry.getValue().entrySet()) {
 				if(Util.getXmlRootElementName(innerEntry.getValue()).equals("subspecies")) {

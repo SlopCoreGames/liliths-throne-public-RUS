@@ -29,10 +29,10 @@
 		<equipText><![CDATA[
 		[npc.Name] [npc.verb(достает)] кун-пушку
 		#IF npc.getBreastRawStoredMilkValue()>=150 
-			#ЗАТЕМ незаметно [npc.verb(прикрепляет)] чашеобразные насадки к [npc.her] [npc.nipplesD]. [npc.She] затем [npc.verb(накидывает)] ремень на [npc.her] плечо и [npc.verb(издает)] тихий стон, когда насосы втягивают [npc.her] [npc.milkD] по шлангам в встроенный бак.
+			#THEN незаметно [npc.verb(прикрепляет)] чашеобразные насадки к [npc.her] [npc.nipplesD]. [npc.She] затем [npc.verb(накидывает)] ремень на [npc.her] плечо и [npc.verb(издает)] тихий стон, когда насосы втягивают [npc.her] [npc.milkD] по шлангам в встроенный бак.
 			[#npc.setBreastStoredMilk(npc.getBreastRawStoredMilkValue()-150)]
 		#ELSEIF npc.getPenisRawStoredCumValue()>=150
-			#ЗАТЕМ незаметно [npc.verb(надевает)] чашеобразную насадку на [npc.her] [npc.penisD]. [npc.She] затем [npc.verb(накидывает)] ремень на [npc.her] плечо и [npc.verb(издает)] тихий стон, когда насосы засасывают [npc.her] [npc.cumD] во встроенный бак.
+			#THEN незаметно [npc.verb(надевает)] чашеобразную насадку на [npc.her] [npc.penisD]. [npc.She] затем [npc.verb(накидывает)] ремень на [npc.her] плечо и [npc.verb(издает)] тихий стон, когда насосы засасывают [npc.her] [npc.cumD] во встроенный бак.
 			[#npc.setPenisStoredCum(npc.getPenisRawStoredCumValue()-150)]
 		#ELSE и [npc.verb(allow)] встроенный бак магическим образом наполняется водой, усиленной Арканой, так как [npc.sheHasFull] нет специальных боеприпасов, чтобы залить в него, после чего накидывает ремень на [npc.her] плечо.
 		#ENDIF

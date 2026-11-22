@@ -345,7 +345,7 @@ public class StatusEffect {
 					new Value<>(Attribute.DAMAGE_SPELLS, 10f),
 					new Value<>(Attribute.SPELL_COST_MODIFIER, 5f)),
 			Util.newArrayListOfValues(
-					"[style.boldОтличный(Устойчивость)] к [style.boldАркана(арканам)]")) {
+					"[style.boldExcellent(Устойчивость)] к [style.boldArcane(арканам)]")) {
 		@Override
 		public String getName(GameCharacter target) {
 			return Util.capitaliseSentence(IntelligenceLevel.ONE_AVERAGE.getName());
@@ -380,7 +380,7 @@ public class StatusEffect {
 					new Value<>(Attribute.DAMAGE_SPELLS, 15f),
 					new Value<>(Attribute.SPELL_COST_MODIFIER, 10f)),
 			Util.newArrayListOfValues(
-					"[style.boldОтличный(Устойчивость)] к [style.boldАркана(арканам)]")) {
+					"[style.boldExcellent(Устойчивость)] к [style.boldArcane(арканам)]")) {
 		@Override
 		public String getName(GameCharacter target) {
 			return Util.capitaliseSentence(IntelligenceLevel.TWO_SMART.getName());
@@ -413,7 +413,7 @@ public class StatusEffect {
 					new Value<>(Attribute.DAMAGE_ICE, 5f),
 					new Value<>(Attribute.DAMAGE_POISON, 5f)),
 			Util.newArrayListOfValues(
-					"[style.boldОтличный(Устойчивость)] к [style.boldАркана(арканам)]")) {
+					"[style.boldExcellent(Устойчивость)] к [style.boldArcane(арканам)]")) {
 		@Override
 		public String getName(GameCharacter target) {
 			return Util.capitaliseSentence(IntelligenceLevel.THREE_BRAINY.getName());
@@ -450,7 +450,7 @@ public class StatusEffect {
 					new Value<>(Attribute.DAMAGE_ICE, 10f),
 					new Value<>(Attribute.DAMAGE_POISON, 10f)),
 			Util.newArrayListOfValues(
-					"[style.boldОтличный(Устойчивость)] к [style.boldАркана(арканам)]")) {
+					"[style.boldExcellent(Устойчивость)] к [style.boldArcane(арканам)]")) {
 		@Override
 		public String getName(GameCharacter target) {
 			return Util.capitaliseSentence(IntelligenceLevel.FOUR_GENIUS.getName());
@@ -2795,7 +2795,7 @@ public class StatusEffect {
 
 	public static AbstractStatusEffect SLEEPING = new AbstractStatusEffect(80,
 			"спящий",
-			"спящий",
+			"sleeping",
 			PresetColour.SLEEP,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.ACTION_POINTS, -5f)),
@@ -2985,7 +2985,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect OVERWORKED_1 = new AbstractStatusEffect(80,
 			"слегка переутомлен",
-			"переутомлен1",
+			"overworked1",
 			PresetColour.BASE_RED,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.HEALTH_MAXIMUM, -10f),
@@ -3016,7 +3016,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect OVERWORKED_2 = new AbstractStatusEffect(80,
 			"переутомлен",
-			"переутомлен2",
+			"overworked2",
 			PresetColour.BASE_RED,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.HEALTH_MAXIMUM, -25f),
@@ -3047,7 +3047,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect OVERWORKED_3 = new AbstractStatusEffect(80,
 			"сильное переутомление",
-			"переутомление3",
+			"overworked3",
 			PresetColour.BASE_RED,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_PHYSIQUE, -50f),
@@ -3096,7 +3096,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect FATIGUED = new AbstractStatusEffect(80,
 			"усталость",
-			"усталость",
+			"fatigued",
 			PresetColour.ATTRIBUTE_HEALTH,
 			false,
 			Util.newHashMapOfValues(
@@ -3137,7 +3137,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect PSYCHOACTIVE = new AbstractStatusEffect(80,
 			"Психоактивный трип",
-			"психоактивный",
+			"psychoactive",
 			PresetColour.BASE_YELLOW,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_PHYSIQUE, -5f),
@@ -3351,7 +3351,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect LOLLIPOP_SUCKING = new AbstractStatusEffect(80,
 			"сосет леденец",
-			"леденец",
+			"lollipop",
 			PresetColour.CLOTHING_PINK,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.DAMAGE_LUST, 5f)),
@@ -3550,7 +3550,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect DRUNK_1 = new AbstractStatusEffect(80,
 			"Опьянение I — Подпитие",
-			"пьянство 1",
+			"drunk1",
 			PresetColour.BASE_YELLOW,
 			false,
 			Util.newHashMapOfValues(
@@ -3582,7 +3582,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect DRUNK_2 = new AbstractStatusEffect(80,
 			"Опьянение II - Веселый",
-			"пьянство 2",
+			"drunk2",
 			PresetColour.BASE_YELLOW,
 			false,
 			Util.newHashMapOfValues(
@@ -3613,7 +3613,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect DRUNK_3 = new AbstractStatusEffect(80,
 			"Опьянение III - Пьяный",
-			"пьянство 3",
+			"drunk3",
 			PresetColour.BASE_YELLOW,
 			false,
 			Util.newHashMapOfValues(
@@ -3650,7 +3650,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect DRUNK_4 = new AbstractStatusEffect(80,
 			"Опьянение IV - Забитый",
-			"пьянство 4",
+			"drunk4",
 			PresetColour.BASE_YELLOW,
 			false,
 			Util.newHashMapOfValues(
@@ -3688,7 +3688,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect DRUNK_5 = new AbstractStatusEffect(80,
 			"Опьянение V — В стельку",
-			"пьянство 5",
+			"drunk5",
 			PresetColour.BASE_YELLOW,
 			false,
 			Util.newHashMapOfValues(
@@ -3726,7 +3726,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect ADDICTIONS = new AbstractStatusEffect(80,
 			"зависимости",
-			"зависимости",
+			"addictions",
 			PresetColour.BASE_CRIMSON,
 			false,
 			null,
@@ -3745,7 +3745,7 @@ public class StatusEffect {
 				extraEffects.add("<b style='color:"+fluidRace.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(fluidRace.getName(fluidRace!=Race.DEMON))+" "+addiction.getFluid().getBaseType().getNames().get(0)+"</b>: "
 						+ (timeLeft > 0
 								?" [style.colourGood("+hoursLeft+":"+String.format("%02d", minutesLeft)+")]"
-								:" [style.boldАркана(Withdrawal!)]"));
+								:" [style.boldArcane(Withdrawal!)]"));
 			}
 			
 			return extraEffects;
@@ -3779,7 +3779,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect WITHDRAWAL_1 = new AbstractStatusEffect(80,
 			"Легкая ломка",
-			"ломка1",
+			"withdrawal1",
 			PresetColour.CORRUPTION_STAGE_ONE,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_ARCANE, -2f),
@@ -3842,7 +3842,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect WITHDRAWAL_2 = new AbstractStatusEffect(80,
 			"Заметная ломка",
-			"ломка2",
+			"withdrawal2",
 			PresetColour.CORRUPTION_STAGE_TWO,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_ARCANE, -5f),
@@ -3905,7 +3905,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect WITHDRAWAL_3 = new AbstractStatusEffect(80,
 			"Сильная ломка",
-			"ломка3",
+			"withdrawal3",
 			PresetColour.CORRUPTION_STAGE_THREE,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_ARCANE, -10f),
@@ -3968,7 +3968,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect WITHDRAWAL_4 = new AbstractStatusEffect(80,
 			"Тяжелая ломка",
-			"ломка4",
+			"withdrawal4",
 			PresetColour.CORRUPTION_STAGE_FOUR,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_ARCANE, -25f),
@@ -4031,7 +4031,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect WITHDRAWAL_5 = new AbstractStatusEffect(80,
 			"Мучительная ломка",
-			"ломка5",
+			"withdrawal5",
 			PresetColour.CORRUPTION_STAGE_FIVE,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_ARCANE, -50f),
@@ -4088,7 +4088,7 @@ public class StatusEffect {
 
 	public static AbstractStatusEffect MENOPAUSE = new AbstractStatusEffect(80,
 			"Менопауза",
-			"менопауза",
+			"menopause",
 			PresetColour.BASE_CRIMSON,
 			false,
 			null,
@@ -4123,7 +4123,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect PREGNANT_0 = new AbstractStatusEffect(80,
 			"риск беременности",
-			"беременность0",
+			"pregnancy0",
 			PresetColour.GENERIC_ARCANE,
 			true,
 			null,
@@ -4421,7 +4421,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect PREGNANT_1 = new AbstractStatusEffect(80,
 			"беременна",
-			"беременность1",
+			"pregnancy1",
 			PresetColour.GENERIC_ARCANE,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.ENERGY_SHIELDING, 2f)),
@@ -4527,7 +4527,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect PREGNANT_2 = new AbstractStatusEffect(80,
 			"на позднем сроке беременности",
-			"беременность2",
+			"pregnancy2",
 			PresetColour.GENERIC_ARCANE,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.ENERGY_SHIELDING, 4f)),
@@ -4646,7 +4646,7 @@ public class StatusEffect {
 	};
 	public static AbstractStatusEffect PREGNANT_3 = new AbstractStatusEffect(80,
 			"готов к родам",
-			"беременность3",
+			"pregnancy3",
 			PresetColour.GENERIC_ARCANE,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.ENERGY_SHIELDING, 6f)),
@@ -4684,7 +4684,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect INCUBATING_EGGS_STOMACH_1 = new AbstractStatusEffect(80,
 			" Инкубация яиц (Живот)",
-			"инкубация1",
+			"incubation1",
 			PresetColour.GENERIC_ARCANE,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.ENERGY_SHIELDING, 2f)),
@@ -4728,7 +4728,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect INCUBATING_EGGS_STOMACH_2 = new AbstractStatusEffect(80,
 			"Продвинутая инкубация яиц (живот)",
-			"инкубация2",
+			"incubation2",
 			PresetColour.GENERIC_ARCANE,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.ENERGY_SHIELDING, 4f)),
@@ -4752,7 +4752,7 @@ public class StatusEffect {
 			
 			StringBuilder sb = new StringBuilder();
 			
-			sb.append("Контекст: Java UI/Dialogue src/com/lilithsthrone/game/character/effects/StatusEffect.java\nТекст:\n<p>"
+			sb.append("<p>"
 						+ "Из-за значительного веса, вы уверены, что яйца в вашем желудке уже достигли полной зрелости и могут быть снесены и вылуплены в любое время по вашему выбору."
 					+ "</p>");
 			
@@ -4779,7 +4779,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect INCUBATING_EGGS_STOMACH_3 = new AbstractStatusEffect(80,
 			"Завершена инкубация яиц (Желудок)",
-			"инкубация3",
+			"incubation3",
 			PresetColour.GENERIC_ARCANE,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.ENERGY_SHIELDING, 6f)),
@@ -4811,7 +4811,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect INCUBATING_EGGS_NIPPLES_1 = new AbstractStatusEffect(80,
 			"Инкубация яиц (Грудь)",
-			"инкубация1",
+			"incubation1",
 			PresetColour.GENERIC_ARCANE,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.ENERGY_SHIELDING, 2f)),
@@ -4857,7 +4857,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect INCUBATING_EGGS_NIPPLES_2 = new AbstractStatusEffect(80,
 			"Расширенная инкубация яиц (Грудь)",
-			"инкубация2",
+			"incubation2",
 			PresetColour.GENERIC_ARCANE,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.ENERGY_SHIELDING, 4f)),
@@ -4908,7 +4908,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect INCUBATING_EGGS_NIPPLES_3 = new AbstractStatusEffect(80,
 			"Завершена инкубация яиц (Грудь)",
-			"инкубация3",
+			"incubation3",
 			PresetColour.GENERIC_ARCANE,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.ENERGY_SHIELDING, 6f)),
@@ -4940,7 +4940,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect INCUBATING_EGGS_NIPPLES_CROTCH_1 = new AbstractStatusEffect(80,
 			"Инкубация яиц (Грудь-соски)",
-			"инкубация1",
+			"incubation1",
 			PresetColour.GENERIC_ARCANE,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.ENERGY_SHIELDING, 2f)),
@@ -4993,7 +4993,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect INCUBATING_EGGS_NIPPLES_CROTCH_2 = new AbstractStatusEffect(80,
 			"Расширенная инкубация яиц (Грудь-соски)",
-			"инкубация2",
+			"incubation2",
 			PresetColour.GENERIC_ARCANE,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.ENERGY_SHIELDING, 4f)),
@@ -5051,7 +5051,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect INCUBATING_EGGS_NIPPLES_CROTCH_3 = new AbstractStatusEffect(80,
 			"Завершена инкубация яиц (Грудь-соски)",
-			"инкубация3",
+			"incubation3",
 			PresetColour.GENERIC_ARCANE,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.ENERGY_SHIELDING, 6f)),
@@ -5091,7 +5091,7 @@ public class StatusEffect {
 
 	public static AbstractStatusEffect INCUBATING_EGGS_SPINNERET_1 = new AbstractStatusEffect(80,
 			"Инкубация яиц (Spinneret)",
-			"инкубация1",
+			"incubation1",
 			PresetColour.GENERIC_ARCANE,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.ENERGY_SHIELDING, 2f)),
@@ -5137,7 +5137,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect INCUBATING_EGGS_SPINNERET_2 = new AbstractStatusEffect(80,
 			"Расширенная инкубация яиц (Spinneret)",
-			"инкубация2",
+			"incubation2",
 			PresetColour.GENERIC_ARCANE,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.ENERGY_SHIELDING, 4f)),
@@ -5182,7 +5182,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect INCUBATING_EGGS_SPINNERET_3 = new AbstractStatusEffect(80,
 			"Инкубация яйца завершена (Паучьи железы)",
-			"инкубация3",
+			"incubation3",
 			PresetColour.GENERIC_ARCANE,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.ENERGY_SHIELDING, 6f)),
@@ -5215,7 +5215,7 @@ public class StatusEffect {
 
 	public static AbstractStatusEffect INCUBATING_EGGS_WOMB_1 = new AbstractStatusEffect(80,
 			"Инкубация яйца (Утроба)",
-			"инкубация1",
+			"incubation1",
 			PresetColour.GENERIC_ARCANE,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.ENERGY_SHIELDING, 2f)),
@@ -5255,7 +5255,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect INCUBATING_EGGS_WOMB_2 = new AbstractStatusEffect(80,
 			"Продвинутая инкубация яиц (Черево)",
-			"инкубация2",
+			"incubation2",
 			PresetColour.GENERIC_ARCANE,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.ENERGY_SHIELDING, 4f)),
@@ -5306,7 +5306,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect INCUBATING_EGGS_WOMB_3 = new AbstractStatusEffect(80,
 			"Завершена инкубация яиц (Черево)",
-			"инкубация3",
+			"incubation3",
 			PresetColour.GENERIC_ARCANE,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.ENERGY_SHIELDING, 6f)),
@@ -5651,7 +5651,7 @@ public class StatusEffect {
 
 	public static AbstractStatusEffect STRETCHING_ORIFICE = new AbstractStatusEffect(80,
 			"Большие игрушки",
-			"секс-эффекты/комбинация_растяжения",
+			"sexEffects/combinationStretching",
 			PresetColour.BASE_MAGENTA,
 			false,
 			Util.newHashMapOfValues(),
@@ -6121,7 +6121,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect CREAMPIE_VAGINA = new AbstractStatusEffect(80,
 			"Залитая киской",
-			"залитая киской",
+			"creampie",
 			PresetColour.CUM,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_PHYSIQUE, -1f)),
@@ -6254,7 +6254,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect CREAMPIE_VAGINA_URETHRA = new AbstractStatusEffect(80,
 			"Вагинальное уретральное кремпай",
-			"залитая киской",
+			"creampie",
 			PresetColour.CUM,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_PHYSIQUE, -1f)),
@@ -6382,7 +6382,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect CREAMPIE_PENIS_URETHRA = new AbstractStatusEffect(80,
 			"Уретра пениса кремпай",
-			"залитая киской",
+			"creampie",
 			PresetColour.CUM,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_PHYSIQUE, -1f)),
@@ -6453,7 +6453,7 @@ public class StatusEffect {
 				} else {
 					return UtilText.parse(target, 
 							"[npc.NamePos] уретра пениса недавно была заполнена спермой, а затем заткнута."
-							+ "<br/>[style.boldУжасное(Заткнутая уретра:)] Сперма не вытекает"
+							+ "<br/>[style.boldTerrible(Заткнутая уретра:)] Сперма не вытекает"
 							+ (retention?"!":", хотя она все еще впитывается!"));
 				}
 				
@@ -6503,7 +6503,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect CREAMPIE_ANUS = new AbstractStatusEffect(80,
 			"Анал-криампи",
-			"залитая киской",
+			"creampie",
 			PresetColour.CUM,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_PHYSIQUE, -1f)),
@@ -6562,12 +6562,12 @@ public class StatusEffect {
 			if(target.isOrificePlugged(SexAreaOrifice.ANUS)) {
 				if(target.isPlayer()) {
 					return "Когда вы идете, вы можете почувствовать, как сперма застряла в вашей недавно использованной анусе."
-							+ "<br/>[style.boldУжасное(Заткнутая анус:)] Сперма не вытекает"
+							+ "<br/>[style.boldTerrible(Заткнутая анус:)] Сперма не вытекает"
 							+ (retention?"!":", хотя оно все еще впитывается!");
 				} else {
 					return UtilText.parse(target, 
 							"[npc.NamePos] ублюдок недавно был наполнен спермой, прежде чем был заткнут."
-							+ "<br/>[style.boldУжасный(Заткнутый анус:)] Сперма не вытекает"
+							+ "<br/>[style.boldTerrible(Заткнутый анус:)] Сперма не вытекает"
 							+ (retention?"!":", хотя оно все еще впитывается!"));
 				}
 				
@@ -6618,7 +6618,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect CREAMPIE_NIPPLES = new AbstractStatusEffect(80,
 			"Ниппель-криампи",
-			"залитая киской",
+			"creampie",
 			PresetColour.CUM,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_PHYSIQUE, -1f)),
@@ -6741,7 +6741,7 @@ public class StatusEffect {
 
 	public static AbstractStatusEffect CREAMPIE_NIPPLES_CROTCH = new AbstractStatusEffect(80,
 			"Ниппель-криампи",
-			"залитая киской",
+			"creampie",
 			PresetColour.CUM,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_PHYSIQUE, -1f)),
@@ -6867,7 +6867,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect CREAMPIE_MOUTH = new AbstractStatusEffect(80,
 			"Спермоносная трапеза",
-			"залитая киской",
+			"creampie",
 			PresetColour.CUM,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_PHYSIQUE, -1f)),
@@ -6952,7 +6952,7 @@ public class StatusEffect {
 
 	public static AbstractStatusEffect CREAMPIE_SPINNERET = new AbstractStatusEffect(80,
 			"Кремпай от паучьего веретена",
-			"залитая киской",
+			"creampie",
 			PresetColour.CUM,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_PHYSIQUE, -1f)),
@@ -7469,7 +7469,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect FRUSTRATED_NO_ORGASM = new AbstractStatusEffect(80,
 			"Раздражение",
-			"раздражение",
+			"frustrated",
 			PresetColour.GENERIC_BAD,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.RESISTANCE_LUST, -15f)),
@@ -7498,7 +7498,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect PENT_UP_SLAVE = new AbstractStatusEffect(80,
 			"Сдерживаемое",
-			"раздражение",
+			"frustrated",
 			PresetColour.GENERIC_ARCANE,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.RESISTANCE_LUST, -15f)),
@@ -7559,7 +7559,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect CHASTITY_1 = new AbstractStatusEffect(80,
 			"Принудительная целомудренность (спокойно)",
-			"целомудрие1",
+			"chastity1",
 			PresetColour.GENERIC_SEX,
 			false,
 			Util.newHashMapOfValues(),
@@ -7629,7 +7629,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect CHASTITY_2 = new AbstractStatusEffect(80,
 			"Принудительная девственность (беспокойство)",
-			"целомудрие2",
+			"chastity2",
 			PresetColour.GENERIC_SEX,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.RESISTANCE_LUST, -5f)),
@@ -7657,7 +7657,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect CHASTITY_3 = new AbstractStatusEffect(80,
 			"Принудительная девственность (напряжение)",
-			"целомудрие3",
+			"chastity3",
 			PresetColour.GENERIC_SEX,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.RESISTANCE_LUST, -15f)),
@@ -7681,7 +7681,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect CHASTITY_4 = new AbstractStatusEffect(80,
 			"Принудительная девственность (отчаяние)",
-			"целомудрие4",
+			"chastity4",
 			PresetColour.GENERIC_SEX,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.RESISTANCE_LUST, -50f)),
@@ -8428,7 +8428,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect SET_MAID = new AbstractStatusEffect(70,
 			"Трудолюбивая горничная",
-			"наборы_одежды/горничная",
+			"clothingSets/maid",
 			PresetColour.CLOTHING_BLACK,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_PHYSIQUE, 10f),
@@ -8485,7 +8485,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect SET_MILK_MAID = new AbstractStatusEffect(70,
 			"Молочница",
-			"наборы_одежды/горничная_молочница",
+			"clothingSets/milk_maid",
 			PresetColour.BASE_WHITE,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_PHYSIQUE, 10f),
@@ -8542,7 +8542,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect SET_BUTLER = new AbstractStatusEffect(70,
 			"Дворецкий",
-			"наборы_одежды/дворецкий",
+			"clothingSets/butler",
 			PresetColour.CLOTHING_WHITE,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_PHYSIQUE, 10f),
@@ -8599,7 +8599,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect SET_WITCH = new AbstractStatusEffect(70,
 			"Arcane Ведьма",
-			"наборы_одежды/ведьма",
+			"clothingSets/witch",
 			PresetColour.CLOTHING_BLACK,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_ARCANE, 5f),
@@ -8632,7 +8632,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect SET_SCIENTIST = new AbstractStatusEffect(70,
 			"Ученый",
-			"наборы_одежды/ученый",
+			"clothingSets/scientist",
 			PresetColour.CLOTHING_BLACK,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_ARCANE, 5f),
@@ -8666,7 +8666,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect SET_SLUTTY_ENFORCER = new AbstractStatusEffect(70,
 			"Развратная Enforcer",
-			"наборы_одежды/распутная_надзирательница",
+			"clothingSets/slutty_enforcer",
 			PresetColour.BASE_PINK,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.DAMAGE_LUST, 15f),
@@ -8693,7 +8693,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect SET_RAINBOW = new AbstractStatusEffect(70,
 			"Двойная радуга",
-			"наборы_одежды/радужный",
+			"clothingSets/rainbow",
 			PresetColour.CLOTHING_RED,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.DAMAGE_LUST, 10f)),
@@ -8762,7 +8762,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect SET_BDSM = new AbstractStatusEffect(70,
 			"Подвязанная сучка",
-			"наборы_одежды/бдсм",
+			"clothingSets/bdsm",
 			PresetColour.CLOTHING_BLACK,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_PHYSIQUE, -15f)),
@@ -8785,7 +8785,7 @@ public class StatusEffect {
 		public String getDescription(GameCharacter target) {
 			if(target!=null) {
 				if(target.hasFetish(Fetish.FETISH_BONDAGE_VICTIM)) {
-					return UtilText.parse(target, "Контекст: Java UI/Dialogue src/com/lilithsthrone/game/character/effects/StatusEffect.java\nТекст:\n[npc.Name] [npc.has] была связана в бондаже и [npc.is] безумно наслаждалась тем, что [npc.she] [npc.is] с трудом двигалась.");
+					return UtilText.parse(target, "[npc.Name] [npc.has] была связана в бондаже и [npc.is] безумно наслаждалась тем, что [npc.she] [npc.is] с трудом двигалась.");
 				} else {
 					return UtilText.parse(target, "[npc.Name] [npc.has] связана в бондаже и [npc.is] с трудом двигается.");
 				}
@@ -8800,7 +8800,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect SET_CATTLE = new AbstractStatusEffect(70,
 			"Скот",
-			"наборы_одежды/скот",
+			"clothingSets/cattle",
 			PresetColour.BASE_TAN,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_PHYSIQUE, 5f)),
@@ -8831,7 +8831,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect SET_SNOWFLAKE = new AbstractStatusEffect(70,
 			"Ледяная",
-			"наборы_одежды/снежинка",
+			"clothingSets/snowflake",
 			PresetColour.BASE_BLUE_LIGHT,
 			true,
 			Util.newHashMapOfValues(
@@ -8885,7 +8885,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect SET_GEISHA = new AbstractStatusEffect(70,
 			"Гейша",
-			"наборы_одежды/гейша",
+			"clothingSets/geisha",
 			PresetColour.BASE_ROSE,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.DAMAGE_LUST, 15f)),
@@ -8910,7 +8910,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect SET_RONIN = new AbstractStatusEffect(70,
 			"Ронин",
-			"наборы_одежды/ронины",
+			"clothingSets/ronin",
 			PresetColour.BASE_ROSE,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_PHYSIQUE, 5f),
@@ -8943,7 +8943,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect SET_DAISHO = new AbstractStatusEffect(70,
 			"Дайсё",
-			"наборы_одежды/дайшо",
+			"clothingSets/daisho",
 			PresetColour.BASE_ROSE,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_PHYSIQUE, 5f),
@@ -8970,7 +8970,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect SET_JOLNIR = new AbstractStatusEffect(70,
 			"Йольнир",
-			"наборы_одежды/йольнир",
+			"clothingSets/jolnir",
 			PresetColour.BASE_BLACK,
 			true,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_ARCANE, 15f),
@@ -9029,7 +9029,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect SET_STURDY_STEED = new AbstractStatusEffect(70,
 			"Все в порядке",
-			"наборы_одежды/крепкий_скакун",
+			"clothingSets/sturdy_steed",
 			PresetColour.CLOTHING_STEEL,
 			true,
 			Util.newHashMapOfValues(
@@ -9298,7 +9298,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect DAZED = new AbstractStatusEffect(10,
 			"ошеломление",
-			"ошеломление",
+			"dazed",
 			PresetColour.DAMAGE_TYPE_PHYSICAL,
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.DAMAGE_PHYSICAL, -25f),
@@ -10746,7 +10746,7 @@ public class StatusEffect {
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.ENERGY_SHIELDING, -5f)),
 			Util.newArrayListOfValues("<b>25</b> "+Attribute.DAMAGE_POISON.getColouredName("b")+" за</b>",
-					"<b>10</b> "+Attribute.MANA_MAXIMUM.getColouredName("b")+" [style.boldУжасный(drained)] в ход</b>")) {
+					"<b>10</b> "+Attribute.MANA_MAXIMUM.getColouredName("b")+" [style.boldTerrible(drained)] в ход</b>")) {
 				@Override
 		public String applyEffect(GameCharacter target, int secondsPassed, long totalSecondsPassed) {
 			Value<String, Integer> damageValue = DamageType.POISON.damageTarget(null, target, 25);
@@ -10781,7 +10781,7 @@ public class StatusEffect {
 					new Value<>(Attribute.DAMAGE_PHYSICAL, -15f),
 					new Value<>(Attribute.CRITICAL_DAMAGE, -25f)),
 			Util.newArrayListOfValues("<b>25</b> "+Attribute.DAMAGE_POISON.getColouredName("b")+" за</b>",
-					"<b>10</b> "+Attribute.MANA_MAXIMUM.getColouredName("b")+" [style.boldУжасный(drained)] в ход</b>")) {
+					"<b>10</b> "+Attribute.MANA_MAXIMUM.getColouredName("b")+" [style.boldTerrible(drained)] в ход</b>")) {
 				@Override
 		public String applyEffect(GameCharacter target, int secondsPassed, long totalSecondsPassed) {
 			Value<String, Integer> damageValue = DamageType.POISON.damageTarget(null, target, 25);
@@ -11711,7 +11711,7 @@ public class StatusEffect {
 		public String applyEffect(GameCharacter target, int secondsPassed, long totalSecondsPassed) {
 			Value<String, Integer> damageValue = DamageType.LUST.damageTarget(null, target, 5);
 
-			return UtilText.parse(target, "[npc.Name] [npc.verb(take)] <b>" + damageValue.getValue() + "</b> [style.boldПохоть(lust damage)]!")+damageValue.getKey();
+			return UtilText.parse(target, "[npc.Name] [npc.verb(take)] <b>" + damageValue.getValue() + "</b> [style.boldLust(lust damage)]!")+damageValue.getKey();
 		}
 		@Override
 		public String getDescription(GameCharacter target) {
@@ -11739,7 +11739,7 @@ public class StatusEffect {
 		public String applyEffect(GameCharacter target, int secondsPassed, long totalSecondsPassed) {
 			Value<String, Integer> damageValue = DamageType.LUST.damageTarget(null, target, 15);
 
-			return UtilText.parse(target, "[npc.Name] [npc.verb(take)] <b>" + damageValue.getValue() + "</b> [style.boldПохоть(lust damage)]!")+damageValue.getKey();
+			return UtilText.parse(target, "[npc.Name] [npc.verb(take)] <b>" + damageValue.getValue() + "</b> [style.boldLust(lust damage)]!")+damageValue.getKey();
 		}
 		@Override
 		public String getDescription(GameCharacter target) {
@@ -12037,7 +12037,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect CONDOM_WORN = new AbstractStatusEffect(80,
 			"В презервативе",
-			"презерватив",
+			"condom",
 			PresetColour.CLOTHING_PINK_LIGHT,
 			false,
 			null,
@@ -12105,7 +12105,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect DESIRES = new AbstractStatusEffect(80,
 			"Желания",
-			"желает",
+			"desires",
 			PresetColour.GENERIC_ARCANE,
 			false,
 			null,
@@ -12214,7 +12214,7 @@ public class StatusEffect {
 	
 	public static AbstractStatusEffect ORGASM_COUNTER = new AbstractStatusEffect(80,
 			"Оргазмы",
-			"сексэффекты/оргазмы",
+			"sexEffects/orgasms",
 			PresetColour.GENERIC_ARCANE,
 			false,
 			null,
@@ -12300,7 +12300,7 @@ public class StatusEffect {
 		@Override
 		public String getPathName(GameCharacter owner) {
 			if(Main.sex.getNumberOfOrgasms(owner)>=owner.getOrgasmsBeforeSatisfied()) {
-				return "сексЭффекты/оргазмыУдовлетворены";
+				return "sexEffects/orgasmsSatisfied";
 			}
 			return super.getPathName(owner);
 		}
@@ -14891,7 +14891,7 @@ public class StatusEffect {
 
 			appendPenetrationAdditionGenericDescriptions(target, type, UtilText.parse(target, "[npc.NamePos] [npc.hands]"), descriptionSB);
 			
-			descriptionSB.append("Контекст: Java UI/Dialogue src/com/lilithsthrone/game/character/effects/StatusEffect.java\nТекст:\n</p>");
+			descriptionSB.append("</p>");
 			
 			return descriptionSB.toString();
 		}

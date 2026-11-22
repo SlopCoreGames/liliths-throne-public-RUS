@@ -933,7 +933,7 @@
 	</p>
 	<p>
 		#IFnpc.isAttractedTo(npc2) || !game.isNonConEnabled()
-		#ТОГДА
+		#THEN
 			[npc.speech(Да, я тоже хочу быть твоей игрушкой!)] [npc.name] выкрикивает, явно не разделяя твоего восторга.
 		#ELSE
 			[npc.speech(Фу... Ладно, буду я твоей «игрушкой»...)] неохотно бормочет [npc.name].

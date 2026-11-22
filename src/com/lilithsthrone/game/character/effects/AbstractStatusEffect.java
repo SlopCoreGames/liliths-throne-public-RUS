@@ -652,7 +652,7 @@ public abstract class AbstractStatusEffect {
 		if(!Main.sex.getOngoingSexAreas(target, penetration).isEmpty()
 				&& !Collections.disjoint(Main.sex.getOngoingSexAreas(target, penetration).get(Main.sex.getCharacterOngoingSexArea(target, penetration).get(0)), Util.newArrayListOfValues(SexAreaPenetration.values()))) {
 
-			modifiersList.add("[style.boldSex(Возбуждение/turn:)]");
+			modifiersList.add("[style.boldSex(Возбуждение/ход:)]");
 
 			String targetName = target.isPlayer()?"Вы":UtilText.parse(target, "[npc.Name]");
 			modifiersList.add("+"+penetration.getBaseArousalWhenPenetrating()+" <b style='color:"+target.getFemininity().getColour().toWebHexString()+";'>("+targetName+"</b> - [style.boldSex(Секс)])");
@@ -806,7 +806,7 @@ public abstract class AbstractStatusEffect {
 		
 		// Arousal:
 		if(!Main.sex.getOngoingSexAreas(target, orifice).isEmpty()) {
-			modifiersList.add("[style.boldSex(Возбуждение/turn:)]");
+			modifiersList.add("[style.boldSex(Возбуждение/ход:)]");
 
 			modifiersList.add("+"+orifice.getBaseArousalWhenPenetrated()+" (<b style='color:"+target.getFemininity().getColour().toWebHexString()+";'>"+targetName+"</b> - [style.boldSex(Секс)])");
 			

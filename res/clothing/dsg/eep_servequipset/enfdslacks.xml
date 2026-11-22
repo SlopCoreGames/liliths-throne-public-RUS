@@ -117,7 +117,7 @@
 		<otherRough>
 		  <![CDATA[[npc.Name] 
 					#IF game.isSillyModeEnabled()
-					#ЗАТЕМ практически [npc.verb(give)] [npc2.namePos] мощный «веджи», пока [npc2.her]
+					#THEN практически [npc.verb(give)] [npc2.namePos] мощный «веджи», пока [npc2.her]
 					#ENDIF
 					[npc.verb(yank)] парадные брюки по [npc2.namePos] ногам до [npc2.her] талии, после чего грубо застегивает пуговицу.]]>
 		</otherRough>
@@ -145,7 +145,7 @@
 		<otherRough>
 		  <![CDATA[[npc.Name] грубо [npc.verb(zip)] переднюю часть классических брюк [npc2.namePos]
 					#IF game.isSillyModeEnabled() && npc2.hasPenis()
-					#ЗАТЕМ, почти не обращая внимания на то, что может оказаться на пути, из-за чего всё едва не закончилось конфузом!
+					#THEN, почти не обращая внимания на то, что может оказаться на пути, из-за чего всё едва не закончилось конфузом!
 					#ELSE .
 					#ENDIF
 					]]>

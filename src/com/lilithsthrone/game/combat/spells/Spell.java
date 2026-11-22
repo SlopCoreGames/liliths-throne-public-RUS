@@ -3378,7 +3378,7 @@ public enum Spell {
 				damageCostDescriptionSB.append("<b>" + seEntry.getValue() * (caster.isPlayer() && caster.hasTrait(Perk.JOB_MUSICIAN, true)?2:1) * (isCritical?2:1)
 						+ "</b> ходов"
 						+(caster.hasTrait(Perk.JOB_MUSICIAN, true)
-								?" ([style.boldОтличный(удвоенный)] от <b style='color:"+Perk.JOB_MUSICIAN.getColour().toWebHexString()+";'>"+Perk.JOB_MUSICIAN.getName(caster)+"</b>)"
+								?" ([style.boldExcellent(удвоенный)] от <b style='color:"+Perk.JOB_MUSICIAN.getColour().toWebHexString()+";'>"+Perk.JOB_MUSICIAN.getName(caster)+"</b>)"
 								:"")
 						+ " из <b style='color:" + seEntry.getKey().getColour().toWebHexString() + ";'>" + seEntry.getKey().getName(target) + "</b>");
 				i++;

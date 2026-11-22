@@ -1312,7 +1312,7 @@ public class PresetColour {
 
 		// Modded colours:
 		
-		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/цвета");
+		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/colours");
 		for(Entry<String, Map<String, File>> entry : moddedFilesMap.entrySet()) {
 			for(Entry<String, File> innerEntry : entry.getValue().entrySet()) {
 				try {

@@ -606,7 +606,7 @@ public class OptionsDialogue {
 			UtilText.nodeContentSB.setLength(0);
 			
 			UtilText.nodeContentSB.append(
-					"Контекст: Java UI/Dialogue src/com/lilithsthrone/game/dialogue/utils/OptionsDialogue.java\nТекст:\n<p>"
+					"<p>"
 					+ "<b>Светлая/Темная тема:</b>"
 					+ "<br/>Это переключает основной дисплей между светлой и темной темой. (Работа в процессе!)"
 					+ "</p>"
@@ -2177,14 +2177,14 @@ public class OptionsDialogue {
 				"<div id='"+id+"_ON' class='normal-button', "+(value==maximum?" disabled":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
 						+ (value==maximum?"[style.boldDisabled(+)]":"[style.boldGood(+)]")
 				+ "</div>"
-				+ "Контекст: Java UI/Dialogue src/com/lilithsthrone/game/dialogue/utils/OptionsDialogue.java\nТекст:\n<div class='container-full-width' style='text-align:center; width:calc(30%); float:right; margin:0;'>"
+				+ "<div class='container-full-width' style='text-align:center; width:calc(30%); float:right; margin:0;'>"
 					+ "<b>"+valueDisplay+"</b>"
 				+ "</div>"
 				+ "<div id='"+id+"_ВЫКЛ' class='normal-button"+(value==minimum?" отключено":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
 					+ (value==minimum?"[style.boldDisabled(-)]":"[style.boldBad(-)]")
 				+ "</div>");
 		
-		contentSB.append("Контекст: Java UI/Dialogue src/com/lilithsthrone/game/dialogue/utils/OptionsDialogue.java\nТекст:\n</div>"
+		contentSB.append("</div>"
 				+"</div>");
 		
 		return contentSB.toString();
@@ -2198,9 +2198,9 @@ public class OptionsDialogue {
 			UtilText.nodeContentSB.setLength(0);
 			
 			UtilText.nodeContentSB.append(
-					"Вот перевод текста на русский язык:\n\n<p>"
-						+ "Спасибо за игру"+Main.NAME_OF_GAME+", Я надеюсь, что вам это понравится так же, как и мне, когда я это делаю!"
-						+ " Большое спасибо всем, кто оказывает финансовую поддержку! Благодаря вам, я могу уделять больше времени работе над "+Main.NAME_OF_GAME+", и я обещаю, что сделаю эту игру самой лучшей, на что я способна!"
+					"<p>"
+						+ "Спасибо за игру в "+Main.NAME_OF_GAME+"! Надеюсь, играть в неё вам понравится так же сильно, как мне — её создавать!"
+						+ " Огромное спасибо всем, кто оказывает финансовую поддержку! Благодаря вам я могу уделять больше времени работе над "+Main.NAME_OF_GAME+", и я обещаю, что сделаю эту игру настолько хорошей, насколько только смогу!"
 					+ "</p>"
 					+"<p style='text-align:center;'>"
 						+ Main.NAME_OF_GAME+" создана:<br/>"
@@ -2417,27 +2417,27 @@ public class OptionsDialogue {
 			
 			UtilText.nodeContentSB.append(getCustomContentPreferenceDivStart(PresetColour.GENERIC_GOOD, "Частота автосохранения", "Выберите, как часто вы хотите, чтобы игра автоматически сохранялась при переходе с одной карты на другую."));
 			for (int i = 2; i>=0; i--) {
-				UtilText.nodeContentSB.append("<div id='AUTOSAVE_FREQUENCY_"+i+"' class='normal-button', "+(Main.getProperties().autoSaveFrequency == i?" selected":"")+"' style='width:calc(33% - 8px); margin-right:8px; text-align:center; float:right;'>"
+				UtilText.nodeContentSB.append("<div id='AUTOSAVE_FREQUENCY_"+i+"' class='normal-button"+(Main.getProperties().autoSaveFrequency == i?" selected":"")+"' style='width:calc(33% - 8px); margin-right:8px; text-align:center; float:right;'>"
 						+(Main.getProperties().autoSaveFrequency == i
 						?"[style.boldGood("
 						:"[style.colourDisabled(")
 						+com.lilithsthrone.game.Properties.autoSaveLabels[i]+")]</div>");
 			}
-			UtilText.nodeContentSB.append("Контекст: Java UI/Dialogue src/com/lilithsthrone/game/dialogue/utils/OptionsDialogue.java\nТекст:\n</div></div>");
+			UtilText.nodeContentSB.append("</div></div>");
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("ARTWORK",
 					PresetColour.BASE_BLUE_LIGHT,
 					"Арт",
-					"Вот перевод на русский язык:\n\nВключает возможность отображения иллюстраций на экранах информации о персонажах.",
+					"Включает отображение иллюстраций на экранах информации о персонажах.",
 					Main.getProperties().hasValue(PropertyValue.artwork)));
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("THUMBNAIL",
 					PresetColour.BASE_BLUE_STEEL,
 					"Миниатюры",
-					"Вот перевод на естественный, нецензурный русский язык:\n\nsrc/com/lilithsthrone/game/dialogue/utils/OptionsDialogue.java\n\nТекст:\nВключает подсказки, содержащие миниатюрные изображения персонажа.",
+					"Включает всплывающие подсказки с миниатюрными изображениями персонажей.",
 					Main.getProperties().hasValue(PropertyValue.thumbnail)));
 			
 //			UtilText.nodeContentSB.append(getCustomContentPreferenceDivStart(PresetColour.BASE_AQUA, "Preferred Artist", "Which artist's work is used by default."));
 			
-			UtilText.nodeContentSB.append("Контекст: Java UI/Dialogue src/com/lilithsthrone/game/dialogue/utils/OptionsDialogue.java\nТекст:\n<div class='container-full-width' style='padding:0; margin:2px 0;'>"
+			UtilText.nodeContentSB.append("<div class='container-full-width' style='padding:0; margin:2px 0;'>"
 				+ "<div class='container-half-width' style='width:calc(55% - 16px);'>"
 					+ "<b style='text-align:center; color:"+PresetColour.BASE_AQUA.toWebHexString()+";'>Любимый художник</b><b>:</b> Работы какого художника используются по умолчанию.</div><div class='container-half-width' style='width:calc(45% - 16px);'>");
 			

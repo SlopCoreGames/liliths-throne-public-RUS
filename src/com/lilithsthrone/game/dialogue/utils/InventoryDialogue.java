@@ -2788,7 +2788,7 @@ public class InventoryDialogue {
 								return new Response(dropTitle+"(Все)", "Вы не можете выпустить оружие во время мастурбации.", null);
 								
 							} else if(index == 4) {
-								return new Response("Краска/Перековка", "Вы не можете красить или перековывать оружие во время мастурбации.", null);
+								return new Response("Покраска/Перековка", "Вы не можете красить или перековывать оружие во время мастурбации.", null);
 								
 							} else if(index == 5) {
 								return new Response("Зачаровать", "Вы не можете накладывать заклинания на оружие во время мастурбации.", null);
@@ -2915,7 +2915,7 @@ public class InventoryDialogue {
 									boolean isDyeingStackItem = Main.game.getPlayer().getAllWeaponsInInventory().get(weapon) > 1;
 									boolean canDye = !(isDyeingStackItem && hasFullInventory);
 									if (canDye) {
-										return new Response("Краска/Перековка",
+										return new Response("Покраска/Перековка",
 												Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
 													?"Используйте свои познания в [style.colourEarth(заклинаниях земли)], чтобы покрасить или перековать этот предмет."
 													:"Используйте кисть для окрашивания или молот для перековки, чтобы изменить свойства этого оружия.",
@@ -2926,10 +2926,10 @@ public class InventoryDialogue {
 											}
 										};
 									} else {
-										return new Response("Краска/Перековка", "Ваш инвентарь полон, поэтому вы не можете изменить свойства этого оружия.", null);
+										return new Response("Покраска/Перековка", "Ваш инвентарь полон, поэтому вы не можете изменить свойства этого оружия.", null);
 									}
 								} else {
-									return new Response("Краска/Перековка", "Чтобы изменить свойства этого оружия, вам понадобится кисть для красок или молот для перековки.", null);
+									return new Response("Покраска/Перековка", "Чтобы изменить свойства этого оружия, вам понадобится кисть для красок или молот для перековки.", null);
 								}
 								
 							} else if(index == 5) {
@@ -3094,7 +3094,7 @@ public class InventoryDialogue {
 									boolean isDyeingStackItem = Main.game.getPlayer().getAllWeaponsInInventory().get(weapon) > 1;
 									boolean canDye = !(isDyeingStackItem && hasFullInventory);
 									if (canDye) {
-										return new Response("Краска/Перековка",
+										return new Response("Покраска/Перековка",
 												Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
 													?"Используйте свои познания в [style.colourEarth(заклинаниях земли)], чтобы покрасить или перековать этот предмет."
 													:"Используйте кисть для окрашивания или молот для перековки, чтобы изменить свойства этого оружия.",
@@ -3105,10 +3105,10 @@ public class InventoryDialogue {
 											}
 										};
 									} else {
-										return new Response("Краска/Перековка", "Ваш инвентарь полон, поэтому вы не можете изменить свойства этого оружия.", null);
+										return new Response("Покраска/Перековка", "Ваш инвентарь полон, поэтому вы не можете изменить свойства этого оружия.", null);
 									}
 								} else {
-									return new Response("Краска/Перековка", "Чтобы изменить свойства этого оружия, вам понадобится кисть для красок или молот для перековки.", null);
+									return new Response("Покраска/Перековка", "Чтобы изменить свойства этого оружия, вам понадобится кисть для красок или молот для перековки.", null);
 								}
 								
 							} else if(index == 5) {
@@ -3315,7 +3315,7 @@ public class InventoryDialogue {
 									boolean isDyeingStackItem = Main.game.getPlayer().getAllWeaponsInInventory().get(weapon) > 1;
 									boolean canDye = !(isDyeingStackItem && hasFullInventory);
 									if (canDye) {
-										return new Response("Краска/Перековка",
+										return new Response("Покраска/Перековка",
 												Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
 													?"Используйте свои познания в [style.colourEarth(заклинаниях земли)], чтобы покрасить или перековать этот предмет."
 													:"Используйте кисть для окрашивания или молот для перековки, чтобы изменить свойства этого оружия.",
@@ -3326,10 +3326,10 @@ public class InventoryDialogue {
 											}
 										};
 									} else {
-										return new Response("Краска/Перековка", "Ваш инвентарь полон, поэтому вы не можете изменить свойства этого оружия.", null);
+										return new Response("Покраска/Перековка", "Ваш инвентарь полон, поэтому вы не можете изменить свойства этого оружия.", null);
 									}
 								} else {
-									return new Response("Краска/Перековка", "Чтобы изменить свойства этого оружия, вам понадобится кисть для красок или молот для перековки.", null);
+									return new Response("Покраска/Перековка", "Чтобы изменить свойства этого оружия, вам понадобится кисть для красок или молот для перековки.", null);
 								}
 								
 							} else if(index == 5) {
@@ -3490,7 +3490,7 @@ public class InventoryDialogue {
 									boolean isDyeingStackItem = Main.game.getPlayerCell().getInventory().getAllWeaponsInInventory().get(weapon) > 1;
 									boolean canDye = !(isDyeingStackItem && hasFullInventory);
 									if (canDye) {
-										return new Response("Краска/Перековка",
+										return new Response("Покраска/Перековка",
 												Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
 													?"Используйте свои познания в [style.colourEarth(заклинаниях земли)], чтобы покрасить или перековать этот предмет."
 													:"Используйте кисть для окрашивания или молот для перековки, чтобы изменить свойства этого оружия.",
@@ -3501,10 +3501,10 @@ public class InventoryDialogue {
 											}
 										};
 									} else {
-										return new Response("Краска/Перековка", "Ваш инвентарь полон, поэтому вы не можете изменить свойства этого оружия.", null);
+										return new Response("Покраска/Перековка", "Ваш инвентарь полон, поэтому вы не можете изменить свойства этого оружия.", null);
 									}
 								} else {
-									return new Response("Краска/Перековка", "Чтобы изменить свойства этого оружия, вам понадобится кисть для красок или молот для перековки.", null);
+									return new Response("Покраска/Перековка", "Чтобы изменить свойства этого оружия, вам понадобится кисть для красок или молот для перековки.", null);
 								}
 								
 							} else if(index == 5) {
@@ -3642,7 +3642,7 @@ public class InventoryDialogue {
 									boolean isDyeingStackItem = inventoryNPC.getAllWeaponsInInventory().get(weapon) > 1;
 									boolean canDye = !(isDyeingStackItem && hasFullInventory);
 									if (canDye) {
-										return new Response("Краска/Перековка",
+										return new Response("Покраска/Перековка",
 												Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
 													?"Используйте свои познания в [style.colourEarth(заклинаниях земли)], чтобы покрасить или перековать этот предмет."
 													:"Используйте кисть для окрашивания или молот для перековки, чтобы изменить свойства этого оружия.",
@@ -3653,10 +3653,10 @@ public class InventoryDialogue {
 											}
 										};
 									} else {
-										return new Response("Краска/Перековка", UtilText.parse(inventoryNPC, "Инвентарь [npc.NamePos] полон, поэтому вы не можете изменить свойства этого оружия."), null);
+										return new Response("Покраска/Перековка", UtilText.parse(inventoryNPC, "Инвентарь [npc.NamePos] полон, поэтому вы не можете изменить свойства этого оружия."), null);
 									}
 								} else {
-									return new Response("Краска/Перековка", UtilText.parse(inventoryNPC, "Чтобы изменить свойства оружия [npc.namePos], вам понадобится кисть для красок или молот для перековки."), null);
+									return new Response("Покраска/Перековка", UtilText.parse(inventoryNPC, "Чтобы изменить свойства оружия [npc.namePos], вам понадобится кисть для красок или молот для перековки."), null);
 								}
 								
 							} else if(index == 5) {
@@ -5579,7 +5579,7 @@ public class InventoryDialogue {
 							}
 							
 						} else if (index==4) {
-							return new Response("Краска/Перековка", "Ты не можешь изменять свойства "+(owner.isPlayer()?"твоей":owner.getName("")+"'s")+" оружия в бою!", null);
+							return new Response("Покраска/Перековка", "Ты не можешь изменять свойства "+(owner.isPlayer()?"твоей":owner.getName("")+"'s")+" оружия в бою!", null);
 							
 						} else if(index == 5) {
 							return new Response("Зачаровать", "Ты не можешь зачаровать экипированное оружие!", null);
@@ -5638,7 +5638,7 @@ public class InventoryDialogue {
 							
 						} else if (index==4) {
 							if (isWeaponDyeReforgeActionAvailable()) {
-								return new Response("Краска/Перековка", 
+								return new Response("Покраска/Перековка", 
 										Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
 											?"Используйте ваше мастерство в [style.colourEarth(земляных заклинаниях)], чтобы изменить свойства этого оружия."
 											:"Используйте кисть для окрашивания или молот для перековки, чтобы изменить свойства этого оружия.",
@@ -5723,7 +5723,7 @@ public class InventoryDialogue {
 							}
 							
 						} else if (index==4) {
-							return new Response("Краска/Перековка", "Ты не можешь изменять свойства "+(owner.isPlayer()?"твоей":owner.getName("")+"'s")+" оружие в секс!", null);
+							return new Response("Покраска/Перековка", "Ты не можешь изменять свойства "+(owner.isPlayer()?"твоей":owner.getName("")+"'s")+" оружие в секс!", null);
 							
 						} else if(index == 5) {
 							return new Response("Зачаровать", "Ты не можешь зачаровать экипированное оружие!", null);
@@ -5763,7 +5763,7 @@ public class InventoryDialogue {
 							return new Response("Взять", "Нельзя отобрать оружие у кого-то прямо во время боя!", null);
 							
 						} else if (index==4) {
-							return new Response("Краска/Перековка", "Нельзя изменять свойства чужого экипированного оружия прямо во время боя!", null);
+							return new Response("Покраска/Перековка", "Нельзя изменять свойства чужого экипированного оружия прямо во время боя!", null);
 							
 						} else if(index == 5) {
 							return new Response("Зачаровать", "Нельзя зачаровывать чужое экипированное оружие, особенно во время боя!", null);
@@ -5844,7 +5844,7 @@ public class InventoryDialogue {
 							
 						} else if (index==4) {
 							if (isWeaponDyeReforgeActionAvailable()) {
-								return new Response("Краска/Перековка", 
+								return new Response("Покраска/Перековка", 
 										Main.game.getPlayer().isSpellSchoolSpecialAbilityUnlocked(SpellSchool.EARTH)
 											?"Используйте ваше мастерство в [style.colourEarth(земляных заклинаниях)], чтобы изменить свойства этого оружия."
 											:"Используйте кисть для окрашивания или молот для перековки, чтобы изменить свойства этого оружия.",
@@ -5891,7 +5891,7 @@ public class InventoryDialogue {
 							return new Response("Взять", "Вы не можете забрать чье-то оружие во время секса!", null);
 							
 						} else if (index==4) {
-							return new Response("Краска/Перековка", UtilText.parse(inventoryNPC, "Вы не можете изменять свойства [npc.namePos] оружия во время секса!"), null);
+							return new Response("Покраска/Перековка", UtilText.parse(inventoryNPC, "Вы не можете изменять свойства [npc.namePos] оружия во время секса!"), null);
 						
 						} else if(index == 5) {
 							return new Response("Зачаровать", "Ты не можешь зачаровать экипированное оружие!", null);
@@ -5914,7 +5914,7 @@ public class InventoryDialogue {
 							return new Response("Взять", "Нельзя забрать чужое оружие!", null);
 							
 						} else if (index==4) {
-							return new Response("Краска/Перековка", UtilText.parse(inventoryNPC, "Нельзя изменять свойства оружия [npc.namePos]!"), null);
+							return new Response("Покраска/Перековка", UtilText.parse(inventoryNPC, "Нельзя изменять свойства оружия [npc.namePos]!"), null);
 							
 						} else if(index == 5) {
 							return new Response("Зачаровать", "Нельзя зачаровывать чужое экипированное оружие!", null);

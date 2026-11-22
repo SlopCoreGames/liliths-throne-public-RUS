@@ -651,7 +651,7 @@ public class Name {
 		
 		// Modded names:
 		
-		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/раса", null, "names");
+		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/race", null, "names");
 		for(Entry<String, Map<String, File>> entry : moddedFilesMap.entrySet()) {
 			for(Entry<String, File> innerEntry : entry.getValue().entrySet()) {
 				try {

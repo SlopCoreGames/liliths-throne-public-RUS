@@ -54,7 +54,7 @@
 		
 		<onCriticalHitEffect><![CDATA[
 		#IF !npc2.hasStatusEffect(SE_ARCANE_DUALITY_NEGATIVE)
-		#ТОГДА [##npc2.addStatusEffect(SE_ARCANE_DUALITY_NEGATIVE, 6)] [npc2.Name] [style.boldPoison([npc2.verb(struggle)] защитить [npc2.herself])], пока веки [npc2.her] заметно тяжелеют. 
+		#THEN [##npc2.addStatusEffect(SE_ARCANE_DUALITY_NEGATIVE, 6)] [npc2.Name] [style.boldPoison([npc2.verb(struggle)] защитить [npc2.herself])], пока веки [npc2.her] заметно тяжелеют. 
 		#ENDIF
 		]]></onCriticalHitEffect>
 		

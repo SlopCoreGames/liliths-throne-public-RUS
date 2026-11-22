@@ -2802,7 +2802,7 @@ public class PhoneDialogue {
 						}
 					};
 				} catch (Exception e) {
-					Util.logGetNpcByIdError("КОНТАКТЫ_ПЕРСОНАЖА.getResponse()", Main.game.getPlayer().getCharactersEncountered().get(index - 1));
+					Util.logGetNpcByIdError("CONTACTS_CHARACTER.getResponse()", Main.game.getPlayer().getCharactersEncountered().get(index - 1));
 					return null;
 				}
 			

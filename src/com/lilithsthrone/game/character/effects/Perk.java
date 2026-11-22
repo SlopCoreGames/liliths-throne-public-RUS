@@ -2150,7 +2150,7 @@ public class Perk {
 			true,
 			"крепко спящий",
 			PerkCategory.PHYSICAL,
-			"statusEffects/спячка",
+			"statusEffects/sleeping",
 			PresetColour.SLEEP_HEAVY,
 			Util.newHashMapOfValues(),
 			Util.newArrayListOfValues(
@@ -2551,7 +2551,7 @@ public class Perk {
 			Util.newArrayListOfValues(PresetColour.GENERIC_SEX, PresetColour.GENERIC_EXPERIENCE),
 			Util.newHashMapOfValues(),
 			Util.newArrayListOfValues(
-					"[style.boldУжасно(-95% ко всем)] [style.boldОпыт(приобретение опыта)]",
+					"[style.boldTerrible(-95% ко всем)] [style.boldExperience(приобретение опыта)]",
 					"Во всех [style.boldSex(сценах секса)]:",
 					"Может выбрать [style.boldTerrible(выкачивать 1 уровень)] из партнеров по оргазму",
 					"Вы получаете [style.boldExcellent(5)] [style.boldExperience(опыта)] умноженного на уровень, выкачанный из партнера"),
@@ -2606,7 +2606,7 @@ public class Perk {
 			"perks/lustful_leech",
 			PresetColour.ATTRIBUTE_MANA,
 			Util.newHashMapOfValues(new Value<>(Attribute.DAMAGE_LUST, 2)),
-			Util.newArrayListOfValues("[style.boldExcellent(Поглощение 2%)] от максимального "+Attribute.MANA_MAXIMUM.getName()+" на каждом ударе, который наносит [style.boldПохоть("+Attribute.DAMAGE_LUST.getName()+")]")) {
+			Util.newArrayListOfValues("[style.boldExcellent(Поглощение 2%)] от максимального "+Attribute.MANA_MAXIMUM.getName()+" на каждом ударе, который наносит [style.boldLust("+Attribute.DAMAGE_LUST.getName()+")]")) {
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
@@ -2621,7 +2621,7 @@ public class Perk {
 			"perks/pure_mind",
 			PresetColour.DAMAGE_TYPE_LUST,
 			Util.newHashMapOfValues(new Value<>(Attribute.RESISTANCE_LUST, 2)),
-			Util.newArrayListOfValues("[style.boldExcellent(Восстановление 2%)] от вашего максимального "+Attribute.MANA_MAXIMUM.getName()+" на каждом ударе, в котором вы испытываете [style.boldПохоть("+Attribute.DAMAGE_LUST.getName()+")]")) {
+			Util.newArrayListOfValues("[style.boldExcellent(Восстановление 2%)] от вашего максимального "+Attribute.MANA_MAXIMUM.getName()+" на каждом ударе, в котором вы испытываете [style.boldLust("+Attribute.DAMAGE_LUST.getName()+")]")) {
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
@@ -3096,7 +3096,7 @@ public class Perk {
 			false,
 			"нарушение зрения",
 			PerkCategory.PHYSICAL,
-			"statusEffects/близорукость",
+			"statusEffects/short_sighted",
 			Util.newArrayListOfValues(
 					PresetColour.BASE_BLACK,
 					PresetColour.GENERIC_BAD,

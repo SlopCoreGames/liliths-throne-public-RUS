@@ -132,7 +132,7 @@ public class Main extends Application {
 		credits.add(new CreditsSlot("Paradoxiso", "", 0, 0, 0, 0, Subspecies.DEMON));
 		credits.add(new CreditsSlot("luka_fateburn", "", 0, 0, 0, 0, Subspecies.DEMON));
 		credits.add(new CreditsSlot("Коричная Суккуб", "", 0, 0, 0, 0, Subspecies.DEMON));
-		credits.add(new CreditsSlot("Лука Фейтберн", "", 0, 0, 0, 0, Subspecies.DEMON));
+		credits.add(new CreditsSlot("Luka_Fateburn", "", 0, 0, 0, 0, Subspecies.DEMON));
 		credits.add(new CreditsSlot("Фларкс", "", 0, 0, 0, 0, Subspecies.DEMON));
 		credits.add(new CreditsSlot("Моро", "", 0, 0, 0, 0, Subspecies.DEMON));
 		credits.add(new CreditsSlot("Нео", "", 0, 0, 0, 0, Subspecies.DEMON));
@@ -220,7 +220,7 @@ public class Main extends Application {
 		credits.add(new CreditsSlot("Atroykus", "", 0, 0, 0, 6));
 		credits.add(new CreditsSlot("Калрак", "", 0, 0, 0, 18, Subspecies.DEMON));
 		credits.add(new CreditsSlot("Рак-Маг", "", 0, 0, 12, 0));
-		credits.add(new CreditsSlot("Капитан_Сигмус", "", 0, 0, 7, 0));
+		credits.add(new CreditsSlot("Captain_Sigmus", "", 0, 0, 7, 0));
 		credits.add(new CreditsSlot("Каспер &quot;Cdaser&quot; Д.", "", 0, 0, 10, 0));
 		credits.add(new CreditsSlot("Небесный Кошмар", "", 0, 0, 0, 15));
 		credits.add(new CreditsSlot("Сайт»", "", 0, 0, 0, 2));
@@ -371,7 +371,7 @@ public class Main extends Application {
 		credits.add(new CreditsSlot("Арпи", "", 0, 0, 0, 1));
 		credits.add(new CreditsSlot("Рейла Ода", "", 0, 0, 0, 9));
 		credits.add(new CreditsSlot("Роарик", "", 0, 0, 0, 10));
-		credits.add(new CreditsSlot("Темный_Лорд", "", 0, 0, 2, 6));
+		credits.add(new CreditsSlot("Dark_Lord", "", 0, 0, 2, 6));
 		credits.add(new CreditsSlot("redwulfen", "", 0, 0, 0, 18));
 		credits.add(new CreditsSlot("Роджер Рейн", "", 0, 0, 0, 3));
 		credits.add(new CreditsSlot("RogueRandom", "", 0, 0, 16, 0));
@@ -844,9 +844,9 @@ public class Main extends Application {
 	public static String getQuickSaveName() {
 		String name;
 		if(!Main.game.isStarted()) {
-			name = "Быстрое сохранение: вступление";
+			name = "QuickSave_intro";
 		} else {
-			name = "Быстрое сохранение_"+Main.game.getPlayer().getName(false);
+			name = "QuickSave_"+Main.game.getPlayer().getName(false);
 		}
 		return Main.checkFileName(name);
 	}

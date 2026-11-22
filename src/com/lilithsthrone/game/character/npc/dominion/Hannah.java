@@ -253,7 +253,7 @@ public class Hannah extends NPC {
 		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("dsg_ljacket_ljacket_f", PresetColour.CLOTHING_BLACK, false), true, this);
 		this.isAbleToBeDisplaced(this.getClothingInSlot(InventorySlot.TORSO_OVER), DisplacementType.UNZIPS, true, true, this);
 		
-		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("TonyJC_кроп-топ", PresetColour.CLOTHING_PURPLE_VERY_DARK, false), true, this);
+		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("TonyJC_crop_tank_top", PresetColour.CLOTHING_PURPLE_VERY_DARK, false), true, this);
 		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("innoxia_sock_socks", PresetColour.CLOTHING_WHITE, false), true, this);
 
 		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("innoxia_leg_distressed_jeans", PresetColour.CLOTHING_BLUE_NAVY, PresetColour.CLOTHING_GREY, PresetColour.CLOTHING_BRASS, false), true, this);

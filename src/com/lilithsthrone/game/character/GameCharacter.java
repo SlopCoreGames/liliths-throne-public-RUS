@@ -26222,7 +26222,7 @@ public abstract class GameCharacter implements XMLSaving {
 					} else if (isTesticleBulgeVisible()) {
 						return new GenderAppearance(
 								isPlayer()
-								?"[pc.ballSize] выпуклость между твоими [pc.balls] ногами в сочетании с твоей мужественной внешностью заставляет всех верить, что ты [pc.a_appearsAsGender(\", \"1\": "+colouredGender+")]."
+								?"[pc.ballSize] выпуклость твоих [pc.balls] между ног в сочетании с твоей мужественной внешностью заставляет всех верить, что ты [pc.a_appearsAsGender("+colouredGender+")]."
 								:"[npc.ballSize] выпуклость между ногами [npc.her] в сочетании с [npc.her] маскулинным видом заставляет всех верить, что [npc.sheIs] [npc.a_appearsAsGender("+colouredGender+")].",
 								Gender.M_P_MALE);
 					}

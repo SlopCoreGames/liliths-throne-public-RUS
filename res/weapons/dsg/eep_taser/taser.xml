@@ -81,7 +81,7 @@
 		<hitText><![CDATA[
 			[npc.Name] [npc.verb(shoot)] [npc2.name] из [npc.her] 
 			#IF game.isSillyModeEnabled()
-#ЗАТЕМ тазер с выкриком [npc.speech(Я — закон!)]			#ELSE электрошокер.
+#THEN тазер с выкриком [npc.speech(Я — закон!)]			#ELSE электрошокер.
 			#ENDIF
 			Раздается громкий хлопок, а затем яркая розовая и фиолетовая вспышка — [npc2.namePos] выкачивает энергию! Отработанный картридж вылетает, и [npc.name] [npc.verb(insert)] новый в тазер.
 		]]></hitText>

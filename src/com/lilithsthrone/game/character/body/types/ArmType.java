@@ -339,7 +339,7 @@ public class ArmType {
 
 		// Modded types:
 		
-		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/раса", "bodyParts", null);
+		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/race", "bodyParts", null);
 		for(Entry<String, Map<String, File>> entry : moddedFilesMap.entrySet()) {
 			for(Entry<String, File> innerEntry : entry.getValue().entrySet()) {
 				if(Util.getXmlRootElementName(innerEntry.getValue()).equals("arm")) {

@@ -1509,7 +1509,7 @@ public class Race {
 		
 		// Modded races:
 		
-		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/раса", null, "race");
+		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/race", null, "race");
 		for(Entry<String, Map<String, File>> entry : moddedFilesMap.entrySet()) {
 			for(Entry<String, File> innerEntry : entry.getValue().entrySet()) {
 				if(Util.getXmlRootElementName(innerEntry.getValue()).equals("race")) {

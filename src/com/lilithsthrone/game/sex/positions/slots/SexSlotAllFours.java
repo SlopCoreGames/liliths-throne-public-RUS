@@ -40,7 +40,7 @@ public class SexSlotAllFours {
 	
 
 	public static final SexSlot BEHIND = new SexSlot(
-			"Верхом / Трах",
+			"Верхом/Трах",
 			"behind",
 			"[npc.Name] [npc.verb(press)] [npc.her] весом на теле [npc2.namePos], издавая [npc.a_moan+], пока [npc.she] [npc.verb(prepare)], чтобы достичь [npc.her] кульминации.",
 			true,
@@ -71,7 +71,7 @@ public class SexSlotAllFours {
 		}
 	};
 	public static final SexSlot BEHIND_TWO = new SexSlot(
-			"Верхом / Трах",
+			"Верхом/Трах",
 			"сзади (2-й)",
 			"[npc.Name] [npc.verb(press)] [npc.her] весом на теле [npc2.namePos], издавая [npc.a_moan+], пока [npc.she] [npc.verb(prepare)], чтобы достичь [npc.her] кульминации.",
 			true,
@@ -103,7 +103,7 @@ public class SexSlotAllFours {
 		}
 	};
 	public static final SexSlot BEHIND_THREE = new SexSlot(
-			"Верхом / Трах",
+			"Верхом/Трах",
 			"сзади (3-й)",
 			"[npc.Name] [npc.verb(press)] [npc.her] весом на теле [npc2.namePos], издавая [npc.a_moan+], пока [npc.she] [npc.verb(prepare)], чтобы достичь [npc.her] кульминации.",
 			true,
@@ -135,7 +135,7 @@ public class SexSlotAllFours {
 		}
 	};
 	public static final SexSlot BEHIND_FOUR = new SexSlot(
-			"Верхом / Трах",
+			"Верхом/Трах",
 			"сзади (4-й)",
 			"[npc.Name] [npc.verb(press)] [npc.her] весом на теле [npc2.namePos], издавая [npc.a_moan+], пока [npc.she] [npc.verb(prepare)], чтобы достичь [npc.her] кульминации.",
 			true,

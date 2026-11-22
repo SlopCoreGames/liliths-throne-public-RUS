@@ -233,7 +233,7 @@ public class Fiammetta extends NPC {
 		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("innoxia_chest_sports_bra", PresetColour.CLOTHING_GREY, false), true, this);
 		
 		
-		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("TonyJC_майка_алкоголичка", PresetColour.CLOTHING_WHITE, false), true, this);
+		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("TonyJC_tank_top", PresetColour.CLOTHING_WHITE, false), true, this);
 		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("innoxia_torsoOver_hoodie", PresetColour.CLOTHING_GREEN_DRAB, false), true, this);
 		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("TonyJC_daisy_dukes", PresetColour.CLOTHING_BLUE_GREY, false), true, this);
 		

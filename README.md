@@ -1,15 +1,15 @@
 <div align="center">
 
-# Lilith's Throne — Русская локализация (RU)
+# Lilith's Throne — Полная русская локализация (RU v1.0)
 
-**Неофициальный проект полной русской локализации RPG *Lilith's Throne* с открытым исходным кодом**
+**Неофициальный проект 100% русской локализации RPG *Lilith's Throne (v0.4.11.9)* с открытым исходным кодом**
 
 [![Origin](https://img.shields.io/badge/Оригинал-Innoxia%2Fliliths--throne--public-purple?style=flat-square)](https://github.com/Innoxia/liliths-throne-public)
 [![Branch](https://img.shields.io/badge/Ветка-dev%20(0.4.11.9)-blue?style=flat-square)](https://github.com/SlopCoreGames/liliths-throne-public-RUS/tree/dev)
 [![Java](https://img.shields.io/badge/Java-11%20%2B%20JavaFX%2018-orange?style=flat-square)](#сборка-из-исходников)
 [![LLM](https://img.shields.io/badge/Перевод-Gemma%204%2026B%20A4B%20(Local)-green?style=flat-square)](#как-устроен-пайплайн-перевода)
-[![Status](https://img.shields.io/badge/Статус-XML%20100%25%20%2B%20Сборка-brightgreen?style=flat-square)](#статус-локализации)
-[![Release](https://img.shields.io/badge/Release-v0.4.11.9--ru--beta1-blue?style=flat-square)](https://github.com/SlopCoreGames/liliths-throne-public-RUS/releases/tag/v0.4.11.9-ru-beta1)
+[![Status](https://img.shields.io/badge/Статус-100%25%20Полный%20перевод%20(XML%20%2B%20Java)-brightgreen?style=flat-square)](#статус-локализации-v10)
+[![Release](https://img.shields.io/badge/Release-v1.0-blue?style=flat-square)](https://github.com/SlopCoreGames/liliths-throne-public-RUS/releases/tag/v1.0)
 
 </div>
 
@@ -37,23 +37,33 @@
 
 ## О проекте
 
-Этот репозиторий — форк [`Innoxia/liliths-throne-public`](https://github.com/Innoxia/liliths-throne-public) (ветка `dev`, версия `0.4.11.9`), созданный для **полного перевода игры на русский язык** — не только внешних XML-сценариев, но и зашитого в Java-код интерфейса, атрибутов, квестов, статусов, заклинаний и генератора описаний.
+Этот репозиторий — форк [`Innoxia/liliths-throne-public`](https://github.com/Innoxia/liliths-throne-public) (ветка `dev`, версия `0.4.11.9`), содержащий **полный 100% перевод игры на русский язык**: как всех внешних XML-файлов (`res/`), так и всего Java-кода (`src/`), включая интерфейс, редактор персонажа, диалоги, боевую систему, секс-сцены, управление рабами и динамический генератор описаний тела.
 
-Главная техническая особенность *Lilith's Throne* в том, что текст в игре не статичен: движок собирает предложения на лету из десятков переменных, тегов подстановки (`[npc.name]`, `[pc.verb(...)]`, `[npc.speech(...)]`) и условных блоков `#IF / #ELSEIF / #ELSE / #ENDIF`. Поэтому локализация строится как полноценный инженерный конвейер с сохранением синтаксиса движка, проверкой компиляции и последующей адаптацией русской морфологии.
+Главная техническая особенность *Lilith's Throne* в том, что текст в игре не статичен: движок собирает предложения на лету из десятков переменных, тегов подстановки (`[npc.name]`, `[pc.verb(...)]`, `[npc.speech(...)]`) и условных блоков `#IF / #ELSEIF / #ELSE / #ENDIF`. В нашей локализации реализованы полная русская морфология ([`RuMorphology.java`](src/com/lilithsthrone/utils/RuMorphology.java)), таблица спряжения `667` глаголов ([`RuVerbTable.java`](src/com/lilithsthrone/utils/RuVerbTable.java)) и локализованный парсер [`UtilText.java`](src/com/lilithsthrone/game/dialogue/utils/UtilText.java).
 
 ---
 
-## Статус локализации
+## Статус локализации (`v1.0` — 100% Full Release)
 
-- **Скачать готовую бета-сборку (Windows):** [Release `v0.4.11.9-ru-beta1`](https://github.com/SlopCoreGames/liliths-throne-public-RUS/releases/tag/v0.4.11.9-ru-beta1) (`Lilith's Throne-0.4.11.9.jar` + `res/` + `start_lt_ru.bat`, требуется **Java 11+**).
-- **Базовая сборка:** проект собирается на **Java 11 + Maven + JavaFX 18.0.2** в рабочий shaded JAR с принудительной кодировкой `UTF-8` и кириллическими шрифтами (`Carlito`, `DejaVu Sans`). Сборка проверена запуском GUI-клиента (`-Ddebug=true`) и рантайм-загрузкой всех **46/46** классов загрузчиков `res/` (`0` ошибок).
-- **XML-контент (`100%` очереди):** переведено и провалидировано **`2 073` XML-файла** (`0` ошибок очереди, `0` ошибок XML/DOM-аудита), накоплено **`44 971`** записей в Translation Memory (`ru_tools/tm_cache.json`). Охвачены сюжетные диалоги (`1 369` узлов), квесты, NPC, локации, расы и подвиды (`93`), предметы (`296`), экипировка (`475`), оружие, эффекты, тату, боевые приёмы и секс-сцены (`1 073`).
-- **Java-исходники (`src/`):** переведены и скомпилированы **`15` приоритетных системных и UI-классов** (атрибуты персонажа, меню, настройки, создание персонажа, пролог, квесты, статусы, перки, заклинания, типы урона, контроллеры интерфейса); остальные `.java`-классы игровых модулей (`npc/`, `dialogue/places/`, `sexActions/`, `body/`) пока остаются на английском и запланированы на следующий этап.
-- **Запланировано для следующих версий:**
-  - Доперевод оставшихся `.java`-классов с игровыми строками и диалогами.
-  - Пост-обработка аргументов внутри составных тегов `[...]` (например, `[npc.verb(...)]`, `[npc.speech(...)]`).
-  - Расширение русской морфологии ([`RuMorphology.java`](src/com/lilithsthrone/utils/RuMorphology.java)) и парсера [`UtilText.java`](src/com/lilithsthrone/game/dialogue/utils/UtilText.java) для корректных падежей предметов/одежды и согласования глаголов по роду.
-  - Полная игровая и визуальная проверка сцен перед финальным релизом.
+- **Скачать готовую релизную сборку (Windows):** [Release `v1.0`](https://github.com/SlopCoreGames/liliths-throne-public-RUS/releases/tag/v1.0) (`Liliths_Throne_RU_v0.4.11.9_v1.0_Win.zip`: `Lilith's Throne-0.4.11.9.jar` + `res/` + `start_lt_ru.bat`, требуется **Java 11+**).
+- **100% XML-контент (`2 448` XML-файлов):** переведены и провалидированы все `2 448` XML-файлов в `res/` (включая `res/dialogue`, `res/items`, `res/clothing`, `res/weapons`, `res/combatMove`, `res/race`, `res/statusEffects`, `res/tattoos`, `res/setBonuses`, `res/outfits`, `res/maps`, `res/mods`, книги и стикеры). `0` ошибок XML/DOM-парсинга, `0` утечек масок `@@`, `0` CJK-символов.
+- **100% Java-исходники (`987` Java-файлов):** переведены и скомпилированы все `987` классов в `src/` (интерфейс, создание персонажа, пролог, все NPC и диалоги локаций, все `sexActions`, части тела и трансформации, перки, фетиши, квесты, заклинания, статусы, управление рабами и комнатами).
+- **Русская морфология и парсер `UtilText`:**
+  - Автоматическое спряжение и согласование `667` глаголов в тегах `[*.verb(...)]` через [`RuVerbTable.java`](src/com/lilithsthrone/utils/RuVerbTable.java).
+  - Полная локализация местоимений, притяжательных форм, артиклей, связок `[*.is]`/`[*.has]`/`[*.do]`, единиц измерения, времени, стонов, запахов, рас и частей тела в [`UtilText.java`](src/com/lilithsthrone/game/dialogue/utils/UtilText.java).
+  - Падежное склонение существительных и прилагательных в [`RuMorphology.java`](src/com/lilithsthrone/utils/RuMorphology.java).
+- **Интерфейс, шрифты и тестирование:**
+  - Встроена поддержка кириллических шрифтов (`Carlito`, `DejaVu Sans`), адаптирована CSS-вёрстка кнопок (`webView_stylesheet.css`) и проверена целостность всех HTML/CSS-атрибутов и ID элементов управления.
+  - Сборка протестирована автоматическим геймплей-пробом (`LtReleaseProbe`: загрузка всех реестров, генерация мира, парсинг диалогов и морфологии, цикл сохранения/загрузки) и визуальной проверкой GUI.
+  - В базе памяти переводов (`ru_tools/tm_cache.json`) накоплено более **`70 000`** выверенных переводов.
+
+---
+
+## Как запустить игру
+
+1. Скачайте и распакуйте архив [`Liliths_Throne_RU_v0.4.11.9_v1.0_Win.zip`](https://github.com/SlopCoreGames/liliths-throne-public-RUS/releases/tag/v1.0) в любую папку (папка `res/` должна находиться рядом с `.jar`-файлом).
+2. Убедитесь, что у вас установлена **Java 11 или новее** (64-bit).
+3. Запустите `start_lt_ru.bat` (или выполните `java -Dfile.encoding=UTF-8 -jar "Lilith's Throne-0.4.11.9.jar"`).
 
 ---
 
@@ -65,41 +75,37 @@
   XML (res/) / Java (src/)
          │
          ▼
-  1. Белый список CDATA/XML-тегов по каталогам + сплиттер #IF/#ELSEIF/#ELSE/#ENDIF
-         │   (логика Nashorn, флаги, ID и <formattingNames> не затрагиваются)
+  1. Белый список CDATA/XML-тегов и AST/токен-парсер Java + сплиттер #IF/#ELSEIF/#ELSE/#ENDIF
+         │   (логика Nashorn, флаги, ID, CSS, пути и <formattingNames> защищены)
          ▼
   2. Маскирование синтаксиса:
      • Nashorn [#...]/[##...]       ──▶ @@S0@@... (с балансировкой вложенных скобок)
+     • Глагольные теги [*.verb(..)] ──▶ @@V0@@...
      • Форматирование денег          ──▶ @@M0@@...
      • HTML-теги (<span ...>, <p>)   ──▶ @@H0@@...
      • Теги движка ([pc.name]...)    ──▶ @@T0@@...
          │
          ▼
-  3. Дедупликация через Translation Memory (tm_cache.json)
+  3. Дедупликация через Translation Memory (tm_cache.json, 70 000+ записей)
          │
          ▼
   4. Локальный перевод (Gemma 4 26B A4B Q5_K_M @ llama.cpp)
-     + глоссарий (GLOSSARY_RU.json) + строгая проверка отсутствия утечек масок и валидности XML
+     + глоссарий (GLOSSARY_RU.json) + строгая проверка масок, HTML/CSS-атрибутов и валидности XML/Java
          │
          ▼
-  5. Инкрементальная проверка: mvn compile / package -DskipTests ──▶ git push dev
+  5. Компиляция и автотесты: mvn clean package -DskipTests ──▶ LtReleaseProbe ──▶ Release v1.0
 ```
 
-### Ключевые компоненты в `ru_tools/`
+### Ключевые компоненты в `ru_tools/` и `src/`
 
 | Компонент | Назначение |
 | --- | --- |
 | [`translate_lt.py`](ru_tools/translate_lt.py) | Батч-переводчик XML с белым списком тегов, балансированным маскированием Nashorn `[#...]`, `@@H*@@` / `@@T*@@`, проверкой валидности XML (`ElementTree`), защитой от утечки масок и кэшем `tm_cache.json`. |
-| [`translate_java_lt.py`](ru_tools/translate_java_lt.py) | Безопасный экстрактор и переводчик строковых литералов из `.java` (трогает только UI/диалоговый текст, не затрагивая пути, CSS, идентификаторы и флаги). |
-| [`queue_worker.py`](ru_tools/queue_worker.py) | Приоритетный воркер очереди (`queue.json`), ведущий учёт завершённых файлов в `progress.json` и энергопотребления GPU в `energy_stats.json`. |
+| [`translate_java_v2.py`](ru_tools/translate_java_v2.py) | AST/токен-переводчик строковых литералов `.java` с защитой системных аргументов конструкторов (`CONSTRUCTOR_SKIP_ARGS`), флагов, путей, ID и CSS, сплиттером `#IF/#ELSE/#ENDIF` и проверкой компиляции. |
+| [`queue_worker_java.py`](ru_tools/queue_worker_java.py) | Воркер пакетного перевода Java-кода с автоматической проверкой `mvn compiler:compile` и автопушем прогресса. |
+| [`build_verb_table.py`](ru_tools/build_verb_table.py) | Генератор таблицы русских глагольных форм [`RuVerbTable.java`](src/com/lilithsthrone/utils/RuVerbTable.java) для динамических тегов `[*.verb(...)]`. |
+| [`RuMorphology.java`](src/com/lilithsthrone/utils/RuMorphology.java) | Модуль склонения русских существительных и прилагательных и согласования форм в [`UtilText.java`](src/com/lilithsthrone/game/dialogue/utils/UtilText.java). |
 | [`GLOSSARY_RU.json`](ru_tools/GLOSSARY_RU.json) | Единый словарь терминов, имён и правил сохранения тегов. |
-| [`RuMorphology.java`](src/com/lilithsthrone/utils/RuMorphology.java) | Модуль склонения русских существительных и прилагательных (винительный падеж и дальнейшее расширение под инвентарь/экипировку). |
-
-### Локальная модель и железо
-
-Перевод выполняется **полностью локально и без цензуры** на рабочей станции:
-- **Модель:** `Gemma-4-26B-A4B-It-Abliterated` (`Q5_K_M`) на базе `llama.cpp` (`llama-server.exe`, CUDA, `--reasoning off`, `temperature: 0.25`).
-- **Термозащита по HotSpot:** встроенный в `translate_lt.py` `adaptive_thermal_guard` опрашивает датчики GPU напрямую через `nvapi64.dll` (`NvAPI_GPU_GetThermalSensors`), не допуская перегрева GPU Hot Spot и памяти при длительных прогонах.
 
 ---
 

@@ -18,15 +18,15 @@ import com.lilithsthrone.utils.colours.PresetColour;
  */
 public enum FetishDesire {
 	
-	ZERO_HATE(0, "hate", "hate", "hates", "сильная симпатия 1", PresetColour.BASE_CRIMSON),
+	ZERO_HATE(0, "ненависть", "ненавидите", "ненавидит", "fondness1", PresetColour.BASE_CRIMSON),
 	
-	ONE_DISLIKE(1, "dislike", "dislike", "dislikes", "сильная симпатия 2", PresetColour.BASE_RED),
+	ONE_DISLIKE(1, "неприязнь", "не любите", "не любит", "fondness2", PresetColour.BASE_RED),
 	
-	TWO_NEUTRAL(2, "indifferent", "безразличны к", "безразличен к", "сильная симпатия 3", PresetColour.BASE_BLUE_STEEL),
+	TWO_NEUTRAL(2, "безразличие", "безразличны к", "безразличен к", "fondness3", PresetColour.BASE_BLUE_STEEL),
 	
-	THREE_LIKE(3, "like", "like", "likes", "сильная симпатия 4", PresetColour.BASE_PINK_LIGHT),
+	THREE_LIKE(3, "симпатия", "любите", "любит", "fondness4", PresetColour.BASE_PINK_LIGHT),
 	
-	FOUR_LOVE(4, "love", "love", "loves", "сильная симпатия 5", PresetColour.BASE_PINK);
+	FOUR_LOVE(4, "обожание", "обожаете", "обожает", "fondness5", PresetColour.BASE_PINK);
 	
 	private int value;
 	private String name;

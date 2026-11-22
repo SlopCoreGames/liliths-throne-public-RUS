@@ -354,7 +354,7 @@ public abstract class NPC extends GameCharacter implements XMLSaving {
 		Element valuesElement = doc.createElement("NPCValues");
 		npcSpecific.appendChild(valuesElement);
 		for(NPCFlagValue value : NPCFlagValues) {
-			XMLUtil.createXMLElementWithValue(doc, valuesElement, "Значение_NPC", value.toString());
+			XMLUtil.createXMLElementWithValue(doc, valuesElement, "NPCValue", value.toString());
 		}
 
 		if(genderPreference!=null) {

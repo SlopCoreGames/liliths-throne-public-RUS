@@ -131,7 +131,7 @@ public class DialogueManager {
 		addHardCodedDialogueId("HC_encounter_harpy_nest_victory", HarpyAttackerDialogue.AFTER_COMBAT_VICTORY);
 
 		addHardCodedDialogueId("HC_encounter_submission_defeat", TunnelAttackDialogue.AFTER_COMBAT_DEFEAT);
-		addHardCodedDialogueId("Победа: подчинение в случайной встрече", TunnelAttackDialogue.AFTER_COMBAT_VICTORY);
+		addHardCodedDialogueId("HC_encounter_submission_victory", TunnelAttackDialogue.AFTER_COMBAT_VICTORY);
 
 		addHardCodedDialogueId("HC_encounter_bat_caverns_defeat", BatCavernDialogue.AFTER_COMBAT_DEFEAT);
 		addHardCodedDialogueId("HC_encounter_bat_caverns_victory", BatCavernDialogue.AFTER_COMBAT_VICTORY);
@@ -147,7 +147,7 @@ public class DialogueManager {
 		
 		// Modded dialogue types:
 		
-		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/диалог");
+		Map<String, Map<String, File>> moddedFilesMap = Util.getExternalModFilesById("/dialogue");
 		for(Entry<String, Map<String, File>> entry : moddedFilesMap.entrySet()) {
 			for(Entry<String, File> innerEntry : entry.getValue().entrySet()) {
 				try {

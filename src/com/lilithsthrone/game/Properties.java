@@ -400,7 +400,7 @@ public class Properties {
 			createXMLElementWithValue(doc, settings, "forcedFetishPercentage", String.valueOf(forcedFetishPercentage));
 
 			createXMLElementWithValue(doc, settings, "difficultyLevel", difficultyLevel.toString());
-			createXMLElementWithValue(doc, settings, "Вероятность ошибки ИИ", String.valueOf(AIblunderRate));
+			createXMLElementWithValue(doc, settings, "AIblunderRate", String.valueOf(AIblunderRate));
 			
 			
 			// Artist priority:

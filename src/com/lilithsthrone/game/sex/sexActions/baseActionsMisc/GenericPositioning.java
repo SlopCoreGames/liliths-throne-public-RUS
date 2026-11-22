@@ -2876,11 +2876,11 @@ public class GenericPositioning {
 				if(isHappy) {
 					switch(Main.sex.getSexPace(Main.sex.getCharacterPerformingAction())) {
 						case DOM_ROUGH:
-							return "С жадной, похотливой ухмылкой на лице [npc.her], [npc.name] делает именно то, что ты говоришь, и всем весом [npc.her] наваливается на тебя. Грубо притирая [npc.her] к твоему паху, [npc.she] прижимает твои запястья к полу по обе стороны от твоей головы и рычит: [npc.speech(Грязная сучка!\", \"1\": \"#IFnpc.isVisiblyPregnant() || !npc.hasVagina()#THEN я тебя сейчас как следует оттрахаю!#ELSE я тебя сейчас как следует осеменю!#ENDIF\""
+							return "С жадной, похотливой ухмылкой на лице [npc.her], [npc.name] делает именно то, что ты говоришь, и всем весом [npc.her] наваливается на тебя. Грубо притирая [npc.her] к твоему паху, [npc.she] прижимает твои запястья к полу по обе стороны от твоей головы и рычит: [npc.speech(Грязная сучка! "
 									+ UtilText.parse(Main.sex.getCharacterTargetedForSexAction(this), "#IFnpc.isVisiblyPregnant() || !npc.hasVagina()#THEN Я тебя сейчас как следует оттрахаю!#ELSE Я тебя сейчас как следует осеменю!#ENDIF")
 									+ ")]";
 						default:
-							return "С жадной, похотливой улыбкой на лице [npc.her], [npc.name] делает именно то, что ты говоришь, и ложится поверх тебя. Отчаянно притирая [npc.her] к твоему паху, [npc.she] прижимает твои запястья к полу по обе стороны от твоей головы и [npc.moansVerb], [npc.speech(Хороший [pc.girl]!\""
+							return "С жадной, похотливой улыбкой на лице [npc.her], [npc.name] делает именно то, что ты говоришь, и ложится поверх тебя. Отчаянно притирая [npc.her] к твоему паху, [npc.she] прижимает твои запястья к полу по обе стороны от твоей головы и [npc.moansVerb], [npc.speech(Хороший [pc.girl]! "
 									+ UtilText.parse(Main.sex.getCharacterTargetedForSexAction(this), "#IFnpc.isVisiblyPregnant() || !npc.hasVagina()#THEN я тебя сейчас как следует оттрахаю!#ELSE я тебя сейчас как следует осеменю!#ENDIF")
 									+ ")]";
 					}

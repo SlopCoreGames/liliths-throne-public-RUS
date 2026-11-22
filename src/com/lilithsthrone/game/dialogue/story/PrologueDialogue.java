@@ -951,7 +951,7 @@ public class PrologueDialogue {
 						AbstractItem spellBook = Main.game.getItemGen().generateItem(ItemType.getSpellBookType(startingSpell));
 						Main.game.getWorlds().get(WorldType.LILAYAS_HOUSE_FIRST_FLOOR).getCell(PlaceType.LILAYA_HOME_ROOM_PLAYER).getInventory().addItem(spellBook);
 						
-						Main.game.getTextEndStringBuilder().append("<p style='text-align:center;'>[style.boldОтличная("+spellBook.getName()+")] добавлена в хранилище твоей комнаты!</p>");
+						Main.game.getTextEndStringBuilder().append("<p style='text-align:center;'>[style.boldExcellent("+spellBook.getName()+")] добавлена в хранилище твоей комнаты!</p>");
 						
 					}
 				};
@@ -981,7 +981,7 @@ public class PrologueDialogue {
 					@Override
 					public void effects() {
 						Main.game.getNpc(Rose.class).setLocation(WorldType.LILAYAS_HOUSE_GROUND_FLOOR, PlaceType.LILAYA_HOME_LAB, false);
-						Main.saveGame("Автосохранение_"+Main.game.getPlayer().getName(false), true, true);
+						Main.saveGame("AutoSave_"+Main.game.getPlayer().getName(false), true, true);
 					}
 				};
 				
