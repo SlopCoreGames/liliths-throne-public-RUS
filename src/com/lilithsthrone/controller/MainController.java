@@ -459,7 +459,7 @@ public class MainController implements Initializable {
 			
 			private void printAlreadyExistingBinding(String primarySecondary, String actionName, String eventCodeName) {
 				Main.game.getTextStartStringBuilder().append("<p style='text-align:center;'>" + "<b style='color:" + PresetColour.GENERIC_BAD.toWebHexString() + ";'>Ключ '" + eventCodeName
-						+ "' уже " + primarySecondary + " привязан к действию '" + actionName + "'!</b>" + "</p>");
+						+ "' уже привязан к " + primarySecondary + " действию '" + actionName + "'!</b>" + "</p>");
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}
 			
@@ -1042,7 +1042,7 @@ public class MainController implements Initializable {
 									if((boolean) Main.mainController.getWebEngine().executeScript("document.getElementById('feminine_" + gp + "') === document.activeElement")
 										|| (boolean) Main.mainController.getWebEngine().executeScript("document.getElementById('masculine_" + gp + "') === document.activeElement")) {
 										Main.game.setContent(
-												new Response("Сохранить", "Сохранить все местоимения, которые в настоящее время отображаются.", OptionsDialogue.OPTIONS_PRONOUNS) {
+												new Response("Сохранить", "Сохранить все текущие местоимения.", OptionsDialogue.OPTIONS_PRONOUNS) {
 													@Override
 													public void effects() {
 														OptionsDialogue.OPTIONS_PRONOUNS.getResponse(0, 1).effects();
@@ -1058,7 +1058,7 @@ public class MainController implements Initializable {
 											|| (boolean) Main.mainController.getWebEngine().executeScript("document.getElementById('GENDER_NAME_ANDROGYNOUS_" + genderName + "') === document.activeElement")
 											|| (boolean) Main.mainController.getWebEngine().executeScript("document.getElementById('GENDER_NAME_FEMININE_" + genderName + "') === document.activeElement")) {
 											Main.game.setContent(
-													new Response("Сохранить", "Сохранить все местоимения, которые в настоящее время отображаются.", OptionsDialogue.OPTIONS_PRONOUNS) {
+													new Response("Сохранить", "Сохранить все текущие местоимения.", OptionsDialogue.OPTIONS_PRONOUNS) {
 														@Override
 														public void effects() {
 															OptionsDialogue.OPTIONS_PRONOUNS.getResponse(0, 1).effects();
@@ -1109,7 +1109,7 @@ public class MainController implements Initializable {
 									enterConsumed = true;
 									Main.mainController.getWebEngine().executeScript("document.getElementById('hiddenPField').innerHTML=document.getElementById('outfit_name').value;");
 									LilayaDressingRoomDialogue.setOutfitName(Main.mainController.getWebEngine().getDocument().getElementById("hiddenPField").getTextContent());
-									Main.game.setContent(new Response("Редактор одежды", "", Main.game.getCurrentDialogueNode()));
+									Main.game.setContent(new Response("Редактор наряда", "", Main.game.getCurrentDialogueNode()));
 								}
 							}
 						}
@@ -1472,8 +1472,8 @@ public class MainController implements Initializable {
 						}
 					}, false);
 					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation(
-							"Отметить для переброски",
-							DicePoker.isAbleToSelectReroll()?"":"[style.italicsBad(Вы не можете отметить свои кубики для переброса в этой сцене!)]"));
+							"Отметить для переброса",
+							DicePoker.isAbleToSelectReroll()?"":"[style.italicsBad(В этой сцене вы не можете помечать кости для переброса!)]"));
 				}
 			}
 		}
@@ -2057,12 +2057,12 @@ public class MainController implements Initializable {
 			hotKey = Main.getProperties().hotkeyMapPrimary.get(KeyboardAction.QUICKSAVE);
 			MainController.addEventListener(documentButtonsRight, "quickSave", "mouseenter", new TooltipInformationEventListener().setInformation(
 					quickSaveAvailable
-						?"[style.colourGood(Быстрое сохранение"+(hotKey==null?"":" ("+hotKey.getFullName()+")")+")]"
-						:"[style.colourBad(Быстрое сохранение"+(hotKey==null?"":" ("+hotKey.getFullName()+")")+")]",
-					"Либо создает, либо "+(quickLoadAvailable?"[style.italicsBad(переопределяет)]":"")+"файл сохранения с именем '"+Main.getQuickSaveName()+"'."
+						?"[style.colourGood(Быстрое сохранение)"+(hotKey==null?"":" ("+hotKey.getFullName()+")")+")]"
+						:"[style.colourBad(Быстрое сохранение)"+(hotKey==null?"":" ("+hotKey.getFullName()+")")+")]",
+					"Либо создает, либо "+(quickLoadAvailable?"[style.italicsBad(перезаписывает)]":"")+" файл сохранения с именем '"+Main.getQuickSaveName()+"'."
 						+ (hotKey==null
-							?"<br/>Нет горячих клавиш, назначенных на эту акцию."
-							:"<br/>Вы также можете быстро сохранить, нажав '"+hotKey.getFullName()+" клавиша.")
+							?"<br/>Для этого действия пока не назначено сочетание клавиш."
+							:"<br/>You can also quick save by pressing the '"+hotKey.getFullName()+"клавиша '")
 						+ (quickSaveAvailable
 							?"<br/>[style.italicsGood(Вы можете сохранить игру в этой сцене!)]"
 							:"<br/>[style.italicsBad("+Main.getQuickSaveUnavailabilityDescription()+")]")),
@@ -2079,15 +2079,15 @@ public class MainController implements Initializable {
 			hotKey = Main.getProperties().hotkeyMapPrimary.get(KeyboardAction.QUICKLOAD);
 			MainController.addEventListener(documentButtonsRight, "quickLoad", "mouseenter", new TooltipInformationEventListener().setInformation(
 					quickLoadAvailable
-						?"[style.colourGood(Быстрое загрузка"+(hotKey==null?"":" ("+hotKey.getFullName()+")")+")]"
-						:"[style.colourBad(Быстрое загрузка"+(hotKey==null?"":" ("+hotKey.getFullName()+")")+")]",
+						?"[style.colourGood(Быстрая загрузка"+(hotKey==null?"":" ("+hotKey.getFullName()+")")+")]"
+						:"[style.colourBad(Быстрая загрузка"+(hotKey==null?"":" ("+hotKey.getFullName()+")")+")]",
 					"Загружает файл игры с именем '"+Main.getQuickSaveName()+"'."
 						+(hotKey==null
-							?"<br/>В настоящее время к этой функции не присвоено сочетание клавиш."
-							:"<br/>Вы также можете быстро сохранить, нажав '"+hotKey.getFullName()+" клавиша.")
+							?"<br/>Для этого действия пока не назначено сочетание клавиш."
+							:"<br/>You can also quick load by pressing the '"+hotKey.getFullName()+"клавиша '")
 						+(quickLoadAvailable
-							?"<br/>[style.italicsGood(Быстро сохраняемый файл обнаружен для этого персонажа!)]"
-							:"<br/>[style.italicsBad(Для этого персонажа не обнаружен быстро сохраняемый файл!)]")),
+							?"<br/>[style.italicsGood(Для этого персонажа обнаружен файл быстрого сохранения!)]"
+							:"<br/>[style.italicsBad(Для этого персонажа файл быстрого сохранения не обнаружен!)]")),
 					false);
 		}
 		
@@ -2100,8 +2100,7 @@ public class MainController implements Initializable {
 
 			MainController.addEventListener(documentButtonsRight, id, "mouseenter", new TooltipInformationEventListener().setInformation(
 					Main.game.getCurrentDialogueNode().getLabel() == "" || Main.game.getCurrentDialogueNode().getLabel() == null ? "-" : Main.game.getCurrentDialogueNode().getLabel(),
-					"Нажмите, чтобы скопировать текущий диалог в буфер обмена. Затем вы можете вставить результат в текстовый редактор, сохранить его как файл <i>.html</i>, а затем открыть этот файл в браузере, чтобы сохранить форматирование игры.<br/>"
-					+ "Эта сцена была написана: <b>"+Main.game.getCurrentDialogueNode().getAuthor()+"</b>",
+					"Нажмите, чтобы скопировать текущий диалог в буфер обмена. Затем вы сможете вставить результат в текстовый редактор, сохранить его как файл <i>.html</i>, а после открыть этот файл в браузере, чтобы сохранить игровое форматирование.<br/>Этот сценарий был написан: <b>"+Main.game.getCurrentDialogueNode().getAuthor()+"</b>",
 					80), false);
 			
 		}
@@ -2126,13 +2125,13 @@ public class MainController implements Initializable {
 				}, false);
 				MainController.addEventListener(documentButtonsRight, id, "mouseenter", new TooltipInformationEventListener().setInformation(
 						"Экспортировать персонажа",
-						"Экспорт "+name+" в папку 'data/characters'. Экспортированные персонажи могут быть импортированы на аукционном блоке в Улице работорговцев.",
+						"Экспорт "+name+" в папку 'data/characters'. Экспортированных персонажей можно импортировать на аукционе в Переулке Рабов.",
 						48), false);
 				
 			} else {
 				MainController.addEventListener(documentButtonsRight, id, "mouseenter", new TooltipInformationEventListener().setInformation(
 						"Экспортировать персонажа",
-						"Чтобы экспортировать любого персонажа, включая вашего собственного, вам нужно просматривать их на экране 'Присутствующие персонажи' в вашем телефоне.",
+						"Чтобы экспортировать любого персонажа, включая своего собственного, вы должны просматривать его на экране телефона «Присутствующие персонажи».",
 						48), false);
 			}
 		}
@@ -2194,8 +2193,8 @@ public class MainController implements Initializable {
 			addEventListener(documentAttributes, id, "mouseleave", hideTooltipListener, false);
 			TooltipInformationEventListener el2 = new TooltipInformationEventListener().setInformation(
 					!RenderingEngine.ENGINE.isRenderingTattoosLeft()
-						?"Переключиться на татуировки"
-						:"Переключиться на одежду",
+						?"Перейти к татуировкам"
+						:"Перейти к одежде",
 					"");
 			addEventListener(documentAttributes, id, "mouseenter", el2, false);
 		}
@@ -2206,7 +2205,7 @@ public class MainController implements Initializable {
 			addEventListener(documentAttributes, id, "mouseleave", hideTooltipListener, false);
 			TooltipInformationEventListener el2 = new TooltipInformationEventListener().setInformation(
 					Util.capitaliseSentence(Attribute.ENCHANTMENT_LIMIT.getName()),
-					"Общее количество зачарований оружия, одежды и татуировок, которое вы можете выдержать без огромных штрафов. Ваш предел рассчитывается как: <i>10 + (уровень) + (бонусы от перков)</i>");
+					"Общее количество зачарований оружия, одежды и татуировок, которое вы можете выдержать без огромных штрафов. Ваш предел рассчитывается как: <i>10 + (уровень) + (бонусы от навыков)</i>");
 			addEventListener(documentAttributes, id, "mouseenter", el2, false);
 		}
 
@@ -2235,10 +2234,10 @@ public class MainController implements Initializable {
 					dateSB.append("Сегодняшняя дата: [style.colourGood("+ Main.game.getDisplayDate(true)+")]");
 				}
 				dateSB.append("<br/>");
-				dateSB.append("Сейчас  "+UtilText.generateSingularDeterminer(day)+" [style.colourBlueLight("+day+")].<br/>Вы находитесь в этом новом мире уже: [style.colourExcellent("+Main.game.getDayNumber()+" день"+(Main.game.getDayNumber()>1?"s":"")+")]");
-				dateSB.append("<br/><i>Нажмите, чтобы переключаться между датой и счётом дней.</i>");
+				dateSB.append("Сейчас "+UtilText.generateSingularDeterminer(day)+" [style.colourBlueLight("+day+")].<br/>Вы в этом новом мире уже: [style.colourExcellent("+Main.game.getDayNumber()+" день"+(Main.game.getDayNumber()>1?"s":"")+")]");
+				dateSB.append("<br/><i>Нажмите, чтобы переключиться между датой и количеством дней.</i>");
 			}
-			TooltipInformationEventListener el2 = new TooltipInformationEventListener().setInformation("Переключить отображение календаря",
+			TooltipInformationEventListener el2 = new TooltipInformationEventListener().setInformation("Переключить вид календаря",
 						dateSB.toString());
 			addEventListener(documentAttributes, id, "mouseenter", el2, false);
 		}
@@ -2263,14 +2262,13 @@ public class MainController implements Initializable {
 			addEventListener(documentAttributes, id, "mouseleave", hideTooltipListener, false);
 			StringBuilder timeSB = new StringBuilder();
 			if(Main.game.isBadEnd()) {
-				timeSB.append("[style.italicsBad(Учитывая вашу текущую ситуацию, вы потеряли отчёт о том, какое сейчас время...)]");
+				timeSB.append("[style.italicsBad(Учитывая твое нынешнее положение, ты уже сбился со счета, сколько сейчас времени...)]");
 			} else {
 				timeSB.append("Текущее время: "+Units.time(Main.game.getDateNow())+" (<span style='color:"+dp.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(dp.getName())+"</span>)<br/>"
-					+ "Sunrise: "+(!dateKnown?"[style.colourMinorBad(??/??/??)] [style.colourYellow("+Units.time(ldt[0]):"[style.colourYellow("+Units.dateTime(ldt[0]))+")]<br/>Закат: "+(!dateKnown?"[style.colourMinorBad(??/??/??)] [style.colourOrange("+Units.time(ldt[1]):"[style.colourOrange("+Units.dateTime(ldt[1]))+")]<br/>"
-					+ "<i>Нажмите, чтобы переключать отображение времени между 24-часовым и 12-часовым часами.</i>");
+					+ "Sunrise: "+(!dateKnown?"[style.colourMinorBad(??/??/??)] [style.colourYellow("+Units.time(ldt[0]):"[style.colourYellow("+Units.dateTime(ldt[0]))+")]<br/>Закат: "+(!dateKnown?"[style.colourMinorBad(??/??/??)] [style.colourOrange("+Units.time(ldt[1]):"[style.colourOrange("+Units.dateTime(ldt[1]))+")]<br/><i>Нажмите, чтобы переключить формат времени между 24-часовым и 12-часовым.</i>");
 			}
 			TooltipInformationEventListener el2 = new TooltipInformationEventListener().setInformation(
-					(Main.game.isDayTime()?"День":"Ночь"),
+					(Main.game.isDayTime()?"Дневное время":"Ночное время"),
 					timeSB.toString());
 			addEventListener(documentAttributes, id, "mouseenter", el2, false);
 		}
@@ -2606,8 +2604,8 @@ public class MainController implements Initializable {
 			addEventListener(documentRight, id, "mouseleave", hideTooltipListener, false);
 			TooltipInformationEventListener el2 = new TooltipInformationEventListener().setInformation(
 					!RenderingEngine.ENGINE.isRenderingTattoosRight()
-						?"Переключить на татуировки"
-						:"Переключиться на одежду",
+						?"Перейти к татуировкам"
+						:"Перейти к одежде",
 					"");
 			addEventListener(documentRight, id, "mouseenter", el2, false);
 		}
@@ -2619,8 +2617,7 @@ public class MainController implements Initializable {
 			TooltipInformationEventListener el2 = new TooltipInformationEventListener().setInformation(
 					Util.capitaliseSentence(Attribute.ENCHANTMENT_LIMIT.getName()),
 					UtilText.parse(RenderingEngine.getCharacterToRender(),
-							"Общая сумма заклинаний оружия, одежды и татуировок [npc.nameIsFull], которые можно использовать без значительных штрафов."
-								+" [npc.Her] максимальное значение рассчитывается из: <i>10 + (уровень) + (преимущества)</i>"));
+							"Общее количество зачарований атрибутов оружия, одежды и татуировок, которое можно использовать без серьезных штрафов. [npc.Her] Максимум рассчитывается как: <i>10 + (уровень) + (бонусы от перков)</i> [npc.nameIsFull]"));
 			addEventListener(documentRight, id, "mouseenter", el2, false);
 		}
 		
@@ -3134,7 +3131,7 @@ public class MainController implements Initializable {
 					Main.combat.endCombat(false);
 //					Main.game.setContent(new Response("", "", Main.game.getDefaultDialogue(false)));
 					Main.game.setContent(new ResponseSex(
-							"Доминировать",
+							"Покорная",
 							"",
 							false,
 							false,
@@ -3255,7 +3252,7 @@ public class MainController implements Initializable {
 			
 			if(!placeTypeTarget.getPlace().getPlaceType().equals(PlaceType.GENERIC_IMPASSABLE)) {
 				if(Main.game.isInGlobalMap() && placeTypeTarget.getDialogue(false)==null) {
-					Main.game.flashMessage(PresetColour.GENERIC_BAD, "Нельзя путешествовать сюда!");
+					Main.game.flashMessage(PresetColour.GENERIC_BAD, "Сюда нельзя добраться!");
 					
 				} else {
 					if(Main.game.isInGlobalMap()) {

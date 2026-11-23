@@ -16753,7 +16753,7 @@ public abstract class GameCharacter implements XMLSaving {
 				penetratorName = "[npc.tail+(true)]";
 				break;
 			case TENTACLE:
-				penetratorName = "[npc.щупальце+(true)]";
+				penetratorName = "[npc.tentacle+(true)]";
 				break;
 			case TONGUE:
 				penetratorName = "[npc.tongue]";
@@ -16825,7 +16825,7 @@ public abstract class GameCharacter implements XMLSaving {
 					orificeName = "[npc2.tail+(true)]";
 					break;
 				case TENTACLE:
-					orificeName = "[npc2.щупальце+(true)]";
+					orificeName = "[npc2.tentacle+(true)]";
 					break;
 				case FOOT:
 					if(Main.sex.getSexPositionSlot(characterPenetrating).isStanding(characterPenetrating)) {
@@ -17138,7 +17138,7 @@ public abstract class GameCharacter implements XMLSaving {
 				penetrationName = "[npc.tail+(true)]";
 				break;
 			case TENTACLE:
-				penetrationName = "[npc.щупальце+(true)]";
+				penetrationName = "[npc.tentacle+(true)]";
 				break;
 			case TONGUE:
 				penetrationName = "[npc.tongue+]";
@@ -18064,7 +18064,7 @@ public abstract class GameCharacter implements XMLSaving {
 									characterPenetrated,
 									orifice,
 									"[npc.tentacle(true)]",
-									"[npc.щупальце+(true)]",
+									"[npc.tentacle+(true)]",
 									"[npc.tentacle(true)]"));
 							break;
 					}
@@ -18119,7 +18119,7 @@ public abstract class GameCharacter implements XMLSaving {
 								characterPenetrated,
 								orifice,
 								"[npc.tentacle(true)]",
-								"[npc.щупальце+(true)]",
+								"[npc.tentacle+(true)]",
 								"[npc.tentacle(true)]"));
 						break;
 				}
@@ -18643,7 +18643,7 @@ public abstract class GameCharacter implements XMLSaving {
 					performerAreaName = "[npc.tail+(true)]";
 					break;
 				case TENTACLE:
-					performerAreaName = "[npc.щупальце+(true)]";
+					performerAreaName = "[npc.tentacle+(true)]";
 					break;
 				case TONGUE:
 					performerAreaName = "[npc.tongue+]";
@@ -18669,7 +18669,7 @@ public abstract class GameCharacter implements XMLSaving {
 					targetAreaName = "[npc.tail+(true)]";
 					break;
 				case TENTACLE:
-					targetAreaName = "[npc.щупальце+(true)]";
+					targetAreaName = "[npc.tentacle+(true)]";
 					break;
 				case TONGUE:
 					targetAreaName = "[npc.tongue+]";

@@ -405,7 +405,7 @@ public class CreationController {
 					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation(
 							"[style.colourBad(Уменьшение размера заблокировано)]",
 							UtilText.parse(BodyChanging.getTarget(),
-									"[npc.NamePos] грудь не может быть уменьшена дальше, пока в ней инкубируются яйца!"),
+									"[npc.NamePos] грудь нельзя уменьшить еще сильнее, пока в ней инкубируются яйца!"),
 							32));
 				}
 			}
@@ -419,7 +419,7 @@ public class CreationController {
 					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation(
 							"[style.colourBad(Уменьшение размера заблокировано)]",
 							UtilText.parse(BodyChanging.getTarget(),
-									"[npc.NamePos] грудь не может быть уменьшена дальше, пока в ней инкубируются яйца!"),
+									"[npc.NamePos] грудь нельзя уменьшить еще сильнее, пока в ней инкубируются яйца!"),
 							32));
 				}
 			}
@@ -855,7 +855,7 @@ public class CreationController {
 				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation(
 						"[style.colourBad(Уменьшение размера заблокировано)]",
 						UtilText.parse(BodyChanging.getTarget(),
-								"[npc.NamePos] грудь не может быть уменьшена дальше, пока в ней инкубируются яйца!"),
+								"[npc.NamePos] грудь нельзя уменьшить еще сильнее, пока в ней инкубируются яйца!"),
 						32));
 			}
 		}
@@ -869,7 +869,7 @@ public class CreationController {
 				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation(
 						"[style.colourBad(Уменьшение размера заблокировано)]",
 						UtilText.parse(BodyChanging.getTarget(),
-								"[npc.NamePos] грудь не может быть уменьшена, пока в ней инкубируются яйца!"),
+								"[npc.NamePos] грудь нельзя уменьшить еще сильнее, пока в ней инкубируются яйца!"),
 						32));
 			}
 		}
@@ -964,7 +964,7 @@ public class CreationController {
 				}, false);
 				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation(
 						Util.capitaliseSentence(modifier.getName()),
-						(modifier.isSpecialEffects()?"[style.boldGood(Специальный эффект:)] ":"")+modifier.getDescription()));
+						(modifier.isSpecialEffects()?"[style.boldGood(Особый эффект:)] ":"")+modifier.getDescription()));
 			}
 		}
 	}
@@ -1091,7 +1091,7 @@ public class CreationController {
 				}, false);
 				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation(
 						Util.capitaliseSentence(orificeMod.getName()),
-						(orificeMod.isSpecialEffects()?"[style.boldGood(Специальный эффект:)] ":"")+orificeMod.getDescription()));
+						(orificeMod.isSpecialEffects()?"[style.boldGood(Особый эффект:)] ":"")+orificeMod.getDescription()));
 			}
 		}
 	}
@@ -1278,7 +1278,7 @@ public class CreationController {
 				}, false);
 				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation(
 						Util.capitaliseSentence(orificeMod.getName()),
-						(orificeMod.isSpecialEffects()?"[style.boldGood(Специальный эффект:)] ":"")+orificeMod.getDescription()));
+						(orificeMod.isSpecialEffects()?"[style.boldGood(Особый эффект:)] ":"")+orificeMod.getDescription()));
 			}
 		}
 	}
@@ -1501,7 +1501,7 @@ public class CreationController {
 				}, false);
 				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation(
 						Util.capitaliseSentence(penMod.getName()),
-						(penMod.isSpecialEffects()?"[style.boldGood(Специальный эффект:)] ":"")+penMod.getDescription()));
+						(penMod.isSpecialEffects()?"[style.boldGood(Особый эффект:)] ":"")+penMod.getDescription()));
 			}
 		}
 	}
@@ -1729,7 +1729,7 @@ public class CreationController {
 				}, false);
 				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation(
 						Util.capitaliseSentence(modifier.getName()),
-						(modifier.isSpecialEffects()?"[style.boldGood(Специальный эффект:)] ":"")+modifier.getDescription()));
+						(modifier.isSpecialEffects()?"[style.boldGood(Особый эффект:)] ":"")+modifier.getDescription()));
 			}
 		}
 	}
@@ -1832,7 +1832,7 @@ public class CreationController {
 				}, false);
 				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation(
 						Util.capitaliseSentence(orificeMod.getName()),
-						(orificeMod.isSpecialEffects()?"[style.boldGood(Специальный эффект:)] ":"")+orificeMod.getDescription()));
+						(orificeMod.isSpecialEffects()?"[style.boldGood(Особый эффект:)] ":"")+orificeMod.getDescription()));
 			}
 		}
 	}
@@ -1900,7 +1900,7 @@ public class CreationController {
 				}, false);
 				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation(
 						Util.capitaliseSentence(orificeMod.getName()),
-						(orificeMod.isSpecialEffects()?"[style.boldGood(Специальный эффект:)] ":"")+orificeMod.getDescription()));
+						(orificeMod.isSpecialEffects()?"[style.boldGood(Особый эффект:)] ":"")+orificeMod.getDescription()));
 			}
 		}
 	}
@@ -2089,10 +2089,10 @@ public class CreationController {
 							"[style.colourBad(Удаление влагалища заблокировано)]",
 							UtilText.parse(BodyChanging.getTarget(),
 									BodyChanging.getTarget().getIncubationLitter(SexAreaOrifice.VAGINA) != null
-											?"[npc.NamePos] влагалище не может быть удалено, пока в [npc.namePos] утробе инкубируются яйца!"
+											?"[npc.NamePos] нельзя удалить, пока в матке [npc.namePos] инкубируются яйца!"
 											:(BodyChanging.getTarget().hasStatusEffect(StatusEffect.PREGNANT_0)
-											?"[npc.NamePos] влагалище нельзя удалить, пока есть шанс, что [npc.name] может быть беременна!"
-											:"[npc.NamePos] влагалище нельзя удалить, пока [npc.nameIsFull] беременна!")),
+											?"[npc.NamePos] нельзя удалить, пока существует вероятность, что [npc.name] может быть беременна!"
+											:"[npc.NamePos] нельзя удалить, пока [npc.nameIsFull] беременна!")),
 							32));
 				}
 			}
@@ -2137,7 +2137,7 @@ public class CreationController {
 				}, false);
 				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation(
 						Util.capitaliseSentence(modifier.getName()),
-						(modifier.isSpecialEffects()?"[style.boldGood(Специальный эффект:)] ":"")+modifier.getDescription()));
+						(modifier.isSpecialEffects()?"[style.boldGood(Особый эффект:)] ":"")+modifier.getDescription()));
 			}
 		}
 	}
@@ -2218,7 +2218,7 @@ public class CreationController {
 				}, false);
 				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation(
 						Util.capitaliseSentence(orificeMod.getName()),
-						(orificeMod.isSpecialEffects()?"[style.boldGood(Специальный эффект:)] ":"")+orificeMod.getDescription()));
+						(orificeMod.isSpecialEffects()?"[style.boldGood(Особый эффект:)] ":"")+orificeMod.getDescription()));
 			}
 		}
 	}
@@ -2290,7 +2290,7 @@ public class CreationController {
 				}, false);
 				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation(
 						Util.capitaliseSentence(penMod.getName()),
-						(penMod.isSpecialEffects()?"[style.boldGood(Специальный эффект:)] ":"")+penMod.getDescription()));
+						(penMod.isSpecialEffects()?"[style.boldGood(Особый эффект:)] ":"")+penMod.getDescription()));
 			}
 		}
 	}
@@ -2401,7 +2401,7 @@ public class CreationController {
 				}, false);
 				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation(
 						Util.capitaliseSentence(orificeMod.getName()),
-						(orificeMod.isSpecialEffects()?"[style.boldGood(Специальный эффект:)] ":"")+orificeMod.getDescription()));
+						(orificeMod.isSpecialEffects()?"[style.boldGood(Особый эффект:)] ":"")+orificeMod.getDescription()));
 			}
 		}
 	}
@@ -2928,16 +2928,16 @@ public class CreationController {
 					boolean confirm = Main.getProperties().hasValue(PropertyValue.tattooRemovalConfirmations);
 					if (Main.game.isInNewWorld()) {
 						if (Main.game.getPlayer().getMoney()>=100) {
-							sb.append("Это будет стоить "+UtilText.formatAsMoney(100, "охват")+" за удаление этой татуировки!");
+							sb.append("Это будет стоить "+UtilText.formatAsMoney(100, "span")+" чтобы удалить эту татуировку!");
 						} else {
-							sb.append("У вас нет требуемого "+UtilText.formatAsMoney(100, "охват")+" за удаление этой татуировки!");
+							sb.append("У вас недостаточно "+UtilText.formatAsMoney(100, "span")+" чтобы удалить эту татуировку!");
 							confirm = false;
 						}
 					} else {
-						sb.append("Удалить эту татуировку.");
+						sb.append("Убрать эту татуировку.");
 					}
 					if(confirm) {
-						sb.append(" (<i>Вам нужно будет нажать дважды, чтобы удалить её.</i>)");
+						sb.append(" (<i>Чтобы убрать её, нужно будет кликнуть дважды.</i>)");
 					}
 					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Убрать татуировку", sb.toString(), 32));
 					
@@ -2952,7 +2952,7 @@ public class CreationController {
 					} else if (currentNode.equals(SuccubisSecrets.SHOP_BEAUTY_SALON_TATTOOS)) {
 						nextDialogue = SuccubisSecrets.SHOP_BEAUTY_SALON_TATTOOS_ADD;
 					} else {
-						throw new NullPointerException("Этот узел не имеет назначенного следующего диалога");
+						throw new NullPointerException("This node doesn't have a nextDialogue assigned");
 					}
 					MainController.addEventListener(MainController.document, id, "click", e->{
 						Main.game.setContent(new Response("", "", nextDialogue) {
@@ -2963,7 +2963,7 @@ public class CreationController {
 							}
 						});
 					}, false);
-					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Добавить татуировку", "Нажмите, чтобы перейти к экрану настройки татуировки.", 16));
+					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Добавить татуировку", "Нажмите, чтобы перейти к настройке татуировки.", 16));
 				}
 			}
 			
@@ -2979,7 +2979,7 @@ public class CreationController {
 				} else if (currentNode.equals(SuccubisSecrets.SHOP_BEAUTY_SALON_TATTOOS)) {
 					nextDialogue = SuccubisSecrets.SHOP_BEAUTY_SALON_TATTOOS_ADD;
 				} else {
-					throw new NullPointerException("Этот узел не имеет назначенного следующего диалога");
+					throw new NullPointerException("This node doesn't have a nextDialogue assigned");
 				}
 				MainController.addEventListener(MainController.document, id, "click", e->{
 					Main.game.setContent(new Response("", "", nextDialogue) {
@@ -2991,7 +2991,7 @@ public class CreationController {
 						}
 					});
 				}, false);
-				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Изменить татуировку", "Нажмите, чтобы перейти к экрану настройки татуировки.", 16));
+				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Изменить татуировку", "Нажмите, чтобы перейти к настройке татуировки.", 16));
 			}
 			
 			id = "TATTOO_ENCHANT_"+invSlot.toString();
@@ -3004,7 +3004,7 @@ public class CreationController {
 						}
 					});
 				}, false);
-				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Зачаровать татуировку", "Нажмите, чтобы перейти к экрану заклинания татуировки.", 16));
+				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Зачаровать татуировку", "Нажмите, чтобы перейти к зачарованию татуировки.", 16));
 			}
 		}
 	}
@@ -3039,7 +3039,7 @@ public class CreationController {
 				}
 				String description = type.getDescription();
 				if (!type.getSlotAvailability().contains(CharacterModificationUtils.tattooInventorySlot)) {
-					description += "<br/>[style.italicsBad(Этот тип татуировки не может быть нанесен на '"+CharacterModificationUtils.tattooInventorySlot.getTattooSlotName()+"'!)]<br/>Доступные слоты: "+Util.tattooInventorySlotsToStringList(type.getSlotAvailability());
+					description += "<br/>[style.italicsBad(This tattoo type can't be applied to '"+CharacterModificationUtils.tattooInventorySlot.getTattooSlotName()+"'!)]<br/>Доступные слоты: "+Util.tattooInventorySlotsToStringList(type.getSlotAvailability());
 				}
 				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation(Util.capitaliseSentence(type.getName()), description));
 			}
@@ -3187,7 +3187,7 @@ public class CreationController {
 						Util.capitaliseSentence(counterType.getName()),
 						counterType.getDescription()
 						+(!counterType.isRetroactiveApplicationAvailable()
-							?"<br/><i>Этот тип счетчика не может быть установлен на 'Начать с 0', и вместо этого всегда отображает текущее значение.</i>"
+							?"<br/><i>Этот тип счетчика нельзя установить на 'Начинать с 0', вместо этого он всегда отображает текущее значение.</i>"
 							:""));
 				MainController.addEventListener(MainController.document, id, "mouseenter", el, false);
 			}

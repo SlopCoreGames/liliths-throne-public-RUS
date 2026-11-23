@@ -173,7 +173,7 @@ public class OptionsController {
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
-			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Сильное увеличение", "Увеличить скорость появления НПС в виде полноценных людей. (Значение по умолчанию - 5%).", 24));
+			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Сильное увеличение", "Увеличивает вероятность того, что NPC появятся в облике полноценных людей. (Значение по умолчанию — 5%.)", 24));
 		}
 		id = "HUMAN_SPAWN_RATE_INCREASE";
 		if (MainController.document.getElementById(id) != null) {
@@ -182,7 +182,7 @@ public class OptionsController {
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
-			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Увеличение", "Увеличить скорость появления НПС в виде полноценных людей. (Значение по умолчанию - 5%).", 24));
+			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Увеличить", "Увеличивает вероятность того, что NPC появятся в облике полноценных людей. (Значение по умолчанию — 5%.)", 24));
 		}
 		id = "HUMAN_SPAWN_RATE_DECREASE";
 		if (MainController.document.getElementById(id) != null) {
@@ -191,7 +191,7 @@ public class OptionsController {
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
-			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Уменьшение", "Уменьшить скорость появления НПС в виде полноценных людей. (Значение по умолчанию - 5%).", 24));
+			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Уменьшить", "Уменьшает вероятность того, что NPC появятся в облике полноценных людей. (Значение по умолчанию — 5%.)", 24));
 		}
 		id = "HUMAN_SPAWN_RATE_DECREASE_LARGE";
 		if (MainController.document.getElementById(id) != null) {
@@ -200,7 +200,7 @@ public class OptionsController {
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
-			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Сильное уменьшение", "Уменьшить скорость появления НПС в виде полноценных людей. (Значение по умолчанию - 5%).", 24));
+			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Сильное уменьшение", "Уменьшает вероятность того, что NPC появятся в облике полноценных людей. (Значение по умолчанию — 5%.)", 24));
 		}
 		
 		// Taur spawn rates:
@@ -211,7 +211,7 @@ public class OptionsController {
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
-			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Сильное увеличение", "Увеличить скорость появления НПС в виде полудемонических существ. (Значение по умолчанию - 5%).", 24));
+			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Сильное увеличение", "Увеличивает вероятность того, что нечеловеческие NPC появятся с таврическим (бычьим) низом. (Значение по умолчанию — 5%.)", 24));
 		}
 		id = "TAUR_SPAWN_RATE_INCREASE";
 		if (MainController.document.getElementById(id) != null) {
@@ -220,7 +220,7 @@ public class OptionsController {
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
-			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Увеличение", "Увеличить скорость появления НПС в виде полудемонических существ. (Значение по умолчанию - 5%).", 24));
+			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Увеличить", "Увеличивает вероятность того, что нечеловеческие NPC появятся с таврическим (бычьим) низом. (Значение по умолчанию — 5%.)", 24));
 		}
 		id = "TAUR_SPAWN_RATE_DECREASE";
 		if (MainController.document.getElementById(id) != null) {
@@ -229,7 +229,7 @@ public class OptionsController {
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
-			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Уменьшение", "Уменьшить скорость появления НПС в виде полудемонических существ. (Значение по умолчанию - 5%).", 24));
+			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Уменьшить", "Снизить вероятность появления нечеловеческих NPC с таврическим (бычьим) низом. (Значение по умолчанию — 5%.)", 24));
 		}
 		id = "TAUR_SPAWN_RATE_DECREASE_LARGE";
 		if (MainController.document.getElementById(id) != null) {
@@ -238,7 +238,7 @@ public class OptionsController {
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
-			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Сильное уменьшение", "Уменьшить скорость появления НПС в виде полудемонических существ. (Значение по умолчанию - 5%).", 24));
+			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Сильное уменьшение", "Снизить вероятность появления нечеловеческих NPC с таврическим (бычьим) низом. (Значение по умолчанию — 5%.)", 24));
 		}
 		
 		// Human spawn rates:
@@ -249,7 +249,7 @@ public class OptionsController {
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
-			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Сильное увеличение", "Увеличить скорость появления НПС в виде полудемонических существ. (Значение по умолчанию - 5%).", 24));
+			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Сильное увеличение", "Увеличить вероятность появления NPC в облике полудемонов. (Значение по умолчанию — 5%.)", 24));
 		}
 		id = "HALF_DEMON_SPAWN_RATE_INCREASE";
 		if (MainController.document.getElementById(id) != null) {
@@ -258,7 +258,7 @@ public class OptionsController {
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
-			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Увеличение", "Увеличить скорость появления НПС в виде полудемонических существ. (Значение по умолчанию - 5%).", 24));
+			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Увеличить", "Увеличить вероятность появления NPC в облике полудемонов. (Значение по умолчанию — 5%.)", 24));
 		}
 		id = "HALF_DEMON_SPAWN_RATE_DECREASE";
 		if (MainController.document.getElementById(id) != null) {
@@ -267,7 +267,7 @@ public class OptionsController {
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
-			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Уменьшение", "Уменьшите частоту появления НПС в виде полудемонов. (Значение по умолчанию - 5%.)", 24));
+			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Уменьшить", "Снизить вероятность появления NPC в облике полудемонов. (Значение по умолчанию — 5%.)", 24));
 		}
 		id = "HALF_DEMON_SPAWN_RATE_DECREASE_LARGE";
 		if (MainController.document.getElementById(id) != null) {
@@ -276,7 +276,7 @@ public class OptionsController {
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
-			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Сильное уменьшение", "Уменьшите частоту появления НПС в виде полудемонов. (Значение по умолчанию - 5%.)", 24));
+			MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation("Сильное уменьшение", "Снизить вероятность появления NPC в облике полудемонов. (Значение по умолчанию — 5%.)", 24));
 		}
 		
 		// Taur furry spawns:
@@ -341,7 +341,7 @@ public class OptionsController {
 							preference.getName(),
 							subspecies.isFurryPreferencesEnabled()
 									?preference.getDescriptionFeminine(subspecies)
-									:"Эта подраса не может изменить свою предпочтение к пушистым!"
+									:"У этого подвида нельзя изменить предпочтение к меху!"
 					));
 				}
 				id = "MASCULINE_"+preference+"_"+subspeciesId;
@@ -357,7 +357,7 @@ public class OptionsController {
 							preference.getName(),
 							subspecies.isFurryPreferencesEnabled()
 									?preference.getDescriptionMasculine(subspecies)
-									:"Эта подраса не может изменить свою предпочтение к пушистым!"));
+									:"У этого подвида нельзя изменить предпочтение к меху!"));
 				}
 			}
 			for (SubspeciesPreference preference : SubspeciesPreference.values()) {
@@ -373,9 +373,8 @@ public class OptionsController {
 					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation(
 							Util.capitaliseSentence(preference.getName()),
 							subspecies.isSpawnPreferencesEnabled()
-									?"Установите взвешенную вероятность появления женских полов этой подрасы. Частота появления '"+preference.getName()+"' имеет вес: <b>"+preference.getValue()+"</b><br/>"
-									+"<i>Эта взвешенная вероятность также зависит от частоты появления на карте.</i>"
-									:"Эта подраса не может изменить свою предпочтение к пушистым!"));
+									?"Установить взвешенный шанс появления женских особей этого подвида. Вес появления '"+preference.getName()+"' составляет: <b>"+preference.getValue()+"</b><br/><i>На этот вес также влияют частоты появления, специфичные для конкретной карты.</i>"
+									:"Предпочтения появления этого подвида изменить нельзя!"));
 				}
 				id = "MASCULINE_SPAWN_"+preference+"_"+subspeciesId;
 				if (MainController.document.getElementById(id) != null) {
@@ -389,9 +388,8 @@ public class OptionsController {
 					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation(
 							Util.capitaliseSentence(preference.getName()),
 							subspecies.isSpawnPreferencesEnabled()
-									?"Установите взвешенную вероятность появления мужских полов этой подрасы. Частота появления '"+preference.getName()+"' имеет вес: <b>"+preference.getValue()+"</b><br/>"
-									+"<i>Этот вес также зависит от частоты появления на карте.</i>"
-									:"Эта подгруппа не может изменить свою частоту появления!"));
+									?"Установите взвешенный шанс появления мужских особей этого подвида. Частота появления '"+preference.getName()+"' составляет: <b>"+preference.getValue()+"</b><br/><i>На этот вес также влияют частоты появления, специфичные для конкретной карты.</i>"
+									:"Предпочтения появления этого подвида изменить нельзя!"));
 				}
 			}
 		}
@@ -576,23 +574,23 @@ public class OptionsController {
 				switch (fp) {
 					case HUMAN:
 						title = "Только люди";
-						description = "Принудительные трансформации от NPC всегда будут влиять только на нерасовые характеристики вашего тела, и если требуется новая часть (например, влагалище или пенис), она всегда будет человеческой.";
+						description = "Принудительные трансформации от NPC будут влиять только на нерасовые характеристики вашего тела, а если потребуется новая часть (например, влагалище или пенис), она всегда будет человеческой.";
 						break;
 					case MINIMUM:
-						title = "Минимум фурри";
-						description = "Принудительные трансформации от NPC могут дать вам нечеловеческие волосы, уши, глаза, хвосты, рога, антенны и крылья. Все остальные части всегда останутся человеческими.";
+						title = "Минимальный фурри";
+						description = "Принудительные трансформации от NPC могут дать вам нечеловеческие волосы, уши, глаза, хвосты, рога, антенны и крылья. Все остальные части тела всегда будут оставаться человеческими.";
 						break;
 					case REDUCED:
-						title = "Мало фурри";
-						description = "Принудительные трансформации от NPC могут дать вам нечеловеческие волосы, уши, глаза, хвосты, рога, антенны, крылья, грудь, ягодицы, гениталии, руки и ноги. Ваша кожа и лицо всегда останутся человеческими.";
+						title = "Малый фурри";
+						description = "Принудительные трансформации от NPC могут дать вам нечеловеческие волосы, уши, глаза, хвосты, рога, усики, крылья, грудь, задницу, гениталии, руки и ноги. Ваша кожа и лицо всегда будут оставаться человеческими.";
 						break;
 					case NORMAL:
-						title = "Много фурри";
-						description = "Принудительные трансформации от NPC могут дать вам нечеловеческие волосы, уши, глаза, хвосты, рога, антенны, крылья, грудь, ягодицы, гениталии, руки, ноги, кожу и лицо. (То есть, все может быть изменено.)";
+						title = "Усиленное фурри";
+						description = "Принудительные трансформации от NPC могут дать вам нечеловеческие волосы, уши, глаза, хвосты, рога, усики, крылья, грудь, задницу, гениталии, руки, ноги, кожу и лицо. (То есть затронуто будет всё.)";
 						break;
 					case MAXIMUM:
-						title = "Максимум фурри";
-						description = "Принудительные трансформации от NPC всегда дадут вам нечеловеческие волосы, уши, глаза, хвосты, рога, антенны, крылья, грудь, гениталии, ягодицы, руки, ноги, кожу и лицо. (То есть, все будет изменено.)";
+						title = "Максимальное фурри";
+						description = "Принудительные трансформации от NPC всегда будут давать вам нечеловеческие волосы, уши, глаза, хвосты, рога, усики, крылья, грудь, гениталии, задницу, руки, ноги, кожу и лицо. (То есть затронуто будет всё.)";
 						break;
 				}
 				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation(title, description));
@@ -725,7 +723,7 @@ public class OptionsController {
 				MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation(
 						Properties.uddersLabels[i],
 						Properties.uddersDescriptions[i]
-								+"<br/><i>Персонажи всегда могут получить вымя/лобковые соски через трансформации после того, как они появились.</i>"));
+								+"<br/><i>Персонажи всегда могут получить вымя или лобковые молочные железы через трансформации после своего появления.</i>"));
 			}
 		}
 

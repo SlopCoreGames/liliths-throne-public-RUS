@@ -144,10 +144,10 @@ public abstract class AbstractAttribute implements Comparable<AbstractAttribute>
 		} else {
 			String minorColour = "";
 			if(this.isPercentage()){
-				minorColour = "Малый";
+				minorColour = "Minor";
 				valueForDisplay = valueForDisplay+"%";
 			}
-			returnValue = (value>0?"[style.colour"+minorColour+"Хороший(+":"[style.colour"+minorColour+"Плохой(")+valueForDisplay+")] <span style='color:"+this.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(this.getAbbreviatedName())+"</span>";
+			returnValue = (value>0?"[style.colour"+minorColour+"Good(+":"[style.colour"+minorColour+"Bad(")+valueForDisplay+")] <span style='color:"+this.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(this.getAbbreviatedName())+"</span>";
 		}
 		
 		if(htmlTag!=null) {

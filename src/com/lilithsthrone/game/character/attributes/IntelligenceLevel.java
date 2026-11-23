@@ -13,7 +13,7 @@ import com.lilithsthrone.utils.colours.PresetColour;
  */
 public enum IntelligenceLevel {
 	
-	ZERO_AIRHEAD("магическая немощь", 0, 10, PresetColour.INTELLIGENCE_STAGE_ZERO) {
+	ZERO_AIRHEAD("бессилие Арканы", 0, 10, PresetColour.INTELLIGENCE_STAGE_ZERO) {
 		@Override
 		public AbstractStatusEffect getRelatedStatusEffect() {
 			if(Main.game.isInNewWorld()) {
@@ -24,35 +24,35 @@ public enum IntelligenceLevel {
 		}
 	},
 	
-	ONE_AVERAGE("магический потенциал", 10, 30, PresetColour.INTELLIGENCE_STAGE_ONE) {
+	ONE_AVERAGE("потенциал Арканы", 10, 30, PresetColour.INTELLIGENCE_STAGE_ONE) {
 		@Override
 		public AbstractStatusEffect getRelatedStatusEffect() {
 			return StatusEffect.INTELLIGENCE_PERK_1;
 		}
 	},
 	
-	TWO_SMART("магическая сноровка", 30, 50, PresetColour.INTELLIGENCE_STAGE_TWO) {
+	TWO_SMART("мастерство Арканы", 30, 50, PresetColour.INTELLIGENCE_STAGE_TWO) {
 		@Override
 		public AbstractStatusEffect getRelatedStatusEffect() {
 			return StatusEffect.INTELLIGENCE_PERK_2;
 		}
 	},
 	
-	THREE_BRAINY("магическое мастерство", 50, 70, PresetColour.INTELLIGENCE_STAGE_THREE) {
+	THREE_BRAINY("искусство Арканы", 50, 70, PresetColour.INTELLIGENCE_STAGE_THREE) {
 		@Override
 		public AbstractStatusEffect getRelatedStatusEffect() {
 			return StatusEffect.INTELLIGENCE_PERK_3;
 		}
 	},
 	
-	FOUR_GENIUS("магическое величие", 70, 90, PresetColour.INTELLIGENCE_STAGE_FOUR) {
+	FOUR_GENIUS("владение Арканой", 70, 90, PresetColour.INTELLIGENCE_STAGE_FOUR) {
 		@Override
 		public AbstractStatusEffect getRelatedStatusEffect() {
 			return StatusEffect.INTELLIGENCE_PERK_4;
 		}
 	},
 	
-	FIVE_POLYMATH("магическая гениальность", 90, 100, PresetColour.INTELLIGENCE_STAGE_FIVE) {
+	FIVE_POLYMATH("гениальность Арканы", 90, 100, PresetColour.INTELLIGENCE_STAGE_FIVE) {
 		@Override
 		public AbstractStatusEffect getRelatedStatusEffect() {
 			return StatusEffect.INTELLIGENCE_PERK_5;

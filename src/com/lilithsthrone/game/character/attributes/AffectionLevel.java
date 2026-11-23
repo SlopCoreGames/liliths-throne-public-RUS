@@ -13,37 +13,37 @@ import com.lilithsthrone.utils.colours.PresetColour;
 public enum AffectionLevel {
 	
 	/** -100 to -90*/
-	NEGATIVE_FIVE_LOATHE("отвращение", "ненавидит", -100, -90, PresetColour.AFFECTION_NEGATIVE_FIVE, true),
+	NEGATIVE_FIVE_LOATHE("loathing", "loathes", -100, -90, PresetColour.AFFECTION_NEGATIVE_FIVE, true),
 
 	/** -90 to -70*/
-	NEGATIVE_FOUR_HATE("ненависть", "презирает", -90, -70, PresetColour.AFFECTION_NEGATIVE_FOUR, true),
+	NEGATIVE_FOUR_HATE("hatred", "hates", -90, -70, PresetColour.AFFECTION_NEGATIVE_FOUR, true),
 
 	/** -70 to -50*/
-	NEGATIVE_THREE_STRONG_DISLIKE("сильная неприязнь", "терпеть не может", -70, -50, PresetColour.AFFECTION_NEGATIVE_THREE, true),
+	NEGATIVE_THREE_STRONG_DISLIKE("сильная неприязнь", "сильно не любит", -70, -50, PresetColour.AFFECTION_NEGATIVE_THREE, true),
 
 	/** -50 to -30*/
 	NEGATIVE_TWO_DISLIKE("неприязнь", "не любит", -50, -30, PresetColour.AFFECTION_NEGATIVE_TWO, true),
 
 	/** -30 to -10*/
-	NEGATIVE_ONE_ANNOYED("раздражение", "раздражается от", -30, -10, PresetColour.AFFECTION_NEGATIVE_ONE, true),
+	NEGATIVE_ONE_ANNOYED("annoyed", "раздражается на", -30, -10, PresetColour.AFFECTION_NEGATIVE_ONE, true),
 
 	/** -10 to 10*/
-	ZERO_NEUTRAL("нейтралитет", "безразличен к", -10, 10, PresetColour.AFFECTION_NEUTRAL, true),
+	ZERO_NEUTRAL("neutral", "нейтральное отношение", -10, 10, PresetColour.AFFECTION_NEUTRAL, true),
 
 	/** 10 to 30*/
-	POSITIVE_ONE_FRIENDLY("дружелюбие", "дружелюбен к", 10, 30, PresetColour.AFFECTION_POSITIVE_ONE, false),
+	POSITIVE_ONE_FRIENDLY("friendly", "дружелюбна к", 10, 30, PresetColour.AFFECTION_POSITIVE_ONE, false),
 
 	/** 30 to 50*/
-	POSITIVE_TWO_LIKE("симпатия", "симпатизирует", 30, 50, PresetColour.AFFECTION_POSITIVE_TWO, false),
+	POSITIVE_TWO_LIKE("likes", "likes", 30, 50, PresetColour.AFFECTION_POSITIVE_TWO, false),
 
 	/** 50 to 70*/
-	POSITIVE_THREE_CARING("забота", "заботится о", 50, 70, PresetColour.AFFECTION_POSITIVE_THREE, false),
+	POSITIVE_THREE_CARING("caring", "заботится о", 50, 70, PresetColour.AFFECTION_POSITIVE_THREE, false),
 
 	/** 70 to 90*/
-	POSITIVE_FOUR_LOVE("любовь", "любит", 70, 90, PresetColour.AFFECTION_POSITIVE_FOUR, false),
+	POSITIVE_FOUR_LOVE("love", "loves", 70, 90, PresetColour.AFFECTION_POSITIVE_FOUR, false),
 
 	/** 90 to 100*/
-	POSITIVE_FIVE_WORSHIP("обожание", "обожает", 90, 100, PresetColour.AFFECTION_POSITIVE_FIVE, false);
+	POSITIVE_FIVE_WORSHIP("adoring", "adores", 90, 100, PresetColour.AFFECTION_POSITIVE_FIVE, false);
 	
 	
 	private String name;
@@ -82,7 +82,7 @@ public enum AffectionLevel {
 				sb.append(UtilText.parse(character, target, "[npc.Name] "+applyColourWrapper("[npc.verb(dislike)]", affectionLevel, withColour)+" [npc2.name]."));
 				break;
 			case NEGATIVE_ONE_ANNOYED:
-				sb.append(UtilText.parse(character, target, "[npc.Name] [npc.is] "+applyColourWrapper("раздражен", affectionLevel, withColour)+" к [npc2.name]."));
+				sb.append(UtilText.parse(character, target, "[npc.Name] [npc.is] "+applyColourWrapper("раздражена", affectionLevel, withColour)+" с [npc2.name]."));
 				break;
 			case ZERO_NEUTRAL:
 				sb.append(UtilText.parse(character, target, "[npc.Name] [npc.is] "+applyColourWrapper("безразличен", affectionLevel, withColour)+" к [npc2.name]."));
@@ -94,7 +94,7 @@ public enum AffectionLevel {
 				sb.append(UtilText.parse(character, target, "[npc.Name] "+applyColourWrapper("[npc.verb(like)]", affectionLevel, withColour)+" [npc2.name]."));
 				break;
 			case POSITIVE_THREE_CARING:
-				sb.append(UtilText.parse(character, target, "[npc.Name] "+applyColourWrapper("[npc.verb(care)]", affectionLevel, withColour)+" насчет [npc2.name]."));
+				sb.append(UtilText.parse(character, target, "[npc.Name] "+applyColourWrapper("[npc.verb(care)]", affectionLevel, withColour)+" в отношении [npc2.name]."));
 				break;
 			case POSITIVE_FOUR_LOVE:
 				sb.append(UtilText.parse(character, target, "[npc.Name] "+applyColourWrapper("[npc.verb(love)]", affectionLevel, withColour)+" [npc2.name]."));
@@ -117,19 +117,19 @@ public enum AffectionLevel {
 		sb.append("<p style='text-align:center;'><i>");
 		switch(affectionLevel) {
 			case NEGATIVE_FIVE_LOATHE:
-				sb.append("[npc.Name] [npc.verb(make)] из [npc.her] поведения совершенно ясно, что [npc.she] совершенно "+applyColourWrapper("[npc.verb(loathe)] [npc2.name]", affectionLevel, withColour)+".");
+				sb.append("[npc.Name] [npc.verb(make)] совершенно очевидно по поведению [npc.her], что [npc.she] совершенно "+applyColourWrapper("[npc.verb(loathe)] [npc2.name]", affectionLevel, withColour)+".");
 				break;
 			case NEGATIVE_FOUR_HATE:
-				sb.append("[npc.Name] [npc.verb(make)] из [npc.her] поведения совершенно ясно, что [npc.she] "+applyColourWrapper("[npc.verb(hate)] [npc2.name]", affectionLevel, withColour)+".");
+				sb.append("[npc.Name] [npc.verb(make)] совершенно очевидно по поведению [npc.her], что [npc.she] "+applyColourWrapper("[npc.verb(hate)] [npc2.name]", affectionLevel, withColour)+".");
 				break;
 			case NEGATIVE_THREE_STRONG_DISLIKE:
-				sb.append("По отношению к [npc.her] очевидно, что [npc.name] "+applyColourWrapper("сильно [npc.verb(dislike)] [npc2.name]", affectionLevel, withColour)+".");
+				sb.append("По отношению [npc.her] совершенно очевидно, что [npc.name] "+applyColourWrapper("сильно [npc.verb(dislike)] [npc2.name]", affectionLevel, withColour)+".");
 				break;
 			case NEGATIVE_TWO_DISLIKE:
-				sb.append("[npc.NameIsFull] довольно отчетливо "+applyColourWrapper("[npc.verb(dislike)] [npc2.name]", affectionLevel, withColour)+".");
+				sb.append("[npc.NameIsFull] весьма отчетливо "+applyColourWrapper("[npc.verb(dislike)] [npc2.name]", affectionLevel, withColour)+".");
 				break;
 			case NEGATIVE_ONE_ANNOYED:
-				sb.append("[npc.NameIsFull] отчетливо "+applyColourWrapper("раздражен", affectionLevel, withColour)+" к [npc2.name].");
+				sb.append("[npc.NameIsFull] явно "+applyColourWrapper("раздражена", affectionLevel, withColour)+" с [npc2.name].");
 				break;
 			case ZERO_NEUTRAL:
 				sb.append("[npc.NameIsFull] ведет себя "+applyColourWrapper("безразличен", affectionLevel, withColour)+" по отношению к [npc2.name].");
@@ -143,30 +143,30 @@ public enum AffectionLevel {
 				break;
 			case POSITIVE_TWO_LIKE:
 				if(character.isAttractedTo(target)) {
-					sb.append("[npc.Name] совершенно ясно "+applyColourWrapper("[npc.verb(like)] [npc2.name]", affectionLevel, withColour)+", и [npc.verb(see)] [npc2.herHim] не просто как друга.");
+					sb.append("[npc.Name] довольно явно "+applyColourWrapper("[npc.verb(like)] [npc2.name]", affectionLevel, withColour)+", и [npc.verb(see)] [npc2.herHim] как нечто большее, чем просто друг.");
 				} else {
-					sb.append("[npc.Name] совершенно ясно "+applyColourWrapper("[npc.verb(like)] [npc2.name]", affectionLevel, withColour)+", и [npc.verb(see)] [npc2.herHim] как близкого друга.");
+					sb.append("[npc.Name] довольно явно "+applyColourWrapper("[npc.verb(like)] [npc2.name]", affectionLevel, withColour)+", и [npc.verb(see)] [npc2.herHim] как близкого друга.");
 				}
 				break;
 			case POSITIVE_THREE_CARING:
 				if(character.isAttractedTo(target)) {
-					sb.append("[npc.Name] совершенно ясно "+applyColourWrapper("очень заботится о [npc2.name]", affectionLevel, withColour)+", и [npc.is] глубоко испытывает влечение к [npc2.herHim].");
+					sb.append("[npc.Name] довольно явно "+applyColourWrapper("очень заботится о [npc2.name]", affectionLevel, withColour)+", и [npc.is] глубоко увлечен(а) [npc2.herHim].");
 				} else {
-					sb.append("[npc.Name] совершенно ясно "+applyColourWrapper("очень заботится о [npc2.name]", affectionLevel, withColour)+", и [npc.verb(consider)] хочет, чтобы [npc2.herHim] был(а) [npc.her] лучшим другом.");
+					sb.append("[npc.Name] довольно явно "+applyColourWrapper("очень заботится о [npc2.name]", affectionLevel, withColour)+", и [npc.verb(consider)] [npc2.herHim] как лучшего друга [npc.her].");
 				}
 				break;
 			case POSITIVE_FOUR_LOVE:
 				if(character.isAttractedTo(target)) {
-					sb.append("По тому, как [npc.name] [npc.verb(look)] к [npc2.name], сразу видно, что [npc.she] "+applyColourWrapper("[npc.verb(love)] [npc2.herHim]", affectionLevel, withColour)+".");
+					sb.append("По тому, как [npc.name] [npc.verb(look)] на [npc2.name], очевидно, что [npc.she] "+applyColourWrapper("[npc.verb(love)] [npc2.herHim]", affectionLevel, withColour)+".");
 				} else {
-					sb.append("По тому, как [npc.name] [npc.verb(act)], сразу видно, что [npc.she] "+applyColourWrapper("[npc.verb(love)] [npc2.name]", affectionLevel, withColour)+" в чисто платоническом смысле.");
+					sb.append("По тому, как [npc.name] [npc.verb(act)], очевидно, что [npc.she] "+applyColourWrapper("[npc.verb(love)] [npc2.name]", affectionLevel, withColour)+" в чисто платоническом смысле.");
 				}
 				break;
 			case POSITIVE_FIVE_WORSHIP:
 				if(character.isAttractedTo(target)) {
-					sb.append("[npc.Name] совершенно "+applyColourWrapper("[npc.verb(adore)] [npc2.name]", affectionLevel, withColour)+", и [npc.is] без памяти влюблен(а) в [npc2.herHim].");
+					sb.append("[npc.Name] до глубины души "+applyColourWrapper("[npc.verb(adore)] [npc2.name]", affectionLevel, withColour)+", и [npc.is] без памяти влюблен(а) в [npc2.herHim].");
 				} else {
-					sb.append("[npc.Name] совершенно "+applyColourWrapper("[npc.verb(adore)] [npc2.name]", affectionLevel, withColour)+", и была бы готова на всё, что попросит [npc.herHim] у [npc2.she].");
+					sb.append("[npc.Name] до глубины души "+applyColourWrapper("[npc.verb(adore)] [npc2.name]", affectionLevel, withColour)+", и была бы готова на всё, что попросит [npc.herHim] у [npc2.she].");
 				}
 				break;
 		}
